@@ -108,7 +108,10 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         return;
       }
     } else {
-      // All other photos (public non-main + private): no NSFW check, no face required
+      // All other photos (public non-main incl. business gallery/storefront +
+      // private): NSFW/nudity check runs (skin-ratio + on-device ML Kit
+      // labels), no face required. Business/public images that fail the
+      // explicit-content check are rejected here on upload.
       validationResult =
           await validationService.validatePublicPhoto(event.photo);
       if (!validationResult.isValid) {

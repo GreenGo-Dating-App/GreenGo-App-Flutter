@@ -58,12 +58,13 @@ class TierEntitlements {
   // ADJUSTABLE TUNABLES  (change tier balance here — one place, no divergence)
   // ===========================================================================
 
-  // --- Events a user may create (null = unlimited). ---
-  // Mirrored by TierLimitsService.maxEvents (which now delegates here).
+  // --- Max ONGOING events a user may have (null = unlimited). ---
+  // "Ongoing" = events that haven't ended yet. Mirrored by
+  // TierLimitsService.maxEvents (which delegates here).
   static const int _eventsFree = 1; // adjustable
-  static const int _eventsSilver = 5; // adjustable
-  static const int _eventsGold = 50; // adjustable
-  static const int? _eventsPlatinum = null; // adjustable (∞)
+  static const int _eventsSilver = 3; // Silver: max 3 ongoing events
+  static const int _eventsGold = 5; // Gold: max 5 ongoing events
+  static const int? _eventsPlatinum = null; // Platinum: unlimited (∞)
 
   // --- Groups a user may create (null = unlimited). ---
   // Mirrored by TierLimitsService.maxGroups (which now delegates here).

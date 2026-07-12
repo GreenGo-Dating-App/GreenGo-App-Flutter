@@ -47,6 +47,8 @@ import '../../../passport/presentation/screens/cultural_passport_screen.dart';
 import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../business/presentation/screens/business_account_screen.dart';
 import '../../../business/presentation/screens/business_hub_screen.dart';
+import '../../../business/presentation/screens/business_storefront_screen.dart';
+import '../../../business/presentation/screens/storefront_editor_screen.dart';
 import '../../../main/presentation/screens/main_navigation_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart' as profile_entity;
@@ -352,6 +354,53 @@ class EditProfileScreen extends StatelessWidget {
                             currentUserId: activeProfile.userId,
                           ),
                         ),
+                      // Storefront-oriented tiles — only for active business
+                      // accounts. These keep the editable storefront editor,
+                      // gallery, opening-hours and public-storefront preview
+                      // all directly reachable from the Profile menu (in
+                      // addition to the normal account items above/below).
+                      if (TierEntitlements.isBusinessActive(
+                          activeProfile.membershipTier,
+                          activeProfile.isBusiness)) ...[
+                        const SizedBox(height: 16),
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.editStorefront,
+                          subtitle: AppLocalizations.of(context)!
+                              .editStorefrontSubtitle,
+                          icon: Icons.edit_note,
+                          onTap: () => _navigateToStorefrontEditor(
+                              context, activeProfile),
+                        ),
+                        const SizedBox(height: 16),
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.businessGallery,
+                          subtitle: AppLocalizations.of(context)!
+                              .storefrontGallerySubtitle,
+                          icon: Icons.photo_library,
+                          onTap: () => _navigateToStorefrontEditor(
+                              context, activeProfile),
+                        ),
+                        const SizedBox(height: 16),
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!
+                              .businessOpeningHours,
+                          subtitle: AppLocalizations.of(context)!
+                              .storefrontOpeningHoursSubtitle,
+                          icon: Icons.schedule,
+                          onTap: () => _navigateToStorefrontEditor(
+                              context, activeProfile),
+                        ),
+                        const SizedBox(height: 16),
+                        EditSectionCard(
+                          title:
+                              AppLocalizations.of(context)!.viewStorefront,
+                          subtitle: AppLocalizations.of(context)!
+                              .seeHowOthersViewProfile,
+                          icon: Icons.visibility,
+                          onTap: () => _navigateToViewStorefront(
+                              context, activeProfile),
+                        ),
+                      ],
                     ],
                   ),
 
@@ -681,12 +730,52 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   void _navigateToViewProfile(BuildContext context, Profile currentProfile) {
+    // For business accounts, "View my profile" shows the PUBLIC storefront
+    // (what visitors actually see) instead of the standard dating-style
+    // profile card. The editable storefront editor and account settings stay
+    // reachable from the dedicated storefront menu tiles below.
+    if (currentProfile.isBusiness) {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => BusinessStorefrontScreen(
+            business: currentProfile,
+            currentUserId: currentProfile.userId,
+          ),
+        ),
+      );
+      return;
+    }
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => ProfileDetailScreen(
           profile: currentProfile,
           currentUserId: currentProfile.userId,
           // No match and no onSwipe - this is self-view mode
+        ),
+      ),
+    );
+  }
+
+  Future<void> _navigateToStorefrontEditor(
+      BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: StorefrontEditorScreen(profile: currentProfile),
+        ),
+      ),
+    );
+    // Profile updates are propagated through the shared BLoC - no reload needed
+  }
+
+  void _navigateToViewStorefront(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BusinessStorefrontScreen(
+          business: currentProfile,
+          currentUserId: currentProfile.userId,
         ),
       ),
     );

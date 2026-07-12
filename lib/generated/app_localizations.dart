@@ -21833,6 +21833,240 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Messages can be up to 4096 characters.'**
   String get messageTooLong;
+
+  /// No description provided for @exploreBusinessesNearYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Businesses near you'**
+  String get exploreBusinessesNearYou;
+
+  /// No description provided for @splashBusinessLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'BUSINESS'**
+  String get splashBusinessLabel;
+
+  /// No description provided for @rateThisBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate this business'**
+  String get rateThisBusiness;
+
+  /// No description provided for @businessRatingError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save your rating. Please try again.'**
+  String get businessRatingError;
+
+  /// No description provided for @businessRatingCount.
+  ///
+  /// In en, this message translates to:
+  /// **'({count})'**
+  String businessRatingCount(int count);
+
+  /// No description provided for @rateStarsSemantic.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate {stars} stars'**
+  String rateStarsSemantic(int stars);
+
+  /// No description provided for @businessRatingSemantic.
+  ///
+  /// In en, this message translates to:
+  /// **'Rated {avg} out of 5, {count} ratings'**
+  String businessRatingSemantic(String avg, int count);
+
+  /// No description provided for @editStorefront.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit storefront'**
+  String get editStorefront;
+
+  /// No description provided for @editStorefrontSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage your gallery, hours, links and info'**
+  String get editStorefrontSubtitle;
+
+  /// No description provided for @storefrontGallerySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Showcase your venue, products or team'**
+  String get storefrontGallerySubtitle;
+
+  /// No description provided for @storefrontOpeningHoursSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Set your opening days and hours'**
+  String get storefrontOpeningHoursSubtitle;
+
+  /// No description provided for @storefrontDescriptionHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell people about your business'**
+  String get storefrontDescriptionHint;
+
+  /// No description provided for @storefrontCategoryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Restaurant, Cafe, Museum'**
+  String get storefrontCategoryHint;
+
+  /// No description provided for @storefrontLinkHint.
+  ///
+  /// In en, this message translates to:
+  /// **'https://...'**
+  String get storefrontLinkHint;
+
+  /// No description provided for @storefrontAddLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Add link'**
+  String get storefrontAddLink;
+
+  /// No description provided for @storefrontAddImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Add image'**
+  String get storefrontAddImage;
+
+  /// No description provided for @storefrontSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront updated'**
+  String get storefrontSaved;
+
+  /// No description provided for @analyticsEventViews.
+  ///
+  /// In en, this message translates to:
+  /// **'Event views'**
+  String get analyticsEventViews;
+
+  /// No description provided for @analyticsCommunityReach.
+  ///
+  /// In en, this message translates to:
+  /// **'Community reach'**
+  String get analyticsCommunityReach;
+
+  /// No description provided for @analyticsChatsInvolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Chats involved'**
+  String get analyticsChatsInvolved;
+
+  /// No description provided for @eventAnalyticsViews.
+  ///
+  /// In en, this message translates to:
+  /// **'Views'**
+  String get eventAnalyticsViews;
+
+  /// No description provided for @businessHubScanner.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick scanner'**
+  String get businessHubScanner;
+
+  /// No description provided for @businessHubScannerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan tickets to check attendees in'**
+  String get businessHubScannerSubtitle;
+
+  /// No description provided for @businessHubFollowers.
+  ///
+  /// In en, this message translates to:
+  /// **'Followers'**
+  String get businessHubFollowers;
+
+  /// No description provided for @businessHubFollowersSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See who follows your business'**
+  String get businessHubFollowersSubtitle;
+
+  /// No description provided for @businessFollowersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Followers'**
+  String get businessFollowersTitle;
+
+  /// No description provided for @businessNoFollowers.
+  ///
+  /// In en, this message translates to:
+  /// **'No followers yet. Share your storefront to grow your audience.'**
+  String get businessNoFollowers;
+
+  /// No description provided for @membershipRequiredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Membership required'**
+  String get membershipRequiredTitle;
+
+  /// No description provided for @membershipRequiredBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You need an active membership to do this. Renew to continue.'**
+  String get membershipRequiredBody;
+
+  /// No description provided for @renewMembership.
+  ///
+  /// In en, this message translates to:
+  /// **'Renew membership'**
+  String get renewMembership;
+
+  /// No description provided for @extraEventTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Extra event'**
+  String get extraEventTitle;
+
+  /// No description provided for @extraEventBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached your free event limit. Create an extra event for {cost} coins?'**
+  String extraEventBody(int cost);
+
+  /// No description provided for @accountBannedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Account permanently banned'**
+  String get accountBannedTitle;
+
+  /// No description provided for @accountBannedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This account has been permanently banned for violating our content policy. This decision is final.'**
+  String get accountBannedBody;
+
+  /// No description provided for @adminBanPermanently.
+  ///
+  /// In en, this message translates to:
+  /// **'Ban permanently'**
+  String get adminBanPermanently;
+
+  /// No description provided for @adminBanConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Ban this account permanently?'**
+  String get adminBanConfirm;
+
+  /// No description provided for @adminBanConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This permanently bans the account and blocks all access. This cannot be undone.'**
+  String get adminBanConfirmBody;
+
+  /// No description provided for @adminBanReasonHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason (e.g. nudity in gallery)'**
+  String get adminBanReasonHint;
+
+  /// No description provided for @adminBanned.
+  ///
+  /// In en, this message translates to:
+  /// **'Account permanently banned'**
+  String get adminBanned;
 }
 
 class _AppLocalizationsDelegate

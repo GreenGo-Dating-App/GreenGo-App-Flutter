@@ -266,6 +266,14 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
   }
 
   Future<void> _create() async {
+    // A valid GreenGo membership is required to create a group. Active Base
+    // (free) stays allowed — only a truly expired membership is blocked
+    // (routes to the marketplace to renew).
+    if (!await TierGate()
+        .ensureValidMembershipByUid(context, widget.currentUserId)) {
+      return;
+    }
+    if (!mounted) return;
     final l10n = AppLocalizations.of(context)!;
     setState(() => _creating = true);
 

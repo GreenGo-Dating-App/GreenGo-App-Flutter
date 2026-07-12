@@ -24,6 +24,7 @@ class _AnalyticsStats {
     required this.totalAttendees,
     required this.referrals,
     this.audience = const AudienceAggregate.empty(),
+    this.insights = const BusinessInsights.empty(),
   });
 
   final int eventsHosted;
@@ -32,6 +33,9 @@ class _AnalyticsStats {
 
   /// Aggregated, k-anonymized demographics of the organizer's audience.
   final AudienceAggregate audience;
+
+  /// Bounded aggregate business insights (event views, community reach, chats).
+  final BusinessInsights insights;
 
   /// Simple derived reach: everyone the organizer has touched — attendees
   /// across their events plus friends they've invited.
@@ -113,11 +117,20 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
       // Non-fatal: charts fall back to their insufficient-data state.
     }
 
+    // Bounded aggregate insights: event views, community reach, chats involved.
+    var insights = const BusinessInsights.empty();
+    try {
+      insights = await _analyticsService.aggregateBusinessInsights(widget.userId);
+    } catch (_) {
+      // Non-fatal: insight cards fall back to zeros.
+    }
+
     return _AnalyticsStats(
       eventsHosted: eventsHosted,
       totalAttendees: totalAttendees,
       referrals: referrals,
       audience: audience,
+      insights: insights,
     );
   }
 
@@ -186,6 +199,26 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                 icon: Icons.trending_up,
                 label: l10n.analyticsReach,
                 value: '${stats.reach}',
+              ),
+              const SizedBox(height: 16),
+              _statCard(
+                icon: Icons.visibility_outlined,
+                label: l10n.analyticsEventViews,
+                value: '${stats.insights.totalEventViews}',
+              ),
+              const SizedBox(height: 16),
+              _statCard(
+                icon: Icons.diversity_3,
+                label: l10n.analyticsCommunityReach,
+                value: '${stats.insights.communityMembers}',
+              ),
+              const SizedBox(height: 16),
+              _statCard(
+                icon: Icons.forum_outlined,
+                label: l10n.analyticsChatsInvolved,
+                value: stats.insights.cappedChats
+                    ? '${stats.insights.chatsInvolved}+'
+                    : '${stats.insights.chatsInvolved}',
               ),
               const SizedBox(height: 24),
               ...buildAudienceCharts(context, stats.audience, l10n),

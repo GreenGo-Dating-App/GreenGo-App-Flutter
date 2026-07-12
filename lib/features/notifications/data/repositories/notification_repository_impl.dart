@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/notification.dart';
@@ -25,12 +27,21 @@ class NotificationRepositoryImpl implements NotificationRepository {
             unreadOnly: unreadOnly,
             limit: limit,
           )
-          .map((notifications) => Right<Failure, List<NotificationEntity>>(
-              notifications.map((n) => n.toEntity()).toList()))
-          .handleError((error) {
-        return Left<Failure, List<NotificationEntity>>(
-            ServerFailure(error.toString()));
-      });
+          .map<Either<Failure, List<NotificationEntity>>>((notifications) =>
+              Right(notifications.map((n) => n.toEntity()).toList()))
+          // NOTE: Stream.handleError discards its callback's return value, so a
+          // stream error there would be silenced (no event emitted) and the UI
+          // would hang on "loading". Use a transformer that actually *emits* a
+          // Left(ServerFailure) so the error surfaces in the UI.
+          .transform(
+        StreamTransformer<Either<Failure, List<NotificationEntity>>,
+            Either<Failure, List<NotificationEntity>>>.fromHandlers(
+          handleError: (error, stackTrace, sink) {
+            sink.add(Left<Failure, List<NotificationEntity>>(
+                ServerFailure(error.toString())));
+          },
+        ),
+      );
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
     }

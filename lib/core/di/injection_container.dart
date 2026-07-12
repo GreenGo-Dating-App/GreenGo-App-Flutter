@@ -206,6 +206,7 @@ import '../services/blocked_users_service.dart';
 import '../services/interaction_log_service.dart';
 import '../../features/business/data/services/follow_service.dart';
 import '../../features/business/data/services/leads_service.dart';
+import '../../features/business/data/services/rating_service.dart';
 import '../../features/safety/data/services/safety_actions_service.dart';
 import '../services/candidate_pool_service.dart';
 import '../../features/passport/data/services/passport_service.dart';
@@ -336,6 +337,9 @@ Future<void> init() async {
   );
   sl.registerLazySingleton<LeadsService>(
     () => LeadsService(firestore: sl()),
+  );
+  sl.registerLazySingleton<RatingService>(
+    () => RatingService(firestore: sl()),
   );
 
   sl.registerLazySingleton<SafetyActionsService>(

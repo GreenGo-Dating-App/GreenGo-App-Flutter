@@ -11,6 +11,7 @@ import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../communities/data/datasources/communities_remote_datasource.dart';
 import '../../../communities/domain/entities/community.dart';
@@ -27,6 +28,7 @@ import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../discovery/presentation/widgets/network_grid_card.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/data/datasources/external_events_data_source.dart';
+import '../../../events/data/models/event_model.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/entities/external_event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
@@ -148,6 +150,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // Community/user-created events close to the user (distinct from "Happening
   // this week"). null == loading; empty == hidden.
   List<Event>? _communityEvents;
+  // "Businesses near you": public business profiles (`profiles.isBusiness`),
+  // nearest-first when a location is known else as returned. null == loading;
+  // empty == hidden.
+  List<Profile>? _businesses;
 
   // The current user's interests (from their profile), used to build the
   // "same interests" section and to seed the See-all grid's interest filter.
@@ -187,6 +193,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       _loadSameInterests(),
       _loadSameLanguage(),
       _loadCommunityEvents(),
+      _loadBusinesses(),
       _loadMyEvents(),
       _loadCommunities(),
       _loadSpotlight(),
@@ -368,7 +375,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
       } catch (_) {
         items = const <ExternalEvent>[];
       }
-      externalItems = items.map((e) => _Happening.external(e)).toList();
+      // Attractions/experiences with no picture are omitted entirely.
+      externalItems =
+          items.map((e) => _Happening.external(e)).where(_hasImage).toList();
     }
 
     // 3) "Happening this week": community events FIRST, then live events.
@@ -459,6 +468,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         }
         external = items
             .map((e) => _Happening.external(e))
+            .where(_hasImage) // omit picture-less attractions/experiences
             .where(_withinFeaturedRadius)
             .toList()
           ..shuffle();
@@ -493,6 +503,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
       final pool = items
           .map((e) => _Happening.external(e))
+          .where(_hasImage) // omit picture-less attractions/experiences
           .where(_withinFeaturedRadius)
           .toList()
         ..shuffle();
@@ -623,7 +634,39 @@ class _ExploreScreenState extends State<ExploreScreen> {
           addEvents(upcoming.where((e) => !e.isCurrentlyFeatured));
         }
       } catch (_) {
-        // Leave picked as-is — an empty result hides the carousel.
+        // Leave picked as-is — Tier 5 still has a chance below.
+      }
+    }
+
+    // Tier 5 — TRULY INDEX-FREE last resort. Every tier above funnels through
+    // [EventsRemoteDataSourceImpl], whose queries are all filtered/ordered
+    // (`status whereIn` + `startDate`/`geohash` orderBy) AND upcoming/nearby
+    // only. In the common real-data case (no boosted events, nothing nearby,
+    // events past-dated, or any swallowed query error) those tiers yield
+    // nothing and the carousel silently blanks — which is exactly why the
+    // previously-added "location-independent" Tier 4 (itself a filtered,
+    // upcoming-only query) never actually rescued it. This tier issues a plain,
+    // index-free collection read (no `where`/`orderBy` — just a bounded limit),
+    // parses client-side and keeps any PUBLIC, LIVE event so the carousel shows
+    // whenever ANY public event exists at all. Sponsored-first, then soonest.
+    if (picked.length < 3) {
+      try {
+        final snap = await _firestore.collection('events').limit(50).get();
+        final live = snap.docs
+            .map<Event>(EventModel.fromFirestore)
+            .where((e) => e.isPublic && e.isLive)
+            .toList();
+        final sponsoredRaw = live.where((e) => e.isCurrentlyFeatured).toList()
+          ..sort((a, b) => a.id.compareTo(b.id));
+        addEvents(_rotateSponsored(sponsoredRaw));
+        if (picked.length < 3) {
+          addEvents(
+            live.where((e) => !e.isCurrentlyFeatured).toList()
+              ..sort((a, b) => a.startDate.compareTo(b.startDate)),
+          );
+        }
+      } catch (_) {
+        // Genuinely nothing to show — an empty result hides the carousel.
       }
     }
 
@@ -813,6 +856,63 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
     if (mounted) setState(() => _communityEvents = events);
+  }
+
+  /// Loads "Businesses near you": public business profiles
+  /// (`profiles.isBusiness == true`), bounded to 20 with a single-field
+  /// equality filter (index-light, scale-safe). Excludes the current user, the
+  /// hidden admin/support account, ghost-mode profiles and any banned/suspended
+  /// account. Sorted nearest-first when a location is known, else left as
+  /// returned (recent). Empty (or on failure) hides the section.
+  Future<void> _loadBusinesses() async {
+    List<Profile> result = const <Profile>[];
+    try {
+      final snap = await _firestore
+          .collection('profiles')
+          .where('isBusiness', isEqualTo: true)
+          .limit(20)
+          .get();
+      final lat = _userLat;
+      final lng = _userLng;
+      final list = <Profile>[];
+      for (final doc in snap.docs) {
+        final d = doc.data();
+        if (doc.id == widget.userId) continue; // exclude self
+        // Never surface the official GreenGo account (admin/support).
+        if (d['isAdmin'] == true || d['isSupport'] == true) continue;
+        if (d['isBanned'] == true) continue; // banned business
+        final status = d['accountStatus'];
+        if (status != null && status != 'active') continue; // suspended/deleted
+        if (d['isGhostMode'] == true) continue;
+        try {
+          list.add(ProfileModel.fromJson({...d, 'userId': doc.id}));
+        } catch (_) {
+          // Skip unparseable business profiles.
+        }
+      }
+      if (lat != null && lng != null) {
+        double dist(Profile p) {
+          final loc = p.effectiveLocation;
+          if (loc.latitude == 0 && loc.longitude == 0) return double.infinity;
+          return FeatureEngineer()
+              .calculateDistance(lat, lng, loc.latitude, loc.longitude);
+        }
+
+        list.sort((a, b) => dist(a).compareTo(dist(b)));
+      }
+      result = list;
+    } catch (_) {
+      result = const <Profile>[];
+    }
+    if (mounted) setState(() => _businesses = result);
+  }
+
+  /// True when [h] carries a usable picture. Attractions/experiences with no
+  /// image (`imageUrl` null or blank) are OMITTED from Explore entirely — a
+  /// picture-less attraction card is never shown.
+  bool _hasImage(_Happening h) {
+    final url = h.imageUrl;
+    return url != null && url.trim().isNotEmpty;
   }
 
   /// True when [h] qualifies for the featured carousel. With a known user
@@ -1109,6 +1209,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // Community events close to the user (distinct from "Happening this
               // week"). Hidden entirely when there are none.
               _communityEventsSection(context, l10n, reduceMotion),
+              // "Businesses near you" — public business profiles, nearest-first,
+              // placed immediately before "Happening this week". Hidden when
+              // there are none (see [_businessesSection]).
+              _businessesSection(context, l10n, reduceMotion),
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
@@ -1822,6 +1926,102 @@ class _ExploreScreenState extends State<ExploreScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  /// "Businesses near you" — a horizontal carousel of public business profiles,
+  /// nearest-first. While loading it shows a skeleton row; loaded with nothing
+  /// hides the whole section (header included). Tapping opens the business's
+  /// storefront ([BusinessStorefrontScreen]). Reduced-motion safe.
+  Widget _businessesSection(
+    BuildContext context,
+    AppLocalizations l10n,
+    bool reduceMotion,
+  ) {
+    final businesses = _businesses;
+    // Loaded and empty → hide the section entirely.
+    if (businesses != null && businesses.isEmpty) {
+      return const SliverToBoxAdapter(child: SizedBox.shrink());
+    }
+
+    final physics = reduceMotion
+        ? const ClampingScrollPhysics()
+        : const BouncingScrollPhysics();
+
+    Widget content;
+    String stateKey;
+    if (businesses == null) {
+      stateKey = 'loading';
+      content = ListView.separated(
+        scrollDirection: Axis.horizontal,
+        physics: const NeverScrollableScrollPhysics(),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        itemCount: 3,
+        separatorBuilder: (_, __) => const SizedBox(width: 12),
+        itemBuilder: (_, __) => _BusinessCardSkeleton(animate: !reduceMotion),
+      );
+    } else {
+      stateKey = 'loaded';
+      content = ListView.separated(
+        scrollDirection: Axis.horizontal,
+        physics: physics,
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        itemCount: businesses.length,
+        separatorBuilder: (_, __) => const SizedBox(width: 12),
+        itemBuilder: (context, index) => _BusinessCard(
+          business: businesses[index],
+          animate: !reduceMotion,
+          onTap: () => _openBusiness(context, businesses[index]),
+        ),
+      );
+    }
+
+    return SliverToBoxAdapter(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+            child: Text(
+              l10n.exploreBusinessesNearYou,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 19,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: _BusinessCard.cardHeight,
+            child: AnimatedSwitcher(
+              duration: reduceMotion
+                  ? Duration.zero
+                  : const Duration(milliseconds: 300),
+              child:
+                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Opens a business's storefront/profile ([BusinessStorefrontScreen]). The
+  /// profile-view interaction is logged (fire-and-forget) to feed the
+  /// recommendation signal, matching the people-card behaviour.
+  void _openBusiness(BuildContext context, Profile business) {
+    di.sl<InteractionLogService>()
+        .logProfileView(widget.userId, business.userId);
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BusinessStorefrontScreen(
+          business: business,
+          currentUserId: widget.userId,
+        ),
       ),
     );
   }
@@ -3070,6 +3270,145 @@ class _CommunityCardSkeleton extends StatelessWidget {
     return _ShimmerBox(
       width: _CommunityCard.cardWidth,
       height: _CommunityCard.cardHeight,
+      radius: AppGlass.radiusCard,
+      animate: animate,
+    );
+  }
+}
+
+/// A glass "business near you" card. A full-width cover/avatar image on top
+/// (the business's first photo, else a branded storefront fallback), then the
+/// business name and its category. Solid charcoal surface (no per-card
+/// BackdropFilter) to keep the horizontal scroll cheap. Tapping opens the
+/// business's storefront.
+class _BusinessCard extends StatelessWidget {
+  const _BusinessCard({
+    required this.business,
+    required this.onTap,
+    required this.animate,
+  });
+
+  final Profile business;
+  final VoidCallback onTap;
+  final bool animate;
+
+  static const double cardWidth = 220;
+  static const double cardHeight = 200;
+  static const double _imageHeight = 108;
+
+  @override
+  Widget build(BuildContext context) {
+    final name = (business.businessName?.trim().isNotEmpty ?? false)
+        ? business.businessName!.trim()
+        : business.displayName;
+    final category = business.businessCategory?.trim();
+    final imageUrl =
+        business.photoUrls.isNotEmpty ? business.photoUrls.first : null;
+
+    return SizedBox(
+      width: cardWidth,
+      height: cardHeight,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+          onTap: onTap,
+          child: Container(
+            clipBehavior: Clip.antiAlias,
+            decoration: BoxDecoration(
+              color: AppColors.charcoal,
+              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+              border: Border.all(color: AppGlass.border),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // ── Cover / avatar (or a branded fallback) ──────────────────
+                SizedBox(
+                  height: _imageHeight,
+                  child: (imageUrl != null && imageUrl.isNotEmpty)
+                      ? _FadeInImage(
+                          url: imageUrl,
+                          height: _imageHeight,
+                          animate: animate,
+                        )
+                      : Container(
+                          alignment: Alignment.center,
+                          color: AppColors.richGold.withValues(alpha: 0.10),
+                          child: const Icon(
+                            Icons.storefront_outlined,
+                            color: AppColors.richGold,
+                            size: 34,
+                          ),
+                        ),
+                ),
+                // ── Business name / category ────────────────────────────────
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          name,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                            height: 1.2,
+                          ),
+                        ),
+                        const Spacer(),
+                        if (category != null && category.isNotEmpty)
+                          Row(
+                            children: [
+                              const Icon(
+                                Icons.sell_outlined,
+                                color: AppColors.textTertiary,
+                                size: 14,
+                              ),
+                              const SizedBox(width: 5),
+                              Flexible(
+                                child: Text(
+                                  category,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    color: AppColors.richGold,
+                                    fontSize: 12.5,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Skeleton for a loading "Businesses near you" card — matches the
+/// [_BusinessCard] footprint so the loaded content slots in without a jump.
+class _BusinessCardSkeleton extends StatelessWidget {
+  const _BusinessCardSkeleton({required this.animate});
+
+  final bool animate;
+
+  @override
+  Widget build(BuildContext context) {
+    return _ShimmerBox(
+      width: _BusinessCard.cardWidth,
+      height: _BusinessCard.cardHeight,
       radius: AppGlass.radiusCard,
       animate: animate,
     );

@@ -16,8 +16,10 @@ import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../events/presentation/screens/event_ticket_screen.dart';
 
 /// QR hub — one place for everything QR:
-///  - **My tickets**: all the QR codes for the user's UPCOMING joined events,
-///    reusing the exact [EventTicketPayload] the organizer scanner validates.
+///  - **My tickets**: a QR code for EVERY event the user has joined (going) or
+///    organizes — upcoming & ongoing first, finished events after — reusing the
+///    exact [EventTicketPayload] the organizer scanner validates. A joined event
+///    always shows its ticket regardless of publish/featured state.
 ///  - **Scan**: a [MobileScanner] that parses a scanned GreenGo code and routes
 ///    it — check a person in (when the current user organizes that event), join
 ///    the current user to the event, or open their own ticket's event.
@@ -82,7 +84,7 @@ class _MyTicketsTab extends StatefulWidget {
 }
 
 class _MyTicketsTabState extends State<_MyTicketsTab> {
-  // null == loading; empty == loaded, nothing upcoming.
+  // null == loading; empty == loaded, no joined/organized events.
   List<Event>? _events;
 
   @override
@@ -95,10 +97,22 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
     List<Event> mine = const <Event>[];
     try {
       final ds = di.sl<EventsRemoteDataSource>();
+      // getUserEvents already returns every event the user is going to (RSVP
+      // status == going) PLUS the ones they organize, regardless of publish or
+      // featured state. Show a scannable ticket for ALL of them — never filter
+      // by publish/live state. We only reorder by time so the tickets the user
+      // actually needs at the door surface first.
       final all = await ds.getUserEvents(widget.currentUserId);
       final now = DateTime.now();
-      mine = all.where((e) => !e.startDate.isBefore(now)).toList()
+      // "Not past" = still upcoming OR currently ongoing (endDate not reached).
+      // This keeps today's / in-progress events (which the future-only filter
+      // used to hide) at the top alongside upcoming ones.
+      bool isPast(Event e) => e.endDate.isBefore(now);
+      final upcoming = all.where((e) => !isPast(e)).toList()
         ..sort((a, b) => a.startDate.compareTo(b.startDate));
+      final past = all.where(isPast).toList()
+        ..sort((a, b) => b.startDate.compareTo(a.startDate));
+      mine = [...upcoming, ...past];
     } catch (_) {
       mine = const <Event>[];
     }

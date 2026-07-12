@@ -119,6 +119,11 @@ class _EventAnalyticsScreenState extends State<EventAnalyticsScreen> {
     final pct = (agg.checkInRate * 100).round();
     final tiles = <Widget>[
       _statTile(
+        icon: Icons.visibility_outlined,
+        label: l10n.eventAnalyticsViews,
+        value: '${agg.viewCount}',
+      ),
+      _statTile(
         icon: Icons.check_circle_outline,
         label: l10n.eventAnalyticsGoing,
         value: '${agg.goingCount}',

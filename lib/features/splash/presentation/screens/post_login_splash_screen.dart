@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Splash screen shown briefly after login before entering the main app.
-/// Displays only the GreenGo logo centered on a dark background.
+/// Displays the GreenGo logo centered on a dark background. Business accounts
+/// additionally get a small gold "BUSINESS" label beneath the logo.
 class PostLoginSplashScreen extends StatefulWidget {
 
   const PostLoginSplashScreen({
@@ -19,9 +24,13 @@ class _PostLoginSplashScreenState extends State<PostLoginSplashScreen>
   late Animation<double> _opacityAnimation;
   late Animation<double> _scaleAnimation;
 
+  /// Cached in SharedPreferences by the auth wrapper when the profile loads.
+  bool _isBusiness = false;
+
   @override
   void initState() {
     super.initState();
+    _loadBusinessFlag();
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 2200),
@@ -74,6 +83,18 @@ class _PostLoginSplashScreenState extends State<PostLoginSplashScreen>
     _controller.forward();
   }
 
+  Future<void> _loadBusinessFlag() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final isBusiness = prefs.getBool('is_business_account') ?? false;
+      if (mounted && isBusiness) {
+        setState(() => _isBusiness = true);
+      }
+    } catch (_) {
+      // Non-fatal: simply omit the label if the flag can't be read.
+    }
+  }
+
   @override
   void dispose() {
     _controller.dispose();
@@ -89,11 +110,28 @@ class _PostLoginSplashScreenState extends State<PostLoginSplashScreen>
           opacity: _opacityAnimation.value,
           child: Transform.scale(
             scale: _scaleAnimation.value,
-            child: Image.asset(
-              'assets/images/greengo_logo.png',
-              width: 200,
-              height: 200,
-              fit: BoxFit.contain,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(
+                  'assets/images/greengo_logo.png',
+                  width: 200,
+                  height: 200,
+                  fit: BoxFit.contain,
+                ),
+                if (_isBusiness) ...[
+                  const SizedBox(height: 12),
+                  Text(
+                    AppLocalizations.of(context)!.splashBusinessLabel,
+                    style: const TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 4,
+                    ),
+                  ),
+                ],
+              ],
             ),
           ),
         ),

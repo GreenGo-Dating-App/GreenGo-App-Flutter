@@ -49,6 +49,12 @@ import 'event_ticket_screen.dart';
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
 const int kFeatureEventCost = 100; // adjustable
 
+/// Coin cost to create an EXTRA event beyond the free per-tier allowance
+/// ([TierEntitlements.maxEvents]). Base 1 / Silver 3 / Gold 5 free ongoing
+/// events; Platinum is unlimited (never charged). Each additional ongoing
+/// event costs this many coins.
+const int kExtraEventCost = 50; // adjustable
+
 /// Events Screen - Discover local events and activities
 ///
 /// 3 tabs: Upcoming, Nearby, My Events
@@ -3595,6 +3601,42 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (confirmed == true) widget.onEventDeleted?.call();
   }
 
+  /// Insufficient coins for the extra-event fee → offer to buy more, routing
+  /// to the coin market (mirrors the boost flow's buy-coins prompt).
+  Future<void> _promptBuyCoinsForExtraEvent(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final go = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventsInsufficientCoins,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.eventsBuyCoinsPrompt,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.eventsBuyCoins,
+                  style: const TextStyle(color: AppColors.richGold))),
+        ],
+      ),
+    );
+    if (go != true || !mounted) return;
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider<CoinBloc>(
+          create: (_) => sl<CoinBloc>()
+            ..add(LoadCoinBalance(widget.currentUserId))
+            ..add(const LoadAvailablePackages()),
+          child: CoinShopScreen(userId: widget.currentUserId),
+        ),
+      ),
+    );
+  }
+
   Future<void> _submit(
       {required EventStatus status, DateTime? publishAt}) async {
     if (_uploading || _saving) return;
@@ -3616,46 +3658,76 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       return;
     }
 
-    // Enforce tier cap on number of events created (not when editing).
+    // Membership gate + per-tier event allowance (only when creating).
     if (!_isEditing) {
-      final check =
+      // 1) Valid-membership gate: a valid GreenGo membership is required to
+      //    create an event. Active Base (free) stays allowed — only a truly
+      //    expired membership is blocked (routes to the marketplace to renew).
+      if (!await TierGate()
+          .ensureValidMembershipByUid(context, widget.currentUserId)) {
+        return;
+      }
+      if (!mounted) return;
+
+      // 2) Extra-event paywall. Free allowance = TierEntitlements.maxEvents
+      //    (Base 1 / Silver 3 / Gold 5; Platinum/test = unlimited → always
+      //    free). Within the allowance the event is free; beyond it, each
+      //    additional ongoing event costs [kExtraEventCost] coins.
+      final events =
           await TierLimitsService().canCreateEvent(widget.currentUserId);
       if (!mounted) return;
-      if (!check.allowed) {
+      final needsPaywall = events.max != null && !events.allowed;
+      if (needsPaywall) {
         final l10n = AppLocalizations.of(context)!;
-        await showDialog<void>(
+        // Can the user afford the extra-event fee?
+        final afford = await sl<CanAffordFeature>()(
+            userId: widget.currentUserId, cost: kExtraEventCost);
+        if (!mounted) return;
+        if (!afford.fold((_) => false, (v) => v)) {
+          await _promptBuyCoinsForExtraEvent(context);
+          return;
+        }
+        // Confirm the coin spend ("Extra event · 50 coins").
+        final confirmed = await showDialog<bool>(
           context: context,
           builder: (ctx) => AlertDialog(
             backgroundColor: AppColors.backgroundCard,
-            title: Text(l10n.tierLimitTitle,
+            title: Text(l10n.extraEventTitle,
                 style: const TextStyle(color: AppColors.textPrimary)),
             content: Text(
-              l10n.tierLimitEventsBody(check.max ?? 0),
+              l10n.extraEventBody(kExtraEventCost),
               style: const TextStyle(color: AppColors.textSecondary),
             ),
             actions: [
               TextButton(
-                onPressed: () => Navigator.pop(ctx),
-                child: Text(l10n.tourGotIt),
+                onPressed: () => Navigator.pop(ctx, false),
+                child: Text(l10n.groupCancel),
               ),
               ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(ctx);
-                  TierGate().openMembershipUpgrade(
-                    context,
-                    currentUserId: widget.currentUserId,
-                  );
-                },
+                onPressed: () => Navigator.pop(ctx, true),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.richGold,
                   foregroundColor: AppColors.deepBlack,
                 ),
-                child: Text(l10n.upgrade),
+                child: Text(l10n.eventsConfirmAction),
               ),
             ],
           ),
         );
-        return;
+        if (confirmed != true || !mounted) return;
+        // Charge the fee; only proceed to create on a successful charge.
+        final charge = await sl<PurchaseFeature>()(
+          userId: widget.currentUserId,
+          featureName: 'extra_event',
+          cost: kExtraEventCost,
+        );
+        if (!mounted) return;
+        if (!charge.fold((_) => false, (_) => true)) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(l10n.eventsInsufficientCoins)),
+          );
+          return;
+        }
       }
     }
 
