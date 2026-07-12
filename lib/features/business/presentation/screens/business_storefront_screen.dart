@@ -12,6 +12,7 @@ import '../widgets/business_follow_button.dart';
 import '../widgets/opening_hours_section.dart';
 import '../widgets/business_rating.dart';
 import '../../../safety/presentation/widgets/safety_actions_menu.dart';
+import '../../../../core/services/deep_link_service.dart';
 
 /// Public Business Storefront.
 ///
@@ -231,6 +232,15 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                       BusinessContactButton(
                         businessProfile: widget.business,
                         currentUserId: widget.currentUserId,
+                      ),
+                      // Share this storefront/profile via its deep link
+                      // (https://greengo-chat.web.app/u/{userId}).
+                      IconButton(
+                        icon: const Icon(Icons.ios_share,
+                            color: AppColors.richGold),
+                        tooltip: l10n.shareProfileTooltip,
+                        onPressed: () =>
+                            shareProfileLink(context, widget.business.userId),
                       ),
                       if (widget.currentUserId != widget.business.userId) ...[
                         const Spacer(),
