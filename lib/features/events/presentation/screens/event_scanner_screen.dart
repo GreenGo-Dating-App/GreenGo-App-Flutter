@@ -172,7 +172,7 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
           MobileScanner(
             controller: _controller,
             onDetect: _onDetect,
-            errorBuilder: (context, error, child) =>
+            errorBuilder: (context, error) =>
                 _buildError(context, error, l10n),
           ),
           // Framing reticle.

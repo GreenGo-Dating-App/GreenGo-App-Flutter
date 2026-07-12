@@ -393,7 +393,7 @@ class _ScanTabState extends State<_ScanTab> {
         MobileScanner(
           controller: _controller,
           onDetect: _onDetect,
-          errorBuilder: (context, error, child) => _buildError(l10n),
+          errorBuilder: (context, error) => _buildError(l10n),
         ),
         Center(
           child: Container(
