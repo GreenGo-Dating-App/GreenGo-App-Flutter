@@ -6,6 +6,7 @@ import '../../domain/entities/profile.dart';
 import '../../domain/entities/social_links.dart';
 
 enum OnboardingStep {
+  welcome, // Step 0: Welcome / cultural intro
   basicInfo, // Step 1: Name, DOB, Gender
   photos, // Step 2: Photo upload
   verification, // Step 3: ID verification photo
@@ -126,6 +127,8 @@ class OnboardingInProgress extends OnboardingState {
 
   bool get canProceedToNext {
     switch (currentStep) {
+      case OnboardingStep.welcome:
+        return true; // Intro step — always proceedable
       case OnboardingStep.basicInfo:
         return displayName != null &&
             displayName!.isNotEmpty &&

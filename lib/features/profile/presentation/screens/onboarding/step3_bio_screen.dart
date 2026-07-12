@@ -146,7 +146,7 @@ class _Step3BioScreenState extends State<Step3BioScreen> {
                                 ),
                                 decoration: InputDecoration(
                                   border: InputBorder.none,
-                                  hintText: AppLocalizations.of(context)?.onboardingBioHint ?? 'Tell us about your interests, hobbies, what you\'re looking for...',
+                                  hintText: AppLocalizations.of(context)?.onboardingBioHint ?? 'Tell us about your interests, the languages you speak, and the cultures you\'d love to explore...',
                                   hintStyle: TextStyle(
                                     color: Colors.white.withOpacity(0.3),
                                     fontSize: 16,

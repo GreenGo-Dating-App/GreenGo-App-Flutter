@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../domain/entities/community.dart';
+import 'sponsored_badge.dart';
 
 /// Community Card Widget
 ///
@@ -20,125 +21,146 @@ class CommunityCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    // Mirror the Exchange (ConversationCard) row anatomy: a full-width row with
+    // only a bottom divider (no rounded "card" box), leading avatar, an info
+    // column (title + subtitle) and a trailing column (time + unread dot).
+    return InkWell(
       onTap: onTap,
       child: Container(
-        margin: const EdgeInsets.symmetric(
-          horizontal: AppDimensions.marginM,
-          vertical: AppDimensions.marginXS,
-        ),
-        padding: const EdgeInsets.all(AppDimensions.paddingM),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
-          color: AppColors.backgroundCard,
-          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-          border: Border.all(
-            color: AppColors.divider,
-            width: 0.5,
+          border: Border(
+            bottom: BorderSide(
+              color: AppColors.divider.withValues(alpha: 0.3),
+              width: 1,
+            ),
           ),
         ),
         child: Row(
           children: [
             // Community avatar / type icon
             _buildAvatar(),
-            const SizedBox(width: AppDimensions.paddingM),
+            const SizedBox(width: 12),
 
-            // Community info
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // Name + type badge row
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          community.name,
-                          style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                      if (showUnreadIndicator)
-                        Container(
-                          width: 8,
-                          height: 8,
-                          decoration: const BoxDecoration(
-                            color: AppColors.richGold,
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: 4),
+            // Community info (title + subtitle)
+            _buildInfo(),
 
-                  // Type badge + member count
-                  Row(
-                    children: [
-                      _buildTypeBadge(),
-                      const SizedBox(width: 8),
-                      const Icon(
-                        Icons.people_outline,
-                        size: 14,
-                        color: AppColors.textTertiary,
-                      ),
-                      const SizedBox(width: 4),
-                      Text(
-                        '${community.memberCount}',
-                        style: const TextStyle(
-                          color: AppColors.textTertiary,
-                          fontSize: 12,
-                        ),
-                      ),
-                      if (community.languages.isNotEmpty) ...[
-                        const SizedBox(width: 8),
-                        ..._buildLanguageBadges(),
-                      ],
-                    ],
-                  ),
-                  const SizedBox(height: 6),
-
-                  // Last message preview + time
-                  if (community.lastMessagePreview != null)
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            community.lastMessagePreview!,
-                            style: const TextStyle(
-                              color: AppColors.textTertiary,
-                              fontSize: 13,
-                            ),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        Text(
-                          community.lastActivityText,
-                          style: const TextStyle(
-                            color: AppColors.textTertiary,
-                            fontSize: 11,
-                          ),
-                        ),
-                      ],
-                    ),
-                ],
-              ),
-            ),
+            // Trailing (last activity time + unread indicator)
+            _buildTrailing(),
           ],
         ),
       ),
     );
   }
 
+  Widget _buildInfo() {
+    return Expanded(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Name + type badge row
+          Row(
+            children: [
+              Flexible(
+                child: Text(
+                  community.name,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              const SizedBox(width: 6),
+              _buildTypeBadge(),
+              if (community.isSponsored) ...[
+                const SizedBox(width: 6),
+                const SponsoredBadge(compact: true),
+              ],
+            ],
+          ),
+          const SizedBox(height: 4),
+
+          // Subtitle: member count + languages + last message preview
+          Row(
+            children: [
+              const Icon(
+                Icons.people_outline,
+                size: 14,
+                color: AppColors.textTertiary,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                '${community.memberCount}',
+                style: const TextStyle(
+                  color: AppColors.textTertiary,
+                  fontSize: 12,
+                ),
+              ),
+              if (community.languages.isNotEmpty) ...[
+                const SizedBox(width: 8),
+                ..._buildLanguageBadges(),
+              ],
+              if (community.lastMessagePreview != null) ...[
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    community.lastMessagePreview!,
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 13,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildTrailing() {
+    final hasActivity = community.lastMessagePreview != null;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (hasActivity)
+          Text(
+            community.lastActivityText,
+            style: TextStyle(
+              color: showUnreadIndicator
+                  ? AppColors.richGold
+                  : AppColors.textTertiary,
+              fontSize: 12,
+              fontWeight:
+                  showUnreadIndicator ? FontWeight.bold : FontWeight.normal,
+            ),
+          ),
+        if (showUnreadIndicator) ...[
+          const SizedBox(height: 6),
+          Container(
+            width: 10,
+            height: 10,
+            decoration: const BoxDecoration(
+              color: AppColors.richGold,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
   Widget _buildAvatar() {
     return Container(
-      width: 50,
-      height: 50,
+      width: 56,
+      height: 56,
       decoration: BoxDecoration(
         color: _getTypeColor().withValues(alpha: 0.15),
         borderRadius: BorderRadius.circular(AppDimensions.radiusM),

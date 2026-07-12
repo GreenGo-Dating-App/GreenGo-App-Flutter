@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/interaction_log_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../bloc/events_bloc.dart';
 import '../bloc/events_event.dart';
@@ -43,8 +44,21 @@ class EventDetailLoaderScreen extends StatelessWidget {
           return BlocBuilder<EventsBloc, EventsState>(
             builder: (context, state) {
               if (state is EventDetailLoaded) {
+                // Attendees load separately (subcollection); merge them onto the
+                // event so the roster + "My ticket" gate work from deep links.
+                final event = state.event.attendees.isEmpty &&
+                        state.attendees.isNotEmpty
+                    ? state.event.copyWith(attendees: state.attendees)
+                    : state.event;
+                // Log the event view for recommendations (fire-and-forget,
+                // never throws; the service dedupes identical rebuilds).
+                di.sl<InteractionLogService>().logEventView(
+                      currentUserId,
+                      eventId,
+                      category: event.category.name,
+                    );
                 return EventDetailsScreen(
-                  event: state.event,
+                  event: event,
                   currentUserId: currentUserId,
                 );
               }

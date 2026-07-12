@@ -10,8 +10,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
 
 import '../../../../core/config/app_config.dart';
+import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../gamification/data/services/streak_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/services/presence_service.dart';
@@ -23,6 +25,7 @@ import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/widgets/base_membership_dialog.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/widgets/home_skeleton.dart';
+import '../../../../core/widgets/glass_bottom_nav.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../app_guide/presentation/screens/app_guide_screen.dart';
@@ -41,6 +44,7 @@ import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../events/presentation/screens/events_screen.dart';
+import '../../../explore/presentation/screens/explore_screen.dart';
 import '../../../chat/presentation/screens/groups_screen.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
@@ -58,6 +62,7 @@ import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
 import '../../../membership/data/datasources/pending_signup_coupon.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../../safety/presentation/screens/community_guidelines_screen.dart';
 import '../../../notifications/presentation/bloc/notifications_bloc.dart';
 import '../../../notifications/presentation/bloc/notifications_event.dart';
 import '../../../notifications/presentation/bloc/notifications_state.dart';
@@ -203,6 +208,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       _startAchievementListener();
     }
 
+    // Record daily engagement streak on app start (fire-and-forget; grants
+    // milestone coins at 3/7/30-day streaks via the coin ledger). Never throws.
+    di.sl<StreakService>().touch(widget.userId);
+
     // Initialize notifications bloc for badge count
     _notificationsBloc = di.sl<NotificationsBloc>()
       ..add(NotificationsLoadRequested(
@@ -222,32 +231,21 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _profileBloc = di.sl<ProfileBloc>()
       ..add(ProfileLoadRequested(userId: widget.userId));
 
-    // Build screens list:
-    // Network(0), Exchanges(1), Leaderboard(2), Events(3), Profile(4)
-    // (Shop moved into Profile; Events takes the 4th tab.)
-    _screens = [
-      DiscoveryScreen(
-        key: _discoveryKey,
-        userId: widget.userId,
-        onGridModeChanged: () {
-          if (mounted) setState(() {});
-        },
-      ),
-      ConversationsScreen(userId: widget.userId, onBadgeDecrement: _decrementBadgeCount),
-      GroupsScreen(userId: widget.userId),
-      EventsScreen(currentUserId: widget.userId),
-      BlocProvider.value(
-        value: _profileBloc,
-        child: EditProfileScreen(userId: widget.userId),
-      ),
-    ];
+    // Build screens list — branches on the active flavor (see [_buildScreens]).
+    // Default (Explore-first): Explore(0), Events(1), Community(2), Messages(3),
+    //   Profile(4) — no swipe deck.
+    // Full (opt-in): Discovery(0), Messages(1), Groups(2), Events(3), Profile(4).
+    _screens = _buildScreens();
 
     // Check profile, load countdown cache, and access data together
     // _isCheckingProfile stays true until ALL of these complete
     _initializeAppState();
 
-    // Load hourly usage counters for discovery
-    _loadUsageCounters();
+    // Load hourly usage counters for discovery (swipe-only; skipped on the
+    // Explore-first culture build where there is no like/nope/superLike deck).
+    if (FlavorConfig.enableSwipeDiscovery) {
+      _loadUsageCounters();
+    }
 
     // Check subscription expiry and downgrade to free if expired
     _checkSubscriptionExpiry();
@@ -270,6 +268,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Start live Firestore listeners for badge counts
     _startBadgeCountListeners();
+
+    // First-run community guidelines gate (welcoming, respectful cross-cultural
+    // exchange). Shown once, persisted in SharedPreferences. Fire-and-forget.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      CommunityGuidelinesScreen.showIfNeeded(context);
+    });
   }
 
   /// Starts the first-launch gesture tour once the main UI is up.
@@ -291,10 +296,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Give the discovery grid a few seconds to load its first cards so the
     // card gesture steps can anchor to a real card; start anyway after that
     // (the card steps are skipped automatically when no card is mounted).
-    for (var i = 0; i < 4; i++) {
-      await Future.delayed(const Duration(milliseconds: 1200));
-      if (!mounted) return;
-      if (TourKeys.firstCard.currentContext != null) break;
+    // Only relevant on the full build — the Explore-first culture build has no
+    // swipe deck, so there is no card to anchor to.
+    if (FlavorConfig.enableSwipeDiscovery) {
+      for (var i = 0; i < 4; i++) {
+        await Future.delayed(const Duration(milliseconds: 1200));
+        if (!mounted) return;
+        if (TourKeys.firstCard.currentContext != null) break;
+      }
     }
     if (!mounted || _showcaseContext == null) {
       _tourPending = false;
@@ -1178,33 +1187,37 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     final fs = FirebaseFirestore.instance;
     final uid = widget.userId;
 
-    // New matches: count where user hasn't seen the match
-    // Listen to matches where user is userId1 or userId2
-    _matchCountSub = fs
-        .collection('matches')
-        .where(Filter.or(
-          Filter('userId1', isEqualTo: uid),
-          Filter('userId2', isEqualTo: uid),
-        ))
-        .where('isActive', isEqualTo: true)
-        .snapshots()
-        .listen((snapshot) {
-      if (!mounted) return;
-      var count = 0;
-      for (final doc in snapshot.docs) {
-        final data = doc.data();
-        final uid1 = data['userId1'] as String?;
-        final uid2 = data['userId2'] as String?;
-        if (uid1 != uid && uid2 != uid) continue;
-        final seen = uid == uid1
-            ? (data['user1Seen'] as bool? ?? false)
-            : (data['user2Seen'] as bool? ?? false);
-        if (!seen) count++;
-      }
-      if (mounted && count != _newMatchCount) {
-        setState(() => _newMatchCount = count);
-      }
-    });
+    // New matches: count where user hasn't seen the match.
+    // Dating-only — skipped on the Explore-first culture build so nothing
+    // observes the `matches` collection and no match badge is surfaced.
+    if (FlavorConfig.enableSwipeDiscovery) {
+      // Listen to matches where user is userId1 or userId2
+      _matchCountSub = fs
+          .collection('matches')
+          .where(Filter.or(
+            Filter('userId1', isEqualTo: uid),
+            Filter('userId2', isEqualTo: uid),
+          ))
+          .where('isActive', isEqualTo: true)
+          .snapshots()
+          .listen((snapshot) {
+        if (!mounted) return;
+        var count = 0;
+        for (final doc in snapshot.docs) {
+          final data = doc.data();
+          final uid1 = data['userId1'] as String?;
+          final uid2 = data['userId2'] as String?;
+          if (uid1 != uid && uid2 != uid) continue;
+          final seen = uid == uid1
+              ? (data['user1Seen'] as bool? ?? false)
+              : (data['user2Seen'] as bool? ?? false);
+          if (!seen) count++;
+        }
+        if (mounted && count != _newMatchCount) {
+          setState(() => _newMatchCount = count);
+        }
+      });
+    }
 
     // Badge count: Firestore is single source of truth for unread + to approve count
     _messageCountSub = fs
@@ -1333,88 +1346,23 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ((_accessData != null && _accessData!.isCountdownActive) ||
          (_accessData == null && _showCachedCountdown));
 
-    // Tabs: Exchange(0), Messages(1), Shop(2), Profile(3)
-    const profileIndex = 3;
-
-    // Ensure current index is valid
+    // Ensure current index is valid for the active flavor's screen list.
+    // Culture (Explore-first): Explore(0), Events(1), Community(2), Messages(3),
+    //   Profile(4). Full (dating): Discovery(0), Messages(1), Groups(2),
+    //   Events(3), Profile(4). Both have 5 screens, so clamp to [0, 4].
     final safeIndex = _currentIndex.clamp(0, _screens.length - 1);
 
     final scaffold = Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: _buildAppBar(),
       body: IndexedStack(
+        // Verification is gated at login level — no in-app overlay needed, so
+        // every tab screen is mounted and kept alive; IndexedStack just shows
+        // the selected one.
         index: safeIndex,
-        children: _screens.asMap().entries.map((entry) {
-          final index = entry.key;
-          final screen = entry.value;
-
-          // Verification is gated at login level — no in-app overlay needed
-          return screen;
-        }).toList(),
+        children: _screens,
       ),
-      bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          border: Border(
-            top: BorderSide(
-              color: AppColors.divider,
-              width: 1,
-            ),
-          ),
-        ),
-        child: BottomNavigationBar(
-          currentIndex: safeIndex,
-          onTap: _onTabTapped,
-          backgroundColor: AppColors.backgroundCard,
-          selectedItemColor: AppColors.richGold,
-          unselectedItemColor: AppColors.textTertiary,
-          selectedFontSize: 13,
-          unselectedFontSize: 13,
-          iconSize: 28,
-          type: BottomNavigationBarType.fixed,
-          elevation: 0,
-          items: [
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.people_outline),
-              activeIcon: const Icon(Icons.people),
-              label: AppLocalizations.of(context)!.discover,
-            ),
-            BottomNavigationBarItem(
-              icon: TourShowcase(
-                showcaseKey: TourKeys.navMessages,
-                title: AppLocalizations.of(context)!.tourNavMessagesTitle,
-                description: AppLocalizations.of(context)!.tourNavMessagesDesc,
-                gesture: TourGesture.tap,
-                targetPadding: const EdgeInsets.all(6),
-                child: _buildBadgeIcon(Icons.forum_outlined, _unreadMessageCount),
-              ),
-              activeIcon: _buildBadgeIcon(Icons.forum, _unreadMessageCount),
-              label: AppLocalizations.of(context)!.messages,
-            ),
-            BottomNavigationBarItem(
-              icon: _buildBadgeIcon(Icons.groups_outlined, _unreadGroupCount),
-              activeIcon: _buildBadgeIcon(Icons.groups, _unreadGroupCount),
-              label: AppLocalizations.of(context)!.groupsTitle,
-            ),
-            BottomNavigationBarItem(
-              icon: const Icon(Icons.event_outlined),
-              activeIcon: const Icon(Icons.event),
-              label: AppLocalizations.of(context)!.eventsTitle,
-            ),
-            BottomNavigationBarItem(
-              icon: TourShowcase(
-                showcaseKey: TourKeys.navProfile,
-                title: AppLocalizations.of(context)!.tourNavProfileTitle,
-                description: AppLocalizations.of(context)!.tourNavProfileDesc,
-                gesture: TourGesture.tap,
-                targetPadding: const EdgeInsets.all(6),
-                child: const Icon(Icons.person_outline),
-              ),
-              activeIcon: const Icon(Icons.person),
-              label: AppLocalizations.of(context)!.profile,
-            ),
-          ],
-        ),
-      ),
+      bottomNavigationBar: _buildBottomNav(safeIndex),
     );
 
     // Wrap with red border if admin is logged in
@@ -1604,8 +1552,201 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     return scaffold;
   }
 
+  /// Builds the tab screens for the active flavor.
+  ///
+  /// Explore-first (culture, the universal default): Explore(0), Events(1),
+  /// Community(2), Messages(3), Profile(4) — no swipe DiscoveryScreen mounted.
+  /// Full (opt-in `main_full.dart`): unchanged legacy order Discovery(0),
+  /// Messages(1), Groups(2), Events(3), Profile(4).
+  List<Widget> _buildScreens() {
+    final Widget profileTab = BlocProvider.value(
+      value: _profileBloc,
+      child: EditProfileScreen(userId: widget.userId),
+    );
+
+    if (FlavorConfig.exploreFirst) {
+      return [
+        ExploreScreen(userId: widget.userId),
+        EventsScreen(currentUserId: widget.userId),
+        GroupsScreen(userId: widget.userId), // Community
+        ConversationsScreen(
+          userId: widget.userId,
+          onBadgeDecrement: _decrementBadgeCount,
+        ), // Messages
+        profileTab,
+      ];
+    }
+
+    // Full (dating) build — legacy layout, unchanged.
+    return [
+      DiscoveryScreen(
+        key: _discoveryKey,
+        userId: widget.userId,
+        onGridModeChanged: () {
+          if (mounted) setState(() {});
+        },
+      ),
+      ConversationsScreen(
+        userId: widget.userId,
+        onBadgeDecrement: _decrementBadgeCount,
+      ),
+      GroupsScreen(userId: widget.userId),
+      EventsScreen(currentUserId: widget.userId),
+      profileTab,
+    ];
+  }
+
+  /// Returns the bottom navigation bar for the active flavor.
+  Widget _buildBottomNav(int safeIndex) {
+    if (FlavorConfig.exploreFirst) {
+      return _buildGlassBottomNav(safeIndex);
+    }
+    return _buildFullBottomNav(safeIndex);
+  }
+
+  /// New frosted-glass bottom nav for the Explore-first culture build.
+  /// Order: Explore(0), Events(1), Community(2), Messages(3), Profile(4).
+  ///
+  /// Unread message/group counts are surfaced via [GlassNavItem.badgeCount],
+  /// which renders a small red badge at the icon's top-right ("99+" capped).
+  Widget _buildGlassBottomNav(int safeIndex) {
+    final l10n = AppLocalizations.of(context)!;
+
+    final items = <GlassNavItem>[
+      GlassNavItem(
+        icon: Icons.explore_outlined,
+        activeIcon: Icons.explore,
+        label: l10n.exploreTitle,
+      ),
+      GlassNavItem(
+        icon: Icons.event_outlined,
+        activeIcon: Icons.event,
+        label: l10n.eventsTitle,
+      ),
+      GlassNavItem(
+        icon: Icons.groups_outlined,
+        activeIcon: Icons.groups,
+        label: l10n.communityTabTitle,
+        badgeCount: _unreadGroupCount,
+      ),
+      GlassNavItem(
+        icon: Icons.forum_outlined,
+        activeIcon: Icons.forum,
+        label: l10n.messages,
+        badgeCount: _unreadMessageCount,
+      ),
+      GlassNavItem(
+        icon: Icons.person_outline,
+        activeIcon: Icons.person,
+        label: l10n.profile,
+      ),
+    ];
+
+    return GlassBottomNav(
+      items: items,
+      currentIndex: safeIndex,
+      onTap: _onTabTapped,
+    );
+  }
+
+  /// Legacy solid bottom nav for the full (dating) build — unchanged behavior.
+  /// Order: Discovery(0), Messages(1), Groups(2), Events(3), Profile(4).
+  Widget _buildFullBottomNav(int safeIndex) {
+    return Container(
+      decoration: const BoxDecoration(
+        border: Border(
+          top: BorderSide(
+            color: AppColors.divider,
+            width: 1,
+          ),
+        ),
+      ),
+      child: BottomNavigationBar(
+        currentIndex: safeIndex,
+        onTap: _onTabTapped,
+        backgroundColor: AppColors.backgroundCard,
+        selectedItemColor: AppColors.richGold,
+        unselectedItemColor: AppColors.textTertiary,
+        selectedFontSize: 13,
+        unselectedFontSize: 13,
+        iconSize: 28,
+        type: BottomNavigationBarType.fixed,
+        elevation: 0,
+        items: [
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.people_outline),
+            activeIcon: const Icon(Icons.people),
+            label: AppLocalizations.of(context)!.discover,
+          ),
+          BottomNavigationBarItem(
+            icon: TourShowcase(
+              showcaseKey: TourKeys.navMessages,
+              title: AppLocalizations.of(context)!.tourNavMessagesTitle,
+              description: AppLocalizations.of(context)!.tourNavMessagesDesc,
+              gesture: TourGesture.tap,
+              targetPadding: const EdgeInsets.all(6),
+              child: _buildBadgeIcon(Icons.forum_outlined, _unreadMessageCount),
+            ),
+            activeIcon: _buildBadgeIcon(Icons.forum, _unreadMessageCount),
+            label: AppLocalizations.of(context)!.messages,
+          ),
+          BottomNavigationBarItem(
+            icon: _buildBadgeIcon(Icons.groups_outlined, _unreadGroupCount),
+            activeIcon: _buildBadgeIcon(Icons.groups, _unreadGroupCount),
+            label: AppLocalizations.of(context)!.groupsTitle,
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.event_outlined),
+            activeIcon: const Icon(Icons.event),
+            label: AppLocalizations.of(context)!.eventsTitle,
+          ),
+          BottomNavigationBarItem(
+            icon: TourShowcase(
+              showcaseKey: TourKeys.navProfile,
+              title: AppLocalizations.of(context)!.tourNavProfileTitle,
+              description: AppLocalizations.of(context)!.tourNavProfileDesc,
+              gesture: TourGesture.tap,
+              targetPadding: const EdgeInsets.all(6),
+              child: const Icon(Icons.person_outline),
+            ),
+            activeIcon: const Icon(Icons.person),
+            label: AppLocalizations.of(context)!.profile,
+          ),
+        ],
+      ),
+    );
+  }
+
   PreferredSizeWidget? _buildAppBar() {
     final l10n = AppLocalizations.of(context)!;
+
+    // Explore-first culture build: Explore(0), Events(1), Community(2) and
+    // Profile(4) each render their own header, so the shell shows no app bar
+    // for them. Messages(3) needs the shared title + membership badge bar.
+    if (FlavorConfig.exploreFirst) {
+      if (_currentIndex == 3) {
+        return AppBar(
+          title: Text(
+            l10n.messages,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: AppColors.textPrimary,
+            ),
+          ),
+          backgroundColor: AppColors.backgroundDark,
+          elevation: 0,
+          actions: [
+            _buildNotificationButton(),
+            _buildMembershipBadgeWidget(),
+            const SizedBox(width: 8),
+          ],
+        );
+      }
+      return null;
+    }
+
+    // Full (dating) build — unchanged.
     // Tab indexes: 0=Network, 1=Exchanges, 2=Leaderboard, 3=Shop, 4=Profile
     if (_currentIndex == 0) {
       // Discovery screen - coins on left, actions on right
@@ -1644,6 +1785,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
+          // Notifications hub bell (with unread badge).
+          _buildNotificationButton(),
           // Quick access to the Coin Shop (buy coins & memberships), next to
           // the globe. The shop is a pushed screen, not a bottom-nav tab.
           IconButton(
@@ -1756,6 +1899,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         actions: [
+          _buildNotificationButton(),
           _buildMembershipBadgeWidget(),
           const SizedBox(width: 8),
         ],
@@ -1819,7 +1963,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         return Stack(
           children: [
             IconButton(
-              icon: const Icon(Icons.notifications_outlined),
+              icon: const Icon(Icons.notifications_outlined,
+                  color: AppColors.textSecondary, size: 22),
+              tooltip: AppLocalizations.of(context)!.notificationsTitle,
+              constraints: const BoxConstraints(minWidth: 40, minHeight: 40),
               onPressed: () {
                 Navigator.push(
                   context,

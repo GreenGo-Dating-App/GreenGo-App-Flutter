@@ -78,6 +78,9 @@ enum CoinTransactionReason {
   // Credits (Point 165: Promotions)
   promotionalBonus,
 
+  // Credits (Referral loop — invite a friend, both earn coins)
+  referralBonus,
+
   // Credits (Purchases & Refunds)
   coinPurchase,
   refund,
@@ -131,6 +134,10 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
       // Promotions
       case CoinTransactionReason.promotionalBonus:
         return 'Promotional Bonus';
+
+      // Referral
+      case CoinTransactionReason.referralBonus:
+        return 'Referral Bonus';
 
       // Purchases
       case CoinTransactionReason.coinPurchase:
@@ -198,6 +205,9 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
       case CoinTransactionReason.promotionalBonus:
         final campaign = metadata?['campaign'] ?? 'special offer';
         return 'Promotional bonus from $campaign: $amount coins.';
+
+      case CoinTransactionReason.referralBonus:
+        return 'Referral bonus: earned $amount coins.';
 
       case CoinTransactionReason.coinPurchase:
         final packageName = metadata?['package'] ?? '';

@@ -16,6 +16,10 @@ class EventAttendeeModel extends EventAttendee {
     super.isAnonymous = false,
     super.muteNotifications = false,
     super.visibleToOrganizerOnly = false,
+    super.checkedIn = false,
+    super.checkedInAt,
+    super.guestCount = 0,
+    super.tierId,
   });
 
   /// Create from EventAttendee entity
@@ -33,6 +37,10 @@ class EventAttendeeModel extends EventAttendee {
       isAnonymous: attendee.isAnonymous,
       muteNotifications: attendee.muteNotifications,
       visibleToOrganizerOnly: attendee.visibleToOrganizerOnly,
+      checkedIn: attendee.checkedIn,
+      checkedInAt: attendee.checkedInAt,
+      guestCount: attendee.guestCount,
+      tierId: attendee.tierId,
     );
   }
 
@@ -57,6 +65,12 @@ class EventAttendeeModel extends EventAttendee {
       isAnonymous: json['isAnonymous'] as bool? ?? false,
       muteNotifications: json['muteNotifications'] as bool? ?? false,
       visibleToOrganizerOnly: json['visibleToOrganizerOnly'] as bool? ?? false,
+      checkedIn: json['checkedIn'] as bool? ?? false,
+      checkedInAt: json['checkedInAt'] != null
+          ? _parseDateTime(json['checkedInAt'])
+          : null,
+      guestCount: (json['guestCount'] as num?)?.toInt() ?? 0,
+      tierId: json['tierId'] as String?,
     );
   }
 
@@ -74,6 +88,10 @@ class EventAttendeeModel extends EventAttendee {
       'isAnonymous': isAnonymous,
       'muteNotifications': muteNotifications,
       'visibleToOrganizerOnly': visibleToOrganizerOnly,
+      'checkedIn': checkedIn,
+      'checkedInAt': checkedInAt != null ? Timestamp.fromDate(checkedInAt!) : null,
+      'guestCount': guestCount,
+      'tierId': tierId,
     };
   }
 

@@ -61,6 +61,10 @@ class ProfileModel extends Profile {
     super.completedSafetyModules,
     super.signupGrantsApplied,
     super.signupGrantsAppliedAt,
+    super.isBusiness,
+    super.businessName,
+    super.businessCategory,
+    super.businessVerified,
   });
 
   factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
@@ -134,6 +138,10 @@ class ProfileModel extends Profile {
       completedSafetyModules: profile.completedSafetyModules,
       signupGrantsApplied: profile.signupGrantsApplied,
       signupGrantsAppliedAt: profile.signupGrantsAppliedAt,
+      isBusiness: profile.isBusiness,
+      businessName: profile.businessName,
+      businessCategory: profile.businessCategory,
+      businessVerified: profile.businessVerified,
     );
   }
 
@@ -254,6 +262,10 @@ class ProfileModel extends Profile {
       signupGrantsAppliedAt: json['signupGrantsAppliedAt'] != null
           ? (json['signupGrantsAppliedAt'] as Timestamp).toDate()
           : null,
+      isBusiness: json['isBusiness'] as bool? ?? false,
+      businessName: json['businessName'] as String?,
+      businessCategory: json['businessCategory'] as String?,
+      businessVerified: json['businessVerified'] as bool? ?? false,
     );
   }
 
@@ -404,6 +416,10 @@ class ProfileModel extends Profile {
       'signupGrantsAppliedAt': signupGrantsAppliedAt != null
           ? Timestamp.fromDate(signupGrantsAppliedAt!)
           : null,
+      'isBusiness': isBusiness,
+      'businessName': businessName,
+      'businessCategory': businessCategory,
+      'businessVerified': businessVerified,
     };
   }
 }

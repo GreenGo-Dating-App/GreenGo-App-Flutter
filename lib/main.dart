@@ -19,6 +19,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'core/config/app_config.dart';
+import 'core/config/flavor_config.dart';
 import 'core/constants/app_colors.dart';
 import 'core/constants/app_strings.dart';
 import 'core/di/injection_container.dart' as di;
@@ -345,8 +346,9 @@ class GreenGoChatApp extends StatelessWidget {
                 );
               }
 
-              // Video Profiles routes
-              if (settings.name == '/video-profile') {
+              // Video Profiles routes (dating feature — gated off in culture mode)
+              if (FlavorConfig.enableVideoProfiles &&
+                  settings.name == '/video-profile') {
                 final args = settings.arguments as Map<String, dynamic>?;
                 return MaterialPageRoute(
                   builder: (context) => BlocProvider(
@@ -358,7 +360,8 @@ class GreenGoChatApp extends StatelessWidget {
                 );
               }
 
-              if (settings.name == '/video-discovery') {
+              if (FlavorConfig.enableVideoProfiles &&
+                  settings.name == '/video-discovery') {
                 return MaterialPageRoute(
                   builder: (context) => BlocProvider(
                     create: (context) => di.sl<VideoProfileBloc>(),

@@ -43,7 +43,13 @@ class ExperiencesTab extends StatefulWidget {
 
 class _ExperiencesTabState extends State<ExperiencesTab> {
   final _ds = ExternalEventsDataSource();
-  final _scroll = ScrollController();
+  // Grid and list each get their OWN ScrollController. A single controller can
+  // only be attached to one ScrollPosition; sharing it across the GridView and
+  // ListView branches threw "attached to multiple/no positions" while the view
+  // toggle swapped them, aborting the rebuild and leaving the tab stuck on its
+  // previous layout. Only one branch is ever mounted, so only one attaches.
+  final _gridScroll = ScrollController();
+  final _listScroll = ScrollController();
 
   /// Items downloaded so far, already in server order.
   final List<ExternalEvent> _items = [];
@@ -55,7 +61,8 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   @override
   void initState() {
     super.initState();
-    _scroll.addListener(_onScroll);
+    _gridScroll.addListener(_onScroll);
+    _listScroll.addListener(_onScroll);
     _reload();
   }
 
@@ -74,13 +81,18 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
 
   @override
   void dispose() {
-    _scroll.dispose();
+    _gridScroll.dispose();
+    _listScroll.dispose();
     super.dispose();
   }
 
   void _onScroll() {
-    if (!_scroll.hasClients || _loadingMore) return;
-    if (_scroll.position.maxScrollExtent - _scroll.position.pixels < 400) {
+    // Whichever branch is currently mounted owns the live position.
+    final c = _gridScroll.hasClients
+        ? _gridScroll
+        : (_listScroll.hasClients ? _listScroll : null);
+    if (c == null || _loadingMore) return;
+    if (c.position.maxScrollExtent - c.position.pixels < 400) {
       _loadMore();
     }
   }
@@ -183,45 +195,55 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     final showLoader =
         widget.query.isEmpty && (_pager?.hasMore ?? false);
 
+    // ONE stable RefreshIndicator wraps whichever scroll view is active.
+    // Each view branch used to return its OWN RefreshIndicator; toggling grid→
+    // list reconciled those two same-typed indicators into a single reused
+    // element while its child swapped from the GridView (bound to _gridScroll)
+    // to the ListView (bound to _listScroll). The reused indicator kept its
+    // scroll-notification wiring bound to the outgoing position, so the incoming
+    // list mounted against a stale position and rendered blank. Hoisting a
+    // single RefreshIndicator (as the community tab does) and giving each scroll
+    // view a distinct key makes the swap clean, so the list shows the events.
+    final Widget child;
     if (widget.gridView) {
       final w = MediaQuery.of(context).size.width;
       final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
-      return RefreshIndicator(
-        color: AppColors.richGold,
-        onRefresh: _refresh,
-        child: GridView.builder(
-          controller: _scroll,
-          padding: const EdgeInsets.all(12),
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: cols,
-            crossAxisSpacing: 8,
-            mainAxisSpacing: 8,
-            childAspectRatio: 0.62,
-          ),
-          itemCount: items.length,
-          itemBuilder: (context, i) => _gridTile(items[i]),
+      child = GridView.builder(
+        key: const ValueKey('expGrid'),
+        controller: _gridScroll,
+        padding: const EdgeInsets.all(12),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: cols,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+          childAspectRatio: 0.62,
         ),
+        itemCount: items.length,
+        itemBuilder: (context, i) => _gridTile(items[i]),
+      );
+    } else {
+      child = ListView.builder(
+        key: const ValueKey('expList'),
+        controller: _listScroll,
+        padding: const EdgeInsets.all(12),
+        itemCount: items.length + (showLoader ? 1 : 0),
+        itemBuilder: (context, i) {
+          if (i >= items.length) {
+            return const Padding(
+              padding: EdgeInsets.all(16),
+              child: Center(
+                  child: CircularProgressIndicator(color: AppColors.richGold)),
+            );
+          }
+          return _card(items[i]);
+        },
       );
     }
 
     return RefreshIndicator(
       color: AppColors.richGold,
       onRefresh: _refresh,
-      child: ListView.builder(
-      controller: _scroll,
-      padding: const EdgeInsets.all(12),
-      itemCount: items.length + (showLoader ? 1 : 0),
-      itemBuilder: (context, i) {
-        if (i >= items.length) {
-          return const Padding(
-            padding: EdgeInsets.all(16),
-            child: Center(
-                child: CircularProgressIndicator(color: AppColors.richGold)),
-          );
-        }
-        return _card(items[i]);
-      },
-      ),
+      child: child,
     );
   }
 

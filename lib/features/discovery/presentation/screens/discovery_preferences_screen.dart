@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
@@ -707,7 +708,9 @@ class _DiscoveryPreferencesScreenState
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Age range
+          // Age range (dating-only; hidden in the culture flavor where age is
+          // not a discovery signal, shown in the full/dating flavor).
+          if (FlavorConfig.enableMatching) ...[
           _buildSectionCard(
             title: l10n.preferenceAgeRange,
             child: Column(
@@ -756,6 +759,7 @@ class _DiscoveryPreferencesScreenState
           ),
 
           const SizedBox(height: 16),
+          ],
 
           // Distance
           _buildSectionCard(
@@ -1036,7 +1040,9 @@ class _DiscoveryPreferencesScreenState
 
           const SizedBox(height: 16),
 
-          // Gender preference
+          // Gender preference + sexual orientation (dating-only; hidden in the
+          // culture flavor, shown in the full/dating flavor).
+          if (FlavorConfig.enableMatching) ...[
           _buildSectionCard(
             title: l10n.preferenceShowMe,
             child: Column(
@@ -1122,6 +1128,7 @@ class _DiscoveryPreferencesScreenState
           ),
 
           const SizedBox(height: 16),
+          ],
 
           // Advanced filters
           _buildSectionCard(
@@ -1277,7 +1284,9 @@ class _DiscoveryPreferencesScreenState
 
           const SizedBox(height: 16),
 
-          // Deal breakers
+          // Deal breakers (dating-only; hidden in the culture flavor, shown in
+          // the full/dating flavor).
+          if (FlavorConfig.enableMatching) ...[
           _buildSectionCard(
             title: l10n.preferenceDealBreakers,
             child: Column(
@@ -1327,6 +1336,7 @@ class _DiscoveryPreferencesScreenState
           ),
 
           const SizedBox(height: 24),
+          ],
 
           // Reset button
           OutlinedButton(

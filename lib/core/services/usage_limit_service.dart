@@ -12,6 +12,7 @@ enum UsageLimitType {
   messages,         // Daily
   mediaSends,       // Daily
   directMatch,      // Direct match (direct message) — daily free quota, then coins
+  connects,         // New-people connects / first-messages — daily (tier-gated)
 }
 
 /// Result of checking a usage limit
@@ -214,6 +215,10 @@ class UsageLimitService {
         return rules.dailyMediaSendLimit;
       case UsageLimitType.directMatch:
         return rules.dailyDirectMatchLimit;
+      case UsageLimitType.connects:
+        // Connect caps live in TierEntitlements.maxDailyConnects and are
+        // enforced by TierGate (not via MembershipRules / checkLimit).
+        return -1;
     }
   }
 
@@ -236,6 +241,8 @@ class UsageLimitService {
         return 'mediaSendCount';
       case UsageLimitType.directMatch:
         return 'directMatchCount';
+      case UsageLimitType.connects:
+        return 'connectsCount';
     }
   }
 
@@ -258,6 +265,8 @@ class UsageLimitService {
         return 'media sends';
       case UsageLimitType.directMatch:
         return 'direct matches';
+      case UsageLimitType.connects:
+        return 'connections';
     }
   }
 
@@ -292,6 +301,8 @@ class UsageLimitService {
         return "You've reached your daily limit of $limit media sends. Upgrade for more or wait until tomorrow.";
       case UsageLimitType.directMatch:
         return "You've used your $limit free direct match${limit == 1 ? '' : 'es'} today. Use coins for more or wait until tomorrow.";
+      case UsageLimitType.connects:
+        return "You've reached your daily limit of $limit new connections. Upgrade to connect with more people!";
     }
   }
 

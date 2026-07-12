@@ -388,6 +388,49 @@ class AnalyticsService {
     );
   }
 
+  // ── Lightweight product-analytics helpers (free Firebase Analytics) ─────────
+  // Thin wrappers other screens can call to log the core GreenGo funnel.
+  // See `// TODO(analytics-wiring)` notes: call sites live in screens owned by
+  // other agents (explore/network/events/etc.), so wiring is deferred.
+
+  /// Log a screen view by name (delegates to [logScreenView]).
+  Future<void> logScreen(String screenName) => logScreenView(screenName);
+
+  /// Log that a user opened/viewed a specific event.
+  Future<void> logEventView(String eventId) async {
+    await _analytics.logEvent(
+      name: 'event_view',
+      parameters: {
+        'event_id': eventId,
+        'screen_name': _currentScreenName ?? 'unknown',
+      },
+    );
+  }
+
+  /// Log a search query (trimmed; empty queries are ignored).
+  Future<void> logSearch(String query) async {
+    final q = query.trim();
+    if (q.isEmpty) return;
+    await _analytics.logEvent(
+      name: 'search',
+      parameters: {
+        'search_term': q,
+        'screen_name': _currentScreenName ?? 'unknown',
+      },
+    );
+  }
+
+  /// Log a new-people connect action.
+  Future<void> logConnect({String? otherUserId, String? source}) async {
+    await _analytics.logEvent(
+      name: 'connect',
+      parameters: {
+        'other_user_id': otherUserId ?? 'unknown',
+        'source': source ?? _currentScreenName ?? 'unknown',
+      },
+    );
+  }
+
   /// Log custom event
   Future<void> logCustomEvent({
     required String eventName,

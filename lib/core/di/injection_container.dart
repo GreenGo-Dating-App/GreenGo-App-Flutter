@@ -10,6 +10,8 @@ import 'package:get_it/get_it.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+// Analytics (Firebase Analytics — product analytics, free)
+import '../../features/analytics/data/services/analytics_service.dart';
 // Admin - Tier Configuration
 import '../../features/admin/data/datasources/tier_config_datasource.dart';
 import '../../features/admin/data/repositories/tier_config_repository_impl.dart';
@@ -67,6 +69,8 @@ import '../../features/coins/domain/usecases/manage_promotions.dart';
 import '../../features/coins/domain/usecases/purchase_coins.dart';
 import '../../features/coins/domain/usecases/purchase_feature.dart';
 import '../../features/coins/presentation/bloc/coin_bloc.dart';
+// Referral (invite-a-friend loop)
+import '../../features/referral/data/services/referral_service.dart';
 // Communities
 import '../../features/communities/data/datasources/communities_remote_datasource.dart';
 import '../../features/communities/data/repositories/communities_repository_impl.dart';
@@ -102,6 +106,9 @@ import '../../features/gamification/data/datasources/gamification_remote_datasou
 import '../../features/gamification/data/datasources/streak_datasource.dart';
 import '../../features/gamification/data/repositories/gamification_repository_impl.dart';
 import '../../features/gamification/data/repositories/streak_repository_impl.dart';
+// Gamification - Streaks & Missions services
+import '../../features/gamification/data/services/missions_service.dart';
+import '../../features/gamification/data/services/streak_service.dart';
 import '../../features/gamification/domain/repositories/gamification_repository.dart';
 import '../../features/gamification/domain/repositories/streak_repository.dart';
 import '../../features/gamification/domain/usecases/check_feature_unlock.dart';
@@ -196,7 +203,13 @@ import '../../features/video_profiles/presentation/bloc/video_profile_bloc.dart'
 import '../config/app_config.dart';
 import '../services/app_sound_service.dart';
 import '../services/blocked_users_service.dart';
+import '../services/interaction_log_service.dart';
+import '../../features/business/data/services/follow_service.dart';
+import '../../features/business/data/services/leads_service.dart';
+import '../../features/safety/data/services/safety_actions_service.dart';
 import '../services/candidate_pool_service.dart';
+import '../../features/passport/data/services/passport_service.dart';
+import '../../features/saved_searches/data/saved_searches_service.dart';
 import '../services/pronunciation_service.dart';
 import '../services/visual_vocabulary_service.dart';
 
@@ -301,8 +314,44 @@ Future<void> init() async {
     () => BlockedUsersService(firestore: sl()),
   );
 
+  // Interaction logging (search + click tracking → recommendations).
+  // Write-only, fire-and-forget, free (Firestore writes only).
+  // Wired call site: EventDetailLoaderScreen (event_view).
+  // TODO(interaction-wiring): Explore event taps -> logEventView(...)
+  // TODO(interaction-wiring): Explore/Network profile taps -> logProfileView(...)
+  // TODO(interaction-wiring): Network nickname search -> logSearch(...)
+  // TODO(interaction-wiring): Communities screen community taps -> logCommunityView(...)
+  // TODO(interaction-wiring): Attraction taps -> logAttractionView(...)
+  sl.registerLazySingleton<InteractionLogService>(
+    () => InteractionLogService(firestore: sl()),
+  );
+
+  // Business B2B services: follow (denormalized follower counts + fan-out)
+  // and lead capture (contact / saved-event leads).
+  sl.registerLazySingleton<FollowService>(
+    () => FollowService(firestore: sl()),
+  );
+  sl.registerLazySingleton<LeadsService>(
+    () => LeadsService(firestore: sl()),
+  );
+
+  sl.registerLazySingleton<SafetyActionsService>(
+    () => SafetyActionsService(
+      firestore: sl(),
+      blockedUsersService: sl(),
+    ),
+  );
+
   sl.registerLazySingleton<CandidatePoolService>(
     () => CandidatePoolService(firestore: sl()),
+  );
+
+  sl.registerLazySingleton<PassportService>(
+    () => PassportService(firestore: sl()),
+  );
+
+  sl.registerLazySingleton<SavedSearchesService>(
+    () => SavedSearchesService(firestore: sl()),
   );
 
   //! Features - Discovery
@@ -549,6 +598,15 @@ Future<void> init() async {
     () => StreakRepositoryImpl(remoteDataSource: sl()),
   );
 
+  // Streaks & Missions services (engagement streak + coin-rewarding missions).
+  // Both credit coins through the existing CoinRemoteDataSource ledger path.
+  sl.registerLazySingleton<StreakService>(
+    () => StreakService(coinDataSource: sl<CoinRemoteDataSource>()),
+  );
+  sl.registerLazySingleton<MissionsService>(
+    () => MissionsService(coinDataSource: sl<CoinRemoteDataSource>()),
+  );
+
   // Gamification - Full feature
   sl.registerLazySingleton<GamificationRemoteDataSource>(
     () => GamificationRemoteDataSourceImpl(
@@ -600,6 +658,14 @@ Future<void> init() async {
     () => CoinRemoteDataSource(
       firestore: sl(),
       inAppPurchase: sl(),
+    ),
+  );
+
+  //! Features - Referral (invite-a-friend loop)
+  sl.registerLazySingleton<ReferralService>(
+    () => ReferralService(
+      firestore: sl(),
+      coinDataSource: sl(),
     ),
   );
 
@@ -845,6 +911,7 @@ Future<void> init() async {
 
 
   //! Core Services
+  sl.registerLazySingleton(AnalyticsService.new);
   sl.registerLazySingleton(PronunciationService.new);
   sl.registerLazySingleton(VisualVocabularyService.new);
   sl.registerLazySingleton(AppSoundService.new);

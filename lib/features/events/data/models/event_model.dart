@@ -38,6 +38,11 @@ class EventModel extends Event {
     super.externalLinks = const [],
     super.isFeatured = false,
     super.featuredUntil,
+    super.guestsAllowedPerAttendee = 0,
+    super.seriesId,
+    super.recurrence,
+    super.publishAt,
+    super.ticketTiers = const [],
   });
 
   /// Create from Event entity
@@ -81,6 +86,11 @@ class EventModel extends Event {
       externalLinks: event.externalLinks,
       isFeatured: event.isFeatured,
       featuredUntil: event.featuredUntil,
+      guestsAllowedPerAttendee: event.guestsAllowedPerAttendee,
+      seriesId: event.seriesId,
+      recurrence: event.recurrence,
+      publishAt: event.publishAt,
+      ticketTiers: event.ticketTiers,
     );
   }
 
@@ -139,6 +149,20 @@ class EventModel extends Event {
       isFeatured: json['isFeatured'] as bool? ?? false,
       featuredUntil:
           json['featuredUntil'] != null ? _parseDateTime(json['featuredUntil']) : null,
+      guestsAllowedPerAttendee:
+          (json['guestsAllowedPerAttendee'] as num?)?.toInt() ?? 0,
+      seriesId: json['seriesId'] as String?,
+      recurrence: json['recurrence'] is Map
+          ? EventRecurrence.fromMap(
+              Map<String, dynamic>.from(json['recurrence'] as Map))
+          : null,
+      publishAt:
+          json['publishAt'] != null ? _parseDateTime(json['publishAt']) : null,
+      ticketTiers: (json['ticketTiers'] as List?)
+              ?.whereType<Map<String, dynamic>>()
+              .map(TicketTier.fromMap)
+              .toList() ??
+          const [],
     );
   }
 
@@ -185,6 +209,14 @@ class EventModel extends Event {
       'isFeatured': isFeatured,
       'featuredUntil':
           featuredUntil != null ? Timestamp.fromDate(featuredUntil!) : null,
+      'guestsAllowedPerAttendee': guestsAllowedPerAttendee,
+      // Recurring series (each occurrence shares seriesId; each is a normal doc).
+      'seriesId': seriesId,
+      'recurrence': recurrence?.toMap(),
+      // Draft & scheduled auto-publish (feeds gate on isLive using publishAt).
+      'publishAt': publishAt != null ? Timestamp.fromDate(publishAt!) : null,
+      // Ticket tiers (per-tier price + capacity; empty = single implicit tier).
+      'ticketTiers': ticketTiers.map((t) => t.toMap()).toList(),
       // Lowercased tokens for name/text search (array-contains, no composite index).
       'searchKeywords': buildSearchKeywords(),
     };

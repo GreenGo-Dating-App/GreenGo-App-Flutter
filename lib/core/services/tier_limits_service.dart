@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../features/membership/domain/entities/membership.dart';
+import 'tier_entitlements.dart';
 
 /// Result of a tier-limit check.
 class TierLimitResult {
@@ -35,32 +36,16 @@ class TierLimitsService {
   final FirebaseFirestore _firestore;
 
   /// Max events a tier may create (null = unlimited).
-  static int? maxEvents(MembershipTier tier) {
-    switch (tier) {
-      case MembershipTier.free:
-        return 1;
-      case MembershipTier.silver:
-        return 5;
-      case MembershipTier.gold:
-        return 50;
-      case MembershipTier.platinum:
-      case MembershipTier.test:
-        return null;
-    }
-  }
+  ///
+  /// Delegates to [TierEntitlements] so there is exactly ONE definition of
+  /// the per-tier cap (no divergence between config and enforcement).
+  static int? maxEvents(MembershipTier tier) => TierEntitlements.maxEvents(tier);
 
   /// Max groups a tier may create (null = unlimited).
-  static int? maxGroups(MembershipTier tier) {
-    switch (tier) {
-      case MembershipTier.free:
-        return 1;
-      case MembershipTier.silver:
-      case MembershipTier.gold:
-      case MembershipTier.platinum:
-      case MembershipTier.test:
-        return null;
-    }
-  }
+  ///
+  /// Delegates to [TierEntitlements] so there is exactly ONE definition of
+  /// the per-tier cap (no divergence between config and enforcement).
+  static int? maxGroups(MembershipTier tier) => TierEntitlements.maxGroups(tier);
 
   Future<MembershipTier> _tierOf(String userId) async {
     try {

@@ -5,15 +5,22 @@ import 'package:flutter/services.dart';
 import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
+import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../safety/presentation/widgets/safety_actions_menu.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../business/presentation/screens/business_storefront_screen.dart';
+import '../../../business/presentation/widgets/business_contact_button.dart';
+import '../../../business/presentation/widgets/business_follow_button.dart';
+import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
@@ -277,6 +284,52 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             ),
           ),
         ),
+        actions: [
+          // Apple-safe culture flavor: a single, unobtrusive Message action
+          // (opens a chat immediately — NO like/super-like/match/Connect).
+          // Full/dating flavor keeps its swipe buttons instead, so hide it there.
+          if (!_isSelfView &&
+              !(FlavorConfig.enableMatching ||
+                  FlavorConfig.enableSwipeDiscovery))
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: IconButton(
+                tooltip: AppLocalizations.of(context)!.sendMessage,
+                onPressed: () {
+                  HapticFeedback.mediumImpact();
+                  openConnectChat(
+                    context,
+                    currentUserId: widget.currentUserId,
+                    otherUserId: widget.profile.userId,
+                    otherUserProfile: widget.profile,
+                  );
+                },
+                icon: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppColors.backgroundDark.withOpacity(0.7),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.chat_bubble_outline,
+                    color: AppColors.richGold,
+                  ),
+                ),
+              ),
+            ),
+          // Safety overflow menu: Report / Block (reuses existing infra).
+          // Never shown when viewing your own profile.
+          if (!_isSelfView)
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: SafetyActionsMenu(
+                currentUserId: widget.currentUserId,
+                reportedUserId: widget.profile.userId,
+                reportedUserName: widget.profile.displayName,
+                isReportedUserAdmin: widget.profile.isAdmin,
+              ),
+            ),
+        ],
       ),
       body: Stack(
         children: [
@@ -311,14 +364,30 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                         // Name, age, and membership tier
                         Row(
                           children: [
-                            Text(
-                              widget.profile.displayName,
-                              style: const TextStyle(
-                                color: AppColors.textPrimary,
-                                fontSize: 32,
-                                fontWeight: FontWeight.bold,
+                            Flexible(
+                              child: Text(
+                                widget.profile.displayName,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  color: AppColors.textPrimary,
+                                  fontSize: 32,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
+                            // Gold verified check badge for verified users.
+                            if (widget.profile.isVerified ||
+                                widget.profile.businessVerified) ...[
+                              const SizedBox(width: 8),
+                              Tooltip(
+                                message:
+                                    AppLocalizations.of(context)!.safetyVerifiedBadge,
+                                child: const VerifiedBadge(
+                                  size: 22,
+                                  isPremium: true,
+                                ),
+                              ),
+                            ],
                             const SizedBox(width: 12),
                             Text(
                               '${widget.profile.age}',
@@ -416,6 +485,65 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                         ),
 
                         const SizedBox(height: 24),
+
+                        // Business surface: Follow + Contact + storefront entry.
+                        // Shown only for business accounts. The Follow/Contact
+                        // widgets self-hide their action when viewing your own.
+                        if (widget.profile.isBusiness) ...[
+                          Wrap(
+                            spacing: 12,
+                            runSpacing: 12,
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              BusinessFollowButton(
+                                businessId: widget.profile.userId,
+                                currentUserId: widget.currentUserId,
+                                compact: true,
+                              ),
+                              if (!_isSelfView)
+                                BusinessContactButton(
+                                  businessProfile: widget.profile,
+                                  currentUserId: widget.currentUserId,
+                                  compact: true,
+                                ),
+                            ],
+                          ),
+                          const SizedBox(height: 12),
+                          SizedBox(
+                            width: double.infinity,
+                            child: OutlinedButton.icon(
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute<void>(
+                                    builder: (_) => BusinessStorefrontScreen(
+                                      business: widget.profile,
+                                      currentUserId: widget.currentUserId,
+                                    ),
+                                  ),
+                                );
+                              },
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: AppColors.richGold,
+                                side: const BorderSide(color: AppColors.richGold),
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 14),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      AppDimensions.radiusM),
+                                ),
+                              ),
+                              icon: const Icon(Icons.storefront, size: 18),
+                              label: Text(
+                                AppLocalizations.of(context)!.viewStorefront,
+                                style: const TextStyle(
+                                  color: AppColors.richGold,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+                        ],
 
                         // Bio
                         if (widget.profile.bio.isNotEmpty) ...[
@@ -559,8 +687,14 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             ],
           ),
 
-          // Action buttons - Hide when self-view, show appropriate buttons based on match status
-          if (!_isSelfView)
+          // Action buttons — only the FULL/dating flavor shows bottom actions
+          // (swipe/like/super-like or the matched "Let's Chat" button). The
+          // Apple-safe culture flavor has NO bottom action here — connecting is
+          // a single Message action in the app bar (see [build]'s AppBar
+          // actions). No like/super-like/match/Connect button anywhere.
+          if (!_isSelfView &&
+              (FlavorConfig.enableMatching ||
+                  FlavorConfig.enableSwipeDiscovery))
             Positioned(
               bottom: 24,
               left: 0,

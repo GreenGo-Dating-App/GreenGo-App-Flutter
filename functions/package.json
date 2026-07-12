@@ -49,6 +49,7 @@
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
+    "passkit-generator": "^3.3.0",
     "pdfkit": "^0.14.0",
     "sharp": "^0.33.5",
     "stripe": "^14.8.0",

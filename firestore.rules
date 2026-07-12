@@ -28,6 +28,14 @@ service cloud.firestore {
              exists(/databases/$(database)/documents/admin_users/$(request.auth.uid));
     }
 
+    // Check if the acting user is a profile-level admin (profiles/{uid}.isAdmin).
+    // Used by the in-app admin tools (e.g. business-verification review) which
+    // gate on the Profile.isAdmin flag rather than the admin panel collections.
+    function isProfileAdmin() {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/profiles/$(request.auth.uid)).data.isAdmin == true;
+    }
+
     // ============================================================================
     // USERS COLLECTION
     // ============================================================================
@@ -39,6 +47,17 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // USER INTERACTIONS COLLECTION (search + click tracking → recommendations)
+    // ============================================================================
+    // Write-only from clients: a user may only append their own interaction
+    // events. Reads are blocked entirely — only backend/admin (Cloud Functions
+    // with the Admin SDK, which bypasses rules) consumes this data.
+    match /user_interactions/{userId}/{document=**} {
+      allow create: if isOwner(userId);
+      allow read: if false;
+    }
+
+    // ============================================================================
     // PROFILES COLLECTION
     // ============================================================================
     match /profiles/{profileId} {
@@ -46,7 +65,13 @@ service cloud.firestore {
       allow read: if isSignedIn();
       // Users can create/update/delete their own profile; admins can update (verification, moderation)
       allow create: if isOwner(profileId);
-      allow update: if isOwner(profileId) || isAdminPanelUser();
+      // Owner, admin-panel and profile-admins (business-verification approval →
+      // sets businessVerified) may update. Additionally ANY signed-in user may
+      // change ONLY the denormalized `followerCount` (business follow/unfollow
+      // runs as the follower, not the business owner).
+      allow update: if isOwner(profileId) || isAdminPanelUser() || isProfileAdmin()
+        || (isSignedIn()
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['followerCount']));
       allow delete: if isOwner(profileId);
     }
 
@@ -192,6 +217,25 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow create: if isSignedIn();
       allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // STREAKS & MISSIONS (daily engagement streak + coin-rewarding missions)
+    // ============================================================================
+    // streaks/{userId} = { current, longest, lastActiveDay, awardedMilestones,
+    //                      updatedAt } — owner-only single doc per user.
+    match /streaks/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // mission_progress/{userId} = { claimed: [missionId...], updatedAt }
+    // Only the claimed-rewards set is stored; live progress is derived client-side.
+    match /mission_progress/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
       allow delete: if false;
     }
 
@@ -342,6 +386,32 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow create: if isSignedIn();
       allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // REFERRAL LOOP (invite a friend — both earn coins)
+    // ============================================================================
+    // referral_codes/{CODE} = { ownerId, createdAt }
+    // Any signed-in user may read (to resolve a code when redeeming). The owner
+    // may create their own code (ownerId must equal their uid). Codes are
+    // immutable once created.
+    match /referral_codes/{code} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.ownerId == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // referrals/{userId} = { code, invitedCount, coinsEarned, redeemedCode? }
+    // Owner may read/write their own referral doc. A non-owner (the referrer)
+    // may ONLY increment counters when a friend redeems their code — never
+    // decrement — mirroring the coinBalances integrity guard.
+    match /referrals/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId)
+        || (isSignedIn()
+            && request.resource.data.invitedCount > resource.data.invitedCount);
       allow delete: if false;
     }
 
@@ -766,6 +836,31 @@ service cloud.firestore {
       allow read, write: if isOwner(userId);
     }
 
+    // Per-user PRIVATE people tags — each user's own labels for other users.
+    // Strictly private to the owner; never read/written by anyone else or by CFs.
+    // Shape: user_people_tags/{userId} = { peopleTags: { targetUserId: [tag, ...] } }
+    match /user_people_tags/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Per-user PRIVATE saved discovery searches — each user's named snapshots of
+    // the Network Discovery filter state (preferences + tags + query + alerts).
+    // Strictly private to the owner. A saved-search-alerts Cloud Function (if
+    // added later) uses the Admin SDK, which bypasses these client rules.
+    // Shape: saved_searches/{userId}/searches/{id} = { name, preferences,
+    //   tags, query, alertsEnabled, createdAt }
+    match /saved_searches/{userId}/searches/{searchId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Cultural Passport — per-user collection of country/language/event stamps.
+    // Shape: user_passports/{userId} = { countryStamps: [ISO...],
+    //   languageStamps: [lang...], eventStamps: [category...], updatedAt }
+    match /user_passports/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId);
+    }
+
     // ============================================================================
     // EXTERNAL EVENTS (Tiqets/Viator experiences) — read-only, CF-written only
     // ============================================================================
@@ -784,6 +879,63 @@ service cloud.firestore {
     match /external_events_index/{docId} {
       allow read: if isSignedIn();
       allow write: if false; // CF-written compact shard index for fast loads
+    }
+
+    // ============================================================================
+    // COMMUNITIES — user-created culture communities (Exchange-style lists)
+    // ============================================================================
+    // Social collection: any signed-in user may create a community and join/
+    // update (membership, sponsorship/pinned-promo by the owner-business). This
+    // mirrors the permissive model used for events/conversations. Subcollections
+    // (members, messages, posts) inherit the same signed-in access.
+    match /communities/{communityId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+
+      match /{document=**} {
+        allow read: if isSignedIn();
+        allow create, update: if isSignedIn();
+        allow delete: if isSignedIn();
+      }
+    }
+
+    // ============================================================================
+    // BUSINESS (B2B) COLLECTIONS — followers, leads, verification requests
+    // ============================================================================
+    // Followers of a business. A user manages ONLY their own follower doc under
+    // a business; anyone signed in may read (follower lists / counts). The
+    // follower fan-out for new events is done server-side by a Cloud Function.
+    match /business_followers/{businessId}/followers/{uid} {
+      allow read: if isSignedIn();
+      allow create, delete: if isOwner(uid);
+    }
+
+    // Private mirror index of the businesses a user follows (owned by that user).
+    match /user_business_following/{userId}/businesses/{businessId} {
+      allow read: if isOwner(userId);
+      allow create, delete: if isOwner(userId);
+    }
+
+    // Leads a business receives ("Contact" / "Save to my events"). Only the
+    // acting user may write their own lead doc; only the business owner reads
+    // its own leads list.
+    match /business_leads/{businessId}/leads/{uid} {
+      allow read: if isOwner(businessId);
+      allow create, update: if isOwner(uid);
+    }
+
+    // Business verification requests. The owner creates/updates ONLY their own
+    // pending request; profile-admins read all and set the approved/rejected
+    // status (the badge itself is written on the profile doc).
+    match /business_verification_requests/{userId} {
+      allow read: if isOwner(userId) || isProfileAdmin();
+      allow create: if isOwner(userId)
+        && request.resource.data.status == 'pending';
+      allow update: if (isOwner(userId) && request.resource.data.status == 'pending')
+        || isProfileAdmin();
+      allow delete: if false;
     }
 
     // ============================================================================
@@ -807,16 +959,34 @@ service cloud.firestore {
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
         && request.resource.data.organizerId == request.auth.uid;
-      allow update, delete: if isOrganizer();
+      allow delete: if isOrganizer();
+      // Organizer has full update rights. Additionally ANY signed-in user may
+      // update ONLY the denormalized RSVP counters (`attendeeCount` and the
+      // per-tier `tierGoingCounts` map) — this powers the join / waitlist /
+      // auto-promotion transactions that run as the joining/cancelling user.
+      allow update: if isOrganizer()
+        || (isSignedIn()
+            && request.resource.data.diff(resource.data).affectedKeys()
+                 .hasOnly(['attendeeCount', 'tierGoingCounts']));
 
       match /attendees/{uid} {
         function parentOrganizer() {
           return get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid;
         }
         allow read: if isSignedIn();
-        // A user manages only their own RSVP; the organizer may manage any.
+        // A user manages only their OWN attendee doc — RSVP status, privacy
+        // flags and guestCount (QR ticket "bring guests"). The organizer may
+        // manage ANY attendee doc, which is what powers QR check-in: flipping
+        // checkedIn / checkedInAt for the attendee they just scanned.
         allow write: if isSignedIn()
           && (request.auth.uid == uid || parentOrganizer());
+        // Waitlist auto-promotion: when a "going" attendee cancels, the
+        // cancelling user promotes the oldest waitlisted attendee. Allow any
+        // signed-in user to update ANOTHER attendee doc ONLY to flip status
+        // from 'waitlist' to 'going' (they can promote, never demote/delete).
+        allow update: if isSignedIn()
+          && resource.data.status == 'waitlist'
+          && request.resource.data.status == 'going';
       }
 
       // Likes — one doc per user; likeCount kept current by onEventLikeWrite CF.

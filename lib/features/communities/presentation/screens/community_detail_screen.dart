@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/community.dart';
@@ -15,6 +16,10 @@ import '../bloc/communities_event.dart';
 import '../bloc/communities_state.dart';
 import '../widgets/community_member_tile.dart';
 import '../widgets/community_message_bubble.dart';
+import '../widgets/sponsored_badge.dart';
+import '../widgets/sponsored_promo_card.dart';
+import '../widgets/sponsorship_editor_sheet.dart';
+import '../widgets/sponsorship_gate.dart';
 
 /// Community Detail Screen
 ///
@@ -40,11 +45,19 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   bool _isLocalGuide = false;
   List<String> _userLanguages = [];
   bool _isMember = false;
+  bool _isBusiness = false;
+  MembershipTier _membershipTier = MembershipTier.free;
   CommunityMessageType _selectedMessageType = CommunityMessageType.text;
+
+  /// Freshest community (starts as the passed-in one, refreshed from the
+  /// detail state and after sponsorship edits) — drives the header badge and
+  /// pinned promo.
+  late Community _community;
 
   @override
   void initState() {
     super.initState();
+    _community = widget.community;
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _loadUserInfo();
     _loadCommunityDetail();
@@ -59,7 +72,20 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
           : null;
       _isLocalGuide = profileState.profile.isLocalGuide;
       _userLanguages = profileState.profile.preferredLanguages;
+      _isBusiness = profileState.profile.isBusiness;
+      _membershipTier = profileState.profile.membershipTier;
     }
+  }
+
+  /// Whether the current user owns this community AND is an eligible
+  /// (Platinum) business — the only case that may edit sponsorship/promo.
+  bool get _canEditSponsorship {
+    final uid = _currentUserId;
+    if (uid == null || uid != _community.createdByUserId) return false;
+    return SponsorshipGate.canSponsor(
+      isBusiness: _isBusiness,
+      tier: _membershipTier,
+    );
   }
 
   void _loadCommunityDetail() {
@@ -107,14 +133,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
               ),
             );
           } else if (state is CommunityDetailLoaded) {
-            // Check membership
+            // Check membership + refresh the community (sponsor/promo may have
+            // changed since navigation).
             final userId = _currentUserId;
-            if (userId != null) {
-              final isMember =
-                  state.members.any((m) => m.userId == userId);
-              if (mounted) {
-                setState(() => _isMember = isMember);
-              }
+            if (mounted) {
+              setState(() {
+                _community = state.community;
+                if (userId != null) {
+                  _isMember = state.members.any((m) => m.userId == userId);
+                }
+              });
             }
           }
         },
@@ -126,8 +154,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
           }
 
           if (state is CommunityDetailLoaded) {
+            final promo = _community.pinnedPromo;
             return Column(
               children: [
+                // Pinned sponsor promo (glass card at the very top)
+                if (promo != null)
+                  SponsoredPromoCard(
+                    promo: promo,
+                    currentUserId: _currentUserId ?? '',
+                  ),
+
                 // Messages list
                 Expanded(
                   child: state.messages.isEmpty
@@ -166,18 +202,28 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            widget.community.name,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 17,
-              fontWeight: FontWeight.w600,
-            ),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
+          Row(
+            children: [
+              Flexible(
+                child: Text(
+                  _community.name,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 17,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              if (_community.isSponsored) ...[
+                const SizedBox(width: 8),
+                const SponsoredBadge(),
+              ],
+            ],
           ),
           Text(
-            AppLocalizations.of(context)!.communitiesMembersCount(widget.community.memberCount),
+            AppLocalizations.of(context)!.communitiesMembersCount(_community.memberCount),
             style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 12,
@@ -200,6 +246,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
               case 'info':
                 _showCommunityInfo();
                 break;
+              case 'sponsor':
+                _editSponsorship();
+                break;
               case 'leave':
                 _confirmLeave();
                 break;
@@ -217,6 +266,19 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                 ],
               ),
             ),
+            if (_canEditSponsorship)
+              PopupMenuItem(
+                value: 'sponsor',
+                child: Row(
+                  children: [
+                    const Icon(Icons.workspace_premium,
+                        color: AppColors.richGold, size: 20),
+                    const SizedBox(width: 12),
+                    Text(AppLocalizations.of(context)!.communitiesEditSponsorship,
+                        style: const TextStyle(color: AppColors.textPrimary)),
+                  ],
+                ),
+              ),
             if (_isMember)
               PopupMenuItem(
                 value: 'leave',
@@ -603,6 +665,46 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
         ],
       ),
     );
+  }
+
+  Future<void> _editSponsorship() async {
+    final uid = _currentUserId;
+    if (uid == null) return;
+
+    // Defensive re-check (the action is only shown to owner-businesses, but
+    // tier could change): non-eligible users get the standard gated message.
+    if (!_canEditSponsorship) {
+      await SponsorshipGate.showGate(
+        context,
+        currentTier: _membershipTier,
+        userId: uid,
+      );
+      return;
+    }
+
+    final result = await SponsorshipEditorSheet.show(
+      context,
+      initialSponsored: _community.isSponsored,
+      initialPromo: _community.pinnedPromo,
+    );
+    if (result == null || !mounted) return;
+
+    final updated = result.isSponsored
+        ? _community.copyWith(
+            isSponsored: true,
+            sponsorId: uid,
+            pinnedPromo: result.pinnedPromo,
+            clearPinnedPromo: result.pinnedPromo == null,
+          )
+        : _community.copyWith(
+            isSponsored: false,
+            clearSponsorId: true,
+            clearPinnedPromo: true,
+          );
+
+    setState(() => _community = updated);
+    context.read<CommunitiesBloc>().add(UpdateCommunity(community: updated));
+    HapticFeedback.mediumImpact();
   }
 
   void _showMembersSheet() {

@@ -10,6 +10,15 @@ import '../../domain/entities/event_country_stat.dart';
 import '../models/event_attendee_model.dart';
 import '../models/event_model.dart';
 
+/// Result of a tier-aware join: whether the attendee is going or waitlisted,
+/// and (when waitlisted) their 1-based position in the queue.
+class RsvpJoinResult {
+  const RsvpJoinResult({required this.status, this.waitlistPosition = 0});
+  final RSVPStatus status;
+  final int waitlistPosition;
+  bool get isWaitlisted => status == RSVPStatus.waitlist;
+}
+
 /// Events Remote Data Source Interface
 abstract class EventsRemoteDataSource {
   Future<List<Event>> getEvents({
@@ -21,6 +30,30 @@ abstract class EventsRemoteDataSource {
   Future<Event?> getEventById(String id);
 
   Future<String> createEvent(Event event);
+
+  /// Batch-create every occurrence of a recurring series in a single write
+  /// round-trip (cheap; series are capped at [kMaxSeriesOccurrences] docs).
+  Future<void> createEventsBatch(List<Event> events);
+
+  /// Cancel a whole recurring series: flags future occurrences (startDate >= now)
+  /// as cancelled so they drop out of every feed (isLive == false).
+  Future<void> cancelSeries(String seriesId);
+
+  /// Tier-aware, capacity-safe join. Runs a Firestore transaction on the event's
+  /// denormalized counters: if the chosen tier (or the event) is full the
+  /// attendee is written with status `waitlist`, otherwise `going`.
+  Future<RsvpJoinResult> joinEventWithTier({
+    required String eventId,
+    required String userId,
+    String? tierId,
+  });
+
+  /// Cancel a going/waitlist RSVP and, transactionally, promote the OLDEST
+  /// waitlisted attendee of the same tier to `going` (auto-promotion).
+  Future<void> cancelRsvpWithPromotion(String eventId, String userId);
+
+  /// 1-based waitlist position of [userId] for their tier (0 = not waitlisted).
+  Future<int> getWaitlistPosition(String eventId, String userId);
 
   Future<void> updateEvent(Event event);
 
@@ -46,6 +79,24 @@ abstract class EventsRemoteDataSource {
   Stream<bool> watchEventLiked(String eventId, String userId);
 
   Future<List<EventAttendee>> getEventAttendees(String eventId);
+
+  /// QR check-in: mark an attendee as present (organizer only, enforced by
+  /// rules). Sets `checkedIn=true` and `checkedInAt=serverTimestamp`.
+  Future<void> checkInAttendee({
+    required String eventId,
+    required String attendeeUserId,
+  });
+
+  /// Set how many guests an attendee is bringing (attendee edits their own doc).
+  Future<void> setAttendeeGuestCount({
+    required String eventId,
+    required String userId,
+    required int guestCount,
+  });
+
+  /// Live attendee roster for the owner's attendance screen. Bounded to 500
+  /// docs (index-free — a single subcollection read, no composite index).
+  Stream<List<EventAttendee>> watchAttendees(String eventId);
 
   Future<List<Event>> getEventsNearLocation(
     double lat,
@@ -150,6 +201,16 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   CollectionReference<Map<String, dynamic>> get _eventsCollection =>
       _firestore.collection('events');
 
+  /// Statuses that a live/discoverable event may hold. Scheduled events are
+  /// fetched too, then gated client-side on `publishAt <= now` (isLive) so
+  /// auto-publish works without a backend. Uses whereIn (same composite index
+  /// as the old equality filter — no new index required).
+  ///
+  /// TODO(cf-autopublish): an OPTIONAL future Cloud Function could flip
+  /// scheduled -> published once publishAt passes (scheduled query). Not needed
+  /// for correctness — the client isLive gate already auto-publishes.
+  static const List<String> _liveStatuses = ['published', 'scheduled'];
+
   @override
   Future<List<Event>> getEvents({
     String? category,
@@ -157,8 +218,8 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     bool? upcoming,
   }) async {
     try {
-      var query = _eventsCollection
-          .where('status', isEqualTo: EventStatus.published.name);
+      var query =
+          _eventsCollection.where('status', whereIn: _liveStatuses);
 
       // Filter by category
       if (category != null && category.isNotEmpty) {
@@ -189,6 +250,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final events = snapshot.docs
           .map(EventModel.fromFirestore)
           .where((e) => e.isPublic) // private events excluded from discovery
+          .where((e) => e.isLive) // scheduled-but-not-yet-due events hidden
           .toList();
 
       debugPrint('Events loaded: ${events.length} events');
@@ -230,6 +292,52 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     } catch (e) {
       debugPrint('Error creating event: $e');
       throw ServerException('Failed to create event: $e');
+    }
+  }
+
+  @override
+  Future<void> createEventsBatch(List<Event> events) async {
+    if (events.isEmpty) return;
+    try {
+      final batch = _firestore.batch();
+      for (final e in events) {
+        final json = EventModel.fromEntity(e).toJson();
+        final ref =
+            e.id.isEmpty ? _eventsCollection.doc() : _eventsCollection.doc(e.id);
+        batch.set(ref, json);
+      }
+      await batch.commit();
+      debugPrint('Event series created: ${events.length} occurrences');
+    } catch (e) {
+      debugPrint('Error creating event series: $e');
+      throw ServerException('Failed to create event series: $e');
+    }
+  }
+
+  @override
+  Future<void> cancelSeries(String seriesId) async {
+    try {
+      final now = Timestamp.fromDate(DateTime.now());
+      // Single-field equality (no composite index); a series is bounded to
+      // kMaxSeriesOccurrences docs so this stays cheap.
+      final snap =
+          await _eventsCollection.where('seriesId', isEqualTo: seriesId).get();
+      final batch = _firestore.batch();
+      for (final doc in snap.docs) {
+        final start = doc.data()['startDate'];
+        // Only flag future/ongoing occurrences; keep past ones as history.
+        if (start is Timestamp && start.compareTo(now) >= 0) {
+          batch.update(doc.reference, {
+            'status': EventStatus.cancelled.name,
+            'updatedAt': now,
+          });
+        }
+      }
+      await batch.commit();
+      debugPrint('Series cancelled: $seriesId');
+    } catch (e) {
+      debugPrint('Error cancelling series: $e');
+      throw ServerException('Failed to cancel series: $e');
     }
   }
 
@@ -328,6 +436,12 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       // Update attendee count on the event document
       await _updateAttendeeCount(eventId);
 
+      // TODO(passport): award a Cultural Passport "event" stamp here once this
+      // data layer can resolve the event's category cheaply (it only has the
+      // eventId at this point). Until then, PassportService.load() derives event
+      // stamps from the user's RSVP'd events via a bounded collectionGroup read,
+      // so the stamp still appears — just lazily rather than at RSVP time.
+
       debugPrint('RSVP recorded: $userId -> $eventId ($status)');
     } catch (e) {
       debugPrint('Error RSVP event: $e');
@@ -352,6 +466,216 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       debugPrint('Error cancelling RSVP: $e');
       throw ServerException('Failed to cancel RSVP: $e');
     }
+  }
+
+  @override
+  Future<RsvpJoinResult> joinEventWithTier({
+    required String eventId,
+    required String userId,
+    String? tierId,
+  }) async {
+    try {
+      // Resolve profile for the attendee card (outside the transaction).
+      final userDoc =
+          await _firestore.collection('profiles').doc(userId).get();
+      final userData = userDoc.data() ?? {};
+      final userName = userData['displayName'] as String? ??
+          userData['nickname'] as String? ??
+          'Unknown';
+      final userPhotoUrl = userData['photoUrl'] as String? ??
+          (userData['photoUrls'] is List &&
+                  (userData['photoUrls'] as List).isNotEmpty
+              ? (userData['photoUrls'] as List).first as String?
+              : null);
+
+      final eventRef = _eventsCollection.doc(eventId);
+      final attendeeRef = eventRef.collection('attendees').doc(userId);
+      final now = DateTime.now();
+
+      final status = await _firestore.runTransaction<RSVPStatus>((tx) async {
+        final eventSnap = await tx.get(eventRef);
+        final attendeeSnap = await tx.get(attendeeRef);
+        final data = eventSnap.data() ?? {};
+
+        final maxAttendees = (data['maxAttendees'] as num?)?.toInt() ?? 0;
+        final attendeeCount = (data['attendeeCount'] as num?)?.toInt() ?? 0;
+        final tierCounts =
+            Map<String, dynamic>.from(data['tierGoingCounts'] as Map? ?? {});
+        final tiers = (data['ticketTiers'] as List?)
+                ?.whereType<Map<String, dynamic>>()
+                .map(TicketTier.fromMap)
+                .toList() ??
+            const <TicketTier>[];
+
+        final existingData = attendeeSnap.data();
+        final existingStatus = existingData?['status'] as String?;
+        final wasGoing = existingStatus == RSVPStatus.going.name;
+
+        // Locate the chosen tier (if any) and evaluate capacity.
+        TicketTier? tier;
+        for (final t in tiers) {
+          if (t.id == tierId) {
+            tier = t;
+            break;
+          }
+        }
+        final tierGoing =
+            tier != null ? ((tierCounts[tier.id] as num?)?.toInt() ?? 0) : 0;
+        final tierFull =
+            tier != null && !tier.isUnlimited && tierGoing >= tier.capacity;
+        final eventFull = maxAttendees > 0 && attendeeCount >= maxAttendees;
+
+        final hasRoom = !tierFull && !eventFull;
+        final target =
+            (hasRoom || wasGoing) ? RSVPStatus.going : RSVPStatus.waitlist;
+
+        final attendee = EventAttendeeModel(
+          id: userId,
+          eventId: eventId,
+          userId: userId,
+          userName: userName,
+          userPhotoUrl: userPhotoUrl,
+          status: target,
+          rsvpDate: now,
+          isApproved: true,
+          tierId: tierId,
+        );
+        final json = attendee.toJson();
+        // Preserve the original rsvpDate so waitlist ordering stays stable.
+        if (existingData != null && existingData['rsvpDate'] != null) {
+          json['rsvpDate'] = existingData['rsvpDate'];
+        }
+        tx.set(attendeeRef, json);
+
+        // Bump denormalized counters only when newly transitioning to going.
+        if (target == RSVPStatus.going && !wasGoing) {
+          final update = <String, dynamic>{'attendeeCount': attendeeCount + 1};
+          if (tier != null) {
+            update['tierGoingCounts.${tier.id}'] = tierGoing + 1;
+          }
+          tx.update(eventRef, update);
+        }
+        return target;
+      });
+
+      if (status == RSVPStatus.waitlist) {
+        final pos = await getWaitlistPosition(eventId, userId);
+        debugPrint('Waitlisted: $userId -> $eventId (#$pos)');
+        return RsvpJoinResult(
+            status: RSVPStatus.waitlist, waitlistPosition: pos);
+      }
+      debugPrint('Joined (going): $userId -> $eventId');
+      return const RsvpJoinResult(status: RSVPStatus.going);
+    } catch (e) {
+      debugPrint('Error joining event with tier: $e');
+      throw ServerException('Failed to join event: $e');
+    }
+  }
+
+  @override
+  Future<void> cancelRsvpWithPromotion(String eventId, String userId) async {
+    try {
+      final eventRef = _eventsCollection.doc(eventId);
+      final attendeeRef = eventRef.collection('attendees').doc(userId);
+
+      final cancelSnap = await attendeeRef.get();
+      if (!cancelSnap.exists) return;
+      final cancelData = cancelSnap.data() ?? {};
+      final wasGoing = (cancelData['status'] as String?) == RSVPStatus.going.name;
+      final tierId = cancelData['tierId'] as String?;
+
+      // Find the OLDEST waitlisted attendee of the SAME tier to promote. Single
+      // equality query (no composite index), sorted client-side; bounded read.
+      DocumentReference<Map<String, dynamic>>? promoteRef;
+      if (wasGoing) {
+        final wl = await eventRef
+            .collection('attendees')
+            .where('status', isEqualTo: RSVPStatus.waitlist.name)
+            .limit(200)
+            .get();
+        final sameTier = wl.docs
+            .where((d) => (d.data()['tierId'] as String?) == tierId)
+            .toList()
+          ..sort((a, b) =>
+              _tsCompare(a.data()['rsvpDate'], b.data()['rsvpDate']));
+        if (sameTier.isNotEmpty) promoteRef = sameTier.first.reference;
+      }
+
+      await _firestore.runTransaction((tx) async {
+        final eventSnap = await tx.get(eventRef);
+        final data = eventSnap.data() ?? {};
+        final attendeeCount = (data['attendeeCount'] as num?)?.toInt() ?? 0;
+        final tierCounts =
+            Map<String, dynamic>.from(data['tierGoingCounts'] as Map? ?? {});
+        final tierGoing =
+            tierId != null ? ((tierCounts[tierId] as num?)?.toInt() ?? 0) : 0;
+
+        // Re-read the promotion candidate inside the transaction.
+        DocumentSnapshot<Map<String, dynamic>>? promoSnap;
+        if (promoteRef != null) promoSnap = await tx.get(promoteRef);
+
+        // Reads done — now writes. Remove the cancelling RSVP.
+        tx.delete(attendeeRef);
+
+        var newCount = attendeeCount;
+        var newTierGoing = tierGoing;
+        if (wasGoing) {
+          newCount = attendeeCount > 0 ? attendeeCount - 1 : 0;
+          newTierGoing = tierGoing > 0 ? tierGoing - 1 : 0;
+        }
+
+        // Auto-promote the oldest still-waitlisted attendee into the freed slot.
+        if (promoSnap != null &&
+            promoSnap.exists &&
+            (promoSnap.data()?['status'] as String?) ==
+                RSVPStatus.waitlist.name) {
+          tx.update(promoSnap.reference, {'status': RSVPStatus.going.name});
+          newCount += 1;
+          newTierGoing += 1;
+        }
+
+        final update = <String, dynamic>{'attendeeCount': newCount};
+        if (tierId != null) update['tierGoingCounts.$tierId'] = newTierGoing;
+        tx.update(eventRef, update);
+      });
+      debugPrint('RSVP cancelled + promotion run: $userId -> $eventId');
+    } catch (e) {
+      debugPrint('Error cancelling RSVP with promotion: $e');
+      throw ServerException('Failed to cancel RSVP: $e');
+    }
+  }
+
+  @override
+  Future<int> getWaitlistPosition(String eventId, String userId) async {
+    try {
+      final snap = await _eventsCollection
+          .doc(eventId)
+          .collection('attendees')
+          .where('status', isEqualTo: RSVPStatus.waitlist.name)
+          .limit(200)
+          .get();
+      final mine = snap.docs.where((d) => d.id == userId).toList();
+      if (mine.isEmpty) return 0;
+      final myTier = mine.first.data()['tierId'] as String?;
+      final sameTier = snap.docs
+          .where((d) => (d.data()['tierId'] as String?) == myTier)
+          .toList()
+        ..sort((a, b) =>
+            _tsCompare(a.data()['rsvpDate'], b.data()['rsvpDate']));
+      final idx = sameTier.indexWhere((d) => d.id == userId);
+      return idx < 0 ? 0 : idx + 1;
+    } catch (e) {
+      debugPrint('Error getting waitlist position: $e');
+      return 0;
+    }
+  }
+
+  /// Compare two Firestore `rsvpDate` values (Timestamp) for ascending order,
+  /// tolerating nulls/other types (treated as epoch-zero).
+  int _tsCompare(dynamic a, dynamic b) {
+    final ta = a is Timestamp ? a : Timestamp.fromMillisecondsSinceEpoch(0);
+    final tb = b is Timestamp ? b : Timestamp.fromMillisecondsSinceEpoch(0);
+    return ta.compareTo(tb);
   }
 
   @override
@@ -403,6 +727,59 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   }
 
   @override
+  Future<void> checkInAttendee({
+    required String eventId,
+    required String attendeeUserId,
+  }) async {
+    try {
+      await _eventsCollection
+          .doc(eventId)
+          .collection('attendees')
+          .doc(attendeeUserId)
+          .update({
+        'checkedIn': true,
+        'checkedInAt': FieldValue.serverTimestamp(),
+      });
+      debugPrint('Checked in: $attendeeUserId -> $eventId');
+    } catch (e) {
+      debugPrint('Error checking in attendee: $e');
+      throw ServerException('Failed to check in attendee: $e');
+    }
+  }
+
+  @override
+  Future<void> setAttendeeGuestCount({
+    required String eventId,
+    required String userId,
+    required int guestCount,
+  }) async {
+    try {
+      final count = guestCount < 0 ? 0 : guestCount;
+      await _eventsCollection
+          .doc(eventId)
+          .collection('attendees')
+          .doc(userId)
+          .set({'guestCount': count}, SetOptions(merge: true));
+      debugPrint('Guest count set: $userId -> $eventId ($count)');
+    } catch (e) {
+      debugPrint('Error setting guest count: $e');
+      throw ServerException('Failed to set guest count: $e');
+    }
+  }
+
+  @override
+  Stream<List<EventAttendee>> watchAttendees(String eventId) {
+    return _eventsCollection
+        .doc(eventId)
+        .collection('attendees')
+        .limit(500)
+        .snapshots()
+        .map((snapshot) => snapshot.docs
+            .map(EventAttendeeModel.fromFirestore)
+            .toList());
+  }
+
+  @override
   Future<List<Event>> getEventsNearLocation(
     double lat,
     double lng,
@@ -412,7 +789,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       // Firestore does not support native geo-queries without GeoFlutterFire.
       // We fetch upcoming published events and filter by distance client-side.
       final snapshot = await _eventsCollection
-          .where('status', isEqualTo: EventStatus.published.name)
+          .where('status', whereIn: _liveStatuses)
           .where(
             'startDate',
             isGreaterThanOrEqualTo: Timestamp.fromDate(DateTime.now()),
@@ -425,6 +802,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .map(EventModel.fromFirestore)
           .where((event) {
         if (!event.isPublic) return false; // private events excluded from discovery
+        if (!event.isLive) return false; // scheduled-not-yet-due hidden
         if (event.latitude == null || event.longitude == null) return false;
         final distance = _calculateDistanceKm(
           lat,
@@ -552,7 +930,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       while (out.length < limit && radiusM <= maxRadiusM) {
         final bounds = GeoQuery.queryBounds(lat, lng, radiusM);
         final snaps = await Future.wait(bounds.map((b) => _eventsCollection
-            .where('status', isEqualTo: EventStatus.published.name)
+            .where('status', whereIn: _liveStatuses)
             .orderBy('geohash')
             .startAt([b[0]]).endAt([b[1]]).get()));
         for (final s in snaps) {
@@ -560,6 +938,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
             if (out.containsKey(doc.id)) continue;
             final e = EventModel.fromFirestore(doc);
             if (!e.isPublic) continue;
+            if (!e.isLive) continue; // scheduled-not-yet-due hidden
             if (e.endDate.isBefore(now)) continue; // upcoming/ongoing only
             out[doc.id] = e;
           }
@@ -598,8 +977,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
 
       return snapshot.docs
           .map(EventModel.fromFirestore)
-          .where((e) =>
-              e.status == EventStatus.published && e.isPublic)
+          .where((e) => e.isLive && e.isPublic)
           .toList()
         ..sort((a, b) => a.startDate.compareTo(b.startDate));
     } catch (e) {
@@ -644,12 +1022,15 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     try {
       final snap = await _eventsCollection
           .where('country', isEqualTo: country)
-          .where('status', isEqualTo: EventStatus.published.name)
+          .where('status', whereIn: _liveStatuses)
           .where('visibility', isEqualTo: 'public')
           .orderBy('attendeeCount', descending: true)
           .limit(networkUserIds == null ? limit : 60)
           .get();
-      var events = snap.docs.map(EventModel.fromFirestore).toList();
+      var events = snap.docs
+          .map(EventModel.fromFirestore)
+          .where((e) => e.isLive) // scheduled-not-yet-due hidden
+          .toList();
       if (networkUserIds != null) {
         final net = networkUserIds.toSet();
         events = events

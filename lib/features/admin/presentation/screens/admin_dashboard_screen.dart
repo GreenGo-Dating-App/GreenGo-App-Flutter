@@ -4,6 +4,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/admin_role.dart';
+import 'business_verification_admin_screen.dart';
 
 /// Admin Dashboard Screen
 /// Main hub for all admin management features
@@ -296,6 +297,14 @@ class AdminDashboardScreen extends StatelessWidget {
             subtitle: l10n.adminUserReportsSubtitle,
             onTap: () => _navigateTo(context, 'reports'),
           ),
+        if (_hasPermission(Permission.viewUserProfiles))
+          _AdminMenuItem(
+            icon: Icons.storefront,
+            iconColor: AppColors.richGold,
+            title: l10n.adminBusinessVerifications,
+            subtitle: l10n.adminBusinessVerificationsSubtitle,
+            onTap: () => _navigateTo(context, 'business_verifications'),
+          ),
         if (_hasPermission(Permission.banUsers))
           _AdminMenuItem(
             icon: Icons.block,
@@ -485,6 +494,15 @@ class AdminDashboardScreen extends StatelessWidget {
         Navigator.of(context).pushNamed(
           '/admin/reports',
           arguments: adminId,
+        );
+        break;
+      case 'business_verifications':
+        Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (context) => BusinessVerificationAdminScreen(
+              adminId: adminId,
+            ),
+          ),
         );
         break;
       case 'pre_sale':

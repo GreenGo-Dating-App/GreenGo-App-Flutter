@@ -364,7 +364,7 @@ class _Step5LocationLanguageScreenState
 
                     // Languages Section
                     Text(
-                      AppLocalizations.of(context)?.onboardingLanguages ?? 'Languages',
+                      AppLocalizations.of(context)?.onboardingPickLanguages ?? 'Languages you speak',
                       style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
