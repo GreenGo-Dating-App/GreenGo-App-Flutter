@@ -140,9 +140,12 @@ dependencies:
   in_app_purchase_storekit: ^0.4.10
 
   # ML Kit
-  google_mlkit_face_detection: ^0.13.1
-  google_mlkit_text_recognition: ^0.15.0
-  google_mlkit_image_labeling: ^0.14.0
+  # NOTE: mobile_scanner 5.2.3 pins GoogleMLKit/BarcodeScanning ~> 6.0.0 (-> MLKitVision 7.0).
+  # These ML Kit plugins are pinned to the SAME GoogleMLKit 6.0 generation so CocoaPods can
+  # resolve a single MLKitVision/MLKitCore version (face_detection 0.11.x & image_labeling 0.12.x
+  # both use GoogleMLKit ~> 6.0.0). Do NOT bump these without also bumping mobile_scanner.
+  google_mlkit_face_detection: ^0.11.1
+  google_mlkit_image_labeling: ^0.12.1
   # google_mlkit_translation: ^0.9.0  # Disabled - doesn't work on emulators
 
   # Online Translation (works everywhere)
