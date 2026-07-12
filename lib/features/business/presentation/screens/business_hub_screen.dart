@@ -19,6 +19,7 @@ import 'business_leads_screen.dart';
 import 'business_storefront_screen.dart';
 import 'followers_screen.dart';
 import 'promote_screen.dart';
+import 'storefront_editor_screen.dart';
 
 /// Business hub — the B2B home inside the user's Profile.
 ///
@@ -69,6 +70,22 @@ class BusinessHubScreen extends StatelessWidget {
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => EventsScreen(currentUserId: profile.userId),
+      ),
+    );
+  }
+
+  /// Opens the editable storefront editor (name, description, gallery,
+  /// opening hours…) for this business, carrying the shared [ProfileBloc] so
+  /// edits propagate back to the profile without a manual reload. This entry
+  /// moved here from "Edit profile" so all business tools live in the hub.
+  Future<void> _openStorefrontEditor(BuildContext context) async {
+    final profileBloc = context.read<ProfileBloc>();
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider.value(
+          value: profileBloc,
+          child: StorefrontEditorScreen(profile: profile),
+        ),
       ),
     );
   }
@@ -322,6 +339,13 @@ class BusinessHubScreen extends StatelessWidget {
               subtitle: l10n.featureThisEvent,
               icon: Icons.campaign,
               onTap: () => _openPromote(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.editStorefront,
+              subtitle: l10n.editStorefrontSubtitle,
+              icon: Icons.edit_note,
+              onTap: () => _openStorefrontEditor(context),
             ),
             const SizedBox(height: 16),
             EditSectionCard(

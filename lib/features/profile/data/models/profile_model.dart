@@ -69,6 +69,7 @@ class ProfileModel extends Profile {
     super.openingHours,
     super.storefrontBio,
     super.storefrontLinks,
+    super.coverImageUrl,
     super.isBanned,
   });
 
@@ -151,6 +152,7 @@ class ProfileModel extends Profile {
       openingHours: profile.openingHours,
       storefrontBio: profile.storefrontBio,
       storefrontLinks: profile.storefrontLinks,
+      coverImageUrl: profile.coverImageUrl,
       isBanned: profile.isBanned,
     );
   }
@@ -288,6 +290,7 @@ class ProfileModel extends Profile {
       storefrontLinks: json['storefrontLinks'] != null
           ? List<String>.from(json['storefrontLinks'] as List)
           : <String>[],
+      coverImageUrl: json['coverImageUrl'] as String?,
       isBanned: json['isBanned'] as bool? ?? false,
     );
   }
@@ -447,6 +450,7 @@ class ProfileModel extends Profile {
       'openingHours': openingHours.map((h) => h.toMap()).toList(),
       'storefrontBio': storefrontBio,
       'storefrontLinks': storefrontLinks,
+      'coverImageUrl': coverImageUrl,
       'isBanned': isBanned,
     };
   }

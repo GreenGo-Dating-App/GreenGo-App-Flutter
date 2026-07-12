@@ -12570,4 +12570,27 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get adminBanned => 'Cuenta baneada permanentemente';
+
+  @override
+  String get storefrontFeaturedImage => 'Featured image';
+
+  @override
+  String get storefrontFeaturedImageSubtitle =>
+      'The hero banner shown at the top of your storefront.';
+
+  @override
+  String get storefrontAddFeaturedImage => 'Add featured image';
+
+  @override
+  String get storefrontProfileImage => 'Profile image';
+
+  @override
+  String get storefrontProfileImageSubtitle =>
+      'Your avatar, shown next to your business name.';
+
+  @override
+  String get storefrontAddProfileImage => 'Add profile image';
+
+  @override
+  String get storefrontReplaceProfileImage => 'Replace profile image';
 }

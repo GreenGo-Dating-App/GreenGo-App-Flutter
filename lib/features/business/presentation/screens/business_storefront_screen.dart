@@ -1,12 +1,15 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../data/services/follow_service.dart';
 import '../widgets/business_contact_button.dart';
 import '../widgets/business_follow_button.dart';
 import '../widgets/opening_hours_section.dart';
@@ -44,6 +47,9 @@ class BusinessStorefrontScreen extends StatefulWidget {
 class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
   late Future<List<_EventCard>> _eventsFuture;
   late Future<List<_CommunityCard>> _communitiesFuture;
+
+  // Cheap denormalized follower count stream (reads profiles/{id}.followerCount).
+  final FollowService _followService = di.sl<FollowService>();
 
   @override
   void initState() {
@@ -110,7 +116,12 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final photos = widget.business.photoUrls;
-    final coverUrl = photos.isNotEmpty ? photos.first : null;
+    // Featured/cover (hero) image: prefer the curated coverImageUrl, then fall
+    // back to the first profile photo, then a branded placeholder.
+    final cover = widget.business.coverImageUrl;
+    final coverUrl = (cover != null && cover.isNotEmpty)
+        ? cover
+        : (photos.isNotEmpty ? photos.first : null);
     final avatarUrl = photos.isNotEmpty ? photos.first : null;
 
     return Scaffold(
@@ -134,13 +145,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
               onPressed: () => SafeNavigation.pop(context),
             ),
             flexibleSpace: FlexibleSpaceBar(
-              background: coverUrl != null
-                  ? Image.network(
-                      coverUrl,
-                      fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => _coverFallback(),
-                    )
-                  : _coverFallback(),
+              background: _buildHero(coverUrl),
             ),
           ),
           SliverToBoxAdapter(
@@ -212,6 +217,9 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                                 ),
                               ),
                             ],
+                            const SizedBox(height: 6),
+                            // Follower count — cheap denormalized stream read.
+                            _followersLine(l10n),
                             const SizedBox(height: 6),
                             BusinessRatingSummary(
                                 businessId: widget.business.userId),
@@ -387,6 +395,40 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     );
   }
 
+  /// Featured/cover hero banner: cached network image with a gradient scrim so
+  /// the back button and avatar stay legible over any image, falling back to a
+  /// branded gradient placeholder when no cover/photo is available.
+  Widget _buildHero(String? coverUrl) => Stack(
+        fit: StackFit.expand,
+        children: [
+          if (coverUrl != null)
+            CachedNetworkImage(
+              imageUrl: coverUrl,
+              fit: BoxFit.cover,
+              placeholder: (_, __) =>
+                  Container(color: AppColors.backgroundCard),
+              errorWidget: (_, __, ___) => _coverFallback(),
+            )
+          else
+            _coverFallback(),
+          // Scrim for control/legibility over the image.
+          const DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Colors.black54,
+                  Colors.transparent,
+                  Colors.black54,
+                ],
+                stops: [0.0, 0.45, 1.0],
+              ),
+            ),
+          ),
+        ],
+      );
+
   Widget _coverFallback() => Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -401,6 +443,31 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
         child: const Center(
           child: Icon(Icons.storefront, size: 64, color: AppColors.richGold),
         ),
+      );
+
+  /// "N followers" line for the storefront header. Streams the denormalized
+  /// `profiles/{businessId}.followerCount` via [FollowService] (one cheap doc
+  /// read) and formats it with the existing `businessFollowersCount` plural.
+  Widget _followersLine(AppLocalizations l10n) => StreamBuilder<int>(
+        stream: _followService.followerCount(widget.business.userId),
+        builder: (context, snap) {
+          final count = snap.data ?? 0;
+          return Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.group, size: 15, color: AppColors.textSecondary),
+              const SizedBox(width: 6),
+              Text(
+                l10n.businessFollowersCount(count),
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
+          );
+        },
       );
 
   Widget _sectionTitle(String t) => Text(

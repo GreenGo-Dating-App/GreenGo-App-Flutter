@@ -185,7 +185,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // never throws (a failure just hides its section).
     await Future.wait<void>([
       _loadHappenings(),
-      _loadFeaturedEvents(),
       _loadFeaturedAttractions(),
       _loadLuxuryEvents(),
       _loadRecommended(),
@@ -1146,10 +1145,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   ),
                 ),
               ),
-              // Two stacked hero carousels near the top: community "Featured
-              // events" then external "Featured attractions". Each hides itself
-              // when it has nothing to show (see the section builders).
-              _featuredEventsSection(context, l10n, reduceMotion),
+              // Featured attractions carousel near the top (hides itself when
+              // empty). We intentionally do NOT show a separate generic
+              // "Featured events" carousel here — the community/boosted events
+              // carousel lives just below as "Featured community events"
+              // (_luxuryEventsSection), so the two no longer duplicate.
               _featuredAttractionsSection(context, l10n, reduceMotion),
               // Personal & high-priority: the user's own upcoming events. Hidden
               // entirely when they have none (see [_myEventsSection]).

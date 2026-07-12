@@ -12,6 +12,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../data/services/analytics_service.dart';
 import '../widgets/audience_charts.dart';
+import '../widgets/stat_grid.dart';
 
 /// Immutable snapshot of a business/organizer's own analytics.
 ///
@@ -183,43 +184,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              _statCard(
-                icon: Icons.event_available,
-                label: l10n.analyticsEventsHosted,
-                value: '${stats.eventsHosted}',
-              ),
-              const SizedBox(height: 16),
-              _statCard(
-                icon: Icons.groups,
-                label: l10n.analyticsTotalAttendees,
-                value: '${stats.totalAttendees}',
-              ),
-              const SizedBox(height: 16),
-              _statCard(
-                icon: Icons.trending_up,
-                label: l10n.analyticsReach,
-                value: '${stats.reach}',
-              ),
-              const SizedBox(height: 16),
-              _statCard(
-                icon: Icons.visibility_outlined,
-                label: l10n.analyticsEventViews,
-                value: '${stats.insights.totalEventViews}',
-              ),
-              const SizedBox(height: 16),
-              _statCard(
-                icon: Icons.diversity_3,
-                label: l10n.analyticsCommunityReach,
-                value: '${stats.insights.communityMembers}',
-              ),
-              const SizedBox(height: 16),
-              _statCard(
-                icon: Icons.forum_outlined,
-                label: l10n.analyticsChatsInvolved,
-                value: stats.insights.cappedChats
-                    ? '${stats.insights.chatsInvolved}+'
-                    : '${stats.insights.chatsInvolved}',
-              ),
+              StatGrid(items: _headlineStats(stats, l10n)),
               const SizedBox(height: 24),
               ...buildAudienceCharts(context, stats.audience, l10n),
             ],
@@ -229,50 +194,52 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
     );
   }
 
-  Widget _statCard({
-    required IconData icon,
-    required String label,
-    required String value,
-  }) {
-    return GlassContainer(
-      padding: const EdgeInsets.all(20),
-      child: Row(
-        children: [
-          Container(
-            padding: const EdgeInsets.all(14),
-            decoration: BoxDecoration(
-              color: AppColors.richGold.withOpacity(0.12),
-              borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-            ),
-            child: Icon(icon, color: AppColors.richGold, size: 26),
-          ),
-          const SizedBox(width: 18),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  value,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  label,
-                  style: const TextStyle(
-                    color: AppColors.textSecondary,
-                    fontSize: 14,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
+  /// The six headline metrics surfaced as the colored 3×2 stat grid.
+  ///
+  /// Each gets a distinct, tasteful accent from the curated [StatColors]
+  /// palette so the row reads as one premium system on the dark glass theme.
+  List<StatItem> _headlineStats(_AnalyticsStats stats, AppLocalizations l10n) {
+    final chats = stats.insights.cappedChats
+        ? '${stats.insights.chatsInvolved}+'
+        : '${stats.insights.chatsInvolved}';
+    return [
+      StatItem(
+        icon: Icons.visibility_outlined,
+        label: l10n.analyticsEventViews,
+        value: '${stats.insights.totalEventViews}',
+        accent: StatColors.sky,
       ),
-    );
+      StatItem(
+        icon: Icons.groups,
+        label: l10n.analyticsTotalAttendees,
+        value: '${stats.totalAttendees}',
+        accent: StatColors.teal,
+      ),
+      StatItem(
+        icon: Icons.event_available,
+        label: l10n.analyticsEventsHosted,
+        value: '${stats.eventsHosted}',
+        accent: StatColors.gold,
+      ),
+      StatItem(
+        icon: Icons.diversity_3,
+        label: l10n.analyticsCommunityReach,
+        value: '${stats.insights.communityMembers}',
+        accent: StatColors.violet,
+      ),
+      StatItem(
+        icon: Icons.forum_outlined,
+        label: l10n.analyticsChatsInvolved,
+        value: chats,
+        accent: StatColors.coral,
+      ),
+      StatItem(
+        icon: Icons.trending_up,
+        label: l10n.analyticsReach,
+        value: '${stats.reach}',
+        accent: StatColors.emerald,
+      ),
+    ];
   }
 
   // ── Locked (non-Platinum) upgrade state ────────────────────────────────────
