@@ -55,7 +55,6 @@ import '../../../gamification/domain/entities/user_level.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/bloc/gamification_state.dart';
-import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 import '../../../gamification/presentation/widgets/achievement_unlock_dialog.dart';
 import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';

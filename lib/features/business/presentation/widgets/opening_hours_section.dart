@@ -43,7 +43,7 @@ class OpeningHoursSection extends StatelessWidget {
             (entry.open == null || entry.close == null);
         final valueText = isClosed
             ? closedLabel
-            : '${entry!.open} – ${entry.close}';
+            : '${entry.open} – ${entry.close}';
 
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 6),
