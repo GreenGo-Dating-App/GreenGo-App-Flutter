@@ -12437,17 +12437,17 @@ class AppLocalizationsEs extends AppLocalizations {
       'Los mensajes pueden tener hasta 4096 caracteres.';
 
   @override
-  String get exploreBusinessesNearYou => 'Businesses near you';
+  String get exploreBusinessesNearYou => 'Negocios cerca de ti';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
 
   @override
-  String get rateThisBusiness => 'Rate this business';
+  String get rateThisBusiness => 'Califica este negocio';
 
   @override
   String get businessRatingError =>
-      'Couldn\'t save your rating. Please try again.';
+      'No se pudo guardar tu calificación. Inténtalo de nuevo.';
 
   @override
   String businessRatingCount(int count) {
@@ -12456,116 +12456,118 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String rateStarsSemantic(int stars) {
-    return 'Rate $stars stars';
+    return 'Calificar con $stars estrellas';
   }
 
   @override
   String businessRatingSemantic(String avg, int count) {
-    return 'Rated $avg out of 5, $count ratings';
+    return 'Calificado con $avg de 5, $count calificaciones';
   }
 
   @override
-  String get editStorefront => 'Edit storefront';
+  String get editStorefront => 'Editar escaparate';
 
   @override
   String get editStorefrontSubtitle =>
-      'Manage your gallery, hours, links and info';
+      'Gestiona tu galería, horario, enlaces e información';
 
   @override
   String get storefrontGallerySubtitle =>
-      'Showcase your venue, products or team';
+      'Muestra tu local, productos o equipo';
 
   @override
   String get storefrontOpeningHoursSubtitle =>
-      'Set your opening days and hours';
+      'Establece tus días y horas de apertura';
 
   @override
-  String get storefrontDescriptionHint => 'Tell people about your business';
+  String get storefrontDescriptionHint =>
+      'Cuéntale a la gente sobre tu negocio';
 
   @override
-  String get storefrontCategoryHint => 'e.g. Restaurant, Cafe, Museum';
+  String get storefrontCategoryHint => 'p. ej. Restaurante, Cafetería, Museo';
 
   @override
   String get storefrontLinkHint => 'https://...';
 
   @override
-  String get storefrontAddLink => 'Add link';
+  String get storefrontAddLink => 'Añadir enlace';
 
   @override
-  String get storefrontAddImage => 'Add image';
+  String get storefrontAddImage => 'Añadir imagen';
 
   @override
-  String get storefrontSaved => 'Storefront updated';
+  String get storefrontSaved => 'Escaparate actualizado';
 
   @override
-  String get analyticsEventViews => 'Event views';
+  String get analyticsEventViews => 'Vistas del evento';
 
   @override
-  String get analyticsCommunityReach => 'Community reach';
+  String get analyticsCommunityReach => 'Alcance de la comunidad';
 
   @override
-  String get analyticsChatsInvolved => 'Chats involved';
+  String get analyticsChatsInvolved => 'Chats involucrados';
 
   @override
-  String get eventAnalyticsViews => 'Views';
+  String get eventAnalyticsViews => 'Vistas';
 
   @override
-  String get businessHubScanner => 'Quick scanner';
+  String get businessHubScanner => 'Escáner rápido';
 
   @override
-  String get businessHubScannerSubtitle => 'Scan tickets to check attendees in';
+  String get businessHubScannerSubtitle =>
+      'Escanea entradas para registrar a los asistentes';
 
   @override
-  String get businessHubFollowers => 'Followers';
+  String get businessHubFollowers => 'Seguidores';
 
   @override
-  String get businessHubFollowersSubtitle => 'See who follows your business';
+  String get businessHubFollowersSubtitle => 'Mira quién sigue tu negocio';
 
   @override
-  String get businessFollowersTitle => 'Followers';
+  String get businessFollowersTitle => 'Seguidores';
 
   @override
   String get businessNoFollowers =>
-      'No followers yet. Share your storefront to grow your audience.';
+      'Aún no tienes seguidores. Comparte tu escaparate para ampliar tu audiencia.';
 
   @override
-  String get membershipRequiredTitle => 'Membership required';
+  String get membershipRequiredTitle => 'Membresía requerida';
 
   @override
   String get membershipRequiredBody =>
-      'You need an active membership to do this. Renew to continue.';
+      'Necesitas una membresía activa para hacer esto. Renuévala para continuar.';
 
   @override
-  String get renewMembership => 'Renew membership';
+  String get renewMembership => 'Renovar membresía';
 
   @override
-  String get extraEventTitle => 'Extra event';
+  String get extraEventTitle => 'Evento adicional';
 
   @override
   String extraEventBody(int cost) {
-    return 'You\'ve reached your free event limit. Create an extra event for $cost coins?';
+    return 'Has alcanzado tu límite de eventos gratuitos. ¿Crear un evento adicional por $cost monedas?';
   }
 
   @override
-  String get accountBannedTitle => 'Account permanently banned';
+  String get accountBannedTitle => 'Cuenta baneada permanentemente';
 
   @override
   String get accountBannedBody =>
-      'This account has been permanently banned for violating our content policy. This decision is final.';
+      'Esta cuenta ha sido baneada permanentemente por violar nuestra política de contenido. Esta decisión es definitiva.';
 
   @override
-  String get adminBanPermanently => 'Ban permanently';
+  String get adminBanPermanently => 'Banear permanentemente';
 
   @override
-  String get adminBanConfirm => 'Ban this account permanently?';
+  String get adminBanConfirm => '¿Banear esta cuenta permanentemente?';
 
   @override
   String get adminBanConfirmBody =>
-      'This permanently bans the account and blocks all access. This cannot be undone.';
+      'Esto banea la cuenta permanentemente y bloquea todo acceso. No se puede deshacer.';
 
   @override
-  String get adminBanReasonHint => 'Reason (e.g. nudity in gallery)';
+  String get adminBanReasonHint => 'Motivo (p. ej. desnudez en la galería)';
 
   @override
-  String get adminBanned => 'Account permanently banned';
+  String get adminBanned => 'Cuenta baneada permanentemente';
 }
