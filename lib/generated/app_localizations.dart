@@ -22067,6 +22067,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Account permanently banned'**
   String get adminBanned;
+
+  /// No description provided for @storefrontFeaturedImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Featured image'**
+  String get storefrontFeaturedImage;
+
+  /// No description provided for @storefrontFeaturedImageSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'The hero banner shown at the top of your storefront.'**
+  String get storefrontFeaturedImageSubtitle;
+
+  /// No description provided for @storefrontAddFeaturedImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Add featured image'**
+  String get storefrontAddFeaturedImage;
+
+  /// No description provided for @storefrontProfileImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile image'**
+  String get storefrontProfileImage;
+
+  /// No description provided for @storefrontProfileImageSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your avatar, shown next to your business name.'**
+  String get storefrontProfileImageSubtitle;
+
+  /// No description provided for @storefrontAddProfileImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Add profile image'**
+  String get storefrontAddProfileImage;
+
+  /// No description provided for @storefrontReplaceProfileImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace profile image'**
+  String get storefrontReplaceProfileImage;
 }
 
 class _AppLocalizationsDelegate

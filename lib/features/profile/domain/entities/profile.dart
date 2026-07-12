@@ -86,6 +86,7 @@ class Profile extends Equatable {
     this.openingHours = const [],
     this.storefrontBio,
     this.storefrontLinks = const [],
+    this.coverImageUrl,
     this.isBanned = false,
   });
   final String userId;
@@ -203,6 +204,12 @@ class Profile extends Equatable {
   final List<OpeningHours> openingHours;
   final String? storefrontBio;
   final List<String> storefrontLinks;
+
+  // Featured/cover (hero) image for the storefront. Rendered as the top hero
+  // banner on the public storefront; distinct from the avatar (photoUrls.first)
+  // and the gallery. Optional & null by default so existing docs stay
+  // backward-compatible. A legacy empty string is treated as "no cover".
+  final String? coverImageUrl;
 
   // Moderation flag — set by admins elsewhere (Cloud Function / admin tools).
   // The app only READS it (e.g. to hide or gate a banned account). Default false.
@@ -338,6 +345,7 @@ class Profile extends Equatable {
         openingHours,
         storefrontBio,
         storefrontLinks,
+        coverImageUrl,
         isBanned,
       ];
 
@@ -415,6 +423,7 @@ class Profile extends Equatable {
     List<OpeningHours>? openingHours,
     String? storefrontBio,
     List<String>? storefrontLinks,
+    String? coverImageUrl,
     bool? isBanned,
   }) {
     return Profile(
@@ -490,6 +499,7 @@ class Profile extends Equatable {
       openingHours: openingHours ?? this.openingHours,
       storefrontBio: storefrontBio ?? this.storefrontBio,
       storefrontLinks: storefrontLinks ?? this.storefrontLinks,
+      coverImageUrl: coverImageUrl ?? this.coverImageUrl,
       isBanned: isBanned ?? this.isBanned,
     );
   }

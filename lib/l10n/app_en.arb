@@ -5912,5 +5912,12 @@
   "adminBanConfirm": "Ban this account permanently?",
   "adminBanConfirmBody": "This permanently bans the account and blocks all access. This cannot be undone.",
   "adminBanReasonHint": "Reason (e.g. nudity in gallery)",
-  "adminBanned": "Account permanently banned"
+  "adminBanned": "Account permanently banned",
+  "storefrontFeaturedImage": "Featured image",
+  "storefrontFeaturedImageSubtitle": "The hero banner shown at the top of your storefront.",
+  "storefrontAddFeaturedImage": "Add featured image",
+  "storefrontProfileImage": "Profile image",
+  "storefrontProfileImageSubtitle": "Your avatar, shown next to your business name.",
+  "storefrontAddProfileImage": "Add profile image",
+  "storefrontReplaceProfileImage": "Replace profile image"
 }

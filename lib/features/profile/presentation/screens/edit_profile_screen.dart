@@ -48,7 +48,6 @@ import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../business/presentation/screens/business_account_screen.dart';
 import '../../../business/presentation/screens/business_hub_screen.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
-import '../../../business/presentation/screens/storefront_editor_screen.dart';
 import '../../../main/presentation/screens/main_navigation_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart' as profile_entity;
@@ -254,6 +253,27 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                   ),
 
+                  // ── Business (top-level tile, all users) ──
+                  // Single entry point for everything business. Active
+                  // businesses open the Business hub (storefront editor,
+                  // analytics, events, promote, leads, verification…);
+                  // everyone else sees the prominent gold "become a business"
+                  // promo so the upgrade path is never lost.
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 24),
+                    child: isBusinessActive
+                        ? EditSectionCard(
+                            title:
+                                AppLocalizations.of(context)!.businessSectionTitle,
+                            subtitle: AppLocalizations.of(context)!
+                                .businessSectionSubtitle,
+                            icon: Icons.storefront,
+                            onTap: () =>
+                                _navigateToBusinessHub(context, activeProfile),
+                          )
+                        : _buildBecomeBusinessBanner(context, activeProfile),
+                  ),
+
                   // ── Edit Profile (collapsed by default) ──
                   SettingsAccordion(
                     title: AppLocalizations.of(context)!.editProfile,
@@ -333,71 +353,11 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.share,
                         onTap: () => _navigateToEditSocialLinks(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
-                      // Business / Venue Account Section — for existing
-                      // businesses only. Two states:
-                      //  1. Active business (isBusiness + active Platinum) →
-                      //     the normal Business-hub tile.
-                      //  2. Lapsed business (isBusiness but Platinum expired) →
-                      //     a "paused" tile that routes to renew Platinum; the
-                      //     full hub stays out of reach until renewal. The
-                      //     isBusiness flag is preserved, only the capability is
-                      //     gated (see TierEntitlements.isBusinessActive).
-                      // The "become a business" upgrade entry for non-business
-                      // users lives right above the GreenGo membership section
-                      // (see _buildBaseMembershipSection call below).
-                      if (TierEntitlements.isBusinessActive(
-                          activeProfile.membershipTier, activeProfile.isBusiness))
-                        EditSectionCard(
-                          title: AppLocalizations.of(context)!.businessSectionTitle,
-                          subtitle:
-                              AppLocalizations.of(context)!.businessSectionSubtitle,
-                          icon: Icons.storefront,
-                          onTap: () =>
-                              _navigateToBusinessHub(context, activeProfile),
-                        )
-                      else if (activeProfile.isBusiness)
-                        EditSectionCard(
-                          title: AppLocalizations.of(context)!.businessPausedTitle,
-                          subtitle:
-                              AppLocalizations.of(context)!.businessPausedSubtitle,
-                          icon: Icons.pause_circle_outline,
-                          onTap: () => TierGate().openMembershipUpgrade(
-                            context,
-                            currentUserId: activeProfile.userId,
-                          ),
-                        ),
-                      // Storefront-oriented tiles — only for active business
-                      // accounts. These keep the editable storefront editor,
-                      // gallery, opening-hours and public-storefront preview
-                      // all directly reachable from the Profile menu (in
-                      // addition to the normal account items above/below).
-                      if (TierEntitlements.isBusinessActive(
-                          activeProfile.membershipTier,
-                          activeProfile.isBusiness)) ...[
-                        const SizedBox(height: 16),
-                        // Single canonical storefront editor entry. The former
-                        // separate "Gallery" and "Opening hours" tiles opened
-                        // this very same editor, so they were collapsed here.
-                        EditSectionCard(
-                          title: AppLocalizations.of(context)!.editStorefront,
-                          subtitle: AppLocalizations.of(context)!
-                              .editStorefrontSubtitle,
-                          icon: Icons.edit_note,
-                          onTap: () => _navigateToStorefrontEditor(
-                              context, activeProfile),
-                        ),
-                        const SizedBox(height: 16),
-                        EditSectionCard(
-                          title:
-                              AppLocalizations.of(context)!.viewStorefront,
-                          subtitle: AppLocalizations.of(context)!
-                              .seeHowOthersViewProfile,
-                          icon: Icons.visibility,
-                          onTap: () => _navigateToViewStorefront(
-                              context, activeProfile),
-                        ),
-                      ],
+                      // NOTE: Business / Venue entries were intentionally moved
+                      // OUT of "Edit profile". They now live behind the single
+                      // top-level "Business" tile near "View my profile" above,
+                      // which opens the Business hub (or the become-a-business
+                      // flow for non-business accounts).
                     ],
                   ),
 
@@ -578,14 +538,6 @@ class EditProfileScreen extends StatelessWidget {
 
                   const SizedBox(height: 16),
 
-                  // Become-a-business upgrade banner — shown only for users who
-                  // are NOT yet a business, placed immediately above the GreenGo
-                  // membership section so it is always visible in the profile.
-                  if (!activeProfile.isBusiness) ...[
-                    _buildBecomeBusinessBanner(context, activeProfile),
-                    const SizedBox(height: 16),
-                  ],
-
                   // Base Membership Section
                   _buildBaseMembershipSection(context, activeProfile),
 
@@ -748,31 +700,6 @@ class EditProfileScreen extends StatelessWidget {
           profile: currentProfile,
           currentUserId: currentProfile.userId,
           // No match and no onSwipe - this is self-view mode
-        ),
-      ),
-    );
-  }
-
-  Future<void> _navigateToStorefrontEditor(
-      BuildContext context, Profile currentProfile) async {
-    final profileBloc = context.read<ProfileBloc>();
-    await Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => BlocProvider.value(
-          value: profileBloc,
-          child: StorefrontEditorScreen(profile: currentProfile),
-        ),
-      ),
-    );
-    // Profile updates are propagated through the shared BLoC - no reload needed
-  }
-
-  void _navigateToViewStorefront(BuildContext context, Profile currentProfile) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => BusinessStorefrontScreen(
-          business: currentProfile,
-          currentUserId: currentProfile.userId,
         ),
       ),
     );

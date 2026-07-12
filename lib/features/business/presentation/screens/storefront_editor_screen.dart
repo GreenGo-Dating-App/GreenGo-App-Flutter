@@ -30,6 +30,16 @@ import '../../../profile/presentation/bloc/profile_state.dart';
 ///
 /// Everything is persisted through the standard profile update path
 /// (`ProfileUpdateRequested`), so no new repository/datasource wiring is needed.
+///
+/// Images are curated in three distinct roles:
+///   * Featured/cover (hero) image → `Profile.coverImageUrl`
+///   * Gallery → `Profile.galleryImages`
+///   * Profile image/avatar → `Profile.photoUrls.first`
+/// Uploads flow through a single bloc event that returns only a URL, so the
+/// pending upload's target is tracked in [_pendingUploadTarget] before dispatch
+/// and applied in the listener — this keeps the three uploads from mixing up.
+enum _UploadTarget { featured, gallery, avatar }
+
 class StorefrontEditorScreen extends StatefulWidget {
   const StorefrontEditorScreen({required this.profile, super.key});
 
@@ -48,13 +58,28 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   late TextEditingController _categoryController;
   late List<TextEditingController> _linkControllers;
 
-  bool _pendingGalleryUpload = false;
+  // Featured/cover (hero) image URL. Empty string is the "removed" sentinel so
+  // the removal survives the copyWith(coverImageUrl:) null-coalescing on save.
+  String? _coverImageUrl;
+  // Profile image/avatar URL (mirrors photoUrls.first).
+  String? _avatarUrl;
+
+  // Which image slot the in-flight upload belongs to (null = no upload).
+  _UploadTarget? _pendingUploadTarget;
   bool _saving = false;
+
+  bool get _uploadingFeatured => _pendingUploadTarget == _UploadTarget.featured;
+  bool get _uploadingGallery => _pendingUploadTarget == _UploadTarget.gallery;
+  bool get _uploadingAvatar => _pendingUploadTarget == _UploadTarget.avatar;
 
   @override
   void initState() {
     super.initState();
     _galleryImages = List<String>.from(widget.profile.galleryImages);
+    _coverImageUrl = widget.profile.coverImageUrl;
+    _avatarUrl = widget.profile.photoUrls.isNotEmpty
+        ? widget.profile.photoUrls.first
+        : null;
 
     // Seed 7 weekday rows, hydrating from any saved entries.
     final saved = <int, OpeningHours>{
@@ -88,6 +113,50 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     super.dispose();
   }
 
+  // ─── Shared image picker + upload dispatch ──────────────────────────────
+  /// Picks an image and dispatches it through the shared validated upload path.
+  /// [target] disambiguates which slot the returned URL belongs to (applied in
+  /// the bloc listener). [isMainPhoto] gates the validation: the avatar (main)
+  /// requires a face + no NSFW; featured/gallery only run the NSFW check.
+  Future<void> _pickAndUpload(_UploadTarget target,
+      {required bool isMainPhoto}) async {
+    if (_pendingUploadTarget != null) return; // one upload at a time
+    try {
+      final image = await _picker.pickImage(
+        source: ImageSource.gallery,
+        maxWidth: 1920,
+        maxHeight: 1920,
+        imageQuality: 85,
+      );
+      if (image == null || !mounted) return;
+      setState(() => _pendingUploadTarget = target);
+      context.read<ProfileBloc>().add(
+            ProfilePhotoUploadRequested(
+              userId: widget.profile.userId,
+              photo: File(image.path),
+              isMainPhoto: isMainPhoto,
+              isPrivate: false,
+            ),
+          );
+    } catch (_) {
+      if (mounted) setState(() => _pendingUploadTarget = null);
+    }
+  }
+
+  // ─── Featured / cover image ─────────────────────────────────────────────
+  Future<void> _pickFeaturedImage() =>
+      _pickAndUpload(_UploadTarget.featured, isMainPhoto: false);
+
+  void _removeFeaturedImage() {
+    // Empty-string sentinel: survives copyWith(coverImageUrl:) so removal
+    // actually persists (the display treats empty as "no cover").
+    setState(() => _coverImageUrl = '');
+  }
+
+  // ─── Profile image / avatar ─────────────────────────────────────────────
+  Future<void> _pickAvatarImage() =>
+      _pickAndUpload(_UploadTarget.avatar, isMainPhoto: true);
+
   // ─── Gallery ────────────────────────────────────────────────────────────
   Future<void> _addGalleryImage() async {
     final l10n = AppLocalizations.of(context)!;
@@ -100,28 +169,9 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       );
       return;
     }
-    try {
-      final image = await _picker.pickImage(
-        source: ImageSource.gallery,
-        maxWidth: 1920,
-        maxHeight: 1920,
-        imageQuality: 85,
-      );
-      if (image == null || !mounted) return;
-      // Reuse the existing validated upload path (no face required for a
-      // non-main public photo — only the NSFW check runs).
-      _pendingGalleryUpload = true;
-      context.read<ProfileBloc>().add(
-            ProfilePhotoUploadRequested(
-              userId: widget.profile.userId,
-              photo: File(image.path),
-              isMainPhoto: false,
-              isPrivate: false,
-            ),
-          );
-    } catch (_) {
-      _pendingGalleryUpload = false;
-    }
+    // Reuse the existing validated upload path (no face required for a
+    // non-main public photo — only the NSFW check runs).
+    await _pickAndUpload(_UploadTarget.gallery, isMainPhoto: false);
   }
 
   void _removeGalleryImage(int index) {
@@ -187,8 +237,23 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
         .where((t) => t.isNotEmpty)
         .toList();
 
+    // Apply the (optionally replaced) avatar into slot 0 of photoUrls, which is
+    // what the storefront and discovery surfaces read as the business avatar.
+    final photoUrls = List<String>.from(widget.profile.photoUrls);
+    if (_avatarUrl != null && _avatarUrl!.isNotEmpty) {
+      if (photoUrls.isEmpty) {
+        photoUrls.add(_avatarUrl!);
+      } else {
+        photoUrls[0] = _avatarUrl!;
+      }
+    }
+
     final updated = widget.profile.copyWith(
+      photoUrls: photoUrls,
       galleryImages: _galleryImages,
+      // '' sentinel persists a removal; a URL persists the new cover; null
+      // leaves the existing value untouched via copyWith's null-coalescing.
+      coverImageUrl: _coverImageUrl,
       openingHours: _openingHours,
       storefrontBio: _descController.text.trim(),
       storefrontLinks: links,
@@ -227,9 +292,22 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       ),
       body: BlocListener<ProfileBloc, ProfileState>(
         listener: (context, state) {
-          if (state is ProfilePhotoUploaded && _pendingGalleryUpload) {
-            _pendingGalleryUpload = false;
-            setState(() => _galleryImages.add(state.photoUrl));
+          if (state is ProfilePhotoUploaded && _pendingUploadTarget != null) {
+            final target = _pendingUploadTarget;
+            _pendingUploadTarget = null;
+            setState(() {
+              switch (target!) {
+                case _UploadTarget.featured:
+                  _coverImageUrl = state.photoUrl;
+                  break;
+                case _UploadTarget.gallery:
+                  _galleryImages.add(state.photoUrl);
+                  break;
+                case _UploadTarget.avatar:
+                  _avatarUrl = state.photoUrl;
+                  break;
+              }
+            });
           } else if (state is ProfileUpdated && _saving) {
             _saving = false;
             ScaffoldMessenger.of(context).showSnackBar(
@@ -239,9 +317,14 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
               ),
             );
             SafeNavigation.pop(context);
+          } else if (state is ProfilePhotoValidationFailed) {
+            // Image rejected (NSFW / no face for avatar) — clear the spinner.
+            if (_pendingUploadTarget != null && mounted) {
+              setState(() => _pendingUploadTarget = null);
+            }
           } else if (state is ProfileError) {
             _saving = false;
-            _pendingGalleryUpload = false;
+            _pendingUploadTarget = null;
             if (mounted) setState(() {});
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -254,6 +337,20 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
         child: ListView(
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           children: [
+            // Featured / cover (hero) image
+            _sectionHeader(
+                l10n.storefrontFeaturedImage, l10n.storefrontFeaturedImageSubtitle),
+            const SizedBox(height: 12),
+            _featuredImagePicker(l10n),
+            const SizedBox(height: 28),
+
+            // Profile image / avatar
+            _sectionHeader(
+                l10n.storefrontProfileImage, l10n.storefrontProfileImageSubtitle),
+            const SizedBox(height: 12),
+            _avatarPicker(l10n),
+            const SizedBox(height: 28),
+
             // Gallery
             _sectionHeader(l10n.businessGallery, l10n.storefrontGallerySubtitle),
             const SizedBox(height: 12),
@@ -384,6 +481,183 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
         ],
       );
 
+  // ─── Featured / cover image picker ──────────────────────────────────────
+  Widget _featuredImagePicker(AppLocalizations l10n) {
+    final hasCover = _coverImageUrl != null && _coverImageUrl!.isNotEmpty;
+    return AspectRatio(
+      aspectRatio: 16 / 9,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            if (hasCover)
+              Image.network(
+                _coverImageUrl!,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => _featuredPlaceholder(l10n),
+              )
+            else
+              _featuredPlaceholder(l10n),
+            if (_uploadingFeatured)
+              Container(
+                color: AppColors.deepBlack.withOpacity(0.5),
+                child: const Center(
+                  child: SizedBox(
+                    width: 26,
+                    height: 26,
+                    child: CircularProgressIndicator(
+                        strokeWidth: 2, color: AppColors.richGold),
+                  ),
+                ),
+              )
+            else if (hasCover)
+              Positioned(
+                top: 8,
+                right: 8,
+                child: Row(
+                  children: [
+                    _overlayButton(
+                      icon: Icons.edit,
+                      onTap: _pickFeaturedImage,
+                    ),
+                    const SizedBox(width: 8),
+                    _overlayButton(
+                      icon: Icons.delete_outline,
+                      onTap: _removeFeaturedImage,
+                      danger: true,
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _featuredPlaceholder(AppLocalizations l10n) => GestureDetector(
+        onTap: _pendingUploadTarget != null ? null : _pickFeaturedImage,
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                AppColors.richGold.withOpacity(0.18),
+                AppColors.backgroundCard,
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            border: Border.all(color: AppColors.richGold.withOpacity(0.4)),
+          ),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.add_photo_alternate,
+                    color: AppColors.richGold, size: 34),
+                const SizedBox(height: 6),
+                Text(
+                  l10n.storefrontAddFeaturedImage,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 13,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+
+  Widget _overlayButton({
+    required IconData icon,
+    required VoidCallback onTap,
+    bool danger = false,
+  }) =>
+      GestureDetector(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: (danger ? AppColors.errorRed : AppColors.deepBlack)
+                .withOpacity(0.7),
+            shape: BoxShape.circle,
+          ),
+          child: Icon(icon, color: Colors.white, size: 18),
+        ),
+      );
+
+  // ─── Profile image / avatar picker ──────────────────────────────────────
+  Widget _avatarPicker(AppLocalizations l10n) {
+    final hasAvatar = _avatarUrl != null && _avatarUrl!.isNotEmpty;
+    return Row(
+      children: [
+        Stack(
+          children: [
+            Container(
+              width: 96,
+              height: 96,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: AppColors.backgroundCard,
+                border: Border.all(
+                    color: AppColors.richGold.withOpacity(0.5), width: 2),
+                image: hasAvatar
+                    ? DecorationImage(
+                        image: NetworkImage(_avatarUrl!), fit: BoxFit.cover)
+                    : null,
+              ),
+              child: _uploadingAvatar
+                  ? const Center(
+                      child: SizedBox(
+                        width: 24,
+                        height: 24,
+                        child: CircularProgressIndicator(
+                            strokeWidth: 2, color: AppColors.richGold),
+                      ),
+                    )
+                  : (hasAvatar
+                      ? null
+                      : const Icon(Icons.storefront,
+                          color: AppColors.richGold, size: 36)),
+            ),
+            Positioned(
+              bottom: 0,
+              right: 0,
+              child: GestureDetector(
+                onTap: _pendingUploadTarget != null ? null : _pickAvatarImage,
+                child: Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: const BoxDecoration(
+                    color: AppColors.richGold,
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(Icons.edit,
+                      color: AppColors.deepBlack, size: 16),
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: TextButton.icon(
+            onPressed: _pendingUploadTarget != null ? null : _pickAvatarImage,
+            icon: const Icon(Icons.add_photo_alternate,
+                color: AppColors.richGold, size: 18),
+            label: Text(
+              hasAvatar
+                  ? l10n.storefrontReplaceProfileImage
+                  : l10n.storefrontAddProfileImage,
+              style: const TextStyle(color: AppColors.richGold),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget _galleryGrid(AppLocalizations l10n) {
     return Wrap(
       spacing: 10,
@@ -430,7 +704,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             ),
         // Add tile
         GestureDetector(
-          onTap: _pendingGalleryUpload ? null : _addGalleryImage,
+          onTap: _pendingUploadTarget != null ? null : _addGalleryImage,
           child: Container(
             width: 100,
             height: 100,
@@ -441,7 +715,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
                 color: AppColors.richGold.withOpacity(0.4),
               ),
             ),
-            child: _pendingGalleryUpload
+            child: _uploadingGallery
                 ? const Center(
                     child: SizedBox(
                       width: 22,
