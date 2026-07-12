@@ -42,11 +42,11 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "firebase-admin": "^13.6.1",
-    "firebase-functions": "^7.0.5",
+    "firebase-functions": "^7.2.5",
     "fluent-ffmpeg": "^2.1.2",
     "google-auth-library": "^9.4.1",
     "googleapis": "^128.0.0",
-    "joi": "^17.11.0",
+    "joi": "^17.13.4",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.18.1",
     "passkit-generator": "^3.3.0",
@@ -54,7 +54,7 @@
     "sharp": "^0.33.5",
     "stripe": "^14.8.0",
     "twilio": "^4.19.3",
-    "uuid": "^9.0.1",
+    "uuid": "^11.1.1",
     "validator": "^13.11.0",
     "zod": "^3.22.4"
   },
@@ -79,7 +79,10 @@
   "overrides": {
     "@typescript-eslint/typescript-estree": {
       "minimatch": "^9.0.7"
-    }
+    },
+    "uuid": "$uuid",
+    "joi": "$joi",
+    "ts-deepmerge": "^8.0.0"
   },
   "private": true
 }
