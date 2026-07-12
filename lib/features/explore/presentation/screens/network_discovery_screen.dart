@@ -705,13 +705,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   _runNicknameLookup(nickname);
                 },
               )
-            : Text(
-                l10n.exploreNetworkDiscovery,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
+            : const SizedBox.shrink(),
         actions: [
           IconButton(
             icon: Icon(_searching ? Icons.close : Icons.search),
