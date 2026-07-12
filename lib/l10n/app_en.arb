@@ -5368,7 +5368,7 @@
       }
     }
   },
-  "eventsBoostConfirm": "Feature this event for {cost} coins for 7 days?",
+  "eventsBoostConfirm": "Boost this event for {cost} coins?",
   "@eventsBoostConfirm": {
     "placeholders": {
       "cost": {
@@ -5840,5 +5840,26 @@
   "businessEventsCancelled": "Event cancelled",
   "businessPausedTitle": "Business paused",
   "businessPausedSubtitle": "Your business features are paused because your Platinum membership expired. Renew Platinum to restore your storefront, analytics, leads and promotions.",
-  "businessReactivate": "Renew Platinum"
+  "businessReactivate": "Renew Platinum",
+  "eventsBoostChooseDuration": "Choose boost duration",
+  "eventsBoostHours": "{count, plural, =1{1 hour} other{{count} hours}}",
+  "@eventsBoostHours": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "eventsBoostDays": "{count, plural, =1{1 day} other{{count} days}}",
+  "@eventsBoostDays": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "eventsBoostWeeks": "{count, plural, =1{1 week} other{{count} weeks}}",
+  "@eventsBoostWeeks": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "eventBoostEndsIn": "Boost ends in {time}",
+  "@eventBoostEndsIn": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+  "eventBoostEnded": "Boost ended",
+  "eventsBuyCoins": "Buy coins",
+  "eventsBuyCoinsPrompt": "You don't have enough coins. Would you like to buy more?",
+  "messageTooLong": "Messages can be up to 4096 characters."
 }

@@ -11,6 +11,7 @@ import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
+import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/data/models/event_model.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
@@ -21,10 +22,11 @@ import '../../../profile/domain/entities/profile.dart';
 /// community EVENTS (→ open that event's page), from the Explore header.
 ///
 /// Apple-safe / glass. Deliberately index-light: every query is a single-field
-/// equality or prefix range (no composite indexes), capped at 20, sorted
-/// client-side. People are searched by exact `nickname` (the same lookup the
-/// Network search uses) plus a `displayName` prefix; events by `title` prefix
-/// (published + public only, filtered client-side).
+/// equality, prefix range or `arrayContains` (no composite indexes), capped at
+/// 20, sorted client-side. People are searched by exact `nickname` (the same
+/// lookup the Network search uses) plus a `displayName` prefix; events by the
+/// single-field, case-insensitive `searchKeywords` array (community + public,
+/// live-gated) unioned with the events the current user is GOING to.
 class UniversalSearchScreen extends StatefulWidget {
   const UniversalSearchScreen({super.key, required this.currentUserId});
 
@@ -57,6 +59,11 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
   List<Profile>? _people;
   List<Event>? _events;
   bool _loading = false;
+
+  /// The current user's own events (organized + going), fetched at most once per
+  /// screen and reused across keystrokes so search stays cheap. Bounded to this
+  /// single user's memberships.
+  Future<List<Event>>? _userEventsFuture;
 
   @override
   void dispose() {
@@ -147,25 +154,74 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     return list.take(20).toList();
   }
 
-  /// Events: `title` prefix range (single-field, index-free), filtered to
-  /// published + public client-side.
+  /// Events: case-insensitive keyword match over the single-field
+  /// `searchKeywords` array (index-free `arrayContains`, the SAME field the
+  /// community-events feed matches on), gated to live + public so community
+  /// events surface. This replaces the old case-sensitive `title` prefix range,
+  /// which missed community events (mixed-case / title-less docs) entirely.
+  ///
+  /// The result is then unioned with the events the current user is GOING to
+  /// that match the query — of ANY visibility — so a joined event always shows
+  /// up. De-duped by id and capped at 20.
   Future<List<Event>> _searchEvents(String q) async {
-    try {
-      final snap = await _firestore
-          .collection('events')
-          .orderBy('title')
-          .startAt([q])
-          .endAt(['$q'])
-          .limit(20)
-          .get();
-      final events = snap.docs
-          .map(EventModel.fromFirestore)
-          .where((e) => e.status == EventStatus.published && e.isPublic)
-          .toList();
-      return events;
-    } catch (_) {
-      return const <Event>[];
+    final lower = q.toLowerCase();
+    // First alphanumeric token >= 2 chars — mirrors the datasource tokenizer so
+    // the query lines up with how `searchKeywords` is built.
+    final token = lower
+        .split(RegExp(r'[^a-z0-9]+'))
+        .firstWhere((t) => t.length >= 2, orElse: () => '');
+
+    final byId = <String, Event>{};
+
+    // 1) Public keyword search (community + all public events, live only).
+    if (token.isNotEmpty) {
+      try {
+        final snap = await _firestore
+            .collection('events')
+            .where('searchKeywords', arrayContains: token)
+            .limit(30)
+            .get();
+        for (final doc in snap.docs) {
+          final e = EventModel.fromFirestore(doc);
+          if (e.isLive && e.isPublic) byId[e.id] = e;
+        }
+      } catch (_) {/* keep whatever we have */}
     }
+
+    // 2) Events the user is GOING to that match — any visibility, live only.
+    // Client-side `contains` covers blank/title-less or non-tokenizable queries
+    // over this user's bounded event set.
+    try {
+      final mine = await _userEvents();
+      for (final e in mine) {
+        if (byId.containsKey(e.id)) continue;
+        if (!e.isLive) continue;
+        if (_eventMatches(e, lower)) byId[e.id] = e;
+      }
+    } catch (_) {/* keep whatever we have */}
+
+    final list = byId.values.toList()
+      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    return list.take(20).toList();
+  }
+
+  /// The current user's organized + going events, fetched at most once and
+  /// cached for the life of the screen (bounded to this one user).
+  Future<List<Event>> _userEvents() {
+    return _userEventsFuture ??=
+        di.sl<EventsRemoteDataSource>().getUserEvents(widget.currentUserId);
+  }
+
+  /// Case-insensitive substring match over an event's searchable text fields.
+  bool _eventMatches(Event e, String lowerQuery) {
+    if (lowerQuery.isEmpty) return false;
+    bool has(String? s) => s != null && s.toLowerCase().contains(lowerQuery);
+    return has(e.title) ||
+        has(e.city) ||
+        has(e.country) ||
+        has(e.locationName) ||
+        e.category.name.toLowerCase().contains(lowerQuery) ||
+        e.tags.any((t) => t.toLowerCase().contains(lowerQuery));
   }
 
   void _openPerson(Profile profile) {

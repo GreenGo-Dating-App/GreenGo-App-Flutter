@@ -11138,7 +11138,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String eventsBoostConfirm(int cost) {
-    return 'Feature this event for $cost coins for 7 days?';
+    return 'Boost this event for $cost coins?';
   }
 
   @override
@@ -12227,4 +12227,58 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get businessReactivate => 'Renew Platinum';
+
+  @override
+  String get eventsBoostChooseDuration => 'Choose boost duration';
+
+  @override
+  String eventsBoostHours(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hours',
+      one: '1 hour',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String eventsBoostDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days',
+      one: '1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String eventsBoostWeeks(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count weeks',
+      one: '1 week',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String eventBoostEndsIn(String time) {
+    return 'Boost ends in $time';
+  }
+
+  @override
+  String get eventBoostEnded => 'Boost ended';
+
+  @override
+  String get eventsBuyCoins => 'Buy coins';
+
+  @override
+  String get eventsBuyCoinsPrompt =>
+      'You don\'t have enough coins. Would you like to buy more?';
+
+  @override
+  String get messageTooLong => 'Messages can be up to 4096 characters.';
 }

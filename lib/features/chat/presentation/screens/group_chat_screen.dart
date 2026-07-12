@@ -6,6 +6,7 @@ import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -28,6 +29,7 @@ import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../data/chat_constants.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
 import '../bloc/group_chat_event.dart';
@@ -261,6 +263,12 @@ class _GroupChatViewState extends State<_GroupChatView> {
   void _send(BuildContext context) {
     final text = _controller.text.trim();
     if (text.isEmpty) return;
+    if (text.length > kMaxMessageLength) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(AppLocalizations.of(context)!.messageTooLong)),
+      );
+      return;
+    }
     context
         .read<GroupChatBloc>()
         .add(GroupChatMessageSent(content: text));
@@ -1138,6 +1146,16 @@ class _InputBar extends StatelessWidget {
                 controller: controller,
                 minLines: 1,
                 maxLines: 5,
+                maxLength: kMaxMessageLength,
+                maxLengthEnforcement: MaxLengthEnforcement.enforced,
+                inputFormatters: [
+                  LengthLimitingTextInputFormatter(kMaxMessageLength),
+                ],
+                buildCounter: (context,
+                        {required currentLength,
+                        required isFocused,
+                        maxLength}) =>
+                    null,
                 textInputAction: TextInputAction.send,
                 onSubmitted: (_) => onSend(),
                 decoration: InputDecoration(

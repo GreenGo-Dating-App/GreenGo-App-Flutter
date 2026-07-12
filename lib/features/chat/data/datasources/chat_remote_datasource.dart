@@ -4,6 +4,7 @@ import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
+import '../chat_constants.dart';
 import '../models/conversation_model.dart';
 import '../models/message_model.dart';
 
@@ -434,6 +435,14 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     Map<String, dynamic>? metadata,
   }) async {
     try {
+      // Enforce the maximum message length before any write (defense in depth
+      // against pasted / programmatic sends that bypass the input cap).
+      if (type == MessageType.text && content.trim().length > kMaxMessageLength) {
+        throw MessageTooLongException(
+          'Message exceeds the $kMaxMessageLength character limit.',
+        );
+      }
+
       // Check for contact information in the message
       if (type == MessageType.text) {
         final filterResult = _contentFilter.analyzeContent(content);
@@ -2071,4 +2080,14 @@ class ContactInfoBlockedException implements Exception {
 
   @override
   String toString() => 'ContactInfoBlockedException: $message';
+}
+
+/// Exception thrown when a message exceeds [kMaxMessageLength] characters.
+class MessageTooLongException implements Exception {
+
+  MessageTooLongException(this.message);
+  final String message;
+
+  @override
+  String toString() => 'MessageTooLongException: $message';
 }

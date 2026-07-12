@@ -19833,7 +19833,7 @@ abstract class AppLocalizations {
   /// No description provided for @eventsBoostConfirm.
   ///
   /// In en, this message translates to:
-  /// **'Feature this event for {cost} coins for 7 days?'**
+  /// **'Boost this event for {cost} coins?'**
   String eventsBoostConfirm(int cost);
 
   /// No description provided for @groupMemberLimit.
@@ -21779,6 +21779,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Renew Platinum'**
   String get businessReactivate;
+
+  /// No description provided for @eventsBoostChooseDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose boost duration'**
+  String get eventsBoostChooseDuration;
+
+  /// No description provided for @eventsBoostHours.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 hour} other{{count} hours}}'**
+  String eventsBoostHours(int count);
+
+  /// No description provided for @eventsBoostDays.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day} other{{count} days}}'**
+  String eventsBoostDays(int count);
+
+  /// No description provided for @eventsBoostWeeks.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 week} other{{count} weeks}}'**
+  String eventsBoostWeeks(int count);
+
+  /// No description provided for @eventBoostEndsIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost ends in {time}'**
+  String eventBoostEndsIn(String time);
+
+  /// No description provided for @eventBoostEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost ended'**
+  String get eventBoostEnded;
+
+  /// No description provided for @eventsBuyCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy coins'**
+  String get eventsBuyCoins;
+
+  /// No description provided for @eventsBuyCoinsPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'You don\'t have enough coins. Would you like to buy more?'**
+  String get eventsBuyCoinsPrompt;
+
+  /// No description provided for @messageTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages can be up to 4096 characters.'**
+  String get messageTooLong;
 }
 
 class _AppLocalizationsDelegate

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../chat/data/chat_constants.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 
@@ -387,6 +389,9 @@ class _EventChatScreenState extends State<EventChatScreen> {
               ),
               textCapitalization: TextCapitalization.sentences,
               maxLines: null,
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(kMaxMessageLength),
+              ],
               textInputAction: TextInputAction.send,
               onSubmitted: (_) => _sendMessage(),
             ),
@@ -416,6 +421,18 @@ class _EventChatScreenState extends State<EventChatScreen> {
   void _sendMessage() {
     final text = _messageController.text.trim();
     if (text.isEmpty) return;
+
+    // Enforce the maximum message length (defense in depth alongside the
+    // input cap — protects pasted content).
+    if (text.length > kMaxMessageLength) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.messageTooLong),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
 
     // Block hate/discriminatory/explicit sexual language.
     if (ContentFilterService().containsProhibitedContent(text)) {

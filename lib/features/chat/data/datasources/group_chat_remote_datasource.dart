@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/group_info.dart';
 import '../../domain/entities/message.dart';
+import '../chat_constants.dart';
 import '../models/conversation_model.dart';
 import '../models/message_model.dart';
 
@@ -317,6 +318,14 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
     Map<String, dynamic>? metadata,
     String? detectedLanguage,
   }) async {
+    // Enforce the maximum message length before any write (defense in depth
+    // against pasted / programmatic sends that bypass the input cap).
+    if (type == MessageType.text && content.trim().length > kMaxMessageLength) {
+      throw Exception(
+        'Message exceeds the $kMaxMessageLength character limit.',
+      );
+    }
+
     final msgRef = _groups.doc(groupId).collection(messagesSub).doc();
 
     // SINGLE write. The fan-out Cloud Function updates the group doc's

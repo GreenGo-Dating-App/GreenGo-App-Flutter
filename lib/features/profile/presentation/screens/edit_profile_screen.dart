@@ -319,7 +319,8 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToEditSocialLinks(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
-                      // Business / Venue Account Section — THREE states:
+                      // Business / Venue Account Section — for existing
+                      // businesses only. Two states:
                       //  1. Active business (isBusiness + active Platinum) →
                       //     the normal Business-hub tile.
                       //  2. Lapsed business (isBusiness but Platinum expired) →
@@ -327,8 +328,9 @@ class EditProfileScreen extends StatelessWidget {
                       //     full hub stays out of reach until renewal. The
                       //     isBusiness flag is preserved, only the capability is
                       //     gated (see TierEntitlements.isBusinessActive).
-                      //  3. Not a business → the highlighted "NEW" banner
-                      //     promoting the one-time (Platinum-gated) upgrade.
+                      // The "become a business" upgrade entry for non-business
+                      // users lives right above the GreenGo membership section
+                      // (see _buildBaseMembershipSection call below).
                       if (TierEntitlements.isBusinessActive(
                           activeProfile.membershipTier, activeProfile.isBusiness))
                         EditSectionCard(
@@ -349,9 +351,7 @@ class EditProfileScreen extends StatelessWidget {
                             context,
                             currentUserId: activeProfile.userId,
                           ),
-                        )
-                      else
-                        _buildBecomeBusinessBanner(context, activeProfile),
+                        ),
                     ],
                   ),
 
@@ -531,6 +531,14 @@ class EditProfileScreen extends StatelessWidget {
                     ),
 
                   const SizedBox(height: 16),
+
+                  // Become-a-business upgrade banner — shown only for users who
+                  // are NOT yet a business, placed immediately above the GreenGo
+                  // membership section so it is always visible in the profile.
+                  if (!activeProfile.isBusiness) ...[
+                    _buildBecomeBusinessBanner(context, activeProfile),
+                    const SizedBox(height: 16),
+                  ],
 
                   // Base Membership Section
                   _buildBaseMembershipSection(context, activeProfile),
