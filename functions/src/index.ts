@@ -127,15 +127,10 @@ export {
   sendEventReminders,
 } from './events/reminders';
 
-// Wallet passes — Apple Wallet (.pkpass) + Google Wallet event tickets.
-// Inert until the pass certificates / issuer secrets are set (see
-// ./wallet/README.md); the callables verify a going-attendee before signing.
-export {
-  getAppleWalletPass,
-} from './wallet/appleWallet';
-export {
-  getGoogleWalletSaveUrl,
-} from './wallet/googleWallet';
+// Wallet passes (Apple .pkpass + Google Wallet) are REMOVED for now — the
+// pass certificates / issuer secrets are not configured. Re-export from
+// ./wallet/appleWallet & ./wallet/googleWallet once the wallet secrets
+// (APPLE_PASS_CERT/KEY/..., GOOGLE_WALLET_*) are set to re-enable.
 
 // Backup and Export Functions
 export {
