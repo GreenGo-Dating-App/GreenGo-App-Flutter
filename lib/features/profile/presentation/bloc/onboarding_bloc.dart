@@ -47,7 +47,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
   ) {
     emit(OnboardingInProgress(
       userId: event.userId,
-      currentStep: OnboardingStep.basicInfo,
+      currentStep: OnboardingStep.welcome,
     ));
   }
 

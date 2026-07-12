@@ -19,6 +19,9 @@ class Community extends Equatable {
     this.country,
     this.lastMessagePreview,
     this.lastActivityAt,
+    this.sponsorId,
+    this.isSponsored = false,
+    this.pinnedPromo,
   });
   final String id;
   final String name;
@@ -36,6 +39,16 @@ class Community extends Equatable {
   final String? country;
   final String? lastMessagePreview;
   final DateTime? lastActivityAt;
+
+  /// UID of the business account that sponsors/owns this community.
+  /// Null when the community is a regular community-created group.
+  final String? sponsorId;
+
+  /// Whether this community is business-sponsored (shows the gold badge).
+  final bool isSponsored;
+
+  /// Optional promo pinned to the top of the community by its sponsor.
+  final PinnedPromo? pinnedPromo;
 
   /// Check if community is a language circle
   bool get isLanguageCircle => type == CommunityType.languageCircle;
@@ -94,6 +107,11 @@ class Community extends Equatable {
     String? country,
     String? lastMessagePreview,
     DateTime? lastActivityAt,
+    String? sponsorId,
+    bool? isSponsored,
+    PinnedPromo? pinnedPromo,
+    bool clearPinnedPromo = false,
+    bool clearSponsorId = false,
   }) {
     return Community(
       id: id ?? this.id,
@@ -112,6 +130,10 @@ class Community extends Equatable {
       country: country ?? this.country,
       lastMessagePreview: lastMessagePreview ?? this.lastMessagePreview,
       lastActivityAt: lastActivityAt ?? this.lastActivityAt,
+      sponsorId: clearSponsorId ? null : (sponsorId ?? this.sponsorId),
+      isSponsored: isSponsored ?? this.isSponsored,
+      pinnedPromo:
+          clearPinnedPromo ? null : (pinnedPromo ?? this.pinnedPromo),
     );
   }
 
@@ -133,7 +155,80 @@ class Community extends Equatable {
         country,
         lastMessagePreview,
         lastActivityAt,
+        sponsorId,
+        isSponsored,
+        pinnedPromo,
       ];
+}
+
+/// Pinned Promo
+///
+/// A promotional card a sponsoring business pins to the top of a community.
+/// Tapping it opens either a linked in-app event ([linkEventId]) or an
+/// external link ([linkUrl]).
+class PinnedPromo extends Equatable {
+  const PinnedPromo({
+    required this.title,
+    required this.body,
+    this.imageUrl,
+    this.linkEventId,
+    this.linkUrl,
+  });
+
+  /// Create from a Firestore/JSON map (backward-compatible; all defaults empty).
+  factory PinnedPromo.fromMap(Map<String, dynamic> map) {
+    return PinnedPromo(
+      title: map['title'] as String? ?? '',
+      body: map['body'] as String? ?? '',
+      imageUrl: map['imageUrl'] as String?,
+      linkEventId: map['linkEventId'] as String?,
+      linkUrl: map['linkUrl'] as String?,
+    );
+  }
+
+  final String title;
+  final String body;
+  final String? imageUrl;
+
+  /// In-app event id to open when tapped (takes priority over [linkUrl]).
+  final String? linkEventId;
+
+  /// External URL to open when tapped (used when [linkEventId] is null).
+  final String? linkUrl;
+
+  /// Whether this promo has any usable tap target.
+  bool get hasTarget =>
+      (linkEventId != null && linkEventId!.isNotEmpty) ||
+      (linkUrl != null && linkUrl!.isNotEmpty);
+
+  Map<String, dynamic> toMap() {
+    return {
+      'title': title,
+      'body': body,
+      'imageUrl': imageUrl,
+      'linkEventId': linkEventId,
+      'linkUrl': linkUrl,
+    };
+  }
+
+  PinnedPromo copyWith({
+    String? title,
+    String? body,
+    String? imageUrl,
+    String? linkEventId,
+    String? linkUrl,
+  }) {
+    return PinnedPromo(
+      title: title ?? this.title,
+      body: body ?? this.body,
+      imageUrl: imageUrl ?? this.imageUrl,
+      linkEventId: linkEventId ?? this.linkEventId,
+      linkUrl: linkUrl ?? this.linkUrl,
+    );
+  }
+
+  @override
+  List<Object?> get props => [title, body, imageUrl, linkEventId, linkUrl];
 }
 
 /// Community Type

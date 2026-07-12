@@ -1,12 +1,16 @@
 {
-    "name": "greengo_chat",
-    "short_name": "greengo_chat",
-    "start_url": ".",
+    "name": "GreenGo — Cultural Exchange & Languages",
+    "short_name": "GreenGo",
+    "description": "GreenGo connects you across cultures — practice languages with real people, meet locals and travelers, and discover events happening around you. Language-barrier-free networking and cultural discovery.",
+    "id": "/",
+    "scope": "/",
+    "start_url": "/?source=pwa",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "display_override": ["standalone", "minimal-ui"],
     "orientation": "portrait-primary",
+    "background_color": "#0A0A0A",
+    "theme_color": "#0A0A0A",
+    "categories": ["travel", "education", "social"],
     "prefer_related_applications": false,
     "icons": [
         {
@@ -30,6 +34,26 @@
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Events",
+            "short_name": "Events",
+            "description": "Discover local cultural events near you",
+            "url": "/events?source=pwa_shortcut"
+        },
+        {
+            "name": "Community",
+            "short_name": "Community",
+            "description": "Meet locals and travelers",
+            "url": "/community?source=pwa_shortcut"
+        },
+        {
+            "name": "Messages",
+            "short_name": "Messages",
+            "description": "Chat with your connections",
+            "url": "/messages?source=pwa_shortcut"
         }
     ]
 }

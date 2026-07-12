@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/community.dart';
@@ -13,6 +14,8 @@ import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
 import '../bloc/communities_state.dart';
 import '../widgets/community_card.dart';
+import '../widgets/sponsorship_editor_sheet.dart';
+import '../widgets/sponsorship_gate.dart';
 
 /// Create Community Screen
 ///
@@ -43,6 +46,10 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   final List<String> _selectedLanguages = [];
   final List<String> _tags = [];
   bool _showPreview = false;
+
+  // Sponsorship (Platinum-business feature).
+  bool _isSponsored = false;
+  PinnedPromo? _pinnedPromo;
 
   final List<Map<String, String>> _availableLanguages = [
     {'code': 'en', 'name': 'English'},
@@ -436,6 +443,10 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                 ],
               ),
             ),
+            const SizedBox(height: AppDimensions.paddingL),
+
+            // Sponsorship (Platinum-business feature)
+            _buildSponsorshipSection(),
             const SizedBox(height: AppDimensions.paddingXL),
 
             // Preview button
@@ -652,6 +663,12 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       country: _countryController.text.trim().isNotEmpty
           ? _countryController.text.trim()
           : null,
+      // Sponsorship: only persisted when the eligible business enabled it.
+      sponsorId: _isSponsored
+          ? (FirebaseAuth.instance.currentUser?.uid ?? '')
+          : null,
+      isSponsored: _isSponsored,
+      pinnedPromo: _isSponsored ? _pinnedPromo : null,
     );
   }
 
@@ -677,6 +694,108 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
         );
 
     HapticFeedback.heavyImpact();
+  }
+
+  Widget _buildSponsorshipSection() {
+    final l10n = AppLocalizations.of(context)!;
+    return GestureDetector(
+      onTap: _openSponsorshipEditor,
+      child: Container(
+        padding: const EdgeInsets.all(AppDimensions.paddingM),
+        decoration: BoxDecoration(
+          color: AppColors.richGold.withValues(alpha: 0.06),
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          border: Border.all(
+            color: AppColors.richGold.withValues(alpha: 0.4),
+            width: 0.5,
+          ),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.workspace_premium,
+                color: AppColors.richGold, size: 24),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.communitiesSponsorThisCommunity,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    _isSponsored && _pinnedPromo != null
+                        ? _pinnedPromo!.title
+                        : l10n.communitiesSponsorSubtitle,
+                    style: const TextStyle(
+                      color: AppColors.textTertiary,
+                      fontSize: 12,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
+              ),
+            ),
+            Icon(
+              _isSponsored ? Icons.edit_outlined : Icons.chevron_right,
+              color: AppColors.richGold,
+              size: 20,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _openSponsorshipEditor() async {
+    HapticFeedback.selectionClick();
+    final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+
+    if (!SponsorshipGate.canSponsor(
+      isBusiness: _isBusiness,
+      tier: _membershipTier,
+    )) {
+      await SponsorshipGate.showGate(
+        context,
+        currentTier: _membershipTier,
+        userId: userId,
+      );
+      return;
+    }
+
+    final result = await SponsorshipEditorSheet.show(
+      context,
+      initialSponsored: _isSponsored,
+      initialPromo: _pinnedPromo,
+    );
+    if (result != null) {
+      setState(() {
+        _isSponsored = result.isSponsored;
+        _pinnedPromo = result.pinnedPromo;
+      });
+    }
+  }
+
+  bool get _isBusiness {
+    final profileState = context.read<ProfileBloc>().state;
+    if (profileState is ProfileLoaded) {
+      return profileState.profile.isBusiness;
+    }
+    return false;
+  }
+
+  MembershipTier get _membershipTier {
+    final profileState = context.read<ProfileBloc>().state;
+    if (profileState is ProfileLoaded) {
+      return profileState.profile.membershipTier;
+    }
+    return MembershipTier.free;
   }
 
   Widget _buildSectionLabel(String label) {

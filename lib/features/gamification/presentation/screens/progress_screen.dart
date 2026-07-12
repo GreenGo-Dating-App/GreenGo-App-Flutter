@@ -15,6 +15,7 @@ import 'achievements_screen.dart';
 import 'daily_challenges_screen.dart';
 import 'journey_screen.dart';
 import 'leaderboard_screen.dart';
+import 'missions_screen.dart';
 
 /// Progress Screen - Main hub for gamification features
 /// Displays user's level, achievements, challenges, and leaderboard
@@ -277,6 +278,11 @@ class _ProgressScreenState extends State<ProgressScreen>
 
               // Journey Button with Enhanced Design
               _buildEnhancedJourneyButton(context, l10n),
+
+              const SizedBox(height: 16),
+
+              // Streaks & Missions entry
+              _buildStreaksMissionsButton(context, l10n),
 
               const SizedBox(height: 40),
             ],
@@ -1046,6 +1052,107 @@ class _ProgressScreenState extends State<ProgressScreen>
                       const SizedBox(height: 6),
                       Text(
                         l10n.progressJourneyDescription,
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: Colors.white.withOpacity(0.7),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withOpacity(0.1),
+                  ),
+                  child: const Icon(
+                    Icons.arrow_forward_rounded,
+                    color: Colors.white,
+                    size: 20,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Entry point to the Streaks & Missions hub.
+  Widget _buildStreaksMissionsButton(
+      BuildContext context, AppLocalizations l10n) {
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => MissionsScreen(userId: widget.userId),
+          ),
+        );
+      },
+      borderRadius: BorderRadius.circular(20),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(20),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+          child: Container(
+            padding: const EdgeInsets.all(24),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  const Color(0xFFFF8A00).withOpacity(0.25),
+                  const Color(0xFFFF3D00).withOpacity(0.15),
+                ],
+              ),
+              border: Border.all(
+                color: const Color(0xFFFF6D00).withOpacity(0.3),
+              ),
+            ),
+            child: Row(
+              children: [
+                Container(
+                  width: 60,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFFFF8A00), Color(0xFFFF3D00)],
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFFFF6D00).withOpacity(0.4),
+                        blurRadius: 15,
+                      ),
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.local_fire_department_rounded,
+                    color: Colors.white,
+                    size: 28,
+                  ),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l10n.missionsTitle,
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        l10n.missionsSubtitle,
                         style: TextStyle(
                           fontSize: 13,
                           color: Colors.white.withOpacity(0.7),

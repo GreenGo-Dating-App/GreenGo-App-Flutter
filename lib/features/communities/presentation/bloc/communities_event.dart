@@ -61,6 +61,13 @@ class CreateCommunity extends CommunitiesEvent {
   final String userName;
 }
 
+/// Update an existing community (e.g. sponsor/promo edits by the owner-business)
+class UpdateCommunity extends CommunitiesEvent {
+
+  const UpdateCommunity({required this.community});
+  final Community community;
+}
+
 /// Join a community
 class JoinCommunity extends CommunitiesEvent {
 

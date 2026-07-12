@@ -9,9 +9,13 @@ class NotificationsLoadRequested extends NotificationsEvent {
   const NotificationsLoadRequested({
     required this.userId,
     this.unreadOnly = false,
+    this.limit,
   });
   final String userId;
   final bool unreadOnly;
+
+  /// Max notifications to stream (newest first). Null = unbounded.
+  final int? limit;
 }
 
 /// Mark notification as read

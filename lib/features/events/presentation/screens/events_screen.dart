@@ -15,6 +15,7 @@ import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
@@ -25,12 +26,21 @@ import 'event_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
+import '../../data/services/event_series_service.dart';
 import '../../domain/entities/event.dart';
+import '../../../safety/presentation/widgets/event_safety_checkin.dart';
 import '../bloc/events_bloc.dart';
 import '../bloc/events_event.dart';
 import '../bloc/events_state.dart';
 import '../widgets/share_event_sheet.dart';
+import 'event_attendance_screen.dart';
 import 'event_chat_screen.dart';
+import 'event_scanner_screen.dart';
+import 'event_ticket_screen.dart';
+
+/// Coin cost for an organizer to feature ("Feature this event") their event in
+/// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
+const int kFeatureEventCost = 100; // adjustable
 
 /// Events Screen - Discover local events and activities
 ///
@@ -577,8 +587,14 @@ class _EventsScreenState extends State<EventsScreen>
 
   /// Community: all GreenGo user-created events. Order applied centrally
   /// (distance by default; user can switch to date / popular).
+  ///
+  /// TODO(schedule-filter): the globe/explore feeds and any other list that
+  /// surfaces these events must apply the same `e.isLive` gate so drafts and
+  /// not-yet-due scheduled events never leak into discovery (see Event.isLive).
   List<Event> _getCommunityEvents(EventsLoaded state) {
-    final list = [...state.upcomingEvents];
+    // Auto-publish gate: only live events (published, or scheduled & due) are
+    // discoverable. The datasource already filters, but guard client-side too.
+    final list = state.upcomingEvents.where((e) => e.isLive).toList();
     if (_userLat != null && _userLng != null) {
       list.sort((a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
     }
@@ -594,7 +610,9 @@ class _EventsScreenState extends State<EventsScreen>
         return const Center(
             child: CircularProgressIndicator(color: AppColors.richGold));
       }
-      return _buildEventsList(_applySearchAndSort(_communityResults));
+      // Auto-publish gate on search results too (drafts/scheduled never listed).
+      return _buildEventsList(_applySearchAndSort(
+          _communityResults.where((e) => e.isLive).toList()));
     }
     if (_communityNearbyLoading && _communityNearby.isEmpty) {
       return const Center(
@@ -603,7 +621,7 @@ class _EventsScreenState extends State<EventsScreen>
     // Prefer the geohash nearest-100; fall back to the bloc's loaded set when
     // location is unknown or the nearby query returned nothing.
     final list = _communityNearby.isNotEmpty
-        ? _communityNearby
+        ? _communityNearby.where((e) => e.isLive).toList()
         : _getCommunityEvents(state);
     return _buildEventsList(_applySearchAndSort(list));
   }
@@ -759,6 +777,7 @@ class _EventsScreenState extends State<EventsScreen>
                         fontWeight: FontWeight.w600,
                       ),
                     ),
+                    buildEventStatusBadges(context, event, compact: true),
                     const SizedBox(height: 2),
                     Row(
                       children: [
@@ -1039,6 +1058,63 @@ class _EventsScreenState extends State<EventsScreen>
   }
 }
 
+/// Small status/recurrence badges shown on cards & tiles: Draft / Scheduled /
+/// Recurring. Only the organizer ever sees draft & scheduled events, so these
+/// double as "not yet public" markers.
+Widget buildEventStatusBadges(BuildContext context, Event event,
+    {bool compact = false}) {
+  final l10n = AppLocalizations.of(context)!;
+  final badges = <Widget>[];
+
+  Widget pill(String text, Color color, IconData icon) => Container(
+        padding: EdgeInsets.symmetric(
+            horizontal: compact ? 5 : 8, vertical: compact ? 2 : 4),
+        decoration: BoxDecoration(
+          color: color.withOpacity(0.18),
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: color.withOpacity(0.5)),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: compact ? 9 : 12, color: color),
+            SizedBox(width: compact ? 2 : 4),
+            Text(text,
+                style: TextStyle(
+                    color: color,
+                    fontSize: compact ? 8 : 10,
+                    fontWeight: FontWeight.bold)),
+          ],
+        ),
+      );
+
+  if (event.status == EventStatus.draft) {
+    badges.add(pill(l10n.eventsStatusDraft, AppColors.textTertiary,
+        Icons.edit_note));
+  } else if (event.isPendingSchedule) {
+    // Only while still pending; once publishAt passes it auto-publishes (isLive).
+    final at = event.publishAt;
+    final label = at != null
+        ? l10n.eventsScheduledForDate(DateFormat('MMM d, h:mm a').format(at))
+        : l10n.eventsStatusScheduled;
+    badges.add(pill(label, AppColors.infoBlue, Icons.schedule));
+  } else if (event.status == EventStatus.cancelled) {
+    badges.add(pill(l10n.eventsStatusCancelled, AppColors.errorRed,
+        Icons.cancel_outlined));
+  }
+
+  if (event.isRecurring) {
+    badges.add(
+        pill(l10n.eventsRecurringLabel, AppColors.richGold, Icons.repeat));
+  }
+
+  if (badges.isEmpty) return const SizedBox.shrink();
+  return Padding(
+    padding: EdgeInsets.only(top: compact ? 3 : 6),
+    child: Wrap(spacing: 4, runSpacing: 4, children: badges),
+  );
+}
+
 /// Event Card Widget
 class EventCard extends StatelessWidget {
 
@@ -1084,8 +1160,16 @@ class EventCard extends StatelessWidget {
                     height: 150,
                     width: double.infinity,
                     color: AppColors.backgroundDark,
-                    child: event.imageUrl != null
-                        ? Image.network(event.imageUrl!, fit: BoxFit.cover)
+                    child: event.imageUrl != null && event.imageUrl!.isNotEmpty
+                        ? Image.network(
+                            event.imageUrl!,
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, __, ___) => const Icon(
+                              Icons.event,
+                              size: 60,
+                              color: AppColors.textTertiary,
+                            ),
+                          )
                         : const Icon(
                             Icons.event,
                             size: 60,
@@ -1225,6 +1309,7 @@ class EventCard extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  buildEventStatusBadges(context, event),
                   const SizedBox(height: 8),
                   Row(
                     children: [
@@ -1400,6 +1485,29 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
             ),
             actions: [
+              // Check-in scanner — organizer only
+              if (event.organizerId == currentUserId)
+                IconButton(
+                  icon: const Icon(Icons.qr_code_scanner,
+                      color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventScanCheckIn,
+                  onPressed: () => Navigator.of(context).push(
+                    EventScannerScreen.route(
+                      event: event,
+                      ownerUserId: currentUserId,
+                    ),
+                  ),
+                ),
+              // Attendance list — organizer only
+              if (event.organizerId == currentUserId)
+                IconButton(
+                  icon: const Icon(Icons.fact_check_outlined,
+                      color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventAttendance,
+                  onPressed: () => Navigator.of(context).push(
+                    EventAttendanceScreen.route(event: event),
+                  ),
+                ),
               // Edit — organizer only
               if (event.organizerId == currentUserId)
                 IconButton(
@@ -1582,6 +1690,8 @@ class EventDetailsScreen extends StatelessWidget {
                           : null,
                     ),
                   ],
+                  // Feature this event (paid placement) — organizer only.
+                  _buildFeaturedSection(context, event),
                   const SizedBox(height: 24),
                   Text(
                     AppLocalizations.of(context)!.eventsAboutThisEvent,
@@ -1687,6 +1797,57 @@ class EventDetailsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // Waitlist banner — shown when the viewer is queued.
+                  _buildWaitlistBanner(context, event),
+                  // "My ticket" — shown to anyone who is GOING to this event.
+                  if (event.attendees.any((a) =>
+                      a.userId == currentUserId &&
+                      a.status == RSVPStatus.going)) ...[
+                    const SizedBox(height: 16),
+                    GestureDetector(
+                      onTap: () => Navigator.of(context).push(
+                        EventTicketScreen.route(
+                          event: event,
+                          userId: currentUserId,
+                        ),
+                      ),
+                      child: Container(
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: AppColors.backgroundCard,
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: AppColors.richGold.withOpacity(0.3),
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            const Icon(Icons.qr_code_2,
+                                color: AppColors.richGold),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Text(
+                                AppLocalizations.of(context)!.eventMyTicket,
+                                style: const TextStyle(
+                                  color: AppColors.textPrimary,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                            const Icon(Icons.chevron_right,
+                                color: AppColors.textTertiary),
+                          ],
+                        ),
+                      ),
+                    ),
+                    // Safety check-in — "I've arrived safely" — for GOING users.
+                    const SizedBox(height: 16),
+                    EventSafetyCheckIn(
+                      eventId: event.id,
+                      userId: currentUserId,
+                    ),
+                  ],
                   const SizedBox(height: 24),
                   Text(
                     AppLocalizations.of(context)!.eventsAttendees,
@@ -1818,24 +1979,42 @@ class EventDetailsScreen extends StatelessWidget {
                   ),
                 ),
               const SizedBox(width: 16),
-              Expanded(
-                child: ElevatedButton(
-                  onPressed:
-                      event.isFull ? null : () => _handleJoin(context, event),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: AppColors.deepBlack,
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                  ),
-                  child: Text(
-                    event.isFull ? AppLocalizations.of(context)!.eventsEventFull : AppLocalizations.of(context)!.eventsJoinEvent,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+              Builder(builder: (context) {
+                final me = event.attendees
+                    .where((a) => a.userId == currentUserId)
+                    .firstOrNull;
+                final l10n = AppLocalizations.of(context)!;
+                final isGoing = me?.status == RSVPStatus.going;
+                final isWaitlisted = me?.status == RSVPStatus.waitlist;
+                // Already in (going/waitlist) => disabled label; full => allow
+                // joining the waitlist; otherwise a normal join.
+                final label = isGoing
+                    ? l10n.eventsGoingLabel
+                    : isWaitlisted
+                        ? l10n.eventsOnWaitlist
+                        : event.isFull
+                            ? l10n.eventsJoinWaitlist
+                            : l10n.eventsJoinEvent;
+                final enabled = !isGoing && !isWaitlisted;
+                return Expanded(
+                  child: ElevatedButton(
+                    onPressed:
+                        enabled ? () => _handleJoin(context, event) : null,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      foregroundColor: AppColors.deepBlack,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                    ),
+                    child: Text(
+                      label,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
-                ),
-              ),
+                );
+              }),
             ],
           ),
         ),
@@ -1843,14 +2022,30 @@ class EventDetailsScreen extends StatelessWidget {
     );
   }
 
-  /// Join a (possibly paid) event — charges coins for paid events first.
+  /// Join an event: pick a tier (if any), reserve a spot via a capacity-safe
+  /// Firestore transaction (waitlisting when full), and — only when actually
+  /// admitted as "going" — spend coins for paid tiers. Reuses the existing
+  /// coin/tier gate pattern; stays fully in-economy (no real money).
   Future<void> _handleJoin(BuildContext context, Event event) async {
     final l10n = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
     final bloc = context.read<EventsBloc>();
+    final ds = sl<EventsRemoteDataSource>();
 
-    if (!event.isFree && (event.price ?? 0) > 0) {
-      final cost = event.price!.round();
+    // Choose a tier when the organizer defined any.
+    TicketTier? tier;
+    if (event.hasTicketTiers) {
+      tier = await _pickTier(context, event);
+      if (tier == null || !context.mounted) return; // cancelled
+    }
+
+    // Cost = selected tier price, else the legacy event price (implicit tier).
+    final cost = tier != null
+        ? tier.priceCoins
+        : (event.isFree ? 0 : (event.price ?? 0).round());
+
+    // Pre-check affordability for paid joins so we rarely have to roll back.
+    if (cost > 0) {
       final afford =
           await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
       if (!context.mounted) return;
@@ -1862,26 +2057,207 @@ class EventDetailsScreen extends StatelessWidget {
       final confirmed = await _confirmCoinSpend(
           context, l10n.eventsJoinEvent, l10n.eventsJoinForCoins(cost));
       if (confirmed != true || !context.mounted) return;
-      final charge = await sl<PurchaseFeature>()(
+    }
+
+    // Reserve the spot (transactionally). Returns going or waitlist.
+    RsvpJoinResult result;
+    try {
+      result = await ds.joinEventWithTier(
+        eventId: event.id,
         userId: currentUserId,
-        featureName: 'event_rsvp',
-        cost: cost,
-        relatedId: event.id,
+        tierId: tier?.id,
       );
-      if (!context.mounted) return;
-      if (!charge.fold((_) => false, (_) => true)) {
+    } catch (_) {
+      if (context.mounted) {
+        messenger.showSnackBar(SnackBar(content: Text(l10n.eventsRsvpError)));
+      }
+      return;
+    }
+    if (!context.mounted) return;
+
+    if (result.isWaitlisted) {
+      // Full — queued. No coins charged until (and unless) promoted to going.
+      messenger.showSnackBar(SnackBar(
+          content: Text(l10n.eventsWaitlistPosition(result.waitlistPosition))));
+    } else {
+      // Admitted as going — now charge coins for a paid tier.
+      if (cost > 0) {
+        final charge = await sl<PurchaseFeature>()(
+          userId: currentUserId,
+          featureName: 'event_rsvp',
+          cost: cost,
+          relatedId: event.id,
+        );
+        if (!charge.fold((_) => false, (_) => true)) {
+          // Charge failed after admission — roll the reservation back.
+          await ds.cancelRsvpWithPromotion(event.id, currentUserId);
+          if (context.mounted) {
+            messenger.showSnackBar(
+                SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+          }
+          return;
+        }
+      }
+      if (context.mounted) {
         messenger.showSnackBar(
-            SnackBar(content: Text(l10n.eventsInsufficientCoins)));
-        return;
+            SnackBar(content: Text(l10n.eventsRsvpUpdated)));
       }
     }
 
-    bloc.add(RsvpEvent(
-      eventId: event.id,
-      userId: currentUserId,
-      status: RSVPStatus.going.name,
-    ));
+    // Refresh the lists (we wrote directly, bypassing the RSVP bloc event).
+    bloc
+      ..add(const LoadEvents(upcoming: true))
+      ..add(LoadUserEvents(userId: currentUserId));
     if (context.mounted) Navigator.pop(context);
+  }
+
+  /// Bottom sheet to choose a ticket tier for a tiered event.
+  Future<TicketTier?> _pickTier(BuildContext context, Event event) {
+    final l10n = AppLocalizations.of(context)!;
+    return showModalBottomSheet<TicketTier>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(l10n.eventsSelectTier,
+                  style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold)),
+            ),
+            ...event.ticketTiers.map((t) => ListTile(
+                  leading: const Icon(Icons.local_activity,
+                      color: AppColors.richGold),
+                  title: Text(t.name,
+                      style: const TextStyle(color: AppColors.textPrimary)),
+                  subtitle: Text(
+                    '${t.isFree ? l10n.eventsFreeTier : l10n.eventsTierPriceValue(t.priceCoins)} · '
+                    '${t.isUnlimited ? l10n.eventsUnlimited : l10n.eventsTierCapacityValue(t.capacity)}',
+                    style: const TextStyle(color: AppColors.textSecondary),
+                  ),
+                  onTap: () => Navigator.pop(ctx, t),
+                )),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Organizer-only "Feature this event" placement section shown on the detail
+  /// screen. When active, shows "Featured until …"; otherwise shows a paid
+  /// call-to-action that spends coins to feature the event for 7 days.
+  Widget _buildFeaturedSection(BuildContext context, Event event) {
+    if (event.organizerId != currentUserId) {
+      return const SizedBox.shrink();
+    }
+    final l10n = AppLocalizations.of(context)!;
+
+    if (event.isCurrentlyFeatured) {
+      final until = event.featuredUntil;
+      final untilText = until != null
+          ? DateFormat('MMMM d, yyyy').format(until)
+          : '';
+      return Padding(
+        padding: const EdgeInsets.only(top: 16),
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: AppColors.richGold.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: AppColors.richGold.withOpacity(0.4)),
+          ),
+          child: Row(
+            children: [
+              const Icon(Icons.star, color: AppColors.richGold, size: 20),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Text(
+                  l10n.featureEventActive(untilText),
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: SizedBox(
+        width: double.infinity,
+        child: OutlinedButton.icon(
+          onPressed: () => _handleFeatureEvent(context, event),
+          icon: const Icon(Icons.star_border, color: AppColors.richGold),
+          label: Text(
+            '${l10n.featureThisEvent} · ${l10n.featureEventCostLabel(kFeatureEventCost)}',
+            style: const TextStyle(color: AppColors.richGold),
+          ),
+          style: OutlinedButton.styleFrom(
+            padding: const EdgeInsets.symmetric(vertical: 14),
+            side: BorderSide(color: AppColors.richGold.withOpacity(0.6)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Feature an event (paid placement) for a fixed coin cost (organizer only).
+  /// Spends coins via the existing coin path (PurchaseFeature) and, on success,
+  /// flips isFeatured=true + featuredUntil = now + 7 days so it surfaces in
+  /// Explore's featured carousel (which reads isCurrentlyFeatured).
+  Future<void> _handleFeatureEvent(BuildContext context, Event event) async {
+    const cost = kFeatureEventCost;
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final bloc = context.read<EventsBloc>();
+
+    final afford =
+        await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
+    if (!context.mounted) return;
+    if (!afford.fold((_) => false, (v) => v)) {
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      return;
+    }
+    final confirmed = await _confirmCoinSpend(
+        context, l10n.featureThisEvent, l10n.featureEventConfirm(cost));
+    if (confirmed != true || !context.mounted) return;
+    final charge = await sl<PurchaseFeature>()(
+      userId: currentUserId,
+      featureName: 'event_featured',
+      cost: cost,
+      relatedId: event.id,
+    );
+    if (!context.mounted) return;
+    if (!charge.fold((_) => false, (_) => true)) {
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      return;
+    }
+    bloc.add(UpdateEvent(
+      event: event.copyWith(
+        isFeatured: true,
+        featuredUntil: DateTime.now().add(const Duration(days: 7)),
+      ),
+    ));
+    messenger.showSnackBar(SnackBar(content: Text(l10n.eventsBoosted)));
   }
 
   /// Boost (feature) an event for a fixed coin cost (organizer only).
@@ -1940,6 +2316,54 @@ class EventDetailsScreen extends StatelessWidget {
               onPressed: () => Navigator.pop(ctx, true),
               child: Text(l10n.eventsConfirmAction)),
         ],
+      ),
+    );
+  }
+
+  /// "You're #N on the waitlist" banner for a queued attendee. Position is read
+  /// on demand (bounded query); waitlisted attendees never get the QR ticket.
+  Widget _buildWaitlistBanner(BuildContext context, Event event) {
+    final me = event.attendees
+        .where((a) => a.userId == currentUserId)
+        .firstOrNull;
+    if (me == null || me.status != RSVPStatus.waitlist) {
+      return const SizedBox.shrink();
+    }
+    final l10n = AppLocalizations.of(context)!;
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: FutureBuilder<int>(
+        future:
+            sl<EventsRemoteDataSource>().getWaitlistPosition(event.id, currentUserId),
+        builder: (context, snap) {
+          final pos = snap.data ?? 0;
+          return Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: AppColors.infoBlue.withOpacity(0.12),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: AppColors.infoBlue.withOpacity(0.4)),
+            ),
+            child: Row(
+              children: [
+                const Icon(Icons.hourglass_top, color: AppColors.infoBlue),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    pos > 0
+                        ? l10n.eventsWaitlistPosition(pos)
+                        : l10n.eventsOnWaitlist,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
@@ -2015,6 +2439,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   static const List<String> _currencies = ['\$', '€', '£', 'R\$', '¥'];
   EventVisibility _visibility = EventVisibility.public;
   bool _isUnlimited = false;
+  // Guests each attendee may bring (0 = guests not allowed). Feeds QR check-in.
+  int _guestsAllowedPerAttendee = 0;
+  static const int _maxGuestsAllowed = 10;
   double? _lat;
   double? _lng;
   String? _pickedCity;
@@ -2029,6 +2456,19 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   final _linkUrlController = TextEditingController();
   final _linkLabelController = TextEditingController();
   final List<ExternalLink> _externalLinks = [];
+
+  // ---- Recurring series (create only) ----
+  RecurrenceFrequency _recurFreq = RecurrenceFrequency.none;
+  int _recurInterval = 1;
+  int _recurCount = 4; // total occurrences incl. the first (<= kMaxSeriesOccurrences)
+
+  // ---- Ticket tiers (optional; empty = single implicit tier) ----
+  final List<TicketTier> _tiers = [];
+
+  // ---- Draft / scheduled publishing ----
+  // Chosen when saving (Publish / Save as draft / Schedule).
+  DateTime? _publishAt;
+  bool _saving = false;
 
   bool get _isEditing => widget.existing != null;
 
@@ -2051,6 +2491,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _currency = e.currency ?? '\$';
     _visibility = e.visibility;
     _isUnlimited = e.isUnlimited;
+    _guestsAllowedPerAttendee = e.guestsAllowedPerAttendee;
     if (!e.isUnlimited) _maxAttendeesController.text = e.maxAttendees.toString();
     _lat = e.latitude;
     _lng = e.longitude;
@@ -2061,6 +2502,14 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     // Show already-uploaded images in the edit form.
     _existingMainUrl = e.imageUrl;
     _existingPhotoUrls.addAll(e.photoUrls);
+    // Prefill recurrence + tiers + schedule so editing preserves them.
+    if (e.recurrence != null) {
+      _recurFreq = e.recurrence!.frequency;
+      _recurInterval = e.recurrence!.safeInterval;
+      _recurCount = e.recurrence!.safeCount;
+    }
+    _tiers.addAll(e.ticketTiers);
+    _publishAt = e.publishAt;
   }
 
   @override
@@ -2382,6 +2831,41 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 keyboardType: TextInputType.number,
               ),
             const SizedBox(height: 16),
+            // Guests allowed per attendee (0..N) — enables the QR ticket guest
+            // picker + counts toward the organizer's headcount.
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    AppLocalizations.of(context)!.eventGuestsAllowedLabel,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                  ),
+                ),
+                IconButton(
+                  onPressed: _guestsAllowedPerAttendee <= 0
+                      ? null
+                      : () => setState(() => _guestsAllowedPerAttendee--),
+                  icon: const Icon(Icons.remove_circle_outline),
+                  color: AppColors.richGold,
+                ),
+                Text(
+                  '$_guestsAllowedPerAttendee',
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                IconButton(
+                  onPressed: _guestsAllowedPerAttendee >= _maxGuestsAllowed
+                      ? null
+                      : () => setState(() => _guestsAllowedPerAttendee++),
+                  icon: const Icon(Icons.add_circle_outline),
+                  color: AppColors.richGold,
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
             // Visibility: public (discoverable) vs private (invitees/link only)
             SwitchListTile(
               contentPadding: EdgeInsets.zero,
@@ -2489,33 +2973,375 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 onPressed: _showAddLinkDialog,
               ),
             ),
+            const SizedBox(height: 24),
+            _buildRecurrenceSection(),
+            const SizedBox(height: 16),
+            _buildTicketTiersSection(),
             const SizedBox(height: 32),
-            ElevatedButton(
-              onPressed: _uploading ? null : _createEvent,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: AppColors.deepBlack,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-              ),
-              child: _uploading
-                  ? const SizedBox(
-                      width: 20,
-                      height: 20,
-                      child: CircularProgressIndicator(
-                          strokeWidth: 2, color: AppColors.deepBlack),
-                    )
-                  : Text(
-                      _isEditing
-                          ? AppLocalizations.of(context)!.eventsEditEvent
-                          : AppLocalizations.of(context)!.eventsCreateEvent,
-                      style: const TextStyle(
-                          fontSize: 16, fontWeight: FontWeight.bold),
-                    ),
-            ),
+            _buildSaveActions(),
           ],
         ),
       ),
     );
+  }
+
+  /// Recurrence editor (create only). Editing an existing occurrence instead
+  /// offers to cancel the whole series.
+  Widget _buildRecurrenceSection() {
+    final l10n = AppLocalizations.of(context)!;
+    if (_isEditing) {
+      // Only offer series controls when this event belongs to a series.
+      if (widget.existing?.seriesId == null) return const SizedBox.shrink();
+      return Align(
+        alignment: Alignment.centerLeft,
+        child: OutlinedButton.icon(
+          onPressed: _confirmCancelSeries,
+          icon: const Icon(Icons.repeat, color: AppColors.errorRed),
+          label: Text(l10n.eventsCancelSeries,
+              style: const TextStyle(color: AppColors.errorRed)),
+          style: OutlinedButton.styleFrom(
+            side: BorderSide(color: AppColors.errorRed.withOpacity(0.6)),
+          ),
+        ),
+      );
+    }
+
+    String freqLabel(RecurrenceFrequency f) {
+      switch (f) {
+        case RecurrenceFrequency.none:
+          return l10n.eventsRepeatNone;
+        case RecurrenceFrequency.daily:
+          return l10n.eventsRepeatDaily;
+        case RecurrenceFrequency.weekly:
+          return l10n.eventsRepeatWeekly;
+        case RecurrenceFrequency.monthly:
+          return l10n.eventsRepeatMonthly;
+      }
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(l10n.eventsRepeats,
+            style: const TextStyle(
+                color: AppColors.textSecondary, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 8),
+        DropdownButtonFormField<RecurrenceFrequency>(
+          initialValue: _recurFreq,
+          dropdownColor: AppColors.backgroundCard,
+          style: const TextStyle(color: AppColors.textPrimary),
+          decoration: _inputDecoration(l10n.eventsRepeats),
+          items: RecurrenceFrequency.values
+              .map((f) =>
+                  DropdownMenuItem(value: f, child: Text(freqLabel(f))))
+              .toList(),
+          onChanged: (v) =>
+              setState(() => _recurFreq = v ?? RecurrenceFrequency.none),
+        ),
+        if (_recurFreq != RecurrenceFrequency.none) ...[
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Expanded(
+                child: _stepperRow(
+                  label: l10n.eventsRepeatInterval,
+                  value: _recurInterval,
+                  min: 1,
+                  max: 12,
+                  onChanged: (v) => setState(() => _recurInterval = v),
+                ),
+              ),
+            ],
+          ),
+          _stepperRow(
+            label: l10n.eventsRepeatCount,
+            value: _recurCount,
+            min: 2,
+            max: kMaxSeriesOccurrences,
+            onChanged: (v) => setState(() => _recurCount = v),
+          ),
+          Text(
+            l10n.eventsRepeatCap(kMaxSeriesOccurrences),
+            style:
+                const TextStyle(color: AppColors.textTertiary, fontSize: 12),
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _stepperRow({
+    required String label,
+    required int value,
+    required int min,
+    required int max,
+    required ValueChanged<int> onChanged,
+  }) {
+    return Row(
+      children: [
+        Expanded(
+          child: Text(label,
+              style: const TextStyle(color: AppColors.textPrimary)),
+        ),
+        IconButton(
+          onPressed: value <= min ? null : () => onChanged(value - 1),
+          icon: const Icon(Icons.remove_circle_outline),
+          color: AppColors.richGold,
+        ),
+        Text('$value',
+            style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 16,
+                fontWeight: FontWeight.bold)),
+        IconButton(
+          onPressed: value >= max ? null : () => onChanged(value + 1),
+          icon: const Icon(Icons.add_circle_outline),
+          color: AppColors.richGold,
+        ),
+      ],
+    );
+  }
+
+  /// Optional ticket tiers. Empty = one implicit tier using price/maxAttendees.
+  Widget _buildTicketTiersSection() {
+    final l10n = AppLocalizations.of(context)!;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(l10n.eventsTicketTiers,
+            style: const TextStyle(
+                color: AppColors.textSecondary, fontWeight: FontWeight.bold)),
+        ..._tiers.map((t) => ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading:
+                  const Icon(Icons.local_activity, color: AppColors.richGold),
+              title: Text(t.name,
+                  style: const TextStyle(color: AppColors.textPrimary)),
+              subtitle: Text(
+                '${t.isFree ? l10n.eventsFreeTier : l10n.eventsTierPriceValue(t.priceCoins)} · '
+                '${t.isUnlimited ? l10n.eventsUnlimited : l10n.eventsTierCapacityValue(t.capacity)}',
+                style: const TextStyle(color: AppColors.textSecondary),
+              ),
+              trailing: IconButton(
+                icon:
+                    const Icon(Icons.close, color: AppColors.textSecondary),
+                onPressed: () => setState(() => _tiers.remove(t)),
+              ),
+            )),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: TextButton.icon(
+            icon: const Icon(Icons.add_circle, color: AppColors.richGold),
+            label: Text(l10n.eventsAddTier,
+                style: const TextStyle(color: AppColors.richGold)),
+            onPressed: _showAddTierDialog,
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// Save actions. Editing keeps a single Save button; creating offers
+  /// Publish (primary), Save as draft, and Schedule.
+  Widget _buildSaveActions() {
+    final l10n = AppLocalizations.of(context)!;
+    if (_isEditing) {
+      return ElevatedButton(
+        onPressed: (_uploading || _saving)
+            ? null
+            : () => _submit(status: widget.existing!.status),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.richGold,
+          foregroundColor: AppColors.deepBlack,
+          padding: const EdgeInsets.symmetric(vertical: 16),
+        ),
+        child: _busy
+            ? _spinner()
+            : Text(l10n.eventsEditEvent,
+                style: const TextStyle(
+                    fontSize: 16, fontWeight: FontWeight.bold)),
+      );
+    }
+    return Column(
+      children: [
+        ElevatedButton(
+          onPressed: (_uploading || _saving)
+              ? null
+              : () => _submit(status: EventStatus.published),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.richGold,
+            foregroundColor: AppColors.deepBlack,
+            padding: const EdgeInsets.symmetric(vertical: 16),
+            minimumSize: const Size.fromHeight(52),
+          ),
+          child: _busy
+              ? _spinner()
+              : Text(l10n.eventsCreateEvent,
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold)),
+        ),
+        const SizedBox(height: 10),
+        Row(
+          children: [
+            Expanded(
+              child: OutlinedButton.icon(
+                onPressed: (_uploading || _saving)
+                    ? null
+                    : () => _submit(status: EventStatus.draft),
+                icon: const Icon(Icons.edit_note, color: AppColors.richGold),
+                label: Text(l10n.eventsSaveAsDraft,
+                    style: const TextStyle(color: AppColors.richGold)),
+                style: OutlinedButton.styleFrom(
+                  side: BorderSide(color: AppColors.richGold.withOpacity(0.6)),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: OutlinedButton.icon(
+                onPressed:
+                    (_uploading || _saving) ? null : _pickScheduleAndSubmit,
+                icon: const Icon(Icons.schedule, color: AppColors.richGold),
+                label: Text(l10n.eventsSchedule,
+                    style: const TextStyle(color: AppColors.richGold)),
+                style: OutlinedButton.styleFrom(
+                  side: BorderSide(color: AppColors.richGold.withOpacity(0.6)),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  bool get _busy => _uploading || _saving;
+
+  Widget _spinner() => const SizedBox(
+        width: 20,
+        height: 20,
+        child: CircularProgressIndicator(
+            strokeWidth: 2, color: AppColors.deepBlack),
+      );
+
+  /// Ask for a future publish time, then save the event as `scheduled`.
+  Future<void> _pickScheduleAndSubmit() async {
+    final base = _publishAt ?? DateTime.now().add(const Duration(hours: 1));
+    final date = await showDatePicker(
+      context: context,
+      initialDate: base,
+      firstDate: DateTime.now(),
+      lastDate: DateTime.now().add(const Duration(days: 365)),
+    );
+    if (date == null || !mounted) return;
+    final time = await showTimePicker(
+      context: context,
+      initialTime: TimeOfDay.fromDateTime(base),
+    );
+    if (time == null || !mounted) return;
+    final publishAt = DateTime(
+        date.year, date.month, date.day, time.hour, time.minute);
+    setState(() => _publishAt = publishAt);
+    await _submit(status: EventStatus.scheduled, publishAt: publishAt);
+  }
+
+  /// Add/define a ticket tier via a small dialog.
+  Future<void> _showAddTierDialog() async {
+    final l10n = AppLocalizations.of(context)!;
+    final nameCtl = TextEditingController();
+    final priceCtl = TextEditingController(text: '0');
+    final capCtl = TextEditingController(text: '0');
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventsAddTier,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: nameCtl,
+              style: const TextStyle(color: AppColors.textPrimary),
+              decoration: _inputDecoration(l10n.eventsTierName),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: priceCtl,
+              keyboardType: TextInputType.number,
+              style: const TextStyle(color: AppColors.textPrimary),
+              decoration: _inputDecoration(l10n.eventsTierPriceCoins),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: capCtl,
+              keyboardType: TextInputType.number,
+              style: const TextStyle(color: AppColors.textPrimary),
+              decoration: _inputDecoration(l10n.eventsTierCapacity),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.eventsAddTier)),
+        ],
+      ),
+    );
+    if (ok != true) return;
+    final name = nameCtl.text.trim();
+    if (name.isEmpty) return;
+    setState(() {
+      _tiers.add(TicketTier(
+        // Dot-free unique id (used as a Firestore nested-field key).
+        id: 'tier_${DateTime.now().microsecondsSinceEpoch}',
+        name: name,
+        priceCoins: int.tryParse(priceCtl.text.trim())?.clamp(0, 100000) ?? 0,
+        capacity: int.tryParse(capCtl.text.trim())?.clamp(0, 1000000) ?? 0,
+      ));
+    });
+  }
+
+  Future<void> _confirmCancelSeries() async {
+    final l10n = AppLocalizations.of(context)!;
+    final seriesId = widget.existing?.seriesId;
+    if (seriesId == null) return;
+    final messenger = ScaffoldMessenger.of(context);
+    final navigator = Navigator.of(context);
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventsCancelSeries,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.eventsCancelSeriesConfirm,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.eventsCancelSeries,
+                  style: const TextStyle(color: AppColors.errorRed))),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+    try {
+      await sl<EventsRemoteDataSource>().cancelSeries(seriesId);
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsSeriesCancelled)));
+      navigator.pop();
+    } catch (_) {
+      messenger.showSnackBar(
+          SnackBar(content: Text(l10n.eventsSeriesCancelError)));
+    }
   }
 
   InputDecoration _inputDecoration(String label) {
@@ -2593,8 +3419,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (confirmed == true) widget.onEventDeleted?.call();
   }
 
-  Future<void> _createEvent() async {
-    if (_uploading) return;
+  Future<void> _submit(
+      {required EventStatus status, DateTime? publishAt}) async {
+    if (_uploading || _saving) return;
     if (!_formKey.currentState!.validate()) return;
 
     // Block hate speech / discrimination / explicit sexual language in the
@@ -2634,6 +3461,20 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               TextButton(
                 onPressed: () => Navigator.pop(ctx),
                 child: Text(l10n.tourGotIt),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(ctx);
+                  TierGate().openMembershipUpgrade(
+                    context,
+                    currentUserId: widget.currentUserId,
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.richGold,
+                  foregroundColor: AppColors.deepBlack,
+                ),
+                child: Text(l10n.upgrade),
               ),
             ],
           ),
@@ -2690,10 +3531,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             : null)
         : null;
 
-    final Event event;
     if (_isEditing) {
-      // Preserve attendees, status, createdAt, featured, etc.
-      event = widget.existing!.copyWith(
+      // Preserve attendees, createdAt, featured, series, etc. Keep the existing
+      // status/publishAt; only update editable fields incl. ticket tiers.
+      final event = widget.existing!.copyWith(
         title: _titleController.text,
         description: _descriptionController.text,
         category: _category,
@@ -2712,36 +3553,72 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         visibility: _visibility,
         externalLinks: _externalLinks,
         languagePairs: languagePairs,
+        guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
+        ticketTiers: _tiers,
         updatedAt: DateTime.now(),
       );
-    } else {
-      event = Event(
-        id: '', // Firestore will generate the ID
-        organizerId: widget.currentUserId,
-        organizerName: 'Current User', // TODO: Get from profile
-        title: _titleController.text,
-        description: _descriptionController.text,
-        category: _category,
-        imageUrl: imageUrl,
-        photoUrls: photoUrls,
-        startDate: _startDate,
-        endDate: _endDate,
-        locationName: _locationController.text,
-        latitude: _lat,
-        longitude: _lng,
-        city: _pickedCity,
-        country: _pickedCountry,
-        maxAttendees: maxAttendees,
-        price: price,
-        currency: _isFree ? null : _currency,
-        visibility: _visibility,
-        externalLinks: _externalLinks,
-        status: EventStatus.published,
-        languagePairs: languagePairs,
-        createdAt: DateTime.now(),
-      );
+      widget.onEventCreated(event);
+      return;
     }
 
-    widget.onEventCreated(event);
+    // Creating a new event. Draft = published:false-ish; scheduled = auto-publish
+    // once publishAt is reached; published = live now.
+    final recurrence = EventRecurrence(
+      frequency: _recurFreq,
+      interval: _recurInterval,
+      count: _recurCount,
+    );
+    final base = Event(
+      id: '', // Firestore will generate the ID
+      organizerId: widget.currentUserId,
+      organizerName: 'Current User', // TODO: Get from profile
+      title: _titleController.text,
+      description: _descriptionController.text,
+      category: _category,
+      imageUrl: imageUrl,
+      photoUrls: photoUrls,
+      startDate: _startDate,
+      endDate: _endDate,
+      locationName: _locationController.text,
+      latitude: _lat,
+      longitude: _lng,
+      city: _pickedCity,
+      country: _pickedCountry,
+      maxAttendees: maxAttendees,
+      price: price,
+      currency: _isFree ? null : _currency,
+      visibility: _visibility,
+      externalLinks: _externalLinks,
+      status: status,
+      publishAt: status == EventStatus.scheduled ? publishAt : null,
+      recurrence: recurrence.isRecurring ? recurrence : null,
+      ticketTiers: _tiers,
+      languagePairs: languagePairs,
+      guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
+      createdAt: DateTime.now(),
+    );
+
+    if (recurrence.isRecurring) {
+      // Generate the occurrence docs (all share a seriesId). Write the extras
+      // directly (one batch), and route the first through the normal create
+      // path so the Events screen refreshes + shows the success snackbar.
+      final occurrences =
+          EventSeriesService.instance.buildOccurrences(base, recurrence);
+      setState(() => _saving = true);
+      try {
+        if (occurrences.length > 1) {
+          await sl<EventsRemoteDataSource>()
+              .createEventsBatch(occurrences.sublist(1));
+        }
+      } catch (_) {
+        // Non-fatal: the first occurrence still goes through below.
+      }
+      if (!mounted) return;
+      setState(() => _saving = false);
+      widget.onEventCreated(occurrences.first);
+      return;
+    }
+
+    widget.onEventCreated(base);
   }
 }

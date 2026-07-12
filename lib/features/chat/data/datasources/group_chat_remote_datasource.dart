@@ -134,8 +134,8 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
   static const String inboxCol = 'user_group_inbox';
   static const String threadsSub = 'threads';
 
-  /// Hard cap on members per group (creator + up to 9 others).
-  static const int maxGroupMembers = 10;
+  /// Hard cap on members per group (creator + up to 255 others).
+  static const int maxGroupMembers = 256;
 
   /// Default page size for messages.
   static const int defaultMessageLimit = 30;

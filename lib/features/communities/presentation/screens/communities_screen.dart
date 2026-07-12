@@ -32,6 +32,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   late TabController _tabController;
   CommunityType? _selectedFilter;
   final TextEditingController _searchController = TextEditingController();
+  String _searchQuery = '';
   String? _currentUserId;
 
   @override
@@ -199,31 +200,53 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
 
     return CustomScrollView(
       slivers: [
-        // Search bar
+        // Search bar (mirrors the Exchange / Conversations search field)
         SliverToBoxAdapter(
           child: Padding(
-            padding: const EdgeInsets.all(AppDimensions.paddingM),
+            padding: const EdgeInsets.all(16),
             child: TextField(
               controller: _searchController,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: InputDecoration(
                 hintText: AppLocalizations.of(context)!.communitiesSearchHint,
-                hintStyle: const TextStyle(color: AppColors.textTertiary),
+                hintStyle: TextStyle(
+                  color: AppColors.textTertiary.withValues(alpha: 0.6),
+                ),
                 prefixIcon: const Icon(
                   Icons.search,
                   color: AppColors.textTertiary,
                 ),
+                suffixIcon: _searchQuery.isNotEmpty
+                    ? IconButton(
+                        icon: const Icon(Icons.clear,
+                            color: AppColors.textTertiary),
+                        onPressed: () {
+                          _searchController.clear();
+                          setState(() => _searchQuery = '');
+                          context.read<CommunitiesBloc>().add(
+                                _selectedFilter == null
+                                    ? const LoadCommunities()
+                                    : LoadCommunities(type: _selectedFilter),
+                              );
+                        },
+                      )
+                    : null,
                 filled: true,
-                fillColor: AppColors.backgroundInput,
+                fillColor: AppColors.backgroundCard,
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                  borderRadius: BorderRadius.circular(12),
                   borderSide: BorderSide.none,
                 ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  borderSide: const BorderSide(color: AppColors.richGold),
+                ),
                 contentPadding: const EdgeInsets.symmetric(
-                  horizontal: AppDimensions.paddingM,
-                  vertical: AppDimensions.paddingS,
+                  horizontal: 16,
+                  vertical: 12,
                 ),
               ),
+              onChanged: (value) => setState(() => _searchQuery = value),
               onSubmitted: (query) {
                 context.read<CommunitiesBloc>().add(
                       LoadCommunities(searchQuery: query),
@@ -243,8 +266,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                 horizontal: AppDimensions.paddingM,
               ),
               children: [
+                // Leading "All" chip: null filter => unfiltered list (default).
                 CommunityTypeChip(
-                  label: AppLocalizations.of(context)!.communitiesAllFilter,
+                  label: AppLocalizations.of(context)!.filterAll,
                   isSelected: _selectedFilter == null,
                   onTap: () {
                     setState(() => _selectedFilter = null);

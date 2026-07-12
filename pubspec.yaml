@@ -1,7 +1,7 @@
 name: greengo_chat
 description: A cross-cultural discovery and language-barrier-free networking app built with Flutter and GCP
 publish_to: 'none'
-version: 2.2.4+100
+version: 3.0.0+101
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -67,6 +67,10 @@ dependencies:
   # UI Components
   flutter_svg: ^2.0.9
   lottie: ^2.7.0
+
+  # Event QR check-in (attendee ticket QR + owner scanner)
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.2.3
   webview_flutter: ^4.10.0
   shimmer: ^3.0.0
   flutter_staggered_animations: ^1.1.1

@@ -77,25 +77,11 @@
   "adjustPreferences": "Ajuster les Préférences",
   "admin": "Admin",
   "admin2faCodeSent": "Code envoyé à {email}",
-  "@admin2faCodeSent": {
-    "placeholders": {
-      "email": {
-        "type": "String"
-      }
-    }
-  },
   "admin2faExpired": "Code expiré. Veuillez en demander un nouveau.",
   "admin2faInvalidCode": "Code de vérification invalide",
   "admin2faMaxAttempts": "Trop de tentatives. Veuillez demander un nouveau code.",
   "admin2faResend": "Renvoyer le Code",
   "admin2faResendIn": "Renvoyer dans {seconds}s",
-  "@admin2faResendIn": {
-    "placeholders": {
-      "seconds": {
-        "type": "String"
-      }
-    }
-  },
   "admin2faSending": "Envoi du code...",
   "admin2faSignOut": "Se Déconnecter",
   "admin2faSubtitle": "Entrez le code à 6 chiffres envoyé à votre e-mail",
@@ -412,21 +398,7 @@
   "albumNotShared": "Album non partagé",
   "albumOption": "Album",
   "albumRevokedMessage": "{username} a révoqué l'accès à l'album",
-  "@albumRevokedMessage": {
-    "placeholders": {
-      "username": {
-        "type": "String"
-      }
-    }
-  },
   "albumSharedMessage": "{username} a partagé son album avec vous",
-  "@albumSharedMessage": {
-    "placeholders": {
-      "username": {
-        "type": "String"
-      }
-    }
-  },
   "allCategoriesFilter": "Toutes",
   "allDealBreakersAdded": "Tous les critères éliminatoires ont été ajoutés",
   "allLanguagesFilter": "Toutes",
@@ -480,16 +452,6 @@
   "achievementRarityEpic": "ÉPIQUE",
   "achievementRarityLegendary": "LÉGENDAIRE",
   "achievementRewardLabel": "+{amount} {type}",
-  "@achievementRewardLabel": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      },
-      "type": {
-        "type": "String"
-      }
-    }
-  },
   "badges": "Badges",
   "basic": "Basique",
   "basicInformation": "Informations de Base",
@@ -538,7 +500,7 @@
   "blindDateTabMatches": "Matchs",
   "blindDateTitle": "Rendez-vous à l'aveugle",
   "blindDateViewMatch": "Voir le match",
-  "bonusCoinsText": " (+{bonusCoins} bonus !)",
+  "bonusCoinsText": " (+{bonus} bonus !)",
   "boost": "Boost",
   "boostActivated": "Boost activé pour 30 minutes !",
   "boostNow": "Booster maintenant",
@@ -588,21 +550,7 @@
   "chatAttachVideo": "Vidéo",
   "chatBlock": "Bloquer",
   "chatBlockUser": "Bloquer {name}",
-  "@chatBlockUser": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatBlockUserMessage": "Êtes-vous sûr de vouloir bloquer {name} ? Ils ne pourront plus vous contacter.",
-  "@chatBlockUserMessage": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatBlockUserTitle": "Bloquer l'Utilisateur",
   "chatCannotBlockAdmin": "Vous ne pouvez pas bloquer un administrateur.",
   "chatCannotReportAdmin": "Vous ne pouvez pas signaler un administrateur.",
@@ -621,13 +569,6 @@
   "chatDelete": "Supprimer",
   "chatDeleteChat": "Supprimer le Chat",
   "chatDeleteChatForBothMessage": "Cela supprimera tous les messages pour vous et {name}. Cette action est irréversible.",
-  "@chatDeleteChatForBothMessage": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatDeleteChatForEveryone": "Supprimer le Chat pour Tous",
   "chatDeleteChatForMeMessage": "Cela supprimera le chat de votre appareil uniquement. L'autre personne verra toujours les messages.",
   "chatDeleteConversationWith": "Supprimer la conversation avec {name} ?",
@@ -651,48 +592,13 @@
   "chatFailedToLoadImage": "Échec du chargement de l'image",
   "chatFailedToLoadVideo": "Impossible de charger la vidéo",
   "chatFailedToPickImage": "Échec de la sélection d'image : {error}",
-  "@chatFailedToPickImage": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "chatFailedToPickVideo": "Échec de la sélection de vidéo : {error}",
-  "@chatFailedToPickVideo": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "chatFailedToReportMessage": "Échec du signalement du message : {error}",
-  "@chatFailedToReportMessage": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "chatFailedToRevokeAccess": "Impossible de révoquer l'accès",
   "chatFailedToSaveFlashcard": "Impossible d'enregistrer la carte",
   "chatFailedToShareAlbum": "Impossible de partager l'album",
   "chatFailedToUploadImage": "Échec du téléversement d'image : {error}",
-  "@chatFailedToUploadImage": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "chatFailedToUploadVideo": "Échec du téléversement de vidéo : {error}",
-  "@chatFailedToUploadVideo": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "chatFeatureCulturalTips": "Conseils culturels et contexte",
   "chatFeatureGrammar": "Retour grammatical en temps réel",
   "chatFeatureVocabulary": "Exercices de vocabulaire",
@@ -706,13 +612,6 @@
   "chatJustNow": "À l'instant",
   "chatLanguagePickerHint": "Choisissez la langue dans laquelle vous souhaitez lire cette conversation. Tous les messages seront traduits pour vous.",
   "chatLanguageSetTo": "Langue du chat définie sur {language}",
-  "@chatLanguageSetTo": {
-    "placeholders": {
-      "language": {
-        "type": "String"
-      }
-    }
-  },
   "chatLanguages": "Langues",
   "chatLearnThis": "Apprendre ceci",
   "chatListen": "Écouter",
@@ -721,13 +620,6 @@
   "chatMediaLimitReached": "Limite de médias atteinte",
   "chatMessage": "Message",
   "chatMessageBlockedContains": "Message bloqué : Contient {violations}. Pour votre sécurité, le partage de coordonnées personnelles n'est pas autorisé.",
-  "@chatMessageBlockedContains": {
-    "placeholders": {
-      "violations": {
-        "type": "String"
-      }
-    }
-  },
   "chatMessageForwarded": "Message transféré à {count} conversation(s)",
   "chatMessageOptions": "Options du Message",
   "chatMessageOriginal": "Original",
@@ -748,30 +640,9 @@
   "chatOffline": "Hors ligne",
   "chatOnline": "En ligne",
   "chatOnlineDaysAgo": "En ligne il y a {days}j",
-  "@chatOnlineDaysAgo": {
-    "placeholders": {
-      "days": {
-        "type": "int"
-      }
-    }
-  },
   "chatOnlineHoursAgo": "En ligne il y a {hours}h",
-  "@chatOnlineHoursAgo": {
-    "placeholders": {
-      "hours": {
-        "type": "int"
-      }
-    }
-  },
   "chatOnlineJustNow": "En ligne à l'instant",
   "chatOnlineMinutesAgo": "En ligne il y a {minutes}min",
-  "@chatOnlineMinutesAgo": {
-    "placeholders": {
-      "minutes": {
-        "type": "int"
-      }
-    }
-  },
   "chatOptions": "Options du Chat",
   "chatOtherRevokedAlbum": "{name} a révoqué l'accès à l'album",
   "chatOtherSharedAlbum": "{name} a partagé son album privé",
@@ -789,13 +660,6 @@
   "chatReply": "Répondre",
   "chatReplyToMessage": "Répondre à ce message",
   "chatReplyingTo": "Réponse à {name}",
-  "@chatReplyingTo": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatReportInappropriate": "Signaler un contenu inapproprié",
   "chatReportMessage": "Signaler le Message",
   "chatReportReasonFakeProfile": "Faux profil / Catfishing",
@@ -807,22 +671,8 @@
   "chatReportReasonThreatening": "Comportement menaçant",
   "chatReportReasonUnderage": "Utilisateur mineur",
   "chatReportUser": "Signaler {name}",
-  "@chatReportUser": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatReportUserTitle": "Signaler l'Utilisateur",
   "chatSeeExchangeDetails": "Voir les Détails de l'Échange avec {name}",
-  "@chatSeeExchangeDetails": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatSafetyGotIt": "Compris",
   "chatSafetySubtitle": "Votre sécurité est notre priorité. Gardez ces conseils à l'esprit.",
   "chatSafetyTip": "Conseil de Sécurité",
@@ -839,13 +689,6 @@
   "chatSafetyTitle": "Chattez en Toute Sécurité",
   "chatSaving": "Enregistrement...",
   "chatSayHiTo": "Dites bonjour à {name} !",
-  "@chatSayHiTo": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatScrollUpForOlder": "Faites défiler vers le haut pour les anciens messages",
   "chatSearchByNameOrNickname": "Rechercher par nom ou @pseudo",
   "chatSearchConversationsHint": "Rechercher des conversations...",
@@ -895,72 +738,23 @@
   "chatStatusOpen": "Ouvert",
   "chatStatusResolved": "Résolu",
   "chatStreak": "Série : {count}",
-  "@chatStreak": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "chatSubject": "Sujet",
   "chatSubjectHint": "Brève description de votre problème",
   "chatSupportAddAttachment": "Ajouter une Pièce Jointe",
   "chatSupportAddCaptionOptional": "Ajouter une légende (optionnel)...",
   "chatSupportAgent": "Agent : {name}",
-  "@chatSupportAgent": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatSupportAgentLabel": "Agent",
   "chatSupportCategory": "Catégorie",
   "chatSupportClose": "Fermer",
   "chatSupportDaysAgo": "il y a {days}j",
-  "@chatSupportDaysAgo": {
-    "placeholders": {
-      "days": {
-        "type": "int"
-      }
-    }
-  },
   "chatSupportErrorLoading": "Erreur de chargement des messages",
   "chatSupportFailedToReopen": "Échec de la réouverture du ticket : {error}",
-  "@chatSupportFailedToReopen": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "chatSupportFailedToSend": "Échec de l'envoi du message : {error}",
-  "@chatSupportFailedToSend": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "chatSupportGeneral": "Général",
   "chatSupportGeneralSupport": "Support Général",
   "chatSupportHoursAgo": "il y a {hours}h",
-  "@chatSupportHoursAgo": {
-    "placeholders": {
-      "hours": {
-        "type": "int"
-      }
-    }
-  },
   "chatSupportJustNow": "À l'instant",
   "chatSupportMinutesAgo": "il y a {minutes}min",
-  "@chatSupportMinutesAgo": {
-    "placeholders": {
-      "minutes": {
-        "type": "int"
-      }
-    }
-  },
   "chatSupportReopenTicket": "Besoin d'aide supplémentaire ? Appuyez pour rouvrir",
   "chatSupportStartMessage": "Envoyez un message pour démarrer la conversation.\nNotre équipe répondra dès que possible.",
   "chatSupportStatus": "Statut",
@@ -999,42 +793,14 @@
   "chatUploading": "Téléversement...",
   "chatUseCorrection": "Utiliser la correction",
   "chatUserBlocked": "{name} a été bloqué",
-  "@chatUserBlocked": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatUserReported": "Utilisateur signalé. Nous examinerons votre signalement sous peu.",
   "chatVideo": "Vidéo",
   "chatVideoPlayer": "Lecteur Vidéo",
   "chatVideoTooLarge": "Vidéo trop volumineuse. La taille maximale est de 50 Mo.",
   "chatWhyReportMessage": "Pourquoi signalez-vous ce message ?",
   "chatWhyReportUser": "Pourquoi signalez-vous {name} ?",
-  "@chatWhyReportUser": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatWithName": "Discuter avec {name}",
-  "@chatWithName": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "chatWords": "{count} mots",
-  "@chatWords": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "chatYou": "Vous",
   "chatYouRevokedAlbum": "Vous avez révoqué l'accès à l'album",
   "chatYouSharedAlbum": "Vous avez partagé votre album privé",
@@ -1050,7 +816,7 @@
   "coins": "Pièces",
   "coinsAddedMessage": "{totalCoins} pièces ajoutées à votre compte{bonusText}",
   "coinsAllTransactions": "Toutes les transactions",
-  "coinsAmountCoins": "{amount} Coins",
+  "coinsAmountCoins": "{amount} pièces",
   "coinsAmountVideoMinutes": "{amount} Minutes Video",
   "coinsApply": "Appliquer",
   "coinsBalance": "Solde : {balance}",
@@ -1058,13 +824,6 @@
   "coinsCancelLabel": "Annuler",
   "coinsConfirmPurchase": "Confirmer l'achat",
   "coinsCost": "{amount} pièces",
-  "@coinsCost": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
   "coinsCreditsOnly": "Crédits uniquement",
   "coinsDebitsOnly": "Débits uniquement",
   "coinsEnterReceiverId": "Entrez l'ID du destinataire",
@@ -1076,7 +835,7 @@
   "coinsGiftSent": "Cadeau de {amount} pièces envoyé !",
   "coinsGreenGoCoins": "GreenGoCoins",
   "coinsInsufficientCoins": "Pièces insuffisantes",
-  "coinsLabel": "Coins",
+  "coinsLabel": "Pièces",
   "coinsMessageLabel": "Message (optionnel)",
   "coinsMins": "min",
   "coinsNoTransactionsYet": "Aucune transaction pour le moment",
@@ -1090,13 +849,6 @@
   "coinsPurchasedMinutes": "{totalMinutes} minutes vidéo achetées avec succès !",
   "coinsReceiverIdLabel": "ID du destinataire",
   "coinsRequired": "{amount} pièces requises",
-  "@coinsRequired": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
   "coinsRetry": "Reessayer",
   "coinsSelectAmount": "Choisir le Montant",
   "coinsSendCoinsAmount": "Envoyer {amount} Coins",
@@ -1219,11 +971,6 @@
   "correctAnswer": "Correct !",
   "couldNotOpenLink": "Impossible d'ouvrir le lien",
   "createAccount": "Créer un Compte",
-  "couponRedeemTitle": "Utiliser un code promo",
-  "couponApplyButton": "Appliquer",
-  "couponAppliedSuccess": "Coupon appliqué",
-  "couponNotValid": "Coupon non valide",
-  "freeBaseWeekInfo": "Pas de coupon ? 1 semaine de membre Base offerte !",
   "culturalCategory": "Culturel",
   "culturalExchangeBeFirstTip": "Soyez le premier à partager un conseil culturel !",
   "culturalExchangeCategory": "Catégorie",
@@ -1279,13 +1026,6 @@
   "dayStreakLabel": "Série de {days} jours !",
   "days": "Jours",
   "daysAgo": "il y a {count} jours",
-  "@daysAgo": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "delete": "Supprimer",
   "deleteAccount": "Supprimer le Compte",
   "deleteAccountConfirmation": "Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible et toutes vos données seront définitivement supprimées.",
@@ -1294,13 +1034,6 @@
   "directMessageCost": "Les messages directs coutent {cost} coins. Voulez-vous acheter plus de coins ?",
   "discover": "Reseau",
   "discoveryError": "Erreur : {error}",
-  "@discoveryError": {
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
   "discoveryFilterAll": "Tous",
   "discoveryFilterGuides": "Guides",
   "discoveryFilterLiked": "Connectés",
@@ -1310,6 +1043,8 @@
   "discoveryFilterSuperLiked": "Prioritaire",
   "discoveryFilterNetwork": "Mon Réseau",
   "discoveryFilterTravelers": "Voyageurs",
+  "discoveryLimitReached": "Vous avez atteint votre limite de découverte",
+  "discoverySeeMoreCoins": "Dépensez {coins} pièces pour en voir plus",
   "discoveryPreferencesTitle": "Preferences de Decouverte",
   "discoveryPreferencesTooltip": "Préférences de découverte",
   "discoverySwitchToGrid": "Passer en mode grille",
@@ -1414,12 +1149,47 @@
   "eventsThisMonth": "Ce mois-ci",
   "eventsThisWeekFilter": "Cette semaine",
   "eventsTitle": "Evenements",
+  "eventsAndPlacesTitle": "Événements et lieux",
+  "eventsCategoryAll": "Tous",
+  "attractionVisitWebsite": "Ouvrir {host}",
+  "attractionVisitWikidata": "Ouvrir wikidata.org",
+  "attractionOpenInMaps": "Ouvrir dans Maps",
+  "attractionOpenLink": "Ouvrir le lien",
+  "attractionOpenWebsite": "Ouvrir le site officiel",
+  "attractionShareChat": "Partager dans un chat",
+  "attractionShareGroup": "Partager dans un groupe",
+  "attractionDescribedAt": "En savoir plus",
+  "attractionReport": "Signaler l'événement",
+  "attractionReportConfirm": "Signaler cet élément comme inapproprié ou incorrect ?",
   "eventsToday": "Aujourd'hui",
   "eventsTypeAMessage": "Tapez un message...",
   "exit": "Quitter",
   "exitApp": "Quitter l'App ?",
   "exitAppConfirmation": "Êtes-vous sûr de vouloir quitter GreenGo ?",
   "exploreLanguages": "Explorer les Langues",
+  "exploreTitle": "Explorer",
+  "communityTabTitle": "Communauté",
+  "exploreHeadline": "Explorer {city}",
+  "exploreSubtitle": "Expériences culturelles et partenaires linguistiques près de chez vous",
+  "explorePracticeLanguage": "Pratiquer une langue",
+  "exploreNetworkDiscovery": "Découverte du réseau",
+  "exploreNetworkDiscoverySubtitle": "Des personnes à rencontrer en {country}",
+  "exploreSeeAll": "Tout voir",
+  "exploreHappeningThisWeek": "Cette semaine",
+  "exploreJoin": "Rejoindre",
+  "exploreFeatured": "Expérience à la une",
+  "exploreSpeaksLearning": "parle {speaks} · apprend {learning}",
+  "exploreSpeaks": "parle {language}",
+  "exploreNoPartners": "Aucun partenaire linguistique à proximité pour l'instant — revenez bientôt.",
+  "exploreNoEvents": "Aucune expérience à afficher pour l'instant — revenez bientôt.",
+  "exploreGoingCount": "{count} participants",
+  "networkWorldMap": "Réseau mondial",
+  "networkDiscoveryDistanceKm": "à {distance} km",
+  "connectAction": "Se connecter",
+  "connectError": "Impossible de démarrer la discussion. Veuillez réessayer.",
+  "sayHiAction": "Dire bonjour",
+  "newConnectionLabel": "Nouvelle connexion",
+  "connectionsTitle": "Connexions",
   "exploreMapDistanceAway": "~{distance} km",
   "exploreMapError": "Impossible de charger les utilisateurs à proximité",
   "exploreMapExpandRadius": "Élargir le rayon",
@@ -1435,7 +1205,7 @@
   "extendCoinsLabel": "Prolonger ({cost} pièces)",
   "extendTooltip": "Prolonger",
   "failedToDownloadModel": "Échec du téléchargement du modèle {language}",
-  "failedToSavePreferences": "Impossible d'enregistrer les préférences",
+  "failedToSavePreferences": "Impossible d'enregistrer les préférences : {error}",
   "featureNotAvailableOnTier": "Fonctionnalité non disponible pour {tier}",
   "fillCategories": "Remplis toutes les catégories",
   "filterAll": "Tous",
@@ -1455,13 +1225,6 @@
   "foodDiningCategory": "Gastronomie",
   "forgotPassword": "Mot de passe oublié?",
   "freeActionsRemaining": "{count} actions gratuites restantes aujourd'hui",
-  "@freeActionsRemaining": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "friendship": "Amitié",
   "gameAbandon": "Abandonner",
   "gameAbandonLoseMessage": "Vous perdrez cette partie si vous quittez maintenant.",
@@ -1767,7 +1530,7 @@
   "interestArt": "Art",
   "interestBeach": "Plage",
   "interestBeer": "Bière",
-  "interestBusiness": "Business",
+  "interestBusiness": "Affaires",
   "interestCamping": "Camping",
   "interestCats": "Chats",
   "interestCoffee": "Café",
@@ -1815,24 +1578,7 @@
   "interestYoga": "Yoga",
   "interests": "Centres d'intérêt",
   "interestsCount": "{count} centres d'intérêt",
-  "@interestsCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "interestsSelectedCount": "{selected}/{max} centres d'intérêt sélectionnés",
-  "@interestsSelectedCount": {
-    "placeholders": {
-      "selected": {
-        "type": "int"
-      },
-      "max": {
-        "type": "int"
-      }
-    }
-  },
   "interestsUpdatedMessage": "Vos centres d'intérêt ont été enregistrés",
   "interestsUpdatedTitle": "Centres d'intérêt mis à jour !",
   "invalidWord": "Mot invalide",
@@ -1844,13 +1590,6 @@
   "langMatchBadge": "Langue Compatible",
   "language": "Langue",
   "languageChangedTo": "Langue changée en {language}",
-  "@languageChangedTo": {
-    "placeholders": {
-      "language": {
-        "type": "String"
-      }
-    }
-  },
   "languagePacksBtn": "Packs de Langues",
   "languagePacksShopTitle": "Boutique de Packs de Langues",
   "languagesToDownloadLabel": "Langues à télécharger :",
@@ -2087,13 +1826,6 @@
   "levelUpTitle": "NIVEAU SUPÉRIEUR !",
   "levelUpVIPUnlocked": "Statut VIP Débloqué !",
   "levelUpYouReachedLevel": "Vous avez atteint le Niveau {level}",
-  "@levelUpYouReachedLevel": {
-    "placeholders": {
-      "level": {
-        "type": "int"
-      }
-    }
-  },
   "likes": "J'aime",
   "limitReachedTitle": "Limite atteinte",
   "listenMe": "Écoute-moi !",
@@ -2133,25 +1865,11 @@
   "matchNotifLetsExchange": "COMMENCEZ À CONNECTER !",
   "matchNotifViewProfile": "Voir le Profil",
   "matchPercentage": "{percentage} compatibilité",
-  "@matchPercentage": {
-    "placeholders": {
-      "percentage": {
-        "type": "String"
-      }
-    }
-  },
   "matchedOnDate": "Match le {date}",
   "matchedWithDate": "Vous avez matche avec {name} le {date}",
   "matches": "Correspondances",
   "matchesClearFilters": "Effacer les Filtres",
   "matchesCount": "{count} correspondances",
-  "@matchesCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "matchesFilterAll": "Tous",
   "matchesFilterMessaged": "Avec Messages",
   "matchesFilterNew": "Nouveaux",
@@ -2159,26 +1877,9 @@
   "matchesNoMatchesYet": "Pas encore de matchs",
   "matchesOfCount": "{filtered} sur {total} matchs",
   "matchesOfTotal": "{filtered} sur {total} correspondances",
-  "@matchesOfTotal": {
-    "placeholders": {
-      "filtered": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
   "matchesStartSwiping": "Commencez a swiper pour trouver vos matchs !",
   "matchesTryDifferent": "Essayez une autre recherche ou filtre",
   "maximumInterestsAllowed": "Maximum {count} centres d'intérêt autorisés",
-  "@maximumInterestsAllowed": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "maybeLater": "Peut-être plus tard",
   "discoverWorldwideTitle": "Élargissez vos horizons !",
   "discoverWorldwideMessage": "Il n'y a pas encore beaucoup de personnes dans votre région, mais GreenGo vous connecte avec des gens du monde entier ! Allez dans les Filtres et ajoutez d'autres pays pour découvrir des personnes incroyables aux quatre coins du globe.",
@@ -2200,6 +1901,25 @@
   "membershipDaysRemaining": "{days} jours restants",
   "membershipDurationLabel": "Durée (jours)",
   "membershipEnterCouponHint": "Entrez un code promo",
+  "couponRedeemTitle": "Utiliser un code promo",
+  "couponApplyButton": "Appliquer",
+  "couponAppliedSuccess": "Coupon appliqué",
+  "couponNotValid": "Coupon non valide",
+  "freeBaseWeekInfo": "Pas de coupon ? 1 semaine de membre Base offerte !",
+  "couponRedeemSubtitle": "Saisissez votre code pour améliorer votre abonnement ou obtenir des pièces gratuites",
+  "couponRedeemButton": "Utiliser le coupon",
+  "couponRedeemedSuccess": "Utilisé : {grantSummary}",
+  "couponErrorInvalid": "Ce code de coupon n'est pas valide",
+  "couponErrorExpired": "Ce coupon a expiré",
+  "couponErrorMaxUsesReached": "Ce coupon a atteint sa limite d'utilisation",
+  "couponErrorEmailMismatch": "Ce coupon est réservé à un autre compte",
+  "couponErrorAlreadyRedeemed": "Vous avez déjà utilisé ce coupon",
+  "couponErrorDisabled": "Ce coupon n'est plus actif",
+  "couponErrorGeneric": "Impossible d'utiliser le coupon. Veuillez réessayer.",
+  "registerCouponLabel": "Code de coupon (facultatif)",
+  "registerCouponHint": "Saisissez un code de coupon",
+  "welcomeGrantTitle": "Bienvenue sur GreenGo !",
+  "welcomeGrantDismiss": "Compris",
   "membershipEquivalentMonthly": "Équivalent à {price}/mois",
   "membershipErrorLoadingData": "Erreur lors du chargement des données",
   "membershipExpires": "Expire le : {date}",
@@ -2248,13 +1968,6 @@
   "messages": "Echanges",
   "minutes": "Minutes",
   "moreAchievements": "+{count} autres succès",
-  "@moreAchievements": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "myBadges": "Mes Badges",
   "myProgress": "Mes Progrès",
   "myUsage": "Mon Utilisation",
@@ -2262,13 +1975,6 @@
   "navPlay": "Jouer",
   "nearby": "À proximité",
   "needCoinsForProfiles": "Vous avez besoin de {amount} pièces pour débloquer plus de profils.",
-  "@needCoinsForProfiles": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
   "newLabel": "NOUVEAU",
   "next": "Suivant",
   "nextLevelXp": "Prochain niveau dans {xp} XP",
@@ -2276,13 +1982,6 @@
   "nicknameAlreadyTaken": "Ce pseudo est déjà pris",
   "nicknameCheckError": "Erreur lors de la vérification de disponibilité",
   "nicknameInfoText": "Votre pseudo est unique et peut être utilisé pour vous trouver. Les autres peuvent vous rechercher avec @{nickname}",
-  "@nicknameInfoText": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "nicknameMustBe3To20Chars": "Doit contenir 3-20 caractères",
   "nicknameNoConsecutiveUnderscores": "Pas d'underscores consécutifs",
   "nicknameNoReservedWords": "Ne peut pas contenir de mots réservés",
@@ -2296,6 +1995,12 @@
   "nicknameSearchOwnProfile": "C'est votre propre profil !",
   "nicknameSearchTitle": "Rechercher par Pseudo",
   "nicknameSearchView": "Voir",
+  "nicknameSearchActionNope": "Vous venez de sélectionner « Non » pour @{nickname}",
+  "nicknameSearchActionSkip": "Vous venez de sélectionner « Passer » pour @{nickname}",
+  "nicknameSearchActionPriorityConnect": "Vous venez de sélectionner « Connexion prioritaire » pour @{nickname}",
+  "nicknameSearchActionConnect": "Vous venez de sélectionner « Connectons-nous » pour @{nickname}",
+  "nicknameSearchActionMatch": "C'est un match avec @{nickname} !",
+  "nicknameSearchLimitReached": "Vous avez atteint votre limite de {action}. Réessayez plus tard.",
   "nicknameStartWithLetter": "Commencer par une lettre",
   "nicknameUpdatedMessage": "Votre nouveau pseudo est maintenant actif",
   "nicknameUpdatedSuccess": "Pseudo mis à jour avec succès",
@@ -2315,13 +2020,6 @@
   "noPhotoSubmitted": "Aucune photo soumise",
   "noPreviousProfile": "Aucun profil précédent à revenir",
   "noProfileFoundWithNickname": "Aucun profil trouvé avec @{nickname}",
-  "@noProfileFoundWithNickname": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "noResults": "Aucun résultat",
   "noSocialProfilesLinked": "Aucun profil social lié",
   "noVoiceRecording": "Pas d'enregistrement vocal",
@@ -2333,21 +2031,7 @@
   "notNow": "Pas maintenant",
   "notSet": "Non défini",
   "notificationAchievementUnlocked": "Succès Débloqué : {name}",
-  "@notificationAchievementUnlocked": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "notificationCoinsPurchased": "Vous avez acheté {amount} pièces avec succès.",
-  "@notificationCoinsPurchased": {
-    "placeholders": {
-      "amount": {
-        "type": "int"
-      }
-    }
-  },
   "notificationDialogEnable": "Activer",
   "notificationDialogMessage": "Activez les notifications pour être informé de vos matchs, messages et connexions prioritaires.",
   "notificationDialogNotNow": "Pas maintenant",
@@ -2360,41 +2044,13 @@
   "notificationMatchExpiring": "Match expirant",
   "notificationMatchExpiringSubtitle": "Quand un match est sur le point d'expirer",
   "notificationNewChat": "@{nickname} a commencé une conversation avec vous.",
-  "@notificationNewChat": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "notificationNewLike": "Vous avez reçu un j'aime de @{nickname}",
-  "@notificationNewLike": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "notificationNewLikes": "Nouveaux likes",
   "notificationNewLikesSubtitle": "Quand quelqu'un vous aime",
   "notificationNewMatch": "C'est un Match ! Vous avez matché avec @{nickname}. Commencez à discuter.",
-  "@notificationNewMatch": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "notificationNewMatches": "Nouveaux matchs",
   "notificationNewMatchesSubtitle": "Quand vous obtenez un nouveau match",
   "notificationNewMessage": "Nouveau message de @{nickname}",
-  "@notificationNewMessage": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "notificationNewMessages": "Nouveaux messages",
   "notificationNewMessagesSubtitle": "Quand quelqu'un vous envoie un message",
   "notificationProfileViews": "Vues du profil",
@@ -2413,13 +2069,6 @@
   "notificationSoundVibration": "Son et vibration",
   "notificationStartTime": "Heure de début",
   "notificationSuperLike": "Vous avez reçu une connexion prioritaire de @{nickname}",
-  "@notificationSuperLike": {
-    "placeholders": {
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "notificationSuperLikes": "Connexions Prioritaires",
   "notificationSuperLikesSubtitle": "Quand quelqu'un se connecte prioritairement avec vous",
   "notificationTypes": "Types de notifications",
@@ -2466,6 +2115,7 @@
   "onboardingMaxLanguages": "Vous pouvez sélectionner jusqu'à 3 langues",
   "onboardingMinInterests": "Veuillez sélectionner au moins 3 centres d'intérêt",
   "onboardingMinLanguage": "Veuillez sélectionner au moins une langue",
+  "onboardingMinLocation": "Veuillez définir votre position pour continuer",
   "onboardingNameMinLength": "Le nom doit contenir au moins 2 caractères",
   "onboardingNoLocationSelected": "Aucun lieu sélectionné",
   "onboardingOptional": "Facultatif",
@@ -2557,13 +2207,6 @@
   "photoValidating": "Validation de la photo...",
   "photos": "Photos",
   "photosCount": "{count}/6 photos",
-  "@photosCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "photosPublicCount": "Photos : {count} publiques",
   "photosPublicPrivateCount": "Photos : {publicCount} publiques + {privateCount} privees",
   "photosUpdatedMessage": "Votre galerie photo a été enregistrée",
@@ -2625,7 +2268,7 @@
   "premiumTier": "Premium",
   "primaryOrigin": "Origine Principale",
   "priorityConnectNotificationMessage": "Quelqu'un veut se connecter avec vous !",
-  "priorityConnectNotificationTitle": "Priority Connect!",
+  "priorityConnectNotificationTitle": "Connexion prioritaire !",
   "privacyPolicy": "Politique de Confidentialité",
   "privacySettings": "Paramètres de Confidentialité",
   "privateAlbum": "Privé",
@@ -2665,7 +2308,7 @@
   "profileEditBasicInfo": "Modifier les Infos de Base",
   "profileEditLocation": "Modifier Localisation et Langues",
   "profileEditNickname": "Modifier le Pseudo",
-  "profileEducation": "Education",
+  "profileEducation": "Éducation",
   "profileEducationHint": "ex. Licence en Informatique",
   "profileEnterNameHint": "Entrez votre nom",
   "profileEnterNicknameHint": "Entrez un pseudo",
@@ -2756,13 +2399,6 @@
   "profileUpdatedTitle": "Profil mis à jour !",
   "profileWeightKg": "Poids (kg)",
   "profilesLinkedCount": "{count} profil{count, plural, =1{} other{s}} lié{count, plural, =1{} other{s}}",
-  "@profilesLinkedCount": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "profilingDescription": "Nous permettre d'analyser vos préférences pour fournir de meilleures suggestions de correspondance",
   "progress": "Progrès",
   "progressAchievements": "Badges",
@@ -2774,13 +2410,6 @@
   "progressLabel": "Progression",
   "progressLeaderboard": "Classement",
   "progressLevel": "Niveau {level}",
-  "@progressLevel": {
-    "placeholders": {
-      "level": {
-        "type": "int"
-      }
-    }
-  },
   "progressNofM": "{n}/{m}",
   "progressOverview": "Aperçu",
   "progressRecentAchievements": "Succès Récents",
@@ -2804,15 +2433,8 @@
   "register": "S'inscrire",
   "rejectVerification": "Refuser",
   "rejectionReason": "Raison: {reason}",
-  "@rejectionReason": {
-    "placeholders": {
-      "reason": {
-        "type": "String"
-      }
-    }
-  },
   "rejectionReasonRequired": "Veuillez entrer une raison pour le refus",
-  "remainingToday": "{remaining} {limitType} restants aujourd'hui",
+  "remainingToday": "{remaining} {type} restants aujourd'hui",
   "reportSubmittedMessage": "Merci de contribuer à la sécurité de notre communauté",
   "reportSubmittedTitle": "Signalement envoyé !",
   "reportWord": "Signaler le Mot",
@@ -2845,13 +2467,6 @@
   "reviewReportedMessages": "Examiner les messages signalés et gérer les comptes",
   "reviewUserVerifications": "Examiner les vérifications",
   "reviewedBy": "Révisé par {admin}",
-  "@reviewedBy": {
-    "placeholders": {
-      "admin": {
-        "type": "String"
-      }
-    }
-  },
   "revokeAccess": "Révoquer l'accès à l'album",
   "rewardsAndProgress": "Récompenses et Progrès",
   "romanticCategory": "Romantique",
@@ -2925,37 +2540,13 @@
   "seeAll": "Voir tout",
   "seeHowOthersViewProfile": "Voyez comment les autres voient votre profil",
   "seeMoreProfiles": "Voir {count} de plus",
-  "@seeMoreProfiles": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "seeMoreProfilesTitle": "Voir Plus de Profils",
   "seeProfile": "Voir le Profil",
   "selectAtLeastInterests": "Sélectionnez au moins {count} centres d'intérêt",
-  "@selectAtLeastInterests": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "selectLanguage": "Sélectionner la Langue",
   "selectTravelLocation": "Sélectionner le lieu de voyage",
   "sendCoins": "Envoyer des pièces",
   "sendCoinsConfirm": "Envoyer {amount} pièces à @{nickname} ?",
-  "@sendCoinsConfirm": {
-    "placeholders": {
-      "amount": {
-        "type": "String"
-      },
-      "nickname": {
-        "type": "String"
-      }
-    }
-  },
   "sendMedia": "Envoyer un média",
   "sendMessage": "Envoyer un Message",
   "serverUnavailableMessage": "Nos serveurs sont temporairement indisponibles. Veuillez réessayer dans quelques instants.",
@@ -3039,13 +2630,6 @@
   "shopYouSave": "Vous économisez {amount}/mois en passant de {tier}",
   "shortTermRelationship": "Relation à court terme",
   "showingProfiles": "{count} profils",
-  "@showingProfiles": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "signIn": "Se connecter",
   "signOut": "Se déconnecter",
   "signUp": "S'inscrire",
@@ -3123,13 +2707,6 @@
   "submitAnswer": "Envoyer la Réponse",
   "submitVerification": "Soumettre pour Vérification",
   "submittedOn": "Soumis le {date}",
-  "@submittedOn": {
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
-  },
   "subscribe": "S'abonner",
   "subscribeNow": "S'abonner maintenant",
   "subscriptionExpired": "Abonnement expiré",
@@ -3137,13 +2714,6 @@
   "suggestions": "Suggestions",
   "superLike": "Connexion Prioritaire",
   "superLikedYou": "{name} s'est connecté prioritairement avec vous !",
-  "@superLikedYou": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "superLikes": "Connexions Prioritaires",
   "supportCenter": "Centre d'Aide",
   "supportCenterSubtitle": "Obtenir de l'aide, signaler des problèmes, nous contacter",
@@ -3163,16 +2733,6 @@
   "timeRemaining": "Temps restant",
   "timeoutError": "Délai d'attente dépassé",
   "toNextLevel": "{percent}% au Niveau {level}",
-  "@toNextLevel": {
-    "placeholders": {
-      "percent": {
-        "type": "int"
-      },
-      "level": {
-        "type": "int"
-      }
-    }
-  },
   "today": "aujourd'hui",
   "totalXpLabel": "XP Total",
   "tourDiscoveryDescription": "Faites défiler les profils pour trouver votre match parfait. Glissez à droite si intéressé, à gauche pour passer.",
@@ -3196,13 +2756,6 @@
   "tourSkip": "Passer",
   "trialWelcomeTitle": "Bienvenue sur GreenGo !",
   "trialWelcomeMessage": "Vous utilisez la version d'essai. Votre abonnement de base gratuit est actif jusqu'au {expirationDate}. Profitez de GreenGo !",
-  "@trialWelcomeMessage": {
-    "placeholders": {
-      "expirationDate": {
-        "type": "String"
-      }
-    }
-  },
   "trialWelcomeButton": "Commencer",
   "translateWord": "Traduire ce mot",
   "translationDownloadExplanation": "Pour activer la traduction automatique des messages, nous devons télécharger les données linguistiques pour une utilisation hors ligne.",
@@ -3221,13 +2774,6 @@
   "travelerLocationPermissionsPermanentlyDenied": "Permissions de localisation définitivement refusées",
   "travelerLocationServicesDisabled": "Les services de localisation sont désactivés",
   "travelerModeActivated": "Mode voyageur activé ! Vous apparaissez à {city} pendant 24 heures.",
-  "@travelerModeActivated": {
-    "placeholders": {
-      "city": {
-        "type": "String"
-      }
-    }
-  },
   "travelerModeActive": "Mode voyageur actif",
   "travelerModeDeactivated": "Mode voyageur désactivé. Retour à votre emplacement réel.",
   "travelerModeDescription": "Apparaissez dans le fil de découverte d'une autre ville pendant 24 heures",
@@ -3261,16 +2807,6 @@
   "unlimited": "Illimité",
   "unlock": "Débloquer",
   "unlockMoreProfiles": "Débloquez {count} profils supplémentaires en grille pour {cost} pièces.",
-  "@unlockMoreProfiles": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      },
-      "cost": {
-        "type": "int"
-      }
-    }
-  },
   "unmatchConfirm": "Etes-vous sur de vouloir annuler le match avec {name} ? Cette action est irreversible.",
   "unmatchLabel": "Annuler le Match",
   "unmatchedWith": "Unmatché avec {name}",
@@ -3311,6 +2847,31 @@
   "verificationTip4": "Le texte du document doit être lisible",
   "verificationTips": "Conseils pour une vérification réussie:",
   "verificationTitle": "Vérifiez Votre Identité",
+  "verificationPrivacyTitle": "Vos données sont en sécurité avec nous",
+  "verificationPrivacyEncryption": "Tous les documents sont protégés par un chiffrement de bout en bout. Même les ingénieurs de GreenGo ne peuvent pas accéder à vos données.",
+  "verificationPrivacyAccess": "Vos informations ne peuvent être consultées que sur votre demande personnelle, via les canaux officiels ou par e-mail.",
+  "verificationPrivacySafety": "Cette étape est essentielle pour protéger tous les membres. Nous vous invitons à signaler tout comportement suspect et à laisser GreenGo intervenir.",
+  "verificationPrivacyReporting": "Si quelque chose se produit, signalez-le immédiatement. GreenGo enquêtera et agira pour préserver la sécurité de la communauté.",
+  "verificationChooseMethod": "Choisissez votre méthode de vérification",
+  "verificationMethodPhoto": "Pièce d'identité",
+  "verificationMethodPhotoDesc": "Prenez une photo en tenant votre pièce d'identité à côté de votre visage",
+  "verificationMethodPhone": "Numéro de téléphone",
+  "verificationMethodPhoneDesc": "Vérifiez via un code SMS envoyé à votre téléphone",
+  "verificationPhoneTitle": "Vérification par téléphone",
+  "verificationPhoneSubtitle": "Saisissez votre numéro de téléphone pour recevoir un code de vérification par SMS",
+  "verificationPhoneLabel": "Numéro de téléphone",
+  "verificationPhoneHint": "+33 6 12 34 56 78",
+  "verificationSendCode": "Envoyer le code",
+  "verificationEnterCode": "Saisissez le code à 6 chiffres envoyé à votre téléphone",
+  "verificationCodeLabel": "Code de vérification",
+  "verificationVerifyCode": "Vérifier le code",
+  "verificationPhoneSuccess": "Numéro de téléphone vérifié avec succès !",
+  "verificationPhoneResponsibility": "En vous vérifiant avec votre numéro de téléphone, vous reconnaissez que le titulaire de ce numéro est personnellement responsable de toutes les actions effectuées sur ce compte.",
+  "verificationResendCode": "Renvoyer le code",
+  "verificationCodeSent": "Code envoyé au {phoneNumber}",
+  "verificationPhoneError": "Échec de la vérification du numéro de téléphone. Veuillez réessayer.",
+  "verificationInvalidCode": "Code invalide. Veuillez vérifier et réessayer.",
+  "verificationOr": "ou",
   "verifyNow": "Vérifier Maintenant",
   "vibeTagsCountSelected": "{count} / {limit} tags sélectionnés",
   "vibeTagsGet5Tags": "Obtenir 5 tags",
@@ -3363,13 +2924,6 @@
   "voiceFailedToSend": "Échec de l'envoi du message vocal",
   "voiceRecordAgain": "Réenregistrer",
   "voiceRecordIntroDescription": "Enregistrez une courte présentation de {seconds} secondes pour faire entendre votre personnalité.",
-  "@voiceRecordIntroDescription": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
   "voiceRecorded": "Voix enregistrée",
   "voiceRecordingInProgress": "Enregistrement... (max {maxDuration} secondes)",
   "voiceRecordingReady": "Enregistrement prêt",
@@ -3388,26 +2942,12 @@
   "vsLabel": "VS",
   "waitingAccessDateBasic": "Votre accès commencera le 15 mars 2026",
   "waitingAccessDatePremium": "En tant que membre {tier}, vous bénéficiez d'un accès anticipé le 1er mars 2026!",
-  "@waitingAccessDatePremium": {
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
   "waitingAccessDateTitle": "Votre Date d'Accès",
   "waitingCountLabel": "{count} en attente",
   "waitingCountdownLabel": "Votre date de lancement",
   "waitingCountdownSubtitle": "Merci de vous être inscrit ! GreenGo Chat sera lancé bientôt. Préparez-vous pour une expérience exclusive.",
   "waitingCountdownTitle": "Compte à Rebours jusqu'au Lancement",
   "waitingDaysRemaining": "{days} jours",
-  "@waitingDaysRemaining": {
-    "placeholders": {
-      "days": {
-        "type": "int"
-      }
-    }
-  },
   "waitingEarlyAccessMember": "Membre Accès Anticipé",
   "waitingEnableNotificationsSubtitle": "Activez les notifications pour être le premier à savoir quand vous pouvez accéder à l'application.",
   "waitingEnableNotificationsTitle": "Restez informé",
@@ -3417,35 +2957,14 @@
   "waitingForPlayers": "En attente des joueurs...",
   "waitingForVerification": "En attente de vérification...",
   "waitingHoursRemaining": "{hours} heures",
-  "@waitingHoursRemaining": {
-    "placeholders": {
-      "hours": {
-        "type": "int"
-      }
-    }
-  },
   "waitingMessageApproved": "Bonne nouvelle! Votre compte a été approuvé. Vous pourrez accéder à GreenGoChat à la date indiquée ci-dessous.",
   "waitingMessagePending": "Votre compte est en attente d'approbation par notre équipe. Nous vous informerons une fois que votre compte aura été examiné.",
   "waitingMessageRejected": "Malheureusement, votre compte n'a pas pu être approuvé pour le moment. Veuillez contacter le support pour plus d'informations.",
   "waitingMinutesRemaining": "{minutes} minutes",
-  "@waitingMinutesRemaining": {
-    "placeholders": {
-      "minutes": {
-        "type": "int"
-      }
-    }
-  },
   "waitingNotificationEnabled": "Notifications activées - nous vous préviendrons quand vous pourrez accéder à l'application!",
   "waitingProfileUnderReview": "Profil en cours d'examen",
   "waitingReviewMessage": "L'application est maintenant en ligne ! Notre équipe examine votre profil pour garantir la meilleure expérience pour notre communauté. Cela prend généralement 24 à 48 heures.",
   "waitingSecondsRemaining": "{seconds} secondes",
-  "@waitingSecondsRemaining": {
-    "placeholders": {
-      "seconds": {
-        "type": "int"
-      }
-    }
-  },
   "waitingStayTuned": "Restez à l'écoute! Nous vous informerons quand il sera temps de commencer à vous connecter.",
   "waitingStepActivation": "Activation du compte",
   "waitingStepRegistration": "Inscription terminée",
@@ -3471,27 +2990,10 @@
   "yes": "Oui",
   "yesterday": "hier",
   "youAndMatched": "Vous et {name} vous êtes aimés mutuellement",
-  "@youAndMatched": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
   "youGotSuperLike": "Vous avez reçu une Connexion Prioritaire !",
   "youLabel": "VOUS",
   "youLose": "Tu as Perdu",
   "youMatchedWithOnDate": "Vous avez matché avec {name} le {date}",
-  "@youMatchedWithOnDate": {
-    "placeholders": {
-      "name": {
-        "type": "String"
-      },
-      "date": {
-        "type": "String"
-      }
-    }
-  },
   "youWin": "Tu as Gagné !",
   "yourLanguages": "Vos Langues",
   "yourRankLabel": "Votre Rang",
@@ -3579,6 +3081,17 @@
   "guideSafetyItem1": "Toutes les photos sont vérifiées par IA pour garantir des profils authentiques.",
   "guideSafetyItem2": "Vous pouvez bloquer ou signaler n'importe quel utilisateur à tout moment depuis son profil.",
   "guideSafetyItem3": "Vos informations personnelles sont protégées et ne sont jamais partagées sans votre consentement.",
+  "firstStepsTitle": "Premiers pas",
+  "firstStepsReview": "Vos documents seront examinés sous 24 à 48 heures après leur envoi.",
+  "firstStepsStatusUpdate": "L'application a besoin d'environ 15 minutes pour mettre à jour votre statut actuel après la première connexion.",
+  "firstStepsSupportChat": "Vous pouvez contacter l'assistance par chat ou en ouvrant un ticket directement.",
+  "showSupportUser": "Afficher GreenGo Support",
+  "showSupportUserDescription": "Afficher l'utilisateur GreenGo Support dans la grille de découverte",
+  "preferenceShowMyNetwork": "Mon Réseau",
+  "preferenceShowMyNetworkDesc": "Afficher uniquement les personnes de votre réseau (matchs et Priority Connect acceptés).",
+  "randomMode": "Mode aléatoire",
+  "randomModeDescription": "Découvrez des personnes au hasard du monde entier, triées par distance. Désactivé, seules les personnes proches de vous sont affichées.",
+  "yourProfile": "Vous",
   "loadingMsg1": "Recherche de profils incroyables à travers le monde...",
   "loadingMsg2": "Connecter les cœurs à travers les continents...",
   "loadingMsg3": "Découvrir des personnes incroyables près de chez vous...",
@@ -3603,14 +3116,11 @@
   "loadingMsg22": "Scanner le globe à la recherche de personnes intéressantes...",
   "loadingMsg23": "Les grandes connexions commencent ici...",
   "loadingMsg24": "Votre aventure est sur le point de commencer...",
-  "yourProfile": "Vous",
   "filterFavorites": "Favoris",
   "filterToApprove": "À approuver",
   "priorityConnectAccept": "Accepter",
   "priorityConnectReject": "Refuser",
   "priorityConnectPending": "En attente d'approbation",
-  "preferenceShowMyNetwork": "Mon Réseau",
-  "preferenceShowMyNetworkDesc": "Afficher uniquement les personnes de votre réseau (matchs et Priority Connect acceptés).",
   "membershipTrialTitle": "Commencez votre essai gratuit !",
   "membershipTrialSubtitle": "7 jours gratuits, puis renouvellement annuel",
   "membershipTrialFeature1": "Swipes et connexions illimités",
@@ -3619,6 +3129,38 @@
   "membershipTrialCta": "Démarrer l'essai de 7 jours",
   "membershipTrialFooter": "Annulez à tout moment pendant l'essai. Aucun frais avant le jour 8.",
   "membershipTrialBadge": "GRATUIT PENDANT 7 JOURS",
+  "globeMyNetwork": "Mon réseau",
+  "globeMyWorldMap": "Ma carte du monde",
+  "globeLayerContacts": "Ma communauté",
+  "globeLayerExperiences": "Expériences",
+  "globeYou": "Vous",
+  "globeConnections": "Connexions",
+  "globeTraveler": "Voyageur",
+  "globeConnectionCount": "{count} {count, plural, =1{connexion} other{connexions}}",
+  "globeConnectionsHere": "{count} {count, plural, =1{connexion} other{connexions}} ici",
+  "globeThisIsYou": "C'est vous !",
+  "globeTravelingTo": "En voyage vers {country}",
+  "globeNoConnectionsInCountry": "Pas encore de connexions dans {country}",
+  "globeNoConnectionsHint": "Continuez à vous connecter pour trouver des personnes ici !",
+  "globeProfile": "Profil",
+  "globeChat": "Chat",
+  "globeViewProfileTooltip": "Voir le profil",
+  "globeOpenChatTooltip": "Ouvrir le chat",
+  "globeNoConnectionsInCountryTitle": "Aucune connexion dans {country}",
+  "discoverabilityExact": "Exacte",
+  "discoverabilityExactDesc": "Épingle à votre position exacte (< 1 km)",
+  "discoverabilityApproximate": "Approximative",
+  "discoverabilityApproximateDesc": "Épingle dans votre région (grille ~50 km, par défaut)",
+  "discoverabilityCountry": "Pays",
+  "discoverabilityCountryDesc": "Épingle quelque part dans votre pays",
+  "discoverabilityHidden": "Masquée",
+  "discoverabilityHiddenDesc": "Non visible sur la carte",
+  "discoverabilityTitle": "Visibilité sur le globe",
+  "discoverabilityInfo": "Vos connexions vous voient toujours sur la carte, quel que soit ce paramètre.",
+  "discoverabilityChangedExact": "Position définie sur exacte",
+  "discoverabilityChangedApproximate": "Position définie sur approximative",
+  "discoverabilityChangedCountry": "Position définie au niveau du pays",
+  "discoverabilityChangedHidden": "Vous êtes désormais masqué sur la carte",
   "onboardingExitTitle": "Quitter l'inscription ?",
   "onboardingExitMessage": "Vous serez déconnecté. Vous pourrez terminer la configuration de votre profil à votre prochaine connexion.",
   "onboardingExitConfirm": "Se déconnecter",
@@ -3641,6 +3183,14 @@
   "groupNameLabel": "Nom du groupe",
   "groupSelectedCount": "{count} sélectionné(s)",
   "groupInviteByNickname": "Inviter par pseudo",
+  "groupAddMembers": "Ajouter des membres",
+  "groupTtsReadTranslated": "Lire la traduction à voix haute",
+  "groupTtsReadTranslatedHint": "Double-tapez un message pour l’écouter. Activé = votre langue, Désactivé = original.",
+  "ttsNotEnoughCoins": "Pas assez de pièces pour le TTS (5 pièces requises)",
+  "groupRemoveMember": "Retirer le membre",
+  "groupRemoveMemberConfirm": "Retirer {name} de ce groupe ?",
+  "groupMemberRemoved": "{name} retiré",
+  "groupAddSelected": "Ajouter {count} sélectionnés",
   "groupNicknameHint": "Saisir un pseudo",
   "groupNoContacts": "Aucun contact à ajouter pour l'instant",
   "groupNoOneFound": "Aucun utilisateur trouvé avec ce pseudo",
@@ -3721,12 +3271,10 @@
   "groupTagsSaved": "Tags enregistrés",
   "groupTagsSaveFailed": "Impossible d'enregistrer les tags",
   "groupTagsLimitReached": "Limite de tags atteinte",
+  "peopleTagsEditTitle": "Tags pour {name}",
   "groupTranslationSettings": "Traduction",
   "groupTranslateMessages": "Traduire les messages",
   "groupShowOriginal": "Afficher le texte original",
-  "globeMyWorldMap": "Ma carte du monde",
-  "globeLayerContacts": "Ma communauté",
-  "globeLayerExperiences": "Expériences",
   "eventsTabLiveEvents": "Événements live",
   "globeLayerLiveEvents": "Événements live",
   "eventsSortBy": "Trier par",
@@ -3734,18 +3282,6 @@
   "eventsSortStars": "Étoiles",
   "eventsSortReviews": "Avis",
   "eventsSortDate": "Date",
-  "eventsAndPlacesTitle": "Événements et lieux",
-  "eventsCategoryAll": "Tous",
-  "attractionOpenLink": "Ouvrir le lien",
-  "attractionOpenWebsite": "Ouvrir le site officiel",
-  "attractionVisitWikidata": "Ouvrir wikidata.org",
-  "attractionVisitWebsite": "Ouvrir {host}",
-  "attractionDescribedAt": "En savoir plus",
-  "attractionOpenInMaps": "Ouvrir dans Maps",
-  "attractionShareChat": "Partager dans un chat",
-  "attractionShareGroup": "Partager dans un groupe",
-  "attractionReport": "Signaler l'événement",
-  "attractionReportConfirm": "Signaler cet élément comme inapproprié ou incorrect ?",
   "catMuseums": "Musées",
   "catSights": "Sites",
   "catParks": "Parcs",
@@ -3759,15 +3295,14 @@
   "catDayTrips": "Excursions à la journée",
   "catTickets": "Billets & pass",
   "catOther": "Autres",
-  "groupAddMembers": "Ajouter des membres",
-  "groupRemoveMember": "Retirer le membre",
-  "groupRemoveMemberConfirm": "Retirer {name} de ce groupe ?",
-  "groupMemberRemoved": "{name} retiré",
-  "groupAddSelected": "Ajouter {count} sélectionnés",
-  "groupTtsReadTranslated": "Lire la traduction à voix haute",
-  "groupTtsReadTranslatedHint": "Double-tapez un message pour l’écouter. Activé = votre langue, Désactivé = original.",
-  "ttsNotEnoughCoins": "Pas assez de pièces pour le TTS (5 pièces requises)",
   "eventsUnlimited": "Illimité",
   "eventsTabGoing": "Je participe",
-  "globeLayerCommunityEvents": "Événements de la communauté"
+  "globeLayerCommunityEvents": "Événements de la communauté",
+  "webMapUnavailableTitle": "Carte interactive disponible sur l'application mobile",
+  "webMapUnavailableBody": "Recherchez une adresse pour définir votre position.",
+  "webLocationPickerTitle": "Choisissez votre position",
+  "webLocationSearchHint": "Rechercher une ville ou une adresse",
+  "webLocationConfirm": "Utiliser cette position",
+  "webLocationTapHint": "Touchez la carte pour placer un repère",
+  "webLocationMonthlyLimit": "Vous pouvez mettre à jour votre position une fois par mois sur le web. Prochaine mise à jour disponible le {date}."
 }

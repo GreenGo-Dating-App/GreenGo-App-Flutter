@@ -28,6 +28,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     on<LoadRecommendedCommunities>(_onLoadRecommendedCommunities);
     on<LoadCommunityDetail>(_onLoadCommunityDetail);
     on<CreateCommunity>(_onCreateCommunity);
+    on<UpdateCommunity>(_onUpdateCommunity);
     on<JoinCommunity>(_onJoinCommunity);
     on<LeaveCommunity>(_onLeaveCommunity);
     on<SendCommunityMessage>(_onSendMessage);
@@ -192,6 +193,25 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         );
 
         emit(CommunityCreated(community: community));
+      },
+    );
+  }
+
+  Future<void> _onUpdateCommunity(
+    UpdateCommunity event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final result = await _repository.updateCommunity(event.community);
+
+    result.fold(
+      (failure) => emit(CommunitiesError(message: failure.message)),
+      (_) {
+        // Reflect the updated community in-place so the detail view (promo,
+        // header badge) refreshes without dropping the live message stream.
+        final currentState = state;
+        if (currentState is CommunityDetailLoaded) {
+          emit(currentState.copyWith(community: event.community));
+        }
       },
     );
   }

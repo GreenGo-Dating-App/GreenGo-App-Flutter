@@ -78,6 +78,10 @@ class Profile extends Equatable {
     this.completedSafetyModules = const [],
     this.signupGrantsApplied = const [],
     this.signupGrantsAppliedAt,
+    this.isBusiness = false,
+    this.businessName,
+    this.businessCategory,
+    this.businessVerified = false,
   });
   final String userId;
   final String displayName;
@@ -172,6 +176,14 @@ class Profile extends Equatable {
   // The client renders a one-time welcome banner per grant where dismissed == false.
   final List<SignupGrant> signupGrantsApplied;
   final DateTime? signupGrantsAppliedAt;
+
+  // Business/venue account fields (revenue: featured event placements).
+  // Stored on the same profiles/{uid} doc; owner may write isBusiness /
+  // businessName / businessCategory. businessVerified is admin-granted.
+  final bool isBusiness;
+  final String? businessName;
+  final String? businessCategory;
+  final bool businessVerified;
 
   /// Get formatted nickname with @ prefix
   String? get formattedNickname => nickname != null ? '@$nickname' : null;
@@ -295,6 +307,10 @@ class Profile extends Equatable {
         completedSafetyModules,
         signupGrantsApplied,
         signupGrantsAppliedAt,
+        isBusiness,
+        businessName,
+        businessCategory,
+        businessVerified,
       ];
 
   /// Copy with updated fields
@@ -363,6 +379,10 @@ class Profile extends Equatable {
     List<String>? completedSafetyModules,
     List<SignupGrant>? signupGrantsApplied,
     DateTime? signupGrantsAppliedAt,
+    bool? isBusiness,
+    String? businessName,
+    String? businessCategory,
+    bool? businessVerified,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -429,6 +449,10 @@ class Profile extends Equatable {
       completedSafetyModules: completedSafetyModules ?? this.completedSafetyModules,
       signupGrantsApplied: signupGrantsApplied ?? this.signupGrantsApplied,
       signupGrantsAppliedAt: signupGrantsAppliedAt ?? this.signupGrantsAppliedAt,
+      isBusiness: isBusiness ?? this.isBusiness,
+      businessName: businessName ?? this.businessName,
+      businessCategory: businessCategory ?? this.businessCategory,
+      businessVerified: businessVerified ?? this.businessVerified,
     );
   }
 }

@@ -173,7 +173,7 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
         }
 
         return LuxuryOnboardingLayout(
-          title: l10n.onboardingYourInterests,
+          title: l10n.onboardingPickInterests,
           subtitle: l10n.onboardingInterestsSubtitle,
           showBackButton: true,
           onBack: _handleBack,

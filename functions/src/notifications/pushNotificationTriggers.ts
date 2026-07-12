@@ -12,6 +12,24 @@ import { monitored } from '../shared/monitoring';
 const db = admin.firestore();
 const messaging = admin.messaging();
 
+/**
+ * PUSH-DELIVERY FILTER.
+ *
+ * A real push (APNs on iOS / FCM on Android) is sent ONLY for:
+ *   (A) a NEW MESSAGE — direct 1:1 exchange (this file, type `newMessage`),
+ *       community group chat (group_chat/fanout.ts) and event group chat
+ *       (events/broadcast.ts) each handle their own multicast; and
+ *   (B) a business a user follows publishing a new event
+ *       (events/business_new_event.ts).
+ *
+ * Every OTHER notification type routed through `sendPushToUser` (likes,
+ * super-likes, matches, support replies, mode-expiry, verification, streaks,
+ * referrals, missions, system, generic, etc.) is written to the in-app
+ * `notifications` collection ONLY — never pushed. This set is the single
+ * enforcement point for that rule for this module.
+ */
+const PUSH_ELIGIBLE_TYPES = new Set<string>(['newMessage']);
+
 // Maps notification "type" to the flat boolean field used by the Flutter app.
 const TYPE_TO_PREF_FIELD: Record<string, string> = {
   newMessage: 'newMessageNotifications',
@@ -61,6 +79,13 @@ async function sendPushToUser(
   options?: SendOptions,
 ): Promise<boolean> {
   try {
+    // PUSH-DELIVERY FILTER: non-message types are in-app only (no APNs/FCM).
+    // Everything still lands on the in-app notifications page unchanged.
+    if (!PUSH_ELIGIBLE_TYPES.has(type)) {
+      await writeInAppNotification(userId, type, title, body, data);
+      return false;
+    }
+
     const userDoc = await db.collection('users').doc(userId).get();
     if (!userDoc.exists) {
       logError(`sendPushToUser: User ${userId} not found`);

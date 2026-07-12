@@ -12,6 +12,7 @@ import '../bloc/onboarding_bloc.dart';
 import '../bloc/onboarding_event.dart';
 import '../bloc/onboarding_state.dart';
 import 'onboarding/onboarding_exit.dart';
+import 'onboarding/step0_welcome_screen.dart';
 import 'onboarding/step1_basic_info_screen.dart';
 import 'onboarding/step2_photo_upload_screen.dart';
 import 'onboarding/step3_bio_screen.dart';
@@ -126,6 +127,8 @@ class OnboardingScreen extends StatelessWidget {
           final Widget stepWidget;
           // Return the appropriate screen based on current step
           switch (state.currentStep) {
+            case OnboardingStep.welcome:
+              stepWidget = const Step0WelcomeScreen();
             case OnboardingStep.basicInfo:
               stepWidget = const Step1BasicInfoScreen();
             case OnboardingStep.photos:

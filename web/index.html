@@ -18,18 +18,49 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="GreenGo connects you across cultures — practice languages with real people, meet locals and travelers, and discover events near you.">
 
-  <!-- iOS meta tags & icons -->
+  <!-- PWA theme color -->
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- PWA / iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="greengo_chat">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GreenGo">
+  <link rel="apple-touch-icon" href="icons/Icon-180.png">
+
+  <!--
+    TODO (Track E follow-up): iOS PWA splash screens.
+    iOS requires one <link rel="apple-touch-startup-image"> per device
+    resolution & orientation, gated by a media query. The PNGs do NOT
+    exist yet and must be generated (deep black #0A0A0A bg + gold logo)
+    as a separate step, then wired here. Device portrait sizes needed:
+
+      - iPhone SE / 8 / 7 / 6s ....... 750 x 1334   (@2x, 375x667)
+      - iPhone 8+ / 7+ / 6s+ ......... 1242 x 2208   (@3x, 414x736)
+      - iPhone X / XS / 11 Pro / 12 mini / 13 mini . 1125 x 2436 (@3x)
+      - iPhone XR / 11 .............. 828 x 1792    (@2x)
+      - iPhone XS Max / 11 Pro Max .. 1242 x 2688   (@3x)
+      - iPhone 12 / 12 Pro / 13 / 14 / 13 Pro . 1170 x 2532 (@3x)
+      - iPhone 12/13 Pro Max / 14 Plus . 1284 x 2778 (@3x)
+      - iPhone 14 Pro / 15 / 15 Pro .. 1179 x 2556  (@3x)
+      - iPhone 14 Pro Max / 15 Pro Max / 15 Plus . 1290 x 2796 (@3x)
+      - iPad mini / Air / 9.7" ....... 1536 x 2048   (@2x)
+      - iPad Pro 11" ................. 1668 x 2388   (@2x)
+      - iPad Pro 12.9" ............... 2048 x 2732   (@2x)
+
+    Example (once PNGs exist):
+    <link rel="apple-touch-startup-image"
+          media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)"
+          href="splash/apple-splash-1170-2532.png">
+  -->
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>greengo_chat</title>
+  <title>GreenGo</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>

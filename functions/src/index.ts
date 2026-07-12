@@ -115,10 +115,27 @@ export {
   onEventLikeDeleted,
 } from './events/likes';
 
+// Events — business new-event → followers push fan-out (push-delivery filter
+// part B). Notifies every follower of a business when it publishes an event.
+export {
+  onEventCreatedNotifyFollowers,
+  onEventPublishedNotifyFollowers,
+} from './events/business_new_event';
+
 // Events — scheduled reminders.
 export {
   sendEventReminders,
 } from './events/reminders';
+
+// Wallet passes — Apple Wallet (.pkpass) + Google Wallet event tickets.
+// Inert until the pass certificates / issuer secrets are set (see
+// ./wallet/README.md); the callables verify a going-attendee before signing.
+export {
+  getAppleWalletPass,
+} from './wallet/appleWallet';
+export {
+  getGoogleWalletSaveUrl,
+} from './wallet/googleWallet';
 
 // Backup and Export Functions
 export {

@@ -33,7 +33,7 @@ class GroupInfoScreen extends StatelessWidget {
   final String currentUserId;
 
   /// Mirror of GroupChatRemoteDataSourceImpl.maxGroupMembers (server-enforced).
-  static const int _maxGroupMembers = 10;
+  static const int _maxGroupMembers = 256;
 
   static Route<void> route({
     required String groupId,

@@ -9,6 +9,81 @@ class AppLocalizationsIt extends AppLocalizations {
   AppLocalizationsIt([String locale = 'it']) : super(locale);
 
   @override
+  String get culturalPassportTitle => 'Cultural Passport';
+
+  @override
+  String get culturalPassportSubtitle =>
+      'Stamps you collect from the cultures, languages and events you explore';
+
+  @override
+  String get passportSectionCountries => 'Countries';
+
+  @override
+  String get passportSectionLanguages => 'Languages';
+
+  @override
+  String get passportSectionEvents => 'Events';
+
+  @override
+  String get passportLoading => 'Loading your passport…';
+
+  @override
+  String get passportEarned => 'Earned';
+
+  @override
+  String get passportLocked => 'Locked';
+
+  @override
+  String get passportEmpty =>
+      'Start chatting, learning languages and joining events to earn your first stamps.';
+
+  @override
+  String passportProgressSummary(int countries, int languages, int events) {
+    return '$countries countries · $languages languages · $events events';
+  }
+
+  @override
+  String passportOverallProgress(int percent) {
+    return '$percent% explored';
+  }
+
+  @override
+  String get passportEventDating => 'Dating';
+
+  @override
+  String get passportEventSocial => 'Social';
+
+  @override
+  String get passportEventSports => 'Sports';
+
+  @override
+  String get passportEventFood => 'Food';
+
+  @override
+  String get passportEventNightlife => 'Nightlife';
+
+  @override
+  String get passportEventOutdoor => 'Outdoor';
+
+  @override
+  String get passportEventArts => 'Arts';
+
+  @override
+  String get passportEventGaming => 'Gaming';
+
+  @override
+  String get passportEventTravel => 'Travel';
+
+  @override
+  String get passportEventWellness => 'Wellness';
+
+  @override
+  String get passportEventLanguageExchange => 'Language Exchange';
+
+  @override
+  String get passportEventOther => 'Other';
+
+  @override
   String get tourGotIt => 'Capito';
 
   @override
@@ -1741,7 +1816,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String bonusCoinsText(int bonus, Object bonusCoins) {
-    return ' (+$bonusCoins bonus!)';
+    return ' (+$bonus bonus!)';
   }
 
   @override
@@ -3571,6 +3646,14 @@ class AppLocalizationsIt extends AppLocalizations {
   String get discoveryFilterTravelers => 'Viaggiatori';
 
   @override
+  String get discoveryLimitReached => 'Hai raggiunto il tuo limite di scoperta';
+
+  @override
+  String discoverySeeMoreCoins(int coins) {
+    return 'Spendi $coins monete per vederne altri';
+  }
+
+  @override
   String get discoveryPreferencesTitle => 'Preferenze di Scoperta';
 
   @override
@@ -3973,6 +4056,152 @@ class AppLocalizationsIt extends AppLocalizations {
   String get exploreLanguages => 'Esplora le Lingue';
 
   @override
+  String get exploreTitle => 'Esplora';
+
+  @override
+  String get communityTabTitle => 'Community';
+
+  @override
+  String exploreHeadline(String city) {
+    return 'Esplora $city';
+  }
+
+  @override
+  String get exploreSubtitle =>
+      'Esperienze culturali e partner linguistici vicino a te';
+
+  @override
+  String get explorePracticeLanguage => 'Pratica una lingua';
+
+  @override
+  String get exploreNetworkDiscovery => 'Scopri la rete';
+
+  @override
+  String exploreNetworkDiscoverySubtitle(String country) {
+    return 'Persone con cui connetterti in $country';
+  }
+
+  @override
+  String get exploreSeeAll => 'Vedi tutto';
+
+  @override
+  String get exploreHappeningThisWeek => 'Questa settimana';
+
+  @override
+  String get exploreJoin => 'Partecipa';
+
+  @override
+  String get exploreFeatured => 'Esperienza in evidenza';
+
+  @override
+  String exploreSpeaksLearning(String speaks, String learning) {
+    return 'parla $speaks · sta imparando $learning';
+  }
+
+  @override
+  String exploreSpeaks(String language) {
+    return 'parla $language';
+  }
+
+  @override
+  String get exploreAroundYou => 'People around you';
+
+  @override
+  String get exploreSameInterests => 'People with your same interests';
+
+  @override
+  String exploreSpeaksLanguage(String language) {
+    return 'People that speak $language';
+  }
+
+  @override
+  String get exploreCommunityEventsNearby => 'Community events near you';
+
+  @override
+  String get exploreNoPartners =>
+      'Ancora nessun partner linguistico nelle vicinanze — torna presto.';
+
+  @override
+  String get exploreNoEvents =>
+      'Ancora nessuna esperienza da mostrare — torna presto.';
+
+  @override
+  String get exploreNoCommunities =>
+      'No communities to join yet — check back soon.';
+
+  @override
+  String exploreGoingCount(int count) {
+    return '$count partecipanti';
+  }
+
+  @override
+  String get exploreFeaturedEvents => 'Featured events';
+
+  @override
+  String get exploreFeaturedAttractions => 'Featured attractions';
+
+  @override
+  String get exploreMyNextEvents => 'My next events';
+
+  @override
+  String get exploreCommunitiesTitle => 'Communities to join';
+
+  @override
+  String exploreMembersCount(int count) {
+    return '$count members';
+  }
+
+  @override
+  String get exploreCountrySpotlight => 'Country Spotlight';
+
+  @override
+  String get greetingMorning => 'Good morning';
+
+  @override
+  String get greetingAfternoon => 'Good afternoon';
+
+  @override
+  String get greetingEvening => 'Good evening';
+
+  @override
+  String get greetingNight => 'Good night';
+
+  @override
+  String get statCoins => 'Coins';
+
+  @override
+  String get statTier => 'Tier';
+
+  @override
+  String get statCountries => 'Countries';
+
+  @override
+  String get statPeople => 'People';
+
+  @override
+  String get networkWorldMap => 'Rete mondiale';
+
+  @override
+  String networkDiscoveryDistanceKm(String distance) {
+    return 'a $distance km';
+  }
+
+  @override
+  String get connectAction => 'Connetti';
+
+  @override
+  String get connectError => 'Impossibile avviare la chat. Riprova.';
+
+  @override
+  String get sayHiAction => 'Saluta';
+
+  @override
+  String get newConnectionLabel => 'Nuova connessione';
+
+  @override
+  String get connectionsTitle => 'Connessioni';
+
+  @override
   String exploreMapDistanceAway(Object distance) {
     return '~$distance km';
   }
@@ -4027,7 +4256,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String failedToSavePreferences(String error) {
-    return 'Impossibile salvare le preferenze';
+    return 'Impossibile salvare le preferenze: $error';
   }
 
   @override
@@ -6396,50 +6625,50 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get couponRedeemSubtitle =>
-      'Enter your code to upgrade your membership or get free coins';
+      'Inserisci il tuo codice per aggiornare l\'abbonamento o ottenere monete gratis';
 
   @override
-  String get couponRedeemButton => 'Redeem Coupon';
+  String get couponRedeemButton => 'Riscatta coupon';
 
   @override
   String couponRedeemedSuccess(String grantSummary) {
-    return 'Redeemed: $grantSummary';
+    return 'Riscattato: $grantSummary';
   }
 
   @override
-  String get couponErrorInvalid => 'This coupon code is not valid';
+  String get couponErrorInvalid => 'Questo codice coupon non è valido';
 
   @override
-  String get couponErrorExpired => 'This coupon has expired';
+  String get couponErrorExpired => 'Questo coupon è scaduto';
 
   @override
   String get couponErrorMaxUsesReached =>
-      'This coupon has reached its usage limit';
+      'Questo coupon ha raggiunto il suo limite di utilizzo';
 
   @override
   String get couponErrorEmailMismatch =>
-      'This coupon is restricted to a different account';
+      'Questo coupon è riservato a un altro account';
 
   @override
-  String get couponErrorAlreadyRedeemed => 'You have already used this coupon';
+  String get couponErrorAlreadyRedeemed => 'Hai già utilizzato questo coupon';
 
   @override
-  String get couponErrorDisabled => 'This coupon is no longer active';
+  String get couponErrorDisabled => 'Questo coupon non è più attivo';
 
   @override
-  String get couponErrorGeneric => 'Could not redeem coupon. Please try again.';
+  String get couponErrorGeneric => 'Impossibile riscattare il coupon. Riprova.';
 
   @override
-  String get registerCouponLabel => 'Coupon code (optional)';
+  String get registerCouponLabel => 'Codice coupon (opzionale)';
 
   @override
-  String get registerCouponHint => 'Enter a coupon code';
+  String get registerCouponHint => 'Inserisci un codice coupon';
 
   @override
-  String get welcomeGrantTitle => 'Welcome to GreenGo!';
+  String get welcomeGrantTitle => 'Benvenuto su GreenGo!';
 
   @override
-  String get welcomeGrantDismiss => 'Got it';
+  String get welcomeGrantDismiss => 'Capito';
 
   @override
   String membershipEquivalentMonthly(Object price) {
@@ -6700,32 +6929,32 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String nicknameSearchActionNope(String nickname) {
-    return 'You just selected \"Nope\" for @$nickname';
+    return 'Hai appena selezionato \"No\" per @$nickname';
   }
 
   @override
   String nicknameSearchActionSkip(String nickname) {
-    return 'You just selected \"Skip\" for @$nickname';
+    return 'Hai appena selezionato \"Salta\" per @$nickname';
   }
 
   @override
   String nicknameSearchActionPriorityConnect(String nickname) {
-    return 'You just selected \"Priority Connect\" for @$nickname';
+    return 'Hai appena selezionato \"Connessione Prioritaria\" per @$nickname';
   }
 
   @override
   String nicknameSearchActionConnect(String nickname) {
-    return 'You just selected \"Let\'s Connect\" for @$nickname';
+    return 'Hai appena selezionato \"Connettiamoci\" per @$nickname';
   }
 
   @override
   String nicknameSearchActionMatch(String nickname) {
-    return 'It\'s a match with @$nickname!';
+    return 'È un match con @$nickname!';
   }
 
   @override
   String nicknameSearchLimitReached(String action) {
-    return 'You\'ve reached your $action limit. Try again later.';
+    return 'Hai raggiunto il tuo limite di $action. Riprova più tardi.';
   }
 
   @override
@@ -7112,7 +7341,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get onboardingMinLanguage => 'Seleziona almeno una lingua';
 
   @override
-  String get onboardingMinLocation => 'Please set your location to continue';
+  String get onboardingMinLocation => 'Imposta la tua posizione per continuare';
 
   @override
   String get onboardingNameMinLength =>
@@ -7639,7 +7868,7 @@ class AppLocalizationsIt extends AppLocalizations {
       'Qualcuno vuole connettersi con te!';
 
   @override
-  String get priorityConnectNotificationTitle => 'Priority Connect!';
+  String get priorityConnectNotificationTitle => 'Connessione Prioritaria!';
 
   @override
   String get privacyPolicy => 'Informativa sulla Privacy';
@@ -8216,7 +8445,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String remainingToday(int remaining, String type, Object limitType) {
-    return '$remaining $limitType rimasti oggi';
+    return '$remaining $type rimasti oggi';
   }
 
   @override
@@ -9630,92 +9859,93 @@ class AppLocalizationsIt extends AppLocalizations {
   String get verificationTitle => 'Verifica la Tua Identità';
 
   @override
-  String get verificationPrivacyTitle => 'Your data is safe with us';
+  String get verificationPrivacyTitle => 'I tuoi dati sono al sicuro con noi';
 
   @override
   String get verificationPrivacyEncryption =>
-      'All documents are encrypted with end-to-end encryption. Not even GreenGo engineers can access your data.';
+      'Tutti i documenti sono protetti con crittografia end-to-end. Nemmeno gli ingegneri di GreenGo possono accedere ai tuoi dati.';
 
   @override
   String get verificationPrivacyAccess =>
-      'Your information can only be accessed through your personal request via official channels or email.';
+      'Le tue informazioni sono accessibili solo tramite una tua richiesta personale attraverso i canali ufficiali o via email.';
 
   @override
   String get verificationPrivacySafety =>
-      'This step is essential to protect all members. We invite you to report any suspicious behaviour and let GreenGo take action.';
+      'Questo passaggio è essenziale per proteggere tutti i membri. Ti invitiamo a segnalare qualsiasi comportamento sospetto e lasciare che GreenGo intervenga.';
 
   @override
   String get verificationPrivacyReporting =>
-      'If something happens, report it immediately. GreenGo will investigate and act to keep the community safe.';
+      'Se succede qualcosa, segnalalo immediatamente. GreenGo indagherà e agirà per mantenere la community sicura.';
 
   @override
-  String get verificationChooseMethod => 'Choose your verification method';
+  String get verificationChooseMethod => 'Scegli il tuo metodo di verifica';
 
   @override
-  String get verificationMethodPhoto => 'ID Document';
+  String get verificationMethodPhoto => 'Documento d\'identità';
 
   @override
   String get verificationMethodPhotoDesc =>
-      'Take a photo holding your ID next to your face';
+      'Scatta una foto tenendo il tuo documento accanto al viso';
 
   @override
-  String get verificationMethodPhone => 'Phone Number';
+  String get verificationMethodPhone => 'Numero di telefono';
 
   @override
   String get verificationMethodPhoneDesc =>
-      'Verify via SMS code sent to your phone';
+      'Verifica tramite codice SMS inviato al tuo telefono';
 
   @override
-  String get verificationPhoneTitle => 'Phone Verification';
+  String get verificationPhoneTitle => 'Verifica telefonica';
 
   @override
   String get verificationPhoneSubtitle =>
-      'Enter your phone number to receive a verification code via SMS';
+      'Inserisci il tuo numero di telefono per ricevere un codice di verifica via SMS';
 
   @override
-  String get verificationPhoneLabel => 'Phone number';
+  String get verificationPhoneLabel => 'Numero di telefono';
 
   @override
   String get verificationPhoneHint => '+1 234 567 8900';
 
   @override
-  String get verificationSendCode => 'Send Code';
+  String get verificationSendCode => 'Invia codice';
 
   @override
   String get verificationEnterCode =>
-      'Enter the 6-digit code sent to your phone';
+      'Inserisci il codice a 6 cifre inviato al tuo telefono';
 
   @override
-  String get verificationCodeLabel => 'Verification code';
+  String get verificationCodeLabel => 'Codice di verifica';
 
   @override
-  String get verificationVerifyCode => 'Verify Code';
+  String get verificationVerifyCode => 'Verifica codice';
 
   @override
-  String get verificationPhoneSuccess => 'Phone number verified successfully!';
+  String get verificationPhoneSuccess =>
+      'Numero di telefono verificato con successo!';
 
   @override
   String get verificationPhoneResponsibility =>
-      'By verifying with your phone number, you acknowledge that the owner of this number is personally responsible for all actions performed on this account.';
+      'Verificando con il tuo numero di telefono, riconosci che il proprietario di questo numero è personalmente responsabile di tutte le azioni eseguite su questo account.';
 
   @override
-  String get verificationResendCode => 'Resend code';
+  String get verificationResendCode => 'Invia di nuovo il codice';
 
   @override
   String verificationCodeSent(String phoneNumber) {
-    return 'Code sent to $phoneNumber';
+    return 'Codice inviato a $phoneNumber';
   }
 
   @override
   String get verificationPhoneError =>
-      'Failed to verify phone number. Please try again.';
+      'Verifica del numero di telefono non riuscita. Riprova.';
 
   @override
   String get verificationInvalidCode =>
-      'Invalid code. Please check and try again.';
+      'Codice non valido. Controlla e riprova.';
 
   @override
-  String get verificationOr => 'or';
+  String get verificationOr => 'oppure';
 
   @override
   String get verifyNow => 'Verifica Ora';
@@ -10472,26 +10702,26 @@ class AppLocalizationsIt extends AppLocalizations {
       'Le tue informazioni personali sono protette e non vengono mai condivise senza il tuo consenso.';
 
   @override
-  String get firstStepsTitle => 'First Steps';
+  String get firstStepsTitle => 'Primi passi';
 
   @override
   String get firstStepsReview =>
-      'Your documents will be reviewed within 24-48 hours after submission.';
+      'I tuoi documenti saranno esaminati entro 24-48 ore dall\'invio.';
 
   @override
   String get firstStepsStatusUpdate =>
-      'The app needs approximately 15 minutes to update your current status after first login.';
+      'L\'app impiega circa 15 minuti per aggiornare il tuo stato attuale dopo il primo accesso.';
 
   @override
   String get firstStepsSupportChat =>
-      'You can contact support through chat or by opening a ticket directly.';
+      'Puoi contattare l\'assistenza tramite chat o aprendo direttamente un ticket.';
 
   @override
-  String get showSupportUser => 'Show GreenGo Support';
+  String get showSupportUser => 'Mostra Assistenza GreenGo';
 
   @override
   String get showSupportUserDescription =>
-      'Show GreenGo Support user in discovery grid';
+      'Mostra l\'utente Assistenza GreenGo nella griglia di scoperta';
 
   @override
   String get preferenceShowMyNetwork => 'La Mia Rete';
@@ -10501,11 +10731,11 @@ class AppLocalizationsIt extends AppLocalizations {
       'Mostra solo le persone nella tua rete (match e Priority Connect accettati).';
 
   @override
-  String get randomMode => 'Random Mode';
+  String get randomMode => 'Modalità casuale';
 
   @override
   String get randomModeDescription =>
-      'Discover random people from all over the world, sorted by distance. When off, only people close to you are shown.';
+      'Scopri persone casuali da tutto il mondo, ordinate per distanza. Se disattivata, vengono mostrate solo le persone vicine a te.';
 
   @override
   String get yourProfile => 'Tu';
@@ -10631,7 +10861,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get membershipTrialBadge => 'GRATIS PER 7 GIORNI';
 
   @override
-  String get globeMyNetwork => 'My Network';
+  String get globeMyNetwork => 'La mia rete';
 
   @override
   String get globeMyWorldMap => 'La mia mappa del mondo';
@@ -10643,21 +10873,21 @@ class AppLocalizationsIt extends AppLocalizations {
   String get globeLayerExperiences => 'Esperienze';
 
   @override
-  String get globeYou => 'You';
+  String get globeYou => 'Tu';
 
   @override
-  String get globeConnections => 'Connections';
+  String get globeConnections => 'Connessioni';
 
   @override
-  String get globeTraveler => 'Traveler';
+  String get globeTraveler => 'Viaggiatore';
 
   @override
   String globeConnectionCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'connections',
-      one: 'connection',
+      other: 'connessioni',
+      one: 'connessione',
     );
     return '$count $_temp0';
   }
@@ -10667,88 +10897,93 @@ class AppLocalizationsIt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'connections',
-      one: 'connection',
+      other: 'connessioni',
+      one: 'connessione',
     );
-    return '$count $_temp0 here';
+    return '$count $_temp0 qui';
   }
 
   @override
-  String get globeThisIsYou => 'This is you!';
+  String get globeThisIsYou => 'Questo sei tu!';
 
   @override
   String globeTravelingTo(String country) {
-    return 'Traveling to $country';
+    return 'In viaggio verso $country';
   }
 
   @override
   String globeNoConnectionsInCountry(String country) {
-    return 'No connections in $country yet';
+    return 'Ancora nessuna connessione in $country';
   }
 
   @override
-  String get globeNoConnectionsHint => 'Keep connecting to find people here!';
+  String get globeNoConnectionsHint =>
+      'Continua a connetterti per trovare persone qui!';
 
   @override
-  String get globeProfile => 'Profile';
+  String get globeProfile => 'Profilo';
 
   @override
   String get globeChat => 'Chat';
 
   @override
-  String get globeViewProfileTooltip => 'View Profile';
+  String get globeViewProfileTooltip => 'Vedi profilo';
 
   @override
-  String get globeOpenChatTooltip => 'Open Chat';
+  String get globeOpenChatTooltip => 'Apri chat';
 
   @override
   String globeNoConnectionsInCountryTitle(String country) {
-    return 'No connections in $country';
+    return 'Nessuna connessione in $country';
   }
 
   @override
-  String get discoverabilityExact => 'Exact';
+  String get discoverabilityExact => 'Esatta';
 
   @override
-  String get discoverabilityExactDesc => 'Pin at your exact location (<1km)';
+  String get discoverabilityExactDesc =>
+      'Segnaposto nella tua posizione esatta (<1km)';
 
   @override
-  String get discoverabilityApproximate => 'Approximate';
+  String get discoverabilityApproximate => 'Approssimativa';
 
   @override
   String get discoverabilityApproximateDesc =>
-      'Pin in your region (~50km grid, default)';
+      'Segnaposto nella tua regione (griglia ~50km, predefinito)';
 
   @override
-  String get discoverabilityCountry => 'Country';
+  String get discoverabilityCountry => 'Paese';
 
   @override
-  String get discoverabilityCountryDesc => 'Pin somewhere in your country';
+  String get discoverabilityCountryDesc =>
+      'Segnaposto da qualche parte nel tuo paese';
 
   @override
-  String get discoverabilityHidden => 'Hidden';
+  String get discoverabilityHidden => 'Nascosta';
 
   @override
-  String get discoverabilityHiddenDesc => 'Not discoverable on the Map';
+  String get discoverabilityHiddenDesc => 'Non individuabile sulla Mappa';
 
   @override
-  String get discoverabilityTitle => 'Globe Discoverability';
+  String get discoverabilityTitle => 'Individuabilità sul globo';
 
   @override
   String get discoverabilityInfo =>
-      'Your connections always see you on the Map, regardless of this setting.';
+      'Le tue connessioni ti vedono sempre sulla Mappa, indipendentemente da questa impostazione.';
 
   @override
-  String get discoverabilityChangedExact => 'Location set to exact';
+  String get discoverabilityChangedExact => 'Posizione impostata su esatta';
 
   @override
-  String get discoverabilityChangedApproximate => 'Location set to approximate';
+  String get discoverabilityChangedApproximate =>
+      'Posizione impostata su approssimativa';
 
   @override
-  String get discoverabilityChangedCountry => 'Location set to country level';
+  String get discoverabilityChangedCountry =>
+      'Posizione impostata a livello di paese';
 
   @override
-  String get discoverabilityChangedHidden => 'You are now hidden from the map';
+  String get discoverabilityChangedHidden => 'Ora sei nascosto dalla mappa';
 
   @override
   String get onboardingExitTitle => 'Uscire dalla registrazione?';
@@ -11117,6 +11352,11 @@ class AppLocalizationsIt extends AppLocalizations {
   String get groupTagsLimitReached => 'Limite di tag raggiunto';
 
   @override
+  String peopleTagsEditTitle(String name) {
+    return 'Tag per $name';
+  }
+
+  @override
   String get groupTranslationSettings => 'Traduzione';
 
   @override
@@ -11196,26 +11436,670 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get webMapUnavailableTitle =>
-      'Interactive map available on the mobile app';
+      'Mappa interattiva disponibile sull\'app mobile';
 
   @override
   String get webMapUnavailableBody =>
-      'Search for an address to set your location.';
+      'Cerca un indirizzo per impostare la tua posizione.';
 
   @override
-  String get webLocationPickerTitle => 'Pick your location';
+  String get webLocationPickerTitle => 'Scegli la tua posizione';
 
   @override
-  String get webLocationSearchHint => 'Search city or address';
+  String get webLocationSearchHint => 'Cerca città o indirizzo';
 
   @override
-  String get webLocationConfirm => 'Use this location';
+  String get webLocationConfirm => 'Usa questa posizione';
 
   @override
-  String get webLocationTapHint => 'Tap the map to drop a pin';
+  String get webLocationTapHint =>
+      'Tocca la mappa per posizionare un segnaposto';
 
   @override
   String webLocationMonthlyLimit(String date) {
-    return 'You can update your location once a month on the web. Next update available $date.';
+    return 'Puoi aggiornare la tua posizione una volta al mese sul web. Prossimo aggiornamento disponibile $date.';
   }
+
+  @override
+  String get eventMyTicket => 'My ticket';
+
+  @override
+  String get eventScanCheckIn => 'Scan / Check-in';
+
+  @override
+  String get eventAttendance => 'Attendance';
+
+  @override
+  String get eventCheckedIn => 'Checked in';
+
+  @override
+  String get eventNotCheckedIn => 'Not here yet';
+
+  @override
+  String get eventGuestsAllowedLabel => 'Guests allowed per attendee';
+
+  @override
+  String get eventBringGuests => 'Bring guests';
+
+  @override
+  String get eventInvalidTicket => 'Invalid ticket for this event';
+
+  @override
+  String get eventScanInstructions =>
+      'Point the camera at an attendee\'s QR code';
+
+  @override
+  String get eventTotalHeadcount => 'Total headcount';
+
+  @override
+  String get eventCameraPermission => 'Camera permission is required to scan';
+
+  @override
+  String get eventTicketSubtitle => 'Show this QR at the entrance';
+
+  @override
+  String eventGuestCount(int count, int max) {
+    return '$count of $max guests';
+  }
+
+  @override
+  String eventCheckedInSuccess(String name) {
+    return '$name checked in';
+  }
+
+  @override
+  String eventAlreadyCheckedIn(String name) {
+    return '$name already checked in';
+  }
+
+  @override
+  String eventGuestsBringing(int count) {
+    return '+$count guests';
+  }
+
+  @override
+  String connectDailyLimitReached(int limit) {
+    return 'You\'ve reached your daily limit of $limit new connections. Upgrade to connect with more people!';
+  }
+
+  @override
+  String get boostFeatureName => 'Profile Boost';
+
+  @override
+  String get boostRequiresTierDescription =>
+      'Profile boosts are a paid-membership perk. Upgrade your plan to boost your profile and get seen by more people.';
+
+  @override
+  String boostMonthlyLimitReached(int limit) {
+    return 'You\'ve used all $limit profile boosts included in your plan this month. Upgrade for more.';
+  }
+
+  @override
+  String get travelModeFeatureName => 'Traveler Mode';
+
+  @override
+  String get travelModeRequiresTierDescription =>
+      'Traveler Mode lets you appear in another city\'s discovery feed. Upgrade your plan to unlock it.';
+
+  @override
+  String get exploreRecommended => 'Recommended for you';
+
+  @override
+  String get businessAccountTitle => 'Business account';
+
+  @override
+  String get becomeBusiness => 'Become a business';
+
+  @override
+  String get businessProfileLabel => 'Business profile';
+
+  @override
+  String get businessCategoryLabel => 'Business category';
+
+  @override
+  String get businessVerifiedLabel => 'Verified business';
+
+  @override
+  String get featureThisEvent => 'Feature this event';
+
+  @override
+  String featureEventCostLabel(int cost) {
+    return 'Feature this event · $cost coins';
+  }
+
+  @override
+  String featureEventActive(String date) {
+    return 'Featured until $date';
+  }
+
+  @override
+  String featureEventConfirm(int cost) {
+    return 'Feature this event for $cost coins?';
+  }
+
+  @override
+  String get referralTitle => 'Invite friends';
+
+  @override
+  String get referralInviteFriends => 'Invite friends';
+
+  @override
+  String get referralYourCode => 'Your referral code';
+
+  @override
+  String get referralShareCta => 'Share';
+
+  @override
+  String get referralShareMessage => 'Join me on GreenGo!';
+
+  @override
+  String get referralRewardEarned => 'Coins earned';
+
+  @override
+  String get referralCountLabel => 'Friends invited';
+
+  @override
+  String get referralHowItWorks =>
+      'Share your code — when a friend joins with it, you both earn coins.';
+
+  @override
+  String get streakTitle => 'Streak';
+
+  @override
+  String get streakDaysLabel => 'day streak';
+
+  @override
+  String get streakKeepGoing => 'Keep it going!';
+
+  @override
+  String get missionsTitle => 'Missions';
+
+  @override
+  String get missionsSubtitle => 'Complete missions to earn coins';
+
+  @override
+  String get missionProgressLabel => 'Progress';
+
+  @override
+  String get missionRewardLabel => 'Reward';
+
+  @override
+  String get missionCompleteLabel => 'Completed';
+
+  @override
+  String get onboardingWelcomeTitle => 'Welcome to GreenGo';
+
+  @override
+  String get onboardingWelcomeBody =>
+      'Discover cultures, practice languages, find local events, and meet people near you — no language barriers.';
+
+  @override
+  String get onboardingPickInterests => 'What do you love?';
+
+  @override
+  String get onboardingPickLanguages => 'Languages you speak';
+
+  @override
+  String get savedSearchesTitle => 'Saved searches';
+
+  @override
+  String get saveThisSearch => 'Save this search';
+
+  @override
+  String get savedSearchSaved => 'Search saved';
+
+  @override
+  String get savedSearchRun => 'Run';
+
+  @override
+  String get savedSearchEmpty => 'No saved searches yet';
+
+  @override
+  String get savedSearchAlertsToggle => 'Alerts';
+
+  @override
+  String get exploreFeaturedCommunity => 'Featured community events';
+
+  @override
+  String get notificationMarkAllRead => 'Mark all read';
+
+  @override
+  String get analyticsTitle => 'Analytics';
+
+  @override
+  String get analyticsPlatinumOnly => 'Analytics is a Platinum feature.';
+
+  @override
+  String get analyticsEventsHosted => 'Events hosted';
+
+  @override
+  String get analyticsTotalAttendees => 'Total attendees';
+
+  @override
+  String get analyticsReach => 'Reach';
+
+  @override
+  String get analyticsUpgradeCta => 'Upgrade to Platinum';
+
+  @override
+  String get safetyVerifiedBadge => 'Verified';
+
+  @override
+  String get safetyReportUser => 'Report';
+
+  @override
+  String get safetyBlockUser => 'Block';
+
+  @override
+  String get safetyCheckInTitle => 'Safety check-in';
+
+  @override
+  String get safetyCheckInArrived => 'I\'ve arrived safely';
+
+  @override
+  String get safetyCheckInDone => 'You checked in safely';
+
+  @override
+  String get guidelinesTitle => 'Community guidelines';
+
+  @override
+  String get guidelinesAccept => 'I agree';
+
+  @override
+  String get guidelinesBody =>
+      'GreenGo is a cross-cultural community for discovery, language exchange, local events and friendship. Be respectful and welcoming to people from every culture. This is not a dating app. No harassment, hate speech, spam or explicit content. Report anything that doesn\'t belong.';
+
+  @override
+  String get businessSectionTitle => 'Business';
+
+  @override
+  String get businessSectionSubtitle => 'Tools for your business';
+
+  @override
+  String get businessHubAccount => 'Business account';
+
+  @override
+  String get businessHubAnalytics => 'Analytics';
+
+  @override
+  String get businessHubFeatured => 'Featured placements';
+
+  @override
+  String get becomeBusinessAction => 'Become one';
+
+  @override
+  String get becomeBusinessPermanentHint =>
+      'One-time upgrade. This can\'t be undone.';
+
+  @override
+  String get becomeBusinessConfirmTitle => 'Become a business account?';
+
+  @override
+  String get becomeBusinessConfirmMessage =>
+      'This is permanent — your account becomes a public business account and can\'t be switched back.';
+
+  @override
+  String get becomeBusinessConfirmAction => 'Make it permanent';
+
+  @override
+  String get becomeBusinessSuccess => 'Your account is now a business account.';
+
+  @override
+  String get becomeBusinessError =>
+      'Couldn\'t switch your account. Please try again.';
+
+  @override
+  String get businessAccountActive => 'Business account active (permanent)';
+
+  @override
+  String get businessRequiresPlatinum =>
+      'Business accounts are a Platinum feature. Upgrade to unlock your storefront, followers and lead capture.';
+
+  @override
+  String get viewStorefront => 'View storefront';
+
+  @override
+  String get requestVerification => 'Request verification';
+
+  @override
+  String get requestVerificationPending => 'Verification pending';
+
+  @override
+  String get requestVerificationTitle => 'Request verification';
+
+  @override
+  String get requestVerificationMessage =>
+      'Tell us a little about your business so we can verify it. Our team will review your request.';
+
+  @override
+  String get requestVerificationNoteHint =>
+      'Add a note (website, address, anything that helps us verify you)';
+
+  @override
+  String get requestVerificationSubmitted => 'Verification request submitted.';
+
+  @override
+  String get requestVerificationError =>
+      'Couldn\'t submit your request. Please try again.';
+
+  @override
+  String get submit => 'Submit';
+
+  @override
+  String get businessVerifiedBadgeTooltip => 'Verified business';
+
+  @override
+  String get businessLinks => 'Links';
+
+  @override
+  String get businessOpeningHours => 'Opening hours';
+
+  @override
+  String get businessHoursNotProvided => 'Opening hours not provided';
+
+  @override
+  String get businessGallery => 'Gallery';
+
+  @override
+  String get businessUpcomingEvents => 'Upcoming events';
+
+  @override
+  String get businessNoUpcomingEvents => 'No upcoming events yet.';
+
+  @override
+  String get businessCommunities => 'Communities';
+
+  @override
+  String get businessNoCommunities => 'No communities yet.';
+
+  @override
+  String get businessContact => 'Contact';
+
+  @override
+  String get businessFollow => 'Follow';
+
+  @override
+  String get businessFollowing => 'Following';
+
+  @override
+  String get businessFollowError =>
+      'Couldn\'t update follow. Please try again.';
+
+  @override
+  String businessFollowersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count followers',
+      one: '1 follower',
+      zero: 'No followers',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String businessMembersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count members',
+      one: '1 member',
+      zero: 'No members',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get adminBusinessVerifications => 'Business Verifications';
+
+  @override
+  String get adminBusinessVerificationsSubtitle =>
+      'Review and approve business verified badges';
+
+  @override
+  String get adminApproveBusinessVerification => 'Approve';
+
+  @override
+  String get adminRejectBusinessVerification => 'Reject Business Verification';
+
+  @override
+  String get adminBusinessRejectReasonHint => 'Reason for rejection (optional)';
+
+  @override
+  String get adminBusinessApproved => 'Business verified';
+
+  @override
+  String get adminBusinessRejected => 'Business verification rejected';
+
+  @override
+  String get adminNoPendingBusinessVerifications =>
+      'No pending business verifications';
+
+  @override
+  String get adminAccessDenied => 'Access denied. Admins only.';
+
+  @override
+  String get adminBusinessVerifiedNotificationTitle =>
+      'Your business is verified';
+
+  @override
+  String get adminBusinessVerifiedNotificationBody =>
+      'Your business now shows the gold verified badge.';
+
+  @override
+  String adminSubmittedLabel(String date) {
+    return 'Submitted $date';
+  }
+
+  @override
+  String get communitiesSponsored => 'Sponsored';
+
+  @override
+  String get communitiesSponsorThisCommunity => 'Sponsor this community';
+
+  @override
+  String get communitiesSponsorSubtitle => 'Pin a promo to the top for members';
+
+  @override
+  String get communitiesSponsorFeatureName => 'Community sponsorship';
+
+  @override
+  String get communitiesSponsorRequiresPlatinum =>
+      'Sponsoring a community and pinning a promo is a Platinum business feature.';
+
+  @override
+  String get communitiesEditSponsorship => 'Edit sponsorship & promo';
+
+  @override
+  String get communitiesMarkAsSponsored => 'Mark as sponsored';
+
+  @override
+  String get communitiesPromoTitleLabel => 'Promo title';
+
+  @override
+  String get communitiesPromoTitleHint => 'e.g. 20% off this weekend';
+
+  @override
+  String get communitiesPromoBodyLabel => 'Promo message';
+
+  @override
+  String get communitiesPromoBodyHint => 'Tell members about your offer';
+
+  @override
+  String get communitiesPromoImageLabel => 'Image URL (optional)';
+
+  @override
+  String get communitiesPromoLinkEventLabel => 'Linked event ID (optional)';
+
+  @override
+  String get communitiesPromoLinkUrlLabel => 'Link URL (optional)';
+
+  @override
+  String get communitiesPromoTitleRequired => 'Please enter a promo title';
+
+  @override
+  String get communitiesSaveSponsorship => 'Save';
+
+  @override
+  String get communitiesRemovePromo => 'Remove promo';
+
+  @override
+  String get exploreSearchTooltip => 'Search';
+
+  @override
+  String get exploreQrTooltip => 'My QR codes';
+
+  @override
+  String get universalSearchTitle => 'Search';
+
+  @override
+  String get universalSearchHint => 'Search people and events';
+
+  @override
+  String get universalSearchTabPeople => 'People';
+
+  @override
+  String get universalSearchTabEvents => 'Events';
+
+  @override
+  String get universalSearchEmptyPrompt =>
+      'Find people to chat with and events to join';
+
+  @override
+  String get universalSearchNoPeople => 'No people found';
+
+  @override
+  String get universalSearchNoEvents => 'No events found';
+
+  @override
+  String get qrHubTitle => 'QR codes';
+
+  @override
+  String get qrHubTabMyTickets => 'My tickets';
+
+  @override
+  String get qrHubTabScan => 'Scan';
+
+  @override
+  String get qrHubNoTickets =>
+      'No upcoming tickets yet. Join an event to get your QR code.';
+
+  @override
+  String get qrHubTicketHint => 'Tap a ticket to open its full QR code';
+
+  @override
+  String get qrHubScanInstructions => 'Point your camera at a GreenGo QR code';
+
+  @override
+  String get qrHubInvalidCode => 'That\'s not a valid GreenGo code';
+
+  @override
+  String get qrHubJoinedEvent => 'You\'re going! Opening the event…';
+
+  @override
+  String get eventsRepeats => 'Repeats';
+
+  @override
+  String get eventsRepeatNone => 'Does not repeat';
+
+  @override
+  String get eventsRepeatDaily => 'Daily';
+
+  @override
+  String get eventsRepeatWeekly => 'Weekly';
+
+  @override
+  String get eventsRepeatMonthly => 'Monthly';
+
+  @override
+  String get eventsRepeatInterval => 'Every';
+
+  @override
+  String get eventsRepeatCount => 'Occurrences';
+
+  @override
+  String get eventsRecurringLabel => 'Recurring';
+
+  @override
+  String get eventsCancelSeries => 'Cancel entire series';
+
+  @override
+  String get eventsCancelSeriesConfirm =>
+      'Cancel all future occurrences of this recurring event?';
+
+  @override
+  String get eventsSeriesCancelled => 'Series cancelled';
+
+  @override
+  String get eventsSeriesCancelError => 'Couldn\'t cancel the series';
+
+  @override
+  String get eventsSaveAsDraft => 'Save as draft';
+
+  @override
+  String get eventsSchedule => 'Schedule';
+
+  @override
+  String get eventsStatusDraft => 'Draft';
+
+  @override
+  String get eventsStatusScheduled => 'Scheduled';
+
+  @override
+  String get eventsStatusCancelled => 'Cancelled';
+
+  @override
+  String eventsScheduledForDate(String date) {
+    return 'Scheduled for $date';
+  }
+
+  @override
+  String eventsRepeatCap(int max) {
+    return 'Up to $max occurrences';
+  }
+
+  @override
+  String get eventsTicketTiers => 'Ticket tiers';
+
+  @override
+  String get eventsAddTier => 'Add tier';
+
+  @override
+  String get eventsTierName => 'Tier name';
+
+  @override
+  String get eventsTierPriceCoins => 'Price (coins, 0 = free)';
+
+  @override
+  String get eventsTierCapacity => 'Capacity (0 = unlimited)';
+
+  @override
+  String get eventsFreeTier => 'Free';
+
+  @override
+  String get eventsSelectTier => 'Select a ticket';
+
+  @override
+  String get eventsJoinWaitlist => 'Join waitlist';
+
+  @override
+  String get eventsOnWaitlist => 'On waitlist';
+
+  @override
+  String eventsWaitlistPosition(int position) {
+    return 'You\'re #$position on the waitlist';
+  }
+
+  @override
+  String eventsTierPriceValue(int coins) {
+    return '$coins coins';
+  }
+
+  @override
+  String eventsTierCapacityValue(int capacity) {
+    return '$capacity spots';
+  }
+
+  @override
+  String get eventsRsvpError => 'Couldn\'t update your RSVP';
 }

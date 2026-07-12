@@ -10,6 +10,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/cache_service.dart';
+import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/base_membership_dialog.dart';
 import '../../../../core/widgets/membership_badge.dart';
@@ -41,6 +42,10 @@ import '../../../gamification/presentation/screens/daily_challenges_screen.dart'
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 import '../../../gamification/presentation/screens/personal_stats_screen.dart';
 import '../../../gamification/presentation/screens/progress_screen.dart';
+import '../../../passport/presentation/screens/cultural_passport_screen.dart';
+import '../../../referral/presentation/screens/referral_screen.dart';
+import '../../../business/presentation/screens/business_account_screen.dart';
+import '../../../business/presentation/screens/business_hub_screen.dart';
 import '../../../main/presentation/screens/main_navigation_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart' as profile_entity;
@@ -120,6 +125,10 @@ class EditProfileScreen extends StatelessWidget {
               return;
             }
             if (state is ProfileBoostActivated) {
+              // Count this activated boost toward the tier's monthly allotment.
+              if (userId != null) {
+                TierGate().recordBoost(userId!);
+              }
               final remaining = state.expiry.difference(DateTime.now());
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
@@ -308,6 +317,24 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.share,
                         onTap: () => _navigateToEditSocialLinks(context, activeProfile),
                       ),
+                      const SizedBox(height: 16),
+                      // Business / Venue Account Section.
+                      // Once converted, the profile becomes a full business
+                      // account and this tile opens the Business hub (all
+                      // business tools). Before conversion it opens the
+                      // become-a-business flow.
+                      EditSectionCard(
+                        title: activeProfile.isBusiness
+                            ? AppLocalizations.of(context)!.businessSectionTitle
+                            : AppLocalizations.of(context)!.becomeBusiness,
+                        subtitle: activeProfile.isBusiness
+                            ? AppLocalizations.of(context)!.businessSectionSubtitle
+                            : AppLocalizations.of(context)!.businessAccountTitle,
+                        icon: Icons.storefront,
+                        onTap: () => activeProfile.isBusiness
+                            ? _navigateToBusinessHub(context, activeProfile)
+                            : _navigateToBusinessAccount(context, activeProfile),
+                      ),
                     ],
                   ),
 
@@ -392,6 +419,14 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToCoinShop(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
+                      // Invite Friends (referral loop)
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.referralInviteFriends,
+                        subtitle: AppLocalizations.of(context)!.referralHowItWorks,
+                        icon: Icons.card_giftcard,
+                        onTap: () => _navigateToReferral(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
                       // Progress & Growth (level, achievements, challenges, ranking)
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.profileProgressGrowth,
@@ -435,6 +470,13 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: AppLocalizations.of(context)!.achievementsSubtitle,
                         icon: Icons.emoji_events,
                         onTap: () => _navigateToAchievements(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.culturalPassportTitle,
+                        subtitle: AppLocalizations.of(context)!.culturalPassportSubtitle,
+                        icon: Icons.travel_explore,
+                        onTap: () => _navigateToCulturalPassport(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
                       EditSectionCard(
@@ -664,6 +706,34 @@ class EditProfileScreen extends StatelessWidget {
     // Profile updates are propagated through shared BLoC - no reload needed
   }
 
+  Future<void> _navigateToBusinessAccount(
+      BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: BusinessAccountScreen(profile: currentProfile),
+        ),
+      ),
+    );
+    // Profile updates are propagated through shared BLoC - no reload needed
+  }
+
+  Future<void> _navigateToBusinessHub(
+      BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: BusinessHubScreen(profile: currentProfile),
+        ),
+      ),
+    );
+    // Profile updates are propagated through shared BLoC - no reload needed
+  }
+
   Future<void> _navigateToEditBio(BuildContext context, Profile currentProfile) async {
     final profileBloc = context.read<ProfileBloc>();
     await Navigator.of(context).push(
@@ -834,6 +904,14 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
+  void _navigateToReferral(BuildContext context, Profile profile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => ReferralScreen(userId: profile.userId),
+      ),
+    );
+  }
+
   void _navigateToProgress(BuildContext context, Profile currentProfile) {
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -865,6 +943,14 @@ class EditProfileScreen extends StatelessWidget {
             ..add(LoadUserAchievements(currentProfile.userId)),
           child: AchievementsScreen(userId: currentProfile.userId),
         ),
+      ),
+    );
+  }
+
+  void _navigateToCulturalPassport(BuildContext context, Profile currentProfile) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => CulturalPassportScreen(userId: currentProfile.userId),
       ),
     );
   }
@@ -1543,6 +1629,11 @@ class EditProfileScreen extends StatelessWidget {
       return;
     }
 
+    // Tier gate: boosts are a paid-plan perk (Base gets 0/month → blocked with
+    // an upgrade prompt; paid tiers are capped by boostsPerMonth).
+    if (!await TierGate().ensureBoost(context, profile.userId)) return;
+    if (!context.mounted) return;
+
     const cost = CoinFeaturePrices.boost;
 
     // Show confirmation dialog
@@ -1852,6 +1943,14 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   Future<void> _activateTraveler(BuildContext context, Profile profile) async {
+    // Tier gate: Traveler Mode requires a paid plan (Base is blocked with an
+    // upgrade prompt). Resolved from the already-loaded profile tier.
+    if (!await TierGate()
+        .ensureTravelMode(context, profile.userId, knownTier: profile.membershipTier)) {
+      return;
+    }
+    if (!context.mounted) return;
+
     // Platinum gets it free, Gold pays 100 coins
     final isPlatinum = profile.membershipTier == MembershipTier.platinum ||
         profile.membershipTier == MembershipTier.test;

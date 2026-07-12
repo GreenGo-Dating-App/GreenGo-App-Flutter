@@ -1,5 +1,9 @@
 import 'package:equatable/equatable.dart';
 
+import 'event_scheduling.dart';
+
+export 'event_scheduling.dart';
+
 /// Event Category
 enum EventCategory {
   dating,
@@ -17,18 +21,27 @@ enum EventCategory {
 }
 
 /// Event Status
+///
+/// [scheduled] events are auto-published client-side: every feed treats them as
+/// live only once `publishAt <= now` (no backend flip required). Until then they
+/// are visible ONLY to their organizer, exactly like [draft].
 enum EventStatus {
   draft,
+  scheduled,
   published,
   cancelled,
   completed,
 }
 
 /// RSVP Status
+///
+/// [waitlist] means the attendee joined a full tier/event and is queued; they
+/// are auto-promoted to [going] (oldest first) when a going attendee cancels.
 enum RSVPStatus {
   going,
   interested,
   notGoing,
+  waitlist,
 }
 
 /// Event visibility: public events are discoverable by anyone; private events
@@ -92,6 +105,11 @@ class Event extends Equatable {
     this.externalLinks = const [],
     this.isFeatured = false,
     this.featuredUntil,
+    this.guestsAllowedPerAttendee = 0,
+    this.seriesId,
+    this.recurrence,
+    this.publishAt,
+    this.ticketTiers = const [],
   });
   final String id;
   final String organizerId;
@@ -133,6 +151,61 @@ class Event extends Equatable {
   // Promotion: featured/boosted events surface first in discovery.
   final bool isFeatured;
   final DateTime? featuredUntil;
+
+  /// Number of guests each attendee may bring (0 = guests not allowed).
+  /// Used by the QR check-in flow to compute total headcount.
+  final int guestsAllowedPerAttendee;
+
+  // ---- Recurring series ----
+  /// Shared across every occurrence of a recurring series (null = standalone).
+  /// Each occurrence is still a NORMAL `events` doc so lists/QR/attendees work
+  /// unchanged.
+  final String? seriesId;
+
+  /// How this event repeats (null / RecurrenceFrequency.none = does not repeat).
+  final EventRecurrence? recurrence;
+
+  // ---- Draft & scheduled publishing (auto-publish without a backend) ----
+  /// When [status] == scheduled, the event goes live once now >= publishAt.
+  final DateTime? publishAt;
+
+  // ---- Ticketing ----
+  /// Optional admission tiers. Empty = single implicit tier using [price] /
+  /// [maxAttendees]; adding tiers drives per-tier pricing + capacity + waitlist.
+  final List<TicketTier> ticketTiers;
+
+  /// Whether attendees are permitted to bring at least one guest.
+  bool get guestsAllowed => guestsAllowedPerAttendee > 0;
+
+  /// Whether this event belongs to a recurring series.
+  bool get isRecurring =>
+      (seriesId != null && seriesId!.isNotEmpty) ||
+      (recurrence?.isRecurring ?? false);
+
+  /// Whether the event has organizer-defined ticket tiers.
+  bool get hasTicketTiers => ticketTiers.isNotEmpty;
+
+  /// CRITICAL auto-publish gate. An event is "live" (discoverable / joinable) when
+  /// it is published, OR scheduled with its publish time reached. Drafts and
+  /// not-yet-due scheduled events are NOT live (organizer-only visibility).
+  bool get isLive {
+    switch (status) {
+      case EventStatus.published:
+        return true;
+      case EventStatus.scheduled:
+        return publishAt != null && !publishAt!.isAfter(DateTime.now());
+      case EventStatus.draft:
+      case EventStatus.cancelled:
+      case EventStatus.completed:
+        return false;
+    }
+  }
+
+  /// True for a scheduled event whose publish time is still in the future.
+  bool get isPendingSchedule =>
+      status == EventStatus.scheduled &&
+      publishAt != null &&
+      publishAt!.isAfter(DateTime.now());
 
   /// Whether the event is currently boosted/featured.
   bool get isCurrentlyFeatured =>
@@ -200,6 +273,11 @@ class Event extends Equatable {
         externalLinks,
         isFeatured,
         featuredUntil,
+        guestsAllowedPerAttendee,
+        seriesId,
+        recurrence,
+        publishAt,
+        ticketTiers,
       ];
 
   Event copyWith({
@@ -241,6 +319,11 @@ class Event extends Equatable {
     List<ExternalLink>? externalLinks,
     bool? isFeatured,
     DateTime? featuredUntil,
+    int? guestsAllowedPerAttendee,
+    String? seriesId,
+    EventRecurrence? recurrence,
+    DateTime? publishAt,
+    List<TicketTier>? ticketTiers,
   }) {
     return Event(
       id: id ?? this.id,
@@ -281,6 +364,12 @@ class Event extends Equatable {
       externalLinks: externalLinks ?? this.externalLinks,
       isFeatured: isFeatured ?? this.isFeatured,
       featuredUntil: featuredUntil ?? this.featuredUntil,
+      guestsAllowedPerAttendee:
+          guestsAllowedPerAttendee ?? this.guestsAllowedPerAttendee,
+      seriesId: seriesId ?? this.seriesId,
+      recurrence: recurrence ?? this.recurrence,
+      publishAt: publishAt ?? this.publishAt,
+      ticketTiers: ticketTiers ?? this.ticketTiers,
     );
   }
 }
@@ -299,6 +388,10 @@ class EventAttendee extends Equatable {
     this.isAnonymous = false,
     this.muteNotifications = false,
     this.visibleToOrganizerOnly = false,
+    this.checkedIn = false,
+    this.checkedInAt,
+    this.guestCount = 0,
+    this.tierId,
   });
   final String id;
   final String eventId;
@@ -308,6 +401,23 @@ class EventAttendee extends Equatable {
   final RSVPStatus status;
   final DateTime rsvpDate;
   final bool isApproved;
+
+  /// Which ticket tier this attendee joined (null = the implicit single tier).
+  final String? tierId;
+
+  /// Whether this attendee is queued on the waitlist (tier/event was full).
+  bool get isWaitlisted => status == RSVPStatus.waitlist;
+
+  // ---- QR check-in (accountability of who actually attended) ----
+  /// Whether the organizer scanned this attendee's ticket at the door.
+  final bool checkedIn;
+  /// When the attendee was checked in (null until scanned).
+  final DateTime? checkedInAt;
+  /// How many guests this attendee is bringing (0..event.guestsAllowedPerAttendee).
+  final int guestCount;
+
+  /// This attendee's contribution to the headcount (themselves + guests).
+  int get headcount => 1 + (guestCount < 0 ? 0 : guestCount);
 
   // ---- Attendee privacy controls (more control for the user) ----
   /// Hidden from everyone's attendee roster (still counted by the organizer).
@@ -340,6 +450,10 @@ class EventAttendee extends Equatable {
     bool? isAnonymous,
     bool? muteNotifications,
     bool? visibleToOrganizerOnly,
+    bool? checkedIn,
+    DateTime? checkedInAt,
+    int? guestCount,
+    String? tierId,
   }) {
     return EventAttendee(
       id: id,
@@ -355,6 +469,10 @@ class EventAttendee extends Equatable {
       muteNotifications: muteNotifications ?? this.muteNotifications,
       visibleToOrganizerOnly:
           visibleToOrganizerOnly ?? this.visibleToOrganizerOnly,
+      checkedIn: checkedIn ?? this.checkedIn,
+      checkedInAt: checkedInAt ?? this.checkedInAt,
+      guestCount: guestCount ?? this.guestCount,
+      tierId: tierId ?? this.tierId,
     );
   }
 
@@ -372,5 +490,9 @@ class EventAttendee extends Equatable {
         isAnonymous,
         muteNotifications,
         visibleToOrganizerOnly,
+        checkedIn,
+        checkedInAt,
+        guestCount,
+        tierId,
       ];
 }

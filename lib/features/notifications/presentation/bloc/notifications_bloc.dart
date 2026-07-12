@@ -45,6 +45,7 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
         GetNotificationsParams(
           userId: event.userId,
           unreadOnly: event.unreadOnly,
+          limit: event.limit,
         ),
       ).timeout(
         const Duration(seconds: 30),

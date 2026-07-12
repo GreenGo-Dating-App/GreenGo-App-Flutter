@@ -1,5 +1,40 @@
 {
   "@@locale": "en",
+  "culturalPassportTitle": "Cultural Passport",
+  "culturalPassportSubtitle": "Stamps you collect from the cultures, languages and events you explore",
+  "passportSectionCountries": "Countries",
+  "passportSectionLanguages": "Languages",
+  "passportSectionEvents": "Events",
+  "passportLoading": "Loading your passport…",
+  "passportEarned": "Earned",
+  "passportLocked": "Locked",
+  "passportEmpty": "Start chatting, learning languages and joining events to earn your first stamps.",
+  "passportProgressSummary": "{countries} countries · {languages} languages · {events} events",
+  "@passportProgressSummary": {
+    "placeholders": {
+      "countries": { "type": "int" },
+      "languages": { "type": "int" },
+      "events": { "type": "int" }
+    }
+  },
+  "passportOverallProgress": "{percent}% explored",
+  "@passportOverallProgress": {
+    "placeholders": {
+      "percent": { "type": "int" }
+    }
+  },
+  "passportEventDating": "Dating",
+  "passportEventSocial": "Social",
+  "passportEventSports": "Sports",
+  "passportEventFood": "Food",
+  "passportEventNightlife": "Nightlife",
+  "passportEventOutdoor": "Outdoor",
+  "passportEventArts": "Arts",
+  "passportEventGaming": "Gaming",
+  "passportEventTravel": "Travel",
+  "passportEventWellness": "Wellness",
+  "passportEventLanguageExchange": "Language Exchange",
+  "passportEventOther": "Other",
   "tourGotIt": "Got it",
   "tourWelcomeTitle": "Welcome to GreenGo!",
   "tourWelcomeDesc": "This is your Discovery grid — real people around you, sorted by distance. Let's learn the gestures that make GreenGo quick to use.",
@@ -1649,6 +1684,15 @@
   "discoveryFilterSuperLiked": "Priority",
   "discoveryFilterNetwork": "My Network",
   "discoveryFilterTravelers": "Travelers",
+  "discoveryLimitReached": "You've reached your discovery limit",
+  "discoverySeeMoreCoins": "Spend {coins} coins to see more",
+  "@discoverySeeMoreCoins": {
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
   "discoveryPreferencesTitle": "Discovery Preferences",
   "discoveryPreferencesTooltip": "Discovery Preferences",
   "discoverySwitchToGrid": "Switch to grid mode",
@@ -1847,6 +1891,107 @@
   "exitApp": "Exit App?",
   "exitAppConfirmation": "Are you sure you want to exit GreenGo?",
   "exploreLanguages": "Explore Languages",
+  "exploreTitle": "Explore",
+  "communityTabTitle": "Community",
+  "exploreHeadline": "Explore {city}",
+  "@exploreHeadline": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "exploreSubtitle": "Cultural experiences and language partners near you",
+  "explorePracticeLanguage": "Practice a language",
+  "exploreNetworkDiscovery": "Network Discovery",
+  "exploreNetworkDiscoverySubtitle": "People to connect with in {country}",
+  "@exploreNetworkDiscoverySubtitle": {
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "exploreSeeAll": "See all",
+  "exploreHappeningThisWeek": "Happening this week",
+  "exploreJoin": "Join",
+  "exploreFeatured": "Featured experience",
+  "exploreSpeaksLearning": "speaks {speaks} · learning {learning}",
+  "@exploreSpeaksLearning": {
+    "placeholders": {
+      "speaks": {
+        "type": "String"
+      },
+      "learning": {
+        "type": "String"
+      }
+    }
+  },
+  "exploreSpeaks": "speaks {language}",
+  "@exploreSpeaks": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "exploreAroundYou": "People around you",
+  "exploreSameInterests": "People with your same interests",
+  "exploreSpeaksLanguage": "People that speak {language}",
+  "@exploreSpeaksLanguage": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "exploreCommunityEventsNearby": "Community events near you",
+  "exploreNoPartners": "No language partners nearby yet — check back soon.",
+  "exploreNoEvents": "No experiences to show yet — check back soon.",
+  "exploreNoCommunities": "No communities to join yet — check back soon.",
+  "exploreGoingCount": "{count} going",
+  "@exploreGoingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exploreFeaturedEvents": "Featured events",
+  "exploreFeaturedAttractions": "Featured attractions",
+  "exploreMyNextEvents": "My next events",
+  "exploreCommunitiesTitle": "Communities to join",
+  "exploreMembersCount": "{count} members",
+  "@exploreMembersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exploreCountrySpotlight": "Country Spotlight",
+  "greetingMorning": "Good morning",
+  "greetingAfternoon": "Good afternoon",
+  "greetingEvening": "Good evening",
+  "greetingNight": "Good night",
+  "statCoins": "Coins",
+  "statTier": "Tier",
+  "statCountries": "Countries",
+  "statPeople": "People",
+  "networkWorldMap": "World Network",
+  "networkDiscoveryDistanceKm": "{distance} km away",
+  "@networkDiscoveryDistanceKm": {
+    "placeholders": {
+      "distance": {
+        "type": "String"
+      }
+    }
+  },
+  "connectAction": "Connect",
+  "connectError": "Could not start the chat. Please try again.",
+  "sayHiAction": "Say hi",
+  "newConnectionLabel": "New connection",
+  "connectionsTitle": "Connections",
   "exploreMapDistanceAway": "~{distance} km away",
   "exploreMapError": "Could not load nearby users",
   "exploreMapExpandRadius": "Expand Radius",
@@ -3433,7 +3578,7 @@
   "onboardingAddPhotosSubtitle": "Add photos that represent the real you",
   "onboardingAiVerifiedDescription": "Your photos are verified using AI to ensure authenticity",
   "onboardingAiVerifiedPhotos": "AI Verified Photos",
-  "onboardingBioHint": "Tell us about your interests, hobbies, what you're looking for...",
+  "onboardingBioHint": "Tell us about your interests, the languages you speak, and the cultures you'd love to explore...",
   "onboardingBioMinLength": "Bio must be at least 50 characters",
   "onboardingChooseFromGallery": "Choose from Gallery",
   "onboardingCompleteAllFields": "Please complete all fields",
@@ -3452,7 +3597,7 @@
   "onboardingGenderOther": "Other",
   "onboardingHoldIdNextToFace": "Hold your ID next to your face",
   "onboardingIdentifyAs": "I identify as",
-  "onboardingInterestsHelpMatches": "Your interests help us find better matches for you",
+  "onboardingInterestsHelpMatches": "Your interests help us connect you with people who share your culture and languages",
   "onboardingInterestsSubtitle": "Select at least 3 interests (max 10)",
   "onboardingLanguages": "Languages",
   "onboardingLanguagesSelected": "{count}/3 selected",
@@ -5263,6 +5408,14 @@
   "groupTagsSaved": "Tags saved",
   "groupTagsSaveFailed": "Couldn't save tags",
   "groupTagsLimitReached": "Tag limit reached",
+  "peopleTagsEditTitle": "Tags for {name}",
+  "@peopleTagsEditTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "groupTranslationSettings": "Translation",
   "groupTranslateMessages": "Translate messages",
   "groupShowOriginal": "Show original text",
@@ -5300,5 +5453,276 @@
     "placeholders": {
       "date": { "type": "String" }
     }
-  }
+  },
+  "eventMyTicket": "My ticket",
+  "eventScanCheckIn": "Scan / Check-in",
+  "eventAttendance": "Attendance",
+  "eventCheckedIn": "Checked in",
+  "eventNotCheckedIn": "Not here yet",
+  "eventGuestsAllowedLabel": "Guests allowed per attendee",
+  "eventBringGuests": "Bring guests",
+  "eventInvalidTicket": "Invalid ticket for this event",
+  "eventScanInstructions": "Point the camera at an attendee's QR code",
+  "eventTotalHeadcount": "Total headcount",
+  "eventCameraPermission": "Camera permission is required to scan",
+  "eventTicketSubtitle": "Show this QR at the entrance",
+  "eventGuestCount": "{count} of {max} guests",
+  "@eventGuestCount": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "max": { "type": "int" }
+    }
+  },
+  "eventCheckedInSuccess": "{name} checked in",
+  "@eventCheckedInSuccess": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "eventAlreadyCheckedIn": "{name} already checked in",
+  "@eventAlreadyCheckedIn": {
+    "placeholders": {
+      "name": { "type": "String" }
+    }
+  },
+  "eventGuestsBringing": "+{count} guests",
+  "@eventGuestsBringing": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "connectDailyLimitReached": "You've reached your daily limit of {limit} new connections. Upgrade to connect with more people!",
+  "@connectDailyLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+  "boostFeatureName": "Profile Boost",
+  "boostRequiresTierDescription": "Profile boosts are a paid-membership perk. Upgrade your plan to boost your profile and get seen by more people.",
+  "boostMonthlyLimitReached": "You've used all {limit} profile boosts included in your plan this month. Upgrade for more.",
+  "@boostMonthlyLimitReached": {
+    "placeholders": {
+      "limit": { "type": "int" }
+    }
+  },
+  "travelModeFeatureName": "Traveler Mode",
+  "travelModeRequiresTierDescription": "Traveler Mode lets you appear in another city's discovery feed. Upgrade your plan to unlock it.",
+  "exploreRecommended": "Recommended for you",
+  "businessAccountTitle": "Business account",
+  "becomeBusiness": "Become a business",
+  "businessProfileLabel": "Business profile",
+  "businessCategoryLabel": "Business category",
+  "businessVerifiedLabel": "Verified business",
+  "featureThisEvent": "Feature this event",
+  "featureEventCostLabel": "Feature this event · {cost} coins",
+  "@featureEventCostLabel": {
+    "placeholders": { "cost": { "type": "int" } }
+  },
+  "featureEventActive": "Featured until {date}",
+  "@featureEventActive": {
+    "placeholders": { "date": { "type": "String" } }
+  },
+  "featureEventConfirm": "Feature this event for {cost} coins?",
+  "@featureEventConfirm": {
+    "placeholders": { "cost": { "type": "int" } }
+  },
+  "referralTitle": "Invite friends",
+  "referralInviteFriends": "Invite friends",
+  "referralYourCode": "Your referral code",
+  "referralShareCta": "Share",
+  "referralShareMessage": "Join me on GreenGo!",
+  "referralRewardEarned": "Coins earned",
+  "referralCountLabel": "Friends invited",
+  "referralHowItWorks": "Share your code — when a friend joins with it, you both earn coins.",
+  "streakTitle": "Streak",
+  "streakDaysLabel": "day streak",
+  "streakKeepGoing": "Keep it going!",
+  "missionsTitle": "Missions",
+  "missionsSubtitle": "Complete missions to earn coins",
+  "missionProgressLabel": "Progress",
+  "missionRewardLabel": "Reward",
+  "missionCompleteLabel": "Completed",
+  "onboardingWelcomeTitle": "Welcome to GreenGo",
+  "onboardingWelcomeBody": "Discover cultures, practice languages, find local events, and meet people near you — no language barriers.",
+  "onboardingPickInterests": "What do you love?",
+  "onboardingPickLanguages": "Languages you speak",
+  "savedSearchesTitle": "Saved searches",
+  "saveThisSearch": "Save this search",
+  "savedSearchSaved": "Search saved",
+  "savedSearchRun": "Run",
+  "savedSearchEmpty": "No saved searches yet",
+  "savedSearchAlertsToggle": "Alerts",
+  "exploreFeaturedCommunity": "Featured community events",
+  "notificationMarkAllRead": "Mark all read",
+  "analyticsTitle": "Analytics",
+  "analyticsPlatinumOnly": "Analytics is a Platinum feature.",
+  "analyticsEventsHosted": "Events hosted",
+  "analyticsTotalAttendees": "Total attendees",
+  "analyticsReach": "Reach",
+  "analyticsUpgradeCta": "Upgrade to Platinum",
+  "safetyVerifiedBadge": "Verified",
+  "safetyReportUser": "Report",
+  "safetyBlockUser": "Block",
+  "safetyCheckInTitle": "Safety check-in",
+  "safetyCheckInArrived": "I've arrived safely",
+  "safetyCheckInDone": "You checked in safely",
+  "guidelinesTitle": "Community guidelines",
+  "guidelinesAccept": "I agree",
+  "guidelinesBody": "GreenGo is a cross-cultural community for discovery, language exchange, local events and friendship. Be respectful and welcoming to people from every culture. This is not a dating app. No harassment, hate speech, spam or explicit content. Report anything that doesn't belong.",
+  "businessSectionTitle": "Business",
+  "businessSectionSubtitle": "Tools for your business",
+  "businessHubAccount": "Business account",
+  "businessHubAnalytics": "Analytics",
+  "businessHubFeatured": "Featured placements",
+  "becomeBusinessAction": "Become one",
+  "becomeBusinessPermanentHint": "One-time upgrade. This can't be undone.",
+  "becomeBusinessConfirmTitle": "Become a business account?",
+  "becomeBusinessConfirmMessage": "This is permanent — your account becomes a public business account and can't be switched back.",
+  "becomeBusinessConfirmAction": "Make it permanent",
+  "becomeBusinessSuccess": "Your account is now a business account.",
+  "becomeBusinessError": "Couldn't switch your account. Please try again.",
+  "businessAccountActive": "Business account active (permanent)",
+  "businessRequiresPlatinum": "Business accounts are a Platinum feature. Upgrade to unlock your storefront, followers and lead capture.",
+  "viewStorefront": "View storefront",
+  "requestVerification": "Request verification",
+  "requestVerificationPending": "Verification pending",
+  "requestVerificationTitle": "Request verification",
+  "requestVerificationMessage": "Tell us a little about your business so we can verify it. Our team will review your request.",
+  "requestVerificationNoteHint": "Add a note (website, address, anything that helps us verify you)",
+  "requestVerificationSubmitted": "Verification request submitted.",
+  "requestVerificationError": "Couldn't submit your request. Please try again.",
+  "submit": "Submit",
+  "businessVerifiedBadgeTooltip": "Verified business",
+  "businessLinks": "Links",
+  "businessOpeningHours": "Opening hours",
+  "businessHoursNotProvided": "Opening hours not provided",
+  "businessGallery": "Gallery",
+  "businessUpcomingEvents": "Upcoming events",
+  "businessNoUpcomingEvents": "No upcoming events yet.",
+  "businessCommunities": "Communities",
+  "businessNoCommunities": "No communities yet.",
+  "businessContact": "Contact",
+  "businessFollow": "Follow",
+  "businessFollowing": "Following",
+  "businessFollowError": "Couldn't update follow. Please try again.",
+  "businessFollowersCount": "{count, plural, =0{No followers} one{1 follower} other{{count} followers}}",
+  "@businessFollowersCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "businessMembersCount": "{count, plural, =0{No members} one{1 member} other{{count} members}}",
+  "@businessMembersCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "adminBusinessVerifications": "Business Verifications",
+  "adminBusinessVerificationsSubtitle": "Review and approve business verified badges",
+  "adminApproveBusinessVerification": "Approve",
+  "adminRejectBusinessVerification": "Reject Business Verification",
+  "adminBusinessRejectReasonHint": "Reason for rejection (optional)",
+  "adminBusinessApproved": "Business verified",
+  "adminBusinessRejected": "Business verification rejected",
+  "adminNoPendingBusinessVerifications": "No pending business verifications",
+  "adminAccessDenied": "Access denied. Admins only.",
+  "adminBusinessVerifiedNotificationTitle": "Your business is verified",
+  "adminBusinessVerifiedNotificationBody": "Your business now shows the gold verified badge.",
+  "adminSubmittedLabel": "Submitted {date}",
+  "@adminSubmittedLabel": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "communitiesSponsored": "Sponsored",
+  "communitiesSponsorThisCommunity": "Sponsor this community",
+  "communitiesSponsorSubtitle": "Pin a promo to the top for members",
+  "communitiesSponsorFeatureName": "Community sponsorship",
+  "communitiesSponsorRequiresPlatinum": "Sponsoring a community and pinning a promo is a Platinum business feature.",
+  "communitiesEditSponsorship": "Edit sponsorship & promo",
+  "communitiesMarkAsSponsored": "Mark as sponsored",
+  "communitiesPromoTitleLabel": "Promo title",
+  "communitiesPromoTitleHint": "e.g. 20% off this weekend",
+  "communitiesPromoBodyLabel": "Promo message",
+  "communitiesPromoBodyHint": "Tell members about your offer",
+  "communitiesPromoImageLabel": "Image URL (optional)",
+  "communitiesPromoLinkEventLabel": "Linked event ID (optional)",
+  "communitiesPromoLinkUrlLabel": "Link URL (optional)",
+  "communitiesPromoTitleRequired": "Please enter a promo title",
+  "communitiesSaveSponsorship": "Save",
+  "communitiesRemovePromo": "Remove promo",
+  "exploreSearchTooltip": "Search",
+  "exploreQrTooltip": "My QR codes",
+  "universalSearchTitle": "Search",
+  "universalSearchHint": "Search people and events",
+  "universalSearchTabPeople": "People",
+  "universalSearchTabEvents": "Events",
+  "universalSearchEmptyPrompt": "Find people to chat with and events to join",
+  "universalSearchNoPeople": "No people found",
+  "universalSearchNoEvents": "No events found",
+  "qrHubTitle": "QR codes",
+  "qrHubTabMyTickets": "My tickets",
+  "qrHubTabScan": "Scan",
+  "qrHubNoTickets": "No upcoming tickets yet. Join an event to get your QR code.",
+  "qrHubTicketHint": "Tap a ticket to open its full QR code",
+  "qrHubScanInstructions": "Point your camera at a GreenGo QR code",
+  "qrHubInvalidCode": "That's not a valid GreenGo code",
+  "qrHubJoinedEvent": "You're going! Opening the event…",
+  "eventsRepeats": "Repeats",
+  "eventsRepeatNone": "Does not repeat",
+  "eventsRepeatDaily": "Daily",
+  "eventsRepeatWeekly": "Weekly",
+  "eventsRepeatMonthly": "Monthly",
+  "eventsRepeatInterval": "Every",
+  "eventsRepeatCount": "Occurrences",
+  "eventsRecurringLabel": "Recurring",
+  "eventsCancelSeries": "Cancel entire series",
+  "eventsCancelSeriesConfirm": "Cancel all future occurrences of this recurring event?",
+  "eventsSeriesCancelled": "Series cancelled",
+  "eventsSeriesCancelError": "Couldn't cancel the series",
+  "eventsSaveAsDraft": "Save as draft",
+  "eventsSchedule": "Schedule",
+  "eventsStatusDraft": "Draft",
+  "eventsStatusScheduled": "Scheduled",
+  "eventsStatusCancelled": "Cancelled",
+  "eventsScheduledForDate": "Scheduled for {date}",
+  "@eventsScheduledForDate": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "eventsRepeatCap": "Up to {max} occurrences",
+  "@eventsRepeatCap": {
+    "placeholders": {
+      "max": { "type": "int" }
+    }
+  },
+  "eventsTicketTiers": "Ticket tiers",
+  "eventsAddTier": "Add tier",
+  "eventsTierName": "Tier name",
+  "eventsTierPriceCoins": "Price (coins, 0 = free)",
+  "eventsTierCapacity": "Capacity (0 = unlimited)",
+  "eventsFreeTier": "Free",
+  "eventsSelectTier": "Select a ticket",
+  "eventsJoinWaitlist": "Join waitlist",
+  "eventsOnWaitlist": "On waitlist",
+  "eventsWaitlistPosition": "You're #{position} on the waitlist",
+  "@eventsWaitlistPosition": {
+    "placeholders": {
+      "position": { "type": "int" }
+    }
+  },
+  "eventsTierPriceValue": "{coins} coins",
+  "@eventsTierPriceValue": {
+    "placeholders": {
+      "coins": { "type": "int" }
+    }
+  },
+  "eventsTierCapacityValue": "{capacity} spots",
+  "@eventsTierCapacityValue": {
+    "placeholders": {
+      "capacity": { "type": "int" }
+    }
+  },
+  "eventsRsvpError": "Couldn't update your RSVP"
 }

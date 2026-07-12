@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
@@ -50,8 +51,8 @@ class CreateGroupScreen extends StatefulWidget {
 }
 
 class _CreateGroupScreenState extends State<CreateGroupScreen> {
-  // Max members per group is 10 (creator + up to 9 others).
-  static const int _maxOtherMembers = 9;
+  // Max members per group is 256 (creator + up to 255 others).
+  static const int _maxOtherMembers = 255;
   // How many conversations to pull per page, per query side.
   static const int _chatsPageSize = 20;
 
@@ -283,6 +284,16 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
             TextButton(
               onPressed: () => Navigator.pop(ctx),
               child: Text(l10n.tourGotIt),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(ctx);
+                TierGate().openMembershipUpgrade(
+                  context,
+                  currentUserId: widget.currentUserId,
+                );
+              },
+              child: Text(l10n.upgrade),
             ),
           ],
         ),

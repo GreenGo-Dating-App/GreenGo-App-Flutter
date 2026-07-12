@@ -19,6 +19,12 @@ class ExternalEventsDataSource {
 
   final FirebaseFirestore _firestore;
 
+  /// Attractions/experiences must carry an image to be shown. Mirrors the image
+  /// gate in `ExternalEventsPager` so even legacy image-less docs already in
+  /// Firestore never reach the UI (the ingester also skips them on write now).
+  static bool _hasImage(ExternalEvent e) =>
+      e.imageUrl != null && e.imageUrl!.isNotEmpty;
+
   /// Events of [source] within [radiusM] of (lat,lng) via geohash — for plotting
   /// per-coordinate dots in the current map viewport (no country aggregation).
   Future<List<ExternalEvent>> getInBounds({
@@ -40,6 +46,7 @@ class ExternalEventsDataSource {
         for (final doc in s.docs) {
           if (out.containsKey(doc.id)) continue;
           final e = ExternalEvent.fromFirestore(doc);
+          if (!_hasImage(e)) continue; // never plot/show image-less items
           if (e.lat == null || e.lng == null) continue;
           if (GeoQuery.distanceMeters(lat, lng, e.lat!, e.lng!) <= radiusM) {
             out[doc.id] = e;
@@ -110,7 +117,10 @@ class ExternalEventsDataSource {
           .limit(limit);
       if (startAfter != null) query = query.startAfterDocument(startAfter);
       final snap = await query.get();
-      final items = snap.docs.map(ExternalEvent.fromFirestore).toList();
+      final items = snap.docs
+          .map(ExternalEvent.fromFirestore)
+          .where(_hasImage) // drop image-less docs (incl. legacy Firestore ones)
+          .toList();
       if (items.isEmpty && startAfter == null) {
         return (items: _samplesFor(source), cursor: null);
       }
@@ -144,7 +154,10 @@ class ExternalEventsDataSource {
           .orderBy('rating', descending: true)
           .limit(limit)
           .get();
-      final items = snap.docs.map(ExternalEvent.fromFirestore).toList();
+      final items = snap.docs
+          .map(ExternalEvent.fromFirestore)
+          .where(_hasImage) // drop image-less docs (incl. legacy Firestore ones)
+          .toList();
       if (items.isEmpty) return _samplesFor(source);
       switch (sort) {
         case 'reviews':
@@ -185,7 +198,10 @@ class ExternalEventsDataSource {
           .orderBy('rating', descending: true)
           .limit(limit)
           .get();
-      final items = snap.docs.map(ExternalEvent.fromFirestore).toList();
+      final items = snap.docs
+          .map(ExternalEvent.fromFirestore)
+          .where(_hasImage) // drop image-less docs (incl. legacy Firestore ones)
+          .toList();
       if (items.isEmpty) return _samplesFor(source);
       _sortByDistance(items, userLat, userLng);
       return items;
@@ -208,6 +224,7 @@ class ExternalEventsDataSource {
           .get();
       final items = snap.docs
           .map(ExternalEvent.fromFirestore)
+          .where(_hasImage) // drop image-less docs (incl. legacy Firestore ones)
           .where((e) => (e.rating ?? 0) > 4.5)
           .take(limit)
           .toList();

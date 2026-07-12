@@ -19,6 +19,9 @@ class CommunityModel extends Community {
     super.country,
     super.lastMessagePreview,
     super.lastActivityAt,
+    super.sponsorId,
+    super.isSponsored,
+    super.pinnedPromo,
   });
 
   /// Create from Community entity
@@ -40,6 +43,9 @@ class CommunityModel extends Community {
       country: community.country,
       lastMessagePreview: community.lastMessagePreview,
       lastActivityAt: community.lastActivityAt,
+      sponsorId: community.sponsorId,
+      isSponsored: community.isSponsored,
+      pinnedPromo: community.pinnedPromo,
     );
   }
 
@@ -74,6 +80,12 @@ class CommunityModel extends Community {
       lastActivityAt: data['lastActivityAt'] != null
           ? (data['lastActivityAt'] as Timestamp).toDate()
           : null,
+      sponsorId: data['sponsorId'] as String?,
+      isSponsored: data['isSponsored'] as bool? ?? false,
+      pinnedPromo: data['pinnedPromo'] != null
+          ? PinnedPromo.fromMap(
+              Map<String, dynamic>.from(data['pinnedPromo'] as Map))
+          : null,
     );
   }
 
@@ -106,6 +118,12 @@ class CommunityModel extends Community {
       lastActivityAt: json['lastActivityAt'] != null
           ? DateTime.parse(json['lastActivityAt'] as String)
           : null,
+      sponsorId: json['sponsorId'] as String?,
+      isSponsored: json['isSponsored'] as bool? ?? false,
+      pinnedPromo: json['pinnedPromo'] != null
+          ? PinnedPromo.fromMap(
+              Map<String, dynamic>.from(json['pinnedPromo'] as Map))
+          : null,
     );
   }
 
@@ -128,6 +146,9 @@ class CommunityModel extends Community {
       'lastMessagePreview': lastMessagePreview,
       'lastActivityAt':
           lastActivityAt != null ? Timestamp.fromDate(lastActivityAt!) : null,
+      'sponsorId': sponsorId,
+      'isSponsored': isSponsored,
+      'pinnedPromo': pinnedPromo?.toMap(),
     };
   }
 
@@ -150,6 +171,9 @@ class CommunityModel extends Community {
       'country': country,
       'lastMessagePreview': lastMessagePreview,
       'lastActivityAt': lastActivityAt?.toIso8601String(),
+      'sponsorId': sponsorId,
+      'isSponsored': isSponsored,
+      'pinnedPromo': pinnedPromo?.toMap(),
     };
   }
 
@@ -172,6 +196,9 @@ class CommunityModel extends Community {
       country: country,
       lastMessagePreview: lastMessagePreview,
       lastActivityAt: lastActivityAt,
+      sponsorId: sponsorId,
+      isSponsored: isSponsored,
+      pinnedPromo: pinnedPromo,
     );
   }
 }
