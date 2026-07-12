@@ -18,7 +18,6 @@ import '../../../events/domain/entities/event_country_stat.dart';
 import '../../../events/domain/entities/external_event.dart';
 import '../../../events/domain/repositories/events_repository.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
-import '../../data/country_centroids.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../domain/entities/globe_user.dart';
@@ -48,7 +47,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
   bool _showLiveEvents = false;
   bool _showAttractions = false;
   bool _showExperiences = false;
-  List<Event> _nativeEvents = const [];
+  final List<Event> _nativeEvents = const [];
   List<EventCountryStat> _experienceStats = const []; // viator
   List<EventCountryStat> _attractionStats = const []; // tiqets
   List<EventCountryStat> _liveEventStats = const []; // ticketmaster

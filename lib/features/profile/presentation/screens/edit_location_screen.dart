@@ -368,7 +368,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                                 color: AppColors.deepBlack,
                               ),
                             )
-                          : Icon(kIsWeb ? Icons.map_outlined : Icons.my_location),
+                          : const Icon(kIsWeb ? Icons.map_outlined : Icons.my_location),
                       label: Text(_isLoadingLocation && !kIsWeb
                           ? AppLocalizations.of(context)!.profileGettingLocation
                           : AppLocalizations.of(context)!.profileUpdateCurrentLocation),

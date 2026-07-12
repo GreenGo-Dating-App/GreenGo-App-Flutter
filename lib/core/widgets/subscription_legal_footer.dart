@@ -31,7 +31,7 @@ class SubscriptionLegalFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final linkStyle = const TextStyle(
+    const linkStyle = TextStyle(
       color: AppColors.richGold,
       fontSize: 12,
       fontWeight: FontWeight.w600,
