@@ -22,6 +22,9 @@ import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../../../business/data/services/leads_service.dart';
 import '../../../coins/domain/usecases/purchase_feature.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
 import 'event_location_picker_screen.dart';
@@ -1179,6 +1182,61 @@ Widget buildEventStatusBadges(BuildContext context, Event event,
 }
 
 /// Event Card Widget
+/// Live countdown shown to the organizer of a boosted event — ticks down to
+/// when the boost (featuredUntil) expires.
+class _BoostCountdown extends StatefulWidget {
+  final DateTime until;
+  const _BoostCountdown({required this.until});
+
+  @override
+  State<_BoostCountdown> createState() => _BoostCountdownState();
+}
+
+class _BoostCountdownState extends State<_BoostCountdown> {
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(seconds: 30), (_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  String _format(Duration d) {
+    final days = d.inDays;
+    final hours = d.inHours % 24;
+    final mins = d.inMinutes % 60;
+    if (days > 0) return '${days}d ${hours}h';
+    if (hours > 0) return '${hours}h ${mins}m';
+    if (mins > 0) return '${mins}m';
+    return '<1m';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final remaining = widget.until.difference(DateTime.now());
+    final text = remaining.isNegative
+        ? l10n.eventBoostEnded
+        : l10n.eventBoostEndsIn(_format(remaining));
+    return Text(
+      text,
+      style: const TextStyle(
+        color: AppColors.textPrimary,
+        fontSize: 14,
+        fontWeight: FontWeight.w600,
+      ),
+    );
+  }
+}
+
 class EventCard extends StatelessWidget {
 
   const EventCard({
@@ -2233,13 +2291,9 @@ class EventDetailsScreen extends StatelessWidget {
     if (event.organizerId != currentUserId) {
       return const SizedBox.shrink();
     }
-    final l10n = AppLocalizations.of(context)!;
-
-    if (event.isCurrentlyFeatured) {
-      final until = event.featuredUntil;
-      final untilText = until != null
-          ? DateFormat('MMMM d, yyyy').format(until)
-          : '';
+    final until = event.featuredUntil;
+    if (event.isCurrentlyFeatured && until != null) {
+      // Organizer-only: live countdown until the boost expires.
       return Padding(
         padding: const EdgeInsets.only(top: 16),
         child: Container(
@@ -2251,93 +2305,107 @@ class EventDetailsScreen extends StatelessWidget {
           ),
           child: Row(
             children: [
-              const Icon(Icons.star, color: AppColors.richGold, size: 20),
+              const Icon(Icons.rocket_launch,
+                  color: AppColors.richGold, size: 20),
               const SizedBox(width: 12),
-              Expanded(
-                child: Text(
-                  l10n.featureEventActive(untilText),
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ),
+              Expanded(child: _BoostCountdown(until: until)),
             ],
           ),
         ),
       );
     }
 
-    return Padding(
-      padding: const EdgeInsets.only(top: 16),
-      child: SizedBox(
-        width: double.infinity,
-        child: OutlinedButton.icon(
-          onPressed: () => _handleFeatureEvent(context, event),
-          icon: const Icon(Icons.star_border, color: AppColors.richGold),
-          label: Text(
-            '${l10n.featureThisEvent} · ${l10n.featureEventCostLabel(kFeatureEventCost)}',
-            style: const TextStyle(color: AppColors.richGold),
-          ),
-          style: OutlinedButton.styleFrom(
-            padding: const EdgeInsets.symmetric(vertical: 14),
-            side: BorderSide(color: AppColors.richGold.withOpacity(0.6)),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
+    // Boosting is triggered by the rocket "Boost" icon in the app bar
+    // (see _handleBoost) — no separate button here, to avoid duplication.
+    return const SizedBox.shrink();
+  }
+
+  /// Boost duration/cost tiers (organizer picks one). Duration -> coin cost.
+  static const List<(Duration, int)> _boostOptions = [
+    (Duration(hours: 1), 50),
+    (Duration(hours: 6), 100),
+    (Duration(hours: 12), 150),
+    (Duration(hours: 24), 200),
+    (Duration(days: 3), 500),
+    (Duration(days: 7), 1000),
+  ];
+
+  String _boostDurationLabel(AppLocalizations l10n, Duration d) {
+    if (d.inHours <= 24) return l10n.eventsBoostHours(d.inHours);
+    if (d.inDays < 7) return l10n.eventsBoostDays(d.inDays);
+    return l10n.eventsBoostWeeks(d.inDays ~/ 7);
+  }
+
+  Future<(Duration, int)?> _showBoostOptions(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return showModalBottomSheet<(Duration, int)>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const SizedBox(height: 12),
+            Container(
+              width: 40,
+              height: 4,
+              decoration: BoxDecoration(
+                color: AppColors.divider,
+                borderRadius: BorderRadius.circular(2),
+              ),
             ),
-          ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  const Icon(Icons.rocket_launch, color: AppColors.richGold),
+                  const SizedBox(width: 12),
+                  Text(
+                    l10n.eventsBoostChooseDuration,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            for (final opt in _boostOptions)
+              ListTile(
+                leading:
+                    const Icon(Icons.schedule, color: AppColors.richGold),
+                title: Text(
+                  _boostDurationLabel(l10n, opt.$1),
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+                trailing: Text(
+                  l10n.promoteCostLabel(opt.$2),
+                  style: const TextStyle(
+                    color: AppColors.richGold,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                onTap: () => Navigator.pop(ctx, opt),
+              ),
+            const SizedBox(height: 8),
+          ],
         ),
       ),
     );
   }
 
-  /// Feature an event (paid placement) for a fixed coin cost (organizer only).
-  /// Spends coins via the existing coin path (PurchaseFeature) and, on success,
-  /// flips isFeatured=true + featuredUntil = now + 7 days so it surfaces in
-  /// Explore's featured carousel (which reads isCurrentlyFeatured).
-  Future<void> _handleFeatureEvent(BuildContext context, Event event) async {
-    const cost = kFeatureEventCost;
-    final l10n = AppLocalizations.of(context)!;
-    final messenger = ScaffoldMessenger.of(context);
-    final bloc = context.read<EventsBloc>();
-
-    final afford =
-        await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
-    if (!context.mounted) return;
-    if (!afford.fold((_) => false, (v) => v)) {
-      messenger.showSnackBar(
-          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
-      return;
-    }
-    final confirmed = await _confirmCoinSpend(
-        context, l10n.featureThisEvent, l10n.featureEventConfirm(cost));
-    if (confirmed != true || !context.mounted) return;
-    final charge = await sl<PurchaseFeature>()(
-      userId: currentUserId,
-      featureName: 'event_featured',
-      cost: cost,
-      relatedId: event.id,
-    );
-    if (!context.mounted) return;
-    if (!charge.fold((_) => false, (_) => true)) {
-      messenger.showSnackBar(
-          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
-      return;
-    }
-    bloc.add(UpdateEvent(
-      event: event.copyWith(
-        isFeatured: true,
-        featuredUntil: DateTime.now().add(const Duration(days: 7)),
-      ),
-    ));
-    messenger.showSnackBar(SnackBar(content: Text(l10n.eventsBoosted)));
-  }
-
-  /// Boost (feature) an event for a fixed coin cost (organizer only).
+  /// Boost (feature) an event — organizer picks a duration/coin tier, then
+  /// pays coins and the event is featured for that duration.
   Future<void> _handleBoost(BuildContext context, Event event) async {
-    const cost = 100;
     final l10n = AppLocalizations.of(context)!;
+    final choice = await _showBoostOptions(context);
+    if (choice == null || !context.mounted) return;
+    final duration = choice.$1;
+    final cost = choice.$2;
     final messenger = ScaffoldMessenger.of(context);
     final bloc = context.read<EventsBloc>();
 
@@ -2345,8 +2413,7 @@ class EventDetailsScreen extends StatelessWidget {
         await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
     if (!context.mounted) return;
     if (!afford.fold((_) => false, (v) => v)) {
-      messenger.showSnackBar(
-          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      await _promptBuyCoins(context);
       return;
     }
     final confirmed = await _confirmCoinSpend(
@@ -2367,7 +2434,7 @@ class EventDetailsScreen extends StatelessWidget {
     bloc.add(UpdateEvent(
       event: event.copyWith(
         isFeatured: true,
-        featuredUntil: DateTime.now().add(const Duration(days: 7)),
+        featuredUntil: DateTime.now().add(duration),
       ),
     ));
     messenger.showSnackBar(SnackBar(content: Text(l10n.eventsBoosted)));
@@ -2390,6 +2457,41 @@ class EventDetailsScreen extends StatelessWidget {
               onPressed: () => Navigator.pop(ctx, true),
               child: Text(l10n.eventsConfirmAction)),
         ],
+      ),
+    );
+  }
+
+  /// Insufficient coins → offer to buy more, routing to the coin market.
+  Future<void> _promptBuyCoins(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final go = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventsInsufficientCoins,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.eventsBuyCoinsPrompt,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(l10n.groupCancel)),
+          TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: Text(l10n.eventsBuyCoins,
+                  style: const TextStyle(color: AppColors.richGold))),
+        ],
+      ),
+    );
+    if (go != true || !context.mounted) return;
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider<CoinBloc>(
+          create: (_) => sl<CoinBloc>()
+            ..add(LoadCoinBalance(currentUserId))
+            ..add(const LoadAvailablePackages()),
+          child: CoinShopScreen(userId: currentUserId),
+        ),
       ),
     );
   }

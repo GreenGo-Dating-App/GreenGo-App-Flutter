@@ -514,8 +514,14 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     }
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => BlocProvider.value(
-          value: context.read<CommunitiesBloc>(),
+        // Forward BOTH blocs: CommunityDetailScreen reads ProfileBloc in its
+        // initState, and ProfileBloc lives below the root Navigator (in the
+        // main-nav MultiBlocProvider) so pushed routes don't inherit it.
+        builder: (_) => MultiBlocProvider(
+          providers: [
+            BlocProvider.value(value: context.read<CommunitiesBloc>()),
+            BlocProvider.value(value: context.read<ProfileBloc>()),
+          ],
           child: CommunityDetailScreen(community: community),
         ),
       ),
@@ -525,8 +531,13 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   void _navigateToCreateCommunity({CommunityType? preselectedType}) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => BlocProvider.value(
-          value: context.read<CommunitiesBloc>(),
+        // CreateCommunityScreen also reads ProfileBloc.state, so forward it
+        // alongside CommunitiesBloc (see _navigateToCommunityDetail).
+        builder: (_) => MultiBlocProvider(
+          providers: [
+            BlocProvider.value(value: context.read<CommunitiesBloc>()),
+            BlocProvider.value(value: context.read<ProfileBloc>()),
+          ],
           child: CreateCommunityScreen(
             preselectedType: preselectedType,
           ),

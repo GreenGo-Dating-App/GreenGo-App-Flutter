@@ -503,9 +503,28 @@ class _ExploreScreenState extends State<ExploreScreen> {
     if (mounted) setState(() => _featuredAttractions = picked);
   }
 
+  /// Round-robin window over [sponsored]: when MORE than 3 are eligible, rotate
+  /// the visible 3 by a wall-clock offset (computed once, stable for
+  /// [_luxuryRotationMinutes]) so every sponsor gets fair exposure across
+  /// refreshes instead of always the same 3. Returns the list unchanged when 3
+  /// or fewer. Expects [sponsored] pre-sorted by a STABLE key (id) so the
+  /// rotation advances fairly.
+  List<Event> _rotateSponsored(List<Event> sponsored) {
+    if (sponsored.length <= 3) return sponsored;
+    final offset = (DateTime.now().millisecondsSinceEpoch ~/
+            (_luxuryRotationMinutes * 60 * 1000)) %
+        sponsored.length;
+    return [
+      for (var i = 0; i < 3; i++) sponsored[(offset + i) % sponsored.length],
+    ];
+  }
+
   /// Loads "Featured community events" (the LUXURY carousel): up to 3 events
-  /// elected with a THREE-TIER fallback + round-robin. Empty (no location,
-  /// zero events, or on failure) → the carousel is hidden.
+  /// elected with a FOUR-TIER fallback + round-robin. Only truly EMPTY when
+  /// there are zero community/live events anywhere (or every fetch fails) → the
+  /// carousel hides itself. Crucially it NO LONGER requires a user location: a
+  /// location just refines Tiers 1–3; Tier 4 covers the (common) case of a
+  /// profile with no stored coordinates.
   ///
   /// Strategy:
   ///  - Tier 1 — SPONSORED community events near the user FIRST. "Sponsored" ==
@@ -513,20 +532,20 @@ class _ExploreScreenState extends State<ExploreScreen> {
   ///    coin-boost mechanic: `isFeatured && featuredUntil` not passed).
   ///    Cross-referencing each event's community for a `Community.isSponsored`
   ///    flag would cost an extra read per event, so we rely on the event's own
-  ///    featured/boost flag (cheap, index-light). ROUND-ROBIN: when MORE than 3
-  ///    sponsors are eligible we rotate the visible window by a wall-clock
-  ///    offset so every sponsor gets fair exposure across refreshes instead of
-  ///    always the same 3. The offset is computed ONCE per load and is stable
-  ///    for [_luxuryRotationMinutes] (deterministic within the window — no
-  ///    reshuffle on every rebuild).
+  ///    featured/boost flag (cheap, index-light). ROUND-ROBIN via
+  ///    [_rotateSponsored] so every sponsor gets fair exposure.
   ///  - Tier 2 — if FEWER than 3 sponsors, FILL the remainder with the CLOSEST
   ///    community events (nearest-first, as returned by the data source),
   ///    de-duped against Tier 1.
   ///  - Tier 3 — if there are NO community events near the user at all, FALL
   ///    BACK to nearby LIVE events (distance-sorted), lightly shuffled.
+  ///  - Tier 4 — LOCATION-INDEPENDENT last resort: when we STILL have nothing
+  ///    (no stored location, or nothing nearby), pull upcoming PUBLIC community
+  ///    events with a plain non-geo query (sponsored-first + round-robin, then
+  ///    the soonest remaining) so the carousel shows wherever the user is.
   ///
-  /// All tiers stay within [kFeaturedRadiusKm] when a location is known and are
-  /// de-duplicated by event id.
+  /// Tiers 1–3 stay within [kFeaturedRadiusKm] when a location is known; all
+  /// tiers are de-duplicated by event id.
   Future<void> _loadLuxuryEvents() async {
     final picked = <Event>[];
     final seen = <String>{};
@@ -539,12 +558,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
+    final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
+    final hasLocation = _userLat != null && _userLng != null;
+
     // Community events near the user, kept within [kFeaturedRadiusKm] when a
     // location is known (nearest-first, as returned by the data source).
     List<Event> community = const <Event>[];
-    if (_userLat != null && _userLng != null) {
+    if (hasLocation) {
       try {
-        final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
         final events = await eventsDs.getNearbyCommunityEvents(
           lat: _userLat!,
           lng: _userLng!,
@@ -562,17 +583,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // by a STABLE base key (id) so the time-based round-robin advances fairly.
     final sponsored = community.where((e) => e.isCurrentlyFeatured).toList()
       ..sort((a, b) => a.id.compareTo(b.id));
-    if (sponsored.length > 3) {
-      // Compute the rotation offset ONCE per load; stable for the window.
-      final offset = (DateTime.now().millisecondsSinceEpoch ~/
-              (_luxuryRotationMinutes * 60 * 1000)) %
-          sponsored.length;
-      addEvents([
-        for (var i = 0; i < 3; i++) sponsored[(offset + i) % sponsored.length],
-      ]);
-    } else {
-      addEvents(sponsored);
-    }
+    addEvents(_rotateSponsored(sponsored));
 
     // Tier 2 — FILL with the CLOSEST community events (data source is already
     // nearest-first), de-duped against the sponsored picks.
@@ -582,15 +593,35 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
     // Tier 3 — NO community events near the user at all → fall back to nearby
     // LIVE events (distance-sorted), lightly shuffled within the closest set.
-    if (community.isEmpty && _userLat != null && _userLng != null) {
+    if (picked.length < 3 && community.isEmpty && hasLocation) {
       try {
-        final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
         final live = await eventsDs.getEventsNearLocation(
           _userLat!,
           _userLng!,
           kFeaturedRadiusKm,
         );
         addEvents(live.take(20).toList()..shuffle());
+      } catch (_) {
+        // Leave picked as-is — Tier 4 still has a chance below.
+      }
+    }
+
+    // Tier 4 — LOCATION-INDEPENDENT last resort. Reached when we STILL have
+    // nothing to show: typically the (common) case of a profile with no stored
+    // coordinates, where Tiers 1–3 were all skipped. Pull upcoming PUBLIC
+    // community events with a plain non-geo query so the carousel appears
+    // wherever the user is: sponsored-first (stable order + round-robin), then
+    // the soonest remaining ones, de-duped against anything already picked.
+    if (picked.length < 3) {
+      try {
+        final upcoming = await eventsDs.getEvents(upcoming: true);
+        final sponsoredGlobal =
+            upcoming.where((e) => e.isCurrentlyFeatured).toList()
+              ..sort((a, b) => a.id.compareTo(b.id));
+        addEvents(_rotateSponsored(sponsoredGlobal));
+        if (picked.length < 3) {
+          addEvents(upcoming.where((e) => !e.isCurrentlyFeatured));
+        }
       } catch (_) {
         // Leave picked as-is — an empty result hides the carousel.
       }
