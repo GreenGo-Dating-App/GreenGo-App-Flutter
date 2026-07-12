@@ -70,11 +70,13 @@ dependencies:
 
   # Event QR check-in (attendee ticket QR + owner scanner)
   qr_flutter: ^4.1.0
-  # Pinned EXACTLY (no caret): 6.0.0 uses GoogleMLKit/BarcodeScanning ~> 7.0.0,
-  # which is the ML Kit generation whose MLKitCommon 12.0 depends on
-  # GoogleDataTransport ~> 10.0 — the SAME GDT range Firebase iOS SDK 11.x needs.
-  # This is what makes iOS `pod install` resolvable (see ML Kit note below).
-  mobile_scanner: 6.0.0
+  # mobile_scanner 7.x uses Apple's native Vision framework on iOS (NO GoogleMLKit
+  # pod), so it stays completely OUT of the ML Kit / GoogleDataTransport pod graph
+  # and can never conflict with Firebase or the google_mlkit_* plugins on iOS.
+  # (6.x pulled GoogleMLKit/BarcodeScanning -> MLKitVision 8.0 -> MLKitCommon 11.0
+  # -> GoogleDataTransport < 10.0, which clashed with both Firebase 11 and the
+  # face/image plugins.) Android still uses MLKit barcode, unaffected.
+  mobile_scanner: ^7.0.0
   webview_flutter: ^4.10.0
   shimmer: ^3.0.0
   flutter_staggered_animations: ^1.1.1
@@ -145,19 +147,18 @@ dependencies:
 
   # ML Kit
   # CRITICAL — iOS pod resolution. Firebase iOS SDK 11.x depends on
-  # GoogleDataTransport ~> 10.0. The OLD ML Kit 6.0 generation (mobile_scanner 5.2.3,
-  # face_detection 0.11.x, image_labeling 0.12.x) pulls MLKitCommon 11.0 which needs
-  # GoogleDataTransport < 10.0 — an UNSATISFIABLE conflict that broke `pod install`.
-  # The fix: this whole trio is pinned to the GoogleMLKit 7.0.0 generation, whose
-  # MLKitCommon 12.0 uses GoogleDataTransport ~> 10.0 (matches Firebase 11.x):
-  #   mobile_scanner 6.0.0            -> GoogleMLKit/BarcodeScanning ~> 7.0.0
-  #   google_mlkit_face_detection 0.13.1 -> GoogleMLKit/FaceDetection  ~> 7.0.0
-  #   google_mlkit_image_labeling 0.14.1 -> GoogleMLKit/ImageLabeling  ~> 7.0.0
-  # Pinned EXACTLY (no caret): the very next patch (face 0.13.2 / image 0.14.2) jumps
-  # to GoogleMLKit 9.0.0 and would re-introduce a split MLKitCommon. Keep all three
-  # on the SAME generation; never bump one without the others + mobile_scanner.
-  google_mlkit_face_detection: 0.13.1
-  google_mlkit_image_labeling: 0.14.1
+  # GoogleDataTransport ~> 10.0. These plugins MUST resolve to the ML Kit generation
+  # whose GoogleDataTransport is ALSO ~> 10.0, otherwise `pod install` fails.
+  # Verified chain for the versions pinned below (GoogleMLKit 9.0.0 generation):
+  #   google_mlkit_face_detection 0.13.2 -> GoogleMLKit/FaceDetection ~> 9.0.0
+  #   google_mlkit_image_labeling 0.14.2 -> GoogleMLKit/ImageLabeling ~> 9.0.0
+  #     -> google_mlkit_commons 0.11.1   -> MLKitVision ~> 10.0.0
+  #        -> MLKitCommon ~> 14.0        -> GoogleDataTransport ~> 10.0  ✅ (== Firebase)
+  # Pinned EXACTLY (no caret): a mismatched face/image pair pulls two MLKitVision
+  # versions and breaks resolution. Bump both together, and re-verify the GDT chain.
+  # (mobile_scanner is intentionally NOT part of this — 7.x uses Apple Vision on iOS.)
+  google_mlkit_face_detection: 0.13.2
+  google_mlkit_image_labeling: 0.14.2
   # google_mlkit_translation: ^0.9.0  # Disabled - doesn't work on emulators
 
   # Online Translation (works everywhere)
