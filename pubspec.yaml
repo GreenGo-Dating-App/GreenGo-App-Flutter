@@ -75,6 +75,9 @@ dependencies:
   shimmer: ^3.0.0
   flutter_staggered_animations: ^1.1.1
 
+  # Charts & data visualization (business analytics dashboards)
+  fl_chart: ^0.69.0
+
   # Location & Map
   geolocator: ^10.1.0
   geocoding: ^2.1.1
@@ -101,6 +104,10 @@ dependencies:
   intl: ^0.20.2
   uuid: ^4.2.1
   url_launcher: ^6.2.2
+  # Deep links / universal links (shareable profile & event links)
+  app_links: ^6.3.2
+  # Native share sheet (share profile/event links)
+  share_plus: ^10.1.4
   package_info_plus: ^9.0.0
   device_info_plus: ^9.1.1
   path_provider: ^2.1.1

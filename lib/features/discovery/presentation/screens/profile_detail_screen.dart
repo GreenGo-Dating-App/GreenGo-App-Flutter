@@ -20,6 +20,7 @@ import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../business/presentation/widgets/business_contact_button.dart';
 import '../../../business/presentation/widgets/business_follow_button.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -285,6 +286,30 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
           ),
         ),
         actions: [
+          // Share this profile's deep link (https://greengo-chat.web.app/u/{id}).
+          // Tapping the shared link opens the app straight into a chat with this
+          // user, or bounces to the store if the app isn't installed.
+          Padding(
+            padding: const EdgeInsets.only(right: 8),
+            child: IconButton(
+              tooltip: AppLocalizations.of(context)!.shareProfileTooltip,
+              onPressed: () {
+                HapticFeedback.selectionClick();
+                shareProfileLink(context, widget.profile.userId);
+              },
+              icon: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: AppColors.backgroundDark.withOpacity(0.7),
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.ios_share,
+                  color: AppColors.textPrimary,
+                ),
+              ),
+            ),
+          ),
           // Apple-safe culture flavor: a single, unobtrusive Message action
           // (opens a chat immediately — NO like/super-like/match/Connect).
           // Full/dating flavor keeps its swipe buttons instead, so hide it there.

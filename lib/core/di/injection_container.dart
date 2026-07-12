@@ -316,12 +316,15 @@ Future<void> init() async {
 
   // Interaction logging (search + click tracking → recommendations).
   // Write-only, fire-and-forget, free (Firestore writes only).
-  // Wired call site: EventDetailLoaderScreen (event_view).
-  // TODO(interaction-wiring): Explore event taps -> logEventView(...)
-  // TODO(interaction-wiring): Explore/Network profile taps -> logProfileView(...)
-  // TODO(interaction-wiring): Network nickname search -> logSearch(...)
-  // TODO(interaction-wiring): Communities screen community taps -> logCommunityView(...)
-  // TODO(interaction-wiring): Attraction taps -> logAttractionView(...)
+  // Wired call sites:
+  //  - event_view: EventDetailLoaderScreen (covers Explore/globe event taps,
+  //    which all route through it) + universal_search_screen.
+  //  - profile_view: explore_screen (_personCard) + network_discovery_screen
+  //    (_tile) + universal_search_screen.
+  //  - search: network_discovery_screen (nickname lookup) + universal_search.
+  //  - community_view: communities_screen (_navigateToCommunityDetail) +
+  //    explore_screen (_openCommunity).
+  //  - attraction_view: explore_screen (_openHappening, external experiences).
   sl.registerLazySingleton<InteractionLogService>(
     () => InteractionLogService(firestore: sl()),
   );

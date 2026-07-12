@@ -120,6 +120,10 @@ class _GlobeScreenState extends State<GlobeScreen> {
     if (_showCommunityEvents) {
       community = await _nativeDs.getNearbyCommunityEvents(
           lat: lat, lng: lng, limit: 200);
+      // Auto-publish gate (defensive): drafts / not-yet-due scheduled events
+      // never leak onto the map. The datasource already filters; guard here too
+      // (see Event.isLive).
+      community = community.where((e) => e.isLive).toList();
     }
     if (!mounted || gen != _viewportGen) return;
     _loadedLat = lat;
@@ -981,7 +985,12 @@ class _GlobeScreenState extends State<GlobeScreen> {
           di.sl<EventsRepository>().getEventsByCountry(countryName, limit: 10),
       builder: (context, snapshot) {
         final events =
-            snapshot.data?.fold((_) => <Event>[], (e) => e) ?? const <Event>[];
+            (snapshot.data?.fold((_) => <Event>[], (e) => e) ?? const <Event>[])
+                // Auto-publish gate (defensive): drafts / not-yet-due scheduled
+                // events never leak into discovery. The datasource already
+                // filters; guard here too (see Event.isLive).
+                .where((e) => e.isLive)
+                .toList();
         if (events.isEmpty) return const SizedBox.shrink();
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,

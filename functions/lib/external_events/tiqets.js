@@ -176,10 +176,17 @@ async function runTiqets(key) {
     for (const c of countries) {
         all.push(...(await fetchForCountry(key, c.id, c.name)));
     }
-    if (all.length > 0)
-        await upsertAll(all);
-    console.log(`ingestTiqets: upserted ${all.length} attractions across ${countries.length} countries.`);
-    return all.length;
+    // Attractions are only worth showing with a photo → drop the image-less ones
+    // so we never store (or later render) a blank card.
+    const withImage = all.filter((d) => {
+        const url = d.data.imageUrl;
+        return typeof url === 'string' && url.length > 0;
+    });
+    if (withImage.length > 0)
+        await upsertAll(withImage);
+    console.log(`ingestTiqets: upserted ${withImage.length}/${all.length} attractions ` +
+        `with images across ${countries.length} countries.`);
+    return withImage.length;
 }
 exports.ingestTiqetsAttractions = (0, scheduler_1.onSchedule)({ schedule: 'every 12 hours', timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] }, (0, monitoring_1.monitored)("ingestTiqetsAttractions", async () => {
     await runTiqets(TIQETS_API_KEY.value());

@@ -525,12 +525,18 @@ async function runIngestion(apiKey) {
             }
         }
         if (all.length > 0) {
-            await upsertAll(all);
-            await writeCountryStats(all, 'viator');
+            // Experiences are only worth showing with a photo → drop the image-less
+            // ones so we never store (or later render) a blank card.
+            const withImage = all.filter((d) => {
+                const url = d.data.imageUrl;
+                return typeof url === 'string' && url.length > 0;
+            });
+            await upsertAll(withImage);
+            await writeCountryStats(withImage, 'viator');
             await (0, build_index_1.buildSourceIndex)('viator');
-            console.log(`ingestExternalEvents: upserted ${all.length} experiences across ` +
-                `${countries.length} countries from ${base}.`);
-            return all.length;
+            console.log(`ingestExternalEvents: upserted ${withImage.length}/${all.length} ` +
+                `experiences with images across ${countries.length} countries from ${base}.`);
+            return withImage.length;
         }
         console.log(`ingestExternalEvents: no products from ${base}, trying next.`);
     }

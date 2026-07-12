@@ -55,6 +55,32 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+            <!-- Android App Links: shareable profile (/u) and event (/e) links on
+                 https://greengo-chat.web.app. autoVerify pairs with
+                 web/.well-known/assetlinks.json so the OS opens the app directly
+                 (no chooser). If the app isn't installed, the browser loads the
+                 hosted fallback page which redirects to the Play Store. -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                      android:host="greengo-chat.web.app"
+                      android:pathPrefix="/u" />
+                <data android:scheme="https"
+                      android:host="greengo-chat.web.app"
+                      android:pathPrefix="/e" />
+            </intent-filter>
+
+            <!-- Secondary custom scheme: greengo://u/{userId} and greengo://e/{eventId} -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="greengo" android:host="u" />
+                <data android:scheme="greengo" android:host="e" />
+            </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->

@@ -27,6 +27,7 @@ import 'core/providers/language_provider.dart';
 import 'core/services/access_control_service.dart';
 import 'core/services/app_sound_service.dart';
 import 'core/services/cache_service.dart';
+import 'core/services/deep_link_service.dart';
 import 'core/services/feature_flags_service.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/version_check_service.dart';
@@ -95,13 +96,25 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // Enable Firestore offline persistence for cost optimization
-  // This caches data locally and reduces server reads
-  FirebaseFirestore.instance.settings = const Settings(
-    persistenceEnabled: true,
-    cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED, // Unlimited local cache
-  );
-  debugPrint('✓ Firestore offline persistence enabled');
+  // Enable Firestore offline persistence so chat conversations and messages
+  // load INSTANTLY from the local cache and stay available OFFLINE, then sync
+  // from the server in the background. Set explicitly with an UNLIMITED cache
+  // so chat history is never evicted.
+  //
+  // Wrapped in try/catch and applied before any Firestore access: on web,
+  // persistence is backed by IndexedDB (unsupported in some browsers / private
+  // mode / multi-tab), so enabling it must never crash app startup — if it
+  // fails on web the app still runs, just without the offline cache.
+  try {
+    FirebaseFirestore.instance.settings = const Settings(
+      persistenceEnabled: true,
+      cacheSizeBytes: Settings.CACHE_SIZE_UNLIMITED, // Unlimited local cache
+    );
+    debugPrint('✓ Firestore offline persistence enabled (unlimited cache)');
+  } catch (e) {
+    // Never let a persistence-config failure (mainly web/IndexedDB) block boot.
+    debugPrint('⚠ Firestore offline persistence not enabled: $e');
+  }
 
   // Load countdown dates from Firestore (non-blocking, uses defaults on failure)
   AccessControlService.loadCountdownDatesFromFirestore();
@@ -543,6 +556,14 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     // Observe app-level back so a root-level screen (nothing to pop, same level
     // as Discovery) returns to Discovery instead of a black screen.
     WidgetsBinding.instance.addObserver(this);
+    // Start the deep-link runtime listener (cold-start + warm links). Guard on
+    // web where the app_links platform channel/universal-link plumbing differs
+    // and we never want a link-init failure to block boot. Uses the same global
+    // navigator key the MaterialApp is built with so routing lands correctly.
+    if (!kIsWeb) {
+      DeepLinkService.instance
+          .init(navigatorKey: PushNotificationService.navigatorKey);
+    }
     // Check version after first frame is rendered
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _checkVersion();

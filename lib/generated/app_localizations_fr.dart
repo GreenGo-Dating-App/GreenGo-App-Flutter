@@ -9,46 +9,46 @@ class AppLocalizationsFr extends AppLocalizations {
   AppLocalizationsFr([String locale = 'fr']) : super(locale);
 
   @override
-  String get culturalPassportTitle => 'Cultural Passport';
+  String get culturalPassportTitle => 'Passeport culturel';
 
   @override
   String get culturalPassportSubtitle =>
-      'Stamps you collect from the cultures, languages and events you explore';
+      'Les tampons que tu collectionnes auprès des cultures, langues et événements que tu explores';
 
   @override
-  String get passportSectionCountries => 'Countries';
+  String get passportSectionCountries => 'Pays';
 
   @override
-  String get passportSectionLanguages => 'Languages';
+  String get passportSectionLanguages => 'Langues';
 
   @override
-  String get passportSectionEvents => 'Events';
+  String get passportSectionEvents => 'Événements';
 
   @override
-  String get passportLoading => 'Loading your passport…';
+  String get passportLoading => 'Chargement de ton passeport…';
 
   @override
-  String get passportEarned => 'Earned';
+  String get passportEarned => 'Obtenu';
 
   @override
-  String get passportLocked => 'Locked';
+  String get passportLocked => 'Verrouillé';
 
   @override
   String get passportEmpty =>
-      'Start chatting, learning languages and joining events to earn your first stamps.';
+      'Commence à discuter, à apprendre des langues et à participer à des événements pour gagner tes premiers tampons.';
 
   @override
   String passportProgressSummary(int countries, int languages, int events) {
-    return '$countries countries · $languages languages · $events events';
+    return '$countries pays · $languages langues · $events événements';
   }
 
   @override
   String passportOverallProgress(int percent) {
-    return '$percent% explored';
+    return '$percent% exploré';
   }
 
   @override
-  String get passportEventDating => 'Dating';
+  String get passportEventDating => 'Rencontres';
 
   @override
   String get passportEventSocial => 'Social';
@@ -57,31 +57,31 @@ class AppLocalizationsFr extends AppLocalizations {
   String get passportEventSports => 'Sports';
 
   @override
-  String get passportEventFood => 'Food';
+  String get passportEventFood => 'Cuisine';
 
   @override
-  String get passportEventNightlife => 'Nightlife';
+  String get passportEventNightlife => 'Vie nocturne';
 
   @override
-  String get passportEventOutdoor => 'Outdoor';
+  String get passportEventOutdoor => 'Plein air';
 
   @override
   String get passportEventArts => 'Arts';
 
   @override
-  String get passportEventGaming => 'Gaming';
+  String get passportEventGaming => 'Jeux vidéo';
 
   @override
-  String get passportEventTravel => 'Travel';
+  String get passportEventTravel => 'Voyage';
 
   @override
-  String get passportEventWellness => 'Wellness';
+  String get passportEventWellness => 'Bien-être';
 
   @override
-  String get passportEventLanguageExchange => 'Language Exchange';
+  String get passportEventLanguageExchange => 'Échange linguistique';
 
   @override
-  String get passportEventOther => 'Other';
+  String get passportEventOther => 'Autre';
 
   @override
   String get tourGotIt => 'Compris';
@@ -4118,18 +4118,20 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get exploreAroundYou => 'People around you';
+  String get exploreAroundYou => 'Les personnes autour de toi';
 
   @override
-  String get exploreSameInterests => 'People with your same interests';
+  String get exploreSameInterests =>
+      'Des personnes avec les mêmes centres d\'intérêt que toi';
 
   @override
   String exploreSpeaksLanguage(String language) {
-    return 'People that speak $language';
+    return 'Des personnes qui parlent $language';
   }
 
   @override
-  String get exploreCommunityEventsNearby => 'Community events near you';
+  String get exploreCommunityEventsNearby =>
+      'Événements communautaires près de toi';
 
   @override
   String get exploreNoPartners =>
@@ -4141,7 +4143,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get exploreNoCommunities =>
-      'No communities to join yet — check back soon.';
+      'Aucune communauté à rejoindre pour l\'instant — reviens bientôt.';
 
   @override
   String exploreGoingCount(int count) {
@@ -4149,48 +4151,48 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get exploreFeaturedEvents => 'Featured events';
+  String get exploreFeaturedEvents => 'Événements à la une';
 
   @override
-  String get exploreFeaturedAttractions => 'Featured attractions';
+  String get exploreFeaturedAttractions => 'Attractions à la une';
 
   @override
-  String get exploreMyNextEvents => 'My next events';
+  String get exploreMyNextEvents => 'Mes prochains événements';
 
   @override
-  String get exploreCommunitiesTitle => 'Communities to join';
+  String get exploreCommunitiesTitle => 'Communautés à rejoindre';
 
   @override
   String exploreMembersCount(int count) {
-    return '$count members';
+    return '$count membres';
   }
 
   @override
-  String get exploreCountrySpotlight => 'Country Spotlight';
+  String get exploreCountrySpotlight => 'Pays à l\'honneur';
 
   @override
-  String get greetingMorning => 'Good morning';
+  String get greetingMorning => 'Bonjour';
 
   @override
-  String get greetingAfternoon => 'Good afternoon';
+  String get greetingAfternoon => 'Bon après-midi';
 
   @override
-  String get greetingEvening => 'Good evening';
+  String get greetingEvening => 'Bonsoir';
 
   @override
-  String get greetingNight => 'Good night';
+  String get greetingNight => 'Bonne nuit';
 
   @override
-  String get statCoins => 'Coins';
+  String get statCoins => 'Pièces';
 
   @override
-  String get statTier => 'Tier';
+  String get statTier => 'Niveau';
 
   @override
-  String get statCountries => 'Countries';
+  String get statCountries => 'Pays';
 
   @override
-  String get statPeople => 'People';
+  String get statPeople => 'Personnes';
 
   @override
   String get networkWorldMap => 'Réseau mondial';
@@ -11516,378 +11518,383 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get eventMyTicket => 'My ticket';
+  String get eventMyTicket => 'Mon billet';
 
   @override
-  String get eventScanCheckIn => 'Scan / Check-in';
+  String get eventScanCheckIn => 'Scanner / Enregistrement';
 
   @override
-  String get eventAttendance => 'Attendance';
+  String get eventAttendance => 'Présence';
 
   @override
-  String get eventCheckedIn => 'Checked in';
+  String get eventCheckedIn => 'Enregistré';
 
   @override
-  String get eventNotCheckedIn => 'Not here yet';
+  String get eventNotCheckedIn => 'Pas encore là';
 
   @override
-  String get eventGuestsAllowedLabel => 'Guests allowed per attendee';
+  String get eventGuestsAllowedLabel => 'Invités autorisés par participant';
 
   @override
-  String get eventBringGuests => 'Bring guests';
+  String get eventBringGuests => 'Amener des invités';
 
   @override
-  String get eventInvalidTicket => 'Invalid ticket for this event';
+  String get eventInvalidTicket => 'Billet invalide pour cet événement';
 
   @override
   String get eventScanInstructions =>
-      'Point the camera at an attendee\'s QR code';
+      'Pointe la caméra vers le QR code d\'un participant';
 
   @override
-  String get eventTotalHeadcount => 'Total headcount';
+  String get eventTotalHeadcount => 'Nombre total de participants';
 
   @override
-  String get eventCameraPermission => 'Camera permission is required to scan';
+  String get eventCameraPermission =>
+      'L\'autorisation de la caméra est requise pour scanner';
 
   @override
-  String get eventTicketSubtitle => 'Show this QR at the entrance';
+  String get eventTicketSubtitle => 'Présente ce QR à l\'entrée';
 
   @override
   String eventGuestCount(int count, int max) {
-    return '$count of $max guests';
+    return '$count sur $max invités';
   }
 
   @override
   String eventCheckedInSuccess(String name) {
-    return '$name checked in';
+    return '$name enregistré';
   }
 
   @override
   String eventAlreadyCheckedIn(String name) {
-    return '$name already checked in';
+    return '$name déjà enregistré';
   }
 
   @override
   String eventGuestsBringing(int count) {
-    return '+$count guests';
+    return '+$count invités';
   }
 
   @override
   String connectDailyLimitReached(int limit) {
-    return 'You\'ve reached your daily limit of $limit new connections. Upgrade to connect with more people!';
+    return 'Tu as atteint ta limite quotidienne de $limit nouvelles connexions. Passe à une offre supérieure pour te connecter avec plus de personnes !';
   }
 
   @override
-  String get boostFeatureName => 'Profile Boost';
+  String get boostFeatureName => 'Boost de profil';
 
   @override
   String get boostRequiresTierDescription =>
-      'Profile boosts are a paid-membership perk. Upgrade your plan to boost your profile and get seen by more people.';
+      'Les boosts de profil sont un avantage réservé aux membres payants. Améliore ton offre pour booster ton profil et être vu par plus de personnes.';
 
   @override
   String boostMonthlyLimitReached(int limit) {
-    return 'You\'ve used all $limit profile boosts included in your plan this month. Upgrade for more.';
+    return 'Tu as utilisé les $limit boosts de profil inclus dans ton offre ce mois-ci. Améliore ton offre pour en obtenir plus.';
   }
 
   @override
-  String get travelModeFeatureName => 'Traveler Mode';
+  String get travelModeFeatureName => 'Mode Voyageur';
 
   @override
   String get travelModeRequiresTierDescription =>
-      'Traveler Mode lets you appear in another city\'s discovery feed. Upgrade your plan to unlock it.';
+      'Le mode Voyageur te permet d\'apparaître dans le fil Découverte d\'une autre ville. Améliore ton offre pour le débloquer.';
 
   @override
-  String get exploreRecommended => 'Recommended for you';
+  String get exploreRecommended => 'Recommandé pour toi';
 
   @override
-  String get businessAccountTitle => 'Business account';
+  String get businessAccountTitle => 'Compte professionnel';
 
   @override
-  String get becomeBusiness => 'Become a business';
+  String get becomeBusiness => 'Devenir professionnel';
 
   @override
-  String get businessProfileLabel => 'Business profile';
+  String get businessProfileLabel => 'Profil professionnel';
 
   @override
-  String get businessCategoryLabel => 'Business category';
+  String get businessCategoryLabel => 'Catégorie professionnelle';
 
   @override
-  String get businessVerifiedLabel => 'Verified business';
+  String get businessVerifiedLabel => 'Entreprise vérifiée';
 
   @override
-  String get featureThisEvent => 'Feature this event';
+  String get featureThisEvent => 'Mettre cet événement en avant';
 
   @override
   String featureEventCostLabel(int cost) {
-    return 'Feature this event · $cost coins';
+    return 'Mettre cet événement en avant · $cost pièces';
   }
 
   @override
   String featureEventActive(String date) {
-    return 'Featured until $date';
+    return 'En avant jusqu\'au $date';
   }
 
   @override
   String featureEventConfirm(int cost) {
-    return 'Feature this event for $cost coins?';
+    return 'Mettre cet événement en avant pour $cost pièces ?';
   }
 
   @override
-  String get referralTitle => 'Invite friends';
+  String get referralTitle => 'Inviter des amis';
 
   @override
-  String get referralInviteFriends => 'Invite friends';
+  String get referralInviteFriends => 'Inviter des amis';
 
   @override
-  String get referralYourCode => 'Your referral code';
+  String get referralYourCode => 'Ton code de parrainage';
 
   @override
-  String get referralShareCta => 'Share';
+  String get referralShareCta => 'Partager';
 
   @override
-  String get referralShareMessage => 'Join me on GreenGo!';
+  String get referralShareMessage => 'Rejoins-moi sur GreenGo !';
 
   @override
-  String get referralRewardEarned => 'Coins earned';
+  String get referralRewardEarned => 'Pièces gagnées';
 
   @override
-  String get referralCountLabel => 'Friends invited';
+  String get referralCountLabel => 'Amis invités';
 
   @override
   String get referralHowItWorks =>
-      'Share your code — when a friend joins with it, you both earn coins.';
+      'Partage ton code — quand un ami s\'inscrit avec, vous gagnez tous les deux des pièces.';
 
   @override
-  String get streakTitle => 'Streak';
+  String get streakTitle => 'Série';
 
   @override
-  String get streakDaysLabel => 'day streak';
+  String get streakDaysLabel => 'jours de série';
 
   @override
-  String get streakKeepGoing => 'Keep it going!';
+  String get streakKeepGoing => 'Continue comme ça !';
 
   @override
   String get missionsTitle => 'Missions';
 
   @override
-  String get missionsSubtitle => 'Complete missions to earn coins';
+  String get missionsSubtitle =>
+      'Accomplis des missions pour gagner des pièces';
 
   @override
-  String get missionProgressLabel => 'Progress';
+  String get missionProgressLabel => 'Progression';
 
   @override
-  String get missionRewardLabel => 'Reward';
+  String get missionRewardLabel => 'Récompense';
 
   @override
-  String get missionCompleteLabel => 'Completed';
+  String get missionCompleteLabel => 'Terminé';
 
   @override
-  String get onboardingWelcomeTitle => 'Welcome to GreenGo';
+  String get onboardingWelcomeTitle => 'Bienvenue sur GreenGo';
 
   @override
   String get onboardingWelcomeBody =>
-      'Discover cultures, practice languages, find local events, and meet people near you — no language barriers.';
+      'Découvre des cultures, pratique des langues, trouve des événements locaux et rencontre des personnes près de toi — sans barrière de langue.';
 
   @override
-  String get onboardingPickInterests => 'What do you love?';
+  String get onboardingPickInterests => 'Qu\'est-ce que tu aimes ?';
 
   @override
-  String get onboardingPickLanguages => 'Languages you speak';
+  String get onboardingPickLanguages => 'Langues que tu parles';
 
   @override
-  String get savedSearchesTitle => 'Saved searches';
+  String get savedSearchesTitle => 'Recherches enregistrées';
 
   @override
-  String get saveThisSearch => 'Save this search';
+  String get saveThisSearch => 'Enregistrer cette recherche';
 
   @override
-  String get savedSearchSaved => 'Search saved';
+  String get savedSearchSaved => 'Recherche enregistrée';
 
   @override
-  String get savedSearchRun => 'Run';
+  String get savedSearchRun => 'Lancer';
 
   @override
-  String get savedSearchEmpty => 'No saved searches yet';
+  String get savedSearchEmpty => 'Aucune recherche enregistrée pour l\'instant';
 
   @override
-  String get savedSearchAlertsToggle => 'Alerts';
+  String get savedSearchAlertsToggle => 'Alertes';
 
   @override
-  String get exploreFeaturedCommunity => 'Featured community events';
+  String get exploreFeaturedCommunity => 'Événements communautaires à la une';
 
   @override
-  String get notificationMarkAllRead => 'Mark all read';
+  String get notificationMarkAllRead => 'Tout marquer comme lu';
 
   @override
-  String get analyticsTitle => 'Analytics';
+  String get analyticsTitle => 'Statistiques';
 
   @override
-  String get analyticsPlatinumOnly => 'Analytics is a Platinum feature.';
+  String get analyticsPlatinumOnly =>
+      'Les statistiques sont une fonctionnalité Platinum.';
 
   @override
-  String get analyticsEventsHosted => 'Events hosted';
+  String get analyticsEventsHosted => 'Événements organisés';
 
   @override
-  String get analyticsTotalAttendees => 'Total attendees';
+  String get analyticsTotalAttendees => 'Total des participants';
 
   @override
-  String get analyticsReach => 'Reach';
+  String get analyticsReach => 'Portée';
 
   @override
-  String get analyticsUpgradeCta => 'Upgrade to Platinum';
+  String get analyticsUpgradeCta => 'Passer à Platinum';
 
   @override
-  String get safetyVerifiedBadge => 'Verified';
+  String get safetyVerifiedBadge => 'Vérifié';
 
   @override
-  String get safetyReportUser => 'Report';
+  String get safetyReportUser => 'Signaler';
 
   @override
-  String get safetyBlockUser => 'Block';
+  String get safetyBlockUser => 'Bloquer';
 
   @override
-  String get safetyCheckInTitle => 'Safety check-in';
+  String get safetyCheckInTitle => 'Contrôle de sécurité';
 
   @override
-  String get safetyCheckInArrived => 'I\'ve arrived safely';
+  String get safetyCheckInArrived => 'Je suis bien arrivé';
 
   @override
-  String get safetyCheckInDone => 'You checked in safely';
+  String get safetyCheckInDone => 'Tu t\'es enregistré en toute sécurité';
 
   @override
-  String get guidelinesTitle => 'Community guidelines';
+  String get guidelinesTitle => 'Règles de la communauté';
 
   @override
-  String get guidelinesAccept => 'I agree';
+  String get guidelinesAccept => 'J\'accepte';
 
   @override
   String get guidelinesBody =>
-      'GreenGo is a cross-cultural community for discovery, language exchange, local events and friendship. Be respectful and welcoming to people from every culture. This is not a dating app. No harassment, hate speech, spam or explicit content. Report anything that doesn\'t belong.';
+      'GreenGo est une communauté interculturelle dédiée à la découverte, à l\'échange linguistique, aux événements locaux et à l\'amitié. Sois respectueux et accueillant envers les personnes de toutes les cultures. Ce n\'est pas une application de rencontres. Aucun harcèlement, discours haineux, spam ou contenu explicite. Signale tout ce qui n\'a pas sa place.';
 
   @override
-  String get businessSectionTitle => 'Business';
+  String get businessSectionTitle => 'Professionnel';
 
   @override
-  String get businessSectionSubtitle => 'Tools for your business';
+  String get businessSectionSubtitle => 'Des outils pour ton entreprise';
 
   @override
-  String get businessHubAccount => 'Business account';
+  String get businessHubAccount => 'Compte professionnel';
 
   @override
-  String get businessHubAnalytics => 'Analytics';
+  String get businessHubAnalytics => 'Statistiques';
 
   @override
-  String get businessHubFeatured => 'Featured placements';
+  String get businessHubFeatured => 'Emplacements en avant';
 
   @override
-  String get becomeBusinessAction => 'Become one';
+  String get becomeBusinessAction => 'En devenir un';
 
   @override
   String get becomeBusinessPermanentHint =>
-      'One-time upgrade. This can\'t be undone.';
+      'Amélioration unique. Cette action est irréversible.';
 
   @override
-  String get becomeBusinessConfirmTitle => 'Become a business account?';
+  String get becomeBusinessConfirmTitle => 'Devenir un compte professionnel ?';
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'This is permanent — your account becomes a public business account and can\'t be switched back.';
+      'C\'est permanent — ton compte devient un compte professionnel public et ne peut pas être rétabli.';
 
   @override
-  String get becomeBusinessConfirmAction => 'Make it permanent';
+  String get becomeBusinessConfirmAction => 'Rendre permanent';
 
   @override
-  String get becomeBusinessSuccess => 'Your account is now a business account.';
+  String get becomeBusinessSuccess =>
+      'Ton compte est désormais un compte professionnel.';
 
   @override
   String get becomeBusinessError =>
-      'Couldn\'t switch your account. Please try again.';
+      'Impossible de changer ton compte. Veuillez réessayer.';
 
   @override
-  String get businessAccountActive => 'Business account active (permanent)';
+  String get businessAccountActive => 'Compte professionnel actif (permanent)';
 
   @override
   String get businessRequiresPlatinum =>
-      'Business accounts are a Platinum feature. Upgrade to unlock your storefront, followers and lead capture.';
+      'Les comptes professionnels sont une fonctionnalité Platinum. Améliore ton offre pour débloquer ta vitrine, tes abonnés et la capture de prospects.';
 
   @override
-  String get viewStorefront => 'View storefront';
+  String get viewStorefront => 'Voir la vitrine';
 
   @override
-  String get requestVerification => 'Request verification';
+  String get requestVerification => 'Demander la vérification';
 
   @override
-  String get requestVerificationPending => 'Verification pending';
+  String get requestVerificationPending => 'Vérification en attente';
 
   @override
-  String get requestVerificationTitle => 'Request verification';
+  String get requestVerificationTitle => 'Demander la vérification';
 
   @override
   String get requestVerificationMessage =>
-      'Tell us a little about your business so we can verify it. Our team will review your request.';
+      'Parle-nous un peu de ton entreprise afin que nous puissions la vérifier. Notre équipe examinera ta demande.';
 
   @override
   String get requestVerificationNoteHint =>
-      'Add a note (website, address, anything that helps us verify you)';
+      'Ajoute une note (site web, adresse, tout ce qui nous aide à te vérifier)';
 
   @override
-  String get requestVerificationSubmitted => 'Verification request submitted.';
+  String get requestVerificationSubmitted => 'Demande de vérification envoyée.';
 
   @override
   String get requestVerificationError =>
-      'Couldn\'t submit your request. Please try again.';
+      'Impossible d\'envoyer ta demande. Veuillez réessayer.';
 
   @override
-  String get submit => 'Submit';
+  String get submit => 'Envoyer';
 
   @override
-  String get businessVerifiedBadgeTooltip => 'Verified business';
+  String get businessVerifiedBadgeTooltip => 'Entreprise vérifiée';
 
   @override
-  String get businessLinks => 'Links';
+  String get businessLinks => 'Liens';
 
   @override
-  String get businessOpeningHours => 'Opening hours';
+  String get businessOpeningHours => 'Horaires d\'ouverture';
 
   @override
-  String get businessHoursNotProvided => 'Opening hours not provided';
+  String get businessHoursNotProvided => 'Horaires d\'ouverture non fournis';
 
   @override
-  String get businessGallery => 'Gallery';
+  String get businessGallery => 'Galerie';
 
   @override
-  String get businessUpcomingEvents => 'Upcoming events';
+  String get businessUpcomingEvents => 'Événements à venir';
 
   @override
-  String get businessNoUpcomingEvents => 'No upcoming events yet.';
+  String get businessNoUpcomingEvents =>
+      'Aucun événement à venir pour l\'instant.';
 
   @override
-  String get businessCommunities => 'Communities';
+  String get businessCommunities => 'Communautés';
 
   @override
-  String get businessNoCommunities => 'No communities yet.';
+  String get businessNoCommunities => 'Aucune communauté pour l\'instant.';
 
   @override
   String get businessContact => 'Contact';
 
   @override
-  String get businessFollow => 'Follow';
+  String get businessFollow => 'Suivre';
 
   @override
-  String get businessFollowing => 'Following';
+  String get businessFollowing => 'Abonné';
 
   @override
   String get businessFollowError =>
-      'Couldn\'t update follow. Please try again.';
+      'Impossible de mettre à jour l\'abonnement. Veuillez réessayer.';
 
   @override
   String businessFollowersCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count followers',
-      one: '1 follower',
-      zero: 'No followers',
+      other: '$count abonnés',
+      one: '1 abonné',
+      zero: 'Aucun abonné',
     );
     return '$_temp0';
   }
@@ -11897,264 +11904,519 @@ class AppLocalizationsFr extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count members',
-      one: '1 member',
-      zero: 'No members',
+      other: '$count membres',
+      one: '1 membre',
+      zero: 'Aucun membre',
     );
     return '$_temp0';
   }
 
   @override
-  String get adminBusinessVerifications => 'Business Verifications';
+  String get adminBusinessVerifications => 'Vérifications professionnelles';
 
   @override
   String get adminBusinessVerificationsSubtitle =>
-      'Review and approve business verified badges';
+      'Examiner et approuver les badges vérifiés des entreprises';
 
   @override
-  String get adminApproveBusinessVerification => 'Approve';
+  String get adminApproveBusinessVerification => 'Approuver';
 
   @override
-  String get adminRejectBusinessVerification => 'Reject Business Verification';
+  String get adminRejectBusinessVerification =>
+      'Rejeter la vérification professionnelle';
 
   @override
-  String get adminBusinessRejectReasonHint => 'Reason for rejection (optional)';
+  String get adminBusinessRejectReasonHint => 'Motif du rejet (facultatif)';
 
   @override
-  String get adminBusinessApproved => 'Business verified';
+  String get adminBusinessApproved => 'Entreprise vérifiée';
 
   @override
-  String get adminBusinessRejected => 'Business verification rejected';
+  String get adminBusinessRejected => 'Vérification professionnelle rejetée';
 
   @override
   String get adminNoPendingBusinessVerifications =>
-      'No pending business verifications';
+      'Aucune vérification professionnelle en attente';
 
   @override
-  String get adminAccessDenied => 'Access denied. Admins only.';
+  String get adminAccessDenied => 'Accès refusé. Réservé aux administrateurs.';
 
   @override
   String get adminBusinessVerifiedNotificationTitle =>
-      'Your business is verified';
+      'Ton entreprise est vérifiée';
 
   @override
   String get adminBusinessVerifiedNotificationBody =>
-      'Your business now shows the gold verified badge.';
+      'Ton entreprise affiche désormais le badge vérifié doré.';
 
   @override
   String adminSubmittedLabel(String date) {
-    return 'Submitted $date';
+    return 'Envoyé le $date';
   }
 
   @override
-  String get communitiesSponsored => 'Sponsored';
+  String get communitiesSponsored => 'Sponsorisé';
 
   @override
-  String get communitiesSponsorThisCommunity => 'Sponsor this community';
+  String get communitiesSponsorThisCommunity => 'Sponsoriser cette communauté';
 
   @override
-  String get communitiesSponsorSubtitle => 'Pin a promo to the top for members';
+  String get communitiesSponsorSubtitle =>
+      'Épingle une promo en haut pour les membres';
 
   @override
-  String get communitiesSponsorFeatureName => 'Community sponsorship';
+  String get communitiesSponsorFeatureName => 'Sponsoring de communauté';
 
   @override
   String get communitiesSponsorRequiresPlatinum =>
-      'Sponsoring a community and pinning a promo is a Platinum business feature.';
+      'Sponsoriser une communauté et épingler une promo est une fonctionnalité professionnelle Platinum.';
 
   @override
-  String get communitiesEditSponsorship => 'Edit sponsorship & promo';
+  String get communitiesEditSponsorship => 'Modifier le sponsoring et la promo';
 
   @override
-  String get communitiesMarkAsSponsored => 'Mark as sponsored';
+  String get communitiesMarkAsSponsored => 'Marquer comme sponsorisé';
 
   @override
-  String get communitiesPromoTitleLabel => 'Promo title';
+  String get communitiesPromoTitleLabel => 'Titre de la promo';
 
   @override
-  String get communitiesPromoTitleHint => 'e.g. 20% off this weekend';
+  String get communitiesPromoTitleHint => 'ex. 20 % de réduction ce week-end';
 
   @override
-  String get communitiesPromoBodyLabel => 'Promo message';
+  String get communitiesPromoBodyLabel => 'Message promo';
 
   @override
-  String get communitiesPromoBodyHint => 'Tell members about your offer';
+  String get communitiesPromoBodyHint => 'Parle de ton offre aux membres';
 
   @override
-  String get communitiesPromoImageLabel => 'Image URL (optional)';
+  String get communitiesPromoImageLabel => 'URL de l\'image (facultatif)';
 
   @override
-  String get communitiesPromoLinkEventLabel => 'Linked event ID (optional)';
+  String get communitiesPromoLinkEventLabel =>
+      'ID de l\'événement lié (facultatif)';
 
   @override
-  String get communitiesPromoLinkUrlLabel => 'Link URL (optional)';
+  String get communitiesPromoLinkUrlLabel => 'URL du lien (facultatif)';
 
   @override
-  String get communitiesPromoTitleRequired => 'Please enter a promo title';
+  String get communitiesPromoTitleRequired =>
+      'Veuillez saisir un titre de promo';
 
   @override
-  String get communitiesSaveSponsorship => 'Save';
+  String get communitiesSaveSponsorship => 'Enregistrer';
 
   @override
-  String get communitiesRemovePromo => 'Remove promo';
+  String get communitiesRemovePromo => 'Supprimer la promo';
 
   @override
-  String get exploreSearchTooltip => 'Search';
+  String get exploreSearchTooltip => 'Rechercher';
 
   @override
-  String get exploreQrTooltip => 'My QR codes';
+  String get exploreQrTooltip => 'Mes QR codes';
 
   @override
-  String get universalSearchTitle => 'Search';
+  String get universalSearchTitle => 'Rechercher';
 
   @override
-  String get universalSearchHint => 'Search people and events';
+  String get universalSearchHint =>
+      'Rechercher des personnes et des événements';
 
   @override
-  String get universalSearchTabPeople => 'People';
+  String get universalSearchTabPeople => 'Personnes';
 
   @override
-  String get universalSearchTabEvents => 'Events';
+  String get universalSearchTabEvents => 'Événements';
 
   @override
   String get universalSearchEmptyPrompt =>
-      'Find people to chat with and events to join';
+      'Trouve des personnes avec qui discuter et des événements à rejoindre';
 
   @override
-  String get universalSearchNoPeople => 'No people found';
+  String get universalSearchNoPeople => 'Aucune personne trouvée';
 
   @override
-  String get universalSearchNoEvents => 'No events found';
+  String get universalSearchNoEvents => 'Aucun événement trouvé';
 
   @override
   String get qrHubTitle => 'QR codes';
 
   @override
-  String get qrHubTabMyTickets => 'My tickets';
+  String get qrHubTabMyTickets => 'Mes billets';
 
   @override
-  String get qrHubTabScan => 'Scan';
+  String get qrHubTabScan => 'Scanner';
 
   @override
   String get qrHubNoTickets =>
-      'No upcoming tickets yet. Join an event to get your QR code.';
+      'Aucun billet à venir pour l\'instant. Rejoins un événement pour obtenir ton QR code.';
 
   @override
-  String get qrHubTicketHint => 'Tap a ticket to open its full QR code';
+  String get qrHubTicketHint =>
+      'Touche un billet pour ouvrir son QR code complet';
 
   @override
-  String get qrHubScanInstructions => 'Point your camera at a GreenGo QR code';
+  String get qrHubScanInstructions =>
+      'Pointe ta caméra vers un QR code GreenGo';
 
   @override
-  String get qrHubInvalidCode => 'That\'s not a valid GreenGo code';
+  String get qrHubInvalidCode => 'Ce n\'est pas un code GreenGo valide';
 
   @override
-  String get qrHubJoinedEvent => 'You\'re going! Opening the event…';
+  String get qrHubJoinedEvent => 'Tu y participes ! Ouverture de l\'événement…';
 
   @override
-  String get eventsRepeats => 'Repeats';
+  String get eventsRepeats => 'Répétitions';
 
   @override
-  String get eventsRepeatNone => 'Does not repeat';
+  String get eventsRepeatNone => 'Ne se répète pas';
 
   @override
-  String get eventsRepeatDaily => 'Daily';
+  String get eventsRepeatDaily => 'Quotidien';
 
   @override
-  String get eventsRepeatWeekly => 'Weekly';
+  String get eventsRepeatWeekly => 'Hebdomadaire';
 
   @override
-  String get eventsRepeatMonthly => 'Monthly';
+  String get eventsRepeatMonthly => 'Mensuel';
 
   @override
-  String get eventsRepeatInterval => 'Every';
+  String get eventsRepeatInterval => 'Tous les';
 
   @override
   String get eventsRepeatCount => 'Occurrences';
 
   @override
-  String get eventsRecurringLabel => 'Recurring';
+  String get eventsRecurringLabel => 'Récurrent';
 
   @override
-  String get eventsCancelSeries => 'Cancel entire series';
+  String get eventsCancelSeries => 'Annuler toute la série';
 
   @override
   String get eventsCancelSeriesConfirm =>
-      'Cancel all future occurrences of this recurring event?';
+      'Annuler toutes les occurrences futures de cet événement récurrent ?';
 
   @override
-  String get eventsSeriesCancelled => 'Series cancelled';
+  String get eventsSeriesCancelled => 'Série annulée';
 
   @override
-  String get eventsSeriesCancelError => 'Couldn\'t cancel the series';
+  String get eventsSeriesCancelError => 'Impossible d\'annuler la série';
 
   @override
-  String get eventsSaveAsDraft => 'Save as draft';
+  String get eventsSaveAsDraft => 'Enregistrer comme brouillon';
 
   @override
-  String get eventsSchedule => 'Schedule';
+  String get eventsSchedule => 'Planifier';
 
   @override
-  String get eventsStatusDraft => 'Draft';
+  String get eventsStatusDraft => 'Brouillon';
 
   @override
-  String get eventsStatusScheduled => 'Scheduled';
+  String get eventsStatusScheduled => 'Planifié';
 
   @override
-  String get eventsStatusCancelled => 'Cancelled';
+  String get eventsStatusCancelled => 'Annulé';
 
   @override
   String eventsScheduledForDate(String date) {
-    return 'Scheduled for $date';
+    return 'Planifié pour le $date';
   }
 
   @override
   String eventsRepeatCap(int max) {
-    return 'Up to $max occurrences';
+    return 'Jusqu\'à $max occurrences';
   }
 
   @override
-  String get eventsTicketTiers => 'Ticket tiers';
+  String get eventsTicketTiers => 'Catégories de billets';
 
   @override
-  String get eventsAddTier => 'Add tier';
+  String get eventsAddTier => 'Ajouter une catégorie';
 
   @override
-  String get eventsTierName => 'Tier name';
+  String get eventsTierName => 'Nom de la catégorie';
 
   @override
-  String get eventsTierPriceCoins => 'Price (coins, 0 = free)';
+  String get eventsTierPriceCoins => 'Prix (pièces, 0 = gratuit)';
 
   @override
-  String get eventsTierCapacity => 'Capacity (0 = unlimited)';
+  String get eventsTierCapacity => 'Capacité (0 = illimité)';
 
   @override
-  String get eventsFreeTier => 'Free';
+  String get eventsFreeTier => 'Gratuit';
 
   @override
-  String get eventsSelectTier => 'Select a ticket';
+  String get eventsSelectTier => 'Sélectionne un billet';
 
   @override
-  String get eventsJoinWaitlist => 'Join waitlist';
+  String get eventsJoinWaitlist => 'Rejoindre la liste d\'attente';
 
   @override
-  String get eventsOnWaitlist => 'On waitlist';
+  String get eventsOnWaitlist => 'Sur la liste d\'attente';
 
   @override
   String eventsWaitlistPosition(int position) {
-    return 'You\'re #$position on the waitlist';
+    return 'Tu es n°$position sur la liste d\'attente';
   }
 
   @override
   String eventsTierPriceValue(int coins) {
-    return '$coins coins';
+    return '$coins pièces';
   }
 
   @override
   String eventsTierCapacityValue(int capacity) {
-    return '$capacity spots';
+    return '$capacity places';
   }
 
   @override
-  String get eventsRsvpError => 'Couldn\'t update your RSVP';
+  String get eventsRsvpError => 'Impossible de mettre à jour ta participation';
+
+  @override
+  String get shareProfileTooltip => 'Share profile';
+
+  @override
+  String shareProfileMessage(String link) {
+    return 'Chat with me on GreenGo: $link';
+  }
+
+  @override
+  String shareEventMessage(String link) {
+    return 'Check out this event on GreenGo: $link';
+  }
+
+  @override
+  String get guidelinesSubtitle => 'A quick welcome to how we connect here';
+
+  @override
+  String get guidelinesWelcomeTitle => 'Welcome across cultures';
+
+  @override
+  String get guidelinesWelcomeDesc =>
+      'Meet people from everywhere and share your world with openness.';
+
+  @override
+  String get guidelinesRespectTitle => 'Respect everyone';
+
+  @override
+  String get guidelinesRespectDesc =>
+      'Kindness and curiosity first — treat others as you\'d like to be treated.';
+
+  @override
+  String get guidelinesAuthenticTitle => 'Stay authentic';
+
+  @override
+  String get guidelinesAuthenticDesc =>
+      'GreenGo is for genuine cultural connection — it is not a dating app.';
+
+  @override
+  String get guidelinesSafetyTitle => 'No harassment or hate';
+
+  @override
+  String get guidelinesSafetyDesc =>
+      'Harassment, hate speech, and threats have no place here.';
+
+  @override
+  String get guidelinesNoSpamTitle => 'No spam or explicit content';
+
+  @override
+  String get guidelinesNoSpamDesc =>
+      'Keep it clean — no spam, scams, or sexual content.';
+
+  @override
+  String get guidelinesReportTitle => 'Report anything wrong';
+
+  @override
+  String get guidelinesReportDesc =>
+      'See something off? Report it and our team will take a look.';
+
+  @override
+  String get businessNewBadge => 'NEW';
+
+  @override
+  String get businessLeadsTitle => 'Leads';
+
+  @override
+  String get businessLeadsEmpty =>
+      'No leads yet. People who contact you or save your events will show up here.';
+
+  @override
+  String get businessLeadContact => 'Contacted you';
+
+  @override
+  String get businessLeadSavedEvent => 'Saved your event';
+
+  @override
+  String get eventTicketWhen => 'When';
+
+  @override
+  String get eventTicketVenue => 'Venue';
+
+  @override
+  String get eventTicketWhere => 'Where';
+
+  @override
+  String get eventTicketGuestsLabel => 'Guests';
+
+  @override
+  String eventTicketAdmits(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Admits $count people',
+      one: 'Admits 1 person',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get shareEvent => 'Share event';
+
+  @override
+  String get promoteTitle => 'Promote';
+
+  @override
+  String get promoteSubtitle => 'Boost your visibility with GreenGoCoins';
+
+  @override
+  String get promoteBusinessOption => 'Promote business';
+
+  @override
+  String get promoteBusinessDesc =>
+      'Feature your storefront at the top of Explore';
+
+  @override
+  String get promoteEventsOption => 'Promote an event';
+
+  @override
+  String get promoteEventsDesc => 'Feature one of your events in discovery';
+
+  @override
+  String get promoteChooseDuration => 'Choose a duration';
+
+  @override
+  String get promoteNotActive => 'Not currently promoted';
+
+  @override
+  String get promoteConfirmTitle => 'Confirm promotion';
+
+  @override
+  String get promoteConfirmCta => 'Promote';
+
+  @override
+  String get promoteCancel => 'Cancel';
+
+  @override
+  String get promoteSelectEvent => 'Select an event to feature';
+
+  @override
+  String get promoteNoEvents => 'You have no upcoming events to feature';
+
+  @override
+  String get promoteEventAlreadyFeatured => 'Already featured';
+
+  @override
+  String get promoteSuccess => 'Promotion active!';
+
+  @override
+  String get promoteError => 'Something went wrong. Please try again.';
+
+  @override
+  String get promoteInsufficientCoins => 'Not enough coins';
+
+  @override
+  String get promoteInsufficientCoinsBody =>
+      'You don\'t have enough coins for this promotion. Top up to continue.';
+
+  @override
+  String get promoteGetCoins => 'Get coins';
+
+  @override
+  String promoteDurationDays(int days) {
+    return '$days days';
+  }
+
+  @override
+  String promoteCostLabel(int cost) {
+    return '$cost coins';
+  }
+
+  @override
+  String promoteActiveUntil(String date) {
+    return 'Promoted until $date';
+  }
+
+  @override
+  String promoteBusinessConfirm(int days, int cost) {
+    return 'Promote your business for $days days for $cost coins?';
+  }
+
+  @override
+  String promoteEventConfirm(int days, int cost) {
+    return 'Feature this event for $days days for $cost coins?';
+  }
+
+  @override
+  String get audienceSectionTitle => 'Audience insights';
+
+  @override
+  String get audiencePrivacyNote =>
+      'Aggregated and anonymized — small groups are hidden to protect privacy.';
+
+  @override
+  String get audienceNotEnoughData =>
+      'Not enough data yet to show this while protecting privacy.';
+
+  @override
+  String get audienceAgeTitle => 'Age distribution';
+
+  @override
+  String get audienceCountriesTitle => 'Top countries';
+
+  @override
+  String get audienceInterestsTitle => 'Top interests';
+
+  @override
+  String get eventAnalyticsTitle => 'Event analytics';
+
+  @override
+  String get eventAnalyticsGoing => 'Going';
+
+  @override
+  String get eventAnalyticsWaitlist => 'Waitlist';
+
+  @override
+  String get eventAnalyticsCheckedIn => 'Checked in';
+
+  @override
+  String get eventAnalyticsCheckInRate => 'Check-in rate';
+
+  @override
+  String get eventAnalyticsTierBreakdown => 'Ticket tiers';
+
+  @override
+  String get businessEventsTitle => 'Manage my events';
+
+  @override
+  String get businessEventsEmpty => 'You haven\'t created any events yet.';
+
+  @override
+  String get businessEventsAnalytics => 'Analytics';
+
+  @override
+  String get businessEventsCancelTitle => 'Cancel event';
+
+  @override
+  String get businessEventsCancelMessage =>
+      'Cancel this event? Attendees will be notified and it will be removed.';
+
+  @override
+  String get businessEventsCancelSeriesMessage =>
+      'Cancel every occurrence in this recurring series?';
+
+  @override
+  String get businessEventsCancelConfirm => 'Cancel event';
+
+  @override
+  String get businessEventsCancelled => 'Event cancelled';
 }

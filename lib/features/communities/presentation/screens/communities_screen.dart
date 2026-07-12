@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/interaction_log_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -504,6 +506,12 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   }
 
   void _navigateToCommunityDetail(Community community) {
+    // Interaction logging (fire-and-forget, never throws): a community tap feeds
+    // the recommendation signal.
+    final uid = _currentUserId;
+    if (uid != null) {
+      di.sl<InteractionLogService>().logCommunityView(uid, community.id);
+    }
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => BlocProvider.value(

@@ -4,5 +4,11 @@
 <dict>
 	<key>aps-environment</key>
 	<string>development</string>
+	<!-- Universal Links: opens greengo-chat.web.app/u/* and /e/* in the app.
+	     Paths are declared in web/.well-known/apple-app-site-association. -->
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:greengo-chat.web.app</string>
+	</array>
 </dict>
 </plist>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open in GreenGo</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: #0A0A0A; color: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 24px;
+    }
+    h1 { color: #D4AF37; font-size: 22px; margin: 16px 0 8px; }
+    p { color: #B0B0B0; font-size: 15px; max-width: 360px; line-height: 1.5; }
+    a.btn {
+      margin-top: 24px; padding: 14px 28px; border-radius: 30px;
+      background: #D4AF37; color: #0A0A0A; font-weight: 700; text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Opening GreenGo…</h1>
+  <p>If nothing happens, install the app to open this profile and start chatting.</p>
+  <a class="btn" id="store" href="#">Get GreenGo</a>
+
+  <script>
+    // Shareable PROFILE link fallback. If the GreenGo app is installed, the OS
+    // opens it via App Links (Android) / Universal Links (iOS) BEFORE this page
+    // even loads. If we're here, the app is (probably) not installed: try the
+    // custom scheme once, then redirect to the correct store.
+    (function () {
+      // Store URLs.
+      var PLAY_URL = "https://play.google.com/store/apps/details?id=com.greengochat.greengochatapp";
+      // TODO: replace id123456789 with the real numeric App Store ID once assigned.
+      var APPSTORE_URL = "https://apps.apple.com/app/greengo/id123456789";
+
+      // Extract the id from /u/{id}.
+      var parts = window.location.pathname.split("/").filter(Boolean);
+      var id = parts.length >= 2 ? parts[1] : "";
+      var ua = navigator.userAgent || navigator.vendor || "";
+      var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+      var isAndroid = /android/i.test(ua);
+      var storeUrl = isIOS ? APPSTORE_URL : PLAY_URL;
+
+      document.getElementById("store").href = storeUrl;
+
+      if (id) {
+        // Try to hand off to the installed app via the custom scheme.
+        var appUrl = "greengo://u/" + encodeURIComponent(id);
+        var redirected = false;
+        var goStore = function () {
+          if (redirected) return;
+          redirected = true;
+          window.location.href = storeUrl;
+        };
+        // If the app opens, the page is backgrounded and the timeout is cleared.
+        document.addEventListener("visibilitychange", function () {
+          if (document.hidden) redirected = true;
+        });
+        setTimeout(goStore, 1500);
+        if (isAndroid || isIOS) {
+          window.location.href = appUrl;
+        } else {
+          // Desktop / unknown: just go to a store page.
+          setTimeout(goStore, 300);
+        }
+      }
+    })();
+  </script>
+</body>
+</html>

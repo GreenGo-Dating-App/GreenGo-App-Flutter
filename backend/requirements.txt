@@ -1,5 +1,5 @@
 # Django Core
-Django==4.2.7
+Django==4.2.30  # SEC: was 4.2.7 — fixes CRITICAL SQLi (CVE-2024-42005) + multiple HIGH DoS; latest 4.2 LTS patch
 djangorestframework==3.14.0
 django-cors-headers==4.3.0
 django-environ==0.11.2
@@ -21,9 +21,9 @@ google-cloud-pubsub==2.18.4
 google-cloud-aiplatform==1.38.1
 
 # Authentication & Security
-PyJWT==2.8.0
-python-jose[cryptography]==3.3.0
-cryptography==41.0.7
+PyJWT==2.10.1  # SEC: was 2.8.0 — fixes CVE-2024-53861 (issuer check bypass)
+python-jose[cryptography]==3.4.0  # SEC: was 3.3.0 — fixes CRITICAL CVE-2024-33663 (JWT algorithm confusion / forged tokens) + CVE-2024-33664 (DoS)
+cryptography==44.0.1  # SEC: was 41.0.7 — fixes CVE-2023-49083, CVE-2024-0727, CVE-2024-26130, CVE-2024-12797 (multiple HIGH/CRITICAL)
 django-allauth==0.57.0
 dj-rest-auth==5.0.2
 djangorestframework-simplejwt==5.3.1
@@ -41,7 +41,7 @@ django-redis==5.4.0
 flower==2.0.1
 
 # Image Processing
-Pillow==10.1.0
+Pillow==10.4.0  # SEC: was 10.1.0 — fixes CRITICAL CVE-2023-50447 (arbitrary code exec) + CVE-2024-28219 (buffer overflow); stays in v10 to minimize breakage
 opencv-python==4.8.1.78
 
 # Video Processing
@@ -65,8 +65,8 @@ marshmallow==3.20.1
 python-dotenv==1.0.0
 python-dateutil==2.8.2
 pytz==2023.3.post1
-requests==2.31.0
-urllib3==2.1.0
+requests==2.32.4  # SEC: was 2.31.0 — fixes CVE-2024-35195 (cert verify bypass) + CVE-2024-47081 (.netrc credential leak)
+urllib3==2.5.0  # SEC: was 2.1.0 — fixes CVE-2024-37891 (proxy-auth leak) + CVE-2025-50181/50182 (redirect handling)
 
 # Testing
 pytest==7.4.3
@@ -77,7 +77,7 @@ faker==20.1.0
 freezegun==1.4.0
 
 # Code Quality
-black==23.12.0
+black==24.10.0  # SEC: was 23.12.0 — fixes CVE-2024-21503 (ReDoS); dev-only tool
 flake8==6.1.0
 pylint==3.0.3
 mypy==1.7.1
@@ -94,7 +94,7 @@ python-json-logger==2.0.7
 django-debug-toolbar==4.2.0
 
 # Performance
-gunicorn==21.2.0
+gunicorn==23.0.0  # SEC: was 21.2.0 — fixes CVE-2024-1135 + CVE-2024-6827 (HTTP request smuggling)
 gevent==23.9.1
 whitenoise==6.6.0
 
@@ -125,3 +125,10 @@ daphne==4.0.0
 scikit-learn==1.3.2
 numpy==1.26.2
 pandas==2.1.4
+
+# Security-pinned transitive dependencies (force patched versions of packages
+# pulled in indirectly by Django, flower, drf-yasg, sentry-sdk, etc.)
+sqlparse>=0.5.3      # SEC: fixes CVE-2024-4340 (DoS) + GHSA parsing issues (Django dep)
+jinja2>=3.1.6        # SEC: fixes CVE-2024-56201/56326, CVE-2025-27516 (sandbox/template)
+certifi>=2024.7.4    # SEC: removes distrusted root CAs (CVE-2023-37920 lineage)
+setuptools>=78.1.1   # SEC: fixes CVE-2024-6345 (RCE) + CVE-2025-47273 (path traversal)

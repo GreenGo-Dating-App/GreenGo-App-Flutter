@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
@@ -86,6 +87,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// Featured events/attractions are elected only from those within this many
   /// kilometres of the user (when the user has a known location). Adjustable.
   static const double kFeaturedRadiusKm = 50;
+
+  /// Round-robin window (minutes) for the luxury "Featured community events"
+  /// carousel. When more than 3 sponsored events are eligible, the visible
+  /// window advances once per this many minutes so every sponsor gets fair
+  /// exposure across refreshes while staying stable within the window (no
+  /// reshuffle on every rebuild).
+  static const int _luxuryRotationMinutes = 15;
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
@@ -495,29 +503,45 @@ class _ExploreScreenState extends State<ExploreScreen> {
     if (mounted) setState(() => _featuredAttractions = picked);
   }
 
-  /// Loads "Featured community events" (the LUXURY carousel): up to 3
-  /// COMMUNITY/user-created events near the user, elected BOOSTED-first then
-  /// filled with the nearest NORMAL community events, all within
-  /// [kFeaturedRadiusKm] when a location is known. Community-only (never
-  /// external experiences) and de-duplicated by event id. Empty (no location,
+  /// Loads "Featured community events" (the LUXURY carousel): up to 3 events
+  /// elected with a THREE-TIER fallback + round-robin. Empty (no location,
   /// zero events, or on failure) → the carousel is hidden.
+  ///
+  /// Strategy:
+  ///  - Tier 1 — SPONSORED community events near the user FIRST. "Sponsored" ==
+  ///    a currently-promoted event ([Event.isCurrentlyFeatured] — the paid
+  ///    coin-boost mechanic: `isFeatured && featuredUntil` not passed).
+  ///    Cross-referencing each event's community for a `Community.isSponsored`
+  ///    flag would cost an extra read per event, so we rely on the event's own
+  ///    featured/boost flag (cheap, index-light). ROUND-ROBIN: when MORE than 3
+  ///    sponsors are eligible we rotate the visible window by a wall-clock
+  ///    offset so every sponsor gets fair exposure across refreshes instead of
+  ///    always the same 3. The offset is computed ONCE per load and is stable
+  ///    for [_luxuryRotationMinutes] (deterministic within the window — no
+  ///    reshuffle on every rebuild).
+  ///  - Tier 2 — if FEWER than 3 sponsors, FILL the remainder with the CLOSEST
+  ///    community events (nearest-first, as returned by the data source),
+  ///    de-duped against Tier 1.
+  ///  - Tier 3 — if there are NO community events near the user at all, FALL
+  ///    BACK to nearby LIVE events (distance-sorted), lightly shuffled.
+  ///
+  /// All tiers stay within [kFeaturedRadiusKm] when a location is known and are
+  /// de-duplicated by event id.
   Future<void> _loadLuxuryEvents() async {
     final picked = <Event>[];
     final seen = <String>{};
 
-    void addUpToThree(Iterable<_Happening> items) {
-      for (final h in items) {
+    void addEvents(Iterable<Event> items) {
+      for (final e in items) {
         if (picked.length >= 3) break;
-        final e = h.community;
-        if (e == null) continue;
-        if (h.key.isEmpty || !seen.add(h.key)) continue; // dedup by event id
+        if (e.id.isEmpty || !seen.add(e.id)) continue; // dedup by event id
         picked.add(e);
       }
     }
 
     // Community events near the user, kept within [kFeaturedRadiusKm] when a
     // location is known (nearest-first, as returned by the data source).
-    List<_Happening> community = const <_Happening>[];
+    List<Event> community = const <Event>[];
     if (_userLat != null && _userLng != null) {
       try {
         final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
@@ -527,22 +551,49 @@ class _ExploreScreenState extends State<ExploreScreen> {
           limit: 40,
         );
         community = events
-            .map((e) => _Happening.community(e))
-            .where(_withinFeaturedRadius)
+            .where((e) => _withinFeaturedRadius(_Happening.community(e)))
             .toList();
       } catch (_) {
-        community = const <_Happening>[];
+        community = const <Event>[];
       }
     }
 
-    // Priority 1 — BOOSTED community events (shuffled for freshness).
-    addUpToThree(
-      community.where((h) => h.isCurrentlyFeatured).toList()..shuffle(),
-    );
-    // Fallback — the nearest NORMAL community events, in the data source's
-    // nearest-first order.
+    // Tier 1 — SPONSORED (currently-featured/boosted) community events, ordered
+    // by a STABLE base key (id) so the time-based round-robin advances fairly.
+    final sponsored = community.where((e) => e.isCurrentlyFeatured).toList()
+      ..sort((a, b) => a.id.compareTo(b.id));
+    if (sponsored.length > 3) {
+      // Compute the rotation offset ONCE per load; stable for the window.
+      final offset = (DateTime.now().millisecondsSinceEpoch ~/
+              (_luxuryRotationMinutes * 60 * 1000)) %
+          sponsored.length;
+      addEvents([
+        for (var i = 0; i < 3; i++) sponsored[(offset + i) % sponsored.length],
+      ]);
+    } else {
+      addEvents(sponsored);
+    }
+
+    // Tier 2 — FILL with the CLOSEST community events (data source is already
+    // nearest-first), de-duped against the sponsored picks.
     if (picked.length < 3) {
-      addUpToThree(community.where((h) => !h.isCurrentlyFeatured));
+      addEvents(community.where((e) => !e.isCurrentlyFeatured));
+    }
+
+    // Tier 3 — NO community events near the user at all → fall back to nearby
+    // LIVE events (distance-sorted), lightly shuffled within the closest set.
+    if (community.isEmpty && _userLat != null && _userLng != null) {
+      try {
+        final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
+        final live = await eventsDs.getEventsNearLocation(
+          _userLat!,
+          _userLng!,
+          kFeaturedRadiusKm,
+        );
+        addEvents(live.take(20).toList()..shuffle());
+      } catch (_) {
+        // Leave picked as-is — an empty result hides the carousel.
+      }
     }
 
     if (mounted) setState(() => _luxuryEvents = picked.take(3).toList());
@@ -722,6 +773,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
           lng: _userLng!,
           limit: _peopleWanted,
         );
+        // Auto-publish gate (defensive): drafts / not-yet-due scheduled events
+        // never leak into discovery. The datasource already filters; guard here
+        // too (see Event.isLive).
+        events = events.where((e) => e.isLive).toList();
       } catch (_) {
         events = const <Event>[];
       }
@@ -1631,14 +1686,20 @@ class _ExploreScreenState extends State<ExploreScreen> {
             otherUserId: profile.userId,
             otherUserProfile: profile,
           ),
-          onOpenProfile: () => Navigator.of(context).push(
-            MaterialPageRoute<void>(
-              builder: (_) => ProfileDetailScreen(
-                profile: profile,
-                currentUserId: widget.userId,
+          onOpenProfile: () {
+            // Interaction logging (fire-and-forget, never throws): a profile tap
+            // in the Explore feed feeds the recommendation signal.
+            di.sl<InteractionLogService>()
+                .logProfileView(widget.userId, profile.userId);
+            Navigator.of(context).push(
+              MaterialPageRoute<void>(
+                builder: (_) => ProfileDetailScreen(
+                  profile: profile,
+                  currentUserId: widget.userId,
+                ),
               ),
-            ),
-          ),
+            );
+          },
           onLongPressTag: () => showPeopleTagsEditor(
             context,
             ownerId: widget.userId,
@@ -2019,6 +2080,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   void _openHappening(BuildContext context, _Happening happening) {
     final community = happening.community;
     if (community != null) {
+      // Community events open the detail loader, which already logs the
+      // event_view interaction — no explicit log needed here.
       Navigator.of(context).push(
         EventDetailLoaderScreen.route(
           eventId: community.id,
@@ -2029,6 +2092,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
     final external = happening.external;
     if (external != null) {
+      // Interaction logging (fire-and-forget, never throws): an attraction tap
+      // feeds the recommendation signal.
+      di.sl<InteractionLogService>()
+          .logAttractionView(widget.userId, external.id);
       showAttractionMenu(
         context,
         event: external,
@@ -2074,6 +2141,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// factories) — a [ProfileBloc] loaded for the current user, and a
   /// [CommunitiesBloc] — scoped to the pushed route.
   void _openCommunity(BuildContext context, Community community) {
+    // Interaction logging (fire-and-forget, never throws): a community tap feeds
+    // the recommendation signal.
+    di.sl<InteractionLogService>()
+        .logCommunityView(widget.userId, community.id);
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => MultiBlocProvider(

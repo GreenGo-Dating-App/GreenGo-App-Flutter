@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
+import 'dart:async';
 import 'dart:io';
 import 'dart:math' as math;
 
@@ -19,6 +20,7 @@ import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/tier_limits_service.dart';
 import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
+import '../../../business/data/services/leads_service.dart';
 import '../../../coins/domain/usecases/purchase_feature.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
@@ -27,6 +29,8 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
 import '../../data/services/event_series_service.dart';
+import '../../data/services/events_cache_service.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../domain/entities/event.dart';
 import '../../../safety/presentation/widgets/event_safety_checkin.dart';
 import '../bloc/events_bloc.dart';
@@ -94,6 +98,11 @@ class _EventsScreenState extends State<EventsScreen>
     _eventsBloc.add(const LoadEvents(upcoming: true));
     _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
 
+    // Cache-first community feed: render today's cached feed immediately (if
+    // present) so the tab loads offline/instantly and skips the network. Only a
+    // stale/absent cache — or a pull-to-refresh — triggers a Firestore query.
+    _loadCommunityCache();
+
     // Rebuild on tab change so the category bar shows/hides per tab.
     _tabController.addListener(() {
       if (!mounted) return;
@@ -135,8 +144,31 @@ class _EventsScreenState extends State<EventsScreen>
   List<Event> _communityNearby = const [];
   bool _communityNearbyLoading = false;
 
-  Future<void> _loadCommunityNearby() async {
+  // Daily cache for the community feed. Within the same calendar day the feed is
+  // served from local storage and the network is NOT hit; only a pull-to-refresh
+  // (or a stale/absent cache) forces a fresh Firestore query.
+  final EventsCacheService _eventsCache = const EventsCacheService();
+  String get _communityFeedKey => 'community_${widget.currentUserId}';
+  bool _communityCacheFresh = false; // true once today's cache is loaded/saved
+
+  /// Cache-first community feed: on open, render today's cached feed (if any)
+  /// WITHOUT any network fetch. A stale/absent cache leaves this a no-op and the
+  /// normal location-driven load populates (and persists) the feed instead.
+  Future<void> _loadCommunityCache() async {
+    final cached = await _eventsCache.getCachedIfFresh(_communityFeedKey);
+    if (cached != null && cached.isNotEmpty && mounted) {
+      setState(() {
+        _communityNearby = cached;
+        _communityCacheFresh = true;
+      });
+    }
+  }
+
+  Future<void> _loadCommunityNearby({bool force = false}) async {
     if (_userLat == null || _userLng == null) return;
+    // Same-day cache hit: the cache was already rendered, so skip the network
+    // unless the user explicitly pulled to refresh (force == true).
+    if (!force && _communityCacheFresh) return;
     setState(() => _communityNearbyLoading = true);
     try {
       final list = await _eventsDataSource.getNearbyCommunityEvents(
@@ -145,7 +177,11 @@ class _EventsScreenState extends State<EventsScreen>
       setState(() {
         _communityNearby = list;
         _communityNearbyLoading = false;
+        _communityCacheFresh = true;
       });
+      // Persist the freshly fetched feed + today's day stamp so the rest of the
+      // day serves from cache.
+      unawaited(_eventsCache.save(_communityFeedKey, list));
     } catch (_) {
       if (mounted) setState(() => _communityNearbyLoading = false);
     }
@@ -588,9 +624,11 @@ class _EventsScreenState extends State<EventsScreen>
   /// Community: all GreenGo user-created events. Order applied centrally
   /// (distance by default; user can switch to date / popular).
   ///
-  /// TODO(schedule-filter): the globe/explore feeds and any other list that
-  /// surfaces these events must apply the same `e.isLive` gate so drafts and
-  /// not-yet-due scheduled events never leak into discovery (see Event.isLive).
+  /// Auto-publish gate: this and every other discovery feed that surfaces these
+  /// events applies the `e.isLive` gate so drafts / not-yet-due scheduled events
+  /// never leak into discovery (see Event.isLive). Sibling feeds now guarded:
+  /// explore_screen (community-events feed) and globe_screen (country-events +
+  /// viewport community layer), on top of the datasource-level filtering.
   List<Event> _getCommunityEvents(EventsLoaded state) {
     // Auto-publish gate: only live events (published, or scheduled & due) are
     // discoverable. The datasource already filters, but guard client-side too.
@@ -707,6 +745,9 @@ class _EventsScreenState extends State<EventsScreen>
       onRefresh: () async {
         _eventsBloc.add(const LoadEvents(upcoming: true));
         _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+        // Pull-to-refresh ALWAYS forces a network fetch of the community feed
+        // and re-writes the daily cache (bypassing the same-day cache hit).
+        await _loadCommunityNearby(force: true);
         // Wait briefly for the BLoC to process
         await Future.delayed(const Duration(milliseconds: 500));
       },
@@ -1055,7 +1096,29 @@ class _EventsScreenState extends State<EventsScreen>
       userId: widget.currentUserId,
       status: status.name,
     ));
+    // Business lead capture: a positive RSVP (going / interested) to a
+    // business-organized event becomes a saved-event lead. Ignored for
+    // non-business organizers and self-RSVPs by the service.
+    if (status == RSVPStatus.going || status == RSVPStatus.interested) {
+      _logSavedEventLead(event, widget.currentUserId);
+    }
   }
+}
+
+/// Fire-and-forget business lead capture for a saved / RSVP'd event. When the
+/// event's organizer is a business account, [LeadsService] records the RSVP as
+/// a saved-event lead in their CRM; self-RSVPs and non-business organizers are
+/// cheaply ignored by the service. Never throws and never blocks the RSVP flow.
+void _logSavedEventLead(Event event, String uid) {
+  unawaited(
+    sl<LeadsService>()
+        .logSavedEventLead(
+          businessId: event.organizerId,
+          uid: uid,
+          eventId: event.id,
+        )
+        .catchError((Object _) {}),
+  );
 }
 
 /// Small status/recurrence badges shown on cards & tiles: Draft / Scheduled /
@@ -1547,6 +1610,12 @@ class EventDetailsScreen extends StatelessWidget {
                   tooltip: AppLocalizations.of(context)!.eventsBoost,
                   onPressed: () => _handleBoost(context, event),
                 ),
+              // Share a deep link to this event (native OS share sheet).
+              IconButton(
+                icon: const Icon(Icons.ios_share, color: AppColors.richGold),
+                tooltip: AppLocalizations.of(context)!.shareEvent,
+                onPressed: () => shareEventLink(context, event.id),
+              ),
               // Share event to chats / groups
               IconButton(
                 icon: const Icon(Icons.share, color: AppColors.richGold),
@@ -2074,6 +2143,11 @@ class EventDetailsScreen extends StatelessWidget {
       return;
     }
     if (!context.mounted) return;
+
+    // Business lead capture: joining (going or waitlisted) a business-organized
+    // event becomes a saved-event lead. Non-business organizers and self-joins
+    // are cheaply ignored by the service.
+    _logSavedEventLead(event, currentUserId);
 
     if (result.isWaitlisted) {
       // Full — queued. No coins charged until (and unless) promoted to going.
