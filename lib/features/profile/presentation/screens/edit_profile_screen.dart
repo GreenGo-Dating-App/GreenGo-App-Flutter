@@ -203,6 +203,12 @@ class EditProfileScreen extends StatelessWidget {
             // Create a non-null reference for use in the UI
             final activeProfile = currentProfile;
 
+            // Active business accounts (business flag + active Platinum) get a
+            // storefront-oriented menu; dating-style personal items (voice
+            // intro, About Me body-stats) are hidden for them.
+            final isBusinessActive = TierEntitlements.isBusinessActive(
+                activeProfile.membershipTier, activeProfile.isBusiness);
+
             return SingleChildScrollView(
               padding: const EdgeInsets.all(AppDimensions.paddingL),
               child: Column(
@@ -279,14 +285,18 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToEditBasicInfo(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
-                      // About Me Section
-                      EditSectionCard(
-                        title: AppLocalizations.of(context)!.aboutMe,
-                        subtitle: _getAboutMeSubtitle(context, activeProfile),
-                        icon: Icons.edit_note,
-                        onTap: () => _navigateToEditBio(context, activeProfile),
-                      ),
-                      const SizedBox(height: 16),
+                      // About Me Section — hidden for active business accounts
+                      // (dating-style personal bio + body stats; businesses edit
+                      // the storefront description instead).
+                      if (!isBusinessActive) ...[
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.aboutMe,
+                          subtitle: _getAboutMeSubtitle(context, activeProfile),
+                          icon: Icons.edit_note,
+                          onTap: () => _navigateToEditBio(context, activeProfile),
+                        ),
+                        const SizedBox(height: 16),
+                      ],
                       // Interests Section
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.interests,
@@ -303,16 +313,19 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToEditLocation(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
-                      // Voice Recording Section
-                      EditSectionCard(
-                        title: AppLocalizations.of(context)!.voiceIntroduction,
-                        subtitle: activeProfile.voiceRecordingUrl != null
-                            ? AppLocalizations.of(context)!.voiceRecorded
-                            : AppLocalizations.of(context)!.noVoiceRecording,
-                        icon: Icons.mic,
-                        onTap: () => _navigateToEditVoice(context, activeProfile),
-                      ),
-                      const SizedBox(height: 16),
+                      // Voice Introduction — hidden for active business accounts
+                      // (dating-style voice intro; irrelevant to a storefront).
+                      if (!isBusinessActive) ...[
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.voiceIntroduction,
+                          subtitle: activeProfile.voiceRecordingUrl != null
+                              ? AppLocalizations.of(context)!.voiceRecorded
+                              : AppLocalizations.of(context)!.noVoiceRecording,
+                          icon: Icons.mic,
+                          onTap: () => _navigateToEditVoice(context, activeProfile),
+                        ),
+                        const SizedBox(height: 16),
+                      ],
                       // Social Links Section
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.socialProfiles,
@@ -363,30 +376,14 @@ class EditProfileScreen extends StatelessWidget {
                           activeProfile.membershipTier,
                           activeProfile.isBusiness)) ...[
                         const SizedBox(height: 16),
+                        // Single canonical storefront editor entry. The former
+                        // separate "Gallery" and "Opening hours" tiles opened
+                        // this very same editor, so they were collapsed here.
                         EditSectionCard(
                           title: AppLocalizations.of(context)!.editStorefront,
                           subtitle: AppLocalizations.of(context)!
                               .editStorefrontSubtitle,
                           icon: Icons.edit_note,
-                          onTap: () => _navigateToStorefrontEditor(
-                              context, activeProfile),
-                        ),
-                        const SizedBox(height: 16),
-                        EditSectionCard(
-                          title: AppLocalizations.of(context)!.businessGallery,
-                          subtitle: AppLocalizations.of(context)!
-                              .storefrontGallerySubtitle,
-                          icon: Icons.photo_library,
-                          onTap: () => _navigateToStorefrontEditor(
-                              context, activeProfile),
-                        ),
-                        const SizedBox(height: 16),
-                        EditSectionCard(
-                          title: AppLocalizations.of(context)!
-                              .businessOpeningHours,
-                          subtitle: AppLocalizations.of(context)!
-                              .storefrontOpeningHoursSubtitle,
-                          icon: Icons.schedule,
                           onTap: () => _navigateToStorefrontEditor(
                               context, activeProfile),
                         ),

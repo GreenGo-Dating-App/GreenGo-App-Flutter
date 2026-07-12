@@ -9,13 +9,11 @@ import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/limit_reached_dialog.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../analytics/presentation/screens/analytics_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
-import 'business_storefront_screen.dart';
 
 /// Business / venue account screen.
 ///
@@ -120,21 +118,6 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     );
 
     context.read<ProfileBloc>().add(ProfileUpdateRequested(profile: updated));
-  }
-
-  /// Opens the Platinum-gated analytics dashboard. [TierGate.ensureAnalytics]
-  /// surfaces the upgrade dialog itself when the tier is below Platinum.
-  Future<void> _openAnalytics() async {
-    final uid = widget.profile.userId;
-    final tier = widget.profile.membershipTier;
-    final allowed =
-        await TierGate().ensureAnalytics(context, uid, knownTier: tier);
-    if (!allowed || !mounted) return;
-    await Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => AnalyticsScreen(userId: uid, tier: tier),
-      ),
-    );
   }
 
   /// One-time, IRREVERSIBLE switch to a business account.
@@ -340,18 +323,6 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     }
   }
 
-  /// Opens the public storefront preview for this business.
-  void _openStorefront() {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => BusinessStorefrontScreen(
-          business: widget.profile.copyWith(isBusiness: true),
-          currentUserId: widget.profile.userId,
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -500,91 +471,10 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                   ],
                 ),
               ),
-              const SizedBox(height: 16),
-              // View public storefront (only meaningful once a business).
-              if (_isBusiness) ...[
-                InkWell(
-                  onTap: _openStorefront,
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                  child: Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: AppColors.backgroundCard,
-                      borderRadius:
-                          BorderRadius.circular(AppDimensions.radiusM),
-                      border: Border.all(color: AppColors.divider),
-                    ),
-                    child: Row(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: AppColors.richGold.withOpacity(0.1),
-                            borderRadius:
-                                BorderRadius.circular(AppDimensions.radiusS),
-                          ),
-                          child: const Icon(Icons.storefront_outlined,
-                              color: AppColors.richGold, size: 24),
-                        ),
-                        const SizedBox(width: 16),
-                        Expanded(
-                          child: Text(
-                            l10n.viewStorefront,
-                            style: const TextStyle(
-                              color: AppColors.textPrimary,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                        const Icon(Icons.chevron_right,
-                            color: AppColors.textTertiary, size: 22),
-                      ],
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 16),
-              ],
-              // View analytics (Platinum-gated; ensureAnalytics handles upsell)
-              InkWell(
-                onTap: _openAnalytics,
-                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                child: Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: AppColors.backgroundCard,
-                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                    border: Border.all(color: AppColors.divider),
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: AppColors.richGold.withOpacity(0.1),
-                          borderRadius:
-                              BorderRadius.circular(AppDimensions.radiusS),
-                        ),
-                        child: const Icon(Icons.insights,
-                            color: AppColors.richGold, size: 24),
-                      ),
-                      const SizedBox(width: 16),
-                      Expanded(
-                        child: Text(
-                          l10n.analyticsTitle,
-                          style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ),
-                      const Icon(Icons.chevron_right,
-                          color: AppColors.textTertiary, size: 22),
-                    ],
-                  ),
-                ),
-              ),
+              // "View storefront" and "View analytics" tiles removed here — both
+              // are duplicated in the Business hub (View storefront / Analytics
+              // tiles). This screen now owns only the one-time become-a-business
+              // conversion + status and the verification request below.
               if (_isBusiness) ...[
                 const SizedBox(height: 24),
                 // Business name
