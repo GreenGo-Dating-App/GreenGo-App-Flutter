@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/glass_container.dart';
@@ -496,6 +497,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   Future<void> _runNicknameLookup(String nickname) async {
     final generation = ++_searchGeneration;
     if (!mounted) return;
+    // Interaction logging (fire-and-forget, never throws): record the nickname
+    // search so the backend can build recommendations.
+    di.sl<InteractionLogService>().logSearch(widget.userId, nickname);
     setState(() => _nicknameLoading = true);
 
     MatchCandidate? result;
@@ -1191,14 +1195,23 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                 otherUserId: profile.userId,
                 otherUserProfile: profile,
               ),
-      onOpenProfile: () => Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => ProfileDetailScreen(
-            profile: profile,
-            currentUserId: widget.userId,
+      onOpenProfile: () {
+        // Interaction logging (fire-and-forget, never throws): a profile-card
+        // open in the discovery grid feeds the recommendation signal (skip the
+        // user's own "You" tile).
+        if (!isSelf) {
+          di.sl<InteractionLogService>()
+              .logProfileView(widget.userId, profile.userId);
+        }
+        Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (_) => ProfileDetailScreen(
+              profile: profile,
+              currentUserId: widget.userId,
+            ),
           ),
-        ),
-      ),
+        );
+      },
       onLongPressTag: isSelf
           ? () {}
           : () => showPeopleTagsEditor(

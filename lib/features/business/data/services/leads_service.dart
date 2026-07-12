@@ -47,12 +47,12 @@ class LeadsService {
   }
 
   /// Log a "saved_event" lead — the user saved/RSVP'd to one of the business's
-  /// events. Exposed for the events feature to call later.
+  /// events.
   ///
-  /// TODO(lead-wiring): call this from the event save/RSVP flow when the
-  /// event's organizer is a business account, passing the organizer's uid as
-  /// [businessId]. Do NOT edit the event screens from the business feature —
-  /// this method is the integration point they will import.
+  /// Wired call sites: the events RSVP/join flow (`events_screen.dart`
+  /// `_handleRSVP` / `_handleJoin`) passes the event's `organizerId` as
+  /// [businessId]. Non-business organizers and self-RSVPs are cheaply ignored
+  /// (the lead doc is only ever read by a business's own CRM).
   Future<void> logSavedEventLead({
     required String businessId,
     required String uid,

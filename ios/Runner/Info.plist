@@ -70,5 +70,18 @@
 		<string>fetch</string>
 		<string>remote-notification</string>
 	</array>
+	<!-- Custom URL scheme: greengo://u/{userId} and greengo://e/{eventId}.
+	     (Universal Links via https are declared in Runner.entitlements.) -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.greengochat.greengochatapp.deeplink</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>greengo</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -320,21 +320,20 @@ class EditProfileScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       // Business / Venue Account Section.
                       // Once converted, the profile becomes a full business
-                      // account and this tile opens the Business hub (all
-                      // business tools). Before conversion it opens the
-                      // become-a-business flow.
-                      EditSectionCard(
-                        title: activeProfile.isBusiness
-                            ? AppLocalizations.of(context)!.businessSectionTitle
-                            : AppLocalizations.of(context)!.becomeBusiness,
-                        subtitle: activeProfile.isBusiness
-                            ? AppLocalizations.of(context)!.businessSectionSubtitle
-                            : AppLocalizations.of(context)!.businessAccountTitle,
-                        icon: Icons.storefront,
-                        onTap: () => activeProfile.isBusiness
-                            ? _navigateToBusinessHub(context, activeProfile)
-                            : _navigateToBusinessAccount(context, activeProfile),
-                      ),
+                      // account and shows the normal Business-hub tile. Before
+                      // conversion it's a highlighted "NEW" banner promoting the
+                      // one-time upgrade.
+                      if (activeProfile.isBusiness)
+                        EditSectionCard(
+                          title: AppLocalizations.of(context)!.businessSectionTitle,
+                          subtitle:
+                              AppLocalizations.of(context)!.businessSectionSubtitle,
+                          icon: Icons.storefront,
+                          onTap: () =>
+                              _navigateToBusinessHub(context, activeProfile),
+                        )
+                      else
+                        _buildBecomeBusinessBanner(context, activeProfile),
                     ],
                   ),
 
@@ -732,6 +731,119 @@ class EditProfileScreen extends StatelessWidget {
       ),
     );
     // Profile updates are propagated through shared BLoC - no reload needed
+  }
+
+  // Highlighted "NEW" upgrade banner shown to non-business accounts — a premium
+  // gold-glow card that promotes the one-time switch to a business account.
+  Widget _buildBecomeBusinessBanner(
+      BuildContext context, Profile activeProfile) {
+    final l10n = AppLocalizations.of(context)!;
+    return GestureDetector(
+      onTap: () => _navigateToBusinessAccount(context, activeProfile),
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(18),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              AppColors.richGold.withValues(alpha: 0.18),
+              AppColors.richGold.withValues(alpha: 0.04),
+            ],
+          ),
+          border:
+              Border.all(color: AppColors.richGold.withValues(alpha: 0.6), width: 1.2),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.richGold.withValues(alpha: 0.25),
+              blurRadius: 24,
+              spreadRadius: -4,
+              offset: const Offset(0, 8),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(
+                  colors: [
+                    AppColors.richGold,
+                    AppColors.richGold.withValues(alpha: 0.7),
+                  ],
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.richGold.withValues(alpha: 0.4),
+                    blurRadius: 12,
+                  ),
+                ],
+              ),
+              child: const Icon(Icons.storefront,
+                  color: AppColors.backgroundDark, size: 26),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    children: [
+                      Flexible(
+                        child: Text(
+                          l10n.becomeBusiness,
+                          style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: AppColors.richGold,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Text(
+                          l10n.businessNewBadge,
+                          style: const TextStyle(
+                            color: AppColors.backgroundDark,
+                            fontSize: 10,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 0.5,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    l10n.becomeBusinessPermanentHint,
+                    style: const TextStyle(
+                      color: AppColors.textSecondary,
+                      fontSize: 13,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 8),
+            const Icon(Icons.chevron_right, color: AppColors.richGold),
+          ],
+        ),
+      ),
+    );
   }
 
   Future<void> _navigateToEditBio(BuildContext context, Profile currentProfile) async {

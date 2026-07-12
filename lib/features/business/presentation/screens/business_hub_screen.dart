@@ -12,6 +12,10 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/widgets/edit_section_card.dart';
 import 'business_account_screen.dart';
+import 'business_events_screen.dart';
+import 'business_leads_screen.dart';
+import 'business_storefront_screen.dart';
+import 'promote_screen.dart';
 
 /// Business hub — the B2B home inside the user's Profile.
 ///
@@ -65,6 +69,51 @@ class BusinessHubScreen extends StatelessWidget {
       ),
     );
   }
+
+  /// Opens the public storefront preview for the OWN business. Force
+  /// [isBusiness] so the preview renders even before the account write settles.
+  Future<void> _openStorefront(BuildContext context) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BusinessStorefrontScreen(
+          business: profile.copyWith(isBusiness: true),
+          currentUserId: profile.userId,
+        ),
+      ),
+    );
+  }
+
+  /// Opens the leads / enquiries list for this business (own uid).
+  Future<void> _openLeads(BuildContext context) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BusinessLeadsScreen(businessId: profile.userId),
+      ),
+    );
+  }
+
+  /// Opens the organizer's own events management surface, scoped to this
+  /// business [Profile] so it can create/edit/manage the events it owns.
+  Future<void> _openManageEvents(BuildContext context) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BusinessEventsScreen(profile: profile),
+      ),
+    );
+  }
+
+  /// Opens the promote surface (share/boost the business + its events).
+  Future<void> _openPromote(BuildContext context) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => PromoteScreen(business: profile),
+      ),
+    );
+  }
+
+  /// Verification (request + status) lives inside the Business account screen,
+  /// so route there where the request/pending/approved flow is wired.
+  Future<void> _openVerification(BuildContext context) => _openBusinessAccount(context);
 
   @override
   Widget build(BuildContext context) {
@@ -122,6 +171,45 @@ class BusinessHubScreen extends StatelessWidget {
               subtitle: l10n.featureThisEvent,
               icon: Icons.star_outline,
               onTap: () => _openFeatured(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.businessEventsTitle,
+              subtitle: l10n.businessSectionSubtitle,
+              icon: Icons.event_note,
+              onTap: () => _openManageEvents(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.promoteTitle,
+              subtitle: l10n.featureThisEvent,
+              icon: Icons.campaign,
+              onTap: () => _openPromote(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.viewStorefront,
+              subtitle: profile.businessName ?? l10n.businessProfileLabel,
+              icon: Icons.storefront_outlined,
+              onTap: () => _openStorefront(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.businessLeadsTitle,
+              subtitle: l10n.businessContact,
+              icon: Icons.inbox_outlined,
+              onTap: () => _openLeads(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              title: l10n.requestVerification,
+              subtitle: profile.businessVerified
+                  ? l10n.businessVerifiedLabel
+                  : l10n.requestVerificationMessage,
+              icon: profile.businessVerified
+                  ? Icons.verified
+                  : Icons.verified_outlined,
+              onTap: () => _openVerification(context),
             ),
           ],
         ),

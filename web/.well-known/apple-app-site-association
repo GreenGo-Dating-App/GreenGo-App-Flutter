@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TODO_FILL_APPLE_TEAM_ID.com.greengochat.greengochatapp",
+        "paths": ["/u/*", "/e/*"]
+      }
+    ]
+  }
+}

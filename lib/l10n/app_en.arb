@@ -5567,7 +5567,7 @@
   "safetyCheckInArrived": "I've arrived safely",
   "safetyCheckInDone": "You checked in safely",
   "guidelinesTitle": "Community guidelines",
-  "guidelinesAccept": "I agree",
+  "guidelinesAccept": "Accept community guidelines",
   "guidelinesBody": "GreenGo is a cross-cultural community for discovery, language exchange, local events and friendship. Be respectful and welcoming to people from every culture. This is not a dating app. No harassment, hate speech, spam or explicit content. Report anything that doesn't belong.",
   "businessSectionTitle": "Business",
   "businessSectionSubtitle": "Tools for your business",
@@ -5724,5 +5724,118 @@
       "capacity": { "type": "int" }
     }
   },
-  "eventsRsvpError": "Couldn't update your RSVP"
+  "eventsRsvpError": "Couldn't update your RSVP",
+  "shareProfileTooltip": "Share profile",
+  "shareProfileMessage": "Chat with me on GreenGo: {link}",
+  "@shareProfileMessage": {
+    "placeholders": {
+      "link": { "type": "String" }
+    }
+  },
+  "shareEventMessage": "Check out this event on GreenGo: {link}",
+  "@shareEventMessage": {
+    "placeholders": {
+      "link": { "type": "String" }
+    }
+  },
+  "guidelinesSubtitle": "A quick welcome to how we connect here",
+  "guidelinesWelcomeTitle": "Welcome across cultures",
+  "guidelinesWelcomeDesc": "Meet people from everywhere and share your world with openness.",
+  "guidelinesRespectTitle": "Respect everyone",
+  "guidelinesRespectDesc": "Kindness and curiosity first — treat others as you'd like to be treated.",
+  "guidelinesAuthenticTitle": "Stay authentic",
+  "guidelinesAuthenticDesc": "GreenGo is for genuine cultural connection — it is not a dating app.",
+  "guidelinesSafetyTitle": "No harassment or hate",
+  "guidelinesSafetyDesc": "Harassment, hate speech, and threats have no place here.",
+  "guidelinesNoSpamTitle": "No spam or explicit content",
+  "guidelinesNoSpamDesc": "Keep it clean — no spam, scams, or sexual content.",
+  "guidelinesReportTitle": "Report anything wrong",
+  "guidelinesReportDesc": "See something off? Report it and our team will take a look.",
+  "businessNewBadge": "NEW",
+  "businessLeadsTitle": "Leads",
+  "businessLeadsEmpty": "No leads yet. People who contact you or save your events will show up here.",
+  "businessLeadContact": "Contacted you",
+  "businessLeadSavedEvent": "Saved your event",
+  "eventTicketWhen": "When",
+  "eventTicketVenue": "Venue",
+  "eventTicketWhere": "Where",
+  "eventTicketGuestsLabel": "Guests",
+  "eventTicketAdmits": "{count, plural, =1{Admits 1 person} other{Admits {count} people}}",
+  "@eventTicketAdmits": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "shareEvent": "Share event",
+  "promoteTitle": "Promote",
+  "promoteSubtitle": "Boost your visibility with GreenGoCoins",
+  "promoteBusinessOption": "Promote business",
+  "promoteBusinessDesc": "Feature your storefront at the top of Explore",
+  "promoteEventsOption": "Promote an event",
+  "promoteEventsDesc": "Feature one of your events in discovery",
+  "promoteChooseDuration": "Choose a duration",
+  "promoteNotActive": "Not currently promoted",
+  "promoteConfirmTitle": "Confirm promotion",
+  "promoteConfirmCta": "Promote",
+  "promoteCancel": "Cancel",
+  "promoteSelectEvent": "Select an event to feature",
+  "promoteNoEvents": "You have no upcoming events to feature",
+  "promoteEventAlreadyFeatured": "Already featured",
+  "promoteSuccess": "Promotion active!",
+  "promoteError": "Something went wrong. Please try again.",
+  "promoteInsufficientCoins": "Not enough coins",
+  "promoteInsufficientCoinsBody": "You don't have enough coins for this promotion. Top up to continue.",
+  "promoteGetCoins": "Get coins",
+  "promoteDurationDays": "{days} days",
+  "@promoteDurationDays": {
+    "placeholders": {
+      "days": { "type": "int" }
+    }
+  },
+  "promoteCostLabel": "{cost} coins",
+  "@promoteCostLabel": {
+    "placeholders": {
+      "cost": { "type": "int" }
+    }
+  },
+  "promoteActiveUntil": "Promoted until {date}",
+  "@promoteActiveUntil": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "promoteBusinessConfirm": "Promote your business for {days} days for {cost} coins?",
+  "@promoteBusinessConfirm": {
+    "placeholders": {
+      "days": { "type": "int" },
+      "cost": { "type": "int" }
+    }
+  },
+  "promoteEventConfirm": "Feature this event for {days} days for {cost} coins?",
+  "@promoteEventConfirm": {
+    "placeholders": {
+      "days": { "type": "int" },
+      "cost": { "type": "int" }
+    }
+  },
+  "audienceSectionTitle": "Audience insights",
+  "audiencePrivacyNote": "Aggregated and anonymized — small groups are hidden to protect privacy.",
+  "audienceNotEnoughData": "Not enough data yet to show this while protecting privacy.",
+  "audienceAgeTitle": "Age distribution",
+  "audienceCountriesTitle": "Top countries",
+  "audienceInterestsTitle": "Top interests",
+  "eventAnalyticsTitle": "Event analytics",
+  "eventAnalyticsGoing": "Going",
+  "eventAnalyticsWaitlist": "Waitlist",
+  "eventAnalyticsCheckedIn": "Checked in",
+  "eventAnalyticsCheckInRate": "Check-in rate",
+  "eventAnalyticsTierBreakdown": "Ticket tiers",
+  "businessEventsTitle": "Manage my events",
+  "businessEventsEmpty": "You haven't created any events yet.",
+  "businessEventsAnalytics": "Analytics",
+  "businessEventsCancelTitle": "Cancel event",
+  "businessEventsCancelMessage": "Cancel this event? Attendees will be notified and it will be removed.",
+  "businessEventsCancelSeriesMessage": "Cancel every occurrence in this recurring series?",
+  "businessEventsCancelConfirm": "Cancel event",
+  "businessEventsCancelled": "Event cancelled"
 }

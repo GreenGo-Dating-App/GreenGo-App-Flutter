@@ -591,9 +591,14 @@ async function runGeoapify(key, opts = {}) {
     }
     // Enrich with descriptions + images via batched Wikimedia calls.
     await enrichAll(all);
-    // Attractions are only worth showing with a photo → drop the image-less ones
-    // so we never store (or render) a blank card.
-    const withImage = all.filter((d) => !!d.data.imageUrl);
+    // Attractions are only worth showing with a photo → after enrichment, drop the
+    // image-less ones so we never store (or later render) a blank card. This runs
+    // AFTER enrichAll, so a POI that got a Wikipedia/Wikidata/Commons image is kept
+    // and one that stayed image-less is skipped (never added to the batch).
+    const withImage = all.filter((d) => {
+        const url = d.data.imageUrl;
+        return typeof url === 'string' && url.length > 0;
+    });
     await upsertAll(withImage);
     await writeCountryStats(withImage, 'geoapify');
     await (0, build_index_1.buildSourceIndex)('geoapify');

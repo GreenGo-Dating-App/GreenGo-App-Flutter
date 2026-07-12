@@ -310,7 +310,24 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   @override
   Future<ConversationModel> getConversation(String matchId) async {
     try {
-      // Check if conversation exists
+      // Cache-first: if this conversation is already in the local Firestore
+      // cache, return it INSTANTLY (works offline and skips a server round-trip
+      // on chat open). The realtime message stream still updates it live.
+      try {
+        final cached = await firestore
+            .collection('conversations')
+            .where('matchId', isEqualTo: matchId)
+            .limit(1)
+            .get(const GetOptions(source: Source.cache));
+        if (cached.docs.isNotEmpty) {
+          return ConversationModel.fromFirestore(cached.docs.first);
+        }
+      } catch (_) {
+        // Nothing cached yet (or cache unavailable) — fall through to the
+        // normal server lookup below, which itself falls back to cache offline.
+      }
+
+      // Check if conversation exists (server; falls back to cache when offline)
       final querySnapshot = await firestore
           .collection('conversations')
           .where('matchId', isEqualTo: matchId)

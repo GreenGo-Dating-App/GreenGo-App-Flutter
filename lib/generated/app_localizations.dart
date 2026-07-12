@@ -20631,7 +20631,7 @@ abstract class AppLocalizations {
   /// No description provided for @guidelinesAccept.
   ///
   /// In en, this message translates to:
-  /// **'I agree'**
+  /// **'Accept community guidelines'**
   String get guidelinesAccept;
 
   /// No description provided for @guidelinesBody.
@@ -21335,6 +21335,432 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t update your RSVP'**
   String get eventsRsvpError;
+
+  /// No description provided for @shareProfileTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Share profile'**
+  String get shareProfileTooltip;
+
+  /// No description provided for @shareProfileMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat with me on GreenGo: {link}'**
+  String shareProfileMessage(String link);
+
+  /// No description provided for @shareEventMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Check out this event on GreenGo: {link}'**
+  String shareEventMessage(String link);
+
+  /// No description provided for @guidelinesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A quick welcome to how we connect here'**
+  String get guidelinesSubtitle;
+
+  /// No description provided for @guidelinesWelcomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome across cultures'**
+  String get guidelinesWelcomeTitle;
+
+  /// No description provided for @guidelinesWelcomeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Meet people from everywhere and share your world with openness.'**
+  String get guidelinesWelcomeDesc;
+
+  /// No description provided for @guidelinesRespectTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Respect everyone'**
+  String get guidelinesRespectTitle;
+
+  /// No description provided for @guidelinesRespectDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Kindness and curiosity first — treat others as you\'d like to be treated.'**
+  String get guidelinesRespectDesc;
+
+  /// No description provided for @guidelinesAuthenticTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay authentic'**
+  String get guidelinesAuthenticTitle;
+
+  /// No description provided for @guidelinesAuthenticDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo is for genuine cultural connection — it is not a dating app.'**
+  String get guidelinesAuthenticDesc;
+
+  /// No description provided for @guidelinesSafetyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No harassment or hate'**
+  String get guidelinesSafetyTitle;
+
+  /// No description provided for @guidelinesSafetyDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Harassment, hate speech, and threats have no place here.'**
+  String get guidelinesSafetyDesc;
+
+  /// No description provided for @guidelinesNoSpamTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No spam or explicit content'**
+  String get guidelinesNoSpamTitle;
+
+  /// No description provided for @guidelinesNoSpamDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep it clean — no spam, scams, or sexual content.'**
+  String get guidelinesNoSpamDesc;
+
+  /// No description provided for @guidelinesReportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report anything wrong'**
+  String get guidelinesReportTitle;
+
+  /// No description provided for @guidelinesReportDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'See something off? Report it and our team will take a look.'**
+  String get guidelinesReportDesc;
+
+  /// No description provided for @businessNewBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'NEW'**
+  String get businessNewBadge;
+
+  /// No description provided for @businessLeadsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Leads'**
+  String get businessLeadsTitle;
+
+  /// No description provided for @businessLeadsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No leads yet. People who contact you or save your events will show up here.'**
+  String get businessLeadsEmpty;
+
+  /// No description provided for @businessLeadContact.
+  ///
+  /// In en, this message translates to:
+  /// **'Contacted you'**
+  String get businessLeadContact;
+
+  /// No description provided for @businessLeadSavedEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved your event'**
+  String get businessLeadSavedEvent;
+
+  /// No description provided for @eventTicketWhen.
+  ///
+  /// In en, this message translates to:
+  /// **'When'**
+  String get eventTicketWhen;
+
+  /// No description provided for @eventTicketVenue.
+  ///
+  /// In en, this message translates to:
+  /// **'Venue'**
+  String get eventTicketVenue;
+
+  /// No description provided for @eventTicketWhere.
+  ///
+  /// In en, this message translates to:
+  /// **'Where'**
+  String get eventTicketWhere;
+
+  /// No description provided for @eventTicketGuestsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Guests'**
+  String get eventTicketGuestsLabel;
+
+  /// No description provided for @eventTicketAdmits.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Admits 1 person} other{Admits {count} people}}'**
+  String eventTicketAdmits(int count);
+
+  /// No description provided for @shareEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Share event'**
+  String get shareEvent;
+
+  /// No description provided for @promoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Promote'**
+  String get promoteTitle;
+
+  /// No description provided for @promoteSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost your visibility with GreenGoCoins'**
+  String get promoteSubtitle;
+
+  /// No description provided for @promoteBusinessOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Promote business'**
+  String get promoteBusinessOption;
+
+  /// No description provided for @promoteBusinessDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Feature your storefront at the top of Explore'**
+  String get promoteBusinessDesc;
+
+  /// No description provided for @promoteEventsOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Promote an event'**
+  String get promoteEventsOption;
+
+  /// No description provided for @promoteEventsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Feature one of your events in discovery'**
+  String get promoteEventsDesc;
+
+  /// No description provided for @promoteChooseDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a duration'**
+  String get promoteChooseDuration;
+
+  /// No description provided for @promoteNotActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Not currently promoted'**
+  String get promoteNotActive;
+
+  /// No description provided for @promoteConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm promotion'**
+  String get promoteConfirmTitle;
+
+  /// No description provided for @promoteConfirmCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Promote'**
+  String get promoteConfirmCta;
+
+  /// No description provided for @promoteCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get promoteCancel;
+
+  /// No description provided for @promoteSelectEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Select an event to feature'**
+  String get promoteSelectEvent;
+
+  /// No description provided for @promoteNoEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'You have no upcoming events to feature'**
+  String get promoteNoEvents;
+
+  /// No description provided for @promoteEventAlreadyFeatured.
+  ///
+  /// In en, this message translates to:
+  /// **'Already featured'**
+  String get promoteEventAlreadyFeatured;
+
+  /// No description provided for @promoteSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Promotion active!'**
+  String get promoteSuccess;
+
+  /// No description provided for @promoteError.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong. Please try again.'**
+  String get promoteError;
+
+  /// No description provided for @promoteInsufficientCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough coins'**
+  String get promoteInsufficientCoins;
+
+  /// No description provided for @promoteInsufficientCoinsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You don\'t have enough coins for this promotion. Top up to continue.'**
+  String get promoteInsufficientCoinsBody;
+
+  /// No description provided for @promoteGetCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Get coins'**
+  String get promoteGetCoins;
+
+  /// No description provided for @promoteDurationDays.
+  ///
+  /// In en, this message translates to:
+  /// **'{days} days'**
+  String promoteDurationDays(int days);
+
+  /// No description provided for @promoteCostLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{cost} coins'**
+  String promoteCostLabel(int cost);
+
+  /// No description provided for @promoteActiveUntil.
+  ///
+  /// In en, this message translates to:
+  /// **'Promoted until {date}'**
+  String promoteActiveUntil(String date);
+
+  /// No description provided for @promoteBusinessConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Promote your business for {days} days for {cost} coins?'**
+  String promoteBusinessConfirm(int days, int cost);
+
+  /// No description provided for @promoteEventConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Feature this event for {days} days for {cost} coins?'**
+  String promoteEventConfirm(int days, int cost);
+
+  /// No description provided for @audienceSectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Audience insights'**
+  String get audienceSectionTitle;
+
+  /// No description provided for @audiencePrivacyNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Aggregated and anonymized — small groups are hidden to protect privacy.'**
+  String get audiencePrivacyNote;
+
+  /// No description provided for @audienceNotEnoughData.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough data yet to show this while protecting privacy.'**
+  String get audienceNotEnoughData;
+
+  /// No description provided for @audienceAgeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Age distribution'**
+  String get audienceAgeTitle;
+
+  /// No description provided for @audienceCountriesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Top countries'**
+  String get audienceCountriesTitle;
+
+  /// No description provided for @audienceInterestsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Top interests'**
+  String get audienceInterestsTitle;
+
+  /// No description provided for @eventAnalyticsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Event analytics'**
+  String get eventAnalyticsTitle;
+
+  /// No description provided for @eventAnalyticsGoing.
+  ///
+  /// In en, this message translates to:
+  /// **'Going'**
+  String get eventAnalyticsGoing;
+
+  /// No description provided for @eventAnalyticsWaitlist.
+  ///
+  /// In en, this message translates to:
+  /// **'Waitlist'**
+  String get eventAnalyticsWaitlist;
+
+  /// No description provided for @eventAnalyticsCheckedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked in'**
+  String get eventAnalyticsCheckedIn;
+
+  /// No description provided for @eventAnalyticsCheckInRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in rate'**
+  String get eventAnalyticsCheckInRate;
+
+  /// No description provided for @eventAnalyticsTierBreakdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket tiers'**
+  String get eventAnalyticsTierBreakdown;
+
+  /// No description provided for @businessEventsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage my events'**
+  String get businessEventsTitle;
+
+  /// No description provided for @businessEventsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'You haven\'t created any events yet.'**
+  String get businessEventsEmpty;
+
+  /// No description provided for @businessEventsAnalytics.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytics'**
+  String get businessEventsAnalytics;
+
+  /// No description provided for @businessEventsCancelTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel event'**
+  String get businessEventsCancelTitle;
+
+  /// No description provided for @businessEventsCancelMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel this event? Attendees will be notified and it will be removed.'**
+  String get businessEventsCancelMessage;
+
+  /// No description provided for @businessEventsCancelSeriesMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel every occurrence in this recurring series?'**
+  String get businessEventsCancelSeriesMessage;
+
+  /// No description provided for @businessEventsCancelConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel event'**
+  String get businessEventsCancelConfirm;
+
+  /// No description provided for @businessEventsCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Event cancelled'**
+  String get businessEventsCancelled;
 }
 
 class _AppLocalizationsDelegate

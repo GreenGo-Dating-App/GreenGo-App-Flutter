@@ -10,6 +10,8 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../data/services/analytics_service.dart';
+import '../widgets/audience_charts.dart';
 
 /// Immutable snapshot of a business/organizer's own analytics.
 ///
@@ -21,11 +23,15 @@ class _AnalyticsStats {
     required this.eventsHosted,
     required this.totalAttendees,
     required this.referrals,
+    this.audience = const AudienceAggregate.empty(),
   });
 
   final int eventsHosted;
   final int totalAttendees;
   final int referrals;
+
+  /// Aggregated, k-anonymized demographics of the organizer's audience.
+  final AudienceAggregate audience;
 
   /// Simple derived reach: everyone the organizer has touched — attendees
   /// across their events plus friends they've invited.
@@ -57,6 +63,7 @@ class AnalyticsScreen extends StatefulWidget {
 
 class _AnalyticsScreenState extends State<AnalyticsScreen> {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final AnalyticsService _analyticsService = AnalyticsService();
 
   late final bool _unlocked = TierEntitlements.analyticsEnabled(widget.tier);
   late Future<_AnalyticsStats> _future;
@@ -98,10 +105,19 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
       // Non-fatal.
     }
 
+    // Aggregated, privacy-safe audience demographics (bounded fan-out).
+    var audience = const AudienceAggregate.empty();
+    try {
+      audience = await _analyticsService.aggregateBusinessAudience(widget.userId);
+    } catch (_) {
+      // Non-fatal: charts fall back to their insufficient-data state.
+    }
+
     return _AnalyticsStats(
       eventsHosted: eventsHosted,
       totalAttendees: totalAttendees,
       referrals: referrals,
+      audience: audience,
     );
   }
 
@@ -171,6 +187,8 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
                 label: l10n.analyticsReach,
                 value: '${stats.reach}',
               ),
+              const SizedBox(height: 24),
+              ...buildAudienceCharts(context, stats.audience, l10n),
             ],
           ),
         );
