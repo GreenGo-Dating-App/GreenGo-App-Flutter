@@ -38,11 +38,11 @@ class _CulturalPassportScreenState extends State<CulturalPassportScreen> {
 
   // ── Collectible catalogs (locked tiles shown alongside earned stamps) ──
 
-  /// Popular countries whose flag palette resolves; earned codes are unioned in.
-  static const List<String> _countryCatalog = <String>[
-    'US', 'GB', 'FR', 'DE', 'IT', 'ES', 'PT', 'BR', 'NL', 'IE',
-    'SE', 'NO', 'PL', 'GR', 'TR', 'RU', 'UA', 'MX', 'AR', 'CA',
-    'JP', 'CN', 'KR', 'IN', 'TH', 'VN', 'AE', 'ZA', 'EG', 'AU',
+  /// EVERY country in the world (ISO 3166-1 alpha-2, ~197 entries from the
+  /// canonical [CountryFlagHelper.allCountries] table); earned codes are unioned
+  /// in. This makes the passport a complete, collectible world map.
+  static final List<String> _countryCatalog = <String>[
+    for (final c in CountryFlagHelper.allCountries) c.isoCode,
   ];
 
   /// Popular languages; earned languages are unioned in.

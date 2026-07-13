@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/constants/business_categories.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -55,7 +56,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   late List<String> _galleryImages;
   late List<OpeningHours> _openingHours; // exactly 7, index 0 = Monday
   late TextEditingController _descController;
-  late TextEditingController _categoryController;
+  String? _category;
   late List<TextEditingController> _linkControllers;
 
   // Featured/cover (hero) image URL. Empty string is the "removed" sentinel so
@@ -93,9 +94,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     _descController = TextEditingController(
       text: widget.profile.storefrontBio ?? '',
     );
-    _categoryController = TextEditingController(
-      text: widget.profile.businessCategory ?? '',
-    );
+    _category = widget.profile.businessCategory;
     final links = widget.profile.storefrontLinks.isNotEmpty
         ? widget.profile.storefrontLinks
         : <String>[''];
@@ -106,7 +105,6 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   @override
   void dispose() {
     _descController.dispose();
-    _categoryController.dispose();
     for (final c in _linkControllers) {
       c.dispose();
     }
@@ -257,9 +255,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       openingHours: _openingHours,
       storefrontBio: _descController.text.trim(),
       storefrontLinks: links,
-      businessCategory: _categoryController.text.trim().isEmpty
-          ? widget.profile.businessCategory
-          : _categoryController.text.trim(),
+      businessCategory: _category ?? widget.profile.businessCategory,
       updatedAt: DateTime.now(),
     );
 
@@ -377,9 +373,43 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             // Category
             _sectionHeader(l10n.categoryName, null),
             const SizedBox(height: 12),
-            _glassField(
-              controller: _categoryController,
-              hint: l10n.storefrontCategoryHint,
+            DropdownButtonFormField<String>(
+              value: BusinessCategories.all.contains(_category)
+                  ? _category
+                  : null,
+              isExpanded: true,
+              dropdownColor: AppColors.backgroundCard,
+              icon: const Icon(Icons.arrow_drop_down, color: AppColors.richGold),
+              style:
+                  const TextStyle(color: AppColors.textPrimary, fontSize: 16),
+              hint: Text(
+                l10n.storefrontCategoryHint,
+                style: const TextStyle(color: AppColors.textTertiary),
+              ),
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: AppColors.backgroundCard,
+                contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16, vertical: 14),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                  borderSide: const BorderSide(color: AppColors.divider),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                  borderSide: const BorderSide(color: AppColors.divider),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                  borderSide:
+                      const BorderSide(color: AppColors.richGold, width: 2),
+                ),
+              ),
+              items: [
+                for (final c in BusinessCategories.all)
+                  DropdownMenuItem<String>(value: c, child: Text(c)),
+              ],
+              onChanged: (value) => setState(() => _category = value),
             ),
             const SizedBox(height: 28),
 

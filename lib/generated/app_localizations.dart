@@ -7301,6 +7301,12 @@ abstract class AppLocalizations {
   /// **'Happening this week'**
   String get exploreHappeningThisWeek;
 
+  /// No description provided for @exploreHappeningToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Happening today'**
+  String get exploreHappeningToday;
+
   /// No description provided for @exploreJoin.
   ///
   /// In en, this message translates to:
@@ -20351,6 +20357,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Business category'**
   String get businessCategoryLabel;
+
+  /// No description provided for @businessCategoryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a category'**
+  String get businessCategoryHint;
 
   /// No description provided for @businessVerifiedLabel.
   ///

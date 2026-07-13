@@ -7,12 +7,17 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/interaction_log_service.dart';
+import '../../../../core/services/tier_gate.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
+import '../../../chat/presentation/screens/conversations_screen.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../communities/data/datasources/communities_remote_datasource.dart';
 import '../../../communities/domain/entities/community.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
@@ -34,6 +39,8 @@ import '../../../events/domain/entities/external_event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../events/presentation/screens/events_screen.dart';
 import '../../../events/presentation/widgets/attraction_menu_dialog.dart';
+import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
+import '../../../globe_explore/presentation/screens/globe_screen.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_score.dart';
 import '../../../matching/domain/usecases/feature_engineer.dart';
@@ -214,6 +221,25 @@ class _ExploreScreenState extends State<ExploreScreen> {
         _countryCode = (data['primaryOrigin'] as String?)?.trim();
         _userLat = (loc?['latitude'] as num?)?.toDouble();
         _userLng = (loc?['longitude'] as num?)?.toDouble();
+        // Traveler mode: when a user "travels" to another city, the WHOLE Explore
+        // surface (greeting city, nearby events, nearby communities) follows the
+        // traveled-to location instead of their real one — so it reads e.g.
+        // "Explore Paris" with Paris events, not Los Angeles.
+        final travelerExpiryRaw = data['travelerExpiry'];
+        final travelerExpiry =
+            travelerExpiryRaw is Timestamp ? travelerExpiryRaw.toDate() : null;
+        final travelerActive = data['isTraveler'] == true &&
+            travelerExpiry != null &&
+            travelerExpiry.isAfter(DateTime.now());
+        if (travelerActive) {
+          final tloc = data['travelerLocation'] as Map<String, dynamic>?;
+          if (tloc != null) {
+            _city = (tloc['city'] as String?)?.trim() ?? _city;
+            _countryName = (tloc['country'] as String?)?.trim() ?? _countryName;
+            _userLat = (tloc['latitude'] as num?)?.toDouble() ?? _userLat;
+            _userLng = (tloc['longitude'] as num?)?.toDouble() ?? _userLng;
+          }
+        }
         _displayName = (data['displayName'] as String?)?.trim();
         _userInterests = (data['interests'] as List<dynamic>?)
                 ?.map((e) => e.toString())
@@ -328,12 +354,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
   }
 
-  /// Loads "Happening this week": community/user-created events FIRST (the
-  /// `events` collection via [EventsRemoteDataSource]), then external live
-  /// experiences. The two "Featured events" / "Featured attractions" carousels
-  /// are loaded separately (see [_loadFeaturedEvents] / [_loadFeaturedAttractions]).
+  /// Loads "Happening today": community/user-created events occurring TODAY
+  /// FIRST (the `events` collection via [EventsRemoteDataSource]), then the
+  /// LIVE EVENTS OF THE DAY (Ticketmaster-sourced `external_events` dated today),
+  /// then nearby experiences as fill so the row is never empty. The "Featured
+  /// events" / "Featured attractions" carousels are loaded separately.
   Future<void> _loadHappenings() async {
-    // 1) Community events near the user (needs a location to run).
+    final now = DateTime.now();
+    final todayEnd = DateTime(now.year, now.month, now.day, 23, 59, 59);
+    final todayStr = DateFormat('yyyy-MM-dd').format(now);
+
+    // 1) Community events happening TODAY (started on/before today's end and not
+    //    yet finished — i.e. overlapping the current day), near the user.
     List<Event> community = const <Event>[];
     if (_userLat != null && _userLng != null) {
       try {
@@ -349,38 +381,62 @@ class _ExploreScreenState extends State<ExploreScreen> {
         community = const <Event>[];
       }
     }
+    // getNearbyCommunityEvents already drops finished events; keep only those
+    // that have started or start today (exclude future days).
+    final communityItems = community
+        .where((e) => !e.startDate.isAfter(todayEnd))
+        .map((e) => _Happening.community(e))
+        .toList();
 
-    final communityItems =
-        community.map((e) => _Happening.community(e)).toList();
-
-    // 2) External live experiences — ALWAYS loaded. They appear AFTER community
-    //    events in "Happening this week" (community first, then live events).
-    List<_Happening> externalItems = const <_Happening>[];
-    {
-      final ds = ExternalEventsDataSource(firestore: _firestore);
-      List<ExternalEvent> items;
-      try {
-        if (_userLat != null && _userLng != null) {
-          items = await ds.getNearbyExperiences(
-            source: 'viator',
-            userLat: _userLat!,
-            userLng: _userLng!,
-            limit: 60,
-          );
-        } else {
-          items =
-              await ds.getExperiencesSorted(source: 'viator', sort: 'rating');
-        }
-      } catch (_) {
-        items = const <ExternalEvent>[];
+    // 2) LIVE EVENTS OF THE DAY — Ticketmaster-sourced external events whose
+    //    date is today. These are the "live events" the user expects to see.
+    List<ExternalEvent> live = const <ExternalEvent>[];
+    final ds = ExternalEventsDataSource(firestore: _firestore);
+    try {
+      if (_userLat != null && _userLng != null) {
+        live = await ds.getNearbyExperiences(
+          source: 'ticketmaster',
+          userLat: _userLat!,
+          userLng: _userLng!,
+          limit: 60,
+        );
+      } else {
+        live = await ds.getExperiencesSorted(
+            source: 'ticketmaster', sort: 'date');
       }
-      // Attractions/experiences with no picture are omitted entirely.
-      externalItems =
+    } catch (_) {
+      live = const <ExternalEvent>[];
+    }
+    final liveTodayItems = live
+        .where((e) => e.startDate == todayStr)
+        .map((e) => _Happening.external(e))
+        .where(_hasImage)
+        .toList();
+
+    // 3) Fill — nearby experiences (Viator) so the row still has content on a
+    //    quiet day. Appear only after today's community + live events.
+    List<_Happening> fillItems = const <_Happening>[];
+    try {
+      final List<ExternalEvent> items;
+      if (_userLat != null && _userLng != null) {
+        items = await ds.getNearbyExperiences(
+          source: 'viator',
+          userLat: _userLat!,
+          userLng: _userLng!,
+          limit: 40,
+        );
+      } else {
+        items = await ds.getExperiencesSorted(source: 'viator', sort: 'rating');
+      }
+      fillItems =
           items.map((e) => _Happening.external(e)).where(_hasImage).toList();
+    } catch (_) {
+      fillItems = const <_Happening>[];
     }
 
-    // 3) "Happening this week": community events FIRST, then live events.
-    final rows = [...communityItems, ...externalItems].take(8).toList();
+    // Community events (today) FIRST, then live events of the day, then fill.
+    final rows =
+        [...communityItems, ...liveTodayItems, ...fillItems].take(8).toList();
 
     if (mounted) {
       setState(() {
@@ -1218,7 +1274,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
                   child: _sectionHeader(
                     context,
-                    l10n.exploreHappeningThisWeek,
+                    l10n.exploreHappeningToday,
                     l10n.exploreSeeAll,
                     onSeeAll: () => _openAllEvents(context),
                   ),
@@ -1422,41 +1478,96 @@ class _ExploreScreenState extends State<ExploreScreen> {
       child: Row(
         children: [
           Expanded(
-            child: _StatTile(
-              icon: Icons.monetization_on_outlined,
-              value: _coinsStat,
-              label: l10n.statCoins,
-              animate: animate,
+            child: InkWell(
+              onTap: _openCoinShop,
+              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+              child: _StatTile(
+                icon: Icons.monetization_on_outlined,
+                value: _coinsStat,
+                label: l10n.statCoins,
+                animate: animate,
+              ),
             ),
           ),
           divider(),
           Expanded(
-            child: _StatTile(
-              icon: Icons.workspace_premium_outlined,
-              value: _tierStat,
-              label: l10n.statTier,
-              animate: animate,
+            child: InkWell(
+              onTap: _openMembership,
+              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+              child: _StatTile(
+                icon: Icons.workspace_premium_outlined,
+                value: _tierStat,
+                label: l10n.statTier,
+                animate: animate,
+              ),
             ),
           ),
           divider(),
           Expanded(
-            child: _StatTile(
-              icon: Icons.public,
-              value: _countriesStat,
-              label: l10n.statCountries,
-              animate: animate,
+            child: InkWell(
+              onTap: _openWorldMap,
+              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+              child: _StatTile(
+                icon: Icons.public,
+                value: _countriesStat,
+                label: l10n.statCountries,
+                animate: animate,
+              ),
             ),
           ),
           divider(),
           Expanded(
-            child: _StatTile(
-              icon: Icons.forum_outlined,
-              value: _peopleStat,
-              label: l10n.statPeople,
-              animate: animate,
+            child: InkWell(
+              onTap: _openExchange,
+              borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+              child: _StatTile(
+                icon: Icons.forum_outlined,
+                value: _peopleStat,
+                label: l10n.statPeople,
+                animate: animate,
+              ),
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  /// Coins tile → the coin shop. Tier tile → the membership upgrade sheet.
+  /// Countries tile → the world map (globe). People tile → the Exchange
+  /// (conversations) page. (Explore stat tiles are shortcuts into these hubs.)
+  void _openCoinShop() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider<CoinBloc>(
+          create: (_) => di.sl<CoinBloc>()
+            ..add(LoadCoinBalance(widget.userId))
+            ..add(const LoadAvailablePackages()),
+          child: CoinShopScreen(userId: widget.userId),
+        ),
+      ),
+    );
+  }
+
+  void _openMembership() {
+    TierGate().openMembershipUpgrade(context, currentUserId: widget.userId);
+  }
+
+  void _openWorldMap() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider<GlobeBloc>(
+          create: (_) => di.sl<GlobeBloc>(),
+          child: GlobeScreen(userId: widget.userId),
+        ),
+      ),
+    );
+  }
+
+  void _openExchange() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => ConversationsScreen(userId: widget.userId),
       ),
     );
   }
