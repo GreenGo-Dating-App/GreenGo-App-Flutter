@@ -3940,6 +3940,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get eventsThisMonth => 'This Month';
 
   @override
+  String get eventsDateUntil => 'Until';
+
+  @override
+  String get eventsDateFrom => 'From';
+
+  @override
+  String get eventsCustomRange => 'Custom range';
+
+  @override
+  String get eventsDateAnyTime => 'Any time';
+
+  @override
   String get eventsThisWeekFilter => 'This Week';
 
   @override

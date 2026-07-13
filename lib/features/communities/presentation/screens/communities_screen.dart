@@ -14,7 +14,6 @@ import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
 import '../bloc/communities_state.dart';
 import '../widgets/community_card.dart';
-import '../widgets/community_type_chip.dart';
 import 'community_detail_screen.dart';
 import 'create_community_screen.dart';
 
@@ -258,45 +257,61 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           ),
         ),
 
-        // Filter chips
+        // Filter chips — mirrors the Exchange (Conversations) filter row exactly:
+        // a ListView.separated of Material FilterChips with "All" as the first
+        // data entry (not a hand-inserted leading chip), height 40, and a
+        // bottom-8 padding wrapper.
         SliverToBoxAdapter(
-          child: SizedBox(
-            height: 42,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.symmetric(
-                horizontal: AppDimensions.paddingM,
-              ),
-              children: [
-                // Leading "All" chip: null filter => unfiltered list (default).
-                CommunityTypeChip(
-                  label: AppLocalizations.of(context)!.filterAll,
-                  isSelected: _selectedFilter == null,
-                  onTap: () {
-                    setState(() => _selectedFilter = null);
-                    context.read<CommunitiesBloc>().add(
-                          const LoadCommunities(),
-                        );
-                  },
-                ),
-                const SizedBox(width: 8),
-                ...CommunityType.values.map((type) {
-                  return Padding(
-                    padding: const EdgeInsets.only(right: 8),
-                    child: CommunityTypeChip(
-                      type: type,
-                      label: type.displayName,
-                      isSelected: _selectedFilter == type,
-                      onTap: () {
-                        setState(() => _selectedFilter = type);
-                        context.read<CommunitiesBloc>().add(
-                              LoadCommunities(type: type),
-                            );
-                      },
-                    ),
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: SizedBox(
+              height: 40,
+              child: Builder(
+                builder: (context) {
+                  final l10n = AppLocalizations.of(context)!;
+                  // "All" (null) is entry 0, then one entry per community type.
+                  final filters = <(CommunityType?, String)>[
+                    (null, l10n.filterAll),
+                    for (final t in CommunityType.values) (t, t.displayName),
+                  ];
+                  return ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    itemCount: filters.length,
+                    separatorBuilder: (_, __) => const SizedBox(width: 8),
+                    itemBuilder: (context, index) {
+                      final (type, label) = filters[index];
+                      final isSelected = _selectedFilter == type;
+                      return FilterChip(
+                        selected: isSelected,
+                        label: Text(label),
+                        labelStyle: TextStyle(
+                          color: isSelected
+                              ? AppColors.deepBlack
+                              : AppColors.textSecondary,
+                          fontWeight:
+                              isSelected ? FontWeight.w600 : FontWeight.normal,
+                        ),
+                        backgroundColor: AppColors.backgroundCard,
+                        selectedColor: AppColors.richGold,
+                        checkmarkColor: AppColors.deepBlack,
+                        side: BorderSide(
+                          color:
+                              isSelected ? AppColors.richGold : AppColors.divider,
+                        ),
+                        onSelected: (_) {
+                          setState(() => _selectedFilter = type);
+                          context.read<CommunitiesBloc>().add(
+                                type == null
+                                    ? const LoadCommunities()
+                                    : LoadCommunities(type: type),
+                              );
+                        },
+                      );
+                    },
                   );
-                }),
-              ],
+                },
+              ),
             ),
           ),
         ),

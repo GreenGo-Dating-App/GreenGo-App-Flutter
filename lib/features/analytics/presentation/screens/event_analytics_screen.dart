@@ -10,6 +10,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../data/services/analytics_service.dart';
 import '../widgets/audience_charts.dart';
+import '../widgets/stat_grid.dart';
 
 /// Per-event analytics dashboard (Platinum-gated).
 ///
@@ -93,7 +94,7 @@ class _EventAnalyticsScreenState extends State<EventAnalyticsScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              _buildHeadlineGrid(l10n, agg),
+              StatGrid(items: _headlineStats(l10n, agg)),
               const SizedBox(height: 24),
               if (agg.tierBreakdown.isNotEmpty) ...[
                 AudienceChartCard(
@@ -114,81 +115,43 @@ class _EventAnalyticsScreenState extends State<EventAnalyticsScreen> {
     );
   }
 
-  /// 2x2 grid of headline stat tiles.
-  Widget _buildHeadlineGrid(AppLocalizations l10n, EventAudienceAggregate agg) {
+  /// Headline stat tiles — the SAME colored [StatGrid] the Business analytics
+  /// dashboard uses, scoped to this one event's RSVP funnel.
+  List<StatItem> _headlineStats(
+      AppLocalizations l10n, EventAudienceAggregate agg) {
     final pct = (agg.checkInRate * 100).round();
-    final tiles = <Widget>[
-      _statTile(
+    return [
+      StatItem(
         icon: Icons.visibility_outlined,
         label: l10n.eventAnalyticsViews,
         value: '${agg.viewCount}',
+        accent: StatColors.sky,
       ),
-      _statTile(
+      StatItem(
         icon: Icons.check_circle_outline,
         label: l10n.eventAnalyticsGoing,
         value: '${agg.goingCount}',
+        accent: StatColors.teal,
       ),
-      _statTile(
+      StatItem(
         icon: Icons.hourglass_bottom,
         label: l10n.eventAnalyticsWaitlist,
         value: '${agg.waitlistCount}',
+        accent: StatColors.gold,
       ),
-      _statTile(
+      StatItem(
         icon: Icons.how_to_reg,
         label: l10n.eventAnalyticsCheckedIn,
         value: '${agg.checkedInCount}',
+        accent: StatColors.violet,
       ),
-      _statTile(
+      StatItem(
         icon: Icons.percent,
         label: l10n.eventAnalyticsCheckInRate,
         value: '$pct%',
+        accent: StatColors.emerald,
       ),
     ];
-    return GridView.count(
-      crossAxisCount: 2,
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      mainAxisSpacing: 14,
-      crossAxisSpacing: 14,
-      childAspectRatio: 1.55,
-      children: tiles,
-    );
-  }
-
-  Widget _statTile({
-    required IconData icon,
-    required String label,
-    required String value,
-  }) {
-    return GlassContainer(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(icon, color: AppColors.richGold, size: 22),
-          const SizedBox(height: 10),
-          Text(
-            value,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 2),
-          Text(
-            label,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              color: AppColors.textSecondary,
-              fontSize: 13,
-            ),
-          ),
-        ],
-      ),
-    );
   }
 
   Widget _buildLocked(AppLocalizations l10n) {
