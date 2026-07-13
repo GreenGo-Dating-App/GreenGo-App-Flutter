@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/constants/business_categories.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -34,28 +35,8 @@ class BusinessAccountScreen extends StatefulWidget {
 class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
   final TextEditingController _nameController = TextEditingController();
 
-  /// Curated business/venue categories (mirrors the interests/category style
-  /// used elsewhere in onboarding).
-  static const List<String> _categories = [
-    'Restaurant',
-    'Bar',
-    'Cafe',
-    'Nightclub',
-    'Hotel',
-    'Hostel',
-    'Gym',
-    'Spa',
-    'Museum',
-    'Gallery',
-    'Theater',
-    'Tour Operator',
-    'Travel Agency',
-    'Language School',
-    'Coworking',
-    'Event Venue',
-    'Shop',
-    'Other',
-  ];
+  /// Curated business/venue categories — see [BusinessCategories.all] (50 items).
+  static const List<String> _categories = BusinessCategories.all;
 
   late bool _isBusiness;
   String? _category;
@@ -526,34 +507,44 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                   ),
                 ),
                 const SizedBox(height: 12),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: _categories.map((c) {
-                    final selected = _category == c;
-                    return ChoiceChip(
-                      label: Text(c),
-                      selected: selected,
-                      onSelected: (_) => setState(() => _category = c),
-                      backgroundColor: AppColors.backgroundInput,
-                      selectedColor: AppColors.richGold.withOpacity(0.25),
-                      labelStyle: TextStyle(
-                        color: selected
-                            ? AppColors.richGold
-                            : AppColors.textSecondary,
-                        fontWeight:
-                            selected ? FontWeight.w600 : FontWeight.normal,
-                      ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
-                        side: BorderSide(
-                          color: selected
-                              ? AppColors.richGold
-                              : AppColors.divider,
-                        ),
-                      ),
-                    );
-                  }).toList(),
+                DropdownButtonFormField<String>(
+                  // Guard legacy values no longer in the list so the dropdown
+                  // never asserts on an unknown initial value.
+                  value: _categories.contains(_category) ? _category : null,
+                  isExpanded: true,
+                  dropdownColor: AppColors.backgroundCard,
+                  icon: const Icon(Icons.arrow_drop_down,
+                      color: AppColors.richGold),
+                  style: const TextStyle(
+                      color: AppColors.textPrimary, fontSize: 16),
+                  hint: Text(
+                    l10n.businessCategoryHint,
+                    style: const TextStyle(color: AppColors.textTertiary),
+                  ),
+                  decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.category_outlined,
+                        color: AppColors.richGold, size: 20),
+                    filled: true,
+                    fillColor: AppColors.backgroundInput,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                      borderSide: const BorderSide(color: AppColors.divider),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                      borderSide: const BorderSide(color: AppColors.divider),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                      borderSide:
+                          const BorderSide(color: AppColors.richGold, width: 2),
+                    ),
+                  ),
+                  items: [
+                    for (final c in _categories)
+                      DropdownMenuItem<String>(value: c, child: Text(c)),
+                  ],
+                  onChanged: (value) => setState(() => _category = value),
                 ),
                 const SizedBox(height: 24),
                 // Verified status (badge is admin-granted; user can REQUEST it).

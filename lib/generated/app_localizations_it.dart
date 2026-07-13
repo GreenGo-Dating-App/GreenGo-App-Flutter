@@ -4088,6 +4088,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get exploreHappeningThisWeek => 'Questa settimana';
 
   @override
+  String get exploreHappeningToday => 'Oggi';
+
+  @override
   String get exploreJoin => 'Partecipa';
 
   @override
@@ -11557,6 +11560,9 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get businessCategoryLabel => 'Categoria aziendale';
+
+  @override
+  String get businessCategoryHint => 'Seleziona una categoria';
 
   @override
   String get businessVerifiedLabel => 'Azienda verificata';
