@@ -3992,6 +3992,18 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventsThisMonth => 'Diesen Monat';
 
   @override
+  String get eventsDateUntil => 'Bis';
+
+  @override
+  String get eventsDateFrom => 'Ab';
+
+  @override
+  String get eventsCustomRange => 'Eigener Zeitraum';
+
+  @override
+  String get eventsDateAnyTime => 'Jederzeit';
+
+  @override
   String get eventsThisWeekFilter => 'Diese Woche';
 
   @override

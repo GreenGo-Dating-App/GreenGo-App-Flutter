@@ -4006,6 +4006,18 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventsThisMonth => 'Ce mois-ci';
 
   @override
+  String get eventsDateUntil => 'Jusqu\'au';
+
+  @override
+  String get eventsDateFrom => 'À partir du';
+
+  @override
+  String get eventsCustomRange => 'Plage personnalisée';
+
+  @override
+  String get eventsDateAnyTime => 'À tout moment';
+
+  @override
   String get eventsThisWeekFilter => 'Cette semaine';
 
   @override

@@ -7127,6 +7127,30 @@ abstract class AppLocalizations {
   /// **'This Month'**
   String get eventsThisMonth;
 
+  /// No description provided for @eventsDateUntil.
+  ///
+  /// In en, this message translates to:
+  /// **'Until'**
+  String get eventsDateUntil;
+
+  /// No description provided for @eventsDateFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'From'**
+  String get eventsDateFrom;
+
+  /// No description provided for @eventsCustomRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom range'**
+  String get eventsCustomRange;
+
+  /// No description provided for @eventsDateAnyTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Any time'**
+  String get eventsDateAnyTime;
+
   /// No description provided for @eventsThisWeekFilter.
   ///
   /// In en, this message translates to:

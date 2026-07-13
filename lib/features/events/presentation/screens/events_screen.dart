@@ -92,6 +92,12 @@ class _EventsScreenState extends State<EventsScreen>
   // Native tabs (Upcoming/Community/My Events): distance is the default order.
   String _nativeSort = 'distance'; // distance | date | popular
 
+  // Date-range filter for native event lists (Community / My Events / Going).
+  // Null = no bound. Inclusive window [_dateFrom 00:00 .. _dateTo 23:59:59].
+  DateTime? _dateFrom;
+  DateTime? _dateTo;
+  bool get _hasDateFilter => _dateFrom != null || _dateTo != null;
+
   @override
   void initState() {
     super.initState();
@@ -255,8 +261,12 @@ class _EventsScreenState extends State<EventsScreen>
               onPressed: () => _showCreateEventDialog(context),
             ),
             IconButton(
-              icon:
-                  const Icon(Icons.filter_list, color: AppColors.textPrimary),
+              icon: Icon(
+                _hasDateFilter ? Icons.filter_list : Icons.filter_list_outlined,
+                color: _hasDateFilter
+                    ? AppColors.richGold
+                    : AppColors.textPrimary,
+              ),
               onPressed: () => _showFilterDialog(context),
             ),
           ],
@@ -497,6 +507,17 @@ class _EventsScreenState extends State<EventsScreen>
             e.locationName.toLowerCase().contains(q) ||
             (e.address ?? '').toLowerCase().contains(q) ||
             e.tags.any((t) => t.toLowerCase().contains(q));
+      }).toList();
+    }
+    // Date-range filter (inclusive): keep events that OVERLAP the window —
+    // i.e. they end on/after _dateFrom and start on/before _dateTo.
+    if (_hasDateFilter) {
+      final from = _dateFrom;
+      final to = _dateTo;
+      result = result.where((e) {
+        if (from != null && e.endDate.isBefore(from)) return false;
+        if (to != null && e.startDate.isAfter(to)) return false;
+        return true;
       }).toList();
     }
     // Apply the selected order (distance by default).
@@ -998,90 +1019,181 @@ class _EventsScreenState extends State<EventsScreen>
   }
 
   Widget _buildFilterSheet() {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            AppLocalizations.of(context)!.eventsFilterEvents,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+    final l10n = AppLocalizations.of(context)!;
+    // Local working copy; committed to state only on "Apply".
+    DateTime? from = _dateFrom;
+    DateTime? to = _dateTo;
+    final df = DateFormat.yMMMd();
+
+    DateTime startOfDay(DateTime d) => DateTime(d.year, d.month, d.day);
+    DateTime endOfDay(DateTime d) =>
+        DateTime(d.year, d.month, d.day, 23, 59, 59);
+
+    return StatefulBuilder(
+      builder: (context, setSheet) {
+        String rangeLabel() {
+          if (from == null && to == null) return l10n.eventsDateAnyTime;
+          if (from != null && to != null) {
+            return '${df.format(from!)} – ${df.format(to!)}';
+          }
+          if (from != null) return '${l10n.eventsDateFrom} ${df.format(from!)}';
+          return '${l10n.eventsDateUntil} ${df.format(to!)}';
+        }
+
+        // Is [from,to] exactly the given whole-day window? (drives chip highlight)
+        bool matches(DateTime a, DateTime b) =>
+            from != null &&
+            to != null &&
+            from!.isAtSameMomentAs(a) &&
+            to!.isAtSameMomentAs(b);
+
+        final now = DateTime.now();
+        final todayStart = startOfDay(now);
+        final todayEnd = endOfDay(now);
+        final weekEnd = endOfDay(now.add(const Duration(days: 6)));
+        final monthEnd = endOfDay(DateTime(now.year, now.month + 1, 0));
+
+        Widget quick(String label, DateTime a, DateTime b) {
+          final selected = matches(a, b);
+          return Expanded(
+            child: OutlinedButton(
+              onPressed: () => setSheet(() {
+                from = a;
+                to = b;
+              }),
+              style: OutlinedButton.styleFrom(
+                foregroundColor:
+                    selected ? AppColors.deepBlack : AppColors.textPrimary,
+                backgroundColor:
+                    selected ? AppColors.richGold : Colors.transparent,
+                side: BorderSide(
+                  color: selected ? AppColors.richGold : AppColors.textTertiary,
+                ),
+              ),
+              child: Text(label, textAlign: TextAlign.center),
             ),
+          );
+        }
+
+        return Padding(
+          padding: EdgeInsets.only(
+            left: 20,
+            right: 20,
+            top: 20,
+            bottom: 20 + MediaQuery.of(context).viewInsets.bottom,
           ),
-          const SizedBox(height: 20),
-          Text(
-            AppLocalizations.of(context)!.eventsDistance,
-            style: const TextStyle(color: AppColors.textSecondary),
-          ),
-          Slider(
-            value: 25,
-            min: 1,
-            max: 100,
-            divisions: 20,
-            label: '25 km',
-            activeColor: AppColors.richGold,
-            onChanged: (value) {},
-          ),
-          const SizedBox(height: 16),
-          Text(
-            AppLocalizations.of(context)!.eventsDateRange,
-            style: const TextStyle(color: AppColors.textSecondary),
-          ),
-          const SizedBox(height: 8),
-          Row(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
-                child: OutlinedButton(
-                  onPressed: () {},
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: AppColors.textPrimary,
-                    side: const BorderSide(color: AppColors.textTertiary),
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      l10n.eventsFilterEvents,
+                      style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
-                  child: Text(AppLocalizations.of(context)!.eventsToday),
+                  if (from != null || to != null)
+                    TextButton(
+                      onPressed: () => setSheet(() {
+                        from = null;
+                        to = null;
+                      }),
+                      child: Text(
+                        l10n.eventsDateAnyTime,
+                        style: const TextStyle(color: AppColors.richGold),
+                      ),
+                    ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              Text(
+                l10n.eventsDateRange,
+                style: const TextStyle(color: AppColors.textSecondary),
+              ),
+              const SizedBox(height: 6),
+              // Currently-selected window, human readable.
+              Row(
+                children: [
+                  const Icon(Icons.event, color: AppColors.richGold, size: 18),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      rangeLabel(),
+                      style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  quick(l10n.eventsToday, todayStart, todayEnd),
+                  const SizedBox(width: 8),
+                  quick(l10n.eventsThisWeekFilter, todayStart, weekEnd),
+                  const SizedBox(width: 8),
+                  quick(l10n.eventsThisMonth, todayStart, monthEnd),
+                ],
+              ),
+              const SizedBox(height: 12),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton.icon(
+                  onPressed: () async {
+                    final picked = await showDateRangePicker(
+                      context: context,
+                      firstDate: DateTime(now.year - 1),
+                      lastDate: DateTime(now.year + 2),
+                      initialDateRange: (from != null && to != null)
+                          ? DateTimeRange(start: from!, end: to!)
+                          : null,
+                    );
+                    if (picked != null) {
+                      setSheet(() {
+                        from = startOfDay(picked.start);
+                        to = endOfDay(picked.end);
+                      });
+                    }
+                  },
+                  icon: const Icon(Icons.date_range, size: 18),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.richGold,
+                    side: const BorderSide(color: AppColors.richGold),
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                  ),
+                  label: Text(l10n.eventsCustomRange),
                 ),
               ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: OutlinedButton(
-                  onPressed: () {},
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: AppColors.textPrimary,
-                    side: const BorderSide(color: AppColors.textTertiary),
+              const SizedBox(height: 20),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _dateFrom = from;
+                      _dateTo = to;
+                    });
+                    Navigator.pop(context);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: AppColors.deepBlack,
                   ),
-                  child: Text(AppLocalizations.of(context)!.eventsThisWeekFilter),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: OutlinedButton(
-                  onPressed: () {},
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: AppColors.textPrimary,
-                    side: const BorderSide(color: AppColors.textTertiary),
-                  ),
-                  child: Text(AppLocalizations.of(context)!.eventsThisMonth),
+                  child: Text(l10n.eventsApplyFilters),
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 24),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: () => Navigator.pop(context),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: AppColors.deepBlack,
-              ),
-              child: Text(AppLocalizations.of(context)!.eventsApplyFilters),
-            ),
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 

@@ -3979,6 +3979,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsThisMonth => 'Este Mês';
 
   @override
+  String get eventsDateUntil => 'Até';
+
+  @override
+  String get eventsDateFrom => 'A partir de';
+
+  @override
+  String get eventsCustomRange => 'Intervalo personalizado';
+
+  @override
+  String get eventsDateAnyTime => 'A qualquer momento';
+
+  @override
   String get eventsThisWeekFilter => 'Esta Semana';
 
   @override
@@ -16549,6 +16561,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsThisMonth => 'Este Mês';
+
+  @override
+  String get eventsDateUntil => 'Até';
+
+  @override
+  String get eventsDateFrom => 'A partir de';
+
+  @override
+  String get eventsCustomRange => 'Intervalo personalizado';
+
+  @override
+  String get eventsDateAnyTime => 'A qualquer momento';
 
   @override
   String get eventsThisWeekFilter => 'Esta Semana';

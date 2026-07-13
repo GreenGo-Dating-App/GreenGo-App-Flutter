@@ -3999,6 +3999,18 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventsThisMonth => 'Este Mes';
 
   @override
+  String get eventsDateUntil => 'Hasta';
+
+  @override
+  String get eventsDateFrom => 'Desde';
+
+  @override
+  String get eventsCustomRange => 'Rango personalizado';
+
+  @override
+  String get eventsDateAnyTime => 'En cualquier momento';
+
+  @override
   String get eventsThisWeekFilter => 'Esta Semana';
 
   @override
