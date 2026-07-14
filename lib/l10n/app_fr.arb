@@ -3668,6 +3668,7 @@
   "eventAnalyticsCheckInRate": "Taux d'enregistrement",
   "eventAnalyticsTierBreakdown": "Catégories de billets",
   "businessEventsTitle": "Gérer mes événements",
+  "businessEventsSearchHint": "Rechercher par nom ou date",
   "businessEventsEmpty": "Vous n'avez pas encore créé d'événement.",
   "businessEventsAnalytics": "Statistiques",
   "businessEventsCancelTitle": "Annuler l'événement",

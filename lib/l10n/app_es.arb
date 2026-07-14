@@ -4210,6 +4210,7 @@
   "eventAnalyticsCheckInRate": "Tasa de registro",
   "eventAnalyticsTierBreakdown": "Categorías de entradas",
   "businessEventsTitle": "Gestionar mis eventos",
+  "businessEventsSearchHint": "Buscar por nombre o fecha",
   "businessEventsEmpty": "Aún no has creado ningún evento.",
   "businessEventsAnalytics": "Analíticas",
   "businessEventsCancelTitle": "Cancelar evento",

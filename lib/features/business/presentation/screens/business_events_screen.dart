@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -45,12 +47,59 @@ class BusinessEventsScreen extends StatelessWidget {
   }
 }
 
-class _BusinessEventsView extends StatelessWidget {
+/// Time bucket for Manage-my-events (past / on-going now / upcoming).
+enum _EventBucket { ongoing, upcoming, past }
+
+class _BusinessEventsView extends StatefulWidget {
   const _BusinessEventsView({required this.profile});
 
   final Profile profile;
 
-  String get _uid => profile.userId;
+  @override
+  State<_BusinessEventsView> createState() => _BusinessEventsViewState();
+}
+
+class _BusinessEventsViewState extends State<_BusinessEventsView> {
+  final _searchController = TextEditingController();
+  String _query = '';
+  _EventBucket _bucket = _EventBucket.upcoming;
+
+  String get _uid => widget.profile.userId;
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  /// Filter organized events by the selected time bucket, then by the search
+  /// query (matches title OR the formatted date), then sort by start date.
+  List<Event> _filter(List<Event> events) {
+    final now = DateTime.now();
+    var list = events.where((e) {
+      switch (_bucket) {
+        case _EventBucket.ongoing:
+          return !e.startDate.isAfter(now) && e.endDate.isAfter(now);
+        case _EventBucket.upcoming:
+          return e.startDate.isAfter(now);
+        case _EventBucket.past:
+          return e.endDate.isBefore(now);
+      }
+    }).toList();
+    final q = _query.trim().toLowerCase();
+    if (q.isNotEmpty) {
+      final df = DateFormat('EEE, MMM d • h:mm a');
+      list = list
+          .where((e) =>
+              e.title.toLowerCase().contains(q) ||
+              df.format(e.startDate).toLowerCase().contains(q))
+          .toList();
+    }
+    list.sort((a, b) => _bucket == _EventBucket.past
+        ? b.startDate.compareTo(a.startDate)
+        : a.startDate.compareTo(b.startDate));
+    return list;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -84,27 +133,102 @@ class _BusinessEventsView extends StatelessWidget {
           }
 
           // Only events this user ORGANIZED (drafts + scheduled included).
-          final events = <Event>[];
+          final all = <Event>[];
           if (state is EventsLoaded) {
-            events.addAll(
-              state.userEvents.where((e) => e.organizerId == _uid),
-            );
+            all.addAll(state.userEvents.where((e) => e.organizerId == _uid));
           }
+          final events = _filter(all);
 
-          if (events.isEmpty) {
-            return _buildEmpty(l10n);
-          }
-
-          return ListView.separated(
-            padding: const EdgeInsets.all(AppDimensions.paddingL),
-            itemCount: events.length,
-            separatorBuilder: (_, __) => const SizedBox(height: 14),
-            itemBuilder: (context, i) => _EventRow(
-              event: events[i],
-              profile: profile,
-            ),
+          return Column(
+            children: [
+              _buildSearch(l10n),
+              _buildFilterBar(l10n),
+              Expanded(
+                child: events.isEmpty
+                    ? _buildEmpty(l10n)
+                    : ListView.separated(
+                        padding: const EdgeInsets.all(AppDimensions.paddingL),
+                        itemCount: events.length,
+                        separatorBuilder: (_, __) =>
+                            const SizedBox(height: 14),
+                        itemBuilder: (context, i) => _EventRow(
+                          event: events[i],
+                          profile: widget.profile,
+                        ),
+                      ),
+              ),
+            ],
           );
         },
+      ),
+    );
+  }
+
+  Widget _buildSearch(AppLocalizations l10n) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+      child: TextField(
+        controller: _searchController,
+        onChanged: (v) => setState(() => _query = v),
+        style: const TextStyle(color: AppColors.textPrimary),
+        decoration: InputDecoration(
+          hintText: l10n.businessEventsSearchHint,
+          hintStyle: const TextStyle(color: AppColors.textTertiary),
+          prefixIcon:
+              const Icon(Icons.search, color: AppColors.textTertiary, size: 20),
+          filled: true,
+          fillColor: AppColors.backgroundCard,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(color: AppColors.divider),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(color: AppColors.divider),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildFilterBar(AppLocalizations l10n) {
+    Widget chip(_EventBucket b, String label) {
+      final selected = _bucket == b;
+      return Expanded(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          child: ChoiceChip(
+            label: SizedBox(
+              width: double.infinity,
+              child: Text(label, textAlign: TextAlign.center),
+            ),
+            selected: selected,
+            onSelected: (_) => setState(() => _bucket = b),
+            backgroundColor: AppColors.backgroundCard,
+            selectedColor: AppColors.richGold,
+            labelStyle: TextStyle(
+              color: selected ? AppColors.deepBlack : AppColors.textSecondary,
+              fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+              side: BorderSide(
+                color: selected ? AppColors.richGold : AppColors.divider,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 0, 12, 4),
+      child: Row(
+        children: [
+          chip(_EventBucket.ongoing, l10n.eventsFilterOngoing),
+          chip(_EventBucket.upcoming, l10n.eventsFilterUpcoming),
+          chip(_EventBucket.past, l10n.eventsFilterPast),
+        ],
       ),
     );
   }
@@ -163,6 +287,23 @@ class _EventRow extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Event image thumbnail.
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: SizedBox(
+                  width: 56,
+                  height: 56,
+                  child: (event.imageUrl != null && event.imageUrl!.isNotEmpty)
+                      ? CachedNetworkImage(
+                          imageUrl: event.imageUrl!,
+                          fit: BoxFit.cover,
+                          placeholder: (_, __) => _thumbFallback(),
+                          errorWidget: (_, __, ___) => _thumbFallback(),
+                        )
+                      : _thumbFallback(),
+                ),
+              ),
+              const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -176,6 +317,27 @@ class _EventRow extends StatelessWidget {
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                       ),
+                    ),
+                    const SizedBox(height: 4),
+                    // Event date/time.
+                    Row(
+                      children: [
+                        const Icon(Icons.event,
+                            color: AppColors.textTertiary, size: 13),
+                        const SizedBox(width: 4),
+                        Expanded(
+                          child: Text(
+                            DateFormat('EEE, MMM d • h:mm a')
+                                .format(event.startDate),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 12.5,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 6),
                     Row(
@@ -242,6 +404,11 @@ class _EventRow extends StatelessWidget {
       ),
     );
   }
+
+  Widget _thumbFallback() => Container(
+        color: AppColors.backgroundCard,
+        child: const Icon(Icons.event, color: AppColors.textTertiary, size: 24),
+      );
 
   Widget _action(
     BuildContext context, {

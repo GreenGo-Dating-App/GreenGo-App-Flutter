@@ -5858,6 +5858,7 @@
   "eventAnalyticsCheckInRate": "Check-in rate",
   "eventAnalyticsTierBreakdown": "Ticket tiers",
   "businessEventsTitle": "Manage my events",
+  "businessEventsSearchHint": "Search by name or date",
   "businessEventsEmpty": "You haven't created any events yet.",
   "businessEventsAnalytics": "Analytics",
   "businessEventsCancelTitle": "Cancel event",

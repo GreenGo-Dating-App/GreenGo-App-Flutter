@@ -4210,6 +4210,7 @@
   "eventAnalyticsCheckInRate": "Check-in-Rate",
   "eventAnalyticsTierBreakdown": "Ticketkategorien",
   "businessEventsTitle": "Meine Events verwalten",
+  "businessEventsSearchHint": "Nach Name oder Datum suchen",
   "businessEventsEmpty": "Du hast noch keine Events erstellt.",
   "businessEventsAnalytics": "Analysen",
   "businessEventsCancelTitle": "Event absagen",

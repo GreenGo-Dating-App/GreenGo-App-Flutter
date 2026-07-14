@@ -12440,6 +12440,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get businessEventsTitle => 'Meine Events verwalten';
 
   @override
+  String get businessEventsSearchHint => 'Nach Name oder Datum suchen';
+
+  @override
   String get businessEventsEmpty => 'Du hast noch keine Events erstellt.';
 
   @override
