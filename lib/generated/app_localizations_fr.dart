@@ -3978,10 +3978,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventsFilterOngoing => 'En cours';
 
   @override
-  String get eventsFilterUpcoming => 'A venir';
+  String get eventsFilterUpcoming => 'À venir';
 
   @override
-  String get eventsFilterPast => 'Passes';
+  String get eventsFilterPast => 'Passés';
 
   @override
   String get eventsTabExperiences => 'Expériences';
@@ -6669,13 +6669,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get couponRedeemTitle => 'Utiliser un code promo';
 
   @override
-  String get referralCodeTitle => 'Vous avez un code de parrainage?';
+  String get referralCodeTitle => 'Vous avez un code de parrainage ?';
 
   @override
   String get referralCodeLabel => 'Code de parrainage';
 
   @override
-  String get referralCodeHint => 'Entrez le code d un ami';
+  String get referralCodeHint => 'Entrez le code d\'un ami';
 
   @override
   String get couponApplyButton => 'Appliquer';
@@ -11563,11 +11563,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventScanCheckIn => 'Scanner / Enregistrement';
 
   @override
-  String get eventScanManageScanners => 'Gerer les scanners';
+  String get eventScanManageScanners => 'Gérer les scanners';
 
   @override
   String get eventScanInviteScannerHint =>
-      'Invitez un membre a scanner les billets a l entree.';
+      'Invitez un membre à scanner les billets à l\'entrée.';
 
   @override
   String get eventScanNicknameHint => 'Pseudo';
@@ -11576,11 +11576,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventScanAddScanner => 'Ajouter';
 
   @override
-  String get eventScanScannerNotFound => 'Aucun membre trouve avec ce pseudo';
+  String get eventScanScannerNotFound => 'Aucun membre trouvé avec ce pseudo';
 
   @override
   String get eventScanScannerAddFailed =>
-      'Impossible d ajouter le scanner. Reessayez.';
+      'Impossible d\'ajouter le scanner. Réessayez.';
 
   @override
   String eventScanScannerAdded(String name) {
@@ -11899,13 +11899,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get verifyBusinessNameLabel => 'Nom de l\'entreprise';
 
   @override
-  String get verifyLegalNameLabel => 'Nom legal';
+  String get verifyLegalNameLabel => 'Nom légal';
 
   @override
-  String get verifyLegalNameHint => 'Nom legal enregistre';
+  String get verifyLegalNameHint => 'Nom légal enregistré';
 
   @override
-  String get verifyPhoneLabel => 'Numero de telephone';
+  String get verifyPhoneLabel => 'Numéro de téléphone';
 
   @override
   String get verifyPhoneHint => '+33 6 12 34 56 78';
@@ -11917,26 +11917,26 @@ class AppLocalizationsFr extends AppLocalizations {
   String get verifyResendCode => 'Renvoyer';
 
   @override
-  String get verifyEnterCodeLabel => 'Code a 6 chiffres';
+  String get verifyEnterCodeLabel => 'Code à 6 chiffres';
 
   @override
-  String get verifyConfirmCode => 'Verifier';
+  String get verifyConfirmCode => 'Vérifier';
 
   @override
-  String get verifyPhoneVerified => 'Telephone verifie';
+  String get verifyPhoneVerified => 'Téléphone vérifié';
 
   @override
-  String get verifyOwnerDocumentLabel => 'Piece d\'identite du proprietaire';
+  String get verifyOwnerDocumentLabel => 'Pièce d\'identité du propriétaire';
 
   @override
-  String get verifyUploadDocument => 'Televerser le document';
+  String get verifyUploadDocument => 'Téléverser le document';
 
   @override
-  String get verifyDocumentUploaded => 'Document televerse';
+  String get verifyDocumentUploaded => 'Document téléversé';
 
   @override
   String get verifyDocumentUploadError =>
-      'Impossible de televerser le document. Veuillez reessayer.';
+      'Impossible de téléverser le document. Veuillez réessayer.';
 
   @override
   String get verifyWebsiteLabel => 'Site web (facultatif)';
@@ -11949,7 +11949,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get verifyMissingFields =>
-      'Veuillez remplir tous les champs obligatoires et verifier votre telephone.';
+      'Veuillez remplir tous les champs obligatoires et vérifier votre téléphone.';
 
   @override
   String get requestVerificationMessage =>
@@ -12186,11 +12186,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get qrHubInvalidCode => 'Ce n\'est pas un code GreenGo valide';
 
   @override
-  String get qrScanApproved => 'Approuve — enregistre';
+  String get qrScanApproved => 'Approuvé — enregistré';
 
   @override
   String get qrScanNotAuthorized =>
-      'Seul le proprietaire ou un scanner invite peut valider les billets';
+      'Seul le propriétaire ou un scanner invité peut valider les billets';
 
   @override
   String get qrHubJoinedEvent => 'Tu y participes ! Ouverture de l\'événement…';

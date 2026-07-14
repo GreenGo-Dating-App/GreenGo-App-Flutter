@@ -3951,7 +3951,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsFilterOngoing => 'Em andamento';
 
   @override
-  String get eventsFilterUpcoming => 'Proximos';
+  String get eventsFilterUpcoming => 'Próximos';
 
   @override
   String get eventsFilterPast => 'Passados';
@@ -6621,13 +6621,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get couponRedeemTitle => 'Resgatar código de cupom';
 
   @override
-  String get referralCodeTitle => 'Tem um codigo de indicacao?';
+  String get referralCodeTitle => 'Tem um código de indicação?';
 
   @override
-  String get referralCodeLabel => 'Codigo de indicacao';
+  String get referralCodeLabel => 'Código de indicação';
 
   @override
-  String get referralCodeHint => 'Digite o codigo de um amigo';
+  String get referralCodeHint => 'Digite o código de um amigo';
 
   @override
   String get couponApplyButton => 'Aplicar';
@@ -11503,7 +11503,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventScanScannerAddFailed =>
-      'Nao foi possivel adicionar o scanner. Tente novamente.';
+      'Não foi possível adicionar o scanner. Tente novamente.';
 
   @override
   String eventScanScannerAdded(String name) {
@@ -11825,22 +11825,22 @@ class AppLocalizationsPt extends AppLocalizations {
   String get verifyLegalNameLabel => 'Nome legal';
 
   @override
-  String get verifyLegalNameHint => 'Razao social registrada';
+  String get verifyLegalNameHint => 'Razão social registrada';
 
   @override
-  String get verifyPhoneLabel => 'Numero de telefone';
+  String get verifyPhoneLabel => 'Número de telefone';
 
   @override
   String get verifyPhoneHint => '+55 11 91234-5678';
 
   @override
-  String get verifySendCode => 'Enviar codigo';
+  String get verifySendCode => 'Enviar código';
 
   @override
   String get verifyResendCode => 'Reenviar';
 
   @override
-  String get verifyEnterCodeLabel => 'Codigo de 6 digitos';
+  String get verifyEnterCodeLabel => 'Código de 6 dígitos';
 
   @override
   String get verifyConfirmCode => 'Verificar';
@@ -11850,7 +11850,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get verifyOwnerDocumentLabel =>
-      'Documento de identidade do proprietario';
+      'Documento de identidade do proprietário';
 
   @override
   String get verifyUploadDocument => 'Enviar documento';
@@ -11860,7 +11860,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get verifyDocumentUploadError =>
-      'Nao foi possivel enviar o documento. Tente novamente.';
+      'Não foi possível enviar o documento. Tente novamente.';
 
   @override
   String get verifyWebsiteLabel => 'Site (opcional)';
@@ -11873,7 +11873,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get verifyMissingFields =>
-      'Preencha todos os campos obrigatorios e verifique seu telefone.';
+      'Preencha todos os campos obrigatórios e verifique seu telefone.';
 
   @override
   String get requestVerificationMessage =>
@@ -16652,7 +16652,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get eventsFilterOngoing => 'Em andamento';
 
   @override
-  String get eventsFilterUpcoming => 'Proximos';
+  String get eventsFilterUpcoming => 'Próximos';
 
   @override
   String get eventsFilterPast => 'Passados';
@@ -19322,13 +19322,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get couponRedeemTitle => 'Resgatar código de cupom';
 
   @override
-  String get referralCodeTitle => 'Tem um codigo de indicacao?';
+  String get referralCodeTitle => 'Tem um código de indicação?';
 
   @override
-  String get referralCodeLabel => 'Codigo de indicacao';
+  String get referralCodeLabel => 'Código de indicação';
 
   @override
-  String get referralCodeHint => 'Digite o codigo de um amigo';
+  String get referralCodeHint => 'Digite o código de um amigo';
 
   @override
   String get couponApplyButton => 'Aplicar';
@@ -24202,7 +24202,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventScanScannerAddFailed =>
-      'Nao foi possivel adicionar o scanner. Tente novamente.';
+      'Não foi possível adicionar o scanner. Tente novamente.';
 
   @override
   String eventScanScannerAdded(String name) {
@@ -24524,22 +24524,22 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get verifyLegalNameLabel => 'Nome legal';
 
   @override
-  String get verifyLegalNameHint => 'Razao social registrada';
+  String get verifyLegalNameHint => 'Razão social registrada';
 
   @override
-  String get verifyPhoneLabel => 'Numero de telefone';
+  String get verifyPhoneLabel => 'Número de telefone';
 
   @override
   String get verifyPhoneHint => '+55 11 91234-5678';
 
   @override
-  String get verifySendCode => 'Enviar codigo';
+  String get verifySendCode => 'Enviar código';
 
   @override
   String get verifyResendCode => 'Reenviar';
 
   @override
-  String get verifyEnterCodeLabel => 'Codigo de 6 digitos';
+  String get verifyEnterCodeLabel => 'Código de 6 dígitos';
 
   @override
   String get verifyConfirmCode => 'Verificar';
@@ -24549,7 +24549,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get verifyOwnerDocumentLabel =>
-      'Documento de identidade do proprietario';
+      'Documento de identidade do proprietário';
 
   @override
   String get verifyUploadDocument => 'Enviar documento';
@@ -24559,7 +24559,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get verifyDocumentUploadError =>
-      'Nao foi possivel enviar o documento. Tente novamente.';
+      'Não foi possível enviar o documento. Tente novamente.';
 
   @override
   String get verifyWebsiteLabel => 'Site (opcional)';
@@ -24572,7 +24572,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get verifyMissingFields =>
-      'Preencha todos os campos obrigatorios e verifique seu telefone.';
+      'Preencha todos os campos obrigatórios e verifique seu telefone.';
 
   @override
   String get requestVerificationMessage =>

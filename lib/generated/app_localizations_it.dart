@@ -11511,7 +11511,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventScanInviteScannerHint =>
-      'Invita un membro a scansionare i biglietti all ingresso.';
+      'Invita un membro a scansionare i biglietti all\'ingresso.';
 
   @override
   String get eventScanNicknameHint => 'Nickname';
@@ -11529,7 +11529,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String eventScanScannerAdded(String name) {
-    return '$name ora puo scansionare i biglietti';
+    return '$name ora può scansionare i biglietti';
   }
 
   @override
@@ -11840,7 +11840,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get requestVerificationTitle => 'Richiedi verifica';
 
   @override
-  String get verifyBusinessNameLabel => 'Nome dell\'attivita';
+  String get verifyBusinessNameLabel => 'Nome dell\'attività';
 
   @override
   String get verifyLegalNameLabel => 'Nome legale';
@@ -11870,7 +11870,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get verifyPhoneVerified => 'Telefono verificato';
 
   @override
-  String get verifyOwnerDocumentLabel => 'Documento d\'identita del titolare';
+  String get verifyOwnerDocumentLabel => 'Documento d\'identità del titolare';
 
   @override
   String get verifyUploadDocument => 'Carica documento';
@@ -12132,7 +12132,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get qrScanNotAuthorized =>
-      'Solo il proprietario o uno scanner invitato puo convalidare i biglietti';
+      'Solo il proprietario o uno scanner invitato può convalidare i biglietti';
 
   @override
   String get qrHubJoinedEvent => 'Ci sei! Apertura dell\'evento…';

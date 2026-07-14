@@ -11530,7 +11530,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventScanNicknameHint => 'Spitzname';
 
   @override
-  String get eventScanAddScanner => 'Hinzufugen';
+  String get eventScanAddScanner => 'Hinzufügen';
 
   @override
   String get eventScanScannerNotFound =>
@@ -11538,7 +11538,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventScanScannerAddFailed =>
-      'Scanner konnte nicht hinzugefugt werden. Erneut versuchen.';
+      'Scanner konnte nicht hinzugefügt werden. Erneut versuchen.';
 
   @override
   String eventScanScannerAdded(String name) {
@@ -11876,10 +11876,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get verifyEnterCodeLabel => '6-stelliger Code';
 
   @override
-  String get verifyConfirmCode => 'Bestaetigen';
+  String get verifyConfirmCode => 'Bestätigen';
 
   @override
-  String get verifyPhoneVerified => 'Telefon bestaetigt';
+  String get verifyPhoneVerified => 'Telefon bestätigt';
 
   @override
   String get verifyOwnerDocumentLabel => 'Ausweis des Inhabers';
@@ -11905,7 +11905,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get verifyMissingFields =>
-      'Bitte alle Pflichtfelder ausfuellen und Telefon bestaetigen.';
+      'Bitte alle Pflichtfelder ausfüllen und Telefon bestätigen.';
 
   @override
   String get requestVerificationMessage =>
@@ -12145,7 +12145,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get qrScanNotAuthorized =>
-      'Nur der Veranstalter oder ein eingeladener Scanner kann Tickets einlosen';
+      'Nur der Veranstalter oder ein eingeladener Scanner kann Tickets einlösen';
 
   @override
   String get qrHubJoinedEvent => 'Du bist dabei! Event wird geöffnet…';
