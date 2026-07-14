@@ -7,6 +7,11 @@ abstract class Failure extends Equatable {
 
   @override
   List<Object?> get props => [message];
+
+  // Surface the real message (instead of "Instance of 'ServerFailure'") so
+  // callers that interpolate a failure into an error string show the cause.
+  @override
+  String toString() => message;
 }
 
 // General failures

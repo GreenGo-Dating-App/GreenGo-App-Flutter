@@ -34,10 +34,10 @@ class BusinessAccountScreen extends StatefulWidget {
 }
 
 class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
+  // Storefront display name (what people see) and the registered legal
+  // company name (used for verification / invoicing).
   final TextEditingController _nameController = TextEditingController();
-
-  /// Curated business/venue categories — see [BusinessCategories.all] (50 items).
-  static const List<String> _categories = BusinessCategories.all;
+  final TextEditingController _legalNameController = TextEditingController();
 
   late bool _isBusiness;
   String? _category;
@@ -55,6 +55,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     _isBusiness = widget.profile.isBusiness;
     _category = widget.profile.businessCategory;
     _nameController.text = widget.profile.businessName ?? '';
+    _legalNameController.text = widget.profile.businessLegalName ?? '';
     _loadVerificationStatus();
   }
 
@@ -79,7 +80,104 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
   @override
   void dispose() {
     _nameController.dispose();
+    _legalNameController.dispose();
     super.dispose();
+  }
+
+  /// A section field label styled like the rest of the screen.
+  Widget _fieldLabel(String text) => Text(
+        text,
+        style: const TextStyle(
+          color: AppColors.textPrimary,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+        ),
+      );
+
+  /// A single-line text field with a leading gold icon and a hint.
+  Widget _nameField({
+    required TextEditingController controller,
+    required IconData icon,
+    required String hint,
+  }) {
+    return TextField(
+      controller: controller,
+      style: const TextStyle(color: AppColors.textPrimary, fontSize: 16),
+      decoration: InputDecoration(
+        hintText: hint,
+        hintStyle: const TextStyle(color: AppColors.textTertiary),
+        prefixIcon: Icon(icon, color: AppColors.richGold, size: 20),
+        filled: true,
+        fillColor: AppColors.backgroundInput,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          borderSide: const BorderSide(color: AppColors.divider),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          borderSide: const BorderSide(color: AppColors.divider),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+          borderSide: const BorderSide(color: AppColors.richGold, width: 2),
+        ),
+      ),
+      onChanged: (_) => setState(() {}),
+    );
+  }
+
+  /// Grouped, tappable category chips — one labelled section per
+  /// [BusinessCategories.grouped] entry (easier than a 50-item dropdown).
+  Widget _buildCategoryGroups() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        for (final entry in BusinessCategories.grouped.entries) ...[
+          Padding(
+            padding: const EdgeInsets.only(top: 10, bottom: 6),
+            child: Text(
+              entry.key,
+              style: const TextStyle(
+                color: AppColors.textSecondary,
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [for (final c in entry.value) _categoryChip(c)],
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _categoryChip(String c) {
+    final selected = _category == c;
+    return GestureDetector(
+      onTap: () => setState(() => _category = c),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+        decoration: BoxDecoration(
+          color: selected ? AppColors.richGold : AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: selected ? AppColors.richGold : AppColors.divider,
+          ),
+        ),
+        child: Text(
+          c,
+          style: TextStyle(
+            color: selected ? AppColors.deepBlack : AppColors.textSecondary,
+            fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+            fontSize: 13.5,
+          ),
+        ),
+      ),
+    );
   }
 
   bool get _isValid {
@@ -92,9 +190,12 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     setState(() => _isSaving = true);
 
     final name = _nameController.text.trim();
+    final legalName = _legalNameController.text.trim();
     final updated = widget.profile.copyWith(
       isBusiness: _isBusiness,
       businessName: _isBusiness && name.isNotEmpty ? name : null,
+      businessLegalName:
+          _isBusiness && legalName.isNotEmpty ? legalName : null,
       businessCategory: _isBusiness ? _category : null,
       updatedAt: DateTime.now(),
     );
@@ -371,94 +472,29 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
               // conversion + status and the verification request below.
               if (_isBusiness) ...[
                 const SizedBox(height: 24),
-                // Business name
-                Text(
-                  l10n.businessProfileLabel,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
+                // Business PROFILE name — the storefront display name.
+                _fieldLabel(l10n.businessProfileNameLabel),
                 const SizedBox(height: 8),
-                TextField(
+                _nameField(
                   controller: _nameController,
-                  style: const TextStyle(
-                      color: AppColors.textPrimary, fontSize: 16),
-                  decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.badge_outlined,
-                        color: AppColors.richGold, size: 20),
-                    filled: true,
-                    fillColor: AppColors.backgroundInput,
-                    border: OutlineInputBorder(
-                      borderRadius:
-                          BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide: const BorderSide(color: AppColors.divider),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius:
-                          BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide: const BorderSide(color: AppColors.divider),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius:
-                          BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide: const BorderSide(
-                          color: AppColors.richGold, width: 2),
-                    ),
-                  ),
-                  onChanged: (_) => setState(() {}),
+                  icon: Icons.storefront_outlined,
+                  hint: l10n.businessProfileNameHint,
                 ),
                 const SizedBox(height: 24),
-                // Category
-                Text(
-                  l10n.businessCategoryLabel,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
+                // LEGAL business name — the registered company name.
+                _fieldLabel(l10n.businessLegalNameLabel),
+                const SizedBox(height: 8),
+                _nameField(
+                  controller: _legalNameController,
+                  icon: Icons.badge_outlined,
+                  hint: l10n.businessLegalNameHint,
                 ),
-                const SizedBox(height: 12),
-                DropdownButtonFormField<String>(
-                  // Guard legacy values no longer in the list so the dropdown
-                  // never asserts on an unknown initial value.
-                  value: _categories.contains(_category) ? _category : null,
-                  isExpanded: true,
-                  dropdownColor: AppColors.backgroundCard,
-                  icon: const Icon(Icons.arrow_drop_down,
-                      color: AppColors.richGold),
-                  style: const TextStyle(
-                      color: AppColors.textPrimary, fontSize: 16),
-                  hint: Text(
-                    l10n.businessCategoryHint,
-                    style: const TextStyle(color: AppColors.textTertiary),
-                  ),
-                  decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.category_outlined,
-                        color: AppColors.richGold, size: 20),
-                    filled: true,
-                    fillColor: AppColors.backgroundInput,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide: const BorderSide(color: AppColors.divider),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide: const BorderSide(color: AppColors.divider),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                      borderSide:
-                          const BorderSide(color: AppColors.richGold, width: 2),
-                    ),
-                  ),
-                  items: [
-                    for (final c in _categories)
-                      DropdownMenuItem<String>(value: c, child: Text(c)),
-                  ],
-                  onChanged: (value) => setState(() => _category = value),
-                ),
+                const SizedBox(height: 24),
+                // Category — grouped, tappable chips (easier than a 50-item
+                // dropdown), mirroring the storefront editor.
+                _fieldLabel(l10n.businessCategoryLabel),
+                const SizedBox(height: 4),
+                _buildCategoryGroups(),
                 const SizedBox(height: 24),
                 // Verified status (badge is admin-granted; user can REQUEST it).
                 Row(

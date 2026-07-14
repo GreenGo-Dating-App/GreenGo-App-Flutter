@@ -11,6 +11,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
+import '../widgets/scan_result_overlay.dart';
 import 'event_ticket_screen.dart';
 
 /// Organizer-only QR scanner that checks attendees in at the door.
@@ -109,17 +110,18 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
 
     // Invalid: not a GreenGo ticket, or for a different event.
     if (payload == null || payload.eventId != widget.event.id) {
-      _feedback(l10n.eventInvalidTicket, ok: false);
+      _denied(l10n, l10n.eventInvalidTicket);
       return;
     }
 
     final attendee = _attendees[payload.userId];
     if (attendee == null || attendee.status != RSVPStatus.going) {
-      _feedback(l10n.eventInvalidTicket, ok: false);
+      _denied(l10n, l10n.eventInvalidTicket);
       return;
     }
     if (attendee.checkedIn) {
-      _feedback(l10n.eventAlreadyCheckedIn(attendee.userName), ok: false);
+      _denied(l10n, l10n.eventAlreadyCheckedIn(attendee.userName),
+          name: attendee.userName);
       return;
     }
 
@@ -128,12 +130,37 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
         eventId: widget.event.id,
         attendeeUserId: payload.userId,
       );
-      _feedback(l10n.eventCheckedInSuccess(attendee.userName), ok: true);
+      _approved(l10n, attendee.userName);
     } catch (_) {
-      _feedback(l10n.eventInvalidTicket, ok: false);
+      _denied(l10n, l10n.eventInvalidTicket);
     }
   }
 
+  void _approved(AppLocalizations l10n, String name) {
+    if (!mounted) return;
+    showScanResult(
+      context,
+      approved: true,
+      statusLabel: l10n.scanResultApproved,
+      time: DateTime.now(),
+      name: name,
+    );
+  }
+
+  void _denied(AppLocalizations l10n, String reason, {String? name}) {
+    if (!mounted) return;
+    showScanResult(
+      context,
+      approved: false,
+      statusLabel: l10n.scanResultDenied,
+      time: DateTime.now(),
+      name: name,
+      detail: reason,
+    );
+  }
+
+  /// Lightweight snackbar for scanner-management feedback (add/remove allowed
+  /// scanners) — NOT ticket check-in, which uses the full-screen result above.
   void _feedback(String message, {required bool ok}) {
     if (!mounted) return;
     ScaffoldMessenger.of(context)

@@ -8,13 +8,13 @@ import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../analytics/presentation/screens/analytics_screen.dart';
-import '../../../events/presentation/screens/events_screen.dart';
 import '../../../explore/presentation/screens/qr_hub_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/widgets/edit_section_card.dart';
 import 'business_account_screen.dart';
 import 'business_events_screen.dart';
+import 'business_verification_request_screen.dart';
 import 'business_leads_screen.dart';
 import 'business_storefront_screen.dart';
 import 'followers_screen.dart';
@@ -27,7 +27,6 @@ import 'storefront_editor_screen.dart';
 /// main profile menu stays uncluttered:
 ///  - Business account (turn a personal account into a business/venue account)
 ///  - Analytics (Platinum-gated organizer dashboard)
-///  - Featured placements (promote/"Feature this event" from the Events surface)
 ///
 /// It reuses [EditSectionCard] so the tiles match the rest of the profile menu,
 /// and defers gating to [TierGate] / the destination screens themselves, so the
@@ -60,16 +59,6 @@ class BusinessHubScreen extends StatelessWidget {
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => AnalyticsScreen(userId: uid, tier: tier),
-      ),
-    );
-  }
-
-  /// Featured placements are created per-event via the Events surface
-  /// ("Feature this event"), so route the business there.
-  Future<void> _openFeatured(BuildContext context) async {
-    await Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => EventsScreen(currentUserId: profile.userId),
       ),
     );
   }
@@ -147,9 +136,16 @@ class BusinessHubScreen extends StatelessWidget {
     );
   }
 
-  /// Verification (request + status) lives inside the Business account screen,
-  /// so route there where the request/pending/approved flow is wired.
-  Future<void> _openVerification(BuildContext context) => _openBusinessAccount(context);
+  /// Opens the dedicated verification request screen (document upload, owner
+  /// name, phone OTP…). This is a DIFFERENT surface from the Business account
+  /// screen — the two must never land on the same page.
+  Future<void> _openVerification(BuildContext context) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BusinessVerificationRequestScreen(profile: profile),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -304,13 +300,6 @@ class BusinessHubScreen extends StatelessWidget {
               subtitle: l10n.personalStatisticsSubtitle,
               icon: Icons.insights,
               onTap: () => _openAnalytics(context),
-            ),
-            const SizedBox(height: 16),
-            EditSectionCard(
-              title: l10n.businessHubFeatured,
-              subtitle: l10n.featureThisEvent,
-              icon: Icons.star_outline,
-              onTap: () => _openFeatured(context),
             ),
             const SizedBox(height: 16),
             EditSectionCard(

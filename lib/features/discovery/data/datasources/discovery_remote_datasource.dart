@@ -302,11 +302,26 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         }).toList();
       }
 
-      // Get user location for distance sorting (used by fallback and final sort)
-      final userLoc = currentUserData != null
-          ? (currentUserData['effectiveLocation'] as Map<String, dynamic>? ??
-             currentUserData['location'] as Map<String, dynamic>? ?? {})
-          : <String, dynamic>{};
+      // Current user's ANCHOR location for distance sorting (used by the
+      // worldwide fallback and the final nearest-first sort). This must be
+      // TRAVELER-AWARE: when the user is actively traveling (e.g. to Paris),
+      // people near the TRAVELED location must appear first — not last.
+      // `Profile.effectiveLocation` is a computed getter and is NEVER persisted,
+      // so reading `currentUserData['effectiveLocation']` always missed and fell
+      // back to the HOME location. Recompute it here from the raw doc instead.
+      Map<String, dynamic> userLoc = <String, dynamic>{};
+      if (currentUserData != null) {
+        final isTraveler = currentUserData['isTraveler'] as bool? ?? false;
+        final expiryRaw = currentUserData['travelerExpiry'];
+        final expiry = expiryRaw is Timestamp ? expiryRaw.toDate() : null;
+        final travelerActive =
+            isTraveler && expiry != null && expiry.isAfter(DateTime.now());
+        final travelerLoc =
+            currentUserData['travelerLocation'] as Map<String, dynamic>?;
+        userLoc = (travelerActive && travelerLoc != null)
+            ? travelerLoc
+            : (currentUserData['location'] as Map<String, dynamic>? ?? {});
+      }
       final userLat = (userLoc['latitude'] as num?)?.toDouble() ?? 0.0;
       final userLng = (userLoc['longitude'] as num?)?.toDouble() ?? 0.0;
       final fe = FeatureEngineer();

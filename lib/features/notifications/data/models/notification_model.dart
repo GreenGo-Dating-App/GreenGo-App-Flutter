@@ -33,18 +33,29 @@ class NotificationModel extends NotificationEntity {
     );
   }
 
-  /// Create from Firestore document
+  /// Create from Firestore document.
+  ///
+  /// Defensive by design: a single malformed/legacy notification doc (missing
+  /// `title`/`message`/`userId`, a wrong type, or a null `createdAt` from an
+  /// unresolved `serverTimestamp`) must NOT throw — an exception here would
+  /// error the whole notifications stream and surface as "server failure".
+  /// Missing fields fall back to safe defaults instead.
   factory NotificationModel.fromFirestore(DocumentSnapshot doc) {
-    final data = doc.data() as Map<String, dynamic>;
+    final data = (doc.data() as Map<String, dynamic>?) ?? const {};
+
+    final createdRaw = data['createdAt'];
+    final createdAt =
+        createdRaw is Timestamp ? createdRaw.toDate() : DateTime.now();
 
     return NotificationModel(
       notificationId: doc.id,
-      userId: data['userId'] as String,
-      type: NotificationTypeExtension.fromString(data['type'] as String),
-      title: data['title'] as String,
-      message: data['message'] as String,
+      userId: data['userId'] as String? ?? '',
+      type: NotificationTypeExtension.fromString(
+          data['type'] as String? ?? ''),
+      title: data['title'] as String? ?? '',
+      message: data['message'] as String? ?? '',
       data: data['data'] as Map<String, dynamic>?,
-      createdAt: (data['createdAt'] as Timestamp).toDate(),
+      createdAt: createdAt,
       isRead: data['isRead'] as bool? ?? false,
       actionUrl: data['actionUrl'] as String?,
       imageUrl: data['imageUrl'] as String?,

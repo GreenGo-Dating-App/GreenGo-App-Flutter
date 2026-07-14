@@ -3707,5 +3707,15 @@
   "eventBoostEnded": "Boost terminé",
   "eventsBuyCoins": "Acheter des pièces",
   "eventsBuyCoinsPrompt": "Vous n'avez pas assez de pièces. Voulez-vous en acheter davantage ?",
-  "messageTooLong": "Les messages peuvent contenir jusqu'à 4096 caractères."
+  "messageTooLong": "Les messages peuvent contenir jusqu'à 4096 caractères.",
+  "preferenceBusinessOnly": "Comptes professionnels uniquement",
+  "preferenceBusinessOnlyDesc": "Afficher uniquement les comptes professionnels dans la découverte",
+  "businessProfileNameLabel": "Nom du profil professionnel",
+  "businessProfileNameHint": "Affiché sur votre vitrine",
+  "businessLegalNameLabel": "Raison sociale",
+  "businessLegalNameHint": "Nom d'entreprise enregistré",
+  "verifyOwnerNameLabel": "Nom complet du propriétaire",
+  "verifyOwnerNameHint": "Exactement comme sur la pièce d'identité téléchargée",
+  "scanResultApproved": "Approuvé",
+  "scanResultDenied": "Refusé"
 }

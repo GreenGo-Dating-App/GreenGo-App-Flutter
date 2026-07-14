@@ -13,6 +13,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_ticket_screen.dart';
+import '../../../events/presentation/widgets/scan_result_overlay.dart';
 
 /// QR hub — one place for everything QR:
 ///  - **My tickets**: a QR code for EVERY event the user has joined (going) or
@@ -311,7 +312,7 @@ class _ScanTabState extends State<_ScanTab> {
     final l10n = AppLocalizations.of(context)!;
     final payload = EventTicketPayload.tryDecode(raw);
     if (payload == null) {
-      _feedback(l10n.qrHubInvalidCode, ok: false);
+      _denied(l10n, l10n.qrHubInvalidCode);
       return;
     }
 
@@ -323,7 +324,7 @@ class _ScanTabState extends State<_ScanTab> {
     }
     if (!mounted) return;
     if (event == null) {
-      _feedback(l10n.qrHubInvalidCode, ok: false);
+      _denied(l10n, l10n.qrHubInvalidCode);
       return;
     }
 
@@ -334,16 +335,16 @@ class _ScanTabState extends State<_ScanTab> {
     final canScan =
         event.organizerId == me || event.allowedScannerIds.contains(me);
     if (!canScan) {
-      _feedback(l10n.qrScanNotAuthorized, ok: false);
+      _denied(l10n, l10n.qrScanNotAuthorized);
       return;
     }
     if (payload.eventId != event.id) {
-      _feedback(l10n.eventInvalidTicket, ok: false);
+      _denied(l10n, l10n.eventInvalidTicket);
       return;
     }
 
     // Validate the ticket against the live attendee roster, then check in.
-    // Shows only an Approved / Denied confirmation — never navigates.
+    // Shows only a full-screen Approved / Denied confirmation — never navigates.
     try {
       final roster = await _dataSource.watchAttendees(event.id).first;
       EventAttendee? attendee;
@@ -355,34 +356,45 @@ class _ScanTabState extends State<_ScanTab> {
       }
       if (!mounted) return;
       if (attendee == null || attendee.status != RSVPStatus.going) {
-        _feedback(l10n.eventInvalidTicket, ok: false);
+        _denied(l10n, l10n.eventInvalidTicket);
         return;
       }
       if (attendee.checkedIn) {
-        _feedback(l10n.eventAlreadyCheckedIn(attendee.userName), ok: false);
+        _denied(l10n, l10n.eventAlreadyCheckedIn(attendee.userName),
+            name: attendee.userName);
         return;
       }
       await _dataSource.checkInAttendee(
         eventId: event.id,
         attendeeUserId: payload.userId,
       );
-      if (mounted) _feedback(l10n.qrScanApproved, ok: true);
+      if (mounted) _approved(l10n, attendee.userName);
     } catch (_) {
-      if (mounted) _feedback(l10n.eventInvalidTicket, ok: false);
+      if (mounted) _denied(l10n, l10n.eventInvalidTicket);
     }
   }
 
-  void _feedback(String message, {required bool ok}) {
+  void _approved(AppLocalizations l10n, String name) {
     if (!mounted) return;
-    ScaffoldMessenger.of(context)
-      ..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(message),
-          backgroundColor: ok ? Colors.green.shade700 : Colors.red.shade700,
-          duration: const Duration(milliseconds: 1600),
-        ),
-      );
+    showScanResult(
+      context,
+      approved: true,
+      statusLabel: l10n.scanResultApproved,
+      time: DateTime.now(),
+      name: name,
+    );
+  }
+
+  void _denied(AppLocalizations l10n, String reason, {String? name}) {
+    if (!mounted) return;
+    showScanResult(
+      context,
+      approved: false,
+      statusLabel: l10n.scanResultDenied,
+      time: DateTime.now(),
+      name: name,
+      detail: reason,
+    );
   }
 
   @override

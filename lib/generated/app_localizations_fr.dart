@@ -12799,4 +12799,36 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get storefrontReplaceProfileImage => 'Replace profile image';
+
+  @override
+  String get preferenceBusinessOnly => 'Comptes professionnels uniquement';
+
+  @override
+  String get preferenceBusinessOnlyDesc =>
+      'Afficher uniquement les comptes professionnels dans la découverte';
+
+  @override
+  String get businessProfileNameLabel => 'Nom du profil professionnel';
+
+  @override
+  String get businessProfileNameHint => 'Affiché sur votre vitrine';
+
+  @override
+  String get businessLegalNameLabel => 'Raison sociale';
+
+  @override
+  String get businessLegalNameHint => 'Nom d\'entreprise enregistré';
+
+  @override
+  String get verifyOwnerNameLabel => 'Nom complet du propriétaire';
+
+  @override
+  String get verifyOwnerNameHint =>
+      'Exactement comme sur la pièce d\'identité téléchargée';
+
+  @override
+  String get scanResultApproved => 'Approuvé';
+
+  @override
+  String get scanResultDenied => 'Refusé';
 }

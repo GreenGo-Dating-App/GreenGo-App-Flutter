@@ -80,6 +80,7 @@ class Profile extends Equatable {
     this.signupGrantsAppliedAt,
     this.isBusiness = false,
     this.businessName,
+    this.businessLegalName,
     this.businessCategory,
     this.businessVerified = false,
     this.galleryImages = const [],
@@ -185,9 +186,12 @@ class Profile extends Equatable {
 
   // Business/venue account fields (revenue: featured event placements).
   // Stored on the same profiles/{uid} doc; owner may write isBusiness /
-  // businessName / businessCategory. businessVerified is admin-granted.
+  // businessName / businessLegalName / businessCategory. businessVerified is
+  // admin-granted. `businessName` is the STOREFRONT display name (what people
+  // see); `businessLegalName` is the registered legal company name.
   final bool isBusiness;
   final String? businessName;
+  final String? businessLegalName;
   final String? businessCategory;
   final bool businessVerified;
 
@@ -339,6 +343,7 @@ class Profile extends Equatable {
         signupGrantsAppliedAt,
         isBusiness,
         businessName,
+        businessLegalName,
         businessCategory,
         businessVerified,
         galleryImages,
@@ -417,6 +422,7 @@ class Profile extends Equatable {
     DateTime? signupGrantsAppliedAt,
     bool? isBusiness,
     String? businessName,
+    String? businessLegalName,
     String? businessCategory,
     bool? businessVerified,
     List<String>? galleryImages,
@@ -493,6 +499,7 @@ class Profile extends Equatable {
       signupGrantsAppliedAt: signupGrantsAppliedAt ?? this.signupGrantsAppliedAt,
       isBusiness: isBusiness ?? this.isBusiness,
       businessName: businessName ?? this.businessName,
+      businessLegalName: businessLegalName ?? this.businessLegalName,
       businessCategory: businessCategory ?? this.businessCategory,
       businessVerified: businessVerified ?? this.businessVerified,
       galleryImages: galleryImages ?? this.galleryImages,

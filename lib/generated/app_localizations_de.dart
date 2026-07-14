@@ -12755,4 +12755,36 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get storefrontReplaceProfileImage => 'Replace profile image';
+
+  @override
+  String get preferenceBusinessOnly => 'Nur Business-Konten';
+
+  @override
+  String get preferenceBusinessOnlyDesc =>
+      'Nur Business-Konten in der Entdeckung anzeigen';
+
+  @override
+  String get businessProfileNameLabel => 'Name des Business-Profils';
+
+  @override
+  String get businessProfileNameHint => 'Wird in deinem Schaufenster angezeigt';
+
+  @override
+  String get businessLegalNameLabel => 'Rechtlicher Firmenname';
+
+  @override
+  String get businessLegalNameHint => 'Eingetragener Firmenname';
+
+  @override
+  String get verifyOwnerNameLabel => 'Vollständiger Name des Inhabers';
+
+  @override
+  String get verifyOwnerNameHint =>
+      'Genau wie im hochgeladenen Ausweisdokument';
+
+  @override
+  String get scanResultApproved => 'Genehmigt';
+
+  @override
+  String get scanResultDenied => 'Abgelehnt';
 }

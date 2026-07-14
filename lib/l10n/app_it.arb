@@ -4288,5 +4288,15 @@
   "eventBoostEnded": "Boost terminato",
   "eventsBuyCoins": "Acquista monete",
   "eventsBuyCoinsPrompt": "Non hai abbastanza monete. Vuoi acquistarne altre?",
-  "messageTooLong": "I messaggi possono contenere fino a 4096 caratteri."
+  "messageTooLong": "I messaggi possono contenere fino a 4096 caratteri.",
+  "preferenceBusinessOnly": "Solo account business",
+  "preferenceBusinessOnlyDesc": "Mostra solo account business nella scoperta",
+  "businessProfileNameLabel": "Nome del profilo business",
+  "businessProfileNameHint": "Mostrato sulla tua vetrina",
+  "businessLegalNameLabel": "Ragione sociale",
+  "businessLegalNameHint": "Nome dell'azienda registrata",
+  "verifyOwnerNameLabel": "Nome completo del titolare",
+  "verifyOwnerNameHint": "Esattamente come nel documento d'identità caricato",
+  "scanResultApproved": "Approvato",
+  "scanResultDenied": "Negato"
 }
