@@ -133,6 +133,15 @@ export {
   onCommunityEventPublished,
 } from './communities/eventFanout';
 
+// Social notifications — actor-attributed (avatar + name) join/follow/rate/like.
+export {
+  onCommunityMemberJoined,
+  onEventAttendeeJoined,
+  onBusinessFollowed,
+  onBusinessRated,
+  onEventLiked,
+} from './notifications/socialNotifications';
+
 // Events — scheduled reminders.
 export {
   sendEventReminders,

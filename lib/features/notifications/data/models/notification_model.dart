@@ -15,6 +15,8 @@ class NotificationModel extends NotificationEntity {
     super.isRead,
     super.actionUrl,
     super.imageUrl,
+    super.actorId,
+    super.actorName,
   });
 
   /// Create from NotificationEntity
@@ -30,6 +32,8 @@ class NotificationModel extends NotificationEntity {
       isRead: notification.isRead,
       actionUrl: notification.actionUrl,
       imageUrl: notification.imageUrl,
+      actorId: notification.actorId,
+      actorName: notification.actorName,
     );
   }
 
@@ -59,6 +63,8 @@ class NotificationModel extends NotificationEntity {
       isRead: data['isRead'] as bool? ?? false,
       actionUrl: data['actionUrl'] as String?,
       imageUrl: data['imageUrl'] as String?,
+      actorId: data['actorId'] as String?,
+      actorName: data['actorName'] as String?,
     );
   }
 
@@ -75,6 +81,8 @@ class NotificationModel extends NotificationEntity {
       isRead: json['isRead'] as bool? ?? false,
       actionUrl: json['actionUrl'] as String?,
       imageUrl: json['imageUrl'] as String?,
+      actorId: json['actorId'] as String?,
+      actorName: json['actorName'] as String?,
     );
   }
 
@@ -90,6 +98,8 @@ class NotificationModel extends NotificationEntity {
       'isRead': isRead,
       'actionUrl': actionUrl,
       'imageUrl': imageUrl,
+      'actorId': actorId,
+      'actorName': actorName,
     };
   }
 

@@ -153,6 +153,8 @@ class NotificationCard extends StatelessWidget {
         return Icons.emoji_events;
       case NotificationType.gameInvite:
         return Icons.sports_esports;
+      default:
+        return Icons.notifications;
     }
   }
 
@@ -180,6 +182,8 @@ class NotificationCard extends StatelessWidget {
       case NotificationType.progressAchieved:
         return AppColors.richGold;
       case NotificationType.gameInvite:
+        return AppColors.richGold;
+      default:
         return AppColors.richGold;
     }
   }

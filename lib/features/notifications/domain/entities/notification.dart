@@ -15,6 +15,8 @@ class NotificationEntity extends Equatable {
     this.isRead = false,
     this.actionUrl,
     this.imageUrl,
+    this.actorId,
+    this.actorName,
   });
   final String notificationId;
   final String userId;
@@ -26,6 +28,11 @@ class NotificationEntity extends Equatable {
   final bool isRead;
   final String? actionUrl;
   final String? imageUrl;
+
+  /// The user who triggered this notification (for the left avatar + the
+  /// tappable bold name in the tile). Null for system/no-actor notifications.
+  final String? actorId;
+  final String? actorName;
 
   /// Get time since notification
   String get timeSinceText {
@@ -72,6 +79,32 @@ class NotificationEntity extends Equatable {
         return 'emoji_events';
       case NotificationType.gameInvite:
         return 'sports_esports';
+      case NotificationType.newEvent:
+      case NotificationType.communityEvent:
+      case NotificationType.communityEventChanged:
+      case NotificationType.eventJoin:
+      case NotificationType.eventReminder:
+        return 'event';
+      case NotificationType.groupMessage:
+      case NotificationType.groupAdd:
+      case NotificationType.groupJoin:
+        return 'groups';
+      case NotificationType.communityJoin:
+      case NotificationType.communityAnnouncement:
+        return 'campaign';
+      case NotificationType.eventLike:
+        return 'thumb_up';
+      case NotificationType.eventAnnouncement:
+        return 'campaign';
+      case NotificationType.qrScanned:
+        return 'qr_code';
+      case NotificationType.businessFollow:
+        return 'person_add';
+      case NotificationType.businessRating:
+        return 'star';
+      case NotificationType.boostStarted:
+      case NotificationType.boostEnded:
+        return 'rocket_launch';
     }
   }
 
@@ -87,6 +120,8 @@ class NotificationEntity extends Equatable {
     bool? isRead,
     String? actionUrl,
     String? imageUrl,
+    String? actorId,
+    String? actorName,
   }) {
     return NotificationEntity(
       notificationId: notificationId ?? this.notificationId,
@@ -99,6 +134,8 @@ class NotificationEntity extends Equatable {
       isRead: isRead ?? this.isRead,
       actionUrl: actionUrl ?? this.actionUrl,
       imageUrl: imageUrl ?? this.imageUrl,
+      actorId: actorId ?? this.actorId,
+      actorName: actorName ?? this.actorName,
     );
   }
 
@@ -114,6 +151,8 @@ class NotificationEntity extends Equatable {
         isRead,
         actionUrl,
         imageUrl,
+        actorId,
+        actorName,
       ];
 }
 
@@ -121,8 +160,8 @@ class NotificationEntity extends Equatable {
 enum NotificationType {
   newMatch,
   newMessage,
-  newLike,
-  profileView,
+  newLike,           // someone liked your profile
+  profileView,       // someone viewed your profile
   superLike,
   matchExpiring,
   promotional,
@@ -131,6 +170,24 @@ enum NotificationType {
   coinsPurchased,    // Coins purchased successfully
   progressAchieved,  // Achievement unlocked
   gameInvite,        // Game invite received
+  // ── Notifications overhaul (event / community / business) ──
+  newEvent,          // a business you follow published an event
+  groupMessage,      // a group you're in has a new message
+  groupAdd,          // someone added you to a group
+  groupJoin,         // someone joined your group
+  communityJoin,     // someone joined your community
+  communityAnnouncement,
+  communityEvent,        // a community event was published
+  communityEventChanged, // a community event changed (time/venue)
+  eventJoin,         // someone joined your event
+  eventLike,         // someone liked your event
+  eventReminder,     // an event you joined is coming up / started
+  eventAnnouncement, // an announcement for an event you joined
+  qrScanned,         // your ticket QR is being scanned
+  businessFollow,    // someone follows your business
+  businessRating,    // someone rated your business
+  boostStarted,      // your profile/event boost started
+  boostEnded,        // your profile/event boost ended
 }
 
 /// Extension for NotificationType
@@ -161,6 +218,40 @@ extension NotificationTypeExtension on NotificationType {
         return 'progress_achieved';
       case NotificationType.gameInvite:
         return 'game_invite';
+      case NotificationType.newEvent:
+        return 'new_event';
+      case NotificationType.groupMessage:
+        return 'group_message';
+      case NotificationType.groupAdd:
+        return 'group_add';
+      case NotificationType.groupJoin:
+        return 'group_join';
+      case NotificationType.communityJoin:
+        return 'community_join';
+      case NotificationType.communityAnnouncement:
+        return 'community_announcement';
+      case NotificationType.communityEvent:
+        return 'community_event';
+      case NotificationType.communityEventChanged:
+        return 'community_event_changed';
+      case NotificationType.eventJoin:
+        return 'event_join';
+      case NotificationType.eventLike:
+        return 'event_like';
+      case NotificationType.eventReminder:
+        return 'event_reminder';
+      case NotificationType.eventAnnouncement:
+        return 'event_announcement';
+      case NotificationType.qrScanned:
+        return 'qr_scanned';
+      case NotificationType.businessFollow:
+        return 'business_follow';
+      case NotificationType.businessRating:
+        return 'business_rating';
+      case NotificationType.boostStarted:
+        return 'boost_started';
+      case NotificationType.boostEnded:
+        return 'boost_ended';
     }
   }
 
@@ -190,6 +281,41 @@ extension NotificationTypeExtension on NotificationType {
         return NotificationType.progressAchieved;
       case 'game_invite':
         return NotificationType.gameInvite;
+      case 'new_event':
+        return NotificationType.newEvent;
+      case 'group_message':
+        return NotificationType.groupMessage;
+      case 'group_add':
+        return NotificationType.groupAdd;
+      case 'group_join':
+        return NotificationType.groupJoin;
+      case 'community_join':
+        return NotificationType.communityJoin;
+      case 'community_announcement':
+        return NotificationType.communityAnnouncement;
+      case 'community_event':
+        return NotificationType.communityEvent;
+      case 'community_event_changed':
+        return NotificationType.communityEventChanged;
+      case 'event_join':
+        return NotificationType.eventJoin;
+      case 'event_like':
+        return NotificationType.eventLike;
+      case 'event_reminder':
+        return NotificationType.eventReminder;
+      case 'event_announcement':
+      case 'event_broadcast':
+        return NotificationType.eventAnnouncement;
+      case 'qr_scanned':
+        return NotificationType.qrScanned;
+      case 'business_follow':
+        return NotificationType.businessFollow;
+      case 'business_rating':
+        return NotificationType.businessRating;
+      case 'boost_started':
+        return NotificationType.boostStarted;
+      case 'boost_ended':
+        return NotificationType.boostEnded;
       default:
         return NotificationType.system;
     }
