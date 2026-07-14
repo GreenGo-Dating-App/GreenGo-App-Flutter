@@ -11802,6 +11802,62 @@ class AppLocalizationsDe extends AppLocalizations {
   String get requestVerificationTitle => 'Verifizierung anfordern';
 
   @override
+  String get verifyBusinessNameLabel => 'Firmenname';
+
+  @override
+  String get verifyLegalNameLabel => 'Rechtlicher Name';
+
+  @override
+  String get verifyLegalNameHint => 'Eingetragener Name des Unternehmens';
+
+  @override
+  String get verifyPhoneLabel => 'Telefonnummer';
+
+  @override
+  String get verifyPhoneHint => '+49 151 1234567';
+
+  @override
+  String get verifySendCode => 'Code senden';
+
+  @override
+  String get verifyResendCode => 'Erneut senden';
+
+  @override
+  String get verifyEnterCodeLabel => '6-stelliger Code';
+
+  @override
+  String get verifyConfirmCode => 'Bestaetigen';
+
+  @override
+  String get verifyPhoneVerified => 'Telefon bestaetigt';
+
+  @override
+  String get verifyOwnerDocumentLabel => 'Ausweis des Inhabers';
+
+  @override
+  String get verifyUploadDocument => 'Dokument hochladen';
+
+  @override
+  String get verifyDocumentUploaded => 'Dokument hochgeladen';
+
+  @override
+  String get verifyDocumentUploadError =>
+      'Dokument konnte nicht hochgeladen werden. Bitte erneut versuchen.';
+
+  @override
+  String get verifyWebsiteLabel => 'Website (optional)';
+
+  @override
+  String get verifyWebsiteHint => 'https://beispiel.de';
+
+  @override
+  String get verifyNotesLabel => 'Notizen (optional)';
+
+  @override
+  String get verifyMissingFields =>
+      'Bitte alle Pflichtfelder ausfuellen und Telefon bestaetigen.';
+
+  @override
   String get requestVerificationMessage =>
       'Erzähle uns ein wenig über dein Unternehmen, damit wir es verifizieren können. Unser Team prüft deine Anfrage.';
 

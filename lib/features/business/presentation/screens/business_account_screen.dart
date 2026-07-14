@@ -15,6 +15,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import 'business_verification_request_screen.dart';
 
 /// Business / venue account screen.
 ///
@@ -46,7 +47,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
   // "Request verification" action).
   bool _verificationPending = false;
   bool _loadingVerification = true;
-  bool _submittingVerification = false;
+  final bool _submittingVerification = false;
 
   @override
   void initState() {
@@ -195,8 +196,9 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     }
   }
 
-  /// Submits a verification request to `business_verification_requests/{uid}`
-  /// with an optional note. Admin approval happens elsewhere. Disabled when
+  /// Opens the full verification-request form (phone OTP, business & legal name,
+  /// owner ID document, optional website, notes). On a successful submission the
+  /// request becomes pending. Admin approval happens elsewhere. Disabled when
   /// already verified or a request is already pending.
   Future<void> _requestVerification() async {
     if (_submittingVerification ||
@@ -204,103 +206,14 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
         widget.profile.businessVerified) {
       return;
     }
-    final l10n = AppLocalizations.of(context)!;
-    final noteController = TextEditingController();
-
-    final submit = await showDialog<bool>(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-        ),
-        title: Text(
-          l10n.requestVerificationTitle,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              l10n.requestVerificationMessage,
-              style: const TextStyle(color: AppColors.textSecondary),
-            ),
-            const SizedBox(height: 12),
-            TextField(
-              controller: noteController,
-              maxLines: 3,
-              style: const TextStyle(color: AppColors.textPrimary),
-              decoration: InputDecoration(
-                hintText: l10n.requestVerificationNoteHint,
-                hintStyle: const TextStyle(color: AppColors.textTertiary),
-                filled: true,
-                fillColor: AppColors.backgroundInput,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusS),
-                  borderSide: const BorderSide(color: AppColors.divider),
-                ),
-              ),
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(dialogContext).pop(false),
-            child: Text(
-              l10n.cancel,
-              style: const TextStyle(color: AppColors.textTertiary),
-            ),
-          ),
-          TextButton(
-            onPressed: () => Navigator.of(dialogContext).pop(true),
-            child: Text(
-              l10n.submit,
-              style: const TextStyle(
-                color: AppColors.richGold,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-        ],
+    final result = await Navigator.of(context).push<bool>(
+      MaterialPageRoute<bool>(
+        builder: (_) =>
+            BusinessVerificationRequestScreen(profile: widget.profile),
       ),
     );
-
-    final note = noteController.text.trim();
-    noteController.dispose();
-    if (submit != true || !mounted) return;
-
-    setState(() => _submittingVerification = true);
-    final businessName = _nameController.text.trim().isNotEmpty
-        ? _nameController.text.trim()
-        : (widget.profile.businessName ?? widget.profile.displayName);
-    try {
-      await FirebaseFirestore.instance
-          .collection('business_verification_requests')
-          .doc(widget.profile.userId)
-          .set({
-        'status': 'pending',
-        'businessName': businessName,
-        'note': note,
-        'submittedAt': FieldValue.serverTimestamp(),
-      });
-      if (!mounted) return;
-      setState(() {
-        _verificationPending = true;
-        _submittingVerification = false;
-      });
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.requestVerificationSubmitted)),
-      );
-    } catch (_) {
-      if (!mounted) return;
-      setState(() => _submittingVerification = false);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n.requestVerificationError),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+    if (result == true && mounted) {
+      setState(() => _verificationPending = true);
     }
   }
 
