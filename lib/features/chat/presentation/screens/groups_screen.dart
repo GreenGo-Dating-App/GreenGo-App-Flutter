@@ -1,30 +1,30 @@
-import 'dart:async';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
-import '../../data/datasources/group_tags_service.dart';
+import '../../data/datasources/group_chat_remote_datasource.dart';
+import '../../domain/entities/conversation.dart';
 import '../bloc/groups_bloc.dart';
 import '../bloc/groups_event.dart';
 import '../bloc/groups_state.dart';
+import '../widgets/conversation_card.dart';
 import 'create_group_screen.dart';
 import 'group_chat_screen.dart';
 
-/// Groups tab — lists the user's group conversations ("Culture Circles"),
-/// searchable by name. Backed by [GroupsBloc] (per-user inbox index, scales to
-/// millions). Layout mirrors the 1:1 chats list, with groups instead of people.
+/// Groups filter (mirrors the Messages tab's All / Unread / Favorites).
+enum _GroupFilter { all, unread, favorites }
+
+/// Groups tab — the user's group conversations, rendered EXACTLY like the
+/// Messages tab (same [ConversationCard] tile + the same filter chips, with a
+/// star-favorite). Backed by [GroupsBloc] (per-user inbox index, scales).
 class GroupsScreen extends StatefulWidget {
   const GroupsScreen({super.key, required this.userId, this.showAppBar = true});
 
   final String userId;
 
-  /// When embedded as a tab (e.g. Exchanges → Groups) the host already provides
-  /// the header, so we hide our own AppBar. Standalone use keeps it.
+  /// When embedded as a tab (Exchanges → Groups) the host provides the header.
   final bool showAppBar;
 
   @override
@@ -34,52 +34,35 @@ class GroupsScreen extends StatefulWidget {
 class _GroupsScreenState extends State<GroupsScreen> {
   final _searchController = TextEditingController();
   String _query = '';
+  _GroupFilter _filter = _GroupFilter.all;
 
-  // Per-user PRIVATE group tags (groupId -> tags) and the active tag filter.
-  final _tagsService = GroupTagsService();
-  StreamSubscription<Map<String, List<String>>>? _tagsSub;
-  Map<String, List<String>> _tags = const {};
-  final Set<String> _selectedTags = {};
-
-  @override
-  void initState() {
-    super.initState();
-    _tagsSub = _tagsService.watchAll(widget.userId).listen((tags) {
-      if (!mounted) return;
-      setState(() {
-        _tags = tags;
-        // Drop any selected tag that no longer exists.
-        final all = tags.values.expand((t) => t).toSet();
-        _selectedTags.removeWhere((t) => !all.contains(t));
-      });
-    });
-  }
+  final GroupChatRemoteDataSource _groupDs =
+      di.sl<GroupChatRemoteDataSource>();
 
   @override
   void dispose() {
     _searchController.dispose();
-    _tagsSub?.cancel();
     super.dispose();
   }
 
-  /// All distinct tags the user has applied across their groups, sorted.
-  List<String> get _allTags {
-    final set = <String>{};
-    for (final list in _tags.values) {
-      set.addAll(list);
-    }
-    final out = set.toList()
-      ..sort((a, b) => a.toLowerCase().compareTo(b.toLowerCase()));
-    return out;
+  void _toggleFavorite(Conversation group) {
+    // Fire-and-forget; the live inbox stream re-emits with the new flag.
+    _groupDs.setGroupFavorite(
+      userId: widget.userId,
+      groupId: group.conversationId,
+      favorite: !group.isFavoritedBy(widget.userId),
+    );
   }
 
-  /// A group passes the tag filter if no tags are selected, or it carries any
-  /// of the selected tags (OR semantics).
-  bool _matchesTagFilter(String groupId) {
-    if (_selectedTags.isEmpty) return true;
-    final groupTags = _tags[groupId];
-    if (groupTags == null) return false;
-    return groupTags.any(_selectedTags.contains);
+  bool _passesFilter(Conversation g) {
+    switch (_filter) {
+      case _GroupFilter.all:
+        return true;
+      case _GroupFilter.unread:
+        return g.unreadCountFor(widget.userId) > 0;
+      case _GroupFilter.favorites:
+        return g.isFavoritedBy(widget.userId);
+    }
   }
 
   @override
@@ -149,41 +132,9 @@ class _GroupsScreenState extends State<GroupsScreen> {
                 ),
               ),
             ),
-            // Personal tag filter — chips of the user's own tags. Only the
-            // current user sees these; selecting filters their groups list.
-            if (_allTags.isNotEmpty)
-              SizedBox(
-                height: 40,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  children: [
-                    for (final tag in _allTags)
-                      Padding(
-                        padding: const EdgeInsets.only(right: 8),
-                        child: FilterChip(
-                          label: Text(tag),
-                          selected: _selectedTags.contains(tag),
-                          showCheckmark: false,
-                          selectedColor: AppColors.richGold,
-                          backgroundColor: AppColors.backgroundCard,
-                          labelStyle: TextStyle(
-                            color: _selectedTags.contains(tag)
-                                ? AppColors.deepBlack
-                                : AppColors.textSecondary,
-                          ),
-                          onSelected: (sel) => setState(() {
-                            if (sel) {
-                              _selectedTags.add(tag);
-                            } else {
-                              _selectedTags.remove(tag);
-                            }
-                          }),
-                        ),
-                      ),
-                  ],
-                ),
-              ),
+            // Filter chips — same set/style as the Messages tab.
+            _buildFilterChips(l10n),
+            const SizedBox(height: 4),
             Expanded(
               child: BlocBuilder<GroupsBloc, GroupsState>(
                 builder: (context, state) {
@@ -214,14 +165,15 @@ class _GroupsScreenState extends State<GroupsScreen> {
                       ),
                     );
                   }
-                  final allGroups =
-                      state is GroupsLoaded ? state.groups : [];
-                  final groups = allGroups.where((g) {
+                  final all = state is GroupsLoaded
+                      ? state.groups
+                      : const <Conversation>[];
+                  final groups = all.where((g) {
                     final nameOk = _query.isEmpty ||
                         (g.groupInfo?.name ?? '')
                             .toLowerCase()
                             .contains(_query);
-                    return nameOk && _matchesTagFilter(g.conversationId);
+                    return nameOk && _passesFilter(g);
                   }).toList();
                   if (groups.isEmpty) {
                     return Center(
@@ -238,87 +190,26 @@ class _GroupsScreenState extends State<GroupsScreen> {
                           .read<GroupsBloc>()
                           .add(const GroupsRefreshRequested());
                     },
-                    child: ListView.separated(
-                    itemCount: groups.length,
-                    separatorBuilder: (_, __) => const Divider(
-                        height: 1, color: AppColors.backgroundCard),
-                    itemBuilder: (context, index) {
-                      final g = groups[index];
-                      final name = g.groupInfo?.name ?? 'Group';
-                      final unread = g.unreadCountFor(userId);
-                      final groupTags = _tags[g.conversationId] ?? const [];
-                      return ListTile(
-                        isThreeLine: groupTags.isNotEmpty,
-                        leading: _GroupAvatar(
-                          groupId: g.conversationId,
-                          inboxPhotoUrl: g.groupInfo?.photoUrl,
-                          name: name,
-                        ),
-                        title: Text(name,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style:
-                                const TextStyle(color: AppColors.textPrimary)),
-                        subtitle: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              g.lastMessagePreview,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                  color: AppColors.textSecondary),
+                    child: ListView.builder(
+                      itemCount: groups.length,
+                      itemBuilder: (context, index) {
+                        final g = groups[index];
+                        return ConversationCard(
+                          conversation: g,
+                          otherUserProfile: null, // group → uses groupInfo
+                          currentUserId: userId,
+                          onTap: () => Navigator.of(context).push(
+                            GroupChatScreen.route(
+                              groupId: g.conversationId,
+                              groupName: g.groupInfo?.name ?? 'Group',
+                              currentUserId: userId,
+                              groupPhotoUrl: g.groupInfo?.photoUrl,
                             ),
-                            if (groupTags.isNotEmpty)
-                              Padding(
-                                padding: const EdgeInsets.only(top: 4),
-                                child: Wrap(
-                                  spacing: 4,
-                                  runSpacing: 2,
-                                  children: [
-                                    for (final t in groupTags)
-                                      Container(
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 8, vertical: 2),
-                                        decoration: BoxDecoration(
-                                          color: AppColors.backgroundCard,
-                                          borderRadius:
-                                              BorderRadius.circular(10),
-                                        ),
-                                        child: Text(
-                                          t,
-                                          style: const TextStyle(
-                                            color: AppColors.richGold,
-                                            fontSize: 11,
-                                          ),
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                              ),
-                          ],
-                        ),
-                        trailing: unread > 0
-                            ? CircleAvatar(
-                                radius: 11,
-                                backgroundColor: AppColors.richGold,
-                                child: Text('$unread',
-                                    style: const TextStyle(
-                                        color: AppColors.deepBlack,
-                                        fontSize: 12)),
-                              )
-                            : null,
-                        onTap: () => Navigator.of(context).push(
-                          GroupChatScreen.route(
-                            groupId: g.conversationId,
-                            groupName: name,
-                            currentUserId: userId,
-                            groupPhotoUrl: g.groupInfo?.photoUrl,
                           ),
-                        ),
-                      );
-                    },
-                  ),
+                          onToggleFavorite: () => _toggleFavorite(g),
+                        );
+                      },
+                    ),
                   );
                 },
               ),
@@ -328,48 +219,41 @@ class _GroupsScreenState extends State<GroupsScreen> {
       ),
     );
   }
-}
 
-/// Group avatar that shows the group photo. Uses the inbox thread photo when
-/// present; otherwise falls back to a one-time read of the group document
-/// (covers groups created before inbox photo-sync existed). Cached by Firestore
-/// persistence, so the fallback read only happens once per photo-less group.
-class _GroupAvatar extends StatelessWidget {
-  const _GroupAvatar({
-    required this.groupId,
-    required this.inboxPhotoUrl,
-    required this.name,
-  });
-
-  final String groupId;
-  final String? inboxPhotoUrl;
-  final String name;
-
-  Widget _avatar(String? photoUrl) {
-    final has = photoUrl != null && photoUrl.isNotEmpty;
-    return CircleAvatar(
-      backgroundColor: AppColors.richGold,
-      foregroundColor: AppColors.deepBlack,
-      backgroundImage: has ? CachedNetworkImageProvider(photoUrl) : null,
-      child: has
-          ? null
-          : Text(name.isNotEmpty ? name[0].toUpperCase() : '#'),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (inboxPhotoUrl != null && inboxPhotoUrl!.isNotEmpty) {
-      return _avatar(inboxPhotoUrl);
-    }
-    // Fallback: read the group doc's photo once.
-    return FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
-      future: FirebaseFirestore.instance.collection('groups').doc(groupId).get(),
-      builder: (context, snap) {
-        final photo = (snap.data?.data()?['groupInfo']
-            as Map<String, dynamic>?)?['photoUrl'] as String?;
-        return _avatar(photo);
-      },
+  Widget _buildFilterChips(AppLocalizations l10n) {
+    final filters = [
+      (_GroupFilter.all, l10n.filterAll),
+      (_GroupFilter.unread, l10n.filterNotReplied),
+      (_GroupFilter.favorites, l10n.filterFavorites),
+    ];
+    return SizedBox(
+      height: 40,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        itemCount: filters.length,
+        separatorBuilder: (_, __) => const SizedBox(width: 8),
+        itemBuilder: (context, index) {
+          final (filter, label) = filters[index];
+          final selected = _filter == filter;
+          return FilterChip(
+            selected: selected,
+            label: Text(label),
+            labelStyle: TextStyle(
+              color: selected ? AppColors.deepBlack : AppColors.textSecondary,
+              fontSize: 13,
+              fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+            ),
+            backgroundColor: AppColors.backgroundCard,
+            selectedColor: AppColors.richGold,
+            checkmarkColor: AppColors.deepBlack,
+            side: BorderSide(
+              color: selected ? AppColors.richGold : AppColors.divider,
+            ),
+            onSelected: (_) => setState(() => _filter = filter),
+          );
+        },
+      ),
     );
   }
 }
