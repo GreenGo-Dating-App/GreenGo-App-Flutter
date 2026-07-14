@@ -45,6 +45,8 @@ import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../events/presentation/screens/events_screen.dart';
 import '../../../explore/presentation/screens/explore_screen.dart';
 import '../../../chat/presentation/screens/groups_screen.dart';
+import '../../../communities/presentation/bloc/communities_bloc.dart';
+import '../../../communities/presentation/screens/communities_screen.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -1569,11 +1571,22 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       return [
         ExploreScreen(userId: widget.userId),
         EventsScreen(currentUserId: widget.userId),
-        GroupsScreen(userId: widget.userId), // Community
+        // Community tab → the Communities feature (communities to join),
+        // i.e. the "Explore → Communities to join → See all" page.
+        MultiBlocProvider(
+          providers: [
+            BlocProvider.value(value: _profileBloc),
+            BlocProvider<CommunitiesBloc>(
+              create: (_) => di.sl<CommunitiesBloc>(),
+            ),
+          ],
+          child: const CommunitiesScreen(),
+        ),
+        // Exchanges: 1:1 Messages + group chats (as tabs inside the screen).
         ConversationsScreen(
           userId: widget.userId,
           onBadgeDecrement: _decrementBadgeCount,
-        ), // Messages
+        ),
         profileTab,
       ];
     }
@@ -1628,13 +1641,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         icon: Icons.groups_outlined,
         activeIcon: Icons.groups,
         label: l10n.communityTabTitle,
-        badgeCount: _unreadGroupCount,
       ),
       GlassNavItem(
         icon: Icons.forum_outlined,
         activeIcon: Icons.forum,
         label: l10n.messages,
-        badgeCount: _unreadMessageCount,
+        // Exchanges hosts both 1:1 chats and group chats now.
+        badgeCount: _unreadMessageCount + _unreadGroupCount,
       ),
       GlassNavItem(
         icon: Icons.person_outline,

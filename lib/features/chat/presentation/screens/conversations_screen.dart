@@ -19,14 +19,15 @@ import '../bloc/conversations_state.dart';
 import '../widgets/conversation_card.dart';
 import 'chat_screen.dart';
 import 'create_group_screen.dart';
+import 'groups_screen.dart';
 
 /// Conversations Screen
 ///
 /// Displays list of user's conversations
 class ConversationsScreen extends StatefulWidget {
-
   const ConversationsScreen({
-    required this.userId, super.key,
+    required this.userId,
+    super.key,
     this.onBadgeDecrement,
     this.showAppBar = false,
   });
@@ -42,7 +43,15 @@ class ConversationsScreen extends StatefulWidget {
   State<ConversationsScreen> createState() => _ConversationsScreenState();
 }
 
-enum ConversationFilter { all, newMessages, notReplied, fromMatch, fromSearch, favorites, toApprove }
+enum ConversationFilter {
+  all,
+  newMessages,
+  notReplied,
+  fromMatch,
+  fromSearch,
+  favorites,
+  toApprove
+}
 
 class _ConversationsScreenState extends State<ConversationsScreen> {
   final TextEditingController _searchController = TextEditingController();
@@ -86,7 +95,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   /// Always reads fresh from SharedPreferences to reflect language changes made in chat.
   String? _getChatLanguage(String matchId) {
     final lang = _prefs?.getString('chat_${matchId}_language');
-    return (lang != null && lang.isNotEmpty && lang != _userDefaultLanguage) ? lang : null;
+    return (lang != null && lang.isNotEmpty && lang != _userDefaultLanguage)
+        ? lang
+        : null;
   }
 
   Future<void> _loadCurrentUserProfile({bool forceServer = false}) async {
@@ -100,12 +111,14 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         if (mounted && doc.exists) {
           final data = doc.data()!;
           setState(() {
-            _currentUserProfile = ProfileModel.fromJson({...data, 'userId': doc.id});
+            _currentUserProfile =
+                ProfileModel.fromJson({...data, 'userId': doc.id});
           });
         }
       } catch (_) {
         // Fallback to repository
-        final result = await di.sl<ProfileRepository>().getProfile(widget.userId);
+        final result =
+            await di.sl<ProfileRepository>().getProfile(widget.userId);
         result.fold((_) {}, (profile) {
           if (mounted) setState(() => _currentUserProfile = profile);
         });
@@ -216,7 +229,8 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     );
   }
 
-  int _countForFilter(ConversationFilter filter, List<Conversation> conversations) {
+  int _countForFilter(
+      ConversationFilter filter, List<Conversation> conversations) {
     final saved = _selectedFilter;
     _selectedFilter = filter;
     final count = conversations.where(_passesFilter).length;
@@ -293,17 +307,20 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         // "All" excludes support, search (directs), and pending superLikes
         return conversation.conversationType != ConversationType.support &&
             conversation.conversationType != ConversationType.search &&
-            !(conversation.isSuperLikeConversation && conversation.visibleTo != null);
+            !(conversation.isSuperLikeConversation &&
+                conversation.visibleTo != null);
       case ConversationFilter.newMessages:
         // Exclude pending superLike/priority connect — those go to "To Approve"
-        if (conversation.isSuperLikeConversation && conversation.visibleTo != null) {
+        if (conversation.isSuperLikeConversation &&
+            conversation.visibleTo != null) {
           return false;
         }
         return conversation.unreadCount > 0 &&
             conversation.lastMessage != null &&
             !conversation.lastMessage!.isSentBy(widget.userId);
       case ConversationFilter.notReplied:
-        if (conversation.isSuperLikeConversation && conversation.visibleTo != null) {
+        if (conversation.isSuperLikeConversation &&
+            conversation.visibleTo != null) {
           return false;
         }
         return conversation.unreadCount > 0 &&
@@ -325,7 +342,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    _userDefaultLanguage = Provider.of<LanguageProvider>(context, listen: false).currentLocale.languageCode;
+    _userDefaultLanguage = Provider.of<LanguageProvider>(context, listen: false)
+        .currentLocale
+        .languageCode;
     final l10n = AppLocalizations.of(context)!;
     return BlocProvider(
       create: (context) => di.sl<ConversationsBloc>()
@@ -353,242 +372,316 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                 ),
               )
             : null,
-        // "New group" lives only on the Groups tab now.
-        body: BlocBuilder<ConversationsBloc, ConversationsState>(
-          builder: (context, state) {
-            if (state is ConversationsLoading) {
-              return const Center(
-                child: CircularProgressIndicator(
-                  color: AppColors.richGold,
-                ),
-              );
-            }
-
-            if (state is ConversationsError) {
-              return Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(
-                      Icons.error_outline,
-                      size: 64,
-                      color: AppColors.errorRed,
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      state.message,
-                      style: const TextStyle(
-                        color: AppColors.textSecondary,
-                        fontSize: 16,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 24),
-                    ElevatedButton(
-                      onPressed: () {
-                        context
-                            .read<ConversationsBloc>()
-                            .add(const ConversationsRefreshRequested());
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.richGold,
-                        foregroundColor: AppColors.deepBlack,
-                      ),
-                      child: Text(AppLocalizations.of(context)!.retry),
-                    ),
+        // Exchanges = 1:1 Messages + group chats, shown as two tabs.
+        body: DefaultTabController(
+          length: 2,
+          child: Column(
+            children: [
+              Material(
+                color: AppColors.backgroundDark,
+                child: TabBar(
+                  indicatorColor: AppColors.richGold,
+                  labelColor: AppColors.richGold,
+                  unselectedLabelColor: AppColors.textTertiary,
+                  tabs: [
+                    Tab(text: l10n.messagesTabMessages),
+                    Tab(text: l10n.messagesTabGroups),
                   ],
                 ),
-              );
-            }
-
-            if (state is ConversationsEmpty) {
-              return Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+              ),
+              Expanded(
+                child: TabBarView(
                   children: [
-                    const Icon(
-                      Icons.chat_bubble_outline,
-                      size: 80,
-                      color: AppColors.textTertiary,
-                    ),
-                    const SizedBox(height: 24),
-                    Text(
-                      AppLocalizations.of(context)!.chatNoMessagesYet,
-                      style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 40),
-                      child: Text(
-                        AppLocalizations.of(context)!.chatStartSwipingToChat,
-                        style: const TextStyle(
-                          color: AppColors.textSecondary,
-                          fontSize: 16,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            }
-
-            if (state is ConversationsLoaded) {
-              return RefreshIndicator(
-                onRefresh: () async {
-                  context
-                      .read<ConversationsBloc>()
-                      .add(const ConversationsRefreshRequested());
-                },
-                color: AppColors.richGold,
-                child: CustomScrollView(
-                  slivers: [
-                    // Search bar
-                    SliverToBoxAdapter(
-                      child: _buildSearchBar(),
-                    ),
-                    // Filter chips
-                    SliverToBoxAdapter(
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 8),
-                        child: _buildFilterChips(state.conversations),
-                      ),
-                    ),
-                    // Conversations list
-                    SliverList(
-                      delegate: SliverChildBuilderDelegate(
-                        (context, index) {
-                          final filteredConversations = state.conversations
-                              .where(_passesFilter)
-                              .toList();
-                          if (index >= filteredConversations.length) {
-                            return const SizedBox.shrink();
-                          }
-                          final conversation = filteredConversations[index];
-                          final otherUserId =
-                              conversation.getOtherUserId(widget.userId);
-
-                          return FutureBuilder(
-                            future: _getProfile(otherUserId),
-                            builder: (context, snapshot) {
-                              final profile = snapshot.data;
-
-                              // Filter by search query
-                              if (_searchQuery.isNotEmpty && profile != null) {
-                                final query = _searchQuery.toLowerCase();
-                                final nameMatches = profile.displayName
-                                    .toLowerCase()
-                                    .contains(query);
-                                final nicknameMatches = profile.nickname
-                                        ?.toLowerCase()
-                                        .contains(query) ??
-                                    false;
-                                if (!nameMatches && !nicknameMatches) {
-                                  return const SizedBox.shrink();
-                                }
-                              }
-
-                              return ConversationCard(
-                                key: ValueKey(conversation.conversationId),
-                                conversation: conversation,
-                                otherUserProfile: profile,
-                                currentUserId: widget.userId,
-                                chatLanguage: _getChatLanguage(conversation.matchId),
-                                onToggleFavorite: () {
-                                  context.read<ConversationsBloc>().add(
-                                    ConversationToggleFavoriteRequested(
-                                      conversationId: conversation.conversationId,
-                                      userId: widget.userId,
-                                      isFavorite: !conversation.isFavoritedBy(widget.userId),
-                                    ),
-                                  );
-                                },
-                                onAcceptSuperLike: () {
-                                  context.read<ConversationsBloc>().add(
-                                    ConversationAcceptSuperLikeRequested(
-                                      conversationId: conversation.conversationId,
-                                    ),
-                                  );
-                                  widget.onBadgeDecrement?.call(1);
-                                },
-                                onRejectSuperLike: () {
-                                  context.read<ConversationsBloc>().add(
-                                    ConversationRejectSuperLikeRequested(
-                                      conversationId: conversation.conversationId,
-                                      userId: widget.userId,
-                                    ),
-                                  );
-                                  widget.onBadgeDecrement?.call(1);
-                                },
-                                onLongPress: () {
-                                  _showDeleteBottomSheet(
-                                    context,
-                                    conversation,
-                                    profile?.displayName ?? 'this user',
-                                  );
-                                },
-                                onTap: () async {
-                                  // Base membership gate
-                                  final wasMember = _currentUserProfile?.isBaseMembershipActive ?? false;
-                                  final allowed = await BaseMembershipGate.checkAndGate(
-                                    context: context,
-                                    profile: _currentUserProfile,
-                                    userId: widget.userId,
-                                  );
-                                  if (!allowed) return;
-                                  // Refresh profile after successful purchase so gate won't block again
-                                  if (!wasMember) await _loadCurrentUserProfile(forceServer: true);
-
-                                  if (profile != null) {
-                                    await Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                        builder: (context) => ChatScreen(
-                                          matchId: conversation.matchId,
-                                          currentUserId: widget.userId,
-                                          otherUserId: otherUserId,
-                                          otherUserProfile: profile,
-                                        ),
-                                      ),
-                                    );
-
-                                    // Refresh conversations after returning from chat
-                                    if (context.mounted) {
-                                      context
-                                          .read<ConversationsBloc>()
-                                          .add(const ConversationsRefreshRequested());
-                                    }
-                                    // Decrement badge by 1 conversation (Instagram style)
-                                    // Only decrement if truly unread for current user
-                                    if (conversation.unreadCount > 0 &&
-                                        conversation.lastMessage != null &&
-                                        !conversation.lastMessage!.isSentBy(widget.userId)) {
-                                      widget.onBadgeDecrement?.call(1);
-                                    }
-                                  }
-                                },
-                              );
-                            },
+                    BlocBuilder<ConversationsBloc, ConversationsState>(
+                      builder: (context, state) {
+                        if (state is ConversationsLoading) {
+                          return const Center(
+                            child: CircularProgressIndicator(
+                              color: AppColors.richGold,
+                            ),
                           );
-                        },
-                        childCount: state.conversations
-                            .where(_passesFilter)
-                            .length,
-                      ),
+                        }
+
+                        if (state is ConversationsError) {
+                          return Center(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Icon(
+                                  Icons.error_outline,
+                                  size: 64,
+                                  color: AppColors.errorRed,
+                                ),
+                                const SizedBox(height: 16),
+                                Text(
+                                  state.message,
+                                  style: const TextStyle(
+                                    color: AppColors.textSecondary,
+                                    fontSize: 16,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(height: 24),
+                                ElevatedButton(
+                                  onPressed: () {
+                                    context.read<ConversationsBloc>().add(
+                                        const ConversationsRefreshRequested());
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: AppColors.richGold,
+                                    foregroundColor: AppColors.deepBlack,
+                                  ),
+                                  child:
+                                      Text(AppLocalizations.of(context)!.retry),
+                                ),
+                              ],
+                            ),
+                          );
+                        }
+
+                        if (state is ConversationsEmpty) {
+                          return Center(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Icon(
+                                  Icons.chat_bubble_outline,
+                                  size: 80,
+                                  color: AppColors.textTertiary,
+                                ),
+                                const SizedBox(height: 24),
+                                Text(
+                                  AppLocalizations.of(context)!
+                                      .chatNoMessagesYet,
+                                  style: const TextStyle(
+                                    color: AppColors.textPrimary,
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                const SizedBox(height: 12),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 40),
+                                  child: Text(
+                                    AppLocalizations.of(context)!
+                                        .chatStartSwipingToChat,
+                                    style: const TextStyle(
+                                      color: AppColors.textSecondary,
+                                      fontSize: 16,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        }
+
+                        if (state is ConversationsLoaded) {
+                          return RefreshIndicator(
+                            onRefresh: () async {
+                              context
+                                  .read<ConversationsBloc>()
+                                  .add(const ConversationsRefreshRequested());
+                            },
+                            color: AppColors.richGold,
+                            child: CustomScrollView(
+                              slivers: [
+                                // Search bar
+                                SliverToBoxAdapter(
+                                  child: _buildSearchBar(),
+                                ),
+                                // Filter chips
+                                SliverToBoxAdapter(
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(bottom: 8),
+                                    child:
+                                        _buildFilterChips(state.conversations),
+                                  ),
+                                ),
+                                // Conversations list
+                                SliverList(
+                                  delegate: SliverChildBuilderDelegate(
+                                    (context, index) {
+                                      final filteredConversations = state
+                                          .conversations
+                                          .where(_passesFilter)
+                                          .toList();
+                                      if (index >=
+                                          filteredConversations.length) {
+                                        return const SizedBox.shrink();
+                                      }
+                                      final conversation =
+                                          filteredConversations[index];
+                                      final otherUserId = conversation
+                                          .getOtherUserId(widget.userId);
+
+                                      return FutureBuilder(
+                                        future: _getProfile(otherUserId),
+                                        builder: (context, snapshot) {
+                                          final profile = snapshot.data;
+
+                                          // Filter by search query
+                                          if (_searchQuery.isNotEmpty &&
+                                              profile != null) {
+                                            final query =
+                                                _searchQuery.toLowerCase();
+                                            final nameMatches = profile
+                                                .displayName
+                                                .toLowerCase()
+                                                .contains(query);
+                                            final nicknameMatches = profile
+                                                    .nickname
+                                                    ?.toLowerCase()
+                                                    .contains(query) ??
+                                                false;
+                                            if (!nameMatches &&
+                                                !nicknameMatches) {
+                                              return const SizedBox.shrink();
+                                            }
+                                          }
+
+                                          return ConversationCard(
+                                            key: ValueKey(
+                                                conversation.conversationId),
+                                            conversation: conversation,
+                                            otherUserProfile: profile,
+                                            currentUserId: widget.userId,
+                                            chatLanguage: _getChatLanguage(
+                                                conversation.matchId),
+                                            onToggleFavorite: () {
+                                              context
+                                                  .read<ConversationsBloc>()
+                                                  .add(
+                                                    ConversationToggleFavoriteRequested(
+                                                      conversationId:
+                                                          conversation
+                                                              .conversationId,
+                                                      userId: widget.userId,
+                                                      isFavorite: !conversation
+                                                          .isFavoritedBy(
+                                                              widget.userId),
+                                                    ),
+                                                  );
+                                            },
+                                            onAcceptSuperLike: () {
+                                              context
+                                                  .read<ConversationsBloc>()
+                                                  .add(
+                                                    ConversationAcceptSuperLikeRequested(
+                                                      conversationId:
+                                                          conversation
+                                                              .conversationId,
+                                                    ),
+                                                  );
+                                              widget.onBadgeDecrement?.call(1);
+                                            },
+                                            onRejectSuperLike: () {
+                                              context
+                                                  .read<ConversationsBloc>()
+                                                  .add(
+                                                    ConversationRejectSuperLikeRequested(
+                                                      conversationId:
+                                                          conversation
+                                                              .conversationId,
+                                                      userId: widget.userId,
+                                                    ),
+                                                  );
+                                              widget.onBadgeDecrement?.call(1);
+                                            },
+                                            onLongPress: () {
+                                              _showDeleteBottomSheet(
+                                                context,
+                                                conversation,
+                                                profile?.displayName ??
+                                                    'this user',
+                                              );
+                                            },
+                                            onTap: () async {
+                                              // Base membership gate
+                                              final wasMember = _currentUserProfile
+                                                      ?.isBaseMembershipActive ??
+                                                  false;
+                                              final allowed =
+                                                  await BaseMembershipGate
+                                                      .checkAndGate(
+                                                context: context,
+                                                profile: _currentUserProfile,
+                                                userId: widget.userId,
+                                              );
+                                              if (!allowed) return;
+                                              // Refresh profile after successful purchase so gate won't block again
+                                              if (!wasMember)
+                                                await _loadCurrentUserProfile(
+                                                    forceServer: true);
+
+                                              if (profile != null) {
+                                                await Navigator.of(context)
+                                                    .push(
+                                                  MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        ChatScreen(
+                                                      matchId:
+                                                          conversation.matchId,
+                                                      currentUserId:
+                                                          widget.userId,
+                                                      otherUserId: otherUserId,
+                                                      otherUserProfile: profile,
+                                                    ),
+                                                  ),
+                                                );
+
+                                                // Refresh conversations after returning from chat
+                                                if (context.mounted) {
+                                                  context
+                                                      .read<ConversationsBloc>()
+                                                      .add(
+                                                          const ConversationsRefreshRequested());
+                                                }
+                                                // Decrement badge by 1 conversation (Instagram style)
+                                                // Only decrement if truly unread for current user
+                                                if (conversation.unreadCount >
+                                                        0 &&
+                                                    conversation.lastMessage !=
+                                                        null &&
+                                                    !conversation.lastMessage!
+                                                        .isSentBy(
+                                                            widget.userId)) {
+                                                  widget.onBadgeDecrement
+                                                      ?.call(1);
+                                                }
+                                              }
+                                            },
+                                          );
+                                        },
+                                      );
+                                    },
+                                    childCount: state.conversations
+                                        .where(_passesFilter)
+                                        .length,
+                                  ),
+                                ),
+                                const SliverToBoxAdapter(
+                                  child: SizedBox(height: 24),
+                                ),
+                              ],
+                            ),
+                          );
+                        }
+
+                        return const SizedBox.shrink();
+                      },
                     ),
-                    const SliverToBoxAdapter(
-                      child: SizedBox(height: 24),
+                    GroupsScreen(
+                      userId: widget.userId,
+                      showAppBar: false,
                     ),
                   ],
                 ),
-              );
-            }
-
-            return const SizedBox.shrink();
-          },
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -622,7 +715,8 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                   ),
                 ),
                 Text(
-                  AppLocalizations.of(context)!.chatDeleteConversationWith(otherUserName),
+                  AppLocalizations.of(context)!
+                      .chatDeleteConversationWith(otherUserName),
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 16,
@@ -631,48 +725,53 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                 ),
                 const SizedBox(height: 16),
                 ListTile(
-                  leading: const Icon(Icons.delete_outline, color: AppColors.textSecondary),
+                  leading: const Icon(Icons.delete_outline,
+                      color: AppColors.textSecondary),
                   title: Text(
                     AppLocalizations.of(context)!.chatDeleteForMe,
                     style: const TextStyle(color: AppColors.textPrimary),
                   ),
                   subtitle: Text(
                     AppLocalizations.of(context)!.chatDeleteForMeDescription,
-                    style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                    style: const TextStyle(
+                        color: AppColors.textSecondary, fontSize: 12),
                   ),
                   onTap: () {
                     Navigator.pop(bottomSheetContext);
                     context.read<ConversationsBloc>().add(
-                      ConversationDeleteForMeRequested(
-                        conversationId: conversation.conversationId,
-                        userId: widget.userId,
-                      ),
-                    );
+                          ConversationDeleteForMeRequested(
+                            conversationId: conversation.conversationId,
+                            userId: widget.userId,
+                          ),
+                        );
                   },
                 ),
                 ListTile(
-                  leading: const Icon(Icons.delete_forever, color: AppColors.errorRed),
+                  leading: const Icon(Icons.delete_forever,
+                      color: AppColors.errorRed),
                   title: Text(
                     AppLocalizations.of(context)!.chatDeleteForBoth,
                     style: const TextStyle(color: AppColors.errorRed),
                   ),
                   subtitle: Text(
                     AppLocalizations.of(context)!.chatDeleteForBothDescription,
-                    style: const TextStyle(color: AppColors.textSecondary, fontSize: 12),
+                    style: const TextStyle(
+                        color: AppColors.textSecondary, fontSize: 12),
                   ),
                   onTap: () {
                     Navigator.pop(bottomSheetContext);
                     context.read<ConversationsBloc>().add(
-                      ConversationDeleteForBothRequested(
-                        conversationId: conversation.conversationId,
-                        userId: widget.userId,
-                      ),
-                    );
+                          ConversationDeleteForBothRequested(
+                            conversationId: conversation.conversationId,
+                            userId: widget.userId,
+                          ),
+                        );
                   },
                 ),
                 const SizedBox(height: 8),
                 ListTile(
-                  leading: const Icon(Icons.close, color: AppColors.textTertiary),
+                  leading:
+                      const Icon(Icons.close, color: AppColors.textTertiary),
                   title: Text(
                     AppLocalizations.of(context)!.cancel,
                     style: const TextStyle(color: AppColors.textSecondary),
