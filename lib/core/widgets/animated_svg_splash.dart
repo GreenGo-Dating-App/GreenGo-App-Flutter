@@ -64,7 +64,7 @@ class _AnimatedSvgSplashState extends State<AnimatedSvgSplash>
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.black87,
+      color: Colors.black,
       child: FadeTransition(
         opacity: _opacityAnimation,
         child: Center(

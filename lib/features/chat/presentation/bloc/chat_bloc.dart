@@ -84,7 +84,8 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   String? _currentUserId;
   String? _otherUserId;
   bool _hasLoadedOnce = false;
-  int _messageLimit = 100;
+  // Bounded default window; the screen grows it in pages as the user scrolls up.
+  int _messageLimit = 40;
 
   /// Re-subscribes to the Firestore messages stream
   void _resubscribeToMessages() {
