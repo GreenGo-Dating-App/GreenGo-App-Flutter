@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
@@ -29,6 +30,7 @@ class NetworkGridCard extends StatefulWidget {
     required this.onOpenChat,
     required this.onOpenProfile,
     required this.onLongPressTag,
+    this.isBusiness = false,
     super.key,
   });
 
@@ -38,6 +40,10 @@ class NetworkGridCard extends StatefulWidget {
   /// When true, renders the gold "You" border + "You" badge and hides the
   /// distance badge / language flags (this is the current user's own tile).
   final bool isSelf;
+
+  /// When true, renders the premium gold-framed treatment used for business
+  /// accounts (same "featured" effect as Explore's community-event card).
+  final bool isBusiness;
 
   /// Tap the photo area (opens the chat with this person).
   final VoidCallback onOpenChat;
@@ -374,14 +380,15 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
       ],
     );
 
-    // ── Rounded tile: clipped photo/scrim, gold border ring for "You". ────
+    // ── Rounded tile: clipped photo/scrim, gold border ring for "You" and
+    // the premium gold frame + glow for business (featured) accounts. ────
     const radius = BorderRadius.all(Radius.circular(16));
+    final bool gold = widget.isSelf || widget.isBusiness;
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: radius,
-        border: widget.isSelf
-            ? Border.all(color: AppColors.richGold, width: 2)
-            : null,
+        border: gold ? Border.all(color: AppColors.richGold, width: 2) : null,
+        boxShadow: widget.isBusiness ? AppGlass.goldGlow : null,
       ),
       child: ClipRRect(
         borderRadius: radius,

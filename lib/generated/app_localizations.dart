@@ -22397,6 +22397,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Replace profile image'**
   String get storefrontReplaceProfileImage;
+
+  /// No description provided for @preferenceBusinessOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Business accounts only'**
+  String get preferenceBusinessOnly;
+
+  /// No description provided for @preferenceBusinessOnlyDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show only business accounts in discovery'**
+  String get preferenceBusinessOnlyDesc;
+
+  /// No description provided for @businessProfileNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Business profile name'**
+  String get businessProfileNameLabel;
+
+  /// No description provided for @businessProfileNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Shown on your storefront'**
+  String get businessProfileNameHint;
+
+  /// No description provided for @businessLegalNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal business name'**
+  String get businessLegalNameLabel;
+
+  /// No description provided for @businessLegalNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Registered company name'**
+  String get businessLegalNameHint;
+
+  /// No description provided for @verifyOwnerNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Owner\'s full name'**
+  String get verifyOwnerNameLabel;
+
+  /// No description provided for @verifyOwnerNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Exactly as on the uploaded ID document'**
+  String get verifyOwnerNameHint;
+
+  /// No description provided for @scanResultApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Approved'**
+  String get scanResultApproved;
+
+  /// No description provided for @scanResultDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Denied'**
+  String get scanResultDenied;
 }
 
 class _AppLocalizationsDelegate

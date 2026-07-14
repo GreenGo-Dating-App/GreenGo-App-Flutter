@@ -4288,5 +4288,15 @@
   "adminBanConfirm": "Dieses Konto dauerhaft sperren?",
   "adminBanConfirmBody": "Dies sperrt das Konto dauerhaft und blockiert jeglichen Zugriff. Dies kann nicht rückgängig gemacht werden.",
   "adminBanReasonHint": "Grund (z. B. Nacktheit in der Galerie)",
-  "adminBanned": "Konto dauerhaft gesperrt"
+  "adminBanned": "Konto dauerhaft gesperrt",
+  "preferenceBusinessOnly": "Nur Business-Konten",
+  "preferenceBusinessOnlyDesc": "Nur Business-Konten in der Entdeckung anzeigen",
+  "businessProfileNameLabel": "Name des Business-Profils",
+  "businessProfileNameHint": "Wird in deinem Schaufenster angezeigt",
+  "businessLegalNameLabel": "Rechtlicher Firmenname",
+  "businessLegalNameHint": "Eingetragener Firmenname",
+  "verifyOwnerNameLabel": "Vollständiger Name des Inhabers",
+  "verifyOwnerNameHint": "Genau wie im hochgeladenen Ausweisdokument",
+  "scanResultApproved": "Genehmigt",
+  "scanResultDenied": "Abgelehnt"
 }

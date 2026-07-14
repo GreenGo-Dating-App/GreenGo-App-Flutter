@@ -16,9 +16,10 @@ import '../../../profile/domain/entities/profile.dart';
 /// verify a business, then writes it to `business_verification_requests/{uid}`.
 ///
 /// Required: phone-number OTP identification, business name, the owner's ID
-/// document (uploaded to Storage), and the legal name. Optional: a website URL
-/// and free-text notes. Submission is blocked until the phone is OTP-verified
-/// and the required fields + document are present.
+/// document (uploaded to Storage), and the owner's full name (as printed on the
+/// ID). Optional: a website URL and free-text notes. Submission is blocked
+/// until the phone is OTP-verified and the required fields + document are
+/// present.
 class BusinessVerificationRequestScreen extends StatefulWidget {
   const BusinessVerificationRequestScreen({required this.profile, super.key});
 
@@ -32,7 +33,8 @@ class BusinessVerificationRequestScreen extends StatefulWidget {
 class _BusinessVerificationRequestScreenState
     extends State<BusinessVerificationRequestScreen> {
   final _businessNameController = TextEditingController();
-  final _legalNameController = TextEditingController();
+  // The OWNER's full name, exactly as printed on the uploaded ID document.
+  final _ownerNameController = TextEditingController();
   final _phoneController = TextEditingController();
   final _codeController = TextEditingController();
   final _websiteController = TextEditingController();
@@ -60,12 +62,22 @@ class _BusinessVerificationRequestScreenState
     super.initState();
     _businessNameController.text = widget.profile.businessName ??
         widget.profile.displayName;
+    // Only the fields that GATE submit drive a rebuild — and via a listener,
+    // NOT a per-keystroke setState in the shared field builder (that rebuilt
+    // the whole form on every keystroke and tore down the sibling text fields'
+    // IME connection, which is why the phone field couldn't be typed into).
+    _businessNameController.addListener(_onGatingFieldChanged);
+    _ownerNameController.addListener(_onGatingFieldChanged);
+  }
+
+  void _onGatingFieldChanged() {
+    if (mounted) setState(() {});
   }
 
   @override
   void dispose() {
     _businessNameController.dispose();
-    _legalNameController.dispose();
+    _ownerNameController.dispose();
     _phoneController.dispose();
     _codeController.dispose();
     _websiteController.dispose();
@@ -78,7 +90,7 @@ class _BusinessVerificationRequestScreenState
       _phoneVerified &&
       _documentUrl != null &&
       _businessNameController.text.trim().isNotEmpty &&
-      _legalNameController.text.trim().isNotEmpty;
+      _ownerNameController.text.trim().isNotEmpty;
 
   // ── Owner document upload ────────────────────────────────────────────────
 
@@ -233,7 +245,10 @@ class _BusinessVerificationRequestScreenState
           .set({
         'status': 'pending',
         'businessName': _businessNameController.text.trim(),
-        'legalName': _legalNameController.text.trim(),
+        // Owner's full name (as on the ID). `legalName` kept as a mirror for
+        // back-compat with any admin reader that still reads the old key.
+        'ownerName': _ownerNameController.text.trim(),
+        'legalName': _ownerNameController.text.trim(),
         'ownerDocumentUrl': _documentUrl,
         'phoneNumber': _phoneController.text.trim(),
         'phoneVerified': true,
@@ -300,11 +315,11 @@ class _BusinessVerificationRequestScreenState
             _field(_businessNameController, icon: Icons.storefront),
             const SizedBox(height: 20),
 
-            // Legal name (required)
-            _label(l10n.verifyLegalNameLabel, required: true),
-            _field(_legalNameController,
-                icon: Icons.account_balance_outlined,
-                hint: l10n.verifyLegalNameHint),
+            // Owner's full name — must match the uploaded ID document (required)
+            _label(l10n.verifyOwnerNameLabel, required: true),
+            _field(_ownerNameController,
+                icon: Icons.person_outline,
+                hint: l10n.verifyOwnerNameHint),
             const SizedBox(height: 20),
 
             // Phone + OTP (required)
@@ -532,12 +547,14 @@ class _BusinessVerificationRequestScreenState
     TextInputType? keyboardType,
   }) {
     return TextField(
+      // Stable identity across rebuilds so Flutter never re-maps one field's
+      // IME connection onto another (which dropped keystrokes).
+      key: ValueKey(controller),
       controller: controller,
       enabled: enabled,
       maxLines: maxLines,
       keyboardType: keyboardType,
       style: const TextStyle(color: AppColors.textPrimary),
-      onChanged: (_) => setState(() {}),
       decoration: InputDecoration(
         prefixIcon: Icon(icon, color: AppColors.richGold, size: 20),
         hintText: hint,

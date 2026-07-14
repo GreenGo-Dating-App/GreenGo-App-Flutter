@@ -4288,5 +4288,15 @@
   "adminBanConfirm": "Banir esta conta permanentemente?",
   "adminBanConfirmBody": "Isto bane permanentemente a conta e bloqueia todo o acesso. Não pode ser desfeito.",
   "adminBanReasonHint": "Motivo (ex. nudez na galeria)",
-  "adminBanned": "Conta banida permanentemente"
+  "adminBanned": "Conta banida permanentemente",
+  "preferenceBusinessOnly": "Apenas contas empresariais",
+  "preferenceBusinessOnlyDesc": "Mostrar apenas contas empresariais na descoberta",
+  "businessProfileNameLabel": "Nome do perfil empresarial",
+  "businessProfileNameHint": "Exibido na sua vitrine",
+  "businessLegalNameLabel": "Razão social",
+  "businessLegalNameHint": "Nome registrado da empresa",
+  "verifyOwnerNameLabel": "Nome completo do proprietário",
+  "verifyOwnerNameHint": "Exatamente como no documento de identidade enviado",
+  "scanResultApproved": "Aprovado",
+  "scanResultDenied": "Negado"
 }

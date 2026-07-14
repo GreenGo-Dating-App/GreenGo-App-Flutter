@@ -88,7 +88,17 @@ class NotificationRemoteDataSourceImpl
         .limit(cap)
         .snapshots()
         .map((snapshot) {
-      var items = snapshot.docs.map(NotificationModel.fromFirestore).toList();
+      // Parse each doc defensively: a single unparseable doc must not error the
+      // whole stream (which surfaced to the user as "server failure"). Skip any
+      // that still throw despite the tolerant [NotificationModel.fromFirestore].
+      var items = <NotificationModel>[];
+      for (final doc in snapshot.docs) {
+        try {
+          items.add(NotificationModel.fromFirestore(doc));
+        } catch (_) {
+          // Ignore this malformed notification doc and keep the rest.
+        }
+      }
 
       if (unreadOnly) {
         items = items.where((n) => !n.isRead).toList();

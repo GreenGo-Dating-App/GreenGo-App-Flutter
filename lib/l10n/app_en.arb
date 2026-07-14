@@ -12,15 +12,23 @@
   "passportProgressSummary": "{countries} countries · {languages} languages · {events} events",
   "@passportProgressSummary": {
     "placeholders": {
-      "countries": { "type": "int" },
-      "languages": { "type": "int" },
-      "events": { "type": "int" }
+      "countries": {
+        "type": "int"
+      },
+      "languages": {
+        "type": "int"
+      },
+      "events": {
+        "type": "int"
+      }
     }
   },
   "passportOverallProgress": "{percent}% explored",
   "@passportOverallProgress": {
     "placeholders": {
-      "percent": { "type": "int" }
+      "percent": {
+        "type": "int"
+      }
     }
   },
   "passportEventDating": "Dating",
@@ -5470,7 +5478,9 @@
   "webLocationMonthlyLimit": "You can update your location once a month on the web. Next update available {date}.",
   "@webLocationMonthlyLimit": {
     "placeholders": {
-      "date": { "type": "String" }
+      "date": {
+        "type": "String"
+      }
     }
   },
   "eventMyTicket": "My ticket",
@@ -5482,7 +5492,13 @@
   "eventScanScannerNotFound": "No member found with that nickname",
   "eventScanScannerAddFailed": "Could not add scanner. Try again.",
   "eventScanScannerAdded": "{name} can now scan tickets",
-  "@eventScanScannerAdded": {"placeholders": {"name": {"type": "String"}}},
+  "@eventScanScannerAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "eventAttendance": "Attendance",
   "eventCheckedIn": "Checked in",
   "eventNotCheckedIn": "Not here yet",
@@ -5496,32 +5512,44 @@
   "eventGuestCount": "{count} of {max} guests",
   "@eventGuestCount": {
     "placeholders": {
-      "count": { "type": "int" },
-      "max": { "type": "int" }
+      "count": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
     }
   },
   "eventCheckedInSuccess": "{name} checked in",
   "@eventCheckedInSuccess": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
   "eventAlreadyCheckedIn": "{name} already checked in",
   "@eventAlreadyCheckedIn": {
     "placeholders": {
-      "name": { "type": "String" }
+      "name": {
+        "type": "String"
+      }
     }
   },
   "eventGuestsBringing": "+{count} guests",
   "@eventGuestsBringing": {
     "placeholders": {
-      "count": { "type": "int" }
+      "count": {
+        "type": "int"
+      }
     }
   },
   "connectDailyLimitReached": "You've reached your daily limit of {limit} new connections. Upgrade to connect with more people!",
   "@connectDailyLimitReached": {
     "placeholders": {
-      "limit": { "type": "int" }
+      "limit": {
+        "type": "int"
+      }
     }
   },
   "boostFeatureName": "Profile Boost",
@@ -5529,7 +5557,9 @@
   "boostMonthlyLimitReached": "You've used all {limit} profile boosts included in your plan this month. Upgrade for more.",
   "@boostMonthlyLimitReached": {
     "placeholders": {
-      "limit": { "type": "int" }
+      "limit": {
+        "type": "int"
+      }
     }
   },
   "travelModeFeatureName": "Traveler Mode",
@@ -5544,15 +5574,27 @@
   "featureThisEvent": "Feature this event",
   "featureEventCostLabel": "Feature this event · {cost} coins",
   "@featureEventCostLabel": {
-    "placeholders": { "cost": { "type": "int" } }
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
   },
   "featureEventActive": "Featured until {date}",
   "@featureEventActive": {
-    "placeholders": { "date": { "type": "String" } }
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
   },
   "featureEventConfirm": "Feature this event for {cost} coins?",
   "@featureEventConfirm": {
-    "placeholders": { "cost": { "type": "int" } }
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
   },
   "referralTitle": "Invite friends",
   "referralInviteFriends": "Invite friends",
@@ -5654,13 +5696,17 @@
   "businessFollowersCount": "{count, plural, =0{No followers} one{1 follower} other{{count} followers}}",
   "@businessFollowersCount": {
     "placeholders": {
-      "count": { "type": "int" }
+      "count": {
+        "type": "int"
+      }
     }
   },
   "businessMembersCount": "{count, plural, =0{No members} one{1 member} other{{count} members}}",
   "@businessMembersCount": {
     "placeholders": {
-      "count": { "type": "int" }
+      "count": {
+        "type": "int"
+      }
     }
   },
   "adminBusinessVerifications": "Business Verifications",
@@ -5677,7 +5723,9 @@
   "adminSubmittedLabel": "Submitted {date}",
   "@adminSubmittedLabel": {
     "placeholders": {
-      "date": { "type": "String" }
+      "date": {
+        "type": "String"
+      }
     }
   },
   "communitiesSponsored": "Sponsored",
@@ -5713,7 +5761,7 @@
   "qrHubTicketHint": "Tap a ticket to open its full QR code",
   "qrHubScanInstructions": "Point your camera at a GreenGo QR code",
   "qrHubInvalidCode": "That's not a valid GreenGo code",
-  "qrScanApproved": "Approved \u2014 checked in",
+  "qrScanApproved": "Approved — checked in",
   "qrScanNotAuthorized": "Only the event owner or an invited scanner can redeem tickets",
   "qrHubJoinedEvent": "You're going! Opening the event…",
   "eventsRepeats": "Repeats",
@@ -5736,13 +5784,17 @@
   "eventsScheduledForDate": "Scheduled for {date}",
   "@eventsScheduledForDate": {
     "placeholders": {
-      "date": { "type": "String" }
+      "date": {
+        "type": "String"
+      }
     }
   },
   "eventsRepeatCap": "Up to {max} occurrences",
   "@eventsRepeatCap": {
     "placeholders": {
-      "max": { "type": "int" }
+      "max": {
+        "type": "int"
+      }
     }
   },
   "eventsTicketTiers": "Ticket tiers",
@@ -5757,19 +5809,25 @@
   "eventsWaitlistPosition": "You're #{position} on the waitlist",
   "@eventsWaitlistPosition": {
     "placeholders": {
-      "position": { "type": "int" }
+      "position": {
+        "type": "int"
+      }
     }
   },
   "eventsTierPriceValue": "{coins} coins",
   "@eventsTierPriceValue": {
     "placeholders": {
-      "coins": { "type": "int" }
+      "coins": {
+        "type": "int"
+      }
     }
   },
   "eventsTierCapacityValue": "{capacity} spots",
   "@eventsTierCapacityValue": {
     "placeholders": {
-      "capacity": { "type": "int" }
+      "capacity": {
+        "type": "int"
+      }
     }
   },
   "eventsRsvpError": "Couldn't update your RSVP",
@@ -5777,13 +5835,17 @@
   "shareProfileMessage": "Chat with me on GreenGo: {link}",
   "@shareProfileMessage": {
     "placeholders": {
-      "link": { "type": "String" }
+      "link": {
+        "type": "String"
+      }
     }
   },
   "shareEventMessage": "Check out this event on GreenGo: {link}",
   "@shareEventMessage": {
     "placeholders": {
-      "link": { "type": "String" }
+      "link": {
+        "type": "String"
+      }
     }
   },
   "guidelinesSubtitle": "A quick welcome to how we connect here",
@@ -5811,7 +5873,9 @@
   "eventTicketAdmits": "{count, plural, =1{Admits 1 person} other{Admits {count} people}}",
   "@eventTicketAdmits": {
     "placeholders": {
-      "count": { "type": "int" }
+      "count": {
+        "type": "int"
+      }
     }
   },
   "shareEvent": "Share event",
@@ -5837,33 +5901,47 @@
   "promoteDurationDays": "{days} days",
   "@promoteDurationDays": {
     "placeholders": {
-      "days": { "type": "int" }
+      "days": {
+        "type": "int"
+      }
     }
   },
   "promoteCostLabel": "{cost} coins",
   "@promoteCostLabel": {
     "placeholders": {
-      "cost": { "type": "int" }
+      "cost": {
+        "type": "int"
+      }
     }
   },
   "promoteActiveUntil": "Promoted until {date}",
   "@promoteActiveUntil": {
     "placeholders": {
-      "date": { "type": "String" }
+      "date": {
+        "type": "String"
+      }
     }
   },
   "promoteBusinessConfirm": "Promote your business for {days} days for {cost} coins?",
   "@promoteBusinessConfirm": {
     "placeholders": {
-      "days": { "type": "int" },
-      "cost": { "type": "int" }
+      "days": {
+        "type": "int"
+      },
+      "cost": {
+        "type": "int"
+      }
     }
   },
   "promoteEventConfirm": "Feature this event for {days} days for {cost} coins?",
   "@promoteEventConfirm": {
     "placeholders": {
-      "days": { "type": "int" },
-      "cost": { "type": "int" }
+      "days": {
+        "type": "int"
+      },
+      "cost": {
+        "type": "int"
+      }
     }
   },
   "audienceSectionTitle": "Audience insights",
@@ -5893,19 +5971,35 @@
   "eventsBoostChooseDuration": "Choose boost duration",
   "eventsBoostHours": "{count, plural, =1{1 hour} other{{count} hours}}",
   "@eventsBoostHours": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "eventsBoostDays": "{count, plural, =1{1 day} other{{count} days}}",
   "@eventsBoostDays": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "eventsBoostWeeks": "{count, plural, =1{1 week} other{{count} weeks}}",
   "@eventsBoostWeeks": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "eventBoostEndsIn": "Boost ends in {time}",
   "@eventBoostEndsIn": {
-    "placeholders": { "time": { "type": "String" } }
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   },
   "eventBoostEnded": "Boost ended",
   "eventsBuyCoins": "Buy coins",
@@ -5917,15 +6011,30 @@
   "businessRatingError": "Couldn't save your rating. Please try again.",
   "businessRatingCount": "({count})",
   "@businessRatingCount": {
-    "placeholders": { "count": { "type": "int" } }
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "rateStarsSemantic": "Rate {stars} stars",
   "@rateStarsSemantic": {
-    "placeholders": { "stars": { "type": "int" } }
+    "placeholders": {
+      "stars": {
+        "type": "int"
+      }
+    }
   },
   "businessRatingSemantic": "Rated {avg} out of 5, {count} ratings",
   "@businessRatingSemantic": {
-    "placeholders": { "avg": { "type": "String" }, "count": { "type": "int" } }
+    "placeholders": {
+      "avg": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
   },
   "editStorefront": "Edit storefront",
   "editStorefrontSubtitle": "Manage your gallery, hours, links and info",
@@ -5953,7 +6062,11 @@
   "extraEventTitle": "Extra event",
   "extraEventBody": "You've reached your free event limit. Create an extra event for {cost} coins?",
   "@extraEventBody": {
-    "placeholders": { "cost": { "type": "int" } }
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
   },
   "accountBannedTitle": "Account permanently banned",
   "accountBannedBody": "This account has been permanently banned for violating our content policy. This decision is final.",
@@ -5968,5 +6081,15 @@
   "storefrontProfileImage": "Profile image",
   "storefrontProfileImageSubtitle": "Your avatar, shown next to your business name.",
   "storefrontAddProfileImage": "Add profile image",
-  "storefrontReplaceProfileImage": "Replace profile image"
+  "storefrontReplaceProfileImage": "Replace profile image",
+  "preferenceBusinessOnly": "Business accounts only",
+  "preferenceBusinessOnlyDesc": "Show only business accounts in discovery",
+  "businessProfileNameLabel": "Business profile name",
+  "businessProfileNameHint": "Shown on your storefront",
+  "businessLegalNameLabel": "Legal business name",
+  "businessLegalNameHint": "Registered company name",
+  "verifyOwnerNameLabel": "Owner's full name",
+  "verifyOwnerNameHint": "Exactly as on the uploaded ID document",
+  "scanResultApproved": "Approved",
+  "scanResultDenied": "Denied"
 }

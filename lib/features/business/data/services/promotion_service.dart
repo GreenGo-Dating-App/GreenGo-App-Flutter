@@ -178,11 +178,17 @@ class PromotionService {
     }
   }
 
-  /// The business's own upcoming events, eligible to be featured.
+  /// The business's own events from TODAY into the future, eligible to be
+  /// featured. Uses "not before the start of today" (rather than strictly
+  /// `isUpcoming`, which excludes anything earlier today) so an event happening
+  /// today can still be promoted.
   Future<List<Event>> getPromotableEvents(String uid) async {
+    final now = DateTime.now();
+    final startOfToday = DateTime(now.year, now.month, now.day);
     final all = await _eventsDataSource.getUserEvents(uid);
     return all
-        .where((e) => e.organizerId == uid && e.isUpcoming)
+        .where((e) =>
+            e.organizerId == uid && !e.startDate.isBefore(startOfToday))
         .toList()
       ..sort((a, b) => a.startDate.compareTo(b.startDate));
   }

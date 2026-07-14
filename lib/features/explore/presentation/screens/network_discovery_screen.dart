@@ -16,6 +16,7 @@ import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
@@ -152,9 +153,12 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   Map<String, List<String>> _peopleTags = const {};
   final Set<String> _selectedTags = {};
 
-  /// "Filter by business" toggle — seeded from the opener (Explore's Business
-  /// accounts → See all passes true), then user-toggleable via the chip.
-  late bool _businessOnly = widget.businessOnly;
+  /// Whether the grid shows ONLY business accounts. Sourced from the opener
+  /// (Explore's Business accounts → See all passes `businessOnly: true` as a
+  /// one-shot) OR from the persisted Discovery preference (the toggle now lives
+  /// in Discovery preferences, not an in-screen chip).
+  bool get _businessOnly =>
+      widget.businessOnly || (_preferences?.businessOnly ?? false);
 
   @override
   void initState() {
@@ -716,39 +720,16 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   _runNicknameLookup(nickname);
                 },
               )
-            : Align(
-                alignment: Alignment.centerLeft,
-                child: FilterChip(
-                  selected: _businessOnly,
-                  label: Text(l10n.exploreBusinessAccounts),
-                  avatar: Icon(
-                    Icons.storefront,
-                    size: 16,
-                    color: _businessOnly
-                        ? AppColors.deepBlack
-                        : AppColors.richGold,
-                  ),
-                  onSelected: (v) {
-                    setState(() {
-                      _businessOnly = v;
-                      _candidates = null;
-                      _visibleCount = _pageSize;
-                    });
-                    _load();
-                  },
-                  backgroundColor: AppColors.backgroundCard,
-                  selectedColor: AppColors.richGold,
-                  checkmarkColor: AppColors.deepBlack,
-                  labelStyle: TextStyle(
-                    color: _businessOnly
-                        ? AppColors.deepBlack
-                        : AppColors.textSecondary,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  side: BorderSide(
-                    color:
-                        _businessOnly ? AppColors.richGold : AppColors.divider,
-                  ),
+            // The business filter now lives in Discovery preferences (tune
+            // icon), so the AppBar simply titles the grid. When opened as the
+            // "Business accounts → See all" one-shot, reflect that.
+            : Text(
+                widget.businessOnly
+                    ? l10n.exploreBusinessAccounts
+                    : l10n.exploreAroundYou,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
         actions: [
@@ -1224,18 +1205,40 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   /// Builds one [NetworkGridCard] wired to the Apple-safe gestures.
   Widget _tile(MatchCandidate candidate, {required bool isSelf}) {
     final profile = candidate.profile;
+    // Business accounts get the same premium effect as Explore's Featured
+    // community-event card: a gold-framed tile that opens the public
+    // storefront (on BOTH photo and name taps) instead of chat/profile.
+    final isBusiness = !isSelf && profile.isBusiness;
+    void openStorefront() {
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => BusinessStorefrontScreen(
+            business: profile,
+            currentUserId: widget.userId,
+          ),
+        ),
+      );
+    }
+
     return NetworkGridCard(
       candidate: candidate,
       isSelf: isSelf,
+      isBusiness: isBusiness,
       onOpenChat: isSelf
           ? () {}
-          : () => openConnectChat(
-                context,
-                currentUserId: widget.userId,
-                otherUserId: profile.userId,
-                otherUserProfile: profile,
-              ),
+          : isBusiness
+              ? openStorefront
+              : () => openConnectChat(
+                    context,
+                    currentUserId: widget.userId,
+                    otherUserId: profile.userId,
+                    otherUserProfile: profile,
+                  ),
       onOpenProfile: () {
+        if (isBusiness) {
+          openStorefront();
+          return;
+        }
         // Interaction logging (fire-and-forget, never throws): a profile-card
         // open in the discovery grid feeds the recommendation signal (skip the
         // user's own "You" tile).

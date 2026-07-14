@@ -21,6 +21,7 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
     this.showSupportUser = false,
     this.randomMode = false,
     this.showMyNetwork = false,
+    this.businessOnly = false,
   });
 
   factory MatchPreferences.defaultFor(String userId) {
@@ -43,6 +44,7 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
       showSupportUser: false,
       randomMode: false,
       showMyNetwork: false,
+      businessOnly: false,
     );
   }
 
@@ -80,6 +82,7 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
       showSupportUser: map['showSupportUser'] as bool? ?? false,
       randomMode: map['randomMode'] as bool? ?? false,
       showMyNetwork: map['showMyNetwork'] as bool? ?? false,
+      businessOnly: map['businessOnly'] as bool? ?? false,
     );
   }
   final String userId;
@@ -101,6 +104,7 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
   final bool showSupportUser; // true = show GreenGo Support user in discovery grid
   final bool randomMode; // true = show random worldwide people sorted by distance
   final bool showMyNetwork;
+  final bool businessOnly; // true = show only business accounts in discovery
 
   MatchPreferences copyWith({
     String? userId,
@@ -124,6 +128,7 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
     bool? showSupportUser,
     bool? randomMode,
     bool? showMyNetwork,
+    bool? businessOnly,
   }) {
     return MatchPreferences(
       userId: userId ?? this.userId,
@@ -145,6 +150,7 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
       showSupportUser: showSupportUser ?? this.showSupportUser,
       randomMode: randomMode ?? this.randomMode,
       showMyNetwork: showMyNetwork ?? this.showMyNetwork,
+      businessOnly: businessOnly ?? this.businessOnly,
     );
   }
 
@@ -170,6 +176,7 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
       'showSupportUser': showSupportUser,
       'randomMode': randomMode,
       'showMyNetwork': showMyNetwork,
+      'businessOnly': businessOnly,
     };
   }
 
@@ -194,5 +201,6 @@ class MatchPreferences extends Equatable { // true = show only users in my netwo
         showSupportUser,
         randomMode,
         showMyNetwork,
+        businessOnly,
       ];
 }

@@ -12588,4 +12588,35 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get storefrontReplaceProfileImage => 'Replace profile image';
+
+  @override
+  String get preferenceBusinessOnly => 'Business accounts only';
+
+  @override
+  String get preferenceBusinessOnlyDesc =>
+      'Show only business accounts in discovery';
+
+  @override
+  String get businessProfileNameLabel => 'Business profile name';
+
+  @override
+  String get businessProfileNameHint => 'Shown on your storefront';
+
+  @override
+  String get businessLegalNameLabel => 'Legal business name';
+
+  @override
+  String get businessLegalNameHint => 'Registered company name';
+
+  @override
+  String get verifyOwnerNameLabel => 'Owner\'s full name';
+
+  @override
+  String get verifyOwnerNameHint => 'Exactly as on the uploaded ID document';
+
+  @override
+  String get scanResultApproved => 'Approved';
+
+  @override
+  String get scanResultDenied => 'Denied';
 }

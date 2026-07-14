@@ -12717,6 +12717,38 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get storefrontReplaceProfileImage => 'Replace profile image';
+
+  @override
+  String get preferenceBusinessOnly => 'Apenas contas empresariais';
+
+  @override
+  String get preferenceBusinessOnlyDesc =>
+      'Mostrar apenas contas empresariais na descoberta';
+
+  @override
+  String get businessProfileNameLabel => 'Nome do perfil empresarial';
+
+  @override
+  String get businessProfileNameHint => 'Exibido na sua vitrine';
+
+  @override
+  String get businessLegalNameLabel => 'Razão social';
+
+  @override
+  String get businessLegalNameHint => 'Nome registrado da empresa';
+
+  @override
+  String get verifyOwnerNameLabel => 'Nome completo do proprietário';
+
+  @override
+  String get verifyOwnerNameHint =>
+      'Exatamente como no documento de identidade enviado';
+
+  @override
+  String get scanResultApproved => 'Aprovado';
+
+  @override
+  String get scanResultDenied => 'Negado';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -25414,4 +25446,36 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get adminBanned => 'Conta banida permanentemente';
+
+  @override
+  String get preferenceBusinessOnly => 'Apenas contas empresariais';
+
+  @override
+  String get preferenceBusinessOnlyDesc =>
+      'Mostrar apenas contas empresariais na descoberta';
+
+  @override
+  String get businessProfileNameLabel => 'Nome do perfil empresarial';
+
+  @override
+  String get businessProfileNameHint => 'Exibido na sua vitrine';
+
+  @override
+  String get businessLegalNameLabel => 'Razão social';
+
+  @override
+  String get businessLegalNameHint => 'Nome registrado da empresa';
+
+  @override
+  String get verifyOwnerNameLabel => 'Nome completo do proprietário';
+
+  @override
+  String get verifyOwnerNameHint =>
+      'Exatamente como no documento de identidade enviado';
+
+  @override
+  String get scanResultApproved => 'Aprovado';
+
+  @override
+  String get scanResultDenied => 'Negado';
 }

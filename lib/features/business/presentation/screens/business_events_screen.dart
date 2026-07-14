@@ -62,7 +62,8 @@ class _BusinessEventsView extends StatefulWidget {
 class _BusinessEventsViewState extends State<_BusinessEventsView> {
   final _searchController = TextEditingController();
   String _query = '';
-  _EventBucket _bucket = _EventBucket.upcoming;
+  // "On-going" (events happening today) is the default bucket.
+  _EventBucket _bucket = _EventBucket.ongoing;
 
   String get _uid => widget.profile.userId;
 
@@ -76,14 +77,21 @@ class _BusinessEventsViewState extends State<_BusinessEventsView> {
   /// query (matches title OR the formatted date), then sort by start date.
   List<Event> _filter(List<Event> events) {
     final now = DateTime.now();
+    final startOfToday = DateTime(now.year, now.month, now.day);
+    final endOfToday = startOfToday.add(const Duration(days: 1));
     var list = events.where((e) {
       switch (_bucket) {
         case _EventBucket.ongoing:
-          return !e.startDate.isAfter(now) && e.endDate.isAfter(now);
+          // "On-going" = events happening at the current date (today): the
+          // event's span overlaps today (starts before end-of-today and ends
+          // at/after start-of-today).
+          return e.startDate.isBefore(endOfToday) &&
+              !e.endDate.isBefore(startOfToday);
         case _EventBucket.upcoming:
-          return e.startDate.isAfter(now);
+          // Strictly in the future (from tomorrow on).
+          return !e.startDate.isBefore(endOfToday);
         case _EventBucket.past:
-          return e.endDate.isBefore(now);
+          return e.endDate.isBefore(startOfToday);
       }
     }).toList();
     final q = _query.trim().toLowerCase();
