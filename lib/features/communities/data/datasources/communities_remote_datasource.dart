@@ -392,7 +392,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       // We use collectionGroup to find user across all member subcollections
       final memberDocs = await _firestore
           .collectionGroup('members')
-          .where(FieldPath.documentId, isEqualTo: userId)
+          .where('userId', isEqualTo: userId)
           .get();
 
       final communityIds = memberDocs.docs
@@ -481,7 +481,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       final userCommunityIds = <String>{};
       final memberDocs = await _firestore
           .collectionGroup('members')
-          .where(FieldPath.documentId, isEqualTo: userId)
+          .where('userId', isEqualTo: userId)
           .get();
 
       for (final doc in memberDocs.docs) {
@@ -564,7 +564,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       // where they are owner/admin (they may manage those).
       final memberDocs = await _firestore
           .collectionGroup('members')
-          .where(FieldPath.documentId, isEqualTo: userId)
+          .where('userId', isEqualTo: userId)
           .get();
 
       final manageableIds = memberDocs.docs

@@ -39,7 +39,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _loadInitialData();
   }
@@ -109,7 +109,6 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           tabs: [
             Tab(text: AppLocalizations.of(context)!.communitiesTabJoined),
             Tab(text: AppLocalizations.of(context)!.communitiesTabDiscover),
-            Tab(text: AppLocalizations.of(context)!.communitiesTabLanguageCircles),
             Tab(text: AppLocalizations.of(context)!.communitiesTabManaged),
           ],
         ),
@@ -129,7 +128,6 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             children: [
               _buildMyGroupsTab(state),
               _buildDiscoverTab(state),
-              _buildLanguageCirclesTab(state),
               _buildManagedTab(state),
             ],
           );

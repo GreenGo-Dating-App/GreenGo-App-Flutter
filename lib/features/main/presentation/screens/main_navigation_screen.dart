@@ -941,13 +941,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       await _createApprovalNotification();
     }
 
-    // Show access granted notification if access date has arrived
-    if (accessData.approvalStatus == ApprovalStatus.approved &&
-        accessData.canAccessApp &&
-        !_hasShownAccessGrantedNotification) {
-      _hasShownAccessGrantedNotification = true;
-      await _createAccessGrantedNotification();
-    }
+    // "Access granted" notification removed per request — the notifications list
+    // should only contain the real engagement notifications, not this system one.
+    // (Kept the flag/method wired but no longer triggered.)
   }
 
   Future<void> _createApprovalNotification() async {

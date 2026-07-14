@@ -12942,4 +12942,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get universalSearchNoCommunities => 'No se encontraron comunidades';
+
+  @override
+  String get communitiesSearchTips => 'Buscar consejos';
+
+  @override
+  String get communitiesAddTip => 'Agregar consejo';
+
+  @override
+  String get communitiesTipHint => 'Comparte un consejo útil…';
 }

@@ -4350,5 +4350,8 @@
   "universalSearchTabBusiness": "Empresas",
   "universalSearchTabCommunity": "Comunidades",
   "universalSearchNoBusiness": "Nenhuma empresa encontrada",
-  "universalSearchNoCommunities": "Nenhuma comunidade encontrada"
+  "universalSearchNoCommunities": "Nenhuma comunidade encontrada",
+  "communitiesSearchTips": "Buscar dicas",
+  "communitiesAddTip": "Adicionar dica",
+  "communitiesTipHint": "Compartilhe uma dica útil…"
 }

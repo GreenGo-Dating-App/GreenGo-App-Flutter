@@ -12780,4 +12780,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get universalSearchNoCommunities => 'No communities found';
+
+  @override
+  String get communitiesSearchTips => 'Search tips';
+
+  @override
+  String get communitiesAddTip => 'Add tip';
+
+  @override
+  String get communitiesTipHint => 'Share a helpful tip…';
 }

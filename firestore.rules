@@ -923,15 +923,19 @@ service cloud.firestore {
           myMemberDoc().data.get('isBanned', false) == false &&
           myMemberDoc().data.get('isMuted', false) == false;
       }
-      function onlyMemberCountChanged() {
-        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberCount']);
+      function onlyDenormChanged() {
+        // Fields any member's action legitimately touches on the community doc:
+        // the join/leave counter and the last-message denormalization written by
+        // sendMessage. (Rules/resources/sponsor/promo edits still need a mod.)
+        return request.resource.data.diff(resource.data).affectedKeys()
+          .hasOnly(['memberCount', 'lastMessagePreview', 'lastActivityAt']);
       }
 
       allow read: if isSignedIn();
       allow create: if isSignedIn();
       // Community edits (rules/resources/sponsor/promo) → owner/admin only,
-      // EXCEPT a memberCount-only change (join/leave counter) by any member.
-      allow update: if isCommunityMod() || (isSignedIn() && onlyMemberCountChanged());
+      // EXCEPT denormalized member-driven fields (memberCount / last message).
+      allow update: if isCommunityMod() || (isSignedIn() && onlyDenormChanged());
       allow delete: if isCommunityCreator() || isAdmin();
 
       // Members: a user manages their OWN membership (join public / leave);
