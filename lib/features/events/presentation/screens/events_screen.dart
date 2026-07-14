@@ -57,9 +57,12 @@ const int kExtraEventCost = 50; // adjustable
 
 /// Events Screen - Discover local events and activities
 ///
-/// 3 tabs: Upcoming, Nearby, My Events
 /// Category chips for filtering.
 /// Wired to EventsBloc for all data operations.
+
+/// Time bucket for the "My Events" tab (past / on-going now / upcoming).
+enum _MyEventsFilter { ongoing, upcoming, past }
+
 class EventsScreen extends StatefulWidget {
 
   const EventsScreen({
@@ -92,16 +95,19 @@ class _EventsScreenState extends State<EventsScreen>
   // Native tabs (Upcoming/Community/My Events): distance is the default order.
   String _nativeSort = 'distance'; // distance | date | popular
 
-  // Date-range filter for native event lists (Community / My Events / Going).
+  // Date-range filter for native event lists (Community / My Events).
   // Null = no bound. Inclusive window [_dateFrom 00:00 .. _dateTo 23:59:59].
   DateTime? _dateFrom;
   DateTime? _dateTo;
   bool get _hasDateFilter => _dateFrom != null || _dateTo != null;
 
+  // My Events time bucket (the old "Going" tab is merged into My Events).
+  _MyEventsFilter _myEventsFilter = _MyEventsFilter.upcoming;
+
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 6, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
@@ -122,8 +128,8 @@ class _EventsScreenState extends State<EventsScreen>
     _tabController.addListener(() {
       if (!mounted) return;
       setState(() {});
-      // Refresh "My Events"/"Going" when opened so joined events show up.
-      if (_tabController.index == 4 || _tabController.index == 5) {
+      // Refresh "My Events" (now includes Going) when opened.
+      if (_tabController.index == 4) {
         _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
       }
     });
@@ -133,12 +139,10 @@ class _EventsScreenState extends State<EventsScreen>
   }
 
   // External tabs (Live Events / Attractions / Experiences) have no GreenGo
-  // category tags — hide the category bar there. Native = Upcoming/Community/My.
-  // Native tabs: Community (0), My Events (4), Going (5).
+  // category tags — hide the category bar there. Native tabs: Community (0),
+  // My Events (4, which now also includes Going).
   bool get _isNativeTab =>
-      _tabController.index == 0 ||
-      _tabController.index == 4 ||
-      _tabController.index == 5;
+      _tabController.index == 0 || _tabController.index == 4;
 
   // Attractions tab (Geoapify) supports a category filter (museum/park/etc).
   bool get _isAttractionsTab => _tabController.index == 2;
@@ -260,15 +264,20 @@ class _EventsScreenState extends State<EventsScreen>
               icon: const Icon(Icons.add, color: AppColors.richGold),
               onPressed: () => _showCreateEventDialog(context),
             ),
-            IconButton(
-              icon: Icon(
-                _hasDateFilter ? Icons.filter_list : Icons.filter_list_outlined,
-                color: _hasDateFilter
-                    ? AppColors.richGold
-                    : AppColors.textPrimary,
+            // Date filter only applies to native tabs (Community / My Events) —
+            // Attractions & Experiences have no date filter.
+            if (_isNativeTab)
+              IconButton(
+                icon: Icon(
+                  _hasDateFilter
+                      ? Icons.filter_list
+                      : Icons.filter_list_outlined,
+                  color: _hasDateFilter
+                      ? AppColors.richGold
+                      : AppColors.textPrimary,
+                ),
+                onPressed: () => _showFilterDialog(context),
               ),
-              onPressed: () => _showFilterDialog(context),
-            ),
           ],
           bottom: TabBar(
             controller: _tabController,
@@ -283,7 +292,6 @@ class _EventsScreenState extends State<EventsScreen>
               Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
               Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
               Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
-              Tab(text: AppLocalizations.of(context)!.eventsTabGoing),
             ],
           ),
         ),
@@ -366,8 +374,7 @@ class _EventsScreenState extends State<EventsScreen>
           _buildExperiencesTab('ticketmaster'),
           _buildExperiencesTab('geoapify', category: _attractionCategory),
           _buildExperiencesTab('viator', category: _experienceCategory),
-          _buildEventsList(_applySearchAndSort(_getMyEvents(state))),
-          _buildEventsList(_applySearchAndSort(_getGoingEvents(state))),
+          _buildMyEventsTab(state),
         ],
       );
     }
@@ -380,7 +387,6 @@ class _EventsScreenState extends State<EventsScreen>
         _buildExperiencesTab('ticketmaster'),
         _buildExperiencesTab('geoapify'),
         _buildExperiencesTab('viator'),
-        _buildEventsList([]),
         _buildEventsList([]),
       ],
     );
@@ -694,37 +700,96 @@ class _EventsScreenState extends State<EventsScreen>
     return _buildEventsList(_applySearchAndSort(list));
   }
 
+  /// My Events = events the user ORGANIZES **plus** events they've RSVP'd
+  /// "going" to (the former "Going" tab is merged here), de-duplicated by id.
   List<Event> _getMyEvents(EventsLoaded state) {
-    if (state.userEvents.isNotEmpty) {
-      if (_selectedCategory != null) {
-        return state.userEvents
-            .where((e) => e.category == _selectedCategory)
-            .toList();
-      }
-      return state.userEvents;
+    final byId = <String, Event>{};
+    for (final e in state.userEvents) {
+      final organizes = e.organizerId == widget.currentUserId;
+      final going = e.attendees.any((a) =>
+          a.userId == widget.currentUserId && a.status == RSVPStatus.going);
+      if (organizes || going) byId[e.id] = e;
     }
-    // Fallback: filter from all events
-    return state.filteredEvents.where((e) {
-      return e.organizerId == widget.currentUserId ||
-          e.attendees.any((a) => a.userId == widget.currentUserId);
-    }).toList();
+    if (byId.isEmpty) {
+      // Fallback: derive from all loaded events.
+      for (final e in state.filteredEvents) {
+        if (e.organizerId == widget.currentUserId ||
+            e.attendees.any((a) => a.userId == widget.currentUserId)) {
+          byId[e.id] = e;
+        }
+      }
+    }
+    var list = byId.values.toList();
+    if (_selectedCategory != null) {
+      list = list.where((e) => e.category == _selectedCategory).toList();
+    }
+    return list;
   }
 
-  /// Going: every event the user has RSVP'd "going" to — INCLUDING events they
-  /// organized and then joined. The datasource marks the user's going RSVP on
-  /// each event (attendees live in a subcollection), so we filter on that.
-  List<Event> _getGoingEvents(EventsLoaded state) {
-    final attending = state.userEvents
-        .where((e) => e.attendees.any((a) =>
-            a.userId == widget.currentUserId &&
-            a.status == RSVPStatus.going))
-        .toList();
-    if (_selectedCategory != null) {
-      return attending
-          .where((e) => e.category == _selectedCategory)
-          .toList();
+  /// Narrow My Events by time bucket: past / on-going (running now) / upcoming.
+  List<Event> _applyMyEventsTimeFilter(List<Event> events) {
+    final now = DateTime.now();
+    switch (_myEventsFilter) {
+      case _MyEventsFilter.ongoing:
+        return events
+            .where((e) => !e.startDate.isAfter(now) && e.endDate.isAfter(now))
+            .toList();
+      case _MyEventsFilter.upcoming:
+        return events.where((e) => e.startDate.isAfter(now)).toList();
+      case _MyEventsFilter.past:
+        return events.where((e) => e.endDate.isBefore(now)).toList();
     }
-    return attending;
+  }
+
+  /// The My Events tab: a past / on-going / upcoming segmented filter above the
+  /// searchable, date-filterable events list.
+  Widget _buildMyEventsTab(EventsLoaded state) {
+    final l10n = AppLocalizations.of(context)!;
+    final filtered = _applyMyEventsTimeFilter(_getMyEvents(state));
+    Widget seg(_MyEventsFilter f, String label) {
+      final selected = _myEventsFilter == f;
+      return Expanded(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          child: ChoiceChip(
+            label: SizedBox(
+              width: double.infinity,
+              child: Text(label, textAlign: TextAlign.center),
+            ),
+            selected: selected,
+            onSelected: (_) => setState(() => _myEventsFilter = f),
+            backgroundColor: AppColors.backgroundCard,
+            selectedColor: AppColors.richGold,
+            labelStyle: TextStyle(
+              color: selected ? AppColors.deepBlack : AppColors.textSecondary,
+              fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+              side: BorderSide(
+                color: selected ? AppColors.richGold : AppColors.divider,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(8, 8, 8, 4),
+          child: Row(
+            children: [
+              seg(_MyEventsFilter.ongoing, l10n.eventsFilterOngoing),
+              seg(_MyEventsFilter.upcoming, l10n.eventsFilterUpcoming),
+              seg(_MyEventsFilter.past, l10n.eventsFilterPast),
+            ],
+          ),
+        ),
+        Expanded(child: _buildEventsList(_applySearchAndSort(filtered))),
+      ],
+    );
   }
 
   Widget _buildEventsList(List<Event> events) {

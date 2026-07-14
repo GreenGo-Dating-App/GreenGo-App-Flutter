@@ -3909,6 +3909,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get eventsTabMyEvents => 'My Events';
 
   @override
+  String get eventsFilterOngoing => 'On-going';
+
+  @override
+  String get eventsFilterUpcoming => 'Upcoming';
+
+  @override
+  String get eventsFilterPast => 'Past';
+
+  @override
   String get eventsTabExperiences => 'Experiences';
 
   @override

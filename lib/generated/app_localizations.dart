@@ -7067,6 +7067,24 @@ abstract class AppLocalizations {
   /// **'My Events'**
   String get eventsTabMyEvents;
 
+  /// No description provided for @eventsFilterOngoing.
+  ///
+  /// In en, this message translates to:
+  /// **'On-going'**
+  String get eventsFilterOngoing;
+
+  /// No description provided for @eventsFilterUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get eventsFilterUpcoming;
+
+  /// No description provided for @eventsFilterPast.
+  ///
+  /// In en, this message translates to:
+  /// **'Past'**
+  String get eventsFilterPast;
+
   /// No description provided for @eventsTabExperiences.
   ///
   /// In en, this message translates to:
