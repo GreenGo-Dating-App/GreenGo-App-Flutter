@@ -4249,6 +4249,7 @@
   "eventAnalyticsCheckInRate": "Tasso di check-in",
   "eventAnalyticsTierBreakdown": "Categorie di biglietti",
   "businessEventsTitle": "Gestisci i miei eventi",
+  "businessEventsSearchHint": "Cerca per nome o data",
   "businessEventsEmpty": "Non hai ancora creato alcun evento.",
   "businessEventsAnalytics": "Statistiche",
   "businessEventsCancelTitle": "Annulla evento",

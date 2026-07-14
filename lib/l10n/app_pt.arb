@@ -4210,6 +4210,7 @@
   "eventAnalyticsCheckInRate": "Taxa de check-in",
   "eventAnalyticsTierBreakdown": "Tipos de bilhete",
   "businessEventsTitle": "Gerir os meus eventos",
+  "businessEventsSearchHint": "Buscar por nome ou data",
   "businessEventsEmpty": "Ainda não criaste nenhum evento.",
   "businessEventsAnalytics": "Estatísticas",
   "businessEventsCancelTitle": "Cancelar evento",

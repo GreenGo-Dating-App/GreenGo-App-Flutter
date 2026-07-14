@@ -21882,6 +21882,12 @@ abstract class AppLocalizations {
   /// **'Manage my events'**
   String get businessEventsTitle;
 
+  /// No description provided for @businessEventsSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name or date'**
+  String get businessEventsSearchHint;
+
   /// No description provided for @businessEventsEmpty.
   ///
   /// In en, this message translates to:

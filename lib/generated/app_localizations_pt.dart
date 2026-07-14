@@ -12404,6 +12404,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get businessEventsTitle => 'Gerir os meus eventos';
 
   @override
+  String get businessEventsSearchHint => 'Buscar por nome ou data';
+
+  @override
   String get businessEventsEmpty => 'Ainda não criaste nenhum evento.';
 
   @override
@@ -25051,6 +25054,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get businessEventsTitle => 'Gerenciar meus eventos';
+
+  @override
+  String get businessEventsSearchHint => 'Buscar por nome ou data';
 
   @override
   String get businessEventsEmpty => 'Você ainda não criou nenhum evento.';

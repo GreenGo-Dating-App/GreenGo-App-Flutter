@@ -12486,6 +12486,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get businessEventsTitle => 'Gérer mes événements';
 
   @override
+  String get businessEventsSearchHint => 'Rechercher par nom ou date';
+
+  @override
   String get businessEventsEmpty =>
       'Vous n\'avez pas encore créé d\'événement.';
 
