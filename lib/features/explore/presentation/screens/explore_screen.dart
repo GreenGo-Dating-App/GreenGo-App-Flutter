@@ -377,23 +377,37 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
   }
 
-  /// Loads "Happening today": community/user-created events occurring TODAY
-  /// FIRST (the `events` collection via [EventsRemoteDataSource]), then the
-  /// LIVE EVENTS OF THE DAY (Ticketmaster-sourced `external_events` dated today),
-  /// then nearby experiences as fill so the row is never empty. The "Featured
-  /// events" / "Featured attractions" carousels are loaded separately.
+  /// Collapse recurring-series occurrences to a SINGLE instance per non-null
+  /// `seriesId` (the first one seen, preserving the incoming order); standalone
+  /// events pass through unchanged. Used so a recurring event shows once, not as
+  /// a run of identical cards.
+  List<Event> _dedupeSeries(List<Event> events) {
+    final seenSeries = <String>{};
+    final result = <Event>[];
+    for (final e in events) {
+      final sid = e.seriesId;
+      if (sid != null && sid.isNotEmpty && !seenSeries.add(sid)) {
+        continue; // already have an instance of this series
+      }
+      result.add(e);
+    }
+    return result;
+  }
+
+  /// Loads "Happening TODAY": community/user-created events occurring today
+  /// FIRST, then the LIVE EVENTS OF THE DAY (Ticketmaster `external_events` dated
+  /// today) that don't duplicate a community event. NEVER shows past events, at
+  /// most 3 cards, one instance per recurring series.
   Future<void> _loadHappenings() async {
     final now = DateTime.now();
     final todayEnd = DateTime(now.year, now.month, now.day, 23, 59, 59);
     final todayStr = DateFormat('yyyy-MM-dd').format(now);
 
-    // 1) Community events happening TODAY (started on/before today's end and not
-    //    yet finished — i.e. overlapping the current day), near the user.
+    // 1) Community events overlapping TODAY only: not yet finished AND not
+    //    starting on a future day. One instance per recurring series.
     List<Event> community = const <Event>[];
     if (_userLat != null && _userLng != null) {
       try {
-        // Instantiated directly (no GetIt) — safe from this non-DI screen, the
-        // same way the profile read uses FirebaseFirestore.instance.
         final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
         community = await eventsDs.getNearbyCommunityEvents(
           lat: _userLat!,
@@ -404,15 +418,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
         community = const <Event>[];
       }
     }
-    // getNearbyCommunityEvents already drops finished events; keep only those
-    // that have started or start today (exclude future days).
-    final communityItems = community
-        .where((e) => !e.startDate.isAfter(todayEnd))
-        .map((e) => _Happening.community(e))
-        .toList();
+    final communityToday = _dedupeSeries(
+      community
+          .where((e) => e.endDate.isAfter(now) && !e.startDate.isAfter(todayEnd))
+          .toList(),
+    );
+    final communityItems =
+        communityToday.map((e) => _Happening.community(e)).toList();
+    final communityTitles =
+        communityToday.map((e) => e.title.toLowerCase().trim()).toSet();
 
-    // 2) LIVE EVENTS OF THE DAY — Ticketmaster-sourced external events whose
-    //    date is today. These are the "live events" the user expects to see.
+    // 2) LIVE EVENTS OF THE DAY — Ticketmaster external events dated today that
+    //    are NOT already present as a community event (by title).
     List<ExternalEvent> live = const <ExternalEvent>[];
     final ds = ExternalEventsDataSource(firestore: _firestore);
     try {
@@ -424,42 +441,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
           limit: 60,
         );
       } else {
-        live = await ds.getExperiencesSorted(
-            source: 'ticketmaster', sort: 'date');
+        live =
+            await ds.getExperiencesSorted(source: 'ticketmaster', sort: 'date');
       }
     } catch (_) {
       live = const <ExternalEvent>[];
     }
     final liveTodayItems = live
         .where((e) => e.startDate == todayStr)
+        .where((e) => !communityTitles.contains(e.title.toLowerCase().trim()))
         .map((e) => _Happening.external(e))
         .where(_hasImage)
         .toList();
 
-    // 3) Fill — nearby experiences (Viator) so the row still has content on a
-    //    quiet day. Appear only after today's community + live events.
-    List<_Happening> fillItems = const <_Happening>[];
-    try {
-      final List<ExternalEvent> items;
-      if (_userLat != null && _userLng != null) {
-        items = await ds.getNearbyExperiences(
-          source: 'viator',
-          userLat: _userLat!,
-          userLng: _userLng!,
-          limit: 40,
-        );
-      } else {
-        items = await ds.getExperiencesSorted(source: 'viator', sort: 'rating');
-      }
-      fillItems =
-          items.map((e) => _Happening.external(e)).where(_hasImage).toList();
-    } catch (_) {
-      fillItems = const <_Happening>[];
-    }
-
-    // Community events (today) FIRST, then live events of the day, then fill.
-    final rows =
-        [...communityItems, ...liveTodayItems, ...fillItems].take(8).toList();
+    // Community events (today) FIRST, then live events of the day. Max 3.
+    final rows = [...communityItems, ...liveTodayItems].take(3).toList();
 
     if (mounted) {
       setState(() {
@@ -660,9 +656,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
           lng: _userLng!,
           limit: 40,
         );
-        community = events
+        community = _dedupeSeries(events
             .where((e) => _withinFeaturedRadius(_Happening.community(e)))
-            .toList();
+            .toList());
       } catch (_) {
         community = const <Event>[];
       }
