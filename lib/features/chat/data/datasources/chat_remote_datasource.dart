@@ -387,9 +387,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         .collection('messages')
         .orderBy('sentAt', descending: true);
 
-    if (limit != null) {
-      query = query.limit(limit);
-    }
+    // Never unbounded (G0): default to a bounded window even when the caller
+    // passes no limit, so the whole message history can't stream on every change.
+    query = query.limit(limit ?? 30);
 
     return query.snapshots().map((snapshot) {
       var messages = snapshot.docs
@@ -673,6 +673,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           Filter('userId2', isEqualTo: userId),
         ))
         .orderBy('lastMessageAt', descending: true)
+        // Bounded (G0): the most-recent conversations. Older ones would load via
+        // pagination — never stream the user's entire conversation history.
+        .limit(50)
         .snapshots()
         .asyncMap((snapshot) async {
       final conversations = <ConversationModel>[];

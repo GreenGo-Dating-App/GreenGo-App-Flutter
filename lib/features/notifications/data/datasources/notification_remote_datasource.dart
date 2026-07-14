@@ -81,6 +81,11 @@ class NotificationRemoteDataSourceImpl
     return firestore
         .collection('notifications')
         .where('userId', isEqualTo: userId)
+        // Bounded reads (G0): cap the SERVER query so it bills at most `cap`
+        // docs, not every notification the user ever had. Order within the cap
+        // is arbitrary (no composite index) — the client re-sorts newest-first
+        // below, which is fine for a notifications badge/list.
+        .limit(cap)
         .snapshots()
         .map((snapshot) {
       var items = snapshot.docs.map(NotificationModel.fromFirestore).toList();
