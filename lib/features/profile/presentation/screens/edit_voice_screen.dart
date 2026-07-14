@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart';
@@ -36,6 +37,12 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
   final AudioRecorder _recorder = AudioRecorder();
   final AudioPlayer _audioPlayer = AudioPlayer();
 
+  // Audio-player stream subscriptions — cancelled in dispose() so they never
+  // fire setState() into a disposed screen (G0 listener-lifecycle hygiene).
+  StreamSubscription<Duration>? _posSub;
+  StreamSubscription<Duration>? _durSub;
+  StreamSubscription<void>? _completeSub;
+
   bool _isRecording = false;
   bool _isPlaying = false;
   bool _hasRecording = false;
@@ -68,7 +75,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
       CurvedAnimation(parent: _pulseController, curve: Curves.easeInOut),
     );
 
-    _audioPlayer.onPositionChanged.listen((position) {
+    _posSub = _audioPlayer.onPositionChanged.listen((position) {
       if (mounted) {
         setState(() {
           _playbackPosition = position;
@@ -76,7 +83,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
       }
     });
 
-    _audioPlayer.onDurationChanged.listen((duration) {
+    _durSub = _audioPlayer.onDurationChanged.listen((duration) {
       if (mounted) {
         setState(() {
           _playbackDuration = duration;
@@ -84,7 +91,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
       }
     });
 
-    _audioPlayer.onPlayerComplete.listen((_) {
+    _completeSub = _audioPlayer.onPlayerComplete.listen((_) {
       if (mounted) {
         setState(() {
           _isPlaying = false;
@@ -96,6 +103,9 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
 
   @override
   void dispose() {
+    _posSub?.cancel();
+    _durSub?.cancel();
+    _completeSub?.cancel();
     _recorder.dispose();
     _audioPlayer.dispose();
     _pulseController.dispose();

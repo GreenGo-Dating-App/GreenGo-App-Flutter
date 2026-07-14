@@ -3,7 +3,7 @@
 **Every field to enter in App Store Connect, plus the guidelines that block approval.**
 Bundle ID: `com.greengochat.greengochatapp` · Version `3.0.0` · Build `101` · Date: 2026-07-13
 
-> Read [`../../APPLE_APPROVAL_PLAN_v3.0.0.md`](../../APPLE_APPROVAL_PLAN_v3.0.0.md) FIRST — it covers the **Guideline 4.3(b) dating-spam** repositioning (Explore-first build, no swipe deck). This doc is the concrete listing + compliance checklist that sits on top of it.
+> Read [`../../APPLE_APPROVAL_PLAN_v3.0.0.md`](../../../APPLE_APPROVAL_PLAN_v3.0.0.md) FIRST — it covers the **Guideline 4.3(b) dating-spam** repositioning (Explore-first build, no swipe deck). This doc is the concrete listing + compliance checklist that sits on top of it.
 
 ---
 

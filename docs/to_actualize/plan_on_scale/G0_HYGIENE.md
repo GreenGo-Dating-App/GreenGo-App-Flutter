@@ -39,7 +39,7 @@ G0 directly defends the four **hygiene** rows of the master SLO table (§0 of th
 
 ## 3. Prerequisites
 
-**None.** This is the base gate. It has no upstream dependency and gates all others. `firebase_performance: ^0.10.0` is already in [`pubspec.yaml`](../../pubspec.yaml) (line 38) and `firebase_crashlytics` is present, so no new dependency is required for Task 4.
+**None.** This is the base gate. It has no upstream dependency and gates all others. `firebase_performance: ^0.10.0` is already in [`pubspec.yaml`](../../../pubspec.yaml) (line 38) and `firebase_crashlytics` is present, so no new dependency is required for Task 4.
 
 ---
 
@@ -47,11 +47,11 @@ G0 directly defends the four **hygiene** rows of the master SLO table (§0 of th
 
 A full scan of `lib/` was done on 2026-07-13. Summary before the task list, so effort is calibrated to reality:
 
-- **BLoC layer is disciplined.** Every stream-owning BLoC inspected stores its `StreamSubscription` in a field and cancels it in `close()`: `MatchesBloc` ([`lib/features/discovery/presentation/bloc/matches_bloc.dart`](../../lib/features/discovery/presentation/bloc/matches_bloc.dart) lines 36–37, 287–290), `CoinBloc` ([`lib/features/coins/presentation/bloc/coin_bloc.dart`](../../lib/features/coins/presentation/bloc/coin_bloc.dart) lines 104, 558–559), `GlobeBloc` ([`lib/features/globe_explore/presentation/bloc/globe_bloc.dart`](../../lib/features/globe_explore/presentation/bloc/globe_bloc.dart) lines 28–29, 194–196), `CommunitiesBloc` ([`lib/features/communities/presentation/bloc/communities_bloc.dart`](../../lib/features/communities/presentation/bloc/communities_bloc.dart) lines 42, 346–347). **This is the house style — match it everywhere.**
+- **BLoC layer is disciplined.** Every stream-owning BLoC inspected stores its `StreamSubscription` in a field and cancels it in `close()`: `MatchesBloc` ([`lib/features/discovery/presentation/bloc/matches_bloc.dart`](../../../lib/features/discovery/presentation/bloc/matches_bloc.dart) lines 36–37, 287–290), `CoinBloc` ([`lib/features/coins/presentation/bloc/coin_bloc.dart`](../../../lib/features/coins/presentation/bloc/coin_bloc.dart) lines 104, 558–559), `GlobeBloc` ([`lib/features/globe_explore/presentation/bloc/globe_bloc.dart`](../../../lib/features/globe_explore/presentation/bloc/globe_bloc.dart) lines 28–29, 194–196), `CommunitiesBloc` ([`lib/features/communities/presentation/bloc/communities_bloc.dart`](../../../lib/features/communities/presentation/bloc/communities_bloc.dart) lines 42, 346–347). **This is the house style — match it everywhere.**
 - **The leaks are in `StatefulWidget` State classes, not BLoCs.** Confirmed un-cancelled subscriptions (see Task 1).
 - **`.limit()` is used broadly** (187 call sites) but **not universally** — several list/stream queries are unbounded (see Task 2).
-- **Firebase Performance is half-built and dead.** A complete `PerformanceMonitoringService` exists at [`lib/features/analytics/data/services/performance_monitoring_service.dart`](../../lib/features/analytics/data/services/performance_monitoring_service.dart) but is **never registered** in [`lib/core/di/injection_container.dart`](../../lib/core/di/injection_container.dart) and **never called** from any feature. `lib/main.dart` touches `FirebasePerformance` only to *disable* collection in emulator mode (lines 132–133). Task 4 wires the existing service in; it does not write a new one.
-- **No PR template, no GitHub Actions.** There is no `.github/` directory. CI is Codemagic ([`codemagic.yaml`](../../codemagic.yaml)) with `ios-testflight`, `web-release`, `android-release` workflows; its only `flutter analyze` step runs with `ignore_failure: true` (line 41) so it never blocks. A [`.pre-commit-config.yaml`](../../.pre-commit-config.yaml) exists (flutter-analyze, dart-fix, detect-secrets) — the natural host for Task 3's static guard.
+- **Firebase Performance is half-built and dead.** A complete `PerformanceMonitoringService` exists at [`lib/features/analytics/data/services/performance_monitoring_service.dart`](../../../lib/features/analytics/data/services/performance_monitoring_service.dart) but is **never registered** in [`lib/core/di/injection_container.dart`](../../../lib/core/di/injection_container.dart) and **never called** from any feature. `lib/main.dart` touches `FirebasePerformance` only to *disable* collection in emulator mode (lines 132–133). Task 4 wires the existing service in; it does not write a new one.
+- **No PR template, no GitHub Actions.** There is no `.github/` directory. CI is Codemagic ([`codemagic.yaml`](../../../codemagic.yaml)) with `ios-testflight`, `web-release`, `android-release` workflows; its only `flutter analyze` step runs with `ignore_failure: true` (line 41) so it never blocks. A [`.pre-commit-config.yaml`](../../../.pre-commit-config.yaml) exists (flutter-analyze, dart-fix, detect-secrets) — the natural host for Task 3's static guard.
 
 ---
 
@@ -64,14 +64,14 @@ A full scan of `lib/` was done on 2026-07-13. Summary before the task list, so e
 **Concrete steps (real files):**
 
 1. **Fix the confirmed audio-stream leaks.** These capture no subscription and cancel nothing:
-   - [`lib/features/profile/presentation/screens/edit_voice_screen.dart`](../../lib/features/profile/presentation/screens/edit_voice_screen.dart) lines 71, 79, 87 — `_audioPlayer.onPositionChanged.listen(...)`, `onDurationChanged.listen(...)`, `onPlayerComplete.listen(...)` are fire-and-forget; `dispose()` (line 98) disposes the player but never cancels these three subs.
-   - [`lib/features/discovery/presentation/screens/profile_detail_screen.dart`](../../lib/features/discovery/presentation/screens/profile_detail_screen.dart) lines 90, 93, 96 — same pattern, same omission at `dispose()` (line 107).
+   - [`lib/features/profile/presentation/screens/edit_voice_screen.dart`](../../../lib/features/profile/presentation/screens/edit_voice_screen.dart) lines 71, 79, 87 — `_audioPlayer.onPositionChanged.listen(...)`, `onDurationChanged.listen(...)`, `onPlayerComplete.listen(...)` are fire-and-forget; `dispose()` (line 98) disposes the player but never cancels these three subs.
+   - [`lib/features/discovery/presentation/screens/profile_detail_screen.dart`](../../../lib/features/discovery/presentation/screens/profile_detail_screen.dart) lines 90, 93, 96 — same pattern, same omission at `dispose()` (line 107).
    - **Fix:** store each in a `StreamSubscription? _posSub` / `_durSub` / `_completeSub` field and `?.cancel()` them in `dispose()` (pattern §6.1).
 
-2. **Reduce the listener count on the heaviest screen.** [`lib/features/main/presentation/screens/main_navigation_screen.dart`](../../lib/features/main/presentation/screens/main_navigation_screen.dart) holds **5 concurrent Firestore snapshot listeners** (`_matchCountSub`, `_messageCountSub`, `_groupCountSub`, `_levelUpSub`, `_achievementSub`, lines 157–163; each a `.snapshots().listen(...)` at lines 1100, 1149, 1203, 1230, 1277). They *are* cancelled in `dispose()` (lines 1296–1301) — good — but 5 > the ≤3 SLO. **Fix:** collapse the three badge-count listeners (match/message/group) into a single aggregate counters doc per user (one listener), or move them behind the BLoC that already owns that data. Target ≤ 3.
-   - Also review [`lib/features/profile/presentation/screens/usage_stats_screen.dart`](../../lib/features/profile/presentation/screens/usage_stats_screen.dart) (3 listeners, lines 45–47 — at the SLO ceiling, cancelled correctly at 62–65; acceptable but do not add a 4th).
+2. **Reduce the listener count on the heaviest screen.** [`lib/features/main/presentation/screens/main_navigation_screen.dart`](../../../lib/features/main/presentation/screens/main_navigation_screen.dart) holds **5 concurrent Firestore snapshot listeners** (`_matchCountSub`, `_messageCountSub`, `_groupCountSub`, `_levelUpSub`, `_achievementSub`, lines 157–163; each a `.snapshots().listen(...)` at lines 1100, 1149, 1203, 1230, 1277). They *are* cancelled in `dispose()` (lines 1296–1301) — good — but 5 > the ≤3 SLO. **Fix:** collapse the three badge-count listeners (match/message/group) into a single aggregate counters doc per user (one listener), or move them behind the BLoC that already owns that data. Target ≤ 3.
+   - Also review [`lib/features/profile/presentation/screens/usage_stats_screen.dart`](../../../lib/features/profile/presentation/screens/usage_stats_screen.dart) (3 listeners, lines 45–47 — at the SLO ceiling, cancelled correctly at 62–65; acceptable but do not add a 4th).
 
-3. **Audit the short-lived upload listeners.** `uploadTask.snapshotEvents.listen(...)` in [`lib/features/chat/presentation/screens/chat_screen.dart`](../../lib/features/chat/presentation/screens/chat_screen.dart) (lines 959, 1122) is bounded (completes when the upload finishes) — low risk, but capture the sub and cancel in `dispose()` for safety so an in-flight upload on a closed screen can't call back.
+3. **Audit the short-lived upload listeners.** `uploadTask.snapshotEvents.listen(...)` in [`lib/features/chat/presentation/screens/chat_screen.dart`](../../../lib/features/chat/presentation/screens/chat_screen.dart) (lines 959, 1122) is bounded (completes when the upload finishes) — low risk, but capture the sub and cancel in `dispose()` for safety so an in-flight upload on a closed screen can't call back.
 
 4. **Establish the rule in code review** (feeds Task 3): *one BLoC/State → owns its subscriptions → cancels in `close()`/`dispose()`; no raw `.snapshots()` in a `StatefulWidget` unless the sub is a field.*
 
@@ -92,14 +92,14 @@ A full scan of `lib/` was done on 2026-07-13. Summary before the task list, so e
 
 | File · line | Query | Problem | Fix |
 |---|---|---|---|
-| [`chat_remote_datasource.dart`](../../lib/features/chat/data/datasources/chat_remote_datasource.dart) 382–394 (`getMessagesStream`) | `messages.orderBy('sentAt', desc)` with `if (limit != null) query = query.limit(limit)` | `limit` is `int?`; when a caller passes `null` the `.snapshots()` at 394 is **unbounded** — the entire message history streams on every new message | Make `limit` non-nullable with a default of 30; paginate older pages with `startAfterDocument` (pattern §6.2) |
-| [`chat_remote_datasource.dart`](../../lib/features/chat/data/datasources/chat_remote_datasource.dart) 667–676 (`getConversationsStream`) | `conversations.where(or userId1/userId2).orderBy('lastMessageAt', desc).snapshots()` | **No `.limit()` at all** — streams every conversation the user has ever had | Add `.limit(30)`; load older conversations via infinite scroll |
-| [`notification_remote_datasource.dart`](../../lib/features/notifications/data/datasources/notification_remote_datasource.dart) 81–99 | `notifications.where('userId').snapshots()` then `sublist(0, cap)` **client-side** (line 94) | Server query is unbounded — reads and **bills all N docs**, caps to 100 only after download | Add server `.limit(cap)` to the query. (Comment at 74–78 avoids a composite index by sorting client-side; a `.limit()` on the single-field `where` is still valid and bounds reads — order within the cap is acceptable for a notifications badge, or add the composite index if strict ordering matters) |
-| [`events_remote_datasource.dart`](../../lib/features/events/data/datasources/events_remote_datasource.dart) 707–718 | attendee/RSVP `.snapshots()` and `.orderBy('rsvpDate').get()` with no limit | Unbounded for a popular event | Add `.limit()` + pagination on the "Going" list |
-| [`events_remote_datasource.dart`](../../lib/features/events/data/datasources/events_remote_datasource.dart) 837–838 | `.orderBy('startDate').get()` no limit | Unbounded events fetch | Add `.limit(100)` (matches the pattern already used at line 246) |
-| [`coin_remote_datasource.dart`](../../lib/features/coins/data/datasources/coin_remote_datasource.dart) 420–421, 891–904 | coin-claim / ledger `.orderBy(...).get()` no limit | Unbounded ledger reads grow forever per user | Add `.limit()` + pagination on ledger history |
+| [`chat_remote_datasource.dart`](../../../lib/features/chat/data/datasources/chat_remote_datasource.dart) 382–394 (`getMessagesStream`) | `messages.orderBy('sentAt', desc)` with `if (limit != null) query = query.limit(limit)` | `limit` is `int?`; when a caller passes `null` the `.snapshots()` at 394 is **unbounded** — the entire message history streams on every new message | Make `limit` non-nullable with a default of 30; paginate older pages with `startAfterDocument` (pattern §6.2) |
+| [`chat_remote_datasource.dart`](../../../lib/features/chat/data/datasources/chat_remote_datasource.dart) 667–676 (`getConversationsStream`) | `conversations.where(or userId1/userId2).orderBy('lastMessageAt', desc).snapshots()` | **No `.limit()` at all** — streams every conversation the user has ever had | Add `.limit(30)`; load older conversations via infinite scroll |
+| [`notification_remote_datasource.dart`](../../../lib/features/notifications/data/datasources/notification_remote_datasource.dart) 81–99 | `notifications.where('userId').snapshots()` then `sublist(0, cap)` **client-side** (line 94) | Server query is unbounded — reads and **bills all N docs**, caps to 100 only after download | Add server `.limit(cap)` to the query. (Comment at 74–78 avoids a composite index by sorting client-side; a `.limit()` on the single-field `where` is still valid and bounds reads — order within the cap is acceptable for a notifications badge, or add the composite index if strict ordering matters) |
+| [`events_remote_datasource.dart`](../../../lib/features/events/data/datasources/events_remote_datasource.dart) 707–718 | attendee/RSVP `.snapshots()` and `.orderBy('rsvpDate').get()` with no limit | Unbounded for a popular event | Add `.limit()` + pagination on the "Going" list |
+| [`events_remote_datasource.dart`](../../../lib/features/events/data/datasources/events_remote_datasource.dart) 837–838 | `.orderBy('startDate').get()` no limit | Unbounded events fetch | Add `.limit(100)` (matches the pattern already used at line 246) |
+| [`coin_remote_datasource.dart`](../../../lib/features/coins/data/datasources/coin_remote_datasource.dart) 420–421, 891–904 | coin-claim / ledger `.orderBy(...).get()` no limit | Unbounded ledger reads grow forever per user | Add `.limit()` + pagination on ledger history |
 
-**General step:** grep the codebase for the anti-pattern and triage each hit — `\.snapshots\(\)` and `\.get\(\)` on a `collection(...)`/`where(...)`/`orderBy(...)` chain with no `.limit(` on the same statement. Single-document reads (`.doc(id).get()` / `.doc(id).snapshots()`) are exempt. Prefer a shared paginated-query helper in [`lib/core/utils/firestore_helpers.dart`](../../lib/core/utils/firestore_helpers.dart) (already exists) so callers can't forget.
+**General step:** grep the codebase for the anti-pattern and triage each hit — `\.snapshots\(\)` and `\.get\(\)` on a `collection(...)`/`where(...)`/`orderBy(...)` chain with no `.limit(` on the same statement. Single-document reads (`.doc(id).get()` / `.doc(id).snapshots()`) are exempt. Prefer a shared paginated-query helper in [`lib/core/utils/firestore_helpers.dart`](../../../lib/core/utils/firestore_helpers.dart) (already exists) so callers can't forget.
 
 **Acceptance criteria:**
 - No collection query returns more than one page (default 30, or the screen's page size) from the server.
@@ -118,9 +118,9 @@ A full scan of `lib/` was done on 2026-07-13. Summary before the task list, so e
 
 1. **Create `.github/PULL_REQUEST_TEMPLATE.md`** (no `.github/` dir exists today) containing the checklist block in §6.4. GitHub renders it into every PR description automatically.
 
-2. **Add a static guard to [`.pre-commit-config.yaml`](../../.pre-commit-config.yaml)** as a new `repo: local` hook (that file already hosts `flutter-analyze`, `dart-fix`, `detect-secrets`). A grep-based hook is enough for G0 — it fails commit on an obvious unbounded list query or a raw counter increment outside the sharded helper. See §6.5.
+2. **Add a static guard to [`.pre-commit-config.yaml`](../../../.pre-commit-config.yaml)** as a new `repo: local` hook (that file already hosts `flutter-analyze`, `dart-fix`, `detect-secrets`). A grep-based hook is enough for G0 — it fails commit on an obvious unbounded list query or a raw counter increment outside the sharded helper. See §6.5.
 
-3. **Add a blocking CI job.** The only CI today is [`codemagic.yaml`](../../codemagic.yaml), where `flutter analyze` runs with `ignore_failure: true` (line 41) — it never blocks. Add a small `.github/workflows/pr-guard.yml` (GitHub Actions) that runs `flutter analyze --fatal-warnings`, `flutter test`, and the grep guard script, and is a **required check** on `main`. Do **not** flip Codemagic's analyze to blocking — Codemagic is the release pipeline; keep the fast correctness gate on PRs.
+3. **Add a blocking CI job.** The only CI today is [`codemagic.yaml`](../../../codemagic.yaml), where `flutter analyze` runs with `ignore_failure: true` (line 41) — it never blocks. Add a small `.github/workflows/pr-guard.yml` (GitHub Actions) that runs `flutter analyze --fatal-warnings`, `flutter test`, and the grep guard script, and is a **required check** on `main`. Do **not** flip Codemagic's analyze to blocking — Codemagic is the release pipeline; keep the fast correctness gate on PRs.
 
 4. **Train reviewers:** link this file from the PR template so the checklist has a rationale.
 
@@ -139,13 +139,13 @@ A full scan of `lib/` was done on 2026-07-13. Summary before the task list, so e
 
 **Concrete steps (real files):**
 
-1. **Register the service in DI.** Add to [`lib/core/di/injection_container.dart`](../../lib/core/di/injection_container.dart) (registration style there is `sl.registerLazySingleton(...)`, e.g. line 230):
+1. **Register the service in DI.** Add to [`lib/core/di/injection_container.dart`](../../../lib/core/di/injection_container.dart) (registration style there is `sl.registerLazySingleton(...)`, e.g. line 230):
    ```dart
    sl.registerLazySingleton<PerformanceMonitoringService>(
      () => PerformanceMonitoringService(),
    );
    ```
-2. **Initialize once at startup.** In [`lib/main.dart`](../../lib/main.dart), after Firebase init (line ~95) and outside the emulator branch (lines 129–133, which correctly *disable* collection under the emulator), call `await sl<PerformanceMonitoringService>().initialize();`. Guard it with the same `!kDebugMode || !AppConfig.useLocalEmulators` condition so emulator runs stay off.
+2. **Initialize once at startup.** In [`lib/main.dart`](../../../lib/main.dart), after Firebase init (line ~95) and outside the emulator branch (lines 129–133, which correctly *disable* collection under the emulator), call `await sl<PerformanceMonitoringService>().initialize();`. Guard it with the same `!kDebugMode || !AppConfig.useLocalEmulators` condition so emulator runs stay off.
 3. **Instrument the four critical flows** using the already-built `trackOperation` / `startTrace` / `stopTrace` API (`performance_monitoring_service.dart` lines 36–122):
    - `message_send` — wrap the send call in `chat_remote_datasource.dart`.
    - `feed_load` — wrap the discovery/network first-page load.
@@ -320,7 +320,7 @@ exit $status
 G0 is low-risk by construction — it removes bugs and adds visibility; it changes no data model and adds no scale-defense mechanism, so there is nothing to feature-flag or canary here (unlike G1+). Ship as small PRs, each with its own before/after capture:
 
 - **Test coverage expectation.** Each listener-lifecycle fix (Task 1) ships with a widget/bloc test that asserts the subscription is cancelled on `dispose`/`close` (e.g. `bloc.close()` completes and the underlying controller has no listeners). Each pagination change (Task 2) ships with a test that the first page renders and "load more" appends without duplicates.
-- **No behavioral flags needed**, with one exception: if the `main_navigation` counter-merge (Task 1 step 2) changes how badge counts are computed, guard the new aggregate-doc read behind a trivial flag in [`lib/core/services/feature_flags_service.dart`](../../lib/core/services/feature_flags_service.dart) so it can be reverted without a redeploy.
+- **No behavioral flags needed**, with one exception: if the `main_navigation` counter-merge (Task 1 step 2) changes how badge counts are computed, guard the new aggregate-doc read behind a trivial flag in [`lib/core/services/feature_flags_service.dart`](../../../lib/core/services/feature_flags_service.dart) so it can be reverted without a redeploy.
 - **Perf init (Task 4)** stays disabled in debug/emulator via the existing guard in `main.dart` — verify no debug run reports traces.
 
 ---
@@ -383,5 +383,5 @@ G0 is **done** when the four exit conditions in §1 hold and §8 verification pa
 - Parent plan / gate model / master SLO table: [`./README.md`](./README.md) (see §0 SLOs, §1 gates, Phases 3.1 / 4.1 / 6.1, Appendix A patterns)
 - Next gate: [`./G1_OBSERVE_THROTTLE.md`](./G1_OBSERVE_THROTTLE.md) — Observe & throttle (~100K)
 - Later gates: [`./G2_DEHOTSPOT.md`](./G2_DEHOTSPOT.md) (~1M), [`./G3_STRUCTURAL_SCALE.md`](./G3_STRUCTURAL_SCALE.md) (~3M), [`./G4_DISTRIBUTED.md`](./G4_DISTRIBUTED.md) (~10M+)
-- Migration program (G3+ trigger): [`../migration/`](../migration/) (see `08-observability-slo.md`, `01-current-state.md`)
+- Migration program (G3+ trigger): [`../migration/`](../../migration/) (see `08-observability-slo.md`, `01-current-state.md`)
 - Key code anchors: `lib/features/analytics/data/services/performance_monitoring_service.dart` · `lib/core/di/injection_container.dart` · `lib/main.dart` · `lib/core/utils/firestore_helpers.dart` · `codemagic.yaml` · `.pre-commit-config.yaml`

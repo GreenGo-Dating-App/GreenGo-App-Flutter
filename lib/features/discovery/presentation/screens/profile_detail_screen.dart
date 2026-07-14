@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -62,6 +64,10 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   bool _isPlayingVoice = false;
   Duration _voiceDuration = Duration.zero;
   Duration _voicePosition = Duration.zero;
+  // Audio-player stream subscriptions — cancelled in dispose() (G0 hygiene).
+  StreamSubscription<Duration>? _voiceDurSub;
+  StreamSubscription<Duration>? _voicePosSub;
+  StreamSubscription<void>? _voiceCompleteSub;
 
   @override
   void initState() {
@@ -87,13 +93,13 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   }
 
   void _setupVoicePlayer() {
-    _audioPlayer.onDurationChanged.listen((duration) {
+    _voiceDurSub = _audioPlayer.onDurationChanged.listen((duration) {
       if (mounted) setState(() => _voiceDuration = duration);
     });
-    _audioPlayer.onPositionChanged.listen((position) {
+    _voicePosSub = _audioPlayer.onPositionChanged.listen((position) {
       if (mounted) setState(() => _voicePosition = position);
     });
-    _audioPlayer.onPlayerComplete.listen((_) {
+    _voiceCompleteSub = _audioPlayer.onPlayerComplete.listen((_) {
       if (mounted) {
         setState(() {
           _isPlayingVoice = false;
@@ -105,6 +111,9 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
   @override
   void dispose() {
+    _voiceDurSub?.cancel();
+    _voicePosSub?.cancel();
+    _voiceCompleteSub?.cancel();
     _pageController.dispose();
     _audioPlayer.dispose();
     super.dispose();
