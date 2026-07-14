@@ -6621,6 +6621,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get couponRedeemTitle => 'Resgatar código de cupom';
 
   @override
+  String get referralCodeTitle => 'Tem um codigo de indicacao?';
+
+  @override
+  String get referralCodeLabel => 'Codigo de indicacao';
+
+  @override
+  String get referralCodeHint => 'Digite o codigo de um amigo';
+
+  @override
   String get couponApplyButton => 'Aplicar';
 
   @override
@@ -19311,6 +19320,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get couponRedeemTitle => 'Resgatar código de cupom';
+
+  @override
+  String get referralCodeTitle => 'Tem um codigo de indicacao?';
+
+  @override
+  String get referralCodeLabel => 'Codigo de indicacao';
+
+  @override
+  String get referralCodeHint => 'Digite o codigo de um amigo';
 
   @override
   String get couponApplyButton => 'Aplicar';

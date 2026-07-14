@@ -6669,6 +6669,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get couponRedeemTitle => 'Utiliser un code promo';
 
   @override
+  String get referralCodeTitle => 'Vous avez un code de parrainage?';
+
+  @override
+  String get referralCodeLabel => 'Code de parrainage';
+
+  @override
+  String get referralCodeHint => 'Entrez le code d un ami';
+
+  @override
   String get couponApplyButton => 'Appliquer';
 
   @override

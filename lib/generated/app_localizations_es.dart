@@ -6645,6 +6645,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get couponRedeemTitle => 'Canjear código de cupón';
 
   @override
+  String get referralCodeTitle => 'Tienes un codigo de referido?';
+
+  @override
+  String get referralCodeLabel => 'Codigo de referido';
+
+  @override
+  String get referralCodeHint => 'Introduce el codigo de un amigo';
+
+  @override
   String get couponApplyButton => 'Aplicar';
 
   @override

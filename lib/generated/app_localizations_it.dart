@@ -6640,6 +6640,15 @@ class AppLocalizationsIt extends AppLocalizations {
   String get couponRedeemTitle => 'Riscatta codice coupon';
 
   @override
+  String get referralCodeTitle => 'Hai un codice di invito?';
+
+  @override
+  String get referralCodeLabel => 'Codice di invito';
+
+  @override
+  String get referralCodeHint => 'Inserisci il codice di un amico';
+
+  @override
   String get couponApplyButton => 'Applica';
 
   @override

@@ -11826,6 +11826,24 @@ abstract class AppLocalizations {
   /// **'Redeem Coupon Code'**
   String get couponRedeemTitle;
 
+  /// No description provided for @referralCodeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Have a referral code?'**
+  String get referralCodeTitle;
+
+  /// No description provided for @referralCodeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Referral code'**
+  String get referralCodeLabel;
+
+  /// No description provided for @referralCodeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a friend s code'**
+  String get referralCodeHint;
+
   /// No description provided for @couponApplyButton.
   ///
   /// In en, this message translates to:

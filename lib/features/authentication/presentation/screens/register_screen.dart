@@ -9,6 +9,7 @@ import '../../../../core/utils/validators.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/data/datasources/pending_signup_coupon.dart';
+import '../../../referral/data/pending_signup_referral.dart';
 import '../../../profile/presentation/screens/onboarding_screen.dart';
 import '../bloc/auth_bloc.dart';
 import '../bloc/auth_event.dart';
@@ -31,6 +32,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
   final _couponController = TextEditingController();
+  final _referralController = TextEditingController();
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
   int _passwordStrength = 0;
@@ -58,6 +60,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     _passwordController.dispose();
     _confirmPasswordController.dispose();
     _couponController.dispose();
+    _referralController.dispose();
     super.dispose();
   }
 
@@ -144,6 +147,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
     final couponCode = _couponController.text.trim();
     if (couponCode.isNotEmpty && _couponValid != false) {
       await PendingSignupCoupon.setPending(couponCode);
+    }
+    // Persist the optional referral code — redeemed after onboarding by the
+    // secure `redeemReferral` Cloud Function. Never blocks signup.
+    final referralCode = _referralController.text.trim();
+    if (referralCode.isNotEmpty) {
+      await PendingSignupReferral.setPending(referralCode);
     }
 
     if (!mounted) return;
@@ -343,6 +352,27 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           _thirdPartyDataAccepted = value;
                         });
                       },
+                      enabled: !isLoading,
+                    ),
+
+                    const SizedBox(height: 24),
+
+                    // Referral code (optional) — the code of the friend who
+                    // invited you. Rewards are granted after onboarding.
+                    Text(
+                      l10n.referralCodeTitle,
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                            color: AppColors.richGold,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                    const SizedBox(height: 12),
+                    AuthTextField(
+                      controller: _referralController,
+                      label: l10n.referralCodeLabel,
+                      hint: l10n.referralCodeHint,
+                      textCapitalization: TextCapitalization.characters,
+                      prefixIcon: Icons.card_giftcard,
                       enabled: !isLoading,
                     ),
 
