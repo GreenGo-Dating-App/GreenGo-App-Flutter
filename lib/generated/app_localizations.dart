@@ -22769,6 +22769,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No communities found'**
   String get universalSearchNoCommunities;
+
+  /// No description provided for @communitiesSearchTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Search tips'**
+  String get communitiesSearchTips;
+
+  /// No description provided for @communitiesAddTip.
+  ///
+  /// In en, this message translates to:
+  /// **'Add tip'**
+  String get communitiesAddTip;
+
+  /// No description provided for @communitiesTipHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a helpful tip…'**
+  String get communitiesTipHint;
 }
 
 class _AppLocalizationsDelegate

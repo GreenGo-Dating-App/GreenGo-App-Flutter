@@ -12912,6 +12912,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get universalSearchNoCommunities => 'Nenhuma comunidade encontrada';
+
+  @override
+  String get communitiesSearchTips => 'Buscar dicas';
+
+  @override
+  String get communitiesAddTip => 'Adicionar dica';
+
+  @override
+  String get communitiesTipHint => 'Compartilhe uma dica útil…';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -25804,4 +25813,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get universalSearchNoCommunities => 'Nenhuma comunidade encontrada';
+
+  @override
+  String get communitiesSearchTips => 'Buscar dicas';
+
+  @override
+  String get communitiesAddTip => 'Adicionar dica';
+
+  @override
+  String get communitiesTipHint => 'Compartilhe uma dica útil…';
 }

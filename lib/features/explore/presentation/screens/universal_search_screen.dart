@@ -132,6 +132,13 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
   /// People: exact `nickname` equality (lowercased) merged with a `displayName`
   /// prefix range. Excludes self, ghost-mode and the hidden GreenGo
   /// admin/support account, and non-active profiles.
+  String _capitalize(String s) =>
+      s.isEmpty ? s : s[0].toUpperCase() + s.substring(1);
+
+  /// Tab label with a result count "(n)" once a search has produced results.
+  String _tabLabel(String label, List<Object?>? results) =>
+      (results != null && results.isNotEmpty) ? '$label (${results.length})' : label;
+
   Future<List<Profile>> _searchProfiles(String q) async {
     final byId = <String, Profile>{};
 
@@ -171,6 +178,19 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
           .limit(20)
           .get());
     } catch (_) {/* keep whatever we have */}
+
+    // 3) businessName prefix — find business accounts by their storefront name.
+    for (final term in {q, _capitalize(q)}) {
+      try {
+        absorb(await _firestore
+            .collection('profiles')
+            .orderBy('businessName')
+            .startAt([term])
+            .endAt(['$term'])
+            .limit(20)
+            .get());
+      } catch (_) {/* keep whatever we have */}
+    }
 
     final list = byId.values.toList()
       ..sort((a, b) =>
@@ -291,10 +311,11 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
             labelColor: AppColors.textPrimary,
             unselectedLabelColor: AppColors.textSecondary,
             tabs: [
-              Tab(text: l10n.universalSearchTabPeople),
-              Tab(text: l10n.universalSearchTabEvents),
-              Tab(text: l10n.universalSearchTabBusiness),
-              Tab(text: l10n.universalSearchTabCommunity),
+              Tab(text: _tabLabel(l10n.universalSearchTabPeople, _people)),
+              Tab(text: _tabLabel(l10n.universalSearchTabEvents, _events)),
+              Tab(text: _tabLabel(l10n.universalSearchTabBusiness, _business)),
+              Tab(text:
+                  _tabLabel(l10n.universalSearchTabCommunity, _communities)),
             ],
           ),
         ),

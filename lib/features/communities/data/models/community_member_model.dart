@@ -78,6 +78,10 @@ class CommunityMemberModel extends CommunityMember {
   /// Convert to Firestore document
   Map<String, dynamic> toFirestore() {
     return {
+      // Stored as a FIELD (not just the doc id) so a collectionGroup('members')
+      // query can filter by `userId` — collection-group queries can't filter on
+      // FieldPath.documentId.
+      'userId': userId,
       'displayName': displayName,
       'photoUrl': photoUrl,
       'role': role.value,

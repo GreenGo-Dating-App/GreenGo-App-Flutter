@@ -24,6 +24,7 @@ import '../widgets/community_rules_header.dart';
 import '../widgets/join_requests_sheet.dart';
 import '../widgets/member_moderation_sheet.dart';
 import '../widgets/rules_editor_sheet.dart';
+import '../widgets/tip_composer_sheet.dart';
 import '../widgets/sponsored_badge.dart';
 import '../widgets/sponsored_promo_card.dart';
 import '../widgets/sponsorship_editor_sheet.dart';
@@ -69,6 +70,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
   // Tips tab: active filter (null = all tip types).
   CommunityMessageType? _tipFilter;
+  String _tipSearch = '';
 
   /// The current user owns this community (creator) or holds the owner role.
   bool get _isOwner =>
@@ -422,8 +424,17 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     if (_tipFilter != null) {
       tips = tips.where((m) => m.type == _tipFilter).toList();
     }
+    final q = _tipSearch.trim().toLowerCase();
+    if (q.isNotEmpty) {
+      tips = tips
+          .where((m) =>
+              m.content.toLowerCase().contains(q) ||
+              m.senderName.toLowerCase().contains(q))
+          .toList();
+    }
     return Column(
       children: [
+        _buildTipSearch(),
         _buildTipFilterBar(),
         Expanded(
           child: tips.isEmpty
@@ -443,8 +454,86 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   ),
                 ),
         ),
+        // Any member can add tips (as many as they want).
+        if (_isMember) _buildAddTipBar(),
       ],
     );
+  }
+
+  Widget _buildTipSearch() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+          AppDimensions.paddingM, AppDimensions.paddingS, AppDimensions.paddingM, 0),
+      child: TextField(
+        style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
+        onChanged: (v) => setState(() => _tipSearch = v),
+        decoration: InputDecoration(
+          isDense: true,
+          hintText: AppLocalizations.of(context)!.communitiesSearchTips,
+          hintStyle: const TextStyle(color: AppColors.textTertiary),
+          prefixIcon:
+              const Icon(Icons.search, color: AppColors.textTertiary, size: 20),
+          filled: true,
+          fillColor: AppColors.backgroundCard,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+            borderSide: BorderSide.none,
+          ),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAddTipBar() {
+    return Container(
+      padding: const EdgeInsets.all(AppDimensions.paddingM),
+      decoration: const BoxDecoration(
+        color: AppColors.backgroundCard,
+        border: Border(top: BorderSide(color: AppColors.divider, width: 0.5)),
+      ),
+      child: SafeArea(
+        child: SizedBox(
+          width: double.infinity,
+          child: OutlinedButton.icon(
+            onPressed: _addTip,
+            style: OutlinedButton.styleFrom(
+              foregroundColor: AppColors.richGold,
+              side: const BorderSide(color: AppColors.richGold),
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppDimensions.radiusFull),
+              ),
+            ),
+            icon: const Icon(Icons.add, size: 18),
+            label: Text(AppLocalizations.of(context)!.communitiesAddTip),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Future<void> _addTip() async {
+    final isLocalGuideCommunity =
+        _community.type == CommunityType.localGuides;
+    final canPostCityTip = isLocalGuideCommunity && _isLocalGuide;
+    final result = await TipComposerSheet.show(context,
+        allowCityTip: canPostCityTip);
+    if (result == null || result.text.trim().isEmpty || !mounted) return;
+    final userId = _currentUserId;
+    if (userId == null) return;
+    context.read<CommunitiesBloc>().add(
+          SendCommunityMessage(
+            communityId: _community.id,
+            senderId: userId,
+            senderName: _currentUserName,
+            senderPhotoUrl: _currentUserPhoto,
+            content: result.text.trim(),
+            type: result.type,
+          ),
+        );
+    HapticFeedback.mediumImpact();
   }
 
   /// Announcements tab — read-only broadcast feed. Owner/admin get a composer
@@ -480,28 +569,33 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     final l10n = AppLocalizations.of(context)!;
     Widget chip(String label, CommunityMessageType? type) {
       final selected = _tipFilter == type;
-      return Padding(
-        padding: const EdgeInsets.only(right: 8),
-        child: GestureDetector(
-          onTap: () => setState(() => _tipFilter = type),
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            decoration: BoxDecoration(
-              color: selected
-                  ? AppColors.richGold.withValues(alpha: 0.15)
-                  : Colors.transparent,
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: selected ? AppColors.richGold : AppColors.divider,
-                width: 0.5,
+      // Center-aligned so the pill hugs its text instead of stretching to the
+      // full row height (was 48px tall / mis-proportioned).
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.only(right: 8),
+          child: GestureDetector(
+            onTap: () => setState(() => _tipFilter = type),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+              decoration: BoxDecoration(
+                color: selected
+                    ? AppColors.richGold.withValues(alpha: 0.15)
+                    : AppColors.backgroundCard,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(
+                  color: selected ? AppColors.richGold : AppColors.divider,
+                  width: 0.5,
+                ),
               ),
-            ),
-            child: Text(
-              label,
-              style: TextStyle(
-                color: selected ? AppColors.richGold : AppColors.textSecondary,
-                fontSize: 13,
-                fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+              child: Text(
+                label,
+                style: TextStyle(
+                  color:
+                      selected ? AppColors.richGold : AppColors.textSecondary,
+                  fontSize: 13,
+                  fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+                ),
               ),
             ),
           ),
@@ -509,12 +603,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
       );
     }
 
-    return Container(
-      height: 48,
-      padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingM),
-      alignment: Alignment.centerLeft,
+    return SizedBox(
+      height: 44,
       child: ListView(
         scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingM),
         children: [
           chip(l10n.filterAll, null),
           chip(l10n.communitiesLanguageTipLabel,
