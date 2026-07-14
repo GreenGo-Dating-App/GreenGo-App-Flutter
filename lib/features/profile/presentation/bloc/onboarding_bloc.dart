@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../membership/data/datasources/pending_signup_coupon.dart';
+import '../../../referral/data/pending_signup_referral.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/usecases/create_profile.dart';
 import '../../domain/usecases/upload_photo.dart';
@@ -374,6 +375,11 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
           // Never blocks completion; a bad code is surfaced as a notice.
           final couponOutcome =
               await SignupCouponService().tryRedeemPending(currentState.userId);
+
+          // Redeem a referral code typed during registration, if pending. The
+          // secure `redeemReferral` function rewards the referrer (+100 coins,
+          // capped) and grants this new user 1 month of Platinum. Best-effort.
+          await PendingSignupReferral.tryRedeemPending(currentState.userId);
 
           emit(OnboardingComplete(
             profile: createdProfile,

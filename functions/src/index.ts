@@ -191,6 +191,7 @@ export {
 // Coupon Redemption + Admin Management
 export { redeemCoupon } from './coupons/redeemCoupon';
 export { validateCoupon } from './coupons/validateCoupon';
+export { redeemReferral } from './referral/redeemReferral';
 export {
   upsertCoupon,
   listCoupons,

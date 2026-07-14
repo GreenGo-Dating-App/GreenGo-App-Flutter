@@ -59,6 +59,7 @@ import '../../../gamification/presentation/widgets/level_up_celebration_dialog.d
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
 import '../../../membership/data/datasources/pending_signup_coupon.dart';
+import '../../../referral/data/pending_signup_referral.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../safety/presentation/screens/community_guidelines_screen.dart';
 import '../../../notifications/presentation/bloc/notifications_bloc.dart';
@@ -183,6 +184,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // so the coupon's coin batch appends rather than clobbers. No-ops when
     // nothing is pending.
     SignupCouponService().tryRedeemPending(widget.userId);
+    // Same idempotent launch-time retry for a pending referral code.
+    PendingSignupReferral.tryRedeemPending(widget.userId);
 
     // Initialize access control service and load countdown dates from Firestore
     _accessControlService = AccessControlService();

@@ -6646,6 +6646,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get couponRedeemTitle => 'Gutscheincode einlösen';
 
   @override
+  String get referralCodeTitle => 'Hast du einen Empfehlungscode?';
+
+  @override
+  String get referralCodeLabel => 'Empfehlungscode';
+
+  @override
+  String get referralCodeHint => 'Code eines Freundes eingeben';
+
+  @override
   String get couponApplyButton => 'Anwenden';
 
   @override
