@@ -1,5 +1,6 @@
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
+import '../../../analytics/data/services/performance_monitoring_service.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/repositories/chat_repository.dart';
@@ -53,6 +54,9 @@ class ChatRepositoryImpl implements ChatRepository {
     required MessageType type,
     Map<String, dynamic>? metadata,
   }) async {
+    // G0 perf trace: message send latency (no-op unless perf collection is on).
+    final perf = PerformanceMonitoringService();
+    await perf.startTrace('message_send');
     try {
       final message = await remoteDataSource.sendMessage(
         matchId: matchId,
@@ -65,6 +69,8 @@ class ChatRepositoryImpl implements ChatRepository {
       return Right(message.toEntity());
     } catch (e) {
       return Left(ServerFailure(e.toString()));
+    } finally {
+      await perf.stopTrace('message_send');
     }
   }
 

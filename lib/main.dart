@@ -20,6 +20,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'core/config/app_config.dart';
 import 'core/config/flavor_config.dart';
+import 'features/analytics/data/services/performance_monitoring_service.dart';
 import 'core/constants/app_colors.dart';
 import 'core/constants/app_strings.dart';
 import 'core/di/injection_container.dart' as di;
@@ -229,6 +230,22 @@ void main() async {
   // Initialize dependency injection
   await di.init();
 
+  // Firebase Performance + Crashlytics (G0 Task 4): enable collection + wire the
+  // error handlers, and start the app_launch trace — RELEASE builds only, so
+  // debug/emulator runs never pollute production metrics. Start the launch trace
+  // before runApp; it is completed on the first frame of the root widget.
+  if (!kDebugMode) {
+    try {
+      await di.sl<PerformanceMonitoringService>().initialize();
+      await di.sl<PerformanceMonitoringService>().trackAppLaunch();
+    } catch (e) {
+      debugPrint('⚠ Performance monitoring init failed: $e');
+    }
+  } else if (!AppConfig.useLocalEmulators) {
+    // Debug on a real device (no emulator): keep collection OFF.
+    await FirebasePerformance.instance.setPerformanceCollectionEnabled(false);
+  }
+
   // Initialize sound service
   await AppSoundService().initialize();
   debugPrint('✓ Sound service initialized');
@@ -252,6 +269,9 @@ void main() async {
   runApp(GreenGoChatApp(savedLanguage: savedLanguage));
 }
 
+/// One-shot guard so the app_launch trace is completed exactly once.
+bool _appLaunchTraceCompleted = false;
+
 class GreenGoChatApp extends StatelessWidget {
 
   const GreenGoChatApp({super.key, this.savedLanguage});
@@ -259,6 +279,13 @@ class GreenGoChatApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Complete the app_launch trace on the first frame (release only).
+    if (!kDebugMode && !_appLaunchTraceCompleted) {
+      _appLaunchTraceCompleted = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        di.sl<PerformanceMonitoringService>().completeAppLaunch();
+      });
+    }
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => LanguageProvider(initialLanguage: savedLanguage)),
