@@ -144,9 +144,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   List<MatchCandidate>? _recommended;
   // "People around you": distance-ordered neighbours via the discovery stack.
   List<MatchCandidate>? _aroundYou;
-  // "People with your same interests": profiles sharing the user's interests.
-  // Empty (loaded) hides the section — also when the user has no interests.
-  List<MatchCandidate>? _sameInterests;
+  // "Business accounts": GreenGo business profiles to discover (replaces the old
+  // "same interests" row). Empty (loaded) hides the section.
+  List<MatchCandidate>? _businessAccounts;
   // "People that speak {language}": profiles listing a randomly-picked language.
   List<MatchCandidate>? _sameLanguage;
   // The randomly-picked language whose speakers [_sameLanguage] holds (for the
@@ -161,9 +161,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // empty == hidden.
   List<Profile>? _businesses;
 
-  // The current user's interests (from their profile), used to build the
-  // "same interests" section and to seed the See-all grid's interest filter.
-  List<String> _userInterests = const <String>[];
   // The current user's OWN spoken languages (from their profile), used to build
   // the "People that speak {language}" section (a language they themselves know).
   List<String> _userLanguages = const <String>[];
@@ -211,7 +208,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       _loadLuxuryEvents(),
       _loadRecommended(),
       _loadAroundYou(),
-      _loadSameInterests(),
+      _loadBusinessAccounts(),
       _loadSameLanguage(),
       _loadCommunityEvents(),
       _loadBusinesses(),
@@ -256,11 +253,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
           }
         }
         _displayName = (data['displayName'] as String?)?.trim();
-        _userInterests = (data['interests'] as List<dynamic>?)
-                ?.map((e) => e.toString())
-                .where((e) => e.isNotEmpty)
-                .toList() ??
-            const <String>[];
         _userLanguages = (data['languages'] as List<dynamic>?)
                 ?.map((e) => e.toString().trim())
                 .where((e) => e.isNotEmpty)
@@ -787,25 +779,20 @@ class _ExploreScreenState extends State<ExploreScreen> {
     if (mounted) setState(() => _aroundYou = picked);
   }
 
-  /// "People with your same interests" — profiles sharing any of the user's
-  /// interests. Firestore `arrayContainsAny` caps at 10 values, so we probe the
-  /// first ten. Shuffled, capped at [_peopleWanted]. Hidden when the user has no
-  /// interests (or nothing matches).
-  Future<void> _loadSameInterests() async {
-    final interests = _userInterests;
-    if (interests.isEmpty) {
-      if (mounted) setState(() => _sameInterests = const <MatchCandidate>[]);
-      return;
-    }
+  /// "Business accounts" — GreenGo business profiles (`isBusiness == true`) to
+  /// discover, rendered as people cards. Shuffled, capped at [_peopleWanted].
+  /// Hidden entirely when there are none. Tapping "See all" opens Discovery
+  /// filtered to business accounts.
+  Future<void> _loadBusinessAccounts() async {
     final byId = <String, _Partner>{};
     try {
-      final values = interests.take(10).toList();
       final snap = await _firestore
           .collection('profiles')
-          .where('interests', arrayContainsAny: values)
+          .where('isBusiness', isEqualTo: true)
           .limit(60)
           .get();
       for (final doc in snap.docs) {
+        if (doc.id == widget.userId) continue;
         final p = _parsePartner(doc.id, doc.data());
         if (p != null) byId[doc.id] = p;
       }
@@ -816,7 +803,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         .take(_peopleWanted)
         .map(_candidateFor)
         .toList();
-    if (mounted) setState(() => _sameInterests = picked);
+    if (mounted) setState(() => _businessAccounts = picked);
   }
 
   /// "People that speak {language}" — picks ONE language the CURRENT USER
@@ -1266,9 +1253,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 context,
                 l10n,
                 reduceMotion,
-                title: l10n.exploreSameInterests,
-                people: _sameInterests,
-                onSeeAll: () => _openInterestDiscovery(context),
+                title: l10n.exploreBusinessAccounts,
+                people: _businessAccounts,
+                onSeeAll: () => _openBusinessDiscovery(context),
               ),
               _peopleSection(
                 context,
@@ -2554,15 +2541,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
     );
   }
 
-  /// "See all" for "People with your same interests" → the full people grid,
-  /// PRE-FILTERED by the user's interests (seeded into the discovery filters via
-  /// [NetworkDiscoveryScreen.initialInterests]).
-  void _openInterestDiscovery(BuildContext context) {
+  /// "See all" for "Business accounts" → the full people grid filtered to
+  /// business accounts (Discovery opened with its business-only filter on).
+  void _openBusinessDiscovery(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => NetworkDiscoveryScreen(
           userId: widget.userId,
-          initialInterests: _userInterests,
+          businessOnly: true,
         ),
       ),
     );

@@ -4121,6 +4121,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get exploreSameInterests => 'Pessoas com os teus interesses';
 
   @override
+  String get exploreBusinessAccounts => 'Contas comerciais';
+
+  @override
   String exploreSpeaksLanguage(String language) {
     return 'Pessoas que falam $language';
   }
@@ -16808,6 +16811,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get exploreSameInterests => 'Pessoas com os seus interesses';
+
+  @override
+  String get exploreBusinessAccounts => 'Contas comerciais';
 
   @override
   String exploreSpeaksLanguage(String language) {

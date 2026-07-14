@@ -4149,6 +4149,9 @@ class AppLocalizationsFr extends AppLocalizations {
       'Des personnes avec les mêmes centres d\'intérêt que toi';
 
   @override
+  String get exploreBusinessAccounts => 'Comptes professionnels';
+
+  @override
   String exploreSpeaksLanguage(String language) {
     return 'Des personnes qui parlent $language';
   }

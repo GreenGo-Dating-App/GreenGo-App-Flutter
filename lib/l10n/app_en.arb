@@ -1945,6 +1945,7 @@
   },
   "exploreAroundYou": "People around you",
   "exploreSameInterests": "People with your same interests",
+  "exploreBusinessAccounts": "Business accounts",
   "exploreSpeaksLanguage": "People that speak {language}",
   "@exploreSpeaksLanguage": {
     "placeholders": {
