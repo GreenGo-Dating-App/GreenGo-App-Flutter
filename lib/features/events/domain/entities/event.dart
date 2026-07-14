@@ -82,6 +82,7 @@ class Event extends Equatable {
     required this.title, required this.description, required this.category, required this.startDate, required this.endDate, required this.locationName, required this.maxAttendees, required this.status, required this.createdAt, this.organizerPhotoUrl,
     this.imageUrl,
     this.photoUrls = const [],
+    this.allowedScannerIds = const [],
     this.latitude,
     this.longitude,
     this.address,
@@ -121,6 +122,10 @@ class Event extends Equatable {
   final EventCategory category;
   final String? imageUrl;
   final List<String> photoUrls;
+
+  /// Users (besides the organizer) who are allowed to scan/redeem this event's
+  /// QR tickets at the door. Owner is always allowed implicitly.
+  final List<String> allowedScannerIds;
   final DateTime startDate;
   final DateTime endDate;
   final String locationName;
@@ -250,6 +255,7 @@ class Event extends Equatable {
         description,
         category,
         imageUrl,
+        allowedScannerIds,
         photoUrls,
         startDate,
         endDate,
@@ -298,6 +304,7 @@ class Event extends Equatable {
     EventCategory? category,
     String? imageUrl,
     List<String>? photoUrls,
+    List<String>? allowedScannerIds,
     DateTime? startDate,
     DateTime? endDate,
     String? locationName,
@@ -344,6 +351,7 @@ class Event extends Equatable {
       category: category ?? this.category,
       imageUrl: imageUrl ?? this.imageUrl,
       photoUrls: photoUrls ?? this.photoUrls,
+      allowedScannerIds: allowedScannerIds ?? this.allowedScannerIds,
       startDate: startDate ?? this.startDate,
       endDate: endDate ?? this.endDate,
       locationName: locationName ?? this.locationName,

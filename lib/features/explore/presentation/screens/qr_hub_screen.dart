@@ -12,7 +12,6 @@ import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/domain/entities/event.dart';
-import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../events/presentation/screens/event_ticket_screen.dart';
 
 /// QR hub — one place for everything QR:
@@ -330,46 +329,47 @@ class _ScanTabState extends State<_ScanTab> {
 
     final me = widget.currentUserId;
 
-    // Case A — the current user organizes this event and is scanning SOMEONE
-    // ELSE's ticket → the existing door check-in.
-    if (event.organizerId == me && payload.userId != me) {
-      try {
-        await _dataSource.checkInAttendee(
-          eventId: event.id,
-          attendeeUserId: payload.userId,
-        );
-        _feedback(l10n.eventCheckedInSuccess(payload.userId), ok: true);
-      } catch (_) {
-        _feedback(l10n.eventInvalidTicket, ok: false);
-      }
+    // Only the event OWNER or an invited scanner may redeem tickets. Everyone
+    // else is denied — scanning is a door check-in, not a way into the event.
+    final canScan =
+        event.organizerId == me || event.allowedScannerIds.contains(me);
+    if (!canScan) {
+      _feedback(l10n.qrScanNotAuthorized, ok: false);
+      return;
+    }
+    if (payload.eventId != event.id) {
+      _feedback(l10n.eventInvalidTicket, ok: false);
       return;
     }
 
-    // Case B — the code is the current user's own ticket → just open the event.
-    if (payload.userId == me) {
-      _openEvent(event.id);
-      return;
-    }
-
-    // Case C — a shared event code the current user can join → join (capacity-
-    // safe, existing join logic) then open the event.
+    // Validate the ticket against the live attendee roster, then check in.
+    // Shows only an Approved / Denied confirmation — never navigates.
     try {
-      await _dataSource.joinEventWithTier(eventId: event.id, userId: me);
-      _feedback(l10n.qrHubJoinedEvent, ok: true);
-      _openEvent(event.id);
+      final roster = await _dataSource.watchAttendees(event.id).first;
+      EventAttendee? attendee;
+      for (final a in roster) {
+        if (a.userId == payload.userId) {
+          attendee = a;
+          break;
+        }
+      }
+      if (!mounted) return;
+      if (attendee == null || attendee.status != RSVPStatus.going) {
+        _feedback(l10n.eventInvalidTicket, ok: false);
+        return;
+      }
+      if (attendee.checkedIn) {
+        _feedback(l10n.eventAlreadyCheckedIn(attendee.userName), ok: false);
+        return;
+      }
+      await _dataSource.checkInAttendee(
+        eventId: event.id,
+        attendeeUserId: payload.userId,
+      );
+      if (mounted) _feedback(l10n.qrScanApproved, ok: true);
     } catch (_) {
-      _feedback(l10n.qrHubInvalidCode, ok: false);
+      if (mounted) _feedback(l10n.eventInvalidTicket, ok: false);
     }
-  }
-
-  void _openEvent(String eventId) {
-    if (!mounted) return;
-    Navigator.of(context).push(
-      EventDetailLoaderScreen.route(
-        eventId: eventId,
-        currentUserId: widget.currentUserId,
-      ),
-    );
   }
 
   void _feedback(String message, {required bool ok}) {

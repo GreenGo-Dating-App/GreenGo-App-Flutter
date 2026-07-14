@@ -11497,6 +11497,32 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventScanCheckIn => 'Escanear / Registrar';
 
   @override
+  String get eventScanManageScanners => 'Gestionar escaneres';
+
+  @override
+  String get eventScanInviteScannerHint =>
+      'Invita a un miembro a escanear entradas en la puerta.';
+
+  @override
+  String get eventScanNicknameHint => 'Apodo';
+
+  @override
+  String get eventScanAddScanner => 'Anadir';
+
+  @override
+  String get eventScanScannerNotFound =>
+      'No se encontro ningun miembro con ese apodo';
+
+  @override
+  String get eventScanScannerAddFailed =>
+      'No se pudo anadir el escaner. Intentalo de nuevo.';
+
+  @override
+  String eventScanScannerAdded(String name) {
+    return '$name ya puede escanear entradas';
+  }
+
+  @override
   String get eventAttendance => 'Asistencia';
 
   @override
@@ -12094,6 +12120,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get qrHubInvalidCode => 'Ese no es un código de GreenGo válido';
+
+  @override
+  String get qrScanApproved => 'Aprobado — registrado';
+
+  @override
+  String get qrScanNotAuthorized =>
+      'Solo el organizador o un escaner invitado puede validar entradas';
 
   @override
   String get qrHubJoinedEvent => '¡Vas a asistir! Abriendo el evento…';

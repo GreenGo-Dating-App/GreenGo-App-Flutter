@@ -20250,6 +20250,48 @@ abstract class AppLocalizations {
   /// **'Scan / Check-in'**
   String get eventScanCheckIn;
 
+  /// No description provided for @eventScanManageScanners.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage scanners'**
+  String get eventScanManageScanners;
+
+  /// No description provided for @eventScanInviteScannerHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite a member to scan tickets at the door.'**
+  String get eventScanInviteScannerHint;
+
+  /// No description provided for @eventScanNicknameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname'**
+  String get eventScanNicknameHint;
+
+  /// No description provided for @eventScanAddScanner.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get eventScanAddScanner;
+
+  /// No description provided for @eventScanScannerNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No member found with that nickname'**
+  String get eventScanScannerNotFound;
+
+  /// No description provided for @eventScanScannerAddFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not add scanner. Try again.'**
+  String get eventScanScannerAddFailed;
+
+  /// No description provided for @eventScanScannerAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} can now scan tickets'**
+  String eventScanScannerAdded(String name);
+
   /// No description provided for @eventAttendance.
   ///
   /// In en, this message translates to:
@@ -21299,6 +21341,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'That\'s not a valid GreenGo code'**
   String get qrHubInvalidCode;
+
+  /// No description provided for @qrScanApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'Approved — checked in'**
+  String get qrScanApproved;
+
+  /// No description provided for @qrScanNotAuthorized.
+  ///
+  /// In en, this message translates to:
+  /// **'Only the event owner or an invited scanner can redeem tickets'**
+  String get qrScanNotAuthorized;
 
   /// No description provided for @qrHubJoinedEvent.
   ///
