@@ -6,7 +6,7 @@
 **Stack today:** Flutter (Clean Arch + BLoC) · Firestore + Cloud Functions + FCM
 **Stack at this gate:** multi-database Firestore + AlloyDB shards · GKE Autopilot WebSocket fleet · Pub/Sub · multi-region
 
-> This is the detailed expansion of gate **G4** from [`README.md`](README.md) §1. It **operationalizes at full scale** the infrastructure designed in the GCP migration program — it references that program, it does not duplicate it. Deep IaC/GKE/AlloyDB detail lives in [`../migration/`](../migration/) and is cited inline. No secrets in this document.
+> This is the detailed expansion of gate **G4** from [`README.md`](README.md) §1. It **operationalizes at full scale** the infrastructure designed in the GCP migration program — it references that program, it does not duplicate it. Deep IaC/GKE/AlloyDB detail lives in [`../migration/`](../../migration/) and is cited inline. No secrets in this document.
 >
 > G4 is the *terminal* gate. There is no "G5". "Done" here does not mean a shipped feature set — it means **sustained SLOs at target scale** with steady-state operations and recurring capacity reviews.
 
@@ -20,7 +20,7 @@
 | **Peak concurrent envelope** | 250K → 25M+ |
 | **What activates** | (1) multi-database sharding **ACTIVE**, (2) full GKE WebSocket presence/chat fleet, (3) multi-region + global data placement + regional failover + committed-use cost optimization |
 | **Depends on** | G0–G3 complete; migration Phase-B live; routing abstraction dark-launched |
-| **Companion migration phases** | Phase **P6** (realtime scale-out) and **P7** (Americas region + DR + decommission) in [`../migration/10-phased-roadmap.md`](../migration/10-phased-roadmap.md) |
+| **Companion migration phases** | Phase **P6** (realtime scale-out) and **P7** (Americas region + DR + decommission) in [`../migration/10-phased-roadmap.md`](../../migration/10-phased-roadmap.md) |
 
 ---
 
@@ -50,7 +50,7 @@ The README SLO table already alerts at **writes/sec per database > 8,500** (appr
 | Per-region API latency (p95) | < 400 ms in every active region (ADR-0005 threshold) | > 400 ms sustained for any region |
 | Message-send p95 / p99 | < 300 ms / < 800 ms (README §0, held at scale) | p99 > 1.2 s |
 | Regional failover (RTO/RPO) | RTO ≤ target, RPO ≤ target, proven by game day (P7) | any drill miss |
-| **Cost per MAU** | **trending down** toward the capacity-model ~$0.009 marginal target; migration FinOps models ~$0.024–0.042/MAU optimized ([`../migration/11-cost-finops.md`](../migration/11-cost-finops.md) §7.1) | per-MAU flat or rising quarter-over-quarter |
+| **Cost per MAU** | **trending down** toward the capacity-model ~$0.009 marginal target; migration FinOps models ~$0.024–0.042/MAU optimized ([`../migration/11-cost-finops.md`](../../migration/11-cost-finops.md) §7.1) | per-MAU flat or rising quarter-over-quarter |
 
 The load-bearing cost signal is **direction, not the point value** — cost per MAU must *fall* as fixed overhead amortizes and CUDs cover the predictable baseline (migration FinOps §7).
 
@@ -61,9 +61,9 @@ The load-bearing cost signal is **direction, not the point value** — cost per 
 G4 must not begin until all of the following hold. If any is missing, the corresponding earlier gate or migration phase is the blocker — do that first.
 
 - **G0–G3 complete.** Hygiene (listeners cancelled, queries capped), de-hotspotting (sharded counters, presence off the shared doc), structural readiness (shard key + routing abstraction) are all live. See [`README.md`](README.md) §1 and the sibling **`G3_STRUCTURAL.md`**.
-- **Migration Phase-B live.** AlloyDB serves coins/membership in production (P4 complete), Pub/Sub is the event backbone (P3), and at least one domain runs on GKE Autopilot (P2). Per [`../migration/10-phased-roadmap.md`](../migration/10-phased-roadmap.md).
+- **Migration Phase-B live.** AlloyDB serves coins/membership in production (P4 complete), Pub/Sub is the event backbone (P3), and at least one domain runs on GKE Autopilot (P2). Per [`../migration/10-phased-roadmap.md`](../../migration/10-phased-roadmap.md).
 - **Routing abstraction dark-launched.** The G3 shard-router (README Phase 5.2 — "documented sharding scheme + a dark-launched routing abstraction") is deployed and returns the correct shard for every key **while still resolving to the single primary**. G4 flips it from single-target to N-target; it does not build it.
-- **Observability at target fidelity.** Per-shard and per-region dashboards + SLOs from [`../migration/08-observability-slo.md`](../migration/08-observability-slo.md) are live, with the README hotspot/latency alerts promoted to prod (Phase 6.3).
+- **Observability at target fidelity.** Per-shard and per-region dashboards + SLOs from [`../migration/08-observability-slo.md`](../../migration/08-observability-slo.md) are live, with the README hotspot/latency alerts promoted to prod (Phase 6.3).
 
 ---
 
@@ -78,7 +78,7 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 **Steps**
 - The seam the router plugs into is already Clean-Arch-clean: every feature's remote access goes through an **abstract data source** — e.g. `abstract class ChatRemoteDataSource` in `lib/features/chat/data/datasources/chat_remote_datasource.dart`, `coin_remote_datasource.dart`, `discovery_remote_datasource.dart`, etc. Impls (`lib/features/chat/data/repositories/chat_repository_impl.dart`) never see Firestore directly — they hold a datasource. **This is the injection point.**
 - **The one real hazard:** there are **246 direct `FirebaseFirestore.instance` references across 117 files in `lib/`** plus singleton services in `lib/core/services/` (`presence_service.dart`, `candidate_pool_service.dart`, `activity_tracking_service.dart`, …). G3 must have already funnelled these through the DI container (`lib/core/di/injection_container.dart`) so a **shard-aware `FirebaseFirestore` provider** is injected in one place. Confirm zero un-routed `FirebaseFirestore.instance` calls remain before flipping. If any remain, they will silently keep hitting the primary and become hotspots — this is the top pre-flip audit item.
-- Server-side, the router lives in the GKE domain services (`messaging`, `profile/discovery`, `groups`, `notifications` per [`../migration/02-target-architecture.md`](../migration/02-target-architecture.md) §2.3). The client sends logical keys; services resolve `key → shard`. Prefer server-side resolution so shard topology is not baked into shipped app binaries.
+- Server-side, the router lives in the GKE domain services (`messaging`, `profile/discovery`, `groups`, `notifications` per [`../migration/02-target-architecture.md`](../../migration/02-target-architecture.md) §2.3). The client sends logical keys; services resolve `key → shard`. Prefer server-side resolution so shard topology is not baked into shipped app binaries.
 - **Shard key:** partition by a stable high-cardinality entity (userId for per-user data: presence, inbox, feeds; conversationId for chat; groupId for group fan-out). Chat messages already write to auto-ID subcollections (`conversations/{id}/messages`) — naturally distributable; shard at the conversation/DB level, never per-message.
 - **Rebalancing:** use consistent-hashing / virtual-node ranges so adding shard N+1 moves ~1/N of keys, not all of them. Dual-read (new shard, fall back to old) during a key's move window; cut the write path last.
 - **Cross-shard queries:** GreenGo has few true cross-shard reads because most reads are per-user or per-conversation (single shard by construction). For the exceptions — global discovery, admin, analytics — **do not** scatter-gather across N Firestore DBs. Route them to the analytics/AlloyDB plane: `analytics` → BigQuery (`greengo_analytics`), global discovery → AlloyDB + Vertex Vector Search (migration P5), leaderboards → Memorystore Redis sorted sets. This keeps Firestore queries single-shard.
@@ -91,9 +91,9 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 **Objective:** move presence and realtime chat delivery **fully off Firestore listeners** onto the GKE Autopilot WebSocket fleet, breaking the ~1M-listener-per-DB ceiling.
 
 **Steps**
-- Today presence is Firestore-doc based: `lib/core/services/presence_service.dart` writes `isOnline`/`lastSeen` to the user profile doc on a 1-min activity timer. G2 already moved the shared hot path off Firestore; G4 completes the cutover to the **Memorystore Redis presence bitmaps + GKE WebSocket** tier from [`../migration/02-target-architecture.md`](../migration/02-target-architecture.md) §2.5 and the optional WS tier in migration **P6**.
+- Today presence is Firestore-doc based: `lib/core/services/presence_service.dart` writes `isOnline`/`lastSeen` to the user profile doc on a 1-min activity timer. G2 already moved the shared hot path off Firestore; G4 completes the cutover to the **Memorystore Redis presence bitmaps + GKE WebSocket** tier from [`../migration/02-target-architecture.md`](../../migration/02-target-architecture.md) §2.5 and the optional WS tier in migration **P6**.
 - Client seam: `PresenceService` and the chat streams (`getMessagesStream` in `chat_repository_impl.dart`) swap their transport from `.snapshots()` to a WebSocket channel behind the **same repository interface** — BLoCs and UI are untouched (that is the point of the Clean-Arch seam). Gate the swap behind a Remote Config flag for cohort cutover.
-- **Autoscaling:** HPA + VPA on the WS deployment ([`../migration/06-gke-platform.md`](../migration/06-gke-platform.md)); scale on **active connection count and CPU**, not just CPU — WebSocket pods are memory/FD-bound, not CPU-bound. PodDisruptionBudgets so rolling updates never drain more than a safe fraction of connections at once.
+- **Autoscaling:** HPA + VPA on the WS deployment ([`../migration/06-gke-platform.md`](../../migration/06-gke-platform.md)); scale on **active connection count and CPU**, not just CPU — WebSocket pods are memory/FD-bound, not CPU-bound. PodDisruptionBudgets so rolling updates never drain more than a safe fraction of connections at once.
 - **Connection limits per node:** size a per-pod connection cap (file descriptors, memory per connection, heartbeat overhead) and let Autopilot add pods past it. Sticky routing via the Global LB + session affinity; graceful drain + client auto-reconnect with backoff on pod recycle. Sizing detail → reference the migration GKE platform doc; do not hardcode a number here.
 - Fan-out still runs through Pub/Sub → `notifications` service → FCM for offline users (unchanged from `functions/src/group_chat/fanout.ts`, now Pub/Sub-fronted per migration §2.4). WS delivers to *online* connections; FCM covers offline. No double-delivery.
 
@@ -105,12 +105,12 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 **Objective:** place data and compute near user clusters, replicate for durability, and prove regional failover — this is migration **P7** operationalized.
 
 **Steps**
-- Baseline is **single-region `europe-west1`** by [`../migration/adr/0005-region-strategy.md`](../migration/adr/0005-region-strategy.md), everything already **region-parametrized** (`primary_region` Terraform variable in [`terraform/variables.tf`](../../terraform/variables.tf)); global LB is anycast. `firebase.json` shows a single Firestore location today (`greengo-chat`). Multi-region config is **designed-ready but not yet present** — G4 is where it is stood up.
+- Baseline is **single-region `europe-west1`** by [`../migration/adr/0005-region-strategy.md`](../../migration/adr/0005-region-strategy.md), everything already **region-parametrized** (`primary_region` Terraform variable in [`terraform/variables.tf`](../../../terraform/variables.tf)); global LB is anycast. `firebase.json` shows a single Firestore location today (`greengo-chat`). Multi-region config is **designed-ready but not yet present** — G4 is where it is stood up.
 - **Trigger to add a region** (ADR-0005, any one): non-EU MAU share > 40% sustained, non-EU p95 > 400 ms sustained, or a DR/regulatory demand. At 10M+ global registered these are almost certainly met — add **Americas** (`southamerica-east1` or `us-central1`) and **Asia** as clusters grow.
 - **Placement table (region ↔ user cluster):** see §6.3. Pin each user's home shard/region by residency + latency; keep per-user data (chat, presence, inbox) **in-region** to hold p95 < 400 ms.
-- **Replication:** stateless GKE services deploy to every region (identical containers via Argo CD). Data: Firestore multi-region location for durability where needed; AlloyDB cross-region read pools / async replication for the money + graph plane (promote-to-primary on failover); Redis is regional (rebuild on failover, it is cache/presence). Deep IaC → [`../migration/05-iac-terraform.md`](../migration/05-iac-terraform.md), [`../migration/06-gke-platform.md`](../migration/06-gke-platform.md).
+- **Replication:** stateless GKE services deploy to every region (identical containers via Argo CD). Data: Firestore multi-region location for durability where needed; AlloyDB cross-region read pools / async replication for the money + graph plane (promote-to-primary on failover); Redis is regional (rebuild on failover, it is cache/presence). Deep IaC → [`../migration/05-iac-terraform.md`](../../migration/05-iac-terraform.md), [`../migration/06-gke-platform.md`](../../migration/06-gke-platform.md).
 - **Regional failover:** anycast LB + health checks drain a failed region to the next-nearest; AlloyDB replica promotion; DNS/session re-affinity for WS reconnect. **DR game days** with proven RPO/RTO are the P7 capstone.
-- **Data residency:** keep EU-resident user data in EU regions; do not replicate PII cross-jurisdiction beyond what residency allows. Enforce via VPC Service Controls + placement policy ([`../migration/09-security-compliance.md`](../migration/09-security-compliance.md)).
+- **Data residency:** keep EU-resident user data in EU regions; do not replicate PII cross-jurisdiction beyond what residency allows. Enforce via VPC Service Controls + placement policy ([`../migration/09-security-compliance.md`](../../migration/09-security-compliance.md)).
 
 **Acceptance:** every active region holds p95 < 400 ms for its cluster; a killed region fails over within RTO with RPO within target in a game day; residency policy verified (no cross-jurisdiction PII replication).
 **Effort:** L (migration P7 program). **Risk:** High — cross-region consistency and failover correctness.
@@ -120,7 +120,7 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 **Objective:** bend cost-per-MAU **down** as scale rises, per migration FinOps.
 
 **Steps**
-- **Committed Use Discounts (CUD):** commit to the **measured P95 always-on baseline, never the peak** ([`../migration/11-cost-finops.md`](../migration/11-cost-finops.md) §5 "CUD discipline"). Steady 24/7 workloads — AlloyDB money primary, GKE baseline pods, WS fleet floor — are CUD-eligible; burst on-demand above the commitment. Quarterly review against billing export; sweep unattached CUDs, idle read replicas, orphaned disks/IPs (FinOps §6 waste sweeps).
+- **Committed Use Discounts (CUD):** commit to the **measured P95 always-on baseline, never the peak** ([`../migration/11-cost-finops.md`](../../migration/11-cost-finops.md) §5 "CUD discipline"). Steady 24/7 workloads — AlloyDB money primary, GKE baseline pods, WS fleet floor — are CUD-eligible; burst on-demand above the commitment. Quarterly review against billing export; sweep unattached CUDs, idle read replicas, orphaned disks/IPs (FinOps §6 waste sweeps).
 - **Caching hit-rate is a cost lever at this scale:**
   - **TTS (Chirp 3 HD)** is coin-gated **and cached** — cache hit-rate directly cuts per-synthesis Vertex/TTS spend at millions of MAU. Keep the cache key stable (text+voice) and TTL long; the client TTS key is proxied server-side (migration §2.8, §5). Higher hit-rate = lower marginal cost per active user.
   - **`external_events` cache-first** (sharded index + geohash, `functions/src/external_events/`) means shared event reads are served once per client per TTL, not per view — this is a shared-read amortization that flattens read cost as users grow (README Phase 3.2). Superseded by AlloyDB catalog + Redis geo in migration P5 but the cache-first *pattern* stays.
@@ -143,7 +143,7 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 
 ### 6.2 GKE autoscaling & connection sizing notes
 - WS deployment scales on **active connections + CPU** (HPA/VPA); PDBs cap simultaneous drain.
-- Per-pod connection cap sized on FD + memory-per-connection + heartbeat overhead — value lives in [`../migration/06-gke-platform.md`](../migration/06-gke-platform.md), not here.
+- Per-pod connection cap sized on FD + memory-per-connection + heartbeat overhead — value lives in [`../migration/06-gke-platform.md`](../../migration/06-gke-platform.md), not here.
 - Sticky routing via anycast LB + session affinity; graceful drain + client backoff reconnect.
 - Presence via Redis bitmaps; fan-out via Pub/Sub → FCM for offline.
 
@@ -154,7 +154,7 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 | Americas | `southamerica-east1` or `us-central1` (P7) | in-region shards | `europe-west1` |
 | Asia-Pacific | `asia-*` (added as cluster grows) | in-region shards | nearest active region |
 
-All regions run identical stateless GKE services (Argo CD). Data pinned in-region for p95 < 400 ms and residency; deep IaC deferred to [`../migration/05-iac-terraform.md`](../migration/05-iac-terraform.md).
+All regions run identical stateless GKE services (Argo CD). Data pinned in-region for p95 < 400 ms and residency; deep IaC deferred to [`../migration/05-iac-terraform.md`](../../migration/05-iac-terraform.md).
 
 ---
 
@@ -174,7 +174,7 @@ All regions run identical stateless GKE services (Argo CD). Data pinned in-regio
 - **Load harness at target concurrency.** Extend the README Phase 0.7 harness (staging project, realistic mix: 45% chat+presence, 25% discovery, 12% events, 8% coins, 6% tags, 4% TTS) to drive **250K → 25M+ concurrent across regions and shards**; confirm every shard < 7,000 writes/s, every DB < 700K listeners, every region p95 < 400 ms — **with headroom**.
 - **Failover drill (game day).** Kill a region; verify RTO/RPO within target, WS clients reconnect, no message/coin loss, AlloyDB replica promotes cleanly (migration P7 DR game days).
 - **Shard rebalance drill.** Add a shard under load; verify ~1/N key movement, zero loss, no SLO breach.
-- **Cost/MAU measured.** Reconcile actual per-MAU against the FinOps model (~$0.024–0.042 optimized, [`../migration/11-cost-finops.md`](../migration/11-cost-finops.md) §7.1) and track the trend toward the capacity-model ~$0.009 marginal target; confirm the curve is **bending down**, CUD utilization > 90%, and TTS/external_events/CDN cache-hit ratios rising.
+- **Cost/MAU measured.** Reconcile actual per-MAU against the FinOps model (~$0.024–0.042 optimized, [`../migration/11-cost-finops.md`](../../migration/11-cost-finops.md) §7.1) and track the trend toward the capacity-model ~$0.009 marginal target; confirm the curve is **bending down**, CUD utilization > 90%, and TTS/external_events/CDN cache-hit ratios rising.
 - **Chaos on the WS fleet.** Recycle pods under peak; confirm reconnect (not loss) and no connection-storm cascade.
 
 ---
@@ -225,9 +225,9 @@ G4 has no "next gate". It reaches **steady state** when:
 
 - [`README.md`](README.md) — the gate model (G0–G4), SLO table, activation triggers, reference code patterns.
 - **`G3_STRUCTURAL.md`** (sibling) — where the shard key, routing abstraction, and migration Phase-B kickoff were built; G4 activates what G3 dark-launched.
-- [`../migration/10-phased-roadmap.md`](../migration/10-phased-roadmap.md) — P6 (realtime scale-out) and P7 (Americas region + DR + decommission) that G4 operationalizes.
-- [`../migration/02-target-architecture.md`](../migration/02-target-architecture.md) — canonical target platform (data plane, GKE, Pub/Sub, Redis presence).
-- [`../migration/adr/0005-region-strategy.md`](../migration/adr/0005-region-strategy.md) — single-region-first, multi-region triggers, `primary_region` flip.
-- [`../migration/06-gke-platform.md`](../migration/06-gke-platform.md) · [`../migration/05-iac-terraform.md`](../migration/05-iac-terraform.md) — GKE autoscaling/connection sizing & Terraform (deep infra lives here).
-- [`../migration/11-cost-finops.md`](../migration/11-cost-finops.md) — cost-per-MAU model, CUD discipline, waste sweeps.
+- [`../migration/10-phased-roadmap.md`](../../migration/10-phased-roadmap.md) — P6 (realtime scale-out) and P7 (Americas region + DR + decommission) that G4 operationalizes.
+- [`../migration/02-target-architecture.md`](../../migration/02-target-architecture.md) — canonical target platform (data plane, GKE, Pub/Sub, Redis presence).
+- [`../migration/adr/0005-region-strategy.md`](../../migration/adr/0005-region-strategy.md) — single-region-first, multi-region triggers, `primary_region` flip.
+- [`../migration/06-gke-platform.md`](../../migration/06-gke-platform.md) · [`../migration/05-iac-terraform.md`](../../migration/05-iac-terraform.md) — GKE autoscaling/connection sizing & Terraform (deep infra lives here).
+- [`../migration/11-cost-finops.md`](../../migration/11-cost-finops.md) — cost-per-MAU model, CUD discipline, waste sweeps.
 - Code seams cited: `lib/features/*/data/datasources/*_remote_datasource.dart`, `lib/features/chat/data/repositories/chat_repository_impl.dart`, `lib/core/services/presence_service.dart`, `lib/core/di/injection_container.dart`, `functions/src/group_chat/fanout.ts`, `functions/src/external_events/`.

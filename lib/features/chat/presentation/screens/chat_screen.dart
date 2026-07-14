@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart' hide Source;
@@ -148,6 +149,9 @@ class _ChatScreenState extends State<ChatScreen> {
   static const int _initialMessageWindow = 40;
   static const int _messagePageSize = 30;
   int _messageLimit = _initialMessageWindow;
+  // In-flight upload progress subscription — cancelled in dispose() so an upload
+  // finishing after the screen closes can't setState into a disposed widget.
+  StreamSubscription<TaskSnapshot>? _uploadSub;
   bool _isLoadingMore = false;
 
   LanguageProvider? _languageProvider;
@@ -386,6 +390,7 @@ class _ChatScreenState extends State<ChatScreen> {
       PushNotificationService.activeConversationId = null;
     }
     _languageProvider?.removeListener(_onLanguageChanged);
+    _uploadSub?.cancel();
     _messageController.dispose();
     _scrollController.dispose();
     _chatBloc.close();
@@ -960,7 +965,8 @@ class _ChatScreenState extends State<ChatScreen> {
       );
 
       // Track upload progress
-      uploadTask.snapshotEvents.listen((snapshot) {
+      _uploadSub?.cancel();
+      _uploadSub = uploadTask.snapshotEvents.listen((snapshot) {
         if (mounted) {
           setState(() {
             _uploadProgress = snapshot.bytesTransferred / snapshot.totalBytes;
@@ -1123,7 +1129,8 @@ class _ChatScreenState extends State<ChatScreen> {
       );
 
       // Track upload progress
-      uploadTask.snapshotEvents.listen((snapshot) {
+      _uploadSub?.cancel();
+      _uploadSub = uploadTask.snapshotEvents.listen((snapshot) {
         if (mounted) {
           setState(() {
             _uploadProgress = snapshot.bytesTransferred / snapshot.totalBytes;

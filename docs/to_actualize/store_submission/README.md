@@ -5,7 +5,7 @@
 **Positioning:** Cross-cultural discovery & language-barrier-free networking — **NOT a dating app**
 **Date:** 2026-07-13 · **Status:** Submission-ready checklist
 
-> This guide is the **field-by-field listing + compliance** reference. The *product-repositioning* strategy that clears Apple **Guideline 4.3(b) (dating spam)** lives in [`../../APPLE_APPROVAL_PLAN_v3.0.0.md`](../../APPLE_APPROVAL_PLAN_v3.0.0.md) — read that first for Apple; this doc does not duplicate it.
+> This guide is the **field-by-field listing + compliance** reference. The *product-repositioning* strategy that clears Apple **Guideline 4.3(b) (dating spam)** lives in [`../../APPLE_APPROVAL_PLAN_v3.0.0.md`](../../../APPLE_APPROVAL_PLAN_v3.0.0.md) — read that first for Apple; this doc does not duplicate it.
 
 ## Documents
 - **[APPLE_APP_STORE.md](./APPLE_APP_STORE.md)** — every App Store Connect field + the Apple guidelines that block approval.
@@ -61,4 +61,4 @@ Metadata is easy; these are what cause real rejections for an app like GreenGo. 
 - [ ] Demo account + reviewer notes prepared (see per-platform docs).
 - [ ] Screenshots show Explore / Events / Community / language exchange — **no swipe deck, no faces grid**.
 
-*Companion: [`../../APPLE_APPROVAL_PLAN_v3.0.0.md`](../../APPLE_APPROVAL_PLAN_v3.0.0.md) (4.3(b) strategy) · [`../plan_on_scale/`](../plan_on_scale/) (backend scaling).*
+*Companion: [`../../APPLE_APPROVAL_PLAN_v3.0.0.md`](../../../APPLE_APPROVAL_PLAN_v3.0.0.md) (4.3(b) strategy) · [`../plan_on_scale/`](../plan_on_scale/) (backend scaling).*
