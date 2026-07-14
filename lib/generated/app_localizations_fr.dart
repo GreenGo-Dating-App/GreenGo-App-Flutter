@@ -11280,6 +11280,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventShare => 'Partager l\'événement';
 
   @override
+  String get shareAsLink => 'Partager le lien';
+
+  @override
   String get eventShared => 'Événement partagé';
 
   @override

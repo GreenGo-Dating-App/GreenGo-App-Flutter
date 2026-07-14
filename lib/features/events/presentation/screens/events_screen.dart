@@ -33,7 +33,6 @@ import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
 import '../../data/services/event_series_service.dart';
 import '../../data/services/events_cache_service.dart';
-import '../../../../core/services/deep_link_service.dart';
 import '../../domain/entities/event.dart';
 import '../../../safety/presentation/widgets/event_safety_checkin.dart';
 import '../bloc/events_bloc.dart';
@@ -1851,13 +1850,7 @@ class EventDetailsScreen extends StatelessWidget {
                   tooltip: AppLocalizations.of(context)!.eventsBoost,
                   onPressed: () => _handleBoost(context, event),
                 ),
-              // Share a deep link to this event (native OS share sheet).
-              IconButton(
-                icon: const Icon(Icons.ios_share, color: AppColors.richGold),
-                tooltip: AppLocalizations.of(context)!.shareEvent,
-                onPressed: () => shareEventLink(context, event.id),
-              ),
-              // Share event to chats / groups
+              // Single merged share: as a link, into an Exchange, or into a group.
               IconButton(
                 icon: const Icon(Icons.share, color: AppColors.richGold),
                 onPressed: () => showShareEventSheet(

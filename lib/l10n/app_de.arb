@@ -3681,6 +3681,7 @@
   "eventViewEvent": "Veranstaltung ansehen",
   "eventLoadError": "Diese Veranstaltung konnte nicht geladen werden",
   "eventShare": "Veranstaltung teilen",
+  "shareAsLink": "Als Link teilen",
   "eventShared": "Veranstaltung geteilt",
   "eventShareEmpty": "Noch keine Chats oder Gruppen zum Teilen",
   "eventsUnlimitedAttendees": "Unbegrenzte Teilnehmer",

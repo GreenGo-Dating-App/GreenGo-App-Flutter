@@ -5334,6 +5334,7 @@
   "eventViewEvent": "View event",
   "eventLoadError": "Couldn't load this event",
   "eventShare": "Share event",
+  "shareAsLink": "Share as link",
   "eventShared": "Event shared",
   "eventShareEmpty": "No chats or groups to share with yet",
   "eventsUnlimitedAttendees": "Unlimited attendees",
