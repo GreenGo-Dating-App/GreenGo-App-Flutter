@@ -7385,6 +7385,12 @@ abstract class AppLocalizations {
   /// **'People with your same interests'**
   String get exploreSameInterests;
 
+  /// No description provided for @exploreBusinessAccounts.
+  ///
+  /// In en, this message translates to:
+  /// **'Business accounts'**
+  String get exploreBusinessAccounts;
+
   /// No description provided for @exploreSpeaksLanguage.
   ///
   /// In en, this message translates to:

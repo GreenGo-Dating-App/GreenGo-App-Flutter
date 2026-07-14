@@ -56,10 +56,15 @@ class NetworkDiscoveryScreen extends StatefulWidget {
     this.initialPreferences,
     this.initialTags,
     this.initialQuery,
+    this.businessOnly = false,
     super.key,
   });
 
   final String userId;
+
+  /// When true, the grid shows ONLY business accounts (profiles with
+  /// `isBusiness == true`). Passed by Explore's "Business accounts → See all".
+  final bool businessOnly;
 
   /// When non-null and non-empty, the grid opens PRE-FILTERED by these
   /// interests (seeded into the discovery [MatchPreferences] on load). Passed by
@@ -369,6 +374,8 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           .where((c) => !c.profile.isAdmin && !c.profile.isSupport)
           // Never render the user's own tile inside the pool (it is pinned).
           .where((c) => c.profile.userId != widget.userId)
+          // Business-only mode: keep only business accounts.
+          .where((c) => !widget.businessOnly || c.profile.isBusiness)
           .toList();
 
       if (!mounted) return;
