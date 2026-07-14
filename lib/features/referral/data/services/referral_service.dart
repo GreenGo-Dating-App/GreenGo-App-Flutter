@@ -1,14 +1,8 @@
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
-
-import '../../../coins/data/datasources/coin_remote_datasource.dart';
-import '../../../coins/domain/entities/coin_transaction.dart';
-
-/// Coins granted to BOTH the referrer and the new user when a referral code is
-/// successfully redeemed. Adjustable.
-const int kReferralReward = 200; // adjustable
 
 /// Immutable snapshot of a user's referral state.
 @immutable
@@ -59,12 +53,10 @@ class ReferralStats {
 class ReferralService {
   ReferralService({
     required this.firestore,
-    required this.coinDataSource,
     Random? random,
   }) : _random = random ?? Random.secure();
 
   final FirebaseFirestore firestore;
-  final CoinRemoteDataSource coinDataSource;
   final Random _random;
 
   // Unambiguous charset (no 0/O/1/I/L) for human-friendly codes.
@@ -135,98 +127,30 @@ class ReferralService {
     });
   }
 
-  /// Redeems [code] for a brand-new user, granting [kReferralReward] coins to
-  /// BOTH the referrer and the new user.
+  /// Redeems [code] via the secure `redeemReferral` Cloud Function, which grants
+  /// the referrer +100 coins (capped at 1000/month) and gives this new user 1
+  /// month of Platinum. All validation (self-referral, single-redemption, cap)
+  /// is enforced server-side.
   ///
-  /// Returns `true` on success. Returns `false` (no throw) when the code is
-  /// invalid, is the user's own code, or the user has already redeemed a code.
-  ///
-  /// The single-redemption guard is claimed atomically inside a transaction on
-  /// `referrals/{newUserId}.redeemedCode` before any coins are granted.
+  /// [newUserId] is accepted for API compatibility but the server uses the
+  /// caller's auth uid. Returns `true` on success, `false` on any rejection
+  /// (invalid / own code / already redeemed) — never throws.
   Future<bool> redeemCode({
     required String newUserId,
     required String code,
   }) async {
     final normalized = code.trim().toUpperCase();
     if (normalized.isEmpty) return false;
-
-    String? ownerId;
-
     try {
-      ownerId = await firestore.runTransaction<String?>((transaction) async {
-        final newUserRef = _referralsCollection.doc(newUserId);
-        final newUserSnap = await transaction.get(newUserRef);
-
-        // Already redeemed? — guard.
-        final already = newUserSnap.data()?['redeemedCode'] as String?;
-        if (already != null && already.isNotEmpty) {
-          return null;
-        }
-
-        final codeSnap = await transaction.get(_codesCollection.doc(normalized));
-        if (!codeSnap.exists) return null;
-
-        final resolvedOwner = codeSnap.data()?['ownerId'] as String?;
-        if (resolvedOwner == null || resolvedOwner.isEmpty) return null;
-
-        // Cannot redeem your own code.
-        if (resolvedOwner == newUserId) return null;
-
-        // Claim the guard atomically (merge so we don't clobber an existing code).
-        transaction.set(newUserRef, {
-          'redeemedCode': normalized,
-          'redeemedFrom': resolvedOwner,
-          'redeemedAt': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
-
-        return resolvedOwner;
-      });
-    } catch (e) {
-      debugPrint('[Referral] redeem transaction failed: $e');
-      return false;
-    }
-
-    if (ownerId == null) return false;
-
-    // Guard is claimed — now grant coins to both parties via the existing
-    // coin credit path. relatedUserId is set to the redeeming user on the
-    // referrer's ledger entry so the coinTransactions security rule (writer
-    // must be a party to the entry) is satisfied.
-    try {
-      await coinDataSource.updateBalance(
-        userId: ownerId,
-        amount: kReferralReward,
-        type: CoinTransactionType.credit,
-        reason: CoinTransactionReason.referralBonus,
-        relatedUserId: newUserId,
-        metadata: {'referredUserId': newUserId, 'code': normalized},
-      );
-
-      await coinDataSource.updateBalance(
-        userId: newUserId,
-        amount: kReferralReward,
-        type: CoinTransactionType.credit,
-        reason: CoinTransactionReason.referralBonus,
-        relatedUserId: ownerId,
-        metadata: {'referrerId': ownerId, 'code': normalized},
-      );
-
-      // Increment the referrer's aggregate counters (merge in case the doc is
-      // absent — e.g. referrer created their code on another device).
-      await _referralsCollection.doc(ownerId).set({
-        'invitedCount': FieldValue.increment(1),
-        'coinsEarned': FieldValue.increment(kReferralReward),
-      }, SetOptions(merge: true));
-
-      // Track the new user's earned coins too.
-      await _referralsCollection.doc(newUserId).set({
-        'coinsEarned': FieldValue.increment(kReferralReward),
-      }, SetOptions(merge: true));
-
+      await FirebaseFunctions.instance
+          .httpsCallable('redeemReferral')
+          .call<dynamic>({'code': normalized});
       return true;
+    } on FirebaseFunctionsException catch (e) {
+      debugPrint('[Referral] redeemReferral failed: ${e.code} ${e.message}');
+      return false;
     } catch (e) {
-      debugPrint('[Referral] coin grant failed after redeem: $e');
-      // Guard remains claimed; coins may be partially granted. MVP-acceptable.
+      debugPrint('[Referral] redeemReferral error: $e');
       return false;
     }
   }

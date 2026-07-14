@@ -8,9 +8,16 @@ abstract class GroupChatEvent {
 
 /// Open a group: subscribe to its messages and mark it read.
 class GroupChatStarted extends GroupChatEvent {
-  const GroupChatStarted({required this.groupId, required this.userId});
+  const GroupChatStarted({
+    required this.groupId,
+    required this.userId,
+    this.limit,
+  });
   final String groupId;
   final String userId;
+
+  /// Bounded message window; grown as the user scrolls up for older messages.
+  final int? limit;
 }
 
 class GroupChatMessageSent extends GroupChatEvent {

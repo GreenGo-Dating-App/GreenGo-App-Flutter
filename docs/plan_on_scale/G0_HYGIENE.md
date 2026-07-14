@@ -352,6 +352,24 @@ G0 is low-risk by construction — it removes bugs and adds visibility; it chang
 
 ---
 
+## Trade-offs — What this gate adds and what it costs
+
+### ✅ What you gain
+- **Features / UX:** No more stale/ghost UI or late-callback crashes from leaked listeners — the un-cancelled audio streams in `edit_voice_screen.dart` (71/79/87) and `profile_detail_screen.dart` (90/93/96) stop firing into disposed screens, so the play/pause/seek UI stays correct and the app is less crash-prone (defends the crash-free SLO). Screens feel faster because fewer duplicate rebuilds fire.
+- **Performance:** Lower memory and battery use (dangling `StreamSubscription`s and their Firestore listeners are released on navigate-away); measurably fewer/cheaper Firestore reads once the unbounded queries are capped — `getConversationsStream` (`chat_remote_datasource.dart:667`) stops streaming a user's entire conversation history on every change, `getMessagesStream` (382–394) stops falling back to unbounded, and `notification_remote_datasource.dart:81-99` stops billing every notification doc before capping client-side. `main_navigation` drops from 5 to ≤3 concurrent listeners.
+- **Functionality / capability headroom:** The dead `PerformanceMonitoringService` becomes live telemetry — real p50/p95/p99 for message-send, feed-load, screen-open, and cold-start, which is the data every later gate triggers on. The PR checklist + pre-commit guard mean leaks and unbounded reads can't silently re-enter, keeping the G1–G4 scale-defense options open without building them yet.
+
+### ⚠️ What you give up / the costs
+- **Complexity & maintenance:** Near-zero net — this gate mostly *removes* code paths. The only additions are one grep guard script, a PR template, and ~4 trace call-sites; all small and self-documenting.
+- **Performance or UX regressions in specific paths:** Capping currently-"load everything" lists turns them into paginated/infinite-scroll (conversations, notifications, event attendees, coin ledger). Users who previously saw an entire list at once now see the first page and scroll for more — a minor, expected UX change, not a loss of data access.
+- **Feature/behavior changes required:** The `main_navigation` counter-merge changes how three badge counts are computed (one aggregate doc instead of three listeners); the notification server `.limit()` may make within-cap ordering arbitrary unless a composite index is added. Both are covered by tests/flags in §7.
+- **Engineering cost / dependencies:** ~2–3 dev-days one-time, no new package dependencies (Firebase Performance is already in `pubspec.yaml`). Small ongoing dev friction from the pre-commit guard (mitigated by the `// perf-ignore: bounded-elsewhere` opt-out).
+
+### Net verdict
+At any scale this gate is essentially pure win: it removes real bugs (listener leaks, crashes), cuts the Firestore read bill on paths that only get more expensive as users grow, and turns on the visibility the rest of the plan depends on — for a couple dev-days and no meaningful feature loss. The only genuine risk here is *not* doing it: the leaks and unbounded reads are cheap to fix today and turn into painful, costly slowdowns once the user base grows.
+
+---
+
 ## 10. Exit criteria → hand-off to G1
 
 G0 is **done** when the four exit conditions in §1 hold and §8 verification passes. Record the perf-trace p95 baselines (message-send, feed-load, screen-open, cold-start) in the gate notes — these become the reference the **G1** dashboards trigger on.

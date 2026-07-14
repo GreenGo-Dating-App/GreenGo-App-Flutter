@@ -4,7 +4,35 @@
 **Owner:** Eng lead · **Date:** 2026-07-13 · **Version:** v1 · **Status:** Ready to execute
 **Stack:** Flutter (Clean Arch + BLoC) · Firestore + Cloud Functions + FCM · migration target AlloyDB + GKE Autopilot + Pub/Sub
 
-> This plan is grounded in GreenGo's known architecture, not a live profile. **Phase 0 replaces every assumption below with measured data** — do not skip it. Where a task says "audit," it means: confirm current state in `Desktop\Projects\GreenGo-App-Flutter` before changing code.
+> This plan is grounded in a real audit of this repo, not just architecture notes. **Phase 0 replaces every remaining assumption with measured data** — do not skip it. Each gate below has its own deep-dive document with real code anchors.
+
+---
+
+## Detailed gate plans (this folder)
+
+This README is the overview and the activation-gate model. Each gate has a standalone deep-dive — tasks, real file references, code patterns, verification, and a gains/losses trade-off analysis:
+
+| Gate | Trigger | Theme | Document |
+|---|---|---|---|
+| **G0** | now / any scale | Hygiene (correct code, no complexity) | [`G0_HYGIENE.md`](./G0_HYGIENE.md) |
+| **G1** | ~100K | Observe & throttle | [`G1_OBSERVE_THROTTLE.md`](./G1_OBSERVE_THROTTLE.md) |
+| **G2** | ~1M | De-hotspot | [`G2_DE_HOTSPOT.md`](./G2_DE_HOTSPOT.md) |
+| **G3** | ~3M → 10M | Structural / migration kickoff | [`G3_STRUCTURAL.md`](./G3_STRUCTURAL.md) |
+| **G4** | ~10M+ | Distributed | [`G4_DISTRIBUTED.md`](./G4_DISTRIBUTED.md) |
+
+## Trade-offs at a glance — what each gate adds vs. what it costs
+
+Every gate is a deliberate trade. Full detail lives in each gate doc's *Trade-offs* section; this is the summary.
+
+| Gate | ✅ What you gain (features · performance · capability) | ⚠️ What you give up (complexity · regressions · cost) |
+|---|---|---|
+| **G0** | No leaked listeners (memory/battery/stale UI); bounded, cheaper, faster reads; real perf visibility; regression guard | Near-zero. Some "load-all" lists become infinite-scroll; small pre-commit/dev friction |
+| **G1** | Real observability; lower write volume + cost; faster feeds via cache-first | Typing/presence slightly less instant (debounced); feed staleness window; dashboard ops; `minInstances` idle cost |
+| **G2** | Removes the actual hotspot slowdowns; presence scales via RTDB; hot-doc alerting | Counters become **approximate/eventually-consistent**; adds RTDB as a 2nd datastore (rules, cost, dep); presence-swap migration risk |
+| **G3** | Breaks the ~10K writes/s ceiling; **transactional integrity** for money on AlloyDB; smoother UI (isolates); CDN | Two backends + dual-write; multi-month program; AlloyDB+GKE 24/7 run-cost; possible cutover freeze windows |
+| **G4** | 1B-user capacity; multi-region latency + DR/failover; falling cost/MAU | Highest ops complexity; **cross-shard loses global queries** (features must be shard-aware); data-residency limits; high fixed cost |
+
+> Read top-to-bottom, the app **gains scale and resilience** and **gives up simplicity and some real-time exactness** — but only when each gate's trigger forces the trade. Below a trigger, you keep the simpler, cheaper version.
 
 ---
 

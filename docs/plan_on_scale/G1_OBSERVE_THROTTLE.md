@@ -304,6 +304,24 @@ Alternatively set a project-wide floor with `setGlobalOptions({ maxInstances })`
 
 ---
 
+## Trade-offs — What this gate adds and what it costs
+
+### ✅ What you gain
+- **Features / UX:** Real operational visibility — two Cloud Monitoring dashboards (Firestore load + Functions) with alerts wired to the master SLO thresholds, so on-call sees a hotspot or latency breach in minutes instead of from user complaints. Feeds and hot-profile reads feel instant on repeat opens once the `external_events` cache-first pattern (`external_events_data_source.dart`) is extended to the two measured-hottest read paths.
+- **Performance:** Materially lower write volume at constant concurrency — throttling the shared-doc typing write (`chat_remote_datasource.dart` `setTypingIndicator`, ~L717) to ≤1/3s and the presence write (`presence_service.dart`) to ≤1/60s targets a ≥30% cut in churn writes/sec, which keeps `conversations/{id}` under the 20/s hotspot line and pushes out the ~7K/s per-database ceiling. Cache-first drops backend reads/user, holding feed p95 < 500 ms. If cold-start spikes appear, `minInstances` on `group_chat/fanout.ts` / `pushNotificationTriggers.ts` stabilizes fan-out/push p99.
+- **Functionality / capability headroom:** The dashboard *names the actually-hot documents*, turning G2's counter-sharding and RTDB-presence work from guesswork into a measured backlog. Firestore spend stops scaling linearly with churn. All wins land as reversible feature flags.
+
+### ⚠️ What you give up / the costs
+- **Complexity & maintenance:** Two dashboards + five alerts + a new `WriteThrottle` util + a per-signal flag set (`g1_flags`) to own and keep tuned. The `monitored()` sampler in `functions/src/shared/monitoring.ts` grows a `docPath`-frequency path to maintain.
+- **Performance or UX regressions in specific paths:** The typing indicator is no longer keystroke-instant (leading-edge ≤1 write/3s + a trailing "stopped" write); presence/last-seen dots can lag real state by up to ~60 s; cache-first introduces a staleness window on feeds/profiles bounded by the 5-min TTL — a just-changed name/photo can be briefly stale until revalidation.
+- **Feature/behavior changes required:** `chat_bloc.dart` `_onTypingIndicatorChanged` must route through the throttle; `PresenceService._setOnline` needs a 60 s min-interval guard; `markConversationAsRead` needs a debounced trigger; hot reads need an explicit TTL cache + `invalidate()` on local writes. Each is a small but real edit to a live path.
+- **Engineering cost / dependencies:** ~8 dev-days total (dashboards ~2, throttles ~3, caching ~2.5, conditional minInstances ~0.5–1). Depends on Cloud Monitoring being enabled and G0 being complete. Enabling `minInstances` bills for idle warm instances 24/7 — a permanent recurring cost, hence its strictly-conditional gate.
+
+### Net verdict
+A strong, clearly positive trade from ~100K users up. The gate buys the visibility and write-volume headroom the app needs before real pressure arrives, at a modest and mostly reversible cost. The only things genuinely surrendered are a little real-time fidelity on typing/presence and a bounded data-freshness window on cached feeds — all flag-gated, all tunable, and all cheap to roll back if a canary regresses. Nothing here is one-way: throttle rates, TTLs, and `minInstances` floors are dials, not commitments. Do it at ~70K so it's live before 100K.
+
+---
+
 ## 10. Exit criteria → hand-off to G2
 
 G1 exits (and G2 planning begins) when **all** hold:

@@ -672,7 +672,6 @@ Future<void> init() async {
   sl.registerLazySingleton<ReferralService>(
     () => ReferralService(
       firestore: sl(),
-      coinDataSource: sl(),
     ),
   );
 

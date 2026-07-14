@@ -263,6 +263,24 @@ Keep the existing per-user SharedPreferences cache ([`events_cache_service.dart`
 
 ---
 
+## Trade-offs — What this gate adds and what it costs
+
+### ✅ What you gain
+- **Features / UX:** the money domain (coins, membership, subscriptions) gains **true transactional integrity** on AlloyDB — atomic balance checks + ledger inserts (see [`02-target-architecture.md`](../migration/02-target-architecture.md) §3.2 spend-coins sequence), replacing best-effort Firestore document writes and the duplicate schemas (`coinTransactions`/`coin_transactions`) that make reconciliation fragile today. Users get correct balances under concurrency; disputes become auditable.
+- **Performance:** you **break the ~10K writes/sec single-database ceiling** — the whole reason this gate exists. Sharding readiness splits the write domain across databases and AlloyDB removes the money domain's writes from Firestore entirely, restoring write headroom. Client-side, isolates make the 9-way geohash fan-out + distance-sort in [`external_events_data_source.dart`](../../lib/features/events/data/datasources/external_events_data_source.dart) and [`geo_query.dart`](../../lib/core/utils/geo_query.dart) (where `compute()` is used **nowhere today**) run without UI-thread stalls; CDN/bundles cut per-view reads on shared content to once-per-TTL.
+- **Functionality / capability headroom:** the GKE Autopilot WebSocket presence fleet offloads presence/chat from Firestore document writes ([`presence_service.dart`](../../lib/core/services/presence_service.dart) currently writes `isOnline`/`lastSeen` straight to `profiles/{uid}`), and Pub/Sub gives buffered, replayable fan-out. This is the capacity to actually stand behind a "10M+" claim.
+
+### ⚠️ What you give up / the costs
+- **Complexity & maintenance:** you now operate **two backends** (Firestore + AlloyDB/GKE) with **dual-write and hybrid consistency** to manage, monitor, and reconcile — a permanent step-up in operational surface versus the Firebase-native monolith.
+- **Performance or UX regressions in specific paths:** you trade Firestore's built-in real-time listeners + offline sync on presence/chat for **WebSocket infra you must run and monitor**; a poorly-tuned WS fleet or Redis presence layer can be *staler or flakier* than the Firestore path it replaces until it's hardened (mitigated by the 60 s reconcile + canary).
+- **Feature/behavior changes required:** the **117 files (246 occurrences) that call `FirebaseFirestore.instance` directly** must be funnelled through the DI shard seam (`ShardedFirestoreProvider`) before sharding can be flipped on — until then those call sites are un-shardable. Cross-user operations (chat between users on different `userId` shards) must stop assuming co-location.
+- **Engineering cost / dependencies:** this is a **multi-month program**, not a sprint — the deep execution lives in [`../migration/`](../migration/) (P4 money-domain, GKE platform, Pub/Sub backbone). AlloyDB + GKE Autopilot run **24/7 at real cost** (see [`11-cost-finops.md`](../migration/11-cost-finops.md)), and each strangler-fig cutover implies a **feature-slowdown or freeze window** for the domain being moved.
+
+### Net verdict
+This gate is **unavoidable to pass ~10M** — the single-DB write ceiling is a hard wall, and the money domain genuinely becomes *more correct* on AlloyDB, not just more scalable. It is also the gate where **architectural complexity and run-cost jump sharply**: you go from one managed backend to a hybrid you own end-to-end. The strangler-fig discipline (one workload at a time, dual-write, reconcile, cohort canary, seconds-to-rollback) is precisely what keeps that jump from being a risky big-bang. Skipping G3 doesn't save the complexity — it just means hitting the write ceiling with no escape hatch and stalling growth short of 10M.
+
+---
+
 ## 10. Exit criteria → hand-off to G4
 
 G3 is complete when **all** hold:
