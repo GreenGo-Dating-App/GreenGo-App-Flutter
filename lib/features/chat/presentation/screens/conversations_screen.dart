@@ -28,9 +28,15 @@ class ConversationsScreen extends StatefulWidget {
   const ConversationsScreen({
     required this.userId, super.key,
     this.onBadgeDecrement,
+    this.showAppBar = false,
   });
   final String userId;
   final void Function(int decrementBy)? onBadgeDecrement;
+
+  /// When pushed as a standalone route (e.g. from Explore → People) there is no
+  /// main-nav shell header, so render our own "Exchanges" title bar. The shell
+  /// (main navigation) leaves this false and supplies its own AppBar.
+  final bool showAppBar;
 
   @override
   State<ConversationsScreen> createState() => _ConversationsScreenState();
@@ -272,6 +278,16 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   }
 
   bool _passesFilter(Conversation conversation) {
+    // A conversation is only a real "chat" once at least one message has been
+    // sent AND it hasn't been canceled/deleted for this user. The approval queue
+    // ("To Approve") is the one exception — pending connection requests can
+    // legitimately precede the first message.
+    final deletedForMe = conversation.isDeleted ||
+        (conversation.deletedFor?.containsKey(widget.userId) ?? false);
+    final isRealChat = conversation.lastMessage != null && !deletedForMe;
+    if (_selectedFilter != ConversationFilter.toApprove && !isRealChat) {
+      return false;
+    }
     switch (_selectedFilter) {
       case ConversationFilter.all:
         // "All" excludes support, search (directs), and pending superLikes
@@ -310,11 +326,33 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   @override
   Widget build(BuildContext context) {
     _userDefaultLanguage = Provider.of<LanguageProvider>(context, listen: false).currentLocale.languageCode;
+    final l10n = AppLocalizations.of(context)!;
     return BlocProvider(
       create: (context) => di.sl<ConversationsBloc>()
         ..add(ConversationsLoadRequested(widget.userId)),
       child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
+        // Standalone route (e.g. from Explore): render the "Exchanges" title bar
+        // ourselves — deliberately WITHOUT the notification icon and tier badge.
+        appBar: widget.showAppBar
+            ? AppBar(
+                backgroundColor: Colors.transparent,
+                elevation: 0,
+                leading: IconButton(
+                  icon: const Icon(Icons.arrow_back,
+                      color: AppColors.textPrimary),
+                  onPressed: () => Navigator.of(context).maybePop(),
+                ),
+                title: Text(
+                  l10n.messages,
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.textPrimary,
+                  ),
+                ),
+              )
+            : null,
         // "New group" lives only on the Groups tab now.
         body: BlocBuilder<ConversationsBloc, ConversationsState>(
           builder: (context, state) {

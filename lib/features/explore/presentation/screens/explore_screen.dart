@@ -7,7 +7,6 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/interaction_log_service.dart';
-import '../../../../core/services/tier_gate.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
@@ -336,6 +335,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
             .get();
         for (final doc in snap.docs) {
           final data = doc.data();
+          // Count only REAL chats: at least one message sent and not
+          // canceled/deleted for this user (matches the Exchanges list rule).
+          if (data['lastMessage'] == null) continue;
+          if (data['isDeleted'] == true) continue;
+          final deletedFor = data['deletedFor'];
+          if (deletedFor is Map && deletedFor.containsKey(widget.userId)) {
+            continue;
+          }
           final u1 = data['userId1'] as String?;
           final u2 = data['userId2'] as String?;
           final other = u1 == widget.userId ? u2 : u1;
@@ -1624,7 +1631,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   void _openMembership() {
-    TierGate().openMembershipUpgrade(context, currentUserId: widget.userId);
+    // Tier tile → the Shop opened on its Membership tab (index 1).
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider<CoinBloc>(
+          create: (_) => di.sl<CoinBloc>()
+            ..add(LoadCoinBalance(widget.userId))
+            ..add(const LoadAvailablePackages()),
+          child: CoinShopScreen(userId: widget.userId, initialTab: 1),
+        ),
+      ),
+    );
   }
 
   void _openWorldMap() {
@@ -1641,7 +1658,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   void _openExchange() {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => ConversationsScreen(userId: widget.userId),
+        builder: (_) =>
+            ConversationsScreen(userId: widget.userId, showAppBar: true),
       ),
     );
   }

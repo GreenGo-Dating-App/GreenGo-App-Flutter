@@ -26,7 +26,6 @@ import '../../../../core/widgets/base_membership_dialog.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/widgets/home_skeleton.dart';
 import '../../../../core/widgets/glass_bottom_nav.dart';
-import '../../../../core/widgets/membership_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../app_guide/presentation/screens/app_guide_screen.dart';
 // App Tour imports
@@ -1735,11 +1734,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           ),
           backgroundColor: AppColors.backgroundDark,
           elevation: 0,
-          actions: [
-            _buildNotificationButton(),
-            _buildMembershipBadgeWidget(),
-            const SizedBox(width: 8),
-          ],
+          // Exchanges intentionally omits the notification icon and tier badge.
         );
       }
       return null;
@@ -1897,11 +1892,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         ),
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        actions: [
-          _buildNotificationButton(),
-          _buildMembershipBadgeWidget(),
-          const SizedBox(width: 8),
-        ],
+        // Exchanges intentionally omits the notification icon and tier badge.
       );
     } else if (_currentIndex == 2) {
       // Leaderboard - no app bar (has its own)
@@ -2076,12 +2067,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     return balance.toString();
   }
 
-  /// Membership badge widget for app bar
-  Widget _buildMembershipBadgeWidget() {
-    return MembershipIndicator(
-      tier: _membershipTier,
-    );
-  }
 
   Widget _buildBadgeIcon(IconData icon, int count) {
     if (count <= 0) return Icon(icon);
