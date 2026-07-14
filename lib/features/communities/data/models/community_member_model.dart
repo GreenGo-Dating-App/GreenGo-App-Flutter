@@ -12,6 +12,8 @@ class CommunityMemberModel extends CommunityMember {
     super.role,
     super.languages,
     super.isLocalGuide,
+    super.isMuted,
+    super.isBanned,
   });
 
   /// Create from CommunityMember entity
@@ -24,6 +26,8 @@ class CommunityMemberModel extends CommunityMember {
       joinedAt: member.joinedAt,
       languages: member.languages,
       isLocalGuide: member.isLocalGuide,
+      isMuted: member.isMuted,
+      isBanned: member.isBanned,
     );
   }
 
@@ -45,6 +49,8 @@ class CommunityMemberModel extends CommunityMember {
           ? List<String>.from(data['languages'] as List)
           : const [],
       isLocalGuide: data['isLocalGuide'] as bool? ?? false,
+      isMuted: data['isMuted'] as bool? ?? false,
+      isBanned: data['isBanned'] as bool? ?? false,
     );
   }
 
@@ -64,6 +70,8 @@ class CommunityMemberModel extends CommunityMember {
           ? List<String>.from(json['languages'] as List)
           : const [],
       isLocalGuide: json['isLocalGuide'] as bool? ?? false,
+      isMuted: json['isMuted'] as bool? ?? false,
+      isBanned: json['isBanned'] as bool? ?? false,
     );
   }
 
@@ -76,6 +84,8 @@ class CommunityMemberModel extends CommunityMember {
       'joinedAt': Timestamp.fromDate(joinedAt),
       'languages': languages,
       'isLocalGuide': isLocalGuide,
+      'isMuted': isMuted,
+      'isBanned': isBanned,
     };
   }
 
@@ -89,6 +99,8 @@ class CommunityMemberModel extends CommunityMember {
       'joinedAt': joinedAt.toIso8601String(),
       'languages': languages,
       'isLocalGuide': isLocalGuide,
+      'isMuted': isMuted,
+      'isBanned': isBanned,
     };
   }
 
@@ -102,6 +114,8 @@ class CommunityMemberModel extends CommunityMember {
       joinedAt: joinedAt,
       languages: languages,
       isLocalGuide: isLocalGuide,
+      isMuted: isMuted,
+      isBanned: isBanned,
     );
   }
 }

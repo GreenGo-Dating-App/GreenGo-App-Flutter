@@ -81,6 +81,44 @@ abstract class CommunitiesRemoteDataSource {
     required CommunityRole newRole,
   });
 
+  /// Update a member's moderation flags (mute / ban).
+  Future<void> updateMemberModeration({
+    required String communityId,
+    required String userId,
+    bool? isMuted,
+    bool? isBanned,
+  });
+
+  /// Remove a member from a community (owner/admin action).
+  Future<void> removeMember({
+    required String communityId,
+    required String userId,
+  });
+
+  /// Communities the user OWNS or ADMINISTERS (for the event → community linker).
+  Future<List<CommunityModel>> getManageableCommunities(String userId);
+
+  /// Create a pending join request for a PRIVATE community.
+  Future<void> requestToJoin({
+    required String communityId,
+    required CommunityMemberModel request,
+  });
+
+  /// Pending join requests for a community (owner/admin review).
+  Future<List<CommunityMemberModel>> getJoinRequests(String communityId);
+
+  /// Approve a pending join request → creates the member + clears the request.
+  Future<void> approveJoinRequest({
+    required String communityId,
+    required String userId,
+  });
+
+  /// Reject (delete) a pending join request.
+  Future<void> rejectJoinRequest({
+    required String communityId,
+    required String userId,
+  });
+
   /// Seed sample communities (for development)
   Future<void> seedSampleCommunities();
 }
@@ -103,6 +141,10 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   /// Reference to messages subcollection
   CollectionReference _messagesRef(String communityId) =>
       _communitiesRef.doc(communityId).collection('messages');
+
+  /// Reference to the pending join-requests subcollection (private communities).
+  CollectionReference _joinRequestsRef(String communityId) =>
+      _communitiesRef.doc(communityId).collection('join_requests');
 
   @override
   Future<List<CommunityModel>> getCommunities({
@@ -483,6 +525,142 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       });
     } catch (e) {
       debugPrint('Error updating member role: $e');
+      rethrow;
+    }
+  }
+
+  @override
+  Future<void> updateMemberModeration({
+    required String communityId,
+    required String userId,
+    bool? isMuted,
+    bool? isBanned,
+  }) async {
+    try {
+      final data = <String, dynamic>{};
+      if (isMuted != null) data['isMuted'] = isMuted;
+      if (isBanned != null) data['isBanned'] = isBanned;
+      if (data.isEmpty) return;
+      await _membersRef(communityId).doc(userId).update(data);
+    } catch (e) {
+      debugPrint('Error updating member moderation: $e');
+      rethrow;
+    }
+  }
+
+  @override
+  Future<void> removeMember({
+    required String communityId,
+    required String userId,
+  }) async {
+    // Reuse the leave flow (delete member doc + decrement count).
+    await leaveCommunity(communityId: communityId, userId: userId);
+  }
+
+  @override
+  Future<List<CommunityModel>> getManageableCommunities(String userId) async {
+    try {
+      // The user's member docs across all communities, filtered to the ones
+      // where they are owner/admin (they may manage those).
+      final memberDocs = await _firestore
+          .collectionGroup('members')
+          .where(FieldPath.documentId, isEqualTo: userId)
+          .get();
+
+      final manageableIds = memberDocs.docs
+          .where((d) {
+            final role = (d.data() as Map<String, dynamic>?)?['role'] as String?;
+            return role == 'owner' || role == 'admin';
+          })
+          .map((d) => d.reference.parent.parent?.id)
+          .whereType<String>()
+          .toList();
+
+      if (manageableIds.isEmpty) return [];
+
+      final communities = <CommunityModel>[];
+      for (var i = 0; i < manageableIds.length; i += 10) {
+        final batchIds = manageableIds.sublist(
+          i,
+          i + 10 > manageableIds.length ? manageableIds.length : i + 10,
+        );
+        final snapshot = await _communitiesRef
+            .where(FieldPath.documentId, whereIn: batchIds)
+            .get();
+        communities.addAll(snapshot.docs.map(CommunityModel.fromFirestore));
+      }
+      communities.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+      return communities;
+    } catch (e) {
+      debugPrint('Error getting manageable communities: $e');
+      rethrow;
+    }
+  }
+
+  @override
+  Future<void> requestToJoin({
+    required String communityId,
+    required CommunityMemberModel request,
+  }) async {
+    try {
+      // Store the requester's snapshot at join_requests/{userId}. `joinedAt`
+      // doubles as the request time; role is ignored until approval.
+      await _joinRequestsRef(communityId)
+          .doc(request.userId)
+          .set(request.toFirestore());
+    } catch (e) {
+      debugPrint('Error requesting to join community: $e');
+      rethrow;
+    }
+  }
+
+  @override
+  Future<List<CommunityMemberModel>> getJoinRequests(
+    String communityId,
+  ) async {
+    try {
+      final snapshot = await _joinRequestsRef(communityId)
+          .orderBy('joinedAt', descending: false)
+          .get();
+      return snapshot.docs.map(CommunityMemberModel.fromFirestore).toList();
+    } catch (e) {
+      debugPrint('Error getting join requests: $e');
+      rethrow;
+    }
+  }
+
+  @override
+  Future<void> approveJoinRequest({
+    required String communityId,
+    required String userId,
+  }) async {
+    try {
+      final reqDoc = await _joinRequestsRef(communityId).doc(userId).get();
+      if (!reqDoc.exists) return;
+      final data = reqDoc.data() as Map<String, dynamic>? ?? {};
+
+      final batch = _firestore.batch();
+      // Promote the request into a real member doc (role defaults to member).
+      batch.set(_membersRef(communityId).doc(userId), data);
+      batch.update(_communitiesRef.doc(communityId),
+          {'memberCount': FieldValue.increment(1)});
+      batch.delete(_joinRequestsRef(communityId).doc(userId));
+      await batch.commit();
+    } catch (e) {
+      debugPrint('Error approving join request: $e');
+      rethrow;
+    }
+  }
+
+  @override
+  Future<void> rejectJoinRequest({
+    required String communityId,
+    required String userId,
+  }) async {
+    try {
+      await _joinRequestsRef(communityId).doc(userId).delete();
+    } catch (e) {
+      debugPrint('Error rejecting join request: $e');
       rethrow;
     }
   }

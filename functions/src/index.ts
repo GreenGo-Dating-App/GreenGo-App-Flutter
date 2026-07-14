@@ -122,6 +122,17 @@ export {
   onEventPublishedNotifyFollowers,
 } from './events/business_new_event';
 
+// Communities — announcement → members push fan-out.
+export {
+  onCommunityAnnouncementCreated,
+} from './communities/announcementFanout';
+
+// Communities — community event published → members push fan-out.
+export {
+  onCommunityEventCreated,
+  onCommunityEventPublished,
+} from './communities/eventFanout';
+
 // Events — scheduled reminders.
 export {
   sendEventReminders,

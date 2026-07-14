@@ -12,6 +12,8 @@ class CommunityMember extends Equatable {
     this.role = CommunityRole.member,
     this.languages = const [],
     this.isLocalGuide = false,
+    this.isMuted = false,
+    this.isBanned = false,
   });
   final String userId;
   final String displayName;
@@ -20,6 +22,13 @@ class CommunityMember extends Equatable {
   final DateTime joinedAt;
   final List<String> languages;
   final bool isLocalGuide;
+
+  /// Moderation: a muted member stays in the community but cannot post.
+  final bool isMuted;
+
+  /// Moderation: a banned member is hidden from the roster, blocked from
+  /// posting, and blocked from rejoining.
+  final bool isBanned;
 
   /// Check if member is an admin or owner
   bool get isAdminOrOwner =>
@@ -37,6 +46,8 @@ class CommunityMember extends Equatable {
     DateTime? joinedAt,
     List<String>? languages,
     bool? isLocalGuide,
+    bool? isMuted,
+    bool? isBanned,
   }) {
     return CommunityMember(
       userId: userId ?? this.userId,
@@ -46,6 +57,8 @@ class CommunityMember extends Equatable {
       joinedAt: joinedAt ?? this.joinedAt,
       languages: languages ?? this.languages,
       isLocalGuide: isLocalGuide ?? this.isLocalGuide,
+      isMuted: isMuted ?? this.isMuted,
+      isBanned: isBanned ?? this.isBanned,
     );
   }
 
@@ -58,6 +71,8 @@ class CommunityMember extends Equatable {
         joinedAt,
         languages,
         isLocalGuide,
+        isMuted,
+        isBanned,
       ];
 }
 

@@ -1,36 +1,108 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/community_message.dart';
 
 /// Community Message Bubble Widget
 ///
-/// Displays a message in the community group chat with sender info,
-/// special styling for language tips, cultural facts, and city tips
-class CommunityMessageBubble extends StatelessWidget {
-
+/// Displays a message in the community group chat with sender info and special
+/// styling for language tips, cultural facts, and city tips. Supports on-demand
+/// translation into the viewer's language (like 1:1/group chat) and long-press
+/// to report.
+class CommunityMessageBubble extends StatefulWidget {
   const CommunityMessageBubble({
-    required this.message, required this.isCurrentUser, super.key,
+    required this.message,
+    required this.isCurrentUser,
+    super.key,
     this.showSenderInfo = true,
+    this.currentUserLanguage = 'en',
+    this.onReport,
   });
+
   final CommunityMessage message;
   final bool isCurrentUser;
   final bool showSenderInfo;
 
+  /// The viewer's preferred language — target for on-demand translation.
+  final String currentUserLanguage;
+
+  /// Long-press action to report this message's author (null = not reportable).
+  final VoidCallback? onReport;
+
+  @override
+  State<CommunityMessageBubble> createState() => _CommunityMessageBubbleState();
+}
+
+class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
+  String? _translated;
+  bool _translating = false;
+  bool _showingTranslation = false;
+
+  CommunityMessage get message => widget.message;
+  bool get isCurrentUser => widget.isCurrentUser;
+  bool get showSenderInfo => widget.showSenderInfo;
+
+  String get _displayContent => _showingTranslation && _translated != null
+      ? _translated!
+      : message.content;
+
+  Future<void> _toggleTranslate() async {
+    if (_translated != null) {
+      setState(() => _showingTranslation = !_showingTranslation);
+      return;
+    }
+    setState(() => _translating = true);
+    try {
+      final result = await TranslationService().translate(
+        text: message.content,
+        sourceLanguage: 'auto',
+        targetLanguage: widget.currentUserLanguage,
+      );
+      if (!mounted) return;
+      setState(() {
+        _translated = result;
+        _showingTranslation = true;
+        _translating = false;
+      });
+    } catch (_) {
+      if (mounted) setState(() => _translating = false);
+    }
+  }
+
+  Widget _translateAction({required Color color}) {
+    final l10n = AppLocalizations.of(context)!;
+    return GestureDetector(
+      onTap: _translating ? null : _toggleTranslate,
+      child: Padding(
+        padding: const EdgeInsets.only(top: 4),
+        child: Text(
+          _translating
+              ? l10n.communitiesTranslating
+              : (_showingTranslation
+                  ? l10n.communitiesShowOriginal
+                  : l10n.communitiesTranslate),
+          style: TextStyle(
+            color: color,
+            fontSize: 11,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    // System messages are centered
     if (message.type == CommunityMessageType.system) {
       return _buildSystemMessage();
     }
-
-    // Special message types (language tip, cultural fact, city tip)
-    if (message.isSpecialType) {
-      return _buildSpecialMessage(context);
-    }
-
-    return _buildRegularMessage();
+    final child = message.isSpecialType
+        ? _buildSpecialMessage(context)
+        : _buildRegularMessage();
+    if (widget.onReport == null) return child;
+    return GestureDetector(onLongPress: widget.onReport, child: child);
   }
 
   Widget _buildRegularMessage() {
@@ -46,12 +118,10 @@ class CommunityMessageBubble extends StatelessWidget {
           crossAxisAlignment:
               isCurrentUser ? CrossAxisAlignment.end : CrossAxisAlignment.start,
           children: [
-            // Sender name + avatar (for other users)
             if (!isCurrentUser && showSenderInfo) ...[
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Avatar
                   CircleAvatar(
                     radius: 12,
                     backgroundColor: AppColors.backgroundInput,
@@ -84,8 +154,6 @@ class CommunityMessageBubble extends StatelessWidget {
               ),
               const SizedBox(height: 4),
             ],
-
-            // Message bubble
             Container(
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
               decoration: BoxDecoration(
@@ -111,7 +179,7 @@ class CommunityMessageBubble extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    message.content,
+                    _displayContent,
                     style: TextStyle(
                       color: isCurrentUser
                           ? AppColors.deepBlack
@@ -120,14 +188,25 @@ class CommunityMessageBubble extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                    message.timeText,
-                    style: TextStyle(
-                      color: isCurrentUser
-                          ? AppColors.deepBlack.withValues(alpha: 0.6)
-                          : AppColors.textTertiary,
-                      fontSize: 10,
-                    ),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        message.timeText,
+                        style: TextStyle(
+                          color: isCurrentUser
+                              ? AppColors.deepBlack.withValues(alpha: 0.6)
+                              : AppColors.textTertiary,
+                          fontSize: 10,
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      _translateAction(
+                        color: isCurrentUser
+                            ? AppColors.deepBlack.withValues(alpha: 0.8)
+                            : AppColors.richGold,
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -158,14 +237,9 @@ class CommunityMessageBubble extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header row with icon + type label + sender
           Row(
             children: [
-              Icon(
-                config.icon,
-                color: config.iconColor,
-                size: 18,
-              ),
+              Icon(config.icon, color: config.iconColor, size: 18),
               const SizedBox(width: 6),
               Text(
                 config.label,
@@ -186,10 +260,8 @@ class CommunityMessageBubble extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 8),
-
-          // Content
           Text(
-            message.content,
+            _displayContent,
             style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 14,
@@ -197,17 +269,18 @@ class CommunityMessageBubble extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-
-          // Time
-          Align(
-            alignment: Alignment.bottomRight,
-            child: Text(
-              message.timeText,
-              style: const TextStyle(
-                color: AppColors.textTertiary,
-                fontSize: 10,
+          Row(
+            children: [
+              _translateAction(color: config.iconColor),
+              const Spacer(),
+              Text(
+                message.timeText,
+                style: const TextStyle(
+                  color: AppColors.textTertiary,
+                  fontSize: 10,
+                ),
               ),
-            ),
+            ],
           ),
         ],
       ),

@@ -55,6 +55,7 @@ class CommunityDetailLoaded extends CommunitiesState {
     this.messages = const [],
     this.isMember = false,
     this.isSending = false,
+    this.pendingRequests = const [],
   });
   final Community community;
   final List<CommunityMember> members;
@@ -62,12 +63,16 @@ class CommunityDetailLoaded extends CommunitiesState {
   final bool isMember;
   final bool isSending;
 
+  /// Pending join requests (private communities) — loaded for owner/admins.
+  final List<CommunityMember> pendingRequests;
+
   CommunityDetailLoaded copyWith({
     Community? community,
     List<CommunityMember>? members,
     List<CommunityMessage>? messages,
     bool? isMember,
     bool? isSending,
+    List<CommunityMember>? pendingRequests,
   }) {
     return CommunityDetailLoaded(
       community: community ?? this.community,
@@ -75,6 +80,7 @@ class CommunityDetailLoaded extends CommunitiesState {
       messages: messages ?? this.messages,
       isMember: isMember ?? this.isMember,
       isSending: isSending ?? this.isSending,
+      pendingRequests: pendingRequests ?? this.pendingRequests,
     );
   }
 }
@@ -90,6 +96,13 @@ class CommunityCreated extends CommunitiesState {
 class CommunityJoined extends CommunitiesState {
 
   const CommunityJoined({required this.communityId});
+  final String communityId;
+}
+
+/// Join request submitted for a private community (awaiting approval).
+class CommunityJoinRequested extends CommunitiesState {
+
+  const CommunityJoinRequested({required this.communityId});
   final String communityId;
 }
 

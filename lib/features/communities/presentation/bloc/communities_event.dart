@@ -130,6 +130,67 @@ class CommunityMessagesUpdated extends CommunitiesEvent {
   final List<CommunityMessage> messages;
 }
 
+/// Request to join a PRIVATE community (creates a pending request).
+class RequestToJoinCommunity extends CommunitiesEvent {
+
+  const RequestToJoinCommunity({
+    required this.communityId,
+    required this.userId,
+    required this.displayName,
+    this.photoUrl,
+    this.languages = const [],
+    this.isLocalGuide = false,
+  });
+  final String communityId;
+  final String userId;
+  final String displayName;
+  final String? photoUrl;
+  final List<String> languages;
+  final bool isLocalGuide;
+}
+
+/// Load pending join requests (owner/admin) into the detail state.
+class LoadJoinRequests extends CommunitiesEvent {
+  const LoadJoinRequests({required this.communityId});
+  final String communityId;
+}
+
+/// Approve a pending join request.
+class ApproveJoinRequest extends CommunitiesEvent {
+  const ApproveJoinRequest({required this.communityId, required this.userId});
+  final String communityId;
+  final String userId;
+}
+
+/// Reject a pending join request.
+class RejectJoinRequest extends CommunitiesEvent {
+  const RejectJoinRequest({required this.communityId, required this.userId});
+  final String communityId;
+  final String userId;
+}
+
+/// Moderation action on a member (promote/demote/remove/mute/unmute/ban).
+enum MemberModerationAction {
+  promoteToAdmin,
+  demoteToMember,
+  remove,
+  mute,
+  unmute,
+  ban,
+}
+
+/// Apply a moderation action to a member, then refresh the members list.
+class ModerateMember extends CommunitiesEvent {
+  const ModerateMember({
+    required this.communityId,
+    required this.userId,
+    required this.action,
+  });
+  final String communityId;
+  final String userId;
+  final MemberModerationAction action;
+}
+
 /// Seed sample communities (development only)
 class SeedSampleCommunities extends CommunitiesEvent {
   const SeedSampleCommunities();

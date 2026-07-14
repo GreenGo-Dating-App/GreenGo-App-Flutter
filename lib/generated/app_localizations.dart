@@ -22457,6 +22457,240 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Denied'**
   String get scanResultDenied;
+
+  /// No description provided for @communitiesTabChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat'**
+  String get communitiesTabChat;
+
+  /// No description provided for @communitiesTabTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Tips'**
+  String get communitiesTabTips;
+
+  /// No description provided for @communitiesTabAnnouncements.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcements'**
+  String get communitiesTabAnnouncements;
+
+  /// No description provided for @communitiesTabEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Events'**
+  String get communitiesTabEvents;
+
+  /// No description provided for @communitiesJoinRequestSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Request sent — awaiting approval'**
+  String get communitiesJoinRequestSent;
+
+  /// No description provided for @communitiesJoinRequestsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Join requests'**
+  String get communitiesJoinRequestsTitle;
+
+  /// No description provided for @communitiesTipsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No tips yet. Share a language tip, cultural fact, or city tip from the chat.'**
+  String get communitiesTipsEmpty;
+
+  /// No description provided for @communitiesAnnouncementsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No announcements yet.'**
+  String get communitiesAnnouncementsEmpty;
+
+  /// No description provided for @communitiesPostAnnouncement.
+  ///
+  /// In en, this message translates to:
+  /// **'Post announcement'**
+  String get communitiesPostAnnouncement;
+
+  /// No description provided for @communitiesRequestToJoin.
+  ///
+  /// In en, this message translates to:
+  /// **'Request to join'**
+  String get communitiesRequestToJoin;
+
+  /// No description provided for @communitiesMutedNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve been muted in this community'**
+  String get communitiesMutedNotice;
+
+  /// No description provided for @communitiesRulesResourcesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rules & resources'**
+  String get communitiesRulesResourcesTitle;
+
+  /// No description provided for @communitiesRulesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Community rules'**
+  String get communitiesRulesLabel;
+
+  /// No description provided for @communitiesRulesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidelines for members…'**
+  String get communitiesRulesHint;
+
+  /// No description provided for @communitiesResourcesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Resource links'**
+  String get communitiesResourcesLabel;
+
+  /// No description provided for @communitiesResourceTitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get communitiesResourceTitleHint;
+
+  /// No description provided for @communitiesResourceUrlHint.
+  ///
+  /// In en, this message translates to:
+  /// **'https://…'**
+  String get communitiesResourceUrlHint;
+
+  /// No description provided for @communitiesAddResource.
+  ///
+  /// In en, this message translates to:
+  /// **'Add link'**
+  String get communitiesAddResource;
+
+  /// No description provided for @communitiesSaveLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get communitiesSaveLabel;
+
+  /// No description provided for @communitiesAddRulesPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'Add rules & resources for this community'**
+  String get communitiesAddRulesPrompt;
+
+  /// No description provided for @communitiesAnnouncementHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Write an announcement to all members…'**
+  String get communitiesAnnouncementHint;
+
+  /// No description provided for @communitiesPostLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Post'**
+  String get communitiesPostLabel;
+
+  /// No description provided for @communitiesPromoteMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Promote to admin'**
+  String get communitiesPromoteMember;
+
+  /// No description provided for @communitiesDemoteMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Demote to member'**
+  String get communitiesDemoteMember;
+
+  /// No description provided for @communitiesRemoveMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from community'**
+  String get communitiesRemoveMember;
+
+  /// No description provided for @communitiesMuteMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute'**
+  String get communitiesMuteMember;
+
+  /// No description provided for @communitiesUnmuteMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Unmute'**
+  String get communitiesUnmuteMember;
+
+  /// No description provided for @communitiesBanMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Ban'**
+  String get communitiesBanMember;
+
+  /// No description provided for @communitiesReportMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get communitiesReportMember;
+
+  /// No description provided for @communitiesNoJoinRequests.
+  ///
+  /// In en, this message translates to:
+  /// **'No pending requests'**
+  String get communitiesNoJoinRequests;
+
+  /// No description provided for @communitiesApprove.
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get communitiesApprove;
+
+  /// No description provided for @communitiesReject.
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get communitiesReject;
+
+  /// No description provided for @communitiesLinkToCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Link to community (optional)'**
+  String get communitiesLinkToCommunity;
+
+  /// No description provided for @communitiesLinkNone.
+  ///
+  /// In en, this message translates to:
+  /// **'None'**
+  String get communitiesLinkNone;
+
+  /// No description provided for @communitiesCreateEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Create event'**
+  String get communitiesCreateEvent;
+
+  /// No description provided for @communitiesEventsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No events yet'**
+  String get communitiesEventsEmpty;
+
+  /// No description provided for @communitiesTranslate.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate'**
+  String get communitiesTranslate;
+
+  /// No description provided for @communitiesShowOriginal.
+  ///
+  /// In en, this message translates to:
+  /// **'Show original'**
+  String get communitiesShowOriginal;
+
+  /// No description provided for @communitiesTranslating.
+  ///
+  /// In en, this message translates to:
+  /// **'Translating…'**
+  String get communitiesTranslating;
 }
 
 class _AppLocalizationsDelegate

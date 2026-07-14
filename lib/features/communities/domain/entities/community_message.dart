@@ -31,6 +31,14 @@ class CommunityMessage extends Equatable {
       type == CommunityMessageType.culturalFact ||
       type == CommunityMessageType.cityTip;
 
+  /// A "tip" post (language tip / cultural fact / city tip) — surfaced in the
+  /// community's Tips tab rather than the live chat. Alias of [isSpecialType].
+  bool get isTip => isSpecialType;
+
+  /// An owner/admin announcement — surfaced (read-only) in the Announcements
+  /// tab, never in the live chat.
+  bool get isAnnouncement => type == CommunityMessageType.announcement;
+
   /// Get time display text
   String get timeText {
     final hour = sentAt.hour > 12 ? sentAt.hour - 12 : sentAt.hour;
@@ -101,6 +109,7 @@ enum CommunityMessageType {
   languageTip('Language Tip'),
   culturalFact('Cultural Fact'),
   cityTip('City Tip'),
+  announcement('Announcement'),
   system('System');
 
   final String displayName;
@@ -121,6 +130,8 @@ extension CommunityMessageTypeExtension on CommunityMessageType {
         return 'cultural_fact';
       case CommunityMessageType.cityTip:
         return 'city_tip';
+      case CommunityMessageType.announcement:
+        return 'announcement';
       case CommunityMessageType.system:
         return 'system';
     }
@@ -138,6 +149,8 @@ extension CommunityMessageTypeExtension on CommunityMessageType {
         return CommunityMessageType.culturalFact;
       case 'city_tip':
         return CommunityMessageType.cityTip;
+      case 'announcement':
+        return CommunityMessageType.announcement;
       case 'system':
         return CommunityMessageType.system;
       default:

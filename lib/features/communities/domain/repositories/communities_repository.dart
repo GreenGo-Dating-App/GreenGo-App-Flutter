@@ -79,4 +79,46 @@ abstract class CommunitiesRepository {
     required String userId,
     required CommunityRole newRole,
   });
+
+  /// Update a member's moderation flags (mute / ban) — admin/owner only.
+  Future<Either<Failure, void>> updateMemberModeration({
+    required String communityId,
+    required String userId,
+    bool? isMuted,
+    bool? isBanned,
+  });
+
+  /// Remove a member from a community — admin/owner only.
+  Future<Either<Failure, void>> removeMember({
+    required String communityId,
+    required String userId,
+  });
+
+  /// Communities the user owns or administers (event → community linker).
+  Future<Either<Failure, List<Community>>> getManageableCommunities(
+    String userId,
+  );
+
+  /// Request to join a PRIVATE community (pending owner/admin approval).
+  Future<Either<Failure, void>> requestToJoin({
+    required String communityId,
+    required CommunityMember request,
+  });
+
+  /// Pending join requests for a community (owner/admin review).
+  Future<Either<Failure, List<CommunityMember>>> getJoinRequests(
+    String communityId,
+  );
+
+  /// Approve a pending join request.
+  Future<Either<Failure, void>> approveJoinRequest({
+    required String communityId,
+    required String userId,
+  });
+
+  /// Reject a pending join request.
+  Future<Either<Failure, void>> rejectJoinRequest({
+    required String communityId,
+    required String userId,
+  });
 }

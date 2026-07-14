@@ -10,12 +10,20 @@ import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/community.dart';
+import '../../domain/entities/community_member.dart';
 import '../../domain/entities/community_message.dart';
 import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
 import '../bloc/communities_state.dart';
+import '../widgets/announcement_composer_sheet.dart';
+import '../widgets/community_events_tab.dart';
 import '../widgets/community_member_tile.dart';
+import '../widgets/community_report.dart';
 import '../widgets/community_message_bubble.dart';
+import '../widgets/community_rules_header.dart';
+import '../widgets/join_requests_sheet.dart';
+import '../widgets/member_moderation_sheet.dart';
+import '../widgets/rules_editor_sheet.dart';
 import '../widgets/sponsored_badge.dart';
 import '../widgets/sponsored_promo_card.dart';
 import '../widgets/sponsorship_editor_sheet.dart';
@@ -36,9 +44,11 @@ class CommunityDetailScreen extends StatefulWidget {
   State<CommunityDetailScreen> createState() => _CommunityDetailScreenState();
 }
 
-class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
+class _CommunityDetailScreenState extends State<CommunityDetailScreen>
+    with SingleTickerProviderStateMixin {
   final TextEditingController _messageController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
+  late final TabController _tabController;
   String? _currentUserId;
   String _currentUserName = '';
   String? _currentUserPhoto;
@@ -49,6 +59,26 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   MembershipTier _membershipTier = MembershipTier.free;
   CommunityMessageType _selectedMessageType = CommunityMessageType.text;
 
+  // Current user's role within THIS community (derived from the members list).
+  CommunityRole? _myRole;
+  bool _isMuted = false;
+
+  // One-shot guard so we load pending join requests only once (dispatching on
+  // every CommunityDetailLoaded would loop, since the load re-emits that state).
+  bool _requestsRequested = false;
+
+  // Tips tab: active filter (null = all tip types).
+  CommunityMessageType? _tipFilter;
+
+  /// The current user owns this community (creator) or holds the owner role.
+  bool get _isOwner =>
+      _currentUserId != null &&
+      (_currentUserId == _community.createdByUserId ||
+          _myRole == CommunityRole.owner);
+
+  /// The current user can moderate (owner or admin).
+  bool get _isModerator => _isOwner || _myRole == CommunityRole.admin;
+
   /// Freshest community (starts as the passed-in one, refreshed from the
   /// detail state and after sponsorship edits) — drives the header badge and
   /// pinned promo.
@@ -58,6 +88,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   void initState() {
     super.initState();
     _community = widget.community;
+    _tabController = TabController(length: 4, vsync: this);
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _loadUserInfo();
     _loadCommunityDetail();
@@ -103,6 +134,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   void dispose() {
     _messageController.dispose();
     _scrollController.dispose();
+    _tabController.dispose();
     super.dispose();
   }
 
@@ -132,17 +164,41 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                 backgroundColor: AppColors.errorRed,
               ),
             );
+          } else if (state is CommunityJoinRequested) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                    AppLocalizations.of(context)!.communitiesJoinRequestSent),
+                backgroundColor: AppColors.successGreen,
+              ),
+            );
           } else if (state is CommunityDetailLoaded) {
-            // Check membership + refresh the community (sponsor/promo may have
-            // changed since navigation).
+            // Check membership + role + refresh the community (sponsor/promo may
+            // have changed since navigation).
             final userId = _currentUserId;
             if (mounted) {
+              final me = userId == null
+                  ? null
+                  : state.members
+                      .where((m) => m.userId == userId)
+                      .cast<CommunityMember?>()
+                      .firstWhere((m) => true, orElse: () => null);
               setState(() {
                 _community = state.community;
-                if (userId != null) {
-                  _isMember = state.members.any((m) => m.userId == userId);
-                }
+                _isMember = me != null;
+                _myRole = me?.role;
+                _isMuted = me?.isMuted ?? false;
               });
+              // Owners/admins: load pending join requests ONCE (guarded so the
+              // re-emit from the load doesn't loop the listener).
+              final canModerate = (me?.isAdminOrOwner ?? false) ||
+                  userId == state.community.createdByUserId;
+              if (canModerate && !_requestsRequested) {
+                _requestsRequested = true;
+                context
+                    .read<CommunitiesBloc>()
+                    .add(LoadJoinRequests(communityId: state.community.id));
+              }
             }
           }
         },
@@ -164,18 +220,30 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                     currentUserId: _currentUserId ?? '',
                   ),
 
-                // Messages list
-                Expanded(
-                  child: state.messages.isEmpty
-                      ? _buildEmptyChat()
-                      : _buildMessagesList(state.messages),
-                ),
+                // Pinned Rules & Resources header (owner/admin can edit).
+                if (_community.hasRulesOrResources || _isModerator)
+                  CommunityRulesHeader(
+                    community: _community,
+                    canEdit: _isModerator,
+                    onEdit: _editRules,
+                  ),
 
-                // Message input or join button
-                if (_isMember)
-                  _buildMessageInput(state)
-                else
-                  _buildJoinBar(),
+                // Chat · Tips · Announcements · Events
+                Expanded(
+                  child: TabBarView(
+                    controller: _tabController,
+                    children: [
+                      _buildChatTab(state),
+                      _buildTipsTab(state),
+                      _buildAnnouncementsTab(state),
+                      CommunityEventsTab(
+                        community: _community,
+                        canManage: _isModerator,
+                        currentUserId: _currentUserId ?? '',
+                      ),
+                    ],
+                  ),
+                ),
               ],
             );
           }
@@ -231,6 +299,21 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
           ),
         ],
       ),
+      bottom: TabBar(
+        controller: _tabController,
+        isScrollable: true,
+        tabAlignment: TabAlignment.start,
+        indicatorColor: AppColors.richGold,
+        labelColor: AppColors.richGold,
+        unselectedLabelColor: AppColors.textTertiary,
+        labelStyle: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14),
+        tabs: [
+          Tab(text: AppLocalizations.of(context)!.communitiesTabChat),
+          Tab(text: AppLocalizations.of(context)!.communitiesTabTips),
+          Tab(text: AppLocalizations.of(context)!.communitiesTabAnnouncements),
+          Tab(text: AppLocalizations.of(context)!.communitiesTabEvents),
+        ],
+      ),
       actions: [
         // Members list button
         IconButton(
@@ -245,6 +328,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
             switch (value) {
               case 'info':
                 _showCommunityInfo();
+                break;
+              case 'requests':
+                _showJoinRequests();
                 break;
               case 'sponsor':
                 _editSponsorship();
@@ -266,6 +352,20 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
                 ],
               ),
             ),
+            // Owner/admin of a PRIVATE community: review join requests.
+            if (_isModerator && !_community.isPublic)
+              PopupMenuItem(
+                value: 'requests',
+                child: Row(
+                  children: [
+                    const Icon(Icons.how_to_reg_outlined,
+                        color: AppColors.richGold, size: 20),
+                    const SizedBox(width: 12),
+                    Text(AppLocalizations.of(context)!.communitiesJoinRequestsTitle,
+                        style: const TextStyle(color: AppColors.textPrimary)),
+                  ],
+                ),
+              ),
             if (_canEditSponsorship)
               PopupMenuItem(
                 value: 'sponsor',
@@ -297,6 +397,191 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
     );
   }
 
+  // ── Tabs ──────────────────────────────────────────────────────────────────
+
+  /// Chat tab — the live conversation, EXCLUDING tips and announcements (those
+  /// live in their own tabs so they don't scroll away).
+  Widget _buildChatTab(CommunityDetailLoaded state) {
+    final chat = state.messages
+        .where((m) => !m.isTip && !m.isAnnouncement)
+        .toList();
+    return Column(
+      children: [
+        Expanded(
+          child: chat.isEmpty ? _buildEmptyChat() : _buildMessagesList(chat),
+        ),
+        if (_isMember) _buildMessageInput(state) else _buildJoinBar(),
+      ],
+    );
+  }
+
+  /// Tips tab — a filterable board of language tips / cultural facts / city
+  /// tips, so shared knowledge stays put instead of scrolling past in chat.
+  Widget _buildTipsTab(CommunityDetailLoaded state) {
+    var tips = state.messages.where((m) => m.isTip).toList();
+    if (_tipFilter != null) {
+      tips = tips.where((m) => m.type == _tipFilter).toList();
+    }
+    return Column(
+      children: [
+        _buildTipFilterBar(),
+        Expanded(
+          child: tips.isEmpty
+              ? _buildTabEmpty(
+                  Icons.lightbulb_outline,
+                  AppLocalizations.of(context)!.communitiesTipsEmpty,
+                )
+              : ListView.builder(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: AppDimensions.paddingS),
+                  itemCount: tips.length,
+                  itemBuilder: (context, index) => CommunityMessageBubble(
+                    message: tips[index],
+                    isCurrentUser: tips[index].senderId == _currentUserId,
+                    showSenderInfo: true,
+                    currentUserLanguage: _viewerLanguage,
+                  ),
+                ),
+        ),
+      ],
+    );
+  }
+
+  /// Announcements tab — read-only broadcast feed. Owner/admin get a composer
+  /// bar; members only read.
+  Widget _buildAnnouncementsTab(CommunityDetailLoaded state) {
+    final anns = state.messages.where((m) => m.isAnnouncement).toList();
+    return Column(
+      children: [
+        Expanded(
+          child: anns.isEmpty
+              ? _buildTabEmpty(
+                  Icons.campaign_outlined,
+                  AppLocalizations.of(context)!.communitiesAnnouncementsEmpty,
+                )
+              : ListView.builder(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: AppDimensions.paddingS),
+                  itemCount: anns.length,
+                  itemBuilder: (context, index) => CommunityMessageBubble(
+                    message: anns[index],
+                    isCurrentUser: anns[index].senderId == _currentUserId,
+                    showSenderInfo: true,
+                    currentUserLanguage: _viewerLanguage,
+                  ),
+                ),
+        ),
+        if (_isModerator) _buildAnnounceComposerBar(),
+      ],
+    );
+  }
+
+  Widget _buildTipFilterBar() {
+    final l10n = AppLocalizations.of(context)!;
+    Widget chip(String label, CommunityMessageType? type) {
+      final selected = _tipFilter == type;
+      return Padding(
+        padding: const EdgeInsets.only(right: 8),
+        child: GestureDetector(
+          onTap: () => setState(() => _tipFilter = type),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: selected
+                  ? AppColors.richGold.withValues(alpha: 0.15)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: selected ? AppColors.richGold : AppColors.divider,
+                width: 0.5,
+              ),
+            ),
+            child: Text(
+              label,
+              style: TextStyle(
+                color: selected ? AppColors.richGold : AppColors.textSecondary,
+                fontSize: 13,
+                fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Container(
+      height: 48,
+      padding: const EdgeInsets.symmetric(horizontal: AppDimensions.paddingM),
+      alignment: Alignment.centerLeft,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          chip(l10n.filterAll, null),
+          chip(l10n.communitiesLanguageTipLabel,
+              CommunityMessageType.languageTip),
+          chip(l10n.communitiesCulturalFactLabel,
+              CommunityMessageType.culturalFact),
+          chip(l10n.communitiesCityTipLabel, CommunityMessageType.cityTip),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAnnounceComposerBar() {
+    return Container(
+      padding: const EdgeInsets.all(AppDimensions.paddingM),
+      decoration: const BoxDecoration(
+        color: AppColors.backgroundCard,
+        border: Border(top: BorderSide(color: AppColors.divider, width: 0.5)),
+      ),
+      child: SafeArea(
+        child: SizedBox(
+          width: double.infinity,
+          child: ElevatedButton.icon(
+            onPressed: _postAnnouncement,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+              foregroundColor: AppColors.deepBlack,
+              padding: const EdgeInsets.symmetric(vertical: 14),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppDimensions.radiusFull),
+              ),
+            ),
+            icon: const Icon(Icons.campaign, size: 18),
+            label: Text(
+              AppLocalizations.of(context)!.communitiesPostAnnouncement,
+              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTabEmpty(IconData icon, String text) {
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 56, color: AppColors.textTertiary.withValues(alpha: 0.5)),
+          const SizedBox(height: AppDimensions.paddingM),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 32),
+            child: Text(
+              text,
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: AppColors.textTertiary, fontSize: 14),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// The viewer's preferred language for on-demand translation of content.
+  String get _viewerLanguage =>
+      _userLanguages.isNotEmpty ? _userLanguages.first : 'en';
+
   Widget _buildMessagesList(List<CommunityMessage> messages) {
     // Messages come in reverse order (newest first) from Firestore
     return ListView.builder(
@@ -321,8 +606,26 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
           message: message,
           isCurrentUser: isCurrentUser,
           showSenderInfo: showSenderInfo,
+          currentUserLanguage: _viewerLanguage,
+          onReport: isCurrentUser || _currentUserId == null
+              ? null
+              : () => _reportMessage(message),
         );
       },
+    );
+  }
+
+  /// Report a message's author (reuses the app-wide safety report flow).
+  void _reportMessage(CommunityMessage message) {
+    final me = _currentUserId;
+    if (me == null) return;
+    showCommunityReportSheet(
+      context,
+      reporterId: me,
+      reportedUserId: message.senderId,
+      reportedUserName: message.senderName,
+      communityId: _community.id,
+      contentId: message.id,
     );
   }
 
@@ -359,6 +662,31 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   }
 
   Widget _buildMessageInput(CommunityDetailLoaded state) {
+    // A muted member can read but not post.
+    if (_isMuted) {
+      return Container(
+        padding: const EdgeInsets.all(AppDimensions.paddingM),
+        decoration: const BoxDecoration(
+          color: AppColors.backgroundCard,
+          border: Border(top: BorderSide(color: AppColors.divider, width: 0.5)),
+        ),
+        child: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.volume_off,
+                  color: AppColors.textTertiary, size: 18),
+              const SizedBox(width: 8),
+              Text(
+                AppLocalizations.of(context)!.communitiesMutedNotice,
+                style: const TextStyle(color: AppColors.textTertiary),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
     // For local guide communities, non-guides can only send regular text
     final isLocalGuideCommunity =
         widget.community.type == CommunityType.localGuides;
@@ -554,7 +882,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
               ),
             ),
             child: Text(
-              AppLocalizations.of(context)!.communitiesJoinCommunity,
+              _community.isPublic
+                  ? AppLocalizations.of(context)!.communitiesJoinCommunity
+                  : AppLocalizations.of(context)!.communitiesRequestToJoin,
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -609,18 +939,87 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
     final userId = _currentUserId;
     if (userId == null) return;
 
-    context.read<CommunitiesBloc>().add(
-          JoinCommunity(
-            communityId: widget.community.id,
-            userId: userId,
-            displayName: _currentUserName,
-            photoUrl: _currentUserPhoto,
-            languages: _userLanguages,
-            isLocalGuide: _isLocalGuide,
-          ),
-        );
+    if (_community.isPublic) {
+      context.read<CommunitiesBloc>().add(
+            JoinCommunity(
+              communityId: widget.community.id,
+              userId: userId,
+              displayName: _currentUserName,
+              photoUrl: _currentUserPhoto,
+              languages: _userLanguages,
+              isLocalGuide: _isLocalGuide,
+            ),
+          );
+    } else {
+      // Private community → submit a join request for owner/admin approval.
+      context.read<CommunitiesBloc>().add(
+            RequestToJoinCommunity(
+              communityId: widget.community.id,
+              userId: userId,
+              displayName: _currentUserName,
+              photoUrl: _currentUserPhoto,
+              languages: _userLanguages,
+              isLocalGuide: _isLocalGuide,
+            ),
+          );
+    }
 
     HapticFeedback.mediumImpact();
+  }
+
+  Future<void> _editRules() async {
+    final result = await RulesEditorSheet.show(
+      context,
+      initialRules: _community.rules,
+      initialLinks: _community.resourceLinks,
+    );
+    if (result == null || !mounted) return;
+
+    final trimmed = result.rules?.trim();
+    final updated = _community.copyWith(
+      rules: trimmed,
+      clearRules: trimmed == null || trimmed.isEmpty,
+      resourceLinks: result.links,
+    );
+    setState(() => _community = updated);
+    context.read<CommunitiesBloc>().add(UpdateCommunity(community: updated));
+    HapticFeedback.mediumImpact();
+  }
+
+  Future<void> _postAnnouncement() async {
+    final text = await AnnouncementComposerSheet.show(context);
+    if (text == null || text.trim().isEmpty || !mounted) return;
+    final userId = _currentUserId;
+    if (userId == null) return;
+
+    context.read<CommunitiesBloc>().add(
+          SendCommunityMessage(
+            communityId: _community.id,
+            senderId: userId,
+            senderName: _currentUserName,
+            senderPhotoUrl: _currentUserPhoto,
+            content: text.trim(),
+            type: CommunityMessageType.announcement,
+          ),
+        );
+    HapticFeedback.mediumImpact();
+  }
+
+  void _showJoinRequests() {
+    final bloc = context.read<CommunitiesBloc>();
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: AppColors.backgroundDark,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius:
+            BorderRadius.vertical(top: Radius.circular(AppDimensions.radiusL)),
+      ),
+      builder: (_) => BlocProvider.value(
+        value: bloc,
+        child: JoinRequestsSheet(communityId: _community.id),
+      ),
+    );
   }
 
   void _confirmLeave() {
@@ -708,10 +1107,10 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
   }
 
   void _showMembersSheet() {
-    final state = context.read<CommunitiesBloc>().state;
-    if (state is! CommunityDetailLoaded) return;
+    final bloc = context.read<CommunitiesBloc>();
+    if (bloc.state is! CommunityDetailLoaded) return;
 
-    showModalBottomSheet(
+    showModalBottomSheet<void>(
       context: context,
       backgroundColor: AppColors.backgroundDark,
       isScrollControlled: true,
@@ -720,69 +1119,121 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen> {
           top: Radius.circular(AppDimensions.radiusL),
         ),
       ),
-      builder: (context) {
-        return DraggableScrollableSheet(
-          initialChildSize: 0.6,
-          minChildSize: 0.3,
-          maxChildSize: 0.9,
-          expand: false,
-          builder: (context, scrollController) {
-            return Column(
-              children: [
-                // Handle bar
-                Container(
-                  margin: const EdgeInsets.only(top: 12, bottom: 8),
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: AppColors.divider,
-                    borderRadius: BorderRadius.circular(2),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppDimensions.paddingM,
-                    vertical: AppDimensions.paddingS,
-                  ),
-                  child: Row(
+      builder: (_) {
+        return BlocProvider.value(
+          value: bloc,
+          child: DraggableScrollableSheet(
+            initialChildSize: 0.6,
+            minChildSize: 0.3,
+            maxChildSize: 0.9,
+            expand: false,
+            builder: (context, scrollController) {
+              return BlocBuilder<CommunitiesBloc, CommunitiesState>(
+                builder: (context, state) {
+                  // Banned members are hidden from the roster.
+                  final members = state is CommunityDetailLoaded
+                      ? state.members.where((m) => !m.isBanned).toList()
+                      : const <CommunityMember>[];
+                  return Column(
                     children: [
-                      Text(
-                        AppLocalizations.of(this.context)!.communitiesMembersTitle,
-                        style: const TextStyle(
-                          color: AppColors.textPrimary,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                      Container(
+                        margin: const EdgeInsets.only(top: 12, bottom: 8),
+                        width: 40,
+                        height: 4,
+                        decoration: BoxDecoration(
+                          color: AppColors.divider,
+                          borderRadius: BorderRadius.circular(2),
                         ),
                       ),
-                      const SizedBox(width: 8),
-                      Text(
-                        '(${state.members.length})',
-                        style: const TextStyle(
-                          color: AppColors.textTertiary,
-                          fontSize: 16,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: AppDimensions.paddingM,
+                          vertical: AppDimensions.paddingS,
+                        ),
+                        child: Row(
+                          children: [
+                            Text(
+                              AppLocalizations.of(context)!
+                                  .communitiesMembersTitle,
+                              style: const TextStyle(
+                                color: AppColors.textPrimary,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              '(${members.length})',
+                              style: const TextStyle(
+                                color: AppColors.textTertiary,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Divider(color: AppColors.divider, height: 1),
+                      Expanded(
+                        child: ListView.builder(
+                          controller: scrollController,
+                          itemCount: members.length,
+                          itemBuilder: (context, index) {
+                            final member = members[index];
+                            final isSelf = member.userId == _currentUserId;
+                            return InkWell(
+                              onTap: isSelf
+                                  ? null
+                                  : () => _onMemberTap(context, bloc, member),
+                              child: CommunityMemberTile(member: member),
+                            );
+                          },
                         ),
                       ),
                     ],
-                  ),
-                ),
-                const Divider(color: AppColors.divider, height: 1),
-                Expanded(
-                  child: ListView.builder(
-                    controller: scrollController,
-                    itemCount: state.members.length,
-                    itemBuilder: (context, index) {
-                      return CommunityMemberTile(
-                        member: state.members[index],
-                      );
-                    },
-                  ),
-                ),
-              ],
-            );
-          },
+                  );
+                },
+              );
+            },
+          ),
         );
       },
     );
+  }
+
+  /// Tapping a member (not yourself): owner/admin get the moderation actions;
+  /// everyone else gets a Report option.
+  void _onMemberTap(
+    BuildContext sheetContext,
+    CommunitiesBloc bloc,
+    CommunityMember member,
+  ) {
+    final me = _currentUserId;
+    if (me == null) return;
+
+    if (_isModerator && !member.isOwner) {
+      showMemberModerationSheet(
+        sheetContext,
+        bloc: bloc,
+        communityId: _community.id,
+        member: member,
+        canReport: true,
+        onReport: () => showCommunityReportSheet(
+          sheetContext,
+          reporterId: me,
+          reportedUserId: member.userId,
+          reportedUserName: member.displayName,
+          communityId: _community.id,
+        ),
+      );
+    } else {
+      showCommunityReportSheet(
+        sheetContext,
+        reporterId: me,
+        reportedUserId: member.userId,
+        reportedUserName: member.displayName,
+        communityId: _community.id,
+      );
+    }
   }
 
   void _showCommunityInfo() {

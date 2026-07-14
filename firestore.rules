@@ -892,20 +892,80 @@ service cloud.firestore {
     // ============================================================================
     // COMMUNITIES — user-created culture communities (Exchange-style lists)
     // ============================================================================
-    // Social collection: any signed-in user may create a community and join/
-    // update (membership, sponsorship/pinned-promo by the owner-business). This
-    // mirrors the permissive model used for events/conversations. Subcollections
-    // (members, messages, posts) inherit the same signed-in access.
+    // Any signed-in user may create a community and read/join. Content and
+    // membership writes are ROLE-GATED: owner/admin manage the community doc,
+    // roles, moderation, join-request approval and announcements; ordinary
+    // members post chat/tips (unless muted/banned); a user manages only their
+    // own membership + join request. (Cloud Functions use the Admin SDK and
+    // bypass these rules for their idempotency-flag writes.)
     match /communities/{communityId} {
+      function communityData() {
+        return get(/databases/$(database)/documents/communities/$(communityId)).data;
+      }
+      function isCommunityCreator() {
+        return isSignedIn() && communityData().createdByUserId == request.auth.uid;
+      }
+      function myMemberDoc() {
+        return get(/databases/$(database)/documents/communities/$(communityId)/members/$(request.auth.uid));
+      }
+      function isMemberOf() {
+        return isSignedIn() &&
+          exists(/databases/$(database)/documents/communities/$(communityId)/members/$(request.auth.uid));
+      }
+      function myRole() {
+        return isMemberOf() ? myMemberDoc().data.role : 'none';
+      }
+      function isCommunityMod() {
+        return isCommunityCreator() || myRole() == 'owner' || myRole() == 'admin' || isAdmin();
+      }
+      function canPostChat() {
+        return isMemberOf() &&
+          myMemberDoc().data.get('isBanned', false) == false &&
+          myMemberDoc().data.get('isMuted', false) == false;
+      }
+      function onlyMemberCountChanged() {
+        return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['memberCount']);
+      }
+
       allow read: if isSignedIn();
       allow create: if isSignedIn();
-      allow update: if isSignedIn();
-      allow delete: if isSignedIn();
+      // Community edits (rules/resources/sponsor/promo) → owner/admin only,
+      // EXCEPT a memberCount-only change (join/leave counter) by any member.
+      allow update: if isCommunityMod() || (isSignedIn() && onlyMemberCountChanged());
+      allow delete: if isCommunityCreator() || isAdmin();
 
+      // Members: a user manages their OWN membership (join public / leave);
+      // owner/admin manage anyone (role, mute/ban, approve, remove).
+      match /members/{memberId} {
+        allow read: if isSignedIn();
+        allow create: if isSignedIn() && (memberId == request.auth.uid || isCommunityMod());
+        allow update: if isCommunityMod();
+        allow delete: if isSignedIn() && (memberId == request.auth.uid || isCommunityMod());
+      }
+
+      // Join requests (private communities): a user creates/cancels their own;
+      // owner/admin read & resolve.
+      match /join_requests/{userId} {
+        allow read: if isCommunityMod();
+        allow create: if isSignedIn() && userId == request.auth.uid;
+        allow delete: if isCommunityMod() || (isSignedIn() && userId == request.auth.uid);
+      }
+
+      // Messages: announcements = owner/admin only; other types = any member
+      // who isn't muted/banned.
+      match /messages/{messageId} {
+        allow read: if isSignedIn();
+        allow create: if isSignedIn() && (
+          (request.resource.data.type == 'announcement' && isCommunityMod()) ||
+          (request.resource.data.type != 'announcement' && canPostChat())
+        );
+        allow update, delete: if isCommunityMod();
+      }
+
+      // Any other future subcollection: signed-in read, owner/admin write.
       match /{document=**} {
         allow read: if isSignedIn();
-        allow create, update: if isSignedIn();
-        allow delete: if isSignedIn();
+        allow write: if isCommunityMod();
       }
     }
 
