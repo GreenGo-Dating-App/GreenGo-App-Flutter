@@ -19752,6 +19752,12 @@ abstract class AppLocalizations {
   /// **'Share event'**
   String get eventShare;
 
+  /// No description provided for @shareAsLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Share as link'**
+  String get shareAsLink;
+
   /// No description provided for @eventShared.
   ///
   /// In en, this message translates to:

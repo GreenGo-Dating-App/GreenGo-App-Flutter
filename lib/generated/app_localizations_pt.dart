@@ -11204,6 +11204,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventShare => 'Partilhar evento';
 
   @override
+  String get shareAsLink => 'Compartilhar como link';
+
+  @override
   String get eventShared => 'Evento partilhado';
 
   @override
@@ -23885,6 +23888,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventShare => 'Compartilhar evento';
+
+  @override
+  String get shareAsLink => 'Compartilhar como link';
 
   @override
   String get eventShared => 'Evento compartilhado';

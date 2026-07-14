@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/error/failures.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/entities/conversation.dart';
@@ -120,6 +121,20 @@ class _ShareEventSheet extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
+                  // Share as a link (native OS share sheet).
+                  ListTile(
+                    leading:
+                        const Icon(Icons.link, color: AppColors.richGold),
+                    title: Text(
+                      l10n.shareAsLink,
+                      style: const TextStyle(color: AppColors.textPrimary),
+                    ),
+                    onTap: () {
+                      Navigator.of(context).pop();
+                      shareEventLink(context, event.id);
+                    },
+                  ),
+                  const Divider(height: 1, color: AppColors.divider),
                   // Groups
                   StreamBuilder<Either<Failure, List<Conversation>>>(
                     stream: di.sl<GetUserGroups>()(currentUserId),

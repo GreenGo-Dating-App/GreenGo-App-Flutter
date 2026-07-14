@@ -11237,6 +11237,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventShare => 'Veranstaltung teilen';
 
   @override
+  String get shareAsLink => 'Als Link teilen';
+
+  @override
   String get eventShared => 'Veranstaltung geteilt';
 
   @override

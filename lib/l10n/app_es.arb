@@ -3681,6 +3681,7 @@
   "eventViewEvent": "Ver evento",
   "eventLoadError": "No se pudo cargar este evento",
   "eventShare": "Compartir evento",
+  "shareAsLink": "Compartir como enlace",
   "eventShared": "Evento compartido",
   "eventShareEmpty": "Aún no hay chats ni grupos para compartir",
   "eventsUnlimitedAttendees": "Asistentes ilimitados",
