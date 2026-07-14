@@ -68,6 +68,13 @@ abstract class GroupChatRemoteDataSource {
     required String userId,
   });
 
+  /// Toggle the per-user favorite (star) flag on a group inbox thread.
+  Future<void> setGroupFavorite({
+    required String userId,
+    required String groupId,
+    required bool favorite,
+  });
+
   Stream<List<GroupMember>> getGroupMembersStream(String groupId);
 
   Future<void> addMembers({
@@ -276,7 +283,24 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
       unreadCounts: {userId: unread},
       isPinned: data['pinned'] as bool? ?? false,
       isMuted: data['muted'] as bool? ?? false,
+      // Per-user favorite (star) on the inbox thread → drives isFavoritedBy.
+      favorites:
+          (data['favorite'] as bool? ?? false) ? {userId: true} : const {},
     );
+  }
+
+  @override
+  Future<void> setGroupFavorite({
+    required String userId,
+    required String groupId,
+    required bool favorite,
+  }) async {
+    await firestore
+        .collection(inboxCol)
+        .doc(userId)
+        .collection(threadsSub)
+        .doc(groupId)
+        .set({'favorite': favorite}, SetOptions(merge: true));
   }
 
   @override

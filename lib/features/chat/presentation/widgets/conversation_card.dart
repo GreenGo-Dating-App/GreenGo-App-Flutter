@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -177,20 +178,32 @@ class _ConversationCardState extends State<ConversationCard>
     );
   }
 
+  // Group-aware helpers so the SAME card renders 1:1 chats and group chats.
+  bool get _isGroup => widget.conversation.isGroup;
+  String? get _avatarUrl {
+    if (_isGroup) return widget.conversation.groupInfo?.photoUrl;
+    final urls = widget.otherUserProfile?.photoUrls ?? const [];
+    return urls.isNotEmpty ? urls.first : null;
+  }
+
   Widget _buildAvatar(bool hasUnread) {
+    final avatarUrl = _avatarUrl;
+    final hasAvatar = avatarUrl != null && avatarUrl.isNotEmpty;
     return Stack(
       children: [
         CircleAvatar(
           radius: 30,
           backgroundColor: AppColors.backgroundCard,
-          backgroundImage: widget.otherUserProfile?.photoUrls.isNotEmpty ?? false
-              ? NetworkImage(widget.otherUserProfile!.photoUrls.first)
-              : null,
-          child: widget.otherUserProfile?.photoUrls.isEmpty ?? true
-              ? const Icon(Icons.person, size: 30, color: AppColors.textTertiary)
-              : null,
+          // CachedNetworkImageProvider persists avatars to disk and reuses them
+          // by URL across sessions.
+          backgroundImage:
+              hasAvatar ? CachedNetworkImageProvider(avatarUrl) : null,
+          child: hasAvatar
+              ? null
+              : Icon(_isGroup ? Icons.groups : Icons.person,
+                  size: 30, color: AppColors.textTertiary),
         ),
-        if (widget.otherUserProfile?.isOnline ?? false)
+        if (!_isGroup && (widget.otherUserProfile?.isOnline ?? false))
           Positioned(
             right: 0,
             bottom: 0,
@@ -268,7 +281,9 @@ class _ConversationCardState extends State<ConversationCard>
             children: [
               Flexible(
                 child: Text(
-                  widget.otherUserProfile?.displayName ?? l10n.chatUnknown,
+                  _isGroup
+                      ? (widget.conversation.groupInfo?.name ?? l10n.chatUnknown)
+                      : (widget.otherUserProfile?.displayName ?? l10n.chatUnknown),
                   style: TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 16,
