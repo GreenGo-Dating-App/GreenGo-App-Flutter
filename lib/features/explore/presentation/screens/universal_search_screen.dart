@@ -11,12 +11,19 @@ import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
+import '../../../communities/domain/entities/community.dart';
+import '../../../communities/domain/repositories/communities_repository.dart';
+import '../../../communities/presentation/bloc/communities_bloc.dart';
+import '../../../communities/presentation/screens/community_detail_screen.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/data/models/event_model.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 /// Universal Search — look up other PEOPLE (→ open a chat instantly) and
 /// community EVENTS (→ open that event's page), from the Explore header.
@@ -57,7 +64,9 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
 
   // null == not searched yet / cleared; empty == searched, nothing found.
   List<Profile>? _people;
+  List<Profile>? _business;
   List<Event>? _events;
+  List<Community>? _communities;
   bool _loading = false;
 
   /// The current user's own events (organized + going), fetched at most once per
@@ -79,7 +88,9 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     if (q.isEmpty) {
       setState(() {
         _people = null;
+        _business = null;
         _events = null;
+        _communities = null;
         _loading = false;
       });
       return;
@@ -93,22 +104,35 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     setState(() => _loading = true);
 
     final results = await Future.wait<Object>([
-      _searchPeople(q),
+      _searchProfiles(q),
       _searchEvents(q),
+      _searchCommunities(q),
     ]);
 
     if (!mounted || generation != _generation) return;
+    final profiles = results[0] as List<Profile>;
     setState(() {
-      _people = results[0] as List<Profile>;
+      // Split matched profiles into People (personal) and Business accounts.
+      _people = profiles.where((p) => !p.isBusiness).toList();
+      _business = profiles.where((p) => p.isBusiness).toList();
       _events = results[1] as List<Event>;
+      _communities = results[2] as List<Community>;
       _loading = false;
     });
+  }
+
+  /// Communities matching the query (name / description / tags — the datasource's
+  /// client-side substring search over public communities).
+  Future<List<Community>> _searchCommunities(String q) async {
+    final result =
+        await di.sl<CommunitiesRepository>().getCommunities(searchQuery: q);
+    return result.fold((_) => <Community>[], (list) => list.take(20).toList());
   }
 
   /// People: exact `nickname` equality (lowercased) merged with a `displayName`
   /// prefix range. Excludes self, ghost-mode and the hidden GreenGo
   /// admin/support account, and non-active profiles.
-  Future<List<Profile>> _searchPeople(String q) async {
+  Future<List<Profile>> _searchProfiles(String q) async {
     final byId = <String, Profile>{};
 
     void absorb(QuerySnapshot<Map<String, dynamic>> snap) {
@@ -252,7 +276,7 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return DefaultTabController(
-      length: 2,
+      length: 4,
       child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
@@ -261,12 +285,16 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
           elevation: 0,
           title: Text(l10n.universalSearchTitle),
           bottom: TabBar(
+            isScrollable: true,
+            tabAlignment: TabAlignment.start,
             indicatorColor: AppColors.richGold,
             labelColor: AppColors.textPrimary,
             unselectedLabelColor: AppColors.textSecondary,
             tabs: [
               Tab(text: l10n.universalSearchTabPeople),
               Tab(text: l10n.universalSearchTabEvents),
+              Tab(text: l10n.universalSearchTabBusiness),
+              Tab(text: l10n.universalSearchTabCommunity),
             ],
           ),
         ),
@@ -283,6 +311,8 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
                   children: [
                     _peopleTab(l10n),
                     _eventsTab(l10n),
+                    _businessTab(l10n),
+                    _communitiesTab(l10n),
                   ],
                 ),
               ),
@@ -363,6 +393,114 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       itemCount: events.length,
       separatorBuilder: (_, __) => const SizedBox(height: 8),
       itemBuilder: (context, index) => _eventRow(events[index]),
+    );
+  }
+
+  Widget _businessTab(AppLocalizations l10n) {
+    if (_query.isEmpty) {
+      return _hint(Icons.storefront_outlined, l10n.universalSearchEmptyPrompt);
+    }
+    final business = _business;
+    if (business == null || _loading) return _spinner();
+    if (business.isEmpty) {
+      return _hint(Icons.search_off, l10n.universalSearchNoBusiness);
+    }
+    return ListView.separated(
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+      itemCount: business.length,
+      separatorBuilder: (_, __) => const SizedBox(height: 8),
+      itemBuilder: (context, index) => _personRow(business[index]),
+    );
+  }
+
+  Widget _communitiesTab(AppLocalizations l10n) {
+    if (_query.isEmpty) {
+      return _hint(Icons.groups_outlined, l10n.universalSearchEmptyPrompt);
+    }
+    final communities = _communities;
+    if (communities == null || _loading) return _spinner();
+    if (communities.isEmpty) {
+      return _hint(Icons.search_off, l10n.universalSearchNoCommunities);
+    }
+    return ListView.separated(
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+      itemCount: communities.length,
+      separatorBuilder: (_, __) => const SizedBox(height: 8),
+      itemBuilder: (context, index) => _communityRow(communities[index]),
+    );
+  }
+
+  Widget _communityRow(Community community) {
+    final photo = community.imageUrl;
+    final hasPhoto = photo != null && photo.isNotEmpty;
+    return InkWell(
+      onTap: () => _openCommunity(community),
+      borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: AppColors.charcoal,
+          borderRadius: BorderRadius.circular(AppGlass.radiusCard),
+          border: Border.all(color: AppGlass.border),
+        ),
+        child: Row(
+          children: [
+            CircleAvatar(
+              radius: 22,
+              backgroundColor: AppColors.richGold,
+              foregroundColor: AppColors.deepBlack,
+              backgroundImage: hasPhoto ? CachedNetworkImageProvider(photo) : null,
+              child: hasPhoto ? null : const Icon(Icons.groups),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    community.name,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    community.subtitle,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                        color: AppColors.textTertiary, fontSize: 12),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right, color: AppColors.textTertiary),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _openCommunity(Community community) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => MultiBlocProvider(
+          providers: [
+            BlocProvider<CommunitiesBloc>(
+              create: (_) => di.sl<CommunitiesBloc>(),
+            ),
+            BlocProvider<ProfileBloc>(
+              create: (_) => di.sl<ProfileBloc>()
+                ..add(ProfileLoadRequested(userId: widget.currentUserId)),
+            ),
+          ],
+          child: CommunityDetailScreen(community: community),
+        ),
+      ),
     );
   }
 

@@ -82,6 +82,7 @@ class Profile extends Equatable {
     this.businessName,
     this.businessLegalName,
     this.businessCategory,
+    this.businessWhatsapp,
     this.businessVerified = false,
     this.galleryImages = const [],
     this.openingHours = const [],
@@ -193,6 +194,10 @@ class Profile extends Equatable {
   final String? businessName;
   final String? businessLegalName;
   final String? businessCategory;
+
+  /// Business WhatsApp number (digits, may include country code). When set, the
+  /// storefront/profile shows a WhatsApp button that opens wa.me/<number>.
+  final String? businessWhatsapp;
   final bool businessVerified;
 
   // Storefront fields (business/venue accounts). All optional & default
@@ -345,6 +350,7 @@ class Profile extends Equatable {
         businessName,
         businessLegalName,
         businessCategory,
+        businessWhatsapp,
         businessVerified,
         galleryImages,
         openingHours,
@@ -424,6 +430,7 @@ class Profile extends Equatable {
     String? businessName,
     String? businessLegalName,
     String? businessCategory,
+    String? businessWhatsapp,
     bool? businessVerified,
     List<String>? galleryImages,
     List<OpeningHours>? openingHours,
@@ -500,6 +507,7 @@ class Profile extends Equatable {
       isBusiness: isBusiness ?? this.isBusiness,
       businessName: businessName ?? this.businessName,
       businessLegalName: businessLegalName ?? this.businessLegalName,
+      businessWhatsapp: businessWhatsapp ?? this.businessWhatsapp,
       businessCategory: businessCategory ?? this.businessCategory,
       businessVerified: businessVerified ?? this.businessVerified,
       galleryImages: galleryImages ?? this.galleryImages,

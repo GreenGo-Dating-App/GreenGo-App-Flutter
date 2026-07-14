@@ -422,6 +422,14 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 ),
                               ),
                             ],
+                            // "Business" badge for business accounts.
+                            if (widget.profile.isBusiness) ...[
+                              const SizedBox(width: 8),
+                              BusinessBadge(
+                                label: AppLocalizations.of(context)!
+                                    .businessBadgeLabel,
+                              ),
+                            ],
                             const SizedBox(width: 12),
                             Text(
                               '${widget.profile.age}',
@@ -539,6 +547,23 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                   businessProfile: widget.profile,
                                   currentUserId: widget.currentUserId,
                                   compact: true,
+                                ),
+                              // WhatsApp — opens wa.me/<number> directly.
+                              if (widget.profile.businessWhatsapp != null &&
+                                  widget.profile.businessWhatsapp!
+                                      .trim()
+                                      .isNotEmpty)
+                                OutlinedButton.icon(
+                                  onPressed: () => _openWhatsApp(
+                                      widget.profile.businessWhatsapp!),
+                                  style: OutlinedButton.styleFrom(
+                                    foregroundColor: AppColors.successGreen,
+                                    side: const BorderSide(
+                                        color: AppColors.successGreen),
+                                  ),
+                                  icon: const Icon(Icons.chat, size: 16),
+                                  label: Text(
+                                      AppLocalizations.of(context)!.businessWhatsappButton),
                                 ),
                             ],
                           ),
@@ -1261,6 +1286,14 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
         ),
       ),
     );
+  }
+
+  /// Open a WhatsApp chat to the business number via wa.me. Strips everything
+  /// but digits (wa.me expects the full international number, no +/spaces).
+  Future<void> _openWhatsApp(String number) async {
+    final digits = number.replaceAll(RegExp(r'[^0-9]'), '');
+    if (digits.isEmpty) return;
+    await _launchUrl('https://wa.me/$digits');
   }
 
   Future<void> _launchUrl(String url) async {

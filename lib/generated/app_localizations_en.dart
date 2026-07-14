@@ -12739,4 +12739,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get communitiesTranslating => 'Translating…';
+
+  @override
+  String get eventsFilterSoon => 'Soon';
+
+  @override
+  String get businessBadgeLabel => 'Business';
+
+  @override
+  String get businessWhatsappLabel => 'WhatsApp number';
+
+  @override
+  String get businessWhatsappSubtitle =>
+      'Visitors tap to chat with you on WhatsApp';
+
+  @override
+  String get businessWhatsappHint => 'e.g. +351912345678';
+
+  @override
+  String get businessWhatsappButton => 'WhatsApp';
+
+  @override
+  String get locationLanguagesLabel => 'Location & Languages';
+
+  @override
+  String get storefrontLocationLanguagesSubtitle =>
+      'Where you are and the languages you speak';
+
+  @override
+  String get storefrontLocationNotSet => 'Not set';
+
+  @override
+  String get universalSearchTabBusiness => 'Business';
+
+  @override
+  String get universalSearchTabCommunity => 'Communities';
+
+  @override
+  String get universalSearchNoBusiness => 'No businesses found';
+
+  @override
+  String get universalSearchNoCommunities => 'No communities found';
 }

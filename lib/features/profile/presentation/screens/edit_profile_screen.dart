@@ -15,6 +15,7 @@ import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/base_membership_dialog.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/widgets/settings_accordion.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../admin/data/datasources/verification_admin_remote_data_source.dart';
@@ -235,6 +236,13 @@ class EditProfileScreen extends StatelessWidget {
                             compact: true,
                           ),
                         ],
+                        if (activeProfile.isBusiness) ...[
+                          const SizedBox(width: 8),
+                          BusinessBadge(
+                            label: AppLocalizations.of(context)!
+                                .businessBadgeLabel,
+                          ),
+                        ],
                       ],
                     ),
                   ),
@@ -274,6 +282,11 @@ class EditProfileScreen extends StatelessWidget {
                   ),
 
                   // ── Edit Profile (collapsed by default) ──
+                  // Hidden for business accounts — their public presence is the
+                  // storefront (edited via the Business hub), not this personal
+                  // profile. Location & Languages remain editable in the
+                  // storefront editor. Reappears if the account reverts to personal.
+                  if (!activeProfile.isBusiness)
                   SettingsAccordion(
                     title: AppLocalizations.of(context)!.editProfile,
                     icon: Icons.person_outline,

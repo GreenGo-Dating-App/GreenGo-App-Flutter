@@ -10,7 +10,9 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/constants/business_categories.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/domain/entities/location.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/presentation/screens/edit_location_screen.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -56,8 +58,14 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   late List<String> _galleryImages;
   late List<OpeningHours> _openingHours; // exactly 7, index 0 = Monday
   late TextEditingController _descController;
+  late TextEditingController _whatsappController;
   String? _category;
   late List<TextEditingController> _linkControllers;
+
+  // Latest location/languages the owner edited via the Location & Languages
+  // tile (null until they open it this session; falls back to widget.profile).
+  Location? _location;
+  List<String>? _languages;
 
   // Featured/cover (hero) image URL. Empty string is the "removed" sentinel so
   // the removal survives the copyWith(coverImageUrl:) null-coalescing on save.
@@ -94,6 +102,11 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
     _descController = TextEditingController(
       text: widget.profile.storefrontBio ?? '',
     );
+    _whatsappController = TextEditingController(
+      text: widget.profile.businessWhatsapp ?? '',
+    );
+    _location = widget.profile.location;
+    _languages = List<String>.from(widget.profile.languages);
     _category = widget.profile.businessCategory;
     final links = widget.profile.storefrontLinks.isNotEmpty
         ? widget.profile.storefrontLinks
@@ -105,6 +118,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   @override
   void dispose() {
     _descController.dispose();
+    _whatsappController.dispose();
     for (final c in _linkControllers) {
       c.dispose();
     }
@@ -229,7 +243,9 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
   }
 
   // ─── Save ───────────────────────────────────────────────────────────────
-  void _save() {
+  /// Build the profile reflecting ALL current storefront edits (so a nested
+  /// save, e.g. Location & Languages, doesn't clobber unsaved changes here).
+  Profile _buildDraft() {
     final links = _linkControllers
         .map((c) => c.text.trim())
         .where((t) => t.isNotEmpty)
@@ -246,7 +262,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       }
     }
 
-    final updated = widget.profile.copyWith(
+    return widget.profile.copyWith(
       photoUrls: photoUrls,
       galleryImages: _galleryImages,
       // '' sentinel persists a removal; a URL persists the new cover; null
@@ -256,11 +272,40 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
       storefrontBio: _descController.text.trim(),
       storefrontLinks: links,
       businessCategory: _category ?? widget.profile.businessCategory,
+      // Empty string persists a cleared WhatsApp (hides the button); a value
+      // persists the number.
+      businessWhatsapp: _whatsappController.text.trim(),
+      location: _location ?? widget.profile.location,
+      languages: _languages ?? widget.profile.languages,
       updatedAt: DateTime.now(),
     );
+  }
 
+  void _save() {
     setState(() => _saving = true);
-    context.read<ProfileBloc>().add(ProfileUpdateRequested(profile: updated));
+    context
+        .read<ProfileBloc>()
+        .add(ProfileUpdateRequested(profile: _buildDraft()));
+  }
+
+  /// Open the shared Location & Languages editor (business accounts edit these
+  /// here since their personal "Edit profile" menu is hidden). It self-saves the
+  /// draft via ProfileBloc and pops the updated profile; sync it back locally.
+  Future<void> _openLocationLanguages() async {
+    final result = await Navigator.of(context).push<Profile>(
+      MaterialPageRoute<Profile>(
+        builder: (_) => BlocProvider.value(
+          value: context.read<ProfileBloc>(),
+          child: EditLocationScreen(profile: _buildDraft()),
+        ),
+      ),
+    );
+    if (result != null && mounted) {
+      setState(() {
+        _location = result.location;
+        _languages = List<String>.from(result.languages);
+      });
+    }
   }
 
   @override
@@ -376,6 +421,24 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             _buildCategoryGroups(),
             const SizedBox(height: 28),
 
+            // Location & Languages (business accounts edit these here).
+            _sectionHeader(l10n.locationLanguagesLabel,
+                l10n.storefrontLocationLanguagesSubtitle),
+            const SizedBox(height: 8),
+            _locationLanguagesTile(l10n),
+            const SizedBox(height: 28),
+
+            // WhatsApp contact — visitors tap to open wa.me/<number>.
+            _sectionHeader(l10n.businessWhatsappLabel,
+                l10n.businessWhatsappSubtitle),
+            const SizedBox(height: 12),
+            _glassField(
+              controller: _whatsappController,
+              hint: l10n.businessWhatsappHint,
+              keyboardType: TextInputType.phone,
+            ),
+            const SizedBox(height: 28),
+
             // Links
             _sectionHeader(l10n.businessLinks, null),
             const SizedBox(height: 12),
@@ -444,6 +507,59 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
               ),
             ),
             const SizedBox(height: 40),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Tappable summary tile that opens the shared Location & Languages editor.
+  Widget _locationLanguagesTile(AppLocalizations l10n) {
+    final loc = _location;
+    final langs = _languages ?? const <String>[];
+    final parts = <String>[
+      if (loc != null && loc.city.isNotEmpty) loc.city,
+      if (loc != null && loc.country.isNotEmpty) loc.country,
+    ];
+    final place = parts.isEmpty ? l10n.storefrontLocationNotSet : parts.join(', ');
+    final languagesText =
+        langs.isEmpty ? '' : langs.map((c) => c.toUpperCase()).join(' · ');
+
+    return InkWell(
+      onTap: _openLocationLanguages,
+      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+      child: Container(
+        padding: const EdgeInsets.all(AppDimensions.paddingM),
+        decoration: BoxDecoration(
+          color: AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.location_on_outlined, color: AppColors.richGold),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    place,
+                    style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  if (languagesText.isNotEmpty) ...[
+                    const SizedBox(height: 2),
+                    Text(
+                      languagesText,
+                      style: const TextStyle(
+                          color: AppColors.textTertiary, fontSize: 12),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right, color: AppColors.textTertiary),
           ],
         ),
       ),
