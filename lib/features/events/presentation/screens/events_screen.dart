@@ -21,6 +21,8 @@ import '../../../../core/services/tier_limits_service.dart';
 import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../../../business/data/services/leads_service.dart';
+import '../../../communities/domain/entities/community.dart';
+import '../../../communities/domain/repositories/communities_repository.dart';
 import '../../../coins/domain/usecases/purchase_feature.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
@@ -2761,6 +2763,8 @@ class CreateEventScreen extends StatefulWidget {
     required this.currentUserId, required this.onEventCreated, super.key,
     this.existing,
     this.onEventDeleted,
+    this.communityId,
+    this.lockCommunity = false,
   });
   final String currentUserId;
   final Function(Event) onEventCreated;
@@ -2770,6 +2774,14 @@ class CreateEventScreen extends StatefulWidget {
 
   /// When editing, called if the user confirms deleting the event.
   final VoidCallback? onEventDeleted;
+
+  /// Pre-selects a community to link the event to (from a community's Events
+  /// tab). Null = no preselection (the user may pick one from the linker).
+  final String? communityId;
+
+  /// When true (opened from inside a community), the community selection is
+  /// fixed and the picker is not shown.
+  final bool lockCommunity;
 
   @override
   State<CreateEventScreen> createState() => _CreateEventScreenState();
@@ -2822,11 +2834,91 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   DateTime? _publishAt;
   bool _saving = false;
 
+  // Community linkage: the selected community id + the manageable communities
+  // the user may link to (loaded lazily; empty until loaded).
+  String? _selectedCommunityId;
+  List<Community> _manageableCommunities = const [];
+
   bool get _isEditing => widget.existing != null;
+
+  Future<void> _loadManageableCommunities() async {
+    // No picker needed when the community is fixed by the caller.
+    if (widget.lockCommunity) return;
+    final result =
+        await sl<CommunitiesRepository>().getManageableCommunities(
+      widget.currentUserId,
+    );
+    if (!mounted) return;
+    result.fold(
+      (_) {},
+      (communities) => setState(() => _manageableCommunities = communities),
+    );
+  }
+
+  /// "Link to community" selector. Hidden when the community is fixed by the
+  /// caller or when the user manages no communities.
+  Widget _buildCommunityLinker() {
+    if (widget.lockCommunity || _manageableCommunities.isEmpty) {
+      return const SizedBox.shrink();
+    }
+    final l10n = AppLocalizations.of(context)!;
+    final value =
+        _manageableCommunities.any((c) => c.id == _selectedCommunityId)
+            ? _selectedCommunityId
+            : null;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            l10n.communitiesLinkToCommunity,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(height: 8),
+          DropdownButtonFormField<String?>(
+            initialValue: value,
+            isExpanded: true,
+            dropdownColor: AppColors.backgroundCard,
+            style: const TextStyle(color: AppColors.textPrimary, fontSize: 15),
+            decoration: InputDecoration(
+              prefixIcon: const Icon(Icons.groups_outlined,
+                  color: AppColors.richGold, size: 20),
+              filled: true,
+              fillColor: AppColors.backgroundCard,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide.none,
+              ),
+            ),
+            items: [
+              DropdownMenuItem<String?>(
+                child: Text(l10n.communitiesLinkNone),
+              ),
+              ..._manageableCommunities.map(
+                (c) => DropdownMenuItem<String?>(
+                  value: c.id,
+                  child: Text(c.name, overflow: TextOverflow.ellipsis),
+                ),
+              ),
+            ],
+            onChanged: (v) => setState(() => _selectedCommunityId = v),
+          ),
+        ],
+      ),
+    );
+  }
 
   @override
   void initState() {
     super.initState();
+    _selectedCommunityId =
+        widget.communityId ?? widget.existing?.communityId;
+    _loadManageableCommunities();
     final e = widget.existing;
     if (e == null) return;
     // Prefill from the existing event (edit mode).
@@ -3218,6 +3310,10 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ],
             ),
             const SizedBox(height: 16),
+            // Link to a community (owner/admin communities only). Hidden when the
+            // community is fixed by the caller (opened from a community's Events
+            // tab) or when the user manages no communities.
+            _buildCommunityLinker(),
             // Visibility: public (discoverable) vs private (invitees/link only)
             SwitchListTile(
               contentPadding: EdgeInsets.zero,
@@ -3973,6 +4069,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         languagePairs: languagePairs,
         guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
         ticketTiers: _tiers,
+        communityId: _selectedCommunityId,
+        clearCommunityId: _selectedCommunityId == null,
         updatedAt: DateTime.now(),
       );
       widget.onEventCreated(event);
@@ -4013,6 +4111,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       ticketTiers: _tiers,
       languagePairs: languagePairs,
       guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
+      communityId: _selectedCommunityId,
       createdAt: DateTime.now(),
     );
 

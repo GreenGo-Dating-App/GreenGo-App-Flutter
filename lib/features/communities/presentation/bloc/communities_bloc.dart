@@ -1,8 +1,10 @@
 import 'dart:async';
 
+import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/error/failures.dart';
 import '../../data/datasources/communities_remote_datasource.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
@@ -34,6 +36,11 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     on<SendCommunityMessage>(_onSendMessage);
     on<SubscribeToCommunityMessages>(_onSubscribeToMessages);
     on<CommunityMessagesUpdated>(_onMessagesUpdated);
+    on<RequestToJoinCommunity>(_onRequestToJoin);
+    on<LoadJoinRequests>(_onLoadJoinRequests);
+    on<ApproveJoinRequest>(_onApproveJoinRequest);
+    on<RejectJoinRequest>(_onRejectJoinRequest);
+    on<ModerateMember>(_onModerateMember);
     on<SeedSampleCommunities>(_onSeedSampleCommunities);
   }
   final CommunitiesRepository _repository;
@@ -176,8 +183,13 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
 
     final result = await _repository.createCommunity(event.community);
 
-    result.fold(
-      (failure) => emit(CommunitiesError(message: failure.message)),
+    // NOTE: the success branch is async (it awaits joinCommunity before
+    // emitting). The whole fold MUST be awaited — otherwise `_onCreateCommunity`
+    // completes before `emit(CommunityCreated)` runs, Bloc rejects the late
+    // emit, the UI's BlocListener never fires and "Create" appears to do nothing
+    // (even though the community was actually written).
+    await result.fold(
+      (failure) async => emit(CommunitiesError(message: failure.message)),
       (community) async {
         // Auto-join the creator as owner
         final member = CommunityMember(
@@ -328,6 +340,154 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     final currentState = state;
     if (currentState is CommunityDetailLoaded) {
       emit(currentState.copyWith(messages: event.messages));
+    }
+  }
+
+  Future<void> _onRequestToJoin(
+    RequestToJoinCommunity event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final request = CommunityMember(
+      userId: event.userId,
+      displayName: event.displayName,
+      photoUrl: event.photoUrl,
+      role: CommunityRole.member,
+      joinedAt: DateTime.now(),
+      languages: event.languages,
+      isLocalGuide: event.isLocalGuide,
+    );
+
+    final result = await _repository.requestToJoin(
+      communityId: event.communityId,
+      request: request,
+    );
+
+    result.fold(
+      (failure) => emit(CommunitiesError(message: failure.message)),
+      (_) => emit(CommunityJoinRequested(communityId: event.communityId)),
+    );
+  }
+
+  Future<void> _onLoadJoinRequests(
+    LoadJoinRequests event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final result = await _repository.getJoinRequests(event.communityId);
+    final current = state;
+    if (current is! CommunityDetailLoaded) return;
+    result.fold(
+      (failure) => debugPrint('Join requests error: ${failure.message}'),
+      (requests) => emit(current.copyWith(pendingRequests: requests)),
+    );
+  }
+
+  Future<void> _onApproveJoinRequest(
+    ApproveJoinRequest event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final result = await _repository.approveJoinRequest(
+      communityId: event.communityId,
+      userId: event.userId,
+    );
+    await result.fold(
+      (failure) async => emit(CommunitiesError(message: failure.message)),
+      (_) async => _refreshMembersAndRequests(event.communityId, emit),
+    );
+  }
+
+  Future<void> _onRejectJoinRequest(
+    RejectJoinRequest event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final result = await _repository.rejectJoinRequest(
+      communityId: event.communityId,
+      userId: event.userId,
+    );
+    await result.fold(
+      (failure) async => emit(CommunitiesError(message: failure.message)),
+      (_) async => _refreshMembersAndRequests(event.communityId, emit),
+    );
+  }
+
+  Future<void> _onModerateMember(
+    ModerateMember event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    late final Either<Failure, void> result;
+    switch (event.action) {
+      case MemberModerationAction.promoteToAdmin:
+        result = await _repository.updateMemberRole(
+          communityId: event.communityId,
+          userId: event.userId,
+          newRole: CommunityRole.admin,
+        );
+        break;
+      case MemberModerationAction.demoteToMember:
+        result = await _repository.updateMemberRole(
+          communityId: event.communityId,
+          userId: event.userId,
+          newRole: CommunityRole.member,
+        );
+        break;
+      case MemberModerationAction.mute:
+        result = await _repository.updateMemberModeration(
+          communityId: event.communityId,
+          userId: event.userId,
+          isMuted: true,
+        );
+        break;
+      case MemberModerationAction.unmute:
+        result = await _repository.updateMemberModeration(
+          communityId: event.communityId,
+          userId: event.userId,
+          isMuted: false,
+        );
+        break;
+      case MemberModerationAction.ban:
+        result = await _repository.updateMemberModeration(
+          communityId: event.communityId,
+          userId: event.userId,
+          isBanned: true,
+        );
+        break;
+      case MemberModerationAction.remove:
+        result = await _repository.removeMember(
+          communityId: event.communityId,
+          userId: event.userId,
+        );
+        break;
+    }
+
+    await result.fold(
+      (failure) async => emit(CommunitiesError(message: failure.message)),
+      (_) async => _refreshMembersAndRequests(event.communityId, emit),
+    );
+  }
+
+  /// Reload the members list (and pending requests) into the current detail
+  /// state after a moderation / approval action.
+  Future<void> _refreshMembersAndRequests(
+    String communityId,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final current = state;
+    if (current is! CommunityDetailLoaded) return;
+
+    final membersResult = await _repository.getCommunityMembers(communityId);
+    final members = membersResult.fold(
+      (_) => current.members,
+      (m) => m,
+    );
+
+    final requestsResult = await _repository.getJoinRequests(communityId);
+    final requests = requestsResult.fold(
+      (_) => current.pendingRequests,
+      (r) => r,
+    );
+
+    if (state is CommunityDetailLoaded) {
+      emit((state as CommunityDetailLoaded)
+          .copyWith(members: members, pendingRequests: requests));
     }
   }
 

@@ -12770,4 +12770,127 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get scanResultDenied => 'Negato';
+
+  @override
+  String get communitiesTabChat => 'Chat';
+
+  @override
+  String get communitiesTabTips => 'Consigli';
+
+  @override
+  String get communitiesTabAnnouncements => 'Annunci';
+
+  @override
+  String get communitiesTabEvents => 'Eventi';
+
+  @override
+  String get communitiesJoinRequestSent =>
+      'Richiesta inviata — in attesa di approvazione';
+
+  @override
+  String get communitiesJoinRequestsTitle => 'Richieste di adesione';
+
+  @override
+  String get communitiesTipsEmpty =>
+      'Ancora nessun consiglio. Condividi un consiglio linguistico, una curiosità culturale o un consiglio sulla città dalla chat.';
+
+  @override
+  String get communitiesAnnouncementsEmpty => 'Ancora nessun annuncio.';
+
+  @override
+  String get communitiesPostAnnouncement => 'Pubblica annuncio';
+
+  @override
+  String get communitiesRequestToJoin => 'Richiedi di unirti';
+
+  @override
+  String get communitiesMutedNotice =>
+      'Sei stato silenziato in questa community';
+
+  @override
+  String get communitiesRulesResourcesTitle => 'Regole e risorse';
+
+  @override
+  String get communitiesRulesLabel => 'Regole della community';
+
+  @override
+  String get communitiesRulesHint => 'Linee guida per i membri…';
+
+  @override
+  String get communitiesResourcesLabel => 'Link alle risorse';
+
+  @override
+  String get communitiesResourceTitleHint => 'Titolo';
+
+  @override
+  String get communitiesResourceUrlHint => 'https://…';
+
+  @override
+  String get communitiesAddResource => 'Aggiungi link';
+
+  @override
+  String get communitiesSaveLabel => 'Salva';
+
+  @override
+  String get communitiesAddRulesPrompt =>
+      'Aggiungi regole e risorse per questa community';
+
+  @override
+  String get communitiesAnnouncementHint =>
+      'Scrivi un annuncio per tutti i membri…';
+
+  @override
+  String get communitiesPostLabel => 'Pubblica';
+
+  @override
+  String get communitiesPromoteMember => 'Promuovi ad admin';
+
+  @override
+  String get communitiesDemoteMember => 'Retrocedi a membro';
+
+  @override
+  String get communitiesRemoveMember => 'Rimuovi dalla community';
+
+  @override
+  String get communitiesMuteMember => 'Silenzia';
+
+  @override
+  String get communitiesUnmuteMember => 'Riattiva';
+
+  @override
+  String get communitiesBanMember => 'Banna';
+
+  @override
+  String get communitiesReportMember => 'Segnala';
+
+  @override
+  String get communitiesNoJoinRequests => 'Nessuna richiesta in sospeso';
+
+  @override
+  String get communitiesApprove => 'Approva';
+
+  @override
+  String get communitiesReject => 'Rifiuta';
+
+  @override
+  String get communitiesLinkToCommunity =>
+      'Collega a una community (facoltativo)';
+
+  @override
+  String get communitiesLinkNone => 'Nessuna';
+
+  @override
+  String get communitiesCreateEvent => 'Crea evento';
+
+  @override
+  String get communitiesEventsEmpty => 'Ancora nessun evento';
+
+  @override
+  String get communitiesTranslate => 'Traduci';
+
+  @override
+  String get communitiesShowOriginal => 'Mostra originale';
+
+  @override
+  String get communitiesTranslating => 'Traduzione…';
 }

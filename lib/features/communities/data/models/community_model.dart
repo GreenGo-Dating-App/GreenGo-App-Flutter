@@ -22,7 +22,18 @@ class CommunityModel extends Community {
     super.sponsorId,
     super.isSponsored,
     super.pinnedPromo,
+    super.rules,
+    super.resourceLinks,
   });
+
+  /// Parse a stored list of `{title,url}` maps into [CommunityLink]s.
+  static List<CommunityLink> _parseLinks(dynamic raw) {
+    if (raw is! List) return const [];
+    return raw
+        .whereType<Map>()
+        .map((m) => CommunityLink.fromMap(Map<String, dynamic>.from(m)))
+        .toList();
+  }
 
   /// Create from Community entity
   factory CommunityModel.fromEntity(Community community) {
@@ -46,6 +57,8 @@ class CommunityModel extends Community {
       sponsorId: community.sponsorId,
       isSponsored: community.isSponsored,
       pinnedPromo: community.pinnedPromo,
+      rules: community.rules,
+      resourceLinks: community.resourceLinks,
     );
   }
 
@@ -86,6 +99,8 @@ class CommunityModel extends Community {
           ? PinnedPromo.fromMap(
               Map<String, dynamic>.from(data['pinnedPromo'] as Map))
           : null,
+      rules: data['rules'] as String?,
+      resourceLinks: _parseLinks(data['resourceLinks']),
     );
   }
 
@@ -124,6 +139,8 @@ class CommunityModel extends Community {
           ? PinnedPromo.fromMap(
               Map<String, dynamic>.from(json['pinnedPromo'] as Map))
           : null,
+      rules: json['rules'] as String?,
+      resourceLinks: _parseLinks(json['resourceLinks']),
     );
   }
 
@@ -149,6 +166,8 @@ class CommunityModel extends Community {
       'sponsorId': sponsorId,
       'isSponsored': isSponsored,
       'pinnedPromo': pinnedPromo?.toMap(),
+      'rules': rules,
+      'resourceLinks': resourceLinks.map((l) => l.toMap()).toList(),
     };
   }
 
@@ -199,6 +218,8 @@ class CommunityModel extends Community {
       sponsorId: sponsorId,
       isSponsored: isSponsored,
       pinnedPromo: pinnedPromo,
+      rules: rules,
+      resourceLinks: resourceLinks,
     );
   }
 }

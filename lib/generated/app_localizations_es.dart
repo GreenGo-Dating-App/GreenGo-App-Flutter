@@ -12779,4 +12779,126 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get scanResultDenied => 'Denegado';
+
+  @override
+  String get communitiesTabChat => 'Chat';
+
+  @override
+  String get communitiesTabTips => 'Consejos';
+
+  @override
+  String get communitiesTabAnnouncements => 'Anuncios';
+
+  @override
+  String get communitiesTabEvents => 'Eventos';
+
+  @override
+  String get communitiesJoinRequestSent =>
+      'Solicitud enviada: esperando aprobación';
+
+  @override
+  String get communitiesJoinRequestsTitle => 'Solicitudes para unirse';
+
+  @override
+  String get communitiesTipsEmpty =>
+      'Aún no hay consejos. Comparte un consejo de idioma, un dato cultural o un consejo local desde el chat.';
+
+  @override
+  String get communitiesAnnouncementsEmpty => 'Aún no hay anuncios.';
+
+  @override
+  String get communitiesPostAnnouncement => 'Publicar anuncio';
+
+  @override
+  String get communitiesRequestToJoin => 'Solicitar unirse';
+
+  @override
+  String get communitiesMutedNotice => 'Has sido silenciado en esta comunidad';
+
+  @override
+  String get communitiesRulesResourcesTitle => 'Reglas y recursos';
+
+  @override
+  String get communitiesRulesLabel => 'Reglas de la comunidad';
+
+  @override
+  String get communitiesRulesHint => 'Pautas para los miembros…';
+
+  @override
+  String get communitiesResourcesLabel => 'Enlaces de recursos';
+
+  @override
+  String get communitiesResourceTitleHint => 'Título';
+
+  @override
+  String get communitiesResourceUrlHint => 'https://…';
+
+  @override
+  String get communitiesAddResource => 'Agregar enlace';
+
+  @override
+  String get communitiesSaveLabel => 'Guardar';
+
+  @override
+  String get communitiesAddRulesPrompt =>
+      'Agregar reglas y recursos para esta comunidad';
+
+  @override
+  String get communitiesAnnouncementHint =>
+      'Escribe un anuncio para todos los miembros…';
+
+  @override
+  String get communitiesPostLabel => 'Publicar';
+
+  @override
+  String get communitiesPromoteMember => 'Ascender a administrador';
+
+  @override
+  String get communitiesDemoteMember => 'Degradar a miembro';
+
+  @override
+  String get communitiesRemoveMember => 'Eliminar de la comunidad';
+
+  @override
+  String get communitiesMuteMember => 'Silenciar';
+
+  @override
+  String get communitiesUnmuteMember => 'Reactivar';
+
+  @override
+  String get communitiesBanMember => 'Bloquear';
+
+  @override
+  String get communitiesReportMember => 'Reportar';
+
+  @override
+  String get communitiesNoJoinRequests => 'No hay solicitudes pendientes';
+
+  @override
+  String get communitiesApprove => 'Aprobar';
+
+  @override
+  String get communitiesReject => 'Rechazar';
+
+  @override
+  String get communitiesLinkToCommunity =>
+      'Vincular a una comunidad (opcional)';
+
+  @override
+  String get communitiesLinkNone => 'Ninguna';
+
+  @override
+  String get communitiesCreateEvent => 'Crear evento';
+
+  @override
+  String get communitiesEventsEmpty => 'Aún no hay eventos';
+
+  @override
+  String get communitiesTranslate => 'Traducir';
+
+  @override
+  String get communitiesShowOriginal => 'Ver original';
+
+  @override
+  String get communitiesTranslating => 'Traduciendo…';
 }

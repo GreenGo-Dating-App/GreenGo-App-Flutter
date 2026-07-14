@@ -106,6 +106,9 @@ abstract class EventsRemoteDataSource {
 
   Future<List<Event>> getUserEvents(String userId);
 
+  /// Events owned by a community (its Events tab). Filters on `communityId`.
+  Future<List<Event>> getCommunityEvents(String communityId);
+
   /// Nearest published community events to a point, via geohash (scales to a
   /// large table — only the closest [limit] are read/returned).
   Future<List<Event>> getNearbyCommunityEvents({
@@ -915,6 +918,26 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     } catch (e) {
       debugPrint('Error getting user events: $e');
       throw ServerException('Failed to load user events: $e');
+    }
+  }
+
+  @override
+  Future<List<Event>> getCommunityEvents(String communityId) async {
+    try {
+      // All events tagged to this community, newest-start last. Bounded (G0).
+      // Status is filtered client-side (draft events stay organizer-only in the
+      // tab's own logic) to avoid a composite index requirement.
+      final snapshot = await _eventsCollection
+          .where('communityId', isEqualTo: communityId)
+          .limit(100)
+          .get();
+
+      final events = snapshot.docs.map(EventModel.fromFirestore).toList()
+        ..sort((a, b) => a.startDate.compareTo(b.startDate));
+      return events;
+    } catch (e) {
+      debugPrint('Error getting community events: $e');
+      throw ServerException('Failed to load community events: $e');
     }
   }
 

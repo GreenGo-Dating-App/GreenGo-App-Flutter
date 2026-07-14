@@ -112,10 +112,15 @@ class Event extends Equatable {
     this.recurrence,
     this.publishAt,
     this.ticketTiers = const [],
+    this.communityId,
   });
   final String id;
   final String organizerId;
   final String organizerName;
+
+  /// When non-null, this event belongs to a community (shows in that
+  /// community's Events tab). Null = a personal/business event as before.
+  final String? communityId;
   final String? organizerPhotoUrl;
   final String title;
   final String description;
@@ -292,6 +297,7 @@ class Event extends Equatable {
         recurrence,
         publishAt,
         ticketTiers,
+        communityId,
       ];
 
   Event copyWith({
@@ -340,6 +346,8 @@ class Event extends Equatable {
     EventRecurrence? recurrence,
     DateTime? publishAt,
     List<TicketTier>? ticketTiers,
+    String? communityId,
+    bool clearCommunityId = false,
   }) {
     return Event(
       id: id ?? this.id,
@@ -388,6 +396,8 @@ class Event extends Equatable {
       recurrence: recurrence ?? this.recurrence,
       publishAt: publishAt ?? this.publishAt,
       ticketTiers: ticketTiers ?? this.ticketTiers,
+      communityId:
+          clearCommunityId ? null : (communityId ?? this.communityId),
     );
   }
 }

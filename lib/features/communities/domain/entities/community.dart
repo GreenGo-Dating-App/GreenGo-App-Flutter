@@ -22,6 +22,8 @@ class Community extends Equatable {
     this.sponsorId,
     this.isSponsored = false,
     this.pinnedPromo,
+    this.rules,
+    this.resourceLinks = const [],
   });
   final String id;
   final String name;
@@ -49,6 +51,17 @@ class Community extends Equatable {
 
   /// Optional promo pinned to the top of the community by its sponsor.
   final PinnedPromo? pinnedPromo;
+
+  /// Community rules / guidelines shown in the pinned Rules & Resources header.
+  final String? rules;
+
+  /// Pinned resource links (phrase pack, city guide, house rules doc, …) shown
+  /// in the Rules & Resources header.
+  final List<CommunityLink> resourceLinks;
+
+  /// Whether the community has any pinned rules or resources to show.
+  bool get hasRulesOrResources =>
+      (rules != null && rules!.trim().isNotEmpty) || resourceLinks.isNotEmpty;
 
   /// Check if community is a language circle
   bool get isLanguageCircle => type == CommunityType.languageCircle;
@@ -112,6 +125,9 @@ class Community extends Equatable {
     PinnedPromo? pinnedPromo,
     bool clearPinnedPromo = false,
     bool clearSponsorId = false,
+    String? rules,
+    bool clearRules = false,
+    List<CommunityLink>? resourceLinks,
   }) {
     return Community(
       id: id ?? this.id,
@@ -134,6 +150,8 @@ class Community extends Equatable {
       isSponsored: isSponsored ?? this.isSponsored,
       pinnedPromo:
           clearPinnedPromo ? null : (pinnedPromo ?? this.pinnedPromo),
+      rules: clearRules ? null : (rules ?? this.rules),
+      resourceLinks: resourceLinks ?? this.resourceLinks,
     );
   }
 
@@ -158,7 +176,32 @@ class Community extends Equatable {
         sponsorId,
         isSponsored,
         pinnedPromo,
+        rules,
+        resourceLinks,
       ];
+}
+
+/// A pinned resource link shown in a community's Rules & Resources header —
+/// e.g. a phrase pack, a city guide, or the community's house-rules doc.
+class CommunityLink extends Equatable {
+  const CommunityLink({required this.title, required this.url});
+
+  factory CommunityLink.fromMap(Map<String, dynamic> map) {
+    return CommunityLink(
+      title: map['title'] as String? ?? '',
+      url: map['url'] as String? ?? '',
+    );
+  }
+
+  final String title;
+  final String url;
+
+  bool get isValid => title.trim().isNotEmpty && url.trim().isNotEmpty;
+
+  Map<String, dynamic> toMap() => {'title': title, 'url': url};
+
+  @override
+  List<Object?> get props => [title, url];
 }
 
 /// Pinned Promo

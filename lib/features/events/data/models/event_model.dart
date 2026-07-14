@@ -45,6 +45,7 @@ class EventModel extends Event {
     super.recurrence,
     super.publishAt,
     super.ticketTiers = const [],
+    super.communityId,
   });
 
   /// Create from Event entity
@@ -92,6 +93,7 @@ class EventModel extends Event {
       featuredUntil: event.featuredUntil,
       guestsAllowedPerAttendee: event.guestsAllowedPerAttendee,
       seriesId: event.seriesId,
+      communityId: event.communityId,
       recurrence: event.recurrence,
       publishAt: event.publishAt,
       ticketTiers: event.ticketTiers,
@@ -159,6 +161,7 @@ class EventModel extends Event {
       guestsAllowedPerAttendee:
           (json['guestsAllowedPerAttendee'] as num?)?.toInt() ?? 0,
       seriesId: json['seriesId'] as String?,
+      communityId: json['communityId'] as String?,
       recurrence: json['recurrence'] is Map
           ? EventRecurrence.fromMap(
               Map<String, dynamic>.from(json['recurrence'] as Map))
@@ -224,6 +227,8 @@ class EventModel extends Event {
       'guestsAllowedPerAttendee': guestsAllowedPerAttendee,
       // Recurring series (each occurrence shares seriesId; each is a normal doc).
       'seriesId': seriesId,
+      // Community-owned events carry the owning community's id (null otherwise).
+      'communityId': communityId,
       'recurrence': recurrence?.toMap(),
       // Draft & scheduled auto-publish (feeds gate on isLive using publishAt).
       'publishAt': publishAt != null ? Timestamp.fromDate(publishAt!) : null,

@@ -229,4 +229,114 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, void>> updateMemberModeration({
+    required String communityId,
+    required String userId,
+    bool? isMuted,
+    bool? isBanned,
+  }) async {
+    try {
+      await remoteDataSource.updateMemberModeration(
+        communityId: communityId,
+        userId: userId,
+        isMuted: isMuted,
+        isBanned: isBanned,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> removeMember({
+    required String communityId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.removeMember(
+        communityId: communityId,
+        userId: userId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<Community>>> getManageableCommunities(
+    String userId,
+  ) async {
+    try {
+      final communities =
+          await remoteDataSource.getManageableCommunities(userId);
+      return Right(communities.map((c) => c.toEntity()).toList());
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> requestToJoin({
+    required String communityId,
+    required CommunityMember request,
+  }) async {
+    try {
+      final model = CommunityMemberModel.fromEntity(request);
+      await remoteDataSource.requestToJoin(
+        communityId: communityId,
+        request: model,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, List<CommunityMember>>> getJoinRequests(
+    String communityId,
+  ) async {
+    try {
+      final requests = await remoteDataSource.getJoinRequests(communityId);
+      return Right(requests.map((m) => m.toEntity()).toList());
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> approveJoinRequest({
+    required String communityId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.approveJoinRequest(
+        communityId: communityId,
+        userId: userId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> rejectJoinRequest({
+    required String communityId,
+    required String userId,
+  }) async {
+    try {
+      await remoteDataSource.rejectJoinRequest(
+        communityId: communityId,
+        userId: userId,
+      );
+      return const Right(null);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
 }
