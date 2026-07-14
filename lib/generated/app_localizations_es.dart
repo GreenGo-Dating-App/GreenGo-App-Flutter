@@ -3971,7 +3971,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventsFilterOngoing => 'En curso';
 
   @override
-  String get eventsFilterUpcoming => 'Proximos';
+  String get eventsFilterUpcoming => 'Próximos';
 
   @override
   String get eventsFilterPast => 'Pasados';
@@ -6645,13 +6645,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get couponRedeemTitle => 'Canjear código de cupón';
 
   @override
-  String get referralCodeTitle => 'Tienes un codigo de referido?';
+  String get referralCodeTitle => '¿Tienes un código de referido?';
 
   @override
-  String get referralCodeLabel => 'Codigo de referido';
+  String get referralCodeLabel => 'Código de referido';
 
   @override
-  String get referralCodeHint => 'Introduce el codigo de un amigo';
+  String get referralCodeHint => 'Introduce el código de un amigo';
 
   @override
   String get couponApplyButton => 'Aplicar';
@@ -11512,7 +11512,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventScanCheckIn => 'Escanear / Registrar';
 
   @override
-  String get eventScanManageScanners => 'Gestionar escaneres';
+  String get eventScanManageScanners => 'Gestionar escáneres';
 
   @override
   String get eventScanInviteScannerHint =>
@@ -11522,15 +11522,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventScanNicknameHint => 'Apodo';
 
   @override
-  String get eventScanAddScanner => 'Anadir';
+  String get eventScanAddScanner => 'Añadir';
 
   @override
   String get eventScanScannerNotFound =>
-      'No se encontro ningun miembro con ese apodo';
+      'No se encontró ningún miembro con ese apodo';
 
   @override
   String get eventScanScannerAddFailed =>
-      'No se pudo anadir el escaner. Intentalo de nuevo.';
+      'No se pudo añadir el escáner. Inténtalo de nuevo.';
 
   @override
   String eventScanScannerAdded(String name) {
@@ -11854,25 +11854,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get verifyLegalNameHint => 'Nombre legal registrado';
 
   @override
-  String get verifyPhoneLabel => 'Numero de telefono';
+  String get verifyPhoneLabel => 'Número de teléfono';
 
   @override
   String get verifyPhoneHint => '+34 612 345 678';
 
   @override
-  String get verifySendCode => 'Enviar codigo';
+  String get verifySendCode => 'Enviar código';
 
   @override
   String get verifyResendCode => 'Reenviar';
 
   @override
-  String get verifyEnterCodeLabel => 'Codigo de 6 digitos';
+  String get verifyEnterCodeLabel => 'Código de 6 dígitos';
 
   @override
   String get verifyConfirmCode => 'Verificar';
 
   @override
-  String get verifyPhoneVerified => 'Telefono verificado';
+  String get verifyPhoneVerified => 'Teléfono verificado';
 
   @override
   String get verifyOwnerDocumentLabel =>
@@ -11886,7 +11886,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get verifyDocumentUploadError =>
-      'No se pudo subir el documento. Intentalo de nuevo.';
+      'No se pudo subir el documento. Inténtalo de nuevo.';
 
   @override
   String get verifyWebsiteLabel => 'Sitio web (opcional)';
@@ -11899,7 +11899,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get verifyMissingFields =>
-      'Completa todos los campos obligatorios y verifica tu telefono.';
+      'Completa todos los campos obligatorios y verifica tu teléfono.';
 
   @override
   String get requestVerificationMessage =>
@@ -12141,7 +12141,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get qrScanNotAuthorized =>
-      'Solo el organizador o un escaner invitado puede validar entradas';
+      'Solo el organizador o un escáner invitado puede validar entradas';
 
   @override
   String get qrHubJoinedEvent => '¡Vas a asistir! Abriendo el evento…';
