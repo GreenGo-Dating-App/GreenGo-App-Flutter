@@ -136,7 +136,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // boosted-first then the nearest normal ones, within [kFeaturedRadiusKm] of
   // the user. Rendered with a premium gold-glow/shine treatment
   // ([_LuxuryEventCard]). null == loading; empty == hidden.
-  List<Event>? _luxuryEvents;
+  List<_Happening>? _luxuryEvents;
 
   // ── People sections (each: null == loading, empty == loaded/hidden) ─────────
   // "Recommended for you": heuristic relevance-ranked people via the
@@ -624,16 +624,23 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// Tiers 1–3 stay within [kFeaturedRadiusKm] when a location is known; all
   /// tiers are de-duplicated by event id.
   Future<void> _loadLuxuryEvents() async {
-    final picked = <Event>[];
+    final now = DateTime.now();
+    final todayStr = DateFormat('yyyy-MM-dd').format(now);
+    final picked = <_Happening>[];
     final seen = <String>{};
 
-    void addEvents(Iterable<Event> items) {
-      for (final e in items) {
+    void addAll(Iterable<_Happening> items) {
+      for (final h in items) {
         if (picked.length >= 3) break;
-        if (e.id.isEmpty || !seen.add(e.id)) continue; // dedup by event id
-        picked.add(e);
+        final k = h.key;
+        if (k.isEmpty || !seen.add(k)) continue; // dedup by key
+        picked.add(h);
       }
     }
+
+    // Adapter so the existing native tiers keep adding community events.
+    void addEvents(Iterable<Event> items) =>
+        addAll(items.map((e) => _Happening.community(e)));
 
     final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
     final hasLocation = _userLat != null && _userLng != null;
@@ -671,8 +678,38 @@ class _ExploreScreenState extends State<ExploreScreen> {
       addEvents(others);
     }
 
-    // Tier 3 — NO community events near the user at all → fall back to nearby
-    // LIVE events (distance-sorted), lightly shuffled within the closest set.
+    // Tier 3 (per spec) — LIVE EVENTS OF THE DAY: external Ticketmaster events
+    // dated today, shuffled. Preferred fallback once community is exhausted.
+    if (picked.length < 3) {
+      List<ExternalEvent> live = const <ExternalEvent>[];
+      final ds = ExternalEventsDataSource(firestore: _firestore);
+      try {
+        if (hasLocation) {
+          live = await ds.getNearbyExperiences(
+            source: 'ticketmaster',
+            userLat: _userLat!,
+            userLng: _userLng!,
+            limit: 60,
+          );
+        } else {
+          live = await ds.getExperiencesSorted(
+              source: 'ticketmaster', sort: 'date');
+        }
+      } catch (_) {
+        live = const <ExternalEvent>[];
+      }
+      final liveToday = live
+          .where((e) => e.startDate == todayStr)
+          .map((e) => _Happening.external(e))
+          .where(_hasImage)
+          .toList()
+        ..shuffle();
+      addAll(liveToday);
+    }
+
+    // Deep native safety nets below — only reached if community AND live-of-day
+    // were all empty, so the carousel still shows something.
+    // Nearby LIVE native events (distance-sorted), lightly shuffled.
     if (picked.length < 3 && community.isEmpty && hasLocation) {
       try {
         final live = await eventsDs.getEventsNearLocation(
@@ -1724,14 +1761,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
         itemCount: events.length,
         separatorBuilder: (_, __) => const SizedBox(width: 14),
         itemBuilder: (context, index) => _LuxuryEventCard(
-          event: events[index],
+          happening: events[index],
           animate: !reduceMotion,
-          onTap: () => Navigator.of(context).push(
-            EventDetailLoaderScreen.route(
-              eventId: events[index].id,
-              currentUserId: widget.userId,
-            ),
-          ),
+          onTap: () => _openHappening(context, events[index]),
         ),
       );
     }
@@ -2880,12 +2912,14 @@ class _FeaturedCardSkeleton extends StatelessWidget {
 /// under reduced motion (leaving the static gold treatment).
 class _LuxuryEventCard extends StatefulWidget {
   const _LuxuryEventCard({
-    required this.event,
+    required this.happening,
     required this.onTap,
     required this.animate,
   });
 
-  final Event event;
+  /// A community event OR an external "live event of the day" — the featured
+  /// carousel falls back to external live events when community runs out.
+  final _Happening happening;
   final VoidCallback onTap;
   final bool animate;
 
@@ -2924,10 +2958,10 @@ class _LuxuryEventCardState extends State<_LuxuryEventCard>
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final event = widget.event;
-    final imageUrl = event.imageUrl;
-    final title = event.title;
-    final goingCount = event.goingCount;
+    final happening = widget.happening;
+    final imageUrl = happening.imageUrl;
+    final title = happening.title ?? '';
+    final goingCount = happening.goingCount;
     const innerRadius = AppGlass.radiusCard - _LuxuryEventCard._frame;
 
     return SizedBox(
