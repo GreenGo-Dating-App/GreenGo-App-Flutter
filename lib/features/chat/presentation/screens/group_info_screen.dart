@@ -98,9 +98,11 @@ class GroupInfoScreen extends StatelessWidget {
               ),
               ...members.map((m) {
                 final brief = dir[m.userId];
+                // Show only the member's NAME — never fall back to the raw user
+                // id when the name hasn't resolved yet.
                 final displayName = m.userId == currentUserId
                     ? l10n.groupYou
-                    : (brief?.name ?? m.userId);
+                    : (brief?.name ?? l10n.chatUnknown);
                 final photo = brief?.photoUrl;
                 final flag = languageFlagEmoji(brief?.language);
                 // Admin can remove any non-self member.

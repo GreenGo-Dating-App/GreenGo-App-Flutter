@@ -82,16 +82,15 @@ class _BusinessEventsViewState extends State<_BusinessEventsView> {
     var list = events.where((e) {
       switch (_bucket) {
         case _EventBucket.past:
-          // Anything already ENDED by the actual date-time → Past (even if it
-          // ended earlier today).
-          return e.endDate.isBefore(now);
+          // The event's day has passed (started before today).
+          return e.startDate.isBefore(startOfToday);
         case _EventBucket.upcoming:
           // Starts tomorrow or later.
           return !e.startDate.isBefore(endOfToday);
         case _EventBucket.ongoing:
-          // "Soon" = happening today / ongoing: not yet ended AND starts before
-          // end-of-today.
-          return !e.endDate.isBefore(now) && e.startDate.isBefore(endOfToday);
+          // "Soon" = events happening TODAY (start date is today).
+          return !e.startDate.isBefore(startOfToday) &&
+              e.startDate.isBefore(endOfToday);
       }
     }).toList();
     final q = _query.trim().toLowerCase();

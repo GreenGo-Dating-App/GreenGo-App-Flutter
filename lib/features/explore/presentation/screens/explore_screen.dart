@@ -659,6 +659,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// tiers are de-duplicated by event id.
   Future<void> _loadLuxuryEvents() async {
     final now = DateTime.now();
+    final startOfToday = DateTime(now.year, now.month, now.day);
     final todayStr = DateFormat('yyyy-MM-dd').format(now);
     final picked = <_Happening>[];
     final seen = <String>{};
@@ -690,6 +691,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
           limit: 40,
         );
         community = _dedupeSeries(events
+            // Featured = events happening TODAY or in the FUTURE only (never past).
+            .where((e) => !e.startDate.isBefore(startOfToday))
             .where((e) => _withinFeaturedRadius(_Happening.community(e)))
             .toList());
       } catch (_) {
@@ -1989,7 +1992,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // People photos are square (1:1) — width == height — with the card's own
   // rounded corners (radius 16 in [NetworkGridCard]) kept for a "bit rounded" look.
   static const double _networkCardWidth = 150;
-  static const double _networkCardHeight = 150;
+  // Portrait rectangle (taller than wide) for the Explore / Discover people
+  // cards — shows more of the photo.
+  static const double _networkCardHeight = 210;
 
   /// A people carousel section (title + horizontal row of [NetworkGridCard]s).
   /// [people] null == loading (skeleton row); empty == the whole section

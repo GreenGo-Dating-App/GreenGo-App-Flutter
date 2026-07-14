@@ -4129,7 +4129,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get exploreAroundYou => 'Pessoas perto de ti';
+  String get exploreAroundYou => 'Descobrir';
 
   @override
   String get exploreSameInterests => 'Pessoas com os teus interesses';
@@ -17045,7 +17045,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get exploreAroundYou => 'Pessoas perto de você';
+  String get exploreAroundYou => 'Descobrir';
 
   @override
   String get exploreSameInterests => 'Pessoas com os seus interesses';

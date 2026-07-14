@@ -23,6 +23,7 @@ import {
 } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { resolveActor, emitNotification } from '../notifications/notifyHelpers';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -228,6 +229,40 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
     }
 
     await commitInChunks(writes);
+
+    // Notifications: tell each ADDED user they were added (b), and tell the
+    // group owner that someone joined their group (d). The actor for "added
+    // you" is the group owner (the usual adder); for "joined your group" it's
+    // the added user.
+    if (added.length > 0) {
+      const ownerId = (after.createdBy as string) ||
+        (after.groupInfo?.createdBy as string) || '';
+      const ownerActor = ownerId ? await resolveActor(ownerId) : undefined;
+      for (const uid of added) {
+        if (uid === ownerId) continue;
+        // → the added user
+        await emitNotification({
+          recipientId: uid,
+          type: 'group_add',
+          title: `added you to ${name}`,
+          body: name,
+          data: { type: 'group_add', groupId, action: 'open_group', actorId: ownerId },
+          actor: ownerActor,
+        });
+        // → the group owner
+        if (ownerId) {
+          const joiner = await resolveActor(uid);
+          await emitNotification({
+            recipientId: ownerId,
+            type: 'group_join',
+            title: `joined your group ${name}`,
+            body: name,
+            data: { type: 'group_join', groupId, action: 'open_group', actorId: uid },
+            actor: joiner,
+          });
+        }
+      }
+    }
   })
 );
 

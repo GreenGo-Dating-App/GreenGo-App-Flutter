@@ -19,6 +19,9 @@ import '../bloc/conversations_state.dart';
 import '../widgets/conversation_card.dart';
 import 'chat_screen.dart';
 import 'create_group_screen.dart';
+import '../bloc/groups_bloc.dart';
+import '../bloc/groups_event.dart';
+import '../bloc/groups_state.dart';
 import 'groups_screen.dart';
 
 /// Conversations Screen
@@ -245,9 +248,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
       (ConversationFilter.newMessages, l10n?.filterNewMessages ?? 'New'),
       (ConversationFilter.notReplied, l10n?.filterNotReplied ?? 'Unread'),
       (ConversationFilter.favorites, l10n?.filterFavorites ?? 'Favorites'),
-      (ConversationFilter.toApprove, l10n?.filterToApprove ?? 'To Approve'),
-      (ConversationFilter.fromMatch, l10n?.filterFromMatch ?? 'Match'),
-      (ConversationFilter.fromSearch, l10n?.filterFromSearch ?? 'Search'),
+      // "To Approve", "Match" and "Direct/Search" chips removed per request.
     ];
 
     return SizedBox(
@@ -372,8 +373,13 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                 ),
               )
             : null,
-        // Exchanges = 1:1 Messages + group chats, shown as two tabs.
-        body: DefaultTabController(
+        // Exchanges = 1:1 Messages + group chats, shown as two tabs. A single
+        // GroupsBloc is provided here so BOTH the Groups tab badge and the
+        // embedded GroupsScreen share one live stream.
+        body: BlocProvider<GroupsBloc>(
+          create: (_) =>
+              di.sl<GroupsBloc>()..add(GroupsLoadRequested(widget.userId)),
+          child: DefaultTabController(
           length: 2,
           child: Column(
             children: [
@@ -384,8 +390,31 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                   labelColor: AppColors.richGold,
                   unselectedLabelColor: AppColors.textTertiary,
                   tabs: [
-                    Tab(text: l10n.messagesTabMessages),
-                    Tab(text: l10n.messagesTabGroups),
+                    // Messages tab — badge with the count of unread 1:1 chats.
+                    BlocBuilder<ConversationsBloc, ConversationsState>(
+                      builder: (context, state) => _tabWithBadge(
+                        l10n.messagesTabMessages,
+                        state is ConversationsLoaded
+                            ? state.conversations
+                                .where((c) =>
+                                    c.unreadCount > 0 &&
+                                    c.lastMessage != null &&
+                                    !c.lastMessage!.isSentBy(widget.userId))
+                                .length
+                            : 0,
+                      ),
+                    ),
+                    // Groups tab — badge with the count of unread group chats.
+                    BlocBuilder<GroupsBloc, GroupsState>(
+                      builder: (context, state) => _tabWithBadge(
+                        l10n.messagesTabGroups,
+                        state is GroupsLoaded
+                            ? state.groups
+                                .where((g) => g.unreadCountFor(widget.userId) > 0)
+                                .length
+                            : 0,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -683,6 +712,39 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
             ],
           ),
         ),
+        ),
+      ),
+    );
+  }
+
+  /// A tab label with a small gold unread-count badge when [count] > 0.
+  Widget _tabWithBadge(String label, int count) {
+    return Tab(
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(label),
+          if (count > 0) ...[
+            const SizedBox(width: 6),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+              constraints: const BoxConstraints(minWidth: 18),
+              decoration: BoxDecoration(
+                color: AppColors.richGold,
+                borderRadius: BorderRadius.circular(9),
+              ),
+              child: Text(
+                count > 99 ? '99+' : '$count',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: AppColors.deepBlack,
+                  fontSize: 11,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ],
       ),
     );
   }
