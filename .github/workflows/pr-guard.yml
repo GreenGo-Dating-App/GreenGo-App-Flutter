@@ -1,0 +1,53 @@
+name: PR Guard (G0 hygiene)
+
+# Fast correctness gate for pull requests — separate from the Codemagic release
+# pipeline. Make this a REQUIRED status check on `main` (Settings → Branches).
+#
+# It intentionally does NOT run `flutter analyze --fatal-warnings` yet: the tree
+# still carries pre-existing analyzer warnings, so this job fails only on
+# ERROR-severity issues and on NEW unbounded Firestore queries in the PR diff.
+# Tighten to `--fatal-warnings` + `flutter test` once the warning baseline is 0.
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout (full history for diff)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: flutter pub get
+        run: flutter pub get
+
+      - name: Analyze (fail only on errors)
+        run: |
+          set -o pipefail
+          flutter analyze 2>&1 | tee analyze.txt || true
+          if grep -qE ' error [-•] ' analyze.txt; then
+            echo "::error::Analyzer reported ERROR-severity issues"
+            grep -E ' error [-•] ' analyze.txt
+            exit 1
+          fi
+          echo "No error-severity analyzer issues."
+
+      - name: No unbounded Firestore query (changed files)
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          head="${{ github.event.pull_request.head.sha }}"
+          changed="$(git diff --name-only "$base" "$head" -- '*.dart' || true)"
+          if [ -z "$changed" ]; then
+            echo "No changed .dart files."; exit 0
+          fi
+          echo "Checking changed Dart files:"; echo "$changed"
+          echo "$changed" | xargs -r bash scripts/check_unbounded_queries.sh

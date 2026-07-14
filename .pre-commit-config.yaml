@@ -27,6 +27,16 @@ repos:
         pass_filenames: false
         always_run: true
 
+      # Gate G0 — no unbounded Firestore list query (add .limit() or opt out with
+      # `// perf-ignore: bounded-elsewhere`). Advisory in pre-commit; authoritative
+      # in the pr-guard CI job.
+      - id: no-unbounded-firestore-query
+        name: No unbounded Firestore list query
+        entry: bash scripts/check_unbounded_queries.sh
+        language: system
+        files: '\.dart$'
+        pass_filenames: true
+
   # General hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
