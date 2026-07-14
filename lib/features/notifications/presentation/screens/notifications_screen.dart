@@ -179,6 +179,10 @@ class NotificationsScreen extends StatelessWidget {
                               NotificationDeleted(notification.notificationId),
                             );
                       },
+                      onOpenActor: (notification.actorId != null &&
+                              notification.actorId!.isNotEmpty)
+                          ? () => _openProfile(context, notification.actorId!)
+                          : null,
                     );
                   },
                 ),
@@ -304,11 +308,16 @@ class _NotificationTile extends StatelessWidget {
     required this.notification,
     required this.onTap,
     required this.onDismiss,
+    this.onOpenActor,
   });
 
   final NotificationEntity notification;
   final VoidCallback onTap;
   final VoidCallback onDismiss;
+
+  /// Opens the actor's profile (name-tap / avatar-tap). Null when there's no
+  /// actor to open (system / no-actor notifications).
+  final VoidCallback? onOpenActor;
 
   @override
   Widget build(BuildContext context) {
@@ -333,21 +342,14 @@ class _NotificationTile extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildLeading(),
+              // Avatar → actor profile when there's an actor.
+              GestureDetector(onTap: onOpenActor, child: _buildLeading()),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      _resolveL10n(context, notification.title),
-                      style: TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 15,
-                        fontWeight:
-                            unread ? FontWeight.bold : FontWeight.w500,
-                      ),
-                    ),
+                    _buildTitle(context, unread),
                     const SizedBox(height: 4),
                     Text(
                       _resolveL10n(context, notification.message),
@@ -382,6 +384,43 @@ class _NotificationTile extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// Title with the actor's nickname rendered BOLD + tappable (opens their
+  /// profile). Falls back to a plain title when there's no actor (legacy docs
+  /// or system notifications with the name baked into the title).
+  Widget _buildTitle(BuildContext context, bool unread) {
+    final title = _resolveL10n(context, notification.title);
+    final actor = notification.actorName?.trim();
+    final baseStyle = TextStyle(
+      color: AppColors.textPrimary,
+      fontSize: 15,
+      fontWeight: unread ? FontWeight.bold : FontWeight.w500,
+    );
+    if (actor == null || actor.isEmpty || onOpenActor == null) {
+      return Text(title, style: baseStyle);
+    }
+    return Text.rich(
+      TextSpan(
+        style: baseStyle,
+        children: [
+          WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: GestureDetector(
+              onTap: onOpenActor,
+              child: Text(
+                actor,
+                style: baseStyle.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.richGold,
+                ),
+              ),
+            ),
+          ),
+          if (title.isNotEmpty) TextSpan(text: ' $title'),
+        ],
       ),
     );
   }
@@ -442,6 +481,31 @@ class _NotificationTile extends StatelessWidget {
         return Icons.emoji_events;
       case NotificationType.gameInvite:
         return Icons.sports_esports;
+      case NotificationType.newEvent:
+      case NotificationType.communityEvent:
+      case NotificationType.communityEventChanged:
+      case NotificationType.eventJoin:
+      case NotificationType.eventReminder:
+        return Icons.event;
+      case NotificationType.groupMessage:
+      case NotificationType.groupAdd:
+      case NotificationType.groupJoin:
+        return Icons.groups;
+      case NotificationType.communityJoin:
+      case NotificationType.communityAnnouncement:
+      case NotificationType.eventAnnouncement:
+        return Icons.campaign;
+      case NotificationType.eventLike:
+        return Icons.thumb_up;
+      case NotificationType.qrScanned:
+        return Icons.qr_code;
+      case NotificationType.businessFollow:
+        return Icons.person_add;
+      case NotificationType.businessRating:
+        return Icons.star;
+      case NotificationType.boostStarted:
+      case NotificationType.boostEnded:
+        return Icons.rocket_launch;
     }
   }
 

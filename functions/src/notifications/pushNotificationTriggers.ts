@@ -199,6 +199,7 @@ async function writeInAppNotification(
   body: string,
   data?: Record<string, string>,
   fcmMessageId?: string,
+  actor?: { imageUrl?: string; actorId?: string; actorName?: string },
 ): Promise<void> {
   try {
     await db.collection('notifications').add({
@@ -211,6 +212,11 @@ async function writeInAppNotification(
       isRead: false,
       ...(fcmMessageId ? { sentAt: admin.firestore.FieldValue.serverTimestamp(), fcmMessageId } : {}),
       ...(data ? { data } : {}),
+      // Actor identity — drives the left avatar + the tappable bold name in the
+      // Flutter notification tile.
+      ...(actor?.imageUrl ? { imageUrl: actor.imageUrl } : {}),
+      ...(actor?.actorId ? { actorId: actor.actorId } : {}),
+      ...(actor?.actorName ? { actorName: actor.actorName } : {}),
     });
   } catch (e) {
     logError('writeInAppNotification error', e);
