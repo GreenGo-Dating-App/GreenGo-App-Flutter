@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/interaction_log_service.dart';
+import '../../../analytics/data/services/performance_monitoring_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
@@ -184,6 +185,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
   @override
   void initState() {
     super.initState();
+    // G0 perf traces: screen-open (stopped on first frame) + feed-load (stopped
+    // when the initial content resolves in _bootstrap). No-op in debug (perf
+    // collection is release-only).
+    final perf = di.sl<PerformanceMonitoringService>();
+    perf.startTrace('screen_open_explore');
+    perf.startTrace('feed_load');
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      perf.stopTrace('screen_open_explore');
+    });
     _bootstrap();
   }
 
@@ -195,6 +205,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       _load(),
       Future<void>.delayed(const Duration(milliseconds: 2500)),
     ]);
+    di.sl<PerformanceMonitoringService>().stopTrace('feed_load');
     if (mounted) setState(() => _bootstrapping = false);
   }
 

@@ -8,6 +8,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get_it/get_it.dart';
 // Coins
 import 'package:in_app_purchase/in_app_purchase.dart';
+import '../../features/analytics/data/services/performance_monitoring_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // Analytics (Firebase Analytics — product analytics, free)
@@ -217,6 +218,11 @@ import '../services/visual_vocabulary_service.dart';
 final sl = GetIt.instance;
 
 Future<void> init() async {
+  //! Core - Performance monitoring (Firebase Performance + Crashlytics)
+  sl.registerLazySingleton<PerformanceMonitoringService>(
+    () => PerformanceMonitoringService(),
+  );
+
   //! Features - Authentication
   // Bloc
   sl.registerFactory(
