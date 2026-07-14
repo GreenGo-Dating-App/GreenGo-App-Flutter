@@ -1913,8 +1913,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // ~2–2.5 cards peek on a phone and the user scrolls horizontally through all
   // 20. [NetworkGridCard] fills its parent (StackFit.expand), so each card is
   // wrapped in a fixed-size box.
+  // People photos are square (1:1) — width == height — with the card's own
+  // rounded corners (radius 16 in [NetworkGridCard]) kept for a "bit rounded" look.
   static const double _networkCardWidth = 150;
-  static const double _networkCardHeight = 220;
+  static const double _networkCardHeight = 150;
 
   /// A people carousel section (title + horizontal row of [NetworkGridCard]s).
   /// [people] null == loading (skeleton row); empty == the whole section

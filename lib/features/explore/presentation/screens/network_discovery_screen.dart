@@ -865,12 +865,13 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
-    // Edge-to-edge, zero-spacing 3-column grid (2.2.4 layout), tiles flush.
+    // Edge-to-edge 3-column grid with SQUARE people tiles (1:1). NetworkGridCard
+    // keeps its own rounded corners for a "bit rounded" look.
     const gridDelegate = SliverGridDelegateWithFixedCrossAxisCount(
       crossAxisCount: 3,
       crossAxisSpacing: 3,
       mainAxisSpacing: 3,
-      childAspectRatio: 0.62,
+      childAspectRatio: 1,
     );
 
     final candidates = _candidates;
