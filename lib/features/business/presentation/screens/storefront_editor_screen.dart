@@ -370,47 +370,10 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             ),
             const SizedBox(height: 28),
 
-            // Category
+            // Category — grouped, tappable chips (easier than a 50-item dropdown).
             _sectionHeader(l10n.categoryName, null),
-            const SizedBox(height: 12),
-            DropdownButtonFormField<String>(
-              value: BusinessCategories.all.contains(_category)
-                  ? _category
-                  : null,
-              isExpanded: true,
-              dropdownColor: AppColors.backgroundCard,
-              icon: const Icon(Icons.arrow_drop_down, color: AppColors.richGold),
-              style:
-                  const TextStyle(color: AppColors.textPrimary, fontSize: 16),
-              hint: Text(
-                l10n.storefrontCategoryHint,
-                style: const TextStyle(color: AppColors.textTertiary),
-              ),
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: AppColors.backgroundCard,
-                contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 16, vertical: 14),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                  borderSide: const BorderSide(color: AppColors.divider),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                  borderSide: const BorderSide(color: AppColors.divider),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                  borderSide:
-                      const BorderSide(color: AppColors.richGold, width: 2),
-                ),
-              ),
-              items: [
-                for (final c in BusinessCategories.all)
-                  DropdownMenuItem<String>(value: c, child: Text(c)),
-              ],
-              onChanged: (value) => setState(() => _category = value),
-            ),
+            const SizedBox(height: 8),
+            _buildCategoryGroups(),
             const SizedBox(height: 28),
 
             // Links
@@ -482,6 +445,60 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             ),
             const SizedBox(height: 40),
           ],
+        ),
+      ),
+    );
+  }
+
+  /// Grouped, tappable category chips — an easy replacement for the long flat
+  /// dropdown. One labelled section per [BusinessCategories.grouped] entry.
+  Widget _buildCategoryGroups() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        for (final entry in BusinessCategories.grouped.entries) ...[
+          Padding(
+            padding: const EdgeInsets.only(top: 10, bottom: 6),
+            child: Text(
+              entry.key,
+              style: const TextStyle(
+                color: AppColors.textSecondary,
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [for (final c in entry.value) _categoryChip(c)],
+          ),
+        ],
+      ],
+    );
+  }
+
+  Widget _categoryChip(String c) {
+    final selected = _category == c;
+    return GestureDetector(
+      onTap: () => setState(() => _category = c),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+        decoration: BoxDecoration(
+          color: selected ? AppColors.richGold : AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: selected ? AppColors.richGold : AppColors.divider,
+          ),
+        ),
+        child: Text(
+          c,
+          style: TextStyle(
+            color: selected ? AppColors.deepBlack : AppColors.textSecondary,
+            fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+            fontSize: 13.5,
+          ),
         ),
       ),
     );

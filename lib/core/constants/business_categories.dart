@@ -65,4 +65,36 @@ class BusinessCategories {
     'Transportation Service',
     'Other',
   ];
+
+  /// The same 50 categories organised into user-facing sections, used to render
+  /// an easy grouped-chip picker (instead of a long flat dropdown). Every value
+  /// here also appears in [all]; section names are organisational labels.
+  static const Map<String, List<String>> grouped = <String, List<String>>{
+    'Food & Drink': [
+      'Restaurant', 'Bar', 'Cafe', 'Bakery', 'Food Truck',
+      'Coffee Roastery', 'Winery', 'Brewery', 'Distillery',
+    ],
+    'Nightlife': ['Nightclub', 'Lounge', 'Live Music Venue'],
+    'Stay': ['Hotel', 'Hostel', 'Guesthouse', 'Resort', 'Bed & Breakfast'],
+    'Wellness': [
+      'Gym', 'Yoga Studio', 'Fitness Studio', 'Spa', 'Wellness Center',
+      'Beauty Salon', 'Barbershop',
+    ],
+    'Culture': [
+      'Museum', 'Art Gallery', 'Theater', 'Cinema', 'Cultural Center',
+    ],
+    'Travel & Tours': [
+      'Tour Operator', 'Travel Agency', 'Adventure & Outdoor', 'Diving Center',
+    ],
+    'Learn & Work': [
+      'Language School', 'Cooking School', 'Dance Studio', 'Coworking Space',
+      'Photography Studio', 'Coaching & Consulting',
+    ],
+    'Events': ['Event Venue', 'Conference Center'],
+    'Retail': ['Shop / Retail', 'Boutique', 'Bookstore', 'Market'],
+    'Community & Services': [
+      'Sports Club', 'Nonprofit & NGO', 'Community Center',
+      'Transportation Service', 'Other',
+    ],
+  };
 }
