@@ -3948,6 +3948,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsTabMyEvents => 'Os Meus Eventos';
 
   @override
+  String get eventsFilterOngoing => 'Em andamento';
+
+  @override
+  String get eventsFilterUpcoming => 'Proximos';
+
+  @override
+  String get eventsFilterPast => 'Passados';
+
+  @override
   String get eventsTabExperiences => 'Experiências';
 
   @override
@@ -16587,6 +16596,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsTabMyEvents => 'Meus Eventos';
+
+  @override
+  String get eventsFilterOngoing => 'Em andamento';
+
+  @override
+  String get eventsFilterUpcoming => 'Proximos';
+
+  @override
+  String get eventsFilterPast => 'Passados';
 
   @override
   String get eventsTabExperiences => 'Experiências';
