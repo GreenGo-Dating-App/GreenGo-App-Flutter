@@ -5885,6 +5885,30 @@ abstract class AppLocalizations {
   /// **'My Groups'**
   String get communitiesTabMyGroups;
 
+  /// No description provided for @communitiesTabJoined.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined Communities'**
+  String get communitiesTabJoined;
+
+  /// No description provided for @communitiesTabManaged.
+  ///
+  /// In en, this message translates to:
+  /// **'My communities'**
+  String get communitiesTabManaged;
+
+  /// No description provided for @communitiesNoManaged.
+  ///
+  /// In en, this message translates to:
+  /// **'You don\'t manage any communities yet'**
+  String get communitiesNoManaged;
+
+  /// No description provided for @communitiesNoManagedSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a community to bring people together'**
+  String get communitiesNoManagedSubtitle;
+
   /// No description provided for @communitiesTags.
   ///
   /// In en, this message translates to:
@@ -12227,6 +12251,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Exchanges'**
   String get messages;
+
+  /// No description provided for @messagesTabMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages'**
+  String get messagesTabMessages;
+
+  /// No description provided for @messagesTabGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups'**
+  String get messagesTabGroups;
 
   /// No description provided for @minutes.
   ///

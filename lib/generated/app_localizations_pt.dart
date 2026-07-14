@@ -3296,6 +3296,20 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesTabMyGroups => 'Os Meus Grupos';
 
   @override
+  String get communitiesTabJoined => 'Comunidades que participo';
+
+  @override
+  String get communitiesTabManaged => 'Minhas comunidades';
+
+  @override
+  String get communitiesNoManaged =>
+      'Você ainda não gerencia nenhuma comunidade';
+
+  @override
+  String get communitiesNoManagedSubtitle =>
+      'Crie uma comunidade para reunir pessoas';
+
+  @override
   String get communitiesTags => 'Tags';
 
   @override
@@ -6846,6 +6860,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get messages => 'Trocas';
+
+  @override
+  String get messagesTabMessages => 'Mensagens';
+
+  @override
+  String get messagesTabGroups => 'Grupos';
 
   @override
   String get minutes => 'Minutos';
@@ -15996,6 +16016,20 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get communitiesTabMyGroups => 'Meus Grupos';
 
   @override
+  String get communitiesTabJoined => 'Comunidades que participo';
+
+  @override
+  String get communitiesTabManaged => 'Minhas comunidades';
+
+  @override
+  String get communitiesNoManaged =>
+      'Você ainda não gerencia nenhuma comunidade';
+
+  @override
+  String get communitiesNoManagedSubtitle =>
+      'Crie uma comunidade para reunir pessoas';
+
+  @override
   String get communitiesTags => 'Tags';
 
   @override
@@ -19545,6 +19579,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get messages => 'Trocas';
+
+  @override
+  String get messagesTabMessages => 'Mensagens';
+
+  @override
+  String get messagesTabGroups => 'Grupos';
 
   @override
   String get minutes => 'Minutos';

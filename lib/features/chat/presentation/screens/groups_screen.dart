@@ -19,9 +19,13 @@ import 'group_chat_screen.dart';
 /// searchable by name. Backed by [GroupsBloc] (per-user inbox index, scales to
 /// millions). Layout mirrors the 1:1 chats list, with groups instead of people.
 class GroupsScreen extends StatefulWidget {
-  const GroupsScreen({super.key, required this.userId});
+  const GroupsScreen({super.key, required this.userId, this.showAppBar = true});
 
   final String userId;
+
+  /// When embedded as a tab (e.g. Exchanges → Groups) the host already provides
+  /// the header, so we hide our own AppBar. Standalone use keeps it.
+  final bool showAppBar;
 
   @override
   State<GroupsScreen> createState() => _GroupsScreenState();
@@ -86,11 +90,13 @@ class _GroupsScreenState extends State<GroupsScreen> {
       create: (_) => di.sl<GroupsBloc>()..add(GroupsLoadRequested(userId)),
       child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
-        appBar: AppBar(
-          backgroundColor: AppColors.backgroundDark,
-          title: Text(l10n.groupsTitle,
-              style: const TextStyle(color: AppColors.textPrimary)),
-        ),
+        appBar: widget.showAppBar
+            ? AppBar(
+                backgroundColor: AppColors.backgroundDark,
+                title: Text(l10n.groupsTitle,
+                    style: const TextStyle(color: AppColors.textPrimary)),
+              )
+            : null,
         floatingActionButton: FloatingActionButton.extended(
           backgroundColor: AppColors.richGold,
           foregroundColor: AppColors.deepBlack,

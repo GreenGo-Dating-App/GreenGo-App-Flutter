@@ -39,7 +39,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _loadInitialData();
   }
@@ -94,6 +94,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         ),
         bottom: TabBar(
           controller: _tabController,
+          isScrollable: true,
+          tabAlignment: TabAlignment.start,
           indicatorColor: AppColors.richGold,
           labelColor: AppColors.richGold,
           unselectedLabelColor: AppColors.textTertiary,
@@ -102,9 +104,10 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             fontSize: 14,
           ),
           tabs: [
-            Tab(text: AppLocalizations.of(context)!.communitiesTabMyGroups),
+            Tab(text: AppLocalizations.of(context)!.communitiesTabJoined),
             Tab(text: AppLocalizations.of(context)!.communitiesTabDiscover),
             Tab(text: AppLocalizations.of(context)!.communitiesTabLanguageCircles),
+            Tab(text: AppLocalizations.of(context)!.communitiesTabManaged),
           ],
         ),
       ),
@@ -116,6 +119,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
               _buildMyGroupsTab(state),
               _buildDiscoverTab(state),
               _buildLanguageCirclesTab(state),
+              _buildManagedTab(state),
             ],
           );
         },
@@ -178,6 +182,59 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           return CommunityCard(
             community: userCommunities[index],
             onTap: () => _navigateToCommunityDetail(userCommunities[index]),
+          );
+        },
+      ),
+    );
+  }
+
+  /// "My communities" Tab — communities this user OWNS / manages (created).
+  /// A community's creator is its manager (createdByUserId), so we filter the
+  /// user's communities down to the ones they created.
+  Widget _buildManagedTab(CommunitiesState state) {
+    if (state is CommunitiesLoading) {
+      return const Center(
+        child: CircularProgressIndicator(color: AppColors.richGold),
+      );
+    }
+
+    var managed = <Community>[];
+    if (state is CommunitiesLoaded) {
+      managed = state.userCommunities
+          .where((c) => c.createdByUserId == _currentUserId)
+          .toList();
+    }
+
+    if (managed.isEmpty) {
+      return _buildEmptyState(
+        icon: Icons.workspace_premium_outlined,
+        title: AppLocalizations.of(context)!.communitiesNoManaged,
+        subtitle: AppLocalizations.of(context)!.communitiesNoManagedSubtitle,
+        actionLabel: AppLocalizations.of(context)!.communitiesCreateLabel,
+        onAction: _navigateToCreateCommunity,
+      );
+    }
+
+    return RefreshIndicator(
+      color: AppColors.richGold,
+      backgroundColor: AppColors.backgroundCard,
+      onRefresh: () async {
+        if (_currentUserId != null) {
+          context.read<CommunitiesBloc>().add(
+                LoadUserCommunities(userId: _currentUserId!),
+              );
+        }
+      },
+      child: ListView.builder(
+        padding: const EdgeInsets.only(
+          top: AppDimensions.paddingS,
+          bottom: 80,
+        ),
+        itemCount: managed.length,
+        itemBuilder: (context, index) {
+          return CommunityCard(
+            community: managed[index],
+            onTap: () => _navigateToCommunityDetail(managed[index]),
           );
         },
       ),

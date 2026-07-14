@@ -3264,6 +3264,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get communitiesTabMyGroups => 'My Groups';
 
   @override
+  String get communitiesTabJoined => 'Joined Communities';
+
+  @override
+  String get communitiesTabManaged => 'My communities';
+
+  @override
+  String get communitiesNoManaged => 'You don\'t manage any communities yet';
+
+  @override
+  String get communitiesNoManagedSubtitle =>
+      'Create a community to bring people together';
+
+  @override
   String get communitiesTags => 'Tags';
 
   @override
@@ -6781,6 +6794,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get messages => 'Exchanges';
+
+  @override
+  String get messagesTabMessages => 'Messages';
+
+  @override
+  String get messagesTabGroups => 'Groups';
 
   @override
   String get minutes => 'Minutes';
