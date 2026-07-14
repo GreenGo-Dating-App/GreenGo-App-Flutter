@@ -727,17 +727,22 @@ class _EventsScreenState extends State<EventsScreen>
     return list;
   }
 
-  /// Narrow My Events by time bucket: past / on-going (running now) / upcoming.
+  /// Narrow My Events by time bucket: Past (ended) / Soon (today/ongoing) /
+  /// Upcoming (tomorrow on). Calendar/time-aware and consistent with the
+  /// business "Manage my events" screen.
   List<Event> _applyMyEventsTimeFilter(List<Event> events) {
     final now = DateTime.now();
+    final endOfToday =
+        DateTime(now.year, now.month, now.day).add(const Duration(days: 1));
     switch (_myEventsFilter) {
-      case _MyEventsFilter.ongoing:
+      case _MyEventsFilter.ongoing: // "Soon" = happening today / ongoing
         return events
-            .where((e) => !e.startDate.isAfter(now) && e.endDate.isAfter(now))
+            .where((e) =>
+                !e.endDate.isBefore(now) && e.startDate.isBefore(endOfToday))
             .toList();
-      case _MyEventsFilter.upcoming:
-        return events.where((e) => e.startDate.isAfter(now)).toList();
-      case _MyEventsFilter.past:
+      case _MyEventsFilter.upcoming: // starts tomorrow or later
+        return events.where((e) => !e.startDate.isBefore(endOfToday)).toList();
+      case _MyEventsFilter.past: // already ended
         return events.where((e) => e.endDate.isBefore(now)).toList();
     }
   }
@@ -782,7 +787,7 @@ class _EventsScreenState extends State<EventsScreen>
           padding: const EdgeInsets.fromLTRB(8, 8, 8, 4),
           child: Row(
             children: [
-              seg(_MyEventsFilter.ongoing, l10n.eventsFilterOngoing),
+              seg(_MyEventsFilter.ongoing, l10n.eventsFilterSoon),
               seg(_MyEventsFilter.upcoming, l10n.eventsFilterUpcoming),
               seg(_MyEventsFilter.past, l10n.eventsFilterPast),
             ],

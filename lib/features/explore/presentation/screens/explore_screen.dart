@@ -157,6 +157,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // Community/user-created events close to the user (distinct from "Happening
   // this week"). null == loading; empty == hidden.
   List<Event>? _communityEvents;
+
+  // Event keys already shown in an earlier Explore event carousel this load, so
+  // no event repeats across Featured / Happening-today / Near-you. Populated by
+  // the sequential `_loadEventCarousels` pass (Featured → Happening → Near-you).
+  final Set<String> _usedEventKeys = <String>{};
   // "Businesses near you": public business profiles (`profiles.isBusiness`),
   // nearest-first when a location is known else as returned. null == loading;
   // empty == hidden.
@@ -214,14 +219,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // Fire the content loads concurrently; each updates state on its own and
     // never throws (a failure just hides its section).
     await Future.wait<void>([
-      _loadHappenings(),
+      // Featured / Happening-today / Near-you run SEQUENTIALLY inside one pass
+      // so they can share `_usedEventKeys` and never show the same event twice.
+      _loadEventCarousels(),
       _loadFeaturedAttractions(),
-      _loadLuxuryEvents(),
       _loadRecommended(),
       _loadAroundYou(),
       _loadBusinessAccounts(),
       _loadSameLanguage(),
-      _loadCommunityEvents(),
       _loadBusinesses(),
       _loadMyEvents(),
       _loadCommunities(),
@@ -401,6 +406,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// FIRST, then the LIVE EVENTS OF THE DAY (Ticketmaster `external_events` dated
   /// today) that don't duplicate a community event. NEVER shows past events, at
   /// most 3 cards, one instance per recurring series.
+  /// Load the three event carousels IN ORDER so they share `_usedEventKeys`
+  /// (Featured has priority, then Happening-today, then Near-you) — an event
+  /// shown in an earlier one is excluded from the later ones.
+  Future<void> _loadEventCarousels() async {
+    _usedEventKeys.clear();
+    await _loadLuxuryEvents(); // Featured — records its keys
+    await _loadHappenings(); // Happening today — excludes + records
+    await _loadCommunityEvents(); // Near you — excludes
+  }
+
   Future<void> _loadHappenings() async {
     final now = DateTime.now();
     final todayEnd = DateTime(now.year, now.month, now.day, 23, 59, 59);
@@ -457,8 +472,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
         .where(_hasImage)
         .toList();
 
-    // Community events (today) FIRST, then live events of the day. Max 3.
-    final rows = [...communityItems, ...liveTodayItems].take(3).toList();
+    // Community events (today) FIRST, then live events of the day, EXCLUDING
+    // anything already shown in the Featured carousel. Max 3.
+    final rows = [...communityItems, ...liveTodayItems]
+        .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
+        .take(3)
+        .toList();
+    // Reserve these so Near-you doesn't repeat them.
+    for (final h in rows) {
+      if (h.key.isNotEmpty) _usedEventKeys.add(h.key);
+    }
 
     if (mounted) {
       setState(() {
@@ -680,17 +703,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ..sort((a, b) => a.id.compareTo(b.id));
     addEvents(_rotateSponsored(sponsored));
 
-    // Tier 2 — FILL with RANDOM other community events (de-duped against the
-    // sponsored picks) so the carousel rotates through the community instead of
-    // always showing the same closest few.
-    if (picked.length < 3) {
-      final others = community.where((e) => !e.isCurrentlyFeatured).toList()
-        ..shuffle();
-      addEvents(others);
-    }
-
-    // Tier 3 (per spec) — LIVE EVENTS OF THE DAY: external Ticketmaster events
-    // dated today, shuffled. Preferred fallback once community is exhausted.
+    // Tier 2 (per spec) — when short of 3 featured, FILL with LIVE EVENTS OF THE
+    // DAY (external Ticketmaster dated today) BEFORE plain community events, so
+    // the Featured carousel always reaches 3 with live content first.
     if (picked.length < 3) {
       List<ExternalEvent> live = const <ExternalEvent>[];
       final ds = ExternalEventsDataSource(firestore: _firestore);
@@ -716,6 +731,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
           .toList()
         ..shuffle();
       addAll(liveToday);
+    }
+
+    // Tier 3 — FILL with RANDOM other community events (de-duped against the
+    // sponsored + live picks) so the carousel rotates through the community.
+    if (picked.length < 3) {
+      final others = community.where((e) => !e.isCurrentlyFeatured).toList()
+        ..shuffle();
+      addEvents(others);
     }
 
     // Deep native safety nets below — only reached if community AND live-of-day
@@ -789,7 +812,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
-    if (mounted) setState(() => _luxuryEvents = picked.take(3).toList());
+    final result = picked.take(3).toList();
+    // Reserve these events so Happening-today / Near-you don't repeat them.
+    for (final h in result) {
+      if (h.key.isNotEmpty) _usedEventKeys.add(h.key);
+    }
+    if (mounted) setState(() => _luxuryEvents = result);
   }
 
   /// How many people each carousel shows.
@@ -824,7 +852,23 @@ class _ExploreScreenState extends State<ExploreScreen> {
     } catch (_) {
       picked = const <MatchCandidate>[];
     }
-    if (mounted) setState(() => _aroundYou = picked);
+    if (mounted) {
+      setState(() => _aroundYou = picked);
+      // Warm the image cache so the avatars are ready and never block on scroll.
+      _precacheAvatars(picked);
+    }
+  }
+
+  /// Precache each person's first photo so the People-around-you cards render
+  /// their avatar instantly (no per-tile network wait).
+  void _precacheAvatars(List<MatchCandidate> people) {
+    if (!mounted) return;
+    for (final c in people) {
+      final urls = c.profile.photoUrls;
+      if (urls.isEmpty || urls.first.isEmpty) continue;
+      precacheImage(CachedNetworkImageProvider(urls.first), context)
+          .catchError((_) {});
+    }
   }
 
   /// "Business accounts" — GreenGo business profiles (`isBusiness == true`) to
@@ -963,8 +1007,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
         );
         // Auto-publish gate (defensive): drafts / not-yet-due scheduled events
         // never leak into discovery. The datasource already filters; guard here
-        // too (see Event.isLive).
-        events = events.where((e) => e.isLive).toList();
+        // too (see Event.isLive). Also exclude anything already shown in the
+        // Featured or Happening-today carousels (no repeats across Explore).
+        events = events
+            .where((e) => e.isLive && !_usedEventKeys.contains(e.id))
+            .toList();
       } catch (_) {
         events = const <Event>[];
       }
@@ -2014,10 +2061,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-            child: header,
-          ),
+          // Hide the section title while loading — only show it once people are
+          // in, so there's no "People around you" header over empty shimmer.
+          if (people != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+              child: header,
+            ),
           SizedBox(
             height: _networkCardHeight,
             child: AnimatedSwitcher(

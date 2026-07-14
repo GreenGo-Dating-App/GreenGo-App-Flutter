@@ -12871,6 +12871,47 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get communitiesTranslating => 'Traduzindo…';
+
+  @override
+  String get eventsFilterSoon => 'Em breve';
+
+  @override
+  String get businessBadgeLabel => 'Empresa';
+
+  @override
+  String get businessWhatsappLabel => 'Número de WhatsApp';
+
+  @override
+  String get businessWhatsappSubtitle =>
+      'Os visitantes tocam para conversar com você no WhatsApp';
+
+  @override
+  String get businessWhatsappHint => 'ex. +351912345678';
+
+  @override
+  String get businessWhatsappButton => 'WhatsApp';
+
+  @override
+  String get locationLanguagesLabel => 'Localização e idiomas';
+
+  @override
+  String get storefrontLocationLanguagesSubtitle =>
+      'Onde você está e os idiomas que fala';
+
+  @override
+  String get storefrontLocationNotSet => 'Não definido';
+
+  @override
+  String get universalSearchTabBusiness => 'Empresas';
+
+  @override
+  String get universalSearchTabCommunity => 'Comunidades';
+
+  @override
+  String get universalSearchNoBusiness => 'Nenhuma empresa encontrada';
+
+  @override
+  String get universalSearchNoCommunities => 'Nenhuma comunidade encontrada';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -25722,4 +25763,45 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get communitiesTranslating => 'Traduzindo…';
+
+  @override
+  String get eventsFilterSoon => 'Em breve';
+
+  @override
+  String get businessBadgeLabel => 'Empresa';
+
+  @override
+  String get businessWhatsappLabel => 'Número de WhatsApp';
+
+  @override
+  String get businessWhatsappSubtitle =>
+      'Os visitantes tocam para conversar com você no WhatsApp';
+
+  @override
+  String get businessWhatsappHint => 'ex. +351912345678';
+
+  @override
+  String get businessWhatsappButton => 'WhatsApp';
+
+  @override
+  String get locationLanguagesLabel => 'Localização e idiomas';
+
+  @override
+  String get storefrontLocationLanguagesSubtitle =>
+      'Onde você está e os idiomas que fala';
+
+  @override
+  String get storefrontLocationNotSet => 'Não definido';
+
+  @override
+  String get universalSearchTabBusiness => 'Empresas';
+
+  @override
+  String get universalSearchTabCommunity => 'Comunidades';
+
+  @override
+  String get universalSearchNoBusiness => 'Nenhuma empresa encontrada';
+
+  @override
+  String get universalSearchNoCommunities => 'Nenhuma comunidade encontrada';
 }

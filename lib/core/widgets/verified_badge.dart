@@ -31,6 +31,40 @@ class VerifiedBadge extends StatelessWidget {
   }
 }
 
+/// Business account badge — a gold "Business" pill shown on business profiles.
+/// The [label] is passed in so the text stays localized.
+class BusinessBadge extends StatelessWidget {
+  const BusinessBadge({required this.label, super.key, this.size = 20});
+  final String label;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+      decoration: BoxDecoration(
+        gradient: AppColors.goldGradient,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.storefront, size: size * 0.75, color: AppColors.deepBlack),
+          const SizedBox(width: 4),
+          Text(
+            label,
+            style: TextStyle(
+              color: AppColors.deepBlack,
+              fontSize: size * 0.6,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 /// Premium/Gold member badge
 class PremiumBadge extends StatelessWidget {
 

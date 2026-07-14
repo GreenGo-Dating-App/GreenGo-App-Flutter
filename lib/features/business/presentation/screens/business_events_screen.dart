@@ -81,17 +81,17 @@ class _BusinessEventsViewState extends State<_BusinessEventsView> {
     final endOfToday = startOfToday.add(const Duration(days: 1));
     var list = events.where((e) {
       switch (_bucket) {
-        case _EventBucket.ongoing:
-          // "On-going" = events happening at the current date (today): the
-          // event's span overlaps today (starts before end-of-today and ends
-          // at/after start-of-today).
-          return e.startDate.isBefore(endOfToday) &&
-              !e.endDate.isBefore(startOfToday);
-        case _EventBucket.upcoming:
-          // Strictly in the future (from tomorrow on).
-          return !e.startDate.isBefore(endOfToday);
         case _EventBucket.past:
-          return e.endDate.isBefore(startOfToday);
+          // Anything already ENDED by the actual date-time → Past (even if it
+          // ended earlier today).
+          return e.endDate.isBefore(now);
+        case _EventBucket.upcoming:
+          // Starts tomorrow or later.
+          return !e.startDate.isBefore(endOfToday);
+        case _EventBucket.ongoing:
+          // "Soon" = happening today / ongoing: not yet ended AND starts before
+          // end-of-today.
+          return !e.endDate.isBefore(now) && e.startDate.isBefore(endOfToday);
       }
     }).toList();
     final q = _query.trim().toLowerCase();
@@ -233,7 +233,7 @@ class _BusinessEventsViewState extends State<_BusinessEventsView> {
       padding: const EdgeInsets.fromLTRB(12, 0, 12, 4),
       child: Row(
         children: [
-          chip(_EventBucket.ongoing, l10n.eventsFilterOngoing),
+          chip(_EventBucket.ongoing, l10n.eventsFilterSoon),
           chip(_EventBucket.upcoming, l10n.eventsFilterUpcoming),
           chip(_EventBucket.past, l10n.eventsFilterPast),
         ],

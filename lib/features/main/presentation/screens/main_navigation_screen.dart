@@ -47,6 +47,7 @@ import '../../../explore/presentation/screens/explore_screen.dart';
 import '../../../chat/presentation/screens/groups_screen.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
 import '../../../communities/presentation/screens/communities_screen.dart';
+import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -167,6 +168,19 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   Set<String> _knownUnlockedAchievements = {}; // track already-unlocked achievements
 
   @override
+  /// Fire-and-forget warm of the discovery stack (People around you) so it's
+  /// ready & cached before the user opens Explore. Mirrors Explore's exact
+  /// query/preferences so the datasource cache key matches.
+  void _warmDiscoveryStack() {
+    final prefs = MatchPreferences.defaultFor(widget.userId)
+        .copyWith(showSupportUser: false);
+    di
+        .sl<DiscoveryRemoteDataSource>()
+        .getDiscoveryStack(userId: widget.userId, preferences: prefs, limit: 60)
+        .then((_) {}, onError: (_) {});
+  }
+
+  @override
   void initState() {
     super.initState();
 
@@ -179,6 +193,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     DataPreloadService.instance.warm(widget.userId).then((_) {
       ExternalEventsPreloader.instance.warm();
     });
+
+    // Warm the People-around-you discovery stack in the background so Explore's
+    // "People around you" is already computed & cached (5-min in-memory cache in
+    // the datasource) when the user gets there. Uses the IDENTICAL preferences
+    // object Explore uses so the cache key matches. Best-effort, never throws.
+    _warmDiscoveryStack();
 
     // Safety net: redeem a signup coupon that was captured at registration but
     // not yet applied (e.g. app killed right after onboarding completed). Safe

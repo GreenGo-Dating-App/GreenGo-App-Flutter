@@ -22691,6 +22691,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Translating…'**
   String get communitiesTranslating;
+
+  /// No description provided for @eventsFilterSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Soon'**
+  String get eventsFilterSoon;
+
+  /// No description provided for @businessBadgeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Business'**
+  String get businessBadgeLabel;
+
+  /// No description provided for @businessWhatsappLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'WhatsApp number'**
+  String get businessWhatsappLabel;
+
+  /// No description provided for @businessWhatsappSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Visitors tap to chat with you on WhatsApp'**
+  String get businessWhatsappSubtitle;
+
+  /// No description provided for @businessWhatsappHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. +351912345678'**
+  String get businessWhatsappHint;
+
+  /// No description provided for @businessWhatsappButton.
+  ///
+  /// In en, this message translates to:
+  /// **'WhatsApp'**
+  String get businessWhatsappButton;
+
+  /// No description provided for @locationLanguagesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Location & Languages'**
+  String get locationLanguagesLabel;
+
+  /// No description provided for @storefrontLocationLanguagesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Where you are and the languages you speak'**
+  String get storefrontLocationLanguagesSubtitle;
+
+  /// No description provided for @storefrontLocationNotSet.
+  ///
+  /// In en, this message translates to:
+  /// **'Not set'**
+  String get storefrontLocationNotSet;
+
+  /// No description provided for @universalSearchTabBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'Business'**
+  String get universalSearchTabBusiness;
+
+  /// No description provided for @universalSearchTabCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Communities'**
+  String get universalSearchTabCommunity;
+
+  /// No description provided for @universalSearchNoBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'No businesses found'**
+  String get universalSearchNoBusiness;
+
+  /// No description provided for @universalSearchNoCommunities.
+  ///
+  /// In en, this message translates to:
+  /// **'No communities found'**
+  String get universalSearchNoCommunities;
 }
 
 class _AppLocalizationsDelegate

@@ -4337,5 +4337,18 @@
   "communitiesEventsEmpty": "Ainda não há eventos",
   "communitiesTranslate": "Traduzir",
   "communitiesShowOriginal": "Ver original",
-  "communitiesTranslating": "Traduzindo…"
+  "communitiesTranslating": "Traduzindo…",
+  "eventsFilterSoon": "Em breve",
+  "businessBadgeLabel": "Empresa",
+  "businessWhatsappLabel": "Número de WhatsApp",
+  "businessWhatsappSubtitle": "Os visitantes tocam para conversar com você no WhatsApp",
+  "businessWhatsappHint": "ex. +351912345678",
+  "businessWhatsappButton": "WhatsApp",
+  "locationLanguagesLabel": "Localização e idiomas",
+  "storefrontLocationLanguagesSubtitle": "Onde você está e os idiomas que fala",
+  "storefrontLocationNotSet": "Não definido",
+  "universalSearchTabBusiness": "Empresas",
+  "universalSearchTabCommunity": "Comunidades",
+  "universalSearchNoBusiness": "Nenhuma empresa encontrada",
+  "universalSearchNoCommunities": "Nenhuma comunidade encontrada"
 }

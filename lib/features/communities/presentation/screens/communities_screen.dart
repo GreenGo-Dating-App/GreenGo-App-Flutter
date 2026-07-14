@@ -44,6 +44,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     _loadInitialData();
   }
 
+  /// Re-fetch the community lists (after create/join/leave).
+  void _reloadLists() => _loadInitialData();
+
   void _loadInitialData() {
     final userId = _currentUserId;
     if (userId == null) return;
@@ -111,7 +114,15 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           ],
         ),
       ),
-      body: BlocBuilder<CommunitiesBloc, CommunitiesState>(
+      body: BlocConsumer<CommunitiesBloc, CommunitiesState>(
+        // After a create/join/leave the bloc emits a terminal state (NOT
+        // CommunitiesLoaded), which would blank all four tabs — so reload the
+        // user's communities so the new one shows immediately.
+        listenWhen: (prev, curr) =>
+            curr is CommunityCreated ||
+            curr is CommunityJoined ||
+            curr is CommunityLeft,
+        listener: (context, state) => _reloadLists(),
         builder: (context, state) {
           return TabBarView(
             controller: _tabController,
@@ -600,8 +611,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     );
   }
 
-  void _navigateToCreateCommunity({CommunityType? preselectedType}) {
-    Navigator.of(context).push(
+  Future<void> _navigateToCreateCommunity({CommunityType? preselectedType}) async {
+    await Navigator.of(context).push(
       MaterialPageRoute(
         // CreateCommunityScreen also reads ProfileBloc.state, so forward it
         // alongside CommunitiesBloc (see _navigateToCommunityDetail).
@@ -616,5 +627,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         ),
       ),
     );
+    // Refresh on return so a just-created community is present even if the
+    // terminal-state listener was missed.
+    if (mounted) _reloadLists();
   }
 }
