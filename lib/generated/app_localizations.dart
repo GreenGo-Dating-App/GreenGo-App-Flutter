@@ -20784,6 +20784,114 @@ abstract class AppLocalizations {
   /// **'Request verification'**
   String get requestVerificationTitle;
 
+  /// No description provided for @verifyBusinessNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Business name'**
+  String get verifyBusinessNameLabel;
+
+  /// No description provided for @verifyLegalNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal name'**
+  String get verifyLegalNameLabel;
+
+  /// No description provided for @verifyLegalNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Registered legal entity name'**
+  String get verifyLegalNameHint;
+
+  /// No description provided for @verifyPhoneLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number'**
+  String get verifyPhoneLabel;
+
+  /// No description provided for @verifyPhoneHint.
+  ///
+  /// In en, this message translates to:
+  /// **'+1 555 123 4567'**
+  String get verifyPhoneHint;
+
+  /// No description provided for @verifySendCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Send code'**
+  String get verifySendCode;
+
+  /// No description provided for @verifyResendCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend'**
+  String get verifyResendCode;
+
+  /// No description provided for @verifyEnterCodeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'6-digit code'**
+  String get verifyEnterCodeLabel;
+
+  /// No description provided for @verifyConfirmCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get verifyConfirmCode;
+
+  /// No description provided for @verifyPhoneVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone verified'**
+  String get verifyPhoneVerified;
+
+  /// No description provided for @verifyOwnerDocumentLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Owner\'s ID document'**
+  String get verifyOwnerDocumentLabel;
+
+  /// No description provided for @verifyUploadDocument.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload document'**
+  String get verifyUploadDocument;
+
+  /// No description provided for @verifyDocumentUploaded.
+  ///
+  /// In en, this message translates to:
+  /// **'Document uploaded'**
+  String get verifyDocumentUploaded;
+
+  /// No description provided for @verifyDocumentUploadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t upload the document. Please try again.'**
+  String get verifyDocumentUploadError;
+
+  /// No description provided for @verifyWebsiteLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Website (optional)'**
+  String get verifyWebsiteLabel;
+
+  /// No description provided for @verifyWebsiteHint.
+  ///
+  /// In en, this message translates to:
+  /// **'https://example.com'**
+  String get verifyWebsiteHint;
+
+  /// No description provided for @verifyNotesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes (optional)'**
+  String get verifyNotesLabel;
+
+  /// No description provided for @verifyMissingFields.
+  ///
+  /// In en, this message translates to:
+  /// **'Please complete all required fields and verify your phone.'**
+  String get verifyMissingFields;
+
   /// No description provided for @requestVerificationMessage.
   ///
   /// In en, this message translates to:

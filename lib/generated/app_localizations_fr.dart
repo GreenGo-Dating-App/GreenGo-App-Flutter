@@ -11847,6 +11847,62 @@ class AppLocalizationsFr extends AppLocalizations {
   String get requestVerificationTitle => 'Demander la vérification';
 
   @override
+  String get verifyBusinessNameLabel => 'Nom de l\'entreprise';
+
+  @override
+  String get verifyLegalNameLabel => 'Nom legal';
+
+  @override
+  String get verifyLegalNameHint => 'Nom legal enregistre';
+
+  @override
+  String get verifyPhoneLabel => 'Numero de telephone';
+
+  @override
+  String get verifyPhoneHint => '+33 6 12 34 56 78';
+
+  @override
+  String get verifySendCode => 'Envoyer le code';
+
+  @override
+  String get verifyResendCode => 'Renvoyer';
+
+  @override
+  String get verifyEnterCodeLabel => 'Code a 6 chiffres';
+
+  @override
+  String get verifyConfirmCode => 'Verifier';
+
+  @override
+  String get verifyPhoneVerified => 'Telephone verifie';
+
+  @override
+  String get verifyOwnerDocumentLabel => 'Piece d\'identite du proprietaire';
+
+  @override
+  String get verifyUploadDocument => 'Televerser le document';
+
+  @override
+  String get verifyDocumentUploaded => 'Document televerse';
+
+  @override
+  String get verifyDocumentUploadError =>
+      'Impossible de televerser le document. Veuillez reessayer.';
+
+  @override
+  String get verifyWebsiteLabel => 'Site web (facultatif)';
+
+  @override
+  String get verifyWebsiteHint => 'https://exemple.com';
+
+  @override
+  String get verifyNotesLabel => 'Notes (facultatif)';
+
+  @override
+  String get verifyMissingFields =>
+      'Veuillez remplir tous les champs obligatoires et verifier votre telephone.';
+
+  @override
   String get requestVerificationMessage =>
       'Parle-nous un peu de ton entreprise afin que nous puissions la vérifier. Notre équipe examinera ta demande.';
 

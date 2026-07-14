@@ -11653,6 +11653,62 @@ class AppLocalizationsEn extends AppLocalizations {
   String get requestVerificationTitle => 'Request verification';
 
   @override
+  String get verifyBusinessNameLabel => 'Business name';
+
+  @override
+  String get verifyLegalNameLabel => 'Legal name';
+
+  @override
+  String get verifyLegalNameHint => 'Registered legal entity name';
+
+  @override
+  String get verifyPhoneLabel => 'Phone number';
+
+  @override
+  String get verifyPhoneHint => '+1 555 123 4567';
+
+  @override
+  String get verifySendCode => 'Send code';
+
+  @override
+  String get verifyResendCode => 'Resend';
+
+  @override
+  String get verifyEnterCodeLabel => '6-digit code';
+
+  @override
+  String get verifyConfirmCode => 'Verify';
+
+  @override
+  String get verifyPhoneVerified => 'Phone verified';
+
+  @override
+  String get verifyOwnerDocumentLabel => 'Owner\'s ID document';
+
+  @override
+  String get verifyUploadDocument => 'Upload document';
+
+  @override
+  String get verifyDocumentUploaded => 'Document uploaded';
+
+  @override
+  String get verifyDocumentUploadError =>
+      'Couldn\'t upload the document. Please try again.';
+
+  @override
+  String get verifyWebsiteLabel => 'Website (optional)';
+
+  @override
+  String get verifyWebsiteHint => 'https://example.com';
+
+  @override
+  String get verifyNotesLabel => 'Notes (optional)';
+
+  @override
+  String get verifyMissingFields =>
+      'Please complete all required fields and verify your phone.';
+
+  @override
   String get requestVerificationMessage =>
       'Tell us a little about your business so we can verify it. Our team will review your request.';
 

@@ -11769,6 +11769,63 @@ class AppLocalizationsPt extends AppLocalizations {
   String get requestVerificationTitle => 'Pedir verificação';
 
   @override
+  String get verifyBusinessNameLabel => 'Nome da empresa';
+
+  @override
+  String get verifyLegalNameLabel => 'Nome legal';
+
+  @override
+  String get verifyLegalNameHint => 'Razao social registrada';
+
+  @override
+  String get verifyPhoneLabel => 'Numero de telefone';
+
+  @override
+  String get verifyPhoneHint => '+55 11 91234-5678';
+
+  @override
+  String get verifySendCode => 'Enviar codigo';
+
+  @override
+  String get verifyResendCode => 'Reenviar';
+
+  @override
+  String get verifyEnterCodeLabel => 'Codigo de 6 digitos';
+
+  @override
+  String get verifyConfirmCode => 'Verificar';
+
+  @override
+  String get verifyPhoneVerified => 'Telefone verificado';
+
+  @override
+  String get verifyOwnerDocumentLabel =>
+      'Documento de identidade do proprietario';
+
+  @override
+  String get verifyUploadDocument => 'Enviar documento';
+
+  @override
+  String get verifyDocumentUploaded => 'Documento enviado';
+
+  @override
+  String get verifyDocumentUploadError =>
+      'Nao foi possivel enviar o documento. Tente novamente.';
+
+  @override
+  String get verifyWebsiteLabel => 'Site (opcional)';
+
+  @override
+  String get verifyWebsiteHint => 'https://exemplo.com';
+
+  @override
+  String get verifyNotesLabel => 'Notas (opcional)';
+
+  @override
+  String get verifyMissingFields =>
+      'Preencha todos os campos obrigatorios e verifique seu telefone.';
+
+  @override
   String get requestVerificationMessage =>
       'Conta-nos um pouco sobre o teu negócio para o podermos verificar. A nossa equipa irá rever o teu pedido.';
 
@@ -24349,6 +24406,63 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get requestVerificationTitle => 'Solicitar verificação';
+
+  @override
+  String get verifyBusinessNameLabel => 'Nome da empresa';
+
+  @override
+  String get verifyLegalNameLabel => 'Nome legal';
+
+  @override
+  String get verifyLegalNameHint => 'Razao social registrada';
+
+  @override
+  String get verifyPhoneLabel => 'Numero de telefone';
+
+  @override
+  String get verifyPhoneHint => '+55 11 91234-5678';
+
+  @override
+  String get verifySendCode => 'Enviar codigo';
+
+  @override
+  String get verifyResendCode => 'Reenviar';
+
+  @override
+  String get verifyEnterCodeLabel => 'Codigo de 6 digitos';
+
+  @override
+  String get verifyConfirmCode => 'Verificar';
+
+  @override
+  String get verifyPhoneVerified => 'Telefone verificado';
+
+  @override
+  String get verifyOwnerDocumentLabel =>
+      'Documento de identidade do proprietario';
+
+  @override
+  String get verifyUploadDocument => 'Enviar documento';
+
+  @override
+  String get verifyDocumentUploaded => 'Documento enviado';
+
+  @override
+  String get verifyDocumentUploadError =>
+      'Nao foi possivel enviar o documento. Tente novamente.';
+
+  @override
+  String get verifyWebsiteLabel => 'Site (opcional)';
+
+  @override
+  String get verifyWebsiteHint => 'https://exemplo.com';
+
+  @override
+  String get verifyNotesLabel => 'Notas (opcional)';
+
+  @override
+  String get verifyMissingFields =>
+      'Preencha todos os campos obrigatorios e verifique seu telefone.';
 
   @override
   String get requestVerificationMessage =>
