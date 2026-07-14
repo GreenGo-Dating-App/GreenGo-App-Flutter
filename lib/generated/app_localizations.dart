@@ -7400,7 +7400,7 @@ abstract class AppLocalizations {
   /// No description provided for @exploreAroundYou.
   ///
   /// In en, this message translates to:
-  /// **'People around you'**
+  /// **'Discover'**
   String get exploreAroundYou;
 
   /// No description provided for @exploreSameInterests.

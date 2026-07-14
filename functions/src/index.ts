@@ -142,6 +142,15 @@ export {
   onEventLiked,
 } from './notifications/socialNotifications';
 
+// Engagement notifications — profile view (throttled), QR scan, boost start/end.
+export {
+  onProfileViewed,
+  onTicketScanned,
+  onProfileBoostStarted,
+  onEventBoostStarted,
+  checkBoostExpiries,
+} from './notifications/engagementNotifications';
+
 // Events — scheduled reminders.
 export {
   sendEventReminders,

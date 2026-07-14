@@ -69,9 +69,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final userId = widget.userId;
-    return BlocProvider<GroupsBloc>(
-      create: (_) => di.sl<GroupsBloc>()..add(GroupsLoadRequested(userId)),
-      child: Scaffold(
+    final scaffold = Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: widget.showAppBar
             ? AppBar(
@@ -216,8 +214,18 @@ class _GroupsScreenState extends State<GroupsScreen> {
             ),
           ],
         ),
-      ),
     );
+
+    // Standalone use provides its own GroupsBloc; embedded in Exchanges it
+    // reuses the ancestor GroupsBloc so the tab badge + the list share one
+    // stream.
+    return widget.showAppBar
+        ? BlocProvider<GroupsBloc>(
+            create: (_) =>
+                di.sl<GroupsBloc>()..add(GroupsLoadRequested(userId)),
+            child: scaffold,
+          )
+        : scaffold;
   }
 
   Widget _buildFilterChips(AppLocalizations l10n) {

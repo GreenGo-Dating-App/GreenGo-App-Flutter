@@ -732,18 +732,19 @@ class _EventsScreenState extends State<EventsScreen>
   /// business "Manage my events" screen.
   List<Event> _applyMyEventsTimeFilter(List<Event> events) {
     final now = DateTime.now();
-    final endOfToday =
-        DateTime(now.year, now.month, now.day).add(const Duration(days: 1));
+    final startOfToday = DateTime(now.year, now.month, now.day);
+    final endOfToday = startOfToday.add(const Duration(days: 1));
     switch (_myEventsFilter) {
-      case _MyEventsFilter.ongoing: // "Soon" = happening today / ongoing
+      case _MyEventsFilter.ongoing: // "Soon" = events happening TODAY
         return events
             .where((e) =>
-                !e.endDate.isBefore(now) && e.startDate.isBefore(endOfToday))
+                !e.startDate.isBefore(startOfToday) &&
+                e.startDate.isBefore(endOfToday))
             .toList();
       case _MyEventsFilter.upcoming: // starts tomorrow or later
         return events.where((e) => !e.startDate.isBefore(endOfToday)).toList();
-      case _MyEventsFilter.past: // already ended
-        return events.where((e) => e.endDate.isBefore(now)).toList();
+      case _MyEventsFilter.past: // the event's day has passed
+        return events.where((e) => e.startDate.isBefore(startOfToday)).toList();
     }
   }
 
