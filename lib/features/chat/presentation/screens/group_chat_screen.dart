@@ -107,6 +107,14 @@ class _GroupChatViewState extends State<_GroupChatView> {
   final _controller = TextEditingController();
   final Set<String> _resolvingNames = {};
 
+  // Endless scroll: open on a bounded window and page older messages in on
+  // scroll (Firestore offline persistence serves them cache-first).
+  final _scrollController = ScrollController();
+  static const int _initialMessageWindow = 40;
+  static const int _messagePageSize = 30;
+  int _messageLimit = _initialMessageWindow;
+  bool _isLoadingMore = false;
+
   // Per-user, per-group translation settings (local; scales with no backend).
   bool _translate = true;
   String _targetLang = 'en';
@@ -128,6 +136,28 @@ class _GroupChatViewState extends State<_GroupChatView> {
   void initState() {
     super.initState();
     _loadTranslationPrefs();
+    _scrollController.addListener(_onScroll);
+  }
+
+  /// Reversed list → maxScrollExtent is the TOP (oldest). Near it, grow the
+  /// window and re-subscribe so older messages page in.
+  void _onScroll() {
+    if (_isLoadingMore) return;
+    if (_scrollController.position.pixels >=
+        _scrollController.position.maxScrollExtent - 100) {
+      setState(() => _isLoadingMore = true);
+      _messageLimit += _messagePageSize;
+      context.read<GroupChatBloc>().add(
+            GroupChatStarted(
+              groupId: widget.groupId,
+              userId: widget.currentUserId,
+              limit: _messageLimit,
+            ),
+          );
+      Future.delayed(const Duration(seconds: 1), () {
+        if (mounted) setState(() => _isLoadingMore = false);
+      });
+    }
   }
 
   Future<void> _loadTranslationPrefs() async {
@@ -240,6 +270,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
   @override
   void dispose() {
     _controller.dispose();
+    _scrollController.dispose();
     super.dispose();
   }
 
@@ -696,6 +727,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                         child: Text(AppLocalizations.of(context)!.groupSayHello))
                     : ListView.builder(
                         reverse: true,
+                        controller: _scrollController,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 12, vertical: 8),
                         itemCount: messages.length,

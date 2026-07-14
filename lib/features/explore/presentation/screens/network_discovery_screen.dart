@@ -152,6 +152,10 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   Map<String, List<String>> _peopleTags = const {};
   final Set<String> _selectedTags = {};
 
+  /// "Filter by business" toggle — seeded from the opener (Explore's Business
+  /// accounts → See all passes true), then user-toggleable via the chip.
+  late bool _businessOnly = widget.businessOnly;
+
   @override
   void initState() {
     super.initState();
@@ -375,7 +379,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           // Never render the user's own tile inside the pool (it is pinned).
           .where((c) => c.profile.userId != widget.userId)
           // Business-only mode: keep only business accounts.
-          .where((c) => !widget.businessOnly || c.profile.isBusiness)
+          .where((c) => !_businessOnly || c.profile.isBusiness)
           .toList();
 
       if (!mounted) return;
@@ -712,7 +716,41 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   _runNicknameLookup(nickname);
                 },
               )
-            : const SizedBox.shrink(),
+            : Align(
+                alignment: Alignment.centerLeft,
+                child: FilterChip(
+                  selected: _businessOnly,
+                  label: Text(l10n.exploreBusinessAccounts),
+                  avatar: Icon(
+                    Icons.storefront,
+                    size: 16,
+                    color: _businessOnly
+                        ? AppColors.deepBlack
+                        : AppColors.richGold,
+                  ),
+                  onSelected: (v) {
+                    setState(() {
+                      _businessOnly = v;
+                      _candidates = null;
+                      _visibleCount = _pageSize;
+                    });
+                    _load();
+                  },
+                  backgroundColor: AppColors.backgroundCard,
+                  selectedColor: AppColors.richGold,
+                  checkmarkColor: AppColors.deepBlack,
+                  labelStyle: TextStyle(
+                    color: _businessOnly
+                        ? AppColors.deepBlack
+                        : AppColors.textSecondary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  side: BorderSide(
+                    color:
+                        _businessOnly ? AppColors.richGold : AppColors.divider,
+                  ),
+                ),
+              ),
         actions: [
           IconButton(
             icon: Icon(_searching ? Icons.close : Icons.search),

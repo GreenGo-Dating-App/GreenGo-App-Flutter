@@ -77,14 +77,14 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 
 **Steps**
 - The seam the router plugs into is already Clean-Arch-clean: every feature's remote access goes through an **abstract data source** — e.g. `abstract class ChatRemoteDataSource` in `lib/features/chat/data/datasources/chat_remote_datasource.dart`, `coin_remote_datasource.dart`, `discovery_remote_datasource.dart`, etc. Impls (`lib/features/chat/data/repositories/chat_repository_impl.dart`) never see Firestore directly — they hold a datasource. **This is the injection point.**
-- **The one real hazard:** there are **~145 direct `FirebaseFirestore.instance` references across `lib/`** plus singleton services in `lib/core/services/` (`presence_service.dart`, `candidate_pool_service.dart`, `activity_tracking_service.dart`, …). G3 must have already funnelled these through the DI container (`lib/core/di/injection_container.dart`) so a **shard-aware `FirebaseFirestore` provider** is injected in one place. Confirm zero un-routed `FirebaseFirestore.instance` calls remain before flipping. If any remain, they will silently keep hitting the primary and become hotspots — this is the top pre-flip audit item.
+- **The one real hazard:** there are **246 direct `FirebaseFirestore.instance` references across 117 files in `lib/`** plus singleton services in `lib/core/services/` (`presence_service.dart`, `candidate_pool_service.dart`, `activity_tracking_service.dart`, …). G3 must have already funnelled these through the DI container (`lib/core/di/injection_container.dart`) so a **shard-aware `FirebaseFirestore` provider** is injected in one place. Confirm zero un-routed `FirebaseFirestore.instance` calls remain before flipping. If any remain, they will silently keep hitting the primary and become hotspots — this is the top pre-flip audit item.
 - Server-side, the router lives in the GKE domain services (`messaging`, `profile/discovery`, `groups`, `notifications` per [`../migration/02-target-architecture.md`](../migration/02-target-architecture.md) §2.3). The client sends logical keys; services resolve `key → shard`. Prefer server-side resolution so shard topology is not baked into shipped app binaries.
 - **Shard key:** partition by a stable high-cardinality entity (userId for per-user data: presence, inbox, feeds; conversationId for chat; groupId for group fan-out). Chat messages already write to auto-ID subcollections (`conversations/{id}/messages`) — naturally distributable; shard at the conversation/DB level, never per-message.
 - **Rebalancing:** use consistent-hashing / virtual-node ranges so adding shard N+1 moves ~1/N of keys, not all of them. Dual-read (new shard, fall back to old) during a key's move window; cut the write path last.
 - **Cross-shard queries:** GreenGo has few true cross-shard reads because most reads are per-user or per-conversation (single shard by construction). For the exceptions — global discovery, admin, analytics — **do not** scatter-gather across N Firestore DBs. Route them to the analytics/AlloyDB plane: `analytics` → BigQuery (`greengo_analytics`), global discovery → AlloyDB + Vertex Vector Search (migration P5), leaderboards → Memorystore Redis sorted sets. This keeps Firestore queries single-shard.
 
 **Acceptance:** load harness at target concurrency shows **no single Firestore DB > 7,000 writes/s and no DB > 700K listeners**; adding a shard rebalances ≤ ~1/N of keys with zero message/coin loss; **zero un-routed `FirebaseFirestore.instance` calls** in a codebase grep.
-**Effort:** L (multi-sprint). **Risk:** High — cross-shard consistency + the 145-callsite funnel.
+**Effort:** L (multi-sprint). **Risk:** High — cross-shard consistency + the 246-callsite funnel (117 files).
 
 ### 5.2 Full GKE WebSocket presence/chat fleet cutover
 
@@ -138,7 +138,7 @@ Each subsection: **Objective · Steps (real paths/infra) · Acceptance · Effort
 - Router lives server-side in GKE domain services; client sends logical keys through the **abstract datasource seam** (`lib/features/*/data/datasources/*_remote_datasource.dart`) injected via `lib/core/di/injection_container.dart`.
 - Key → shard by consistent hashing with virtual nodes; adding a shard moves ~1/N of keys. Dual-read during a key's move; cut writes last.
 - Shard by: userId (per-user data), conversationId (chat), groupId (group fan-out). Never per-message.
-- Pre-flip gate: **grep must show zero un-routed `FirebaseFirestore.instance`** (145 today — must all be behind DI before G4).
+- Pre-flip gate: **grep must show zero un-routed `FirebaseFirestore.instance`** (246 occurrences across 117 files today — must all be behind DI before G4).
 - Cross-shard reads go to the analytics/AlloyDB/Redis plane, never scatter-gather across Firestore DBs.
 
 ### 6.2 GKE autoscaling & connection sizing notes
@@ -189,6 +189,24 @@ All regions run identical stateless GKE services (Argo CD). Data pinned in-regio
 | WebSocket connection storm on mass reconnect | Med | High | Client backoff + jitter; PDB-limited drain; scale on connection count; warm Firestore-listener fallback during cutover |
 | Cost blowout | Med | High | CUD on P95 baseline (not peak); monthly waste sweeps; per-MAU trend as a leadership SLO; cache-hit ratios as cost levers |
 | Operational complexity (N shards × M regions) exceeds team capacity | Med | High | Strangler-fig, one shard/region at a time; per-shard & per-region SLOs + on-call (migration §08, §12); quarterly capacity review; automate rebalance/failover, never manual |
+
+---
+
+## Trade-offs — What this gate adds and what it costs
+
+### ✅ What you gain
+- **Features / UX:** presence and chat delivered over the GKE WebSocket fleet feels the same to users but now scales past the ~1M-listener wall; multi-region (ADR-0005 / migration P7) puts each user's home shard near their cluster, holding p95 < 400 ms for Americas/Asia instead of trans-Atlantic latency; regional failover means a region outage degrades, not downs, the app.
+- **Performance:** no single-database ceiling — writes/sec and concurrent listeners are spread across N Firestore DBs + AlloyDB shards, so 250K → 25M+ concurrent stays inside per-shard comfort bands with headroom.
+- **Functionality / capability headroom:** effectively unlimited horizontal scale toward 1B registered; adding a shard/region is additive (the DI seam flips single-target → N-target), not a rewrite; cost-per-MAU trends *down* as CUDs cover the predictable baseline and the TTS (Chirp 3 HD) and `external_events` caches amortize shared reads across millions.
+
+### ⚠️ What you give up / the costs
+- **Complexity & maintenance:** the highest operational tier GreenGo will ever run — N shards × M regions, a stateful WS fleet, AlloyDB replica promotion, per-shard/per-region SLOs and on-call. SRE burden and blast-radius surface grow accordingly.
+- **Performance or UX regressions in specific paths:** WebSocket cutover introduces reconnect-storm risk on mass pod recycle (mitigated by backoff/PDBs, but real); brief presence staleness during cohort cutover; cross-region reads for the rare global path are slower than a single-region lookup.
+- **Feature/behavior changes required:** **global "query across all users" is no longer free.** Any feature that scans all users — global leaderboards, global search, "browse everyone" — cannot fan out across N Firestore DBs and **must be redesigned shard-aware or backed by a separate index/warehouse** (BigQuery `greengo_analytics`, AlloyDB + Vertex Vector Search, Redis sorted sets). Cross-shard reads lose global strong consistency (eventual only). Data-residency rules constrain where EU/other user data may physically live.
+- **Engineering cost / dependencies:** depends on the entire migration program (Phase-B live: AlloyDB, Pub/Sub, GKE) plus G0–G3; a high fixed-cost floor (always-on primaries, LB, baseline pods, observability) that only amortizes at scale. **Hard pre-flip gate:** the 246 direct `FirebaseFirestore.instance` references (across 117 files) must all sit behind the DI shard-aware provider first — any missed one silently hotspots the single primary and defeats sharding.
+
+### Net verdict
+Only justify G4 past ~10M registered — it is the terminal complexity tier where you deliberately trade simplicity and some global-query functionality for effectively unlimited scale and multi-region resilience. From here on, features must be **designed shard-aware**: "just query all users" is gone, replaced by per-shard reads plus a warehouse/index for anything global. Reaching this gate is a good problem — it means GreenGo scaled to tens of millions concurrent — but the complexity it adds is not reversible: you do not un-shard or un-multi-region a live 1B-user platform. Activate it because a measured ceiling forced you to, never preemptively.
 
 ---
 

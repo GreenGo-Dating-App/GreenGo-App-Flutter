@@ -1,6 +1,6 @@
-# GreenGo Dating App - Complete Documentation Index
+# GreenGo — Cross-Cultural Discovery & Networking App · Documentation Index
 
-**Last Updated**: January 15, 2025
+**Last Updated**: July 13, 2026
 **Status**: ✅ All Features Complete (Points 1-300)
 
 ---
@@ -129,6 +129,19 @@ After running tests, open:
   - Dependencies
   - Build scripts
   - Test configuration
+
+### 6. Performance & Scaling
+- **[plan_on_scale/README.md](plan_on_scale/README.md)** ⭐ **SCALE & ANTI-SLOWDOWN PLAN**
+  - Activation-gate model (G0→G4): add complexity only when user-count triggers it
+  - SLO targets, capacity ceilings, and a per-gate gains/losses trade-off table
+  - Grounded in a real repo audit (listener leaks, unbounded queries, hotspots, shard seam)
+
+- **Per-gate deep-dives** (tasks, code anchors, verification, trade-offs)
+  - **[plan_on_scale/G0_HYGIENE.md](plan_on_scale/G0_HYGIENE.md)** — now / any scale: listeners, query limits, checklist, perf traces
+  - **[plan_on_scale/G1_OBSERVE_THROTTLE.md](plan_on_scale/G1_OBSERVE_THROTTLE.md)** — ~100K: dashboards, throttling, cache-first
+  - **[plan_on_scale/G2_DE_HOTSPOT.md](plan_on_scale/G2_DE_HOTSPOT.md)** — ~1M: sharded counters, RTDB presence, load harness
+  - **[plan_on_scale/G3_STRUCTURAL.md](plan_on_scale/G3_STRUCTURAL.md)** — ~3M→10M: DB-sharding readiness, migration Phase-B, isolates, CDN
+  - **[plan_on_scale/G4_DISTRIBUTED.md](plan_on_scale/G4_DISTRIBUTED.md)** — ~10M+: multi-DB sharding, GKE fleet, multi-region
 
 ---
 

@@ -51,6 +51,9 @@ class GroupChatBloc extends Bloc<GroupChatEvent, GroupChatState> {
 
   String _groupId = '';
   String _userId = '';
+  // Bounded window; grown as the user scrolls up for older messages.
+  int _messageLimit = 40;
+  bool _hasLoadedOnce = false;
 
   Future<void> _onStarted(
     GroupChatStarted event,
@@ -58,7 +61,10 @@ class GroupChatBloc extends Bloc<GroupChatEvent, GroupChatState> {
   ) async {
     _groupId = event.groupId;
     _userId = event.userId;
-    emit(const GroupChatLoading());
+    if (event.limit != null) _messageLimit = event.limit!;
+    // Only show the spinner on the first load, not on scroll re-subscriptions.
+    if (!_hasLoadedOnce) emit(const GroupChatLoading());
+    _hasLoadedOnce = true;
 
     // Mark read on open (fire-and-forget — own write).
     await markGroupRead(
@@ -66,7 +72,8 @@ class GroupChatBloc extends Bloc<GroupChatEvent, GroupChatState> {
     );
 
     await emit.forEach(
-      getGroupMessages(GetGroupMessagesParams(groupId: _groupId)),
+      getGroupMessages(
+          GetGroupMessagesParams(groupId: _groupId, limit: _messageLimit)),
       onData: (result) => result.fold(
         (failure) => GroupChatError(failure.message),
         (messages) => GroupChatLoaded(
