@@ -715,6 +715,8 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .doc(eventId)
           .collection('attendees')
           .orderBy('rsvpDate', descending: false)
+          // Bounded (G0): first page of the attendee list; more would paginate.
+          .limit(200)
           .get();
 
       return snapshot.docs
@@ -835,6 +837,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final organizedSnapshot = await _eventsCollection
           .where('organizerId', isEqualTo: userId)
           .orderBy('startDate', descending: false)
+          .limit(100) // Bounded (G0), matches the events-list pattern.
           .get();
 
       final organizedEvents = organizedSnapshot.docs

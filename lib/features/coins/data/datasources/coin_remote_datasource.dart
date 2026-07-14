@@ -418,6 +418,7 @@ class CoinRemoteDataSource {
     final snapshot = await _rewardsCollection
         .where('userId', isEqualTo: userId)
         .orderBy('claimedAt', descending: true)
+        .limit(100) // Bounded (G0): ledger grows per user.
         .get();
 
     return snapshot.docs.map((doc) {
@@ -889,6 +890,7 @@ class CoinRemoteDataSource {
         .where('receiverId', isEqualTo: userId)
         .where('status', isEqualTo: CoinGiftStatus.pending.name)
         .orderBy('sentAt', descending: true)
+        .limit(100) // Bounded (G0).
         .get();
 
     return snapshot.docs
@@ -901,6 +903,7 @@ class CoinRemoteDataSource {
     final snapshot = await _giftsCollection
         .where('senderId', isEqualTo: userId)
         .orderBy('sentAt', descending: true)
+        .limit(100) // Bounded (G0).
         .get();
 
     return snapshot.docs
