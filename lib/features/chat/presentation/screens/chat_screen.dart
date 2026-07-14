@@ -142,8 +142,12 @@ class _ChatScreenState extends State<ChatScreen> {
   String? _phraseTranslation;
   bool _showPhraseOfDay = true;
 
-  // Pagination
-  int _messageLimit = 100;
+  // Pagination — open on a BOUNDED latest window (Firestore offline persistence
+  // serves it from the device cache and only syncs newer messages), then page
+  // older messages in on scroll instead of ever loading the whole history.
+  static const int _initialMessageWindow = 40;
+  static const int _messagePageSize = 30;
+  int _messageLimit = _initialMessageWindow;
   bool _isLoadingMore = false;
 
   LanguageProvider? _languageProvider;
@@ -360,7 +364,7 @@ class _ChatScreenState extends State<ChatScreen> {
     if (_scrollController.position.pixels >=
         _scrollController.position.maxScrollExtent - 100) {
       setState(() => _isLoadingMore = true);
-      _messageLimit += 100;
+      _messageLimit += _messagePageSize;
       _chatBloc.add(ChatConversationLoaded(
         matchId: widget.matchId,
         currentUserId: widget.currentUserId,
