@@ -11470,6 +11470,32 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventScanCheckIn => 'Digitalizar / Check-in';
 
   @override
+  String get eventScanManageScanners => 'Gerenciar scanners';
+
+  @override
+  String get eventScanInviteScannerHint =>
+      'Convide um membro para escanear ingressos na entrada.';
+
+  @override
+  String get eventScanNicknameHint => 'Apelido';
+
+  @override
+  String get eventScanAddScanner => 'Adicionar';
+
+  @override
+  String get eventScanScannerNotFound =>
+      'Nenhum membro encontrado com esse apelido';
+
+  @override
+  String get eventScanScannerAddFailed =>
+      'Nao foi possivel adicionar o scanner. Tente novamente.';
+
+  @override
+  String eventScanScannerAdded(String name) {
+    return '$name agora pode escanear ingressos';
+  }
+
+  @override
   String get eventAttendance => 'Presença';
 
   @override
@@ -12067,6 +12093,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get qrHubInvalidCode => 'Este não é um código GreenGo válido';
+
+  @override
+  String get qrScanApproved => 'Aprovado — check-in feito';
+
+  @override
+  String get qrScanNotAuthorized =>
+      'Apenas o dono do evento ou um scanner convidado pode validar ingressos';
 
   @override
   String get qrHubJoinedEvent => 'Vais participar! A abrir o evento…';
@@ -24121,6 +24154,32 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get eventScanCheckIn => 'Escanear / Check-in';
 
   @override
+  String get eventScanManageScanners => 'Gerenciar scanners';
+
+  @override
+  String get eventScanInviteScannerHint =>
+      'Convide um membro para escanear ingressos na entrada.';
+
+  @override
+  String get eventScanNicknameHint => 'Apelido';
+
+  @override
+  String get eventScanAddScanner => 'Adicionar';
+
+  @override
+  String get eventScanScannerNotFound =>
+      'Nenhum membro encontrado com esse apelido';
+
+  @override
+  String get eventScanScannerAddFailed =>
+      'Nao foi possivel adicionar o scanner. Tente novamente.';
+
+  @override
+  String eventScanScannerAdded(String name) {
+    return '$name agora pode escanear ingressos';
+  }
+
+  @override
   String get eventAttendance => 'Presença';
 
   @override
@@ -24719,6 +24778,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get qrHubInvalidCode => 'Este não é um código GreenGo válido';
+
+  @override
+  String get qrScanApproved => 'Aprovado — check-in feito';
+
+  @override
+  String get qrScanNotAuthorized =>
+      'Apenas o dono do evento ou um scanner convidado pode validar ingressos';
 
   @override
   String get qrHubJoinedEvent => 'Você vai participar! Abrindo o evento…';

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
@@ -7,6 +8,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 import 'event_ticket_screen.dart';
@@ -145,6 +147,87 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
       );
   }
 
+  /// Owner action: invite another GreenGo member (by nickname) to be allowed to
+  /// scan/redeem this event's QR tickets.
+  Future<void> _manageScanners() async {
+    final l10n = AppLocalizations.of(context)!;
+    final controller = TextEditingController();
+    final nickname = await showDialog<String>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventScanManageScanners,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(l10n.eventScanInviteScannerHint,
+                style: const TextStyle(
+                    color: AppColors.textSecondary, fontSize: 13)),
+            const SizedBox(height: 12),
+            TextField(
+              controller: controller,
+              autofocus: true,
+              style: const TextStyle(color: AppColors.textPrimary),
+              decoration: InputDecoration(
+                hintText: l10n.eventScanNicknameHint,
+                hintStyle: const TextStyle(color: AppColors.textTertiary),
+                filled: true,
+                fillColor: AppColors.backgroundInput,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: const BorderSide(color: AppColors.divider),
+                ),
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(),
+            child: Text(l10n.cancel,
+                style: const TextStyle(color: AppColors.textTertiary)),
+          ),
+          TextButton(
+            onPressed: () =>
+                Navigator.of(dialogContext).pop(controller.text.trim()),
+            child: Text(l10n.eventScanAddScanner,
+                style: const TextStyle(
+                    color: AppColors.richGold, fontWeight: FontWeight.w600)),
+          ),
+        ],
+      ),
+    );
+    controller.dispose();
+    if (nickname == null || nickname.isEmpty || !mounted) return;
+    await _addScannerByNickname(nickname);
+  }
+
+  Future<void> _addScannerByNickname(String nickname) async {
+    final l10n = AppLocalizations.of(context)!;
+    try {
+      final profile =
+          await di.sl<DiscoveryRemoteDataSource>().searchByNickname(nickname);
+      if (!mounted) return;
+      if (profile == null) {
+        _feedback(l10n.eventScanScannerNotFound, ok: false);
+        return;
+      }
+      await FirebaseFirestore.instance
+          .collection('events')
+          .doc(widget.event.id)
+          .update({
+        'allowedScannerIds': FieldValue.arrayUnion([profile.userId]),
+      });
+      if (mounted) {
+        _feedback(l10n.eventScanScannerAdded(profile.displayName), ok: true);
+      }
+    } catch (_) {
+      if (mounted) _feedback(l10n.eventScanScannerAddFailed, ok: false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -155,6 +238,11 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
         foregroundColor: AppColors.textPrimary,
         title: Text(l10n.eventScanCheckIn),
         actions: [
+          IconButton(
+            tooltip: l10n.eventScanManageScanners,
+            onPressed: _manageScanners,
+            icon: const Icon(Icons.person_add_alt, color: AppColors.richGold),
+          ),
           IconButton(
             tooltip: 'Flash',
             onPressed: () => _controller.toggleTorch(),
