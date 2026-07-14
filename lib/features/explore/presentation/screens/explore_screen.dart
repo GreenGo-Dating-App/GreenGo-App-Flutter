@@ -651,10 +651,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ..sort((a, b) => a.id.compareTo(b.id));
     addEvents(_rotateSponsored(sponsored));
 
-    // Tier 2 — FILL with the CLOSEST community events (data source is already
-    // nearest-first), de-duped against the sponsored picks.
+    // Tier 2 — FILL with RANDOM other community events (de-duped against the
+    // sponsored picks) so the carousel rotates through the community instead of
+    // always showing the same closest few.
     if (picked.length < 3) {
-      addEvents(community.where((e) => !e.isCurrentlyFeatured));
+      final others = community.where((e) => !e.isCurrentlyFeatured).toList()
+        ..shuffle();
+      addEvents(others);
     }
 
     // Tier 3 — NO community events near the user at all → fall back to nearby
@@ -686,7 +689,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
               ..sort((a, b) => a.id.compareTo(b.id));
         addEvents(_rotateSponsored(sponsoredGlobal));
         if (picked.length < 3) {
-          addEvents(upcoming.where((e) => !e.isCurrentlyFeatured));
+          final others = upcoming.where((e) => !e.isCurrentlyFeatured).toList()
+            ..shuffle();
+          addEvents(others);
         }
       } catch (_) {
         // Leave picked as-is — Tier 5 still has a chance below.
