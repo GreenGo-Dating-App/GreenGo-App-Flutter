@@ -5144,7 +5144,7 @@
   "showSupportUser": "Show GreenGo Support",
   "showSupportUserDescription": "Show GreenGo Support user in discovery grid",
   "preferenceShowMyNetwork": "My Network",
-  "preferenceShowMyNetworkDesc": "Show only people in your network (matches and accepted Priority Connect).",
+  "preferenceShowMyNetworkDesc": "Show only people in your network.",
   "randomMode": "Random Mode",
   "randomModeDescription": "Discover random people from all over the world, sorted by distance. When off, only people close to you are shown.",
   "yourProfile": "You",

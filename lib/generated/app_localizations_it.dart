@@ -10803,7 +10803,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get preferenceShowMyNetworkDesc =>
-      'Mostra solo le persone nella tua rete (match e Priority Connect accettati).';
+      'Mostra solo le persone della tua rete.';
 
   @override
   String get randomMode => 'Modalità casuale';

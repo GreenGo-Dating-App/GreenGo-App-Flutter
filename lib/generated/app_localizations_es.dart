@@ -10808,8 +10808,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get preferenceShowMyNetwork => 'Mi Red';
 
   @override
-  String get preferenceShowMyNetworkDesc =>
-      'Mostrar solo personas en tu red (matches y Priority Connect aceptados).';
+  String get preferenceShowMyNetworkDesc => 'Mostrar solo personas de tu red.';
 
   @override
   String get randomMode => 'Modo aleatorio';

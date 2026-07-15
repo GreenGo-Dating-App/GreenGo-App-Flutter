@@ -19029,7 +19029,7 @@ abstract class AppLocalizations {
   /// No description provided for @preferenceShowMyNetworkDesc.
   ///
   /// In en, this message translates to:
-  /// **'Show only people in your network (matches and accepted Priority Connect).'**
+  /// **'Show only people in your network.'**
   String get preferenceShowMyNetworkDesc;
 
   /// No description provided for @randomMode.
