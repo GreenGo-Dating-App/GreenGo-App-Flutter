@@ -12896,4 +12896,80 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shopBusinessAccount => 'Business account';
+
+  @override
+  String get tourCommunitiesTabsTitle => 'Three ways to browse';
+
+  @override
+  String get tourCommunitiesTabsDesc =>
+      'Switch between the groups you joined, discover new ones, and manage the communities you created.';
+
+  @override
+  String get tourCommunitiesCreateTitle => 'Start a community';
+
+  @override
+  String get tourCommunitiesCreateDesc =>
+      'Tap here to create your own community and bring people together.';
+
+  @override
+  String get tourEventsCreateTitle => 'Create an event';
+
+  @override
+  String get tourEventsCreateDesc =>
+      'Tap the plus to host your own event or meetup.';
+
+  @override
+  String get tourEventsSearchTitle => 'Search events';
+
+  @override
+  String get tourEventsSearchDesc =>
+      'Find events by city, country or name, and sort them your way.';
+
+  @override
+  String get tourEventsTabsTitle => 'Explore every tab';
+
+  @override
+  String get tourEventsTabsDesc =>
+      'Browse community events, live events, attractions and experiences around you.';
+
+  @override
+  String get tourProfileHubTitle => 'Your profile hub';
+
+  @override
+  String get tourProfileHubDesc =>
+      'Everything about your account lives here - edit it, manage settings and unlock premium features.';
+
+  @override
+  String get tourProfileViewTitle => 'Preview your profile';
+
+  @override
+  String get tourProfileViewDesc =>
+      'See exactly how other people view your profile.';
+
+  @override
+  String get tourProfileEditTitle => 'Edit your details';
+
+  @override
+  String get tourProfileEditDesc =>
+      'Tap to update your photos, bio, interests, location and more.';
+
+  @override
+  String get tourNotifHubTitle => 'Your notifications';
+
+  @override
+  String get tourNotifHubDesc =>
+      'Every like, match, message and event update lands here.';
+
+  @override
+  String get tourNotifOpenTitle => 'Open and manage';
+
+  @override
+  String get tourNotifOpenDesc =>
+      'Tap a notification to open it, or swipe left to delete it.';
+
+  @override
+  String get tourNotifMarkAllTitle => 'Clear the unread';
+
+  @override
+  String get tourNotifMarkAllDesc => 'Mark everything as read in a single tap.';
 }

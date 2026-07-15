@@ -33,6 +33,7 @@ import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../authentication/presentation/bloc/auth_bloc.dart';
 import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
@@ -1379,7 +1380,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         // every tab screen is mounted and kept alive; IndexedStack just shows
         // the selected one.
         index: safeIndex,
-        children: _screens,
+        // Each tab is wrapped in a VisibleTabScope so per-page first-time tours
+        // only start when their tab is actually selected (not while off-stage
+        // in the IndexedStack). The flag updates on every tab change.
+        children: [
+          for (var i = 0; i < _screens.length; i++)
+            VisibleTabScope(isVisible: i == safeIndex, child: _screens[i]),
+        ],
       ),
       bottomNavigationBar: _buildBottomNav(safeIndex),
     );

@@ -13030,6 +13030,83 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get shopBusinessAccount => 'Conta empresarial';
+
+  @override
+  String get tourCommunitiesTabsTitle => 'Tres formas de explorar';
+
+  @override
+  String get tourCommunitiesTabsDesc =>
+      'Alterne entre os grupos que voce entrou, descubra novos e gerencie as comunidades que voce criou.';
+
+  @override
+  String get tourCommunitiesCreateTitle => 'Crie uma comunidade';
+
+  @override
+  String get tourCommunitiesCreateDesc =>
+      'Toque aqui para criar sua propria comunidade e reunir as pessoas.';
+
+  @override
+  String get tourEventsCreateTitle => 'Crie um evento';
+
+  @override
+  String get tourEventsCreateDesc =>
+      'Toque no mais para organizar seu proprio evento ou encontro.';
+
+  @override
+  String get tourEventsSearchTitle => 'Buscar eventos';
+
+  @override
+  String get tourEventsSearchDesc =>
+      'Encontre eventos por cidade, pais ou nome e ordene do seu jeito.';
+
+  @override
+  String get tourEventsTabsTitle => 'Explore cada aba';
+
+  @override
+  String get tourEventsTabsDesc =>
+      'Navegue por eventos da comunidade, eventos ao vivo, atracoes e experiencias perto de voce.';
+
+  @override
+  String get tourProfileHubTitle => 'Seu painel de perfil';
+
+  @override
+  String get tourProfileHubDesc =>
+      'Tudo sobre sua conta esta aqui: edite, gerencie as configuracoes e desbloqueie recursos premium.';
+
+  @override
+  String get tourProfileViewTitle => 'Veja seu perfil';
+
+  @override
+  String get tourProfileViewDesc =>
+      'Veja exatamente como os outros veem seu perfil.';
+
+  @override
+  String get tourProfileEditTitle => 'Edite seus dados';
+
+  @override
+  String get tourProfileEditDesc =>
+      'Toque para atualizar suas fotos, bio, interesses, localizacao e mais.';
+
+  @override
+  String get tourNotifHubTitle => 'Suas notificacoes';
+
+  @override
+  String get tourNotifHubDesc =>
+      'Cada curtida, match, mensagem e atualizacao de evento chega aqui.';
+
+  @override
+  String get tourNotifOpenTitle => 'Abra e gerencie';
+
+  @override
+  String get tourNotifOpenDesc =>
+      'Toque em uma notificacao para abri-la ou deslize para a esquerda para exclui-la.';
+
+  @override
+  String get tourNotifMarkAllTitle => 'Limpe os nao lidos';
+
+  @override
+  String get tourNotifMarkAllDesc =>
+      'Marque tudo como lido com um unico toque.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -26040,4 +26117,81 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get shopBusinessAccount => 'Conta empresarial';
+
+  @override
+  String get tourCommunitiesTabsTitle => 'Tres formas de explorar';
+
+  @override
+  String get tourCommunitiesTabsDesc =>
+      'Alterne entre os grupos que voce entrou, descubra novos e gerencie as comunidades que voce criou.';
+
+  @override
+  String get tourCommunitiesCreateTitle => 'Crie uma comunidade';
+
+  @override
+  String get tourCommunitiesCreateDesc =>
+      'Toque aqui para criar sua propria comunidade e reunir as pessoas.';
+
+  @override
+  String get tourEventsCreateTitle => 'Crie um evento';
+
+  @override
+  String get tourEventsCreateDesc =>
+      'Toque no mais para organizar seu proprio evento ou encontro.';
+
+  @override
+  String get tourEventsSearchTitle => 'Buscar eventos';
+
+  @override
+  String get tourEventsSearchDesc =>
+      'Encontre eventos por cidade, pais ou nome e ordene do seu jeito.';
+
+  @override
+  String get tourEventsTabsTitle => 'Explore cada aba';
+
+  @override
+  String get tourEventsTabsDesc =>
+      'Navegue por eventos da comunidade, eventos ao vivo, atracoes e experiencias perto de voce.';
+
+  @override
+  String get tourProfileHubTitle => 'Seu painel de perfil';
+
+  @override
+  String get tourProfileHubDesc =>
+      'Tudo sobre sua conta esta aqui: edite, gerencie as configuracoes e desbloqueie recursos premium.';
+
+  @override
+  String get tourProfileViewTitle => 'Veja seu perfil';
+
+  @override
+  String get tourProfileViewDesc =>
+      'Veja exatamente como os outros veem seu perfil.';
+
+  @override
+  String get tourProfileEditTitle => 'Edite seus dados';
+
+  @override
+  String get tourProfileEditDesc =>
+      'Toque para atualizar suas fotos, bio, interesses, localizacao e mais.';
+
+  @override
+  String get tourNotifHubTitle => 'Suas notificacoes';
+
+  @override
+  String get tourNotifHubDesc =>
+      'Cada curtida, match, mensagem e atualizacao de evento chega aqui.';
+
+  @override
+  String get tourNotifOpenTitle => 'Abra e gerencie';
+
+  @override
+  String get tourNotifOpenDesc =>
+      'Toque em uma notificacao para abri-la ou deslize para a esquerda para exclui-la.';
+
+  @override
+  String get tourNotifMarkAllTitle => 'Limpe os nao lidos';
+
+  @override
+  String get tourNotifMarkAllDesc =>
+      'Marque tudo como lido com um unico toque.';
 }
