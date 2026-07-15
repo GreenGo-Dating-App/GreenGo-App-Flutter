@@ -47,9 +47,28 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
+    _tabController.addListener(_onTabChanged);
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _discoverScrollController.addListener(_onDiscoverScroll);
     _loadInitialData();
+  }
+
+  bool _managedLoaded = false;
+
+  /// Load "My communities" (created) the first time its tab is opened. Loading
+  /// it lazily (instead of at init) keeps it out of the concurrent init-load
+  /// race that was resetting managedCommunities back to empty.
+  void _onTabChanged() {
+    if (_tabController.indexIsChanging) return;
+    if (_tabController.index == 2 && !_managedLoaded) {
+      final userId = _currentUserId;
+      if (userId != null) {
+        _managedLoaded = true;
+        context.read<CommunitiesBloc>().add(
+              LoadManagedCommunities(userId: userId),
+            );
+      }
+    }
   }
 
   /// Endless scroll for the Discover tab — dispatch the next page when the user
@@ -78,11 +97,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     context.read<CommunitiesBloc>().add(
           LoadUserCommunities(userId: userId),
         );
-
-    // Load communities the user CREATED (the "My communities" tab).
-    context.read<CommunitiesBloc>().add(
-          LoadManagedCommunities(userId: userId),
-        );
+    // NOTE: "My communities" (created) is loaded lazily when its tab is opened
+    // (see _onTabChanged) so it can't be clobbered by the concurrent init loads.
 
     // Load all communities for discover tab
     context.read<CommunitiesBloc>().add(
@@ -103,6 +119,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
 
   @override
   void dispose() {
+    _tabController.removeListener(_onTabChanged);
     _tabController.dispose();
     _searchController.dispose();
     _discoverScrollController.dispose();
