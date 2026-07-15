@@ -173,10 +173,13 @@ service cloud.firestore {
     // NOTIFICATIONS COLLECTION
     // ============================================================================
     match /notifications/{notificationId} {
-      allow read: if isSignedIn();
+      // A user may only read/modify/delete THEIR OWN notifications (they carry
+      // actor photos + message previews). Create stays open because the client
+      // legitimately writes notifications FOR other users (like/match) — those
+      // are cross-user by design; server writes use the Admin SDK anyway.
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
       allow create: if isSignedIn();
-      allow update: if isSignedIn();
-      allow delete: if isSignedIn();
+      allow update, delete: if isSignedIn() && resource.data.userId == request.auth.uid;
     }
 
     // ============================================================================
@@ -435,6 +438,29 @@ service cloud.firestore {
         && (request.resource.data.userId == request.auth.uid
             || request.resource.data.get('relatedUserId', '') == request.auth.uid);
       allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // VIDEO COINS + INVOICES (were unruled → catch-all denied the user's own
+    // writes, breaking the client video-coin ledger + invoice generation).
+    // ============================================================================
+    match /videoCoinBalances/{userId} {
+      allow read, create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+    match /videoCoinTransactions/{transactionId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update, delete: if false;
+    }
+    match /invoices/{invoiceId} {
+      allow read: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
       allow delete: if false;
     }
 

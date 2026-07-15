@@ -180,7 +180,8 @@ export const onBusinessRated = onDocumentCreated(
     const businessId = event.params.businessId as string;
     const userId = event.params.userId as string;
     if (businessId === userId) return;
-    const stars = (event.data?.data()?.rating as number) || 0;
+    // The client writes the rating under `stars` (not `rating`).
+    const stars = (event.data?.data()?.stars as number) || 0;
 
     const actor = await resolveActor(userId);
     await emit(

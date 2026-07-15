@@ -186,7 +186,9 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
             .collection('profiles')
             .orderBy('businessName')
             .startAt([term])
-            .endAt(['$term'])
+            // Real PREFIX range via the 0xF8FF sentinel (plain endAt([term])
+            // would only match the exact full business name).
+            .endAt([term + String.fromCharCode(0xf8ff)])
             .limit(20)
             .get());
       } catch (_) {/* keep whatever we have */}

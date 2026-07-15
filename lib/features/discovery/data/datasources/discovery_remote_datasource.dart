@@ -823,6 +823,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         type: notificationType,
         title: notificationTitle,
         message: notificationMessage,
+        actorId: userId,
+        actorName: senderName,
         data: {
           'likerId': userId,
           'likerNickname': senderNickname,
@@ -927,6 +929,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     required String message,
     Map<String, dynamic>? data,
     String? imageUrl,
+    String? actorId,
+    String? actorName,
   }) async {
     try {
       await firestore.collection('notifications').add({
@@ -936,6 +940,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         'message': message,
         'data': data,
         'imageUrl': imageUrl,
+        // Actor identity drives the left avatar + tappable bold name in the tile.
+        if (actorId != null) 'actorId': actorId,
+        if (actorName != null) 'actorName': actorName,
         'createdAt': Timestamp.fromDate(DateTime.now()),
         'isRead': false,
       });
@@ -1069,13 +1076,25 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       final nickname2 = profile2Doc.data()?['nickname'] as String? ?? '';
       final name2 = profile2Doc.data()?['displayName'] as String? ?? 'Someone';
 
-      // Notification for user1
+      final photos1 = profile1Doc.data()?['photoUrls'] as List<dynamic>?;
+      final photos2 = profile2Doc.data()?['photoUrls'] as List<dynamic>?;
+      final photo1 = (photos1 != null && photos1.isNotEmpty)
+          ? photos1.first as String?
+          : null;
+      final photo2 = (photos2 != null && photos2.isNotEmpty)
+          ? photos2.first as String?
+          : null;
+
+      // Notification for user1 — actor is user2.
       final displayName2 = nickname2.isNotEmpty ? '@$nickname2' : name2;
       await _createNotification(
         userId: userId1,
         type: 'new_match',
         title: 'Start Connecting!',
         message: 'You matched with $displayName2. Start chatting now.',
+        actorId: userId2,
+        actorName: name2,
+        imageUrl: photo2,
         data: {
           'matchId': matchId,
           'matchedUserId': userId2,
@@ -1084,13 +1103,16 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         },
       );
 
-      // Notification for user2
+      // Notification for user2 — actor is user1.
       final displayName1 = nickname1.isNotEmpty ? '@$nickname1' : name1;
       await _createNotification(
         userId: userId2,
         type: 'new_match',
         title: 'Start Connecting!',
         message: 'You matched with $displayName1. Start chatting now.',
+        actorId: userId1,
+        actorName: name1,
+        imageUrl: photo1,
         data: {
           'matchId': matchId,
           'matchedUserId': userId1,
