@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../profile/domain/repositories/profile_repository.dart';
 
 /// Business Leads / enquiries list.
 ///
@@ -68,13 +71,21 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
             .get();
         final data = p.data();
         if (data != null) {
-          lead.displayName = (data['displayName'] as String?)?.trim();
+          final name = ((data['displayName'] as String?) ??
+                  (data['nickname'] as String?) ??
+                  (data['name'] as String?))
+              ?.trim();
+          lead.displayName = (name != null && name.isNotEmpty) ? name : null;
           final photos = (data['photoUrls'] as List<dynamic>?)
-              ?.whereType<String>()
-              .toList();
-          if (photos != null && photos.isNotEmpty) {
-            lead.avatarUrl = photos.first;
-          }
+                  ?.whereType<String>()
+                  .toList() ??
+              (data['photos'] as List<dynamic>?)
+                  ?.whereType<String>()
+                  .toList();
+          lead.avatarUrl = (photos != null && photos.isNotEmpty)
+              ? photos.first
+              : (data['profilePhotoUrl'] as String?) ??
+                  (data['photoUrl'] as String?);
         }
       } catch (_) {
         // best-effort: ignore a single bad/missing profile doc.
@@ -150,7 +161,10 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
         ? lead.displayName!
         : lead.uid;
 
-    return Container(
+    return InkWell(
+      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+      onTap: () => _openLeadProfile(lead.uid),
+      child: Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: AppColors.backgroundCard,
@@ -234,6 +248,23 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
             ),
           ],
         ],
+      ),
+      ),
+    );
+  }
+
+  /// Open the lead user's profile (loads it by uid, then ProfileDetailScreen).
+  Future<void> _openLeadProfile(String uid) async {
+    final navigator = Navigator.of(context);
+    final result = await di.sl<ProfileRepository>().getProfile(uid);
+    final profile = result.fold((_) => null, (p) => p);
+    if (profile == null) return;
+    await navigator.push(
+      MaterialPageRoute<void>(
+        builder: (_) => ProfileDetailScreen(
+          profile: profile,
+          currentUserId: widget.businessId,
+        ),
       ),
     );
   }

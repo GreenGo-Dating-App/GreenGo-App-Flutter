@@ -126,6 +126,15 @@ class _BusinessVerificationRequestScreenState
   Future<void> _sendCode() async {
     final phone = _phoneController.text.trim();
     if (phone.isEmpty || _sendingCode) return;
+    // Firebase requires E.164 (+countrycode…). Without it the SDK throws an
+    // opaque "invalid/null length" error, so validate up-front with a clear msg.
+    final digits = phone.replaceAll(RegExp(r'[^0-9]'), '');
+    if (!phone.startsWith('+') || digits.length < 8) {
+      setState(() {
+        _phoneError = AppLocalizations.of(context)!.verifyPhoneFormatError;
+      });
+      return;
+    }
     setState(() {
       _sendingCode = true;
       _phoneError = null;

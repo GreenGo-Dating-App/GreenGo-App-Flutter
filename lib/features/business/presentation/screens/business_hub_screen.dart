@@ -286,6 +286,14 @@ class BusinessHubScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
+            // View Storefront — first position (what customers actually see).
+            EditSectionCard(
+              title: l10n.viewStorefront,
+              subtitle: profile.businessName ?? l10n.businessProfileLabel,
+              icon: Icons.storefront_outlined,
+              onTap: () => _openStorefront(context),
+            ),
+            const SizedBox(height: 16),
             EditSectionCard(
               title: l10n.businessHubAccount,
               subtitle: profile.isBusiness
@@ -335,13 +343,6 @@ class BusinessHubScreen extends StatelessWidget {
               subtitle: l10n.editStorefrontSubtitle,
               icon: Icons.edit_note,
               onTap: () => _openStorefrontEditor(context),
-            ),
-            const SizedBox(height: 16),
-            EditSectionCard(
-              title: l10n.viewStorefront,
-              subtitle: profile.businessName ?? l10n.businessProfileLabel,
-              icon: Icons.storefront_outlined,
-              onTap: () => _openStorefront(context),
             ),
             const SizedBox(height: 16),
             EditSectionCard(

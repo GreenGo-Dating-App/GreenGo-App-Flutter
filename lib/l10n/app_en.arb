@@ -5503,6 +5503,8 @@
     }
   },
   "eventMyTicket": "My ticket",
+  "eventTicketDelete": "Delete ticket",
+  "eventTicketDeleteConfirm": "Permanently delete this ticket? The event has already ended.",
   "eventScanCheckIn": "Scan / Check-in",
   "eventScanManageScanners": "Manage scanners",
   "eventScanInviteScannerHint": "Invite a member to scan tickets at the door.",
@@ -5685,6 +5687,7 @@
   "verifyLegalNameHint": "Registered legal entity name",
   "verifyPhoneLabel": "Phone number",
   "verifyPhoneHint": "+1 555 123 4567",
+  "verifyPhoneFormatError": "Enter your number in international format, e.g. +12025550123",
   "verifySendCode": "Send code",
   "verifyResendCode": "Resend",
   "verifyEnterCodeLabel": "6-digit code",
