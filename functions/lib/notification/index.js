@@ -83,7 +83,9 @@ exports.sendPushNotification = (0, https_1.onCall)({
                 message: 'User has disabled this notification type',
             };
         }
-        // Create notification in Firestore
+        // Create notification in Firestore. This callable sends its own multicast
+        // push below, so stamp pushSent AT CREATION (the parity trigger fires on
+        // create and reads this snapshot) to prevent a double-push.
         const notificationRef = await utils_1.db.collection('notifications').add({
             userId,
             type,
@@ -93,6 +95,7 @@ exports.sendPushNotification = (0, https_1.onCall)({
             imageUrl,
             read: false,
             sent: false,
+            pushSent: true,
             createdAt: admin.firestore.FieldValue.serverTimestamp(),
         });
         // Send FCM notification
@@ -197,7 +200,9 @@ exports.sendBundledNotifications = (0, https_1.onCall)({
         const batch = utils_1.db.batch();
         notifications.forEach(notif => {
             const ref = utils_1.db.collection('notifications').doc();
-            batch.set(ref, Object.assign(Object.assign({ userId }, notif), { read: false, sent: true, bundled: true, sentAt: admin.firestore.FieldValue.serverTimestamp() }));
+            batch.set(ref, Object.assign(Object.assign({ userId }, notif), { read: false, sent: true, bundled: true, 
+                // Bundled multicast already sent above — skip the parity trigger.
+                pushSent: true, sentAt: admin.firestore.FieldValue.serverTimestamp() }));
         });
         await batch.commit();
         return {

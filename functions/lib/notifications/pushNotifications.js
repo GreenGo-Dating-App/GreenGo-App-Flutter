@@ -130,7 +130,8 @@ exports.sendPushNotification = functions.https.onCall((0, monitoring_1.monitored
         };
         // Send notification
         const response = await messaging.send(message);
-        // Store notification record
+        // Store notification record. Push already sent above → mark pushSent so the
+        // onNotificationCreatedPush parity trigger skips it (no double-push).
         await firestore.collection('notifications').add({
             userId,
             type,
@@ -142,6 +143,7 @@ exports.sendPushNotification = functions.https.onCall((0, monitoring_1.monitored
             isRead: false,
             deepLink: deepLink || null,
             fcmMessageId: response,
+            pushSent: true,
         });
         // Track analytics (Point 279)
         await firestore.collection('notification_analytics').add({

@@ -210,7 +210,11 @@ async function writeInAppNotification(
       body, // legacy field for older clients
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
       isRead: false,
-      ...(fcmMessageId ? { sentAt: admin.firestore.FieldValue.serverTimestamp(), fcmMessageId } : {}),
+      // Only when THIS module actually pushed (fcmMessageId present) do we set
+      // pushSent so the parity trigger skips it. When no push was sent (in-app
+      // only: non-eligible type, muted, quiet hours, no token) we leave it unset
+      // so onNotificationCreatedPush delivers the parity push.
+      ...(fcmMessageId ? { sentAt: admin.firestore.FieldValue.serverTimestamp(), fcmMessageId, pushSent: true } : {}),
       ...(data ? { data } : {}),
       // Actor identity — drives the left avatar + the tappable bold name in the
       // Flutter notification tile.
