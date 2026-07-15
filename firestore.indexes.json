@@ -2317,6 +2317,26 @@
       ]
     },
     {
+      "collectionGroup": "members",
+      "fieldPath": "isMock",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "attendees",
+      "fieldPath": "isMock",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    },
+    {
       "collectionGroup": "attendees",
       "fieldPath": "userId",
       "indexes": [

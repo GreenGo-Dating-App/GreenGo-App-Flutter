@@ -145,6 +145,13 @@ export {
   backfillCommunityCreatorMembers,
 } from './communities/backfillCreatorMembers';
 
+// TESTING — seed / remove mock data (token-guarded). Fills the app with fake
+// users/events/communities tagged isMock, and deletes ONLY that data.
+export {
+  seedMockData,
+  removeMockData,
+} from './admin/mockData';
+
 // Social notifications — actor-attributed (avatar + name) join/follow/rate/like.
 export {
   onCommunityMemberJoined,
