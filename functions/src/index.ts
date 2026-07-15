@@ -152,6 +152,12 @@ export {
   removeMockData,
 } from './admin/mockData';
 
+// Account deletion cascade — on profiles/{uid} delete, fix stale counts, purge
+// orphaned memberships/attendees/followers, delete the Auth user + Storage.
+export {
+  onProfileDeleted,
+} from './admin/accountCleanup';
+
 // Social notifications — actor-attributed (avatar + name) join/follow/rate/like.
 export {
   onCommunityMemberJoined,
