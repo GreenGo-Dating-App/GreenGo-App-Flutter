@@ -3478,6 +3478,8 @@
   "savedSearchAlertsToggle": "Alertes",
   "exploreFeaturedCommunity": "Événements communautaires à la une",
   "notificationMarkAllRead": "Tout marquer comme lu",
+  "notificationsDeleteUnread": "Supprimer les non lues",
+  "notificationsDeleteUnreadConfirm": "Supprimer definitivement toutes les notifications non lues ? Cette action est irreversible.",
   "analyticsTitle": "Statistiques",
   "analyticsPlatinumOnly": "Les statistiques sont une fonctionnalité Platinum.",
   "analyticsEventsHosted": "Événements organisés",

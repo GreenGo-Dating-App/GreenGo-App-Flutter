@@ -51,16 +51,27 @@ class NotificationsScreen extends StatelessWidget {
             BlocBuilder<NotificationsBloc, NotificationsState>(
               builder: (context, state) {
                 if (state is NotificationsLoaded && state.unreadCount > 0) {
-                  return TextButton(
-                    onPressed: () {
-                      context.read<NotificationsBloc>().add(
-                            NotificationsMarkedAllAsRead(userId),
-                          );
-                    },
-                    child: Text(
-                      l10n.notificationMarkAllRead,
-                      style: const TextStyle(color: AppColors.richGold),
-                    ),
+                  return Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      TextButton(
+                        onPressed: () {
+                          context.read<NotificationsBloc>().add(
+                                NotificationsMarkedAllAsRead(userId),
+                              );
+                        },
+                        child: Text(
+                          l10n.notificationMarkAllRead,
+                          style: const TextStyle(color: AppColors.richGold),
+                        ),
+                      ),
+                      IconButton(
+                        tooltip: l10n.notificationsDeleteUnread,
+                        icon: const Icon(Icons.delete_sweep_outlined,
+                            color: AppColors.textSecondary),
+                        onPressed: () => _confirmDeleteUnread(context, l10n),
+                      ),
+                    ],
                   );
                 }
                 return const SizedBox.shrink();
@@ -297,6 +308,48 @@ class NotificationsScreen extends StatelessWidget {
     }
 
     // Unknown target — no-op.
+  }
+
+  /// Confirm, then permanently delete all UNREAD notifications.
+  Future<void> _confirmDeleteUnread(
+    BuildContext context,
+    AppLocalizations l10n,
+  ) async {
+    final bloc = context.read<NotificationsBloc>();
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(
+          l10n.notificationsDeleteUnread,
+          style: const TextStyle(color: AppColors.textPrimary),
+        ),
+        content: Text(
+          l10n.notificationsDeleteUnreadConfirm,
+          style: const TextStyle(color: AppColors.textSecondary),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: Text(
+              l10n.cancel,
+              style: const TextStyle(color: AppColors.textSecondary),
+            ),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: Text(
+              l10n.delete,
+              style: const TextStyle(
+                  color: AppColors.errorRed, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ],
+      ),
+    );
+    if (confirmed == true) {
+      bloc.add(NotificationsUnreadCleared(userId));
+    }
   }
 
   /// Loads a profile then opens [ProfileDetailScreen]. Silent on failure.

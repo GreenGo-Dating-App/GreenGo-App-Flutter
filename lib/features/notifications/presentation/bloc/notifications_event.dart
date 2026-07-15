@@ -39,6 +39,13 @@ class NotificationDeleted extends NotificationsEvent {
   final String notificationId;
 }
 
+/// Permanently delete all UNREAD notifications for the user.
+class NotificationsUnreadCleared extends NotificationsEvent {
+
+  const NotificationsUnreadCleared(this.userId);
+  final String userId;
+}
+
 /// Notification tapped
 class NotificationTapped extends NotificationsEvent {
 

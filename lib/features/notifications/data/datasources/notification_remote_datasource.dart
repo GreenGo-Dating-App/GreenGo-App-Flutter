@@ -24,6 +24,9 @@ abstract class NotificationRemoteDataSource {
   /// Delete notification
   Future<void> deleteNotification(String notificationId);
 
+  /// Permanently delete ALL unread notifications for the user.
+  Future<void> deleteAllUnread(String userId);
+
   /// Get unread count
   Future<int> getUnreadCount(String userId);
 
@@ -153,6 +156,32 @@ class NotificationRemoteDataSourceImpl
       await firestore.collection('notifications').doc(notificationId).delete();
     } catch (e) {
       throw Exception('Failed to delete notification: $e');
+    }
+  }
+
+  @override
+  Future<void> deleteAllUnread(String userId) async {
+    try {
+      // Page + batch-delete so large inboxes stay within the 500-op batch cap.
+      while (true) {
+        final snapshot = await firestore
+            .collection('notifications')
+            .where('userId', isEqualTo: userId)
+            .where('isRead', isEqualTo: false)
+            .limit(400)
+            .get();
+        if (snapshot.docs.isEmpty) break;
+
+        final batch = firestore.batch();
+        for (final doc in snapshot.docs) {
+          batch.delete(doc.reference);
+        }
+        await batch.commit();
+
+        if (snapshot.docs.length < 400) break;
+      }
+    } catch (e) {
+      throw Exception('Failed to delete unread notifications: $e');
     }
   }
 

@@ -11828,6 +11828,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notificationMarkAllRead => 'Tout marquer comme lu';
 
   @override
+  String get notificationsDeleteUnread => 'Supprimer les non lues';
+
+  @override
+  String get notificationsDeleteUnreadConfirm =>
+      'Supprimer definitivement toutes les notifications non lues ? Cette action est irreversible.';
+
+  @override
   String get analyticsTitle => 'Statistiques';
 
   @override

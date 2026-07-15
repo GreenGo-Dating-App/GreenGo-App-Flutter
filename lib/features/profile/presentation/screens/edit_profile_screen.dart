@@ -116,7 +116,11 @@ class EditProfileScreen extends StatelessWidget {
         body: BlocConsumer<ProfileBloc, ProfileState>(
           listener: (context, state) {
             if (state is ProfileDeleted) {
-              // Account deleted — sign out to trigger AuthWrapper navigation
+              // Account deleted — confirm, sign out, and hard-reset navigation
+              // to the root (AuthWrapper). edit_profile is a PUSHED route on top
+              // of the AuthWrapper, so signing out alone rebuilds the wrapper
+              // underneath while this screen stays on top; clearing the stack
+              // back to '/' surfaces the login screen (user is now signed out).
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(AppLocalizations.of(context)!.profileAccountDeletedSuccess),
@@ -124,6 +128,8 @@ class EditProfileScreen extends StatelessWidget {
                 ),
               );
               context.read<AuthBloc>().add(const AuthSignOutRequested());
+              Navigator.of(context, rootNavigator: true)
+                  .pushNamedAndRemoveUntil('/', (route) => false);
               return;
             }
             if (state is ProfileBoostActivated) {

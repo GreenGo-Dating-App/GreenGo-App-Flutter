@@ -4059,6 +4059,8 @@
   "savedSearchAlertsToggle": "Avvisi",
   "exploreFeaturedCommunity": "Eventi della community in evidenza",
   "notificationMarkAllRead": "Segna tutti come letti",
+  "notificationsDeleteUnread": "Elimina non lette",
+  "notificationsDeleteUnreadConfirm": "Eliminare definitivamente tutte le notifiche non lette? L operazione non puo essere annullata.",
   "analyticsTitle": "Statistiche",
   "analyticsPlatinumOnly": "Le statistiche sono una funzionalità Platinum.",
   "analyticsEventsHosted": "Eventi organizzati",

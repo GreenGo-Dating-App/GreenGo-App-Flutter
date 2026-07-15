@@ -25,6 +25,7 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
     on<NotificationMarkedAsRead>(_onMarkedAsRead);
     on<NotificationsMarkedAllAsRead>(_onMarkedAllAsRead);
     on<NotificationDeleted>(_onDeleted);
+    on<NotificationsUnreadCleared>(_onUnreadCleared);
     on<NotificationTapped>(_onTapped);
   }
   final GetNotifications getNotifications;
@@ -111,6 +112,14 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
     await di
         .sl<NotificationRepository>()
         .deleteNotification(event.notificationId);
+  }
+
+  Future<void> _onUnreadCleared(
+    NotificationsUnreadCleared event,
+    Emitter<NotificationsState> emit,
+  ) async {
+    // Permanently delete every unread notification; the stream reload reflects it.
+    await di.sl<NotificationRepository>().deleteAllUnread(event.userId);
   }
 
   Future<void> _onTapped(

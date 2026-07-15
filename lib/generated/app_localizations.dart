@@ -20742,6 +20742,18 @@ abstract class AppLocalizations {
   /// **'Mark all read'**
   String get notificationMarkAllRead;
 
+  /// No description provided for @notificationsDeleteUnread.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete unread'**
+  String get notificationsDeleteUnread;
+
+  /// No description provided for @notificationsDeleteUnreadConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Permanently delete all unread notifications? This cannot be undone.'**
+  String get notificationsDeleteUnreadConfirm;
+
   /// No description provided for @analyticsTitle.
   ///
   /// In en, this message translates to:

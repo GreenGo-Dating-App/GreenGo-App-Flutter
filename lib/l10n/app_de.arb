@@ -4020,6 +4020,8 @@
   "savedSearchAlertsToggle": "Benachrichtigungen",
   "exploreFeaturedCommunity": "Empfohlene Community-Events",
   "notificationMarkAllRead": "Alle als gelesen markieren",
+  "notificationsDeleteUnread": "Ungelesene loeschen",
+  "notificationsDeleteUnreadConfirm": "Alle ungelesenen Benachrichtigungen dauerhaft loeschen? Dies kann nicht rueckgaengig gemacht werden.",
   "analyticsTitle": "Analysen",
   "analyticsPlatinumOnly": "Analysen sind eine Platinum-Funktion.",
   "analyticsEventsHosted": "Veranstaltete Events",
