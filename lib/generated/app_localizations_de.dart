@@ -12896,6 +12896,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get communitiesPromoteMember => 'Zum Admin machen';
 
   @override
+  String get communitiesGrantTips => 'Tipps posten erlauben';
+
+  @override
+  String get communitiesRevokeTips => 'Tipps-Posten entziehen';
+
+  @override
+  String get communitiesGrantAnnouncements => 'Ankuendigungen posten erlauben';
+
+  @override
+  String get communitiesRevokeAnnouncements =>
+      'Ankuendigungen-Posten entziehen';
+
+  @override
   String get communitiesDemoteMember => 'Zum Mitglied herabstufen';
 
   @override

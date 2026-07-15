@@ -87,6 +87,8 @@ abstract class CommunitiesRemoteDataSource {
     required String userId,
     bool? isMuted,
     bool? isBanned,
+    bool? canWriteTips,
+    bool? canWriteAnnouncements,
   });
 
   /// Remove a member from a community (owner/admin action).
@@ -392,6 +394,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           isLocalGuide: m.isLocalGuide,
           isMuted: m.isMuted,
           isBanned: m.isBanned,
+          canWriteTips: m.canWriteTips,
+          canWriteAnnouncements: m.canWriteAnnouncements,
         );
       }).toList();
     } catch (e) {
@@ -613,11 +617,17 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     required String userId,
     bool? isMuted,
     bool? isBanned,
+    bool? canWriteTips,
+    bool? canWriteAnnouncements,
   }) async {
     try {
       final data = <String, dynamic>{};
       if (isMuted != null) data['isMuted'] = isMuted;
       if (isBanned != null) data['isBanned'] = isBanned;
+      if (canWriteTips != null) data['canWriteTips'] = canWriteTips;
+      if (canWriteAnnouncements != null) {
+        data['canWriteAnnouncements'] = canWriteAnnouncements;
+      }
       if (data.isEmpty) return;
       await _membersRef(communityId).doc(userId).update(data);
     } catch (e) {

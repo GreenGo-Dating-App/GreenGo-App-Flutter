@@ -12941,6 +12941,20 @@ class AppLocalizationsFr extends AppLocalizations {
   String get communitiesPromoteMember => 'Promouvoir administrateur';
 
   @override
+  String get communitiesGrantTips => 'Autoriser a publier des Conseils';
+
+  @override
+  String get communitiesRevokeTips => 'Revoquer la publication de Conseils';
+
+  @override
+  String get communitiesGrantAnnouncements =>
+      'Autoriser a publier des Annonces';
+
+  @override
+  String get communitiesRevokeAnnouncements =>
+      'Revoquer la publication d Annonces';
+
+  @override
   String get communitiesDemoteMember => 'Rétrograder en membre';
 
   @override

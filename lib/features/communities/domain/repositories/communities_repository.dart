@@ -86,6 +86,8 @@ abstract class CommunitiesRepository {
     required String userId,
     bool? isMuted,
     bool? isBanned,
+    bool? canWriteTips,
+    bool? canWriteAnnouncements,
   });
 
   /// Remove a member from a community — admin/owner only.

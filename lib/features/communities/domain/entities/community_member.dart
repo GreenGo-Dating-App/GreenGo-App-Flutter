@@ -14,6 +14,8 @@ class CommunityMember extends Equatable {
     this.isLocalGuide = false,
     this.isMuted = false,
     this.isBanned = false,
+    this.canWriteTips = false,
+    this.canWriteAnnouncements = false,
   });
   final String userId;
   final String displayName;
@@ -30,12 +32,26 @@ class CommunityMember extends Equatable {
   /// posting, and blocked from rejoining.
   final bool isBanned;
 
+  /// Permission: an admin-designated member (not an owner/admin) who may post
+  /// Tips (language/cultural/city). Owners/admins can always post tips.
+  final bool canWriteTips;
+
+  /// Permission: an admin-designated member who may post Announcements.
+  /// Owners/admins can always post announcements.
+  final bool canWriteAnnouncements;
+
   /// Check if member is an admin or owner
   bool get isAdminOrOwner =>
       role == CommunityRole.admin || role == CommunityRole.owner;
 
   /// Check if member is the owner
   bool get isOwner => role == CommunityRole.owner;
+
+  /// May this member post Tips? Owners/admins always may; others need the grant.
+  bool get mayWriteTips => isAdminOrOwner || canWriteTips;
+
+  /// May this member post Announcements?
+  bool get mayWriteAnnouncements => isAdminOrOwner || canWriteAnnouncements;
 
   /// Copy with updated fields
   CommunityMember copyWith({
@@ -48,6 +64,8 @@ class CommunityMember extends Equatable {
     bool? isLocalGuide,
     bool? isMuted,
     bool? isBanned,
+    bool? canWriteTips,
+    bool? canWriteAnnouncements,
   }) {
     return CommunityMember(
       userId: userId ?? this.userId,
@@ -59,6 +77,9 @@ class CommunityMember extends Equatable {
       isLocalGuide: isLocalGuide ?? this.isLocalGuide,
       isMuted: isMuted ?? this.isMuted,
       isBanned: isBanned ?? this.isBanned,
+      canWriteTips: canWriteTips ?? this.canWriteTips,
+      canWriteAnnouncements:
+          canWriteAnnouncements ?? this.canWriteAnnouncements,
     );
   }
 
@@ -73,6 +94,8 @@ class CommunityMember extends Equatable {
         isLocalGuide,
         isMuted,
         isBanned,
+        canWriteTips,
+        canWriteAnnouncements,
       ];
 }
 

@@ -22650,6 +22650,30 @@ abstract class AppLocalizations {
   /// **'Promote to admin'**
   String get communitiesPromoteMember;
 
+  /// No description provided for @communitiesGrantTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow to post Tips'**
+  String get communitiesGrantTips;
+
+  /// No description provided for @communitiesRevokeTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoke Tips posting'**
+  String get communitiesRevokeTips;
+
+  /// No description provided for @communitiesGrantAnnouncements.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow to post Announcements'**
+  String get communitiesGrantAnnouncements;
+
+  /// No description provided for @communitiesRevokeAnnouncements.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoke Announcements posting'**
+  String get communitiesRevokeAnnouncements;
+
   /// No description provided for @communitiesDemoteMember.
   ///
   /// In en, this message translates to:

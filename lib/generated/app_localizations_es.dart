@@ -12887,6 +12887,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get communitiesPromoteMember => 'Ascender a administrador';
 
   @override
+  String get communitiesGrantTips => 'Permitir publicar Consejos';
+
+  @override
+  String get communitiesRevokeTips => 'Revocar publicacion de Consejos';
+
+  @override
+  String get communitiesGrantAnnouncements => 'Permitir publicar Anuncios';
+
+  @override
+  String get communitiesRevokeAnnouncements =>
+      'Revocar publicacion de Anuncios';
+
+  @override
   String get communitiesDemoteMember => 'Degradar a miembro';
 
   @override

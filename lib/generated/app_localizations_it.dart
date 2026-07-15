@@ -12880,6 +12880,18 @@ class AppLocalizationsIt extends AppLocalizations {
   String get communitiesPromoteMember => 'Promuovi ad admin';
 
   @override
+  String get communitiesGrantTips => 'Consenti di pubblicare Consigli';
+
+  @override
+  String get communitiesRevokeTips => 'Revoca pubblicazione Consigli';
+
+  @override
+  String get communitiesGrantAnnouncements => 'Consenti di pubblicare Annunci';
+
+  @override
+  String get communitiesRevokeAnnouncements => 'Revoca pubblicazione Annunci';
+
+  @override
   String get communitiesDemoteMember => 'Retrocedi a membro';
 
   @override

@@ -14,6 +14,8 @@ class CommunityMemberModel extends CommunityMember {
     super.isLocalGuide,
     super.isMuted,
     super.isBanned,
+    super.canWriteTips,
+    super.canWriteAnnouncements,
   });
 
   /// Create from CommunityMember entity
@@ -28,6 +30,8 @@ class CommunityMemberModel extends CommunityMember {
       isLocalGuide: member.isLocalGuide,
       isMuted: member.isMuted,
       isBanned: member.isBanned,
+      canWriteTips: member.canWriteTips,
+      canWriteAnnouncements: member.canWriteAnnouncements,
     );
   }
 
@@ -51,6 +55,8 @@ class CommunityMemberModel extends CommunityMember {
       isLocalGuide: data['isLocalGuide'] as bool? ?? false,
       isMuted: data['isMuted'] as bool? ?? false,
       isBanned: data['isBanned'] as bool? ?? false,
+      canWriteTips: data['canWriteTips'] as bool? ?? false,
+      canWriteAnnouncements: data['canWriteAnnouncements'] as bool? ?? false,
     );
   }
 
@@ -72,6 +78,8 @@ class CommunityMemberModel extends CommunityMember {
       isLocalGuide: json['isLocalGuide'] as bool? ?? false,
       isMuted: json['isMuted'] as bool? ?? false,
       isBanned: json['isBanned'] as bool? ?? false,
+      canWriteTips: json['canWriteTips'] as bool? ?? false,
+      canWriteAnnouncements: json['canWriteAnnouncements'] as bool? ?? false,
     );
   }
 
@@ -90,6 +98,8 @@ class CommunityMemberModel extends CommunityMember {
       'isLocalGuide': isLocalGuide,
       'isMuted': isMuted,
       'isBanned': isBanned,
+      'canWriteTips': canWriteTips,
+      'canWriteAnnouncements': canWriteAnnouncements,
     };
   }
 
@@ -105,6 +115,8 @@ class CommunityMemberModel extends CommunityMember {
       'isLocalGuide': isLocalGuide,
       'isMuted': isMuted,
       'isBanned': isBanned,
+      'canWriteTips': canWriteTips,
+      'canWriteAnnouncements': canWriteAnnouncements,
     };
   }
 
@@ -120,6 +132,8 @@ class CommunityMemberModel extends CommunityMember {
       isLocalGuide: isLocalGuide,
       isMuted: isMuted,
       isBanned: isBanned,
+      canWriteTips: canWriteTips,
+      canWriteAnnouncements: canWriteAnnouncements,
     );
   }
 }
