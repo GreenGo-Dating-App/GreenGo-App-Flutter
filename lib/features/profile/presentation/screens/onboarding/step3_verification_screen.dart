@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -113,9 +112,8 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
       );
 
       if (image != null) {
-        final file = File(image.path);
         if (!mounted) return;
-        context.read<OnboardingBloc>().add(OnboardingVerificationPhotoAdded(photo: file));
+        context.read<OnboardingBloc>().add(OnboardingVerificationPhotoAdded(photo: image));
       }
     } catch (e) {
       if (!mounted) return;

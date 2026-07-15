@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:dartz/dartz.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../../core/error/failures.dart';
 import '../entities/profile.dart';
 
@@ -17,7 +18,7 @@ abstract class ProfileRepository {
   Future<Either<Failure, void>> deleteProfile(String userId);
 
   /// Upload profile photo
-  Future<Either<Failure, String>> uploadPhoto(String userId, File photo, {String? folder});
+  Future<Either<Failure, String>> uploadPhoto(String userId, XFile photo, {String? folder});
 
   /// Delete profile photo
   Future<Either<Failure, void>> deletePhoto(String userId, String photoUrl);

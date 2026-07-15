@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -123,35 +125,41 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
       final currentState = state as OnboardingInProgress;
 
       final isFirstPhoto = currentState.photoUrls.isEmpty;
-      final validationService = PhotoValidationService();
 
-      // Validate photo locally BEFORE uploading:
+      // Validate photo locally BEFORE uploading (on-device ML Kit, native-only):
       // - First photo: must have face + no NSFW
       // - Other photos: no NSFW (no face required)
-      PhotoValidationResult validationResult;
-      if (isFirstPhoto) {
-        validationResult =
-            await validationService.validateMainPhoto(event.photo);
+      // On web the ML Kit path can't run — skip client validation and rely on
+      // server-side moderation so onboarding still completes.
+      if (!kIsWeb) {
+        final validationService = PhotoValidationService();
+        final photoFile = File(event.photo.path);
+        PhotoValidationResult validationResult;
+        if (isFirstPhoto) {
+          validationResult =
+              await validationService.validateMainPhoto(photoFile);
 
-        if (!validationResult.isValid || !validationResult.hasFace) {
-          final errorCode = validationResult.errorCode?.name ?? 'mainNoFace';
-          emit(OnboardingError(message: 'photo_validation:$errorCode'));
-          emit(currentState);
-          return;
-        }
-      } else {
-        validationResult =
-            await validationService.validatePublicPhoto(event.photo);
+          if (!validationResult.isValid || !validationResult.hasFace) {
+            final errorCode = validationResult.errorCode?.name ?? 'mainNoFace';
+            emit(OnboardingError(message: 'photo_validation:$errorCode'));
+            emit(currentState);
+            return;
+          }
+        } else {
+          validationResult =
+              await validationService.validatePublicPhoto(photoFile);
 
-        if (!validationResult.isValid) {
-          final errorCode = validationResult.errorCode?.name ?? 'explicitContent';
-          emit(OnboardingError(message: 'photo_validation:$errorCode'));
-          emit(currentState);
-          return;
+          if (!validationResult.isValid) {
+            final errorCode =
+                validationResult.errorCode?.name ?? 'explicitContent';
+            emit(OnboardingError(message: 'photo_validation:$errorCode'));
+            emit(currentState);
+            return;
+          }
         }
       }
 
-      // Validation passed — show uploading indicator and upload
+      // Validation passed (or skipped on web) — show uploading indicator + upload
       emit(currentState.copyWith(isUploading: true));
 
       final uploadResult = await uploadPhoto(

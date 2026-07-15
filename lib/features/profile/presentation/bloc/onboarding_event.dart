@@ -1,6 +1,5 @@
-import 'dart:io';
-
 import 'package:equatable/equatable.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../../domain/entities/location.dart';
 import '../../domain/entities/profile.dart';
@@ -57,7 +56,7 @@ class OnboardingPhotosUpdated extends OnboardingEvent {
 class OnboardingPhotoAdded extends OnboardingEvent {
 
   const OnboardingPhotoAdded({required this.photo});
-  final File photo;
+  final XFile photo;
 
   @override
   List<Object?> get props => [photo];
@@ -115,7 +114,7 @@ class OnboardingPersonalityUpdated extends OnboardingEvent {
 class OnboardingVerificationPhotoAdded extends OnboardingEvent {
 
   const OnboardingVerificationPhotoAdded({required this.photo});
-  final File photo;
+  final XFile photo;
 
   @override
   List<Object?> get props => [photo];

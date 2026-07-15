@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:dartz/dartz.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/profile.dart';
@@ -65,7 +66,7 @@ class ProfileRepositoryImpl implements ProfileRepository {
   }
 
   @override
-  Future<Either<Failure, String>> uploadPhoto(String userId, File photo, {String? folder}) async {
+  Future<Either<Failure, String>> uploadPhoto(String userId, XFile photo, {String? folder}) async {
     try {
       final result = await remoteDataSource.uploadPhoto(userId, photo, folder: folder);
       return Right(result);

@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -328,22 +329,25 @@ class GroupInfoScreen extends StatelessWidget {
     final picked = await ImagePicker()
         .pickImage(source: ImageSource.gallery, imageQuality: 80);
     if (picked == null) return;
-    // Reject nudity / explicit content before uploading.
-    final validation = await PhotoValidationService()
-        .validateImageForSending(File(picked.path));
-    if (!validation.isValid) {
-      messenger.showSnackBar(SnackBar(
-        content: Text(l10n.photoExplicitContent),
-        backgroundColor: Colors.red,
-      ));
-      return;
+    // Reject nudity / explicit content before uploading. On-device ML Kit is
+    // native-only — skip on web (server-side moderation still applies).
+    if (!kIsWeb) {
+      final validation = await PhotoValidationService()
+          .validateImageForSending(File(picked.path));
+      if (!validation.isValid) {
+        messenger.showSnackBar(SnackBar(
+          content: Text(l10n.photoExplicitContent),
+          backgroundColor: Colors.red,
+        ));
+        return;
+      }
     }
     messenger.showSnackBar(
       SnackBar(content: Text(l10n.groupUploadingPhoto)),
     );
     try {
       final url = await sl<ProfileRemoteDataSource>()
-          .uploadPhoto(currentUserId, File(picked.path), folder: 'groups');
+          .uploadPhoto(currentUserId, picked, folder: 'groups');
       await sl<UpdateGroupInfo>()(groupId: groupId, photoUrl: url);
       // Optimistic: update own inbox row so my Groups list reflects it
       // immediately (the onGroupInfoChanged CF fans it out to other members).

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -87,41 +89,46 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     ProfilePhotoUploadRequested event,
     Emitter<ProfileState> emit,
   ) async {
-    // ALL photos (public AND private) must pass nudity/explicit content checks
-    emit(const ProfilePhotoValidating());
+    // ALL photos (public AND private) must pass nudity/explicit content checks.
+    // These run on-device ML Kit (face + NSFW labels), which is native-only —
+    // on web we skip client validation and rely on server-side moderation.
+    if (!kIsWeb) {
+      emit(const ProfilePhotoValidating());
 
-    final validationService = PhotoValidationService();
-    PhotoValidationResult validationResult;
+      final validationService = PhotoValidationService();
+      final photoFile = File(event.photo.path);
+      PhotoValidationResult validationResult;
 
-    if (!event.isPrivate && event.isMainPhoto) {
-      // Main photo: must have face + no NSFW
-      validationResult =
-          await validationService.validateMainPhoto(event.photo);
-      if (!validationResult.isValid) {
-        emit(ProfilePhotoValidationFailed(
-            errorCode: validationResult.errorCode));
-        return;
-      }
-      if (!validationResult.hasFace) {
-        emit(const ProfilePhotoValidationFailed(
-            errorCode: PhotoValidationError.mainNoFace));
-        return;
-      }
-    } else {
-      // All other photos (public non-main incl. business gallery/storefront +
-      // private): NSFW/nudity check runs (skin-ratio + on-device ML Kit
-      // labels), no face required. Business/public images that fail the
-      // explicit-content check are rejected here on upload.
-      validationResult =
-          await validationService.validatePublicPhoto(event.photo);
-      if (!validationResult.isValid) {
-        emit(ProfilePhotoValidationFailed(
-            errorCode: validationResult.errorCode));
-        return;
+      if (!event.isPrivate && event.isMainPhoto) {
+        // Main photo: must have face + no NSFW
+        validationResult =
+            await validationService.validateMainPhoto(photoFile);
+        if (!validationResult.isValid) {
+          emit(ProfilePhotoValidationFailed(
+              errorCode: validationResult.errorCode));
+          return;
+        }
+        if (!validationResult.hasFace) {
+          emit(const ProfilePhotoValidationFailed(
+              errorCode: PhotoValidationError.mainNoFace));
+          return;
+        }
+      } else {
+        // All other photos (public non-main incl. business gallery/storefront +
+        // private): NSFW/nudity check runs (skin-ratio + on-device ML Kit
+        // labels), no face required. Business/public images that fail the
+        // explicit-content check are rejected here on upload.
+        validationResult =
+            await validationService.validatePublicPhoto(photoFile);
+        if (!validationResult.isValid) {
+          emit(ProfilePhotoValidationFailed(
+              errorCode: validationResult.errorCode));
+          return;
+        }
       }
     }
 
-    // Validation passed — upload
+    // Validation passed (or skipped on web) — upload
     emit(const ProfileLoading());
 
     final result = await uploadPhoto(

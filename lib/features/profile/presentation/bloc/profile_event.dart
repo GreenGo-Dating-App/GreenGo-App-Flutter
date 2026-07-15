@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:equatable/equatable.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../domain/entities/profile.dart';
 
 abstract class ProfileEvent extends Equatable {
@@ -45,7 +46,7 @@ class ProfilePhotoUploadRequested extends ProfileEvent {
     this.isPrivate = false,
   });
   final String userId;
-  final File photo;
+  final XFile photo;
   final bool isMainPhoto;
   final bool isPrivate;
 

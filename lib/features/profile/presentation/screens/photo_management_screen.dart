@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -74,7 +72,6 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
       );
 
       if (image != null) {
-        final file = File(image.path);
         if (!mounted) return;
 
         // Validation happens in the ProfileBloc — pass isMainPhoto and isPrivate
@@ -82,7 +79,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
         context.read<ProfileBloc>().add(
               ProfilePhotoUploadRequested(
                 userId: widget.profile.userId,
-                photo: file,
+                photo: image,
                 isMainPhoto: !isPrivate && _photoUrls.isEmpty,
                 isPrivate: isPrivate,
               ),
