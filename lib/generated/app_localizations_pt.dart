@@ -12993,6 +12993,33 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get communitiesTipHint => 'Compartilhe uma dica útil…';
+
+  @override
+  String get shopEventsCreate => 'Eventos que podes criar';
+
+  @override
+  String get shopGroupsCreate => 'Grupos e comunidades que podes criar';
+
+  @override
+  String get shopDailyConnects => 'Novas ligacoes diarias';
+
+  @override
+  String get shopMonthlyBoosts => 'Destaques de perfil mensais';
+
+  @override
+  String get shopMonthlyCoins => 'Moedas mensais';
+
+  @override
+  String get shopNoAds => 'Sem anuncios';
+
+  @override
+  String get shopSeeWhoConnected => 'Ve quem se ligou a ti';
+
+  @override
+  String get shopTravelMode => 'Modo viagem';
+
+  @override
+  String get shopBusinessAccount => 'Conta empresarial';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -25966,4 +25993,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get communitiesTipHint => 'Compartilhe uma dica útil…';
+
+  @override
+  String get shopEventsCreate => 'Eventos que voce pode criar';
+
+  @override
+  String get shopGroupsCreate => 'Grupos e comunidades que voce pode criar';
+
+  @override
+  String get shopDailyConnects => 'Novas conexoes diarias';
+
+  @override
+  String get shopMonthlyBoosts => 'Impulsos de perfil mensais';
+
+  @override
+  String get shopMonthlyCoins => 'Moedas mensais';
+
+  @override
+  String get shopNoAds => 'Sem anuncios';
+
+  @override
+  String get shopSeeWhoConnected => 'Veja quem se conectou com voce';
+
+  @override
+  String get shopTravelMode => 'Modo viagem';
+
+  @override
+  String get shopBusinessAccount => 'Conta empresarial';
 }

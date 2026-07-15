@@ -6173,5 +6173,14 @@
   "universalSearchNoCommunities": "No communities found",
   "communitiesSearchTips": "Search tips",
   "communitiesAddTip": "Add tip",
-  "communitiesTipHint": "Share a helpful tip…"
+  "communitiesTipHint": "Share a helpful tip…",
+  "shopEventsCreate": "Events you can create",
+  "shopGroupsCreate": "Groups & communities you can create",
+  "shopDailyConnects": "Daily new connections",
+  "shopMonthlyBoosts": "Monthly profile boosts",
+  "shopMonthlyCoins": "Monthly coins",
+  "shopNoAds": "Ad-free experience",
+  "shopSeeWhoConnected": "See who connected with you",
+  "shopTravelMode": "Travel mode",
+  "shopBusinessAccount": "Business account"
 }

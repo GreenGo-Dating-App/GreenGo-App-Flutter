@@ -4380,5 +4380,14 @@
   "universalSearchNoCommunities": "Nenhuma comunidade encontrada",
   "communitiesSearchTips": "Buscar dicas",
   "communitiesAddTip": "Adicionar dica",
-  "communitiesTipHint": "Compartilhe uma dica útil…"
+  "communitiesTipHint": "Compartilhe uma dica útil…",
+  "shopEventsCreate": "Eventos que voce pode criar",
+  "shopGroupsCreate": "Grupos e comunidades que voce pode criar",
+  "shopDailyConnects": "Novas conexoes diarias",
+  "shopMonthlyBoosts": "Impulsos de perfil mensais",
+  "shopMonthlyCoins": "Moedas mensais",
+  "shopNoAds": "Sem anuncios",
+  "shopSeeWhoConnected": "Veja quem se conectou com voce",
+  "shopTravelMode": "Modo viagem",
+  "shopBusinessAccount": "Conta empresarial"
 }

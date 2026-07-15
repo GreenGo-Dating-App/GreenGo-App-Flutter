@@ -22907,6 +22907,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Share a helpful tip…'**
   String get communitiesTipHint;
+
+  /// No description provided for @shopEventsCreate.
+  ///
+  /// In en, this message translates to:
+  /// **'Events you can create'**
+  String get shopEventsCreate;
+
+  /// No description provided for @shopGroupsCreate.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups & communities you can create'**
+  String get shopGroupsCreate;
+
+  /// No description provided for @shopDailyConnects.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily new connections'**
+  String get shopDailyConnects;
+
+  /// No description provided for @shopMonthlyBoosts.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly profile boosts'**
+  String get shopMonthlyBoosts;
+
+  /// No description provided for @shopMonthlyCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly coins'**
+  String get shopMonthlyCoins;
+
+  /// No description provided for @shopNoAds.
+  ///
+  /// In en, this message translates to:
+  /// **'Ad-free experience'**
+  String get shopNoAds;
+
+  /// No description provided for @shopSeeWhoConnected.
+  ///
+  /// In en, this message translates to:
+  /// **'See who connected with you'**
+  String get shopSeeWhoConnected;
+
+  /// No description provided for @shopTravelMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel mode'**
+  String get shopTravelMode;
+
+  /// No description provided for @shopBusinessAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Business account'**
+  String get shopBusinessAccount;
 }
 
 class _AppLocalizationsDelegate
