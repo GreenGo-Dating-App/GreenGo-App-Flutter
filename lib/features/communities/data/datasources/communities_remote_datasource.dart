@@ -156,25 +156,50 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     try {
       var query = _communitiesRef.where('isPublic', isEqualTo: true);
 
-      if (type != null) {
+      // Only ONE optional filter is applied server-side (each has a composite
+      // index with lastActivityAt); the rest are applied client-side. Combining
+      // two+ optional filters server-side would need combinatorial indexes and
+      // otherwise throws FAILED_PRECONDITION. Priority: type > language > city.
+      final hasType = type != null;
+      final hasLang = language != null && language.isNotEmpty;
+      final hasCity = city != null && city.isNotEmpty;
+
+      if (hasType) {
         query = query.where('type', isEqualTo: type.value);
-      }
-
-      if (language != null && language.isNotEmpty) {
+      } else if (hasLang) {
         query = query.where('languages', arrayContains: language);
-      }
-
-      if (city != null && city.isNotEmpty) {
+      } else if (hasCity) {
         query = query.where('city', isEqualTo: city);
       }
 
       query = query.orderBy('lastActivityAt', descending: true);
 
-      final snapshot = await query.limit(50).get();
+      // Pull a wider page when extra filters will be applied client-side so the
+      // in-memory narrowing still yields a full-looking list.
+      final needsClientFilter =
+          (hasType && (hasLang || hasCity)) || (hasLang && hasCity);
+      final snapshot =
+          await query.limit(needsClientFilter ? 150 : 50).get();
 
       var communities = snapshot.docs
           .map(CommunityModel.fromFirestore)
           .toList();
+
+      // Re-apply every requested filter client-side (idempotent for whichever
+      // one was already pushed to the server; narrows the combinatorial rest).
+      if (hasType) {
+        communities = communities.where((c) => c.type == type).toList();
+      }
+      if (hasLang) {
+        communities =
+            communities.where((c) => c.languages.contains(language)).toList();
+      }
+      if (hasCity) {
+        final lc = city.toLowerCase();
+        communities = communities
+            .where((c) => (c.city ?? '').toLowerCase() == lc)
+            .toList();
+      }
 
       // Client-side search filter if query provided
       if (searchQuery != null && searchQuery.isNotEmpty) {
@@ -266,21 +291,20 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     required CommunityMemberModel member,
   }) async {
     try {
-      final batch = _firestore.batch();
-
-      // Add member to subcollection
-      batch.set(
-        _membersRef(communityId).doc(member.userId),
-        member.toFirestore(),
-      );
-
-      // Increment member count
-      batch.update(
-        _communitiesRef.doc(communityId),
-        {'memberCount': FieldValue.increment(1)},
-      );
-
-      await batch.commit();
+      // Idempotent join: a transaction only increments memberCount when the
+      // member doc did NOT already exist, so a double-tap / retry (or a stale
+      // isMember=false) can never inflate the counter or duplicate the member.
+      await _firestore.runTransaction((txn) async {
+        final memberRef = _membersRef(communityId).doc(member.userId);
+        final existing = await txn.get(memberRef);
+        txn.set(memberRef, member.toFirestore());
+        if (!existing.exists) {
+          txn.update(
+            _communitiesRef.doc(communityId),
+            {'memberCount': FieldValue.increment(1)},
+          );
+        }
+      });
     } catch (e) {
       debugPrint('Error joining community: $e');
       rethrow;
@@ -293,18 +317,17 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     required String userId,
   }) async {
     try {
-      final batch = _firestore.batch();
-
-      // Remove member from subcollection
-      batch.delete(_membersRef(communityId).doc(userId));
-
-      // Decrement member count
-      batch.update(
-        _communitiesRef.doc(communityId),
-        {'memberCount': FieldValue.increment(-1)},
-      );
-
-      await batch.commit();
+      // Idempotent leave: only decrement when the member doc actually existed.
+      await _firestore.runTransaction((txn) async {
+        final memberRef = _membersRef(communityId).doc(userId);
+        final existing = await txn.get(memberRef);
+        if (!existing.exists) return;
+        txn.delete(memberRef);
+        txn.update(
+          _communitiesRef.doc(communityId),
+          {'memberCount': FieldValue.increment(-1)},
+        );
+      });
     } catch (e) {
       debugPrint('Error leaving community: $e');
       rethrow;

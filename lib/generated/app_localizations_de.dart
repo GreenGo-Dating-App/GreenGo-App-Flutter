@@ -3121,6 +3121,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get communitiesCommunityName => 'Community-Name';
 
   @override
+  String get communitiesCoverImageLabel => 'Titelbild';
+
+  @override
+  String get communitiesCoverImageHint => 'Titelbild hinzufuegen (optional)';
+
+  @override
   String get communitiesCommunityType => 'Community-Typ';
 
   @override
@@ -12238,6 +12244,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsTicketTiers => 'Ticket-Stufen';
+
+  @override
+  String get eventsRepeatHelper =>
+      '\'Alle\' legt den Abstand zwischen den Terminen fest (z. B. alle 2 Wochen); \'Termine\' ist die Gesamtzahl der erstellten Termine.';
+
+  @override
+  String get eventsTicketTiersHelper =>
+      'Optionale Preisstufen (z. B. Standard, VIP), die Ticketpreis und Kapazitaet festlegen. Sie steuern nicht den Coin-Zugang zum Event.';
 
   @override
   String get eventsAddTier => 'Stufe hinzufügen';

@@ -375,8 +375,10 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
       (failure) => emit(CoinError(failure.toString())),
       (gift) {
         emit(GiftSent(gift));
-        // Reload balance
+        // Reload balance AND the sender's sent-gift list so it reflects the
+        // new gift immediately.
         add(LoadCoinBalance(event.senderId));
+        add(LoadSentGifts(event.senderId));
       },
     );
   }
@@ -397,7 +399,7 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
       (_) {
         emit(GiftAccepted(
           giftId: event.giftId,
-          amount: 0, // Will be in transaction
+          amount: event.amount,
         ));
         // Reload balance and pending gifts
         add(LoadCoinBalance(event.userId));

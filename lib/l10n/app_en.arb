@@ -1453,6 +1453,8 @@
   "communitiesCityTipUpper": "CITY TIP",
   "communitiesCommunityInfo": "Community Info",
   "communitiesCommunityName": "Community Name",
+  "communitiesCoverImageLabel": "Cover image",
+  "communitiesCoverImageHint": "Add a cover photo (optional)",
   "communitiesCommunityType": "Community Type",
   "communitiesCountryLabel": "Country",
   "communitiesCreateAction": "Create",
@@ -5799,6 +5801,8 @@
     }
   },
   "eventsTicketTiers": "Ticket tiers",
+  "eventsRepeatHelper": "'Every' sets the gap between dates (e.g. every 2 weeks); 'Occurrences' is how many dates are created in total.",
+  "eventsTicketTiersHelper": "Optional price levels (e.g. Standard, VIP) that set ticket price and capacity. They do not control coin access to the event.",
   "eventsAddTier": "Add tier",
   "eventsTierName": "Tier name",
   "eventsTierPriceCoins": "Price (coins, 0 = free)",

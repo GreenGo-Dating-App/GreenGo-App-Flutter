@@ -225,7 +225,6 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
         vertical: 6,
         horizontal: AppDimensions.marginM,
       ),
-      padding: const EdgeInsets.all(AppDimensions.paddingM),
       decoration: BoxDecoration(
         color: config.backgroundColor,
         borderRadius: BorderRadius.circular(AppDimensions.radiusM),
@@ -234,12 +233,22 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
           width: 1,
         ),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Icon(config.icon, color: config.iconColor, size: 18),
+      clipBehavior: Clip.antiAlias,
+      child: IntrinsicHeight(
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Colored accent stripe gives each tip type a stronger identity.
+            Container(width: 4, color: config.iconColor),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(AppDimensions.paddingM),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(config.icon, color: config.iconColor, size: 18),
               const SizedBox(width: 6),
               Text(
                 config.label,
@@ -268,21 +277,26 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
               height: 1.4,
             ),
           ),
-          const SizedBox(height: 6),
-          Row(
-            children: [
-              _translateAction(color: config.iconColor),
-              const Spacer(),
-              Text(
-                message.timeText,
-                style: const TextStyle(
-                  color: AppColors.textTertiary,
-                  fontSize: 10,
+                    const SizedBox(height: 6),
+                    Row(
+                      children: [
+                        _translateAction(color: config.iconColor),
+                        const Spacer(),
+                        Text(
+                          message.timeText,
+                          style: const TextStyle(
+                            color: AppColors.textTertiary,
+                            fontSize: 10,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }

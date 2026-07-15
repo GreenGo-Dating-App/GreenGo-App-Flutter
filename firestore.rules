@@ -281,7 +281,9 @@ service cloud.firestore {
 
     match /user_interactions/{docId} {
       allow read: if isSignedIn();
-      allow create: if isSignedIn();
+      // A user may only record their OWN interaction events (userId must match).
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
       allow update: if false;
       allow delete: if false;
     }
