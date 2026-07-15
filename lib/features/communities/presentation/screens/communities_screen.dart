@@ -67,16 +67,16 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           const LoadCommunities(),
         );
 
-    // Load recommended based on profile languages
+    // Load recommended based on profile languages. Always dispatch (don't gate
+    // on ProfileBloc being loaded yet, which caused recommended to never load on
+    // a cold start) — fall back to empty languages if the profile isn't ready.
     final profileState = context.read<ProfileBloc>().state;
-    if (profileState is ProfileLoaded) {
-      context.read<CommunitiesBloc>().add(
-            LoadRecommendedCommunities(
-              userId: userId,
-              languages: profileState.profile.preferredLanguages,
-            ),
-          );
-    }
+    final langs = profileState is ProfileLoaded
+        ? profileState.profile.preferredLanguages
+        : const <String>[];
+    context.read<CommunitiesBloc>().add(
+          LoadRecommendedCommunities(userId: userId, languages: langs),
+        );
   }
 
   @override
