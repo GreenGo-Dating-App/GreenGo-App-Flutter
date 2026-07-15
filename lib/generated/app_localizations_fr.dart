@@ -4151,6 +4151,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get exploreSeeAll => 'Tout voir';
 
   @override
+  String get explorePromotedBadge => 'Sponsorise';
+
+  @override
   String get exploreHappeningThisWeek => 'Cette semaine';
 
   @override
@@ -4254,6 +4257,12 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get networkWorldMap => 'Réseau mondial';
+
+  @override
+  String get discoveryShowPeople => 'Afficher les personnes';
+
+  @override
+  String get discoveryShowBusinesses => 'Afficher les entreprises';
 
   @override
   String networkDiscoveryDistanceKm(String distance) {
@@ -12721,7 +12730,7 @@ class AppLocalizationsFr extends AppLocalizations {
       'Les messages peuvent contenir jusqu\'à 4096 caractères.';
 
   @override
-  String get exploreBusinessesNearYou => 'Vitrines pres de vous';
+  String get exploreBusinessesNearYou => 'Entreprises pres de vous';
 
   @override
   String get storefrontEnabled => 'Vitrine activee';

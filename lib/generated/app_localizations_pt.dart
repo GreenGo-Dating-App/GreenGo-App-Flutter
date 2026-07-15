@@ -4125,6 +4125,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get exploreSeeAll => 'Ver tudo';
 
   @override
+  String get explorePromotedBadge => 'Promovido';
+
+  @override
   String get exploreHappeningThisWeek => 'A acontecer esta semana';
 
   @override
@@ -4227,6 +4230,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get networkWorldMap => 'Rede Mundial';
+
+  @override
+  String get discoveryShowPeople => 'Mostrar pessoas';
+
+  @override
+  String get discoveryShowBusinesses => 'Mostrar negocios';
 
   @override
   String networkDiscoveryDistanceKm(String distance) {
@@ -12640,7 +12649,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get messageTooLong => 'As mensagens podem ter até 4096 caracteres.';
 
   @override
-  String get exploreBusinessesNearYou => 'Vitrines perto de ti';
+  String get exploreBusinessesNearYou => 'Negocios perto de ti';
 
   @override
   String get storefrontEnabled => 'Vitrine ativada';
@@ -17254,6 +17263,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get exploreSeeAll => 'Ver tudo';
 
   @override
+  String get explorePromotedBadge => 'Promovido';
+
+  @override
   String get exploreHappeningThisWeek => 'Acontecendo esta semana';
 
   @override
@@ -17356,6 +17368,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get networkWorldMap => 'Rede Mundial';
+
+  @override
+  String get discoveryShowPeople => 'Mostrar pessoas';
+
+  @override
+  String get discoveryShowBusinesses => 'Mostrar negocios';
 
   @override
   String networkDiscoveryDistanceKm(String distance) {
@@ -25768,7 +25786,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get messageTooLong => 'As mensagens podem ter até 4096 caracteres.';
 
   @override
-  String get exploreBusinessesNearYou => 'Vitrines perto de voce';
+  String get exploreBusinessesNearYou => 'Negocios perto de voce';
 
   @override
   String get storefrontEnabled => 'Vitrine ativada';

@@ -101,6 +101,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
 
   // null == still loading; empty == loaded but nothing to show. Excludes self.
   List<MatchCandidate>? _candidates;
+  // Instant AppBar toggle: null follows the persisted/one-shot default
+  // (_businessOnly); true = show businesses, false = show normal profiles.
+  bool? _businessModeOverride;
   // The current user's own tile, rendered first with the gold "You" state.
   MatchCandidate? _selfCandidate;
   bool _hadError = false;
@@ -236,11 +239,18 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
 
   /// The filtered candidate list (tags + nickname search + optional network),
   /// excluding the self tile which is pinned separately at index 0.
+  /// Whether Discovery is currently showing BUSINESSES (vs normal profiles).
+  /// The instant AppBar toggle overrides the persisted/one-shot default.
+  bool get _effectiveShowBusinesses => _businessModeOverride ?? _businessOnly;
+
   List<MatchCandidate> _visibleList() {
     final all = _candidates ?? const <MatchCandidate>[];
     final q = _query.trim().toLowerCase();
     final networkIds = _networkIds;
-    return all.where((c) {
+    final showBusinesses = _effectiveShowBusinesses;
+    final list = all.where((c) {
+      // Business vs normal-profile split (instant, client-side).
+      if (c.profile.isBusiness != showBusinesses) return false;
       if (!_matchesTagFilter(c.profile.userId)) return false;
       if (_showMyNetwork &&
           networkIds != null &&
@@ -252,6 +262,24 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       }
       return true;
     }).toList();
+    // In business mode, promoted storefronts float to the top. Partition (not
+    // sort) so the existing distance order is preserved within each group — the
+    // pool is already closest-first, so promoted stay closest-first too.
+    if (showBusinesses) {
+      final promoted = <MatchCandidate>[];
+      final rest = <MatchCandidate>[];
+      for (final c in list) {
+        (c.profile.isBusinessPromoted ? promoted : rest).add(c);
+      }
+      // At most 5 promoted float to the very top (the closest, since the pool is
+      // distance-ordered); any beyond 5 fall back into normal distance order.
+      if (promoted.length > 5) {
+        rest.insertAll(0, promoted.sublist(5));
+        return [...promoted.sublist(0, 5), ...rest];
+      }
+      return [...promoted, ...rest];
+    }
+    return list;
   }
 
   /// Whether the self tile is currently shown (hidden only when a search query
@@ -382,8 +410,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           .where((c) => !c.profile.isAdmin && !c.profile.isSupport)
           // Never render the user's own tile inside the pool (it is pinned).
           .where((c) => c.profile.userId != widget.userId)
-          // Business-only mode: keep only business accounts.
-          .where((c) => !_businessOnly || c.profile.isBusiness)
+          // NOTE: the business vs normal-profile split is applied at DISPLAY
+          // time in _visibleList() so the AppBar toggle switches instantly with
+          // no reload (the full pool is kept here).
           .toList();
 
       if (!mounted) return;
@@ -732,6 +761,23 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   )
                 : const SizedBox.shrink()),
         actions: [
+          // Instant People ⇄ Businesses toggle (no reload — filters the pool).
+          if (!_searching)
+            IconButton(
+              icon: Icon(_effectiveShowBusinesses
+                  ? Icons.storefront
+                  : Icons.people_alt_outlined),
+              tooltip: _effectiveShowBusinesses
+                  ? l10n.discoveryShowPeople
+                  : l10n.discoveryShowBusinesses,
+              color: _effectiveShowBusinesses ? AppColors.richGold : null,
+              onPressed: () {
+                setState(() {
+                  _businessModeOverride = !_effectiveShowBusinesses;
+                  _visibleCount = _pageSize;
+                });
+              },
+            ),
           IconButton(
             icon: Icon(_searching ? Icons.close : Icons.search),
             tooltip: l10n.searchByNicknameTooltip,
