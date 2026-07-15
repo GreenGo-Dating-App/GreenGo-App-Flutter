@@ -12483,7 +12483,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get messageTooLong => 'Messages can be up to 4096 characters.';
 
   @override
-  String get exploreBusinessesNearYou => 'Businesses near you';
+  String get exploreBusinessesNearYou => 'Storefronts near you';
+
+  @override
+  String get storefrontEnabled => 'Storefront is on';
+
+  @override
+  String get storefrontDisabled => 'Storefront is off';
+
+  @override
+  String get storefrontToggleHint => 'Turn your storefront on or off anytime';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';

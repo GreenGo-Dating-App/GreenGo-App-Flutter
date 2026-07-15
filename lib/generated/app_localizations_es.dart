@@ -12640,7 +12640,17 @@ class AppLocalizationsEs extends AppLocalizations {
       'Los mensajes pueden tener hasta 4096 caracteres.';
 
   @override
-  String get exploreBusinessesNearYou => 'Negocios cerca de ti';
+  String get exploreBusinessesNearYou => 'Tiendas cerca de ti';
+
+  @override
+  String get storefrontEnabled => 'La tienda esta activada';
+
+  @override
+  String get storefrontDisabled => 'La tienda esta desactivada';
+
+  @override
+  String get storefrontToggleHint =>
+      'Activa o desactiva tu tienda cuando quieras';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
