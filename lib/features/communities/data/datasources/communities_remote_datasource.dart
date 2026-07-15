@@ -106,6 +106,11 @@ abstract class CommunitiesRemoteDataSource {
   /// Communities the user OWNS or ADMINISTERS (for the event → community linker).
   Future<List<CommunityModel>> getManageableCommunities(String userId);
 
+  /// Communities the user CREATED — queried directly by `createdByUserId`, so
+  /// it does NOT depend on the creator having a `members/{uid}` doc (which
+  /// legacy communities can lack). Backs the "My communities" tab.
+  Future<List<CommunityModel>> getCreatedCommunities(String userId);
+
   /// Create a pending join request for a PRIVATE community.
   Future<void> requestToJoin({
     required String communityId,
@@ -711,6 +716,26 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       return communities;
     } catch (e) {
       debugPrint('Error getting manageable communities: $e');
+      rethrow;
+    }
+  }
+
+  @override
+  Future<List<CommunityModel>> getCreatedCommunities(String userId) async {
+    try {
+      // Direct query on the community doc — independent of member docs.
+      final snap = await _communitiesRef
+          .where('createdByUserId', isEqualTo: userId)
+          .get();
+      final communities = snap.docs.map(CommunityModel.fromFirestore).toList()
+        ..sort((a, b) {
+          final at = a.lastActivityAt ?? a.createdAt;
+          final bt = b.lastActivityAt ?? b.createdAt;
+          return bt.compareTo(at); // most recent first
+        });
+      return communities;
+    } catch (e) {
+      debugPrint('Error getting created communities: $e');
       rethrow;
     }
   }

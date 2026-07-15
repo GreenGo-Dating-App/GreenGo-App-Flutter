@@ -53,6 +53,22 @@ class ExternalEventsPager {
     return true;
   }
 
+  /// Today (yyyy-MM-dd) — ISO strings compare lexicographically == chronological.
+  String get _todayStr {
+    final n = DateTime.now();
+    final mm = n.month.toString().padLeft(2, '0');
+    final dd = n.day.toString().padLeft(2, '0');
+    return '${n.year}-$mm-$dd';
+  }
+
+  /// Drop PAST-dated events (live events must be today-onward). Undated items
+  /// (attractions/experiences with no startDate) pass through unchanged.
+  bool _dateOk(ExternalEvent e) {
+    final d = e.startDate;
+    if (d == null || d.isEmpty) return true;
+    return d.compareTo(_todayStr) >= 0;
+  }
+
   Query<Map<String, dynamic>> get _base {
     Query<Map<String, dynamic>> q =
         _db.collection('external_events').where('source', isEqualTo: source);
@@ -87,7 +103,10 @@ class ExternalEventsPager {
       }
       _cursor = snap.docs.last;
       if (snap.docs.length < pageSize) _fieldDone = true;
-      out.addAll(snap.docs.map(ExternalEvent.fromFirestore).where(_imageOk));
+      out.addAll(snap.docs
+          .map(ExternalEvent.fromFirestore)
+          .where(_imageOk)
+          .where(_dateOk));
     }
     return out;
   }
@@ -110,6 +129,7 @@ class ExternalEventsPager {
           final e = ExternalEvent.fromFirestore(doc);
           if (e.lat == null || e.lng == null) continue;
           if (!_imageOk(e)) continue;
+          if (!_dateOk(e)) continue;
           final d =
               GeoQuery.distanceMeters(userLat!, userLng!, e.lat!, e.lng!);
           // Only emit within the current radius; leave farther ones (and don't

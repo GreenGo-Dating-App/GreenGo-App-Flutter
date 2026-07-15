@@ -295,6 +295,14 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   }
 
   bool _passesFilter(Conversation conversation) {
+    // For a BUSINESS viewer, incoming business inquiries live in the dedicated
+    // "Business" tab — keep them out of every personal Messages filter so they
+    // don't appear (or double-count) there. A non-business viewer (the customer
+    // who initiated) has no Business tab, so their copy stays in Messages.
+    if ((_currentUserProfile?.isBusiness ?? false) &&
+        conversation.businessInquiry) {
+      return false;
+    }
     // A conversation is only a real "chat" once at least one message has been
     // sent AND it hasn't been canceled/deleted for this user. The approval queue
     // ("To Approve") is the one exception — pending connection requests can

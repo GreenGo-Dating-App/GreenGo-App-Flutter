@@ -288,6 +288,19 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
   }
 
   @override
+  Future<Either<Failure, List<Community>>> getCreatedCommunities(
+    String userId,
+  ) async {
+    try {
+      final communities =
+          await remoteDataSource.getCreatedCommunities(userId);
+      return Right(communities.map((c) => c.toEntity()).toList());
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
   Future<Either<Failure, void>> requestToJoin({
     required String communityId,
     required CommunityMember request,

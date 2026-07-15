@@ -45,6 +45,14 @@ class LoadUserCommunities extends CommunitiesEvent {
   final String userId;
 }
 
+/// Load communities the user CREATED (the "My communities" tab). Direct
+/// `createdByUserId` query, independent of member docs.
+class LoadManagedCommunities extends CommunitiesEvent {
+
+  const LoadManagedCommunities({required this.userId});
+  final String userId;
+}
+
 /// Load recommended communities
 class LoadRecommendedCommunities extends CommunitiesEvent {
 

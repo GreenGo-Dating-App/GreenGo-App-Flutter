@@ -741,11 +741,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
-    // Tier 4 — LOCATION-INDEPENDENT last resort. Per spec, Featured must be
-    // CLOSE BY the user (boosted-nearby, else random-nearby), so this global
-    // fallback runs ONLY when the user's location is unknown (no coords → we
-    // can't compute "close by", so show upcoming events wherever they are).
-    if (picked.length < 3 && !hasLocation) {
+    // Tier 4 — Featured must ALWAYS appear. We prefer close-by community events
+    // (Tiers 1-2), but if the nearby pool is thin we widen to ANY upcoming
+    // community event (`events` collection) so the carousel is never empty:
+    // boosted-first, then random. Runs regardless of location.
+    if (picked.length < 3) {
       try {
         final upcoming = await eventsDs.getEvents(upcoming: true);
         final sponsoredGlobal =
@@ -773,9 +773,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // index-free collection read (no `where`/`orderBy` — just a bounded limit),
     // parses client-side and keeps any PUBLIC, LIVE event so the carousel shows
     // whenever ANY public event exists at all. Sponsored-first, then soonest.
-    // Like Tier 4, this global read only applies when location is unknown so a
-    // located user never sees far-away events in the "close by" Featured rail.
-    if (picked.length < 3 && !hasLocation) {
+    // Runs regardless of location so Featured always shows a community event.
+    if (picked.length < 3) {
       try {
         final snap = await _firestore.collection('events').limit(50).get();
         final live = snap.docs

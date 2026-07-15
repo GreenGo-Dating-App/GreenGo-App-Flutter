@@ -103,6 +103,12 @@ abstract class CommunitiesRepository {
     String userId,
   );
 
+  /// Communities the user CREATED (direct `createdByUserId` query — no
+  /// member-doc dependency). Backs the "My communities" tab.
+  Future<Either<Failure, List<Community>>> getCreatedCommunities(
+    String userId,
+  );
+
   /// Request to join a PRIVATE community (pending owner/admin approval).
   Future<Either<Failure, void>> requestToJoin({
     required String communityId,

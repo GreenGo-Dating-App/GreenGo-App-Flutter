@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -8,7 +9,14 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../communities/domain/entities/community.dart';
+import '../../../communities/domain/repositories/communities_repository.dart';
+import '../../../communities/presentation/bloc/communities_bloc.dart';
+import '../../../communities/presentation/screens/community_detail_screen.dart';
+import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../data/services/follow_service.dart';
 import '../widgets/business_contact_button.dart';
 import '../widgets/business_follow_button.dart';
@@ -572,8 +580,48 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
     return s;
   }
 
+  /// Open the storefront event's detail page (loads by id).
+  void _openStorefrontEvent(String eventId) {
+    if (eventId.isEmpty) return;
+    Navigator.of(context).push(
+      EventDetailLoaderScreen.route(
+        eventId: eventId,
+        currentUserId: widget.currentUserId,
+      ),
+    );
+  }
+
+  /// Open the storefront community's detail page (fetch by id, then push with
+  /// the blocs CommunityDetailScreen needs).
+  Future<void> _openStorefrontCommunity(String communityId) async {
+    if (communityId.isEmpty) return;
+    final result =
+        await di.sl<CommunitiesRepository>().getCommunityById(communityId);
+    final Community? community = result.fold((_) => null, (c) => c);
+    if (community == null || !mounted) return;
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => MultiBlocProvider(
+          providers: [
+            BlocProvider<CommunitiesBloc>(
+              create: (_) => di.sl<CommunitiesBloc>(),
+            ),
+            BlocProvider<ProfileBloc>(
+              create: (_) => di.sl<ProfileBloc>()
+                ..add(ProfileLoadRequested(userId: widget.currentUserId)),
+            ),
+          ],
+          child: CommunityDetailScreen(community: community),
+        ),
+      ),
+    );
+  }
+
   Widget _eventTile(_EventCard e) {
-    return Container(
+    return InkWell(
+      onTap: () => _openStorefrontEvent(e.id),
+      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+      child: Container(
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
@@ -626,11 +674,15 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
           ),
         ],
       ),
+      ),
     );
   }
 
   Widget _communityTile(_CommunityCard c) {
-    return Container(
+    return InkWell(
+      onTap: () => _openStorefrontCommunity(c.id),
+      borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+      child: Container(
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
@@ -682,6 +734,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
           ),
         ],
       ),
+      ),
     );
   }
 
@@ -693,6 +746,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
 /// events feature's model / entity into the business layer).
 class _EventCard {
   const _EventCard({
+    required this.id,
     required this.title,
     required this.status,
     this.imageUrl,
@@ -700,6 +754,7 @@ class _EventCard {
     this.endDate,
   });
 
+  final String id;
   final String title;
   final String status;
   final String? imageUrl;
@@ -709,6 +764,7 @@ class _EventCard {
   factory _EventCard.fromDoc(String id, Map<String, dynamic> d) {
     DateTime? ts(dynamic v) => v is Timestamp ? v.toDate() : null;
     return _EventCard(
+      id: id,
       title: (d['title'] as String?) ?? '',
       status: (d['status'] as String?) ?? 'draft',
       imageUrl: d['imageUrl'] as String?,
@@ -721,12 +777,14 @@ class _EventCard {
 /// Lightweight view model for a storefront community card.
 class _CommunityCard {
   const _CommunityCard({
+    required this.id,
     required this.name,
     required this.isPublic,
     required this.memberCount,
     this.imageUrl,
   });
 
+  final String id;
   final String name;
   final bool isPublic;
   final int memberCount;
@@ -734,6 +792,7 @@ class _CommunityCard {
 
   factory _CommunityCard.fromDoc(String id, Map<String, dynamic> d) {
     return _CommunityCard(
+      id: id,
       name: (d['name'] as String?) ?? '',
       isPublic: (d['isPublic'] as bool?) ?? true,
       memberCount: (d['memberCount'] as num?)?.toInt() ?? 0,

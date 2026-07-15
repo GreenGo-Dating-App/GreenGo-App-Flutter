@@ -28,11 +28,16 @@ class CommunitiesLoaded extends CommunitiesState {
     this.hasMoreCommunities = true,
     this.isLoadingMore = false,
     this.communitiesCursor,
+    this.managedCommunities = const [],
   });
   final List<Community> communities;
   final List<Community> userCommunities;
   final List<Community> recommended;
   final List<Community> languageCircles;
+
+  /// Communities the user CREATED (the "My communities" tab). Loaded via a
+  /// direct createdByUserId query, so it's independent of member docs.
+  final List<Community> managedCommunities;
 
   /// Discover pagination: whether another page of public communities may exist
   /// (false once the last fetch returned fewer than the page size).
@@ -55,6 +60,7 @@ class CommunitiesLoaded extends CommunitiesState {
     bool? hasMoreCommunities,
     bool? isLoadingMore,
     DateTime? communitiesCursor,
+    List<Community>? managedCommunities,
   }) {
     return CommunitiesLoaded(
       communities: communities ?? this.communities,
@@ -64,6 +70,7 @@ class CommunitiesLoaded extends CommunitiesState {
       hasMoreCommunities: hasMoreCommunities ?? this.hasMoreCommunities,
       isLoadingMore: isLoadingMore ?? this.isLoadingMore,
       communitiesCursor: communitiesCursor ?? this.communitiesCursor,
+      managedCommunities: managedCommunities ?? this.managedCommunities,
     );
   }
 }

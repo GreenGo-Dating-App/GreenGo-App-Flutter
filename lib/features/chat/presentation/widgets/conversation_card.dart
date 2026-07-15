@@ -180,8 +180,34 @@ class _ConversationCardState extends State<ConversationCard>
 
   // Group-aware helpers so the SAME card renders 1:1 chats and group chats.
   bool get _isGroup => widget.conversation.isGroup;
+
+  /// A business inquiry where the OTHER party is a business → show the STOREFRONT
+  /// identity (business name + cover) instead of the owner's personal name/photo.
+  bool get _showBusinessIdentity {
+    final p = widget.otherUserProfile;
+    return !_isGroup &&
+        widget.conversation.businessInquiry &&
+        (p?.isBusiness ?? false) &&
+        (p?.businessName?.isNotEmpty ?? false);
+  }
+
+  /// The name shown on the tile (business name for business inquiries).
+  String get _displayName {
+    if (_isGroup) {
+      return widget.conversation.groupInfo?.name ??
+          AppLocalizations.of(context)!.chatUnknown;
+    }
+    if (_showBusinessIdentity) return widget.otherUserProfile!.businessName!;
+    return widget.otherUserProfile?.displayName ??
+        AppLocalizations.of(context)!.chatUnknown;
+  }
+
   String? get _avatarUrl {
     if (_isGroup) return widget.conversation.groupInfo?.photoUrl;
+    if (_showBusinessIdentity) {
+      final cover = widget.otherUserProfile!.coverImageUrl;
+      if (cover != null && cover.isNotEmpty) return cover;
+    }
     final urls = widget.otherUserProfile?.photoUrls ?? const [];
     return urls.isNotEmpty ? urls.first : null;
   }
@@ -281,9 +307,7 @@ class _ConversationCardState extends State<ConversationCard>
             children: [
               Flexible(
                 child: Text(
-                  _isGroup
-                      ? (widget.conversation.groupInfo?.name ?? l10n.chatUnknown)
-                      : (widget.otherUserProfile?.displayName ?? l10n.chatUnknown),
+                  _displayName,
                   style: TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 16,
