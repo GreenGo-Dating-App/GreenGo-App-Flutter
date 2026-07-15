@@ -1844,15 +1844,14 @@ class _ChatScreenState extends State<ChatScreen> {
                             CircleAvatar(
                               radius: 50,
                               backgroundColor: AppColors.backgroundCard,
-                              backgroundImage: widget
-                                      .otherUserProfile.photoUrls.isNotEmpty
-                                  ? NetworkImage(
-                                      widget.otherUserProfile.photoUrls.first)
+                              backgroundImage: _headerPhoto != null
+                                  ? NetworkImage(_headerPhoto!)
                                   : null,
-                              child: widget
-                                      .otherUserProfile.photoUrls.isEmpty
-                                  ? const Icon(
-                                      Icons.person,
+                              child: _headerPhoto == null
+                                  ? Icon(
+                                      _showBusinessIdentity
+                                          ? Icons.storefront
+                                          : Icons.person,
                                       size: 50,
                                       color: AppColors.textTertiary,
                                     )
@@ -1860,7 +1859,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             ),
                             const SizedBox(height: 24),
                             Text(
-                              AppLocalizations.of(context)!.chatSayHiTo(widget.otherUserProfile.displayName),
+                              AppLocalizations.of(context)!.chatSayHiTo(_headerName),
                               style: const TextStyle(
                                 color: AppColors.textPrimary,
                                 fontSize: 20,
@@ -2081,6 +2080,27 @@ class _ChatScreenState extends State<ChatScreen> {
     return l10n.chatOffline;
   }
 
+  /// When the other party is a business, the chat shows the STOREFRONT identity
+  /// (business name + cover image) instead of the owner's personal name/photo.
+  bool get _showBusinessIdentity =>
+      widget.otherUserProfile.isBusiness &&
+      (widget.otherUserProfile.businessName?.isNotEmpty ?? false);
+
+  String get _headerName => _showBusinessIdentity
+      ? widget.otherUserProfile.businessName!
+      : widget.otherUserProfile.displayName;
+
+  /// Preferred header/avatar image: storefront cover for a business, else the
+  /// first personal photo (may be null).
+  String? get _headerPhoto {
+    if (_showBusinessIdentity) {
+      final cover = widget.otherUserProfile.coverImageUrl;
+      if (cover != null && cover.isNotEmpty) return cover;
+    }
+    final urls = widget.otherUserProfile.photoUrls;
+    return urls.isNotEmpty ? urls.first : null;
+  }
+
   PreferredSizeWidget _buildAppBar() {
     return AppBar(
       backgroundColor: AppColors.backgroundCard,
@@ -2105,13 +2125,12 @@ class _ChatScreenState extends State<ChatScreen> {
             CircleAvatar(
               radius: 20,
               backgroundColor: AppColors.backgroundDark,
-              backgroundImage:
-                  widget.otherUserProfile.photoUrls.isNotEmpty
-                      ? NetworkImage(widget.otherUserProfile.photoUrls.first)
-                      : null,
-              child: widget.otherUserProfile.photoUrls.isEmpty
-                  ? const Icon(
-                      Icons.person,
+              backgroundImage: _headerPhoto != null
+                  ? NetworkImage(_headerPhoto!)
+                  : null,
+              child: _headerPhoto == null
+                  ? Icon(
+                      _showBusinessIdentity ? Icons.storefront : Icons.person,
                       size: 20,
                       color: AppColors.textTertiary,
                     )
@@ -2126,7 +2145,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   children: [
                     Flexible(
                       child: Text(
-                        widget.otherUserProfile.displayName,
+                        _headerName,
                         style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 16,

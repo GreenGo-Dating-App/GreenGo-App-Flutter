@@ -415,7 +415,7 @@ class _EventsScreenState extends State<EventsScreen>
         controller: _tabController,
         children: [
           _buildCommunityTab(state),
-          _buildExperiencesTab('ticketmaster'),
+          _buildExperiencesTab('ticketmaster', sortOverride: 'date'),
           _buildExperiencesTab('geoapify', category: _attractionCategory),
           _buildExperiencesTab('viator', category: _experienceCategory),
           _buildMyEventsTab(state),
@@ -428,7 +428,7 @@ class _EventsScreenState extends State<EventsScreen>
       controller: _tabController,
       children: [
         _buildEventsList([]),
-        _buildExperiencesTab('ticketmaster'),
+        _buildExperiencesTab('ticketmaster', sortOverride: 'date'),
         _buildExperiencesTab('geoapify'),
         _buildExperiencesTab('viator'),
         _buildEventsList([]),
@@ -1018,14 +1018,17 @@ class _EventsScreenState extends State<EventsScreen>
   }
 
   // ---- External tabs (Live Events / Attractions / Experiences) — infinite scroll ----
-  Widget _buildExperiencesTab(String source, {String? category}) {
+  Widget _buildExperiencesTab(String source,
+      {String? category, String? sortOverride}) {
     return ExperiencesTab(
       key: ValueKey('exp_$source'),
       source: source,
       gridView: _gridView,
       query: _searchQuery,
       popular: false,
-      sort: _extSort,
+      // Live Events (ticketmaster) are forced to date order (closest first);
+      // other external tabs use the user-selected sort.
+      sort: sortOverride ?? _extSort,
       category: category,
       userLat: _userLat,
       userLng: _userLng,

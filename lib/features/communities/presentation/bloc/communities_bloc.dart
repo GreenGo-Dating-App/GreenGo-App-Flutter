@@ -29,6 +29,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     on<LoadCommunities>(_onLoadCommunities);
     on<LoadMoreCommunities>(_onLoadMoreCommunities);
     on<LoadUserCommunities>(_onLoadUserCommunities);
+    on<LoadManagedCommunities>(_onLoadManagedCommunities);
     on<LoadRecommendedCommunities>(_onLoadRecommendedCommunities);
     on<LoadCommunityDetail>(_onLoadCommunityDetail);
     on<CreateCommunity>(_onCreateCommunity);
@@ -248,6 +249,32 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           recommended: recommended,
           languageCircles: languageCircles,
         ));
+      },
+    );
+  }
+
+  Future<void> _onLoadManagedCommunities(
+    LoadManagedCommunities event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final result = await _repository.getCreatedCommunities(event.userId);
+
+    result.fold(
+      (failure) {
+        // A failing "My communities" query must not blank the other tabs.
+        debugPrint('LoadManagedCommunities failed: ${failure.message}');
+        final s = state;
+        if (s is CommunitiesLoaded) {
+          emit(s.copyWith(managedCommunities: const []));
+        }
+      },
+      (managed) {
+        final s = state;
+        if (s is CommunitiesLoaded) {
+          emit(s.copyWith(managedCommunities: managed));
+        } else {
+          emit(CommunitiesLoaded(managedCommunities: managed));
+        }
       },
     );
   }

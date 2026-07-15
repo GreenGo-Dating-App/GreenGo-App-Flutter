@@ -79,6 +79,11 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           LoadUserCommunities(userId: userId),
         );
 
+    // Load communities the user CREATED (the "My communities" tab).
+    context.read<CommunitiesBloc>().add(
+          LoadManagedCommunities(userId: userId),
+        );
+
     // Load all communities for discover tab
     context.read<CommunitiesBloc>().add(
           const LoadCommunities(),
@@ -266,9 +271,15 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
 
     var managed = <Community>[];
     if (state is CommunitiesLoaded) {
-      managed = state.userCommunities
-          .where((c) => c.createdByUserId == _currentUserId)
-          .toList();
+      // Communities the user CREATED — loaded via a direct createdByUserId
+      // query (state.managedCommunities), so it no longer depends on the
+      // creator having a member doc. Fall back to the old member-based filter
+      // if the dedicated list hasn't loaded yet.
+      managed = state.managedCommunities.isNotEmpty
+          ? state.managedCommunities
+          : state.userCommunities
+              .where((c) => c.createdByUserId == _currentUserId)
+              .toList();
     }
 
     if (managed.isEmpty) {
@@ -286,9 +297,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       backgroundColor: AppColors.backgroundCard,
       onRefresh: () async {
         if (_currentUserId != null) {
-          context.read<CommunitiesBloc>().add(
-                LoadUserCommunities(userId: _currentUserId!),
-              );
+          context.read<CommunitiesBloc>()
+            ..add(LoadUserCommunities(userId: _currentUserId!))
+            ..add(LoadManagedCommunities(userId: _currentUserId!));
         }
       },
       child: ListView.builder(
