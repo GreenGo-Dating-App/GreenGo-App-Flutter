@@ -84,6 +84,7 @@ class Profile extends Equatable {
     this.businessCategory,
     this.businessWhatsapp,
     this.businessVerified = false,
+    this.businessPromotedUntil,
     this.galleryImages = const [],
     this.openingHours = const [],
     this.storefrontBio,
@@ -199,6 +200,17 @@ class Profile extends Equatable {
   /// storefront/profile shows a WhatsApp button that opens wa.me/<number>.
   final String? businessWhatsapp;
   final bool businessVerified;
+
+  /// When set and in the future, the business is a currently-PROMOTED storefront
+  /// (paid boost). Stored as `businessPromotedUntil` on profiles/{uid}. Drives
+  /// the "promoted first / highlighted" treatment in Discovery + Explore.
+  final DateTime? businessPromotedUntil;
+
+  /// True when this business account is currently promoted (boost not expired).
+  bool get isBusinessPromoted =>
+      isBusiness &&
+      businessPromotedUntil != null &&
+      businessPromotedUntil!.isAfter(DateTime.now());
 
   // Storefront fields (business/venue accounts). All optional & default
   // empty/null so existing docs stay backward-compatible.
@@ -432,6 +444,7 @@ class Profile extends Equatable {
     String? businessCategory,
     String? businessWhatsapp,
     bool? businessVerified,
+    DateTime? businessPromotedUntil,
     List<String>? galleryImages,
     List<OpeningHours>? openingHours,
     String? storefrontBio,
@@ -510,6 +523,8 @@ class Profile extends Equatable {
       businessWhatsapp: businessWhatsapp ?? this.businessWhatsapp,
       businessCategory: businessCategory ?? this.businessCategory,
       businessVerified: businessVerified ?? this.businessVerified,
+      businessPromotedUntil:
+          businessPromotedUntil ?? this.businessPromotedUntil,
       galleryImages: galleryImages ?? this.galleryImages,
       openingHours: openingHours ?? this.openingHours,
       storefrontBio: storefrontBio ?? this.storefrontBio,

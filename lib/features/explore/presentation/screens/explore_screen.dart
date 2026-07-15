@@ -1056,16 +1056,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
           // Skip unparseable business profiles.
         }
       }
-      if (lat != null && lng != null) {
-        double dist(Profile p) {
-          final loc = p.effectiveLocation;
-          if (loc.latitude == 0 && loc.longitude == 0) return double.infinity;
-          return FeatureEngineer()
-              .calculateDistance(lat, lng, loc.latitude, loc.longitude);
-        }
-
-        list.sort((a, b) => dist(a).compareTo(dist(b)));
+      double dist(Profile p) {
+        if (lat == null || lng == null) return double.infinity;
+        final loc = p.effectiveLocation;
+        if (loc.latitude == 0 && loc.longitude == 0) return double.infinity;
+        return FeatureEngineer()
+            .calculateDistance(lat, lng, loc.latitude, loc.longitude);
       }
+
+      // PROMOTED businesses first, then nearest-first.
+      list.sort((a, b) {
+        if (a.isBusinessPromoted != b.isBusinessPromoted) {
+          return a.isBusinessPromoted ? -1 : 1;
+        }
+        return dist(a).compareTo(dist(b));
+      });
       result = list;
     } catch (_) {
       result = const <Profile>[];
@@ -1364,6 +1369,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 title: l10n.exploreSpeaksLanguage(_sameLanguageName ?? ''),
                 people: _sameLanguage,
               ),
+              // "Businesses close to you" — promoted-first, then nearest. Placed
+              // right after the language section per request. See-all opens the
+              // business-only Discovery.
+              _businessesSection(context, l10n, reduceMotion),
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
@@ -1379,10 +1388,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // Community events close to the user (distinct from "Happening this
               // week"). Hidden entirely when there are none.
               _communityEventsSection(context, l10n, reduceMotion),
-              // "Businesses near you" — public business profiles, nearest-first,
-              // placed immediately before "Happening this week". Hidden when
-              // there are none (see [_businessesSection]).
-              _businessesSection(context, l10n, reduceMotion),
               SliverToBoxAdapter(
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
@@ -2272,15 +2277,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-            child: Text(
+            child: _sectionHeader(
+              context,
               l10n.exploreBusinessesNearYou,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                color: AppColors.textPrimary,
-                fontSize: 19,
-                fontWeight: FontWeight.w700,
-              ),
+              l10n.exploreSeeAll,
+              onSeeAll: () => _openBusinessDiscovery(context),
             ),
           ),
           SizedBox(
@@ -3597,6 +3598,8 @@ class _BusinessCard extends StatelessWidget {
     final imageUrl = (cover != null && cover.isNotEmpty)
         ? cover
         : (business.photoUrls.isNotEmpty ? business.photoUrls.first : null);
+    // Promoted (paid boost) storefronts get a gold frame + a "Promoted" badge.
+    final promoted = business.isBusinessPromoted;
 
     return SizedBox(
       width: cardWidth,
@@ -3611,7 +3614,10 @@ class _BusinessCard extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppColors.charcoal,
               borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-              border: Border.all(color: AppGlass.border),
+              border: Border.all(
+                color: promoted ? AppColors.richGold : AppGlass.border,
+                width: promoted ? 1.5 : 1,
+              ),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -3619,7 +3625,10 @@ class _BusinessCard extends StatelessWidget {
                 // ── Cover / avatar (or a branded fallback) ──────────────────
                 SizedBox(
                   height: _imageHeight,
-                  child: (imageUrl != null && imageUrl.isNotEmpty)
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      (imageUrl != null && imageUrl.isNotEmpty)
                       ? _FadeInImage(
                           url: imageUrl,
                           height: _imageHeight,
@@ -3634,6 +3643,29 @@ class _BusinessCard extends StatelessWidget {
                             size: 34,
                           ),
                         ),
+                      if (promoted)
+                        Positioned(
+                          top: 8,
+                          left: 8,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 3),
+                            decoration: BoxDecoration(
+                              color: AppColors.richGold,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Text(
+                              AppLocalizations.of(context)!.explorePromotedBadge,
+                              style: const TextStyle(
+                                color: AppColors.deepBlack,
+                                fontSize: 10,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
                 ),
                 // ── Business name / category ────────────────────────────────
                 Expanded(

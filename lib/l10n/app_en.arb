@@ -1944,6 +1944,7 @@
     }
   },
   "exploreSeeAll": "See all",
+  "explorePromotedBadge": "Promoted",
   "exploreHappeningThisWeek": "Happening this week",
   "exploreHappeningToday": "Happening today",
   "exploreJoin": "Join",
@@ -2012,6 +2013,8 @@
   "statCountries": "Countries",
   "statPeople": "People",
   "networkWorldMap": "World Network",
+  "discoveryShowPeople": "Show people",
+  "discoveryShowBusinesses": "Show businesses",
   "networkDiscoveryDistanceKm": "{distance} km away",
   "@networkDiscoveryDistanceKm": {
     "placeholders": {
@@ -6033,7 +6036,7 @@
   "eventsBuyCoins": "Buy coins",
   "eventsBuyCoinsPrompt": "You don't have enough coins. Would you like to buy more?",
   "messageTooLong": "Messages can be up to 4096 characters.",
-  "exploreBusinessesNearYou": "Storefronts near you",
+  "exploreBusinessesNearYou": "Businesses close to you",
   "storefrontEnabled": "Storefront is on",
   "storefrontDisabled": "Storefront is off",
   "storefrontToggleHint": "Turn your storefront on or off anytime",

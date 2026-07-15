@@ -67,6 +67,7 @@ class ProfileModel extends Profile {
     super.businessWhatsapp,
     super.businessCategory,
     super.businessVerified,
+    super.businessPromotedUntil,
     super.galleryImages,
     super.openingHours,
     super.storefrontBio,
@@ -147,6 +148,7 @@ class ProfileModel extends Profile {
       signupGrantsApplied: profile.signupGrantsApplied,
       signupGrantsAppliedAt: profile.signupGrantsAppliedAt,
       isBusiness: profile.isBusiness,
+      businessPromotedUntil: profile.businessPromotedUntil,
       businessName: profile.businessName,
       businessLegalName: profile.businessLegalName,
       businessWhatsapp: profile.businessWhatsapp,
@@ -284,6 +286,9 @@ class ProfileModel extends Profile {
       businessWhatsapp: json['businessWhatsapp'] as String?,
       businessCategory: json['businessCategory'] as String?,
       businessVerified: json['businessVerified'] as bool? ?? false,
+      businessPromotedUntil: json['businessPromotedUntil'] != null
+          ? (json['businessPromotedUntil'] as Timestamp).toDate()
+          : null,
       galleryImages: json['galleryImages'] != null
           ? List<String>.from(json['galleryImages'] as List)
           : <String>[],

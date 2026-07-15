@@ -7391,6 +7391,12 @@ abstract class AppLocalizations {
   /// **'See all'**
   String get exploreSeeAll;
 
+  /// No description provided for @explorePromotedBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Promoted'**
+  String get explorePromotedBadge;
+
   /// No description provided for @exploreHappeningThisWeek.
   ///
   /// In en, this message translates to:
@@ -7570,6 +7576,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'World Network'**
   String get networkWorldMap;
+
+  /// No description provided for @discoveryShowPeople.
+  ///
+  /// In en, this message translates to:
+  /// **'Show people'**
+  String get discoveryShowPeople;
+
+  /// No description provided for @discoveryShowBusinesses.
+  ///
+  /// In en, this message translates to:
+  /// **'Show businesses'**
+  String get discoveryShowBusinesses;
 
   /// No description provided for @networkDiscoveryDistanceKm.
   ///
@@ -22251,7 +22269,7 @@ abstract class AppLocalizations {
   /// No description provided for @exploreBusinessesNearYou.
   ///
   /// In en, this message translates to:
-  /// **'Storefronts near you'**
+  /// **'Businesses close to you'**
   String get exploreBusinessesNearYou;
 
   /// No description provided for @storefrontEnabled.
