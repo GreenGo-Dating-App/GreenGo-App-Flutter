@@ -266,27 +266,6 @@ class EditProfileScreen extends StatelessWidget {
                     ),
                   ),
 
-                  // ── Business (top-level tile, all users) ──
-                  // Single entry point for everything business. Active
-                  // businesses open the Business hub (storefront editor,
-                  // analytics, events, promote, leads, verification…);
-                  // everyone else sees the prominent gold "become a business"
-                  // promo so the upgrade path is never lost.
-                  Container(
-                    margin: const EdgeInsets.only(bottom: 24),
-                    child: isBusinessActive
-                        ? EditSectionCard(
-                            title:
-                                AppLocalizations.of(context)!.businessSectionTitle,
-                            subtitle: AppLocalizations.of(context)!
-                                .businessSectionSubtitle,
-                            icon: Icons.storefront,
-                            onTap: () =>
-                                _navigateToBusinessHub(context, activeProfile),
-                          )
-                        : _buildBecomeBusinessBanner(context, activeProfile),
-                  ),
-
                   // ── Edit Profile (collapsed by default) ──
                   // Hidden for business accounts — their public presence is the
                   // storefront (edited via the Business hub), not this personal
@@ -522,6 +501,27 @@ class EditProfileScreen extends StatelessWidget {
                       // Achievement Badges
                       _AchievementBadgesSection(userId: activeProfile.userId),
                     ],
+                  ),
+
+                  // ── Business (top-level tile, all users) ──
+                  // Placed AFTER Progress & Growth per request. Single entry
+                  // point for everything business. Active businesses open the
+                  // Business hub (storefront editor, analytics, events, promote,
+                  // leads, verification…); everyone else sees the prominent gold
+                  // "become a business" promo so the upgrade path is never lost.
+                  Container(
+                    margin: const EdgeInsets.only(top: 24, bottom: 24),
+                    child: isBusinessActive
+                        ? EditSectionCard(
+                            title:
+                                AppLocalizations.of(context)!.businessSectionTitle,
+                            subtitle: AppLocalizations.of(context)!
+                                .businessSectionSubtitle,
+                            icon: Icons.storefront,
+                            onTap: () =>
+                                _navigateToBusinessHub(context, activeProfile),
+                          )
+                        : _buildBecomeBusinessBanner(context, activeProfile),
                   ),
 
                   // ── Admin (only visible to admins) ──

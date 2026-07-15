@@ -720,18 +720,17 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
                   _runNicknameLookup(nickname);
                 },
               )
-            // The business filter now lives in Discovery preferences (tune
-            // icon), so the AppBar simply titles the grid. When opened as the
-            // "Business accounts → See all" one-shot, reflect that.
-            : Text(
-                widget.businessOnly
-                    ? l10n.exploreBusinessAccounts
-                    : l10n.exploreAroundYou,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
+            // No title on the Discover page (removed per request). The
+            // "Business accounts → See all" one-shot still labels its grid.
+            : (widget.businessOnly
+                ? Text(
+                    l10n.exploreBusinessAccounts,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  )
+                : const SizedBox.shrink()),
         actions: [
           IconButton(
             icon: Icon(_searching ? Icons.close : Icons.search),
@@ -891,13 +890,14 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
-    // Edge-to-edge 3-column grid with SQUARE people tiles (1:1). NetworkGridCard
-    // keeps its own rounded corners for a "bit rounded" look.
+    // Edge-to-edge 3-column grid with PORTRAIT people tiles (5:7) to match the
+    // Explore page's 150×210 person cards. NetworkGridCard keeps its own rounded
+    // corners for a "bit rounded" look.
     const gridDelegate = SliverGridDelegateWithFixedCrossAxisCount(
       crossAxisCount: 3,
       crossAxisSpacing: 3,
       mainAxisSpacing: 3,
-      childAspectRatio: 1,
+      childAspectRatio: 5 / 7,
     );
 
     final candidates = _candidates;
