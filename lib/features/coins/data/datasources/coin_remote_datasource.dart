@@ -791,12 +791,17 @@ class CoinRemoteDataSource {
       'unreadCount': FieldValue.increment(1),
     });
 
-    // Create notification for receiver
+    // Create notification for receiver. NOTE: the Flutter model reads `message`
+    // (not `body`), so the body was invisible; also set the actor so the tile
+    // shows the sender's tappable name.
     await firestore.collection('notifications').add({
       'userId': receiverId,
       'type': 'coin_gift',
       'title': 'You received coins!',
+      'message': systemMessage,
       'body': systemMessage,
+      'actorId': senderId,
+      'data': {'action': 'profile', 'profileId': senderId, 'senderId': senderId},
       'senderId': senderId,
       'conversationId': conversationId,
       'isRead': false,

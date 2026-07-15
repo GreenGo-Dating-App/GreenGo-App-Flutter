@@ -103,6 +103,31 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{ev
             console.error('Event broadcast FCM failed', e);
         }
     }
+    // Also write an in-app notification doc per attendee so the announcement
+    // appears on the notifications page (case s). Batched (≤450 ops/commit).
+    let batch = db.batch();
+    let ops = 0;
+    const commits = [];
+    for (const uid of recipientIds) {
+        batch.set(db.collection('notifications').doc(), {
+            userId: uid,
+            type: 'event_announcement',
+            title: `Announcement · ${title}`,
+            message: text,
+            body: text,
+            data: { type: 'event_announcement', eventId, action: 'open_event' },
+            isRead: false,
+            createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+        if (++ops >= 450) {
+            commits.push(batch.commit());
+            batch = db.batch();
+            ops = 0;
+        }
+    }
+    if (ops > 0)
+        commits.push(batch.commit());
+    await Promise.all(commits);
 }));
 /// Regular event-chat messages → push to all attendees (except sender/muted),
 /// matching the 1:1/group notification sound + channel so they appear even when

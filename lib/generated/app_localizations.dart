@@ -11859,7 +11859,7 @@ abstract class AppLocalizations {
   /// No description provided for @referralCodeLabel.
   ///
   /// In en, this message translates to:
-  /// **'Referral code'**
+  /// **'Referral code (optional)'**
   String get referralCodeLabel;
 
   /// No description provided for @referralCodeHint.
@@ -17921,6 +17921,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Failed to start recording: {error}'**
   String voiceFailedStartRecording(Object error);
+
+  /// No description provided for @voiceMicPermissionDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Microphone access is needed to record your voice intro'**
+  String get voiceMicPermissionDenied;
 
   /// No description provided for @voiceFailedUploadRecording.
   ///

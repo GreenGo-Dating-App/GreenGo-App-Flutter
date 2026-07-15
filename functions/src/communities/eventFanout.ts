@@ -35,47 +35,25 @@ function preview(title: string): string {
   return title.length > 120 ? `${title.substring(0, 117)}...` : title;
 }
 
-async function fanOutCommunityEvent(
-  eventId: string,
-  eventData: admin.firestore.DocumentData,
-  eventRef: admin.firestore.DocumentReference,
-): Promise<void> {
-  if (eventData.status !== 'published') return;
-  const communityId = (eventData.communityId as string) || '';
-  if (!communityId) return;
-  if (eventData.pushedToCommunity === true) return;
+interface CommunityNotif {
+  type: string;
+  title: string;
+  body: string;
+  eventImage?: string;
+  dataPayload: Record<string, string>;
+  collapseKey: string;
+}
 
-  // Claim idempotency flag transactionally.
-  const claimed = await db.runTransaction(async (txn) => {
-    const fresh = await txn.get(eventRef);
-    if (!fresh.exists) return false;
-    if (fresh.data()?.pushedToCommunity === true) return false;
-    txn.update(eventRef, {
-      pushedToCommunity: true,
-      pushedToCommunityAt: admin.firestore.FieldValue.serverTimestamp(),
-    });
-    return true;
-  });
-  if (!claimed) return;
-
-  const communitySnap = await db
-    .collection('communities')
-    .doc(communityId)
-    .get();
-  const communityName =
-    (communitySnap.data()?.name as string) || 'Your community';
-
-  const eventTitle = (eventData.title as string) || 'New event';
-  const eventImage = (eventData.imageUrl as string) || undefined;
-  const title = `New event in ${communityName}`;
-  const body = preview(eventTitle);
-  const dataPayload: Record<string, string> = {
-    type: 'community_event',
-    eventId,
-    communityId,
-    action: 'open_event',
-  };
-
+/**
+ * Page over a community's members and deliver `notif` via FCM multicast + an
+ * in-app `notifications` doc each. Shared by the publish and change/cancel
+ * fan-outs so both stay identical in scale behaviour.
+ */
+async function notifyCommunityMembers(
+  communityId: string,
+  notif: CommunityNotif,
+): Promise<number> {
+  const { title, body, eventImage, dataPayload, collapseKey } = notif;
   const membersCol = db
     .collection('communities')
     .doc(communityId)
@@ -122,22 +100,22 @@ async function fanOutCommunityEvent(
           data: dataPayload,
           android: {
             priority: 'high',
-            collapseKey: `community_event_${eventId}`,
+            collapseKey,
             notification: {
               sound: 'default',
               channelId: 'greengo_notifications',
               priority: 'high' as any,
-              tag: `community_event_${eventId}`,
+              tag: collapseKey,
               ...(eventImage ? { imageUrl: eventImage } : {}),
             },
           },
           apns: {
-            headers: { 'apns-collapse-id': `community_event_${eventId}` },
+            headers: { 'apns-collapse-id': collapseKey },
             payload: { aps: { sound: 'default', badge: 1 } },
           },
         });
       } catch (e) {
-        console.error('Community event multicast failed', eventId, e);
+        console.error('Community members multicast failed', collapseKey, e);
       }
     }
 
@@ -148,7 +126,7 @@ async function fanOutCommunityEvent(
       const ref = db.collection('notifications').doc();
       batch.set(ref, {
         userId: uid,
-        type: 'community_event',
+        type: notif.type,
         title,
         message: body,
         body,
@@ -169,7 +147,54 @@ async function fanOutCommunityEvent(
 
     if (page.size < MEMBER_PAGE) break;
   }
+  return total;
+}
 
+async function fanOutCommunityEvent(
+  eventId: string,
+  eventData: admin.firestore.DocumentData,
+  eventRef: admin.firestore.DocumentReference,
+): Promise<void> {
+  if (eventData.status !== 'published') return;
+  const communityId = (eventData.communityId as string) || '';
+  if (!communityId) return;
+  if (eventData.pushedToCommunity === true) return;
+
+  // Claim idempotency flag transactionally.
+  const claimed = await db.runTransaction(async (txn) => {
+    const fresh = await txn.get(eventRef);
+    if (!fresh.exists) return false;
+    if (fresh.data()?.pushedToCommunity === true) return false;
+    txn.update(eventRef, {
+      pushedToCommunity: true,
+      pushedToCommunityAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+    return true;
+  });
+  if (!claimed) return;
+
+  const communitySnap = await db
+    .collection('communities')
+    .doc(communityId)
+    .get();
+  const communityName =
+    (communitySnap.data()?.name as string) || 'Your community';
+
+  const eventTitle = (eventData.title as string) || 'New event';
+  const eventImage = (eventData.imageUrl as string) || undefined;
+  const total = await notifyCommunityMembers(communityId, {
+    type: 'community_event',
+    title: `New event in ${communityName}`,
+    body: preview(eventTitle),
+    eventImage,
+    dataPayload: {
+      type: 'community_event',
+      eventId,
+      communityId,
+      action: 'open_event',
+    },
+    collapseKey: `community_event_${eventId}`,
+  });
   console.log(
     `Community event ${eventId} fanned out to ${total} member(s) of ${communityId}`,
   );
@@ -201,5 +226,90 @@ export const onCommunityEventPublished = onDocumentUpdated(
       after,
       event.data!.after.ref,
     );
+  }),
+);
+
+function ms(v: unknown): number {
+  const t = v as admin.firestore.Timestamp | undefined;
+  return typeof t?.toMillis === 'function' ? t.toMillis() : 0;
+}
+
+/**
+ * Community-event CHANGED / CANCELLED fan-out (#16).
+ *
+ * When an already-published event that is linked to a community has its start
+ * time or venue changed, or is cancelled, notify every member. Does NOT write
+ * back to the event doc (so it never self-triggers); relies on the fact that a
+ * real reschedule/cancel is a single distinct doc version.
+ */
+export const onCommunityEventChanged = onDocumentUpdated(
+  'events/{eventId}',
+  monitored('onCommunityEventChanged', async (event) => {
+    const before = event.data?.before.data();
+    const after = event.data?.after.data();
+    if (!before || !after) return;
+
+    const communityId = (after.communityId as string) || '';
+    if (!communityId) return;
+    // Only events that were already visible to members.
+    if (before.status !== 'published') return;
+
+    const eventId = event.params.eventId as string;
+    const communitySnap = await db
+      .collection('communities')
+      .doc(communityId)
+      .get();
+    const communityName =
+      (communitySnap.data()?.name as string) || 'Your community';
+    const eventTitle = (after.title as string) || 'Event';
+    const eventImage = (after.imageUrl as string) || undefined;
+
+    // Cancellation takes precedence.
+    const cancelled =
+      after.status === 'cancelled' || after.isCancelled === true;
+    if (cancelled && before.status === 'published') {
+      const total = await notifyCommunityMembers(communityId, {
+        type: 'community_event_changed',
+        title: `Event cancelled in ${communityName}`,
+        body: preview(`"${eventTitle}" has been cancelled`),
+        eventImage,
+        dataPayload: {
+          type: 'community_event_changed',
+          eventId,
+          communityId,
+          action: 'open_event',
+          change: 'cancelled',
+        },
+        collapseKey: `community_event_changed_${eventId}`,
+      });
+      console.log(`Community event ${eventId} cancellation → ${total} member(s)`);
+      return;
+    }
+
+    // Still published → detect a reschedule / venue change.
+    if (after.status !== 'published') return;
+    const timeChanged = ms(before.startDate) !== ms(after.startDate);
+    const venueChanged =
+      (before.locationName || '') !== (after.locationName || '') ||
+      (before.address || '') !== (after.address || '') ||
+      (before.venue || '') !== (after.venue || '');
+    if (!timeChanged && !venueChanged) return;
+
+    const what = timeChanged ? 'New time' : 'New location';
+    const total = await notifyCommunityMembers(communityId, {
+      type: 'community_event_changed',
+      title: `Event updated in ${communityName}`,
+      body: preview(`${what} for "${eventTitle}"`),
+      eventImage,
+      dataPayload: {
+        type: 'community_event_changed',
+        eventId,
+        communityId,
+        action: 'open_event',
+        change: timeChanged ? 'time' : 'venue',
+      },
+      collapseKey: `community_event_changed_${eventId}`,
+    });
+    console.log(`Community event ${eventId} change → ${total} member(s)`);
   }),
 );

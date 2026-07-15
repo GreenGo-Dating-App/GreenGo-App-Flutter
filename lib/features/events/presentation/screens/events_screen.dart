@@ -1872,13 +1872,24 @@ class EventDetailsScreen extends StatelessWidget {
               // Group Chat button
               IconButton(
                 icon: const Icon(Icons.chat, color: AppColors.richGold),
-                onPressed: () {
+                onPressed: () async {
+                  // Resolve the real display name so messages aren't sent as "User".
+                  String name = 'User';
+                  try {
+                    final doc = await FirebaseFirestore.instance
+                        .collection('profiles')
+                        .doc(currentUserId)
+                        .get();
+                    final n = (doc.data()?['displayName'] as String?)?.trim();
+                    if (n != null && n.isNotEmpty) name = n;
+                  } catch (_) {/* fall back to "User" */}
+                  if (!context.mounted) return;
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (_) => EventChatScreen(
                         event: event,
                         currentUserId: currentUserId,
-                        currentUserName: 'User', // TODO: get from profile
+                        currentUserName: name,
                       ),
                     ),
                   );

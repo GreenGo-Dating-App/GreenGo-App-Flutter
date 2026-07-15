@@ -166,31 +166,23 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     RsvpEvent event,
     Emitter<EventsState> emit,
   ) async {
+    // Preserve whether the user is on the detail screen BEFORE the write.
+    final wasDetail = state is EventDetailLoaded;
     final result = await repository.rsvpEvent(
       event.eventId,
       event.userId,
       event.status,
     );
 
-    result.fold(
-      (failure) {
+    await result.fold(
+      (failure) async {
         debugPrint('Failed to RSVP: ${failure.message}');
         emit(EventsError(failure.message));
       },
-      (_) {
+      (_) async {
         debugPrint('RSVP success: ${event.eventId} (${event.status})');
-        emit(EventRsvpSuccess(
-          eventId: event.eventId,
-          status: event.status,
-        ));
-        // Re-emit loaded state so the UI can refresh
-        emit(EventsLoaded(
-          events: _allEvents,
-          selectedCategory: _selectedCategory,
-          attendeesMap: _attendeesMap,
-          userEvents: _userEvents,
-          nearbyEvents: _nearbyEvents,
-        ));
+        emit(EventRsvpSuccess(eventId: event.eventId, status: event.status));
+        await _refreshAfterRsvp(event.eventId, wasDetail, emit);
       },
     );
   }
@@ -199,31 +191,82 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     CancelRsvp event,
     Emitter<EventsState> emit,
   ) async {
+    final wasDetail = state is EventDetailLoaded;
     final result = await repository.cancelRsvp(
       event.eventId,
       event.userId,
     );
 
-    result.fold(
-      (failure) {
+    await result.fold(
+      (failure) async {
         debugPrint('Failed to cancel RSVP: ${failure.message}');
         emit(EventsError(failure.message));
       },
-      (_) {
+      (_) async {
         debugPrint('RSVP cancelled: ${event.eventId}');
-        emit(EventRsvpSuccess(
-          eventId: event.eventId,
-          status: 'cancelled',
-        ));
-        emit(EventsLoaded(
-          events: _allEvents,
-          selectedCategory: _selectedCategory,
-          attendeesMap: _attendeesMap,
-          userEvents: _userEvents,
-          nearbyEvents: _nearbyEvents,
-        ));
+        emit(EventRsvpSuccess(eventId: event.eventId, status: 'cancelled'));
+        await _refreshAfterRsvp(event.eventId, wasDetail, emit);
       },
     );
+  }
+
+  /// After an RSVP/cancel, reload the affected event + its attendees so counts
+  /// are fresh, update the caches, and re-emit the RIGHT state: keep the detail
+  /// screen if that's where the user is (was previously clobbered to a list),
+  /// otherwise re-emit the list with the corrected event.
+  Future<void> _refreshAfterRsvp(
+    String eventId,
+    bool wasDetail,
+    Emitter<EventsState> emit,
+  ) async {
+    // Refresh attendees (best-effort).
+    final attendeesResult = await repository.getEventAttendees(eventId);
+    attendeesResult.fold(
+      (f) => debugPrint('RSVP refresh attendees failed: ${f.message}'),
+      (attendees) {
+        _attendeesMap = Map.from(_attendeesMap)..[eventId] = attendees;
+      },
+    );
+
+    // Refresh the single event so attendeeCount is accurate.
+    Event? fresh;
+    final eventResult = await repository.getEventById(eventId);
+    eventResult.fold(
+      (f) => debugPrint('RSVP refresh event failed: ${f.message}'),
+      (e) {
+        if (e != null) {
+          fresh = e;
+          _replaceInCaches(e);
+        }
+      },
+    );
+
+    if (wasDetail && fresh != null) {
+      emit(EventDetailLoaded(
+        event: fresh!,
+        attendees: _attendeesMap[eventId] ?? const [],
+      ));
+    } else {
+      emit(EventsLoaded(
+        events: _allEvents,
+        selectedCategory: _selectedCategory,
+        attendeesMap: _attendeesMap,
+        userEvents: _userEvents,
+        nearbyEvents: _nearbyEvents,
+      ));
+    }
+  }
+
+  /// Replace an event in every cached list it appears in (by id).
+  void _replaceInCaches(Event e) {
+    void put(List<Event> list) {
+      final i = list.indexWhere((x) => x.id == e.id);
+      if (i >= 0) list[i] = e;
+    }
+
+    put(_allEvents);
+    put(_userEvents);
+    put(_nearbyEvents);
   }
 
   Future<void> _onLoadEventAttendees(
@@ -235,6 +278,11 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     result.fold(
       (failure) {
         debugPrint('Failed to load attendees: ${failure.message}');
+        // Attendees are secondary: only surface an error if there is nothing
+        // on screen yet (otherwise keep the list visible).
+        if (state is! EventsLoaded && state is! EventDetailLoaded) {
+          emit(EventsError(failure.message));
+        }
       },
       (attendees) {
         _attendeesMap = Map.from(_attendeesMap);
@@ -267,6 +315,9 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     result.fold(
       (failure) {
         debugPrint('Failed to load user events: ${failure.message}');
+        if (state is! EventsLoaded) {
+          emit(EventsError(failure.message));
+        }
       },
       (events) {
         _userEvents = events;
@@ -320,6 +371,9 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     result.fold(
       (failure) {
         debugPrint('Failed to load nearby events: ${failure.message}');
+        if (state is! EventsLoaded) {
+          emit(EventsError(failure.message));
+        }
       },
       (events) {
         _nearbyEvents = events;

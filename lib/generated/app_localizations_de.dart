@@ -6662,7 +6662,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get referralCodeTitle => 'Hast du einen Empfehlungscode?';
 
   @override
-  String get referralCodeLabel => 'Empfehlungscode';
+  String get referralCodeLabel => 'Empfehlungscode (optional)';
 
   @override
   String get referralCodeHint => 'Code eines Freundes eingeben';
@@ -10142,6 +10142,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String voiceFailedStartRecording(Object error) {
     return 'Aufnahme konnte nicht gestartet werden: $error';
   }
+
+  @override
+  String get voiceMicPermissionDenied =>
+      'Für die Sprachaufnahme wird Mikrofonzugriff benötigt';
 
   @override
   String voiceFailedUploadRecording(Object error) {

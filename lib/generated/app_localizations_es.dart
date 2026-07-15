@@ -6661,7 +6661,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get referralCodeTitle => '¿Tienes un código de referido?';
 
   @override
-  String get referralCodeLabel => 'Código de referido';
+  String get referralCodeLabel => 'Código de referido (opcional)';
 
   @override
   String get referralCodeHint => 'Introduce el código de un amigo';
@@ -10138,6 +10138,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String voiceFailedStartRecording(Object error) {
     return 'No se pudo iniciar la grabación: $error';
   }
+
+  @override
+  String get voiceMicPermissionDenied =>
+      'Se necesita acceso al micrófono para grabar tu presentación de voz';
 
   @override
   String voiceFailedUploadRecording(Object error) {

@@ -992,10 +992,13 @@ service cloud.firestore {
         allow update, delete: if isCommunityMod();
       }
 
-      // Any other future subcollection: signed-in read, owner/admin write.
+      // Any other future subcollection: owner/admin only. (Was `read: if
+      // isSignedIn()`, which — because Firestore ORs matching rules — overrode
+      // the mod-only read on join_requests, letting anyone enumerate who
+      // requested to join a private community. members/messages keep their own
+      // explicit signed-in read rules above.)
       match /{document=**} {
-        allow read: if isSignedIn();
-        allow write: if isCommunityMod();
+        allow read, write: if isCommunityMod();
       }
     }
 

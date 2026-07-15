@@ -6573,7 +6573,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get referralCodeTitle => 'Have a referral code?';
 
   @override
-  String get referralCodeLabel => 'Referral code';
+  String get referralCodeLabel => 'Referral code (optional)';
 
   @override
   String get referralCodeHint => 'Enter a friend s code';
@@ -10015,6 +10015,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String voiceFailedStartRecording(Object error) {
     return 'Failed to start recording: $error';
   }
+
+  @override
+  String get voiceMicPermissionDenied =>
+      'Microphone access is needed to record your voice intro';
 
   @override
   String voiceFailedUploadRecording(Object error) {

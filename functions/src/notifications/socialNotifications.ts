@@ -48,8 +48,23 @@ async function resolveActor(actorId: string): Promise<Actor> {
 }
 
 /**
+ * Claim a one-time dedup key so a re-fired trigger doesn't double-notify.
+ * Returns true if THIS call won the claim (first time), false if already claimed.
+ */
+async function claimOnce(dedupKey: string): Promise<boolean> {
+  const ref = db.collection('notif_dedup').doc(dedupKey);
+  try {
+    await ref.create({ at: admin.firestore.FieldValue.serverTimestamp() });
+    return true;
+  } catch {
+    return false; // already exists → duplicate delivery
+  }
+}
+
+/**
  * Emit one notification to [recipientId]: an in-app `notifications` doc carrying
  * the actor identity, plus a best-effort FCM push if the recipient has a token.
+ * [dedupKey] guards against duplicate deliveries on trigger retries.
  */
 async function emit(
   recipientId: string,
@@ -58,8 +73,10 @@ async function emit(
   body: string,
   data: Record<string, string>,
   actor: Actor,
+  dedupKey: string,
 ): Promise<void> {
   if (!recipientId || recipientId === actor.id) return;
+  if (!(await claimOnce(dedupKey))) return;
 
   // In-app doc (Flutter NotificationModel shape + actor fields).
   await db.collection('notifications').add({
@@ -122,6 +139,7 @@ export const onCommunityMemberJoined = onDocumentCreated(
       (c.name as string) || 'Your community',
       { type: 'community_join', communityId, action: 'open_community', actorId: userId },
       actor,
+      `community_join_${communityId}_${userId}`,
     );
   }),
 );
@@ -149,6 +167,7 @@ export const onEventAttendeeJoined = onDocumentCreated(
       (e.title as string) || 'Your event',
       { type: 'event_join', eventId, action: 'open_event', actorId: userId },
       actor,
+      `event_join_${eventId}_${userId}`,
     );
   }),
 );
@@ -169,6 +188,7 @@ export const onBusinessFollowed = onDocumentCreated(
       'You have a new follower',
       { type: 'business_follow', businessId, action: 'open_profile', profileId: userId, actorId: userId },
       actor,
+      `business_follow_${businessId}_${userId}`,
     );
   }),
 );
@@ -191,6 +211,7 @@ export const onBusinessRated = onDocumentCreated(
       'You have a new rating',
       { type: 'business_rating', businessId, action: 'open_profile', profileId: businessId, actorId: userId },
       actor,
+      `business_rating_${businessId}_${userId}`,
     );
   }),
 );
@@ -216,6 +237,7 @@ export const onEventLiked = onDocumentCreated(
       (e.title as string) || 'Your event',
       { type: 'event_like', eventId, action: 'open_event', actorId: userId },
       actor,
+      `event_like_${eventId}_${userId}`,
     );
   }),
 );

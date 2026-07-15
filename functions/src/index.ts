@@ -131,6 +131,7 @@ export {
 export {
   onCommunityEventCreated,
   onCommunityEventPublished,
+  onCommunityEventChanged,
 } from './communities/eventFanout';
 
 // Social notifications — actor-attributed (avatar + name) join/follow/rate/like.
@@ -155,6 +156,11 @@ export {
 export {
   sendEventReminders,
 } from './events/reminders';
+
+// Events — auto-publish due scheduled events (triggers follower/community fan-out).
+export {
+  autoPublishScheduledEvents,
+} from './events/autoPublish';
 
 // Wallet passes (Apple .pkpass + Google Wallet) are REMOVED for now — the
 // pass certificates / issuer secrets are not configured. Re-export from
@@ -288,6 +294,11 @@ export {
   unblockUser,
   getBlockList,
 } from './safety/reportingSystem';
+
+// Safety — maintain reportCount on reported users (Admin SDK).
+export {
+  onUserReportCreated,
+} from './safety/reportCountTrigger';
 
 export {
   startPhotoVerification,

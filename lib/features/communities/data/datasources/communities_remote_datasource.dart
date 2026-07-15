@@ -223,7 +223,14 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   @override
   Future<void> updateCommunity(CommunityModel community) async {
     try {
-      await _communitiesRef.doc(community.id).update(community.toFirestore());
+      // Strip server-maintained / denormalized fields so an owner edit (rules,
+      // resources, sponsor, promo) never overwrites the join/leave counter or
+      // the last-message denormalization.
+      final data = community.toFirestore()
+        ..remove('memberCount')
+        ..remove('lastMessagePreview')
+        ..remove('lastActivityAt');
+      await _communitiesRef.doc(community.id).update(data);
     } catch (e) {
       debugPrint('Error updating community: $e');
       rethrow;

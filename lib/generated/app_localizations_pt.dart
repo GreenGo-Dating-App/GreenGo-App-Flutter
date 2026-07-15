@@ -6638,7 +6638,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get referralCodeTitle => 'Tem um código de indicação?';
 
   @override
-  String get referralCodeLabel => 'Código de indicação';
+  String get referralCodeLabel => 'Código de indicação (opcional)';
 
   @override
   String get referralCodeHint => 'Digite o código de um amigo';
@@ -10113,6 +10113,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String voiceFailedStartRecording(Object error) {
     return 'Falha ao iniciar gravação: $error';
   }
+
+  @override
+  String get voiceMicPermissionDenied =>
+      'É necessário acesso ao microfone para gravar a sua apresentação de voz';
 
   @override
   String voiceFailedUploadRecording(Object error) {
@@ -19563,7 +19567,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get referralCodeTitle => 'Tem um código de indicação?';
 
   @override
-  String get referralCodeLabel => 'Código de indicação';
+  String get referralCodeLabel => 'Código de indicação (opcional)';
 
   @override
   String get referralCodeHint => 'Digite o código de um amigo';
@@ -23033,6 +23037,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String voiceFailedStartRecording(Object error) {
     return 'Falha ao iniciar gravação: $error';
   }
+
+  @override
+  String get voiceMicPermissionDenied =>
+      'É necessário acesso ao microfone para gravar sua apresentação de voz';
 
   @override
   String voiceFailedUploadRecording(Object error) {

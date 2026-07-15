@@ -42,11 +42,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool? _couponValid;
   String? _couponMessage;
 
-  // Consent checkboxes state
+  // Consent checkboxes state.
+  // Required consents (privacy + terms) must be actively accepted → start false.
   bool _privacyPolicyAccepted = false;
   bool _termsAccepted = false;
-  bool _profilingAccepted = false;
-  bool _thirdPartyDataAccepted = false;
+  // Optional consents are pre-checked by default (user can opt out).
+  bool _profilingAccepted = true;
+  bool _thirdPartyDataAccepted = true;
 
   @override
   void initState() {

@@ -177,12 +177,12 @@ async function sendPushToUser(userId, type, title, body, data, options) {
         return false;
     }
 }
-async function writeInAppNotification(userId, type, title, body, data, fcmMessageId) {
+async function writeInAppNotification(userId, type, title, body, data, fcmMessageId, actor) {
     try {
-        await db.collection('notifications').add(Object.assign(Object.assign({ userId,
+        await db.collection('notifications').add(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({ userId,
             type,
             title, message: body, // Flutter NotificationModel reads `message`
-            body, createdAt: admin.firestore.FieldValue.serverTimestamp(), isRead: false }, (fcmMessageId ? { sentAt: admin.firestore.FieldValue.serverTimestamp(), fcmMessageId } : {})), (data ? { data } : {})));
+            body, createdAt: admin.firestore.FieldValue.serverTimestamp(), isRead: false }, (fcmMessageId ? { sentAt: admin.firestore.FieldValue.serverTimestamp(), fcmMessageId } : {})), (data ? { data } : {})), ((actor === null || actor === void 0 ? void 0 : actor.imageUrl) ? { imageUrl: actor.imageUrl } : {})), ((actor === null || actor === void 0 ? void 0 : actor.actorId) ? { actorId: actor.actorId } : {})), ((actor === null || actor === void 0 ? void 0 : actor.actorName) ? { actorName: actor.actorName } : {})));
     }
     catch (e) {
         (0, utils_1.logError)('writeInAppNotification error', e);
