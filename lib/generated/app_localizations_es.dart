@@ -11805,6 +11805,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notificationsDeleteUnread => 'Eliminar no leidas';
 
   @override
+  String get notificationsDeleteAll => 'Eliminar todo';
+
+  @override
+  String get notificationsDeleteAllConfirm =>
+      'Eliminar permanentemente todas las notificaciones de esta pagina? Esto no se puede deshacer.';
+
+  @override
   String get notificationsDeleteUnreadConfirm =>
       'Eliminar permanentemente todas las notificaciones no leidas? Esto no se puede deshacer.';
 

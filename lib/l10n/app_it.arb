@@ -4077,6 +4077,8 @@
   "exploreFeaturedCommunity": "Eventi della community in evidenza",
   "notificationMarkAllRead": "Segna tutti come letti",
   "notificationsDeleteUnread": "Elimina non lette",
+  "notificationsDeleteAll": "Elimina tutto",
+  "notificationsDeleteAllConfirm": "Eliminare definitivamente tutte le notifiche di questa pagina? L operazione non puo essere annullata.",
   "notificationsDeleteUnreadConfirm": "Eliminare definitivamente tutte le notifiche non lette? L operazione non puo essere annullata.",
   "analyticsTitle": "Statistiche",
   "analyticsPlatinumOnly": "Le statistiche sono una funzionalità Platinum.",

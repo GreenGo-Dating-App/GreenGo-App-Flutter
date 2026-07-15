@@ -5644,6 +5644,8 @@
   "exploreFeaturedCommunity": "Featured community events",
   "notificationMarkAllRead": "Mark all read",
   "notificationsDeleteUnread": "Delete unread",
+  "notificationsDeleteAll": "Delete all",
+  "notificationsDeleteAllConfirm": "Permanently delete all notifications on this page? This cannot be undone.",
   "notificationsDeleteUnreadConfirm": "Permanently delete all unread notifications? This cannot be undone.",
   "analyticsTitle": "Analytics",
   "analyticsPlatinumOnly": "Analytics is a Platinum feature.",

@@ -26,6 +26,9 @@ abstract class NotificationRepository {
   /// Permanently delete ALL unread notifications for the user.
   Future<Either<Failure, void>> deleteAllUnread(String userId);
 
+  /// Permanently delete ALL notifications (read + unread) for the user.
+  Future<Either<Failure, void>> deleteAll(String userId);
+
   /// Get unread count
   Future<Either<Failure, int>> getUnreadCount(String userId);
 

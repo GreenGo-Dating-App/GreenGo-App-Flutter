@@ -4035,6 +4035,8 @@
   "exploreFeaturedCommunity": "Eventos comunitarios destacados",
   "notificationMarkAllRead": "Marcar todo como leído",
   "notificationsDeleteUnread": "Eliminar no leidas",
+  "notificationsDeleteAll": "Eliminar todo",
+  "notificationsDeleteAllConfirm": "Eliminar permanentemente todas las notificaciones de esta pagina? Esto no se puede deshacer.",
   "notificationsDeleteUnreadConfirm": "Eliminar permanentemente todas las notificaciones no leidas? Esto no se puede deshacer.",
   "analyticsTitle": "Estadísticas",
   "analyticsPlatinumOnly": "Las estadísticas son una función Platinum.",

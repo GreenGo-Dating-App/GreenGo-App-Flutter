@@ -11800,6 +11800,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get notificationsDeleteUnread => 'Elimina non lette';
 
   @override
+  String get notificationsDeleteAll => 'Elimina tutto';
+
+  @override
+  String get notificationsDeleteAllConfirm =>
+      'Eliminare definitivamente tutte le notifiche di questa pagina? L operazione non puo essere annullata.';
+
+  @override
   String get notificationsDeleteUnreadConfirm =>
       'Eliminare definitivamente tutte le notifiche non lette? L operazione non puo essere annullata.';
 

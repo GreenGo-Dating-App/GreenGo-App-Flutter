@@ -11781,6 +11781,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notificationsDeleteUnread => 'Eliminar nao lidas';
 
   @override
+  String get notificationsDeleteAll => 'Eliminar tudo';
+
+  @override
+  String get notificationsDeleteAllConfirm =>
+      'Eliminar permanentemente todas as notificacoes desta pagina? Isto nao pode ser anulado.';
+
+  @override
   String get notificationsDeleteUnreadConfirm =>
       'Eliminar permanentemente todas as notificacoes nao lidas? Isto nao pode ser anulado.';
 
@@ -24888,6 +24895,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get notificationsDeleteUnread => 'Excluir nao lidas';
+
+  @override
+  String get notificationsDeleteAll => 'Excluir tudo';
+
+  @override
+  String get notificationsDeleteAllConfirm =>
+      'Excluir permanentemente todas as notificacoes desta pagina? Isso nao pode ser desfeito.';
 
   @override
   String get notificationsDeleteUnreadConfirm =>

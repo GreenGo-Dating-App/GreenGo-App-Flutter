@@ -239,6 +239,22 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   Future<CommunityModel> createCommunity(CommunityModel community) async {
     try {
       final docRef = await _communitiesRef.add(community.toFirestore());
+
+      // Add the CREATOR as the OWNER member. Without a member doc the creator
+      // is invisible to membership-based reads ("My Communities" uses a
+      // collectionGroup('members') query) AND can't post — security rules gate
+      // chat/tips/announcements on canPostChat() = an existing member doc. So a
+      // missing creator member doc made created communities vanish from "My
+      // Communities" and made the creator's tips get denied (disappear).
+      await docRef.collection('members').doc(community.createdByUserId).set(
+            CommunityMemberModel(
+              userId: community.createdByUserId,
+              displayName: community.createdByName,
+              joinedAt: DateTime.now(),
+              role: CommunityRole.owner,
+            ).toFirestore(),
+          );
+
       final newDoc = await docRef.get();
       return CommunityModel.fromFirestore(newDoc);
     } catch (e) {
