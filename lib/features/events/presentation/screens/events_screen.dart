@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -2845,7 +2846,25 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   String? _selectedCommunityId;
   List<Community> _manageableCommunities = const [];
 
+  // The organizer's real display name (resolved from their profile), so created
+  // events don't show the "Current User" placeholder as host.
+  String _organizerName = '';
+
   bool get _isEditing => widget.existing != null;
+
+  /// Resolve the organizer's display name from their profile (best-effort).
+  Future<void> _loadOrganizerName() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(widget.currentUserId)
+          .get();
+      final name = (doc.data()?['displayName'] as String?)?.trim();
+      if (name != null && name.isNotEmpty && mounted) {
+        setState(() => _organizerName = name);
+      }
+    } catch (_) {/* fall back to the existing organizerName */}
+  }
 
   Future<void> _loadManageableCommunities() async {
     // No picker needed when the community is fixed by the caller.
@@ -2924,6 +2943,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     super.initState();
     _selectedCommunityId =
         widget.communityId ?? widget.existing?.communityId;
+    _organizerName = widget.existing?.organizerName ?? '';
+    _loadOrganizerName();
     _loadManageableCommunities();
     final e = widget.existing;
     if (e == null) return;
@@ -4093,7 +4114,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     final base = Event(
       id: '', // Firestore will generate the ID
       organizerId: widget.currentUserId,
-      organizerName: 'Current User', // TODO: Get from profile
+      organizerName: _organizerName.isNotEmpty ? _organizerName : 'Current User',
       title: _titleController.text,
       description: _descriptionController.text,
       category: _category,

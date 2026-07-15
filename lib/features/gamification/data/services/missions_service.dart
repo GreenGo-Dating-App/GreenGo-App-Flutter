@@ -273,9 +273,12 @@ class MissionsService {
 
   /// Communities the user is a member of (capped — we only need >= 1).
   Future<int> _joinedCommunityCount(String userId) async {
+    // Filter by the stored `userId` FIELD — a collectionGroup query cannot
+    // filter on FieldPath.documentId (throws "parsing query arguments"), which
+    // silently zeroed this mission.
     final snap = await _firestore
         .collectionGroup(_membersGroup)
-        .where(FieldPath.documentId, isEqualTo: userId)
+        .where('userId', isEqualTo: userId)
         .limit(5)
         .get();
     return snap.docs.length;

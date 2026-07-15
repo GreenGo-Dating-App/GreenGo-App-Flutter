@@ -228,12 +228,27 @@ class NotificationsScreen extends StatelessWidget {
       return;
     }
 
-    // Profile view — explicit action or profile-view type.
+    // Profile — profile view, like, super-like and match all open the actor's
+    // profile. (Likes store the actor under `likerId`, matches under
+    // `matchedUserId`; both were previously unrouted → dead taps.)
     if (action == 'profile' ||
         action == 'profile_view' ||
-        type == NotificationType.profileView) {
-      final profileId =
-          pick(['profileId', 'targetUserId', 'fromUserId', 'senderId', 'userId']);
+        type == NotificationType.profileView ||
+        type == NotificationType.newLike ||
+        type == NotificationType.superLike ||
+        type == NotificationType.newMatch) {
+      final actor = notification.actorId;
+      final profileId = (actor != null && actor.isNotEmpty)
+          ? actor
+          : pick([
+              'profileId',
+              'targetUserId',
+              'likerId',
+              'matchedUserId',
+              'fromUserId',
+              'senderId',
+              'userId',
+            ]);
       if (profileId != null && profileId != userId) {
         _openProfile(context, profileId);
       }

@@ -60,6 +60,22 @@
       ]
     },
     {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isIncognito", "order": "ASCENDING" },
+        { "fieldPath": "incognitoExpiry", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isTraveler", "order": "ASCENDING" },
+        { "fieldPath": "travelerExpiry", "order": "ASCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "attendees",
       "queryScope": "COLLECTION_GROUP",
       "fields": [
