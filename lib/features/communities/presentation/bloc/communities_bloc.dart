@@ -121,15 +121,16 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         }
       },
       (communities) {
-        // Show Discover in RANDOM order (up to 100 per page); keep the keyset
-        // cursor from the true-oldest item so endless scroll stays correct.
-        final display = _shuffled(communities);
-        final languageCircles = display
+        // Show the DATA first — the initial page renders in natural (recency)
+        // order so real communities appear immediately. Randomisation is only
+        // applied to the ADDITIONAL pages fetched on scroll (see
+        // _onLoadMoreCommunities), so Discover never blanks behind a shuffle.
+        final languageCircles = communities
             .where((c) => c.type == CommunityType.languageCircle)
             .toList();
 
         emit(CommunitiesLoaded(
-          communities: display,
+          communities: communities,
           userCommunities: userCommunities,
           recommended: recommended,
           languageCircles: languageCircles,

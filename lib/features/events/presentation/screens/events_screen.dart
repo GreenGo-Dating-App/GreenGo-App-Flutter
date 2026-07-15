@@ -102,8 +102,9 @@ class _EventsScreenState extends State<EventsScreen>
   double? _userLat;
   double? _userLng;
   String _extSort = 'distance'; // distance | rating | reviews | date
-  // Native tabs (Upcoming/Community/My Events): distance is the default order.
-  String _nativeSort = 'distance'; // distance | date | popular
+  // Native tabs (Upcoming/Community/My Events): order by DATE (earliest first)
+  // by default; the user can still switch to distance/popular from the menu.
+  String _nativeSort = 'date'; // distance | date | popular
 
   // Date-range filter for native event lists (Community / My Events).
   // Null = no bound. Inclusive window [_dateFrom 00:00 .. _dateTo 23:59:59].

@@ -440,7 +440,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
       community
           .where((e) => e.endDate.isAfter(now) && !e.startDate.isAfter(todayEnd))
           .toList(),
-    );
+    )
+      // Earliest first (the nearby pool comes back distance-ordered).
+      ..sort((a, b) => a.startDate.compareTo(b.startDate));
     final communityItems =
         communityToday.map((e) => _Happening.community(e)).toList();
     final communityTitles =
@@ -739,13 +741,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
-    // Tier 4 — LOCATION-INDEPENDENT last resort. Reached when we STILL have
-    // nothing to show: typically the (common) case of a profile with no stored
-    // coordinates, where Tiers 1–3 were all skipped. Pull upcoming PUBLIC
-    // community events with a plain non-geo query so the carousel appears
-    // wherever the user is: sponsored-first (stable order + round-robin), then
-    // the soonest remaining ones, de-duped against anything already picked.
-    if (picked.length < 3) {
+    // Tier 4 — LOCATION-INDEPENDENT last resort. Per spec, Featured must be
+    // CLOSE BY the user (boosted-nearby, else random-nearby), so this global
+    // fallback runs ONLY when the user's location is unknown (no coords → we
+    // can't compute "close by", so show upcoming events wherever they are).
+    if (picked.length < 3 && !hasLocation) {
       try {
         final upcoming = await eventsDs.getEvents(upcoming: true);
         final sponsoredGlobal =
@@ -773,7 +773,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // index-free collection read (no `where`/`orderBy` — just a bounded limit),
     // parses client-side and keeps any PUBLIC, LIVE event so the carousel shows
     // whenever ANY public event exists at all. Sponsored-first, then soonest.
-    if (picked.length < 3) {
+    // Like Tier 4, this global read only applies when location is unknown so a
+    // located user never sees far-away events in the "close by" Featured rail.
+    if (picked.length < 3 && !hasLocation) {
       try {
         final snap = await _firestore.collection('events').limit(50).get();
         final live = snap.docs
@@ -993,7 +995,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
         // Featured or Happening-today carousels (no repeats across Explore).
         events = events
             .where((e) => e.isLive && !_usedEventKeys.contains(e.id))
-            .toList();
+            .toList()
+          // Order by date, earliest first (the datasource returns nearest-first).
+          ..sort((a, b) => a.startDate.compareTo(b.startDate));
       } catch (_) {
         events = const <Event>[];
       }
@@ -1335,20 +1339,22 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 context,
                 l10n,
                 reduceMotion,
-                title: l10n.exploreBusinessAccounts,
-                people: _businessAccounts,
-                onSeeAll: () => _openBusinessDiscovery(context),
+                title: l10n.exploreSpeaksLanguage(_sameLanguageName ?? ''),
+                people: _sameLanguage,
               ),
+              // "Business accounts" — the promoted business PROFILES — sit
+              // immediately before "Businesses close to you" (NOT before the
+              // language section), so the two business blocks are grouped.
               _peopleSection(
                 context,
                 l10n,
                 reduceMotion,
-                title: l10n.exploreSpeaksLanguage(_sameLanguageName ?? ''),
-                people: _sameLanguage,
+                title: l10n.exploreBusinessAccounts,
+                people: _businessAccounts,
+                onSeeAll: () => _openBusinessDiscovery(context),
               ),
-              // "Businesses close to you" — promoted-first, then nearest. Placed
-              // right after the language section per request. See-all opens the
-              // business-only Discovery.
+              // "Businesses close to you" — promoted-first, then nearest.
+              // See-all opens the business-only Discovery.
               _businessesSection(context, l10n, reduceMotion),
               SliverToBoxAdapter(
                 child: Padding(
