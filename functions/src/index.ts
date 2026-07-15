@@ -139,6 +139,12 @@ export {
   onCommunityEventChanged,
 } from './communities/eventFanout';
 
+// Communities — ONE-TIME backfill: add creator owner-member docs to legacy
+// communities. Invoke once via URL (?token=...), then it can be removed.
+export {
+  backfillCommunityCreatorMembers,
+} from './communities/backfillCreatorMembers';
+
 // Social notifications — actor-attributed (avatar + name) join/follow/rate/like.
 export {
   onCommunityMemberJoined,

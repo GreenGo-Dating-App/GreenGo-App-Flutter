@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -107,6 +108,47 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
     }
   }
 
+  /// Permanently delete this ticket (the user's own attendee doc). Only offered
+  /// once the event ended 24h+ ago (gated in the AppBar).
+  Future<void> _confirmDeleteTicket(
+      BuildContext context, AppLocalizations l10n) async {
+    final navigator = Navigator.of(context);
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventTicketDelete,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.eventTicketDeleteConfirm,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(l10n.cancel,
+                style: const TextStyle(color: AppColors.textSecondary)),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(l10n.delete,
+                style: const TextStyle(
+                    color: AppColors.errorRed, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+    try {
+      // The attendees rule lets a user delete their OWN attendee doc.
+      await FirebaseFirestore.instance
+          .collection('events')
+          .doc(widget.event.id)
+          .collection('attendees')
+          .doc(widget.userId)
+          .delete();
+      if (navigator.mounted) navigator.pop();
+    } catch (_) {/* best-effort */}
+  }
+
   /// Best available "where" line: street address, else city/country, else the
   /// venue name (as a last resort so the row never renders blank).
   String? get _locationLine {
@@ -142,6 +184,17 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
         backgroundColor: AppColors.backgroundDark,
         foregroundColor: AppColors.textPrimary,
         title: Text(l10n.eventMyTicket),
+        actions: [
+          // Delete the ticket permanently — ONLY once the event ended at least
+          // 24h ago (so an active/upcoming ticket can't be accidentally lost).
+          if (DateTime.now()
+              .isAfter(event.endDate.add(const Duration(hours: 24))))
+            IconButton(
+              tooltip: l10n.eventTicketDelete,
+              icon: const Icon(Icons.delete_outline),
+              onPressed: () => _confirmDeleteTicket(context, l10n),
+            ),
+        ],
       ),
       body: SafeArea(
         child: SingleChildScrollView(

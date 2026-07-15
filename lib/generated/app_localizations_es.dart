@@ -11572,6 +11572,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventMyTicket => 'Mi entrada';
 
   @override
+  String get eventTicketDelete => 'Eliminar entrada';
+
+  @override
+  String get eventTicketDeleteConfirm =>
+      'Eliminar permanentemente esta entrada? El evento ya termino.';
+
+  @override
   String get eventScanCheckIn => 'Escanear / Registrar';
 
   @override
@@ -11935,6 +11942,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get verifyPhoneHint => '+34 612 345 678';
+
+  @override
+  String get verifyPhoneFormatError =>
+      'Introduce tu numero en formato internacional, p. ej. +34612345678';
 
   @override
   String get verifySendCode => 'Enviar código';

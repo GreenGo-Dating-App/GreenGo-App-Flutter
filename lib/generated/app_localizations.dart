@@ -20382,6 +20382,18 @@ abstract class AppLocalizations {
   /// **'My ticket'**
   String get eventMyTicket;
 
+  /// No description provided for @eventTicketDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete ticket'**
+  String get eventTicketDelete;
+
+  /// No description provided for @eventTicketDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Permanently delete this ticket? The event has already ended.'**
+  String get eventTicketDeleteConfirm;
+
   /// No description provided for @eventScanCheckIn.
   ///
   /// In en, this message translates to:
@@ -21035,6 +21047,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'+1 555 123 4567'**
   String get verifyPhoneHint;
+
+  /// No description provided for @verifyPhoneFormatError.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your number in international format, e.g. +12025550123'**
+  String get verifyPhoneFormatError;
 
   /// No description provided for @verifySendCode.
   ///

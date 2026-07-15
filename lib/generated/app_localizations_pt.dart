@@ -11547,6 +11547,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventMyTicket => 'O meu bilhete';
 
   @override
+  String get eventTicketDelete => 'Eliminar bilhete';
+
+  @override
+  String get eventTicketDeleteConfirm =>
+      'Eliminar permanentemente este bilhete? O evento ja terminou.';
+
+  @override
   String get eventScanCheckIn => 'Digitalizar / Check-in';
 
   @override
@@ -11911,6 +11918,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get verifyPhoneHint => '+55 11 91234-5678';
+
+  @override
+  String get verifyPhoneFormatError =>
+      'Introduza o numero em formato internacional, ex. +351912345678';
 
   @override
   String get verifySendCode => 'Enviar código';
@@ -24663,6 +24674,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get eventMyTicket => 'Meu ingresso';
 
   @override
+  String get eventTicketDelete => 'Excluir ingresso';
+
+  @override
+  String get eventTicketDeleteConfirm =>
+      'Excluir permanentemente este ingresso? O evento ja terminou.';
+
+  @override
   String get eventScanCheckIn => 'Escanear / Check-in';
 
   @override
@@ -25027,6 +25045,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get verifyPhoneHint => '+55 11 91234-5678';
+
+  @override
+  String get verifyPhoneFormatError =>
+      'Digite seu numero no formato internacional, ex. +5511912345678';
 
   @override
   String get verifySendCode => 'Enviar código';

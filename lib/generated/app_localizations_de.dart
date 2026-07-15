@@ -11580,6 +11580,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventMyTicket => 'Mein Ticket';
 
   @override
+  String get eventTicketDelete => 'Ticket loeschen';
+
+  @override
+  String get eventTicketDeleteConfirm =>
+      'Dieses Ticket dauerhaft loeschen? Das Event ist bereits vorbei.';
+
+  @override
   String get eventScanCheckIn => 'Scannen / Check-in';
 
   @override
@@ -11942,6 +11949,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get verifyPhoneHint => '+49 151 1234567';
+
+  @override
+  String get verifyPhoneFormatError =>
+      'Nummer im internationalen Format eingeben, z. B. +491701234567';
 
   @override
   String get verifySendCode => 'Code senden';

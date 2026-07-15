@@ -11623,6 +11623,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventMyTicket => 'Mon billet';
 
   @override
+  String get eventTicketDelete => 'Supprimer le billet';
+
+  @override
+  String get eventTicketDeleteConfirm =>
+      'Supprimer definitivement ce billet ? L evenement est termine.';
+
+  @override
   String get eventScanCheckIn => 'Scanner / Enregistrement';
 
   @override
@@ -11986,6 +11993,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get verifyPhoneHint => '+33 6 12 34 56 78';
+
+  @override
+  String get verifyPhoneFormatError =>
+      'Saisissez votre numero au format international, ex. +33612345678';
 
   @override
   String get verifySendCode => 'Envoyer le code';
