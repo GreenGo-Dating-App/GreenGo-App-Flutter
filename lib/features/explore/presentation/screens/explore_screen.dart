@@ -147,7 +147,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   List<MatchCandidate>? _aroundYou;
   // "Business accounts": GreenGo business profiles to discover (replaces the old
   // "same interests" row). Empty (loaded) hides the section.
-  List<MatchCandidate>? _businessAccounts;
   // "People that speak {language}": profiles listing a randomly-picked language.
   List<MatchCandidate>? _sameLanguage;
   // The randomly-picked language whose speakers [_sameLanguage] holds (for the
@@ -225,7 +224,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
       _loadFeaturedAttractions(),
       _loadRecommended(),
       _loadAroundYou(),
-      _loadBusinessAccounts(),
       _loadSameLanguage(),
       _loadBusinesses(),
       _loadMyEvents(),
@@ -858,28 +856,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// discover, rendered as people cards. Shuffled, capped at [_peopleWanted].
   /// Hidden entirely when there are none. Tapping "See all" opens Discovery
   /// filtered to business accounts.
-  Future<void> _loadBusinessAccounts() async {
-    final byId = <String, _Partner>{};
-    try {
-      final snap = await _firestore
-          .collection('profiles')
-          .where('isBusiness', isEqualTo: true)
-          .limit(60)
-          .get();
-      for (final doc in snap.docs) {
-        if (doc.id == widget.userId) continue;
-        final p = _parsePartner(doc.id, doc.data());
-        if (p != null) byId[doc.id] = p;
-      }
-    } catch (_) {
-      // Leave whatever we parsed — an empty result hides the section.
-    }
-    final picked = (byId.values.toList()..shuffle())
-        .take(_peopleWanted)
-        .map(_candidateFor)
-        .toList();
-    if (mounted) setState(() => _businessAccounts = picked);
-  }
 
   /// "People that speak {language}" — picks ONE language the CURRENT USER
   /// themselves knows (from their own `profiles.languages`) and shows OTHER
@@ -1341,19 +1317,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 title: l10n.exploreSpeaksLanguage(_sameLanguageName ?? ''),
                 people: _sameLanguage,
               ),
-              // "Business accounts" — the promoted business PROFILES — sit
-              // immediately before "Businesses close to you" (NOT before the
-              // language section), so the two business blocks are grouped.
-              _peopleSection(
-                context,
-                l10n,
-                reduceMotion,
-                title: l10n.exploreBusinessAccounts,
-                people: _businessAccounts,
-                onSeeAll: () => _openBusinessDiscovery(context),
-              ),
-              // "Businesses close to you" — promoted-first, then nearest.
-              // See-all opens the business-only Discovery.
+              // NOTE: the standalone "Business accounts" promo section was
+              // removed — business-owning users now surface directly in search
+              // (as both their personal and business identity). "Businesses
+              // close to you" remains as the nearby-business discovery rail.
               _businessesSection(context, l10n, reduceMotion),
               SliverToBoxAdapter(
                 child: Padding(

@@ -20,6 +20,7 @@ import '../../../events/data/models/event_model.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../profile/data/models/profile_model.dart';
+import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
@@ -112,8 +113,11 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     if (!mounted || generation != _generation) return;
     final profiles = results[0] as List<Profile>;
     setState(() {
-      // Split matched profiles into People (personal) and Business accounts.
-      _people = profiles.where((p) => !p.isBusiness).toList();
+      // A business-owning user is searchable BOTH ways: their personal profile
+      // shows in People, and their business identity (hero image + business
+      // name) shows in Business. So People includes everyone; Business is the
+      // business subset rendered with its storefront face.
+      _people = profiles.toList();
       _business = profiles.where((p) => p.isBusiness).toList();
       _events = results[1] as List<Event>;
       _communities = results[2] as List<Community>;
@@ -290,6 +294,21 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     );
   }
 
+  /// Open a business search result's STOREFRONT.
+  void _openStorefront(Profile profile) {
+    _log
+      ..logSearch(widget.currentUserId, _query)
+      ..logProfileView(widget.currentUserId, profile.userId);
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BusinessStorefrontScreen(
+          business: profile,
+          currentUserId: widget.currentUserId,
+        ),
+      ),
+    );
+  }
+
   void _openEvent(Event event) {
     _log
       ..logSearch(widget.currentUserId, _query)
@@ -440,7 +459,7 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
       itemCount: business.length,
       separatorBuilder: (_, __) => const SizedBox(height: 8),
-      itemBuilder: (context, index) => _personRow(business[index]),
+      itemBuilder: (context, index) => _businessRow(business[index]),
     );
   }
 
@@ -556,6 +575,39 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       title: profile.displayName,
       subtitle: subtitle,
       trailing: const Icon(Icons.chat_bubble_outline,
+          color: AppColors.richGold, size: 20),
+    );
+  }
+
+  /// The BUSINESS face of a profile — hero/cover image as the avatar, the
+  /// business name as the title, and a tap that opens the storefront.
+  Widget _businessRow(Profile profile) {
+    final hero = (profile.coverImageUrl != null &&
+            profile.coverImageUrl!.isNotEmpty)
+        ? profile.coverImageUrl!
+        : (profile.photoUrls.isNotEmpty ? profile.photoUrls.first : null);
+    final city = profile.location.city.trim();
+    final subtitle = <String>[
+      if ((profile.businessCategory ?? '').trim().isNotEmpty)
+        profile.businessCategory!.trim(),
+      if (city.isNotEmpty) city,
+    ].join(' · ');
+    return _glassRow(
+      onTap: () => _openStorefront(profile),
+      leading: CircleAvatar(
+        radius: 24,
+        backgroundColor: AppColors.charcoal,
+        backgroundImage: hero != null ? CachedNetworkImageProvider(hero) : null,
+        child: hero == null
+            ? const Icon(Icons.storefront, color: AppColors.textSecondary)
+            : null,
+      ),
+      title: (profile.businessName != null &&
+              profile.businessName!.trim().isNotEmpty)
+          ? profile.businessName!.trim()
+          : profile.displayName,
+      subtitle: subtitle,
+      trailing: const Icon(Icons.storefront,
           color: AppColors.richGold, size: 20),
     );
   }

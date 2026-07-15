@@ -50,9 +50,9 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   final CommunitiesRepository _repository;
   final CommunitiesRemoteDataSource _remoteDataSource;
 
-  /// Discover page size — fetch up to 100 public communities per page and show
+  /// Discover page size — fetch up to 50 public communities per page and show
   /// them in random order for variety (see [_shuffled]).
-  static const int _communitiesPageSize = 100;
+  static const int _communitiesPageSize = 50;
 
   final math.Random _rng = math.Random();
 
@@ -94,9 +94,11 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     final currentState = state;
     var userCommunities = <Community>[];
     var recommended = <Community>[];
+    var managed = <Community>[];
     if (currentState is CommunitiesLoaded) {
       userCommunities = currentState.userCommunities;
       recommended = currentState.recommended;
+      managed = currentState.managedCommunities;
     } else {
       emit(const CommunitiesLoading());
     }
@@ -122,22 +124,23 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         }
       },
       (communities) {
-        // Show the DATA first — the initial page renders in natural (recency)
-        // order so real communities appear immediately. Randomisation is only
-        // applied to the ADDITIONAL pages fetched on scroll (see
-        // _onLoadMoreCommunities), so Discover never blanks behind a shuffle.
-        final languageCircles = communities
+        // Discover shows up to 50 public communities in RANDOM order; the
+        // keyset cursor is taken from the true-oldest item so endless scroll
+        // still works despite the shuffled display order.
+        final display = _shuffled(communities);
+        final languageCircles = display
             .where((c) => c.type == CommunityType.languageCircle)
             .toList();
 
         emit(CommunitiesLoaded(
-          communities: communities,
+          communities: display,
           userCommunities: userCommunities,
           recommended: recommended,
           languageCircles: languageCircles,
           hasMoreCommunities: communities.length >= _communitiesPageSize,
           isLoadingMore: false,
           communitiesCursor: _oldestActivity(communities),
+          managedCommunities: managed,
         ));
       },
     );
@@ -218,11 +221,13 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     var allCommunities = <Community>[];
     var recommended = <Community>[];
     var languageCircles = <Community>[];
+    var managed = <Community>[];
 
     if (currentState is CommunitiesLoaded) {
       allCommunities = currentState.communities;
       recommended = currentState.recommended;
       languageCircles = currentState.languageCircles;
+      managed = currentState.managedCommunities;
     } else {
       // Only blank to a spinner on the FIRST load; a refresh keeps the lists.
       emit(const CommunitiesLoading());
@@ -240,6 +245,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           userCommunities: const [],
           recommended: recommended,
           languageCircles: languageCircles,
+          managedCommunities: managed,
         ));
       },
       (userCommunities) {
@@ -248,6 +254,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           userCommunities: userCommunities,
           recommended: recommended,
           languageCircles: languageCircles,
+          managedCommunities: managed,
         ));
       },
     );
@@ -287,11 +294,13 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     var allCommunities = <Community>[];
     var userCommunities = <Community>[];
     var languageCircles = <Community>[];
+    var managed = <Community>[];
 
     if (currentState is CommunitiesLoaded) {
       allCommunities = currentState.communities;
       userCommunities = currentState.userCommunities;
       languageCircles = currentState.languageCircles;
+      managed = currentState.managedCommunities;
     }
 
     final result = await _repository.getRecommendedCommunities(
@@ -316,6 +325,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
             userCommunities: userCommunities,
             recommended: const [],
             languageCircles: languageCircles,
+            managedCommunities: managed,
           ));
         }
       },
@@ -325,6 +335,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           userCommunities: userCommunities,
           recommended: recommended,
           languageCircles: languageCircles,
+          managedCommunities: managed,
         ));
       },
     );

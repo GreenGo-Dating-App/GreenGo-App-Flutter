@@ -184,8 +184,15 @@ class _ForwardEventSheet extends StatelessWidget {
                                   final brief = s.data?[otherId] ??
                                       UserDirectoryService.instance
                                           .cached(otherId);
-                                  final name = brief?.name ?? otherId;
-                                  final photo = brief?.photoUrl;
+                                  // Hide until resolved, and hide DELETED users
+                                  // entirely — never surface a raw uid.
+                                  if (brief == null || !brief.isActive) {
+                                    return const SizedBox.shrink();
+                                  }
+                                  final name = brief.name.isNotEmpty
+                                      ? brief.name
+                                      : l10n.chatUnknown;
+                                  final photo = brief.photoUrl;
                                   return ListTile(
                                     leading: CircleAvatar(
                                       backgroundImage:
