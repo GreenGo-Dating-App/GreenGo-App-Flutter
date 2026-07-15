@@ -1423,7 +1423,8 @@ class EditProfileScreen extends StatelessWidget {
             ),
             TextButton(
               onPressed: isLoading ? null : () async {
-                final password = passwordController.text.trim();
+                // Do NOT trim: passwords may legitimately contain spaces.
+                final password = passwordController.text;
                 if (password.isEmpty) {
                   setDialogState(() => errorText = AppLocalizations.of(context)!.passwordRequired);
                   return;
@@ -1444,9 +1445,24 @@ class EditProfileScreen extends StatelessWidget {
                     return;
                   }
 
-                  // Re-authenticate with password
+                  // If the account has no email/password provider (e.g. it was
+                  // created with Google sign-in), password re-auth will ALWAYS
+                  // fail as "wrong password" — surface a clear message instead.
+                  final providers =
+                      user.providerData.map((p) => p.providerId).toList();
+                  if (!providers.contains('password')) {
+                    setDialogState(() {
+                      isLoading = false;
+                      errorText = AppLocalizations.of(context)!
+                          .profileReauthProviderMismatch;
+                    });
+                    return;
+                  }
+
+                  // Re-authenticate with password (email lower-cased to match
+                  // Firebase's normalized credential email).
                   final credential = EmailAuthProvider.credential(
-                    email: user.email!,
+                    email: user.email!.trim().toLowerCase(),
                     password: password,
                   );
                   await user.reauthenticateWithCredential(credential);
@@ -1462,7 +1478,10 @@ class EditProfileScreen extends StatelessWidget {
                 } on FirebaseAuthException catch (e) {
                   setDialogState(() {
                     isLoading = false;
-                    if (e.code == 'wrong-password' || e.code == 'invalid-credential') {
+                    if (e.code == 'too-many-requests') {
+                      errorText = AppLocalizations.of(context)!.profileTooManyAttempts;
+                    } else if (e.code == 'wrong-password' ||
+                        e.code == 'invalid-credential') {
                       errorText = AppLocalizations.of(context)!.authErrorWrongPassword;
                     } else {
                       errorText = e.message ?? AppLocalizations.of(context)!.profileAuthenticationFailed;

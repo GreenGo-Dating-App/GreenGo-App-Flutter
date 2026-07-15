@@ -4033,6 +4033,8 @@
   "profileTravelerMode": "Traveler Mode",
   "profileTryDifferentNickname": "Try a different nickname",
   "profileUnableToVerifyAccount": "Unable to verify account",
+  "profileReauthProviderMismatch": "This account was created with a social sign-in (e.g. Google), so there is no password to confirm here. Please delete it from the account you signed in with, or contact support.",
+  "profileTooManyAttempts": "Too many attempts. For your security this device is temporarily blocked — please wait a few minutes and try again.",
   "profileUpdateCurrentLocation": "Update Current Location",
   "profileUpdatedMessage": "Your changes have been saved",
   "profileUpdatedSuccess": "Profile updated successfully",

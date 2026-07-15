@@ -2770,6 +2770,8 @@
   "profileTravelerMode": "Modo Viajante",
   "profileTryDifferentNickname": "Tente um nickname diferente",
   "profileUnableToVerifyAccount": "Não foi possível verificar a conta",
+  "profileReauthProviderMismatch": "Esta conta foi criada com um login social (ex. Google), entao nao ha senha para confirmar aqui. Exclua-a a partir da conta com que voce entrou ou contate o suporte.",
+  "profileTooManyAttempts": "Muitas tentativas. Por seguranca este dispositivo esta temporariamente bloqueado — aguarde alguns minutos e tente novamente.",
   "profileUpdateCurrentLocation": "Atualizar Localizacao Atual",
   "profileUpdatedMessage": "Suas alterações foram salvas",
   "profileUpdatedSuccess": "Perfil atualizado com sucesso",

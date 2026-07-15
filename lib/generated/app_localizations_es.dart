@@ -8370,6 +8370,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileUnableToVerifyAccount => 'No se pudo verificar la cuenta';
 
   @override
+  String get profileReauthProviderMismatch =>
+      'Esta cuenta se creo con un inicio de sesion social (p. ej. Google), por lo que no hay contrasena que confirmar aqui. Eliminala desde la cuenta con la que iniciaste sesion o contacta con soporte.';
+
+  @override
+  String get profileTooManyAttempts =>
+      'Demasiados intentos. Por seguridad este dispositivo esta bloqueado temporalmente — espera unos minutos e intentalo de nuevo.';
+
+  @override
   String get profileUpdateCurrentLocation => 'Actualizar Ubicacion Actual';
 
   @override

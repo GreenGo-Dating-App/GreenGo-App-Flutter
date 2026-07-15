@@ -8376,6 +8376,14 @@ class AppLocalizationsDe extends AppLocalizations {
       'Konto konnte nicht verifiziert werden';
 
   @override
+  String get profileReauthProviderMismatch =>
+      'Dieses Konto wurde mit einer sozialen Anmeldung (z. B. Google) erstellt, daher gibt es hier kein Passwort. Bitte loesche es ueber das verwendete Konto oder kontaktiere den Support.';
+
+  @override
+  String get profileTooManyAttempts =>
+      'Zu viele Versuche. Aus Sicherheitsgruenden ist dieses Geraet voruebergehend gesperrt — bitte warte einige Minuten und versuche es erneut.';
+
+  @override
   String get profileUpdateCurrentLocation => 'Aktuellen Standort aktualisieren';
 
   @override

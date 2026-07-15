@@ -8366,6 +8366,14 @@ class AppLocalizationsIt extends AppLocalizations {
       'Impossibile verificare l\'account';
 
   @override
+  String get profileReauthProviderMismatch =>
+      'Questo account e stato creato con un accesso social (es. Google), quindi non c e una password da confermare qui. Eliminalo dall account con cui hai effettuato l accesso o contatta l assistenza.';
+
+  @override
+  String get profileTooManyAttempts =>
+      'Troppi tentativi. Per sicurezza questo dispositivo e temporaneamente bloccato — attendi qualche minuto e riprova.';
+
+  @override
   String get profileUpdateCurrentLocation => 'Aggiorna Posizione Attuale';
 
   @override

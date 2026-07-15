@@ -2807,6 +2807,8 @@
   "profileTravelerMode": "Modalità viaggiatore",
   "profileTryDifferentNickname": "Prova un altro nickname",
   "profileUnableToVerifyAccount": "Impossibile verificare l'account",
+  "profileReauthProviderMismatch": "Questo account e stato creato con un accesso social (es. Google), quindi non c e una password da confermare qui. Eliminalo dall account con cui hai effettuato l accesso o contatta l assistenza.",
+  "profileTooManyAttempts": "Troppi tentativi. Per sicurezza questo dispositivo e temporaneamente bloccato — attendi qualche minuto e riprova.",
   "profileUpdateCurrentLocation": "Aggiorna Posizione Attuale",
   "profileUpdatedMessage": "Le tue modifiche sono state salvate",
   "profileUpdatedSuccess": "Profilo aggiornato con successo",

@@ -8345,6 +8345,14 @@ class AppLocalizationsPt extends AppLocalizations {
       'Não foi possível verificar a conta';
 
   @override
+  String get profileReauthProviderMismatch =>
+      'Esta conta foi criada com um inicio de sessao social (ex. Google), por isso nao ha palavra-passe para confirmar aqui. Elimine-a a partir da conta com que iniciou sessao ou contacte o suporte.';
+
+  @override
+  String get profileTooManyAttempts =>
+      'Demasiadas tentativas. Por seguranca este dispositivo esta temporariamente bloqueado — aguarde alguns minutos e tente novamente.';
+
+  @override
   String get profileUpdateCurrentLocation => 'Atualizar Localizacao Atual';
 
   @override
@@ -21282,6 +21290,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get profileUnableToVerifyAccount =>
       'Não foi possível verificar a conta';
+
+  @override
+  String get profileReauthProviderMismatch =>
+      'Esta conta foi criada com um login social (ex. Google), entao nao ha senha para confirmar aqui. Exclua-a a partir da conta com que voce entrou ou contate o suporte.';
+
+  @override
+  String get profileTooManyAttempts =>
+      'Muitas tentativas. Por seguranca este dispositivo esta temporariamente bloqueado — aguarde alguns minutos e tente novamente.';
 
   @override
   String get profileUpdateCurrentLocation => 'Atualizar Localizacao Atual';

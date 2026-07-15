@@ -21,6 +21,9 @@ class CommunityMemberTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final displayName = member.displayName.trim().isNotEmpty
+        ? member.displayName
+        : AppLocalizations.of(context)!.chatUnknown;
     return ListTile(
       onTap: onTap,
       contentPadding: const EdgeInsets.symmetric(
@@ -37,8 +40,8 @@ class CommunityMemberTile extends StatelessWidget {
                 : null,
             child: member.photoUrl == null
                 ? Text(
-                    member.displayName.isNotEmpty
-                        ? member.displayName[0].toUpperCase()
+                    displayName.isNotEmpty
+                        ? displayName[0].toUpperCase()
                         : '?',
                     style: const TextStyle(
                       color: AppColors.textPrimary,
@@ -76,7 +79,7 @@ class CommunityMemberTile extends StatelessWidget {
         children: [
           Flexible(
             child: Text(
-              member.displayName,
+              displayName,
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 15,

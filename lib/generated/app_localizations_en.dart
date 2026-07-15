@@ -8264,6 +8264,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileUnableToVerifyAccount => 'Unable to verify account';
 
   @override
+  String get profileReauthProviderMismatch =>
+      'This account was created with a social sign-in (e.g. Google), so there is no password to confirm here. Please delete it from the account you signed in with, or contact support.';
+
+  @override
+  String get profileTooManyAttempts =>
+      'Too many attempts. For your security this device is temporarily blocked — please wait a few minutes and try again.';
+
+  @override
   String get profileUpdateCurrentLocation => 'Update Current Location';
 
   @override
