@@ -5629,6 +5629,8 @@
   "savedSearchAlertsToggle": "Alerts",
   "exploreFeaturedCommunity": "Featured community events",
   "notificationMarkAllRead": "Mark all read",
+  "notificationsDeleteUnread": "Delete unread",
+  "notificationsDeleteUnreadConfirm": "Permanently delete all unread notifications? This cannot be undone.",
   "analyticsTitle": "Analytics",
   "analyticsPlatinumOnly": "Analytics is a Platinum feature.",
   "analyticsEventsHosted": "Events hosted",

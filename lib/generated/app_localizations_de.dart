@@ -11784,6 +11784,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get notificationMarkAllRead => 'Alle als gelesen markieren';
 
   @override
+  String get notificationsDeleteUnread => 'Ungelesene loeschen';
+
+  @override
+  String get notificationsDeleteUnreadConfirm =>
+      'Alle ungelesenen Benachrichtigungen dauerhaft loeschen? Dies kann nicht rueckgaengig gemacht werden.';
+
+  @override
   String get analyticsTitle => 'Analysen';
 
   @override

@@ -4020,6 +4020,8 @@
   "savedSearchAlertsToggle": "Alertas",
   "exploreFeaturedCommunity": "Eventos comunitarios destacados",
   "notificationMarkAllRead": "Marcar todo como leído",
+  "notificationsDeleteUnread": "Eliminar no leidas",
+  "notificationsDeleteUnreadConfirm": "Eliminar permanentemente todas las notificaciones no leidas? Esto no se puede deshacer.",
   "analyticsTitle": "Estadísticas",
   "analyticsPlatinumOnly": "Las estadísticas son una función Platinum.",
   "analyticsEventsHosted": "Eventos organizados",

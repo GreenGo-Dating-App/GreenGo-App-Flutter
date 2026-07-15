@@ -11634,6 +11634,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notificationMarkAllRead => 'Mark all read';
 
   @override
+  String get notificationsDeleteUnread => 'Delete unread';
+
+  @override
+  String get notificationsDeleteUnreadConfirm =>
+      'Permanently delete all unread notifications? This cannot be undone.';
+
+  @override
   String get analyticsTitle => 'Analytics';
 
   @override

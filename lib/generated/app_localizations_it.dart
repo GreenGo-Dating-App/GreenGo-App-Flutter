@@ -11772,6 +11772,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get notificationMarkAllRead => 'Segna tutti come letti';
 
   @override
+  String get notificationsDeleteUnread => 'Elimina non lette';
+
+  @override
+  String get notificationsDeleteUnreadConfirm =>
+      'Eliminare definitivamente tutte le notifiche non lette? L operazione non puo essere annullata.';
+
+  @override
   String get analyticsTitle => 'Statistiche';
 
   @override

@@ -11752,6 +11752,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notificationMarkAllRead => 'Marcar tudo como lido';
 
   @override
+  String get notificationsDeleteUnread => 'Eliminar nao lidas';
+
+  @override
+  String get notificationsDeleteUnreadConfirm =>
+      'Eliminar permanentemente todas as notificacoes nao lidas? Isto nao pode ser anulado.';
+
+  @override
   String get analyticsTitle => 'Estatísticas';
 
   @override
@@ -24700,6 +24707,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get notificationMarkAllRead => 'Marcar tudo como lido';
+
+  @override
+  String get notificationsDeleteUnread => 'Excluir nao lidas';
+
+  @override
+  String get notificationsDeleteUnreadConfirm =>
+      'Excluir permanentemente todas as notificacoes nao lidas? Isso nao pode ser desfeito.';
 
   @override
   String get analyticsTitle => 'Análises';
