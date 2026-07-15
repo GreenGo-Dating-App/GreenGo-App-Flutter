@@ -5,11 +5,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/constants/business_categories.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/limit_reached_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_event.dart';
+import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -205,6 +209,21 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
 
   /// One-time, IRREVERSIBLE switch to a business account.
   ///
+  /// Opens the Shop on its Membership tab (index 1) — the "Upgrade to Platinum
+  /// VIP" path lands here instead of the standalone MembershipSelectionScreen.
+  void _openShopMembershipTab(String uid) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider<CoinBloc>(
+          create: (_) => di.sl<CoinBloc>()
+            ..add(LoadCoinBalance(uid))
+            ..add(const LoadAvailablePackages()),
+          child: CoinShopScreen(userId: uid, initialTab: 1),
+        ),
+      ),
+    );
+  }
+
   /// Gated on [TierEntitlements.canBecomeBusiness] (Platinum only): non-Platinum
   /// users get the upgrade dialog (mirroring [TierGate]'s upsell path) and are
   /// blocked. Platinum users confirm a permanent one-time dialog, after which
@@ -227,7 +246,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
         icon: Icons.storefront,
       );
       if (mounted && r?.action == LimitDialogAction.upgrade) {
-        TierGate().openMembershipUpgrade(context, currentUserId: uid);
+        _openShopMembershipTab(uid);
       }
       return;
     }
