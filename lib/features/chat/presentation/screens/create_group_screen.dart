@@ -227,6 +227,8 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
         final uid = doc.id;
         if (uid == widget.currentUserId) continue;
         if (data['isGhostMode'] == true) continue;
+        // Business/storefront identities can't be added to groups (search-only).
+        if (data['isBusiness'] == true) continue;
         if (_invited.any((c) => c.userId == uid) ||
             widget.candidates.any((c) => c.userId == uid)) {
           // Already in the list — just make sure it's selected.

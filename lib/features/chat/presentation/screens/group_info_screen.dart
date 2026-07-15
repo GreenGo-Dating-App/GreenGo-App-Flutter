@@ -526,6 +526,8 @@ class _AddMembersSheetState extends State<_AddMembersSheet> {
         final uid = doc.id;
         if (uid == widget.currentUserId) continue;
         if (data['isGhostMode'] == true) continue;
+        // Business/storefront identities can't be added to groups (search-only).
+        if (data['isBusiness'] == true) continue;
         if (widget.existingIds.contains(uid)) continue;
         final photos = (data['photoUrls'] as List?)?.cast<String>() ?? const [];
         final langs = (data['languages'] as List?)?.cast<String>() ?? const [];

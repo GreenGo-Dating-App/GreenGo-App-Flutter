@@ -1493,6 +1493,7 @@
   "communitiesLanguages": "Languages",
   "communitiesLanguagesLabel": "Languages",
   "communitiesLeaveCommunity": "Leave Community",
+  "communitiesBusinessCannotJoin": "Business accounts cannot join communities. Switch off business mode to join.",
   "communitiesDeleteCommunity": "Delete Community",
   "communitiesDeleteConfirm": "Permanently delete \"{name}\"? All messages, members and content are removed. This cannot be undone.",
   "@communitiesDeleteConfirm": {
@@ -3368,6 +3369,8 @@
   "messages": "Exchanges",
   "messagesTabMessages": "Messages",
   "messagesTabGroups": "Groups",
+  "messagesTabBusiness": "Business",
+  "messagesBusinessEmpty": "No storefront inquiries yet",
   "minutes": "Minutes",
   "moreAchievements": "+{count} more achievements",
   "@moreAchievements": {

@@ -276,6 +276,7 @@ abstract class ChatRemoteDataSource {
   Future<ConversationModel> getOrCreateSearchConversation({
     required String currentUserId,
     required String otherUserId,
+    bool businessInquiry,
   });
 
   /// Toggle favorite status for a conversation
@@ -2003,6 +2004,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
   Future<ConversationModel> getOrCreateSearchConversation({
     required String currentUserId,
     required String otherUserId,
+    bool businessInquiry = false,
   }) async {
     try {
       // Generate synthetic matchId for search conversations
@@ -2017,7 +2019,15 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .get();
 
       if (querySnapshot.docs.isNotEmpty) {
-        return ConversationModel.fromFirestore(querySnapshot.docs.first);
+        final existing =
+            ConversationModel.fromFirestore(querySnapshot.docs.first);
+        // Stamp the business-inquiry flag on an existing conversation the first
+        // time it's opened via a storefront (so it moves to the Business tab).
+        if (businessInquiry && !existing.businessInquiry) {
+          await querySnapshot.docs.first.reference
+              .set({'businessInquiry': true}, SetOptions(merge: true));
+        }
+        return existing;
       }
 
       // Create new search conversation
@@ -2031,6 +2041,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         createdAt: DateTime.now(),
         unreadCount: 0,
         conversationType: ConversationType.search,
+        businessInquiry: businessInquiry,
       );
 
       await conversationRef.set(newConversation.toFirestore());

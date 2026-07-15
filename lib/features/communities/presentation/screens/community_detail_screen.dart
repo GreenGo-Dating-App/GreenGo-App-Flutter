@@ -1073,6 +1073,18 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     final userId = _currentUserId;
     if (userId == null) return;
 
+    // Business/storefront identities are commerce-only: they can be searched
+    // and browsed but never JOIN a community (only the personal identity can).
+    if (_isBusiness) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.communitiesBusinessCannotJoin),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
+
     if (_community.isPublic) {
       context.read<CommunitiesBloc>().add(
             JoinCommunity(

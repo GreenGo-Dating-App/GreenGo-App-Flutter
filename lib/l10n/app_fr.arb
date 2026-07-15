@@ -956,6 +956,7 @@
   "communitiesLanguages": "Langues",
   "communitiesLanguagesLabel": "Langues",
   "communitiesLeaveCommunity": "Quitter la Communaute",
+  "communitiesBusinessCannotJoin": "Les comptes professionnels ne peuvent pas rejoindre de communautes. Desactivez le mode business pour rejoindre.",
   "communitiesDeleteCommunity": "Supprimer la communaute",
   "communitiesDeleteConfirm": "Supprimer definitivement \"{name}\" ? Tous les messages, membres et contenus sont supprimes. Action irreversible.",
   "@communitiesDeleteConfirm": {
@@ -2040,6 +2041,8 @@
   "messages": "Echanges",
   "messagesTabMessages": "Messages",
   "messagesTabGroups": "Groupes",
+  "messagesTabBusiness": "Business",
+  "messagesBusinessEmpty": "Aucune demande de vitrine pour le moment",
   "minutes": "Minutes",
   "moreAchievements": "+{count} autres succès",
   "myBadges": "Mes Badges",

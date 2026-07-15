@@ -422,14 +422,6 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 ),
                               ),
                             ],
-                            // "Business" badge for business accounts.
-                            if (widget.profile.isBusiness) ...[
-                              const SizedBox(width: 8),
-                              BusinessBadge(
-                                label: AppLocalizations.of(context)!
-                                    .businessBadgeLabel,
-                              ),
-                            ],
                             const SizedBox(width: 12),
                             Text(
                               '${widget.profile.age}',
@@ -476,6 +468,19 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                             ],
                           ],
                         ),
+
+                        // "Business" flag — on its own line BELOW the prominent
+                        // name + verified badge + age row.
+                        if (widget.profile.isBusiness) ...[
+                          const SizedBox(height: 8),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: BusinessBadge(
+                              label: AppLocalizations.of(context)!
+                                  .businessBadgeLabel,
+                            ),
+                          ),
+                        ],
 
                         // Nickname
                         if (widget.profile.nickname != null) ...[

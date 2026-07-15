@@ -3236,6 +3236,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Quitter la Communaute';
 
   @override
+  String get communitiesBusinessCannotJoin =>
+      'Les comptes professionnels ne peuvent pas rejoindre de communautes. Desactivez le mode business pour rejoindre.';
+
+  @override
   String get communitiesDeleteCommunity => 'Supprimer la communaute';
 
   @override
@@ -6942,6 +6946,13 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get messagesTabGroups => 'Groupes';
+
+  @override
+  String get messagesTabBusiness => 'Business';
+
+  @override
+  String get messagesBusinessEmpty =>
+      'Aucune demande de vitrine pour le moment';
 
   @override
   String get minutes => 'Minutes';

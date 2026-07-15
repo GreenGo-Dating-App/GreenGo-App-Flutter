@@ -45,6 +45,7 @@ class BusinessContactButton extends StatelessWidget {
       currentUserId: currentUserId,
       otherUserId: businessProfile.userId,
       otherUserProfile: businessProfile,
+      businessInquiry: true, // routes to the business owner's Business tab
     );
   }
 
