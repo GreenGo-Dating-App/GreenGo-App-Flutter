@@ -33,6 +33,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     on<UpdateCommunity>(_onUpdateCommunity);
     on<JoinCommunity>(_onJoinCommunity);
     on<LeaveCommunity>(_onLeaveCommunity);
+    on<DeleteCommunity>(_onDeleteCommunity);
     on<SendCommunityMessage>(_onSendMessage);
     on<SubscribeToCommunityMessages>(_onSubscribeToMessages);
     on<CommunityMessagesUpdated>(_onMessagesUpdated);
@@ -270,6 +271,18 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     result.fold(
       (failure) => emit(CommunitiesError(message: failure.message)),
       (_) => emit(CommunityLeft(communityId: event.communityId)),
+    );
+  }
+
+  Future<void> _onDeleteCommunity(
+    DeleteCommunity event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final result =
+        await _repository.deleteCommunity(event.communityId);
+    result.fold(
+      (failure) => emit(CommunitiesError(message: failure.message)),
+      (_) => emit(CommunityDeleted(communityId: event.communityId)),
     );
   }
 

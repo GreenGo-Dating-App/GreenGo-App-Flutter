@@ -953,6 +953,16 @@
   "communitiesLanguages": "Langues",
   "communitiesLanguagesLabel": "Langues",
   "communitiesLeaveCommunity": "Quitter la Communaute",
+  "communitiesDeleteCommunity": "Supprimer la communaute",
+  "communitiesDeleteConfirm": "Supprimer definitivement \"{name}\" ? Tous les messages, membres et contenus sont supprimes. Action irreversible.",
+  "@communitiesDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communitiesDeletedSuccess": "Communaute supprimee",
   "communitiesLeaveConfirm": "Etes-vous sur de vouloir quitter \"{name}\" ?",
   "communitiesLeaveLabel": "Quitter",
   "communitiesLeaveTitle": "Quitter la Communaute",
@@ -3184,9 +3194,10 @@
   "priorityConnectPending": "En attente d'approbation",
   "membershipTrialTitle": "Commencez votre essai gratuit !",
   "membershipTrialSubtitle": "7 jours gratuits, puis renouvellement annuel",
-  "membershipTrialFeature1": "Swipes et connexions illimités",
-  "membershipTrialFeature2": "500 pièces bonus à l'activation",
-  "membershipTrialFeature3": "Accès complet à toutes les fonctionnalités",
+  "membershipTrialFeature1": "Creez communautes, evenements et groupes illimites",
+  "membershipTrialFeature2": "Sans publicite — aucune annonce",
+  "membershipTrialFeature3": "500 pieces bonus + acces complet a tout",
+  "membershipHaveCoupon": "Vous avez un code promo ?",
   "membershipTrialCta": "Démarrer l'essai de 7 jours",
   "membershipTrialFooter": "Annulez à tout moment pendant l'essai. Aucun frais avant le jour 8.",
   "membershipTrialBadge": "GRATUIT PENDANT 7 JOURS",

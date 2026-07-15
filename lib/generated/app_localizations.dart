@@ -5729,6 +5729,24 @@ abstract class AppLocalizations {
   /// **'Leave Community'**
   String get communitiesLeaveCommunity;
 
+  /// No description provided for @communitiesDeleteCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Community'**
+  String get communitiesDeleteCommunity;
+
+  /// No description provided for @communitiesDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Permanently delete \"{name}\"? All messages, members and content are removed. This cannot be undone.'**
+  String communitiesDeleteConfirm(String name);
+
+  /// No description provided for @communitiesDeletedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Community deleted'**
+  String get communitiesDeletedSuccess;
+
   /// No description provided for @communitiesLeaveConfirm.
   ///
   /// In en, this message translates to:
@@ -19239,20 +19257,26 @@ abstract class AppLocalizations {
   /// No description provided for @membershipTrialFeature1.
   ///
   /// In en, this message translates to:
-  /// **'Unlimited Swipes & Connections'**
+  /// **'Create unlimited communities, events & groups'**
   String get membershipTrialFeature1;
 
   /// No description provided for @membershipTrialFeature2.
   ///
   /// In en, this message translates to:
-  /// **'500 Bonus Coins on Activation'**
+  /// **'Ad-free experience — no advertisements'**
   String get membershipTrialFeature2;
 
   /// No description provided for @membershipTrialFeature3.
   ///
   /// In en, this message translates to:
-  /// **'Full Access to All Features'**
+  /// **'500 bonus coins + full access to every feature'**
   String get membershipTrialFeature3;
+
+  /// No description provided for @membershipHaveCoupon.
+  ///
+  /// In en, this message translates to:
+  /// **'Have a coupon code?'**
+  String get membershipHaveCoupon;
 
   /// No description provided for @membershipTrialCta.
   ///

@@ -3213,6 +3213,17 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Sair da Comunidade';
 
   @override
+  String get communitiesDeleteCommunity => 'Eliminar comunidade';
+
+  @override
+  String communitiesDeleteConfirm(String name) {
+    return 'Eliminar \"$name\" permanentemente? Todas as mensagens, membros e conteudo sao removidos. Isto nao pode ser anulado.';
+  }
+
+  @override
+  String get communitiesDeletedSuccess => 'Comunidade eliminada';
+
+  @override
   String communitiesLeaveConfirm(String name) {
     return 'Tens a certeza de que queres sair de \"$name\"?';
   }
@@ -10898,14 +10909,19 @@ class AppLocalizationsPt extends AppLocalizations {
       '7 dias grátis, depois renova anualmente';
 
   @override
-  String get membershipTrialFeature1 => 'Swipes e conexões ilimitadas';
+  String get membershipTrialFeature1 =>
+      'Crie comunidades, eventos e grupos ilimitados';
 
   @override
-  String get membershipTrialFeature2 => '500 moedas bónus na ativação';
+  String get membershipTrialFeature2 =>
+      'Sem anuncios — experiencia sem publicidade';
 
   @override
   String get membershipTrialFeature3 =>
-      'Acesso total a todas as funcionalidades';
+      '500 moedas bonus + acesso total a tudo';
+
+  @override
+  String get membershipHaveCoupon => 'Tem um codigo de cupao?';
 
   @override
   String get membershipTrialCta => 'Iniciar teste de 7 dias';
@@ -16181,6 +16197,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get communitiesLeaveCommunity => 'Sair da Comunidade';
+
+  @override
+  String get communitiesDeleteCommunity => 'Excluir comunidade';
+
+  @override
+  String communitiesDeleteConfirm(String name) {
+    return 'Excluir \"$name\" permanentemente? Todas as mensagens, membros e conteudo sao removidos. Isso nao pode ser desfeito.';
+  }
+
+  @override
+  String get communitiesDeletedSuccess => 'Comunidade excluida';
 
   @override
   String communitiesLeaveConfirm(String name) {
@@ -23866,14 +23893,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       '7 dias grátis, depois renova anualmente';
 
   @override
-  String get membershipTrialFeature1 => 'Swipes e conexões ilimitadas';
+  String get membershipTrialFeature1 =>
+      'Crie comunidades, eventos e grupos ilimitados';
 
   @override
-  String get membershipTrialFeature2 => '500 moedas bônus na ativação';
+  String get membershipTrialFeature2 =>
+      'Sem anuncios — experiencia sem publicidade';
 
   @override
   String get membershipTrialFeature3 =>
-      'Acesso completo a todas as funcionalidades';
+      '500 moedas bonus + acesso total a tudo';
+
+  @override
+  String get membershipHaveCoupon => 'Tem um codigo de cupom?';
 
   @override
   String get membershipTrialCta => 'Iniciar teste de 7 dias';

@@ -1201,6 +1201,16 @@
   "communitiesLanguages": "Lingue",
   "communitiesLanguagesLabel": "Lingue",
   "communitiesLeaveCommunity": "Lascia la Comunita",
+  "communitiesDeleteCommunity": "Elimina community",
+  "communitiesDeleteConfirm": "Eliminare definitivamente \"{name}\"? Tutti i messaggi, i membri e i contenuti verranno rimossi. Operazione irreversibile.",
+  "@communitiesDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communitiesDeletedSuccess": "Community eliminata",
   "communitiesLeaveConfirm": "Sei sicuro di voler lasciare \"{name}\"?",
   "communitiesLeaveLabel": "Lascia",
   "communitiesLeaveTitle": "Lascia la Comunita",
@@ -3673,9 +3683,10 @@
   "preferenceShowMyNetworkDesc": "Mostra solo le persone della tua rete.",
   "membershipTrialTitle": "Inizia la tua prova gratuita!",
   "membershipTrialSubtitle": "7 giorni gratis, poi rinnovo annuale",
-  "membershipTrialFeature1": "Swipe e connessioni illimitati",
-  "membershipTrialFeature2": "500 monete bonus all'attivazione",
-  "membershipTrialFeature3": "Accesso completo a tutte le funzionalità",
+  "membershipTrialFeature1": "Crea community, eventi e gruppi illimitati",
+  "membershipTrialFeature2": "Senza pubblicita — nessun annuncio",
+  "membershipTrialFeature3": "500 monete bonus + accesso completo a tutto",
+  "membershipHaveCoupon": "Hai un codice coupon?",
   "membershipTrialCta": "Inizia la prova di 7 giorni",
   "membershipTrialFooter": "Cancella in qualsiasi momento durante la prova. Nessun addebito fino al giorno 8.",
   "membershipTrialBadge": "GRATIS PER 7 GIORNI",

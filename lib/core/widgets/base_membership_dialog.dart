@@ -12,6 +12,8 @@ import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import '../../features/coins/presentation/bloc/coin_bloc.dart';
 import '../../features/coins/presentation/bloc/coin_event.dart';
 import '../../features/coins/presentation/widgets/web_checkout_dialog.dart';
+import '../../features/membership/domain/entities/membership.dart';
+import '../../features/membership/presentation/widgets/coupon_code_widget.dart';
 import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
 import '../../generated/app_localizations.dart';
@@ -458,6 +460,31 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   }
 
   // ── Helper: feature row ──────────────────────────────────────────────
+  /// Opens the shared coupon redeemer in a bottom sheet.
+  void _openCouponSheet() {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (sheetContext) => Padding(
+        padding: EdgeInsets.only(
+          bottom: MediaQuery.of(sheetContext).viewInsets.bottom,
+          left: 16,
+          right: 16,
+          top: 16,
+        ),
+        child: CouponCodeWidget(
+          userId: widget.userId,
+          currentTier: MembershipTier.free,
+          onRedemptionSuccess: () {
+            Navigator.of(sheetContext).pop();
+            if (mounted) Navigator.of(context).pop();
+          },
+        ),
+      ),
+    );
+  }
+
   Widget _featureRow(IconData icon, String text) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
@@ -659,10 +686,24 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                           const SizedBox(height: 20),
                           // Feature list
                           if (!widget.isExtending) ...[
-                            _featureRow(Icons.all_inclusive, l10n.membershipTrialFeature1),
-                            _featureRow(Icons.monetization_on_outlined, l10n.membershipTrialFeature2),
+                            _featureRow(Icons.groups_outlined, l10n.membershipTrialFeature1),
+                            _featureRow(Icons.block_outlined, l10n.membershipTrialFeature2),
                             _featureRow(Icons.verified_outlined, l10n.membershipTrialFeature3),
-                            const SizedBox(height: 20),
+                            const SizedBox(height: 12),
+                            // Coupon entry — opens the shared CouponCodeWidget.
+                            Center(
+                              child: TextButton.icon(
+                                onPressed: _openCouponSheet,
+                                icon: const Icon(Icons.local_offer_outlined,
+                                    size: 16, color: AppColors.richGold),
+                                label: Text(
+                                  l10n.membershipHaveCoupon,
+                                  style: const TextStyle(
+                                      color: AppColors.richGold, fontSize: 13),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 8),
                           ],
                           // Yearly price badge
                           Container(
