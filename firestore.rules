@@ -951,6 +951,16 @@ service cloud.firestore {
           myMemberDoc().data.get('isBanned', false) == false &&
           myMemberDoc().data.get('isMuted', false) == false;
       }
+      // Tips (language/cultural/city) and Announcements may be posted by mods or
+      // admin-designated writers only (canWriteTips / canWriteAnnouncements).
+      function canWriteTips() {
+        return isCommunityMod() ||
+          (isMemberOf() && myMemberDoc().data.get('canWriteTips', false) == true);
+      }
+      function canWriteAnnouncements() {
+        return isCommunityMod() ||
+          (isMemberOf() && myMemberDoc().data.get('canWriteAnnouncements', false) == true);
+      }
       function onlyDenormChanged() {
         // Fields any member's action legitimately touches on the community doc:
         // the join/leave counter and the last-message denormalization written by
@@ -983,13 +993,17 @@ service cloud.firestore {
         allow delete: if isCommunityMod() || (isSignedIn() && userId == request.auth.uid);
       }
 
-      // Messages: announcements = owner/admin only; other types = any member
-      // who isn't muted/banned.
+      // Messages: announcements = mod OR designated announcement-writer; tips
+      // (language/cultural/city) = mod OR designated tip-writer (and not muted);
+      // plain chat (text/image/…) = any member who isn't muted/banned.
       match /messages/{messageId} {
         allow read: if isSignedIn();
         allow create: if isSignedIn() && (
-          (request.resource.data.type == 'announcement' && isCommunityMod()) ||
-          (request.resource.data.type != 'announcement' && canPostChat())
+          (request.resource.data.type == 'announcement' && canWriteAnnouncements()) ||
+          (request.resource.data.type in ['language_tip', 'cultural_fact', 'city_tip']
+              && canWriteTips() && canPostChat()) ||
+          (!(request.resource.data.type in ['announcement', 'language_tip', 'cultural_fact', 'city_tip'])
+              && canPostChat())
         );
         allow update, delete: if isCommunityMod();
       }

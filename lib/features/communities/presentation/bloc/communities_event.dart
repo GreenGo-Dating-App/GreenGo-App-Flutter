@@ -169,7 +169,8 @@ class RejectJoinRequest extends CommunitiesEvent {
   final String userId;
 }
 
-/// Moderation action on a member (promote/demote/remove/mute/unmute/ban).
+/// Moderation action on a member (promote/demote/remove/mute/unmute/ban +
+/// granular tip/announcement writer grants).
 enum MemberModerationAction {
   promoteToAdmin,
   demoteToMember,
@@ -177,6 +178,10 @@ enum MemberModerationAction {
   mute,
   unmute,
   ban,
+  grantTips,
+  revokeTips,
+  grantAnnouncements,
+  revokeAnnouncements,
 }
 
 /// Apply a moderation action to a member, then refresh the members list.

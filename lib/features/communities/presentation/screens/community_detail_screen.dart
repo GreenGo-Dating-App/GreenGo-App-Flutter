@@ -63,6 +63,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   // Current user's role within THIS community (derived from the members list).
   CommunityRole? _myRole;
   bool _isMuted = false;
+  // Granular writer permissions for the current user (admin-designated).
+  bool _canWriteTips = false;
+  bool _canWriteAnnouncements = false;
 
   // One-shot guard so we load pending join requests only once (dispatching on
   // every CommunityDetailLoaded would loop, since the load re-emits that state).
@@ -190,6 +193,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                 _isMember = me != null;
                 _myRole = me?.role;
                 _isMuted = me?.isMuted ?? false;
+                _canWriteTips = me?.mayWriteTips ?? false;
+                _canWriteAnnouncements = me?.mayWriteAnnouncements ?? false;
               });
               // Owners/admins: load pending join requests ONCE (guarded so the
               // re-emit from the load doesn't loop the listener).
@@ -466,8 +471,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   ),
                 ),
         ),
-        // Any member can add tips (as many as they want).
-        if (_isMember) _buildAddTipBar(),
+        // Only admins/owners or admin-designated tip-writers can add tips.
+        if (_isMember && _canWriteTips) _buildAddTipBar(),
       ],
     );
   }
@@ -527,11 +532,10 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   }
 
   Future<void> _addTip() async {
-    final isLocalGuideCommunity =
-        _community.type == CommunityType.localGuides;
-    final canPostCityTip = isLocalGuideCommunity && _isLocalGuide;
-    final result = await TipComposerSheet.show(context,
-        allowCityTip: canPostCityTip);
+    // City tips are available to any permitted tip-writer (admins/owners or
+    // admin-designated writers) — the whole tip composer is already gated to
+    // that group, so no separate local-guide restriction is needed.
+    final result = await TipComposerSheet.show(context, allowCityTip: true);
     if (result == null || result.text.trim().isEmpty || !mounted) return;
     final userId = _currentUserId;
     if (userId == null) return;
@@ -572,7 +576,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   ),
                 ),
         ),
-        if (_isModerator) _buildAnnounceComposerBar(),
+        if (_canWriteAnnouncements) _buildAnnounceComposerBar(),
       ],
     );
   }

@@ -83,6 +83,24 @@ Future<void> showMemberModerationSheet(
             else
               tile(Icons.volume_off, l10n.communitiesMuteMember,
                   () => act(MemberModerationAction.mute)),
+            // Granular writer grants — only meaningful for non-admin members
+            // (admins/owners can always post tips & announcements).
+            if (!member.isAdminOrOwner) ...[
+              if (member.canWriteTips)
+                tile(Icons.lightbulb, l10n.communitiesRevokeTips,
+                    () => act(MemberModerationAction.revokeTips),
+                    color: AppColors.textSecondary)
+              else
+                tile(Icons.lightbulb_outline, l10n.communitiesGrantTips,
+                    () => act(MemberModerationAction.grantTips)),
+              if (member.canWriteAnnouncements)
+                tile(Icons.campaign, l10n.communitiesRevokeAnnouncements,
+                    () => act(MemberModerationAction.revokeAnnouncements),
+                    color: AppColors.textSecondary)
+              else
+                tile(Icons.campaign_outlined, l10n.communitiesGrantAnnouncements,
+                    () => act(MemberModerationAction.grantAnnouncements)),
+            ],
             tile(Icons.person_remove_outlined, l10n.communitiesRemoveMember,
                 () => act(MemberModerationAction.remove),
                 color: AppColors.warningAmber),

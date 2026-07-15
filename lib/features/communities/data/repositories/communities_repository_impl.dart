@@ -236,6 +236,8 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
     required String userId,
     bool? isMuted,
     bool? isBanned,
+    bool? canWriteTips,
+    bool? canWriteAnnouncements,
   }) async {
     try {
       await remoteDataSource.updateMemberModeration(
@@ -243,6 +245,8 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
         userId: userId,
         isMuted: isMuted,
         isBanned: isBanned,
+        canWriteTips: canWriteTips,
+        canWriteAnnouncements: canWriteAnnouncements,
       );
       return const Right(null);
     } catch (e) {

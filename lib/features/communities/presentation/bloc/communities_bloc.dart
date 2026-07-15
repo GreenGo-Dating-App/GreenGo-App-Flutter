@@ -456,6 +456,34 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           userId: event.userId,
         );
         break;
+      case MemberModerationAction.grantTips:
+        result = await _repository.updateMemberModeration(
+          communityId: event.communityId,
+          userId: event.userId,
+          canWriteTips: true,
+        );
+        break;
+      case MemberModerationAction.revokeTips:
+        result = await _repository.updateMemberModeration(
+          communityId: event.communityId,
+          userId: event.userId,
+          canWriteTips: false,
+        );
+        break;
+      case MemberModerationAction.grantAnnouncements:
+        result = await _repository.updateMemberModeration(
+          communityId: event.communityId,
+          userId: event.userId,
+          canWriteAnnouncements: true,
+        );
+        break;
+      case MemberModerationAction.revokeAnnouncements:
+        result = await _repository.updateMemberModeration(
+          communityId: event.communityId,
+          userId: event.userId,
+          canWriteAnnouncements: false,
+        );
+        break;
     }
 
     await result.fold(

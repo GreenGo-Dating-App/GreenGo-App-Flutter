@@ -8,9 +8,14 @@ import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/group_chat_screen.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
+import '../../../communities/domain/repositories/communities_repository.dart';
+import '../../../communities/presentation/bloc/communities_bloc.dart';
+import '../../../communities/presentation/screens/community_detail_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../domain/entities/notification.dart';
 import '../bloc/notifications_bloc.dart';
 import '../bloc/notifications_event.dart';
@@ -244,10 +249,14 @@ class NotificationsScreen extends StatelessWidget {
     // `matchedUserId`; both were previously unrouted → dead taps.)
     if (action == 'profile' ||
         action == 'profile_view' ||
+        action == 'open_profile' ||
         type == NotificationType.profileView ||
         type == NotificationType.newLike ||
         type == NotificationType.superLike ||
-        type == NotificationType.newMatch) {
+        type == NotificationType.newMatch ||
+        type == NotificationType.businessFollow ||
+        type == NotificationType.businessRating ||
+        type == NotificationType.qrScanned) {
       final actor = notification.actorId;
       final profileId = (actor != null && actor.isNotEmpty)
           ? actor
@@ -280,9 +289,23 @@ class NotificationsScreen extends StatelessWidget {
       return;
     }
 
-    // Community / group chat.
-    final groupId = pick(['groupId', 'communityId']);
-    if (action == 'group' || action == 'community' || groupId != null) {
+    // COMMUNITY — must be checked BEFORE group. A community notification carries
+    // `communityId` (+ action open_community/community/community_join/…). It was
+    // previously lumped into the group branch (communityId used as a groupId),
+    // which opened a bogus "unknown group" instead of the community.
+    final communityId = pick(['communityId']);
+    if (action == 'community' ||
+        action == 'open_community' ||
+        communityId != null) {
+      if (communityId != null) {
+        _openCommunity(context, communityId);
+      }
+      return;
+    }
+
+    // GROUP chat — only a genuine group (groupId / group action).
+    final groupId = pick(['groupId']);
+    if (action == 'group' || action == 'open_group' || groupId != null) {
       if (groupId != null) {
         Navigator.of(context).push(
           GroupChatScreen.route(
@@ -304,6 +327,16 @@ class NotificationsScreen extends StatelessWidget {
         currentUserId: userId,
         otherUserId: otherUserId,
       );
+      return;
+    }
+
+    // Actor-attributed fallback: any remaining notification that carries an
+    // actor (or a profileId) but no specific target → open that person's profile.
+    // Catches actor-based types whose action/keys weren't matched above.
+    final actorFallback =
+        notification.actorId ?? pick(['profileId', 'actorId']);
+    if (actorFallback != null && actorFallback != userId) {
+      _openProfile(context, actorFallback);
       return;
     }
 
@@ -350,6 +383,33 @@ class NotificationsScreen extends StatelessWidget {
     if (confirmed == true) {
       bloc.add(NotificationsUnreadCleared(userId));
     }
+  }
+
+  /// Loads a community by id then opens [CommunityDetailScreen] (wrapped with its
+  /// blocs). Silent on failure.
+  Future<void> _openCommunity(
+      BuildContext context, String communityId) async {
+    final navigator = Navigator.of(context);
+    final result =
+        await di.sl<CommunitiesRepository>().getCommunityById(communityId);
+    final community = result.fold((_) => null, (c) => c);
+    if (community == null) return;
+    await navigator.push(
+      MaterialPageRoute<void>(
+        builder: (_) => MultiBlocProvider(
+          providers: [
+            BlocProvider<CommunitiesBloc>(
+              create: (_) => di.sl<CommunitiesBloc>(),
+            ),
+            BlocProvider<ProfileBloc>(
+              create: (_) => di.sl<ProfileBloc>()
+                ..add(ProfileLoadRequested(userId: userId)),
+            ),
+          ],
+          child: CommunityDetailScreen(community: community),
+        ),
+      ),
+    );
   }
 
   /// Loads a profile then opens [ProfileDetailScreen]. Silent on failure.

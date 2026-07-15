@@ -12858,6 +12858,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesPromoteMember => 'Promover a administrador';
 
   @override
+  String get communitiesGrantTips => 'Permitir publicar Dicas';
+
+  @override
+  String get communitiesRevokeTips => 'Revogar publicacao de Dicas';
+
+  @override
+  String get communitiesGrantAnnouncements => 'Permitir publicar Anuncios';
+
+  @override
+  String get communitiesRevokeAnnouncements => 'Revogar publicacao de Anuncios';
+
+  @override
   String get communitiesDemoteMember => 'Rebaixar a membro';
 
   @override
@@ -25791,6 +25803,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get communitiesPromoteMember => 'Promover a administrador';
+
+  @override
+  String get communitiesGrantTips => 'Permitir publicar Dicas';
+
+  @override
+  String get communitiesRevokeTips => 'Revogar publicacao de Dicas';
+
+  @override
+  String get communitiesGrantAnnouncements => 'Permitir publicar Anuncios';
+
+  @override
+  String get communitiesRevokeAnnouncements => 'Revogar publicacao de Anuncios';
 
   @override
   String get communitiesDemoteMember => 'Rebaixar a membro';

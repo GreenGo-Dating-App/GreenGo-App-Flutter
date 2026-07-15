@@ -706,9 +706,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ..sort((a, b) => a.id.compareTo(b.id));
     addEvents(_rotateSponsored(sponsored));
 
-    // Tier 2 (per spec) — when short of 3 featured, FILL with LIVE EVENTS OF THE
-    // DAY (external Ticketmaster dated today) BEFORE plain community events, so
-    // the Featured carousel always reaches 3 with live content first.
+    // Tier 2 (per spec) — when short of 3 boosted, FILL with RANDOM other
+    // community events (today/future; de-duped against the boosted picks) so the
+    // carousel rotates fairly through the community BEFORE any live content.
+    if (picked.length < 3) {
+      final others = community.where((e) => !e.isCurrentlyFeatured).toList()
+        ..shuffle();
+      addEvents(others);
+    }
+
+    // Tier 3 (per spec) — still short of 3 → FILL with LIVE events (external
+    // Ticketmaster) happening TODAY or in the FUTURE, lightly shuffled.
     if (picked.length < 3) {
       List<ExternalEvent> live = const <ExternalEvent>[];
       final ds = ExternalEventsDataSource(firestore: _firestore);
@@ -727,21 +735,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
       } catch (_) {
         live = const <ExternalEvent>[];
       }
-      final liveToday = live
-          .where((e) => e.startDate == todayStr)
+      final liveUpcoming = live
+          // today or future only (yyyy-MM-dd compares lexicographically;
+          // a null/empty date sorts below todayStr → excluded)
+          .where((e) => (e.startDate ?? '').compareTo(todayStr) >= 0)
           .map((e) => _Happening.external(e))
           .where(_hasImage)
           .toList()
         ..shuffle();
-      addAll(liveToday);
-    }
-
-    // Tier 3 — FILL with RANDOM other community events (de-duped against the
-    // sponsored + live picks) so the carousel rotates through the community.
-    if (picked.length < 3) {
-      final others = community.where((e) => !e.isCurrentlyFeatured).toList()
-        ..shuffle();
-      addEvents(others);
+      addAll(liveUpcoming);
     }
 
     // Deep native safety nets below — only reached if community AND live-of-day
