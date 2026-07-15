@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -18,6 +19,11 @@ import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/widgets/settings_accordion.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../admin/data/datasources/verification_admin_remote_data_source.dart';
 import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
 import '../../../admin/presentation/bloc/verification_admin_bloc.dart';
@@ -95,7 +101,25 @@ class EditProfileScreen extends StatelessWidget {
             SafeNavigation.navigateToHome(context, userId ?? '');
           }
         },
-        child: Scaffold(
+        child: ShowCaseWidget(
+          builder: (showcaseContext) => TourTrigger(
+            // First-time profile tour: profile hub, view-profile, edit section.
+            onVisible: (tourContext) {
+              final tourUserId =
+                  userId ?? FirebaseAuth.instance.currentUser?.uid;
+              if (tourUserId == null) return;
+              TourController.instance.maybeStartMiniTour(
+                tourContext,
+                tourId: TourController.profileTourId,
+                userId: tourUserId,
+                keys: [
+                  TourKeys.profileHub,
+                  TourKeys.profileViewCard,
+                  TourKeys.profileEditAccordion,
+                ],
+              );
+            },
+            child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -225,14 +249,21 @@ class EditProfileScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Flexible(
-                          child: Text(
-                            activeProfile.displayName,
-                            style: const TextStyle(
-                              color: AppColors.textPrimary,
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
+                          child: TourShowcase(
+                            showcaseKey: TourKeys.profileHub,
+                            title: AppLocalizations.of(context)!
+                                .tourProfileHubTitle,
+                            description: AppLocalizations.of(context)!
+                                .tourProfileHubDesc,
+                            child: Text(
+                              activeProfile.displayName,
+                              style: const TextStyle(
+                                color: AppColors.textPrimary,
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              overflow: TextOverflow.ellipsis,
                             ),
-                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                         if (activeProfile.membershipTier != MembershipTier.free) ...[
@@ -258,11 +289,21 @@ class EditProfileScreen extends StatelessWidget {
                   // View My Profile Section (top)
                   Container(
                     margin: const EdgeInsets.only(bottom: 24),
-                    child: EditSectionCard(
-                      title: AppLocalizations.of(context)!.viewMyProfile,
-                      subtitle: AppLocalizations.of(context)!.seeHowOthersViewProfile,
-                      icon: Icons.visibility,
-                      onTap: () => _navigateToViewProfile(context, activeProfile),
+                    child: TourShowcase(
+                      showcaseKey: TourKeys.profileViewCard,
+                      title:
+                          AppLocalizations.of(context)!.tourProfileViewTitle,
+                      description:
+                          AppLocalizations.of(context)!.tourProfileViewDesc,
+                      gesture: TourGesture.tap,
+                      child: EditSectionCard(
+                        title: AppLocalizations.of(context)!.viewMyProfile,
+                        subtitle:
+                            AppLocalizations.of(context)!.seeHowOthersViewProfile,
+                        icon: Icons.visibility,
+                        onTap: () =>
+                            _navigateToViewProfile(context, activeProfile),
+                      ),
                     ),
                   ),
 
@@ -272,7 +313,13 @@ class EditProfileScreen extends StatelessWidget {
                   // profile. Location & Languages remain editable in the
                   // storefront editor. Reappears if the account reverts to personal.
                   if (!activeProfile.isBusiness)
-                  SettingsAccordion(
+                  TourShowcase(
+                    showcaseKey: TourKeys.profileEditAccordion,
+                    title: AppLocalizations.of(context)!.tourProfileEditTitle,
+                    description:
+                        AppLocalizations.of(context)!.tourProfileEditDesc,
+                    gesture: TourGesture.tap,
+                    child: SettingsAccordion(
                     title: AppLocalizations.of(context)!.editProfile,
                     icon: Icons.person_outline,
                     children: [
@@ -356,6 +403,7 @@ class EditProfileScreen extends StatelessWidget {
                       // which opens the Business hub (or the become-a-business
                       // flow for non-business accounts).
                     ],
+                  ),
                   ),
 
                   // ── Account & Settings ──
@@ -599,6 +647,8 @@ class EditProfileScreen extends StatelessWidget {
           },
         ),
       ),
+          ),
+        ),
       );
     }
 

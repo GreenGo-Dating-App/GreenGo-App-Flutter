@@ -13066,4 +13066,80 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get communitiesTipHint => 'Partagez une astuce utile…';
+
+  @override
+  String get tourCommunitiesTabsTitle => 'Trois facons d\'explorer';
+
+  @override
+  String get tourCommunitiesTabsDesc =>
+      'Basculez entre vos groupes, decouvrez-en de nouveaux et gerez les communautes que vous avez creees.';
+
+  @override
+  String get tourCommunitiesCreateTitle => 'Creer une communaute';
+
+  @override
+  String get tourCommunitiesCreateDesc =>
+      'Touchez ici pour creer votre propre communaute et rassembler les gens.';
+
+  @override
+  String get tourEventsCreateTitle => 'Creer un evenement';
+
+  @override
+  String get tourEventsCreateDesc =>
+      'Touchez le plus pour organiser votre propre evenement ou rencontre.';
+
+  @override
+  String get tourEventsSearchTitle => 'Rechercher des evenements';
+
+  @override
+  String get tourEventsSearchDesc =>
+      'Trouvez des evenements par ville, pays ou nom, et triez-les a votre facon.';
+
+  @override
+  String get tourEventsTabsTitle => 'Explorez chaque onglet';
+
+  @override
+  String get tourEventsTabsDesc =>
+      'Parcourez les evenements de la communaute, les evenements en direct, les attractions et les experiences pres de vous.';
+
+  @override
+  String get tourProfileHubTitle => 'Votre espace profil';
+
+  @override
+  String get tourProfileHubDesc =>
+      'Tout sur votre compte se trouve ici : modifiez-le, gerez les parametres et debloquez les fonctions premium.';
+
+  @override
+  String get tourProfileViewTitle => 'Apercu de votre profil';
+
+  @override
+  String get tourProfileViewDesc =>
+      'Voyez exactement comment les autres voient votre profil.';
+
+  @override
+  String get tourProfileEditTitle => 'Modifier vos infos';
+
+  @override
+  String get tourProfileEditDesc =>
+      'Touchez pour mettre a jour vos photos, bio, centres d\'interet, lieu et plus.';
+
+  @override
+  String get tourNotifHubTitle => 'Vos notifications';
+
+  @override
+  String get tourNotifHubDesc =>
+      'Chaque like, match, message et mise a jour d\'evenement arrive ici.';
+
+  @override
+  String get tourNotifOpenTitle => 'Ouvrir et gerer';
+
+  @override
+  String get tourNotifOpenDesc =>
+      'Touchez une notification pour l\'ouvrir, ou glissez vers la gauche pour la supprimer.';
+
+  @override
+  String get tourNotifMarkAllTitle => 'Vider les non lus';
+
+  @override
+  String get tourNotifMarkAllDesc => 'Marquez tout comme lu en un seul geste.';
 }

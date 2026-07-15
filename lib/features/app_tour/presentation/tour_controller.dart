@@ -20,6 +20,12 @@ class TourController {
   static const String profileDetailTourId = 'profile_detail';
   static const String storyTourId = 'story';
 
+  // Tier-2 per-page first-time tours (Phase 5).
+  static const String communitiesTourId = 'communities';
+  static const String eventsTourId = 'events';
+  static const String profileTourId = 'profile';
+  static const String notificationsTourId = 'notifications';
+
   static String _prefKey(String tourId, String userId) =>
       'tour_${tourId}_done_$userId';
 
@@ -156,6 +162,10 @@ class TourController {
       swipeTourId,
       profileDetailTourId,
       storyTourId,
+      communitiesTourId,
+      eventsTourId,
+      profileTourId,
+      notificationsTourId,
     ]) {
       await prefs.remove(_prefKey(id, userId));
     }

@@ -22889,6 +22889,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Share a helpful tip…'**
   String get communitiesTipHint;
+
+  /// No description provided for @tourCommunitiesTabsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Three ways to browse'**
+  String get tourCommunitiesTabsTitle;
+
+  /// No description provided for @tourCommunitiesTabsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch between the groups you joined, discover new ones, and manage the communities you created.'**
+  String get tourCommunitiesTabsDesc;
+
+  /// No description provided for @tourCommunitiesCreateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Start a community'**
+  String get tourCommunitiesCreateTitle;
+
+  /// No description provided for @tourCommunitiesCreateDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap here to create your own community and bring people together.'**
+  String get tourCommunitiesCreateDesc;
+
+  /// No description provided for @tourEventsCreateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create an event'**
+  String get tourEventsCreateTitle;
+
+  /// No description provided for @tourEventsCreateDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the plus to host your own event or meetup.'**
+  String get tourEventsCreateDesc;
+
+  /// No description provided for @tourEventsSearchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search events'**
+  String get tourEventsSearchTitle;
+
+  /// No description provided for @tourEventsSearchDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Find events by city, country or name, and sort them your way.'**
+  String get tourEventsSearchDesc;
+
+  /// No description provided for @tourEventsTabsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore every tab'**
+  String get tourEventsTabsTitle;
+
+  /// No description provided for @tourEventsTabsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse community events, live events, attractions and experiences around you.'**
+  String get tourEventsTabsDesc;
+
+  /// No description provided for @tourProfileHubTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile hub'**
+  String get tourProfileHubTitle;
+
+  /// No description provided for @tourProfileHubDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Everything about your account lives here - edit it, manage settings and unlock premium features.'**
+  String get tourProfileHubDesc;
+
+  /// No description provided for @tourProfileViewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview your profile'**
+  String get tourProfileViewTitle;
+
+  /// No description provided for @tourProfileViewDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'See exactly how other people view your profile.'**
+  String get tourProfileViewDesc;
+
+  /// No description provided for @tourProfileEditTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit your details'**
+  String get tourProfileEditTitle;
+
+  /// No description provided for @tourProfileEditDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to update your photos, bio, interests, location and more.'**
+  String get tourProfileEditDesc;
+
+  /// No description provided for @tourNotifHubTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your notifications'**
+  String get tourNotifHubTitle;
+
+  /// No description provided for @tourNotifHubDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Every like, match, message and event update lands here.'**
+  String get tourNotifHubDesc;
+
+  /// No description provided for @tourNotifOpenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open and manage'**
+  String get tourNotifOpenTitle;
+
+  /// No description provided for @tourNotifOpenDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a notification to open it, or swipe left to delete it.'**
+  String get tourNotifOpenDesc;
+
+  /// No description provided for @tourNotifMarkAllTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear the unread'**
+  String get tourNotifMarkAllTitle;
+
+  /// No description provided for @tourNotifMarkAllDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark everything as read in a single tap.'**
+  String get tourNotifMarkAllDesc;
 }
 
 class _AppLocalizationsDelegate
