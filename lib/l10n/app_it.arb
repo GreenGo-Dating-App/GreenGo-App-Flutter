@@ -1,6 +1,9 @@
 {
   "@@locale": "it",
-  "exploreBusinessesNearYou": "Attività vicino a te",
+  "exploreBusinessesNearYou": "Vetrine vicino a te",
+  "storefrontEnabled": "Vetrina attiva",
+  "storefrontDisabled": "Vetrina disattivata",
+  "storefrontToggleHint": "Attiva o disattiva la tua vetrina quando vuoi",
   "splashBusinessLabel": "BUSINESS",
   "rateThisBusiness": "Valuta questa attività",
   "businessRatingError": "Impossibile salvare la tua valutazione. Riprova.",

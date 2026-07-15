@@ -12612,7 +12612,17 @@ class AppLocalizationsPt extends AppLocalizations {
   String get messageTooLong => 'As mensagens podem ter até 4096 caracteres.';
 
   @override
-  String get exploreBusinessesNearYou => 'Negócios perto de ti';
+  String get exploreBusinessesNearYou => 'Vitrines perto de ti';
+
+  @override
+  String get storefrontEnabled => 'Vitrine ativada';
+
+  @override
+  String get storefrontDisabled => 'Vitrine desativada';
+
+  @override
+  String get storefrontToggleHint =>
+      'Ativa ou desativa a tua vitrine quando quiseres';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
@@ -25598,7 +25608,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get messageTooLong => 'As mensagens podem ter até 4096 caracteres.';
 
   @override
-  String get exploreBusinessesNearYou => 'Negócios perto de você';
+  String get exploreBusinessesNearYou => 'Vitrines perto de voce';
+
+  @override
+  String get storefrontEnabled => 'Vitrine ativada';
+
+  @override
+  String get storefrontDisabled => 'Vitrine desativada';
+
+  @override
+  String get storefrontToggleHint =>
+      'Ative ou desative sua vitrine quando quiser';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
