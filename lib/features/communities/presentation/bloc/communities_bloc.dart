@@ -26,6 +26,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         _remoteDataSource = remoteDataSource,
         super(const CommunitiesInitial()) {
     on<LoadCommunities>(_onLoadCommunities);
+    on<LoadMoreCommunities>(_onLoadMoreCommunities);
     on<LoadUserCommunities>(_onLoadUserCommunities);
     on<LoadRecommendedCommunities>(_onLoadRecommendedCommunities);
     on<LoadCommunityDetail>(_onLoadCommunityDetail);
@@ -46,6 +47,9 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   }
   final CommunitiesRepository _repository;
   final CommunitiesRemoteDataSource _remoteDataSource;
+
+  /// Discover page size (must match the value the datasource pages by).
+  static const int _communitiesPageSize = 50;
 
   StreamSubscription? _messagesSubscription;
 
@@ -70,10 +74,21 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       language: event.language,
       city: event.city,
       searchQuery: event.searchQuery,
+      limit: _communitiesPageSize,
     );
 
     result.fold(
-      (failure) => emit(CommunitiesError(message: failure.message)),
+      (failure) {
+        // A failing Discover query must NOT blank the already-loaded My/Managed
+        // tabs. Keep whatever we have; only surface a hard error on first load
+        // when there is nothing to show at all.
+        debugPrint('LoadCommunities failed: ${failure.message}');
+        if (currentState is CommunitiesLoaded) {
+          emit(currentState);
+        } else {
+          emit(CommunitiesError(message: failure.message));
+        }
+      },
       (communities) {
         // Separate language circles from other communities
         final languageCircles = communities
@@ -85,6 +100,67 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           userCommunities: userCommunities,
           recommended: recommended,
           languageCircles: languageCircles,
+          hasMoreCommunities: communities.length >= _communitiesPageSize,
+          isLoadingMore: false,
+        ));
+      },
+    );
+  }
+
+  /// Endless scroll: fetch the NEXT page of public communities and APPEND it to
+  /// the Discover list without disturbing the other tabs. No-op if there is no
+  /// more data, a page is already in flight, or there is no cursor yet.
+  Future<void> _onLoadMoreCommunities(
+    LoadMoreCommunities event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final currentState = state;
+    if (currentState is! CommunitiesLoaded) return;
+    if (!currentState.hasMoreCommunities || currentState.isLoadingMore) return;
+    if (currentState.communities.isEmpty) return;
+
+    final cursor = currentState.communities.last.lastActivityAt;
+    if (cursor == null) {
+      // Can't paginate without a cursor value; treat as end of list.
+      emit(currentState.copyWith(hasMoreCommunities: false));
+      return;
+    }
+
+    emit(currentState.copyWith(isLoadingMore: true));
+
+    final result = await _repository.getCommunities(
+      type: event.type,
+      language: event.language,
+      city: event.city,
+      searchQuery: event.searchQuery,
+      startAfterActivity: cursor,
+      limit: _communitiesPageSize,
+    );
+
+    result.fold(
+      (failure) {
+        debugPrint('LoadMoreCommunities failed: ${failure.message}');
+        // Keep the list intact; just stop the spinner and allow a retry.
+        final s = state;
+        if (s is CommunitiesLoaded) {
+          emit(s.copyWith(isLoadingMore: false));
+        }
+      },
+      (page) {
+        final s = state;
+        if (s is! CommunitiesLoaded) return;
+        // Dedupe by id in case a boundary item overlaps.
+        final existingIds = s.communities.map((c) => c.id).toSet();
+        final fresh =
+            page.where((c) => !existingIds.contains(c.id)).toList();
+        final merged = [...s.communities, ...fresh];
+        emit(s.copyWith(
+          communities: merged,
+          languageCircles: merged
+              .where((c) => c.type == CommunityType.languageCircle)
+              .toList(),
+          hasMoreCommunities: page.length >= _communitiesPageSize,
+          isLoadingMore: false,
         ));
       },
     );
@@ -112,7 +188,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     final result = await _repository.getUserCommunities(event.userId);
 
     result.fold(
-      (failure) => emit(CommunitiesError(message: failure.message)),
+      // A failing "My Communities" query must not blank Discover/Managed.
+      // Preserve every other slice and just show My as empty.
+      (failure) {
+        debugPrint('LoadUserCommunities failed: ${failure.message}');
+        emit(CommunitiesLoaded(
+          communities: allCommunities,
+          userCommunities: const [],
+          recommended: recommended,
+          languageCircles: languageCircles,
+        ));
+      },
       (userCommunities) {
         emit(CommunitiesLoaded(
           communities: allCommunities,
@@ -146,7 +232,24 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     );
 
     result.fold(
-      (failure) => emit(CommunitiesError(message: failure.message)),
+      // Recommended is the most index-hungry query; a failure here previously
+      // emitted CommunitiesError and blanked ALL tabs (the real "communities
+      // not appearing" bug). Preserve every loaded slice; just show no
+      // recommendations.
+      (failure) {
+        debugPrint('LoadRecommendedCommunities failed: ${failure.message}');
+        final currentState = state;
+        if (currentState is CommunitiesLoaded) {
+          emit(currentState.copyWith(recommended: const []));
+        } else {
+          emit(CommunitiesLoaded(
+            communities: allCommunities,
+            userCommunities: userCommunities,
+            recommended: const [],
+            languageCircles: languageCircles,
+          ));
+        }
+      },
       (recommended) {
         emit(CommunitiesLoaded(
           communities: allCommunities,

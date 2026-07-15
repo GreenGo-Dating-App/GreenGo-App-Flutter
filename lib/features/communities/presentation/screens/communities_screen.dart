@@ -39,6 +39,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   late TabController _tabController;
   CommunityType? _selectedFilter;
   final TextEditingController _searchController = TextEditingController();
+  final ScrollController _discoverScrollController = ScrollController();
   String _searchQuery = '';
   String? _currentUserId;
 
@@ -47,7 +48,23 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
+    _discoverScrollController.addListener(_onDiscoverScroll);
     _loadInitialData();
+  }
+
+  /// Endless scroll for the Discover tab — dispatch the next page when the user
+  /// nears the bottom (guarded in the bloc against duplicate/again fetches).
+  void _onDiscoverScroll() {
+    if (!_discoverScrollController.hasClients) return;
+    final pos = _discoverScrollController.position;
+    if (pos.pixels >= pos.maxScrollExtent - 400) {
+      context.read<CommunitiesBloc>().add(
+            LoadMoreCommunities(
+              type: _selectedFilter,
+              searchQuery: _searchQuery.isEmpty ? null : _searchQuery,
+            ),
+          );
+    }
   }
 
   /// Re-fetch the community lists (after create/join/leave).
@@ -83,6 +100,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   void dispose() {
     _tabController.dispose();
     _searchController.dispose();
+    _discoverScrollController.dispose();
     super.dispose();
   }
 
@@ -298,12 +316,15 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
 
     var communities = <Community>[];
     var recommended = <Community>[];
+    var isLoadingMore = false;
     if (state is CommunitiesLoaded) {
       communities = state.communities;
       recommended = state.recommended;
+      isLoadingMore = state.isLoadingMore;
     }
 
     return CustomScrollView(
+      controller: _discoverScrollController,
       slivers: [
         // Search bar (mirrors the Exchange / Conversations search field)
         SliverToBoxAdapter(
@@ -492,6 +513,24 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                 );
               },
               childCount: communities.length,
+            ),
+          ),
+
+        // Endless-scroll trailing spinner while the next page loads.
+        if (isLoadingMore)
+          const SliverToBoxAdapter(
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 16),
+              child: Center(
+                child: SizedBox(
+                  height: 24,
+                  width: 24,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    color: AppColors.richGold,
+                  ),
+                ),
+              ),
             ),
           ),
 

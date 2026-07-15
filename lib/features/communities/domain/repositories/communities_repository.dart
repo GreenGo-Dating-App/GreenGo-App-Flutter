@@ -14,6 +14,8 @@ abstract class CommunitiesRepository {
     String? language,
     String? city,
     String? searchQuery,
+    DateTime? startAfterActivity,
+    int limit = 50,
   });
 
   /// Get a community by ID
