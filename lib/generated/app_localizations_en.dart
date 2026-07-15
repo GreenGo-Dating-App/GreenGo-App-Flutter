@@ -12850,4 +12850,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get communitiesTipHint => 'Share a helpful tip…';
+
+  @override
+  String get shopEventsCreate => 'Events you can create';
+
+  @override
+  String get shopGroupsCreate => 'Groups & communities you can create';
+
+  @override
+  String get shopDailyConnects => 'Daily new connections';
+
+  @override
+  String get shopMonthlyBoosts => 'Monthly profile boosts';
+
+  @override
+  String get shopMonthlyCoins => 'Monthly coins';
+
+  @override
+  String get shopNoAds => 'Ad-free experience';
+
+  @override
+  String get shopSeeWhoConnected => 'See who connected with you';
+
+  @override
+  String get shopTravelMode => 'Travel mode';
+
+  @override
+  String get shopBusinessAccount => 'Business account';
 }

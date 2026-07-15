@@ -13022,4 +13022,32 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get communitiesTipHint => 'Teile einen hilfreichen Tipp…';
+
+  @override
+  String get shopEventsCreate => 'Events, die du erstellen kannst';
+
+  @override
+  String get shopGroupsCreate =>
+      'Gruppen & Communitys, die du erstellen kannst';
+
+  @override
+  String get shopDailyConnects => 'Taegliche neue Kontakte';
+
+  @override
+  String get shopMonthlyBoosts => 'Monatliche Profil-Boosts';
+
+  @override
+  String get shopMonthlyCoins => 'Monatliche Coins';
+
+  @override
+  String get shopNoAds => 'Werbefrei';
+
+  @override
+  String get shopSeeWhoConnected => 'Sieh, wer sich mit dir verbunden hat';
+
+  @override
+  String get shopTravelMode => 'Reisemodus';
+
+  @override
+  String get shopBusinessAccount => 'Business-Konto';
 }

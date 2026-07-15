@@ -3796,5 +3796,14 @@
   "universalSearchNoCommunities": "Aucune communauté trouvée",
   "communitiesSearchTips": "Rechercher des astuces",
   "communitiesAddTip": "Ajouter une astuce",
-  "communitiesTipHint": "Partagez une astuce utile…"
+  "communitiesTipHint": "Partagez une astuce utile…",
+  "shopEventsCreate": "Evenements que vous pouvez creer",
+  "shopGroupsCreate": "Groupes et communautes que vous pouvez creer",
+  "shopDailyConnects": "Nouvelles connexions quotidiennes",
+  "shopMonthlyBoosts": "Boosts de profil mensuels",
+  "shopMonthlyCoins": "Pieces mensuelles",
+  "shopNoAds": "Sans publicite",
+  "shopSeeWhoConnected": "Voir qui s'est connecte avec vous",
+  "shopTravelMode": "Mode voyage",
+  "shopBusinessAccount": "Compte professionnel"
 }

@@ -1560,22 +1560,20 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     ),
                     const SizedBox(height: 16),
 
-                    // Features list
-                    _buildFeatureRow(AppLocalizations.of(context)!.shopDailyLikes, _formatLimit(features['dailyConnects'] as int)),
-                    _buildFeatureRow(AppLocalizations.of(context)!.shopSuperLikes, _formatLimit(features['priorityConnects'] as int)),
-                    _buildFeatureRow(AppLocalizations.of(context)!.shopBadge, features['badge'] == true ? '✓' : '✗'),
-                    if (features['advancedFilters'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopAdvancedFilters, '✓'),
-                    if (features['readReceipts'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopReadReceipts, '✓'),
-                    if (features['incognitoMode'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopIncognitoMode, features['travelling'] == true ? AppLocalizations.of(context)!.shopUnlimited : '✓'),
-                    if (features['travelling'] == true)
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopTravelling, AppLocalizations.of(context)!.shopUnlimited),
-                    if (tier == SubscriptionTier.platinum) ...[
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopVipBadge, '✓'),
-                      _buildFeatureRow(AppLocalizations.of(context)!.shopPriorityMatching, '✓'),
-                    ],
+                    // Features list (Phase 3.2: real per-tier entitlements)
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopEventsCreate, _formatLimit(features['eventsCreate'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopGroupsCreate, _formatLimit(features['groupsCreate'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopDailyConnects, _formatLimit(features['dailyConnects'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopMonthlyBoosts, _formatLimit(features['boostsPerMonth'] as int)),
+                    _buildFeatureRow(AppLocalizations.of(context)!.shopMonthlyCoins, _formatLimit(features['monthlyCoins'] as int)),
+                    if (features['noAds'] == true)
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopNoAds, '✓'),
+                    if (features['seeWhoConnected'] == true)
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopSeeWhoConnected, '✓'),
+                    if (features['travelMode'] == true)
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopTravelMode, '✓'),
+                    if (features['businessAccount'] == true)
+                      _buildFeatureRow(AppLocalizations.of(context)!.shopBusinessAccount, '✓'),
                   ],
                 ),
               ),
