@@ -86,6 +86,8 @@ export const onEventBroadcastCreated = onDocumentCreated(
         data: { type: 'event_announcement', eventId, action: 'open_event' },
         isRead: false,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        // Attendees were already multicast above — skip the parity trigger.
+        pushSent: true,
       });
       if (++ops >= 450) {
         commits.push(batch.commit());
