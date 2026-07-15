@@ -56,9 +56,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
       );
 
       if (image != null) {
-        final file = File(image.path);
         if (!mounted) return;
-        context.read<OnboardingBloc>().add(OnboardingPhotoAdded(photo: file));
+        context.read<OnboardingBloc>().add(OnboardingPhotoAdded(photo: image));
       }
     } catch (e) {
       if (!mounted) return;

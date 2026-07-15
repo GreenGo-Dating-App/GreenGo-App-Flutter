@@ -286,4 +286,120 @@ NODE_TLS_REJECT_UNAUTHORIZED=0 firebase deploy --only hosting:app
 
 ---
 
-*Investigation grounded in: `GreenGo-App-Flutter` (local, v3.0.0+101) and `GreenGo-Dating-App/greengo-app-flutter-web` (cloned, v1.8.0+53). No secrets included; keys reside in `E:\Projects\GreenGo\credentials\greengo-credentials.txt` and Firebase/Functions config. No commits or pushes were made in either repo.*
+---
+
+## 13. AMPLIFIED — full mobile→web parity per feature area
+
+> Added after a screen-level audit of the 3.0.0 code. §8's matrix is architecture-level; this section makes **Explore, Events, Communities, and Business** parity concrete, with the exact web-breaking call sites (verified by line number) and the fix for each. **Goal: the web build behaves identically to mobile for every non-native feature.**
+
+### 13.0 The one pattern that fixes most of it
+Every crash below is the same bug: `File(xfile.path)` on web. `image_picker` works on web (it returns an `XFile` backed by a `blob:` URL), but `File(...)` from that path throws `UnsupportedError`, and `Reference.putFile(File)` has no web implementation. The universal fix:
+
+```dart
+// BEFORE (crashes on web)
+await ref.putFile(File(picked.path));
+
+// AFTER (works on web + mobile)
+if (kIsWeb) {
+  final bytes = await picked.readAsBytes();
+  await ref.putData(bytes, SettableMetadata(contentType: 'image/jpeg'));
+} else {
+  await ref.putFile(File(picked.path));
+}
+```
+For hot paths, migrate to the conditional-import seam in §3.3 (`file_upload.dart`) so web never links `dart:io` at all. Same fix applies to every site in the table below.
+
+### 13.1 EXPLORE — parity status: ✅ nearly ready
+- **Screens:** `explore_screen`, `network_discovery_screen`, `universal_search_screen`, `qr_hub_screen`.
+- **`dart:io` sites:** **0** — Explore is clean, no upload/File paths.
+- **Web concerns:**
+  - `qr_hub_screen` → QR **scanning** uses `mobile_scanner` (unreliable on web) → gate the scan entry behind `!kIsWeb` and offer manual code entry; QR **display** (`qr_flutter`) is fine on web.
+  - Explore carousel + Network grid → responsive audit (W3): 2/3/4 columns must scale to desktop widths; hover, mouse-wheel scroll, keyboard focus.
+  - `universal_search_screen` → pure Firestore/text, works on web; verify debounce + empty states at desktop width.
+- **Action:** responsive pass + scanner gate. No upload fixes needed.
+
+### 13.2 EVENTS — parity status: ⚠️ upload + scanner + maps
+- **Screens:** `events_screen`, `event_detail_loader`, `event_attendance`, `event_chat`, `event_ticket`, `event_location_picker`, `event_scanner`.
+- **🔴 Web-breaking upload (VERIFIED):** `events_screen.dart:3058` `File(x.path)` (event main photo) and `:3067` `File(x.path)` (extra photos) — **unguarded**, crashes when a web user creates/edits an event with images. → apply the 13.0 bytes-upload fix.
+- **Maps:** `event_location_picker` + `event_map_card` → already swap to `WebMapPlaceholder` on web (keep; optionally wire a Maps JS key later).
+- **QR:** `event_scanner_screen` (check-in) → `mobile_scanner`, gate behind `!kIsWeb`. `event_ticket_screen` shows a QR (**display is fine on web**).
+- **Rest:** `event_attendance`, `event_chat`, external_events/Attractions browsing → Firestore, work on web. Verify the "Going" tab attendee list and event chat media (same bytes-upload rule).
+- **Action:** fix the 2 `File()` sites, gate the scanner, keep the map placeholder.
+
+### 13.3 COMMUNITIES — parity status: ⚠️ upload + routing (Core sub-features work)
+- **Screens:** `communities_screen`, `community_detail_screen` (tabbed: Chat / Tips / Announcements / Events), `create_community_screen`. Plus roles/moderation, join-approval, community events, translation — all **Firestore/Cloud-Function driven → work on web** once media upload is fixed.
+- **🔴 Web-breaking upload (VERIFIED):** `create_community_screen.dart:712` `File(picked.path)` (cover image) + `:724` `putFile(...)` — **unguarded**, crashes when a web user creates a community with a cover image. → apply the 13.0 fix.
+- **`community_detail_screen`:** no direct `File()` — the tabbed Chat/Tips/Announcements post paths reuse the shared chat/media widgets; ensure any image attach there also goes through the bytes branch (covered by the §3 chat-media guard).
+- **🟡 Routing:** reconcile the `/community` vs `/communities` naming (§7) so the manifest shortcut + deep links resolve. Verify moderation actions (approve/kick/role change) and translation toggle on web — they are callable/Firestore, so expected ✅, but smoke-test.
+- **Action:** fix the create-community upload, reconcile the route name, smoke-test moderation + translation on web.
+
+### 13.4 BUSINESS — parity status: 🔴 was absent from the plan; now specified
+Business is a full 3.0.0 pillar (9 screens) that §8 never covered. Screens: `business_hub`, `business_account`, `business_storefront`, `storefront_editor`, `business_events`, `business_leads`, `followers`, `promote`, `business_verification_request`.
+
+- **✅ Payments — NO new work (VERIFIED):** `promote_screen` spends **GreenGoCoins, not real money** ("in-economy, never real money"; routes to `CoinShopScreen`). Buying coins already Stripe-branches on web (§4). So business promotion works on web **for free** — no separate Stripe path. *(This corrects the earlier worry that promote needed its own web payment path.)*
+- **🔴 Web-breaking uploads (VERIFIED, unguarded):**
+  - `storefront_editor_screen.dart:148` — `photo: File(image.path)` (storefront gallery image).
+  - `business_verification_request_screen.dart:104` — `ref.putFile(File(picked.path))` (verification document). *(No ML Kit here — it's a plain document upload, so the bytes fix fully solves it; verification stays available on web.)*
+  - → apply the 13.0 bytes-upload fix to both.
+- **Rest:** `business_hub`, `business_account`, `business_storefront` (view), `business_events`, `business_leads`, `followers` → Firestore/read paths, work on web. `business_events` overlaps with §13.2 (same event-photo upload rule if it creates events).
+- **Action:** fix the 2 `File()` sites; add the Business rows to the parity matrix (below); confirm the "business membership exclusion" server rule doesn't behave differently on web (it's server-side → same for web).
+
+### 13.5 Consolidated web-breaking upload sites (the P0 fix-list for these 4 areas)
+| File:line | Feature | Call | Fix |
+|---|---|---|---|
+| `events_screen.dart:3058` | Events (create) | `File(x.path)` main photo | 13.0 bytes branch |
+| `events_screen.dart:3067` | Events (create) | `File(x.path)` extra photos | 13.0 bytes branch |
+| `create_community_screen.dart:712/724` | Communities (create) | `File(picked.path)` + `putFile` cover | 13.0 bytes branch |
+| `storefront_editor_screen.dart:148` | Business | `File(image.path)` gallery | 13.0 bytes branch |
+| `business_verification_request_screen.dart:104` | Business | `putFile(File(picked.path))` doc | 13.0 bytes branch |
+
+*(These are additional to the chat/profile/stories sites already in §3.2. Explore contributes none.)*
+
+### 13.6 Amended feature-parity matrix (replaces/extends §8 for these areas)
+| Feature | Web target | Fix required |
+|---|---|---|
+| Explore carousel / Network / Universal search | ✅ full | responsive only |
+| Explore QR hub (scan) | ❌ mobile-only | gate `!kIsWeb`, QR display OK |
+| Events browse / attendance / chat / ticket | ✅ full | ticket QR displays fine |
+| Events **create** (photos) | ⚠️ fix | 2 `File()` → bytes |
+| Events map picker | ⚠️ degraded | `WebMapPlaceholder` (kept) |
+| Events check-in scanner | ❌ mobile-only | gate `!kIsWeb` |
+| Communities view / Chat/Tips/Announcements / moderation / roles / join-approval / translation | ✅ full | smoke-test; media via chat guard |
+| Communities **create** (cover) | ⚠️ fix | `File()` → bytes |
+| Community routing `/community(ies)` | ⚠️ fix | reconcile name + deep route |
+| Business hub / account / storefront view / events / leads / followers | ✅ full | Firestore reads |
+| Business **promote** (boost) | ✅ full | coins→Stripe seam (already) |
+| Business storefront **editor** (upload) | ⚠️ fix | `File()` → bytes |
+| Business **verification** (doc upload) | ⚠️ fix | `File()` → bytes (no ML Kit) |
+
+### 13.7 Amended rollout — where this parity work lands
+- **P0 (Build & audit):** add the **5 upload sites in §13.5** to the `dart:io` audit fix-list — these are the concrete web-reachable crashes.
+- **P1 (Auth + core):** add **Explore responsive** + **Communities/Business read paths** to the smoke test.
+- **P2 (Payments + media):** confirm **promote=coins→Stripe** works end-to-end on web; fix the 5 upload sites so create-event / create-community / storefront / verification succeed on web.
+- **P4 (Parity & degrade):** gate **QR scan** (explore hub + event check-in) mobile-only; reconcile **community route naming**; smoke-test **community moderation + translation** on web.
+
+**Net:** with the 5 bytes-upload fixes + scanner gating + route reconciliation (all small, localized changes on top of the §5 FCM work), the web build reaches **feature parity with mobile** for Explore, Events, Communities, and Business — no screens are missing, only these upload/scanner/route seams need the web branch.
+
+---
+
+## 14. IMPLEMENTATION STATUS (in progress)
+
+Increment 1 — landed in the working tree, `flutter analyze` clean on all changed files, mobile behavior unchanged:
+
+**✅ Done**
+- **Reusable web-safe media seam** — `lib/core/platform/web_media.dart`: `WebMedia.uploadXFile(ref, xfile)` (web→`putData(bytes)`, mobile→`putFile`) + `WebMedia.imageProviderFor(xfile)` (web→`NetworkImage(blob)`, mobile→`FileImage`). Use this everywhere instead of `File(xfile.path)`.
+- **Community create-cover upload** — `create_community_screen.dart` now holds an `XFile` (not `File`), previews via the seam, uploads via the seam; `dart:io` import removed. No longer crashes on web.
+- **Business verification doc upload** — `business_verification_request_screen.dart` uploads via the seam; `dart:io` removed. Verification stays available on web (no ML Kit involved — it's a plain document upload).
+- **FCM web push wiring** — `web/firebase-messaging-sw.js` (public web config), `lib/core/config/web_push_config.dart` (VAPID constant, env-overridable, graceful-skip when empty), `getFCMToken()` passes `vapidKey` on web, `PushNotificationService.initialize()` now wires foreground/tap/refresh listeners on web instead of early-returning. The existing `main.dart` token-save flow registers web tokens automatically once the VAPID key is set.
+- **Event check-in scanner** — web fallback screen (mobile-only camera) instead of a broken camera view; new l10n key `eventScanUseMobileApp` added to `app_en.arb` + `flutter gen-l10n` run.
+
+**⏳ Remaining (needs a decision or a bigger refactor)**
+- 🔴 **Profile-photo pipeline** (shared by `storefront_editor`, `photo_management`, onboarding **and** event-create photos via `ds.uploadPhoto(File)`): `File`-typed through event→bloc→usecase→repo→datasource **and** `Image.file` previews **and** native **ML Kit** face/NSFW validation. Making it web-safe needs (a) an `XFile`/bytes pipeline refactor and (b) a **decision: skip face validation on web, or move it server-side?** → this blocks event-create photos + storefront gallery on web. **Needs user input.**
+- 🟡 **Explore QR-hub scan button** — gate the scan sub-action `!kIsWeb` (QR display already fine). Not yet done.
+- 🟡 **Set the real VAPID key** — generate in Firebase Console → Cloud Messaging → Web Push certificates, then set `WEB_PUSH_VAPID_KEY` (or paste into `web_push_config.dart`). Until then web push stays inactive (build still runs).
+- 🟡 **Deep-link route parsing** (`/u/*`, `/e/*`), **iOS PWA splash images**, **Explore responsive pass**, **`/community` vs `/communities` route reconcile** — per §5–§7 & §13.
+- **Verify:** `flutter build web --release` end-to-end + preview-channel smoke test (analyze passes, but a full web build/runtime pass is still pending).
+
+---
+
+*Investigation grounded in: `GreenGo-App-Flutter` (local, v3.0.0+101) and `GreenGo-Dating-App/greengo-app-flutter-web` (cloned, v1.8.0+53). No secrets included; keys reside in `E:\Projects\GreenGo\credentials\greengo-credentials.txt` and Firebase/Functions config. No commits or pushes were made in either repo. §13 amplified from a screen-level audit; upload sites verified by line number.*

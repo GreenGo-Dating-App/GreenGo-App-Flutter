@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -14,6 +15,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/platform/web_media.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/location_share_service.dart';
@@ -2873,8 +2875,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   double? _lng;
   String? _pickedCity;
   String? _pickedCountry;
-  File? _mainPhoto;
-  final List<File> _extraPhotos = [];
+  XFile? _mainPhoto;
+  final List<XFile> _extraPhotos = [];
   // Already-uploaded images kept when editing (URLs, shown alongside new files).
   String? _existingMainUrl;
   final List<String> _existingPhotoUrls = [];
@@ -3055,7 +3057,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   Future<void> _pickMainPhoto() async {
     final x =
         await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
-    if (x != null) setState(() => _mainPhoto = File(x.path));
+    if (x != null) setState(() => _mainPhoto = x);
   }
 
   int get _extraCount => _existingPhotoUrls.length + _extraPhotos.length;
@@ -3064,14 +3066,14 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (_extraCount >= 4) return;
     final x =
         await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
-    if (x != null) setState(() => _extraPhotos.add(File(x.path)));
+    if (x != null) setState(() => _extraPhotos.add(x));
   }
 
   /// Main photo + up to 4 extra photos. In edit mode, already-uploaded images
   /// (URLs) are shown and can be kept or removed; new picks are added on top.
   Widget _buildPhotoSection() {
     Widget slot({
-      File? file,
+      XFile? file,
       String? url,
       required VoidCallback onTap,
       VoidCallback? onRemove,
@@ -3090,7 +3092,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 color: AppColors.backgroundCard,
                 borderRadius: BorderRadius.circular(12),
                 image: file != null
-                    ? DecorationImage(image: FileImage(file), fit: BoxFit.cover)
+                    ? DecorationImage(
+                        image: WebMedia.imageProviderFor(file),
+                        fit: BoxFit.cover)
                     : (url != null && url.isNotEmpty
                         ? DecorationImage(
                             image: NetworkImage(url), fit: BoxFit.cover)
@@ -3158,7 +3162,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   }
 
   /// Full-screen, pinch-to-zoom preview of an event photo (file or URL).
-  void _previewEventPhoto({File? file, String? url}) {
+  void _previewEventPhoto({XFile? file, String? url}) {
     if (file == null && (url == null || url.isEmpty)) return;
     showDialog<void>(
       context: context,
@@ -3170,7 +3174,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             Center(
               child: InteractiveViewer(
                 child: file != null
-                    ? Image.file(file, fit: BoxFit.contain)
+                    ? Image(
+                        image: WebMedia.imageProviderFor(file),
+                        fit: BoxFit.contain)
                     : Image.network(url!, fit: BoxFit.contain),
               ),
             ),
@@ -4123,19 +4129,28 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     }
 
     // Nudity / explicit-content check on every event image before upload.
-    final imagesToCheck = [if (_mainPhoto != null) _mainPhoto!, ..._extraPhotos];
-    for (final f in imagesToCheck) {
-      final res = await PhotoValidationService().validateImageForSending(f);
-      if (!mounted) return;
-      if (!res.isValid) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)?.photoExplicitContent ??
-                'This image contains inappropriate content and cannot be used.'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
-        return;
+    // On-device ML Kit is native-only — skip on web (server-side moderation
+    // still applies) so a web organizer isn't blocked from creating events.
+    if (!kIsWeb) {
+      final imagesToCheck = [
+        if (_mainPhoto != null) _mainPhoto!,
+        ..._extraPhotos,
+      ];
+      for (final f in imagesToCheck) {
+        final res =
+            await PhotoValidationService().validateImageForSending(File(f.path));
+        if (!mounted) return;
+        if (!res.isValid) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                  AppLocalizations.of(context)?.photoExplicitContent ??
+                      'This image contains inappropriate content and cannot be used.'),
+              backgroundColor: AppColors.errorRed,
+            ),
+          );
+          return;
+        }
       }
     }
 

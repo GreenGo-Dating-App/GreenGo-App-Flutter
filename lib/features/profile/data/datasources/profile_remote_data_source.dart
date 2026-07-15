@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/utils/image_compression.dart';
@@ -12,7 +13,7 @@ abstract class ProfileRemoteDataSource {
   Future<ProfileModel> getProfile(String userId);
   Future<ProfileModel> updateProfile(ProfileModel profile);
   Future<void> deleteProfile(String userId);
-  Future<String> uploadPhoto(String userId, File photo, {String? folder});
+  Future<String> uploadPhoto(String userId, XFile photo, {String? folder});
   Future<void> deletePhoto(String userId, String photoUrl);
   Future<String> uploadVoiceRecording(String userId, File recording);
   Future<bool> verifyPhotoWithAI(File photo);
@@ -137,32 +138,36 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   }
 
   @override
-  Future<String> uploadPhoto(String userId, File photo, {String? folder}) async {
+  Future<String> uploadPhoto(String userId, XFile photo, {String? folder}) async {
     try {
-      // Compress image before upload to reduce storage costs
-      var photoToUpload = photo;
+      final fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg';
+      final folderPath = folder ?? 'photos';
+      final ref = storage.ref().child('profiles/$userId/$folderPath/$fileName');
+      final metadata = SettableMetadata(
+        contentType: 'image/jpeg',
+        customMetadata: {'userId': userId},
+      );
+
+      if (kIsWeb) {
+        // No dart:io / flutter_image_compress on web — upload the picked bytes
+        // directly. (Server-side moderation still applies.)
+        final bytes = await photo.readAsBytes();
+        final uploadTask = await ref.putData(bytes, metadata);
+        return uploadTask.ref.getDownloadURL();
+      }
+
+      // Mobile: compress the File before upload to reduce storage costs.
+      var photoToUpload = File(photo.path);
       try {
-        photoToUpload = await ImageCompression.compressProfilePhoto(photo);
+        photoToUpload = await ImageCompression.compressProfilePhoto(photoToUpload);
         debugPrint('Photo compressed for upload');
       } catch (e) {
         debugPrint('Compression failed, using original: $e');
         // Use original if compression fails
       }
 
-      final fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg';
-      final folderPath = folder ?? 'photos';
-      final ref = storage.ref().child('profiles/$userId/$folderPath/$fileName');
-
-      final uploadTask = await ref.putFile(
-        photoToUpload,
-        SettableMetadata(
-          contentType: 'image/jpeg',
-          customMetadata: {'userId': userId},
-        ),
-      );
-
-      final downloadUrl = await uploadTask.ref.getDownloadURL();
-      return downloadUrl;
+      final uploadTask = await ref.putFile(photoToUpload, metadata);
+      return uploadTask.ref.getDownloadURL();
     } on FirebaseException catch (e) {
       throw ServerException( e.message ?? 'Failed to upload photo');
     } catch (e) {

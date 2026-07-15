@@ -1,5 +1,5 @@
-import 'dart:io';
 import 'package:dartz/dartz.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../../core/error/failures.dart';
 import '../../../../core/usecases/usecase.dart';
 import '../repositories/profile_repository.dart';
@@ -27,6 +27,6 @@ class UploadPhotoParams {
     this.folder,
   });
   final String userId;
-  final File photo;
+  final XFile photo;
   final String? folder;
 }
