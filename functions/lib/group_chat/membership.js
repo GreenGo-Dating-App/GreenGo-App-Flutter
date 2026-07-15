@@ -142,7 +142,7 @@ exports.onGroupCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}', 
     await commitInChunks(writes);
 }));
 exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId}', (0, monitoring_1.monitored)("onGroupParticipantsChanged", async (event) => {
-    var _a, _b, _c, _d, _e, _f;
+    var _a, _b, _c, _d, _e, _f, _g;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
     if (!before || !after)
@@ -153,8 +153,32 @@ exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/
     const roles = after.roles || {};
     const name = ((_c = after.groupInfo) === null || _c === void 0 ? void 0 : _c.name) || 'Group';
     const photoUrl = (_e = (_d = after.groupInfo) === null || _d === void 0 ? void 0 : _d.photoUrl) !== null && _e !== void 0 ? _e : null;
-    const added = next.filter((u) => !prev.includes(u));
+    let added = next.filter((u) => !prev.includes(u));
     const removed = prev.filter((u) => !next.includes(u));
+    if (added.length === 0 && removed.length === 0)
+        return;
+    // Business (storefront) identities can't be group members. Strip any that
+    // were just added (defense-in-depth: the client already hides them from the
+    // add-member pickers). Remove them from participants + roles, then continue
+    // with the non-business additions.
+    if (added.length > 0) {
+        const businessAdded = [];
+        for (const uid of added) {
+            const p = await db.collection('profiles').doc(uid).get();
+            if (((_f = p.data()) === null || _f === void 0 ? void 0 : _f.isBusiness) === true)
+                businessAdded.push(uid);
+        }
+        if (businessAdded.length > 0) {
+            const updates = {
+                participants: admin.firestore.FieldValue.arrayRemove(...businessAdded),
+            };
+            for (const uid of businessAdded) {
+                updates[`roles.${uid}`] = admin.firestore.FieldValue.delete();
+            }
+            await db.collection('groups').doc(groupId).update(updates);
+            added = added.filter((u) => !businessAdded.includes(u));
+        }
+    }
     if (added.length === 0 && removed.length === 0)
         return;
     const now = admin.firestore.FieldValue.serverTimestamp();
@@ -199,7 +223,7 @@ exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/
     // the added user.
     if (added.length > 0) {
         const ownerId = after.createdBy ||
-            ((_f = after.groupInfo) === null || _f === void 0 ? void 0 : _f.createdBy) || '';
+            ((_g = after.groupInfo) === null || _g === void 0 ? void 0 : _g.createdBy) || '';
         const ownerActor = ownerId ? await (0, notifyHelpers_1.resolveActor)(ownerId) : undefined;
         for (const uid of added) {
             if (uid === ownerId)
