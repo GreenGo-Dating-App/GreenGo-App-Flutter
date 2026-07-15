@@ -781,7 +781,9 @@ export const onSupportMessageCreated = functions.firestore
           console.log(`No FCM token found for user ${userId} — skipping push`);
         }
 
-        // Also create an in-app notification in the notifications collection
+        // Also create an in-app notification in the notifications collection.
+        // The support-reply push was already sent above (when a token exists),
+        // so stamp pushSent to skip the onNotificationCreatedPush parity trigger.
         await db.collection('notifications').add({
           userId: userId,
           type: 'new_message',
@@ -799,6 +801,7 @@ export const onSupportMessageCreated = functions.firestore
           },
           isRead: false,
           read: false,
+          pushSent: true,
           createdAt: admin.firestore.FieldValue.serverTimestamp(),
         });
       } catch (notifError) {

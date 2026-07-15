@@ -270,7 +270,8 @@ async function notifyAdminsOfCriticalIssues(report) {
         const notifications = adminsSnapshot.docs.map(async (adminDoc) => {
             const adminData = adminDoc.data();
             const userId = adminDoc.id;
-            // Create in-app notification
+            // Create in-app notification. A push is sent below (when the admin has a
+            // token), so stamp pushSent to skip the onNotificationCreatedPush trigger.
             await firestore.collection('notifications').add({
                 userId,
                 type: 'security_alert',
@@ -279,6 +280,7 @@ async function notifyAdminsOfCriticalIssues(report) {
                 createdAt: admin.firestore.FieldValue.serverTimestamp(),
                 isRead: false,
                 priority: 'critical',
+                pushSent: true,
                 data: {
                     reportId: report.reportId,
                     criticalIssues: report.criticalIssues,

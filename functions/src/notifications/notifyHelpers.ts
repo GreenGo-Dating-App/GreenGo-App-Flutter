@@ -62,6 +62,9 @@ export async function emitNotification(params: {
   if (!recipientId) return;
   if (actor && recipientId === actor.id && !allowSelf) return;
 
+  // pushSent: true — emitNotification sends its own FCM push below, so the
+  // onNotificationCreatedPush parity trigger must skip this doc (no double-push).
+  // Covers all callers of this helper (engagementNotifications, group_chat/membership).
   await db.collection('notifications').add({
     userId: recipientId,
     type,
@@ -71,6 +74,7 @@ export async function emitNotification(params: {
     data,
     isRead: false,
     createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    pushSent: true,
     ...(actor ? { actorId: actor.id, actorName: actor.name } : {}),
     ...(actor?.photo ? { imageUrl: actor.photo } : {}),
   });

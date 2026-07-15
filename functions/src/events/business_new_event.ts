@@ -191,6 +191,8 @@ async function fanOutNewEventToFollowers(
         imageUrl: eventImage ?? null,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
         isRead: false,
+        // Followers were already multicast above — skip the parity trigger.
+        pushSent: true,
       });
       ops++;
       if (ops >= BATCH_LIMIT) {

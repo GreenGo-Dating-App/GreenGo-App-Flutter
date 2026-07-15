@@ -298,6 +298,8 @@ exports.approveUser = (0, https_1.onCall)({
                 body: message.body,
                 read: false,
                 sent: false,
+                // This handler sends its own push below — skip the parity trigger.
+                pushSent: true,
                 createdAt: utils_1.FieldValue.serverTimestamp(),
             });
             // Send push notification if user has FCM token
@@ -361,6 +363,8 @@ exports.rejectUser = (0, https_1.onCall)({
                 body: `Your account could not be approved. Reason: ${reason}`,
                 read: false,
                 sent: false,
+                // This handler sends its own push below — skip the parity trigger.
+                pushSent: true,
                 createdAt: utils_1.FieldValue.serverTimestamp(),
             });
             if (userData.fcmToken) {
@@ -642,6 +646,8 @@ exports.sendBroadcastNotification = (0, https_1.onCall)({
                     body,
                     read: false,
                     sent: true,
+                    // Broadcast FCM sent below in batches — skip the parity trigger.
+                    pushSent: true,
                     sentAt: utils_1.FieldValue.serverTimestamp(),
                     createdAt: utils_1.FieldValue.serverTimestamp(),
                 });
@@ -738,6 +744,9 @@ exports.sendNotificationToUser = (0, https_1.onCall)({
             data,
             read: false,
             sent: !!fcmToken,
+            // Pushed below when a token exists; when absent the parity trigger also
+            // can't push (no token), so stamping true unconditionally is safe.
+            pushSent: true,
             sentAt: fcmToken ? utils_1.FieldValue.serverTimestamp() : null,
             createdAt: utils_1.FieldValue.serverTimestamp(),
         });

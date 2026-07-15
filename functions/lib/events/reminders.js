@@ -101,6 +101,8 @@ async function fanOutReminder(eventId, eventRef, title, body, flag) {
             data: dataPayload,
             isRead: false,
             createdAt: admin.firestore.FieldValue.serverTimestamp(),
+            // Attendees were already multicast above — skip the parity trigger.
+            pushSent: true,
         });
         if (++ops >= 450) {
             commits.push(batch.commit());

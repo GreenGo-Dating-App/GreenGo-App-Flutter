@@ -143,6 +143,11 @@ export {
   onEventLiked,
 } from './notifications/socialNotifications';
 
+// Push parity — every in-app notifications doc without its own push gets one.
+export {
+  onNotificationCreatedPush,
+} from './notifications/pushParity';
+
 // Engagement notifications — profile view (throttled), QR scan, boost start/end.
 export {
   onProfileViewed,

@@ -98,9 +98,11 @@ async function emit(recipientId, type, title, body, data, actor, dedupKey) {
     if (!(await claimOnce(dedupKey)))
         return;
     // In-app doc (Flutter NotificationModel shape + actor fields).
+    // pushSent: true — this function sends its own push below, so the
+    // onNotificationCreatedPush parity trigger must skip it (no double-push).
     await db.collection('notifications').add(Object.assign({ userId: recipientId, type,
         title, message: body, body,
-        data, isRead: false, createdAt: admin.firestore.FieldValue.serverTimestamp(), actorId: actor.id, actorName: actor.name }, (actor.photo ? { imageUrl: actor.photo } : {})));
+        data, isRead: false, createdAt: admin.firestore.FieldValue.serverTimestamp(), actorId: actor.id, actorName: actor.name, pushSent: true }, (actor.photo ? { imageUrl: actor.photo } : {})));
     // Best-effort push.
     try {
         const userSnap = await db.collection('users').doc(recipientId).get();
