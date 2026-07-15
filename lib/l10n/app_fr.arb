@@ -1,6 +1,9 @@
 {
   "@@locale": "fr",
-  "exploreBusinessesNearYou": "Entreprises près de vous",
+  "exploreBusinessesNearYou": "Vitrines pres de vous",
+  "storefrontEnabled": "Vitrine activee",
+  "storefrontDisabled": "Vitrine desactivee",
+  "storefrontToggleHint": "Activez ou desactivez votre vitrine a tout moment",
   "splashBusinessLabel": "BUSINESS",
   "rateThisBusiness": "Évaluer cette entreprise",
   "businessRatingError": "Impossible d'enregistrer votre note. Veuillez réessayer.",

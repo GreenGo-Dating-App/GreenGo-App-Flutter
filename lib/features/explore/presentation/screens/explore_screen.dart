@@ -3591,8 +3591,12 @@ class _BusinessCard extends StatelessWidget {
         ? business.businessName!.trim()
         : business.displayName;
     final category = business.businessCategory?.trim();
-    final imageUrl =
-        business.photoUrls.isNotEmpty ? business.photoUrls.first : null;
+    // Prefer the storefront cover image; fall back to the first profile photo so
+    // the card always leads with the most representative storefront visual.
+    final cover = business.coverImageUrl?.trim();
+    final imageUrl = (cover != null && cover.isNotEmpty)
+        ? cover
+        : (business.photoUrls.isNotEmpty ? business.photoUrls.first : null);
 
     return SizedBox(
       width: cardWidth,
