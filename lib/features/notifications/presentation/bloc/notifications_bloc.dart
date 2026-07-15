@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/di/injection_container.dart' as di;
+import '../../domain/repositories/notification_repository.dart';
 import '../../domain/usecases/get_notifications.dart';
 import '../../domain/usecases/mark_all_notifications_read.dart';
 import '../../domain/usecases/mark_notification_read.dart';
@@ -104,9 +106,11 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
     NotificationDeleted event,
     Emitter<NotificationsState> emit,
   ) async {
-    // TODO: Implement delete functionality
-    // For now, just mark as read
-    await markNotificationRead(event.notificationId);
+    // Actually delete (swipe-to-dismiss). Was previously only marking read, so
+    // the row reappeared on the next stream emission.
+    await di
+        .sl<NotificationRepository>()
+        .deleteNotification(event.notificationId);
   }
 
   Future<void> _onTapped(

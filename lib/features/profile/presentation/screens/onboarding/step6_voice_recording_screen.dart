@@ -1,9 +1,12 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:record/record.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../generated/app_localizations.dart';
@@ -30,6 +33,8 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
   String? _recordingPath;
   bool _isUploading = false;
 
+  final AudioRecorder _recorder = AudioRecorder();
+
   @override
   void initState() {
     super.initState();
@@ -42,36 +47,49 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
   @override
   void dispose() {
     _timer?.cancel();
+    _recorder.dispose();
     super.dispose();
   }
 
   Future<void> _startRecording() async {
     try {
-      // Get temporary directory for recording
+      // Microphone permission (the plugin prompts on first use).
+      if (!await _recorder.hasPermission()) {
+        if (!mounted) return;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.voiceMicPermissionDenied),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+        return;
+      }
+
       final directory = await getTemporaryDirectory();
-      final path = '${directory.path}/voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+      final path =
+          '${directory.path}/voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+
+      // Real audio capture (AAC in an .m4a container).
+      await _recorder.start(
+        const RecordConfig(encoder: AudioEncoder.aacLc),
+        path: path,
+      );
 
       setState(() {
         _recordingPath = path;
         _isRecording = true;
+        _hasRecording = false;
         _recordingDuration = 0;
       });
 
-      // Start timer
       _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
         setState(() {
           _recordingDuration++;
         });
-
-        // Auto-stop at max duration
         if (_recordingDuration >= _maxDuration) {
           _stopRecording();
         }
       });
-
-      // TODO: Implement actual audio recording
-      // For now, this is a placeholder
-      // You would use a package like 'record' or 'audio_session' here
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -85,50 +103,69 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
 
   Future<void> _stopRecording() async {
     _timer?.cancel();
+    try {
+      final path = await _recorder.stop();
+      if (path != null) _recordingPath = path;
+    } catch (_) {
+      // Keep whatever path we set on start.
+    }
 
+    if (!mounted) return;
     setState(() {
       _isRecording = false;
-      _hasRecording = _recordingDuration > 0;
+      _hasRecording = _recordingDuration > 0 &&
+          _recordingPath != null &&
+          File(_recordingPath!).existsSync();
     });
 
-    // TODO: Implement actual audio recording stop
+    // Auto-upload once a real recording exists.
+    if (_hasRecording) {
+      await _uploadRecording();
+    }
   }
 
   Future<void> _uploadRecording() async {
     if (_recordingPath == null) return;
+    final file = File(_recordingPath!);
+    if (!file.existsSync()) return;
+
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return;
 
     setState(() {
       _isUploading = true;
     });
 
     try {
-      final file = File(_recordingPath!);
-
-      // TODO: Upload to Firebase Storage
-      // For now, simulate upload
-      await Future.delayed(const Duration(seconds: 2));
-
-      final voiceUrl = 'https://storage.example.com/voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+      // Mirror the profile datasource storage path: profiles/{uid}/voice/...
+      final fileName = 'voice_${DateTime.now().millisecondsSinceEpoch}.m4a';
+      final ref =
+          FirebaseStorage.instance.ref().child('profiles/$uid/voice/$fileName');
+      final task = await ref.putFile(
+        file,
+        SettableMetadata(
+          contentType: 'audio/m4a',
+          customMetadata: {'userId': uid},
+        ),
+      );
+      final voiceUrl = await task.ref.getDownloadURL();
 
       if (!mounted) return;
-
       context.read<OnboardingBloc>().add(
-        OnboardingVoiceUpdated(voiceUrl: voiceUrl),
-      );
+            OnboardingVoiceUpdated(voiceUrl: voiceUrl),
+          );
 
       setState(() {
         _isUploading = false;
       });
     } catch (e) {
       if (!mounted) return;
-
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(AppLocalizations.of(context)!.voiceFailedUploadRecording(e.toString())),
           backgroundColor: AppColors.errorRed,
         ),
       );
-
       setState(() {
         _isUploading = false;
       });
@@ -136,6 +173,13 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
   }
 
   void _deleteRecording() {
+    final path = _recordingPath;
+    if (path != null) {
+      try {
+        final f = File(path);
+        if (f.existsSync()) f.deleteSync();
+      } catch (_) {}
+    }
     setState(() {
       _hasRecording = false;
       _recordingDuration = 0;

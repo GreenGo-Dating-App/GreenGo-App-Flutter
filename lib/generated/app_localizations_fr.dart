@@ -6685,7 +6685,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get referralCodeTitle => 'Vous avez un code de parrainage ?';
 
   @override
-  String get referralCodeLabel => 'Code de parrainage';
+  String get referralCodeLabel => 'Code de parrainage (facultatif)';
 
   @override
   String get referralCodeHint => 'Entrez le code d\'un ami';
@@ -10180,6 +10180,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String voiceFailedStartRecording(Object error) {
     return 'Échec du démarrage de l\'enregistrement : $error';
   }
+
+  @override
+  String get voiceMicPermissionDenied =>
+      'L\'accès au microphone est nécessaire pour enregistrer votre présentation vocale';
 
   @override
   String voiceFailedUploadRecording(Object error) {

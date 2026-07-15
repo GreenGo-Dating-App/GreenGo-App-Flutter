@@ -51,16 +51,10 @@ class SafetyActionsService {
 
     await reportRef.set(reportData);
 
-    // Increment reported count on the target profile for moderation triage.
-    // Best-effort: never block the report on this secondary write.
-    try {
-      await firestore.collection('users').doc(reportedUserId).update({
-        'reportCount': FieldValue.increment(1),
-        'lastReportedAt': Timestamp.fromDate(DateTime.now()),
-      });
-    } catch (_) {
-      // Ignore — the report document itself is what matters.
-    }
+    // The moderation counter on the reported user's doc (`reportCount` /
+    // `lastReportedAt`) is bumped server-side by the `onUserReportCreated`
+    // Cloud Function (Admin SDK) — the client cannot write another user's doc,
+    // so the previous best-effort client increment was always denied.
   }
 
   /// Whether [blockerId] has already blocked [blockedUserId].

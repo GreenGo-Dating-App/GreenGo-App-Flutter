@@ -55,6 +55,7 @@ exports.onGroupInfoChanged = exports.onGroupParticipantsChanged = exports.onGrou
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
+const notifyHelpers_1 = require("../notifications/notifyHelpers");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const INBOX_COL = 'user_group_inbox';
@@ -141,7 +142,7 @@ exports.onGroupCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}', 
     await commitInChunks(writes);
 }));
 exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/{groupId}', (0, monitoring_1.monitored)("onGroupParticipantsChanged", async (event) => {
-    var _a, _b, _c, _d, _e;
+    var _a, _b, _c, _d, _e, _f;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
     if (!before || !after)
@@ -192,6 +193,40 @@ exports.onGroupParticipantsChanged = (0, firestore_1.onDocumentUpdated)('groups/
         }));
     }
     await commitInChunks(writes);
+    // Notifications: tell each ADDED user they were added (b), and tell the
+    // group owner that someone joined their group (d). The actor for "added
+    // you" is the group owner (the usual adder); for "joined your group" it's
+    // the added user.
+    if (added.length > 0) {
+        const ownerId = after.createdBy ||
+            ((_f = after.groupInfo) === null || _f === void 0 ? void 0 : _f.createdBy) || '';
+        const ownerActor = ownerId ? await (0, notifyHelpers_1.resolveActor)(ownerId) : undefined;
+        for (const uid of added) {
+            if (uid === ownerId)
+                continue;
+            // → the added user
+            await (0, notifyHelpers_1.emitNotification)({
+                recipientId: uid,
+                type: 'group_add',
+                title: `added you to ${name}`,
+                body: name,
+                data: { type: 'group_add', groupId, action: 'open_group', actorId: ownerId },
+                actor: ownerActor,
+            });
+            // → the group owner
+            if (ownerId) {
+                const joiner = await (0, notifyHelpers_1.resolveActor)(uid);
+                await (0, notifyHelpers_1.emitNotification)({
+                    recipientId: ownerId,
+                    type: 'group_join',
+                    title: `joined your group ${name}`,
+                    body: name,
+                    data: { type: 'group_join', groupId, action: 'open_group', actorId: uid },
+                    actor: joiner,
+                });
+            }
+        }
+    }
 }));
 /**
  * onGroupInfoChanged — when the group name or photo changes, fan the new value
