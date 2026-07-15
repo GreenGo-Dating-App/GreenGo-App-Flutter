@@ -22,6 +22,8 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
     String? language,
     String? city,
     String? searchQuery,
+    DateTime? startAfterActivity,
+    int limit = 50,
   }) async {
     try {
       final communities = await remoteDataSource.getCommunities(
@@ -29,6 +31,8 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
         language: language,
         city: city,
         searchQuery: searchQuery,
+        startAfterActivity: startAfterActivity,
+        limit: limit,
       );
       return Right(communities.map((c) => c.toEntity()).toList());
     } catch (e) {

@@ -11,12 +11,18 @@ import '../models/community_model.dart';
 ///
 /// Handles Firestore operations for the communities feature
 abstract class CommunitiesRemoteDataSource {
-  /// Get all communities with optional filters
+  /// Get all communities with optional filters.
+  ///
+  /// [startAfterActivity] enables keyset pagination (endless scroll): pass the
+  /// `lastActivityAt` of the final item already shown to fetch the next page.
+  /// [limit] caps the page size.
   Future<List<CommunityModel>> getCommunities({
     CommunityType? type,
     String? language,
     String? city,
     String? searchQuery,
+    DateTime? startAfterActivity,
+    int limit = 50,
   });
 
   /// Get a community by ID
@@ -154,6 +160,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     String? language,
     String? city,
     String? searchQuery,
+    DateTime? startAfterActivity,
+    int limit = 50,
   }) async {
     try {
       var query = _communitiesRef.where('isPublic', isEqualTo: true);
@@ -176,12 +184,18 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
       query = query.orderBy('lastActivityAt', descending: true);
 
+      // Keyset pagination cursor for endless scroll — start strictly after the
+      // last item already shown (ordered by lastActivityAt desc).
+      if (startAfterActivity != null) {
+        query = query.startAfter([Timestamp.fromDate(startAfterActivity)]);
+      }
+
       // Pull a wider page when extra filters will be applied client-side so the
       // in-memory narrowing still yields a full-looking list.
       final needsClientFilter =
           (hasType && (hasLang || hasCity)) || (hasLang && hasCity);
       final snapshot =
-          await query.limit(needsClientFilter ? 150 : 50).get();
+          await query.limit(needsClientFilter ? limit * 3 : limit).get();
 
       var communities = snapshot.docs
           .map(CommunityModel.fromFirestore)

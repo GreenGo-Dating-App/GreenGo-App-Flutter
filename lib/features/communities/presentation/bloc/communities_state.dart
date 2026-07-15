@@ -25,23 +25,37 @@ class CommunitiesLoaded extends CommunitiesState {
     this.userCommunities = const [],
     this.recommended = const [],
     this.languageCircles = const [],
+    this.hasMoreCommunities = true,
+    this.isLoadingMore = false,
   });
   final List<Community> communities;
   final List<Community> userCommunities;
   final List<Community> recommended;
   final List<Community> languageCircles;
 
+  /// Discover pagination: whether another page of public communities may exist
+  /// (false once the last fetch returned fewer than the page size).
+  final bool hasMoreCommunities;
+
+  /// True while a "load more" page is being fetched (drives the trailing
+  /// spinner without blanking the existing list).
+  final bool isLoadingMore;
+
   CommunitiesLoaded copyWith({
     List<Community>? communities,
     List<Community>? userCommunities,
     List<Community>? recommended,
     List<Community>? languageCircles,
+    bool? hasMoreCommunities,
+    bool? isLoadingMore,
   }) {
     return CommunitiesLoaded(
       communities: communities ?? this.communities,
       userCommunities: userCommunities ?? this.userCommunities,
       recommended: recommended ?? this.recommended,
       languageCircles: languageCircles ?? this.languageCircles,
+      hasMoreCommunities: hasMoreCommunities ?? this.hasMoreCommunities,
+      isLoadingMore: isLoadingMore ?? this.isLoadingMore,
     );
   }
 }

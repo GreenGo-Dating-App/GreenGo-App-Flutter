@@ -21,6 +21,23 @@ class LoadCommunities extends CommunitiesEvent {
   final String? searchQuery;
 }
 
+/// Load the NEXT page of public communities for the Discover tab (endless
+/// scroll). Carries the active filter so pagination stays consistent with the
+/// current view; the bloc appends the page to the existing list.
+class LoadMoreCommunities extends CommunitiesEvent {
+
+  const LoadMoreCommunities({
+    this.type,
+    this.language,
+    this.city,
+    this.searchQuery,
+  });
+  final CommunityType? type;
+  final String? language;
+  final String? city;
+  final String? searchQuery;
+}
+
 /// Load user's joined communities
 class LoadUserCommunities extends CommunitiesEvent {
 
