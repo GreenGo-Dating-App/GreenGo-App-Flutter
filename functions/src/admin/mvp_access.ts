@@ -334,6 +334,8 @@ export const approveUser = onCall<ApproveUserRequest>(
           body: message.body,
           read: false,
           sent: false,
+          // This handler sends its own push below — skip the parity trigger.
+          pushSent: true,
           createdAt: FieldValue.serverTimestamp(),
         });
 
@@ -407,6 +409,8 @@ export const rejectUser = onCall<RejectUserRequest>(
           body: `Your account could not be approved. Reason: ${reason}`,
           read: false,
           sent: false,
+          // This handler sends its own push below — skip the parity trigger.
+          pushSent: true,
           createdAt: FieldValue.serverTimestamp(),
         });
 
@@ -740,6 +744,8 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
             body,
             read: false,
             sent: true,
+            // Broadcast FCM sent below in batches — skip the parity trigger.
+            pushSent: true,
             sentAt: FieldValue.serverTimestamp(),
             createdAt: FieldValue.serverTimestamp(),
           });
@@ -851,6 +857,9 @@ export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
         data,
         read: false,
         sent: !!fcmToken,
+        // Pushed below when a token exists; when absent the parity trigger also
+        // can't push (no token), so stamping true unconditionally is safe.
+        pushSent: true,
         sentAt: fcmToken ? FieldValue.serverTimestamp() : null,
         createdAt: FieldValue.serverTimestamp(),
       });

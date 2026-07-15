@@ -137,6 +137,8 @@ async function notifyCommunityMembers(communityId, notif) {
                 imageUrl: eventImage !== null && eventImage !== void 0 ? eventImage : null,
                 createdAt: admin.firestore.FieldValue.serverTimestamp(),
                 isRead: false,
+                // Members were already multicast above — skip the parity trigger.
+                pushSent: true,
             });
             ops++;
             if (ops >= BATCH_LIMIT) {

@@ -173,6 +173,8 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)('com
                 data: dataPayload,
                 createdAt: admin.firestore.FieldValue.serverTimestamp(),
                 isRead: false,
+                // Members were already multicast above — skip the parity trigger.
+                pushSent: true,
             });
             ops++;
             if (ops >= BATCH_LIMIT) {

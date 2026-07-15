@@ -79,6 +79,8 @@ async function emit(
   if (!(await claimOnce(dedupKey))) return;
 
   // In-app doc (Flutter NotificationModel shape + actor fields).
+  // pushSent: true — this function sends its own push below, so the
+  // onNotificationCreatedPush parity trigger must skip it (no double-push).
   await db.collection('notifications').add({
     userId: recipientId,
     type,
@@ -90,6 +92,7 @@ async function emit(
     createdAt: admin.firestore.FieldValue.serverTimestamp(),
     actorId: actor.id,
     actorName: actor.name,
+    pushSent: true,
     ...(actor.photo ? { imageUrl: actor.photo } : {}),
   });
 
