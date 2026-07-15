@@ -5531,6 +5531,18 @@ abstract class AppLocalizations {
   /// **'Community Name'**
   String get communitiesCommunityName;
 
+  /// No description provided for @communitiesCoverImageLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cover image'**
+  String get communitiesCoverImageLabel;
+
+  /// No description provided for @communitiesCoverImageHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a cover photo (optional)'**
+  String get communitiesCoverImageHint;
+
   /// No description provided for @communitiesCommunityType.
   ///
   /// In en, this message translates to:
@@ -21551,6 +21563,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ticket tiers'**
   String get eventsTicketTiers;
+
+  /// No description provided for @eventsRepeatHelper.
+  ///
+  /// In en, this message translates to:
+  /// **'\'Every\' sets the gap between dates (e.g. every 2 weeks); \'Occurrences\' is how many dates are created in total.'**
+  String get eventsRepeatHelper;
+
+  /// No description provided for @eventsTicketTiersHelper.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional price levels (e.g. Standard, VIP) that set ticket price and capacity. They do not control coin access to the event.'**
+  String get eventsTicketTiersHelper;
 
   /// No description provided for @eventsAddTier.
   ///

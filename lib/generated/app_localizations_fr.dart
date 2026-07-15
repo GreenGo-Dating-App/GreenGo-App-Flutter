@@ -3130,6 +3130,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get communitiesCommunityName => 'Nom de la Communaute';
 
   @override
+  String get communitiesCoverImageLabel => 'Image de couverture';
+
+  @override
+  String get communitiesCoverImageHint =>
+      'Ajouter une photo de couverture (facultatif)';
+
+  @override
   String get communitiesCommunityType => 'Type de Communaute';
 
   @override
@@ -12282,6 +12289,14 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get eventsTicketTiers => 'Catégories de billets';
+
+  @override
+  String get eventsRepeatHelper =>
+      '\'Tous les\' definit l\'intervalle entre les dates (ex. toutes les 2 semaines); \'Occurrences\' est le nombre total de dates creees.';
+
+  @override
+  String get eventsTicketTiersHelper =>
+      'Niveaux de prix facultatifs (ex. Standard, VIP) qui definissent le prix et la capacite. Ils ne controlent pas l acces par pieces a l evenement.';
 
   @override
   String get eventsAddTier => 'Ajouter une catégorie';

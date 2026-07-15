@@ -215,6 +215,18 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             final promo = _community.pinnedPromo;
             return Column(
               children: [
+                // Hero/cover image banner (when the community has one).
+                if ((_community.imageUrl ?? '').isNotEmpty)
+                  SizedBox(
+                    height: 140,
+                    width: double.infinity,
+                    child: Image.network(
+                      _community.imageUrl!,
+                      fit: BoxFit.cover,
+                      errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                    ),
+                  ),
+
                 // Pinned sponsor promo (glass card at the very top)
                 if (promo != null)
                   SponsoredPromoCard(

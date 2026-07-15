@@ -3077,6 +3077,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get communitiesCommunityName => 'Community Name';
 
   @override
+  String get communitiesCoverImageLabel => 'Cover image';
+
+  @override
+  String get communitiesCoverImageHint => 'Add a cover photo (optional)';
+
+  @override
   String get communitiesCommunityType => 'Community Type';
 
   @override
@@ -12079,6 +12085,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventsTicketTiers => 'Ticket tiers';
+
+  @override
+  String get eventsRepeatHelper =>
+      '\'Every\' sets the gap between dates (e.g. every 2 weeks); \'Occurrences\' is how many dates are created in total.';
+
+  @override
+  String get eventsTicketTiersHelper =>
+      'Optional price levels (e.g. Standard, VIP) that set ticket price and capacity. They do not control coin access to the event.';
 
   @override
   String get eventsAddTier => 'Add tier';

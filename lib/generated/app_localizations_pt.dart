@@ -3108,6 +3108,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesCommunityName => 'Nome da Comunidade';
 
   @override
+  String get communitiesCoverImageLabel => 'Imagem de capa';
+
+  @override
+  String get communitiesCoverImageHint =>
+      'Adicione uma foto de capa (opcional)';
+
+  @override
   String get communitiesCommunityType => 'Tipo de Comunidade';
 
   @override
@@ -12209,6 +12216,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsTicketTiers => 'Tipos de bilhete';
 
   @override
+  String get eventsRepeatHelper =>
+      '\'A cada\' define o intervalo entre as datas (ex. a cada 2 semanas); \'Ocorrencias\' e quantas datas sao criadas no total.';
+
+  @override
+  String get eventsTicketTiersHelper =>
+      'Niveis de preco opcionais (ex. Padrao, VIP) que definem o preco e a capacidade. Nao controlam o acesso por moedas ao evento.';
+
+  @override
   String get eventsAddTier => 'Adicionar tipo';
 
   @override
@@ -16034,6 +16049,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get communitiesCommunityName => 'Nome da Comunidade';
+
+  @override
+  String get communitiesCoverImageLabel => 'Imagem de capa';
+
+  @override
+  String get communitiesCoverImageHint =>
+      'Adicione uma foto de capa (opcional)';
 
   @override
   String get communitiesCommunityType => 'Tipo de Comunidade';
@@ -25135,6 +25157,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsTicketTiers => 'Tipos de ingresso';
+
+  @override
+  String get eventsRepeatHelper =>
+      '\'A cada\' define o intervalo entre as datas (ex. a cada 2 semanas); \'Ocorrencias\' e quantas datas sao criadas no total.';
+
+  @override
+  String get eventsTicketTiersHelper =>
+      'Niveis de preco opcionais (ex. Padrao, VIP) que definem o preco e a capacidade. Nao controlam o acesso por moedas ao evento.';
 
   @override
   String get eventsAddTier => 'Adicionar tipo';

@@ -3097,17 +3097,48 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
           // Existing extra photos (kept unless removed).
           ..._existingPhotoUrls.map((u) => slot(
                 url: u,
-                onTap: () {},
+                onTap: () => _previewEventPhoto(url: u),
                 onRemove: () => setState(() => _existingPhotoUrls.remove(u)),
               )),
           // Newly added extra photos.
           ..._extraPhotos.map((f) => slot(
                 file: f,
-                onTap: () {},
+                onTap: () => _previewEventPhoto(file: f),
                 onRemove: () => setState(() => _extraPhotos.remove(f)),
               )),
           if (_extraCount < 4) slot(onTap: _pickExtraPhoto),
         ],
+      ),
+    );
+  }
+
+  /// Full-screen, pinch-to-zoom preview of an event photo (file or URL).
+  void _previewEventPhoto({File? file, String? url}) {
+    if (file == null && (url == null || url.isEmpty)) return;
+    showDialog<void>(
+      context: context,
+      barrierColor: Colors.black,
+      builder: (ctx) => GestureDetector(
+        onTap: () => Navigator.of(ctx).pop(),
+        child: Stack(
+          children: [
+            Center(
+              child: InteractiveViewer(
+                child: file != null
+                    ? Image.file(file, fit: BoxFit.contain)
+                    : Image.network(url!, fit: BoxFit.contain),
+              ),
+            ),
+            Positioned(
+              top: 40,
+              right: 16,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white, size: 28),
+                onPressed: () => Navigator.of(ctx).pop(),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -3511,6 +3542,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         Text(l10n.eventsRepeats,
             style: const TextStyle(
                 color: AppColors.textSecondary, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 4),
+        Text(
+          l10n.eventsRepeatHelper,
+          style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
+        ),
         const SizedBox(height: 8),
         DropdownButtonFormField<RecurrenceFrequency>(
           initialValue: _recurFreq,
@@ -3597,6 +3633,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         Text(l10n.eventsTicketTiers,
             style: const TextStyle(
                 color: AppColors.textSecondary, fontWeight: FontWeight.bold)),
+        const SizedBox(height: 4),
+        Text(
+          l10n.eventsTicketTiersHelper,
+          style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
+        ),
+        const SizedBox(height: 4),
         ..._tiers.map((t) => ListTile(
               contentPadding: EdgeInsets.zero,
               leading:

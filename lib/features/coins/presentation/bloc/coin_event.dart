@@ -175,12 +175,16 @@ class AcceptCoinGiftEvent extends CoinEvent {
   const AcceptCoinGiftEvent({
     required this.giftId,
     required this.userId,
+    this.amount = 0,
   });
   final String giftId;
   final String userId;
+  /// The gift amount (known by the UI from the pending gift) so the resulting
+  /// GiftAccepted state reports the real value instead of 0.
+  final int amount;
 
   @override
-  List<Object?> get props => [giftId, userId];
+  List<Object?> get props => [giftId, userId, amount];
 }
 
 class DeclineCoinGiftEvent extends CoinEvent {

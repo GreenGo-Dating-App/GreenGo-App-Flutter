@@ -3119,6 +3119,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get communitiesCommunityName => 'Nome Comunita';
 
   @override
+  String get communitiesCoverImageLabel => 'Immagine di copertina';
+
+  @override
+  String get communitiesCoverImageHint =>
+      'Aggiungi una foto di copertina (facoltativo)';
+
+  @override
   String get communitiesCommunityType => 'Tipo Comunita';
 
   @override
@@ -12224,6 +12231,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsTicketTiers => 'Categorie di biglietti';
+
+  @override
+  String get eventsRepeatHelper =>
+      '\'Ogni\' imposta l\'intervallo tra le date (es. ogni 2 settimane); \'Occorrenze\' e quante date vengono create in totale.';
+
+  @override
+  String get eventsTicketTiersHelper =>
+      'Livelli di prezzo opzionali (es. Standard, VIP) che impostano prezzo e capienza. Non controllano l accesso con monete all evento.';
 
   @override
   String get eventsAddTier => 'Aggiungi categoria';

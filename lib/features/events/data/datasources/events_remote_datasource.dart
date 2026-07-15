@@ -224,13 +224,15 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       var query =
           _eventsCollection.where('status', whereIn: _liveStatuses);
 
-      // Filter by category
-      if (category != null && category.isNotEmpty) {
-        query = query.where('category', isEqualTo: category);
-      }
+      final hasCategory = category != null && category.isNotEmpty;
+      final hasCity = city != null && city.isNotEmpty;
 
-      // Filter by city
-      if (city != null && city.isNotEmpty) {
+      // Only ONE of category/city goes server-side (each has a status+X+startDate
+      // index); combining both server-side would need an unindexed composite and
+      // throw. Category takes priority; city is then narrowed client-side.
+      if (hasCategory) {
+        query = query.where('category', isEqualTo: category);
+      } else if (hasCity) {
         query = query.where('city', isEqualTo: city);
       }
 
@@ -245,16 +247,24 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       // Order by start date
       query = query.orderBy('startDate', descending: false);
 
-      // Limit results
-      query = query.limit(100);
+      // Pull a wider page when city must also be narrowed client-side.
+      query = query.limit(hasCategory && hasCity ? 200 : 100);
 
       final snapshot = await query.get();
 
-      final events = snapshot.docs
+      var events = snapshot.docs
           .map(EventModel.fromFirestore)
           .where((e) => e.isPublic) // private events excluded from discovery
           .where((e) => e.isLive) // scheduled-but-not-yet-due events hidden
           .toList();
+
+      // Narrow the remaining filter (city) client-side when both were requested.
+      if (hasCategory && hasCity) {
+        final lc = city.toLowerCase();
+        events = events
+            .where((e) => (e.city ?? '').toLowerCase() == lc)
+            .toList();
+      }
 
       debugPrint('Events loaded: ${events.length} events');
       return events;

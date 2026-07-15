@@ -1,7 +1,11 @@
+import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -46,6 +50,10 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   final List<String> _selectedLanguages = [];
   final List<String> _tags = [];
   bool _showPreview = false;
+
+  // Hero/cover image (optional). Picked locally, uploaded to Storage on create.
+  File? _coverImage;
+  bool _uploadingCover = false;
 
   // Sponsorship (Platinum-business feature).
   bool _isSponsored = false;
@@ -158,6 +166,10 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Cover / hero image (optional)
+            _buildCoverPicker(),
+            const SizedBox(height: AppDimensions.paddingL),
+
             // Name
             _buildSectionLabel(AppLocalizations.of(context)!.communitiesCommunityName),
             const SizedBox(height: 6),
@@ -627,6 +639,99 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
     );
   }
 
+  /// Optional cover image picker (16:9 banner).
+  Widget _buildCoverPicker() {
+    final l10n = AppLocalizations.of(context)!;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _buildSectionLabel(l10n.communitiesCoverImageLabel),
+        const SizedBox(height: 6),
+        GestureDetector(
+          onTap: _pickCoverImage,
+          child: AspectRatio(
+            aspectRatio: 16 / 9,
+            child: Container(
+              decoration: BoxDecoration(
+                color: AppColors.backgroundCard,
+                borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+                border: Border.all(color: AppColors.divider, width: 0.5),
+                image: _coverImage != null
+                    ? DecorationImage(
+                        image: FileImage(_coverImage!),
+                        fit: BoxFit.cover,
+                      )
+                    : null,
+              ),
+              child: _coverImage != null
+                  ? Align(
+                      alignment: Alignment.topRight,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8),
+                        child: CircleAvatar(
+                          radius: 16,
+                          backgroundColor: Colors.black54,
+                          child: IconButton(
+                            padding: EdgeInsets.zero,
+                            iconSize: 18,
+                            icon: const Icon(Icons.close, color: Colors.white),
+                            onPressed: () =>
+                                setState(() => _coverImage = null),
+                          ),
+                        ),
+                      ),
+                    )
+                  : Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.add_photo_alternate_outlined,
+                            color: AppColors.textTertiary, size: 32),
+                        const SizedBox(height: 6),
+                        Text(
+                          l10n.communitiesCoverImageHint,
+                          style: const TextStyle(
+                              color: AppColors.textTertiary, fontSize: 12),
+                        ),
+                      ],
+                    ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Future<void> _pickCoverImage() async {
+    HapticFeedback.selectionClick();
+    final picked = await ImagePicker().pickImage(
+      source: ImageSource.gallery,
+      maxWidth: 1600,
+      imageQuality: 82,
+    );
+    if (picked != null) {
+      setState(() => _coverImage = File(picked.path));
+    }
+  }
+
+  /// Upload the picked cover image to Storage; returns its download URL or null.
+  Future<String?> _uploadCoverImage(String communityOwnerId) async {
+    if (_coverImage == null) return null;
+    try {
+      final fileName = 'cover_${DateTime.now().millisecondsSinceEpoch}.jpg';
+      final ref = FirebaseStorage.instance
+          .ref()
+          .child('communities/$communityOwnerId/$fileName');
+      final task = await ref.putFile(
+        _coverImage!,
+        SettableMetadata(contentType: 'image/jpeg'),
+      );
+      return task.ref.getDownloadURL();
+    } catch (e) {
+      debugPrint('Cover image upload failed: $e');
+      return null;
+    }
+  }
+
   void _addTag(String tag) {
     final trimmed = tag.trim().toLowerCase().replaceAll(' ', '-');
     if (trimmed.isNotEmpty && !_tags.contains(trimmed)) {
@@ -644,7 +749,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
     }
   }
 
-  Community _buildCommunityFromForm() {
+  Community _buildCommunityFromForm({String? imageUrl}) {
     return Community(
       id: '',
       name: _nameController.text.trim(),
@@ -654,6 +759,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       createdByName: _getCurrentUserName(),
       createdAt: DateTime.now(),
       memberCount: 1,
+      imageUrl: imageUrl,
       languages: _selectedLanguages,
       tags: _tags,
       isPublic: _isPublic,
@@ -680,11 +786,23 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
     return 'Unknown';
   }
 
-  void _createCommunity() {
-    final community = _buildCommunityFromForm();
+  Future<void> _createCommunity() async {
     final userId = FirebaseAuth.instance.currentUser?.uid;
     if (userId == null) return;
+    if (_uploadingCover) return;
 
+    // Upload the cover image (if any) BEFORE creating the community so its URL
+    // is stored on the doc.
+    String? imageUrl;
+    if (_coverImage != null) {
+      setState(() => _uploadingCover = true);
+      imageUrl = await _uploadCoverImage(userId);
+      if (!mounted) return;
+      setState(() => _uploadingCover = false);
+    }
+
+    final community = _buildCommunityFromForm(imageUrl: imageUrl);
+    if (!mounted) return;
     context.read<CommunitiesBloc>().add(
           CreateCommunity(
             community: community,
