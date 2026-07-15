@@ -4035,6 +4035,8 @@
   "exploreFeaturedCommunity": "Empfohlene Community-Events",
   "notificationMarkAllRead": "Alle als gelesen markieren",
   "notificationsDeleteUnread": "Ungelesene loeschen",
+  "notificationsDeleteAll": "Alle loeschen",
+  "notificationsDeleteAllConfirm": "Alle Benachrichtigungen auf dieser Seite dauerhaft loeschen? Dies kann nicht rueckgaengig gemacht werden.",
   "notificationsDeleteUnreadConfirm": "Alle ungelesenen Benachrichtigungen dauerhaft loeschen? Dies kann nicht rueckgaengig gemacht werden.",
   "analyticsTitle": "Analysen",
   "analyticsPlatinumOnly": "Analysen sind eine Platinum-Funktion.",

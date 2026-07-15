@@ -4035,6 +4035,8 @@
   "exploreFeaturedCommunity": "Eventos da comunidade em destaque",
   "notificationMarkAllRead": "Marcar tudo como lido",
   "notificationsDeleteUnread": "Excluir nao lidas",
+  "notificationsDeleteAll": "Excluir tudo",
+  "notificationsDeleteAllConfirm": "Excluir permanentemente todas as notificacoes desta pagina? Isso nao pode ser desfeito.",
   "notificationsDeleteUnreadConfirm": "Excluir permanentemente todas as notificacoes nao lidas? Isso nao pode ser desfeito.",
   "analyticsTitle": "Análises",
   "analyticsPlatinumOnly": "As análises são uma funcionalidade Platinum.",

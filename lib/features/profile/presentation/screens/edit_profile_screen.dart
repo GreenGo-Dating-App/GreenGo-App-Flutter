@@ -54,7 +54,6 @@ import '../../../passport/presentation/screens/cultural_passport_screen.dart';
 import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../business/presentation/screens/business_account_screen.dart';
 import '../../../business/presentation/screens/business_hub_screen.dart';
-import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart' as profile_entity;
 import '../../domain/entities/profile.dart';
@@ -308,11 +307,10 @@ class EditProfileScreen extends StatelessWidget {
                   ),
 
                   // ── Edit Profile (collapsed by default) ──
-                  // Hidden for business accounts — their public presence is the
-                  // storefront (edited via the Business hub), not this personal
-                  // profile. Location & Languages remain editable in the
-                  // storefront editor. Reappears if the account reverts to personal.
-                  if (!activeProfile.isBusiness)
+                  // Always shown, including for business accounts: the personal
+                  // profile is a separate identity from the storefront and stays
+                  // fully editable here. (The storefront is edited via the
+                  // Business hub.)
                   TourShowcase(
                     showcaseKey: TourKeys.profileEditAccordion,
                     title: AppLocalizations.of(context)!.tourProfileEditTitle,
@@ -739,21 +737,9 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   void _navigateToViewProfile(BuildContext context, Profile currentProfile) {
-    // For business accounts, "View my profile" shows the PUBLIC storefront
-    // (what visitors actually see) instead of the standard dating-style
-    // profile card. The editable storefront editor and account settings stay
-    // reachable from the dedicated storefront menu tiles below.
-    if (currentProfile.isBusiness) {
-      Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (context) => BusinessStorefrontScreen(
-            business: currentProfile,
-            currentUserId: currentProfile.userId,
-          ),
-        ),
-      );
-      return;
-    }
+    // "View my profile" always shows the NORMAL personal profile page (how other
+    // users see you), even for business accounts — the storefront is a separate
+    // identity reachable from the Business hub tiles.
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => ProfileDetailScreen(

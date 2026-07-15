@@ -77,32 +77,34 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
           actions: [
             BlocBuilder<NotificationsBloc, NotificationsState>(
               builder: (context, state) {
-                if (state is NotificationsLoaded && state.unreadCount > 0) {
+                if (state is NotificationsLoaded) {
                   return Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      TourShowcase(
-                        showcaseKey: TourKeys.notifMarkAll,
-                        title: l10n.tourNotifMarkAllTitle,
-                        description: l10n.tourNotifMarkAllDesc,
-                        gesture: TourGesture.tap,
-                        child: TextButton(
-                          onPressed: () {
-                            context.read<NotificationsBloc>().add(
-                                  NotificationsMarkedAllAsRead(userId),
-                                );
-                          },
-                          child: Text(
-                            l10n.notificationMarkAllRead,
-                            style: const TextStyle(color: AppColors.richGold),
+                      if (state.unreadCount > 0)
+                        TourShowcase(
+                          showcaseKey: TourKeys.notifMarkAll,
+                          title: l10n.tourNotifMarkAllTitle,
+                          description: l10n.tourNotifMarkAllDesc,
+                          gesture: TourGesture.tap,
+                          child: TextButton(
+                            onPressed: () {
+                              context.read<NotificationsBloc>().add(
+                                    NotificationsMarkedAllAsRead(userId),
+                                  );
+                            },
+                            child: Text(
+                              l10n.notificationMarkAllRead,
+                              style: const TextStyle(color: AppColors.richGold),
+                            ),
                           ),
                         ),
-                      ),
+                      // Remove ALL notifications shown on the page (read + unread).
                       IconButton(
-                        tooltip: l10n.notificationsDeleteUnread,
+                        tooltip: l10n.notificationsDeleteAll,
                         icon: const Icon(Icons.delete_sweep_outlined,
                             color: AppColors.textSecondary),
-                        onPressed: () => _confirmDeleteUnread(context, l10n),
+                        onPressed: () => _confirmDeleteAll(context, l10n),
                       ),
                     ],
                   );
@@ -400,8 +402,8 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     // Unknown target — no-op.
   }
 
-  /// Confirm, then permanently delete all UNREAD notifications.
-  Future<void> _confirmDeleteUnread(
+  /// Confirm, then permanently delete ALL notifications (read + unread).
+  Future<void> _confirmDeleteAll(
     BuildContext context,
     AppLocalizations l10n,
   ) async {
@@ -411,11 +413,11 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          l10n.notificationsDeleteUnread,
+          l10n.notificationsDeleteAll,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          l10n.notificationsDeleteUnreadConfirm,
+          l10n.notificationsDeleteAllConfirm,
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
@@ -438,7 +440,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
       ),
     );
     if (confirmed == true) {
-      bloc.add(NotificationsUnreadCleared(userId));
+      bloc.add(NotificationsAllCleared(userId));
     }
   }
 

@@ -11663,6 +11663,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notificationsDeleteUnread => 'Delete unread';
 
   @override
+  String get notificationsDeleteAll => 'Delete all';
+
+  @override
+  String get notificationsDeleteAllConfirm =>
+      'Permanently delete all notifications on this page? This cannot be undone.';
+
+  @override
   String get notificationsDeleteUnreadConfirm =>
       'Permanently delete all unread notifications? This cannot be undone.';
 

@@ -11856,6 +11856,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notificationsDeleteUnread => 'Supprimer les non lues';
 
   @override
+  String get notificationsDeleteAll => 'Tout supprimer';
+
+  @override
+  String get notificationsDeleteAllConfirm =>
+      'Supprimer definitivement toutes les notifications de cette page ? Cette action est irreversible.';
+
+  @override
   String get notificationsDeleteUnreadConfirm =>
       'Supprimer definitivement toutes les notifications non lues ? Cette action est irreversible.';
 

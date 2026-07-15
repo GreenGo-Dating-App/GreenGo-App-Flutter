@@ -20790,6 +20790,18 @@ abstract class AppLocalizations {
   /// **'Delete unread'**
   String get notificationsDeleteUnread;
 
+  /// No description provided for @notificationsDeleteAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete all'**
+  String get notificationsDeleteAll;
+
+  /// No description provided for @notificationsDeleteAllConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Permanently delete all notifications on this page? This cannot be undone.'**
+  String get notificationsDeleteAllConfirm;
+
   /// No description provided for @notificationsDeleteUnreadConfirm.
   ///
   /// In en, this message translates to:

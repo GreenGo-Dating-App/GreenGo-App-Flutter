@@ -211,6 +211,9 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
   /// up. De-duped by id and capped at 20.
   Future<List<Event>> _searchEvents(String q) async {
     final lower = q.toLowerCase();
+    // Only surface events happening TODAY or in the FUTURE (never past dates).
+    final now = DateTime.now();
+    final startOfToday = DateTime(now.year, now.month, now.day);
     // First alphanumeric token >= 2 chars — mirrors the datasource tokenizer so
     // the query lines up with how `searchKeywords` is built.
     final token = lower
@@ -229,7 +232,11 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
             .get();
         for (final doc in snap.docs) {
           final e = EventModel.fromFirestore(doc);
-          if (e.isLive && e.isPublic) byId[e.id] = e;
+          if (e.isLive &&
+              e.isPublic &&
+              !e.startDate.isBefore(startOfToday)) {
+            byId[e.id] = e;
+          }
         }
       } catch (_) {/* keep whatever we have */}
     }
@@ -242,6 +249,7 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       for (final e in mine) {
         if (byId.containsKey(e.id)) continue;
         if (!e.isLive) continue;
+        if (e.startDate.isBefore(startOfToday)) continue; // future-only
         if (_eventMatches(e, lower)) byId[e.id] = e;
       }
     } catch (_) {/* keep whatever we have */}

@@ -3496,6 +3496,8 @@
   "exploreFeaturedCommunity": "Événements communautaires à la une",
   "notificationMarkAllRead": "Tout marquer comme lu",
   "notificationsDeleteUnread": "Supprimer les non lues",
+  "notificationsDeleteAll": "Tout supprimer",
+  "notificationsDeleteAllConfirm": "Supprimer definitivement toutes les notifications de cette page ? Cette action est irreversible.",
   "notificationsDeleteUnreadConfirm": "Supprimer definitivement toutes les notifications non lues ? Cette action est irreversible.",
   "analyticsTitle": "Statistiques",
   "analyticsPlatinumOnly": "Les statistiques sont une fonctionnalité Platinum.",
