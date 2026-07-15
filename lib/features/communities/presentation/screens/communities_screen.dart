@@ -1,12 +1,18 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/community.dart';
@@ -82,7 +88,21 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    final l10n = AppLocalizations.of(context)!;
+    final tourUserId = _currentUserId;
+    return ShowCaseWidget(
+      builder: (showcaseContext) => TourTrigger(
+        // First-time Communities tour: highlights the tabs and the create button.
+        onVisible: (tourContext) {
+          if (tourUserId == null) return;
+          TourController.instance.maybeStartMiniTour(
+            tourContext,
+            tourId: TourController.communitiesTourId,
+            userId: tourUserId,
+            keys: [TourKeys.communitiesTabs, TourKeys.communitiesCreate],
+          );
+        },
+        child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
@@ -95,22 +115,31 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             fontWeight: FontWeight.bold,
           ),
         ),
-        bottom: TabBar(
-          controller: _tabController,
-          isScrollable: true,
-          tabAlignment: TabAlignment.start,
-          indicatorColor: AppColors.richGold,
-          labelColor: AppColors.richGold,
-          unselectedLabelColor: AppColors.textTertiary,
-          labelStyle: const TextStyle(
-            fontWeight: FontWeight.w600,
-            fontSize: 14,
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(kTextTabBarHeight),
+          child: TourShowcase(
+            showcaseKey: TourKeys.communitiesTabs,
+            title: l10n.tourCommunitiesTabsTitle,
+            description: l10n.tourCommunitiesTabsDesc,
+            gesture: TourGesture.tap,
+            child: TabBar(
+              controller: _tabController,
+              isScrollable: true,
+              tabAlignment: TabAlignment.start,
+              indicatorColor: AppColors.richGold,
+              labelColor: AppColors.richGold,
+              unselectedLabelColor: AppColors.textTertiary,
+              labelStyle: const TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 14,
+              ),
+              tabs: [
+                Tab(text: AppLocalizations.of(context)!.communitiesTabJoined),
+                Tab(text: AppLocalizations.of(context)!.communitiesTabDiscover),
+                Tab(text: AppLocalizations.of(context)!.communitiesTabManaged),
+              ],
+            ),
           ),
-          tabs: [
-            Tab(text: AppLocalizations.of(context)!.communitiesTabJoined),
-            Tab(text: AppLocalizations.of(context)!.communitiesTabDiscover),
-            Tab(text: AppLocalizations.of(context)!.communitiesTabManaged),
-          ],
         ),
       ),
       body: BlocConsumer<CommunitiesBloc, CommunitiesState>(
@@ -133,16 +162,25 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           );
         },
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: _navigateToCreateCommunity,
-        backgroundColor: AppColors.richGold,
-        icon: const Icon(Icons.add, color: AppColors.deepBlack),
-        label: Text(
-          AppLocalizations.of(context)!.communitiesCreateLabel,
-          style: const TextStyle(
-            color: AppColors.deepBlack,
-            fontWeight: FontWeight.w600,
+      floatingActionButton: TourShowcase(
+        showcaseKey: TourKeys.communitiesCreate,
+        title: l10n.tourCommunitiesCreateTitle,
+        description: l10n.tourCommunitiesCreateDesc,
+        gesture: TourGesture.tap,
+        targetShapeBorder: const StadiumBorder(),
+        child: FloatingActionButton.extended(
+          onPressed: _navigateToCreateCommunity,
+          backgroundColor: AppColors.richGold,
+          icon: const Icon(Icons.add, color: AppColors.deepBlack),
+          label: Text(
+            AppLocalizations.of(context)!.communitiesCreateLabel,
+            style: const TextStyle(
+              color: AppColors.deepBlack,
+              fontWeight: FontWeight.w600,
+            ),
           ),
+        ),
+      ),
         ),
       ),
     );

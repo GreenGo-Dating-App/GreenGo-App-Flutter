@@ -13013,4 +13013,80 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get communitiesTipHint => 'Comparte un consejo útil…';
+
+  @override
+  String get tourCommunitiesTabsTitle => 'Tres formas de explorar';
+
+  @override
+  String get tourCommunitiesTabsDesc =>
+      'Cambia entre los grupos a los que te uniste, descubre nuevos y gestiona las comunidades que creaste.';
+
+  @override
+  String get tourCommunitiesCreateTitle => 'Crea una comunidad';
+
+  @override
+  String get tourCommunitiesCreateDesc =>
+      'Toca aqui para crear tu propia comunidad y reunir a la gente.';
+
+  @override
+  String get tourEventsCreateTitle => 'Crea un evento';
+
+  @override
+  String get tourEventsCreateDesc =>
+      'Toca el mas para organizar tu propio evento o encuentro.';
+
+  @override
+  String get tourEventsSearchTitle => 'Busca eventos';
+
+  @override
+  String get tourEventsSearchDesc =>
+      'Encuentra eventos por ciudad, pais o nombre y ordenalos a tu manera.';
+
+  @override
+  String get tourEventsTabsTitle => 'Explora cada pestana';
+
+  @override
+  String get tourEventsTabsDesc =>
+      'Explora eventos de la comunidad, eventos en vivo, atracciones y experiencias cerca de ti.';
+
+  @override
+  String get tourProfileHubTitle => 'Tu centro de perfil';
+
+  @override
+  String get tourProfileHubDesc =>
+      'Todo sobre tu cuenta esta aqui: editalo, gestiona ajustes y desbloquea funciones premium.';
+
+  @override
+  String get tourProfileViewTitle => 'Previsualiza tu perfil';
+
+  @override
+  String get tourProfileViewDesc =>
+      'Mira exactamente como ven los demas tu perfil.';
+
+  @override
+  String get tourProfileEditTitle => 'Edita tus datos';
+
+  @override
+  String get tourProfileEditDesc =>
+      'Toca para actualizar tus fotos, biografia, intereses, ubicacion y mas.';
+
+  @override
+  String get tourNotifHubTitle => 'Tus notificaciones';
+
+  @override
+  String get tourNotifHubDesc =>
+      'Cada me gusta, match, mensaje y novedad de eventos llega aqui.';
+
+  @override
+  String get tourNotifOpenTitle => 'Abre y gestiona';
+
+  @override
+  String get tourNotifOpenDesc =>
+      'Toca una notificacion para abrirla o deslizala a la izquierda para eliminarla.';
+
+  @override
+  String get tourNotifMarkAllTitle => 'Vacia lo no leido';
+
+  @override
+  String get tourNotifMarkAllDesc => 'Marca todo como leido con un solo toque.';
 }

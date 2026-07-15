@@ -9,6 +9,7 @@ import 'dart:math' as math;
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -19,6 +20,11 @@ import '../../../../core/services/location_share_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/tier_limits_service.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../../../business/data/services/leads_service.dart';
@@ -251,9 +257,24 @@ class _EventsScreenState extends State<EventsScreen>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return BlocProvider.value(
       value: _eventsBloc,
-      child: Scaffold(
+      child: ShowCaseWidget(
+        builder: (showcaseContext) => TourTrigger(
+          // First-time Events tour: create button, search field, and the tabs.
+          onVisible: (tourContext) =>
+              TourController.instance.maybeStartMiniTour(
+            tourContext,
+            tourId: TourController.eventsTourId,
+            userId: widget.currentUserId,
+            keys: [
+              TourKeys.eventsCreate,
+              TourKeys.eventsSearch,
+              TourKeys.eventsTabs,
+            ],
+          ),
+          child: Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: AppColors.backgroundDark,
@@ -262,9 +283,16 @@ class _EventsScreenState extends State<EventsScreen>
             style: const TextStyle(color: AppColors.textPrimary),
           ),
           actions: [
-            IconButton(
-              icon: const Icon(Icons.add, color: AppColors.richGold),
-              onPressed: () => _showCreateEventDialog(context),
+            TourShowcase(
+              showcaseKey: TourKeys.eventsCreate,
+              title: l10n.tourEventsCreateTitle,
+              description: l10n.tourEventsCreateDesc,
+              gesture: TourGesture.tap,
+              targetShapeBorder: const CircleBorder(),
+              child: IconButton(
+                icon: const Icon(Icons.add, color: AppColors.richGold),
+                onPressed: () => _showCreateEventDialog(context),
+              ),
             ),
             // Date filter only applies to native tabs (Community / My Events) —
             // Attractions & Experiences have no date filter.
@@ -281,20 +309,29 @@ class _EventsScreenState extends State<EventsScreen>
                 onPressed: () => _showFilterDialog(context),
               ),
           ],
-          bottom: TabBar(
-            controller: _tabController,
-            indicatorColor: AppColors.richGold,
-            labelColor: AppColors.richGold,
-            unselectedLabelColor: AppColors.textSecondary,
-            isScrollable: true,
-            tabAlignment: TabAlignment.start,
-            tabs: [
-              Tab(text: AppLocalizations.of(context)!.eventsTabCommunity),
-              Tab(text: AppLocalizations.of(context)!.eventsTabLiveEvents),
-              Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
-              Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
-              Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
-            ],
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(kTextTabBarHeight),
+            child: TourShowcase(
+              showcaseKey: TourKeys.eventsTabs,
+              title: l10n.tourEventsTabsTitle,
+              description: l10n.tourEventsTabsDesc,
+              gesture: TourGesture.tap,
+              child: TabBar(
+                controller: _tabController,
+                indicatorColor: AppColors.richGold,
+                labelColor: AppColors.richGold,
+                unselectedLabelColor: AppColors.textSecondary,
+                isScrollable: true,
+                tabAlignment: TabAlignment.start,
+                tabs: [
+                  Tab(text: AppLocalizations.of(context)!.eventsTabCommunity),
+                  Tab(text: AppLocalizations.of(context)!.eventsTabLiveEvents),
+                  Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
+                  Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
+                  Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
+                ],
+              ),
+            ),
           ),
         ),
         body: BlocConsumer<EventsBloc, EventsState>(
@@ -358,6 +395,8 @@ class _EventsScreenState extends State<EventsScreen>
           },
         ),
       ),
+        ),
+      ),
     );
   }
 
@@ -401,27 +440,33 @@ class _EventsScreenState extends State<EventsScreen>
       child: Row(
         children: [
           Expanded(
-            child: TextField(
-              style: const TextStyle(color: AppColors.textPrimary),
-              onChanged: (v) {
-                setState(() => _searchQuery = v.trim());
-                // Community tab searches the whole events table.
-                if (_tabController.index == 0) _runCommunitySearch(v.trim());
-              },
-              decoration: InputDecoration(
-                isDense: true,
-                hintText: AppLocalizations.of(context)!.eventsSearchHint,
-                hintStyle: const TextStyle(color: AppColors.textTertiary),
-                prefixIcon:
-                    const Icon(Icons.search, color: AppColors.textSecondary),
-                filled: true,
-                fillColor: AppColors.backgroundCard,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  borderSide: BorderSide.none,
+            child: TourShowcase(
+              showcaseKey: TourKeys.eventsSearch,
+              title: AppLocalizations.of(context)!.tourEventsSearchTitle,
+              description: AppLocalizations.of(context)!.tourEventsSearchDesc,
+              gesture: TourGesture.tap,
+              child: TextField(
+                style: const TextStyle(color: AppColors.textPrimary),
+                onChanged: (v) {
+                  setState(() => _searchQuery = v.trim());
+                  // Community tab searches the whole events table.
+                  if (_tabController.index == 0) _runCommunitySearch(v.trim());
+                },
+                decoration: InputDecoration(
+                  isDense: true,
+                  hintText: AppLocalizations.of(context)!.eventsSearchHint,
+                  hintStyle: const TextStyle(color: AppColors.textTertiary),
+                  prefixIcon:
+                      const Icon(Icons.search, color: AppColors.textSecondary),
+                  filled: true,
+                  fillColor: AppColors.backgroundCard,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none,
+                  ),
+                  contentPadding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 ),
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
               ),
             ),
           ),
