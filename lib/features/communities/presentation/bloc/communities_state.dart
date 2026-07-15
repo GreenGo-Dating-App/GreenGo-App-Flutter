@@ -113,6 +113,13 @@ class CommunityLeft extends CommunitiesState {
   final String communityId;
 }
 
+/// Community permanently deleted (owner action).
+class CommunityDeleted extends CommunitiesState {
+
+  const CommunityDeleted({required this.communityId});
+  final String communityId;
+}
+
 /// Error state
 class CommunitiesError extends CommunitiesState {
 

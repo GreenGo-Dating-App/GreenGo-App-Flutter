@@ -3181,6 +3181,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Leave Community';
 
   @override
+  String get communitiesDeleteCommunity => 'Delete Community';
+
+  @override
+  String communitiesDeleteConfirm(String name) {
+    return 'Permanently delete \"$name\"? All messages, members and content are removed. This cannot be undone.';
+  }
+
+  @override
+  String get communitiesDeletedSuccess => 'Community deleted';
+
+  @override
   String communitiesLeaveConfirm(String name) {
     return 'Are you sure you want to leave \"$name\"?';
   }
@@ -10791,13 +10802,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get membershipTrialSubtitle => '7 days free, then auto-renews yearly';
 
   @override
-  String get membershipTrialFeature1 => 'Unlimited Swipes & Connections';
+  String get membershipTrialFeature1 =>
+      'Create unlimited communities, events & groups';
 
   @override
-  String get membershipTrialFeature2 => '500 Bonus Coins on Activation';
+  String get membershipTrialFeature2 =>
+      'Ad-free experience — no advertisements';
 
   @override
-  String get membershipTrialFeature3 => 'Full Access to All Features';
+  String get membershipTrialFeature3 =>
+      '500 bonus coins + full access to every feature';
+
+  @override
+  String get membershipHaveCoupon => 'Have a coupon code?';
 
   @override
   String get membershipTrialCta => 'Start 7-Day Free Trial';

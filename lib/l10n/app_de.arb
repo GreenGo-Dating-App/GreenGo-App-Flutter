@@ -1162,6 +1162,16 @@
   "communitiesLanguages": "Sprachen",
   "communitiesLanguagesLabel": "Sprachen",
   "communitiesLeaveCommunity": "Community verlassen",
+  "communitiesDeleteCommunity": "Community loeschen",
+  "communitiesDeleteConfirm": "\"{name}\" dauerhaft loeschen? Alle Nachrichten, Mitglieder und Inhalte werden entfernt. Dies kann nicht rueckgaengig gemacht werden.",
+  "@communitiesDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communitiesDeletedSuccess": "Community geloescht",
   "communitiesLeaveConfirm": "Bist du sicher, dass du \"{name}\" verlassen moechtest?",
   "communitiesLeaveLabel": "Verlassen",
   "communitiesLeaveTitle": "Community verlassen",
@@ -3634,9 +3644,10 @@
   "preferenceShowMyNetworkDesc": "Nur Personen in deinem Netzwerk anzeigen.",
   "membershipTrialTitle": "Starte deine Gratis-Testphase!",
   "membershipTrialSubtitle": "7 Tage kostenlos, danach jährliche Verlängerung",
-  "membershipTrialFeature1": "Unbegrenzte Swipes & Verbindungen",
-  "membershipTrialFeature2": "500 Bonus-Münzen bei Aktivierung",
-  "membershipTrialFeature3": "Voller Zugriff auf alle Funktionen",
+  "membershipTrialFeature1": "Unbegrenzt Communities, Events & Gruppen erstellen",
+  "membershipTrialFeature2": "Werbefrei — keine Anzeigen",
+  "membershipTrialFeature3": "500 Bonus-Coins + voller Zugriff auf alle Funktionen",
+  "membershipHaveCoupon": "Hast du einen Gutscheincode?",
   "membershipTrialCta": "7-Tage-Testphase starten",
   "membershipTrialFooter": "Jederzeit während der Testphase kündbar. Keine Gebühr bis Tag 8.",
   "membershipTrialBadge": "7 TAGE GRATIS",

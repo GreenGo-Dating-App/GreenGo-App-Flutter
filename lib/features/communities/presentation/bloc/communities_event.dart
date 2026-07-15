@@ -196,6 +196,13 @@ class ModerateMember extends CommunitiesEvent {
   final MemberModerationAction action;
 }
 
+/// Permanently delete a community (owner-only; the UI gates this behind an
+/// owner password re-authentication before dispatching).
+class DeleteCommunity extends CommunitiesEvent {
+  const DeleteCommunity({required this.communityId});
+  final String communityId;
+}
+
 /// Seed sample communities (development only)
 class SeedSampleCommunities extends CommunitiesEvent {
   const SeedSampleCommunities();

@@ -1162,6 +1162,16 @@
   "communitiesLanguages": "Idiomas",
   "communitiesLanguagesLabel": "Idiomas",
   "communitiesLeaveCommunity": "Sair da Comunidade",
+  "communitiesDeleteCommunity": "Excluir comunidade",
+  "communitiesDeleteConfirm": "Excluir \"{name}\" permanentemente? Todas as mensagens, membros e conteudo sao removidos. Isso nao pode ser desfeito.",
+  "@communitiesDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communitiesDeletedSuccess": "Comunidade excluida",
   "communitiesLeaveConfirm": "Tem certeza de que deseja sair de \"{name}\"?",
   "communitiesLeaveLabel": "Sair",
   "communitiesLeaveTitle": "Sair da Comunidade",
@@ -3636,9 +3646,10 @@
   "preferenceShowMyNetworkDesc": "Mostrar apenas pessoas da sua rede.",
   "membershipTrialTitle": "Comece seu teste grátis!",
   "membershipTrialSubtitle": "7 dias grátis, depois renova anualmente",
-  "membershipTrialFeature1": "Swipes e conexões ilimitadas",
-  "membershipTrialFeature2": "500 moedas bônus na ativação",
-  "membershipTrialFeature3": "Acesso completo a todas as funcionalidades",
+  "membershipTrialFeature1": "Crie comunidades, eventos e grupos ilimitados",
+  "membershipTrialFeature2": "Sem anuncios — experiencia sem publicidade",
+  "membershipTrialFeature3": "500 moedas bonus + acesso total a tudo",
+  "membershipHaveCoupon": "Tem um codigo de cupom?",
   "membershipTrialCta": "Iniciar teste de 7 dias",
   "membershipTrialFooter": "Cancele a qualquer momento durante o teste. Sem cobrança até o dia 8.",
   "membershipTrialBadge": "GRÁTIS POR 7 DIAS",

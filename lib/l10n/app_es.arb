@@ -1162,6 +1162,16 @@
   "communitiesLanguages": "Idiomas",
   "communitiesLanguagesLabel": "Idiomas",
   "communitiesLeaveCommunity": "Abandonar Comunidad",
+  "communitiesDeleteCommunity": "Eliminar comunidad",
+  "communitiesDeleteConfirm": "Eliminar \"{name}\" permanentemente? Se eliminan todos los mensajes, miembros y contenido. Esto no se puede deshacer.",
+  "@communitiesDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communitiesDeletedSuccess": "Comunidad eliminada",
   "communitiesLeaveConfirm": "Estas seguro de que quieres abandonar \"{name}\"?",
   "communitiesLeaveLabel": "Abandonar",
   "communitiesLeaveTitle": "Abandonar Comunidad",
@@ -3634,9 +3644,10 @@
   "preferenceShowMyNetworkDesc": "Mostrar solo personas de tu red.",
   "membershipTrialTitle": "¡Comienza tu prueba gratis!",
   "membershipTrialSubtitle": "7 días gratis, luego se renueva anualmente",
-  "membershipTrialFeature1": "Swipes y conexiones ilimitadas",
-  "membershipTrialFeature2": "500 monedas de bonificación al activar",
-  "membershipTrialFeature3": "Acceso completo a todas las funciones",
+  "membershipTrialFeature1": "Crea comunidades, eventos y grupos ilimitados",
+  "membershipTrialFeature2": "Sin anuncios — experiencia sin publicidad",
+  "membershipTrialFeature3": "500 monedas de bonificacion + acceso completo",
+  "membershipHaveCoupon": "Tienes un codigo de cupon?",
   "membershipTrialCta": "Iniciar prueba de 7 días",
   "membershipTrialFooter": "Cancela en cualquier momento durante la prueba. Sin cargo hasta el día 8.",
   "membershipTrialBadge": "GRATIS POR 7 DÍAS",

@@ -1493,6 +1493,16 @@
   "communitiesLanguages": "Languages",
   "communitiesLanguagesLabel": "Languages",
   "communitiesLeaveCommunity": "Leave Community",
+  "communitiesDeleteCommunity": "Delete Community",
+  "communitiesDeleteConfirm": "Permanently delete \"{name}\"? All messages, members and content are removed. This cannot be undone.",
+  "@communitiesDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "communitiesDeletedSuccess": "Community deleted",
   "communitiesLeaveConfirm": "Are you sure you want to leave \"{name}\"?",
   "@communitiesLeaveConfirm": {
     "placeholders": {
@@ -5179,9 +5189,10 @@
   "priorityConnectPending": "Pending approval",
   "membershipTrialTitle": "Start Your Free Trial!",
   "membershipTrialSubtitle": "7 days free, then auto-renews yearly",
-  "membershipTrialFeature1": "Unlimited Swipes & Connections",
-  "membershipTrialFeature2": "500 Bonus Coins on Activation",
-  "membershipTrialFeature3": "Full Access to All Features",
+  "membershipTrialFeature1": "Create unlimited communities, events & groups",
+  "membershipTrialFeature2": "Ad-free experience — no advertisements",
+  "membershipTrialFeature3": "500 bonus coins + full access to every feature",
+  "membershipHaveCoupon": "Have a coupon code?",
   "membershipTrialCta": "Start 7-Day Free Trial",
   "membershipTrialFooter": "Cancel anytime during trial. No charge until day 8.",
   "membershipTrialBadge": "FREE FOR 7 DAYS",

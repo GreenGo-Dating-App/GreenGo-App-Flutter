@@ -162,6 +162,15 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           } else if (state is CommunityLeft) {
             setState(() => _isMember = false);
             Navigator.of(context).pop();
+          } else if (state is CommunityDeleted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content:
+                    Text(AppLocalizations.of(context)!.communitiesDeletedSuccess),
+                backgroundColor: AppColors.successGreen,
+              ),
+            );
+            Navigator.of(context).pop();
           } else if (state is CommunitiesError) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -357,6 +366,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               case 'leave':
                 _confirmLeave();
                 break;
+              case 'delete':
+                _confirmDeleteCommunity();
+                break;
             }
           },
           itemBuilder: (context) => [
@@ -406,6 +418,19 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.exit_to_app, color: AppColors.errorRed, size: 20),
                     const SizedBox(width: 12),
                     Text(AppLocalizations.of(context)!.communitiesLeaveCommunity,
+                        style: const TextStyle(color: AppColors.errorRed)),
+                  ],
+                ),
+              ),
+            // Owner only: permanently delete the community (password-gated).
+            if (_isOwner)
+              PopupMenuItem(
+                value: 'delete',
+                child: Row(
+                  children: [
+                    const Icon(Icons.delete_forever, color: AppColors.errorRed, size: 20),
+                    const SizedBox(width: 12),
+                    Text(AppLocalizations.of(context)!.communitiesDeleteCommunity,
                         style: const TextStyle(color: AppColors.errorRed)),
                   ],
                 ),
@@ -1171,6 +1196,129 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  /// Owner-only: permanently delete the community. Gated behind the owner's
+  /// account password (re-authentication), mirroring account deletion.
+  void _confirmDeleteCommunity() {
+    final l10n = AppLocalizations.of(context)!;
+    final passwordController = TextEditingController();
+    var loading = false;
+    String? errorText;
+
+    showDialog<void>(
+      context: context,
+      builder: (dialogContext) => StatefulBuilder(
+        builder: (dialogContext, setDialogState) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          title: Text(l10n.communitiesDeleteCommunity,
+              style: const TextStyle(color: AppColors.textPrimary)),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                l10n.communitiesDeleteConfirm(widget.community.name),
+                style: const TextStyle(color: AppColors.textSecondary),
+              ),
+              const SizedBox(height: 16),
+              TextField(
+                controller: passwordController,
+                obscureText: true,
+                style: const TextStyle(color: AppColors.textPrimary),
+                decoration: InputDecoration(
+                  labelText: l10n.password,
+                  labelStyle: const TextStyle(color: AppColors.textTertiary),
+                  errorText: errorText,
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed:
+                  loading ? null : () => Navigator.of(dialogContext).pop(),
+              child: Text(l10n.communitiesCancelLabel,
+                  style: const TextStyle(color: AppColors.textTertiary)),
+            ),
+            TextButton(
+              onPressed: loading
+                  ? null
+                  : () async {
+                      final password = passwordController.text;
+                      if (password.isEmpty) {
+                        setDialogState(() => errorText = l10n.passwordRequired);
+                        return;
+                      }
+                      setDialogState(() {
+                        loading = true;
+                        errorText = null;
+                      });
+                      try {
+                        final user = FirebaseAuth.instance.currentUser;
+                        if (user == null || user.email == null) {
+                          setDialogState(() {
+                            loading = false;
+                            errorText = l10n.profileUnableToVerifyAccount;
+                          });
+                          return;
+                        }
+                        // Social-login accounts have no password to confirm.
+                        final providers =
+                            user.providerData.map((p) => p.providerId);
+                        if (!providers.contains('password')) {
+                          setDialogState(() {
+                            loading = false;
+                            errorText = l10n.profileReauthProviderMismatch;
+                          });
+                          return;
+                        }
+                        final credential = EmailAuthProvider.credential(
+                          email: user.email!.trim().toLowerCase(),
+                          password: password,
+                        );
+                        await user.reauthenticateWithCredential(credential);
+                        if (!dialogContext.mounted) return;
+                        Navigator.of(dialogContext).pop();
+                        this.context.read<CommunitiesBloc>().add(
+                              DeleteCommunity(
+                                  communityId: widget.community.id),
+                            );
+                      } on FirebaseAuthException catch (e) {
+                        setDialogState(() {
+                          loading = false;
+                          if (e.code == 'too-many-requests') {
+                            errorText = l10n.profileTooManyAttempts;
+                          } else if (e.code == 'wrong-password' ||
+                              e.code == 'invalid-credential') {
+                            errorText = l10n.authErrorWrongPassword;
+                          } else {
+                            errorText =
+                                e.message ?? l10n.profileAuthenticationFailed;
+                          }
+                        });
+                      } catch (e) {
+                        setDialogState(() {
+                          loading = false;
+                          errorText = e.toString();
+                        });
+                      }
+                    },
+              child: loading
+                  ? const SizedBox(
+                      height: 18,
+                      width: 18,
+                      child: CircularProgressIndicator(
+                          strokeWidth: 2, color: AppColors.errorRed),
+                    )
+                  : Text(l10n.communitiesDeleteCommunity,
+                      style: const TextStyle(
+                          color: AppColors.errorRed,
+                          fontWeight: FontWeight.bold)),
+            ),
+          ],
+        ),
       ),
     );
   }
