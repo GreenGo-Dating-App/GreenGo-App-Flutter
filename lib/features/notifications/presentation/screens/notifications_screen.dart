@@ -1,10 +1,15 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/group_chat_screen.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
@@ -27,7 +32,7 @@ import '../bloc/notifications_state.dart';
 /// unread rows with a subtle gold tint + dot, marks a row read on tap, then
 /// routes to the relevant destination (chat / event / community / profile).
 /// Glass, Apple-safe design.
-class NotificationsScreen extends StatelessWidget {
+class NotificationsScreen extends StatefulWidget {
 
   const NotificationsScreen({
     required this.userId, super.key,
@@ -35,21 +40,38 @@ class NotificationsScreen extends StatelessWidget {
   final String userId;
 
   @override
+  State<NotificationsScreen> createState() => _NotificationsScreenState();
+}
+
+class _NotificationsScreenState extends State<NotificationsScreen> {
+  /// Alias so the existing helper methods keep reading `userId` directly.
+  String get userId => widget.userId;
+
+  /// Guards the one-time notifications mini-tour within a session.
+  bool _tourChecked = false;
+
+  @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return BlocProvider(
       create: (context) => di.sl<NotificationsBloc>()
         ..add(NotificationsLoadRequested(userId: userId, limit: 100)),
-      child: Scaffold(
+      child: ShowCaseWidget(
+        builder: (showcaseContext) => Scaffold(
         backgroundColor: AppColors.backgroundDark,
         appBar: AppBar(
           backgroundColor: AppColors.backgroundDark,
           elevation: 0,
-          title: Text(
-            l10n.notificationsTitle,
-            style: const TextStyle(
-              color: AppColors.textPrimary,
-              fontWeight: FontWeight.bold,
+          title: TourShowcase(
+            showcaseKey: TourKeys.notifHub,
+            title: l10n.tourNotifHubTitle,
+            description: l10n.tourNotifHubDesc,
+            child: Text(
+              l10n.notificationsTitle,
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           actions: [
@@ -59,15 +81,21 @@ class NotificationsScreen extends StatelessWidget {
                   return Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      TextButton(
-                        onPressed: () {
-                          context.read<NotificationsBloc>().add(
-                                NotificationsMarkedAllAsRead(userId),
-                              );
-                        },
-                        child: Text(
-                          l10n.notificationMarkAllRead,
-                          style: const TextStyle(color: AppColors.richGold),
+                      TourShowcase(
+                        showcaseKey: TourKeys.notifMarkAll,
+                        title: l10n.tourNotifMarkAllTitle,
+                        description: l10n.tourNotifMarkAllDesc,
+                        gesture: TourGesture.tap,
+                        child: TextButton(
+                          onPressed: () {
+                            context.read<NotificationsBloc>().add(
+                                  NotificationsMarkedAllAsRead(userId),
+                                );
+                          },
+                          child: Text(
+                            l10n.notificationMarkAllRead,
+                            style: const TextStyle(color: AppColors.richGold),
+                          ),
                         ),
                       ),
                       IconButton(
@@ -157,6 +185,24 @@ class NotificationsScreen extends StatelessWidget {
             }
 
             if (state is NotificationsLoaded) {
+              // One-time notifications mini-tour, started once the list has
+              // actually rendered so the first row (and mark-all) are anchored.
+              if (!_tourChecked && state.notifications.isNotEmpty) {
+                _tourChecked = true;
+                WidgetsBinding.instance.addPostFrameCallback((_) {
+                  if (!mounted) return;
+                  TourController.instance.maybeStartMiniTour(
+                    context,
+                    tourId: TourController.notificationsTourId,
+                    userId: userId,
+                    keys: [
+                      TourKeys.notifHub,
+                      TourKeys.notifFirstItem,
+                      TourKeys.notifMarkAll,
+                    ],
+                  );
+                });
+              }
               return RefreshIndicator(
                 onRefresh: () async {
                   context.read<NotificationsBloc>().add(
@@ -178,7 +224,7 @@ class NotificationsScreen extends StatelessWidget {
                   ),
                   itemBuilder: (context, index) {
                     final notification = state.notifications[index];
-                    return _NotificationTile(
+                    final tile = _NotificationTile(
                       notification: notification,
                       onTap: () {
                         if (!notification.isRead) {
@@ -200,6 +246,16 @@ class NotificationsScreen extends StatelessWidget {
                           ? () => _openProfile(context, notification.actorId!)
                           : null,
                     );
+                    if (index == 0) {
+                      return TourShowcase(
+                        showcaseKey: TourKeys.notifFirstItem,
+                        title: l10n.tourNotifOpenTitle,
+                        description: l10n.tourNotifOpenDesc,
+                        gesture: TourGesture.swipeLeft,
+                        child: tile,
+                      );
+                    }
+                    return tile;
                   },
                 ),
               );
@@ -208,6 +264,7 @@ class NotificationsScreen extends StatelessWidget {
             return const SizedBox.shrink();
           },
         ),
+      ),
       ),
     );
   }

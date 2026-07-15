@@ -35,4 +35,34 @@ class TourKeys {
   static final GlobalKey chatLanguageMenu = GlobalKey(debugLabel: 'tour_chat_language_menu');
   static final GlobalKey chatSettings = GlobalKey(debugLabel: 'tour_chat_settings');
   static final GlobalKey detailPhotoDoubleTap = GlobalKey(debugLabel: 'tour_detail_double_tap');
+
+  // ── Tier 2: Communities screen mini-tour ──
+  static final GlobalKey communitiesTabs =
+      GlobalKey(debugLabel: 'tour_communities_tabs');
+  static final GlobalKey communitiesCreate =
+      GlobalKey(debugLabel: 'tour_communities_create');
+
+  // ── Tier 2: Events screen mini-tour ──
+  static final GlobalKey eventsCreate =
+      GlobalKey(debugLabel: 'tour_events_create');
+  static final GlobalKey eventsSearch =
+      GlobalKey(debugLabel: 'tour_events_search');
+  static final GlobalKey eventsTabs =
+      GlobalKey(debugLabel: 'tour_events_tabs');
+
+  // ── Tier 2: Edit-profile screen mini-tour ──
+  static final GlobalKey profileHub =
+      GlobalKey(debugLabel: 'tour_profile_hub');
+  static final GlobalKey profileViewCard =
+      GlobalKey(debugLabel: 'tour_profile_view_card');
+  static final GlobalKey profileEditAccordion =
+      GlobalKey(debugLabel: 'tour_profile_edit_accordion');
+
+  // ── Tier 2: Notifications screen mini-tour ──
+  static final GlobalKey notifHub =
+      GlobalKey(debugLabel: 'tour_notif_hub');
+  static final GlobalKey notifFirstItem =
+      GlobalKey(debugLabel: 'tour_notif_first_item');
+  static final GlobalKey notifMarkAll =
+      GlobalKey(debugLabel: 'tour_notif_mark_all');
 }
