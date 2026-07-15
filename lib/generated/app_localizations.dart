@@ -5729,6 +5729,12 @@ abstract class AppLocalizations {
   /// **'Leave Community'**
   String get communitiesLeaveCommunity;
 
+  /// No description provided for @communitiesBusinessCannotJoin.
+  ///
+  /// In en, this message translates to:
+  /// **'Business accounts cannot join communities. Switch off business mode to join.'**
+  String get communitiesBusinessCannotJoin;
+
   /// No description provided for @communitiesDeleteCommunity.
   ///
   /// In en, this message translates to:
@@ -12311,6 +12317,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Groups'**
   String get messagesTabGroups;
+
+  /// No description provided for @messagesTabBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'Business'**
+  String get messagesTabBusiness;
+
+  /// No description provided for @messagesBusinessEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No storefront inquiries yet'**
+  String get messagesBusinessEmpty;
 
   /// No description provided for @minutes.
   ///

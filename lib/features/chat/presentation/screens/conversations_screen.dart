@@ -155,6 +155,8 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         continue;
       }
       final profile = await _getProfile(otherId);
+      // Business/storefront identities can't be added to groups (search-only).
+      if (profile?.isBusiness == true) continue;
       candidates.add(GroupCandidate(
         userId: otherId,
         name: profile?.displayName ?? otherId,
@@ -380,7 +382,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
           create: (_) =>
               di.sl<GroupsBloc>()..add(GroupsLoadRequested(widget.userId)),
           child: DefaultTabController(
-          length: 2,
+          // A 3rd "Business" tab appears only for business accounts — it
+          // collects storefront inquiries (conversations flagged businessInquiry).
+          length: (_currentUserProfile?.isBusiness ?? false) ? 3 : 2,
           child: Column(
             children: [
               Material(
@@ -415,6 +419,22 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                             : 0,
                       ),
                     ),
+                    // Business tab — storefront inquiries (business accounts only).
+                    if (_currentUserProfile?.isBusiness ?? false)
+                      BlocBuilder<ConversationsBloc, ConversationsState>(
+                        builder: (context, state) => _tabWithBadge(
+                          l10n.messagesTabBusiness,
+                          state is ConversationsLoaded
+                              ? state.conversations
+                                  .where((c) =>
+                                      c.businessInquiry &&
+                                      c.unreadCount > 0 &&
+                                      c.lastMessage != null &&
+                                      !c.lastMessage!.isSentBy(widget.userId))
+                                  .length
+                              : 0,
+                        ),
+                      ),
                   ],
                 ),
               ),
@@ -706,6 +726,8 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                       userId: widget.userId,
                       showAppBar: false,
                     ),
+                    if (_currentUserProfile?.isBusiness ?? false)
+                      _buildBusinessTab(l10n),
                   ],
                 ),
               ),
@@ -714,6 +736,85 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         ),
         ),
       ),
+    );
+  }
+
+  /// The "Business" tab body — storefront inquiries (conversations flagged
+  /// `businessInquiry`). Reuses [ConversationCard]; tapping opens the chat.
+  Widget _buildBusinessTab(AppLocalizations l10n) {
+    return BlocBuilder<ConversationsBloc, ConversationsState>(
+      builder: (context, state) {
+        if (state is! ConversationsLoaded) {
+          return const Center(
+            child: CircularProgressIndicator(color: AppColors.richGold),
+          );
+        }
+        final inquiries = state.conversations.where((c) {
+          final deletedForMe = c.isDeleted ||
+              (c.deletedFor?.containsKey(widget.userId) ?? false);
+          return c.businessInquiry && c.lastMessage != null && !deletedForMe;
+        }).toList()
+          ..sort((a, b) => (b.lastMessageAt ?? b.createdAt)
+              .compareTo(a.lastMessageAt ?? a.createdAt));
+
+        if (inquiries.isEmpty) {
+          return Center(
+            child: Padding(
+              padding: const EdgeInsets.all(32),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.storefront_outlined,
+                      size: 56, color: AppColors.textTertiary),
+                  const SizedBox(height: 16),
+                  Text(
+                    l10n.messagesBusinessEmpty,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(color: AppColors.textTertiary),
+                  ),
+                ],
+              ),
+            ),
+          );
+        }
+
+        return ListView.builder(
+          itemCount: inquiries.length,
+          itemBuilder: (context, index) {
+            final conversation = inquiries[index];
+            final otherUserId = conversation.getOtherUserId(widget.userId);
+            return FutureBuilder<Profile?>(
+              future: _getProfile(otherUserId),
+              builder: (context, snapshot) {
+                final profile = snapshot.data;
+                if (profile == null) return const SizedBox.shrink();
+                return ConversationCard(
+                  conversation: conversation,
+                  otherUserProfile: profile,
+                  currentUserId: widget.userId,
+                  onTap: () async {
+                    await Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ChatScreen(
+                          matchId: conversation.matchId,
+                          currentUserId: widget.userId,
+                          otherUserId: otherUserId,
+                          otherUserProfile: profile,
+                        ),
+                      ),
+                    );
+                    if (context.mounted) {
+                      context
+                          .read<ConversationsBloc>()
+                          .add(const ConversationsRefreshRequested());
+                    }
+                  },
+                );
+              },
+            );
+          },
+        );
+      },
     );
   }
 

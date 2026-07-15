@@ -1204,6 +1204,7 @@
   "communitiesLanguages": "Lingue",
   "communitiesLanguagesLabel": "Lingue",
   "communitiesLeaveCommunity": "Lascia la Comunita",
+  "communitiesBusinessCannotJoin": "Gli account business non possono unirsi alle community. Disattiva la modalita business per unirti.",
   "communitiesDeleteCommunity": "Elimina community",
   "communitiesDeleteConfirm": "Eliminare definitivamente \"{name}\"? Tutti i messaggi, i membri e i contenuti verranno rimossi. Operazione irreversibile.",
   "@communitiesDeleteConfirm": {
@@ -2316,6 +2317,8 @@
   "messages": "Scambi",
   "messagesTabMessages": "Messaggi",
   "messagesTabGroups": "Gruppi",
+  "messagesTabBusiness": "Business",
+  "messagesBusinessEmpty": "Ancora nessuna richiesta alla vetrina",
   "minutes": "Minuti",
   "moreAchievements": "+{count} altri traguardi",
   "@moreAchievements": {

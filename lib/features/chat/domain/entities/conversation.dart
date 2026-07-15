@@ -63,6 +63,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
     this.theme = ChatTheme.gold,
     this.settings,
     this.conversationType = ConversationType.match,
+    this.businessInquiry = false,
     this.supportAgentId,
     this.supportPriority,
     this.supportTicketStatus,
@@ -129,6 +130,11 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
 
   // Conversation type (match or support)
   final ConversationType conversationType;
+
+  /// True when this 1:1 conversation was opened by contacting a BUSINESS via its
+  /// storefront (the "Contact" button). Business inquiries are surfaced in the
+  /// business owner's dedicated Exchanges "Business" tab.
+  final bool businessInquiry;
 
   // Support-specific fields (only used when conversationType is support)
   final String? supportAgentId;       // Assigned support agent
@@ -358,6 +364,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
     ChatTheme? theme,
     Map<String, dynamic>? settings,
     ConversationType? conversationType,
+    bool? businessInquiry,
     String? supportAgentId,
     SupportPriority? supportPriority,
     SupportTicketStatus? supportTicketStatus,
@@ -396,6 +403,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
       theme: theme ?? this.theme,
       settings: settings ?? this.settings,
       conversationType: conversationType ?? this.conversationType,
+      businessInquiry: businessInquiry ?? this.businessInquiry,
       supportAgentId: supportAgentId ?? this.supportAgentId,
       supportPriority: supportPriority ?? this.supportPriority,
       supportTicketStatus: supportTicketStatus ?? this.supportTicketStatus,
@@ -436,6 +444,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
         theme,
         settings,
         conversationType,
+        businessInquiry,
         supportAgentId,
         supportPriority,
         supportTicketStatus,

@@ -30,6 +30,7 @@ Future<void> openConnectChat(
   required String currentUserId,
   required String otherUserId,
   Profile? otherUserProfile,
+  bool businessInquiry = false,
 }) async {
   final l10n = AppLocalizations.of(context)!;
   final navigator = Navigator.of(context);
@@ -89,6 +90,7 @@ Future<void> openConnectChat(
         await di.sl<ChatRemoteDataSource>().getOrCreateSearchConversation(
               currentUserId: currentUserId,
               otherUserId: otherUserId,
+              businessInquiry: businessInquiry,
             );
 
     // Count a successful NEW connection toward today's cap (fire-and-forget).

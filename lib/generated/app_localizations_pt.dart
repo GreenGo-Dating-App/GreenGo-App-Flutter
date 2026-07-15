@@ -3213,6 +3213,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Sair da Comunidade';
 
   @override
+  String get communitiesBusinessCannotJoin =>
+      'As contas de negocio nao podem juntar-se a comunidades. Desative o modo negocio para participar.';
+
+  @override
   String get communitiesDeleteCommunity => 'Eliminar comunidade';
 
   @override
@@ -6893,6 +6897,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get messagesTabGroups => 'Grupos';
+
+  @override
+  String get messagesTabBusiness => 'Negocio';
+
+  @override
+  String get messagesBusinessEmpty => 'Ainda sem consultas a tua loja';
 
   @override
   String get minutes => 'Minutos';
@@ -16350,6 +16360,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get communitiesLeaveCommunity => 'Sair da Comunidade';
 
   @override
+  String get communitiesBusinessCannotJoin =>
+      'Contas de negocio nao podem entrar em comunidades. Desative o modo negocio para participar.';
+
+  @override
   String get communitiesDeleteCommunity => 'Excluir comunidade';
 
   @override
@@ -20029,6 +20043,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get messagesTabGroups => 'Grupos';
+
+  @override
+  String get messagesTabBusiness => 'Negocio';
+
+  @override
+  String get messagesBusinessEmpty => 'Ainda sem consultas a sua loja';
 
   @override
   String get minutes => 'Minutos';

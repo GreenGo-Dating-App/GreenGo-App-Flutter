@@ -1162,6 +1162,7 @@
   "communitiesLanguages": "Sprachen",
   "communitiesLanguagesLabel": "Sprachen",
   "communitiesLeaveCommunity": "Community verlassen",
+  "communitiesBusinessCannotJoin": "Business-Konten koennen keinen Communities beitreten. Schalte den Business-Modus aus, um beizutreten.",
   "communitiesDeleteCommunity": "Community loeschen",
   "communitiesDeleteConfirm": "\"{name}\" dauerhaft loeschen? Alle Nachrichten, Mitglieder und Inhalte werden entfernt. Dies kann nicht rueckgaengig gemacht werden.",
   "@communitiesDeleteConfirm": {
@@ -2274,6 +2275,8 @@
   "messages": "Austausch",
   "messagesTabMessages": "Nachrichten",
   "messagesTabGroups": "Gruppen",
+  "messagesTabBusiness": "Business",
+  "messagesBusinessEmpty": "Noch keine Storefront-Anfragen",
   "minutes": "Minuten",
   "moreAchievements": "+{count} weitere Erfolge",
   "@moreAchievements": {

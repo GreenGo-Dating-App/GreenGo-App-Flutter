@@ -1162,6 +1162,7 @@
   "communitiesLanguages": "Idiomas",
   "communitiesLanguagesLabel": "Idiomas",
   "communitiesLeaveCommunity": "Sair da Comunidade",
+  "communitiesBusinessCannotJoin": "As contas de negocio nao podem juntar-se a comunidades. Desative o modo negocio para participar.",
   "communitiesDeleteCommunity": "Eliminar comunidade",
   "communitiesDeleteConfirm": "Eliminar \"{name}\" permanentemente? Todas as mensagens, membros e conteudo sao removidos. Isto nao pode ser anulado.",
   "@communitiesDeleteConfirm": {
@@ -2276,6 +2277,8 @@
   "messages": "Trocas",
   "messagesTabMessages": "Mensagens",
   "messagesTabGroups": "Grupos",
+  "messagesTabBusiness": "Negocio",
+  "messagesBusinessEmpty": "Ainda sem consultas a tua loja",
   "minutes": "Minutos",
   "moreAchievements": "+{count} mais conquistas",
   "@moreAchievements": {
