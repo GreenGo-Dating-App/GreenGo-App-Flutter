@@ -343,9 +343,57 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           .orderBy('joinedAt', descending: false)
           .get();
 
-      return snapshot.docs
-          .map(CommunityMemberModel.fromFirestore)
+      final members =
+          snapshot.docs.map(CommunityMemberModel.fromFirestore).toList();
+
+      // Legacy/early member docs may have an empty displayName (or photo),
+      // which renders as a "?" tile. Enrich ONLY those from their profiles,
+      // batched (whereIn ≤10) so this stays bounded for large communities.
+      final missing = members
+          .where((m) => m.displayName.trim().isEmpty)
+          .map((m) => m.userId)
           .toList();
+      if (missing.isEmpty) return members;
+
+      final resolved = <String, Map<String, dynamic>>{};
+      for (var i = 0; i < missing.length; i += 10) {
+        final batch = missing.sublist(
+            i, i + 10 > missing.length ? missing.length : i + 10);
+        final snap = await _firestore
+            .collection('profiles')
+            .where(FieldPath.documentId, whereIn: batch)
+            .get();
+        for (final d in snap.docs) {
+          resolved[d.id] = d.data();
+        }
+      }
+
+      return members.map((m) {
+        if (m.displayName.trim().isNotEmpty) return m;
+        final p = resolved[m.userId];
+        if (p == null) return m;
+        final name = (p['displayName'] as String?) ??
+            (p['nickname'] as String?) ??
+            (p['name'] as String?) ??
+            '';
+        final photo = m.photoUrl ??
+            (p['profilePhotoUrl'] as String?) ??
+            (p['photoUrl'] as String?) ??
+            ((p['photoUrls'] is List && (p['photoUrls'] as List).isNotEmpty)
+                ? (p['photoUrls'] as List).first as String?
+                : null);
+        return CommunityMemberModel(
+          userId: m.userId,
+          displayName: name,
+          photoUrl: photo,
+          role: m.role,
+          joinedAt: m.joinedAt,
+          languages: m.languages,
+          isLocalGuide: m.isLocalGuide,
+          isMuted: m.isMuted,
+          isBanned: m.isBanned,
+        );
+      }).toList();
     } catch (e) {
       debugPrint('Error getting community members: $e');
       rethrow;

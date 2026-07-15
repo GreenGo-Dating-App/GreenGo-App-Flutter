@@ -8406,6 +8406,14 @@ class AppLocalizationsFr extends AppLocalizations {
   String get profileUnableToVerifyAccount => 'Impossible de vérifier le compte';
 
   @override
+  String get profileReauthProviderMismatch =>
+      'Ce compte a ete cree avec une connexion sociale (ex. Google), il n y a donc pas de mot de passe a confirmer ici. Supprimez-le depuis le compte utilise ou contactez le support.';
+
+  @override
+  String get profileTooManyAttempts =>
+      'Trop de tentatives. Pour votre securite, cet appareil est temporairement bloque — patientez quelques minutes et reessayez.';
+
+  @override
   String get profileUpdateCurrentLocation => 'Mettre a Jour la Localisation';
 
   @override

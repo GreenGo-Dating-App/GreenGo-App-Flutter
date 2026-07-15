@@ -14838,6 +14838,18 @@ abstract class AppLocalizations {
   /// **'Unable to verify account'**
   String get profileUnableToVerifyAccount;
 
+  /// No description provided for @profileReauthProviderMismatch.
+  ///
+  /// In en, this message translates to:
+  /// **'This account was created with a social sign-in (e.g. Google), so there is no password to confirm here. Please delete it from the account you signed in with, or contact support.'**
+  String get profileReauthProviderMismatch;
+
+  /// No description provided for @profileTooManyAttempts.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. For your security this device is temporarily blocked — please wait a few minutes and try again.'**
+  String get profileTooManyAttempts;
+
   /// No description provided for @profileUpdateCurrentLocation.
   ///
   /// In en, this message translates to:
