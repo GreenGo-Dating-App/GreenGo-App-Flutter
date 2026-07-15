@@ -969,6 +969,20 @@ service cloud.firestore {
           .hasOnly(['memberCount', 'lastMessagePreview', 'lastActivityAt']);
       }
 
+      // A profile flagged isBusiness is a commerce-only "storefront" identity —
+      // it may be searched/browsed but NEVER become a community member (the
+      // person joins with their personal identity instead). The one exception
+      // is the community's OWN creator, so a business can still own a community
+      // it created.
+      function memberProfileIsBusiness(uid) {
+        return exists(/databases/$(database)/documents/profiles/$(uid)) &&
+          get(/databases/$(database)/documents/profiles/$(uid)).data.get('isBusiness', false) == true;
+      }
+      function memberAddAllowed(memberId) {
+        return !memberProfileIsBusiness(memberId) ||
+          get(/databases/$(database)/documents/communities/$(communityId)).data.createdByUserId == memberId;
+      }
+
       allow read: if isSignedIn();
       allow create: if isSignedIn();
       // Community edits (rules/resources/sponsor/promo) → owner/admin only,
@@ -977,10 +991,13 @@ service cloud.firestore {
       allow delete: if isCommunityCreator() || isAdmin();
 
       // Members: a user manages their OWN membership (join public / leave);
-      // owner/admin manage anyone (role, mute/ban, approve, remove).
+      // owner/admin manage anyone (role, mute/ban, approve, remove). Business
+      // (storefront) identities are excluded from membership (except a creator).
       match /members/{memberId} {
         allow read: if isSignedIn();
-        allow create: if isSignedIn() && (memberId == request.auth.uid || isCommunityMod());
+        allow create: if isSignedIn()
+          && (memberId == request.auth.uid || isCommunityMod())
+          && memberAddAllowed(memberId);
         allow update: if isCommunityMod();
         allow delete: if isSignedIn() && (memberId == request.auth.uid || isCommunityMod());
       }

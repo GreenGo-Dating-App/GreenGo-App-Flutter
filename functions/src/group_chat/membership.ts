@@ -166,8 +166,32 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
     const name = after.groupInfo?.name || 'Group';
     const photoUrl = after.groupInfo?.photoUrl ?? null;
 
-    const added = next.filter((u) => !prev.includes(u));
+    let added = next.filter((u) => !prev.includes(u));
     const removed = prev.filter((u) => !next.includes(u));
+    if (added.length === 0 && removed.length === 0) return;
+
+    // Business (storefront) identities can't be group members. Strip any that
+    // were just added (defense-in-depth: the client already hides them from the
+    // add-member pickers). Remove them from participants + roles, then continue
+    // with the non-business additions.
+    if (added.length > 0) {
+      const businessAdded: string[] = [];
+      for (const uid of added) {
+        const p = await db.collection('profiles').doc(uid).get();
+        if (p.data()?.isBusiness === true) businessAdded.push(uid);
+      }
+      if (businessAdded.length > 0) {
+        const updates: Record<string, unknown> = {
+          participants:
+            admin.firestore.FieldValue.arrayRemove(...businessAdded),
+        };
+        for (const uid of businessAdded) {
+          updates[`roles.${uid}`] = admin.firestore.FieldValue.delete();
+        }
+        await db.collection('groups').doc(groupId).update(updates);
+        added = added.filter((u) => !businessAdded.includes(u));
+      }
+    }
     if (added.length === 0 && removed.length === 0) return;
 
     const now = admin.firestore.FieldValue.serverTimestamp();
