@@ -4425,5 +4425,9 @@
   "tourNotifOpenTitle": "Abra e gerencie",
   "tourNotifOpenDesc": "Toque em uma notificacao para abri-la ou deslize para a esquerda para exclui-la.",
   "tourNotifMarkAllTitle": "Limpe os nao lidos",
-  "tourNotifMarkAllDesc": "Marque tudo como lido com um unico toque."
+  "tourNotifMarkAllDesc": "Marque tudo como lido com um unico toque.",
+  "communitiesJoinAsPersonalTitle": "Entrar com seu perfil pessoal",
+  "communitiesJoinAsPersonalBody": "Voce vai entrar nesta comunidade com seu perfil pessoal. Sua vitrine de negocio nao sera exibida aqui. Continuar?",
+  "communitiesJoinAsPersonalConfirm": "Entrar",
+  "communitiesCreatedManageHint": "Comunidade criada! Abra Membros para adicionar pessoas e conceder permissoes de dicas ou anuncios."
 }

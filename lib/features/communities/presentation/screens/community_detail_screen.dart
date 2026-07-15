@@ -1069,20 +1069,44 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     HapticFeedback.lightImpact();
   }
 
-  void _joinCommunity() {
+  Future<void> _joinCommunity() async {
     final userId = _currentUserId;
     if (userId == null) return;
 
-    // Business/storefront identities are commerce-only: they can be searched
-    // and browsed but never JOIN a community (only the personal identity can).
+    // A user who ALSO runs a business storefront joins with their PERSONAL
+    // profile — the storefront is commerce-only and is never added as a member.
+    // Make that explicit and require acceptance before joining.
     if (_isBusiness) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.communitiesBusinessCannotJoin),
-          backgroundColor: AppColors.errorRed,
+      final l10n = AppLocalizations.of(context)!;
+      final confirmed = await showDialog<bool>(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          title: Text(
+            l10n.communitiesJoinAsPersonalTitle,
+            style: const TextStyle(color: AppColors.textPrimary),
+          ),
+          content: Text(
+            l10n.communitiesJoinAsPersonalBody,
+            style: const TextStyle(color: AppColors.textSecondary),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(ctx).pop(false),
+              child: Text(l10n.cancel),
+            ),
+            TextButton(
+              onPressed: () => Navigator.of(ctx).pop(true),
+              child: Text(
+                l10n.communitiesJoinAsPersonalConfirm,
+                style: const TextStyle(color: AppColors.richGold),
+              ),
+            ),
+          ],
         ),
       );
-      return;
+      if (confirmed != true) return;
+      if (!mounted) return;
     }
 
     if (_community.isPublic) {

@@ -472,9 +472,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
         .where(_hasImage)
         .toList();
 
-    // Community events (today) FIRST, then live events of the day, EXCLUDING
-    // anything already shown in the Featured carousel. Max 3.
-    final rows = [...communityItems, ...liveTodayItems]
+    // "Happening today": show COMMUNITY events of the day first; ONLY when
+    // there are no community events today do we fall back to live (external)
+    // events of the day. Excludes anything already in Featured. Max 3.
+    final base =
+        communityItems.isNotEmpty ? communityItems : liveTodayItems;
+    final rows = base
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
         .take(3)
         .toList();
@@ -660,7 +663,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Future<void> _loadLuxuryEvents() async {
     final now = DateTime.now();
     final startOfToday = DateTime(now.year, now.month, now.day);
-    final todayStr = DateFormat('yyyy-MM-dd').format(now);
     final picked = <_Happening>[];
     final seen = <String>{};
 
@@ -715,39 +717,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
       addEvents(others);
     }
 
-    // Tier 3 (per spec) — still short of 3 → FILL with LIVE events (external
-    // Ticketmaster) happening TODAY or in the FUTURE, lightly shuffled.
-    if (picked.length < 3) {
-      List<ExternalEvent> live = const <ExternalEvent>[];
-      final ds = ExternalEventsDataSource(firestore: _firestore);
-      try {
-        if (hasLocation) {
-          live = await ds.getNearbyExperiences(
-            source: 'ticketmaster',
-            userLat: _userLat!,
-            userLng: _userLng!,
-            limit: 60,
-          );
-        } else {
-          live = await ds.getExperiencesSorted(
-              source: 'ticketmaster', sort: 'date');
-        }
-      } catch (_) {
-        live = const <ExternalEvent>[];
-      }
-      final liveUpcoming = live
-          // today or future only (yyyy-MM-dd compares lexicographically;
-          // a null/empty date sorts below todayStr → excluded)
-          .where((e) => (e.startDate ?? '').compareTo(todayStr) >= 0)
-          .map((e) => _Happening.external(e))
-          .where(_hasImage)
-          .toList()
-        ..shuffle();
-      addAll(liveUpcoming);
-    }
+    // NOTE: Featured is COMMUNITY-ONLY by spec — "featured events just have
+    // community events hosted first then randomly community events close by."
+    // So there is NO external/live tier here; the remaining tiers below are all
+    // community (`events` collection) fallbacks that keep the carousel populated
+    // when the nearby community pool is thin.
 
-    // Deep native safety nets below — only reached if community AND live-of-day
-    // were all empty, so the carousel still shows something.
+    // Deep native safety nets below — only reached if the nearby community pool
+    // was empty, so the carousel still shows community events from wider queries.
     // Nearby LIVE native events (distance-sorted), lightly shuffled.
     if (picked.length < 3 && community.isEmpty && hasLocation) {
       try {

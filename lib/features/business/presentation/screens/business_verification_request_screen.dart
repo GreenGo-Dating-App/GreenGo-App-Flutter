@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -8,6 +6,7 @@ import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -101,7 +100,7 @@ class _BusinessVerificationRequestScreenState
       final ref = FirebaseStorage.instance.ref().child(
             'business_verification/${widget.profile.userId}/owner_document.jpg',
           );
-      await ref.putFile(File(picked.path));
+      await WebMedia.uploadXFile(ref, picked);
       final url = await ref.getDownloadURL();
       if (!mounted) return;
       setState(() {

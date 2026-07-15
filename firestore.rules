@@ -978,8 +978,13 @@ service cloud.firestore {
         return exists(/databases/$(database)/documents/profiles/$(uid)) &&
           get(/databases/$(database)/documents/profiles/$(uid)).data.get('isBusiness', false) == true;
       }
+      // A user may always add THEMSELVES (they join with their personal
+      // identity — the client shows a confirmation that the storefront is not
+      // used). The business exclusion only stops a MOD from adding someone
+      // else's storefront identity as a member (except the community creator).
       function memberAddAllowed(memberId) {
-        return !memberProfileIsBusiness(memberId) ||
+        return memberId == request.auth.uid ||
+          !memberProfileIsBusiness(memberId) ||
           get(/databases/$(database)/documents/communities/$(communityId)).data.createdByUserId == memberId;
       }
 

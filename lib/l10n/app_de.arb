@@ -4425,5 +4425,9 @@
   "tourNotifOpenTitle": "Oeffnen und verwalten",
   "tourNotifOpenDesc": "Tippe auf eine Benachrichtigung, um sie zu oeffnen, oder wische nach links, um sie zu loeschen.",
   "tourNotifMarkAllTitle": "Ungelesene leeren",
-  "tourNotifMarkAllDesc": "Markiere alles mit einem Tippen als gelesen."
+  "tourNotifMarkAllDesc": "Markiere alles mit einem Tippen als gelesen.",
+  "communitiesJoinAsPersonalTitle": "Mit deinem persoenlichen Profil beitreten",
+  "communitiesJoinAsPersonalBody": "Du trittst dieser Community mit deinem persoenlichen Profil bei. Dein Business-Schaufenster wird hier nicht angezeigt. Fortfahren?",
+  "communitiesJoinAsPersonalConfirm": "Beitreten",
+  "communitiesCreatedManageHint": "Community erstellt! Oeffne Mitglieder, um Personen hinzuzufuegen und Tipp- oder Ankuendigungsrechte zu vergeben."
 }

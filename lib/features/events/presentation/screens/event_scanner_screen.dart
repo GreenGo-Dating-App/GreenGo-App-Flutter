@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
@@ -258,6 +259,47 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    // Camera QR scanning is unreliable in the browser; door check-in is a
+    // mobile-only action. Show a graceful fallback on web instead of a broken
+    // camera view (QR ticket *display* still works fine on web).
+    if (kIsWeb) {
+      return Scaffold(
+        backgroundColor: AppColors.backgroundDark,
+        appBar: AppBar(
+          backgroundColor: AppColors.backgroundDark,
+          foregroundColor: AppColors.textPrimary,
+          title: Text(l10n.eventScanCheckIn),
+        ),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(32),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.qr_code_scanner,
+                    size: 64, color: AppColors.richGold),
+                const SizedBox(height: 16),
+                Text(
+                  l10n.eventScanCheckIn,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  l10n.eventScanUseMobileApp,
+                  style: const TextStyle(color: AppColors.textSecondary),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(

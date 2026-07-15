@@ -66,9 +66,21 @@ class PushNotificationService {
   Future<void> initialize() async {
     if (_isInitialized) return;
 
-    // Skip on web — uses a different (service-worker) flow.
+    // Web uses a service-worker flow (web/firebase-messaging-sw.js) for
+    // background/closed-tab notifications, and has no flutter_local_notifications
+    // or background isolate handler. We still wire the foreground/tap/refresh
+    // listeners so in-app sounds + deep-navigation on click work on web too.
     if (kIsWeb) {
+      FirebaseMessaging.onMessage.listen(_handleForegroundMessage);
+      FirebaseMessaging.onMessageOpenedApp.listen(_handleNotificationTap);
+      final initialMessage =
+          await FirebaseMessaging.instance.getInitialMessage();
+      if (initialMessage != null) {
+        _handleNotificationTap(initialMessage);
+      }
+      FirebaseMessaging.instance.onTokenRefresh.listen(_handleTokenRefresh);
       _isInitialized = true;
+      debugPrint('[FCM] Push notification service initialized (web)');
       return;
     }
 

@@ -20436,6 +20436,12 @@ abstract class AppLocalizations {
   /// **'Scan / Check-in'**
   String get eventScanCheckIn;
 
+  /// No description provided for @eventScanUseMobileApp.
+  ///
+  /// In en, this message translates to:
+  /// **'QR check-in scanning is available in the GreenGo mobile app.'**
+  String get eventScanUseMobileApp;
+
   /// No description provided for @eventScanManageScanners.
   ///
   /// In en, this message translates to:
@@ -23177,6 +23183,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Mark everything as read in a single tap.'**
   String get tourNotifMarkAllDesc;
+
+  /// Community join-as-personal / post-create manage strings
+  ///
+  /// In en, this message translates to:
+  /// **'Join with your personal profile'**
+  String get communitiesJoinAsPersonalTitle;
+
+  /// Community join-as-personal / post-create manage strings
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ll join this community as your personal profile. Your business storefront won\'t be shown here. Continue?'**
+  String get communitiesJoinAsPersonalBody;
+
+  /// Community join-as-personal / post-create manage strings
+  ///
+  /// In en, this message translates to:
+  /// **'Join'**
+  String get communitiesJoinAsPersonalConfirm;
+
+  /// Community join-as-personal / post-create manage strings
+  ///
+  /// In en, this message translates to:
+  /// **'Community created! Open Members to add people and grant tip or announcement rights.'**
+  String get communitiesCreatedManageHint;
 }
 
 class _AppLocalizationsDelegate
