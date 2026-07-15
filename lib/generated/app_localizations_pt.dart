@@ -10784,7 +10784,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get preferenceShowMyNetworkDesc =>
-      'Mostrar apenas pessoas na sua rede (matches e Priority Connect aceitos).';
+      'Mostrar apenas pessoas da sua rede.';
 
   @override
   String get randomMode => 'Modo Aleatório';
@@ -23740,7 +23740,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get preferenceShowMyNetworkDesc =>
-      'Mostrar apenas pessoas na sua rede (matches e Priority Connect aceitos).';
+      'Mostrar apenas pessoas da sua rede.';
 
   @override
   String get randomMode => 'Modo Aleatório';

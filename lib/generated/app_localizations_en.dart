@@ -10683,8 +10683,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get preferenceShowMyNetwork => 'My Network';
 
   @override
-  String get preferenceShowMyNetworkDesc =>
-      'Show only people in your network (matches and accepted Priority Connect).';
+  String get preferenceShowMyNetworkDesc => 'Show only people in your network.';
 
   @override
   String get randomMode => 'Random Mode';
