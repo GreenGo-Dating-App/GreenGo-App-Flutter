@@ -53,7 +53,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     LoadCommunities event,
     Emitter<CommunitiesState> emit,
   ) async {
-    emit(const CommunitiesLoading());
+    // Preserve any already-loaded lists so a reload/refresh never blanks the
+    // tabs. Only show the full-screen spinner on the FIRST load.
+    final currentState = state;
+    var userCommunities = <Community>[];
+    var recommended = <Community>[];
+    if (currentState is CommunitiesLoaded) {
+      userCommunities = currentState.userCommunities;
+      recommended = currentState.recommended;
+    } else {
+      emit(const CommunitiesLoading());
+    }
 
     final result = await _repository.getCommunities(
       type: event.type,
@@ -72,6 +82,8 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
 
         emit(CommunitiesLoaded(
           communities: communities,
+          userCommunities: userCommunities,
+          recommended: recommended,
           languageCircles: languageCircles,
         ));
       },
@@ -92,9 +104,10 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       allCommunities = currentState.communities;
       recommended = currentState.recommended;
       languageCircles = currentState.languageCircles;
+    } else {
+      // Only blank to a spinner on the FIRST load; a refresh keeps the lists.
+      emit(const CommunitiesLoading());
     }
-
-    emit(const CommunitiesLoading());
 
     final result = await _repository.getUserCommunities(event.userId);
 

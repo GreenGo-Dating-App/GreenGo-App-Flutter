@@ -742,79 +742,133 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   /// The "Business" tab body — storefront inquiries (conversations flagged
   /// `businessInquiry`). Reuses [ConversationCard]; tapping opens the chat.
   Widget _buildBusinessTab(AppLocalizations l10n) {
-    return BlocBuilder<ConversationsBloc, ConversationsState>(
-      builder: (context, state) {
-        if (state is! ConversationsLoaded) {
-          return const Center(
-            child: CircularProgressIndicator(color: AppColors.richGold),
-          );
-        }
-        final inquiries = state.conversations.where((c) {
-          final deletedForMe = c.isDeleted ||
-              (c.deletedFor?.containsKey(widget.userId) ?? false);
-          return c.businessInquiry && c.lastMessage != null && !deletedForMe;
-        }).toList()
-          ..sort((a, b) => (b.lastMessageAt ?? b.createdAt)
-              .compareTo(a.lastMessageAt ?? a.createdAt));
-
-        if (inquiries.isEmpty) {
-          return Center(
-            child: Padding(
-              padding: const EdgeInsets.all(32),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(Icons.storefront_outlined,
-                      size: 56, color: AppColors.textTertiary),
-                  const SizedBox(height: 16),
-                  Text(
-                    l10n.messagesBusinessEmpty,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(color: AppColors.textTertiary),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }
-
-        return ListView.builder(
-          itemCount: inquiries.length,
-          itemBuilder: (context, index) {
-            final conversation = inquiries[index];
-            final otherUserId = conversation.getOtherUserId(widget.userId);
-            return FutureBuilder<Profile?>(
-              future: _getProfile(otherUserId),
-              builder: (context, snapshot) {
-                final profile = snapshot.data;
-                if (profile == null) return const SizedBox.shrink();
-                return ConversationCard(
-                  conversation: conversation,
-                  otherUserProfile: profile,
-                  currentUserId: widget.userId,
-                  onTap: () async {
-                    await Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ChatScreen(
-                          matchId: conversation.matchId,
-                          currentUserId: widget.userId,
-                          otherUserId: otherUserId,
-                          otherUserProfile: profile,
-                        ),
-                      ),
-                    );
-                    if (context.mounted) {
-                      context
-                          .read<ConversationsBloc>()
-                          .add(const ConversationsRefreshRequested());
-                    }
-                  },
+    // Same layout as Messages/Groups: search bar + pull-to-refresh + a list of
+    // ConversationCards with the full callback set (favorite / long-press delete
+    // / membership-gated open), filtered to storefront inquiries.
+    return Column(
+      children: [
+        _buildSearchBar(),
+        Expanded(
+          child: BlocBuilder<ConversationsBloc, ConversationsState>(
+            builder: (context, state) {
+              if (state is! ConversationsLoaded) {
+                return const Center(
+                  child: CircularProgressIndicator(color: AppColors.richGold),
                 );
-              },
-            );
-          },
-        );
-      },
+              }
+              final inquiries = state.conversations.where((c) {
+                final deletedForMe = c.isDeleted ||
+                    (c.deletedFor?.containsKey(widget.userId) ?? false);
+                return c.businessInquiry &&
+                    c.lastMessage != null &&
+                    !deletedForMe;
+              }).toList()
+                ..sort((a, b) => (b.lastMessageAt ?? b.createdAt)
+                    .compareTo(a.lastMessageAt ?? a.createdAt));
+
+              final body = inquiries.isEmpty
+                  ? ListView(
+                      // Keep it scrollable so pull-to-refresh still works.
+                      physics: const AlwaysScrollableScrollPhysics(),
+                      children: [
+                        const SizedBox(height: 80),
+                        const Icon(Icons.storefront_outlined,
+                            size: 64, color: AppColors.textSecondary),
+                        const SizedBox(height: 16),
+                        Text(
+                          l10n.messagesBusinessEmpty,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                              color: AppColors.textSecondary, fontSize: 16),
+                        ),
+                      ],
+                    )
+                  : ListView.builder(
+                      physics: const AlwaysScrollableScrollPhysics(),
+                      itemCount: inquiries.length,
+                      itemBuilder: (context, index) {
+                        final conversation = inquiries[index];
+                        final otherUserId =
+                            conversation.getOtherUserId(widget.userId);
+                        return FutureBuilder<Profile?>(
+                          future: _getProfile(otherUserId),
+                          builder: (context, snapshot) {
+                            final profile = snapshot.data;
+                            if (_searchQuery.isNotEmpty && profile != null) {
+                              final q = _searchQuery.toLowerCase();
+                              final nameMatch = profile.displayName
+                                  .toLowerCase()
+                                  .contains(q);
+                              final nickMatch = profile.nickname
+                                      ?.toLowerCase()
+                                      .contains(q) ??
+                                  false;
+                              if (!nameMatch && !nickMatch) {
+                                return const SizedBox.shrink();
+                              }
+                            }
+                            return ConversationCard(
+                              key: ValueKey(conversation.conversationId),
+                              conversation: conversation,
+                              otherUserProfile: profile,
+                              currentUserId: widget.userId,
+                              chatLanguage:
+                                  _getChatLanguage(conversation.matchId),
+                              onToggleFavorite: () {
+                                context.read<ConversationsBloc>().add(
+                                      ConversationToggleFavoriteRequested(
+                                        conversationId:
+                                            conversation.conversationId,
+                                        userId: widget.userId,
+                                        isFavorite: !conversation
+                                            .isFavoritedBy(widget.userId),
+                                      ),
+                                    );
+                              },
+                              onLongPress: () {
+                                _showDeleteBottomSheet(
+                                  context,
+                                  conversation,
+                                  profile?.displayName ?? 'this user',
+                                );
+                              },
+                              onTap: () async {
+                                if (profile == null) return;
+                                await Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) => ChatScreen(
+                                      matchId: conversation.matchId,
+                                      currentUserId: widget.userId,
+                                      otherUserId: otherUserId,
+                                      otherUserProfile: profile,
+                                    ),
+                                  ),
+                                );
+                                if (context.mounted) {
+                                  context.read<ConversationsBloc>().add(
+                                      const ConversationsRefreshRequested());
+                                }
+                              },
+                            );
+                          },
+                        );
+                      },
+                    );
+
+              return RefreshIndicator(
+                color: AppColors.richGold,
+                backgroundColor: AppColors.backgroundCard,
+                onRefresh: () async {
+                  context
+                      .read<ConversationsBloc>()
+                      .add(const ConversationsRefreshRequested());
+                },
+                child: body,
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 

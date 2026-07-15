@@ -62,33 +62,24 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
         return bt.compareTo(at);
       });
 
-    // Best-effort minimal-profile hydration in parallel (name + avatar).
+    // Name + avatar hydration via the shared ProfileRepository (the same,
+    // reliable path the rest of the app uses) — more robust than a raw doc read.
     await Future.wait(leads.map((lead) async {
       try {
-        final p = await FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(lead.uid)
-            .get();
-        final data = p.data();
-        if (data != null) {
-          final name = ((data['displayName'] as String?) ??
-                  (data['nickname'] as String?) ??
-                  (data['name'] as String?))
-              ?.trim();
-          lead.displayName = (name != null && name.isNotEmpty) ? name : null;
-          final photos = (data['photoUrls'] as List<dynamic>?)
-                  ?.whereType<String>()
-                  .toList() ??
-              (data['photos'] as List<dynamic>?)
-                  ?.whereType<String>()
-                  .toList();
-          lead.avatarUrl = (photos != null && photos.isNotEmpty)
-              ? photos.first
-              : (data['profilePhotoUrl'] as String?) ??
-                  (data['photoUrl'] as String?);
+        final result = await di.sl<ProfileRepository>().getProfile(lead.uid);
+        final profile = result.fold((f) {
+          debugPrint('[Leads] profile load failed for ${lead.uid}: ${f.message}');
+          return null;
+        }, (p) => p);
+        if (profile != null) {
+          final name = profile.displayName.trim();
+          lead.displayName = name.isNotEmpty ? name : null;
+          if (profile.photoUrls.isNotEmpty) {
+            lead.avatarUrl = profile.photoUrls.first;
+          }
         }
-      } catch (_) {
-        // best-effort: ignore a single bad/missing profile doc.
+      } catch (e) {
+        debugPrint('[Leads] hydration error for ${lead.uid}: $e');
       }
     }));
 
@@ -157,9 +148,11 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
     final isContact = lead.type != 'saved_event';
     final typeLabel =
         isContact ? l10n.businessLeadContact : l10n.businessLeadSavedEvent;
+    // Never show the raw uid — fall back to a neutral label if the name is
+    // unavailable (e.g. a deleted profile or a transient load failure).
     final name = (lead.displayName?.isNotEmpty ?? false)
         ? lead.displayName!
-        : lead.uid;
+        : l10n.chatUnknown;
 
     return InkWell(
       borderRadius: BorderRadius.circular(AppDimensions.radiusM),

@@ -62,16 +62,11 @@ class _BusinessVerificationRequestScreenState
     super.initState();
     _businessNameController.text = widget.profile.businessName ??
         widget.profile.displayName;
-    // Only the fields that GATE submit drive a rebuild — and via a listener,
-    // NOT a per-keystroke setState in the shared field builder (that rebuilt
-    // the whole form on every keystroke and tore down the sibling text fields'
-    // IME connection, which is why the phone field couldn't be typed into).
-    _businessNameController.addListener(_onGatingFieldChanged);
-    _ownerNameController.addListener(_onGatingFieldChanged);
-  }
-
-  void _onGatingFieldChanged() {
-    if (mounted) setState(() {});
+    // NOTE: no per-keystroke setState here. Typing in the name fields used to
+    // rebuild the WHOLE form (this screen), which tore down the sibling text
+    // fields' IME connection — that's why the phone field couldn't be typed
+    // into. Instead, ONLY the submit button reacts to the name controllers via
+    // an AnimatedBuilder (see build), so keystrokes never rebuild any field.
   }
 
   @override
@@ -321,13 +316,15 @@ class _BusinessVerificationRequestScreenState
 
             // Business name (required)
             _label(l10n.verifyBusinessNameLabel, required: true),
-            _field(_businessNameController, icon: Icons.storefront),
+            _field(_businessNameController,
+                icon: Icons.storefront, fieldKey: 'businessName'),
             const SizedBox(height: 20),
 
             // Owner's full name — must match the uploaded ID document (required)
             _label(l10n.verifyOwnerNameLabel, required: true),
             _field(_ownerNameController,
                 icon: Icons.person_outline,
+                fieldKey: 'ownerName',
                 hint: l10n.verifyOwnerNameHint),
             const SizedBox(height: 20),
 
@@ -345,6 +342,7 @@ class _BusinessVerificationRequestScreenState
             _label(l10n.verifyWebsiteLabel),
             _field(_websiteController,
                 icon: Icons.link,
+                fieldKey: 'website',
                 hint: l10n.verifyWebsiteHint,
                 keyboardType: TextInputType.url),
             const SizedBox(height: 20),
@@ -353,38 +351,47 @@ class _BusinessVerificationRequestScreenState
             _label(l10n.verifyNotesLabel),
             _field(_notesController,
                 icon: Icons.notes,
+                fieldKey: 'notes',
                 hint: l10n.requestVerificationNoteHint,
                 maxLines: 3),
             const SizedBox(height: 32),
 
+            // Only the submit button reacts to the name-field text (via the
+            // controllers) — NOT the whole form — so typing never rebuilds any
+            // TextField and the IME stays connected.
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                onPressed: _canSubmit ? _submit : null,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.richGold,
-                  foregroundColor: AppColors.deepBlack,
-                  disabledBackgroundColor:
-                      AppColors.richGold.withOpacity(0.3),
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+              child: AnimatedBuilder(
+                animation: Listenable.merge(
+                    [_businessNameController, _ownerNameController]),
+                builder: (context, _) => ElevatedButton(
+                  onPressed: _canSubmit ? _submit : null,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.richGold,
+                    foregroundColor: AppColors.deepBlack,
+                    disabledBackgroundColor:
+                        AppColors.richGold.withOpacity(0.3),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    shape: RoundedRectangleBorder(
+                      borderRadius:
+                          BorderRadius.circular(AppDimensions.radiusM),
+                    ),
                   ),
-                ),
-                child: _submitting
-                    ? const SizedBox(
-                        width: 20,
-                        height: 20,
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          valueColor:
-                              AlwaysStoppedAnimation<Color>(AppColors.deepBlack),
+                  child: _submitting
+                      ? const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                                AppColors.deepBlack),
+                          ),
+                        )
+                      : Text(
+                          l10n.submit,
+                          style: const TextStyle(fontWeight: FontWeight.w700),
                         ),
-                      )
-                    : Text(
-                        l10n.submit,
-                        style: const TextStyle(fontWeight: FontWeight.w700),
-                      ),
+                ),
               ),
             ),
             const SizedBox(height: 24),
@@ -404,6 +411,7 @@ class _BusinessVerificationRequestScreenState
               child: _field(
                 _phoneController,
                 icon: Icons.phone_outlined,
+                fieldKey: 'phone',
                 hint: l10n.verifyPhoneHint,
                 keyboardType: TextInputType.phone,
                 enabled: !_phoneVerified,
@@ -446,6 +454,7 @@ class _BusinessVerificationRequestScreenState
                 child: _field(
                   _codeController,
                   icon: Icons.sms_outlined,
+                  fieldKey: 'code',
                   hint: l10n.verifyEnterCodeLabel,
                   keyboardType: TextInputType.number,
                 ),
@@ -550,15 +559,16 @@ class _BusinessVerificationRequestScreenState
   Widget _field(
     TextEditingController controller, {
     required IconData icon,
+    required String fieldKey,
     String? hint,
     int maxLines = 1,
     bool enabled = true,
     TextInputType? keyboardType,
   }) {
     return TextField(
-      // Stable identity across rebuilds so Flutter never re-maps one field's
+      // A distinct, STABLE key per field so Flutter never re-maps one field's
       // IME connection onto another (which dropped keystrokes).
-      key: ValueKey(controller),
+      key: ValueKey('verify_field_$fieldKey'),
       controller: controller,
       enabled: enabled,
       maxLines: maxLines,
