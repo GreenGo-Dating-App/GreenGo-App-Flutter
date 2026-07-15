@@ -6,9 +6,21 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../features/chat/presentation/screens/chat_screen.dart';
+import '../../../features/chat/presentation/screens/group_chat_screen.dart';
 import '../../../features/chat/presentation/screens/support_chat_screen.dart';
+import '../../../features/communities/domain/repositories/communities_repository.dart';
+import '../../../features/communities/presentation/bloc/communities_bloc.dart';
+import '../../../features/communities/presentation/screens/community_detail_screen.dart';
+import '../../../features/discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../features/events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../features/profile/data/models/profile_model.dart';
+import '../../../features/profile/domain/repositories/profile_repository.dart';
+import '../../../features/profile/presentation/bloc/profile_bloc.dart';
+import '../../../features/profile/presentation/bloc/profile_event.dart';
+import '../di/injection_container.dart' as di;
 import 'app_sound_service.dart';
 
 /// Top-level background message handler (must be a top-level function)
@@ -190,13 +202,129 @@ class PushNotificationService {
     }
 
     // Match — open chat with matched user (matchId == conversationId in this app)
-    if (type == 'newMatch') {
-      final matchId = data['matchId'] as String?;
-      if (matchId != null) {
-        await _openChatScreen(conversationId: matchId, currentUserId: userId);
+    if (type == 'newMatch' && (data['matchId'] as String?) != null) {
+      await _openChatScreen(
+          conversationId: data['matchId'] as String, currentUserId: userId);
+      return;
+    }
+
+    // ── Parity with the in-app notifications router ─────────────────────────
+    String? pick(List<String> keys) {
+      for (final k in keys) {
+        final v = data[k];
+        if (v is String && v.isNotEmpty) return v;
+      }
+      return null;
+    }
+
+    // EVENT (community_event / event_reminder / new_event / event_join / like…)
+    final eventId = pick(['eventId']);
+    if (action == 'event' || action == 'open_event' || eventId != null) {
+      if (eventId != null) {
+        navigator.push(
+          EventDetailLoaderScreen.route(eventId: eventId, currentUserId: userId),
+        );
       }
       return;
     }
+
+    // COMMUNITY — must precede group (community_join / announcement / event).
+    final communityId = pick(['communityId']);
+    if (action == 'community' ||
+        action == 'open_community' ||
+        communityId != null) {
+      if (communityId != null) await _openCommunityById(communityId, userId);
+      return;
+    }
+
+    // GROUP chat (group_add / group_join / group message).
+    final groupId = pick(['groupId']);
+    if (action == 'group' || action == 'open_group' || groupId != null) {
+      if (groupId != null) {
+        navigator.push(
+          GroupChatScreen.route(
+            groupId: groupId,
+            groupName: (data['groupName'] as String?) ?? '',
+            currentUserId: userId,
+            groupPhotoUrl: data['groupPhotoUrl'] as String?,
+          ),
+        );
+      }
+      return;
+    }
+
+    // PROFILE (like / super-like / profile view / business follow-rate / QR).
+    final profileId = pick([
+      'actorId',
+      'profileId',
+      'likerId',
+      'matchedUserId',
+      'targetUserId',
+      'fromUserId',
+      'senderId',
+    ]);
+    if (action == 'profile' ||
+        action == 'profile_view' ||
+        action == 'open_profile' ||
+        type == 'newLike' ||
+        type == 'superLike' ||
+        type == 'profileView' ||
+        type == 'business_follow' ||
+        type == 'business_rating' ||
+        type == 'qr_scanned' ||
+        (profileId != null && action == null && type == null)) {
+      if (profileId != null && profileId != userId) {
+        await _openProfileById(profileId, userId);
+      }
+      return;
+    }
+  }
+
+  /// Loads a community by id and opens [CommunityDetailScreen] (with its blocs).
+  Future<void> _openCommunityById(String communityId, String userId) async {
+    final navigator = navigatorKey.currentState;
+    if (navigator == null) return;
+    try {
+      final result =
+          await di.sl<CommunitiesRepository>().getCommunityById(communityId);
+      final community = result.fold((_) => null, (c) => c);
+      if (community == null) return;
+      await navigator.push(
+        MaterialPageRoute<void>(
+          builder: (_) => MultiBlocProvider(
+            providers: [
+              BlocProvider<CommunitiesBloc>(
+                create: (_) => di.sl<CommunitiesBloc>(),
+              ),
+              BlocProvider<ProfileBloc>(
+                create: (_) => di.sl<ProfileBloc>()
+                  ..add(ProfileLoadRequested(userId: userId)),
+              ),
+            ],
+            child: CommunityDetailScreen(community: community),
+          ),
+        ),
+      );
+    } catch (_) {/* silent */}
+  }
+
+  /// Loads a profile by id and opens [ProfileDetailScreen] (self-safe).
+  Future<void> _openProfileById(String profileId, String userId) async {
+    final navigator = navigatorKey.currentState;
+    if (navigator == null) return;
+    try {
+      final result = await di.sl<ProfileRepository>().getProfile(profileId);
+      final profile = result.fold((_) => null, (p) => p);
+      if (profile == null) return;
+      await navigator.push(
+        MaterialPageRoute<void>(
+          builder: (_) => ProfileDetailScreen(
+            profile: profile,
+            currentUserId: userId,
+          ),
+        ),
+      );
+    } catch (_) {/* silent */}
   }
 
   /// Open ChatScreen for a given conversation. Fetches participants + other-user
