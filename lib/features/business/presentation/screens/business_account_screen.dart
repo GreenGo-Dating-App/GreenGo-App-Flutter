@@ -224,12 +224,16 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     );
   }
 
-  /// Gated on [TierEntitlements.canBecomeBusiness] (Platinum only): non-Platinum
-  /// users get the upgrade dialog (mirroring [TierGate]'s upsell path) and are
-  /// blocked. Platinum users confirm a permanent one-time dialog, after which
-  /// `profiles/{uid}.isBusiness` is set true with a `businessSince` timestamp.
-  Future<void> _handleBecomeBusiness() async {
-    if (_isBusiness || _isSaving) return;
+  /// Free ON/OFF storefront toggle, gated on
+  /// [TierEntitlements.canBecomeBusiness] (Platinum only). Non-Platinum users
+  /// tapping the switch get the upgrade dialog (mirroring [TierGate]'s upsell
+  /// path via the Shop Membership tab) and no change is made. Platinum users
+  /// flip `profiles/{uid}.isBusiness`; the first time it is enabled a
+  /// `businessSince` timestamp is stamped. Turning it OFF sets `isBusiness`
+  /// false, which naturally hides the storefront from discovery (all discovery
+  /// queries filter `where('isBusiness', isEqualTo: true)`).
+  Future<void> _handleToggleStorefront(bool value) async {
+    if (_isSaving || value == _isBusiness) return;
     final uid = widget.profile.userId;
     final tier = widget.profile.membershipTier;
     final l10n = AppLocalizations.of(context)!;
@@ -251,58 +255,29 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
       return;
     }
 
-    // One-time permanent confirmation.
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (dialogContext) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-        ),
-        title: Text(
-          l10n.becomeBusinessConfirmTitle,
-          style: const TextStyle(color: AppColors.textPrimary),
-        ),
-        content: Text(
-          l10n.becomeBusinessConfirmMessage,
-          style: const TextStyle(color: AppColors.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(dialogContext).pop(false),
-            child: Text(
-              l10n.cancel,
-              style: const TextStyle(color: AppColors.textTertiary),
-            ),
-          ),
-          TextButton(
-            onPressed: () => Navigator.of(dialogContext).pop(true),
-            child: Text(
-              l10n.becomeBusinessConfirmAction,
-              style: const TextStyle(
-                color: AppColors.richGold,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-    if (confirmed != true || !mounted) return;
-
     setState(() => _isSaving = true);
     try {
-      await FirebaseFirestore.instance.collection('profiles').doc(uid).set({
-        'isBusiness': true,
-        'businessSince': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
+      final ref = FirebaseFirestore.instance.collection('profiles').doc(uid);
+      final data = <String, dynamic>{'isBusiness': value};
+      if (value) {
+        // Stamp businessSince the first time the storefront is enabled.
+        final snap = await ref.get();
+        if (snap.data()?['businessSince'] == null) {
+          data['businessSince'] = FieldValue.serverTimestamp();
+        }
+      }
+      await ref.set(data, SetOptions(merge: true));
       if (!mounted) return;
       setState(() {
-        _isBusiness = true;
+        _isBusiness = value;
         _isSaving = false;
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.becomeBusinessSuccess)),
+        SnackBar(
+          content: Text(
+            value ? l10n.storefrontEnabled : l10n.storefrontDisabled,
+          ),
+        ),
       );
     } catch (_) {
       if (!mounted) return;
@@ -405,7 +380,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Become-a-business — ONE-TIME, Platinum-gated, irreversible.
+              // Storefront on/off — a free, Platinum-gated toggle.
               Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -446,7 +421,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                           Text(
                             _isBusiness
                                 ? l10n.businessAccountActive
-                                : l10n.becomeBusinessPermanentHint,
+                                : l10n.storefrontToggleHint,
                             style: const TextStyle(
                               color: AppColors.textTertiary,
                               fontSize: 12,
@@ -456,31 +431,22 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                       ),
                     ),
                     const SizedBox(width: 12),
-                    if (_isBusiness)
-                      // Permanent: one-time = irreversible, no toggle-off.
-                      const Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(Icons.check_circle,
-                              color: AppColors.richGold, size: 20),
-                        ],
+                    if (_isSaving)
+                      const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          valueColor:
+                              AlwaysStoppedAnimation<Color>(AppColors.richGold),
+                        ),
                       )
                     else
-                      TextButton(
-                        onPressed: _isSaving ? null : _handleBecomeBusiness,
-                        style: TextButton.styleFrom(
-                          backgroundColor: AppColors.richGold,
-                          foregroundColor: AppColors.deepBlack,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                        ),
-                        child: Text(
-                          l10n.becomeBusinessAction,
-                          style: const TextStyle(
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
+                      Switch(
+                        value: _isBusiness,
+                        activeColor: AppColors.deepBlack,
+                        activeTrackColor: AppColors.richGold,
+                        onChanged: _handleToggleStorefront,
                       ),
                   ],
                 ),

@@ -12647,7 +12647,17 @@ class AppLocalizationsDe extends AppLocalizations {
       'Nachrichten dürfen bis zu 4096 Zeichen lang sein.';
 
   @override
-  String get exploreBusinessesNearYou => 'Unternehmen in deiner Nähe';
+  String get exploreBusinessesNearYou => 'Schaufenster in deiner Naehe';
+
+  @override
+  String get storefrontEnabled => 'Schaufenster ist an';
+
+  @override
+  String get storefrontDisabled => 'Schaufenster ist aus';
+
+  @override
+  String get storefrontToggleHint =>
+      'Schalte dein Schaufenster jederzeit an oder aus';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';

@@ -22203,8 +22203,26 @@ abstract class AppLocalizations {
   /// No description provided for @exploreBusinessesNearYou.
   ///
   /// In en, this message translates to:
-  /// **'Businesses near you'**
+  /// **'Storefronts near you'**
   String get exploreBusinessesNearYou;
+
+  /// No description provided for @storefrontEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront is on'**
+  String get storefrontEnabled;
+
+  /// No description provided for @storefrontDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront is off'**
+  String get storefrontDisabled;
+
+  /// No description provided for @storefrontToggleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn your storefront on or off anytime'**
+  String get storefrontToggleHint;
 
   /// No description provided for @splashBusinessLabel.
   ///
