@@ -126,3 +126,4 @@ setup_admin.js
 # Local-only corp CA bundle for testing behind a TLS-inspecting proxy
 android/app/src/debug/res/raw/corp_cas.pem
 _install_result.txt
+.claude/worktrees/

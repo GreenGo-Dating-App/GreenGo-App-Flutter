@@ -94,6 +94,13 @@ abstract class GroupChatRemoteDataSource {
     required String userId,
   });
 
+  /// Permanently delete a group (admin-only). Removes member docs + the group
+  /// doc; orphaned message docs are cleaned up out-of-band.
+  Future<void> deleteGroup({
+    required String groupId,
+    required String actorId,
+  });
+
   Future<void> updateGroupInfo({
     required String groupId,
     String? name,
@@ -471,6 +478,26 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
   }) async {
     final groupRef = _groups.doc(groupId);
     await _detachMember(groupRef, userId, userId, 'left the group');
+  }
+
+  @override
+  Future<void> deleteGroup({
+    required String groupId,
+    required String actorId,
+  }) async {
+    final groupRef = _groups.doc(groupId);
+    final snap = await groupRef.get();
+    if (!snap.exists) return;
+    // Admin-only: throws if the actor isn't a group admin.
+    _requireAdmin(snap.data()!, actorId);
+
+    // Delete ONLY the group doc from the client (security rules scope the
+    // members/messages subcollections to their own owner/sender, so the client
+    // can't cascade them). Deleting the group doc removes the group from every
+    // member's list (group queries read the `groups` collection). The
+    // `onGroupDeleted` Cloud Function then recursively removes the members +
+    // messages subcollections server-side (Admin SDK).
+    await groupRef.delete();
   }
 
   Future<void> _detachMember(

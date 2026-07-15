@@ -204,8 +204,55 @@ class GroupInfoScreen extends StatelessWidget {
                 ),
                 onTap: () => _confirmLeave(context),
               ),
+              // Admin only: permanently delete the whole group for everyone.
+              if (isAdmin)
+                ListTile(
+                  leading:
+                      const Icon(Icons.delete_forever, color: Colors.red),
+                  title: Text(
+                    l10n.groupDelete,
+                    style: const TextStyle(color: Colors.red),
+                  ),
+                  onTap: () => _confirmDeleteGroup(context),
+                ),
             ],
           );
+  }
+
+  /// Admin: permanently delete the group for everyone (confirmation required).
+  Future<void> _confirmDeleteGroup(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(l10n.groupDeleteConfirmTitle),
+        content: Text(l10n.groupDeleteConfirmBody),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(l10n.groupCancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(l10n.groupDelete,
+                style: const TextStyle(color: Colors.red)),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !context.mounted) return;
+
+    final result = await sl<DeleteGroup>()(
+      groupId: groupId,
+      actorId: currentUserId,
+    );
+    if (!context.mounted) return;
+    result.fold(
+      (failure) => ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(failure.message)),
+      ),
+      (_) => Navigator.of(context).popUntil((r) => r.isFirst),
+    );
   }
 
   /// Admin: remove a member from the group.

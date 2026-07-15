@@ -163,6 +163,14 @@ class GroupChatRepositoryImpl implements GroupChatRepository {
           () => remoteDataSource.leaveGroup(groupId: groupId, userId: userId));
 
   @override
+  Future<Either<Failure, void>> deleteGroup({
+    required String groupId,
+    required String actorId,
+  }) =>
+      _guard(() =>
+          remoteDataSource.deleteGroup(groupId: groupId, actorId: actorId));
+
+  @override
   Future<Either<Failure, void>> updateGroupInfo({
     required String groupId,
     String? name,

@@ -52,6 +52,19 @@ class LeaveGroup {
   }
 }
 
+/// Permanently delete a group. Admin-only (enforced in the datasource).
+class DeleteGroup {
+  DeleteGroup(this.repository);
+  final GroupChatRepository repository;
+
+  Future<Either<Failure, void>> call({
+    required String groupId,
+    required String actorId,
+  }) {
+    return repository.deleteGroup(groupId: groupId, actorId: actorId);
+  }
+}
+
 class UpdateGroupInfo {
   UpdateGroupInfo(this.repository);
   final GroupChatRepository repository;

@@ -500,6 +500,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => AddGroupMembers(sl()));
   sl.registerLazySingleton(() => RemoveGroupMember(sl()));
   sl.registerLazySingleton(() => LeaveGroup(sl()));
+  sl.registerLazySingleton(() => DeleteGroup(sl()));
   sl.registerLazySingleton(() => UpdateGroupInfo(sl()));
   sl.registerLazySingleton(() => ChangeGroupRole(sl()));
 
