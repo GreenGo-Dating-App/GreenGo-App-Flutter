@@ -150,80 +150,100 @@ extension SubscriptionTierExtension on SubscriptionTier {
     }
   }
 
-  /// Features for each tier
+  /// Features for each tier (Phase 3.2: REAL GreenGo per-tier entitlements).
+  ///
+  /// Values mirror [TierEntitlements] — the single source of truth for what a
+  /// membership grants. Numeric limits use -1 for UNLIMITED (∞); renderers
+  /// format that via `_formatLimit`. Booleans are plain capability flags. The
+  /// Map shape stays `<String, dynamic>` so existing renderers
+  /// (getFeature/hasFeature/getLimit) keep working.
+  ///
+  ///   eventsCreate     ongoing events a user may create (Free 1 / Silver 3 /
+  ///                    Gold 5 / Platinum ∞)
+  ///   groupsCreate     groups & communities a user may create (Free 1 / paid ∞)
+  ///   dailyConnects    new-people connections per day (Free 10 / Silver 50 /
+  ///                    Gold 200 / Platinum ∞)
+  ///   boostsPerMonth   profile boosts granted each month
+  ///   monthlyCoins     coins granted each month by the membership
+  ///   seeWhoConnected  can see who connected with you (Gold+)
+  ///   travelMode       browse/discover in another location (Silver+)
+  ///   prioritySupport  priority customer support (Gold+)
+  ///   businessAccount  may convert to a public business account (Platinum-only)
+  ///   unlimitedChat    unlimited chat messages (all tiers)
+  ///   noAds            ad-free experience (all paying tiers)
   Map<String, dynamic> get features {
     switch (this) {
       case SubscriptionTier.basic:
         return {
+          'eventsCreate': 1,
+          'groupsCreate': 1,
           'dailyConnects': 10,
-          'priorityConnects': 1,
-          'rewinds': 0,
-          'unlimitedConnects': false,
-          'advancedFilters': false,
-          'readReceipts': false,
+          'boostsPerMonth': 0,
+          'monthlyCoins': 100,
+          'seeWhoConnected': false,
+          'travelMode': false,
           'prioritySupport': false,
-          'incognitoMode': false,
-          'travelling': false,
-          'badge': false,
+          'businessAccount': false,
+          'unlimitedChat': true,
+          'noAds': false,
         };
       case SubscriptionTier.silver:
         return {
-          'dailyConnects': 100,
-          'priorityConnects': 5,
-          'rewinds': 5,
-          'unlimitedConnects': false,
-          'advancedFilters': true,
-          'readReceipts': true,
+          'eventsCreate': 3,
+          'groupsCreate': -1, // unlimited
+          'dailyConnects': 50,
+          'boostsPerMonth': 1,
+          'monthlyCoins': 500,
+          'seeWhoConnected': false,
+          'travelMode': true,
           'prioritySupport': false,
-          'incognitoMode': false,
-          'travelling': false,
-          'badge': true,
+          'businessAccount': false,
+          'unlimitedChat': true,
+          'noAds': true,
         };
       case SubscriptionTier.gold:
         return {
-          'dailyConnects': -1, // unlimited
-          'priorityConnects': 10,
-          'rewinds': -1, // unlimited
-          'unlimitedConnects': true,
-          'advancedFilters': true,
-          'readReceipts': true,
+          'eventsCreate': 5,
+          'groupsCreate': -1, // unlimited
+          'dailyConnects': 200,
+          'boostsPerMonth': 4,
+          'monthlyCoins': 1500,
+          'seeWhoConnected': true,
+          'travelMode': true,
           'prioritySupport': true,
-          'incognitoMode': true,
-          'travelling': false,
-          'badge': true,
+          'businessAccount': false,
+          'unlimitedChat': true,
+          'noAds': true,
         };
       case SubscriptionTier.platinum:
         return {
+          'eventsCreate': -1, // unlimited
+          'groupsCreate': -1, // unlimited
           'dailyConnects': -1, // unlimited
-          'priorityConnects': -1, // unlimited
-          'rewinds': -1, // unlimited
-          'unlimitedConnects': true,
-          'advancedFilters': true,
-          'readReceipts': true,
+          'boostsPerMonth': 30,
+          'monthlyCoins': 5000,
+          'seeWhoConnected': true,
+          'travelMode': true,
           'prioritySupport': true,
-          'incognitoMode': true,
-          'travelling': true,
-          'badge': true,
-          'vipBadge': true,
-          'priorityMatching': true,
-          'exclusiveEvents': true,
+          'businessAccount': true,
+          'unlimitedChat': true,
+          'noAds': true,
         };
       case SubscriptionTier.test:
         // Test tier - all features enabled, limits configurable from admin panel
         return {
+          'eventsCreate': -1, // unlimited (admin configurable)
+          'groupsCreate': -1, // unlimited (admin configurable)
           'dailyConnects': -1, // unlimited (admin configurable)
-          'priorityConnects': -1, // unlimited (admin configurable)
-          'rewinds': -1, // unlimited (admin configurable)
-          'unlimitedConnects': true,
-          'advancedFilters': true,
-          'readReceipts': true,
+          'boostsPerMonth': 30,
+          'monthlyCoins': 5000,
+          'seeWhoConnected': true,
+          'travelMode': true,
           'prioritySupport': true,
-          'incognitoMode': true,
-          'travelling': true,
-          'badge': true,
-          'testBadge': true,
+          'businessAccount': true,
+          'unlimitedChat': true,
+          'noAds': true,
           'bypassCountdown': true, // Key feature for test users
-          'priorityMatching': true,
         };
     }
   }
