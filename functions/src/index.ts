@@ -54,6 +54,11 @@ export {
   onGroupInfoChanged,
 } from './group_chat/membership';
 
+// Group cascade cleanup when an admin permanently deletes a group.
+export {
+  onGroupDeleted,
+} from './group_chat/groupCleanup';
+
 // External experiences (Viator) — scheduled ingester into `external_events`,
 // plus a guarded manual-refresh endpoint. No-ops until VIATOR_API_KEY is set.
 export {

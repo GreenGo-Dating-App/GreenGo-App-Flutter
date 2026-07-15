@@ -68,6 +68,12 @@ abstract class GroupChatRepository {
     required String userId,
   });
 
+  /// Permanently delete a group (admin-only).
+  Future<Either<Failure, void>> deleteGroup({
+    required String groupId,
+    required String actorId,
+  });
+
   Future<Either<Failure, void>> updateGroupInfo({
     required String groupId,
     String? name,

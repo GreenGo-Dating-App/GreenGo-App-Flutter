@@ -11202,6 +11202,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get groupLeave => 'Sair do grupo';
 
   @override
+  String get groupDelete => 'Eliminar grupo';
+
+  @override
+  String get groupDeleteConfirmTitle => 'Eliminar grupo?';
+
+  @override
+  String get groupDeleteConfirmBody =>
+      'Isto elimina permanentemente o grupo e todas as suas mensagens para todos. Isto nao pode ser anulado.';
+
+  @override
   String get groupLeaveConfirmTitle => 'Sair do grupo?';
 
   @override
@@ -24221,6 +24231,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get groupLeave => 'Sair do grupo';
+
+  @override
+  String get groupDelete => 'Excluir grupo';
+
+  @override
+  String get groupDeleteConfirmTitle => 'Excluir grupo?';
+
+  @override
+  String get groupDeleteConfirmBody =>
+      'Isso exclui permanentemente o grupo e todas as suas mensagens para todos. Isso nao pode ser desfeito.';
 
   @override
   String get groupLeaveConfirmTitle => 'Sair do grupo?';

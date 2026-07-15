@@ -11232,6 +11232,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get groupLeave => 'Gruppe verlassen';
 
   @override
+  String get groupDelete => 'Gruppe loeschen';
+
+  @override
+  String get groupDeleteConfirmTitle => 'Gruppe loeschen?';
+
+  @override
+  String get groupDeleteConfirmBody =>
+      'Dies loescht die Gruppe und alle Nachrichten dauerhaft fuer alle. Dies kann nicht rueckgaengig gemacht werden.';
+
+  @override
   String get groupLeaveConfirmTitle => 'Gruppe verlassen?';
 
   @override

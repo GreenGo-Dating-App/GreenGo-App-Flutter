@@ -19734,6 +19734,24 @@ abstract class AppLocalizations {
   /// **'Leave group'**
   String get groupLeave;
 
+  /// No description provided for @groupDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete group'**
+  String get groupDelete;
+
+  /// No description provided for @groupDeleteConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete group?'**
+  String get groupDeleteConfirmTitle;
+
+  /// No description provided for @groupDeleteConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This permanently deletes the group and all its messages for everyone. This cannot be undone.'**
+  String get groupDeleteConfirmBody;
+
   /// No description provided for @groupLeaveConfirmTitle.
   ///
   /// In en, this message translates to:
