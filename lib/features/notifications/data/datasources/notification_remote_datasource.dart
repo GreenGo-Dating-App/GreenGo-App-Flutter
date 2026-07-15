@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import '../../../../core/config/web_push_config.dart';
 import '../../domain/entities/notification.dart';
 import '../models/notification_model.dart';
 import '../models/notification_preferences_model.dart';
@@ -313,6 +315,14 @@ class NotificationRemoteDataSourceImpl
   @override
   Future<String?> getFCMToken() async {
     try {
+      if (kIsWeb) {
+        // Web requires a VAPID key + a registered firebase-messaging-sw.js.
+        // Without a configured key, skip gracefully so the web build still runs.
+        if (!WebPushConfig.isConfigured) return null;
+        return await messaging.getToken(
+          vapidKey: WebPushConfig.vapidPublicKey,
+        );
+      }
       return await messaging.getToken();
     } catch (e) {
       throw Exception('Failed to get FCM token: $e');

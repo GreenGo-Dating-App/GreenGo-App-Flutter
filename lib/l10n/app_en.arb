@@ -5512,6 +5512,7 @@
   "eventTicketDelete": "Delete ticket",
   "eventTicketDeleteConfirm": "Permanently delete this ticket? The event has already ended.",
   "eventScanCheckIn": "Scan / Check-in",
+  "eventScanUseMobileApp": "QR check-in scanning is available in the GreenGo mobile app.",
   "eventScanManageScanners": "Manage scanners",
   "eventScanInviteScannerHint": "Invite a member to scan tickets at the door.",
   "eventScanNicknameHint": "Nickname",
@@ -6218,5 +6219,21 @@
   "tourNotifOpenTitle": "Open and manage",
   "tourNotifOpenDesc": "Tap a notification to open it, or swipe left to delete it.",
   "tourNotifMarkAllTitle": "Clear the unread",
-  "tourNotifMarkAllDesc": "Mark everything as read in a single tap."
+  "tourNotifMarkAllDesc": "Mark everything as read in a single tap.",
+  "communitiesJoinAsPersonalTitle": "Join with your personal profile",
+  "@communitiesJoinAsPersonalTitle": {
+    "description": "Community join-as-personal / post-create manage strings"
+  },
+  "communitiesJoinAsPersonalBody": "You'll join this community as your personal profile. Your business storefront won't be shown here. Continue?",
+  "@communitiesJoinAsPersonalBody": {
+    "description": "Community join-as-personal / post-create manage strings"
+  },
+  "communitiesJoinAsPersonalConfirm": "Join",
+  "@communitiesJoinAsPersonalConfirm": {
+    "description": "Community join-as-personal / post-create manage strings"
+  },
+  "communitiesCreatedManageHint": "Community created! Open Members to add people and grant tip or announcement rights.",
+  "@communitiesCreatedManageHint": {
+    "description": "Community join-as-personal / post-create manage strings"
+  }
 }

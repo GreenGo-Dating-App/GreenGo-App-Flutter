@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter/foundation.dart';
@@ -48,10 +49,40 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   final CommunitiesRepository _repository;
   final CommunitiesRemoteDataSource _remoteDataSource;
 
-  /// Discover page size (must match the value the datasource pages by).
-  static const int _communitiesPageSize = 50;
+  /// Discover page size — fetch up to 100 public communities per page and show
+  /// them in random order for variety (see [_shuffled]).
+  static const int _communitiesPageSize = 100;
+
+  final math.Random _rng = math.Random();
+
+  /// A shuffled COPY of [items] (never mutates the source list).
+  List<Community> _shuffled(List<Community> items) {
+    final copy = [...items]..shuffle(_rng);
+    return copy;
+  }
+
+  /// The oldest `lastActivityAt` in [items] — the keyset cursor for the next
+  /// page (kept separate from the shuffled display order).
+  DateTime? _oldestActivity(List<Community> items) {
+    DateTime? min;
+    for (final c in items) {
+      final a = c.lastActivityAt;
+      if (a == null) continue;
+      if (min == null || a.isBefore(min)) min = a;
+    }
+    return min;
+  }
 
   StreamSubscription? _messagesSubscription;
+
+  /// Latest community messages from the live stream, cached so they survive the
+  /// LoadCommunityDetail ⇄ SubscribeToCommunityMessages race. Bloc v8 runs
+  /// different event handlers concurrently, so the first snapshot can arrive
+  /// while state is still Loading — dropping it left Tips/Announcements/Chat
+  /// permanently empty (a static seeded set never re-emits). We stash the
+  /// messages here and re-apply them the moment CommunityDetailLoaded is built.
+  String? _subscribedCommunityId;
+  List<CommunityMessage> _latestMessages = const [];
 
   Future<void> _onLoadCommunities(
     LoadCommunities event,
@@ -90,18 +121,21 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         }
       },
       (communities) {
-        // Separate language circles from other communities
-        final languageCircles = communities
+        // Show Discover in RANDOM order (up to 100 per page); keep the keyset
+        // cursor from the true-oldest item so endless scroll stays correct.
+        final display = _shuffled(communities);
+        final languageCircles = display
             .where((c) => c.type == CommunityType.languageCircle)
             .toList();
 
         emit(CommunitiesLoaded(
-          communities: communities,
+          communities: display,
           userCommunities: userCommunities,
           recommended: recommended,
           languageCircles: languageCircles,
           hasMoreCommunities: communities.length >= _communitiesPageSize,
           isLoadingMore: false,
+          communitiesCursor: _oldestActivity(communities),
         ));
       },
     );
@@ -119,7 +153,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     if (!currentState.hasMoreCommunities || currentState.isLoadingMore) return;
     if (currentState.communities.isEmpty) return;
 
-    final cursor = currentState.communities.last.lastActivityAt;
+    final cursor = currentState.communitiesCursor;
     if (cursor == null) {
       // Can't paginate without a cursor value; treat as end of list.
       emit(currentState.copyWith(hasMoreCommunities: false));
@@ -149,11 +183,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       (page) {
         final s = state;
         if (s is! CommunitiesLoaded) return;
-        // Dedupe by id in case a boundary item overlaps.
+        // Dedupe by id in case a boundary item overlaps. Append the (shuffled)
+        // fresh chunk so already-seen items don't reorder mid-scroll.
         final existingIds = s.communities.map((c) => c.id).toSet();
         final fresh =
             page.where((c) => !existingIds.contains(c.id)).toList();
-        final merged = [...s.communities, ...fresh];
+        final merged = [...s.communities, ..._shuffled(fresh)];
+        // Advance the cursor to the oldest across old + new.
+        final pageOldest = _oldestActivity(fresh);
+        final newCursor = (pageOldest != null && pageOldest.isBefore(cursor))
+            ? pageOldest
+            : cursor;
         emit(s.copyWith(
           communities: merged,
           languageCircles: merged
@@ -161,6 +201,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
               .toList(),
           hasMoreCommunities: page.length >= _communitiesPageSize,
           isLoadingMore: false,
+          communitiesCursor: newCursor,
         ));
       },
     );
@@ -282,10 +323,16 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           (members) => members,
         );
 
+        // Re-apply any messages that already streamed in for THIS community
+        // before the detail finished loading (otherwise they'd be lost).
+        final cached = _subscribedCommunityId == event.communityId
+            ? _latestMessages
+            : const <CommunityMessage>[];
+
         emit(CommunityDetailLoaded(
           community: community,
           members: members,
-          messages: const [],
+          messages: cached,
           isMember: false,
         ));
       },
@@ -442,6 +489,9 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     Emitter<CommunitiesState> emit,
   ) {
     _messagesSubscription?.cancel();
+    // Reset the cache for the new community so stale messages can't bleed over.
+    _subscribedCommunityId = event.communityId;
+    _latestMessages = const [];
 
     _messagesSubscription = _repository
         .getCommunityMessages(event.communityId)
@@ -466,6 +516,9 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     CommunityMessagesUpdated event,
     Emitter<CommunitiesState> emit,
   ) {
+    // Always cache — even if the detail state isn't ready yet — so the messages
+    // survive to be applied when CommunityDetailLoaded is emitted.
+    _latestMessages = event.messages;
     final currentState = state;
     if (currentState is CommunityDetailLoaded) {
       emit(currentState.copyWith(messages: event.messages));

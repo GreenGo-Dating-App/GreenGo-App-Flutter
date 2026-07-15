@@ -11596,6 +11596,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get eventScanCheckIn => 'Scansiona / Check-in';
 
   @override
+  String get eventScanUseMobileApp =>
+      'QR check-in scanning is available in the GreenGo mobile app.';
+
+  @override
   String get eventScanManageScanners => 'Gestisci scanner';
 
   @override
@@ -13165,4 +13169,19 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get tourNotifMarkAllDesc =>
       'Segna tutto come letto con un solo tocco.';
+
+  @override
+  String get communitiesJoinAsPersonalTitle =>
+      'Unisciti con il tuo profilo personale';
+
+  @override
+  String get communitiesJoinAsPersonalBody =>
+      'Ti unirai a questa community con il tuo profilo personale. La tua vetrina business non verra mostrata qui. Continuare?';
+
+  @override
+  String get communitiesJoinAsPersonalConfirm => 'Unisciti';
+
+  @override
+  String get communitiesCreatedManageHint =>
+      'Community creata! Apri Membri per aggiungere persone e concedere diritti per consigli o annunci.';
 }

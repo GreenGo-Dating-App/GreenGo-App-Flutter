@@ -3844,5 +3844,9 @@
   "tourNotifOpenTitle": "Ouvrir et gerer",
   "tourNotifOpenDesc": "Touchez une notification pour l'ouvrir, ou glissez vers la gauche pour la supprimer.",
   "tourNotifMarkAllTitle": "Vider les non lus",
-  "tourNotifMarkAllDesc": "Marquez tout comme lu en un seul geste."
+  "tourNotifMarkAllDesc": "Marquez tout comme lu en un seul geste.",
+  "communitiesJoinAsPersonalTitle": "Rejoindre avec votre profil personnel",
+  "communitiesJoinAsPersonalBody": "Vous rejoindrez cette communaute avec votre profil personnel. Votre vitrine professionnelle ne sera pas affichee ici. Continuer?",
+  "communitiesJoinAsPersonalConfirm": "Rejoindre",
+  "communitiesCreatedManageHint": "Communaute creee! Ouvrez Membres pour ajouter des personnes et accorder des droits de conseils ou d'annonces."
 }

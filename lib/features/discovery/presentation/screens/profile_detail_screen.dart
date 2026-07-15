@@ -395,7 +395,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Name, age, and membership tier
+                        // Name on its own line (with the gold verified check).
                         Row(
                           children: [
                             Flexible(
@@ -422,25 +422,31 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 ),
                               ),
                             ],
-                            const SizedBox(width: 12),
+                          ],
+                        ),
+                        // Age + flags DIRECTLY under the name (a Wrap so they
+                        // reflow gracefully on narrow screens).
+                        const SizedBox(height: 4),
+                        Wrap(
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          spacing: 12,
+                          runSpacing: 6,
+                          children: [
                             Text(
                               '${widget.profile.age}',
                               style: const TextStyle(
                                 color: AppColors.textSecondary,
-                                fontSize: 28,
+                                fontSize: 24,
                               ),
                             ),
                             // Show language flags
-                            if (widget.profile.languages.isNotEmpty) ...[
-                              const SizedBox(width: 12),
+                            if (widget.profile.languages.isNotEmpty)
                               LanguageFlagBadge(
                                 languages: widget.profile.languages,
                                 fontSize: 18,
                               ),
-                            ],
                             // Traveler badge
-                            if (widget.profile.isTravelerActive) ...[
-                              const SizedBox(width: 8),
+                            if (widget.profile.isTravelerActive)
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                                 decoration: BoxDecoration(
@@ -465,7 +471,6 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                   ],
                                 ),
                               ),
-                            ],
                           ],
                         ),
 

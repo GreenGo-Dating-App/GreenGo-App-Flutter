@@ -11576,6 +11576,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventScanCheckIn => 'Digitalizar / Check-in';
 
   @override
+  String get eventScanUseMobileApp =>
+      'QR check-in scanning is available in the GreenGo mobile app.';
+
+  @override
   String get eventScanManageScanners => 'Gerenciar scanners';
 
   @override
@@ -13144,6 +13148,21 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get tourNotifMarkAllDesc =>
       'Marque tudo como lido com um unico toque.';
+
+  @override
+  String get communitiesJoinAsPersonalTitle =>
+      'Entrar com o teu perfil pessoal';
+
+  @override
+  String get communitiesJoinAsPersonalBody =>
+      'Vais entrar nesta comunidade com o teu perfil pessoal. A tua montra de negocio nao sera mostrada aqui. Continuar?';
+
+  @override
+  String get communitiesJoinAsPersonalConfirm => 'Entrar';
+
+  @override
+  String get communitiesCreatedManageHint =>
+      'Comunidade criada! Abre Membros para adicionar pessoas e conceder permissoes de dicas ou anuncios.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -26268,4 +26287,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get tourNotifMarkAllDesc =>
       'Marque tudo como lido com um unico toque.';
+
+  @override
+  String get communitiesJoinAsPersonalTitle => 'Entrar com seu perfil pessoal';
+
+  @override
+  String get communitiesJoinAsPersonalBody =>
+      'Voce vai entrar nesta comunidade com seu perfil pessoal. Sua vitrine de negocio nao sera exibida aqui. Continuar?';
+
+  @override
+  String get communitiesJoinAsPersonalConfirm => 'Entrar';
+
+  @override
+  String get communitiesCreatedManageHint =>
+      'Comunidade criada! Abra Membros para adicionar pessoas e conceder permissoes de dicas ou anuncios.';
 }

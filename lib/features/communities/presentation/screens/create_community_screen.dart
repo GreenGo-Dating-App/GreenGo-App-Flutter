@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +7,7 @@ import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/platform/web_media.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -20,6 +19,7 @@ import '../bloc/communities_state.dart';
 import '../widgets/community_card.dart';
 import '../widgets/sponsorship_editor_sheet.dart';
 import '../widgets/sponsorship_gate.dart';
+import 'community_detail_screen.dart';
 
 /// Create Community Screen
 ///
@@ -52,7 +52,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   bool _showPreview = false;
 
   // Hero/cover image (optional). Picked locally, uploaded to Storage on create.
-  File? _coverImage;
+  XFile? _coverImage;
   bool _uploadingCover = false;
 
   // Sponsorship (Platinum-business feature).
@@ -139,11 +139,27 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           if (state is CommunityCreated) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(AppLocalizations.of(context)!.communitiesCreated),
+                content: Text(
+                  AppLocalizations.of(context)!.communitiesCreatedManageHint,
+                ),
                 backgroundColor: AppColors.successGreen,
+                duration: const Duration(seconds: 4),
               ),
             );
-            Navigator.of(context).pop();
+            // Land the creator INSIDE the new community so they can immediately
+            // add members and grant tip / announcement rights (Members sheet →
+            // moderation). pushReplacement so Back doesn't return to the form.
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(
+                builder: (_) => MultiBlocProvider(
+                  providers: [
+                    BlocProvider.value(value: context.read<CommunitiesBloc>()),
+                    BlocProvider.value(value: context.read<ProfileBloc>()),
+                  ],
+                  child: CommunityDetailScreen(community: state.community),
+                ),
+              ),
+            );
           } else if (state is CommunitiesError) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -658,7 +674,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                 border: Border.all(color: AppColors.divider, width: 0.5),
                 image: _coverImage != null
                     ? DecorationImage(
-                        image: FileImage(_coverImage!),
+                        image: WebMedia.imageProviderFor(_coverImage!),
                         fit: BoxFit.cover,
                       )
                     : null,
@@ -709,7 +725,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       imageQuality: 82,
     );
     if (picked != null) {
-      setState(() => _coverImage = File(picked.path));
+      setState(() => _coverImage = picked);
     }
   }
 
@@ -721,10 +737,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
       final ref = FirebaseStorage.instance
           .ref()
           .child('communities/$communityOwnerId/$fileName');
-      final task = await ref.putFile(
-        _coverImage!,
-        SettableMetadata(contentType: 'image/jpeg'),
-      );
+      final task = await WebMedia.uploadXFile(ref, _coverImage!);
       return task.ref.getDownloadURL();
     } catch (e) {
       debugPrint('Cover image upload failed: $e');

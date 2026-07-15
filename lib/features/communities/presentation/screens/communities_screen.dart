@@ -238,6 +238,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         }
       },
       child: ListView.builder(
+        physics: const AlwaysScrollableScrollPhysics(),
         padding: const EdgeInsets.only(
           top: AppDimensions.paddingS,
           bottom: 80,
@@ -291,6 +292,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         }
       },
       child: ListView.builder(
+        physics: const AlwaysScrollableScrollPhysics(),
         padding: const EdgeInsets.only(
           top: AppDimensions.paddingS,
           bottom: 80,

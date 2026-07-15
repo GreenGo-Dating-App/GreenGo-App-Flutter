@@ -27,6 +27,7 @@ class CommunitiesLoaded extends CommunitiesState {
     this.languageCircles = const [],
     this.hasMoreCommunities = true,
     this.isLoadingMore = false,
+    this.communitiesCursor,
   });
   final List<Community> communities;
   final List<Community> userCommunities;
@@ -41,6 +42,11 @@ class CommunitiesLoaded extends CommunitiesState {
   /// spinner without blanking the existing list).
   final bool isLoadingMore;
 
+  /// Keyset cursor for endless scroll — the OLDEST `lastActivityAt` fetched so
+  /// far. Tracked separately from the (shuffled) display order so pagination
+  /// stays correct even though Discover is shown in random order.
+  final DateTime? communitiesCursor;
+
   CommunitiesLoaded copyWith({
     List<Community>? communities,
     List<Community>? userCommunities,
@@ -48,6 +54,7 @@ class CommunitiesLoaded extends CommunitiesState {
     List<Community>? languageCircles,
     bool? hasMoreCommunities,
     bool? isLoadingMore,
+    DateTime? communitiesCursor,
   }) {
     return CommunitiesLoaded(
       communities: communities ?? this.communities,
@@ -56,6 +63,7 @@ class CommunitiesLoaded extends CommunitiesState {
       languageCircles: languageCircles ?? this.languageCircles,
       hasMoreCommunities: hasMoreCommunities ?? this.hasMoreCommunities,
       isLoadingMore: isLoadingMore ?? this.isLoadingMore,
+      communitiesCursor: communitiesCursor ?? this.communitiesCursor,
     );
   }
 }
