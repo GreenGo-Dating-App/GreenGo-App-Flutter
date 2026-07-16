@@ -13202,4 +13202,7 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get communitiesCreatedManageHint =>
       'Community erstellt! Oeffne Mitglieder, um Personen hinzuzufuegen und Tipp- oder Ankuendigungsrechte zu vergeben.';
+
+  @override
+  String get exploreHappeningSoon => 'Demnaechst';
 }

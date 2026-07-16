@@ -23207,6 +23207,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Community created! Open Members to add people and grant tip or announcement rights.'**
   String get communitiesCreatedManageHint;
+
+  /// Explore section title for upcoming events
+  ///
+  /// In en, this message translates to:
+  /// **'Happening soon'**
+  String get exploreHappeningSoon;
 }
 
 class _AppLocalizationsDelegate

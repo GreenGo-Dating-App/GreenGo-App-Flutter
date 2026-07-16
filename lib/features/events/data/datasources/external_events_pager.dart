@@ -61,12 +61,24 @@ class ExternalEventsPager {
     return '${n.year}-$mm-$dd';
   }
 
-  /// Drop PAST-dated events (live events must be today-onward). Undated items
-  /// (attractions/experiences with no startDate) pass through unchanged.
+  /// A well-formed calendar date, e.g. `2026-07-15` (rejects junk like `1`).
+  static final RegExp _isoDate = RegExp(r'^\d{4}-\d{2}-\d{2}$');
+
+  /// Date gate:
+  ///  • LIVE events (ticketmaster) MUST carry a well-formed, today-onward date —
+  ///    null/empty/malformed values (e.g. "1") are dropped so the app never
+  ///    shows a non-compliant date.
+  ///  • Attractions/experiences (geoapify/viator) may be undated (they pass);
+  ///    a dated one is dropped only if it's in the past.
   bool _dateOk(ExternalEvent e) {
     final d = e.startDate;
+    if (source == 'ticketmaster') {
+      if (d == null || !_isoDate.hasMatch(d)) return false;
+      return d.compareTo(_todayStr) >= 0;
+    }
     if (d == null || d.isEmpty) return true;
-    return d.compareTo(_todayStr) >= 0;
+    if (_isoDate.hasMatch(d)) return d.compareTo(_todayStr) >= 0;
+    return true;
   }
 
   Query<Map<String, dynamic>> get _base {

@@ -13163,6 +13163,9 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get communitiesCreatedManageHint =>
       'Comunidade criada! Abre Membros para adicionar pessoas e conceder permissoes de dicas ou anuncios.';
+
+  @override
+  String get exploreHappeningSoon => 'Em breve';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -26301,4 +26304,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get communitiesCreatedManageHint =>
       'Comunidade criada! Abra Membros para adicionar pessoas e conceder permissoes de dicas ou anuncios.';
+
+  @override
+  String get exploreHappeningSoon => 'Em breve';
 }
