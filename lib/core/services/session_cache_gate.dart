@@ -18,6 +18,13 @@ class SessionCacheGate {
 
   static final Set<String> _warmed = <String>{};
 
+  /// GLOBAL KILL-SWITCH. While true, the cache-first paint is DISABLED
+  /// everywhere and every read goes to the network (serverAndCache = fresh when
+  /// online). Turned on because the cache-first passes were surfacing stale /
+  /// partial / no data and adding round-trips (slower). Flip to false to
+  /// re-enable cache-then-network once the loading is verified correct.
+  static const bool disabled = true;
+
   // Well-known keys (one per cache-then-network data domain).
   static const communitiesDiscover = 'communities_discover';
   static const communitiesJoined = 'communities_joined';
@@ -28,7 +35,8 @@ class SessionCacheGate {
   static const exploreCommunities = 'explore_communities';
 
   /// True once [key] has been loaded from the SERVER during this app session.
-  static bool isWarm(String key) => _warmed.contains(key);
+  /// Always false while [disabled] — forces every read to the network.
+  static bool isWarm(String key) => !disabled && _warmed.contains(key);
 
   /// Mark [key] as freshly loaded from the server this session.
   static void markWarm(String key) => _warmed.add(key);

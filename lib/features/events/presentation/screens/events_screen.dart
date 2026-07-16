@@ -102,6 +102,9 @@ class _EventsScreenState extends State<EventsScreen>
   double? _userLat;
   double? _userLng;
   String _extSort = 'distance'; // distance | rating | reviews | date
+  // Live Events (ticketmaster) has its own order: soonest DATE first by default
+  // (they carry real dates, no ratings/reviews), user can switch to Distance.
+  String _liveSort = 'date'; // date | distance
   // Native tabs (Upcoming/Community/My Events): order by DATE (earliest first)
   // by default; the user can still switch to distance/popular from the menu.
   String _nativeSort = 'date'; // distance | date | popular
@@ -420,7 +423,7 @@ class _EventsScreenState extends State<EventsScreen>
         controller: _tabController,
         children: [
           _buildCommunityTab(state),
-          _buildExperiencesTab('ticketmaster', sortOverride: 'date'),
+          _buildExperiencesTab('ticketmaster', sortOverride: _liveSort),
           _buildExperiencesTab('geoapify', category: _attractionCategory),
           _buildExperiencesTab('viator', category: _experienceCategory),
           _buildMyEventsTab(state),
@@ -503,6 +506,25 @@ class _EventsScreenState extends State<EventsScreen>
                     current: _nativeSort),
               ],
             )
+          // Live Events (tab 1): its own Date/Distance order (no stars/reviews
+          // on ticketmaster data), bound to _liveSort so the menu actually works.
+          else if (_tabController.index == 1)
+            PopupMenuButton<String>(
+              icon: const Icon(Icons.sort, color: AppColors.richGold),
+              tooltip: AppLocalizations.of(context)!.eventsSortBy,
+              color: AppColors.backgroundCard,
+              initialValue: _liveSort,
+              onSelected: (v) => setState(() => _liveSort = v),
+              itemBuilder: (ctx) => [
+                _sortItem('date', AppLocalizations.of(ctx)!.eventsSortDate,
+                    Icons.event,
+                    current: _liveSort),
+                _sortItem('distance',
+                    AppLocalizations.of(ctx)!.eventsSortDistance, Icons.near_me,
+                    current: _liveSort),
+              ],
+            )
+          // Attractions/Experiences (2/3) honour _extSort.
           else
             PopupMenuButton<String>(
               icon: const Icon(Icons.sort, color: AppColors.richGold),
@@ -560,6 +582,11 @@ class _EventsScreenState extends State<EventsScreen>
   /// Apply the free-text search (country/city/name) and optional popularity sort.
   List<Event> _applySearchAndSort(List<Event> events) {
     var result = events;
+    // Category chip (applies to EVERY native tab, incl. Community which renders
+    // the server `_communityNearby` list that is not category-scoped upstream).
+    if (_selectedCategory != null) {
+      result = result.where((e) => e.category == _selectedCategory).toList();
+    }
     final q = _searchQuery.toLowerCase();
     if (q.isNotEmpty) {
       result = result.where((e) {

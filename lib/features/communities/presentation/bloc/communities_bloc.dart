@@ -258,7 +258,13 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         emit(base.copyWith(userCommunities: const []));
       },
       (userCommunities) {
-        emit(base.copyWith(userCommunities: userCommunities));
+        // Keep recommendations free of communities the user is already in, even
+        // if recommended loaded first (order-independent exclusion).
+        final joinedIds = userCommunities.map((c) => c.id).toSet();
+        final rec = base.recommended
+            .where((c) => !joinedIds.contains(c.id))
+            .toList();
+        emit(base.copyWith(userCommunities: userCommunities, recommended: rec));
         SessionCacheGate.markWarm(SessionCacheGate.communitiesJoined);
       },
     );
@@ -327,7 +333,13 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         emit(base.copyWith(recommended: const []));
       },
       (recommended) {
-        emit(base.copyWith(recommended: recommended));
+        // Exclude communities the user has ALREADY joined (the datasource no
+        // longer runs a separate members scan for this — we filter here against
+        // the already-loaded joined set).
+        final joinedIds = base.userCommunities.map((c) => c.id).toSet();
+        final filtered =
+            recommended.where((c) => !joinedIds.contains(c.id)).toList();
+        emit(base.copyWith(recommended: filtered));
       },
     );
   }
