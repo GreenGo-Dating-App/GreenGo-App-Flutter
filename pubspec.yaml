@@ -177,6 +177,15 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.1
 
+  # Testing (Master Test Plan — see docs/testing/GREENGO_MASTER_TEST_PLAN.md)
+  # NOTE: bloc_test is intentionally omitted — it pulls a newer `test` that
+  # conflicts with hive_generator's analyzer pin; blocs are tested with mocktail
+  # + stream matchers (expectLater / emitsInOrder) instead.
+  mocktail: ^1.0.4
+  fake_cloud_firestore: ^3.1.0
+  firebase_auth_mocks: ^0.14.1
+  network_image_mock: ^2.1.1
+
   # Code Generation
   build_runner: ^2.4.7
   injectable_generator: ^2.4.1
