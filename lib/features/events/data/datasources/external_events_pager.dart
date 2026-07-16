@@ -107,7 +107,15 @@ class ExternalEventsPager {
     while (out.length < pageSize && !_fieldDone) {
       Query<Map<String, dynamic>> q =
           _base.orderBy(orderField, descending: descending).limit(pageSize);
-      if (_cursor != null) q = q.startAfterDocument(_cursor!);
+      if (_cursor != null) {
+        q = q.startAfterDocument(_cursor!);
+      } else if (sort == 'date') {
+        // Skip PAST events server-side: startDate is ascending, so start the
+        // ordered range at today. This avoids paging through the whole past
+        // (which made the Live tab load endlessly) and drops malformed dates
+        // like "1" (they sort before today). No new index — same orderBy field.
+        q = q.startAt([_todayStr]);
+      }
       final snap = await q.get();
       if (snap.docs.isEmpty) {
         _fieldDone = true;

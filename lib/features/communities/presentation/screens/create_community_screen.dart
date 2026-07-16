@@ -533,6 +533,21 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
           ),
           const SizedBox(height: AppDimensions.paddingL),
 
+          // Featured/cover image hero (the picked image isn't uploaded yet, so
+          // preview it from the local file).
+          if (_coverImage != null) ...[
+            ClipRRect(
+              borderRadius: BorderRadius.circular(AppDimensions.radiusM),
+              child: Image(
+                image: WebMedia.imageProviderFor(_coverImage!),
+                height: 160,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(height: AppDimensions.paddingM),
+          ],
+
           // Preview card
           CommunityCard(community: previewCommunity),
           const SizedBox(height: AppDimensions.paddingXL),

@@ -95,10 +95,12 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     var userCommunities = <Community>[];
     var recommended = <Community>[];
     var managed = <Community>[];
+    var managedLoaded = false;
     if (currentState is CommunitiesLoaded) {
       userCommunities = currentState.userCommunities;
       recommended = currentState.recommended;
       managed = currentState.managedCommunities;
+      managedLoaded = currentState.managedLoaded;
     } else {
       emit(const CommunitiesLoading());
     }
@@ -141,6 +143,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           isLoadingMore: false,
           communitiesCursor: _oldestActivity(communities),
           managedCommunities: managed,
+          managedLoaded: managedLoaded,
         ));
       },
     );
@@ -222,12 +225,14 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     var recommended = <Community>[];
     var languageCircles = <Community>[];
     var managed = <Community>[];
+    var managedLoaded = false;
 
     if (currentState is CommunitiesLoaded) {
       allCommunities = currentState.communities;
       recommended = currentState.recommended;
       languageCircles = currentState.languageCircles;
       managed = currentState.managedCommunities;
+      managedLoaded = currentState.managedLoaded;
     } else {
       // Only blank to a spinner on the FIRST load; a refresh keeps the lists.
       emit(const CommunitiesLoading());
@@ -246,6 +251,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           recommended: recommended,
           languageCircles: languageCircles,
           managedCommunities: managed,
+          managedLoaded: managedLoaded,
         ));
       },
       (userCommunities) {
@@ -255,6 +261,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           recommended: recommended,
           languageCircles: languageCircles,
           managedCommunities: managed,
+          managedLoaded: managedLoaded,
         ));
       },
     );
@@ -272,15 +279,18 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         debugPrint('LoadManagedCommunities failed: ${failure.message}');
         final s = state;
         if (s is CommunitiesLoaded) {
-          emit(s.copyWith(managedCommunities: const []));
+          emit(s.copyWith(managedCommunities: const [], managedLoaded: true));
         }
       },
       (managed) {
         final s = state;
         if (s is CommunitiesLoaded) {
-          emit(s.copyWith(managedCommunities: managed));
+          emit(s.copyWith(managedCommunities: managed, managedLoaded: true));
         } else {
-          emit(CommunitiesLoaded(managedCommunities: managed));
+          emit(CommunitiesLoaded(
+            managedCommunities: managed,
+            managedLoaded: true,
+          ));
         }
       },
     );
@@ -295,12 +305,14 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     var userCommunities = <Community>[];
     var languageCircles = <Community>[];
     var managed = <Community>[];
+    var managedLoaded = false;
 
     if (currentState is CommunitiesLoaded) {
       allCommunities = currentState.communities;
       userCommunities = currentState.userCommunities;
       languageCircles = currentState.languageCircles;
       managed = currentState.managedCommunities;
+      managedLoaded = currentState.managedLoaded;
     }
 
     final result = await _repository.getRecommendedCommunities(
@@ -326,6 +338,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
             recommended: const [],
             languageCircles: languageCircles,
             managedCommunities: managed,
+            managedLoaded: managedLoaded,
           ));
         }
       },
@@ -336,6 +349,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           recommended: recommended,
           languageCircles: languageCircles,
           managedCommunities: managed,
+          managedLoaded: managedLoaded,
         ));
       },
     );
