@@ -533,21 +533,24 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
       if (communityIds.isEmpty) return [];
 
-      // Fetch communities in batches of 10 (Firestore whereIn limit)
-      final communities = <CommunityModel>[];
+      // Fetch communities in batches of 10 (Firestore whereIn limit). The
+      // batches are independent, so fire them CONCURRENTLY (Future.wait) instead
+      // of awaiting each in turn — collapses 1+ceil(N/10) sequential round-trips
+      // into a single wall-clock hop (major win for users in many communities).
+      final batches = <Future<QuerySnapshot<Object?>>>[];
       for (var i = 0; i < communityIds.length; i += 10) {
         final batchIds = communityIds.sublist(
           i,
           i + 10 > communityIds.length ? communityIds.length : i + 10,
         );
-
-        final snapshot = await _communitiesRef
+        batches.add(_communitiesRef
             .where(FieldPath.documentId, whereIn: batchIds)
-            .get(_opts(preferCache));
-
-        communities.addAll(
-          snapshot.docs.map(CommunityModel.fromFirestore),
-        );
+            .get(_opts(preferCache)));
+      }
+      final snapshots = await Future.wait(batches);
+      final communities = <CommunityModel>[];
+      for (final snapshot in snapshots) {
+        communities.addAll(snapshot.docs.map(CommunityModel.fromFirestore));
       }
 
       // Sort by last activity
@@ -572,57 +575,38 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   }) async {
     try {
       final recommended = <CommunityModel>[];
+      final seen = <String>{};
+      void addAll(Iterable<QueryDocumentSnapshot> docs) {
+        for (final doc in docs) {
+          final community = CommunityModel.fromFirestore(doc);
+          if (seen.add(community.id)) recommended.add(community);
+        }
+      }
 
-      // Get communities matching user's languages
-      if (languages.isNotEmpty) {
-        for (final lang in languages.take(3)) {
-          final snapshot = await _communitiesRef
+      // Fire the per-language queries + the popular fallback CONCURRENTLY
+      // (Future.wait) instead of sequentially — one wall-clock hop instead of
+      // up to 4 serial round-trips.
+      final futures = <Future<QuerySnapshot<Object?>>>[
+        for (final lang in languages.take(3))
+          _communitiesRef
               .where('isPublic', isEqualTo: true)
               .where('languages', arrayContains: lang)
               .limit(10)
-              .get();
-
-          for (final doc in snapshot.docs) {
-            final community = CommunityModel.fromFirestore(doc);
-            if (!recommended.any((c) => c.id == community.id)) {
-              recommended.add(community);
-            }
-          }
-        }
-      }
-
-      // Get popular communities if not enough recommendations
-      if (recommended.length < 10) {
-        final snapshot = await _communitiesRef
+              .get(),
+        _communitiesRef
             .where('isPublic', isEqualTo: true)
             .orderBy('memberCount', descending: true)
             .limit(10)
-            .get();
-
-        for (final doc in snapshot.docs) {
-          final community = CommunityModel.fromFirestore(doc);
-          if (!recommended.any((c) => c.id == community.id)) {
-            recommended.add(community);
-          }
-        }
+            .get(),
+      ];
+      for (final snap in await Future.wait(futures)) {
+        addAll(snap.docs);
       }
 
-      // Filter out communities user has already joined
-      final userCommunityIds = <String>{};
-      final memberDocs = await _firestore
-          .collectionGroup('members')
-          .where('userId', isEqualTo: userId)
-          .get();
-
-      for (final doc in memberDocs.docs) {
-        final parentId = doc.reference.parent.parent?.id;
-        if (parentId != null) userCommunityIds.add(parentId);
-      }
-
-      return recommended
-          .where((c) => !userCommunityIds.contains(c.id))
-          .take(15)
-          .toList();
+      // Note: already-joined communities are filtered out in the bloc using the
+      // already-loaded userCommunities set, so we DON'T re-run the members
+      // collection-group scan here (getUserCommunities already did it).
+      return recommended.take(15).toList();
     } catch (e) {
       debugPrint('Error getting recommended communities: $e');
       rethrow;

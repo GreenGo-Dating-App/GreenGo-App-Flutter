@@ -70,8 +70,10 @@ class ExternalEventsPager {
     return '${n.year}-$mm-$dd';
   }
 
-  /// A well-formed calendar date, e.g. `2026-07-15` (rejects junk like `1`).
-  static final RegExp _isoDate = RegExp(r'^\d{4}-\d{2}-\d{2}$');
+  /// A well-formed calendar date PREFIX, e.g. `2026-07-15` or the date part of
+  /// `2026-07-15T20:00:00Z` (rejects junk like `1`). Unanchored at the end so a
+  /// datetime doesn't get dropped — we compare on the first 10 chars.
+  static final RegExp _isoDate = RegExp(r'^\d{4}-\d{2}-\d{2}');
 
   /// Date gate:
   ///  • LIVE events (ticketmaster) MUST carry a well-formed, today-onward date —
@@ -83,10 +85,10 @@ class ExternalEventsPager {
     final d = e.startDate;
     if (source == 'ticketmaster') {
       if (d == null || !_isoDate.hasMatch(d)) return false;
-      return d.compareTo(_todayStr) >= 0;
+      return d.substring(0, 10).compareTo(_todayStr) >= 0;
     }
     if (d == null || d.isEmpty) return true;
-    if (_isoDate.hasMatch(d)) return d.compareTo(_todayStr) >= 0;
+    if (_isoDate.hasMatch(d)) return d.substring(0, 10).compareTo(_todayStr) >= 0;
     return true;
   }
 

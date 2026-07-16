@@ -486,6 +486,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
   ///
   /// Empty (literally zero events, or on failure) → the carousel is hidden.
   Future<void> _loadFeaturedEvents() async {
+    final startOfToday = DateTime(
+        DateTime.now().year, DateTime.now().month, DateTime.now().day);
+    // Ongoing or future only: drop community events that have already ended.
+    // External experiences (community == null) carry no real event date → keep.
+    bool notPast(_Happening h) {
+      final e = h.community;
+      return e == null || !e.endDate.isBefore(startOfToday);
+    }
+
     final picked = <_Happening>[];
     final seen = <String>{};
 
@@ -511,6 +520,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         );
         community = events
             .map((e) => _Happening.community(e))
+            .where(notPast)
             .where(_withinFeaturedRadius)
             .toList();
       } catch (_) {
@@ -654,9 +664,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
+    // Featured shows ONLY ongoing or future events — never past ones. An event
+    // qualifies while it hasn't ENDED yet (endDate today or later), which keeps
+    // multi-day events that are currently ongoing and drops anything finished.
+    // Applied at the single addEvents choke point so EVERY tier below (nearby,
+    // wide upcoming, and the index-free `isLive` last resort) is covered — the
+    // fallback tiers previously added events without a date guard.
+    bool notPast(Event e) => !e.endDate.isBefore(startOfToday);
+
     // Adapter so the existing native tiers keep adding community events.
     void addEvents(Iterable<Event> items) =>
-        addAll(items.map((e) => _Happening.community(e)));
+        addAll(items.where(notPast).map((e) => _Happening.community(e)));
 
     final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
     final hasLocation = _userLat != null && _userLng != null;
@@ -672,8 +690,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
           limit: 40,
         );
         community = _dedupeSeries(events
-            // Featured = events happening TODAY or in the FUTURE only (never past).
-            .where((e) => !e.startDate.isBefore(startOfToday))
+            // Ongoing or future only (never past) — see [notPast].
+            .where(notPast)
             .where((e) => _withinFeaturedRadius(_Happening.community(e)))
             .toList());
       } catch (_) {
