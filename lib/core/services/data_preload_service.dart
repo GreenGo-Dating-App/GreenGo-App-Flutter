@@ -54,6 +54,24 @@ class DataPreloadService {
           .orderBy('startDate')
           .limit(30)
           .get()),
+      // Communities — Discover (public), so the tab opens from the warm cache.
+      guard(fs
+          .collection('communities')
+          .where('isPublic', isEqualTo: true)
+          .orderBy('lastActivityAt', descending: true)
+          .limit(50)
+          .get()),
+      // "My communities" (created by this user).
+      guard(fs
+          .collection('communities')
+          .where('createdByUserId', isEqualTo: userId)
+          .get()),
+      // The user's community memberships (drives the Joined tab), which also
+      // warms the member docs those queries read.
+      guard(fs
+          .collectionGroup('members')
+          .where('userId', isEqualTo: userId)
+          .get()),
     ]);
     debugPrint('DataPreloadService: cache warmed for $userId');
   }

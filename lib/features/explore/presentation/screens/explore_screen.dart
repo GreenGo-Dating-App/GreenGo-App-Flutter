@@ -181,36 +181,25 @@ class _ExploreScreenState extends State<ExploreScreen> {
   CountrySpotlight? _spotlight;
   bool _spotlightLoaded = false;
 
-  /// First-paint skeleton gate: true until the core content loads (or a hard
-  /// 2.5s cap), so the entry page shows a stable, layout-accurate skeleton of
-  /// the core sections instead of individual sections popping in and vanishing.
-  bool _bootstrapping = true;
-
   @override
   void initState() {
     super.initState();
     // G0 perf traces: screen-open (stopped on first frame) + feed-load (stopped
-    // when the initial content resolves in _bootstrap). No-op in debug (perf
-    // collection is release-only).
+    // when the initial content resolves). No-op in debug (release-only perf).
     final perf = di.sl<PerformanceMonitoringService>();
     perf.startTrace('screen_open_explore');
     perf.startTrace('feed_load');
     WidgetsBinding.instance.addPostFrameCallback((_) {
       perf.stopTrace('screen_open_explore');
     });
-    _bootstrap();
-  }
-
-  /// Runs the initial load behind the first-paint skeleton. Reveals the full
-  /// layout as soon as content is ready, or after a hard 2.5s cap so a slow
-  /// loader can never trap the user on the skeleton.
-  Future<void> _bootstrap() async {
-    await Future.any<void>([
-      _load(),
-      Future<void>.delayed(const Duration(milliseconds: 2500)),
-    ]);
-    di.sl<PerformanceMonitoringService>().stopTrace('feed_load');
-    if (mounted) setState(() => _bootstrapping = false);
+    // Render the SINGLE full section list from the first frame — each section
+    // owns its loading/empty/loaded state (AnimatedSwitcher), so the layout
+    // order is deterministic and stable. (Previously a separate 4-section
+    // "bootstrap" skeleton swapped to the ~11-section full list at a blind 2.5s
+    // cap, which made sections flash a skeleton then vanish / pop in.)
+    _load().whenComplete(() {
+      if (mounted) perf.stopTrace('feed_load');
+    });
   }
 
   Future<void> _load() async {
@@ -1250,9 +1239,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   ),
                 ),
               ),
-              if (_bootstrapping)
-                ..._bootstrapSkeletonSlivers(context, l10n, reduceMotion)
-              else ...[
+              // The full section list renders from the first frame; each section
+              // shows its own skeleton while loading and hides itself when empty.
               // Featured attractions carousel near the top (hides itself when
               // empty). We intentionally do NOT show a separate generic
               // "Featured events" carousel here — the community/boosted events
@@ -1327,61 +1315,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // there is no active spotlight (see [_spotlightSection]).
               _spotlightSection(context, l10n, reduceMotion),
               const SliverToBoxAdapter(child: SizedBox(height: 24)),
-              ],
             ],
           ),
         ),
       ),
     );
-  }
-
-  /// The first-paint skeleton: the CORE sections only (featured community
-  /// events → people around you → communities → happening today), in the real
-  /// order and using the real section widgets so card sizes match exactly. The
-  /// flakier, frequently-empty sections (attractions, my events, businesses,
-  /// spotlight, the extra people rows) are intentionally omitted here so nothing
-  /// skeletons-then-vanishes on first paint.
-  List<Widget> _bootstrapSkeletonSlivers(
-    BuildContext context,
-    AppLocalizations l10n,
-    bool reduceMotion,
-  ) {
-    return [
-      _luxuryEventsSection(context, l10n, reduceMotion),
-      _peopleSection(
-        context,
-        l10n,
-        reduceMotion,
-        title: l10n.exploreAroundYou,
-        people: _aroundYou,
-        onSeeAll: () => _openNetworkDiscovery(context),
-      ),
-      SliverToBoxAdapter(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-          child: _sectionHeader(
-            context,
-            l10n.exploreCommunitiesTitle,
-            l10n.exploreSeeAll,
-            onSeeAll: () => _openCommunitiesList(context),
-          ),
-        ),
-      ),
-      _communitiesSection(context, l10n, reduceMotion),
-      SliverToBoxAdapter(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-          child: _sectionHeader(
-            context,
-            l10n.exploreHappeningSoon,
-            l10n.exploreSeeAll,
-            onSeeAll: () => _openAllEvents(context),
-          ),
-        ),
-      ),
-      _happeningSection(context, l10n, reduceMotion),
-      const SliverToBoxAdapter(child: SizedBox(height: 24)),
-    ];
   }
 
   Widget _greeting(BuildContext context, AppLocalizations l10n) {
