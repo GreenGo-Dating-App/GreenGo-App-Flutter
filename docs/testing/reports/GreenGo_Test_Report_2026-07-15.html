@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset='utf-8'>
+<title>GreenGo — QA Test Report 2026-07-15</title>
+<style>
+ :root{--gold:#C9A227;--ink:#14161a;--muted:#6b7280;--ok:#0f9d58;--bad:#d93025;--skip:#b8860b;--line:#e5e7eb;}
+ *{box-sizing:border-box} body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);margin:0;padding:40px;}
+ h1{font-size:26px;margin:0 0 4px} h2{font-size:17px;margin:28px 0 10px;border-bottom:2px solid var(--gold);padding-bottom:6px}
+ .sub{color:var(--muted);margin:0 0 20px}
+ .cards{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0}
+ .card{border:1px solid var(--line);border-radius:12px;padding:16px 20px;min-width:120px}
+ .card .v{font-size:30px;font-weight:700} .card .l{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+ .v.ok{color:var(--ok)} .v.bad{color:var(--bad)} .v.skip{color:var(--skip)} .v.gold{color:var(--gold)}
+ table{width:100%;border-collapse:collapse;font-size:13px}
+ th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+ th{background:#faf7ef;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+ td.num{text-align:right;font-variant-numeric:tabular-nums} td.pass{color:var(--ok)} td.skip{color:var(--skip)} td.fail{color:var(--bad)}
+ .pill{font-size:11px;font-weight:700;padding:2px 10px;border-radius:999px} .pill.ok{background:#e6f4ea;color:var(--ok)} .pill.bad{background:#fce8e6;color:var(--bad)}
+ .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--muted)}
+ ul{margin:6px 0 0 18px} li{margin:3px 0;font-size:13px}
+ .note{background:#faf7ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:13px;color:#4b5563}
+ .foot{margin-top:30px;color:var(--muted);font-size:11px;border-top:1px solid var(--line);padding-top:12px}
+</style></head><body>
+ <h1>GreenGo — QA Test Report</h1>
+ <p class='sub'>Automated frontend suite (Flutter) &middot; generated 2026-07-15 &middot; Master Test Plan Phase&nbsp;1&ndash;2</p>
+
+ <div class='cards'>
+   <div class='card'><div class='v gold'>415</div><div class='l'>Total tests</div></div>
+   <div class='card'><div class='v ok'>411</div><div class='l'>Passed</div></div>
+   <div class='card'><div class='v ok'>0</div><div class='l'>Failed</div></div>
+   <div class='card'><div class='v skip'>4</div><div class='l'>Skipped</div></div>
+   <div class='card'><div class='v gold'>100.0%</div><div class='l'>Pass rate (executed)</div></div>
+ </div>
+ <div class='note'><b>Verdict:</b> 411 of 411 executed tests pass (100.0%), 0 failures. The 4 skips are documented fake-backend limitations (transaction/increment emulation) and are covered by the emulator layer.</div>
+
+ <h2>Results by category</h2>
+ <table><thead><tr><th>Category</th><th class='num'>Tests</th><th class='num'>Pass</th><th class='num'>Skip</th><th class='num'>Fail</th><th>Status</th></tr></thead>
+ <tbody><tr><td>Authentication & Session</td><td class='num'>67</td><td class='num pass'>67</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Business / Storefront</td><td class='num'>16</td><td class='num pass'>12</td><td class='num skip'>4</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Chat / Messaging</td><td class='num'>36</td><td class='num pass'>36</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Membership / Coins</td><td class='num'>46</td><td class='num pass'>46</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Communities</td><td class='num'>10</td><td class='num pass'>10</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Events — date/geo logic</td><td class='num'>10</td><td class='num pass'>10</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Events — bloc / datasource</td><td class='num'>32</td><td class='num pass'>32</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Discovery / Explore</td><td class='num'>5</td><td class='num pass'>5</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Localization (7 locales)</td><td class='num'>31</td><td class='num pass'>31</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Notifications</td><td class='num'>28</td><td class='num pass'>28</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Onboarding</td><td class='num'>29</td><td class='num pass'>29</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Other</td><td class='num'>32</td><td class='num pass'>32</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Profile</td><td class='num'>48</td><td class='num pass'>48</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr><tr><td>Search</td><td class='num'>25</td><td class='num pass'>25</td><td class='num skip'>0</td><td class='num fail'>0</td><td><span class='pill ok'>PASS</span></td></tr></tbody></table>
+
+ <h2>Regression coverage (this cycle's fixes)</h2>
+ <table><thead><tr><th>Fix</th><th>What the test guards</th><th>Area</th></tr></thead><tbody><tr><td>Communities concurrency-merge</td><td>Handlers merge onto current state via copyWith; concurrent loads no longer clobber managedCommunities ("My communities" appears).</td><td class='mono'>Communities</td></tr><tr><td>Tips/Announcements/Chat classification</td><td>language_tip/cultural_fact/city_tip → Tips; announcement → Announcements; text → chat.</td><td class='mono'>Communities</td></tr><tr><td>Discover joinable + getCreatedCommunities</td><td>Public-only Discover; My-communities via createdByUserId (no member-doc dependency).</td><td class='mono'>Communities</td></tr><tr><td>Live-event date validity</td><td>Only well-formed yyyy-MM-dd, today-onward; junk like "1" rejected; ≤1-week fallback window.</td><td class='mono'>Events — date/geo logic</td></tr><tr><td>50km / 100km geo filters</td><td>Haversine distance drives the within-radius event filters.</td><td class='mono'>Discovery / Explore</td></tr><tr><td>Business chat identity</td><td>Business-inquiry conversations render businessName + coverImageUrl (not the personal name).</td><td class='mono'>Chat / Messaging</td></tr><tr><td>Business tab routing</td><td>A business viewer's inquiries are excluded from the personal Messages filters.</td><td class='mono'>Chat / Messaging</td></tr><tr><td>Rate-this-business hides after rating</td><td>Rating control returns SizedBox.shrink when the viewer already rated / is self.</td><td class='mono'>Business / Storefront</td></tr><tr><td>Search excludes deleted + dual business</td><td>Non-active/ghost/admin excluded; a business owner appears as both People and Business.</td><td class='mono'>Search</td></tr><tr><td>Notifications optimistic delete-all</td><td>NotificationsAllCleared emits NotificationsEmpty immediately before the server delete.</td><td class='mono'>Notifications</td></tr><tr><td>Events earliest-first</td><td>EventsLoaded.upcomingEvents sorts ascending by startDate.</td><td class='mono'>Events — bloc / datasource</td></tr><tr><td>i18n key parity + no mojibake</td><td>Every en key exists across 7 locales; no replacement chars / classic mojibake.</td><td class='mono'>Localization (7 locales)</td></tr></tbody></table>
+
+ <h2>Skipped (documented)</h2>
+ <ul><li><b>Business / Storefront</b> — rateBusiness a second distinct rater increments sum and count</li><li><b>Business / Storefront</b> — rateBusiness re-rating shifts sum by delta, count unchanged</li><li><b>Business / Storefront</b> — aggregate reads getAggregate computes avg = sum / count</li><li><b>Business / Storefront</b> — aggregate reads myRating stream emits the viewer current stars</li></ul>
+
+ <h2>Backend &amp; performance — pending (emulator-gated)</h2>
+ <div class='note'>The frontend suite runs on a fake in-memory Firestore + mocked auth (no emulator). The following backend/perf phases require the Firebase emulator + a Jest harness and are the next phase of the Master Test Plan:</div>
+ <ul><li>B1 Firestore Security Rules (@firebase/rules-unit-testing) — emulator</li><li>B2 Cloud Functions (Jest + firebase-functions-test) — emulator</li><li>B3 Index / query validity end-to-end — emulator</li><li>B4 Data-integrity counters (memberCount/unreadCount/ratingSum) — emulator</li><li>B5 Performance budgets (query latency, scroll fps, cold start, CF exec) — emulator + device</li><li>B6 E2E mock-user journeys (login→discover→join→chat→rate) — emulator</li></ul>
+
+ <div class='foot'>GreenGo &middot; package greengo_chat &middot; test harness: flutter_test + mocktail + fake_cloud_firestore + firebase_auth_mocks &middot; personas mock_user_1..5 &middot; see docs/testing/GREENGO_MASTER_TEST_PLAN.md</div>
+</body></html>

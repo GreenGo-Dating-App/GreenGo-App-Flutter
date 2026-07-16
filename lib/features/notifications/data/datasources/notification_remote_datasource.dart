@@ -101,6 +101,13 @@ class NotificationRemoteDataSourceImpl
       // that still throw despite the tolerant [NotificationModel.fromFirestore].
       var items = <NotificationModel>[];
       for (final doc in snapshot.docs) {
+        // Hide "account approved" broadcast notifications from the feed — they
+        // are noise once the user is already in the app.
+        final rawType =
+            (doc.data() as Map<String, dynamic>?)?['type'] as String?;
+        if (rawType == 'account_approved' || rawType == 'accountApproved') {
+          continue;
+        }
         try {
           items.add(NotificationModel.fromFirestore(doc));
         } catch (_) {

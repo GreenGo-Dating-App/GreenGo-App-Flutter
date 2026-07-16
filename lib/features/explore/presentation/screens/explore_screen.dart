@@ -416,8 +416,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   Future<void> _loadHappenings() async {
     final now = DateTime.now();
-    final todayStr = DateFormat('yyyy-MM-dd').format(now);
-
     // 1) Community events happening SOON: ongoing or upcoming (not yet ended).
     //    One instance per recurring series.
     List<Event> community = const <Event>[];
@@ -433,7 +431,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
         community = const <Event>[];
       }
     }
-    final isoDate = RegExp(r'^\d{4}-\d{2}-\d{2}$');
     int byDate(_Happening a, _Happening b) {
       final da = a.date;
       final db = b.date;
@@ -443,57 +440,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
       return da.compareTo(db);
     }
 
-    // Community events happening soon, WITHIN 50km, ordered by date.
-    final communityItems = _dedupeSeries(
+    // "Happening soon" shows COMMUNITY events ONLY (never external experiences),
+    // that are close by (WITHIN 100km) and not yet ended, ordered by date.
+    final chosen = _dedupeSeries(
       community.where((e) => e.endDate.isAfter(now)).toList(),
     )
         .map((e) => _Happening.community(e))
-        .where(_withinFeaturedRadius) // <= kFeaturedRadiusKm (50km)
+        .where((h) => _withinKm(h, 100)) // <= 100km
         .toList()
       ..sort(byDate);
-    final communityTitles =
-        communityItems.map((h) => (h.title ?? '').toLowerCase().trim()).toSet();
-
-    // "Happening soon" is COMMUNITY-ONLY when any community event exists. Only
-    // if there are NONE do we fall back to nearby LIVE events (<=50km AND within
-    // the next week), ordered by date.
-    List<_Happening> chosen;
-    if (communityItems.isNotEmpty) {
-      chosen = communityItems;
-    } else {
-      final weekStr =
-          DateFormat('yyyy-MM-dd').format(now.add(const Duration(days: 7)));
-      List<ExternalEvent> live = const <ExternalEvent>[];
-      final ds = ExternalEventsDataSource(firestore: _firestore);
-      try {
-        if (_userLat != null && _userLng != null) {
-          live = await ds.getNearbyExperiences(
-            source: 'ticketmaster',
-            userLat: _userLat!,
-            userLng: _userLng!,
-            limit: 60,
-          );
-        } else {
-          live = await ds.getExperiencesSorted(
-              source: 'ticketmaster', sort: 'date');
-        }
-      } catch (_) {
-        live = const <ExternalEvent>[];
-      }
-      chosen = live
-          // Well-formed date, today..+7 days only (never junk like "1").
-          .where((e) =>
-              e.startDate != null &&
-              isoDate.hasMatch(e.startDate!) &&
-              e.startDate!.compareTo(todayStr) >= 0 &&
-              e.startDate!.compareTo(weekStr) <= 0)
-          .where((e) => !communityTitles.contains(e.title.toLowerCase().trim()))
-          .map((e) => _Happening.external(e))
-          .where(_hasImage)
-          .where(_withinFeaturedRadius) // <=50km
-          .toList()
-        ..sort(byDate);
-    }
 
     final rows = chosen
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
@@ -1066,16 +1021,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// location an experience must sit within [kFeaturedRadiusKm]; an experience
   /// with no coordinates can't be verified and is excluded. With NO user
   /// location we can't filter, so everything qualifies (plain random election).
-  bool _withinFeaturedRadius(_Happening h) {
+  bool _withinFeaturedRadius(_Happening h) => _withinKm(h, kFeaturedRadiusKm);
+
+  /// True when [h] is within [km] of the user (or when the user's location is
+  /// unknown, in which case no distance filter is applied).
+  bool _withinKm(_Happening h, double km) {
     final lat = _userLat;
     final lng = _userLng;
     if (lat == null || lng == null) return true; // no location → no filter
     final hLat = h.lat;
     final hLng = h.lng;
     if (hLat == null || hLng == null) return false; // unknown → can't qualify
-    final distanceKm =
-        FeatureEngineer().calculateDistance(lat, lng, hLat, hLng);
-    return distanceKm <= kFeaturedRadiusKm;
+    return FeatureEngineer().calculateDistance(lat, lng, hLat, hLng) <= km;
   }
 
   /// Loads "My next events": the current user's UPCOMING events they're going to
