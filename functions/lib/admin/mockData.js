@@ -330,6 +330,35 @@ exports.seedMockData = (0, https_1.onRequest)({ memory: '512MiB', timeoutSeconds
         cmBatch.set(cRef.collection('members').doc(ownerUid), { canWriteTips: true, canWriteAnnouncements: true }, { merge: true });
         await cmBatch.commit();
     }
+    // ── ~120 LIVE events (external_events, source ticketmaster) near base ──
+    // Feeds the Events → "Live Events" tab. Spread within ~25km of the base and
+    // dated over the next 60 days so the today-onward + 100km filters keep them.
+    const tmCats = [
+        'Music', 'Sports', 'Arts & Theatre', 'Film', 'Comedy', 'Family',
+    ];
+    const tmNames = [
+        'Live Concert', 'Basketball Night', 'Broadway Show', 'Film Premiere',
+        'Stand-up Comedy', 'Family Fun Day', 'Jazz Evening', 'Rock Festival',
+        'Art Expo', 'Theatre Gala', 'Indie Night', 'Symphony Orchestra',
+    ];
+    const ymd = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-` +
+        `${String(d.getDate()).padStart(2, '0')}`;
+    const tmCount = 120;
+    let tmBatch = db.batch();
+    for (let i = 0; i < tmCount; i++) {
+        const id = `mock_tm_${i + 1}`;
+        // Deterministic spread within ~±0.25deg (~25km) of the base.
+        const dlat = baseLat + (((i % 11) - 5) * 0.05);
+        const dlng = baseLng + ((((i / 11) | 0) % 11) - 5) * 0.05;
+        const start = new Date(now.getTime() + (1 + (i % 60)) * 24 * 3600 * 1000);
+        tmBatch.set(db.collection('external_events').doc(id), Object.assign({ source: 'ticketmaster', externalId: id, title: `${tmNames[i % tmNames.length]} #${i + 1}`, description: `${tmNames[i % tmNames.length]} in ${city}. (test live event)`, imageUrl: `https://picsum.photos/seed/${id}/900/600`, category: tmCats[i % tmCats.length], city,
+            country, lat: dlat, lng: dlng, geohash: (0, geohash_1.geohashEncode)(dlat, dlng), fromPrice: 20 + (i % 8) * 10, currency: 'USD', rating: 0, reviewCount: 0, startDate: ymd(start), bookingUrl: 'https://www.ticketmaster.com', fetchedAt: ts(now) }, mock));
+        if ((i + 1) % 400 === 0) {
+            await tmBatch.commit();
+            tmBatch = db.batch();
+        }
+    }
+    await tmBatch.commit();
     res.status(200).json({
         batchId,
         users: users.length,
@@ -338,6 +367,7 @@ exports.seedMockData = (0, https_1.onRequest)({ memory: '512MiB', timeoutSeconds
         conversations: chatPairs.length,
         groups: groupDefs.length,
         communityPosts: comms.length * 6,
+        liveEvents: tmCount,
         location: { city, country, baseLat, baseLng },
     });
 }));
@@ -378,6 +408,7 @@ exports.removeMockData = (0, https_1.onRequest)({ memory: '512MiB', timeoutSecon
         'users',
         'conversations',
         'groups',
+        'external_events',
     ]) {
         await deleteQuery(db.collection(col).where('isMock', '==', true));
     }
