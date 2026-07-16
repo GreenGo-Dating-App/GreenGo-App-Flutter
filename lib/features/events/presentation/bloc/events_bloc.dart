@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/services/session_cache_gate.dart';
 import '../../domain/entities/event.dart';
 import '../../domain/repositories/events_repository.dart';
 import 'events_event.dart';
@@ -51,17 +52,19 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
       ));
     }
 
-    // CACHE-THEN-NETWORK: paint instantly from the local cache, then reconcile
-    // with the server. Cache pass is best-effort (cold cache → ignored).
-    final cached = await repository.getEvents(
-      category: event.category,
-      city: event.city,
-      upcoming: event.upcoming,
-      preferCache: true,
-    );
-    cached.fold((_) {}, (events) {
-      if (events.isNotEmpty) applyLoaded(events);
-    });
+    // NETWORK-FIRST on a fresh app open; cache-then-network once warm this
+    // session. Cache pass is best-effort (cold cache → ignored).
+    if (SessionCacheGate.isWarm(SessionCacheGate.eventsAll)) {
+      final cached = await repository.getEvents(
+        category: event.category,
+        city: event.city,
+        upcoming: event.upcoming,
+        preferCache: true,
+      );
+      cached.fold((_) {}, (events) {
+        if (events.isNotEmpty) applyLoaded(events);
+      });
+    }
 
     final result = await repository.getEvents(
       category: event.category,
@@ -75,7 +78,10 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
         // Don't blank an already-painted cache result on a server hiccup.
         if (state is! EventsLoaded) emit(EventsError(failure.message));
       },
-      applyLoaded,
+      (events) {
+        applyLoaded(events);
+        SessionCacheGate.markWarm(SessionCacheGate.eventsAll);
+      },
     );
   }
 
@@ -339,12 +345,14 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
       }
     }
 
-    // Cache-then-network: instant cache paint, then server reconcile.
-    final cached =
-        await repository.getUserEvents(event.userId, preferCache: true);
-    cached.fold((_) {}, (events) {
-      if (events.isNotEmpty) applyUser(events);
-    });
+    // Network-first on a fresh open; cache-then-network once warm this session.
+    if (SessionCacheGate.isWarm(SessionCacheGate.eventsUser)) {
+      final cached =
+          await repository.getUserEvents(event.userId, preferCache: true);
+      cached.fold((_) {}, (events) {
+        if (events.isNotEmpty) applyUser(events);
+      });
+    }
 
     final result = await repository.getUserEvents(event.userId);
     result.fold(
@@ -354,7 +362,10 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
           emit(EventsError(failure.message));
         }
       },
-      applyUser,
+      (events) {
+        applyUser(events);
+        SessionCacheGate.markWarm(SessionCacheGate.eventsUser);
+      },
     );
   }
 

@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/error/failures.dart';
+import 'package:greengo_chat/core/services/session_cache_gate.dart';
 import 'package:greengo_chat/features/events/domain/entities/event.dart';
 import 'package:greengo_chat/features/events/domain/entities/event_country_stat.dart';
 import 'package:greengo_chat/features/events/domain/repositories/events_repository.dart';
@@ -23,6 +24,9 @@ void main() {
   final e2 = EventFixtures.build(id: 'e2', startDate: DateTime(2030, 2, 1));
 
   setUp(() {
+    // The cache gate is static/process-wide — reset it so each test starts
+    // "cold" (network-first), giving deterministic single-emission loads.
+    SessionCacheGate.reset();
     repo = MockEventsRepository();
     bloc = EventsBloc(repository: repo);
   });

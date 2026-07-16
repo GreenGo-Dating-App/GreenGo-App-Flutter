@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/error/failures.dart';
+import '../../../../core/services/session_cache_gate.dart';
 import '../../data/datasources/communities_remote_datasource.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
@@ -97,20 +98,22 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       emit(const CommunitiesLoading());
     }
 
-    // CACHE-THEN-NETWORK: paint instantly from the local cache, then reconcile
-    // with the server. The cache pass is best-effort (a cold cache throws/empty
-    // → ignored). Both passes merge via copyWith so nothing else is clobbered.
-    final cached = await _repository.getCommunities(
-      type: event.type,
-      language: event.language,
-      city: event.city,
-      searchQuery: event.searchQuery,
-      limit: _communitiesPageSize,
-      preferCache: true,
-    );
-    cached.fold((_) {}, (list) {
-      if (list.isNotEmpty) _emitDiscover(list, emit);
-    });
+    // CACHE-THEN-NETWORK — but only ONCE the server has been hit this session.
+    // On a fresh app open the gate is cold, so we go NETWORK-FIRST (fresh data);
+    // subsequent loads paint instantly from the cache, then reconcile.
+    if (SessionCacheGate.isWarm(SessionCacheGate.communitiesDiscover)) {
+      final cached = await _repository.getCommunities(
+        type: event.type,
+        language: event.language,
+        city: event.city,
+        searchQuery: event.searchQuery,
+        limit: _communitiesPageSize,
+        preferCache: true,
+      );
+      cached.fold((_) {}, (list) {
+        if (list.isNotEmpty) _emitDiscover(list, emit);
+      });
+    }
 
     final result = await _repository.getCommunities(
       type: event.type,
@@ -130,7 +133,10 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           emit(CommunitiesError(message: failure.message));
         }
       },
-      (communities) => _emitDiscover(communities, emit),
+      (communities) {
+        _emitDiscover(communities, emit);
+        SessionCacheGate.markWarm(SessionCacheGate.communitiesDiscover);
+      },
     );
   }
 
@@ -227,16 +233,18 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       emit(const CommunitiesLoading());
     }
 
-    // Cache-then-network: instant cache paint, then server reconcile.
-    final cached =
-        await _repository.getUserCommunities(event.userId, preferCache: true);
-    cached.fold((_) {}, (list) {
-      if (list.isNotEmpty) {
-        final c = state;
-        final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
-        emit(b.copyWith(userCommunities: list));
-      }
-    });
+    // Network-first on a fresh open; cache-then-network once warm this session.
+    if (SessionCacheGate.isWarm(SessionCacheGate.communitiesJoined)) {
+      final cached =
+          await _repository.getUserCommunities(event.userId, preferCache: true);
+      cached.fold((_) {}, (list) {
+        if (list.isNotEmpty) {
+          final c = state;
+          final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
+          emit(b.copyWith(userCommunities: list));
+        }
+      });
+    }
 
     final result = await _repository.getUserCommunities(event.userId);
 
@@ -251,6 +259,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       },
       (userCommunities) {
         emit(base.copyWith(userCommunities: userCommunities));
+        SessionCacheGate.markWarm(SessionCacheGate.communitiesJoined);
       },
     );
   }
@@ -259,16 +268,18 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     LoadManagedCommunities event,
     Emitter<CommunitiesState> emit,
   ) async {
-    // Cache-then-network: instant cache paint, then server reconcile.
-    final cached =
-        await _repository.getCreatedCommunities(event.userId, preferCache: true);
-    cached.fold((_) {}, (list) {
-      if (list.isNotEmpty) {
-        final c = state;
-        final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
-        emit(b.copyWith(managedCommunities: list, managedLoaded: true));
-      }
-    });
+    // Network-first on a fresh open; cache-then-network once warm this session.
+    if (SessionCacheGate.isWarm(SessionCacheGate.communitiesMy)) {
+      final cached = await _repository.getCreatedCommunities(event.userId,
+          preferCache: true);
+      cached.fold((_) {}, (list) {
+        if (list.isNotEmpty) {
+          final c = state;
+          final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
+          emit(b.copyWith(managedCommunities: list, managedLoaded: true));
+        }
+      });
+    }
 
     final result = await _repository.getCreatedCommunities(event.userId);
 
@@ -291,6 +302,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
             managedLoaded: true,
           ));
         }
+        SessionCacheGate.markWarm(SessionCacheGate.communitiesMy);
       },
     );
   }
