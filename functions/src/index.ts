@@ -150,6 +150,7 @@ export {
 export {
   seedMockData,
   removeMockData,
+  diagLiveEvents,
 } from './admin/mockData';
 
 // Account deletion cascade — on profiles/{uid} delete, fix stale counts, purge

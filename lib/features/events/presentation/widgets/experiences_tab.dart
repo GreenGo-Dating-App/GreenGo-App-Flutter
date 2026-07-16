@@ -241,7 +241,11 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       }).toList();
     }
 
-    // Live Events: keep only within 100km and order by date, then distance.
+    // Live Events: order by date, then by DISTANCE (nearest first). We do NOT
+    // hard-drop far events — the external Ticketmaster feed is geographically
+    // sparse (clustered in a fixed set of cities, often none near the user), so
+    // a distance cutoff empties the list. Sorting brings the nearest to the top
+    // while still showing everything upcoming.
     if (widget.source == 'ticketmaster' &&
         widget.userLat != null &&
         widget.userLng != null) {
@@ -250,8 +254,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       double dist(ExternalEvent e) => (e.lat == null || e.lng == null)
           ? double.maxFinite
           : GeoQuery.distanceMeters(lat, lng, e.lat!, e.lng!);
-      items = items.where((e) => dist(e) <= 100000).toList()
-        ..sort((a, b) {
+      items = [...items]..sort((a, b) {
           final byDate = (a.startDate ?? '').compareTo(b.startDate ?? '');
           return byDate != 0 ? byDate : dist(a).compareTo(dist(b));
         });
