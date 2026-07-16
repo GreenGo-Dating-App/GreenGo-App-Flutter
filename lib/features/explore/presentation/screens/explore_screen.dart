@@ -453,18 +453,25 @@ class _ExploreScreenState extends State<ExploreScreen> {
         .where((h) => _withinKm(h, 100)) // <= 100km
         .toList();
 
-    // FALLBACK: the nearby query is geohash-ordered, so Firestore silently omits
-    // events that have no geohash/coordinates. If it surfaced nothing, pull the
-    // upcoming published events directly (no geohash needed, existing index) so
-    // the section isn't left empty. These may lack coordinates, so they are NOT
-    // distance-filtered.
+    // FALLBACK so the section is NEVER empty: the nearby query is geohash-ordered
+    // (so it omits events without geohash/coords) and 100km-bounded. If it
+    // surfaced nothing, WIDEN — pull all published events and keep the ongoing/
+    // future ones (`_eventNotPast`, which — unlike a server `upcoming` filter —
+    // keeps an event that already started but hasn't ended). No distance gate
+    // here: a far current event beats a blank section. Near events still rank
+    // first via byCityThenDate (the user's own city on top).
     if (pool.isEmpty) {
       try {
         final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
-        final upcoming = await eventsDs.getEvents(upcoming: true);
-        pool = _dedupeSeries(upcoming.where(_eventNotPast).toList())
+        // Prefer the indexed future-start query (scale-safe); only if that yields
+        // nothing current do we widen to a plain read to catch ONGOING events
+        // whose start is already past (which a server `upcoming` filter drops).
+        var src = await eventsDs.getEvents(upcoming: true);
+        if (!src.any(_eventNotPast)) {
+          src = await eventsDs.getEvents();
+        }
+        pool = _dedupeSeries(src.where(_eventNotPast).toList())
             .map((e) => _Happening.community(e))
-            .where((h) => _withinKm(h, 100)) // stay near even in the fallback
             .toList();
       } catch (_) {}
     }
@@ -680,17 +687,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
-    // Featured shows ONLY ongoing/future events (never past) that are NEAR the
-    // user (within [kFeaturedRadiusKm]) when a location is known. Applied at the
-    // single addEvents choke point so EVERY tier — including the wide "always
-    // show something" fallbacks — is both date- and distance-honest: a located
-    // user never sees a far event dressed up as "featured near you"; when no
-    // near event exists the section simply hides. (_withinFeaturedRadius passes
-    // everything when we have NO location, so unlocated users still see picks.)
-    void addEvents(Iterable<Event> items) => addAll(items
-        .where(_eventNotPast)
-        .map((e) => _Happening.community(e))
-        .where(_withinFeaturedRadius));
+    // Featured shows ONLY ongoing/future events — NEVER past ones (that was the
+    // "old events" bug; a defaulted endDate can't fake current via _eventNotPast).
+    // Distance is a PREFERENCE, not a hard gate: the near tiers (1–3) fill first,
+    // then the wide "always show something" fallbacks (4–5) keep the section from
+    // ever being empty. So: never past, never empty, near-first.
+    void addEvents(Iterable<Event> items) =>
+        addAll(items.where(_eventNotPast).map((e) => _Happening.community(e)));
 
     final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
     final hasLocation = _userLat != null && _userLng != null;
