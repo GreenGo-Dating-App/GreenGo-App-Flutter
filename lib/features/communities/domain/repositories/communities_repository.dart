@@ -16,6 +16,7 @@ abstract class CommunitiesRepository {
     String? searchQuery,
     DateTime? startAfterActivity,
     int limit = 50,
+    bool preferCache = false,
   });
 
   /// Get a community by ID
@@ -60,7 +61,8 @@ abstract class CommunitiesRepository {
   });
 
   /// Get communities the user has joined
-  Future<Either<Failure, List<Community>>> getUserCommunities(String userId);
+  Future<Either<Failure, List<Community>>> getUserCommunities(String userId,
+      {bool preferCache = false});
 
   /// Get recommended communities for a user based on languages and interests
   Future<Either<Failure, List<Community>>> getRecommendedCommunities({
@@ -106,8 +108,9 @@ abstract class CommunitiesRepository {
   /// Communities the user CREATED (direct `createdByUserId` query — no
   /// member-doc dependency). Backs the "My communities" tab.
   Future<Either<Failure, List<Community>>> getCreatedCommunities(
-    String userId,
-  );
+    String userId, {
+    bool preferCache = false,
+  });
 
   /// Request to join a PRIVATE community (pending owner/admin approval).
   Future<Either<Failure, void>> requestToJoin({
