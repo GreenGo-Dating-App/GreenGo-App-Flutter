@@ -616,6 +616,124 @@ export const diagLiveEvents = onRequest(
   }),
 );
 
+/// READ-ONLY diagnostic for the `events` collection — tells us WHY the Explore
+/// "Featured community events" / "Happening soon" sections are empty or wrong.
+/// The nearby query (getNearbyCommunityEvents) needs a `geohash` (Firestore
+/// orderBy silently drops docs without it), coordinates, a published/scheduled
+/// status, and a future endDate. This counts each. ?token=...&lat=&lng=
+export const diagCommunityEvents = onRequest(
+  { memory: '512MiB', timeoutSeconds: 120 },
+  monitored('diagCommunityEvents', async (req, res) => {
+    if (req.query.token !== MOCK_TOKEN) {
+      res.status(403).send('forbidden');
+      return;
+    }
+    const lat = parseFloat((req.query.lat as string) || '34.0522');
+    const lng = parseFloat((req.query.lng as string) || '-118.2437');
+    const now = new Date();
+    const km = (a: number, b: number, c: number, d: number): number => {
+      const R = 6371;
+      const dLat = ((c - a) * Math.PI) / 180;
+      const dLng = ((d - b) * Math.PI) / 180;
+      const s =
+        Math.sin(dLat / 2) ** 2 +
+        Math.cos((a * Math.PI) / 180) *
+          Math.cos((c * Math.PI) / 180) *
+          Math.sin(dLng / 2) ** 2;
+      return R * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1 - s));
+    };
+    const toDate = (v: unknown): Date | null => {
+      if (v == null) return null;
+      if (typeof (v as { toDate?: () => Date }).toDate === 'function') {
+        return (v as { toDate: () => Date }).toDate();
+      }
+      if (typeof v === 'string') {
+        const d = new Date(v);
+        return isNaN(d.getTime()) ? null : d;
+      }
+      return null;
+    };
+
+    const snap = await db.collection('events').limit(1000).get();
+    let published = 0;
+    let scheduled = 0;
+    let withGeohash = 0;
+    let withCoords = 0;
+    let futureEnd = 0;
+    let futureStart = 0;
+    let within100km = 0;
+    // The FULL gate an event must pass to appear nearby (published/scheduled +
+    // geohash + coords + future end + within 100km).
+    let fullyQualified = 0;
+    const statuses: Record<string, number> = {};
+    const cities: Record<string, number> = {};
+    const samples: unknown[] = [];
+    for (const doc of snap.docs) {
+      const x = doc.data();
+      const status = (x.status as string) || '(none)';
+      statuses[status] = (statuses[status] || 0) + 1;
+      const isPubOrSched = status === 'published' || status === 'scheduled';
+      const hasGeohash =
+        typeof x.geohash === 'string' && (x.geohash as string).length > 0;
+      const hasCoords =
+        typeof x.latitude === 'number' && typeof x.longitude === 'number';
+      const start = toDate(x.startDate);
+      const end = toDate(x.endDate);
+      const startFuture = start != null && start.getTime() >= now.getTime();
+      const endFuture = end != null && end.getTime() >= now.getTime();
+      const near =
+        hasCoords && km(lat, lng, x.latitude, x.longitude) <= 100;
+      if (status === 'published') published++;
+      if (status === 'scheduled') scheduled++;
+      if (hasGeohash) withGeohash++;
+      if (hasCoords) withCoords++;
+      if (endFuture) futureEnd++;
+      if (startFuture) futureStart++;
+      if (near) within100km++;
+      if (isPubOrSched && hasGeohash && hasCoords && endFuture && near) {
+        fullyQualified++;
+      }
+      const city = (x.city as string) || '(none)';
+      cities[city] = (cities[city] || 0) + 1;
+      if (samples.length < 10) {
+        samples.push({
+          id: doc.id,
+          title: x.title ?? null,
+          status,
+          hasGeohash,
+          lat: x.latitude ?? null,
+          lng: x.longitude ?? null,
+          city: x.city ?? null,
+          startDate: start ? start.toISOString() : null,
+          endDate: end ? end.toISOString() : null,
+          distKm: hasCoords ? Math.round(km(lat, lng, x.latitude, x.longitude)) : null,
+        });
+      }
+    }
+    res.status(200).json({
+      near: { lat, lng },
+      now: now.toISOString(),
+      total: snap.size,
+      byStatus: statuses,
+      published,
+      scheduled,
+      withGeohash,
+      missingGeohash: snap.size - withGeohash,
+      withCoords,
+      missingCoords: snap.size - withCoords,
+      futureStart,
+      futureEnd,
+      within100km,
+      // If this is 0, Featured/Happening-soon will be empty near this point.
+      fullyQualified,
+      topCities: Object.entries(cities)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10),
+      samples,
+    });
+  }),
+);
+
 export const removeMockData = onRequest(
   { memory: '512MiB', timeoutSeconds: 300 },
   monitored('removeMockData', async (req, res) => {
