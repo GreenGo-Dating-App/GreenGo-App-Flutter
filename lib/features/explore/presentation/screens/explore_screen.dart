@@ -428,16 +428,32 @@ class _ExploreScreenState extends State<ExploreScreen> {
       if (db == null) return -1;
       return da.compareTo(db);
     }
+    // Distance (km) of a happening from the user; unknown/no-location sorts last.
+    double distOf(_Happening h) {
+      final lat = _userLat;
+      final lng = _userLng;
+      final hLat = h.lat;
+      final hLng = h.lng;
+      if (lat == null || lng == null || hLat == null || hLng == null) {
+        return double.maxFinite;
+      }
+      return FeatureEngineer().calculateDistance(lat, lng, hLat, hLng);
+    }
+    // Order by DATE (soonest first), then by DISTANCE (nearest first).
+    int byDateThenDistance(_Happening a, _Happening b) {
+      final d = byDate(a, b);
+      return d != 0 ? d : distOf(a).compareTo(distOf(b));
+    }
 
     // "Happening soon" shows COMMUNITY events ONLY (never external experiences),
-    // that are close by (WITHIN 100km) and not yet ended, ordered by date.
+    // close by (WITHIN 100km) and not yet ended, ordered by date then distance.
     final chosen = _dedupeSeries(
       community.where((e) => e.endDate.isAfter(now)).toList(),
     )
         .map((e) => _Happening.community(e))
         .where((h) => _withinKm(h, 100)) // <= 100km
         .toList()
-      ..sort(byDate);
+      ..sort(byDateThenDistance);
 
     final rows = chosen
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
