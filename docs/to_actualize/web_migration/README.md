@@ -393,9 +393,17 @@ Increment 1 — landed in the working tree, `flutter analyze` clean on all chang
 - **FCM web push wiring** — `web/firebase-messaging-sw.js` (public web config), `lib/core/config/web_push_config.dart` (VAPID constant, env-overridable, graceful-skip when empty), `getFCMToken()` passes `vapidKey` on web, `PushNotificationService.initialize()` now wires foreground/tap/refresh listeners on web instead of early-returning. The existing `main.dart` token-save flow registers web tokens automatically once the VAPID key is set.
 - **Event check-in scanner** — web fallback screen (mobile-only camera) instead of a broken camera view; new l10n key `eventScanUseMobileApp` added to `app_en.arb` + `flutter gen-l10n` run.
 
-**⏳ Remaining (needs a decision or a bigger refactor)**
-- 🔴 **Profile-photo pipeline** (shared by `storefront_editor`, `photo_management`, onboarding **and** event-create photos via `ds.uploadPhoto(File)`): `File`-typed through event→bloc→usecase→repo→datasource **and** `Image.file` previews **and** native **ML Kit** face/NSFW validation. Making it web-safe needs (a) an `XFile`/bytes pipeline refactor and (b) a **decision: skip face validation on web, or move it server-side?** → this blocks event-create photos + storefront gallery on web. **Needs user input.**
+**✅ Done — Increment 2 (photo pipeline web-safe)**
+The whole `uploadPhoto` path was refactored `File`→`XFile` end-to-end (event → bloc → usecase → repo → datasource), so every picked-image upload works on web (bytes) and mobile (File) alike. `flutter analyze` = **0 errors** across the project.
+- **Datasource** — `uploadPhoto(XFile)`: web→`putData(bytes)` (no compression), mobile→compress+`putFile` (unchanged).
+- **Native ML Kit validation guarded `!kIsWeb`** in `profile_bloc`, `onboarding_bloc`, `events_screen`, `group_info_screen` (skip on web; **server-side moderation is the web safety net** — chosen default). Face/NSFW checks byte-identical on mobile.
+- **Web-safe previews** — `events_screen` slot + full-screen preview use `WebMedia.imageProviderFor` (was `FileImage`/`Image.file`).
+- **Screens updated to pass `XFile`** (no `File(x.path)`): `storefront_editor`, `photo_management`, onboarding `step2`/`step3`, `events_screen` (main + extra event photos), `group_info` (group avatar). Unused `dart:io` imports removed where applicable.
+- **Now web-functional:** onboarding photo upload + verification selfie upload, profile photo management, business storefront gallery, business verification doc, community cover, event-create photos, group-chat avatar.
+
+**⏳ Remaining**
 - 🟡 **Explore QR-hub scan button** — gate the scan sub-action `!kIsWeb` (QR display already fine). Not yet done.
+- 🟡 **Selfie verification (`verifyPhotoWithAI`, ML Kit)** — still `File`-typed (intentionally mobile-only per §8); confirm its entry is gated on web.
 - 🟡 **Set the real VAPID key** — generate in Firebase Console → Cloud Messaging → Web Push certificates, then set `WEB_PUSH_VAPID_KEY` (or paste into `web_push_config.dart`). Until then web push stays inactive (build still runs).
 - 🟡 **Deep-link route parsing** (`/u/*`, `/e/*`), **iOS PWA splash images**, **Explore responsive pass**, **`/community` vs `/communities` route reconcile** — per §5–§7 & §13.
 - **Verify:** `flutter build web --release` end-to-end + preview-channel smoke test (analyze passes, but a full web build/runtime pass is still pending).
