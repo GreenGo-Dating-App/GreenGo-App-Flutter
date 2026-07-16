@@ -935,36 +935,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   Future<void> _checkAndShowAccessNotifications(UserAccessData accessData) async {
-    // Show approval notification if user was just approved
-    if (accessData.approvalStatus == ApprovalStatus.approved &&
-        !_hasShownApprovalNotification) {
-      _hasShownApprovalNotification = true;
-      await _createApprovalNotification();
-    }
-
-    // "Access granted" notification removed per request — the notifications list
-    // should only contain the real engagement notifications, not this system one.
-    // (Kept the flag/method wired but no longer triggered.)
-  }
-
-  Future<void> _createApprovalNotification() async {
-    try {
-      final notificationData = {
-        'userId': widget.userId,
-        'type': 'system',
-        'title': AppLocalizations.of(context)!.accountApproved,
-        'body': AppLocalizations.of(context)!.accountApprovedBody,
-        'data': {'action': 'approval'},
-        'createdAt': Timestamp.now(),
-        'isRead': false,
-      };
-
-      await FirebaseFirestore.instance
-          .collection('notifications')
-          .add(notificationData);
-    } catch (e) {
-      // Silently handle notification creation errors
-    }
+    // "Account approved" notification removed per request. It used to be written
+    // here on every app open (type:'system', data.action:'approval'), so it
+    // accumulated in the feed. We no longer create it.
   }
 
   Future<void> _createAccessGrantedNotification() async {

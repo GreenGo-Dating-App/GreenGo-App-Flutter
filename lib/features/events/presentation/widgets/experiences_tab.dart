@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/external_events_data_source.dart';
 import '../../data/datasources/external_events_pager.dart';
@@ -25,6 +26,8 @@ class ExperiencesTab extends StatefulWidget {
     this.sort = 'distance',
     this.category,
     this.currentUserId = '',
+    this.dateFrom,
+    this.dateTo,
   });
 
   final bool gridView;
@@ -36,6 +39,10 @@ class ExperiencesTab extends StatefulWidget {
   final String sort; // distance | rating | reviews | date
   final String? category; // optional category filter (Attractions tab)
   final String currentUserId;
+
+  /// Optional inclusive date-range filter (applied to the ISO startDate).
+  final DateTime? dateFrom;
+  final DateTime? dateTo;
 
   @override
   State<ExperiencesTab> createState() => _ExperiencesTabState();
@@ -74,7 +81,9 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         old.sort != widget.sort ||
         old.category != widget.category ||
         old.userLat != widget.userLat ||
-        old.userLng != widget.userLng) {
+        old.userLng != widget.userLng ||
+        old.dateFrom != widget.dateFrom ||
+        old.dateTo != widget.dateTo) {
       _reload();
     }
   }
@@ -156,17 +165,58 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     });
   }
 
-  /// Downloaded items, with the (client-side) free-text search applied over what
-  /// has loaded so far. Order is the server order — no re-sort here.
+  static String _iso(DateTime d) =>
+      '${d.year.toString().padLeft(4, '0')}-'
+      '${d.month.toString().padLeft(2, '0')}-'
+      '${d.day.toString().padLeft(2, '0')}';
+
+  /// Downloaded items with client-side filters applied: free-text search, an
+  /// optional inclusive date range, and — for LIVE EVENTS (ticketmaster) — a
+  /// 100km cap ordered by date then distance.
   List<ExternalEvent> get _filtered {
+    var items = _items;
+
+    // Free-text search.
     final q = widget.query.toLowerCase();
-    if (q.isEmpty) return _items;
-    return _items
-        .where((e) =>
-            e.title.toLowerCase().contains(q) ||
-            (e.city ?? '').toLowerCase().contains(q) ||
-            (e.country ?? '').toLowerCase().contains(q))
-        .toList();
+    if (q.isNotEmpty) {
+      items = items
+          .where((e) =>
+              e.title.toLowerCase().contains(q) ||
+              (e.city ?? '').toLowerCase().contains(q) ||
+              (e.country ?? '').toLowerCase().contains(q))
+          .toList();
+    }
+
+    // Inclusive date-range filter on the ISO startDate (lexical == chrono).
+    if (widget.dateFrom != null || widget.dateTo != null) {
+      final from = widget.dateFrom != null ? _iso(widget.dateFrom!) : null;
+      final to = widget.dateTo != null ? _iso(widget.dateTo!) : null;
+      items = items.where((e) {
+        final d = e.startDate;
+        if (d == null || d.isEmpty) return false; // a date filter needs a date
+        if (from != null && d.compareTo(from) < 0) return false;
+        if (to != null && d.compareTo(to) > 0) return false;
+        return true;
+      }).toList();
+    }
+
+    // Live Events: keep only within 100km and order by date, then distance.
+    if (widget.source == 'ticketmaster' &&
+        widget.userLat != null &&
+        widget.userLng != null) {
+      final lat = widget.userLat!;
+      final lng = widget.userLng!;
+      double dist(ExternalEvent e) => (e.lat == null || e.lng == null)
+          ? double.maxFinite
+          : GeoQuery.distanceMeters(lat, lng, e.lat!, e.lng!);
+      items = items.where((e) => dist(e) <= 100000).toList()
+        ..sort((a, b) {
+          final byDate = (a.startDate ?? '').compareTo(b.startDate ?? '');
+          return byDate != 0 ? byDate : dist(a).compareTo(dist(b));
+        });
+    }
+
+    return items;
   }
 
   /// Tap action for any external card → the attraction/experience window

@@ -155,6 +155,11 @@ class _EventsScreenState extends State<EventsScreen>
   bool get _isNativeTab =>
       _tabController.index == 0 || _tabController.index == 4;
 
+  // Tabs that support the date-range filter: Community (0), Live Events (1),
+  // My Events (4). Attractions/Experiences have no meaningful event date.
+  bool get _isDateFilterableTab =>
+      _isNativeTab || _tabController.index == 1;
+
   // Attractions tab (Geoapify) supports a category filter (museum/park/etc).
   bool get _isAttractionsTab => _tabController.index == 2;
   // Experiences tab (Viator) — also supports a category filter.
@@ -297,9 +302,9 @@ class _EventsScreenState extends State<EventsScreen>
                 onPressed: () => _showCreateEventDialog(context),
               ),
             ),
-            // Date filter only applies to native tabs (Community / My Events) —
-            // Attractions & Experiences have no date filter.
-            if (_isNativeTab)
+            // Date-range filter applies to Community, Live Events and My Events
+            // (Attractions & Experiences have no meaningful event date).
+            if (_isDateFilterableTab)
               IconButton(
                 icon: Icon(
                   _hasDateFilter
@@ -718,9 +723,11 @@ class _EventsScreenState extends State<EventsScreen>
   List<Event> _getCommunityEvents(EventsLoaded state) {
     // Auto-publish gate: only live events (published, or scheduled & due) are
     // discoverable. The datasource already filters, but guard client-side too.
-    final list = state.upcomingEvents.where((e) => e.isLive).toList();
+    var list = state.upcomingEvents.where((e) => e.isLive).toList();
     if (_userLat != null && _userLng != null) {
-      list.sort((a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
+      // Keep only community events WITHIN 100km, then nearest-first.
+      list = list.where((e) => _distanceToEvent(e) <= 100).toList()
+        ..sort((a, b) => _distanceToEvent(a).compareTo(_distanceToEvent(b)));
     }
     // Default view: only the closest 100 (search queries the whole table).
     return list.take(_communityNearbyLimit).toList();
@@ -1033,6 +1040,11 @@ class _EventsScreenState extends State<EventsScreen>
       userLat: _userLat,
       userLng: _userLng,
       currentUserId: widget.currentUserId,
+      // Live Events honour the shared date-range filter (100km + date/distance
+      // ordering is applied inside the tab). Attractions/Experiences have no
+      // meaningful event date, so no date filter there.
+      dateFrom: source == 'ticketmaster' ? _dateFrom : null,
+      dateTo: source == 'ticketmaster' ? _dateTo : null,
     );
   }
 
