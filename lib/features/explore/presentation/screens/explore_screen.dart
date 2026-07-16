@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/interaction_log_service.dart';
+import '../../../../core/services/session_cache_gate.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
@@ -954,13 +955,19 @@ class _ExploreScreenState extends State<ExploreScreen> {
             .toList()
           ..sort((a, b) => a.startDate.compareTo(b.startDate));
         if (mounted) setState(() => _communityEvents = events);
+        if (!preferCache) {
+          SessionCacheGate.markWarm(SessionCacheGate.exploreCommunityEvents);
+        }
       } catch (_) {
         // Cache miss / transient — leave whatever is currently shown.
       }
     }
 
-    await pass(true); // instant cache paint
-    await pass(false); // server reconcile
+    // Network-first on a fresh open; cache-then-network once warm this session.
+    if (SessionCacheGate.isWarm(SessionCacheGate.exploreCommunityEvents)) {
+      await pass(true); // instant cache paint
+    }
+    await pass(false); // server (fresh)
   }
 
   /// Loads "Businesses near you": public business profiles
@@ -1096,11 +1103,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
         if (mounted && (result.isNotEmpty || !preferCache)) {
           setState(() => _communities = result);
         }
+        if (!preferCache) {
+          SessionCacheGate.markWarm(SessionCacheGate.exploreCommunities);
+        }
       } catch (_) {/* leave current */}
     }
 
-    await pass(true); // instant cache paint
-    await pass(false); // server reconcile
+    // Network-first on a fresh open; cache-then-network once warm this session.
+    if (SessionCacheGate.isWarm(SessionCacheGate.exploreCommunities)) {
+      await pass(true); // instant cache paint
+    }
+    await pass(false); // server (fresh)
   }
 
   /// Loads the active weekly Country Spotlight (or null when there is none).
