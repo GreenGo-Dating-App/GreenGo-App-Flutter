@@ -1061,19 +1061,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
     if (mounted) setState(() => _businesses = result);
   }
 
-  /// True when [event] is upcoming OR genuinely ongoing — i.e. NOT past. Used by
-  /// Featured and Happening-soon so neither ever surfaces a finished event.
+  /// True when [event] is current — its START is today or in the future. Used by
+  /// Featured and Happening-soon so neither ever surfaces a past event.
   ///
-  /// NOTE: [EventModel] defaults a MISSING/invalid `endDate` to `DateTime.now()`,
-  /// so a past event that only stored a `startDate` parses with `endDate == now`
-  /// and would wrongly look current. We therefore judge primarily on `startDate`
-  /// and only treat an event as ongoing when it has a REAL end (strictly after
-  /// its start) that is still in the future.
+  /// We judge on `startDate` ALONE, deliberately NOT `endDate`: `endDate` is
+  /// unreliable (a missing one parses to `DateTime.now()`, and real data carries
+  /// bogus spans — e.g. a one-night "DJ Contest" stored as June 26 → Aug 12).
+  /// Trusting it made a clearly-past event (started weeks ago) look "ongoing".
+  /// An event whose day has already begun is treated as past.
   bool _eventNotPast(Event e) {
     final now = DateTime.now();
     final startOfToday = DateTime(now.year, now.month, now.day);
-    if (!e.startDate.isBefore(startOfToday)) return true; // today or later
-    return e.endDate.isAfter(e.startDate) && e.endDate.isAfter(now); // ongoing
+    return !e.startDate.isBefore(startOfToday); // starts today or later
   }
 
   /// True when [h] carries a usable picture. Attractions/experiences with no
