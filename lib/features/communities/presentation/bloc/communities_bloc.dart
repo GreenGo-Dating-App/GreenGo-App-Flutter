@@ -89,19 +89,11 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     LoadCommunities event,
     Emitter<CommunitiesState> emit,
   ) async {
-    // Preserve any already-loaded lists so a reload/refresh never blanks the
-    // tabs. Only show the full-screen spinner on the FIRST load.
-    final currentState = state;
-    var userCommunities = <Community>[];
-    var recommended = <Community>[];
-    var managed = <Community>[];
-    var managedLoaded = false;
-    if (currentState is CommunitiesLoaded) {
-      userCommunities = currentState.userCommunities;
-      recommended = currentState.recommended;
-      managed = currentState.managedCommunities;
-      managedLoaded = currentState.managedLoaded;
-    } else {
+    // Only show the full-screen spinner on the FIRST load. Every emit below
+    // MERGES onto the CURRENT state (copyWith) rather than a snapshot captured
+    // before the await, so concurrent loads (My/Joined/Recommended) can't be
+    // clobbered by a stale captured value.
+    if (state is! CommunitiesLoaded) {
       emit(const CommunitiesLoading());
     }
 
@@ -119,9 +111,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         // tabs. Keep whatever we have; only surface a hard error on first load
         // when there is nothing to show at all.
         debugPrint('LoadCommunities failed: ${failure.message}');
-        if (currentState is CommunitiesLoaded) {
-          emit(currentState);
-        } else {
+        if (state is! CommunitiesLoaded) {
           emit(CommunitiesError(message: failure.message));
         }
       },
@@ -133,17 +123,14 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         final languageCircles = display
             .where((c) => c.type == CommunityType.languageCircle)
             .toList();
-
-        emit(CommunitiesLoaded(
+        final cur = state;
+        final base = cur is CommunitiesLoaded ? cur : const CommunitiesLoaded();
+        emit(base.copyWith(
           communities: display,
-          userCommunities: userCommunities,
-          recommended: recommended,
           languageCircles: languageCircles,
           hasMoreCommunities: communities.length >= _communitiesPageSize,
           isLoadingMore: false,
           communitiesCursor: _oldestActivity(communities),
-          managedCommunities: managed,
-          managedLoaded: managedLoaded,
         ));
       },
     );
@@ -220,49 +207,24 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     Emitter<CommunitiesState> emit,
   ) async {
     // Preserve current state data if available
-    final currentState = state;
-    var allCommunities = <Community>[];
-    var recommended = <Community>[];
-    var languageCircles = <Community>[];
-    var managed = <Community>[];
-    var managedLoaded = false;
-
-    if (currentState is CommunitiesLoaded) {
-      allCommunities = currentState.communities;
-      recommended = currentState.recommended;
-      languageCircles = currentState.languageCircles;
-      managed = currentState.managedCommunities;
-      managedLoaded = currentState.managedLoaded;
-    } else {
-      // Only blank to a spinner on the FIRST load; a refresh keeps the lists.
+    // Only blank to a spinner on the FIRST load; a refresh keeps the lists.
+    if (state is! CommunitiesLoaded) {
       emit(const CommunitiesLoading());
     }
 
     final result = await _repository.getUserCommunities(event.userId);
 
+    // Merge onto the CURRENT state so a concurrent load can't be clobbered.
+    final cur = state;
+    final base = cur is CommunitiesLoaded ? cur : const CommunitiesLoaded();
     result.fold(
-      // A failing "My Communities" query must not blank Discover/Managed.
-      // Preserve every other slice and just show My as empty.
+      // A failing "Joined" query must not blank the other tabs; show it empty.
       (failure) {
         debugPrint('LoadUserCommunities failed: ${failure.message}');
-        emit(CommunitiesLoaded(
-          communities: allCommunities,
-          userCommunities: const [],
-          recommended: recommended,
-          languageCircles: languageCircles,
-          managedCommunities: managed,
-          managedLoaded: managedLoaded,
-        ));
+        emit(base.copyWith(userCommunities: const []));
       },
       (userCommunities) {
-        emit(CommunitiesLoaded(
-          communities: allCommunities,
-          userCommunities: userCommunities,
-          recommended: recommended,
-          languageCircles: languageCircles,
-          managedCommunities: managed,
-          managedLoaded: managedLoaded,
-        ));
+        emit(base.copyWith(userCommunities: userCommunities));
       },
     );
   }
@@ -300,57 +262,23 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     LoadRecommendedCommunities event,
     Emitter<CommunitiesState> emit,
   ) async {
-    final currentState = state;
-    var allCommunities = <Community>[];
-    var userCommunities = <Community>[];
-    var languageCircles = <Community>[];
-    var managed = <Community>[];
-    var managedLoaded = false;
-
-    if (currentState is CommunitiesLoaded) {
-      allCommunities = currentState.communities;
-      userCommunities = currentState.userCommunities;
-      languageCircles = currentState.languageCircles;
-      managed = currentState.managedCommunities;
-      managedLoaded = currentState.managedLoaded;
-    }
-
     final result = await _repository.getRecommendedCommunities(
       userId: event.userId,
       languages: event.languages,
       interests: event.interests,
     );
 
+    // Merge onto the CURRENT state (copyWith) so we never clobber a concurrent
+    // slice with a stale snapshot. A recommended failure just shows none.
+    final cur = state;
+    final base = cur is CommunitiesLoaded ? cur : const CommunitiesLoaded();
     result.fold(
-      // Recommended is the most index-hungry query; a failure here previously
-      // emitted CommunitiesError and blanked ALL tabs (the real "communities
-      // not appearing" bug). Preserve every loaded slice; just show no
-      // recommendations.
       (failure) {
         debugPrint('LoadRecommendedCommunities failed: ${failure.message}');
-        final currentState = state;
-        if (currentState is CommunitiesLoaded) {
-          emit(currentState.copyWith(recommended: const []));
-        } else {
-          emit(CommunitiesLoaded(
-            communities: allCommunities,
-            userCommunities: userCommunities,
-            recommended: const [],
-            languageCircles: languageCircles,
-            managedCommunities: managed,
-            managedLoaded: managedLoaded,
-          ));
-        }
+        emit(base.copyWith(recommended: const []));
       },
       (recommended) {
-        emit(CommunitiesLoaded(
-          communities: allCommunities,
-          userCommunities: userCommunities,
-          recommended: recommended,
-          languageCircles: languageCircles,
-          managedCommunities: managed,
-          managedLoaded: managedLoaded,
-        ));
+        emit(base.copyWith(recommended: recommended));
       },
     );
   }

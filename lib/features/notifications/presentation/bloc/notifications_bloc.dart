@@ -119,7 +119,15 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
     NotificationsUnreadCleared event,
     Emitter<NotificationsState> emit,
   ) async {
-    // Permanently delete every unread notification; the stream reload reflects it.
+    // Optimistically drop the unread ones from the UI immediately.
+    final s = state;
+    if (s is NotificationsLoaded) {
+      final remaining = s.notifications.where((n) => n.isRead).toList();
+      emit(remaining.isEmpty
+          ? const NotificationsEmpty()
+          : NotificationsLoaded(notifications: remaining));
+    }
+    // Then permanently delete on the server; the stream reload confirms it.
     await di.sl<NotificationRepository>().deleteAllUnread(event.userId);
   }
 
@@ -127,7 +135,10 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
     NotificationsAllCleared event,
     Emitter<NotificationsState> emit,
   ) async {
-    // Permanently delete EVERY notification (read + unread); the stream reflects it.
+    // Optimistically clear the list in the UI IMMEDIATELY so it feels instant.
+    emit(const NotificationsEmpty());
+    // Then permanently delete EVERY notification on the server (read + unread);
+    // the stream reload confirms the now-empty list.
     await di.sl<NotificationRepository>().deleteAll(event.userId);
   }
 
