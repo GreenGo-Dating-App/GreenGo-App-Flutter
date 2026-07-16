@@ -21,12 +21,14 @@ class EventsRepositoryImpl implements EventsRepository {
     String? category,
     String? city,
     bool? upcoming,
+    bool preferCache = false,
   }) async {
     try {
       final events = await remoteDataSource.getEvents(
         category: category,
         city: city,
         upcoming: upcoming,
+        preferCache: preferCache,
       );
       return Right(events);
     } on ServerException catch (e) {
@@ -202,9 +204,11 @@ class EventsRepositoryImpl implements EventsRepository {
   }
 
   @override
-  Future<Either<Failure, List<Event>>> getUserEvents(String userId) async {
+  Future<Either<Failure, List<Event>>> getUserEvents(String userId,
+      {bool preferCache = false}) async {
     try {
-      final events = await remoteDataSource.getUserEvents(userId);
+      final events =
+          await remoteDataSource.getUserEvents(userId, preferCache: preferCache);
       return Right(events);
     } on ServerException catch (e) {
       debugPrint('ServerException in getUserEvents: ${e.message}');

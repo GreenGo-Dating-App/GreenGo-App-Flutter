@@ -35,6 +35,7 @@ void main() {
             category: any(named: 'category'),
             city: any(named: 'city'),
             upcoming: any(named: 'upcoming'),
+            preferCache: any(named: 'preferCache'),
           )).thenAnswer((_) async => Right([e1, e2]));
 
       final expectation = expectLater(
@@ -57,6 +58,7 @@ void main() {
             category: any(named: 'category'),
             city: any(named: 'city'),
             upcoming: any(named: 'upcoming'),
+            preferCache: any(named: 'preferCache'),
           )).thenAnswer((_) async => const Left(ServerFailure('boom')));
 
       final expectation = expectLater(
@@ -76,6 +78,7 @@ void main() {
             category: any(named: 'category'),
             city: any(named: 'city'),
             upcoming: any(named: 'upcoming'),
+            preferCache: any(named: 'preferCache'),
           )).thenAnswer((_) async => const Right(<Event>[]));
 
       final expectation = expectLater(
@@ -93,7 +96,7 @@ void main() {
 
   group('LoadUserEvents', () {
     test('emits Loaded carrying userEvents from an unloaded state', () async {
-      when(() => repo.getUserEvents(any()))
+      when(() => repo.getUserEvents(any(), preferCache: any(named: 'preferCache')))
           .thenAnswer((_) async => Right([e1]));
 
       final expectation = expectLater(
@@ -111,7 +114,7 @@ void main() {
     });
 
     test('emits Error from an unloaded state on failure', () async {
-      when(() => repo.getUserEvents(any()))
+      when(() => repo.getUserEvents(any(), preferCache: any(named: 'preferCache')))
           .thenAnswer((_) async => const Left(ServerFailure('no user events')));
 
       final expectation = expectLater(
@@ -131,9 +134,20 @@ void main() {
             category: any(named: 'category'),
             city: any(named: 'city'),
             upcoming: any(named: 'upcoming'),
+            preferCache: any(named: 'preferCache'),
           )).thenAnswer((_) async => Right([e1]));
-      when(() => repo.getUserEvents(any()))
+      when(() => repo.getUserEvents(any(), preferCache: any(named: 'preferCache')))
           .thenAnswer((_) async => Right([e2]));
+      // Cache pass returns empty (cold cache in a unit test) so only the server
+      // pass emits — keeps the single-emission ordering below.
+      when(() => repo.getEvents(
+            category: any(named: 'category'),
+            city: any(named: 'city'),
+            upcoming: any(named: 'upcoming'),
+            preferCache: true,
+          )).thenAnswer((_) async => Right(<Event>[]));
+      when(() => repo.getUserEvents(any(), preferCache: true))
+          .thenAnswer((_) async => Right(<Event>[]));
 
       final expectation = expectLater(
         bloc.stream,
@@ -259,7 +273,15 @@ void main() {
             category: any(named: 'category'),
             city: any(named: 'city'),
             upcoming: any(named: 'upcoming'),
+            preferCache: any(named: 'preferCache'),
           )).thenAnswer((_) async => Right([food, arts]));
+      // Cold cache: cache pass emits nothing, so LoadEvents emits once.
+      when(() => repo.getEvents(
+            category: any(named: 'category'),
+            city: any(named: 'city'),
+            upcoming: any(named: 'upcoming'),
+            preferCache: true,
+          )).thenAnswer((_) async => Right(<Event>[]));
 
       final expectation = expectLater(
         bloc.stream,

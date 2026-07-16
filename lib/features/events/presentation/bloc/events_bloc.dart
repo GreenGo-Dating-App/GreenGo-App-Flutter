@@ -39,6 +39,30 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
   ) async {
     emit(const EventsLoading());
 
+    void applyLoaded(List<Event> events) {
+      _allEvents = events;
+      _selectedCategory = null;
+      emit(EventsLoaded(
+        events: _allEvents,
+        selectedCategory: _selectedCategory,
+        attendeesMap: _attendeesMap,
+        userEvents: _userEvents,
+        nearbyEvents: _nearbyEvents,
+      ));
+    }
+
+    // CACHE-THEN-NETWORK: paint instantly from the local cache, then reconcile
+    // with the server. Cache pass is best-effort (cold cache → ignored).
+    final cached = await repository.getEvents(
+      category: event.category,
+      city: event.city,
+      upcoming: event.upcoming,
+      preferCache: true,
+    );
+    cached.fold((_) {}, (events) {
+      if (events.isNotEmpty) applyLoaded(events);
+    });
+
     final result = await repository.getEvents(
       category: event.category,
       city: event.city,
@@ -48,20 +72,10 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     result.fold(
       (failure) {
         debugPrint('Failed to load events: ${failure.message}');
-        emit(EventsError(failure.message));
+        // Don't blank an already-painted cache result on a server hiccup.
+        if (state is! EventsLoaded) emit(EventsError(failure.message));
       },
-      (events) {
-        _allEvents = events;
-        _selectedCategory = null;
-        debugPrint('Events loaded: ${events.length}');
-        emit(EventsLoaded(
-          events: _allEvents,
-          selectedCategory: _selectedCategory,
-          attendeesMap: _attendeesMap,
-          userEvents: _userEvents,
-          nearbyEvents: _nearbyEvents,
-        ));
-      },
+      applyLoaded,
     );
   }
 
@@ -310,8 +324,29 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     LoadUserEvents event,
     Emitter<EventsState> emit,
   ) async {
-    final result = await repository.getUserEvents(event.userId);
+    void applyUser(List<Event> events) {
+      _userEvents = events;
+      if (state is EventsLoaded) {
+        emit((state as EventsLoaded).copyWith(userEvents: _userEvents));
+      } else {
+        emit(EventsLoaded(
+          events: _allEvents,
+          selectedCategory: _selectedCategory,
+          attendeesMap: _attendeesMap,
+          userEvents: _userEvents,
+          nearbyEvents: _nearbyEvents,
+        ));
+      }
+    }
 
+    // Cache-then-network: instant cache paint, then server reconcile.
+    final cached =
+        await repository.getUserEvents(event.userId, preferCache: true);
+    cached.fold((_) {}, (events) {
+      if (events.isNotEmpty) applyUser(events);
+    });
+
+    final result = await repository.getUserEvents(event.userId);
     result.fold(
       (failure) {
         debugPrint('Failed to load user events: ${failure.message}');
@@ -319,20 +354,7 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
           emit(EventsError(failure.message));
         }
       },
-      (events) {
-        _userEvents = events;
-        if (state is EventsLoaded) {
-          emit((state as EventsLoaded).copyWith(userEvents: _userEvents));
-        } else {
-          emit(EventsLoaded(
-            events: _allEvents,
-            selectedCategory: _selectedCategory,
-            attendeesMap: _attendeesMap,
-            userEvents: _userEvents,
-            nearbyEvents: _nearbyEvents,
-          ));
-        }
-      },
+      applyUser,
     );
   }
 

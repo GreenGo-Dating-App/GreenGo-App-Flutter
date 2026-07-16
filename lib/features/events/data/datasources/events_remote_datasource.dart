@@ -25,6 +25,7 @@ abstract class EventsRemoteDataSource {
     String? category,
     String? city,
     bool? upcoming,
+    bool preferCache = false,
   });
 
   Future<Event?> getEventById(String id);
@@ -104,7 +105,7 @@ abstract class EventsRemoteDataSource {
     double radiusKm,
   );
 
-  Future<List<Event>> getUserEvents(String userId);
+  Future<List<Event>> getUserEvents(String userId, {bool preferCache = false});
 
   /// Events owned by a community (its Events tab). Filters on `communityId`.
   Future<List<Event>> getCommunityEvents(String communityId);
@@ -115,6 +116,7 @@ abstract class EventsRemoteDataSource {
     required double lat,
     required double lng,
     int limit,
+    bool preferCache = false,
   });
 
   /// Full-text-ish search by name/typology/city (public events only).
@@ -214,11 +216,19 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   /// for correctness — the client isLive gate already auto-publishes.
   static const List<String> _liveStatuses = ['published', 'scheduled'];
 
+  /// Cache-then-network read options (see communities datasource): a preferCache
+  /// pass reads ONLY the local cache for an instant first paint; callers do a
+  /// server pass afterwards to reconcile.
+  GetOptions _opts(bool preferCache) => GetOptions(
+        source: preferCache ? Source.cache : Source.serverAndCache,
+      );
+
   @override
   Future<List<Event>> getEvents({
     String? category,
     String? city,
     bool? upcoming,
+    bool preferCache = false,
   }) async {
     try {
       var query =
@@ -250,7 +260,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       // Pull a wider page when city must also be narrowed client-side.
       query = query.limit(hasCategory && hasCity ? 200 : 100);
 
-      final snapshot = await query.get();
+      final snapshot = await query.get(_opts(preferCache));
 
       var events = snapshot.docs
           .map(EventModel.fromFirestore)
@@ -844,14 +854,15 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   }
 
   @override
-  Future<List<Event>> getUserEvents(String userId) async {
+  Future<List<Event>> getUserEvents(String userId,
+      {bool preferCache = false}) async {
     try {
       // Get events the user organized
       final organizedSnapshot = await _eventsCollection
           .where('organizerId', isEqualTo: userId)
           .orderBy('startDate', descending: false)
           .limit(100) // Bounded (G0), matches the events-list pattern.
-          .get();
+          .get(_opts(preferCache));
 
       final organizedEvents = organizedSnapshot.docs
           .map(EventModel.fromFirestore)
@@ -864,7 +875,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .collectionGroup('attendees')
           .where('userId', isEqualTo: userId)
           .where('status', isEqualTo: RSVPStatus.going.name)
-          .get();
+          .get(_opts(preferCache));
 
       // Extract event IDs from the attendee documents
       final attendingEventIds = attendingSnapshot.docs
@@ -956,6 +967,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     required double lat,
     required double lng,
     int limit = 100,
+    bool preferCache = false,
   }) async {
     try {
       final out = <String, Event>{};
@@ -968,7 +980,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         final snaps = await Future.wait(bounds.map((b) => _eventsCollection
             .where('status', whereIn: _liveStatuses)
             .orderBy('geohash')
-            .startAt([b[0]]).endAt([b[1]]).get()));
+            .startAt([b[0]]).endAt([b[1]]).get(_opts(preferCache))));
         for (final s in snaps) {
           for (final doc in s.docs) {
             if (out.containsKey(doc.id)) continue;
