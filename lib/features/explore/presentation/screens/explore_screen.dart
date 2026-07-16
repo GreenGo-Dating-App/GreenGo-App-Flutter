@@ -405,7 +405,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   Future<void> _loadHappenings() async {
-    final now = DateTime.now();
     // 1) Community events happening SOON: ongoing or upcoming (not yet ended).
     //    One instance per recurring series.
     List<Event> community = const <Event>[];
@@ -429,32 +428,31 @@ class _ExploreScreenState extends State<ExploreScreen> {
       if (db == null) return -1;
       return da.compareTo(db);
     }
-    // Distance (km) of a happening from the user; unknown/no-location sorts last.
-    double distOf(_Happening h) {
-      final lat = _userLat;
-      final lng = _userLng;
-      final hLat = h.lat;
-      final hLng = h.lng;
-      if (lat == null || lng == null || hLat == null || hLng == null) {
-        return double.maxFinite;
-      }
-      return FeatureEngineer().calculateDistance(lat, lng, hLat, hLng);
-    }
-    // Order by DATE (soonest first), then by DISTANCE (nearest first).
-    int byDateThenDistance(_Happening a, _Happening b) {
-      final d = byDate(a, b);
-      return d != 0 ? d : distOf(a).compareTo(distOf(b));
+    // Order FIRST by city (the user's OWN city first, then other cities
+    // alphabetically), THEN by date (soonest first) within each city.
+    final myCity = (_city ?? '').trim().toLowerCase();
+    String cityKey(_Happening h) => (h.city ?? '').trim().toLowerCase();
+    int byCityThenDate(_Happening a, _Happening b) {
+      final ca = cityKey(a);
+      final cb = cityKey(b);
+      final aMine = myCity.isNotEmpty && ca == myCity;
+      final bMine = myCity.isNotEmpty && cb == myCity;
+      if (aMine != bMine) return aMine ? -1 : 1; // user's city on top
+      final byCityName = ca.compareTo(cb); // then alphabetical by city
+      if (byCityName != 0) return byCityName;
+      return byDate(a, b); // then soonest first
     }
 
     // "Happening soon" shows COMMUNITY events ONLY (never external experiences),
-    // close by (WITHIN 100km) and not yet ended, ordered by date then distance.
+    // close by (WITHIN 100km) and today-onwards (ongoing or future, never past),
+    // ordered by city then date.
     final chosen = _dedupeSeries(
-      community.where((e) => e.endDate.isAfter(now)).toList(),
+      community.where(_eventNotPast).toList(),
     )
         .map((e) => _Happening.community(e))
         .where((h) => _withinKm(h, 100)) // <= 100km
         .toList()
-      ..sort(byDateThenDistance);
+      ..sort(byCityThenDate);
 
     final rows = chosen
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
@@ -486,13 +484,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
   ///
   /// Empty (literally zero events, or on failure) → the carousel is hidden.
   Future<void> _loadFeaturedEvents() async {
-    final startOfToday = DateTime(
-        DateTime.now().year, DateTime.now().month, DateTime.now().day);
     // Ongoing or future only: drop community events that have already ended.
     // External experiences (community == null) carry no real event date → keep.
     bool notPast(_Happening h) {
       final e = h.community;
-      return e == null || !e.endDate.isBefore(startOfToday);
+      return e == null || _eventNotPast(e);
     }
 
     final picked = <_Happening>[];
@@ -650,8 +646,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// Tiers 1–3 stay within [kFeaturedRadiusKm] when a location is known; all
   /// tiers are de-duplicated by event id.
   Future<void> _loadLuxuryEvents() async {
-    final now = DateTime.now();
-    final startOfToday = DateTime(now.year, now.month, now.day);
     final picked = <_Happening>[];
     final seen = <String>{};
 
@@ -664,17 +658,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
-    // Featured shows ONLY ongoing or future events — never past ones. An event
-    // qualifies while it hasn't ENDED yet (endDate today or later), which keeps
-    // multi-day events that are currently ongoing and drops anything finished.
-    // Applied at the single addEvents choke point so EVERY tier below (nearby,
-    // wide upcoming, and the index-free `isLive` last resort) is covered — the
-    // fallback tiers previously added events without a date guard.
-    bool notPast(Event e) => !e.endDate.isBefore(startOfToday);
-
-    // Adapter so the existing native tiers keep adding community events.
+    // Featured shows ONLY ongoing or future events — never past ones. Applied at
+    // the single addEvents choke point so EVERY tier below (nearby, wide
+    // upcoming, and the index-free `isLive` last resort) is covered. Uses the
+    // startDate-based [_eventNotPast] (a defaulted endDate can't fake "current").
     void addEvents(Iterable<Event> items) =>
-        addAll(items.where(notPast).map((e) => _Happening.community(e)));
+        addAll(items.where(_eventNotPast).map((e) => _Happening.community(e)));
 
     final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
     final hasLocation = _userLat != null && _userLng != null;
@@ -690,8 +679,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
           limit: 40,
         );
         community = _dedupeSeries(events
-            // Ongoing or future only (never past) — see [notPast].
-            .where(notPast)
+            // Ongoing or future only (never past) — see [_eventNotPast].
+            .where(_eventNotPast)
             .where((e) => _withinFeaturedRadius(_Happening.community(e)))
             .toList());
       } catch (_) {
@@ -1040,6 +1029,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
       result = const <Profile>[];
     }
     if (mounted) setState(() => _businesses = result);
+  }
+
+  /// True when [event] is upcoming OR genuinely ongoing — i.e. NOT past. Used by
+  /// Featured and Happening-soon so neither ever surfaces a finished event.
+  ///
+  /// NOTE: [EventModel] defaults a MISSING/invalid `endDate` to `DateTime.now()`,
+  /// so a past event that only stored a `startDate` parses with `endDate == now`
+  /// and would wrongly look current. We therefore judge primarily on `startDate`
+  /// and only treat an event as ongoing when it has a REAL end (strictly after
+  /// its start) that is still in the future.
+  bool _eventNotPast(Event e) {
+    final now = DateTime.now();
+    final startOfToday = DateTime(now.year, now.month, now.day);
+    if (!e.startDate.isBefore(startOfToday)) return true; // today or later
+    return e.endDate.isAfter(e.startDate) && e.endDate.isAfter(now); // ongoing
   }
 
   /// True when [h] carries a usable picture. Attractions/experiences with no
