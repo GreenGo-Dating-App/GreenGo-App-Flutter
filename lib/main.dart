@@ -28,6 +28,7 @@ import 'core/providers/language_provider.dart';
 import 'core/services/access_control_service.dart';
 import 'core/services/app_sound_service.dart';
 import 'core/services/cache_service.dart';
+import 'core/services/data_preload_service.dart';
 import 'core/services/deep_link_service.dart';
 import 'core/services/feature_flags_service.dart';
 import 'core/services/push_notification_service.dart';
@@ -1083,6 +1084,11 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   /// otherwise returns MainNavigationScreen directly.
   Widget _buildMainOrSplash(String userId) {
     if (_showPostLoginSplash) {
+      // Prefetch the shared Firestore data (profile, conversations, inbox,
+      // events) DURING the splash animation so the first tab (Explore) opens
+      // against a warm cache. Idempotent (guarded by DataPreloadService._done),
+      // so the redundant call from MainNavigationScreen.initState is a no-op.
+      DataPreloadService.instance.warm(userId);
       return PostLoginSplashScreen(
         onComplete: () {
           if (mounted) {
