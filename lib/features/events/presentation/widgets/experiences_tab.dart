@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/session_cache_gate.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/external_events_data_source.dart';
@@ -60,7 +61,20 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
 
   /// Items downloaded so far, already in server order.
   final List<ExternalEvent> _items = [];
+  // Ids already shown — dedups pages across the cache paint and the server pager
+  // (they are DIFFERENT pager instances, so their internal `_seen` don't share).
+  final Set<String> _shownIds = {};
   ExternalEventsPager? _pager;
+
+  /// Append only items not already shown (cache + server dedup).
+  void _addUnique(Iterable<ExternalEvent> page) {
+    for (final e in page) {
+      if (_shownIds.add(e.id)) _items.add(e);
+    }
+  }
+
+  /// Session-gate key for this external source.
+  String get _cacheKey => 'ext_${widget.source}';
   bool _loadingMore = false;
   bool _firstLoadDone = false;
   int _gen = 0; // bumped per reload so stale pages can't append
@@ -110,6 +124,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     final gen = ++_gen;
     setState(() {
       _items.clear();
+      _shownIds.clear();
       _firstLoadDone = false;
     });
     if (widget.popular) {
@@ -117,7 +132,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
           await _ds.getPopularExperiences(source: widget.source, limit: 60);
       if (!mounted || gen != _gen) return;
       setState(() {
-        _items.addAll(list);
+        _addUnique(list);
         _firstLoadDone = true;
       });
       return;
@@ -131,12 +146,37 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
         _pager = warm.pager;
         if (!mounted || gen != _gen) return;
         setState(() {
-          _items.addAll(warm.items);
+          _addUnique(warm.items);
           _firstLoadDone = true;
         });
+        SessionCacheGate.markWarm(_cacheKey);
         return;
       }
     }
+    // Cache-first paint ONLY on a warm session (network-first on a fresh app
+    // open, per SessionCacheGate): load one cache page for an instant first
+    // frame, then reconcile below with the server pager.
+    if (SessionCacheGate.isWarm(_cacheKey)) {
+      final cachePager = ExternalEventsPager(
+        source: widget.source,
+        sort: widget.sort,
+        category: widget.category,
+        userLat: widget.userLat,
+        userLng: widget.userLng,
+        preferCache: true,
+      );
+      try {
+        final page = await cachePager.next();
+        if (mounted && gen == _gen && page.isNotEmpty) {
+          setState(() {
+            _addUnique(page);
+            _firstLoadDone = true;
+          });
+        }
+      } catch (_) {/* cold/partial cache — ignore, server pass fills it */}
+      if (!mounted || gen != _gen) return;
+    }
+
     _pager = ExternalEventsPager(
       source: widget.source,
       sort: widget.sort,
@@ -145,6 +185,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       userLng: widget.userLng,
     );
     await _loadMore(gen: gen, first: true);
+    SessionCacheGate.markWarm(_cacheKey);
   }
 
   Future<void> _loadMore({int? gen, bool first = false}) async {
@@ -159,7 +200,7 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       return;
     }
     setState(() {
-      _items.addAll(page);
+      _addUnique(page);
       _firstLoadDone = true;
       _loadingMore = false;
     });
