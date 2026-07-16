@@ -510,55 +510,10 @@ export const seedMockData = onRequest(
       await cmBatch.commit();
     }
 
-    // ── ~120 LIVE events (external_events, source ticketmaster) near base ──
-    // Feeds the Events → "Live Events" tab. Spread within ~25km of the base and
-    // dated over the next 60 days so the today-onward + 100km filters keep them.
-    const tmCats = [
-      'Music', 'Sports', 'Arts & Theatre', 'Film', 'Comedy', 'Family',
-    ];
-    const tmNames = [
-      'Live Concert', 'Basketball Night', 'Broadway Show', 'Film Premiere',
-      'Stand-up Comedy', 'Family Fun Day', 'Jazz Evening', 'Rock Festival',
-      'Art Expo', 'Theatre Gala', 'Indie Night', 'Symphony Orchestra',
-    ];
-    const ymd = (d: Date): string =>
-      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-` +
-      `${String(d.getDate()).padStart(2, '0')}`;
-    const tmCount = 120;
-    let tmBatch = db.batch();
-    for (let i = 0; i < tmCount; i++) {
-      const id = `mock_tm_${i + 1}`;
-      // Deterministic spread within ~±0.25deg (~25km) of the base.
-      const dlat = baseLat + (((i % 11) - 5) * 0.05);
-      const dlng = baseLng + ((((i / 11) | 0) % 11) - 5) * 0.05;
-      const start = new Date(now.getTime() + (1 + (i % 60)) * 24 * 3600 * 1000);
-      tmBatch.set(db.collection('external_events').doc(id), {
-        source: 'ticketmaster',
-        externalId: id,
-        title: `${tmNames[i % tmNames.length]} #${i + 1}`,
-        description: `${tmNames[i % tmNames.length]} in ${city}. (test live event)`,
-        imageUrl: `https://picsum.photos/seed/${id}/900/600`,
-        category: tmCats[i % tmCats.length],
-        city,
-        country,
-        lat: dlat,
-        lng: dlng,
-        geohash: geohashEncode(dlat, dlng),
-        fromPrice: 20 + (i % 8) * 10,
-        currency: 'USD',
-        rating: 0,
-        reviewCount: 0,
-        startDate: ymd(start),
-        bookingUrl: 'https://www.ticketmaster.com',
-        fetchedAt: ts(now),
-        ...mock,
-      });
-      if ((i + 1) % 400 === 0) {
-        await tmBatch.commit();
-        tmBatch = db.batch();
-      }
-    }
-    await tmBatch.commit();
+    // NOTE: we intentionally do NOT seed mock LIVE events (external_events /
+    // ticketmaster). That collection is populated by the real ingester; the
+    // "Live Events" tab shows real data. (The 100km display filter was removed
+    // because that feed is geographically sparse — see experiences_tab.dart.)
 
     res.status(200).json({
       batchId,
@@ -568,8 +523,95 @@ export const seedMockData = onRequest(
       conversations: chatPairs.length,
       groups: groupDefs.length,
       communityPosts: comms.length * 6,
-      liveEvents: tmCount,
       location: { city, country, baseLat, baseLng },
+    });
+  }),
+);
+
+/// READ-ONLY diagnostic — inspects the REAL ticketmaster external_events so we
+/// can see which client filter (date / distance / coords) hides them.
+/// ?token=...&lat=&lng=  (lat/lng default to Los Angeles)
+export const diagLiveEvents = onRequest(
+  { memory: '512MiB', timeoutSeconds: 120 },
+  monitored('diagLiveEvents', async (req, res) => {
+    if (req.query.token !== MOCK_TOKEN) {
+      res.status(403).send('forbidden');
+      return;
+    }
+    const lat = parseFloat((req.query.lat as string) || '34.0522');
+    const lng = parseFloat((req.query.lng as string) || '-118.2437');
+    const source = (req.query.source as string) || 'ticketmaster';
+    const now = new Date();
+    const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    const iso = /^\d{4}-\d{2}-\d{2}$/;
+    const km = (a: number, b: number, c: number, d: number): number => {
+      const R = 6371;
+      const dLat = ((c - a) * Math.PI) / 180;
+      const dLng = ((d - b) * Math.PI) / 180;
+      const s =
+        Math.sin(dLat / 2) ** 2 +
+        Math.cos((a * Math.PI) / 180) *
+          Math.cos((c * Math.PI) / 180) *
+          Math.sin(dLng / 2) ** 2;
+      return R * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1 - s));
+    };
+
+    const snap = await db
+      .collection('external_events')
+      .where('source', '==', source)
+      .limit(500)
+      .get();
+    let withDate = 0;
+    let validIso = 0;
+    let futureDated = 0;
+    let withCoords = 0;
+    let within100km = 0;
+    let futureAnd100km = 0;
+    const cities: Record<string, number> = {};
+    const samples: unknown[] = [];
+    for (const d of snap.docs) {
+      const x = d.data();
+      const sd = x.startDate as string | null | undefined;
+      const hasDate = sd != null && sd !== '';
+      const validDate = hasDate && iso.test(sd as string);
+      const future = validDate && (sd as string) >= todayStr;
+      const hasCoords = typeof x.lat === 'number' && typeof x.lng === 'number';
+      const near = hasCoords && km(lat, lng, x.lat, x.lng) <= 100;
+      if (hasDate) withDate++;
+      if (validDate) validIso++;
+      if (future) futureDated++;
+      if (hasCoords) withCoords++;
+      if (near) within100km++;
+      if (future && near) futureAnd100km++;
+      const city = (x.city as string) || '(none)';
+      cities[city] = (cities[city] || 0) + 1;
+      if (samples.length < 8) {
+        samples.push({
+          id: d.id,
+          startDate: sd ?? null,
+          lat: x.lat ?? null,
+          lng: x.lng ?? null,
+          city: x.city ?? null,
+          distKm: hasCoords ? Math.round(km(lat, lng, x.lat, x.lng)) : null,
+        });
+      }
+    }
+    res.status(200).json({
+      source,
+      today: todayStr,
+      near: { lat, lng },
+      total: snap.size,
+      withDate,
+      validIso,
+      futureDated,
+      pastOrUndated: snap.size - futureDated,
+      withCoords,
+      within100km,
+      futureAnd100km,
+      topCities: Object.entries(cities)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10),
+      samples,
     });
   }),
 );
