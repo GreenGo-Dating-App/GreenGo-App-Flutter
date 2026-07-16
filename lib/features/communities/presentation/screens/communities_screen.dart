@@ -44,6 +44,12 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   String _searchQuery = '';
   String _managedSearchQuery = '';
   String? _currentUserId;
+  // Last good list state. Opening a community detail makes the SHARED bloc emit
+  // CommunityDetailLoaded (which carries none of the Discover/Joined/My lists),
+  // and on pop-back that's still the current state — which blanked all tabs.
+  // We remember the last CommunitiesLoaded and render from it whenever the live
+  // state isn't a list state, so the tabs never go empty.
+  CommunitiesLoaded? _lastLoaded;
 
   @override
   void initState() {
@@ -208,12 +214,18 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             curr is CommunityLeft,
         listener: (context, state) => _reloadLists(),
         builder: (context, state) {
+          // Remember the last populated list state; fall back to it when the
+          // live state is a non-list state (e.g. CommunityDetailLoaded after
+          // opening/returning from a community) so the tabs never blank.
+          if (state is CommunitiesLoaded) _lastLoaded = state;
+          final effective =
+              state is CommunitiesLoaded ? state : (_lastLoaded ?? state);
           return TabBarView(
             controller: _tabController,
             children: [
-              _buildMyGroupsTab(state),
-              _buildDiscoverTab(state),
-              _buildManagedTab(state),
+              _buildMyGroupsTab(effective),
+              _buildDiscoverTab(effective),
+              _buildManagedTab(effective),
             ],
           );
         },
@@ -816,14 +828,14 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     );
   }
 
-  void _navigateToCommunityDetail(Community community) {
+  Future<void> _navigateToCommunityDetail(Community community) async {
     // Interaction logging (fire-and-forget, never throws): a community tap feeds
     // the recommendation signal.
     final uid = _currentUserId;
     if (uid != null) {
       di.sl<InteractionLogService>().logCommunityView(uid, community.id);
     }
-    Navigator.of(context).push(
+    await Navigator.of(context).push(
       MaterialPageRoute(
         // Forward BOTH blocs: CommunityDetailScreen reads ProfileBloc in its
         // initState, and ProfileBloc lives below the root Navigator (in the
@@ -837,6 +849,10 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         ),
       ),
     );
+    // The detail screen left the SHARED bloc in CommunityDetailLoaded; reload the
+    // lists so the Discover/Joined/Managed tabs repopulate (and reflect any
+    // join/leave done inside).
+    if (mounted) _reloadLists();
   }
 
   Future<void> _navigateToCreateCommunity({CommunityType? preselectedType}) async {
