@@ -18,6 +18,7 @@ class ExternalEventsPager {
     this.category,
     this.userLat,
     this.userLng,
+    this.preferCache = false,
     FirebaseFirestore? firestore,
   }) : _db = firestore ?? FirebaseFirestore.instance;
 
@@ -27,6 +28,14 @@ class ExternalEventsPager {
   final String? category;
   final double? userLat;
   final double? userLng;
+
+  /// When true, reads come from the LOCAL cache only (instant paint on a warm
+  /// session); a cold cache yields empty pages. See SessionCacheGate.
+  final bool preferCache;
+
+  GetOptions get _getOpts => GetOptions(
+        source: preferCache ? Source.cache : Source.serverAndCache,
+      );
 
   static const int pageSize = 24;
 
@@ -116,7 +125,7 @@ class ExternalEventsPager {
         // like "1" (they sort before today). No new index — same orderBy field.
         q = q.startAt([_todayStr]);
       }
-      final snap = await q.get();
+      final snap = await q.get(_getOpts);
       if (snap.docs.isEmpty) {
         _fieldDone = true;
         break;
@@ -140,7 +149,7 @@ class ExternalEventsPager {
       final snaps = await Future.wait(bounds.map((b) {
         return _base
             .orderBy('geohash')
-            .startAt([b[0]]).endAt([b[1]]).get();
+            .startAt([b[0]]).endAt([b[1]]).get(_getOpts);
       }));
       final ring = <ExternalEvent>[];
       for (final s in snaps) {
