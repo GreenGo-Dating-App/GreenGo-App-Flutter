@@ -433,56 +433,69 @@ class _ExploreScreenState extends State<ExploreScreen> {
         community = const <Event>[];
       }
     }
-    final communitySoon = _dedupeSeries(
-      community.where((e) => e.endDate.isAfter(now)).toList(),
-    );
-    final communityItems =
-        communitySoon.map((e) => _Happening.community(e)).toList();
-    final communityTitles =
-        communitySoon.map((e) => e.title.toLowerCase().trim()).toSet();
-
-    // 2) LIVE EVENTS OF THE DAY — Ticketmaster external events dated today that
-    //    are NOT already present as a community event (by title).
-    List<ExternalEvent> live = const <ExternalEvent>[];
-    final ds = ExternalEventsDataSource(firestore: _firestore);
-    try {
-      if (_userLat != null && _userLng != null) {
-        live = await ds.getNearbyExperiences(
-          source: 'ticketmaster',
-          userLat: _userLat!,
-          userLng: _userLng!,
-          limit: 60,
-        );
-      } else {
-        live =
-            await ds.getExperiencesSorted(source: 'ticketmaster', sort: 'date');
-      }
-    } catch (_) {
-      live = const <ExternalEvent>[];
-    }
     final isoDate = RegExp(r'^\d{4}-\d{2}-\d{2}$');
-    final liveUpcoming = live
-        // Only well-formed, today-onward dates (never a junk date like "1").
-        .where((e) =>
-            e.startDate != null &&
-            isoDate.hasMatch(e.startDate!) &&
-            e.startDate!.compareTo(todayStr) >= 0)
-        .where((e) => !communityTitles.contains(e.title.toLowerCase().trim()))
-        .map((e) => _Happening.external(e))
-        .where(_hasImage)
-        .toList();
+    int byDate(_Happening a, _Happening b) {
+      final da = a.date;
+      final db = b.date;
+      if (da == null && db == null) return 0;
+      if (da == null) return 1;
+      if (db == null) return -1;
+      return da.compareTo(db);
+    }
 
-    // "Happening soon": community + live upcoming, ORDERED BY DATE (soonest
-    // first), first 20, excluding anything already shown in Featured.
-    final rows = ([...communityItems, ...liveUpcoming]
-          ..sort((a, b) {
-            final da = a.date;
-            final db = b.date;
-            if (da == null && db == null) return 0;
-            if (da == null) return 1;
-            if (db == null) return -1;
-            return da.compareTo(db);
-          }))
+    // Community events happening soon, WITHIN 50km, ordered by date.
+    final communityItems = _dedupeSeries(
+      community.where((e) => e.endDate.isAfter(now)).toList(),
+    )
+        .map((e) => _Happening.community(e))
+        .where(_withinFeaturedRadius) // <= kFeaturedRadiusKm (50km)
+        .toList()
+      ..sort(byDate);
+    final communityTitles =
+        communityItems.map((h) => (h.title ?? '').toLowerCase().trim()).toSet();
+
+    // "Happening soon" is COMMUNITY-ONLY when any community event exists. Only
+    // if there are NONE do we fall back to nearby LIVE events (<=50km AND within
+    // the next week), ordered by date.
+    List<_Happening> chosen;
+    if (communityItems.isNotEmpty) {
+      chosen = communityItems;
+    } else {
+      final weekStr =
+          DateFormat('yyyy-MM-dd').format(now.add(const Duration(days: 7)));
+      List<ExternalEvent> live = const <ExternalEvent>[];
+      final ds = ExternalEventsDataSource(firestore: _firestore);
+      try {
+        if (_userLat != null && _userLng != null) {
+          live = await ds.getNearbyExperiences(
+            source: 'ticketmaster',
+            userLat: _userLat!,
+            userLng: _userLng!,
+            limit: 60,
+          );
+        } else {
+          live = await ds.getExperiencesSorted(
+              source: 'ticketmaster', sort: 'date');
+        }
+      } catch (_) {
+        live = const <ExternalEvent>[];
+      }
+      chosen = live
+          // Well-formed date, today..+7 days only (never junk like "1").
+          .where((e) =>
+              e.startDate != null &&
+              isoDate.hasMatch(e.startDate!) &&
+              e.startDate!.compareTo(todayStr) >= 0 &&
+              e.startDate!.compareTo(weekStr) <= 0)
+          .where((e) => !communityTitles.contains(e.title.toLowerCase().trim()))
+          .map((e) => _Happening.external(e))
+          .where(_hasImage)
+          .where(_withinFeaturedRadius) // <=50km
+          .toList()
+        ..sort(byDate);
+    }
+
+    final rows = chosen
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
         .take(20)
         .toList();
@@ -975,6 +988,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
         // Featured or Happening-today carousels (no repeats across Explore).
         events = events
             .where((e) => e.isLive && !_usedEventKeys.contains(e.id))
+            // Within 50km of the user (see kFeaturedRadiusKm).
+            .where((e) => _withinFeaturedRadius(_Happening.community(e)))
             .toList()
           // Order by date, earliest first (the datasource returns nearest-first).
           ..sort((a, b) => a.startDate.compareTo(b.startDate));
@@ -1307,8 +1322,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               ),
               _happeningSection(context, l10n, reduceMotion),
 
-              _categoryDivider(),
-
               // ── PEOPLE ────────────────────────────────────────────────────
               // Discover (around you) → Recommended → speaks {language}.
               _peopleSection(
@@ -1334,8 +1347,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 title: l10n.exploreSpeaksLanguage(_sameLanguageName ?? ''),
                 people: _sameLanguage,
               ),
-
-              _categoryDivider(),
 
               // ── BUSINESSES & COMMUNITIES TO JOIN ──────────────────────────
               _businessesSection(context, l10n, reduceMotion),
@@ -1905,19 +1916,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
     );
   }
-
-  /// A thin divider between Explore category groups. Kept compact so the feed
-  /// scrolls homogeneously (the following section supplies its own top spacing).
-  Widget _categoryDivider() => const SliverToBoxAdapter(
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 2, 20, 2),
-          child: Divider(
-            color: AppColors.divider,
-            thickness: 1,
-            height: 1,
-          ),
-        ),
-      );
 
   Widget _sectionHeader(
     BuildContext context,
