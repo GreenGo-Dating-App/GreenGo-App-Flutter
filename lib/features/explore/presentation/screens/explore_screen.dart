@@ -1352,8 +1352,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               ),
               _communitiesSection(context, l10n, reduceMotion),
 
-              _categoryDivider(),
-
               // ── COMMUNITY EVENTS NEAR YOU ─────────────────────────────────
               _communityEventsSection(context, l10n, reduceMotion),
 
@@ -1908,15 +1906,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
     );
   }
 
-  /// A thin divider between Explore category groups (events / people /
-  /// businesses+communities / community-events).
+  /// A thin divider between Explore category groups. Kept compact so the feed
+  /// scrolls homogeneously (the following section supplies its own top spacing).
   Widget _categoryDivider() => const SliverToBoxAdapter(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+          padding: EdgeInsets.fromLTRB(20, 2, 20, 2),
           child: Divider(
             color: AppColors.divider,
             thickness: 1,
-            height: 28,
+            height: 1,
           ),
         ),
       );

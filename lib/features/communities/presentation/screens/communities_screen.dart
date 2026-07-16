@@ -62,14 +62,23 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   /// race that was resetting managedCommunities back to empty.
   void _onTabChanged() {
     if (_tabController.indexIsChanging) return;
-    if (_tabController.index == 2 && !_managedLoaded) {
-      final userId = _currentUserId;
-      if (userId != null) {
-        _managedLoaded = true;
-        context.read<CommunitiesBloc>().add(
-              LoadManagedCommunities(userId: userId),
-            );
+    final userId = _currentUserId;
+    if (userId == null) return;
+    // Discover (1): guarantee the public list is loaded when the tab is opened
+    // (it's also prefetched at init so it's usually already there).
+    if (_tabController.index == 1) {
+      final s = context.read<CommunitiesBloc>().state;
+      final hasDiscover = s is CommunitiesLoaded && s.communities.isNotEmpty;
+      if (!hasDiscover) {
+        context.read<CommunitiesBloc>().add(const LoadCommunities());
       }
+    }
+    // My communities (2): lazy-load the created list on first open.
+    if (_tabController.index == 2 && !_managedLoaded) {
+      _managedLoaded = true;
+      context.read<CommunitiesBloc>().add(
+            LoadManagedCommunities(userId: userId),
+          );
     }
   }
 
@@ -99,8 +108,12 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     context.read<CommunitiesBloc>().add(
           LoadUserCommunities(userId: userId),
         );
-    // NOTE: "My communities" (created) is loaded lazily when its tab is opened
-    // (see _onTabChanged) so it can't be clobbered by the concurrent init loads.
+    // Prefetch "My communities" (created) IN ADVANCE so the tab is seamless.
+    // Safe now that every emission preserves managedCommunities/managedLoaded.
+    _managedLoaded = true;
+    context.read<CommunitiesBloc>().add(
+          LoadManagedCommunities(userId: userId),
+        );
 
     // Load all communities for discover tab
     context.read<CommunitiesBloc>().add(
@@ -302,6 +315,14 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
               .toList();
     }
 
+    // Still fetching the created-communities list → show a loader (prefetched at
+    // init, so this is usually brief) rather than a premature "empty" state.
+    if (state is CommunitiesLoaded && !state.managedLoaded && managed.isEmpty) {
+      return const Center(
+        child: CircularProgressIndicator(color: AppColors.richGold),
+      );
+    }
+
     if (managed.isEmpty) {
       return _buildEmptyState(
         icon: Icons.workspace_premium_outlined,
@@ -435,6 +456,24 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           .where((c) => !joinedIds.contains(c.id))
           .toList();
       isLoadingMore = state.isLoadingMore;
+
+      // Endless scroll robustness: if the list underfills the viewport (few
+      // items after excluding joined) but more pages exist, fetch the next page
+      // after this frame so the list keeps growing without needing a scroll.
+      if (state.hasMoreCommunities && !state.isLoadingMore) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (!mounted) return;
+          if (_discoverScrollController.hasClients &&
+              _discoverScrollController.position.maxScrollExtent < 200) {
+            context.read<CommunitiesBloc>().add(
+                  LoadMoreCommunities(
+                    type: _selectedFilter,
+                    searchQuery: _searchQuery.isEmpty ? null : _searchQuery,
+                  ),
+                );
+          }
+        });
+      }
     }
 
     return CustomScrollView(

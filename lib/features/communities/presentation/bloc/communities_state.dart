@@ -29,6 +29,7 @@ class CommunitiesLoaded extends CommunitiesState {
     this.isLoadingMore = false,
     this.communitiesCursor,
     this.managedCommunities = const [],
+    this.managedLoaded = false,
   });
   final List<Community> communities;
   final List<Community> userCommunities;
@@ -38,6 +39,10 @@ class CommunitiesLoaded extends CommunitiesState {
   /// Communities the user CREATED (the "My communities" tab). Loaded via a
   /// direct createdByUserId query, so it's independent of member docs.
   final List<Community> managedCommunities;
+
+  /// Whether the "My communities" query has completed at least once — drives a
+  /// loader (vs the empty state) on the Managed tab.
+  final bool managedLoaded;
 
   /// Discover pagination: whether another page of public communities may exist
   /// (false once the last fetch returned fewer than the page size).
@@ -61,6 +66,7 @@ class CommunitiesLoaded extends CommunitiesState {
     bool? isLoadingMore,
     DateTime? communitiesCursor,
     List<Community>? managedCommunities,
+    bool? managedLoaded,
   }) {
     return CommunitiesLoaded(
       communities: communities ?? this.communities,
@@ -71,6 +77,7 @@ class CommunitiesLoaded extends CommunitiesState {
       isLoadingMore: isLoadingMore ?? this.isLoadingMore,
       communitiesCursor: communitiesCursor ?? this.communitiesCursor,
       managedCommunities: managedCommunities ?? this.managedCommunities,
+      managedLoaded: managedLoaded ?? this.managedLoaded,
     );
   }
 }
