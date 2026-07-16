@@ -24,6 +24,7 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
     String? searchQuery,
     DateTime? startAfterActivity,
     int limit = 50,
+    bool preferCache = false,
   }) async {
     try {
       final communities = await remoteDataSource.getCommunities(
@@ -33,6 +34,7 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
         searchQuery: searchQuery,
         startAfterActivity: startAfterActivity,
         limit: limit,
+        preferCache: preferCache,
       );
       return Right(communities.map((c) => c.toEntity()).toList());
     } catch (e) {
@@ -172,10 +174,12 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
 
   @override
   Future<Either<Failure, List<Community>>> getUserCommunities(
-    String userId,
-  ) async {
+    String userId, {
+    bool preferCache = false,
+  }) async {
     try {
-      final communities = await remoteDataSource.getUserCommunities(userId);
+      final communities = await remoteDataSource.getUserCommunities(userId,
+          preferCache: preferCache);
       return Right(communities.map((c) => c.toEntity()).toList());
     } catch (e) {
       return Left(ServerFailure(e.toString()));
@@ -289,11 +293,12 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
 
   @override
   Future<Either<Failure, List<Community>>> getCreatedCommunities(
-    String userId,
-  ) async {
+    String userId, {
+    bool preferCache = false,
+  }) async {
     try {
-      final communities =
-          await remoteDataSource.getCreatedCommunities(userId);
+      final communities = await remoteDataSource.getCreatedCommunities(userId,
+          preferCache: preferCache);
       return Right(communities.map((c) => c.toEntity()).toList());
     } catch (e) {
       return Left(ServerFailure(e.toString()));

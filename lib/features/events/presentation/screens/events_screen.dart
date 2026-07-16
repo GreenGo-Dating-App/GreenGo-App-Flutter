@@ -1953,6 +1953,8 @@ class EventDetailsScreen extends StatelessWidget {
                         event: event,
                         currentUserId: currentUserId,
                         currentUserName: name,
+                        viewerLanguage:
+                            Localizations.localeOf(context).languageCode,
                       ),
                     ),
                   );
@@ -2133,6 +2135,8 @@ class EventDetailsScreen extends StatelessWidget {
                             event: event,
                             currentUserId: currentUserId,
                             currentUserName: 'User',
+                            viewerLanguage:
+                                Localizations.localeOf(context).languageCode,
                           ),
                         ),
                       );

@@ -97,6 +97,21 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       emit(const CommunitiesLoading());
     }
 
+    // CACHE-THEN-NETWORK: paint instantly from the local cache, then reconcile
+    // with the server. The cache pass is best-effort (a cold cache throws/empty
+    // → ignored). Both passes merge via copyWith so nothing else is clobbered.
+    final cached = await _repository.getCommunities(
+      type: event.type,
+      language: event.language,
+      city: event.city,
+      searchQuery: event.searchQuery,
+      limit: _communitiesPageSize,
+      preferCache: true,
+    );
+    cached.fold((_) {}, (list) {
+      if (list.isNotEmpty) _emitDiscover(list, emit);
+    });
+
     final result = await _repository.getCommunities(
       type: event.type,
       language: event.language,
@@ -115,25 +130,25 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           emit(CommunitiesError(message: failure.message));
         }
       },
-      (communities) {
-        // Discover shows up to 50 public communities in RANDOM order; the
-        // keyset cursor is taken from the true-oldest item so endless scroll
-        // still works despite the shuffled display order.
-        final display = _shuffled(communities);
-        final languageCircles = display
-            .where((c) => c.type == CommunityType.languageCircle)
-            .toList();
-        final cur = state;
-        final base = cur is CommunitiesLoaded ? cur : const CommunitiesLoaded();
-        emit(base.copyWith(
-          communities: display,
-          languageCircles: languageCircles,
-          hasMoreCommunities: communities.length >= _communitiesPageSize,
-          isLoadingMore: false,
-          communitiesCursor: _oldestActivity(communities),
-        ));
-      },
+      (communities) => _emitDiscover(communities, emit),
     );
+  }
+
+  /// Emit a Discover page (random order, keyset cursor) merged onto current
+  /// state. Shared by the cache and server passes of _onLoadCommunities.
+  void _emitDiscover(List<Community> communities, Emitter<CommunitiesState> emit) {
+    final display = _shuffled(communities);
+    final languageCircles =
+        display.where((c) => c.type == CommunityType.languageCircle).toList();
+    final cur = state;
+    final base = cur is CommunitiesLoaded ? cur : const CommunitiesLoaded();
+    emit(base.copyWith(
+      communities: display,
+      languageCircles: languageCircles,
+      hasMoreCommunities: communities.length >= _communitiesPageSize,
+      isLoadingMore: false,
+      communitiesCursor: _oldestActivity(communities),
+    ));
   }
 
   /// Endless scroll: fetch the NEXT page of public communities and APPEND it to
@@ -212,6 +227,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       emit(const CommunitiesLoading());
     }
 
+    // Cache-then-network: instant cache paint, then server reconcile.
+    final cached =
+        await _repository.getUserCommunities(event.userId, preferCache: true);
+    cached.fold((_) {}, (list) {
+      if (list.isNotEmpty) {
+        final c = state;
+        final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
+        emit(b.copyWith(userCommunities: list));
+      }
+    });
+
     final result = await _repository.getUserCommunities(event.userId);
 
     // Merge onto the CURRENT state so a concurrent load can't be clobbered.
@@ -233,6 +259,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     LoadManagedCommunities event,
     Emitter<CommunitiesState> emit,
   ) async {
+    // Cache-then-network: instant cache paint, then server reconcile.
+    final cached =
+        await _repository.getCreatedCommunities(event.userId, preferCache: true);
+    cached.fold((_) {}, (list) {
+      if (list.isNotEmpty) {
+        final c = state;
+        final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
+        emit(b.copyWith(managedCommunities: list, managedLoaded: true));
+      }
+    });
+
     final result = await _repository.getCreatedCommunities(event.userId);
 
     result.fold(

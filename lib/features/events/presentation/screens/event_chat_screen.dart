@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/content_filter_service.dart';
+import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/data/chat_constants.dart';
@@ -18,11 +19,16 @@ class EventChatScreen extends StatefulWidget {
   const EventChatScreen({
     required this.event, required this.currentUserId, required this.currentUserName, super.key,
     this.currentUserPhotoUrl,
+    this.viewerLanguage = 'en',
   });
   final Event event;
   final String currentUserId;
   final String currentUserName;
   final String? currentUserPhotoUrl;
+
+  /// The viewer's preferred language — messages offer an on-demand "Translate"
+  /// action into it (same as community chat/tips/announcements).
+  final String viewerLanguage;
 
   @override
   State<EventChatScreen> createState() => _EventChatScreenState();
@@ -244,8 +250,11 @@ class _EventChatScreenState extends State<EventChatScreen> {
                 ],
               ),
               const SizedBox(height: 6),
-              Text(message.text,
-                  style: const TextStyle(color: AppColors.textPrimary)),
+              _TranslatableEventText(
+                text: message.text,
+                targetLang: widget.viewerLanguage,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
             ],
           ),
         ),
@@ -312,8 +321,9 @@ class _EventChatScreenState extends State<EventChatScreen> {
                         ),
                       ),
                     ),
-                  Text(
-                    message.text,
+                  _TranslatableEventText(
+                    text: message.text,
+                    targetLang: widget.viewerLanguage,
                     style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 14,
@@ -479,5 +489,89 @@ class _EventChatScreenState extends State<EventChatScreen> {
       return '${timestamp.day}/${timestamp.month} ${timestamp.hour.toString().padLeft(2, '0')}:${timestamp.minute.toString().padLeft(2, '0')}';
     }
     return '${timestamp.hour.toString().padLeft(2, '0')}:${timestamp.minute.toString().padLeft(2, '0')}';
+  }
+}
+
+/// Message text with an on-demand "Translate / Show original" action into the
+/// viewer's language — same behaviour as community chat/tips/announcements
+/// (uses the shared on-device TranslationService, per-viewer, no schema change).
+class _TranslatableEventText extends StatefulWidget {
+  const _TranslatableEventText({
+    required this.text,
+    required this.targetLang,
+    required this.style,
+  });
+
+  final String text;
+  final String targetLang;
+  final TextStyle style;
+
+  @override
+  State<_TranslatableEventText> createState() => _TranslatableEventTextState();
+}
+
+class _TranslatableEventTextState extends State<_TranslatableEventText> {
+  String? _translated;
+  bool _translating = false;
+  bool _showingTranslation = false;
+
+  String get _display =>
+      _showingTranslation && _translated != null ? _translated! : widget.text;
+
+  Future<void> _toggle() async {
+    if (_translated != null) {
+      setState(() => _showingTranslation = !_showingTranslation);
+      return;
+    }
+    setState(() => _translating = true);
+    try {
+      final result = await TranslationService().translate(
+        text: widget.text,
+        sourceLanguage: 'auto',
+        targetLanguage: widget.targetLang.replaceAll('_', '-'),
+      );
+      if (!mounted) return;
+      setState(() {
+        _translated = result;
+        _showingTranslation = true;
+      });
+    } catch (_) {
+      // Best-effort — leave the original on failure.
+    } finally {
+      if (mounted) setState(() => _translating = false);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    // Nothing to translate (empty or already in the target language after a try).
+    final label = _translating
+        ? l10n.communitiesTranslating
+        : (_showingTranslation
+            ? l10n.communitiesShowOriginal
+            : l10n.communitiesTranslate);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(_display, style: widget.style),
+        if (widget.text.trim().isNotEmpty)
+          GestureDetector(
+            onTap: _translating ? null : _toggle,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: Text(
+                label,
+                style: const TextStyle(
+                  color: AppColors.richGold,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ),
+      ],
+    );
   }
 }

@@ -23,6 +23,7 @@ abstract class CommunitiesRemoteDataSource {
     String? searchQuery,
     DateTime? startAfterActivity,
     int limit = 50,
+    bool preferCache = false,
   });
 
   /// Get a community by ID
@@ -65,7 +66,8 @@ abstract class CommunitiesRemoteDataSource {
   });
 
   /// Get communities the user has joined
-  Future<List<CommunityModel>> getUserCommunities(String userId);
+  Future<List<CommunityModel>> getUserCommunities(String userId,
+      {bool preferCache = false});
 
   /// Get recommended communities based on user preferences
   Future<List<CommunityModel>> getRecommendedCommunities({
@@ -109,7 +111,8 @@ abstract class CommunitiesRemoteDataSource {
   /// Communities the user CREATED — queried directly by `createdByUserId`, so
   /// it does NOT depend on the creator having a `members/{uid}` doc (which
   /// legacy communities can lack). Backs the "My communities" tab.
-  Future<List<CommunityModel>> getCreatedCommunities(String userId);
+  Future<List<CommunityModel>> getCreatedCommunities(String userId,
+      {bool preferCache = false});
 
   /// Create a pending join request for a PRIVATE community.
   Future<void> requestToJoin({
@@ -159,6 +162,13 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   CollectionReference _joinRequestsRef(String communityId) =>
       _communitiesRef.doc(communityId).collection('join_requests');
 
+  /// Cache-then-network read options: a `preferCache` pass reads ONLY the local
+  /// cache (instant first paint, may throw/empty on a cold cache — callers do a
+  /// server pass afterwards to reconcile).
+  GetOptions _opts(bool preferCache) => GetOptions(
+        source: preferCache ? Source.cache : Source.serverAndCache,
+      );
+
   @override
   Future<List<CommunityModel>> getCommunities({
     CommunityType? type,
@@ -167,6 +177,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     String? searchQuery,
     DateTime? startAfterActivity,
     int limit = 50,
+    bool preferCache = false,
   }) async {
     try {
       var query = _communitiesRef.where('isPublic', isEqualTo: true);
@@ -199,8 +210,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       // in-memory narrowing still yields a full-looking list.
       final needsClientFilter =
           (hasType && (hasLang || hasCity)) || (hasLang && hasCity);
-      final snapshot =
-          await query.limit(needsClientFilter ? limit * 3 : limit).get();
+      final snapshot = await query
+          .limit(needsClientFilter ? limit * 3 : limit)
+          .get(_opts(preferCache));
 
       var communities = snapshot.docs
           .map(CommunityModel.fromFirestore)
@@ -503,14 +515,15 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   }
 
   @override
-  Future<List<CommunityModel>> getUserCommunities(String userId) async {
+  Future<List<CommunityModel>> getUserCommunities(String userId,
+      {bool preferCache = false}) async {
     try {
       // Query all communities where user is a member
       // We use collectionGroup to find user across all member subcollections
       final memberDocs = await _firestore
           .collectionGroup('members')
           .where('userId', isEqualTo: userId)
-          .get();
+          .get(_opts(preferCache));
 
       final communityIds = memberDocs.docs
           .map((doc) => doc.reference.parent.parent?.id)
@@ -530,7 +543,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
         final snapshot = await _communitiesRef
             .where(FieldPath.documentId, whereIn: batchIds)
-            .get();
+            .get(_opts(preferCache));
 
         communities.addAll(
           snapshot.docs.map(CommunityModel.fromFirestore),
@@ -721,12 +734,13 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   }
 
   @override
-  Future<List<CommunityModel>> getCreatedCommunities(String userId) async {
+  Future<List<CommunityModel>> getCreatedCommunities(String userId,
+      {bool preferCache = false}) async {
     try {
       // Direct query on the community doc — independent of member docs.
       final snap = await _communitiesRef
           .where('createdByUserId', isEqualTo: userId)
-          .get();
+          .get(_opts(preferCache));
       final communities = snap.docs.map(CommunityModel.fromFirestore).toList()
         ..sort((a, b) {
           final at = a.lastActivityAt ?? a.createdAt;
