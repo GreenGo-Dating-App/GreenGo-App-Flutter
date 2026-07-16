@@ -79,6 +79,10 @@ class _BusinessRatingBarState extends State<BusinessRatingBar> {
       builder: (context, snap) {
         final mine = snap.data ?? 0;
 
+        // Once the viewer has rated, the "Rate this business" control
+        // disappears (the average is still shown by BusinessRatingSummary).
+        if (mine > 0) return const SizedBox.shrink();
+
         return Container(
           padding: const EdgeInsets.symmetric(
             horizontal: AppDimensions.paddingM,
