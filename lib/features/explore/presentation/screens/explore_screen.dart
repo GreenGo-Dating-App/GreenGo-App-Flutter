@@ -933,31 +933,34 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// user (distinct from the external-heavy "Happening this week"). Requires a
   /// location; empty (or on failure) hides the section.
   Future<void> _loadCommunityEvents() async {
-    List<Event> events = const <Event>[];
-    if (_userLat != null && _userLng != null) {
+    if (_userLat == null || _userLng == null) {
+      if (mounted) setState(() => _communityEvents = const <Event>[]);
+      return;
+    }
+    final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
+    // CACHE-THEN-NETWORK: paint from the local cache, then reconcile with the
+    // server (a cold cache throws → ignored, keeping the current list).
+    Future<void> pass(bool preferCache) async {
       try {
-        final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
-        events = await eventsDs.getNearbyCommunityEvents(
+        final events = (await eventsDs.getNearbyCommunityEvents(
           lat: _userLat!,
           lng: _userLng!,
           limit: _peopleWanted,
-        );
-        // Auto-publish gate (defensive): drafts / not-yet-due scheduled events
-        // never leak into discovery. The datasource already filters; guard here
-        // too (see Event.isLive). Also exclude anything already shown in the
-        // Featured or Happening-today carousels (no repeats across Explore).
-        events = events
+          preferCache: preferCache,
+        ))
+            // Auto-publish gate + within 50km + no repeats across Explore.
             .where((e) => e.isLive && !_usedEventKeys.contains(e.id))
-            // Within 50km of the user (see kFeaturedRadiusKm).
             .where((e) => _withinFeaturedRadius(_Happening.community(e)))
             .toList()
-          // Order by date, earliest first (the datasource returns nearest-first).
           ..sort((a, b) => a.startDate.compareTo(b.startDate));
+        if (mounted) setState(() => _communityEvents = events);
       } catch (_) {
-        events = const <Event>[];
+        // Cache miss / transient — leave whatever is currently shown.
       }
     }
-    if (mounted) setState(() => _communityEvents = events);
+
+    await pass(true); // instant cache paint
+    await pass(false); // server reconcile
   }
 
   /// Loads "Businesses near you": public business profiles
@@ -1064,36 +1067,40 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// recent/popular. Excludes nothing sensitive (all public); capped at 10.
   /// Failures hide the section (empty list → an empty hint, never a crash).
   Future<void> _loadCommunities() async {
-    List<Community> result = const <Community>[];
-    try {
-      final ds = CommunitiesRemoteDataSourceImpl(firestore: _firestore);
-      final byId = <String, Community>{};
-
-      // 1) Near the user — communities in their city.
-      final city = _city;
-      if (city != null && city.isNotEmpty) {
-        try {
-          for (final c in await ds.getCommunities(city: city)) {
-            byId[c.id] = c;
-          }
-        } catch (_) {/* fall through to broader queries */}
-      }
-
-      // 2) Top up with recent/popular public communities (default ordering).
-      if (byId.length < 10) {
-        try {
-          for (final c in await ds.getCommunities()) {
-            byId.putIfAbsent(c.id, () => c);
-            if (byId.length >= 10) break;
-          }
-        } catch (_) {/* keep whatever we have */}
-      }
-
-      result = byId.values.take(10).toList();
-    } catch (_) {
-      result = const <Community>[];
+    final ds = CommunitiesRemoteDataSourceImpl(firestore: _firestore);
+    final city = _city;
+    // CACHE-THEN-NETWORK: paint from the local cache, then reconcile.
+    Future<void> pass(bool preferCache) async {
+      try {
+        final byId = <String, Community>{};
+        // 1) Near the user — communities in their city.
+        if (city != null && city.isNotEmpty) {
+          try {
+            for (final c
+                in await ds.getCommunities(city: city, preferCache: preferCache)) {
+              byId[c.id] = c;
+            }
+          } catch (_) {/* fall through to broader queries */}
+        }
+        // 2) Top up with recent/popular public communities (default ordering).
+        if (byId.length < 10) {
+          try {
+            for (final c in await ds.getCommunities(preferCache: preferCache)) {
+              byId.putIfAbsent(c.id, () => c);
+              if (byId.length >= 10) break;
+            }
+          } catch (_) {/* keep whatever we have */}
+        }
+        final result = byId.values.take(10).toList();
+        // Cache pass only paints when it has something; server pass always sets.
+        if (mounted && (result.isNotEmpty || !preferCache)) {
+          setState(() => _communities = result);
+        }
+      } catch (_) {/* leave current */}
     }
-    if (mounted) setState(() => _communities = result);
+
+    await pass(true); // instant cache paint
+    await pass(false); // server reconcile
   }
 
   /// Loads the active weekly Country Spotlight (or null when there is none).
