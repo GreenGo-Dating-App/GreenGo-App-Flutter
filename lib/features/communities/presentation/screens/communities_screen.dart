@@ -39,8 +39,10 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   late TabController _tabController;
   CommunityType? _selectedFilter;
   final TextEditingController _searchController = TextEditingController();
+  final TextEditingController _managedSearchController = TextEditingController();
   final ScrollController _discoverScrollController = ScrollController();
   String _searchQuery = '';
+  String _managedSearchQuery = '';
   String? _currentUserId;
 
   @override
@@ -122,6 +124,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     _tabController.removeListener(_onTabChanged);
     _tabController.dispose();
     _searchController.dispose();
+    _managedSearchController.dispose();
     _discoverScrollController.dispose();
     super.dispose();
   }
@@ -309,29 +312,103 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       );
     }
 
-    return RefreshIndicator(
-      color: AppColors.richGold,
-      backgroundColor: AppColors.backgroundCard,
-      onRefresh: () async {
-        if (_currentUserId != null) {
-          context.read<CommunitiesBloc>()
-            ..add(LoadUserCommunities(userId: _currentUserId!))
-            ..add(LoadManagedCommunities(userId: _currentUserId!));
-        }
-      },
-      child: ListView.builder(
-        physics: const AlwaysScrollableScrollPhysics(),
-        padding: const EdgeInsets.only(
-          top: AppDimensions.paddingS,
-          bottom: 80,
+    // Search filter over the user's own communities.
+    final q = _managedSearchQuery.trim().toLowerCase();
+    final filtered = q.isEmpty
+        ? managed
+        : managed
+            .where((c) =>
+                c.name.toLowerCase().contains(q) ||
+                c.description.toLowerCase().contains(q))
+            .toList();
+
+    return Column(
+      children: [
+        _managedSearchBar(),
+        Expanded(
+          child: RefreshIndicator(
+            color: AppColors.richGold,
+            backgroundColor: AppColors.backgroundCard,
+            onRefresh: () async {
+              if (_currentUserId != null) {
+                context.read<CommunitiesBloc>()
+                  ..add(LoadUserCommunities(userId: _currentUserId!))
+                  ..add(LoadManagedCommunities(userId: _currentUserId!));
+              }
+            },
+            child: filtered.isEmpty
+                ? ListView(
+                    physics: const AlwaysScrollableScrollPhysics(),
+                    children: [
+                      const SizedBox(height: 80),
+                      _buildEmptyState(
+                        icon: Icons.search_off,
+                        title: AppLocalizations.of(context)!
+                            .communitiesNoCommunitiesFound,
+                        subtitle: AppLocalizations.of(context)!
+                            .communitiesAdjustSearch,
+                      ),
+                    ],
+                  )
+                : ListView.builder(
+                    physics: const AlwaysScrollableScrollPhysics(),
+                    padding: const EdgeInsets.only(
+                      top: AppDimensions.paddingS,
+                      bottom: 80,
+                    ),
+                    itemCount: filtered.length,
+                    itemBuilder: (context, index) {
+                      return CommunityCard(
+                        community: filtered[index],
+                        onTap: () =>
+                            _navigateToCommunityDetail(filtered[index]),
+                      );
+                    },
+                  ),
+          ),
         ),
-        itemCount: managed.length,
-        itemBuilder: (context, index) {
-          return CommunityCard(
-            community: managed[index],
-            onTap: () => _navigateToCommunityDetail(managed[index]),
-          );
-        },
+      ],
+    );
+  }
+
+  /// Search field for the "My communities" tab.
+  Widget _managedSearchBar() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: TextField(
+        controller: _managedSearchController,
+        style: const TextStyle(color: AppColors.textPrimary),
+        decoration: InputDecoration(
+          hintText: AppLocalizations.of(context)!.communitiesSearchHint,
+          hintStyle: TextStyle(
+            color: AppColors.textTertiary.withValues(alpha: 0.6),
+          ),
+          prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
+          suffixIcon: _managedSearchQuery.isNotEmpty
+              ? IconButton(
+                  icon: const Icon(Icons.clear, color: AppColors.textTertiary),
+                  onPressed: () {
+                    _managedSearchController.clear();
+                    setState(() => _managedSearchQuery = '');
+                  },
+                )
+              : null,
+          filled: true,
+          fillColor: AppColors.backgroundCard,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide.none,
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(color: AppColors.richGold),
+          ),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 12,
+          ),
+        ),
+        onChanged: (value) => setState(() => _managedSearchQuery = value),
       ),
     );
   }
@@ -348,8 +425,15 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     var recommended = <Community>[];
     var isLoadingMore = false;
     if (state is CommunitiesLoaded) {
-      communities = state.communities;
-      recommended = state.recommended;
+      // Discover shows communities the user can JOIN — exclude the ones they're
+      // already a member of.
+      final joinedIds = state.userCommunities.map((c) => c.id).toSet();
+      communities = state.communities
+          .where((c) => !joinedIds.contains(c.id))
+          .toList();
+      recommended = state.recommended
+          .where((c) => !joinedIds.contains(c.id))
+          .toList();
       isLoadingMore = state.isLoadingMore;
     }
 

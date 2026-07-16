@@ -416,11 +416,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   Future<void> _loadHappenings() async {
     final now = DateTime.now();
-    final todayEnd = DateTime(now.year, now.month, now.day, 23, 59, 59);
     final todayStr = DateFormat('yyyy-MM-dd').format(now);
 
-    // 1) Community events overlapping TODAY only: not yet finished AND not
-    //    starting on a future day. One instance per recurring series.
+    // 1) Community events happening SOON: ongoing or upcoming (not yet ended).
+    //    One instance per recurring series.
     List<Event> community = const <Event>[];
     if (_userLat != null && _userLng != null) {
       try {
@@ -428,23 +427,19 @@ class _ExploreScreenState extends State<ExploreScreen> {
         community = await eventsDs.getNearbyCommunityEvents(
           lat: _userLat!,
           lng: _userLng!,
-          limit: 40,
+          limit: 60,
         );
       } catch (_) {
         community = const <Event>[];
       }
     }
-    final communityToday = _dedupeSeries(
-      community
-          .where((e) => e.endDate.isAfter(now) && !e.startDate.isAfter(todayEnd))
-          .toList(),
-    )
-      // Earliest first (the nearby pool comes back distance-ordered).
-      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    final communitySoon = _dedupeSeries(
+      community.where((e) => e.endDate.isAfter(now)).toList(),
+    );
     final communityItems =
-        communityToday.map((e) => _Happening.community(e)).toList();
+        communitySoon.map((e) => _Happening.community(e)).toList();
     final communityTitles =
-        communityToday.map((e) => e.title.toLowerCase().trim()).toSet();
+        communitySoon.map((e) => e.title.toLowerCase().trim()).toSet();
 
     // 2) LIVE EVENTS OF THE DAY — Ticketmaster external events dated today that
     //    are NOT already present as a community event (by title).
@@ -465,21 +460,31 @@ class _ExploreScreenState extends State<ExploreScreen> {
     } catch (_) {
       live = const <ExternalEvent>[];
     }
-    final liveTodayItems = live
-        .where((e) => e.startDate == todayStr)
+    final isoDate = RegExp(r'^\d{4}-\d{2}-\d{2}$');
+    final liveUpcoming = live
+        // Only well-formed, today-onward dates (never a junk date like "1").
+        .where((e) =>
+            e.startDate != null &&
+            isoDate.hasMatch(e.startDate!) &&
+            e.startDate!.compareTo(todayStr) >= 0)
         .where((e) => !communityTitles.contains(e.title.toLowerCase().trim()))
         .map((e) => _Happening.external(e))
         .where(_hasImage)
         .toList();
 
-    // "Happening today": show COMMUNITY events of the day first; ONLY when
-    // there are no community events today do we fall back to live (external)
-    // events of the day. Excludes anything already in Featured. Max 3.
-    final base =
-        communityItems.isNotEmpty ? communityItems : liveTodayItems;
-    final rows = base
+    // "Happening soon": community + live upcoming, ORDERED BY DATE (soonest
+    // first), first 20, excluding anything already shown in Featured.
+    final rows = ([...communityItems, ...liveUpcoming]
+          ..sort((a, b) {
+            final da = a.date;
+            final db = b.date;
+            if (da == null && db == null) return 0;
+            if (da == null) return 1;
+            if (db == null) return -1;
+            return da.compareTo(db);
+          }))
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
-        .take(3)
+        .take(20)
         .toList();
     // Reserve these so Near-you doesn't repeat them.
     for (final h in rows) {
@@ -1285,13 +1290,27 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // Personal & high-priority: the user's own upcoming events. Hidden
               // entirely when they have none (see [_myEventsSection]).
               _myEventsSection(context, l10n, reduceMotion),
-              // "Featured community events" — a LUXURY carousel of up to three
-              // boosted-first community events, placed immediately before
-              // "People around you". Hidden entirely when there are none.
+
+              // ── EVENTS ────────────────────────────────────────────────────
+              // Featured community events, then Happening soon.
               _luxuryEventsSection(context, l10n, reduceMotion),
-              // People sections (where the old single Network Discovery carousel
-              // was): around you → same interests → speak {language}. Each hides
-              // itself when empty (see [_peopleSection]).
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+                  child: _sectionHeader(
+                    context,
+                    l10n.exploreHappeningSoon,
+                    l10n.exploreSeeAll,
+                    onSeeAll: () => _openAllEvents(context),
+                  ),
+                ),
+              ),
+              _happeningSection(context, l10n, reduceMotion),
+
+              _categoryDivider(),
+
+              // ── PEOPLE ────────────────────────────────────────────────────
+              // Discover (around you) → Recommended → speaks {language}.
               _peopleSection(
                 context,
                 l10n,
@@ -1300,8 +1319,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 people: _aroundYou,
                 onSeeAll: () => _openNetworkDiscovery(context),
               ),
-              // "Recommended for you" — heuristic relevance-ranked people. Placed
-              // near the top of the people sections; hides itself when empty.
               _peopleSection(
                 context,
                 l10n,
@@ -1317,10 +1334,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 title: l10n.exploreSpeaksLanguage(_sameLanguageName ?? ''),
                 people: _sameLanguage,
               ),
-              // NOTE: the standalone "Business accounts" promo section was
-              // removed — business-owning users now surface directly in search
-              // (as both their personal and business identity). "Businesses
-              // close to you" remains as the nearby-business discovery rail.
+
+              _categoryDivider(),
+
+              // ── BUSINESSES & COMMUNITIES TO JOIN ──────────────────────────
               _businessesSection(context, l10n, reduceMotion),
               SliverToBoxAdapter(
                 child: Padding(
@@ -1334,21 +1351,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 ),
               ),
               _communitiesSection(context, l10n, reduceMotion),
-              // Community events close to the user (distinct from "Happening this
-              // week"). Hidden entirely when there are none.
+
+              _categoryDivider(),
+
+              // ── COMMUNITY EVENTS NEAR YOU ─────────────────────────────────
               _communityEventsSection(context, l10n, reduceMotion),
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-                  child: _sectionHeader(
-                    context,
-                    l10n.exploreHappeningToday,
-                    l10n.exploreSeeAll,
-                    onSeeAll: () => _openAllEvents(context),
-                  ),
-                ),
-              ),
-              _happeningSection(context, l10n, reduceMotion),
+
               // Country Spotlight — a single glass card. Hidden entirely when
               // there is no active spotlight (see [_spotlightSection]).
               _spotlightSection(context, l10n, reduceMotion),
@@ -1399,7 +1407,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
           child: _sectionHeader(
             context,
-            l10n.exploreHappeningToday,
+            l10n.exploreHappeningSoon,
             l10n.exploreSeeAll,
             onSeeAll: () => _openAllEvents(context),
           ),
@@ -1900,6 +1908,19 @@ class _ExploreScreenState extends State<ExploreScreen> {
     );
   }
 
+  /// A thin divider between Explore category groups (events / people /
+  /// businesses+communities / community-events).
+  Widget _categoryDivider() => const SliverToBoxAdapter(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+          child: Divider(
+            color: AppColors.divider,
+            thickness: 1,
+            height: 28,
+          ),
+        ),
+      );
+
   Widget _sectionHeader(
     BuildContext context,
     String title,
@@ -2298,8 +2319,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
       );
     } else {
       stateKey = 'loaded';
-      // At most three cards, community-events-first (already ordered).
-      final rows = _happenings!.take(3).toList();
+      // Up to 20 cards, ordered by date (soonest first).
+      final rows = _happenings!.take(20).toList();
       content = ListView.separated(
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(),

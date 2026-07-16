@@ -13246,4 +13246,7 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get communitiesCreatedManageHint =>
       'Communaute creee! Ouvrez Membres pour ajouter des personnes et accorder des droits de conseils ou d\'annonces.';
+
+  @override
+  String get exploreHappeningSoon => 'Bientot';
 }

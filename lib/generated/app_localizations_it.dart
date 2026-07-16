@@ -13184,4 +13184,7 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get communitiesCreatedManageHint =>
       'Community creata! Apri Membri per aggiungere persone e concedere diritti per consigli o annunci.';
+
+  @override
+  String get exploreHappeningSoon => 'Prossimamente';
 }

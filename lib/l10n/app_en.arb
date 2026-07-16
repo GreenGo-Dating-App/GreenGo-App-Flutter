@@ -6235,5 +6235,9 @@
   "communitiesCreatedManageHint": "Community created! Open Members to add people and grant tip or announcement rights.",
   "@communitiesCreatedManageHint": {
     "description": "Community join-as-personal / post-create manage strings"
+  },
+  "exploreHappeningSoon": "Happening soon",
+  "@exploreHappeningSoon": {
+    "description": "Explore section title for upcoming events"
   }
 }
