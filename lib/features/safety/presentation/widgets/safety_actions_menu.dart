@@ -85,6 +85,7 @@ class SafetyActionsMenu extends StatelessWidget {
   Future<void> _onReport(BuildContext context) async {
     final l10n = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
+    final navigator = Navigator.of(context);
 
     // Admins cannot be reported — mirror chat behaviour.
     if (isReportedUserAdmin) {
@@ -151,12 +152,22 @@ class SafetyActionsMenu extends StatelessWidget {
         reportedUserId: reportedUserId,
         reason: selectedReason,
       );
+      // Auto-block after a report so the reported user is removed from every
+      // list immediately (the block broadcast drives the live removal) and can
+      // no longer interact — mirrors the in-chat report behaviour.
+      await _service.blockUser(
+        blockerId: currentUserId,
+        blockedUserId: reportedUserId,
+        reason: 'Auto-blocked after report: $selectedReason',
+      );
       messenger.showSnackBar(
         SnackBar(
           content: Text(l10n.chatUserReported),
           backgroundColor: AppColors.successGreen,
         ),
       );
+      // Leave the profile once reported+blocked.
+      if (navigator.canPop()) navigator.pop();
     } catch (_) {
       messenger.showSnackBar(
         SnackBar(

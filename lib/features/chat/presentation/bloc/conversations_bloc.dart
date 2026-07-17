@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/services/blocked_users_service.dart';
 import '../../domain/repositories/chat_repository.dart';
 import '../../domain/usecases/delete_conversation.dart';
 import '../../domain/usecases/get_conversations.dart';
@@ -16,6 +19,7 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     required this.deleteConversationForMe,
     required this.deleteConversationForBoth,
     required this.chatRepository,
+    this.blockedUsersService,
   }) : super(const ConversationsInitial()) {
     on<ConversationsLoadRequested>(_onLoadRequested);
     on<ConversationsRefreshRequested>(_onRefreshRequested);
@@ -24,11 +28,39 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     on<ConversationToggleFavoriteRequested>(_onToggleFavorite);
     on<ConversationAcceptSuperLikeRequested>(_onAcceptSuperLike);
     on<ConversationRejectSuperLikeRequested>(_onRejectSuperLike);
+    on<ConversationUserBlocked>(_onUserBlocked);
+    // Drop a conversation the instant its other participant is blocked anywhere.
+    _blockedSub = blockedUsersService?.onUserBlocked
+        .listen((id) => add(ConversationUserBlocked(id)));
   }
   final GetConversations getConversations;
   final DeleteConversationForMe deleteConversationForMe;
   final DeleteConversationForBoth deleteConversationForBoth;
   final ChatRepository chatRepository;
+  final BlockedUsersService? blockedUsersService;
+
+  StreamSubscription<String>? _blockedSub;
+
+  @override
+  Future<void> close() {
+    _blockedSub?.cancel();
+    return super.close();
+  }
+
+  void _onUserBlocked(
+    ConversationUserBlocked event,
+    Emitter<ConversationsState> emit,
+  ) {
+    final cur = state;
+    if (cur is! ConversationsLoaded) return;
+    final remaining = cur.conversations
+        .where((c) => !c.hasParticipant(event.blockedUserId))
+        .toList();
+    if (remaining.length == cur.conversations.length) return;
+    emit(remaining.isEmpty
+        ? const ConversationsEmpty()
+        : ConversationsLoaded(conversations: remaining));
+  }
 
   String? _userId;
 
