@@ -142,6 +142,15 @@ class TourController {
     ShowCaseWidget.of(context).startShowCase(mounted);
   }
 
+  /// Force-starts a mini-tour NOW for the mounted subset of [keys], IGNORING the
+  /// done flag. Used by a per-page "replay guide" button.
+  void startMiniTourNow(BuildContext context, List<GlobalKey> keys) {
+    final mounted = _mountedKeys(keys);
+    if (mounted.isEmpty) return;
+    _index(mounted);
+    ShowCaseWidget.of(context).startShowCase(mounted);
+  }
+
   /// One-time check used by non-showcase hints (swipe-mode overlay).
   static Future<bool> shouldShowOnce(String tourId, String userId) async {
     final prefs = await SharedPreferences.getInstance();

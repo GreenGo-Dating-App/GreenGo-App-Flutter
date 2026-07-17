@@ -23082,6 +23082,30 @@ abstract class AppLocalizations {
   /// **'Switch between the groups you joined, discover new ones, and manage the communities you created.'**
   String get tourCommunitiesTabsDesc;
 
+  /// No description provided for @tourCommunitiesSearchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find your groups'**
+  String get tourCommunitiesSearchTitle;
+
+  /// No description provided for @tourCommunitiesSearchDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Type here to filter your communities by name — handy once you\'ve joined a few.'**
+  String get tourCommunitiesSearchDesc;
+
+  /// No description provided for @tourCommunitiesCardTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open & favorite'**
+  String get tourCommunitiesCardTitle;
+
+  /// No description provided for @tourCommunitiesCardDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a community to open its chat, tips, announcements and events. Tap the ⭐ star to save it — favorites pin to the top.'**
+  String get tourCommunitiesCardDesc;
+
   /// No description provided for @tourCommunitiesCreateTitle.
   ///
   /// In en, this message translates to:
@@ -23093,6 +23117,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Tap here to create your own community and bring people together.'**
   String get tourCommunitiesCreateDesc;
+
+  /// No description provided for @tourReplayGuide.
+  ///
+  /// In en, this message translates to:
+  /// **'Replay guide'**
+  String get tourReplayGuide;
 
   /// No description provided for @tourEventsCreateTitle.
   ///
