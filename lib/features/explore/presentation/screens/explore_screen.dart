@@ -34,7 +34,6 @@ import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../discovery/presentation/widgets/network_grid_card.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/data/datasources/external_events_data_source.dart';
-import '../../../events/data/models/event_model.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/entities/external_event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
@@ -444,45 +443,41 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
 
     // "Happening soon" shows COMMUNITY events ONLY (never external experiences),
-    // close by (WITHIN 100km) and today-onwards (ongoing or future, never past),
-    // ordered by city then date.
+    // close by (WITHIN 100km) and starting in the WINDOW [today .. today+14 days],
+    // ordered by city then date, MAX 20.
+    final now = DateTime.now();
+    final startOfToday = DateTime(now.year, now.month, now.day);
+    final windowEnd = startOfToday.add(const Duration(days: 15)); // 14d inclusive
+    bool within14(Event e) =>
+        !e.startDate.isBefore(startOfToday) && e.startDate.isBefore(windowEnd);
+
     var pool = _dedupeSeries(
-      community.where(_eventNotPast).toList(),
+      community.where(within14).toList(),
     )
         .map((e) => _Happening.community(e))
         .where((h) => _withinKm(h, 100)) // <= 100km
         .toList();
 
-    // FALLBACK so the section is NEVER empty: the nearby query is geohash-ordered
-    // (so it omits events without geohash/coords) and 100km-bounded. If it
-    // surfaced nothing, WIDEN — pull all published events and keep the ongoing/
-    // future ones (`_eventNotPast`, which — unlike a server `upcoming` filter —
-    // keeps an event that already started but hasn't ended). No distance gate
-    // here: a far current event beats a blank section. Near events still rank
-    // first via byCityThenDate (the user's own city on top).
-    if (pool.isEmpty) {
+    // FALLBACK for near events missing a geohash (the geohash-ordered nearby
+    // query silently omits them): pull the upcoming events and re-apply the SAME
+    // near + 14-day window so the section stays close and on-window.
+    if (pool.isEmpty && _userLat != null && _userLng != null) {
       try {
         final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
-        // Prefer the indexed future-start query (scale-safe); only if that yields
-        // nothing current do we widen to a plain read to catch ONGOING events
-        // whose start is already past (which a server `upcoming` filter drops).
-        var src = await eventsDs.getEvents(upcoming: true);
-        if (!src.any(_eventNotPast)) {
-          src = await eventsDs.getEvents();
-        }
-        pool = _dedupeSeries(src.where(_eventNotPast).toList())
+        final src = await eventsDs.getEvents(upcoming: true);
+        pool = _dedupeSeries(src.where(within14).toList())
             .map((e) => _Happening.community(e))
+            .where((h) => _withinKm(h, 100))
             .toList();
       } catch (_) {}
     }
     pool.sort(byCityThenDate);
 
     // Exclude events another carousel already used — but if that would EMPTY the
-    // section (Featured reserved the only nearby events), show them anyway rather
-    // than leave "Happening soon" blank.
+    // section (Featured reserved the only nearby events), show them anyway.
     var rows = pool
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
-        .take(20)
+        .take(20) // MAX 20 elements
         .toList();
     if (rows.isEmpty && pool.isNotEmpty) {
       rows = pool.take(20).toList();
@@ -647,33 +642,22 @@ class _ExploreScreenState extends State<ExploreScreen> {
     ];
   }
 
-  /// Loads "Featured community events" (the LUXURY carousel): up to 3 events
-  /// elected with a FOUR-TIER fallback + round-robin. Only truly EMPTY when
-  /// there are zero community/live events anywhere (or every fetch fails) → the
-  /// carousel hides itself. Crucially it NO LONGER requires a user location: a
-  /// location just refines Tiers 1–3; Tier 4 covers the (common) case of a
-  /// profile with no stored coordinates.
+  /// Loads "Featured community events" (the LUXURY carousel): EXACTLY up to 3
+  /// events, always CLOSE to the user (within [kFeaturedRadiusKm]) and never
+  /// past. Three-tier fallback:
+  ///  - Tier 1 — BOOSTED community events near the user ([Event.isCurrentlyFeatured]
+  ///    — the paid coin-boost: `isFeatured && featuredUntil` not passed), served
+  ///    round-robin ([_rotateSponsored]) for fair sponsor exposure.
+  ///  - Tier 2 — if fewer than 3 boosted, FILL with RANDOM (shuffled) other
+  ///    community events close to the user (starts today or later).
+  ///  - Tier 3 — if there are no/too-few community events near the user, fill the
+  ///    rest with RANDOM close-by LIVE events (external ticketmaster) starting
+  ///    within the next 30 days.
   ///
-  /// Strategy:
-  ///  - Tier 1 — SPONSORED community events near the user FIRST. "Sponsored" ==
-  ///    a currently-promoted event ([Event.isCurrentlyFeatured] — the paid
-  ///    coin-boost mechanic: `isFeatured && featuredUntil` not passed).
-  ///    Cross-referencing each event's community for a `Community.isSponsored`
-  ///    flag would cost an extra read per event, so we rely on the event's own
-  ///    featured/boost flag (cheap, index-light). ROUND-ROBIN via
-  ///    [_rotateSponsored] so every sponsor gets fair exposure.
-  ///  - Tier 2 — if FEWER than 3 sponsors, FILL the remainder with the CLOSEST
-  ///    community events (nearest-first, as returned by the data source),
-  ///    de-duped against Tier 1.
-  ///  - Tier 3 — if there are NO community events near the user at all, FALL
-  ///    BACK to nearby LIVE events (distance-sorted), lightly shuffled.
-  ///  - Tier 4 — LOCATION-INDEPENDENT last resort: when we STILL have nothing
-  ///    (no stored location, or nothing nearby), pull upcoming PUBLIC community
-  ///    events with a plain non-geo query (sponsored-first + round-robin, then
-  ///    the soonest remaining) so the carousel shows wherever the user is.
-  ///
-  /// Tiers 1–3 stay within [kFeaturedRadiusKm] when a location is known; all
-  /// tiers are de-duplicated by event id.
+  /// Distance is a HARD gate here (all tiers stay within [kFeaturedRadiusKm]) so
+  /// the carousel never shows a far event; if nothing close-by qualifies it hides
+  /// itself. De-duplicated by id. Requires a location (all tiers are distance-
+  /// scoped); an unlocated profile yields an (hidden) empty carousel.
   Future<void> _loadLuxuryEvents() async {
     final picked = <_Happening>[];
     final seen = <String>{};
@@ -733,79 +717,28 @@ class _ExploreScreenState extends State<ExploreScreen> {
       addEvents(others);
     }
 
-    // NOTE: Featured is COMMUNITY-ONLY by spec — "featured events just have
-    // community events hosted first then randomly community events close by."
-    // So there is NO external/live tier here; the remaining tiers below are all
-    // community (`events` collection) fallbacks that keep the carousel populated
-    // when the nearby community pool is thin.
-
-    // Deep native safety nets below — only reached if the nearby community pool
-    // was empty, so the carousel still shows community events from wider queries.
-    // Nearby LIVE native events (distance-sorted), lightly shuffled.
-    if (picked.length < 3 && community.isEmpty && hasLocation) {
+    // Tier 3 — NO (or too few) community events near the user: fill the
+    // remaining slots with RANDOM close-by LIVE events (external `external_events`,
+    // source ticketmaster) starting within the next 30 days. Stays within
+    // [kFeaturedRadiusKm] and near-dated, so Featured is never far or stale — if
+    // nothing close-by qualifies the carousel simply hides (better than a far/old
+    // event). Needs a location (distance can't be judged without one).
+    if (picked.length < 3 && hasLocation) {
       try {
-        final live = await eventsDs.getEventsNearLocation(
-          _userLat!,
-          _userLng!,
-          kFeaturedRadiusKm,
-        );
-        addEvents(live.take(20).toList()..shuffle());
+        final snap = await _firestore
+            .collection('external_events')
+            .where('source', isEqualTo: 'ticketmaster')
+            .limit(300)
+            .get();
+        final near = snap.docs
+            .map(ExternalEvent.fromFirestore)
+            .where(_externalWithin30Days)
+            .where((e) => _withinFeaturedRadius(_Happening.external(e)))
+            .toList()
+          ..shuffle();
+        addAll(near.map((e) => _Happening.external(e)));
       } catch (_) {
-        // Leave picked as-is — Tier 4 still has a chance below.
-      }
-    }
-
-    // Tier 4 — Featured must ALWAYS appear. We prefer close-by community events
-    // (Tiers 1-2), but if the nearby pool is thin we widen to ANY upcoming
-    // community event (`events` collection) so the carousel is never empty:
-    // boosted-first, then random. Runs regardless of location.
-    if (picked.length < 3) {
-      try {
-        final upcoming = await eventsDs.getEvents(upcoming: true);
-        final sponsoredGlobal =
-            upcoming.where((e) => e.isCurrentlyFeatured).toList()
-              ..sort((a, b) => a.id.compareTo(b.id));
-        addEvents(_rotateSponsored(sponsoredGlobal));
-        if (picked.length < 3) {
-          final others = upcoming.where((e) => !e.isCurrentlyFeatured).toList()
-            ..shuffle();
-          addEvents(others);
-        }
-      } catch (_) {
-        // Leave picked as-is — Tier 5 still has a chance below.
-      }
-    }
-
-    // Tier 5 — TRULY INDEX-FREE last resort. Every tier above funnels through
-    // [EventsRemoteDataSourceImpl], whose queries are all filtered/ordered
-    // (`status whereIn` + `startDate`/`geohash` orderBy) AND upcoming/nearby
-    // only. In the common real-data case (no boosted events, nothing nearby,
-    // events past-dated, or any swallowed query error) those tiers yield
-    // nothing and the carousel silently blanks — which is exactly why the
-    // previously-added "location-independent" Tier 4 (itself a filtered,
-    // upcoming-only query) never actually rescued it. This tier issues a plain,
-    // index-free collection read (no `where`/`orderBy` — just a bounded limit),
-    // parses client-side and keeps any PUBLIC, LIVE event so the carousel shows
-    // whenever ANY public event exists at all. Sponsored-first, then soonest.
-    // Runs regardless of location so Featured always shows a community event.
-    if (picked.length < 3) {
-      try {
-        final snap = await _firestore.collection('events').limit(50).get();
-        final live = snap.docs
-            .map<Event>(EventModel.fromFirestore)
-            .where((e) => e.isPublic && e.isLive)
-            .toList();
-        final sponsoredRaw = live.where((e) => e.isCurrentlyFeatured).toList()
-          ..sort((a, b) => a.id.compareTo(b.id));
-        addEvents(_rotateSponsored(sponsoredRaw));
-        if (picked.length < 3) {
-          addEvents(
-            live.where((e) => !e.isCurrentlyFeatured).toList()
-              ..sort((a, b) => a.startDate.compareTo(b.startDate)),
-          );
-        }
-      } catch (_) {
-        // Genuinely nothing to show — an empty result hides the carousel.
+        // Nothing close-by to show — an empty result hides the carousel.
       }
     }
 
@@ -1073,6 +1006,23 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final now = DateTime.now();
     final startOfToday = DateTime(now.year, now.month, now.day);
     return !e.startDate.isBefore(startOfToday); // starts today or later
+  }
+
+  /// True when an EXTERNAL (live) event starts within the next 30 days
+  /// (today .. today+30). Featured's last-resort tier uses this. `startDate` is
+  /// a `'YYYY-MM-DD'` string (possibly with a time suffix) — compared lexically.
+  bool _externalWithin30Days(ExternalEvent e) {
+    final raw = e.startDate;
+    if (raw == null || raw.length < 10) return false;
+    final day = raw.substring(0, 10);
+    String iso(DateTime d) =>
+        '${d.year.toString().padLeft(4, '0')}-'
+        '${d.month.toString().padLeft(2, '0')}-'
+        '${d.day.toString().padLeft(2, '0')}';
+    final now = DateTime.now();
+    final base = DateTime(now.year, now.month, now.day);
+    return day.compareTo(iso(base)) >= 0 &&
+        day.compareTo(iso(base.add(const Duration(days: 30)))) <= 0;
   }
 
   /// True when [h] carries a usable picture. Attractions/experiences with no
