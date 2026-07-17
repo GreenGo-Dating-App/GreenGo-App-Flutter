@@ -442,16 +442,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
       return byDate(a, b); // then soonest first
     }
 
-    // "Happening soon" shows COMMUNITY events ONLY (never external experiences),
-    // close by (WITHIN 100km) and starting in the WINDOW [today .. today+14 days],
-    // ordered by city then date, MAX 20.
+    // "Happening soon": the first 20 COMMUNITY events (close by, WITHIN 100km,
+    // starting in the window [today .. today+14 days], ordered by city then date).
+    // If FEWER than 20, the remaining slots are filled with the nearest upcoming
+    // LIVE events by distance.
     final now = DateTime.now();
     final startOfToday = DateTime(now.year, now.month, now.day);
     final windowEnd = startOfToday.add(const Duration(days: 15)); // 14d inclusive
     bool within14(Event e) =>
         !e.startDate.isBefore(startOfToday) && e.startDate.isBefore(windowEnd);
 
-    var pool = _dedupeSeries(
+    var communityPool = _dedupeSeries(
       community.where(within14).toList(),
     )
         .map((e) => _Happening.community(e))
@@ -461,26 +462,48 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // FALLBACK for near events missing a geohash (the geohash-ordered nearby
     // query silently omits them): pull the upcoming events and re-apply the SAME
     // near + 14-day window so the section stays close and on-window.
-    if (pool.isEmpty && _userLat != null && _userLng != null) {
+    if (communityPool.isEmpty && _userLat != null && _userLng != null) {
       try {
         final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
         final src = await eventsDs.getEvents(upcoming: true);
-        pool = _dedupeSeries(src.where(within14).toList())
+        communityPool = _dedupeSeries(src.where(within14).toList())
             .map((e) => _Happening.community(e))
             .where((h) => _withinKm(h, 100))
             .toList();
       } catch (_) {}
     }
-    pool.sort(byCityThenDate);
+    communityPool.sort(byCityThenDate);
 
-    // Exclude events another carousel already used — but if that would EMPTY the
-    // section (Featured reserved the only nearby events), show them anyway.
-    var rows = pool
+    var communityRows = communityPool
         .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
-        .take(20) // MAX 20 elements
+        .take(20)
         .toList();
-    if (rows.isEmpty && pool.isNotEmpty) {
-      rows = pool.take(20).toList();
+    if (communityRows.isEmpty && communityPool.isNotEmpty) {
+      communityRows = communityPool.take(20).toList();
+    }
+
+    // Fill the remainder up to 20 with the NEAREST upcoming LIVE events, ordered
+    // by distance.
+    final rows = <_Happening>[...communityRows];
+    if (rows.length < 20 && _userLat != null && _userLng != null) {
+      try {
+        final snap = await _firestore
+            .collection('external_events')
+            .where('source', isEqualTo: 'ticketmaster')
+            .limit(300)
+            .get();
+        final used = {...rows.map((h) => h.key), ..._usedEventKeys};
+        final live = snap.docs
+            .map(ExternalEvent.fromFirestore)
+            .where(_externalFuture)
+            .where((e) => e.lat != null && e.lng != null)
+            .map((e) => _Happening.external(e))
+            .where((h) => h.key.isNotEmpty && !used.contains(h.key))
+            .toList()
+          ..sort((a, b) => _distanceKmTo(a.lat, a.lng)
+              .compareTo(_distanceKmTo(b.lat, b.lng)));
+        rows.addAll(live.take(20 - rows.length));
+      } catch (_) {}
     }
     // Reserve these so Near-you doesn't repeat them.
     for (final h in rows) {
@@ -682,8 +705,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
     final hasLocation = _userLat != null && _userLng != null;
 
-    // Community events near the user, kept within [kFeaturedRadiusKm] when a
-    // location is known (nearest-first, as returned by the data source).
+    // The user's NEAREST current community events (the data source returns them
+    // nearest-first via expanding geohash rings). No hard radius cap — we want
+    // "the first 3 CLOSE BY", i.e. the nearest available, never past.
     List<Event> community = const <Event>[];
     if (hasLocation) {
       try {
@@ -692,37 +716,25 @@ class _ExploreScreenState extends State<ExploreScreen> {
           lng: _userLng!,
           limit: 40,
         );
-        community = _dedupeSeries(events
-            // Ongoing or future only (never past) — see [_eventNotPast].
-            .where(_eventNotPast)
-            .where((e) => _withinFeaturedRadius(_Happening.community(e)))
-            .toList());
+        community = _dedupeSeries(events.where(_eventNotPast).toList());
       } catch (_) {
         community = const <Event>[];
       }
     }
 
-    // Tier 1 — SPONSORED (currently-featured/boosted) community events, ordered
-    // by a STABLE base key (id) so the time-based round-robin advances fairly.
+    // Tier 1 — BOOSTED community events first (round-robin for fair exposure).
     final sponsored = community.where((e) => e.isCurrentlyFeatured).toList()
       ..sort((a, b) => a.id.compareTo(b.id));
     addEvents(_rotateSponsored(sponsored));
 
-    // Tier 2 (per spec) — when short of 3 boosted, FILL with RANDOM other
-    // community events (today/future; de-duped against the boosted picks) so the
-    // carousel rotates fairly through the community BEFORE any live content.
+    // Tier 2 — fill with the NEAREST community events (already nearest-first).
     if (picked.length < 3) {
-      final others = community.where((e) => !e.isCurrentlyFeatured).toList()
-        ..shuffle();
-      addEvents(others);
+      addEvents(community.where((e) => !e.isCurrentlyFeatured));
     }
 
-    // Tier 3 — NO (or too few) community events near the user: fill the
-    // remaining slots with RANDOM close-by LIVE events (external `external_events`,
-    // source ticketmaster) starting within the next 30 days. Stays within
-    // [kFeaturedRadiusKm] and near-dated, so Featured is never far or stale — if
-    // nothing close-by qualifies the carousel simply hides (better than a far/old
-    // event). Needs a location (distance can't be judged without one).
+    // Tier 3 — still short of 3 (few/no community events): fill with the NEAREST
+    // upcoming LIVE events (ticketmaster), nearest-first, so Featured always
+    // shows the 3 closest events to the user.
     if (picked.length < 3 && hasLocation) {
       try {
         final snap = await _firestore
@@ -730,15 +742,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
             .where('source', isEqualTo: 'ticketmaster')
             .limit(300)
             .get();
-        final near = snap.docs
+        final live = snap.docs
             .map(ExternalEvent.fromFirestore)
-            .where(_externalWithin30Days)
-            .where((e) => _withinFeaturedRadius(_Happening.external(e)))
+            .where(_externalFuture)
+            .where((e) => e.lat != null && e.lng != null)
             .toList()
-          ..shuffle();
-        addAll(near.map((e) => _Happening.external(e)));
+          ..sort((a, b) =>
+              _distanceKmTo(a.lat, a.lng).compareTo(_distanceKmTo(b.lat, b.lng)));
+        addAll(live.map((e) => _Happening.external(e)));
       } catch (_) {
-        // Nothing close-by to show — an empty result hides the carousel.
+        // Nothing to show — an empty result hides the carousel.
       }
     }
 
@@ -1008,21 +1021,26 @@ class _ExploreScreenState extends State<ExploreScreen> {
     return !e.startDate.isBefore(startOfToday); // starts today or later
   }
 
-  /// True when an EXTERNAL (live) event starts within the next 30 days
-  /// (today .. today+30). Featured's last-resort tier uses this. `startDate` is
-  /// a `'YYYY-MM-DD'` string (possibly with a time suffix) — compared lexically.
-  bool _externalWithin30Days(ExternalEvent e) {
+  /// True when an EXTERNAL (live) event starts TODAY or later (not past).
+  /// `startDate` is a `'YYYY-MM-DD'` string (possibly with a time suffix).
+  bool _externalFuture(ExternalEvent e) {
     final raw = e.startDate;
     if (raw == null || raw.length < 10) return false;
     final day = raw.substring(0, 10);
-    String iso(DateTime d) =>
-        '${d.year.toString().padLeft(4, '0')}-'
-        '${d.month.toString().padLeft(2, '0')}-'
-        '${d.day.toString().padLeft(2, '0')}';
     final now = DateTime.now();
-    final base = DateTime(now.year, now.month, now.day);
-    return day.compareTo(iso(base)) >= 0 &&
-        day.compareTo(iso(base.add(const Duration(days: 30)))) <= 0;
+    final today = '${now.year.toString().padLeft(4, '0')}-'
+        '${now.month.toString().padLeft(2, '0')}-'
+        '${now.day.toString().padLeft(2, '0')}';
+    return day.compareTo(today) >= 0;
+  }
+
+  /// Distance (km) from the user to a lat/lng; infinity when location unknown.
+  double _distanceKmTo(double? lat, double? lng) {
+    final ulat = _userLat, ulng = _userLng;
+    if (ulat == null || ulng == null || lat == null || lng == null) {
+      return double.maxFinite;
+    }
+    return FeatureEngineer().calculateDistance(ulat, ulng, lat, lng);
   }
 
   /// True when [h] carries a usable picture. Attractions/experiences with no

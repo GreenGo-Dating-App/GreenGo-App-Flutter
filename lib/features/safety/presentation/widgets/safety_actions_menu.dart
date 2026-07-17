@@ -163,7 +163,7 @@ class SafetyActionsMenu extends StatelessWidget {
       messenger.showSnackBar(
         SnackBar(
           content: Text(l10n.chatUserReported),
-          backgroundColor: AppColors.successGreen,
+          backgroundColor: AppColors.errorRed,
         ),
       );
       // Leave the profile once reported+blocked.
@@ -221,7 +221,7 @@ class SafetyActionsMenu extends StatelessWidget {
       messenger.showSnackBar(
         SnackBar(
           content: Text(l10n.chatBlockUser(reportedUserName)),
-          backgroundColor: AppColors.successGreen,
+          backgroundColor: AppColors.errorRed,
         ),
       );
       // Leave the profile once blocked.
