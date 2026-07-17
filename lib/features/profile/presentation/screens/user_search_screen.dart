@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
@@ -85,9 +87,14 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
 
       final results = await _dataSource.searchByNickname(searchQuery);
 
-      // Filter out current user
+      // Filter out the current user AND anyone blocked (either direction).
+      final blocked = await di
+          .sl<BlockedUsersService>()
+          .getBlockedUserIds(widget.currentUserId);
       final filteredResults = results
-          .where((profile) => profile.userId != widget.currentUserId)
+          .where((profile) =>
+              profile.userId != widget.currentUserId &&
+              !blocked.contains(profile.userId))
           .toList();
 
       if (mounted) {

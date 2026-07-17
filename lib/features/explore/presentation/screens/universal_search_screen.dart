@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../generated/app_localizations.dart';
@@ -110,16 +111,24 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       _searchCommunities(q),
     ]);
 
+    // Never surface blocked users (personal OR business) or their events.
+    final blocked = await di
+        .sl<BlockedUsersService>()
+        .getBlockedUserIds(widget.currentUserId);
     if (!mounted || generation != _generation) return;
-    final profiles = results[0] as List<Profile>;
+    final profiles = (results[0] as List<Profile>)
+        .where((p) => !blocked.contains(p.userId))
+        .toList();
     setState(() {
       // A business-owning user is searchable BOTH ways: their personal profile
       // shows in People, and their business identity (hero image + business
       // name) shows in Business. So People includes everyone; Business is the
       // business subset rendered with its storefront face.
-      _people = profiles.toList();
+      _people = profiles;
       _business = profiles.where((p) => p.isBusiness).toList();
-      _events = results[1] as List<Event>;
+      _events = (results[1] as List<Event>)
+          .where((e) => !blocked.contains(e.organizerId))
+          .toList();
       _communities = results[2] as List<Community>;
       _loading = false;
     });

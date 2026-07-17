@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -5,6 +7,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -51,6 +55,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   final ScrollController _scrollController = ScrollController();
   late final TabController _tabController;
   String? _currentUserId;
+
+  // Blocked users — their messages / roster rows are hidden here. Resolved on
+  // open and kept live via the block broadcast.
+  Set<String> _blockedIds = <String>{};
+  StreamSubscription<String>? _blockedSub;
   String _currentUserName = '';
   String? _currentUserPhoto;
   bool _isLocalGuide = false;
@@ -97,6 +106,21 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _loadUserInfo();
     _loadCommunityDetail();
+    _loadBlocked();
+  }
+
+  Future<void> _loadBlocked() async {
+    final uid = _currentUserId;
+    if (uid == null) return;
+    final svc = di.sl<BlockedUsersService>();
+    try {
+      final ids = await svc.getBlockedUserIds(uid);
+      if (mounted) setState(() => _blockedIds = ids);
+    } catch (_) {}
+    // Live: hide a user's messages/roster row the instant they're blocked.
+    _blockedSub = svc.onUserBlocked.listen((id) {
+      if (mounted) setState(() => _blockedIds = {..._blockedIds, id});
+    });
   }
 
   void _loadUserInfo() {
@@ -137,6 +161,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
   @override
   void dispose() {
+    _blockedSub?.cancel();
     _messageController.dispose();
     _scrollController.dispose();
     _tabController.dispose();
@@ -448,6 +473,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   Widget _buildChatTab(CommunityDetailLoaded state) {
     final chat = state.messages
         .where((m) => !m.isTip && !m.isAnnouncement)
+        .where((m) => !_blockedIds.contains(m.senderId))
         .toList();
     return Column(
       children: [
@@ -462,7 +488,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   /// Tips tab — a filterable board of language tips / cultural facts / city
   /// tips, so shared knowledge stays put instead of scrolling past in chat.
   Widget _buildTipsTab(CommunityDetailLoaded state) {
-    var tips = state.messages.where((m) => m.isTip).toList();
+    var tips = state.messages
+        .where((m) => m.isTip && !_blockedIds.contains(m.senderId))
+        .toList();
     if (_tipFilter != null) {
       tips = tips.where((m) => m.type == _tipFilter).toList();
     }
@@ -580,7 +608,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   /// Announcements tab — read-only broadcast feed. Owner/admin get a composer
   /// bar; members only read.
   Widget _buildAnnouncementsTab(CommunityDetailLoaded state) {
-    final anns = state.messages.where((m) => m.isAnnouncement).toList();
+    final anns = state.messages
+        .where((m) => m.isAnnouncement && !_blockedIds.contains(m.senderId))
+        .toList();
     return Column(
       children: [
         Expanded(
@@ -1423,9 +1453,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             builder: (context, scrollController) {
               return BlocBuilder<CommunitiesBloc, CommunitiesState>(
                 builder: (context, state) {
-                  // Banned members are hidden from the roster.
+                  // Banned and blocked members are hidden from the roster.
                   final members = state is CommunityDetailLoaded
-                      ? state.members.where((m) => !m.isBanned).toList()
+                      ? state.members
+                          .where((m) =>
+                              !m.isBanned && !_blockedIds.contains(m.userId))
+                          .toList()
                       : const <CommunityMember>[];
                   return Column(
                     children: [
