@@ -40,6 +40,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     on<DiscoveryStackRefreshRequested>(_onRefreshStack);
     on<DiscoveryMoreCandidatesRequested>(_onLoadMore);
     on<DiscoveryPrefetchRequested>(_onPrefetch);
+    on<DiscoveryUserBlocked>(_onUserBlocked);
   }
   final GetDiscoveryStack getDiscoveryStack;
   final RecordSwipe recordSwipe;
@@ -102,6 +103,26 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
         }
       },
     );
+  }
+
+  /// A user was blocked anywhere — drop their card from the stack immediately so
+  /// they vanish without waiting for a reload/refetch.
+  Future<void> _onUserBlocked(
+    DiscoveryUserBlocked event,
+    Emitter<DiscoveryState> emit,
+  ) async {
+    final data = _extractCards();
+    if (data == null) return;
+    final removedBefore = data.cards
+        .take(data.currentIndex)
+        .where((c) => c.userId == event.blockedUserId)
+        .length;
+    final cards =
+        data.cards.where((c) => c.userId != event.blockedUserId).toList();
+    if (cards.length == data.cards.length) return; // nothing to remove
+    final newIndex =
+        (data.currentIndex - removedBefore).clamp(0, cards.length).toInt();
+    emit(DiscoveryLoaded(cards: cards, currentIndex: newIndex));
   }
 
   /// Extract cards and currentIndex from any card-bearing state

@@ -1162,8 +1162,10 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // Deactivate any active match between the two users
       await _deactivateMatchBetweenUsers(blockerId, blockedUserId);
 
-      // Invalidate blocked users cache so subsequent reads see the new block
+      // Invalidate blocked users cache so subsequent reads see the new block,
+      // and broadcast the block so live lists drop the user immediately.
       blockedUsersService.invalidate(blockerId);
+      blockedUsersService.notifyBlocked(blockedUserId);
     } catch (e) {
       throw Exception('Failed to block user: $e');
     }

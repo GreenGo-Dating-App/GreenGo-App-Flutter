@@ -10,6 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/location_refresh_service.dart';
 import '../../../../core/services/presence_service.dart';
@@ -195,7 +196,14 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       const Duration(seconds: 30),
       (_) => _refreshOnlineStatuses(),
     );
+    // Drop a blocked user's card from the stack the instant a block happens
+    // anywhere (profile menu, chat, etc.) — no reload needed.
+    _blockedSub = di.sl<BlockedUsersService>().onUserBlocked.listen((id) {
+      if (mounted) context.read<DiscoveryBloc>().add(DiscoveryUserBlocked(id));
+    });
   }
+
+  StreamSubscription<String>? _blockedSub;
 
   /// Load saved match preferences from Firestore, then start the discovery stack
   Future<void> _loadSavedPreferencesAndStart() async {
@@ -457,6 +465,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   @override
   void dispose() {
     _onlineStatusTimer?.cancel();
+    _blockedSub?.cancel();
     _dragProgress.dispose();
     super.dispose();
   }
