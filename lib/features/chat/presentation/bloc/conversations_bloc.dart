@@ -68,24 +68,41 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     }
   }
 
+  /// Optimistically drop [conversationId] from the currently-shown list so the
+  /// row disappears IMMEDIATELY (no waiting on the round-trip, no full-screen
+  /// error/loading swap). The active conversations stream reconciles afterwards.
+  void _removeConversationOptimistically(
+    String conversationId,
+    Emitter<ConversationsState> emit,
+  ) {
+    final cur = state;
+    if (cur is! ConversationsLoaded) return;
+    final remaining = cur.conversations
+        .where((c) => c.conversationId != conversationId)
+        .toList();
+    emit(remaining.isEmpty
+        ? const ConversationsEmpty()
+        : ConversationsLoaded(conversations: remaining));
+  }
+
   Future<void> _onDeleteForMe(
     ConversationDeleteForMeRequested event,
     Emitter<ConversationsState> emit,
   ) async {
+    _removeConversationOptimistically(event.conversationId, emit);
     final result = await deleteConversationForMe(
       DeleteConversationForMeParams(
         conversationId: event.conversationId,
         userId: event.userId,
       ),
     );
+    // On failure, reload to restore the row; on success the stream reconciles —
+    // no reload (which would blank the list with a Loading state).
     result.fold(
-      (failure) => emit(ConversationsError('Failed to delete: ${failure.toString()}')),
       (_) {
-        // Refresh conversations after deletion
-        if (_userId != null) {
-          add(ConversationsLoadRequested(_userId!));
-        }
+        if (_userId != null) add(ConversationsLoadRequested(_userId!));
       },
+      (_) {},
     );
   }
 
@@ -93,6 +110,7 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     ConversationDeleteForBothRequested event,
     Emitter<ConversationsState> emit,
   ) async {
+    _removeConversationOptimistically(event.conversationId, emit);
     final result = await deleteConversationForBoth(
       DeleteConversationForBothParams(
         conversationId: event.conversationId,
@@ -100,13 +118,10 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
       ),
     );
     result.fold(
-      (failure) => emit(ConversationsError('Failed to delete: ${failure.toString()}')),
       (_) {
-        // Refresh conversations after deletion
-        if (_userId != null) {
-          add(ConversationsLoadRequested(_userId!));
-        }
+        if (_userId != null) add(ConversationsLoadRequested(_userId!));
       },
+      (_) {},
     );
   }
 

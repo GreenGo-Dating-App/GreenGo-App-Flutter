@@ -163,22 +163,30 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     DeleteEvent event,
     Emitter<EventsState> emit,
   ) async {
-    emit(const EventsLoading());
+    // OPTIMISTIC removal: drop the event from every in-memory list and repaint
+    // the list IMMEDIATELY (no full-screen EventsLoading, which blanked all the
+    // tabs and — because EventDeleted isn't EventsLoaded — left them empty until
+    // a manual reload). Persist in the BACKGROUND. Mirrors _onUpdateEvent.
+    _allEvents.removeWhere((e) => e.id == event.eventId);
+    _userEvents.removeWhere((e) => e.id == event.eventId);
+    _nearbyEvents.removeWhere((e) => e.id == event.eventId);
+    _attendeesMap.remove(event.eventId);
+    // Transient signal for the "event deleted" snackbar, immediately followed by
+    // the refreshed list state so the tabs never blank.
+    emit(EventDeleted(eventId: event.eventId));
+    emit(EventsLoaded(
+      events: _allEvents,
+      selectedCategory: _selectedCategory,
+      attendeesMap: _attendeesMap,
+      userEvents: _userEvents,
+      nearbyEvents: _nearbyEvents,
+    ));
 
+    // Persist in the background; a later reload reconciles on failure.
     final result = await repository.deleteEvent(event.eventId);
-
     result.fold(
-      (failure) {
-        debugPrint('Failed to delete event: ${failure.message}');
-        emit(EventsError(failure.message));
-      },
-      (_) {
-        _allEvents.removeWhere((e) => e.id == event.eventId);
-        _userEvents.removeWhere((e) => e.id == event.eventId);
-        _nearbyEvents.removeWhere((e) => e.id == event.eventId);
-        _attendeesMap.remove(event.eventId);
-        emit(EventDeleted(eventId: event.eventId));
-      },
+      (failure) => debugPrint('Failed to delete event: ${failure.message}'),
+      (_) {},
     );
   }
 

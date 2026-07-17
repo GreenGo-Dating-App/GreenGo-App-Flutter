@@ -91,7 +91,39 @@ class SafetyActionsService {
       // Ignore.
     }
 
+    // Deactivate any active match between the two users (mirrors the chat-side
+    // block) so a blocked person can't linger as a live connection.
+    await _deactivateMatchBetweenUsers(blockerId, blockedUserId);
+
     // Invalidate the shared cache so discovery/chat filters see the block now.
     blockedUsersService.invalidate(blockerId);
+  }
+
+  /// Flip any active match between the two users to inactive (both orderings).
+  /// Best-effort — the block itself is the important part.
+  Future<void> _deactivateMatchBetweenUsers(String a, String b) async {
+    Future<void> deactivate(String u1, String u2) async {
+      final q = await firestore
+          .collection('matches')
+          .where('userId1', isEqualTo: u1)
+          .where('userId2', isEqualTo: u2)
+          .where('isActive', isEqualTo: true)
+          .get();
+      for (final doc in q.docs) {
+        await doc.reference.update({
+          'isActive': false,
+          'unmatchedAt': FieldValue.serverTimestamp(),
+          'unmatchedBy': a,
+          'unmatchReason': 'blocked',
+        });
+      }
+    }
+
+    try {
+      await deactivate(a, b);
+      await deactivate(b, a);
+    } catch (_) {
+      // Ignore — the block write already succeeded.
+    }
   }
 }
