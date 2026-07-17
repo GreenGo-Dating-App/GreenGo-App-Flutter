@@ -15,6 +15,7 @@ import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../data/datasources/community_favorites_service.dart';
 import '../../domain/entities/community.dart';
 import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
@@ -40,8 +41,15 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   CommunityType? _selectedFilter;
   final TextEditingController _searchController = TextEditingController();
   final TextEditingController _managedSearchController = TextEditingController();
+  final TextEditingController _joinedSearchController = TextEditingController();
   final ScrollController _discoverScrollController = ScrollController();
   String _searchQuery = '';
+  String _joinedSearchQuery = '';
+
+  // Per-user favorite communities (starred on the Joined tab). Loaded once,
+  // toggled optimistically, persisted via [CommunityFavoritesService].
+  final CommunityFavoritesService _favoritesService = CommunityFavoritesService();
+  Set<String> _favoriteIds = <String>{};
   String _managedSearchQuery = '';
   String? _currentUserId;
   // Last good list state. Opening a community detail makes the SHARED bloc emit
@@ -59,6 +67,42 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _discoverScrollController.addListener(_onDiscoverScroll);
     _loadInitialData();
+    _loadFavorites();
+  }
+
+  /// One cheap read of the user's starred communities (single-doc id array).
+  Future<void> _loadFavorites() async {
+    final uid = _currentUserId;
+    if (uid == null) return;
+    try {
+      final ids = await _favoritesService.getAll(uid);
+      if (mounted) setState(() => _favoriteIds = ids);
+    } catch (_) {
+      // Non-fatal: the star just starts un-filled.
+    }
+  }
+
+  /// Optimistically toggle a favorite, then persist (revert on failure).
+  Future<void> _toggleFavorite(Community community) async {
+    final uid = _currentUserId;
+    if (uid == null) return;
+    final id = community.id;
+    final wasFavorite = _favoriteIds.contains(id);
+    setState(() {
+      final next = Set<String>.from(_favoriteIds);
+      wasFavorite ? next.remove(id) : next.add(id);
+      _favoriteIds = next;
+    });
+    try {
+      await _favoritesService.setFavorite(uid, id, !wasFavorite);
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        final revert = Set<String>.from(_favoriteIds);
+        wasFavorite ? revert.add(id) : revert.remove(id);
+        _favoriteIds = revert;
+      });
+    }
   }
 
   bool _managedLoaded = false;
@@ -144,6 +188,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     _tabController.dispose();
     _searchController.dispose();
     _managedSearchController.dispose();
+    _joinedSearchController.dispose();
     _discoverScrollController.dispose();
     super.dispose();
   }
@@ -277,29 +322,153 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       );
     }
 
-    return RefreshIndicator(
-      color: AppColors.richGold,
-      backgroundColor: AppColors.backgroundCard,
-      onRefresh: () async {
-        if (_currentUserId != null) {
-          context.read<CommunitiesBloc>().add(
-                LoadUserCommunities(userId: _currentUserId!),
-              );
-        }
-      },
-      child: ListView.builder(
-        physics: const AlwaysScrollableScrollPhysics(),
-        padding: const EdgeInsets.only(
-          top: AppDimensions.paddingS,
-          bottom: 80,
+    // Search filter over the joined communities.
+    final q = _joinedSearchQuery.trim().toLowerCase();
+    final matched = q.isEmpty
+        ? userCommunities
+        : userCommunities
+            .where((c) =>
+                c.name.toLowerCase().contains(q) ||
+                c.description.toLowerCase().contains(q))
+            .toList();
+
+    // Pin FAVORITES to the top (starred first, preserving relative order), the
+    // rest below.
+    final favorites =
+        matched.where((c) => _favoriteIds.contains(c.id)).toList();
+    final others =
+        matched.where((c) => !_favoriteIds.contains(c.id)).toList();
+    final ordered = [...favorites, ...others];
+
+    return Column(
+      children: [
+        _joinedSearchBar(),
+        Expanded(
+          child: RefreshIndicator(
+            color: AppColors.richGold,
+            backgroundColor: AppColors.backgroundCard,
+            onRefresh: () async {
+              if (_currentUserId != null) {
+                context.read<CommunitiesBloc>().add(
+                      LoadUserCommunities(userId: _currentUserId!),
+                    );
+                await _loadFavorites();
+              }
+            },
+            child: ordered.isEmpty
+                ? ListView(
+                    physics: const AlwaysScrollableScrollPhysics(),
+                    children: [
+                      const SizedBox(height: 80),
+                      _buildEmptyState(
+                        icon: Icons.search_off,
+                        title: AppLocalizations.of(context)!
+                            .communitiesNoCommunitiesFound,
+                        subtitle:
+                            AppLocalizations.of(context)!.communitiesAdjustSearch,
+                      ),
+                    ],
+                  )
+                : ListView.builder(
+                    physics: const AlwaysScrollableScrollPhysics(),
+                    padding: const EdgeInsets.only(
+                      top: AppDimensions.paddingS,
+                      bottom: 80,
+                    ),
+                    // +1 for the "Favorites" section header when any exist and
+                    // no search is narrowing the list.
+                    itemCount: ordered.length + (favorites.isNotEmpty ? 1 : 0),
+                    itemBuilder: (context, index) {
+                      if (favorites.isNotEmpty) {
+                        if (index == 0) {
+                          return _sectionHeader(AppLocalizations.of(context)!
+                              .communitiesFavoritesSection);
+                        }
+                        final c = ordered[index - 1];
+                        return CommunityCard(
+                          community: c,
+                          showFavorite: true,
+                          isFavorite: _favoriteIds.contains(c.id),
+                          onToggleFavorite: () => _toggleFavorite(c),
+                          onTap: () => _navigateToCommunityDetail(c),
+                        );
+                      }
+                      final c = ordered[index];
+                      return CommunityCard(
+                        community: c,
+                        showFavorite: true,
+                        isFavorite: _favoriteIds.contains(c.id),
+                        onToggleFavorite: () => _toggleFavorite(c),
+                        onTap: () => _navigateToCommunityDetail(c),
+                      );
+                    },
+                  ),
+          ),
         ),
-        itemCount: userCommunities.length,
-        itemBuilder: (context, index) {
-          return CommunityCard(
-            community: userCommunities[index],
-            onTap: () => _navigateToCommunityDetail(userCommunities[index]),
-          );
-        },
+      ],
+    );
+  }
+
+  /// A small section header (e.g. "Favorites") above a group of cards.
+  Widget _sectionHeader(String label) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
+      child: Row(
+        children: [
+          const Icon(Icons.star, size: 16, color: AppColors.richGold),
+          const SizedBox(width: 6),
+          Text(
+            label.toUpperCase(),
+            style: const TextStyle(
+              color: AppColors.textTertiary,
+              fontSize: 12,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 0.5,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Search field for the "Joined" (My Groups) tab.
+  Widget _joinedSearchBar() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: TextField(
+        controller: _joinedSearchController,
+        style: const TextStyle(color: AppColors.textPrimary),
+        decoration: InputDecoration(
+          hintText: AppLocalizations.of(context)!.communitiesSearchHint,
+          hintStyle: TextStyle(
+            color: AppColors.textTertiary.withValues(alpha: 0.6),
+          ),
+          prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
+          suffixIcon: _joinedSearchQuery.isNotEmpty
+              ? IconButton(
+                  icon: const Icon(Icons.clear, color: AppColors.textTertiary),
+                  onPressed: () {
+                    _joinedSearchController.clear();
+                    setState(() => _joinedSearchQuery = '');
+                  },
+                )
+              : null,
+          filled: true,
+          fillColor: AppColors.backgroundCard,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide.none,
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(color: AppColors.richGold),
+          ),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 12,
+          ),
+        ),
+        onChanged: (value) => setState(() => _joinedSearchQuery = value),
       ),
     );
   }

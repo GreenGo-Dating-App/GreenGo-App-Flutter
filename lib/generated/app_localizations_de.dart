@@ -3310,6 +3310,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get communitiesSearchHint => 'Communities suchen...';
 
   @override
+  String get communitiesSaveFavorite => 'Save to favorites';
+
+  @override
+  String get communitiesRemoveFavorite => 'Remove from favorites';
+
+  @override
+  String get communitiesFavoritesSection => 'Favorites';
+
+  @override
   String get communitiesShareCityTip => 'Teile einen Stadttipp...';
 
   @override
