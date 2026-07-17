@@ -39,6 +39,10 @@ class TourKeys {
   // ── Tier 2: Communities screen mini-tour ──
   static final GlobalKey communitiesTabs =
       GlobalKey(debugLabel: 'tour_communities_tabs');
+  static final GlobalKey communitiesSearch =
+      GlobalKey(debugLabel: 'tour_communities_search');
+  static final GlobalKey communitiesCard =
+      GlobalKey(debugLabel: 'tour_communities_card');
   static final GlobalKey communitiesCreate =
       GlobalKey(debugLabel: 'tour_communities_create');
 

@@ -70,6 +70,28 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     _loadFavorites();
   }
 
+  /// The Communities first-time guide, in display order. Unmounted targets are
+  /// filtered out at start time (e.g. search/card when the Joined tab is empty).
+  static List<GlobalKey> get _communitiesTourKeys => [
+        TourKeys.communitiesTabs,
+        TourKeys.communitiesSearch,
+        TourKeys.communitiesCard,
+        TourKeys.communitiesCreate,
+      ];
+
+  /// Replay the page guide (from the "?" app-bar button). Jumps to the Joined
+  /// tab first so the search + card steps have something to anchor to.
+  void _replayTour(BuildContext showcaseContext) {
+    if (_tabController.index != 0) _tabController.animateTo(0);
+    // Let the Joined tab build so its showcase targets are mounted.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        TourController.instance
+            .startMiniTourNow(showcaseContext, _communitiesTourKeys);
+      }
+    });
+  }
+
   /// One cheap read of the user's starred communities (single-doc id array).
   Future<void> _loadFavorites() async {
     final uid = _currentUserId;
@@ -199,14 +221,16 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     final tourUserId = _currentUserId;
     return ShowCaseWidget(
       builder: (showcaseContext) => TourTrigger(
-        // First-time Communities tour: highlights the tabs and the create button.
+        // First-time Communities tour: tabs -> search -> a community card
+        // (open + favorite) -> the create button. Unmounted targets (e.g. the
+        // search/card on an empty Joined tab) are skipped automatically.
         onVisible: (tourContext) {
           if (tourUserId == null) return;
           TourController.instance.maybeStartMiniTour(
             tourContext,
             tourId: TourController.communitiesTourId,
             userId: tourUserId,
-            keys: [TourKeys.communitiesTabs, TourKeys.communitiesCreate],
+            keys: _communitiesTourKeys,
           );
         },
         child: Scaffold(
@@ -222,6 +246,13 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             fontWeight: FontWeight.bold,
           ),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.help_outline, color: AppColors.textTertiary),
+            tooltip: l10n.tourReplayGuide,
+            onPressed: () => _replayTour(showcaseContext),
+          ),
+        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(kTextTabBarHeight),
           child: TourShowcase(
@@ -384,28 +415,36 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                           return _sectionHeader(AppLocalizations.of(context)!
                               .communitiesFavoritesSection);
                         }
-                        final c = ordered[index - 1];
-                        return CommunityCard(
-                          community: c,
-                          showFavorite: true,
-                          isFavorite: _favoriteIds.contains(c.id),
-                          onToggleFavorite: () => _toggleFavorite(c),
-                          onTap: () => _navigateToCommunityDetail(c),
-                        );
+                        final oi = index - 1;
+                        return _joinedCard(ordered[oi], isFirst: oi == 0);
                       }
-                      final c = ordered[index];
-                      return CommunityCard(
-                        community: c,
-                        showFavorite: true,
-                        isFavorite: _favoriteIds.contains(c.id),
-                        onToggleFavorite: () => _toggleFavorite(c),
-                        onTap: () => _navigateToCommunityDetail(c),
-                      );
+                      return _joinedCard(ordered[index], isFirst: index == 0);
                     },
                   ),
           ),
         ),
       ],
+    );
+  }
+
+  /// A joined-community card. The FIRST card is wrapped in a tour showcase step
+  /// that explains tapping to open + the favorite star.
+  Widget _joinedCard(Community c, {required bool isFirst}) {
+    final card = CommunityCard(
+      community: c,
+      showFavorite: true,
+      isFavorite: _favoriteIds.contains(c.id),
+      onToggleFavorite: () => _toggleFavorite(c),
+      onTap: () => _navigateToCommunityDetail(c),
+    );
+    if (!isFirst) return card;
+    final l10n = AppLocalizations.of(context)!;
+    return TourShowcase(
+      showcaseKey: TourKeys.communitiesCard,
+      title: l10n.tourCommunitiesCardTitle,
+      description: l10n.tourCommunitiesCardDesc,
+      gesture: TourGesture.tap,
+      child: card,
     );
   }
 
@@ -433,7 +472,13 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
 
   /// Search field for the "Joined" (My Groups) tab.
   Widget _joinedSearchBar() {
-    return Padding(
+    final l10n = AppLocalizations.of(context)!;
+    return TourShowcase(
+      showcaseKey: TourKeys.communitiesSearch,
+      title: l10n.tourCommunitiesSearchTitle,
+      description: l10n.tourCommunitiesSearchDesc,
+      gesture: TourGesture.tap,
+      child: Padding(
       padding: const EdgeInsets.all(16),
       child: TextField(
         controller: _joinedSearchController,
@@ -469,6 +514,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           ),
         ),
         onChanged: (value) => setState(() => _joinedSearchQuery = value),
+      ),
       ),
     );
   }

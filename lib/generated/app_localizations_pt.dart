@@ -13089,11 +13089,28 @@ class AppLocalizationsPt extends AppLocalizations {
       'Alterne entre os grupos que voce entrou, descubra novos e gerencie as comunidades que voce criou.';
 
   @override
+  String get tourCommunitiesSearchTitle => 'Find your groups';
+
+  @override
+  String get tourCommunitiesSearchDesc =>
+      'Type here to filter your communities by name — handy once you\'ve joined a few.';
+
+  @override
+  String get tourCommunitiesCardTitle => 'Open & favorite';
+
+  @override
+  String get tourCommunitiesCardDesc =>
+      'Tap a community to open its chat, tips, announcements and events. Tap the ⭐ star to save it — favorites pin to the top.';
+
+  @override
   String get tourCommunitiesCreateTitle => 'Crie uma comunidade';
 
   @override
   String get tourCommunitiesCreateDesc =>
       'Toque aqui para criar sua propria comunidade e reunir as pessoas.';
+
+  @override
+  String get tourReplayGuide => 'Replay guide';
 
   @override
   String get tourEventsCreateTitle => 'Crie um evento';
