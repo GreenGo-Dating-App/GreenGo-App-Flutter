@@ -19938,6 +19938,30 @@ abstract class AppLocalizations {
   /// **'Share event'**
   String get eventShare;
 
+  /// No description provided for @eventReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Report event'**
+  String get eventReport;
+
+  /// No description provided for @eventReportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this event?'**
+  String get eventReportTitle;
+
+  /// No description provided for @eventReportBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Our team will review it. You won\'t see this event anymore.'**
+  String get eventReportBody;
+
+  /// No description provided for @eventReported.
+  ///
+  /// In en, this message translates to:
+  /// **'Event reported'**
+  String get eventReported;
+
   /// No description provided for @shareAsLink.
   ///
   /// In en, this message translates to:
@@ -23123,6 +23147,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Replay guide'**
   String get tourReplayGuide;
+
+  /// No description provided for @tourExploreSearchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search everything'**
+  String get tourExploreSearchTitle;
+
+  /// No description provided for @tourExploreSearchDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Find people, businesses, events and communities — all from one search.'**
+  String get tourExploreSearchDesc;
+
+  /// No description provided for @tourExploreQrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your QR code'**
+  String get tourExploreQrTitle;
+
+  /// No description provided for @tourExploreQrDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan or share a QR code to connect instantly in person.'**
+  String get tourExploreQrDesc;
 
   /// No description provided for @tourEventsCreateTitle.
   ///

@@ -135,6 +135,21 @@ class EditProfileScreen extends StatelessWidget {
               color: AppColors.textPrimary,
             ),
           ),
+          actions: [
+            IconButton(
+              icon:
+                  const Icon(Icons.help_outline, color: AppColors.textTertiary),
+              tooltip: AppLocalizations.of(context)!.tourReplayGuide,
+              onPressed: () => TourController.instance.startMiniTourNow(
+                showcaseContext,
+                [
+                  TourKeys.profileHub,
+                  TourKeys.profileViewCard,
+                  TourKeys.profileEditAccordion,
+                ],
+              ),
+            ),
+          ],
         ),
         body: BlocConsumer<ProfileBloc, ProfileState>(
           listener: (context, state) {

@@ -6,6 +6,12 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../app_tour/presentation/tour_controller.dart';
+import '../../../app_tour/presentation/tour_keys.dart';
+import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
+import '../../../app_tour/presentation/widgets/tour_showcase.dart';
+import '../../../app_tour/presentation/widgets/tour_trigger.dart';
+import 'package:showcaseview/showcaseview.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/services/session_cache_gate.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
@@ -1254,7 +1260,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final l10n = AppLocalizations.of(context)!;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
 
-    return Scaffold(
+    return ShowCaseWidget(
+      builder: (showcaseContext) => TourTrigger(
+        // First-time Explore tour: the search and QR header actions.
+        onVisible: (tourContext) => TourController.instance.maybeStartMiniTour(
+          tourContext,
+          tourId: TourController.exploreTourId,
+          userId: widget.userId,
+          keys: [TourKeys.exploreSearch, TourKeys.exploreQr],
+        ),
+        child: Scaffold(
       backgroundColor: AppColors.backgroundDark,
       // Solid black page (matches the other tabs). The flag-colored band is
       // drawn only behind the header/hero via [_TopBackdropBand]; everything
@@ -1374,6 +1389,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
         ),
       ),
+        ),
+      ),
     );
   }
 
@@ -1429,19 +1446,45 @@ class _ExploreScreenState extends State<ExploreScreen> {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        _headerIconButton(
-          icon: Icons.search,
-          tooltip: l10n.exploreSearchTooltip,
-          onTap: () => Navigator.of(context).push(
-            UniversalSearchScreen.route(currentUserId: widget.userId),
+        // Replay the Explore guide.
+        Builder(
+          builder: (btnContext) => _headerIconButton(
+            icon: Icons.help_outline,
+            tooltip: l10n.tourReplayGuide,
+            onTap: () => TourController.instance.startMiniTourNow(
+              btnContext,
+              [TourKeys.exploreSearch, TourKeys.exploreQr],
+            ),
           ),
         ),
         const SizedBox(width: 8),
-        _headerIconButton(
-          icon: Icons.qr_code_scanner,
-          tooltip: l10n.exploreQrTooltip,
-          onTap: () => Navigator.of(context).push(
-            QRHubScreen.route(currentUserId: widget.userId),
+        TourShowcase(
+          showcaseKey: TourKeys.exploreSearch,
+          title: l10n.tourExploreSearchTitle,
+          description: l10n.tourExploreSearchDesc,
+          gesture: TourGesture.tap,
+          targetShapeBorder: const CircleBorder(),
+          child: _headerIconButton(
+            icon: Icons.search,
+            tooltip: l10n.exploreSearchTooltip,
+            onTap: () => Navigator.of(context).push(
+              UniversalSearchScreen.route(currentUserId: widget.userId),
+            ),
+          ),
+        ),
+        const SizedBox(width: 8),
+        TourShowcase(
+          showcaseKey: TourKeys.exploreQr,
+          title: l10n.tourExploreQrTitle,
+          description: l10n.tourExploreQrDesc,
+          gesture: TourGesture.tap,
+          targetShapeBorder: const CircleBorder(),
+          child: _headerIconButton(
+            icon: Icons.qr_code_scanner,
+            tooltip: l10n.exploreQrTooltip,
+            onTap: () => Navigator.of(context).push(
+              QRHubScreen.route(currentUserId: widget.userId),
+            ),
           ),
         ),
         const SizedBox(width: 8),

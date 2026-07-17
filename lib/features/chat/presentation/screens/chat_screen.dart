@@ -2202,6 +2202,22 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
       ),
       actions: [
+        // Replay the chat guide.
+        Builder(
+          builder: (btnContext) => IconButton(
+            icon: const Icon(Icons.help_outline, color: AppColors.textSecondary),
+            tooltip: AppLocalizations.of(context)!.tourReplayGuide,
+            onPressed: () => TourController.instance.startMiniTourNow(
+              btnContext,
+              [
+                TourKeys.chatBubbleHold,
+                TourKeys.chatBubbleDoubleTap,
+                TourKeys.chatLanguageMenu,
+                TourKeys.chatSettings,
+              ],
+            ),
+          ),
+        ),
         // Languages & learning menu
         TourShowcase(
           showcaseKey: TourKeys.chatLanguageMenu,

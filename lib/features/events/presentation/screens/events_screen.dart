@@ -319,6 +319,19 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
                 onPressed: () => _showFilterDialog(context),
               ),
+            IconButton(
+              icon:
+                  const Icon(Icons.help_outline, color: AppColors.textTertiary),
+              tooltip: l10n.tourReplayGuide,
+              onPressed: () => TourController.instance.startMiniTourNow(
+                showcaseContext,
+                [
+                  TourKeys.eventsCreate,
+                  TourKeys.eventsSearch,
+                  TourKeys.eventsTabs,
+                ],
+              ),
+            ),
           ],
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(kTextTabBarHeight),
@@ -1864,6 +1877,59 @@ class EventDetailsScreen extends StatelessWidget {
   final Event event;
   final String currentUserId;
 
+  /// Report another user's event: confirm, write a `reports` doc, hide it from
+  /// this viewer's lists immediately, and leave the screen.
+  Future<void> _reportEvent(BuildContext context, Event event) async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final navigator = Navigator.of(context);
+    final bloc = context.read<EventsBloc>();
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventReportTitle,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.eventReportBody,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: Text(l10n.cancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: Text(l10n.eventReport,
+                style: const TextStyle(color: AppColors.errorRed)),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+    try {
+      await FirebaseFirestore.instance.collection('reports').add({
+        'type': 'event',
+        'eventId': event.id,
+        'organizerId': event.organizerId,
+        'eventTitle': event.title,
+        'reporterId': currentUserId,
+        'reportedAt': Timestamp.fromDate(DateTime.now()),
+        'status': 'pending',
+      });
+      bloc.add(HideEvent(eventId: event.id));
+      messenger.showSnackBar(SnackBar(
+        content: Text(l10n.eventReported),
+        backgroundColor: AppColors.errorRed,
+      ));
+      if (navigator.canPop()) navigator.pop();
+    } catch (_) {
+      messenger.showSnackBar(SnackBar(
+        content: Text(l10n.somethingWentWrong),
+        backgroundColor: AppColors.errorRed,
+      ));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1948,6 +2014,14 @@ class EventDetailsScreen extends StatelessWidget {
                       color: AppColors.richGold),
                   tooltip: AppLocalizations.of(context)!.eventsBoost,
                   onPressed: () => _handleBoost(context, event),
+                ),
+              // Report — only on OTHER people's events.
+              if (event.organizerId != currentUserId)
+                IconButton(
+                  icon: const Icon(Icons.flag_outlined,
+                      color: AppColors.textTertiary),
+                  tooltip: AppLocalizations.of(context)!.eventReport,
+                  onPressed: () => _reportEvent(context, event),
                 ),
               // Single merged share: as a link, into an Exchange, or into a group.
               IconButton(
