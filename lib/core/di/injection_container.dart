@@ -437,6 +437,7 @@ Future<void> init() async {
       deleteConversationForMe: sl(),
       deleteConversationForBoth: sl(),
       chatRepository: sl(),
+      blockedUsersService: sl(),
     ),
   );
 

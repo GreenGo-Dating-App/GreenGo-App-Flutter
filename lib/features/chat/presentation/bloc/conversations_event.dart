@@ -69,3 +69,9 @@ class ConversationRejectSuperLikeRequested extends ConversationsEvent {
   final String conversationId;
   final String userId;
 }
+
+/// A user was blocked (anywhere) — drop any conversation with them immediately.
+class ConversationUserBlocked extends ConversationsEvent {
+  const ConversationUserBlocked(this.blockedUserId);
+  final String blockedUserId;
+}
