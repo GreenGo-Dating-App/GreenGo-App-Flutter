@@ -3297,6 +3297,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesSearchHint => 'Pesquisar comunidades...';
 
   @override
+  String get communitiesSaveFavorite => 'Save to favorites';
+
+  @override
+  String get communitiesRemoveFavorite => 'Remove from favorites';
+
+  @override
+  String get communitiesFavoritesSection => 'Favorites';
+
+  @override
   String get communitiesShareCityTip => 'Partilha uma dica da cidade...';
 
   @override

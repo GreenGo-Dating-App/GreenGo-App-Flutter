@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/community.dart';
 import 'sponsored_badge.dart';
 
@@ -14,10 +15,18 @@ class CommunityCard extends StatelessWidget {
     required this.community, super.key,
     this.onTap,
     this.showUnreadIndicator = false,
+    this.showFavorite = false,
+    this.isFavorite = false,
+    this.onToggleFavorite,
   });
   final Community community;
   final VoidCallback? onTap;
   final bool showUnreadIndicator;
+
+  /// When true, a favorite (star) toggle is shown at the trailing edge.
+  final bool showFavorite;
+  final bool isFavorite;
+  final VoidCallback? onToggleFavorite;
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +56,9 @@ class CommunityCard extends StatelessWidget {
 
             // Trailing (last activity time + unread indicator)
             _buildTrailing(),
+
+            // Favorite (star) toggle — Joined tab only.
+            if (showFavorite) _buildFavoriteStar(context),
           ],
         ),
       ),
@@ -154,6 +166,24 @@ class CommunityCard extends StatelessWidget {
           ),
         ],
       ],
+    );
+  }
+
+  Widget _buildFavoriteStar(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return IconButton(
+      padding: const EdgeInsets.only(left: 8),
+      constraints: const BoxConstraints(),
+      visualDensity: VisualDensity.compact,
+      icon: Icon(
+        isFavorite ? Icons.star : Icons.star_border,
+        color: isFavorite ? AppColors.richGold : AppColors.textTertiary,
+        size: 22,
+      ),
+      tooltip: isFavorite
+          ? l10n.communitiesRemoveFavorite
+          : l10n.communitiesSaveFavorite,
+      onPressed: onToggleFavorite,
     );
   }
 

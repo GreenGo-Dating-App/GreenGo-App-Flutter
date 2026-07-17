@@ -5879,6 +5879,24 @@ abstract class AppLocalizations {
   /// **'Search communities...'**
   String get communitiesSearchHint;
 
+  /// No description provided for @communitiesSaveFavorite.
+  ///
+  /// In en, this message translates to:
+  /// **'Save to favorites'**
+  String get communitiesSaveFavorite;
+
+  /// No description provided for @communitiesRemoveFavorite.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from favorites'**
+  String get communitiesRemoveFavorite;
+
+  /// No description provided for @communitiesFavoritesSection.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorites'**
+  String get communitiesFavoritesSection;
+
   /// No description provided for @communitiesShareCityTip.
   ///
   /// In en, this message translates to:

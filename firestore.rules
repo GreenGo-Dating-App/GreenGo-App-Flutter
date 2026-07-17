@@ -879,6 +879,13 @@ service cloud.firestore {
       allow read, write: if isOwner(userId);
     }
 
+    // Per-user PRIVATE favorite communities — each user's own starred list.
+    // Strictly private to the owner; never read/written by anyone else or by CFs.
+    // Shape: user_favorite_communities/{userId} = { communityIds: [id, ...] }
+    match /user_favorite_communities/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
     // Per-user PRIVATE saved discovery searches — each user's named snapshots of
     // the Network Discovery filter state (preferences + tags + query + alerts).
     // Strictly private to the owner. A saved-search-alerts Cloud Function (if
