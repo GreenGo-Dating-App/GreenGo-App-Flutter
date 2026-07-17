@@ -1305,11 +1305,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       await reportRef.set(reportData);
 
-      // Increment reported count on user profile for moderation
-      await firestore.collection('users').doc(reportedUserId).update({
-        'reportCount': FieldValue.increment(1),
-        'lastReportedAt': Timestamp.fromDate(DateTime.now()),
-      });
+      // NOTE: do NOT increment reportCount on the reported user's doc here — the
+      // `users` rules are owner/admin-only, so a reporter's write is DENIED and
+      // throws, which previously aborted the auto-block below (leaving the user
+      // un-blocked and the report surfaced as a failure). The `onUserReportCreated`
+      // Cloud Function maintains reportCount server-side instead.
 
       // Auto-block the reported user to prevent further interaction
       await blockUser(
