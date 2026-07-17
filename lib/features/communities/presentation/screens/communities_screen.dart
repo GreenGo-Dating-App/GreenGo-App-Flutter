@@ -849,10 +849,12 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         ),
       ),
     );
-    // The detail screen left the SHARED bloc in CommunityDetailLoaded; reload the
-    // lists so the Discover/Joined/Managed tabs repopulate (and reflect any
-    // join/leave done inside).
-    if (mounted) _reloadLists();
+    // NOTE: we deliberately do NOT reload the lists here. The detail screen
+    // leaves the SHARED bloc in CommunityDetailLoaded, but the build() falls back
+    // to the cached [_lastLoaded] so the tabs stay populated WITHOUT a visible
+    // refresh. A real join/leave inside the detail already triggers a reload via
+    // the BlocConsumer's CommunityJoined/CommunityLeft listener — so an
+    // unconditional reload here just caused the "weird refresh" on plain views.
   }
 
   Future<void> _navigateToCreateCommunity({CommunityType? preselectedType}) async {
