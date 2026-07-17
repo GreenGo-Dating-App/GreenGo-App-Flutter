@@ -1,6 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
@@ -47,11 +51,27 @@ class _EventChatScreenState extends State<EventChatScreen> {
   String? _myName;
   String? _myPhoto;
 
+  // Blocked users — their messages are hidden. Live via the block broadcast.
+  Set<String> _blockedIds = <String>{};
+  StreamSubscription<String>? _blockedSub;
+
   @override
   void initState() {
     super.initState();
     _dataSource = EventsRemoteDataSourceImpl();
     _resolveMe();
+    _loadBlocked();
+  }
+
+  Future<void> _loadBlocked() async {
+    final svc = di.sl<BlockedUsersService>();
+    try {
+      final ids = await svc.getBlockedUserIds(widget.currentUserId);
+      if (mounted) setState(() => _blockedIds = ids);
+    } catch (_) {}
+    _blockedSub = svc.onUserBlocked.listen((id) {
+      if (mounted) setState(() => _blockedIds = {..._blockedIds, id});
+    });
   }
 
   Future<void> _resolveMe() async {
@@ -92,6 +112,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
 
   @override
   void dispose() {
+    _blockedSub?.cancel();
     _messageController.dispose();
     _scrollController.dispose();
     super.dispose();
@@ -149,7 +170,9 @@ class _EventChatScreenState extends State<EventChatScreen> {
                   );
                 }
 
-                final messages = snapshot.data ?? [];
+                final messages = (snapshot.data ?? [])
+                    .where((m) => !_blockedIds.contains(m.senderId))
+                    .toList();
                 _ensureNames(messages.map((m) => m.senderId));
 
                 if (messages.isEmpty) {
