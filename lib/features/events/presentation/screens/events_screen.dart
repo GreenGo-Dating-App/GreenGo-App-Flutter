@@ -102,9 +102,9 @@ class _EventsScreenState extends State<EventsScreen>
   double? _userLat;
   double? _userLng;
   String _extSort = 'distance'; // distance | rating | reviews | date
-  // Live Events (ticketmaster) has its own order: soonest DATE first by default
-  // (they carry real dates, no ratings/reviews), user can switch to Distance.
-  String _liveSort = 'date'; // date | distance
+  // Live Events (ticketmaster) has its own order: DISTANCE (nearest) first by
+  // default; the user can switch to Date.
+  String _liveSort = 'distance'; // date | distance
   // Native tabs (Upcoming/Community/My Events): order by DATE (earliest first)
   // by default; the user can still switch to distance/popular from the menu.
   String _nativeSort = 'date'; // distance | date | popular
