@@ -25,6 +25,7 @@ class TourController {
   static const String eventsTourId = 'events';
   static const String profileTourId = 'profile';
   static const String notificationsTourId = 'notifications';
+  static const String exploreTourId = 'explore';
 
   static String _prefKey(String tourId, String userId) =>
       'tour_${tourId}_done_$userId';
@@ -175,6 +176,7 @@ class TourController {
       eventsTourId,
       profileTourId,
       notificationsTourId,
+      exploreTourId,
     ]) {
       await prefs.remove(_prefKey(id, userId));
     }

@@ -11340,6 +11340,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String get eventShare => 'Veranstaltung teilen';
 
   @override
+  String get eventReport => 'Report event';
+
+  @override
+  String get eventReportTitle => 'Report this event?';
+
+  @override
+  String get eventReportBody =>
+      'Our team will review it. You won\'t see this event anymore.';
+
+  @override
+  String get eventReported => 'Event reported';
+
+  @override
   String get shareAsLink => 'Als Link teilen';
 
   @override
@@ -13151,6 +13164,20 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tourReplayGuide => 'Replay guide';
+
+  @override
+  String get tourExploreSearchTitle => 'Search everything';
+
+  @override
+  String get tourExploreSearchDesc =>
+      'Find people, businesses, events and communities — all from one search.';
+
+  @override
+  String get tourExploreQrTitle => 'Your QR code';
+
+  @override
+  String get tourExploreQrDesc =>
+      'Scan or share a QR code to connect instantly in person.';
 
   @override
   String get tourEventsCreateTitle => 'Event erstellen';

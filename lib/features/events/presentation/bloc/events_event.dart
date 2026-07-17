@@ -42,6 +42,13 @@ class DeleteEvent extends EventsEvent {
   final String eventId;
 }
 
+/// Hide an event from THIS viewer's lists (e.g. after reporting it) without
+/// deleting it server-side.
+class HideEvent extends EventsEvent {
+  const HideEvent({required this.eventId});
+  final String eventId;
+}
+
 /// RSVP to an event
 class RsvpEvent extends EventsEvent { // going, interested, notGoing
 

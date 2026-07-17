@@ -112,6 +112,19 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                 return const SizedBox.shrink();
               },
             ),
+            IconButton(
+              icon:
+                  const Icon(Icons.help_outline, color: AppColors.textTertiary),
+              tooltip: l10n.tourReplayGuide,
+              onPressed: () => TourController.instance.startMiniTourNow(
+                showcaseContext,
+                [
+                  TourKeys.notifHub,
+                  TourKeys.notifFirstItem,
+                  TourKeys.notifMarkAll,
+                ],
+              ),
+            ),
           ],
         ),
         body: BlocBuilder<NotificationsBloc, NotificationsState>(

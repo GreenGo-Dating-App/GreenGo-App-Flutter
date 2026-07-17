@@ -62,6 +62,11 @@ class TourKeys {
   static final GlobalKey profileEditAccordion =
       GlobalKey(debugLabel: 'tour_profile_edit_accordion');
 
+  // ── Tier 2: Explore screen mini-tour ──
+  static final GlobalKey exploreSearch =
+      GlobalKey(debugLabel: 'tour_explore_search');
+  static final GlobalKey exploreQr = GlobalKey(debugLabel: 'tour_explore_qr');
+
   // ── Tier 2: Notifications screen mini-tour ──
   static final GlobalKey notifHub =
       GlobalKey(debugLabel: 'tour_notif_hub');

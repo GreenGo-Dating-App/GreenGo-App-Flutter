@@ -18,6 +18,7 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     on<CreateEvent>(_onCreateEvent);
     on<UpdateEvent>(_onUpdateEvent);
     on<DeleteEvent>(_onDeleteEvent);
+    on<HideEvent>(_onHideEvent);
     on<RsvpEvent>(_onRsvpEvent);
     on<CancelRsvp>(_onCancelRsvp);
     on<LoadEventAttendees>(_onLoadEventAttendees);
@@ -190,6 +191,22 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     );
   }
 
+  /// Hide a (reported) event from the viewer's in-memory lists immediately —
+  /// no server delete. Reconciled by moderation server-side.
+  void _onHideEvent(HideEvent event, Emitter<EventsState> emit) {
+    _allEvents.removeWhere((e) => e.id == event.eventId);
+    _userEvents.removeWhere((e) => e.id == event.eventId);
+    _nearbyEvents.removeWhere((e) => e.id == event.eventId);
+    _attendeesMap.remove(event.eventId);
+    emit(EventsLoaded(
+      events: _allEvents,
+      selectedCategory: _selectedCategory,
+      attendeesMap: _attendeesMap,
+      userEvents: _userEvents,
+      nearbyEvents: _nearbyEvents,
+    ));
+  }
+
   Future<void> _onRsvpEvent(
     RsvpEvent event,
     Emitter<EventsState> emit,
@@ -220,6 +237,27 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     Emitter<EventsState> emit,
   ) async {
     final wasDetail = state is EventDetailLoaded;
+
+    // OPTIMISTIC: if the user only ATTENDS this event (doesn't organize it),
+    // drop it from the My Events cache so the "Going" list updates instantly.
+    // Keep a copy to restore if the server call fails.
+    Event? removed;
+    var removedIdx = -1;
+    if (!wasDetail) {
+      removedIdx = _userEvents.indexWhere((e) => e.id == event.eventId);
+      if (removedIdx >= 0 &&
+          _userEvents[removedIdx].organizerId != event.userId) {
+        removed = _userEvents.removeAt(removedIdx);
+        emit(EventsLoaded(
+          events: _allEvents,
+          selectedCategory: _selectedCategory,
+          attendeesMap: _attendeesMap,
+          userEvents: _userEvents,
+          nearbyEvents: _nearbyEvents,
+        ));
+      }
+    }
+
     final result = await repository.cancelRsvp(
       event.eventId,
       event.userId,
@@ -228,6 +266,11 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     await result.fold(
       (failure) async {
         debugPrint('Failed to cancel RSVP: ${failure.message}');
+        // Restore the optimistically-removed event.
+        if (removed != null) {
+          _userEvents.insert(
+              removedIdx.clamp(0, _userEvents.length), removed);
+        }
         emit(EventsError(failure.message));
       },
       (_) async {
