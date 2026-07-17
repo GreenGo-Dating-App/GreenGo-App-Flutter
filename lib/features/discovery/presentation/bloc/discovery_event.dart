@@ -99,3 +99,9 @@ class DiscoveryPrefetchRequested extends DiscoveryEvent {
   final String userId;
   final MatchPreferences preferences;
 }
+
+/// A user was blocked (anywhere) — drop their card from the stack immediately.
+class DiscoveryUserBlocked extends DiscoveryEvent {
+  const DiscoveryUserBlocked(this.blockedUserId);
+  final String blockedUserId;
+}

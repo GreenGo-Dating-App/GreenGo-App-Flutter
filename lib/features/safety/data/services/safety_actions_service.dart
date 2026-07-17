@@ -95,8 +95,10 @@ class SafetyActionsService {
     // block) so a blocked person can't linger as a live connection.
     await _deactivateMatchBetweenUsers(blockerId, blockedUserId);
 
-    // Invalidate the shared cache so discovery/chat filters see the block now.
+    // Invalidate the shared cache so discovery/chat filters see the block now,
+    // and broadcast the block so live lists drop the user immediately.
     blockedUsersService.invalidate(blockerId);
+    blockedUsersService.notifyBlocked(blockedUserId);
   }
 
   /// Flip any active match between the two users to inactive (both orderings).

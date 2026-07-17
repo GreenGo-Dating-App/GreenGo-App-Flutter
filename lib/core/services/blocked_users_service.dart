@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
@@ -16,6 +18,20 @@ class BlockedUsersService {
   static const _queryLimit = 1000;
 
   final Map<String, _CachedBlockedIds> _cache = {};
+
+  // Broadcasts the BLOCKED user's id each time a block happens anywhere, so live
+  // lists (discovery, network, chat) can drop that user IMMEDIATELY without a
+  // refetch (the fetch-time filter alone only reflects a block on next reload).
+  final StreamController<String> _blockedController =
+      StreamController<String>.broadcast();
+
+  /// Fires with the blocked user's id whenever any block is performed.
+  Stream<String> get onUserBlocked => _blockedController.stream;
+
+  /// Announce that [blockedUserId] was just blocked (call after the block write).
+  void notifyBlocked(String blockedUserId) {
+    if (!_blockedController.isClosed) _blockedController.add(blockedUserId);
+  }
 
   /// Returns the set of user IDs that are blocked bidirectionally
   /// (users the given [userId] blocked + users who blocked [userId]).

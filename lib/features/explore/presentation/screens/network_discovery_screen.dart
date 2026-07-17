@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/theme/app_glass.dart';
@@ -191,11 +192,24 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
         _selectedTags.removeWhere((t) => !all.contains(t));
       });
     });
+    // Remove a blocked person from the grid the instant a block happens anywhere.
+    _blockedSub = di.sl<BlockedUsersService>().onUserBlocked.listen((id) {
+      if (!mounted) return;
+      final list = _candidates;
+      if (list == null) return;
+      setState(() {
+        _candidates =
+            list.where((c) => c.profile.userId != id).toList();
+      });
+    });
   }
+
+  StreamSubscription<String>? _blockedSub;
 
   @override
   void dispose() {
     _tagsSub?.cancel();
+    _blockedSub?.cancel();
     _searchDebounce?.cancel();
     _scrollController.dispose();
     _searchController.dispose();
