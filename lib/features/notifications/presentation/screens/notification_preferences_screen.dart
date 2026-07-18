@@ -5,9 +5,8 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/city_normalizer.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../profile/domain/entities/location.dart' as profile_entity;
-import '../../../profile/presentation/screens/web_location_picker_screen.dart';
 import '../../domain/entities/notification_preferences.dart';
+import 'city_picker_screen.dart';
 import '../bloc/notification_preferences_bloc.dart';
 import '../bloc/notification_preferences_event.dart';
 import '../bloc/notification_preferences_state.dart';
@@ -407,17 +406,14 @@ class _CityChips extends StatelessWidget {
     );
   }
 
-  /// Opens a plain map picker (flutter_map): drop a pin or search a place, which
-  /// reverse-geocodes to a city and adds it. Deliberately NOT the traveler
-  /// location screen — this only picks a city for event alerts, no side effects.
+  /// Opens the full-screen [CityPickerScreen]: search a city or tap the map,
+  /// then "Use this city" returns the resolved city name to add.
   Future<void> _pickCityFromMap(BuildContext context) async {
-    final result = await Navigator.of(context).push<profile_entity.Location>(
-      MaterialPageRoute(
-        builder: (_) => const WebLocationPickerScreen(),
-      ),
+    final city = await Navigator.of(context).push<String>(
+      MaterialPageRoute(builder: (_) => const CityPickerScreen()),
     );
-    if (result != null && result.city.trim().isNotEmpty) {
-      onAdd(result.city);
+    if (city != null && city.trim().isNotEmpty) {
+      onAdd(city);
     }
   }
 }
