@@ -52,15 +52,41 @@ class PushNotificationService {
   /// Foreground notifications for this conversation are suppressed.
   static String? activeConversationId;
 
-  /// Android notification channel matching the one in Cloud Functions
-  static const AndroidNotificationChannel _channel = AndroidNotificationChannel(
-    'greengo_notifications',
-    'GreenGo Notifications',
-    description: 'Push notifications from GreenGo',
-    importance: Importance.high,
-    playSound: true,
-    enableVibration: true,
-  );
+  /// Android notification channels. MUST cover every `channelId` the Cloud
+  /// Functions send on — Android 8+ silently drops a notification whose channel
+  /// was never created on the device. Keep in sync with functions/src/**.
+  static const List<AndroidNotificationChannel> _channels = [
+    AndroidNotificationChannel(
+      'greengo_notifications',
+      'GreenGo Notifications',
+      description: 'Messages, likes, events and activity',
+      importance: Importance.high,
+      playSound: true,
+      enableVibration: true,
+    ),
+    AndroidNotificationChannel(
+      'greengo_broadcasts',
+      'Announcements',
+      description: 'Broadcasts and announcements from GreenGo',
+      importance: Importance.high,
+      playSound: true,
+      enableVibration: true,
+    ),
+    AndroidNotificationChannel(
+      'bundled_notifications',
+      'Activity summary',
+      description: 'Bundled activity notifications',
+      importance: Importance.defaultImportance,
+      playSound: true,
+    ),
+    AndroidNotificationChannel(
+      'default',
+      'General',
+      description: 'General notifications',
+      importance: Importance.high,
+      playSound: true,
+    ),
+  ];
 
   /// Initialize push notification handling
   Future<void> initialize() async {
@@ -87,11 +113,12 @@ class PushNotificationService {
     // Register background handler
     FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
 
-    // Create the Android notification channel
-    await _localNotifications
-        .resolvePlatformSpecificImplementation<
-            AndroidFlutterLocalNotificationsPlugin>()
-        ?.createNotificationChannel(_channel);
+    // Create every Android notification channel the server sends on
+    final androidPlugin = _localNotifications.resolvePlatformSpecificImplementation<
+        AndroidFlutterLocalNotificationsPlugin>();
+    for (final channel in _channels) {
+      await androidPlugin?.createNotificationChannel(channel);
+    }
 
     // Initialize local notifications for foreground display
     const androidSettings = AndroidInitializationSettings('@drawable/ic_launcher_foreground');

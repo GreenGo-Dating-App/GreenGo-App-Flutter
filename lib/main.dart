@@ -5,6 +5,7 @@ import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_performance/firebase_performance.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -987,18 +988,25 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     _notificationPromptShown = true;
 
     try {
-      final userDoc = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(userId)
-          .get();
-      if (!userDoc.exists) return;
+      // Drive the prompt off the REAL OS permission status, not a Firestore
+      // flag. A flag ('notificationPermissionAsked'/'notificationsEnabled') can
+      // be true from another device/session or from BEFORE the user actually
+      // granted — gating on it means a device whose OS was never asked (new
+      // device, reinstall, flagged-then-declined) silently gets no push. The OS
+      // status is per-device and authoritative.
+      final settings =
+          await FirebaseMessaging.instance.getNotificationSettings();
+      final status = settings.authorizationStatus;
 
-      final data = userDoc.data()!;
-      final notificationsEnabled = data['notificationsEnabled'] == true;
-      final permissionAsked = data['notificationPermissionAsked'] == true;
+      // Already granted on THIS device → the login path already saved the token.
+      if (status == AuthorizationStatus.authorized ||
+          status == AuthorizationStatus.provisional) {
+        return;
+      }
+      // Denied → iOS won't re-prompt; don't nag (user re-enables in Settings).
+      if (status == AuthorizationStatus.denied) return;
 
-      // Already enabled or already asked — nothing to do
-      if (notificationsEnabled || permissionAsked) return;
+      // status == notDetermined → show the styled pre-prompt, then the OS dialog.
       if (!mounted) return;
 
       // Show the styled dialog

@@ -98,10 +98,14 @@
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="greengo_notifications" />
 
-        <!-- FCM high priority messages -->
+        <!-- FCM status-bar icon: white/transparent GG glyph (Android tints it);
+             a colored icon renders as a white square, so use a dedicated mask -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/ic_launcher_foreground" />
+            android:resource="@drawable/ic_stat_greengo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_gold" />
 
         <!-- Google Maps API Key (loaded from local.properties) -->
         <meta-data
