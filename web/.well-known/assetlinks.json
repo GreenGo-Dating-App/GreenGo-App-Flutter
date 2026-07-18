@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.greengochat.greengochatapp",
       "sha256_cert_fingerprints": [
-        "TODO_FILL_RELEASE_KEYSTORE_SHA256_FINGERPRINT"
+        "15:FA:81:23:F1:46:48:73:0D:9B:91:6D:A1:C8:A5:4D:6E:5B:51:C1:BE:E7:73:8A:06:9F:A7:34:67:88:FA:4C",
+        "96:C5:A7:0E:01:2B:B2:A2:13:59:0D:F7:DF:5A:A0:08:52:1C:A0:5A:BA:34:AA:74:A3:A6:38:43:E7:ED:54:05"
       ]
     }
   }
