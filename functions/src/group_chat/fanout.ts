@@ -21,6 +21,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -180,7 +181,7 @@ export const onGroupMessageCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: { title: groupName, body: `${senderName}: ${preview}` },
+          notification: brandPush(groupName, `${senderName}: ${preview}`),
           data: {
             type: 'group_message',
             groupId,

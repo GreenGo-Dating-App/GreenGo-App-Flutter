@@ -6,6 +6,7 @@
 import { onCall } from 'firebase-functions/v2/https';
 import { verifyAdminAuth, handleError, logInfo, logError, db, FieldValue } from '../shared/utils';
 import * as admin from 'firebase-admin';
+import { brandPush } from '../notifications/brand';
 import { SubscriptionTier, ApprovalStatus } from '../shared/types';
 import { monitored } from '../shared/monitoring';
 
@@ -336,10 +337,7 @@ export const approveUser = onCall<ApproveUserRequest>(
         if (userData.fcmToken) {
           await admin.messaging().send({
             token: userData.fcmToken,
-            notification: {
-              title: message.title,
-              body: message.body,
-            },
+            notification: brandPush(message.title, message.body),
             data: {
               type: 'account_approved',
               accessDate: accessDate.toISOString(),

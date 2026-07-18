@@ -22,6 +22,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { brandPush } from './brand';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -62,7 +63,7 @@ export const onNotificationCreatedPush = onDocumentCreated(
       '';
     if (!userId) return;
 
-    const title = (doc.title as string) || 'GreenGo';
+    const title = (doc.title as string) || '';
     const body =
       (doc.message as string) ||
       (doc.body as string) ||
@@ -78,11 +79,7 @@ export const onNotificationCreatedPush = onDocumentCreated(
       if (token) {
         await admin.messaging().send({
           token,
-          notification: {
-            title,
-            body,
-            ...(imageUrl ? { imageUrl } : {}),
-          },
+          notification: brandPush(title, body, imageUrl),
           data,
           android: {
             priority: 'high',

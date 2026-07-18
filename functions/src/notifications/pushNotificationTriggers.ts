@@ -6,6 +6,7 @@
 import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
+import { brandPush } from './brand';
 import { logInfo, logError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
 
@@ -138,11 +139,7 @@ async function sendPushToUser(
     // Build FCM message
     const message: admin.messaging.Message = {
       token: fcmToken,
-      notification: {
-        title,
-        body,
-        ...(options?.imageUrl ? { imageUrl: options.imageUrl } : {}),
-      },
+      notification: brandPush(title, body, options?.imageUrl),
       data: {
         type,
         timestamp: new Date().toISOString(),
@@ -254,140 +251,10 @@ async function isBlocked(userA: string, userB: string): Promise<boolean> {
   }
 }
 
-/**
- * onNewLikePush - Trigger on likes/{likeId} create
- */
-export const onNewLikePush = onDocumentCreated(
-  {
-    document: 'likes/{likeId}',
-    memory: '256MiB',
-  },
-  monitored("onNewLikePush", async (event) => {
-    try {
-      const data = event.data?.data();
-      if (!data) return;
-
-      const likedUserId = data.likedUserId;
-      const likerId = data.likerId;
-      const likeType = data.type;
-
-      if (!likedUserId || !likerId) {
-        logError('onNewLikePush: Missing likedUserId or likerId');
-        return;
-      }
-
-      // Suppress if blocked either way
-      if (await isBlocked(likerId, likedUserId)) {
-        logInfo(`onNewLikePush: ${likerId} <-> ${likedUserId} blocked, skip`);
-        return;
-      }
-
-      const likerDoc = await db.collection('users').doc(likerId).get();
-      const likerName = likerDoc.data()?.displayName || 'Someone';
-
-      let likerAvatar: string | undefined;
-      try {
-        const profDoc = await db.collection('profiles').doc(likerId).get();
-        const profData = profDoc.data();
-        likerAvatar = profData?.profilePhotoUrl || profData?.photos?.[0];
-      } catch {}
-
-      if (likeType === 'super_like') {
-        await sendPushToUser(
-          likedUserId,
-          'superLike',
-          'You received a Super Like!',
-          `${likerName} sent you a Super Like!`,
-          { fromUserId: likerId },
-          { imageUrl: likerAvatar, threadId: 'likes' },
-        );
-      } else {
-        await sendPushToUser(
-          likedUserId,
-          'newLike',
-          'Someone liked your profile!',
-          `${likerName} liked your profile`,
-          { fromUserId: likerId },
-          { imageUrl: likerAvatar, threadId: 'likes' },
-        );
-      }
-    } catch (error) {
-      logError('onNewLikePush: Error', error);
-    }
-  }),
-);
-
-/**
- * onNewMatchPush - Trigger on matches/{matchId} create
- */
-export const onNewMatchPush = onDocumentCreated(
-  {
-    document: 'matches/{matchId}',
-    memory: '256MiB',
-  },
-  monitored("onNewMatchPush", async (event) => {
-    try {
-      const data = event.data?.data();
-      if (!data) return;
-
-      const users: string[] = data.users || [];
-      const user1Id = data.user1Id || users[0];
-      const user2Id = data.user2Id || users[1];
-
-      if (!user1Id || !user2Id) {
-        logError('onNewMatchPush: Missing user IDs in match document');
-        return;
-      }
-
-      if (await isBlocked(user1Id, user2Id)) {
-        logInfo(`onNewMatchPush: ${user1Id} <-> ${user2Id} blocked, skip`);
-        return;
-      }
-
-      const [user1Doc, user2Doc] = await Promise.all([
-        db.collection('users').doc(user1Id).get(),
-        db.collection('users').doc(user2Id).get(),
-      ]);
-
-      const user1Name = user1Doc.data()?.displayName || 'Someone';
-      const user2Name = user2Doc.data()?.displayName || 'Someone';
-
-      let user1Avatar: string | undefined;
-      let user2Avatar: string | undefined;
-      try {
-        const [p1, p2] = await Promise.all([
-          db.collection('profiles').doc(user1Id).get(),
-          db.collection('profiles').doc(user2Id).get(),
-        ]);
-        user1Avatar = p1.data()?.profilePhotoUrl || p1.data()?.photos?.[0];
-        user2Avatar = p2.data()?.profilePhotoUrl || p2.data()?.photos?.[0];
-      } catch {}
-
-      const matchId = event.params.matchId;
-
-      await Promise.all([
-        sendPushToUser(
-          user1Id,
-          'newMatch',
-          'You have a new match!',
-          `You matched with ${user2Name}!`,
-          { matchId, matchedUserId: user2Id },
-          { imageUrl: user2Avatar, threadId: 'matches' },
-        ),
-        sendPushToUser(
-          user2Id,
-          'newMatch',
-          'You have a new match!',
-          `You matched with ${user1Name}!`,
-          { matchId, matchedUserId: user1Id },
-          { imageUrl: user1Avatar, threadId: 'matches' },
-        ),
-      ]);
-    } catch (error) {
-      logError('onNewMatchPush: Error', error);
-    }
-  }),
-);
+// onNewLikePush and onNewMatchPush were REMOVED — GreenGo is a cross-cultural
+// networking app, not a dating app, so it never pushes "new like / super like /
+// new match" notifications. The underlying likes/matches collections remain for
+// the connection mechanic; they simply no longer generate a push.
 
 /**
  * onNewMessagePush - Trigger on conversations/{convId}/messages/{msgId} create

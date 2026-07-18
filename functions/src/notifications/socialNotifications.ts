@@ -16,6 +16,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { brandPush } from './brand';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -103,11 +104,7 @@ async function emit(
     if (token) {
       await admin.messaging().send({
         token,
-        notification: {
-          title: `${actor.name} ${title}`,
-          body,
-          ...(actor.photo ? { imageUrl: actor.photo } : {}),
-        },
+        notification: brandPush(`${actor.name} ${title}`, body, actor.photo),
         data,
         android: {
           priority: 'high',
