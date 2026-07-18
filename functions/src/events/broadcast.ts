@@ -9,6 +9,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -62,7 +63,7 @@ export const onEventBroadcastCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: { title: `📣 ${title}`, body: text },
+          notification: brandPush(`📣 ${title}`, text),
           data: { type: 'event_broadcast', eventId },
           android: { priority: 'high' },
         });
@@ -152,7 +153,7 @@ export const onEventMessageCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: { title, body },
+          notification: brandPush(title, body),
           data: { type: 'event_message', eventId, conversationId: eventId },
           android: {
             priority: 'high',
