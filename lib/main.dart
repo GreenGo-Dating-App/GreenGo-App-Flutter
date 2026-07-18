@@ -33,6 +33,7 @@ import 'core/services/cache_service.dart';
 import 'core/services/data_preload_service.dart';
 import 'core/services/deep_link_service.dart';
 import 'core/services/feature_flags_service.dart';
+import 'core/services/onboarding_gate.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/version_check_service.dart';
 import 'core/theme/app_theme.dart';
@@ -891,6 +892,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     _cacheBusinessFlag(false);
 
     context.read<AuthBloc>().add(const AuthSignOutRequested());
+    OnboardingGate.reset();
     setState(() {
       _accessData = null;
       _needsOnboarding = false;
@@ -987,6 +989,13 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   Future<void> _maybeShowNotificationPrompt(String userId) async {
     if (_notificationPromptShown) return;
     _notificationPromptShown = true;
+
+    // Sequence first-login prompts: wait for the community-guidelines gate so
+    // this prompt shows AFTER it, not stacked on top. Bounded fallback in case
+    // the gate never completes (e.g. guidelines already accepted long ago).
+    await OnboardingGate.guidelinesHandled
+        .timeout(const Duration(seconds: 10), onTimeout: () {});
+    if (!mounted) return;
 
     try {
       // Drive the prompt off the REAL OS permission status, not a Firestore

@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -7,7 +6,6 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/city_normalizer.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
-import '../../../profile/presentation/screens/traveler_location_picker_screen.dart';
 import '../../../profile/presentation/screens/web_location_picker_screen.dart';
 import '../../domain/entities/notification_preferences.dart';
 import '../bloc/notification_preferences_bloc.dart';
@@ -409,14 +407,13 @@ class _CityChips extends StatelessWidget {
     );
   }
 
-  /// Opens the app's map location picker (flutter_map on web, Google Maps on
-  /// mobile), reverse-geocodes the dropped pin to a city, and adds it.
+  /// Opens a plain map picker (flutter_map): drop a pin or search a place, which
+  /// reverse-geocodes to a city and adds it. Deliberately NOT the traveler
+  /// location screen — this only picks a city for event alerts, no side effects.
   Future<void> _pickCityFromMap(BuildContext context) async {
     final result = await Navigator.of(context).push<profile_entity.Location>(
       MaterialPageRoute(
-        builder: (_) => kIsWeb
-            ? const WebLocationPickerScreen()
-            : const TravelerLocationPickerScreen(),
+        builder: (_) => const WebLocationPickerScreen(),
       ),
     );
     if (result != null && result.city.trim().isNotEmpty) {

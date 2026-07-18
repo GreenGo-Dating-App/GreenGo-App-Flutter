@@ -16,6 +16,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../gamification/data/services/streak_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
+import '../../../../core/services/onboarding_gate.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/data_preload_service.dart';
 import '../../../events/data/datasources/external_events_preloader.dart';
@@ -295,9 +296,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // First-run community guidelines gate (welcoming, respectful cross-cultural
     // exchange). Shown once, persisted in SharedPreferences. Fire-and-forget.
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
-      CommunityGuidelinesScreen.showIfNeeded(context);
+      await CommunityGuidelinesScreen.showIfNeeded(context);
+      // Release the onboarding gate so the notification prompt shows AFTER the
+      // guidelines instead of stacking on top of it on first login.
+      OnboardingGate.markGuidelinesHandled();
     });
   }
 
