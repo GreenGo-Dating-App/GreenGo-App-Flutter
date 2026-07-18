@@ -23,6 +23,7 @@ import {
 } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
+import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -74,9 +75,11 @@ async function notifyCommunityMembers(
     if (page.empty) break;
     lastDoc = page.docs[page.docs.length - 1];
 
-    const recipientIds = page.docs
+    const rawIds = page.docs
       .filter((d) => d.data()?.isBanned !== true)
       .map((d) => d.id);
+    const allowedSet = await filterUidsByPref(rawIds, 'events');
+    const recipientIds = rawIds.filter((u) => allowedSet.has(u));
     total += recipientIds.length;
 
     const userDocs = await Promise.all(

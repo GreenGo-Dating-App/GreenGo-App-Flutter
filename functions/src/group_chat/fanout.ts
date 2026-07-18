@@ -22,6 +22,7 @@
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
+import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -166,8 +167,13 @@ export const onGroupMessageCreated = onDocumentCreated(
     });
     if (activeRecipients.length === 0) return;
 
+    // Per-category notification preference (messages).
+    const allowed = await filterUidsByPref(activeRecipients, 'messages');
+    const prefRecipients = activeRecipients.filter((u) => allowed.has(u));
+    if (prefRecipients.length === 0) return;
+
     const tokenDocs = await Promise.all(
-      activeRecipients.map((u) => db.collection('users').doc(u).get())
+      prefRecipients.map((u) => db.collection('users').doc(u).get())
     );
     const tokens: string[] = [];
     for (const td of tokenDocs) {

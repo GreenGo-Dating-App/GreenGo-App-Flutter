@@ -92,6 +92,8 @@ class NotificationPreferencesModel extends NotificationPreferences {
       'quietHoursEnd': quietHoursEnd,
       'quietHoursEnabled': quietHoursEnabled,
       'eventCities': eventCities,
+      // Device UTC offset so the server can evaluate quiet hours in local time.
+      'tzOffsetMinutes': DateTime.now().timeZoneOffset.inMinutes,
       'updatedAt': FieldValue.serverTimestamp(),
     };
   }

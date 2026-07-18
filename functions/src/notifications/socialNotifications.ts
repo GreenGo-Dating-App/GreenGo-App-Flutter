@@ -17,6 +17,7 @@
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { brandPush } from './brand';
+import { shouldNotify, categoryForType } from './prefs';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -96,6 +97,9 @@ async function emit(
     pushSent: true,
     ...(actor.photo ? { imageUrl: actor.photo } : {}),
   });
+
+  // Respect the recipient's per-category preference (feed doc already written).
+  if (!(await shouldNotify(recipientId, categoryForType(type)))) return;
 
   // Best-effort push.
   try {
