@@ -173,6 +173,10 @@ export {
 export {
   onNotificationCreatedPush,
 } from './notifications/pushParity';
+export {
+  syncCitySubscribers,
+  onEventCityAlert,
+} from './notifications/cityAlerts';
 
 // Engagement notifications — profile view (throttled), QR scan, boost start/end.
 export {
@@ -403,10 +407,9 @@ export {
   getNotificationAnalytics,
 } from './notifications/pushNotifications';
 
-// Push Notification Firestore Triggers (likes, matches, messages, support, verification, mode expiry)
+// Push Notification Firestore Triggers (messages, support, verification, mode expiry).
+// Dating triggers onNewLikePush / onNewMatchPush removed (networking app).
 export {
-  onNewLikePush,
-  onNewMatchPush,
   onNewMessagePush,
   onSupportMessagePush,
   checkExpiringModes,
@@ -433,7 +436,6 @@ export {
   onSubscriptionUpdated,
   onPhotoModerationUpdated,
   onAchievementUnlocked,
-  onNewMatch,
   onPurchaseCreated,
   sendBrevoWeeklyDigest,
   sendBrevoReEngagement,
