@@ -194,6 +194,11 @@ export const onEventCityAlert = onDocumentWritten(
     const cityRaw = (after.city as string) || '';
     if (!cityRaw) return;
 
+    // City alerts are for COMMUNITY events only — business/external events do
+    // NOT trigger them.
+    const communityId = (after.communityId as string) || '';
+    if (!communityId) return;
+
     const cityKey = normalizeCity(cityRaw);
     if (!cityKey) return;
 
@@ -213,18 +218,15 @@ export const onEventCityAlert = onDocumentWritten(
 
     // Exclude community members who already got the community fan-out.
     const exclude = new Set<string>();
-    const communityId = (after.communityId as string) || '';
-    if (communityId) {
-      try {
-        const members = await db
-          .collection('communities')
-          .doc(communityId)
-          .collection('members')
-          .get();
-        members.docs.forEach((d) => exclude.add(d.id));
-      } catch {
-        // best-effort; overlap is acceptable if this fails
-      }
+    try {
+      const members = await db
+        .collection('communities')
+        .doc(communityId)
+        .collection('members')
+        .get();
+      members.docs.forEach((d) => exclude.add(d.id));
+    } catch {
+      // best-effort; overlap is acceptable if this fails
     }
 
     await notifyCity(cityKey, {
