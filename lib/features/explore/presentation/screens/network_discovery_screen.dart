@@ -1284,16 +1284,17 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       candidate: candidate,
       isSelf: isSelf,
       isBusiness: isBusiness,
+      // Chat always opens a NORMAL 1:1 chat — even when the target is a business
+      // account (you're messaging the person). Business chat is reached only via
+      // the storefront's Contact button (open the profile card → storefront).
       onOpenChat: isSelf
           ? () {}
-          : isBusiness
-              ? openStorefront
-              : () => openConnectChat(
-                    context,
-                    currentUserId: widget.userId,
-                    otherUserId: profile.userId,
-                    otherUserProfile: profile,
-                  ),
+          : () => openConnectChat(
+                context,
+                currentUserId: widget.userId,
+                otherUserId: profile.userId,
+                otherUserProfile: profile,
+              ),
       onOpenProfile: () {
         if (isBusiness) {
           openStorefront();
