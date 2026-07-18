@@ -5,6 +5,7 @@
 
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { brandPush } from './brand';
 import { monitored } from '../shared/monitoring';
 
 const firestore = admin.firestore();
@@ -81,11 +82,7 @@ export const sendPushNotification = functions.https.onCall(monitored("sendPushNo
     // Build notification payload
     const message: admin.messaging.Message = {
       token: fcmToken,
-      notification: {
-        title,
-        body,
-        imageUrl,
-      },
+      notification: brandPush(title, body, imageUrl),
       data: {
         type,
         deepLink: deepLink || '',

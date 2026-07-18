@@ -6,6 +6,7 @@
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
+import { brandPush } from '../notifications/brand';
 import sgMail from '@sendgrid/mail';
 import twilio from 'twilio';
 import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
@@ -88,11 +89,7 @@ export const sendPushNotification = onCall<SendPushNotificationRequest>(
       // Send FCM notification
       const message: admin.messaging.MulticastMessage = {
         tokens: fcmTokens,
-        notification: {
-          title,
-          body,
-          imageUrl,
-        },
+        notification: brandPush(title, body, imageUrl),
         data: {
           notificationId: notificationRef.id,
           type,
@@ -197,10 +194,10 @@ export const sendBundledNotifications = onCall<BundledNotificationRequest>(
       // Send bundled notification
       const message: admin.messaging.MulticastMessage = {
         tokens: fcmTokens,
-        notification: {
-          title: `${notifications.length} new notifications`,
-          body: notifications[0].body,
-        },
+        notification: brandPush(
+          `${notifications.length} new notifications`,
+          notifications[0].body,
+        ),
         data: {
           bundled: 'true',
           count: notifications.length.toString(),

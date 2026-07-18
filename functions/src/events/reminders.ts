@@ -11,6 +11,7 @@
 
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
+import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -53,7 +54,7 @@ async function fanOutReminder(
     try {
       await admin.messaging().sendEachForMulticast({
         tokens: chunk,
-        notification: { title: `⏰ ${title}`, body },
+        notification: brandPush(`⏰ ${title}`, body),
         data: dataPayload,
         android: { priority: 'high' },
       });
