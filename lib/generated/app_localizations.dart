@@ -12936,6 +12936,102 @@ abstract class AppLocalizations {
   /// **'Notification Settings'**
   String get notificationSettingsTitle;
 
+  /// No description provided for @notificationCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification categories'**
+  String get notificationCategories;
+
+  /// No description provided for @notificationCatMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages'**
+  String get notificationCatMessages;
+
+  /// No description provided for @notificationCatMessagesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Direct, group, business and event chats'**
+  String get notificationCatMessagesSubtitle;
+
+  /// No description provided for @notificationCatEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Events'**
+  String get notificationCatEvents;
+
+  /// No description provided for @notificationCatEventsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Events, reminders, RSVPs and city alerts'**
+  String get notificationCatEventsSubtitle;
+
+  /// No description provided for @notificationCatCommunities.
+  ///
+  /// In en, this message translates to:
+  /// **'Communities'**
+  String get notificationCatCommunities;
+
+  /// No description provided for @notificationCatCommunitiesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcements and new members'**
+  String get notificationCatCommunitiesSubtitle;
+
+  /// No description provided for @notificationCatSocial.
+  ///
+  /// In en, this message translates to:
+  /// **'Social'**
+  String get notificationCatSocial;
+
+  /// No description provided for @notificationCatSocialSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile views, follows, ratings and boosts'**
+  String get notificationCatSocialSubtitle;
+
+  /// No description provided for @notificationCatAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get notificationCatAccount;
+
+  /// No description provided for @notificationCatAccountSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification and important account updates'**
+  String get notificationCatAccountSubtitle;
+
+  /// No description provided for @notificationEventCities.
+  ///
+  /// In en, this message translates to:
+  /// **'Community events by city'**
+  String get notificationEventCities;
+
+  /// No description provided for @notificationEventCitiesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Get notified when events are happening in these cities'**
+  String get notificationEventCitiesSubtitle;
+
+  /// No description provided for @notificationAddCity.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a city'**
+  String get notificationAddCity;
+
+  /// No description provided for @notificationAddCityHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Rome'**
+  String get notificationAddCityHint;
+
+  /// No description provided for @notificationNoCities.
+  ///
+  /// In en, this message translates to:
+  /// **'No cities yet — add one to get event alerts'**
+  String get notificationNoCities;
+
   /// No description provided for @notificationSound.
   ///
   /// In en, this message translates to:

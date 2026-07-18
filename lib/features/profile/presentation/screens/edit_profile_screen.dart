@@ -33,6 +33,7 @@ import '../../../admin/presentation/screens/verification_admin_screen.dart';
 import '../../../authentication/presentation/bloc/auth_bloc.dart';
 import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../../../authentication/presentation/screens/change_password_screen.dart';
+import '../../../notifications/presentation/screens/notification_preferences_screen.dart';
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
@@ -442,6 +443,14 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: AppLocalizations.of(context)!.changePasswordSubtitle,
                         icon: Icons.lock_outline,
                         onTap: () => _navigateToChangePassword(context),
+                      ),
+                      const SizedBox(height: 16),
+                      // Notification Settings
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.notificationSettingsTitle,
+                        subtitle: AppLocalizations.of(context)!.notificationEventCitiesSubtitle,
+                        icon: Icons.notifications_outlined,
+                        onTap: () => _navigateToNotificationSettings(context),
                       ),
                     ],
                   ),
@@ -1002,6 +1011,16 @@ class EditProfileScreen extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => const ChangePasswordScreen(),
+      ),
+    );
+  }
+
+  void _navigateToNotificationSettings(BuildContext context) {
+    final uid = userId ?? FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return;
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => NotificationPreferencesScreen(userId: uid),
       ),
     );
   }

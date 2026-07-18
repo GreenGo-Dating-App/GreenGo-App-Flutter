@@ -7271,6 +7271,61 @@ class AppLocalizationsIt extends AppLocalizations {
   String get notificationSettingsTitle => 'Impostazioni notifiche';
 
   @override
+  String get notificationCategories => 'Notification categories';
+
+  @override
+  String get notificationCatMessages => 'Messages';
+
+  @override
+  String get notificationCatMessagesSubtitle =>
+      'Direct, group, business and event chats';
+
+  @override
+  String get notificationCatEvents => 'Events';
+
+  @override
+  String get notificationCatEventsSubtitle =>
+      'Events, reminders, RSVPs and city alerts';
+
+  @override
+  String get notificationCatCommunities => 'Communities';
+
+  @override
+  String get notificationCatCommunitiesSubtitle =>
+      'Announcements and new members';
+
+  @override
+  String get notificationCatSocial => 'Social';
+
+  @override
+  String get notificationCatSocialSubtitle =>
+      'Profile views, follows, ratings and boosts';
+
+  @override
+  String get notificationCatAccount => 'Account';
+
+  @override
+  String get notificationCatAccountSubtitle =>
+      'Verification and important account updates';
+
+  @override
+  String get notificationEventCities => 'Community events by city';
+
+  @override
+  String get notificationEventCitiesSubtitle =>
+      'Get notified when events are happening in these cities';
+
+  @override
+  String get notificationAddCity => 'Add a city';
+
+  @override
+  String get notificationAddCityHint => 'e.g. Rome';
+
+  @override
+  String get notificationNoCities =>
+      'No cities yet — add one to get event alerts';
+
+  @override
   String get notificationSound => 'Suono';
 
   @override

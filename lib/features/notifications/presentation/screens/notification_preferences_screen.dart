@@ -3,20 +3,17 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/city_normalizer.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/notification_preferences.dart';
 import '../bloc/notification_preferences_bloc.dart';
 import '../bloc/notification_preferences_event.dart';
 import '../bloc/notification_preferences_state.dart';
 
-/// Notification Preferences Screen
-///
-/// Allows users to configure their notification settings
+/// Notification Preferences Screen — per-category push controls, sound/vibration,
+/// quiet hours, and the list of cities the user wants event alerts for.
 class NotificationPreferencesScreen extends StatelessWidget {
-
-  const NotificationPreferencesScreen({
-    required this.userId, super.key,
-  });
+  const NotificationPreferencesScreen({required this.userId, super.key});
   final String userId;
 
   @override
@@ -26,314 +23,172 @@ class NotificationPreferencesScreen extends StatelessWidget {
       create: (context) => di.sl<NotificationPreferencesBloc>()
         ..add(NotificationPreferencesLoadRequested(userId: userId)),
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(l10n.notificationSettingsTitle),
-        ),
+        appBar: AppBar(title: Text(l10n.notificationSettingsTitle)),
         body: BlocBuilder<NotificationPreferencesBloc,
             NotificationPreferencesState>(
           builder: (context, state) {
             if (state is NotificationPreferencesLoading) {
               return const Center(
-                child: CircularProgressIndicator(
-                  color: AppColors.richGold,
-                ),
+                child: CircularProgressIndicator(color: AppColors.richGold),
               );
             }
-
             if (state is NotificationPreferencesError) {
               return Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(
-                      Icons.error_outline,
-                      size: 64,
-                      color: AppColors.errorRed,
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      state.message,
-                      style: const TextStyle(
-                        color: AppColors.textSecondary,
-                        fontSize: 16,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: Text(
+                    state.message,
+                    style: const TextStyle(color: AppColors.textSecondary),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               );
             }
-
             if (state is NotificationPreferencesLoaded) {
               final prefs = state.preferences;
+              final bloc = context.read<NotificationPreferencesBloc>();
+              final on = prefs.pushEnabled;
+
+              void update(NotificationPreferences next) =>
+                  bloc.add(NotificationPreferencesUpdated(preferences: next));
 
               return ListView(
                 children: [
-                  // Master Controls
-                  _buildSection(
-                    title: l10n.notificationMasterControls,
+                  // ── Master ──
+                  _section(title: l10n.notificationMasterControls, children: [
+                    _switch(
+                      title: l10n.notificationPushTitle,
+                      subtitle: l10n.notificationPushSubtitle,
+                      value: prefs.pushEnabled,
+                      onChanged: (v) => update(prefs.copyWith(pushEnabled: v)),
+                    ),
+                  ]),
+                  const Divider(height: 32),
+
+                  // ── Categories ──
+                  _section(title: l10n.notificationCategories, children: [
+                    _switch(
+                      title: l10n.notificationCatMessages,
+                      subtitle: l10n.notificationCatMessagesSubtitle,
+                      value: prefs.messages,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(messages: v)),
+                    ),
+                    _switch(
+                      title: l10n.notificationCatEvents,
+                      subtitle: l10n.notificationCatEventsSubtitle,
+                      value: prefs.events,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(events: v)),
+                    ),
+                    _switch(
+                      title: l10n.notificationCatCommunities,
+                      subtitle: l10n.notificationCatCommunitiesSubtitle,
+                      value: prefs.communities,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(communities: v)),
+                    ),
+                    _switch(
+                      title: l10n.notificationCatSocial,
+                      subtitle: l10n.notificationCatSocialSubtitle,
+                      value: prefs.social,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(social: v)),
+                    ),
+                    _switch(
+                      title: l10n.notificationCatAccount,
+                      subtitle: l10n.notificationCatAccountSubtitle,
+                      value: prefs.account,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(account: v)),
+                    ),
+                  ]),
+                  const Divider(height: 32),
+
+                  // ── Community events by city ──
+                  _section(
+                    title: l10n.notificationEventCities,
+                    subtitle: l10n.notificationEventCitiesSubtitle,
                     children: [
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationPushTitle,
-                        subtitle: l10n.notificationPushSubtitle,
-                        value: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    pushNotificationsEnabled: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationEmailTitle,
-                        subtitle: l10n.notificationEmailSubtitle,
-                        value: prefs.emailNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    emailNotificationsEnabled: value,
-                                  ),
-                                ),
-                              );
+                      _CityChips(
+                        cities: prefs.eventCities,
+                        enabled: on && prefs.events,
+                        onRemove: (city) => update(prefs.copyWith(
+                          eventCities: prefs.eventCities
+                              .where((c) => c != city)
+                              .toList(),
+                        )),
+                        onAdd: (raw) {
+                          final key = CityNormalizer.normalize(raw);
+                          if (key.isEmpty ||
+                              prefs.eventCities.contains(key)) {
+                            return;
+                          }
+                          update(prefs.copyWith(
+                            eventCities: [...prefs.eventCities, key],
+                          ));
                         },
                       ),
                     ],
                   ),
-
                   const Divider(height: 32),
 
-                  // Notification Types
-                  _buildSection(
-                    title: l10n.notificationTypes,
-                    children: [
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationNewMatches,
-                        subtitle: l10n.notificationNewMatchesSubtitle,
-                        value: prefs.newMatchNotifications,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    newMatchNotifications: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationNewMessages,
-                        subtitle: l10n.notificationNewMessagesSubtitle,
-                        value: prefs.newMessageNotifications,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    newMessageNotifications: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationNewLikes,
-                        subtitle: l10n.notificationNewLikesSubtitle,
-                        value: prefs.newLikeNotifications,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    newLikeNotifications: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationProfileViews,
-                        subtitle: l10n.notificationProfileViewsSubtitle,
-                        value: prefs.profileViewNotifications,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    profileViewNotifications: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationSuperLikes,
-                        subtitle: l10n.notificationSuperLikesSubtitle,
-                        value: prefs.superLikeNotifications,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    superLikeNotifications: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationMatchExpiring,
-                        subtitle: l10n.notificationMatchExpiringSubtitle,
-                        value: prefs.matchExpiringNotifications,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    matchExpiringNotifications: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationPromotional,
-                        subtitle: l10n.notificationPromotionalSubtitle,
-                        value: prefs.promotionalNotifications,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    promotionalNotifications: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                    ],
-                  ),
-
+                  // ── Sound & vibration ──
+                  _section(title: l10n.notificationSoundVibration, children: [
+                    _switch(
+                      title: l10n.notificationSound,
+                      subtitle: l10n.notificationSoundSubtitle,
+                      value: prefs.soundEnabled,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(soundEnabled: v)),
+                    ),
+                    _switch(
+                      title: l10n.notificationVibration,
+                      subtitle: l10n.notificationVibrationSubtitle,
+                      value: prefs.vibrationEnabled,
+                      enabled: on,
+                      onChanged: (v) =>
+                          update(prefs.copyWith(vibrationEnabled: v)),
+                    ),
+                  ]),
                   const Divider(height: 32),
 
-                  // Sound & Vibration
-                  _buildSection(
-                    title: l10n.notificationSoundVibration,
-                    children: [
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationSound,
-                        subtitle: l10n.notificationSoundSubtitle,
-                        value: prefs.soundEnabled,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    soundEnabled: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                      _buildSwitchTile(
-                        context: context,
-                        title: l10n.notificationVibration,
-                        subtitle: l10n.notificationVibrationSubtitle,
-                        value: prefs.vibrationEnabled,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    vibrationEnabled: value,
-                                  ),
-                                ),
-                              );
-                        },
-                      ),
-                    ],
-                  ),
-
-                  const Divider(height: 32),
-
-                  // Quiet Hours
-                  _buildSection(
+                  // ── Quiet hours ──
+                  _section(
                     title: l10n.notificationQuietHours,
                     subtitle: l10n.notificationQuietHoursSubtitle,
                     children: [
-                      _buildSwitchTile(
-                        context: context,
+                      _switch(
                         title: l10n.notificationEnableQuietHours,
                         subtitle: l10n.notificationQuietHoursDescription,
                         value: prefs.quietHoursEnabled,
-                        enabled: prefs.pushNotificationsEnabled,
-                        onChanged: (value) {
-                          context.read<NotificationPreferencesBloc>().add(
-                                NotificationPreferencesUpdated(
-                                  preferences: prefs.copyWith(
-                                    quietHoursEnabled: value,
-                                  ),
-                                ),
-                              );
-                        },
+                        enabled: on,
+                        onChanged: (v) =>
+                            update(prefs.copyWith(quietHoursEnabled: v)),
                       ),
                       if (prefs.quietHoursEnabled)
                         Padding(
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 16,
-                            vertical: 8,
-                          ),
+                              horizontal: 16, vertical: 8),
                           child: Row(
                             children: [
                               Expanded(
-                                child: _buildTimePicker(
+                                child: _timePicker(
                                   context: context,
                                   label: l10n.notificationStartTime,
                                   time: prefs.quietHoursStart,
-                                  onTimeSelected: (time) {
-                                    context
-                                        .read<NotificationPreferencesBloc>()
-                                        .add(
-                                          NotificationPreferencesUpdated(
-                                            preferences: prefs.copyWith(
-                                              quietHoursStart: time,
-                                            ),
-                                          ),
-                                        );
-                                  },
+                                  onSelected: (t) => update(
+                                      prefs.copyWith(quietHoursStart: t)),
                                 ),
                               ),
                               const SizedBox(width: 16),
                               Expanded(
-                                child: _buildTimePicker(
+                                child: _timePicker(
                                   context: context,
                                   label: l10n.notificationEndTime,
                                   time: prefs.quietHoursEnd,
-                                  onTimeSelected: (time) {
-                                    context
-                                        .read<NotificationPreferencesBloc>()
-                                        .add(
-                                          NotificationPreferencesUpdated(
-                                            preferences: prefs.copyWith(
-                                              quietHoursEnd: time,
-                                            ),
-                                          ),
-                                        );
-                                  },
+                                  onSelected: (t) =>
+                                      update(prefs.copyWith(quietHoursEnd: t)),
                                 ),
                               ),
                             ],
@@ -341,12 +196,10 @@ class NotificationPreferencesScreen extends StatelessWidget {
                         ),
                     ],
                   ),
-
                   const SizedBox(height: 24),
                 ],
               );
             }
-
             return const SizedBox.shrink();
           },
         ),
@@ -354,9 +207,10 @@ class NotificationPreferencesScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildSection({
+  Widget _section({
     required String title,
-    required List<Widget> children, String? subtitle,
+    required List<Widget> children,
+    String? subtitle,
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -380,9 +234,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
                 Text(
                   subtitle,
                   style: const TextStyle(
-                    color: AppColors.textTertiary,
-                    fontSize: 12,
-                  ),
+                      color: AppColors.textTertiary, fontSize: 12),
                 ),
               ],
             ],
@@ -393,12 +245,11 @@ class NotificationPreferencesScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildSwitchTile({
-    required BuildContext context,
+  Widget _switch({
     required String title,
     required String subtitle,
     required bool value,
-    required Function(bool) onChanged,
+    required ValueChanged<bool> onChanged,
     bool enabled = true,
   }) {
     return SwitchListTile(
@@ -422,36 +273,32 @@ class NotificationPreferencesScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildTimePicker({
+  Widget _timePicker({
     required BuildContext context,
     required String label,
     required String time,
-    required Function(String) onTimeSelected,
+    required ValueChanged<String> onSelected,
   }) {
     return InkWell(
       onTap: () async {
         final picked = await showTimePicker(
           context: context,
           initialTime: _parseTime(time),
-          builder: (context, child) {
-            return Theme(
-              data: Theme.of(context).copyWith(
-                colorScheme: const ColorScheme.dark(
-                  primary: AppColors.richGold,
-                  onPrimary: Colors.white,
-                  surface: AppColors.backgroundCard,
-                  onSurface: AppColors.textPrimary,
-                ),
+          builder: (context, child) => Theme(
+            data: Theme.of(context).copyWith(
+              colorScheme: const ColorScheme.dark(
+                primary: AppColors.richGold,
+                onPrimary: Colors.white,
+                surface: AppColors.backgroundCard,
+                onSurface: AppColors.textPrimary,
               ),
-              child: child!,
-            );
-          },
+            ),
+            child: child!,
+          ),
         );
-
         if (picked != null) {
-          final formattedTime =
-              '${picked.hour.toString().padLeft(2, '0')}:${picked.minute.toString().padLeft(2, '0')}';
-          onTimeSelected(formattedTime);
+          onSelected(
+              '${picked.hour.toString().padLeft(2, '0')}:${picked.minute.toString().padLeft(2, '0')}');
         }
       },
       child: Container(
@@ -464,13 +311,9 @@ class NotificationPreferencesScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              label,
-              style: const TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 12,
-              ),
-            ),
+            Text(label,
+                style: const TextStyle(
+                    color: AppColors.textSecondary, fontSize: 12)),
             const SizedBox(height: 4),
             Text(
               _formatTime(time),
@@ -488,63 +331,113 @@ class NotificationPreferencesScreen extends StatelessWidget {
 
   TimeOfDay _parseTime(String time) {
     final parts = time.split(':');
-    return TimeOfDay(
-      hour: int.parse(parts[0]),
-      minute: int.parse(parts[1]),
-    );
+    return TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1]));
   }
 
   String _formatTime(String time) {
-    final timeOfDay = _parseTime(time);
-    final hour = timeOfDay.hourOfPeriod == 0 ? 12 : timeOfDay.hourOfPeriod;
-    final minute = timeOfDay.minute.toString().padLeft(2, '0');
-    final period = timeOfDay.period == DayPeriod.am ? 'AM' : 'PM';
+    final t = _parseTime(time);
+    final hour = t.hourOfPeriod == 0 ? 12 : t.hourOfPeriod;
+    final minute = t.minute.toString().padLeft(2, '0');
+    final period = t.period == DayPeriod.am ? 'AM' : 'PM';
     return '$hour:$minute $period';
   }
 }
 
-/// Extension to add copyWith method to NotificationPreferences
-extension NotificationPreferencesExtension on NotificationPreferences {
-  NotificationPreferences copyWith({
-    bool? pushNotificationsEnabled,
-    bool? emailNotificationsEnabled,
-    bool? newMatchNotifications,
-    bool? newMessageNotifications,
-    bool? newLikeNotifications,
-    bool? profileViewNotifications,
-    bool? superLikeNotifications,
-    bool? matchExpiringNotifications,
-    bool? promotionalNotifications,
-    bool? soundEnabled,
-    bool? vibrationEnabled,
-    String? quietHoursStart,
-    String? quietHoursEnd,
-    bool? quietHoursEnabled,
-  }) {
-    return NotificationPreferences(
-      userId: userId,
-      pushNotificationsEnabled:
-          pushNotificationsEnabled ?? this.pushNotificationsEnabled,
-      emailNotificationsEnabled:
-          emailNotificationsEnabled ?? this.emailNotificationsEnabled,
-      newMatchNotifications:
-          newMatchNotifications ?? this.newMatchNotifications,
-      newMessageNotifications:
-          newMessageNotifications ?? this.newMessageNotifications,
-      newLikeNotifications: newLikeNotifications ?? this.newLikeNotifications,
-      profileViewNotifications:
-          profileViewNotifications ?? this.profileViewNotifications,
-      superLikeNotifications:
-          superLikeNotifications ?? this.superLikeNotifications,
-      matchExpiringNotifications:
-          matchExpiringNotifications ?? this.matchExpiringNotifications,
-      promotionalNotifications:
-          promotionalNotifications ?? this.promotionalNotifications,
-      soundEnabled: soundEnabled ?? this.soundEnabled,
-      vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
-      quietHoursStart: quietHoursStart ?? this.quietHoursStart,
-      quietHoursEnd: quietHoursEnd ?? this.quietHoursEnd,
-      quietHoursEnabled: quietHoursEnabled ?? this.quietHoursEnabled,
+/// City chips + an "Add city" text-input dialog. Cities are stored normalized.
+class _CityChips extends StatelessWidget {
+  const _CityChips({
+    required this.cities,
+    required this.enabled,
+    required this.onAdd,
+    required this.onRemove,
+  });
+
+  final List<String> cities;
+  final bool enabled;
+  final ValueChanged<String> onAdd;
+  final ValueChanged<String> onRemove;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (cities.isEmpty)
+            Text(
+              l10n.notificationNoCities,
+              style: const TextStyle(
+                  color: AppColors.textTertiary, fontSize: 13),
+            ),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final city in cities)
+                Chip(
+                  label: Text(
+                    CityNormalizer.display(city),
+                    style: const TextStyle(color: AppColors.textPrimary),
+                  ),
+                  backgroundColor: AppColors.backgroundCard,
+                  deleteIconColor: AppColors.textSecondary,
+                  onDeleted: enabled ? () => onRemove(city) : null,
+                ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: TextButton.icon(
+              onPressed: enabled ? () => _showAddDialog(context) : null,
+              icon: const Icon(Icons.add_location_alt_outlined,
+                  color: AppColors.richGold, size: 20),
+              label: Text(
+                l10n.notificationAddCity,
+                style: const TextStyle(color: AppColors.richGold),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
+  }
+
+  Future<void> _showAddDialog(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final controller = TextEditingController();
+    final city = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.notificationAddCity,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          style: const TextStyle(color: AppColors.textPrimary),
+          decoration: InputDecoration(
+            hintText: l10n.notificationAddCityHint,
+            hintStyle: const TextStyle(color: AppColors.textTertiary),
+          ),
+          onSubmitted: (v) => Navigator.of(ctx).pop(v),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: Text(l10n.notificationDialogNotNow,
+                style: const TextStyle(color: AppColors.textTertiary)),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(controller.text),
+            child: Text(l10n.notificationDialogEnable,
+                style: const TextStyle(color: AppColors.richGold)),
+          ),
+        ],
+      ),
+    );
+    if (city != null && city.trim().isNotEmpty) onAdd(city);
   }
 }
