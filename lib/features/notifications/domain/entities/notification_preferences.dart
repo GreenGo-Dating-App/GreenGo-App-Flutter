@@ -1,132 +1,125 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
-/// Notification Preferences Entity
+/// Notification Preferences Entity.
 ///
-/// User's notification settings
+/// Per-category push controls for the repositioned (non-dating) product, plus
+/// sound/vibration, quiet hours, and the list of cities the user wants event
+/// alerts for. Firestore stores the five categories under a `categories` map
+/// (see the model); the entity keeps them flat for convenience.
 class NotificationPreferences extends Equatable {
-
   const NotificationPreferences({
     required this.userId,
-    this.pushNotificationsEnabled = true,
-    this.emailNotificationsEnabled = true,
-    this.newMatchNotifications = true,
-    this.newMessageNotifications = true,
-    this.newLikeNotifications = true,
-    this.profileViewNotifications = false,
-    this.superLikeNotifications = true,
-    this.matchExpiringNotifications = true,
-    this.promotionalNotifications = false,
+    this.pushEnabled = true,
+    this.messages = true,
+    this.events = true,
+    this.communities = true,
+    this.social = true,
+    this.account = true,
     this.soundEnabled = true,
     this.vibrationEnabled = true,
     this.quietHoursStart = '22:00',
     this.quietHoursEnd = '08:00',
     this.quietHoursEnabled = false,
+    this.eventCities = const [],
   });
+
   final String userId;
-  final bool pushNotificationsEnabled;
-  final bool emailNotificationsEnabled;
-  final bool newMatchNotifications;
-  final bool newMessageNotifications;
-  final bool newLikeNotifications;
-  final bool profileViewNotifications;
-  final bool superLikeNotifications;
-  final bool matchExpiringNotifications;
-  final bool promotionalNotifications;
+
+  /// Master switch — off silences every push (OS permission is separate).
+  final bool pushEnabled;
+
+  // ── Categories ───────────────────────────────────────────────────────────
+  /// 1:1, group, business and event chat + support replies.
+  final bool messages;
+
+  /// Community/business events, reminders, RSVPs, broadcasts, city alerts.
+  final bool events;
+
+  /// Community announcements and new members.
+  final bool communities;
+
+  /// Profile views, business follows/ratings, boosts.
+  final bool social;
+
+  /// Verification, admin broadcasts, account status.
+  final bool account;
+
+  // ── Delivery ─────────────────────────────────────────────────────────────
   final bool soundEnabled;
   final bool vibrationEnabled;
-  final String quietHoursStart; // Format: "22:00"
-  final String quietHoursEnd; // Format: "08:00"
+  final String quietHoursStart; // "22:00"
+  final String quietHoursEnd; // "08:00"
   final bool quietHoursEnabled;
 
-  /// Check if notifications are allowed at current time
+  /// Normalized city keys the user subscribed to for event alerts.
+  final List<String> eventCities;
+
+  /// Whether notifications are allowed at the current time (quiet hours).
   bool get isNotificationAllowedNow {
     if (!quietHoursEnabled) return true;
-
     final now = DateTime.now();
     final currentTime = TimeOfDay(hour: now.hour, minute: now.minute);
-
     final start = _parseTimeOfDay(quietHoursStart);
     final end = _parseTimeOfDay(quietHoursEnd);
-
-    // Handle overnight quiet hours (e.g., 22:00 to 08:00)
     if (start.hour > end.hour) {
+      // Overnight window, e.g. 22:00 → 08:00.
       return currentTime.hour < start.hour && currentTime.hour >= end.hour;
     }
-
-    // Handle same-day quiet hours (e.g., 12:00 to 14:00)
     return currentTime.hour < start.hour || currentTime.hour >= end.hour;
   }
 
   TimeOfDay _parseTimeOfDay(String time) {
     final parts = time.split(':');
-    return TimeOfDay(
-      hour: int.parse(parts[0]),
-      minute: int.parse(parts[1]),
-    );
+    return TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1]));
   }
 
-  /// Copy with updated fields
   NotificationPreferences copyWith({
     String? userId,
-    bool? pushNotificationsEnabled,
-    bool? emailNotificationsEnabled,
-    bool? newMatchNotifications,
-    bool? newMessageNotifications,
-    bool? newLikeNotifications,
-    bool? profileViewNotifications,
-    bool? superLikeNotifications,
-    bool? matchExpiringNotifications,
-    bool? promotionalNotifications,
+    bool? pushEnabled,
+    bool? messages,
+    bool? events,
+    bool? communities,
+    bool? social,
+    bool? account,
     bool? soundEnabled,
     bool? vibrationEnabled,
     String? quietHoursStart,
     String? quietHoursEnd,
     bool? quietHoursEnabled,
+    List<String>? eventCities,
   }) {
     return NotificationPreferences(
       userId: userId ?? this.userId,
-      pushNotificationsEnabled:
-          pushNotificationsEnabled ?? this.pushNotificationsEnabled,
-      emailNotificationsEnabled:
-          emailNotificationsEnabled ?? this.emailNotificationsEnabled,
-      newMatchNotifications:
-          newMatchNotifications ?? this.newMatchNotifications,
-      newMessageNotifications:
-          newMessageNotifications ?? this.newMessageNotifications,
-      newLikeNotifications: newLikeNotifications ?? this.newLikeNotifications,
-      profileViewNotifications:
-          profileViewNotifications ?? this.profileViewNotifications,
-      superLikeNotifications:
-          superLikeNotifications ?? this.superLikeNotifications,
-      matchExpiringNotifications:
-          matchExpiringNotifications ?? this.matchExpiringNotifications,
-      promotionalNotifications:
-          promotionalNotifications ?? this.promotionalNotifications,
+      pushEnabled: pushEnabled ?? this.pushEnabled,
+      messages: messages ?? this.messages,
+      events: events ?? this.events,
+      communities: communities ?? this.communities,
+      social: social ?? this.social,
+      account: account ?? this.account,
       soundEnabled: soundEnabled ?? this.soundEnabled,
       vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
       quietHoursStart: quietHoursStart ?? this.quietHoursStart,
       quietHoursEnd: quietHoursEnd ?? this.quietHoursEnd,
       quietHoursEnabled: quietHoursEnabled ?? this.quietHoursEnabled,
+      eventCities: eventCities ?? this.eventCities,
     );
   }
 
   @override
   List<Object?> get props => [
         userId,
-        pushNotificationsEnabled,
-        emailNotificationsEnabled,
-        newMatchNotifications,
-        newMessageNotifications,
-        newLikeNotifications,
-        profileViewNotifications,
-        superLikeNotifications,
-        matchExpiringNotifications,
-        promotionalNotifications,
+        pushEnabled,
+        messages,
+        events,
+        communities,
+        social,
+        account,
         soundEnabled,
         vibrationEnabled,
         quietHoursStart,
         quietHoursEnd,
         quietHoursEnabled,
+        eventCities,
       ];
 }
