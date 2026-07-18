@@ -7326,6 +7326,13 @@ class AppLocalizationsIt extends AppLocalizations {
       'No cities yet — add one to get event alerts';
 
   @override
+  String get notificationEnableInSettingsBody =>
+      'Notifications are off. Turn them on in Settings to get messages, events and community alerts.';
+
+  @override
+  String get notificationOpenSettings => 'Open Settings';
+
+  @override
   String get notificationSound => 'Suono';
 
   @override
