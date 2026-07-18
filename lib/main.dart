@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:firebase_performance/firebase_performance.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -1003,8 +1004,53 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
           status == AuthorizationStatus.provisional) {
         return;
       }
-      // Denied → iOS won't re-prompt; don't nag (user re-enables in Settings).
-      if (status == AuthorizationStatus.denied) return;
+      // Denied → the OS won't show its system prompt again, but we still ASK the
+      // user to turn notifications on, pointing them to the app's Settings page.
+      if (status == AuthorizationStatus.denied) {
+        if (!mounted) return;
+        final l10nD = AppLocalizations.of(context);
+        await showDialog<void>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: AppColors.charcoal,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+              side: const BorderSide(color: AppColors.richGold, width: 1.5),
+            ),
+            title: Text(
+              l10nD?.notificationDialogTitle ?? 'Stay Connected',
+              style: const TextStyle(
+                  color: AppColors.richGold, fontWeight: FontWeight.bold),
+            ),
+            content: Text(
+              l10nD?.notificationEnableInSettingsBody ??
+                  'Notifications are off. Turn them on in Settings to get messages, events and community alerts.',
+              style: const TextStyle(color: AppColors.textSecondary),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(ctx).pop(),
+                child: Text(
+                  l10nD?.notificationDialogNotNow ?? 'Not Now',
+                  style: const TextStyle(color: AppColors.textTertiary),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(ctx).pop();
+                  openAppSettings();
+                },
+                child: Text(
+                  l10nD?.notificationOpenSettings ?? 'Open Settings',
+                  style: const TextStyle(
+                      color: AppColors.richGold, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ],
+          ),
+        );
+        return;
+      }
 
       // status == notDetermined → show the styled pre-prompt, then the OS dialog.
       if (!mounted) return;

@@ -13032,6 +13032,18 @@ abstract class AppLocalizations {
   /// **'No cities yet — add one to get event alerts'**
   String get notificationNoCities;
 
+  /// No description provided for @notificationEnableInSettingsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications are off. Turn them on in Settings to get messages, events and community alerts.'**
+  String get notificationEnableInSettingsBody;
+
+  /// No description provided for @notificationOpenSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Settings'**
+  String get notificationOpenSettings;
+
   /// No description provided for @notificationSound.
   ///
   /// In en, this message translates to:

@@ -3614,6 +3614,8 @@
   "notificationAddCity": "Add a city",
   "notificationAddCityHint": "e.g. Rome",
   "notificationNoCities": "No cities yet — add one to get event alerts",
+  "notificationEnableInSettingsBody": "Notifications are off. Turn them on in Settings to get messages, events and community alerts.",
+  "notificationOpenSettings": "Open Settings",
   "notificationSound": "Sound",
   "notificationSoundSubtitle": "Play sound for notifications",
   "notificationSoundVibration": "Sound & Vibration",
