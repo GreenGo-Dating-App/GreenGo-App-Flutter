@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -5,6 +6,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/city_normalizer.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/domain/entities/location.dart' as profile_entity;
+import '../../../profile/presentation/screens/traveler_location_picker_screen.dart';
+import '../../../profile/presentation/screens/web_location_picker_screen.dart';
 import '../../domain/entities/notification_preferences.dart';
 import '../bloc/notification_preferences_bloc.dart';
 import '../bloc/notification_preferences_event.dart';
@@ -391,7 +395,7 @@ class _CityChips extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: TextButton.icon(
-              onPressed: enabled ? () => _showAddDialog(context) : null,
+              onPressed: enabled ? () => _pickCityFromMap(context) : null,
               icon: const Icon(Icons.add_location_alt_outlined,
                   color: AppColors.richGold, size: 20),
               label: Text(
@@ -405,39 +409,18 @@ class _CityChips extends StatelessWidget {
     );
   }
 
-  Future<void> _showAddDialog(BuildContext context) async {
-    final l10n = AppLocalizations.of(context)!;
-    final controller = TextEditingController();
-    final city = await showDialog<String>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.notificationAddCity,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: TextField(
-          controller: controller,
-          autofocus: true,
-          style: const TextStyle(color: AppColors.textPrimary),
-          decoration: InputDecoration(
-            hintText: l10n.notificationAddCityHint,
-            hintStyle: const TextStyle(color: AppColors.textTertiary),
-          ),
-          onSubmitted: (v) => Navigator.of(ctx).pop(v),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(),
-            child: Text(l10n.notificationDialogNotNow,
-                style: const TextStyle(color: AppColors.textTertiary)),
-          ),
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(controller.text),
-            child: Text(l10n.notificationDialogEnable,
-                style: const TextStyle(color: AppColors.richGold)),
-          ),
-        ],
+  /// Opens the app's map location picker (flutter_map on web, Google Maps on
+  /// mobile), reverse-geocodes the dropped pin to a city, and adds it.
+  Future<void> _pickCityFromMap(BuildContext context) async {
+    final result = await Navigator.of(context).push<profile_entity.Location>(
+      MaterialPageRoute(
+        builder: (_) => kIsWeb
+            ? const WebLocationPickerScreen()
+            : const TravelerLocationPickerScreen(),
       ),
     );
-    if (city != null && city.trim().isNotEmpty) onAdd(city);
+    if (result != null && result.city.trim().isNotEmpty) {
+      onAdd(result.city);
+    }
   }
 }
