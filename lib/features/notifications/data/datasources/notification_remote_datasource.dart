@@ -114,6 +114,19 @@ class NotificationRemoteDataSourceImpl
             action == 'approval') {
           continue;
         }
+        // GreenGo is a networking app, not dating: never surface dating-style
+        // like/match/super-like notifications, incl. any legacy docs already in
+        // Firestore. (Producers were removed; this suppresses the tail.)
+        if (rawType == 'new_like' ||
+            rawType == 'newLike' ||
+            rawType == 'new_match' ||
+            rawType == 'newMatch' ||
+            rawType == 'super_like' ||
+            rawType == 'superLike' ||
+            rawType == 'match_expiring' ||
+            rawType == 'matchExpiring') {
+          continue;
+        }
         try {
           items.add(NotificationModel.fromFirestore(doc));
         } catch (_) {
