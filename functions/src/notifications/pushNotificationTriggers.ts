@@ -7,6 +7,7 @@ import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/fire
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
 import { brandPush } from './brand';
+import { shouldNotify } from './prefs';
 import { logInfo, logError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
 
@@ -340,6 +341,9 @@ export const onNewMessagePush = onDocumentCreated(
             logInfo(`onNewMessagePush: ${senderId} <-> ${recipientId} blocked, skip`);
             return;
           }
+
+          // Per-category notification preference (messages).
+          if (!(await shouldNotify(recipientId, 'messages'))) return;
 
           await sendPushToUser(
             recipientId,

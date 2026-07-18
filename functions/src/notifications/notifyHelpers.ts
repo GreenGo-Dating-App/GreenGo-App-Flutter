@@ -6,6 +6,7 @@
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { brandPush } from './brand';
+import { shouldNotify, categoryForType } from './prefs';
 
 const db = admin.firestore();
 
@@ -79,6 +80,9 @@ export async function emitNotification(params: {
     ...(actor ? { actorId: actor.id, actorName: actor.name } : {}),
     ...(actor?.photo ? { imageUrl: actor.photo } : {}),
   });
+
+  // Respect the recipient's per-category preference (feed doc already written).
+  if (!(await shouldNotify(recipientId, categoryForType(type)))) return;
 
   try {
     const token = await tokenFor(recipientId);

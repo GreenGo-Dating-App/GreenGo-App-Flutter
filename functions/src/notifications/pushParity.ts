@@ -23,6 +23,7 @@
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { brandPush } from './brand';
+import { shouldNotify, categoryForType } from './prefs';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -71,6 +72,18 @@ export const onNotificationCreatedPush = onDocumentCreated(
     const type = (doc.type as string) || 'notification';
     const data = stringifyData(doc.data, type);
     const imageUrl = (doc.imageUrl as string) || undefined;
+
+    // Respect the user's per-category notification preference. If they disabled
+    // this category (or push), keep the in-app feed doc but skip the push and
+    // mark it handled so the trigger doesn't retry.
+    if (!(await shouldNotify(userId, categoryForType(type)))) {
+      try {
+        await snap.ref.update({ pushSent: true });
+      } catch {
+        // ignore
+      }
+      return;
+    }
 
     // Best-effort push — never throw out of the trigger.
     try {
