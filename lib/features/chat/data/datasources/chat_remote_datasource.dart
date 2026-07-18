@@ -359,12 +359,15 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // Create new conversation
       final conversationRef = firestore.collection('conversations').doc();
 
+      final convNow = DateTime.now();
       final newConversation = ConversationModel(
         conversationId: conversationRef.id,
         matchId: matchId,
         userId1: userId1,
         userId2: userId2,
-        createdAt: DateTime.now(),
+        createdAt: convNow,
+        // Seed lastMessageAt so the ordered list shows it before any message.
+        lastMessageAt: convNow,
         unreadCount: 0,
       );
 
@@ -2035,12 +2038,17 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // Create new search conversation
       final conversationRef = firestore.collection('conversations').doc();
 
+      final now = DateTime.now();
       final newConversation = ConversationModel(
         conversationId: conversationRef.id,
         matchId: syntheticMatchId,
         userId1: currentUserId,
         userId2: otherUserId,
-        createdAt: DateTime.now(),
+        createdAt: now,
+        // Seed lastMessageAt at creation so the conversation shows in the
+        // (lastMessageAt-ordered) list IMMEDIATELY — the ordered query drops
+        // docs where this field is null, which hid brand-new conversations.
+        lastMessageAt: now,
         unreadCount: 0,
         conversationType: ConversationType.search,
         businessInquiry: businessInquiry,
