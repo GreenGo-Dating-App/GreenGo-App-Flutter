@@ -602,14 +602,11 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
         children: [
           // Map
           Expanded(
-            child: ClipRRect(
-              borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(16),
-                bottomRight: Radius.circular(16),
-              ),
-              child: kIsWeb
-                  ? const WebMapPlaceholder()
-                  : GoogleMap(
+            // No ClipRRect: clipping an Android platform view (GoogleMap) can
+            // blank it. Plain Expanded > GoogleMap, like the working city picker.
+            child: kIsWeb
+                ? const WebMapPlaceholder()
+                : GoogleMap(
                       initialCameraPosition: CameraPosition(
                         target: _selectedLatLng,
                         zoom: 10,
@@ -632,7 +629,6 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
                       zoomControlsEnabled: true,
                       mapToolbarEnabled: false,
                     ),
-            ),
           ),
 
           // Address bar
