@@ -18,6 +18,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
+import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 
@@ -111,7 +112,7 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
         try {
           await admin.messaging().sendEachForMulticast({
             tokens: chunk,
-            notification: { title, body },
+            notification: brandPush(title, body),
             data: dataPayload,
             android: {
               priority: 'high',

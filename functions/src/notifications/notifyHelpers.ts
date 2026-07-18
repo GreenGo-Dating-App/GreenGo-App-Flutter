@@ -5,6 +5,7 @@
  */
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
+import { brandPush } from './brand';
 
 const db = admin.firestore();
 
@@ -84,11 +85,11 @@ export async function emitNotification(params: {
     if (token) {
       await admin.messaging().send({
         token,
-        notification: {
-          title: actor ? `${actor.name} ${title}` : title,
+        notification: brandPush(
+          actor ? `${actor.name} ${title}` : title,
           body,
-          ...(actor?.photo ? { imageUrl: actor.photo } : {}),
-        },
+          actor?.photo,
+        ),
         data,
         android: {
           priority: 'high',
