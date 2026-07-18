@@ -16,10 +16,15 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
                      android:maxSdkVersion="32" />
 
-    <!-- Permissions for Android 13+ (API 33+) -->
+    <!-- Permissions for Android 13+ (API 33+). READ_MEDIA_AUDIO intentionally
+         NOT declared: the app records voice messages (RECORD_AUDIO) and plays
+         app sounds/recordings/URLs, but never reads the user's music library.
+         If a plugin merges it in, strip it so Play's data-safety surface stays
+         minimal. -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"
+        tools:node="remove"/>
 
     <!-- Microphone for voice messages (declared explicitly; record plugin also merges this) -->
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
