@@ -147,7 +147,11 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
     final canUse = _hasPin && _city.trim().isNotEmpty;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
+      // StackFit.expand makes the Stack fill the whole screen; without it a
+      // Stack whose children are all Positioned collapses to zero size, which
+      // left the map unsized (gray, gestures off, not full-page).
       body: Stack(
+        fit: StackFit.expand,
         children: [
           // Full-screen map.
           Positioned.fill(
