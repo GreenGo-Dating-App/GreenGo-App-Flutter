@@ -327,17 +327,10 @@ export const approveUser = onCall<ApproveUserRequest>(
         const messages = BROADCAST_MESSAGES.accountApproved;
         const message = messages[userLang] || messages.en;
 
-        await db.collection('notifications').add({
-          userId,
-          type: 'account_approved',
-          title: message.title,
-          body: message.body,
-          read: false,
-          sent: false,
-          // This handler sends its own push below — skip the parity trigger.
-          pushSent: true,
-          createdAt: FieldValue.serverTimestamp(),
-        });
+        // NOTE: intentionally do NOT write an "account_approved" doc to the
+        // `notifications` feed. It is one-time noise that lingered in the list
+        // and re-surfaced on every open. The approval is still communicated by
+        // the one-time push below; the feed stays clean.
 
         // Send push notification if user has FCM token
         if (userData.fcmToken) {

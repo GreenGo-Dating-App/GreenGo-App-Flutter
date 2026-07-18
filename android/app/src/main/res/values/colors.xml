@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ic_launcher_background">#1A1A1A</color>
+    <!-- Tint applied to the status-bar notification icon + accent -->
+    <color name="notification_gold">#D4A536</color>
 </resources>
