@@ -1,17 +1,76 @@
 rules_version = '2';
 
-// ============================================================================
-// FULLY OPEN RULES FOR LOCAL DEVELOPMENT TESTING
-// ============================================================================
-// WARNING: These rules allow ANYONE to read/write ANY file
-// Use ONLY for local emulator testing
-// ============================================================================
+// GreenGo Cloud Storage security rules.
+//
+// Replaces the previous fully-open dev rules (allow read,write: if true).
+// Policy: uploads are authenticated + owner-scoped where the owner id is in the
+// path; media is readable by signed-in users (discovery/chat); ID-verification
+// images are readable ONLY by admins. Everything unmatched is denied.
+// Admin = Firebase Auth custom claim `admin` (set via the admin migration).
 
 service firebase.storage {
   match /b/{bucket}/o {
-    // Allow everything for testing
-    match /{allPaths=**} {
-      allow read, write: if true;
+
+    function signedIn() {
+      return request.auth != null;
     }
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+    // Accept only images/audio/video, capped at 50 MB (voice/video intros).
+    function validUpload() {
+      return request.resource.size < 50 * 1024 * 1024
+        && (request.resource.contentType.matches('image/.*')
+            || request.resource.contentType.matches('audio/.*')
+            || request.resource.contentType.matches('video/.*'));
+    }
+
+    // Profile photos, voice intros, media — owner writes; signed-in users read
+    // (needed for discovery/profile viewing).
+    match /profiles/{uid}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if isOwner(uid) && validUpload();
+    }
+
+    // Video profiles (video_profiles/{uid}/intro.mp4|thumbnail.jpg).
+    match /video_profiles/{uid}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if isOwner(uid) && validUpload();
+    }
+
+    // Community images — the owner (community owner id in the path) writes.
+    match /communities/{ownerId}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if isOwner(ownerId) && validUpload();
+    }
+
+    // Group chat media / voice — signed-in read+write (group membership is
+    // enforced in Firestore; Storage rules can't read the group doc).
+    match /group_media/{groupId}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if signedIn() && validUpload();
+    }
+    match /group_voice/{groupId}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if signedIn() && validUpload();
+    }
+
+    // Support-chat attachments — signed-in read+write (conversation-scoped).
+    match /support_attachments/{conversationId}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if signedIn() && validUpload();
+    }
+
+    // ID / verification images — uploader writes, ONLY admins read.
+    match /verifications/{allPaths=**} {
+      allow read: if isAdmin();
+      allow write: if signedIn() && validUpload();
+    }
+
+    // Everything else: denied (no more open bucket). Add a match above for any
+    // new upload path before shipping it.
   }
 }

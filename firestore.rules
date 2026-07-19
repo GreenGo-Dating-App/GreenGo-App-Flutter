@@ -41,8 +41,18 @@ service cloud.firestore {
     // ============================================================================
     match /users/{userId} {
       allow read: if isSignedIn();
-      allow create: if isOwner(userId);
-      allow update: if isOwner(userId) || isAdminPanelUser();
+      // Owner may create their own doc but NEVER seed a privilege field.
+      allow create: if isOwner(userId)
+        && request.resource.data.get('role', '') != 'admin'
+        && request.resource.data.get('isAdmin', false) == false;
+      // Owner may update their own doc but NEVER change role / isAdmin — those
+      // are admin / Cloud-Function only (closes the self-promote-to-admin hole).
+      allow update: if (isOwner(userId)
+              && request.resource.data.get('role', resource.data.get('role', ''))
+                 == resource.data.get('role', '')
+              && request.resource.data.get('isAdmin', false)
+                 == resource.data.get('isAdmin', false))
+        || isAdminPanelUser();
       allow delete: if isOwner(userId);
     }
 
@@ -75,7 +85,14 @@ service cloud.firestore {
       // change ONLY the denormalized counters (followerCount / rating aggregate).
       allow update: if (isOwner(profileId)
               && request.resource.data.get('isBanned', false)
-                 == resource.data.get('isBanned', false))
+                 == resource.data.get('isBanned', false)
+              // NEVER let the owner set their own admin / verification flags.
+              && request.resource.data.get('isAdmin', false)
+                 == resource.data.get('isAdmin', false)
+              && request.resource.data.get('isBusinessVerified', false)
+                 == resource.data.get('isBusinessVerified', false)
+              && request.resource.data.get('businessVerified', false)
+                 == resource.data.get('businessVerified', false))
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
