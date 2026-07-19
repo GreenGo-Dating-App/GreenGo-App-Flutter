@@ -139,20 +139,16 @@ export {
   onCommunityEventChanged,
 } from './communities/eventFanout';
 
-// Communities — ONE-TIME backfill: add creator owner-member docs to legacy
-// communities. Invoke once via URL (?token=...), then it can be removed.
-export {
-  backfillCommunityCreatorMembers,
-} from './communities/backfillCreatorMembers';
+// H3: debug/seed HTTP endpoints (backfillCommunityCreatorMembers, seedMockData,
+// removeMockData, diagLiveEvents, diagCommunityEvents) REMOVED — they were
+// guarded only by a committed static token (unauthenticated data-delete/spam).
+// Deleted from prod via `firebase functions:delete` by name.
 
-// TESTING — seed / remove mock data (token-guarded). Fills the app with fake
-// users/events/communities tagged isMock, and deletes ONLY that data.
-export {
-  seedMockData,
-  removeMockData,
-  diagLiveEvents,
-  diagCommunityEvents,
-} from './admin/mockData';
+// H5: keep the orphaned-but-still-used gamification functions exported so a full
+// `deploy --only functions` doesn't prune them (the app calls refreshMyStats and
+// relies on the onMessageCreatedVocabulary trigger). NOTE: `getDisplayPrices` is
+// prod-only (no source) — keep deploying by name until it is rebuilt in source.
+export { refreshMyStats, onMessageCreatedVocabulary } from './gamification';
 
 // Account deletion cascade — on profiles/{uid} delete, fix stale counts, purge
 // orphaned memberships/attendees/followers, delete the Auth user + Storage.
@@ -249,6 +245,9 @@ export {
 } from './payments/stripeCheckout';
 
 // Coin Functions
+// Use the REAL coin functions (server-side receipt verification) from
+// coins/index.ts — NOT coinManager.ts, whose verify was a `verified = true`
+// stub (live free-coins exploit). coinManager.ts is deleted.
 export {
   verifyGooglePlayCoinPurchase,
   verifyAppStoreCoinPurchase,
@@ -256,7 +255,7 @@ export {
   processExpiredCoins,
   sendExpirationWarnings,
   claimReward,
-} from './coins/coinManager';
+} from './coins';
 
 // Coupon Redemption + Admin Management
 export { redeemCoupon } from './coupons/redeemCoupon';

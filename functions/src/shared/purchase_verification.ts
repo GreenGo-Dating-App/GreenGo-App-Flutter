@@ -98,7 +98,9 @@ export async function verifyGooglePlayPurchase(
         'Set up API Access in Google Play Console to enable verification.',
         msg,
       );
-      return { verified: true, apiUnavailable: true };
+      // H4: FAIL CLOSED — an unreachable/misconfigured store API must NOT grant
+      // entitlement (was `verified: true`, which handed out free coins/tiers).
+      return { verified: false, apiUnavailable: true };
     }
 
     logError('Google Play verification error:', msg);
@@ -155,7 +157,9 @@ export async function verifyGooglePlaySubscription(
         'without server verification. Link the API in Play Console to enable it.',
         msg,
       );
-      return { verified: true, apiUnavailable: true };
+      // H4: FAIL CLOSED — an unreachable/misconfigured store API must NOT grant
+      // entitlement (was `verified: true`, which handed out free coins/tiers).
+      return { verified: false, apiUnavailable: true };
     }
     logError('Google Play subscription verification error:', msg);
     return { verified: false, error: msg };
