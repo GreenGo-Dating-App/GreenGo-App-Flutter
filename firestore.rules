@@ -40,7 +40,9 @@ service cloud.firestore {
     // USERS COLLECTION
     // ============================================================================
     match /users/{userId} {
-      allow read: if isSignedIn();
+      // PII (email, fcmToken, tier): only the owner + admins may read a user doc.
+      // Discovery/display uses the separate `profiles` collection.
+      allow read: if isOwner(userId) || isAdmin() || isAdminPanelUser();
       // Owner may create their own doc but NEVER seed a privilege field.
       allow create: if isOwner(userId)
         && request.resource.data.get('role', '') != 'admin'
