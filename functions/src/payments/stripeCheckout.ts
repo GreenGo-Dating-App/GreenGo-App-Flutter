@@ -186,17 +186,20 @@ export const stripeWebhook = functions
     }
 
     const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET || '';
+    // C6: FAIL CLOSED. Never process an unsigned body — without the webhook
+    // secret anyone could POST a fake "checkout.session.completed" and self-grant
+    // coins/membership.
+    if (!webhookSecret) {
+      console.error('STRIPE_WEBHOOK_SECRET not configured — rejecting webhook (no unsigned processing)');
+      res.status(500).send('Webhook not configured');
+      return;
+    }
     let event: Stripe.Event;
     try {
       const stripe = getStripe();
-      if (webhookSecret) {
-        const signature = req.headers['stripe-signature'] as string;
-        const payload = (req as any).rawBody || Buffer.from(JSON.stringify(req.body));
-        event = stripe.webhooks.constructEvent(payload, signature, webhookSecret);
-      } else {
-        event = req.body as Stripe.Event;
-        console.warn('⚠️ Stripe webhook signature verification skipped (no webhook secret configured)');
-      }
+      const signature = req.headers['stripe-signature'] as string;
+      const payload = (req as any).rawBody || Buffer.from(JSON.stringify(req.body));
+      event = stripe.webhooks.constructEvent(payload, signature, webhookSecret);
     } catch (error: any) {
       console.error('Webhook signature verification failed:', error.message);
       res.status(400).send(`Webhook Error: ${error.message}`);
