@@ -217,14 +217,26 @@ export const onEventCityAlert = onDocumentWritten(
     }
 
     // Exclude community members who already got the community fan-out.
+    // Paginated + capped (20×500) so a huge community never loads all members
+    // into memory; beyond the cap a rare overlap is acceptable.
     const exclude = new Set<string>();
     try {
-      const members = await db
+      const membersCol = db
         .collection('communities')
         .doc(communityId)
-        .collection('members')
-        .get();
-      members.docs.forEach((d) => exclude.add(d.id));
+        .collection('members');
+      let last: admin.firestore.QueryDocumentSnapshot | undefined;
+      for (let pages = 0; pages < 20; pages++) {
+        let q = membersCol
+          .orderBy(admin.firestore.FieldPath.documentId())
+          .limit(500);
+        if (last) q = q.startAfter(last);
+        const page = await q.get();
+        if (page.empty) break;
+        page.docs.forEach((d) => exclude.add(d.id));
+        last = page.docs[page.docs.length - 1];
+        if (page.size < 500) break;
+      }
     } catch {
       // best-effort; overlap is acceptable if this fails
     }
