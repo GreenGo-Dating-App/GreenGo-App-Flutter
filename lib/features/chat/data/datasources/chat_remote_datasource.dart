@@ -489,6 +489,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       messageData['deliveredAt'] = FieldValue.serverTimestamp();
       await messageRef.set(messageData);
 
+      // H9: the message is now delivered. Everything below is best-effort
+      // side-effects (conversation/match updates, unread count, notifications).
+      // A failure here must NOT report the send as failed — that made users
+      // retry and send duplicates.
+      try {
       // Update conversation with last message using server timestamp
       await firestore
           .collection('conversations')
@@ -572,6 +577,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
             'conversationId': conversation.conversationId,
           },
         );
+      }
+      } catch (sideEffectError) {
+        // Message already delivered — never fail the send on a side-effect.
       }
 
       return message;

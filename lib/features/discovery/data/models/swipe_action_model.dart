@@ -30,7 +30,9 @@ class SwipeActionModel extends SwipeAction {
       userId: data['userId'] as String,
       targetUserId: data['targetUserId'] as String,
       actionType: _parseActionType(data['actionType'] as String),
-      timestamp: (data['timestamp'] as Timestamp).toDate(),
+      timestamp: data['timestamp'] is Timestamp
+          ? (data['timestamp'] as Timestamp).toDate()
+          : DateTime.now(),
       createdMatch: data['createdMatch'] ?? false,
     );
   }
