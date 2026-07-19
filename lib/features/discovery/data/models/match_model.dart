@@ -40,7 +40,9 @@ class MatchModel extends Match {
       matchId: doc.id,
       userId1: data['userId1'] as String,
       userId2: data['userId2'] as String,
-      matchedAt: (data['matchedAt'] as Timestamp).toDate(),
+      matchedAt: data['matchedAt'] is Timestamp
+          ? (data['matchedAt'] as Timestamp).toDate()
+          : DateTime.now(),
       isActive: data['isActive'] ?? true,
       lastMessageAt: data['lastMessageAt'] != null
           ? (data['lastMessageAt'] as Timestamp).toDate()
