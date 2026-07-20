@@ -36,6 +36,22 @@ service cloud.firestore {
              get(/databases/$(database)/documents/profiles/$(request.auth.uid)).data.isAdmin == true;
     }
 
+    // Conversation membership (C4): the two 1:1 participants, any group
+    // participant, or the assigned support agent. `c` is the conversation data.
+    function convMember(c) {
+      return isSignedIn() && (
+        request.auth.uid == c.get('userId1', '')
+        || request.auth.uid == c.get('userId2', '')
+        || (c.get('participants', []) is list
+            && request.auth.uid in c.get('participants', []))
+        || request.auth.uid == c.get('supportAgentId', '')
+      );
+    }
+    // Admins / support staff may read any conversation (moderation, support).
+    function convAdmin() {
+      return isAdmin() || isAdminPanelUser() || isProfileAdmin();
+    }
+
     // ============================================================================
     // USERS COLLECTION
     // ============================================================================
@@ -127,17 +143,25 @@ service cloud.firestore {
     // CONVERSATIONS COLLECTION
     // ============================================================================
     match /conversations/{conversationId} {
-      allow read: if isSignedIn();
-      allow create: if isSignedIn();
-      allow update: if isSignedIn();
-      allow delete: if isSignedIn();
+      // C4: only the participants (or support agent / admin) may access a
+      // conversation — was readable/writable by ANY signed-in user.
+      allow read: if convMember(resource.data) || convAdmin();
+      allow create: if isSignedIn()
+        && (request.auth.uid == request.resource.data.get('userId1', '')
+            || request.auth.uid == request.resource.data.get('userId2', ''));
+      allow update: if convMember(resource.data) || convAdmin();
+      allow delete: if convMember(resource.data) || convAdmin();
 
-      // MESSAGES SUBCOLLECTION
+      // MESSAGES SUBCOLLECTION — gated on parent-conversation membership.
       match /messages/{messageId} {
-        allow read: if isSignedIn();
-        allow create: if isSignedIn();
-        allow update: if isSignedIn();
-        allow delete: if isSignedIn();
+        function conv() {
+          return get(/databases/$(database)/documents/conversations/$(conversationId)).data;
+        }
+        allow read: if convMember(conv()) || convAdmin();
+        // A member may post; sender can't impersonate another uid.
+        allow create: if convMember(conv())
+          && request.auth.uid == request.resource.data.get('senderId', request.auth.uid);
+        allow update, delete: if convMember(conv()) || convAdmin();
       }
     }
 
