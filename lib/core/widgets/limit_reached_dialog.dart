@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../features/coins/presentation/screens/shop_screen.dart';
+import '../../features/coins/presentation/screens/coin_shop_screen.dart';
 import '../../features/membership/domain/entities/membership.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
@@ -411,7 +411,7 @@ class LimitReachedDialog extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ShopScreen(userId: userId),
+                  builder: (context) => CoinShopScreen(userId: userId),
                 ),
               );
               onBuyCoins?.call();
