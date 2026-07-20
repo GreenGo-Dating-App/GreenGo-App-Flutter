@@ -25,9 +25,11 @@ Ships as 2 commits: `firestore.rules`, `storage.rules`. Test against the Firebas
 - Verify: emulator (self-set isAdmin denied); confirm real admins still pass after claim migration BEFORE removing the Firestore-flag fallback.
 - Risk 🟥: sequencing — set claims first, deploy functions to read claims, THEN tighten rules, so admins are never locked out.
 
-**0.3 Coins server-only (C3)** — `firestore.rules`
-- `coinBalances`/`coinTransactions`/`videoCoinBalances`: `allow write: if false` (client). Confirm the client mutates coins only via callables; if any client path writes directly, move it to a callable (see Phase 1).
-- Verify: emulator (client write denied); coin spend/earn still works via functions on device.
+**0.3 Coins server-only (C3)** — `firestore.rules` — 🟡 PARTIAL
+- ✅ DONE (commit 133c8a8): removed the blatant client-side minting in the legacy `ShopScreen` (`_processCoinPurchase`/`_processVideoCoinPurchase` used `FieldValue.increment` on `coinBalances`/`videoCoinBalances` with **no payment/verification** — two taps = free coins). `limit_reached_dialog` now opens the verified `CoinShopScreen` (server `verifyPurchase`); the legacy screen routes there instead of minting. Removed unused `_createInvoice`.
+- ⏳ REMAINING (the rule lockdown — needs the Phase-1.4 refactor FIRST, or it breaks the coin economy): `coinBalances`/`videoCoinBalances`/`coinTransactions` still allow `isOwner(userId)` writes, so a custom Firestore client can mint directly. The client datasource (`coin_remote_datasource.dart`) also does client-side **spend** (decrement), **gift** (sender−/receiver+), **reward/allowance** credits, and **video-coin** writes via transactions — so `allow write: if false` would break all of those until each moves to a callable.
+  - Sequenced plan: (a) build callables for the credit paths — reuse existing `claimReward`/`grantMonthlyAllowances`/`verifyGooglePlayCoinPurchase`, add a `giftCoins` callable for the receiver-side credit; (b) rewire the datasource to call them; (c) THEN tighten the rule. Interim option: allow client writes only when `request.resource.data.totalCoins <= resource.data.totalCoins` (spend-only) — blocks mints but breaks gift-receive until (a).
+- Verify: emulator (client write denied); coin spend/earn/gift still works via functions on device.
 
 **0.4 Messages/matches participant-gating (C4)** — `firestore.rules`
 - `conversations` + nested `messages`: read/write only if `request.auth.uid in [userId1,userId2]` (or `participants`); create requires `senderId==auth.uid`; edit/delete own only. Mirror the correct `groups/{gid}/messages` rule. Same for `matches`/`likes`.
