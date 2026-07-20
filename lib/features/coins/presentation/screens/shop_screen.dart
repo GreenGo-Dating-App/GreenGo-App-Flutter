@@ -7,6 +7,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/coin_gift.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/video_coin.dart';
+import 'coin_shop_screen.dart';
 
 /// Shop Screen with tabs for Coins, Video Coins, and Gifts
 class ShopScreen extends StatefulWidget {
@@ -209,55 +210,19 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
     }
   }
 
+  // SECURITY (C3): client-side coin minting removed. Coins are only ever
+  // credited server-side after a verified Play/App Store purchase
+  // (verifyPurchase Cloud Function). This legacy screen no longer writes to
+  // `coinBalances`; it routes the user to the verified CoinShopScreen instead.
   Future<void> _processCoinPurchase(CoinPackage package) async {
-    try {
-      // Create order
-      final orderId = DateTime.now().millisecondsSinceEpoch.toString();
-      await FirebaseFirestore.instance.collection('orders').doc(orderId).set({
-        'orderId': orderId,
-        'userId': widget.userId,
-        'type': 'coins',
-        'packageId': package.packageId,
-        'amount': package.totalCoins,
-        'price': package.price,
-        'status': 'completed',
-        'createdAt': FieldValue.serverTimestamp(),
-      });
-
-      // Update balance
-      await FirebaseFirestore.instance
-          .collection('coinBalances')
-          .doc(widget.userId)
-          .set({
-        'userId': widget.userId,
-        'totalCoins': FieldValue.increment(package.totalCoins),
-        'purchasedCoins': FieldValue.increment(package.totalCoins),
-        'lastUpdated': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
-
-      // Create invoice
-      await _createInvoice(orderId, 'coins', package.totalCoins, package.price);
-
-      await _loadBalances();
-
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.coinsPurchasedCoins(package.totalCoins)),
-            backgroundColor: Colors.green,
-          ),
-        );
-      }
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.coinsPurchaseFailed}: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    }
+    if (!mounted) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => CoinShopScreen(userId: widget.userId),
+      ),
+    );
+    await _loadBalances();
   }
 
   Future<void> _handleVideoCoinPurchase(VideoCoinPackage package) async {
@@ -292,82 +257,19 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
     }
   }
 
+  // SECURITY (C3): client-side video-minute minting removed — same policy as
+  // _processCoinPurchase. Route to the verified CoinShopScreen.
   Future<void> _processVideoCoinPurchase(VideoCoinPackage package) async {
-    try {
-      final orderId = DateTime.now().millisecondsSinceEpoch.toString();
-      await FirebaseFirestore.instance.collection('orders').doc(orderId).set({
-        'orderId': orderId,
-        'userId': widget.userId,
-        'type': 'videoCoins',
-        'packageId': package.packageId,
-        'amount': package.totalMinutes,
-        'price': package.price,
-        'status': 'completed',
-        'createdAt': FieldValue.serverTimestamp(),
-      });
-
-      await FirebaseFirestore.instance
-          .collection('videoCoinBalances')
-          .doc(widget.userId)
-          .set({
-        'userId': widget.userId,
-        'totalVideoCoins': FieldValue.increment(package.totalMinutes),
-        'usedVideoCoins': 0,
-        'lastUpdated': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
-
-      await _createInvoice(orderId, 'videoCoins', package.totalMinutes, package.price);
-
-      await _loadBalances();
-
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.coinsPurchasedMinutes(package.totalMinutes)),
-            backgroundColor: Colors.green,
-          ),
-        );
-      }
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.coinsPurchaseFailed}: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    }
+    if (!mounted) return;
+    await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => CoinShopScreen(userId: widget.userId),
+      ),
+    );
+    await _loadBalances();
   }
 
-  Future<void> _createInvoice(String orderId, String type, int amount, double price) async {
-    final invoiceNumber = 'INV-${DateTime.now().year}${DateTime.now().month.toString().padLeft(2, '0')}${DateTime.now().day.toString().padLeft(2, '0')}-$orderId';
-
-    await FirebaseFirestore.instance.collection('invoices').doc(orderId).set({
-      'invoiceId': orderId,
-      'invoiceNumber': invoiceNumber,
-      'orderId': orderId,
-      'userId': widget.userId,
-      'status': 'paid',
-      'issueDate': FieldValue.serverTimestamp(),
-      'paidDate': FieldValue.serverTimestamp(),
-      'lineItems': [
-        {
-          'itemId': type,
-          'description': type == 'coins' ? 'GreenGoCoins Purchase' : 'Video Minutes Purchase',
-          'quantity': amount,
-          'unitPrice': price / amount,
-          'totalPrice': price,
-        }
-      ],
-      'subtotal': price,
-      'taxRate': 0.0,
-      'taxAmount': 0.0,
-      'total': price,
-      'currency': 'USD',
-      'paymentMethod': 'googlePlay',
-    });
-  }
 
   Future<void> _handleSendGift(String receiverId, int amount, String? message) async {
     if (_coinBalance < amount) {
