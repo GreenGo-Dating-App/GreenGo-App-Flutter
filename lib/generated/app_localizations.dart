@@ -12324,6 +12324,12 @@ abstract class AppLocalizations {
   /// **'Menu'**
   String get menu;
 
+  /// No description provided for @socialLinkInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid link or handle for {platform}'**
+  String socialLinkInvalid(String platform);
+
   /// No description provided for @messages.
   ///
   /// In en, this message translates to:

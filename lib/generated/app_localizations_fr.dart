@@ -6951,6 +6951,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get menu => 'Menu';
 
   @override
+  String socialLinkInvalid(String platform) {
+    return 'Saisis un lien ou un identifiant valide pour $platform';
+  }
+
+  @override
   String get messages => 'Echanges';
 
   @override

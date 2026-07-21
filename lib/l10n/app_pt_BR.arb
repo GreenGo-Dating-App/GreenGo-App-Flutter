@@ -2275,6 +2275,7 @@
   "membershipYearly": "Assinaturas Anuais (Economize até {percent}%)",
   "membershipYouHaveTier": "Você tem {tierName}",
   "menu": "Menu",
+  "socialLinkInvalid": "Insira um link ou nome de usuário válido para {platform}",
   "messages": "Trocas",
   "messagesTabMessages": "Mensagens",
   "messagesTabGroups": "Grupos",

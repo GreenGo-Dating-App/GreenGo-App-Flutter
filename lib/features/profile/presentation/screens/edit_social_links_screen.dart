@@ -103,8 +103,53 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
     );
   }
 
+  /// Returns the display name of the first field whose value is an invalid
+  /// link/handle, or null if all are acceptable. A plain handle (no scheme) is
+  /// fine as long as it has no whitespace; anything that looks like a URL must
+  /// parse as an absolute http(s) URI with a host.
+  String? _firstInvalidPlatform() {
+    final entries = <String, String>{
+      'Facebook': _facebookController.text.trim(),
+      'Instagram': _instagramController.text.trim(),
+      'TikTok': _tiktokController.text.trim(),
+      'LinkedIn': _linkedinController.text.trim(),
+      'X': _xController.text.trim(),
+    };
+    for (final entry in entries.entries) {
+      final v = entry.value;
+      if (v.isEmpty) continue;
+      if (RegExp(r'\s').hasMatch(v)) return entry.key;
+      final looksLikeUrl =
+          v.contains('://') || v.startsWith('http') || v.startsWith('www.');
+      if (looksLikeUrl) {
+        final normalized = v.startsWith('http') ? v : 'https://$v';
+        final uri = Uri.tryParse(normalized);
+        if (uri == null ||
+            !uri.isAbsolute ||
+            (uri.scheme != 'http' && uri.scheme != 'https') ||
+            uri.host.isEmpty) {
+          return entry.key;
+        }
+      }
+    }
+    return null;
+  }
+
   void _saveSocialLinks() {
     if (_isSaving) return;
+
+    final invalidPlatform = _firstInvalidPlatform();
+    if (invalidPlatform != null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            AppLocalizations.of(context)!.socialLinkInvalid(invalidPlatform),
+          ),
+          backgroundColor: AppColors.errorRed,
+        ),
+      );
+      return;
+    }
 
     setState(() {
       _isSaving = true;

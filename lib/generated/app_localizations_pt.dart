@@ -6902,6 +6902,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get menu => 'Menu';
 
   @override
+  String socialLinkInvalid(String platform) {
+    return 'Introduz um link ou nome de utilizador válido para $platform';
+  }
+
+  @override
   String get messages => 'Trocas';
 
   @override
@@ -20185,6 +20190,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get menu => 'Menu';
+
+  @override
+  String socialLinkInvalid(String platform) {
+    return 'Insira um link ou nome de usuário válido para $platform';
+  }
 
   @override
   String get messages => 'Trocas';

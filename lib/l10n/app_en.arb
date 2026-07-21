@@ -3370,6 +3370,12 @@
   "membershipYearly": "Yearly Memberships (Save up to {percent}%)",
   "membershipYouHaveTier": "You have {tierName}",
   "menu": "Menu",
+  "socialLinkInvalid": "Enter a valid link or handle for {platform}",
+  "@socialLinkInvalid": {
+    "placeholders": {
+      "platform": { "type": "String" }
+    }
+  },
   "messages": "Exchanges",
   "messagesTabMessages": "Messages",
   "messagesTabGroups": "Groups",

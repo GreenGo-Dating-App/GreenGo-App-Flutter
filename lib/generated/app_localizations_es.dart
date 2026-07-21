@@ -6925,6 +6925,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get menu => 'Menú';
 
   @override
+  String socialLinkInvalid(String platform) {
+    return 'Introduce un enlace o usuario válido para $platform';
+  }
+
+  @override
   String get messages => 'Intercambios';
 
   @override
