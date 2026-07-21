@@ -3203,27 +3203,37 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   /// Toggle an emoji reaction on a message. Reacting with the emoji the current
-  /// user already picked removes it. The bubble re-renders from the live message
-  /// stream, so no local state is needed.
-  Future<void> _reactToMessage(Message message, String emoji) async {
+  /// user already picked removes it. Returns true if the Firestore write
+  /// succeeded (the bubble reverts its optimistic state on false).
+  ///
+  /// IMPORTANT: reactions live under `conversations/{message.conversationId}`,
+  /// NOT `conversations/{matchId}` — the conversation doc id is an auto-id
+  /// resolved from the match, so using matchId here wrote to a non-existent doc
+  /// and silently failed. Use the message's own conversationId.
+  Future<bool> _reactToMessage(Message message, String emoji) async {
+    final conversationId = message.conversationId.isNotEmpty
+        ? message.conversationId
+        : widget.matchId;
     final current = message.getReaction(widget.currentUserId);
     try {
       if (current == emoji) {
         await _chatDataSource.removeReaction(
           messageId: message.messageId,
-          conversationId: widget.matchId,
+          conversationId: conversationId,
           userId: widget.currentUserId,
         );
       } else {
         await _chatDataSource.addReaction(
           messageId: message.messageId,
-          conversationId: widget.matchId,
+          conversationId: conversationId,
           userId: widget.currentUserId,
           emoji: emoji,
         );
       }
+      return true;
     } catch (e) {
       debugPrint('[Chat] Reaction toggle failed: $e');
+      return false;
     }
   }
 
