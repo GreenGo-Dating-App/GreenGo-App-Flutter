@@ -1977,6 +1977,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               onReply: _setReplyMessage,
                               onForward: (msg) => _showForwardDialog(context, msg),
                               onAlbumTap: _onAlbumMessageTapped,
+                              onReact: _reactToMessage,
                             );
                             if (messageIndex == tourBubbleIndex) {
                               final l10n = AppLocalizations.of(context)!;
@@ -3199,6 +3200,31 @@ class _ChatScreenState extends State<ChatScreen> {
       messageId: message.messageId,
       isStarred: isStarred,
     ));
+  }
+
+  /// Toggle an emoji reaction on a message. Reacting with the emoji the current
+  /// user already picked removes it. The bubble re-renders from the live message
+  /// stream, so no local state is needed.
+  Future<void> _reactToMessage(Message message, String emoji) async {
+    final current = message.getReaction(widget.currentUserId);
+    try {
+      if (current == emoji) {
+        await _chatDataSource.removeReaction(
+          messageId: message.messageId,
+          conversationId: widget.matchId,
+          userId: widget.currentUserId,
+        );
+      } else {
+        await _chatDataSource.addReaction(
+          messageId: message.messageId,
+          conversationId: widget.matchId,
+          userId: widget.currentUserId,
+          emoji: emoji,
+        );
+      }
+    } catch (e) {
+      debugPrint('[Chat] Reaction toggle failed: $e');
+    }
   }
 
   /// Set message to reply to
