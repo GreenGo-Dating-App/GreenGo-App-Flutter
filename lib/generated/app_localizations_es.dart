@@ -3315,13 +3315,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get communitiesSearchHint => 'Buscar comunidades...';
 
   @override
-  String get communitiesSaveFavorite => 'Save to favorites';
+  String get communitiesSaveFavorite => 'Guardar en favoritos';
 
   @override
-  String get communitiesRemoveFavorite => 'Remove from favorites';
+  String get communitiesRemoveFavorite => 'Quitar de favoritos';
 
   @override
-  String get communitiesFavoritesSection => 'Favorites';
+  String get communitiesFavoritesSection => 'Favoritos';
 
   @override
   String get communitiesShareCityTip => 'Comparte un consejo de ciudad...';
@@ -6922,6 +6922,9 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get menu => 'Menú';
+
+  @override
   String get messages => 'Intercambios';
 
   @override
@@ -7277,66 +7280,65 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notificationSettingsTitle => 'Configuración de notificaciones';
 
   @override
-  String get notificationCategories => 'Notification categories';
+  String get notificationCategories => 'Categorías de notificaciones';
 
   @override
-  String get notificationCatMessages => 'Messages';
+  String get notificationCatMessages => 'Mensajes';
 
   @override
   String get notificationCatMessagesSubtitle =>
-      'Direct, group, business and event chats';
+      'Chats directos, de grupo, de negocios y de eventos';
 
   @override
-  String get notificationCatEvents => 'Events';
+  String get notificationCatEvents => 'Eventos';
 
   @override
   String get notificationCatEventsSubtitle =>
-      'Events, reminders, RSVPs and city alerts';
+      'Eventos, recordatorios, confirmaciones y alertas de ciudad';
 
   @override
-  String get notificationCatCommunities => 'Communities';
+  String get notificationCatCommunities => 'Comunidades';
 
   @override
-  String get notificationCatCommunitiesSubtitle =>
-      'Announcements and new members';
+  String get notificationCatCommunitiesSubtitle => 'Anuncios y nuevos miembros';
 
   @override
   String get notificationCatSocial => 'Social';
 
   @override
   String get notificationCatSocialSubtitle =>
-      'Profile views, follows, ratings and boosts';
+      'Vistas de perfil, seguidores, valoraciones e impulsos';
 
   @override
-  String get notificationCatAccount => 'Account';
+  String get notificationCatAccount => 'Cuenta';
 
   @override
   String get notificationCatAccountSubtitle =>
-      'Verification and important account updates';
+      'Verificación y actualizaciones importantes de la cuenta';
 
   @override
-  String get notificationEventCities => 'Community events by city';
+  String get notificationEventCities => 'Eventos de comunidad por ciudad';
 
   @override
   String get notificationEventCitiesSubtitle =>
-      'Get notified when events are happening in these cities';
+      'Recibe una notificación cuando haya eventos en estas ciudades';
 
   @override
-  String get notificationAddCity => 'Add a city';
+  String get notificationAddCity => 'Añadir una ciudad';
 
   @override
-  String get notificationAddCityHint => 'e.g. Rome';
+  String get notificationAddCityHint => 'p. ej. Roma';
 
   @override
   String get notificationNoCities =>
-      'No cities yet — add one to get event alerts';
+      'Aún no hay ciudades — añade una para recibir alertas de eventos';
 
   @override
   String get notificationEnableInSettingsBody =>
-      'Notifications are off. Turn them on in Settings to get messages, events and community alerts.';
+      'Las notificaciones están desactivadas. Actívalas en Ajustes para recibir mensajes, eventos y alertas de comunidad.';
 
   @override
-  String get notificationOpenSettings => 'Open Settings';
+  String get notificationOpenSettings => 'Abrir Ajustes';
 
   @override
   String get notificationSound => 'Sonido';
@@ -11395,17 +11397,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventShare => 'Compartir evento';
 
   @override
-  String get eventReport => 'Report event';
+  String get eventReport => 'Reportar evento';
 
   @override
-  String get eventReportTitle => 'Report this event?';
+  String get eventReportTitle => '¿Reportar este evento?';
 
   @override
   String get eventReportBody =>
-      'Our team will review it. You won\'t see this event anymore.';
+      'Nuestro equipo lo revisará. Ya no verás este evento.';
 
   @override
-  String get eventReported => 'Event reported';
+  String get eventReported => 'Evento reportado';
 
   @override
   String get shareAsLink => 'Compartir como enlace';
@@ -13194,18 +13196,18 @@ class AppLocalizationsEs extends AppLocalizations {
       'Cambia entre los grupos a los que te uniste, descubre nuevos y gestiona las comunidades que creaste.';
 
   @override
-  String get tourCommunitiesSearchTitle => 'Find your groups';
+  String get tourCommunitiesSearchTitle => 'Encuentra tus grupos';
 
   @override
   String get tourCommunitiesSearchDesc =>
-      'Type here to filter your communities by name — handy once you\'ve joined a few.';
+      'Escribe aquí para filtrar tus comunidades por nombre — útil cuando te has unido a varias.';
 
   @override
-  String get tourCommunitiesCardTitle => 'Open & favorite';
+  String get tourCommunitiesCardTitle => 'Abrir y marcar como favorito';
 
   @override
   String get tourCommunitiesCardDesc =>
-      'Tap a community to open its chat, tips, announcements and events. Tap the ⭐ star to save it — favorites pin to the top.';
+      'Toca una comunidad para abrir su chat, consejos, anuncios y eventos. Toca la estrella ⭐ para guardarla — los favoritos se fijan arriba.';
 
   @override
   String get tourCommunitiesCreateTitle => 'Crea una comunidad';
@@ -13215,21 +13217,21 @@ class AppLocalizationsEs extends AppLocalizations {
       'Toca aqui para crear tu propia comunidad y reunir a la gente.';
 
   @override
-  String get tourReplayGuide => 'Replay guide';
+  String get tourReplayGuide => 'Ver guía de nuevo';
 
   @override
-  String get tourExploreSearchTitle => 'Search everything';
+  String get tourExploreSearchTitle => 'Busca de todo';
 
   @override
   String get tourExploreSearchDesc =>
-      'Find people, businesses, events and communities — all from one search.';
+      'Encuentra personas, negocios, eventos y comunidades — todo desde una sola búsqueda.';
 
   @override
-  String get tourExploreQrTitle => 'Your QR code';
+  String get tourExploreQrTitle => 'Tu código QR';
 
   @override
   String get tourExploreQrDesc =>
-      'Scan or share a QR code to connect instantly in person.';
+      'Escanea o comparte un código QR para conectar al instante en persona.';
 
   @override
   String get tourEventsCreateTitle => 'Crea un evento';

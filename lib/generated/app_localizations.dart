@@ -12318,6 +12318,12 @@ abstract class AppLocalizations {
   /// **'You have {tierName}'**
   String membershipYouHaveTier(Object tierName);
 
+  /// No description provided for @menu.
+  ///
+  /// In en, this message translates to:
+  /// **'Menu'**
+  String get menu;
+
   /// No description provided for @messages.
   ///
   /// In en, this message translates to:

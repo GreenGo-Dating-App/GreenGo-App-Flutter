@@ -6832,6 +6832,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get menu => 'Menu';
+
+  @override
   String get messages => 'Exchanges';
 
   @override
