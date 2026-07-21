@@ -47,6 +47,7 @@ import '../../../events/presentation/screens/events_screen.dart';
 import '../../../events/presentation/widgets/attraction_menu_dialog.dart';
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
+import '../../../main/presentation/screens/main_navigation_screen.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_score.dart';
 import '../../../matching/domain/usecases/feature_engineer.dart';
@@ -1397,7 +1398,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Widget _greeting(BuildContext context, AppLocalizations l10n) {
     final name = _firstName;
     final greeting = _greetingText(l10n);
-    final headline = name != null ? '$greeting, $name' : greeting;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
@@ -1412,17 +1412,31 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
         ),
         const SizedBox(height: 10),
+        // Line 1: the time-of-day greeting, smaller and lighter.
         Text(
-          headline,
-          maxLines: 2,
+          greeting,
+          maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontSize: 28,
-            fontWeight: FontWeight.w700,
+            color: AppColors.textSecondary,
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
             height: 1.15,
           ),
         ),
+        // Line 2: the user's name, large and prominent.
+        if (name != null)
+          Text(
+            name,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
+              color: AppColors.textPrimary,
+              fontSize: 28,
+              fontWeight: FontWeight.w700,
+              height: 1.15,
+            ),
+          ),
         const SizedBox(height: 8),
         Text(
           l10n.exploreHeadline(_displayCity),
@@ -2644,6 +2658,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// "See all" for communities → the full communities / groups list (same bloc
   /// wiring as [_openCommunity]).
   void _openCommunitiesList(BuildContext context) {
+    // "Communities to join → See all" lands on the REAL Community bottom tab, so
+    // it's the exact same page as tapping Community in the bottom menu and keeps
+    // the persistent bottom menu visible. Falls back to a pushed route if the
+    // shell isn't an ancestor (e.g. Explore opened standalone in tests).
+    final shell = context.findAncestorStateOfType<MainNavigationScreenState>();
+    if (shell != null) {
+      shell.switchTab(2);
+      return;
+    }
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => MultiBlocProvider(

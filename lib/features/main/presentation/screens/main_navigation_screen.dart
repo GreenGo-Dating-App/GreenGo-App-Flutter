@@ -96,9 +96,20 @@ class MainNavigationScreen extends StatefulWidget {
 }
 
 class MainNavigationScreenState extends State<MainNavigationScreen>
-    with WidgetsBindingObserver {
+    with WidgetsBindingObserver, TickerProviderStateMixin {
   int _currentIndex = 0;
   bool _isCheckingProfile = true;
+
+  // Collapsible bottom nav: swiping the bar DOWN hides it (it collapses into a
+  // centered hamburger pill); tapping the pill brings it back. Shown by default.
+  // `_navAnim` drives the cute slide/size/fade in both directions.
+  late final AnimationController _navAnim;
+  bool _navVisible = true;
+
+  // Per-tab nested navigators. Pushing within a tab's own navigator keeps the
+  // persistent bottom menu visible (it lives in the shell Scaffold, outside the
+  // tab body). Explore's "See all" pages use this so the menu stays put.
+  final Map<int, GlobalKey<NavigatorState>> _tabNavKeys = {};
   VerificationStatus _verificationStatus = VerificationStatus.notSubmitted;
   String? _verificationRejectionReason;
   bool _isAdmin = false;
@@ -185,6 +196,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   @override
   void initState() {
     super.initState();
+
+    // Collapsible bottom-nav animation (1.0 = fully shown, 0.0 = hidden).
+    _navAnim = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 340),
+      reverseDuration: const Duration(milliseconds: 260),
+      value: 1,
+    );
 
     // Set current user ID for push notification navigation
     PushNotificationService.currentUserId = widget.userId;
@@ -1290,6 +1309,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   @override
   void dispose() {
+    _navAnim.dispose();
     _matchCountSub?.cancel();
     _messageCountSub?.cancel();
     _groupCountSub?.cancel();
@@ -1314,6 +1334,43 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     setState(() {
       _currentIndex = index;
     });
+  }
+
+  /// Collapse the bottom menu (swipe-down) into the centered hamburger pill.
+  void _hideBottomNav() {
+    if (!_navVisible) return;
+    setState(() => _navVisible = false);
+    _navAnim.reverse();
+  }
+
+  /// Bring the bottom menu back (tap the hamburger pill).
+  void _showBottomNav() {
+    if (_navVisible) return;
+    setState(() => _navVisible = true);
+    _navAnim.forward();
+  }
+
+  /// Switch the persistent bottom-nav tab from anywhere in the tree — e.g. an
+  /// Explore "See all" that should land on the REAL Community tab (so it's the
+  /// exact same page as tapping Community in the bottom menu). Resets that tab's
+  /// nested navigator to its root first so it opens on the tab's main page.
+  /// Reachable via `context.findAncestorStateOfType<MainNavigationScreenState>()`.
+  void switchTab(int index) {
+    _tabNavKeys[index]?.currentState?.popUntil((r) => r.isFirst);
+    _onTabTapped(index);
+  }
+
+  /// Wraps a tab's root screen in its own [Navigator] so pushes made from within
+  /// the tab render ABOVE the shell's bottom menu (which stays visible). Used
+  /// for tabs whose sub-pages must keep the menu (Explore "See all", Community
+  /// detail pages).
+  Widget _tabNavigator(int index, Widget child) {
+    final key = _tabNavKeys.putIfAbsent(index, () => GlobalKey<NavigatorState>());
+    return Navigator(
+      key: key,
+      onGenerateRoute: (settings) =>
+          MaterialPageRoute<void>(builder: (_) => child),
+    );
   }
 
   /// Refresh the discovery tab by rebuilding the DiscoveryScreen with a new key
@@ -1365,7 +1422,15 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             VisibleTabScope(isVisible: i == safeIndex, child: _screens[i]),
         ],
       ),
-      bottomNavigationBar: _buildBottomNav(safeIndex),
+      // Centered hamburger pill — only present while the menu is hidden. It's a
+      // separate layer from any per-screen "+ create" FAB (those sit
+      // bottom-RIGHT), so the two never overlap.
+      floatingActionButton: _buildNavTogglePill(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      // Collapsible bottom menu: a downward swipe on the bar hides it; the
+      // SizeTransition collapses its height so the body reclaims the space (no
+      // overlap with content), while slide+fade give it a cute exit/entry.
+      bottomNavigationBar: _buildCollapsibleBottomNav(safeIndex),
     );
 
     // Wrap with red border if admin is logged in
@@ -1379,6 +1444,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       canPop: false,
       onPopInvokedWithResult: (didPop, result) async {
         if (didPop) return;
+
+        // First, let the active tab's nested navigator handle back (e.g. pop a
+        // "See all" or community detail page) so the bottom menu stays put.
+        final tabNav = _tabNavKeys[_currentIndex]?.currentState;
+        if (tabNav != null && tabNav.canPop()) {
+          tabNav.pop();
+          return;
+        }
 
         // If not on the first tab, go back to first tab
         if (_currentIndex != 0) {
@@ -1569,18 +1642,24 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     if (FlavorConfig.exploreFirst) {
       return [
-        ExploreScreen(userId: widget.userId),
+        // Explore wrapped in a nested navigator so its "See all" pages (Discovery,
+        // Businesses, …) keep the persistent bottom menu instead of covering it.
+        _tabNavigator(0, ExploreScreen(userId: widget.userId)),
         EventsScreen(currentUserId: widget.userId),
         // Community tab → the Communities feature (communities to join),
-        // i.e. the "Explore → Communities to join → See all" page.
-        MultiBlocProvider(
-          providers: [
-            BlocProvider.value(value: _profileBloc),
-            BlocProvider<CommunitiesBloc>(
-              create: (_) => di.sl<CommunitiesBloc>(),
-            ),
-          ],
-          child: const CommunitiesScreen(),
+        // i.e. the "Explore → Communities to join → See all" page. Wrapped in a
+        // nested navigator so community detail/sub-pages keep the bottom menu.
+        _tabNavigator(
+          2,
+          MultiBlocProvider(
+            providers: [
+              BlocProvider.value(value: _profileBloc),
+              BlocProvider<CommunitiesBloc>(
+                create: (_) => di.sl<CommunitiesBloc>(),
+              ),
+            ],
+            child: const CommunitiesScreen(),
+          ),
         ),
         // Exchanges: 1:1 Messages + group chats (as tabs inside the screen).
         ConversationsScreen(
@@ -1608,6 +1687,112 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       EventsScreen(currentUserId: widget.userId),
       profileTab,
     ];
+  }
+
+  /// Wraps the flavor bottom nav so it can be swiped down to hide and animate
+  /// back. A vertical drag with downward velocity collapses it; the
+  /// SizeTransition (anchored to the bottom) shrinks its height to zero so the
+  /// body grows into the freed space, and the slide+fade make the motion cute.
+  /// When fully hidden it stops taking any layout space (returns an empty box).
+  Widget _buildCollapsibleBottomNav(int safeIndex) {
+    final curve = CurvedAnimation(
+      parent: _navAnim,
+      curve: Curves.easeOutCubic,
+      reverseCurve: Curves.easeInCubic,
+    );
+    return AnimatedBuilder(
+      animation: _navAnim,
+      builder: (context, child) {
+        // Fully collapsed → take no space at all (nothing to swipe/see).
+        if (_navAnim.isDismissed) return const SizedBox.shrink();
+        return SizeTransition(
+          sizeFactor: curve,
+          axisAlignment: -1,
+          child: FadeTransition(
+            opacity: curve,
+            child: SlideTransition(
+              position: Tween<Offset>(
+                begin: const Offset(0, 1),
+                end: Offset.zero,
+              ).animate(curve),
+              child: child,
+            ),
+          ),
+        );
+      },
+      child: GestureDetector(
+        // Downward drag (positive velocity) on the bar hides it.
+        onVerticalDragEnd: (details) {
+          final v = details.primaryVelocity ?? 0;
+          if (v > 120) _hideBottomNav();
+        },
+        child: _buildBottomNav(safeIndex),
+      ),
+    );
+  }
+
+  /// The centered hamburger pill shown only while the menu is hidden. Tapping
+  /// it (or swiping/tapping up) restores the bottom menu. Scales+fades in for a
+  /// cute pop. Returns null while the menu is visible so it never overlaps it.
+  Widget? _buildNavTogglePill() {
+    if (_navVisible) return null;
+    final l10n = AppLocalizations.of(context)!;
+    return AnimatedBuilder(
+      animation: _navAnim,
+      builder: (context, child) {
+        // Fade/scale driven by the inverse of the collapse progress.
+        final t = 1 - _navAnim.value;
+        return Opacity(
+          opacity: t.clamp(0.0, 1.0),
+          child: Transform.scale(scale: 0.85 + 0.15 * t, child: child),
+        );
+      },
+      child: GestureDetector(
+        onVerticalDragEnd: (details) {
+          final v = details.primaryVelocity ?? 0;
+          if (v < -80) _showBottomNav();
+        },
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: _showBottomNav,
+            borderRadius: BorderRadius.circular(24),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 9),
+              decoration: BoxDecoration(
+                color: AppColors.backgroundCard,
+                borderRadius: BorderRadius.circular(24),
+                border: Border.all(
+                  color: AppColors.richGold.withValues(alpha: 0.35),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.35),
+                    blurRadius: 12,
+                    offset: const Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.menu, color: AppColors.richGold, size: 20),
+                  const SizedBox(width: 8),
+                  Text(
+                    l10n.menu,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
   /// Returns the bottom navigation bar for the active flavor.
