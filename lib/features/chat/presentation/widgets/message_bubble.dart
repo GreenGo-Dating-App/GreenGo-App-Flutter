@@ -106,6 +106,18 @@ class _MessageBubbleState extends State<MessageBubble> {
     return flags[code] ?? '\u{1F310}'; // 🌐 globe fallback
   }
 
+  /// Optimistic reactions shown IMMEDIATELY on tap, before the Firestore write
+  /// round-trips back through the message stream. Null = trust widget.message.
+  Map<String, String>? _reactionsOverride;
+
+  /// Reactions to display: the optimistic override if a tap is in flight,
+  /// otherwise the server truth from the message.
+  Map<String, String>? get _effectiveReactions =>
+      _reactionsOverride ?? widget.message.reactions;
+
+  bool get _hasEffectiveReactions =>
+      _effectiveReactions != null && _effectiveReactions!.isNotEmpty;
+
   @override
   void initState() {
     super.initState();
@@ -113,6 +125,41 @@ class _MessageBubbleState extends State<MessageBubble> {
     if (!widget.isCurrentUser && widget.message.type == MessageType.text && (widget.showDifficultyBadge || widget.showCulturalTips)) {
       _loadEnhancements();
     }
+  }
+
+  @override
+  void didUpdateWidget(MessageBubble oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // Once the server truth arrives (message.reactions changed), drop the
+    // optimistic override so we render the authoritative state.
+    if (!_reactionsEqual(
+        oldWidget.message.reactions, widget.message.reactions)) {
+      _reactionsOverride = null;
+    }
+  }
+
+  bool _reactionsEqual(Map<String, String>? a, Map<String, String>? b) {
+    if (identical(a, b)) return true;
+    if (a == null || b == null) return a == b;
+    if (a.length != b.length) return false;
+    for (final entry in a.entries) {
+      if (b[entry.key] != entry.value) return false;
+    }
+    return true;
+  }
+
+  /// Toggle the current user's reaction, updating the UI IMMEDIATELY
+  /// (optimistic) and firing the backend write via [MessageBubble.onReact].
+  void _toggleReaction(String emoji) {
+    final uid = widget.currentUserId ?? '';
+    final next = Map<String, String>.from(_effectiveReactions ?? const {});
+    if (next[uid] == emoji) {
+      next.remove(uid);
+    } else {
+      next[uid] = emoji;
+    }
+    setState(() => _reactionsOverride = next);
+    widget.onReact?.call(widget.message, emoji);
   }
 
   Future<void> _loadEnhancements() async {
@@ -359,7 +406,15 @@ class _MessageBubbleState extends State<MessageBubble> {
       onLongPress: () => _showMessageOptions(context),
       child: Align(
         alignment: isCurrentUser ? Alignment.centerRight : Alignment.centerLeft,
-        child: Container(
+        child: Column(
+          // Reaction badge sits just under the bubble on the edge facing the
+          // screen centre: received (left bubble) -> bottom-RIGHT; sent (right
+          // bubble) -> bottom-LEFT.
+          crossAxisAlignment:
+              isCurrentUser ? CrossAxisAlignment.start : CrossAxisAlignment.end,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
           margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 16),
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
           constraints: BoxConstraints(
@@ -481,9 +536,11 @@ class _MessageBubbleState extends State<MessageBubble> {
                   ],
                 ],
               ),
-              if (widget.message.hasReactions) _buildReactionChips(isCurrentUser),
             ],
           ),
+        ),
+            if (_hasEffectiveReactions) _buildReactionChips(isCurrentUser),
+          ],
         ),
       ),
     );
@@ -492,10 +549,12 @@ class _MessageBubbleState extends State<MessageBubble> {
   /// Quick-pick emojis offered in the long-press options sheet.
   static const List<String> _quickReactions = ['👍', '❤️', '😂', '😮', '😢', '🙏'];
 
-  /// Renders the message's reactions as compact emoji+count chips at the bottom
-  /// of the bubble. Tapping a chip toggles the current user's reaction.
+  /// Renders the reactions as compact emoji+count chips just UNDER the bubble,
+  /// on the corner facing screen-centre (handled by the parent Column's
+  /// crossAxisAlignment). Uses the optimistic [_effectiveReactions] so a tap
+  /// shows instantly. Tapping a chip toggles the current user's reaction.
   Widget _buildReactionChips(bool isCurrentUser) {
-    final reactions = widget.message.reactions;
+    final reactions = _effectiveReactions;
     if (reactions == null || reactions.isEmpty) return const SizedBox.shrink();
 
     // Group userId->emoji into emoji->count.
@@ -503,38 +562,34 @@ class _MessageBubbleState extends State<MessageBubble> {
     for (final emoji in reactions.values) {
       counts[emoji] = (counts[emoji] ?? 0) + 1;
     }
-    final myEmoji = widget.message.getReaction(widget.currentUserId ?? '');
-    final chipBg = isCurrentUser
-        ? AppColors.deepBlack.withValues(alpha: 0.12)
-        : AppColors.backgroundDark;
+    final myEmoji = reactions[widget.currentUserId ?? ''];
 
     return Padding(
-      padding: const EdgeInsets.only(top: 6),
+      // Align the badge under the bubble's visual edge (bubble has h-margin 16),
+      // nudged up so it overlaps the bubble's bottom corner slightly.
+      padding: const EdgeInsets.only(top: 0, left: 20, right: 20, bottom: 4),
       child: Wrap(
         spacing: 4,
         runSpacing: 4,
         children: counts.entries.map((e) {
           final mine = myEmoji == e.key;
           return GestureDetector(
-            onTap: widget.onReact == null
-                ? null
-                : () => widget.onReact!(widget.message, e.key),
+            onTap: () => _toggleReaction(e.key),
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
               decoration: BoxDecoration(
-                color: chipBg,
+                color: AppColors.backgroundCard,
                 borderRadius: BorderRadius.circular(12),
-                border: mine
-                    ? Border.all(color: AppColors.richGold, width: 1)
-                    : null,
+                border: Border.all(
+                  color: mine ? AppColors.richGold : AppColors.divider,
+                  width: mine ? 1.5 : 1,
+                ),
               ),
               child: Text(
                 e.value > 1 ? '${e.key} ${e.value}' : e.key,
-                style: TextStyle(
-                  fontSize: 12,
-                  color: isCurrentUser
-                      ? AppColors.deepBlack
-                      : AppColors.textPrimary,
+                style: const TextStyle(
+                  fontSize: 13,
+                  color: AppColors.textPrimary,
                 ),
               ),
             ),
@@ -1099,11 +1154,11 @@ class _MessageBubbleState extends State<MessageBubble> {
                     _ReactionPickButton(
                       emoji: emoji,
                       selected:
-                          widget.message.getReaction(widget.currentUserId ?? '') ==
+                          _effectiveReactions?[widget.currentUserId ?? ''] ==
                               emoji,
                       onTap: () {
                         Navigator.pop(bottomSheetContext);
-                        widget.onReact!(widget.message, emoji);
+                        _toggleReaction(emoji);
                       },
                     ),
                 ],
