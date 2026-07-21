@@ -2039,6 +2039,7 @@
   "membershipYearly": "Abonnements annuels (Économisez jusqu'à {percent}%)",
   "membershipYouHaveTier": "Vous avez {tierName}",
   "menu": "Menu",
+  "socialLinkInvalid": "Saisis un lien ou un identifiant valide pour {platform}",
   "messages": "Echanges",
   "messagesTabMessages": "Messages",
   "messagesTabGroups": "Groupes",

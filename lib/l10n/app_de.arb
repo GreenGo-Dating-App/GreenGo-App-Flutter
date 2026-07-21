@@ -2273,6 +2273,7 @@
   "membershipYearly": "Jährliche Mitgliedschaften (Spare bis zu {percent}%)",
   "membershipYouHaveTier": "Du hast {tierName}",
   "menu": "Menü",
+  "socialLinkInvalid": "Gib einen gültigen Link oder Benutzernamen für {platform} ein",
   "messages": "Austausch",
   "messagesTabMessages": "Nachrichten",
   "messagesTabGroups": "Gruppen",

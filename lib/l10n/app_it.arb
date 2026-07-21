@@ -2315,6 +2315,7 @@
   "membershipYearly": "Abbonamenti annuali (Risparmia fino al {percent}%)",
   "membershipYouHaveTier": "Hai {tierName}",
   "menu": "Menu",
+  "socialLinkInvalid": "Inserisci un link o un nome utente valido per {platform}",
   "messages": "Scambi",
   "messagesTabMessages": "Messaggi",
   "messagesTabGroups": "Gruppi",
