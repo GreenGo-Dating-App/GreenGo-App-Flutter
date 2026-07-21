@@ -26,6 +26,25 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
   final DateFormat _timeFormat = DateFormat('h:mm a');
   AppLocalizations? _l10n;
 
+  /// Active transaction filter: 'all', 'credits', or 'debits'.
+  String _filter = 'all';
+
+  /// Applies the current [_filter] to the loaded transactions.
+  List<CoinTransaction> _applyFilter(List<CoinTransaction> transactions) {
+    switch (_filter) {
+      case 'credits':
+        return transactions
+            .where((t) => t.type == CoinTransactionType.credit)
+            .toList();
+      case 'debits':
+        return transactions
+            .where((t) => t.type == CoinTransactionType.debit)
+            .toList();
+      default:
+        return transactions;
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -57,7 +76,7 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
           }
 
           if (state is TransactionHistoryLoaded) {
-            return _buildTransactionList(state.transactions);
+            return _buildTransactionList(_applyFilter(state.transactions));
           }
 
           if (state is CoinError) {
@@ -322,53 +341,50 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
 
   void _showFilterDialog() {
     final l10n = AppLocalizations.of(context)!;
-    showDialog(
+    // Local selection, initialized to the active filter; committed on Apply.
+    var selected = _filter;
+    showDialog<void>(
       context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: Colors.grey[900],
-        title: Text(l10n.coinsFilterTransactions),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              title: Text(l10n.coinsAllTransactions),
-              leading: Radio<String>(
-                value: 'all',
-                groupValue: 'all',
-                onChanged: (value) {},
-              ),
+      builder: (context) => StatefulBuilder(
+        builder: (context, setDialogState) => AlertDialog(
+          backgroundColor: Colors.grey[900],
+          title: Text(l10n.coinsFilterTransactions),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (final option in <(String, String)>[
+                ('all', l10n.coinsAllTransactions),
+                ('credits', l10n.coinsCreditsOnly),
+                ('debits', l10n.coinsDebitsOnly),
+              ])
+                ListTile(
+                  title: Text(option.$2),
+                  leading: Radio<String>(
+                    value: option.$1,
+                    groupValue: selected,
+                    onChanged: (value) =>
+                        setDialogState(() => selected = value ?? 'all'),
+                  ),
+                  onTap: () => setDialogState(() => selected = option.$1),
+                ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text(l10n.coinsCancelLabel),
             ),
-            ListTile(
-              title: Text(l10n.coinsCreditsOnly),
-              leading: Radio<String>(
-                value: 'credits',
-                groupValue: 'all',
-                onChanged: (value) {},
-              ),
-            ),
-            ListTile(
-              title: Text(l10n.coinsDebitsOnly),
-              leading: Radio<String>(
-                value: 'debits',
-                groupValue: 'all',
-                onChanged: (value) {},
-              ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                if (selected != _filter) {
+                  setState(() => _filter = selected);
+                }
+              },
+              child: Text(l10n.coinsApply),
             ),
           ],
         ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: Text(l10n.coinsCancelLabel),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              // Apply filter
-            },
-            child: Text(l10n.coinsApply),
-          ),
-        ],
       ),
     );
   }

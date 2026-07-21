@@ -46,6 +46,7 @@ class MessageBubble extends StatefulWidget {
     this.onReply,
     this.onForward,
     this.onAlbumTap,
+    this.onReact,
     this.userMembershipTier,
   });
   final Message message;
@@ -67,6 +68,9 @@ class MessageBubble extends StatefulWidget {
   final Function(Message)? onReply;
   final Function(Message)? onForward;
   final Function(Message)? onAlbumTap;
+  /// Toggle an emoji reaction on this message (userId -> emoji). Passing the
+  /// emoji the current user already reacted with removes it.
+  final void Function(Message message, String emoji)? onReact;
   final MembershipTier? userMembershipTier;
 
   @override
@@ -477,9 +481,65 @@ class _MessageBubbleState extends State<MessageBubble> {
                   ],
                 ],
               ),
+              if (widget.message.hasReactions) _buildReactionChips(isCurrentUser),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// Quick-pick emojis offered in the long-press options sheet.
+  static const List<String> _quickReactions = ['👍', '❤️', '😂', '😮', '😢', '🙏'];
+
+  /// Renders the message's reactions as compact emoji+count chips at the bottom
+  /// of the bubble. Tapping a chip toggles the current user's reaction.
+  Widget _buildReactionChips(bool isCurrentUser) {
+    final reactions = widget.message.reactions;
+    if (reactions == null || reactions.isEmpty) return const SizedBox.shrink();
+
+    // Group userId->emoji into emoji->count.
+    final counts = <String, int>{};
+    for (final emoji in reactions.values) {
+      counts[emoji] = (counts[emoji] ?? 0) + 1;
+    }
+    final myEmoji = widget.message.getReaction(widget.currentUserId ?? '');
+    final chipBg = isCurrentUser
+        ? AppColors.deepBlack.withValues(alpha: 0.12)
+        : AppColors.backgroundDark;
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 6),
+      child: Wrap(
+        spacing: 4,
+        runSpacing: 4,
+        children: counts.entries.map((e) {
+          final mine = myEmoji == e.key;
+          return GestureDetector(
+            onTap: widget.onReact == null
+                ? null
+                : () => widget.onReact!(widget.message, e.key),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+              decoration: BoxDecoration(
+                color: chipBg,
+                borderRadius: BorderRadius.circular(12),
+                border: mine
+                    ? Border.all(color: AppColors.richGold, width: 1)
+                    : null,
+              ),
+              child: Text(
+                e.value > 1 ? '${e.key} ${e.value}' : e.key,
+                style: TextStyle(
+                  fontSize: 12,
+                  color: isCurrentUser
+                      ? AppColors.deepBlack
+                      : AppColors.textPrimary,
+                ),
+              ),
+            ),
+          );
+        }).toList(),
       ),
     );
   }
@@ -1028,6 +1088,28 @@ class _MessageBubbleState extends State<MessageBubble> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            // Quick emoji reactions — tapping toggles the current user's
+            // reaction. Only shown when a reaction handler is wired.
+            if (widget.onReact != null) ...[
+              const SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  for (final emoji in _quickReactions)
+                    _ReactionPickButton(
+                      emoji: emoji,
+                      selected:
+                          widget.message.getReaction(widget.currentUserId ?? '') ==
+                              emoji,
+                      onTap: () {
+                        Navigator.pop(bottomSheetContext);
+                        widget.onReact!(widget.message, emoji);
+                      },
+                    ),
+                ],
+              ),
+              const Divider(color: AppColors.divider, height: 24),
+            ],
             const SizedBox(height: 16),
             ListTile(
               leading: const Icon(Icons.reply, color: Colors.blue),
@@ -1299,6 +1381,41 @@ class _FullScreenVideoPlayerState extends State<_FullScreenVideoPlayer> {
                       ],
                     ),
                   ),
+      ),
+    );
+  }
+}
+
+/// A single tappable emoji in the quick-reaction row of the message options
+/// sheet. Highlights when it's the current user's active reaction.
+class _ReactionPickButton extends StatelessWidget {
+  const _ReactionPickButton({
+    required this.emoji,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final String emoji;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(24),
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: selected
+              ? AppColors.richGold.withValues(alpha: 0.25)
+              : Colors.transparent,
+          border: selected
+              ? Border.all(color: AppColors.richGold, width: 1.5)
+              : null,
+        ),
+        child: Text(emoji, style: const TextStyle(fontSize: 24)),
       ),
     );
   }
