@@ -193,9 +193,11 @@ class VideoCallingRemoteDataSourceImpl implements VideoCallingRemoteDataSource {
     required VideoCallStatus status,
     required bool wasIncoming,
   }) async {
-    // Get other user's info
+    // Get other user's display info. Read from `profiles` (readable by any
+    // signed-in user) — NOT `users`, which is owner/admin-only, so a cross-user
+    // `users` read would be permission-denied and lose the name/photo.
     final otherUserDoc =
-        await firestore.collection('users').doc(otherUserId).get();
+        await firestore.collection('profiles').doc(otherUserId).get();
     final otherUserData = otherUserDoc.data();
 
     await _historyCollection.doc('${callId}_$userId').set({
