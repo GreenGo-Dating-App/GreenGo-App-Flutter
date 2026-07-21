@@ -69,8 +69,10 @@ class MessageBubble extends StatefulWidget {
   final Function(Message)? onForward;
   final Function(Message)? onAlbumTap;
   /// Toggle an emoji reaction on this message (userId -> emoji). Passing the
-  /// emoji the current user already reacted with removes it.
-  final void Function(Message message, String emoji)? onReact;
+  /// emoji the current user already reacted with removes it. Returns true if the
+  /// backend write succeeded so the bubble can revert its optimistic state on
+  /// failure.
+  final Future<bool> Function(Message message, String emoji)? onReact;
   final MembershipTier? userMembershipTier;
 
   @override
@@ -149,9 +151,14 @@ class _MessageBubbleState extends State<MessageBubble> {
   }
 
   /// Toggle the current user's reaction, updating the UI IMMEDIATELY
-  /// (optimistic) and firing the backend write via [MessageBubble.onReact].
-  void _toggleReaction(String emoji) {
+  /// (optimistic) and firing the backend write via [MessageBubble.onReact]. If
+  /// the write fails, the optimistic change is reverted so the emoji never
+  /// lingers unsaved.
+  Future<void> _toggleReaction(String emoji) async {
     final uid = widget.currentUserId ?? '';
+    final previous = _effectiveReactions == null
+        ? null
+        : Map<String, String>.from(_effectiveReactions!);
     final next = Map<String, String>.from(_effectiveReactions ?? const {});
     if (next[uid] == emoji) {
       next.remove(uid);
@@ -159,7 +166,10 @@ class _MessageBubbleState extends State<MessageBubble> {
       next[uid] = emoji;
     }
     setState(() => _reactionsOverride = next);
-    widget.onReact?.call(widget.message, emoji);
+    final ok = await widget.onReact?.call(widget.message, emoji);
+    if (ok == false && mounted) {
+      setState(() => _reactionsOverride = previous);
+    }
   }
 
   Future<void> _loadEnhancements() async {
