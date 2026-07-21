@@ -2620,31 +2620,19 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         'status': 'delivered',
       });
 
-      // Confirmation message from receiver to sender (auto-reply)
-      final replyRef = db.collection('conversations')
-          .doc(conversationId).collection('messages').doc();
-      final replyMsg = 'Thank you for the $amount coins, $senderName!';
+      // NOTE: no fabricated "thank you" reply as the receiver — writing a
+      // message with senderId = recipientId while running as the sender is
+      // impersonation and is (correctly) denied by the message security rule;
+      // it also threw and killed the notification below. The sender message is
+      // enough.
 
-      await replyRef.set({
-        'messageId': replyRef.id,
-        'matchId': matchId ?? '',
-        'conversationId': conversationId,
-        'senderId': recipientId,
-        'receiverId': widget.userId,
-        'content': replyMsg,
-        'type': 'text',
-        'sentAt': FieldValue.serverTimestamp(),
-        'deliveredAt': FieldValue.serverTimestamp(),
-        'status': 'delivered',
-      });
-
-      // Update conversation with last message
+      // Update conversation with the real (sender's) message as the last one.
       await db.collection('conversations').doc(conversationId).set({
         'lastMessage': {
-          'messageId': replyRef.id,
-          'senderId': recipientId,
-          'receiverId': widget.userId,
-          'content': replyMsg,
+          'messageId': msgRef.id,
+          'senderId': widget.userId,
+          'receiverId': recipientId,
+          'content': senderMsg,
           'type': 'text',
           'sentAt': Timestamp.fromDate(DateTime.now()),
         },

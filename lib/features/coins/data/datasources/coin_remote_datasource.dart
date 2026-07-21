@@ -754,37 +754,21 @@ class CoinRemoteDataSource {
       'status': 'delivered',
     });
 
-    // Auto-reply confirmation from receiver
-    final replyId = uuid.v4();
-    final replyRef = firestore
-        .collection('conversations')
-        .doc(conversationId)
-        .collection('messages')
-        .doc(replyId);
+    // NOTE: we intentionally do NOT fabricate a "thank you" reply as the
+    // receiver — writing a message with senderId = receiverId while running as
+    // the sender is impersonation and is (correctly) denied by the message
+    // security rule. Doing so also threw, which previously killed the receiver's
+    // notification below. The single system message above is enough.
 
-    final replyMessage = 'Thank you for the $amount coins, $senderName!';
-
-    await replyRef.set({
-      'messageId': replyId,
-      'matchId': matchId ?? '',
-      'conversationId': conversationId,
-      'senderId': receiverId,
-      'receiverId': senderId,
-      'content': replyMessage,
-      'type': 'text',
-      'sentAt': FieldValue.serverTimestamp(),
-      'deliveredAt': FieldValue.serverTimestamp(),
-      'status': 'delivered',
-    });
-
-    // Update conversation with last message
+    // Update conversation with the real (sender's) system message as the last
+    // message so the inbox preview + unread badge are correct.
     await firestore.collection('conversations').doc(conversationId).update({
       'lastMessage': {
-        'messageId': replyId,
-        'senderId': receiverId,
-        'receiverId': senderId,
-        'content': replyMessage,
-        'type': 'text',
+        'messageId': messageId,
+        'senderId': senderId,
+        'receiverId': receiverId,
+        'content': systemMessage,
+        'type': 'system',
         'sentAt': Timestamp.fromDate(DateTime.now()),
       },
       'lastMessageAt': FieldValue.serverTimestamp(),

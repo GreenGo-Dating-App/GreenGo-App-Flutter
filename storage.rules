@@ -70,6 +70,36 @@ service firebase.storage {
       allow write: if signedIn() && validUpload();
     }
 
+    // 1:1 chat media (image / voice / video). Path is keyed by matchId; Storage
+    // rules can't read the match/conversation doc, so membership is enforced in
+    // Firestore. Signed-in read+write, same policy as group_media.
+    match /chat_images/{matchId}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if signedIn() && validUpload();
+    }
+    match /chat_voice/{matchId}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if signedIn() && validUpload();
+    }
+    match /chat_videos/{matchId}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if signedIn() && validUpload();
+    }
+
+    // Business verification document — owner (userId in path) writes; the owner
+    // and admins can read it back (owner needs to display upload status).
+    match /business_verification/{userId}/{allPaths=**} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow write: if isOwner(userId) && validUpload();
+    }
+
+    // Pronunciation TTS cache — shared, keyed by language/phrase. Any signed-in
+    // user may populate it and read it (it's non-sensitive generated audio).
+    match /pronunciation_audio/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if signedIn() && validUpload();
+    }
+
     // Everything else: denied (no more open bucket). Add a match above for any
     // new upload path before shipping it.
   }

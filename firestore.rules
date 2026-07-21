@@ -72,6 +72,15 @@ service cloud.firestore {
                  == resource.data.get('isAdmin', false))
         || isAdminPanelUser();
       allow delete: if isOwner(userId);
+
+      // Owner has full access to their OWN private subcollections
+      // (starred_messages, flashcard_decks, feature_trials, features,
+      //  safety_progress, …). Firestore rules do NOT cascade into
+      //  subcollections, so without this every such write falls through to the
+      //  catch-all (admin-only) and is denied for normal users.
+      match /{userSub=**} {
+        allow read, write: if isOwner(userId);
+      }
     }
 
     // ============================================================================
