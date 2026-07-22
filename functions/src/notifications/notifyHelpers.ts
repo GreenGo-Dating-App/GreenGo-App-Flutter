@@ -60,9 +60,15 @@ export async function emitNotification(params: {
   actor?: Actor; // omit for system/no-actor notifications
   allowSelf?: boolean;
 }): Promise<void> {
-  const { recipientId, type, title, body, data, actor, allowSelf } = params;
+  const { recipientId, type, title, body, actor, allowSelf } = params;
   if (!recipientId) return;
   if (actor && recipientId === actor.id && !allowSelf) return;
+
+  // When there's an actor, always carry their identity in the push DATA payload
+  // so the client can render + link the actor's name from a background push.
+  const data = actor
+    ? { ...params.data, actorId: actor.id, actorName: actor.name }
+    : params.data;
 
   // pushSent: true — emitNotification sends its own FCM push below, so the
   // onNotificationCreatedPush parity trigger must skip this doc (no double-push).

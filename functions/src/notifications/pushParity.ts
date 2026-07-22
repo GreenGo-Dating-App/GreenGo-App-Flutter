@@ -25,6 +25,7 @@ import * as admin from 'firebase-admin';
 import { brandPush } from './brand';
 import { shouldNotify, categoryForType } from './prefs';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -47,7 +48,10 @@ function stringifyData(
 }
 
 export const onNotificationCreatedPush = onDocumentCreated(
-  'notifications/{notifId}',
+  {
+    document: 'notifications/{notifId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onNotificationCreatedPush', async (event) => {
     const snap = event.data;
     if (!snap) return;
@@ -73,6 +77,16 @@ export const onNotificationCreatedPush = onDocumentCreated(
     const data = stringifyData(doc.data, type);
     const imageUrl = (doc.imageUrl as string) || undefined;
 
+    // Actor attribution — the in-app tile prepends the actor's name bold, but a
+    // raw FCM push has no such rendering. So bake the actor name into the PUSH
+    // title here (mirrors emitNotification/social, which push `${name} ${title}`)
+    // so every actor-attributed notification's push ALSO names who acted.
+    const actorName = (doc.actorName as string)?.trim() || '';
+    const pushTitle =
+      actorName && !title.startsWith(actorName)
+        ? `${actorName} ${title}`.trim()
+        : title;
+
     // Respect the user's per-category notification preference. If they disabled
     // this category (or push), keep the in-app feed doc but skip the push and
     // mark it handled so the trigger doesn't retry.
@@ -92,7 +106,7 @@ export const onNotificationCreatedPush = onDocumentCreated(
       if (token) {
         await admin.messaging().send({
           token,
-          notification: brandPush(title, body, imageUrl),
+          notification: brandPush(pushTitle, body, imageUrl),
           data,
           android: {
             priority: 'high',

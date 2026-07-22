@@ -21,6 +21,7 @@ import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -34,7 +35,10 @@ function preview(text: string): string {
 }
 
 export const onCommunityAnnouncementCreated = onDocumentCreated(
-  'communities/{communityId}/messages/{messageId}',
+  {
+    document: 'communities/{communityId}/messages/{messageId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onCommunityAnnouncementCreated', async (event) => {
     const snap = event.data;
     if (!snap) return;

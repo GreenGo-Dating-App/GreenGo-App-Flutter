@@ -11,13 +11,17 @@ import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
 const FCM_CHUNK = 500;
 
 export const onEventBroadcastCreated = onDocumentCreated(
-  'events/{eventId}/messages/{messageId}',
+  {
+    document: 'events/{eventId}/messages/{messageId}',
+    memory: PUSH_MEMORY,
+  },
   monitored("onEventBroadcastCreated", async (event) => {
     const snap = event.data;
     if (!snap) return;
@@ -105,7 +109,10 @@ export const onEventBroadcastCreated = onDocumentCreated(
 /// matching the 1:1/group notification sound + channel so they appear even when
 /// the app is closed.
 export const onEventMessageCreated = onDocumentCreated(
-  'events/{eventId}/messages/{messageId}',
+  {
+    document: 'events/{eventId}/messages/{messageId}',
+    memory: PUSH_MEMORY,
+  },
   monitored("onEventMessageCreated", async (event) => {
     const snap = event.data;
     if (!snap) return;

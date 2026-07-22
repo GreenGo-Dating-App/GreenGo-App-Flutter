@@ -16,6 +16,7 @@ import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import { brandPush } from './brand';
 import { filterUidsByPref } from './prefs';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -45,7 +46,10 @@ function displayCity(key: string): string {
 
 // ── 1. Keep the per-city subscriber index in sync ──────────────────────────
 export const syncCitySubscribers = onDocumentWritten(
-  'notification_preferences/{uid}',
+  {
+    document: 'notification_preferences/{uid}',
+    memory: PUSH_MEMORY,
+  },
   monitored('syncCitySubscribers', async (event) => {
     const uid = event.params.uid as string;
     const before = (event.data?.before.data()?.eventCities as string[]) || [];
@@ -185,7 +189,10 @@ async function notifyCity(
  * flag so it sends exactly once (create-as-published or draft→published).
  */
 export const onEventCityAlert = onDocumentWritten(
-  'events/{eventId}',
+  {
+    document: 'events/{eventId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onEventCityAlert', async (event) => {
     const after = event.data?.after.data();
     if (!after) return; // deleted
