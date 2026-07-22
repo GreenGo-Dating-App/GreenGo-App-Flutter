@@ -41,6 +41,14 @@ service firebase.storage {
       allow write: if isOwner(uid) && validUpload();
     }
 
+    // Voice intro re-recorded from Edit Profile (voice_intros/{uid}/...). Owner
+    // writes; signed-in users read (profile playback). The onboarding path
+    // profiles/{uid}/voice/... is already covered above.
+    match /voice_intros/{uid}/{allPaths=**} {
+      allow read: if signedIn();
+      allow write: if isOwner(uid) && validUpload();
+    }
+
     // Community images — the owner (community owner id in the path) writes.
     match /communities/{ownerId}/{allPaths=**} {
       allow read: if signedIn();
@@ -64,10 +72,12 @@ service firebase.storage {
       allow write: if signedIn() && validUpload();
     }
 
-    // ID / verification images — uploader writes, ONLY admins read.
-    match /verifications/{allPaths=**} {
-      allow read: if isAdmin();
-      allow write: if signedIn() && validUpload();
+    // ID / verification images — keyed by the uploader's uid. The owner writes
+    // AND may read them back (the reverification flow calls getDownloadURL right
+    // after upload); admins read for review. Not readable by other users.
+    match /verifications/{uid}/{allPaths=**} {
+      allow read: if isOwner(uid) || isAdmin();
+      allow write: if isOwner(uid) && validUpload();
     }
 
     // 1:1 chat media (image / voice / video). Path is keyed by matchId; Storage
