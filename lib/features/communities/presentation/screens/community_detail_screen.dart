@@ -150,7 +150,10 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
   void _loadCommunityDetail() {
     context.read<CommunitiesBloc>().add(
-          LoadCommunityDetail(communityId: widget.community.id),
+          LoadCommunityDetail(
+            communityId: widget.community.id,
+            community: widget.community,
+          ),
         );
 
     // Subscribe to message stream

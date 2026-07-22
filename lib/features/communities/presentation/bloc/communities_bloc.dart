@@ -350,35 +350,39 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   ) async {
     emit(const CommunitiesLoading());
 
-    final communityResult =
-        await _repository.getCommunityById(event.communityId);
+    // Prefer the community the caller already has (the detail screen always
+    // passes it). Only re-fetch when it wasn't provided. This eliminates the
+    // "Unable to load community" that appeared right after creating one.
+    Community? community = event.community;
+    if (community == null) {
+      final communityResult =
+          await _repository.getCommunityById(event.communityId);
+      community = communityResult.fold((_) => null, (c) => c);
+      if (community == null) {
+        emit(const CommunitiesError(message: 'Unable to load community'));
+        return;
+      }
+    }
 
-    await communityResult.fold(
-      (failure) async =>
-          emit(CommunitiesError(message: failure.message)),
-      (community) async {
-        final membersResult =
-            await _repository.getCommunityMembers(event.communityId);
-
-        final members = membersResult.fold(
-          (failure) => <CommunityMember>[],
-          (members) => members,
-        );
-
-        // Re-apply any messages that already streamed in for THIS community
-        // before the detail finished loading (otherwise they'd be lost).
-        final cached = _subscribedCommunityId == event.communityId
-            ? _latestMessages
-            : const <CommunityMessage>[];
-
-        emit(CommunityDetailLoaded(
-          community: community,
-          members: members,
-          messages: cached,
-          isMember: false,
-        ));
-      },
+    final membersResult =
+        await _repository.getCommunityMembers(event.communityId);
+    final members = membersResult.fold(
+      (failure) => <CommunityMember>[],
+      (members) => members,
     );
+
+    // Re-apply any messages that already streamed in for THIS community
+    // before the detail finished loading (otherwise they'd be lost).
+    final cached = _subscribedCommunityId == event.communityId
+        ? _latestMessages
+        : const <CommunityMessage>[];
+
+    emit(CommunityDetailLoaded(
+      community: community,
+      members: members,
+      messages: cached,
+      isMember: false,
+    ));
   }
 
   Future<void> _onCreateCommunity(

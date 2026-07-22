@@ -69,8 +69,13 @@ class LoadRecommendedCommunities extends CommunitiesEvent {
 /// Load community detail (community info + members + messages)
 class LoadCommunityDetail extends CommunitiesEvent {
 
-  const LoadCommunityDetail({required this.communityId});
+  const LoadCommunityDetail({required this.communityId, this.community});
   final String communityId;
+  /// The already-known community (the detail screen always has it). When
+  /// provided the bloc uses it directly instead of re-fetching by id — which
+  /// avoids the "Unable to load community" error right after creating one
+  /// (a fresh doc's serverTimestamp reads back transiently from cache).
+  final Community? community;
 }
 
 /// Create a new community
