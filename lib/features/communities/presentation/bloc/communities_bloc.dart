@@ -523,8 +523,14 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     result.fold(
       (failure) => emit(CommunitiesError(message: failure.message)),
       (sentMessage) {
-        if (currentState is CommunityDetailLoaded) {
-          emit(currentState.copyWith(isSending: false));
+        // Re-read the CURRENT state — the live message stream may have already
+        // emitted a CommunityDetailLoaded that includes the just-sent message
+        // while sendMessage was in flight. Using the stale `currentState`
+        // captured before the send would clobber that update and make the new
+        // message (chat / tip / announcement) disappear until re-entry.
+        final s = state;
+        if (s is CommunityDetailLoaded) {
+          emit(s.copyWith(isSending: false));
         }
       },
     );
