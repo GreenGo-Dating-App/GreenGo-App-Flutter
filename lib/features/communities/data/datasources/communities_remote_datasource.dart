@@ -29,6 +29,10 @@ abstract class CommunitiesRemoteDataSource {
   /// Get a community by ID
   Future<CommunityModel> getCommunityById(String communityId);
 
+  /// Live stream of a single community document — real-time member count,
+  /// sponsor/promo and rules/resources.
+  Stream<CommunityModel> getCommunityStream(String communityId);
+
   /// Create a new community
   Future<CommunityModel> createCommunity(CommunityModel community);
 
@@ -264,6 +268,15 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       debugPrint('Error getting community by ID: $e');
       rethrow;
     }
+  }
+
+  @override
+  Stream<CommunityModel> getCommunityStream(String communityId) {
+    return _communitiesRef
+        .doc(communityId)
+        .snapshots()
+        .where((doc) => doc.exists)
+        .map(CommunityModel.fromFirestore);
   }
 
   @override

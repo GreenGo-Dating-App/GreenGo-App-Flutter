@@ -1866,6 +1866,7 @@
     }
   },
   "eventsMaxAttendees": "Max Attendees",
+  "eventsCapacityAllowed": "Capacity allowed",
   "eventsNoAttendeesYet": "No attendees yet. Be the first to join!",
   "eventsNoEventsFound": "No events found",
   "eventsNoMessagesYet": "No messages yet",

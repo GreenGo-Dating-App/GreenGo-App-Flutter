@@ -165,10 +165,14 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
         final briefs = await UserDirectoryService.instance.resolve(newIds);
         for (final id in newIds) {
           final b = briefs[id];
+          // Skip deleted/inactive users and anyone without a resolvable display
+          // name. These are exactly the entries that would otherwise render as
+          // blank "?" rows. Never fall back to the raw uid as a name.
+          if (b == null || !b.isActive || b.name.trim().isEmpty) continue;
           _chatPartners.add(GroupCandidate(
             userId: id,
-            name: b?.name ?? id,
-            photoUrl: b?.photoUrl,
+            name: b.name,
+            photoUrl: b.photoUrl,
           ));
         }
         // Sort accumulated partners by recency (newest first).
@@ -196,6 +200,11 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
     // Invited (nickname) + supplied candidates first, then chat partners.
     for (final c in [...widget.candidates, ..._invited, ..._chatPartners]) {
       if (c.userId == widget.currentUserId) continue;
+      // Drop entries whose profile failed to load / has no display name — these
+      // render as blank "?" rows. A name equal to the raw uid is a failed
+      // fallback from the caller, so treat it as missing and never expose ids.
+      final name = c.name.trim();
+      if (name.isEmpty || name == c.userId) continue;
       if (seen.add(c.userId)) all.add(c);
     }
     return all;

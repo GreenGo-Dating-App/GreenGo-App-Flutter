@@ -43,6 +43,12 @@ class _EventChatScreenState extends State<EventChatScreen> {
   final ScrollController _scrollController = ScrollController();
   late final EventsRemoteDataSourceImpl _dataSource;
 
+  /// Live message stream, created ONCE so it isn't rebuilt on every setState.
+  /// Rebuilding it (e.g. on name resolution or block-list updates) would make
+  /// StreamBuilder re-subscribe and briefly report ConnectionState.waiting,
+  /// flashing the loading spinner over the already-visible messages.
+  late final Stream<List<EventChatMessage>> _messagesStream;
+
   /// Organizers can broadcast announcements to everyone in the event.
   bool get _isOrganizer => widget.event.organizerId == widget.currentUserId;
   bool _broadcastMode = false;
@@ -59,6 +65,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
   void initState() {
     super.initState();
     _dataSource = EventsRemoteDataSourceImpl();
+    _messagesStream = _dataSource.getEventMessages(widget.event.id);
     _resolveMe();
     _loadBlocked();
   }
@@ -151,9 +158,10 @@ class _EventChatScreenState extends State<EventChatScreen> {
           // Messages list
           Expanded(
             child: StreamBuilder<List<EventChatMessage>>(
-              stream: _dataSource.getEventMessages(widget.event.id),
+              stream: _messagesStream,
               builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
+                if (snapshot.connectionState == ConnectionState.waiting &&
+                    !snapshot.hasData) {
                   return const Center(
                     child: CircularProgressIndicator(
                       color: AppColors.richGold,

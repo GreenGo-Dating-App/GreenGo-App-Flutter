@@ -3964,6 +3964,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventsMaxAttendees => 'Max. Participantes';
 
   @override
+  String get eventsCapacityAllowed => 'Capacidade permitida';
+
+  @override
   String get eventsNoAttendeesYet => 'Sem participantes ainda. Se o primeiro!';
 
   @override
@@ -17253,6 +17256,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsMaxAttendees => 'Max. Participantes';
+
+  @override
+  String get eventsCapacityAllowed => 'Capacidade permitida';
 
   @override
   String get eventsNoAttendeesYet =>

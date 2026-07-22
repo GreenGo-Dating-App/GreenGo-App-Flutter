@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/config/app_config.dart';
@@ -282,41 +283,28 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       return;
     }
 
-    // Step 1: Transfer coins (atomic batch)
+    // Step 1: Transfer coins via the server callable. Crediting the RECEIVER's
+    // balance can't be done client-side (Firestore rules only allow writing your
+    // OWN balance), so the transfer runs server-side atomically in `giftCoins`.
     try {
-      final db = FirebaseFirestore.instance;
-      final batch = db.batch();
-      final giftId = DateTime.now().millisecondsSinceEpoch.toString();
-
-      // Gift record (already accepted - instant transfer)
-      batch.set(db.collection('coinGifts').doc(giftId), {
-        'giftId': giftId,
-        'senderId': widget.userId,
+      final callable = FirebaseFunctions.instance.httpsCallable('giftCoins');
+      await callable.call<dynamic>(<String, dynamic>{
         'receiverId': receiverId,
         'amount': amount,
-        'message': message,
-        'status': 'accepted',
-        'sentAt': FieldValue.serverTimestamp(),
-        'receivedAt': FieldValue.serverTimestamp(),
+        if (message != null) 'message': message,
       });
-
-      // Deduct from sender
-      batch.set(db.collection('coinBalances').doc(widget.userId), {
-        'totalCoins': FieldValue.increment(-amount),
-        'spentCoins': FieldValue.increment(amount),
-        'lastUpdated': FieldValue.serverTimestamp(),
-        'userId': widget.userId,
-      }, SetOptions(merge: true));
-
-      // Credit to receiver
-      batch.set(db.collection('coinBalances').doc(receiverId), {
-        'totalCoins': FieldValue.increment(amount),
-        'giftedCoins': FieldValue.increment(amount),
-        'lastUpdated': FieldValue.serverTimestamp(),
-        'userId': receiverId,
-      }, SetOptions(merge: true));
-
-      await batch.commit();
+    } on FirebaseFunctionsException catch (e) {
+      debugPrint('[CoinGift] Transfer failed: ${e.code} ${e.message}');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+                '${AppLocalizations.of(context)!.coinsGiftSendFailed}: ${e.message ?? e.code}'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+      return; // Stop here if transfer failed
     } catch (e) {
       debugPrint('[CoinGift] Transfer failed: $e');
       if (mounted) {

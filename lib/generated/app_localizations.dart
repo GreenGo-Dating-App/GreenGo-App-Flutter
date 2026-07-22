@@ -7091,6 +7091,12 @@ abstract class AppLocalizations {
   /// **'Max Attendees'**
   String get eventsMaxAttendees;
 
+  /// No description provided for @eventsCapacityAllowed.
+  ///
+  /// In en, this message translates to:
+  /// **'Capacity allowed'**
+  String get eventsCapacityAllowed;
+
   /// No description provided for @eventsNoAttendeesYet.
   ///
   /// In en, this message translates to:

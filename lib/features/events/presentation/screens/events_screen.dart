@@ -3012,9 +3012,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   int _recurInterval = 1;
   int _recurCount = 4; // total occurrences incl. the first (<= kMaxSeriesOccurrences)
 
-  // ---- Ticket tiers (optional; empty = single implicit tier) ----
-  final List<TicketTier> _tiers = [];
-
   // ---- Draft / scheduled publishing ----
   // Chosen when saving (Publish / Save as draft / Schedule).
   DateTime? _publishAt;
@@ -3152,13 +3149,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     // Show already-uploaded images in the edit form.
     _existingMainUrl = e.imageUrl;
     _existingPhotoUrls.addAll(e.photoUrls);
-    // Prefill recurrence + tiers + schedule so editing preserves them.
+    // Prefill recurrence + schedule so editing preserves them.
     if (e.recurrence != null) {
       _recurFreq = e.recurrence!.frequency;
       _recurInterval = e.recurrence!.safeInterval;
       _recurCount = e.recurrence!.safeCount;
     }
-    _tiers.addAll(e.ticketTiers);
     _publishAt = e.publishAt;
   }
 
@@ -3512,7 +3508,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 controller: _maxAttendeesController,
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: _inputDecoration(
-                    AppLocalizations.of(context)!.eventsMaxAttendees),
+                    AppLocalizations.of(context)!.eventsCapacityAllowed),
                 keyboardType: TextInputType.number,
               ),
             const SizedBox(height: 16),
@@ -3664,8 +3660,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             const SizedBox(height: 24),
             _buildRecurrenceSection(),
-            const SizedBox(height: 16),
-            _buildTicketTiersSection(),
             const SizedBox(height: 32),
             _buildSaveActions(),
           ],
@@ -3796,51 +3790,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     );
   }
 
-  /// Optional ticket tiers. Empty = one implicit tier using price/maxAttendees.
-  Widget _buildTicketTiersSection() {
-    final l10n = AppLocalizations.of(context)!;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(l10n.eventsTicketTiers,
-            style: const TextStyle(
-                color: AppColors.textSecondary, fontWeight: FontWeight.bold)),
-        const SizedBox(height: 4),
-        Text(
-          l10n.eventsTicketTiersHelper,
-          style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
-        ),
-        const SizedBox(height: 4),
-        ..._tiers.map((t) => ListTile(
-              contentPadding: EdgeInsets.zero,
-              leading:
-                  const Icon(Icons.local_activity, color: AppColors.richGold),
-              title: Text(t.name,
-                  style: const TextStyle(color: AppColors.textPrimary)),
-              subtitle: Text(
-                '${t.isFree ? l10n.eventsFreeTier : l10n.eventsTierPriceValue(t.priceCoins)} · '
-                '${t.isUnlimited ? l10n.eventsUnlimited : l10n.eventsTierCapacityValue(t.capacity)}',
-                style: const TextStyle(color: AppColors.textSecondary),
-              ),
-              trailing: IconButton(
-                icon:
-                    const Icon(Icons.close, color: AppColors.textSecondary),
-                onPressed: () => setState(() => _tiers.remove(t)),
-              ),
-            )),
-        Align(
-          alignment: Alignment.centerLeft,
-          child: TextButton.icon(
-            icon: const Icon(Icons.add_circle, color: AppColors.richGold),
-            label: Text(l10n.eventsAddTier,
-                style: const TextStyle(color: AppColors.richGold)),
-            onPressed: _showAddTierDialog,
-          ),
-        ),
-      ],
-    );
-  }
-
   /// Save actions. Editing keeps a single Save button; creating offers
   /// Publish (primary), Save as draft, and Schedule.
   Widget _buildSaveActions() {
@@ -3945,66 +3894,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         date.year, date.month, date.day, time.hour, time.minute);
     setState(() => _publishAt = publishAt);
     await _submit(status: EventStatus.scheduled, publishAt: publishAt);
-  }
-
-  /// Add/define a ticket tier via a small dialog.
-  Future<void> _showAddTierDialog() async {
-    final l10n = AppLocalizations.of(context)!;
-    final nameCtl = TextEditingController();
-    final priceCtl = TextEditingController(text: '0');
-    final capCtl = TextEditingController(text: '0');
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.eventsAddTier,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TextField(
-              controller: nameCtl,
-              style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration(l10n.eventsTierName),
-            ),
-            const SizedBox(height: 12),
-            TextField(
-              controller: priceCtl,
-              keyboardType: TextInputType.number,
-              style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration(l10n.eventsTierPriceCoins),
-            ),
-            const SizedBox(height: 12),
-            TextField(
-              controller: capCtl,
-              keyboardType: TextInputType.number,
-              style: const TextStyle(color: AppColors.textPrimary),
-              decoration: _inputDecoration(l10n.eventsTierCapacity),
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, false),
-              child: Text(l10n.groupCancel)),
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, true),
-              child: Text(l10n.eventsAddTier)),
-        ],
-      ),
-    );
-    if (ok != true) return;
-    final name = nameCtl.text.trim();
-    if (name.isEmpty) return;
-    setState(() {
-      _tiers.add(TicketTier(
-        // Dot-free unique id (used as a Firestore nested-field key).
-        id: 'tier_${DateTime.now().microsecondsSinceEpoch}',
-        name: name,
-        priceCoins: int.tryParse(priceCtl.text.trim())?.clamp(0, 100000) ?? 0,
-        capacity: int.tryParse(capCtl.text.trim())?.clamp(0, 1000000) ?? 0,
-      ));
-    });
   }
 
   Future<void> _confirmCancelSeries() async {
@@ -4308,7 +4197,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
     if (_isEditing) {
       // Preserve attendees, createdAt, featured, series, etc. Keep the existing
-      // status/publishAt; only update editable fields incl. ticket tiers.
+      // status/publishAt; only update editable fields. Events are now single
+      // general-admission (no priced tiers) gated by the capacity field.
       final event = widget.existing!.copyWith(
         title: _titleController.text,
         description: _descriptionController.text,
@@ -4329,7 +4219,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         externalLinks: _externalLinks,
         languagePairs: languagePairs,
         guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
-        ticketTiers: _tiers,
+        ticketTiers: const [],
         communityId: _selectedCommunityId,
         clearCommunityId: _selectedCommunityId == null,
         updatedAt: DateTime.now(),
@@ -4369,7 +4259,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       status: status,
       publishAt: status == EventStatus.scheduled ? publishAt : null,
       recurrence: recurrence.isRecurring ? recurrence : null,
-      ticketTiers: _tiers,
+      ticketTiers: const [],
       languagePairs: languagePairs,
       guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
       communityId: _selectedCommunityId,
