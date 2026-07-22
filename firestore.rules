@@ -167,9 +167,13 @@ service cloud.firestore {
           return get(/databases/$(database)/documents/conversations/$(conversationId)).data;
         }
         allow read: if convMember(conv()) || convAdmin();
-        // A member may post; sender can't impersonate another uid.
+        // A member may post as themselves (sender can't impersonate another
+        // uid). Support control messages authored with senderId 'system' — the
+        // welcome / agent-assigned / status-change notices written by the member
+        // who opens a support chat — are also allowed.
         allow create: if convMember(conv())
-          && request.auth.uid == request.resource.data.get('senderId', request.auth.uid);
+          && (request.auth.uid == request.resource.data.get('senderId', request.auth.uid)
+              || request.resource.data.get('senderId', '') == 'system');
         allow update, delete: if convMember(conv()) || convAdmin();
       }
     }
@@ -1157,12 +1161,15 @@ service cloud.firestore {
           exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid));
       }
 
-      // Public events readable by anyone signed in; private only by organizer/attendees.
-      allow read: if isSignedIn() && (
-        resource.data.visibility == 'public' ||
-        resource.data.organizerId == request.auth.uid ||
-        isEventAttendee()
-      );
+      // Events are readable by any signed-in user. The client's list queries
+      // (feed / nearby / community / search / Going tab / cancel-series) filter
+      // visibility CLIENT-SIDE; Firestore rejects an entire list query when the
+      // read rule isn't statically guaranteed by the query constraints, so a
+      // visibility-gated read here broke event browsing wholesale. Private-event
+      // read-isolation, if required, must instead be done by adding
+      // `where('visibility','==','public')` to every list query + matching
+      // composite indexes (tracked follow-up) — NOT by re-tightening this rule.
+      allow read: if isSignedIn();
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
         && request.resource.data.organizerId == request.auth.uid;
@@ -1194,6 +1201,14 @@ service cloud.firestore {
         allow update: if isSignedIn()
           && resource.data.status == 'waitlist'
           && request.resource.data.status == 'going';
+        // Delegated QR check-in: a scanner the organizer authorised
+        // (allowedScannerIds on the event doc) may flip ONLY checkedIn /
+        // checkedInAt on an attendee — nothing else.
+        allow update: if isSignedIn()
+          && request.auth.uid in
+             get(/databases/$(database)/documents/events/$(eventId)).data.get('allowedScannerIds', [])
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['checkedIn', 'checkedInAt']);
       }
 
       // Likes — one doc per user; likeCount kept current by onEventLikeWrite CF.
@@ -1217,8 +1232,10 @@ service cloud.firestore {
         allow create: if members()
           && request.resource.data.senderId == request.auth.uid
           && (request.resource.data.isBroadcast != true || parentOrganizer());
+        // Sender edits/deletes their own; the organizer may delete any message
+        // (needed to cascade-delete an event that has attendee chat).
         allow update, delete: if isSignedIn()
-          && resource.data.senderId == request.auth.uid;
+          && (resource.data.senderId == request.auth.uid || parentOrganizer());
       }
     }
 
