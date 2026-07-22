@@ -390,10 +390,12 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     );
   }
 
-  Future<void> _load() async {
+  Future<void> _load({bool forceRefresh = false}) async {
     try {
       // Load the current user's own profile (for the "You" tile) in parallel
-      // with the distance-ordered discovery pool.
+      // with the distance-ordered discovery pool. On a pull-to-refresh
+      // (forceRefresh) the discovery cache is bypassed so the grid shows fresh
+      // server data.
       final ds = di.sl<DiscoveryRemoteDataSource>();
       final preferences = _effectivePreferences;
 
@@ -403,6 +405,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           userId: widget.userId,
           preferences: preferences,
           limit: 500,
+          forceRefresh: forceRefresh,
         ),
       ]);
 
@@ -866,7 +869,16 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
         child: Column(
           children: [
             _tagFilterBar(),
-            Expanded(child: _body(context, l10n, reduceMotion)),
+            Expanded(
+              // Swipe down to force-refresh the people grid with fresh server
+              // data (see _load, which force-reads from the server on refresh).
+              child: RefreshIndicator(
+                color: AppColors.richGold,
+                backgroundColor: AppColors.backgroundCard,
+                onRefresh: () => _load(forceRefresh: true),
+                child: _body(context, l10n, reduceMotion),
+              ),
+            ),
           ],
         ),
       ),
@@ -1055,6 +1067,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
         Expanded(
           child: GridView.builder(
             controller: _scrollController,
+            // Allow overscroll so pull-to-refresh triggers even when the grid
+            // isn't full.
+            physics: const AlwaysScrollableScrollPhysics(),
             padding: EdgeInsets.zero,
             gridDelegate: gridDelegate,
             itemCount: itemCount,
