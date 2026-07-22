@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:uuid/uuid.dart';
@@ -27,10 +28,13 @@ class CoinRemoteDataSource {
     required this.firestore,
     required this.inAppPurchase,
     Uuid? uuid,
-  }) : uuid = uuid ?? const Uuid();
+    FirebaseFunctions? functions,
+  })  : uuid = uuid ?? const Uuid(),
+        functions = functions ?? FirebaseFunctions.instance;
   final FirebaseFirestore firestore;
   final InAppPurchase inAppPurchase;
   final Uuid uuid;
+  final FirebaseFunctions functions;
 
   // Collection references
   CollectionReference get _balancesCollection =>
@@ -834,42 +838,21 @@ class CoinRemoteDataSource {
     });
   }
 
-  /// Decline gift
+  /// Decline gift.
+  ///
+  /// Declining refunds the ORIGINAL SENDER, which writes another user's
+  /// `coinBalances` doc — a cross-user write Firestore rules (correctly) deny to
+  /// the client. It therefore runs server-side via the `declineGift` callable
+  /// (Admin SDK), which verifies the caller is the recipient, marks the gift
+  /// 'declined', and refunds the sender atomically. [userId] is validated
+  /// server-side from the auth context, so it is not sent.
   Future<void> declineGift({
     required String giftId,
     required String userId,
   }) async {
-    await firestore.runTransaction((transaction) async {
-      final giftRef = _giftsCollection.doc(giftId);
-      final giftDoc = await transaction.get(giftRef);
-
-      if (!giftDoc.exists) {
-        throw Exception('Gift not found');
-      }
-
-      final gift = CoinGiftModel.fromFirestore(giftDoc);
-
-      if (gift.receiverId != userId) {
-        throw Exception('Not authorized to decline this gift');
-      }
-
-      // Refund sender (inline, no nested transaction).
-      // relatedUserId is the declining receiver (== current user) so the
-      // ledger write satisfies the coinTransactions security rule, which
-      // requires the writer to be a party to the entry.
-      await _creditInTransaction(
-        transaction,
-        userId: gift.senderId,
-        amount: gift.amount,
-        reason: CoinTransactionReason.refund,
-        relatedUserId: gift.receiverId,
-        metadata: {'reason': 'gift_declined'},
-      );
-
-      // Update gift status
-      transaction.update(giftRef, {
-        'status': CoinGiftStatus.declined.name,
-      });
+    final callable = functions.httpsCallable('declineGift');
+    await callable.call<dynamic>(<String, dynamic>{
+      'giftId': giftId,
     });
   }
 

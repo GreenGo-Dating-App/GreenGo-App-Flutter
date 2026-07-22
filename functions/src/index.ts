@@ -256,6 +256,7 @@ export {
   sendExpirationWarnings,
   claimReward,
   giftCoins,
+  declineGift,
 } from './coins';
 
 // Coupon Redemption + Admin Management

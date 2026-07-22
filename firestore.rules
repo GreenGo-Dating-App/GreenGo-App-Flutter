@@ -437,14 +437,12 @@ service cloud.firestore {
     match /coinBalances/{userId} {
       allow read: if isSignedIn();
       allow create: if isSignedIn();
-      // Owner may update their own balance (spend / earn / welcome coins).
-      // A non-owner (e.g. gifting or refunding coins to another user) may ONLY
-      // INCREASE totalCoins — never decrement or zero out someone else's
-      // balance. Full balance integrity needs server-side mutations; this
-      // closes the worst case (draining/zeroing another user).
-      allow update: if isOwner(userId)
-        || (isSignedIn()
-            && request.resource.data.totalCoins > resource.data.totalCoins);
+      // Owner may update ONLY their OWN balance. Crediting ANOTHER user (gift
+      // send, gift-decline refund) is done server-side by the giftCoins /
+      // declineGift callables (Admin SDK), so the client never needs to write
+      // another user's balance — closing the coin-forgery hole where any user
+      // could inflate anyone's totalCoins.
+      allow update: if isOwner(userId);
       allow delete: if false;
     }
 
@@ -660,7 +658,8 @@ service cloud.firestore {
     // NOTIFICATION PREFERENCES COLLECTION
     // ============================================================================
     match /notification_preferences/{userId} {
-      allow read: if isSignedIn();
+      // A user's notification preferences are private to them.
+      allow read: if isOwner(userId);
       allow create, update: if isOwner(userId);
       allow delete: if false;
     }
@@ -882,9 +881,11 @@ service cloud.firestore {
       allow create: if isSignedIn()
                     && request.auth.uid in request.resource.data.participants
                     && request.resource.data.roles[request.auth.uid] == 'admin';
-      // Members may update the group doc (membership/info/role ops); the
-      // server-side functions perform the cross-user side effects.
-      allow update: if isGroupMember();
+      // Members may update the group doc (info, membership, denorm). A member
+      // may NOT change the `roles` map — role changes (incl. self-promotion to
+      // admin) require an existing admin.
+      allow update: if isGroupMember()
+        && (request.resource.data.roles == resource.data.roles || isGroupAdminRole());
       allow delete: if isGroupAdminRole();
 
       match /messages/{messageId} {
@@ -895,8 +896,13 @@ service cloud.firestore {
         allow create: if isSignedIn()
                       && request.auth.uid in members()
                       && request.resource.data.senderId == request.auth.uid;
-        // Reactions / read-state by any member; hard delete only by the sender.
-        allow update: if isSignedIn() && request.auth.uid in members();
+        // Reactions / read-state by any member (message CONTENT unchanged).
+        // Changing content (e.g. soft-delete-for-everyone) is limited to the
+        // sender or a group admin — a member can't blank someone else's message.
+        allow update: if isSignedIn() && request.auth.uid in members()
+          && (request.resource.data.content == resource.data.content
+              || resource.data.senderId == request.auth.uid
+              || get(/databases/$(database)/documents/groups/$(groupId)).data.roles[request.auth.uid] == 'admin');
         allow delete: if isSignedIn()
                       && resource.data.senderId == request.auth.uid;
       }
@@ -1083,7 +1089,12 @@ service cloud.firestore {
       // plain chat (text/image/…) = any member who isn't muted/banned.
       match /messages/{messageId} {
         allow read: if isSignedIn();
-        allow create: if isSignedIn() && (
+        allow create: if isSignedIn()
+          // A member posts as THEMSELVES — no senderId spoofing (system control
+          // messages excepted).
+          && (request.resource.data.get('senderId', request.auth.uid) == request.auth.uid
+              || request.resource.data.get('senderId', '') == 'system')
+          && (
           (request.resource.data.type == 'announcement' && canWriteAnnouncements()) ||
           (request.resource.data.type in ['language_tip', 'cultural_fact', 'city_tip']
               && canWriteTips() && canPostChat()) ||

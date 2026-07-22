@@ -750,3 +750,116 @@ export const giftCoins = onCall<GiftCoinsRequest>(
     }
   }
 );
+
+interface DeclineGiftRequest {
+  giftId: string;
+}
+
+/**
+ * Decline a pending P2P coin gift and refund the ORIGINAL SENDER.
+ *
+ * This MUST be server-side: the refund credits the SENDER's `coinBalances` doc,
+ * a cross-user write that Firestore rules (correctly) deny to the client — the
+ * client can only write its OWN balance. The old client-side decline refunded
+ * the sender directly, which forced `coinBalances` to stay writable across
+ * users (a coin-forgery hole). The Admin SDK bypasses the rules so the refund
+ * happens here instead, letting `coinBalances` be locked to owner-only.
+ *
+ * The caller must be the gift's RECEIVER. Idempotent: only a 'pending' gift is
+ * refundable — an already-declined/accepted gift is rejected, so a replayed
+ * call can never double-refund.
+ */
+export const declineGift = onCall<DeclineGiftRequest>(
+  { memory: '256MiB', timeoutSeconds: 60 },
+  async (request) => {
+    try {
+      const receiverId = await verifyAuth(request.auth);
+      const { giftId } = request.data;
+
+      if (!giftId || typeof giftId !== 'string') {
+        throw new HttpsError('invalid-argument', 'giftId is required');
+      }
+
+      const giftRef = db.collection('coinGifts').doc(giftId);
+
+      let senderId = '';
+      let amount = 0;
+      let senderNewTotal = 0;
+
+      await db.runTransaction(async (transaction) => {
+        const giftDoc = await transaction.get(giftRef);
+        if (!giftDoc.exists) {
+          throw new HttpsError('not-found', 'Gift not found');
+        }
+
+        const gift = giftDoc.data() as any;
+        if (gift.receiverId !== receiverId) {
+          throw new HttpsError(
+            'permission-denied',
+            'Only the gift recipient can decline this gift',
+          );
+        }
+        if (gift.status !== 'pending') {
+          // Idempotency guard: already declined/accepted → never double-refund.
+          throw new HttpsError(
+            'failed-precondition',
+            'Gift is not pending (already accepted or declined)',
+          );
+        }
+
+        senderId = gift.senderId as string;
+        amount = (gift.amount as number) || 0;
+        if (!senderId || !Number.isInteger(amount) || amount <= 0) {
+          throw new HttpsError('failed-precondition', 'Gift is missing a valid sender/amount');
+        }
+
+        const senderRef = db.collection('coinBalances').doc(senderId);
+        const senderDoc = await transaction.get(senderRef);
+        const senderTotal = (senderDoc.data() as any)?.totalCoins || 0;
+        senderNewTotal = senderTotal + amount;
+
+        const now = admin.firestore.FieldValue.serverTimestamp();
+        const inc = admin.firestore.FieldValue.increment;
+
+        // Refund the sender (cross-user write — server-only). `refundedCoins`
+        // is bookkeeping; `spentCoins` is decremented to undo the debit the
+        // original send applied when it moved the gift into escrow.
+        transaction.set(
+          senderRef,
+          {
+            userId: senderId,
+            totalCoins: inc(amount),
+            spentCoins: inc(-amount),
+            refundedCoins: inc(amount),
+            lastUpdated: now,
+          },
+          { merge: true },
+        );
+
+        transaction.update(giftRef, {
+          status: 'declined',
+          declinedAt: now,
+        });
+
+        transaction.set(db.collection('coinTransactions').doc(), {
+          userId: senderId,
+          type: 'credit',
+          amount,
+          balanceAfter: senderNewTotal,
+          reason: 'Gift declined refund',
+          metadata: { fromUserId: receiverId, giftId, source: 'gift_refund' },
+          createdAt: now,
+        });
+      });
+
+      logInfo(`declineGift ${giftId}: refunded ${amount} to sender ${senderId} (declined by ${receiverId})`);
+
+      return {
+        success: true,
+        senderNewBalance: senderNewTotal,
+      };
+    } catch (error) {
+      throw handleError(error);
+    }
+  }
+);

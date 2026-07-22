@@ -1149,37 +1149,45 @@ class _GiftsTabState extends State<_GiftsTab> {
   }
 
   Future<void> _declineGift(Map<String, dynamic> gift) async {
+    // Decline + refund runs server-side. Refunding the ORIGINAL SENDER means
+    // writing ANOTHER user's `coinBalances` doc, which Firestore rules (correctly)
+    // deny to the client — only the `declineGift` callable (Admin SDK) may do it.
+    // This also marks the gift 'declined' atomically, so the client only calls
+    // the callable, refreshes, and shows the snackbar.
     try {
-      await FirebaseFirestore.instance
-          .collection('coinGifts')
-          .doc(gift['giftId'])
-          .update({'status': 'declined'});
-
-      // Refund sender
-      await FirebaseFirestore.instance
-          .collection('coinBalances')
-          .doc(gift['senderId'])
-          .update({
-        'totalCoins': FieldValue.increment(gift['amount']),
-        'lastUpdated': FieldValue.serverTimestamp(),
+      final callable = FirebaseFunctions.instance.httpsCallable('declineGift');
+      await callable.call<dynamic>(<String, dynamic>{
+        'giftId': gift['giftId'],
       });
-
-      await _loadPendingGifts();
-
+    } on FirebaseFunctionsException catch (e) {
+      debugPrint('[CoinGift] Decline failed: ${e.code} ${e.message}');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(AppLocalizations.of(context)!.coinsGiftDeclined),
-            backgroundColor: Colors.orange,
+            content: Text('Error: ${e.message ?? e.code}'),
+            backgroundColor: Colors.red,
           ),
         );
       }
+      return;
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e'), backgroundColor: Colors.red),
         );
       }
+      return;
+    }
+
+    await _loadPendingGifts();
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.coinsGiftDeclined),
+          backgroundColor: Colors.orange,
+        ),
+      );
     }
   }
 }
