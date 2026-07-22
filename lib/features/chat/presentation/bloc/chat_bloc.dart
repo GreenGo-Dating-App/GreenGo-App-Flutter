@@ -1,8 +1,13 @@
+import 'dart:async';
+
+import 'package:dartz/dartz.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/error/failures.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../gamification/domain/usecases/track_user_action.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/usecases/block_user.dart';
 import '../../domain/usecases/delete_conversation.dart';
@@ -45,6 +50,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         _trackUserAction = trackUserAction,
         super(const ChatInitial()) {
     on<ChatConversationLoaded>(_onConversationLoaded);
+    on<_ChatMessagesUpdated>(_onChatMessagesUpdated);
     on<ChatMessageSent>(_onMessageSent);
     on<ChatMessagesMarkedAsRead>(_onMessagesMarkedAsRead);
     on<ChatTypingIndicatorChanged>(_onTypingIndicatorChanged);
@@ -87,17 +93,12 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
   // Bounded default window; the screen grows it in pages as the user scrolls up.
   int _messageLimit = 40;
 
-  /// Re-subscribes to the Firestore messages stream
-  void _resubscribeToMessages() {
-    if (_matchId != null && _currentUserId != null && _otherUserId != null) {
-      add(ChatConversationLoaded(
-        matchId: _matchId!,
-        currentUserId: _currentUserId!,
-        otherUserId: _otherUserId!,
-        limit: _messageLimit,
-      ));
-    }
-  }
+  // Persistent live-messages subscription. Established once in
+  // [_onConversationLoaded] and kept alive across sends/actions so real-time
+  // delivery is never torn down (previously each send re-subscribed, adding
+  // multi-second latency). Snapshots arrive as [_ChatMessagesUpdated] events.
+  StreamSubscription<Either<Failure, List<Message>>>? _messagesSub;
+  Conversation? _conversation;
 
   Future<void> _onConversationLoaded(
     ChatConversationLoaded event,
@@ -126,38 +127,54 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     if (conversation == null) return;
 
     _conversationId = conversation.conversationId;
+    _conversation = conversation;
     _hasLoadedOnce = true;
     if (event.limit != null) {
       _messageLimit = event.limit!;
     }
 
-    // Use emit.forEach to properly handle stream emissions
-    await emit.forEach(
-      getMessages(
-        GetMessagesParams(
-          conversationId: conversation.conversationId,
-          userId: event.currentUserId,
-          limit: _messageLimit,
-        ),
+    // Establish a PERSISTENT subscription to the live messages stream. Each
+    // snapshot is folded into a ChatLoaded by [_onChatMessagesUpdated]. Unlike
+    // the old `emit.forEach`, this subscription is NOT bound to the lifetime of
+    // this handler, so sending a message (or any action) no longer tears it
+    // down and rebuilds it — real-time delivery stays live.
+    await _messagesSub?.cancel();
+    _messagesSub = getMessages(
+      GetMessagesParams(
+        conversationId: conversation.conversationId,
+        userId: event.currentUserId,
+        limit: _messageLimit,
       ),
-      onData: (messagesResult) {
-        return messagesResult.fold(
-          (failure) => ChatError('Failed to load messages: ${failure.toString()}'),
-          (messages) {
-            // Auto-mark as read when messages are loaded
-            if (messages.isNotEmpty) {
-              add(const ChatMessagesMarkedAsRead());
-            }
+    ).listen((result) => add(_ChatMessagesUpdated(result)));
+  }
 
-            return ChatLoaded(
-              conversation: conversation,
-              messages: messages,
-              currentUserId: event.currentUserId,
-              otherUserId: event.otherUserId,
-              isOtherUserTyping: conversation.isOtherUserTyping(event.currentUserId),
-            );
-          },
-        );
+  void _onChatMessagesUpdated(
+    _ChatMessagesUpdated event,
+    Emitter<ChatState> emit,
+  ) {
+    final conversation = _conversation;
+    final currentUserId = _currentUserId;
+    final otherUserId = _otherUserId;
+    if (conversation == null || currentUserId == null || otherUserId == null) {
+      return;
+    }
+
+    event.result.fold(
+      (failure) =>
+          emit(ChatError('Failed to load messages: ${failure.toString()}')),
+      (messages) {
+        // Auto-mark as read when messages are loaded
+        if (messages.isNotEmpty) {
+          add(const ChatMessagesMarkedAsRead());
+        }
+
+        emit(ChatLoaded(
+          conversation: conversation,
+          messages: messages,
+          currentUserId: currentUserId,
+          otherUserId: otherUserId,
+          isOtherUserTyping: conversation.isOtherUserTyping(currentUserId),
+        ));
       },
     );
   }
@@ -239,8 +256,8 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
             TrackUserActionParams.messageSent(_currentUserId!),
           );
         }
-        // Re-subscribe to the Firestore stream (emit.forEach was cancelled)
-        _resubscribeToMessages();
+        // The persistent messages subscription keeps delivering; the sent
+        // message arrives via the live stream — no re-subscribe needed.
       },
     );
   }
@@ -302,7 +319,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       },
       (_) {
         emit(const ChatMessageActionSuccess('Message deleted'));
-        _resubscribeToMessages();
       },
     );
   }
@@ -327,7 +343,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       },
       (_) {
         emit(const ChatMessageActionSuccess('Message deleted for you'));
-        _resubscribeToMessages();
       },
     );
   }
@@ -352,7 +367,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       },
       (_) {
         emit(const ChatMessageActionSuccess('Message deleted for everyone'));
-        _resubscribeToMessages();
       },
     );
   }
@@ -572,7 +586,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatMessageActionSuccess(
           event.isStarred ? 'Message starred' : 'Message unstarred',
         ));
-        _resubscribeToMessages();
       },
     );
   }
@@ -629,8 +642,8 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatError('Failed to send reply: ${failure.toString()}'));
       },
       (_) {
-        // Re-subscribe to Firestore stream (emit.forEach was cancelled)
-        _resubscribeToMessages();
+        // The persistent messages subscription keeps delivering; the reply
+        // arrives via the live stream — no re-subscribe needed.
       },
     );
   }
@@ -658,9 +671,21 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         emit(ChatMessageActionSuccess(
           'Message forwarded to ${event.toMatchIds.length} conversation${event.toMatchIds.length > 1 ? 's' : ''}',
         ));
-        _resubscribeToMessages();
       },
     );
   }
 
+  @override
+  Future<void> close() {
+    _messagesSub?.cancel();
+    return super.close();
+  }
+}
+
+/// Internal event carrying a live-messages snapshot from the persistent
+/// subscription established in [ChatBloc._onConversationLoaded]. Kept private so
+/// only the bloc can dispatch it.
+class _ChatMessagesUpdated extends ChatEvent {
+  const _ChatMessagesUpdated(this.result);
+  final Either<Failure, List<Message>> result;
 }
