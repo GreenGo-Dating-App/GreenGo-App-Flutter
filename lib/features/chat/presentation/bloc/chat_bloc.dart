@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:dartz/dartz.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/error/failures.dart';
@@ -133,6 +134,22 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       _messageLimit = event.limit!;
     }
 
+    // Clear the loading spinner IMMEDIATELY once the conversation resolves — the
+    // live messages stream below then fills in and keeps updating the list. This
+    // guarantees the chat never hangs on the spinner even if the first snapshot
+    // is delayed or the stream errors (the repo's handleError swallows errors,
+    // so a stream error would otherwise never surface and the spinner would
+    // spin forever).
+    if (state is! ChatLoaded) {
+      emit(ChatLoaded(
+        conversation: conversation,
+        messages: const [],
+        currentUserId: event.currentUserId,
+        otherUserId: event.otherUserId,
+        isOtherUserTyping: conversation.isOtherUserTyping(event.currentUserId),
+      ));
+    }
+
     // Establish a PERSISTENT subscription to the live messages stream. Each
     // snapshot is folded into a ChatLoaded by [_onChatMessagesUpdated]. Unlike
     // the old `emit.forEach`, this subscription is NOT bound to the lifetime of
@@ -145,7 +162,12 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
         userId: event.currentUserId,
         limit: _messageLimit,
       ),
-    ).listen((result) => add(_ChatMessagesUpdated(result)));
+    ).listen(
+      (result) => add(_ChatMessagesUpdated(result)),
+      onError: (Object e, StackTrace s) {
+        debugPrint('[Chat] messages stream error: $e');
+      },
+    );
   }
 
   void _onChatMessagesUpdated(

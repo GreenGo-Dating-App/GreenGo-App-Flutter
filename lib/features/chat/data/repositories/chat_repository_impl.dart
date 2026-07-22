@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
@@ -5,6 +7,7 @@ import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
 import '../../domain/repositories/chat_repository.dart';
 import '../datasources/chat_remote_datasource.dart';
+import '../models/message_model.dart';
 
 /// Chat Repository Implementation
 class ChatRepositoryImpl implements ChatRepository {
@@ -35,11 +38,22 @@ class ChatRepositoryImpl implements ChatRepository {
             userId: userId,
             limit: limit,
           )
-          .map((messages) =>
-              Right<Failure, List<Message>>(messages.map((m) => m.toEntity()).toList()))
-          .handleError((error) {
-        return Left<Failure, List<Message>>(ServerFailure(error.toString()));
-      });
+          .transform(
+        StreamTransformer<List<MessageModel>,
+            Either<Failure, List<Message>>>.fromHandlers(
+          handleData: (messages, sink) => sink.add(
+            Right<Failure, List<Message>>(
+                messages.map((m) => m.toEntity()).toList()),
+          ),
+          // Surface a stream error as a Left instead of swallowing it — the old
+          // `handleError` RETURNED a Left that was discarded (handleError's
+          // callback is void), so errors never reached the bloc and the chat
+          // could hang on the loading spinner forever.
+          handleError: (error, stack, sink) => sink.add(
+            Left<Failure, List<Message>>(ServerFailure(error.toString())),
+          ),
+        ),
+      );
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
     }
