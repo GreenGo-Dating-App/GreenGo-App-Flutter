@@ -63,7 +63,11 @@ Future<void> openConnectChat(
     // by — the per-tier daily cap; re-opening an existing chat is always free.
     // Mirrors ChatRemoteDataSource.getOrCreateSearchConversation's synthetic id.
     final sortedIds = [currentUserId, otherUserId]..sort();
-    final syntheticMatchId = 'search_${sortedIds[0]}_${sortedIds[1]}';
+    // Must mirror getOrCreateSearchConversation: business inquiries live in
+    // their own directional conversation, separate from the personal chat.
+    final syntheticMatchId = businessInquiry
+        ? 'bizsearch_${otherUserId}_$currentUserId'
+        : 'search_${sortedIds[0]}_${sortedIds[1]}';
     final existing = await FirebaseFirestore.instance
         .collection('conversations')
         .where('matchId', isEqualTo: syntheticMatchId)

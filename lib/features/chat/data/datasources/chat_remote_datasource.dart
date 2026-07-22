@@ -2020,9 +2020,15 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     bool businessInquiry = false,
   }) async {
     try {
-      // Generate synthetic matchId for search conversations
+      // Generate synthetic matchId for search conversations.
+      // A BUSINESS inquiry gets its OWN directional id (business owner =
+      // otherUserId, customer = currentUserId) so it is a SEPARATE conversation
+      // from the two users' personal chat — otherwise contacting a business
+      // reused (and polluted) the personal `search_a_b` thread.
       final sortedIds = [currentUserId, otherUserId]..sort();
-      final syntheticMatchId = 'search_${sortedIds[0]}_${sortedIds[1]}';
+      final syntheticMatchId = businessInquiry
+          ? 'bizsearch_${otherUserId}_$currentUserId'
+          : 'search_${sortedIds[0]}_${sortedIds[1]}';
 
       // Check if conversation already exists
       final querySnapshot = await firestore
