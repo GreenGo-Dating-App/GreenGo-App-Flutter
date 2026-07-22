@@ -22,6 +22,8 @@ import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../domain/entities/notification.dart';
+import '../../domain/entities/notification_preferences.dart';
+import '../../domain/usecases/get_notification_preferences.dart';
 import '../bloc/notifications_bloc.dart';
 import '../bloc/notifications_event.dart';
 import '../bloc/notifications_state.dart';
@@ -49,6 +51,30 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
 
   /// Guards the one-time notifications mini-tour within a session.
   bool _tourChecked = false;
+
+  /// The user's per-category notification preferences. The bell list hides
+  /// categories the user turned off in Notification Settings, so it stays
+  /// aligned with the settings (e.g. chat off -> no chat notifications here).
+  NotificationPreferences? _prefs;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPrefs();
+  }
+
+  Future<void> _loadPrefs() async {
+    final result = await di.sl<GetNotificationPreferences>()(userId);
+    if (!mounted) return;
+    result.fold((_) {}, (prefs) => setState(() => _prefs = prefs));
+  }
+
+  /// Notifications to show, filtered by the user's category preferences.
+  List<NotificationEntity> _visible(NotificationsLoaded state) {
+    final prefs = _prefs;
+    if (prefs == null) return state.notifications;
+    return state.notifications.where((n) => n.allowedBy(prefs)).toList();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -231,14 +257,14 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                 backgroundColor: AppColors.backgroundCard,
                 child: ListView.separated(
                   padding: const EdgeInsets.symmetric(vertical: 4),
-                  itemCount: state.notifications.length,
+                  itemCount: _visible(state).length,
                   separatorBuilder: (_, __) => Divider(
                     height: 1,
                     thickness: 1,
                     color: AppColors.divider.withOpacity(0.3),
                   ),
                   itemBuilder: (context, index) {
-                    final notification = state.notifications[index];
+                    final notification = _visible(state)[index];
                     final tile = _NotificationTile(
                       notification: notification,
                       onTap: () {

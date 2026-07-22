@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
 
+import 'notification_preferences.dart';
+
 /// Notification Entity
 ///
 /// Represents a user notification
@@ -105,6 +107,56 @@ class NotificationEntity extends Equatable {
       case NotificationType.boostStarted:
       case NotificationType.boostEnded:
         return 'rocket_launch';
+    }
+  }
+
+  /// The notification-preferences CATEGORY this belongs to — kept IN SYNC with
+  /// the server's `categoryForType` (substring match on the raw type string) so
+  /// the in-app bell list hides exactly the categories the user disabled in
+  /// Notification Settings. One of: messages, events, communities, account,
+  /// social.
+  String get category {
+    final t = type.value.toLowerCase();
+    if (t.contains('message') || t.contains('chat') || t.contains('support')) {
+      return 'messages';
+    }
+    if (t.contains('event') ||
+        t.contains('rsvp') ||
+        t.contains('attend') ||
+        t.contains('reminder')) {
+      return 'events';
+    }
+    if (t.contains('announce') ||
+        t.contains('member') ||
+        t.contains('communit')) {
+      return 'communities';
+    }
+    if (t.contains('approv') ||
+        t.contains('verif') ||
+        t.contains('account') ||
+        t.contains('admin') ||
+        t.contains('broadcast')) {
+      return 'account';
+    }
+    return 'social';
+  }
+
+  /// Whether this notification should be SHOWN given the user's category
+  /// preferences (the bell list mirrors Notification Settings).
+  bool allowedBy(NotificationPreferences prefs) {
+    switch (category) {
+      case 'messages':
+        return prefs.messages;
+      case 'events':
+        return prefs.events;
+      case 'communities':
+        return prefs.communities;
+      case 'account':
+        return prefs.account;
+      case 'social':
+        return prefs.social;
+      default:
+        return true;
     }
   }
 
