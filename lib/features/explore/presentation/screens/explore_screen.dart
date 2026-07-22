@@ -794,6 +794,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
           .where((c) =>
               !c.profile.isAdmin &&
               !c.profile.isSupport &&
+              // Business accounts have their own "Businesses near you" section —
+              // don't also render them as a person card (was showing one user
+              // twice: a personal card AND a business card).
+              !c.profile.isBusiness &&
               c.profile.userId != widget.userId)
           .take(_peopleWanted)
           .toList()
