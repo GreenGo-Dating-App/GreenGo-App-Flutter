@@ -378,21 +378,36 @@ class PushNotificationService {
     try {
       final firestore = FirebaseFirestore.instance;
 
-      // Look up conversation to find participants
+      // Look up conversation to find participants AND its matchId. The doc id
+      // (conversationId) is an auto-id; ChatScreen needs the conversation's
+      // `matchId` FIELD (e.g. 'search_a_b') to resolve messages — passing the
+      // doc-id as matchId made getConversation() find nothing => endless load.
       final convDoc =
           await firestore.collection('conversations').doc(conversationId).get();
       var participants = <String>[];
+      String? matchId;
       if (convDoc.exists) {
+        final data = convDoc.data();
+        matchId = data?['matchId'] as String?;
         participants =
-            (convDoc.data()?['participants'] as List?)?.cast<String>() ?? [];
+            (data?['participants'] as List?)?.cast<String>() ?? [];
+        // Conversations use userId1/userId2; fall back to those if there is no
+        // explicit participants array.
+        if (participants.isEmpty) {
+          participants = [
+            (data?['userId1'] as String?) ?? '',
+            (data?['userId2'] as String?) ?? '',
+          ].where((s) => s.isNotEmpty).toList();
+        }
       }
 
-      // Fall back to matches doc (matchId == conversationId)
+      // Fall back to a matches doc (id == conversationId) for legacy match pushes.
       if (participants.isEmpty) {
         final matchDoc =
             await firestore.collection('matches').doc(conversationId).get();
         if (matchDoc.exists) {
           final m = matchDoc.data()!;
+          matchId ??= conversationId;
           participants = [
             (m['userId1'] as String?) ?? '',
             (m['userId2'] as String?) ?? '',
@@ -423,7 +438,8 @@ class PushNotificationService {
       navigator.push(
         MaterialPageRoute(
           builder: (_) => ChatScreen(
-            matchId: conversationId,
+            // Use the conversation's matchId FIELD, not the doc id.
+            matchId: matchId ?? conversationId,
             currentUserId: currentUserId,
             otherUserId: otherUserId,
             otherUserProfile: profile,
