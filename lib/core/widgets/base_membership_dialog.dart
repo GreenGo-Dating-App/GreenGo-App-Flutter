@@ -460,7 +460,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   }
 
   // ── Helper: feature row ──────────────────────────────────────────────
-  /// Opens the shared coupon redeemer in a bottom sheet.
+  /// Opens the shared coupon redeemer in a bottom sheet. Scrollable + padded for
+  /// the keyboard so the (tall) coupon form never overflows when typing.
   void _openCouponSheet() {
     showModalBottomSheet<void>(
       context: context,
@@ -469,17 +470,38 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
       builder: (sheetContext) => Padding(
         padding: EdgeInsets.only(
           bottom: MediaQuery.of(sheetContext).viewInsets.bottom,
-          left: 16,
-          right: 16,
-          top: 16,
         ),
-        child: CouponCodeWidget(
-          userId: widget.userId,
-          currentTier: MembershipTier.free,
-          onRedemptionSuccess: () {
-            Navigator.of(sheetContext).pop();
-            if (mounted) Navigator.of(context).pop();
-          },
+        child: Container(
+          decoration: const BoxDecoration(
+            color: AppColors.backgroundDark,
+            borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+          ),
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Drag handle
+                Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: AppColors.divider,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                CouponCodeWidget(
+                  userId: widget.userId,
+                  currentTier: MembershipTier.free,
+                  onRedemptionSuccess: () {
+                    Navigator.of(sheetContext).pop();
+                    if (mounted) Navigator.of(context).pop();
+                  },
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

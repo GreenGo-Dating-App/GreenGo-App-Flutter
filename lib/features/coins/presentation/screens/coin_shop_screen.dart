@@ -704,7 +704,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
             ),
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-            child: Column(
+            child: SingleChildScrollView(
+              child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
@@ -736,6 +737,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                   },
                 ),
               ],
+              ),
             ),
           ),
         );
