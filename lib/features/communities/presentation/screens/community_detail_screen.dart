@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
@@ -1096,6 +1097,10 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             type: _selectedMessageType,
           ),
         );
+
+    // Play the "message sent" sound effect (parity with 1:1, group and event
+    // chats).
+    AppSoundService().play(AppSound.messageSent);
 
     _messageController.clear();
     setState(() => _selectedMessageType = CommunityMessageType.text);

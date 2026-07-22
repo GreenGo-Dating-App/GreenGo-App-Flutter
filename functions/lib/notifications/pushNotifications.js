@@ -40,6 +40,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getNotificationAnalytics = exports.trackNotificationOpened = exports.sendBundledNotifications = exports.sendPushNotification = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("./brand");
 const monitoring_1 = require("../shared/monitoring");
 const firestore = admin.firestore();
 const messaging = admin.messaging();
@@ -101,11 +102,7 @@ exports.sendPushNotification = functions.https.onCall((0, monitoring_1.monitored
         // Build notification payload
         const message = {
             token: fcmToken,
-            notification: {
-                title,
-                body,
-                imageUrl,
-            },
+            notification: (0, brand_1.brandPush)(title, body, imageUrl),
             data: {
                 type,
                 deepLink: deepLink || '',

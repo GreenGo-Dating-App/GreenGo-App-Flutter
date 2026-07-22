@@ -1,4 +1,5 @@
 import '../../../membership/domain/entities/membership.dart';
+import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
 
 /// Chat Events
@@ -14,11 +15,18 @@ class ChatConversationLoaded extends ChatEvent {
     required this.currentUserId,
     required this.otherUserId,
     this.limit,
+    this.conversation,
   });
   final String matchId;
   final String currentUserId;
   final String otherUserId;
   final int? limit;
+
+  /// Optionally pre-fetched conversation. When the caller already holds the
+  /// conversation (e.g. it was JUST created by openConnectChat), pass it here so
+  /// the bloc skips the network read entirely — this makes opening a brand-new
+  /// chat instant and immune to any read hang on the loading spinner.
+  final Conversation? conversation;
 }
 
 /// Send a message

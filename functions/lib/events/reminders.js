@@ -46,7 +46,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sendEventReminders = void 0;
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("../notifications/brand");
 const monitoring_1 = require("../shared/monitoring");
+const pushRuntime_1 = require("../shared/pushRuntime");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const FCM_CHUNK = 500;
@@ -78,7 +80,7 @@ async function fanOutReminder(eventId, eventRef, title, body, flag) {
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: { title: `⏰ ${title}`, body },
+                notification: (0, brand_1.brandPush)(`⏰ ${title}`, body),
                 data: dataPayload,
                 android: { priority: 'high' },
             });
@@ -114,7 +116,10 @@ async function fanOutReminder(eventId, eventRef, title, body, flag) {
         commits.push(batch.commit());
     await Promise.all(commits);
 }
-exports.sendEventReminders = (0, scheduler_1.onSchedule)('every 60 minutes', (0, monitoring_1.monitored)('sendEventReminders', async () => {
+exports.sendEventReminders = (0, scheduler_1.onSchedule)({
+    schedule: 'every 60 minutes',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)('sendEventReminders', async () => {
     var _a, _b;
     const nowMs = admin.firestore.Timestamp.now().toMillis();
     // Cover all three windows: started (up to 1h ago) → 24h ahead.

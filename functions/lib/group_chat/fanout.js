@@ -56,7 +56,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onGroupMessageCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("../notifications/brand");
+const prefs_1 = require("../notifications/prefs");
 const monitoring_1 = require("../shared/monitoring");
+const pushRuntime_1 = require("../shared/pushRuntime");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const INBOX_COL = 'user_group_inbox';
@@ -95,7 +98,10 @@ async function senderDisplayName(senderId) {
         return 'Someone';
     }
 }
-exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)('groups/{groupId}/messages/{messageId}', (0, monitoring_1.monitored)("onGroupMessageCreated", async (event) => {
+exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)({
+    document: 'groups/{groupId}/messages/{messageId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)("onGroupMessageCreated", async (event) => {
     var _a, _b, _c, _d;
     const snap = event.data;
     if (!snap)
@@ -187,7 +193,12 @@ exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)('groups/{grou
     });
     if (activeRecipients.length === 0)
         return;
-    const tokenDocs = await Promise.all(activeRecipients.map((u) => db.collection('users').doc(u).get()));
+    // Per-category notification preference (messages).
+    const allowed = await (0, prefs_1.filterUidsByPref)(activeRecipients, 'messages');
+    const prefRecipients = activeRecipients.filter((u) => allowed.has(u));
+    if (prefRecipients.length === 0)
+        return;
+    const tokenDocs = await Promise.all(prefRecipients.map((u) => db.collection('users').doc(u).get()));
     const tokens = [];
     for (const td of tokenDocs) {
         const t = (_d = td.data()) === null || _d === void 0 ? void 0 : _d.fcmToken;
@@ -201,7 +212,7 @@ exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)('groups/{grou
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: { title: groupName, body: `${senderName}: ${preview}` },
+                notification: (0, brand_1.brandPush)(`New message in group ${groupName}`, `${senderName}: ${preview}`),
                 data: {
                     type: 'group_message',
                     groupId,

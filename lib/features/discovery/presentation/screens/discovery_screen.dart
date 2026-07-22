@@ -2066,6 +2066,8 @@ class _GridProfileCardState extends State<_GridProfileCard>
 
   // Photo carousel state
   int _currentPhotoIndex = 0;
+  // Highest carousel index we've already prefetched (one-ahead). -1 = none yet.
+  int _prefetchedUpToIndex = -1;
 
   @override
   void initState() {
@@ -2084,7 +2086,30 @@ class _GridProfileCardState extends State<_GridProfileCard>
     super.didUpdateWidget(oldWidget);
     if (oldWidget.card.userId != widget.card.userId) {
       _currentPhotoIndex = 0;
+      _prefetchedUpToIndex = -1;
     }
+  }
+
+  /// Prefetch the NEXT photo in the carousel so it is already cached (disk +
+  /// memory) by the time the user taps the right arrow. We fetch strictly
+  /// one-ahead — piece by piece as the user advances — rather than the whole
+  /// album, to keep bandwidth and memory low. Best-effort: failures are ignored
+  /// and allowed to retry.
+  void _prefetchNextPhoto(BuildContext context, List<String> photoUrls) {
+    final nextIndex = _currentPhotoIndex + 1;
+    if (nextIndex >= photoUrls.length) return;
+    if (nextIndex <= _prefetchedUpToIndex) return; // already prefetched
+    final url = photoUrls[nextIndex];
+    if (url.isEmpty) return;
+    _prefetchedUpToIndex = nextIndex;
+    // maxWidth mirrors the CachedNetworkImage's maxWidthDiskCache (600) so the
+    // prefetched bytes land in the exact same cache entry the card will read.
+    precacheImage(
+      CachedNetworkImageProvider(url, maxWidth: 600),
+      context,
+    ).catchError((Object _) {
+      _prefetchedUpToIndex = nextIndex - 1; // permit a retry on next build
+    });
   }
 
   @override
@@ -2115,6 +2140,15 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final currentPhotoUrl = photoUrls.isNotEmpty && _currentPhotoIndex < photoUrls.length
         ? photoUrls[_currentPhotoIndex]
         : (photoUrls.isNotEmpty ? photoUrls.first : null);
+
+    // Prefetch the NEXT photo one-ahead: as soon as this photo is displayed the
+    // following one downloads in the background, so tapping the right arrow
+    // shows it instantly. Runs again after each arrow tap (index change).
+    if (hasMultiplePhotos) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _prefetchNextPhoto(context, photoUrls);
+      });
+    }
 
     final Widget card = ClipRRect(
       borderRadius: BorderRadius.circular(8),

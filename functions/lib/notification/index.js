@@ -44,6 +44,7 @@ exports.sendReEngagementCampaign = exports.sendWeeklyDigestEmails = exports.proc
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("../notifications/brand");
 const mail_1 = __importDefault(require("@sendgrid/mail"));
 const twilio_1 = __importDefault(require("twilio"));
 const utils_1 = require("../shared/utils");
@@ -101,11 +102,7 @@ exports.sendPushNotification = (0, https_1.onCall)({
         // Send FCM notification
         const message = {
             tokens: fcmTokens,
-            notification: {
-                title,
-                body,
-                imageUrl,
-            },
+            notification: (0, brand_1.brandPush)(title, body, imageUrl),
             data: Object.assign({ notificationId: notificationRef.id, type }, (data || {})),
             android: {
                 priority: 'high',
@@ -181,10 +178,7 @@ exports.sendBundledNotifications = (0, https_1.onCall)({
         // Send bundled notification
         const message = {
             tokens: fcmTokens,
-            notification: {
-                title: `${notifications.length} new notifications`,
-                body: notifications[0].body,
-            },
+            notification: (0, brand_1.brandPush)(`${notifications.length} new notifications`, notifications[0].body),
             data: {
                 bundled: 'true',
                 count: notifications.length.toString(),

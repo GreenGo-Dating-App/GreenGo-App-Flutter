@@ -51,12 +51,33 @@ class UserPhotoCarousel extends StatefulWidget {
 
 class _UserPhotoCarouselState extends State<UserPhotoCarousel> {
   int _index = 0;
+  // The index whose "next" photo we've already prefetched, so we don't re-issue
+  // the precache on every rebuild.
+  int _prefetchedForIndex = -1;
 
   @override
   void didUpdateWidget(covariant UserPhotoCarousel oldWidget) {
     super.didUpdateWidget(oldWidget);
     // Keep the index valid if the photo list shrinks (e.g. recycled tile).
     if (_index >= widget.photoUrls.length) _index = 0;
+    // A recycled tile now shows a different user — allow prefetch to run again.
+    if (oldWidget.photoUrls != widget.photoUrls) _prefetchedForIndex = -1;
+  }
+
+  /// Prefetch the NEXT photo one-ahead so tapping ▶ shows it instantly. Fetches
+  /// a single image at a time (piece by piece as the user advances), not the
+  /// whole album. Best-effort — failures are ignored.
+  void _prefetchNextPhoto(BuildContext context) {
+    final photos = widget.photoUrls;
+    final n = photos.length;
+    if (n < 2) return;
+    if (_prefetchedForIndex == _index) return; // already done for this index
+    _prefetchedForIndex = _index;
+    final nextUrl = photos[(_index + 1) % n];
+    if (nextUrl.isEmpty) return;
+    precacheImage(NetworkImage(nextUrl), context).catchError((Object _) {
+      if (_prefetchedForIndex == _index) _prefetchedForIndex = -1; // retry later
+    });
   }
 
   void _prev() {
@@ -77,6 +98,14 @@ class _UserPhotoCarouselState extends State<UserPhotoCarousel> {
     final hasPhotos = photos.isNotEmpty;
     final safeIndex = hasPhotos ? _index.clamp(0, photos.length - 1) : 0;
     final fallback = _fallback();
+
+    // One-ahead prefetch: download the next photo in the background as soon as
+    // the current one is on screen, and again after each arrow tap.
+    if (photos.length > 1) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _prefetchNextPhoto(context);
+      });
+    }
 
     Widget content;
     if (hasPhotos) {

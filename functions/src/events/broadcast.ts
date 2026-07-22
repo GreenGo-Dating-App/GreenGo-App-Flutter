@@ -160,7 +160,7 @@ export const onEventMessageCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: brandPush(title, body),
+          notification: brandPush(`New message in event ${title}`, body),
           data: { type: 'event_message', eventId, conversationId: eventId },
           android: {
             priority: 'high',

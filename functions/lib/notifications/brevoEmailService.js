@@ -46,7 +46,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sendBrevoStreakReminder = exports.sendBrevoReEngagement = exports.sendBrevoWeeklyDigest = exports.onPurchaseCreated = exports.onNewMatch = exports.onAchievementUnlocked = exports.onPhotoModerationUpdated = exports.onSubscriptionUpdated = exports.onUserCreatedSendWelcome = exports.getBrevoEmailAnalytics = exports.getBrevoEmailLogs = exports.updateBrevoEmailTemplate = exports.getBrevoEmailTemplates = exports.sendBrevoEmailFunction = void 0;
+exports.sendBrevoStreakReminder = exports.sendBrevoReEngagement = exports.sendBrevoWeeklyDigest = exports.onPurchaseCreated = exports.onAchievementUnlocked = exports.onPhotoModerationUpdated = exports.onSubscriptionUpdated = exports.onUserCreatedSendWelcome = exports.getBrevoEmailAnalytics = exports.getBrevoEmailLogs = exports.updateBrevoEmailTemplate = exports.getBrevoEmailTemplates = exports.sendBrevoEmailFunction = void 0;
 exports.sendBrevoEmail = sendBrevoEmail;
 exports.getEmailCategory = getEmailCategory;
 const https_1 = require("firebase-functions/v2/https");
@@ -1309,39 +1309,8 @@ exports.onAchievementUnlocked = (0, firestore_1.onDocumentCreated)('user_achieve
         (0, utils_1.logError)(`Failed to send achievement email for ${userId}:`, error);
     }
 }));
-// New Match - Send Email
-exports.onNewMatch = (0, firestore_1.onDocumentCreated)('matches/{matchId}', (0, monitoring_1.monitored)("onNewMatch", async (event) => {
-    var _a, _b, _c;
-    const matchData = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
-    if (!matchData)
-        return;
-    const [userId1, userId2] = matchData.participants || [];
-    try {
-        // Get both users' names
-        const [user1Doc, user2Doc] = await Promise.all([
-            utils_1.db.collection('users').doc(userId1).get(),
-            utils_1.db.collection('users').doc(userId2).get(),
-        ]);
-        const user1Name = ((_b = user1Doc.data()) === null || _b === void 0 ? void 0 : _b.displayName) || 'Someone';
-        const user2Name = ((_c = user2Doc.data()) === null || _c === void 0 ? void 0 : _c.displayName) || 'Someone';
-        // Send to both users
-        await Promise.all([
-            sendBrevoEmail({
-                userId: userId1,
-                trigger: 'new_match',
-                variables: { matchName: user2Name },
-            }),
-            sendBrevoEmail({
-                userId: userId2,
-                trigger: 'new_match',
-                variables: { matchName: user1Name },
-            }),
-        ]);
-    }
-    catch (error) {
-        (0, utils_1.logError)('Failed to send match emails:', error);
-    }
-}));
+// onNewMatch (new-match email) was REMOVED — GreenGo is a networking app, not
+// dating, so it does not email users about "matches".
 // Purchase Created - Send Email
 exports.onPurchaseCreated = (0, firestore_1.onDocumentCreated)('purchases/{purchaseId}', (0, monitoring_1.monitored)("onPurchaseCreated", async (event) => {
     var _a;

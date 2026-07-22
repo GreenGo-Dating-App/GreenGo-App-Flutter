@@ -49,7 +49,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.removeMockData = exports.diagLiveEvents = exports.seedMockData = void 0;
+exports.removeMockData = exports.diagCommunityEvents = exports.diagLiveEvents = exports.seedMockData = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
@@ -428,6 +428,124 @@ exports.diagLiveEvents = (0, https_1.onRequest)({ memory: '512MiB', timeoutSecon
         withCoords,
         within100km,
         futureAnd100km,
+        topCities: Object.entries(cities)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10),
+        samples,
+    });
+}));
+/// READ-ONLY diagnostic for the `events` collection — tells us WHY the Explore
+/// "Featured community events" / "Happening soon" sections are empty or wrong.
+/// The nearby query (getNearbyCommunityEvents) needs a `geohash` (Firestore
+/// orderBy silently drops docs without it), coordinates, a published/scheduled
+/// status, and a future endDate. This counts each. ?token=...&lat=&lng=
+exports.diagCommunityEvents = (0, https_1.onRequest)({ memory: '512MiB', timeoutSeconds: 120 }, (0, monitoring_1.monitored)('diagCommunityEvents', async (req, res) => {
+    var _a, _b, _c, _d;
+    if (req.query.token !== MOCK_TOKEN) {
+        res.status(403).send('forbidden');
+        return;
+    }
+    const lat = parseFloat(req.query.lat || '34.0522');
+    const lng = parseFloat(req.query.lng || '-118.2437');
+    const now = new Date();
+    const km = (a, b, c, d) => {
+        const R = 6371;
+        const dLat = ((c - a) * Math.PI) / 180;
+        const dLng = ((d - b) * Math.PI) / 180;
+        const s = Math.sin(dLat / 2) ** 2 +
+            Math.cos((a * Math.PI) / 180) *
+                Math.cos((c * Math.PI) / 180) *
+                Math.sin(dLng / 2) ** 2;
+        return R * 2 * Math.atan2(Math.sqrt(s), Math.sqrt(1 - s));
+    };
+    const toDate = (v) => {
+        if (v == null)
+            return null;
+        if (typeof v.toDate === 'function') {
+            return v.toDate();
+        }
+        if (typeof v === 'string') {
+            const d = new Date(v);
+            return isNaN(d.getTime()) ? null : d;
+        }
+        return null;
+    };
+    const snap = await db.collection('events').limit(1000).get();
+    let published = 0;
+    let scheduled = 0;
+    let withGeohash = 0;
+    let withCoords = 0;
+    let futureEnd = 0;
+    let futureStart = 0;
+    let within100km = 0;
+    // The FULL gate an event must pass to appear nearby (published/scheduled +
+    // geohash + coords + future end + within 100km).
+    let fullyQualified = 0;
+    const statuses = {};
+    const cities = {};
+    const samples = [];
+    for (const doc of snap.docs) {
+        const x = doc.data();
+        const status = x.status || '(none)';
+        statuses[status] = (statuses[status] || 0) + 1;
+        const isPubOrSched = status === 'published' || status === 'scheduled';
+        const hasGeohash = typeof x.geohash === 'string' && x.geohash.length > 0;
+        const hasCoords = typeof x.latitude === 'number' && typeof x.longitude === 'number';
+        const start = toDate(x.startDate);
+        const end = toDate(x.endDate);
+        const startFuture = start != null && start.getTime() >= now.getTime();
+        const endFuture = end != null && end.getTime() >= now.getTime();
+        const near = hasCoords && km(lat, lng, x.latitude, x.longitude) <= 100;
+        if (status === 'published')
+            published++;
+        if (status === 'scheduled')
+            scheduled++;
+        if (hasGeohash)
+            withGeohash++;
+        if (hasCoords)
+            withCoords++;
+        if (endFuture)
+            futureEnd++;
+        if (startFuture)
+            futureStart++;
+        if (near)
+            within100km++;
+        if (isPubOrSched && hasGeohash && hasCoords && endFuture && near) {
+            fullyQualified++;
+        }
+        const city = x.city || '(none)';
+        cities[city] = (cities[city] || 0) + 1;
+        if (samples.length < 10) {
+            samples.push({
+                id: doc.id,
+                title: (_a = x.title) !== null && _a !== void 0 ? _a : null,
+                status,
+                hasGeohash,
+                lat: (_b = x.latitude) !== null && _b !== void 0 ? _b : null,
+                lng: (_c = x.longitude) !== null && _c !== void 0 ? _c : null,
+                city: (_d = x.city) !== null && _d !== void 0 ? _d : null,
+                startDate: start ? start.toISOString() : null,
+                endDate: end ? end.toISOString() : null,
+                distKm: hasCoords ? Math.round(km(lat, lng, x.latitude, x.longitude)) : null,
+            });
+        }
+    }
+    res.status(200).json({
+        near: { lat, lng },
+        now: now.toISOString(),
+        total: snap.size,
+        byStatus: statuses,
+        published,
+        scheduled,
+        withGeohash,
+        missingGeohash: snap.size - withGeohash,
+        withCoords,
+        missingCoords: snap.size - withCoords,
+        futureStart,
+        futureEnd,
+        within100km,
+        // If this is 0, Featured/Happening-soon will be empty near this point.
+        fullyQualified,
         topCities: Object.entries(cities)
             .sort((a, b) => b[1] - a[1])
             .slice(0, 10),

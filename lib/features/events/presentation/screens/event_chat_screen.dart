@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/content_filter_service.dart';
@@ -508,6 +509,10 @@ class _EventChatScreenState extends State<EventChatScreen> {
     } else {
       _dataSource.sendEventMessage(widget.event.id, message);
     }
+
+    // Play the "message sent" sound effect (parity with 1:1 and group chats).
+    AppSoundService().play(AppSound.messageSent);
+
     _messageController.clear();
     if (_broadcastMode) setState(() => _broadcastMode = false);
   }

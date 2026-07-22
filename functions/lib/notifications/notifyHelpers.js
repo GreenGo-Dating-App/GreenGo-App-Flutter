@@ -42,6 +42,8 @@ exports.emitNotification = emitNotification;
  */
 const admin = __importStar(require("firebase-admin"));
 require("../shared/firebaseAdmin");
+const brand_1 = require("./brand");
+const prefs_1 = require("./prefs");
 const db = admin.firestore();
 /** Resolve an actor's display name + avatar from their profile. */
 async function resolveActor(actorId) {
@@ -78,23 +80,30 @@ async function tokenFor(userId) {
  * the recipient is the actor (unless [allowSelf]).
  */
 async function emitNotification(params) {
-    const { recipientId, type, title, body, data, actor, allowSelf } = params;
+    const { recipientId, type, title, body, actor, allowSelf } = params;
     if (!recipientId)
         return;
     if (actor && recipientId === actor.id && !allowSelf)
         return;
+    // When there's an actor, always carry their identity in the push DATA payload
+    // so the client can render + link the actor's name from a background push.
+    const data = actor
+        ? Object.assign(Object.assign({}, params.data), { actorId: actor.id, actorName: actor.name }) : params.data;
     // pushSent: true — emitNotification sends its own FCM push below, so the
     // onNotificationCreatedPush parity trigger must skip this doc (no double-push).
     // Covers all callers of this helper (engagementNotifications, group_chat/membership).
     await db.collection('notifications').add(Object.assign(Object.assign({ userId: recipientId, type,
         title, message: body, body,
         data, isRead: false, createdAt: admin.firestore.FieldValue.serverTimestamp(), pushSent: true }, (actor ? { actorId: actor.id, actorName: actor.name } : {})), ((actor === null || actor === void 0 ? void 0 : actor.photo) ? { imageUrl: actor.photo } : {})));
+    // Respect the recipient's per-category preference (feed doc already written).
+    if (!(await (0, prefs_1.shouldNotify)(recipientId, (0, prefs_1.categoryForType)(type))))
+        return;
     try {
         const token = await tokenFor(recipientId);
         if (token) {
             await admin.messaging().send({
                 token,
-                notification: Object.assign({ title: actor ? `${actor.name} ${title}` : title, body }, ((actor === null || actor === void 0 ? void 0 : actor.photo) ? { imageUrl: actor.photo } : {})),
+                notification: (0, brand_1.brandPush)(actor ? `${actor.name} ${title}` : title, body, actor === null || actor === void 0 ? void 0 : actor.photo),
                 data,
                 android: {
                     priority: 'high',

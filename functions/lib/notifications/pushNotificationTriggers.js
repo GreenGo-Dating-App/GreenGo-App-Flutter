@@ -37,12 +37,15 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onVerificationStatusChange = exports.checkExpiringModes = exports.onSupportMessagePush = exports.onNewMessagePush = exports.onNewMatchPush = exports.onNewLikePush = void 0;
+exports.onVerificationStatusChange = exports.checkExpiringModes = exports.onSupportMessagePush = exports.onNewMessagePush = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("./brand");
+const prefs_1 = require("./prefs");
 const utils_1 = require("../shared/utils");
 const monitoring_1 = require("../shared/monitoring");
+const pushRuntime_1 = require("../shared/pushRuntime");
 const db = admin.firestore();
 const messaging = admin.messaging();
 /**
@@ -99,11 +102,17 @@ function isInQuietHours(prefs) {
  * Reads FCM token, checks notification preferences, sends via FCM, and writes in-app notification
  */
 async function sendPushToUser(userId, type, title, body, data, options) {
+    // Actor identity for the in-app tile (avatar + tappable name). Threaded into
+    // every writeInAppNotification branch below so the feed doc always names who
+    // acted, exactly like the push does.
+    const actor = (options === null || options === void 0 ? void 0 : options.actorId) || (options === null || options === void 0 ? void 0 : options.actorName) || (options === null || options === void 0 ? void 0 : options.imageUrl)
+        ? { imageUrl: options === null || options === void 0 ? void 0 : options.imageUrl, actorId: options === null || options === void 0 ? void 0 : options.actorId, actorName: options === null || options === void 0 ? void 0 : options.actorName }
+        : undefined;
     try {
         // PUSH-DELIVERY FILTER: non-message types are in-app only (no APNs/FCM).
         // Everything still lands on the in-app notifications page unchanged.
         if (!PUSH_ELIGIBLE_TYPES.has(type)) {
-            await writeInAppNotification(userId, type, title, body, data);
+            await writeInAppNotification(userId, type, title, body, data, undefined, actor);
             return false;
         }
         const userDoc = await db.collection('users').doc(userId).get();
@@ -120,39 +129,38 @@ async function sendPushToUser(userId, type, title, body, data, options) {
             // Master toggle (only blocks push, not in-app)
             if (prefs.pushNotificationsEnabled === false) {
                 (0, utils_1.logInfo)(`sendPushToUser: Push disabled (master) for user ${userId}`);
-                await writeInAppNotification(userId, type, title, body, data);
+                await writeInAppNotification(userId, type, title, body, data, undefined, actor);
                 return false;
             }
             // Per-type toggle (flat field shape used by Flutter app)
             const fieldName = TYPE_TO_PREF_FIELD[type];
             if (fieldName && prefs[fieldName] === false) {
                 (0, utils_1.logInfo)(`sendPushToUser: Type ${type} disabled for user ${userId}`);
-                await writeInAppNotification(userId, type, title, body, data);
+                await writeInAppNotification(userId, type, title, body, data, undefined, actor);
                 return false;
             }
             // Legacy enabledTypes map shape (backward compat)
             if (prefs.enabledTypes && prefs.enabledTypes[type] === false) {
-                await writeInAppNotification(userId, type, title, body, data);
+                await writeInAppNotification(userId, type, title, body, data, undefined, actor);
                 return false;
             }
             // Quiet hours (skip suppression for critical notifications)
             if (!(options === null || options === void 0 ? void 0 : options.isCritical) && isInQuietHours(prefs)) {
                 (0, utils_1.logInfo)(`sendPushToUser: In quiet hours for user ${userId}`);
-                await writeInAppNotification(userId, type, title, body, data);
+                await writeInAppNotification(userId, type, title, body, data, undefined, actor);
                 return false;
             }
         }
         if (!fcmToken) {
             (0, utils_1.logInfo)(`sendPushToUser: No FCM token for user ${userId}`);
-            await writeInAppNotification(userId, type, title, body, data);
+            await writeInAppNotification(userId, type, title, body, data, undefined, actor);
             return false;
         }
         // Build FCM message
         const message = {
             token: fcmToken,
-            notification: Object.assign({ title,
-                body }, ((options === null || options === void 0 ? void 0 : options.imageUrl) ? { imageUrl: options.imageUrl } : {})),
-            data: Object.assign({ type, timestamp: new Date().toISOString() }, (data || {})),
+            notification: (0, brand_1.brandPush)(title, body, options === null || options === void 0 ? void 0 : options.imageUrl),
+            data: Object.assign(Object.assign(Object.assign({ type, timestamp: new Date().toISOString() }, (data || {})), ((actor === null || actor === void 0 ? void 0 : actor.actorId) ? { actorId: actor.actorId } : {})), ((actor === null || actor === void 0 ? void 0 : actor.actorName) ? { actorName: actor.actorName } : {})),
             android: Object.assign(Object.assign({ priority: 'high' }, ((options === null || options === void 0 ? void 0 : options.collapseKey) ? { collapseKey: options.collapseKey } : {})), { notification: Object.assign(Object.assign({ sound: 'default', channelId: 'greengo_notifications', priority: 'high' }, ((options === null || options === void 0 ? void 0 : options.collapseKey) ? { tag: options.collapseKey } : {})), ((options === null || options === void 0 ? void 0 : options.imageUrl) ? { imageUrl: options.imageUrl } : {})) }),
             apns: Object.assign(Object.assign({}, ((options === null || options === void 0 ? void 0 : options.collapseKey)
                 ? { headers: { 'apns-collapse-id': options.collapseKey } }
@@ -161,7 +169,7 @@ async function sendPushToUser(userId, type, title, body, data, options) {
                 } }),
         };
         const response = await messaging.send(message);
-        await writeInAppNotification(userId, type, title, body, data, response);
+        await writeInAppNotification(userId, type, title, body, data, response, actor);
         (0, utils_1.logInfo)(`sendPushToUser: Sent ${type} notification to user ${userId}`);
         return true;
     }
@@ -215,100 +223,10 @@ async function isBlocked(userA, userB) {
         return false;
     }
 }
-/**
- * onNewLikePush - Trigger on likes/{likeId} create
- */
-exports.onNewLikePush = (0, firestore_1.onDocumentCreated)({
-    document: 'likes/{likeId}',
-    memory: '256MiB',
-}, (0, monitoring_1.monitored)("onNewLikePush", async (event) => {
-    var _a, _b, _c;
-    try {
-        const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
-        if (!data)
-            return;
-        const likedUserId = data.likedUserId;
-        const likerId = data.likerId;
-        const likeType = data.type;
-        if (!likedUserId || !likerId) {
-            (0, utils_1.logError)('onNewLikePush: Missing likedUserId or likerId');
-            return;
-        }
-        // Suppress if blocked either way
-        if (await isBlocked(likerId, likedUserId)) {
-            (0, utils_1.logInfo)(`onNewLikePush: ${likerId} <-> ${likedUserId} blocked, skip`);
-            return;
-        }
-        const likerDoc = await db.collection('users').doc(likerId).get();
-        const likerName = ((_b = likerDoc.data()) === null || _b === void 0 ? void 0 : _b.displayName) || 'Someone';
-        let likerAvatar;
-        try {
-            const profDoc = await db.collection('profiles').doc(likerId).get();
-            const profData = profDoc.data();
-            likerAvatar = (profData === null || profData === void 0 ? void 0 : profData.profilePhotoUrl) || ((_c = profData === null || profData === void 0 ? void 0 : profData.photos) === null || _c === void 0 ? void 0 : _c[0]);
-        }
-        catch (_d) { }
-        if (likeType === 'super_like') {
-            await sendPushToUser(likedUserId, 'superLike', 'You received a Super Like!', `${likerName} sent you a Super Like!`, { fromUserId: likerId }, { imageUrl: likerAvatar, threadId: 'likes' });
-        }
-        else {
-            await sendPushToUser(likedUserId, 'newLike', 'Someone liked your profile!', `${likerName} liked your profile`, { fromUserId: likerId }, { imageUrl: likerAvatar, threadId: 'likes' });
-        }
-    }
-    catch (error) {
-        (0, utils_1.logError)('onNewLikePush: Error', error);
-    }
-}));
-/**
- * onNewMatchPush - Trigger on matches/{matchId} create
- */
-exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
-    document: 'matches/{matchId}',
-    memory: '256MiB',
-}, (0, monitoring_1.monitored)("onNewMatchPush", async (event) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
-    try {
-        const data = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data();
-        if (!data)
-            return;
-        const users = data.users || [];
-        const user1Id = data.user1Id || users[0];
-        const user2Id = data.user2Id || users[1];
-        if (!user1Id || !user2Id) {
-            (0, utils_1.logError)('onNewMatchPush: Missing user IDs in match document');
-            return;
-        }
-        if (await isBlocked(user1Id, user2Id)) {
-            (0, utils_1.logInfo)(`onNewMatchPush: ${user1Id} <-> ${user2Id} blocked, skip`);
-            return;
-        }
-        const [user1Doc, user2Doc] = await Promise.all([
-            db.collection('users').doc(user1Id).get(),
-            db.collection('users').doc(user2Id).get(),
-        ]);
-        const user1Name = ((_b = user1Doc.data()) === null || _b === void 0 ? void 0 : _b.displayName) || 'Someone';
-        const user2Name = ((_c = user2Doc.data()) === null || _c === void 0 ? void 0 : _c.displayName) || 'Someone';
-        let user1Avatar;
-        let user2Avatar;
-        try {
-            const [p1, p2] = await Promise.all([
-                db.collection('profiles').doc(user1Id).get(),
-                db.collection('profiles').doc(user2Id).get(),
-            ]);
-            user1Avatar = ((_d = p1.data()) === null || _d === void 0 ? void 0 : _d.profilePhotoUrl) || ((_f = (_e = p1.data()) === null || _e === void 0 ? void 0 : _e.photos) === null || _f === void 0 ? void 0 : _f[0]);
-            user2Avatar = ((_g = p2.data()) === null || _g === void 0 ? void 0 : _g.profilePhotoUrl) || ((_j = (_h = p2.data()) === null || _h === void 0 ? void 0 : _h.photos) === null || _j === void 0 ? void 0 : _j[0]);
-        }
-        catch (_k) { }
-        const matchId = event.params.matchId;
-        await Promise.all([
-            sendPushToUser(user1Id, 'newMatch', 'You have a new match!', `You matched with ${user2Name}!`, { matchId, matchedUserId: user2Id }, { imageUrl: user2Avatar, threadId: 'matches' }),
-            sendPushToUser(user2Id, 'newMatch', 'You have a new match!', `You matched with ${user1Name}!`, { matchId, matchedUserId: user1Id }, { imageUrl: user1Avatar, threadId: 'matches' }),
-        ]);
-    }
-    catch (error) {
-        (0, utils_1.logError)('onNewMatchPush: Error', error);
-    }
-}));
+// onNewLikePush and onNewMatchPush were REMOVED — GreenGo is a cross-cultural
+// networking app, not a dating app, so it never pushes "new like / super like /
+// new match" notifications. The underlying likes/matches collections remain for
+// the connection mechanic; they simply no longer generate a push.
 /**
  * onNewMessagePush - Trigger on conversations/{convId}/messages/{msgId} create
  * Sends "{senderName}" with message preview to recipient(s).
@@ -317,7 +235,7 @@ exports.onNewMatchPush = (0, firestore_1.onDocumentCreated)({
  */
 exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
     document: 'conversations/{convId}/messages/{msgId}',
-    memory: '256MiB',
+    memory: pushRuntime_1.PUSH_MEMORY,
 }, (0, monitoring_1.monitored)("onNewMessagePush", async (event) => {
     var _a, _b;
     try {
@@ -386,6 +304,9 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
                 (0, utils_1.logInfo)(`onNewMessagePush: ${senderId} <-> ${recipientId} blocked, skip`);
                 return;
             }
+            // Per-category notification preference (messages).
+            if (!(await (0, prefs_1.shouldNotify)(recipientId, 'messages')))
+                return;
             await sendPushToUser(recipientId, 'newMessage', senderName, preview, {
                 conversationId: convId,
                 fromUserId: senderId,
@@ -407,7 +328,7 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
  */
 exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
     document: 'support_messages/{msgId}',
-    memory: '256MiB',
+    memory: pushRuntime_1.PUSH_MEMORY,
 }, (0, monitoring_1.monitored)("onSupportMessagePush", async (event) => {
     var _a;
     try {
@@ -452,7 +373,7 @@ exports.onSupportMessagePush = (0, firestore_1.onDocumentCreated)({
  */
 exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
     schedule: 'every 15 minutes',
-    memory: '256MiB',
+    memory: pushRuntime_1.PUSH_MEMORY,
     timeZone: 'UTC',
 }, (0, monitoring_1.monitored)("checkExpiringModes", async () => {
     try {
@@ -496,7 +417,7 @@ exports.checkExpiringModes = (0, scheduler_1.onSchedule)({
  */
 exports.onVerificationStatusChange = (0, firestore_1.onDocumentUpdated)({
     document: 'profiles/{userId}',
-    memory: '256MiB',
+    memory: pushRuntime_1.PUSH_MEMORY,
 }, (0, monitoring_1.monitored)("onVerificationStatusChange", async (event) => {
     var _a, _b, _c, _d;
     try {

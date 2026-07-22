@@ -562,13 +562,16 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           },
         );
       } else {
-        // Regular message - create new_message notification
+        // Regular message - create new_message notification.
+        // Clean, non-redundant copy: the title carries the sender ("New message
+        // from @user"); the body carries the actual message preview instead of
+        // repeating "New message from ..." a second time.
         final displayName = senderNickname.isNotEmpty ? '@$senderNickname' : senderName;
         await _createNotification(
           userId: receiverId,
           type: 'new_message',
-          title: 'New Message',
-          message: 'New message from $displayName',
+          title: 'New message from $displayName',
+          message: _notificationPreview(type, content),
           data: {
             'senderId': senderId,
             'senderNickname': senderNickname,
@@ -585,6 +588,34 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       return message;
     } catch (e) {
       throw Exception('Failed to send message: $e');
+    }
+  }
+
+  /// Short, human-friendly preview of a message for notification bodies.
+  /// Media types render a labelled placeholder; text is trimmed to 100 chars.
+  String _notificationPreview(MessageType type, String content) {
+    switch (type) {
+      case MessageType.image:
+        return '📷 Photo';
+      case MessageType.video:
+      case MessageType.gif:
+        return '🎥 Video';
+      case MessageType.voiceNote:
+        return '🎤 Voice message';
+      case MessageType.sticker:
+        return '🎨 Sticker';
+      case MessageType.location:
+        return '📍 Location';
+      case MessageType.albumShare:
+        return '🖼️ Shared an album';
+      case MessageType.event:
+        return '📅 Event';
+      case MessageType.text:
+      case MessageType.albumRevoke:
+      case MessageType.system:
+        final trimmed = content.trim();
+        if (trimmed.isEmpty) return 'Sent you a message';
+        return trimmed.length > 100 ? '${trimmed.substring(0, 97)}...' : trimmed;
     }
   }
 
