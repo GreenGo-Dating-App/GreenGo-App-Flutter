@@ -2067,43 +2067,8 @@ export const onAchievementUnlocked = onDocumentCreated(
   })
 );
 
-// New Match - Send Email
-export const onNewMatch = onDocumentCreated(
-  'matches/{matchId}',
-  monitored("onNewMatch", async (event) => {
-    const matchData = event.data?.data();
-    if (!matchData) return;
-
-    const [userId1, userId2] = matchData.participants || [];
-
-    try {
-      // Get both users' names
-      const [user1Doc, user2Doc] = await Promise.all([
-        db.collection('users').doc(userId1).get(),
-        db.collection('users').doc(userId2).get(),
-      ]);
-
-      const user1Name = user1Doc.data()?.displayName || 'Someone';
-      const user2Name = user2Doc.data()?.displayName || 'Someone';
-
-      // Send to both users
-      await Promise.all([
-        sendBrevoEmail({
-          userId: userId1,
-          trigger: 'new_match',
-          variables: { matchName: user2Name },
-        }),
-        sendBrevoEmail({
-          userId: userId2,
-          trigger: 'new_match',
-          variables: { matchName: user1Name },
-        }),
-      ]);
-    } catch (error) {
-      logError('Failed to send match emails:', error);
-    }
-  })
-);
+// onNewMatch (new-match email) was REMOVED — GreenGo is a networking app, not
+// dating, so it does not email users about "matches".
 
 // Purchase Created - Send Email
 export const onPurchaseCreated = onDocumentCreated(

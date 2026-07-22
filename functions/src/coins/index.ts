@@ -595,3 +595,158 @@ export const claimReward = onCall<ClaimRewardRequest>(
     }
   }
 );
+
+interface GiftCoinsRequest {
+  receiverId: string;
+  amount: number;
+  message?: string;
+}
+
+/**
+ * P2P coin gift. Atomically debits the sender's `coinBalances` and credits the
+ * receiver's, plus writes a ledger entry for each. This MUST be server-side:
+ * Firestore rules only let a user write their OWN balance doc, so the client
+ * (which tried to write the receiver's balance directly) was always denied and
+ * gifting failed. The Admin SDK bypasses those rules.
+ */
+export const giftCoins = onCall<GiftCoinsRequest>(
+  { memory: '256MiB', timeoutSeconds: 60 },
+  async (request) => {
+    try {
+      const senderId = await verifyAuth(request.auth);
+      const { receiverId, amount, message } = request.data;
+
+      if (!receiverId || typeof receiverId !== 'string') {
+        throw new HttpsError('invalid-argument', 'receiverId is required');
+      }
+      if (receiverId === senderId) {
+        throw new HttpsError('invalid-argument', 'Cannot gift coins to yourself');
+      }
+      if (!Number.isInteger(amount) || amount <= 0 || amount > 100000) {
+        throw new HttpsError(
+          'invalid-argument',
+          'amount must be a positive integer up to 100000',
+        );
+      }
+
+      // Recipient must exist.
+      const receiverProfile = await db.collection('profiles').doc(receiverId).get();
+      if (!receiverProfile.exists) {
+        throw new HttpsError('not-found', 'Recipient not found');
+      }
+
+      const senderRef = db.collection('coinBalances').doc(senderId);
+      const receiverRef = db.collection('coinBalances').doc(receiverId);
+
+      let senderNewTotal = 0;
+      let receiverNewTotal = 0;
+
+      await db.runTransaction(async (transaction) => {
+        const senderDoc = await transaction.get(senderRef);
+        const receiverDoc = await transaction.get(receiverRef);
+
+        const senderTotal = (senderDoc.data() as any)?.totalCoins || 0;
+        if (senderTotal < amount) {
+          throw new HttpsError('failed-precondition', 'Insufficient coins');
+        }
+        const receiverTotal = (receiverDoc.data() as any)?.totalCoins || 0;
+
+        senderNewTotal = senderTotal - amount;
+        receiverNewTotal = receiverTotal + amount;
+
+        const now = admin.firestore.FieldValue.serverTimestamp();
+        const inc = admin.firestore.FieldValue.increment;
+
+        transaction.set(
+          senderRef,
+          {
+            userId: senderId,
+            totalCoins: inc(-amount),
+            spentCoins: inc(amount),
+            lastUpdated: now,
+          },
+          { merge: true },
+        );
+        transaction.set(
+          receiverRef,
+          {
+            userId: receiverId,
+            totalCoins: inc(amount),
+            giftedCoins: inc(amount),
+            lastUpdated: now,
+          },
+          { merge: true },
+        );
+
+        transaction.set(db.collection('coinTransactions').doc(), {
+          userId: senderId,
+          type: 'debit',
+          amount,
+          balanceAfter: senderNewTotal,
+          reason: 'Gift sent',
+          metadata: { toUserId: receiverId, message: message || null, source: 'gift' },
+          createdAt: now,
+        });
+        transaction.set(db.collection('coinTransactions').doc(), {
+          userId: receiverId,
+          type: 'credit',
+          amount,
+          balanceAfter: receiverNewTotal,
+          reason: 'Gift received',
+          metadata: { fromUserId: senderId, message: message || null, source: 'gift' },
+          createdAt: now,
+        });
+      });
+
+      logInfo(`giftCoins ${senderId} -> ${receiverId} amount=${amount}`);
+
+      // Notify the receiver, always naming the sender. The in-app tile renders
+      // `**{actorName}** {title}`; leaving `pushSent` unset lets the push-parity
+      // trigger deliver the FCM push (it now prepends actorName to the push
+      // title too), so BOTH the in-app tile and the push name the gifter.
+      try {
+        const senderProfile = (await db.collection('profiles').doc(senderId).get()).data() || {};
+        const senderName =
+          (senderProfile.displayName as string) ||
+          (senderProfile.nickname as string) ||
+          (senderProfile.name as string) ||
+          'Someone';
+        const senderPhoto =
+          (senderProfile.profilePhotoUrl as string) ||
+          (Array.isArray(senderProfile.photos) ? (senderProfile.photos[0] as string) : undefined) ||
+          (Array.isArray(senderProfile.photoUrls) ? (senderProfile.photoUrls[0] as string) : undefined);
+        const title = `sent you ${amount} coins`;
+        const body = message && message.trim().length > 0 ? `"${message.trim()}"` : title;
+        await db.collection('notifications').add({
+          userId: receiverId,
+          type: 'coins_gift',
+          title, // action phrase WITHOUT the name (tile prepends actorName)
+          message: body,
+          body,
+          isRead: false,
+          createdAt: admin.firestore.FieldValue.serverTimestamp(),
+          actorId: senderId,
+          actorName: senderName,
+          ...(senderPhoto ? { imageUrl: senderPhoto } : {}),
+          data: {
+            type: 'coins_gift',
+            action: 'open_wallet',
+            actorId: senderId,
+            actorName: senderName,
+            amount: String(amount),
+          },
+        });
+      } catch (e) {
+        logError('giftCoins: failed to write gift notification', e);
+      }
+
+      return {
+        success: true,
+        senderNewBalance: senderNewTotal,
+        receiverNewBalance: receiverNewTotal,
+      };
+    } catch (error) {
+      throw handleError(error);
+    }
+  }
+);

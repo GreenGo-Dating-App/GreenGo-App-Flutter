@@ -10,6 +10,7 @@ import { brandPush } from './brand';
 import { shouldNotify } from './prefs';
 import { logInfo, logError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 
 const db = admin.firestore();
 const messaging = admin.messaging();
@@ -47,6 +48,8 @@ interface SendOptions {
   collapseKey?: string; // Android tag + APNs apns-collapse-id (used for replace-in-tray)
   threadId?: string; // iOS group key
   isCritical?: boolean; // bypasses quiet hours, sets time-sensitive on iOS
+  actorId?: string; // actor identity → in-app tile avatar + tappable name
+  actorName?: string;
 }
 
 function isInQuietHours(prefs: any): boolean {
@@ -80,11 +83,18 @@ async function sendPushToUser(
   data?: Record<string, string>,
   options?: SendOptions,
 ): Promise<boolean> {
+  // Actor identity for the in-app tile (avatar + tappable name). Threaded into
+  // every writeInAppNotification branch below so the feed doc always names who
+  // acted, exactly like the push does.
+  const actor =
+    options?.actorId || options?.actorName || options?.imageUrl
+      ? { imageUrl: options?.imageUrl, actorId: options?.actorId, actorName: options?.actorName }
+      : undefined;
   try {
     // PUSH-DELIVERY FILTER: non-message types are in-app only (no APNs/FCM).
     // Everything still lands on the in-app notifications page unchanged.
     if (!PUSH_ELIGIBLE_TYPES.has(type)) {
-      await writeInAppNotification(userId, type, title, body, data);
+      await writeInAppNotification(userId, type, title, body, data, undefined, actor);
       return false;
     }
 
@@ -105,7 +115,7 @@ async function sendPushToUser(
       // Master toggle (only blocks push, not in-app)
       if (prefs.pushNotificationsEnabled === false) {
         logInfo(`sendPushToUser: Push disabled (master) for user ${userId}`);
-        await writeInAppNotification(userId, type, title, body, data);
+        await writeInAppNotification(userId, type, title, body, data, undefined, actor);
         return false;
       }
 
@@ -113,27 +123,27 @@ async function sendPushToUser(
       const fieldName = TYPE_TO_PREF_FIELD[type];
       if (fieldName && prefs[fieldName] === false) {
         logInfo(`sendPushToUser: Type ${type} disabled for user ${userId}`);
-        await writeInAppNotification(userId, type, title, body, data);
+        await writeInAppNotification(userId, type, title, body, data, undefined, actor);
         return false;
       }
 
       // Legacy enabledTypes map shape (backward compat)
       if (prefs.enabledTypes && prefs.enabledTypes[type] === false) {
-        await writeInAppNotification(userId, type, title, body, data);
+        await writeInAppNotification(userId, type, title, body, data, undefined, actor);
         return false;
       }
 
       // Quiet hours (skip suppression for critical notifications)
       if (!options?.isCritical && isInQuietHours(prefs)) {
         logInfo(`sendPushToUser: In quiet hours for user ${userId}`);
-        await writeInAppNotification(userId, type, title, body, data);
+        await writeInAppNotification(userId, type, title, body, data, undefined, actor);
         return false;
       }
     }
 
     if (!fcmToken) {
       logInfo(`sendPushToUser: No FCM token for user ${userId}`);
-      await writeInAppNotification(userId, type, title, body, data);
+      await writeInAppNotification(userId, type, title, body, data, undefined, actor);
       return false;
     }
 
@@ -145,6 +155,10 @@ async function sendPushToUser(
         type,
         timestamp: new Date().toISOString(),
         ...(data || {}),
+        // Actor identity in the push data so the background handler can name +
+        // link who acted.
+        ...(actor?.actorId ? { actorId: actor.actorId } : {}),
+        ...(actor?.actorName ? { actorName: actor.actorName } : {}),
       },
       android: {
         priority: 'high',
@@ -173,7 +187,7 @@ async function sendPushToUser(
     };
 
     const response = await messaging.send(message);
-    await writeInAppNotification(userId, type, title, body, data, response);
+    await writeInAppNotification(userId, type, title, body, data, response, actor);
     logInfo(`sendPushToUser: Sent ${type} notification to user ${userId}`);
     return true;
   } catch (error: any) {
@@ -266,7 +280,7 @@ async function isBlocked(userA: string, userB: string): Promise<boolean> {
 export const onNewMessagePush = onDocumentCreated(
   {
     document: 'conversations/{convId}/messages/{msgId}',
-    memory: '256MiB',
+    memory: PUSH_MEMORY,
   },
   monitored("onNewMessagePush", async (event) => {
     try {
@@ -376,7 +390,7 @@ export const onNewMessagePush = onDocumentCreated(
 export const onSupportMessagePush = onDocumentCreated(
   {
     document: 'support_messages/{msgId}',
-    memory: '256MiB',
+    memory: PUSH_MEMORY,
   },
   monitored("onSupportMessagePush", async (event) => {
     try {
@@ -442,7 +456,7 @@ export const onSupportMessagePush = onDocumentCreated(
 export const checkExpiringModes = onSchedule(
   {
     schedule: 'every 15 minutes',
-    memory: '256MiB',
+    memory: PUSH_MEMORY,
     timeZone: 'UTC',
   },
   monitored("checkExpiringModes", async () => {
@@ -507,7 +521,7 @@ export const checkExpiringModes = onSchedule(
 export const onVerificationStatusChange = onDocumentUpdated(
   {
     document: 'profiles/{userId}',
-    memory: '256MiB',
+    memory: PUSH_MEMORY,
   },
   monitored("onVerificationStatusChange", async (event) => {
     try {

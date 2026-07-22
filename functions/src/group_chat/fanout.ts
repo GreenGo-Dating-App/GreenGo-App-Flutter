@@ -24,6 +24,7 @@ import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -67,7 +68,10 @@ async function senderDisplayName(senderId: string): Promise<string> {
 }
 
 export const onGroupMessageCreated = onDocumentCreated(
-  'groups/{groupId}/messages/{messageId}',
+  {
+    document: 'groups/{groupId}/messages/{messageId}',
+    memory: PUSH_MEMORY,
+  },
   monitored("onGroupMessageCreated", async (event) => {
     const snap = event.data;
     if (!snap) return;

@@ -19,6 +19,7 @@ import * as admin from 'firebase-admin';
 import { brandPush } from './brand';
 import { shouldNotify, categoryForType } from './prefs';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -73,12 +74,16 @@ async function emit(
   type: string,
   title: string,
   body: string,
-  data: Record<string, string>,
+  rawData: Record<string, string>,
   actor: Actor,
   dedupKey: string,
 ): Promise<void> {
   if (!recipientId || recipientId === actor.id) return;
   if (!(await claimOnce(dedupKey))) return;
+
+  // Always carry the actor identity in the push DATA payload too, so the client
+  // (background/terminated push handler) can render + link the actor's name.
+  const data = { ...rawData, actorId: actor.id, actorName: actor.name };
 
   // In-app doc (Flutter NotificationModel shape + actor fields).
   // pushSent: true — this function sends its own push below, so the
@@ -124,7 +129,10 @@ async function emit(
 
 // ── e) Someone joined your community ────────────────────────────────────────
 export const onCommunityMemberJoined = onDocumentCreated(
-  'communities/{communityId}/members/{userId}',
+  {
+    document: 'communities/{communityId}/members/{userId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onCommunityMemberJoined', async (event) => {
     const communityId = event.params.communityId as string;
     const userId = event.params.userId as string;
@@ -150,7 +158,10 @@ export const onCommunityMemberJoined = onDocumentCreated(
 
 // ── f) Someone joined your event ────────────────────────────────────────────
 export const onEventAttendeeJoined = onDocumentCreated(
-  'events/{eventId}/attendees/{userId}',
+  {
+    document: 'events/{eventId}/attendees/{userId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onEventAttendeeJoined', async (event) => {
     const eventId = event.params.eventId as string;
     const userId = event.params.userId as string;
@@ -178,7 +189,10 @@ export const onEventAttendeeJoined = onDocumentCreated(
 
 // ── w) Someone follows your business ────────────────────────────────────────
 export const onBusinessFollowed = onDocumentCreated(
-  'business_followers/{businessId}/followers/{userId}',
+  {
+    document: 'business_followers/{businessId}/followers/{userId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onBusinessFollowed', async (event) => {
     const businessId = event.params.businessId as string;
     const userId = event.params.userId as string;
@@ -199,7 +213,10 @@ export const onBusinessFollowed = onDocumentCreated(
 
 // ── u) Someone rated your business ──────────────────────────────────────────
 export const onBusinessRated = onDocumentCreated(
-  'business_ratings/{businessId}/ratings/{userId}',
+  {
+    document: 'business_ratings/{businessId}/ratings/{userId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onBusinessRated', async (event) => {
     const businessId = event.params.businessId as string;
     const userId = event.params.userId as string;
@@ -222,7 +239,10 @@ export const onBusinessRated = onDocumentCreated(
 
 // ── n) Someone liked your event ─────────────────────────────────────────────
 export const onEventLiked = onDocumentCreated(
-  'events/{eventId}/likes/{userId}',
+  {
+    document: 'events/{eventId}/likes/{userId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onEventLiked', async (event) => {
     const eventId = event.params.eventId as string;
     const userId = event.params.userId as string;

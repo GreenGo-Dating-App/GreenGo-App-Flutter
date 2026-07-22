@@ -25,6 +25,7 @@ import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -203,7 +204,10 @@ async function fanOutCommunityEvent(
 }
 
 export const onCommunityEventCreated = onDocumentCreated(
-  'events/{eventId}',
+  {
+    document: 'events/{eventId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onCommunityEventCreated', async (event) => {
     const snap = event.data;
     if (!snap) return;
@@ -216,7 +220,10 @@ export const onCommunityEventCreated = onDocumentCreated(
 );
 
 export const onCommunityEventPublished = onDocumentUpdated(
-  'events/{eventId}',
+  {
+    document: 'events/{eventId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onCommunityEventPublished', async (event) => {
     const before = event.data?.before.data();
     const after = event.data?.after.data();
@@ -245,7 +252,10 @@ function ms(v: unknown): number {
  * real reschedule/cancel is a single distinct doc version.
  */
 export const onCommunityEventChanged = onDocumentUpdated(
-  'events/{eventId}',
+  {
+    document: 'events/{eventId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onCommunityEventChanged', async (event) => {
     const before = event.data?.before.data();
     const after = event.data?.after.data();

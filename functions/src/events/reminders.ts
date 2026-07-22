@@ -13,6 +13,7 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -91,7 +92,10 @@ async function fanOutReminder(
 }
 
 export const sendEventReminders = onSchedule(
-  'every 60 minutes',
+  {
+    schedule: 'every 60 minutes',
+    memory: PUSH_MEMORY,
+  },
   monitored('sendEventReminders', async () => {
     const nowMs = admin.firestore.Timestamp.now().toMillis();
     // Cover all three windows: started (up to 1h ago) → 24h ahead.

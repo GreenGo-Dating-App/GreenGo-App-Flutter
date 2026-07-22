@@ -42,6 +42,7 @@ import {
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
+import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -211,7 +212,10 @@ async function fanOutNewEventToFollowers(
 
 /** Event created already in the `published` state. */
 export const onEventCreatedNotifyFollowers = onDocumentCreated(
-  'events/{eventId}',
+  {
+    document: 'events/{eventId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onEventCreatedNotifyFollowers', async (event) => {
     const snap = event.data;
     if (!snap) return;
@@ -222,7 +226,10 @@ export const onEventCreatedNotifyFollowers = onDocumentCreated(
 
 /** Event transitioning INTO `published` (draft/scheduled → published). */
 export const onEventPublishedNotifyFollowers = onDocumentUpdated(
-  'events/{eventId}',
+  {
+    document: 'events/{eventId}',
+    memory: PUSH_MEMORY,
+  },
   monitored('onEventPublishedNotifyFollowers', async (event) => {
     const before = event.data?.before.data();
     const after = event.data?.after.data();
