@@ -3923,6 +3923,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get eventsMaxAttendees => 'Max Attendees';
 
   @override
+  String get eventsCapacityAllowed => 'Capacity allowed';
+
+  @override
   String get eventsNoAttendeesYet => 'No attendees yet. Be the first to join!';
 
   @override

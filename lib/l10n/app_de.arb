@@ -1413,6 +1413,7 @@
   "eventsLocation": "Standort",
   "eventsMAwayFormat": "{meters} m entfernt",
   "eventsMaxAttendees": "Max. Teilnehmer",
+  "eventsCapacityAllowed": "Erlaubte Kapazität",
   "eventsNoAttendeesYet": "Noch keine Teilnehmer. Sei der Erste!",
   "eventsNoEventsFound": "Keine Events gefunden",
   "eventsNoMessagesYet": "Noch keine Nachrichten",

@@ -1455,6 +1455,7 @@
   "eventsLocation": "Luogo",
   "eventsMAwayFormat": "a {meters} m",
   "eventsMaxAttendees": "Max Partecipanti",
+  "eventsCapacityAllowed": "Capacità consentita",
   "eventsNoAttendeesYet": "Nessun partecipante ancora. Sii il primo!",
   "eventsNoEventsFound": "Nessun evento trovato",
   "eventsNoMessagesYet": "Nessun messaggio ancora",
