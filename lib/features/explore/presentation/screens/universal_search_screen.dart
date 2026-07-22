@@ -172,11 +172,17 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       }
     }
 
-    // 1) Exact nickname (usernames are stored lowercase).
+    // 1) Nickname PREFIX. Usernames are stored lowercase, so a lowercased range
+    //    is inherently case-insensitive AND a prefix — typing "apple" (or
+    //    "Apple") now finds "appletest". The 0xF8FF sentinel makes it a real
+    //    prefix instead of an exact match.
+    final ql = q.toLowerCase();
     try {
       absorb(await _firestore
           .collection('profiles')
-          .where('nickname', isEqualTo: q.toLowerCase())
+          .orderBy('nickname')
+          .startAt([ql])
+          .endAt(['$ql${String.fromCharCode(0xf8ff)}'])
           .limit(20)
           .get());
     } catch (_) {/* keep whatever we have */}
@@ -191,6 +197,23 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
           .limit(20)
           .get());
     } catch (_) {/* keep whatever we have */}
+
+    // 2b) displayName case variants. displayName keeps its original case and has
+    //     no lowercase mirror field, so also query the common capitalizations
+    //     (Capitalized, lowercase, UPPERCASE) so a name search is effectively
+    //     case-insensitive — "apple", "Apple" and "APPLE" all find "Apple".
+    for (final term in {_capitalize(q), q.toLowerCase(), q.toUpperCase()}) {
+      if (term.isEmpty || term == q) continue;
+      try {
+        absorb(await _firestore
+            .collection('profiles')
+            .orderBy('displayName')
+            .startAt([term])
+            .endAt(['$term${String.fromCharCode(0xf8ff)}'])
+            .limit(20)
+            .get());
+      } catch (_) {/* keep whatever we have */}
+    }
 
     // 3) businessName prefix — find business accounts by their storefront name.
     for (final term in {q, _capitalize(q)}) {
