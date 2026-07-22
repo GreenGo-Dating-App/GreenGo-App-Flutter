@@ -209,17 +209,19 @@ class _ExploreScreenState extends State<ExploreScreen> {
     });
   }
 
-  Future<void> _load() async {
+  Future<void> _load({bool forceRefresh = false}) async {
     await _loadProfile();
     // Fire the content loads concurrently; each updates state on its own and
-    // never throws (a failure just hides its section).
+    // never throws (a failure just hides its section). On a pull-to-refresh
+    // (forceRefresh) the people pool bypasses its in-memory cache; the Firestore
+    // .get() loads already return fresh server data when online.
     await Future.wait<void>([
       // Featured / Happening-today / Near-you run SEQUENTIALLY inside one pass
       // so they can share `_usedEventKeys` and never show the same event twice.
       _loadEventCarousels(),
       _loadFeaturedAttractions(),
       _loadRecommended(),
-      _loadAroundYou(),
+      _loadAroundYou(forceRefresh: forceRefresh),
       _loadSameLanguage(),
       _loadBusinesses(),
       _loadMyEvents(),
@@ -779,7 +781,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// [_peopleWanted] and lightly `shuffle()` within that nearest set so the row
   /// feels fresh without pulling in far-away people. Networking/cultural only —
   /// no like/match/swipe.
-  Future<void> _loadAroundYou() async {
+  Future<void> _loadAroundYou({bool forceRefresh = false}) async {
     List<MatchCandidate> picked = const <MatchCandidate>[];
     try {
       final ds = di.sl<DiscoveryRemoteDataSource>();
@@ -789,6 +791,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         userId: widget.userId,
         preferences: prefs,
         limit: 60,
+        forceRefresh: forceRefresh,
       );
       final nearest = stack
           .where((c) =>
@@ -1282,8 +1285,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
       body: ColoredBox(
         color: AppColors.backgroundDark,
         child: SafeArea(
-          child: CustomScrollView(
-            slivers: [
+          child: RefreshIndicator(
+            color: AppColors.richGold,
+            backgroundColor: AppColors.backgroundCard,
+            // Swipe down to force-refresh the whole Explore feed with fresh
+            // server data (bypasses the people-pool cache on refresh).
+            onRefresh: () => _load(forceRefresh: true),
+            child: CustomScrollView(
+              // AlwaysScrollable so the pull-to-refresh works even when the
+              // content doesn't fill the screen.
+              physics: const AlwaysScrollableScrollPhysics(),
+              slivers: [
               SliverToBoxAdapter(
                 child: _TopBackdropBand(
                   gradient: CountryFlagColors.gradientFor(_flagCountry),
@@ -1391,6 +1403,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
               _spotlightSection(context, l10n, reduceMotion),
               const SliverToBoxAdapter(child: SizedBox(height: 24)),
             ],
+            ),
           ),
         ),
       ),
