@@ -882,10 +882,14 @@ service cloud.firestore {
                     && request.auth.uid in request.resource.data.participants
                     && request.resource.data.roles[request.auth.uid] == 'admin';
       // Members may update the group doc (info, membership, denorm). A member
-      // may NOT change the `roles` map — role changes (incl. self-promotion to
-      // admin) require an existing admin.
+      // may NOT elevate roles (self-promotion to admin) — role changes require
+      // an existing admin. EXCEPTION: a member leaving removes their OWN role
+      // entry; that's allowed because the caller ends up NOT in the roles map
+      // (self-promotion would instead leave the caller present as 'admin').
       allow update: if isGroupMember()
-        && (request.resource.data.roles == resource.data.roles || isGroupAdminRole());
+        && (request.resource.data.roles == resource.data.roles
+            || isGroupAdminRole()
+            || !(request.auth.uid in request.resource.data.get('roles', {})));
       allow delete: if isGroupAdminRole();
 
       match /messages/{messageId} {
