@@ -57,7 +57,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onNotificationCreatedPush = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("./brand");
+const prefs_1 = require("./prefs");
 const monitoring_1 = require("../shared/monitoring");
+const pushRuntime_1 = require("../shared/pushRuntime");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 /** Coerce an arbitrary notification `data` map into FCM's string→string shape. */
@@ -75,8 +78,11 @@ function stringifyData(raw, type) {
         out.type = type;
     return out;
 }
-exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)('notifications/{notifId}', (0, monitoring_1.monitored)('onNotificationCreatedPush', async (event) => {
-    var _a;
+exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)({
+    document: 'notifications/{notifId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)('onNotificationCreatedPush', async (event) => {
+    var _a, _b;
     const snap = event.data;
     if (!snap)
         return;
@@ -92,22 +98,41 @@ exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)('notifica
         '';
     if (!userId)
         return;
-    const title = doc.title || 'GreenGo';
+    const title = doc.title || '';
     const body = doc.message ||
         doc.body ||
         '';
     const type = doc.type || 'notification';
     const data = stringifyData(doc.data, type);
     const imageUrl = doc.imageUrl || undefined;
+    // Actor attribution — the in-app tile prepends the actor's name bold, but a
+    // raw FCM push has no such rendering. So bake the actor name into the PUSH
+    // title here (mirrors emitNotification/social, which push `${name} ${title}`)
+    // so every actor-attributed notification's push ALSO names who acted.
+    const actorName = ((_a = doc.actorName) === null || _a === void 0 ? void 0 : _a.trim()) || '';
+    const pushTitle = actorName && !title.startsWith(actorName)
+        ? `${actorName} ${title}`.trim()
+        : title;
+    // Respect the user's per-category notification preference. If they disabled
+    // this category (or push), keep the in-app feed doc but skip the push and
+    // mark it handled so the trigger doesn't retry.
+    if (!(await (0, prefs_1.shouldNotify)(userId, (0, prefs_1.categoryForType)(type)))) {
+        try {
+            await snap.ref.update({ pushSent: true });
+        }
+        catch (_c) {
+            // ignore
+        }
+        return;
+    }
     // Best-effort push — never throw out of the trigger.
     try {
         const userSnap = await db.collection('users').doc(userId).get();
-        const token = (_a = userSnap.data()) === null || _a === void 0 ? void 0 : _a.fcmToken;
+        const token = (_b = userSnap.data()) === null || _b === void 0 ? void 0 : _b.fcmToken;
         if (token) {
             await admin.messaging().send({
                 token,
-                notification: Object.assign({ title,
-                    body }, (imageUrl ? { imageUrl } : {})),
+                notification: (0, brand_1.brandPush)(pushTitle, body, imageUrl),
                 data,
                 android: {
                     priority: 'high',
@@ -125,7 +150,7 @@ exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)('notifica
     try {
         await snap.ref.update({ pushSent: true });
     }
-    catch (_b) {
+    catch (_d) {
         // ignore
     }
 }));

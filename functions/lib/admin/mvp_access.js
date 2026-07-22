@@ -41,6 +41,7 @@ exports.getMvpAccessStats = exports.sendNotificationToUser = exports.sendBroadca
 const https_1 = require("firebase-functions/v2/https");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("../notifications/brand");
 const types_1 = require("../shared/types");
 const monitoring_1 = require("../shared/monitoring");
 // MVP Release Dates
@@ -291,25 +292,15 @@ exports.approveUser = (0, https_1.onCall)({
             const userLang = userData.preferredLanguage || 'en';
             const messages = BROADCAST_MESSAGES.accountApproved;
             const message = messages[userLang] || messages.en;
-            await utils_1.db.collection('notifications').add({
-                userId,
-                type: 'account_approved',
-                title: message.title,
-                body: message.body,
-                read: false,
-                sent: false,
-                // This handler sends its own push below — skip the parity trigger.
-                pushSent: true,
-                createdAt: utils_1.FieldValue.serverTimestamp(),
-            });
+            // NOTE: intentionally do NOT write an "account_approved" doc to the
+            // `notifications` feed. It is one-time noise that lingered in the list
+            // and re-surfaced on every open. The approval is still communicated by
+            // the one-time push below; the feed stays clean.
             // Send push notification if user has FCM token
             if (userData.fcmToken) {
                 await admin.messaging().send({
                     token: userData.fcmToken,
-                    notification: {
-                        title: message.title,
-                        body: message.body,
-                    },
+                    notification: (0, brand_1.brandPush)(message.title, message.body),
                     data: {
                         type: 'account_approved',
                         accessDate: accessDate.toISOString(),

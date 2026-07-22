@@ -807,31 +807,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         );
       }
 
-      // Create like notification for target user
-      final notificationType = actionType == SwipeActionType.superLike ? 'super_like' : 'new_like';
-      final notificationTitle = actionType == SwipeActionType.superLike
-          ? 'l10n:priorityConnectNotificationTitle'
-          : 'You received a Like!';
-      final notificationMessage = actionType == SwipeActionType.superLike
-          ? 'l10n:priorityConnectNotificationMessage'
-          : (senderNickname.isNotEmpty
-              ? 'You received a like from @$senderNickname. See profile.'
-              : 'You received a like from $senderName. See profile.');
-
-      await _createNotification(
-        userId: targetUserId,
-        type: notificationType,
-        title: notificationTitle,
-        message: notificationMessage,
-        actorId: userId,
-        actorName: senderName,
-        data: {
-          'likerId': userId,
-          'likerNickname': senderNickname,
-          'likerName': senderName,
-          'actionType': actionType.toString(),
-        },
-      );
+      // NOTE: dating-style "new like / super like" notifications were REMOVED —
+      // GreenGo is a cross-cultural networking app, not a dating app. The swipe
+      // and the connection mechanic (match + conversation) stay; no like/
+      // super-like notification is created or pushed.
 
       // Check for match
       final match = await checkForMatch(
@@ -921,36 +900,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     });
   }
 
-  /// Helper to create notifications
-  Future<void> _createNotification({
-    required String userId,
-    required String type,
-    required String title,
-    required String message,
-    Map<String, dynamic>? data,
-    String? imageUrl,
-    String? actorId,
-    String? actorName,
-  }) async {
-    try {
-      await firestore.collection('notifications').add({
-        'userId': userId,
-        'type': type,
-        'title': title,
-        'message': message,
-        'data': data,
-        'imageUrl': imageUrl,
-        // Actor identity drives the left avatar + tappable bold name in the tile.
-        if (actorId != null) 'actorId': actorId,
-        if (actorName != null) 'actorName': actorName,
-        'createdAt': Timestamp.fromDate(DateTime.now()),
-        'isRead': false,
-      });
-    } catch (e) {
-      // Silently fail notification creation
-    }
-  }
-
   @override
   Future<Match?> checkForMatch({
     required String userId,
@@ -989,8 +938,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final docRef = await firestore.collection('matches').add(model.toFirestore());
     final createdMatch = match.copyWith(matchId: docRef.id);
 
-    // Send match notifications to BOTH users
-    await _sendMatchNotifications(userId, targetUserId, createdMatch.matchId);
+    // NOTE: dating-style "new match" notifications were REMOVED (GreenGo is a
+    // networking app, not dating). The connection + conversation below stay.
 
     // Create conversation with "Start Connecting!" system message for both users
     await _createMatchConversation(
@@ -1064,66 +1013,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
   }
 
-  /// Send match notifications to both users
-  Future<void> _sendMatchNotifications(String userId1, String userId2, String matchId) async {
-    try {
-      // Get both profiles for nicknames
-      final profile1Doc = await firestore.collection('profiles').doc(userId1).get();
-      final profile2Doc = await firestore.collection('profiles').doc(userId2).get();
-
-      final nickname1 = profile1Doc.data()?['nickname'] as String? ?? '';
-      final name1 = profile1Doc.data()?['displayName'] as String? ?? 'Someone';
-      final nickname2 = profile2Doc.data()?['nickname'] as String? ?? '';
-      final name2 = profile2Doc.data()?['displayName'] as String? ?? 'Someone';
-
-      final photos1 = profile1Doc.data()?['photoUrls'] as List<dynamic>?;
-      final photos2 = profile2Doc.data()?['photoUrls'] as List<dynamic>?;
-      final photo1 = (photos1 != null && photos1.isNotEmpty)
-          ? photos1.first as String?
-          : null;
-      final photo2 = (photos2 != null && photos2.isNotEmpty)
-          ? photos2.first as String?
-          : null;
-
-      // Notification for user1 — actor is user2.
-      final displayName2 = nickname2.isNotEmpty ? '@$nickname2' : name2;
-      await _createNotification(
-        userId: userId1,
-        type: 'new_match',
-        title: 'Start Connecting!',
-        message: 'You matched with $displayName2. Start chatting now.',
-        actorId: userId2,
-        actorName: name2,
-        imageUrl: photo2,
-        data: {
-          'matchId': matchId,
-          'matchedUserId': userId2,
-          'matchedNickname': nickname2,
-          'matchedName': name2,
-        },
-      );
-
-      // Notification for user2 — actor is user1.
-      final displayName1 = nickname1.isNotEmpty ? '@$nickname1' : name1;
-      await _createNotification(
-        userId: userId2,
-        type: 'new_match',
-        title: 'Start Connecting!',
-        message: 'You matched with $displayName1. Start chatting now.',
-        actorId: userId1,
-        actorName: name1,
-        imageUrl: photo1,
-        data: {
-          'matchId': matchId,
-          'matchedUserId': userId1,
-          'matchedNickname': nickname1,
-          'matchedName': name1,
-        },
-      );
-    } catch (e) {
-      // Silently fail notification creation
-    }
-  }
+  // _sendMatchNotifications was REMOVED — GreenGo does not send dating-style
+  // "new match" notifications. The match doc + conversation are created directly
+  // in checkForMatch; connecting happens through the Exchange, not a push.
 
   @override
   Future<List<Match>> getMatches({

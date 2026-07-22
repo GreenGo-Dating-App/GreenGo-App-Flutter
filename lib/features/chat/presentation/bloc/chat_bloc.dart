@@ -114,16 +114,29 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     _currentUserId = event.currentUserId;
     _otherUserId = event.otherUserId;
 
-    // Get or create conversation
-    final conversationResult = await getConversation(event.matchId);
+    // When the caller already handed us the conversation (e.g. openConnectChat
+    // just created it), use it DIRECTLY — no network read, so a brand-new chat
+    // opens instantly and can never hang on the loading spinner.
+    Conversation? conversation = event.conversation;
 
-    final conversation = conversationResult.fold(
-      (failure) {
-        emit(ChatError('Failed to load conversation: ${failure.toString()}'));
-        return null;
-      },
-      (conversation) => conversation,
-    );
+    if (conversation == null) {
+      // Get or create conversation. Hard-timeout so a stuck read can NEVER hang
+      // the chat on the loading spinner — on timeout we surface an error/retry
+      // instead of spinning forever.
+      final conversationResult = await getConversation(event.matchId).timeout(
+        const Duration(seconds: 12),
+        onTimeout: () =>
+            const Left(ServerFailure('Loading the conversation timed out')),
+      );
+
+      conversation = conversationResult.fold(
+        (failure) {
+          emit(ChatError('Failed to load conversation: ${failure.toString()}'));
+          return null;
+        },
+        (conversation) => conversation,
+      );
+    }
 
     if (conversation == null) return;
 

@@ -45,6 +45,7 @@ import '../../../profile/data/datasources/album_access_datasource.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../data/datasources/chat_remote_datasource.dart';
+import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
 import '../bloc/chat_bloc.dart';
 import '../bloc/chat_event.dart';
@@ -60,11 +61,17 @@ class ChatScreen extends StatefulWidget {
 
   const ChatScreen({
     required this.matchId, required this.currentUserId, required this.otherUserId, required this.otherUserProfile, super.key,
+    this.initialConversation,
   });
   final String matchId;
   final String currentUserId;
   final String otherUserId;
   final Profile otherUserProfile;
+
+  /// Optionally pre-fetched conversation (e.g. one just created by
+  /// openConnectChat). When present, the chat opens WITHOUT a network read, so a
+  /// brand-new chat never hangs on the loading spinner.
+  final Conversation? initialConversation;
 
   @override
   State<ChatScreen> createState() => _ChatScreenState();
@@ -177,6 +184,7 @@ class _ChatScreenState extends State<ChatScreen> {
         currentUserId: widget.currentUserId,
         otherUserId: widget.otherUserId,
         limit: _messageLimit,
+        conversation: widget.initialConversation,
       ));
     _chatDataSource = ChatRemoteDataSourceImpl(
       firestore: FirebaseFirestore.instance,

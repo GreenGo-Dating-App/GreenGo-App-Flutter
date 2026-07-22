@@ -19,6 +19,7 @@ import '../../../../features/coins/domain/entities/coin_transaction.dart';
 import '../../../../features/membership/domain/entities/membership.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
+import 'location_message_map.dart';
 
 /// Message Bubble Widget
 ///
@@ -1041,50 +1042,53 @@ class _MessageBubbleState extends State<MessageBubble> {
 
       case MessageType.location:
         final loc = LocationShareService.parse(message.content);
-        return InkWell(
-          onTap: loc == null
-              ? null
-              : () => launchUrl(
-                    Uri.parse(LocationShareService.mapsUrl(loc.lat, loc.lng)),
-                    mode: LaunchMode.externalApplication,
-                  ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                Icons.location_on,
-                size: 20,
-                color:
-                    isCurrentUser ? AppColors.deepBlack : AppColors.richGold,
+        if (loc == null) {
+          return Text(
+            l10n.chatLocation,
+            style: TextStyle(
+              color: isCurrentUser
+                  ? AppColors.deepBlack
+                  : AppColors.textPrimary,
+            ),
+          );
+        }
+        // A cached mini-map preview; tap opens the point in an external maps app.
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            LocationMessageMap(
+              lat: loc.lat,
+              lng: loc.lng,
+              onTap: () => launchUrl(
+                Uri.parse(LocationShareService.mapsUrl(loc.lat, loc.lng)),
+                mode: LaunchMode.externalApplication,
               ),
-              const SizedBox(width: 6),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    l10n.chatLocation,
-                    style: TextStyle(
-                      color: isCurrentUser
-                          ? AppColors.deepBlack
-                          : AppColors.textPrimary,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600,
-                    ),
+            ),
+            const SizedBox(height: 4),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.location_on,
+                  size: 14,
+                  color:
+                      isCurrentUser ? AppColors.deepBlack : AppColors.richGold,
+                ),
+                const SizedBox(width: 4),
+                Text(
+                  l10n.chatOpenInMaps,
+                  style: TextStyle(
+                    color: isCurrentUser
+                        ? AppColors.deepBlack
+                        : AppColors.textSecondary,
+                    fontSize: 12,
+                    decoration: TextDecoration.underline,
                   ),
-                  Text(
-                    l10n.chatOpenInMaps,
-                    style: TextStyle(
-                      color: isCurrentUser
-                          ? AppColors.deepBlack
-                          : AppColors.textSecondary,
-                      fontSize: 12,
-                      decoration: TextDecoration.underline,
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
+                ),
+              ],
+            ),
+          ],
         );
 
       case MessageType.event:

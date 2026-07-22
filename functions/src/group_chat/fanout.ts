@@ -191,7 +191,10 @@ export const onGroupMessageCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: brandPush(groupName, `${senderName}: ${preview}`),
+          notification: brandPush(
+            `New message in group ${groupName}`,
+            `${senderName}: ${preview}`,
+          ),
           data: {
             type: 'group_message',
             groupId,

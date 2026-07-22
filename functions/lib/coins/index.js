@@ -37,7 +37,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.claimReward = exports.sendExpirationWarnings = exports.processExpiredCoins = exports.grantMonthlyAllowances = exports.verifyAppStoreCoinPurchase = exports.verifyGooglePlayCoinPurchase = void 0;
+exports.declineGift = exports.giftCoins = exports.claimReward = exports.sendExpirationWarnings = exports.processExpiredCoins = exports.grantMonthlyAllowances = exports.verifyAppStoreCoinPurchase = exports.verifyGooglePlayCoinPurchase = void 0;
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const utils_1 = require("../shared/utils");
@@ -479,6 +479,200 @@ exports.claimReward = (0, https_1.onCall)({
             coinsEarned: rewardCoins,
             newBalance: currentBalance + rewardCoins,
             rewardType,
+        };
+    }
+    catch (error) {
+        throw (0, utils_1.handleError)(error);
+    }
+});
+/**
+ * P2P coin gift. Atomically debits the sender's `coinBalances` and credits the
+ * receiver's, plus writes a ledger entry for each. This MUST be server-side:
+ * Firestore rules only let a user write their OWN balance doc, so the client
+ * (which tried to write the receiver's balance directly) was always denied and
+ * gifting failed. The Admin SDK bypasses those rules.
+ */
+exports.giftCoins = (0, https_1.onCall)({ memory: '256MiB', timeoutSeconds: 60 }, async (request) => {
+    try {
+        const senderId = await (0, utils_1.verifyAuth)(request.auth);
+        const { receiverId, amount, message } = request.data;
+        if (!receiverId || typeof receiverId !== 'string') {
+            throw new https_1.HttpsError('invalid-argument', 'receiverId is required');
+        }
+        if (receiverId === senderId) {
+            throw new https_1.HttpsError('invalid-argument', 'Cannot gift coins to yourself');
+        }
+        if (!Number.isInteger(amount) || amount <= 0 || amount > 100000) {
+            throw new https_1.HttpsError('invalid-argument', 'amount must be a positive integer up to 100000');
+        }
+        // Recipient must exist.
+        const receiverProfile = await utils_1.db.collection('profiles').doc(receiverId).get();
+        if (!receiverProfile.exists) {
+            throw new https_1.HttpsError('not-found', 'Recipient not found');
+        }
+        const senderRef = utils_1.db.collection('coinBalances').doc(senderId);
+        const receiverRef = utils_1.db.collection('coinBalances').doc(receiverId);
+        let senderNewTotal = 0;
+        let receiverNewTotal = 0;
+        await utils_1.db.runTransaction(async (transaction) => {
+            var _a, _b;
+            const senderDoc = await transaction.get(senderRef);
+            const receiverDoc = await transaction.get(receiverRef);
+            const senderTotal = ((_a = senderDoc.data()) === null || _a === void 0 ? void 0 : _a.totalCoins) || 0;
+            if (senderTotal < amount) {
+                throw new https_1.HttpsError('failed-precondition', 'Insufficient coins');
+            }
+            const receiverTotal = ((_b = receiverDoc.data()) === null || _b === void 0 ? void 0 : _b.totalCoins) || 0;
+            senderNewTotal = senderTotal - amount;
+            receiverNewTotal = receiverTotal + amount;
+            const now = admin.firestore.FieldValue.serverTimestamp();
+            const inc = admin.firestore.FieldValue.increment;
+            transaction.set(senderRef, {
+                userId: senderId,
+                totalCoins: inc(-amount),
+                spentCoins: inc(amount),
+                lastUpdated: now,
+            }, { merge: true });
+            transaction.set(receiverRef, {
+                userId: receiverId,
+                totalCoins: inc(amount),
+                giftedCoins: inc(amount),
+                lastUpdated: now,
+            }, { merge: true });
+            transaction.set(utils_1.db.collection('coinTransactions').doc(), {
+                userId: senderId,
+                type: 'debit',
+                amount,
+                balanceAfter: senderNewTotal,
+                reason: 'Gift sent',
+                metadata: { toUserId: receiverId, message: message || null, source: 'gift' },
+                createdAt: now,
+            });
+            transaction.set(utils_1.db.collection('coinTransactions').doc(), {
+                userId: receiverId,
+                type: 'credit',
+                amount,
+                balanceAfter: receiverNewTotal,
+                reason: 'Gift received',
+                metadata: { fromUserId: senderId, message: message || null, source: 'gift' },
+                createdAt: now,
+            });
+        });
+        (0, utils_1.logInfo)(`giftCoins ${senderId} -> ${receiverId} amount=${amount}`);
+        // Notify the receiver, always naming the sender. The in-app tile renders
+        // `**{actorName}** {title}`; leaving `pushSent` unset lets the push-parity
+        // trigger deliver the FCM push (it now prepends actorName to the push
+        // title too), so BOTH the in-app tile and the push name the gifter.
+        try {
+            const senderProfile = (await utils_1.db.collection('profiles').doc(senderId).get()).data() || {};
+            const senderName = senderProfile.displayName ||
+                senderProfile.nickname ||
+                senderProfile.name ||
+                'Someone';
+            const senderPhoto = senderProfile.profilePhotoUrl ||
+                (Array.isArray(senderProfile.photos) ? senderProfile.photos[0] : undefined) ||
+                (Array.isArray(senderProfile.photoUrls) ? senderProfile.photoUrls[0] : undefined);
+            const title = `sent you ${amount} coins`;
+            const body = message && message.trim().length > 0 ? `"${message.trim()}"` : title;
+            await utils_1.db.collection('notifications').add(Object.assign(Object.assign({ userId: receiverId, type: 'coins_gift', title, message: body, body, isRead: false, createdAt: admin.firestore.FieldValue.serverTimestamp(), actorId: senderId, actorName: senderName }, (senderPhoto ? { imageUrl: senderPhoto } : {})), { data: {
+                    type: 'coins_gift',
+                    action: 'open_wallet',
+                    actorId: senderId,
+                    actorName: senderName,
+                    amount: String(amount),
+                } }));
+        }
+        catch (e) {
+            (0, utils_1.logError)('giftCoins: failed to write gift notification', e);
+        }
+        return {
+            success: true,
+            senderNewBalance: senderNewTotal,
+            receiverNewBalance: receiverNewTotal,
+        };
+    }
+    catch (error) {
+        throw (0, utils_1.handleError)(error);
+    }
+});
+/**
+ * Decline a pending P2P coin gift and refund the ORIGINAL SENDER.
+ *
+ * This MUST be server-side: the refund credits the SENDER's `coinBalances` doc,
+ * a cross-user write that Firestore rules (correctly) deny to the client — the
+ * client can only write its OWN balance. The old client-side decline refunded
+ * the sender directly, which forced `coinBalances` to stay writable across
+ * users (a coin-forgery hole). The Admin SDK bypasses the rules so the refund
+ * happens here instead, letting `coinBalances` be locked to owner-only.
+ *
+ * The caller must be the gift's RECEIVER. Idempotent: only a 'pending' gift is
+ * refundable — an already-declined/accepted gift is rejected, so a replayed
+ * call can never double-refund.
+ */
+exports.declineGift = (0, https_1.onCall)({ memory: '256MiB', timeoutSeconds: 60 }, async (request) => {
+    try {
+        const receiverId = await (0, utils_1.verifyAuth)(request.auth);
+        const { giftId } = request.data;
+        if (!giftId || typeof giftId !== 'string') {
+            throw new https_1.HttpsError('invalid-argument', 'giftId is required');
+        }
+        const giftRef = utils_1.db.collection('coinGifts').doc(giftId);
+        let senderId = '';
+        let amount = 0;
+        let senderNewTotal = 0;
+        await utils_1.db.runTransaction(async (transaction) => {
+            var _a;
+            const giftDoc = await transaction.get(giftRef);
+            if (!giftDoc.exists) {
+                throw new https_1.HttpsError('not-found', 'Gift not found');
+            }
+            const gift = giftDoc.data();
+            if (gift.receiverId !== receiverId) {
+                throw new https_1.HttpsError('permission-denied', 'Only the gift recipient can decline this gift');
+            }
+            if (gift.status !== 'pending') {
+                // Idempotency guard: already declined/accepted → never double-refund.
+                throw new https_1.HttpsError('failed-precondition', 'Gift is not pending (already accepted or declined)');
+            }
+            senderId = gift.senderId;
+            amount = gift.amount || 0;
+            if (!senderId || !Number.isInteger(amount) || amount <= 0) {
+                throw new https_1.HttpsError('failed-precondition', 'Gift is missing a valid sender/amount');
+            }
+            const senderRef = utils_1.db.collection('coinBalances').doc(senderId);
+            const senderDoc = await transaction.get(senderRef);
+            const senderTotal = ((_a = senderDoc.data()) === null || _a === void 0 ? void 0 : _a.totalCoins) || 0;
+            senderNewTotal = senderTotal + amount;
+            const now = admin.firestore.FieldValue.serverTimestamp();
+            const inc = admin.firestore.FieldValue.increment;
+            // Refund the sender (cross-user write — server-only). `refundedCoins`
+            // is bookkeeping; `spentCoins` is decremented to undo the debit the
+            // original send applied when it moved the gift into escrow.
+            transaction.set(senderRef, {
+                userId: senderId,
+                totalCoins: inc(amount),
+                spentCoins: inc(-amount),
+                refundedCoins: inc(amount),
+                lastUpdated: now,
+            }, { merge: true });
+            transaction.update(giftRef, {
+                status: 'declined',
+                declinedAt: now,
+            });
+            transaction.set(utils_1.db.collection('coinTransactions').doc(), {
+                userId: senderId,
+                type: 'credit',
+                amount,
+                balanceAfter: senderNewTotal,
+                reason: 'Gift declined refund',
+                metadata: { fromUserId: receiverId, giftId, source: 'gift_refund' },
+                createdAt: now,
+            });
+        });
+        (0, utils_1.logInfo)(`declineGift ${giftId}: refunded ${amount} to sender ${senderId} (declined by ${receiverId})`);
+        return {
+            success: true,
+            senderNewBalance: senderNewTotal,
         };
     }
     catch (error) {

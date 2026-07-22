@@ -112,6 +112,9 @@ Future<void> openConnectChat(
           currentUserId: currentUserId,
           otherUserId: otherUserId,
           otherUserProfile: profile!,
+          // Hand the just-created conversation straight to the chat so it opens
+          // instantly — no re-fetch, no chance of hanging on the loading spinner.
+          initialConversation: conversation,
         ),
       ),
     );

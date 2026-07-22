@@ -54,7 +54,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onCommunityEventChanged = exports.onCommunityEventPublished = exports.onCommunityEventCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("../notifications/brand");
+const prefs_1 = require("../notifications/prefs");
 const monitoring_1 = require("../shared/monitoring");
+const pushRuntime_1 = require("../shared/pushRuntime");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const FCM_CHUNK = 500;
@@ -88,9 +91,11 @@ async function notifyCommunityMembers(communityId, notif) {
         if (page.empty)
             break;
         lastDoc = page.docs[page.docs.length - 1];
-        const recipientIds = page.docs
+        const rawIds = page.docs
             .filter((d) => { var _a; return ((_a = d.data()) === null || _a === void 0 ? void 0 : _a.isBanned) !== true; })
             .map((d) => d.id);
+        const allowedSet = await (0, prefs_1.filterUidsByPref)(rawIds, 'events');
+        const recipientIds = rawIds.filter((u) => allowedSet.has(u));
         total += recipientIds.length;
         const userDocs = await Promise.all(recipientIds.map((uid) => db.collection('users').doc(uid).get()));
         const tokens = [];
@@ -104,8 +109,7 @@ async function notifyCommunityMembers(communityId, notif) {
             try {
                 await admin.messaging().sendEachForMulticast({
                     tokens: chunk,
-                    notification: Object.assign({ title,
-                        body }, (eventImage ? { imageUrl: eventImage } : {})),
+                    notification: (0, brand_1.brandPush)(title, body, eventImage),
                     data: dataPayload,
                     android: {
                         priority: 'high',
@@ -202,13 +206,19 @@ async function fanOutCommunityEvent(eventId, eventData, eventRef) {
     });
     console.log(`Community event ${eventId} fanned out to ${total} member(s) of ${communityId}`);
 }
-exports.onCommunityEventCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}', (0, monitoring_1.monitored)('onCommunityEventCreated', async (event) => {
+exports.onCommunityEventCreated = (0, firestore_1.onDocumentCreated)({
+    document: 'events/{eventId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)('onCommunityEventCreated', async (event) => {
     const snap = event.data;
     if (!snap)
         return;
     await fanOutCommunityEvent(event.params.eventId, snap.data(), snap.ref);
 }));
-exports.onCommunityEventPublished = (0, firestore_1.onDocumentUpdated)('events/{eventId}', (0, monitoring_1.monitored)('onCommunityEventPublished', async (event) => {
+exports.onCommunityEventPublished = (0, firestore_1.onDocumentUpdated)({
+    document: 'events/{eventId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)('onCommunityEventPublished', async (event) => {
     var _a, _b;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();
@@ -232,7 +242,10 @@ function ms(v) {
  * back to the event doc (so it never self-triggers); relies on the fact that a
  * real reschedule/cancel is a single distinct doc version.
  */
-exports.onCommunityEventChanged = (0, firestore_1.onDocumentUpdated)('events/{eventId}', (0, monitoring_1.monitored)('onCommunityEventChanged', async (event) => {
+exports.onCommunityEventChanged = (0, firestore_1.onDocumentUpdated)({
+    document: 'events/{eventId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)('onCommunityEventChanged', async (event) => {
     var _a, _b, _c;
     const before = (_a = event.data) === null || _a === void 0 ? void 0 : _a.before.data();
     const after = (_b = event.data) === null || _b === void 0 ? void 0 : _b.after.data();

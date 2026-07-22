@@ -44,11 +44,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onEventMessageCreated = exports.onEventBroadcastCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("../notifications/brand");
 const monitoring_1 = require("../shared/monitoring");
+const pushRuntime_1 = require("../shared/pushRuntime");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const FCM_CHUNK = 500;
-exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}/messages/{messageId}', (0, monitoring_1.monitored)("onEventBroadcastCreated", async (event) => {
+exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)({
+    document: 'events/{eventId}/messages/{messageId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)("onEventBroadcastCreated", async (event) => {
     var _a, _b;
     const snap = event.data;
     if (!snap)
@@ -94,7 +99,7 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{ev
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: { title: `📣 ${title}`, body: text },
+                notification: (0, brand_1.brandPush)(`📣 ${title}`, text),
                 data: { type: 'event_broadcast', eventId },
                 android: { priority: 'high' },
             });
@@ -134,7 +139,10 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)('events/{ev
 /// Regular event-chat messages → push to all attendees (except sender/muted),
 /// matching the 1:1/group notification sound + channel so they appear even when
 /// the app is closed.
-exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)('events/{eventId}/messages/{messageId}', (0, monitoring_1.monitored)("onEventMessageCreated", async (event) => {
+exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)({
+    document: 'events/{eventId}/messages/{messageId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)("onEventMessageCreated", async (event) => {
     var _a, _b;
     const snap = event.data;
     if (!snap)
@@ -182,7 +190,7 @@ exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)('events/{even
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: { title, body },
+                notification: (0, brand_1.brandPush)(`New message in event ${title}`, body),
                 data: { type: 'event_message', eventId, conversationId: eventId },
                 android: {
                     priority: 'high',

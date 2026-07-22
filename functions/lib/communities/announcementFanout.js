@@ -53,7 +53,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.onCommunityAnnouncementCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
+const brand_1 = require("../notifications/brand");
+const prefs_1 = require("../notifications/prefs");
 const monitoring_1 = require("../shared/monitoring");
+const pushRuntime_1 = require("../shared/pushRuntime");
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const FCM_CHUNK = 500;
@@ -62,7 +65,10 @@ const BATCH_LIMIT = 450;
 function preview(text) {
     return text.length > 120 ? `${text.substring(0, 117)}...` : text;
 }
-exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)('communities/{communityId}/messages/{messageId}', (0, monitoring_1.monitored)('onCommunityAnnouncementCreated', async (event) => {
+exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)({
+    document: 'communities/{communityId}/messages/{messageId}',
+    memory: pushRuntime_1.PUSH_MEMORY,
+}, (0, monitoring_1.monitored)('onCommunityAnnouncementCreated', async (event) => {
     var _a, _b;
     const snap = event.data;
     if (!snap)
@@ -119,9 +125,11 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)('com
             break;
         lastDoc = page.docs[page.docs.length - 1];
         // Recipients = members minus the author (and minus banned members).
-        const recipientIds = page.docs
+        const rawIds = page.docs
             .filter((d) => { var _a; return d.id !== senderId && ((_a = d.data()) === null || _a === void 0 ? void 0 : _a.isBanned) !== true; })
             .map((d) => d.id);
+        const allowedSet = await (0, prefs_1.filterUidsByPref)(rawIds, 'communities');
+        const recipientIds = rawIds.filter((u) => allowedSet.has(u));
         total += recipientIds.length;
         // Resolve FCM tokens.
         const userDocs = await Promise.all(recipientIds.map((uid) => db.collection('users').doc(uid).get()));
@@ -136,7 +144,7 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)('com
             try {
                 await admin.messaging().sendEachForMulticast({
                     tokens: chunk,
-                    notification: { title, body },
+                    notification: (0, brand_1.brandPush)(title, body),
                     data: dataPayload,
                     android: {
                         priority: 'high',
