@@ -141,8 +141,13 @@ class NotificationEntity extends Equatable {
     return 'social';
   }
 
-  /// Whether this notification should be SHOWN given the user's category
-  /// preferences (the bell list mirrors Notification Settings).
+  /// Whether this notification should be SHOWN in the in-app bell given the
+  /// user's category preferences (the bell mirrors Notification Settings).
+  /// NOTE: `social` (follows, likes, coin gifts) is always shown in-app — its
+  /// preference default is OFF only to keep PUSH quiet, and hiding these
+  /// low-volume, important in-app signals (e.g. a coin gift you received) would
+  /// be surprising. The categories that default ON hide when the user turns
+  /// them off — which is the case the request is about (chat off -> no chat).
   bool allowedBy(NotificationPreferences prefs) {
     switch (category) {
       case 'messages':
@@ -154,7 +159,6 @@ class NotificationEntity extends Equatable {
       case 'account':
         return prefs.account;
       case 'social':
-        return prefs.social;
       default:
         return true;
     }
