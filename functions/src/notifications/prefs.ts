@@ -17,7 +17,6 @@ export type NotifCategory =
   // Granular per-channel categories (match the client settings screen).
   | 'exchanges'
   | 'groups'
-  | 'business'
   | 'eventsChat'
   | 'communityChat'
   | 'announcements'
@@ -38,7 +37,6 @@ export type NotifCategory =
 const CATEGORY_DEFAULTS: Record<string, boolean> = {
   exchanges: true,
   groups: true,
-  business: false,
   eventsChat: true,
   communityChat: false,
   announcements: true,
@@ -59,7 +57,6 @@ function defaultFor(category: string): boolean {
 export function categoryForType(type: string): NotifCategory {
   const t = (type || '').toLowerCase();
   if (t.includes('group')) return 'groups';
-  if (t.includes('business') || t.includes('biz')) return 'business';
   if (t.includes('announce')) return 'announcements';
   if (t.includes('tip')) return 'tips';
   if (t.includes('event') && (t.includes('message') || t.includes('chat'))) {

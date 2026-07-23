@@ -356,13 +356,11 @@ export const onNewMessagePush = onDocumentCreated(
             return;
           }
 
-          // Per-category notification preference: a business-inquiry
-          // conversation is gated by the 'business' category; a normal 1:1 by
-          // 'exchanges'.
-          const msgCategory = convData.businessInquiry === true
-            ? 'business'
-            : 'exchanges';
-          if (!(await shouldNotify(recipientId, msgCategory))) return;
+          // BOTH normal 1:1 and business-inquiry conversations notify under the
+          // always-on 'exchanges' channel. Business chats must ALWAYS be visible
+          // to everyone, so a message from/to a business is delivered exactly
+          // like a message from/to a normal person — never separately gated.
+          if (!(await shouldNotify(recipientId, 'exchanges'))) return;
 
           await sendPushToUser(
             recipientId,
