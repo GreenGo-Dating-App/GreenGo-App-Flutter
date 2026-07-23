@@ -39,25 +39,37 @@ Future<void> openConnectChat(
   final tierGate = TierGate();
 
   // Brief modal loading barrier while we resolve/create the conversation.
+  //
+  // CRITICAL: showDialog defaults to useRootNavigator:true, so the barrier is
+  // pushed onto the ROOT navigator. In the Apple-safe build the Explore /
+  // Discovery tabs run inside their OWN nested tab-Navigator, so popping the
+  // *nearest* navigator (as the old code did) targeted the WRONG navigator and
+  // the barrier was never dismissed — THE persistent endless-spinner cause. We
+  // capture the dialog's own context and pop THAT, which always resolves to the
+  // navigator the barrier actually lives on, regardless of nested tab stacks.
+  BuildContext? barrierContext;
+  var barrierUp = true;
   showDialog<void>(
     context: context,
     barrierDismissible: false,
     barrierColor: Colors.black54,
-    builder: (_) => const Center(
-      child: CircularProgressIndicator(color: AppColors.richGold),
-    ),
+    builder: (dialogCtx) {
+      barrierContext = dialogCtx;
+      return const Center(
+        child: CircularProgressIndicator(color: AppColors.richGold),
+      );
+    },
   );
 
-  // GUARANTEED barrier dismissal. Every Firestore read below is time-bounded,
-  // and this closure (called in success, deny, catch AND finally) makes it
-  // impossible for the spinner to stay up forever — the persistent P0 was an
-  // unbounded .get() leaving an await pending, so the barrier's pop() was never
-  // reached and `catch` never fired.
-  var barrierUp = true;
+  // GUARANTEED barrier dismissal (called in success, deny, catch AND finally),
+  // combined with the time-bounded reads below, makes it impossible for the
+  // spinner to outlive this call.
   void dismissBarrier() {
-    if (barrierUp && navigator.canPop()) {
-      navigator.pop();
-      barrierUp = false;
+    if (!barrierUp) return;
+    barrierUp = false;
+    final bc = barrierContext;
+    if (bc != null && bc.mounted) {
+      Navigator.of(bc).pop();
     }
   }
 

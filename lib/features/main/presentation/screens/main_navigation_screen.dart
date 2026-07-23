@@ -2205,9 +2205,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       builder: (context, state) {
         var coinBalance = 0;
         if (state is CoinBalanceLoaded) {
-          coinBalance = state.balance.availableCoins;
+          coinBalance = state.balance.totalCoins;
         } else if (state is CoinBalanceUpdated) {
-          coinBalance = state.balance.availableCoins;
+          coinBalance = state.balance.totalCoins;
         }
 
         return GestureDetector(
@@ -2340,9 +2340,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       bloc: _coinBloc,
       builder: (context, state) {
         if (state is CoinBalanceLoaded) {
-          _lastKnownCoins = state.balance.availableCoins;
+          _lastKnownCoins = state.balance.totalCoins;
         } else if (state is CoinBalanceUpdated) {
-          _lastKnownCoins = state.balance.availableCoins;
+          _lastKnownCoins = state.balance.totalCoins;
         }
         final coins = _lastKnownCoins;
         return Padding(

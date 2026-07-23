@@ -349,7 +349,7 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
           (canAfford) => emit(FeatureAffordabilityChecked(
             canAfford: canAfford,
             cost: event.cost,
-            currentBalance: balance.availableCoins,
+            currentBalance: balance.totalCoins,
           )),
         );
       },

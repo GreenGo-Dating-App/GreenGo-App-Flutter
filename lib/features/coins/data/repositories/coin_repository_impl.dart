@@ -295,7 +295,7 @@ class CoinRepositoryImpl implements CoinRepository {
       }
 
       final balance = await remoteDataSource.getBalance(userId);
-      return Right(balance.availableCoins >= cost);
+      return Right(balance.totalCoins >= cost);
     } catch (e) {
       return Left(ServerFailure(e.toString()));
     }
@@ -346,7 +346,7 @@ class CoinRepositoryImpl implements CoinRepository {
 
       // Check if sender has enough coins
       final balance = await remoteDataSource.getBalance(senderId);
-      if (balance.availableCoins < amount) {
+      if (balance.totalCoins < amount) {
         return const Left(ServerFailure('Insufficient coins'));
       }
 
