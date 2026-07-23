@@ -356,8 +356,13 @@ export const onNewMessagePush = onDocumentCreated(
             return;
           }
 
-          // Per-category notification preference (messages).
-          if (!(await shouldNotify(recipientId, 'messages'))) return;
+          // Per-category notification preference: a business-inquiry
+          // conversation is gated by the 'business' category; a normal 1:1 by
+          // 'exchanges'.
+          const msgCategory = convData.businessInquiry === true
+            ? 'business'
+            : 'exchanges';
+          if (!(await shouldNotify(recipientId, msgCategory))) return;
 
           await sendPushToUser(
             recipientId,

@@ -7323,6 +7323,55 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notificationCategories => 'Catégories de notifications';
 
   @override
+  String get notificationCatExchanges => 'Discussions d\'échange';
+
+  @override
+  String get notificationCatExchangesSubtitle =>
+      'Messages de vos échanges en tête-à-tête';
+
+  @override
+  String get notificationCatGroups => 'Discussions de groupe';
+
+  @override
+  String get notificationCatGroupsSubtitle =>
+      'Messages dans vos discussions de groupe';
+
+  @override
+  String get notificationCatBusiness => 'Discussions professionnelles';
+
+  @override
+  String get notificationCatBusinessSubtitle =>
+      'Messages des entreprises que vous contactez';
+
+  @override
+  String get notificationCatEventsChat => 'Discussions d\'événements';
+
+  @override
+  String get notificationCatEventsChatSubtitle =>
+      'Messages dans les événements que vous avez rejoints';
+
+  @override
+  String get notificationCatCommunityChat => 'Discussions de communauté';
+
+  @override
+  String get notificationCatCommunityChatSubtitle =>
+      'Messages dans le chat de la communauté';
+
+  @override
+  String get notificationCatAnnouncements => 'Annonces et événements';
+
+  @override
+  String get notificationCatAnnouncementsSubtitle =>
+      'Annonces et événements de la communauté';
+
+  @override
+  String get notificationCatTips => 'Astuces';
+
+  @override
+  String get notificationCatTipsSubtitle =>
+      'Astuces et suggestions de la communauté';
+
+  @override
   String get notificationCatMessages => 'Messages';
 
   @override

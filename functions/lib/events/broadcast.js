@@ -45,6 +45,7 @@ exports.onEventMessageCreated = exports.onEventBroadcastCreated = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 const brand_1 = require("../notifications/brand");
+const prefs_1 = require("../notifications/prefs");
 const monitoring_1 = require("../shared/monitoring");
 const pushRuntime_1 = require("../shared/pushRuntime");
 require("../shared/firebaseAdmin");
@@ -175,7 +176,13 @@ exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)({
         .map((d) => d.id);
     if (recipientIds.length === 0)
         return;
-    const tokenDocs = await Promise.all(recipientIds.map((u) => db.collection('users').doc(u).get()));
+    // Per-category notification preference (event chats). Honors the user's
+    // "Event chats" toggle — previously event-chat messages ignored prefs.
+    const allowedSet = await (0, prefs_1.filterUidsByPref)(recipientIds, 'eventsChat');
+    const prefRecipients = recipientIds.filter((u) => allowedSet.has(u));
+    if (prefRecipients.length === 0)
+        return;
+    const tokenDocs = await Promise.all(prefRecipients.map((u) => db.collection('users').doc(u).get()));
     const tokens = [];
     for (const td of tokenDocs) {
         const t = (_b = td.data()) === null || _b === void 0 ? void 0 : _b.fcmToken;

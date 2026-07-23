@@ -7297,6 +7297,54 @@ class AppLocalizationsDe extends AppLocalizations {
   String get notificationCategories => 'Benachrichtigungskategorien';
 
   @override
+  String get notificationCatExchanges => 'Austausch-Chats';
+
+  @override
+  String get notificationCatExchangesSubtitle =>
+      'Nachrichten aus deinen 1:1-Unterhaltungen';
+
+  @override
+  String get notificationCatGroups => 'Gruppenchats';
+
+  @override
+  String get notificationCatGroupsSubtitle =>
+      'Nachrichten in deinen Gruppenchats';
+
+  @override
+  String get notificationCatBusiness => 'Business-Chats';
+
+  @override
+  String get notificationCatBusinessSubtitle =>
+      'Nachrichten von Unternehmen, die du kontaktierst';
+
+  @override
+  String get notificationCatEventsChat => 'Event-Chats';
+
+  @override
+  String get notificationCatEventsChatSubtitle =>
+      'Nachrichten in Events, denen du beigetreten bist';
+
+  @override
+  String get notificationCatCommunityChat => 'Community-Chats';
+
+  @override
+  String get notificationCatCommunityChatSubtitle =>
+      'Nachrichten im Community-Chat';
+
+  @override
+  String get notificationCatAnnouncements => 'Ankündigungen & Events';
+
+  @override
+  String get notificationCatAnnouncementsSubtitle =>
+      'Community-Ankündigungen und Events';
+
+  @override
+  String get notificationCatTips => 'Tipps';
+
+  @override
+  String get notificationCatTipsSubtitle => 'Community-Tipps und Vorschläge';
+
+  @override
   String get notificationCatMessages => 'Nachrichten';
 
   @override

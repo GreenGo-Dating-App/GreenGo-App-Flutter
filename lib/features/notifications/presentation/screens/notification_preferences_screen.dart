@@ -69,39 +69,53 @@ class NotificationPreferencesScreen extends StatelessWidget {
                   // ── Categories ──
                   _section(title: l10n.notificationCategories, children: [
                     _switch(
-                      title: l10n.notificationCatMessages,
-                      subtitle: l10n.notificationCatMessagesSubtitle,
-                      value: prefs.messages,
+                      title: l10n.notificationCatExchanges,
+                      subtitle: l10n.notificationCatExchangesSubtitle,
+                      value: prefs.exchanges,
                       enabled: on,
-                      onChanged: (v) => update(prefs.copyWith(messages: v)),
+                      onChanged: (v) => update(prefs.copyWith(exchanges: v)),
                     ),
                     _switch(
-                      title: l10n.notificationCatEvents,
-                      subtitle: l10n.notificationCatEventsSubtitle,
-                      value: prefs.events,
+                      title: l10n.notificationCatGroups,
+                      subtitle: l10n.notificationCatGroupsSubtitle,
+                      value: prefs.groups,
                       enabled: on,
-                      onChanged: (v) => update(prefs.copyWith(events: v)),
+                      onChanged: (v) => update(prefs.copyWith(groups: v)),
                     ),
                     _switch(
-                      title: l10n.notificationCatCommunities,
-                      subtitle: l10n.notificationCatCommunitiesSubtitle,
-                      value: prefs.communities,
+                      title: l10n.notificationCatBusiness,
+                      subtitle: l10n.notificationCatBusinessSubtitle,
+                      value: prefs.business,
                       enabled: on,
-                      onChanged: (v) => update(prefs.copyWith(communities: v)),
+                      onChanged: (v) => update(prefs.copyWith(business: v)),
                     ),
                     _switch(
-                      title: l10n.notificationCatSocial,
-                      subtitle: l10n.notificationCatSocialSubtitle,
-                      value: prefs.social,
+                      title: l10n.notificationCatEventsChat,
+                      subtitle: l10n.notificationCatEventsChatSubtitle,
+                      value: prefs.eventsChat,
                       enabled: on,
-                      onChanged: (v) => update(prefs.copyWith(social: v)),
+                      onChanged: (v) => update(prefs.copyWith(eventsChat: v)),
                     ),
                     _switch(
-                      title: l10n.notificationCatAccount,
-                      subtitle: l10n.notificationCatAccountSubtitle,
-                      value: prefs.account,
+                      title: l10n.notificationCatCommunityChat,
+                      subtitle: l10n.notificationCatCommunityChatSubtitle,
+                      value: prefs.communityChat,
                       enabled: on,
-                      onChanged: (v) => update(prefs.copyWith(account: v)),
+                      onChanged: (v) => update(prefs.copyWith(communityChat: v)),
+                    ),
+                    _switch(
+                      title: l10n.notificationCatAnnouncements,
+                      subtitle: l10n.notificationCatAnnouncementsSubtitle,
+                      value: prefs.announcements,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(announcements: v)),
+                    ),
+                    _switch(
+                      title: l10n.notificationCatTips,
+                      subtitle: l10n.notificationCatTipsSubtitle,
+                      value: prefs.tips,
+                      enabled: on,
+                      onChanged: (v) => update(prefs.copyWith(tips: v)),
                     ),
                   ]),
                   const Divider(height: 32),
@@ -113,7 +127,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
                     children: [
                       _CityChips(
                         cities: prefs.eventCities,
-                        enabled: on && prefs.events,
+                        enabled: on && prefs.announcements,
                         onRemove: (city) => update(prefs.copyWith(
                           eventCities: prefs.eventCities
                               .where((c) => c != city)

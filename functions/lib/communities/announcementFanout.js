@@ -128,7 +128,7 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)({
         const rawIds = page.docs
             .filter((d) => { var _a; return d.id !== senderId && ((_a = d.data()) === null || _a === void 0 ? void 0 : _a.isBanned) !== true; })
             .map((d) => d.id);
-        const allowedSet = await (0, prefs_1.filterUidsByPref)(rawIds, 'communities');
+        const allowedSet = await (0, prefs_1.filterUidsByPref)(rawIds, 'announcements');
         const recipientIds = rawIds.filter((u) => allowedSet.has(u));
         total += recipientIds.length;
         // Resolve FCM tokens.

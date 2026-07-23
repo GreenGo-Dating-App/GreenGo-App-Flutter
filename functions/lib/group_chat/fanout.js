@@ -193,8 +193,8 @@ exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)({
     });
     if (activeRecipients.length === 0)
         return;
-    // Per-category notification preference (messages).
-    const allowed = await (0, prefs_1.filterUidsByPref)(activeRecipients, 'messages');
+    // Per-category notification preference (group chats).
+    const allowed = await (0, prefs_1.filterUidsByPref)(activeRecipients, 'groups');
     const prefRecipients = activeRecipients.filter((u) => allowed.has(u));
     if (prefRecipients.length === 0)
         return;

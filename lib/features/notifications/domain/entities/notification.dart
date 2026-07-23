@@ -151,15 +151,18 @@ class NotificationEntity extends Equatable {
   bool allowedBy(NotificationPreferences prefs) {
     switch (category) {
       case 'messages':
-        return prefs.messages;
+        // Chats in general (the bell can't tell exchange/group/business apart
+        // from the coarse type string) — gate on the primary chat toggle.
+        return prefs.exchanges;
       case 'events':
-        return prefs.events;
+        return prefs.eventsChat;
       case 'communities':
-        return prefs.communities;
+        return prefs.announcements;
       case 'account':
-        return prefs.account;
       case 'social':
       default:
+        // Account + social signals (verification, coin gifts, follows) stay
+        // visible in the in-app bell regardless of PUSH preferences.
         return true;
     }
   }

@@ -304,8 +304,13 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
                 (0, utils_1.logInfo)(`onNewMessagePush: ${senderId} <-> ${recipientId} blocked, skip`);
                 return;
             }
-            // Per-category notification preference (messages).
-            if (!(await (0, prefs_1.shouldNotify)(recipientId, 'messages')))
+            // Per-category notification preference: a business-inquiry
+            // conversation is gated by the 'business' category; a normal 1:1 by
+            // 'exchanges'.
+            const msgCategory = convData.businessInquiry === true
+                ? 'business'
+                : 'exchanges';
+            if (!(await (0, prefs_1.shouldNotify)(recipientId, msgCategory)))
                 return;
             await sendPushToUser(recipientId, 'newMessage', senderName, preview, {
                 conversationId: convId,
