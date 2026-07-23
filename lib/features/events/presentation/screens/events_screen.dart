@@ -14,6 +14,7 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/platform/web_media.dart';
 import '../../../../core/services/user_directory_service.dart';
@@ -2070,8 +2071,10 @@ class EventDetailsScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    event.title,
+                  TranslatableText(
+                    text: event.title,
+                    targetLang:
+                        Localizations.localeOf(context).languageCode,
                     style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 24,
@@ -2191,8 +2194,10 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  Text(
-                    event.description,
+                  TranslatableText(
+                    text: event.description,
+                    targetLang:
+                        Localizations.localeOf(context).languageCode,
                     style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 14,
