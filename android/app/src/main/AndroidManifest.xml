@@ -117,23 +117,12 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="${GOOGLE_MAPS_API_KEY}"/>
 
-        <!-- Disable automatic Firebase data collection for emulator use -->
-        <meta-data
-            android:name="firebase_crashlytics_collection_enabled"
-            android:value="false" />
-        <meta-data
-            android:name="firebase_analytics_collection_enabled"
-            android:value="false" />
-        <meta-data
-            android:name="firebase_data_collection_default_enabled"
-            android:value="false" />
-
-        <!-- Disable automatic Firebase initialization to allow manual init with emulators -->
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="${applicationId}.firebaseinitprovider"
-            android:exported="false"
-            tools:node="remove" />
+        <!-- NOTE: Firebase auto-init (FirebaseInitProvider) and data collection
+             are intentionally LEFT ENABLED here for production. Disabling them
+             broke FCM's automatic background/terminated notification DISPLAY
+             (messages were received but never shown). The emulator-only
+             overrides that disable them now live in src/debug/AndroidManifest.xml
+             so they apply to debug builds ONLY. -->
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
