@@ -2089,9 +2089,16 @@ class _ChatScreenState extends State<ChatScreen> {
     return l10n.chatOffline;
   }
 
-  /// When the other party is a business, the chat shows the STOREFRONT identity
-  /// (business name + cover image) instead of the owner's personal name/photo.
+  /// Whether THIS conversation is a business (user-to-storefront) chat, keyed off
+  /// the synthetic id `bizsearch_…` set by openConnectChat. A personal 1:1 chat
+  /// with someone who also runs a store uses `search_…` and stays personal.
+  bool get _isBusinessChat => widget.matchId.startsWith('bizsearch_');
+
+  /// When this is a BUSINESS chat with a storefront owner, the header shows the
+  /// STOREFRONT identity (business name + cover image) instead of the owner's
+  /// personal name/photo. A person-to-person chat always shows the person.
   bool get _showBusinessIdentity =>
+      _isBusinessChat &&
       widget.otherUserProfile.isBusiness &&
       (widget.otherUserProfile.businessName?.isNotEmpty ?? false);
 
