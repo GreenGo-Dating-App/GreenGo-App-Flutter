@@ -100,7 +100,7 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
       const rawIds = page.docs
         .filter((d) => d.id !== senderId && d.data()?.isBanned !== true)
         .map((d) => d.id);
-      const allowedSet = await filterUidsByPref(rawIds, 'communities');
+      const allowedSet = await filterUidsByPref(rawIds, 'announcements');
       const recipientIds = rawIds.filter((u) => allowedSet.has(u));
       total += recipientIds.length;
 

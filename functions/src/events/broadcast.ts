@@ -10,6 +10,7 @@
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
+import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
@@ -144,8 +145,14 @@ export const onEventMessageCreated = onDocumentCreated(
       .map((d) => d.id);
     if (recipientIds.length === 0) return;
 
+    // Per-category notification preference (event chats). Honors the user's
+    // "Event chats" toggle — previously event-chat messages ignored prefs.
+    const allowedSet = await filterUidsByPref(recipientIds, 'eventsChat');
+    const prefRecipients = recipientIds.filter((u) => allowedSet.has(u));
+    if (prefRecipients.length === 0) return;
+
     const tokenDocs = await Promise.all(
-      recipientIds.map((u) => db.collection('users').doc(u).get())
+      prefRecipients.map((u) => db.collection('users').doc(u).get())
     );
     const tokens: string[] = [];
     for (const td of tokenDocs) {

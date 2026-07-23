@@ -7267,6 +7267,53 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notificationCategories => 'Categorias de notificações';
 
   @override
+  String get notificationCatExchanges => 'Conversas de intercâmbio';
+
+  @override
+  String get notificationCatExchangesSubtitle =>
+      'Mensagens das suas conversas individuais';
+
+  @override
+  String get notificationCatGroups => 'Conversas em grupo';
+
+  @override
+  String get notificationCatGroupsSubtitle => 'Mensagens nos seus grupos';
+
+  @override
+  String get notificationCatBusiness => 'Conversas comerciais';
+
+  @override
+  String get notificationCatBusinessSubtitle =>
+      'Mensagens de empresas que você contata';
+
+  @override
+  String get notificationCatEventsChat => 'Conversas de eventos';
+
+  @override
+  String get notificationCatEventsChatSubtitle =>
+      'Mensagens dentro dos eventos que você entrou';
+
+  @override
+  String get notificationCatCommunityChat => 'Conversas da comunidade';
+
+  @override
+  String get notificationCatCommunityChatSubtitle =>
+      'Mensagens no chat da comunidade';
+
+  @override
+  String get notificationCatAnnouncements => 'Anúncios e eventos';
+
+  @override
+  String get notificationCatAnnouncementsSubtitle =>
+      'Anúncios e eventos da comunidade';
+
+  @override
+  String get notificationCatTips => 'Dicas';
+
+  @override
+  String get notificationCatTipsSubtitle => 'Dicas e sugestões da comunidade';
+
+  @override
   String get notificationCatMessages => 'Mensagens';
 
   @override
@@ -20557,6 +20604,53 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get notificationCategories => 'Categorias de notificações';
+
+  @override
+  String get notificationCatExchanges => 'Conversas de intercâmbio';
+
+  @override
+  String get notificationCatExchangesSubtitle =>
+      'Mensagens das suas conversas individuais';
+
+  @override
+  String get notificationCatGroups => 'Conversas em grupo';
+
+  @override
+  String get notificationCatGroupsSubtitle => 'Mensagens nos seus grupos';
+
+  @override
+  String get notificationCatBusiness => 'Conversas comerciais';
+
+  @override
+  String get notificationCatBusinessSubtitle =>
+      'Mensagens de empresas que você contata';
+
+  @override
+  String get notificationCatEventsChat => 'Conversas de eventos';
+
+  @override
+  String get notificationCatEventsChatSubtitle =>
+      'Mensagens dentro dos eventos que você entrou';
+
+  @override
+  String get notificationCatCommunityChat => 'Conversas da comunidade';
+
+  @override
+  String get notificationCatCommunityChatSubtitle =>
+      'Mensagens no chat da comunidade';
+
+  @override
+  String get notificationCatAnnouncements => 'Anúncios e eventos';
+
+  @override
+  String get notificationCatAnnouncementsSubtitle =>
+      'Anúncios e eventos da comunidade';
+
+  @override
+  String get notificationCatTips => 'Dicas';
+
+  @override
+  String get notificationCatTipsSubtitle => 'Dicas e sugestões da comunidade';
 
   @override
   String get notificationCatMessages => 'Mensagens';

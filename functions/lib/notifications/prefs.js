@@ -49,20 +49,58 @@ exports.filterUidsByPref = filterUidsByPref;
 const admin = __importStar(require("firebase-admin"));
 require("../shared/firebaseAdmin");
 const db = admin.firestore();
+/**
+ * Per-category default (used when the user has NO prefs doc, or the specific
+ * category key is absent). Only exchanges, groups, community announcements and
+ * event chats are ON by default; business chat, community chat and tips are OFF
+ * until the user opts in. Legacy buckets default ON (fail-open).
+ */
+const CATEGORY_DEFAULTS = {
+    exchanges: true,
+    groups: true,
+    business: false,
+    eventsChat: true,
+    communityChat: false,
+    announcements: true,
+    tips: false,
+    // legacy
+    messages: true,
+    events: true,
+    communities: true,
+    social: true,
+    account: true,
+};
+function defaultFor(category) {
+    var _a;
+    return (_a = CATEGORY_DEFAULTS[category]) !== null && _a !== void 0 ? _a : true;
+}
 /** Map a notification `type`/`action` string to its preference category. */
 function categoryForType(type) {
     const t = (type || '').toLowerCase();
+    if (t.includes('group'))
+        return 'groups';
+    if (t.includes('business') || t.includes('biz'))
+        return 'business';
+    if (t.includes('announce'))
+        return 'announcements';
+    if (t.includes('tip'))
+        return 'tips';
+    if (t.includes('event') && (t.includes('message') || t.includes('chat'))) {
+        return 'eventsChat';
+    }
+    if (t.includes('communit') && (t.includes('message') || t.includes('chat'))) {
+        return 'communityChat';
+    }
     if (t.includes('message') || t.includes('chat') || t.includes('support')) {
-        return 'messages';
+        return 'exchanges';
     }
     if (t.includes('event') ||
         t.includes('rsvp') ||
         t.includes('attend') ||
-        t.includes('reminder')) {
-        return 'events';
-    }
-    if (t.includes('announce') || t.includes('member') || t.includes('communit')) {
-        return 'communities';
+        t.includes('reminder') ||
+        t.includes('member') ||
+        t.includes('communit')) {
+        return 'announcements';
     }
     if (t.includes('approv') ||
         t.includes('verif') ||
@@ -93,12 +131,15 @@ async function shouldNotify(uid, category) {
     try {
         const snap = await db.collection('notification_preferences').doc(uid).get();
         if (!snap.exists)
-            return true;
+            return defaultFor(category);
         const d = snap.data() || {};
         if (d.pushEnabled === false)
             return false;
         const cats = (d.categories || {});
-        if (cats[category] === false)
+        const raw = cats[category];
+        // Absent key → per-category default; explicit false → blocked.
+        const catAllowed = raw === undefined ? defaultFor(category) : raw !== false;
+        if (!catAllowed)
             return false;
         if (d.quietHoursEnabled === true &&
             inQuietHours(d.quietHoursStart, d.quietHoursEnd, Number(d.tzOffsetMinutes) || 0)) {
@@ -127,14 +168,17 @@ async function filterUidsByPref(uids, category) {
             snaps.forEach((snap, idx) => {
                 const uid = slice[idx];
                 if (!snap.exists) {
-                    allowed.add(uid);
+                    if (defaultFor(category))
+                        allowed.add(uid);
                     return;
                 }
                 const d = snap.data() || {};
                 if (d.pushEnabled === false)
                     return;
                 const cats = (d.categories || {});
-                if (cats[category] === false)
+                const raw = cats[category];
+                const catAllowed = raw === undefined ? defaultFor(category) : raw !== false;
+                if (!catAllowed)
                     return;
                 if (d.quietHoursEnabled === true &&
                     inQuietHours(d.quietHoursStart, d.quietHoursEnd, Number(d.tzOffsetMinutes) || 0)) {

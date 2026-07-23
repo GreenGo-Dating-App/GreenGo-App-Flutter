@@ -171,8 +171,8 @@ export const onGroupMessageCreated = onDocumentCreated(
     });
     if (activeRecipients.length === 0) return;
 
-    // Per-category notification preference (messages).
-    const allowed = await filterUidsByPref(activeRecipients, 'messages');
+    // Per-category notification preference (group chats).
+    const allowed = await filterUidsByPref(activeRecipients, 'groups');
     const prefRecipients = activeRecipients.filter((u) => allowed.has(u));
     if (prefRecipients.length === 0) return;
 

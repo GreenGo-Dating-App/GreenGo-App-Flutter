@@ -12960,6 +12960,90 @@ abstract class AppLocalizations {
   /// **'Notification categories'**
   String get notificationCategories;
 
+  /// No description provided for @notificationCatExchanges.
+  ///
+  /// In en, this message translates to:
+  /// **'Exchange chats'**
+  String get notificationCatExchanges;
+
+  /// No description provided for @notificationCatExchangesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages from your 1:1 exchanges'**
+  String get notificationCatExchangesSubtitle;
+
+  /// No description provided for @notificationCatGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'Group chats'**
+  String get notificationCatGroups;
+
+  /// No description provided for @notificationCatGroupsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages in your group chats'**
+  String get notificationCatGroupsSubtitle;
+
+  /// No description provided for @notificationCatBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'Business chats'**
+  String get notificationCatBusiness;
+
+  /// No description provided for @notificationCatBusinessSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages from businesses you contact'**
+  String get notificationCatBusinessSubtitle;
+
+  /// No description provided for @notificationCatEventsChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Event chats'**
+  String get notificationCatEventsChat;
+
+  /// No description provided for @notificationCatEventsChatSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages inside events you joined'**
+  String get notificationCatEventsChatSubtitle;
+
+  /// No description provided for @notificationCatCommunityChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Community chats'**
+  String get notificationCatCommunityChat;
+
+  /// No description provided for @notificationCatCommunityChatSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages in the community chat'**
+  String get notificationCatCommunityChatSubtitle;
+
+  /// No description provided for @notificationCatAnnouncements.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcements & events'**
+  String get notificationCatAnnouncements;
+
+  /// No description provided for @notificationCatAnnouncementsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Community announcements and events'**
+  String get notificationCatAnnouncementsSubtitle;
+
+  /// No description provided for @notificationCatTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Tips'**
+  String get notificationCatTips;
+
+  /// No description provided for @notificationCatTipsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Community tips and suggestions'**
+  String get notificationCatTipsSubtitle;
+
   /// No description provided for @notificationCatMessages.
   ///
   /// In en, this message translates to:

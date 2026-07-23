@@ -11,11 +11,16 @@ class NotificationPreferences extends Equatable {
   const NotificationPreferences({
     required this.userId,
     this.pushEnabled = true,
-    this.messages = true,
-    this.events = true,
-    this.communities = true,
-    this.social = true,
-    this.account = true,
+    // Granular per-channel categories. Defaults: only exchanges (1:1), groups,
+    // community announcements and event chats are ON; business chat, community
+    // chat and tips are OFF until the user opts in.
+    this.exchanges = true,
+    this.groups = true,
+    this.business = false,
+    this.eventsChat = true,
+    this.communityChat = false,
+    this.announcements = true,
+    this.tips = false,
     this.soundEnabled = true,
     this.vibrationEnabled = true,
     this.quietHoursStart = '22:00',
@@ -29,21 +34,27 @@ class NotificationPreferences extends Equatable {
   /// Master switch — off silences every push (OS permission is separate).
   final bool pushEnabled;
 
-  // ── Categories ───────────────────────────────────────────────────────────
-  /// 1:1, group, business and event chat + support replies.
-  final bool messages;
+  // ── Categories (per notification channel) ────────────────────────────────
+  /// 1:1 "exchange" chats (person-to-person). Default ON.
+  final bool exchanges;
 
-  /// Community/business events, reminders, RSVPs, broadcasts, city alerts.
-  final bool events;
+  /// Group chats. Default ON.
+  final bool groups;
 
-  /// Community announcements and new members.
-  final bool communities;
+  /// Business chats (messaging a storefront). Default OFF.
+  final bool business;
 
-  /// Profile views, business follows/ratings, boosts.
-  final bool social;
+  /// Event chats (messages inside an event). Default ON.
+  final bool eventsChat;
 
-  /// Verification, admin broadcasts, account status.
-  final bool account;
+  /// Community chats (the community chat tab). Default OFF.
+  final bool communityChat;
+
+  /// Community announcements + community events. Default ON.
+  final bool announcements;
+
+  /// Community tips. Default OFF.
+  final bool tips;
 
   // ── Delivery ─────────────────────────────────────────────────────────────
   final bool soundEnabled;
@@ -77,11 +88,13 @@ class NotificationPreferences extends Equatable {
   NotificationPreferences copyWith({
     String? userId,
     bool? pushEnabled,
-    bool? messages,
-    bool? events,
-    bool? communities,
-    bool? social,
-    bool? account,
+    bool? exchanges,
+    bool? groups,
+    bool? business,
+    bool? eventsChat,
+    bool? communityChat,
+    bool? announcements,
+    bool? tips,
     bool? soundEnabled,
     bool? vibrationEnabled,
     String? quietHoursStart,
@@ -92,11 +105,13 @@ class NotificationPreferences extends Equatable {
     return NotificationPreferences(
       userId: userId ?? this.userId,
       pushEnabled: pushEnabled ?? this.pushEnabled,
-      messages: messages ?? this.messages,
-      events: events ?? this.events,
-      communities: communities ?? this.communities,
-      social: social ?? this.social,
-      account: account ?? this.account,
+      exchanges: exchanges ?? this.exchanges,
+      groups: groups ?? this.groups,
+      business: business ?? this.business,
+      eventsChat: eventsChat ?? this.eventsChat,
+      communityChat: communityChat ?? this.communityChat,
+      announcements: announcements ?? this.announcements,
+      tips: tips ?? this.tips,
       soundEnabled: soundEnabled ?? this.soundEnabled,
       vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
       quietHoursStart: quietHoursStart ?? this.quietHoursStart,
@@ -110,11 +125,13 @@ class NotificationPreferences extends Equatable {
   List<Object?> get props => [
         userId,
         pushEnabled,
-        messages,
-        events,
-        communities,
-        social,
-        account,
+        exchanges,
+        groups,
+        business,
+        eventsChat,
+        communityChat,
+        announcements,
+        tips,
         soundEnabled,
         vibrationEnabled,
         quietHoursStart,
