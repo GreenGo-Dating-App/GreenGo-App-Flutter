@@ -94,11 +94,11 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
 
   /// Pre-tier fallback free-reveal ceiling, used only until the user's tier is
   /// resolved on load (then replaced by [TierEntitlements.discoveryFreeReveal]).
-  static const int kFreeRevealLimit = 30; // adjustable
+  static const int kFreeRevealLimit = 100; // adjustable (Base tier default)
   /// Coins charged each time the user chooses to raise the discovery limit.
-  static const int kCoinsToSeeMore = 20; // adjustable
+  static const int kCoinsToSeeMore = 25; // adjustable
   /// How many extra profiles a single coin-spend unlocks.
-  static const int kRevealChunk = 20; // adjustable
+  static const int kRevealChunk = 25; // adjustable
 
   // null == still loading; empty == loaded but nothing to show. Excludes self.
   List<MatchCandidate>? _candidates;
@@ -1189,7 +1189,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
 
       final hasEnough = balanceResult.fold(
         (_) => false,
-        (balance) => balance.availableCoins >= kCoinsToSeeMore,
+        (balance) => balance.totalCoins >= kCoinsToSeeMore,
       );
 
       if (!hasEnough) {

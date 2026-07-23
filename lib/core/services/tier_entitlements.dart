@@ -102,10 +102,13 @@ class TierEntitlements {
   // --- Discovery: profiles a viewer can reveal for FREE before the coin gate. ---
   // Starting reveal ceiling in the network-discovery grid; beyond it the user
   // spends coins to "see more". Platinum is effectively uncapped.
-  static const int _discoveryFreeRevealFree = 30; // adjustable
-  static const int _discoveryFreeRevealSilver = 100; // adjustable
-  static const int _discoveryFreeRevealGold = 300; // adjustable
-  static const int _discoveryFreeRevealPlatinum = 100000; // adjustable (≈∞)
+  // People a viewer can see at a time in discovery, per tier (Base → Platinum).
+  // Beyond the cap, +25 more people can be unlocked for 25 coins (see
+  // network_discovery_screen.dart kRevealChunk / kCoinsToSeeMore).
+  static const int _discoveryFreeRevealFree = 100; // Base: 100 at a time
+  static const int _discoveryFreeRevealSilver = 200; // Silver: 200
+  static const int _discoveryFreeRevealGold = 300; // Gold: 300
+  static const int _discoveryFreeRevealPlatinum = 500; // Platinum: 500
 
   // --- TTS / translation cost: FLAT for ALL tiers (no discounts, no quota). ---
   // NOTE: this is a global (tier-independent) cost. It lives here as the
