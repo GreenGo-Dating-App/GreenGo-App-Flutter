@@ -444,16 +444,15 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.lock_outline,
                         onTap: () => _navigateToChangePassword(context),
                       ),
-                      // Notification Settings — paid tiers only (Silver/Gold/Platinum).
-                      if (activeProfile.membershipTier != MembershipTier.free) ...[
-                        const SizedBox(height: 16),
-                        EditSectionCard(
-                          title: AppLocalizations.of(context)!.notificationSettingsTitle,
-                          subtitle: AppLocalizations.of(context)!.notificationEventCitiesSubtitle,
-                          icon: Icons.notifications_outlined,
-                          onTap: () => _navigateToNotificationSettings(context),
-                        ),
-                      ],
+                      // Notification Settings — available to EVERY user (all
+                      // tiers) so anyone can tailor which notifications they get.
+                      const SizedBox(height: 16),
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.notificationSettingsTitle,
+                        subtitle: AppLocalizations.of(context)!.notificationEventCitiesSubtitle,
+                        icon: Icons.notifications_outlined,
+                        onTap: () => _navigateToNotificationSettings(context),
+                      ),
                     ],
                   ),
 

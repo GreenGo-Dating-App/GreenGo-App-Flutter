@@ -74,12 +74,12 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
     return BlocBuilder<CoinBloc, CoinState>(
       builder: (context, state) {
         if (state is CoinBalanceLoaded) {
-          _onBalanceUpdated(state.balance.availableCoins);
+          _onBalanceUpdated(state.balance.totalCoins);
           return _buildBalance(state.balance);
         }
 
         if (state is CoinBalanceUpdated) {
-          _onBalanceUpdated(state.balance.availableCoins);
+          _onBalanceUpdated(state.balance.totalCoins);
           return _buildBalance(state.balance);
         }
 
@@ -137,7 +137,7 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
             const SizedBox(width: 6),
             Text(
               balance != null
-                  ? _formatBalance(balance.availableCoins)
+                  ? _formatBalance(balance.totalCoins)
                   : '---',
               style: const TextStyle(
                 fontSize: 14,
@@ -227,7 +227,7 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
                   children: [
                     Text(
                       balance != null
-                          ? _formatBalance(balance.availableCoins)
+                          ? _formatBalance(balance.totalCoins)
                           : '---',
                       style: const TextStyle(
                         fontSize: 20,

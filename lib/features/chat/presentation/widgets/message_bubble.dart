@@ -16,6 +16,7 @@ import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import '../../../../features/coins/data/datasources/coin_remote_datasource.dart';
 import '../../../../features/coins/domain/entities/coin_transaction.dart';
+import '../../../../features/coins/presentation/screens/coin_shop_screen.dart';
 import '../../../../features/membership/domain/entities/membership.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
@@ -348,8 +349,19 @@ class _MessageBubbleState extends State<MessageBubble> {
       final balance = await coinDs.getBalance(userId);
       if (balance.totalCoins < 5) {
         if (mounted) {
+          final l10n = AppLocalizations.of(context)!;
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Not enough coins for TTS (5 coins required)')),
+            SnackBar(
+              content: Text('${l10n.coinsInsufficientCoins} — ${l10n.coinsRequired(5)}'),
+              action: SnackBarAction(
+                label: l10n.buyCoins,
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    builder: (_) => CoinShopScreen(userId: userId),
+                  ),
+                ),
+              ),
+            ),
           );
         }
         return;
