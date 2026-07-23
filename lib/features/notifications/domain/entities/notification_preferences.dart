@@ -16,7 +16,6 @@ class NotificationPreferences extends Equatable {
     // chat and tips are OFF until the user opts in.
     this.exchanges = true,
     this.groups = true,
-    this.business = false,
     this.eventsChat = true,
     this.communityChat = false,
     this.announcements = true,
@@ -40,9 +39,6 @@ class NotificationPreferences extends Equatable {
 
   /// Group chats. Default ON.
   final bool groups;
-
-  /// Business chats (messaging a storefront). Default OFF.
-  final bool business;
 
   /// Event chats (messages inside an event). Default ON.
   final bool eventsChat;
@@ -90,7 +86,6 @@ class NotificationPreferences extends Equatable {
     bool? pushEnabled,
     bool? exchanges,
     bool? groups,
-    bool? business,
     bool? eventsChat,
     bool? communityChat,
     bool? announcements,
@@ -107,7 +102,6 @@ class NotificationPreferences extends Equatable {
       pushEnabled: pushEnabled ?? this.pushEnabled,
       exchanges: exchanges ?? this.exchanges,
       groups: groups ?? this.groups,
-      business: business ?? this.business,
       eventsChat: eventsChat ?? this.eventsChat,
       communityChat: communityChat ?? this.communityChat,
       announcements: announcements ?? this.announcements,
@@ -127,7 +121,6 @@ class NotificationPreferences extends Equatable {
         pushEnabled,
         exchanges,
         groups,
-        business,
         eventsChat,
         communityChat,
         announcements,

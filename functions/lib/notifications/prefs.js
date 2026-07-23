@@ -58,7 +58,6 @@ const db = admin.firestore();
 const CATEGORY_DEFAULTS = {
     exchanges: true,
     groups: true,
-    business: false,
     eventsChat: true,
     communityChat: false,
     announcements: true,
@@ -79,8 +78,6 @@ function categoryForType(type) {
     const t = (type || '').toLowerCase();
     if (t.includes('group'))
         return 'groups';
-    if (t.includes('business') || t.includes('biz'))
-        return 'business';
     if (t.includes('announce'))
         return 'announcements';
     if (t.includes('tip'))

@@ -83,13 +83,6 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       onChanged: (v) => update(prefs.copyWith(groups: v)),
                     ),
                     _switch(
-                      title: l10n.notificationCatBusiness,
-                      subtitle: l10n.notificationCatBusinessSubtitle,
-                      value: prefs.business,
-                      enabled: on,
-                      onChanged: (v) => update(prefs.copyWith(business: v)),
-                    ),
-                    _switch(
                       title: l10n.notificationCatEventsChat,
                       subtitle: l10n.notificationCatEventsChatSubtitle,
                       value: prefs.eventsChat,
