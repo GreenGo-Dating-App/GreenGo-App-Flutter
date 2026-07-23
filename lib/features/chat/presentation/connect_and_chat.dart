@@ -10,6 +10,7 @@ import '../../../generated/app_localizations.dart';
 import '../../profile/domain/entities/profile.dart';
 import '../../profile/domain/repositories/profile_repository.dart';
 import '../data/datasources/chat_remote_datasource.dart';
+import '../data/models/conversation_model.dart';
 import 'screens/chat_screen.dart';
 
 /// Shared "Connect" action for the Apple-safe cultural-exchange build.
@@ -47,12 +48,27 @@ Future<void> openConnectChat(
     ),
   );
 
+  // GUARANTEED barrier dismissal. Every Firestore read below is time-bounded,
+  // and this closure (called in success, deny, catch AND finally) makes it
+  // impossible for the spinner to stay up forever — the persistent P0 was an
+  // unbounded .get() leaving an await pending, so the barrier's pop() was never
+  // reached and `catch` never fired.
+  var barrierUp = true;
+  void dismissBarrier() {
+    if (barrierUp && navigator.canPop()) {
+      navigator.pop();
+      barrierUp = false;
+    }
+  }
+
   try {
     // Resolve the other user's profile (needed by ChatScreen).
     var profile = otherUserProfile;
     if (profile == null) {
-      final result =
-          await di.sl<ProfileRepository>().getProfile(otherUserId);
+      final result = await di
+          .sl<ProfileRepository>()
+          .getProfile(otherUserId)
+          .timeout(const Duration(seconds: 10));
       profile = result.fold((_) => null, (p) => p);
     }
     if (profile == null) {
@@ -68,42 +84,79 @@ Future<void> openConnectChat(
     final syntheticMatchId = businessInquiry
         ? 'bizsearch_${otherUserId}_$currentUserId'
         : 'search_${sortedIds[0]}_${sortedIds[1]}';
-    final existing = await FirebaseFirestore.instance
-        .collection('conversations')
-        .where('matchId', isEqualTo: syntheticMatchId)
-        .limit(1)
-        .get();
+    // Existence check is CACHE-FIRST: for a returning user (the conversation is
+    // already in the local Firestore cache) this resolves INSTANTLY with no
+    // network round-trip, so re-opening a chat is immediate. Only a cache miss
+    // falls through to a (time-bounded) server read.
+    final convs = FirebaseFirestore.instance.collection('conversations');
+    QuerySnapshot<Map<String, dynamic>> existing;
+    try {
+      existing = await convs
+          .where('matchId', isEqualTo: syntheticMatchId)
+          .limit(1)
+          .get(const GetOptions(source: Source.cache));
+      if (existing.docs.isEmpty) {
+        throw StateError('cache-miss'); // fall through to server below
+      }
+    } catch (_) {
+      existing = await convs
+          .where('matchId', isEqualTo: syntheticMatchId)
+          .limit(1)
+          .get()
+          .timeout(const Duration(seconds: 10));
+    }
     final isNewConnect = existing.docs.isEmpty;
 
-    // Gate NEW connects against MembershipTier.maxDailyConnects. ∞ tiers never
-    // block. On deny: dismiss the barrier, show the upgrade dialog, and return
-    // WITHOUT opening the chat.
+    final dataSource = di.sl<ChatRemoteDataSource>();
+
+    ConversationModel conversation;
     if (isNewConnect) {
-      final gate = await tierGate.canConnectToday(currentUserId);
-      if (!gate.allowed) {
-        if (navigator.canPop()) navigator.pop();
+      // NEW connect: run the daily-limit gate and the conversation create
+      // CONCURRENTLY (they touch different docs) so the open is as fast as a
+      // single round-trip instead of two sequential ones. Both are bounded.
+      final createFuture = dataSource
+          .getOrCreateSearchConversation(
+            currentUserId: currentUserId,
+            otherUserId: otherUserId,
+            businessInquiry: businessInquiry,
+          )
+          .timeout(const Duration(seconds: 12));
+
+      TierGateResult? gate;
+      try {
+        gate = await tierGate
+            .canConnectToday(currentUserId)
+            .timeout(const Duration(seconds: 8));
+      } catch (_) {
+        gate = null; // treat as allowed on timeout/error — never hang or block
+      }
+      if (gate != null && !gate.allowed) {
+        dismissBarrier();
+        // Let the (already in-flight) create settle so it doesn't leak, but we
+        // do not open the chat.
+        unawaited(createFuture.catchError((_) => throw Exception('ignored')));
         if (context.mounted) {
           await tierGate.showConnectLimitDialog(context, currentUserId, gate);
         }
         return;
       }
-    }
 
-    // Create / fetch the immediately-visible search conversation (no approval).
-    final conversation =
-        await di.sl<ChatRemoteDataSource>().getOrCreateSearchConversation(
-              currentUserId: currentUserId,
-              otherUserId: otherUserId,
-              businessInquiry: businessInquiry,
-            );
-
-    // Count a successful NEW connection toward today's cap (fire-and-forget).
-    if (isNewConnect) {
+      conversation = await createFuture;
+      // Count a successful NEW connection toward today's cap (fire-and-forget).
       unawaited(tierGate.recordConnect(currentUserId));
+    } else {
+      // Existing conversation: just fetch/ensure it (cache-first internally).
+      conversation = await dataSource
+          .getOrCreateSearchConversation(
+            currentUserId: currentUserId,
+            otherUserId: otherUserId,
+            businessInquiry: businessInquiry,
+          )
+          .timeout(const Duration(seconds: 12));
     }
 
     // Dismiss the loading barrier before navigating.
-    if (navigator.canPop()) navigator.pop();
+    dismissBarrier();
 
     await navigator.push(
       MaterialPageRoute<void>(
@@ -119,10 +172,14 @@ Future<void> openConnectChat(
       ),
     );
   } catch (_) {
-    // Dismiss the loading barrier if it is still up.
-    if (navigator.canPop()) navigator.pop();
+    // Dismiss the loading barrier if it is still up (covers TimeoutException,
+    // permission-denied, profile-unavailable, and any other failure).
+    dismissBarrier();
     messenger.showSnackBar(
       SnackBar(content: Text(l10n.connectError)),
     );
+  } finally {
+    // Last-resort guarantee: the spinner can never outlive this function.
+    dismissBarrier();
   }
 }

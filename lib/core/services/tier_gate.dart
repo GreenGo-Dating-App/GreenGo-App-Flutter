@@ -71,7 +71,15 @@ class TierGate {
   /// Falls back to [MembershipTier.free] on any error or missing value.
   Future<MembershipTier> resolveTier(String uid) async {
     try {
-      final doc = await _firestore.collection('profiles').doc(uid).get();
+      // Hard timeout: an online-but-degraded Firestore socket can leave a
+      // default-source .get() pending forever. Bound it so the caller (the
+      // connect flow's loading barrier) can never hang — on timeout the catch
+      // below falls back to the free tier.
+      final doc = await _firestore
+          .collection('profiles')
+          .doc(uid)
+          .get()
+          .timeout(const Duration(seconds: 6));
       final raw = doc.data()?['membershipTier'] as String?;
       if (raw == null) return MembershipTier.free;
       return MembershipTier.fromString(raw);
