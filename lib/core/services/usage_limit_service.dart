@@ -172,7 +172,10 @@ class UsageLimitService {
         .doc(timeKey);
 
     try {
-      final doc = await docRef.get();
+      // Bounded: a default-source .get() can hang on a degraded connection, and
+      // this read sits inside the connect flow's loading barrier. On timeout the
+      // catch returns 0 (treat as no usage) so the flow never stalls.
+      final doc = await docRef.get().timeout(const Duration(seconds: 6));
       if (doc.exists) {
         final fieldName = _getFieldName(limitType);
         final usage = (doc.data()?[fieldName] as num?)?.toInt() ?? 0;
@@ -183,7 +186,7 @@ class UsageLimitService {
         return usage;
       }
     } catch (e) {
-      // On error, return cached value or 0
+      // On error/timeout, return cached value or 0
     }
 
     return 0;

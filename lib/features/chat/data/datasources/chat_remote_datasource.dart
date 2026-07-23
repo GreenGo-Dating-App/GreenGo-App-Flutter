@@ -2061,12 +2061,28 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           ? 'bizsearch_${otherUserId}_$currentUserId'
           : 'search_${sortedIds[0]}_${sortedIds[1]}';
 
-      // Check if conversation already exists
-      final querySnapshot = await firestore
-          .collection('conversations')
-          .where('matchId', isEqualTo: syntheticMatchId)
-          .limit(1)
-          .get();
+      // Check if conversation already exists. CACHE-FIRST: a returning user's
+      // conversation is already in the local cache, so this resolves instantly
+      // with no network round-trip (makes re-opening a chat immediate). Only a
+      // cache miss falls through to a time-bounded server read.
+      QuerySnapshot<Map<String, dynamic>> querySnapshot;
+      try {
+        querySnapshot = await firestore
+            .collection('conversations')
+            .where('matchId', isEqualTo: syntheticMatchId)
+            .limit(1)
+            .get(const GetOptions(source: Source.cache));
+        if (querySnapshot.docs.isEmpty) {
+          throw StateError('cache-miss');
+        }
+      } catch (_) {
+        querySnapshot = await firestore
+            .collection('conversations')
+            .where('matchId', isEqualTo: syntheticMatchId)
+            .limit(1)
+            .get()
+            .timeout(const Duration(seconds: 10));
+      }
 
       if (querySnapshot.docs.isNotEmpty) {
         final existing =
@@ -2099,7 +2115,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         businessInquiry: businessInquiry,
       );
 
-      await conversationRef.set(newConversation.toFirestore());
+      await conversationRef
+          .set(newConversation.toFirestore())
+          .timeout(const Duration(seconds: 10));
 
       return newConversation;
     } catch (e) {
