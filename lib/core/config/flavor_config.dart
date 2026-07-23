@@ -57,24 +57,6 @@ class FlavorConfig {
   /// Mutual-like "match" mechanic and the matches surface.
   static bool get enableMatching => isFull;
 
-  /// Blind date feature.
-  static bool get enableBlindDate => isFull;
-
-  /// Date scheduler feature.
-  static bool get enableDateScheduler => isFull;
-
-  /// Second chance / rematch feature.
-  static bool get enableSecondChance => isFull;
-
-  /// Share my date feature.
-  static bool get enableShareMyDate => isFull;
-
-  /// Special dating modes.
-  static bool get enableSpecialModes => isFull;
-
-  /// Virtual gifts.
-  static bool get enableVirtualGifts => isFull;
-
   /// Video profiles.
   static bool get enableVideoProfiles => isFull;
 
@@ -100,12 +82,6 @@ class FlavorConfig {
     debugPrint('---------------------------------');
     debugPrint('Swipe Discovery: $enableSwipeDiscovery');
     debugPrint('Matching: $enableMatching');
-    debugPrint('Blind Date: $enableBlindDate');
-    debugPrint('Date Scheduler: $enableDateScheduler');
-    debugPrint('Second Chance: $enableSecondChance');
-    debugPrint('Share My Date: $enableShareMyDate');
-    debugPrint('Special Modes: $enableSpecialModes');
-    debugPrint('Virtual Gifts: $enableVirtualGifts');
     debugPrint('Video Profiles: $enableVideoProfiles');
     debugPrint('=================================');
   }
