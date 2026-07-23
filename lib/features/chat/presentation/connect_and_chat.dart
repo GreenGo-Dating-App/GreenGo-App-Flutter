@@ -31,12 +31,29 @@ Future<void> openConnectChat(
   required String currentUserId,
   required String otherUserId,
   Profile? otherUserProfile,
-  bool businessInquiry = false,
+  bool? businessInquiry,
 }) async {
   final l10n = AppLocalizations.of(context)!;
   final navigator = Navigator.of(context);
   final messenger = ScaffoldMessenger.of(context);
   final tierGate = TierGate();
+
+  // Resolve WHICH identity to chat with. When the caller didn't force it
+  // (businessInquiry == null) and the target is a business storefront, ask the
+  // user: chat with the PERSON (user-to-user) or the BUSINESS (user-to-business)?
+  // Explore / Discovery cards pass no flag, so tapping a business profile opens
+  // this choice; the "Contact business" button forces businessInquiry: true.
+  var isBusinessChat = businessInquiry ?? false;
+  final choiceProfile = otherUserProfile;
+  final targetIsBusiness = choiceProfile != null &&
+      choiceProfile.isBusiness &&
+      (choiceProfile.businessName?.isNotEmpty ?? false);
+  if (businessInquiry == null && targetIsBusiness) {
+    final choice =
+        await _askBusinessOrPersonChat(context, choiceProfile!, l10n);
+    if (choice == null) return; // user dismissed the sheet — open nothing
+    isBusinessChat = choice;
+  }
 
   // Brief modal loading barrier while we resolve/create the conversation.
   //
@@ -93,7 +110,7 @@ Future<void> openConnectChat(
     final sortedIds = [currentUserId, otherUserId]..sort();
     // Must mirror getOrCreateSearchConversation: business inquiries live in
     // their own directional conversation, separate from the personal chat.
-    final syntheticMatchId = businessInquiry
+    final syntheticMatchId = isBusinessChat
         ? 'bizsearch_${otherUserId}_$currentUserId'
         : 'search_${sortedIds[0]}_${sortedIds[1]}';
     // Existence check is CACHE-FIRST: for a returning user (the conversation is
@@ -130,7 +147,7 @@ Future<void> openConnectChat(
           .getOrCreateSearchConversation(
             currentUserId: currentUserId,
             otherUserId: otherUserId,
-            businessInquiry: businessInquiry,
+            businessInquiry: isBusinessChat,
           )
           .timeout(const Duration(seconds: 12));
 
@@ -162,7 +179,7 @@ Future<void> openConnectChat(
           .getOrCreateSearchConversation(
             currentUserId: currentUserId,
             otherUserId: otherUserId,
-            businessInquiry: businessInquiry,
+            businessInquiry: isBusinessChat,
           )
           .timeout(const Duration(seconds: 12));
     }
@@ -194,4 +211,66 @@ Future<void> openConnectChat(
     // Last-resort guarantee: the spinner can never outlive this function.
     dismissBarrier();
   }
+}
+
+/// Bottom sheet shown when the tapped profile is a BUSINESS: lets the user pick
+/// whether to chat with the PERSON behind it (user-to-user) or the BUSINESS
+/// storefront (user-to-business). Returns `true` for business, `false` for
+/// person, `null` if dismissed.
+Future<bool?> _askBusinessOrPersonChat(
+  BuildContext context,
+  Profile profile,
+  AppLocalizations l10n,
+) {
+  final personName = profile.displayName;
+  final businessName = profile.businessName ?? profile.displayName;
+  return showModalBottomSheet<bool>(
+    context: context,
+    backgroundColor: AppColors.backgroundCard,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+    ),
+    builder: (sheetCtx) => SafeArea(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const SizedBox(height: 12),
+          Container(
+            width: 40,
+            height: 4,
+            decoration: BoxDecoration(
+              color: AppColors.textTertiary,
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          const SizedBox(height: 8),
+          // Chat with the PERSON (user-to-user).
+          ListTile(
+            leading: const Icon(Icons.person, color: AppColors.richGold),
+            title: Text(
+              l10n.chatWithName(personName),
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            onTap: () => Navigator.of(sheetCtx).pop(false),
+          ),
+          // Chat with the BUSINESS storefront (user-to-business).
+          ListTile(
+            leading: const Icon(Icons.storefront, color: AppColors.richGold),
+            title: Text(
+              l10n.chatWithName(businessName),
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            onTap: () => Navigator.of(sheetCtx).pop(true),
+          ),
+          const SizedBox(height: 12),
+        ],
+      ),
+    ),
+  );
 }

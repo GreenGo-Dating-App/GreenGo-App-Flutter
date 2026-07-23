@@ -295,12 +295,10 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   }
 
   bool _passesFilter(Conversation conversation) {
-    // For a BUSINESS viewer, incoming business inquiries live in the dedicated
-    // "Business" tab — keep them out of every personal Messages filter so they
-    // don't appear (or double-count) there. A non-business viewer (the customer
-    // who initiated) has no Business tab, so their copy stays in Messages.
-    if ((_currentUserProfile?.isBusiness ?? false) &&
-        conversation.businessInquiry) {
+    // Business-inquiry conversations live in the dedicated "Business" tab (now
+    // shown to EVERY user), so keep them out of the personal Messages filters
+    // for everyone — no double-counting between Messages and Business.
+    if (conversation.businessInquiry) {
       return false;
     }
     // A conversation is only a real "chat" once at least one message has been
@@ -390,9 +388,11 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
           create: (_) =>
               di.sl<GroupsBloc>()..add(GroupsLoadRequested(widget.userId)),
           child: DefaultTabController(
-          // A 3rd "Business" tab appears only for business accounts — it
-          // collects storefront inquiries (conversations flagged businessInquiry).
-          length: (_currentUserProfile?.isBusiness ?? false) ? 3 : 2,
+          // ALWAYS three tabs for EVERY user regardless of profile type:
+          // Messages (1:1), Groups, and Business (conversations flagged
+          // businessInquiry — a customer's chats with storefronts, or a business
+          // account's incoming inquiries).
+          length: 3,
           child: Column(
             children: [
               Material(
@@ -427,22 +427,21 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                             : 0,
                       ),
                     ),
-                    // Business tab — storefront inquiries (business accounts only).
-                    if (_currentUserProfile?.isBusiness ?? false)
-                      BlocBuilder<ConversationsBloc, ConversationsState>(
-                        builder: (context, state) => _tabWithBadge(
-                          l10n.messagesTabBusiness,
-                          state is ConversationsLoaded
-                              ? state.conversations
-                                  .where((c) =>
-                                      c.businessInquiry &&
-                                      c.unreadCount > 0 &&
-                                      c.lastMessage != null &&
-                                      !c.lastMessage!.isSentBy(widget.userId))
-                                  .length
-                              : 0,
-                        ),
+                    // Business tab — storefront inquiries. Shown to EVERY user.
+                    BlocBuilder<ConversationsBloc, ConversationsState>(
+                      builder: (context, state) => _tabWithBadge(
+                        l10n.messagesTabBusiness,
+                        state is ConversationsLoaded
+                            ? state.conversations
+                                .where((c) =>
+                                    c.businessInquiry &&
+                                    c.unreadCount > 0 &&
+                                    c.lastMessage != null &&
+                                    !c.lastMessage!.isSentBy(widget.userId))
+                                .length
+                            : 0,
                       ),
+                    ),
                   ],
                 ),
               ),
@@ -734,8 +733,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                       userId: widget.userId,
                       showAppBar: false,
                     ),
-                    if (_currentUserProfile?.isBusiness ?? false)
-                      _buildBusinessTab(l10n),
+                    _buildBusinessTab(l10n),
                   ],
                 ),
               ),
