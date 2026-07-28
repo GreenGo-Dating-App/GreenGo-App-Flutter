@@ -13626,4 +13626,31 @@ class AppLocalizationsEs extends AppLocalizations {
   String attrSearchResults(int count, String query) {
     return '$count resultados para \"$query\"';
   }
+
+  @override
+  String get attendeesSeeAll => 'Ver todos';
+
+  @override
+  String attendeesCount(int count) {
+    return '$count asistentes';
+  }
+
+  @override
+  String attendeesCountWithGuests(int count, int guests) {
+    return '$count asistentes · $guests invitados';
+  }
+
+  @override
+  String attendeesBringing(int count) {
+    return 'Trae $count invitados';
+  }
+
+  @override
+  String get attendeesOrganizer => 'Organizador';
+
+  @override
+  String get attendeesLoadFailed => 'No se pudieron cargar los asistentes';
+
+  @override
+  String get attendeesProfileFailed => 'No se pudo abrir este perfil';
 }

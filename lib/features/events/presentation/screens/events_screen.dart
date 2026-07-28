@@ -29,6 +29,7 @@ import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../attractions/presentation/widgets/attractions_tab.dart';
+import 'event_attendees_screen.dart';
 import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../../../business/data/services/leads_service.dart';
@@ -2345,13 +2346,39 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
                   ],
                   const SizedBox(height: 24),
-                  Text(
-                    AppLocalizations.of(context)!.eventsAttendees,
-                    style: const TextStyle(
-                      color: AppColors.textPrimary,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          AppLocalizations.of(context)!.eventsAttendees,
+                          style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      // The strip below previews only the first 100; this opens
+                      // the full, endlessly-scrolling list.
+                      if (event.attendees.any((a) =>
+                          a.status == RSVPStatus.going &&
+                          a.isVisibleTo(currentUserId, event.organizerId)))
+                        TextButton(
+                          onPressed: () => Navigator.of(context).push(
+                            EventAttendeesScreen.route(
+                              event: event,
+                              currentUserId: currentUserId,
+                            ),
+                          ),
+                          style: TextButton.styleFrom(
+                              visualDensity: VisualDensity.compact,
+                              foregroundColor: AppColors.richGold),
+                          child: Text(
+                            AppLocalizations.of(context)!.attendeesSeeAll,
+                            style: const TextStyle(fontSize: 13),
+                          ),
+                        ),
+                    ],
                   ),
                   const SizedBox(height: 12),
                   Builder(builder: (context) {

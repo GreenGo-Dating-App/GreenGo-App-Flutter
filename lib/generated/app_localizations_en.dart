@@ -13463,4 +13463,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String attrSearchResults(int count, String query) {
     return '$count results for \"$query\"';
   }
+
+  @override
+  String get attendeesSeeAll => 'See all';
+
+  @override
+  String attendeesCount(int count) {
+    return '$count going';
+  }
+
+  @override
+  String attendeesCountWithGuests(int count, int guests) {
+    return '$count going · $guests guests';
+  }
+
+  @override
+  String attendeesBringing(int count) {
+    return 'Bringing $count guests';
+  }
+
+  @override
+  String get attendeesOrganizer => 'Organizer';
+
+  @override
+  String get attendeesLoadFailed => 'Could not load attendees';
+
+  @override
+  String get attendeesProfileFailed => 'Could not open this profile';
 }

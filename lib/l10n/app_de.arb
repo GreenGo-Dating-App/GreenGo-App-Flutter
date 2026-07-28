@@ -4564,5 +4564,12 @@
   "attrCatZoo": "Zoo",
   "attrCatShopping": "Shopping",
   "attrCatAquarium": "Aquarium",
-  "attrSearchResults": "{count} Ergebnisse für \"{query}\""
+  "attrSearchResults": "{count} Ergebnisse für \"{query}\"",
+  "attendeesSeeAll": "Alle ansehen",
+  "attendeesCount": "{count} nehmen teil",
+  "attendeesCountWithGuests": "{count} nehmen teil · {guests} Gäste",
+  "attendeesBringing": "Bringt {count} Gäste mit",
+  "attendeesOrganizer": "Veranstalter",
+  "attendeesLoadFailed": "Teilnehmer konnten nicht geladen werden",
+  "attendeesProfileFailed": "Profil konnte nicht geöffnet werden"
 }

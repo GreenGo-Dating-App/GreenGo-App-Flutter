@@ -24017,6 +24017,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} results for \"{query}\"'**
   String attrSearchResults(int count, String query);
+
+  /// No description provided for @attendeesSeeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'See all'**
+  String get attendeesSeeAll;
+
+  /// No description provided for @attendeesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} going'**
+  String attendeesCount(int count);
+
+  /// No description provided for @attendeesCountWithGuests.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} going · {guests} guests'**
+  String attendeesCountWithGuests(int count, int guests);
+
+  /// No description provided for @attendeesBringing.
+  ///
+  /// In en, this message translates to:
+  /// **'Bringing {count} guests'**
+  String attendeesBringing(int count);
+
+  /// No description provided for @attendeesOrganizer.
+  ///
+  /// In en, this message translates to:
+  /// **'Organizer'**
+  String get attendeesOrganizer;
+
+  /// No description provided for @attendeesLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load attendees'**
+  String get attendeesLoadFailed;
+
+  /// No description provided for @attendeesProfileFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this profile'**
+  String get attendeesProfileFailed;
 }
 
 class _AppLocalizationsDelegate
