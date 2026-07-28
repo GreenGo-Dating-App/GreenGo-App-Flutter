@@ -62,6 +62,10 @@ class _AttractionsTabState extends State<AttractionsTab>
   /// can match a country or city outside the one currently being browsed.
   List<Attraction> _all = const [];
   bool _loadingAll = false;
+
+  /// attractionId -> relevance rank for the current query. Kept so an explicit
+  /// sort can still fall back to relevance when two records tie.
+  final Map<int, int> _rank = {};
   String? _homeIso; // primaryOrigin
   String? _hereIso; // country the user is currently in (when travelling)
   String? _selectedIso;
@@ -351,57 +355,84 @@ class _AttractionsTabState extends State<AttractionsTab>
     return 0;
   }
 
-  List<Attraction> get _visible {
+  /// Everything that answers the current query (or the whole country when not
+  /// searching), BEFORE the category filter is applied.
+  ///
+  /// The category tabs and the result list MUST both derive from this, or the
+  /// tab counts describe a different set than the one on screen — searching
+  /// "Italy" showed 100 results under a tab reading "All 93", because the tabs
+  /// were still counting the user's own country.
+  List<Attraction> get _matched {
+    if (!_searching) return _items;
     final q = widget.query.trim().toLowerCase();
+    // Fall back to the current country while the full catalogue is still
+    // loading, so the first keystrokes still show something.
+    final pool = _all.isNotEmpty ? _all : _items;
+    final l10n = AppLocalizations.of(context);
+    final scored = <(int, Attraction)>[];
+    for (final a in pool) {
+      final sc = _score(a, q, l10n);
+      if (sc > 0) scored.add((sc, a));
+    }
+    _rank
+      ..clear()
+      ..addEntries(scored.map((e) => MapEntry(e.$2.id, e.$1)));
+    scored.sort((x, y) {
+      if (x.$1 != y.$1) return y.$1.compareTo(x.$1); // relevance first
+      if (_distanceMeaningful) {
+        return (_distanceMeters(x.$2) ?? double.maxFinite)
+            .compareTo(_distanceMeters(y.$2) ?? double.maxFinite);
+      }
+      return y.$2.greengoScore.compareTo(x.$2.greengoScore);
+    });
+    return scored.map((e) => e.$2).toList();
+  }
 
-    // Search spans the WHOLE catalogue, not just the country being browsed, so
-    // "Rome" or "Italy" works from anywhere. Without a query we stay scoped to
-    // the user's country.
-    var list = _searching ? (_all.isNotEmpty ? _all : _items) : _items;
-
+  /// What the grid/list renders: [_matched] narrowed to the selected category
+  /// and ordered. Search results keep their relevance order; browsing uses the
+  /// sort chosen in the search bar.
+  List<Attraction> _visibleFrom(List<Attraction> base) {
+    var list = base;
     if (_category != null) {
       list = list.where((a) => a.category == _category).toList();
     }
-
-    if (_searching) {
-      final l10n = AppLocalizations.of(context);
-      final scored = <(int, Attraction)>[];
-      for (final a in list) {
-        final sc = _score(a, q, l10n);
-        if (sc > 0) scored.add((sc, a));
-      }
-      scored.sort((x, y) {
-        if (x.$1 != y.$1) return y.$1.compareTo(x.$1); // relevance first
-        if (_distanceMeaningful) {
-          return (_distanceMeters(x.$2) ?? double.maxFinite)
-              .compareTo(_distanceMeters(y.$2) ?? double.maxFinite);
-        }
-        return y.$2.greengoScore.compareTo(x.$2.greengoScore);
-      });
-      return scored.map((e) => e.$2).toList();
-    }
-
+    // The sort bar stays live while searching: after results load the user can
+    // still order them by distance, GreenGo Score, rating, price or name.
+    // Relevance is kept as the tie-breaker so equally-ranked items retain a
+    // sensible order.
     final out = [...list];
+    int byRelevance(Attraction a, Attraction b) =>
+        (_rank[b.id] ?? 0).compareTo(_rank[a.id] ?? 0);
+    int then(int primary, Attraction a, Attraction b) =>
+        primary != 0 ? primary : (_searching ? byRelevance(a, b) : 0);
+
     switch (_effectiveSort) {
       case 'score':
-        out.sort((a, b) => b.greengoScore.compareTo(a.greengoScore));
+        out.sort((a, b) =>
+            then(b.greengoScore.compareTo(a.greengoScore), a, b));
         break;
       case 'rating':
-        out.sort((a, b) => (b.googleRating ?? 0).compareTo(a.googleRating ?? 0));
+        out.sort((a, b) =>
+            then((b.googleRating ?? 0).compareTo(a.googleRating ?? 0), a, b));
         break;
       case 'price':
-        out.sort((a, b) => (a.ticketPrice ?? 0).compareTo(b.ticketPrice ?? 0));
+        out.sort((a, b) =>
+            then((a.ticketPrice ?? 0).compareTo(b.ticketPrice ?? 0), a, b));
         break;
       case 'name':
-        out.sort((a, b) => a.name.compareTo(b.name));
+        out.sort((a, b) => then(a.name.compareTo(b.name), a, b));
         break;
       case 'distance':
       default:
         if (_distanceMeaningful) {
-          out.sort((a, b) => (_distanceMeters(a) ?? double.maxFinite)
-              .compareTo(_distanceMeters(b) ?? double.maxFinite));
+          out.sort((a, b) => then(
+              (_distanceMeters(a) ?? double.maxFinite)
+                  .compareTo(_distanceMeters(b) ?? double.maxFinite),
+              a,
+              b));
         } else {
-          out.sort((a, b) => b.greengoScore.compareTo(a.greengoScore));
+          out.sort((a, b) =>
+              then(b.greengoScore.compareTo(a.greengoScore), a, b));
         }
     }
     return out;
@@ -455,10 +486,10 @@ class _AttractionsTabState extends State<AttractionsTab>
   /// Categories exactly as they appear in the spreadsheet's `Category` column,
   /// as a scrollable TabBar. Only categories present in the loaded country are
   /// shown, most-populated first, each with its own icon.
-  Widget _categoryTabs(AppLocalizations l10n) {
+  Widget _categoryTabs(AppLocalizations l10n, List<Attraction> base) {
     final counts = <String, int>{};
     final icons = <String, String?>{};
-    for (final a in _items) {
+    for (final a in base) {
       final c = a.category;
       if (c == null || c.isEmpty) continue;
       counts[c] = (counts[c] ?? 0) + 1;
@@ -477,6 +508,16 @@ class _AttractionsTabState extends State<AttractionsTab>
       _catController?.dispose();
       _catKeys = keys;
       final initial = _category == null ? 0 : keys.indexOf(_category!);
+      if (initial < 0 && _category != null) {
+        // The selected category is not in this result set (the country or the
+        // query changed). The bar falls back to "All", so the filter MUST be
+        // cleared too — otherwise the list stays filtered by an invisible tab
+        // and shows fewer items than the tab counts claim.
+        final stale = _category;
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted && _category == stale) setState(() => _category = null);
+        });
+      }
       _catController = TabController(
         length: keys.length,
         vsync: this,
@@ -511,7 +552,7 @@ class _AttractionsTabState extends State<AttractionsTab>
             child: Row(mainAxisSize: MainAxisSize.min, children: [
               const Icon(Icons.apps, size: 15),
               const SizedBox(width: 6),
-              Text('${l10n.attrAllCategories}  ${_items.length}'),
+              Text('${l10n.attrAllCategories}  ${base.length}'),
             ]),
           ),
           ...cats.map((c) => Tab(
@@ -633,7 +674,10 @@ class _AttractionsTabState extends State<AttractionsTab>
       return _messageState(l10n.attrNoCoverage, Icons.public_off);
     }
 
-    final items = _visible;
+    // ONE computation per build. The tab counts, the result header and the
+    // grid all read from this same list, so they can never disagree.
+    final base = _matched;
+    final items = _visibleFrom(base);
 
     return Column(
       children: [
@@ -647,7 +691,7 @@ class _AttractionsTabState extends State<AttractionsTab>
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  l10n.attrSearchResults(_visible.length, widget.query.trim()),
+                  l10n.attrSearchResults(base.length, widget.query.trim()),
                   style: const TextStyle(
                       color: AppColors.textSecondary, fontSize: 12),
                 ),
@@ -686,7 +730,7 @@ class _AttractionsTabState extends State<AttractionsTab>
               ),
             ]),
           ),
-        _categoryTabs(l10n),
+        _categoryTabs(l10n, base),
         const Divider(height: 1, color: AppColors.divider),
         Expanded(
           child: RefreshIndicator(
