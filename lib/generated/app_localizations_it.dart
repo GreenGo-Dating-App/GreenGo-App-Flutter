@@ -13361,4 +13361,180 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get exploreHappeningSoon => 'Prossimamente';
+
+  @override
+  String get attrScoreLabel => 'GreenGo Score';
+
+  @override
+  String get attrTierIconic => 'Iconico';
+
+  @override
+  String get attrTierExceptional => 'Eccezionale';
+
+  @override
+  String get attrTierExcellent => 'Eccellente';
+
+  @override
+  String get attrTierGreat => 'Ottimo';
+
+  @override
+  String get attrTierWorthVisit => 'Vale una visita';
+
+  @override
+  String get attrImpWorldIcon => 'Icona mondiale';
+
+  @override
+  String get attrImpInternational => 'Monumento internazionale';
+
+  @override
+  String get attrImpNational => 'Monumento nazionale';
+
+  @override
+  String get attrImpRegional => 'Attrazione regionale';
+
+  @override
+  String get attrImpLocal => 'Attrazione locale';
+
+  @override
+  String get attrChipHome => 'Il mio Paese';
+
+  @override
+  String get attrChipHere => 'Sei qui';
+
+  @override
+  String get attrFree => 'Gratis';
+
+  @override
+  String get attrUnesco => 'UNESCO';
+
+  @override
+  String get attrMustVisit => 'Da non perdere';
+
+  @override
+  String get attrTop10 => 'Top 10';
+
+  @override
+  String get attrPhotoSpot => 'Perfetto per le foto';
+
+  @override
+  String get attrAllCategories => 'Tutte';
+
+  @override
+  String get attrSortDistance => 'Più vicine';
+
+  @override
+  String get attrSortScore => 'GreenGo Score';
+
+  @override
+  String get attrSortRating => 'Valutazione';
+
+  @override
+  String get attrSortPrice => 'Prezzo';
+
+  @override
+  String get attrSortName => 'Nome';
+
+  @override
+  String get attrNoResults => 'Nessuna attrazione corrisponde ai filtri';
+
+  @override
+  String get attrNoCoverage =>
+      'Non copriamo ancora attrazioni nel tuo Paese — presto altre';
+
+  @override
+  String get attrLoadFailed => 'Impossibile caricare le attrazioni';
+
+  @override
+  String attrKmAway(String km) {
+    return 'a $km km';
+  }
+
+  @override
+  String get attrAbout => 'Informazioni';
+
+  @override
+  String get attrHighlights => 'In evidenza';
+
+  @override
+  String get attrWhyVisit => 'Perché visitarla';
+
+  @override
+  String get attrScoreHistorical => 'Storico';
+
+  @override
+  String get attrScoreArchitectural => 'Architettonico';
+
+  @override
+  String get attrScoreNatural => 'Natura';
+
+  @override
+  String get attrScorePhotography => 'Fotografia';
+
+  @override
+  String get attrBestTimeTitle => 'Periodo migliore';
+
+  @override
+  String get attrHistoryTitle => 'Storia';
+
+  @override
+  String get attrDidYouKnow => 'Lo sapevi';
+
+  @override
+  String get attrPhotoTips => 'Consigli fotografici';
+
+  @override
+  String get attrPractical => 'Informazioni pratiche';
+
+  @override
+  String get attrOpeningHours => 'Orari';
+
+  @override
+  String get attrVisitDuration => 'Visita tipica';
+
+  @override
+  String get attrAccessibility => 'Accessibilità';
+
+  @override
+  String get attrPets => 'Animali';
+
+  @override
+  String get attrSafety => 'Sicurezza';
+
+  @override
+  String get attrVisitorsPerYear => 'Visitatori all’anno';
+
+  @override
+  String get attrTicketFrom => 'Biglietto';
+
+  @override
+  String get attrOpenInMaps => 'Apri in Maps';
+
+  @override
+  String attrPhotoBy(String author, String license) {
+    return 'Foto: $author · $license';
+  }
+
+  @override
+  String get attrIndoor => 'Al chiuso';
+
+  @override
+  String get attrOutdoor => 'All’aperto';
+
+  @override
+  String attrCountAttractions(int count) {
+    return '$count attrazioni';
+  }
+
+  @override
+  String get attrEnableLocation =>
+      'Attiva la posizione per vedere cosa hai più vicino ora';
+
+  @override
+  String get attrRetry => 'Riprova';
+
+  @override
+  String get attrTranslate => 'Traduci';
+
+  @override
+  String get attrShowOriginal => 'Mostra originale';
 }

@@ -3374,7 +3374,9 @@
   "socialLinkInvalid": "Enter a valid link or handle for {platform}",
   "@socialLinkInvalid": {
     "placeholders": {
-      "platform": { "type": "String" }
+      "platform": {
+        "type": "String"
+      }
     }
   },
   "messages": "Exchanges",
@@ -6295,5 +6297,85 @@
   "exploreHappeningSoon": "Happening soon",
   "@exploreHappeningSoon": {
     "description": "Explore section title for upcoming events"
-  }
+  },
+  "attrScoreLabel": "GreenGo Score",
+  "attrTierIconic": "Iconic",
+  "attrTierExceptional": "Exceptional",
+  "attrTierExcellent": "Excellent",
+  "attrTierGreat": "Great",
+  "attrTierWorthVisit": "Worth a visit",
+  "attrImpWorldIcon": "World icon",
+  "attrImpInternational": "International landmark",
+  "attrImpNational": "National landmark",
+  "attrImpRegional": "Regional attraction",
+  "attrImpLocal": "Local attraction",
+  "attrChipHome": "Home",
+  "attrChipHere": "You're here",
+  "attrFree": "Free",
+  "attrUnesco": "UNESCO",
+  "attrMustVisit": "Must visit",
+  "attrTop10": "Top 10",
+  "attrPhotoSpot": "Great for photos",
+  "attrAllCategories": "All",
+  "attrSortDistance": "Nearest first",
+  "attrSortScore": "GreenGo Score",
+  "attrSortRating": "Rating",
+  "attrSortPrice": "Price",
+  "attrSortName": "Name",
+  "attrNoResults": "No attractions match your filters",
+  "attrNoCoverage": "We do not cover attractions in your country yet — more coming soon",
+  "attrLoadFailed": "Could not load attractions",
+  "attrKmAway": "{km} km away",
+  "@attrKmAway": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "attrAbout": "About",
+  "attrHighlights": "Highlights",
+  "attrWhyVisit": "Why visit",
+  "attrScoreHistorical": "Historical",
+  "attrScoreArchitectural": "Architectural",
+  "attrScoreNatural": "Nature",
+  "attrScorePhotography": "Photography",
+  "attrBestTimeTitle": "Best time to visit",
+  "attrHistoryTitle": "History",
+  "attrDidYouKnow": "Did you know",
+  "attrPhotoTips": "Photo tips",
+  "attrPractical": "Practical",
+  "attrOpeningHours": "Opening hours",
+  "attrVisitDuration": "Typical visit",
+  "attrAccessibility": "Accessibility",
+  "attrPets": "Pets",
+  "attrSafety": "Safety",
+  "attrVisitorsPerYear": "Visitors per year",
+  "attrTicketFrom": "Ticket",
+  "attrOpenInMaps": "Open in Maps",
+  "attrPhotoBy": "Photo: {author} · {license}",
+  "@attrPhotoBy": {
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "attrIndoor": "Indoor",
+  "attrOutdoor": "Outdoor",
+  "attrCountAttractions": "{count} attractions",
+  "@attrCountAttractions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attrEnableLocation": "Turn on location to see what is closest to you right now",
+  "attrRetry": "Retry",
+  "attrTranslate": "Translate",
+  "attrShowOriginal": "Show original"
 }

@@ -73,15 +73,9 @@ export {
   runIngestTiqetsNow,
 } from './external_events/tiqets';
 
-// Geoapify attractions ingester — free, commercial-safe museums/attractions/
-// theme parks (Wikipedia-enriched). Powers the Attractions tab. No-ops until
-// GEOAPIFY_API_KEY is set.
-// Attractions are static data — imported once via the manual trigger (no schedule).
-export {
-  runIngestGeoapifyNow,
-  runBackfillGeoapifyWebsitesNow,
-  runCleanupNoImageNow,
-} from './external_events/geoapify';
+// Geoapify attractions ingester REMOVED — the app now serves curated
+// attractions from the GreenGo dataset (see tools/attractions).
+export { runCleanupNoImageNow } from './external_events/ingest';
 
 // Ticketmaster live-events ingester.
 export {
