@@ -4563,5 +4563,6 @@
   "attrCatWaterfall": "Wasserfall",
   "attrCatZoo": "Zoo",
   "attrCatShopping": "Shopping",
-  "attrCatAquarium": "Aquarium"
+  "attrCatAquarium": "Aquarium",
+  "attrSearchResults": "{count} Ergebnisse für \"{query}\""
 }

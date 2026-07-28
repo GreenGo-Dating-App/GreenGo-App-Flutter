@@ -6403,5 +6403,16 @@
   "attrCatWaterfall": "Waterfall",
   "attrCatZoo": "Zoo",
   "attrCatShopping": "Shopping",
-  "attrCatAquarium": "Aquarium"
+  "attrCatAquarium": "Aquarium",
+  "attrSearchResults": "{count} results for \"{query}\"",
+  "@attrSearchResults": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "query": {
+        "type": "String"
+      }
+    }
+  }
 }

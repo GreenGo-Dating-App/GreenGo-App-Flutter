@@ -4563,5 +4563,6 @@
   "attrCatWaterfall": "Cachoeira",
   "attrCatZoo": "Zoológico",
   "attrCatShopping": "Compras",
-  "attrCatAquarium": "Aquário"
+  "attrCatAquarium": "Aquário",
+  "attrSearchResults": "{count} resultados para \"{query}\""
 }
