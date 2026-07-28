@@ -57,6 +57,11 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   List<AttractionCountry> _countries = const [];
   List<Attraction> _items = const [];
+
+  /// Whole catalogue, loaded lazily the first time the user searches so a query
+  /// can match a country or city outside the one currently being browsed.
+  List<Attraction> _all = const [];
+  bool _loadingAll = false;
   String? _homeIso; // primaryOrigin
   String? _hereIso; // country the user is currently in (when travelling)
   String? _selectedIso;
@@ -108,6 +113,7 @@ class _AttractionsTabState extends State<AttractionsTab>
   @override
   void didUpdateWidget(AttractionsTab old) {
     super.didUpdateWidget(old);
+    if (widget.query.trim().isNotEmpty && _all.isEmpty) _loadAll();
     // Location arriving late can reveal the "you're here" country.
     if (old.userLat != widget.userLat || old.userLng != widget.userLng) {
       _detectHere();
@@ -259,6 +265,16 @@ class _AttractionsTabState extends State<AttractionsTab>
     } catch (_) {/* non-fatal: falls back to primaryOrigin */}
   }
 
+  /// Pull the whole catalogue once, so search is not limited to the country
+  /// currently on screen.
+  Future<void> _loadAll() async {
+    if (_loadingAll || _all.isNotEmpty) return;
+    _loadingAll = true;
+    final list = await _ds.allPublished();
+    if (mounted) setState(() => _all = list);
+    _loadingAll = false;
+  }
+
   Future<void> _loadSelected() async {
     final iso = _selectedIso;
     if (iso == null) {
@@ -292,30 +308,77 @@ class _AttractionsTabState extends State<AttractionsTab>
   /// and fall back to the GreenGo Score only when there is no fix at all.
   bool get _distanceMeaningful => _posLat != null && _posLng != null;
 
-  /// Distance ordering is only honest inside the country being shown; abroad it
-  /// silently becomes the GreenGo Score.
+  /// Distance ordering needs only a position; falls back to the score when
+  /// there is no fix at all.
   String get _effectiveSort =>
       (widget.sort == 'distance' && !_distanceMeaningful) ? 'score' : widget.sort;
 
+  bool get _searching => widget.query.trim().isNotEmpty;
+
+  String? _countryNameOf(String iso) {
+    for (final c in _countries) {
+      if (c.iso2 == iso) return c.name;
+    }
+    return null;
+  }
+
+  /// How well [a] answers [q]. Higher is better; 0 means no match.
+  ///
+  /// Ranked so the most specific interpretation of a query wins: typing "Rome"
+  /// should lead with attractions *named* after Rome, then everything *in*
+  /// Rome; typing "Italy" should return the whole country.
+  int _score(Attraction a, String q, AppLocalizations? l10n) {
+    final name = a.name.toLowerCase();
+    final city = a.cityName.toLowerCase();
+    final country = (_countryNameOf(a.countryIso2) ?? '').toLowerCase();
+    final iso = a.countryIso2.toLowerCase();
+    final cat = (a.category ?? '').toLowerCase();
+    final catLocal =
+        l10n == null ? '' : CategoryLabels.of(l10n, a.category).toLowerCase();
+
+    if (name == q) return 1000;
+    if (city == q) return 900;
+    if (country == q || iso == q) return 850;
+    if (name.startsWith(q)) return 800;
+    if (city.startsWith(q)) return 700;
+    if (country.startsWith(q)) return 650;
+    if (name.contains(q)) return 600;
+    if (city.contains(q)) return 500;
+    if (country.contains(q)) return 450;
+    if (cat == q || catLocal == q) return 400;
+    if (cat.contains(q) || catLocal.contains(q)) return 300;
+    if (a.slug.contains(q)) return 200;
+    return 0;
+  }
+
   List<Attraction> get _visible {
-    var list = _items;
+    final q = widget.query.trim().toLowerCase();
+
+    // Search spans the WHOLE catalogue, not just the country being browsed, so
+    // "Rome" or "Italy" works from anywhere. Without a query we stay scoped to
+    // the user's country.
+    var list = _searching ? (_all.isNotEmpty ? _all : _items) : _items;
 
     if (_category != null) {
       list = list.where((a) => a.category == _category).toList();
     }
-    final q = widget.query.trim().toLowerCase();
-    if (q.isNotEmpty) {
-      // Match the LOCALISED category too — a Spanish user searching "museo"
-      // should find museums, not just the English "Museum" stored in Firestore.
+
+    if (_searching) {
       final l10n = AppLocalizations.of(context);
-      list = list
-          .where((a) =>
-              a.name.toLowerCase().contains(q) ||
-              a.cityName.toLowerCase().contains(q) ||
-              (a.category ?? '').toLowerCase().contains(q) ||
-              (l10n != null &&
-                  CategoryLabels.of(l10n, a.category).toLowerCase().contains(q)))
-          .toList();
+      final scored = <(int, Attraction)>[];
+      for (final a in list) {
+        final sc = _score(a, q, l10n);
+        if (sc > 0) scored.add((sc, a));
+      }
+      scored.sort((x, y) {
+        if (x.$1 != y.$1) return y.$1.compareTo(x.$1); // relevance first
+        if (_distanceMeaningful) {
+          return (_distanceMeters(x.$2) ?? double.maxFinite)
+              .compareTo(_distanceMeters(y.$2) ?? double.maxFinite);
+        }
+        return y.$2.greengoScore.compareTo(x.$2.greengoScore);
+      });
+      return scored.map((e) => e.$2).toList();
     }
 
     final out = [...list];
@@ -338,7 +401,6 @@ class _AttractionsTabState extends State<AttractionsTab>
           out.sort((a, b) => (_distanceMeters(a) ?? double.maxFinite)
               .compareTo(_distanceMeters(b) ?? double.maxFinite));
         } else {
-          // No GPS fix: distance cannot be computed, so rank by score instead.
           out.sort((a, b) => b.greengoScore.compareTo(a.greengoScore));
         }
     }
@@ -533,6 +595,14 @@ class _AttractionsTabState extends State<AttractionsTab>
     );
   }
 
+  /// "Rome" on the country-scoped list; "Rome, Italy" while searching, because
+  /// results then come from every country and the city alone is ambiguous.
+  String _placeLabel(Attraction a) {
+    if (!_searching) return a.cityName;
+    final c = _countryNameOf(a.countryIso2);
+    return (c == null || c.isEmpty) ? a.cityName : '${a.cityName}, $c';
+  }
+
   String? _distanceLabel(AppLocalizations l10n, Attraction a) {
     if (!_distanceMeaningful) return null;
     final d = _distanceMeters(a);
@@ -567,8 +637,32 @@ class _AttractionsTabState extends State<AttractionsTab>
 
     return Column(
       children: [
-        _countryChips(l10n),
-        if (_posLat == null)
+        if (_searching)
+          Container(
+            width: double.infinity,
+            color: AppColors.backgroundCard,
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+            child: Row(children: [
+              const Icon(Icons.search, size: 14, color: AppColors.richGold),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  l10n.attrSearchResults(_visible.length, widget.query.trim()),
+                  style: const TextStyle(
+                      color: AppColors.textSecondary, fontSize: 12),
+                ),
+              ),
+              if (_loadingAll)
+                const SizedBox(
+                    width: 12,
+                    height: 12,
+                    child: CircularProgressIndicator(
+                        strokeWidth: 2, color: AppColors.richGold)),
+            ]),
+          )
+        else
+          _countryChips(l10n),
+        if (!_searching && _posLat == null)
           Container(
             width: double.infinity,
             color: AppColors.backgroundCard,
@@ -717,7 +811,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                           size: 11, color: AppColors.textTertiary),
                       const SizedBox(width: 3),
                       Expanded(
-                        child: Text(dist ?? a.cityName,
+                        child: Text(dist ?? _placeLabel(a),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
@@ -819,7 +913,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                   ]),
                   const SizedBox(height: 4),
                   Text(
-                    [a.cityName, dist, _tierLabel(l10n, a.scoreTier)]
+                    [_placeLabel(a), dist, _tierLabel(l10n, a.scoreTier)]
                         .whereType<String>()
                         .where((s) => s.isNotEmpty)
                         .join(' · '),

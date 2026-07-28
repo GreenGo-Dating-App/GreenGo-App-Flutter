@@ -24011,6 +24011,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Aquarium'**
   String get attrCatAquarium;
+
+  /// No description provided for @attrSearchResults.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} results for \"{query}\"'**
+  String attrSearchResults(int count, String query);
 }
 
 class _AppLocalizationsDelegate

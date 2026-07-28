@@ -4563,5 +4563,6 @@
   "attrCatWaterfall": "Cascada",
   "attrCatZoo": "Zoo",
   "attrCatShopping": "Compras",
-  "attrCatAquarium": "Acuario"
+  "attrCatAquarium": "Acuario",
+  "attrSearchResults": "{count} resultados para \"{query}\""
 }

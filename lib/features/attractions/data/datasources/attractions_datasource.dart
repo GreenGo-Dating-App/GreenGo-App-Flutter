@@ -19,6 +19,7 @@ class AttractionsDataSource {
 
   static final Map<String, List<Attraction>> _cache = {};
   static List<AttractionCountry>? _countries;
+  static List<Attraction>? _all;
   static String? _bucket;
 
   /// Storage bucket used to compose image URLs. Read once from
@@ -82,6 +83,38 @@ class AttractionsDataSource {
     }
   }
 
+  /// Every published attraction, across all countries.
+  ///
+  /// Used only when the user searches: search must be able to answer "Rome",
+  /// "Italy" or "Colosseum" regardless of which country the tab is scoped to.
+  /// The whole catalogue is ~3,500 compact records across 50 shard documents
+  /// (<1 MB), read once and memoised for the session, so this costs one burst
+  /// of reads on the first search and nothing afterwards.
+  Future<List<Attraction>> allPublished() async {
+    if (_all != null) return _all!;
+    try {
+      final snap = await _db.collection('attractions_index').get();
+      final out = <Attraction>[];
+      for (final doc in snap.docs) {
+        if (doc.id.endsWith('_meta')) continue;
+        final data = doc.data();
+        final iso = (data['iso2'] as String?)?.toUpperCase() ?? '';
+        final items = data['items'];
+        if (items is! List) continue;
+        for (final it in items) {
+          if (it is Map) {
+            out.add(Attraction.fromIndex(
+                {...Map<String, dynamic>.from(it), 'iso': iso}));
+          }
+        }
+      }
+      _all = out;
+      return out;
+    } catch (_) {
+      return const [];
+    }
+  }
+
   /// Full record for the detail screen (1 read).
   Future<Attraction?> byId(int id) async {
     try {
@@ -97,5 +130,6 @@ class AttractionsDataSource {
   static void invalidate() {
     _cache.clear();
     _countries = null;
+    _all = null;
   }
 }

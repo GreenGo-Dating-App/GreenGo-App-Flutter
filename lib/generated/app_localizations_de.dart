@@ -13635,4 +13635,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get attrCatAquarium => 'Aquarium';
+
+  @override
+  String attrSearchResults(int count, String query) {
+    return '$count Ergebnisse für \"$query\"';
+  }
 }
