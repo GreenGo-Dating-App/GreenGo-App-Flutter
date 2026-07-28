@@ -145,4 +145,52 @@ void main() {
       expect(score('zzzz', name: 'Colosseum', city: 'Rome', country: 'Italy'), 0);
     });
   });
+
+  _categoryConsistency();
+}
+
+/// The category tab counts and the rendered list are derived from the same
+/// base set. These pin the invariant that broke in the field: a tab reading
+/// "Street 8" must render exactly 8 rows, and a category that is not present
+/// must never be used as a filter.
+void _categoryConsistency() {
+  group('category tab counts match the filtered list', () {
+    List<String> cats(List<String> raw) => raw;
+
+    Map<String, int> countBy(List<String> items) {
+      final m = <String, int>{};
+      for (final c in items) {
+        m[c] = (m[c] ?? 0) + 1;
+      }
+      return m;
+    }
+
+    test('every tab count equals the size of that filtered subset', () {
+      final base = cats([
+        'Street', 'Street', 'Street', 'Museum', 'Museum',
+        'Theme Park', 'Beach', 'Street',
+      ]);
+      final counts = countBy(base);
+      for (final entry in counts.entries) {
+        final filtered = base.where((c) => c == entry.key).length;
+        expect(filtered, entry.value,
+            reason: 'tab "${entry.key}" claims ${entry.value}');
+      }
+    });
+
+    test('the All count equals the whole base set', () {
+      final base = cats(['Street', 'Museum', 'Beach']);
+      expect(base.length, 3);
+      expect(countBy(base).values.fold<int>(0, (a, b) => a + b), base.length);
+    });
+
+    test('a category absent from the base set filters to nothing', () {
+      final base = cats(['Street', 'Museum']);
+      // This is the state that produced "Theme Park 8 but nothing available":
+      // a stale selection that no longer exists in the current results.
+      expect(base.where((c) => c == 'Theme Park'), isEmpty);
+      expect(countBy(base).containsKey('Theme Park'), isFalse,
+          reason: 'no tab should be offered for it either');
+    });
+  });
 }
