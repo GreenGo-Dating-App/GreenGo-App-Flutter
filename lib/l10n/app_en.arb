@@ -6414,5 +6414,36 @@
         "type": "String"
       }
     }
-  }
+  },
+  "attendeesSeeAll": "See all",
+  "attendeesCount": "{count} going",
+  "@attendeesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attendeesCountWithGuests": "{count} going · {guests} guests",
+  "@attendeesCountWithGuests": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "guests": {
+        "type": "int"
+      }
+    }
+  },
+  "attendeesBringing": "Bringing {count} guests",
+  "@attendeesBringing": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attendeesOrganizer": "Organizer",
+  "attendeesLoadFailed": "Could not load attendees",
+  "attendeesProfileFailed": "Could not open this profile"
 }

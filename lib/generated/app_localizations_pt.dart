@@ -13597,6 +13597,34 @@ class AppLocalizationsPt extends AppLocalizations {
   String attrSearchResults(int count, String query) {
     return '$count resultados para \"$query\"';
   }
+
+  @override
+  String get attendeesSeeAll => 'Ver todos';
+
+  @override
+  String attendeesCount(int count) {
+    return '$count participantes';
+  }
+
+  @override
+  String attendeesCountWithGuests(int count, int guests) {
+    return '$count participantes · $guests convidados';
+  }
+
+  @override
+  String attendeesBringing(int count) {
+    return 'Leva $count convidados';
+  }
+
+  @override
+  String get attendeesOrganizer => 'Organizador';
+
+  @override
+  String get attendeesLoadFailed =>
+      'Não foi possível carregar os participantes';
+
+  @override
+  String get attendeesProfileFailed => 'Não foi possível abrir este perfil';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -27169,4 +27197,32 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String attrSearchResults(int count, String query) {
     return '$count resultados para \"$query\"';
   }
+
+  @override
+  String get attendeesSeeAll => 'Ver todos';
+
+  @override
+  String attendeesCount(int count) {
+    return '$count participantes';
+  }
+
+  @override
+  String attendeesCountWithGuests(int count, int guests) {
+    return '$count participantes · $guests convidados';
+  }
+
+  @override
+  String attendeesBringing(int count) {
+    return 'Leva $count convidados';
+  }
+
+  @override
+  String get attendeesOrganizer => 'Organizador';
+
+  @override
+  String get attendeesLoadFailed =>
+      'Não foi possível carregar os participantes';
+
+  @override
+  String get attendeesProfileFailed => 'Não foi possível abrir este perfil';
 }

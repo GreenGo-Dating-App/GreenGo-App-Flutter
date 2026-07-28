@@ -3983,5 +3983,12 @@
   "attrCatZoo": "Zoo",
   "attrCatShopping": "Shopping",
   "attrCatAquarium": "Aquarium",
-  "attrSearchResults": "{count} résultats pour \"{query}\""
+  "attrSearchResults": "{count} résultats pour \"{query}\"",
+  "attendeesSeeAll": "Voir tout",
+  "attendeesCount": "{count} participants",
+  "attendeesCountWithGuests": "{count} participants · {guests} invités",
+  "attendeesBringing": "Amène {count} invités",
+  "attendeesOrganizer": "Organisateur",
+  "attendeesLoadFailed": "Impossible de charger les participants",
+  "attendeesProfileFailed": "Impossible d ouvrir ce profil"
 }
