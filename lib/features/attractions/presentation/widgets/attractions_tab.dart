@@ -10,6 +10,7 @@ import '../../../../core/services/location_share_service.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/attractions_datasource.dart';
+import '../../domain/category_labels.dart';
 import '../../domain/country_resolver.dart';
 import '../../domain/entities/attraction.dart';
 import '../screens/attraction_detail_screen.dart';
@@ -304,11 +305,16 @@ class _AttractionsTabState extends State<AttractionsTab>
     }
     final q = widget.query.trim().toLowerCase();
     if (q.isNotEmpty) {
+      // Match the LOCALISED category too — a Spanish user searching "museo"
+      // should find museums, not just the English "Museum" stored in Firestore.
+      final l10n = AppLocalizations.of(context);
       list = list
           .where((a) =>
               a.name.toLowerCase().contains(q) ||
               a.cityName.toLowerCase().contains(q) ||
-              (a.category ?? '').toLowerCase().contains(q))
+              (a.category ?? '').toLowerCase().contains(q) ||
+              (l10n != null &&
+                  CategoryLabels.of(l10n, a.category).toLowerCase().contains(q)))
           .toList();
     }
 
@@ -399,7 +405,8 @@ class _AttractionsTabState extends State<AttractionsTab>
     final cats = counts.keys.toList()
       ..sort((a, b) {
         final byCount = counts[b]!.compareTo(counts[a]!);
-        return byCount != 0 ? byCount : a.compareTo(b);
+        if (byCount != 0) return byCount;
+        return CategoryLabels.of(l10n, a).compareTo(CategoryLabels.of(l10n, b));
       });
     final keys = <String>['', ...cats]; // '' = All
 
@@ -450,7 +457,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                 child: Row(mainAxisSize: MainAxisSize.min, children: [
                   Icon(AttractionIcons.category(icons[c]), size: 15),
                   const SizedBox(width: 6),
-                  Text('$c  ${counts[c]}'),
+                  Text('${CategoryLabels.of(l10n, c)}  ${counts[c]}'),
                 ]),
               )),
         ],

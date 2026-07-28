@@ -23855,6 +23855,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show original'**
   String get attrShowOriginal;
+
+  /// No description provided for @attrCatReligious.
+  ///
+  /// In en, this message translates to:
+  /// **'Religious site'**
+  String get attrCatReligious;
+
+  /// No description provided for @attrCatHistoricSite.
+  ///
+  /// In en, this message translates to:
+  /// **'Historic site'**
+  String get attrCatHistoricSite;
+
+  /// No description provided for @attrCatMuseum.
+  ///
+  /// In en, this message translates to:
+  /// **'Museum'**
+  String get attrCatMuseum;
+
+  /// No description provided for @attrCatNature.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature'**
+  String get attrCatNature;
+
+  /// No description provided for @attrCatNeighborhood.
+  ///
+  /// In en, this message translates to:
+  /// **'Neighbourhood'**
+  String get attrCatNeighborhood;
+
+  /// No description provided for @attrCatBeach.
+  ///
+  /// In en, this message translates to:
+  /// **'Beach'**
+  String get attrCatBeach;
+
+  /// No description provided for @attrCatGarden.
+  ///
+  /// In en, this message translates to:
+  /// **'Garden'**
+  String get attrCatGarden;
+
+  /// No description provided for @attrCatMonument.
+  ///
+  /// In en, this message translates to:
+  /// **'Monument'**
+  String get attrCatMonument;
+
+  /// No description provided for @attrCatSquare.
+  ///
+  /// In en, this message translates to:
+  /// **'Square'**
+  String get attrCatSquare;
+
+  /// No description provided for @attrCatStreet.
+  ///
+  /// In en, this message translates to:
+  /// **'Street'**
+  String get attrCatStreet;
+
+  /// No description provided for @attrCatArchitecture.
+  ///
+  /// In en, this message translates to:
+  /// **'Architecture'**
+  String get attrCatArchitecture;
+
+  /// No description provided for @attrCatObservationDeck.
+  ///
+  /// In en, this message translates to:
+  /// **'Viewpoint'**
+  String get attrCatObservationDeck;
+
+  /// No description provided for @attrCatCastle.
+  ///
+  /// In en, this message translates to:
+  /// **'Castle'**
+  String get attrCatCastle;
+
+  /// No description provided for @attrCatMarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Market'**
+  String get attrCatMarket;
+
+  /// No description provided for @attrCatMountain.
+  ///
+  /// In en, this message translates to:
+  /// **'Mountain'**
+  String get attrCatMountain;
+
+  /// No description provided for @attrCatPalace.
+  ///
+  /// In en, this message translates to:
+  /// **'Palace'**
+  String get attrCatPalace;
+
+  /// No description provided for @attrCatIsland.
+  ///
+  /// In en, this message translates to:
+  /// **'Island'**
+  String get attrCatIsland;
+
+  /// No description provided for @attrCatLake.
+  ///
+  /// In en, this message translates to:
+  /// **'Lake'**
+  String get attrCatLake;
+
+  /// No description provided for @attrCatNationalPark.
+  ///
+  /// In en, this message translates to:
+  /// **'National park'**
+  String get attrCatNationalPark;
+
+  /// No description provided for @attrCatOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get attrCatOther;
+
+  /// No description provided for @attrCatBridge.
+  ///
+  /// In en, this message translates to:
+  /// **'Bridge'**
+  String get attrCatBridge;
+
+  /// No description provided for @attrCatThemePark.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme park'**
+  String get attrCatThemePark;
+
+  /// No description provided for @attrCatWaterfall.
+  ///
+  /// In en, this message translates to:
+  /// **'Waterfall'**
+  String get attrCatWaterfall;
+
+  /// No description provided for @attrCatZoo.
+  ///
+  /// In en, this message translates to:
+  /// **'Zoo'**
+  String get attrCatZoo;
+
+  /// No description provided for @attrCatShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping'**
+  String get attrCatShopping;
+
+  /// No description provided for @attrCatAquarium.
+  ///
+  /// In en, this message translates to:
+  /// **'Aquarium'**
+  String get attrCatAquarium;
 }
 
 class _AppLocalizationsDelegate

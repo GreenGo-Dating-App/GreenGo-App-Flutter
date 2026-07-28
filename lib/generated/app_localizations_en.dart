@@ -13380,4 +13380,82 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get attrShowOriginal => 'Show original';
+
+  @override
+  String get attrCatReligious => 'Religious site';
+
+  @override
+  String get attrCatHistoricSite => 'Historic site';
+
+  @override
+  String get attrCatMuseum => 'Museum';
+
+  @override
+  String get attrCatNature => 'Nature';
+
+  @override
+  String get attrCatNeighborhood => 'Neighbourhood';
+
+  @override
+  String get attrCatBeach => 'Beach';
+
+  @override
+  String get attrCatGarden => 'Garden';
+
+  @override
+  String get attrCatMonument => 'Monument';
+
+  @override
+  String get attrCatSquare => 'Square';
+
+  @override
+  String get attrCatStreet => 'Street';
+
+  @override
+  String get attrCatArchitecture => 'Architecture';
+
+  @override
+  String get attrCatObservationDeck => 'Viewpoint';
+
+  @override
+  String get attrCatCastle => 'Castle';
+
+  @override
+  String get attrCatMarket => 'Market';
+
+  @override
+  String get attrCatMountain => 'Mountain';
+
+  @override
+  String get attrCatPalace => 'Palace';
+
+  @override
+  String get attrCatIsland => 'Island';
+
+  @override
+  String get attrCatLake => 'Lake';
+
+  @override
+  String get attrCatNationalPark => 'National park';
+
+  @override
+  String get attrCatOther => 'Other';
+
+  @override
+  String get attrCatBridge => 'Bridge';
+
+  @override
+  String get attrCatThemePark => 'Theme park';
+
+  @override
+  String get attrCatWaterfall => 'Waterfall';
+
+  @override
+  String get attrCatZoo => 'Zoo';
+
+  @override
+  String get attrCatShopping => 'Shopping';
+
+  @override
+  String get attrCatAquarium => 'Aquarium';
 }

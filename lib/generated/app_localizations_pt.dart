@@ -13514,6 +13514,84 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get attrShowOriginal => 'Ver original';
+
+  @override
+  String get attrCatReligious => 'Local religioso';
+
+  @override
+  String get attrCatHistoricSite => 'Sítio histórico';
+
+  @override
+  String get attrCatMuseum => 'Museu';
+
+  @override
+  String get attrCatNature => 'Natureza';
+
+  @override
+  String get attrCatNeighborhood => 'Bairro';
+
+  @override
+  String get attrCatBeach => 'Praia';
+
+  @override
+  String get attrCatGarden => 'Jardim';
+
+  @override
+  String get attrCatMonument => 'Monumento';
+
+  @override
+  String get attrCatSquare => 'Praça';
+
+  @override
+  String get attrCatStreet => 'Rua';
+
+  @override
+  String get attrCatArchitecture => 'Arquitetura';
+
+  @override
+  String get attrCatObservationDeck => 'Miradouro';
+
+  @override
+  String get attrCatCastle => 'Castelo';
+
+  @override
+  String get attrCatMarket => 'Mercado';
+
+  @override
+  String get attrCatMountain => 'Montanha';
+
+  @override
+  String get attrCatPalace => 'Palácio';
+
+  @override
+  String get attrCatIsland => 'Ilha';
+
+  @override
+  String get attrCatLake => 'Lago';
+
+  @override
+  String get attrCatNationalPark => 'Parque nacional';
+
+  @override
+  String get attrCatOther => 'Outro';
+
+  @override
+  String get attrCatBridge => 'Ponte';
+
+  @override
+  String get attrCatThemePark => 'Parque temático';
+
+  @override
+  String get attrCatWaterfall => 'Cascata';
+
+  @override
+  String get attrCatZoo => 'Zoo';
+
+  @override
+  String get attrCatShopping => 'Compras';
+
+  @override
+  String get attrCatAquarium => 'Aquário';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -27003,4 +27081,82 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get attrShowOriginal => 'Ver original';
+
+  @override
+  String get attrCatReligious => 'Local religioso';
+
+  @override
+  String get attrCatHistoricSite => 'Sítio histórico';
+
+  @override
+  String get attrCatMuseum => 'Museu';
+
+  @override
+  String get attrCatNature => 'Natureza';
+
+  @override
+  String get attrCatNeighborhood => 'Bairro';
+
+  @override
+  String get attrCatBeach => 'Praia';
+
+  @override
+  String get attrCatGarden => 'Jardim';
+
+  @override
+  String get attrCatMonument => 'Monumento';
+
+  @override
+  String get attrCatSquare => 'Praça';
+
+  @override
+  String get attrCatStreet => 'Rua';
+
+  @override
+  String get attrCatArchitecture => 'Arquitetura';
+
+  @override
+  String get attrCatObservationDeck => 'Mirante';
+
+  @override
+  String get attrCatCastle => 'Castelo';
+
+  @override
+  String get attrCatMarket => 'Mercado';
+
+  @override
+  String get attrCatMountain => 'Montanha';
+
+  @override
+  String get attrCatPalace => 'Palácio';
+
+  @override
+  String get attrCatIsland => 'Ilha';
+
+  @override
+  String get attrCatLake => 'Lago';
+
+  @override
+  String get attrCatNationalPark => 'Parque nacional';
+
+  @override
+  String get attrCatOther => 'Outro';
+
+  @override
+  String get attrCatBridge => 'Ponte';
+
+  @override
+  String get attrCatThemePark => 'Parque temático';
+
+  @override
+  String get attrCatWaterfall => 'Cachoeira';
+
+  @override
+  String get attrCatZoo => 'Zoológico';
+
+  @override
+  String get attrCatShopping => 'Compras';
+
+  @override
+  String get attrCatAquarium => 'Aquário';
 }
