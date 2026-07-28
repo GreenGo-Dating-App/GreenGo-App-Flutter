@@ -7,6 +7,7 @@ import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/attraction_icons.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/attractions_datasource.dart';
+import '../../domain/category_labels.dart';
 import '../../domain/entities/attraction.dart';
 
 /// Full attraction page. Opens instantly from the compact record already in
@@ -360,7 +361,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                   const SizedBox(height: 8),
                   Wrap(spacing: 8, runSpacing: 6, children: [
                     _chip(AttractionIcons.category(a.categoryIcon),
-                        a.category ?? ''),
+                        CategoryLabels.of(l10n, a.category)),
                     _chip(AttractionIcons.importance(a.importanceIcon),
                         _importanceLabel(l10n, a),
                         color: AttractionIcons.importanceColor(a.importanceKey)),

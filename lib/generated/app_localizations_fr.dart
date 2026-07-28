@@ -13600,4 +13600,82 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get attrShowOriginal => 'Voir l\'original';
+
+  @override
+  String get attrCatReligious => 'Lieu religieux';
+
+  @override
+  String get attrCatHistoricSite => 'Site historique';
+
+  @override
+  String get attrCatMuseum => 'Musée';
+
+  @override
+  String get attrCatNature => 'Nature';
+
+  @override
+  String get attrCatNeighborhood => 'Quartier';
+
+  @override
+  String get attrCatBeach => 'Plage';
+
+  @override
+  String get attrCatGarden => 'Jardin';
+
+  @override
+  String get attrCatMonument => 'Monument';
+
+  @override
+  String get attrCatSquare => 'Place';
+
+  @override
+  String get attrCatStreet => 'Rue';
+
+  @override
+  String get attrCatArchitecture => 'Architecture';
+
+  @override
+  String get attrCatObservationDeck => 'Point de vue';
+
+  @override
+  String get attrCatCastle => 'Château';
+
+  @override
+  String get attrCatMarket => 'Marché';
+
+  @override
+  String get attrCatMountain => 'Montagne';
+
+  @override
+  String get attrCatPalace => 'Palais';
+
+  @override
+  String get attrCatIsland => 'Île';
+
+  @override
+  String get attrCatLake => 'Lac';
+
+  @override
+  String get attrCatNationalPark => 'Parc national';
+
+  @override
+  String get attrCatOther => 'Autre';
+
+  @override
+  String get attrCatBridge => 'Pont';
+
+  @override
+  String get attrCatThemePark => 'Parc d’attractions';
+
+  @override
+  String get attrCatWaterfall => 'Cascade';
+
+  @override
+  String get attrCatZoo => 'Zoo';
+
+  @override
+  String get attrCatShopping => 'Shopping';
+
+  @override
+  String get attrCatAquarium => 'Aquarium';
 }

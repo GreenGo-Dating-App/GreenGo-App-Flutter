@@ -12,6 +12,7 @@ import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import 'package:showcaseview/showcaseview.dart';
+import '../../../../core/services/location_refresh_service.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/services/session_cache_gate.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
@@ -210,6 +211,22 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   Future<void> _load({bool forceRefresh = false}) async {
+    // Pull-to-refresh must re-read WHERE THE USER IS before reloading anything,
+    // otherwise every section below is recomputed against a stale stored
+    // position (distances, people nearby, country filtering).
+    //
+    // Traveler mode wins over GPS: refreshIfAllowed skips the GPS read entirely
+    // while traveler mode is active, because `effectiveLocation` already points
+    // at the traveler location. When the user comes back OUT of traveler mode
+    // this is what finally refreshes their real position.
+    if (forceRefresh) {
+      await LocationRefreshService().refreshIfAllowed(
+        widget.userId,
+        isTravelerActive: _me?.isTravelerActive ?? false,
+      );
+    }
+    // Reload the profile AFTER the location write so effectiveLocation, and
+    // every section that derives from it, sees the new position.
     await _loadProfile();
     // Fire the content loads concurrently; each updates state on its own and
     // never throws (a failure just hides its section). On a pull-to-refresh

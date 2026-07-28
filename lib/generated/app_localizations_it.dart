@@ -13537,4 +13537,82 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get attrShowOriginal => 'Mostra originale';
+
+  @override
+  String get attrCatReligious => 'Luogo religioso';
+
+  @override
+  String get attrCatHistoricSite => 'Sito storico';
+
+  @override
+  String get attrCatMuseum => 'Museo';
+
+  @override
+  String get attrCatNature => 'Natura';
+
+  @override
+  String get attrCatNeighborhood => 'Quartiere';
+
+  @override
+  String get attrCatBeach => 'Spiaggia';
+
+  @override
+  String get attrCatGarden => 'Giardino';
+
+  @override
+  String get attrCatMonument => 'Monumento';
+
+  @override
+  String get attrCatSquare => 'Piazza';
+
+  @override
+  String get attrCatStreet => 'Via';
+
+  @override
+  String get attrCatArchitecture => 'Architettura';
+
+  @override
+  String get attrCatObservationDeck => 'Punto panoramico';
+
+  @override
+  String get attrCatCastle => 'Castello';
+
+  @override
+  String get attrCatMarket => 'Mercato';
+
+  @override
+  String get attrCatMountain => 'Montagna';
+
+  @override
+  String get attrCatPalace => 'Palazzo';
+
+  @override
+  String get attrCatIsland => 'Isola';
+
+  @override
+  String get attrCatLake => 'Lago';
+
+  @override
+  String get attrCatNationalPark => 'Parco nazionale';
+
+  @override
+  String get attrCatOther => 'Altro';
+
+  @override
+  String get attrCatBridge => 'Ponte';
+
+  @override
+  String get attrCatThemePark => 'Parco a tema';
+
+  @override
+  String get attrCatWaterfall => 'Cascata';
+
+  @override
+  String get attrCatZoo => 'Zoo';
+
+  @override
+  String get attrCatShopping => 'Shopping';
+
+  @override
+  String get attrCatAquarium => 'Acquario';
 }
