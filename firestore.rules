@@ -991,6 +991,42 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // CURATED ATTRACTIONS — read-only; written only by the tools/attractions
+    // pipeline (Admin SDK, which bypasses rules). Country-scoped, image-gated.
+    // ============================================================================
+    match /attractions/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+
+      // SEO / AI-prompt / marketing block. Rules do NOT cascade, so this needs
+      // its own match — it must stay out of the client read path.
+      match /meta/{metaDoc} {
+        allow read: if isAdmin();
+        allow write: if false;
+      }
+    }
+    match /attractions_index/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // compact per-country shard the list reads
+    }
+    match /attraction_countries/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // coverage + publish flag (the control plane)
+    }
+    match /attraction_cities/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+    match /attraction_taxonomy/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // category -> icon/group/label
+    }
+    match /attraction_config/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
     // COMMUNITIES — user-created culture communities (Exchange-style lists)
     // ============================================================================
     // Any signed-in user may create a community and read/join. Content and

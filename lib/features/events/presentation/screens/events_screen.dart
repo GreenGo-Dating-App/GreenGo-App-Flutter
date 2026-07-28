@@ -28,6 +28,7 @@ import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
+import '../../../attractions/presentation/widgets/attractions_tab.dart';
 import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../../../business/data/services/leads_service.dart';
@@ -102,7 +103,9 @@ class _EventsScreenState extends State<EventsScreen>
   }
   double? _userLat;
   double? _userLng;
-  String _extSort = 'distance'; // distance | rating | reviews | date
+  String _extSort = 'distance';
+  // Sort for the curated Attractions tab (own keys: distance|score|rating|price|name).
+  String _attrSort = 'distance'; // distance | score | rating | price | name
   // Live Events (ticketmaster) has its own order: DISTANCE (nearest) first by
   // default; the user can switch to Date.
   String _liveSort = 'distance'; // date | distance
@@ -164,12 +167,9 @@ class _EventsScreenState extends State<EventsScreen>
   bool get _isDateFilterableTab =>
       _isNativeTab || _tabController.index == 1;
 
-  // Attractions tab (Geoapify) supports a category filter (museum/park/etc).
-  bool get _isAttractionsTab => _tabController.index == 2;
   // Experiences tab (Viator) — also supports a category filter.
   bool get _isExperiencesTab => _tabController.index == 3;
   // Selected categories (null = all).
-  String? _attractionCategory;
   String? _experienceCategory;
 
   // Whole-table community search (Community tab): default shows the 100 closest;
@@ -409,7 +409,6 @@ class _EventsScreenState extends State<EventsScreen>
                 // Category filter — native tabs use GreenGo categories; the
                 // Attractions tab uses the Geoapify place categories.
                 if (_isNativeTab) _buildCategoryFilter(state),
-                if (_isAttractionsTab) _buildAttractionCategoryFilter(),
                 if (_isExperiencesTab) _buildExperienceCategoryFilter(),
                 // Events List
                 Expanded(
@@ -438,7 +437,7 @@ class _EventsScreenState extends State<EventsScreen>
         children: [
           _buildCommunityTab(state),
           _buildExperiencesTab('ticketmaster', sortOverride: _liveSort),
-          _buildExperiencesTab('geoapify', category: _attractionCategory),
+          _buildCuratedAttractionsTab(),
           _buildExperiencesTab('viator', category: _experienceCategory),
           _buildMyEventsTab(state),
         ],
@@ -451,7 +450,7 @@ class _EventsScreenState extends State<EventsScreen>
       children: [
         _buildEventsList([]),
         _buildExperiencesTab('ticketmaster', sortOverride: 'date'),
-        _buildExperiencesTab('geoapify'),
+        _buildCuratedAttractionsTab(),
         _buildExperiencesTab('viator'),
         _buildEventsList([]),
       ],
@@ -538,7 +537,32 @@ class _EventsScreenState extends State<EventsScreen>
                     current: _liveSort),
               ],
             )
-          // Attractions/Experiences (2/3) honour _extSort.
+          // Attractions (tab 2) — curated dataset: its own sort keys, surfaced in
+          // the search bar so the tab needs no second control of its own.
+          else if (_tabController.index == 2)
+            PopupMenuButton<String>(
+              icon: const Icon(Icons.sort, color: AppColors.richGold),
+              tooltip: AppLocalizations.of(context)!.eventsSortBy,
+              color: AppColors.backgroundCard,
+              initialValue: _attrSort,
+              onSelected: (v) => setState(() => _attrSort = v),
+              itemBuilder: (ctx) {
+                final l = AppLocalizations.of(ctx)!;
+                return [
+                  _sortItem('distance', l.attrSortDistance, Icons.near_me,
+                      current: _attrSort),
+                  _sortItem('score', l.attrSortScore, Icons.diamond,
+                      current: _attrSort),
+                  _sortItem('rating', l.attrSortRating, Icons.star,
+                      current: _attrSort),
+                  _sortItem('price', l.attrSortPrice, Icons.local_offer,
+                      current: _attrSort),
+                  _sortItem('name', l.attrSortName, Icons.sort_by_alpha,
+                      current: _attrSort),
+                ];
+              },
+            )
+          // Experiences (3) honours _extSort.
           else
             PopupMenuButton<String>(
               icon: const Icon(Icons.sort, color: AppColors.richGold),
@@ -1089,42 +1113,18 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  /// Category chips for the Attractions (Geoapify) tab.
-  Widget _buildAttractionCategoryFilter() {
-    final l10n = AppLocalizations.of(context)!;
-    final cats = <String, String>{
-      'museum': l10n.catMuseums,
-      'attraction': l10n.catSights,
-      'park': l10n.catParks,
-      'national_park': l10n.catNationalParks,
-      'theme_park': l10n.catThemeParks,
-    };
-    Widget chip(String? value, String label) {
-      final selected = _attractionCategory == value;
-      return Padding(
-        padding: const EdgeInsets.only(right: 8),
-        child: ChoiceChip(
-          label: Text(label),
-          selected: selected,
-          backgroundColor: AppColors.backgroundCard,
-          selectedColor: AppColors.richGold,
-          labelStyle: TextStyle(
-              color: selected ? AppColors.deepBlack : AppColors.textPrimary),
-          onSelected: (_) => setState(() => _attractionCategory = value),
-        ),
-      );
-    }
-
-    return SizedBox(
-      height: 48,
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        children: [
-          chip(null, l10n.eventsCategoryAll),
-          ...cats.entries.map((e) => chip(e.key, e.value)),
-        ],
-      ),
+  /// Curated attractions (GreenGo dataset) — country-scoped to the user's
+  /// primaryOrigin, with a second chip for the country they're travelling in.
+  /// Owns its own country/category/sort controls, so it does not use _extSort.
+  Widget _buildCuratedAttractionsTab() {
+    return AttractionsTab(
+      key: const ValueKey('curatedAttractions'),
+      gridView: _gridView,
+      query: _searchQuery,
+      currentUserId: widget.currentUserId,
+      userLat: _userLat,
+      userLng: _userLng,
+      sort: _attrSort,
     );
   }
 
