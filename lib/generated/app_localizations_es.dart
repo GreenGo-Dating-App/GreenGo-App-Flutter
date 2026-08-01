@@ -1379,12 +1379,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get adminVideoChat => 'Videochat';
 
   @override
-  String get adminVideoCoinPackages => 'Paquetes de monedas de vídeo';
-
-  @override
-  String get adminVideoCoins => 'Monedas de vídeo';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes minutos';
   }
@@ -2905,11 +2899,6 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Minutos de Video';
-  }
-
-  @override
   String get coinsApply => 'Aplicar';
 
   @override
@@ -3002,11 +2991,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get coinsPurchaseLabel => 'Comprar';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return 'Comprar $totalMinutes minutos de video por $price?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return '¡$totalCoins monedas compradas exitosamente!';
   }
@@ -3054,9 +3038,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get coinsTabGifts => 'Regalos';
 
   @override
-  String get coinsTabVideoCoins => 'Monedas de Video';
-
-  @override
   String get coinsToday => 'Hoy';
 
   @override
@@ -3071,12 +3052,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get coinsVideoCallMatches => 'Videollamada con tus matches';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video Coin = 1 minuto de videollamada';
-
-  @override
-  String get coinsVideoMin => 'Video Min';
 
   @override
   String get coinsVideoMinutes => 'Minutos de Video';
@@ -6789,6 +6764,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get subscriptionAutoRenewInfo =>
       'Las suscripciones se renuevan automáticamente a menos que se cancelen al menos 24 horas antes del fin del período actual. Gestiona o cancela cuando quieras en los ajustes de tu cuenta de la tienda.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Incluye 7 días de prueba gratis para nuevos suscriptores. La suscripción comienza al precio indicado cuando termine la prueba, salvo que canceles al menos 24 horas antes de que finalice.';
 
   @override
   String get purchasesRestored => 'Compras restauradas.';

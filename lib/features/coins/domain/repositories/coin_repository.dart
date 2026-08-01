@@ -25,17 +25,18 @@ abstract class CoinRepository {
 
   // Purchase Operations (Point 157)
   Future<Either<Failure, List<CoinPackage>>> getAvailablePackages();
+
+  /// Credit a coin package AFTER the store receipt has been verified on the
+  /// server. [purchaseToken] and [verificationData] come from the IAP
+  /// `PurchaseDetails` and are mandatory — coins are never credited without a
+  /// receipt the backend can validate against Google Play / the App Store.
   Future<Either<Failure, CoinTransaction>> purchaseCoins({
     required String userId,
     required CoinPackage package,
     required String platform,
-    String? purchaseToken,
-    CoinPromotion? promotion,
-  });
-  Future<Either<Failure, bool>> verifyPurchase({
-    required String userId,
     required String purchaseToken,
-    required String platform,
+    required String verificationData,
+    CoinPromotion? promotion,
   });
 
   // Transaction Operations (Point 159)

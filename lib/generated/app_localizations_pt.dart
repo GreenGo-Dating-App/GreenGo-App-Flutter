@@ -1370,12 +1370,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get adminVideoChat => 'Videochamada';
 
   @override
-  String get adminVideoCoinPackages => 'Pacotes de Moedas de Vídeo';
-
-  @override
-  String get adminVideoCoins => 'Moedas de Vídeo';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes Minutos';
   }
@@ -2888,11 +2882,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Minutos de Video';
-  }
-
-  @override
   String get coinsApply => 'Aplicar';
 
   @override
@@ -2985,11 +2974,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get coinsPurchaseLabel => 'Comprar';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return 'Comprar $totalMinutes minutos de video por $price?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return 'Compra de $totalCoins moedas efetuada com sucesso!';
   }
@@ -3037,9 +3021,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get coinsTabGifts => 'Presentes';
 
   @override
-  String get coinsTabVideoCoins => 'Moedas de Vídeo';
-
-  @override
   String get coinsToday => 'Hoje';
 
   @override
@@ -3054,12 +3035,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get coinsVideoCallMatches => 'Videochamada com os teus matchs';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video Coin = 1 minuto de videochamada';
-
-  @override
-  String get coinsVideoMin => 'Min Video';
 
   @override
   String get coinsVideoMinutes => 'Minutos de Video';
@@ -6766,6 +6741,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get subscriptionAutoRenewInfo =>
       'As subscrições renovam-se automaticamente, salvo cancelamento até 24 horas antes do fim do período atual. Faça a gestão ou cancele a qualquer momento nas definições da sua conta na loja.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Inclui 7 dias de teste gratuito para novos subscritores. A subscrição começa ao preço indicado quando o período de teste terminar, salvo cancelamento até 24 horas antes do fim.';
 
   @override
   String get purchasesRestored => 'Compras restauradas.';
@@ -14995,12 +14974,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get adminVideoChat => 'Videochamada';
 
   @override
-  String get adminVideoCoinPackages => 'Pacotes de Moedas de Vídeo';
-
-  @override
-  String get adminVideoCoins => 'Moedas de Vídeo';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes Minutos';
   }
@@ -16516,11 +16489,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Minutos de Video';
-  }
-
-  @override
   String get coinsApply => 'Aplicar';
 
   @override
@@ -16613,11 +16581,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get coinsPurchaseLabel => 'Comprar';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return 'Comprar $totalMinutes minutos de video por $price?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return 'Compra de $totalCoins moedas realizada com sucesso!';
   }
@@ -16665,9 +16628,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get coinsTabGifts => 'Presentes';
 
   @override
-  String get coinsTabVideoCoins => 'Moedas de Vídeo';
-
-  @override
   String get coinsToday => 'Hoje';
 
   @override
@@ -16682,12 +16642,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get coinsVideoCallMatches => 'Videochamada com seus matches';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video Coin = 1 minuto de videochamada';
-
-  @override
-  String get coinsVideoMin => 'Min Video';
 
   @override
   String get coinsVideoMinutes => 'Minutos de Video';
@@ -20393,6 +20347,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get subscriptionAutoRenewInfo =>
       'As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual. Gerencie ou cancele quando quiser nas configurações da sua conta na loja.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Inclui 7 dias de teste grátis para novos assinantes. A assinatura começa pelo preço exibido quando o teste terminar, a menos que você cancele pelo menos 24 horas antes do fim.';
 
   @override
   String get purchasesRestored => 'Compras restauradas.';

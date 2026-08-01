@@ -87,7 +87,6 @@ class CoinOrder extends Equatable {
 /// Order Type
 enum OrderType {
   coins,       // Regular GreenGoCoins
-  videoCoins,  // Video call minutes
   subscription, // Subscription purchase
   gift,        // Gift purchase
 }
@@ -97,8 +96,6 @@ extension OrderTypeExtension on OrderType {
     switch (this) {
       case OrderType.coins:
         return 'Coins Purchase';
-      case OrderType.videoCoins:
-        return 'Video Minutes';
       case OrderType.subscription:
         return 'Subscription';
       case OrderType.gift:

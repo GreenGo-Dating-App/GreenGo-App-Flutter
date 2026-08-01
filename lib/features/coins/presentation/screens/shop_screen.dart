@@ -7,10 +7,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/coin_gift.dart';
 import '../../domain/entities/coin_package.dart';
-import '../../domain/entities/video_coin.dart';
 import 'coin_shop_screen.dart';
 
-/// Shop Screen with tabs for Coins, Video Coins, and Gifts
+/// Shop Screen with tabs for Coins and Gifts
 class ShopScreen extends StatefulWidget {
 
   const ShopScreen({
@@ -25,16 +24,12 @@ class ShopScreen extends StatefulWidget {
 class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   int _coinBalance = 0;
-  int _videoCoinBalance = 0;
 
-  // Check if video calls feature is enabled
-  bool get _showVideoCoins => AppConfig.enableVideoCalls;
 
   @override
   void initState() {
     super.initState();
-    // 2 tabs (Coins, Gifts) if video calls disabled, 3 tabs if enabled
-    _tabController = TabController(length: _showVideoCoins ? 3 : 2, vsync: this);
+    _tabController = TabController(length: 2, vsync: this);
     _loadBalances();
   }
 
@@ -48,19 +43,6 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
       if (balanceDoc.exists && mounted) {
         setState(() {
           _coinBalance = (balanceDoc.data()?['totalCoins'] as num?)?.toInt() ?? 0;
-        });
-      }
-
-      final videoBalanceDoc = await FirebaseFirestore.instance
-          .collection('videoCoinBalances')
-          .doc(widget.userId)
-          .get();
-
-      if (videoBalanceDoc.exists && mounted) {
-        final total = (videoBalanceDoc.data()?['totalVideoCoins'] as num?)?.toInt() ?? 0;
-        final used = (videoBalanceDoc.data()?['usedVideoCoins'] as num?)?.toInt() ?? 0;
-        setState(() {
-          _videoCoinBalance = total - used;
         });
       }
     } catch (e) {
@@ -111,7 +93,6 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
                 unselectedLabelColor: AppColors.textTertiary,
                 tabs: [
                   Tab(text: l10n.coinsTabCoins),
-                  if (_showVideoCoins) Tab(text: l10n.coinsTabVideoCoins),
                   Tab(text: l10n.coinsTabGifts),
                 ],
               ),
@@ -126,11 +107,6 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
             userId: widget.userId,
             onPurchase: _handleCoinPurchase,
           ),
-          if (_showVideoCoins)
-            _VideoCoinsTab(
-              userId: widget.userId,
-              onPurchase: _handleVideoCoinPurchase,
-            ),
           _GiftsTab(
             userId: widget.userId,
             coinBalance: _coinBalance,
@@ -155,14 +131,6 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
             label: l10n.coinsTabCoins,
             value: _coinBalance.toString(),
           ),
-          // Video coin balance - only show if video calls enabled
-          if (_showVideoCoins)
-            _BalanceChip(
-              icon: Icons.videocam,
-              iconColor: Colors.blueAccent,
-              label: l10n.coinsVideoMin,
-              value: _videoCoinBalance.toString(),
-            ),
         ],
       ),
     );
@@ -225,52 +193,6 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
     );
     await _loadBalances();
   }
-
-  Future<void> _handleVideoCoinPurchase(VideoCoinPackage package) async {
-    final l10n = AppLocalizations.of(context)!;
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (context) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.coinsConfirmPurchase, style: const TextStyle(color: Colors.white)),
-        content: Text(
-          l10n.coinsPurchaseMinutesQuestion(package.totalMinutes, package.displayPrice),
-          style: const TextStyle(color: AppColors.textSecondary),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context, false),
-            child: Text(l10n.coinsCancelLabel),
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.blueAccent,
-            ),
-            onPressed: () => Navigator.pop(context, true),
-            child: Text(l10n.coinsPurchaseLabel, style: const TextStyle(color: Colors.white)),
-          ),
-        ],
-      ),
-    );
-
-    if (confirmed == true) {
-      await _processVideoCoinPurchase(package);
-    }
-  }
-
-  // SECURITY (C3): client-side video-minute minting removed — same policy as
-  // _processCoinPurchase. Route to the verified CoinShopScreen.
-  Future<void> _processVideoCoinPurchase(VideoCoinPackage package) async {
-    if (!mounted) return;
-    await Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => CoinShopScreen(userId: widget.userId),
-      ),
-    );
-    await _loadBalances();
-  }
-
 
   Future<void> _handleSendGift(String receiverId, int amount, String? message) async {
     if (_coinBalance < amount) {
@@ -656,224 +578,6 @@ class _CoinPackageCard extends StatelessWidget {
                       package.displayPrice,
                       style: const TextStyle(
                         color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// Video Coins Tab
-class _VideoCoinsTab extends StatelessWidget {
-
-  const _VideoCoinsTab({
-    required this.userId,
-    required this.onPurchase,
-  });
-  final String userId;
-  final Function(VideoCoinPackage) onPurchase;
-
-  @override
-  Widget build(BuildContext context) {
-    final packages = VideoCoinPackages.all;
-
-    return ListView(
-      padding: const EdgeInsets.all(16),
-      children: [
-        // Header
-        Container(
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              colors: [Colors.blueAccent, Colors.blue],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Column(
-            children: [
-              const Icon(Icons.videocam, size: 48, color: Colors.white),
-              const SizedBox(height: 8),
-              Text(
-                AppLocalizations.of(context)!.coinsVideoMinutes,
-                style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                AppLocalizations.of(context)!.coinsVideoCallMatches,
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.white.withValues(alpha: 0.8),
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-        // Info box
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: Colors.blueAccent.withValues(alpha: 0.2),
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: Colors.blueAccent.withValues(alpha: 0.5)),
-          ),
-          child: Row(
-            children: [
-              const Icon(Icons.info_outline, color: Colors.blueAccent, size: 20),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  AppLocalizations.of(context)!.coinsVideoCoinInfo,
-                  style: const TextStyle(
-                    color: Colors.blueAccent,
-                    fontSize: 12,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-        // Package list
-        ...packages.map((package) => _VideoCoinPackageCard(
-              package: package,
-              onTap: () => onPurchase(package),
-            )),
-      ],
-    );
-  }
-}
-
-/// Video Coin Package Card
-class _VideoCoinPackageCard extends StatelessWidget {
-
-  const _VideoCoinPackageCard({
-    required this.package,
-    required this.onTap,
-  });
-  final VideoCoinPackage package;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      color: AppColors.backgroundCard,
-      margin: const EdgeInsets.only(bottom: 12),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-        side: package.isPopular
-            ? const BorderSide(color: Colors.blueAccent, width: 2)
-            : BorderSide.none,
-      ),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
-        child: Stack(
-          children: [
-            if (package.badge != null)
-              Positioned(
-                top: 0,
-                right: 0,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                  decoration: const BoxDecoration(
-                    color: Colors.blueAccent,
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(12),
-                      bottomLeft: Radius.circular(12),
-                    ),
-                  ),
-                  child: Text(
-                    package.badge!,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 10,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  Container(
-                    width: 50,
-                    height: 50,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient: LinearGradient(
-                        colors: [Colors.blueAccent, Colors.blue],
-                      ),
-                    ),
-                    child: const Icon(Icons.videocam, color: Colors.white),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              '${package.videoMinutes}',
-                              style: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            if (package.bonusMinutes != null && package.bonusMinutes! > 0)
-                              Text(
-                                ' +${package.bonusMinutes}',
-                                style: const TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.green,
-                                ),
-                              ),
-                            Text(
-                              ' ${AppLocalizations.of(context)!.coinsMins}',
-                              style: const TextStyle(
-                                fontSize: 14,
-                                color: AppColors.textSecondary,
-                              ),
-                            ),
-                          ],
-                        ),
-                        Text(
-                          '\$${package.pricePerMinute.toStringAsFixed(2)}/min',
-                          style: const TextStyle(
-                            fontSize: 12,
-                            color: AppColors.textTertiary,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                    decoration: BoxDecoration(
-                      color: Colors.blueAccent,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Text(
-                      package.displayPrice,
-                      style: const TextStyle(
-                        color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -1306,18 +1010,12 @@ class _TransactionHistoryScreen extends StatelessWidget {
                 color: AppColors.backgroundCard,
                 margin: const EdgeInsets.only(bottom: 8),
                 child: ListTile(
-                  leading: Icon(
-                    data['type'] == 'coins'
-                        ? Icons.monetization_on
-                        : Icons.videocam,
-                    color: data['type'] == 'coins'
-                        ? AppColors.richGold
-                        : Colors.blueAccent,
+                  leading: const Icon(
+                    Icons.monetization_on,
+                    color: AppColors.richGold,
                   ),
                   title: Text(
-                    data['type'] == 'coins'
-                        ? AppLocalizations.of(context)!.coinsAmountCoins(data['amount'])
-                        : AppLocalizations.of(context)!.coinsAmountVideoMinutes(data['amount']),
+                    AppLocalizations.of(context)!.coinsAmountCoins(data['amount']),
                     style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

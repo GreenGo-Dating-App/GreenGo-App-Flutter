@@ -1373,12 +1373,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get adminVideoChat => 'Videochat';
 
   @override
-  String get adminVideoCoinPackages => 'Video-Münzpakete';
-
-  @override
-  String get adminVideoCoins => 'Videomünzen';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes Minuten';
   }
@@ -2901,11 +2895,6 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Videominuten';
-  }
-
-  @override
   String get coinsApply => 'Anwenden';
 
   @override
@@ -2998,11 +2987,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get coinsPurchaseLabel => 'Kaufen';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return '$totalMinutes Videominuten fuer $price kaufen?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return '$totalCoins Münzen erfolgreich gekauft!';
   }
@@ -3050,9 +3034,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get coinsTabGifts => 'Geschenke';
 
   @override
-  String get coinsTabVideoCoins => 'Video-Münzen';
-
-  @override
   String get coinsToday => 'Heute';
 
   @override
@@ -3067,12 +3048,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get coinsVideoCallMatches => 'Videoanruf mit deinen Matches';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video-Coin = 1 Minute Videoanruf';
-
-  @override
-  String get coinsVideoMin => 'Video Min.';
 
   @override
   String get coinsVideoMinutes => 'Videominuten';
@@ -6790,6 +6765,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get subscriptionAutoRenewInfo =>
       'Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Verwalte oder kündige jederzeit in den Kontoeinstellungen deines Stores.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Enthält 7 Tage kostenlose Testphase für Neuabonnenten. Das Abo startet zum angezeigten Preis, sobald die Testphase endet, sofern du nicht mindestens 24 Stunden vor Ablauf kündigst.';
 
   @override
   String get purchasesRestored => 'Käufe wiederhergestellt.';

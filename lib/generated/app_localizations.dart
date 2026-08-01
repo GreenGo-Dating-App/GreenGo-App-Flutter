@@ -2495,18 +2495,6 @@ abstract class AppLocalizations {
   /// **'Video Chat'**
   String get adminVideoChat;
 
-  /// No description provided for @adminVideoCoinPackages.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Coin Packages'**
-  String get adminVideoCoinPackages;
-
-  /// No description provided for @adminVideoCoins.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Coins'**
-  String get adminVideoCoins;
-
   /// No description provided for @adminVideoMinutesLabel.
   ///
   /// In en, this message translates to:
@@ -5147,12 +5135,6 @@ abstract class AppLocalizations {
   /// **'{amount} Coins'**
   String coinsAmountCoins(Object amount);
 
-  /// No description provided for @coinsAmountVideoMinutes.
-  ///
-  /// In en, this message translates to:
-  /// **'{amount} Video Minutes'**
-  String coinsAmountVideoMinutes(Object amount);
-
   /// No description provided for @coinsApply.
   ///
   /// In en, this message translates to:
@@ -5309,12 +5291,6 @@ abstract class AppLocalizations {
   /// **'Purchase'**
   String get coinsPurchaseLabel;
 
-  /// No description provided for @coinsPurchaseMinutesQuestion.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchase {totalMinutes} video minutes for {price}?'**
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price);
-
   /// No description provided for @coinsPurchasedCoins.
   ///
   /// In en, this message translates to:
@@ -5393,12 +5369,6 @@ abstract class AppLocalizations {
   /// **'Gifts'**
   String get coinsTabGifts;
 
-  /// No description provided for @coinsTabVideoCoins.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Coins'**
-  String get coinsTabVideoCoins;
-
   /// No description provided for @coinsToday.
   ///
   /// In en, this message translates to:
@@ -5428,18 +5398,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Video call with your matches'**
   String get coinsVideoCallMatches;
-
-  /// No description provided for @coinsVideoCoinInfo.
-  ///
-  /// In en, this message translates to:
-  /// **'1 Video Coin = 1 minute of video call'**
-  String get coinsVideoCoinInfo;
-
-  /// No description provided for @coinsVideoMin.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Min'**
-  String get coinsVideoMin;
 
   /// No description provided for @coinsVideoMinutes.
   ///
@@ -12083,6 +12041,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.'**
   String get subscriptionAutoRenewInfo;
+
+  /// No description provided for @subscriptionFreeTrialInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Includes a 7-day free trial for new subscribers. Your subscription starts at the price shown when the trial ends, unless you cancel at least 24 hours before it finishes.'**
+  String get subscriptionFreeTrialInfo;
 
   /// No description provided for @purchasesRestored.
   ///

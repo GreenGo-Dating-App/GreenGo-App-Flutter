@@ -12,11 +12,20 @@ class SubscriptionLegalFooter extends StatelessWidget {
     super.key,
     this.onRestore,
     this.isRestoring = false,
+    this.showFreeTrialNotice = false,
   });
 
   /// When provided, a "Restore Purchases" button is shown above the disclosure.
   final VoidCallback? onRestore;
   final bool isRestoring;
+
+  /// Show the free-trial disclosure. Set this on any surface that sells a
+  /// subscription carrying an introductory free-trial offer.
+  ///
+  /// Apple Guideline 3.1.2(a) requires the purchase surface to state the trial
+  /// duration AND that it converts to a paid subscription at the stated price.
+  /// Showing the price alone, or "7 days free" alone, is a rejection.
+  final bool showFreeTrialNotice;
 
   void _openLegal(BuildContext context, {required bool terms}) {
     Navigator.of(context).push(
@@ -59,6 +68,19 @@ class SubscriptionLegalFooter extends StatelessWidget {
                   ),
           ),
           const SizedBox(height: 4),
+        ],
+        if (showFreeTrialNotice) ...[
+          Text(
+            l10n.subscriptionFreeTrialInfo,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: AppColors.textTertiary.withValues(alpha: 0.9),
+              fontSize: 11,
+              height: 1.4,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(height: 6),
         ],
         Text(
           l10n.subscriptionAutoRenewInfo,

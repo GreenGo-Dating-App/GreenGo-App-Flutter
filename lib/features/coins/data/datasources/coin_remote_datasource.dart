@@ -11,14 +11,12 @@ import '../../domain/entities/coin_reward.dart';
 import '../../domain/entities/coin_transaction.dart';
 import '../../domain/entities/invoice.dart';
 import '../../domain/entities/order.dart';
-import '../../domain/entities/video_coin.dart';
 import '../models/coin_balance_model.dart';
 import '../models/coin_gift_model.dart';
 import '../models/coin_promotion_model.dart';
 import '../models/coin_transaction_model.dart';
 import '../models/invoice_model.dart';
 import '../models/order_model.dart';
-import '../models/video_coin_model.dart';
 
 /// Coin Remote Data Source
 /// Handles all coin-related operations with Firestore and in-app purchases
@@ -46,10 +44,6 @@ class CoinRemoteDataSource {
       firestore.collection('coinPromotions');
   CollectionReference get _rewardsCollection =>
       firestore.collection('claimedRewards');
-  CollectionReference get _videoCoinBalancesCollection =>
-      firestore.collection('videoCoinBalances');
-  CollectionReference get _videoCoinTransactionsCollection =>
-      firestore.collection('videoCoinTransactions');
   CollectionReference get _ordersCollection =>
       firestore.collection('coinOrders');
   CollectionReference get _invoicesCollection =>
@@ -233,42 +227,65 @@ class CoinRemoteDataSource {
 
   // ===== Purchase Operations =====
 
-  /// Get available coin packages from store
-  /// Get available coin packages from store
-  /// Returns standard packages as fallback if IAP is unavailable or fails
+  /// Get available coin packages, priced with the REAL store price for the
+  /// user's storefront (localized currency), not the hard-coded USD defaults.
+  ///
+  /// The catalog itself (which packages exist, and how many coins each grants)
+  /// stays local — coin amounts are enforced server-side at verification time
+  /// anyway. Only the *price label* comes from the store.
+  ///
+  /// Falls back to the hard-coded price for any product the store doesn't
+  /// return, but a missing product is a store-misconfiguration signal, so it is
+  /// logged loudly rather than swallowed.
   Future<List<CoinPackage>> getAvailablePackages() async {
+    final fallback = CoinPackages.standardPackages;
     try {
-      // Check if store is available
       final available = await inAppPurchase.isAvailable();
       if (!available) {
-        debugPrint('[CoinShop] IAP not available - returning standard packages');
-        return CoinPackages.standardPackages;
+        debugPrint('[CoinShop] IAP not available — using fallback prices');
+        return fallback;
       }
 
-      final productIds = CoinPackages.standardPackages
-          .map((pkg) => pkg.productId)
-          .toSet();
-
-      final response =
-          await inAppPurchase.queryProductDetails(productIds);
+      final productIds = fallback.map((pkg) => pkg.productId).toSet();
+      final response = await inAppPurchase.queryProductDetails(productIds);
 
       if (response.error != null) {
-        debugPrint('[CoinShop] IAP query error: ${response.error} - returning standard packages');
-        return CoinPackages.standardPackages;
+        debugPrint('[CoinShop] IAP query error: ${response.error} — using fallback prices');
+        return fallback;
+      }
+
+      if (response.notFoundIDs.isNotEmpty) {
+        // Loud on purpose: these IDs are missing/inactive in the store console,
+        // or the build is not on a published track. Silently falling back here
+        // is what hides a broken store setup until users complain.
+        debugPrint(
+          '[CoinShop] STORE MISCONFIGURATION — coin products not found: '
+          '${response.notFoundIDs.join(', ')}',
+        );
       }
 
       if (response.productDetails.isEmpty) {
-        debugPrint('[CoinShop] No IAP products found - returning standard packages');
-        return CoinPackages.standardPackages;
+        debugPrint('[CoinShop] No coin products returned — using fallback prices');
+        return fallback;
       }
 
-      // Successfully loaded from store, return standard packages
-      // (prices would be merged from productDetails in a production app)
-      return CoinPackages.standardPackages;
+      // Merge the store's localized price into each package.
+      final byId = <String, ProductDetails>{
+        for (final pd in response.productDetails) pd.id: pd,
+      };
+
+      return fallback.map((pkg) {
+        final details = byId[pkg.productId];
+        if (details == null) return pkg;
+        return pkg.copyWith(
+          storePrice: details.price,
+          price: details.rawPrice,
+          currency: details.currencyCode,
+        );
+      }).toList();
     } catch (e) {
-      debugPrint('[CoinShop] IAP error: $e - returning standard packages');
-      // Return standard packages as fallback instead of throwing
-      return CoinPackages.standardPackages;
+      debugPrint('[CoinShop] IAP error: $e — using fallback prices');
+      return fallback;
     }
   }
 
@@ -285,15 +302,45 @@ class CoinRemoteDataSource {
     await inAppPurchase.buyConsumable(purchaseParam: purchaseParam);
   }
 
-  /// Verify coin purchase (should be done server-side)
-  Future<bool> verifyPurchase({
-    required String userId,
+  /// Verify a coin purchase receipt with the store, SERVER-SIDE, and credit the
+  /// coins.
+  ///
+  /// This is the only sanctioned way to add purchased coins. The Cloud Function
+  /// validates the receipt against the Google Play Developer API / App Store
+  /// Server API, derives the coin amount from the *verified* product ID (never
+  /// from anything the client sends), and writes the balance with the Admin SDK.
+  /// The client never credits purchased coins itself.
+  ///
+  /// [purchaseToken] is `PurchaseDetails.purchaseID` (or the server verification
+  /// data on Android); [verificationData] is
+  /// `PurchaseDetails.verificationData.serverVerificationData` — the Play
+  /// purchase token or the StoreKit 2 JWS.
+  ///
+  /// Returns the credited amount and the new balance. Idempotent: re-verifying
+  /// the same receipt returns `coinsAdded: 0` with `alreadyProcessed: true`
+  /// instead of double-crediting.
+  Future<CoinPurchaseResult> verifyCoinPurchase({
+    required String productId,
     required String purchaseToken,
     required String platform,
+    String? verificationData,
   }) async {
-    // This should call a Cloud Function to verify the purchase
-    // For now, returning true for development
-    return true;
+    final callableName = platform == 'ios'
+        ? 'verifyAppStoreCoinPurchase'
+        : 'verifyGooglePlayCoinPurchase';
+
+    final result = await functions.httpsCallable(callableName).call<Object?>({
+      'productId': productId,
+      'purchaseToken': purchaseToken,
+      'verificationData': verificationData ?? purchaseToken,
+    });
+
+    final data = Map<String, dynamic>.from(result.data as Map);
+    return CoinPurchaseResult(
+      coinsAdded: (data['coinsAdded'] as num?)?.toInt() ?? 0,
+      newBalance: (data['newBalance'] as num?)?.toInt() ?? 0,
+      alreadyProcessed: data['alreadyProcessed'] as bool? ?? false,
+    );
   }
 
   // ===== Transaction Operations =====
@@ -995,152 +1042,6 @@ class CoinRemoteDataSource {
     return CoinPromotionModel.fromFirestore(snapshot.docs.first);
   }
 
-  // ===== Video Coin Operations =====
-
-  /// Get video coin balance for user
-  Future<VideoCoinBalanceModel> getVideoCoinBalance(String userId) async {
-    final doc = await _videoCoinBalancesCollection.doc(userId).get();
-
-    if (!doc.exists) {
-      final newBalance = VideoCoinBalanceModel.empty(userId);
-      await _videoCoinBalancesCollection.doc(userId).set(newBalance.toFirestore());
-      return newBalance;
-    }
-
-    return VideoCoinBalanceModel.fromFirestore(doc);
-  }
-
-  /// Stream video coin balance
-  Stream<VideoCoinBalanceModel> videoCoinBalanceStream(String userId) {
-    return _videoCoinBalancesCollection.doc(userId).snapshots().map((doc) {
-      if (!doc.exists) {
-        return VideoCoinBalanceModel.empty(userId);
-      }
-      return VideoCoinBalanceModel.fromFirestore(doc);
-    });
-  }
-
-  /// Add video coins to user
-  Future<void> addVideoCoins({
-    required String userId,
-    required int minutes,
-    required VideoCoinTransactionType type,
-    String? relatedUserId,
-    String? callId,
-  }) async {
-    await firestore.runTransaction((transaction) async {
-      final balanceRef = _videoCoinBalancesCollection.doc(userId);
-      final balanceDoc = await transaction.get(balanceRef);
-
-      VideoCoinBalanceModel currentBalance;
-      if (!balanceDoc.exists) {
-        currentBalance = VideoCoinBalanceModel.empty(userId);
-      } else {
-        currentBalance = VideoCoinBalanceModel.fromFirestore(balanceDoc);
-      }
-
-      final newTotal = currentBalance.totalVideoCoins + minutes;
-
-      final updatedBalance = VideoCoinBalanceModel(
-        userId: userId,
-        totalVideoCoins: newTotal,
-        usedVideoCoins: currentBalance.usedVideoCoins,
-        lastUpdated: DateTime.now(),
-      );
-
-      transaction.set(balanceRef, updatedBalance.toFirestore());
-
-      // Create transaction record
-      final transactionId = uuid.v4();
-      final transactionModel = VideoCoinTransactionModel(
-        transactionId: transactionId,
-        userId: userId,
-        type: type,
-        minutes: minutes,
-        balanceAfter: updatedBalance.availableVideoCoins,
-        relatedUserId: relatedUserId,
-        callId: callId,
-        createdAt: DateTime.now(),
-      );
-
-      transaction.set(
-        _videoCoinTransactionsCollection.doc(transactionId),
-        transactionModel.toFirestore(),
-      );
-    });
-  }
-
-  /// Use video coins for call
-  Future<void> useVideoCoins({
-    required String userId,
-    required int minutes,
-    required String callId,
-    String? relatedUserId,
-  }) async {
-    await firestore.runTransaction((transaction) async {
-      final balanceRef = _videoCoinBalancesCollection.doc(userId);
-      final balanceDoc = await transaction.get(balanceRef);
-
-      if (!balanceDoc.exists) {
-        throw Exception('No video coin balance found');
-      }
-
-      final currentBalance = VideoCoinBalanceModel.fromFirestore(balanceDoc);
-
-      if (currentBalance.availableVideoCoins < minutes) {
-        throw Exception('Insufficient video coins');
-      }
-
-      final newUsed = currentBalance.usedVideoCoins + minutes;
-
-      final updatedBalance = VideoCoinBalanceModel(
-        userId: userId,
-        totalVideoCoins: currentBalance.totalVideoCoins,
-        usedVideoCoins: newUsed,
-        lastUpdated: DateTime.now(),
-      );
-
-      transaction.set(balanceRef, updatedBalance.toFirestore());
-
-      // Create transaction record
-      final transactionId = uuid.v4();
-      final transactionModel = VideoCoinTransactionModel(
-        transactionId: transactionId,
-        userId: userId,
-        type: VideoCoinTransactionType.used,
-        minutes: minutes,
-        balanceAfter: updatedBalance.availableVideoCoins,
-        relatedUserId: relatedUserId,
-        callId: callId,
-        createdAt: DateTime.now(),
-      );
-
-      transaction.set(
-        _videoCoinTransactionsCollection.doc(transactionId),
-        transactionModel.toFirestore(),
-      );
-    });
-  }
-
-  /// Get video coin transaction history
-  Future<List<VideoCoinTransactionModel>> getVideoCoinTransactions({
-    required String userId,
-    int? limit,
-  }) async {
-    var query = _videoCoinTransactionsCollection
-        .where('userId', isEqualTo: userId)
-        .orderBy('createdAt', descending: true);
-
-    if (limit != null) {
-      query = query.limit(limit);
-    }
-
-    final snapshot = await query.get();
-    return snapshot.docs
-        .map(VideoCoinTransactionModel.fromFirestore)
-        .toList();
-  }
-
   // ===== Order Operations =====
 
   /// Create order
@@ -1299,9 +1200,6 @@ class CoinRemoteDataSource {
       case OrderType.coins:
         description = '${order.itemQuantity} GreenGo Coins';
         break;
-      case OrderType.videoCoins:
-        description = '${order.itemQuantity} Video Minutes';
-        break;
       case OrderType.subscription:
         description = 'Subscription Plan';
         break;
@@ -1424,65 +1322,6 @@ class CoinRemoteDataSource {
     );
   }
 
-  /// Adjust user video coins (admin only)
-  Future<void> adminAdjustVideoCoins({
-    required String userId,
-    required int minutes,
-    required String adminId,
-    required String reason,
-  }) async {
-    if (minutes > 0) {
-      await addVideoCoins(
-        userId: userId,
-        minutes: minutes,
-        type: VideoCoinTransactionType.bonus,
-      );
-    } else {
-      // For negative adjustments, create a used transaction
-      await firestore.runTransaction((transaction) async {
-        final balanceRef = _videoCoinBalancesCollection.doc(userId);
-        final balanceDoc = await transaction.get(balanceRef);
-
-        if (!balanceDoc.exists) {
-          throw Exception('No video coin balance found');
-        }
-
-        final currentBalance = VideoCoinBalanceModel.fromFirestore(balanceDoc);
-        final adjustAmount = minutes.abs();
-
-        if (currentBalance.availableVideoCoins < adjustAmount) {
-          throw Exception('Insufficient video coins for adjustment');
-        }
-
-        final newUsed = currentBalance.usedVideoCoins + adjustAmount;
-
-        final updatedBalance = VideoCoinBalanceModel(
-          userId: userId,
-          totalVideoCoins: currentBalance.totalVideoCoins,
-          usedVideoCoins: newUsed,
-          lastUpdated: DateTime.now(),
-        );
-
-        transaction.set(balanceRef, updatedBalance.toFirestore());
-
-        // Create transaction record
-        final transactionId = uuid.v4();
-        final transactionModel = VideoCoinTransactionModel(
-          transactionId: transactionId,
-          userId: userId,
-          type: VideoCoinTransactionType.expired, // Using expired for admin deductions
-          minutes: adjustAmount,
-          balanceAfter: updatedBalance.availableVideoCoins,
-          createdAt: DateTime.now(),
-        );
-
-        transaction.set(
-          _videoCoinTransactionsCollection.doc(transactionId),
-          transactionModel.toFirestore(),
-        );
-      });
-    }
-  }
 
   /// Search users by coin balance (admin)
   Future<List<Map<String, dynamic>>> searchUsersByCoins({
@@ -1557,4 +1396,22 @@ class CoinRemoteDataSource {
       },
     };
   }
+}
+
+/// Outcome of a server-verified coin purchase.
+///
+/// [alreadyProcessed] is true when the receipt had already been credited (for
+/// example the global purchase-recovery listener and the shop screen both saw
+/// the same purchase). Treat it as success — never as an error — and simply
+/// refresh the balance.
+class CoinPurchaseResult {
+  const CoinPurchaseResult({
+    required this.coinsAdded,
+    required this.newBalance,
+    this.alreadyProcessed = false,
+  });
+
+  final int coinsAdded;
+  final int newBalance;
+  final bool alreadyProcessed;
 }

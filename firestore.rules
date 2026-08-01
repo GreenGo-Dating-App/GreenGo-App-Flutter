@@ -444,6 +444,25 @@ service cloud.firestore {
       // could inflate anyone's totalCoins.
       allow update: if isOwner(userId);
       allow delete: if false;
+
+      // ⚠️ PENDING LOCKDOWN — enable ONLY after a build with server-verified
+      // coin purchases is live in BOTH stores (>= 3.0.0+131).
+      //
+      // PURCHASED coins are store money and may only be credited by the
+      // verifyGooglePlayCoinPurchase / verifyAppStoreCoinPurchase callables
+      // after a receipt is validated with the store. Those run on the Admin SDK
+      // and bypass rules, so the client can never raise `purchasedCoins`.
+      // Spending, rewards, streaks and missions leave it untouched, so this
+      // restricts no legitimate write FROM A CURRENT CLIENT — but the shipped
+      // build still credits coins client-side, and enabling this early means
+      // those users are charged by the store and receive nothing.
+      //
+      // Replace the create/update lines above with:
+      //   allow create: if isSignedIn()
+      //     && request.resource.data.get('purchasedCoins', 0) == 0;
+      //   allow update: if isOwner(userId)
+      //     && request.resource.data.get('purchasedCoins', 0)
+      //          <= resource.data.get('purchasedCoins', 0);
     }
 
     // ============================================================================
@@ -490,6 +509,13 @@ service cloud.firestore {
       // A user may only create ledger entries they're a party to — their own
       // (userId) or as the counterparty of a gift/refund (relatedUserId).
       // Blocks forging arbitrary third-party ledger entries.
+      //
+      // ⚠️ PENDING LOCKDOWN — enable ONLY together with the coinBalances guard
+      // above, once a build with server-verified coin purchases is live in BOTH
+      // stores (>= 3.0.0+131). `coinPurchase` entries are then written
+      // exclusively by the receipt verification callables (Admin SDK), so a
+      // client-authored one is always a forgery attempt. Add this line:
+      //   && request.resource.data.get('reason', '') != 'coinPurchase'
       allow create: if isSignedIn()
         && (request.resource.data.userId == request.auth.uid
             || request.resource.data.get('relatedUserId', '') == request.auth.uid);
@@ -498,17 +524,22 @@ service cloud.firestore {
     }
 
     // ============================================================================
-    // VIDEO COINS + INVOICES (were unruled → catch-all denied the user's own
-    // writes, breaking the client video-coin ledger + invoice generation).
+    // VIDEO COINS (RETIRED) + INVOICES
     // ============================================================================
+    // The video-minute product line (greengo_video_10/30/60/120) was removed
+    // from the app. These two collections are kept READ + DELETE only so that
+    // legacy documents belonging to existing users can still be read and, most
+    // importantly, ERASED by the in-app account-deletion flow (which runs
+    // client-side). Dropping the rules entirely would orphan that data and
+    // break the right-to-erasure guarantee. No new writes are permitted.
     match /videoCoinBalances/{userId} {
-      allow read, create, update: if isOwner(userId);
-      allow delete: if false;
+      allow read, delete: if isOwner(userId);
+      allow create, update: if false;
     }
     match /videoCoinTransactions/{transactionId} {
-      allow read: if isSignedIn();
-      allow create: if isSignedIn();
-      allow update, delete: if false;
+      allow read, delete: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
+      allow create, update: if false;
     }
     match /invoices/{invoiceId} {
       allow read: if isSignedIn()

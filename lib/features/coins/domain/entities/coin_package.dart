@@ -16,6 +16,7 @@ class CoinPackage extends Equatable {
     this.promotionStartDate,
     this.promotionEndDate,
     this.promotionLabel,
+    this.storePrice,
   });
   final String packageId;
   final String productId; // For in-app purchases
@@ -28,6 +29,39 @@ class CoinPackage extends Equatable {
   final DateTime? promotionStartDate;
   final DateTime? promotionEndDate;
   final String? promotionLabel;
+
+  /// The store's own formatted price string for the user's storefront
+  /// (e.g. "R$ 19,90", "¥600"). Populated from `ProductDetails.price` when the
+  /// catalog is loaded from Google Play / the App Store. Null until then.
+  ///
+  /// Always prefer this over formatting [price] ourselves: the stores apply
+  /// per-country price points, local tax display rules and currency formatting
+  /// that a client-side `toStringAsFixed(2)` cannot reproduce — and showing a
+  /// price that differs from what the user is actually charged is a store
+  /// policy violation.
+  final String? storePrice;
+
+  /// Copy with store-provided pricing merged in.
+  CoinPackage copyWith({
+    String? storePrice,
+    double? price,
+    String? currency,
+  }) {
+    return CoinPackage(
+      packageId: packageId,
+      productId: productId,
+      coinAmount: coinAmount,
+      price: price ?? this.price,
+      currency: currency ?? this.currency,
+      bonusCoins: bonusCoins,
+      discountPercentage: discountPercentage,
+      isPromotional: isPromotional,
+      promotionStartDate: promotionStartDate,
+      promotionEndDate: promotionEndDate,
+      promotionLabel: promotionLabel,
+      storePrice: storePrice ?? this.storePrice,
+    );
+  }
 
   /// Get total coins including bonus
   int get totalCoins => coinAmount + (bonusCoins ?? 0);
@@ -48,8 +82,11 @@ class CoinPackage extends Equatable {
     return true;
   }
 
-  /// Get display price
+  /// Get display price — the store's own localized string when available,
+  /// falling back to a locally formatted price only before the catalog loads.
   String get displayPrice {
+    final fromStore = storePrice;
+    if (fromStore != null && fromStore.isNotEmpty) return fromStore;
     if (currency == 'USD') {
       return '\$${price.toStringAsFixed(2)}';
     }
@@ -80,6 +117,7 @@ class CoinPackage extends Equatable {
         promotionStartDate,
         promotionEndDate,
         promotionLabel,
+        storePrice,
       ];
 }
 

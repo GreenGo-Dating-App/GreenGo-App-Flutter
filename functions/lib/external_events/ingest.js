@@ -47,7 +47,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.runIngestExternalEventsNow = exports.ingestExternalEvents = exports.runBackfillViatorCategoriesNow = void 0;
+exports.runCleanupNoImageNow = exports.runIngestExternalEventsNow = exports.ingestExternalEvents = exports.runBackfillViatorCategoriesNow = void 0;
 exports.viatorCategory = viatorCategory;
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
@@ -722,4 +722,60 @@ exports.runIngestExternalEventsNow = (0, https_1.onRequest)({ timeoutSeconds: 54
     const count = await runIngestion(key);
     res.status(200).json({ ok: true, cleared, upserted: count });
 }));
+/// Delete `external_events` for [sources] that carry no image, so the app never
+/// shows a picture-less experience. Rebuilds each source's shard index.
+///
+/// Re-homed here when the Geoapify ingester was removed — this utility is
+/// source-agnostic and Viator still needs it. The token is GEOAPIFY_API_KEY,
+/// which is reused across these admin endpoints as a shared admin secret.
+exports.runCleanupNoImageNow = (0, https_1.onRequest)({ timeoutSeconds: 1800, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] }, async (req, res) => {
+    if (!req.query.token || req.query.token !== GEOAPIFY_API_KEY.value()) {
+        res.status(403).send('Forbidden');
+        return;
+    }
+    const sources = (req.query.sources || 'viator')
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
+    const result = {};
+    for (const source of sources) {
+        let cursor;
+        let deleted = 0;
+        for (;;) {
+            let q = db
+                .collection(COLLECTION)
+                .where('source', '==', source)
+                .orderBy('__name__')
+                .limit(500);
+            if (cursor)
+                q = q.startAfter(cursor);
+            const snap = await q.get();
+            if (snap.empty)
+                break;
+            let batch = db.batch();
+            let ops = 0;
+            for (const doc of snap.docs) {
+                const img = doc.data().imageUrl;
+                if (img == null || img === '') {
+                    batch.delete(doc.ref);
+                    deleted++;
+                    if (++ops >= 400) {
+                        await batch.commit();
+                        batch = db.batch();
+                        ops = 0;
+                    }
+                }
+            }
+            if (ops > 0)
+                await batch.commit();
+            cursor = snap.docs[snap.docs.length - 1];
+            if (snap.docs.length < 500)
+                break;
+        }
+        await (0, build_index_1.buildSourceIndex)(source);
+        result[source] = deleted;
+    }
+    console.log('cleanupNoImage:', result);
+    res.status(200).json({ ok: true, deleted: result });
+});
 //# sourceMappingURL=ingest.js.map
