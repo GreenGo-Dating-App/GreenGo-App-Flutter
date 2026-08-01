@@ -1357,12 +1357,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminVideoChat => 'Video Chat';
 
   @override
-  String get adminVideoCoinPackages => 'Video Coin Packages';
-
-  @override
-  String get adminVideoCoins => 'Video Coins';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes Minutes';
   }
@@ -2858,11 +2852,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Video Minutes';
-  }
-
-  @override
   String get coinsApply => 'Apply';
 
   @override
@@ -2955,11 +2944,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coinsPurchaseLabel => 'Purchase';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return 'Purchase $totalMinutes video minutes for $price?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return 'Successfully purchased $totalCoins coins!';
   }
@@ -3007,9 +2991,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coinsTabGifts => 'Gifts';
 
   @override
-  String get coinsTabVideoCoins => 'Video Coins';
-
-  @override
   String get coinsToday => 'Today';
 
   @override
@@ -3024,12 +3005,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coinsVideoCallMatches => 'Video call with your matches';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video Coin = 1 minute of video call';
-
-  @override
-  String get coinsVideoMin => 'Video Min';
 
   @override
   String get coinsVideoMinutes => 'Video Minutes';
@@ -6699,6 +6674,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get subscriptionAutoRenewInfo =>
       'Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Includes a 7-day free trial for new subscribers. Your subscription starts at the price shown when the trial ends, unless you cancel at least 24 hours before it finishes.';
 
   @override
   String get purchasesRestored => 'Purchases restored.';

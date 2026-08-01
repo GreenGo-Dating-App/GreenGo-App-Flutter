@@ -302,6 +302,9 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         'language_progress',
         'learning_progress',
         'daily_hints_progress',
+        // RETIRED product line — kept here on purpose. The video-minute packs
+        // were removed from the app, but existing users may still hold legacy
+        // documents, and account deletion must erase them.
         'videoCoinBalances',
       ];
 
@@ -340,6 +343,8 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         'call_history': ['callerId', 'receiverId'],
         'album_access': ['ownerId', 'grantedToUserId'],
         'account_actions': ['userId'],
+        // RETIRED product line — see the note above; legacy rows must still be
+        // erased on account deletion.
         'videoCoinTransactions': ['userId'],
         'xp_transactions': ['userId'],
       };

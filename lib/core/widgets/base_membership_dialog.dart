@@ -357,13 +357,20 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
   // ── Trigger IAP ──────────────────────────────────────────────────────
   Future<void> _subscribe() async {
     // Web has no IAP plugin → buy the base membership via Stripe Checkout.
-    if (kIsWeb || _iap == null) {
+    // WEB ONLY. Never fall through to Stripe when the mobile billing plugin
+    // failed to initialise: on iOS that opens an external payment page for a
+    // digital good, which is an automatic App Store 3.1.1 rejection.
+    if (kIsWeb) {
       final ok = await WebCheckoutDialog.show(context, _storeProductId);
       if (ok == true && mounted) {
         widget.coinBloc?.add(LoadCoinBalance(widget.userId));
         widget.profileBloc?.add(ProfileLoadRequested(userId: widget.userId));
         Navigator.of(context).pop(true);
       }
+      return;
+    }
+    if (_iap == null) {
+      _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
       return;
     }
     setState(() => _loading = true);

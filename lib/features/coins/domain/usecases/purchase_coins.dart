@@ -16,7 +16,8 @@ class PurchaseCoins {
     required String userId,
     required CoinPackage package,
     required String platform,
-    String? purchaseToken,
+    required String purchaseToken,
+    required String verificationData,
     CoinPromotion? promotion,
   }) async {
     return repository.purchaseCoins(
@@ -24,6 +25,7 @@ class PurchaseCoins {
       package: package,
       platform: platform,
       purchaseToken: purchaseToken,
+      verificationData: verificationData,
       promotion: promotion,
     );
   }
@@ -40,21 +42,8 @@ class GetAvailablePackages {
   }
 }
 
-/// Verify Coin Purchase Use Case
-class VerifyCoinPurchase {
-
-  VerifyCoinPurchase(this.repository);
-  final CoinRepository repository;
-
-  Future<Either<Failure, bool>> call({
-    required String userId,
-    required String purchaseToken,
-    required String platform,
-  }) async {
-    return repository.verifyPurchase(
-      userId: userId,
-      purchaseToken: purchaseToken,
-      platform: platform,
-    );
-  }
-}
+// NOTE: the old `VerifyCoinPurchase` use case was removed. Receipt verification
+// is no longer a separate client step that returns a bool — it is inseparable
+// from crediting the coins and happens entirely inside the
+// verifyGooglePlayCoinPurchase / verifyAppStoreCoinPurchase Cloud Functions,
+// reached via `PurchaseCoins`.

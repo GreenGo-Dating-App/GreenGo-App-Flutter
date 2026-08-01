@@ -442,8 +442,6 @@
   "adminVerificationFilter": "Verification Filter",
   "adminVerifications": "Verifications",
   "adminVideoChat": "Video Chat",
-  "adminVideoCoinPackages": "Video Coin Packages",
-  "adminVideoCoins": "Video Coins",
   "adminVideoMinutesLabel": "{minutes} Minutes",
   "adminViewContext": "View Context",
   "adminViewDocument": "View Document",
@@ -1292,14 +1290,6 @@
       }
     }
   },
-  "coinsAmountVideoMinutes": "{amount} Video Minutes",
-  "@coinsAmountVideoMinutes": {
-    "placeholders": {
-      "amount": {
-        "type": "Object"
-      }
-    }
-  },
   "coinsApply": "Apply",
   "coinsBalance": "Balance: {balance}",
   "@coinsBalance": {
@@ -1378,17 +1368,6 @@
   },
   "coinsPurchaseFailed": "Purchase failed",
   "coinsPurchaseLabel": "Purchase",
-  "coinsPurchaseMinutesQuestion": "Purchase {totalMinutes} video minutes for {price}?",
-  "@coinsPurchaseMinutesQuestion": {
-    "placeholders": {
-      "totalMinutes": {
-        "type": "Object"
-      },
-      "price": {
-        "type": "String"
-      }
-    }
-  },
   "coinsPurchasedCoins": "Successfully purchased {totalCoins} coins!",
   "@coinsPurchasedCoins": {
     "placeholders": {
@@ -1430,14 +1409,11 @@
   "coinsShopLabel": "Shop",
   "coinsTabCoins": "Coins",
   "coinsTabGifts": "Gifts",
-  "coinsTabVideoCoins": "Video Coins",
   "coinsToday": "Today",
   "coinsTransactionHistory": "Transaction History",
   "coinsTransactionsAppearHere": "Your coin transactions will appear here",
   "coinsUnlockPremium": "Unlock premium features",
   "coinsVideoCallMatches": "Video call with your matches",
-  "coinsVideoCoinInfo": "1 Video Coin = 1 minute of video call",
-  "coinsVideoMin": "Video Min",
   "coinsVideoMinutes": "Video Minutes",
   "coinsYesterday": "Yesterday",
   "comingSoonLabel": "Coming Soon",
@@ -3330,6 +3306,7 @@
   "membershipExpires": "Expires: {date}",
   "restorePurchases": "Restore Purchases",
   "subscriptionAutoRenewInfo": "Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.",
+  "subscriptionFreeTrialInfo": "Includes a 7-day free trial for new subscribers. Your subscription starts at the price shown when the trial ends, unless you cancel at least 24 hours before it finishes.",
   "purchasesRestored": "Purchases restored.",
   "membershipExtendTitle": "Extend Your Membership",
   "membershipFeatureComparison": "Feature Comparison",

@@ -1374,12 +1374,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get adminVideoChat => 'Video chat';
 
   @override
-  String get adminVideoCoinPackages => 'Pacchetti monete video';
-
-  @override
-  String get adminVideoCoins => 'Monete video';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes minuti';
   }
@@ -2899,11 +2893,6 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Minuti Video';
-  }
-
-  @override
   String get coinsApply => 'Applica';
 
   @override
@@ -2996,11 +2985,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get coinsPurchaseLabel => 'Acquista';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return 'Acquistare $totalMinutes minuti video per $price?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return 'Acquistate con successo $totalCoins monete!';
   }
@@ -3048,9 +3032,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get coinsTabGifts => 'Regali';
 
   @override
-  String get coinsTabVideoCoins => 'Video Monete';
-
-  @override
   String get coinsToday => 'Oggi';
 
   @override
@@ -3065,12 +3046,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get coinsVideoCallMatches => 'Videochiamata con i tuoi match';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video Coin = 1 minuto di videochiamata';
-
-  @override
-  String get coinsVideoMin => 'Min Video';
 
   @override
   String get coinsVideoMinutes => 'Minuti Video';
@@ -6782,6 +6757,10 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get subscriptionAutoRenewInfo =>
       'Gli abbonamenti si rinnovano automaticamente salvo disdetta almeno 24 ore prima della fine del periodo in corso. Gestisci o annulla quando vuoi nelle impostazioni del tuo account dello store.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Include 7 giorni di prova gratuita per i nuovi abbonati. L\'abbonamento inizia al prezzo indicato al termine della prova, salvo disdetta almeno 24 ore prima della fine.';
 
   @override
   String get purchasesRestored => 'Acquisti ripristinati.';
