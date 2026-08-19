@@ -175,6 +175,7 @@ class _AchievementsTab extends StatelessWidget {
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -414,6 +415,7 @@ class _ChallengesTab extends StatelessWidget {
     final weeklyChallenges = WeeklyChallenges.getWeeklyChallenges();
 
     return SingleChildScrollView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -611,6 +613,7 @@ class _StreaksTab extends StatelessWidget {
     const milestones = StreakMilestones.all;
 
     return SingleChildScrollView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -982,6 +985,7 @@ class _EventsTab extends StatelessWidget {
     final activeEvent = SeasonalEvents.getActiveEvent();
 
     return SingleChildScrollView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -388,6 +388,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             },
             child: ordered.isEmpty
                 ? ListView(
+                  keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                     physics: const AlwaysScrollableScrollPhysics(),
                     children: [
                       const SizedBox(height: 80),
@@ -586,6 +587,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             },
             child: filtered.isEmpty
                 ? ListView(
+                  keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                     physics: const AlwaysScrollableScrollPhysics(),
                     children: [
                       const SizedBox(height: 80),

@@ -303,6 +303,7 @@ class _BusinessVerificationRequestScreenState
         ),
       ),
       body: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: const EdgeInsets.all(AppDimensions.paddingL),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

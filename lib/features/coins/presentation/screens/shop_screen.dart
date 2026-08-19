@@ -412,6 +412,7 @@ class _CoinsTab extends StatelessWidget {
     final packages = CoinPackages.standardPackages;
 
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(16),
       children: [
         // Header
@@ -644,6 +645,7 @@ class _GiftsTabState extends State<_GiftsTab> {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(16),
       children: [
         // Pending gifts to receive

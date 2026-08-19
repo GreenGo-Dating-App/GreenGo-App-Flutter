@@ -459,6 +459,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                 MediaQuery.of(context).viewInsets.bottom + 20,
               ),
               child: SingleChildScrollView(
+                keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,

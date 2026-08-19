@@ -473,6 +473,7 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
         style: const TextStyle(color: AppColors.textPrimary),
       ),
       content: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,

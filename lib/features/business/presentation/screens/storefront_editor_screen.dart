@@ -374,6 +374,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
           }
         },
         child: ListView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           children: [
             // Featured / cover (hero) image

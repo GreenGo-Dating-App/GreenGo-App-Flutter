@@ -184,6 +184,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
           }
         },
         child: SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

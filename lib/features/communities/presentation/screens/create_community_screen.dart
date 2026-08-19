@@ -176,6 +176,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
 
   Widget _buildForm() {
     return SingleChildScrollView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       child: Form(
         key: _formKey,
@@ -511,6 +512,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
     final previewCommunity = _buildCommunityFromForm();
 
     return SingleChildScrollView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

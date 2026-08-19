@@ -155,6 +155,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
         ),
       ),
       body: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: const EdgeInsets.all(AppDimensions.paddingL),
         child: Form(
           key: _formKey,

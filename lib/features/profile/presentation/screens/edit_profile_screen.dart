@@ -254,6 +254,7 @@ class EditProfileScreen extends StatelessWidget {
                 activeProfile.membershipTier, activeProfile.isBusiness);
 
             return SingleChildScrollView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               padding: const EdgeInsets.all(AppDimensions.paddingL),
               child: Column(
                 children: [

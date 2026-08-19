@@ -233,6 +233,7 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
               ],
             ),
             body: SingleChildScrollView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               padding: const EdgeInsets.all(AppDimensions.paddingL),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

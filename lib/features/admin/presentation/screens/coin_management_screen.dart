@@ -396,6 +396,7 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
         style: const TextStyle(color: AppColors.textPrimary),
       ),
       content: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [

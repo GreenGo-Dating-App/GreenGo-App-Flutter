@@ -2684,12 +2684,17 @@ class _GamificationPlaceholderScreen extends StatelessWidget {
           child: Icon(icon, color: AppColors.richGold, size: 20),
         ),
         const SizedBox(width: 12),
-        Text(
-          title,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
+        // Flexible, not bare: a long translated section title next to the
+        // "see all" button overflows a 320pt phone and clips the button.
+        Flexible(
+          child: Text(
+            title,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           ),
         ),
         const Spacer(),

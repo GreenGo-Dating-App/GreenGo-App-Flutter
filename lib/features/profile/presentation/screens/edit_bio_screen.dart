@@ -158,6 +158,7 @@ class _EditBioScreenState extends State<EditBioScreen> {
         ],
       ),
       body: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: const EdgeInsets.all(AppDimensions.paddingL),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -114,6 +114,7 @@ class _RulesEditorSheetState extends State<RulesEditorSheet> {
       expand: false,
       builder: (context, scrollController) {
         return SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           controller: scrollController,
           padding: const EdgeInsets.all(AppDimensions.paddingL),
           child: Column(
