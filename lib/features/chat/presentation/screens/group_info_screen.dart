@@ -88,6 +88,7 @@ class GroupInfoScreen extends StatelessWidget {
     Map<String, UserBrief> dir,
   ) {
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             children: [
               const SizedBox(height: 8),
               Padding(

@@ -397,6 +397,7 @@ class _DiscoveryPreferencesScreenState
                     const SizedBox(height: 8),
                     Expanded(
                       child: ListView(
+                        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                         children: [
                           // Top 10 countries section (shown when alphabetical, hidden during search or user-count sort)
                           if (!isSearching && !sortByUsers && topCountries.isNotEmpty) ...[
@@ -706,6 +707,7 @@ class _DiscoveryPreferencesScreenState
         ],
       ),
       body: ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: const EdgeInsets.all(16),
         children: [
           // Age range (dating-only; hidden in the culture flavor where age is

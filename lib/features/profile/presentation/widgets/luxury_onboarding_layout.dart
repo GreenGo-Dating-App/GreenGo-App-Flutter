@@ -178,6 +178,7 @@ class _LuxuryOnboardingLayoutState extends State<LuxuryOnboardingLayout>
                         thumbVisibility: true,
                         controller: _scrollController,
                         child: SingleChildScrollView(
+                          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                           controller: _scrollController,
                           physics: const BouncingScrollPhysics(),
                           child: Column(

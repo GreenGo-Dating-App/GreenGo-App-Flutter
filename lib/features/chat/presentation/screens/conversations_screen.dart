@@ -774,6 +774,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
 
               final body = inquiries.isEmpty
                   ? ListView(
+                    keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                       // Keep it scrollable so pull-to-refresh still works.
                       physics: const AlwaysScrollableScrollPhysics(),
                       children: [

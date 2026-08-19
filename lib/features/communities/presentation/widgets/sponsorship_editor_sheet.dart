@@ -135,6 +135,7 @@ class _SponsorshipEditorSheetState extends State<SponsorshipEditorSheet> {
         expand: false,
         builder: (context, scrollController) {
           return SingleChildScrollView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             controller: scrollController,
             padding: const EdgeInsets.all(AppDimensions.paddingL),
             child: Column(

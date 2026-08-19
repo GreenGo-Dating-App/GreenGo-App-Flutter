@@ -226,6 +226,7 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
               },
               color: AppColors.richGold,
               child: ListView(
+                keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                 children: [
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.6,

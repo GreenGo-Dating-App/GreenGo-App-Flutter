@@ -120,6 +120,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
         decoration: const BoxDecoration(gradient: AppColors.darkGradient),
         child: SafeArea(
           child: SingleChildScrollView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             padding: const EdgeInsets.all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,

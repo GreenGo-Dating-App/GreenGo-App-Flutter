@@ -243,6 +243,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
               ),
               Flexible(
                 child: ListView(
+                  keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
                   shrinkWrap: true,
                   children: _languages.map((lang) {
                     final code = lang['code']!;

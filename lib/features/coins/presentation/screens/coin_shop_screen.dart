@@ -818,6 +818,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             ),
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
             child: SingleChildScrollView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -1149,6 +1150,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         // Base membership card + Subscription plans
         Expanded(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             padding: const EdgeInsets.all(16),
             children: [
               _buildBaseMembershipCard(),
@@ -1949,6 +1951,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         // Package list + Send Coins
         Expanded(
           child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             padding: const EdgeInsets.all(16),
             children: [
               ...packages.map((package) {

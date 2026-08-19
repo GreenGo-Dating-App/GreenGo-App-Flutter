@@ -119,8 +119,12 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                                     NotificationsMarkedAllAsRead(userId),
                                   );
                             },
+                            // Ellipsise rather than overflow the toolbar:
+                            // this label is long in several locales and
+                            // shares the slot with the delete-all button.
                             child: Text(
                               l10n.notificationMarkAllRead,
+                              overflow: TextOverflow.ellipsis,
                               style: const TextStyle(color: AppColors.richGold),
                             ),
                           ),

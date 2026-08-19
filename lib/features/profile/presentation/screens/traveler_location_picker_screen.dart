@@ -801,6 +801,7 @@ class _SelectedLocationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       child: Column(
         children: [
