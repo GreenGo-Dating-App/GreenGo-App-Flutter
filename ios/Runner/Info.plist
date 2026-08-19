@@ -34,13 +34,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<!-- iPad is portrait-only, matching the runtime lock in main.dart
+	     (setPreferredOrientations portraitUp/portraitDown). The app's screens
+	     are designed for a portrait phone; landscape on a 13" iPad pushed the
+	     login button under the keyboard (App Store 2.1 rejection).
+	     UIRequiresFullScreen is required for this list to be honoured at all:
+	     a multitasking-capable iPad app has its supported orientations
+	     ignored by the system. Opting out of multitasking is the cost. -->
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<!-- Google Maps API Key (loaded from Secrets.xcconfig) -->
