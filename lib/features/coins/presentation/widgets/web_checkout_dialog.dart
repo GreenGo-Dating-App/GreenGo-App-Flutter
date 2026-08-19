@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -17,6 +18,17 @@ class WebCheckoutDialog extends StatefulWidget {
   final String productId;
 
   static Future<bool?> show(BuildContext context, String productId) {
+    // Fail closed on mobile. `StripeWebCheckout` is already compiled out of iOS
+    // and Android builds (see stripe_web_checkout.dart), so the dialog could
+    // only ever spin forever there — but returning false immediately makes the
+    // intent explicit: store binaries must never show an external payment flow.
+    if (!kIsWeb) {
+      assert(
+        false,
+        'WebCheckoutDialog.show called on a mobile build — use in_app_purchase.',
+      );
+      return Future<bool?>.value(false);
+    }
     return showDialog<bool>(
       context: context,
       barrierDismissible: false,

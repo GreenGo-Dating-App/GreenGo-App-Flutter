@@ -2495,18 +2495,6 @@ abstract class AppLocalizations {
   /// **'Video Chat'**
   String get adminVideoChat;
 
-  /// No description provided for @adminVideoCoinPackages.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Coin Packages'**
-  String get adminVideoCoinPackages;
-
-  /// No description provided for @adminVideoCoins.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Coins'**
-  String get adminVideoCoins;
-
   /// No description provided for @adminVideoMinutesLabel.
   ///
   /// In en, this message translates to:
@@ -5147,12 +5135,6 @@ abstract class AppLocalizations {
   /// **'{amount} Coins'**
   String coinsAmountCoins(Object amount);
 
-  /// No description provided for @coinsAmountVideoMinutes.
-  ///
-  /// In en, this message translates to:
-  /// **'{amount} Video Minutes'**
-  String coinsAmountVideoMinutes(Object amount);
-
   /// No description provided for @coinsApply.
   ///
   /// In en, this message translates to:
@@ -5309,12 +5291,6 @@ abstract class AppLocalizations {
   /// **'Purchase'**
   String get coinsPurchaseLabel;
 
-  /// No description provided for @coinsPurchaseMinutesQuestion.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchase {totalMinutes} video minutes for {price}?'**
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price);
-
   /// No description provided for @coinsPurchasedCoins.
   ///
   /// In en, this message translates to:
@@ -5393,12 +5369,6 @@ abstract class AppLocalizations {
   /// **'Gifts'**
   String get coinsTabGifts;
 
-  /// No description provided for @coinsTabVideoCoins.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Coins'**
-  String get coinsTabVideoCoins;
-
   /// No description provided for @coinsToday.
   ///
   /// In en, this message translates to:
@@ -5428,18 +5398,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Video call with your matches'**
   String get coinsVideoCallMatches;
-
-  /// No description provided for @coinsVideoCoinInfo.
-  ///
-  /// In en, this message translates to:
-  /// **'1 Video Coin = 1 minute of video call'**
-  String get coinsVideoCoinInfo;
-
-  /// No description provided for @coinsVideoMin.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Min'**
-  String get coinsVideoMin;
 
   /// No description provided for @coinsVideoMinutes.
   ///
@@ -12083,6 +12041,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.'**
   String get subscriptionAutoRenewInfo;
+
+  /// No description provided for @subscriptionFreeTrialInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Includes a 7-day free trial for new subscribers. Your subscription starts at the price shown when the trial ends, unless you cancel at least 24 hours before it finishes.'**
+  String get subscriptionFreeTrialInfo;
 
   /// No description provided for @purchasesRestored.
   ///
@@ -23519,6 +23483,546 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Happening soon'**
   String get exploreHappeningSoon;
+
+  /// No description provided for @attrScoreLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Score'**
+  String get attrScoreLabel;
+
+  /// No description provided for @attrTierIconic.
+  ///
+  /// In en, this message translates to:
+  /// **'Iconic'**
+  String get attrTierIconic;
+
+  /// No description provided for @attrTierExceptional.
+  ///
+  /// In en, this message translates to:
+  /// **'Exceptional'**
+  String get attrTierExceptional;
+
+  /// No description provided for @attrTierExcellent.
+  ///
+  /// In en, this message translates to:
+  /// **'Excellent'**
+  String get attrTierExcellent;
+
+  /// No description provided for @attrTierGreat.
+  ///
+  /// In en, this message translates to:
+  /// **'Great'**
+  String get attrTierGreat;
+
+  /// No description provided for @attrTierWorthVisit.
+  ///
+  /// In en, this message translates to:
+  /// **'Worth a visit'**
+  String get attrTierWorthVisit;
+
+  /// No description provided for @attrImpWorldIcon.
+  ///
+  /// In en, this message translates to:
+  /// **'World icon'**
+  String get attrImpWorldIcon;
+
+  /// No description provided for @attrImpInternational.
+  ///
+  /// In en, this message translates to:
+  /// **'International landmark'**
+  String get attrImpInternational;
+
+  /// No description provided for @attrImpNational.
+  ///
+  /// In en, this message translates to:
+  /// **'National landmark'**
+  String get attrImpNational;
+
+  /// No description provided for @attrImpRegional.
+  ///
+  /// In en, this message translates to:
+  /// **'Regional attraction'**
+  String get attrImpRegional;
+
+  /// No description provided for @attrImpLocal.
+  ///
+  /// In en, this message translates to:
+  /// **'Local attraction'**
+  String get attrImpLocal;
+
+  /// No description provided for @attrChipHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get attrChipHome;
+
+  /// No description provided for @attrChipHere.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re here'**
+  String get attrChipHere;
+
+  /// No description provided for @attrFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get attrFree;
+
+  /// No description provided for @attrUnesco.
+  ///
+  /// In en, this message translates to:
+  /// **'UNESCO'**
+  String get attrUnesco;
+
+  /// No description provided for @attrMustVisit.
+  ///
+  /// In en, this message translates to:
+  /// **'Must visit'**
+  String get attrMustVisit;
+
+  /// No description provided for @attrTop10.
+  ///
+  /// In en, this message translates to:
+  /// **'Top 10'**
+  String get attrTop10;
+
+  /// No description provided for @attrPhotoSpot.
+  ///
+  /// In en, this message translates to:
+  /// **'Great for photos'**
+  String get attrPhotoSpot;
+
+  /// No description provided for @attrAllCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get attrAllCategories;
+
+  /// No description provided for @attrSortDistance.
+  ///
+  /// In en, this message translates to:
+  /// **'Nearest first'**
+  String get attrSortDistance;
+
+  /// No description provided for @attrSortScore.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Score'**
+  String get attrSortScore;
+
+  /// No description provided for @attrSortRating.
+  ///
+  /// In en, this message translates to:
+  /// **'Rating'**
+  String get attrSortRating;
+
+  /// No description provided for @attrSortPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get attrSortPrice;
+
+  /// No description provided for @attrSortName.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get attrSortName;
+
+  /// No description provided for @attrNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No attractions match your filters'**
+  String get attrNoResults;
+
+  /// No description provided for @attrNoCoverage.
+  ///
+  /// In en, this message translates to:
+  /// **'We do not cover attractions in your country yet — more coming soon'**
+  String get attrNoCoverage;
+
+  /// No description provided for @attrLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load attractions'**
+  String get attrLoadFailed;
+
+  /// No description provided for @attrKmAway.
+  ///
+  /// In en, this message translates to:
+  /// **'{km} km away'**
+  String attrKmAway(String km);
+
+  /// No description provided for @attrAbout.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get attrAbout;
+
+  /// No description provided for @attrHighlights.
+  ///
+  /// In en, this message translates to:
+  /// **'Highlights'**
+  String get attrHighlights;
+
+  /// No description provided for @attrWhyVisit.
+  ///
+  /// In en, this message translates to:
+  /// **'Why visit'**
+  String get attrWhyVisit;
+
+  /// No description provided for @attrScoreHistorical.
+  ///
+  /// In en, this message translates to:
+  /// **'Historical'**
+  String get attrScoreHistorical;
+
+  /// No description provided for @attrScoreArchitectural.
+  ///
+  /// In en, this message translates to:
+  /// **'Architectural'**
+  String get attrScoreArchitectural;
+
+  /// No description provided for @attrScoreNatural.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature'**
+  String get attrScoreNatural;
+
+  /// No description provided for @attrScorePhotography.
+  ///
+  /// In en, this message translates to:
+  /// **'Photography'**
+  String get attrScorePhotography;
+
+  /// No description provided for @attrBestTimeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Best time to visit'**
+  String get attrBestTimeTitle;
+
+  /// No description provided for @attrHistoryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get attrHistoryTitle;
+
+  /// No description provided for @attrDidYouKnow.
+  ///
+  /// In en, this message translates to:
+  /// **'Did you know'**
+  String get attrDidYouKnow;
+
+  /// No description provided for @attrPhotoTips.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo tips'**
+  String get attrPhotoTips;
+
+  /// No description provided for @attrPractical.
+  ///
+  /// In en, this message translates to:
+  /// **'Practical'**
+  String get attrPractical;
+
+  /// No description provided for @attrOpeningHours.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening hours'**
+  String get attrOpeningHours;
+
+  /// No description provided for @attrVisitDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'Typical visit'**
+  String get attrVisitDuration;
+
+  /// No description provided for @attrAccessibility.
+  ///
+  /// In en, this message translates to:
+  /// **'Accessibility'**
+  String get attrAccessibility;
+
+  /// No description provided for @attrPets.
+  ///
+  /// In en, this message translates to:
+  /// **'Pets'**
+  String get attrPets;
+
+  /// No description provided for @attrSafety.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety'**
+  String get attrSafety;
+
+  /// No description provided for @attrVisitorsPerYear.
+  ///
+  /// In en, this message translates to:
+  /// **'Visitors per year'**
+  String get attrVisitorsPerYear;
+
+  /// No description provided for @attrTicketFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket'**
+  String get attrTicketFrom;
+
+  /// No description provided for @attrOpenInMaps.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in Maps'**
+  String get attrOpenInMaps;
+
+  /// No description provided for @attrPhotoBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo: {author} · {license}'**
+  String attrPhotoBy(String author, String license);
+
+  /// No description provided for @attrIndoor.
+  ///
+  /// In en, this message translates to:
+  /// **'Indoor'**
+  String get attrIndoor;
+
+  /// No description provided for @attrOutdoor.
+  ///
+  /// In en, this message translates to:
+  /// **'Outdoor'**
+  String get attrOutdoor;
+
+  /// No description provided for @attrCountAttractions.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} attractions'**
+  String attrCountAttractions(int count);
+
+  /// No description provided for @attrEnableLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on location to see what is closest to you right now'**
+  String get attrEnableLocation;
+
+  /// No description provided for @attrRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get attrRetry;
+
+  /// No description provided for @attrTranslate.
+  ///
+  /// In en, this message translates to:
+  /// **'Translate'**
+  String get attrTranslate;
+
+  /// No description provided for @attrShowOriginal.
+  ///
+  /// In en, this message translates to:
+  /// **'Show original'**
+  String get attrShowOriginal;
+
+  /// No description provided for @attrCatReligious.
+  ///
+  /// In en, this message translates to:
+  /// **'Religious site'**
+  String get attrCatReligious;
+
+  /// No description provided for @attrCatHistoricSite.
+  ///
+  /// In en, this message translates to:
+  /// **'Historic site'**
+  String get attrCatHistoricSite;
+
+  /// No description provided for @attrCatMuseum.
+  ///
+  /// In en, this message translates to:
+  /// **'Museum'**
+  String get attrCatMuseum;
+
+  /// No description provided for @attrCatNature.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature'**
+  String get attrCatNature;
+
+  /// No description provided for @attrCatNeighborhood.
+  ///
+  /// In en, this message translates to:
+  /// **'Neighbourhood'**
+  String get attrCatNeighborhood;
+
+  /// No description provided for @attrCatBeach.
+  ///
+  /// In en, this message translates to:
+  /// **'Beach'**
+  String get attrCatBeach;
+
+  /// No description provided for @attrCatGarden.
+  ///
+  /// In en, this message translates to:
+  /// **'Garden'**
+  String get attrCatGarden;
+
+  /// No description provided for @attrCatMonument.
+  ///
+  /// In en, this message translates to:
+  /// **'Monument'**
+  String get attrCatMonument;
+
+  /// No description provided for @attrCatSquare.
+  ///
+  /// In en, this message translates to:
+  /// **'Square'**
+  String get attrCatSquare;
+
+  /// No description provided for @attrCatStreet.
+  ///
+  /// In en, this message translates to:
+  /// **'Street'**
+  String get attrCatStreet;
+
+  /// No description provided for @attrCatArchitecture.
+  ///
+  /// In en, this message translates to:
+  /// **'Architecture'**
+  String get attrCatArchitecture;
+
+  /// No description provided for @attrCatObservationDeck.
+  ///
+  /// In en, this message translates to:
+  /// **'Viewpoint'**
+  String get attrCatObservationDeck;
+
+  /// No description provided for @attrCatCastle.
+  ///
+  /// In en, this message translates to:
+  /// **'Castle'**
+  String get attrCatCastle;
+
+  /// No description provided for @attrCatMarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Market'**
+  String get attrCatMarket;
+
+  /// No description provided for @attrCatMountain.
+  ///
+  /// In en, this message translates to:
+  /// **'Mountain'**
+  String get attrCatMountain;
+
+  /// No description provided for @attrCatPalace.
+  ///
+  /// In en, this message translates to:
+  /// **'Palace'**
+  String get attrCatPalace;
+
+  /// No description provided for @attrCatIsland.
+  ///
+  /// In en, this message translates to:
+  /// **'Island'**
+  String get attrCatIsland;
+
+  /// No description provided for @attrCatLake.
+  ///
+  /// In en, this message translates to:
+  /// **'Lake'**
+  String get attrCatLake;
+
+  /// No description provided for @attrCatNationalPark.
+  ///
+  /// In en, this message translates to:
+  /// **'National park'**
+  String get attrCatNationalPark;
+
+  /// No description provided for @attrCatOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get attrCatOther;
+
+  /// No description provided for @attrCatBridge.
+  ///
+  /// In en, this message translates to:
+  /// **'Bridge'**
+  String get attrCatBridge;
+
+  /// No description provided for @attrCatThemePark.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme park'**
+  String get attrCatThemePark;
+
+  /// No description provided for @attrCatWaterfall.
+  ///
+  /// In en, this message translates to:
+  /// **'Waterfall'**
+  String get attrCatWaterfall;
+
+  /// No description provided for @attrCatZoo.
+  ///
+  /// In en, this message translates to:
+  /// **'Zoo'**
+  String get attrCatZoo;
+
+  /// No description provided for @attrCatShopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Shopping'**
+  String get attrCatShopping;
+
+  /// No description provided for @attrCatAquarium.
+  ///
+  /// In en, this message translates to:
+  /// **'Aquarium'**
+  String get attrCatAquarium;
+
+  /// No description provided for @attrSearchResults.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} results for \"{query}\"'**
+  String attrSearchResults(int count, String query);
+
+  /// No description provided for @attendeesSeeAll.
+  ///
+  /// In en, this message translates to:
+  /// **'See all'**
+  String get attendeesSeeAll;
+
+  /// No description provided for @attendeesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} going'**
+  String attendeesCount(int count);
+
+  /// No description provided for @attendeesCountWithGuests.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} going · {guests} guests'**
+  String attendeesCountWithGuests(int count, int guests);
+
+  /// No description provided for @attendeesBringing.
+  ///
+  /// In en, this message translates to:
+  /// **'Bringing {count} guests'**
+  String attendeesBringing(int count);
+
+  /// No description provided for @attendeesOrganizer.
+  ///
+  /// In en, this message translates to:
+  /// **'Organizer'**
+  String get attendeesOrganizer;
+
+  /// No description provided for @attendeesLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load attendees'**
+  String get attendeesLoadFailed;
+
+  /// No description provided for @attendeesProfileFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this profile'**
+  String get attendeesProfileFailed;
 }
 
 class _AppLocalizationsDelegate

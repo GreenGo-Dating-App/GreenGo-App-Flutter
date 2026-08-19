@@ -41,11 +41,25 @@ class LocationRefreshService {
         return;
       }
 
-      final position = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.medium,
-      ).timeout(const Duration(seconds: 8), onTimeout: () {
-        throw Exception('GPS timeout');
-      });
+      // A fresh fix is preferred, but indoors or with a weak signal it can
+      // take longer than a pull-to-refresh should wait. Falling back to the
+      // last known position keeps the coordinates moving instead of silently
+      // updating nothing — which is what a bare timeout used to do.
+      Position? position;
+      try {
+        position = await Geolocator.getCurrentPosition(
+          desiredAccuracy: LocationAccuracy.medium,
+        ).timeout(const Duration(seconds: 12));
+      } catch (_) {
+        position = await Geolocator.getLastKnownPosition();
+        if (position != null) {
+          debugPrint('[LocationRefresh] Fresh fix timed out — using last known');
+        }
+      }
+      if (position == null) {
+        debugPrint('[LocationRefresh] No position available');
+        return;
+      }
 
       // Reverse-geocode to get city + country
       var city = '';

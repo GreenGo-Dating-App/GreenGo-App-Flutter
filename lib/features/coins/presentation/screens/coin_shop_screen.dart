@@ -51,7 +51,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
   CoinPackage? _selectedPackage;
-  CoinPromotion? _activePromotion;
+  // NOTE: promotional bonus coins are no longer applied client-side. The coin
+  // amount is now decided by the server from the verified product ID, so a
+  // promo bonus has to be granted server-side (in the verification callables)
+  // to be trustworthy. This field was never assigned anywhere — the bonus path
+  // was already dead — so removing it changes no behaviour.
   SubscriptionTier? _selectedTier;
   bool _isLoadingSubscription = false;
   bool _isLoadingCoinPurchase = false;
@@ -66,9 +70,21 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   InAppPurchase? _inAppPurchase;
   int _currentCoinBalance = 0;
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
-  /// The user's current active subscription on Android, captured from restored
-  /// purchases so an upgrade can be prorated against it (WITH_TIME_PRORATION).
-  GooglePlayPurchaseDetails? _activeAndroidSub;
+  /// The user's active Android subscriptions, captured from restored purchases
+  /// so an upgrade can be prorated against the right one.
+  ///
+  /// GreenGo sells TWO subscription services that run in PARALLEL:
+  ///   • Base   — `greengo_base_membership`, required to use the app at all.
+  ///   • Tier   — Silver / Gold / Platinum, monthly or yearly, layered on top.
+  ///
+  /// A user normally holds both. On iOS, Apple keeps them apart because they
+  /// live in two different subscription groups. Google Play has no groups: the
+  /// CLIENT decides what a purchase replaces via `oldPurchaseDetails`. So these
+  /// must be tracked in SEPARATE slots — a single shared field meant buying a
+  /// tier passed Base as the old purchase, and Play cancelled the user's access
+  /// to the app itself.
+  GooglePlayPurchaseDetails? _activeBaseSub;
+  GooglePlayPurchaseDetails? _activeTierSub;
 
   // Cached packages so they survive BLoC state transitions
   // Pre-populated with fallback packages to prevent blank screen
@@ -354,36 +370,52 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     // Check if this is a coin purchase
     final coinPackage = CoinPackages.getByProductId(productId);
     if (coinPackage != null) {
-      // Coin purchase — credit via BLoC (Firestore update)
-      debugPrint('[IAP] Coin purchase successful: ${coinPackage.coinAmount} coins');
-      if (mounted) {
-        context.read<CoinBloc>().add(
-          PurchaseCoinPackage(
-            userId: widget.userId,
-            package: coinPackage,
-            platform: 'android',
-            promotion: _activePromotion,
-          ),
-        );
-      }
-      setState(() => _isLoadingCoinPurchase = false);
+      // Coin purchase — the SERVER credits the coins after validating the
+      // receipt with the store. The client only forwards the receipt; it never
+      // writes the balance itself.
+      debugPrint('[IAP] Coin purchase received, verifying on server: $productId');
 
-      // Complete and consume the purchase
-      await _completeAndConsume(purchaseDetails);
+      final token = purchaseDetails.verificationData.serverVerificationData;
+      try {
+        final result = await di.sl<CoinRemoteDataSource>().verifyCoinPurchase(
+              productId: productId,
+              purchaseToken: Platform.isAndroid
+                  ? token
+                  : (purchaseDetails.purchaseID ?? token),
+              verificationData: token,
+              platform: Platform.isIOS ? 'ios' : 'android',
+            );
 
-      // Show success dialog
-      if (mounted) {
+        // Acknowledge + consume ONLY after the grant succeeded. Consuming first
+        // would make the receipt unrecoverable if verification then failed.
+        await _completeAndConsume(purchaseDetails);
+
+        if (!mounted) return;
+        setState(() => _isLoadingCoinPurchase = false);
+        context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
+
+        // `alreadyProcessed` means the global recovery listener got there first
+        // — the coins are already in the balance, so this is still a success.
         PurchaseSuccessDialog.showCoinsPurchased(
           context,
-          coinsAdded: coinPackage.coinAmount,
+          coinsAdded: result.alreadyProcessed
+              ? coinPackage.coinAmount
+              : result.coinsAdded,
           bonusCoins: coinPackage.bonusCoins,
           onDismiss: () {
             if (context.mounted) {
-              // Reload balance
               context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
             }
           },
         );
+      } catch (e) {
+        // Do NOT consume — leaving the purchase unconsumed lets the global
+        // recovery listener retry it on the next launch instead of losing it.
+        debugPrint('[IAP] Coin verification failed: $e');
+        if (mounted) {
+          setState(() => _isLoadingCoinPurchase = false);
+          _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+        }
       }
       return;
     }
@@ -458,9 +490,51 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return null;
   }
 
-  /// True if [productId] (store or canonical) is a membership subscription.
+  /// True if [productId] (store or canonical) is a membership subscription —
+  /// Base OR any tier.
   bool _isMembershipProduct(String productId) =>
       ProductCatalog.canonicalIds.contains(ProductCatalog.canonicalId(productId));
+
+  /// True when [productId] is the Base membership — the separate, parallel
+  /// service that gates access to the app itself (never a tier).
+  bool _isBaseProduct(String productId) =>
+      ProductCatalog.canonicalId(productId) == ProductCatalog.baseMembership;
+
+  /// Rank of a tier product. Lower number = higher plan.
+  ///
+  /// ⚠️ MUST stay in sync with the App Store subscription levels configured in
+  /// App Store Connect (group "GreenGo Membership"). Nothing syncs them
+  /// automatically, so re-ranking one means re-ranking the other in the same
+  /// commit — otherwise Android and iOS disagree about what is an upgrade.
+  int _tierRank(String storeProductId) {
+    const ranks = <String, int>{
+      '1_year_platinum_membership': 1,
+      '1_month_platinum': 2,
+      '1_year_gold': 3,
+      '1_month_gold': 4,
+      '1_year_silver': 5,
+      '1_month_silver': 6,
+    };
+    return ranks[ProductCatalog.canonicalId(storeProductId)] ?? 99;
+  }
+
+  /// Play's analogue of the App Store level comparison.
+  ///
+  /// UPGRADE   → [ReplacementMode.withTimeProration]: effective immediately,
+  ///             with the unused remainder of the old plan credited as time on
+  ///             the new one.
+  /// DOWNGRADE → [ReplacementMode.deferred]: the user keeps what they already
+  ///             paid for and the cheaper plan starts at the next renewal.
+  ///             Never prorate a downgrade — it refunds mid-cycle and invites
+  ///             chargebacks.
+  ReplacementMode _replacementModeFor(String newStoreProductId) {
+    final oldSub = _activeTierSub;
+    if (oldSub == null) return ReplacementMode.withTimeProration;
+
+    return _tierRank(newStoreProductId) < _tierRank(oldSub.productID)
+        ? ReplacementMode.withTimeProration
+        : ReplacementMode.deferred;
+  }
 
   /// Acknowledge a purchase, and consume it ONLY if it's a consumable (coins).
   /// Subscriptions must never be consumed (consuming a sub triggers a Google
@@ -480,13 +554,35 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
   }
 
+  /// Store billing is unreachable on this device (StoreKit / Play Billing
+  /// failed to initialise). Show an error and stop.
+  ///
+  /// Do NOT fall back to Stripe Checkout here: on iOS that would open an
+  /// external payment page for digital goods, which is an automatic App Store
+  /// rejection under Guideline 3.1.1. Web is handled by the `kIsWeb` branch
+  /// above, and only there.
+  void _showStoreUnavailable() {
+    if (!mounted) return;
+    setState(() {
+      _isLoadingCoinPurchase = false;
+      _isLoadingSubscription = false;
+    });
+    _showError(AppLocalizations.of(context)!.shopStoreNotAvailable);
+  }
+
   /// Handle a restored purchase. For subscriptions we don't re-grant (already
   /// granted on the original purchase) — we capture the active Android sub for
   /// upgrade proration and acknowledge it. Consumables are completed+consumed.
   Future<void> _handleRestoredPurchase(PurchaseDetails p) async {
     if (_isMembershipProduct(p.productID)) {
       if (Platform.isAndroid && p is GooglePlayPurchaseDetails) {
-        _activeAndroidSub = p;
+        // Route into the slot for THIS service. Base and tier are held in
+        // parallel, so they must never overwrite each other.
+        if (_isBaseProduct(p.productID)) {
+          _activeBaseSub = p;
+        } else {
+          _activeTierSub = p;
+        }
       }
       if (p.pendingCompletePurchase) {
         await _inAppPurchase!.completePurchase(p);
@@ -565,21 +661,38 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return details.first;
   }
 
-  /// Buy a membership subscription with `buyNonConsumable`. On Android, if the
-  /// user already has an active subscription, this performs an immediate,
-  /// prorated in-place upgrade/downgrade (WITH_TIME_PRORATION) instead of a
-  /// second subscription. iOS handles in-group upgrades automatically.
+  /// Buy a membership subscription with `buyNonConsumable`.
+  ///
+  /// On Android this replaces LIKE WITH LIKE: a tier purchase may only replace
+  /// an existing tier, and a Base purchase may only replace an existing Base.
+  /// Crossing the two services would cancel a subscription the user still needs
+  /// — naming Base as the old purchase of a tier upgrade removes their access
+  /// to the app entirely.
+  ///
+  /// When the user holds nothing in the service being bought, `null` is passed
+  /// so Play creates a brand-new subscription alongside the other service.
+  ///
+  /// iOS needs none of this: Base and the tiers live in separate subscription
+  /// groups, and Apple resolves in-group upgrades from the level ladder.
   Future<bool> _buyMembership(ProductDetails product) async {
     debugPrint('[CoinShop] Buying subscription: ${product.id}, price: ${product.price}');
     final PurchaseParam param;
     if (Platform.isAndroid) {
+      final isBase = _isBaseProduct(product.id);
+      final GooglePlayPurchaseDetails? oldSub =
+          isBase ? _activeBaseSub : _activeTierSub;
+
       param = GooglePlayPurchaseParam(
         productDetails: product,
         applicationUserName: widget.userId,
-        changeSubscriptionParam: _activeAndroidSub != null
+        changeSubscriptionParam: oldSub != null
             ? ChangeSubscriptionParam(
-                oldPurchaseDetails: _activeAndroidSub!,
-                replacementMode: ReplacementMode.withTimeProration,
+                oldPurchaseDetails: oldSub,
+                // Base has a single product, so any replacement there is a
+                // renewal → prorate. Tier changes depend on the direction.
+                replacementMode: isBase
+                    ? ReplacementMode.withTimeProration
+                    : _replacementModeFor(product.id),
               )
             : null,
       );
@@ -1047,10 +1160,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 return _buildSubscriptionCard(tier, isCurrentPlan, isUpgrade, isDowngrade, currentTier);
               }),
               const SizedBox(height: 16),
-              // Apple 3.1.2: auto-renew disclosure, Terms/Privacy, Restore.
+              // Apple 3.1.2: free-trial + auto-renew disclosure, Terms/Privacy,
+              // Restore. Every tier sold here carries a 7-day introductory
+              // offer, so the trial notice is required on this surface.
               SubscriptionLegalFooter(
                 onRestore: _restorePurchases,
                 isRestoring: _isRestoring,
+                showFreeTrialNotice: true,
               ),
               const SizedBox(height: 8),
             ],
@@ -1340,8 +1456,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   Future<void> _handleBaseMembershipPurchase() async {
-    if (kIsWeb || _inAppPurchase == null) {
+    if (kIsWeb) {
       await _handleWebPurchase('greengo_base_membership');
+      return;
+    }
+    if (_inAppPurchase == null) {
+      _showStoreUnavailable();
       return;
     }
     setState(() => _isLoadingSubscription = true);
@@ -1627,12 +1747,16 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   Future<void> _handleSubscribe() async {
     if (_selectedTier == null) return;
-    if (kIsWeb || _inAppPurchase == null) {
+    if (kIsWeb) {
       await _handleWebPurchase(
         _isYearlySelected
             ? _selectedTier!.yearlyProductId
             : _selectedTier!.monthlyProductId,
       );
+      return;
+    }
+    if (_inAppPurchase == null) {
+      _showStoreUnavailable();
       return;
     }
 
@@ -2103,8 +2227,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   Future<void> _handlePurchase() async {
     if (_selectedPackage == null) return;
     // No IAP plugin on web — route through Stripe Checkout instead.
-    if (kIsWeb || _inAppPurchase == null) {
+    if (kIsWeb) {
       await _handleWebPurchase(_selectedPackage!.productId);
+      return;
+    }
+    if (_inAppPurchase == null) {
+      _showStoreUnavailable();
       return;
     }
 

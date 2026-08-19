@@ -81,6 +81,17 @@ abstract class EventsRemoteDataSource {
 
   Future<List<EventAttendee>> getEventAttendees(String eventId);
 
+  /// One page of an event's attendees, for the "see all" list.
+  ///
+  /// Ordered by document id (the attendee's userId) rather than rsvpDate: the
+  /// id is guaranteed present on every doc, so no attendee can be silently
+  /// dropped by a missing field, and it needs no composite index.
+  Future<List<EventAttendee>> getAttendeesPage({
+    required String eventId,
+    String? startAfterId,
+    int limit,
+  });
+
   /// QR check-in: mark an attendee as present (organizer only, enforced by
   /// rules). Sets `checkedIn=true` and `checkedInAt=serverTimestamp`.
   Future<void> checkInAttendee({
@@ -1195,4 +1206,25 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       return RSVPStatus.interested;
     }
   }
+  @override
+  Future<List<EventAttendee>> getAttendeesPage({
+    required String eventId,
+    String? startAfterId,
+    int limit = 30,
+  }) async {
+    try {
+      Query<Map<String, dynamic>> q = _eventsCollection
+          .doc(eventId)
+          .collection('attendees')
+          .orderBy(FieldPath.documentId)
+          .limit(limit);
+      if (startAfterId != null) q = q.startAfter([startAfterId]);
+      final snap = await q.get();
+      return snap.docs.map(EventAttendeeModel.fromFirestore).toList();
+    } catch (e) {
+      debugPrint('Error paging attendees: $e');
+      throw ServerException('Failed to load attendees: $e');
+    }
+  }
+
 }

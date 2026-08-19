@@ -41,15 +41,25 @@ class PurchaseCoinPackage extends CoinEvent {
     required this.userId,
     required this.package,
     required this.platform,
+    required this.purchaseToken,
+    required this.verificationData,
     this.promotion,
   });
   final String userId;
   final CoinPackage package;
   final String platform;
+
+  /// Store receipt identifier (Play purchase token / Apple transaction id).
+  final String purchaseToken;
+
+  /// `PurchaseDetails.verificationData.serverVerificationData` — the payload the
+  /// backend validates with the store. Without it no coins are credited.
+  final String verificationData;
   final CoinPromotion? promotion;
 
   @override
-  List<Object?> get props => [userId, package, platform, promotion];
+  List<Object?> get props =>
+      [userId, package, platform, purchaseToken, verificationData, promotion];
 }
 
 // Transaction Events

@@ -38,19 +38,170 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.declineGift = exports.giftCoins = exports.claimReward = exports.sendExpirationWarnings = exports.processExpiredCoins = exports.grantMonthlyAllowances = exports.verifyAppStoreCoinPurchase = exports.verifyGooglePlayCoinPurchase = void 0;
+const crypto_1 = require("crypto");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
 const types_1 = require("../shared/types");
 const purchase_verification_1 = require("../shared/purchase_verification");
-// Coin packages
+// Coin packages (legacy key → coins), kept for the scheduled/reward paths.
 const COIN_PACKAGES = {
     starter: { coins: 100, price: 0.99 },
     popular: { coins: 500, price: 4.99 },
     value: { coins: 1000, price: 8.99 },
     premium: { coins: 5000, price: 39.99 },
 };
+/**
+ * AUTHORITATIVE coin grant table, keyed by the **store product ID** that was
+ * actually verified against Google Play / the App Store.
+ *
+ * Never key the grant off a client-supplied `packageType`: the client could
+ * buy `greengo_coins_100` and claim `packageType: 'premium'` to mint 5000
+ * coins from a valid $0.99 receipt. The productId comes back from the store
+ * verification response, so it is the only trustworthy amount selector.
+ *
+ * Mirrors `lib/features/coins/domain/entities/coin_package.dart`.
+ */
+const COIN_PRODUCTS = {
+    'greengo_coins_100': { coins: 100, price: 0.99, packageId: 'starter_100' },
+    'greengo_coins_500': { coins: 500, price: 3.99, packageId: 'popular_500' },
+    'greengo_coins_1000': { coins: 1000, price: 6.99, packageId: 'value_1000' },
+    'greengo_coins_5000': { coins: 5000, price: 29.99, packageId: 'premium_5000' },
+};
+/** Coins purchased with real money expire after 365 days. */
+const PURCHASED_COIN_TTL_MS = 365 * 24 * 60 * 60 * 1000;
+/**
+ * Credit verified purchased coins, writing the EXACT document shape the Flutter
+ * client parses.
+ *
+ * Collections are camelCase (`coinBalances` / `coinTransactions`) to match
+ * `coin_remote_datasource.dart`. The older snake_case `coin_balances` /
+ * `coin_transactions` collections were never read by any client.
+ *
+ * Client contract (see `coin_balance_model.dart` / `coin_transaction_model.dart`):
+ *  - `coinBalances/{uid}`: userId, totalCoins, earnedCoins, purchasedCoins,
+ *    giftedCoins, spentCoins, lastUpdated (Timestamp), coinBatches[]
+ *    with { batchId, initialCoins, remainingCoins, source, acquiredDate,
+ *    expirationDate }. `userId` and `lastUpdated` are non-null casts on the
+ *    client — omitting either throws at parse time.
+ *  - `coinTransactions/{id}`: userId, type ('credit'), amount, balanceAfter,
+ *    reason ('coinPurchase'), createdAt (Timestamp).
+ *
+ * NOTE: `FieldValue.serverTimestamp()` is illegal inside an array element, so
+ * batch dates use `Timestamp.now()`.
+ */
+async function grantVerifiedCoinPurchase(params) {
+    const { uid, productId, purchaseToken, platform, transactionId } = params;
+    const product = COIN_PRODUCTS[productId];
+    if (!product) {
+        throw new https_1.HttpsError('invalid-argument', `Unknown coin product: ${productId}`);
+    }
+    const now = admin.firestore.Timestamp.now();
+    const expiresAt = admin.firestore.Timestamp.fromMillis(now.toMillis() + PURCHASED_COIN_TTL_MS);
+    const batchId = `batch_${now.toMillis()}_${productId}`;
+    const balanceRef = utils_1.db.collection('coinBalances').doc(uid);
+    const transactionRef = utils_1.db.collection('coinTransactions').doc();
+    // Idempotency ledger. The doc ID is a hash of the store receipt identifier,
+    // so claiming it is an ATOMIC create inside the same transaction that credits
+    // the coins. A pre-flight query outside the transaction would not be enough:
+    // the shop screen and the global purchase-recovery listener can both see the
+    // same purchase and would race straight past it, double-crediting.
+    const ledgerId = (0, crypto_1.createHash)('sha256').update(purchaseToken).digest('hex');
+    const ledgerRef = utils_1.db.collection('purchaseLedger').doc(ledgerId);
+    const outcome = await utils_1.db.runTransaction(async (tx) => {
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+        const ledgerSnapshot = await tx.get(ledgerRef);
+        if (ledgerSnapshot.exists) {
+            const owner = (_a = ledgerSnapshot.data()) === null || _a === void 0 ? void 0 : _a.userId;
+            if (owner !== uid) {
+                // Shared billing account trying to claim the same receipt twice.
+                (0, utils_1.logInfo)(`Coin receipt already owned by ${owner}, rejecting for ${uid}`);
+                throw new https_1.HttpsError('already-exists', 'This purchase is already linked to a different account.');
+            }
+            // Same user re-submitting the same receipt (retry, or both listeners).
+            // Idempotent success — never an error, and never a second credit.
+            const current = await tx.get(balanceRef);
+            return {
+                newBalance: (_c = (_b = current.data()) === null || _b === void 0 ? void 0 : _b.totalCoins) !== null && _c !== void 0 ? _c : 0,
+                alreadyProcessed: true,
+            };
+        }
+        const snapshot = await tx.get(balanceRef);
+        const data = snapshot.data() || {};
+        const totalCoins = (_d = data.totalCoins) !== null && _d !== void 0 ? _d : 0;
+        const purchasedCoins = (_e = data.purchasedCoins) !== null && _e !== void 0 ? _e : 0;
+        const batches = (_f = data.coinBatches) !== null && _f !== void 0 ? _f : [];
+        const updatedTotal = totalCoins + product.coins;
+        batches.push({
+            batchId,
+            initialCoins: product.coins,
+            remainingCoins: product.coins,
+            source: 'purchase', // CoinSourceExtension.fromString()
+            acquiredDate: now,
+            expirationDate: expiresAt,
+        });
+        tx.set(balanceRef, {
+            userId: uid,
+            totalCoins: updatedTotal,
+            earnedCoins: (_g = data.earnedCoins) !== null && _g !== void 0 ? _g : 0,
+            purchasedCoins: purchasedCoins + product.coins,
+            giftedCoins: (_h = data.giftedCoins) !== null && _h !== void 0 ? _h : 0,
+            spentCoins: (_j = data.spentCoins) !== null && _j !== void 0 ? _j : 0,
+            coinBatches: batches,
+            lastUpdated: now,
+        }, { merge: true });
+        tx.set(transactionRef, {
+            userId: uid,
+            type: 'credit',
+            amount: product.coins,
+            balanceAfter: updatedTotal,
+            reason: 'coinPurchase', // CoinTransactionReason.coinPurchase
+            createdAt: now,
+            // Server-only bookkeeping (ignored by the client model).
+            purchaseToken,
+            productId,
+            platform,
+            batchId,
+            storeTransactionId: transactionId !== null && transactionId !== void 0 ? transactionId : null,
+            metadata: {
+                packageId: product.packageId,
+                price: product.price,
+                platform,
+                productId,
+            },
+        });
+        // Claim the receipt in the SAME transaction that credits the coins.
+        tx.create(ledgerRef, {
+            userId: uid,
+            productId,
+            platform,
+            coins: product.coins,
+            transactionId: transactionId !== null && transactionId !== void 0 ? transactionId : null,
+            coinTransactionId: transactionRef.id,
+            createdAt: now,
+        });
+        return { newBalance: updatedTotal, alreadyProcessed: false };
+    });
+    if (outcome.alreadyProcessed) {
+        (0, utils_1.logInfo)(`Coin receipt for ${uid} (${productId}) already processed — no double credit`);
+        return {
+            success: true,
+            coinsAdded: 0,
+            newBalance: outcome.newBalance,
+            alreadyProcessed: true,
+            expiresAt: expiresAt.toDate().toISOString(),
+        };
+    }
+    (0, utils_1.logInfo)(`Granted ${product.coins} coins to ${uid} for ${productId} (${platform}), new balance ${outcome.newBalance}`);
+    return {
+        success: true,
+        coinsAdded: product.coins,
+        newBalance: outcome.newBalance,
+        alreadyProcessed: false,
+        expiresAt: expiresAt.toDate().toISOString(),
+    };
+}
 // Monthly allowances by tier
 const MONTHLY_ALLOWANCES = {
     [types_1.SubscriptionTier.BASIC]: 0,
@@ -68,83 +219,32 @@ const REWARDS = {
     refer_friend: 100,
 };
 exports.verifyGooglePlayCoinPurchase = (0, https_1.onCall)({
-    memory: '256MiB',
+    // 512MiB minimum: the bundled index.js needs ~200MB RSS just to load, so a
+    // 256MiB instance is OOM-killed on cold start and the purchase is lost.
+    memory: '512MiB',
     timeoutSeconds: 60,
 }, async (request) => {
-    var _a;
     try {
         const uid = await (0, utils_1.verifyAuth)(request.auth);
-        const { purchaseToken, productId, packageType, verificationData } = request.data;
-        if (!purchaseToken || !productId || !packageType) {
-            throw new https_1.HttpsError('invalid-argument', 'purchaseToken, productId, and packageType are required');
+        const { purchaseToken, productId, verificationData } = request.data;
+        if (!purchaseToken || !productId) {
+            throw new https_1.HttpsError('invalid-argument', 'purchaseToken and productId are required');
         }
-        (0, utils_1.logInfo)(`Verifying Google Play purchase for user ${uid}: ${packageType}`);
-        // Verify with Google Play Developer API
+        (0, utils_1.logInfo)(`Verifying Google Play coin purchase for user ${uid}: ${productId}`);
+        // Verify with the Google Play Developer API BEFORE granting anything.
         const gpToken = verificationData || purchaseToken;
         const verificationResult = await (0, purchase_verification_1.verifyGooglePlayPurchase)(productId, gpToken);
         if (!verificationResult.verified) {
             (0, utils_1.logError)(`Google Play coin purchase verification failed: ${verificationResult.error}`);
             throw new https_1.HttpsError('failed-precondition', 'Purchase verification failed');
         }
-        const coinPackage = COIN_PACKAGES[packageType];
-        if (!coinPackage) {
-            throw new https_1.HttpsError('invalid-argument', 'Invalid package type');
-        }
-        // Check if purchase already processed
-        const existingPurchase = await utils_1.db
-            .collection('coin_transactions')
-            .where('purchaseToken', '==', purchaseToken)
-            .limit(1)
-            .get();
-        if (!existingPurchase.empty) {
-            throw new https_1.HttpsError('already-exists', 'Purchase already processed');
-        }
-        // Get current coin balance
-        const balanceRef = utils_1.db.collection('coin_balances').doc(uid);
-        const balanceDoc = await balanceRef.get();
-        const currentBalance = ((_a = balanceDoc.data()) === null || _a === void 0 ? void 0 : _a.totalCoins) || 0;
-        // Create coin batch
-        const batchId = `batch_${Date.now()}`;
-        const expiresAt = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000); // 365 days
-        await utils_1.db.runTransaction(async (transaction) => {
-            var _a;
-            const balanceSnapshot = await transaction.get(balanceRef);
-            const batches = ((_a = balanceSnapshot.data()) === null || _a === void 0 ? void 0 : _a.batches) || [];
-            batches.push({
-                id: batchId,
-                amount: coinPackage.coins,
-                source: types_1.CoinSource.PURCHASED,
-                expiresAt: admin.firestore.Timestamp.fromDate(expiresAt),
-                remainingAmount: coinPackage.coins,
-                createdAt: admin.firestore.FieldValue.serverTimestamp(),
-            });
-            transaction.set(balanceRef, {
-                totalCoins: admin.firestore.FieldValue.increment(coinPackage.coins),
-                batches,
-                lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
-            }, { merge: true });
-            // Record transaction
-            const transactionRef = utils_1.db.collection('coin_transactions').doc();
-            transaction.set(transactionRef, {
-                userId: uid,
-                amount: coinPackage.coins,
-                type: 'credit',
-                source: types_1.CoinSource.PURCHASED,
-                description: `Purchased ${packageType} package`,
-                purchaseToken,
-                productId,
-                platform: 'android',
-                batchId,
-                timestamp: admin.firestore.FieldValue.serverTimestamp(),
-                balanceAfter: currentBalance + coinPackage.coins,
-            });
+        return await grantVerifiedCoinPurchase({
+            uid,
+            productId,
+            purchaseToken,
+            platform: 'android',
+            transactionId: verificationResult.transactionId,
         });
-        return {
-            success: true,
-            coinsAdded: coinPackage.coins,
-            newBalance: currentBalance + coinPackage.coins,
-            expiresAt: expiresAt.toISOString(),
-        };
     }
     catch (error) {
         throw (0, utils_1.handleError)(error);
@@ -152,18 +252,18 @@ exports.verifyGooglePlayCoinPurchase = (0, https_1.onCall)({
 });
 // ========== 2. VERIFY APP STORE COIN PURCHASE (HTTP Callable) ==========
 exports.verifyAppStoreCoinPurchase = (0, https_1.onCall)({
-    memory: '256MiB',
+    // See the note on verifyGooglePlayCoinPurchase — 256MiB is OOM-killed.
+    memory: '512MiB',
     timeoutSeconds: 60,
 }, async (request) => {
-    var _a;
     try {
         const uid = await (0, utils_1.verifyAuth)(request.auth);
-        const { purchaseToken, productId, packageType, verificationData } = request.data;
-        if (!purchaseToken || !productId || !packageType) {
-            throw new https_1.HttpsError('invalid-argument', 'purchaseToken, productId, and packageType are required');
+        const { purchaseToken, productId, verificationData } = request.data;
+        if (!purchaseToken || !productId) {
+            throw new https_1.HttpsError('invalid-argument', 'purchaseToken and productId are required');
         }
-        (0, utils_1.logInfo)(`Verifying App Store purchase for user ${uid}: ${packageType}`);
-        // Verify with App Store Server API (StoreKit 2 JWS)
+        (0, utils_1.logInfo)(`Verifying App Store coin purchase for user ${uid}: ${productId}`);
+        // Verify with the App Store Server API (StoreKit 2 JWS) BEFORE granting.
         const jws = verificationData || purchaseToken;
         const appAppleId = parseInt(process.env.APPLE_APP_ID || '0', 10);
         const verificationResult = await (0, purchase_verification_1.verifyAppStorePurchase)(jws, productId, appAppleId);
@@ -171,62 +271,16 @@ exports.verifyAppStoreCoinPurchase = (0, https_1.onCall)({
             (0, utils_1.logError)(`App Store coin purchase verification failed: ${verificationResult.error}`);
             throw new https_1.HttpsError('failed-precondition', 'Purchase verification failed');
         }
-        const coinPackage = COIN_PACKAGES[packageType];
-        if (!coinPackage) {
-            throw new https_1.HttpsError('invalid-argument', 'Invalid package type');
-        }
-        // Check for duplicate
-        const existingPurchase = await utils_1.db
-            .collection('coin_transactions')
-            .where('purchaseToken', '==', purchaseToken)
-            .limit(1)
-            .get();
-        if (!existingPurchase.empty) {
-            throw new https_1.HttpsError('already-exists', 'Purchase already processed');
-        }
-        const balanceRef = utils_1.db.collection('coin_balances').doc(uid);
-        const balanceDoc = await balanceRef.get();
-        const currentBalance = ((_a = balanceDoc.data()) === null || _a === void 0 ? void 0 : _a.totalCoins) || 0;
-        const batchId = `batch_${Date.now()}`;
-        const expiresAt = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
-        await utils_1.db.runTransaction(async (transaction) => {
-            var _a;
-            const balanceSnapshot = await transaction.get(balanceRef);
-            const batches = ((_a = balanceSnapshot.data()) === null || _a === void 0 ? void 0 : _a.batches) || [];
-            batches.push({
-                id: batchId,
-                amount: coinPackage.coins,
-                source: types_1.CoinSource.PURCHASED,
-                expiresAt: admin.firestore.Timestamp.fromDate(expiresAt),
-                remainingAmount: coinPackage.coins,
-                createdAt: admin.firestore.FieldValue.serverTimestamp(),
-            });
-            transaction.set(balanceRef, {
-                totalCoins: admin.firestore.FieldValue.increment(coinPackage.coins),
-                batches,
-                lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
-            }, { merge: true });
-            const transactionRef = utils_1.db.collection('coin_transactions').doc();
-            transaction.set(transactionRef, {
-                userId: uid,
-                amount: coinPackage.coins,
-                type: 'credit',
-                source: types_1.CoinSource.PURCHASED,
-                description: `Purchased ${packageType} package`,
-                purchaseToken,
-                productId,
-                platform: 'ios',
-                batchId,
-                timestamp: admin.firestore.FieldValue.serverTimestamp(),
-                balanceAfter: currentBalance + coinPackage.coins,
-            });
+        // Prefer Apple's transactionId as the idempotency key: the JWS blob
+        // itself is not stable across restores.
+        const dedupKey = verificationResult.transactionId || purchaseToken;
+        return await grantVerifiedCoinPurchase({
+            uid,
+            productId,
+            purchaseToken: dedupKey,
+            platform: 'ios',
+            transactionId: verificationResult.transactionId,
         });
-        return {
-            success: true,
-            coinsAdded: coinPackage.coins,
-            newBalance: currentBalance + coinPackage.coins,
-            expiresAt: expiresAt.toISOString(),
-        };
     }
     catch (error) {
         throw (0, utils_1.handleError)(error);
