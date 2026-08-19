@@ -181,6 +181,10 @@ class _LoginScreenState extends State<LoginScreen>
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    // Read the inset HERE, above the Scaffold: Scaffold resizes its body to
+    // avoid the keyboard and hands the body a MediaQuery with viewInsets
+    // zeroed, so a check further down always sees 0.
+    final keyboardUp = MediaQuery.viewInsetsOf(context).bottom > 0;
 
     return LuxuryParticlesBackground(
       child: Scaffold(
@@ -217,7 +221,13 @@ class _LoginScreenState extends State<LoginScreen>
               // Collapse the header instead of pushing the button out.
               return LayoutBuilder(
                 builder: (context, constraints) {
-                  final compact =
+                  // Only collapse while the keyboard is up. A small phone
+                  // sits under the breakpoint at rest too, and shrinking there
+                  // would make the form fit exactly — removing the page's only
+                  // cue that anything lies below and recreating the same trap
+                  // one screen size down. At rest the tall header keeps the
+                  // page scrollable, and users already know to scroll.
+                  final compact = keyboardUp &&
                       constraints.maxHeight < _compactHeightBreakpoint;
                   final logoSize = compact ? 96.0 : 200.0;
                   final topGap = compact ? 8.0 : 60.0;

@@ -60,7 +60,8 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           ),
           content: Text(
             'A password reset link has been sent to ${_emailController.text.trim()}.\n\nPlease check your inbox and spam folder.',
-            style: const TextStyle(color: AppColors.textSecondary, fontSize: 14),
+            style:
+                const TextStyle(color: AppColors.textSecondary, fontSize: 14),
           ),
           actions: [
             TextButton(
@@ -90,7 +91,8 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           message = 'Service temporarily unavailable. Please try again later.';
           break;
         default:
-          message = e.message ?? 'Failed to send reset email. Please try again.';
+          message =
+              e.message ?? 'Failed to send reset email. Please try again.';
       }
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -98,18 +100,21 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           margin: const EdgeInsets.all(16),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       );
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Error: $e', style: const TextStyle(color: Colors.white)),
+          content:
+              Text('Error: $e', style: const TextStyle(color: Colors.white)),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           margin: const EdgeInsets.all(16),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       );
     } finally {
@@ -122,6 +127,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    // Read above the Scaffold — it zeroes viewInsets for its body once it has
+    // resized to avoid the keyboard.
+    final keyboardUp = MediaQuery.viewInsetsOf(context).bottom > 0;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -130,128 +138,149 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         title: Text(l10n.resetPassword),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(AppDimensions.paddingL),
-          child: Form(
-            key: _formKey,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                const SizedBox(height: 40),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            // Same contract as the login screen: while the keyboard is up on a
+            // short viewport, collapse the decorative header so the Send
+            // button stays on screen instead of sliding behind the keyboard.
+            final compact = keyboardUp && constraints.maxHeight < 640;
+            final iconSize = compact ? 72.0 : 120.0;
+            final topGap = compact ? 8.0 : 40.0;
+            final gap = compact ? 16.0 : 32.0;
+            return SingleChildScrollView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+              padding: const EdgeInsets.all(AppDimensions.paddingL),
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 480),
+                  child: Form(
+                    key: _formKey,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        SizedBox(height: topGap),
 
-                // Icon
-                Container(
-                  width: 120,
-                  height: 120,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: AppColors.backgroundCard,
-                    border: Border.all(
-                      color: AppColors.richGold,
-                      width: 2,
-                    ),
-                  ),
-                  child: const Icon(
-                    Icons.lock_reset,
-                    size: 60,
-                    color: AppColors.richGold,
-                  ),
-                ),
-
-                const SizedBox(height: 32),
-
-                // Title
-                Text(
-                  'Reset Your Password',
-                  style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                        color: AppColors.richGold,
-                      ),
-                  textAlign: TextAlign.center,
-                ),
-
-                const SizedBox(height: 16),
-
-                // Description
-                Text(
-                  'Enter your email address and we\'ll send you instructions to reset your password.',
-                  style: Theme.of(context).textTheme.bodyLarge,
-                  textAlign: TextAlign.center,
-                ),
-
-                const SizedBox(height: 40),
-
-                // Email Field
-                AuthTextField(
-                  controller: _emailController,
-                  label: l10n.email,
-                  keyboardType: TextInputType.emailAddress,
-                  validator: Validators.validateEmail,
-                  prefixIcon: Icons.email_outlined,
-                  enabled: !_isLoading,
-                  textInputAction: TextInputAction.done,
-                  onSubmitted: (_) => _handleResetPassword(),
-                ),
-
-                const SizedBox(height: 32),
-
-                // Send Button
-                AuthButton(
-                  text: 'Send Reset Link',
-                  onPressed: _isLoading ? null : _handleResetPassword,
-                  isLoading: _isLoading,
-                  icon: Icons.send,
-                ),
-
-                const SizedBox(height: 16),
-
-                // Back to Login
-                TextButton(
-                  onPressed: _isLoading
-                      ? null
-                      : () {
-                          Navigator.of(context).pop();
-                        },
-                  child: const Text(
-                    'Back to Login',
-                    style: TextStyle(
-                      color: AppColors.richGold,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-
-                const SizedBox(height: 40),
-
-                // Help Text
-                Container(
-                  padding: const EdgeInsets.all(AppDimensions.paddingM),
-                  decoration: BoxDecoration(
-                    color: AppColors.backgroundCard,
-                    borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-                    border: Border.all(
-                      color: AppColors.divider,
-                    ),
-                  ),
-                  child: Row(
-                    children: [
-                      const Icon(
-                        Icons.info_outline,
-                        color: AppColors.richGold,
-                        size: 24,
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          'The reset link will expire in 1 hour for security reasons.',
-                          style: Theme.of(context).textTheme.bodySmall,
+                        // Icon
+                        Container(
+                          width: iconSize,
+                          height: iconSize,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: AppColors.backgroundCard,
+                            border: Border.all(
+                              color: AppColors.richGold,
+                              width: 2,
+                            ),
+                          ),
+                          child: const Icon(
+                            Icons.lock_reset,
+                            size: 60,
+                            color: AppColors.richGold,
+                          ),
                         ),
-                      ),
-                    ],
+
+                        SizedBox(height: gap),
+
+                        // Title
+                        Text(
+                          'Reset Your Password',
+                          style: Theme.of(context)
+                              .textTheme
+                              .displaySmall
+                              ?.copyWith(
+                                color: AppColors.richGold,
+                              ),
+                          textAlign: TextAlign.center,
+                        ),
+
+                        const SizedBox(height: 16),
+
+                        // Description
+                        Text(
+                          'Enter your email address and we\'ll send you instructions to reset your password.',
+                          style: Theme.of(context).textTheme.bodyLarge,
+                          textAlign: TextAlign.center,
+                        ),
+
+                        SizedBox(height: gap),
+
+                        // Email Field
+                        AuthTextField(
+                          controller: _emailController,
+                          label: l10n.email,
+                          keyboardType: TextInputType.emailAddress,
+                          validator: Validators.validateEmail,
+                          prefixIcon: Icons.email_outlined,
+                          enabled: !_isLoading,
+                          textInputAction: TextInputAction.done,
+                          onSubmitted: (_) => _handleResetPassword(),
+                        ),
+
+                        const SizedBox(height: 32),
+
+                        // Send Button
+                        AuthButton(
+                          text: 'Send Reset Link',
+                          onPressed: _isLoading ? null : _handleResetPassword,
+                          isLoading: _isLoading,
+                          icon: Icons.send,
+                        ),
+
+                        const SizedBox(height: 16),
+
+                        // Back to Login
+                        TextButton(
+                          onPressed: _isLoading
+                              ? null
+                              : () {
+                                  Navigator.of(context).pop();
+                                },
+                          child: const Text(
+                            'Back to Login',
+                            style: TextStyle(
+                              color: AppColors.richGold,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+
+                        const SizedBox(height: 40),
+
+                        // Help Text
+                        Container(
+                          padding: const EdgeInsets.all(AppDimensions.paddingM),
+                          decoration: BoxDecoration(
+                            color: AppColors.backgroundCard,
+                            borderRadius:
+                                BorderRadius.circular(AppDimensions.radiusM),
+                            border: Border.all(
+                              color: AppColors.divider,
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              const Icon(
+                                Icons.info_outline,
+                                color: AppColors.richGold,
+                                size: 24,
+                              ),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Text(
+                                  'The reset link will expire in 1 hour for security reasons.',
+                                  style: Theme.of(context).textTheme.bodySmall,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ],
-            ),
-          ),
+              ),
+            );
+          },
         ),
       ),
     );

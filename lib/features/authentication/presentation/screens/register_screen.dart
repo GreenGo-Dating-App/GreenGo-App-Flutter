@@ -497,9 +497,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
                     const SizedBox(height: 24),
 
-                    // Sign In Link
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    // Sign In Link. A Wrap, not a Row — the prompt plus the
+                    // button needs ~465pt, which overflows every iPhone
+                    // (193px on an SE), clipping the Sign In tap target.
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         Text(
                           l10n.alreadyHaveAccount,
