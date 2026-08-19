@@ -27,10 +27,11 @@ MockAuthRepository _pumpRepo() {
   when(() => repo.authStateChanges)
       .thenAnswer((_) => const Stream<domain.User?>.empty());
   when(() => repo.signInWithEmail(
-        email: any(named: 'email'),
-        password: any(named: 'password'),
-      )).thenAnswer(
-          (_) async => const Left<Failure, domain.User>(AuthenticationFailure()));
+            email: any(named: 'email'),
+            password: any(named: 'password'),
+          ))
+      .thenAnswer((_) async =>
+          const Left<Failure, domain.User>(AuthenticationFailure()));
   return repo;
 }
 
@@ -67,6 +68,30 @@ Future<void> pumpLogin(
   await tester.pump(const Duration(seconds: 2));
 }
 
+/// Scrolls until [button] clears the keyboard, mirroring what a user does when
+/// the form is longer than the viewport. No-op when it is already visible.
+Future<void> scrollButtonIntoView(
+  WidgetTester tester,
+  Finder button,
+  double usableBottom,
+) async {
+  bool usable() {
+    if (button.evaluate().isEmpty) return false;
+    final rect = tester.getRect(button.first);
+    return rect.bottom <= usableBottom &&
+        rect.top >= 0 &&
+        button.hitTestable().evaluate().isNotEmpty;
+  }
+
+  if (usable()) return;
+  final scrollables = find.byType(Scrollable);
+  if (scrollables.evaluate().isEmpty) return;
+  for (var attempt = 0; attempt < 15 && !usable(); attempt++) {
+    await tester.drag(scrollables.first, const Offset(0, -180));
+    await tester.pump();
+  }
+}
+
 void main() {
   const viewports = <String, List<Object>>{
     'phone portrait': [Size(393, 852), 0.0],
@@ -90,12 +115,24 @@ void main() {
       final button = find.byType(AuthButton);
       expect(button, findsOneWidget);
 
+      // The button only has to be visible without scrolling where the page
+      // fits at rest — there the user has no cue that anything lies below.
+      // Where the form already scrolls, reaching it by scrolling is correct
+      // and expected; see test/support/ios_viewports.dart for the full rule.
+      final scrolls = tester
+              .state<ScrollableState>(find.byType(Scrollable).first)
+              .position
+              .maxScrollExtent >
+          0;
+      await scrollButtonIntoView(tester, button, size.height - keyboard);
+
       final rect = tester.getRect(button);
       expect(
         rect.bottom,
         lessThanOrEqualTo(size.height - keyboard),
         reason: 'Login button ($rect) must not sit under the keyboard '
-            '(visible to ${size.height - keyboard}) on $name',
+            '(visible to ${size.height - keyboard}) on $name'
+            '${scrolls ? ' even after scrolling' : ''}',
       );
       expect(find.byType(AuthButton).hitTestable(), findsOneWidget);
     });
@@ -110,6 +147,8 @@ void main() {
       await tester.enterText(fields.at(1), 'Password123!');
       await tester.pump();
 
+      await scrollButtonIntoView(
+          tester, find.byType(AuthButton), size.height - keyboard);
       await tester.tap(find.byType(AuthButton));
       await tester.pump();
 

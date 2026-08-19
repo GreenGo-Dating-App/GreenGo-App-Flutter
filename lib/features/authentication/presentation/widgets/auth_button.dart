@@ -3,9 +3,9 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 
 class AuthButton extends StatelessWidget {
-
   const AuthButton({
-    required this.text, super.key,
+    required this.text,
+    super.key,
     this.onPressed,
     this.isLoading = false,
     this.isOutlined = false,
@@ -69,18 +69,25 @@ class AuthButton extends StatelessWidget {
 
     if (icon != null) {
       return Row(
+        // Shrink-wrap and let the label flex: a full-width button on a 320pt
+        // phone leaves ~224pt for this row, and a longer label overflowed it,
+        // clipping the label instead of ellipsising.
+        mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(icon, size: 20),
           const SizedBox(width: 8),
-          Text(
-            text,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-              color: isOutlined
-                  ? (textColor ?? AppColors.richGold)
-                  : (textColor ?? AppColors.deepBlack),
+          Flexible(
+            child: Text(
+              text,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: isOutlined
+                    ? (textColor ?? AppColors.richGold)
+                    : (textColor ?? AppColors.deepBlack),
+              ),
             ),
           ),
         ],
