@@ -1373,12 +1373,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get adminVideoChat => 'Videochat';
 
   @override
-  String get adminVideoCoinPackages => 'Video-Münzpakete';
-
-  @override
-  String get adminVideoCoins => 'Videomünzen';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes Minuten';
   }
@@ -2901,11 +2895,6 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Videominuten';
-  }
-
-  @override
   String get coinsApply => 'Anwenden';
 
   @override
@@ -2998,11 +2987,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get coinsPurchaseLabel => 'Kaufen';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return '$totalMinutes Videominuten fuer $price kaufen?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return '$totalCoins Münzen erfolgreich gekauft!';
   }
@@ -3050,9 +3034,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get coinsTabGifts => 'Geschenke';
 
   @override
-  String get coinsTabVideoCoins => 'Video-Münzen';
-
-  @override
   String get coinsToday => 'Heute';
 
   @override
@@ -3067,12 +3048,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get coinsVideoCallMatches => 'Videoanruf mit deinen Matches';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video-Coin = 1 Minute Videoanruf';
-
-  @override
-  String get coinsVideoMin => 'Video Min.';
 
   @override
   String get coinsVideoMinutes => 'Videominuten';
@@ -6790,6 +6765,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get subscriptionAutoRenewInfo =>
       'Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Verwalte oder kündige jederzeit in den Kontoeinstellungen deines Stores.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Enthält 7 Tage kostenlose Testphase für Neuabonnenten. Das Abo startet zum angezeigten Preis, sobald die Testphase endet, sofern du nicht mindestens 24 Stunden vor Ablauf kündigst.';
 
   @override
   String get purchasesRestored => 'Käufe wiederhergestellt.';
@@ -13379,4 +13358,292 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get exploreHappeningSoon => 'Demnaechst';
+
+  @override
+  String get attrScoreLabel => 'GreenGo Score';
+
+  @override
+  String get attrTierIconic => 'Ikonisch';
+
+  @override
+  String get attrTierExceptional => 'Außergewöhnlich';
+
+  @override
+  String get attrTierExcellent => 'Hervorragend';
+
+  @override
+  String get attrTierGreat => 'Sehr gut';
+
+  @override
+  String get attrTierWorthVisit => 'Einen Besuch wert';
+
+  @override
+  String get attrImpWorldIcon => 'Weltikone';
+
+  @override
+  String get attrImpInternational => 'Internationales Wahrzeichen';
+
+  @override
+  String get attrImpNational => 'Nationales Wahrzeichen';
+
+  @override
+  String get attrImpRegional => 'Regionale Sehenswürdigkeit';
+
+  @override
+  String get attrImpLocal => 'Lokale Sehenswürdigkeit';
+
+  @override
+  String get attrChipHome => 'Mein Land';
+
+  @override
+  String get attrChipHere => 'Du bist hier';
+
+  @override
+  String get attrFree => 'Kostenlos';
+
+  @override
+  String get attrUnesco => 'UNESCO';
+
+  @override
+  String get attrMustVisit => 'Unbedingt sehen';
+
+  @override
+  String get attrTop10 => 'Top 10';
+
+  @override
+  String get attrPhotoSpot => 'Ideal für Fotos';
+
+  @override
+  String get attrAllCategories => 'Alle';
+
+  @override
+  String get attrSortDistance => 'Nächstgelegene';
+
+  @override
+  String get attrSortScore => 'GreenGo Score';
+
+  @override
+  String get attrSortRating => 'Bewertung';
+
+  @override
+  String get attrSortPrice => 'Preis';
+
+  @override
+  String get attrSortName => 'Name';
+
+  @override
+  String get attrNoResults =>
+      'Keine Sehenswürdigkeit entspricht deinen Filtern';
+
+  @override
+  String get attrNoCoverage =>
+      'Wir haben noch keine Sehenswürdigkeiten in deinem Land – bald mehr';
+
+  @override
+  String get attrLoadFailed =>
+      'Sehenswürdigkeiten konnten nicht geladen werden';
+
+  @override
+  String attrKmAway(String km) {
+    return '$km km entfernt';
+  }
+
+  @override
+  String get attrAbout => 'Über';
+
+  @override
+  String get attrHighlights => 'Highlights';
+
+  @override
+  String get attrWhyVisit => 'Warum hingehen';
+
+  @override
+  String get attrScoreHistorical => 'Historisch';
+
+  @override
+  String get attrScoreArchitectural => 'Architektur';
+
+  @override
+  String get attrScoreNatural => 'Natur';
+
+  @override
+  String get attrScorePhotography => 'Fotografie';
+
+  @override
+  String get attrBestTimeTitle => 'Beste Reisezeit';
+
+  @override
+  String get attrHistoryTitle => 'Geschichte';
+
+  @override
+  String get attrDidYouKnow => 'Wusstest du schon';
+
+  @override
+  String get attrPhotoTips => 'Fototipps';
+
+  @override
+  String get attrPractical => 'Praktische Infos';
+
+  @override
+  String get attrOpeningHours => 'Öffnungszeiten';
+
+  @override
+  String get attrVisitDuration => 'Typischer Besuch';
+
+  @override
+  String get attrAccessibility => 'Barrierefreiheit';
+
+  @override
+  String get attrPets => 'Haustiere';
+
+  @override
+  String get attrSafety => 'Sicherheit';
+
+  @override
+  String get attrVisitorsPerYear => 'Besucher pro Jahr';
+
+  @override
+  String get attrTicketFrom => 'Ticket';
+
+  @override
+  String get attrOpenInMaps => 'In Maps öffnen';
+
+  @override
+  String attrPhotoBy(String author, String license) {
+    return 'Foto: $author · $license';
+  }
+
+  @override
+  String get attrIndoor => 'Innen';
+
+  @override
+  String get attrOutdoor => 'Außen';
+
+  @override
+  String attrCountAttractions(int count) {
+    return '$count Sehenswürdigkeiten';
+  }
+
+  @override
+  String get attrEnableLocation =>
+      'Standort aktivieren, um zu sehen, was gerade in deiner Nähe ist';
+
+  @override
+  String get attrRetry => 'Erneut versuchen';
+
+  @override
+  String get attrTranslate => 'Übersetzen';
+
+  @override
+  String get attrShowOriginal => 'Original anzeigen';
+
+  @override
+  String get attrCatReligious => 'Sakralbau';
+
+  @override
+  String get attrCatHistoricSite => 'Historische Stätte';
+
+  @override
+  String get attrCatMuseum => 'Museum';
+
+  @override
+  String get attrCatNature => 'Natur';
+
+  @override
+  String get attrCatNeighborhood => 'Viertel';
+
+  @override
+  String get attrCatBeach => 'Strand';
+
+  @override
+  String get attrCatGarden => 'Garten';
+
+  @override
+  String get attrCatMonument => 'Denkmal';
+
+  @override
+  String get attrCatSquare => 'Platz';
+
+  @override
+  String get attrCatStreet => 'Straße';
+
+  @override
+  String get attrCatArchitecture => 'Architektur';
+
+  @override
+  String get attrCatObservationDeck => 'Aussichtspunkt';
+
+  @override
+  String get attrCatCastle => 'Burg';
+
+  @override
+  String get attrCatMarket => 'Markt';
+
+  @override
+  String get attrCatMountain => 'Berg';
+
+  @override
+  String get attrCatPalace => 'Palast';
+
+  @override
+  String get attrCatIsland => 'Insel';
+
+  @override
+  String get attrCatLake => 'See';
+
+  @override
+  String get attrCatNationalPark => 'Nationalpark';
+
+  @override
+  String get attrCatOther => 'Sonstiges';
+
+  @override
+  String get attrCatBridge => 'Brücke';
+
+  @override
+  String get attrCatThemePark => 'Freizeitpark';
+
+  @override
+  String get attrCatWaterfall => 'Wasserfall';
+
+  @override
+  String get attrCatZoo => 'Zoo';
+
+  @override
+  String get attrCatShopping => 'Shopping';
+
+  @override
+  String get attrCatAquarium => 'Aquarium';
+
+  @override
+  String attrSearchResults(int count, String query) {
+    return '$count Ergebnisse für \"$query\"';
+  }
+
+  @override
+  String get attendeesSeeAll => 'Alle ansehen';
+
+  @override
+  String attendeesCount(int count) {
+    return '$count nehmen teil';
+  }
+
+  @override
+  String attendeesCountWithGuests(int count, int guests) {
+    return '$count nehmen teil · $guests Gäste';
+  }
+
+  @override
+  String attendeesBringing(int count) {
+    return 'Bringt $count Gäste mit';
+  }
+
+  @override
+  String get attendeesOrganizer => 'Veranstalter';
+
+  @override
+  String get attendeesLoadFailed => 'Teilnehmer konnten nicht geladen werden';
+
+  @override
+  String get attendeesProfileFailed => 'Profil konnte nicht geöffnet werden';
 }

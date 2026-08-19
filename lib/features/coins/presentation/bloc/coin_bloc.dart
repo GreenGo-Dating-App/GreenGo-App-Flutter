@@ -191,6 +191,8 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
       userId: event.userId,
       package: event.package,
       platform: event.platform,
+      purchaseToken: event.purchaseToken,
+      verificationData: event.verificationData,
       promotion: event.promotion,
     );
 

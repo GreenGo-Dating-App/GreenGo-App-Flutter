@@ -2303,6 +2303,88 @@
           "order": "DESCENDING"
         }
       ]
+    },
+    {
+      "collectionGroup": "attractions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "countryIso2",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "greengoScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "attractions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "countryIso2",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "categoryGroup",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "greengoScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "attractions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "countryIso2",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "citySlug",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "greengoScore",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "attraction_cities",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "published",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "iso2",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "cityName",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "attraction_taxonomy",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "published",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "order",
+          "order": "ASCENDING"
+        }
+      ]
     }
   ],
   "fieldOverrides": [

@@ -78,57 +78,37 @@ class CoinRepositoryImpl implements CoinRepository {
     required String userId,
     required CoinPackage package,
     required String platform,
-    String? purchaseToken,
+    required String purchaseToken,
+    required String verificationData,
     CoinPromotion? promotion,
   }) async {
     try {
-      // Calculate total coins including promotion bonus
-      var totalCoins = package.coinAmount;
-      if (promotion != null && promotion.isCurrentlyActive) {
-        totalCoins += promotion.calculateBonus(package.coinAmount, package.price);
-      }
-
-      // Update balance
-      await remoteDataSource.updateBalance(
-        userId: userId,
-        amount: totalCoins,
-        type: CoinTransactionType.credit,
-        reason: CoinTransactionReason.coinPurchase,
-        metadata: {
-          'package': package.packageId,
-          'price': package.price,
-          'baseCoins': package.coinAmount,
-          'bonusCoins': totalCoins - package.coinAmount,
-          'platform': platform,
-          'promotionId': promotion?.promotionId,
-        },
+      // The client NEVER credits purchased coins. The Cloud Function validates
+      // the store receipt, derives the coin amount from the verified product ID
+      // and writes the balance with the Admin SDK. Anything we computed here
+      // would be forgeable.
+      final result = await remoteDataSource.verifyCoinPurchase(
+        productId: package.productId,
+        purchaseToken: purchaseToken,
+        verificationData: verificationData,
+        platform: platform,
       );
 
-      // Get the transaction
+      // Read back the ledger entry the server just wrote so callers still get a
+      // real CoinTransaction. On an idempotent replay the newest entry is the
+      // original credit, which is exactly what we want to surface.
       final transactions = await remoteDataSource.getTransactionHistory(
         userId: userId,
         limit: 1,
       );
 
-      return Right(transactions.first);
-    } catch (e) {
-      return Left(ServerFailure(e.toString()));
-    }
-  }
+      if (transactions.isEmpty) {
+        return Left(ServerFailure(
+          'Purchase verified (${result.coinsAdded} coins) but no ledger entry was found.',
+        ));
+      }
 
-  @override
-  Future<Either<Failure, bool>> verifyPurchase({
-    required String userId,
-    required String purchaseToken,
-    required String platform,
-  }) async {
-    try {
-      final verified = await remoteDataSource.verifyPurchase(
-        userId: userId,
-        purchaseToken: purchaseToken,
-        platform: platform,
-      );
-      return Right(verified);
+      return Right(transactions.first);
     } catch (e) {
       return Left(ServerFailure(e.toString()));
     }

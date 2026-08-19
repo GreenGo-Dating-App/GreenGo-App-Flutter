@@ -203,6 +203,7 @@ import '../../features/video_profiles/presentation/bloc/video_profile_bloc.dart'
 
 import '../config/app_config.dart';
 import '../services/app_sound_service.dart';
+import '../services/purchase_recovery_service.dart';
 import '../services/blocked_users_service.dart';
 import '../services/interaction_log_service.dart';
 import '../../features/business/data/services/follow_service.dart';
@@ -674,6 +675,13 @@ Future<void> init() async {
       firestore: sl(),
       inAppPurchase: sl(),
     ),
+  );
+
+  // App-wide IAP safety net: verifies + acknowledges purchases that complete
+  // while the shop screen is closed. Without it those purchases are never
+  // acknowledged and Google auto-refunds them after 3 days.
+  sl.registerLazySingleton<PurchaseRecoveryService>(
+    () => PurchaseRecoveryService(inAppPurchase: sl()),
   );
 
   //! Features - Referral (invite-a-friend loop)

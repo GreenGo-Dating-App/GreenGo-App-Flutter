@@ -8,7 +8,6 @@ import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/entities/coin_package.dart';
 import '../../../coins/domain/entities/invoice.dart';
 import '../../../coins/domain/entities/order.dart';
-import '../../../coins/domain/entities/video_coin.dart';
 
 /// Coin Management Screen
 /// Admin interface for managing coin packages and user balances
@@ -30,7 +29,7 @@ class _CoinManagementScreenState extends State<CoinManagementScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 6, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
   }
 
   @override
@@ -59,7 +58,6 @@ class _CoinManagementScreenState extends State<CoinManagementScreen>
           isScrollable: true,
           tabs: [
             Tab(text: AppLocalizations.of(context)!.adminPackages),
-            Tab(text: AppLocalizations.of(context)!.adminVideoCoins),
             Tab(text: AppLocalizations.of(context)!.adminUserBalance),
             Tab(text: AppLocalizations.of(context)!.adminOrders),
             Tab(text: AppLocalizations.of(context)!.adminInvoices),
@@ -71,7 +69,6 @@ class _CoinManagementScreenState extends State<CoinManagementScreen>
         controller: _tabController,
         children: [
           _PackagesTab(adminId: widget.adminId),
-          _VideoCoinsTab(adminId: widget.adminId),
           _UserBalanceTab(adminId: widget.adminId),
           _OrdersTab(adminId: widget.adminId),
           _InvoicesTab(adminId: widget.adminId),
@@ -1060,184 +1057,6 @@ class _SpendItemCard extends StatelessWidget {
   }
 }
 
-/// Video Coins Tab - Manage video coin packages
-class _VideoCoinsTab extends StatelessWidget {
-
-  const _VideoCoinsTab({required this.adminId});
-  final String adminId;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView(
-      padding: const EdgeInsets.all(AppDimensions.paddingM),
-      children: [
-        Text(
-          AppLocalizations.of(context)!.adminVideoCoinPackages,
-          style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        const SizedBox(height: AppDimensions.paddingM),
-        ...VideoCoinPackages.all.map((pkg) => _VideoCoinPackageCard(package: pkg)),
-        const SizedBox(height: AppDimensions.paddingL),
-        Text(
-          AppLocalizations.of(context)!.adminStatistics,
-          style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        const SizedBox(height: AppDimensions.paddingM),
-        StreamBuilder<QuerySnapshot>(
-          stream: FirebaseFirestore.instance
-              .collection('videoCoinBalances')
-              .snapshots(),
-          builder: (context, snapshot) {
-            if (!snapshot.hasData) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            var totalMinutes = 0;
-            var usedMinutes = 0;
-            for (final doc in snapshot.data!.docs) {
-              final data = doc.data() as Map<String, dynamic>;
-              totalMinutes += (data['totalVideoCoins'] as num?)?.toInt() ?? 0;
-              usedMinutes += (data['usedVideoCoins'] as num?)?.toInt() ?? 0;
-            }
-            final l10n = AppLocalizations.of(context)!;
-            return Row(
-              children: [
-                Expanded(
-                  child: _StatCard(
-                    title: l10n.adminTotalMinutes,
-                    value: totalMinutes.toString(),
-                    icon: Icons.videocam,
-                  ),
-                ),
-                const SizedBox(width: AppDimensions.paddingM),
-                Expanded(
-                  child: _StatCard(
-                    title: l10n.adminUsedMinutes,
-                    value: usedMinutes.toString(),
-                    icon: Icons.phone_in_talk,
-                  ),
-                ),
-                const SizedBox(width: AppDimensions.paddingM),
-                Expanded(
-                  child: _StatCard(
-                    title: l10n.adminAvailable,
-                    value: (totalMinutes - usedMinutes).toString(),
-                    icon: Icons.timer,
-                  ),
-                ),
-              ],
-            );
-          },
-        ),
-      ],
-    );
-  }
-}
-
-class _VideoCoinPackageCard extends StatelessWidget {
-
-  const _VideoCoinPackageCard({required this.package});
-  final VideoCoinPackage package;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: AppDimensions.paddingM),
-      padding: const EdgeInsets.all(AppDimensions.paddingM),
-      decoration: BoxDecoration(
-        color: AppColors.backgroundCard,
-        borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-        border: Border.all(
-          color: package.isPopular ? AppColors.richGold : AppColors.divider,
-        ),
-      ),
-      child: Row(
-        children: [
-          Container(
-            width: 48,
-            height: 48,
-            decoration: BoxDecoration(
-              color: AppColors.richGold.withValues(alpha: 0.2),
-              borderRadius: BorderRadius.circular(AppDimensions.radiusS),
-            ),
-            child: const Icon(Icons.videocam, color: AppColors.richGold),
-          ),
-          const SizedBox(width: AppDimensions.paddingM),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      AppLocalizations.of(context)!.adminVideoMinutesLabel(package.videoMinutes.toString()),
-                      style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16,
-                      ),
-                    ),
-                    if (package.bonusMinutes != null) ...[
-                      const SizedBox(width: 8),
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 6,
-                          vertical: 2,
-                        ),
-                        decoration: BoxDecoration(
-                          color: AppColors.successGreen.withValues(alpha: 0.2),
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Text(
-                          AppLocalizations.of(context)!.adminBonusMinutes(package.bonusMinutes.toString()),
-                          style: const TextStyle(
-                            color: AppColors.successGreen,
-                            fontSize: 10,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ],
-                ),
-                Text(
-                  package.displayPrice,
-                  style: const TextStyle(
-                    color: AppColors.richGold,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          if (package.badge != null)
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-              decoration: BoxDecoration(
-                color: AppColors.warningAmber.withValues(alpha: 0.2),
-                borderRadius: BorderRadius.circular(4),
-              ),
-              child: Text(
-                package.badge!,
-                style: const TextStyle(
-                  color: AppColors.warningAmber,
-                  fontSize: 10,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-}
-
 class _StatCard extends StatelessWidget {
 
   const _StatCard({
@@ -1505,8 +1324,6 @@ class _OrderCard extends StatelessWidget {
     switch (type) {
       case OrderType.coins:
         return Icons.monetization_on;
-      case OrderType.videoCoins:
-        return Icons.videocam;
       case OrderType.subscription:
         return Icons.star;
       case OrderType.gift:

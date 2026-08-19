@@ -32,6 +32,7 @@ import 'core/services/app_sound_service.dart';
 import 'core/services/cache_service.dart';
 import 'core/services/data_preload_service.dart';
 import 'core/services/deep_link_service.dart';
+import 'core/services/purchase_recovery_service.dart';
 import 'core/services/feature_flags_service.dart';
 import 'core/services/onboarding_gate.dart';
 import 'core/services/push_notification_service.dart';
@@ -265,6 +266,16 @@ void main() async {
   // Initialize push notification service (FCM handlers)
   await pushNotificationService.initialize();
   debugPrint('✓ Push notification service initialized');
+
+  // App-wide in-app-purchase recovery. Must be started here, NOT on the shop
+  // screen: a purchase that completes while the shop is closed is delivered
+  // only to a live purchaseStream listener, and an unacknowledged purchase is
+  // auto-refunded by Google after 3 days.
+  unawaited(
+    di.sl<PurchaseRecoveryService>().initialize().catchError((Object e) {
+      debugPrint('⚠ Purchase recovery init failed: $e');
+    }),
+  );
 
   // Load saved language before app starts (prevents flicker)
   final prefs = await SharedPreferences.getInstance();

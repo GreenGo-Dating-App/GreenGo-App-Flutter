@@ -1357,12 +1357,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminVideoChat => 'Video Chat';
 
   @override
-  String get adminVideoCoinPackages => 'Video Coin Packages';
-
-  @override
-  String get adminVideoCoins => 'Video Coins';
-
-  @override
   String adminVideoMinutesLabel(Object minutes) {
     return '$minutes Minutes';
   }
@@ -2858,11 +2852,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String coinsAmountVideoMinutes(Object amount) {
-    return '$amount Video Minutes';
-  }
-
-  @override
   String get coinsApply => 'Apply';
 
   @override
@@ -2955,11 +2944,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coinsPurchaseLabel => 'Purchase';
 
   @override
-  String coinsPurchaseMinutesQuestion(Object totalMinutes, String price) {
-    return 'Purchase $totalMinutes video minutes for $price?';
-  }
-
-  @override
   String coinsPurchasedCoins(Object totalCoins) {
     return 'Successfully purchased $totalCoins coins!';
   }
@@ -3007,9 +2991,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coinsTabGifts => 'Gifts';
 
   @override
-  String get coinsTabVideoCoins => 'Video Coins';
-
-  @override
   String get coinsToday => 'Today';
 
   @override
@@ -3024,12 +3005,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coinsVideoCallMatches => 'Video call with your matches';
-
-  @override
-  String get coinsVideoCoinInfo => '1 Video Coin = 1 minute of video call';
-
-  @override
-  String get coinsVideoMin => 'Video Min';
 
   @override
   String get coinsVideoMinutes => 'Video Minutes';
@@ -6699,6 +6674,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get subscriptionAutoRenewInfo =>
       'Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.';
+
+  @override
+  String get subscriptionFreeTrialInfo =>
+      'Includes a 7-day free trial for new subscribers. Your subscription starts at the price shown when the trial ends, unless you cancel at least 24 hours before it finishes.';
 
   @override
   String get purchasesRestored => 'Purchases restored.';
@@ -13204,4 +13183,290 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get exploreHappeningSoon => 'Happening soon';
+
+  @override
+  String get attrScoreLabel => 'GreenGo Score';
+
+  @override
+  String get attrTierIconic => 'Iconic';
+
+  @override
+  String get attrTierExceptional => 'Exceptional';
+
+  @override
+  String get attrTierExcellent => 'Excellent';
+
+  @override
+  String get attrTierGreat => 'Great';
+
+  @override
+  String get attrTierWorthVisit => 'Worth a visit';
+
+  @override
+  String get attrImpWorldIcon => 'World icon';
+
+  @override
+  String get attrImpInternational => 'International landmark';
+
+  @override
+  String get attrImpNational => 'National landmark';
+
+  @override
+  String get attrImpRegional => 'Regional attraction';
+
+  @override
+  String get attrImpLocal => 'Local attraction';
+
+  @override
+  String get attrChipHome => 'Home';
+
+  @override
+  String get attrChipHere => 'You\'re here';
+
+  @override
+  String get attrFree => 'Free';
+
+  @override
+  String get attrUnesco => 'UNESCO';
+
+  @override
+  String get attrMustVisit => 'Must visit';
+
+  @override
+  String get attrTop10 => 'Top 10';
+
+  @override
+  String get attrPhotoSpot => 'Great for photos';
+
+  @override
+  String get attrAllCategories => 'All';
+
+  @override
+  String get attrSortDistance => 'Nearest first';
+
+  @override
+  String get attrSortScore => 'GreenGo Score';
+
+  @override
+  String get attrSortRating => 'Rating';
+
+  @override
+  String get attrSortPrice => 'Price';
+
+  @override
+  String get attrSortName => 'Name';
+
+  @override
+  String get attrNoResults => 'No attractions match your filters';
+
+  @override
+  String get attrNoCoverage =>
+      'We do not cover attractions in your country yet — more coming soon';
+
+  @override
+  String get attrLoadFailed => 'Could not load attractions';
+
+  @override
+  String attrKmAway(String km) {
+    return '$km km away';
+  }
+
+  @override
+  String get attrAbout => 'About';
+
+  @override
+  String get attrHighlights => 'Highlights';
+
+  @override
+  String get attrWhyVisit => 'Why visit';
+
+  @override
+  String get attrScoreHistorical => 'Historical';
+
+  @override
+  String get attrScoreArchitectural => 'Architectural';
+
+  @override
+  String get attrScoreNatural => 'Nature';
+
+  @override
+  String get attrScorePhotography => 'Photography';
+
+  @override
+  String get attrBestTimeTitle => 'Best time to visit';
+
+  @override
+  String get attrHistoryTitle => 'History';
+
+  @override
+  String get attrDidYouKnow => 'Did you know';
+
+  @override
+  String get attrPhotoTips => 'Photo tips';
+
+  @override
+  String get attrPractical => 'Practical';
+
+  @override
+  String get attrOpeningHours => 'Opening hours';
+
+  @override
+  String get attrVisitDuration => 'Typical visit';
+
+  @override
+  String get attrAccessibility => 'Accessibility';
+
+  @override
+  String get attrPets => 'Pets';
+
+  @override
+  String get attrSafety => 'Safety';
+
+  @override
+  String get attrVisitorsPerYear => 'Visitors per year';
+
+  @override
+  String get attrTicketFrom => 'Ticket';
+
+  @override
+  String get attrOpenInMaps => 'Open in Maps';
+
+  @override
+  String attrPhotoBy(String author, String license) {
+    return 'Photo: $author · $license';
+  }
+
+  @override
+  String get attrIndoor => 'Indoor';
+
+  @override
+  String get attrOutdoor => 'Outdoor';
+
+  @override
+  String attrCountAttractions(int count) {
+    return '$count attractions';
+  }
+
+  @override
+  String get attrEnableLocation =>
+      'Turn on location to see what is closest to you right now';
+
+  @override
+  String get attrRetry => 'Retry';
+
+  @override
+  String get attrTranslate => 'Translate';
+
+  @override
+  String get attrShowOriginal => 'Show original';
+
+  @override
+  String get attrCatReligious => 'Religious site';
+
+  @override
+  String get attrCatHistoricSite => 'Historic site';
+
+  @override
+  String get attrCatMuseum => 'Museum';
+
+  @override
+  String get attrCatNature => 'Nature';
+
+  @override
+  String get attrCatNeighborhood => 'Neighbourhood';
+
+  @override
+  String get attrCatBeach => 'Beach';
+
+  @override
+  String get attrCatGarden => 'Garden';
+
+  @override
+  String get attrCatMonument => 'Monument';
+
+  @override
+  String get attrCatSquare => 'Square';
+
+  @override
+  String get attrCatStreet => 'Street';
+
+  @override
+  String get attrCatArchitecture => 'Architecture';
+
+  @override
+  String get attrCatObservationDeck => 'Viewpoint';
+
+  @override
+  String get attrCatCastle => 'Castle';
+
+  @override
+  String get attrCatMarket => 'Market';
+
+  @override
+  String get attrCatMountain => 'Mountain';
+
+  @override
+  String get attrCatPalace => 'Palace';
+
+  @override
+  String get attrCatIsland => 'Island';
+
+  @override
+  String get attrCatLake => 'Lake';
+
+  @override
+  String get attrCatNationalPark => 'National park';
+
+  @override
+  String get attrCatOther => 'Other';
+
+  @override
+  String get attrCatBridge => 'Bridge';
+
+  @override
+  String get attrCatThemePark => 'Theme park';
+
+  @override
+  String get attrCatWaterfall => 'Waterfall';
+
+  @override
+  String get attrCatZoo => 'Zoo';
+
+  @override
+  String get attrCatShopping => 'Shopping';
+
+  @override
+  String get attrCatAquarium => 'Aquarium';
+
+  @override
+  String attrSearchResults(int count, String query) {
+    return '$count results for \"$query\"';
+  }
+
+  @override
+  String get attendeesSeeAll => 'See all';
+
+  @override
+  String attendeesCount(int count) {
+    return '$count going';
+  }
+
+  @override
+  String attendeesCountWithGuests(int count, int guests) {
+    return '$count going · $guests guests';
+  }
+
+  @override
+  String attendeesBringing(int count) {
+    return 'Bringing $count guests';
+  }
+
+  @override
+  String get attendeesOrganizer => 'Organizer';
+
+  @override
+  String get attendeesLoadFailed => 'Could not load attendees';
+
+  @override
+  String get attendeesProfileFailed => 'Could not open this profile';
 }

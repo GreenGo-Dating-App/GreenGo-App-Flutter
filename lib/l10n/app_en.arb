@@ -442,8 +442,6 @@
   "adminVerificationFilter": "Verification Filter",
   "adminVerifications": "Verifications",
   "adminVideoChat": "Video Chat",
-  "adminVideoCoinPackages": "Video Coin Packages",
-  "adminVideoCoins": "Video Coins",
   "adminVideoMinutesLabel": "{minutes} Minutes",
   "adminViewContext": "View Context",
   "adminViewDocument": "View Document",
@@ -1292,14 +1290,6 @@
       }
     }
   },
-  "coinsAmountVideoMinutes": "{amount} Video Minutes",
-  "@coinsAmountVideoMinutes": {
-    "placeholders": {
-      "amount": {
-        "type": "Object"
-      }
-    }
-  },
   "coinsApply": "Apply",
   "coinsBalance": "Balance: {balance}",
   "@coinsBalance": {
@@ -1378,17 +1368,6 @@
   },
   "coinsPurchaseFailed": "Purchase failed",
   "coinsPurchaseLabel": "Purchase",
-  "coinsPurchaseMinutesQuestion": "Purchase {totalMinutes} video minutes for {price}?",
-  "@coinsPurchaseMinutesQuestion": {
-    "placeholders": {
-      "totalMinutes": {
-        "type": "Object"
-      },
-      "price": {
-        "type": "String"
-      }
-    }
-  },
   "coinsPurchasedCoins": "Successfully purchased {totalCoins} coins!",
   "@coinsPurchasedCoins": {
     "placeholders": {
@@ -1430,14 +1409,11 @@
   "coinsShopLabel": "Shop",
   "coinsTabCoins": "Coins",
   "coinsTabGifts": "Gifts",
-  "coinsTabVideoCoins": "Video Coins",
   "coinsToday": "Today",
   "coinsTransactionHistory": "Transaction History",
   "coinsTransactionsAppearHere": "Your coin transactions will appear here",
   "coinsUnlockPremium": "Unlock premium features",
   "coinsVideoCallMatches": "Video call with your matches",
-  "coinsVideoCoinInfo": "1 Video Coin = 1 minute of video call",
-  "coinsVideoMin": "Video Min",
   "coinsVideoMinutes": "Video Minutes",
   "coinsYesterday": "Yesterday",
   "comingSoonLabel": "Coming Soon",
@@ -3330,6 +3306,7 @@
   "membershipExpires": "Expires: {date}",
   "restorePurchases": "Restore Purchases",
   "subscriptionAutoRenewInfo": "Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.",
+  "subscriptionFreeTrialInfo": "Includes a 7-day free trial for new subscribers. Your subscription starts at the price shown when the trial ends, unless you cancel at least 24 hours before it finishes.",
   "purchasesRestored": "Purchases restored.",
   "membershipExtendTitle": "Extend Your Membership",
   "membershipFeatureComparison": "Feature Comparison",
@@ -3374,7 +3351,9 @@
   "socialLinkInvalid": "Enter a valid link or handle for {platform}",
   "@socialLinkInvalid": {
     "placeholders": {
-      "platform": { "type": "String" }
+      "platform": {
+        "type": "String"
+      }
     }
   },
   "messages": "Exchanges",
@@ -6295,5 +6274,153 @@
   "exploreHappeningSoon": "Happening soon",
   "@exploreHappeningSoon": {
     "description": "Explore section title for upcoming events"
-  }
+  },
+  "attrScoreLabel": "GreenGo Score",
+  "attrTierIconic": "Iconic",
+  "attrTierExceptional": "Exceptional",
+  "attrTierExcellent": "Excellent",
+  "attrTierGreat": "Great",
+  "attrTierWorthVisit": "Worth a visit",
+  "attrImpWorldIcon": "World icon",
+  "attrImpInternational": "International landmark",
+  "attrImpNational": "National landmark",
+  "attrImpRegional": "Regional attraction",
+  "attrImpLocal": "Local attraction",
+  "attrChipHome": "Home",
+  "attrChipHere": "You're here",
+  "attrFree": "Free",
+  "attrUnesco": "UNESCO",
+  "attrMustVisit": "Must visit",
+  "attrTop10": "Top 10",
+  "attrPhotoSpot": "Great for photos",
+  "attrAllCategories": "All",
+  "attrSortDistance": "Nearest first",
+  "attrSortScore": "GreenGo Score",
+  "attrSortRating": "Rating",
+  "attrSortPrice": "Price",
+  "attrSortName": "Name",
+  "attrNoResults": "No attractions match your filters",
+  "attrNoCoverage": "We do not cover attractions in your country yet — more coming soon",
+  "attrLoadFailed": "Could not load attractions",
+  "attrKmAway": "{km} km away",
+  "@attrKmAway": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "attrAbout": "About",
+  "attrHighlights": "Highlights",
+  "attrWhyVisit": "Why visit",
+  "attrScoreHistorical": "Historical",
+  "attrScoreArchitectural": "Architectural",
+  "attrScoreNatural": "Nature",
+  "attrScorePhotography": "Photography",
+  "attrBestTimeTitle": "Best time to visit",
+  "attrHistoryTitle": "History",
+  "attrDidYouKnow": "Did you know",
+  "attrPhotoTips": "Photo tips",
+  "attrPractical": "Practical",
+  "attrOpeningHours": "Opening hours",
+  "attrVisitDuration": "Typical visit",
+  "attrAccessibility": "Accessibility",
+  "attrPets": "Pets",
+  "attrSafety": "Safety",
+  "attrVisitorsPerYear": "Visitors per year",
+  "attrTicketFrom": "Ticket",
+  "attrOpenInMaps": "Open in Maps",
+  "attrPhotoBy": "Photo: {author} · {license}",
+  "@attrPhotoBy": {
+    "placeholders": {
+      "author": {
+        "type": "String"
+      },
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "attrIndoor": "Indoor",
+  "attrOutdoor": "Outdoor",
+  "attrCountAttractions": "{count} attractions",
+  "@attrCountAttractions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attrEnableLocation": "Turn on location to see what is closest to you right now",
+  "attrRetry": "Retry",
+  "attrTranslate": "Translate",
+  "attrShowOriginal": "Show original",
+  "attrCatReligious": "Religious site",
+  "attrCatHistoricSite": "Historic site",
+  "attrCatMuseum": "Museum",
+  "attrCatNature": "Nature",
+  "attrCatNeighborhood": "Neighbourhood",
+  "attrCatBeach": "Beach",
+  "attrCatGarden": "Garden",
+  "attrCatMonument": "Monument",
+  "attrCatSquare": "Square",
+  "attrCatStreet": "Street",
+  "attrCatArchitecture": "Architecture",
+  "attrCatObservationDeck": "Viewpoint",
+  "attrCatCastle": "Castle",
+  "attrCatMarket": "Market",
+  "attrCatMountain": "Mountain",
+  "attrCatPalace": "Palace",
+  "attrCatIsland": "Island",
+  "attrCatLake": "Lake",
+  "attrCatNationalPark": "National park",
+  "attrCatOther": "Other",
+  "attrCatBridge": "Bridge",
+  "attrCatThemePark": "Theme park",
+  "attrCatWaterfall": "Waterfall",
+  "attrCatZoo": "Zoo",
+  "attrCatShopping": "Shopping",
+  "attrCatAquarium": "Aquarium",
+  "attrSearchResults": "{count} results for \"{query}\"",
+  "@attrSearchResults": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "attendeesSeeAll": "See all",
+  "attendeesCount": "{count} going",
+  "@attendeesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attendeesCountWithGuests": "{count} going · {guests} guests",
+  "@attendeesCountWithGuests": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "guests": {
+        "type": "int"
+      }
+    }
+  },
+  "attendeesBringing": "Bringing {count} guests",
+  "@attendeesBringing": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attendeesOrganizer": "Organizer",
+  "attendeesLoadFailed": "Could not load attendees",
+  "attendeesProfileFailed": "Could not open this profile"
 }
