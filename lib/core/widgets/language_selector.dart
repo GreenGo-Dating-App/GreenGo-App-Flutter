@@ -21,25 +21,9 @@ class LanguageSelector extends StatelessWidget {
     return Consumer<LanguageProvider>(
       builder: (context, languageProvider, child) {
         return PopupMenuButton<Locale>(
-          icon: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                Icons.language,
-                color: iconColor ?? AppColors.richGold,
-              ),
-              if (showLabel) ...[
-                const SizedBox(width: 8),
-                Text(
-                  languageProvider.currentLanguageName,
-                  style: TextStyle(
-                    color: textColor ?? AppColors.textPrimary,
-                    fontSize: 14,
-                  ),
-                ),
-              ],
-            ],
-          ),
+          // `child:` rather than `icon:` — an IconButton clamps its icon slot
+          // to iconSize, so the icon + label Row overflowed it by ~91px.
+          tooltip: languageProvider.currentLanguageName,
           color: AppColors.backgroundCard,
           itemBuilder: (context) {
             return LanguageProvider.supportedLocales.map((locale) {
@@ -77,6 +61,31 @@ class LanguageSelector extends StatelessWidget {
           onSelected: (locale) async {
             await languageProvider.setLocale(locale);
           },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.language,
+                  color: iconColor ?? AppColors.richGold,
+                ),
+                if (showLabel) ...[
+                  const SizedBox(width: 8),
+                  Flexible(
+                    child: Text(
+                      languageProvider.currentLanguageName,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        color: textColor ?? AppColors.textPrimary,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
         );
       },
     );

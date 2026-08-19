@@ -30,6 +30,13 @@ class LoginScreen extends StatefulWidget {
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
+/// Below this body height the header collapses so the Login button stays
+/// above the on-screen keyboard (tablet landscape is the tight case).
+const double _compactHeightBreakpoint = 640;
+
+/// The form never stretches wider than this, however wide the screen is.
+const double _formMaxWidth = 480;
+
 class _LoginScreenState extends State<LoginScreen>
     with SingleTickerProviderStateMixin {
   final _formKey = GlobalKey<FormState>();
@@ -178,283 +185,343 @@ class _LoginScreenState extends State<LoginScreen>
     return LuxuryParticlesBackground(
       child: Scaffold(
         backgroundColor: Colors.transparent,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 8.0),
-            child: LanguageSelector(),
-          ),
-        ],
-      ),
-      body: SafeArea(
-        child: BlocConsumer<AuthBloc, AuthState>(
-          // Always listen for error states — prevents race conditions
-          // where authStateChanges overwrites the error before dialog shows
-          listenWhen: (previous, current) => current is AuthError,
-          listener: (context, state) {
-            if (state is AuthError) {
-              _showErrorDialog(state.message);
-            }
-            // AuthAuthenticated is handled by AuthWrapper — no navigation here
-          },
-          builder: (context, state) {
-            final isLoading = state is AuthLoading;
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          actions: const [
+            Padding(
+              padding: EdgeInsets.only(right: 8.0),
+              child: LanguageSelector(),
+            ),
+          ],
+        ),
+        body: SafeArea(
+          child: BlocConsumer<AuthBloc, AuthState>(
+            // Always listen for error states — prevents race conditions
+            // where authStateChanges overwrites the error before dialog shows
+            listenWhen: (previous, current) => current is AuthError,
+            listener: (context, state) {
+              if (state is AuthError) {
+                _showErrorDialog(state.message);
+              }
+              // AuthAuthenticated is handled by AuthWrapper — no navigation here
+            },
+            builder: (context, state) {
+              final isLoading = state is AuthLoading;
 
-            return SingleChildScrollView(
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    const SizedBox(height: 60),
+              // The body is measured AFTER the Scaffold removes the keyboard
+              // inset, so maxHeight is the space the form actually gets. On a
+              // tablet in landscape the on-screen keyboard eats ~40% of the
+              // height; with the full-size header the Login button landed below
+              // the fold, behind the keyboard, and taps never reached it.
+              // Collapse the header instead of pushing the button out.
+              return LayoutBuilder(
+                builder: (context, constraints) {
+                  final compact =
+                      constraints.maxHeight < _compactHeightBreakpoint;
+                  final logoSize = compact ? 96.0 : 200.0;
+                  final topGap = compact ? 8.0 : 60.0;
+                  final midGap = compact ? 24.0 : 60.0;
 
-                    // Animated Luxury Logo
-                    FadeTransition(
-                      opacity: _fadeAnimation,
-                      child: const AnimatedLuxuryLogo(
-                        assetPath: 'assets/images/greengo_logo.png',
-                        size: 200,
-                      ),
-                    ),
-
-                    const SizedBox(height: 60),
-
-                    // Form Fields
-                    SlideTransition(
-                      position: _slideAnimation,
-                      child: Column(
-                        children: [
-                          // Email / Nickname Field (login accepts either)
-                          AuthTextField(
-                            controller: _emailController,
-                            label: l10n.loginEmailOrNickname,
-                            keyboardType: TextInputType.emailAddress,
-                            validator: (value) {
-                              if (value == null || value.trim().isEmpty) {
-                                return l10n.authPleaseEnterEmail;
-                              }
-                              return null;
-                            },
-                            prefixIcon: Icons.email_outlined,
-                            enabled: !isLoading,
-                          ),
-
-                          const SizedBox(height: 16),
-
-                          // Password Field
-                          AuthTextField(
-                            controller: _passwordController,
-                            label: l10n.password,
-                            obscureText: _obscurePassword,
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return AppStrings.passwordRequired;
-                              }
-                              return null;
-                            },
-                            prefixIcon: Icons.lock_outline,
-                            suffixIcon: IconButton(
-                              icon: Icon(
-                                _obscurePassword
-                                    ? Icons.visibility_outlined
-                                    : Icons.visibility_off_outlined,
-                                color: AppColors.textTertiary,
-                              ),
-                              onPressed: () {
-                                setState(() {
-                                  _obscurePassword = !_obscurePassword;
-                                });
-                              },
-                            ),
-                            enabled: !isLoading,
-                          ),
-
-                          const SizedBox(height: 8),
-
-                          // Forgot Password
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: TextButton(
-                              onPressed: isLoading
-                                  ? null
-                                  : () {
-                                      Navigator.of(context)
-                                          .pushNamed('/forgot-password');
-                                    },
-                              child: Text(
-                                l10n.forgotPassword,
-                                style: const TextStyle(
-                                  color: AppColors.richGold,
-                                ),
-                              ),
-                            ),
-                          ),
-
-                          const SizedBox(height: 24),
-
-                          // Login Button
-                          AuthButton(
-                            text: l10n.login,
-                            onPressed: isLoading ? null : _handleLogin,
-                            isLoading: isLoading,
-                          ),
-
-                          const SizedBox(height: 24),
-
-                          // Social Login Section (conditionally rendered)
-                          if (AppConfig.showSocialLoginSection) ...[
-                            // Divider
-                            Row(
-                              children: [
-                                const Expanded(
-                                    child: Divider(color: AppColors.divider)),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.symmetric(horizontal: 16),
-                                  child: Text(
-                                    l10n.orContinueWith,
-                                    style: Theme.of(context).textTheme.bodySmall,
-                                  ),
-                                ),
-                                const Expanded(
-                                    child: Divider(color: AppColors.divider)),
-                              ],
-                            ),
-
-                            const SizedBox(height: 24),
-
-                            // Social Login Buttons
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                // Google Login Button
-                                if (AppConfig.enableGoogleAuth)
-                                  _buildSocialLoginButton(
-                                    context: context,
-                                    icon: Icons.g_mobiledata, // Placeholder - use FontAwesome when enabled
-                                    onTap: isLoading
-                                        ? null
-                                        : () {
-                                            context.read<AuthBloc>().add(
-                                                  const AuthSignInWithGoogleRequested(),
-                                                );
-                                          },
-                                  ),
-
-                                // Facebook Login Button
-                                if (AppConfig.enableFacebookAuth)
-                                  _buildSocialLoginButton(
-                                    context: context,
-                                    icon: Icons.facebook, // Placeholder - use FontAwesome when enabled
-                                    onTap: isLoading
-                                        ? null
-                                        : () {
-                                            context.read<AuthBloc>().add(
-                                                  const AuthSignInWithFacebookRequested(),
-                                                );
-                                          },
-                                  ),
-
-                                // Biometric Login Button
-                                if (AppConfig.enableBiometricAuth)
-                                  _buildSocialLoginButton(
-                                    context: context,
-                                    icon: Icons.fingerprint,
-                                    onTap: isLoading
-                                        ? null
-                                        : () {
-                                            context.read<AuthBloc>().add(
-                                                  const AuthBiometricSignInRequested(),
-                                                );
-                                          },
-                                  ),
-
-                                // Apple Login Button
-                                if (AppConfig.enableAppleAuth)
-                                  _buildSocialLoginButton(
-                                    context: context,
-                                    icon: Icons.apple,
-                                    onTap: isLoading
-                                        ? null
-                                        : () {
-                                            // TODO: Implement Apple Sign In
-                                            ScaffoldMessenger.of(context).showSnackBar(
-                                              SnackBar(
-                                                content: Text(l10n.authAppleSignInComingSoon),
-                                              ),
-                                            );
-                                          },
-                                  ),
-                              ],
-                            ),
-
-                            const SizedBox(height: 24),
-                          ],
-
-                          // Sign Up Link
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                  return SingleChildScrollView(
+                    // A drag dismisses the keyboard — on a tablet the keyboard is
+                    // the only thing that can cover the button.
+                    keyboardDismissBehavior:
+                        ScrollViewKeyboardDismissBehavior.onDrag,
+                    padding: const EdgeInsets.all(AppDimensions.paddingL),
+                    child: Center(
+                      child: ConstrainedBox(
+                        // Full-bleed inputs look broken on a 1366pt-wide tablet.
+                        constraints:
+                            const BoxConstraints(maxWidth: _formMaxWidth),
+                        child: Form(
+                          key: _formKey,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              Text(
-                                l10n.dontHaveAccount,
-                                style: const TextStyle(
-                                  color: AppColors.textSecondary,
-                                  fontSize: 14,
+                              SizedBox(height: topGap),
+
+                              // Animated Luxury Logo
+                              FadeTransition(
+                                opacity: _fadeAnimation,
+                                child: AnimatedLuxuryLogo(
+                                  assetPath: 'assets/images/greengo_logo.png',
+                                  size: logoSize,
                                 ),
                               ),
-                              TextButton(
-                                onPressed: isLoading
-                                    ? null
-                                    : () {
-                                        Navigator.of(context)
-                                            .pushReplacementNamed('/register');
+
+                              SizedBox(height: midGap),
+
+                              // Form Fields
+                              SlideTransition(
+                                position: _slideAnimation,
+                                child: Column(
+                                  children: [
+                                    // Email / Nickname Field (login accepts either)
+                                    AuthTextField(
+                                      controller: _emailController,
+                                      label: l10n.loginEmailOrNickname,
+                                      keyboardType: TextInputType.emailAddress,
+                                      validator: (value) {
+                                        if (value == null ||
+                                            value.trim().isEmpty) {
+                                          return l10n.authPleaseEnterEmail;
+                                        }
+                                        return null;
                                       },
-                                child: Text(
-                                  l10n.signUp,
-                                  style: const TextStyle(
-                                    color: AppColors.richGold,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14,
-                                  ),
+                                      prefixIcon: Icons.email_outlined,
+                                      enabled: !isLoading,
+                                      textInputAction: TextInputAction.next,
+                                    ),
+
+                                    const SizedBox(height: 16),
+
+                                    // Password Field
+                                    AuthTextField(
+                                      controller: _passwordController,
+                                      label: l10n.password,
+                                      obscureText: _obscurePassword,
+                                      validator: (value) {
+                                        if (value == null || value.isEmpty) {
+                                          return AppStrings.passwordRequired;
+                                        }
+                                        return null;
+                                      },
+                                      prefixIcon: Icons.lock_outline,
+                                      suffixIcon: IconButton(
+                                        icon: Icon(
+                                          _obscurePassword
+                                              ? Icons.visibility_outlined
+                                              : Icons.visibility_off_outlined,
+                                          color: AppColors.textTertiary,
+                                        ),
+                                        onPressed: () {
+                                          setState(() {
+                                            _obscurePassword =
+                                                !_obscurePassword;
+                                          });
+                                        },
+                                      ),
+                                      enabled: !isLoading,
+                                      // After typing the password the natural next move
+                                      // is the keyboard's Go key — wire it to the same
+                                      // handler as the button.
+                                      textInputAction: TextInputAction.go,
+                                      onSubmitted: (_) {
+                                        if (!isLoading) _handleLogin();
+                                      },
+                                    ),
+
+                                    const SizedBox(height: 8),
+
+                                    // Forgot Password
+                                    Align(
+                                      alignment: Alignment.centerRight,
+                                      child: TextButton(
+                                        onPressed: isLoading
+                                            ? null
+                                            : () {
+                                                Navigator.of(context).pushNamed(
+                                                    '/forgot-password');
+                                              },
+                                        child: Text(
+                                          l10n.forgotPassword,
+                                          style: const TextStyle(
+                                            color: AppColors.richGold,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+
+                                    const SizedBox(height: 24),
+
+                                    // Login Button
+                                    AuthButton(
+                                      text: l10n.login,
+                                      onPressed:
+                                          isLoading ? null : _handleLogin,
+                                      isLoading: isLoading,
+                                    ),
+
+                                    const SizedBox(height: 24),
+
+                                    // Social Login Section (conditionally rendered)
+                                    if (AppConfig.showSocialLoginSection) ...[
+                                      // Divider
+                                      Row(
+                                        children: [
+                                          const Expanded(
+                                              child: Divider(
+                                                  color: AppColors.divider)),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                                horizontal: 16),
+                                            child: Text(
+                                              l10n.orContinueWith,
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .bodySmall,
+                                            ),
+                                          ),
+                                          const Expanded(
+                                              child: Divider(
+                                                  color: AppColors.divider)),
+                                        ],
+                                      ),
+
+                                      const SizedBox(height: 24),
+
+                                      // Social Login Buttons
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        children: [
+                                          // Google Login Button
+                                          if (AppConfig.enableGoogleAuth)
+                                            _buildSocialLoginButton(
+                                              context: context,
+                                              icon: Icons
+                                                  .g_mobiledata, // Placeholder - use FontAwesome when enabled
+                                              onTap: isLoading
+                                                  ? null
+                                                  : () {
+                                                      context
+                                                          .read<AuthBloc>()
+                                                          .add(
+                                                            const AuthSignInWithGoogleRequested(),
+                                                          );
+                                                    },
+                                            ),
+
+                                          // Facebook Login Button
+                                          if (AppConfig.enableFacebookAuth)
+                                            _buildSocialLoginButton(
+                                              context: context,
+                                              icon: Icons
+                                                  .facebook, // Placeholder - use FontAwesome when enabled
+                                              onTap: isLoading
+                                                  ? null
+                                                  : () {
+                                                      context
+                                                          .read<AuthBloc>()
+                                                          .add(
+                                                            const AuthSignInWithFacebookRequested(),
+                                                          );
+                                                    },
+                                            ),
+
+                                          // Biometric Login Button
+                                          if (AppConfig.enableBiometricAuth)
+                                            _buildSocialLoginButton(
+                                              context: context,
+                                              icon: Icons.fingerprint,
+                                              onTap: isLoading
+                                                  ? null
+                                                  : () {
+                                                      context
+                                                          .read<AuthBloc>()
+                                                          .add(
+                                                            const AuthBiometricSignInRequested(),
+                                                          );
+                                                    },
+                                            ),
+
+                                          // Apple Login Button
+                                          if (AppConfig.enableAppleAuth)
+                                            _buildSocialLoginButton(
+                                              context: context,
+                                              icon: Icons.apple,
+                                              onTap: isLoading
+                                                  ? null
+                                                  : () {
+                                                      // TODO: Implement Apple Sign In
+                                                      ScaffoldMessenger.of(
+                                                              context)
+                                                          .showSnackBar(
+                                                        SnackBar(
+                                                          content: Text(l10n
+                                                              .authAppleSignInComingSoon),
+                                                        ),
+                                                      );
+                                                    },
+                                            ),
+                                        ],
+                                      ),
+
+                                      const SizedBox(height: 24),
+                                    ],
+
+                                    // Sign Up Link. A Wrap, not a Row — the
+                                    // prompt + button overflow a narrow phone
+                                    // in the longer locales, which clipped the
+                                    // Sign Up tap target.
+                                    Wrap(
+                                      alignment: WrapAlignment.center,
+                                      crossAxisAlignment:
+                                          WrapCrossAlignment.center,
+                                      children: [
+                                        Text(
+                                          l10n.dontHaveAccount,
+                                          style: const TextStyle(
+                                            color: AppColors.textSecondary,
+                                            fontSize: 14,
+                                          ),
+                                        ),
+                                        TextButton(
+                                          onPressed: isLoading
+                                              ? null
+                                              : () {
+                                                  Navigator.of(context)
+                                                      .pushReplacementNamed(
+                                                          '/register');
+                                                },
+                                          child: Text(
+                                            l10n.signUp,
+                                            style: const TextStyle(
+                                              color: AppColors.richGold,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 14,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+
+                                    const SizedBox(height: 20),
+
+                                    // App Version
+                                    FutureBuilder<PackageInfo>(
+                                      future: PackageInfo.fromPlatform(),
+                                      builder: (context, snapshot) {
+                                        if (snapshot.hasData) {
+                                          return Text(
+                                            'v${snapshot.data!.version}',
+                                            style: const TextStyle(
+                                              color: AppColors.textTertiary,
+                                              fontSize: 12,
+                                            ),
+                                            textAlign: TextAlign.center,
+                                          );
+                                        }
+                                        return const SizedBox.shrink();
+                                      },
+                                    ),
+
+                                    const SizedBox(height: 10),
+                                  ],
                                 ),
                               ),
                             ],
                           ),
-
-                          const SizedBox(height: 20),
-
-                          // App Version
-                          FutureBuilder<PackageInfo>(
-                            future: PackageInfo.fromPlatform(),
-                            builder: (context, snapshot) {
-                              if (snapshot.hasData) {
-                                return Text(
-                                  'v${snapshot.data!.version}',
-                                  style: const TextStyle(
-                                    color: AppColors.textTertiary,
-                                    fontSize: 12,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                );
-                              }
-                              return const SizedBox.shrink();
-                            },
-                          ),
-
-                          const SizedBox(height: 10),
-                        ],
+                        ),
                       ),
                     ),
-                  ],
-                ),
-              ),
-            );
-          },
+                  );
+                },
+              );
+            },
+          ),
         ),
-      ),
       ),
     );
   }
