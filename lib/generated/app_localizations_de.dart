@@ -6764,11 +6764,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get subscriptionAutoRenewInfo =>
-      'Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Verwalte oder kündige jederzeit in den Kontoeinstellungen deines Stores.';
+      'Verlängert sich automatisch, sofern nicht 24 Std. vor Periodenende gekündigt. Verwaltung im Store-Konto.';
 
   @override
   String get subscriptionFreeTrialInfo =>
-      'Enthält 7 Tage kostenlose Testphase für Neuabonnenten. Das Abo startet zum angezeigten Preis, sobald die Testphase endet, sofern du nicht mindestens 24 Stunden vor Ablauf kündigst.';
+      'Neuabonnenten: 7 Tage kostenlos, danach zum angezeigten Preis. Kündigung 24 Std. vor Ablauf.';
 
   @override
   String get purchasesRestored => 'Käufe wiederhergestellt.';
@@ -11086,7 +11086,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get membershipTrialFooter =>
-      'Jederzeit während der Testphase kündbar. Keine Gebühr bis Tag 8.';
+      'Jederzeit kündbar. Keine Gebühr bis Tag 8.';
 
   @override
   String get membershipTrialBadge => '7 TAGE GRATIS';

@@ -6763,11 +6763,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get subscriptionAutoRenewInfo =>
-      'Las suscripciones se renuevan automáticamente a menos que se cancelen al menos 24 horas antes del fin del período actual. Gestiona o cancela cuando quieras en los ajustes de tu cuenta de la tienda.';
+      'Se renueva automáticamente salvo cancelación 24 h antes del fin del período. Gestiona en tu cuenta de la tienda.';
 
   @override
   String get subscriptionFreeTrialInfo =>
-      'Incluye 7 días de prueba gratis para nuevos suscriptores. La suscripción comienza al precio indicado cuando termine la prueba, salvo que canceles al menos 24 horas antes de que finalice.';
+      'Nuevos suscriptores: 7 días gratis, luego se renueva al precio indicado. Cancela 24 h antes.';
 
   @override
   String get purchasesRestored => 'Compras restauradas.';
@@ -11079,7 +11079,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get membershipTrialFooter =>
-      'Cancela en cualquier momento durante la prueba. Sin cargo hasta el día 8.';
+      'Cancela cuando quieras. Sin cargo hasta el día 8.';
 
   @override
   String get membershipTrialBadge => 'GRATIS POR 7 DÍAS';
