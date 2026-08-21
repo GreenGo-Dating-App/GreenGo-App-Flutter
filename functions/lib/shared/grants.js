@@ -108,7 +108,7 @@ async function grantMembership(uid, requestedTier, durationMs) {
  * Independent of the tier system — a user may have BASE active and any tier active simultaneously.
  * Extends the existing baseMembershipEndDate if still in the future, otherwise starts from now.
  */
-async function grantBaseMembership(uid, durationMs) {
+async function grantBaseMembership(uid, durationMs, source = 'purchase') {
     const profileSnap = await utils_1.db.collection('profiles').doc(uid).get();
     const profileData = profileSnap.data() || {};
     const currentEndTimestamp = profileData.baseMembershipEndDate;
@@ -121,6 +121,10 @@ async function grantBaseMembership(uid, durationMs) {
     await utils_1.db.collection('profiles').doc(uid).update({
         hasBaseMembership: true,
         baseMembershipEndDate: newEndTimestamp,
+        // How the entitlement was obtained. The client uses this to decide whether
+        // the free-trial offer is still available: a coupon does not consume the
+        // store's introductory offer, a purchase does.
+        baseMembershipSource: source,
         updatedAt: now,
     });
     (0, utils_1.logInfo)(`grantBaseMembership uid=${uid} endDate=${newEndDate.toISOString()}`);

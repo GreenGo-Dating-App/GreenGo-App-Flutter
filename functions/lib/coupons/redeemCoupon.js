@@ -139,6 +139,9 @@ exports.redeemCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 3
                     profileUpdate.membershipTier = ext.effectiveTier;
                     profileUpdate.membershipStartDate = now;
                     profileUpdate.membershipEndDate = ext.newEndTimestamp;
+                    // A coupon does not consume the store's introductory offer, so the
+                    // client keeps showing the free trial to coupon-granted users.
+                    profileUpdate.membershipSource = 'coupon';
                     userUpdate.subscriptionTier = ext.effectiveTier;
                     userUpdate.membershipEndDate = ext.newEndTimestamp;
                     if (!firstMembershipExt) {
@@ -153,6 +156,7 @@ exports.redeemCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 3
                     runningBaseEnd = newBaseEnd;
                     profileUpdate.hasBaseMembership = true;
                     profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
+                    profileUpdate.baseMembershipSource = 'coupon';
                     firstDurationDays !== null && firstDurationDays !== void 0 ? firstDurationDays : (firstDurationDays = g.durationDays);
                 }
                 else if (g.kind === 'coins' && g.coinAmount) {

@@ -44,6 +44,7 @@ class ProfileModel extends Profile {
     super.membershipStartDate,
     super.membershipEndDate,
     super.hasBaseMembership,
+    super.baseMembershipSource,
     super.baseMembershipEndDate,
     super.isOnline,
     super.lastSeen,
@@ -130,6 +131,7 @@ class ProfileModel extends Profile {
       membershipStartDate: profile.membershipStartDate,
       membershipEndDate: profile.membershipEndDate,
       hasBaseMembership: profile.hasBaseMembership,
+      baseMembershipSource: profile.baseMembershipSource,
       baseMembershipEndDate: profile.baseMembershipEndDate,
       isOnline: profile.isOnline,
       lastSeen: profile.lastSeen,
@@ -249,6 +251,7 @@ class ProfileModel extends Profile {
           ? (json['membershipEndDate'] as Timestamp).toDate()
           : null,
       hasBaseMembership: json['hasBaseMembership'] as bool? ?? false,
+      baseMembershipSource: json['baseMembershipSource'] as String?,
       baseMembershipEndDate: json['baseMembershipEndDate'] != null
           ? (json['baseMembershipEndDate'] as Timestamp).toDate()
           : null,
@@ -429,6 +432,7 @@ class ProfileModel extends Profile {
           ? Timestamp.fromDate(membershipEndDate!)
           : null,
       'hasBaseMembership': hasBaseMembership,
+      'baseMembershipSource': baseMembershipSource,
       'baseMembershipEndDate': baseMembershipEndDate != null
           ? Timestamp.fromDate(baseMembershipEndDate!)
           : null,

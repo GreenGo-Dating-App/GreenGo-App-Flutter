@@ -524,7 +524,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
 
   Widget _featureRow(IconData icon, String text) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
+      padding: const EdgeInsets.symmetric(vertical: 2),
       child: Row(
         children: [
           Container(
@@ -574,7 +574,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                 maxWidth: 380,
                 // Cap the sheet so the offer can never fill the whole screen;
                 // anything taller scrolls instead of overflowing.
-                maxHeight: MediaQuery.of(context).size.height * 0.85,
+                maxHeight: MediaQuery.of(context).size.height * 0.78,
               ),
               decoration: BoxDecoration(
                 color: AppColors.backgroundCard,
@@ -622,7 +622,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                     // Main content
                     SingleChildScrollView(
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(24, 20, 24, 20),
+                        padding: const EdgeInsets.fromLTRB(20, 14, 20, 14),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
@@ -670,8 +670,8 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                               animation: _pulseAnimation,
                               builder: (context, child) {
                                 return Container(
-                                  width: 80,
-                                  height: 80,
+                                  width: 56,
+                                  height: 56,
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     gradient: RadialGradient(
@@ -694,7 +694,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                                   child: Icon(
                                     widget.isExtending ? Icons.autorenew : Icons.diamond_outlined,
                                     color: AppColors.accentGold,
-                                    size: 40,
+                                    size: 28,
                                   ),
                                 );
                               },
@@ -708,7 +708,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                               textAlign: TextAlign.center,
                               style: const TextStyle(
                                 color: AppColors.textPrimary,
-                                fontSize: 22,
+                                fontSize: 19,
                                 fontWeight: FontWeight.bold,
                                 letterSpacing: -0.3,
                               ),
@@ -722,7 +722,7 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: AppColors.richGold.withValues(alpha: 0.9),
-                                fontSize: 15,
+                                fontSize: 13,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),

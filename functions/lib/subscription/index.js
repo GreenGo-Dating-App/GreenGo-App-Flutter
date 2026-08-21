@@ -236,6 +236,7 @@ exports.verifyPurchase = (0, https_1.onCall)({
             membershipTier: effectiveTier,
             membershipEndDate: endTimestamp,
             membershipStartDate: now,
+            membershipSource: 'purchase',
             updatedAt: now,
         });
         await utils_1.db.collection('users').doc(userId).update({

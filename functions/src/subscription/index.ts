@@ -246,6 +246,7 @@ export const verifyPurchase = onCall(
         membershipTier: effectiveTier,
         membershipEndDate: endTimestamp,
         membershipStartDate: now,
+        membershipSource: 'purchase',
         updatedAt: now,
       });
 

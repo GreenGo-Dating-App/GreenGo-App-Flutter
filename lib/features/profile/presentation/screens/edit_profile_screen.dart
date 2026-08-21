@@ -1220,7 +1220,10 @@ class EditProfileScreen extends StatelessWidget {
         onTap: () => BaseMembershipDialog.show(
           context: context,
           userId: profile.userId,
-          isExtending: isActive,
+          // Coupon-granted access has not consumed the store's introductory
+          // offer, so those users still get the trial presentation rather than
+          // the extend one.
+          isExtending: isActive && !profile.isCouponGrantedBase,
         ),
         child: Container(
         padding: const EdgeInsets.all(16),

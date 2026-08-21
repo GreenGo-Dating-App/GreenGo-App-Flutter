@@ -61,6 +61,7 @@ class Profile extends Equatable {
     this.membershipStartDate,
     this.membershipEndDate,
     this.hasBaseMembership = false,
+    this.baseMembershipSource,
     this.baseMembershipEndDate,
     this.isOnline = false,
     this.lastSeen,
@@ -147,6 +148,14 @@ class Profile extends Equatable {
 
   // Base membership fields (yearly Google Play subscription)
   final bool hasBaseMembership;
+
+  /// How base membership was obtained: 'purchase' or 'coupon'.
+  /// A coupon does not consume the store's introductory offer, so a
+  /// coupon-granted user is still eligible for the free trial.
+  final String? baseMembershipSource;
+
+  /// True when access came from a coupon rather than a paid purchase.
+  bool get isCouponGrantedBase => baseMembershipSource == 'coupon';
   final DateTime? baseMembershipEndDate;
 
   // Online presence fields
@@ -341,6 +350,7 @@ class Profile extends Equatable {
         membershipStartDate,
         membershipEndDate,
         hasBaseMembership,
+        baseMembershipSource,
         baseMembershipEndDate,
         isOnline,
         lastSeen,
@@ -421,6 +431,7 @@ class Profile extends Equatable {
     DateTime? membershipStartDate,
     DateTime? membershipEndDate,
     bool? hasBaseMembership,
+    String? baseMembershipSource,
     DateTime? baseMembershipEndDate,
     bool? isOnline,
     DateTime? lastSeen,
@@ -500,6 +511,7 @@ class Profile extends Equatable {
       membershipStartDate: membershipStartDate ?? this.membershipStartDate,
       membershipEndDate: membershipEndDate ?? this.membershipEndDate,
       hasBaseMembership: hasBaseMembership ?? this.hasBaseMembership,
+      baseMembershipSource: baseMembershipSource ?? this.baseMembershipSource,
       baseMembershipEndDate: baseMembershipEndDate ?? this.baseMembershipEndDate,
       isOnline: isOnline ?? this.isOnline,
       lastSeen: lastSeen ?? this.lastSeen,

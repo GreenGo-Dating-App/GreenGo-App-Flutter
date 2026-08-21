@@ -99,6 +99,7 @@ export async function grantMembership(
 export async function grantBaseMembership(
   uid: string,
   durationMs: number,
+  source: 'purchase' | 'coupon' = 'purchase',
 ): Promise<{ newEndDate: Date; newEndTimestamp: admin.firestore.Timestamp }> {
   const profileSnap = await db.collection('profiles').doc(uid).get();
   const profileData = profileSnap.data() || {};
@@ -114,6 +115,10 @@ export async function grantBaseMembership(
   await db.collection('profiles').doc(uid).update({
     hasBaseMembership: true,
     baseMembershipEndDate: newEndTimestamp,
+    // How the entitlement was obtained. The client uses this to decide whether
+    // the free-trial offer is still available: a coupon does not consume the
+    // store's introductory offer, a purchase does.
+    baseMembershipSource: source,
     updatedAt: now,
   });
 
