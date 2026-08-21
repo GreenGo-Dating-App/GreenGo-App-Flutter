@@ -46,15 +46,20 @@ const admin = __importStar(require("firebase-admin"));
 const types_1 = require("../shared/types");
 const purchase_verification_1 = require("../shared/purchase_verification");
 const grants_1 = require("../shared/grants");
-// Product ID → tier and duration mapping
+// Product ID → tier and duration mapping.
+// `price` is NOT charged anywhere — the stores charge what Play Console / App
+// Store Connect say. It is only what gets recorded on `subscriptions.price` and
+// `purchases.price`, so revenue reporting reads it. Keep it in sync with the USD
+// prices in `payments/stripeCheckout.ts` MEMBERSHIP_PRODUCTS and with the store
+// consoles — nothing syncs them automatically.
 exports.PRODUCT_CONFIG = {
     'greengo_base_membership': { tier: 'BASIC', durationDays: 365, price: 4.99 },
     '1_month_silver': { tier: 'SILVER', durationDays: 30, price: 9.99 },
-    '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 99.90 },
+    '1_year_silver': { tier: 'SILVER', durationDays: 365, price: 48.99 },
     '1_month_gold': { tier: 'GOLD', durationDays: 30, price: 19.99 },
-    '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 199.90 },
+    '1_year_gold': { tier: 'GOLD', durationDays: 365, price: 69.99 },
     '1_month_platinum': { tier: 'PLATINUM', durationDays: 30, price: 29.99 },
-    '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 299.90 },
+    '1_year_platinum_membership': { tier: 'PLATINUM', durationDays: 365, price: 89.99 },
 };
 // Google Play uses bespoke subscription IDs that differ from the canonical
 // PRODUCT_CONFIG keys (iOS just adds a `subscription_` prefix). Map Play → canonical.

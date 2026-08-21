@@ -71,7 +71,7 @@ const COIN_PACKAGES = {
 };
 // Membership definitions.
 const MEMBERSHIP_PRODUCTS = {
-    greengo_base_membership: { name: 'Base Membership (1 Year)', priceUsd: 999, priceEur: 999, priceBrl: 4990, durationDays: 365, tier: 'BASE' },
+    greengo_base_membership: { name: 'Base Membership (1 Year)', priceUsd: 499, priceEur: 499, priceBrl: 2490, durationDays: 365, tier: 'BASE' },
     '1_month_silver': { name: 'Silver Membership (1 Month)', priceUsd: 999, priceEur: 999, priceBrl: 4990, durationDays: 30, tier: 'SILVER' },
     '1_month_gold': { name: 'Gold Membership (1 Month)', priceUsd: 1999, priceEur: 1999, priceBrl: 9990, durationDays: 30, tier: 'GOLD' },
     '1_month_platinum': { name: 'Platinum Membership (1 Month)', priceUsd: 2999, priceEur: 2999, priceBrl: 14990, durationDays: 30, tier: 'PLATINUM' },
