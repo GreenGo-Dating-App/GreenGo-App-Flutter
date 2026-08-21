@@ -562,7 +562,12 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
           animation: _shimmerController,
           builder: (context, child) {
             return Container(
-              constraints: const BoxConstraints(maxWidth: 380),
+              constraints: BoxConstraints(
+                maxWidth: 380,
+                // Cap the sheet so the offer can never fill the whole screen;
+                // anything taller scrolls instead of overflowing.
+                maxHeight: MediaQuery.of(context).size.height * 0.85,
+              ),
               decoration: BoxDecoration(
                 color: AppColors.backgroundCard,
                 borderRadius: BorderRadius.circular(28),
@@ -607,253 +612,255 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                       ),
                     ),
                     // Main content
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 20, 24, 20),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          // Trial badge with glow
-                          if (!widget.isExtending) ...[
+                    SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(24, 20, 24, 20),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            // Trial badge with glow
+                            if (!widget.isExtending) ...[
+                              AnimatedBuilder(
+                                animation: _pulseAnimation,
+                                builder: (context, child) {
+                                  return Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20),
+                                      gradient: const LinearGradient(
+                                        colors: [
+                                          AppColors.accentGold,
+                                          AppColors.richGold,
+                                        ],
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: AppColors.accentGold.withValues(
+                                            alpha: 0.3 + 0.3 * _pulseAnimation.value,
+                                          ),
+                                          blurRadius: 12 + 8 * _pulseAnimation.value,
+                                          spreadRadius: 1,
+                                        ),
+                                      ],
+                                    ),
+                                    child: Text(
+                                      l10n.membershipTrialBadge,
+                                      style: const TextStyle(
+                                        color: AppColors.deepBlack,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w800,
+                                        letterSpacing: 1.2,
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                              const SizedBox(height: 16),
+                            ],
+                            // Animated icon with glow ring
                             AnimatedBuilder(
                               animation: _pulseAnimation,
                               builder: (context, child) {
                                 return Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                                  width: 80,
+                                  height: 80,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    gradient: const LinearGradient(
+                                    shape: BoxShape.circle,
+                                    gradient: RadialGradient(
                                       colors: [
-                                        AppColors.accentGold,
-                                        AppColors.richGold,
+                                        AppColors.accentGold.withValues(alpha: 0.25),
+                                        AppColors.richGold.withValues(alpha: 0.08),
+                                        Colors.transparent,
                                       ],
+                                      stops: const [0.0, 0.6, 1.0],
                                     ),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: AppColors.accentGold.withValues(
-                                          alpha: 0.3 + 0.3 * _pulseAnimation.value,
+                                        color: AppColors.richGold.withValues(
+                                          alpha: 0.15 + 0.15 * _pulseAnimation.value,
                                         ),
-                                        blurRadius: 12 + 8 * _pulseAnimation.value,
-                                        spreadRadius: 1,
+                                        blurRadius: 20 + 10 * _pulseAnimation.value,
                                       ),
                                     ],
                                   ),
-                                  child: Text(
-                                    l10n.membershipTrialBadge,
-                                    style: const TextStyle(
-                                      color: AppColors.deepBlack,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w800,
-                                      letterSpacing: 1.2,
-                                    ),
+                                  child: Icon(
+                                    widget.isExtending ? Icons.autorenew : Icons.diamond_outlined,
+                                    color: AppColors.accentGold,
+                                    size: 40,
                                   ),
                                 );
                               },
                             ),
                             const SizedBox(height: 16),
-                          ],
-                          // Animated icon with glow ring
-                          AnimatedBuilder(
-                            animation: _pulseAnimation,
-                            builder: (context, child) {
-                              return Container(
-                                width: 80,
-                                height: 80,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  gradient: RadialGradient(
-                                    colors: [
-                                      AppColors.accentGold.withValues(alpha: 0.25),
-                                      AppColors.richGold.withValues(alpha: 0.08),
-                                      Colors.transparent,
-                                    ],
-                                    stops: const [0.0, 0.6, 1.0],
-                                  ),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: AppColors.richGold.withValues(
-                                        alpha: 0.15 + 0.15 * _pulseAnimation.value,
-                                      ),
-                                      blurRadius: 20 + 10 * _pulseAnimation.value,
-                                    ),
-                                  ],
-                                ),
-                                child: Icon(
-                                  widget.isExtending ? Icons.autorenew : Icons.diamond_outlined,
-                                  color: AppColors.accentGold,
-                                  size: 40,
-                                ),
-                              );
-                            },
-                          ),
-                          const SizedBox(height: 16),
-                          // Title
-                          Text(
-                            widget.isExtending
-                                ? l10n.membershipExtendTitle
-                                : l10n.membershipTrialTitle,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              color: AppColors.textPrimary,
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: -0.3,
-                            ),
-                          ),
-                          const SizedBox(height: 6),
-                          // Subtitle
-                          Text(
-                            widget.isExtending
-                                ? l10n.membershipExtendDescription
-                                : l10n.membershipTrialSubtitle,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: AppColors.richGold.withValues(alpha: 0.9),
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          const SizedBox(height: 20),
-                          // Feature list
-                          if (!widget.isExtending) ...[
-                            _featureRow(Icons.groups_outlined, l10n.membershipTrialFeature1),
-                            _featureRow(Icons.block_outlined, l10n.membershipTrialFeature2),
-                            _featureRow(Icons.verified_outlined, l10n.membershipTrialFeature3),
-                            const SizedBox(height: 12),
-                            // Coupon entry — opens the shared CouponCodeWidget.
-                            Center(
-                              child: TextButton.icon(
-                                onPressed: _openCouponSheet,
-                                icon: const Icon(Icons.local_offer_outlined,
-                                    size: 16, color: AppColors.richGold),
-                                label: Text(
-                                  l10n.membershipHaveCoupon,
-                                  style: const TextStyle(
-                                      color: AppColors.richGold, fontSize: 13),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                          ],
-                          // Yearly price badge
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                            decoration: BoxDecoration(
-                              color: AppColors.richGold.withValues(alpha: 0.08),
-                              borderRadius: BorderRadius.circular(16),
-                              border: Border.all(
-                                color: AppColors.richGold.withValues(alpha: 0.25),
-                              ),
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const Icon(Icons.star_rounded, color: AppColors.accentGold, size: 18),
-                                const SizedBox(width: 8),
-                                Text(
-                                  _yearlyPrice != null
-                                      ? '${l10n.yearlyMembership} · $_yearlyPrice'
-                                      : l10n.yearlyMembership,
-                                  style: const TextStyle(
-                                    color: AppColors.richGold,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(height: 20),
-                          // CTA button with animated glow
-                          AnimatedBuilder(
-                            animation: _pulseAnimation,
-                            builder: (context, child) {
-                              return Container(
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(14),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: AppColors.accentGold.withValues(
-                                        alpha: 0.2 + 0.2 * _pulseAnimation.value,
-                                      ),
-                                      blurRadius: 16 + 8 * _pulseAnimation.value,
-                                      offset: const Offset(0, 4),
-                                    ),
-                                  ],
-                                ),
-                                child: GestureDetector(
-                                  onTap: _loading ? null : _subscribe,
-                                  child: Container(
-                                    alignment: Alignment.center,
-                                    padding: const EdgeInsets.symmetric(vertical: 16),
-                                    decoration: BoxDecoration(
-                                      gradient: const LinearGradient(
-                                        colors: [AppColors.accentGold, AppColors.richGold],
-                                      ),
-                                      borderRadius: BorderRadius.circular(14),
-                                    ),
-                                    child: _loading
-                                        ? const SizedBox(
-                                            height: 24,
-                                            width: 24,
-                                            child: CircularProgressIndicator(
-                                              strokeWidth: 2.5,
-                                              color: AppColors.deepBlack,
-                                            ),
-                                          )
-                                        : Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            children: [
-                                              const Icon(Icons.rocket_launch, color: AppColors.deepBlack, size: 20),
-                                              const SizedBox(width: 8),
-                                              Text(
-                                                widget.isExtending
-                                                    ? l10n.subscribeNow
-                                                    : l10n.membershipTrialCta,
-                                                style: const TextStyle(
-                                                  color: AppColors.deepBlack,
-                                                  fontSize: 16,
-                                                  fontWeight: FontWeight.w800,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                  ),
-                                ),
-                              );
-                            },
-                          ),
-                          const SizedBox(height: 12),
-                          // Trial footer text
-                          if (!widget.isExtending)
+                            // Title
                             Text(
-                              l10n.membershipTrialFooter,
+                              widget.isExtending
+                                  ? l10n.membershipExtendTitle
+                                  : l10n.membershipTrialTitle,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                color: AppColors.textPrimary,
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: -0.3,
+                              ),
+                            ),
+                            const SizedBox(height: 6),
+                            // Subtitle
+                            Text(
+                              widget.isExtending
+                                  ? l10n.membershipExtendDescription
+                                  : l10n.membershipTrialSubtitle,
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: AppColors.textTertiary.withValues(alpha: 0.7),
-                                fontSize: 11,
-                                height: 1.4,
+                                color: AppColors.richGold.withValues(alpha: 0.9),
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
                               ),
                             ),
-                          const SizedBox(height: 12),
-                          // Apple 3.1.2: auto-renew disclosure, Terms/Privacy, Restore.
-                          SubscriptionLegalFooter(
-                            onRestore: _restore,
-                            isRestoring: _isRestoring,
-                          ),
-                          const SizedBox(height: 8),
-                          // Dismiss button
-                          TextButton(
-                            onPressed: () => Navigator.of(context).pop(false),
-                            child: Text(
-                              l10n.maybeLater,
-                              style: const TextStyle(
-                                color: AppColors.textTertiary,
-                                fontSize: 14,
+                            const SizedBox(height: 20),
+                            // Feature list
+                            if (!widget.isExtending) ...[
+                              _featureRow(Icons.groups_outlined, l10n.membershipTrialFeature1),
+                              _featureRow(Icons.block_outlined, l10n.membershipTrialFeature2),
+                              _featureRow(Icons.verified_outlined, l10n.membershipTrialFeature3),
+                              const SizedBox(height: 12),
+                              // Coupon entry — opens the shared CouponCodeWidget.
+                              Center(
+                                child: TextButton.icon(
+                                  onPressed: _openCouponSheet,
+                                  icon: const Icon(Icons.local_offer_outlined,
+                                      size: 16, color: AppColors.richGold),
+                                  label: Text(
+                                    l10n.membershipHaveCoupon,
+                                    style: const TextStyle(
+                                        color: AppColors.richGold, fontSize: 13),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                            ],
+                            // Yearly price badge
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                              decoration: BoxDecoration(
+                                color: AppColors.richGold.withValues(alpha: 0.08),
+                                borderRadius: BorderRadius.circular(16),
+                                border: Border.all(
+                                  color: AppColors.richGold.withValues(alpha: 0.25),
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Icon(Icons.star_rounded, color: AppColors.accentGold, size: 18),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    _yearlyPrice != null
+                                        ? '${l10n.yearlyMembership} · $_yearlyPrice'
+                                        : l10n.yearlyMembership,
+                                    style: const TextStyle(
+                                      color: AppColors.richGold,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                          ),
-                        ],
+                            const SizedBox(height: 20),
+                            // CTA button with animated glow
+                            AnimatedBuilder(
+                              animation: _pulseAnimation,
+                              builder: (context, child) {
+                                return Container(
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(14),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: AppColors.accentGold.withValues(
+                                          alpha: 0.2 + 0.2 * _pulseAnimation.value,
+                                        ),
+                                        blurRadius: 16 + 8 * _pulseAnimation.value,
+                                        offset: const Offset(0, 4),
+                                      ),
+                                    ],
+                                  ),
+                                  child: GestureDetector(
+                                    onTap: _loading ? null : _subscribe,
+                                    child: Container(
+                                      alignment: Alignment.center,
+                                      padding: const EdgeInsets.symmetric(vertical: 16),
+                                      decoration: BoxDecoration(
+                                        gradient: const LinearGradient(
+                                          colors: [AppColors.accentGold, AppColors.richGold],
+                                        ),
+                                        borderRadius: BorderRadius.circular(14),
+                                      ),
+                                      child: _loading
+                                          ? const SizedBox(
+                                              height: 24,
+                                              width: 24,
+                                              child: CircularProgressIndicator(
+                                                strokeWidth: 2.5,
+                                                color: AppColors.deepBlack,
+                                              ),
+                                            )
+                                          : Row(
+                                              mainAxisAlignment: MainAxisAlignment.center,
+                                              children: [
+                                                const Icon(Icons.rocket_launch, color: AppColors.deepBlack, size: 20),
+                                                const SizedBox(width: 8),
+                                                Text(
+                                                  widget.isExtending
+                                                      ? l10n.subscribeNow
+                                                      : l10n.membershipTrialCta,
+                                                  style: const TextStyle(
+                                                    color: AppColors.deepBlack,
+                                                    fontSize: 16,
+                                                    fontWeight: FontWeight.w800,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                    ),
+                                  ),
+                                );
+                              },
+                            ),
+                            const SizedBox(height: 12),
+                            // Trial footer text
+                            if (!widget.isExtending)
+                              Text(
+                                l10n.membershipTrialFooter,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: AppColors.textTertiary.withValues(alpha: 0.7),
+                                  fontSize: 11,
+                                  height: 1.4,
+                                ),
+                              ),
+                            const SizedBox(height: 12),
+                            // Apple 3.1.2: auto-renew disclosure, Terms/Privacy, Restore.
+                            SubscriptionLegalFooter(
+                              onRestore: _restore,
+                              isRestoring: _isRestoring,
+                            ),
+                            const SizedBox(height: 8),
+                            // Dismiss button
+                            TextButton(
+                              onPressed: () => Navigator.of(context).pop(false),
+                              child: Text(
+                                l10n.maybeLater,
+                                style: const TextStyle(
+                                  color: AppColors.textTertiary,
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],

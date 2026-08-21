@@ -6740,11 +6740,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get subscriptionAutoRenewInfo =>
-      'As subscrições renovam-se automaticamente, salvo cancelamento até 24 horas antes do fim do período atual. Faça a gestão ou cancele a qualquer momento nas definições da sua conta na loja.';
+      'Renova automaticamente, salvo cancelamento 24 h antes do fim do período. Faça a gestão na conta da loja.';
 
   @override
   String get subscriptionFreeTrialInfo =>
-      'Inclui 7 dias de teste gratuito para novos subscritores. A subscrição começa ao preço indicado quando o período de teste terminar, salvo cancelamento até 24 horas antes do fim.';
+      'Novos subscritores: 7 dias grátis, depois renova ao preço indicado. Cancele 24 h antes.';
 
   @override
   String get purchasesRestored => 'Compras restauradas.';
@@ -11054,7 +11054,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get membershipTrialFooter =>
-      'Cancele a qualquer momento durante o teste. Sem cobrança até ao dia 8.';
+      'Cancele quando quiser. Sem cobrança até ao dia 8.';
 
   @override
   String get membershipTrialBadge => 'GRÁTIS POR 7 DIAS';
@@ -20346,11 +20346,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get subscriptionAutoRenewInfo =>
-      'As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual. Gerencie ou cancele quando quiser nas configurações da sua conta na loja.';
+      'Renova automaticamente, salvo cancelamento 24 h antes do fim do período. Gerencie na conta da loja.';
 
   @override
   String get subscriptionFreeTrialInfo =>
-      'Inclui 7 dias de teste grátis para novos assinantes. A assinatura começa pelo preço exibido quando o teste terminar, a menos que você cancele pelo menos 24 horas antes do fim.';
+      'Novos assinantes: 7 dias grátis, depois renova pelo preço exibido. Cancele 24 h antes.';
 
   @override
   String get purchasesRestored => 'Compras restauradas.';
@@ -24659,7 +24659,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get membershipTrialFooter =>
-      'Cancele a qualquer momento durante o teste. Sem cobrança até o dia 8.';
+      'Cancele quando quiser. Sem cobrança até o dia 8.';
 
   @override
   String get membershipTrialBadge => 'GRÁTIS POR 7 DIAS';

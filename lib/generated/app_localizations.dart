@@ -12039,13 +12039,13 @@ abstract class AppLocalizations {
   /// No description provided for @subscriptionAutoRenewInfo.
   ///
   /// In en, this message translates to:
-  /// **'Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your store account settings.'**
+  /// **'Auto-renews unless canceled 24h before the period ends. Manage in your store account.'**
   String get subscriptionAutoRenewInfo;
 
   /// No description provided for @subscriptionFreeTrialInfo.
   ///
   /// In en, this message translates to:
-  /// **'Includes a 7-day free trial for new subscribers. Your subscription starts at the price shown when the trial ends, unless you cancel at least 24 hours before it finishes.'**
+  /// **'New subscribers: 7 days free, then renews at the price shown. Cancel 24h before it ends.'**
   String get subscriptionFreeTrialInfo;
 
   /// No description provided for @purchasesRestored.
@@ -19515,7 +19515,7 @@ abstract class AppLocalizations {
   /// No description provided for @membershipTrialFooter.
   ///
   /// In en, this message translates to:
-  /// **'Cancel anytime during trial. No charge until day 8.'**
+  /// **'Cancel anytime. No charge until day 8.'**
   String get membershipTrialFooter;
 
   /// No description provided for @membershipTrialBadge.

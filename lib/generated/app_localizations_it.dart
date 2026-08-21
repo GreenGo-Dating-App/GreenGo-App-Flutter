@@ -6756,11 +6756,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get subscriptionAutoRenewInfo =>
-      'Gli abbonamenti si rinnovano automaticamente salvo disdetta almeno 24 ore prima della fine del periodo in corso. Gestisci o annulla quando vuoi nelle impostazioni del tuo account dello store.';
+      'Si rinnova automaticamente salvo disdetta 24 h prima della fine del periodo. Gestisci nell\'account dello store.';
 
   @override
   String get subscriptionFreeTrialInfo =>
-      'Include 7 giorni di prova gratuita per i nuovi abbonati. L\'abbonamento inizia al prezzo indicato al termine della prova, salvo disdetta almeno 24 ore prima della fine.';
+      'Nuovi abbonati: 7 giorni gratis, poi si rinnova al prezzo indicato. Disdici 24 h prima.';
 
   @override
   String get purchasesRestored => 'Acquisti ripristinati.';
@@ -11073,7 +11073,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get membershipTrialFooter =>
-      'Cancella in qualsiasi momento durante la prova. Nessun addebito fino al giorno 8.';
+      'Disdici quando vuoi. Nessun addebito fino al giorno 8.';
 
   @override
   String get membershipTrialBadge => 'GRATIS PER 7 GIORNI';
