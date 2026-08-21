@@ -62,8 +62,199 @@
 
   <title>GreenGo</title>
   <link rel="manifest" href="manifest.json">
+
+  <!--
+    PWA install bridge.
+
+    `beforeinstallprompt` fires before Flutter boots, and the event is only
+    usable if we preventDefault() and keep a reference to it. So this shim runs
+    in <head>, stashes the event, and exposes a tiny API that the Dart side
+    (lib/core/platform/pwa_install_web.dart) reads once the app is up.
+
+    Chrome does not fire the event on a fixed schedule -- it lands once the
+    manifest, icons and service worker have all been validated, which is
+    routinely AFTER the first screen has rendered. Sampling `canPrompt()` once
+    therefore misses it, so `whenReady()` lets the caller wait for it.
+
+    iOS has no install API at all -- Safari has never shipped
+    `beforeinstallprompt` -- so there `platform()` reports the browser and the
+    app shows "Share -> Add to Home Screen" instructions instead of a button.
+  -->
+  <script>
+    (function () {
+      var deferred = null;
+      var installed = false;
+      var waiters = [];
+
+      function detectPlatform() {
+        var ua = navigator.userAgent || '';
+        var iOS = /iPad|iPhone|iPod/.test(ua) ||
+          // iPadOS 13+ reports itself as a Mac; touch points give it away.
+          (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        if (iOS) {
+          // Add to Home Screen is only reliable in Safari proper. Chrome,
+          // Firefox, Edge and Opera on iOS all identify themselves first.
+          var thirdParty = /CriOS|FxiOS|EdgiOS|OPiOS|GSA/.test(ua);
+          return thirdParty ? 'ios-other' : 'ios-safari';
+        }
+        if (/Android/.test(ua)) return 'android';
+        return 'other';
+      }
+
+      function session(key, value) {
+        try {
+          if (value === undefined) return sessionStorage.getItem(key);
+          sessionStorage.setItem(key, value);
+        } catch (e) {
+          // Private mode / storage disabled -- treat as "never dismissed".
+        }
+        return null;
+      }
+
+      window.__ggInstall = {
+        platform: detectPlatform,
+        canPrompt: function () { return deferred !== null; },
+        installed: function () { return installed; },
+        isStandalone: function () {
+          return (window.matchMedia &&
+                  window.matchMedia('(display-mode: standalone)').matches) ||
+                 window.navigator.standalone === true;
+        },
+        dismissed: function () { return session('gg_install_dismissed') === '1'; },
+        dismiss: function () { session('gg_install_dismissed', '1'); },
+
+        // Resolves true as soon as a deferred prompt exists, false if none has
+        // arrived within timeoutMs. Callers poll this instead of canPrompt()
+        // so a late event still produces an install offer.
+        whenReady: function (timeoutMs) {
+          if (deferred !== null) return Promise.resolve(true);
+          if (installed) return Promise.resolve(false);
+          return new Promise(function (resolve) {
+            var settled = false;
+            function finish(value) {
+              if (settled) return;
+              settled = true;
+              resolve(value);
+            }
+            waiters.push(finish);
+            setTimeout(function () { finish(deferred !== null); }, timeoutMs);
+          });
+        },
+
+        // Readable state dump for debugging install problems from DevTools.
+        debug: function () {
+          return JSON.stringify({
+            platform: detectPlatform(),
+            hasDeferredPrompt: deferred !== null,
+            installed: installed,
+            standalone: window.__ggInstall.isStandalone(),
+            dismissedThisSession: window.__ggInstall.dismissed(),
+            hasServiceWorker: 'serviceWorker' in navigator,
+            secureContext: window.isSecureContext
+          });
+        },
+
+        prompt: function () {
+          if (!deferred) return Promise.resolve('unavailable');
+          var event = deferred;
+          // A deferred prompt is single-use; drop it before awaiting so a
+          // double tap can't call prompt() on a spent event.
+          deferred = null;
+          try {
+            event.prompt();
+          } catch (e) {
+            return Promise.resolve('unavailable');
+          }
+          return event.userChoice.then(function (choice) {
+            return (choice && choice.outcome) || 'dismissed';
+          }).catch(function () { return 'dismissed'; });
+        }
+      };
+
+      window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        deferred = e;
+        var pending = waiters;
+        waiters = [];
+        pending.forEach(function (fn) { fn(true); });
+      });
+
+      window.addEventListener('appinstalled', function () {
+        installed = true;
+        deferred = null;
+        var pending = waiters;
+        waiters = [];
+        pending.forEach(function (fn) { fn(false); });
+      });
+    })();
+  </script>
+
+  <!--
+    Boot screen. Flutter web paints nothing until the engine has downloaded and
+    rendered its first frame, and the default document background is white, so
+    the app opened on a white flash. This paints the brand black immediately
+    (it is inline, so it needs no extra round trip) and is torn down on
+    `flutter-first-frame`.
+  -->
+  <style>
+    html, body { margin: 0; padding: 0; background: #0A0A0A; }
+    #gg-splash {
+      position: fixed;
+      inset: 0;
+      z-index: 2147483647;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      background: #0A0A0A;
+      transition: opacity 350ms ease;
+    }
+    #gg-splash.gg-hide { opacity: 0; pointer-events: none; }
+    #gg-splash img {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      display: block;
+    }
+    #gg-splash .gg-ring {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 3px solid rgba(212, 175, 55, 0.22);
+      border-top-color: #D4AF37;
+      animation: gg-spin 900ms linear infinite;
+    }
+    @keyframes gg-spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      #gg-splash .gg-ring { animation-duration: 2400ms; }
+    }
+  </style>
 </head>
 <body>
+  <div id="gg-splash" role="status" aria-label="Loading GreenGo">
+    <img src="icons/Icon-192.png" alt="">
+    <div class="gg-ring"></div>
+  </div>
+  <script>
+    (function () {
+      var splash = document.getElementById('gg-splash');
+      if (!splash) return;
+      var torn = false;
+      function teardown() {
+        if (torn) return;
+        torn = true;
+        splash.classList.add('gg-hide');
+        setTimeout(function () {
+          if (splash.parentNode) splash.parentNode.removeChild(splash);
+        }, 400);
+      }
+      window.addEventListener('flutter-first-frame', teardown);
+      // Safety net: never strand the user behind the splash if that event is
+      // missed (older engines, a failed boot, a blocked asset).
+      setTimeout(teardown, 15000);
+    })();
+  </script>
   <script src="flutter_bootstrap.js" async></script>
   <script>
     // Register our own service worker for PWA installability.
