@@ -848,6 +848,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
                     } catch (_) {}
                     _loadCurrentTierFromFirestore();
+                    // Close the sheet so the refreshed shop is actually visible;
+                    // leaving it open reads as "nothing happened".
+                    Navigator.of(sheetContext).pop();
                   },
                 ),
               ],
