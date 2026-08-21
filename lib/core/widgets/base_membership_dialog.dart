@@ -502,8 +502,16 @@ class _BaseMembershipDialogState extends State<BaseMembershipDialog>
                   userId: widget.userId,
                   currentTier: MembershipTier.free,
                   onRedemptionSuccess: () {
+                    // A coupon grants the same entitlement a purchase does, so
+                    // refresh exactly what the purchase path refreshes — otherwise
+                    // the shop keeps showing the pre-coupon tier and expiry.
+                    widget.coinBloc?.add(LoadCoinBalance(widget.userId));
+                    widget.profileBloc?.add(
+                      ProfileLoadRequested(userId: widget.userId),
+                    );
                     Navigator.of(sheetContext).pop();
-                    if (mounted) Navigator.of(context).pop();
+                    // pop(true) so callers awaiting show() reload their own state.
+                    if (mounted) Navigator.of(context).pop(true);
                   },
                 ),
               ],
