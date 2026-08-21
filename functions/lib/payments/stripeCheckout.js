@@ -329,7 +329,11 @@ async function activateMembership(userId, productId, sessionId) {
     }
     const endTimestamp = admin.firestore.Timestamp.fromDate(endDate);
     if (productId === 'greengo_base_membership') {
-        await profileRef.set({ hasBaseMembership: true, baseMembershipEndDate: endTimestamp }, { merge: true });
+        await profileRef.set({
+            hasBaseMembership: true,
+            baseMembershipEndDate: endTimestamp,
+            baseMembershipSource: 'purchase',
+        }, { merge: true });
         // Grant 500 bonus coins with the base membership.
         const balanceRef = db.collection('coinBalances').doc(userId);
         const batchEntry = {

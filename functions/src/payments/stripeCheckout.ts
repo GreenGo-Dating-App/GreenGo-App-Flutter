@@ -334,7 +334,11 @@ async function activateMembership(userId: string, productId: string, sessionId: 
 
   if (productId === 'greengo_base_membership') {
     await profileRef.set(
-      { hasBaseMembership: true, baseMembershipEndDate: endTimestamp },
+      {
+        hasBaseMembership: true,
+        baseMembershipEndDate: endTimestamp,
+        baseMembershipSource: 'purchase',
+      },
       { merge: true },
     );
     // Grant 500 bonus coins with the base membership.

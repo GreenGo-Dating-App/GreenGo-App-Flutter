@@ -72,7 +72,12 @@ async function applyRenewal(
   if (catalogId === BASE_PRODUCT_ID) {
     // Base membership renews independently of the paid VIP tier.
     await db.collection('profiles').doc(userId).set(
-      { hasBaseMembership: true, baseMembershipEndDate: expiry, updatedAt: now },
+      {
+        hasBaseMembership: true,
+        baseMembershipEndDate: expiry,
+        baseMembershipSource: 'purchase',
+        updatedAt: now,
+      },
       { merge: true },
     );
     logInfo(`Renewal: extended BASE membership for ${userId} to ${expiry.toDate().toISOString()}`);

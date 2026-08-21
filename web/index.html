@@ -65,5 +65,20 @@
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Register our own service worker for PWA installability.
+    //
+    // Flutter's generated flutter_service_worker.js is now a stub that calls
+    // self.registration.unregister() and ships no fetch handler, so after its
+    // first activation the site has no service worker and Chrome will not offer
+    // to install the app. This registration is separate and unaffected by that.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('pwa_service_worker.js').catch(function (e) {
+          console.warn('PWA service worker registration failed:', e);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
