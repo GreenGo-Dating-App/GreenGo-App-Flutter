@@ -149,6 +149,9 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
             profileUpdate.membershipTier = ext.effectiveTier;
             profileUpdate.membershipStartDate = now;
             profileUpdate.membershipEndDate = ext.newEndTimestamp;
+            // A coupon does not consume the store's introductory offer, so the
+            // client keeps showing the free trial to coupon-granted users.
+            profileUpdate.membershipSource = 'coupon';
             userUpdate.subscriptionTier = ext.effectiveTier;
             userUpdate.membershipEndDate = ext.newEndTimestamp;
             if (!firstMembershipExt) {
@@ -163,6 +166,7 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
             runningBaseEnd = newBaseEnd;
             profileUpdate.hasBaseMembership = true;
             profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
+            profileUpdate.baseMembershipSource = 'coupon';
             firstDurationDays ??= g.durationDays;
           } else if (g.kind === 'coins' && g.coinAmount) {
             const amount = g.coinAmount;
