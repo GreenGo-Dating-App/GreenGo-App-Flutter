@@ -90,7 +90,12 @@ async function applyRenewal(userId, productId, expiryMs) {
     const expiry = admin.firestore.Timestamp.fromMillis(expiryMs);
     if (catalogId === BASE_PRODUCT_ID) {
         // Base membership renews independently of the paid VIP tier.
-        await utils_1.db.collection('profiles').doc(userId).set({ hasBaseMembership: true, baseMembershipEndDate: expiry, updatedAt: now }, { merge: true });
+        await utils_1.db.collection('profiles').doc(userId).set({
+            hasBaseMembership: true,
+            baseMembershipEndDate: expiry,
+            baseMembershipSource: 'purchase',
+            updatedAt: now,
+        }, { merge: true });
         (0, utils_1.logInfo)(`Renewal: extended BASE membership for ${userId} to ${expiry.toDate().toISOString()}`);
         return;
     }

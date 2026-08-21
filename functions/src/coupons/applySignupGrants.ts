@@ -228,6 +228,7 @@ async function applyOneCoupon(
         runningTier = ext.effectiveTier;
         runningTierEnd = ext.newEndDate;
         profileUpdate.membershipTier = ext.effectiveTier;
+        profileUpdate.membershipSource = 'coupon';
         profileUpdate.membershipStartDate = now;
         profileUpdate.membershipEndDate = ext.newEndTimestamp;
         userUpdate.subscriptionTier = ext.effectiveTier;
@@ -243,6 +244,7 @@ async function applyOneCoupon(
         const newBaseEnd = new Date(baseStart.getTime() + durationMs);
         runningBaseEnd = newBaseEnd;
         profileUpdate.hasBaseMembership = true;
+        profileUpdate.baseMembershipSource = 'coupon';
         profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
       } else if (g.kind === 'coins' && g.coinAmount && g.coinAmount > 0) {
         const amount = g.coinAmount;
@@ -272,6 +274,8 @@ async function applyOneCoupon(
       runningBaseEnd = newBaseEnd;
       profileUpdate.hasBaseMembership = true;
       profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
+      // Bonus rides on a coupon grant, so it is coupon-sourced too.
+      profileUpdate.baseMembershipSource = 'coupon';
       bonusApplied = true;
     }
 
