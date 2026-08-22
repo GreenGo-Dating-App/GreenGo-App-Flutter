@@ -356,18 +356,30 @@
       // -- boot -------------------------------------------------------------
       trackProgress();
 
+      // Dart calls this from AuthWrapper's first frame, i.e. the moment a real
+      // branded screen is actually on the display.
+      //
+      // Tearing down on runApp() instead was wrong: it resolves as soon as the
+      // first frame is *scheduled*, while the engine is still compositing and
+      // Firebase auth has not resolved, so the loader gave way to a black
+      // screen and the user sat looking at nothing until the login page
+      // finally appeared. Waiting for this signal keeps one continuous branded
+      // loading state from first paint through to the login page.
+      window.__ggBoot = {
+        ready: function () {
+          requestAnimationFrame(function () { teardown(); });
+        }
+      };
+
       _flutter.loader.load({
         onEntrypointLoaded: function (engineInitializer) {
           finishProgress();
           return engineInitializer.initializeEngine().then(function (appRunner) {
             return appRunner.runApp();
           }).then(function () {
-            // runApp() resolves once the first frame is scheduled; wait two
-            // frames so the engine has actually painted before we fade out,
-            // otherwise the splash gives way to a blank black screen.
-            requestAnimationFrame(function () {
-              requestAnimationFrame(function () { setTimeout(teardown, 80); });
-            });
+            // If Dart never signals -- an exception before the first screen
+            // builds, say -- do not hold the loader for the full backstop.
+            setTimeout(teardown, 15000);
           });
         }
       });
@@ -376,7 +388,7 @@
       // `flutter-first-frame`, but if it ever does, take it.
       window.addEventListener('flutter-first-frame', teardown);
       // Absolute backstop: never strand anyone behind the splash.
-      setTimeout(teardown, 30000);
+      setTimeout(teardown, 25000);
     })();
   </script>
   <script>
