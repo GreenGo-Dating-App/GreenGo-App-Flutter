@@ -18,7 +18,18 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!--
+    No viewport-fit=cover.
+
+    With it, iOS extends the web view into the unsafe areas when the PWA runs
+    standalone, and the bottom row of the app lands inside the home-indicator
+    gesture strip, where the system swallows taps -- the bottom nav simply
+    stops working. Flutter web cannot compensate: it never populates
+    MediaQuery.padding from CSS env(safe-area-inset-*), so the app's SafeArea
+    widgets add nothing on this platform. Letting the browser inset the
+    viewport instead is the one place that reliably knows the insets.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="GreenGo connects you across cultures — practice languages with real people, meet locals and travelers, and discover events near you.">
 
   <!-- PWA theme color -->
@@ -27,7 +38,9 @@
   <!-- PWA / iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- "black", not "black-translucent": translucent puts the app underneath
+       the status bar, clipping the top the same way cover clipped the bottom. -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="GreenGo">
   <link rel="apple-touch-icon" href="icons/Icon-180.png?v=01c33da8">
 
