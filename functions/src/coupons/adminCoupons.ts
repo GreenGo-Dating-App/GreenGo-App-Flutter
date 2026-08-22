@@ -164,7 +164,11 @@ export const listCoupons = onCall<ListCouponsRequest>(
   monitored("listCoupons", async (request: CallableRequest<ListCouponsRequest>) => {
     try {
       await verifyAdminAuth(request.auth);
-      const limit = Math.min(Math.max(request.data?.limit || 50, 1), 200);
+      // Per-page cap. Raised from 200 so the panel can pull a full campaign
+      // import (the purchase-list import alone is 234 coupons) in one page
+      // instead of silently stopping at the old ceiling. Still bounded — for
+      // anything larger the caller should page on `nextCursor` below.
+      const limit = Math.min(Math.max(request.data?.limit || 50, 1), 1000);
       const filter = request.data?.filter || {};
 
       let q: FirebaseFirestore.Query = db.collection('coupons').orderBy('createdAt', 'desc');

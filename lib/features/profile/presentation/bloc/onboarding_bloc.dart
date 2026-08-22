@@ -375,9 +375,10 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
           await _grantWelcomeCoins(currentState.userId);
 
           // NOTE: We intentionally do NOT auto-grant a 7-day Base membership
-          // trial here anymore. The trial is offered (not silently activated)
-          // via BaseMembershipDialog on first login, so the user chooses to
-          // start it. A coupon's base grant, if any, still applies on redeem.
+          // trial here. The trial now comes from the App Store / Play
+          // subscription itself, so nothing in the app needs to offer or
+          // activate it. A coupon's base grant, if any, still applies on
+          // redeem.
 
           // Redeem a coupon typed during registration, if one is pending.
           // Never blocks completion; a bad code is surfaced as a notice.

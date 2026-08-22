@@ -139,7 +139,11 @@ exports.listCoupons = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30
     var _a, _b, _c;
     try {
         await (0, utils_1.verifyAdminAuth)(request.auth);
-        const limit = Math.min(Math.max(((_a = request.data) === null || _a === void 0 ? void 0 : _a.limit) || 50, 1), 200);
+        // Per-page cap. Raised from 200 so the panel can pull a full campaign
+        // import (the purchase-list import alone is 234 coupons) in one page
+        // instead of silently stopping at the old ceiling. Still bounded — for
+        // anything larger the caller should page on `nextCursor` below.
+        const limit = Math.min(Math.max(((_a = request.data) === null || _a === void 0 ? void 0 : _a.limit) || 50, 1), 1000);
         const filter = ((_b = request.data) === null || _b === void 0 ? void 0 : _b.filter) || {};
         let q = utils_1.db.collection('coupons').orderBy('createdAt', 'desc');
         if (filter.disabled !== undefined)
