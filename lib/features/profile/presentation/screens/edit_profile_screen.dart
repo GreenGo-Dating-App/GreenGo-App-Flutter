@@ -14,7 +14,6 @@ import '../../../../core/services/cache_service.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
-import '../../../../core/widgets/base_membership_dialog.dart';
 import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/widgets/settings_accordion.dart';
@@ -28,6 +27,7 @@ import '../../../admin/data/datasources/verification_admin_remote_data_source.da
 import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
 import '../../../admin/presentation/bloc/verification_admin_bloc.dart';
 import '../../../admin/presentation/screens/admin_2fa_screen.dart';
+import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../admin/presentation/screens/reports_admin_screen.dart';
 import '../../../admin/presentation/screens/verification_admin_screen.dart';
 import '../../../authentication/presentation/bloc/auth_bloc.dart';
@@ -1217,13 +1217,10 @@ class EditProfileScreen extends StatelessWidget {
       final isExpired = endDate.isBefore(DateTime.now());
       return GestureDetector(
         behavior: HitTestBehavior.opaque,
-        onTap: () => BaseMembershipDialog.show(
-          context: context,
-          userId: profile.userId,
-          // Coupon-granted access has not consumed the store's introductory
-          // offer, so those users still get the trial presentation rather than
-          // the extend one.
-          isExtending: isActive && !profile.isCouponGrantedBase,
+        onTap: () => Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (_) => MembershipScreen(currentUserId: profile.userId),
+          ),
         ),
         child: Container(
         padding: const EdgeInsets.all(16),
@@ -1300,9 +1297,10 @@ class EditProfileScreen extends StatelessWidget {
 
     // No membership — show get button
     return OutlinedButton.icon(
-      onPressed: () => BaseMembershipDialog.show(
-        context: context,
-        userId: profile.userId,
+      onPressed: () => Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => MembershipScreen(currentUserId: profile.userId),
+        ),
       ),
       icon: const Icon(Icons.star_outline),
       label: Text(AppLocalizations.of(context)!.profileGetMembership),

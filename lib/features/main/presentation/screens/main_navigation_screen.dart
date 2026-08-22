@@ -23,7 +23,6 @@ import '../../../events/data/datasources/external_events_preloader.dart';
 import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../../core/services/usage_limit_service.dart';
-import '../../../../core/widgets/base_membership_dialog.dart';
 import '../../../../core/widgets/countdown_blur_overlay.dart';
 import '../../../../core/widgets/home_skeleton.dart';
 import '../../../../core/widgets/glass_bottom_nav.dart';
@@ -80,6 +79,7 @@ import '../../../profile/presentation/screens/onboarding_screen.dart' as profile
 import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
+import '../../../subscription/presentation/screens/membership_screen.dart';
 
 /// Main Navigation Screen
 ///
@@ -492,28 +492,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     _membershipCheckDone = true;
 
-    // If user has an active trial membership, show one-time welcome popup
-    if (profile.isBaseMembershipActive && profile.baseMembershipEndDate != null) {
-      // Delay to ensure the widget tree is fully built before showing dialog
-      Future.delayed(const Duration(milliseconds: 800), () {
-        if (mounted) {
-          _showOrDeferDialog(
-              () => _showTrialWelcomeDialog(profile.baseMembershipEndDate!));
-        }
-      });
-      return;
-    }
-
-    // No active membership — show purchase dialog (after the tour, if running)
-    Future.delayed(const Duration(milliseconds: 800), () {
-      if (mounted) {
-        _showOrDeferDialog(() {
-          if (mounted) {
-            BaseMembershipDialog.show(context: context, userId: widget.userId);
-          }
-        });
-      }
-    });
+    // Nothing to pop up here any more.
+    //
+    // Members used to get a "you are on the trial version" notice, and
+    // non-members an unprompted 7-day-trial card. The notice told the user
+    // nothing they could act on, and the trial is granted automatically by the
+    // App Store / Play subscription, so the card advertised a choice it did not
+    // actually offer. Membership is still reachable on purpose, through the
+    // gate and the upgrade buttons in Edit Profile.
   }
 
   /// Shows a one-time MaterialBanner per ungated signup grant.
@@ -619,124 +605,18 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       final isActive = hasBase && endDate != null && endDate.isAfter(DateTime.now());
 
       _membershipCheckDone = true;
-
-      if (isActive) {
-        if (mounted) {
-          _showOrDeferDialog(() {
-            if (mounted) _showTrialWelcomeDialog(endDate);
-          });
-        }
-      } else {
-        if (mounted) {
-          _showOrDeferDialog(() {
-            if (mounted) {
-              BaseMembershipDialog.show(
-                  context: context, userId: widget.userId);
-            }
-          });
-        }
-      }
+      // Membership state is still read (other UI keys off it); it just no
+      // longer triggers a popup either way. See _checkBaseMembership.
     } catch (e) {
       debugPrint('Direct membership check error: $e');
     }
   }
 
-  /// Open membership dialog to extend (called from profile/shop)
+  /// Open the membership screen to extend (called from profile/shop).
   void showExtendMembershipDialog() {
-    BaseMembershipDialog.show(
-      context: context,
-      userId: widget.userId,
-      isExtending: true,
-    );
-  }
-
-  /// Show a one-time trial welcome popup after first login
-  /// Uses Firestore `users/{userId}.trialWelcomeShown` to persist across devices/reinstalls
-  Future<void> _showTrialWelcomeDialog(DateTime expirationDate) async {
-    try {
-      final doc = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(widget.userId)
-          .get();
-      if (doc.data()?['trialWelcomeShown'] == true) return;
-
-      // Mark as shown immediately in Firestore
-      await FirebaseFirestore.instance
-          .collection('users')
-          .doc(widget.userId)
-          .update({'trialWelcomeShown': true});
-    } catch (e) {
-      // If Firestore fails, skip the popup rather than crash
-      debugPrint('Trial welcome check error: $e');
-      return;
-    }
-
-    if (!mounted) return;
-
-    final l10n = AppLocalizations.of(context);
-    final formattedDate = '${expirationDate.day.toString().padLeft(2, '0')}/'
-        '${expirationDate.month.toString().padLeft(2, '0')}/'
-        '${expirationDate.year}';
-
-    await showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (ctx) => Dialog(
-        backgroundColor: AppColors.charcoal,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          side: const BorderSide(color: AppColors.richGold, width: 1.5),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 28),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const Icon(Icons.card_giftcard,
-                  color: AppColors.richGold, size: 48),
-              const SizedBox(height: 16),
-              Text(
-                l10n?.trialWelcomeTitle ?? 'Welcome to GreenGo!',
-                style: const TextStyle(
-                  color: AppColors.richGold,
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                l10n?.trialWelcomeMessage(formattedDate) ??
-                    'You are currently using the trial version. Your free base membership is active until $formattedDate. Enjoy exploring GreenGo!',
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  color: AppColors.textSecondary,
-                  fontSize: 15,
-                  height: 1.5,
-                ),
-              ),
-              const SizedBox(height: 24),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: AppColors.deepBlack,
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  onPressed: () => Navigator.of(ctx).pop(),
-                  child: Text(
-                    l10n?.trialWelcomeButton ?? 'Get Started',
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 16),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => MembershipScreen(currentUserId: widget.userId),
       ),
     );
   }
