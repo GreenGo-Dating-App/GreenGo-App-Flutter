@@ -193,8 +193,8 @@
     Boot screen. Flutter web paints nothing until the engine has downloaded and
     rendered its first frame, and the default document background is white, so
     the app opened on a white flash. This paints the brand black immediately
-    (it is inline, so it needs no extra round trip) and is torn down on
-    `flutter-first-frame`.
+    (inline, so it costs no extra round trip) and reports real download
+    progress while main.dart.js streams in.
   -->
   <style>
     html, body { margin: 0; padding: 0; background: #0A0A0A; }
@@ -206,8 +206,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 28px;
+      gap: 22px;
       background: #0A0A0A;
+      font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       transition: opacity 350ms ease;
     }
     #gg-splash.gg-hide { opacity: 0; pointer-events: none; }
@@ -217,45 +218,167 @@
       border-radius: 22px;
       display: block;
     }
-    #gg-splash .gg-ring {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      border: 3px solid rgba(212, 175, 55, 0.22);
-      border-top-color: #D4AF37;
-      animation: gg-spin 900ms linear infinite;
+    #gg-bar {
+      position: relative;
+      width: 216px;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(212, 175, 55, 0.18);
+      overflow: hidden;
     }
-    @keyframes gg-spin { to { transform: rotate(360deg); } }
+    #gg-fill {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 0;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #D4AF37, #FFD700);
+      transition: width 180ms ease-out;
+    }
+    /* Until the total size is known the bar sweeps instead of filling. */
+    #gg-bar.gg-indeterminate #gg-fill {
+      width: 40%;
+      animation: gg-sweep 1200ms ease-in-out infinite;
+    }
+    @keyframes gg-sweep {
+      0%   { transform: translateX(-110%); }
+      100% { transform: translateX(360%); }
+    }
+    #gg-label {
+      color: rgba(255, 255, 255, 0.55);
+      letter-spacing: 0.2px;
+      min-height: 16px;
+      font-variant-numeric: tabular-nums;
+    }
     @media (prefers-reduced-motion: reduce) {
-      #gg-splash .gg-ring { animation-duration: 2400ms; }
+      #gg-bar.gg-indeterminate #gg-fill { animation-duration: 3s; }
+      #gg-fill { transition: none; }
     }
   </style>
 </head>
 <body>
   <div id="gg-splash" role="status" aria-label="Loading GreenGo">
     <img src="icons/Icon-192.png" alt="">
-    <div class="gg-ring"></div>
+    <div id="gg-bar" class="gg-indeterminate"><div id="gg-fill"></div></div>
+    <div id="gg-label"></div>
   </div>
   <script>
+    {{flutter_js}}
+    {{flutter_build_config}}
+
     (function () {
       var splash = document.getElementById('gg-splash');
-      if (!splash) return;
+      var bar = document.getElementById('gg-bar');
+      var fill = document.getElementById('gg-fill');
+      var label = document.getElementById('gg-label');
       var torn = false;
+
+      // Pre-Flutter UI cannot reach the ARB bundle, so carry the two words it
+      // needs for the languages the app ships.
+      var COPY = {
+        en: ['Downloading', 'Starting'],
+        de: ['Wird geladen', 'Wird gestartet'],
+        es: ['Descargando', 'Iniciando'],
+        fr: ['Telechargement', 'Demarrage'],
+        it: ['Download in corso', 'Avvio'],
+        pt: ['A transferir', 'A iniciar']
+      };
+      var lang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+      var words = COPY[lang] || COPY.en;
+
+      function mb(bytes) { return (bytes / 1048576).toFixed(1); }
+
+      function setProgress(received, total) {
+        if (!label) return;
+        if (total > 0) {
+          if (bar) bar.classList.remove('gg-indeterminate');
+          var pct = Math.max(0, Math.min(100, received / total * 100));
+          if (fill) fill.style.width = pct.toFixed(1) + '%';
+          label.textContent =
+            words[0] + '  ' + mb(received) + ' / ' + mb(total) + ' MB';
+        } else {
+          label.textContent = words[0] + '  ' + mb(received) + ' MB';
+        }
+      }
+
+      // Download finished: hand the bar over to engine startup, which has no
+      // measurable progress of its own.
+      function finishProgress() {
+        if (bar) bar.classList.remove('gg-indeterminate');
+        if (fill) fill.style.width = '100%';
+        if (label) label.textContent = words[1] + '...';
+      }
+
       function teardown() {
         if (torn) return;
         torn = true;
+        if (!splash) return;
         splash.classList.add('gg-hide');
         setTimeout(function () {
           if (splash.parentNode) splash.parentNode.removeChild(splash);
         }, 400);
       }
+
+      // -- progress ---------------------------------------------------------
+      // Observational only: the engine loads main.dart.js through its own
+      // <script> tag, and Chrome serves both that and this fetch from a single
+      // network request (verified against a local server -- one GET per load).
+      // Reading the stream is the only way to get byte-level progress, since
+      // Firebase serves it Brotli-encoded with chunked transfer and therefore
+      // no Content-Length.
+      function trackProgress() {
+        if (!window.fetch || !window.ReadableStream) return;
+
+        // Stamped by tools/stamp_boot_size.py after `flutter build web`.
+        var total = 0; /*GG_BOOT_BYTES*/
+
+        fetch('main.dart.js')
+          .then(function (res) {
+            if (!res.ok || !res.body || !res.body.getReader) {
+              throw new Error('not streamable');
+            }
+            var reader = res.body.getReader();
+            var received = 0;
+            setProgress(0, total);
+            return (function pump() {
+              return reader.read().then(function (chunk) {
+                if (chunk.done) return;
+                received += chunk.value.length;
+                setProgress(received, total);
+                return pump();
+              });
+            })();
+          })
+          .catch(function () {
+            // Cosmetic only -- the engine loads the entrypoint regardless.
+          });
+      }
+
+      // -- boot -------------------------------------------------------------
+      trackProgress();
+
+      _flutter.loader.load({
+        onEntrypointLoaded: function (engineInitializer) {
+          finishProgress();
+          return engineInitializer.initializeEngine().then(function (appRunner) {
+            return appRunner.runApp();
+          }).then(function () {
+            // runApp() resolves once the first frame is scheduled; wait two
+            // frames so the engine has actually painted before we fade out,
+            // otherwise the splash gives way to a blank black screen.
+            requestAnimationFrame(function () {
+              requestAnimationFrame(function () { setTimeout(teardown, 80); });
+            });
+          });
+        }
+      });
+
+      // Belt and braces: this engine build does not reliably fire
+      // `flutter-first-frame`, but if it ever does, take it.
       window.addEventListener('flutter-first-frame', teardown);
-      // Safety net: never strand the user behind the splash if that event is
-      // missed (older engines, a failed boot, a blocked asset).
-      setTimeout(teardown, 15000);
+      // Absolute backstop: never strand anyone behind the splash.
+      setTimeout(teardown, 30000);
     })();
   </script>
-  <script src="flutter_bootstrap.js" async></script>
   <script>
     // Register our own service worker for PWA installability.
     //
