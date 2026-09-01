@@ -30,6 +30,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     if (!_formKey.currentState!.validate()) return;
     if (_isLoading) return;
 
+    // Captured before the first await so none of the copy below reads the
+    // BuildContext across an async gap.
+    final l10n = AppLocalizations.of(context)!;
+
     setState(() => _isLoading = true);
 
     try {
@@ -48,18 +52,20 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
-          title: const Row(
+          title: Row(
             children: [
-              Icon(Icons.check_circle, color: AppColors.successGreen, size: 28),
-              SizedBox(width: 12),
+              const Icon(Icons.check_circle,
+                  color: AppColors.successGreen, size: 28),
+              const SizedBox(width: 12),
               Text(
-                'Email Sent!',
-                style: TextStyle(color: AppColors.textPrimary, fontSize: 18),
+                l10n.resetEmailSentTitle,
+                style: const TextStyle(
+                    color: AppColors.textPrimary, fontSize: 18),
               ),
             ],
           ),
           content: Text(
-            'A password reset link has been sent to ${_emailController.text.trim()}.\n\nPlease check your inbox and spam folder.',
+            l10n.resetEmailSentBody(_emailController.text.trim()),
             style:
                 const TextStyle(color: AppColors.textSecondary, fontSize: 14),
           ),
@@ -85,14 +91,13 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       String message;
       switch (e.code) {
         case 'invalid-argument':
-          message = 'Invalid email address.';
+          message = l10n.resetErrorInvalidEmail;
           break;
         case 'unavailable':
-          message = 'Service temporarily unavailable. Please try again later.';
+          message = l10n.resetErrorUnavailable;
           break;
         default:
-          message =
-              e.message ?? 'Failed to send reset email. Please try again.';
+          message = l10n.resetErrorFailed;
       }
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -108,8 +113,8 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content:
-              Text('Error: $e', style: const TextStyle(color: Colors.white)),
+          content: Text(l10n.somethingWentWrong,
+              style: const TextStyle(color: Colors.white)),
           backgroundColor: AppColors.errorRed,
           behavior: SnackBarBehavior.floating,
           margin: const EdgeInsets.all(16),
@@ -183,7 +188,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
                         // Title
                         Text(
-                          'Reset Your Password',
+                          l10n.resetPasswordTitle,
                           style: Theme.of(context)
                               .textTheme
                               .displaySmall
@@ -197,7 +202,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
                         // Description
                         Text(
-                          'Enter your email address and we\'ll send you instructions to reset your password.',
+                          l10n.resetPasswordSubtitle,
                           style: Theme.of(context).textTheme.bodyLarge,
                           textAlign: TextAlign.center,
                         ),
@@ -220,7 +225,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
                         // Send Button
                         AuthButton(
-                          text: 'Send Reset Link',
+                          text: l10n.sendResetLink,
                           onPressed: _isLoading ? null : _handleResetPassword,
                           isLoading: _isLoading,
                           icon: Icons.send,
@@ -235,9 +240,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                               : () {
                                   Navigator.of(context).pop();
                                 },
-                          child: const Text(
-                            'Back to Login',
-                            style: TextStyle(
+                          child: Text(
+                            l10n.backToLogin,
+                            style: const TextStyle(
                               color: AppColors.richGold,
                               fontWeight: FontWeight.w600,
                             ),
@@ -267,7 +272,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                               const SizedBox(width: 12),
                               Expanded(
                                 child: Text(
-                                  'The reset link will expire in 1 hour for security reasons.',
+                                  l10n.resetLinkExpiryNote,
                                   style: Theme.of(context).textTheme.bodySmall,
                                 ),
                               ),

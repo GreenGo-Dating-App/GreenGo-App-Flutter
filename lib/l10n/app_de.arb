@@ -4642,5 +4642,15 @@
   "languageNameFinnish": "Finnisch",
   "languageNamePolish": "Polnisch",
   "languageNameTurkish": "Türkisch",
-  "languageNameGreek": "Griechisch"
+  "languageNameGreek": "Griechisch",
+  "resetPasswordTitle": "Passwort zurücksetzen",
+  "resetPasswordSubtitle": "Gib deine E-Mail-Adresse ein und wir senden dir eine Anleitung zum Zurücksetzen deines Passworts.",
+  "sendResetLink": "Link zum Zurücksetzen senden",
+  "backToLogin": "Zurück zur Anmeldung",
+  "resetLinkExpiryNote": "Der Link zum Zurücksetzen läuft aus Sicherheitsgründen nach 1 Stunde ab.",
+  "resetEmailSentTitle": "E-Mail gesendet!",
+  "resetEmailSentBody": "Ein Link zum Zurücksetzen des Passworts wurde an {email} gesendet.\n\nBitte überprüfe deinen Posteingang und den Spam-Ordner.",
+  "resetErrorInvalidEmail": "Ungültige E-Mail-Adresse.",
+  "resetErrorUnavailable": "Dienst vorübergehend nicht verfügbar. Bitte versuche es später erneut.",
+  "resetErrorFailed": "Die E-Mail zum Zurücksetzen konnte nicht gesendet werden. Bitte versuche es erneut."
 }

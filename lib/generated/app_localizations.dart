@@ -24485,6 +24485,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Greek'**
   String get languageNameGreek;
+
+  /// No description provided for @resetPasswordTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Your Password'**
+  String get resetPasswordTitle;
+
+  /// No description provided for @resetPasswordSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email address and we\'ll send you instructions to reset your password.'**
+  String get resetPasswordSubtitle;
+
+  /// No description provided for @sendResetLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Reset Link'**
+  String get sendResetLink;
+
+  /// No description provided for @backToLogin.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Login'**
+  String get backToLogin;
+
+  /// No description provided for @resetLinkExpiryNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The reset link will expire in 1 hour for security reasons.'**
+  String get resetLinkExpiryNote;
+
+  /// No description provided for @resetEmailSentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Email Sent!'**
+  String get resetEmailSentTitle;
+
+  /// No description provided for @resetEmailSentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'A password reset link has been sent to {email}.\n\nPlease check your inbox and spam folder.'**
+  String resetEmailSentBody(String email);
+
+  /// No description provided for @resetErrorInvalidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid email address.'**
+  String get resetErrorInvalidEmail;
+
+  /// No description provided for @resetErrorUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Service temporarily unavailable. Please try again later.'**
+  String get resetErrorUnavailable;
+
+  /// No description provided for @resetErrorFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send reset email. Please try again.'**
+  String get resetErrorFailed;
 }
 
 class _AppLocalizationsDelegate

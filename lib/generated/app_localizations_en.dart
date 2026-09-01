@@ -13730,4 +13730,40 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get languageNameGreek => 'Greek';
+
+  @override
+  String get resetPasswordTitle => 'Reset Your Password';
+
+  @override
+  String get resetPasswordSubtitle =>
+      'Enter your email address and we\'ll send you instructions to reset your password.';
+
+  @override
+  String get sendResetLink => 'Send Reset Link';
+
+  @override
+  String get backToLogin => 'Back to Login';
+
+  @override
+  String get resetLinkExpiryNote =>
+      'The reset link will expire in 1 hour for security reasons.';
+
+  @override
+  String get resetEmailSentTitle => 'Email Sent!';
+
+  @override
+  String resetEmailSentBody(String email) {
+    return 'A password reset link has been sent to $email.\n\nPlease check your inbox and spam folder.';
+  }
+
+  @override
+  String get resetErrorInvalidEmail => 'Invalid email address.';
+
+  @override
+  String get resetErrorUnavailable =>
+      'Service temporarily unavailable. Please try again later.';
+
+  @override
+  String get resetErrorFailed =>
+      'Failed to send reset email. Please try again.';
 }

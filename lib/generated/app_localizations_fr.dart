@@ -13953,4 +13953,40 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get languageNameGreek => 'Grec';
+
+  @override
+  String get resetPasswordTitle => 'Réinitialisez votre mot de passe';
+
+  @override
+  String get resetPasswordSubtitle =>
+      'Saisissez votre adresse e-mail et nous vous enverrons les instructions pour réinitialiser votre mot de passe.';
+
+  @override
+  String get sendResetLink => 'Envoyer le lien de réinitialisation';
+
+  @override
+  String get backToLogin => 'Retour à la connexion';
+
+  @override
+  String get resetLinkExpiryNote =>
+      'Pour des raisons de sécurité, le lien de réinitialisation expirera dans 1 heure.';
+
+  @override
+  String get resetEmailSentTitle => 'E-mail envoyé !';
+
+  @override
+  String resetEmailSentBody(String email) {
+    return 'Un lien de réinitialisation du mot de passe a été envoyé à $email.\n\nVeuillez vérifier votre boîte de réception et vos spams.';
+  }
+
+  @override
+  String get resetErrorInvalidEmail => 'Adresse e-mail invalide.';
+
+  @override
+  String get resetErrorUnavailable =>
+      'Service temporairement indisponible. Veuillez réessayer plus tard.';
+
+  @override
+  String get resetErrorFailed =>
+      'Échec de l\'envoi de l\'e-mail de réinitialisation. Veuillez réessayer.';
 }

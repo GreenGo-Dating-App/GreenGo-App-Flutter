@@ -4642,5 +4642,15 @@
   "languageNameFinnish": "Finlandese",
   "languageNamePolish": "Polacco",
   "languageNameTurkish": "Turco",
-  "languageNameGreek": "Greco"
+  "languageNameGreek": "Greco",
+  "resetPasswordTitle": "Reimposta la tua password",
+  "resetPasswordSubtitle": "Inserisci il tuo indirizzo email e ti invieremo le istruzioni per reimpostare la password.",
+  "sendResetLink": "Invia link di reimpostazione",
+  "backToLogin": "Torna al login",
+  "resetLinkExpiryNote": "Per motivi di sicurezza, il link di reimpostazione scadrà tra 1 ora.",
+  "resetEmailSentTitle": "Email inviata!",
+  "resetEmailSentBody": "Un link per reimpostare la password è stato inviato a {email}.\n\nControlla la posta in arrivo e la cartella spam.",
+  "resetErrorInvalidEmail": "Indirizzo email non valido.",
+  "resetErrorUnavailable": "Servizio temporaneamente non disponibile. Riprova più tardi.",
+  "resetErrorFailed": "Impossibile inviare l'email di reimpostazione. Riprova."
 }

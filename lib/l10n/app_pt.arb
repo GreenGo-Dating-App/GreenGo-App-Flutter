@@ -4642,5 +4642,15 @@
   "languageNameFinnish": "Finlandês",
   "languageNamePolish": "Polaco",
   "languageNameTurkish": "Turco",
-  "languageNameGreek": "Grego"
+  "languageNameGreek": "Grego",
+  "resetPasswordTitle": "Redefinir a sua palavra-passe",
+  "resetPasswordSubtitle": "Introduza o seu endereço de e-mail e enviaremos instruções para redefinir a sua palavra-passe.",
+  "sendResetLink": "Enviar link de redefinição",
+  "backToLogin": "Voltar ao início de sessão",
+  "resetLinkExpiryNote": "Por motivos de segurança, o link de redefinição expira dentro de 1 hora.",
+  "resetEmailSentTitle": "E-mail enviado!",
+  "resetEmailSentBody": "Foi enviado um link de redefinição de palavra-passe para {email}.\n\nVerifique a sua caixa de entrada e a pasta de spam.",
+  "resetErrorInvalidEmail": "Endereço de e-mail inválido.",
+  "resetErrorUnavailable": "Serviço temporariamente indisponível. Tente novamente mais tarde.",
+  "resetErrorFailed": "Não foi possível enviar o e-mail de redefinição. Tente novamente."
 }

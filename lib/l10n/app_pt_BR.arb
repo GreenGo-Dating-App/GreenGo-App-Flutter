@@ -4642,5 +4642,15 @@
   "languageNameFinnish": "Finlandês",
   "languageNamePolish": "Polonês",
   "languageNameTurkish": "Turco",
-  "languageNameGreek": "Grego"
+  "languageNameGreek": "Grego",
+  "resetPasswordTitle": "Redefinir sua senha",
+  "resetPasswordSubtitle": "Digite seu endereço de e-mail e enviaremos instruções para redefinir sua senha.",
+  "sendResetLink": "Enviar link de redefinição",
+  "backToLogin": "Voltar ao login",
+  "resetLinkExpiryNote": "Por motivos de segurança, o link de redefinição expira em 1 hora.",
+  "resetEmailSentTitle": "E-mail enviado!",
+  "resetEmailSentBody": "Enviamos um link de redefinição de senha para {email}.\n\nVerifique sua caixa de entrada e a pasta de spam.",
+  "resetErrorInvalidEmail": "Endereço de e-mail inválido.",
+  "resetErrorUnavailable": "Serviço temporariamente indisponível. Tente novamente mais tarde.",
+  "resetErrorFailed": "Não foi possível enviar o e-mail de redefinição. Tente novamente."
 }
