@@ -13889,4 +13889,40 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get languageNameGreek => 'Greco';
+
+  @override
+  String get resetPasswordTitle => 'Reimposta la tua password';
+
+  @override
+  String get resetPasswordSubtitle =>
+      'Inserisci il tuo indirizzo email e ti invieremo le istruzioni per reimpostare la password.';
+
+  @override
+  String get sendResetLink => 'Invia link di reimpostazione';
+
+  @override
+  String get backToLogin => 'Torna al login';
+
+  @override
+  String get resetLinkExpiryNote =>
+      'Per motivi di sicurezza, il link di reimpostazione scadrà tra 1 ora.';
+
+  @override
+  String get resetEmailSentTitle => 'Email inviata!';
+
+  @override
+  String resetEmailSentBody(String email) {
+    return 'Un link per reimpostare la password è stato inviato a $email.\n\nControlla la posta in arrivo e la cartella spam.';
+  }
+
+  @override
+  String get resetErrorInvalidEmail => 'Indirizzo email non valido.';
+
+  @override
+  String get resetErrorUnavailable =>
+      'Servizio temporaneamente non disponibile. Riprova più tardi.';
+
+  @override
+  String get resetErrorFailed =>
+      'Impossibile inviare l\'email di reimpostazione. Riprova.';
 }

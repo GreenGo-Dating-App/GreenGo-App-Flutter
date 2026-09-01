@@ -13910,4 +13910,40 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get languageNameGreek => 'Griechisch';
+
+  @override
+  String get resetPasswordTitle => 'Passwort zurücksetzen';
+
+  @override
+  String get resetPasswordSubtitle =>
+      'Gib deine E-Mail-Adresse ein und wir senden dir eine Anleitung zum Zurücksetzen deines Passworts.';
+
+  @override
+  String get sendResetLink => 'Link zum Zurücksetzen senden';
+
+  @override
+  String get backToLogin => 'Zurück zur Anmeldung';
+
+  @override
+  String get resetLinkExpiryNote =>
+      'Der Link zum Zurücksetzen läuft aus Sicherheitsgründen nach 1 Stunde ab.';
+
+  @override
+  String get resetEmailSentTitle => 'E-Mail gesendet!';
+
+  @override
+  String resetEmailSentBody(String email) {
+    return 'Ein Link zum Zurücksetzen des Passworts wurde an $email gesendet.\n\nBitte überprüfe deinen Posteingang und den Spam-Ordner.';
+  }
+
+  @override
+  String get resetErrorInvalidEmail => 'Ungültige E-Mail-Adresse.';
+
+  @override
+  String get resetErrorUnavailable =>
+      'Dienst vorübergehend nicht verfügbar. Bitte versuche es später erneut.';
+
+  @override
+  String get resetErrorFailed =>
+      'Die E-Mail zum Zurücksetzen konnte nicht gesendet werden. Bitte versuche es erneut.';
 }

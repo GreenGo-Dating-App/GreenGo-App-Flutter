@@ -4642,5 +4642,15 @@
   "languageNameFinnish": "Finés",
   "languageNamePolish": "Polaco",
   "languageNameTurkish": "Turco",
-  "languageNameGreek": "Griego"
+  "languageNameGreek": "Griego",
+  "resetPasswordTitle": "Restablece tu contraseña",
+  "resetPasswordSubtitle": "Introduce tu dirección de correo electrónico y te enviaremos instrucciones para restablecer tu contraseña.",
+  "sendResetLink": "Enviar enlace de restablecimiento",
+  "backToLogin": "Volver al inicio de sesión",
+  "resetLinkExpiryNote": "Por motivos de seguridad, el enlace de restablecimiento caducará en 1 hora.",
+  "resetEmailSentTitle": "¡Correo enviado!",
+  "resetEmailSentBody": "Se ha enviado un enlace para restablecer la contraseña a {email}.\n\nRevisa tu bandeja de entrada y la carpeta de spam.",
+  "resetErrorInvalidEmail": "Dirección de correo electrónico no válida.",
+  "resetErrorUnavailable": "Servicio temporalmente no disponible. Inténtalo más tarde.",
+  "resetErrorFailed": "No se pudo enviar el correo de restablecimiento. Inténtalo de nuevo."
 }

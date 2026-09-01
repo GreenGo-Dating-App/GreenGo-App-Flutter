@@ -13894,4 +13894,41 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get languageNameGreek => 'Griego';
+
+  @override
+  String get resetPasswordTitle => 'Restablece tu contraseña';
+
+  @override
+  String get resetPasswordSubtitle =>
+      'Introduce tu dirección de correo electrónico y te enviaremos instrucciones para restablecer tu contraseña.';
+
+  @override
+  String get sendResetLink => 'Enviar enlace de restablecimiento';
+
+  @override
+  String get backToLogin => 'Volver al inicio de sesión';
+
+  @override
+  String get resetLinkExpiryNote =>
+      'Por motivos de seguridad, el enlace de restablecimiento caducará en 1 hora.';
+
+  @override
+  String get resetEmailSentTitle => '¡Correo enviado!';
+
+  @override
+  String resetEmailSentBody(String email) {
+    return 'Se ha enviado un enlace para restablecer la contraseña a $email.\n\nRevisa tu bandeja de entrada y la carpeta de spam.';
+  }
+
+  @override
+  String get resetErrorInvalidEmail =>
+      'Dirección de correo electrónico no válida.';
+
+  @override
+  String get resetErrorUnavailable =>
+      'Servicio temporalmente no disponible. Inténtalo más tarde.';
+
+  @override
+  String get resetErrorFailed =>
+      'No se pudo enviar el correo de restablecimiento. Inténtalo de nuevo.';
 }

@@ -4061,5 +4061,15 @@
   "languageNameFinnish": "Finnois",
   "languageNamePolish": "Polonais",
   "languageNameTurkish": "Turc",
-  "languageNameGreek": "Grec"
+  "languageNameGreek": "Grec",
+  "resetPasswordTitle": "Réinitialisez votre mot de passe",
+  "resetPasswordSubtitle": "Saisissez votre adresse e-mail et nous vous enverrons les instructions pour réinitialiser votre mot de passe.",
+  "sendResetLink": "Envoyer le lien de réinitialisation",
+  "backToLogin": "Retour à la connexion",
+  "resetLinkExpiryNote": "Pour des raisons de sécurité, le lien de réinitialisation expirera dans 1 heure.",
+  "resetEmailSentTitle": "E-mail envoyé !",
+  "resetEmailSentBody": "Un lien de réinitialisation du mot de passe a été envoyé à {email}.\n\nVeuillez vérifier votre boîte de réception et vos spams.",
+  "resetErrorInvalidEmail": "Adresse e-mail invalide.",
+  "resetErrorUnavailable": "Service temporairement indisponible. Veuillez réessayer plus tard.",
+  "resetErrorFailed": "Échec de l'envoi de l'e-mail de réinitialisation. Veuillez réessayer."
 }

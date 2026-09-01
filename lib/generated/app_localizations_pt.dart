@@ -13866,6 +13866,42 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get languageNameGreek => 'Grego';
+
+  @override
+  String get resetPasswordTitle => 'Redefinir a sua palavra-passe';
+
+  @override
+  String get resetPasswordSubtitle =>
+      'Introduza o seu endereço de e-mail e enviaremos instruções para redefinir a sua palavra-passe.';
+
+  @override
+  String get sendResetLink => 'Enviar link de redefinição';
+
+  @override
+  String get backToLogin => 'Voltar ao início de sessão';
+
+  @override
+  String get resetLinkExpiryNote =>
+      'Por motivos de segurança, o link de redefinição expira dentro de 1 hora.';
+
+  @override
+  String get resetEmailSentTitle => 'E-mail enviado!';
+
+  @override
+  String resetEmailSentBody(String email) {
+    return 'Foi enviado um link de redefinição de palavra-passe para $email.\n\nVerifique a sua caixa de entrada e a pasta de spam.';
+  }
+
+  @override
+  String get resetErrorInvalidEmail => 'Endereço de e-mail inválido.';
+
+  @override
+  String get resetErrorUnavailable =>
+      'Serviço temporariamente indisponível. Tente novamente mais tarde.';
+
+  @override
+  String get resetErrorFailed =>
+      'Não foi possível enviar o e-mail de redefinição. Tente novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -27707,4 +27743,40 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get languageNameGreek => 'Grego';
+
+  @override
+  String get resetPasswordTitle => 'Redefinir sua senha';
+
+  @override
+  String get resetPasswordSubtitle =>
+      'Digite seu endereço de e-mail e enviaremos instruções para redefinir sua senha.';
+
+  @override
+  String get sendResetLink => 'Enviar link de redefinição';
+
+  @override
+  String get backToLogin => 'Voltar ao login';
+
+  @override
+  String get resetLinkExpiryNote =>
+      'Por motivos de segurança, o link de redefinição expira em 1 hora.';
+
+  @override
+  String get resetEmailSentTitle => 'E-mail enviado!';
+
+  @override
+  String resetEmailSentBody(String email) {
+    return 'Enviamos um link de redefinição de senha para $email.\n\nVerifique sua caixa de entrada e a pasta de spam.';
+  }
+
+  @override
+  String get resetErrorInvalidEmail => 'Endereço de e-mail inválido.';
+
+  @override
+  String get resetErrorUnavailable =>
+      'Serviço temporariamente indisponível. Tente novamente mais tarde.';
+
+  @override
+  String get resetErrorFailed =>
+      'Não foi possível enviar o e-mail de redefinição. Tente novamente.';
 }

@@ -6523,5 +6523,22 @@
   "languageNameFinnish": "Finnish",
   "languageNamePolish": "Polish",
   "languageNameTurkish": "Turkish",
-  "languageNameGreek": "Greek"
+  "languageNameGreek": "Greek",
+  "resetPasswordTitle": "Reset Your Password",
+  "resetPasswordSubtitle": "Enter your email address and we'll send you instructions to reset your password.",
+  "sendResetLink": "Send Reset Link",
+  "backToLogin": "Back to Login",
+  "resetLinkExpiryNote": "The reset link will expire in 1 hour for security reasons.",
+  "resetEmailSentTitle": "Email Sent!",
+  "resetEmailSentBody": "A password reset link has been sent to {email}.\n\nPlease check your inbox and spam folder.",
+  "@resetEmailSentBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "resetErrorInvalidEmail": "Invalid email address.",
+  "resetErrorUnavailable": "Service temporarily unavailable. Please try again later.",
+  "resetErrorFailed": "Failed to send reset email. Please try again."
 }
