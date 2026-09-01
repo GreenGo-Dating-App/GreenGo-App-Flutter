@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../../domain/entities/social_links.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -82,9 +83,11 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
           return const SizedBox.shrink();
         }
 
+        final l10n = AppLocalizations.of(context)!;
+
         return LuxuryOnboardingLayout(
-          title: 'Social profiles',
-          subtitle: 'Connect your social accounts (optional)',
+          title: l10n.socialProfiles,
+          subtitle: l10n.socialLinksSubtitle,
           onBack: () => context
               .read<OnboardingBloc>()
               .add(const OnboardingPreviousStep()),
@@ -96,12 +99,12 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               LuxuryButton(
-                text: 'Continue',
+                text: l10n.onboardingContinue,
                 onPressed: _saveAndContinue,
               ),
               const SizedBox(height: 8),
               LuxuryButton(
-                text: 'Skip',
+                text: l10n.skip,
                 onPressed: _skip,
                 isSecondary: true,
               ),
@@ -117,35 +120,35 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
                 _buildSocialInput(
                   controller: _facebookController,
                   label: 'Facebook',
-                  hint: 'Username or profile URL',
+                  hint: l10n.socialHintUsernameOrUrl,
                   icon: Icons.facebook,
                   color: const Color(0xFF1877F2),
                 ),
                 _buildSocialInput(
                   controller: _instagramController,
                   label: 'Instagram',
-                  hint: 'Username (without @)',
+                  hint: l10n.socialHintUsernameNoAt,
                   icon: Icons.camera_alt,
                   color: const Color(0xFFE4405F),
                 ),
                 _buildSocialInput(
                   controller: _tiktokController,
                   label: 'TikTok',
-                  hint: 'Username (without @)',
+                  hint: l10n.socialHintUsernameNoAt,
                   icon: Icons.music_note,
                   color: Colors.white,
                 ),
                 _buildSocialInput(
                   controller: _linkedinController,
                   label: 'LinkedIn',
-                  hint: 'Username or profile URL',
+                  hint: l10n.socialHintUsernameOrUrl,
                   icon: Icons.work,
                   color: const Color(0xFF0A66C2),
                 ),
                 _buildSocialInput(
                   controller: _xController,
                   label: 'X (Twitter)',
-                  hint: 'Username (without @)',
+                  hint: l10n.socialHintUsernameNoAt,
                   icon: Icons.alternate_email,
                   color: Colors.white,
                 ),
@@ -166,7 +169,7 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
                       const SizedBox(width: 12),
                       Expanded(
                         child: Text(
-                          'Your social profiles will be visible on your dating profile',
+                          l10n.socialLinksVisibilityNote,
                           style:
                               Theme.of(context).textTheme.bodySmall?.copyWith(
                                     color: Colors.white.withOpacity(0.7),

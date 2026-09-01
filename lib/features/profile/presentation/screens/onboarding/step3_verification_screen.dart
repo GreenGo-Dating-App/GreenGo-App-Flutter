@@ -157,25 +157,26 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
         verificationFailed: (FirebaseAuthException e) {
           debugPrint('Phone verification failed: ${e.code} - ${e.message}');
           if (mounted) {
+            final l10n = AppLocalizations.of(context);
             String errorMsg;
             switch (e.code) {
               case 'invalid-phone-number':
-                errorMsg = 'Invalid phone number format. Please use international format (e.g. +1234567890).';
+                errorMsg = l10n?.phoneErrorInvalidNumber ?? 'Invalid phone number format. Please use international format (e.g. +1234567890).';
                 break;
               case 'too-many-requests':
-                errorMsg = 'Too many attempts. Please wait a few minutes before trying again.';
+                errorMsg = l10n?.phoneErrorTooManyRequests ?? 'Too many attempts. Please wait a few minutes before trying again.';
                 break;
               case 'quota-exceeded':
-                errorMsg = 'SMS quota exceeded. Please try again later.';
+                errorMsg = l10n?.phoneErrorQuotaExceeded ?? 'SMS quota exceeded. Please try again later.';
                 break;
               case 'captcha-check-failed':
-                errorMsg = 'reCAPTCHA verification failed. Please try again.';
+                errorMsg = l10n?.phoneErrorCaptchaFailed ?? 'reCAPTCHA verification failed. Please try again.';
                 break;
               case 'missing-phone-number':
-                errorMsg = 'Please enter a phone number.';
+                errorMsg = l10n?.phoneErrorMissingNumber ?? 'Please enter a phone number.';
                 break;
               default:
-                errorMsg = 'Phone verification error (${e.code}): ${e.message ?? 'Please try again.'}';
+                errorMsg = l10n?.phoneErrorGeneric(e.code) ?? 'Phone verification error (${e.code}). Please try again.';
             }
             setState(() {
               _isVerifyingPhone = false;
@@ -205,7 +206,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
       if (mounted) {
         setState(() {
           _isVerifyingPhone = false;
-          _phoneError = 'Phone verification error: ${e.toString()}';
+          _phoneError = AppLocalizations.of(context)?.phoneErrorUnexpected ?? 'Phone verification error. Please try again.';
         });
       }
     }
@@ -258,7 +259,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
         if (e.code == 'invalid-verification-code') {
           errorMsg = AppLocalizations.of(context)?.verificationInvalidCode ?? 'Invalid code. Please check and try again.';
         } else if (e.code == 'credential-already-in-use') {
-          errorMsg = 'This phone number is already linked to another account.';
+          errorMsg = AppLocalizations.of(context)?.phoneErrorAlreadyLinked ?? 'This phone number is already linked to another account.';
         } else {
           errorMsg = AppLocalizations.of(context)?.verificationPhoneError ?? 'Failed to verify phone number. Please try again.';
         }

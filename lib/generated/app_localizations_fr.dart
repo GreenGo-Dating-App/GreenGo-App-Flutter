@@ -13689,4 +13689,268 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get attendeesProfileFailed => 'Impossible d ouvrir ce profil';
+
+  @override
+  String get quizTitle => 'Test de personnalité';
+
+  @override
+  String get quizSubtitle => 'Aidez-nous à comprendre votre personnalité';
+
+  @override
+  String quizQuestionProgress(int current, int total) {
+    return 'Question $current sur $total';
+  }
+
+  @override
+  String get quizQuestionOpenness =>
+      'J\'aime essayer des activités nouvelles et passionnantes';
+
+  @override
+  String get quizQuestionConscientiousness =>
+      'Je préfère avoir une routine structurée et organisée';
+
+  @override
+  String get quizQuestionExtraversion =>
+      'Je me sens plein d\'énergie lorsque je socialise avec les autres';
+
+  @override
+  String get quizQuestionAgreeableness =>
+      'J\'essaie d\'être coopératif et d\'éviter les conflits';
+
+  @override
+  String get quizQuestionNeuroticism => 'Je me sens souvent anxieux ou inquiet';
+
+  @override
+  String get quizAnswerStronglyDisagree => 'Pas du tout d\'accord';
+
+  @override
+  String get quizAnswerDisagree => 'Pas d\'accord';
+
+  @override
+  String get quizAnswerNeutral => 'Neutre';
+
+  @override
+  String get quizAnswerAgree => 'D\'accord';
+
+  @override
+  String get quizAnswerStronglyAgree => 'Tout à fait d\'accord';
+
+  @override
+  String get quizBigFiveNote =>
+      'Basé sur le modèle des cinq grands traits de personnalité';
+
+  @override
+  String get profilePreviewTitle => 'Aperçu du profil';
+
+  @override
+  String get profilePreviewSubtitle =>
+      'Vérifiez votre profil avant de terminer';
+
+  @override
+  String get profilePreviewCompleteButton => 'Terminer le profil';
+
+  @override
+  String get profileFieldName => 'Nom';
+
+  @override
+  String get profileFieldAge => 'Âge';
+
+  @override
+  String profileAgeYearsOld(int age) {
+    return '$age ans';
+  }
+
+  @override
+  String get profileFieldStatus => 'Statut';
+
+  @override
+  String get profileNoBio => 'Aucune biographie fournie';
+
+  @override
+  String get profileCompleteBadgeTitle => 'Profil complet !';
+
+  @override
+  String get profileCompleteBadgeSubtitle =>
+      'Votre profil est prêt à être publié';
+
+  @override
+  String get personalityTraitsTitle => 'Traits de personnalité';
+
+  @override
+  String get traitOpenness => 'Ouverture';
+
+  @override
+  String get traitConscientiousness => 'Conscience';
+
+  @override
+  String get traitExtraversion => 'Extraversion';
+
+  @override
+  String get traitAgreeableness => 'Agréabilité';
+
+  @override
+  String get traitNeuroticism => 'Névrosisme';
+
+  @override
+  String get socialLinksSubtitle =>
+      'Connectez vos comptes sociaux (facultatif)';
+
+  @override
+  String get socialHintUsernameNoAt => 'Nom d\'utilisateur (sans @)';
+
+  @override
+  String get socialLinksVisibilityNote =>
+      'Vos profils sociaux seront visibles sur votre profil public';
+
+  @override
+  String get travelPrefTitle => 'Comment souhaitez-vous utiliser GreenGo ?';
+
+  @override
+  String get travelPrefSubtitle =>
+      'Parlez-nous de vos centres d\'intérêt afin que nous puissions personnaliser votre expérience.';
+
+  @override
+  String get travelPrefLearnTravelTitle => 'Apprendre et voyager';
+
+  @override
+  String get travelPrefLearnTravelDesc =>
+      'Apprendre des langues et rencontrer des gens lorsque je voyage vers de nouveaux endroits';
+
+  @override
+  String get travelPrefLocalGuideTitle => 'Guide local';
+
+  @override
+  String get travelPrefLocalGuideDesc =>
+      'Aider les voyageurs à découvrir ma ville et partager ma culture avec eux';
+
+  @override
+  String get travelPrefBothTitle => 'Les deux';
+
+  @override
+  String get travelPrefBothDesc =>
+      'Je veux apprendre des langues, voyager dans le monde et aider les visiteurs dans ma ville';
+
+  @override
+  String get travelPrefChangeLater =>
+      'Vous pouvez modifier cela à tout moment dans les paramètres de votre profil.';
+
+  @override
+  String get locationErrorPermissionDenied =>
+      'L\'autorisation de localisation a été refusée. Veuillez l\'accorder dans les paramètres.';
+
+  @override
+  String get locationErrorServicesDisabled =>
+      'Les services de localisation sont désactivés. Veuillez les activer dans les paramètres.';
+
+  @override
+  String get locationErrorUnableToGet =>
+      'Impossible d\'obtenir votre position. Vérifiez les paramètres de votre appareil ou réessayez plus tard.';
+
+  @override
+  String get locationErrorCheckInternet =>
+      'Veuillez vérifier votre connexion Internet et réessayer.';
+
+  @override
+  String get locationErrorPermissionRequired =>
+      'L\'autorisation de localisation est requise. Veuillez l\'accorder dans les paramètres.';
+
+  @override
+  String get locationErrorTookTooLong =>
+      'L\'obtention de votre position a pris trop de temps. Veuillez réessayer.';
+
+  @override
+  String get phoneErrorInvalidNumber =>
+      'Format de numéro de téléphone invalide. Utilisez le format international (par ex. +1234567890).';
+
+  @override
+  String get phoneErrorTooManyRequests =>
+      'Trop de tentatives. Veuillez patienter quelques minutes avant de réessayer.';
+
+  @override
+  String get phoneErrorQuotaExceeded =>
+      'Quota de SMS dépassé. Veuillez réessayer plus tard.';
+
+  @override
+  String get phoneErrorCaptchaFailed =>
+      'La vérification reCAPTCHA a échoué. Veuillez réessayer.';
+
+  @override
+  String get phoneErrorMissingNumber =>
+      'Veuillez saisir un numéro de téléphone.';
+
+  @override
+  String phoneErrorGeneric(String code) {
+    return 'Erreur de vérification du téléphone ($code). Veuillez réessayer.';
+  }
+
+  @override
+  String get phoneErrorUnexpected =>
+      'Erreur de vérification du téléphone. Veuillez réessayer.';
+
+  @override
+  String get phoneErrorAlreadyLinked =>
+      'Ce numéro de téléphone est déjà lié à un autre compte.';
+
+  @override
+  String get languageNameEnglish => 'Anglais';
+
+  @override
+  String get languageNameSpanish => 'Espagnol';
+
+  @override
+  String get languageNameFrench => 'Français';
+
+  @override
+  String get languageNameGerman => 'Allemand';
+
+  @override
+  String get languageNameItalian => 'Italien';
+
+  @override
+  String get languageNamePortuguese => 'Portugais';
+
+  @override
+  String get languageNamePortugueseBrazil => 'Portugais (Brésil)';
+
+  @override
+  String get languageNameRussian => 'Russe';
+
+  @override
+  String get languageNameChinese => 'Chinois';
+
+  @override
+  String get languageNameJapanese => 'Japonais';
+
+  @override
+  String get languageNameKorean => 'Coréen';
+
+  @override
+  String get languageNameArabic => 'Arabe';
+
+  @override
+  String get languageNameHindi => 'Hindi';
+
+  @override
+  String get languageNameDutch => 'Néerlandais';
+
+  @override
+  String get languageNameSwedish => 'Suédois';
+
+  @override
+  String get languageNameNorwegian => 'Norvégien';
+
+  @override
+  String get languageNameDanish => 'Danois';
+
+  @override
+  String get languageNameFinnish => 'Finnois';
+
+  @override
+  String get languageNamePolish => 'Polonais';
+
+  @override
+  String get languageNameTurkish => 'Turc';
+
+  @override
+  String get languageNameGreek => 'Grec';
 }
