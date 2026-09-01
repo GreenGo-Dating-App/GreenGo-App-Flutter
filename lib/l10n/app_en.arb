@@ -6422,5 +6422,106 @@
   },
   "attendeesOrganizer": "Organizer",
   "attendeesLoadFailed": "Could not load attendees",
-  "attendeesProfileFailed": "Could not open this profile"
+  "attendeesProfileFailed": "Could not open this profile",
+  "quizTitle": "Personality quiz",
+  "quizSubtitle": "Help us understand your personality",
+  "quizQuestionProgress": "Question {current} of {total}",
+  "@quizQuestionProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizQuestionOpenness": "I enjoy trying new and exciting activities",
+  "quizQuestionConscientiousness": "I prefer to have a structured and organized routine",
+  "quizQuestionExtraversion": "I feel energized when socializing with others",
+  "quizQuestionAgreeableness": "I try to be cooperative and avoid conflicts",
+  "quizQuestionNeuroticism": "I often feel anxious or worried about things",
+  "quizAnswerStronglyDisagree": "Strongly Disagree",
+  "quizAnswerDisagree": "Disagree",
+  "quizAnswerNeutral": "Neutral",
+  "quizAnswerAgree": "Agree",
+  "quizAnswerStronglyAgree": "Strongly Agree",
+  "quizBigFiveNote": "Based on the Big Five personality traits model",
+  "profilePreviewTitle": "Profile preview",
+  "profilePreviewSubtitle": "Review your profile before completing",
+  "profilePreviewCompleteButton": "Complete Profile",
+  "profileFieldName": "Name",
+  "profileFieldAge": "Age",
+  "profileAgeYearsOld": "{age} years old",
+  "@profileAgeYearsOld": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "profileFieldStatus": "Status",
+  "profileNoBio": "No bio provided",
+  "profileCompleteBadgeTitle": "Profile Complete!",
+  "profileCompleteBadgeSubtitle": "Your profile is ready to be published",
+  "personalityTraitsTitle": "Personality Traits",
+  "traitOpenness": "Openness",
+  "traitConscientiousness": "Conscientiousness",
+  "traitExtraversion": "Extraversion",
+  "traitAgreeableness": "Agreeableness",
+  "traitNeuroticism": "Neuroticism",
+  "socialLinksSubtitle": "Connect your social accounts (optional)",
+  "socialHintUsernameNoAt": "Username (without @)",
+  "socialLinksVisibilityNote": "Your social profiles will be visible on your public profile",
+  "travelPrefTitle": "How do you want to use GreenGo?",
+  "travelPrefSubtitle": "Tell us about your interests so we can personalize your experience.",
+  "travelPrefLearnTravelTitle": "Learn & Travel",
+  "travelPrefLearnTravelDesc": "Learn languages and meet people when I travel to new places",
+  "travelPrefLocalGuideTitle": "Local Guide",
+  "travelPrefLocalGuideDesc": "Help travelers discover my city and share my culture with them",
+  "travelPrefBothTitle": "Both",
+  "travelPrefBothDesc": "I want to learn languages, travel the world, and help visitors in my city",
+  "travelPrefChangeLater": "You can change this anytime in your profile settings.",
+  "locationErrorPermissionDenied": "Location permission was denied. Please grant permission in settings.",
+  "locationErrorServicesDisabled": "Location services are disabled. Please enable them in settings.",
+  "locationErrorUnableToGet": "Unable to get your location. Please check your device settings or try again later.",
+  "locationErrorCheckInternet": "Please check your internet connection and try again.",
+  "locationErrorPermissionRequired": "Location permission is required. Please grant permission in settings.",
+  "locationErrorTookTooLong": "Getting your location took too long. Please try again.",
+  "phoneErrorInvalidNumber": "Invalid phone number format. Please use international format (e.g. +1234567890).",
+  "phoneErrorTooManyRequests": "Too many attempts. Please wait a few minutes before trying again.",
+  "phoneErrorQuotaExceeded": "SMS quota exceeded. Please try again later.",
+  "phoneErrorCaptchaFailed": "reCAPTCHA verification failed. Please try again.",
+  "phoneErrorMissingNumber": "Please enter a phone number.",
+  "phoneErrorGeneric": "Phone verification error ({code}). Please try again.",
+  "@phoneErrorGeneric": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "phoneErrorUnexpected": "Phone verification error. Please try again.",
+  "phoneErrorAlreadyLinked": "This phone number is already linked to another account.",
+  "languageNameEnglish": "English",
+  "languageNameSpanish": "Spanish",
+  "languageNameFrench": "French",
+  "languageNameGerman": "German",
+  "languageNameItalian": "Italian",
+  "languageNamePortuguese": "Portuguese",
+  "languageNamePortugueseBrazil": "Portuguese (Brazil)",
+  "languageNameRussian": "Russian",
+  "languageNameChinese": "Chinese",
+  "languageNameJapanese": "Japanese",
+  "languageNameKorean": "Korean",
+  "languageNameArabic": "Arabic",
+  "languageNameHindi": "Hindi",
+  "languageNameDutch": "Dutch",
+  "languageNameSwedish": "Swedish",
+  "languageNameNorwegian": "Norwegian",
+  "languageNameDanish": "Danish",
+  "languageNameFinnish": "Finnish",
+  "languageNamePolish": "Polish",
+  "languageNameTurkish": "Turkish",
+  "languageNameGreek": "Greek"
 }

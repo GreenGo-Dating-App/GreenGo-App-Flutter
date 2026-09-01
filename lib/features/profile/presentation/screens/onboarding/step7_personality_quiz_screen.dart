@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
+import '../../../../../generated/app_localizations.dart';
 import '../../../domain/entities/profile.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
@@ -21,33 +22,31 @@ class _Step7PersonalityQuizScreenState
     extends State<Step7PersonalityQuizScreen> {
   int _currentQuestionIndex = 0;
 
-  final List<QuizQuestion> _questions = [
-    QuizQuestion(
-      question: 'I enjoy trying new and exciting activities',
-      trait: 'openness',
-      isPositive: true,
-    ),
-    QuizQuestion(
-      question: 'I prefer to have a structured and organized routine',
-      trait: 'conscientiousness',
-      isPositive: true,
-    ),
-    QuizQuestion(
-      question: 'I feel energized when socializing with others',
-      trait: 'extraversion',
-      isPositive: true,
-    ),
-    QuizQuestion(
-      question: 'I try to be cooperative and avoid conflicts',
-      trait: 'agreeableness',
-      isPositive: true,
-    ),
-    QuizQuestion(
-      question: 'I often feel anxious or worried about things',
-      trait: 'neuroticism',
-      isPositive: true,
-    ),
+  /// Questions are identified by trait only; the prompt text is resolved from
+  /// the active locale at build time (see [_questionText]).
+  static const List<QuizQuestion> _questions = [
+    QuizQuestion(trait: 'openness', isPositive: true),
+    QuizQuestion(trait: 'conscientiousness', isPositive: true),
+    QuizQuestion(trait: 'extraversion', isPositive: true),
+    QuizQuestion(trait: 'agreeableness', isPositive: true),
+    QuizQuestion(trait: 'neuroticism', isPositive: true),
   ];
+
+  String _questionText(AppLocalizations l10n, QuizQuestion question) {
+    switch (question.trait) {
+      case 'openness':
+        return l10n.quizQuestionOpenness;
+      case 'conscientiousness':
+        return l10n.quizQuestionConscientiousness;
+      case 'extraversion':
+        return l10n.quizQuestionExtraversion;
+      case 'agreeableness':
+        return l10n.quizQuestionAgreeableness;
+      case 'neuroticism':
+      default:
+        return l10n.quizQuestionNeuroticism;
+    }
+  }
 
   final Map<String, int> _traitScores = {
     'openness': 0,
@@ -101,6 +100,7 @@ class _Step7PersonalityQuizScreenState
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final question = _questions[_currentQuestionIndex];
     final progress = (_currentQuestionIndex + 1) / _questions.length;
 
@@ -111,8 +111,8 @@ class _Step7PersonalityQuizScreenState
         }
 
         return LuxuryOnboardingLayout(
-          title: 'Personality quiz',
-          subtitle: 'Help us understand your personality',
+          title: l10n.quizTitle,
+          subtitle: l10n.quizSubtitle,
           onBack: _handleBack,
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
@@ -128,7 +128,10 @@ class _Step7PersonalityQuizScreenState
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Question ${_currentQuestionIndex + 1} of ${_questions.length}',
+                      l10n.quizQuestionProgress(
+                        _currentQuestionIndex + 1,
+                        _questions.length,
+                      ),
                       style: TextStyle(
                         color: Colors.white.withOpacity(0.6),
                         fontSize: 14,
@@ -181,7 +184,7 @@ class _Step7PersonalityQuizScreenState
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        question.question,
+                        _questionText(l10n, question),
                         textAlign: TextAlign.center,
                         style: Theme.of(context)
                             .textTheme
@@ -194,15 +197,15 @@ class _Step7PersonalityQuizScreenState
                       const SizedBox(height: 32),
 
                       // Answer Options
-                      _buildAnswerButton('Strongly Disagree', 1),
+                      _buildAnswerButton(l10n.quizAnswerStronglyDisagree, 1),
                       const SizedBox(height: 10),
-                      _buildAnswerButton('Disagree', 2),
+                      _buildAnswerButton(l10n.quizAnswerDisagree, 2),
                       const SizedBox(height: 10),
-                      _buildAnswerButton('Neutral', 3),
+                      _buildAnswerButton(l10n.quizAnswerNeutral, 3),
                       const SizedBox(height: 10),
-                      _buildAnswerButton('Agree', 4),
+                      _buildAnswerButton(l10n.quizAnswerAgree, 4),
                       const SizedBox(height: 10),
-                      _buildAnswerButton('Strongly Agree', 5),
+                      _buildAnswerButton(l10n.quizAnswerStronglyAgree, 5),
                     ],
                   ),
                 ),
@@ -223,7 +226,7 @@ class _Step7PersonalityQuizScreenState
                       const SizedBox(width: 12),
                       Expanded(
                         child: Text(
-                          'Based on the Big Five personality traits model',
+                          l10n.quizBigFiveNote,
                           style:
                               Theme.of(context).textTheme.bodySmall?.copyWith(
                                     color: Colors.white.withOpacity(0.7),
@@ -272,12 +275,10 @@ class _Step7PersonalityQuizScreenState
 
 class QuizQuestion {
 
-  QuizQuestion({
-    required this.question,
+  const QuizQuestion({
     required this.trait,
     required this.isPositive,
   });
-  final String question;
   final String trait;
   final bool isPositive;
 }

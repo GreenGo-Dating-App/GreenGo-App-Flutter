@@ -51,6 +51,59 @@ class _Step5LocationLanguageScreenState
     'Greek',
   ];
 
+  /// The stored value stays English (it is what matching/search compares on);
+  /// only the chip label follows the user's selected app language.
+  String _localizedLanguage(BuildContext context, String language) {
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null) return language;
+    switch (language) {
+      case 'English':
+        return l10n.languageNameEnglish;
+      case 'Spanish':
+        return l10n.languageNameSpanish;
+      case 'French':
+        return l10n.languageNameFrench;
+      case 'German':
+        return l10n.languageNameGerman;
+      case 'Italian':
+        return l10n.languageNameItalian;
+      case 'Portuguese':
+        return l10n.languageNamePortuguese;
+      case 'Portuguese (Brazil)':
+        return l10n.languageNamePortugueseBrazil;
+      case 'Russian':
+        return l10n.languageNameRussian;
+      case 'Chinese':
+        return l10n.languageNameChinese;
+      case 'Japanese':
+        return l10n.languageNameJapanese;
+      case 'Korean':
+        return l10n.languageNameKorean;
+      case 'Arabic':
+        return l10n.languageNameArabic;
+      case 'Hindi':
+        return l10n.languageNameHindi;
+      case 'Dutch':
+        return l10n.languageNameDutch;
+      case 'Swedish':
+        return l10n.languageNameSwedish;
+      case 'Norwegian':
+        return l10n.languageNameNorwegian;
+      case 'Danish':
+        return l10n.languageNameDanish;
+      case 'Finnish':
+        return l10n.languageNameFinnish;
+      case 'Polish':
+        return l10n.languageNamePolish;
+      case 'Turkish':
+        return l10n.languageNameTurkish;
+      case 'Greek':
+        return l10n.languageNameGreek;
+      default:
+        return language;
+    }
+  }
+
   List<String> _selectedLanguages = [];
   location_entity.Location? _selectedLocation;
   bool _isLoadingLocation = false;
@@ -67,6 +120,10 @@ class _Step5LocationLanguageScreenState
   }
 
   Future<void> _getCurrentLocation() async {
+    // Resolved before the first await so the localized copy below never reads
+    // the BuildContext across an async gap.
+    final l10n = AppLocalizations.of(context);
+
     setState(() {
       _isLoadingLocation = true;
       _locationError = null;
@@ -77,8 +134,8 @@ class _Step5LocationLanguageScreenState
       final serviceEnabled = await Geolocator.isLocationServiceEnabled();
       if (!serviceEnabled) {
         _showLocationError(
-          AppLocalizations.of(context)?.locationServicesDisabled ?? 'Location Services Disabled',
-          AppLocalizations.of(context)?.locationServicesDisabledMessage ?? 'Please enable location services in your device settings to use this feature.',
+          l10n?.locationServicesDisabled ?? 'Location Services Disabled',
+          l10n?.locationServicesDisabledMessage ?? 'Please enable location services in your device settings to use this feature.',
         );
         return;
       }
@@ -89,8 +146,8 @@ class _Step5LocationLanguageScreenState
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
           _showLocationError(
-            AppLocalizations.of(context)?.locationPermissionDenied ?? 'Permission Denied',
-            AppLocalizations.of(context)?.locationPermissionDeniedMessage ?? 'Location permission is required to detect your current location. Please grant permission to continue.',
+            l10n?.locationPermissionDenied ?? 'Permission Denied',
+            l10n?.locationPermissionDeniedMessage ?? 'Location permission is required to detect your current location. Please grant permission to continue.',
           );
           return;
         }
@@ -98,8 +155,8 @@ class _Step5LocationLanguageScreenState
 
       if (permission == LocationPermission.deniedForever) {
         _showLocationError(
-          AppLocalizations.of(context)?.locationPermissionPermanentlyDenied ?? 'Permission Permanently Denied',
-          AppLocalizations.of(context)?.locationPermissionPermanentlyDeniedMessage ?? 'Location permission has been permanently denied. Please enable it in your device settings to use this feature.',
+          l10n?.locationPermissionPermanentlyDenied ?? 'Permission Permanently Denied',
+          l10n?.locationPermissionPermanentlyDeniedMessage ?? 'Location permission has been permanently denied. Please enable it in your device settings to use this feature.',
         );
         return;
       }
@@ -138,25 +195,25 @@ class _Step5LocationLanguageScreenState
         });
       } else {
         _showLocationError(
-          AppLocalizations.of(context)?.locationNotFound ?? 'Location Not Found',
-          AppLocalizations.of(context)?.locationNotFoundMessage ?? 'We could not determine your address. Please try again or set your location manually later.',
+          l10n?.locationNotFound ?? 'Location Not Found',
+          l10n?.locationNotFoundMessage ?? 'We could not determine your address. Please try again or set your location manually later.',
         );
       }
     } on PlatformException catch (e) {
       // Handle platform-specific errors gracefully
       String message;
       if (e.code == 'PERMISSION_DENIED') {
-        message = 'Location permission was denied. Please grant permission in settings.';
+        message = l10n?.locationErrorPermissionDenied ?? 'Location permission was denied. Please grant permission in settings.';
       } else if (e.code == 'LOCATION_SERVICE_DISABLED') {
-        message = 'Location services are disabled. Please enable them in settings.';
+        message = l10n?.locationErrorServicesDisabled ?? 'Location services are disabled. Please enable them in settings.';
       } else {
-        message = 'Unable to get your location. Please check your device settings or try again later.';
+        message = l10n?.locationErrorUnableToGet ?? 'Unable to get your location. Please check your device settings or try again later.';
       }
-      _showLocationError(AppLocalizations.of(context)?.locationError ?? 'Location Error', message);
+      _showLocationError(l10n?.locationError ?? 'Location Error', message);
     } on TimeoutException {
       _showLocationError(
-        AppLocalizations.of(context)?.locationRequestTimeout ?? 'Request Timeout',
-        AppLocalizations.of(context)?.locationRequestTimeoutMessage ?? 'Getting your location took too long. Please check your connection and try again.',
+        l10n?.locationRequestTimeout ?? 'Request Timeout',
+        l10n?.locationRequestTimeoutMessage ?? 'Getting your location took too long. Please check your connection and try again.',
       );
     } catch (e) {
       // Handle any other errors gracefully
@@ -164,18 +221,18 @@ class _Step5LocationLanguageScreenState
       String userMessage;
 
       if (errorMessage.contains('network') || errorMessage.contains('internet') || errorMessage.contains('connection')) {
-        userMessage = 'Please check your internet connection and try again.';
+        userMessage = l10n?.locationErrorCheckInternet ?? 'Please check your internet connection and try again.';
       } else if (errorMessage.contains('permission')) {
-        userMessage = 'Location permission is required. Please grant permission in settings.';
+        userMessage = l10n?.locationErrorPermissionRequired ?? 'Location permission is required. Please grant permission in settings.';
       } else if (errorMessage.contains('service') || errorMessage.contains('disabled')) {
-        userMessage = 'Location services are disabled. Please enable them in settings.';
+        userMessage = l10n?.locationErrorServicesDisabled ?? 'Location services are disabled. Please enable them in settings.';
       } else if (errorMessage.contains('timeout')) {
-        userMessage = 'Getting your location took too long. Please try again.';
+        userMessage = l10n?.locationErrorTookTooLong ?? 'Getting your location took too long. Please try again.';
       } else {
-        userMessage = AppLocalizations.of(context)?.locationUnavailable ?? 'Unable to get your location at the moment. You can set it manually later in settings.';
+        userMessage = l10n?.locationUnavailable ?? 'Unable to get your location at the moment. You can set it manually later in settings.';
       }
 
-      _showLocationError(AppLocalizations.of(context)?.locationUnavailableTitle ?? 'Location Unavailable', userMessage);
+      _showLocationError(l10n?.locationUnavailableTitle ?? 'Location Unavailable', userMessage);
     }
   }
 
@@ -406,7 +463,7 @@ class _Step5LocationLanguageScreenState
                   children: _availableLanguages.map((language) {
                     final isSelected = _selectedLanguages.contains(language);
                     return LuxuryChip(
-                      label: language,
+                      label: _localizedLanguage(context, language),
                       isSelected: isSelected,
                       onTap: () => _toggleLanguage(language),
                       icon: isSelected ? Icons.check_circle : null,

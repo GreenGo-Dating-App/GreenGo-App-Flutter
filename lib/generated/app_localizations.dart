@@ -24023,6 +24023,468 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Could not open this profile'**
   String get attendeesProfileFailed;
+
+  /// No description provided for @quizTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Personality quiz'**
+  String get quizTitle;
+
+  /// No description provided for @quizSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Help us understand your personality'**
+  String get quizSubtitle;
+
+  /// No description provided for @quizQuestionProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {current} of {total}'**
+  String quizQuestionProgress(int current, int total);
+
+  /// No description provided for @quizQuestionOpenness.
+  ///
+  /// In en, this message translates to:
+  /// **'I enjoy trying new and exciting activities'**
+  String get quizQuestionOpenness;
+
+  /// No description provided for @quizQuestionConscientiousness.
+  ///
+  /// In en, this message translates to:
+  /// **'I prefer to have a structured and organized routine'**
+  String get quizQuestionConscientiousness;
+
+  /// No description provided for @quizQuestionExtraversion.
+  ///
+  /// In en, this message translates to:
+  /// **'I feel energized when socializing with others'**
+  String get quizQuestionExtraversion;
+
+  /// No description provided for @quizQuestionAgreeableness.
+  ///
+  /// In en, this message translates to:
+  /// **'I try to be cooperative and avoid conflicts'**
+  String get quizQuestionAgreeableness;
+
+  /// No description provided for @quizQuestionNeuroticism.
+  ///
+  /// In en, this message translates to:
+  /// **'I often feel anxious or worried about things'**
+  String get quizQuestionNeuroticism;
+
+  /// No description provided for @quizAnswerStronglyDisagree.
+  ///
+  /// In en, this message translates to:
+  /// **'Strongly Disagree'**
+  String get quizAnswerStronglyDisagree;
+
+  /// No description provided for @quizAnswerDisagree.
+  ///
+  /// In en, this message translates to:
+  /// **'Disagree'**
+  String get quizAnswerDisagree;
+
+  /// No description provided for @quizAnswerNeutral.
+  ///
+  /// In en, this message translates to:
+  /// **'Neutral'**
+  String get quizAnswerNeutral;
+
+  /// No description provided for @quizAnswerAgree.
+  ///
+  /// In en, this message translates to:
+  /// **'Agree'**
+  String get quizAnswerAgree;
+
+  /// No description provided for @quizAnswerStronglyAgree.
+  ///
+  /// In en, this message translates to:
+  /// **'Strongly Agree'**
+  String get quizAnswerStronglyAgree;
+
+  /// No description provided for @quizBigFiveNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Based on the Big Five personality traits model'**
+  String get quizBigFiveNote;
+
+  /// No description provided for @profilePreviewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile preview'**
+  String get profilePreviewTitle;
+
+  /// No description provided for @profilePreviewSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your profile before completing'**
+  String get profilePreviewSubtitle;
+
+  /// No description provided for @profilePreviewCompleteButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Profile'**
+  String get profilePreviewCompleteButton;
+
+  /// No description provided for @profileFieldName.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get profileFieldName;
+
+  /// No description provided for @profileFieldAge.
+  ///
+  /// In en, this message translates to:
+  /// **'Age'**
+  String get profileFieldAge;
+
+  /// No description provided for @profileAgeYearsOld.
+  ///
+  /// In en, this message translates to:
+  /// **'{age} years old'**
+  String profileAgeYearsOld(int age);
+
+  /// No description provided for @profileFieldStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get profileFieldStatus;
+
+  /// No description provided for @profileNoBio.
+  ///
+  /// In en, this message translates to:
+  /// **'No bio provided'**
+  String get profileNoBio;
+
+  /// No description provided for @profileCompleteBadgeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Complete!'**
+  String get profileCompleteBadgeTitle;
+
+  /// No description provided for @profileCompleteBadgeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile is ready to be published'**
+  String get profileCompleteBadgeSubtitle;
+
+  /// No description provided for @personalityTraitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Personality Traits'**
+  String get personalityTraitsTitle;
+
+  /// No description provided for @traitOpenness.
+  ///
+  /// In en, this message translates to:
+  /// **'Openness'**
+  String get traitOpenness;
+
+  /// No description provided for @traitConscientiousness.
+  ///
+  /// In en, this message translates to:
+  /// **'Conscientiousness'**
+  String get traitConscientiousness;
+
+  /// No description provided for @traitExtraversion.
+  ///
+  /// In en, this message translates to:
+  /// **'Extraversion'**
+  String get traitExtraversion;
+
+  /// No description provided for @traitAgreeableness.
+  ///
+  /// In en, this message translates to:
+  /// **'Agreeableness'**
+  String get traitAgreeableness;
+
+  /// No description provided for @traitNeuroticism.
+  ///
+  /// In en, this message translates to:
+  /// **'Neuroticism'**
+  String get traitNeuroticism;
+
+  /// No description provided for @socialLinksSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect your social accounts (optional)'**
+  String get socialLinksSubtitle;
+
+  /// No description provided for @socialHintUsernameNoAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Username (without @)'**
+  String get socialHintUsernameNoAt;
+
+  /// No description provided for @socialLinksVisibilityNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Your social profiles will be visible on your public profile'**
+  String get socialLinksVisibilityNote;
+
+  /// No description provided for @travelPrefTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How do you want to use GreenGo?'**
+  String get travelPrefTitle;
+
+  /// No description provided for @travelPrefSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell us about your interests so we can personalize your experience.'**
+  String get travelPrefSubtitle;
+
+  /// No description provided for @travelPrefLearnTravelTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn & Travel'**
+  String get travelPrefLearnTravelTitle;
+
+  /// No description provided for @travelPrefLearnTravelDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn languages and meet people when I travel to new places'**
+  String get travelPrefLearnTravelDesc;
+
+  /// No description provided for @travelPrefLocalGuideTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Guide'**
+  String get travelPrefLocalGuideTitle;
+
+  /// No description provided for @travelPrefLocalGuideDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Help travelers discover my city and share my culture with them'**
+  String get travelPrefLocalGuideDesc;
+
+  /// No description provided for @travelPrefBothTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Both'**
+  String get travelPrefBothTitle;
+
+  /// No description provided for @travelPrefBothDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'I want to learn languages, travel the world, and help visitors in my city'**
+  String get travelPrefBothDesc;
+
+  /// No description provided for @travelPrefChangeLater.
+  ///
+  /// In en, this message translates to:
+  /// **'You can change this anytime in your profile settings.'**
+  String get travelPrefChangeLater;
+
+  /// No description provided for @locationErrorPermissionDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission was denied. Please grant permission in settings.'**
+  String get locationErrorPermissionDenied;
+
+  /// No description provided for @locationErrorServicesDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Location services are disabled. Please enable them in settings.'**
+  String get locationErrorServicesDisabled;
+
+  /// No description provided for @locationErrorUnableToGet.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to get your location. Please check your device settings or try again later.'**
+  String get locationErrorUnableToGet;
+
+  /// No description provided for @locationErrorCheckInternet.
+  ///
+  /// In en, this message translates to:
+  /// **'Please check your internet connection and try again.'**
+  String get locationErrorCheckInternet;
+
+  /// No description provided for @locationErrorPermissionRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission is required. Please grant permission in settings.'**
+  String get locationErrorPermissionRequired;
+
+  /// No description provided for @locationErrorTookTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting your location took too long. Please try again.'**
+  String get locationErrorTookTooLong;
+
+  /// No description provided for @phoneErrorInvalidNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid phone number format. Please use international format (e.g. +1234567890).'**
+  String get phoneErrorInvalidNumber;
+
+  /// No description provided for @phoneErrorTooManyRequests.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please wait a few minutes before trying again.'**
+  String get phoneErrorTooManyRequests;
+
+  /// No description provided for @phoneErrorQuotaExceeded.
+  ///
+  /// In en, this message translates to:
+  /// **'SMS quota exceeded. Please try again later.'**
+  String get phoneErrorQuotaExceeded;
+
+  /// No description provided for @phoneErrorCaptchaFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'reCAPTCHA verification failed. Please try again.'**
+  String get phoneErrorCaptchaFailed;
+
+  /// No description provided for @phoneErrorMissingNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a phone number.'**
+  String get phoneErrorMissingNumber;
+
+  /// No description provided for @phoneErrorGeneric.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone verification error ({code}). Please try again.'**
+  String phoneErrorGeneric(String code);
+
+  /// No description provided for @phoneErrorUnexpected.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone verification error. Please try again.'**
+  String get phoneErrorUnexpected;
+
+  /// No description provided for @phoneErrorAlreadyLinked.
+  ///
+  /// In en, this message translates to:
+  /// **'This phone number is already linked to another account.'**
+  String get phoneErrorAlreadyLinked;
+
+  /// No description provided for @languageNameEnglish.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get languageNameEnglish;
+
+  /// No description provided for @languageNameSpanish.
+  ///
+  /// In en, this message translates to:
+  /// **'Spanish'**
+  String get languageNameSpanish;
+
+  /// No description provided for @languageNameFrench.
+  ///
+  /// In en, this message translates to:
+  /// **'French'**
+  String get languageNameFrench;
+
+  /// No description provided for @languageNameGerman.
+  ///
+  /// In en, this message translates to:
+  /// **'German'**
+  String get languageNameGerman;
+
+  /// No description provided for @languageNameItalian.
+  ///
+  /// In en, this message translates to:
+  /// **'Italian'**
+  String get languageNameItalian;
+
+  /// No description provided for @languageNamePortuguese.
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese'**
+  String get languageNamePortuguese;
+
+  /// No description provided for @languageNamePortugueseBrazil.
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese (Brazil)'**
+  String get languageNamePortugueseBrazil;
+
+  /// No description provided for @languageNameRussian.
+  ///
+  /// In en, this message translates to:
+  /// **'Russian'**
+  String get languageNameRussian;
+
+  /// No description provided for @languageNameChinese.
+  ///
+  /// In en, this message translates to:
+  /// **'Chinese'**
+  String get languageNameChinese;
+
+  /// No description provided for @languageNameJapanese.
+  ///
+  /// In en, this message translates to:
+  /// **'Japanese'**
+  String get languageNameJapanese;
+
+  /// No description provided for @languageNameKorean.
+  ///
+  /// In en, this message translates to:
+  /// **'Korean'**
+  String get languageNameKorean;
+
+  /// No description provided for @languageNameArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'Arabic'**
+  String get languageNameArabic;
+
+  /// No description provided for @languageNameHindi.
+  ///
+  /// In en, this message translates to:
+  /// **'Hindi'**
+  String get languageNameHindi;
+
+  /// No description provided for @languageNameDutch.
+  ///
+  /// In en, this message translates to:
+  /// **'Dutch'**
+  String get languageNameDutch;
+
+  /// No description provided for @languageNameSwedish.
+  ///
+  /// In en, this message translates to:
+  /// **'Swedish'**
+  String get languageNameSwedish;
+
+  /// No description provided for @languageNameNorwegian.
+  ///
+  /// In en, this message translates to:
+  /// **'Norwegian'**
+  String get languageNameNorwegian;
+
+  /// No description provided for @languageNameDanish.
+  ///
+  /// In en, this message translates to:
+  /// **'Danish'**
+  String get languageNameDanish;
+
+  /// No description provided for @languageNameFinnish.
+  ///
+  /// In en, this message translates to:
+  /// **'Finnish'**
+  String get languageNameFinnish;
+
+  /// No description provided for @languageNamePolish.
+  ///
+  /// In en, this message translates to:
+  /// **'Polish'**
+  String get languageNamePolish;
+
+  /// No description provided for @languageNameTurkish.
+  ///
+  /// In en, this message translates to:
+  /// **'Turkish'**
+  String get languageNameTurkish;
+
+  /// No description provided for @languageNameGreek.
+  ///
+  /// In en, this message translates to:
+  /// **'Greek'**
+  String get languageNameGreek;
 }
 
 class _AppLocalizationsDelegate

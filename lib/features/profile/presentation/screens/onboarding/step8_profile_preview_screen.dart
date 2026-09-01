@@ -36,8 +36,8 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
         final l10n = AppLocalizations.of(context)!;
 
         return LuxuryOnboardingLayout(
-          title: 'Profile preview',
-          subtitle: 'Review your profile before completing',
+          title: l10n.profilePreviewTitle,
+          subtitle: l10n.profilePreviewSubtitle,
           onBack: () => _handleBack(context),
           progressBar: OnboardingProgressBar(
             currentStep: state.stepIndex,
@@ -46,7 +46,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
           bottomChild: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: LuxuryButton(
-              text: 'Complete Profile',
+              text: l10n.profilePreviewCompleteButton,
               onPressed: () => _handleComplete(context),
             ),
           ),
@@ -138,9 +138,10 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                               context,
                               l10n.basicInformation,
                               [
-                                _InfoItem(
-                                    'Name', state.displayName ?? l10n.notSet),
-                                _InfoItem('Age', '$age years old'),
+                                _InfoItem(l10n.profileFieldName,
+                                    state.displayName ?? l10n.notSet),
+                                _InfoItem(l10n.profileFieldAge,
+                                    l10n.profileAgeYearsOld(age)),
                                 _InfoItem(l10n.gender, state.gender ?? l10n.notSet),
                               ],
                             ),
@@ -153,7 +154,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                               l10n.aboutMe,
                               [
                                 _InfoItem(l10n.bio,
-                                    state.bio ?? 'No bio provided',
+                                    state.bio ?? l10n.profileNoBio,
                                     isMultiline: true),
                               ],
                             ),
@@ -196,7 +197,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                               l10n.voiceIntroduction,
                               [
                                 _InfoItem(
-                                  'Status',
+                                  l10n.profileFieldStatus,
                                   (state.voiceUrl != null && state.voiceUrl!.isNotEmpty)
                                       ? l10n.voiceRecorded
                                       : l10n.noVoiceRecording,
@@ -209,7 +210,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                             // Personality
                             if (state.personalityTraits != null)
                               _buildPersonalitySection(
-                                  context, state.personalityTraits!),
+                                  context, l10n, state.personalityTraits!),
                           ],
                         ),
                       ),
@@ -237,9 +238,9 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Text(
-                                    'Profile Complete!',
-                                    style: TextStyle(
+                                  Text(
+                                    l10n.profileCompleteBadgeTitle,
+                                    style: const TextStyle(
                                       color: AppColors.successGreen,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16,
@@ -247,7 +248,7 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                                   ),
                                   const SizedBox(height: 4),
                                   Text(
-                                    'Your profile is ready to be published',
+                                    l10n.profileCompleteBadgeSubtitle,
                                     style: Theme.of(context)
                                         .textTheme
                                         .bodySmall
@@ -369,25 +370,27 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildPersonalitySection(BuildContext context, dynamic traits) {
+  Widget _buildPersonalitySection(
+      BuildContext context, AppLocalizations l10n, dynamic traits) {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Personality Traits',
+            l10n.personalityTraitsTitle,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
                   color: AppColors.richGold,
                   fontWeight: FontWeight.bold,
                 ),
           ),
           const SizedBox(height: 12),
-          _buildTraitBar('Openness', traits.openness),
-          _buildTraitBar('Conscientiousness', traits.conscientiousness),
-          _buildTraitBar('Extraversion', traits.extraversion),
-          _buildTraitBar('Agreeableness', traits.agreeableness),
-          _buildTraitBar('Neuroticism', traits.neuroticism),
+          _buildTraitBar(l10n.traitOpenness, traits.openness),
+          _buildTraitBar(
+              l10n.traitConscientiousness, traits.conscientiousness),
+          _buildTraitBar(l10n.traitExtraversion, traits.extraversion),
+          _buildTraitBar(l10n.traitAgreeableness, traits.agreeableness),
+          _buildTraitBar(l10n.traitNeuroticism, traits.neuroticism),
         ],
       ),
     );
