@@ -544,6 +544,12 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       final senderProfile = await firestore.collection('profiles').doc(senderId).get();
       final senderNickname = senderProfile.data()?['nickname'] as String? ?? '';
       final senderName = senderProfile.data()?['displayName'] as String? ?? 'Someone';
+      // Fills the circle on the notification row with the sender's face
+      // instead of the generic chat glyph.
+      final senderPhotos = senderProfile.data()?['photoUrls'] as List<dynamic>?;
+      final senderPhoto = (senderPhotos != null && senderPhotos.isNotEmpty)
+          ? senderPhotos.first as String?
+          : null;
 
       if (messagesCount.count == 1) {
         // First message - create new_chat notification
@@ -560,6 +566,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
             'matchId': matchId,
             'conversationId': conversation.conversationId,
           },
+          imageUrl: senderPhoto,
         );
       } else {
         // Regular message - create new_message notification.
@@ -579,6 +586,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
             'matchId': matchId,
             'conversationId': conversation.conversationId,
           },
+          imageUrl: senderPhoto,
         );
       }
       } catch (sideEffectError) {

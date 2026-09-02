@@ -218,10 +218,15 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
       final userNickname = userDoc.data()?['nickname'] as String?;
 
       final displayName = userNickname != null ? '@$userNickname' : userName;
+      final likerPhotos = userDoc.data()?['photoUrls'] as List<dynamic>?;
+      final likerPhoto = (likerPhotos != null && likerPhotos.isNotEmpty)
+          ? likerPhotos.first as String?
+          : null;
 
       await firestore.collection('notifications').add({
         'userId': widget.profile.userId,
         'type': 'photo_like',
+        'imageUrl': likerPhoto,
         'title': 'New Photo Like',
         'message': '$displayName liked your photo',
         'data': {

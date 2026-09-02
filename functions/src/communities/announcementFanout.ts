@@ -152,6 +152,9 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
         batch.set(ref, {
           userId: uid,
           type: 'community_announcement',
+          // Shows the community's picture in the notification row rather than
+          // the generic megaphone glyph.
+          ...(communityImage ? { imageUrl: communityImage } : {}),
           title,
           message: body,
           body,
