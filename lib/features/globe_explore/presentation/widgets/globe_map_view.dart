@@ -8,6 +8,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/config/map_basemap.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
@@ -153,10 +154,12 @@ class _GlobeMapViewState extends State<GlobeMapView>
       mapController: _mapController,
       options: MapOptions(
         initialCenter: initialCenter,
-        initialZoom: 3.0,
+        // Open on the user's own area, not a continent-wide view. minZoom
+        // still allows pinching all the way back out to the world.
+        initialZoom: 11.0,
         minZoom: 2.0,
         maxZoom: 18.0,
-        backgroundColor: const Color(0xFF1A1A2E),
+        backgroundColor: const Color(0xFFF0EDE5),
         interactionOptions: const InteractionOptions(
           flags: InteractiveFlag.all,
         ),
@@ -180,17 +183,16 @@ class _GlobeMapViewState extends State<GlobeMapView>
       children: [
         TileLayer(
           urlTemplate:
-              'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+              MapBasemap.tileUrl,
           userAgentPackageName: 'com.greengochat.greengochatapp',
-          maxZoom: 19,
+          maxZoom: MapBasemap.maxZoom,
         ),
         PolylineLayer(polylines: _buildFlightPaths()),
         MarkerLayer(markers: _buildMarkers(l10n)),
         // OSM's tile usage policy requires visible attribution.
-        const RichAttributionWidget(
+        RichAttributionWidget(
           attributions: [
-            TextSourceAttribution(
-                'Esri, HERE, Garmin, OpenStreetMap contributors'),
+            TextSourceAttribution(MapBasemap.attribution),
           ],
         ),
       ],
