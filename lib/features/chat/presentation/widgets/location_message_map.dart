@@ -48,7 +48,7 @@ class LocationMessageMap extends StatelessWidget {
             children: [
               TileLayer(
                 urlTemplate:
-                    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
                 tileProvider: _CachedTileProvider(),
                 userAgentPackageName: 'com.greengochat.greengochatapp',
               ),

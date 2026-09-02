@@ -193,7 +193,7 @@ class _WebLocationPickerScreenState extends State<WebLocationPickerScreen> {
             children: [
               TileLayer(
                 urlTemplate:
-                    'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
                 userAgentPackageName: 'com.greengochat.greengochatapp',
                 maxZoom: 19,
               ),

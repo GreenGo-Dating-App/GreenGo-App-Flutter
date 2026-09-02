@@ -180,7 +180,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
       children: [
         TileLayer(
           urlTemplate:
-              'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+              'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
           userAgentPackageName: 'com.greengochat.greengochatapp',
           maxZoom: 19,
         ),
@@ -189,7 +189,8 @@ class _GlobeMapViewState extends State<GlobeMapView>
         // OSM's tile usage policy requires visible attribution.
         const RichAttributionWidget(
           attributions: [
-            TextSourceAttribution('OpenStreetMap contributors'),
+            TextSourceAttribution(
+                'Esri, HERE, Garmin, OpenStreetMap contributors'),
           ],
         ),
       ],
