@@ -326,6 +326,15 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     if (state is OnboardingInProgress) {
       final currentState = state as OnboardingInProgress;
 
+      // Re-entry guard: registration takes several seconds, and a double tap
+      // that lands before the button rebuilds would otherwise create a second
+      // profile and grant welcome coins twice.
+      if (currentState.isSubmitting) return;
+
+      emit(currentState.copyWith(
+        submitStage: OnboardingSubmitStage.creatingProfile,
+      ));
+
       // Create profile from onboarding data
       final now = DateTime.now();
       final profile = Profile(
@@ -366,8 +375,17 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
       final result = await createProfile(CreateProfileParams(profile: profile));
 
       await result.fold(
-        (failure) async => emit(OnboardingError(message: failure.message)),
+        (failure) async {
+          // Drop out of the submitting state so the button comes back and the
+          // user can retry instead of being stuck behind the overlay.
+          emit(currentState);
+          emit(OnboardingError(message: failure.message));
+        },
         (createdProfile) async {
+          emit(currentState.copyWith(
+            submitStage: OnboardingSubmitStage.grantingCoins,
+          ));
+
           // Grant 100 welcome coins on registration. Awaited (not fire-and-
           // forget) so the balance doc exists BEFORE any coupon redemption —
           // otherwise redeemCoupon would create the doc and the welcome-coin
@@ -379,6 +397,10 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
           // subscription itself, so nothing in the app needs to offer or
           // activate it. A coupon's base grant, if any, still applies on
           // redeem.
+
+          emit(currentState.copyWith(
+            submitStage: OnboardingSubmitStage.finishingUp,
+          ));
 
           // Redeem a coupon typed during registration, if one is pending.
           // Never blocks completion; a bad code is surfaced as a notice.

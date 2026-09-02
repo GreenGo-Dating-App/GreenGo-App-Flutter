@@ -2956,10 +2956,11 @@ class _ChatScreenState extends State<ChatScreen> {
               child: GestureDetector(
                 onTap: () async {
                   final lang = msg.detectedLanguage ?? msg.metadata?['language'] ?? 'en';
-                  final url = await PronunciationService().getPronunciationUrl(msg.content, lang);
-                  if (url != null) {
+                  final source = await PronunciationService()
+                      .getPronunciationSource(msg.content, lang);
+                  if (source != null) {
                     final player = AudioPlayer();
-                    await player.play(UrlSource(url));
+                    await player.play(source);
                     player.onPlayerComplete.first.then((_) => player.dispose());
                   }
                 },

@@ -4652,5 +4652,9 @@
   "resetEmailSentBody": "Foi enviado um link de redefinição de palavra-passe para {email}.\n\nVerifique a sua caixa de entrada e a pasta de spam.",
   "resetErrorInvalidEmail": "Endereço de e-mail inválido.",
   "resetErrorUnavailable": "Serviço temporariamente indisponível. Tente novamente mais tarde.",
-  "resetErrorFailed": "Não foi possível enviar o e-mail de redefinição. Tente novamente."
+  "resetErrorFailed": "Não foi possível enviar o e-mail de redefinição. Tente novamente.",
+  "onboardingSubmitCreatingProfile": "A criar o seu perfil…",
+  "onboardingSubmitGrantingCoins": "A preparar as suas moedas…",
+  "onboardingSubmitFinishingUp": "Está quase…",
+  "onboardingSubmitPleaseWait": "Demora apenas um momento"
 }

@@ -4071,5 +4071,9 @@
   "resetEmailSentBody": "Un lien de réinitialisation du mot de passe a été envoyé à {email}.\n\nVeuillez vérifier votre boîte de réception et vos spams.",
   "resetErrorInvalidEmail": "Adresse e-mail invalide.",
   "resetErrorUnavailable": "Service temporairement indisponible. Veuillez réessayer plus tard.",
-  "resetErrorFailed": "Échec de l'envoi de l'e-mail de réinitialisation. Veuillez réessayer."
+  "resetErrorFailed": "Échec de l'envoi de l'e-mail de réinitialisation. Veuillez réessayer.",
+  "onboardingSubmitCreatingProfile": "Création de votre profil…",
+  "onboardingSubmitGrantingCoins": "Configuration de vos pièces…",
+  "onboardingSubmitFinishingUp": "Presque terminé…",
+  "onboardingSubmitPleaseWait": "Cela ne prend qu'un instant"
 }

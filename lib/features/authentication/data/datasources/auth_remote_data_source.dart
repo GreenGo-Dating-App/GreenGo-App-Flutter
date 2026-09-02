@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 // import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 // import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import '../../../../core/config/app_config.dart';
+import '../../../../core/providers/language_provider.dart';
 import '../../../../core/error/exceptions.dart';
 import '../models/user_model.dart';
 
@@ -196,18 +197,24 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource { // Will be Face
         throw AuthenticationException('Registration failed');
       }
 
-      // Store email on users doc so nickname login works
+      // The language picked on the pre-auth screens. Read before the async
+      // calls below so the welcome email goes out in the language the user is
+      // actually looking at, not English.
+      final locale = await LanguageProvider.currentLanguageCode();
+
+      // Store email on users doc so nickname login works. `locale` is kept too
+      // so later transactional mail can reuse it without guessing.
       final uid = userCredential.user!.uid;
       FirebaseFirestore.instance
           .collection('users')
           .doc(uid)
-          .set({'email': email}, SetOptions(merge: true))
+          .set({'email': email, 'locale': locale}, SetOptions(merge: true))
           .catchError((_) => null);
 
       // Send branded welcome email via Resend (fire-and-forget, don't block registration)
       FirebaseFunctions.instance
           .httpsCallable('sendWelcomeEmail')
-          .call({'email': email})
+          .call({'email': email, 'locale': locale})
           .catchError((_) => null);
 
       return UserModel.fromFirebaseUser(userCredential.user!);
@@ -230,9 +237,16 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource { // Will be Face
               throw AuthenticationException('Registration failed');
             }
             // Send branded welcome email via Resend
+            final retryLocale = await LanguageProvider.currentLanguageCode();
+            FirebaseFirestore.instance
+                .collection('users')
+                .doc(retryCredential.user!.uid)
+                .set({'email': email, 'locale': retryLocale},
+                    SetOptions(merge: true))
+                .catchError((_) => null);
             FirebaseFunctions.instance
                 .httpsCallable('sendWelcomeEmail')
-                .call({'email': email})
+                .call({'email': email, 'locale': retryLocale})
                 .catchError((_) => null);
             return UserModel.fromFirebaseUser(retryCredential.user!);
           }

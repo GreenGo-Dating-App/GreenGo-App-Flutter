@@ -24545,6 +24545,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Failed to send reset email. Please try again.'**
   String get resetErrorFailed;
+
+  /// No description provided for @onboardingSubmitCreatingProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Creating your profile…'**
+  String get onboardingSubmitCreatingProfile;
+
+  /// No description provided for @onboardingSubmitGrantingCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Setting up your coins…'**
+  String get onboardingSubmitGrantingCoins;
+
+  /// No description provided for @onboardingSubmitFinishingUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost there…'**
+  String get onboardingSubmitFinishingUp;
+
+  /// No description provided for @onboardingSubmitPleaseWait.
+  ///
+  /// In en, this message translates to:
+  /// **'This only takes a moment'**
+  String get onboardingSubmitPleaseWait;
 }
 
 class _AppLocalizationsDelegate

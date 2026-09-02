@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:cached_network_image/cached_network_image.dart';
 
-import 'package:audioplayers/audioplayers.dart' as ap show DeviceFileSource;
 import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -996,14 +995,14 @@ class _TranslatableTextState extends State<_TranslatableText> {
 
     setState(() => _ttsBusy = true);
     try {
-      final path = await PronunciationService()
-          .getPronunciationFilePath(text, lang, isMale: false);
-      if (path != null && mounted) {
+      final source = await PronunciationService()
+          .getPronunciationSource(text, lang, isMale: false);
+      if (source != null && mounted) {
         _player.onPlayerComplete.first.then((_) {
           if (mounted) setState(() => _ttsBusy = false);
         });
         await _player.setVolume(1.0);
-        await _player.play(ap.DeviceFileSource(path));
+        await _player.play(source);
       } else if (mounted) {
         setState(() => _ttsBusy = false);
       }

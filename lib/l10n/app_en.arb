@@ -6540,5 +6540,9 @@
   },
   "resetErrorInvalidEmail": "Invalid email address.",
   "resetErrorUnavailable": "Service temporarily unavailable. Please try again later.",
-  "resetErrorFailed": "Failed to send reset email. Please try again."
+  "resetErrorFailed": "Failed to send reset email. Please try again.",
+  "onboardingSubmitCreatingProfile": "Creating your profile…",
+  "onboardingSubmitGrantingCoins": "Setting up your coins…",
+  "onboardingSubmitFinishingUp": "Almost there…",
+  "onboardingSubmitPleaseWait": "This only takes a moment"
 }

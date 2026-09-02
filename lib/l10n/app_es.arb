@@ -4652,5 +4652,9 @@
   "resetEmailSentBody": "Se ha enviado un enlace para restablecer la contraseña a {email}.\n\nRevisa tu bandeja de entrada y la carpeta de spam.",
   "resetErrorInvalidEmail": "Dirección de correo electrónico no válida.",
   "resetErrorUnavailable": "Servicio temporalmente no disponible. Inténtalo más tarde.",
-  "resetErrorFailed": "No se pudo enviar el correo de restablecimiento. Inténtalo de nuevo."
+  "resetErrorFailed": "No se pudo enviar el correo de restablecimiento. Inténtalo de nuevo.",
+  "onboardingSubmitCreatingProfile": "Creando tu perfil…",
+  "onboardingSubmitGrantingCoins": "Preparando tus monedas…",
+  "onboardingSubmitFinishingUp": "Ya casi está…",
+  "onboardingSubmitPleaseWait": "Esto solo tarda un momento"
 }

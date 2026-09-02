@@ -11,6 +11,7 @@
  */
 
 import * as functions from 'firebase-functions/v1';
+import { welcomeEmailCopy } from '../emails/welcomeEmailCopy';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 
@@ -827,13 +828,16 @@ export const onSupportMessageCreated = functions.firestore
  */
 export const sendWelcomeEmail = functions.https.onCall(
   monitored("sendWelcomeEmail", async (data: any, _context: functions.https.CallableContext) => {
-    const { email } = data;
+    const { email, locale } = data;
 
     if (!email || typeof email !== 'string') {
       throw new functions.https.HttpsError('invalid-argument', 'email is required');
     }
 
-    console.log(`sendWelcomeEmail called for: ${email}`);
+    // The app's active language at registration. Unknown/missing => English.
+    const copy = welcomeEmailCopy(locale);
+
+    console.log(`sendWelcomeEmail called for: ${email} (locale: ${locale ?? 'none'})`);
 
     try {
       // Read Resend config
@@ -858,7 +862,7 @@ export const sendWelcomeEmail = functions.https.onCall(
         body: JSON.stringify({
           from: `${senderName} <${senderEmail}>`,
           to: [email],
-          subject: 'Welcome to GreenGo!',
+          subject: copy.subject,
           html: `
             <!DOCTYPE html>
             <html>
@@ -883,23 +887,23 @@ export const sendWelcomeEmail = functions.https.onCall(
               <div class="container">
                 <div class="header">
                   <div class="logo">GreenGo</div>
-                  <p style="color: #D4AF37; margin-top: 5px; font-size: 16px;">Welcome aboard!</p>
+                  <p style="color: #D4AF37; margin-top: 5px; font-size: 16px;">${copy.tagline}</p>
                 </div>
                 <div class="content">
-                  <p>We're thrilled to have you join the <span class="highlight">GreenGo</span> community!</p>
-                  <p>Your account has been created successfully. Complete your profile to start connecting with amazing people.</p>
+                  <p>${copy.intro}</p>
+                  <p>${copy.profilePrompt}</p>
                   <hr class="divider">
                   <div class="features">
-                    <div class="feature"><span class="feature-icon">&#10024;</span> Create your unique profile</div>
-                    <div class="feature"><span class="feature-icon">&#128154;</span> Discover people near you</div>
-                    <div class="feature"><span class="feature-icon">&#128172;</span> Start meaningful conversations</div>
-                    <div class="feature"><span class="feature-icon">&#127760;</span> Travel mode to meet people worldwide</div>
+                    <div class="feature"><span class="feature-icon">&#10024;</span> ${copy.featureProfile}</div>
+                    <div class="feature"><span class="feature-icon">&#128154;</span> ${copy.featureDiscover}</div>
+                    <div class="feature"><span class="feature-icon">&#128172;</span> ${copy.featureConversations}</div>
+                    <div class="feature"><span class="feature-icon">&#127760;</span> ${copy.featureTravel}</div>
                   </div>
                   <hr class="divider">
-                  <p style="font-size: 14px; color: rgba(255,255,255,0.5);">Open the app and complete your profile to get started!</p>
+                  <p style="font-size: 14px; color: rgba(255,255,255,0.5);">${copy.callToAction}</p>
                 </div>
                 <div class="footer">
-                  <p>&copy; ${new Date().getFullYear()} GreenGo. All rights reserved.</p>
+                  <p>&copy; ${new Date().getFullYear()} GreenGo. ${copy.rightsReserved}</p>
                 </div>
               </div>
             </body>

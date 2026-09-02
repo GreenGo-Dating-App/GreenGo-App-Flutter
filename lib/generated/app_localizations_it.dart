@@ -13925,4 +13925,16 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get resetErrorFailed =>
       'Impossibile inviare l\'email di reimpostazione. Riprova.';
+
+  @override
+  String get onboardingSubmitCreatingProfile => 'Creazione del tuo profilo…';
+
+  @override
+  String get onboardingSubmitGrantingCoins => 'Preparazione delle tue monete…';
+
+  @override
+  String get onboardingSubmitFinishingUp => 'Ci siamo quasi…';
+
+  @override
+  String get onboardingSubmitPleaseWait => 'Ci vuole solo un momento';
 }
