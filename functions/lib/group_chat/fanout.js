@@ -212,7 +212,7 @@ exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)({
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: (0, brand_1.brandPush)(`New message in group ${groupName}`, `${senderName}: ${preview}`),
+                notification: (0, brand_1.brandPush)(`New message in group ${groupName}`, `${senderName}: ${preview}`, groupPhoto !== null && groupPhoto !== void 0 ? groupPhoto : undefined),
                 data: {
                     type: 'group_message',
                     groupId,

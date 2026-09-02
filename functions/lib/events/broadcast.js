@@ -55,7 +55,7 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)({
     document: 'events/{eventId}/messages/{messageId}',
     memory: pushRuntime_1.PUSH_MEMORY,
 }, (0, monitoring_1.monitored)("onEventBroadcastCreated", async (event) => {
-    var _a, _b;
+    var _a, _b, _c;
     const snap = event.data;
     if (!snap)
         return;
@@ -67,6 +67,7 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)({
     const text = msg.text || '';
     const eventDoc = await db.collection('events').doc(eventId).get();
     const title = ((_a = eventDoc.data()) === null || _a === void 0 ? void 0 : _a.title) || 'Event';
+    const eventImage = ((_b = eventDoc.data()) === null || _b === void 0 ? void 0 : _b.imageUrl) || undefined;
     const attendeesSnap = await db
         .collection('events')
         .doc(eventId)
@@ -89,7 +90,7 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)({
     const tokenDocs = await Promise.all(recipientIds.map((u) => db.collection('users').doc(u).get()));
     const tokens = [];
     for (const td of tokenDocs) {
-        const t = (_b = td.data()) === null || _b === void 0 ? void 0 : _b.fcmToken;
+        const t = (_c = td.data()) === null || _c === void 0 ? void 0 : _c.fcmToken;
         if (t)
             tokens.push(t);
     }
@@ -100,7 +101,7 @@ exports.onEventBroadcastCreated = (0, firestore_1.onDocumentCreated)({
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: (0, brand_1.brandPush)(`📣 ${title}`, text),
+                notification: (0, brand_1.brandPush)(`📣 ${title}`, text, eventImage),
                 data: { type: 'event_broadcast', eventId },
                 android: { priority: 'high' },
             });
@@ -144,7 +145,7 @@ exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)({
     document: 'events/{eventId}/messages/{messageId}',
     memory: pushRuntime_1.PUSH_MEMORY,
 }, (0, monitoring_1.monitored)("onEventMessageCreated", async (event) => {
-    var _a, _b;
+    var _a, _b, _c;
     const snap = event.data;
     if (!snap)
         return;
@@ -157,6 +158,7 @@ exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)({
     const text = msg.text || '';
     const eventDoc = await db.collection('events').doc(eventId).get();
     const title = ((_a = eventDoc.data()) === null || _a === void 0 ? void 0 : _a.title) || 'Event';
+    const eventImage = ((_b = eventDoc.data()) === null || _b === void 0 ? void 0 : _b.imageUrl) || undefined;
     const attendeesSnap = await db
         .collection('events')
         .doc(eventId)
@@ -185,7 +187,7 @@ exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)({
     const tokenDocs = await Promise.all(prefRecipients.map((u) => db.collection('users').doc(u).get()));
     const tokens = [];
     for (const td of tokenDocs) {
-        const t = (_b = td.data()) === null || _b === void 0 ? void 0 : _b.fcmToken;
+        const t = (_c = td.data()) === null || _c === void 0 ? void 0 : _c.fcmToken;
         if (t)
             tokens.push(t);
     }
@@ -197,7 +199,7 @@ exports.onEventMessageCreated = (0, firestore_1.onDocumentCreated)({
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: (0, brand_1.brandPush)(`New message in event ${title}`, body),
+                notification: (0, brand_1.brandPush)(`New message in event ${title}`, body, eventImage),
                 data: { type: 'event_message', eventId, conversationId: eventId },
                 android: {
                     priority: 'high',

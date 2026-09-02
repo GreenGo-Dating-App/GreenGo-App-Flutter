@@ -53,7 +53,7 @@ require("../shared/firebaseAdmin");
 const db = admin.firestore();
 const FCM_CHUNK = 500;
 const HOUR = 60 * 60 * 1000;
-async function fanOutReminder(eventId, eventRef, title, body, flag) {
+async function fanOutReminder(eventId, eventRef, title, body, flag, imageUrl) {
     var _a;
     const attendeesSnap = await eventRef.collection('attendees').get();
     const recipientIds = attendeesSnap.docs
@@ -80,9 +80,9 @@ async function fanOutReminder(eventId, eventRef, title, body, flag) {
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: (0, brand_1.brandPush)(`⏰ ${title}`, body),
+                notification: (0, brand_1.brandPush)(`⏰ ${title}`, body, imageUrl),
                 data: dataPayload,
-                android: { priority: 'high' },
+                android: Object.assign({ priority: 'high' }, (imageUrl ? { notification: { imageUrl } } : {})),
             });
         }
         catch (err) {
@@ -138,16 +138,18 @@ exports.sendEventReminders = (0, scheduler_1.onSchedule)({
         if (!startMs)
             continue;
         const title = e.title || 'Event';
+        // Show the event's own picture on the notification.
+        const eventImage = e.imageUrl || undefined;
         const dt = startMs - nowMs; // ms until start (negative = already started)
         try {
             if (dt <= 0 && dt > -HOUR && e.remindedStart !== true) {
-                await fanOutReminder(doc.id, doc.ref, title, 'is starting now — enjoy!', 'remindedStart');
+                await fanOutReminder(doc.id, doc.ref, title, 'is starting now — enjoy!', 'remindedStart', eventImage);
             }
             else if (dt > 0 && dt <= 6 * HOUR && e.reminded6h !== true) {
-                await fanOutReminder(doc.id, doc.ref, title, 'starts in about 6 hours', 'reminded6h');
+                await fanOutReminder(doc.id, doc.ref, title, 'starts in about 6 hours', 'reminded6h', eventImage);
             }
             else if (dt > 6 * HOUR && dt <= 24 * HOUR && e.reminded24h !== true) {
-                await fanOutReminder(doc.id, doc.ref, title, 'is tomorrow — see you there!', 'reminded24h');
+                await fanOutReminder(doc.id, doc.ref, title, 'is tomorrow — see you there!', 'reminded24h', eventImage);
             }
         }
         catch (err) {
