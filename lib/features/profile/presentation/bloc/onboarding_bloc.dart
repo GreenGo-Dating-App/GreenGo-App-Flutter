@@ -376,10 +376,13 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
 
       await result.fold(
         (failure) async {
-          // Drop out of the submitting state so the button comes back and the
-          // user can retry instead of being stuck behind the overlay.
-          emit(currentState);
+          // Order matters. OnboardingError drives the snackbar in the screen's
+          // listener but is not an OnboardingInProgress, so leaving it as the
+          // final state renders a bare spinner with no way back. Emitting the
+          // pre-submit state last restores the wizard — overlay gone, button
+          // live again — so the user can actually retry.
           emit(OnboardingError(message: failure.message));
+          emit(currentState);
         },
         (createdProfile) async {
           emit(currentState.copyWith(
