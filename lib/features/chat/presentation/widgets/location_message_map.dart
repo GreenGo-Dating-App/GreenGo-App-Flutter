@@ -1,15 +1,13 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/config/map_basemap.dart';
+import '../../../../core/widgets/map_basemap_layer.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
 /// A tiny, non-interactive map preview rendered inside a location chat bubble.
 ///
-/// Tiles are fetched through [CachedNetworkImageProvider], so every map tile is
-/// downloaded at most once and then served from the on-disk cache — the same
-/// location (and shared neighbouring tiles) never triggers repeat tile API
-/// calls when the bubble re-renders or scrolls back into view.
+/// Tiles come from the shared [MapBasemapLayer], which keeps its own on-disk
+/// cache, so a bubble re-rendering or scrolling back into view does not refetch
+/// anything.
 class LocationMessageMap extends StatelessWidget {
   const LocationMessageMap({
     required this.lat,
@@ -47,12 +45,7 @@ class LocationMessageMap extends StatelessWidget {
               ),
             ),
             children: [
-              TileLayer(
-                urlTemplate:
-                    MapBasemap.tileUrl,
-                tileProvider: _CachedTileProvider(),
-                userAgentPackageName: 'com.greengochat.greengochatapp',
-              ),
+              const MapBasemapLayer(),
               MarkerLayer(
                 markers: [
                   Marker(
@@ -72,18 +65,6 @@ class LocationMessageMap extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-/// flutter_map tile provider that serves tiles via [CachedNetworkImageProvider]
-/// so tiles are persisted to disk and reused — avoids repeated tile API calls.
-class _CachedTileProvider extends TileProvider {
-  @override
-  ImageProvider getImage(TileCoordinates coordinates, TileLayer options) {
-    return CachedNetworkImageProvider(
-      getTileUrl(coordinates, options),
-      headers: const {'User-Agent': 'GreenGoChat/1.0'},
     );
   }
 }

@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/config/map_basemap.dart';
+import '../../../../core/widgets/map_basemap_layer.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
@@ -192,12 +192,7 @@ class _WebLocationPickerScreenState extends State<WebLocationPickerScreen> {
               onTap: (_, point) => _onTap(point),
             ),
             children: [
-              TileLayer(
-                urlTemplate:
-                    MapBasemap.tileUrl,
-                userAgentPackageName: 'com.greengochat.greengochatapp',
-                maxZoom: MapBasemap.maxZoom,
-              ),
+              const MapBasemapLayer(),
               if (_hasPin)
                 MarkerLayer(
                   markers: [
