@@ -194,6 +194,7 @@ export const onGroupMessageCreated = onDocumentCreated(
           notification: brandPush(
             `New message in group ${groupName}`,
             `${senderName}: ${preview}`,
+            groupPhoto ?? undefined,
           ),
           data: {
             type: 'group_message',

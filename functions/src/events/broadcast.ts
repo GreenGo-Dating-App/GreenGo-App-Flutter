@@ -35,6 +35,7 @@ export const onEventBroadcastCreated = onDocumentCreated(
 
     const eventDoc = await db.collection('events').doc(eventId).get();
     const title = (eventDoc.data()?.title as string) || 'Event';
+    const eventImage = (eventDoc.data()?.imageUrl as string) || undefined;
 
     const attendeesSnap = await db
       .collection('events')
@@ -68,7 +69,7 @@ export const onEventBroadcastCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: brandPush(`📣 ${title}`, text),
+          notification: brandPush(`📣 ${title}`, text, eventImage),
           data: { type: 'event_broadcast', eventId },
           android: { priority: 'high' },
         });
@@ -127,6 +128,7 @@ export const onEventMessageCreated = onDocumentCreated(
 
     const eventDoc = await db.collection('events').doc(eventId).get();
     const title = (eventDoc.data()?.title as string) || 'Event';
+    const eventImage = (eventDoc.data()?.imageUrl as string) || undefined;
 
     const attendeesSnap = await db
       .collection('events')
@@ -167,7 +169,7 @@ export const onEventMessageCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: brandPush(`New message in event ${title}`, body),
+          notification: brandPush(`New message in event ${title}`, body, eventImage),
           data: { type: 'event_message', eventId, conversationId: eventId },
           android: {
             priority: 'high',

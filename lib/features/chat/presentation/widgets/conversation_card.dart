@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/conversation.dart';
@@ -30,27 +31,6 @@ class ConversationCard extends StatefulWidget {
   final VoidCallback? onAcceptSuperLike;
   final VoidCallback? onRejectSuperLike;
 
-  static String _flagForLanguage(String? langCode) {
-    if (langCode == null || langCode.isEmpty) return '';
-    final code = langCode.toLowerCase().replaceAll('-', '_');
-    const flags = {
-      'en': '\u{1F1EC}\u{1F1E7}',
-      'de': '\u{1F1E9}\u{1F1EA}',
-      'es': '\u{1F1EA}\u{1F1F8}',
-      'fr': '\u{1F1EB}\u{1F1F7}',
-      'it': '\u{1F1EE}\u{1F1F9}',
-      'pt': '\u{1F1F5}\u{1F1F9}',
-      'pt_br': '\u{1F1E7}\u{1F1F7}',
-      'ja': '\u{1F1EF}\u{1F1F5}',
-      'ko': '\u{1F1F0}\u{1F1F7}',
-      'zh': '\u{1F1E8}\u{1F1F3}',
-      'ar': '\u{1F1F8}\u{1F1E6}',
-      'hi': '\u{1F1EE}\u{1F1F3}',
-      'tr': '\u{1F1F9}\u{1F1F7}',
-      'ru': '\u{1F1F7}\u{1F1FA}',
-    };
-    return flags[code] ?? '';
-  }
 
   @override
   State<ConversationCard> createState() => _ConversationCardState();
@@ -243,24 +223,6 @@ class _ConversationCardState extends State<ConversationCard>
               ),
             ),
           ),
-        if (widget.conversation.isSearchConversation)
-          Positioned(
-            left: -2,
-            bottom: -2,
-            child: Container(
-              width: 18,
-              height: 18,
-              decoration: BoxDecoration(
-                color: AppColors.backgroundDark,
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: AppColors.richGold.withOpacity(0.5),
-                  width: 1.5,
-                ),
-              ),
-              child: const Icon(Icons.search, size: 10, color: AppColors.richGold),
-            ),
-          ),
         if (hasUnread && widget.conversation.unreadCount > 0)
           Positioned(
             right: -2,
@@ -369,7 +331,7 @@ class _ConversationCardState extends State<ConversationCard>
       children: [
         if (widget.chatLanguage != null && widget.chatLanguage!.isNotEmpty) ...[
           Text(
-            ConversationCard._flagForLanguage(widget.chatLanguage),
+            languageFlagEmoji(widget.chatLanguage),
             style: const TextStyle(fontSize: 14),
           ),
           const SizedBox(height: 2),
@@ -453,11 +415,11 @@ class _ConversationCardState extends State<ConversationCard>
 
     final flags = <String>[];
     if (profile.nativeLanguage != null && profile.nativeLanguage!.isNotEmpty) {
-      final f = ConversationCard._flagForLanguage(profile.nativeLanguage);
+      final f = languageFlagEmoji(profile.nativeLanguage);
       if (f.isNotEmpty) flags.add(f);
     }
     for (final lang in profile.languages) {
-      final f = ConversationCard._flagForLanguage(lang);
+      final f = languageFlagEmoji(lang);
       if (f.isNotEmpty && !flags.contains(f)) {
         flags.add(f);
       }
