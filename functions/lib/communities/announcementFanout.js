@@ -173,18 +173,9 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)({
         const commits = [];
         for (const uid of recipientIds) {
             const ref = db.collection('notifications').doc();
-            batch.set(ref, {
-                userId: uid,
-                type: 'community_announcement',
-                title,
-                message: body,
-                body,
-                data: dataPayload,
-                createdAt: admin.firestore.FieldValue.serverTimestamp(),
-                isRead: false,
+            batch.set(ref, Object.assign(Object.assign({ userId: uid, type: 'community_announcement' }, (communityImage ? { imageUrl: communityImage } : {})), { title, message: body, body, data: dataPayload, createdAt: admin.firestore.FieldValue.serverTimestamp(), isRead: false, 
                 // Members were already multicast above — skip the parity trigger.
-                pushSent: true,
-            });
+                pushSent: true }));
             ops++;
             if (ops >= BATCH_LIMIT) {
                 commits.push(batch.commit());
