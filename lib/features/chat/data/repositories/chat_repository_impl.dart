@@ -126,12 +126,9 @@ class ChatRepositoryImpl implements ChatRepository {
     try {
       return remoteDataSource
           .getConversationsStream(userId)
-          .map((conversations) => Right<Failure, List<Conversation>>(
-              conversations.map((c) => c.toEntity()).toList()))
-          .handleError((error) {
-        return Left<Failure, List<Conversation>>(
-            ServerFailure(error.toString()));
-      });
+          .map<Either<Failure, List<Conversation>>>(
+            (conversations) => Right(conversations.map((c) => c.toEntity()).toList()))
+          .transform(_errorsToLeft<List<Conversation>>());
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
     }
@@ -232,11 +229,9 @@ class ChatRepositoryImpl implements ChatRepository {
             query: query,
             limit: limit,
           )
-          .map((messages) =>
-              Right<Failure, List<Message>>(messages.map((m) => m.toEntity()).toList()))
-          .handleError((error) {
-        return Left<Failure, List<Message>>(ServerFailure(error.toString()));
-      });
+          .map<Either<Failure, List<Message>>>(
+            (messages) => Right(messages.map((m) => m.toEntity()).toList()))
+          .transform(_errorsToLeft<List<Message>>());
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
     }
@@ -610,4 +605,19 @@ class ChatRepositoryImpl implements ChatRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+}
+
+/// Turns stream errors into `Left` values so consumers actually see them.
+///
+/// `Stream.handleError` DISCARDS whatever its callback returns — it swallows
+/// the error and emits nothing at all. Every stream below used it to "map"
+/// errors to a `Left`, which meant a single Firestore hiccup silently ended
+/// the stream and left the bloc stuck on its loading state forever (an
+/// Exchanges chat list that never appears, with no error shown).
+StreamTransformer<Either<Failure, T>, Either<Failure, T>> _errorsToLeft<T>() {
+  return StreamTransformer<Either<Failure, T>, Either<Failure, T>>.fromHandlers(
+    handleData: (data, sink) => sink.add(data),
+    handleError: (error, stackTrace, sink) =>
+        sink.add(Left(ServerFailure(error.toString()))),
+  );
 }

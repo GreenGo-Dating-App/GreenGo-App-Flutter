@@ -10,7 +10,6 @@ import 'package:flutter/foundation.dart';
 /// Uses an in-memory cache with a 5-minute TTL to avoid redundant
 /// Firestore reads within the same session.
 class BlockedUsersService {
-
   BlockedUsersService({required this.firestore});
   final FirebaseFirestore firestore;
 
@@ -38,38 +37,50 @@ class BlockedUsersService {
   Future<Set<String>> getBlockedUserIds(String userId) async {
     final cached = _cache[userId];
     if (cached != null && cached.isValid) {
-      debugPrint('[BlockedUsersService] Cache hit for $userId (${cached.ids.length} ids)');
+      debugPrint(
+          '[BlockedUsersService] Cache hit for $userId (${cached.ids.length} ids)');
       return cached.ids;
     }
 
     final blockedIds = <String>{};
 
-    // Users I blocked
-    final blockedByMe = await firestore
-        .collection('blockedUsers')
-        .where('blockerId', isEqualTo: userId)
-        .limit(_queryLimit)
-        .get();
+    // Never let a blocklist hiccup take down the caller. This runs inside the
+    // conversations stream's asyncMap, where a thrown error kills the whole
+    // stream — which is how the Exchanges chat list ended up permanently
+    // empty. Degrading to "no blocks known" is the safe failure mode.
+    try {
+      // Users I blocked
+      final blockedByMe = await firestore
+          .collection('blockedUsers')
+          .where('blockerId', isEqualTo: userId)
+          .limit(_queryLimit)
+          .get();
 
-    for (final doc in blockedByMe.docs) {
-      final blockedUserId = doc.data()['blockedUserId'] as String?;
-      if (blockedUserId != null) blockedIds.add(blockedUserId);
+      for (final doc in blockedByMe.docs) {
+        final blockedUserId = doc.data()['blockedUserId'] as String?;
+        if (blockedUserId != null) blockedIds.add(blockedUserId);
+      }
+
+      // Users who blocked me
+      final blockedMe = await firestore
+          .collection('blockedUsers')
+          .where('blockedUserId', isEqualTo: userId)
+          .limit(_queryLimit)
+          .get();
+
+      for (final doc in blockedMe.docs) {
+        final blockerId = doc.data()['blockerId'] as String?;
+        if (blockerId != null) blockedIds.add(blockerId);
+      }
+
+      _cache[userId] = _CachedBlockedIds(blockedIds);
+      debugPrint(
+          '[BlockedUsersService] Cache stored for $userId (${blockedIds.length} ids)');
+    } catch (e) {
+      // Not cached: a transient failure should be retried on the next read.
+      debugPrint('[BlockedUsersService] Lookup failed for $userId: $e');
+      return <String>{};
     }
-
-    // Users who blocked me
-    final blockedMe = await firestore
-        .collection('blockedUsers')
-        .where('blockedUserId', isEqualTo: userId)
-        .limit(_queryLimit)
-        .get();
-
-    for (final doc in blockedMe.docs) {
-      final blockerId = doc.data()['blockerId'] as String?;
-      if (blockerId != null) blockedIds.add(blockerId);
-    }
-
-    _cache[userId] = _CachedBlockedIds(blockedIds);
-    debugPrint('[BlockedUsersService] Cache stored for $userId (${blockedIds.length} ids)');
 
     return blockedIds;
   }
@@ -88,7 +99,6 @@ class BlockedUsersService {
 }
 
 class _CachedBlockedIds {
-
   _CachedBlockedIds(this.ids) : fetchedAt = DateTime.now();
   final Set<String> ids;
   final DateTime fetchedAt;

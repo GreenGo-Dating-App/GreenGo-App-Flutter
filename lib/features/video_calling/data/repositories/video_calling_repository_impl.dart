@@ -113,11 +113,10 @@ class VideoCallingRepositoryImpl implements VideoCallingRepository {
   @override
   Stream<Either<Failure, VideoCall>> listenToCallUpdates(String callId) {
     try {
-      return remoteDataSource.listenToCallUpdates(callId).map((call) {
-        return Right<Failure, VideoCall>(call.toEntity());
-      }).handleError((error) {
-        return Left<Failure, VideoCall>(ServerFailure(error.toString()));
-      });
+      return remoteDataSource
+          .listenToCallUpdates(callId)
+          .map<Either<Failure, VideoCall>>((call) => Right(call.toEntity()))
+          .transform(_errorsToLeft<VideoCall>());
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
     }
@@ -153,11 +152,9 @@ class VideoCallingRepositoryImpl implements VideoCallingRepository {
     try {
       return remoteDataSource
           .listenToSignals(callId: callId, userId: userId)
-          .map((signal) {
-        return Right<Failure, CallSignal>(signal.toEntity());
-      }).handleError((error) {
-        return Left<Failure, CallSignal>(ServerFailure(error.toString()));
-      });
+          .map<Either<Failure, CallSignal>>(
+              (signal) => Right(signal.toEntity()))
+          .transform(_errorsToLeft<CallSignal>());
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
     }
@@ -391,4 +388,17 @@ class VideoCallingRepositoryImpl implements VideoCallingRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+}
+
+/// Turns stream errors into `Left` values so consumers actually see them.
+///
+/// `Stream.handleError` DISCARDS whatever its callback returns — it swallows
+/// the error and emits nothing at all, leaving the consumer stuck on its
+/// loading state forever.
+StreamTransformer<Either<Failure, T>, Either<Failure, T>> _errorsToLeft<T>() {
+  return StreamTransformer<Either<Failure, T>, Either<Failure, T>>.fromHandlers(
+    handleData: (data, sink) => sink.add(data),
+    handleError: (error, stackTrace, sink) =>
+        sink.add(Left(ServerFailure(error.toString()))),
+  );
 }
