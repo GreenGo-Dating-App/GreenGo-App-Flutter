@@ -31,26 +31,19 @@ import 'package:flutter/foundation.dart';
 class MapBasemap {
   const MapBasemap._();
 
-  /// GreenGo's decluttered take on OpenFreeMap's "Liberty" style, served from
-  /// our own hosting. Liberty renders OpenStreetMap data close to Google Maps;
-  /// this copy drops POI labels, road labels and shields, and residential /
-  /// service / track / path geometry, keeping the motorway-to-tertiary network,
-  /// rail, water and place names. 111 layers down to 85.
-  ///
-  /// Serving it ourselves means the look can be retuned by redeploying hosting
-  /// alone — no app build — while the tiles, sprites and glyphs it references
-  /// still come from OpenFreeMap. Point styleUrl at
-  /// https://tiles.openfreemap.org/styles/liberty for the full-detail original.
+  /// Vector style, used only when [useVector] is turned on in config. Left in
+  /// place because the migration works end to end in a build; it is off by
+  /// default because it did not render reliably on device.
   static const String defaultStyleUrl =
       'https://greengo-chat.web.app/greengo-map-style.json';
 
-  /// Raster fallback, used when [useVector] is false or the style fails.
+  /// The basemap: CARTO "Dark Matter". Minimal by design — muted dark land,
+  /// water and a thin road network with sparse labels — free, no API key, and
+  /// verified serving real 256px tiles (and @2x retina) at every zoom.
   static const String defaultTileUrl =
-      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
-  /// Credit for the default vector basemap. OpenFreeMap renders OpenStreetMap
-  /// data, so OSM is who gets named; override it in config alongside a
-  /// tileUrl/styleUrl that needs different wording.
-  static const String defaultAttribution = 'OpenStreetMap contributors';
+      'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+  /// Credit for the default basemap: CARTO renders OpenStreetMap data.
+  static const String defaultAttribution = 'CARTO, OpenStreetMap contributors';
   static const double defaultMaxZoom = 19;
 
   /// City level. 3-5 is continent/country, 11-13 shows a city and its
@@ -58,7 +51,7 @@ class MapBasemap {
   static const double defaultInitialZoom = 12;
 
   static String _styleUrl = defaultStyleUrl;
-  static bool _useVector = true;
+  static bool _useVector = false;
   static String _tileUrl = defaultTileUrl;
   static String _attribution = defaultAttribution;
   static double _maxZoom = defaultMaxZoom;
@@ -66,8 +59,8 @@ class MapBasemap {
 
   static String get styleUrl => _styleUrl;
 
-  /// Whether to draw the vector basemap. Flip this to false in Firestore to
-  /// fall straight back to raster tiles without shipping a build.
+  /// Whether to draw the vector basemap. Off by default; flip it to true in
+  /// Firestore to try vector again without shipping a build.
   static bool get useVector => _useVector;
 
   static String get tileUrl => _tileUrl;

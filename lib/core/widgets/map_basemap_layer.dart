@@ -30,11 +30,22 @@ class _MapBasemapLayerState extends State<MapBasemapLayer> {
   static Future<Style> _readStyle() =>
       _style ??= StyleReader(uri: MapBasemap.styleUrl).read();
 
-  Widget _raster() => TileLayer(
-        urlTemplate: MapBasemap.tileUrl,
-        userAgentPackageName: 'com.greengochat.greengochatapp',
-        maxZoom: MapBasemap.maxZoom,
-      );
+  Widget _raster() {
+    final url = MapBasemap.tileUrl;
+    // Derived from the template rather than hardcoded, so any URL configured
+    // in app_config works: a {s} template needs subdomains to substitute, and
+    // retinaMode is what fills {r} with "@2x". Turning retinaMode on for a URL
+    // with no {r} makes flutter_map fake it by upscaling lower-zoom tiles,
+    // which just looks blurry.
+    return TileLayer(
+      urlTemplate: url,
+      subdomains:
+          url.contains('{s}') ? const ['a', 'b', 'c', 'd'] : const <String>[],
+      retinaMode: url.contains('{r}'),
+      userAgentPackageName: 'com.greengochat.greengochatapp',
+      maxZoom: MapBasemap.maxZoom,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -160,7 +160,7 @@ class _GlobeMapViewState extends State<GlobeMapView>
         initialZoom: MapBasemap.initialZoom,
         minZoom: 2.0,
         maxZoom: 18.0,
-        backgroundColor: const Color(0xFFF0EDE5),
+        backgroundColor: const Color(0xFF1A1A2E),
         interactionOptions: const InteractionOptions(
           flags: InteractiveFlag.all,
         ),
