@@ -180,14 +180,18 @@ class _GlobeMapViewState extends State<GlobeMapView>
       children: [
         TileLayer(
           urlTemplate:
-              'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-          subdomains: const ['a', 'b', 'c', 'd'],
+              'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
           userAgentPackageName: 'com.greengochat.greengochatapp',
           maxZoom: 19,
-          retinaMode: true,
         ),
         PolylineLayer(polylines: _buildFlightPaths()),
         MarkerLayer(markers: _buildMarkers(l10n)),
+        // OSM's tile usage policy requires visible attribution.
+        const RichAttributionWidget(
+          attributions: [
+            TextSourceAttribution('OpenStreetMap contributors'),
+          ],
+        ),
       ],
     );
 
