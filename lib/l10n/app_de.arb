@@ -4656,5 +4656,9 @@
   "onboardingSubmitCreatingProfile": "Dein Profil wird erstellt…",
   "onboardingSubmitGrantingCoins": "Deine Coins werden eingerichtet…",
   "onboardingSubmitFinishingUp": "Fast geschafft…",
-  "onboardingSubmitPleaseWait": "Das dauert nur einen Moment"
+  "onboardingSubmitPleaseWait": "Das dauert nur einen Moment",
+  "chatSettingSilverPlusOnly": "Ab Silber verfügbar",
+  "chatSettingXpBarHint": "Erscheint, sobald du in diesem Chat XP sammelst",
+  "chatSettingLanguageFlagsHint": "Wird bei übersetzten Nachrichten angezeigt",
+  "chatSmartRepliesLoading": "Antworten werden vorbereitet..."
 }

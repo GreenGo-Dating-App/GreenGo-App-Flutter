@@ -13914,6 +13914,20 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get onboardingSubmitPleaseWait => 'Demora apenas um momento';
+
+  @override
+  String get chatSettingSilverPlusOnly => 'Disponível a partir do Silver';
+
+  @override
+  String get chatSettingXpBarHint =>
+      'Aparece assim que ganhar XP nesta conversa';
+
+  @override
+  String get chatSettingLanguageFlagsHint =>
+      'Apresentado nas mensagens com tradução';
+
+  @override
+  String get chatSmartRepliesLoading => 'A preparar respostas...';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -27803,4 +27817,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get onboardingSubmitPleaseWait => 'Leva apenas um instante';
+
+  @override
+  String get chatSettingSilverPlusOnly => 'Disponível a partir do Silver';
+
+  @override
+  String get chatSettingXpBarHint =>
+      'Aparece assim que você ganhar XP nesta conversa';
+
+  @override
+  String get chatSettingLanguageFlagsHint =>
+      'Aparece nas mensagens com tradução';
+
+  @override
+  String get chatSmartRepliesLoading => 'Preparando respostas...';
 }

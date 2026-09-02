@@ -4075,5 +4075,9 @@
   "onboardingSubmitCreatingProfile": "Création de votre profil…",
   "onboardingSubmitGrantingCoins": "Configuration de vos pièces…",
   "onboardingSubmitFinishingUp": "Presque terminé…",
-  "onboardingSubmitPleaseWait": "Cela ne prend qu'un instant"
+  "onboardingSubmitPleaseWait": "Cela ne prend qu'un instant",
+  "chatSettingSilverPlusOnly": "Disponible a partir de Silver",
+  "chatSettingXpBarHint": "Apparaît dès que vous gagnez de l'XP dans cette discussion",
+  "chatSettingLanguageFlagsHint": "Affiché sur les messages traduits",
+  "chatSmartRepliesLoading": "Préparation des réponses..."
 }

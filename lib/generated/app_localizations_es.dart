@@ -13943,4 +13943,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get onboardingSubmitPleaseWait => 'Esto solo tarda un momento';
+
+  @override
+  String get chatSettingSilverPlusOnly => 'Disponible desde Plata';
+
+  @override
+  String get chatSettingXpBarHint => 'Aparece cuando ganas XP en este chat';
+
+  @override
+  String get chatSettingLanguageFlagsHint =>
+      'Se muestra en mensajes con traducción';
+
+  @override
+  String get chatSmartRepliesLoading => 'Pensando respuestas...';
 }
