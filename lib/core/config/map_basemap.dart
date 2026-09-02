@@ -11,7 +11,10 @@ import 'package:flutter/foundation.dart';
 /// rebuilding and redeploying either app — settling on a look otherwise costs
 /// a full build + store/hosting cycle per attempt. Fields (all optional):
 ///
-///   tileUrl      raster template, e.g.
+///   styleUrl     MapLibre style JSON for the vector basemap
+///   useVector    false pins the app to the raster fallback below
+///   tileUrl      raster template used when useVector is false, or when the
+///                vector style fails to load, e.g.
 ///                https://tile.openstreetmap.org/{z}/{x}/{y}.png
 ///   attribution  credit line shown on the map
 ///   maxZoom      furthest zoom the provider serves
@@ -28,20 +31,37 @@ import 'package:flutter/foundation.dart';
 class MapBasemap {
   const MapBasemap._();
 
+  /// OpenFreeMap's "Liberty" style — OpenStreetMap data rendered close to
+  /// Google Maps. Free with no key and no request quota, and self-hostable
+  /// from the same data if the public instance ever has to be left behind.
+  static const String defaultStyleUrl =
+      'https://tiles.openfreemap.org/styles/liberty';
+
+  /// Raster fallback, used when [useVector] is false or the style fails.
   static const String defaultTileUrl =
       'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
-  static const String defaultAttribution =
-      'Esri, HERE, Garmin, OpenStreetMap contributors';
+  /// Credit for the default vector basemap. OpenFreeMap renders OpenStreetMap
+  /// data, so OSM is who gets named; override it in config alongside a
+  /// tileUrl/styleUrl that needs different wording.
+  static const String defaultAttribution = 'OpenStreetMap contributors';
   static const double defaultMaxZoom = 19;
 
   /// City level. 3-5 is continent/country, 11-13 shows a city and its
   /// surroundings, 15+ is street level.
   static const double defaultInitialZoom = 12;
 
+  static String _styleUrl = defaultStyleUrl;
+  static bool _useVector = true;
   static String _tileUrl = defaultTileUrl;
   static String _attribution = defaultAttribution;
   static double _maxZoom = defaultMaxZoom;
   static double _initialZoom = defaultInitialZoom;
+
+  static String get styleUrl => _styleUrl;
+
+  /// Whether to draw the vector basemap. Flip this to false in Firestore to
+  /// fall straight back to raster tiles without shipping a build.
+  static bool get useVector => _useVector;
 
   static String get tileUrl => _tileUrl;
   static String get attribution => _attribution;
@@ -58,6 +78,12 @@ class MapBasemap {
           .get();
       final data = doc.data();
       if (data == null) return;
+
+      final style = data['styleUrl'] as String?;
+      if (style != null && style.startsWith('http')) _styleUrl = style;
+
+      final vector = data['useVector'];
+      if (vector is bool) _useVector = vector;
 
       final url = data['tileUrl'] as String?;
       if (url != null && url.contains('{z}')) _tileUrl = url;

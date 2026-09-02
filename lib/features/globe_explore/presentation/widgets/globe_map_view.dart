@@ -9,6 +9,7 @@ import 'package:latlong2/latlong.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/config/map_basemap.dart';
+import '../../../../core/widgets/map_basemap_layer.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/country_centroids.dart';
@@ -181,15 +182,10 @@ class _GlobeMapViewState extends State<GlobeMapView>
         },
       ),
       children: [
-        TileLayer(
-          urlTemplate:
-              MapBasemap.tileUrl,
-          userAgentPackageName: 'com.greengochat.greengochatapp',
-          maxZoom: MapBasemap.maxZoom,
-        ),
+        const MapBasemapLayer(),
         PolylineLayer(polylines: _buildFlightPaths()),
         MarkerLayer(markers: _buildMarkers(l10n)),
-        // OSM's tile usage policy requires visible attribution.
+        // OpenStreetMap data requires visible attribution.
         RichAttributionWidget(
           attributions: [
             TextSourceAttribution(MapBasemap.attribution),

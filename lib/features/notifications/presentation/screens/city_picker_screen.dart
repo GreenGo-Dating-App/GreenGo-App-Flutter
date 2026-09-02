@@ -9,7 +9,7 @@ import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart' as ll;
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/config/map_basemap.dart';
+import '../../../../core/widgets/map_basemap_layer.dart';
 
 /// Full-screen map city picker for event-alert subscriptions.
 ///
@@ -333,12 +333,7 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
           onTap: (_, point) => _onTap(point.latitude, point.longitude),
         ),
         children: [
-          TileLayer(
-            urlTemplate:
-                MapBasemap.tileUrl,
-            userAgentPackageName: 'com.greengochat.greengochatapp',
-            maxZoom: MapBasemap.maxZoom,
-          ),
+          const MapBasemapLayer(),
           if (_hasPin)
             MarkerLayer(
               markers: [
