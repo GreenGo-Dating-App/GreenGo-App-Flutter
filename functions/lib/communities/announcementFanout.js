@@ -69,7 +69,7 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)({
     document: 'communities/{communityId}/messages/{messageId}',
     memory: pushRuntime_1.PUSH_MEMORY,
 }, (0, monitoring_1.monitored)('onCommunityAnnouncementCreated', async (event) => {
-    var _a, _b;
+    var _a, _b, _c;
     const snap = event.data;
     if (!snap)
         return;
@@ -100,6 +100,7 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)({
         .doc(communityId)
         .get();
     const communityName = ((_a = communitySnap.data()) === null || _a === void 0 ? void 0 : _a.name) || 'A community';
+    const communityImage = ((_b = communitySnap.data()) === null || _b === void 0 ? void 0 : _b.imageUrl) || undefined;
     const title = `📣 ${communityName}`;
     const body = preview(msg.content || '');
     const dataPayload = {
@@ -135,7 +136,7 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)({
         const userDocs = await Promise.all(recipientIds.map((uid) => db.collection('users').doc(uid).get()));
         const tokens = [];
         for (const ud of userDocs) {
-            const t = (_b = ud.data()) === null || _b === void 0 ? void 0 : _b.fcmToken;
+            const t = (_c = ud.data()) === null || _c === void 0 ? void 0 : _c.fcmToken;
             if (t)
                 tokens.push(t);
         }
@@ -144,7 +145,7 @@ exports.onCommunityAnnouncementCreated = (0, firestore_1.onDocumentCreated)({
             try {
                 await admin.messaging().sendEachForMulticast({
                     tokens: chunk,
-                    notification: (0, brand_1.brandPush)(title, body),
+                    notification: (0, brand_1.brandPush)(title, body, communityImage),
                     data: dataPayload,
                     android: {
                         priority: 'high',
