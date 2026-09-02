@@ -154,9 +154,9 @@ class _GlobeMapViewState extends State<GlobeMapView>
       mapController: _mapController,
       options: MapOptions(
         initialCenter: initialCenter,
-        // Open on the user's own area, not a continent-wide view. minZoom
+        // Open on the user's own city, not a continent-wide view. minZoom
         // still allows pinching all the way back out to the world.
-        initialZoom: 11.0,
+        initialZoom: MapBasemap.initialZoom,
         minZoom: 2.0,
         maxZoom: 18.0,
         backgroundColor: const Color(0xFFF0EDE5),

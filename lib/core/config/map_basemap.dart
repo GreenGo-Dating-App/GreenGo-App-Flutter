@@ -15,6 +15,7 @@ import 'package:flutter/foundation.dart';
 ///                https://tile.openstreetmap.org/{z}/{x}/{y}.png
 ///   attribution  credit line shown on the map
 ///   maxZoom      furthest zoom the provider serves
+///   initialZoom  how far in the world map opens (11-13 is city level)
 ///
 /// Some ready-made values, all verified keyless:
 ///   Esri Street   .../World_Street_Map/MapServer/tile/{z}/{y}/{x}
@@ -33,13 +34,19 @@ class MapBasemap {
       'Esri, HERE, Garmin, OpenStreetMap contributors';
   static const double defaultMaxZoom = 19;
 
+  /// City level. 3-5 is continent/country, 11-13 shows a city and its
+  /// surroundings, 15+ is street level.
+  static const double defaultInitialZoom = 12;
+
   static String _tileUrl = defaultTileUrl;
   static String _attribution = defaultAttribution;
   static double _maxZoom = defaultMaxZoom;
+  static double _initialZoom = defaultInitialZoom;
 
   static String get tileUrl => _tileUrl;
   static String get attribution => _attribution;
   static double get maxZoom => _maxZoom;
+  static double get initialZoom => _initialZoom;
 
   /// Pull the override once at startup. Best-effort: any failure leaves the
   /// defaults in place, so the map always draws something.
@@ -60,6 +67,11 @@ class MapBasemap {
 
       final zoom = data['maxZoom'];
       if (zoom is num && zoom > 0 && zoom <= 23) _maxZoom = zoom.toDouble();
+
+      final start = data['initialZoom'];
+      if (start is num && start >= 1 && start <= 20) {
+        _initialZoom = start.toDouble();
+      }
     } catch (e) {
       debugPrint('MapBasemap: using defaults ($e)');
     }
