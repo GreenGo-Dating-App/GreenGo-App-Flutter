@@ -31,11 +31,18 @@ import 'package:flutter/foundation.dart';
 class MapBasemap {
   const MapBasemap._();
 
-  /// OpenFreeMap's "Liberty" style — OpenStreetMap data rendered close to
-  /// Google Maps. Free with no key and no request quota, and self-hostable
-  /// from the same data if the public instance ever has to be left behind.
+  /// GreenGo's decluttered take on OpenFreeMap's "Liberty" style, served from
+  /// our own hosting. Liberty renders OpenStreetMap data close to Google Maps;
+  /// this copy drops POI labels, road labels and shields, and residential /
+  /// service / track / path geometry, keeping the motorway-to-tertiary network,
+  /// rail, water and place names. 111 layers down to 85.
+  ///
+  /// Serving it ourselves means the look can be retuned by redeploying hosting
+  /// alone — no app build — while the tiles, sprites and glyphs it references
+  /// still come from OpenFreeMap. Point styleUrl at
+  /// https://tiles.openfreemap.org/styles/liberty for the full-detail original.
   static const String defaultStyleUrl =
-      'https://tiles.openfreemap.org/styles/liberty';
+      'https://greengo-chat.web.app/greengo-map-style.json';
 
   /// Raster fallback, used when [useVector] is false or the style fails.
   static const String defaultTileUrl =
