@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:dartz/dartz.dart';
 
 import '../../../../core/error/failures.dart';
@@ -142,14 +144,9 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
     try {
       return remoteDataSource
           .getCommunityMessages(communityId, limit: limit)
-          .map((messages) => Right<Failure, List<CommunityMessage>>(
-                messages.map((m) => m.toEntity()).toList(),
-              ))
-          .handleError((error) {
-        return Left<Failure, List<CommunityMessage>>(
-          ServerFailure(error.toString()),
-        );
-      });
+          .map<Either<Failure, List<CommunityMessage>>>(
+            (messages) => Right(messages.map((m) => m.toEntity()).toList()))
+          .transform(_errorsToLeft<List<CommunityMessage>>());
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
     }
@@ -365,4 +362,19 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+}
+
+/// Turns stream errors into `Left` values so consumers actually see them.
+///
+/// `Stream.handleError` DISCARDS whatever its callback returns — it swallows
+/// the error and emits nothing at all. Every stream below used it to "map"
+/// errors to a `Left`, which meant a single Firestore hiccup silently ended
+/// the stream and left the bloc stuck on its loading state forever (an
+/// Exchanges chat list that never appears, with no error shown).
+StreamTransformer<Either<Failure, T>, Either<Failure, T>> _errorsToLeft<T>() {
+  return StreamTransformer<Either<Failure, T>, Either<Failure, T>>.fromHandlers(
+    handleData: (data, sink) => sink.add(data),
+    handleError: (error, stackTrace, sink) =>
+        sink.add(Left(ServerFailure(error.toString()))),
+  );
 }

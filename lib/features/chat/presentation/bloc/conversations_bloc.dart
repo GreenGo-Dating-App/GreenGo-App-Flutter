@@ -88,6 +88,10 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
           },
         );
       },
+      // Without this, an error on the stream leaves the bloc stuck on
+      // ConversationsLoading forever and the Exchanges list never appears.
+      onError: (error, stackTrace) =>
+          ConversationsError('Failed to load conversations: $error'),
     );
   }
 
