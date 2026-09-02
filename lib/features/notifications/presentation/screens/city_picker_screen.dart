@@ -9,6 +9,7 @@ import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart' as ll;
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/config/map_basemap.dart';
 
 /// Full-screen map city picker for event-alert subscriptions.
 ///
@@ -334,9 +335,9 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
         children: [
           TileLayer(
             urlTemplate:
-                'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+                MapBasemap.tileUrl,
             userAgentPackageName: 'com.greengochat.greengochatapp',
-            maxZoom: 19,
+            maxZoom: MapBasemap.maxZoom,
           ),
           if (_hasPin)
             MarkerLayer(

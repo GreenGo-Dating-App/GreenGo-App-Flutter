@@ -20,6 +20,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'core/config/map_basemap.dart';
 import 'core/config/app_config.dart';
 import 'core/config/flavor_config.dart';
 import 'features/analytics/data/services/performance_monitoring_service.dart';
@@ -280,6 +281,10 @@ void main() async {
   // Load saved language before app starts (prevents flicker)
   final prefs = await SharedPreferences.getInstance();
   final savedLanguage = prefs.getString('selected_language');
+
+  // Basemap style override, if one is configured. Not awaited — the maps fall
+  // back to the built-in default until it lands.
+  unawaited(MapBasemap.load());
 
   runApp(GreenGoChatApp(savedLanguage: savedLanguage));
 }

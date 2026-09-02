@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:latlong2/latlong.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/config/map_basemap.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
@@ -193,9 +194,9 @@ class _WebLocationPickerScreenState extends State<WebLocationPickerScreen> {
             children: [
               TileLayer(
                 urlTemplate:
-                    'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+                    MapBasemap.tileUrl,
                 userAgentPackageName: 'com.greengochat.greengochatapp',
-                maxZoom: 19,
+                maxZoom: MapBasemap.maxZoom,
               ),
               if (_hasPin)
                 MarkerLayer(
