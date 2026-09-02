@@ -13766,4 +13766,16 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get resetErrorFailed =>
       'Failed to send reset email. Please try again.';
+
+  @override
+  String get onboardingSubmitCreatingProfile => 'Creating your profile…';
+
+  @override
+  String get onboardingSubmitGrantingCoins => 'Setting up your coins…';
+
+  @override
+  String get onboardingSubmitFinishingUp => 'Almost there…';
+
+  @override
+  String get onboardingSubmitPleaseWait => 'This only takes a moment';
 }

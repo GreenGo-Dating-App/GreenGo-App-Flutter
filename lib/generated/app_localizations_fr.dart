@@ -13989,4 +13989,16 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get resetErrorFailed =>
       'Échec de l\'envoi de l\'e-mail de réinitialisation. Veuillez réessayer.';
+
+  @override
+  String get onboardingSubmitCreatingProfile => 'Création de votre profil…';
+
+  @override
+  String get onboardingSubmitGrantingCoins => 'Configuration de vos pièces…';
+
+  @override
+  String get onboardingSubmitFinishingUp => 'Presque terminé…';
+
+  @override
+  String get onboardingSubmitPleaseWait => 'Cela ne prend qu\'un instant';
 }

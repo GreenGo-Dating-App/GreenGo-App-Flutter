@@ -47,7 +47,11 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 24),
             child: LuxuryButton(
               text: l10n.profilePreviewCompleteButton,
-              onPressed: () => _handleComplete(context),
+              isLoading: state.isSubmitting,
+              // Null while submitting so the button itself is inert even
+              // before the overlay paints.
+              onPressed:
+                  state.isSubmitting ? null : () => _handleComplete(context),
             ),
           ),
           child: Padding(

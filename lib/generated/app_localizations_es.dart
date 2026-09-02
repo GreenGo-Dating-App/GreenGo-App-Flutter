@@ -13931,4 +13931,16 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get resetErrorFailed =>
       'No se pudo enviar el correo de restablecimiento. Inténtalo de nuevo.';
+
+  @override
+  String get onboardingSubmitCreatingProfile => 'Creando tu perfil…';
+
+  @override
+  String get onboardingSubmitGrantingCoins => 'Preparando tus monedas…';
+
+  @override
+  String get onboardingSubmitFinishingUp => 'Ya casi está…';
+
+  @override
+  String get onboardingSubmitPleaseWait => 'Esto solo tarda un momento';
 }

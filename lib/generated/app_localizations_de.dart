@@ -13946,4 +13946,17 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get resetErrorFailed =>
       'Die E-Mail zum Zurücksetzen konnte nicht gesendet werden. Bitte versuche es erneut.';
+
+  @override
+  String get onboardingSubmitCreatingProfile => 'Dein Profil wird erstellt…';
+
+  @override
+  String get onboardingSubmitGrantingCoins =>
+      'Deine Coins werden eingerichtet…';
+
+  @override
+  String get onboardingSubmitFinishingUp => 'Fast geschafft…';
+
+  @override
+  String get onboardingSubmitPleaseWait => 'Das dauert nur einen Moment';
 }

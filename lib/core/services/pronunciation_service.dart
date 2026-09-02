@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:audioplayers/audioplayers.dart' as ap;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
@@ -25,6 +26,10 @@ class PronunciationService {
 
   // In-memory cache to avoid repeated Firestore reads within same session
   final Map<String, String> _memoryCache = {};
+
+  // Web has no writable filesystem, so freshly synthesised audio is kept in
+  // memory for the session instead of on disk.
+  final Map<String, Uint8List> _webBytesCache = {};
 
   String? _cloudTtsApiKey;
 
@@ -62,6 +67,9 @@ class PronunciationService {
   /// Strategy: local file cache → Firestore/Storage cache → Cloud TTS generate.
   /// Audio is saved to Firebase Storage for cross-device/cross-session reuse.
   Future<String?> getPronunciationFilePath(String phrase, String language, {bool isMale = true}) async {
+    // Web cannot produce a file path at all — callers must use
+    // [getPronunciationSource], which handles both platforms.
+    if (kIsWeb) return null;
     final genderSuffix = isMale ? '_m' : '_f';
     final key = '${_cacheKey(phrase, language)}$genderSuffix';
 
@@ -123,8 +131,9 @@ class PronunciationService {
     return null;
   }
 
-  /// Save audio bytes to local temp file
+  /// Save audio bytes to local temp file. Native only — web has no temp dir.
   Future<String?> _saveLocally(String key, Uint8List audioBytes) async {
+    if (kIsWeb) return null;
     try {
       final tempDir = await getTemporaryDirectory();
       final file = File('${tempDir.path}/tts_$key.mp3');
@@ -164,6 +173,60 @@ class PronunciationService {
   Future<String?> getPronunciationUrl(String phrase, String language, {bool isMale = true}) async {
     final filePath = await getPronunciationFilePath(phrase, language, isMale: isMale);
     return filePath != null ? 'file://$filePath' : null;
+  }
+
+  /// Playable audio for [phrase], resolved for the current platform.
+  ///
+  /// Native keeps the existing temp-file cache. Web has neither `dart:io` nor
+  /// `path_provider`, so the file layer is skipped entirely: cached audio plays
+  /// straight from its Storage URL and freshly synthesised audio plays from
+  /// bytes. Both platforms share the same `pronunciation_cache` documents, so
+  /// web reuses whatever mobile has already generated and never double-spends
+  /// on Cloud TTS.
+  Future<ap.Source?> getPronunciationSource(
+    String phrase,
+    String language, {
+    bool isMale = true,
+  }) async {
+    if (!kIsWeb) {
+      final path =
+          await getPronunciationFilePath(phrase, language, isMale: isMale);
+      return path == null ? null : ap.DeviceFileSource(path);
+    }
+
+    final genderSuffix = isMale ? '_m' : '_f';
+    final key = '${_cacheKey(phrase, language)}$genderSuffix';
+
+    // 1. Already synthesised earlier in this session.
+    final cachedBytes = _webBytesCache[key];
+    if (cachedBytes != null) return ap.BytesSource(cachedBytes);
+
+    // 2. Shared Storage cache.
+    try {
+      final doc =
+          await _firestore.collection('pronunciation_cache').doc(key).get();
+      if (doc.exists) {
+        final url = doc.data()?['audioUrl'] as String?;
+        if (url != null && url.isNotEmpty) {
+          doc.reference.update({
+            'accessCount': FieldValue.increment(1),
+            'lastAccessed': FieldValue.serverTimestamp(),
+          }).catchError((_) {});
+          return ap.UrlSource(url);
+        }
+      }
+    } catch (e) {
+      debugPrint('PronunciationService: web cache check failed: $e');
+    }
+
+    // 3. Generate via Cloud TTS, then publish to the shared cache.
+    final audioBytes =
+        await _generatePronunciation(phrase, language, isMale: isMale);
+    if (audioBytes == null) return null;
+
+    _webBytesCache[key] = audioBytes;
+    _uploadToFirebase(key, phrase, language, audioBytes).catchError((_) {});
+    return ap.BytesSource(audioBytes);
   }
 
   // ===== Google Cloud TTS (Chirp 3 HD) =====

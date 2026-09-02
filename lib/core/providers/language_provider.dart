@@ -18,6 +18,23 @@ class LanguageProvider extends ChangeNotifier {
 
   Locale get currentLocale => _currentLocale;
 
+  /// The language the user has picked, read straight from the local cache.
+  ///
+  /// For code with no BuildContext (data sources, background work) that still
+  /// needs to tell the backend which language to answer in — e.g. the welcome
+  /// email sent during registration, before any profile exists. Returns codes
+  /// like `en` or `pt_BR`; falls back to `en`.
+  static Future<String> currentLanguageCode() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final stored = prefs.getString(_languageKey);
+      if (stored != null && stored.isNotEmpty) return stored;
+    } catch (e) {
+      debugPrint('Failed to read cached language: $e');
+    }
+    return 'en';
+  }
+
   static const List<Locale> supportedLocales = [
     Locale('en'), // English
     Locale('it'), // Italian

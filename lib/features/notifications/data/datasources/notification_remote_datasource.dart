@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show debugPrint, kIsWeb;
 import '../../../../core/config/web_push_config.dart';
 import '../../domain/entities/notification.dart';
 import '../models/notification_model.dart';
@@ -343,11 +343,15 @@ class NotificationRemoteDataSourceImpl
     try {
       if (kIsWeb) {
         // Web requires a VAPID key + a registered firebase-messaging-sw.js.
-        // Without a configured key, skip gracefully so the web build still runs.
-        if (!WebPushConfig.isConfigured) return null;
-        return await messaging.getToken(
-          vapidKey: WebPushConfig.vapidPublicKey,
-        );
+        // The key comes from the build-time define or, failing that, from
+        // app_config/web_push — so it can be added without a redeploy.
+        // Without one, skip gracefully so the web build still runs.
+        final vapidKey = await WebPushConfig.resolveVapidKey();
+        if (vapidKey == null || vapidKey.isEmpty) {
+          debugPrint('[FCM] No VAPID key configured — web push disabled.');
+          return null;
+        }
+        return await messaging.getToken(vapidKey: vapidKey);
       }
       return await messaging.getToken();
     } catch (e) {

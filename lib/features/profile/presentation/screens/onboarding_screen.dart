@@ -11,6 +11,7 @@ import '../../../membership/data/datasources/pending_signup_coupon.dart';
 import '../bloc/onboarding_bloc.dart';
 import '../bloc/onboarding_event.dart';
 import '../bloc/onboarding_state.dart';
+import '../widgets/onboarding_submit_overlay.dart';
 import 'onboarding/onboarding_exit.dart';
 import 'onboarding/step0_welcome_screen.dart';
 import 'onboarding/step1_basic_info_screen.dart';
@@ -105,6 +106,7 @@ class OnboardingScreen extends StatelessWidget {
           void handleBack(bool didPop, dynamic _) {
             if (didPop) return;
             final s = context.read<OnboardingBloc>().state;
+            if (s is OnboardingInProgress && s.isSubmitting) return;
             if (s is OnboardingInProgress && s.stepIndex > 0) {
               context.read<OnboardingBloc>().add(const OnboardingPreviousStep());
             } else {
@@ -113,13 +115,18 @@ class OnboardingScreen extends StatelessWidget {
           }
 
           if (state is OnboardingInitial || state is! OnboardingInProgress) {
+            // OnboardingComplete lands here too, between the bloc finishing and
+            // the navigation below landing — keep the submit overlay up across
+            // that gap instead of flashing a bare spinner.
+            final completing = state is OnboardingComplete;
             return PopScope(
               canPop: false,
               onPopInvokedWithResult: handleBack,
-              child: const Scaffold(
-                body: Center(
-                  child: CircularProgressIndicator(),
-                ),
+              child: Scaffold(
+                backgroundColor: completing ? Colors.black : null,
+                body: completing
+                    ? const OnboardingSubmitOverlay()
+                    : const Center(child: CircularProgressIndicator()),
               ),
             );
           }
@@ -174,7 +181,18 @@ class OnboardingScreen extends StatelessWidget {
               },
               child: KeyedSubtree(
                 key: ValueKey(state.currentStep),
-                child: stepWidget,
+                child: state.isSubmitting
+                    ? Stack(
+                        children: [
+                          stepWidget,
+                          Positioned.fill(
+                            child: OnboardingSubmitOverlay(
+                              stage: state.submitStage,
+                            ),
+                          ),
+                        ],
+                      )
+                    : stepWidget,
               ),
             ),
           );

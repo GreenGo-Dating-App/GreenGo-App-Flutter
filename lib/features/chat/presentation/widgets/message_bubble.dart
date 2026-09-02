@@ -1,6 +1,5 @@
 import 'dart:ui' as ui;
 
-import 'package:audioplayers/audioplayers.dart' as ap show DeviceFileSource;
 import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
@@ -387,11 +386,13 @@ class _MessageBubbleState extends State<MessageBubble> {
     setState(() => _isTtsLoading = true);
 
     try {
-      final filePath = await PronunciationService().getPronunciationFilePath(
+      // Platform-agnostic: a device file on native, a Storage URL or raw bytes
+      // on web (which has no filesystem).
+      final source = await PronunciationService().getPronunciationSource(
         text, lang, isMale: senderIsMale,
       );
-      if (filePath != null && mounted) {
-        debugPrint('TTS: Playing Cloud TTS audio (${senderIsMale ? "male" : "female"} voice) from $filePath');
+      if (source != null && mounted) {
+        debugPrint('TTS: Playing Cloud TTS audio (${senderIsMale ? "male" : "female"} voice)');
         setState(() { _isTtsLoading = false; _isTtsPlaying = true; });
 
         _audioPlayer.onPlayerComplete.first.then((_) {
@@ -399,7 +400,7 @@ class _MessageBubbleState extends State<MessageBubble> {
         });
 
         await _audioPlayer.setVolume(1.0);
-        await _audioPlayer.play(ap.DeviceFileSource(filePath));
+        await _audioPlayer.play(source);
       } else {
         debugPrint('TTS: Cloud TTS failed after 3 retries');
         if (mounted) setState(() => _isTtsLoading = false);

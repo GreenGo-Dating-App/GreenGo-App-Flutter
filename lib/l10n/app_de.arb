@@ -4652,5 +4652,9 @@
   "resetEmailSentBody": "Ein Link zum Zurücksetzen des Passworts wurde an {email} gesendet.\n\nBitte überprüfe deinen Posteingang und den Spam-Ordner.",
   "resetErrorInvalidEmail": "Ungültige E-Mail-Adresse.",
   "resetErrorUnavailable": "Dienst vorübergehend nicht verfügbar. Bitte versuche es später erneut.",
-  "resetErrorFailed": "Die E-Mail zum Zurücksetzen konnte nicht gesendet werden. Bitte versuche es erneut."
+  "resetErrorFailed": "Die E-Mail zum Zurücksetzen konnte nicht gesendet werden. Bitte versuche es erneut.",
+  "onboardingSubmitCreatingProfile": "Dein Profil wird erstellt…",
+  "onboardingSubmitGrantingCoins": "Deine Coins werden eingerichtet…",
+  "onboardingSubmitFinishingUp": "Fast geschafft…",
+  "onboardingSubmitPleaseWait": "Das dauert nur einen Moment"
 }

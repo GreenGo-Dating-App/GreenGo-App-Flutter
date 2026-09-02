@@ -31,6 +31,17 @@ class OnboardingInitial extends OnboardingState {
   const OnboardingInitial();
 }
 
+/// Stages of the final "Complete Profile" submit, in the order they run.
+///
+/// Registration does real work for several seconds (profile write, welcome
+/// coins, coupon + referral redemption, then an auth access re-check), so the
+/// UI reports which stage it is on instead of freezing on a live button.
+enum OnboardingSubmitStage {
+  creatingProfile,
+  grantingCoins,
+  finishingUp,
+}
+
 class OnboardingInProgress extends OnboardingState {
 
   const OnboardingInProgress({
@@ -54,6 +65,7 @@ class OnboardingInProgress extends OnboardingState {
     this.nativeLanguage,
     this.travelPreference,
     this.isUploading = false,
+    this.submitStage,
   });
   final String userId;
   final OnboardingStep currentStep;
@@ -76,6 +88,12 @@ class OnboardingInProgress extends OnboardingState {
   final String? travelPreference;
   final bool isUploading;
 
+  /// Non-null while the final submit is running. Drives the blocking overlay
+  /// on the preview step and disables the Complete Profile button.
+  final OnboardingSubmitStage? submitStage;
+
+  bool get isSubmitting => submitStage != null;
+
   OnboardingInProgress copyWith({
     OnboardingStep? currentStep,
     String? displayName,
@@ -96,6 +114,7 @@ class OnboardingInProgress extends OnboardingState {
     String? nativeLanguage,
     String? travelPreference,
     bool? isUploading,
+    OnboardingSubmitStage? submitStage,
   }) {
     return OnboardingInProgress(
       userId: userId,
@@ -118,6 +137,7 @@ class OnboardingInProgress extends OnboardingState {
       nativeLanguage: nativeLanguage ?? this.nativeLanguage,
       travelPreference: travelPreference ?? this.travelPreference,
       isUploading: isUploading ?? this.isUploading,
+      submitStage: submitStage ?? this.submitStage,
     );
   }
 
@@ -181,6 +201,7 @@ class OnboardingInProgress extends OnboardingState {
         nativeLanguage,
         travelPreference,
         isUploading,
+        submitStage,
       ];
 }
 

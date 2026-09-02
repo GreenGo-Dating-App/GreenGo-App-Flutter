@@ -4652,5 +4652,9 @@
   "resetEmailSentBody": "Un link per reimpostare la password è stato inviato a {email}.\n\nControlla la posta in arrivo e la cartella spam.",
   "resetErrorInvalidEmail": "Indirizzo email non valido.",
   "resetErrorUnavailable": "Servizio temporaneamente non disponibile. Riprova più tardi.",
-  "resetErrorFailed": "Impossibile inviare l'email di reimpostazione. Riprova."
+  "resetErrorFailed": "Impossibile inviare l'email di reimpostazione. Riprova.",
+  "onboardingSubmitCreatingProfile": "Creazione del tuo profilo…",
+  "onboardingSubmitGrantingCoins": "Preparazione delle tue monete…",
+  "onboardingSubmitFinishingUp": "Ci siamo quasi…",
+  "onboardingSubmitPleaseWait": "Ci vuole solo un momento"
 }

@@ -13902,6 +13902,18 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get resetErrorFailed =>
       'Não foi possível enviar o e-mail de redefinição. Tente novamente.';
+
+  @override
+  String get onboardingSubmitCreatingProfile => 'A criar o seu perfil…';
+
+  @override
+  String get onboardingSubmitGrantingCoins => 'A preparar as suas moedas…';
+
+  @override
+  String get onboardingSubmitFinishingUp => 'Está quase…';
+
+  @override
+  String get onboardingSubmitPleaseWait => 'Demora apenas um momento';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -27779,4 +27791,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get resetErrorFailed =>
       'Não foi possível enviar o e-mail de redefinição. Tente novamente.';
+
+  @override
+  String get onboardingSubmitCreatingProfile => 'Criando seu perfil…';
+
+  @override
+  String get onboardingSubmitGrantingCoins => 'Preparando suas moedas…';
+
+  @override
+  String get onboardingSubmitFinishingUp => 'Quase lá…';
+
+  @override
+  String get onboardingSubmitPleaseWait => 'Leva apenas um instante';
 }
