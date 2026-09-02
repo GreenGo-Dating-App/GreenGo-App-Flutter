@@ -334,11 +334,9 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
         children: [
           TileLayer(
             urlTemplate:
-                'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-            subdomains: const ['a', 'b', 'c', 'd'],
+                'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
             userAgentPackageName: 'com.greengochat.greengochatapp',
             maxZoom: 19,
-            retinaMode: true,
           ),
           if (_hasPin)
             MarkerLayer(
