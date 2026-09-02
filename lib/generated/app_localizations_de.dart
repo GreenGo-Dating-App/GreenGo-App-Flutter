@@ -13959,4 +13959,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get onboardingSubmitPleaseWait => 'Das dauert nur einen Moment';
+
+  @override
+  String get chatSettingSilverPlusOnly => 'Ab Silber verfügbar';
+
+  @override
+  String get chatSettingXpBarHint =>
+      'Erscheint, sobald du in diesem Chat XP sammelst';
+
+  @override
+  String get chatSettingLanguageFlagsHint =>
+      'Wird bei übersetzten Nachrichten angezeigt';
+
+  @override
+  String get chatSmartRepliesLoading => 'Antworten werden vorbereitet...';
 }

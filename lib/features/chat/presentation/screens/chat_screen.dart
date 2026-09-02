@@ -14,6 +14,7 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/app_sound_service.dart';
@@ -2564,6 +2565,8 @@ class _ChatScreenState extends State<ChatScreen> {
                 label: AppLocalizations.of(context)!.chatSettingLanguageFlags,
                 subtitle: AppLocalizations.of(context)!.chatSettingLanguageFlagsDesc,
                 value: _showLanguageFlags,
+                inactiveHint: AppLocalizations.of(context)!
+                    .chatSettingLanguageFlagsHint,
                 onChanged: (v) => setState(() => _showLanguageFlags = v),
               ),
               _buildSettingToggle(
@@ -2580,6 +2583,9 @@ class _ChatScreenState extends State<ChatScreen> {
                 label: AppLocalizations.of(context)!.chatSettingSmartReplies,
                 subtitle: AppLocalizations.of(context)!.chatSettingSmartRepliesDesc,
                 value: _showSmartReplies,
+                // Silver and above only — _loadSmartReplies bails out for free
+                // accounts, so show that instead of a switch that does nothing.
+                locked: !_hasPaidTier,
                 onChanged: (v) => setState(() => _showSmartReplies = v),
               ),
               _buildSettingToggle(
@@ -2628,6 +2634,9 @@ class _ChatScreenState extends State<ChatScreen> {
                 label: AppLocalizations.of(context)!.chatSettingXpBar,
                 subtitle: AppLocalizations.of(context)!.chatSettingXpBarDesc,
                 value: _showXpBar,
+                inactiveHint: _sessionXp > 0
+                    ? null
+                    : AppLocalizations.of(context)!.chatSettingXpBarHint,
                 onChanged: (v) => setState(() => _showXpBar = v),
               ),
               _buildSettingToggle(
@@ -2698,6 +2707,15 @@ class _ChatScreenState extends State<ChatScreen> {
     );
   }
 
+  /// Whether this account can use the tier-gated chat features.
+  ///
+  /// A profile with no membershipTier field at all reads as free, which is the
+  /// case for more than half of the accounts in production.
+  bool get _hasPaidTier {
+    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    return tier != MembershipTier.free;
+  }
+
   Widget _buildSettingToggle(
     StateSetter setSheetState, {
     required IconData icon,
@@ -2705,32 +2723,82 @@ class _ChatScreenState extends State<ChatScreen> {
     required String subtitle,
     required bool value,
     required ValueChanged<bool> onChanged,
+    bool locked = false,
+    String? inactiveHint,
   }) {
+    final l10n = AppLocalizations.of(context)!;
+    // Some settings are on but have nothing to render yet because their data
+    // does not exist — no XP earned, no translated message. Saying so beats
+    // leaving the user to conclude the switch is broken.
+    final showHint = !locked && value && inactiveHint != null;
+    // A locked row keeps its place in the list but says why it is inert and
+    // offers the way out, rather than presenting a switch that silently does
+    // nothing.
+    final effectiveSubtitle = locked ? l10n.chatSettingSilverPlusOnly : subtitle;
+    final tint = locked
+        ? AppColors.textTertiary
+        : (value ? AppColors.richGold : AppColors.textTertiary);
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 2),
       child: Row(
         children: [
-          Icon(icon, size: 20, color: value ? AppColors.richGold : AppColors.textTertiary),
+          Icon(icon, size: 20, color: tint),
           const SizedBox(width: 12),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(label, style: const TextStyle(color: AppColors.textPrimary, fontSize: 14, fontWeight: FontWeight.w500)),
-                Text(subtitle, style: const TextStyle(color: AppColors.textTertiary, fontSize: 11)),
+                Text(label,
+                    style: TextStyle(
+                        color: locked
+                            ? AppColors.textTertiary
+                            : AppColors.textPrimary,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500)),
+                Text(effectiveSubtitle,
+                    style: const TextStyle(
+                        color: AppColors.textTertiary, fontSize: 11)),
+                if (showHint)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Text(inactiveHint,
+                        style: const TextStyle(
+                            color: AppColors.warningAmber, fontSize: 11)),
+                  ),
               ],
             ),
           ),
-          Switch(
-            value: value,
-            onChanged: (v) {
-              setSheetState(() {});
-              onChanged(v);
-            },
-            activeThumbColor: AppColors.richGold,
-            inactiveTrackColor: AppColors.backgroundDark,
-          ),
+          if (locked)
+            TextButton.icon(
+              onPressed: _openMembership,
+              icon: const Icon(Icons.lock_outline,
+                  size: 16, color: AppColors.richGold),
+              label: Text(l10n.upgrade,
+                  style: const TextStyle(
+                      color: AppColors.richGold, fontSize: 12)),
+            )
+          else
+            Switch(
+              value: value,
+              onChanged: (v) {
+                setSheetState(() {});
+                onChanged(v);
+              },
+              activeThumbColor: AppColors.richGold,
+              inactiveTrackColor: AppColors.backgroundDark,
+            ),
         ],
+      ),
+    );
+  }
+
+  /// Close the settings sheet and open the membership screen.
+  void _openMembership() {
+    Navigator.of(context).pop();
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => MembershipScreen(currentUserId: widget.currentUserId),
       ),
     );
   }
@@ -3516,6 +3584,31 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   Widget _buildSmartRepliesBar() {
+    if (_loadingSmartReplies && _smartReplies.isEmpty) {
+      return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        color: AppColors.backgroundCard,
+        child: Row(
+          children: [
+            const SizedBox(
+              width: 14,
+              height: 14,
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                valueColor:
+                    AlwaysStoppedAnimation<Color>(AppColors.richGold),
+              ),
+            ),
+            const SizedBox(width: 10),
+            Text(
+              AppLocalizations.of(context)!.chatSmartRepliesLoading,
+              style: const TextStyle(
+                  color: AppColors.textTertiary, fontSize: 12),
+            ),
+          ],
+        ),
+      );
+    }
     if (_smartReplies.isEmpty) return const SizedBox.shrink();
 
     return Container(

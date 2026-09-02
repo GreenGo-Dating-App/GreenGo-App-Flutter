@@ -4656,5 +4656,9 @@
   "onboardingSubmitCreatingProfile": "A criar o seu perfil…",
   "onboardingSubmitGrantingCoins": "A preparar as suas moedas…",
   "onboardingSubmitFinishingUp": "Está quase…",
-  "onboardingSubmitPleaseWait": "Demora apenas um momento"
+  "onboardingSubmitPleaseWait": "Demora apenas um momento",
+  "chatSettingSilverPlusOnly": "Disponível a partir do Silver",
+  "chatSettingXpBarHint": "Aparece assim que ganhar XP nesta conversa",
+  "chatSettingLanguageFlagsHint": "Apresentado nas mensagens com tradução",
+  "chatSmartRepliesLoading": "A preparar respostas..."
 }

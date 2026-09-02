@@ -24569,6 +24569,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This only takes a moment'**
   String get onboardingSubmitPleaseWait;
+
+  /// No description provided for @chatSettingSilverPlusOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Available on Silver and above'**
+  String get chatSettingSilverPlusOnly;
+
+  /// No description provided for @chatSettingXpBarHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Appears once you earn XP in this chat'**
+  String get chatSettingXpBarHint;
+
+  /// No description provided for @chatSettingLanguageFlagsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Shown on messages that have a translation'**
+  String get chatSettingLanguageFlagsHint;
+
+  /// No description provided for @chatSmartRepliesLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Thinking of replies...'**
+  String get chatSmartRepliesLoading;
 }
 
 class _AppLocalizationsDelegate

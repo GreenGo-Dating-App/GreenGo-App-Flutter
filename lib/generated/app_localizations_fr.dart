@@ -14001,4 +14001,18 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get onboardingSubmitPleaseWait => 'Cela ne prend qu\'un instant';
+
+  @override
+  String get chatSettingSilverPlusOnly => 'Disponible a partir de Silver';
+
+  @override
+  String get chatSettingXpBarHint =>
+      'Apparaît dès que vous gagnez de l\'XP dans cette discussion';
+
+  @override
+  String get chatSettingLanguageFlagsHint =>
+      'Affiché sur les messages traduits';
+
+  @override
+  String get chatSmartRepliesLoading => 'Préparation des réponses...';
 }

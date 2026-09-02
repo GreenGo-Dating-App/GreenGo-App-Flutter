@@ -6544,5 +6544,9 @@
   "onboardingSubmitCreatingProfile": "Creating your profile…",
   "onboardingSubmitGrantingCoins": "Setting up your coins…",
   "onboardingSubmitFinishingUp": "Almost there…",
-  "onboardingSubmitPleaseWait": "This only takes a moment"
+  "onboardingSubmitPleaseWait": "This only takes a moment",
+  "chatSettingSilverPlusOnly": "Available on Silver and above",
+  "chatSettingXpBarHint": "Appears once you earn XP in this chat",
+  "chatSettingLanguageFlagsHint": "Shown on messages that have a translation",
+  "chatSmartRepliesLoading": "Thinking of replies..."
 }

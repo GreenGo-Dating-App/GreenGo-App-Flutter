@@ -90,6 +90,9 @@ class _MessageBubbleState extends State<MessageBubble> {
   String? _difficultyLevel;
   String? _romanizedText;
   String? _culturalTooltip;
+  /// Set once a fetch has been kicked off, so a rebuild storm cannot fire
+  /// several Gemini calls for the same bubble.
+  bool _enhancementsRequested = false;
   bool _loadingDifficulty = false;
   bool _loadingRomanization = false;
 
@@ -125,14 +128,33 @@ class _MessageBubbleState extends State<MessageBubble> {
   void initState() {
     super.initState();
     _isStarred = widget.message.metadata?['isStarred'] == true;
-    if (!widget.isCurrentUser && widget.message.type == MessageType.text && (widget.showDifficultyBadge || widget.showCulturalTips)) {
-      _loadEnhancements();
-    }
+    _maybeLoadEnhancements();
+  }
+
+  /// True when this bubble should have difficulty / cultural data loaded.
+  bool get _wantsEnhancements =>
+      !widget.isCurrentUser &&
+      widget.message.type == MessageType.text &&
+      (widget.showDifficultyBadge || widget.showCulturalTips);
+
+  /// Fetch the AI enhancements if they are wanted and not already in flight.
+  ///
+  /// Called from initState AND didUpdateWidget: these used to load only on
+  /// first build, so switching Difficulty badges or Cultural tips on did
+  /// nothing to messages already on screen — the toggle looked broken and the
+  /// user had to leave the chat and come back.
+  void _maybeLoadEnhancements() {
+    if (!_wantsEnhancements || _enhancementsRequested) return;
+    _enhancementsRequested = true;
+    _loadEnhancements();
   }
 
   @override
   void didUpdateWidget(MessageBubble oldWidget) {
     super.didUpdateWidget(oldWidget);
+    // A settings toggle rebuilds this bubble with new flags; pick the data up
+    // now rather than waiting for the chat to be reopened.
+    _maybeLoadEnhancements();
     // Once the server truth arrives (message.reactions changed), drop the
     // optimistic override so we render the authoritative state.
     if (!_reactionsEqual(
@@ -507,7 +529,23 @@ class _MessageBubbleState extends State<MessageBubble> {
                     ),
                     const SizedBox(width: 4),
                   ],
-                  // Difficulty badge (CEFR level)
+                  // Difficulty badge (CEFR level). While the level is still
+                  // being fetched, hold its place with a muted dot — the
+                  // Gemini round-trip otherwise looks like the setting did
+                  // nothing at all.
+                  if (_difficultyLevel == null &&
+                      _loadingDifficulty &&
+                      widget.showDifficultyBadge) ...[
+                    Container(
+                      width: 14,
+                      height: 12,
+                      decoration: BoxDecoration(
+                        color: AppColors.textTertiary.withValues(alpha: 0.25),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                    ),
+                    const SizedBox(width: 4),
+                  ],
                   if (_difficultyLevel != null && widget.showDifficultyBadge) ...[
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
