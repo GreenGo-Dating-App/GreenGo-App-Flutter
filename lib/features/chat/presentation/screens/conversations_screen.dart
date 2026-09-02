@@ -313,9 +313,17 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     }
     switch (_selectedFilter) {
       case ConversationFilter.all:
-        // "All" excludes support, search (directs), and pending superLikes
+        // "All" excludes support (it has its own inbox) and superLikes still
+        // awaiting approval (they live in "To Approve"). Everything else is a
+        // real chat and belongs here.
+        //
+        // It used to exclude ConversationType.search as well. That dated from
+        // the old match-first product: "search" is the type given to a chat
+        // started by finding someone directly, which is now how most chats
+        // begin — in production those are the majority, so users opened
+        // Exchanges and saw an empty list while having plenty of conversations.
+        // The "From search" chip still narrows to them; All is the superset.
         return conversation.conversationType != ConversationType.support &&
-            conversation.conversationType != ConversationType.search &&
             !(conversation.isSuperLikeConversation &&
                 conversation.visibleTo != null);
       case ConversationFilter.newMessages:
