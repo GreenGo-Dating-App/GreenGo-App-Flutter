@@ -294,6 +294,18 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     );
   }
 
+  /// True when this is a connect request that *I* still have to accept.
+  ///
+  /// Those live in the "To Approve" tab rather than the main list. The person
+  /// who SENT the request is not approving anything — for them it is an
+  /// ordinary outgoing conversation and belongs in "All", which is what they
+  /// expect after sending a message.
+  bool _isAwaitingMyApproval(Conversation conversation) {
+    return conversation.isSuperLikeConversation &&
+        conversation.visibleTo != null &&
+        conversation.superLikeSenderId != widget.userId;
+  }
+
   bool _passesFilter(Conversation conversation) {
     // Business-inquiry conversations live in the dedicated "Business" tab (now
     // shown to EVERY user), so keep them out of the personal Messages filters
@@ -324,20 +336,17 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         // Exchanges and saw an empty list while having plenty of conversations.
         // The "From search" chip still narrows to them; All is the superset.
         return conversation.conversationType != ConversationType.support &&
-            !(conversation.isSuperLikeConversation &&
-                conversation.visibleTo != null);
+            !_isAwaitingMyApproval(conversation);
       case ConversationFilter.newMessages:
         // Exclude pending superLike/priority connect — those go to "To Approve"
-        if (conversation.isSuperLikeConversation &&
-            conversation.visibleTo != null) {
+        if (_isAwaitingMyApproval(conversation)) {
           return false;
         }
         return conversation.unreadCount > 0 &&
             conversation.lastMessage != null &&
             !conversation.lastMessage!.isSentBy(widget.userId);
       case ConversationFilter.notReplied:
-        if (conversation.isSuperLikeConversation &&
-            conversation.visibleTo != null) {
+        if (_isAwaitingMyApproval(conversation)) {
           return false;
         }
         return conversation.unreadCount > 0 &&
