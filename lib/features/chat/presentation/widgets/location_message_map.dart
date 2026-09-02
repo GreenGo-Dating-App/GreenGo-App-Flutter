@@ -48,7 +48,7 @@ class LocationMessageMap extends StatelessWidget {
             children: [
               TileLayer(
                 urlTemplate:
-                    'https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',
+                    'https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png',
                 tileProvider: _CachedTileProvider(),
                 userAgentPackageName: 'com.greengochat.greengochatapp',
               ),

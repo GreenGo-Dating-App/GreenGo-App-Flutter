@@ -334,7 +334,7 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
         children: [
           TileLayer(
             urlTemplate:
-                'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+                'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
             subdomains: const ['a', 'b', 'c', 'd'],
             userAgentPackageName: 'com.greengochat.greengochatapp',
             maxZoom: 19,

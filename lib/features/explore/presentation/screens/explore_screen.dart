@@ -105,6 +105,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// kilometres of the user (when the user has a known location). Adjustable.
   static const double kFeaturedRadiusKm = 50;
 
+  /// How many cards each featured EVENT carousel shows. Attractions and
+  /// sponsored slots keep their own smaller counts.
+  static const int kFeaturedEventCount = 10;
+
   /// Round-robin window (minutes) for the luxury "Featured community events"
   /// carousel. When more than 3 sponsored events are eligible, the visible
   /// window advances once per this many minutes so every sponsor gets fair
@@ -567,9 +571,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final picked = <_Happening>[];
     final seen = <String>{};
 
-    void addUpToThree(Iterable<_Happening> items) {
+    void addUpToLimit(Iterable<_Happening> items) {
       for (final h in items) {
-        if (picked.length >= 3) break;
+        if (picked.length >= kFeaturedEventCount) break;
         final k = h.key;
         if (k.isNotEmpty && !seen.add(k)) continue; // dedup by stable key
         picked.add(h);
@@ -598,7 +602,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
 
     // Priority 1 — BOOSTED community events (shuffled).
-    addUpToThree(
+    addUpToLimit(
       community.where((h) => h.isCurrentlyFeatured).toList()..shuffle(),
     );
 
@@ -607,7 +611,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
     // Fallback — NORMAL events, community FIRST then live/external, until 3.
     if (picked.length < 3) {
-      addUpToThree(
+      addUpToLimit(
         community.where((h) => !h.isCurrentlyFeatured).toList()..shuffle(),
       );
     }
@@ -636,10 +640,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
       } catch (_) {
         external = const <_Happening>[];
       }
-      addUpToThree(external);
+      addUpToLimit(external);
     }
 
-    if (mounted) setState(() => _featuredEvents = picked.take(3).toList());
+    if (mounted) {
+      setState(() =>
+          _featuredEvents = picked.take(kFeaturedEventCount).toList());
+    }
   }
 
   /// Loads "Featured attractions": random external attractions (Geoapify /
@@ -713,7 +720,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
     void addAll(Iterable<_Happening> items) {
       for (final h in items) {
-        if (picked.length >= 3) break;
+        if (picked.length >= kFeaturedEventCount) break;
         final k = h.key;
         if (k.isEmpty || !seen.add(k)) continue; // dedup by key
         picked.add(h);
@@ -781,7 +788,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       }
     }
 
-    final result = picked.take(3).toList();
+    final result = picked.take(kFeaturedEventCount).toList();
     // Reserve these events so Happening-today / Near-you don't repeat them.
     for (final h in result) {
       if (h.key.isNotEmpty) _usedEventKeys.add(h.key);

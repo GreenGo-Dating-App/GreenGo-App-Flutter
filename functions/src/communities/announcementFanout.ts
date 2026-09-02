@@ -68,6 +68,8 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
       .get();
     const communityName =
       (communitySnap.data()?.name as string) || 'A community';
+    const communityImage =
+      (communitySnap.data()?.imageUrl as string) || undefined;
 
     const title = `📣 ${communityName}`;
     const body = preview((msg.content as string) || '');
@@ -119,7 +121,7 @@ export const onCommunityAnnouncementCreated = onDocumentCreated(
         try {
           await admin.messaging().sendEachForMulticast({
             tokens: chunk,
-            notification: brandPush(title, body),
+            notification: brandPush(title, body, communityImage),
             data: dataPayload,
             android: {
               priority: 'high',

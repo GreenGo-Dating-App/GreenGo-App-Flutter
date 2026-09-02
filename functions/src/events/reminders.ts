@@ -26,6 +26,7 @@ async function fanOutReminder(
   title: string,
   body: string,
   flag: string,
+  imageUrl?: string,
 ): Promise<void> {
   const attendeesSnap = await eventRef.collection('attendees').get();
   const recipientIds = attendeesSnap.docs
@@ -55,9 +56,12 @@ async function fanOutReminder(
     try {
       await admin.messaging().sendEachForMulticast({
         tokens: chunk,
-        notification: brandPush(`⏰ ${title}`, body),
+        notification: brandPush(`⏰ ${title}`, body, imageUrl),
         data: dataPayload,
-        android: { priority: 'high' },
+        android: {
+          priority: 'high',
+          ...(imageUrl ? { notification: { imageUrl } } : {}),
+        },
       });
     } catch (err) {
       console.error('Event reminder FCM failed', eventId, err);
@@ -114,18 +118,20 @@ export const sendEventReminders = onSchedule(
       const startMs = (e.startDate as admin.firestore.Timestamp)?.toMillis?.();
       if (!startMs) continue;
       const title = (e.title as string) || 'Event';
+      // Show the event's own picture on the notification.
+      const eventImage = (e.imageUrl as string) || undefined;
       const dt = startMs - nowMs; // ms until start (negative = already started)
 
       try {
         if (dt <= 0 && dt > -HOUR && e.remindedStart !== true) {
           await fanOutReminder(doc.id, doc.ref, title,
-            'is starting now — enjoy!', 'remindedStart');
+            'is starting now — enjoy!', 'remindedStart', eventImage);
         } else if (dt > 0 && dt <= 6 * HOUR && e.reminded6h !== true) {
           await fanOutReminder(doc.id, doc.ref, title,
-            'starts in about 6 hours', 'reminded6h');
+            'starts in about 6 hours', 'reminded6h', eventImage);
         } else if (dt > 6 * HOUR && dt <= 24 * HOUR && e.reminded24h !== true) {
           await fanOutReminder(doc.id, doc.ref, title,
-            'is tomorrow — see you there!', 'reminded24h');
+            'is tomorrow — see you there!', 'reminded24h', eventImage);
         }
       } catch (err) {
         console.error('sendEventReminders event failed', doc.id, err);
