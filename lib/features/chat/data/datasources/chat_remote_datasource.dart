@@ -750,9 +750,14 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           if (blockedUserIds.contains(otherUserId)) return false;
         }
 
-        // Filter by visibleTo — super like conversations only visible to listed users
+        // Filter by visibleTo — a pending connect request is visible to the
+        // recipient (who decides on it) and to whoever sent it. visibleTo only
+        // ever lists the recipient, so without the initiator check the sender
+        // could not see a conversation they had already written in: they sent a
+        // message and it vanished until the other side replied.
         if (conv.visibleTo != null && conv.visibleTo!.isNotEmpty) {
-          if (!conv.visibleTo!.contains(userId)) return false;
+          final isInitiator = conv.superLikeSenderId == userId;
+          if (!isInitiator && !conv.visibleTo!.contains(userId)) return false;
         }
 
         return true;
