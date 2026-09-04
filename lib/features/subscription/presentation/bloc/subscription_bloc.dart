@@ -30,15 +30,23 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     on<RestorePurchasesEvent>(_onRestorePurchases);
     on<_PurchaseUpdated>(_onPurchaseUpdated);
 
-    // Listen to purchase stream
-    _purchaseSubscription = inAppPurchase.purchaseStream.listen(
-      (purchases) {
-        add(_PurchaseUpdated(purchases));
-      },
-      onError: (error) {
-        debugPrint('IAP stream error: $error');
-      },
-    );
+    // Listen to purchase stream.
+    //
+    // in_app_purchase has no web implementation: reading purchaseStream there
+    // throws LateInitializationError from the constructor, which took down
+    // every screen that builds this bloc. Web buys through Stripe Checkout
+    // instead, so there is no IAP stream to listen to. _consumeOldPurchases()
+    // below already guarded for this; the stream did not.
+    if (!kIsWeb) {
+      _purchaseSubscription = inAppPurchase.purchaseStream.listen(
+        (purchases) {
+          add(_PurchaseUpdated(purchases));
+        },
+        onError: (error) {
+          debugPrint('IAP stream error: $error');
+        },
+      );
+    }
 
     // Restore old purchases on init to consume any unconsumed ones
     _consumeOldPurchases();
