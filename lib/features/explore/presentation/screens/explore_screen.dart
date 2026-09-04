@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -133,6 +134,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // display string once resolved; on failure it resolves to '–' so the tile
   // stops shimmering rather than blocking the header.
   String? _coinsStat;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _coinsSub;
   String? _tierStat; // derived from the profile's membershipTier
   String? _countriesStat; // Cultural Passport country-stamp count
   String? _peopleStat; // distinct chat partners (all time)
@@ -313,20 +315,34 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// Reads the user's coin balance for the stats header. Prefers the stored
   /// `availableCoins`, falling back to `totalCoins` (the field the shop writes).
+  /// Live coin balance for the stats header.
+  ///
+  /// This was a one-shot get(), so the number sat stale until the page was
+  /// rebuilt — spend coins anywhere in the app and Explore still showed the old
+  /// total. Listening to the document keeps it honest wherever the spend
+  /// happened.
   Future<void> _loadCoinsStat() async {
-    String value = '–';
-    try {
-      final doc =
-          await _firestore.collection('coinBalances').doc(widget.userId).get();
+    await _coinsSub?.cancel();
+    _coinsSub = _firestore
+        .collection('coinBalances')
+        .doc(widget.userId)
+        .snapshots()
+        .listen((doc) {
+      if (!mounted) return;
       final data = doc.data();
       final coins = (data?['availableCoins'] as num?)?.toInt() ??
           (data?['totalCoins'] as num?)?.toInt() ??
           0;
-      value = NumberFormat.compact().format(coins);
-    } catch (_) {
-      value = '–';
-    }
-    if (mounted) setState(() => _coinsStat = value);
+      setState(() => _coinsStat = NumberFormat.compact().format(coins));
+    }, onError: (Object _) {
+      if (mounted) setState(() => _coinsStat = '–');
+    });
+  }
+
+  @override
+  void dispose() {
+    _coinsSub?.cancel();
+    super.dispose();
   }
 
   /// Counts the distinct countries the user has engaged with = their Cultural

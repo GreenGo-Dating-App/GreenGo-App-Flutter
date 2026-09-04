@@ -27,7 +27,6 @@ class FeatureFlagsService extends ChangeNotifier {
 
     // Communication Features
     'messaging': true,
-    'videoCalls': false,
     'voiceMessages': false,
 
     // Monetization Features
@@ -132,7 +131,6 @@ class FeatureFlagsService extends ChangeNotifier {
 
   // Communication Features
   bool get messagingEnabled => isEnabled('messaging');
-  bool get videoCallsEnabled => isEnabled('videoCalls');
   bool get voiceMessagesEnabled => isEnabled('voiceMessages');
 
   // Monetization Features

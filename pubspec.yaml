@@ -1,7 +1,7 @@
 name: greengo_chat
 description: A cross-cultural discovery and language-barrier-free networking app built with Flutter and GCP
 publish_to: 'none'
-version: 3.6.3+152
+version: 3.7.0+153
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -162,7 +162,6 @@ dependencies:
   # google_mlkit_translation: ^0.9.0  # Disabled - doesn't work on emulators
 
   # Online Translation (works everywhere)
-  translator: ^1.0.0
   vector_map_tiles: ^7.3.1
 
   # Speech Recognition for video call subtitles
