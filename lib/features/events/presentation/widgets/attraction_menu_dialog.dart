@@ -53,7 +53,13 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
     final desc = widget.event.description;
     if (desc == null || desc.trim().isEmpty) return;
     final target = Localizations.localeOf(context).languageCode;
-    if (target.isEmpty || target == 'en') return;
+    // Only skip when there is no target at all. Bailing out for 'en' assumed
+    // every attraction description is already English — these come from
+    // Geoapify and Wikipedia, so an English reader looking at an Italian
+    // landmark got the Italian text untouched. The service short-circuits when
+    // the detected source already matches, so letting English through costs
+    // nothing.
+    if (target.isEmpty) return;
     _translateStarted = true;
     _translating = true;
     TranslationService()

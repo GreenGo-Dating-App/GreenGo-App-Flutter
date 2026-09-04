@@ -57,16 +57,71 @@ class TranslationService {
   }
 
   /// Translate text from source language to target language
+
+  /// Normalizes a language to something the translate endpoint accepts.
+  ///
+  /// Call sites pass a mixture: BCP-47 codes from the app locale ("en",
+  /// "pt_BR") and display names from profile fields ("Portuguese (Brazil)"),
+  /// because profiles store languages as names. That matters because the
+  /// endpoint ACCEPTS an unrecognised `tl` and returns the text untranslated
+  /// instead of failing:
+  ///
+  ///   tl=Portuguese  "Hello friend" -> "Hello friend"
+  ///   tl=pt          "Hello friend" -> "Ola amigo"
+  ///
+  /// which is indistinguishable from a broken feature. Normalizing here means
+  /// no caller can get it wrong.
+  static String normalizeLanguage(String language) {
+    final raw = language.trim();
+    if (raw.isEmpty) return 'en';
+
+    final key = raw.toLowerCase();
+
+    // Brazilian Portuguese first: it must survive as pt-BR, not collapse to pt.
+    if (key.contains('brazil') || key.contains('brasil') ||
+        key.startsWith('pt_br') || key.startsWith('pt-br')) {
+      return 'pt-BR';
+    }
+
+    // Already a code such as en, pt, en-GB, zh_CN.
+    final code = RegExp(r'^([a-z]{2})([-_]([a-z]{2}))?$', caseSensitive: false)
+        .firstMatch(raw);
+    if (code != null) {
+      final base = code.group(1)!.toLowerCase();
+      final region = code.group(3);
+      return region == null ? base : '$base-${region.toUpperCase()}';
+    }
+
+    const byName = <String, String>{
+      'english': 'en', 'german': 'de', 'deutsch': 'de', 'spanish': 'es',
+      'espanol': 'es', 'español': 'es', 'french': 'fr', 'francais': 'fr',
+      'français': 'fr', 'italian': 'it', 'italiano': 'it',
+      'portuguese': 'pt', 'português': 'pt', 'russian': 'ru',
+      'chinese': 'zh', 'japanese': 'ja', 'korean': 'ko', 'arabic': 'ar',
+      'hindi': 'hi', 'turkish': 'tr', 'dutch': 'nl', 'swedish': 'sv',
+      'norwegian': 'no', 'danish': 'da', 'finnish': 'fi', 'polish': 'pl',
+      'greek': 'el', 'hebrew': 'he', 'thai': 'th', 'vietnamese': 'vi',
+    };
+    return byName[key] ?? 'en';
+  }
+
   Future<String> translate({
     required String text,
     required String sourceLanguage,
     required String targetLanguage,
   }) async {
     if (text.isEmpty) return text;
-    if (sourceLanguage == targetLanguage) return text;
+
+    // Normalize before anything else, including the equality check and the
+    // cache key, so "Portuguese" and "pt" are one entry rather than two.
+    final target = normalizeLanguage(targetLanguage);
+    if (sourceLanguage != 'auto' &&
+        normalizeLanguage(sourceLanguage) == target) {
+      return text;
+    }
 
     // Check cache first
-    final cacheKey = '${sourceLanguage}_${targetLanguage}_$text';
+    final cacheKey = '${sourceLanguage}_${target}_$text';
     if (_translationCache.containsKey(cacheKey)) {
       return _translationCache[cacheKey]!;
     }
@@ -78,7 +133,7 @@ class TranslationService {
         'https://translate.googleapis.com/translate_a/single'
         '?client=gtx'
         '&sl=${Uri.encodeComponent(from)}'
-        '&tl=${Uri.encodeComponent(targetLanguage)}'
+        '&tl=${Uri.encodeComponent(target)}'
         '&dt=t'
         '&q=${Uri.encodeComponent(text)}',
       );
