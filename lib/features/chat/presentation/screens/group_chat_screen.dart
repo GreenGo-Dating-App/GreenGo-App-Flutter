@@ -163,7 +163,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
     final prefs = await SharedPreferences.getInstance();
     if (!mounted) return;
     final deviceLang =
-        WidgetsBinding.instance.platformDispatcher.locale.languageCode;
+        // The app's own language, not the device/browser locale. On web the
+        // browser reports en-US for most people regardless of what they picked
+        // in the app, so group chats were defaulting to English translations
+        // while 1:1 chats used the language they actually chose.
+        _appLanguageCode();
     setState(() {
       _translate = prefs.getBool('group_${widget.groupId}_translate') ?? true;
       _targetLang = prefs.getString('group_${widget.groupId}_language') ??
@@ -265,6 +269,16 @@ class _GroupChatViewState extends State<_GroupChatView> {
         ),
       ),
     );
+  }
+
+
+  /// The language the app is displayed in, which MaterialApp drives from
+  /// LanguageProvider. Falls back to the device locale before the first frame.
+  String _appLanguageCode() {
+    if (!mounted) {
+      return WidgetsBinding.instance.platformDispatcher.locale.languageCode;
+    }
+    return Localizations.localeOf(context).languageCode;
   }
 
   @override

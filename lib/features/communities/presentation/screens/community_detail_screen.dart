@@ -524,7 +524,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     message: tips[index],
                     isCurrentUser: tips[index].senderId == _currentUserId,
                     showSenderInfo: true,
-                    currentUserLanguage: _viewerLanguage,
+                    currentUserLanguage: _viewerLanguageOf(context),
                   ),
                 ),
         ),
@@ -631,7 +631,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     message: anns[index],
                     isCurrentUser: anns[index].senderId == _currentUserId,
                     showSenderInfo: true,
-                    currentUserLanguage: _viewerLanguage,
+                    currentUserLanguage: _viewerLanguageOf(context),
                   ),
                 ),
         ),
@@ -746,9 +746,15 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     );
   }
 
-  /// The viewer's preferred language for on-demand translation of content.
-  String get _viewerLanguage =>
-      _userLanguages.isNotEmpty ? _userLanguages.first : 'en';
+  /// The language the viewer reads the app in, used as the translation target.
+  ///
+  /// This used to be profile.preferredLanguages.first, which was wrong twice
+  /// over: that field is empty on every production profile, so it always fell
+  /// back to 'en'; and it stores display names ("Portuguese"), not codes, which
+  /// Google Translate accepts and then silently returns untranslated. Matching
+  /// 1:1 chat and using the app locale fixes both.
+  String _viewerLanguageOf(BuildContext context) =>
+      Localizations.localeOf(context).languageCode;
 
   Widget _buildMessagesList(List<CommunityMessage> messages) {
     // Messages come in reverse order (newest first) from Firestore
@@ -774,7 +780,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           message: message,
           isCurrentUser: isCurrentUser,
           showSenderInfo: showSenderInfo,
-          currentUserLanguage: _viewerLanguage,
+          currentUserLanguage: _viewerLanguageOf(context),
           onReport: isCurrentUser || _currentUserId == null
               ? null
               : () => _reportMessage(message),
