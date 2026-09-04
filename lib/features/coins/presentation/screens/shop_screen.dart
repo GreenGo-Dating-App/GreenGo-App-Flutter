@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
@@ -24,13 +25,32 @@ class ShopScreen extends StatefulWidget {
 class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   int _coinBalance = 0;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _balanceSub;
 
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
-    _loadBalances();
+    _listenToBalance();
+  }
+
+  /// Live balance. A one-shot get() left the number stale the moment coins were
+  /// spent — the user had to leave and come back to see it drop. The listener
+  /// keeps it current whether the spend happened here, elsewhere in the app, or
+  /// on the server.
+  void _listenToBalance() {
+    _balanceSub?.cancel();
+    _balanceSub = FirebaseFirestore.instance
+        .collection('coinBalances')
+        .doc(widget.userId)
+        .snapshots()
+        .listen((doc) {
+      if (!mounted) return;
+      setState(() {
+        _coinBalance = (doc.data()?['totalCoins'] as num?)?.toInt() ?? 0;
+      });
+    }, onError: (Object e) => debugPrint('Coin balance stream error: $e'));
   }
 
   Future<void> _loadBalances() async {
@@ -52,6 +72,7 @@ class _ShopScreenState extends State<ShopScreen> with SingleTickerProviderStateM
 
   @override
   void dispose() {
+    _balanceSub?.cancel();
     _tabController.dispose();
     super.dispose();
   }

@@ -90,7 +90,6 @@ class AppConfig {
 
   /// Enable/Disable video calls
   /// Disabled for development due to Agora SDK NDK compatibility issues
-  static const bool enableVideoCalls = false;
 
   /// Enable/Disable voice messages
   static const bool enableVoiceMessages = false;
@@ -148,7 +147,6 @@ class AppConfig {
     debugPrint('Auth Methods: ${getEnabledAuthMethods()}');
     debugPrint('Social Login UI: $showSocialLoginSection');
     debugPrint('In-App Purchases: $enableInAppPurchases');
-    debugPrint('Video Calls: $enableVideoCalls');
     debugPrint('Language Learning: $enableLanguageLearning');
     debugPrint('Gamification: $enableGamification');
     debugPrint('Analytics: $enableAnalytics');

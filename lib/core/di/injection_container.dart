@@ -179,17 +179,6 @@ import '../../features/subscription/domain/usecases/purchase_subscription.dart' 
 import '../../features/subscription/domain/usecases/restore_purchases.dart';
 import '../../features/subscription/presentation/bloc/subscription_bloc.dart';
 // Video Calling
-import '../../features/video_calling/data/datasources/video_calling_remote_datasource.dart';
-import '../../features/video_calling/data/repositories/video_calling_repository_impl.dart';
-import '../../features/video_calling/domain/repositories/video_calling_repository.dart';
-import '../../features/video_calling/domain/usecases/answer_call.dart';
-import '../../features/video_calling/domain/usecases/decline_call.dart';
-import '../../features/video_calling/domain/usecases/end_call.dart';
-import '../../features/video_calling/domain/usecases/get_call_history.dart';
-import '../../features/video_calling/domain/usecases/get_sdk_config.dart';
-import '../../features/video_calling/domain/usecases/initiate_call.dart';
-import '../../features/video_calling/domain/usecases/listen_for_incoming_calls.dart';
-import '../../features/video_calling/presentation/bloc/video_call_bloc.dart';
 // Video Profiles
 import '../../features/video_profiles/data/datasources/video_profile_remote_datasource.dart';
 import '../../features/video_profiles/data/repositories/video_profile_repository_impl.dart';
@@ -552,43 +541,6 @@ Future<void> init() async {
       messaging: sl(),
     ),
   );
-
-  //! Features - Video Calling
-  if (AppConfig.enableVideoCalls) {
-    // BLoC
-    sl.registerFactory(
-      () => VideoCallBloc(
-        initiateCall: sl(),
-        answerCall: sl(),
-        declineCall: sl(),
-        endCall: sl(),
-        getCallHistory: sl(),
-        listenForIncomingCalls: sl(),
-        getSDKConfig: sl(),
-        repository: sl(),
-        isUserBlocked: sl<IsUserBlocked>(),
-      ),
-    );
-
-    // Use cases
-    sl.registerLazySingleton(() => InitiateCall(sl()));
-    sl.registerLazySingleton(() => AnswerCall(sl()));
-    sl.registerLazySingleton(() => DeclineCall(sl()));
-    sl.registerLazySingleton(() => EndCall(sl()));
-    sl.registerLazySingleton(() => GetCallHistory(sl()));
-    sl.registerLazySingleton(() => ListenForIncomingCalls(sl()));
-    sl.registerLazySingleton(() => GetSDKConfig(sl()));
-
-    // Repository
-    sl.registerLazySingleton<VideoCallingRepository>(
-      () => VideoCallingRepositoryImpl(remoteDataSource: sl()),
-    );
-
-    // Data sources
-    sl.registerLazySingleton<VideoCallingRemoteDataSource>(
-      () => VideoCallingRemoteDataSourceImpl(firestore: sl()),
-    );
-  }
 
   //! Features - Admin Configuration
   // Data sources
