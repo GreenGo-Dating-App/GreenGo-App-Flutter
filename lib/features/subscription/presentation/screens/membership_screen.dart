@@ -7,20 +7,40 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/subscription.dart';
+import '../../../../core/di/injection_container.dart' as di;
 import '../bloc/subscription_bloc.dart';
 
 /// Membership Selection Screen
 /// One-time purchases for membership periods (1 month or 1 year)
-class MembershipScreen extends StatefulWidget {
-
+///
+/// Supplies its own [SubscriptionBloc]. The view reads the bloc from context in
+/// initState, so every caller had to remember to wrap this screen in a
+/// BlocProvider — and most did not. BaseMembershipGate pushes it raw when a
+/// user without a valid membership taps a conversation, which threw
+/// ProviderNotFoundException and left a blank screen where the chat should be.
+/// Owning the bloc here makes every call site correct by construction.
+class MembershipScreen extends StatelessWidget {
   const MembershipScreen({super.key, this.currentUserId});
   final String? currentUserId;
 
   @override
-  State<MembershipScreen> createState() => _MembershipScreenState();
+  Widget build(BuildContext context) {
+    return BlocProvider<SubscriptionBloc>(
+      create: (_) => di.sl<SubscriptionBloc>(),
+      child: _MembershipScreenView(currentUserId: currentUserId),
+    );
+  }
 }
 
-class _MembershipScreenState extends State<MembershipScreen> {
+class _MembershipScreenView extends StatefulWidget {
+  const _MembershipScreenView({this.currentUserId});
+  final String? currentUserId;
+
+  @override
+  State<_MembershipScreenView> createState() => _MembershipScreenState();
+}
+
+class _MembershipScreenState extends State<_MembershipScreenView> {
   ProductDetails? _selectedProduct;
   String? _currentTierName;
   DateTime? _currentEndDate;
