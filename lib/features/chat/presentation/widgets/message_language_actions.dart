@@ -70,11 +70,13 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
     if (_isTranslating) return;
     if (widget.message.type != MessageType.text) return;
 
-    final targetLanguage = widget.userNativeLanguage;
-    if (targetLanguage == null) {
-      _showSnackBar(AppLocalizations.of(context)!.chatSetNativeLanguage, isError: true);
-      return;
-    }
+    // Prefer the user's declared native language, but fall back to the language
+    // they are reading the app in. profile.nativeLanguage is unset on every
+    // production profile, so requiring it meant this action did nothing but
+    // show an error for everyone who tried it.
+    final targetLanguage = (widget.userNativeLanguage?.trim().isNotEmpty ?? false)
+        ? widget.userNativeLanguage!
+        : Localizations.localeOf(context).languageCode;
 
     setState(() => _isTranslating = true);
 
