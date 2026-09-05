@@ -207,6 +207,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Set current user ID for push notification navigation
     PushNotificationService.currentUserId = widget.userId;
+    // Now that a user is attached, fetch and store this device's FCM
+    // token. Nothing did this before, so web/PWA never registered at all.
+    unawaited(di.sl<PushNotificationService>().ensureTokenRegistered());
 
     // Warm the Firestore cache for the heaviest first-load queries up-front so
     // tabs render instantly from cache (persistence is enabled). Network/profile

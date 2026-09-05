@@ -96,9 +96,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   /// resolved on load (then replaced by [TierEntitlements.discoveryFreeReveal]).
   static const int kFreeRevealLimit = 100; // adjustable (Base tier default)
   /// Coins charged each time the user chooses to raise the discovery limit.
-  static const int kCoinsToSeeMore = 25; // adjustable
+  static const int kCoinsToSeeMore = 15; // adjustable
   /// How many extra profiles a single coin-spend unlocks.
-  static const int kRevealChunk = 25; // adjustable
+  static const int kRevealChunk = 50; // adjustable
 
   // null == still loading; empty == loaded but nothing to show. Excludes self.
   List<MatchCandidate>? _candidates;
@@ -384,7 +384,11 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   MatchPreferences get _effectivePreferences {
     final base = _preferences ?? MatchPreferences.defaultFor(widget.userId);
     return base.copyWith(
-      showSupportUser: false,
+      // Orientation and verified-only were removed as user-facing filters.
+      // Neutralised here as well so a value saved before the removal cannot
+      // keep silently excluding people with no UI left to clear it.
+      preferredOrientations: const [],
+      onlyVerified: false,
       minAge: FlavorConfig.enableMatching ? base.minAge : 18,
       maxAge: FlavorConfig.enableMatching ? base.maxAge : 99,
     );
@@ -423,8 +427,10 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       }
 
       final list = (results[1] as List<MatchCandidate>)
-          // Defensive client-side filter: never render admin/support accounts.
-          .where((c) => !c.profile.isAdmin && !c.profile.isSupport)
+          // Admin accounts stay hidden. Support does not: it is a real account
+          // users are meant to be able to reach, and it was being hidden both
+          // here and by a forced showSupportUser:false above.
+          .where((c) => !c.profile.isAdmin)
           // Never render the user's own tile inside the pool (it is pinned).
           .where((c) => c.profile.userId != widget.userId)
           // NOTE: the business vs normal-profile split is applied at DISPLAY

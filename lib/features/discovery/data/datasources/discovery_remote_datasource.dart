@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
@@ -326,11 +327,20 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       final userLng = (userLoc['longitude'] as num?)?.toDouble() ?? 0.0;
       final fe = FeatureEngineer();
 
-      // Worldwide fallback: only when no country filter is active.
-      // When a country IS selected, show only people from that country (no padding).
-      const minCandidates = 500;
-      final shouldFallback = preferences.preferredCountries.isEmpty &&
-          filteredCandidates.length < minCandidates;
+      // Worldwide fallback: pad a thin result set with people from further
+      // afield, but ONLY when the user has not asked for a specific area.
+      //
+      // This used to pad up to 500 candidates whenever no country was selected.
+      // With a user base far smaller than 500 that meant it fired on virtually
+      // every load and re-fetched at maxDistance 99999 — so a distance filter
+      // never actually limited anything, and the orientation/country filters
+      // above were skipped for everything it appended. Padding now stops when
+      // the user has expressed a preference at all.
+      const minCandidates = 40;
+      final userChoseAnArea = preferences.preferredCountries.isNotEmpty ||
+          preferences.maxDistanceKm != null;
+      final shouldFallback =
+          !userChoseAnArea && filteredCandidates.length < minCandidates;
       lastUsedWorldwideFallback = shouldFallback;
       if (shouldFallback) {
         // Fetch worldwide candidates (no country restriction)
@@ -375,11 +385,24 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         final toAdd = worldwideNew.take(needed).toList();
         filteredCandidates.addAll(toAdd);
 
+        // Nothing that ran before this point still filters: orientation and
+        // verified-only were removed as user-facing filters, and the country
+        // filter blocks padding entirely. Everything below filters the merged
+        // list, so padded candidates are held to the same standard.
       }
 
-      // Always sort the entire pool by distance so nearest profiles appear
-      // first in grid mode — critical for user experience in small countries
-      if (userLat != 0 && userLng != 0) {
+      // Ordering. Random mode previously did nothing at all: it only varied the
+      // cache key and the distance cap, and no shuffle existed anywhere. It now
+      // genuinely randomises, seeded per user per hour so paging through the
+      // grid stays stable instead of re-dealing on every fetch.
+      //
+      // sortByDistance was likewise never read — distance sorting was
+      // unconditional. It is now the (default) alternative to random mode.
+      if (preferences.randomMode) {
+        final seed = preferences.userId.hashCode ^
+            (DateTime.now().millisecondsSinceEpoch ~/ 3600000);
+        filteredCandidates.shuffle(Random(seed));
+      } else if (preferences.sortByDistance && userLat != 0 && userLng != 0) {
         filteredCandidates.sort((a, b) {
           final aLoc = a.profile.effectiveLocation;
           final bLoc = b.profile.effectiveLocation;
@@ -387,6 +410,33 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           final bDist = fe.calculateDistance(userLat, userLng, bLoc.latitude, bLoc.longitude);
           return aDist.compareTo(bDist);
         });
+      }
+
+      // Apply the "recently active" filter. This preference has always been
+      // persisted and never read — the toggle did nothing.
+      if (preferences.onlyRecentlyActive) {
+        final cutoff = DateTime.now().subtract(const Duration(days: 7));
+        filteredCandidates = filteredCandidates.where((candidate) {
+          if (candidate.profile.isOnline) return true;
+          final seen = candidate.profile.lastSeen;
+          return seen != null && seen.isAfter(cutoff);
+        }).toList();
+      }
+
+      // Apply deal breakers: EXCLUDE anyone carrying one of these interests.
+      // Also never read before. Note this is the opposite sense to the
+      // matching feature's dealBreakerInterests, which REQUIRES them — here
+      // the user is naming what they do not want to see.
+      if (preferences.dealBreakers.isNotEmpty) {
+        final unwanted = preferences.dealBreakers
+            .map((e) => e.toLowerCase().trim())
+            .toSet();
+        filteredCandidates = filteredCandidates.where((candidate) {
+          final has = candidate.profile.interests
+              .map((e) => e.toLowerCase().trim())
+              .toSet();
+          return has.intersection(unwanted).isEmpty;
+        }).toList();
       }
 
       // Apply online-only filter

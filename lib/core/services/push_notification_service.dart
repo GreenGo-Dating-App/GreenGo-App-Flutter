@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+
+import '../config/web_push_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -449,6 +451,74 @@ class PushNotificationService {
     } catch (e) {
       debugPrint('[FCM] _openChatScreen error: $e');
     }
+  }
+
+  /// Fetch this device's FCM token and persist it against the signed-in user.
+  ///
+  /// Until now the ONLY thing that ever wrote a token was the onTokenRefresh
+  /// handler below, which fires when a token ROTATES — never on first
+  /// acquisition. Android happened to survive that because FCM emits a refresh
+  /// on registration; the web SDK does not hand out a token at all unless
+  /// getToken() is called explicitly with a VAPID key. The result was that
+  /// every stored token in production was an Android one and no PWA had ever
+  /// registered, so web push could not deliver to anybody.
+  ///
+  /// Call this once the user is known (login / app shell), not from
+  /// initialize() — that runs before there is a user to attach a token to.
+  Future<void> ensureTokenRegistered() async {
+    final userId = currentUserId;
+    if (userId == null) return;
+    try {
+      // Web and iOS both require an explicit permission grant before a token
+      // is issued; Android 13+ does too.
+      final settings = await FirebaseMessaging.instance.requestPermission();
+      if (settings.authorizationStatus == AuthorizationStatus.denied) {
+        debugPrint('[FCM] Notification permission denied — no token.');
+        return;
+      }
+
+      String? token;
+      if (kIsWeb) {
+        final vapid = await WebPushConfig.resolveVapidKey();
+        if (vapid == null || vapid.isEmpty) {
+          debugPrint('[FCM] No VAPID key configured — web push unavailable.');
+          return;
+        }
+        token = await FirebaseMessaging.instance.getToken(vapidKey: vapid);
+      } else {
+        token = await FirebaseMessaging.instance.getToken();
+      }
+
+      if (token == null || token.isEmpty) {
+        debugPrint('[FCM] getToken returned nothing.');
+        return;
+      }
+      _persistToken(userId, token);
+      debugPrint('[FCM] Token registered for $userId');
+    } catch (e) {
+      debugPrint('[FCM] ensureTokenRegistered failed: $e');
+    }
+  }
+
+  /// Write the token to both documents the push senders read from.
+  void _persistToken(String userId, String token) {
+    final tokenData = {
+      'fcmToken': token,
+      'fcmTokenUpdatedAt': Timestamp.now(),
+    };
+    Future.wait([
+      FirebaseFirestore.instance
+          .collection('profiles')
+          .doc(userId)
+          .set(tokenData, SetOptions(merge: true)),
+      FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .set(tokenData, SetOptions(merge: true)),
+    ]).catchError((Object e) {
+      debugPrint('[FCM] Failed to persist token: $e');
+      return <void>[];
+    });
   }
 
   /// Handle FCM token refresh — persist new token immediately so the user
