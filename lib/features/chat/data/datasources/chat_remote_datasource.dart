@@ -567,6 +567,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
             'conversationId': conversation.conversationId,
           },
           imageUrl: senderPhoto,
+          actorId: senderId,
+          actorName: senderName,
         );
       } else {
         // Regular message - create new_message notification.
@@ -587,6 +589,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
             'conversationId': conversation.conversationId,
           },
           imageUrl: senderPhoto,
+          actorId: senderId,
+          actorName: senderName,
         );
       }
       } catch (sideEffectError) {
@@ -635,6 +639,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     required String message,
     Map<String, dynamic>? data,
     String? imageUrl,
+    String? actorId,
+    String? actorName,
   }) async {
     try {
       await firestore.collection('notifications').add({
@@ -644,6 +650,10 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'message': message,
         'data': data,
         'imageUrl': imageUrl,
+        // Without actorId the notification row renders the avatar but the tap
+        // does nothing — the list only wires onOpenActor when this is set.
+        'actorId': actorId,
+        'actorName': actorName,
         'createdAt': Timestamp.fromDate(DateTime.now()),
         'isRead': false,
       });
