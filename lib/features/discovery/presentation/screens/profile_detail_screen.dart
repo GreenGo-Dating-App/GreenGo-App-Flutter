@@ -227,6 +227,9 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
         'userId': widget.profile.userId,
         'type': 'photo_like',
         'imageUrl': likerPhoto,
+        // Lets the avatar in the notification row open the liker's profile.
+        'actorId': widget.currentUserId,
+        'actorName': userName,
         'title': 'New Photo Like',
         'message': '$displayName liked your photo',
         'data': {
