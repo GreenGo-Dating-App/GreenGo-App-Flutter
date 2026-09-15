@@ -4661,5 +4661,20 @@
   "chatSmartRepliesLoading": "Antworten werden vorbereitet...",
   "errorScreenTitle": "Etwas ist schiefgelaufen",
   "errorScreenBody": "Dieser Bildschirm konnte nicht geöffnet werden. Lade die App neu, um es erneut zu versuchen — dein Konto ist nicht betroffen.",
-  "errorScreenReload": "Neu laden"
+  "errorScreenReload": "Neu laden",
+  "ageVerifyTitle": "Alter bestätigen",
+  "ageVerifyWhyPublish": "Um in einer Community zu posten, müssen wir bestätigen, dass du über 18 bist.",
+  "ageVerifyWhyPhone": "Du hast dich mit einer Telefonnummer registriert, daher brauchen wir ein Dokument zur Altersbestätigung.",
+  "ageVerifyPrivacyNote": "Wir lesen nur das Geburtsdatum und löschen das Foto sofort. Das Bild wird nie gespeichert.",
+  "ageVerifyTakePhoto": "Ausweis fotografieren",
+  "ageVerifyChooseImage": "Aus der Galerie wählen",
+  "ageVerifyChecking": "Dokument wird geprüft…",
+  "ageVerifyPending": "Wir prüfen dein Dokument. Das dauert meist weniger als einen Tag.",
+  "ageVerifyVerified": "Dein Alter ist bestätigt.",
+  "ageVerifyRejected": "Wir konnten dein Dokument nicht lesen. Bitte versuche es mit einem schärferen Foto.",
+  "ageVerifyRejectedUnderage": "Das Dokument zeigt, dass du unter 18 bist.",
+  "ageVerifyRejectedReused": "Dieses Dokument ist bereits mit einem anderen Konto verknüpft.",
+  "ageVerifyCta": "Jetzt bestätigen",
+  "ageVerifyLater": "Später",
+  "ageVerifyNeededToPost": "Alter bestätigen, um zu posten"
 }

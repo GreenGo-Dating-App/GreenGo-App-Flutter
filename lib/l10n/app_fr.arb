@@ -4080,5 +4080,20 @@
   "chatSmartRepliesLoading": "Préparation des réponses...",
   "errorScreenTitle": "Une erreur est survenue",
   "errorScreenBody": "Cet écran n'a pas pu s'ouvrir. Rechargez l'application pour réessayer — votre compte n'est pas affecté.",
-  "errorScreenReload": "Recharger"
+  "errorScreenReload": "Recharger",
+  "ageVerifyTitle": "Vérifiez votre âge",
+  "ageVerifyWhyPublish": "Pour publier dans une communauté, nous devons confirmer que vous avez plus de 18 ans.",
+  "ageVerifyWhyPhone": "Vous vous êtes inscrit avec un numéro de téléphone : il nous faut un document pour confirmer votre âge.",
+  "ageVerifyPrivacyNote": "Nous lisons uniquement la date de naissance et supprimons la photo immédiatement. L'image n'est jamais conservée.",
+  "ageVerifyTakePhoto": "Photographiez votre pièce d'identité",
+  "ageVerifyChooseImage": "Choisir dans la galerie",
+  "ageVerifyChecking": "Vérification de votre document…",
+  "ageVerifyPending": "Nous examinons votre document. Cela prend généralement moins d'une journée.",
+  "ageVerifyVerified": "Votre âge est vérifié.",
+  "ageVerifyRejected": "Nous n'avons pas pu lire votre document. Réessayez avec une photo plus nette.",
+  "ageVerifyRejectedUnderage": "Le document indique que vous avez moins de 18 ans.",
+  "ageVerifyRejectedReused": "Ce document est déjà lié à un autre compte.",
+  "ageVerifyCta": "Vérifier maintenant",
+  "ageVerifyLater": "Plus tard",
+  "ageVerifyNeededToPost": "Vérifiez votre âge pour publier"
 }

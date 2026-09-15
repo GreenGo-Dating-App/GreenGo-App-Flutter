@@ -13959,4 +13959,56 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get errorScreenReload => 'Recargar';
+
+  @override
+  String get ageVerifyTitle => 'Verifica tu edad';
+
+  @override
+  String get ageVerifyWhyPublish =>
+      'Para publicar en una comunidad necesitamos confirmar que eres mayor de 18 años.';
+
+  @override
+  String get ageVerifyWhyPhone =>
+      'Te registraste con un número de teléfono, así que necesitamos un documento para confirmar tu edad.';
+
+  @override
+  String get ageVerifyPrivacyNote =>
+      'Solo leemos la fecha de nacimiento y borramos la foto de inmediato. La imagen nunca se guarda.';
+
+  @override
+  String get ageVerifyTakePhoto => 'Haz una foto de tu documento';
+
+  @override
+  String get ageVerifyChooseImage => 'Elegir de la galería';
+
+  @override
+  String get ageVerifyChecking => 'Comprobando tu documento…';
+
+  @override
+  String get ageVerifyPending =>
+      'Estamos revisando tu documento. Suele tardar menos de un día.';
+
+  @override
+  String get ageVerifyVerified => 'Tu edad está verificada.';
+
+  @override
+  String get ageVerifyRejected =>
+      'No pudimos leer tu documento. Inténtalo de nuevo con una foto más nítida.';
+
+  @override
+  String get ageVerifyRejectedUnderage =>
+      'El documento indica que eres menor de 18 años.';
+
+  @override
+  String get ageVerifyRejectedReused =>
+      'Este documento ya está vinculado a otra cuenta.';
+
+  @override
+  String get ageVerifyCta => 'Verificar ahora';
+
+  @override
+  String get ageVerifyLater => 'Ahora no';
+
+  @override
+  String get ageVerifyNeededToPost => 'Verifica tu edad para publicar';
 }
