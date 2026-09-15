@@ -36,6 +36,9 @@ const {
   getDoc,
   getDocs,
   collection,
+  collectionGroup,
+  query,
+  where,
   Timestamp,
 } = req('firebase/firestore');
 const {
@@ -232,6 +235,52 @@ async function main() {
   );
   await denied('an undeclared collection is denied by default',
     mustDenyRead('a_collection_nobody_declared', 'x'));
+
+
+  console.log('');
+  console.log('Regression - the paths that caused the grey-screen outage');
+  await adb.collection('vibeTags').doc('t1').set({ label: 'calm' });
+  await adb.collection('userVibeTags').doc(uidA).set({ tags: ['calm'] });
+  await adb.collection('conversationExpiry').doc('c1').set({ ttlDays: 30 });
+  await adb.collection('scheduledDates').doc('d1').set({ participants: [uidA, uidB] });
+  await adb.collection('scheduledDates').doc('d2').set({ participants: [uidB] });
+  await adb.collection('sentVirtualGifts').doc('g1').set({ senderId: uidB, receiverId: uidA });
+  await adb.collection('sentVirtualGifts').doc('g2').set({ senderId: uidB, receiverId: uidB });
+  await adb.collection('events').doc('e1').collection('attendees').doc(uidA).set({ userId: uidA });
+
+  await allowed('vibe tag catalogue readable', () =>
+    getDoc(doc(cdb, 'vibeTags', 't1')).then((d) => { if (!d.exists()) throw new Error('denied'); }));
+  await allowed('own vibe tags readable', () =>
+    getDoc(doc(cdb, 'userVibeTags', uidA)).then((d) => { if (!d.exists()) throw new Error('denied'); }));
+  await allowed('conversation expiry readable', () =>
+    getDoc(doc(cdb, 'conversationExpiry', 'c1')).then((d) => { if (!d.exists()) throw new Error('denied'); }));
+  await allowed('own scheduled date readable', () =>
+    getDoc(doc(cdb, 'scheduledDates', 'd1')).then((d) => { if (!d.exists()) throw new Error('denied'); }));
+  await denied('someone else scheduled date denied', () =>
+    getDoc(doc(cdb, 'scheduledDates', 'd2')).then((d) => { if (d.exists()) throw new Error('readable'); }));
+  await allowed('gift received is readable', () =>
+    getDoc(doc(cdb, 'sentVirtualGifts', 'g1')).then((d) => { if (!d.exists()) throw new Error('denied'); }));
+  await denied('gift between two other people denied', () =>
+    getDoc(doc(cdb, 'sentVirtualGifts', 'g2')).then((d) => { if (d.exists()) throw new Error('readable'); }));
+  await allowed('collectionGroup(attendees) works', () =>
+    getDocs(query(collectionGroup(cdb, 'attendees'), where('userId', '==', uidA))));
+  await allowed('collectionGroup(members) works', () =>
+    getDocs(query(collectionGroup(cdb, 'members'), where('userId', '==', uidA))));
+
+
+  console.log('');
+  console.log('Welcome grant - the narrow exception, and its limits');
+  await adb.collection('coinBalances').doc(uidB).set({ userId: uidB, totalCoins: 0, earnedCoins: 0 });
+  await allowed('empty balance may receive the 100 welcome coins', async () => {
+    const c2 = initializeApp({ projectId: PROJECT, apiKey: 'emulator' }, 'welcome');
+    const d2 = getFirestore(c2); const a2 = getAuth(c2);
+    connectFirestoreEmulator(d2, '127.0.0.1', 8098);
+    connectAuthEmulator(a2, 'http://127.0.0.1:9099', { disableWarnings: true });
+    await signInWithEmailAndPassword(a2, 'b@test.dev', 'password123');
+    await setDoc(doc(d2, 'coinBalances', uidB), { totalCoins: 100, earnedCoins: 100 }, { merge: true });
+  });
+  await denied('a funded balance cannot be topped up again', () =>
+    setDoc(doc(cdb, 'coinBalances', uidA), { totalCoins: 5000 }, { merge: true }));
 
   console.log(`\n${passed} passed, ${failed} failed`);
   process.exit(failed === 0 ? 0 : 1);

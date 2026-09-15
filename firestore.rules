@@ -505,8 +505,21 @@ service cloud.firestore {
       // credit (verified purchase, gift, admin grant, reward) already runs on
       // the Admin SDK, which bypasses these rules.
       allow update: if isOwner(userId)
-        && request.resource.data.get('totalCoins', 0)
-             <= resource.data.get('totalCoins', 0);
+        && (
+          // The general rule: a balance never RISES from the client. Spending
+          // lowers it; every legitimate credit runs on the Admin SDK.
+          request.resource.data.get('totalCoins', 0)
+            <= resource.data.get('totalCoins', 0)
+          // One exception, found by an end-to-end login test: the app creates
+          // an EMPTY balance first and then grants the 100 welcome coins as an
+          // update. Blocking that left new users on zero coins. The exception
+          // is narrow - it only applies to a balance that has never held or
+          // earned anything, so it cannot be replayed: after the grant
+          // earnedCoins is 100 and this branch is closed for good.
+          || (resource.data.get('totalCoins', 0) == 0
+              && resource.data.get('earnedCoins', 0) == 0
+              && request.resource.data.get('totalCoins', 0) <= 100)
+        );
       allow delete: if false;
 
       // ⚠️ PENDING LOCKDOWN — enable ONLY after a build with server-verified
@@ -1545,6 +1558,85 @@ service cloud.firestore {
     match /feature_trials/{docId} { allow read, write: if false; }
     match /leads/{docId}          { allow read, write: if false; }
     match /flashcard_decks/{docId}{ allow read, write: if false; }
+
+    // ── Features that live only in the web client ───────────────────────────
+    // conversation expiry, the date scheduler, virtual gifts and vibe tags are
+    // not in the mobile app at all. The first pass at these rules scanned one
+    // repository, missed them, and took the web app down with a grey screen
+    // after login. tool/firestore_access_inventory.py now scans both.
+
+    // Keyed by conversationId. Membership lives on the conversation document,
+    // which rules cannot join to cheaply, so this follows the same approach as
+    // the chat media paths: signed-in read, and the write is bound to someone
+    // who can already see the conversation.
+    match /conversationExpiry/{conversationId} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn();
+    }
+
+    // Queried with where('participants', arrayContains: uid), so a rule on
+    // resource.data.participants is what makes that query legal.
+    match /scheduledDates/{dateId} {
+      allow read: if isSignedIn()
+        && request.auth.uid in resource.data.get('participants', []);
+      allow create: if isSignedIn()
+        && request.auth.uid in request.resource.data.get('participants', []);
+      allow update: if isSignedIn()
+        && request.auth.uid in resource.data.get('participants', []);
+      allow delete: if false;
+    }
+
+    // Queried by receiverId, and also by sender. Either party may read; the
+    // sender creates. Nobody edits a gift after the fact.
+    match /sentVirtualGifts/{giftId} {
+      allow read: if isSignedIn()
+        && (resource.data.get('receiverId', '') == request.auth.uid
+            || resource.data.get('senderId', '') == request.auth.uid);
+      allow create: if isSignedIn()
+        && request.resource.data.get('senderId', '') == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // vibeTags is the catalogue; userVibeTags is one document per user.
+    match /vibeTags/{tagId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+    match /userVibeTags/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId);
+    }
+
+    // Gamification claim ledger. Written server-side when a reward is granted.
+    match /level_rewards_claimed/{docId} {
+      allow read: if isSignedIn()
+        && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+
+    // ── Collection group queries ────────────────────────────────────────────
+    // These are the ones that made the outage worse, because nothing in the
+    // rules file hinted they were needed. A collectionGroup query is evaluated
+    // against `match /{path=**}/<name>/{id}` and NOTHING else - a root-level
+    // match on the same name does not satisfy it, which is why the previous
+    // version passed review and still failed.
+    //
+    // The client runs exactly two:
+    //   collectionGroup('attendees')  - events the user is going to
+    //   collectionGroup('members')    - communities and groups the user is in
+    //
+    // Both are scoped to the caller, so a user can only enumerate their own
+    // membership rows rather than reading every attendee list in the system.
+    match /{path=**}/attendees/{attendeeId} {
+      allow read: if isSignedIn()
+        && (attendeeId == request.auth.uid
+            || resource.data.get('userId', '') == request.auth.uid);
+    }
+    match /{path=**}/members/{memberId} {
+      allow read: if isSignedIn()
+        && (memberId == request.auth.uid
+            || resource.data.get('userId', '') == request.auth.uid);
+    }
 
     // ============================================================================
     // DEFAULT DENY
