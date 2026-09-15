@@ -305,7 +305,6 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
               'remainingCoins': 500,
               'source': 'reward',
               'acquiredDate': Timestamp.fromDate(now),
-              'expirationDate': Timestamp.fromDate(newEndDate),
             };
             final balanceDoc = await balanceRef.get();
             if (balanceDoc.exists) {

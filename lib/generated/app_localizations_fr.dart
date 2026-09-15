@@ -1304,10 +1304,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get adminUploading => 'Téléversement...';
 
   @override
-  String get adminUseVideoCallingFeature =>
-      'Utiliser la fonction d\'appel vidéo';
-
-  @override
   String get adminUsedMinutes => 'Minutes utilisées';
 
   @override
@@ -1370,9 +1366,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get adminVerifications => 'Vérifications';
-
-  @override
-  String get adminVideoChat => 'Chat vidéo';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -2934,11 +2927,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get coinsEnterReceiverId => 'Entrez l\'ID du destinataire';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count expirent bientot';
-  }
 
   @override
   String get coinsFilterTransactions => 'Filtrer les transactions';
@@ -9299,6 +9287,10 @@ class AppLocalizationsFr extends AppLocalizations {
       'Boutique indisponible. Vérifiez les paramètres de votre appareil.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'Les achats sont temporairement indisponibles. Veuillez réessayer plus tard.';
+
+  @override
   String get shopSuperLikes => 'Connexions Prioritaires';
 
   @override
@@ -14015,4 +14007,14 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get chatSmartRepliesLoading => 'Préparation des réponses...';
+
+  @override
+  String get errorScreenTitle => 'Une erreur est survenue';
+
+  @override
+  String get errorScreenBody =>
+      'Cet écran n\'a pas pu s\'ouvrir. Rechargez l\'application pour réessayer — votre compte n\'est pas affecté.';
+
+  @override
+  String get errorScreenReload => 'Recharger';
 }

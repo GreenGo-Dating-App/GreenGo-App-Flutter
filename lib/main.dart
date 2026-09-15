@@ -41,6 +41,7 @@ import 'core/services/version_check_service.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/admin_data_utils.dart';
 import 'core/utils/seed_data.dart';
+import 'core/widgets/app_error_screen.dart';
 import 'core/widgets/update_dialog.dart';
 import 'features/admin/presentation/screens/admin_2fa_screen.dart';
 import 'features/admin/presentation/screens/coin_management_screen.dart';
@@ -89,14 +90,52 @@ import 'generated/app_localizations.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // A build failure must never leave a blank page. Flutter's default release
+  // ErrorWidget is a flat grey rectangle, which on web is indistinguishable
+  // from "the app shows a white page" — that is exactly how an unregistered
+  // GetIt lookup in MainNavigationScreen.initState presented in production.
+  // Replace it with a screen that names the failure and offers a way out.
+  ErrorWidget.builder = (FlutterErrorDetails details) {
+    debugPrint('🛑 Widget build failed: ${details.exceptionAsString()}');
+    // Best-effort report; never let the reporter itself throw here.
+    try {
+      if (!kDebugMode) FirebaseCrashlytics.instance.recordFlutterError(details);
+    } catch (_) {}
+    return AppErrorScreen(details: details, onReload: restartApp);
+  };
+
   // Print app configuration (for debugging)
   AppConfig.printConfig();
 
-  // Set preferred orientations
-  await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
+  // Set preferred orientations.
+  //
+  // GreenGo ships for iPhone AND iPad (TARGETED_DEVICE_FAMILY = "1,2"), and
+  // App Review therefore tests on an iPad. An app that declares iPad support
+  // but refuses to rotate reads as a blown-up phone app and is a 2.1 / HIG
+  // risk, so tablets get all four orientations while phones stay portrait —
+  // the phone layouts are designed for one orientation only.
+  //
+  // Measured from the physical view rather than MediaQuery because no widget
+  // tree exists yet at this point in startup. 600dp shortest side is the
+  // conventional phone/tablet boundary.
+  final view = WidgetsBinding.instance.platformDispatcher.views.first;
+  final shortestSideDp =
+      (view.physicalSize.shortestSide / view.devicePixelRatio);
+  final isTablet = shortestSideDp >= 600;
+
+  await SystemChrome.setPreferredOrientations(
+    isTablet
+        ? const [
+            DeviceOrientation.portraitUp,
+            DeviceOrientation.portraitDown,
+            DeviceOrientation.landscapeLeft,
+            DeviceOrientation.landscapeRight,
+          ]
+        : const [
+            DeviceOrientation.portraitUp,
+            DeviceOrientation.portraitDown,
+          ],
+  );
 
   // Initialize Firebase with production options
   await Firebase.initializeApp(
@@ -145,16 +184,19 @@ void main() async {
 
     try {
       // Connect to Auth Emulator
-      await FirebaseAuth.instance.useAuthEmulator(emulatorHost, 9099);
-      debugPrint('✓ Auth Emulator: $emulatorHost:9099');
+      await FirebaseAuth.instance
+          .useAuthEmulator(emulatorHost, AppConfig.authEmulatorPort);
+      debugPrint('✓ Auth Emulator: $emulatorHost:${AppConfig.authEmulatorPort}');
 
       // Connect to Firestore Emulator
-      FirebaseFirestore.instance.useFirestoreEmulator(emulatorHost, 8080);
-      debugPrint('✓ Firestore Emulator: $emulatorHost:8080');
+      FirebaseFirestore.instance
+          .useFirestoreEmulator(emulatorHost, AppConfig.firestoreEmulatorPort);
+      debugPrint('✓ Firestore Emulator: $emulatorHost:${AppConfig.firestoreEmulatorPort}');
 
       // Connect to Storage Emulator
-      await FirebaseStorage.instance.useStorageEmulator(emulatorHost, 9199);
-      debugPrint('✓ Storage Emulator: $emulatorHost:9199');
+      await FirebaseStorage.instance
+          .useStorageEmulator(emulatorHost, AppConfig.storageEmulatorPort);
+      debugPrint('✓ Storage Emulator: $emulatorHost:${AppConfig.storageEmulatorPort}');
 
       debugPrint('🎉 All Firebase Emulators connected!');
     } catch (e) {
@@ -287,6 +329,18 @@ void main() async {
   unawaited(MapBasemap.load());
 
   runApp(GreenGoChatApp(savedLanguage: savedLanguage));
+}
+
+/// Recovery action offered by [AppErrorScreen].
+///
+/// Rebuilds the navigator from the root, which re-runs [AuthWrapper] and so
+/// re-enters whatever screen the user's auth state calls for. A screen-level
+/// crash is recoverable this way without the user losing their session; the
+/// crash screen is otherwise a dead end.
+void restartApp() {
+  final nav = PushNotificationService.navigatorKey.currentState;
+  if (nav == null) return;
+  nav.pushNamedAndRemoveUntil('/', (route) => false);
 }
 
 /// One-shot guard so the app_launch trace is completed exactly once.
@@ -708,8 +762,18 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       }
     });
     // Ensure admin profiles have isAdmin=true and approvalStatus=approved
-    // in the users collection BEFORE checking access (prevents "under review")
-    await AdminDataUtils.ensureAdminDataComplete();
+    // in the users collection BEFORE checking access (prevents "under review").
+    //
+    // Time-boxed: this is an await on the critical path to _checkAccessStatus,
+    // and _isCheckingAccess is already true. If it never returns — a blocked
+    // Firestore channel on web will do exactly that — the builder sits on the
+    // splash forever. A slow admin sync is not worth stranding anyone for.
+    try {
+      await AdminDataUtils.ensureAdminDataComplete()
+          .timeout(const Duration(seconds: 6));
+    } catch (e) {
+      debugPrint('⚠ Admin data sync skipped: $e');
+    }
     _checkAccessStatus(user.uid);
     // Load user's saved language from Firestore
     if (mounted) {
@@ -759,10 +823,15 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       var accountBanned = false;
       // Check if user profile exists and is complete (force server to avoid stale cache)
       try {
+        // Timed out deliberately: a server-source read has no deadline of its
+        // own, so a blocked or stalled Firestore channel (common on web behind
+        // a proxy) would hang here without ever throwing, and the catch below
+        // would never run. On timeout we fall through to the cached read.
         final profileDoc = await FirebaseFirestore.instance
             .collection('profiles')
             .doc(userId)
-            .get(const GetOptions(source: Source.server));
+            .get(const GetOptions(source: Source.server))
+            .timeout(const Duration(seconds: 8));
         _needsOnboarding = !profileDoc.exists ||
             profileDoc.data()?['isComplete'] != true;
         // Permanent ban: only a positively-read isBanned==true locks out.
@@ -778,7 +847,8 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
           final profileDoc = await FirebaseFirestore.instance
               .collection('profiles')
               .doc(userId)
-              .get();
+              .get()
+              .timeout(const Duration(seconds: 6));
           _needsOnboarding = !profileDoc.exists ||
               profileDoc.data()?['isComplete'] != true;
           accountBanned = profileDoc.exists &&
@@ -804,7 +874,11 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         return;
       }
 
-      var accessData = await _accessControlService.getCurrentUserAccess();
+      // Same reasoning as the profile read: bounded, so a stalled channel
+      // surfaces as the pending fallback below rather than an endless splash.
+      var accessData = await _accessControlService
+          .getCurrentUserAccess()
+          .timeout(const Duration(seconds: 8), onTimeout: () => null);
       debugPrint('🔑 Access data for $userId: isAdmin=${accessData?.isAdmin}, '
           'isTestUser=${accessData?.isTestUser}, '
           'approvalStatus=${accessData?.approvalStatus}, '

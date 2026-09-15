@@ -369,7 +369,6 @@
   "adminUploadCsvDescription": "Carregar arquivo CSV com endereços de email (um por linha ou separados por vírgula)",
   "adminUploadCsvFile": "Carregar Arquivo CSV",
   "adminUploading": "Carregando...",
-  "adminUseVideoCallingFeature": "Usar funcionalidade de videochamada",
   "adminUsedMinutes": "Minutos Usados",
   "adminUser": "Usuário",
   "adminUserAnalytics": "Análise de Usuários",
@@ -388,7 +387,6 @@
   "adminUserVerificationsSubtitle": "Aprovar ou rejeitar pedidos de verificação de usuários",
   "adminVerificationFilter": "Filtro de Verificação",
   "adminVerifications": "Verificações",
-  "adminVideoChat": "Videochamada",
   "adminVideoMinutesLabel": "{minutes} Minutos",
   "adminViewContext": "Ver Contexto",
   "adminViewDocument": "Ver Documento",
@@ -1065,7 +1063,6 @@
   "coinsCreditsOnly": "Apenas Créditos",
   "coinsDebitsOnly": "Apenas Débitos",
   "coinsEnterReceiverId": "Insira o ID do destinatário",
-  "coinsExpiring": "{count} expirando",
   "coinsFilterTransactions": "Filtrar Transações",
   "coinsGiftAccepted": "{amount} moedas aceitas!",
   "coinsGiftDeclined": "Presente recusado",
@@ -3048,6 +3045,7 @@
   "shopSend": "Enviar",
   "shopSendCoins": "Enviar moedas",
   "shopStoreNotAvailable": "Loja indisponível. Verifique as configurações do dispositivo.",
+  "shopTemporarilyUnavailable": "As compras estão temporariamente indisponíveis. Tente novamente mais tarde.",
   "shopSuperLikes": "Conexões Prioritárias",
   "shopTabCoins": "Moedas",
   "shopTabError": "Erro na aba {tabName}",
@@ -4660,5 +4658,8 @@
   "chatSettingSilverPlusOnly": "Disponível a partir do Silver",
   "chatSettingXpBarHint": "Aparece assim que você ganhar XP nesta conversa",
   "chatSettingLanguageFlagsHint": "Aparece nas mensagens com tradução",
-  "chatSmartRepliesLoading": "Preparando respostas..."
+  "chatSmartRepliesLoading": "Preparando respostas...",
+  "errorScreenTitle": "Algo deu errado",
+  "errorScreenBody": "Não foi possível abrir esta tela. Recarregue o aplicativo para tentar de novo — sua conta não é afetada.",
+  "errorScreenReload": "Recarregar"
 }

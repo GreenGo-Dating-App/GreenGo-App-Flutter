@@ -21,7 +21,6 @@ class MembershipRulesModel extends MembershipRules {
     super.canUseIncognitoMode,
     super.matchPriority,
     super.canSeeProfileVisitors,
-    super.canUseVideoChat,
     super.badgeIcon,
   });
 
@@ -43,7 +42,6 @@ class MembershipRulesModel extends MembershipRules {
       canUseIncognitoMode: rules.canUseIncognitoMode,
       matchPriority: rules.matchPriority,
       canSeeProfileVisitors: rules.canSeeProfileVisitors,
-      canUseVideoChat: rules.canUseVideoChat,
       badgeIcon: rules.badgeIcon,
     );
   }
@@ -66,7 +64,6 @@ class MembershipRulesModel extends MembershipRules {
       canUseIncognitoMode: json['canUseIncognitoMode'] as bool? ?? false,
       matchPriority: json['matchPriority'] as int? ?? 0,
       canSeeProfileVisitors: json['canSeeProfileVisitors'] as bool? ?? false,
-      canUseVideoChat: json['canUseVideoChat'] as bool? ?? false,
       badgeIcon: json['badgeIcon'] as String?,
     );
   }
@@ -89,7 +86,6 @@ class MembershipRulesModel extends MembershipRules {
       'canUseIncognitoMode': canUseIncognitoMode,
       'matchPriority': matchPriority,
       'canSeeProfileVisitors': canSeeProfileVisitors,
-      'canUseVideoChat': canUseVideoChat,
       'badgeIcon': badgeIcon,
     };
   }

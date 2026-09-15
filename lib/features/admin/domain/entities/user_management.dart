@@ -222,6 +222,9 @@ class UserCoinInfo extends Equatable {
 }
 
 /// Coin batch info
+///
+/// Batches record where coins came from. They carry no expiry: coins never
+/// expire (App Store Review Guideline 3.1.1).
 class CoinBatchInfo extends Equatable {
 
   const CoinBatchInfo({
@@ -230,14 +233,12 @@ class CoinBatchInfo extends Equatable {
     required this.remainingCoins,
     required this.source,
     required this.acquiredAt,
-    required this.expirationDate,
   });
   final String batchId;
   final int initialCoins;
   final int remainingCoins;
   final String source;
   final DateTime acquiredAt;
-  final DateTime expirationDate;
 
   @override
   List<Object?> get props => [
@@ -246,7 +247,6 @@ class CoinBatchInfo extends Equatable {
         remainingCoins,
         source,
         acquiredAt,
-        expirationDate,
       ];
 }
 

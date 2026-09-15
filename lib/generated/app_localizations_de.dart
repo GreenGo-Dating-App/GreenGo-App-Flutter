@@ -1303,9 +1303,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get adminUploading => 'Hochladen...';
 
   @override
-  String get adminUseVideoCallingFeature => 'Videoanruf-Funktion nutzen';
-
-  @override
   String get adminUsedMinutes => 'Verbrauchte Minuten';
 
   @override
@@ -1368,9 +1365,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get adminVerifications => 'Verifizierungen';
-
-  @override
-  String get adminVideoChat => 'Videochat';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -2926,11 +2920,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get coinsEnterReceiverId => 'Empfänger-ID eingeben';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count laufen ab';
-  }
 
   @override
   String get coinsFilterTransactions => 'Transaktionen filtern';
@@ -9260,6 +9249,10 @@ class AppLocalizationsDe extends AppLocalizations {
       'Store nicht verfügbar. Bitte überprüfe deine Geräteeinstellungen.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'Käufe sind vorübergehend nicht verfügbar. Bitte versuche es später erneut.';
+
+  @override
   String get shopSuperLikes => 'Prioritätsverbindungen';
 
   @override
@@ -13973,4 +13966,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get chatSmartRepliesLoading => 'Antworten werden vorbereitet...';
+
+  @override
+  String get errorScreenTitle => 'Etwas ist schiefgelaufen';
+
+  @override
+  String get errorScreenBody =>
+      'Dieser Bildschirm konnte nicht geöffnet werden. Lade die App neu, um es erneut zu versuchen — dein Konto ist nicht betroffen.';
+
+  @override
+  String get errorScreenReload => 'Neu laden';
 }

@@ -246,8 +246,6 @@ export {
   verifyGooglePlayCoinPurchase,
   verifyAppStoreCoinPurchase,
   grantMonthlyAllowances,
-  processExpiredCoins,
-  sendExpirationWarnings,
   claimReward,
   giftCoins,
   declineGift,
@@ -437,44 +435,8 @@ export {
   sendBrevoStreakReminder,
 } from './notifications/brevoEmailService';
 
-// Video Calling Functions
-export {
-  initiateVideoCall,
-  answerVideoCall,
-  endVideoCall,
-  handleCallSignal,
-  updateCallQuality,
-  startCallRecording,
-} from './video_calling/videoCalling';
 
-// Video Call Features Functions
-export {
-  enableVirtualBackground,
-  applyARFilter,
-  toggleBeautyMode,
-  enablePictureInPicture,
-  startScreenSharing,
-  stopScreenSharing,
-  toggleNoiseSuppression,
-  toggleEchoCancellation,
-  sendInCallReaction,
-  uploadCustomBackground,
-  getCallHistory,
-  getCallStatistics,
-  cleanupExpiredReactions,
-} from './video_calling/videoCallFeatures';
 
-// Group Video Call Functions
-export {
-  createGroupVideoCall,
-  joinGroupVideoCall,
-  leaveGroupVideoCall,
-  manageGroupParticipant,
-  changeGroupCallLayout,
-  createBreakoutRoom,
-  joinBreakoutRoom,
-  closeBreakoutRoom,
-} from './video_calling/groupVideoCalls';
 
 // Security Audit Functions
 export {

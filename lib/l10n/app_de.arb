@@ -369,7 +369,6 @@
   "adminUploadCsvDescription": "CSV-Datei mit E-Mail-Adressen hochladen (eine pro Zeile oder kommagetrennt)",
   "adminUploadCsvFile": "CSV-Datei hochladen",
   "adminUploading": "Hochladen...",
-  "adminUseVideoCallingFeature": "Videoanruf-Funktion nutzen",
   "adminUsedMinutes": "Verbrauchte Minuten",
   "adminUser": "Nutzer",
   "adminUserAnalytics": "Nutzeranalysen",
@@ -388,7 +387,6 @@
   "adminUserVerificationsSubtitle": "Verifizierungsanfragen genehmigen oder ablehnen",
   "adminVerificationFilter": "Verifizierungsfilter",
   "adminVerifications": "Verifizierungen",
-  "adminVideoChat": "Videochat",
   "adminVideoMinutesLabel": "{minutes} Minuten",
   "adminViewContext": "Kontext anzeigen",
   "adminViewDocument": "Dokument anzeigen",
@@ -1065,7 +1063,6 @@
   "coinsCreditsOnly": "Nur Gutschriften",
   "coinsDebitsOnly": "Nur Abbuchungen",
   "coinsEnterReceiverId": "Empfänger-ID eingeben",
-  "coinsExpiring": "{count} laufen ab",
   "coinsFilterTransactions": "Transaktionen filtern",
   "coinsGiftAccepted": "{amount} Münzen angenommen!",
   "coinsGiftDeclined": "Geschenk abgelehnt",
@@ -3046,6 +3043,7 @@
   "shopSend": "Senden",
   "shopSendCoins": "Münzen senden",
   "shopStoreNotAvailable": "Store nicht verfügbar. Bitte überprüfe deine Geräteeinstellungen.",
+  "shopTemporarilyUnavailable": "Käufe sind vorübergehend nicht verfügbar. Bitte versuche es später erneut.",
   "shopSuperLikes": "Prioritätsverbindungen",
   "shopTabCoins": "Münzen",
   "shopTabError": "Fehler im Tab {tabName}",
@@ -4660,5 +4658,8 @@
   "chatSettingSilverPlusOnly": "Ab Silber verfügbar",
   "chatSettingXpBarHint": "Erscheint, sobald du in diesem Chat XP sammelst",
   "chatSettingLanguageFlagsHint": "Wird bei übersetzten Nachrichten angezeigt",
-  "chatSmartRepliesLoading": "Antworten werden vorbereitet..."
+  "chatSmartRepliesLoading": "Antworten werden vorbereitet...",
+  "errorScreenTitle": "Etwas ist schiefgelaufen",
+  "errorScreenBody": "Dieser Bildschirm konnte nicht geöffnet werden. Lade die App neu, um es erneut zu versuchen — dein Konto ist nicht betroffen.",
+  "errorScreenReload": "Neu laden"
 }
