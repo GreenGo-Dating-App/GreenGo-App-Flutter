@@ -188,7 +188,10 @@ export const grantEntitlement = onCall<GrantRequest>(
 
 /** Recent grant batches, for the admin panel's history table. */
 export const listEntitlementGrants = onCall(
-  { memory: '256MiB' },
+  // 512MiB, not 256: this project's index.js loads ~274 functions and needs
+  // roughly 200MB RSS before any handler runs, so a 256MiB function is
+  // OOM-killed on cold start - silently, taking its invocation with it.
+  { memory: '512MiB' },
   async (request) => {
     const adminUid = request.auth?.uid;
     if (!adminUid) throw new HttpsError('unauthenticated', 'Sign in required.');
