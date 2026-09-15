@@ -349,6 +349,10 @@ export {
 // Fires on auth deletion however it is triggered — app, admin panel, console.
 export { onUserDeletedCleanup } from './auth/deleteUserData';
 
+// Release bonus. Moved off the client when the profile rules stopped
+// allowing users to write their own entitlement fields.
+export { claimReleaseBonus } from './subscription/claimReleaseBonus';
+
 // Direct entitlement grants — the Guideline 3.1.1-safe replacement for coupon
 // codes. An admin gives the entitlement; the user redeems nothing.
 export {
