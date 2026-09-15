@@ -1,7 +1,7 @@
 POLITICA DE PRIVACIDAD DE GREENGO CHAT
 
-Ultima Actualizacion: 26 de enero de 2026
-Fecha de Entrada en Vigor: 26 de enero de 2026
+Ultima Actualizacion: 15 de septiembre de 2026
+Fecha de Entrada en Vigor: 15 de septiembre de 2026
 
 ================================================================================
 INTRODUCCION
@@ -192,6 +192,17 @@ Podemos recopilar y procesar los siguientes datos personales sensibles con su co
 - Creencias religiosas (si se proporcionan voluntariamente)
 - Informacion de salud relevante para relaciones (si se divulga voluntariamente)
 - Datos biometricos (solo para verificacion de identidad)
+- Datos del documento de identidad (solo para la verificacion de edad - vease la Seccion 2.6)
+
+No conservamos las imagenes utilizadas para la verificacion de identidad o de
+edad. La verificacion facial y la verificacion de edad se procesan y la imagen
+de origen se elimina despues; solo se conserva el resultado derivado. Veanse las
+Secciones 2.6 y 8.1(e).
+
+Retirar el consentimiento para la verificacion de edad elimina su estado de
+verificado y, con el, la posibilidad de publicar contenido en las Comunidades.
+No afecta al resto de su cuenta.
+
 
 Usted tiene derecho a retirar el consentimiento para el tratamiento de datos sensibles en cualquier momento.
 
@@ -265,6 +276,77 @@ Usuarios de iOS:
 3. Algunas funciones pueden estar limitadas cuando los permisos estan desactivados
 
 Solo solicitamos permisos necesarios para la funcionalidad principal de la aplicacion o funciones opcionales que elija utilizar. No accedemos a ningun dato mas alla de lo necesario para los propositos declarados.
+
+================================================================================
+2.6 DATOS DE VERIFICACION DE EDAD
+================================================================================
+
+GreenGo es para adultos de 18 anos o mas. Cada usuario declara su fecha de
+nacimiento al crear una cuenta, y las cuentas que declaran una edad inferior a
+18 anos son rechazadas.
+
+Ademas, verificamos la edad mediante un documento de identidad en dos
+situaciones:
+
+a) Cuando inicia sesion utilizando UNICAMENTE un numero de telefono. Un numero
+   de telefono no establece ninguna identidad, por lo que una fecha de nacimiento
+   declarada tras el carece de respaldo.
+
+b) Cuando desea PUBLICAR contenido en una Comunidad. Leer y unirse a Comunidades
+   nunca requiere verificacion; solo publicar la requiere, porque el contenido
+   publicado llega a otras personas.
+
+QUE OCURRE CON SU DOCUMENTO
+
+Esta disenado para conservar su documento durante segundos, no dias:
+
+1. Usted sube una fotografia de un documento de identidad a una ubicacion de
+   almacenamiento de solo escritura. No puede volver a leerse - ni por usted ni
+   por nuestro personal.
+2. Nuestros sistemas leen el documento automaticamente mediante reconocimiento
+   optico de caracteres, para extraer la fecha de nacimiento.
+3. La imagen se elimina en la misma operacion, tanto si la verificacion tiene
+   exito como si falla. Ningun empleado la ve, y no existe ninguna interfaz capaz
+   de mostrarla.
+
+QUE CONSERVAMOS
+
+Solo lo necesario para sustentar la decision:
+
+- La fecha de nacimiento leida del documento
+- Si coincidia con la fecha de nacimiento que usted declaro
+- Un hash criptografico unidireccional (SHA-256) del numero del documento. Esto
+  nos permite detectar el uso del mismo documento para verificar dos cuentas
+  distintas. El hash no puede revertirse para recuperar el numero.
+- El resultado, la puntuacion de confianza automatica y - si un miembro del
+  personal reviso un caso dudoso - el identificador de ese revisor
+
+NO conservamos: la imagen, su nombre tal como figura impreso en el documento, el
+numero del documento en forma legible, su nacionalidad ni la fecha de caducidad
+del documento.
+
+DONDE SE PROCESA
+
+El reconocimiento optico de caracteres lo realiza Google Cloud Vision, que actua
+como nuestro encargado del tratamiento en virtud de un acuerdo de tratamiento de
+datos. La imagen se transmite a dicho servicio para su procesamiento y no es
+conservada por el posteriormente.
+
+BASE JURIDICA
+
+- Consentimiento (LGPD Art. 7, I / RGPD Art. 6(1)(a)) para el tratamiento del
+  documento
+- Cumplimiento de una obligacion legal (LGPD Art. 7, II / RGPD Art. 6(1)(c)) e
+  interes legitimo (LGPD Art. 7, IX / RGPD Art. 6(1)(f)) en impedir que menores
+  accedan a contenido para adultos o lo publiquen, y en cumplir los requisitos de
+  verificacion de edad de las tiendas de aplicaciones a traves de las cuales se
+  distribuye GreenGo
+
+Puede rechazar la verificacion. Rechazarla significa que no podra publicar en
+Comunidades y, si su cuenta utiliza unicamente inicio de sesion por telefono, que
+determinadas funciones permaneceran no disponibles. Nunca conlleva la eliminacion
+de su cuenta.
+
 
 ================================================================================
 3. COMO RECOPILAMOS INFORMACION
@@ -411,6 +493,9 @@ Compartimos datos con proveedores de servicios terceros que realizan servicios e
 - Proveedores de SMS (verificacion y notificaciones)
 - Servicios de moderacion de contenido (seguridad)
 - Servicios de verificacion de identidad (prevencion de fraude)
+- Servicios de reconocimiento optico de caracteres (verificacion de edad) -
+  Google Cloud Vision, que recibe la imagen de un documento de identidad,
+  devuelve el texto encontrado en ella y no conserva nada despues
 
 Todos los proveedores de servicios estan contractualmente obligados a proteger sus datos y usarlos solo para fines especificados.
 
@@ -487,6 +572,49 @@ d) Datos de Seguridad y Prevencion de Fraude
    - Registros de IP: 6 meses
    - Datos de incidentes de seguridad: 5 anos
    - Datos de cuentas prohibidas: Indefinidamente (para prevenir nuevo registro)
+
+e) Datos de Verificacion de Edad e Identidad
+   - Imagenes de documentos: NO SE CONSERVAN. Se eliminan durante la misma
+     operacion que las lee, normalmente a los pocos segundos de la subida.
+   - Fecha de nacimiento extraida, resultado de la coincidencia, hash del numero
+     del documento y resultado: durante la vigencia de la cuenta. Se eliminan al
+     eliminarse la cuenta.
+
+f) Moneda Virtual
+   - Las monedas GreenGo no caducan y no estan sujetas a periodo de conservacion
+     alguno. Vease los Terminos y Condiciones.
+
+8.2 Proceso de Eliminacion
+
+Puede eliminar su cuenta en cualquier momento desde la aplicacion, en los ajustes
+de su perfil. La eliminacion es permanente y no puede deshacerse.
+
+Cuando elimina su cuenta, un proceso automatico elimina:
+- Su perfil, fotografias, videos y grabaciones de voz
+- Sus registros de cuenta y ajustes
+- Su saldo de monedas y sus registros de membresia
+- Sus membresias de Comunidad, asistencia a eventos y busquedas guardadas
+- Sus registros de verificacion de edad e identidad, incluidos el hash del numero
+  de documento y la fecha de nacimiento extraida
+- Su lista de usuarios bloqueados
+
+Los mensajes que ya ha enviado a otra persona se ANONIMIZAN en lugar de
+eliminarse. Su nombre, su fotografia y su identificador de cuenta se sustituyen
+por una marca de "usuario eliminado", de modo que el contenido ya no pueda
+atribuirse a usted. Lo hacemos porque eliminar esos mensajes alteraria el
+registro que otra persona conserva de una conversacion en la que participo, algo
+que no es necesario para retirar de ella sus datos personales.
+
+Conservamos un registro de eliminacion con la fecha y el numero de elementos
+retirados. No contiene datos personales y existe para poder responder mas
+adelante a una pregunta sobre si la eliminacion tuvo lugar.
+
+Ademas:
+- Su perfil deja de ser visible para otros usuarios de inmediato
+- Las copias de seguridad se purgan en un plazo de 90 dias
+- Determinados registros se conservan cuando la ley lo exige, principalmente los
+  registros financieros y fiscales (vease la Seccion 8.1(c)) y los datos sujetos
+  a una orden de conservacion legal
 
 ================================================================================
 9. SEGURIDAD DE DATOS
