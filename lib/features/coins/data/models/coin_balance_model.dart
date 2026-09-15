@@ -58,20 +58,34 @@ class CoinBalanceModel extends CoinBalance {
     };
   }
 
-  /// Parse coin batches from Firestore
+  /// Parse coin batches from Firestore.
+  ///
+  /// One malformed entry used to throw straight out of `fromFirestore`, which
+  /// discarded the WHOLE balance and showed the user zero coins. Skip what
+  /// cannot be read; never lose the rest. Legacy `expirationDate` values are
+  /// read and discarded — coins never expire (Guideline 3.1.1).
   static List<CoinBatch> _parseCoinBatches(List<dynamic>? data) {
     if (data == null) return [];
-    return data.map((item) {
-      final map = item as Map<String, dynamic>;
-      return CoinBatch(
-        batchId: map['batchId'] as String,
-        initialCoins: (map['initialCoins'] as num).toInt(),
-        remainingCoins: (map['remainingCoins'] as num).toInt(),
-        source: CoinSourceExtension.fromString(map['source'] as String),
-        acquiredDate: (map['acquiredDate'] as Timestamp).toDate(),
-        expirationDate: (map['expirationDate'] as Timestamp).toDate(),
-      );
-    }).toList();
+
+    final batches = <CoinBatch>[];
+    for (final item in data) {
+      try {
+        final map = Map<String, dynamic>.from(item as Map);
+        batches.add(CoinBatch(
+          batchId: map['batchId'] as String,
+          initialCoins: (map['initialCoins'] as num).toInt(),
+          remainingCoins: (map['remainingCoins'] as num).toInt(),
+          source: CoinSourceExtension.fromString(
+              (map['source'] as String?) ?? 'reward'),
+          acquiredDate:
+              (map['acquiredDate'] as Timestamp?)?.toDate() ?? DateTime.now(),
+        ));
+      } catch (_) {
+        // Unreadable batch — the unbatched fallback in
+        // CoinBalance.availableCoins still counts these coins via totalCoins.
+      }
+    }
+    return batches;
   }
 
   /// Convert coin batch to map
@@ -82,7 +96,6 @@ class CoinBalanceModel extends CoinBalance {
       'remainingCoins': batch.remainingCoins,
       'source': batch.source.name,
       'acquiredDate': Timestamp.fromDate(batch.acquiredDate),
-      'expirationDate': Timestamp.fromDate(batch.expirationDate),
     };
   }
 }

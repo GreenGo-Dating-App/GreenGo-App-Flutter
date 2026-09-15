@@ -140,8 +140,6 @@ class TierConfigProvider {
         return rules.canUseIncognitoMode;
       case 'profileVisitors':
         return rules.canSeeProfileVisitors;
-      case 'videoChat':
-        return rules.canUseVideoChat;
       default:
         return false;
     }

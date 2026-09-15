@@ -1299,10 +1299,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get adminUploading => 'A carregar...';
 
   @override
-  String get adminUseVideoCallingFeature =>
-      'Usar funcionalidade de videochamada';
-
-  @override
   String get adminUsedMinutes => 'Minutos Usados';
 
   @override
@@ -1365,9 +1361,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get adminVerifications => 'Verificações';
-
-  @override
-  String get adminVideoChat => 'Videochamada';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -2913,11 +2906,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get coinsEnterReceiverId => 'Introduz o ID do destinatário';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count a expirar';
-  }
 
   @override
   String get coinsFilterTransactions => 'Filtrar Transações';
@@ -9232,6 +9220,10 @@ class AppLocalizationsPt extends AppLocalizations {
       'Loja indisponível. Verifica as definições do dispositivo.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'As compras estão temporariamente indisponíveis. Tenta novamente mais tarde.';
+
+  @override
   String get shopSuperLikes => 'Conexões Prioritárias';
 
   @override
@@ -13928,6 +13920,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get chatSmartRepliesLoading => 'A preparar respostas...';
+
+  @override
+  String get errorScreenTitle => 'Algo correu mal';
+
+  @override
+  String get errorScreenBody =>
+      'Não foi possível abrir este ecrã. Recarrega a aplicação para tentar de novo — a tua conta não é afetada.';
+
+  @override
+  String get errorScreenReload => 'Recarregar';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -15227,10 +15229,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get adminUploading => 'Carregando...';
 
   @override
-  String get adminUseVideoCallingFeature =>
-      'Usar funcionalidade de videochamada';
-
-  @override
   String get adminUsedMinutes => 'Minutos Usados';
 
   @override
@@ -15293,9 +15291,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get adminVerifications => 'Verificações';
-
-  @override
-  String get adminVideoChat => 'Videochamada';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -16844,11 +16839,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get coinsEnterReceiverId => 'Insira o ID do destinatário';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count expirando';
-  }
 
   @override
   String get coinsFilterTransactions => 'Filtrar Transações';
@@ -23160,6 +23150,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'Loja indisponível. Verifique as configurações do dispositivo.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'As compras estão temporariamente indisponíveis. Tente novamente mais tarde.';
+
+  @override
   String get shopSuperLikes => 'Conexões Prioritárias';
 
   @override
@@ -27831,4 +27825,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatSmartRepliesLoading => 'Preparando respostas...';
+
+  @override
+  String get errorScreenTitle => 'Algo deu errado';
+
+  @override
+  String get errorScreenBody =>
+      'Não foi possível abrir esta tela. Recarregue o aplicativo para tentar de novo — sua conta não é afetada.';
+
+  @override
+  String get errorScreenReload => 'Recarregar';
 }

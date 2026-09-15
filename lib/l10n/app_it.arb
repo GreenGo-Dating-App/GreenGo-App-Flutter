@@ -411,7 +411,6 @@
   "adminUploadCsvDescription": "Carica un file CSV contenente indirizzi e-mail (uno per riga o separati da virgole)",
   "adminUploadCsvFile": "Carica file CSV",
   "adminUploading": "Caricamento...",
-  "adminUseVideoCallingFeature": "Utilizza la funzione di videochiamata",
   "adminUsedMinutes": "Minuti utilizzati",
   "adminUser": "Utente",
   "adminUserAnalytics": "Analisi utenti",
@@ -430,7 +429,6 @@
   "adminUserVerificationsSubtitle": "Approva o rifiuta le richieste di verifica degli utenti",
   "adminVerificationFilter": "Filtro verifica",
   "adminVerifications": "Verifiche",
-  "adminVideoChat": "Video chat",
   "adminVideoMinutesLabel": "{minutes} minuti",
   "adminViewContext": "Visualizza contesto",
   "adminViewDocument": "Visualizza documento",
@@ -1107,7 +1105,6 @@
   "coinsCreditsOnly": "Solo Accrediti",
   "coinsDebitsOnly": "Solo Addebiti",
   "coinsEnterReceiverId": "Inserisci l'ID del destinatario",
-  "coinsExpiring": "{count} in scadenza",
   "coinsFilterTransactions": "Filtra Transazioni",
   "coinsGiftAccepted": "{amount} monete accettate!",
   "coinsGiftDeclined": "Regalo rifiutato",
@@ -3088,6 +3085,7 @@
   "shopSend": "Invia",
   "shopSendCoins": "Invia monete",
   "shopStoreNotAvailable": "Negozio non disponibile. Controlla le impostazioni del dispositivo.",
+  "shopTemporarilyUnavailable": "Gli acquisti non sono al momento disponibili. Riprova più tardi.",
   "shopSuperLikes": "Connessioni Prioritarie",
   "shopTabCoins": "Monete",
   "shopTabError": "Errore scheda {tabName}",
@@ -4660,5 +4658,8 @@
   "chatSettingSilverPlusOnly": "Disponibile da Silver in su",
   "chatSettingXpBarHint": "Compare quando guadagni XP in questa chat",
   "chatSettingLanguageFlagsHint": "Mostrato sui messaggi tradotti",
-  "chatSmartRepliesLoading": "Sto pensando alle risposte..."
+  "chatSmartRepliesLoading": "Sto pensando alle risposte...",
+  "errorScreenTitle": "Qualcosa è andato storto",
+  "errorScreenBody": "Impossibile aprire questa schermata. Ricarica l'app per riprovare — il tuo account non è stato modificato.",
+  "errorScreenReload": "Ricarica"
 }

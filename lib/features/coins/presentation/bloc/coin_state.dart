@@ -195,35 +195,6 @@ class SentGiftsLoaded extends CoinState {
   List<Object?> get props => [gifts];
 }
 
-// Expiration States
-class ExpiringCoinsLoaded extends CoinState {
-
-  const ExpiringCoinsLoaded({
-    required this.expiringBatches,
-    required this.totalExpiringCoins,
-    required this.daysUntilExpiration,
-  });
-  final List<CoinBatch> expiringBatches;
-  final int totalExpiringCoins;
-  final int daysUntilExpiration;
-
-  @override
-  List<Object?> get props => [
-        expiringBatches,
-        totalExpiringCoins,
-        daysUntilExpiration,
-      ];
-}
-
-class ExpiredCoinsProcessed extends CoinState {
-
-  const ExpiredCoinsProcessed(this.expiredAmount);
-  final int expiredAmount;
-
-  @override
-  List<Object?> get props => [expiredAmount];
-}
-
 // Promotion States
 class PromotionsLoaded extends CoinState {
 
@@ -232,15 +203,6 @@ class PromotionsLoaded extends CoinState {
 
   @override
   List<Object?> get props => [promotions];
-}
-
-class PromoCodeApplied extends CoinState {
-
-  const PromoCodeApplied(this.promotion);
-  final CoinPromotion promotion;
-
-  @override
-  List<Object?> get props => [promotion];
 }
 
 class PromotionApplicabilityChecked extends CoinState {

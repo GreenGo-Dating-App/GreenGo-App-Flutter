@@ -91,7 +91,6 @@ class MembershipRulesModel {
       canUseIncognitoMode: map['canUseIncognitoMode'] as bool? ?? false,
       matchPriority: map['matchPriority'] as int? ?? 0,
       canSeeProfileVisitors: map['canSeeProfileVisitors'] as bool? ?? false,
-      canUseVideoChat: map['canUseVideoChat'] as bool? ?? false,
       badgeIcon: map['badgeIcon'] as String?,
     );
   }
@@ -112,7 +111,6 @@ class MembershipRulesModel {
       'canUseIncognitoMode': rules.canUseIncognitoMode,
       'matchPriority': rules.matchPriority,
       'canSeeProfileVisitors': rules.canSeeProfileVisitors,
-      'canUseVideoChat': rules.canUseVideoChat,
       'badgeIcon': rules.badgeIcon,
     };
   }

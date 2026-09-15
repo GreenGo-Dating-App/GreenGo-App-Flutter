@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart' show kDebugMode, debugPrint;
+import 'package:flutter/foundation.dart' show kDebugMode, kReleaseMode, debugPrint;
 
 /// App Configuration
 ///
@@ -20,19 +20,42 @@ class AppConfig {
   /// Automatically disabled in release builds for production safety
   /// Can be manually overridden for testing with: --dart-define=USE_EMULATORS=true
   static const bool _forceEmulators = bool.fromEnvironment('USE_EMULATORS', defaultValue: false);
-  static bool get useLocalEmulators => kDebugMode && _forceEmulators;
+
+  /// Release builds can never reach an emulator, whatever is defined — that is
+  /// the production safety guard and it stays.
+  ///
+  /// Profile builds can, because that is how the end-to-end suites run on web:
+  /// a debug (DDC) build of an app this size times out DWDS's debugger attach
+  /// before the tests ever start, so `flutter drive` has to use `--profile`.
+  /// Gating on `kDebugMode` there would have pointed the suites — which ban,
+  /// reject and delete accounts — at production instead.
+  static bool get useLocalEmulators => !kReleaseMode && _forceEmulators;
 
   /// Emulator host address
   /// - Use '10.0.2.2' for Android Emulator (points to host machine's localhost)
   /// - Use '127.0.0.1' or 'localhost' for iOS Simulator or Web
   /// - Use your machine's local IP (e.g., '192.168.1.x') for physical devices
-  static const String emulatorHost = '10.0.2.2';
+  ///
+  /// Overridable so one build can target more than the Android emulator:
+  /// `--dart-define=EMULATOR_HOST=127.0.0.1` is what a web or iOS-simulator
+  /// run needs, since 10.0.2.2 only means "the host machine" inside an
+  /// Android emulator. Default is unchanged.
+  static const String emulatorHost =
+      String.fromEnvironment('EMULATOR_HOST', defaultValue: '10.0.2.2');
 
-  // Firebase Emulator Ports (standard ports)
-  static const int authEmulatorPort = 9099;
-  static const int firestoreEmulatorPort = 8080;
-  static const int storageEmulatorPort = 9199;
-  static const int functionsEmulatorPort = 5001;
+  // Firebase Emulator Ports (standard ports).
+  //
+  // Overridable too: 8080 in particular is a popular port, and a machine
+  // already running something there cannot host the Firestore emulator on the
+  // default. Defaults are unchanged.
+  static const int authEmulatorPort =
+      int.fromEnvironment('EMULATOR_AUTH_PORT', defaultValue: 9099);
+  static const int firestoreEmulatorPort =
+      int.fromEnvironment('EMULATOR_FIRESTORE_PORT', defaultValue: 8080);
+  static const int storageEmulatorPort =
+      int.fromEnvironment('EMULATOR_STORAGE_PORT', defaultValue: 9199);
+  static const int functionsEmulatorPort =
+      int.fromEnvironment('EMULATOR_FUNCTIONS_PORT', defaultValue: 5001);
 
   // ============================================================================
   // AUTHENTICATION FEATURE FLAGS

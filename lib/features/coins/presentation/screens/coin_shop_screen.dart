@@ -6,6 +6,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_android/billing_client_wrappers.dart';
@@ -17,8 +18,6 @@ import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../membership/domain/entities/membership.dart' as membership_entity;
-import '../../../membership/presentation/widgets/coupon_code_widget.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../subscription/domain/entities/subscription.dart';
@@ -184,6 +183,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ...ProductCatalog.allStoreIds(),
         };
         final resp = await _inAppPurchase!.queryProductDetails(ids);
+        // Remember what the store actually sells, so the UI can hide anything
+        // that would fail if tapped (Guideline 2.1(b)).
+        _availableProductIds = resp.productDetails
+            .map((pd) => ProductCatalog.canonicalId(pd.id))
+            .toSet();
+        if (resp.notFoundIDs.isNotEmpty) {
+          _reportMissingProducts('catalogue', ids, resp.notFoundIDs);
+        }
         for (final pd in resp.productDetails) {
           final label = ProductCatalog.recurringPriceLabel(pd);
           // Normalize membership store IDs back to canonical; coins are unchanged.
@@ -476,7 +483,27 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   /// Map a canonical product ID to the per-platform store ID (App Store and
   /// Google Play use different IDs). Delegates to the shared [ProductCatalog].
+  /// Canonical product IDs the store actually returned on the last catalogue
+  /// query, or null when we could not ask (web, or StoreKit/Billing
+  /// unavailable). Null means "unknown" — never hide anything on a guess.
+  ///
+  /// Guideline 2.1(b): a purchase button that is GUARANTEED to fail is worse
+  /// than no button at all. A reviewer who never sees a broken button cannot
+  /// file a rejection for one.
+  Set<String>? _availableProductIds;
+
   String _storeProductId(String canonicalId) => ProductCatalog.storeId(canonicalId);
+
+  /// Whether [canonicalId] can actually be bought right now.
+  ///
+  /// Returns true when availability is unknown, so web checkout and any
+  /// pre-catalogue render behave exactly as before.
+  bool _isPurchasable(String canonicalId) {
+    final available = _availableProductIds;
+    if (available == null) return true;
+    return available.contains(canonicalId);
+  }
+
 
   /// Inverse of [_storeProductId]: map a store-returned product ID back to the
   /// canonical ID so a completed purchase can be matched to a tier.
@@ -750,13 +777,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 onPressed: () => Navigator.of(context).pop(),
               )
             : null,
-        actions: [
-          IconButton(
-            tooltip: AppLocalizations.of(context)!.couponRedeemButton,
-            icon: const Icon(Icons.card_giftcard, color: AppColors.richGold),
-            onPressed: _openCouponSheet,
-          ),
-        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(48),
           child: _buildTabBar(),
@@ -782,85 +802,6 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return coins.toString();
   }
 
-  /// Maps the shop's local SubscriptionTier enum to the membership domain
-  /// MembershipTier so the CouponCodeWidget can render the current tier.
-  membership_entity.MembershipTier _toMembershipTier(SubscriptionTier t) {
-    switch (t) {
-      case SubscriptionTier.silver:
-        return membership_entity.MembershipTier.silver;
-      case SubscriptionTier.gold:
-        return membership_entity.MembershipTier.gold;
-      case SubscriptionTier.platinum:
-        return membership_entity.MembershipTier.platinum;
-      case SubscriptionTier.basic:
-      default:
-        return membership_entity.MembershipTier.free;
-    }
-  }
-
-  /// Opens a bottom sheet that hosts the CouponCodeWidget.
-  /// On successful redemption, refreshes the profile + coin balance so the
-  /// shop reflects the new entitlement without a manual reload.
-  void _openCouponSheet() {
-    showModalBottomSheet<void>(
-      context: context,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (sheetContext) {
-        return Padding(
-          padding: EdgeInsets.only(
-            bottom: MediaQuery.of(sheetContext).viewInsets.bottom,
-          ),
-          child: Container(
-            decoration: const BoxDecoration(
-              color: AppColors.backgroundDark,
-              borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-            ),
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
-            child: SingleChildScrollView(
-              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-              child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: AppColors.divider,
-                    borderRadius: BorderRadius.circular(2),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                CouponCodeWidget(
-                  userId: widget.userId,
-                  currentTier: _toMembershipTier(_currentTier),
-                  membershipEndDate: _membershipEndDate,
-                  onRedemptionSuccess: () {
-                    // Refresh profile (membership badge) and coin balance.
-                    try {
-                      context.read<ProfileBloc>().add(
-                        ProfileLoadRequested(userId: widget.userId),
-                      );
-                    } catch (_) {
-                      // ProfileBloc may not be in scope — non-fatal.
-                    }
-                    try {
-                      context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
-                    } catch (_) {}
-                    _loadCurrentTierFromFirestore();
-                    // Close the sheet so the refreshed shop is actually visible;
-                    // leaving it open reads as "nothing happened".
-                    Navigator.of(sheetContext).pop();
-                  },
-                ),
-              ],
-              ),
-            ),
-          ),
-        );
-      },
-    );
-  }
 
   Widget _buildTabBar() {
     return Container(
@@ -913,9 +854,25 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   }
 
   /// Safely build a tab — catches any exception and shows a visible error instead of blank white
+  /// Caps content width on tablets.
+  ///
+  /// The shop is designed for a phone column. Stretched across an 11" iPad it
+  /// reads as an upscaled phone app, which is exactly what App Review looks
+  /// for under 2.1 / HIG on a device family the app declares support for.
+  /// Centring inside a fixed measure keeps the same layout on phones (where
+  /// the screen is narrower than the cap) and a deliberate one on tablets.
+  Widget _constrainWidth(Widget child) {
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 560),
+        child: child,
+      ),
+    );
+  }
+
   Widget _safeBuild(Widget Function() builder, String tabName) {
     try {
-      return builder();
+      return _constrainWidth(builder());
     } catch (e, stack) {
       debugPrint('[CoinShop] Error building $tabName tab: $e\n$stack');
       return Container(
@@ -961,7 +918,36 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
   Widget _buildBuyCoinsTab() {
     final safePromotions = _cachedPromotions.whereType<CoinPromotion>().toList();
-    return _buildPackageList(_cachedPackages, safePromotions);
+    // Only offer packs the store will actually sell.
+    final packages =
+        _cachedPackages.where((p) => _isPurchasable(p.productId)).toList();
+    if (packages.isEmpty) {
+      return _buildStoreUnavailableState();
+    }
+    return _buildPackageList(packages, safePromotions);
+  }
+
+  /// Shown instead of purchase options when the store returns no products.
+  /// Deliberately says nothing about product IDs or store consoles.
+  Widget _buildStoreUnavailableState() {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.storefront_outlined,
+                size: 48, color: AppColors.textSecondary),
+            const SizedBox(height: 16),
+            Text(
+              AppLocalizations.of(context)!.shopTemporarilyUnavailable,
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: AppColors.textSecondary),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Widget _buildMembershipTab() {
@@ -970,7 +956,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       SubscriptionTier.silver,
       SubscriptionTier.gold,
       SubscriptionTier.platinum,
-    ];
+    ]
+        .where((t) =>
+            _isPurchasable(t.monthlyProductId) ||
+            _isPurchasable(t.yearlyProductId))
+        .toList();
+    if (tiers.isEmpty) {
+      return _buildStoreUnavailableState();
+    }
 
     return Column(
       children: [
@@ -1483,13 +1476,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       final response = await _inAppPurchase!.queryProductDetails({productId});
 
       if (response.productDetails.isEmpty) {
-        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
-        final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
-        _showError(
-          'Base membership product not found in $storeName.\n\n'
-          'Product ID: $productId\n'
-          'Make sure the product is configured in $consoleName.',
-        );
+        _reportMissingProducts('baseMembership', {productId}, response.notFoundIDs);
+        _showError(AppLocalizations.of(context)!.shopTemporarilyUnavailable);
         setState(() => _isLoadingSubscription = false);
         return;
       }
@@ -1798,23 +1786,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       if (response.error != null) {
         debugPrint('[Subscription] Query error: ${response.error!.message}');
-        _showError('Failed to load subscription: ${response.error!.message}');
+        _reportStoreQueryError('subscription', response.error!.message);
+        _showError(AppLocalizations.of(context)!.shopTemporarilyUnavailable);
         setState(() => _isLoadingSubscription = false);
         return;
       }
 
       if (response.productDetails.isEmpty) {
-        final notFoundIds = response.notFoundIDs.join(', ');
-        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
-        final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
-        _showError(
-          'Product "$productId" not found in $storeName.\n\n'
-          'Requirements:\n'
-          '• Upload app to $consoleName\n'
-          '• Create in-app product in $consoleName\n'
-          '• Add your account as a tester\n\n'
-          'Not found: $notFoundIds'
-        );
+        _reportMissingProducts('subscription', productIds, response.notFoundIDs);
+        _showError(AppLocalizations.of(context)!.shopTemporarilyUnavailable);
         setState(() => _isLoadingSubscription = false);
         return;
       }
@@ -1854,6 +1834,47 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
         setState(() => _isLoadingSubscription = false);
       }
+    }
+  }
+
+  /// Records a store-catalogue failure where it can be READ without a Mac.
+  ///
+  /// The reviewer must never see product IDs or store-console instructions on
+  /// screen (that is what triggered the 2.1(b) rejection), but we still need
+  /// the detail to diagnose a misconfigured product. Crashlytics is readable
+  /// from the Firebase console on any OS, which matters because iOS device
+  /// logs are not reachable from a Windows machine.
+  ///
+  /// An EMPTY notFoundIDs list is the pass condition for a correctly
+  /// configured App Store Connect catalogue.
+  void _reportMissingProducts(
+    String context_,
+    Set<String> requested,
+    List<String> notFound,
+  ) {
+    final detail =
+        'requested=${requested.join(",")} notFound=${notFound.join(",")}';
+    debugPrint('[Store] $context_ products missing — $detail');
+    try {
+      FirebaseCrashlytics.instance.log('[Store] $context_ missing: $detail');
+      FirebaseCrashlytics.instance.recordError(
+        'Store products not found ($context_)',
+        StackTrace.current,
+        reason: detail,
+        fatal: false,
+      );
+    } catch (_) {
+      // Crashlytics unavailable (web, or not initialised) — never block a purchase.
+    }
+  }
+
+  /// Same idea for a StoreKit/Billing query that errored outright.
+  void _reportStoreQueryError(String context_, String? message) {
+    debugPrint('[Store] $context_ query error — $message');
+    try {
+      FirebaseCrashlytics.instance.log('[Store] $context_ query error: $message');
+    } catch (_) {
+      // Non-fatal.
     }
   }
 
@@ -2267,23 +2288,15 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       if (response.error != null) {
         debugPrint('[CoinPurchase] Query error: ${response.error!.message}');
-        _showError('Failed to load product: ${response.error!.message}');
+        _reportStoreQueryError('coinPack', response.error!.message);
+        _showError(AppLocalizations.of(context)!.shopTemporarilyUnavailable);
         setState(() => _isLoadingCoinPurchase = false);
         return;
       }
 
       if (response.productDetails.isEmpty) {
-        final notFoundIds = response.notFoundIDs.join(', ');
-        final storeName = Platform.isIOS ? 'App Store' : 'Google Play';
-        final consoleName = Platform.isIOS ? 'App Store Connect' : 'Google Play Console';
-        _showError(
-          'Coin package "${_selectedPackage!.productId}" not found in $storeName.\n\n'
-          'Requirements:\n'
-          '• Upload app to $consoleName\n'
-          '• Create in-app products in $consoleName\n'
-          '• Add your account as a tester\n\n'
-          'Not found: $notFoundIds'
-        );
+        _reportMissingProducts('coinPack', productIds, response.notFoundIDs);
+        _showError(AppLocalizations.of(context)!.shopTemporarilyUnavailable);
         setState(() => _isLoadingCoinPurchase = false);
         return;
       }

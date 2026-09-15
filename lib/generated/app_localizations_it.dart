@@ -1303,10 +1303,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get adminUploading => 'Caricamento...';
 
   @override
-  String get adminUseVideoCallingFeature =>
-      'Utilizza la funzione di videochiamata';
-
-  @override
   String get adminUsedMinutes => 'Minuti utilizzati';
 
   @override
@@ -1369,9 +1365,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get adminVerifications => 'Verifiche';
-
-  @override
-  String get adminVideoChat => 'Video chat';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -2924,11 +2917,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get coinsEnterReceiverId => 'Inserisci l\'ID del destinatario';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count in scadenza';
-  }
 
   @override
   String get coinsFilterTransactions => 'Filtra Transazioni';
@@ -9249,6 +9237,10 @@ class AppLocalizationsIt extends AppLocalizations {
       'Negozio non disponibile. Controlla le impostazioni del dispositivo.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'Gli acquisti non sono al momento disponibili. Riprova più tardi.';
+
+  @override
   String get shopSuperLikes => 'Connessioni Prioritarie';
 
   @override
@@ -13950,4 +13942,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get chatSmartRepliesLoading => 'Sto pensando alle risposte...';
+
+  @override
+  String get errorScreenTitle => 'Qualcosa è andato storto';
+
+  @override
+  String get errorScreenBody =>
+      'Impossibile aprire questa schermata. Ricarica l\'app per riprovare — il tuo account non è stato modificato.';
+
+  @override
+  String get errorScreenReload => 'Ricarica';
 }

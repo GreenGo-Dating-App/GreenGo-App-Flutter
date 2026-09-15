@@ -40,9 +40,6 @@ const COIN_PRODUCTS: Record<string, { coins: number; price: number; packageId: s
   'greengo_coins_5000': { coins: 5000, price: 29.99, packageId: 'premium_5000' },
 };
 
-/** Coins purchased with real money expire after 365 days. */
-const PURCHASED_COIN_TTL_MS = 365 * 24 * 60 * 60 * 1000;
-
 /**
  * Credit verified purchased coins, writing the EXACT document shape the Flutter
  * client parses.
@@ -54,8 +51,9 @@ const PURCHASED_COIN_TTL_MS = 365 * 24 * 60 * 60 * 1000;
  * Client contract (see `coin_balance_model.dart` / `coin_transaction_model.dart`):
  *  - `coinBalances/{uid}`: userId, totalCoins, earnedCoins, purchasedCoins,
  *    giftedCoins, spentCoins, lastUpdated (Timestamp), coinBatches[]
- *    with { batchId, initialCoins, remainingCoins, source, acquiredDate,
- *    expirationDate }. `userId` and `lastUpdated` are non-null casts on the
+ *    with { batchId, initialCoins, remainingCoins, source, acquiredDate }.
+ *    Batches carry NO expiry: coins never expire (Guideline 3.1.1).
+ *    `userId` and `lastUpdated` are non-null casts on the
  *    client — omitting either throws at parse time.
  *  - `coinTransactions/{id}`: userId, type ('credit'), amount, balanceAfter,
  *    reason ('coinPurchase'), createdAt (Timestamp).
@@ -74,7 +72,6 @@ async function grantVerifiedCoinPurchase(params: {
   coinsAdded: number;
   newBalance: number;
   alreadyProcessed: boolean;
-  expiresAt: string;
 }> {
   const { uid, productId, purchaseToken, platform, transactionId } = params;
 
@@ -84,7 +81,6 @@ async function grantVerifiedCoinPurchase(params: {
   }
 
   const now = admin.firestore.Timestamp.now();
-  const expiresAt = admin.firestore.Timestamp.fromMillis(now.toMillis() + PURCHASED_COIN_TTL_MS);
   const batchId = `batch_${now.toMillis()}_${productId}`;
   const balanceRef = db.collection('coinBalances').doc(uid);
   const transactionRef = db.collection('coinTransactions').doc();
@@ -133,7 +129,6 @@ async function grantVerifiedCoinPurchase(params: {
       remainingCoins: product.coins,
       source: 'purchase', // CoinSourceExtension.fromString()
       acquiredDate: now,
-      expirationDate: expiresAt,
     });
 
     tx.set(
@@ -193,7 +188,6 @@ async function grantVerifiedCoinPurchase(params: {
       coinsAdded: 0,
       newBalance: outcome.newBalance,
       alreadyProcessed: true,
-      expiresAt: expiresAt.toDate().toISOString(),
     };
   }
 
@@ -206,7 +200,6 @@ async function grantVerifiedCoinPurchase(params: {
     coinsAdded: product.coins,
     newBalance: outcome.newBalance,
     alreadyProcessed: false,
-    expiresAt: expiresAt.toDate().toISOString(),
   };
 }
 
@@ -366,7 +359,6 @@ export const grantMonthlyAllowances = onSchedule(
         try {
           const balanceRef = db.collection('coin_balances').doc(userId);
           const batchId = `allowance_${Date.now()}_${userId}`;
-          const expiresAt = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
 
           await db.runTransaction(async (transaction) => {
             const balanceSnapshot = await transaction.get(balanceRef);
@@ -376,7 +368,6 @@ export const grantMonthlyAllowances = onSchedule(
               id: batchId,
               amount: allowance,
               source: CoinSource.ALLOWANCE,
-              expiresAt: admin.firestore.Timestamp.fromDate(expiresAt),
               remainingAmount: allowance,
               createdAt: admin.firestore.FieldValue.serverTimestamp(),
             });
@@ -429,152 +420,6 @@ export const grantMonthlyAllowances = onSchedule(
   }
 );
 
-// ========== 4. PROCESS EXPIRED COINS (Scheduled - Daily 2am) ==========
-
-export const processExpiredCoins = onSchedule(
-  {
-    schedule: '0 2 * * *', // Daily at 2 AM UTC
-    timeZone: 'UTC',
-    memory: '512MiB',
-    timeoutSeconds: 300,
-  },
-  async () => {
-    logInfo('Processing expired coins');
-
-    try {
-      const now = admin.firestore.Timestamp.now();
-
-      // Get all balances with batches
-      const balancesSnapshot = await db.collection('coin_balances').get();
-
-      let processedCount = 0;
-      let totalExpiredCoins = 0;
-
-      for (const balanceDoc of balancesSnapshot.docs) {
-        const data = balanceDoc.data();
-        const userId = balanceDoc.id;
-        const batches = data.batches || [];
-
-        // Find expired batches
-        const expiredBatches = batches.filter(
-          (batch: any) => batch.expiresAt.toMillis() < now.toMillis() && batch.remainingAmount > 0
-        );
-
-        if (expiredBatches.length === 0) continue;
-
-        const expiredCoins = expiredBatches.reduce(
-          (sum: number, batch: any) => sum + batch.remainingAmount,
-          0
-        );
-
-        // Remove expired batches
-        const activeBatches = batches.filter(
-          (batch: any) => batch.expiresAt.toMillis() >= now.toMillis() || batch.remainingAmount === 0
-        );
-
-        await balanceDoc.ref.update({
-          batches: activeBatches,
-          totalCoins: admin.firestore.FieldValue.increment(-expiredCoins),
-          lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
-        });
-
-        // Record expiration
-        await db.collection('coin_transactions').add({
-          userId,
-          amount: expiredCoins,
-          type: 'debit',
-          source: CoinSource.PURCHASED,
-          description: 'Coins expired (365 days)',
-          timestamp: admin.firestore.FieldValue.serverTimestamp(),
-          balanceAfter: data.totalCoins - expiredCoins,
-        });
-
-        processedCount++;
-        totalExpiredCoins += expiredCoins;
-      }
-
-      logInfo(`Processed ${processedCount} users, ${totalExpiredCoins} coins expired`);
-    } catch (error) {
-      logError('Error processing expired coins:', error);
-      throw error;
-    }
-  }
-);
-
-// ========== 5. SEND EXPIRATION WARNINGS (Scheduled - Daily 10am) ==========
-
-export const sendExpirationWarnings = onSchedule(
-  {
-    schedule: '0 10 * * *', // Daily at 10 AM UTC
-    timeZone: 'UTC',
-    memory: '256MiB',
-    timeoutSeconds: 300,
-  },
-  async () => {
-    logInfo('Sending coin expiration warnings');
-
-    try {
-      const thirtyDaysFromNow = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
-
-      const balancesSnapshot = await db.collection('coin_balances').get();
-
-      let warningsSent = 0;
-
-      for (const balanceDoc of balancesSnapshot.docs) {
-        const data = balanceDoc.data();
-        const userId = balanceDoc.id;
-        const batches = data.batches || [];
-
-        // Find batches expiring soon
-        const expiringBatches = batches.filter((batch: any) => {
-          const expiryDate = batch.expiresAt.toDate();
-          return (
-            expiryDate <= thirtyDaysFromNow &&
-            expiryDate > new Date() &&
-            batch.remainingAmount > 0
-          );
-        });
-
-        if (expiringBatches.length === 0) continue;
-
-        const expiringCoins = expiringBatches.reduce(
-          (sum: number, batch: any) => sum + batch.remainingAmount,
-          0
-        );
-
-        const earliestExpiry = Math.min(
-          ...expiringBatches.map((b: any) => b.expiresAt.toMillis())
-        );
-        const daysUntilExpiry = Math.ceil(
-          (earliestExpiry - Date.now()) / (24 * 60 * 60 * 1000)
-        );
-
-        // Send warning notification
-        await db.collection('notifications').add({
-          userId,
-          type: 'coins_expiring',
-          title: 'Coins Expiring Soon!',
-          body: `${expiringCoins} coins will expire in ${daysUntilExpiry} days. Use them before they're gone!`,
-          data: {
-            expiringCoins,
-            daysUntilExpiry,
-          },
-          read: false,
-          sent: false,
-          createdAt: admin.firestore.FieldValue.serverTimestamp(),
-        });
-
-        warningsSent++;
-      }
-
-      logInfo(`Sent ${warningsSent} expiration warnings`);
-    } catch (error) {
-      logError('Error sending expiration warnings:', error);
-      throw error;
-    }
-  }
-);
-
 // ========== 6. CLAIM REWARD (HTTP Callable) ==========
 
 interface ClaimRewardRequest {
@@ -621,7 +466,6 @@ export const claimReward = onCall<ClaimRewardRequest>(
       const currentBalance = balanceDoc.data()?.totalCoins || 0;
 
       const batchId = `reward_${rewardType}_${Date.now()}`;
-      const expiresAt = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
 
       await db.runTransaction(async (transaction) => {
         const balanceSnapshot = await transaction.get(balanceRef);
@@ -631,7 +475,6 @@ export const claimReward = onCall<ClaimRewardRequest>(
           id: batchId,
           amount: rewardCoins,
           source: CoinSource.EARNED,
-          expiresAt: admin.firestore.Timestamp.fromDate(expiresAt),
           remainingAmount: rewardCoins,
           createdAt: admin.firestore.FieldValue.serverTimestamp(),
         });

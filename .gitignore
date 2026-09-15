@@ -127,3 +127,7 @@ setup_admin.js
 android/app/src/debug/res/raw/corp_cas.pem
 _install_result.txt
 .claude/worktrees/
+
+# Python bytecode from the E2E tooling
+__pycache__/
+*.pyc

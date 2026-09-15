@@ -422,7 +422,6 @@
   "adminUploadCsvDescription": "Upload a CSV file containing email addresses (one per line or comma-separated)",
   "adminUploadCsvFile": "Upload CSV File",
   "adminUploading": "Uploading...",
-  "adminUseVideoCallingFeature": "Use video calling feature",
   "adminUsedMinutes": "Used Minutes",
   "adminUser": "User",
   "adminUserAnalytics": "User Analytics",
@@ -441,7 +440,6 @@
   "adminUserVerificationsSubtitle": "Approve or reject user verification requests",
   "adminVerificationFilter": "Verification Filter",
   "adminVerifications": "Verifications",
-  "adminVideoChat": "Video Chat",
   "adminVideoMinutesLabel": "{minutes} Minutes",
   "adminViewContext": "View Context",
   "adminViewDocument": "View Document",
@@ -1320,14 +1318,6 @@
   "coinsCreditsOnly": "Credits Only",
   "coinsDebitsOnly": "Debits Only",
   "coinsEnterReceiverId": "Enter receiver ID",
-  "coinsExpiring": "{count} expiring",
-  "@coinsExpiring": {
-    "placeholders": {
-      "count": {
-        "type": "Object"
-      }
-    }
-  },
   "coinsFilterTransactions": "Filter Transactions",
   "coinsGiftAccepted": "Accepted {amount} coins!",
   "@coinsGiftAccepted": {
@@ -4451,6 +4441,10 @@
   "shopSend": "Send",
   "shopSendCoins": "Send Coins",
   "shopStoreNotAvailable": "Store not available. Please check your device settings.",
+  "shopTemporarilyUnavailable": "Purchases are temporarily unavailable. Please try again later.",
+  "@shopTemporarilyUnavailable": {
+    "description": "Shown when store products cannot be loaded. Must never expose product IDs or store console names."
+  },
   "shopSuperLikes": "Priority Connects",
   "shopTabCoins": "Coins",
   "shopTabError": "{tabName} tab error",
@@ -6548,5 +6542,17 @@
   "chatSettingSilverPlusOnly": "Available on Silver and above",
   "chatSettingXpBarHint": "Appears once you earn XP in this chat",
   "chatSettingLanguageFlagsHint": "Shown on messages that have a translation",
-  "chatSmartRepliesLoading": "Thinking of replies..."
+  "chatSmartRepliesLoading": "Thinking of replies...",
+  "errorScreenTitle": "Something went wrong",
+  "@errorScreenTitle": {
+    "description": "Title of the last-resort crash screen"
+  },
+  "errorScreenBody": "This screen could not be opened. Reload the app to try again — your account is not affected.",
+  "@errorScreenBody": {
+    "description": "Explanation shown on the last-resort crash screen"
+  },
+  "errorScreenReload": "Reload",
+  "@errorScreenReload": {
+    "description": "Button that reloads the app after a crash"
+  }
 }

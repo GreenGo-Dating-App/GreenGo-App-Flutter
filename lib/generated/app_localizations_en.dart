@@ -1289,9 +1289,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminUploading => 'Uploading...';
 
   @override
-  String get adminUseVideoCallingFeature => 'Use video calling feature';
-
-  @override
   String get adminUsedMinutes => 'Used Minutes';
 
   @override
@@ -1352,9 +1349,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get adminVerifications => 'Verifications';
-
-  @override
-  String get adminVideoChat => 'Video Chat';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -2883,11 +2877,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coinsEnterReceiverId => 'Enter receiver ID';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count expiring';
-  }
 
   @override
   String get coinsFilterTransactions => 'Filter Transactions';
@@ -9142,6 +9131,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Store not available. Please check your device settings.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'Purchases are temporarily unavailable. Please try again later.';
+
+  @override
   String get shopSuperLikes => 'Priority Connects';
 
   @override
@@ -13791,4 +13784,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chatSmartRepliesLoading => 'Thinking of replies...';
+
+  @override
+  String get errorScreenTitle => 'Something went wrong';
+
+  @override
+  String get errorScreenBody =>
+      'This screen could not be opened. Reload the app to try again — your account is not affected.';
+
+  @override
+  String get errorScreenReload => 'Reload';
 }

@@ -2375,12 +2375,6 @@ abstract class AppLocalizations {
   /// **'Uploading...'**
   String get adminUploading;
 
-  /// No description provided for @adminUseVideoCallingFeature.
-  ///
-  /// In en, this message translates to:
-  /// **'Use video calling feature'**
-  String get adminUseVideoCallingFeature;
-
   /// No description provided for @adminUsedMinutes.
   ///
   /// In en, this message translates to:
@@ -2488,12 +2482,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Verifications'**
   String get adminVerifications;
-
-  /// No description provided for @adminVideoChat.
-  ///
-  /// In en, this message translates to:
-  /// **'Video Chat'**
-  String get adminVideoChat;
 
   /// No description provided for @adminVideoMinutesLabel.
   ///
@@ -5188,12 +5176,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter receiver ID'**
   String get coinsEnterReceiverId;
-
-  /// No description provided for @coinsExpiring.
-  ///
-  /// In en, this message translates to:
-  /// **'{count} expiring'**
-  String coinsExpiring(Object count);
 
   /// No description provided for @coinsFilterTransactions.
   ///
@@ -16380,6 +16362,12 @@ abstract class AppLocalizations {
   /// **'Store not available. Please check your device settings.'**
   String get shopStoreNotAvailable;
 
+  /// Shown when store products cannot be loaded. Must never expose product IDs or store console names.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases are temporarily unavailable. Please try again later.'**
+  String get shopTemporarilyUnavailable;
+
   /// No description provided for @shopSuperLikes.
   ///
   /// In en, this message translates to:
@@ -24593,6 +24581,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Thinking of replies...'**
   String get chatSmartRepliesLoading;
+
+  /// Title of the last-resort crash screen
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong'**
+  String get errorScreenTitle;
+
+  /// Explanation shown on the last-resort crash screen
+  ///
+  /// In en, this message translates to:
+  /// **'This screen could not be opened. Reload the app to try again — your account is not affected.'**
+  String get errorScreenBody;
+
+  /// Button that reloads the app after a crash
+  ///
+  /// In en, this message translates to:
+  /// **'Reload'**
+  String get errorScreenReload;
 }
 
 class _AppLocalizationsDelegate

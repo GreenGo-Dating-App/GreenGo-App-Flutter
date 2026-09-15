@@ -85,7 +85,6 @@ class MembershipRules extends Equatable {
     this.canUseIncognitoMode = false,
     this.matchPriority = 0,
     this.canSeeProfileVisitors = false,
-    this.canUseVideoChat = false,
     this.dailyMediaSendLimit = 0,
     this.dailyDirectMatchLimit = 2,
     this.badgeIcon,
@@ -138,8 +137,6 @@ class MembershipRules extends Equatable {
   /// Can see profile visitors
   final bool canSeeProfileVisitors;
 
-  /// Can use video chat
-  final bool canUseVideoChat;
 
   /// Maximum media sends per day (-1 for unlimited, 0 for none)
   final int dailyMediaSendLimit;
@@ -169,7 +166,6 @@ class MembershipRules extends Equatable {
     canUseIncognitoMode: false,
     matchPriority: 0,
     canSeeProfileVisitors: false,
-    canUseVideoChat: false,
     dailyMediaSendLimit: -1, // Unlimited
     dailyDirectMatchLimit: 2, // First 2 direct matches/day free, then coins
     badgeIcon: null,
@@ -193,7 +189,6 @@ class MembershipRules extends Equatable {
     canUseIncognitoMode: false,
     matchPriority: 1,
     canSeeProfileVisitors: false,
-    canUseVideoChat: false,
     dailyMediaSendLimit: -1, // Unlimited
     dailyDirectMatchLimit: 5, // First 5 direct matches/day free, then coins
     badgeIcon: 'silver_badge',
@@ -217,7 +212,6 @@ class MembershipRules extends Equatable {
     canUseIncognitoMode: true,
     matchPriority: 2,
     canSeeProfileVisitors: true,
-    canUseVideoChat: false,
     dailyMediaSendLimit: -1, // Unlimited
     dailyDirectMatchLimit: 10, // First 10 direct matches/day free, then coins
     badgeIcon: 'gold_badge',
@@ -241,7 +235,6 @@ class MembershipRules extends Equatable {
     canUseIncognitoMode: true,
     matchPriority: 3,
     canSeeProfileVisitors: true,
-    canUseVideoChat: true,
     dailyMediaSendLimit: -1, // Unlimited
     dailyDirectMatchLimit: -1, // Unlimited direct matches
     badgeIcon: 'platinum_badge',
@@ -266,7 +259,6 @@ class MembershipRules extends Equatable {
     canUseIncognitoMode: true,
     matchPriority: 99, // Highest priority
     canSeeProfileVisitors: true,
-    canUseVideoChat: true,
     dailyMediaSendLimit: -1, // Unlimited
     dailyDirectMatchLimit: -1, // Unlimited (admin configurable)
     badgeIcon: 'test_badge',
@@ -309,7 +301,6 @@ class MembershipRules extends Equatable {
         canUseIncognitoMode,
         matchPriority,
         canSeeProfileVisitors,
-        canUseVideoChat,
         dailyMediaSendLimit,
         dailyDirectMatchLimit,
         badgeIcon,
