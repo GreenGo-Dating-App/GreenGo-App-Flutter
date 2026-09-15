@@ -57,6 +57,7 @@ const utils_1 = require("../shared/utils");
 const grants_1 = require("../shared/grants");
 const couponEmails_1 = require("../notifications/couponEmails");
 const grants_2 = require("./grants");
+const preRegistrationOffer_1 = require("./preRegistrationOffer");
 const monitoring_1 = require("../shared/monitoring");
 exports.applySignupGrants = (0, firestore_1.onDocumentCreated)({
     document: 'users/{userId}',
@@ -86,6 +87,18 @@ exports.applySignupGrants = (0, firestore_1.onDocumentCreated)({
         .where('autoGrantOnSignup', '==', true)
         .get();
     if (couponsSnap.empty) {
+        // NOT on the allowlist. During 2026 everyone still gets the standard
+        // welcome pack - one month of Base membership and 100 coins - so a
+        // normal signup is never left with nothing. The amounts come from
+        // preRegistrationOffer so the promise shown on the registration form and
+        // the entitlement actually granted here cannot drift apart.
+        if ((0, preRegistrationOffer_1.isWithin2026)(new Date())) {
+            const applied = await applyDefaultWelcome(uid);
+            const wrote = await markProcessedIfFresh(profileRef, applied);
+            (0, utils_1.logInfo)(`applySignupGrants: default 2026 welcome for ${email} ` +
+                `(${wrote ? 'applied' : 'another invocation won the race'})`);
+            return;
+        }
         (0, utils_1.logInfo)(`applySignupGrants: no allowlist coupons for ${email}`);
         // Still mark as processed so we don't keep querying on every doc update.
         // Transactional to avoid racing with a concurrent invocation that
@@ -125,6 +138,62 @@ exports.applySignupGrants = (0, firestore_1.onDocumentCreated)({
     }
     (0, utils_1.logInfo)(`applySignupGrants: applied ${applied.length} grant(s) for ${uid} (${email})`);
 }));
+/**
+ * The standard 2026 welcome pack, for a user with no allowlist coupon.
+ *
+ * Idempotent through the same `signupGrantsAppliedAt` marker the coupon path
+ * uses, and written in one transaction so a re-fired trigger cannot grant the
+ * coins twice.
+ */
+async function applyDefaultWelcome(uid) {
+    const profileRef = utils_1.db.collection('profiles').doc(uid);
+    const balanceRef = utils_1.db.collection('coinBalances').doc(uid);
+    const days = preRegistrationOffer_1.DEFAULT_2026_OFFER.baseMembershipDays;
+    const coins = preRegistrationOffer_1.DEFAULT_2026_OFFER.coins;
+    const summary = `BASE +${days}d \u00b7 +${coins} coins`;
+    await utils_1.db.runTransaction(async (tx) => {
+        var _a, _b, _c, _d;
+        const profSnap = await tx.get(profileRef);
+        if (profSnap.exists && ((_a = profSnap.data()) === null || _a === void 0 ? void 0 : _a.signupGrantsAppliedAt))
+            return;
+        const balSnap = await tx.get(balanceRef);
+        const now = admin.firestore.Timestamp.now();
+        const existingBaseEnd = (_d = (_c = (_b = profSnap.data()) === null || _b === void 0 ? void 0 : _b.baseMembershipEndDate) === null || _c === void 0 ? void 0 : _c.toDate()) !== null && _d !== void 0 ? _d : null;
+        const start = existingBaseEnd && existingBaseEnd > now.toDate() ? existingBaseEnd : now.toDate();
+        const end = new Date(start.getTime() + days * 24 * 60 * 60 * 1000);
+        tx.set(profileRef, {
+            hasBaseMembership: true,
+            baseMembershipSource: 'welcome_2026',
+            baseMembershipStartDate: now,
+            baseMembershipEndDate: admin.firestore.Timestamp.fromDate(end),
+            updatedAt: now,
+        }, { merge: true });
+        const bal = balSnap.exists ? balSnap.data() : {};
+        const batches = bal.coinBatches || [];
+        batches.push({
+            batchId: utils_1.db.collection('temp').doc().id,
+            initialCoins: coins,
+            remainingCoins: coins,
+            source: 'welcome_2026',
+            acquiredDate: now,
+        });
+        tx.set(balanceRef, {
+            userId: uid,
+            totalCoins: (bal.totalCoins || 0) + coins,
+            earnedCoins: (bal.earnedCoins || 0) + coins,
+            coinBatches: batches,
+            lastUpdated: now,
+        }, { merge: true });
+    });
+    return [
+        {
+            couponId: 'welcome_2026',
+            couponCode: 'WELCOME2026',
+            grantSummary: summary,
+            dismissed: false,
+        },
+    ];
+}
 /**
  * Writes `signupGrantsApplied` + `signupGrantsAppliedAt` to the profile only
  * if no prior invocation already wrote `signupGrantsAppliedAt`. Returns true

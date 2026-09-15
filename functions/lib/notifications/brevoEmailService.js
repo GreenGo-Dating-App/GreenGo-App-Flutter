@@ -1026,7 +1026,20 @@ exports.sendBrevoEmailFunction = (0, https_1.onCall)({
 }));
 // 2. Get Email Templates (HTTP Callable)
 exports.getBrevoEmailTemplates = (0, https_1.onCall)({
-    memory: '128MiB',
+    // See getBrevoEmailLogs: 256MiB could not even LOAD this codebase, and
+    // 128MiB is worse. Callers were never reaching the handler.
+    memory: '512MiB',
+    // These two answered a plain call with a Google Frontend 403 - "your
+    // client does not have permission" - while every other callable in this
+    // file answered 401 UNAUTHENTICATED. That is the platform refusing the
+    // request before the container sees it: the allUsers invoker binding was
+    // missing, so the admin panel could not call them at all.
+    //
+    // The callable protocol REQUIRES a public invoker; authentication is not
+    // done by IAM but by verifyAuth(request.auth) in the handler below, which
+    // still rejects anonymous callers. Set explicitly so a future deploy
+    // cannot silently drop the binding again.
+    invoker: 'public',
     timeoutSeconds: 30,
 }, (0, monitoring_1.monitored)("getBrevoEmailTemplates", async (request) => {
     try {
@@ -1046,7 +1059,20 @@ exports.getBrevoEmailTemplates = (0, https_1.onCall)({
     }
 }));
 exports.updateBrevoEmailTemplate = (0, https_1.onCall)({
-    memory: '128MiB',
+    // See getBrevoEmailLogs: 256MiB could not even LOAD this codebase, and
+    // 128MiB is worse. Callers were never reaching the handler.
+    memory: '512MiB',
+    // These two answered a plain call with a Google Frontend 403 - "your
+    // client does not have permission" - while every other callable in this
+    // file answered 401 UNAUTHENTICATED. That is the platform refusing the
+    // request before the container sees it: the allUsers invoker binding was
+    // missing, so the admin panel could not call them at all.
+    //
+    // The callable protocol REQUIRES a public invoker; authentication is not
+    // done by IAM but by verifyAuth(request.auth) in the handler below, which
+    // still rejects anonymous callers. Set explicitly so a future deploy
+    // cannot silently drop the binding again.
+    invoker: 'public',
     timeoutSeconds: 30,
 }, (0, monitoring_1.monitored)("updateBrevoEmailTemplate", async (request) => {
     try {
@@ -1082,7 +1108,12 @@ exports.updateBrevoEmailTemplate = (0, https_1.onCall)({
     }
 }));
 exports.getBrevoEmailLogs = (0, https_1.onCall)({
-    memory: '256MiB',
+    // 256MiB is not enough to LOAD this codebase, let alone run the query:
+    // index.js pulls in ~274 functions and needs ~200MB of resident memory
+    // before the handler is reached. The container was being OOM-killed
+    // during the readiness check, so every call returned 503 and the email
+    // log in the admin panel was simply dead.
+    memory: '512MiB',
     timeoutSeconds: 60,
 }, (0, monitoring_1.monitored)("getBrevoEmailLogs", async (request) => {
     try {

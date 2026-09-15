@@ -37,7 +37,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.setCouponDisabled = exports.getCouponRedemptions = exports.listCoupons = exports.upsertCoupon = void 0;
+exports.getCouponRedemptions = exports.listCoupons = exports.upsertCoupon = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
@@ -197,27 +197,6 @@ exports.getCouponRedemptions = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
             return Object.assign(Object.assign({ userId: d.id }, data), { redeemedAt: ((_d = (_b = (_a = data.redeemedAt) === null || _a === void 0 ? void 0 : _a.toDate) === null || _b === void 0 ? void 0 : (_c = _b.call(_a)).toISOString) === null || _d === void 0 ? void 0 : _d.call(_c)) || null });
         });
         return { ok: true, items };
-    }
-    catch (err) {
-        if (err instanceof https_1.HttpsError)
-            throw err;
-        throw (0, utils_1.handleError)(err);
-    }
-}));
-exports.setCouponDisabled = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 15 }, (0, monitoring_1.monitored)("setCouponDisabled", async (request) => {
-    var _a, _b, _c;
-    try {
-        const adminUid = await (0, utils_1.verifyAdminAuth)(request.auth);
-        const couponId = String(((_a = request.data) === null || _a === void 0 ? void 0 : _a.couponId) || '').trim();
-        if (!couponId)
-            throw new https_1.HttpsError('invalid-argument', 'couponId is required');
-        await utils_1.db.collection('coupons').doc(couponId).update({
-            disabled: !!((_b = request.data) === null || _b === void 0 ? void 0 : _b.disabled),
-            updatedAt: admin.firestore.Timestamp.now(),
-            updatedBy: adminUid,
-        });
-        (0, utils_1.logInfo)(`setCouponDisabled id=${couponId} disabled=${(_c = request.data) === null || _c === void 0 ? void 0 : _c.disabled} by=${adminUid}`);
-        return { ok: true };
     }
     catch (err) {
         if (err instanceof https_1.HttpsError)
