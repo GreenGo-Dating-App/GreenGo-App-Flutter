@@ -18,7 +18,13 @@ abstract class ProfileRepository {
   Future<Either<Failure, void>> deleteProfile(String userId);
 
   /// Upload profile photo
-  Future<Either<Failure, String>> uploadPhoto(String userId, XFile photo, {String? folder});
+  Future<Either<Failure, String>> uploadPhoto(
+    String userId,
+    XFile photo, {
+    String? folder,
+    bool isPrivate = false,
+    bool requireFace = false,
+  });
 
   /// Delete profile photo
   Future<Either<Failure, void>> deletePhoto(String userId, String photoUrl);

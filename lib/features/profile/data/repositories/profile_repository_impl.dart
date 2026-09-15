@@ -7,6 +7,7 @@ import '../../domain/entities/profile.dart';
 import '../../domain/repositories/profile_repository.dart';
 import '../datasources/profile_remote_data_source.dart';
 import '../models/profile_model.dart';
+import '../../../../core/services/image_moderation_gate.dart';
 
 class ProfileRepositoryImpl implements ProfileRepository {
 
@@ -66,10 +67,24 @@ class ProfileRepositoryImpl implements ProfileRepository {
   }
 
   @override
-  Future<Either<Failure, String>> uploadPhoto(String userId, XFile photo, {String? folder}) async {
+  Future<Either<Failure, String>> uploadPhoto(
+    String userId,
+    XFile photo, {
+    String? folder,
+    bool isPrivate = false,
+    bool requireFace = false,
+  }) async {
     try {
-      final result = await remoteDataSource.uploadPhoto(userId, photo, folder: folder);
+      final result = await remoteDataSource.uploadPhoto(
+        userId,
+        photo,
+        folder: folder,
+        isPrivate: isPrivate,
+        requireFace: requireFace,
+      );
       return Right(result);
+    } on ImageRejectedException catch (e) {
+      return Left(ServerFailure('image-rejected:${e.reasons.join(",")}'));
     } on ServerException catch (e) {
       return Left(ServerFailure( e.message));
     } catch (e) {
