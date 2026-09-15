@@ -403,7 +403,14 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         final seed = preferences.userId.hashCode ^
             (DateTime.now().millisecondsSinceEpoch ~/ 3600000);
         filteredCandidates.shuffle(Random(seed));
-      } else if (preferences.sortByDistance && userLat != 0 && userLng != 0) {
+      } else if (userLat != 0 && userLng != 0) {
+        // DISTANCE IS THE DEFAULT ORDER. This used to be gated on
+        // preferences.sortByDistance, which defaults to false - so unless the
+        // user had gone and turned it on, neither this branch nor the random
+        // one ran and the grid rendered in whatever order the query happened to
+        // return. People discovery is meant to be nearest-first, so distance is
+        // now the ordering whenever we actually know where the user is;
+        // randomMode above remains the deliberate opt-out.
         filteredCandidates.sort((a, b) {
           final aLoc = a.profile.effectiveLocation;
           final bLoc = b.profile.effectiveLocation;
