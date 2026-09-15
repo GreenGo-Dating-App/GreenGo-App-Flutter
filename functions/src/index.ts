@@ -258,7 +258,6 @@ export {
   upsertCoupon,
   listCoupons,
   getCouponRedemptions,
-  setCouponDisabled,
 } from './coupons/adminCoupons';
 export { applySignupGrants } from './coupons/applySignupGrants';
 

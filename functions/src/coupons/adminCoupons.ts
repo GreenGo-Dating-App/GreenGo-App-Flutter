@@ -43,11 +43,6 @@ interface GetCouponRedemptionsRequest {
   limit?: number;
 }
 
-interface SetCouponDisabledRequest {
-  couponId: string;
-  disabled: boolean;
-}
-
 export const upsertCoupon = onCall<UpsertCouponRequest>(
   { memory: '512MiB', timeoutSeconds: 30 },
   monitored("upsertCoupon", async (request: CallableRequest<UpsertCouponRequest>) => {
@@ -235,28 +230,6 @@ export const getCouponRedemptions = onCall<GetCouponRedemptionsRequest>(
         };
       });
       return { ok: true, items };
-    } catch (err) {
-      if (err instanceof HttpsError) throw err;
-      throw handleError(err);
-    }
-  }),
-);
-
-export const setCouponDisabled = onCall<SetCouponDisabledRequest>(
-  { memory: '512MiB', timeoutSeconds: 15 },
-  monitored("setCouponDisabled", async (request: CallableRequest<SetCouponDisabledRequest>) => {
-    try {
-      const adminUid = await verifyAdminAuth(request.auth);
-      const couponId = String(request.data?.couponId || '').trim();
-      if (!couponId) throw new HttpsError('invalid-argument', 'couponId is required');
-
-      await db.collection('coupons').doc(couponId).update({
-        disabled: !!request.data?.disabled,
-        updatedAt: admin.firestore.Timestamp.now(),
-        updatedBy: adminUid,
-      });
-      logInfo(`setCouponDisabled id=${couponId} disabled=${request.data?.disabled} by=${adminUid}`);
-      return { ok: true };
     } catch (err) {
       if (err instanceof HttpsError) throw err;
       throw handleError(err);
