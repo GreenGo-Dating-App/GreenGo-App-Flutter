@@ -4661,5 +4661,20 @@
   "chatSmartRepliesLoading": "Sto pensando alle risposte...",
   "errorScreenTitle": "Qualcosa è andato storto",
   "errorScreenBody": "Impossibile aprire questa schermata. Ricarica l'app per riprovare — il tuo account non è stato modificato.",
-  "errorScreenReload": "Ricarica"
+  "errorScreenReload": "Ricarica",
+  "ageVerifyTitle": "Verifica la tua età",
+  "ageVerifyWhyPublish": "Per pubblicare in una community dobbiamo confermare che hai più di 18 anni.",
+  "ageVerifyWhyPhone": "Ti sei registrato con un numero di telefono, quindi ci serve un documento per confermare la tua età.",
+  "ageVerifyPrivacyNote": "Leggiamo solo la data di nascita ed eliminiamo subito la foto. L'immagine non viene mai conservata.",
+  "ageVerifyTakePhoto": "Fotografa il tuo documento",
+  "ageVerifyChooseImage": "Scegli dalla galleria",
+  "ageVerifyChecking": "Controllo del documento…",
+  "ageVerifyPending": "Stiamo esaminando il tuo documento. Di solito ci vuole meno di un giorno.",
+  "ageVerifyVerified": "La tua età è verificata.",
+  "ageVerifyRejected": "Non siamo riusciti a leggere il documento. Riprova con una foto più nitida.",
+  "ageVerifyRejectedUnderage": "Il documento indica che hai meno di 18 anni.",
+  "ageVerifyRejectedReused": "Questo documento è già collegato a un altro account.",
+  "ageVerifyCta": "Verifica ora",
+  "ageVerifyLater": "Non ora",
+  "ageVerifyNeededToPost": "Verifica l'età per pubblicare"
 }

@@ -4661,5 +4661,20 @@
   "chatSmartRepliesLoading": "Preparando respostas...",
   "errorScreenTitle": "Algo deu errado",
   "errorScreenBody": "Não foi possível abrir esta tela. Recarregue o aplicativo para tentar de novo — sua conta não é afetada.",
-  "errorScreenReload": "Recarregar"
+  "errorScreenReload": "Recarregar",
+  "ageVerifyTitle": "Verifique sua idade",
+  "ageVerifyWhyPublish": "Para publicar em uma comunidade precisamos confirmar que você tem mais de 18 anos.",
+  "ageVerifyWhyPhone": "Você se cadastrou com um número de telefone, então precisamos de um documento para confirmar sua idade.",
+  "ageVerifyPrivacyNote": "Lemos apenas a data de nascimento e apagamos a foto imediatamente. A imagem nunca é armazenada.",
+  "ageVerifyTakePhoto": "Tire uma foto do seu documento",
+  "ageVerifyChooseImage": "Escolher da galeria",
+  "ageVerifyChecking": "Verificando seu documento…",
+  "ageVerifyPending": "Estamos analisando seu documento. Normalmente leva menos de um dia.",
+  "ageVerifyVerified": "Sua idade está verificada.",
+  "ageVerifyRejected": "Não conseguimos ler seu documento. Tente novamente com uma foto mais nítida.",
+  "ageVerifyRejectedUnderage": "O documento indica que você tem menos de 18 anos.",
+  "ageVerifyRejectedReused": "Este documento já está vinculado a outra conta.",
+  "ageVerifyCta": "Verificar agora",
+  "ageVerifyLater": "Agora não",
+  "ageVerifyNeededToPost": "Verifique sua idade para publicar"
 }

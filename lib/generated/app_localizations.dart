@@ -24599,6 +24599,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reload'**
   String get errorScreenReload;
+
+  /// No description provided for @ageVerifyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your age'**
+  String get ageVerifyTitle;
+
+  /// No description provided for @ageVerifyWhyPublish.
+  ///
+  /// In en, this message translates to:
+  /// **'To post in a community, we need to confirm you are over 18.'**
+  String get ageVerifyWhyPublish;
+
+  /// No description provided for @ageVerifyWhyPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'You signed up with a phone number, so we need a document to confirm your age.'**
+  String get ageVerifyWhyPhone;
+
+  /// No description provided for @ageVerifyPrivacyNote.
+  ///
+  /// In en, this message translates to:
+  /// **'We read only the date of birth and delete the photo immediately. The image is never stored.'**
+  String get ageVerifyPrivacyNote;
+
+  /// No description provided for @ageVerifyTakePhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a photo of your ID'**
+  String get ageVerifyTakePhoto;
+
+  /// No description provided for @ageVerifyChooseImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose from library'**
+  String get ageVerifyChooseImage;
+
+  /// No description provided for @ageVerifyChecking.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your document…'**
+  String get ageVerifyChecking;
+
+  /// No description provided for @ageVerifyPending.
+  ///
+  /// In en, this message translates to:
+  /// **'We are reviewing your document. This usually takes less than a day.'**
+  String get ageVerifyPending;
+
+  /// No description provided for @ageVerifyVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Your age is verified.'**
+  String get ageVerifyVerified;
+
+  /// No description provided for @ageVerifyRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not read your document. Please try again with a clearer photo.'**
+  String get ageVerifyRejected;
+
+  /// No description provided for @ageVerifyRejectedUnderage.
+  ///
+  /// In en, this message translates to:
+  /// **'The document shows you are under 18.'**
+  String get ageVerifyRejectedUnderage;
+
+  /// No description provided for @ageVerifyRejectedReused.
+  ///
+  /// In en, this message translates to:
+  /// **'This document is already linked to another account.'**
+  String get ageVerifyRejectedReused;
+
+  /// No description provided for @ageVerifyCta.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify now'**
+  String get ageVerifyCta;
+
+  /// No description provided for @ageVerifyLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get ageVerifyLater;
+
+  /// No description provided for @ageVerifyNeededToPost.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your age to post'**
+  String get ageVerifyNeededToPost;
 }
 
 class _AppLocalizationsDelegate

@@ -101,7 +101,16 @@ service cloud.firestore {
       // Anyone signed in can read profiles (for discovery/matching)
       allow read: if isSignedIn();
       // Users can create/update/delete their own profile; admins can update (verification, moderation)
-      allow create: if isOwner(profileId);
+      // A profile may be CREATED only without privileged flags. Without this,
+      // `delete` + `create` was a trivial way to self-grant them: the update
+      // rule below guards each flag against its previous value, but a
+      // recreated document has no previous value to guard against.
+      allow create: if isOwner(profileId)
+        && request.resource.data.get('isAdmin', false) == false
+        && request.resource.data.get('isBanned', false) == false
+        && request.resource.data.get('isBusinessVerified', false) == false
+        && request.resource.data.get('businessVerified', false) == false
+        && request.resource.data.get('isAgeVerified', false) == false;
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
@@ -119,7 +128,15 @@ service cloud.firestore {
               && request.resource.data.get('isBusinessVerified', false)
                  == resource.data.get('isBusinessVerified', false)
               && request.resource.data.get('businessVerified', false)
-                 == resource.data.get('businessVerified', false))
+                 == resource.data.get('businessVerified', false)
+              // Age assurance is decided by `submitAgeDocument` /
+              // `reviewAgeVerification` running with admin credentials, which
+              // bypass these rules. A user must never be able to mark
+              // themselves age-verified and unlock community publishing.
+              && request.resource.data.get('isAgeVerified', false)
+                 == resource.data.get('isAgeVerified', false)
+              && request.resource.data.get('ageVerification', {})
+                 == resource.data.get('ageVerification', {}))
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
@@ -1086,8 +1103,21 @@ service cloud.firestore {
       function isCommunityMod() {
         return isCommunityCreator() || myRole() == 'owner' || myRole() == 'admin' || isAdmin();
       }
+      // Age assurance (Guidelines 1.2.1 / 4.7.5): publishing content other
+      // people will see requires a VERIFIED age, not a self-declared one.
+      // Reading and joining a community stay open to every signed-in user —
+      // the gate is on broadcasting, which is what the guideline is about.
+      //
+      // Reads the denormalised boolean rather than the nested map so this
+      // costs one document read per write, not a map traversal.
+      function isAgeVerified() {
+        return isSignedIn() &&
+          get(/databases/$(database)/documents/profiles/$(request.auth.uid))
+            .data.get('isAgeVerified', false) == true;
+      }
       function canPostChat() {
         return isMemberOf() &&
+          isAgeVerified() &&
           myMemberDoc().data.get('isBanned', false) == false &&
           myMemberDoc().data.get('isMuted', false) == false;
       }

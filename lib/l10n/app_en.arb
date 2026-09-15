@@ -6554,5 +6554,20 @@
   "errorScreenReload": "Reload",
   "@errorScreenReload": {
     "description": "Button that reloads the app after a crash"
-  }
+  },
+  "ageVerifyTitle": "Verify your age",
+  "ageVerifyWhyPublish": "To post in a community, we need to confirm you are over 18.",
+  "ageVerifyWhyPhone": "You signed up with a phone number, so we need a document to confirm your age.",
+  "ageVerifyPrivacyNote": "We read only the date of birth and delete the photo immediately. The image is never stored.",
+  "ageVerifyTakePhoto": "Take a photo of your ID",
+  "ageVerifyChooseImage": "Choose from library",
+  "ageVerifyChecking": "Checking your document…",
+  "ageVerifyPending": "We are reviewing your document. This usually takes less than a day.",
+  "ageVerifyVerified": "Your age is verified.",
+  "ageVerifyRejected": "We could not read your document. Please try again with a clearer photo.",
+  "ageVerifyRejectedUnderage": "The document shows you are under 18.",
+  "ageVerifyRejectedReused": "This document is already linked to another account.",
+  "ageVerifyCta": "Verify now",
+  "ageVerifyLater": "Not now",
+  "ageVerifyNeededToPost": "Verify your age to post"
 }

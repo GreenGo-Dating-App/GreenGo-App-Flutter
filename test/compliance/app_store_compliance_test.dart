@@ -206,6 +206,63 @@ void main() {
     });
   });
 
+  group('Guidelines 1.2.1 / 4.7.5 — age assurance', () {
+    late String rules;
+
+    setUpAll(() {
+      rules = File('firestore.rules').readAsStringSync();
+    });
+
+    test('publishing to a community requires a verified age', () {
+      // Client-side gating is a courtesy; this is the enforcement.
+      expect(rules.contains('function isAgeVerified()'), isTrue);
+      final canPost = rules.substring(
+        rules.indexOf('function canPostChat()'),
+        rules.indexOf('function canWriteTips()'),
+      );
+      expect(canPost.contains('isAgeVerified()'), isTrue,
+          reason: 'canPostChat must require a verified age.');
+    });
+
+    test('a user cannot mark their own profile age-verified', () {
+      // Without this guard the whole gate is decorative: a user could set the
+      // flag on their own profile document and publish freely.
+      // Matching the guard as two fragments rather than one multi-line
+      // string keeps this robust to reformatting of the rules file.
+      final updateRule = rules.substring(
+        rules.indexOf('allow update: if (isOwner(profileId)'),
+        rules.indexOf('allow delete: if isOwner(profileId)'),
+      );
+      expect(
+        updateRule.contains("request.resource.data.get('isAgeVerified', false)") &&
+            updateRule.contains("resource.data.get('isAgeVerified', false)"),
+        isTrue,
+        reason: 'profile update must hold isAgeVerified immutable.',
+      );
+    });
+
+    test('a recreated profile cannot assert privileged flags', () {
+      // delete + create was a way around the update guard.
+      final createRule = rules.substring(
+        rules.indexOf('allow create: if isOwner(profileId)'),
+        rules.indexOf('allow update: if (isOwner(profileId)'),
+      );
+      for (final flag in ['isAdmin', 'isBanned', 'isAgeVerified']) {
+        expect(createRule.contains("'$flag'"), isTrue,
+            reason: 'profile create must refuse a self-asserted $flag.');
+      }
+    });
+
+    test('identity documents are write-only in Storage', () {
+      final storage = File('storage.rules').readAsStringSync();
+      final block = storage.substring(
+        storage.indexOf('match /age_verification/'),
+      );
+      expect(block.contains('allow read: if false;'), isTrue,
+          reason: 'Nobody should be able to read back an identity document.');
+    });
+  });
+
   group('Video chat was removed in v4.0.0', () {
     test('no tier advertises a video chat capability', () {
       final offenders = <String>[];

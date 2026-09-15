@@ -335,6 +335,16 @@ export {
   calculateTrustScore,
 } from './safety/identityVerification';
 
+// Age Assurance Functions (Guidelines 2.3.6, 1.2.1, 4.7.5)
+// Declared age for everyone; document verification on top; mandatory for
+// phone-auth accounts; required to publish in Communities.
+export {
+  getAgeVerificationState,
+  submitAgeDocument,
+  reviewAgeVerification,
+  backfillDeclaredAge,
+} from './safety/ageAssurance';
+
 // Admin Panel Functions
 export {
   getUserActivityMetrics,

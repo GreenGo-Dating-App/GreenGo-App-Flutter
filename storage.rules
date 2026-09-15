@@ -80,6 +80,22 @@ service firebase.storage {
       allow write: if isOwner(uid) && validUpload();
     }
 
+    // Age-assurance documents. WRITE-ONLY by design.
+    //
+    // The owner uploads an identity document here and the `submitAgeDocument`
+    // function reads it with admin credentials, extracts the birth date, and
+    // DELETES the image within the same invocation. Nobody — not the uploader,
+    // not an admin — can read it back, because there is no legitimate reason
+    // to and every reason not to: this is the most sensitive data the app
+    // handles. Images are capped tighter than ordinary media since a document
+    // photo has no business being 50 MB.
+    match /age_verification/{uid}/{allPaths=**} {
+      allow read: if false;
+      allow write: if isOwner(uid)
+        && request.resource.size < 10 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
     // 1:1 chat media (image / voice / video). Path is keyed by matchId; Storage
     // rules can't read the match/conversation doc, so membership is enforced in
     // Firestore. Signed-in read+write, same policy as group_media.
