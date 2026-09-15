@@ -2603,6 +2603,8 @@
   "photoDeleteMainWarning": "Questa è la tua foto principale. La prossima foto diventerà la tua foto principale (deve mostrare il tuo viso). Continuare?",
   "photoExplicitContent": "Questa foto potrebbe contenere contenuti inappropriati. Le foto nell'app non devono mostrare nudità, biancheria intima o contenuti espliciti.",
   "photoExplicitNudity": "Questa foto sembra contenere nudità o contenuti espliciti. Tutte le foto nell'app devono essere appropriate e completamente vestite.",
+  "photoPrivateAlbumSuggestion": "Puoi caricare questa foto nel tuo album privato, dove la vedono solo le persone a cui dai accesso.",
+  "photoUploadDeniedNudity": "Caricamento negato - violazione: nudita. Le foto del profilo pubblico devono ritrarre persone completamente vestite.",
   "photoFailedPickImage": "Impossibile selezionare l'immagine: {error}",
   "photoLongPressReorder": "Pressione prolungata e trascina per riordinare",
   "photoMainNoFace": "La tua foto principale deve mostrare chiaramente il tuo viso. Nessun viso è stato rilevato in questa foto.",

@@ -3750,6 +3750,8 @@
   "photoDeleteMainWarning": "This is your main photo. The next photo will become your main photo (must show your face). Continue?",
   "photoExplicitContent": "This photo contains inappropriate content. Nudity, underwear, and explicit content are not allowed anywhere in the app.",
   "photoExplicitNudity": "This photo appears to contain nudity or explicit content. All photos must be appropriate and fully clothed.",
+  "photoPrivateAlbumSuggestion": "You can upload this photo to your private album instead, where it is only visible to people you grant access to.",
+  "photoUploadDeniedNudity": "Upload denied - violation: nudity. Photos on your public profile must be fully clothed.",
   "photoFailedPickImage": "Failed to pick image: {error}",
   "photoLongPressReorder": "Long press and drag to reorder",
   "photoMainNoFace": "Your main photo must show your face clearly. No face was detected in this photo.",

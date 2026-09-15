@@ -2561,6 +2561,8 @@
   "photoDeleteMainWarning": "Dies ist dein Hauptfoto. Das nächste Foto wird zu deinem Hauptfoto (muss dein Gesicht zeigen). Fortfahren?",
   "photoExplicitContent": "Dieses Foto könnte unangemessene Inhalte enthalten. Fotos in der App dürfen keine Nacktheit, Unterwäsche oder explizite Inhalte zeigen.",
   "photoExplicitNudity": "Dieses Foto scheint Nacktheit oder explizite Inhalte zu enthalten. Alle Fotos in der App müssen angemessen und vollständig bekleidet sein.",
+  "photoPrivateAlbumSuggestion": "Du kannst dieses Foto stattdessen in dein privates Album hochladen, wo es nur Personen sehen, denen du Zugriff gibst.",
+  "photoUploadDeniedNudity": "Upload abgelehnt - Verstoss: Nacktheit. Fotos in deinem oeffentlichen Profil muessen vollstaendig bekleidet sein.",
   "photoFailedPickImage": "Bild konnte nicht ausgewählt werden: {error}",
   "photoLongPressReorder": "Lange drücken und ziehen zum Umordnen",
   "photoMainNoFace": "Dein Hauptfoto muss dein Gesicht deutlich zeigen. Auf diesem Foto wurde kein Gesicht erkannt.",

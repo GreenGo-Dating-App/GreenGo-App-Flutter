@@ -7754,6 +7754,14 @@ class AppLocalizationsPt extends AppLocalizations {
       'Esta foto parece conter nudez ou conteúdo explícito. Todas as fotos na app devem ser apropriadas e com roupa adequada.';
 
   @override
+  String get photoPrivateAlbumSuggestion =>
+      'Podes enviar esta foto para o teu album privado, onde so a veem as pessoas a quem deres acesso.';
+
+  @override
+  String get photoUploadDeniedNudity =>
+      'Envio recusado - violacao: nudez. As fotos do teu perfil publico tem de mostrar pessoas totalmente vestidas.';
+
+  @override
   String photoFailedPickImage(Object error) {
     return 'Falha ao selecionar imagem: $error';
   }
@@ -21738,6 +21746,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get photoExplicitNudity =>
       'Esta foto parece conter nudez ou conteúdo explícito. Todas as fotos no app devem ser apropriadas e com roupas adequadas.';
+
+  @override
+  String get photoPrivateAlbumSuggestion =>
+      'Voce pode enviar esta foto para o seu album privado, onde so quem voce autorizar podera ve-la.';
+
+  @override
+  String get photoUploadDeniedNudity =>
+      'Envio negado - violacao: nudez. As fotos do seu perfil publico precisam mostrar pessoas totalmente vestidas.';
 
   @override
   String photoFailedPickImage(Object error) {

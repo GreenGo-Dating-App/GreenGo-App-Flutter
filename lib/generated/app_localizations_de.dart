@@ -7787,6 +7787,14 @@ class AppLocalizationsDe extends AppLocalizations {
       'Dieses Foto scheint Nacktheit oder explizite Inhalte zu enthalten. Alle Fotos in der App müssen angemessen und vollständig bekleidet sein.';
 
   @override
+  String get photoPrivateAlbumSuggestion =>
+      'Du kannst dieses Foto stattdessen in dein privates Album hochladen, wo es nur Personen sehen, denen du Zugriff gibst.';
+
+  @override
+  String get photoUploadDeniedNudity =>
+      'Upload abgelehnt - Verstoss: Nacktheit. Fotos in deinem oeffentlichen Profil muessen vollstaendig bekleidet sein.';
+
+  @override
   String photoFailedPickImage(Object error) {
     return 'Bild konnte nicht ausgewählt werden: $error';
   }

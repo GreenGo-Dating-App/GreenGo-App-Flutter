@@ -13824,6 +13824,18 @@ abstract class AppLocalizations {
   /// **'This photo appears to contain nudity or explicit content. All photos must be appropriate and fully clothed.'**
   String get photoExplicitNudity;
 
+  /// No description provided for @photoPrivateAlbumSuggestion.
+  ///
+  /// In en, this message translates to:
+  /// **'You can upload this photo to your private album instead, where it is only visible to people you grant access to.'**
+  String get photoPrivateAlbumSuggestion;
+
+  /// No description provided for @photoUploadDeniedNudity.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload denied - violation: nudity. Photos on your public profile must be fully clothed.'**
+  String get photoUploadDeniedNudity;
+
   /// No description provided for @photoFailedPickImage.
   ///
   /// In en, this message translates to:
