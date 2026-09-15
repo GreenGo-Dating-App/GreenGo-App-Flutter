@@ -19,8 +19,12 @@ class AuthTextField extends StatelessWidget {
     this.onSubmitted,
     this.textCapitalization = TextCapitalization.none,
     this.fieldKey,
+    this.focusNode,
   });
   final TextEditingController controller;
+  /// Optional: lets a caller react to the field gaining or losing focus (the
+  /// registration form uses it to look up the email's entitlement on blur).
+  final FocusNode? focusNode;
   final String label;
   final String? hint;
   final bool obscureText;
@@ -45,6 +49,7 @@ class AuthTextField extends StatelessWidget {
     return TextFormField(
       key: fieldKey,
       controller: controller,
+      focusNode: focusNode,
       obscureText: obscureText,
       keyboardType: keyboardType,
       validator: validator,

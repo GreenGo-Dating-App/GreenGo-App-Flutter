@@ -4679,5 +4679,16 @@
   "ageVerifyCta": "Jetzt bestätigen",
   "ageVerifyLater": "Später",
   "ageVerifyNeededToPost": "Alter bestätigen, um zu posten",
-  "contactSupportSubtitle": "Fragen, Probleme oder Meldungen — wir antworten per E-Mail"
+  "contactSupportSubtitle": "Fragen, Probleme oder Meldungen — wir antworten per E-Mail",
+  "offerPreRegisteredTitle": "Du bist vorregistriert",
+  "offerWelcomePackTitle": "Dein Willkommenspaket",
+  "offerTierLine": "{tier}-Mitgliedschaft für {duration}",
+  "offerBaseLine": "Base-Mitgliedschaft für {duration}",
+  "offerFreeMonthLine": "Ein Monat voller Zugriff, kostenlos",
+  "offerCoinsLine": "{coins} Willkommensmünzen",
+  "offerAppliedFromToday": "Wird ab heute automatisch hinzugefügt, bei deiner ersten Anmeldung.",
+  "offerDurationOneMonth": "1 Monat",
+  "offerDurationMonths": "{count} Monate",
+  "offerDurationOneYear": "1 Jahr",
+  "offerDurationDays": "{count} Tage"
 }

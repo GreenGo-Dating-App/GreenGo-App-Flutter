@@ -6572,5 +6572,54 @@
   "ageVerifyCta": "Verify now",
   "ageVerifyLater": "Not now",
   "ageVerifyNeededToPost": "Verify your age to post",
-  "contactSupportSubtitle": "Questions, problems or a report — we reply by email"
+  "contactSupportSubtitle": "Questions, problems or a report — we reply by email",
+  "offerPreRegisteredTitle": "You are pre-registered",
+  "offerWelcomePackTitle": "Your welcome pack",
+  "offerTierLine": "{tier} membership for {duration}",
+  "@offerTierLine": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "offerBaseLine": "Base membership for {duration}",
+  "@offerBaseLine": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "offerFreeMonthLine": "One month of free full access",
+  "offerCoinsLine": "{coins} welcome coins",
+  "@offerCoinsLine": {
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "offerAppliedFromToday": "Added automatically from today, the first time you sign in.",
+  "offerDurationOneMonth": "1 month",
+  "offerDurationMonths": "{count} months",
+  "@offerDurationMonths": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "offerDurationOneYear": "1 year",
+  "offerDurationDays": "{count} days",
+  "@offerDurationDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }
