@@ -58,6 +58,19 @@ class _AttractionsTabState extends State<AttractionsTab>
   List<AttractionCountry> _countries = const [];
   List<Attraction> _items = const [];
 
+  /// How many records are rendered right now. The list grows by [_pageSize] as
+  /// the user reaches the end, rather than laying out the whole country up
+  /// front.
+  static const int _pageSize = 20;
+  int _visibleCount = _pageSize;
+
+  /// Identifies the list currently on screen (country + category + sort +
+  /// query). When it changes the window is reset, so switching country does not
+  /// drop the user into the middle of a fresh list.
+  String _windowKey = '';
+
+  final ScrollController _scroll = ScrollController();
+
   /// Whole catalogue, loaded lazily the first time the user searches so a query
   /// can match a country or city outside the one currently being browsed.
   List<Attraction> _all = const [];
@@ -103,13 +116,45 @@ class _AttractionsTabState extends State<AttractionsTab>
   @override
   void initState() {
     super.initState();
+    _scroll.addListener(_onScroll);
     _lat = widget.userLat;
     _lng = widget.userLng;
     _bootstrap();
   }
 
+  /// Extends the window when the user gets near the end.
+  ///
+  /// 600px of lead time means the next 20 are laid out before they are needed,
+  /// so scrolling stays continuous instead of stuttering at each boundary.
+  void _onScroll() {
+    if (!_scroll.hasClients) return;
+    final pos = _scroll.position;
+    if (pos.pixels < pos.maxScrollExtent - 600) return;
+    if (_visibleCount >= _lastItemCount) return;
+    setState(() {
+      _visibleCount =
+          (_visibleCount + _pageSize).clamp(0, _lastItemCount);
+    });
+  }
+
+  /// Size of the list the window is being applied to, kept so the scroll
+  /// handler knows when there is nothing left to reveal.
+  int _lastItemCount = 0;
+
+  /// Resets the window when the list being shown is a different one.
+  void _syncWindow(String key, int total) {
+    _lastItemCount = total;
+    if (key == _windowKey) return;
+    _windowKey = key;
+    // Called from build - assigning directly is correct here; a setState would
+    // be a re-entrant build.
+    _visibleCount = _pageSize;
+  }
+
   @override
   void dispose() {
+    _scroll.removeListener(_onScroll);
+    _scroll.dispose();
     _catController?.dispose();
     super.dispose();
   }
@@ -677,7 +722,16 @@ class _AttractionsTabState extends State<AttractionsTab>
     // ONE computation per build. The tab counts, the result header and the
     // grid all read from this same list, so they can never disagree.
     final base = _matched;
-    final items = _visibleFrom(base);
+    final all = _visibleFrom(base);
+    // Reset the window when the underlying list changes identity.
+    _syncWindow(
+      '${_selectedIso ?? ''}|${_category ?? ''}|$_effectiveSort|${widget.query.trim()}',
+      all.length,
+    );
+    final items = all.length <= _visibleCount
+        ? all
+        : all.sublist(0, _visibleCount);
+    final hasMore = all.length > items.length;
 
     return Column(
       children: [
@@ -746,7 +800,9 @@ class _AttractionsTabState extends State<AttractionsTab>
                                   color: AppColors.textSecondary))),
                     )
                   ])
-                : (widget.gridView ? _grid(items, l10n) : _list(items, l10n)),
+                : (widget.gridView
+                    ? _grid(items, l10n, hasMore)
+                    : _list(items, l10n, hasMore)),
           ),
         ),
       ],
@@ -790,11 +846,12 @@ class _AttractionsTabState extends State<AttractionsTab>
     );
   }
 
-  Widget _grid(List<Attraction> items, AppLocalizations l10n) {
+  Widget _grid(List<Attraction> items, AppLocalizations l10n, bool hasMore) {
     final w = MediaQuery.of(context).size.width;
     final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
     return GridView.builder(
       key: const ValueKey('attrGrid'),
+      controller: _scroll,
       padding: const EdgeInsets.all(12),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: cols,
@@ -802,8 +859,24 @@ class _AttractionsTabState extends State<AttractionsTab>
         mainAxisSpacing: 8,
         childAspectRatio: 0.62,
       ),
-      itemCount: items.length,
-      itemBuilder: (_, i) => _tile(items[i], l10n),
+      // One extra cell while more remain, so the user can see that the list is
+      // still growing rather than believing it has ended.
+      itemCount: items.length + (hasMore ? 1 : 0),
+      itemBuilder: (_, i) => i >= items.length
+          ? const Center(
+              child: Padding(
+                padding: EdgeInsets.all(8),
+                child: SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    color: AppColors.richGold,
+                  ),
+                ),
+              ),
+            )
+          : _tile(items[i], l10n),
     );
   }
 
@@ -893,11 +966,27 @@ class _AttractionsTabState extends State<AttractionsTab>
     );
   }
 
-  Widget _list(List<Attraction> items, AppLocalizations l10n) => ListView.builder(
+  Widget _list(List<Attraction> items, AppLocalizations l10n, bool hasMore) =>
+      ListView.builder(
+        controller: _scroll,
         key: const ValueKey('attrList'),
         padding: const EdgeInsets.all(12),
-        itemCount: items.length,
-        itemBuilder: (_, i) => _card(items[i], l10n),
+        itemCount: items.length + (hasMore ? 1 : 0),
+        itemBuilder: (_, i) => i >= items.length
+            ? const Padding(
+                padding: EdgeInsets.all(16),
+                child: Center(
+                  child: SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: AppColors.richGold,
+                    ),
+                  ),
+                ),
+              )
+            : _card(items[i], l10n),
       );
 
   Widget _card(Attraction a, AppLocalizations l10n) {
