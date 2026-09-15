@@ -1650,6 +1650,31 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // IMAGE MODERATION VERDICTS
+    // ============================================================================
+    // The moderateUploadedImage Storage trigger writes one document per upload,
+    // keyed by the object path with '/' replaced by '~'. The uploading client
+    // BLOCKS on this document before using the image anywhere, so it has to be
+    // able to read its own verdict.
+    //
+    // `resource == null` is allowed on read because the client starts listening
+    // before the trigger has written anything - without it, the listen fails
+    // instead of waiting, and the upload would break rather than hold.
+    // Written only by the trigger (Admin SDK), never by a client.
+    match /image_moderation/{docId} {
+      allow read: if isSignedIn()
+        && (resource == null
+            || resource.data.get('userId', '') == request.auth.uid);
+      allow write: if false;
+    }
+
+    // Rejected-image review queue. Admin-only: it indexes quarantined content.
+    match /moderation_queue/{itemId} {
+      allow read: if isAdminPanelUser() || isAdmin();
+      allow write: if false;
+    }
+
+    // ============================================================================
     // DEFAULT DENY
     // ============================================================================
     // Written out rather than omitted, so the intent is explicit and nobody

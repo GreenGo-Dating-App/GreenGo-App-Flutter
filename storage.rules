@@ -126,6 +126,16 @@ service firebase.storage {
       allow write: if signedIn() && validUpload();
     }
 
+    // Quarantined images: content the moderateUploadedImage trigger rejected.
+    // Admin read ONLY, and no client may write here - the trigger moves files
+    // in with the Admin SDK, which bypasses these rules. Uploading content is
+    // rejected, not destroyed, so a false positive stays recoverable; but the
+    // whole point is that it is no longer reachable by users.
+    match /quarantine/{allPaths=**} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
     // Everything else: denied (no more open bucket). Add a match above for any
     // new upload path before shipping it.
   }

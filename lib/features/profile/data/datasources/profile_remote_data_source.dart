@@ -7,13 +7,25 @@ import '../../../../core/error/exceptions.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../models/profile_model.dart';
+import '../../../../core/services/image_moderation_gate.dart';
 
 abstract class ProfileRemoteDataSource {
   Future<ProfileModel> createProfile(ProfileModel profile);
   Future<ProfileModel> getProfile(String userId);
   Future<ProfileModel> updateProfile(ProfileModel profile);
   Future<void> deleteProfile(String userId);
-  Future<String> uploadPhoto(String userId, XFile photo, {String? folder});
+  /// Uploads a photo and BLOCKS until the server has moderated it.
+  ///
+  /// [isPrivate] marks a private-album photo, exempt from the NSFW check by
+  /// product decision. [requireFace] is set for a MAIN profile photo, which
+  /// must contain a face (no headless photos).
+  Future<String> uploadPhoto(
+    String userId,
+    XFile photo, {
+    String? folder,
+    bool isPrivate = false,
+    bool requireFace = false,
+  });
   Future<void> deletePhoto(String userId, String photoUrl);
   Future<String> uploadVoiceRecording(String userId, File recording);
   Future<bool> verifyPhotoWithAI(File photo);
@@ -138,14 +150,27 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   }
 
   @override
-  Future<String> uploadPhoto(String userId, XFile photo, {String? folder}) async {
+  Future<String> uploadPhoto(
+    String userId,
+    XFile photo, {
+    String? folder,
+    bool isPrivate = false,
+    bool requireFace = false,
+  }) async {
     try {
       final fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg';
       final folderPath = folder ?? 'photos';
-      final ref = storage.ref().child('profiles/$userId/$folderPath/$fileName');
+      final objectPath = 'profiles/$userId/$folderPath/$fileName';
+      final ref = storage.ref().child(objectPath);
       final metadata = SettableMetadata(
         contentType: 'image/jpeg',
-        customMetadata: {'userId': userId},
+        customMetadata: {
+          'userId': userId,
+          // Read by the moderateUploadedImage Storage trigger. ABSENCE of this
+          // flag means public, so nothing can skip moderation by omitting it.
+          'visibility': isPrivate ? 'private' : 'public',
+          'requireFace': requireFace ? 'true' : 'false',
+        },
       );
 
       if (kIsWeb) {
@@ -153,6 +178,9 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         // directly. (Server-side moderation still applies.)
         final bytes = await photo.readAsBytes();
         final uploadTask = await ref.putData(bytes, metadata);
+        if (!isPrivate) {
+          await ImageModerationGate().awaitVerdict(objectPath);
+        }
         return uploadTask.ref.getDownloadURL();
       }
 
@@ -167,6 +195,11 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
       }
 
       final uploadTask = await ref.putFile(photoToUpload, metadata);
+      // On-device ML Kit already ran as a fast first pass, but it lives inside
+      // the app and can be bypassed. This is the check that cannot be.
+      if (!isPrivate) {
+        await ImageModerationGate().awaitVerdict(objectPath);
+      }
       return uploadTask.ref.getDownloadURL();
     } on FirebaseException catch (e) {
       throw ServerException( e.message ?? 'Failed to upload photo');

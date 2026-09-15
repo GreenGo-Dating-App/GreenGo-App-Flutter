@@ -92,7 +92,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     // ALL photos (public AND private) must pass nudity/explicit content checks.
     // These run on-device ML Kit (face + NSFW labels), which is native-only —
     // on web we skip client validation and rely on server-side moderation.
-    if (!kIsWeb) {
+    if (!kIsWeb && !event.isPrivate) {
       emit(const ProfilePhotoValidating());
 
       final validationService = PhotoValidationService();
@@ -132,7 +132,12 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     emit(const ProfileLoading());
 
     final result = await uploadPhoto(
-      UploadPhotoParams(userId: event.userId, photo: event.photo),
+      UploadPhotoParams(
+        userId: event.userId,
+        photo: event.photo,
+        isPrivate: event.isPrivate,
+        requireFace: !event.isPrivate && event.isMainPhoto,
+      ),
     );
 
     result.fold(

@@ -312,6 +312,9 @@ export {
   detectScam,
 } from './safety/contentModeration';
 
+// Server-side NSFW moderation of every user upload (Storage trigger).
+export { moderateUploadedImage } from './safety/moderateUploadedImage';
+
 export {
   submitReport,
   reviewReport,
