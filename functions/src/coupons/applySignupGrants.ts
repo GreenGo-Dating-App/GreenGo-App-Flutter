@@ -24,7 +24,6 @@ import { sendCouponRedeemedEmail } from '../notifications/couponEmails';
 import { effectiveGrants, hasBaseGrant, summariseGrants } from './grants';
 import { monitored } from '../shared/monitoring';
 
-const COIN_EXPIRATION_DAYS = 365;
 
 interface AppliedGrant {
   couponId: string;
@@ -248,15 +247,12 @@ async function applyOneCoupon(
         profileUpdate.baseMembershipEndDate = admin.firestore.Timestamp.fromDate(newBaseEnd);
       } else if (g.kind === 'coins' && g.coinAmount && g.coinAmount > 0) {
         const amount = g.coinAmount;
-        const expirationDate = new Date();
-        expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
         coinBatches.push({
           batchId: db.collection('temp').doc().id,
           initialCoins: amount,
           remainingCoins: amount,
           source: 'coupon',
           acquiredDate: now,
-          expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
         });
         runningBalance += amount;
         totalCoinsGranted += amount;

@@ -535,7 +535,6 @@ exports.adjustUserCoins = functions.https.onCall((0, monitoring_1.monitored)("ad
                         remainingCoins: amount,
                         source: 'admin_grant',
                         acquiredAt: admin.firestore.FieldValue.serverTimestamp(),
-                        expirationDate: admin.firestore.Timestamp.fromDate(new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)),
                     }] : [],
             });
         }
@@ -553,7 +552,6 @@ exports.adjustUserCoins = functions.https.onCall((0, monitoring_1.monitored)("ad
                     remainingCoins: amount,
                     source: 'admin_grant',
                     acquiredAt: admin.firestore.FieldValue.serverTimestamp(),
-                    expirationDate: admin.firestore.Timestamp.fromDate(new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)),
                 });
                 updateData.lifetimeEarned = admin.firestore.FieldValue.increment(amount);
             }

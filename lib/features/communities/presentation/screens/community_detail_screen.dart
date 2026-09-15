@@ -10,6 +10,7 @@ import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
+import '../../../safety/presentation/widgets/age_verification_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -1086,12 +1087,19 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
     }
   }
 
-  void _sendMessage() {
+  Future<void> _sendMessage() async {
     final content = _messageController.text.trim();
     if (content.isEmpty) return;
 
     final userId = _currentUserId;
     if (userId == null) return;
+
+    // Publishing to a community requires a VERIFIED age (Guidelines 1.2.1 /
+    // 4.7.5). The server enforces this in firestore.rules; asking here turns
+    // what would be a silent permission error into an explanation and a way
+    // forward. Reading and joining stay open to everyone.
+    if (!await AgeVerificationGate.ensureCanPublish(context)) return;
+    if (!mounted) return;
 
     context.read<CommunitiesBloc>().add(
           SendCommunityMessage(

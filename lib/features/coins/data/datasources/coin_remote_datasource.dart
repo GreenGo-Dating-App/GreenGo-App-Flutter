@@ -138,7 +138,6 @@ class CoinRemoteDataSource {
         final source = _getCoinSource(reason);
         final batchId = uuid.v4();
         final acquiredDate = DateTime.now();
-        final expirationDate = acquiredDate.add(const Duration(days: 365));
 
         newBatches.add(CoinBatch(
           batchId: batchId,
@@ -146,14 +145,12 @@ class CoinRemoteDataSource {
           remainingCoins: amount,
           source: source,
           acquiredDate: acquiredDate,
-          expirationDate: expirationDate,
         ));
       } else {
-        // Debit: Deduct from oldest non-expired batches first (FIFO)
+        // Debit: deduct from the oldest batches first (FIFO)
         var remainingToDeduct = amount;
         newBatches = newBatches.map((batch) {
           if (remainingToDeduct <= 0) return batch;
-          if (batch.isExpired(DateTime.now())) return batch;
 
           final deductAmount = batch.remainingCoins <= remainingToDeduct
               ? batch.remainingCoins
@@ -166,7 +163,6 @@ class CoinRemoteDataSource {
             remainingCoins: batch.remainingCoins - deductAmount,
             source: batch.source,
             acquiredDate: batch.acquiredDate,
-            expirationDate: batch.expirationDate,
           );
         }).where((batch) => batch.remainingCoins > 0).toList();
       }
@@ -526,11 +522,10 @@ class CoinRemoteDataSource {
     final newTotal = currentBalance.totalCoins - amount;
     final newSpent = currentBalance.spentCoins + amount;
 
-    // Deduct from oldest non-expired batches first (FIFO)
+    // Deduct from the oldest batches first (FIFO)
     var remainingToDeduct = amount;
     final newBatches = currentBalance.coinBatches.map((batch) {
       if (remainingToDeduct <= 0) return batch;
-      if (batch.isExpired(DateTime.now())) return batch;
       final deductAmount = batch.remainingCoins <= remainingToDeduct
           ? batch.remainingCoins
           : remainingToDeduct;
@@ -541,7 +536,6 @@ class CoinRemoteDataSource {
         remainingCoins: batch.remainingCoins - deductAmount,
         source: batch.source,
         acquiredDate: batch.acquiredDate,
-        expirationDate: batch.expirationDate,
       );
     }).where((batch) => batch.remainingCoins > 0).toList();
 
@@ -617,7 +611,6 @@ class CoinRemoteDataSource {
     final source = _getCoinSource(reason);
     final batchId = uuid.v4();
     final acquiredDate = DateTime.now();
-    final expirationDate = acquiredDate.add(const Duration(days: 365));
 
     final newBatches = List<CoinBatch>.from(currentBalance.coinBatches);
     newBatches.add(CoinBatch(
@@ -626,7 +619,6 @@ class CoinRemoteDataSource {
       remainingCoins: amount,
       source: source,
       acquiredDate: acquiredDate,
-      expirationDate: expirationDate,
     ));
 
     final updatedBalance = CoinBalanceModel(
@@ -968,45 +960,6 @@ class CoinRemoteDataSource {
     return snapshot.docs.isNotEmpty;
   }
 
-  // ===== Expiration Operations =====
-
-  /// Process expired coins
-  Future<void> processExpiredCoins(String userId) async {
-    final balance = await getBalance(userId);
-    final now = DateTime.now();
-    var totalExpired = 0;
-
-    for (final batch in balance.coinBatches) {
-      if (batch.isExpired(now) && batch.remainingCoins > 0) {
-        totalExpired += batch.remainingCoins;
-      }
-    }
-
-    if (totalExpired > 0) {
-      await updateBalance(
-        userId: userId,
-        amount: totalExpired,
-        type: CoinTransactionType.debit,
-        reason: CoinTransactionReason.expired,
-      );
-    }
-  }
-
-  /// Get expiring coins
-  Future<List<CoinBatch>> getExpiringCoins({
-    required String userId,
-    required int days,
-  }) async {
-    final balance = await getBalance(userId);
-    final threshold = DateTime.now().add(Duration(days: days));
-
-    return balance.coinBatches
-        .where((batch) =>
-            !batch.isExpired(DateTime.now()) &&
-            batch.expirationDate.isBefore(threshold))
-        .toList();
-  }
-
   // ===== Promotion Operations =====
 
   /// Get active promotions
@@ -1030,21 +983,6 @@ class CoinRemoteDataSource {
         .toList();
   }
 
-  /// Get promotion by code
-  Future<CoinPromotionModel?> getPromotionByCode(String code) async {
-    final snapshot = await _promotionsCollection
-        .where('promoCode', isEqualTo: code)
-        .where('isActive', isEqualTo: true)
-        .limit(1)
-        .get();
-
-    if (snapshot.docs.isEmpty) return null;
-    return CoinPromotionModel.fromFirestore(snapshot.docs.first);
-  }
-
-  // ===== Order Operations =====
-
-  /// Create order
   Future<CoinOrderModel> createOrder({
     required String userId,
     required OrderType type,

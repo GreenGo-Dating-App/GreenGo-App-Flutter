@@ -1,7 +1,7 @@
 POLITIQUE DE CONFIDENTIALITE DE GREENGO CHAT
 
-Derniere mise a jour : 26 janvier 2026
-Date d'entree en vigueur : 26 janvier 2026
+Derniere mise a jour : 15 septembre 2026
+Date d'entree en vigueur : 15 septembre 2026
 
 ================================================================================
 INTRODUCTION
@@ -192,6 +192,17 @@ Nous pouvons collecter et traiter les donnees personnelles sensibles suivantes a
 - Croyances religieuses (si fournies volontairement)
 - Informations de sante pertinentes pour les relations (si divulguees volontairement)
 - Donnees biometriques (uniquement pour la verification d'identite)
+- Donnees du document d'identite (uniquement pour la verification de l'age - voir la Section 2.6)
+
+Nous ne conservons pas les images utilisees pour la verification d'identite ou
+d'age. La verification faciale et la verification de l'age sont traitees, puis
+l'image source est supprimee; seul le resultat derive est conserve. Voir les
+Sections 2.6 et 8.1(e).
+
+Le retrait du consentement a la verification de l'age supprime votre statut
+verifie et, avec lui, la possibilite de publier du contenu dans les Communautes.
+Cela n'affecte pas le reste de votre compte.
+
 
 Vous avez le droit de retirer votre consentement au traitement des donnees sensibles a tout moment.
 
@@ -265,6 +276,79 @@ Utilisateurs iOS:
 3. Certaines fonctionnalites peuvent etre limitees lorsque les autorisations sont desactivees
 
 Nous ne demandons que les autorisations necessaires au fonctionnement de base de l'application ou aux fonctionnalites optionnelles que vous choisissez d'utiliser. Nous n'accdons a aucune donnee au-dela de ce qui est necessaire pour les objectifs declares.
+
+================================================================================
+2.6 DONNEES DE VERIFICATION DE L'AGE
+================================================================================
+
+GreenGo est reserve aux adultes de 18 ans et plus. Chaque utilisateur declare sa
+date de naissance lors de la creation d'un compte, et les comptes declarant un
+age inferieur a 18 ans sont refuses.
+
+En outre, nous verifions l'age au moyen d'un document d'identite dans deux
+situations:
+
+a) Lorsque vous vous connectez en utilisant UNIQUEMENT un numero de telephone.
+   Un numero de telephone n'etablit aucune identite; une date de naissance
+   declaree derriere lui n'est donc etayee par rien.
+
+b) Lorsque vous souhaitez PUBLIER du contenu dans une Communaute. Lire une
+   Communaute et la rejoindre n'exigent jamais de verification; seule la
+   publication l'exige, car le contenu publie atteint d'autres personnes.
+
+CE QUI ARRIVE A VOTRE DOCUMENT
+
+Le dispositif est concu pour conserver votre document quelques secondes, pas
+plusieurs jours:
+
+1. Vous televersez la photographie d'un document d'identite vers un emplacement
+   de stockage en ecriture seule. Il ne peut pas etre relu - ni par vous, ni par
+   notre personnel.
+2. Nos systemes lisent automatiquement le document par reconnaissance optique de
+   caracteres, afin d'en extraire la date de naissance.
+3. L'image est supprimee au cours de la meme operation, que la verification
+   reussisse ou echoue. Aucun employe ne la consulte, et aucune interface n'est
+   capable de l'afficher.
+
+CE QUE NOUS CONSERVONS
+
+Uniquement ce qui est necessaire pour etayer la decision:
+
+- La date de naissance lue sur le document
+- Si elle correspondait a la date de naissance que vous avez declaree
+- Une empreinte cryptographique a sens unique (SHA-256) du numero du document.
+  Elle nous permet de detecter l'utilisation d'un meme document pour verifier
+  deux comptes differents. Elle ne peut pas etre inversee pour retrouver le
+  numero.
+- Le resultat, le score de confiance automatique et - si un membre du personnel a
+  examine un cas limite - l'identifiant de ce relecteur
+
+Nous NE conservons PAS: l'image, votre nom tel qu'imprime sur le document, le
+numero du document sous forme lisible, votre nationalite ni la date d'expiration
+du document.
+
+OU LE TRAITEMENT A LIEU
+
+La reconnaissance optique de caracteres est effectuee par Google Cloud Vision,
+agissant comme notre sous-traitant dans le cadre d'un accord de traitement des
+donnees. L'image est transmise a ce service pour traitement et n'est pas
+conservee par lui ensuite.
+
+BASE LEGALE
+
+- Consentement (LGPD Art. 7, I / RGPD Art. 6(1)(a)) pour le traitement du
+  document
+- Respect d'une obligation legale (LGPD Art. 7, II / RGPD Art. 6(1)(c)) et
+  interets legitimes (LGPD Art. 7, IX / RGPD Art. 6(1)(f)) a empecher les mineurs
+  d'acceder a du contenu pour adultes ou d'en publier, et a satisfaire aux
+  exigences de verification de l'age des boutiques d'applications par lesquelles
+  GreenGo est distribue
+
+Vous pouvez refuser la verification. Un refus signifie que vous ne pouvez pas
+publier dans les Communautes et, si votre compte utilise uniquement la connexion
+par telephone, que certaines fonctionnalites restent indisponibles. Il n'entraine
+jamais la suppression de votre compte.
+
 
 ================================================================================
 3. COMMENT NOUS COLLECTONS LES INFORMATIONS
@@ -411,6 +495,9 @@ Nous partageons des donnees avec des prestataires de services tiers qui effectue
 - Fournisseurs de SMS (verification et notifications)
 - Services de moderation de contenu (securite)
 - Services de verification d'identite (prevention de la fraude)
+- Services de reconnaissance optique de caracteres (verification de l'age) -
+  Google Cloud Vision, qui recoit l'image d'un document d'identite, renvoie le
+  texte qui s'y trouve et ne conserve rien ensuite
 
 Tous les prestataires de services sont contractuellement tenus de proteger vos donnees et de les utiliser uniquement aux fins specifiees.
 
@@ -487,6 +574,52 @@ d) Donnees de securite et de prevention de la fraude
    - Journaux IP : 6 mois
    - Donnees d'incidents de securite : 5 ans
    - Donnees de comptes bannis : Indefiniment (pour empecher une nouvelle inscription)
+
+e) Donnees de Verification de l'Age et de l'Identite
+   - Images de documents: NON CONSERVEES. Supprimees au cours de la meme
+     operation qui les lit, generalement dans les secondes suivant le televersement.
+   - Date de naissance extraite, resultat de la correspondance, empreinte du
+     numero de document et resultat: pendant la duree du compte. Supprimes lors
+     de la suppression du compte.
+
+f) Monnaie Virtuelle
+   - Les pieces GreenGo n'expirent pas et ne sont soumises a aucune duree de
+     conservation. Voir les Conditions Generales.
+
+8.2 Procedure de suppression
+
+Vous pouvez supprimer votre compte a tout moment depuis l'application, dans les
+parametres de votre profil. La suppression est definitive et irreversible.
+
+Lorsque vous supprimez votre compte, un processus automatique retire:
+- Votre profil, vos photographies, videos et enregistrements vocaux
+- Vos enregistrements de compte et vos parametres
+- Votre solde de pieces et vos enregistrements d'abonnement
+- Vos adhesions aux Communautes, vos participations aux evenements et vos
+  recherches enregistrees
+- Vos donnees de verification d'age et d'identite, y compris l'empreinte du
+  numero de document et la date de naissance extraite
+- Votre liste d'utilisateurs bloques
+
+Les messages que vous avez deja envoyes a une autre personne sont ANONYMISES
+plutot que supprimes. Votre nom, votre photographie et votre identifiant de
+compte sont remplaces par une mention "utilisateur supprime", de sorte que le
+contenu ne puisse plus vous etre rattache. Nous procedons ainsi parce que
+supprimer purement et simplement ces messages modifierait la trace qu'une autre
+personne conserve d'une conversation a laquelle elle a pris part, ce qui n'est
+pas necessaire pour en retirer vos donnees personnelles.
+
+Nous conservons un enregistrement de suppression comportant la date et le nombre
+d'elements retires. Il ne contient aucune donnee personnelle et existe afin que
+nous puissions repondre ulterieurement a une question sur la realite de la
+suppression.
+
+Par ailleurs:
+- Votre profil cesse immediatement d'etre visible par les autres utilisateurs
+- Les copies de sauvegarde sont purgees sous 90 jours
+- Certains enregistrements sont conserves lorsque la loi l'exige, principalement
+  les documents financiers et fiscaux (voir la Section 8.1(c)) et les donnees
+  soumises a une obligation de conservation
 
 ================================================================================
 9. SECURITE DES DONNEES

@@ -1289,9 +1289,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminUploading => 'Uploading...';
 
   @override
-  String get adminUseVideoCallingFeature => 'Use video calling feature';
-
-  @override
   String get adminUsedMinutes => 'Used Minutes';
 
   @override
@@ -1352,9 +1349,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get adminVerifications => 'Verifications';
-
-  @override
-  String get adminVideoChat => 'Video Chat';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -2883,11 +2877,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coinsEnterReceiverId => 'Enter receiver ID';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count expiring';
-  }
 
   @override
   String get coinsFilterTransactions => 'Filter Transactions';
@@ -9142,6 +9131,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Store not available. Please check your device settings.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'Purchases are temporarily unavailable. Please try again later.';
+
+  @override
   String get shopSuperLikes => 'Priority Connects';
 
   @override
@@ -13791,4 +13784,70 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get chatSmartRepliesLoading => 'Thinking of replies...';
+
+  @override
+  String get errorScreenTitle => 'Something went wrong';
+
+  @override
+  String get errorScreenBody =>
+      'This screen could not be opened. Reload the app to try again — your account is not affected.';
+
+  @override
+  String get errorScreenReload => 'Reload';
+
+  @override
+  String get ageVerifyTitle => 'Verify your age';
+
+  @override
+  String get ageVerifyWhyPublish =>
+      'To post in a community, we need to confirm you are over 18.';
+
+  @override
+  String get ageVerifyWhyPhone =>
+      'You signed up with a phone number, so we need a document to confirm your age.';
+
+  @override
+  String get ageVerifyPrivacyNote =>
+      'We read only the date of birth and delete the photo immediately. The image is never stored.';
+
+  @override
+  String get ageVerifyTakePhoto => 'Take a photo of your ID';
+
+  @override
+  String get ageVerifyChooseImage => 'Choose from library';
+
+  @override
+  String get ageVerifyChecking => 'Checking your document…';
+
+  @override
+  String get ageVerifyPending =>
+      'We are reviewing your document. This usually takes less than a day.';
+
+  @override
+  String get ageVerifyVerified => 'Your age is verified.';
+
+  @override
+  String get ageVerifyRejected =>
+      'We could not read your document. Please try again with a clearer photo.';
+
+  @override
+  String get ageVerifyRejectedUnderage =>
+      'The document shows you are under 18.';
+
+  @override
+  String get ageVerifyRejectedReused =>
+      'This document is already linked to another account.';
+
+  @override
+  String get ageVerifyCta => 'Verify now';
+
+  @override
+  String get ageVerifyLater => 'Not now';
+
+  @override
+  String get ageVerifyNeededToPost => 'Verify your age to post';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Questions, problems or a report — we reply by email';
 }

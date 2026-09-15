@@ -1303,10 +1303,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get adminUploading => 'Caricamento...';
 
   @override
-  String get adminUseVideoCallingFeature =>
-      'Utilizza la funzione di videochiamata';
-
-  @override
   String get adminUsedMinutes => 'Minuti utilizzati';
 
   @override
@@ -1369,9 +1365,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get adminVerifications => 'Verifiche';
-
-  @override
-  String get adminVideoChat => 'Video chat';
 
   @override
   String adminVideoMinutesLabel(Object minutes) {
@@ -2924,11 +2917,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get coinsEnterReceiverId => 'Inserisci l\'ID del destinatario';
-
-  @override
-  String coinsExpiring(Object count) {
-    return '$count in scadenza';
-  }
 
   @override
   String get coinsFilterTransactions => 'Filtra Transazioni';
@@ -9249,6 +9237,10 @@ class AppLocalizationsIt extends AppLocalizations {
       'Negozio non disponibile. Controlla le impostazioni del dispositivo.';
 
   @override
+  String get shopTemporarilyUnavailable =>
+      'Gli acquisti non sono al momento disponibili. Riprova più tardi.';
+
+  @override
   String get shopSuperLikes => 'Connessioni Prioritarie';
 
   @override
@@ -13950,4 +13942,70 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get chatSmartRepliesLoading => 'Sto pensando alle risposte...';
+
+  @override
+  String get errorScreenTitle => 'Qualcosa è andato storto';
+
+  @override
+  String get errorScreenBody =>
+      'Impossibile aprire questa schermata. Ricarica l\'app per riprovare — il tuo account non è stato modificato.';
+
+  @override
+  String get errorScreenReload => 'Ricarica';
+
+  @override
+  String get ageVerifyTitle => 'Verifica la tua età';
+
+  @override
+  String get ageVerifyWhyPublish =>
+      'Per pubblicare in una community dobbiamo confermare che hai più di 18 anni.';
+
+  @override
+  String get ageVerifyWhyPhone =>
+      'Ti sei registrato con un numero di telefono, quindi ci serve un documento per confermare la tua età.';
+
+  @override
+  String get ageVerifyPrivacyNote =>
+      'Leggiamo solo la data di nascita ed eliminiamo subito la foto. L\'immagine non viene mai conservata.';
+
+  @override
+  String get ageVerifyTakePhoto => 'Fotografa il tuo documento';
+
+  @override
+  String get ageVerifyChooseImage => 'Scegli dalla galleria';
+
+  @override
+  String get ageVerifyChecking => 'Controllo del documento…';
+
+  @override
+  String get ageVerifyPending =>
+      'Stiamo esaminando il tuo documento. Di solito ci vuole meno di un giorno.';
+
+  @override
+  String get ageVerifyVerified => 'La tua età è verificata.';
+
+  @override
+  String get ageVerifyRejected =>
+      'Non siamo riusciti a leggere il documento. Riprova con una foto più nitida.';
+
+  @override
+  String get ageVerifyRejectedUnderage =>
+      'Il documento indica che hai meno di 18 anni.';
+
+  @override
+  String get ageVerifyRejectedReused =>
+      'Questo documento è già collegato a un altro account.';
+
+  @override
+  String get ageVerifyCta => 'Verifica ora';
+
+  @override
+  String get ageVerifyLater => 'Non ora';
+
+  @override
+  String get ageVerifyNeededToPost => 'Verifica l\'età per pubblicare';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Domande, problemi o segnalazioni — rispondiamo via email';
 }

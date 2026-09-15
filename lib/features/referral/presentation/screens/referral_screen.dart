@@ -8,7 +8,6 @@ import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/referral_service.dart';
 
-// TODO(referral-deeplink): auto-redeem a code captured from an install/deep link
 // on first run, instead of requiring manual entry below.
 
 /// Glass UI for the referral loop: shows the user's code, a Share action, an
@@ -26,12 +25,10 @@ class ReferralScreen extends StatefulWidget {
 
 class _ReferralScreenState extends State<ReferralScreen> {
   final ReferralService _service = GetIt.instance<ReferralService>();
-  final TextEditingController _redeemController = TextEditingController();
 
   late final String _userId;
   String? _code;
   bool _loadingCode = true;
-  bool _redeeming = false;
 
   @override
   void initState() {
@@ -42,7 +39,6 @@ class _ReferralScreenState extends State<ReferralScreen> {
 
   @override
   void dispose() {
-    _redeemController.dispose();
     super.dispose();
   }
 
@@ -84,27 +80,6 @@ class _ReferralScreenState extends State<ReferralScreen> {
     _snack(l10n.referralShareCta);
   }
 
-  Future<void> _redeem() async {
-    final l10n = AppLocalizations.of(context)!;
-    final input = _redeemController.text.trim();
-    if (input.isEmpty || _userId.isEmpty || _redeeming) return;
-
-    setState(() => _redeeming = true);
-    final success = await _service.redeemCode(
-      newUserId: _userId,
-      code: input,
-    );
-    if (!mounted) return;
-    setState(() => _redeeming = false);
-
-    if (success) {
-      _redeemController.clear();
-      _snack(l10n.referralRewardEarned);
-    } else {
-      _snack(l10n.referralHowItWorks);
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -131,7 +106,6 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 const SizedBox(height: 16),
                 _buildStatsCard(l10n),
                 const SizedBox(height: 16),
-                _buildRedeemCard(l10n),
                 const SizedBox(height: 16),
                 _buildHowItWorks(l10n),
               ],
@@ -293,69 +267,6 @@ class _ReferralScreenState extends State<ReferralScreen> {
           ),
         ),
       ],
-    );
-  }
-
-  Widget _buildRedeemCard(AppLocalizations l10n) {
-    return GlassContainer(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  controller: _redeemController,
-                  textCapitalization: TextCapitalization.characters,
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    letterSpacing: 3,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  decoration: InputDecoration(
-                    hintText: l10n.referralYourCode,
-                    hintStyle: const TextStyle(color: AppColors.textTertiary),
-                    filled: true,
-                    fillColor: Colors.white.withValues(alpha: 0.06),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(14),
-                      borderSide: BorderSide.none,
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 12),
-              SizedBox(
-                height: 52,
-                child: ElevatedButton(
-                  onPressed: _redeeming ? null : _redeem,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: AppColors.deepBlack,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                  ),
-                  child: _redeeming
-                      ? const SizedBox(
-                          width: 18,
-                          height: 18,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: AppColors.deepBlack,
-                          ),
-                        )
-                      : Text(
-                          l10n.referralShareCta,
-                          style: const TextStyle(fontWeight: FontWeight.w600),
-                        ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
     );
   }
 

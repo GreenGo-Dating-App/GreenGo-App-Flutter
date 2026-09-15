@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 
 /// Immutable snapshot of a user's referral state.
@@ -127,31 +126,4 @@ class ReferralService {
     });
   }
 
-  /// Redeems [code] via the secure `redeemReferral` Cloud Function, which grants
-  /// the referrer +100 coins (capped at 1000/month) and gives this new user 1
-  /// month of Platinum. All validation (self-referral, single-redemption, cap)
-  /// is enforced server-side.
-  ///
-  /// [newUserId] is accepted for API compatibility but the server uses the
-  /// caller's auth uid. Returns `true` on success, `false` on any rejection
-  /// (invalid / own code / already redeemed) — never throws.
-  Future<bool> redeemCode({
-    required String newUserId,
-    required String code,
-  }) async {
-    final normalized = code.trim().toUpperCase();
-    if (normalized.isEmpty) return false;
-    try {
-      await FirebaseFunctions.instance
-          .httpsCallable('redeemReferral')
-          .call<dynamic>({'code': normalized});
-      return true;
-    } on FirebaseFunctionsException catch (e) {
-      debugPrint('[Referral] redeemReferral failed: ${e.code} ${e.message}');
-      return false;
-    } catch (e) {
-      debugPrint('[Referral] redeemReferral error: $e');
-      return false;
-    }
-  }
 }

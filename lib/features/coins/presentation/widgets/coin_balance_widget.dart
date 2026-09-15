@@ -245,35 +245,6 @@ class _CoinBalanceWidgetState extends State<CoinBalanceWidget>
                 ),
               ],
             ),
-
-            // Expiration warning (if applicable)
-            if (balance != null && balance.getCoinsExpiringSoon() > 0) ...[
-              const SizedBox(width: 12),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                decoration: BoxDecoration(
-                  color: Colors.orange.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.access_time,
-                      size: 12,
-                      color: Colors.orange,
-                    ),
-                    const SizedBox(width: 4),
-                    Text(
-                      AppLocalizations.of(context)!.coinsExpiring(balance.getCoinsExpiringSoon()),
-                      style: const TextStyle(
-                        fontSize: 10,
-                        color: Colors.orange,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
           ],
         ),
       ),

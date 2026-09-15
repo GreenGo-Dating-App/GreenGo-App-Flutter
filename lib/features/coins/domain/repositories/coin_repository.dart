@@ -105,16 +105,8 @@ abstract class CoinRepository {
     required int month,
   });
 
-  // Expiration Operations (Point 164)
-  Future<Either<Failure, void>> processExpiredCoins(String userId);
-  Future<Either<Failure, List<CoinBatch>>> getExpiringCoins({
-    required String userId,
-    required int days,
-  });
-
   // Promotion Operations (Point 165)
   Future<Either<Failure, List<CoinPromotion>>> getActivePromotions();
-  Future<Either<Failure, CoinPromotion?>> getPromotionByCode(String code);
   Future<Either<Failure, bool>> isPromotionApplicable({
     required String promotionId,
     required String userId,

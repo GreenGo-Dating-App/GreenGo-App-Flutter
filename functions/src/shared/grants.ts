@@ -99,7 +99,9 @@ export async function grantMembership(
 export async function grantBaseMembership(
   uid: string,
   durationMs: number,
-  source: 'purchase' | 'coupon' = 'purchase',
+  // 'admin_grant' is the v4.0.0 replacement for coupon redemption: an admin
+  // gives the entitlement directly, with nothing for the user to redeem.
+  source: 'purchase' | 'coupon' | 'admin_grant' = 'purchase',
 ): Promise<{ newEndDate: Date; newEndTimestamp: admin.firestore.Timestamp }> {
   const profileSnap = await db.collection('profiles').doc(uid).get();
   const profileData = profileSnap.data() || {};
@@ -127,9 +129,9 @@ export async function grantBaseMembership(
 }
 
 /**
- * Credits coins to a user's balance. Uses the embedded `coinBatches` array shape
- * that `processExpiredCoins` reads, so granted coins are subject to the normal
- * 365-day expiration rules.
+ * Credits coins to a user's balance, using the embedded `coinBatches` array
+ * shape the Flutter client parses. Granted coins never expire — see
+ * Guideline 3.1.1; the former 365-day sweep was removed in v4.0.0.
  *
  * `source` is one of: 'purchase' | 'reward' | 'allowance' | 'coupon' | 'membership_bonus'
  * `reason` is a free-text reason recorded on the coinTransactions doc.
@@ -143,7 +145,6 @@ export async function grantCoins(
 ): Promise<void> {
   if (amount <= 0) return;
 
-  const COIN_EXPIRATION_DAYS = 365;
 
   await db.runTransaction(async (transaction) => {
     const balanceRef = db.collection('coinBalances').doc(uid);
@@ -167,8 +168,6 @@ export async function grantCoins(
     }
 
     const now = admin.firestore.Timestamp.now();
-    const expirationDate = new Date();
-    expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
 
     const batchId = db.collection('temp').doc().id;
     coinBatches.push({
@@ -177,7 +176,6 @@ export async function grantCoins(
       remainingCoins: amount,
       source,
       acquiredDate: now,
-      expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
     });
 
     transaction.set(balanceRef, {

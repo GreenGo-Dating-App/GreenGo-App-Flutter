@@ -15,17 +15,6 @@ class GetActivePromotions {
   }
 }
 
-/// Get Promotion by Code Use Case
-class GetPromotionByCode {
-
-  GetPromotionByCode(this.repository);
-  final CoinRepository repository;
-
-  Future<Either<Failure, CoinPromotion?>> call(String code) async {
-    return repository.getPromotionByCode(code);
-  }
-}
-
 /// Check if Promotion is Applicable Use Case
 class IsPromotionApplicable {
 

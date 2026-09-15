@@ -1,0 +1,55 @@
+{
+  "_comment": [
+    "Single source of truth for the App Store Connect product catalogue.",
+    "",
+    "Two things read this file:",
+    "  1. tool/check_store_products.cjs — queries the App Store Connect API and",
+    "     fails if any ID is missing or stuck in MISSING_METADATA.",
+    "  2. test/compliance/product_catalog_test.dart — asserts the Dart catalogue",
+    "     still matches this list, so the two can never drift apart silently.",
+    "",
+    "iOS subscription IDs are the canonical ID prefixed with 'subscription_'",
+    "(see lib/core/constants/product_catalog.dart). Coin packs use raw IDs.",
+    "A typo here is invisible in code review and fails only at runtime — which",
+    "is exactly how submission b9c4cdc6 was rejected under Guideline 2.1(b)."
+  ],
+  "subscriptions": {
+    "groupReferenceName": "GreenGo Membership",
+    "ios": [
+      "subscription_greengo_base_membership",
+      "subscription_1_month_silver",
+      "subscription_1_year_silver",
+      "subscription_1_month_gold",
+      "subscription_1_year_gold",
+      "subscription_1_month_platinum",
+      "subscription_1_year_platinum_membership"
+    ],
+    "canonical": [
+      "greengo_base_membership",
+      "1_month_silver",
+      "1_year_silver",
+      "1_month_gold",
+      "1_year_gold",
+      "1_month_platinum",
+      "1_year_platinum_membership"
+    ],
+    "android": [
+      "greengo_base_membership",
+      "silver_premium_monthly",
+      "greengo_silver_yearly",
+      "gold_premium_monthly",
+      "greengo_gold_yearly",
+      "platinum_vip_monthly",
+      "greengo_platinum_yearly"
+    ]
+  },
+  "consumables": {
+    "ios": [
+      "greengo_coins_100",
+      "greengo_coins_500",
+      "greengo_coins_1000",
+      "greengo_coins_5000"
+    ]
+  },
+  "expectedTotal": 11
+}

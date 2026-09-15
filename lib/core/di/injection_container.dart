@@ -64,7 +64,6 @@ import '../../features/coins/domain/usecases/claim_reward.dart';
 import '../../features/coins/domain/usecases/get_coin_balance.dart';
 import '../../features/coins/domain/usecases/get_transaction_history.dart';
 import '../../features/coins/domain/usecases/manage_allowance.dart';
-import '../../features/coins/domain/usecases/manage_expiration.dart';
 import '../../features/coins/domain/usecases/manage_gifts.dart';
 import '../../features/coins/domain/usecases/manage_promotions.dart';
 import '../../features/coins/domain/usecases/purchase_coins.dart';
@@ -708,12 +707,9 @@ Future<void> init() async {
   sl.registerLazySingleton(() => HasReceivedMonthlyAllowance(sl()));
 
   // Use cases - Expiration
-  sl.registerLazySingleton(() => ProcessExpiredCoins(sl()));
-  sl.registerLazySingleton(() => GetExpiringCoins(sl()));
 
   // Use cases - Promotions
   sl.registerLazySingleton(() => GetActivePromotions(sl()));
-  sl.registerLazySingleton(() => GetPromotionByCode(sl()));
   sl.registerLazySingleton(() => IsPromotionApplicable(sl()));
 
   // BLoC
@@ -733,10 +729,7 @@ Future<void> init() async {
       declineGift: sl(),
       getPendingGifts: sl(),
       getSentGifts: sl(),
-      processExpiredCoins: sl(),
-      getExpiringCoins: sl(),
       getActivePromotions: sl(),
-      getPromotionByCode: sl(),
       isPromotionApplicable: sl(),
     ),
   );

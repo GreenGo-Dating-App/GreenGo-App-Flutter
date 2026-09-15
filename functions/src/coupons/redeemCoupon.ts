@@ -21,7 +21,6 @@ import { TierName, computeMembershipExtension } from '../shared/grants';
 import { Grant, effectiveGrants, summariseGrants } from './grants';
 import { monitored } from '../shared/monitoring';
 
-const COIN_EXPIRATION_DAYS = 365;
 
 interface RedeemCouponRequest {
   code: string;
@@ -170,15 +169,12 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
             firstDurationDays ??= g.durationDays;
           } else if (g.kind === 'coins' && g.coinAmount) {
             const amount = g.coinAmount;
-            const expirationDate = new Date();
-            expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
             coinBatches.push({
               batchId: db.collection('temp').doc().id,
               initialCoins: amount,
               remainingCoins: amount,
               source: 'coupon',
               acquiredDate: now,
-              expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
             });
             runningBalance += amount;
             totalCoinsGranted += amount;

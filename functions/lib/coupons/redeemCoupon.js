@@ -55,7 +55,6 @@ const utils_1 = require("../shared/utils");
 const grants_1 = require("../shared/grants");
 const grants_2 = require("./grants");
 const monitoring_1 = require("../shared/monitoring");
-const COIN_EXPIRATION_DAYS = 365;
 exports.redeemCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 30 }, (0, monitoring_1.monitored)("redeemCoupon", async (request) => {
     var _a;
     if (!request.auth) {
@@ -161,15 +160,12 @@ exports.redeemCoupon = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 3
                 }
                 else if (g.kind === 'coins' && g.coinAmount) {
                     const amount = g.coinAmount;
-                    const expirationDate = new Date();
-                    expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
                     coinBatches.push({
                         batchId: utils_1.db.collection('temp').doc().id,
                         initialCoins: amount,
                         remainingCoins: amount,
                         source: 'coupon',
                         acquiredDate: now,
-                        expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
                     });
                     runningBalance += amount;
                     totalCoinsGranted += amount;

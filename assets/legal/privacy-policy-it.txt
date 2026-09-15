@@ -1,7 +1,7 @@
 INFORMATIVA SULLA PRIVACY DI GREENGO CHAT
 
-Ultimo Aggiornamento: 26 gennaio 2026
-Data di Entrata in Vigore: 26 gennaio 2026
+Ultimo Aggiornamento: 15 settembre 2026
+Data di Entrata in Vigore: 15 settembre 2026
 
 ================================================================================
 INTRODUZIONE
@@ -192,6 +192,17 @@ Potremmo raccogliere e trattare i seguenti dati personali sensibili con il vostr
 - Credenze religiose (se fornite volontariamente)
 - Informazioni sanitarie rilevanti per le relazioni (se divulgate volontariamente)
 - Dati biometrici (solo per la verifica dell'identita)
+- Dati del documento di identita (solo per la verifica dell'eta - vedere la Sezione 2.6)
+
+Non conserviamo le immagini utilizzate per la verifica dell'identita o dell'eta.
+La verifica facciale e la verifica dell'eta vengono elaborate e l'immagine di
+origine viene poi eliminata; viene conservato solo il risultato derivato.
+Vedere le Sezioni 2.6 e 8.1(e).
+
+La revoca del consenso alla verifica dell'eta rimuove lo stato di verificato e,
+con esso, la possibilita di pubblicare contenuti nelle Community. Non incide sul
+resto del vostro account.
+
 
 Avete il diritto di revocare il consenso al trattamento dei dati sensibili in qualsiasi momento.
 
@@ -265,6 +276,73 @@ Utenti iOS:
 3. Alcune funzionalita potrebbero essere limitate quando le autorizzazioni sono disabilitate
 
 Richiediamo solo le autorizzazioni necessarie per la funzionalita principale dell'app o per le funzionalita opzionali che scegliete di utilizzare. Non accediamo a nessun dato oltre a quanto necessario per gli scopi dichiarati.
+
+================================================================================
+2.6 DATI DI VERIFICA DELL'ETA
+================================================================================
+
+GreenGo e riservato agli adulti di eta pari o superiore a 18 anni. Ogni utente
+dichiara la propria data di nascita al momento della creazione dell'account e
+gli account che dichiarano un'eta inferiore a 18 anni vengono rifiutati.
+
+Inoltre, verifichiamo l'eta tramite un documento di identita in due situazioni:
+
+a) Quando accedete utilizzando SOLO un numero di telefono. Un numero di telefono
+   non stabilisce alcuna identita, quindi una data di nascita dichiarata dietro
+   di esso non e supportata da alcuna prova.
+
+b) Quando desiderate PUBBLICARE contenuti in una Community. Leggere e iscriversi
+   alle Community non richiede mai la verifica; solo la pubblicazione la
+   richiede, perche i contenuti pubblicati raggiungono altre persone.
+
+COSA ACCADE AL VOSTRO DOCUMENTO
+
+Il sistema e progettato per conservare il documento per secondi, non per giorni:
+
+1. Caricate la fotografia di un documento di identita in un'area di archiviazione
+   di sola scrittura. Non puo essere riletta - ne da voi, ne dal nostro personale.
+2. I nostri sistemi leggono automaticamente il documento tramite riconoscimento
+   ottico dei caratteri, per estrarre la data di nascita.
+3. L'immagine viene eliminata nella stessa operazione, sia che la verifica abbia
+   successo sia che fallisca. Nessun dipendente la visualizza e non esiste alcuna
+   interfaccia in grado di mostrarla.
+
+COSA CONSERVIAMO
+
+Solo quanto necessario a sostenere la decisione:
+
+- La data di nascita letta dal documento
+- Se corrispondeva alla data di nascita da voi dichiarata
+- Un hash crittografico unidirezionale (SHA-256) del numero del documento.
+  Questo ci permette di rilevare l'uso dello stesso documento per verificare due
+  account diversi. L'hash non puo essere invertito per risalire al numero.
+- L'esito, il punteggio di affidabilita automatico e - se un membro del personale
+  ha esaminato un caso dubbio - l'identificativo di tale revisore
+
+NON conserviamo: l'immagine, il vostro nome come stampato sul documento, il
+numero del documento in forma leggibile, la vostra nazionalita o la data di
+scadenza del documento.
+
+DOVE VIENE ELABORATO
+
+Il riconoscimento ottico dei caratteri e eseguito da Google Cloud Vision, che
+agisce come nostro responsabile del trattamento sulla base di un accordo sul
+trattamento dei dati. L'immagine viene trasmessa a tale servizio per
+l'elaborazione e non viene da esso conservata in seguito.
+
+BASE GIURIDICA
+
+- Consenso (LGPD Art. 7, I / GDPR Art. 6(1)(a)) per il trattamento del documento
+- Adempimento di un obbligo legale (LGPD Art. 7, II / GDPR Art. 6(1)(c)) e
+  legittimo interesse (LGPD Art. 7, IX / GDPR Art. 6(1)(f)) a impedire ai minori
+  di accedere a contenuti per adulti o di pubblicarli, e a soddisfare i requisiti
+  di verifica dell'eta degli store applicativi tramite cui GreenGo e distribuito
+
+Potete rifiutare la verifica. Il rifiuto comporta l'impossibilita di pubblicare
+nelle Community e, se il vostro account utilizza solo l'accesso telefonico, che
+alcune funzionalita restino non disponibili. Non comporta mai l'eliminazione del
+vostro account.
+
 
 ================================================================================
 3. COME RACCOGLIAMO LE INFORMAZIONI
@@ -411,6 +489,9 @@ Condividiamo dati con fornitori di servizi terzi che svolgono servizi per nostro
 - Fornitori di SMS (verifica e notifiche)
 - Servizi di moderazione dei contenuti (sicurezza)
 - Servizi di verifica dell'identita (prevenzione delle frodi)
+- Servizi di riconoscimento ottico dei caratteri (verifica dell'eta) - Google
+  Cloud Vision, che riceve l'immagine di un documento di identita, restituisce il
+  testo in essa contenuto e non conserva nulla in seguito
 
 Tutti i fornitori di servizi sono contrattualmente obbligati a proteggere i vostri dati e a utilizzarli solo per gli scopi specificati.
 
@@ -487,6 +568,48 @@ d) Dati di Sicurezza e Prevenzione delle Frodi
    - Log IP: 6 mesi
    - Dati sugli incidenti di sicurezza: 5 anni
    - Dati degli account bannati: A tempo indeterminato (per prevenire la ri-registrazione)
+
+e) Dati di Verifica dell'Eta e dell'Identita
+   - Immagini dei documenti: NON CONSERVATE. Eliminate durante la stessa
+     operazione che le legge, tipicamente entro pochi secondi dal caricamento.
+   - Data di nascita estratta, esito della corrispondenza, hash del numero del
+     documento ed esito: per la durata dell'account. Eliminati con l'account.
+
+f) Valuta Virtuale
+   - Le monete GreenGo non scadono e non sono soggette ad alcun periodo di
+     conservazione. Vedere i Termini e Condizioni.
+
+8.2 Processo di Eliminazione
+
+Potete eliminare il vostro account in qualsiasi momento dall'applicazione, nelle
+impostazioni del profilo. L'eliminazione e definitiva e non puo essere annullata.
+
+Quando eliminate il vostro account, un processo automatico rimuove:
+- Il vostro profilo, le fotografie, i video e le registrazioni vocali
+- I vostri dati di account e le impostazioni
+- Il saldo delle monete e i dati di abbonamento
+- Le iscrizioni alle Community, le partecipazioni agli eventi e le ricerche salvate
+- I dati di verifica dell'eta e dell'identita, incluso l'hash del numero del
+  documento e la data di nascita estratta
+- L'elenco degli utenti bloccati
+
+I messaggi che avete gia inviato ad altre persone vengono RESI ANONIMI anziche
+eliminati. Il vostro nome, la vostra fotografia e il vostro identificativo
+vengono sostituiti da un contrassegno "utente eliminato", cosicche il contenuto
+non sia piu riconducibile a voi. Lo facciamo perche eliminare del tutto quei
+messaggi altererebbe la conversazione di un'altra persona, cosa non necessaria
+per rimuovere da essa i vostri dati personali.
+
+Conserviamo un registro di eliminazione contenente la data e il numero di
+elementi rimossi. Non contiene dati personali ed esiste affinche possiamo
+rispondere a una futura domanda sull'avvenuta eliminazione.
+
+Inoltre:
+- Il vostro profilo smette immediatamente di essere visibile agli altri utenti
+- Le copie di backup vengono eliminate entro 90 giorni
+- Alcuni dati vengono conservati ove la legge lo richieda, principalmente i dati
+  finanziari e fiscali (vedere la Sezione 8.1(c)) e i dati soggetti a un obbligo
+  di conservazione legale
 
 ================================================================================
 9. SICUREZZA DEI DATI
