@@ -108,7 +108,10 @@ async function grantMembership(uid, requestedTier, durationMs) {
  * Independent of the tier system — a user may have BASE active and any tier active simultaneously.
  * Extends the existing baseMembershipEndDate if still in the future, otherwise starts from now.
  */
-async function grantBaseMembership(uid, durationMs, source = 'purchase') {
+async function grantBaseMembership(uid, durationMs, 
+// 'admin_grant' is the v4.0.0 replacement for coupon redemption: an admin
+// gives the entitlement directly, with nothing for the user to redeem.
+source = 'purchase') {
     const profileSnap = await utils_1.db.collection('profiles').doc(uid).get();
     const profileData = profileSnap.data() || {};
     const currentEndTimestamp = profileData.baseMembershipEndDate;
@@ -131,9 +134,9 @@ async function grantBaseMembership(uid, durationMs, source = 'purchase') {
     return { newEndDate, newEndTimestamp };
 }
 /**
- * Credits coins to a user's balance. Uses the embedded `coinBatches` array shape
- * that `processExpiredCoins` reads, so granted coins are subject to the normal
- * 365-day expiration rules.
+ * Credits coins to a user's balance, using the embedded `coinBatches` array
+ * shape the Flutter client parses. Granted coins never expire — see
+ * Guideline 3.1.1; the former 365-day sweep was removed in v4.0.0.
  *
  * `source` is one of: 'purchase' | 'reward' | 'allowance' | 'coupon' | 'membership_bonus'
  * `reason` is a free-text reason recorded on the coinTransactions doc.
@@ -141,7 +144,6 @@ async function grantBaseMembership(uid, durationMs, source = 'purchase') {
 async function grantCoins(uid, amount, source, reason, metadata = {}) {
     if (amount <= 0)
         return;
-    const COIN_EXPIRATION_DAYS = 365;
     await utils_1.db.runTransaction(async (transaction) => {
         const balanceRef = utils_1.db.collection('coinBalances').doc(uid);
         const balanceDoc = await transaction.get(balanceRef);
@@ -161,8 +163,6 @@ async function grantCoins(uid, amount, source, reason, metadata = {}) {
             coinBatches = data.coinBatches || [];
         }
         const now = admin.firestore.Timestamp.now();
-        const expirationDate = new Date();
-        expirationDate.setDate(expirationDate.getDate() + COIN_EXPIRATION_DAYS);
         const batchId = utils_1.db.collection('temp').doc().id;
         coinBatches.push({
             batchId,
@@ -170,7 +170,6 @@ async function grantCoins(uid, amount, source, reason, metadata = {}) {
             remainingCoins: amount,
             source,
             acquiredDate: now,
-            expirationDate: admin.firestore.Timestamp.fromDate(expirationDate),
         });
         transaction.set(balanceRef, {
             userId: uid,
