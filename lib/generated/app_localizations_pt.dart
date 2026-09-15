@@ -13982,6 +13982,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get ageVerifyNeededToPost => 'Verifica a idade para publicar';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Dúvidas, problemas ou denúncias — respondemos por email';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -27939,4 +27943,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get ageVerifyNeededToPost => 'Verifique sua idade para publicar';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Dúvidas, problemas ou denúncias — respondemos por e-mail';
 }

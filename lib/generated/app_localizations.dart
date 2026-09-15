@@ -24689,6 +24689,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Verify your age to post'**
   String get ageVerifyNeededToPost;
+
+  /// No description provided for @contactSupportSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions, problems or a report — we reply by email'**
+  String get contactSupportSubtitle;
 }
 
 class _AppLocalizationsDelegate

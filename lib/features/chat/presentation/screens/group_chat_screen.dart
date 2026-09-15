@@ -27,6 +27,7 @@ import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
+import '../../../safety/presentation/widgets/report_block_sheet.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/chat_constants.dart';
 import '../../domain/entities/message.dart';
@@ -811,9 +812,24 @@ class _GroupMessageBubble extends StatelessWidget {
     }
 
     final theme = Theme.of(context);
+    // Guideline 1.2: every surface carrying user-generated content needs a way
+    // to report it and to block its author. Group chat had neither — a
+    // long-press on someone else's message now offers both.
     return Align(
       alignment: isMine ? Alignment.centerRight : Alignment.centerLeft,
-      child: Container(
+      child: GestureDetector(
+        onLongPress: isMine
+            ? null
+            : () => showReportBlockSheet(
+                  context,
+                  reporterId: currentUserId,
+                  reportedUserId: message.senderId,
+                  reportedUserName:
+                      UserDirectoryService.instance.nameFor(message.senderId),
+                  surface: 'groupChat',
+                  contentId: message.messageId,
+                ),
+        child: Container(
         margin: const EdgeInsets.symmetric(vertical: 3),
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         constraints: BoxConstraints(
@@ -914,6 +930,7 @@ class _GroupMessageBubble extends StatelessWidget {
                         ?.language),
               ),
           ],
+        ),
         ),
       ),
     );
