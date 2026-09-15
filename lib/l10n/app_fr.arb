@@ -4117,5 +4117,14 @@
   "storefrontProfileImage": "Photo de profil",
   "storefrontProfileImageSubtitle": "Votre avatar, affiché à côté du nom de votre entreprise.",
   "storefrontAddProfileImage": "Ajouter une photo de profil",
-  "storefrontReplaceProfileImage": "Remplacer la photo de profil"
+  "storefrontReplaceProfileImage": "Remplacer la photo de profil",
+  "featureIncludedTitle": "CE QUI EST INCLUS",
+  "featureUnlimited": "Illimité",
+  "featureDailyConnects": "{count} nouvelles connexions chaque jour",
+  "featureMonthlyCoins": "{coins} pièces chaque mois",
+  "featureEvents": "{count} événements actifs en même temps",
+  "featureBoosts": "{count} boosts de profil par mois",
+  "featureDiscoveryReveals": "{count} profils révélés à la fois",
+  "featureTravelMode": "Mode voyage - découvrez des gens partout",
+  "featureWhoConnected": "Voyez qui s'est connecté avec vous"
 }

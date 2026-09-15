@@ -14038,6 +14038,44 @@ class AppLocalizationsPt extends AppLocalizations {
   String offerDurationDays(int count) {
     return '$count dias';
   }
+
+  @override
+  String get featureIncludedTitle => 'O QUE ESTÁ INCLUÍDO';
+
+  @override
+  String get featureUnlimited => 'Ilimitados';
+
+  @override
+  String featureDailyConnects(String count) {
+    return '$count novas ligações por dia';
+  }
+
+  @override
+  String featureMonthlyCoins(int coins) {
+    return '$coins moedas por mês';
+  }
+
+  @override
+  String featureEvents(String count) {
+    return '$count eventos a decorrer ao mesmo tempo';
+  }
+
+  @override
+  String featureBoosts(int count) {
+    return '$count destaques de perfil por mês';
+  }
+
+  @override
+  String featureDiscoveryReveals(int count) {
+    return '$count perfis visíveis de cada vez';
+  }
+
+  @override
+  String get featureTravelMode =>
+      'Modo viagem - descobre pessoas em qualquer lugar';
+
+  @override
+  String get featureWhoConnected => 'Vê quem se ligou a ti';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28078,4 +28116,42 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String offerDurationDays(int count) {
     return '$count dias';
   }
+
+  @override
+  String get featureIncludedTitle => 'O QUE ESTÁ INCLUÍDO';
+
+  @override
+  String get featureUnlimited => 'Ilimitados';
+
+  @override
+  String featureDailyConnects(String count) {
+    return '$count novas conexões por dia';
+  }
+
+  @override
+  String featureMonthlyCoins(int coins) {
+    return '$coins moedas por mês';
+  }
+
+  @override
+  String featureEvents(String count) {
+    return '$count eventos acontecendo ao mesmo tempo';
+  }
+
+  @override
+  String featureBoosts(int count) {
+    return '$count impulsos de perfil por mês';
+  }
+
+  @override
+  String featureDiscoveryReveals(int count) {
+    return '$count perfis revelados por vez';
+  }
+
+  @override
+  String get featureTravelMode =>
+      'Modo viagem - descubra pessoas em qualquer lugar';
+
+  @override
+  String get featureWhoConnected => 'Veja quem se conectou com você';
 }

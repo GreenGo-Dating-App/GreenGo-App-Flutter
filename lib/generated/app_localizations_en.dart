@@ -13902,4 +13902,41 @@ class AppLocalizationsEn extends AppLocalizations {
   String offerDurationDays(int count) {
     return '$count days';
   }
+
+  @override
+  String get featureIncludedTitle => 'WHAT\'S INCLUDED';
+
+  @override
+  String get featureUnlimited => 'Unlimited';
+
+  @override
+  String featureDailyConnects(String count) {
+    return '$count new connections every day';
+  }
+
+  @override
+  String featureMonthlyCoins(int coins) {
+    return '$coins coins every month';
+  }
+
+  @override
+  String featureEvents(String count) {
+    return '$count events running at once';
+  }
+
+  @override
+  String featureBoosts(int count) {
+    return '$count profile boosts a month';
+  }
+
+  @override
+  String featureDiscoveryReveals(int count) {
+    return '$count profiles revealed at a time';
+  }
+
+  @override
+  String get featureTravelMode => 'Travel mode - discover people anywhere';
+
+  @override
+  String get featureWhoConnected => 'See who connected with you';
 }

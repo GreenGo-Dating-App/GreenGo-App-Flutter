@@ -36,6 +36,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
   /// not re-ask the server or re-show the dialog.
   final Set<String> _offersChecked = <String>{};
   bool _checkingOffer = false;
+  /// The in-flight blur lookup, so registration can wait for it instead of
+  /// racing it and letting the dialog land on the next screen.
+  Future<void>? _pendingOffer;
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
   bool _obscurePassword = true;
@@ -62,7 +65,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   /// entitled to and say so before the user commits to registering.
   void _onEmailFocusChange() {
     if (_emailFocus.hasFocus) return;
-    unawaited(_maybeShowOffer());
+    _pendingOffer = _maybeShowOffer();
   }
 
   Future<void> _maybeShowOffer() async {
@@ -77,6 +80,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
     try {
       final offer = await const PreRegistrationOfferService().lookup(email);
       if (offer == null || !mounted) return;
+      // Only announce it while Create Account is still the screen on top.
+      //
+      // Tapping Register BLURS the email field, which starts this lookup, and
+      // registration then navigates away while it is still in flight - so the
+      // dialog used to appear over the first step of the onboarding wizard,
+      // which is not where a message about signing up belongs. _handleRegister
+      // now awaits this before registering, and this guard catches every other
+      // way the screen can change underneath an in-flight lookup.
+      if (ModalRoute.of(context)?.isCurrent != true) return;
       await showPreRegistrationOfferDialog(context, offer);
     } finally {
       _checkingOffer = false;
@@ -107,9 +119,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
       return;
     }
 
-    // A user can fill the form and submit without the email field ever losing
-    // focus (autofill, or Enter straight from the keyboard). Make sure they
-    // still see what they are entitled to before the account is created.
+    // Settle the offer BEFORE the account is created, so it is always shown on
+    // this screen and never over the onboarding wizard.
+    //
+    // Two paths reach here: the field was blurred (a lookup is already in
+    // flight - wait for it), or it never was, because the user autofilled or
+    // pressed Enter (no lookup has run - start one now). Both end with the
+    // dialog dismissed before registration proceeds.
+    await (_pendingOffer ?? Future<void>.value());
+    if (!mounted) return;
     await _maybeShowOffer();
     if (!mounted) return;
 

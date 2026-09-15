@@ -4698,5 +4698,14 @@
   "storefrontProfileImage": "Profilbild",
   "storefrontProfileImageSubtitle": "Dein Avatar, der neben deinem Firmennamen angezeigt wird.",
   "storefrontAddProfileImage": "Profilbild hinzufügen",
-  "storefrontReplaceProfileImage": "Profilbild ersetzen"
+  "storefrontReplaceProfileImage": "Profilbild ersetzen",
+  "featureIncludedTitle": "WAS ENTHALTEN IST",
+  "featureUnlimited": "Unbegrenzt",
+  "featureDailyConnects": "{count} neue Kontakte pro Tag",
+  "featureMonthlyCoins": "{coins} Münzen pro Monat",
+  "featureEvents": "{count} gleichzeitig laufende Events",
+  "featureBoosts": "{count} Profil-Boosts pro Monat",
+  "featureDiscoveryReveals": "{count} Profile auf einmal sichtbar",
+  "featureTravelMode": "Reisemodus - entdecke Menschen überall",
+  "featureWhoConnected": "Sieh, wer sich mit dir verbunden hat"
 }
