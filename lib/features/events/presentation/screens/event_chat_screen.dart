@@ -9,6 +9,7 @@ import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../safety/presentation/widgets/report_block_sheet.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/data/chat_constants.dart';
 import '../../data/datasources/events_remote_datasource.dart';
@@ -292,7 +293,22 @@ class _EventChatScreenState extends State<EventChatScreen> {
         ),
       );
     }
-    return Padding(
+    // Guideline 1.2: event chat is user-generated content, so it needs the
+    // same report-and-block affordance as every other message surface.
+    // Blocking already filters this list (`_blockedIds`); reporting did not
+    // exist here at all.
+    return GestureDetector(
+      onLongPress: isMe
+          ? null
+          : () => showReportBlockSheet(
+                context,
+                reporterId: widget.currentUserId,
+                reportedUserId: message.senderId,
+                reportedUserName: _senderName(message),
+                surface: 'eventChat:${widget.event.id}',
+                contentId: message.id,
+              ),
+      child: Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Row(
         mainAxisAlignment:
@@ -375,6 +391,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
           ),
           if (isMe) const SizedBox(width: 8),
         ],
+      ),
       ),
     );
   }

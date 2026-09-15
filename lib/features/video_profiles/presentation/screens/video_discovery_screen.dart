@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../../../core/services/user_directory_service.dart';
+import '../../../safety/presentation/widgets/report_block_sheet.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:video_player/video_player.dart';
@@ -173,6 +176,24 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
     }
   }
 
+  /// Reports (or blocks) the author of [video].
+  ///
+  /// The reporter is read from FirebaseAuth rather than threaded through the
+  /// widget tree: this screen had no notion of "who is watching" at all, which
+  /// is part of why it shipped without a report button.
+  void _reportVideo(BuildContext context, VideoProfile video) {
+    final me = FirebaseAuth.instance.currentUser?.uid;
+    if (me == null || me == video.userId) return;
+    showReportBlockSheet(
+      context,
+      reporterId: me,
+      reportedUserId: video.userId,
+      reportedUserName: UserDirectoryService.instance.nameFor(video.userId),
+      surface: 'videoProfile',
+      contentId: video.userId,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -280,6 +301,7 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
                   controller: _controllers[index],
                   onLike: _onLike,
                   onPass: _onPass,
+                  onReport: (ctx) => _reportVideo(ctx, videos[index]),
                 );
               },
             );
@@ -300,9 +322,12 @@ class _VideoPage extends StatelessWidget {
 
   const _VideoPage({
     required this.videoProfile,
-    required this.onLike, required this.onPass, this.controller,
+    required this.onLike, required this.onPass, required this.onReport,
+    this.controller,
   });
   final VideoProfile videoProfile;
+  /// Opens the shared report/block sheet for this video's author.
+  final void Function(BuildContext) onReport;
   final VideoPlayerController? controller;
   final VoidCallback onLike;
   final VoidCallback onPass;
@@ -464,6 +489,17 @@ class _VideoPage extends StatelessWidget {
                   label: 'Pass',
                   color: AppColors.textTertiary,
                   onTap: onPass,
+                ),
+                const SizedBox(height: 20),
+                // Report / block. Guideline 1.2 requires both on every surface
+                // that shows user-generated content, and a stranger's video is
+                // about as user-generated as it gets. This column was Like,
+                // Pass and Mute only.
+                _ActionButton(
+                  icon: Icons.flag_outlined,
+                  label: 'Report',
+                  color: AppColors.textTertiary,
+                  onTap: () => onReport(context),
                 ),
                 const SizedBox(height: 20),
                 // Mute/unmute button

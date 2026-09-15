@@ -487,15 +487,6 @@ class _TierConfigEditor extends StatelessWidget {
             config.rules.copyWith(canSeeProfileVisitors: value),
           ),
         ),
-        _FeatureToggle(
-          label: l10n.adminVideoChat,
-          description: l10n.adminUseVideoCallingFeature,
-          value: config.rules.canUseVideoChat,
-          icon: Icons.videocam,
-          onChanged: (value) => _updateRules(
-            config.rules.copyWith(canUseVideoChat: value),
-          ),
-        ),
       ],
     );
   }
@@ -795,7 +786,6 @@ extension MembershipRulesCopyWith on MembershipRules {
     bool? canUseIncognitoMode,
     int? matchPriority,
     bool? canSeeProfileVisitors,
-    bool? canUseVideoChat,
     String? badgeIcon,
   }) {
     return MembershipRules(
@@ -812,7 +802,6 @@ extension MembershipRulesCopyWith on MembershipRules {
       canUseIncognitoMode: canUseIncognitoMode ?? this.canUseIncognitoMode,
       matchPriority: matchPriority ?? this.matchPriority,
       canSeeProfileVisitors: canSeeProfileVisitors ?? this.canSeeProfileVisitors,
-      canUseVideoChat: canUseVideoChat ?? this.canUseVideoChat,
       badgeIcon: badgeIcon ?? this.badgeIcon,
     );
   }

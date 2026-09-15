@@ -1,7 +1,7 @@
 GREENGO CHAT TERMS AND CONDITIONS
 
-Last Updated: January 26, 2026
-Effective Date: January 26, 2026
+Last Updated: September 15, 2026
+Effective Date: September 15, 2026
 
 ================================================================================
 INTRODUCTION
@@ -106,8 +106,29 @@ You may not create an account if:
 - You are prohibited by law from using dating services
 - You are currently married (unless legally separated) and seek extramarital relationships
 
-2.5 Verification
-We reserve the right to verify your age and identity at any time. Failure to comply with verification requests may result in account suspension or termination.
+2.5 Age Verification
+You state your date of birth when you create an account. In addition, we verify
+age using an identity document in two situations:
+
+a) If you sign in using only a telephone number, because a phone number
+   establishes no identity.
+b) If you wish to publish content in a Community. Reading and joining a
+   Community never require verification; only publishing does.
+
+Verification is carried out automatically: the document is read for its date of
+birth and the image is deleted in the same operation. We never store it. Our
+Privacy Policy, Section 2.6, describes this in full.
+
+You may decline verification. Declining means you cannot publish in Communities
+and, if your account uses phone sign-in only, that certain features remain
+unavailable. It does not result in your account being deleted.
+
+Providing a document that is not yours, or that has already been used to verify
+another account, is a breach of these Terms and may result in suspension.
+
+2.6 Other Verification
+We reserve the right to verify your identity at any time. Failure to comply with
+a verification request may result in account suspension or termination.
 
 ================================================================================
 3. ACCOUNT REGISTRATION
@@ -510,7 +531,6 @@ Matched users may communicate through:
 - Text messages
 - Photo sharing
 - Voice messages (premium feature)
-- Video calls (premium feature)
 
 14.4 Message Retention
 Messages are retained in accordance with our Privacy Policy. We may access messages to:
@@ -523,11 +543,19 @@ Messages are retained in accordance with our Privacy Policy. We may access messa
 ================================================================================
 
 15.1 Virtual Currency
-We may offer virtual currency ("Coins" or "Credits") that can be used to purchase premium features. Virtual currency:
-- Has no cash value
+We offer virtual currency ("GreenGo Coins" or "Coins") that can be used to
+obtain premium features. Coins:
+- Have no cash value
 - Cannot be exchanged for real money
-- Is non-transferable between accounts
-- May expire if unused
+- DO NOT EXPIRE. Coins you have purchased or earned remain available for as
+  long as your account exists. Any previous expiry period no longer applies,
+  and coins removed under it have been restored.
+- Are not transferable between accounts, except through the in-app gift feature
+  where that feature is available
+
+Coins are consumed when you use them for a paid feature. Purchases of coins are
+processed through the application store you installed GreenGo from, and are
+subject to that store refund policy as well as Section 8 of these Terms.
 
 15.2 Boosts and Super Likes
 Premium features like Boosts and Super Likes:
@@ -536,7 +564,24 @@ Premium features like Boosts and Super Likes:
 - Do not guarantee any specific results
 - Are subject to availability
 
-15.3 Feature Availability
+15.3 Promotional Grants
+We may give memberships, base membership periods or Coins to users directly -
+for example to partners, to members of the press, as an apology for a service
+problem, or as part of a promotion.
+
+Where we do so:
+- The entitlement is applied to your account by us. There is nothing for you to
+  redeem, and the application contains no field for entering a code.
+- You are notified in the application when it happens.
+- A granted entitlement never reduces one you already hold. If you hold a
+  higher membership tier than the one granted, you keep the higher tier.
+- Granted entitlements have no cash value and are not refundable.
+
+Any promotional code we may issue through an application store (for example an
+App Store offer code) is redeemed in that store, not in GreenGo, and is subject
+to the store terms.
+
+15.4 Feature Availability
 Premium features may vary by:
 - Geographic location
 - Device type

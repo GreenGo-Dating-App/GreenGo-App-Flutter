@@ -4,6 +4,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/e2e_keys.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/constants/app_strings.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
@@ -269,6 +270,7 @@ class _LoginScreenState extends State<LoginScreen>
                                   children: [
                                     // Email / Nickname Field (login accepts either)
                                     AuthTextField(
+                                      fieldKey: E2EKeys.loginEmail,
                                       controller: _emailController,
                                       label: l10n.loginEmailOrNickname,
                                       keyboardType: TextInputType.emailAddress,
@@ -288,6 +290,7 @@ class _LoginScreenState extends State<LoginScreen>
 
                                     // Password Field
                                     AuthTextField(
+                                      fieldKey: E2EKeys.loginPassword,
                                       controller: _passwordController,
                                       label: l10n.password,
                                       obscureText: _obscurePassword,
@@ -347,6 +350,7 @@ class _LoginScreenState extends State<LoginScreen>
 
                                     // Login Button
                                     AuthButton(
+                                      key: E2EKeys.loginSubmit,
                                       text: l10n.login,
                                       onPressed:
                                           isLoading ? null : _handleLogin,

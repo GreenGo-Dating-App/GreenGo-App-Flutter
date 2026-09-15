@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 import '../../features/membership/domain/entities/membership.dart';
 
@@ -138,7 +139,27 @@ class SubscriptionExpiryService {
   /// Grant 1 bonus month on official release to users with active memberships.
   /// Called once per user when they first open the app after the release date.
   /// Stores a flag so it only applies once.
+  ///
+  /// The grant itself runs server-side in the `claimReleaseBonus` callable.
+  /// It used to be computed and written here, which only worked because the
+  /// profile rules let a user write their own `membershipEndDate` - the same
+  /// permission that let anyone award themselves Platinum. The rules no longer
+  /// allow it, and a client should not be deciding its own entitlements
+  /// anyway.
   Future<void> grantReleaseBonusMonth(String userId) async {
+    try {
+      await FirebaseFunctions.instance
+          .httpsCallable('claimReleaseBonus')
+          .call<dynamic>();
+    } catch (e) {
+      // Best effort: a missed bonus is not worth interrupting app start.
+      debugPrint('[ReleaseBonus] claim failed: $e');
+    }
+  }
+
+  /// Superseded by [grantReleaseBonusMonth]; kept only so the old body is not
+  /// silently lost in review. Not called.
+  Future<void> _legacyGrantReleaseBonusMonth(String userId) async {
     try {
       final userDoc = await _firestore.collection('users').doc(userId).get();
       if (!userDoc.exists) return;

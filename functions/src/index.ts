@@ -246,8 +246,6 @@ export {
   verifyGooglePlayCoinPurchase,
   verifyAppStoreCoinPurchase,
   grantMonthlyAllowances,
-  processExpiredCoins,
-  sendExpirationWarnings,
   claimReward,
   giftCoins,
   declineGift,
@@ -255,7 +253,6 @@ export {
 
 // Coupon Redemption + Admin Management
 export { redeemCoupon } from './coupons/redeemCoupon';
-export { validateCoupon } from './coupons/validateCoupon';
 export { redeemReferral } from './referral/redeemReferral';
 export {
   upsertCoupon,
@@ -336,6 +333,31 @@ export {
   verifyIDDocument,
   calculateTrustScore,
 } from './safety/identityVerification';
+
+// Age Assurance Functions (Guidelines 2.3.6, 1.2.1, 4.7.5)
+// Declared age for everyone; document verification on top; mandatory for
+// phone-auth accounts; required to publish in Communities.
+export {
+  getAgeVerificationState,
+  submitAgeDocument,
+  reviewAgeVerification,
+  backfillDeclaredAge,
+} from './safety/ageAssurance';
+
+// Account deletion cascade (Guideline 5.1.1(v), GDPR Art. 17)
+// Fires on auth deletion however it is triggered — app, admin panel, console.
+export { onUserDeletedCleanup } from './auth/deleteUserData';
+
+// Release bonus. Moved off the client when the profile rules stopped
+// allowing users to write their own entitlement fields.
+export { claimReleaseBonus } from './subscription/claimReleaseBonus';
+
+// Direct entitlement grants — the Guideline 3.1.1-safe replacement for coupon
+// codes. An admin gives the entitlement; the user redeems nothing.
+export {
+  grantEntitlement,
+  listEntitlementGrants,
+} from './admin/grantEntitlement';
 
 // Admin Panel Functions
 export {
@@ -437,44 +459,8 @@ export {
   sendBrevoStreakReminder,
 } from './notifications/brevoEmailService';
 
-// Video Calling Functions
-export {
-  initiateVideoCall,
-  answerVideoCall,
-  endVideoCall,
-  handleCallSignal,
-  updateCallQuality,
-  startCallRecording,
-} from './video_calling/videoCalling';
 
-// Video Call Features Functions
-export {
-  enableVirtualBackground,
-  applyARFilter,
-  toggleBeautyMode,
-  enablePictureInPicture,
-  startScreenSharing,
-  stopScreenSharing,
-  toggleNoiseSuppression,
-  toggleEchoCancellation,
-  sendInCallReaction,
-  uploadCustomBackground,
-  getCallHistory,
-  getCallStatistics,
-  cleanupExpiredReactions,
-} from './video_calling/videoCallFeatures';
 
-// Group Video Call Functions
-export {
-  createGroupVideoCall,
-  joinGroupVideoCall,
-  leaveGroupVideoCall,
-  manageGroupParticipant,
-  changeGroupCallLayout,
-  createBreakoutRoom,
-  joinBreakoutRoom,
-  closeBreakoutRoom,
-} from './video_calling/groupVideoCalls';
 
 // Security Audit Functions
 export {

@@ -62,8 +62,6 @@ import '../../../gamification/presentation/widgets/achievement_unlock_dialog.dar
 import '../../../gamification/presentation/widgets/level_up_celebration_dialog.dart';
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
-import '../../../membership/data/datasources/pending_signup_coupon.dart';
-import '../../../referral/data/pending_signup_referral.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../safety/presentation/screens/community_guidelines_screen.dart';
 import '../../../notifications/presentation/bloc/notifications_bloc.dart';
@@ -209,7 +207,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     PushNotificationService.currentUserId = widget.userId;
     // Now that a user is attached, fetch and store this device's FCM
     // token. Nothing did this before, so web/PWA never registered at all.
-    unawaited(di.sl<PushNotificationService>().ensureTokenRegistered());
+    //
+    // Use the library's own global singleton — the same instance main() calls
+    // initialize() on. PushNotificationService is NOT a GetIt registration, so
+    // resolving it through di.sl<>() threw synchronously here in initState and
+    // took the whole post-login subtree down to a blank ErrorWidget.
+    unawaited(pushNotificationService.ensureTokenRegistered());
 
     // Warm the Firestore cache for the heaviest first-load queries up-front so
     // tabs render instantly from cache (persistence is enabled). Network/profile
@@ -223,15 +226,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // the datasource) when the user gets there. Uses the IDENTICAL preferences
     // object Explore uses so the cache key matches. Best-effort, never throws.
     _warmDiscoveryStack();
-
-    // Safety net: redeem a signup coupon that was captured at registration but
-    // not yet applied (e.g. app killed right after onboarding completed). Safe
-    // here because a completed profile guarantees welcome coins already exist,
-    // so the coupon's coin batch appends rather than clobbers. No-ops when
-    // nothing is pending.
-    SignupCouponService().tryRedeemPending(widget.userId);
-    // Same idempotent launch-time retry for a pending referral code.
-    PendingSignupReferral.tryRedeemPending(widget.userId);
 
     // Initialize access control service and load countdown dates from Firestore
     _accessControlService = AccessControlService();

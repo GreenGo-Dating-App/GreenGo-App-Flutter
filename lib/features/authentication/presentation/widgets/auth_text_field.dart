@@ -18,6 +18,7 @@ class AuthTextField extends StatelessWidget {
     this.onChanged,
     this.onSubmitted,
     this.textCapitalization = TextCapitalization.none,
+    this.fieldKey,
   });
   final TextEditingController controller;
   final String label;
@@ -34,9 +35,15 @@ class AuthTextField extends StatelessWidget {
   final Function(String)? onSubmitted;
   final TextCapitalization textCapitalization;
 
+  /// Key placed on the inner [TextFormField] rather than on this wrapper, so
+  /// `tester.enterText(find.byKey(...))` resolves to the editable itself.
+  /// Used by the end-to-end suites; has no effect at runtime.
+  final Key? fieldKey;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      key: fieldKey,
       controller: controller,
       obscureText: obscureText,
       keyboardType: keyboardType,

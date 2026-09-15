@@ -1,7 +1,7 @@
 POLITICA DE PRIVACIDADE DO GREENGO CHAT
 
-Ultima Atualizacao: 26 de janeiro de 2026
-Data de Vigencia: 26 de janeiro de 2026
+Ultima Atualizacao: 15 de setembro de 2026
+Data de Vigencia: 15 de setembro de 2026
 
 ================================================================================
 INTRODUCAO
@@ -192,6 +192,17 @@ Podemos coletar e processar os seguintes dados pessoais sensiveis com seu consen
 - Crencas religiosas (se fornecidas voluntariamente)
 - Informacoes de saude relevantes para relacionamentos (se divulgadas voluntariamente)
 - Dados biometricos (apenas para verificacao de identidade)
+- Dados do documento de identidade (apenas para verificacao de idade - ver a Secao 2.6)
+
+Nao armazenamos as imagens utilizadas para a verificacao de identidade ou de
+idade. A verificacao facial e a verificacao de idade sao processadas e a imagem
+de origem e entao excluida; apenas o resultado derivado e mantido. Ver as Secoes
+2.6 e 8.1(g).
+
+Retirar o consentimento para a verificacao de idade remove seu status de
+verificado e, com ele, a possibilidade de publicar conteudo nas Comunidades. Nao
+afeta o restante da sua conta.
+
 
 Voce tem o direito de revogar o consentimento para o tratamento de dados sensiveis a qualquer momento.
 
@@ -265,6 +276,74 @@ Usuarios iOS:
 3. Alguns recursos podem ser limitados quando permissoes sao desabilitadas
 
 Solicitamos apenas permissoes necessarias para a funcionalidade principal do aplicativo ou recursos opcionais que voce escolhe usar. Nao acessamos nenhum dado alem do necessario para os propositos declarados.
+
+================================================================================
+2.6 DADOS DE VERIFICACAO DE IDADE
+================================================================================
+
+O GreenGo e destinado a adultos com 18 anos ou mais. Cada usuario declara sua
+data de nascimento ao criar uma conta, e as contas que declaram idade inferior a
+18 anos sao recusadas.
+
+Alem disso, verificamos a idade por meio de um documento de identidade em duas
+situacoes:
+
+a) Quando voce entra usando APENAS um numero de telefone. Um numero de telefone
+   nao estabelece identidade alguma, portanto uma data de nascimento declarada
+   por tras dele nao tem qualquer respaldo.
+
+b) Quando voce deseja PUBLICAR conteudo em uma Comunidade. Ler e participar de
+   Comunidades nunca exige verificacao; apenas publicar exige, porque o conteudo
+   publicado alcanca outras pessoas.
+
+O QUE ACONTECE COM SEU DOCUMENTO
+
+O sistema foi projetado para guardar seu documento por segundos, nao por dias:
+
+1. Voce envia uma fotografia de um documento de identidade para um local de
+   armazenamento somente de escrita. Ele nao pode ser lido de volta - nem por
+   voce, nem por nossa equipe.
+2. Nossos sistemas leem o documento automaticamente por reconhecimento otico de
+   caracteres, para extrair a data de nascimento.
+3. A imagem e excluida na mesma operacao, tenha a verificacao sido bem-sucedida
+   ou nao. Nenhum funcionario a visualiza, e nao existe interface capaz de
+   exibi-la.
+
+O QUE MANTEMOS
+
+Apenas o necessario para sustentar a decisao:
+
+- A data de nascimento lida no documento
+- Se ela correspondia a data de nascimento que voce declarou
+- Um hash criptografico unidirecional (SHA-256) do numero do documento. Isso nos
+  permite detectar o uso do mesmo documento para verificar duas contas
+  diferentes. O hash nao pode ser revertido para recuperar o numero.
+- O resultado, a pontuacao de confianca automatica e - se um membro da equipe
+  revisou um caso limitrofe - o identificador desse revisor
+
+NAO mantemos: a imagem, seu nome como impresso no documento, o numero do
+documento em forma legivel, sua nacionalidade ou a data de validade do documento.
+
+ONDE E PROCESSADO
+
+O reconhecimento otico de caracteres e realizado pelo Google Cloud Vision, que
+atua como nosso operador sob um acordo de tratamento de dados. A imagem e
+transmitida a esse servico para processamento e nao e por ele retida depois.
+
+BASE LEGAL
+
+- Consentimento (LGPD Art. 7, I / GDPR Art. 6(1)(a)) para o tratamento do
+  documento
+- Cumprimento de obrigacao legal (LGPD Art. 7, II / GDPR Art. 6(1)(c)) e
+  legitimo interesse (LGPD Art. 7, IX / GDPR Art. 6(1)(f)) em impedir que menores
+  acessem ou publiquem conteudo adulto, e em atender aos requisitos de
+  verificacao de idade das lojas de aplicativos pelas quais o GreenGo e
+  distribuido
+
+Voce pode recusar a verificacao. Recusar significa que voce nao podera publicar
+em Comunidades e, se sua conta usar apenas login por telefone, que determinados
+recursos permanecerao indisponiveis. Isso nunca resulta na exclusao da sua conta.
+
 
 ================================================================================
 3. COMO COLETAMOS INFORMACOES
@@ -411,6 +490,9 @@ Compartilhamos dados com prestadores de servicos terceirizados que realizam serv
 - Provedores de SMS (verificacao e notificacoes)
 - Servicos de moderacao de conteudo (seguranca)
 - Servicos de verificacao de identidade (prevencao de fraudes)
+- Servicos de reconhecimento otico de caracteres (verificacao de idade) - Google
+  Cloud Vision, que recebe a imagem de um documento de identidade, retorna o
+  texto encontrado nela e nao retem nada depois
 
 Todos os prestadores de servicos sao contratualmente obrigados a proteger seus dados e usa-los apenas para fins especificados.
 
@@ -503,13 +585,47 @@ f) Dados de Analise
    - Analises agregadas: Indefinidamente (anonimizadas)
    - Registros de uso individual: 2 anos
 
+g) Dados de Verificacao de Idade e Identidade
+   - Imagens de documentos: NAO RETIDAS. Excluidas durante a mesma operacao que
+     as le, normalmente poucos segundos apos o envio.
+   - Data de nascimento extraida, resultado da correspondencia, hash do numero do
+     documento e resultado: durante a existencia da conta. Excluidos com a conta.
+
+h) Moeda Virtual
+   - As moedas GreenGo nao expiram e nao estao sujeitas a qualquer periodo de
+     retencao. Ver os Termos e Condicoes.
+
 8.2 Processo de Exclusao
 
-Apos solicitacao de exclusao de conta:
-- Seu perfil e imediatamente ocultado de outros usuarios
-- Seus dados sao excluidos ou anonimizados dentro de 30 dias
-- Copias de backup sao eliminadas dentro de 90 dias
-- Certos dados podem ser retidos para conformidade legal
+Voce pode excluir sua conta a qualquer momento no aplicativo, nas configuracoes
+do perfil. A exclusao e permanente e nao pode ser desfeita.
+
+Quando voce exclui sua conta, um processo automatico remove:
+- Seu perfil, fotografias, videos e gravacoes de voz
+- Seus registros de conta e configuracoes
+- Seu saldo de moedas e registros de assinatura
+- Suas participacoes em Comunidades, presencas em eventos e buscas salvas
+- Seus registros de verificacao de idade e identidade, incluindo o hash do numero
+  do documento e a data de nascimento extraida
+- Sua lista de usuarios bloqueados
+
+As mensagens que voce ja enviou a outra pessoa sao ANONIMIZADAS em vez de
+excluidas. Seu nome, sua foto e seu identificador de conta sao substituidos por
+uma marca de "usuario excluido", de modo que o conteudo nao possa mais ser
+associado a voce. Fazemos isso porque excluir essas mensagens alteraria o
+registro que outra pessoa mantem de uma conversa da qual participou, o que nao e
+necessario para remover dela seus dados pessoais.
+
+Mantemos um registro de exclusao com a data e o numero de itens removidos. Ele
+nao contem dados pessoais e existe para que possamos responder posteriormente a
+uma pergunta sobre se a exclusao ocorreu.
+
+Alem disso:
+- Seu perfil deixa de ser visivel para outros usuarios imediatamente
+- As copias de backup sao eliminadas em ate 90 dias
+- Determinados registros sao mantidos quando a lei exige, principalmente
+  registros financeiros e fiscais (ver a Secao 8.1(c)) e dados sujeitos a
+  obrigacao legal de retencao
 
 8.3 Excecoes a Exclusao
 

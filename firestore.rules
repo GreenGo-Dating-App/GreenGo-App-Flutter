@@ -28,6 +28,16 @@ service cloud.firestore {
              exists(/databases/$(database)/documents/admin_users/$(request.auth.uid));
     }
 
+    // Only a superAdmin may change who is an admin. Membership of admin_users
+    // alone is not enough: a moderator could otherwise rewrite their own
+    // document to superAdmin and award themselves manageAdmins,
+    // impersonateUsers, deleteUsers and systemSettings.
+    function isSuperAdmin() {
+      return isAdminPanelUser() &&
+             get(/databases/$(database)/documents/admin_users/$(request.auth.uid))
+               .data.get('role', '') == 'superAdmin';
+    }
+
     // Check if the acting user is a profile-level admin (profiles/{uid}.isAdmin).
     // Used by the in-app admin tools (e.g. business-verification review) which
     // gate on the Profile.isAdmin flag rather than the admin panel collections.
@@ -101,7 +111,16 @@ service cloud.firestore {
       // Anyone signed in can read profiles (for discovery/matching)
       allow read: if isSignedIn();
       // Users can create/update/delete their own profile; admins can update (verification, moderation)
-      allow create: if isOwner(profileId);
+      // A profile may be CREATED only without privileged flags. Without this,
+      // `delete` + `create` was a trivial way to self-grant them: the update
+      // rule below guards each flag against its previous value, but a
+      // recreated document has no previous value to guard against.
+      allow create: if isOwner(profileId)
+        && request.resource.data.get('isAdmin', false) == false
+        && request.resource.data.get('isBanned', false) == false
+        && request.resource.data.get('isBusinessVerified', false) == false
+        && request.resource.data.get('businessVerified', false) == false
+        && request.resource.data.get('isAgeVerified', false) == false;
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
@@ -119,7 +138,40 @@ service cloud.firestore {
               && request.resource.data.get('isBusinessVerified', false)
                  == resource.data.get('isBusinessVerified', false)
               && request.resource.data.get('businessVerified', false)
-                 == resource.data.get('businessVerified', false))
+                 == resource.data.get('businessVerified', false)
+              // Age assurance is decided by `submitAgeDocument` /
+              // `reviewAgeVerification` running with admin credentials, which
+              // bypass these rules. A user must never be able to mark
+              // themselves age-verified and unlock community publishing.
+              && request.resource.data.get('isAgeVerified', false)
+                 == resource.data.get('isAgeVerified', false)
+              && request.resource.data.get('ageVerification', {})
+                 == resource.data.get('ageVerification', {})
+              // ENTITLEMENTS. TierGate.resolveTier() reads
+              // profiles/{uid}.membershipTier to decide every paid feature, so
+              // a writable tier is a free subscription for anyone who opens a
+              // Firestore console. These are set by the purchase-verification
+              // callables and grantEntitlement, which run on the Admin SDK and
+              // bypass rules.
+              //
+              // The one client write allowed is a DOWNGRADE to FREE: the
+              // expiry self-heal in subscription_expiry_service performs it,
+              // and nobody can profit from taking entitlements away from
+              // themselves.
+              && (request.resource.data.get('membershipTier', 'FREE')
+                    == resource.data.get('membershipTier', 'FREE')
+                  || request.resource.data.get('membershipTier', 'FREE') == 'FREE'
+                  || request.resource.data.get('membershipTier', 'FREE') == 'free')
+              && (request.resource.data.get('membershipEndDate', null)
+                    == resource.data.get('membershipEndDate', null)
+                  || request.resource.data.get('membershipTier', 'FREE') == 'FREE'
+                  || request.resource.data.get('membershipTier', 'FREE') == 'free')
+              // Base membership is the same kind of entitlement and nothing on
+              // the client writes it, so it is simply immutable here.
+              && request.resource.data.get('hasBaseMembership', false)
+                 == resource.data.get('hasBaseMembership', false)
+              && request.resource.data.get('baseMembershipEndDate', null)
+                 == resource.data.get('baseMembershipEndDate', null))
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
@@ -436,13 +488,25 @@ service cloud.firestore {
     // ============================================================================
     match /coinBalances/{userId} {
       allow read: if isSignedIn();
-      allow create: if isSignedIn();
+      // Create is the welcome grant in onboarding_bloc._grantWelcomeCoins, and
+      // nothing else. Bound to the owner (it was any signed-in user, so one
+      // account could pre-create another's balance) and capped, so a fresh
+      // account cannot be born rich.
+      allow create: if isOwner(userId)
+        && request.resource.data.get('totalCoins', 0) <= 100;
       // Owner may update ONLY their OWN balance. Crediting ANOTHER user (gift
       // send, gift-decline refund) is done server-side by the giftCoins /
       // declineGift callables (Admin SDK), so the client never needs to write
       // another user's balance — closing the coin-forgery hole where any user
       // could inflate anyone's totalCoins.
-      allow update: if isOwner(userId);
+      // Spending is still a client write, so updates stay open to the owner -
+      // but ONLY downwards. A balance that never increases from the client
+      // makes forgery impossible while leaving debits alone. Every legitimate
+      // credit (verified purchase, gift, admin grant, reward) already runs on
+      // the Admin SDK, which bypasses these rules.
+      allow update: if isOwner(userId)
+        && request.resource.data.get('totalCoins', 0)
+             <= resource.data.get('totalCoins', 0);
       allow delete: if false;
 
       // ⚠️ PENDING LOCKDOWN — enable ONLY after a build with server-verified
@@ -584,7 +648,15 @@ service cloud.firestore {
     // ============================================================================
     match /memberships/{membershipId} {
       allow read: if isSignedIn();
-      allow create, update: if isSignedIn();
+      // The wildcard is a membership id, not a user id, so `isSignedIn()` let
+      // ANY user create or rewrite ANYONE's membership document. Writes are now
+      // bound to the owner named inside the document, and the owner cannot be
+      // changed by an update.
+      allow create: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.get('userId', '') == request.auth.uid
+        && request.resource.data.get('userId', '') == resource.data.get('userId', '');
       allow delete: if false;
     }
 
@@ -662,8 +734,14 @@ service cloud.firestore {
     // ADMIN USERS COLLECTION (admin panel authentication)
     // ============================================================================
     match /admin_users/{userId} {
-      allow read: if isSignedIn();
-      allow write: if isAdminPanelUser();
+      // Was readable by every signed-in user, which handed any account the
+      // full staff roster: emails, roles and permission arrays - a ready-made
+      // target list. Admins can still read it; nobody else needs to.
+      allow read: if isAdminPanelUser();
+      // Was writable by any admin of any role, so a moderator could rewrite
+      // their own document to superAdmin. Only a superAdmin changes who is an
+      // admin.
+      allow write: if isSuperAdmin();
     }
 
     // ============================================================================
@@ -1086,8 +1164,21 @@ service cloud.firestore {
       function isCommunityMod() {
         return isCommunityCreator() || myRole() == 'owner' || myRole() == 'admin' || isAdmin();
       }
+      // Age assurance (Guidelines 1.2.1 / 4.7.5): publishing content other
+      // people will see requires a VERIFIED age, not a self-declared one.
+      // Reading and joining a community stay open to every signed-in user —
+      // the gate is on broadcasting, which is what the guideline is about.
+      //
+      // Reads the denormalised boolean rather than the nested map so this
+      // costs one document read per write, not a map traversal.
+      function isAgeVerified() {
+        return isSignedIn() &&
+          get(/databases/$(database)/documents/profiles/$(request.auth.uid))
+            .data.get('isAgeVerified', false) == true;
+      }
       function canPostChat() {
         return isMemberOf() &&
+          isAgeVerified() &&
           myMemberDoc().data.get('isBanned', false) == false &&
           myMemberDoc().data.get('isMuted', false) == false;
       }

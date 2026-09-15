@@ -1,7 +1,7 @@
 TERMOS E CONDICOES DO GREENGO CHAT
 
-Ultima Atualizacao: 26 de janeiro de 2026
-Data de Vigencia: 26 de janeiro de 2026
+Ultima Atualizacao: 15 de setembro de 2026
+Data de Vigencia: 15 de setembro de 2026
 
 ================================================================================
 INTRODUCAO
@@ -106,8 +106,31 @@ Voce nao pode criar uma conta se:
 - Voce esta proibido por lei de usar servicos de namoro
 - Voce e atualmente casado (a menos que legalmente separado) e busca relacionamentos extraconjugais
 
-2.5 Verificacao
-Reservamo-nos o direito de verificar sua idade e identidade a qualquer momento. A falha em cumprir com solicitacoes de verificacao pode resultar em suspensao ou encerramento da conta.
+2.5 Verificacao de Idade
+Voce declara sua data de nascimento ao criar a conta. Alem disso, verificamos a
+idade por meio de um documento de identidade em duas situacoes:
+
+a) Se voce entrar usando apenas um numero de telefone, ja que um numero de
+   telefone nao estabelece identidade alguma.
+b) Se voce desejar publicar conteudo em uma Comunidade. Ler e participar de uma
+   Comunidade nunca exige verificacao; apenas publicar exige.
+
+A verificacao e automatica: o documento e lido para obter a data de nascimento e
+a imagem e excluida na mesma operacao. Nunca a armazenamos. A Secao 2.6 da nossa
+Politica de Privacidade descreve o processo por completo.
+
+Voce pode recusar a verificacao. Recusar significa que voce nao podera publicar
+em Comunidades e, se sua conta usar apenas login por telefone, que determinados
+recursos permanecerao indisponiveis. Isso nao resulta na exclusao da sua conta.
+
+Apresentar um documento que nao seja seu, ou que ja tenha sido usado para
+verificar outra conta, constitui violacao destes Termos e pode resultar em
+suspensao.
+
+2.6 Outras Verificacoes
+Reservamo-nos o direito de verificar sua identidade a qualquer momento. O nao
+cumprimento de uma solicitacao de verificacao pode resultar em suspensao ou
+encerramento da conta.
 
 ================================================================================
 3. CADASTRO DE CONTA
@@ -510,7 +533,6 @@ Usuarios correspondidos podem se comunicar atraves de:
 - Mensagens de texto
 - Compartilhamento de fotos
 - Mensagens de voz (recurso premium)
-- Chamadas de video (recurso premium)
 
 14.4 Retencao de Mensagens
 As mensagens sao retidas de acordo com nossa Politica de Privacidade. Podemos acessar mensagens para:
@@ -523,11 +545,20 @@ As mensagens sao retidas de acordo com nossa Politica de Privacidade. Podemos ac
 ================================================================================
 
 15.1 Moeda Virtual
-Podemos oferecer moeda virtual ("Moedas" ou "Creditos") que pode ser usada para comprar recursos premium. A moeda virtual:
+Oferecemos moeda virtual ("Moedas GreenGo" ou "Moedas") que pode ser usada para
+obter recursos premium. As Moedas:
 - Nao tem valor em dinheiro
-- Nao pode ser trocada por dinheiro real
-- E intransferivel entre contas
-- Pode expirar se nao utilizada
+- Nao podem ser trocadas por dinheiro real
+- NAO EXPIRAM. As moedas que voce comprou ou ganhou permanecem disponiveis
+  enquanto sua conta existir. Qualquer prazo de expiracao anterior deixou de se
+  aplicar, e as moedas removidas por ele foram restituidas.
+- Nao sao transferiveis entre contas, exceto por meio do recurso de presente no
+  aplicativo, onde esse recurso estiver disponivel
+
+As Moedas sao consumidas quando voce as utiliza em um recurso pago. As compras de
+moedas sao processadas pela loja de aplicativos de onde voce instalou o GreenGo e
+estao sujeitas a politica de reembolso dessa loja, bem como a Secao 8 destes
+Termos.
 
 15.2 Impulsos e Super Curtidas
 Recursos premium como Impulsos e Super Curtidas:
@@ -536,7 +567,24 @@ Recursos premium como Impulsos e Super Curtidas:
 - Nao garantem nenhum resultado especifico
 - Estao sujeitos a disponibilidade
 
-15.3 Disponibilidade de Recursos
+15.3 Concessoes Promocionais
+Podemos conceder assinaturas, periodos de assinatura base ou Moedas diretamente
+aos usuarios - por exemplo a parceiros, a membros da imprensa, como pedido de
+desculpas por um problema de servico, ou como parte de uma promocao.
+
+Quando o fazemos:
+- O beneficio e aplicado a sua conta por nos. Nao ha nada para voce resgatar, e o
+  aplicativo nao contem campo algum para inserir codigos.
+- Voce e notificado no aplicativo quando isso acontece.
+- Um beneficio concedido nunca reduz um que voce ja possua. Se voce tiver um
+  nivel de assinatura superior ao concedido, mantem o superior.
+- Beneficios concedidos nao tem valor em dinheiro e nao sao reembolsaveis.
+
+Qualquer codigo promocional que venhamos a emitir por meio de uma loja de
+aplicativos (por exemplo, um codigo de oferta da App Store) e resgatado nessa
+loja, e nao no GreenGo, e esta sujeito aos termos da loja.
+
+15.4 Disponibilidade de Recursos
 Recursos premium podem variar por:
 - Localizacao geografica
 - Tipo de dispositivo

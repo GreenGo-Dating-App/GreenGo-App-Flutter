@@ -426,46 +426,10 @@ class CoinRepositoryImpl implements CoinRepository {
   }
 
   @override
-  Future<Either<Failure, void>> processExpiredCoins(String userId) async {
-    try {
-      await remoteDataSource.processExpiredCoins(userId);
-      return const Right(null);
-    } catch (e) {
-      return Left(ServerFailure(e.toString()));
-    }
-  }
-
-  @override
-  Future<Either<Failure, List<CoinBatch>>> getExpiringCoins({
-    required String userId,
-    required int days,
-  }) async {
-    try {
-      final batches = await remoteDataSource.getExpiringCoins(
-        userId: userId,
-        days: days,
-      );
-      return Right(batches);
-    } catch (e) {
-      return Left(ServerFailure(e.toString()));
-    }
-  }
-
-  @override
   Future<Either<Failure, List<CoinPromotion>>> getActivePromotions() async {
     try {
       final promotions = await remoteDataSource.getActivePromotions();
       return Right(promotions);
-    } catch (e) {
-      return Left(ServerFailure(e.toString()));
-    }
-  }
-
-  @override
-  Future<Either<Failure, CoinPromotion?>> getPromotionByCode(String code) async {
-    try {
-      final promotion = await remoteDataSource.getPromotionByCode(code);
-      return Right(promotion);
     } catch (e) {
       return Left(ServerFailure(e.toString()));
     }

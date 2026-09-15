@@ -228,41 +228,9 @@ class LoadSentGifts extends CoinEvent {
   List<Object?> get props => [userId];
 }
 
-// Expiration Events
-class CheckExpiringCoins extends CoinEvent {
-
-  const CheckExpiringCoins({
-    required this.userId,
-    this.days = 30,
-  });
-  final String userId;
-  final int days;
-
-  @override
-  List<Object?> get props => [userId, days];
-}
-
-class ProcessExpiredCoinsEvent extends CoinEvent {
-
-  const ProcessExpiredCoinsEvent(this.userId);
-  final String userId;
-
-  @override
-  List<Object?> get props => [userId];
-}
-
 // Promotion Events
 class LoadActivePromotions extends CoinEvent {
   const LoadActivePromotions();
-}
-
-class ApplyPromoCode extends CoinEvent {
-
-  const ApplyPromoCode(this.code);
-  final String code;
-
-  @override
-  List<Object?> get props => [code];
 }
 
 class CheckPromotionApplicability extends CoinEvent {

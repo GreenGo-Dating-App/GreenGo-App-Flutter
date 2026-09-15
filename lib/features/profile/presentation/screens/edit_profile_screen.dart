@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
@@ -622,6 +623,21 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Base Membership Section
                   _buildBaseMembershipSection(context, activeProfile),
+
+                  const SizedBox(height: 16),
+
+                  // Contact support. Guideline 1.5 requires an easy way to
+                  // reach the developer, and 1.2 requires PUBLISHED contact
+                  // details for an app carrying user-generated content. The
+                  // address existed but only on the account-rejection appeal
+                  // screen, which most users never see.
+                  EditSectionCard(
+                    title: AppLocalizations.of(context)!.contactSupport,
+                    subtitle:
+                        AppLocalizations.of(context)!.contactSupportSubtitle,
+                    icon: Icons.support_agent,
+                    onTap: _contactSupport,
+                  ),
 
                   const SizedBox(height: 16),
 
@@ -1385,6 +1401,26 @@ class EditProfileScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  /// Opens the user's mail client pre-addressed to support, with the account
+  /// id filled in so a reply does not start with "which account?".
+  Future<void> _contactSupport() async {
+    final userId = FirebaseAuth.instance.currentUser?.uid ?? '';
+    final uri = Uri(
+      scheme: 'mailto',
+      path: 'support@greengochat.com',
+      queryParameters: {
+        'subject': 'GreenGo support',
+        'body': 'User ID: $userId\n\nHow can we help?\n',
+      },
+    );
+    try {
+      await launchUrl(uri);
+    } catch (_) {
+      // No mail client configured — nothing useful to do, and a crash here
+      // would be worse than silence.
+    }
   }
 
   void _showDeleteAccountDialog(BuildContext screenContext, Profile currentProfile) {

@@ -10,7 +10,6 @@ import '../../domain/entities/coin_package.dart';
 import '../../domain/usecases/claim_reward.dart';
 import '../../domain/usecases/get_coin_balance.dart';
 import '../../domain/usecases/get_transaction_history.dart';
-import '../../domain/usecases/manage_expiration.dart';
 import '../../domain/usecases/manage_gifts.dart';
 import '../../domain/usecases/manage_promotions.dart';
 import '../../domain/usecases/purchase_coins.dart';
@@ -37,10 +36,7 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     required this.declineGift,
     required this.getPendingGifts,
     required this.getSentGifts,
-    required this.processExpiredCoins,
-    required this.getExpiringCoins,
     required this.getActivePromotions,
-    required this.getPromotionByCode,
     required this.isPromotionApplicable,
   }) : super(CoinInitial()) {
     // Balance Events
@@ -72,13 +68,9 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     on<LoadPendingGifts>(_onLoadPendingGifts);
     on<LoadSentGifts>(_onLoadSentGifts);
 
-    // Expiration Events
-    on<CheckExpiringCoins>(_onCheckExpiringCoins);
-    on<ProcessExpiredCoinsEvent>(_onProcessExpiredCoins);
 
     // Promotion Events
     on<LoadActivePromotions>(_onLoadActivePromotions);
-    on<ApplyPromoCode>(_onApplyPromoCode);
     on<CheckPromotionApplicability>(_onCheckPromotionApplicability);
   }
   final GetCoinBalance getCoinBalance;
@@ -95,10 +87,7 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
   final DeclineCoinGift declineGift;
   final GetPendingGifts getPendingGifts;
   final GetSentGifts getSentGifts;
-  final ProcessExpiredCoins processExpiredCoins;
-  final GetExpiringCoins getExpiringCoins;
   final GetActivePromotions getActivePromotions;
-  final GetPromotionByCode getPromotionByCode;
   final IsPromotionApplicable isPromotionApplicable;
 
   StreamSubscription? _balanceSubscription;
@@ -459,50 +448,6 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     );
   }
 
-  // ===== Expiration Event Handlers =====
-
-  Future<void> _onCheckExpiringCoins(
-    CheckExpiringCoins event,
-    Emitter<CoinState> emit,
-  ) async {
-    emit(CoinLoading());
-
-    final result = await getExpiringCoins(
-      userId: event.userId,
-      days: event.days,
-    );
-
-    result.fold(
-      (failure) => emit(CoinError(failure.toString())),
-      (batches) {
-        final totalExpiring =
-            batches.fold<int>(0, (sum, batch) => sum + batch.remainingCoins);
-        emit(ExpiringCoinsLoaded(
-          expiringBatches: batches,
-          totalExpiringCoins: totalExpiring,
-          daysUntilExpiration: event.days,
-        ));
-      },
-    );
-  }
-
-  Future<void> _onProcessExpiredCoins(
-    ProcessExpiredCoinsEvent event,
-    Emitter<CoinState> emit,
-  ) async {
-    emit(CoinLoading());
-
-    final result = await processExpiredCoins(event.userId);
-
-    result.fold(
-      (failure) => emit(CoinError(failure.toString())),
-      (_) {
-        emit(const ExpiredCoinsProcessed(0));
-        // Reload balance
-        add(LoadCoinBalance(event.userId));
-      },
-    );
-  }
 
   // ===== Promotion Event Handlers =====
 
@@ -517,26 +462,6 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     result.fold(
       (failure) => emit(CoinError(failure.toString())),
       (promotions) => emit(PromotionsLoaded(promotions)),
-    );
-  }
-
-  Future<void> _onApplyPromoCode(
-    ApplyPromoCode event,
-    Emitter<CoinState> emit,
-  ) async {
-    emit(CoinLoading());
-
-    final result = await getPromotionByCode(event.code);
-
-    result.fold(
-      (failure) => emit(CoinError(failure.toString())),
-      (promotion) {
-        if (promotion == null) {
-          emit(const CoinError('Invalid promo code'));
-        } else {
-          emit(PromoCodeApplied(promotion));
-        }
-      },
     );
   }
 

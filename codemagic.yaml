@@ -39,6 +39,20 @@ workflows:
         script: |
           flutter analyze --no-fatal-infos
         ignore_failure: true
+      # BLOCKING. GreenGo was rejected under Guidelines 2.1(b) and 3.1.1 for
+      # defects that were plainly visible in the source and in App Store
+      # Connect; nothing checked, so nothing caught them. These two commands
+      # are that check, and they must be allowed to fail the build.
+      #   - the Dart suite asserts the app-side invariants (no code redemption,
+      #     coins never expire, no developer-facing store errors, product IDs
+      #     match the submitted catalogue)
+      #   - the ASC query asserts all 11 products exist and are reviewable.
+      #     --require-credentials makes a missing API key a hard failure, so
+      #     the gate can never pass by silently skipping.
+      - name: App Store compliance gate
+        script: |
+          flutter test test/compliance/app_store_compliance_test.dart
+          node tool/check_store_products.cjs --require-credentials
       - name: Set up code signing
         script: |
           keychain initialize
