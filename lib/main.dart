@@ -85,6 +85,7 @@ import 'features/video_profiles/presentation/bloc/video_profile_bloc.dart';
 import 'features/video_profiles/presentation/screens/video_discovery_screen.dart';
 import 'features/video_profiles/presentation/screens/video_profile_screen.dart';
 import 'firebase_options.dart';
+import 'firebase_options_dev.dart';
 import 'generated/app_localizations.dart';
 
 void main() async {
@@ -137,10 +138,26 @@ void main() async {
           ],
   );
 
-  // Initialize Firebase with production options
+  // Initialize Firebase.
+  //
+  // Production by default. A pre-production build selects the greengo-chat-dev
+  // project instead, so testers can exercise destructive flows - account
+  // deletion, coin spending, entitlement grants - without touching real user
+  // data:
+  //
+  //   flutter build web --release --dart-define=FIREBASE_ENV=dev
+  //
+  // The switch is deliberately explicit rather than inferred from the hostname:
+  // a build should know which database it talks to, not discover it at runtime.
+  const firebaseEnv = String.fromEnvironment('FIREBASE_ENV');
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+    options: firebaseEnv == 'dev'
+        ? DevFirebaseOptions.web
+        : DefaultFirebaseOptions.currentPlatform,
   );
+  if (firebaseEnv == 'dev') {
+    debugPrint('*** PRE-PRODUCTION BUILD - project greengo-chat-dev ***');
+  }
 
   // Enable Firestore offline persistence so chat conversations and messages
   // load INSTANTLY from the local cache and stay available OFFLINE, then sync

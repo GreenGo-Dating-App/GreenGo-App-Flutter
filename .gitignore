@@ -131,3 +131,7 @@ _install_result.txt
 # Python bytecode from the E2E tooling
 __pycache__/
 *.pyc
+
+# Pre-production Firebase config (generated)
+firebase_options_dev.dart
+lib/firebase_options_dev.dart
