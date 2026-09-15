@@ -14040,4 +14040,48 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get contactSupportSubtitle =>
       'Fragen, Probleme oder Meldungen — wir antworten per E-Mail';
+
+  @override
+  String get offerPreRegisteredTitle => 'Du bist vorregistriert';
+
+  @override
+  String get offerWelcomePackTitle => 'Dein Willkommenspaket';
+
+  @override
+  String offerTierLine(String tier, String duration) {
+    return '$tier-Mitgliedschaft für $duration';
+  }
+
+  @override
+  String offerBaseLine(String duration) {
+    return 'Base-Mitgliedschaft für $duration';
+  }
+
+  @override
+  String get offerFreeMonthLine => 'Ein Monat voller Zugriff, kostenlos';
+
+  @override
+  String offerCoinsLine(int coins) {
+    return '$coins Willkommensmünzen';
+  }
+
+  @override
+  String get offerAppliedFromToday =>
+      'Wird ab heute automatisch hinzugefügt, bei deiner ersten Anmeldung.';
+
+  @override
+  String get offerDurationOneMonth => '1 Monat';
+
+  @override
+  String offerDurationMonths(int count) {
+    return '$count Monate';
+  }
+
+  @override
+  String get offerDurationOneYear => '1 Jahr';
+
+  @override
+  String offerDurationDays(int count) {
+    return '$count Tage';
+  }
 }

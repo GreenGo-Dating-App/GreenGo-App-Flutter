@@ -22,6 +22,7 @@ import { db, logInfo, logError } from '../shared/utils';
 import { computeMembershipExtension } from '../shared/grants';
 import { sendCouponRedeemedEmail } from '../notifications/couponEmails';
 import { effectiveGrants, hasBaseGrant, summariseGrants } from './grants';
+import { DEFAULT_2026_OFFER, isWithin2026 } from './preRegistrationOffer';
 import { monitored } from '../shared/monitoring';
 
 
@@ -65,6 +66,20 @@ export const applySignupGrants = onDocumentCreated(
       .get();
 
     if (couponsSnap.empty) {
+      // NOT on the allowlist. During 2026 everyone still gets the standard
+      // welcome pack - one month of Base membership and 100 coins - so a
+      // normal signup is never left with nothing. The amounts come from
+      // preRegistrationOffer so the promise shown on the registration form and
+      // the entitlement actually granted here cannot drift apart.
+      if (isWithin2026(new Date())) {
+        const applied = await applyDefaultWelcome(uid);
+        const wrote = await markProcessedIfFresh(profileRef, applied);
+        logInfo(
+          `applySignupGrants: default 2026 welcome for ${email} ` +
+            `(${wrote ? 'applied' : 'another invocation won the race'})`,
+        );
+        return;
+      }
       logInfo(`applySignupGrants: no allowlist coupons for ${email}`);
       // Still mark as processed so we don't keep querying on every doc update.
       // Transactional to avoid racing with a concurrent invocation that
@@ -113,6 +128,78 @@ export const applySignupGrants = onDocumentCreated(
     logInfo(`applySignupGrants: applied ${applied.length} grant(s) for ${uid} (${email})`);
   }),
 );
+
+/**
+ * The standard 2026 welcome pack, for a user with no allowlist coupon.
+ *
+ * Idempotent through the same `signupGrantsAppliedAt` marker the coupon path
+ * uses, and written in one transaction so a re-fired trigger cannot grant the
+ * coins twice.
+ */
+async function applyDefaultWelcome(uid: string): Promise<AppliedGrant[]> {
+  const profileRef = db.collection('profiles').doc(uid);
+  const balanceRef = db.collection('coinBalances').doc(uid);
+  const days = DEFAULT_2026_OFFER.baseMembershipDays;
+  const coins = DEFAULT_2026_OFFER.coins;
+
+  const summary = `BASE +${days}d \u00b7 +${coins} coins`;
+
+  await db.runTransaction(async (tx) => {
+    const profSnap = await tx.get(profileRef);
+    if (profSnap.exists && profSnap.data()?.signupGrantsAppliedAt) return;
+    const balSnap = await tx.get(balanceRef);
+
+    const now = admin.firestore.Timestamp.now();
+    const existingBaseEnd =
+      (profSnap.data()?.baseMembershipEndDate as admin.firestore.Timestamp | undefined)?.toDate() ??
+      null;
+    const start =
+      existingBaseEnd && existingBaseEnd > now.toDate() ? existingBaseEnd : now.toDate();
+    const end = new Date(start.getTime() + days * 24 * 60 * 60 * 1000);
+
+    tx.set(
+      profileRef,
+      {
+        hasBaseMembership: true,
+        baseMembershipSource: 'welcome_2026',
+        baseMembershipStartDate: now,
+        baseMembershipEndDate: admin.firestore.Timestamp.fromDate(end),
+        updatedAt: now,
+      },
+      { merge: true },
+    );
+
+    const bal = balSnap.exists ? (balSnap.data() as any) : {};
+    const batches: any[] = (bal.coinBatches as any[]) || [];
+    batches.push({
+      batchId: db.collection('temp').doc().id,
+      initialCoins: coins,
+      remainingCoins: coins,
+      source: 'welcome_2026',
+      acquiredDate: now,
+    });
+    tx.set(
+      balanceRef,
+      {
+        userId: uid,
+        totalCoins: ((bal.totalCoins as number) || 0) + coins,
+        earnedCoins: ((bal.earnedCoins as number) || 0) + coins,
+        coinBatches: batches,
+        lastUpdated: now,
+      },
+      { merge: true },
+    );
+  });
+
+  return [
+    {
+      couponId: 'welcome_2026',
+      couponCode: 'WELCOME2026',
+      grantSummary: summary,
+      dismissed: false,
+    },
+  ];
+}
 
 /**
  * Writes `signupGrantsApplied` + `signupGrantsAppliedAt` to the profile only

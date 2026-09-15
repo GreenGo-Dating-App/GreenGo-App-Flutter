@@ -261,6 +261,9 @@ export {
 } from './coupons/adminCoupons';
 export { applySignupGrants } from './coupons/applySignupGrants';
 
+// Tells the registration form what an email will receive (grants nothing).
+export { checkPreRegistrationOffer } from './coupons/preRegistrationOffer';
+
 // Analytics Functions
 export {
   getRevenueDashboard,

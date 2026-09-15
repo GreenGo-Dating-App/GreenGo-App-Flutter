@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -16,6 +17,7 @@ import '../widgets/auth_text_field.dart';
 import '../widgets/consent_checkboxes.dart';
 import '../widgets/password_strength_indicator.dart';
 import '../../../../core/constants/e2e_keys.dart';
+import '../widgets/pre_registration_offer.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -27,6 +29,13 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
+  // Watched so the offer lookup runs when the user LEAVES the email field -
+  // i.e. when they have finished entering it - rather than on every keystroke.
+  final _emailFocus = FocusNode();
+  /// Emails already looked up, so correcting a typo and tabbing back out does
+  /// not re-ask the server or re-show the dialog.
+  final Set<String> _offersChecked = <String>{};
+  bool _checkingOffer = false;
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
   bool _obscurePassword = true;
@@ -46,10 +55,38 @@ class _RegisterScreenState extends State<RegisterScreen> {
   void initState() {
     super.initState();
     _passwordController.addListener(_updatePasswordStrength);
+    _emailFocus.addListener(_onEmailFocusChange);
+  }
+
+  /// When focus leaves a VALID email, ask the server what that address is
+  /// entitled to and say so before the user commits to registering.
+  void _onEmailFocusChange() {
+    if (_emailFocus.hasFocus) return;
+    unawaited(_maybeShowOffer());
+  }
+
+  Future<void> _maybeShowOffer() async {
+    final email = _emailController.text.trim().toLowerCase();
+    if (email.isEmpty || _checkingOffer) return;
+    // Only ask about something that looks like an address, so a half-typed one
+    // does not produce a lookup per character.
+    if (Validators.validateEmail(email) != null) return;
+    if (!_offersChecked.add(email)) return;
+
+    _checkingOffer = true;
+    try {
+      final offer = await const PreRegistrationOfferService().lookup(email);
+      if (offer == null || !mounted) return;
+      await showPreRegistrationOfferDialog(context, offer);
+    } finally {
+      _checkingOffer = false;
+    }
   }
 
   @override
   void dispose() {
+    _emailFocus.removeListener(_onEmailFocusChange);
+    _emailFocus.dispose();
     _emailController.dispose();
     _passwordController.dispose();
     _confirmPasswordController.dispose();
@@ -69,6 +106,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
     if (!_formKey.currentState!.validate()) {
       return;
     }
+
+    // A user can fill the form and submit without the email field ever losing
+    // focus (autofill, or Enter straight from the keyboard). Make sure they
+    // still see what they are entitled to before the account is created.
+    await _maybeShowOffer();
+    if (!mounted) return;
 
     // Validate required consents
     if (!ConsentCheckboxes.areRequiredConsentsAccepted(
@@ -196,6 +239,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     AuthTextField(
                       fieldKey: E2EKeys.registerEmail,
                       controller: _emailController,
+                      focusNode: _emailFocus,
                       label: l10n.email,
                       keyboardType: TextInputType.emailAddress,
                       validator: Validators.validateEmail,

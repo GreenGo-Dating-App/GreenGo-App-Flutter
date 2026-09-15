@@ -13994,6 +13994,50 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get contactSupportSubtitle =>
       'Dúvidas, problemas ou denúncias — respondemos por email';
+
+  @override
+  String get offerPreRegisteredTitle => 'Estás pré-registado';
+
+  @override
+  String get offerWelcomePackTitle => 'O teu pacote de boas-vindas';
+
+  @override
+  String offerTierLine(String tier, String duration) {
+    return 'Subscrição $tier durante $duration';
+  }
+
+  @override
+  String offerBaseLine(String duration) {
+    return 'Subscrição Base durante $duration';
+  }
+
+  @override
+  String get offerFreeMonthLine => 'Um mês de acesso completo gratuito';
+
+  @override
+  String offerCoinsLine(int coins) {
+    return '$coins moedas de boas-vindas';
+  }
+
+  @override
+  String get offerAppliedFromToday =>
+      'Adicionado automaticamente a partir de hoje, no teu primeiro início de sessão.';
+
+  @override
+  String get offerDurationOneMonth => '1 mês';
+
+  @override
+  String offerDurationMonths(int count) {
+    return '$count meses';
+  }
+
+  @override
+  String get offerDurationOneYear => '1 ano';
+
+  @override
+  String offerDurationDays(int count) {
+    return '$count dias';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -27963,4 +28007,48 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get contactSupportSubtitle =>
       'Dúvidas, problemas ou denúncias — respondemos por e-mail';
+
+  @override
+  String get offerPreRegisteredTitle => 'Você está pré-cadastrado';
+
+  @override
+  String get offerWelcomePackTitle => 'Seu pacote de boas-vindas';
+
+  @override
+  String offerTierLine(String tier, String duration) {
+    return 'Assinatura $tier por $duration';
+  }
+
+  @override
+  String offerBaseLine(String duration) {
+    return 'Assinatura Base por $duration';
+  }
+
+  @override
+  String get offerFreeMonthLine => 'Um mês de acesso completo grátis';
+
+  @override
+  String offerCoinsLine(int coins) {
+    return '$coins moedas de boas-vindas';
+  }
+
+  @override
+  String get offerAppliedFromToday =>
+      'Adicionado automaticamente a partir de hoje, no seu primeiro acesso.';
+
+  @override
+  String get offerDurationOneMonth => '1 mês';
+
+  @override
+  String offerDurationMonths(int count) {
+    return '$count meses';
+  }
+
+  @override
+  String get offerDurationOneYear => '1 ano';
+
+  @override
+  String offerDurationDays(int count) {
+    return '$count dias';
+  }
 }

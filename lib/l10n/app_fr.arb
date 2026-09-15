@@ -4098,5 +4098,16 @@
   "ageVerifyCta": "Vérifier maintenant",
   "ageVerifyLater": "Plus tard",
   "ageVerifyNeededToPost": "Vérifiez votre âge pour publier",
-  "contactSupportSubtitle": "Questions, problèmes ou signalements — nous répondons par e-mail"
+  "contactSupportSubtitle": "Questions, problèmes ou signalements — nous répondons par e-mail",
+  "offerPreRegisteredTitle": "Vous êtes préinscrit",
+  "offerWelcomePackTitle": "Votre pack de bienvenue",
+  "offerTierLine": "Abonnement {tier} pendant {duration}",
+  "offerBaseLine": "Abonnement Base pendant {duration}",
+  "offerFreeMonthLine": "Un mois d'accès complet offert",
+  "offerCoinsLine": "{coins} pièces de bienvenue",
+  "offerAppliedFromToday": "Ajouté automatiquement dès aujourd'hui, à votre première connexion.",
+  "offerDurationOneMonth": "1 mois",
+  "offerDurationMonths": "{count} mois",
+  "offerDurationOneYear": "1 an",
+  "offerDurationDays": "{count} jours"
 }

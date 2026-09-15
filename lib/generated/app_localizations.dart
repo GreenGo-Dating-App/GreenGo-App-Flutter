@@ -24707,6 +24707,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Questions, problems or a report — we reply by email'**
   String get contactSupportSubtitle;
+
+  /// No description provided for @offerPreRegisteredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You are pre-registered'**
+  String get offerPreRegisteredTitle;
+
+  /// No description provided for @offerWelcomePackTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your welcome pack'**
+  String get offerWelcomePackTitle;
+
+  /// No description provided for @offerTierLine.
+  ///
+  /// In en, this message translates to:
+  /// **'{tier} membership for {duration}'**
+  String offerTierLine(String tier, String duration);
+
+  /// No description provided for @offerBaseLine.
+  ///
+  /// In en, this message translates to:
+  /// **'Base membership for {duration}'**
+  String offerBaseLine(String duration);
+
+  /// No description provided for @offerFreeMonthLine.
+  ///
+  /// In en, this message translates to:
+  /// **'One month of free full access'**
+  String get offerFreeMonthLine;
+
+  /// No description provided for @offerCoinsLine.
+  ///
+  /// In en, this message translates to:
+  /// **'{coins} welcome coins'**
+  String offerCoinsLine(int coins);
+
+  /// No description provided for @offerAppliedFromToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Added automatically from today, the first time you sign in.'**
+  String get offerAppliedFromToday;
+
+  /// No description provided for @offerDurationOneMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'1 month'**
+  String get offerDurationOneMonth;
+
+  /// No description provided for @offerDurationMonths.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} months'**
+  String offerDurationMonths(int count);
+
+  /// No description provided for @offerDurationOneYear.
+  ///
+  /// In en, this message translates to:
+  /// **'1 year'**
+  String get offerDurationOneYear;
+
+  /// No description provided for @offerDurationDays.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} days'**
+  String offerDurationDays(int count);
 }
 
 class _AppLocalizationsDelegate

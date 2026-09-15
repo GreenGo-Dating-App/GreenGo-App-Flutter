@@ -4679,5 +4679,16 @@
   "ageVerifyCta": "Verificar agora",
   "ageVerifyLater": "Agora não",
   "ageVerifyNeededToPost": "Verifique sua idade para publicar",
-  "contactSupportSubtitle": "Dúvidas, problemas ou denúncias — respondemos por e-mail"
+  "contactSupportSubtitle": "Dúvidas, problemas ou denúncias — respondemos por e-mail",
+  "offerPreRegisteredTitle": "Você está pré-cadastrado",
+  "offerWelcomePackTitle": "Seu pacote de boas-vindas",
+  "offerTierLine": "Assinatura {tier} por {duration}",
+  "offerBaseLine": "Assinatura Base por {duration}",
+  "offerFreeMonthLine": "Um mês de acesso completo grátis",
+  "offerCoinsLine": "{coins} moedas de boas-vindas",
+  "offerAppliedFromToday": "Adicionado automaticamente a partir de hoje, no seu primeiro acesso.",
+  "offerDurationOneMonth": "1 mês",
+  "offerDurationMonths": "{count} meses",
+  "offerDurationOneYear": "1 ano",
+  "offerDurationDays": "{count} dias"
 }

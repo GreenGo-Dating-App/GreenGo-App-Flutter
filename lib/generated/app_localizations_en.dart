@@ -13858,4 +13858,48 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get contactSupportSubtitle =>
       'Questions, problems or a report — we reply by email';
+
+  @override
+  String get offerPreRegisteredTitle => 'You are pre-registered';
+
+  @override
+  String get offerWelcomePackTitle => 'Your welcome pack';
+
+  @override
+  String offerTierLine(String tier, String duration) {
+    return '$tier membership for $duration';
+  }
+
+  @override
+  String offerBaseLine(String duration) {
+    return 'Base membership for $duration';
+  }
+
+  @override
+  String get offerFreeMonthLine => 'One month of free full access';
+
+  @override
+  String offerCoinsLine(int coins) {
+    return '$coins welcome coins';
+  }
+
+  @override
+  String get offerAppliedFromToday =>
+      'Added automatically from today, the first time you sign in.';
+
+  @override
+  String get offerDurationOneMonth => '1 month';
+
+  @override
+  String offerDurationMonths(int count) {
+    return '$count months';
+  }
+
+  @override
+  String get offerDurationOneYear => '1 year';
+
+  @override
+  String offerDurationDays(int count) {
+    return '$count days';
+  }
 }
