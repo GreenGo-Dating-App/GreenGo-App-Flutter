@@ -245,7 +245,21 @@ class SeedData {
     final firestore = FirebaseFirestore.instance;
     final auth = FirebaseAuth.instance;
     const adminEmail = 'admin@greengochat.com';
-    const adminPassword = 'AdminGreenGo2024Secure';
+    // Read from the environment. This used to be a literal, which put a
+    // working admin password into a PUBLIC repository and into every build
+    // artifact produced from it.
+    //
+    //   flutter run --dart-define=SEED_ADMIN_PASSWORD=...
+    //
+    // Seeding is already restricted to debug builds against the emulators
+    // (see shouldSeed above); without the define it simply does not run.
+    const adminPassword = String.fromEnvironment('SEED_ADMIN_PASSWORD');
+    if (adminPassword.isEmpty) {
+      debugPrint(
+        'Admin seed skipped: pass --dart-define=SEED_ADMIN_PASSWORD=<value>',
+      );
+      return;
+    }
 
     try {
       debugPrint('🔐 Setting up admin user...');
