@@ -36,9 +36,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
   /// not re-ask the server or re-show the dialog.
   final Set<String> _offersChecked = <String>{};
   bool _checkingOffer = false;
-  /// The in-flight blur lookup, so registration can wait for it instead of
-  /// racing it and letting the dialog land on the next screen.
-  Future<void>? _pendingOffer;
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
   bool _obscurePassword = true;
@@ -58,14 +55,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
   void initState() {
     super.initState();
     _passwordController.addListener(_updatePasswordStrength);
-    _emailFocus.addListener(_onEmailFocusChange);
-  }
-
-  /// When focus leaves a VALID email, ask the server what that address is
-  /// entitled to and say so before the user commits to registering.
-  void _onEmailFocusChange() {
-    if (_emailFocus.hasFocus) return;
-    _pendingOffer = _maybeShowOffer();
   }
 
   Future<void> _maybeShowOffer() async {
@@ -97,7 +86,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   @override
   void dispose() {
-    _emailFocus.removeListener(_onEmailFocusChange);
     _emailFocus.dispose();
     _emailController.dispose();
     _passwordController.dispose();
@@ -119,15 +107,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
       return;
     }
 
-    // Settle the offer BEFORE the account is created, so it is always shown on
-    // this screen and never over the onboarding wizard.
-    //
-    // Two paths reach here: the field was blurred (a lookup is already in
-    // flight - wait for it), or it never was, because the user autofilled or
-    // pressed Enter (no lookup has run - start one now). Both end with the
-    // dialog dismissed before registration proceeds.
-    await (_pendingOffer ?? Future<void>.value());
-    if (!mounted) return;
+    // Announce the offer HERE - after Register is pressed, and before the
+    // account is created. It was previously triggered when the email field
+    // lost focus, which fired while the user was still filling the form and,
+    // because the lookup is async, could land on the next screen.
     await _maybeShowOffer();
     if (!mounted) return;
 

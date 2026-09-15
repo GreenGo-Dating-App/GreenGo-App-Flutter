@@ -30,10 +30,6 @@ class _TierRevealDialogState extends State<TierRevealDialog>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
 
-  /// How many feature rows we stagger. Kept in one place so the intervals
-  /// below cannot drift out of step with the list actually rendered.
-  static const int _maxRows = 6;
-
   @override
   void initState() {
     super.initState();
@@ -95,46 +91,60 @@ class _TierRevealDialogState extends State<TierRevealDialog>
     }
   }
 
-  /// The features this package includes, read from the real entitlements.
-  List<({IconData icon, String label})> _features(AppLocalizations l10n) {
+  /// The feature rows for this package, read from the real entitlements.
+  ///
+  /// Each row passes a LITERAL `Icons.x` straight to the builder. That is
+  /// deliberate: Flutter shaves unused glyphs out of the icon font by static
+  /// analysis of the use site, and an IconData tucked inside a record or a
+  /// variable is not recognised as used - which is exactly why these icons
+  /// came out blank the first time.
+  List<Widget> _featureRows(AppLocalizations l10n, bool reduceMotion) {
     final t = _tier;
     String count(int? v) => v == null ? l10n.featureUnlimited : '$v';
 
-    final rows = <({IconData icon, String label})>[
-      (
-        icon: Icons.chat_bubble_outline,
-        label: l10n.featureDailyConnects(count(TierEntitlements.maxDailyConnects(t))),
-      ),
-      (
-        icon: Icons.monetization_on_outlined,
-        label: l10n.featureMonthlyCoins(TierEntitlements.monthlyCoins(t)),
-      ),
-      (
-        icon: Icons.event_available_outlined,
-        label: l10n.featureEvents(count(TierEntitlements.maxEvents(t))),
-      ),
-      // Boosts are omitted rather than shown as zero: the Base pack grants
-      // none, and "0 profile boosts a month" is not a feature.
-      if (TierEntitlements.boostsPerMonth(t) > 0)
-        (
-          icon: Icons.rocket_launch_outlined,
-          label: l10n.featureBoosts(TierEntitlements.boostsPerMonth(t)),
-        ),
-      (
-        icon: Icons.visibility_outlined,
-        label: l10n.featureDiscoveryReveals(TierEntitlements.discoveryFreeReveal(t)),
-      ),
-    ];
+    final rows = <Widget>[];
+    void add(Widget row) => rows.add(_animated(row, rows.length, reduceMotion));
 
-    // Perks that only exist above a certain tier - shown only when included,
-    // so the list reads as "what you get", never "what you do not".
+    add(_plainRow(
+      const Icon(Icons.chat_bubble_outline, size: 20),
+      l10n.featureDailyConnects(count(TierEntitlements.maxDailyConnects(t))),
+    ));
+    add(_plainRow(
+      const Icon(Icons.monetization_on_outlined, size: 20),
+      l10n.featureMonthlyCoins(TierEntitlements.monthlyCoins(t)),
+    ));
+    add(_plainRow(
+      const Icon(Icons.event_available_outlined, size: 20),
+      l10n.featureEvents(count(TierEntitlements.maxEvents(t))),
+    ));
+    // Omitted rather than shown as zero: the Base pack grants no boosts, and
+    // "0 profile boosts a month" is not a feature.
+    if (TierEntitlements.boostsPerMonth(t) > 0) {
+      add(_plainRow(
+        const Icon(Icons.rocket_launch_outlined, size: 20),
+        l10n.featureBoosts(TierEntitlements.boostsPerMonth(t)),
+      ));
+    }
+    add(_plainRow(
+      const Icon(Icons.visibility_outlined, size: 20),
+      l10n.featureDiscoveryReveals(TierEntitlements.discoveryFreeReveal(t)),
+    ));
+
+    // Perks that only exist above a certain tier - listed only when included,
+    // so this reads as "what you get", never "what you do not".
     if (TierEntitlements.travelModeEnabled(t)) {
-      rows.add((icon: Icons.flight_takeoff, label: l10n.featureTravelMode));
+      add(_plainRow(
+        const Icon(Icons.flight_takeoff, size: 20),
+        l10n.featureTravelMode,
+      ));
     } else if (TierEntitlements.canSeeWhoConnected(t)) {
-      rows.add((icon: Icons.people_alt_outlined, label: l10n.featureWhoConnected));
+      add(_plainRow(
+        const Icon(Icons.people_alt_outlined, size: 20),
+        l10n.featureWhoConnected,
+      ));
     }
 
-    return rows.take(_maxRows).toList();
+    return rows;
   }
 
   @override
@@ -142,7 +152,7 @@ class _TierRevealDialogState extends State<TierRevealDialog>
     final l10n = AppLocalizations.of(context)!;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final offer = widget.offer;
-    final features = _features(l10n);
+    final features = _featureRows(l10n, reduceMotion);
 
     final headline = offer.isPreRegistration && offer.tier != null
         ? offer.tier!
@@ -187,12 +197,11 @@ class _TierRevealDialogState extends State<TierRevealDialog>
                       ),
                     ),
                     const SizedBox(height: 12),
-                    for (var i = 0; i < features.length; i++)
-                      _featureRow(features[i], i, reduceMotion),
+                    ...features,
                     if ((offer.baseMembershipDays ?? 0) > 0) ...[
                       const SizedBox(height: 4),
                       _plainRow(
-                        Icons.verified_outlined,
+                        const Icon(Icons.verified_outlined, size: 20),
                         l10n.offerBaseLine(
                           humaniseDuration(l10n, offer.baseMembershipDays!),
                         ),
@@ -200,7 +209,7 @@ class _TierRevealDialogState extends State<TierRevealDialog>
                     ],
                     if ((offer.coins ?? 0) > 0)
                       _plainRow(
-                        Icons.savings_outlined,
+                        const Icon(Icons.savings_outlined, size: 20),
                         l10n.offerCoinsLine(offer.coins!),
                       ),
                     const SizedBox(height: 12),
@@ -299,15 +308,9 @@ class _TierRevealDialogState extends State<TierRevealDialog>
     );
   }
 
-  Widget _featureRow(
-    ({IconData icon, String label}) f,
-    int index,
-    bool reduceMotion,
-  ) {
-    final row = _plainRow(f.icon, f.label);
+  /// Wraps a row in the staggered entrance, unless motion is reduced.
+  Widget _animated(Widget row, int index, bool reduceMotion) {
     if (reduceMotion) return row;
-
-    // Each row starts a little after the one before it.
     final start = 0.35 + (index * 0.09);
     final curve = CurvedAnimation(
       parent: _controller,
@@ -329,12 +332,15 @@ class _TierRevealDialogState extends State<TierRevealDialog>
     );
   }
 
-  Widget _plainRow(IconData icon, String label) => Padding(
+  Widget _plainRow(Icon icon, String label) => Padding(
         padding: const EdgeInsets.only(bottom: 10),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Icon(icon, size: 20, color: _gradient.last),
+            IconTheme(
+              data: IconThemeData(color: _gradient.last, size: 20),
+              child: icon,
+            ),
             const SizedBox(width: 10),
             Expanded(
               child: Text(
