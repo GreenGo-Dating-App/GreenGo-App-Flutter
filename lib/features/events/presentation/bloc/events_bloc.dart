@@ -5,6 +5,8 @@ import '../../domain/entities/event.dart';
 import '../../domain/repositories/events_repository.dart';
 import 'events_event.dart';
 import 'events_state.dart';
+import 'package:dartz/dartz.dart';
+import '../../../../core/error/failures.dart';
 
 /// Events BLoC
 ///
@@ -92,23 +94,62 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
   ) async {
     emit(const EventsLoading());
 
-    final result = await repository.getEventById(event.eventId);
+    // TIME-BOUND. The repository turns every throw into a Left, but a read that
+    // never comes back produces neither - and the loader screen shows a
+    // spinner for any state that is not loaded-or-error, so an unbounded await
+    // is an endless spinner with no way out. On timeout we surface an error the
+    // user can retreat from.
+    final result = await repository
+        .getEventById(event.eventId)
+        .timeout(
+          const Duration(seconds: 15),
+          onTimeout: () => const Left(ServerFailure('Loading the event timed out')),
+        );
 
-    result.fold(
-      (failure) {
+    await result.fold(
+      (failure) async {
         debugPrint('Failed to load event: ${failure.message}');
         emit(EventsError(failure.message));
       },
-      (loadedEvent) {
+      (loadedEvent) async {
         if (loadedEvent == null) {
           emit(const EventsError('Event not found'));
-        } else {
-          final attendees = _attendeesMap[event.eventId] ?? [];
-          emit(EventDetailLoaded(
-            event: loadedEvent,
-            attendees: attendees,
-          ));
+          return;
         }
+
+        // Attendees live in a subcollection and were previously read from
+        // `_attendeesMap` - a cache only LoadEventAttendees fills. Opening an
+        // event never dispatched that, so the roster was always empty. Fetch
+        // them here instead.
+        //
+        // Deliberately NON-FATAL and shown second: the event itself is what the
+        // user asked for, so it is emitted first and the roster fills in after.
+        // A slow or failing attendee read must never hold the page hostage -
+        // that is the same mistake as the unbounded read above.
+        emit(EventDetailLoaded(
+          event: loadedEvent,
+          attendees: _attendeesMap[event.eventId] ?? const [],
+        ));
+
+        final attendeesResult = await repository
+            .getEventAttendees(event.eventId)
+            .timeout(
+              const Duration(seconds: 10),
+              onTimeout: () => const Right(<EventAttendee>[]),
+            );
+        attendeesResult.fold(
+          (failure) => debugPrint('Attendees unavailable: ${failure.message}'),
+          (attendees) {
+            if (attendees.isEmpty) return;
+            _attendeesMap[event.eventId] = attendees;
+            if (!emit.isDone) {
+              emit(EventDetailLoaded(
+                event: loadedEvent,
+                attendees: attendees,
+              ));
+            }
+          },
+        );
       },
     );
   }
