@@ -11719,7 +11719,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventScanUseMobileApp =>
-      'QR check-in scanning is available in the GreenGo mobile app.';
+      'La scansione del QR per il check-in è disponibile nell\'app mobile GreenGo.';
 
   @override
   String get eventScanManageScanners => 'Gestisci scanner';
@@ -12949,27 +12949,28 @@ class AppLocalizationsIt extends AppLocalizations {
   String get adminBanned => 'Account bannato definitivamente';
 
   @override
-  String get storefrontFeaturedImage => 'Featured image';
+  String get storefrontFeaturedImage => 'Immagine in evidenza';
 
   @override
   String get storefrontFeaturedImageSubtitle =>
-      'The hero banner shown at the top of your storefront.';
+      'Il banner principale mostrato in cima alla tua vetrina.';
 
   @override
-  String get storefrontAddFeaturedImage => 'Add featured image';
+  String get storefrontAddFeaturedImage => 'Aggiungi immagine in evidenza';
 
   @override
-  String get storefrontProfileImage => 'Profile image';
+  String get storefrontProfileImage => 'Immagine del profilo';
 
   @override
   String get storefrontProfileImageSubtitle =>
-      'Your avatar, shown next to your business name.';
+      'Il tuo avatar, mostrato accanto al nome della tua attività.';
 
   @override
-  String get storefrontAddProfileImage => 'Add profile image';
+  String get storefrontAddProfileImage => 'Aggiungi immagine del profilo';
 
   @override
-  String get storefrontReplaceProfileImage => 'Replace profile image';
+  String get storefrontReplaceProfileImage =>
+      'Sostituisci immagine del profilo';
 
   @override
   String get preferenceBusinessOnly => 'Solo account business';

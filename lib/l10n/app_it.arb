@@ -4690,5 +4690,13 @@
   "offerDurationOneMonth": "1 mese",
   "offerDurationMonths": "{count} mesi",
   "offerDurationOneYear": "1 anno",
-  "offerDurationDays": "{count} giorni"
+  "offerDurationDays": "{count} giorni",
+  "eventScanUseMobileApp": "La scansione del QR per il check-in è disponibile nell'app mobile GreenGo.",
+  "storefrontFeaturedImage": "Immagine in evidenza",
+  "storefrontFeaturedImageSubtitle": "Il banner principale mostrato in cima alla tua vetrina.",
+  "storefrontAddFeaturedImage": "Aggiungi immagine in evidenza",
+  "storefrontProfileImage": "Immagine del profilo",
+  "storefrontProfileImageSubtitle": "Il tuo avatar, mostrato accanto al nome della tua attività.",
+  "storefrontAddProfileImage": "Aggiungi immagine del profilo",
+  "storefrontReplaceProfileImage": "Sostituisci immagine del profilo"
 }
