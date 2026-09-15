@@ -22,8 +22,14 @@
  * (App Store Connect -> Users and Access -> Integrations):
  *   ASC_KEY_ID=...            the 10-character Key ID
  *   ASC_ISSUER_ID=...         the issuer UUID
- *   ASC_PRIVATE_KEY_PATH=...  path to the downloaded AuthKey_XXXX.p8
- *   ASC_APP_ID=...            the app's numeric Apple ID (App Information page)
+ *   ASC_PRIVATE_KEY=...       the .p8 CONTENTS (or ASC_PRIVATE_KEY_BASE64,
+ *                             or ASC_PRIVATE_KEY_PATH for a local file)
+ *   ASC_APP_ID=...            optional: the numeric Apple ID. When absent it
+ *                             is looked up from ASC_BUNDLE_ID / BUNDLE_ID.
+ *
+ * On Codemagic the app_store_connect integration already provides the key id,
+ * issuer id and private key as APP_STORE_CONNECT_* variables, so a release
+ * build needs no extra secrets.
  *
  * The .p8 downloads exactly once and must never be committed.
  */
@@ -111,15 +117,38 @@ async function main() {
     );
   }
 
-  const keyId = process.env.ASC_KEY_ID;
-  const issuerId = process.env.ASC_ISSUER_ID;
-  const keyPath = process.env.ASC_PRIVATE_KEY_PATH;
-  const appId = process.env.ASC_APP_ID;
+  // Accept the credentials in whatever form the environment already has
+  // them.
+  //
+  // Codemagic's app_store_connect integration injects
+  // APP_STORE_CONNECT_KEY_IDENTIFIER / _ISSUER_ID / _PRIVATE_KEY into every
+  // build, so a release pipeline needs NO extra secrets - it only needs this
+  // check to read the ones already there. Demanding ASC_PRIVATE_KEY_PATH made
+  // that impossible: CI holds secrets as environment variables, not as files
+  // on disk, so the gate failed on a machine that had the credentials all
+  // along.
+  const keyId = process.env.ASC_KEY_ID || process.env.APP_STORE_CONNECT_KEY_IDENTIFIER;
+  const issuerId = process.env.ASC_ISSUER_ID || process.env.APP_STORE_CONNECT_ISSUER_ID;
 
-  if (!keyId || !issuerId || !keyPath || !appId) {
+  // Key material: contents (raw or base64) preferred; a path still works for
+  // a developer machine that has the .p8 downloaded.
+  const keyPath = process.env.ASC_PRIVATE_KEY_PATH;
+  const rawKey = process.env.ASC_PRIVATE_KEY || process.env.APP_STORE_CONNECT_PRIVATE_KEY;
+  const b64Key = process.env.ASC_PRIVATE_KEY_BASE64;
+  let privateKey = null;
+  if (rawKey && rawKey.includes('BEGIN')) privateKey = rawKey;
+  else if (b64Key) privateKey = Buffer.from(b64Key, 'base64').toString('utf8');
+  else if (keyPath && fs.existsSync(keyPath)) privateKey = fs.readFileSync(keyPath, 'utf8');
+
+  if (!keyId || !issuerId || !privateKey) {
     console.error(
       'App Store Connect credentials not set.\n' +
-        '  Needed: ASC_KEY_ID, ASC_ISSUER_ID, ASC_PRIVATE_KEY_PATH, ASC_APP_ID\n' +
+        '  key id    : ASC_KEY_ID      or APP_STORE_CONNECT_KEY_IDENTIFIER\n' +
+        '  issuer id : ASC_ISSUER_ID   or APP_STORE_CONNECT_ISSUER_ID\n' +
+        '  key       : ASC_PRIVATE_KEY or APP_STORE_CONNECT_PRIVATE_KEY (contents),\n' +
+        '              ASC_PRIVATE_KEY_BASE64, or ASC_PRIVATE_KEY_PATH (file)\n' +
+        '  On Codemagic the app_store_connect integration supplies all three\n' +
+        '  automatically - check it is attached to the workflow.\n' +
         '  This check is what proves Guideline 2.1(b) is fixed — do not submit without running it.'
     );
     // A check that silently skips is a check that cannot fail, which is how the
@@ -129,14 +158,29 @@ async function main() {
     process.exit(REQUIRE_CREDENTIALS ? 1 : 0);
   }
 
-  if (!fs.existsSync(keyPath)) fail(`private key not found at ${keyPath}`);
-  const token = makeToken({
-    keyId,
-    issuerId,
-    privateKey: fs.readFileSync(keyPath, 'utf8'),
-  });
+  const token = makeToken({ keyId, issuerId, privateKey });
 
   const base = 'https://api.appstoreconnect.apple.com/v1';
+
+  // The numeric app id is the one value nothing injects for us - but it is
+  // derivable from the bundle id, which the pipeline already knows. Looking
+  // it up removes a hand-copied number - and a whole class of 'wrong app'
+  // error - from the release checklist.
+  let appId = process.env.ASC_APP_ID;
+  if (!appId) {
+    const bundleId = process.env.ASC_BUNDLE_ID || process.env.BUNDLE_ID;
+    if (!bundleId) {
+      fail('set ASC_APP_ID, or ASC_BUNDLE_ID/BUNDLE_ID so it can be looked up');
+    }
+    const apps = await ascGetAll(
+      token,
+      `${base}/apps?filter[bundleId]=${encodeURIComponent(bundleId)}&fields[apps]=bundleId,name`
+    );
+    const app = apps.find((a) => a.attributes && a.attributes.bundleId === bundleId);
+    if (!app) fail(`no app in App Store Connect with bundle id ${bundleId}`);
+    appId = app.id;
+    console.log(`resolved ${bundleId} -> app id ${appId} (${app.attributes.name})`);
+  }
 
   // Consumables / non-consumables live on the app; subscriptions live inside
   // subscription groups, so they need a second walk.
