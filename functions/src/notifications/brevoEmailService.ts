@@ -1805,7 +1805,12 @@ interface GetEmailLogsRequest {
 
 export const getBrevoEmailLogs = onCall<GetEmailLogsRequest>(
   {
-    memory: '256MiB',
+    // 256MiB is not enough to LOAD this codebase, let alone run the query:
+    // index.js pulls in ~274 functions and needs ~200MB of resident memory
+    // before the handler is reached. The container was being OOM-killed
+    // during the readiness check, so every call returned 503 and the email
+    // log in the admin panel was simply dead.
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("getBrevoEmailLogs", async (request) => {
