@@ -135,3 +135,4 @@ __pycache__/
 # Pre-production Firebase config (generated)
 firebase_options_dev.dart
 lib/firebase_options_dev.dart
+firestore.rules.rollback
