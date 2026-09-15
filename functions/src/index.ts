@@ -345,6 +345,17 @@ export {
   backfillDeclaredAge,
 } from './safety/ageAssurance';
 
+// Account deletion cascade (Guideline 5.1.1(v), GDPR Art. 17)
+// Fires on auth deletion however it is triggered — app, admin panel, console.
+export { onUserDeletedCleanup } from './auth/deleteUserData';
+
+// Direct entitlement grants — the Guideline 3.1.1-safe replacement for coupon
+// codes. An admin gives the entitlement; the user redeems nothing.
+export {
+  grantEntitlement,
+  listEntitlementGrants,
+} from './admin/grantEntitlement';
+
 // Admin Panel Functions
 export {
   getUserActivityMetrics,

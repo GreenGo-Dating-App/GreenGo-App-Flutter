@@ -6569,5 +6569,6 @@
   "ageVerifyRejectedReused": "This document is already linked to another account.",
   "ageVerifyCta": "Verify now",
   "ageVerifyLater": "Not now",
-  "ageVerifyNeededToPost": "Verify your age to post"
+  "ageVerifyNeededToPost": "Verify your age to post",
+  "contactSupportSubtitle": "Questions, problems or a report — we reply by email"
 }

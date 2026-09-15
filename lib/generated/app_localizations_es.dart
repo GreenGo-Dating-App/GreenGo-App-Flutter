@@ -14011,4 +14011,8 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get ageVerifyNeededToPost => 'Verifica tu edad para publicar';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Dudas, problemas o denuncias: respondemos por correo';
 }

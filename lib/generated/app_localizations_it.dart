@@ -14004,4 +14004,8 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get ageVerifyNeededToPost => 'Verifica l\'età per pubblicare';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Domande, problemi o segnalazioni — rispondiamo via email';
 }

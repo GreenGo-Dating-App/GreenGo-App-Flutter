@@ -99,7 +99,9 @@ export async function grantMembership(
 export async function grantBaseMembership(
   uid: string,
   durationMs: number,
-  source: 'purchase' | 'coupon' = 'purchase',
+  // 'admin_grant' is the v4.0.0 replacement for coupon redemption: an admin
+  // gives the entitlement directly, with nothing for the user to redeem.
+  source: 'purchase' | 'coupon' | 'admin_grant' = 'purchase',
 ): Promise<{ newEndDate: Date; newEndTimestamp: admin.firestore.Timestamp }> {
   const profileSnap = await db.collection('profiles').doc(uid).get();
   const profileData = profileSnap.data() || {};

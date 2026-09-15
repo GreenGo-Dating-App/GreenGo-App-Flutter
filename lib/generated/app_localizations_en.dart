@@ -13846,4 +13846,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ageVerifyNeededToPost => 'Verify your age to post';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Questions, problems or a report — we reply by email';
 }

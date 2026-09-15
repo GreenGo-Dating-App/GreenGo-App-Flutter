@@ -14028,4 +14028,8 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get ageVerifyNeededToPost => 'Alter bestätigen, um zu posten';
+
+  @override
+  String get contactSupportSubtitle =>
+      'Fragen, Probleme oder Meldungen — wir antworten per E-Mail';
 }

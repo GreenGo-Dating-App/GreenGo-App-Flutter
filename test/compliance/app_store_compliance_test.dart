@@ -263,6 +263,52 @@ void main() {
     });
   });
 
+  group('Guideline 1.2 — user-generated content safety', () {
+    // Every screen that shows content authored by someone else must offer a
+    // way to report it and to block its author. Group chat, event chat and
+    // video discovery all shipped without one; this list is what stops the
+    // next surface doing the same.
+    const ugcSurfaces = <String>[
+      'lib/features/chat/presentation/screens/chat_screen.dart',
+      'lib/features/chat/presentation/screens/group_chat_screen.dart',
+      'lib/features/events/presentation/screens/event_chat_screen.dart',
+      'lib/features/communities/presentation/screens/community_detail_screen.dart',
+      'lib/features/discovery/presentation/screens/profile_detail_screen.dart',
+      'lib/features/video_profiles/presentation/screens/video_discovery_screen.dart',
+    ];
+
+    test('every UGC surface offers report and block', () {
+      final missing = <String>[];
+      for (final path in ugcSurfaces) {
+        final file = File(path);
+        if (!file.existsSync()) {
+          missing.add('$path (file not found)');
+          continue;
+        }
+        final src = file.readAsStringSync();
+        // Either form counts: the imperative sheet, the AppBar overflow
+        // widget, or the community wrapper around the sheet.
+        final hasReport = src.contains('showReportBlockSheet') ||
+            src.contains('showCommunityReportSheet') ||
+            src.contains('SafetyActionsMenu') ||
+            src.contains('ReportUser');
+        if (!hasReport) missing.add(path);
+      }
+      expect(missing, isEmpty,
+          reason: 'These screens show other people content with no way to '
+              'report it. Guideline 1.2 requires one on every such surface.');
+    });
+
+    test('the shared sheet offers the underage reason', () {
+      // 1.2.1 makes under-age content a first-class concern, so it must be a
+      // selectable reason rather than buried under "Other".
+      final sheet = File(
+              'lib/features/safety/presentation/widgets/report_block_sheet.dart')
+          .readAsStringSync();
+      expect(sheet.contains('chatReportReasonUnderage'), isTrue);
+    });
+  });
+
   group('Video chat was removed in v4.0.0', () {
     test('no tier advertises a video chat capability', () {
       final offenders = <String>[];
