@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/utils/conversation_queries.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../../../core/services/blocked_users_service.dart';
@@ -1009,11 +1010,14 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   }) async {
     try {
       // Check if conversation already exists for this match
-      final existing = await firestore
-          .collection('conversations')
-          .where('matchId', isEqualTo: matchId)
-          .limit(1)
-          .get();
+      // Scoped to userId1 (the acting user on this side of the match) so the
+      // query is provable under the conversations rule - see
+      // conversationsByMatchId.
+      final existing = await conversationsByMatchId(
+        firestore,
+        matchId,
+        uid: userId1,
+      ).limit(1).get();
 
       if (existing.docs.isNotEmpty) return;
 

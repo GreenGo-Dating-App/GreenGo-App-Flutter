@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../core/utils/conversation_queries.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/constants/app_colors.dart';
@@ -117,19 +118,21 @@ Future<void> openConnectChat(
     // already in the local Firestore cache) this resolves INSTANTLY with no
     // network round-trip, so re-opening a chat is immediate. Only a cache miss
     // falls through to a (time-bounded) server read.
-    final convs = FirebaseFirestore.instance.collection('conversations');
+    final scoped = conversationsByMatchId(
+      FirebaseFirestore.instance,
+      syntheticMatchId,
+      uid: currentUserId,
+    );
     QuerySnapshot<Map<String, dynamic>> existing;
     try {
-      existing = await convs
-          .where('matchId', isEqualTo: syntheticMatchId)
+      existing = await scoped
           .limit(1)
           .get(const GetOptions(source: Source.cache));
       if (existing.docs.isEmpty) {
         throw StateError('cache-miss'); // fall through to server below
       }
     } catch (_) {
-      existing = await convs
-          .where('matchId', isEqualTo: syntheticMatchId)
+      existing = await scoped
           .limit(1)
           .get()
           .timeout(const Duration(seconds: 10));
