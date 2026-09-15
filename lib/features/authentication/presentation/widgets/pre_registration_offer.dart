@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import 'tier_reveal_dialog.dart';
 
 /// What a given email will receive on registration.
 ///
@@ -86,87 +87,17 @@ String humaniseDuration(AppLocalizations l10n, int days) {
 }
 
 /// The dialog shown once the email is entered on the registration form.
+///
+/// Delegates to [TierRevealDialog], which animates the tier badge in and then
+/// staggers the feature list - read from TierEntitlements, so what is promised
+/// here is what the app actually enforces.
 Future<void> showPreRegistrationOfferDialog(
   BuildContext context,
   PreRegistrationOffer offer,
 ) {
-  final l10n = AppLocalizations.of(context)!;
-
-  final lines = <String>[];
-  if (offer.isPreRegistration) {
-    if (offer.tier != null && (offer.membershipDays ?? 0) > 0) {
-      lines.add(l10n.offerTierLine(
-        offer.tier!,
-        humaniseDuration(l10n, offer.membershipDays!),
-      ));
-    }
-    if ((offer.baseMembershipDays ?? 0) > 0) {
-      lines.add(l10n.offerBaseLine(
-        humaniseDuration(l10n, offer.baseMembershipDays!),
-      ));
-    }
-  } else {
-    // The 2026 welcome pack: one month free, on the house.
-    lines.add(l10n.offerFreeMonthLine);
-  }
-  if ((offer.coins ?? 0) > 0) {
-    lines.add(l10n.offerCoinsLine(offer.coins!));
-  }
-
   return showDialog<void>(
     context: context,
-    builder: (context) => AlertDialog(
-      backgroundColor: AppColors.backgroundCard,
-      title: Row(
-        children: [
-          const Icon(Icons.card_giftcard, color: AppColors.richGold),
-          const SizedBox(width: 8),
-          Flexible(
-            child: Text(
-              offer.isPreRegistration
-                  ? l10n.offerPreRegisteredTitle
-                  : l10n.offerWelcomePackTitle,
-              style: const TextStyle(color: AppColors.textPrimary),
-            ),
-          ),
-        ],
-      ),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          for (final line in lines)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 8),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Icon(Icons.check_circle,
-                      size: 18, color: AppColors.richGold),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      line,
-                      style: const TextStyle(color: AppColors.textPrimary),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          const SizedBox(height: 4),
-          Text(
-            l10n.offerAppliedFromToday,
-            style: const TextStyle(color: AppColors.textSecondary, fontSize: 13),
-          ),
-        ],
-      ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.of(context).pop(),
-          child: Text(l10n.ok,
-              style: const TextStyle(color: AppColors.richGold)),
-        ),
-      ],
-    ),
+    barrierDismissible: true,
+    builder: (_) => TierRevealDialog(offer: offer),
   );
 }

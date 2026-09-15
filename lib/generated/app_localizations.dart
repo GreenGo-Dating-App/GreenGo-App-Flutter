@@ -24773,6 +24773,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} days'**
   String offerDurationDays(int count);
+
+  /// No description provided for @featureIncludedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'WHAT\'S INCLUDED'**
+  String get featureIncludedTitle;
+
+  /// No description provided for @featureUnlimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited'**
+  String get featureUnlimited;
+
+  /// No description provided for @featureDailyConnects.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} new connections every day'**
+  String featureDailyConnects(String count);
+
+  /// No description provided for @featureMonthlyCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'{coins} coins every month'**
+  String featureMonthlyCoins(int coins);
+
+  /// No description provided for @featureEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} events running at once'**
+  String featureEvents(String count);
+
+  /// No description provided for @featureBoosts.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} profile boosts a month'**
+  String featureBoosts(int count);
+
+  /// No description provided for @featureDiscoveryReveals.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} profiles revealed at a time'**
+  String featureDiscoveryReveals(int count);
+
+  /// No description provided for @featureTravelMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel mode - discover people anywhere'**
+  String get featureTravelMode;
+
+  /// No description provided for @featureWhoConnected.
+  ///
+  /// In en, this message translates to:
+  /// **'See who connected with you'**
+  String get featureWhoConnected;
 }
 
 class _AppLocalizationsDelegate

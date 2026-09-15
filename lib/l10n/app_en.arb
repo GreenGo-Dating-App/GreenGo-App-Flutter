@@ -6621,5 +6621,49 @@
         "type": "int"
       }
     }
-  }
+  },
+  "featureIncludedTitle": "WHAT'S INCLUDED",
+  "featureUnlimited": "Unlimited",
+  "featureDailyConnects": "{count} new connections every day",
+  "@featureDailyConnects": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "featureMonthlyCoins": "{coins} coins every month",
+  "@featureMonthlyCoins": {
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "featureEvents": "{count} events running at once",
+  "@featureEvents": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "featureBoosts": "{count} profile boosts a month",
+  "@featureBoosts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "featureDiscoveryReveals": "{count} profiles revealed at a time",
+  "@featureDiscoveryReveals": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "featureTravelMode": "Travel mode - discover people anywhere",
+  "featureWhoConnected": "See who connected with you"
 }

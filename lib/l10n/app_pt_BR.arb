@@ -4698,5 +4698,14 @@
   "storefrontProfileImage": "Imagem de perfil",
   "storefrontProfileImageSubtitle": "Seu avatar, exibido ao lado do nome da sua empresa.",
   "storefrontAddProfileImage": "Adicionar imagem de perfil",
-  "storefrontReplaceProfileImage": "Substituir imagem de perfil"
+  "storefrontReplaceProfileImage": "Substituir imagem de perfil",
+  "featureIncludedTitle": "O QUE ESTÁ INCLUÍDO",
+  "featureUnlimited": "Ilimitados",
+  "featureDailyConnects": "{count} novas conexões por dia",
+  "featureMonthlyCoins": "{coins} moedas por mês",
+  "featureEvents": "{count} eventos acontecendo ao mesmo tempo",
+  "featureBoosts": "{count} impulsos de perfil por mês",
+  "featureDiscoveryReveals": "{count} perfis revelados por vez",
+  "featureTravelMode": "Modo viagem - descubra pessoas em qualquer lugar",
+  "featureWhoConnected": "Veja quem se conectou com você"
 }

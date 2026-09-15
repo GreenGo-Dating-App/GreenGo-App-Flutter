@@ -4698,5 +4698,14 @@
   "storefrontProfileImage": "Immagine del profilo",
   "storefrontProfileImageSubtitle": "Il tuo avatar, mostrato accanto al nome della tua attività.",
   "storefrontAddProfileImage": "Aggiungi immagine del profilo",
-  "storefrontReplaceProfileImage": "Sostituisci immagine del profilo"
+  "storefrontReplaceProfileImage": "Sostituisci immagine del profilo",
+  "featureIncludedTitle": "COSA INCLUDE",
+  "featureUnlimited": "Illimitati",
+  "featureDailyConnects": "{count} nuovi contatti ogni giorno",
+  "featureMonthlyCoins": "{coins} monete ogni mese",
+  "featureEvents": "{count} eventi attivi contemporaneamente",
+  "featureBoosts": "{count} boost del profilo al mese",
+  "featureDiscoveryReveals": "{count} profili visibili per volta",
+  "featureTravelMode": "Modalità viaggio - scopri persone ovunque",
+  "featureWhoConnected": "Scopri chi si è connesso con te"
 }
