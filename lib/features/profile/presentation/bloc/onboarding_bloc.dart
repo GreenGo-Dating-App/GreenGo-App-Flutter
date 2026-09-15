@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -366,8 +365,9 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
         nativeLanguage: currentState.nativeLanguage,
         // Travel preference
         travelPreference: currentState.travelPreference,
-        // No trial bypass — membership is granted only via Apple/Google store subscription
-        hasBaseMembership: false,
+        // Entitlements are NOT set from here. applySignupGrants has already
+        // decided them (a pre-registration coupon, or the 2026 welcome pack),
+        // and the datasource strips these fields from client writes anyway.
       );
 
       final result = await createProfile(CreateProfileParams(profile: profile));
@@ -387,8 +387,11 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
             submitStage: OnboardingSubmitStage.grantingCoins,
           ));
 
-          // Grant 100 welcome coins on registration.
-          await _grantWelcomeCoins(currentState.userId);
+          // Welcome coins are granted SERVER-SIDE by applySignupGrants, which
+          // runs the moment users/{uid} is created at registration. Granting
+          // them again here would try to take the balance to 200 - and the
+          // coin rules refuse a second client top-up, so the attempt failed
+          // silently inside its try/catch and simply wasted a round-trip.
 
           // NOTE: We intentionally do NOT auto-grant a 7-day Base membership
           // trial here. The trial comes from the App Store / Play subscription
@@ -401,39 +404,6 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
           emit(OnboardingComplete(profile: createdProfile));
         },
       );
-    }
-  }
-
-  /// Grant 100 welcome coins to a newly registered user
-  Future<void> _grantWelcomeCoins(String userId) async {
-    try {
-      final firestore = FirebaseFirestore.instance;
-      final now = DateTime.now();
-      final balanceRef = firestore.collection('coinBalances').doc(userId);
-      final batchEntry = {
-        'batchId': 'welcome_${now.millisecondsSinceEpoch}',
-        'initialCoins': 100,
-        'remainingCoins': 100,
-        'source': 'reward',
-        'acquiredDate': Timestamp.fromDate(now),
-      };
-
-      final balanceDoc = await balanceRef.get();
-      if (!balanceDoc.exists) {
-        await balanceRef.set({
-          'userId': userId,
-          'totalCoins': 100,
-          'earnedCoins': 100,
-          'purchasedCoins': 0,
-          'giftedCoins': 0,
-          'spentCoins': 0,
-          'lastUpdated': Timestamp.fromDate(now),
-          'coinBatches': [batchEntry],
-        });
-      }
-      // If balance already exists, daily coins will handle it
-    } catch (e) {
-      debugPrint('Welcome coins error: $e');
     }
   }
 

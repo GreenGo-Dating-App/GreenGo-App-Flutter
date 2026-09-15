@@ -9,6 +9,50 @@ import '../../../../core/utils/image_compression.dart';
 import '../models/profile_model.dart';
 import '../../../../core/services/image_moderation_gate.dart';
 
+/// Fields the SERVER owns. A client write must never carry them.
+///
+/// Entitlements are granted by Cloud Functions running on the Admin SDK
+/// (applySignupGrants, the purchase-verification callables, grantEntitlement)
+/// and are held immutable by firestore.rules. Moderation and age-assurance
+/// flags are decided by admins for the same reason. `signupGrantsApplied*` is
+/// the grant idempotency marker - overwriting it would let the welcome pack be
+/// granted twice.
+///
+/// Sending any of them - even unchanged, even as the same value - risks the
+/// whole write being refused, which is exactly how finishing registration came
+/// to fail: the profile model always serialised hasBaseMembership, and once the
+/// server started granting a base membership at signup the client's `false`
+/// no longer matched.
+const _serverOwnedProfileFields = <String>{
+  'membershipTier',
+  'membershipStartDate',
+  'membershipEndDate',
+  'membershipSource',
+  'hasBaseMembership',
+  'baseMembershipSource',
+  'baseMembershipStartDate',
+  'baseMembershipEndDate',
+  'isAdmin',
+  'isBanned',
+  'isAgeVerified',
+  'ageVerification',
+  'isBusinessVerified',
+  'businessVerified',
+  'signupGrantsApplied',
+  'signupGrantsAppliedAt',
+  // Denormalised counters maintained by other users' actions.
+  'followerCount',
+  'ratingSum',
+  'ratingCount',
+};
+
+/// The part of a profile a client may write.
+Map<String, dynamic> clientWritableProfile(Map<String, dynamic> data) {
+  final out = Map<String, dynamic>.from(data)
+    ..removeWhere((k, _) => _serverOwnedProfileFields.contains(k));
+  return out;
+}
+
 abstract class ProfileRemoteDataSource {
   Future<ProfileModel> createProfile(ProfileModel profile);
   Future<ProfileModel> getProfile(String userId);
@@ -45,8 +89,13 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
   @override
   Future<ProfileModel> createProfile(ProfileModel profile) async {
     try {
+      // MERGE, and without the server-owned fields. The profile document
+      // usually already exists by this point - applySignupGrants creates it to
+      // record the welcome pack - so a bare set() would both be refused by the
+      // rules and erase what the server had just written.
       await firestore.collection('profiles').doc(profile.userId).set(
-            profile.toJson(),
+            clientWritableProfile(profile.toJson()),
+            SetOptions(merge: true),
           );
       return profile;
     } on FirebaseException catch (e) {
