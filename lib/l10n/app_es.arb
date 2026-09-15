@@ -4690,5 +4690,13 @@
   "offerDurationOneMonth": "1 mes",
   "offerDurationMonths": "{count} meses",
   "offerDurationOneYear": "1 año",
-  "offerDurationDays": "{count} días"
+  "offerDurationDays": "{count} días",
+  "eventScanUseMobileApp": "El escaneo de QR para el registro está disponible en la app móvil de GreenGo.",
+  "storefrontFeaturedImage": "Imagen destacada",
+  "storefrontFeaturedImageSubtitle": "El banner principal que aparece en la parte superior de tu escaparate.",
+  "storefrontAddFeaturedImage": "Añadir imagen destacada",
+  "storefrontProfileImage": "Imagen de perfil",
+  "storefrontProfileImageSubtitle": "Tu avatar, mostrado junto al nombre de tu negocio.",
+  "storefrontAddProfileImage": "Añadir imagen de perfil",
+  "storefrontReplaceProfileImage": "Reemplazar imagen de perfil"
 }
