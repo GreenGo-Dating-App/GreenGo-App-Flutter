@@ -19,6 +19,26 @@ class ServerFailure extends Failure {
   const ServerFailure([super.message = 'Server error occurred']);
 }
 
+/// An upload the server refused on moderation grounds.
+///
+/// Distinct from ServerFailure because the UI treats it completely
+/// differently: a rejection is explained to the user in a dialog, in their own
+/// language, with a way forward - not shown as a generic red "upload failed"
+/// snackbar that tells them nothing about what to do next.
+class PhotoRejectedFailure extends Failure {
+  const PhotoRejectedFailure(this.reasons)
+      : super('image-rejected');
+
+  /// Server reason codes: 'adult', 'racy', 'violence', 'no_face',
+  /// 'verification_failed'.
+  final List<String> reasons;
+
+  bool get isNudity => reasons.contains('adult') || reasons.contains('racy');
+
+  @override
+  List<Object?> get props => [message, reasons];
+}
+
 class CacheFailure extends Failure {
   const CacheFailure([super.message = 'Cache error occurred']);
 }

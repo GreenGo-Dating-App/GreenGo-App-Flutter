@@ -2563,6 +2563,8 @@
   "photoDeleteMainWarning": "Esta é a tua foto principal. A próxima foto passará a ser a tua foto principal (deve mostrar o teu rosto). Continuar?",
   "photoExplicitContent": "Esta foto pode conter conteúdo inapropriado. As fotos na app não devem mostrar nudez, roupa interior ou conteúdo explícito.",
   "photoExplicitNudity": "Esta foto parece conter nudez ou conteúdo explícito. Todas as fotos na app devem ser apropriadas e com roupa adequada.",
+  "photoPrivateAlbumSuggestion": "Podes enviar esta foto para o teu album privado, onde so a veem as pessoas a quem deres acesso.",
+  "photoUploadDeniedNudity": "Envio recusado - violacao: nudez. As fotos do teu perfil publico tem de mostrar pessoas totalmente vestidas.",
   "photoFailedPickImage": "Falha ao selecionar imagem: {error}",
   "photoLongPressReorder": "Pressão longa e arraste para reordenar",
   "photoMainNoFace": "A tua foto principal deve mostrar o teu rosto claramente. Não foi detetado nenhum rosto nesta foto.",

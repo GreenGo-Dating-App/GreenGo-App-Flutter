@@ -14,6 +14,7 @@ import '../../domain/usecases/upload_photo.dart';
 import '../../domain/usecases/verify_photo.dart';
 import 'profile_event.dart';
 import 'profile_state.dart';
+import '../../../../core/error/failures.dart';
 
 class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
 
@@ -85,6 +86,18 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     );
   }
 
+  /// Server moderation reasons -> the localized message the user sees.
+  ///
+  /// Reuses PhotoValidationError so a server rejection and an on-device one
+  /// read identically to the user - they do not care which side caught it.
+  PhotoValidationError _codeForRejection(List<String> reasons) {
+    if (reasons.contains('adult')) return PhotoValidationError.explicitNudity;
+    if (reasons.contains('racy')) return PhotoValidationError.tooMuchSkin;
+    if (reasons.contains('violence')) return PhotoValidationError.explicitContent;
+    if (reasons.contains('no_face')) return PhotoValidationError.mainNoFace;
+    return PhotoValidationError.explicitContent;
+  }
+
   Future<void> _onProfilePhotoUploadRequested(
     ProfilePhotoUploadRequested event,
     Emitter<ProfileState> emit,
@@ -141,7 +154,18 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     );
 
     result.fold(
-      (failure) => emit(ProfileError(message: failure.message)),
+      (failure) {
+        // A moderation rejection gets the explained dialog, in the user's
+        // language, with the private-album route out. Everything else stays a
+        // generic error.
+        if (failure is PhotoRejectedFailure) {
+          emit(ProfilePhotoValidationFailed(
+            errorCode: _codeForRejection(failure.reasons),
+          ));
+          return;
+        }
+        emit(ProfileError(message: failure.message));
+      },
       (photoUrl) => emit(ProfilePhotoUploaded(photoUrl: photoUrl)),
     );
   }

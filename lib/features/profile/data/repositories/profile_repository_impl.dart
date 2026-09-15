@@ -84,7 +84,7 @@ class ProfileRepositoryImpl implements ProfileRepository {
       );
       return Right(result);
     } on ImageRejectedException catch (e) {
-      return Left(ServerFailure('image-rejected:${e.reasons.join(",")}'));
+      return Left(PhotoRejectedFailure(e.reasons));
     } on ServerException catch (e) {
       return Left(ServerFailure( e.message));
     } catch (e) {

@@ -104,11 +104,17 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
       case PhotoValidationError.mainNotForward:
         return l10n?.photoMainNotForward ?? 'Please use a photo where your face is clearly visible.';
       case PhotoValidationError.explicitNudity:
-        return l10n?.photoExplicitNudity ?? 'This photo contains nudity. Public photos must be fully clothed.';
+        // Upload denied for nudity. Tell the user the photo is not lost: the
+        // private album accepts it, and is exempt from this check.
+        return '${l10n?.photoUploadDeniedNudity ?? 'Upload denied - violation: nudity. Public photos must be fully clothed.'}'
+            '\n\n'
+            '${l10n?.photoPrivateAlbumSuggestion ?? 'You can upload this photo to your private album instead.'}';
       case PhotoValidationError.explicitContent:
         return l10n?.photoExplicitContent ?? 'This photo contains inappropriate content.';
       case PhotoValidationError.tooMuchSkin:
-        return l10n?.photoTooMuchSkin ?? 'This photo shows too much skin exposure.';
+        return '${l10n?.photoTooMuchSkin ?? 'This photo shows too much skin exposure.'}'
+            '\n\n'
+            '${l10n?.photoPrivateAlbumSuggestion ?? 'You can upload this photo to your private album instead.'}';
       case PhotoValidationError.tooLarge:
         return l10n?.photoTooLarge ?? 'Photo is too large. Maximum size is 10MB.';
       case null:

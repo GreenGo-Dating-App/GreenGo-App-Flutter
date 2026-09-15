@@ -7816,6 +7816,14 @@ class AppLocalizationsFr extends AppLocalizations {
       'Cette photo semble contenir de la nudité ou du contenu explicite. Toutes les photos dans l\'application doivent être appropriées et entièrement habillées.';
 
   @override
+  String get photoPrivateAlbumSuggestion =>
+      'Vous pouvez envoyer cette photo dans votre album prive, ou seules les personnes autorisees la verront.';
+
+  @override
+  String get photoUploadDeniedNudity =>
+      'Envoi refuse - infraction : nudite. Les photos de votre profil public doivent montrer des personnes entierement habillees.';
+
+  @override
   String photoFailedPickImage(Object error) {
     return 'Échec de la sélection de l\'image : $error';
   }

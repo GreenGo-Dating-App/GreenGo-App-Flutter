@@ -81,6 +81,23 @@ class CountryResolver {
     'schweiz': 'switzerland',
     'osterreich': 'austria',
     'österreich': 'austria',
+    // 2026-09 expansion countries
+    'nz': 'new zealand',
+    'aotearoa': 'new zealand',
+    'suomi': 'finland',
+    'ísland': 'iceland',
+    'sakartvelo': 'georgia',
+    'republic of georgia': 'georgia',
+    'slovenija': 'slovenia',
+    'kampuchea': 'cambodia',
+    'kingdom of cambodia': 'cambodia',
+    'ceylon': 'sri lanka',
+    'hashemite kingdom of jordan': 'jordan',
+    'republic of kenya': 'kenya',
+    'republic of chile': 'chile',
+    'república de chile': 'chile',
+    'republic of ecuador': 'ecuador',
+    'república del ecuador': 'ecuador',
   };
 
   static String _norm(String s) {
