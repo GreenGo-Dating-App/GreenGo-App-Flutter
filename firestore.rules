@@ -466,6 +466,17 @@ service cloud.firestore {
         allow create, update: if isOwner(userId);
         allow delete: if false;
       }
+
+      // MONTHS - the boost allotment (TierGate._boostsThisMonth / recordBoost
+      // write usageLimits/{uid}/months/{YYYY-MM}). This subcollection had no
+      // rule, so once the catch-all was removed every boost check was denied
+      // and the feature failed for everyone. Rules do NOT cascade into
+      // subcollections, so hours/ and days/ above did not cover it.
+      match /months/{monthId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+        allow delete: if false;
+      }
     }
 
     // ============================================================================

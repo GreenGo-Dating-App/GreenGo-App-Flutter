@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/utils/conversation_queries.dart';
 import 'package:flutter/foundation.dart';
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/content_filter_service.dart';
@@ -316,9 +317,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // cache, return it INSTANTLY (works offline and skips a server round-trip
       // on chat open). The realtime message stream still updates it live.
       try {
-        final cached = await firestore
-            .collection('conversations')
-            .where('matchId', isEqualTo: matchId)
+        final cached = await conversationsByMatchId(firestore, matchId)
             .limit(1)
             .get(const GetOptions(source: Source.cache));
         if (cached.docs.isNotEmpty) {
@@ -330,11 +329,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       }
 
       // Check if conversation exists (server; falls back to cache when offline)
-      final querySnapshot = await firestore
-          .collection('conversations')
-          .where('matchId', isEqualTo: matchId)
-          .limit(1)
-          .get();
+      final querySnapshot =
+          await conversationsByMatchId(firestore, matchId).limit(1).get();
 
       if (querySnapshot.docs.isNotEmpty) {
         return ConversationModel.fromFirestore(querySnapshot.docs.first);
@@ -2088,20 +2084,21 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // conversation is already in the local cache, so this resolves instantly
       // with no network round-trip (makes re-opening a chat immediate). Only a
       // cache miss falls through to a time-bounded server read.
+      final scoped = conversationsByMatchId(
+        firestore,
+        syntheticMatchId,
+        uid: currentUserId,
+      );
       QuerySnapshot<Map<String, dynamic>> querySnapshot;
       try {
-        querySnapshot = await firestore
-            .collection('conversations')
-            .where('matchId', isEqualTo: syntheticMatchId)
+        querySnapshot = await scoped
             .limit(1)
             .get(const GetOptions(source: Source.cache));
         if (querySnapshot.docs.isEmpty) {
           throw StateError('cache-miss');
         }
       } catch (_) {
-        querySnapshot = await firestore
-            .collection('conversations')
-            .where('matchId', isEqualTo: syntheticMatchId)
+        querySnapshot = await scoped
             .limit(1)
             .get()
             .timeout(const Duration(seconds: 10));
