@@ -1413,11 +1413,150 @@ service cloud.firestore {
     }
 
     // ============================================================================
-    // CATCH-ALL for any other collections used by the app
+    // COLLECTIONS THAT PREVIOUSLY RELIED ON THE CATCH-ALL
     // ============================================================================
-    match /{document=**} {
+    // Until v4.0.0 this file ended with:
+    //
+    //   match /{document=**} { allow read: if isSignedIn(); }
+    //
+    // Firestore evaluates every matching rule and grants if ANY allows - there
+    // is no deny-overrides-allow - so that one block made every document in the
+    // database readable by any signed-in user, and silently defeated every
+    // narrower read rule above it, including the one on admin_users. It was
+    // found by an emulator test, not by reading the file.
+    //
+    // It could not simply be deleted: these collections had no rules of their
+    // own and would have been denied outright. They are grouped below by what
+    // they actually need.
+
+    // ── Public reference content ────────────────────────────────────────────
+    // Authored by us, served to everyone, never written by a client.
+    match /cultural_tips/{docId}       { allow read: if isSignedIn(); allow write: if false; }
+    match /daily_phrases/{docId}       { allow read: if isSignedIn(); allow write: if false; }
+    match /dating_etiquette/{docId}    { allow read: if isSignedIn(); allow write: if false; }
+    match /country_spotlights/{docId}  { allow read: if isSignedIn(); allow write: if false; }
+    match /safety_lessons/{docId}      { allow read: if isSignedIn(); allow write: if false; }
+    match /safety_modules/{docId}      { allow read: if isSignedIn(); allow write: if false; }
+    match /icebreakers/{docId}         { allow read: if isSignedIn(); allow write: if false; }
+    match /vocabulary_images/{docId}   { allow read: if isSignedIn(); allow write: if false; }
+    match /vocabulary_sentences/{docId}{ allow read: if isSignedIn(); allow write: if false; }
+    match /months/{docId}              { allow read: if isSignedIn(); allow write: if false; }
+    match /features/{docId}            { allow read: if isSignedIn(); allow write: if false; }
+    match /membership_config/{docId}   { allow read: if isSignedIn(); allow write: if false; }
+    match /event_country_stats/{docId} { allow read: if isSignedIn(); allow write: if false; }
+
+    // ── Per-user data, keyed by uid ─────────────────────────────────────────
+    match /userSettings/{userId}           { allow read, write: if isOwner(userId); }
+    match /user_stats/{userId}             { allow read, write: if isOwner(userId); }
+    match /userLevels/{userId}             { allow read, write: if isOwner(userId); }
+    match /user_badge_preferences/{userId} { allow read, write: if isOwner(userId); }
+    match /safety_progress/{userId}        { allow read, write: if isOwner(userId); }
+
+    // ── Per-user data, owned through a userId field ─────────────────────────
+    // The client queries these with where('userId', '==', uid), which is what
+    // lets a list request satisfy a rule written against resource.data.
+    match /userBadges/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;  // awarded server-side
+    }
+    match /userChallenges/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /userAchievements/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /user_achievements/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /user_challenges/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /language_progress/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+
+    // ── Money and orders ────────────────────────────────────────────────────
+    // The sharpest edge of the catch-all: every signed-in user could read every
+    // order and purchase in the system - amounts, products, who bought what.
+    // Written only by the purchase-verification callables and Stripe webhooks,
+    // which run on the Admin SDK.
+    match /orders/{orderId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /purchases/{purchaseId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /stripe_orders/{orderId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /account_actions/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+
+    // ── Social and business ─────────────────────────────────────────────────
+    match /businesses/{businessId} {
       allow read: if isSignedIn();
-      allow write: if isAdminPanelUser();
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('ownerId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+    match /ratings/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+    match /reviews/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+    match /spots/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('createdBy', '') == request.auth.uid;
+      allow delete: if false;
+    }
+    match /cards/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ── Internal ────────────────────────────────────────────────────────────
+    // No client business reading any of these. The Admin SDK bypasses rules, so
+    // denying everything here costs the server nothing.
+    //
+    // `leads` in particular was a commercial exposure as much as a privacy one:
+    // a lead list readable by every signed-in user.
+    match /admins/{docId}         { allow read, write: if false; }
+    match /ai_cache/{docId}       { allow read, write: if false; }
+    match /feature_trials/{docId} { allow read, write: if false; }
+    match /leads/{docId}          { allow read, write: if false; }
+    match /flashcard_decks/{docId}{ allow read, write: if false; }
+
+    // ============================================================================
+    // DEFAULT DENY
+    // ============================================================================
+    // Written out rather than omitted, so the intent is explicit and nobody
+    // re-adds a permissive catch-all "because there wasn't one".
+    //
+    // A collection reaching this rule is denied. If something legitimate breaks
+    // after a deploy it will surface as permission-denied on a named path - add
+    // an explicit rule above, and add a case to tool/rules_security_test.cjs.
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }

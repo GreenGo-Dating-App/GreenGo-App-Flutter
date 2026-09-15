@@ -187,18 +187,51 @@ async function main() {
   );
 
   console.log('\nFindings 7 & 8 - admin surface');
-  await knownOpen(
-    'non-admin cannot read the admin roster',
-    'Defeated by the catch-all `match /{document=**} { allow read: if isSignedIn() }` '
-      + 'at the end of firestore.rules. Firestore ORs every matching rule, so a broad '
-      + 'grant cannot be narrowed by a more specific one below it. Every signed-in user '
-      + 'can read every document in the database. 41 collections currently depend on '
-      + 'that catch-all, so removing it needs explicit rules for each of them first.',
-    () => getDocs(collection(cdb, 'admin_users'))
+  await denied('non-admin cannot read the admin roster', () =>
+    getDocs(collection(cdb, 'admin_users'))
   );
   await denied('non-admin cannot make themselves an admin', () =>
     setDoc(doc(cdb, 'admin_users', uidA), { role: 'superAdmin' })
   );
+
+
+  console.log('');
+  console.log('Finding 7 - the catch-all is gone');
+  await adb.collection('orders').doc('oB').set({ userId: uidB, amount: 999 });
+  await adb.collection('orders').doc('oA').set({ userId: uidA, amount: 10 });
+  await adb.collection('leads').doc('l1').set({ email: 'lead@x.y' });
+  await adb.collection('daily_phrases').doc('p1').set({ phrase: 'ciao' });
+  await adb.collection('userSettings').doc(uidB).set({ language: 'it' });
+  await adb.collection('a_collection_nobody_declared').doc('x').set({ a: 1 });
+
+  const mustDenyRead = (path, id) => () =>
+    getDoc(doc(cdb, path, id)).then((d) => {
+      // A denied READ on a doc that exists surfaces as permission-denied; this
+      // guard catches the case where the rule silently allowed it instead.
+      if (d.exists()) throw new Error('document was readable');
+    });
+
+  await denied('cannot read another user order', mustDenyRead('orders', 'oB'));
+  await allowed('CAN read own order', () =>
+    getDoc(doc(cdb, 'orders', 'oA')).then((d) => {
+      if (!d.exists()) throw new Error('own order not readable');
+    })
+  );
+  await denied('cannot list leads', () => getDocs(collection(cdb, 'leads')));
+  await allowed('CAN read public reference content', () =>
+    getDoc(doc(cdb, 'daily_phrases', 'p1')).then((d) => {
+      if (!d.exists()) throw new Error('reference content not readable');
+    })
+  );
+  await denied('cannot write public reference content', () =>
+    setDoc(doc(cdb, 'daily_phrases', 'p2'), { phrase: 'forged' })
+  );
+  await denied('cannot read another user settings', mustDenyRead('userSettings', uidB));
+  await allowed('CAN write own settings', () =>
+    setDoc(doc(cdb, 'userSettings', uidA), { language: 'en' })
+  );
+  await denied('an undeclared collection is denied by default',
+    mustDenyRead('a_collection_nobody_declared', 'x'));
 
   console.log(`\n${passed} passed, ${failed} failed`);
   process.exit(failed === 0 ? 0 : 1);
