@@ -277,6 +277,49 @@ service cloud.firestore {
       allow delete: if isSignedIn();
     }
 
+    // ── Subcollections that had no rule of their own ────────────────────────
+    // Rules do not cascade: the /blocked_users rule above governs the ROOT
+    // collection only. These four paths matched nothing and were therefore
+    // denied, which is how the world map broke - it reads the caller's block
+    // list before placing a single pin, so the whole screen failed.
+
+    // The block list as stored under the profile. Private to its owner: who a
+    // user has blocked is nobody else's business.
+    match /profiles/{profileId}/blocked_users/{blockedId} {
+      allow read, write: if isOwner(profileId);
+    }
+
+    // Interaction log feeding recommendations. Append-only by its owner;
+    // history is never rewritten, so an edit or delete would only ever be an
+    // attempt to launder it.
+    match /user_interactions/{userId}/events/{eventId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId);
+      allow update, delete: if false;
+    }
+
+    // Reviews on a spot: public to signed-in users, written as yourself.
+    // Immutable once posted - editing a review after it has been read is how
+    // a rating becomes untrustworthy; removal is a moderation action.
+    match /spots/{spotId}/reviews/{reviewId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.get('userId', request.auth.uid) == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // Business leads. A visitor records THEMSELVES as a lead (the document id
+    // is their uid), and only the business owner may read the list - it is a
+    // commercial asset and a list of people's interest.
+    match /business_leads/{businessId}/leads/{leadId} {
+      allow read: if isSignedIn()
+        && exists(/databases/$(database)/documents/businesses/$(businessId))
+        && get(/databases/$(database)/documents/businesses/$(businessId))
+             .data.get('ownerId', '') == request.auth.uid;
+      allow create, update: if isSignedIn() && leadId == request.auth.uid;
+      allow delete: if false;
+    }
+
     // ============================================================================
     // NOTIFICATIONS COLLECTION
     // ============================================================================
