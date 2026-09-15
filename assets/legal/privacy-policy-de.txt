@@ -1,7 +1,7 @@
 DATENSCHUTZRICHTLINIE VON GREENGO CHAT
 
-Letzte Aktualisierung: 26. Januar 2026
-Datum des Inkrafttretens: 26. Januar 2026
+Letzte Aktualisierung: 15. September 2026
+Datum des Inkrafttretens: 15. September 2026
 
 ================================================================================
 EINLEITUNG
@@ -192,6 +192,17 @@ Wir koennen die folgenden sensiblen personenbezogenen Daten mit Ihrer ausdrueckl
 - Religioese Ueberzeugungen (wenn freiwillig angegeben)
 - Gesundheitsinformationen, die fuer Beziehungen relevant sind (wenn freiwillig offengelegt)
 - Biometrische Daten (nur zur Identitaetsueberpruefung)
+- Ausweisdokumentdaten (nur zur Altersverifikation - siehe Abschnitt 2.6)
+
+Wir speichern die fuer die Identitaets- oder Altersverifikation verwendeten
+Bilder nicht. Gesichtsverifikation und Altersverifikation werden verarbeitet,
+und das Ausgangsbild wird anschliessend geloescht; nur das abgeleitete Ergebnis
+wird aufbewahrt. Siehe Abschnitte 2.6 und 8.1(e).
+
+Der Widerruf der Einwilligung zur Altersverifikation entfernt Ihren
+verifizierten Status und damit die Moeglichkeit, Inhalte in Communities zu
+veroeffentlichen. Ihr uebriges Konto bleibt unberuehrt.
+
 
 Sie haben das Recht, Ihre Einwilligung zur Verarbeitung sensibler Daten jederzeit zu widerrufen.
 
@@ -265,6 +276,78 @@ iOS-Nutzer:
 3. Einige Funktionen koennen eingeschraenkt sein, wenn Berechtigungen deaktiviert sind
 
 Wir fordern nur Berechtigungen an, die fuer die Kernfunktionalitaet der App oder optionale Funktionen erforderlich sind, die Sie nutzen moechten. Wir greifen auf keine Daten zu, die ueber das fuer die angegebenen Zwecke Notwendige hinausgehen.
+
+================================================================================
+2.6 DATEN ZUR ALTERSVERIFIKATION
+================================================================================
+
+GreenGo richtet sich an Erwachsene ab 18 Jahren. Jede Nutzerin und jeder Nutzer
+gibt bei der Kontoerstellung das Geburtsdatum an; Konten, die ein Alter unter 18
+Jahren angeben, werden abgelehnt.
+
+Darueber hinaus verifizieren wir das Alter in zwei Faellen anhand eines
+Ausweisdokuments:
+
+a) Wenn Sie sich AUSSCHLIESSLICH mit einer Telefonnummer anmelden. Eine
+   Telefonnummer begruendet keine Identitaet; ein dahinter angegebenes
+   Geburtsdatum ist daher durch nichts gestuetzt.
+
+b) Wenn Sie Inhalte in einer Community VEROEFFENTLICHEN moechten. Lesen und
+   Beitreten erfordern nie eine Verifikation; nur das Veroeffentlichen, weil
+   veroeffentlichte Inhalte andere Menschen erreichen.
+
+WAS MIT IHREM DOKUMENT GESCHIEHT
+
+Das Verfahren ist darauf ausgelegt, Ihr Dokument Sekunden statt Tage
+aufzubewahren:
+
+1. Sie laden ein Foto eines Ausweisdokuments an einen Speicherort, der nur
+   beschreibbar ist. Es kann nicht zurueckgelesen werden - weder von Ihnen noch
+   von unseren Mitarbeitenden.
+2. Unsere Systeme lesen das Dokument automatisch mittels optischer
+   Zeichenerkennung, um das Geburtsdatum zu entnehmen.
+3. Das Bild wird im selben Vorgang geloescht, unabhaengig davon, ob die
+   Verifikation gelingt oder scheitert. Kein Mitarbeitender sieht es, und es gibt
+   keine Oberflaeche, die es anzeigen koennte.
+
+WAS WIR AUFBEWAHREN
+
+Nur das, was die Entscheidung stuetzt:
+
+- Das aus dem Dokument gelesene Geburtsdatum
+- Ob es mit dem von Ihnen angegebenen Geburtsdatum uebereinstimmte
+- Einen kryptografischen Einweg-Hash (SHA-256) der Dokumentnummer. Damit
+  erkennen wir, wenn dasselbe Dokument zwei verschiedene Konten verifizieren
+  soll. Der Hash laesst sich nicht zur Nummer zurueckrechnen.
+- Das Ergebnis, den automatischen Konfidenzwert und - falls ein Mitarbeitender
+  einen Grenzfall geprueft hat - die Kennung dieser Person
+
+Wir bewahren NICHT auf: das Bild, Ihren auf dem Dokument gedruckten Namen, die
+Dokumentnummer in lesbarer Form, Ihre Staatsangehoerigkeit oder das Ablaufdatum
+des Dokuments.
+
+WO DIE VERARBEITUNG STATTFINDET
+
+Die optische Zeichenerkennung erfolgt durch Google Cloud Vision als unser
+Auftragsverarbeiter auf Grundlage eines Auftragsverarbeitungsvertrags. Das Bild
+wird zur Verarbeitung an diesen Dienst uebermittelt und danach dort nicht
+aufbewahrt.
+
+RECHTSGRUNDLAGE
+
+- Einwilligung (LGPD Art. 7, I / DSGVO Art. 6(1)(a)) fuer die Verarbeitung des
+  Dokuments
+- Erfuellung einer rechtlichen Verpflichtung (LGPD Art. 7, II / DSGVO Art.
+  6(1)(c)) und berechtigte Interessen (LGPD Art. 7, IX / DSGVO Art. 6(1)(f))
+  daran, Minderjaehrige vom Zugang zu und der Veroeffentlichung von
+  Erwachseneninhalten abzuhalten und die Anforderungen der App-Stores zur
+  Altersverifikation zu erfuellen, ueber die GreenGo vertrieben wird
+
+Sie koennen die Verifikation ablehnen. Eine Ablehnung bedeutet, dass Sie in
+Communities nicht veroeffentlichen koennen und - bei reiner Telefonanmeldung -
+dass bestimmte Funktionen nicht verfuegbar bleiben. Sie fuehrt nie zur Loeschung
+Ihres Kontos.
+
 
 ================================================================================
 3. WIE WIR INFORMATIONEN ERFASSEN
@@ -411,6 +494,9 @@ Wir teilen Daten mit Drittanbietern, die Dienste in unserem Auftrag erbringen:
 - SMS-Anbieter (Verifizierung und Benachrichtigungen)
 - Inhaltsmoderierungsdienste (Sicherheit)
 - Identitaetsueberpruefungsdienste (Betrugspraevention)
+- Dienste zur optischen Zeichenerkennung (Altersverifikation) - Google Cloud
+  Vision, das ein Ausweisbild erhaelt, den darin gefundenen Text zurueckgibt und
+  danach nichts aufbewahrt
 
 Alle Dienstleister sind vertraglich verpflichtet, Ihre Daten zu schuetzen und nur fuer die angegebenen Zwecke zu verwenden.
 
@@ -487,6 +573,50 @@ d) Sicherheits- und Betrugspraeventionsdaten
    - IP-Protokolle: 6 Monate
    - Daten zu Sicherheitsvorfaellen: 5 Jahre
    - Daten gesperrter Konten: Unbegrenzt (um erneute Registrierung zu verhindern)
+
+e) Daten zur Alters- und Identitaetsverifikation
+   - Dokumentbilder: NICHT AUFBEWAHRT. Sie werden in demselben Vorgang geloescht,
+     der sie liest, in der Regel innerhalb von Sekunden nach dem Hochladen.
+   - Entnommenes Geburtsdatum, Abgleichergebnis, Hash der Dokumentnummer und
+     Ergebnis: fuer die Dauer des Kontos. Werden mit dem Konto geloescht.
+
+f) Virtuelle Waehrung
+   - GreenGo-Muenzen verfallen nicht und unterliegen keiner Aufbewahrungsfrist.
+     Siehe die Allgemeinen Geschaeftsbedingungen.
+
+8.2 Loeschvorgang
+
+Sie koennen Ihr Konto jederzeit in der App unter den Profileinstellungen
+loeschen. Die Loeschung ist endgueltig und kann nicht rueckgaengig gemacht
+werden.
+
+Wenn Sie Ihr Konto loeschen, entfernt ein automatischer Vorgang:
+- Ihr Profil, Ihre Fotos, Videos und Sprachaufnahmen
+- Ihre Konto- und Einstellungsdaten
+- Ihr Muenzguthaben und Ihre Mitgliedschaftsdaten
+- Ihre Community-Mitgliedschaften, Veranstaltungsteilnahmen und gespeicherten
+  Suchen
+- Ihre Alters- und Identitaetsverifikationsdaten einschliesslich des Hashs der
+  Dokumentnummer und des entnommenen Geburtsdatums
+- Ihre Liste blockierter Nutzer
+
+Nachrichten, die Sie bereits an eine andere Person gesendet haben, werden
+ANONYMISIERT statt geloescht. Ihr Name, Ihr Foto und Ihre Kontokennung werden
+durch die Markierung "geloeschter Nutzer" ersetzt, sodass sich der Inhalt nicht
+mehr Ihnen zuordnen laesst. Wir tun dies, weil das vollstaendige Loeschen dieser
+Nachrichten den Gespraechsverlauf einer anderen Person veraendern wuerde, was zur
+Entfernung Ihrer personenbezogenen Daten daraus nicht erforderlich ist.
+
+Wir bewahren einen Loeschnachweis mit Datum und Anzahl der entfernten Elemente
+auf. Er enthaelt keine personenbezogenen Daten und dient dazu, eine spaetere
+Frage nach dem Stattfinden der Loeschung beantworten zu koennen.
+
+Ferner:
+- Ihr Profil ist fuer andere Nutzer sofort nicht mehr sichtbar
+- Sicherungskopien werden innerhalb von 90 Tagen bereinigt
+- Bestimmte Unterlagen werden aufbewahrt, soweit das Gesetz dies verlangt, vor
+  allem Finanz- und Steuerunterlagen (siehe Abschnitt 8.1(c)) sowie Daten, die
+  einer rechtlichen Aufbewahrungspflicht unterliegen
 
 ================================================================================
 9. DATENSICHERHEIT

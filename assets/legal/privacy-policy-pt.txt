@@ -1,7 +1,7 @@
 POLITICA DE PRIVACIDADE DO GREENGO CHAT
 
-Ultima Atualizacao: 26 de janeiro de 2026
-Data de Entrada em Vigor: 26 de janeiro de 2026
+Ultima Atualizacao: 15 de setembro de 2026
+Data de Entrada em Vigor: 15 de setembro de 2026
 
 ================================================================================
 INTRODUCAO
@@ -192,6 +192,17 @@ Podemos recolher e tratar os seguintes dados pessoais sensiveis com o seu consen
 - Crencas religiosas (se fornecidas voluntariamente)
 - Informacoes de saude relevantes para relacionamentos (se divulgadas voluntariamente)
 - Dados biometricos (apenas para verificacao de identidade)
+- Dados do documento de identificacao (apenas para verificacao de idade - ver a Seccao 2.6)
+
+Nao conservamos as imagens utilizadas para a verificacao de identidade ou de
+idade. A verificacao facial e a verificacao de idade sao processadas e a imagem
+de origem e depois eliminada; apenas o resultado derivado e conservado. Ver as
+Seccoes 2.6 e 8.1(g).
+
+Retirar o consentimento para a verificacao de idade remove o seu estatuto de
+verificado e, com ele, a possibilidade de publicar conteudo nas Comunidades. Nao
+afeta o resto da sua conta.
+
 
 Tem o direito de retirar o consentimento para o tratamento de dados sensiveis a qualquer momento.
 
@@ -265,6 +276,77 @@ Utilizadores iOS:
 3. Algumas funcionalidades podem ser limitadas quando as permissoes estao desativadas
 
 Solicitamos apenas permissoes necessarias para a funcionalidade principal da aplicacao ou funcionalidades opcionais que escolha utilizar. Nao acedemos a quaisquer dados alem do necessario para os propositos declarados.
+
+================================================================================
+2.6 DADOS DE VERIFICACAO DE IDADE
+================================================================================
+
+O GreenGo destina-se a adultos com 18 anos ou mais. Cada utilizador declara a sua
+data de nascimento ao criar uma conta, e as contas que declaram idade inferior a
+18 anos sao recusadas.
+
+Alem disso, verificamos a idade atraves de um documento de identificacao em duas
+situacoes:
+
+a) Quando inicia sessao utilizando APENAS um numero de telefone. Um numero de
+   telefone nao estabelece qualquer identidade, pelo que uma data de nascimento
+   declarada por tras dele nao tem qualquer suporte.
+
+b) Quando pretende PUBLICAR conteudo numa Comunidade. Ler e aderir a Comunidades
+   nunca exige verificacao; apenas publicar a exige, porque o conteudo publicado
+   chega a outras pessoas.
+
+O QUE ACONTECE AO SEU DOCUMENTO
+
+O sistema foi concebido para guardar o seu documento durante segundos, nao dias:
+
+1. Carrega uma fotografia de um documento de identificacao para um local de
+   armazenamento apenas de escrita. Nao pode ser lido de novo - nem por si, nem
+   pelo nosso pessoal.
+2. Os nossos sistemas leem o documento automaticamente atraves de reconhecimento
+   otico de caracteres, para extrair a data de nascimento.
+3. A imagem e eliminada na mesma operacao, quer a verificacao seja bem-sucedida
+   quer falhe. Nenhum colaborador a visualiza e nao existe qualquer interface
+   capaz de a mostrar.
+
+O QUE CONSERVAMOS
+
+Apenas o necessario para sustentar a decisao:
+
+- A data de nascimento lida no documento
+- Se correspondia a data de nascimento por si declarada
+- Um hash criptografico unidirecional (SHA-256) do numero do documento. Permite
+  detetar a utilizacao do mesmo documento para verificar duas contas diferentes.
+  O hash nao pode ser revertido para obter o numero.
+- O resultado, a pontuacao de confianca automatica e - se um colaborador analisou
+  um caso duvidoso - o identificador desse revisor
+
+NAO conservamos: a imagem, o seu nome tal como impresso no documento, o numero do
+documento em forma legivel, a sua nacionalidade nem a data de validade do
+documento.
+
+ONDE E PROCESSADO
+
+O reconhecimento otico de caracteres e efetuado pelo Google Cloud Vision, que
+atua como nosso subcontratante ao abrigo de um acordo de tratamento de dados. A
+imagem e transmitida a esse servico para processamento e nao e por ele conservada
+posteriormente.
+
+FUNDAMENTO JURIDICO
+
+- Consentimento (LGPD Art. 7, I / RGPD Art. 6(1)(a)) para o tratamento do
+  documento
+- Cumprimento de uma obrigacao legal (LGPD Art. 7, II / RGPD Art. 6(1)(c)) e
+  interesses legitimos (LGPD Art. 7, IX / RGPD Art. 6(1)(f)) em impedir que
+  menores acedam a conteudo para adultos ou o publiquem, e em cumprir os
+  requisitos de verificacao de idade das lojas de aplicacoes atraves das quais o
+  GreenGo e distribuido
+
+Pode recusar a verificacao. Recusar significa que nao podera publicar em
+Comunidades e, se a sua conta utilizar apenas inicio de sessao por telefone, que
+determinadas funcionalidades permanecem indisponiveis. Nunca resulta na
+eliminacao da sua conta.
+
 
 ================================================================================
 3. COMO RECOLHEMOS INFORMACOES
@@ -411,6 +493,9 @@ Partilhamos dados com prestadores de servicos terceiros que realizam servicos em
 - Fornecedores de SMS (verificacao e notificacoes)
 - Servicos de moderacao de conteudo (seguranca)
 - Servicos de verificacao de identidade (prevencao de fraudes)
+- Servicos de reconhecimento otico de caracteres (verificacao de idade) - Google
+  Cloud Vision, que recebe a imagem de um documento de identificacao, devolve o
+  texto nela encontrado e nao conserva nada posteriormente
 
 Todos os prestadores de servicos estao contratualmente obrigados a proteger os seus dados e a utiliza-los apenas para fins especificados.
 
@@ -503,13 +588,47 @@ f) Dados de Analise
    - Analises agregadas: Indefinidamente (anonimizadas)
    - Registos de utilizacao individual: 2 anos
 
+g) Dados de Verificacao de Idade e Identidade
+   - Imagens de documentos: NAO CONSERVADAS. Eliminadas durante a mesma operacao
+     que as le, normalmente poucos segundos apos o carregamento.
+   - Data de nascimento extraida, resultado da correspondencia, hash do numero do
+     documento e resultado: durante a existencia da conta. Eliminados com a conta.
+
+h) Moeda Virtual
+   - As moedas GreenGo nao expiram e nao estao sujeitas a qualquer periodo de
+     conservacao. Ver os Termos e Condicoes.
+
 8.2 Processo de Eliminacao
 
-Apos pedido de eliminacao de conta:
-- O seu perfil e imediatamente ocultado de outros utilizadores
-- Os seus dados sao eliminados ou anonimizados dentro de 30 dias
-- Copias de seguranca sao eliminadas dentro de 90 dias
-- Certos dados podem ser retidos para conformidade legal
+Pode eliminar a sua conta a qualquer momento na aplicacao, nas definicoes do
+perfil. A eliminacao e permanente e nao pode ser anulada.
+
+Quando elimina a sua conta, um processo automatico remove:
+- O seu perfil, fotografias, videos e gravacoes de voz
+- Os seus registos de conta e definicoes
+- O seu saldo de moedas e os registos de subscricao
+- As suas adesoes a Comunidades, participacoes em eventos e pesquisas guardadas
+- Os seus dados de verificacao de idade e identidade, incluindo o hash do numero
+  do documento e a data de nascimento extraida
+- A sua lista de utilizadores bloqueados
+
+As mensagens que ja enviou a outra pessoa sao ANONIMIZADAS em vez de eliminadas.
+O seu nome, a sua fotografia e o seu identificador de conta sao substituidos por
+uma marca de "utilizador eliminado", de modo que o conteudo deixe de lhe poder
+ser associado. Fazemo-lo porque eliminar essas mensagens alteraria o registo que
+outra pessoa mantem de uma conversa em que participou, o que nao e necessario
+para dela retirar os seus dados pessoais.
+
+Conservamos um registo de eliminacao com a data e o numero de elementos
+removidos. Nao contem dados pessoais e existe para podermos responder mais tarde
+a uma questao sobre se a eliminacao ocorreu.
+
+Alem disso:
+- O seu perfil deixa de estar visivel para outros utilizadores de imediato
+- As copias de seguranca sao eliminadas no prazo de 90 dias
+- Determinados registos sao conservados quando a lei o exige, sobretudo os
+  registos financeiros e fiscais (ver a Seccao 8.1(c)) e os dados sujeitos a uma
+  obrigacao legal de conservacao
 
 8.3 Excecoes a Eliminacao
 

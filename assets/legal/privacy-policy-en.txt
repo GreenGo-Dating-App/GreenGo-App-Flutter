@@ -1,7 +1,7 @@
 GREENGO CHAT PRIVACY POLICY
 
-Last Updated: January 26, 2026
-Effective Date: January 26, 2026
+Last Updated: September 15, 2026
+Effective Date: September 15, 2026
 
 ================================================================================
 INTRODUCTION
@@ -192,8 +192,16 @@ We may collect and process the following sensitive personal data with your expli
 - Religious beliefs (if voluntarily provided)
 - Health information relevant to dating (if voluntarily disclosed)
 - Biometric data (for identity verification only)
+- Identity document data (for age verification only - see Section 2.6)
+
+We do not retain the images used for identity or age verification. Facial
+verification and age verification are processed, and the source image is then
+deleted; only the derived result is kept. See Sections 2.6 and 8.1(g).
 
 You have the right to withdraw consent for processing sensitive data at any time.
+Withdrawing consent for age verification removes your verified status and, with
+it, the ability to publish content in Communities. It does not affect the rest of
+your account.
 
 ================================================================================
 2.5 MOBILE APPLICATION PERMISSIONS
@@ -265,6 +273,68 @@ iOS Users:
 3. Some features may be limited when permissions are disabled
 
 We only request permissions that are necessary for the app's core functionality or optional features you choose to use. We do not access any data beyond what is necessary for the stated purposes.
+
+================================================================================
+2.6 AGE VERIFICATION DATA
+================================================================================
+
+GreenGo is for adults aged 18 and over. Every user states their date of birth
+when creating an account, and accounts declaring an age under 18 are refused.
+
+In addition, we verify age using an identity document in two situations:
+
+a) When you sign in using ONLY a telephone number. A phone number establishes
+   no identity, so a date of birth declared behind one is unsupported.
+
+b) When you wish to PUBLISH content in a Community. Reading and joining
+   Communities never require verification; only publishing does, because
+   published content reaches other people.
+
+WHAT HAPPENS TO YOUR DOCUMENT
+
+This is designed to hold your document for seconds, not days:
+
+1. You upload a photograph of an identity document to a storage location that
+   is write-only. It cannot be read back - not by you, not by our staff.
+2. Our systems read the document automatically using optical character
+   recognition, to extract the date of birth.
+3. The image is deleted in the same operation, whether verification succeeds or
+   fails. No employee views it, and there is no interface capable of displaying
+   it.
+
+WHAT WE KEEP
+
+Only what is needed to support the decision:
+
+- The date of birth read from the document
+- Whether it matched the date of birth you declared
+- A one-way cryptographic hash (SHA-256) of the document number. This lets us
+  detect the same document being used to verify two different accounts. The
+  hash cannot be reversed to recover the document number.
+- The outcome, the automatic confidence score, and - if a member of staff
+  reviewed a borderline case - the identifier of that reviewer
+
+We do NOT keep: the image, your name as printed on the document, the document
+number in readable form, your nationality, or the document expiry date.
+
+WHERE IT IS PROCESSED
+
+Optical character recognition is performed by Google Cloud Vision, acting as
+our data processor under a data processing agreement. The image is transmitted
+to that service for processing and is not retained by it afterwards.
+
+LEGAL BASIS
+
+- Consent (LGPD Art. 7, I / GDPR Art. 6(1)(a)) for processing the document
+- Compliance with a legal obligation (LGPD Art. 7, II / GDPR Art. 6(1)(c)) and
+  legitimate interests (LGPD Art. 7, IX / GDPR Art. 6(1)(f)) in preventing
+  minors from accessing or publishing adult content, and in meeting the
+  age-assurance requirements of the application stores through which GreenGo is
+  distributed
+
+You may decline verification. Declining means you cannot publish in Communities
+and, if your account uses phone sign-in only, that certain features remain
+unavailable. It never results in your account being deleted.
 
 ================================================================================
 3. HOW WE COLLECT INFORMATION
@@ -411,6 +481,9 @@ We share data with third-party service providers who perform services on our beh
 - SMS providers (verification and notifications)
 - Content moderation services (safety)
 - Identity verification services (fraud prevention)
+- Optical character recognition services (age verification) - Google Cloud
+  Vision, which receives an identity document image, returns the text found in
+  it, and retains nothing afterwards
 
 All service providers are contractually bound to protect your data and use it only for specified purposes.
 
@@ -503,13 +576,46 @@ f) Analytics Data
    - Aggregated analytics: Indefinitely (anonymized)
    - Individual usage logs: 2 years
 
+g) Age and Identity Verification Data
+   - Document images: NOT RETAINED. Deleted during the same operation that
+     reads them, typically within seconds of upload.
+   - Extracted date of birth, match result, document-number hash and outcome:
+     duration of the account. Deleted when the account is deleted.
+
+h) Virtual Currency
+   - GreenGo Coins do not expire and are not subject to a retention period.
+     See the Terms and Conditions.
+
 8.2 Deletion Process
 
-Upon account deletion request:
-- Your profile is immediately hidden from other users
-- Your data is deleted or anonymized within 30 days
+You can delete your account at any time from within the application, under your
+profile settings. Deletion is permanent and cannot be undone.
+
+When you delete your account, an automated process removes:
+- Your profile, photographs, videos and voice recordings
+- Your account and settings records
+- Your coin balance and membership records
+- Your community memberships, event attendance and saved searches
+- Your age and identity verification records, including the document-number
+  hash and the extracted date of birth
+- Your blocked-user list
+
+Messages you have already sent to another person are ANONYMISED rather than
+deleted. Your name, photograph and account identifier are replaced with a
+"deleted user" marker, so the content can no longer be traced to you. We do this
+because deleting the messages outright would alter another person's record of a
+conversation they took part in, which is not necessary in order to remove your
+personal data from it.
+
+We keep a deletion record containing the date and the number of items removed.
+It contains no personal data, and exists so we can answer a later question about
+whether a deletion took place.
+
+Further:
+- Your profile stops being visible to other users immediately
 - Backup copies are purged within 90 days
-- Certain data may be retained for legal compliance
+- Certain records are retained where the law requires it, principally financial
+  and tax records (see Section 8.1(c)) and data subject to a legal hold
 
 8.3 Exceptions to Deletion
 
