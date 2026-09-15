@@ -1713,7 +1713,20 @@ export const sendBrevoEmailFunction = onCall<SendBrevoEmailRequest>(
 // 2. Get Email Templates (HTTP Callable)
 export const getBrevoEmailTemplates = onCall(
   {
-    memory: '128MiB',
+    // See getBrevoEmailLogs: 256MiB could not even LOAD this codebase, and
+    // 128MiB is worse. Callers were never reaching the handler.
+    memory: '512MiB',
+    // These two answered a plain call with a Google Frontend 403 - "your
+    // client does not have permission" - while every other callable in this
+    // file answered 401 UNAUTHENTICATED. That is the platform refusing the
+    // request before the container sees it: the allUsers invoker binding was
+    // missing, so the admin panel could not call them at all.
+    //
+    // The callable protocol REQUIRES a public invoker; authentication is not
+    // done by IAM but by verifyAuth(request.auth) in the handler below, which
+    // still rejects anonymous callers. Set explicitly so a future deploy
+    // cannot silently drop the binding again.
+    invoker: 'public',
     timeoutSeconds: 30,
   },
   monitored("getBrevoEmailTemplates", async (request) => {
@@ -1750,7 +1763,20 @@ interface UpdateTemplateRequest {
 
 export const updateBrevoEmailTemplate = onCall<UpdateTemplateRequest>(
   {
-    memory: '128MiB',
+    // See getBrevoEmailLogs: 256MiB could not even LOAD this codebase, and
+    // 128MiB is worse. Callers were never reaching the handler.
+    memory: '512MiB',
+    // These two answered a plain call with a Google Frontend 403 - "your
+    // client does not have permission" - while every other callable in this
+    // file answered 401 UNAUTHENTICATED. That is the platform refusing the
+    // request before the container sees it: the allUsers invoker binding was
+    // missing, so the admin panel could not call them at all.
+    //
+    // The callable protocol REQUIRES a public invoker; authentication is not
+    // done by IAM but by verifyAuth(request.auth) in the handler below, which
+    // still rejects anonymous callers. Set explicitly so a future deploy
+    // cannot silently drop the binding again.
+    invoker: 'public',
     timeoutSeconds: 30,
   },
   monitored("updateBrevoEmailTemplate", async (request) => {
