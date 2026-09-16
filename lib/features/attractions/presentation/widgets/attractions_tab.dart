@@ -217,7 +217,10 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   Future<void> _bootstrap() async {
     try {
-      await _locate();
+      // The GPS fix can take seconds; it only refines ORDERING, so it must not
+      // hold up the first paint. It runs alongside the reads below and is
+      // awaited after the list is on screen.
+      final gps = _locate();
       _bucket = await _ds.bucket();
       final countries = await _ds.publishedCountries();
       String? home;
@@ -255,6 +258,8 @@ class _AttractionsTabState extends State<AttractionsTab>
             (countries.isNotEmpty ? countries.first.iso2 : null);
       });
       await _loadSelected();
+      await gps; // a late fix re-sorts by distance; the list is already visible
+      if (mounted && _posLat != null) await _detectHere();
     } catch (_) {
       if (mounted) setState(() { _loading = false; _failed = true; });
     }
@@ -268,27 +273,12 @@ class _AttractionsTabState extends State<AttractionsTab>
     final lat = _posLat, lng = _posLng;
     if (lat == null && _anchorCountryName == null) return;
     try {
-      final citySnap = await FirebaseFirestore.instance
-          .collection('attraction_cities')
-          .where('published', isEqualTo: true)
-          .get();
-      final cityByIso = <String, List<(double, double)>>{};
-      for (final d in citySnap.docs) {
-        final m = d.data();
-        final iso = (m['iso2'] as String?)?.toUpperCase();
-        final cl = (m['lat'] as num?)?.toDouble();
-        final cn = (m['lng'] as num?)?.toDouble();
-        if (iso == null || cl == null || cn == null) continue;
-        (cityByIso[iso] ??= []).add((cl, cn));
-      }
-
-      final countrySnap = await FirebaseFirestore.instance
-          .collection('attraction_countries')
-          .where('published', isEqualTo: true)
-          .get();
-      final candidates = countrySnap.docs.map((d) {
-        final m = d.data();
-        final iso = (m['iso2'] ?? d.id).toString().toUpperCase();
+      // ONE cached document (attraction_config/geo) carries every published
+      // country's bbox and its city coordinates. This used to read ~700
+      // attraction_cities docs plus ~60 attraction_countries docs on every
+      // open, before the first attraction could even be shown.
+      final candidates = (await _ds.geoIndex()).map((m) {
+        final iso = (m['iso2'] ?? '').toString().toUpperCase();
         final bboxRaw = m['bbox'];
         return CountryCandidate(
           iso2: iso,
@@ -296,7 +286,10 @@ class _AttractionsTabState extends State<AttractionsTab>
           bbox: bboxRaw is List
               ? bboxRaw.map((e) => (e as num).toDouble()).toList()
               : null,
-          cities: cityByIso[iso] ?? const [],
+          cities: ((m['cities'] as List?) ?? const [])
+              .map<(double, double)>((c) =>
+                  ((c[0] as num).toDouble(), (c[1] as num).toDouble()))
+              .toList(),
         );
       }).toList();
 
@@ -1005,7 +998,10 @@ class _AttractionsTabState extends State<AttractionsTab>
               ClipRRect(
                 borderRadius: const BorderRadius.vertical(top: Radius.circular(14)),
                 child: Semantics(
-                    label: a.altText ?? a.name, child: _img(a, 'card', 160)),
+                    // 'thumb' (720x405) at a 160px-tall row: 'card' (1280x720)
+                    // was ~3x the bytes for no visible gain, which hurt most on
+                    // web where every row is a fresh network fetch.
+                    label: a.altText ?? a.name, child: _img(a, 'thumb', 160)),
               ),
               Positioned(top: 8, left: 8, child: _scoreBadge(a, size: 12)),
               Positioned(

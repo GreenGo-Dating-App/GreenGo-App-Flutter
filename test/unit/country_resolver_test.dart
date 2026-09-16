@@ -57,6 +57,30 @@ void main() {
       expect(_resolve(country: 'Italia'), 'IT');
     });
 
+    test('accepts local names of the 2026-09 expansion countries', () {
+      const expansion = <CountryCandidate>[
+        CountryCandidate(iso2: 'NZ', name: 'New Zealand'),
+        CountryCandidate(iso2: 'FI', name: 'Finland'),
+        CountryCandidate(iso2: 'IS', name: 'Iceland'),
+        CountryCandidate(iso2: 'GE', name: 'Georgia'),
+        CountryCandidate(iso2: 'SI', name: 'Slovenia'),
+        CountryCandidate(iso2: 'KH', name: 'Cambodia'),
+        CountryCandidate(iso2: 'LK', name: 'Sri Lanka'),
+        CountryCandidate(iso2: 'JO', name: 'Jordan'),
+        CountryCandidate(iso2: 'CL', name: 'Chile'),
+        CountryCandidate(iso2: 'EC', name: 'Ecuador'),
+      ];
+      String? r(String name) =>
+          CountryResolver.resolve(candidates: expansion, countryName: name);
+      const cases = {
+        'Aotearoa': 'NZ', 'NZ': 'NZ', 'Suomi': 'FI', 'Ísland': 'IS',
+        'Sakartvelo': 'GE', 'Slovenija': 'SI', 'Kampuchea': 'KH',
+        'Ceylon': 'LK', 'Hashemite Kingdom of Jordan': 'JO',
+        'República de Chile': 'CL', 'Republic of Ecuador': 'EC',
+      };
+      cases.forEach((name, iso) => expect(r(name), iso, reason: name));
+    });
+
     test('accepts an ISO2 code in the country field', () {
       expect(_resolve(country: 'US'), 'US');
       expect(_resolve(country: 'br'), 'BR');

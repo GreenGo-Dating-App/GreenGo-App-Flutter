@@ -3,7 +3,7 @@
  *  country a user is standing in without a reverse-geocode call. */
 process.env.NODE_TLS_REJECT_UNAUTHORIZED='0';
 const admin=require('firebase-admin');
-admin.initializeApp({credential:admin.credential.cert(require('D:/Projects/GreenGo/firebase/greengo-chat-firebase-adminsdk.json'))});
+admin.initializeApp({credential:admin.credential.cert(require(process.env.FIREBASE_SA||'D:/Projects/GreenGo/firebase/greengo-chat-firebase-adminsdk.json'))});
 const db=admin.firestore();
 const PAD=1.5; // degrees of padding so users outside our city set still match
 (async()=>{
@@ -28,6 +28,22 @@ const PAD=1.5; // degrees of padding so users outside our city set still match
   }
   await batch.commit();
   console.log('bbox written for',n,'countries');
+  // Mirror the boxes into the compact one-read index the app uses.
+  const geoRef=db.collection('attraction_config').doc('geo');
+  const geo=(await geoRef.get()).data();
+  if(geo&&Array.isArray(geo.countries)){
+    const withBox=geo.countries.map((c)=>{
+      const b=box[c.iso2];
+      return b?{...c,bbox:[+(b.s-PAD).toFixed(4),+(b.w-PAD).toFixed(4),
+                           +(b.n+PAD).toFixed(4),+(b.e+PAD).toFixed(4)]}:c;
+    });
+    await geoRef.set({countries:withBox},{merge:true});
+    console.log('attraction_config/geo updated:',withBox.length,'countries,',
+      withBox.filter((c)=>c.bbox).length,'with bbox,',
+      withBox.reduce((n2,c)=>n2+(c.cities?c.cities.length:0),0),'cities');
+  } else {
+    console.log('attraction_config/geo missing - run seed_firestore.cjs first');
+  }
   const us=(await db.collection('attraction_countries').doc('US').get()).data();
   console.log('US bbox [S,W,N,E]:',us.bbox);
   // sanity: Denver + Seattle + Dallas must fall inside the US box
