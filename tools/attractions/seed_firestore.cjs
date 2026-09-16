@@ -22,9 +22,10 @@ const path = require('path');
 const admin = require('firebase-admin');
 const XLSX = require('xlsx');
 
-const SA = 'D:/Projects/GreenGo/firebase/greengo-chat-firebase-adminsdk.json';
+const SA = process.env.FIREBASE_SA || 'D:/Projects/GreenGo/firebase/greengo-chat-firebase-adminsdk.json';
 const BUCKET = 'greengo-chat.firebasestorage.app';
-const XLSX_PATH = 'C:/Users/Software Engineering/Desktop/Travel-Attractions-Dataset/master.xlsx';
+const XLSX_PATH = process.env.ATTRACTIONS_XLSX ||
+  'C:/Users/Software Engineering/Desktop/Travel-Attractions-Dataset/master.xlsx';
 const UPLOADS = path.join(__dirname, 'upload_manifest.json');
 const COUNTRIES = null; // null = every country present in the sheet
 const DRY = process.argv.includes('--dry');
@@ -289,6 +290,26 @@ async function commitAll(ops) {
       fallbackLabel: label, published: catsSeen.has(cat),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true }));
+  }
+
+  // Compact geo index: ONE doc with every published country's bbox + its city
+  // coordinates. The app used to read all attraction_cities (~700) plus all
+  // attraction_countries (~60) on every open just to resolve "which country am
+  // I in"; now that is a single cached read. bbox is filled by seed_bbox.cjs,
+  // which merges into the same doc.
+  {
+    const countries = Object.keys(byCountry).map((iso) => ({
+      iso2: iso,
+      name: countryName[iso] || iso,
+      // FLAT [lat, lng, lat, lng, ...]: Firestore rejects an array nested
+      // directly inside another array ("invalid nested entity").
+      cities: Object.values(cityMap)
+        .filter((c) => c.iso2 === iso && typeof c.lat === 'number' && typeof c.lng === 'number')
+        .flatMap((c) => [Number(c.lat.toFixed(3)), Number(c.lng.toFixed(3))]),
+    }));
+    ops.push((b) => b.set(db.collection('attraction_config').doc('geo'), {
+      version, countries, updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+    }));
   }
 
   // config

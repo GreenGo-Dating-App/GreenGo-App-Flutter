@@ -18,7 +18,7 @@ const path = require('path');
 const crypto = require('crypto');
 const admin = require('firebase-admin');
 
-const SA = 'D:/Projects/GreenGo/firebase/greengo-chat-firebase-adminsdk.json';
+const SA = process.env.FIREBASE_SA || 'D:/Projects/GreenGo/firebase/greengo-chat-firebase-adminsdk.json';
 const BUCKET = 'greengo-chat.firebasestorage.app';
 const STAGING = 'C:/Users/Software Engineering/Desktop/Travel-Attractions-Dataset/_staging_webp';
 const OUT_MANIFEST = path.join(__dirname, 'upload_manifest.json');
@@ -57,7 +57,10 @@ async function uploadOne(rec, existing) {
 }
 
 (async () => {
-  const man = JSON.parse(fs.readFileSync(path.join(STAGING, 'build_manifest.json'), 'utf8'));
+  // BUILD_MANIFEST selects a batch manifest (e.g. build_manifest_v2.json for the
+  // city expansion); resume state in upload_manifest.json is shared across batches.
+  const buildManifest = process.env.BUILD_MANIFEST || 'build_manifest.json';
+  const man = JSON.parse(fs.readFileSync(path.join(STAGING, buildManifest), 'utf8'));
   const recs = Object.values(man);
   let prev = {};
   if (fs.existsSync(OUT_MANIFEST)) {
