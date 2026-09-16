@@ -60,6 +60,14 @@ class FlavorConfig {
   /// Video profiles.
   static bool get enableVideoProfiles => isFull;
 
+  /// The 3D world map ("My World Map").
+  ///
+  /// HELD BACK deliberately - the feature is finished enough to compile but is
+  /// not being released yet. None of its code has been removed: globe_explore/
+  /// is untouched, and every entry point simply checks this flag. Flip it to
+  /// `isFull` (or `true`) to ship it; nothing else needs to change.
+  static bool get enableWorldMap => false;
+
   // ============================================================================
   // CONVENIENCE
   // ============================================================================

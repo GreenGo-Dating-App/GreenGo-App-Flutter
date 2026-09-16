@@ -1878,9 +1878,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
             constraints: const BoxConstraints(minWidth: 36, minHeight: 36),
             padding: EdgeInsets.zero,
           ),
-          // 3D Globe explore
-          TourShowcase(
-            showcaseKey: TourKeys.globe,
+          // 3D Globe explore - withheld until the world map ships.
+          if (FlavorConfig.enableWorldMap)
+            TourShowcase(
+              showcaseKey: TourKeys.globe,
             title: l10n.tourGlobeTitle,
             description: l10n.tourGlobeDesc,
             gesture: TourGesture.tap,
