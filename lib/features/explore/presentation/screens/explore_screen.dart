@@ -67,6 +67,7 @@ import '../../../recommendations/recommendation_service.dart';
 import 'network_discovery_screen.dart';
 import 'qr_hub_screen.dart';
 import 'universal_search_screen.dart';
+import '../../../../core/config/flavor_config.dart';
 
 /// Explore Screen — the Apple-safe home tab (tab 0) for the iOS flavor.
 ///
@@ -1704,7 +1705,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
           divider(),
           Expanded(
             child: InkWell(
-              onTap: _openWorldMap,
+              // The countries stat still reads; it just does not open the
+              // world map while that feature is withheld.
+              onTap: FlavorConfig.enableWorldMap ? _openWorldMap : null,
               borderRadius: BorderRadius.circular(AppGlass.radiusCard),
               child: _StatTile(
                 icon: Icons.public,

@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
 
 import 'tour_keys.dart';
+import '../../../core/config/flavor_config.dart';
 
 /// Coordinates the first-launch gesture tour and the one-time contextual
 /// mini-tours (chat, swipe mode, profile detail, story).
@@ -54,7 +55,7 @@ class TourController {
         TourKeys.cardHold,
         TourKeys.pullRefresh,
         TourKeys.modeToggle,
-        TourKeys.globe,
+        if (FlavorConfig.enableWorldMap) TourKeys.globe,
         TourKeys.search,
         TourKeys.preferences,
         TourKeys.coins,
