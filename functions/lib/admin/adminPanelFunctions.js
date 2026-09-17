@@ -940,12 +940,27 @@ exports.sendPasswordResetViaResend = functions.https.onCall((0, monitoring_1.mon
         // Treat all of these "no deliverable account" cases as a silent success.
         const code = ((_a = error === null || error === void 0 ? void 0 : error.errorInfo) === null || _a === void 0 ? void 0 : _a.code) || (error === null || error === void 0 ? void 0 : error.code) || '';
         const message = ((_b = error === null || error === void 0 ? void 0 : error.errorInfo) === null || _b === void 0 ? void 0 : _b.message) || (error === null || error === void 0 ? void 0 : error.message) || '';
+        // No account for this address. Report success anyway - telling a stranger
+        // which addresses are registered is an account-enumeration oracle.
         if (code === 'auth/user-not-found' ||
             code === 'auth/invalid-email' ||
-            code === 'auth/internal-error' ||
             message.includes('Unable to create the email action link')) {
             console.log(`sendPasswordResetViaResend: no deliverable account for ${email}, returning silent success`);
             return { success: true, emailSent: true };
+        }
+        // auth/internal-error used to be lumped in with "no such account". It is
+        // not: it is the Admin SDK's catch-all, so a genuine outage or
+        // misconfiguration was being logged as a routine missing user and
+        // reported to the caller as success. Nobody could tell a broken reset
+        // from an unregistered address - which is exactly the confusion this
+        // investigation started from.
+        //
+        // The caller still gets the same answer (enumeration again), but this
+        // lands in the log as an ERROR so it is findable.
+        if (code === 'auth/internal-error') {
+            console.error(`sendPasswordResetViaResend: internal error generating the reset link for ${email} - ` +
+                'this is NOT a missing account:', message);
+            return { success: true, emailSent: false };
         }
         console.error('Error sending password reset email:', error);
         throw new functions.https.HttpsError('internal', 'Failed to send password reset email');
