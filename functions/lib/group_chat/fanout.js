@@ -212,7 +212,11 @@ exports.onGroupMessageCreated = (0, firestore_1.onDocumentCreated)({
         try {
             await admin.messaging().sendEachForMulticast({
                 tokens: chunk,
-                notification: (0, brand_1.brandPush)(`New message in group ${groupName}`, `${senderName}: ${preview}`, groupPhoto !== null && groupPhoto !== void 0 ? groupPhoto : undefined),
+                // Same wording as a 1:1 message, plus which group it was in. The
+                // preview is deliberately dropped: "New message in group X: Maria:
+                // hello" said the same thing twice and put the message itself on the
+                // lock screen.
+                notification: (0, brand_1.brandPush)('', `${senderName} sent you a message in ${groupName}.`, groupPhoto !== null && groupPhoto !== void 0 ? groupPhoto : undefined),
                 data: {
                     type: 'group_message',
                     groupId,

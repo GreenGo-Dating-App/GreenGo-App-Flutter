@@ -310,7 +310,14 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
             // like a message from/to a normal person — never separately gated.
             if (!(await (0, prefs_1.shouldNotify)(recipientId, 'exchanges')))
                 return;
-            await sendPushToUser(recipientId, 'newMessage', senderName, preview, {
+            // One wording for every message push: "<name> sent you a message."
+            //
+            // The sender's name used to be the title and the message text the
+            // body, which brandPush then joined into "Maria: see you at 8" -
+            // saying the same thing twice once the app name is added, and
+            // leaking the message content onto the lock screen. The title is
+            // always "GreenGo" (brandPush), so the name belongs in the body.
+            await sendPushToUser(recipientId, 'newMessage', '', `${senderName} sent you a message.`, {
                 conversationId: convId,
                 fromUserId: senderId,
                 senderName,

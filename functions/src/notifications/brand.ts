@@ -16,7 +16,25 @@ export function brandPush(
 ): { title: string; body: string; imageUrl?: string } {
   const t = (title || '').trim();
   const b = (body || '').trim();
-  const description = t && b && t !== b ? `${t}: ${b}` : b || t;
+
+  // The title is always "GreenGo", so whatever the caller passed as a title has
+  // to move into the body or it is lost. Joining them blindly is what produced
+  // notifications that said the same thing twice - "Maria: Maria sent you a
+  // message" - so the halves are only joined when they actually add up to
+  // something, and never when one already contains the other.
+  const norm = (v: string) => v.toLowerCase().replace(/\s+/g, ' ').trim();
+  let description: string;
+  if (!t) {
+    description = b;
+  } else if (!b) {
+    description = t;
+  } else if (norm(b).includes(norm(t))) {
+    description = b;
+  } else if (norm(t).includes(norm(b))) {
+    description = t;
+  } else {
+    description = `${t}: ${b}`;
+  }
   return {
     title: 'GreenGo',
     body: description,
