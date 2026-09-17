@@ -936,6 +936,27 @@ export const sendWelcomeEmail = functions.https.onCall(
 // PASSWORD RESET VIA RESEND (branded email for regular users)
 // =============================================================================
 
+
+// Rate limit for the password-reset endpoint.
+//
+// Needed because the endpoint now answers "email-not-found", which makes it a
+// way to test whether an address is registered. In-memory, so it is per
+// instance rather than exact - enough to stop a list being walked at speed from
+// one machine, which is the realistic abuse, without adding a Firestore write
+// to every reset attempt.
+const RESET_WINDOW_MS = 60_000;
+const RESET_MAX = 10;
+const resetHits = new Map<string, number[]>();
+
+function resetRateLimited(key: string): boolean {
+  const now = Date.now();
+  const recent = (resetHits.get(key) || []).filter((t) => now - t < RESET_WINDOW_MS);
+  recent.push(now);
+  resetHits.set(key, recent);
+  if (resetHits.size > 5000) resetHits.clear(); // a cache, not a ledger
+  return recent.length > RESET_MAX;
+}
+
 /**
  * Send a branded password reset email via Resend.
  * No admin auth required — called from the forgot password screen.
@@ -946,6 +967,14 @@ export const sendPasswordResetViaResend = functions.https.onCall(
 
     if (!email || typeof email !== 'string') {
       throw new functions.https.HttpsError('invalid-argument', 'email is required');
+    }
+
+    const caller = (_context.rawRequest as any)?.ip || 'anonymous';
+    if (resetRateLimited(caller)) {
+      throw new functions.https.HttpsError(
+        'resource-exhausted',
+        'Too many attempts, try again shortly',
+      );
     }
 
     console.log(`sendPasswordResetViaResend called for: ${email}`);
@@ -1039,6 +1068,9 @@ export const sendPasswordResetViaResend = functions.https.onCall(
 
       return { success: true, emailSent: true };
     } catch (error: any) {
+      // Our own deliberate answers (e.g. email-not-found) pass straight
+      // through; only real failures are interpreted below.
+      if (error instanceof functions.https.HttpsError) throw error;
       // Do not reveal whether the account exists — return success for security.
       // For an unregistered email the Admin SDK normally returns
       // auth/user-not-found, but on generatePasswordResetLink it instead
@@ -1047,15 +1079,22 @@ export const sendPasswordResetViaResend = functions.https.onCall(
       const code = error?.errorInfo?.code || error?.code || '';
       const message = error?.errorInfo?.message || error?.message || '';
 
-      // No account for this address. Report success anyway - telling a stranger
-      // which addresses are registered is an account-enumeration oracle.
+      // No account for this address - say so.
+      //
+      // This is a deliberate product decision, taken knowing the trade: an
+      // endpoint that distinguishes "no such account" from "sent" lets anyone
+      // test which addresses are registered here. It was chosen because the
+      // silent version was indistinguishable from a wrong address, and people
+      // reset passwords far more often than they enumerate accounts.
+      //
+      // The rate limit below is what keeps that trade bounded.
       if (
         code === 'auth/user-not-found' ||
         code === 'auth/invalid-email' ||
         message.includes('Unable to create the email action link')
       ) {
-        console.log(`sendPasswordResetViaResend: no deliverable account for ${email}, returning silent success`);
-        return { success: true, emailSent: true };
+        console.log(`sendPasswordResetViaResend: no account for ${email}`);
+        throw new functions.https.HttpsError('not-found', 'email-not-found');
       }
 
       // auth/internal-error used to be lumped in with "no such account". It is
