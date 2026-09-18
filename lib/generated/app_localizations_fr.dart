@@ -14162,4 +14162,13 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get featureWhoConnected => 'Voyez qui s\'est connecté avec vous';
+
+  @override
+  String get boostProfileCelebrationTitle => 'Profil mis en avant !';
+
+  @override
+  String get boostEventCelebrationTitle => 'Événement mis en avant !';
+
+  @override
+  String get eventsEnded => 'Événement terminé';
 }

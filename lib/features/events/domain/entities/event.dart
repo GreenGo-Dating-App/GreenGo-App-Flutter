@@ -250,6 +250,11 @@ class Event extends Equatable {
   bool get isUpcoming => startDate.isAfter(DateTime.now());
   bool get isOngoing => DateTime.now().isAfter(startDate) && DateTime.now().isBefore(endDate);
 
+  /// The event has finished. Everything that would CHANGE or PROMOTE it is
+  /// withdrawn past this point - editing, boosting, joining, check-in - while
+  /// deleting, reporting and reading the attendance list remain.
+  bool get hasEnded => DateTime.now().isAfter(endDate);
+
   @override
   List<Object?> get props => [
         id,

@@ -1,14 +1,14 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong2/latlong.dart';
 
+import '../../../../core/config/map_basemap.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/widgets/web_map_placeholder.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
@@ -461,7 +461,7 @@ class _MapPickerScreen extends StatefulWidget {
 }
 
 class _MapPickerScreenState extends State<_MapPickerScreen> {
-  GoogleMapController? _mapController;
+  final MapController _mapController = MapController();
   LatLng _selectedLatLng = const LatLng(40.7128, -74.0060); // Default: NYC
   String _addressText = 'Tap on the map to select a location';
   bool _isLoadingAddress = false;
@@ -507,9 +507,7 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
         setState(() {
           _selectedLatLng = LatLng(position.latitude, position.longitude);
         });
-        _mapController?.animateCamera(
-          CameraUpdate.newLatLng(_selectedLatLng),
-        );
+        _mapController.move(_selectedLatLng, 12);
       }
     } catch (_) {
       // Use default position
@@ -604,31 +602,37 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
           Expanded(
             // No ClipRRect: clipping an Android platform view (GoogleMap) can
             // blank it. Plain Expanded > GoogleMap, like the working city picker.
-            child: kIsWeb
-                ? const WebMapPlaceholder()
-                : GoogleMap(
-                      initialCameraPosition: CameraPosition(
-                        target: _selectedLatLng,
-                        zoom: 10,
-                      ),
-                      onMapCreated: (controller) {
-                        _mapController = controller;
-                      },
-                      onTap: _onMapTapped,
-                      markers: {
-                        Marker(
-                          markerId: const MarkerId('selected'),
-                          position: _selectedLatLng,
-                          icon: BitmapDescriptor.defaultMarkerWithHue(
-                            BitmapDescriptor.hueAzure,
-                          ),
-                        ),
-                      },
-                      myLocationEnabled: true,
-                      myLocationButtonEnabled: true,
-                      zoomControlsEnabled: true,
-                      mapToolbarEnabled: false,
+            // flutter_map, not GoogleMap: it renders on web and mobile alike
+            // and needs no Maps API key, which is why the rest of the app
+            // already draws its maps this way. (The old note about not
+            // clipping a platform view no longer applies - flutter_map draws
+            // in the Flutter tree, so there is no Android view to blank.)
+            child: FlutterMap(
+              mapController: _mapController,
+              options: MapOptions(
+                initialCenter: _selectedLatLng,
+                initialZoom: 10,
+                onTap: (_, point) => _onMapTapped(point),
+              ),
+              children: [
+                TileLayer(
+                  urlTemplate: MapBasemap.tileUrl,
+                  maxZoom: MapBasemap.maxZoom,
+                  userAgentPackageName: 'com.greengochat.greengochatapp',
+                ),
+                MarkerLayer(
+                  markers: [
+                    Marker(
+                      point: _selectedLatLng,
+                      width: 44,
+                      height: 44,
+                      child: const Icon(Icons.location_pin,
+                          color: Color(0xFF1E88E5), size: 44),
                     ),
+                  ],
+                ),
+              ],
+            ),
           ),
 
           // Address bar
@@ -815,31 +819,33 @@ class _SelectedLocationCard extends StatelessWidget {
                   color: const Color(0xFF1E88E5).withOpacity(0.3)),
             ),
             clipBehavior: Clip.antiAlias,
-            child: kIsWeb
-                ? const WebMapPlaceholder(compact: true)
-                : GoogleMap(
-                    initialCameraPosition: CameraPosition(
-                      target: LatLng(location.latitude, location.longitude),
-                      zoom: 12,
+            // A preview: every gesture is off, it is not a second picker.
+            child: FlutterMap(
+              options: MapOptions(
+                initialCenter: LatLng(location.latitude, location.longitude),
+                initialZoom: 12,
+                interactionOptions:
+                    const InteractionOptions(flags: InteractiveFlag.none),
+              ),
+              children: [
+                TileLayer(
+                  urlTemplate: MapBasemap.tileUrl,
+                  maxZoom: MapBasemap.maxZoom,
+                  userAgentPackageName: 'com.greengochat.greengochatapp',
+                ),
+                MarkerLayer(
+                  markers: [
+                    Marker(
+                      point: LatLng(location.latitude, location.longitude),
+                      width: 40,
+                      height: 40,
+                      child: const Icon(Icons.location_pin,
+                          color: Color(0xFF1E88E5), size: 40),
                     ),
-                    markers: {
-                      Marker(
-                        markerId: const MarkerId('selected'),
-                        position: LatLng(location.latitude, location.longitude),
-                        icon: BitmapDescriptor.defaultMarkerWithHue(
-                          BitmapDescriptor.hueAzure,
-                        ),
-                      ),
-                    },
-                    liteModeEnabled: true,
-                    zoomControlsEnabled: false,
-                    scrollGesturesEnabled: false,
-                    rotateGesturesEnabled: false,
-                    tiltGesturesEnabled: false,
-                    zoomGesturesEnabled: false,
-                    myLocationButtonEnabled: false,
-                    mapToolbarEnabled: false,
-                  ),
+                  ],
+                ),
+              ],
+            ),
           ),
           const SizedBox(height: 16),
           // Location info card
