@@ -14130,4 +14130,31 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsEnded => 'Event beendet';
+
+  @override
+  String get eventsAttendeeListVisibility => 'Wer sehen darf, wer kommt';
+
+  @override
+  String get eventsAttendeeListPrivate => 'Niemand';
+
+  @override
+  String get eventsAttendeeListParticipants => 'Teilnehmende';
+
+  @override
+  String get eventsAttendeeListPublic => 'Alle';
+
+  @override
+  String get eventsAttendeeListPrivateHint => 'Nur du siehst die Gästeliste.';
+
+  @override
+  String get eventsAttendeeListParticipantsHint =>
+      'Teilnehmende sehen einander.';
+
+  @override
+  String get eventsAttendeeListPublicHint =>
+      'Alle, die das Event sehen, sehen auch die Gästeliste.';
+
+  @override
+  String get eventsAttendeeListHidden =>
+      'Die Organisation hat die Gästeliste ausgeblendet.';
 }

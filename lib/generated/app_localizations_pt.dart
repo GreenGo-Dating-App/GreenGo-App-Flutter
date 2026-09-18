@@ -14085,6 +14085,34 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsEnded => 'Evento terminado';
+
+  @override
+  String get eventsAttendeeListVisibility => 'Quem pode ver quem vai';
+
+  @override
+  String get eventsAttendeeListPrivate => 'Ninguém';
+
+  @override
+  String get eventsAttendeeListParticipants => 'Participantes';
+
+  @override
+  String get eventsAttendeeListPublic => 'Todos';
+
+  @override
+  String get eventsAttendeeListPrivateHint =>
+      'Só tu podes ver a lista de participantes.';
+
+  @override
+  String get eventsAttendeeListParticipantsHint =>
+      'Quem participa pode ver os outros participantes.';
+
+  @override
+  String get eventsAttendeeListPublicHint =>
+      'Qualquer pessoa que veja o evento pode ver a lista de participantes.';
+
+  @override
+  String get eventsAttendeeListHidden =>
+      'O organizador ocultou a lista de participantes.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28172,4 +28200,32 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get eventsEnded => 'Evento encerrado';
+
+  @override
+  String get eventsAttendeeListVisibility => 'Quem pode ver quem vai';
+
+  @override
+  String get eventsAttendeeListPrivate => 'Ninguém';
+
+  @override
+  String get eventsAttendeeListParticipants => 'Participantes';
+
+  @override
+  String get eventsAttendeeListPublic => 'Todos';
+
+  @override
+  String get eventsAttendeeListPrivateHint =>
+      'Só você pode ver a lista de participantes.';
+
+  @override
+  String get eventsAttendeeListParticipantsHint =>
+      'Quem participa pode ver os outros participantes.';
+
+  @override
+  String get eventsAttendeeListPublicHint =>
+      'Qualquer pessoa que veja o evento pode ver a lista de participantes.';
+
+  @override
+  String get eventsAttendeeListHidden =>
+      'O organizador ocultou a lista de participantes.';
 }

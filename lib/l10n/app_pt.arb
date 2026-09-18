@@ -4710,5 +4710,13 @@
   "featureWhoConnected": "Vê quem se ligou a ti",
   "boostProfileCelebrationTitle": "Perfil destacado!",
   "boostEventCelebrationTitle": "Evento destacado!",
-  "eventsEnded": "Evento terminado"
+  "eventsEnded": "Evento terminado",
+  "eventsAttendeeListVisibility": "Quem pode ver quem vai",
+  "eventsAttendeeListPrivate": "Ninguém",
+  "eventsAttendeeListParticipants": "Participantes",
+  "eventsAttendeeListPublic": "Todos",
+  "eventsAttendeeListPrivateHint": "Só tu podes ver a lista de participantes.",
+  "eventsAttendeeListParticipantsHint": "Quem participa pode ver os outros participantes.",
+  "eventsAttendeeListPublicHint": "Qualquer pessoa que veja o evento pode ver a lista de participantes.",
+  "eventsAttendeeListHidden": "O organizador ocultou a lista de participantes."
 }

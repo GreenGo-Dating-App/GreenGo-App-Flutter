@@ -1424,10 +1424,32 @@ service cloud.firestore {
                  .hasOnly(['attendeeCount', 'tierGoingCounts', 'viewCount']));
 
       match /attendees/{uid} {
-        function parentOrganizer() {
-          return get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid;
+        function parentEvent() {
+          return get(/databases/$(database)/documents/events/$(eventId)).data;
         }
-        allow read: if isSignedIn();
+        function parentOrganizer() {
+          return parentEvent().organizerId == request.auth.uid;
+        }
+        // Who may see the roster, decided by the organiser on the event.
+        // Enforced HERE and not only in the UI: hiding a guest list that the
+        // API still hands out is not hiding it.
+        //
+        // Absent or unknown values fall back to 'participants', matching the
+        // client default - every event created before this setting existed
+        // reads as participants-only rather than suddenly public.
+        function rosterVisibility() {
+          return parentEvent().get('attendeeListVisibility', 'participants');
+        }
+        function canSeeRoster() {
+          return isSignedIn() && (
+            // Your own RSVP is always yours to read.
+            uid == request.auth.uid
+            || parentOrganizer()
+            || rosterVisibility() == 'public'
+            || (rosterVisibility() == 'participants' && isEventAttendee())
+          );
+        }
+        allow read: if canSeeRoster();
         // A user manages only their OWN attendee doc — RSVP status, privacy
         // flags and guestCount (QR ticket "bring guests"). The organizer may
         // manage ANY attendee doc, which is what powers QR check-in: flipping

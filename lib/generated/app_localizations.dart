@@ -24845,6 +24845,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Event ended'**
   String get eventsEnded;
+
+  /// No description provided for @eventsAttendeeListVisibility.
+  ///
+  /// In en, this message translates to:
+  /// **'Who can see who\'s coming'**
+  String get eventsAttendeeListVisibility;
+
+  /// No description provided for @eventsAttendeeListPrivate.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody'**
+  String get eventsAttendeeListPrivate;
+
+  /// No description provided for @eventsAttendeeListParticipants.
+  ///
+  /// In en, this message translates to:
+  /// **'Participants'**
+  String get eventsAttendeeListParticipants;
+
+  /// No description provided for @eventsAttendeeListPublic.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone'**
+  String get eventsAttendeeListPublic;
+
+  /// No description provided for @eventsAttendeeListPrivateHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Only you can see the guest list.'**
+  String get eventsAttendeeListPrivateHint;
+
+  /// No description provided for @eventsAttendeeListParticipantsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'People attending can see each other.'**
+  String get eventsAttendeeListParticipantsHint;
+
+  /// No description provided for @eventsAttendeeListPublicHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone who can see the event can see the guest list.'**
+  String get eventsAttendeeListPublicHint;
+
+  /// No description provided for @eventsAttendeeListHidden.
+  ///
+  /// In en, this message translates to:
+  /// **'The organizer has hidden the guest list.'**
+  String get eventsAttendeeListHidden;
 }
 
 class _AppLocalizationsDelegate

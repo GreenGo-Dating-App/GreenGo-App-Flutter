@@ -44,6 +44,35 @@ enum RSVPStatus {
   waitlist,
 }
 
+/// Who may see the list of people attending.
+///
+/// Separate from [EventVisibility], which is about finding the EVENT. An event
+/// can be public while its guest list is not: "come along" and "here is
+/// everyone who is coming" are different invitations.
+enum AttendeeListVisibility {
+  /// Nobody but the organiser. Attendees cannot see each other.
+  private,
+
+  /// The people attending, plus the organiser. The default.
+  participants,
+
+  /// Anyone who can see the event.
+  public,
+}
+
+extension AttendeeListVisibilityExtension on AttendeeListVisibility {
+  String get value => name;
+
+  static AttendeeListVisibility fromString(String? v) =>
+      AttendeeListVisibility.values.firstWhere(
+        (e) => e.name == v,
+        // Unknown or absent - including every event created before this
+        // existed - falls back to the middle setting rather than the most open
+        // one.
+        orElse: () => AttendeeListVisibility.participants,
+      );
+}
+
 /// Event visibility: public events are discoverable by anyone; private events
 /// are only visible to invitees/attendees and people with the link.
 enum EventVisibility {
@@ -104,6 +133,7 @@ class Event extends Equatable {
     this.viewCount = 0,
     this.updatedAt,
     this.visibility = EventVisibility.public,
+    this.attendeeListVisibility = AttendeeListVisibility.participants,
     this.externalLinks = const [],
     this.isFeatured = false,
     this.featuredUntil,
@@ -164,6 +194,9 @@ class Event extends Equatable {
   final DateTime createdAt;
   final DateTime? updatedAt;
   final EventVisibility visibility;
+
+  /// Who may see the attendee roster. See [canViewAttendeeList].
+  final AttendeeListVisibility attendeeListVisibility;
   final List<ExternalLink> externalLinks;
   // Promotion: featured/boosted events surface first in discovery.
   final bool isFeatured;
@@ -244,6 +277,24 @@ class Event extends Equatable {
   bool get isUnlimited => maxAttendees <= 0;
   int get spotsLeft => maxAttendees - goingCount;
   bool get isFull => !isUnlimited && spotsLeft <= 0;
+  /// Whether [viewerId] may see who is attending.
+  ///
+  /// The organiser always can - they need the list to run the event, and they
+  /// chose the setting. Everyone else is judged by that setting; a participant
+  /// is anyone with an RSVP, including the waitlist, since they have committed
+  /// to the event either way.
+  bool canViewAttendeeList(String viewerId) {
+    if (viewerId == organizerId) return true;
+    switch (attendeeListVisibility) {
+      case AttendeeListVisibility.public:
+        return true;
+      case AttendeeListVisibility.participants:
+        return attendees.any((a) => a.userId == viewerId);
+      case AttendeeListVisibility.private:
+        return false;
+    }
+  }
+
   bool get isPublic => visibility == EventVisibility.public;
   bool get isPrivate => visibility == EventVisibility.private;
   bool get isFree => price == null || price == 0;
@@ -294,6 +345,7 @@ class Event extends Equatable {
         createdAt,
         updatedAt,
         visibility,
+        attendeeListVisibility,
         externalLinks,
         isFeatured,
         featuredUntil,
@@ -343,6 +395,7 @@ class Event extends Equatable {
     DateTime? createdAt,
     DateTime? updatedAt,
     EventVisibility? visibility,
+    AttendeeListVisibility? attendeeListVisibility,
     List<ExternalLink>? externalLinks,
     bool? isFeatured,
     DateTime? featuredUntil,
@@ -392,6 +445,8 @@ class Event extends Equatable {
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
       visibility: visibility ?? this.visibility,
+      attendeeListVisibility:
+          attendeeListVisibility ?? this.attendeeListVisibility,
       externalLinks: externalLinks ?? this.externalLinks,
       isFeatured: isFeatured ?? this.isFeatured,
       featuredUntil: featuredUntil ?? this.featuredUntil,
