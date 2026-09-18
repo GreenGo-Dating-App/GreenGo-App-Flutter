@@ -57,6 +57,7 @@ import 'event_attendance_screen.dart';
 import 'event_chat_screen.dart';
 import 'event_scanner_screen.dart';
 import 'event_ticket_screen.dart';
+import '../../../../core/widgets/boost_celebration.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -1955,8 +1956,10 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
             ),
             actions: [
-              // Check-in scanner — organizer only
-              if (event.organizerId == currentUserId)
+              // Check-in scanner — organizer only, and only while the event
+              // is still running: checking someone in afterwards records an
+              // arrival that did not happen.
+              if (event.organizerId == currentUserId && !event.hasEnded)
                 IconButton(
                   icon: const Icon(Icons.qr_code_scanner,
                       color: AppColors.richGold),
@@ -1969,7 +1972,8 @@ class EventDetailsScreen extends StatelessWidget {
                   ),
                 ),
               // Attendance list — organizer only
-              if (event.organizerId == currentUserId)
+              // Boosting promotes an event nobody can attend any more.
+              if (event.organizerId == currentUserId && !event.hasEnded)
                 IconButton(
                   icon: const Icon(Icons.fact_check_outlined,
                       color: AppColors.richGold),
@@ -1979,7 +1983,8 @@ class EventDetailsScreen extends StatelessWidget {
                   ),
                 ),
               // Edit — organizer only
-              if (event.organizerId == currentUserId)
+              // Editing a finished event changes nothing anyone can act on.
+              if (event.organizerId == currentUserId && !event.hasEnded)
                 IconButton(
                   icon: const Icon(Icons.edit, color: AppColors.richGold),
                   tooltip: AppLocalizations.of(context)!.eventsEditEvent,
@@ -2511,14 +2516,18 @@ class EventDetailsScreen extends StatelessWidget {
                 final isWaitlisted = me?.status == RSVPStatus.waitlist;
                 // Already in (going/waitlist) => disabled label; full => allow
                 // joining the waitlist; otherwise a normal join.
-                final label = isGoing
+                final label = event.hasEnded
+                    ? l10n.eventsEnded
+                    : isGoing
                     ? l10n.eventsGoingLabel
                     : isWaitlisted
                         ? l10n.eventsOnWaitlist
                         : event.isFull
                             ? l10n.eventsJoinWaitlist
                             : l10n.eventsJoinEvent;
-                final enabled = !isGoing && !isWaitlisted;
+                // A finished event cannot be joined, however the button
+                // would otherwise read.
+                final enabled = !isGoing && !isWaitlisted && !event.hasEnded;
                 return Expanded(
                   child: ElevatedButton(
                     onPressed:
@@ -2833,7 +2842,12 @@ class EventDetailsScreen extends StatelessWidget {
         featuredUntil: DateTime.now().add(duration),
       ),
     ));
-    messenger.showSnackBar(SnackBar(content: Text(l10n.eventsBoosted)));
+    if (!context.mounted) return;
+    await BoostCelebration.show(
+      context,
+      title: l10n.boostEventCelebrationTitle,
+      subtitle: l10n.eventBoostEndsIn(_boostDurationLabel(l10n, duration)),
+    );
   }
 
   Future<bool?> _confirmCoinSpend(

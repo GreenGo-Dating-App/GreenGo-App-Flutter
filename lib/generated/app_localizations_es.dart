@@ -14105,4 +14105,13 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get featureWhoConnected => 'Descubre quién conectó contigo';
+
+  @override
+  String get boostProfileCelebrationTitle => '¡Perfil destacado!';
+
+  @override
+  String get boostEventCelebrationTitle => '¡Evento destacado!';
+
+  @override
+  String get eventsEnded => 'Evento finalizado';
 }

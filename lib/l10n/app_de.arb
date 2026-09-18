@@ -4707,5 +4707,8 @@
   "featureBoosts": "{count} Profil-Boosts pro Monat",
   "featureDiscoveryReveals": "{count} Profile auf einmal sichtbar",
   "featureTravelMode": "Reisemodus - entdecke Menschen überall",
-  "featureWhoConnected": "Sieh, wer sich mit dir verbunden hat"
+  "featureWhoConnected": "Sieh, wer sich mit dir verbunden hat",
+  "boostProfileCelebrationTitle": "Profil geboostet!",
+  "boostEventCelebrationTitle": "Event geboostet!",
+  "eventsEnded": "Event beendet"
 }

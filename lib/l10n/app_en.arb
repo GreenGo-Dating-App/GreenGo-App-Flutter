@@ -6665,5 +6665,8 @@
     }
   },
   "featureTravelMode": "Travel mode - discover people anywhere",
-  "featureWhoConnected": "See who connected with you"
+  "featureWhoConnected": "See who connected with you",
+  "boostProfileCelebrationTitle": "Profile boosted!",
+  "boostEventCelebrationTitle": "Event boosted!",
+  "eventsEnded": "Event ended"
 }

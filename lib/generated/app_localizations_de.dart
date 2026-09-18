@@ -14121,4 +14121,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get featureWhoConnected => 'Sieh, wer sich mit dir verbunden hat';
+
+  @override
+  String get boostProfileCelebrationTitle => 'Profil geboostet!';
+
+  @override
+  String get boostEventCelebrationTitle => 'Event geboostet!';
+
+  @override
+  String get eventsEnded => 'Event beendet';
 }

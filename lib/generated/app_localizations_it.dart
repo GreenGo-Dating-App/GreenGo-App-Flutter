@@ -14098,4 +14098,13 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get featureWhoConnected => 'Scopri chi si è connesso con te';
+
+  @override
+  String get boostProfileCelebrationTitle => 'Profilo in evidenza!';
+
+  @override
+  String get boostEventCelebrationTitle => 'Evento in evidenza!';
+
+  @override
+  String get eventsEnded => 'Evento concluso';
 }

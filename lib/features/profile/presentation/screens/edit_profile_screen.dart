@@ -73,6 +73,7 @@ import 'edit_voice_screen.dart';
 import 'photo_management_screen.dart';
 import 'traveler_location_picker_screen.dart';
 import 'usage_stats_screen.dart';
+import '../../../../core/widgets/boost_celebration.dart';
 
 class EditProfileScreen extends StatelessWidget {
 
@@ -178,11 +179,13 @@ class EditProfileScreen extends StatelessWidget {
                 TierGate().recordBoost(userId!);
               }
               final remaining = state.expiry.difference(DateTime.now());
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(AppLocalizations.of(context)!.profileBoostedForMinutes(remaining.inMinutes)),
-                  backgroundColor: const Color(0xFFDAA520),
-                ),
+              // A boost costs coins, so it gets a moment of its own rather
+              // than a line of text that slides away.
+              BoostCelebration.show(
+                context,
+                title: AppLocalizations.of(context)!.boostProfileCelebrationTitle,
+                subtitle: AppLocalizations.of(context)!
+                    .profileBoostedForMinutes(remaining.inMinutes),
               );
             }
             if (state is ProfileBoostInsufficientCoins) {
@@ -1804,16 +1807,10 @@ class EditProfileScreen extends StatelessWidget {
       ProfileBoostRequested(userId: profile.userId),
     );
 
-    // Listen for result
-    if (context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.profileActivatingBoost),
-          backgroundColor: const Color(0xFFDAA520),
-          duration: const Duration(seconds: 1),
-        ),
-      );
-    }
+    // No "activating..." message here. It was shown immediately AFTER the
+    // event was dispatched, so when the bloc answered first - which it usually
+    // does - it replaced the success message a moment later, and the boost
+    // appeared to do nothing. The result now speaks for itself.
   }
 
   Future<void> _changeGlobeDiscoverability(

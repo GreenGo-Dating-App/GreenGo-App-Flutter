@@ -14076,6 +14076,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get featureWhoConnected => 'Vê quem se ligou a ti';
+
+  @override
+  String get boostProfileCelebrationTitle => 'Perfil destacado!';
+
+  @override
+  String get boostEventCelebrationTitle => 'Evento destacado!';
+
+  @override
+  String get eventsEnded => 'Evento terminado';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28154,4 +28163,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get featureWhoConnected => 'Veja quem se conectou com você';
+
+  @override
+  String get boostProfileCelebrationTitle => 'Perfil impulsionado!';
+
+  @override
+  String get boostEventCelebrationTitle => 'Evento impulsionado!';
+
+  @override
+  String get eventsEnded => 'Evento encerrado';
 }

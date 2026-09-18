@@ -24827,6 +24827,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See who connected with you'**
   String get featureWhoConnected;
+
+  /// No description provided for @boostProfileCelebrationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile boosted!'**
+  String get boostProfileCelebrationTitle;
+
+  /// No description provided for @boostEventCelebrationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Event boosted!'**
+  String get boostEventCelebrationTitle;
+
+  /// No description provided for @eventsEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Event ended'**
+  String get eventsEnded;
 }
 
 class _AppLocalizationsDelegate
