@@ -37,6 +37,7 @@ class EventModel extends Event {
     super.viewCount = 0,
     super.updatedAt,
     super.visibility = EventVisibility.public,
+    super.attendeeListVisibility = AttendeeListVisibility.participants,
     super.externalLinks = const [],
     super.isFeatured = false,
     super.featuredUntil,
@@ -88,6 +89,7 @@ class EventModel extends Event {
       createdAt: event.createdAt,
       updatedAt: event.updatedAt,
       visibility: event.visibility,
+      attendeeListVisibility: event.attendeeListVisibility,
       externalLinks: event.externalLinks,
       isFeatured: event.isFeatured,
       featuredUntil: event.featuredUntil,
@@ -150,6 +152,8 @@ class EventModel extends Event {
           : null,
       visibility:
           EventVisibilityExtension.fromString(json['visibility'] as String?),
+      attendeeListVisibility: AttendeeListVisibilityExtension.fromString(
+          json['attendeeListVisibility'] as String?),
       externalLinks: (json['externalLinks'] as List?)
               ?.whereType<Map<String, dynamic>>()
               .map(ExternalLink.fromMap)
@@ -220,6 +224,7 @@ class EventModel extends Event {
       'createdAt': Timestamp.fromDate(createdAt),
       'updatedAt': updatedAt != null ? Timestamp.fromDate(updatedAt!) : null,
       'visibility': visibility.value,
+      'attendeeListVisibility': attendeeListVisibility.value,
       'externalLinks': externalLinks.map((e) => e.toMap()).toList(),
       'isFeatured': isFeatured,
       'featuredUntil':

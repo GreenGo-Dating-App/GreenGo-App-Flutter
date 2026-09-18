@@ -6668,5 +6668,13 @@
   "featureWhoConnected": "See who connected with you",
   "boostProfileCelebrationTitle": "Profile boosted!",
   "boostEventCelebrationTitle": "Event boosted!",
-  "eventsEnded": "Event ended"
+  "eventsEnded": "Event ended",
+  "eventsAttendeeListVisibility": "Who can see who's coming",
+  "eventsAttendeeListPrivate": "Nobody",
+  "eventsAttendeeListParticipants": "Participants",
+  "eventsAttendeeListPublic": "Everyone",
+  "eventsAttendeeListPrivateHint": "Only you can see the guest list.",
+  "eventsAttendeeListParticipantsHint": "People attending can see each other.",
+  "eventsAttendeeListPublicHint": "Anyone who can see the event can see the guest list.",
+  "eventsAttendeeListHidden": "The organizer has hidden the guest list."
 }

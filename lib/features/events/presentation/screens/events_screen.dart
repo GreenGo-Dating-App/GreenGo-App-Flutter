@@ -2365,9 +2365,14 @@ class EventDetailsScreen extends StatelessWidget {
                       ),
                       // The strip below previews only the first 100; this opens
                       // the full, endlessly-scrolling list.
-                      if (event.attendees.any((a) =>
-                          a.status == RSVPStatus.going &&
-                          a.isVisibleTo(currentUserId, event.organizerId)))
+                      // Two gates, and both matter: the organiser's setting
+                      // decides whether this viewer may see the roster at all,
+                      // and each attendee's own privacy decides whether they
+                      // appear in it.
+                      if (event.canViewAttendeeList(currentUserId) &&
+                          event.attendees.any((a) =>
+                              a.status == RSVPStatus.going &&
+                              a.isVisibleTo(currentUserId, event.organizerId)))
                         TextButton(
                           onPressed: () => Navigator.of(context).push(
                             EventAttendeesScreen.route(
@@ -3034,6 +3039,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   String _currency = '\$';
   static const List<String> _currencies = ['\$', '€', '£', 'R\$', '¥'];
   EventVisibility _visibility = EventVisibility.public;
+  AttendeeListVisibility _attendeeListVisibility =
+      AttendeeListVisibility.participants;
   bool _isUnlimited = false;
   // Guests each attendee may bring (0 = guests not allowed). Feeds QR check-in.
   int _guestsAllowedPerAttendee = 0;
@@ -3183,6 +3190,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     }
     _currency = e.currency ?? '\$';
     _visibility = e.visibility;
+    _attendeeListVisibility = e.attendeeListVisibility;
     _isUnlimited = e.isUnlimited;
     _guestsAllowedPerAttendee = e.guestsAllowedPerAttendee;
     if (!e.isUnlimited) _maxAttendeesController.text = e.maxAttendees.toString();
@@ -3609,6 +3617,62 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               activeThumbColor: AppColors.richGold,
               onChanged: (v) => setState(() => _visibility =
                   v ? EventVisibility.private : EventVisibility.public),
+            ),
+            const SizedBox(height: 8),
+            // Who may see WHO IS COMING - a separate decision from who may see
+            // the event. An event can be open to all while its guest list is
+            // not.
+            Text(
+              AppLocalizations.of(context)!.eventsAttendeeListVisibility,
+              style: const TextStyle(
+                color: AppColors.textSecondary,
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            const SizedBox(height: 6),
+            SegmentedButton<AttendeeListVisibility>(
+              segments: [
+                ButtonSegment(
+                  value: AttendeeListVisibility.private,
+                  icon: const Icon(Icons.lock_outline, size: 18),
+                  label: Text(AppLocalizations.of(context)!
+                      .eventsAttendeeListPrivate),
+                ),
+                ButtonSegment(
+                  value: AttendeeListVisibility.participants,
+                  icon: const Icon(Icons.groups_outlined, size: 18),
+                  label: Text(AppLocalizations.of(context)!
+                      .eventsAttendeeListParticipants),
+                ),
+                ButtonSegment(
+                  value: AttendeeListVisibility.public,
+                  icon: const Icon(Icons.public, size: 18),
+                  label: Text(AppLocalizations.of(context)!
+                      .eventsAttendeeListPublic),
+                ),
+              ],
+              selected: {_attendeeListVisibility},
+              showSelectedIcon: false,
+              onSelectionChanged: (sel) =>
+                  setState(() => _attendeeListVisibility = sel.first),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              switch (_attendeeListVisibility) {
+                AttendeeListVisibility.private =>
+                  AppLocalizations.of(context)!.eventsAttendeeListPrivateHint,
+                AttendeeListVisibility.participants => AppLocalizations.of(
+                    context)!
+                    .eventsAttendeeListParticipantsHint,
+                AttendeeListVisibility.public =>
+                  AppLocalizations.of(context)!.eventsAttendeeListPublicHint,
+              },
+              style: const TextStyle(
+                color: AppColors.textTertiary,
+                fontSize: 12,
+                height: 1.3,
+              ),
             ),
             const SizedBox(height: 16),
             SwitchListTile(
@@ -4263,6 +4327,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         price: price,
         currency: _isFree ? null : _currency,
         visibility: _visibility,
+        attendeeListVisibility: _attendeeListVisibility,
         externalLinks: _externalLinks,
         languagePairs: languagePairs,
         guestsAllowedPerAttendee: _guestsAllowedPerAttendee,
@@ -4302,6 +4367,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       price: price,
       currency: _isFree ? null : _currency,
       visibility: _visibility,
+      attendeeListVisibility: _attendeeListVisibility,
       externalLinks: _externalLinks,
       status: status,
       publishAt: status == EventStatus.scheduled ? publishAt : null,
