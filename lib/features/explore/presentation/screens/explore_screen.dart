@@ -136,6 +136,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // stops shimmering rather than blocking the header.
   String? _coinsStat;
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _coinsSub;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _profileSub;
+  /// True while traveler mode is active - the header then follows the
+  /// travelled-to location rather than the real one.
+  bool _travelerActive = false;
   String? _tierStat; // derived from the profile's membershipTier
   String? _countriesStat; // Cultural Passport country-stamp count
   String? _peopleStat; // distinct chat partners (all time)
@@ -235,6 +239,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // Reload the profile AFTER the location write so effectiveLocation, and
     // every section that derives from it, sees the new position.
     await _loadProfile();
+    // Now that traveler state is known, follow any later change to it.
+    _watchLocation();
     // Fire the content loads concurrently; each updates state on its own and
     // never throws (a failure just hides its section). On a pull-to-refresh
     // (forceRefresh) the people pool bypasses its in-memory cache; the Firestore
@@ -279,6 +285,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         final travelerActive = data['isTraveler'] == true &&
             travelerExpiry != null &&
             travelerExpiry.isAfter(DateTime.now());
+        _travelerActive = travelerActive;
         if (travelerActive) {
           final tloc = data['travelerLocation'] as Map<String, dynamic>?;
           if (tloc != null) {
@@ -340,9 +347,76 @@ class _ExploreScreenState extends State<ExploreScreen> {
     });
   }
 
+  /// Refreshes the GPS position once when Explore opens (i.e. right after
+  /// login) and keeps the header in step with the result.
+  ///
+  /// _loadProfile() reads the profile exactly once. The location refresh
+  /// finishes AFTER that read, so the greeting kept showing the city from the
+  /// previous session - "Explore Los Angeles" long after landing in Sao Paulo.
+  /// Watching the document means the header, the flag backdrop and the
+  /// city-derived sections all update the moment the new position is written.
+  ///
+  /// The refresh itself is best-effort and silent: LocationRefreshService only
+  /// proceeds when location permission has ALREADY been granted, and it never
+  /// prompts.
+  void _watchLocation() {
+    unawaited(LocationRefreshService().refreshIfAllowed(
+      widget.userId,
+      isTravelerActive: _travelerActive,
+    ));
+
+    _profileSub = _firestore
+        .collection('profiles')
+        .doc(widget.userId)
+        .snapshots()
+        .listen((doc) {
+      final data = doc.data();
+      if (data == null || !mounted) return;
+
+      // Traveler mode is read FROM THE SNAPSHOT, not from the field captured
+      // when the profile was first loaded. Reading the stale field meant
+      // turning traveler mode on updated nothing: the change that switched it
+      // on was the very change being handled, so the flag still said false and
+      // the header re-read the real location instead of the travelled-to one.
+      final expiryRaw = data['travelerExpiry'];
+      final expiry = expiryRaw is Timestamp ? expiryRaw.toDate() : null;
+      final travelling = data['isTraveler'] == true &&
+          expiry != null &&
+          expiry.isAfter(DateTime.now());
+      final tloc = data['travelerLocation'] as Map<String, dynamic>?;
+      final loc = (travelling && tloc != null)
+          ? tloc
+          : data['location'] as Map<String, dynamic>?;
+
+      final city = (loc?['city'] as String?)?.trim();
+      final country = (loc?['country'] as String?)?.trim();
+      final lat = (loc?['latitude'] as num?)?.toDouble();
+      final lng = (loc?['longitude'] as num?)?.toDouble();
+
+      if (city == _city &&
+          country == _countryName &&
+          travelling == _travelerActive) {
+        return;
+      }
+      setState(() {
+        _travelerActive = travelling;
+        if (city != null && city.isNotEmpty) _city = city;
+        if (country != null && country.isNotEmpty) _countryName = country;
+        // The anchor moves too, or "people around you" would still be sorted
+        // around the city the user left.
+        if (lat != null) _userLat = lat;
+        if (lng != null) _userLng = lng;
+      });
+      // The city drives these sections, so re-resolve them against the new one.
+      unawaited(_loadAroundYou());
+      unawaited(_loadCommunities());
+    });
+  }
+
   @override
   void dispose() {
     _coinsSub?.cancel();
+    _profileSub?.cancel();
     super.dispose();
   }
 
