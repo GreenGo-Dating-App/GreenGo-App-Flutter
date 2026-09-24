@@ -24893,6 +24893,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The organizer has hidden the guest list.'**
   String get eventsAttendeeListHidden;
+
+  /// No description provided for @eventsOrganizedBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Organized by'**
+  String get eventsOrganizedBy;
+
+  /// No description provided for @eventsOrganizerYou.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} (you)'**
+  String eventsOrganizerYou(String name);
+
+  /// No description provided for @eventsByOrganizer.
+  ///
+  /// In en, this message translates to:
+  /// **'by {name}'**
+  String eventsByOrganizer(String name);
 }
 
 class _AppLocalizationsDelegate

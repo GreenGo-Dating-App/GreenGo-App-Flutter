@@ -32,6 +32,7 @@ import '../../../attractions/presentation/widgets/attractions_tab.dart';
 import 'event_attendees_screen.dart';
 import '../widgets/experiences_tab.dart';
 import '../widgets/event_like_button.dart';
+import '../widgets/event_organizer_row.dart';
 import '../../../business/data/services/leads_service.dart';
 import '../../../communities/domain/entities/community.dart';
 import '../../../communities/domain/repositories/communities_repository.dart';
@@ -1728,6 +1729,32 @@ class EventCard extends StatelessWidget {
                     ),
                   ),
                   buildEventStatusBadges(context, event),
+                  if (event.organizerName.trim().isNotEmpty &&
+                      event.organizerName != 'Current User') ...[
+                    const SizedBox(height: 4),
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.person_outline,
+                          size: 14,
+                          color: AppColors.richGold,
+                        ),
+                        const SizedBox(width: 6),
+                        Expanded(
+                          child: Text(
+                            AppLocalizations.of(context)!
+                                .eventsByOrganizer(event.organizerName.trim()),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              color: AppColors.richGold,
+                              fontSize: 13,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                   const SizedBox(height: 8),
                   Row(
                     children: [
@@ -2095,6 +2122,13 @@ class EventDetailsScreen extends StatelessWidget {
                       userId: currentUserId,
                       likeCount: event.likeCount,
                     ),
+                  ),
+                  const SizedBox(height: 16),
+                  // Who is behind this event - everyone who can see it can
+                  // see its organiser.
+                  EventOrganizerRow(
+                    event: event,
+                    currentUserId: currentUserId,
                   ),
                   const SizedBox(height: 16),
                   _buildInfoRow(
@@ -2559,27 +2593,17 @@ class EventDetailsScreen extends StatelessWidget {
     );
   }
 
-  /// Join an event: pick a tier (if any), reserve a spot via a capacity-safe
-  /// Firestore transaction (waitlisting when full), and — only when actually
-  /// admitted as "going" — spend coins for paid tiers. Reuses the existing
-  /// coin/tier gate pattern; stays fully in-economy (no real money).
+  /// Join an event: reserve a spot via a capacity-safe Firestore transaction
+  /// (waitlisting when full), and — only when actually admitted as "going" —
+  /// spend coins for a paid event. Events are single general admission: there
+  /// are no ticket tiers to pick, even on older events that still carry them.
   Future<void> _handleJoin(BuildContext context, Event event) async {
     final l10n = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
     final bloc = context.read<EventsBloc>();
     final ds = sl<EventsRemoteDataSource>();
 
-    // Choose a tier when the organizer defined any.
-    TicketTier? tier;
-    if (event.hasTicketTiers) {
-      tier = await _pickTier(context, event);
-      if (tier == null || !context.mounted) return; // cancelled
-    }
-
-    // Cost = selected tier price, else the legacy event price (implicit tier).
-    final cost = tier != null
-        ? tier.priceCoins
-        : (event.isFree ? 0 : (event.price ?? 0).round());
+    final cost = event.isFree ? 0 : (event.price ?? 0).round();
 
     // Pre-check affordability for paid joins so we rarely have to roll back.
     if (cost > 0) {
@@ -2602,7 +2626,6 @@ class EventDetailsScreen extends StatelessWidget {
       result = await ds.joinEventWithTier(
         eventId: event.id,
         userId: currentUserId,
-        tierId: tier?.id,
       );
     } catch (_) {
       if (context.mounted) {
@@ -2651,47 +2674,6 @@ class EventDetailsScreen extends StatelessWidget {
       ..add(const LoadEvents(upcoming: true))
       ..add(LoadUserEvents(userId: currentUserId));
     if (context.mounted) Navigator.pop(context);
-  }
-
-  /// Bottom sheet to choose a ticket tier for a tiered event.
-  Future<TicketTier?> _pickTier(BuildContext context, Event event) {
-    final l10n = AppLocalizations.of(context)!;
-    return showModalBottomSheet<TicketTier>(
-      context: context,
-      backgroundColor: AppColors.backgroundCard,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (ctx) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: Text(l10n.eventsSelectTier,
-                  style: const TextStyle(
-                      color: AppColors.textPrimary,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold)),
-            ),
-            ...event.ticketTiers.map((t) => ListTile(
-                  leading: const Icon(Icons.local_activity,
-                      color: AppColors.richGold),
-                  title: Text(t.name,
-                      style: const TextStyle(color: AppColors.textPrimary)),
-                  subtitle: Text(
-                    '${t.isFree ? l10n.eventsFreeTier : l10n.eventsTierPriceValue(t.priceCoins)} · '
-                    '${t.isUnlimited ? l10n.eventsUnlimited : l10n.eventsTierCapacityValue(t.capacity)}',
-                    style: const TextStyle(color: AppColors.textSecondary),
-                  ),
-                  onTap: () => Navigator.pop(ctx, t),
-                )),
-            const SizedBox(height: 8),
-          ],
-        ),
-      ),
-    );
   }
 
   /// Organizer-only "Feature this event" placement section shown on the detail

@@ -14157,4 +14157,17 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get eventsAttendeeListHidden =>
       'Die Organisation hat die Gästeliste ausgeblendet.';
+
+  @override
+  String get eventsOrganizedBy => 'Organisiert von';
+
+  @override
+  String eventsOrganizerYou(String name) {
+    return '$name (du)';
+  }
+
+  @override
+  String eventsByOrganizer(String name) {
+    return 'von $name';
+  }
 }

@@ -14113,6 +14113,19 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get eventsAttendeeListHidden =>
       'O organizador ocultou a lista de participantes.';
+
+  @override
+  String get eventsOrganizedBy => 'Organizado por';
+
+  @override
+  String eventsOrganizerYou(String name) {
+    return '$name (você)';
+  }
+
+  @override
+  String eventsByOrganizer(String name) {
+    return 'por $name';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28228,4 +28241,17 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get eventsAttendeeListHidden =>
       'O organizador ocultou a lista de participantes.';
+
+  @override
+  String get eventsOrganizedBy => 'Organizado por';
+
+  @override
+  String eventsOrganizerYou(String name) {
+    return '$name (você)';
+  }
+
+  @override
+  String eventsByOrganizer(String name) {
+    return 'por $name';
+  }
 }
