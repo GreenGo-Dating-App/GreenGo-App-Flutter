@@ -131,7 +131,7 @@ class _ShareEventSheet extends StatelessWidget {
                     ),
                     onTap: () {
                       Navigator.of(context).pop();
-                      shareEventLink(context, event.id);
+                      shareEventLink(context, event.id, title: event.title);
                     },
                   ),
                   const Divider(height: 1, color: AppColors.divider),

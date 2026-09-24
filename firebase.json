@@ -37,7 +37,24 @@
         },
         {
           "source": "/e/**",
-          "destination": "/e/index.html"
+          "function": {
+            "functionId": "sharePreview",
+            "region": "us-central1"
+          }
+        },
+        {
+          "source": "/c/**",
+          "function": {
+            "functionId": "sharePreview",
+            "region": "us-central1"
+          }
+        },
+        {
+          "source": "/og/**",
+          "function": {
+            "functionId": "sharePreview",
+            "region": "us-central1"
+          }
         },
         {
           "source": "**",

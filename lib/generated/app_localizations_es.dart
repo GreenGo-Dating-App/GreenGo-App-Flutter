@@ -14155,4 +14155,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String eventsByOrganizer(String name) {
     return 'por $name';
   }
+
+  @override
+  String shareEventMessageTitled(String title, String link) {
+    return '$title\nMira este evento en GreenGo: $link';
+  }
+
+  @override
+  String shareCommunityMessage(String name, String link) {
+    return '$name\nÚnete a esta comunidad en GreenGo: $link';
+  }
 }

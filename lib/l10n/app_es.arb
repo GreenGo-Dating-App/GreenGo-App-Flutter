@@ -4721,5 +4721,7 @@
   "eventsAttendeeListHidden": "El organizador ha ocultado la lista de asistentes.",
   "eventsOrganizedBy": "Organizado por",
   "eventsOrganizerYou": "{name} (tú)",
-  "eventsByOrganizer": "por {name}"
+  "eventsByOrganizer": "por {name}",
+  "shareEventMessageTitled": "{title}\nMira este evento en GreenGo: {link}",
+  "shareCommunityMessage": "{name}\nÚnete a esta comunidad en GreenGo: {link}"
 }
