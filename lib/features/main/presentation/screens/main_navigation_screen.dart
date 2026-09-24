@@ -19,7 +19,6 @@ import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/services/onboarding_gate.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/data_preload_service.dart';
-import '../../../events/data/datasources/external_events_preloader.dart';
 import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../../core/services/usage_limit_service.dart';
@@ -43,12 +42,13 @@ import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
+import '../../../events/data/services/events_prefetch.dart';
 import '../../../events/presentation/screens/events_screen.dart';
 import '../../../explore/presentation/screens/explore_screen.dart';
 import '../../../chat/presentation/screens/groups_screen.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
 import '../../../communities/presentation/screens/communities_screen.dart';
-import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
+import '../../../discovery/data/services/discovery_prefetch.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
 import '../../../discovery/presentation/screens/discovery_screen.dart';
@@ -178,18 +178,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   int? _lastKnownLevel; // track to detect level changes
   Set<String> _knownUnlockedAchievements = {}; // track already-unlocked achievements
 
-  @override
-  /// Fire-and-forget warm of the discovery stack (People around you) so it's
-  /// ready & cached before the user opens Explore. Mirrors Explore's exact
-  /// query/preferences so the datasource cache key matches.
-  void _warmDiscoveryStack() {
-    final prefs = MatchPreferences.defaultFor(widget.userId)
-        .copyWith(showSupportUser: false);
-    di
-        .sl<DiscoveryRemoteDataSource>()
-        .getDiscoveryStack(userId: widget.userId, preferences: prefs, limit: 60)
-        .then((_) {}, onError: (_) {});
-  }
+  // Tabs are built on first visit and kept alive afterwards (IndexedStack), so
+  // opening the app runs only the first tab's initState instead of all five
+  // competing for the network at once.
+  final Set<int> _visitedTabs = <int>{};
+
+  // Background prefetch of the other tabs' data, once per user per session.
+  static String? _prefetchedForUser;
+  bool _prefetchWhenResumed = false;
 
   @override
   void initState() {
@@ -214,22 +210,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // took the whole post-login subtree down to a blank ErrorWidget.
     unawaited(pushNotificationService.ensureTokenRegistered());
 
-    // Warm the Firestore cache for the heaviest first-load queries up-front so
-    // tabs render instantly from cache (persistence is enabled). Network/profile
-    // data loads FIRST, then attractions & experiences in the background.
-    DataPreloadService.instance.warm(widget.userId).then((_) {
-      ExternalEventsPreloader.instance.warm();
-    });
+    // Other tabs' data (Events, Discovery, inboxes) is prefetched once the
+    // first tab has painted, see [_schedulePrefetch].
 
-    // Warm the People-around-you discovery stack in the background so Explore's
-    // "People around you" is already computed & cached (5-min in-memory cache in
-    // the datasource) when the user gets there. Uses the IDENTICAL preferences
-    // object Explore uses so the cache key matches. Best-effort, never throws.
-    _warmDiscoveryStack();
-
-    // Initialize access control service and load countdown dates from Firestore
+    // Countdown dates are (re)loaded by _loadAccessData.
     _accessControlService = AccessControlService();
-    AccessControlService.loadCountdownDatesFromFirestore();
 
     // Initialize activity tracking for re-engagement notifications
     _activityTrackingService = ActivityTrackingService();
@@ -278,8 +263,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Full (opt-in): Discovery(0), Messages(1), Groups(2), Events(3), Profile(4).
     _screens = _buildScreens();
 
-    // Check profile, load countdown cache, and access data together
-    // _isCheckingProfile stays true until ALL of these complete
+    // Resolve profile + access (from cache when possible, see
+    // _initializeAppState); _isCheckingProfile keeps the skeleton up until then.
     _initializeAppState();
 
     // Load hourly usage counters for discovery (swipe-only; skipped on the
@@ -322,7 +307,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   /// Starts the first-launch gesture tour once the main UI is up.
-  /// Called from _initializeAppState after profile/access checks complete.
+  /// Called from _revealShell once the profile/access state is known.
   Future<void> _maybeStartTour() async {
     if (!mounted || !_tourPending) return;
 
@@ -455,23 +440,84 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     if (pending != null && mounted) pending();
   }
 
-  /// Initialize app state: profile check + countdown + access data in parallel
-  /// _isCheckingProfile stays true until all complete
+  /// Resolves the profile + access state the shell needs before showing tabs.
+  ///
+  /// Returning user: both docs are in the local Firestore cache, so the shell
+  /// shows at once from them and the server checks ([_loadAccessData],
+  /// [_checkUserProfile]) run in the background, correcting the state (or
+  /// redirecting to onboarding) if the server disagrees. First launch on this
+  /// device: nothing cached, so the skeleton stays up for the server checks,
+  /// bounded so a stalled network can't hold it forever.
   Future<void> _initializeAppState() async {
-    // Run all three in parallel
-    await Future.wait([
-      _loadCachedCountdown(),
-      _loadAccessData(),
-      _checkUserProfile(),
-    ]);
-    // Only now show the main content (profile check may have already redirected)
-    if (mounted && _isCheckingProfile) {
-      setState(() {
-        _isCheckingProfile = false;
-      });
-      // Main UI is up — start the first-launch gesture tour if due
-      _maybeStartTour();
+    await _loadCachedCountdown();
+    if (await _applyCachedState()) {
+      _revealShell();
+      unawaited(Future.wait([_loadAccessData(), _checkUserProfile()]));
+      return;
     }
+    await Future.wait([_loadAccessData(), _checkUserProfile()])
+        .timeout(const Duration(seconds: 10), onTimeout: () => const []);
+    // Only now show the main content (profile check may have already redirected)
+    _revealShell();
+  }
+
+  /// Applies the cached `profiles` + `users` docs, if both are in the local
+  /// cache. Returns false when either is missing (the server must decide).
+  Future<bool> _applyCachedState() async {
+    try {
+      final (profileDoc, accessData) = await (
+        FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(widget.userId)
+            .get(const GetOptions(source: Source.cache)),
+        _accessControlService.getCachedUserAccess(),
+      ).wait.timeout(const Duration(seconds: 2));
+      final profileData = profileDoc.data();
+      if (!mounted || profileData == null || accessData == null) return false;
+      _applyProfileData(profileData);
+      await _applyAccessData(accessData, fromServer: false);
+      return true;
+    } catch (_) {
+      return false; // not cached, wait for the server
+    }
+  }
+
+  /// Lifts the skeleton, then starts the tour and the background prefetch.
+  void _revealShell() {
+    if (!mounted || !_isCheckingProfile) return;
+    setState(() {
+      _isCheckingProfile = false;
+    });
+    // Main UI is up — start the first-launch gesture tour if due
+    _maybeStartTour();
+    _schedulePrefetch();
+  }
+
+  /// Once the first tab has painted, warms what the other tabs open with
+  /// (Events, Discovery, inboxes, communities) so they paint from cache. Runs
+  /// once per user per session, and only while the app is in the foreground.
+  void _schedulePrefetch() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // A short breather so the first tab's own requests go out first.
+      Future.delayed(const Duration(milliseconds: 800), _runPrefetch);
+    });
+  }
+
+  void _runPrefetch() {
+    if (!mounted || _prefetchedForUser == widget.userId) return;
+    final lifecycle = WidgetsBinding.instance.lifecycleState;
+    if (lifecycle != null && lifecycle != AppLifecycleState.resumed) {
+      _prefetchWhenResumed = true;
+      return;
+    }
+    _prefetchWhenResumed = false;
+    _prefetchedForUser = widget.userId;
+    // All best-effort and self-deduplicating; none of them throws.
+    unawaited(Future.wait([
+      EventsPrefetch.warm(widget.userId),
+      DiscoveryPrefetch.warm(widget.userId),
+      DataPreloadService.instance.warm(widget.userId),
+    ]));
   }
 
   bool _membershipCheckDone = false;
@@ -589,10 +635,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     }
 
     try {
-      final doc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.userId)
-          .get();
+      // Shared server read of the own profile (see AccessControlService.serverDoc).
+      final doc = await _accessControlService
+          .serverDoc('profiles', widget.userId)
+          .timeout(const Duration(seconds: 8));
       if (!doc.exists || !mounted || _membershipCheckDone) return;
 
       final data = doc.data()!;
@@ -688,32 +734,42 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   Future<void> _loadAccessData() async {
-    // 1. Fetch latest countdown dates from Firestore (set by admin panel)
-    await AccessControlService.loadCountdownDatesFromFirestore();
+    // 1. Latest countdown dates (set by admin panel) and this user's access
+    //    doc, together. Both reads are shared with AuthWrapper's check, so on
+    //    launch these usually resolve without another round trip.
+    final (_, fetched) = await (
+      AccessControlService.loadCountdownDatesFromFirestore(),
+      _accessControlService.getCurrentUserAccess(forceServer: true),
+    ).wait;
+    if (fetched == null) return;
 
-    // 2. Recalculate this user's accessDate based on their tier + fresh dates
-    final currentUser = FirebaseAuth.instance.currentUser;
-    if (currentUser != null) {
-      await _accessControlService.refreshUserAccessDate(
-        currentUser.uid,
-        currentUser.email,
-      ).catchError((_) => null);
-    }
+    // 2. Recalculate this user's accessDate based on their tier + fresh dates.
+    //    A changed date is written in the background, never waited on.
+    final accessData = await _accessControlService.reconcileAccessDate(
+      fetched,
+      FirebaseAuth.instance.currentUser?.email,
+    );
+    if (mounted) await _applyAccessData(accessData, fromServer: true);
+  }
 
-    // 3. Now read the updated access data (force server to get the write we just did)
-    final accessData = await _accessControlService.getCurrentUserAccess(forceServer: true);
-    if (mounted && accessData != null) {
-      final isAdminOrTest = accessData.isAdmin || accessData.isTestUser;
-      setState(() {
-        _accessData = accessData;
+  /// Applies [accessData] to the shell. Only a server copy is authoritative
+  /// for the persisted countdown and the access notifications.
+  Future<void> _applyAccessData(UserAccessData accessData,
+      {required bool fromServer}) async {
+    final isAdminOrTest = accessData.isAdmin || accessData.isTestUser;
+    setState(() {
+      _accessData = accessData;
+      if (fromServer) {
         _showCachedCountdown = false; // Firestore data is now authoritative
-        // Admin and test users always bypass verification overlay
-        if (isAdminOrTest) {
-          _verificationStatus = VerificationStatus.approved;
-          _isAdmin = _isAdmin || accessData.isAdmin;
-        }
-      });
+      }
+      // Admin and test users always bypass verification overlay
+      if (isAdminOrTest) {
+        _verificationStatus = VerificationStatus.approved;
+        _isAdmin = _isAdmin || accessData.isAdmin;
+      }
+    });
 
+    if (fromServer) {
       // Persist or clear countdown end time
       final prefs = await SharedPreferences.getInstance();
       if (!isAdminOrTest && accessData.isCountdownActive) {
@@ -761,10 +817,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   /// Check if base membership has expired and update Firestore
   Future<void> _checkBaseMembershipExpiry() async {
     try {
-      final doc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.userId)
-          .get();
+      // Shared server read of the own profile (see AccessControlService.serverDoc).
+      final doc = await _accessControlService
+          .serverDoc('profiles', widget.userId)
+          .timeout(const Duration(seconds: 8));
       if (!doc.exists || !mounted) return;
 
       final data = doc.data()!;
@@ -779,6 +835,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
               .collection('profiles')
               .doc(widget.userId)
               .update({'hasBaseMembership': false});
+          AccessControlService.invalidateOwnDoc('profiles', widget.userId);
 
           // Refresh profile bloc
           if (mounted) {
@@ -876,9 +933,14 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       case AppLifecycleState.resumed:
         _activityTrackingService.startTracking();
         _presenceService.onAppResumed();
-        // Re-check access control on every app resume to enforce countdown
+        // Re-check access control on every app resume to enforce countdown.
+        // Fresh read, not a shared one from just before backgrounding.
+        AccessControlService.invalidateOwnDoc('users', widget.userId);
+        AccessControlService.invalidateOwnDoc('profiles', widget.userId);
         _loadCachedCountdown();
         _loadAccessData();
+        // A prefetch that was due while the app was in the background.
+        if (_prefetchWhenResumed) _runPrefetch();
         break;
       case AppLifecycleState.paused:
       case AppLifecycleState.inactive:
@@ -892,10 +954,11 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   Future<void> _checkUserProfile() async {
     try {
-      final profileDoc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.userId)
-          .get(const GetOptions(source: Source.server));
+      // Shared with AuthWrapper's server read of the same doc (see
+      // AccessControlService.serverDoc), so launch reads it once.
+      final profileDoc = await _accessControlService
+          .serverDoc('profiles', widget.userId)
+          .timeout(const Duration(seconds: 8));
 
       if (!mounted) return;
 
@@ -907,56 +970,60 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           ),
         );
       } else {
-        // Check verification status
-        final data = profileDoc.data()!;
-        final statusString = data['verificationStatus'] as String?;
-        var status = VerificationStatus.notSubmitted;
-
-        switch (statusString) {
-          case 'pending':
-            status = VerificationStatus.pending;
-            break;
-          case 'approved':
-          case 'verified':
-            status = VerificationStatus.approved;
-            break;
-          case 'rejected':
-            status = VerificationStatus.rejected;
-            break;
-          case 'needsResubmission':
-            status = VerificationStatus.needsResubmission;
-            break;
-          default:
-            status = VerificationStatus.notSubmitted;
-        }
-
-        // Get membership tier
-        final membershipTierString = data['membershipTier'] as String?;
-        var membershipTier = MembershipTier.free;
-        if (membershipTierString != null) {
-          membershipTier = MembershipTier.fromString(membershipTierString);
-        }
-
-        final isAdmin = data['isAdmin'] as bool? ?? false;
-        // Check if test user (tier == 'test' in profiles or users collection)
-        final isTestTier = membershipTierString?.toLowerCase() == 'test';
-
-        // Admin and test users ALWAYS bypass verification — force approved
-        if (isAdmin || isTestTier) {
-          status = VerificationStatus.approved;
-        }
-
-        setState(() {
-          _verificationStatus = status;
-          _verificationRejectionReason = data['verificationRejectionReason'] as String?;
-          _isAdmin = isAdmin;
-          _membershipTier = membershipTier;
-          // _isCheckingProfile set to false by _initializeAppState after all futures complete
-        });
+        _applyProfileData(profileDoc.data()!);
       }
     } catch (e) {
       // On error, assume profile exists — _isCheckingProfile handled by _initializeAppState
     }
+  }
+
+  /// Applies verification status, admin flag and tier from a profile doc.
+  void _applyProfileData(Map<String, dynamic> data) {
+    // Check verification status
+    final statusString = data['verificationStatus'] as String?;
+    var status = VerificationStatus.notSubmitted;
+
+    switch (statusString) {
+      case 'pending':
+        status = VerificationStatus.pending;
+        break;
+      case 'approved':
+      case 'verified':
+        status = VerificationStatus.approved;
+        break;
+      case 'rejected':
+        status = VerificationStatus.rejected;
+        break;
+      case 'needsResubmission':
+        status = VerificationStatus.needsResubmission;
+        break;
+      default:
+        status = VerificationStatus.notSubmitted;
+    }
+
+    // Get membership tier
+    final membershipTierString = data['membershipTier'] as String?;
+    var membershipTier = MembershipTier.free;
+    if (membershipTierString != null) {
+      membershipTier = MembershipTier.fromString(membershipTierString);
+    }
+
+    final isAdmin = data['isAdmin'] as bool? ?? false;
+    // Check if test user (tier == 'test' in profiles or users collection)
+    final isTestTier = membershipTierString?.toLowerCase() == 'test';
+
+    // Admin and test users ALWAYS bypass verification — force approved
+    if (isAdmin || isTestTier) {
+      status = VerificationStatus.approved;
+    }
+
+    setState(() {
+      _verificationStatus = status;
+      _verificationRejectionReason = data['verificationRejectionReason'] as String?;
+      _isAdmin = isAdmin;
+      _membershipTier = membershipTier;
+      // _isCheckingProfile set to false by _initializeAppState
+    });
   }
 
   void _navigateToVerification() {
@@ -1282,21 +1349,29 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     //   Profile(4). Full (dating): Discovery(0), Messages(1), Groups(2),
     //   Events(3), Profile(4). Both have 5 screens, so clamp to [0, 4].
     final safeIndex = _currentIndex.clamp(0, _screens.length - 1);
+    // Every path that changes the tab (bottom nav, switchTab, back, the tour,
+    // push/deep-link navigation) ends up here, so marking the tab visited in
+    // build covers them all.
+    _visitedTabs.add(safeIndex);
 
     final scaffold = Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: _buildAppBar(),
       body: IndexedStack(
-        // Verification is gated at login level — no in-app overlay needed, so
-        // every tab screen is mounted and kept alive; IndexedStack just shows
-        // the selected one.
+        // Verification is gated at login level — no in-app overlay needed. A
+        // tab is mounted on its first visit and kept alive from then on;
+        // IndexedStack just shows the selected one. Unvisited tabs hold an
+        // empty box (the slot count never changes, so no tab loses its state).
         index: safeIndex,
         // Each tab is wrapped in a VisibleTabScope so per-page first-time tours
         // only start when their tab is actually selected (not while off-stage
         // in the IndexedStack). The flag updates on every tab change.
         children: [
           for (var i = 0; i < _screens.length; i++)
-            VisibleTabScope(isVisible: i == safeIndex, child: _screens[i]),
+            if (_visitedTabs.contains(i))
+              VisibleTabScope(isVisible: i == safeIndex, child: _screens[i])
+            else
+              const SizedBox.shrink(),
         ],
       ),
       // Centered hamburger pill — only present while the menu is hidden. It's a

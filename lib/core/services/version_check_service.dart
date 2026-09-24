@@ -100,10 +100,17 @@ class VersionCheckService extends ChangeNotifier {
   bool get isInitialized => _isInitialized;
   String get installedVersion => _installedVersion;
 
-  /// Initialize the service and start listening for updates
-  Future<void> initialize() async {
-    if (_isInitialized) return;
+  Future<void>? _initializing;
 
+  /// Initialize the service and start listening for updates.
+  ///
+  /// Not awaited at startup. [checkVersion] answers "no update" until this
+  /// completes, so anything that gates on it (the update / maintenance check
+  /// in AuthWrapper) awaits this first. Safe to call repeatedly; every caller
+  /// shares the same load.
+  Future<void> initialize() => _initializing ??= _load();
+
+  Future<void> _load() async {
     try {
       // Get installed app version
       final packageInfo = await PackageInfo.fromPlatform();

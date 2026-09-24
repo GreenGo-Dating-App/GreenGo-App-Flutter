@@ -63,47 +63,53 @@ class PassportService {
     final cached = _memo[userId];
     if (cached != null) return cached;
 
-    // 1) Stored stamps (explicit awards / previously persisted).
-    var stored = const CulturalPassport.empty();
-    try {
-      final snap = await _doc(userId).get();
-      stored = CulturalPassport.fromMap(snap.data());
-    } catch (e) {
-      debugPrint('PassportService.load stored read failed: $e');
+    // The four derivation sources are independent, so they run in PARALLEL
+    // (they used to be four sequential round trips). Each is still wrapped on
+    // its own so one failing query can never blank the whole passport.
+    Future<T> guard<T>(String what, Future<T> Function() run, T fallback) async {
+      try {
+        return await run();
+      } catch (e) {
+        debugPrint('PassportService.load $what failed: $e');
+        return fallback;
+      }
     }
 
+    final results = await Future.wait<Object?>([
+      // 1) Stored stamps (explicit awards / previously persisted).
+      guard('stored read', () async {
+        final snap = await _doc(userId).get();
+        return CulturalPassport.fromMap(snap.data());
+      }, const CulturalPassport.empty()),
+      // 2) Derive from conversations (partner countries + partner languages).
+      guard('conversation derivation', () async {
+        final partnerIds = await _partnerUserIds(userId);
+        return _readProfiles(partnerIds);
+      }, const <Map<String, dynamic>>[]),
+      // 3) Derive the user's own languages from their profile.
+      guard('own-profile derivation', () async {
+        final ownSnap =
+            await _firestore.collection(_profilesCol).doc(userId).get();
+        return ownSnap.data();
+      }, null),
+      // 4) Derive event stamps from RSVP'd / attended events.
+      guard('event derivation', () => _attendedEventCategories(userId),
+          <String>{}),
+    ]);
+
+    final stored = results[0] as CulturalPassport;
     final countries = <String>{...stored.countryStamps};
     final languages = <String>{...stored.languageStamps};
     final events = <String>{...stored.eventStamps};
 
-    // 2) Derive from conversations (partner countries + partner languages).
-    try {
-      final partnerIds = await _partnerUserIds(userId);
-      final partners = await _readProfiles(partnerIds);
-      for (final data in partners) {
-        for (final code in _profileCountryCodes(data)) {
-          countries.add(code);
-        }
-        languages.addAll(_profileLanguages(data));
+    for (final data in results[1] as List<Map<String, dynamic>>) {
+      for (final code in _profileCountryCodes(data)) {
+        countries.add(code);
       }
-    } catch (e) {
-      debugPrint('PassportService.load conversation derivation failed: $e');
+      languages.addAll(_profileLanguages(data));
     }
-
-    // 3) Derive the user's own languages from their profile.
-    try {
-      final ownSnap = await _firestore.collection(_profilesCol).doc(userId).get();
-      languages.addAll(_profileLanguages(ownSnap.data()));
-    } catch (e) {
-      debugPrint('PassportService.load own-profile derivation failed: $e');
-    }
-
-    // 4) Derive event stamps from RSVP'd / attended events.
-    try {
-      events.addAll(await _attendedEventCategories(userId));
-    } catch (e) {
-      debugPrint('PassportService.load event derivation failed: $e');
-    }
+    languages.addAll(_profileLanguages(results[2] as Map<String, dynamic>?));
+    events.addAll(results[3] as Set<String>);
 
     final passport = CulturalPassport(
       countryStamps: countries.toList(),
@@ -166,17 +172,22 @@ class PassportService {
   /// The other participants of the user's 1:1 conversations, capped.
   ///
   /// Uses two single-field equality queries (no composite index) instead of a
-  /// `Filter.or`, each bounded by [_maxConversationsPerSide].
+  /// `Filter.or`, each bounded by [_maxConversationsPerSide], read in parallel
+  /// (the `userId1` side still takes precedence when capping).
   Future<List<String>> _partnerUserIds(String userId) async {
-    final ids = <String>{};
+    final snaps = await Future.wait([
+      for (final field in const ['userId1', 'userId2'])
+        _firestore
+            .collection(_conversationsCol)
+            .where(field, isEqualTo: userId)
+            .limit(_maxConversationsPerSide)
+            .get(),
+    ]);
 
-    Future<void> collect(String field) async {
-      final snap = await _firestore
-          .collection(_conversationsCol)
-          .where(field, isEqualTo: userId)
-          .limit(_maxConversationsPerSide)
-          .get();
+    final ids = <String>{};
+    for (final snap in snaps) {
       for (final doc in snap.docs) {
+        if (ids.length >= _maxPartners) break;
         final data = doc.data();
         final u1 = data['userId1'] as String?;
         final u2 = data['userId2'] as String?;
@@ -184,31 +195,26 @@ class PassportService {
         if (other != null && other.isNotEmpty && other != userId) {
           ids.add(other);
         }
-        if (ids.length >= _maxPartners) break;
       }
     }
-
-    await collect('userId1');
-    if (ids.length < _maxPartners) await collect('userId2');
-
-    return ids.take(_maxPartners).toList();
+    return ids.toList();
   }
 
   /// Batch-reads profile docs by id (`whereIn`, ≤10 per query), capped.
+  /// The batches are read in parallel.
   Future<List<Map<String, dynamic>>> _readProfiles(List<String> userIds) async {
-    final out = <Map<String, dynamic>>[];
-    for (var i = 0; i < userIds.length; i += _whereInBatch) {
-      final batch = userIds.skip(i).take(_whereInBatch).toList();
-      if (batch.isEmpty) break;
-      final snap = await _firestore
-          .collection(_profilesCol)
-          .where(FieldPath.documentId, whereIn: batch)
-          .get();
-      for (final doc in snap.docs) {
-        out.add(doc.data());
-      }
-    }
-    return out;
+    final snaps = await Future.wait([
+      for (var i = 0; i < userIds.length; i += _whereInBatch)
+        _firestore
+            .collection(_profilesCol)
+            .where(FieldPath.documentId,
+                whereIn: userIds.skip(i).take(_whereInBatch).toList())
+            .get(),
+    ]);
+    return [
+      for (final snap in snaps)
+        for (final doc in snap.docs) doc.data(),
+    ];
   }
 
   /// The categories of events the user RSVP'd to / is attending, capped.
@@ -232,12 +238,16 @@ class PassportService {
 
     final categories = <String>{};
     final ids = eventIds.toList();
-    for (var i = 0; i < ids.length; i += _whereInBatch) {
-      final batch = ids.skip(i).take(_whereInBatch).toList();
-      final snap = await _firestore
-          .collection(_eventsCol)
-          .where(FieldPath.documentId, whereIn: batch)
-          .get();
+    // whereIn batches (≤10 ids each), read in parallel.
+    final snaps = await Future.wait([
+      for (var i = 0; i < ids.length; i += _whereInBatch)
+        _firestore
+            .collection(_eventsCol)
+            .where(FieldPath.documentId,
+                whereIn: ids.skip(i).take(_whereInBatch).toList())
+            .get(),
+    ]);
+    for (final snap in snaps) {
       for (final doc in snap.docs) {
         final category = doc.data()['category'];
         if (category is String && category.trim().isNotEmpty) {

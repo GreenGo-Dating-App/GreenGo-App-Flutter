@@ -13,9 +13,10 @@ import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import 'package:showcaseview/showcaseview.dart';
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/location_refresh_service.dart';
 import '../../../../core/services/interaction_log_service.dart';
-import '../../../../core/services/session_cache_gate.dart';
+import '../../../../core/cache/last_result_cache.dart';
 import '../../../analytics/data/services/performance_monitoring_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
@@ -28,6 +29,7 @@ import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../communities/data/datasources/communities_remote_datasource.dart';
+import '../../../communities/data/models/community_model.dart';
 import '../../../communities/domain/entities/community.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
 import '../../../communities/presentation/screens/communities_screen.dart';
@@ -37,11 +39,14 @@ import '../../../cultural_exchange/domain/entities/country_spotlight.dart';
 import '../../../cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart';
 import '../../../cultural_exchange/presentation/screens/cultural_exchange_screen.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
+import '../../../discovery/domain/discovery_visibility.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../discovery/presentation/widgets/network_grid_card.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/data/datasources/external_events_data_source.dart';
+import '../../../events/data/datasources/external_events_pager.dart';
+import '../../../events/data/models/event_model.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/domain/entities/external_event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
@@ -222,6 +227,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   Future<void> _load({bool forceRefresh = false}) async {
+    // Re-read the block list once per load (the service caches it for 5 min).
+    _blockedFuture = null;
     // Pull-to-refresh must re-read WHERE THE USER IS before reloading anything,
     // otherwise every section below is recomputed against a stale stored
     // position (distances, people nearby, country filtering).
@@ -238,16 +245,33 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
     // Reload the profile AFTER the location write so effectiveLocation, and
     // every section that derives from it, sees the new position.
-    await _loadProfile();
+    //
+    // Otherwise read the LOCAL copy first, so the sections below start at once
+    // instead of waiting a server round trip; the server copy then refreshes it
+    // in the background (and the profile listener re-runs the location-driven
+    // sections if the position changed). A cold cache reads the server first.
+    final fromCache =
+        !forceRefresh && await _loadProfile(source: Source.cache);
+    if (fromCache) {
+      unawaited(_refreshProfileFromServer());
+    } else {
+      await _loadProfile();
+    }
     // Now that traveler state is known, follow any later change to it.
     _watchLocation();
+    // Paint what the user saw last time (by id, from the local cache) while the
+    // fresh loads below run. Never paints an empty section.
+    if (!forceRefresh) unawaited(_paintCachedSections());
+    // The Countries / People counters are the priciest reads on the page and
+    // don't need to be live: last value now, recomputed after the first paint.
+    _scheduleStats(immediately: forceRefresh);
     // Fire the content loads concurrently; each updates state on its own and
     // never throws (a failure just hides its section). On a pull-to-refresh
     // (forceRefresh) the people pool bypasses its in-memory cache; the Firestore
     // .get() loads already return fresh server data when online.
     await Future.wait<void>([
-      // Featured / Happening-today / Near-you run SEQUENTIALLY inside one pass
-      // so they can share `_usedEventKeys` and never show the same event twice.
+      // Featured / Happening-today / Near-you share ONE nearby read and are
+      // elected in order so they never show the same event twice.
       _loadEventCarousels(),
       _loadFeaturedAttractions(),
       _loadRecommended(),
@@ -258,17 +282,264 @@ class _ExploreScreenState extends State<ExploreScreen> {
       _loadCommunities(),
       _loadSpotlight(),
       _loadCoinsStat(),
-      _loadCountriesStat(),
-      _loadPeopleStat(),
     ]);
   }
 
-  Future<void> _loadProfile() async {
+  /// Background server refresh after a cache-first profile read. If the
+  /// position moved in the meantime, the location-driven sections re-run (the
+  /// snapshot listener can't be relied on for this: when this read lands first
+  /// it already sees the new values and treats the change as nothing).
+  Future<void> _refreshProfileFromServer() async {
+    final before = (_city, _countryName, _userLat, _userLng, _travelerActive);
+    await _loadProfile();
+    if (!mounted) return;
+    if (before != (_city, _countryName, _userLat, _userLng, _travelerActive)) {
+      unawaited(_loadEventCarousels());
+      unawaited(_loadAroundYou());
+      unawaited(_loadCommunities());
+    }
+  }
+
+  // LastResultCache keys for the sections painted instantly on open.
+  static const String _kCacheLuxury = 'explore_luxury_v1';
+  static const String _kCacheHappenings = 'explore_happenings_v1';
+  static const String _kCacheAroundYou = 'explore_around_you_v1';
+  static const String _kCacheRecommended = 'explore_recommended_v1';
+  static const String _kCacheSameLanguage = 'explore_same_language_v1';
+  static const String _kCacheSameLanguageName = 'explore_same_language_name_v1';
+  static const String _kCacheBusinesses = 'explore_businesses_v1';
+  static const String _kCacheCommunities = 'explore_communities_v1';
+  static const String _kCacheCommunityEvents = 'explore_community_events_v1';
+  static const String _kCacheStatCountries = 'explore_stat_countries_v1';
+  static const String _kCacheStatPeople = 'explore_stat_people_v1';
+
+  /// Paints every cacheable section from what the last SERVER load rendered
+  /// (ids → documents read from the local Firestore cache, see
+  /// [LastResultCache]). A section is only painted while it is still loading
+  /// (null) and only with a non-empty result, so it can never overwrite fresh
+  /// data or show a cached empty state. Privacy rules are re-applied to the
+  /// local copies (ghost / incognito / blocked / admin / inactive).
+  Future<void> _paintCachedSections() async {
     try {
-      final doc =
-          await _firestore.collection('profiles').doc(widget.userId).get();
+      final profiles = _firestore.collection('profiles');
+      // The block list is normally already in memory; if it isn't available
+      // almost instantly, skip the people previews rather than risk showing a
+      // blocked person.
+      final blocked = await di
+          .sl<BlockedUsersService>()
+          .getBlockedUserIds(widget.userId)
+          .then<Set<String>?>((ids) => ids)
+          .timeout(const Duration(milliseconds: 400), onTimeout: () => null);
+
+      // Same parser + visibility rules as the server loads.
+      Future<List<MatchCandidate>> people(String key) async {
+        if (blocked == null) return const <MatchCandidate>[];
+        final out = <MatchCandidate>[];
+        for (final doc in await LastResultCache.loadDocs(key, profiles)) {
+          final partner =
+              _parsePartner(doc.id, doc.data() ?? const {}, blocked: blocked);
+          if (partner != null) out.add(_candidateFor(partner));
+        }
+        return out;
+      }
+
+      final results = await Future.wait<Object?>([
+        // Featured: never past (no radius — it is nearest-first, uncapped).
+        _cachedHappenings(_kCacheLuxury),
+        // Happening: the 14-day window and 100 km, as the server election.
+        _cachedHappenings(_kCacheHappenings, communityOk: (h) {
+          final now = DateTime.now();
+          final today = DateTime(now.year, now.month, now.day);
+          return h.community!.startDate
+                  .isBefore(today.add(const Duration(days: 15))) &&
+              _withinKm(h, 100);
+        }),
+        people(_kCacheAroundYou),
+        people(_kCacheRecommended),
+        people(_kCacheSameLanguage),
+        LastResultCache.loadJson(_kCacheSameLanguageName),
+        LastResultCache.loadDocs(_kCacheBusinesses, profiles),
+        LastResultCache.loadDocs(
+            _kCacheCommunities, _firestore.collection('communities')),
+        LastResultCache.loadDocs(
+            _kCacheCommunityEvents, _firestore.collection('events')),
+      ]);
+      if (!mounted) return;
+
+      final luxury = results[0] as List<_Happening>;
+      final happenings = results[1] as List<_Happening>;
+      final around = results[2] as List<MatchCandidate>;
+      final recommended = results[3] as List<MatchCandidate>;
+      final sameLanguage = results[4] as List<MatchCandidate>;
+      final sameLanguageName = results[5];
+      final businesses = <Profile>[];
+      for (final doc
+          in results[6] as List<DocumentSnapshot<Map<String, dynamic>>>) {
+        final p = _parseBusiness(doc.id, doc.data() ?? const {});
+        if (p != null && !(blocked?.contains(doc.id) ?? true)) businesses.add(p);
+      }
+      final communities = <Community>[];
+      for (final doc
+          in results[7] as List<DocumentSnapshot<Map<String, dynamic>>>) {
+        try {
+          final c = CommunityModel.fromFirestore(doc);
+          if (c.isPublic) communities.add(c);
+        } catch (_) {}
+      }
+      final now = DateTime.now();
+      final communityEvents = <Event>[];
+      for (final doc
+          in results[8] as List<DocumentSnapshot<Map<String, dynamic>>>) {
+        try {
+          final e = EventModel.fromFirestore(doc);
+          // As the server path: public, live, not ended, within 50 km.
+          if (e.isPublic &&
+              e.isLive &&
+              e.endDate.isAfter(now) &&
+              _withinFeaturedRadius(_Happening.community(e))) {
+            communityEvents.add(e);
+          }
+        } catch (_) {}
+      }
+
+      setState(() {
+        if (_luxuryEvents == null && luxury.isNotEmpty) _luxuryEvents = luxury;
+        if (_happenings == null && happenings.isNotEmpty) {
+          _happenings = happenings;
+        }
+        if (_aroundYou == null && around.isNotEmpty) _aroundYou = around;
+        if (_recommended == null && recommended.isNotEmpty) {
+          _recommended = recommended;
+        }
+        if (_sameLanguage == null &&
+            sameLanguage.isNotEmpty &&
+            sameLanguageName is String &&
+            sameLanguageName.isNotEmpty) {
+          _sameLanguageName = sameLanguageName;
+          _sameLanguage = sameLanguage;
+        }
+        if (_businesses == null && businesses.isNotEmpty) {
+          _businesses = businesses;
+        }
+        if (_communities == null && communities.isNotEmpty) {
+          _communities = communities;
+        }
+        if (_communityEvents == null && communityEvents.isNotEmpty) {
+          _communityEvents = communityEvents;
+        }
+      });
+      _precacheAvatars(around);
+    } catch (_) {
+      // Nothing cached — the skeletons stay until the server loads land.
+    }
+  }
+
+  /// Saves an event carousel as ordered `e:<eventId>` / `x:<externalId>` refs.
+  void _saveHappenings(String key, List<_Happening> items) {
+    unawaited(LastResultCache.saveJson(key, [
+      for (final h in items)
+        if (h.community != null)
+          'e:${h.community!.id}'
+        else if (h.external != null)
+          'x:${h.external!.id}',
+    ]));
+  }
+
+  /// Reads a carousel saved by [_saveHappenings] back from the LOCAL cache,
+  /// re-applying the server path's checks: community events must still be
+  /// public, live, not ended and not past (plus [communityOk], the carousel's
+  /// own window); live events must be dated today-onward and located.
+  Future<List<_Happening>> _cachedHappenings(
+    String key, {
+    bool Function(_Happening h)? communityOk,
+  }) async {
+    final raw = await LastResultCache.loadJson(key);
+    if (raw is! List || raw.isEmpty) return const <_Happening>[];
+    final refs = raw.whereType<String>().toList();
+    final items = await Future.wait(refs.map((ref) async {
+      try {
+        final id = ref.substring(2);
+        const cacheOnly = GetOptions(source: Source.cache);
+        if (ref.startsWith('e:')) {
+          final doc =
+              await _firestore.collection('events').doc(id).get(cacheOnly);
+          if (!doc.exists) return null;
+          final e = EventModel.fromFirestore(doc);
+          if (!e.isPublic ||
+              !e.isLive ||
+              e.endDate.isBefore(DateTime.now()) ||
+              !_eventNotPast(e)) {
+            return null;
+          }
+          final h = _Happening.community(e);
+          return communityOk == null || communityOk(h) ? h : null;
+        }
+        final doc = await _firestore
+            .collection('external_events')
+            .doc(id)
+            .get(cacheOnly);
+        final data = doc.data();
+        if (data == null) return null;
+        final e = ExternalEvent.fromMap(doc.id, data);
+        return _externalFuture(e) && e.lat != null && e.lng != null
+            ? _Happening.external(e)
+            : null;
+      } catch (_) {
+        return null; // not in the local cache
+      }
+    }));
+    return items.whereType<_Happening>().toList();
+  }
+
+  /// Shows the last known Countries / People counts at once, then recomputes
+  /// them after the first frame (plus a short delay, so they never compete
+  /// with the sections for bandwidth) — or right away on a pull-to-refresh.
+  void _scheduleStats({bool immediately = false}) {
+    unawaited(() async {
+      final cached = await Future.wait([
+        LastResultCache.loadJson(_kCacheStatCountries),
+        LastResultCache.loadJson(_kCacheStatPeople),
+      ]);
+      if (!mounted) return;
+      setState(() {
+        if (_countriesStat == null && cached[0] is String) {
+          _countriesStat = cached[0] as String;
+        }
+        if (_peopleStat == null && cached[1] is String) {
+          _peopleStat = cached[1] as String;
+        }
+      });
+    }());
+
+    void run() {
+      if (!mounted) return;
+      unawaited(Future.wait<void>([
+        _loadCountriesStat(fresh: immediately),
+        _loadPeopleStat(),
+      ]));
+    }
+
+    if (immediately) {
+      run();
+      return;
+    }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Future<void>.delayed(const Duration(milliseconds: 1500), run);
+    });
+  }
+
+  /// Reads the user's profile ([source] null = default server-first read) and
+  /// applies it. Returns whether a profile was found.
+  Future<bool> _loadProfile({Source? source}) async {
+    var found = false;
+    try {
+      final doc = await _firestore
+          .collection('profiles')
+          .doc(widget.userId)
+          .get(source == null ? null : GetOptions(source: source));
       final data = doc.data();
       if (data != null) {
+        found = true;
         final loc = data['location'] as Map<String, dynamic>?;
         _city = (loc?['city'] as String?)?.trim();
         _countryName = (loc?['country'] as String?)?.trim();
@@ -315,10 +586,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
     } catch (_) {
       // Non-fatal — fall back to defaults below.
     }
+    // A cache miss just falls through to the server read.
+    if (source == Source.cache && !found) return false;
     // If the profile read failed entirely, still resolve the tier tile so it
     // doesn't shimmer forever (defaults to the Base tier label).
     _tierStat ??= _tierShortLabel(MembershipTier.free);
     if (mounted) setState(() {});
+    return found;
   }
 
   /// Reads the user's coin balance for the stats header. Prefers the stored
@@ -365,6 +639,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
       isTravelerActive: _travelerActive,
     ));
 
+    // Re-subscribing on every pull-to-refresh used to leak the old listener.
+    _profileSub?.cancel();
     _profileSub = _firestore
         .collection('profiles')
         .doc(widget.userId)
@@ -398,6 +674,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
           travelling == _travelerActive) {
         return;
       }
+      // "People around you" queries around the parsed profile's location, so it
+      // must follow the move too.
+      try {
+        _me = ProfileModel.fromJson({...data, 'userId': widget.userId});
+      } catch (_) {}
       setState(() {
         _travelerActive = travelling;
         if (city != null && city.isNotEmpty) _city = city;
@@ -422,24 +703,29 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// Counts the distinct countries the user has engaged with = their Cultural
   /// Passport country-stamp count (reuses the bounded, index-free
-  /// [PassportService]).
-  Future<void> _loadCountriesStat() async {
-    String value = '–';
+  /// [PassportService] singleton, so the Passport screen shares its memo).
+  /// [fresh] drops that memo first (pull-to-refresh).
+  Future<void> _loadCountriesStat({bool fresh = false}) async {
+    String? value;
     try {
-      final passport = await PassportService(firestore: _firestore)
-          .load(widget.userId);
+      final service = di.sl<PassportService>();
+      if (fresh) service.invalidate(widget.userId);
+      final passport = await service.load(widget.userId);
       value = passport.countryStamps.length.toString();
+      unawaited(LastResultCache.saveJson(_kCacheStatCountries, value));
     } catch (_) {
-      value = '–';
+      value = null;
     }
-    if (mounted) setState(() => _countriesStat = value);
+    // A failure keeps the last known value; only a tile with nothing falls
+    // back to '–'.
+    if (mounted) setState(() => _countriesStat = value ?? _countriesStat ?? '–');
   }
 
   /// Counts the distinct people the user has ever chatted with, via two bounded,
   /// index-free equality queries over `conversations` (`userId1`/`userId2`),
   /// collecting and de-duplicating the other participant.
   Future<void> _loadPeopleStat() async {
-    String value = '–';
+    String? value;
     try {
       final ids = <String>{};
 
@@ -468,13 +754,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
         }
       }
 
-      await collect('userId1');
-      await collect('userId2');
+      await Future.wait([collect('userId1'), collect('userId2')]);
       value = ids.length.toString();
+      unawaited(LastResultCache.saveJson(_kCacheStatPeople, value));
     } catch (_) {
-      value = '–';
+      value = null;
     }
-    if (mounted) setState(() => _peopleStat = value);
+    if (mounted) setState(() => _peopleStat = value ?? _peopleStat ?? '–');
   }
 
   /// Compact, brand-facing tier label for the stats tile.
@@ -517,29 +803,70 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// Load the three event carousels IN ORDER so they share `_usedEventKeys`
   /// (Featured has priority, then Happening-today, then Near-you) — an event
   /// shown in an earlier one is excluded from the later ones.
+  ///
+  /// The three carousels used to issue their own nearby reads one after the
+  /// other (40 + 60 + 15 community events, and the same 300-doc live-events
+  /// scan twice). Now ONE nearby community read and ONE bounded live read run
+  /// in parallel and feed all three; the election itself is in-memory.
   Future<void> _loadEventCarousels() async {
+    final hasLocation = _userLat != null && _userLng != null;
+    final results = await Future.wait<Object>([
+      hasLocation
+          ? EventsRemoteDataSourceImpl(firestore: _firestore)
+              .getNearbyCommunityEvents(
+                lat: _userLat!,
+                lng: _userLng!,
+                limit: _kNearbyEventPool,
+              )
+              .catchError((Object _) => const <Event>[])
+          : Future<Object>.value(const <Event>[]),
+      _nearbyLiveEvents(),
+    ]);
+    final community = results[0] as List<Event>;
+    final live = results[1] as List<ExternalEvent>;
     _usedEventKeys.clear();
-    await _loadLuxuryEvents(); // Featured — records its keys
-    await _loadHappenings(); // Happening today — excludes + records
-    await _loadCommunityEvents(); // Near you — excludes
+    _loadLuxuryEvents(community, live); // Featured — records its keys
+    await _loadHappenings(community, live); // Happening — excludes + records
+    _loadCommunityEvents(community); // Near you — excludes
   }
 
-  Future<void> _loadHappenings() async {
+  /// Nearest published community events read once per load (nearest-first);
+  /// the largest any carousel needs.
+  static const int _kNearbyEventPool = 60;
+
+  /// Upcoming LIVE (ticketmaster) events nearest the user, read ONCE per load
+  /// and shared by Featured + Happening (it used to read 300 arbitrary docs,
+  /// twice, and sort them here). Uses the shared [ExternalEventsPager] in
+  /// distance mode: expanding geohash rings, past/undated/unlocated events
+  /// dropped BEFORE anything is kept, true-distance order within each ring.
+  /// A second page (the next ring out) only when the first is thin.
+  Future<List<ExternalEvent>> _nearbyLiveEvents() async {
+    final lat = _userLat;
+    final lng = _userLng;
+    if (lat == null || lng == null) return const <ExternalEvent>[];
+    final out = <ExternalEvent>[];
+    try {
+      final pager = ExternalEventsPager(
+        source: 'ticketmaster',
+        sort: 'distance',
+        userLat: lat,
+        userLng: lng,
+        firestore: _firestore,
+      );
+      out.addAll(await pager.next());
+      if (out.length < 10 && pager.hasMore) out.addAll(await pager.next());
+    } catch (_) {
+      // Keep whatever was found — an empty result just skips the live fill.
+    }
+    return out;
+  }
+
+  Future<void> _loadHappenings(
+    List<Event> community,
+    List<ExternalEvent> liveEvents,
+  ) async {
     // 1) Community events happening SOON: ongoing or upcoming (not yet ended).
     //    One instance per recurring series.
-    List<Event> community = const <Event>[];
-    if (_userLat != null && _userLng != null) {
-      try {
-        final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
-        community = await eventsDs.getNearbyCommunityEvents(
-          lat: _userLat!,
-          lng: _userLng!,
-          limit: 60,
-        );
-      } catch (_) {
-        community = const <Event>[];
-      }
-    }
     int byDate(_Happening a, _Happening b) {
       final da = a.date;
       final db = b.date;
@@ -607,30 +934,19 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // by distance.
     final rows = <_Happening>[...communityRows];
     if (rows.length < 20 && _userLat != null && _userLng != null) {
-      try {
-        final snap = await _firestore
-            .collection('external_events')
-            .where('source', isEqualTo: 'ticketmaster')
-            .limit(300)
-            .get();
-        final used = {...rows.map((h) => h.key), ..._usedEventKeys};
-        final live = snap.docs
-            .map(ExternalEvent.fromFirestore)
-            .where(_externalFuture)
-            .where((e) => e.lat != null && e.lng != null)
-            .map((e) => _Happening.external(e))
-            .where((h) => h.key.isNotEmpty && !used.contains(h.key))
-            .toList()
-          ..sort((a, b) => _distanceKmTo(a.lat, a.lng)
-              .compareTo(_distanceKmTo(b.lat, b.lng)));
-        rows.addAll(live.take(20 - rows.length));
-      } catch (_) {}
+      // Already future-only, located and nearest-first.
+      final used = {...rows.map((h) => h.key), ..._usedEventKeys};
+      final live = liveEvents
+          .map((e) => _Happening.external(e))
+          .where((h) => h.key.isNotEmpty && !used.contains(h.key));
+      rows.addAll(live.take(20 - rows.length));
     }
     // Reserve these so Near-you doesn't repeat them.
     for (final h in rows) {
       if (h.key.isNotEmpty) _usedEventKeys.add(h.key);
     }
 
+    _saveHappenings(_kCacheHappenings, rows);
     if (mounted) {
       setState(() {
         _happenings = rows;
@@ -805,7 +1121,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// the carousel never shows a far event; if nothing close-by qualifies it hides
   /// itself. De-duplicated by id. Requires a location (all tiers are distance-
   /// scoped); an unlocated profile yields an (hidden) empty carousel.
-  Future<void> _loadLuxuryEvents() async {
+  void _loadLuxuryEvents(List<Event> nearby, List<ExternalEvent> live) {
     final picked = <_Happening>[];
     final seen = <String>{};
 
@@ -826,25 +1142,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
     void addEvents(Iterable<Event> items) =>
         addAll(items.where(_eventNotPast).map((e) => _Happening.community(e)));
 
-    final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
     final hasLocation = _userLat != null && _userLng != null;
 
     // The user's NEAREST current community events (the data source returns them
     // nearest-first via expanding geohash rings). No hard radius cap — we want
     // "the first 3 CLOSE BY", i.e. the nearest available, never past.
-    List<Event> community = const <Event>[];
-    if (hasLocation) {
-      try {
-        final events = await eventsDs.getNearbyCommunityEvents(
-          lat: _userLat!,
-          lng: _userLng!,
-          limit: 40,
-        );
-        community = _dedupeSeries(events.where(_eventNotPast).toList());
-      } catch (_) {
-        community = const <Event>[];
-      }
-    }
+    final community = _dedupeSeries(nearby.where(_eventNotPast).toList());
 
     // Tier 1 — BOOSTED community events first (round-robin for fair exposure).
     final sponsored = community.where((e) => e.isCurrentlyFeatured).toList()
@@ -859,24 +1162,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // Tier 3 — still short of 3 (few/no community events): fill with the NEAREST
     // upcoming LIVE events (ticketmaster), nearest-first, so Featured always
     // shows the 3 closest events to the user.
+    // (`live` is already future-only, located and nearest-first.)
     if (picked.length < 3 && hasLocation) {
-      try {
-        final snap = await _firestore
-            .collection('external_events')
-            .where('source', isEqualTo: 'ticketmaster')
-            .limit(300)
-            .get();
-        final live = snap.docs
-            .map(ExternalEvent.fromFirestore)
-            .where(_externalFuture)
-            .where((e) => e.lat != null && e.lng != null)
-            .toList()
-          ..sort((a, b) =>
-              _distanceKmTo(a.lat, a.lng).compareTo(_distanceKmTo(b.lat, b.lng)));
-        addAll(live.map((e) => _Happening.external(e)));
-      } catch (_) {
-        // Nothing to show — an empty result hides the carousel.
-      }
+      addAll(live.map((e) => _Happening.external(e)));
     }
 
     final result = picked.take(kFeaturedEventCount).toList();
@@ -884,30 +1172,42 @@ class _ExploreScreenState extends State<ExploreScreen> {
     for (final h in result) {
       if (h.key.isNotEmpty) _usedEventKeys.add(h.key);
     }
+    _saveHappenings(_kCacheLuxury, result);
     if (mounted) setState(() => _luxuryEvents = result);
   }
 
   /// How many people each carousel shows.
   static const int _peopleWanted = 15;
 
-  /// "People around you" — distance-ordered neighbours. Reuses the discovery
-  /// stack ([DiscoveryRemoteDataSource.getDiscoveryStack]), which is already
-  /// nearest-first and applies ghost/blocked/boost rules. We keep the nearest
-  /// [_peopleWanted] and lightly `shuffle()` within that nearest set so the row
-  /// feels fresh without pulling in far-away people. Networking/cultural only —
-  /// no like/match/swipe.
+  /// "People around you" — distance-ordered neighbours via
+  /// [DiscoveryRemoteDataSource.getNearbyPeople]: a few bounded same-city /
+  /// same-country reads with the discovery stack's ghost/incognito/blocked/
+  /// boost rules, instead of building the whole 500-profile stack for a
+  /// 15-card strip. We keep the nearest [_peopleWanted] and lightly
+  /// `shuffle()` within that nearest set so the row feels fresh without pulling
+  /// in far-away people. Networking/cultural only — no like/match/swipe.
   Future<void> _loadAroundYou({bool forceRefresh = false}) async {
-    List<MatchCandidate> picked = const <MatchCandidate>[];
+    List<MatchCandidate>? picked;
     try {
       final ds = di.sl<DiscoveryRemoteDataSource>();
-      final prefs = MatchPreferences.defaultFor(widget.userId)
-          .copyWith(showSupportUser: false);
-      final stack = await ds.getDiscoveryStack(
-        userId: widget.userId,
-        preferences: prefs,
-        limit: 60,
-        forceRefresh: forceRefresh,
-      );
+      final me = _me;
+      final List<MatchCandidate> stack;
+      if (me != null) {
+        stack = await ds.getNearbyPeople(
+          userId: widget.userId,
+          viewer: me,
+          limit: _peopleWanted,
+        );
+      } else {
+        // Unparseable profile: the full stack, as before.
+        stack = await ds.getDiscoveryStack(
+          userId: widget.userId,
+          preferences: MatchPreferences.defaultFor(widget.userId)
+              .copyWith(showSupportUser: false),
+          limit: 60,
+          forceRefresh: forceRefresh,
+        );
+      }
       final nearest = stack
           .where((c) =>
               !c.profile.isAdmin &&
@@ -921,25 +1221,28 @@ class _ExploreScreenState extends State<ExploreScreen> {
           .toList()
         ..shuffle();
       picked = nearest;
+      unawaited(LastResultCache.saveIds(
+          _kCacheAroundYou, nearest.map((c) => c.profile.userId)));
     } catch (_) {
-      picked = const <MatchCandidate>[];
+      picked = null; // keep a cached paint rather than blanking the row
     }
     if (mounted) {
-      setState(() => _aroundYou = picked);
+      final shown = picked ?? _aroundYou ?? const <MatchCandidate>[];
+      setState(() => _aroundYou = shown);
       // Warm the image cache so the avatars are ready and never block on scroll.
-      _precacheAvatars(picked);
+      _precacheAvatars(shown);
     }
   }
 
-  /// Precache each person's first photo so the People-around-you cards render
-  /// their avatar instantly (no per-tile network wait).
+  /// Precache the first visible people's photos with the SAME provider/size the
+  /// tile renders ([NetworkGridCard.photoProvider]) — a bare provider has a
+  /// different cache key and warmed nothing the tile could use.
   void _precacheAvatars(List<MatchCandidate> people) {
     if (!mounted) return;
-    for (final c in people) {
+    for (final c in people.take(8)) {
       final urls = c.profile.photoUrls;
       if (urls.isEmpty || urls.first.isEmpty) continue;
-      precacheImage(CachedNetworkImageProvider(urls.first), context)
-          .catchError((_) {});
+      unawaited(NetworkGridCard.precachePhoto(urls.first));
     }
   }
 
@@ -950,23 +1253,29 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// "People that speak {language}" — picks ONE language the CURRENT USER
   /// themselves knows (from their own `profiles.languages`) and shows OTHER
-  /// people who also speak it. The user's languages are tried in a random order
-  /// (up to a handful of attempts) and the FIRST one that actually has other
-  /// speakers is chosen, so the section renders reliably rather than hiding on
-  /// an unlucky pick. Shuffled, capped at [_peopleWanted]. Hidden entirely when
-  /// the user lists no languages (or none of them have any other speakers).
+  /// people who also speak it. Two of the user's languages (random order) are
+  /// queried IN PARALLEL and the first that actually has other speakers is
+  /// chosen, so the section renders reliably rather than hiding on an unlucky
+  /// pick. (It used to retry up to 6 languages one after another.) Shuffled,
+  /// capped at [_peopleWanted]. Hidden entirely when the user lists no
+  /// languages (or neither pick has any other speakers).
   Future<void> _loadSameLanguage() async {
-    final own = List<String>.of(_userLanguages)..shuffle();
+    final own = (List<String>.of(_userLanguages)..shuffle())
+        .where((l) => l.isNotEmpty)
+        .take(2)
+        .toList();
     if (own.isEmpty) {
       if (mounted) setState(() => _sameLanguage = const <MatchCandidate>[]);
       return;
     }
-    // Try several of the user's own languages before giving up.
-    for (final lang in own.take(6)) {
-      if (lang.isEmpty) continue;
-      // Publish the tentative language immediately so the (skeleton) header
-      // reads correctly while the query runs.
-      if (mounted) setState(() => _sameLanguageName = lang);
+    // Publish the tentative language immediately so the (skeleton) header
+    // reads correctly while the queries run — unless a cached row is already
+    // on screen under its own language.
+    if (mounted && _sameLanguage == null) {
+      setState(() => _sameLanguageName = own.first);
+    }
+    final blocked = await _blockedIds();
+    final pools = await Future.wait(own.map((lang) async {
       final byId = <String, _Partner>{};
       try {
         final snap = await _firestore
@@ -975,26 +1284,34 @@ class _ExploreScreenState extends State<ExploreScreen> {
             .limit(60)
             .get();
         for (final doc in snap.docs) {
-          final p = _parsePartner(doc.id, doc.data());
+          final p = _parsePartner(doc.id, doc.data(), blocked: blocked);
           if (p != null) byId[doc.id] = p;
         }
       } catch (_) {
-        // Try the next language.
+        // Fall through to the other language.
       }
-      if (byId.isNotEmpty) {
-        final picked = (byId.values.toList()..shuffle())
-            .take(_peopleWanted)
-            .map(_candidateFor)
-            .toList();
-        if (mounted) {
-          setState(() {
-            _sameLanguageName = lang;
-            _sameLanguage = picked;
-          });
-        }
-        return;
+      return byId;
+    }));
+    for (var i = 0; i < own.length; i++) {
+      final byId = pools[i];
+      if (byId.isEmpty) continue;
+      final lang = own[i];
+      final picked = (byId.values.toList()..shuffle())
+          .take(_peopleWanted)
+          .map(_candidateFor)
+          .toList();
+      unawaited(LastResultCache.saveJson(_kCacheSameLanguageName, lang));
+      unawaited(LastResultCache.saveIds(
+          _kCacheSameLanguage, picked.map((c) => c.profile.userId)));
+      if (mounted) {
+        setState(() {
+          _sameLanguageName = lang;
+          _sameLanguage = picked;
+        });
       }
+      return;
     }
+    unawaited(LastResultCache.saveIds(_kCacheSameLanguage, const <String>[]));
     if (mounted) setState(() => _sameLanguage = const <MatchCandidate>[]);
   }
 
@@ -1010,6 +1327,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
     List<MatchCandidate> picked = const <MatchCandidate>[];
     try {
+      final blocked = await _blockedIds();
       final profiles = await RecommendationService(firestore: _firestore)
           .recommendPeople(
         userId: widget.userId,
@@ -1017,6 +1335,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
         lat: _userLat,
         lng: _userLng,
         limit: _peopleWanted,
+        isVisible: (p) => DiscoveryVisibility.isVisible(
+          p,
+          viewerId: widget.userId,
+          blockedIds: blocked,
+          viewerIsPrivileged: _viewerIsPrivileged,
+        ),
       );
       final lat = _userLat;
       final lng = _userLng;
@@ -1036,50 +1360,34 @@ class _ExploreScreenState extends State<ExploreScreen> {
           distanceKm: distanceKm,
         ));
       }).toList();
+      unawaited(LastResultCache.saveIds(
+          _kCacheRecommended, picked.map((c) => c.profile.userId)));
     } catch (_) {
-      picked = const <MatchCandidate>[];
+      picked = _recommended ?? const <MatchCandidate>[];
     }
     if (mounted) setState(() => _recommended = picked);
   }
 
   /// "Community events near you" — community/user-created events close to the
-  /// user (distinct from the external-heavy "Happening this week"). Requires a
-  /// location; empty (or on failure) hides the section.
-  Future<void> _loadCommunityEvents() async {
+  /// user (distinct from the external-heavy "Happening this week"), from the
+  /// shared nearby pool: the nearest [_peopleWanted] that are live, within
+  /// [kFeaturedRadiusKm] and not already shown above, soonest first. Requires a
+  /// location; empty hides the section.
+  void _loadCommunityEvents(List<Event> nearby) {
     if (_userLat == null || _userLng == null) {
       if (mounted) setState(() => _communityEvents = const <Event>[]);
       return;
     }
-    final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
-    // CACHE-THEN-NETWORK: paint from the local cache, then reconcile with the
-    // server (a cold cache throws → ignored, keeping the current list).
-    Future<void> pass(bool preferCache) async {
-      try {
-        final events = (await eventsDs.getNearbyCommunityEvents(
-          lat: _userLat!,
-          lng: _userLng!,
-          limit: _peopleWanted,
-          preferCache: preferCache,
-        ))
-            // Auto-publish gate + within 50km + no repeats across Explore.
-            .where((e) => e.isLive && !_usedEventKeys.contains(e.id))
-            .where((e) => _withinFeaturedRadius(_Happening.community(e)))
-            .toList()
-          ..sort((a, b) => a.startDate.compareTo(b.startDate));
-        if (mounted) setState(() => _communityEvents = events);
-        if (!preferCache) {
-          SessionCacheGate.markWarm(SessionCacheGate.exploreCommunityEvents);
-        }
-      } catch (_) {
-        // Cache miss / transient — leave whatever is currently shown.
-      }
-    }
-
-    // Network-first on a fresh open; cache-then-network once warm this session.
-    if (SessionCacheGate.isWarm(SessionCacheGate.exploreCommunityEvents)) {
-      await pass(true); // instant cache paint
-    }
-    await pass(false); // server (fresh)
+    final events = nearby
+        // Auto-publish gate + within 50km + no repeats across Explore.
+        .where((e) => e.isLive && !_usedEventKeys.contains(e.id))
+        .where((e) => _withinFeaturedRadius(_Happening.community(e)))
+        .take(_peopleWanted)
+        .toList()
+      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    unawaited(LastResultCache.saveIds(
+        _kCacheCommunityEvents, events.map((e) => e.id)));
+    if (mounted) setState(() => _communityEvents = events);
   }
 
   /// Loads "Businesses near you": public business profiles
@@ -1100,19 +1408,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final lng = _userLng;
       final list = <Profile>[];
       for (final doc in snap.docs) {
-        final d = doc.data();
-        if (doc.id == widget.userId) continue; // exclude self
-        // Never surface the official GreenGo account (admin/support).
-        if (d['isAdmin'] == true || d['isSupport'] == true) continue;
-        if (d['isBanned'] == true) continue; // banned business
-        final status = d['accountStatus'];
-        if (status != null && status != 'active') continue; // suspended/deleted
-        if (d['isGhostMode'] == true) continue;
-        try {
-          list.add(ProfileModel.fromJson({...d, 'userId': doc.id}));
-        } catch (_) {
-          // Skip unparseable business profiles.
-        }
+        final p = _parseBusiness(doc.id, doc.data());
+        if (p != null) list.add(p);
       }
       double dist(Profile p) {
         if (lat == null || lng == null) return double.infinity;
@@ -1130,10 +1427,29 @@ class _ExploreScreenState extends State<ExploreScreen> {
         return dist(a).compareTo(dist(b));
       });
       result = list;
+      unawaited(LastResultCache.saveIds(
+          _kCacheBusinesses, list.map((p) => p.userId)));
     } catch (_) {
-      result = const <Profile>[];
+      result = _businesses ?? const <Profile>[];
     }
     if (mounted) setState(() => _businesses = result);
+  }
+
+  /// A business profile that may be shown, or null: excludes the current user,
+  /// the official GreenGo account (admin/support), banned, suspended/deleted
+  /// and ghost-mode accounts, and unparseable docs.
+  Profile? _parseBusiness(String id, Map<String, dynamic> d) {
+    if (id == widget.userId) return null; // exclude self
+    if (d['isAdmin'] == true || d['isSupport'] == true) return null;
+    if (d['isBanned'] == true) return null; // banned business
+    final status = d['accountStatus'];
+    if (status != null && status != 'active') return null; // suspended/deleted
+    if (d['isGhostMode'] == true) return null;
+    try {
+      return ProfileModel.fromJson({...d, 'userId': id});
+    } catch (_) {
+      return null; // Skip unparseable business profiles.
+    }
   }
 
   /// True when [event] is current — its START is today or in the future. Used by
@@ -1161,15 +1477,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
         '${now.month.toString().padLeft(2, '0')}-'
         '${now.day.toString().padLeft(2, '0')}';
     return day.compareTo(today) >= 0;
-  }
-
-  /// Distance (km) from the user to a lat/lng; infinity when location unknown.
-  double _distanceKmTo(double? lat, double? lng) {
-    final ulat = _userLat, ulng = _userLng;
-    if (ulat == null || ulng == null || lat == null || lng == null) {
-      return double.maxFinite;
-    }
-    return FeatureEngineer().calculateDistance(ulat, ulng, lat, lng);
   }
 
   /// True when [h] carries a usable picture. Attractions/experiences with no
@@ -1224,44 +1531,35 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Future<void> _loadCommunities() async {
     final ds = CommunitiesRemoteDataSourceImpl(firestore: _firestore);
     final city = _city;
-    // CACHE-THEN-NETWORK: paint from the local cache, then reconcile.
-    Future<void> pass(bool preferCache) async {
-      try {
-        final byId = <String, Community>{};
-        // 1) Near the user — communities in their city.
-        if (city != null && city.isNotEmpty) {
-          try {
-            for (final c
-                in await ds.getCommunities(city: city, preferCache: preferCache)) {
-              byId[c.id] = c;
-            }
-          } catch (_) {/* fall through to broader queries */}
-        }
-        // 2) Top up with recent/popular public communities (default ordering).
-        if (byId.length < 10) {
-          try {
-            for (final c in await ds.getCommunities(preferCache: preferCache)) {
-              byId.putIfAbsent(c.id, () => c);
-              if (byId.length >= 10) break;
-            }
-          } catch (_) {/* keep whatever we have */}
-        }
-        final result = byId.values.take(10).toList();
-        // Cache pass only paints when it has something; server pass always sets.
-        if (mounted && (result.isNotEmpty || !preferCache)) {
-          setState(() => _communities = result);
-        }
-        if (!preferCache) {
-          SessionCacheGate.markWarm(SessionCacheGate.exploreCommunities);
-        }
-      } catch (_) {/* leave current */}
+    const wanted = 10;
+    try {
+      // 1) Near the user — communities in their city; 2) recent/popular public
+      // communities to top up. Both bounded to what the row shows and read in
+      // parallel (they were 2 × 50 docs, one after the other).
+      Future<List<Community>> safe(Future<List<Community>> f) =>
+          f.catchError((Object _) => const <Community>[]);
+      final results = await Future.wait([
+        if (city != null && city.isNotEmpty)
+          safe(ds.getCommunities(city: city, limit: wanted))
+        else
+          Future.value(const <Community>[]),
+        safe(ds.getCommunities(limit: wanted)),
+      ]);
+      final byId = <String, Community>{};
+      for (final c in results[0]) {
+        byId[c.id] = c;
+      }
+      for (final c in results[1]) {
+        if (byId.length >= wanted) break;
+        byId.putIfAbsent(c.id, () => c);
+      }
+      final result = byId.values.take(wanted).toList();
+      unawaited(LastResultCache.saveIds(
+          _kCacheCommunities, result.map((c) => c.id)));
+      if (mounted) setState(() => _communities = result);
+    } catch (_) {
+      if (mounted) setState(() => _communities ??= const <Community>[]);
     }
-
-    // Network-first on a fresh open; cache-then-network once warm this session.
-    if (SessionCacheGate.isWarm(SessionCacheGate.exploreCommunities)) {
-      await pass(true); // instant cache paint
-    }
-    await pass(false); // server (fresh)
   }
 
   /// Loads the active weekly Country Spotlight (or null when there is none).
@@ -1282,9 +1580,25 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
   }
 
+  /// The viewer's (bidirectional) block list, read once per screen (the
+  /// service itself caches it for 5 minutes and never throws).
+  Future<Set<String>> _blockedIds() => _blockedFuture ??=
+      di.sl<BlockedUsersService>().getBlockedUserIds(widget.userId);
+  Future<Set<String>>? _blockedFuture;
+
+  /// Admin/support viewers also see testers and incomplete profiles.
+  bool get _viewerIsPrivileged => _me?.isAdmin == true || _me?.isSupport == true;
+
   /// Parses a `profiles` document into a discovery card, or null if it can't be
-  /// shown (self, ghost-mode, non-active, or no display name).
-  _Partner? _parsePartner(String id, Map<String, dynamic> d) {
+  /// shown: self, ghost-mode, non-active, no display name, and every rule of
+  /// the shared [DiscoveryVisibility] predicate (blocked, incognito, removed
+  /// accounts, testers, incomplete profiles) — identical for server loads and
+  /// cached paints.
+  _Partner? _parsePartner(
+    String id,
+    Map<String, dynamic> d, {
+    Set<String> blocked = const <String>{},
+  }) {
     if (id == widget.userId) return null;
     if (d['isGhostMode'] == true) return null;
     // Never surface the official GreenGo account (admin/support) in the grid.
@@ -1303,6 +1617,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
     try {
       profile = ProfileModel.fromJson({...d, 'userId': id});
     } catch (_) {
+      return null;
+    }
+    if (!DiscoveryVisibility.isVisible(
+      profile,
+      viewerId: widget.userId,
+      blockedIds: blocked,
+      viewerIsPrivileged: _viewerIsPrivileged,
+    )) {
       return null;
     }
 

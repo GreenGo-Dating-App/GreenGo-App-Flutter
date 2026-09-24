@@ -1,5 +1,7 @@
 
 
+import 'dart:async';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -52,8 +54,12 @@ class AttractionsTab extends StatefulWidget {
 }
 
 class _AttractionsTabState extends State<AttractionsTab>
-    with TickerProviderStateMixin {
+    with TickerProviderStateMixin, AutomaticKeepAliveClientMixin {
   final _ds = AttractionsDataSource();
+
+  // Kept alive so swiping between the Events sub-tabs doesn't re-bootstrap.
+  @override
+  bool get wantKeepAlive => true;
 
   List<AttractionCountry> _countries = const [];
   List<Attraction> _items = const [];
@@ -85,9 +91,8 @@ class _AttractionsTabState extends State<AttractionsTab>
   bool _userPickedCountry = false;
 
   /// Anchor position for "nearest first" AND for deciding which country to
-  /// show. Priority: Traveler-mode location > profile location > live GPS fix.
-  /// Acquired here so ordering does not depend on the parent screen's one-shot
-  /// fetch (which can be denied, or arrive after the list is already built).
+  /// show. Priority: Traveler-mode location > device position (the Events
+  /// screen's anchor, or a fix taken here) > profile location.
   double? _lat;
   double? _lng;
 
@@ -163,8 +168,14 @@ class _AttractionsTabState extends State<AttractionsTab>
   void didUpdateWidget(AttractionsTab old) {
     super.didUpdateWidget(old);
     if (widget.query.trim().isNotEmpty && _all.isEmpty) _loadAll();
-    // Location arriving late can reveal the "you're here" country.
-    if (old.userLat != widget.userLat || old.userLng != widget.userLng) {
+    // A refined device position (from the Events screen) re-sorts and can
+    // reveal the "you're here" country — unless Traveler mode pins the anchor.
+    if ((old.userLat != widget.userLat || old.userLng != widget.userLng) &&
+        widget.userLat != null &&
+        widget.userLng != null &&
+        !_travelerActive) {
+      _lat = widget.userLat;
+      _lng = widget.userLng;
       _detectHere();
     }
   }
@@ -196,43 +207,61 @@ class _AttractionsTabState extends State<AttractionsTab>
     _travelerActive = active;
   }
 
-  /// Fetch a fresh GPS fix. Runs on open and on pull-to-refresh so the order
-  /// reflects where the user is AT THAT MOMENT, not where they were when the
-  /// Events screen first loaded.
+  /// Fetch a fresh (medium-accuracy) fix. Runs on pull-to-refresh and on
+  /// "retry location", so the order reflects where the user is AT THAT MOMENT.
   Future<void> _locate() async {
     if (_locating) return;
     _locating = true;
     try {
-      final pos = await const LocationShareService().getCurrentPosition();
+      final pos = await const LocationShareService().getApproximatePosition();
       // A traveler anchor is an explicit user choice — GPS must not override it.
       if (pos != null && mounted && !_travelerActive) {
         setState(() {
           _lat = pos.latitude;
           _lng = pos.longitude;
         });
+        await _detectHere();
       }
     } catch (_) {/* permission denied / no fix -> score ordering */}
     _locating = false;
   }
 
-  Future<void> _bootstrap() async {
+  /// profiles/{uid} from the local cache (warmed at startup), else the server.
+  Future<Map<String, dynamic>> _readProfile() async {
+    final ref = FirebaseFirestore.instance
+        .collection('profiles')
+        .doc(widget.currentUserId);
     try {
-      // The GPS fix can take seconds; it only refines ORDERING, so it must not
-      // hold up the first paint. It runs alongside the reads below and is
-      // awaited after the list is on screen.
-      final gps = _locate();
-      _bucket = await _ds.bucket();
-      final countries = await _ds.publishedCountries();
-      String? home;
-      try {
-        final p = await FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(widget.currentUserId)
-            .get();
-        final d = p.data() ?? const <String, dynamic>{};
-        home = (d['primaryOrigin'] as String?)?.toUpperCase();
-        _applyProfileAnchor(d);
-      } catch (_) {/* profile unreadable -> GPS anchor only */}
+      final c = await ref.get(const GetOptions(source: Source.cache));
+      if (c.exists) return c.data() ?? const {};
+    } catch (_) {/* not cached */}
+    try {
+      return (await ref.get()).data() ?? const {};
+    } catch (_) {
+      return const {}; // profile unreadable -> device anchor only
+    }
+  }
+
+  Future<void> _bootstrap({bool relocate = false}) async {
+    try {
+      // Every read here is independent, so they run together. geoIndex is
+      // warmed now because _detectHere needs it right after.
+      final reads = await Future.wait<Object>([
+        _ds.bucket(),
+        _ds.publishedCountries(),
+        _readProfile(),
+        _ds.geoIndex(),
+      ]);
+      _bucket = reads[0] as String;
+      final countries = reads[1] as List<AttractionCountry>;
+      final profile = reads[2] as Map<String, dynamic>;
+      final home = (profile['primaryOrigin'] as String?)?.toUpperCase();
+      _applyProfileAnchor(profile);
+      // The device position beats the profile's stored one (not a traveler's).
+      if (!_travelerActive && widget.userLat != null && widget.userLng != null) {
+        _lat = widget.userLat;
+        _lng = widget.userLng;
+      }
 
       // An empty result here means the read FAILED (network/rules), not that
       // we publish nothing — the two must not look the same to the user.
@@ -258,8 +287,9 @@ class _AttractionsTabState extends State<AttractionsTab>
             (countries.isNotEmpty ? countries.first.iso2 : null);
       });
       await _loadSelected();
-      await gps; // a late fix re-sorts by distance; the list is already visible
-      if (mounted && _posLat != null) await _detectHere();
+      // A fresh fix only refines ordering; the list is already visible. On
+      // open the Events screen supplies (and refines) the position instead.
+      if (relocate) unawaited(_locate());
     } catch (_) {
       if (mounted) setState(() { _loading = false; _failed = true; });
     }
@@ -300,10 +330,16 @@ class _AttractionsTabState extends State<AttractionsTab>
         lng: lng,
       );
       if (!mounted) return;
+      final switched = !_userPickedCountry &&
+          iso != null &&
+          _selectedIso != null &&
+          iso != _selectedIso;
       setState(() {
         _hereIso = iso;
         if (!_userPickedCountry && iso != null) _selectedIso = iso;
       });
+      // A late fix that moves the user into another country must also load it.
+      if (switched) await _loadSelected();
     } catch (_) {/* non-fatal: falls back to primaryOrigin */}
   }
 
@@ -336,7 +372,7 @@ class _AttractionsTabState extends State<AttractionsTab>
   Future<void> _refresh() async {
     AttractionsDataSource.invalidate();
     _userPickedCountry = false; // re-adopt wherever the user now is
-    await _bootstrap();
+    await _bootstrap(relocate: true);
   }
 
   double? _distanceMeters(Attraction a) {
@@ -699,6 +735,7 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     final l10n = AppLocalizations.of(context)!;
 
     if (_loading) {

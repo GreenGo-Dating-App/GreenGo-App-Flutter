@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/services/session_cache_gate.dart';
 import '../../domain/entities/event.dart';
 import '../../domain/repositories/events_repository.dart';
 import 'events_event.dart';
@@ -41,33 +40,9 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     LoadEvents event,
     Emitter<EventsState> emit,
   ) async {
-    emit(const EventsLoading());
-
-    void applyLoaded(List<Event> events) {
-      _allEvents = events;
-      _selectedCategory = null;
-      emit(EventsLoaded(
-        events: _allEvents,
-        selectedCategory: _selectedCategory,
-        attendeesMap: _attendeesMap,
-        userEvents: _userEvents,
-        nearbyEvents: _nearbyEvents,
-      ));
-    }
-
-    // NETWORK-FIRST on a fresh app open; cache-then-network once warm this
-    // session. Cache pass is best-effort (cold cache → ignored).
-    if (SessionCacheGate.isWarm(SessionCacheGate.eventsAll)) {
-      final cached = await repository.getEvents(
-        category: event.category,
-        city: event.city,
-        upcoming: event.upcoming,
-        preferCache: true,
-      );
-      cached.fold((_) {}, (events) {
-        if (events.isNotEmpty) applyLoaded(events);
-      });
-    }
+    // Only a FIRST load shows a loading state; a reload (after RSVP/create,
+    // pull-to-refresh) keeps the current list on screen until the new one lands.
+    if (_allEvents.isEmpty) emit(const EventsLoading());
 
     final result = await repository.getEvents(
       category: event.category,
@@ -78,12 +53,19 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     result.fold(
       (failure) {
         debugPrint('Failed to load events: ${failure.message}');
-        // Don't blank an already-painted cache result on a server hiccup.
+        // Don't blank an already-painted list on a server hiccup.
         if (state is! EventsLoaded) emit(EventsError(failure.message));
       },
       (events) {
-        applyLoaded(events);
-        SessionCacheGate.markWarm(SessionCacheGate.eventsAll);
+        _allEvents = events;
+        _selectedCategory = null;
+        emit(EventsLoaded(
+          events: _allEvents,
+          selectedCategory: _selectedCategory,
+          attendeesMap: _attendeesMap,
+          userEvents: _userEvents,
+          nearbyEvents: _nearbyEvents,
+        ));
       },
     );
   }
@@ -437,15 +419,6 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
       }
     }
 
-    // Network-first on a fresh open; cache-then-network once warm this session.
-    if (SessionCacheGate.isWarm(SessionCacheGate.eventsUser)) {
-      final cached =
-          await repository.getUserEvents(event.userId, preferCache: true);
-      cached.fold((_) {}, (events) {
-        if (events.isNotEmpty) applyUser(events);
-      });
-    }
-
     final result = await repository.getUserEvents(event.userId);
     result.fold(
       (failure) {
@@ -454,10 +427,7 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
           emit(EventsError(failure.message));
         }
       },
-      (events) {
-        applyUser(events);
-        SessionCacheGate.markWarm(SessionCacheGate.eventsUser);
-      },
+      applyUser,
     );
   }
 

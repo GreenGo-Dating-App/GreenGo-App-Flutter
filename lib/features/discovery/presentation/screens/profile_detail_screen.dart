@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:async';
 
 import 'package:audioplayers/audioplayers.dart';
@@ -877,11 +878,12 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             },
             itemCount: widget.profile.photoUrls.length,
             itemBuilder: (context, index) {
-              return Image.network(
-                widget.profile.photoUrls[index],
+              // Full-width hero: decoded at ~screen width, disk-cached.
+              return CachedNetworkImage(
+                imageUrl: widget.profile.photoUrls[index],
                 fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) =>
-                    _buildPhotoPlaceholder(),
+                memCacheWidth: 1080,
+                errorWidget: (context, url, error) => _buildPhotoPlaceholder(),
               );
             },
           ),

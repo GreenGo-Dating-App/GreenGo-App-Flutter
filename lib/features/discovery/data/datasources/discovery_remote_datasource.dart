@@ -9,9 +9,9 @@ import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../matching/domain/entities/match_preferences.dart' as matching;
 import '../../../matching/domain/entities/match_score.dart';
 import '../../../matching/domain/usecases/feature_engineer.dart';
-import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../domain/discovery_visibility.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
@@ -29,6 +29,18 @@ abstract class DiscoveryRemoteDataSource {
     required MatchPreferences preferences,
     int limit = 20,
     bool forceRefresh = false,
+  });
+
+  /// A small, cheap "people around you" strip (Explore): a few bounded
+  /// same-city / same-country reads instead of the full discovery stack, with
+  /// the SAME visibility rules (blocked, ghost, incognito, testers, incomplete
+  /// profiles, admin/support, recent passes) and priority order as
+  /// [getDiscoveryStack]. Business accounts are excluded (they have their own
+  /// section). Falls back to the full stack when [viewer] has no location.
+  Future<List<MatchCandidate>> getNearbyPeople({
+    required String userId,
+    required Profile viewer,
+    int limit = 15,
   });
 
   /// Clears the in-memory discovery cache for a user
@@ -118,8 +130,20 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   @override
   bool lastUsedWorldwideFallback = false;
 
-  // In-memory cache keyed by userId — survives bloc recreation (datasource is singleton)
-  final Map<String, _CachedStack> _cache = {};
+  // In-memory LRU keyed by `userId|preferencesHash` — survives bloc recreation
+  // (datasource is singleton). A few slots so Explore, Discovery and the
+  // background prefetch don't evict each other's stacks.
+  final Map<String, _CachedStack> _cache = {}; // insertion-ordered (LRU)
+  static const int _maxCachedStacks = 3;
+
+  // Explore's full-stack FALLBACK (getNearbyPeople in a sparse area) keeps its
+  // own single slot so it can never evict the real Discovery grid.
+  (String, _CachedStack)? _nearbyFallback;
+
+  // Recent swipe history, shared by the stack and the Explore strip so both
+  // honour the same 90-day window without reading it twice. Dropped on every
+  // swipe / undo.
+  (String, DateTime, Map<String, _SwipeRecord>)? _swipeMemo;
 
   // Cached admin candidate (session-level, avoids query on every discovery load)
   MatchCandidate? _cachedAdminCandidate;
@@ -132,34 +156,62 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
   @override
   void clearDiscoveryCache(String userId) {
-    _cache.remove(userId);
+    _cache.removeWhere((key, _) => key.startsWith('$userId|'));
+    if (_nearbyFallback?.$1 == userId) _nearbyFallback = null;
     debugPrint('[Discovery] Cache cleared for $userId');
   }
 
+  /// Also drops every other per-user memo (viewer profile, swipe history,
+  /// the Explore fallback stack, the admin card) — call on sign-out.
   @override
   void clearAllDiscoveryCaches() {
     _cache.clear();
+    _nearbyFallback = null;
+    _swipeMemo = null;
+    _cachedUserProfile = null;
+    _cachedUserProfileId = null;
+    _cachedAdminCandidate = null;
+    _adminCacheFetchedAt = null;
     debugPrint('[Discovery] All caches cleared');
   }
 
-  /// A profile is treated as having no usable location when it has neither a
-  /// real country nor real coordinates (e.g. registration/onboarding never
-  /// finished). Such profiles must NOT be discoverable by other users.
-  /// Admin/support are exempt and handled by the caller.
-  bool _hasNoUsableLocation(Profile p) {
-    final loc = p.effectiveLocation;
-    final country = loc.country.trim().toLowerCase();
-    final noCountry = country.isEmpty || country == 'unknown';
-    final noCoords = loc.latitude == 0 && loc.longitude == 0;
-    return noCountry || noCoords;
+  /// Cache key: every preference that changes the resulting stack. (It used
+  /// to miss showSupportUser, onlyRecentlyActive, dealBreakers and
+  /// localGuidesOnly, so a stack built for one set could be served for another.)
+  static String _preferencesHash(MatchPreferences p) =>
+      '${p.preferredCountries.join(',')}'
+      '|${p.interestedInGender}'
+      '|${p.minAge}-${p.maxAge}'
+      '|${p.maxDistanceKm}'
+      '|${p.randomMode}'
+      '|${p.onlyVerified}'
+      '|${p.onlyOnlineNow}'
+      '|${p.onlyRecentlyActive}'
+      '|${p.languageFilter}'
+      '|${p.travelersOnly}'
+      '|${p.localGuidesOnly}'
+      '|${p.showSupportUser}'
+      '|${p.preferredInterests.join(',')}'
+      '|${p.dealBreakers.join(',')}'
+      '|${p.preferredOrientations.join(',')}';
+
+  void _storeStack(String key, List<MatchCandidate> result, String prefHash) {
+    _cache.remove(key);
+    _cache[key] = _CachedStack(result, prefHash);
+    while (_cache.length > _maxCachedStacks) {
+      _cache.remove(_cache.keys.first); // least recently used
+    }
   }
 
-  /// A profile is treated as having no usable name when its display name is
-  /// empty or the placeholder 'Unknown'/'Unknown User' (e.g. registration never
-  /// finished). Such profiles must NOT be discoverable by other users.
-  bool _hasNoUsableName(Profile p) {
-    final name = p.displayName.trim().toLowerCase();
-    return name.isEmpty || name == 'unknown' || name == 'unknown user';
+  /// The viewer's raw profile, memoised for the session.
+  Future<Map<String, dynamic>?> _viewerData(String userId) async {
+    if (_cachedUserProfileId == userId && _cachedUserProfile != null) {
+      return _cachedUserProfile;
+    }
+    final doc = await firestore.collection('profiles').doc(userId).get();
+    _cachedUserProfile = doc.data();
+    _cachedUserProfileId = userId;
+    return _cachedUserProfile;
   }
 
   @override
@@ -168,48 +220,58 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     required MatchPreferences preferences,
     int limit = 20,
     bool forceRefresh = false,
+  }) =>
+      _stack(
+        userId: userId,
+        preferences: preferences,
+        forceRefresh: forceRefresh,
+        primary: true,
+      );
+
+  /// Builds (or serves) a stack. [primary] stacks are Discovery's: they use the
+  /// shared LRU and publish [lastUsedWorldwideFallback]. A non-primary stack
+  /// (Explore's fallback) uses its own slot and never touches that flag.
+  Future<List<MatchCandidate>> _stack({
+    required String userId,
+    required MatchPreferences preferences,
+    required bool forceRefresh,
+    required bool primary,
   }) async {
-    lastUsedWorldwideFallback = false;
+    if (primary) lastUsedWorldwideFallback = false;
 
     // Build a hash of preferences so cache invalidates when filters change
-    final prefHash = '${preferences.preferredCountries.join(',')}'
-        '|${preferences.interestedInGender}'
-        '|${preferences.minAge}-${preferences.maxAge}'
-        '|${preferences.maxDistanceKm}'
-        '|${preferences.randomMode}'
-        '|${preferences.onlyVerified}'
-        '|${preferences.onlyOnlineNow}'
-        '|${preferences.languageFilter}'
-        '|${preferences.travelersOnly}'
-        '|${preferences.preferredInterests.join(',')}'
-        '|${preferences.preferredOrientations.join(',')}';
+    final prefHash = _preferencesHash(preferences);
+    final cacheKey = '$userId|$prefHash';
+
+    if (!primary) {
+      final slot = _nearbyFallback;
+      if (!forceRefresh &&
+          slot != null &&
+          slot.$1 == userId &&
+          slot.$2.isValid(prefHash)) {
+        return slot.$2.candidates;
+      }
+    }
 
     // Serve from cache when valid, not forced, and preferences haven't changed
-    if (!forceRefresh) {
-      final cached = _cache[userId];
+    // (the non-primary slot was checked above).
+    if (primary && !forceRefresh) {
+      final cached = _cache[cacheKey];
       if (cached != null && cached.isValid(prefHash)) {
+        // Touch: move to the most-recently-used end.
+        _cache
+          ..remove(cacheKey)
+          ..[cacheKey] = cached;
         debugPrint('[Discovery] Cache hit — ${cached.candidates.length} profiles (${DateTime.now().difference(cached.fetchedAt).inSeconds}s old)');
         return cached.candidates;
       }
-    } else {
-      _cache.remove(userId);
+    } else if (primary) {
+      _cache.remove(cacheKey);
       debugPrint('[Discovery] Cache bypassed (forceRefresh)');
     }
     // Map discovery gender preference to matching gender list
     // Empty list = no gender filter (show everyone)
-    List<String> preferredGenders;
-    switch (preferences.interestedInGender.toLowerCase()) {
-      case 'women':
-      case 'female':
-        preferredGenders = ['Female'];
-        break;
-      case 'men':
-      case 'male':
-        preferredGenders = ['Male'];
-        break;
-      default: // 'everyone' or any other value — no gender filter
-        preferredGenders = [];
-    }
+    final preferredGenders = _gendersFor(preferences.interestedInGender);
 
     // Get candidates from matching datasource
     // When no countries selected: worldwide (pass empty to get all)
@@ -218,36 +280,41 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final effectiveCountries = hasCountryFilter
         ? preferences.preferredCountries
         : const <String>[];
-    final candidates = await matchingDataSource.getMatchCandidates(
-      userId: userId,
-      preferences: matching.MatchPreferences(
-        userId: preferences.userId,
-        minAge: preferences.minAge,
-        maxAge: preferences.maxAge,
-        maxDistance: (preferences.randomMode && !hasCountryFilter)
-            ? 99999.0
-            : (preferences.maxDistanceKm ?? 99999).toDouble(),
-        preferredGenders: preferredGenders,
-        showOnlyVerified: preferences.onlyVerified,
-        preferredCountries: effectiveCountries,
-        updatedAt: DateTime.now(),
+
+    // The candidate scan, the viewer's profile and the per-user history all
+    // run in ONE parallel round trip (they used to be sequential).
+    // Active matches are not fetched: matched users stay in the grid (the UI
+    // applies the 'matched' overlay), so that set was never used here.
+    final results = await Future.wait<Object?>([
+      matchingDataSource.getMatchCandidates(
+        userId: userId,
+        preferences: matching.MatchPreferences(
+          userId: preferences.userId,
+          minAge: preferences.minAge,
+          maxAge: preferences.maxAge,
+          maxDistance: (preferences.randomMode && !hasCountryFilter)
+              ? 99999.0
+              : (preferences.maxDistanceKm ?? 99999).toDouble(),
+          preferredGenders: preferredGenders,
+          showOnlyVerified: preferences.onlyVerified,
+          preferredCountries: effectiveCountries,
+          updatedAt: DateTime.now(),
+        ),
+        limit: 500, // Cap to avoid loading entire database into memory
       ),
-      limit: 500, // Cap to avoid loading entire database into memory
-    );
+      // Check if current user is admin/support — admins bypass all discovery
+      // filters. Cached to avoid re-reading on every load.
+      _viewerData(userId),
+      _getSwipeHistoryWithTypes(userId),
+      blockedUsersService.getBlockedUserIds(userId),
+    ]);
+
+    final candidates = results[0] as List<MatchCandidate>;
+    final currentUserData = results[1] as Map<String, dynamic>?;
+    final swipeHistory = results[2] as Map<String, _SwipeRecord>;
+    final blockedUserIds = results[3] as Set<String>;
 
     debugPrint('[Discovery] Candidates from matching: ${candidates.length}');
-
-    // Check if current user is admin/support — admins bypass all discovery filters
-    // Cache the user profile to avoid re-reading on every load
-    Map<String, dynamic>? currentUserData;
-    if (_cachedUserProfileId == userId && _cachedUserProfile != null) {
-      currentUserData = _cachedUserProfile;
-    } else {
-      final currentUserDoc = await firestore.collection('profiles').doc(userId).get();
-      currentUserData = currentUserDoc.data();
-      _cachedUserProfile = currentUserData;
-      _cachedUserProfileId = userId;
-    }
 
     final isCurrentUserPrivileged = currentUserData != null &&
         ((currentUserData['isAdmin'] as bool? ?? false) ||
@@ -257,24 +324,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final viewerTierStr = currentUserData?['membershipTier'] as String? ?? 'FREE';
     final maxBoostedVisible = _getMaxBoostedVisible(viewerTierStr);
 
-    // Run all historical data queries in parallel (cost-efficient: one round trip)
-    final results = await Future.wait([
-      _getSwipeHistoryWithTypes(userId),
-      _getMatchedUserIds(userId),
-      blockedUsersService.getBlockedUserIds(userId),
-    ]);
-
-    final swipeHistory = results[0] as Map<String, _SwipeRecord>;
-    final matchedUserIds = results[1] as Set<String>;
-    final blockedUserIds = results[2] as Set<String>;
-
     // Admin/support users bypass all discovery preference filters (see all users)
     var filteredCandidates = candidates.toList();
 
     if (!isCurrentUserPrivileged) {
       // Apply sexual orientation filter
       if (preferences.preferredOrientations.isNotEmpty) {
-        final before = filteredCandidates.length;
         filteredCandidates = filteredCandidates.where((candidate) {
           final orientation = candidate.profile.sexualOrientation;
           if (orientation == null || orientation.isEmpty) return true;
@@ -342,55 +397,11 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           preferences.maxDistanceKm != null;
       final shouldFallback =
           !userChoseAnArea && filteredCandidates.length < minCandidates;
-      lastUsedWorldwideFallback = shouldFallback;
-      if (shouldFallback) {
-        // Fetch worldwide candidates (no country restriction)
-        final worldwideCandidates = await matchingDataSource.getMatchCandidates(
-          userId: userId,
-          preferences: matching.MatchPreferences(
-            userId: preferences.userId,
-            minAge: preferences.minAge,
-            maxAge: preferences.maxAge,
-            maxDistance: 99999.0,
-            preferredGenders: preferredGenders,
-            showOnlyVerified: preferences.onlyVerified,
-            preferredCountries: const [], // No country filter
-            updatedAt: DateTime.now(),
-          ),
-          limit: 500,
-        );
-
-        // Collect IDs already in filtered list
-        final existingIds = filteredCandidates
-            .map((c) => c.profile.userId)
-            .toSet();
-
-        // Get worldwide candidates not already included
-        final worldwideNew = worldwideCandidates
-            .where((c) => !existingIds.contains(c.profile.userId))
-            .toList();
-
-        // Sort worldwide candidates by distance to user (closest first)
-        if (userLat != 0 && userLng != 0) {
-          worldwideNew.sort((a, b) {
-            final aLoc = a.profile.effectiveLocation;
-            final bLoc = b.profile.effectiveLocation;
-            final aDist = fe.calculateDistance(userLat, userLng, aLoc.latitude, aLoc.longitude);
-            final bDist = fe.calculateDistance(userLat, userLng, bLoc.latitude, bLoc.longitude);
-            return aDist.compareTo(bDist);
-          });
-        }
-
-        // Fill up to minCandidates
-        final needed = minCandidates - filteredCandidates.length;
-        final toAdd = worldwideNew.take(needed).toList();
-        filteredCandidates.addAll(toAdd);
-
-        // Nothing that ran before this point still filters: orientation and
-        // verified-only were removed as user-facing filters, and the country
-        // filter blocks padding entirely. Everything below filters the merged
-        // list, so padded candidates are held to the same standard.
-      }
+      if (primary) lastUsedWorldwideFallback = shouldFallback;
+      // (The padding re-scan was removed: with no area chosen the primary
+      // query above is ALREADY the worldwide scan, so re-running it with a new
+      // random pivot re-read up to 500 profiles for nothing. The flag is kept
+      // for the UI.)
 
       // Ordering. Random mode previously did nothing at all: it only varied the
       // cache key and the distance cap, and no shuffle existed anywhere. It now
@@ -459,7 +470,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // Apply language filter — only return candidates who speak the specified language
       if (preferences.languageFilter != null && preferences.languageFilter!.isNotEmpty) {
         final langFilter = preferences.languageFilter!.toLowerCase().trim();
-        final before = filteredCandidates.length;
         filteredCandidates = filteredCandidates.where((candidate) {
           final candidateLangs = candidate.profile.languages
               .map((l) => l.toLowerCase().trim())
@@ -473,7 +483,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         final wantedInterests = preferences.preferredInterests
             .map((i) => i.toLowerCase().trim())
             .toSet();
-        final before = filteredCandidates.length;
         filteredCandidates = filteredCandidates.where((candidate) {
           final candidateInterests = candidate.profile.interests
               .map((i) => i.toLowerCase().trim())
@@ -484,7 +493,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Apply travelers-only filter — only return active travelers
       if (preferences.travelersOnly) {
-        final before = filteredCandidates.length;
         filteredCandidates = filteredCandidates.where((candidate) {
           return candidate.profile.isTravelerActive;
         }).toList();
@@ -492,7 +500,6 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
       // Apply local-guides-only filter
       if (preferences.localGuidesOnly) {
-        final before = filteredCandidates.length;
         filteredCandidates = filteredCandidates.where((candidate) {
           return candidate.profile.isLocalGuide &&
               candidate.profile.localGuideCity != null &&
@@ -503,6 +510,67 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // Admin/support user — skip preference filters
     }
 
+    final prioritizedCandidates = _prioritize(
+      filteredCandidates,
+      swipeHistory: swipeHistory,
+      blockedUserIds: blockedUserIds,
+      showSupportUser: preferences.showSupportUser,
+      isViewerPrivileged: isCurrentUserPrivileged,
+      maxBoostedVisible: maxBoostedVisible,
+      viewerId: userId,
+    );
+
+    // Add admin/support profile at the beginning only when showSupportUser is enabled
+    final List<MatchCandidate> result;
+    if (preferences.showSupportUser) {
+      final adminCandidate = await _getAdminCandidate(userId);
+      if (adminCandidate != null) {
+        prioritizedCandidates.removeWhere(
+          (c) => c.profile.userId == adminCandidate.profile.userId,
+        );
+        result = [adminCandidate, ...prioritizedCandidates];
+      } else {
+        result = prioritizedCandidates;
+      }
+    } else {
+      result = prioritizedCandidates;
+    }
+
+    // Store in in-memory cache (keyed by userId + preferences hash)
+    if (primary) {
+      _storeStack(cacheKey, result, prefHash);
+    } else {
+      _nearbyFallback = (userId, _CachedStack(result, prefHash));
+    }
+    debugPrint('[Discovery] Cache stored — ${result.length} profiles for $userId');
+
+    return result;
+  }
+
+  static List<String> _gendersFor(String interestedInGender) {
+    switch (interestedInGender.toLowerCase()) {
+      case 'women':
+      case 'female':
+        return ['Female'];
+      case 'men':
+      case 'male':
+        return ['Male'];
+      default: // 'everyone' or any other value — no gender filter
+        return [];
+    }
+  }
+
+  /// Visibility rules + priority ordering shared by [getDiscoveryStack] and
+  /// [getNearbyPeople]. Keeps the incoming order within each tier.
+  List<MatchCandidate> _prioritize(
+    List<MatchCandidate> filteredCandidates, {
+    required Map<String, _SwipeRecord> swipeHistory,
+    required Set<String> blockedUserIds,
+    required bool showSupportUser,
+    required bool isViewerPrivileged,
+    required int maxBoostedVisible,
+    required String viewerId,
+  }) {
     // Categorize candidates into priority tiers:
     // Priority 0: Boosted profiles (isBoosted && boostExpiry > now)
     // Priority 1: Never seen (not in swipe history)
@@ -524,12 +592,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     for (final candidate in filteredCandidates) {
       final candidateId = candidate.profile.userId;
       final candidateProfile = candidate.profile;
-      final isAdmin = candidateProfile.isAdmin;
-      final isSupportOnly = !candidateProfile.isAdmin && candidateProfile.isSupport;
-      final isPrivileged = (candidateProfile.isAdmin || candidateProfile.isSupport) && preferences.showSupportUser;
+      final isPrivileged = (candidateProfile.isAdmin || candidateProfile.isSupport) && showSupportUser;
 
       // Admin/support hidden when showSupportUser is disabled
-      if ((candidateProfile.isAdmin || candidateProfile.isSupport) && !preferences.showSupportUser) {
+      if ((candidateProfile.isAdmin || candidateProfile.isSupport) && !showSupportUser) {
         continue;
       }
 
@@ -545,36 +611,17 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       // Matched users still appear in discovery grid (with 'matched' overlay)
       // They are only filtered out in swipe card mode by the UI layer
 
-      // Skip blocked users (bidirectional) - they shouldn't appear in discovery
-      if (blockedUserIds.contains(candidateId)) {
-        continue;
-      }
-
-      // Skip ghost mode profiles (hidden from discovery + nickname search, unlimited)
-      if (candidateProfile.isGhostMode) {
-        continue;
-      }
-
-      // Skip incognito profiles (hidden from discovery for 24h)
-      if (candidateProfile.isIncognito &&
-          candidateProfile.incognitoExpiry != null &&
-          candidateProfile.incognitoExpiry!.isAfter(now)) {
-        continue;
-      }
-
-      // Skip test users — testers should never be visible to regular users
-      if (!isCurrentUserPrivileged &&
-          candidateProfile.membershipTier == MembershipTier.test) {
-        continue;
-      }
-
-      // Skip profiles with no usable name OR location — users who haven't set a
-      // name or location (e.g. incomplete onboarding) are not discoverable to
-      // others. Admin/support viewers and admin/support candidates are exempt.
-      if (!isCurrentUserPrivileged &&
-          !isPrivileged &&
-          (_hasNoUsableName(candidateProfile) ||
-              _hasNoUsableLocation(candidateProfile))) {
+      // Blocked (bidirectional), removed accounts, ghost/incognito, testers and
+      // incomplete profiles (name/location) — the shared rules every people
+      // surface and every cached preview uses. Admin/support viewers still see
+      // testers and incomplete profiles.
+      if (!DiscoveryVisibility.isVisible(
+        candidateProfile,
+        viewerId: viewerId,
+        blockedIds: blockedUserIds,
+        viewerIsPrivileged: isViewerPrivileged,
+        now: now,
+      )) {
         continue;
       }
 
@@ -652,39 +699,141 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Then priority 3 (liked no response)
     prioritizedCandidates.addAll(priority3LikedNoResponse);
 
-    // Add admin/support profile at the beginning only when showSupportUser is enabled
-    final List<MatchCandidate> result;
-    if (preferences.showSupportUser) {
-      final adminCandidate = await _getAdminCandidate(userId);
-      if (adminCandidate != null) {
-        prioritizedCandidates.removeWhere(
-          (c) => c.profile.userId == adminCandidate.profile.userId,
-        );
-        result = [adminCandidate, ...prioritizedCandidates];
-      } else {
-        result = prioritizedCandidates;
-      }
-    } else {
-      result = prioritizedCandidates;
+    return prioritizedCandidates;
+  }
+
+  @override
+  Future<List<MatchCandidate>> getNearbyPeople({
+    required String userId,
+    required Profile viewer,
+    int limit = 15,
+  }) async {
+    final loc = viewer.effectiveLocation;
+    final city = loc.city.trim();
+    final country = loc.country.trim();
+    bool known(String v) => v.isNotEmpty && v.toLowerCase() != 'unknown';
+    final hasCity = known(city);
+    final hasCountry = known(country);
+
+    Future<List<MatchCandidate>> fullStack() async {
+      // Own cache slot + no fallback flag: Explore must not evict or relabel
+      // the Discovery grid's stack.
+      final stack = await _stack(
+        userId: userId,
+        preferences: MatchPreferences.defaultFor(userId)
+            .copyWith(showSupportUser: false),
+        forceRefresh: false,
+        primary: false,
+      );
+      return stack
+          .where((c) => !c.profile.isBusiness && c.profile.userId != userId)
+          .take(limit)
+          .toList();
     }
 
-    // Store in in-memory cache (keyed by userId + preferences hash)
-    _cache[userId] = _CachedStack(result, prefHash);
-    debugPrint('[Discovery] Cache stored — ${result.length} profiles for $userId');
+    // No area to anchor a light query on → the full stack, as before.
+    if (!hasCity && !hasCountry) return fullStack();
 
-    return result;
+    final profiles = firestore.collection('profiles');
+    Future<QuerySnapshot<Map<String, dynamic>>?> read(
+        Query<Map<String, dynamic>> q) async {
+      try {
+        return await q.get();
+      } catch (_) {
+        return null; // best-effort: another pool may still fill the strip
+      }
+    }
+
+    // A few bounded, single-field (auto-indexed) reads, all in parallel:
+    // locals in the viewer's city, travellers currently visiting it, and a
+    // same-country top-up; plus the viewer's recent swipes and blocks.
+    final results = await Future.wait<Object?>([
+      hasCity
+          ? read(profiles.where('location.city', isEqualTo: city).limit(40))
+          : Future<Object?>.value(),
+      hasCity
+          ? read(profiles
+              .where('travelerLocation.city', isEqualTo: city)
+              .limit(20))
+          : Future<Object?>.value(),
+      hasCountry
+          ? read(profiles.where('location.country', isEqualTo: country).limit(40))
+          : Future<Object?>.value(),
+      // Same bounded 90-day window as the stack (memoised, so it is read once
+      // for both), so "passed in the last 90 days" holds for heavy swipers too.
+      _getSwipeHistoryWithTypes(userId),
+      blockedUsersService.getBlockedUserIds(userId),
+    ]);
+
+    final ids = <String>[];
+    final data = <Map<String, dynamic>>[];
+    final seen = <String>{userId};
+    for (final r in results.take(3)) {
+      if (r is! QuerySnapshot<Map<String, dynamic>>) continue;
+      for (final doc in r.docs) {
+        if (!seen.add(doc.id)) continue;
+        ids.add(doc.id);
+        data.add(doc.data());
+      }
+    }
+    final swipeHistory = results[3] as Map<String, _SwipeRecord>;
+    final blockedUserIds = results[4] as Set<String>;
+
+    // Same parse/score/age rules as the matching scan (defaults: 18–99, any
+    // gender, no distance cap), off the UI isolate.
+    final parsed = await buildCandidatesOffThread(CandidateBuildRequest(
+      userId: userId,
+      viewer: viewer,
+      docIds: ids,
+      docData: data,
+      shuffle: false,
+    ));
+    // Nearest first (distance is 0 when either side has no coordinates; those
+    // candidates are dropped by the no-usable-location rule below).
+    parsed.sort((a, b) => a.distance.compareTo(b.distance));
+
+    final people = _prioritize(
+      parsed,
+      swipeHistory: swipeHistory,
+      blockedUserIds: blockedUserIds,
+      showSupportUser: false,
+      isViewerPrivileged: viewer.isAdmin || viewer.isSupport,
+      maxBoostedVisible: _getMaxBoostedVisible(viewer.membershipTier.value),
+      viewerId: userId,
+    ).where((c) => !c.profile.isBusiness).take(limit).toList();
+
+    // A sparse area (almost nobody in the city/country) would leave the strip
+    // near-empty; the worldwide stack pads with the nearest people elsewhere.
+    if (people.length < (limit / 3).ceil()) {
+      try {
+        final padded = await fullStack();
+        if (padded.length > people.length) return padded;
+      } catch (_) {
+        // Keep the light result.
+      }
+    }
+    return people;
   }
 
   /// Get swipe history with action types and timestamps
   /// Only fetches last 90 days (nope cooldown) to reduce reads at scale
-  Future<Map<String, _SwipeRecord>> _getSwipeHistoryWithTypes(String userId) async {
+  Future<Map<String, _SwipeRecord>> _getSwipeHistoryWithTypes(
+    String userId, {
+    int limit = 2000,
+  }) async {
+    final memo = _swipeMemo;
+    if (memo != null &&
+        memo.$1 == userId &&
+        DateTime.now().difference(memo.$2) < _CachedStack.ttl) {
+      return memo.$3;
+    }
     final ninetyDaysAgo = DateTime.now().subtract(const Duration(days: 90));
     final querySnapshot = await firestore
         .collection('swipes')
         .where('userId', isEqualTo: userId)
         .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(ninetyDaysAgo))
         .orderBy('timestamp', descending: true)
-        .limit(2000)
+        .limit(limit)
         .get();
 
     final history = <String, _SwipeRecord>{};
@@ -693,45 +842,20 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       final targetId = data['targetUserId'] as String?;
       final actionType = data['actionType'] as String?;
       final timestamp = data['timestamp'] as Timestamp?;
+      // Newest first, so the FIRST record per target is the latest action
+      // (a plain assignment let an older swipe overwrite a newer one).
       if (targetId != null && actionType != null) {
-        history[targetId] = _SwipeRecord(
-          actionType: actionType,
-          timestamp: timestamp?.toDate() ?? DateTime.now(),
+        history.putIfAbsent(
+          targetId,
+          () => _SwipeRecord(
+            actionType: actionType,
+            timestamp: timestamp?.toDate() ?? DateTime.now(),
+          ),
         );
       }
     }
+    _swipeMemo = (userId, DateTime.now(), history);
     return history;
-  }
-
-  /// Get all matched user IDs (mutual likes)
-  /// Uses select() to fetch only the needed field, reducing bandwidth and cost
-  Future<Set<String>> _getMatchedUserIds(String userId) async {
-    final matchedIds = <String>{};
-
-    // Fetch only the other userId field (not full docs) to reduce bandwidth
-    final results = await Future.wait([
-      firestore
-          .collection('matches')
-          .where('userId1', isEqualTo: userId)
-          .where('isActive', isEqualTo: true)
-          .limit(1000)
-          .get(),
-      firestore
-          .collection('matches')
-          .where('userId2', isEqualTo: userId)
-          .where('isActive', isEqualTo: true)
-          .limit(1000)
-          .get(),
-    ]);
-
-    for (final doc in results[0].docs) {
-      matchedIds.add(doc.data()['userId2'] as String);
-    }
-    for (final doc in results[1].docs) {
-      matchedIds.add(doc.data()['userId1'] as String);
-    }
-
-    return matchedIds;
   }
 
   /// Get admin profile as a match candidate — always visible to all users
@@ -848,6 +972,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Save to Firestore
     final model = SwipeActionModel.fromEntity(action);
     await firestore.collection('swipes').add(model.toFirestore());
+    _swipeMemo = null; // history changed
 
     // If it's a like or super like, send notification and check for match
     if (action.isPositive) {
@@ -1382,6 +1507,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
     if (querySnapshot.docs.isNotEmpty) {
       await querySnapshot.docs.first.reference.delete();
+      _swipeMemo = null; // history changed
     }
   }
 }

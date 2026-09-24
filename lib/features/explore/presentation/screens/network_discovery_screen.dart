@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -20,6 +21,8 @@ import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
+import '../../../discovery/data/services/discovery_prefetch.dart';
+import '../../../discovery/domain/discovery_visibility.dart';
 import '../../../discovery/domain/entities/match_preferences.dart';
 import '../../../discovery/presentation/screens/discovery_preferences_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
@@ -32,7 +35,6 @@ import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/data/datasources/people_tags_service.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
-import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/widgets/people_tags_editor.dart';
 import '../../../saved_searches/data/saved_searches_service.dart';
 import '../../../saved_searches/presentation/screens/saved_searches_screen.dart';
@@ -115,7 +117,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
 
   // Discovery reveal ceiling. Auto-reveal stops here; the user raises it by
   // spending coins. Seeded from the pre-tier fallback, then set to the user's
-  // per-membership-tier free-reveal allotment once [_loadRevealCap] resolves.
+  // per-membership-tier free-reveal allotment once [_applySelf] resolves.
   int _revealCap = kFreeRevealLimit;
   // Guards against double-charging while a coin-spend is in flight.
   bool _spending = false;
@@ -309,42 +311,144 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     return true;
   }
 
-  /// Loads the user's saved discovery filters from Firestore, then loads the
-  /// candidate pool. If "My Network" was already on when the screen opens, its
-  /// network set is warmed up first so the very first grid honours the filter.
+  /// Opens with no waterfall: the saved filters are read from the local cache
+  /// (instant on a warm device), the last rendered grid is painted straight
+  /// away, and the self tile, "My Network" set and the fresh pool then load in
+  /// parallel. The pool is usually a cache hit already (DiscoveryPrefetch).
   Future<void> _init() async {
-    await _loadRevealCap();
-    if (!mounted) return;
     await _loadPreferences();
     if (!mounted) return;
-    if (_showMyNetwork) await _ensureNetworkIds();
-    if (!mounted) return;
-    await _load();
+    unawaited(_loadSelf());
+    // The cached grid is only a faithful preview of the DEFAULT grid: a seeded
+    // (saved-search / interest) grid, a network-filtered one or the business
+    // view (businesses sit deep in the pool, past the saved ids) would flash
+    // the wrong people first. It races the real load and never overwrites it.
+    await Future.wait([
+      if (!_isSeeded && !_showMyNetwork && !_businessOnly) _paintCachedGrid(),
+      _load(),
+    ]);
   }
 
-  /// Resolves the user's membership tier from `profiles/{uid}.membershipTier`
-  /// and sets the starting reveal ceiling from
+  /// True when the opener seeded the filters (saved search re-run or Explore's
+  /// "same interests → See all"), i.e. this is not the user's default grid.
+  bool get _isSeeded {
+    final seed = widget.initialInterests;
+    return widget.initialPreferences != null || (seed != null && seed.isNotEmpty);
+  }
+
+  /// Paints the ids saved after the last server load (see [LastResultCache]),
+  /// read by id from the local Firestore cache. Only ever paints a NON-empty
+  /// list and never overwrites a server result.
+  Future<void> _paintCachedGrid() async {
+    try {
+      // The block list is needed to paint safely; it is normally already in
+      // memory (the prefetch / Explore fetched it). If it can't be had almost
+      // instantly, skip the preview rather than risk showing a blocked person.
+      final results = await Future.wait<Object?>([
+        LastResultCache.loadDocs(
+          DiscoveryPrefetch.gridCacheKey,
+          FirebaseFirestore.instance.collection('profiles'),
+        ),
+        di
+            .sl<BlockedUsersService>()
+            .getBlockedUserIds(widget.userId)
+            .then<Set<String>?>((ids) => ids)
+            .timeout(const Duration(milliseconds: 400), onTimeout: () => null),
+      ]);
+      final docs =
+          results[0] as List<DocumentSnapshot<Map<String, dynamic>>>;
+      final blocked = results[1] as Set<String>?;
+      if (docs.isEmpty || blocked == null) return;
+      final now = DateTime.now();
+      final cached = <MatchCandidate>[];
+      for (final doc in docs) {
+        if (doc.id == widget.userId) continue;
+        try {
+          final p = ProfileModel.fromFirestore(doc);
+          // Re-apply the stack's visibility rules to the (possibly older)
+          // local copy — the SAME predicate the server path uses. Support
+          // stays visible in this grid; the viewer's privilege isn't known yet,
+          // so the stricter (non-privileged) rules apply.
+          if (!DiscoveryVisibility.isVisible(
+            p,
+            viewerId: widget.userId,
+            blockedIds: blocked,
+            allowSupport: true,
+            now: now,
+          )) {
+            continue;
+          }
+          cached.add(_candidateFor(p));
+        } catch (_) {
+          // Skip unparseable cached docs.
+        }
+      }
+      if (!mounted || cached.isEmpty || _candidates != null) return;
+      setState(() {
+        _candidates = cached;
+        _visibleCount = _pageSize;
+      });
+    } catch (_) {
+      // No cached grid — the skeleton stays until the server load lands.
+    }
+  }
+
+  /// The self tile + the tier-based reveal ceiling, both from the user's own
+  /// `profiles/{uid}` doc: local cache first (instant), then the server.
+  Future<void> _loadSelf({bool serverOnly = false}) async {
+    final ref =
+        FirebaseFirestore.instance.collection('profiles').doc(widget.userId);
+    if (!serverOnly) {
+      try {
+        final cached = await ref.get(const GetOptions(source: Source.cache));
+        if (cached.exists) _applySelf(cached);
+      } catch (_) {
+        // Not cached yet.
+      }
+    }
+    try {
+      final fresh = await ref.get();
+      if (fresh.exists) _applySelf(fresh);
+    } catch (_) {
+      // Non-fatal — keep the cached tile / the pre-tier fallback cap.
+    }
+  }
+
+  // The tier the reveal ceiling was last derived from; a later read only resets
+  // the ceiling when the tier actually changed (so coins spent in between
+  // aren't undone).
+  MembershipTier? _revealTier;
+
+  /// Resolves the membership tier and sets the starting reveal ceiling from
   /// [TierEntitlements.discoveryFreeReveal] (Base 30 / Silver 100 / Gold 300 /
   /// Platinum ≈∞). The coins-to-see-more flow still raises it beyond that.
-  Future<void> _loadRevealCap() async {
+  void _applySelf(DocumentSnapshot<Map<String, dynamic>> doc) {
+    if (!mounted) return;
+    Profile? self;
     try {
-      final doc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.userId)
-          .get();
-      final raw = doc.data()?['membershipTier'] as String?;
-      final tier =
-          raw == null ? MembershipTier.free : MembershipTier.fromString(raw);
-      if (!mounted) return;
-      setState(() => _revealCap = TierEntitlements.discoveryFreeReveal(tier));
+      self = ProfileModel.fromFirestore(doc);
     } catch (_) {
-      // Non-fatal — keep the pre-tier fallback (kFreeRevealLimit).
+      self = null;
     }
+    final raw = doc.data()?['membershipTier'] as String?;
+    final tier =
+        raw == null ? MembershipTier.free : MembershipTier.fromString(raw);
+    setState(() {
+      if (self != null) _selfCandidate = _selfCandidateFor(self);
+      if (_revealTier != tier) {
+        _revealTier = tier;
+        _revealCap = TierEntitlements.discoveryFreeReveal(tier);
+      }
+    });
   }
 
   /// Reads the saved [MatchPreferences] from `users/{uid}.matchPreferences`
   /// (the same document [DiscoveryPreferencesScreen] persists to) so the full
   /// 2.2.4 filters persist across sessions. Falls back to sensible defaults.
+  ///
+  /// Local cache first so the screen (and its stack cache key) is ready
+  /// instantly; the server copy is then checked in the background and, if the
+  /// filters changed elsewhere, the grid reloads with them.
   Future<void> _loadPreferences() async {
     // Re-running a saved search: adopt the saved filters verbatim (they win over
     // the user's persisted preferences for this session) and skip the remote
@@ -354,102 +458,108 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       _preferences = seededPrefs;
       return;
     }
+    MatchPreferences? saved;
+    var fromCache = false;
     try {
-      final doc = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(widget.userId)
-          .get();
-      final raw = doc.data()?['matchPreferences'];
-      if (raw is Map) {
-        _preferences =
-            MatchPreferences.fromMap(Map<String, dynamic>.from(raw));
-      }
+      saved = await DiscoveryPrefetch.loadSavedPreferences(widget.userId,
+          cacheOnly: true);
+      fromCache = saved != null;
     } catch (_) {
-      // Non-fatal — fall back to defaults via [_effectivePreferences].
+      // Not in the local cache.
     }
-    // Opened pre-filtered from Explore ("same interests → See all"): seed the
-    // discovery filters with those interests so the grid honours them from the
-    // first load (and [_preferences] reflects them across settings round-trips).
+    if (!fromCache) {
+      try {
+        saved = await DiscoveryPrefetch.loadSavedPreferences(widget.userId);
+      } catch (_) {
+        // Non-fatal — fall back to defaults via [_effectivePreferences].
+      }
+    }
+    _preferences = _withSeed(saved);
+    if (fromCache) unawaited(_revalidatePreferences(saved));
+  }
+
+  /// Opened pre-filtered from Explore ("same interests → See all"): seed the
+  /// discovery filters with those interests so the grid honours them from the
+  /// first load (and [_preferences] reflects them across settings round-trips).
+  MatchPreferences? _withSeed(MatchPreferences? saved) {
     final seed = widget.initialInterests;
-    if (seed != null && seed.isNotEmpty) {
-      final base = _preferences ?? MatchPreferences.defaultFor(widget.userId);
-      _preferences = base.copyWith(preferredInterests: seed);
+    if (seed == null || seed.isEmpty) return saved;
+    final base = saved ?? MatchPreferences.defaultFor(widget.userId);
+    return base.copyWith(preferredInterests: seed);
+  }
+
+  Future<void> _revalidatePreferences(MatchPreferences? cached) async {
+    try {
+      final fresh = await DiscoveryPrefetch.loadSavedPreferences(widget.userId);
+      if (!mounted || fresh == cached) return;
+      setState(() {
+        _preferences = _withSeed(fresh);
+        _candidates = null;
+        _visibleCount = _pageSize;
+      });
+      await _load();
+    } catch (_) {
+      // Keep the cached filters.
     }
   }
 
   /// The saved filters merged with the rules this Apple-safe grid always
-  /// enforces: the official GreenGo account stays hidden, and in the culture
-  /// flavor age is never a filter (age range is a dating signal — hidden from
-  /// the UI and forced to the full 18–99 span so it excludes no one).
-  MatchPreferences get _effectivePreferences {
-    final base = _preferences ?? MatchPreferences.defaultFor(widget.userId);
-    return base.copyWith(
-      // Orientation and verified-only were removed as user-facing filters.
-      // Neutralised here as well so a value saved before the removal cannot
-      // keep silently excluding people with no UI left to clear it.
-      preferredOrientations: const [],
-      onlyVerified: false,
-      minAge: FlavorConfig.enableMatching ? base.minAge : 18,
-      maxAge: FlavorConfig.enableMatching ? base.maxAge : 99,
-    );
-  }
+  /// enforces (see [DiscoveryPrefetch.effectivePreferences], shared with the
+  /// background prefetch so both hit the same stack cache slot).
+  MatchPreferences get _effectivePreferences =>
+      DiscoveryPrefetch.effectivePreferences(_preferences, widget.userId);
+
+  // Bumped by every [_load]; a load that finishes after a newer one started
+  // (e.g. the filters were re-validated mid-flight) is discarded.
+  int _loadGeneration = 0;
 
   Future<void> _load({bool forceRefresh = false}) async {
+    final generation = ++_loadGeneration;
     try {
-      // Load the current user's own profile (for the "You" tile) in parallel
-      // with the distance-ordered discovery pool. On a pull-to-refresh
-      // (forceRefresh) the discovery cache is bypassed so the grid shows fresh
-      // server data.
+      // The distance-ordered discovery pool, with the "My Network" set in
+      // parallel when that filter is on. On a pull-to-refresh (forceRefresh)
+      // the discovery cache is bypassed and the self tile re-read from the
+      // server so the grid shows fresh data.
       final ds = di.sl<DiscoveryRemoteDataSource>();
       final preferences = _effectivePreferences;
+      if (forceRefresh) unawaited(_loadSelf(serverOnly: true));
+      final network = _showMyNetwork ? _ensureNetworkIds() : null;
 
-      final results = await Future.wait<Object?>([
-        di.sl<ProfileRepository>().getProfile(widget.userId),
-        ds.getDiscoveryStack(
-          userId: widget.userId,
-          preferences: preferences,
-          limit: 500,
-          forceRefresh: forceRefresh,
-        ),
-      ]);
+      final stack = await ds.getDiscoveryStack(
+        userId: widget.userId,
+        preferences: preferences,
+        limit: DiscoveryPrefetch.stackLimit,
+        forceRefresh: forceRefresh,
+      );
+      if (network != null) await network;
+      if (generation != _loadGeneration) return;
 
-      // Build the self candidate from the loaded profile.
-      final selfEither = results[0];
-      Profile? selfProfile;
-      // ProfileRepository.getProfile returns Either<Failure, Profile>.
-      try {
-        selfProfile = (selfEither as dynamic).fold(
-          (_) => null,
-          (p) => p as Profile,
-        ) as Profile?;
-      } catch (_) {
-        selfProfile = null;
+      // NOTE: the business vs normal-profile split is applied at DISPLAY time
+      // in _visibleList() so the AppBar toggle switches instantly with no
+      // reload (the full pool is kept here).
+      final list = DiscoveryPrefetch.gridPool(stack, widget.userId);
+
+      // Remember what the DEFAULT grid showed for an instant paint next time.
+      if (!_isSeeded) {
+        unawaited(LastResultCache.saveIds(
+          DiscoveryPrefetch.gridCacheKey,
+          list.map((c) => c.profile.userId),
+        ));
       }
-
-      final list = (results[1] as List<MatchCandidate>)
-          // Admin accounts stay hidden. Support does not: it is a real account
-          // users are meant to be able to reach, and it was being hidden both
-          // here and by a forced showSupportUser:false above.
-          .where((c) => !c.profile.isAdmin)
-          // Never render the user's own tile inside the pool (it is pinned).
-          .where((c) => c.profile.userId != widget.userId)
-          // NOTE: the business vs normal-profile split is applied at DISPLAY
-          // time in _visibleList() so the AppBar toggle switches instantly with
-          // no reload (the full pool is kept here).
-          .toList();
 
       if (!mounted) return;
       setState(() {
-        _selfCandidate =
-            selfProfile != null ? _selfCandidateFor(selfProfile) : null;
+        _hadError = false;
         _candidates = list;
         _visibleCount = _pageSize;
       });
     } catch (_) {
-      if (mounted) {
+      if (mounted && generation == _loadGeneration) {
         setState(() {
           _hadError = true;
-          _candidates = const <MatchCandidate>[];
+          // Keep a cached paint on screen rather than replacing it with an
+          // error state.
+          _candidates ??= const <MatchCandidate>[];
         });
       }
     }
@@ -483,35 +593,43 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   /// `userId2 == uid`, the canonical 1:1 conversation schema used across the
   /// app), collecting the OTHER participant from each. Cached after the first
   /// fetch. This is "people I've chatted with", not matches.
-  Future<void> _ensureNetworkIds() async {
-    if (_networkIds != null) return;
-    final ids = <String>{};
-    try {
-      final firestore = FirebaseFirestore.instance;
-      final snaps = await Future.wait([
-        firestore
-            .collection('conversations')
-            .where('userId1', isEqualTo: widget.userId)
-            .get(),
-        firestore
-            .collection('conversations')
-            .where('userId2', isEqualTo: widget.userId)
-            .get(),
-      ]);
-      for (final snap in snaps) {
-        for (final doc in snap.docs) {
-          final data = doc.data();
-          final u1 = data['userId1'] as String?;
-          final u2 = data['userId2'] as String?;
-          if (u1 != null && u1 != widget.userId) ids.add(u1);
-          if (u2 != null && u2 != widget.userId) ids.add(u2);
+  ///
+  /// Bounded to [_maxNetworkConversations] per side, so a very chatty account
+  /// can never trigger an unbounded read. (No orderBy on purpose: it would
+  /// silently drop any conversation missing `lastMessageAt`.)
+  Future<void> _ensureNetworkIds() {
+    if (_networkIds != null) return Future<void>.value();
+    return _networkLoading ??= () async {
+      final ids = <String>{};
+      try {
+        final firestore = FirebaseFirestore.instance;
+        final snaps = await Future.wait([
+          for (final field in const ['userId1', 'userId2'])
+            firestore
+                .collection('conversations')
+                .where(field, isEqualTo: widget.userId)
+                .limit(_maxNetworkConversations)
+                .get(),
+        ]);
+        for (final snap in snaps) {
+          for (final doc in snap.docs) {
+            final data = doc.data();
+            final u1 = data['userId1'] as String?;
+            final u2 = data['userId2'] as String?;
+            if (u1 != null && u1 != widget.userId) ids.add(u1);
+            if (u2 != null && u2 != widget.userId) ids.add(u2);
+          }
         }
+      } catch (_) {
+        // Non-fatal — an empty network simply shows nothing under the toggle.
       }
-    } catch (_) {
-      // Non-fatal — an empty network simply shows nothing under the toggle.
-    }
-    _networkIds = ids;
+      _networkIds = ids;
+      _networkLoading = null;
+    }();
   }
+
+  static const int _maxNetworkConversations = 500;
+  Future<void>? _networkLoading;
 
   // ── Top-bar actions ────────────────────────────────────────────────────────
 
@@ -648,9 +766,6 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       _candidates = null;
       _visibleCount = _pageSize;
     });
-
-    if (_showMyNetwork) await _ensureNetworkIds();
-    if (!mounted) return;
 
     await _load();
   }
