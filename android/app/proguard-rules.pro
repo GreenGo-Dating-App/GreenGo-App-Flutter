@@ -1,67 +1,48 @@
-# Flutter specific ProGuard rules
--keep class io.flutter.app.** { *; }
--keep class io.flutter.plugin.**  { *; }
--keep class io.flutter.util.**  { *; }
--keep class io.flutter.view.**  { *; }
--keep class io.flutter.**  { *; }
--keep class io.flutter.plugins.**  { *; }
+# GreenGo R8 rules.
+#
+# Keep this file NARROW. Flutter, Firebase, Google Play services, ML Kit and
+# the plugins all ship their own consumer ProGuard rules inside their AARs, so
+# they need nothing here. Blanket rules such as `-keep class com.google.** { *; }`
+# stop R8 from obfuscating most of the app's DEX, which is what Play Console
+# flags as "DEX code optimization below threshold (Obfuscation)".
+#
+# Add a rule only for a concrete crash/missing-class, scoped to that class.
 
-# Firebase rules
--keep class com.google.firebase.** { *; }
--keep class com.google.android.gms.** { *; }
-
-# Keep Firestore model classes
--keepclassmembers class * {
-    @com.google.firebase.firestore.PropertyName <fields>;
-}
-
-# Keep custom model classes used with Firestore
+# App entry points (MainActivity etc.) are referenced from the manifest and
+# by Flutter's embedding by name.
 -keep class com.greengochat.greengochatapp.** { *; }
 
-# Retrofit / OkHttp rules (if used)
--dontwarn okhttp3.**
--dontwarn okio.**
--dontwarn javax.annotation.**
-
-# Keep native methods
--keepclasseswithmembernames class * {
-    native <methods>;
-}
-
-# Keep Parcelable implementations
--keep class * implements android.os.Parcelable {
-    public static final android.os.Parcelable$Creator *;
-}
-
-# Keep Serializable implementations
--keepnames class * implements java.io.Serializable
--keepclassmembers class * implements java.io.Serializable {
-    static final long serialVersionUID;
-    private static final java.io.ObjectStreamField[] serialPersistentFields;
-    !static !transient <fields>;
-    private void writeObject(java.io.ObjectOutputStream);
-    private void readObject(java.io.ObjectInputStream);
-    java.lang.Object writeReplace();
-    java.lang.Object readResolve();
-}
-
-# Keep R8 from removing important classes
+# Reflection-based serialization / generics / annotations used by Firebase
+# and Gson-style libraries.
 -keepattributes Signature
 -keepattributes *Annotation*
 -keepattributes EnclosingMethod
 -keepattributes InnerClasses
 
-# Google ML Kit - Keep all text recognition classes
--keep class com.google.mlkit.vision.text.** { *; }
--keep class com.google.mlkit.vision.text.chinese.** { *; }
--keep class com.google.mlkit.vision.text.devanagari.** { *; }
--keep class com.google.mlkit.vision.text.japanese.** { *; }
--keep class com.google.mlkit.vision.text.korean.** { *; }
--keep class com.google.mlkit.vision.face.** { *; }
--keep class com.google.mlkit.common.** { *; }
+# Firestore model fields mapped by @PropertyName.
+-keepclassmembers class * {
+    @com.google.firebase.firestore.PropertyName <fields>;
+}
 
-# Suppress warnings for missing ML Kit optional modules
+# JNI: native method names must match the .so symbols.
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# Readable stack traces in Play Console (mapping.txt is uploaded with the AAB).
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
+
+# Flutter's deferred-components hooks reference Play Core, which this app
+# does not ship.
+-dontwarn com.google.android.play.core.**
+
+# Optional ML Kit text-recognition language modules are not bundled.
 -dontwarn com.google.mlkit.vision.text.chinese.**
 -dontwarn com.google.mlkit.vision.text.devanagari.**
 -dontwarn com.google.mlkit.vision.text.japanese.**
 -dontwarn com.google.mlkit.vision.text.korean.**
+
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**

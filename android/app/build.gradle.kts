@@ -76,10 +76,17 @@ android {
                 signingConfigs.getByName("debug")
             }
 
-            // Disable code shrinking due to ML Kit compatibility issues
-            // TODO: Re-enable and fix ProGuard rules for ML Kit
-            isMinifyEnabled = false
-            isShrinkResources = false
+            // R8: shrink + obfuscate the Java/Kotlin side. Play Console flags
+            // apps whose DEX obfuscation is under 25%. Libraries bring their
+            // own consumer rules; keep app-level rules in proguard-rules.pro
+            // narrow or they undo the obfuscation. The mapping.txt is bundled
+            // into the AAB so Play de-obfuscates crash reports.
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
 
             // Include native debug symbols in the App Bundle so Play can
             // symbolicate native crashes/ANRs (clears the "no debug symbols"
