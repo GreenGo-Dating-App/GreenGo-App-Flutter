@@ -4718,5 +4718,8 @@
   "eventsAttendeeListPrivateHint": "Solo tu puoi vedere l'elenco dei partecipanti.",
   "eventsAttendeeListParticipantsHint": "Chi partecipa può vedere gli altri partecipanti.",
   "eventsAttendeeListPublicHint": "Chiunque veda l'evento può vedere l'elenco dei partecipanti.",
-  "eventsAttendeeListHidden": "L'organizzatore ha nascosto l'elenco dei partecipanti."
+  "eventsAttendeeListHidden": "L'organizzatore ha nascosto l'elenco dei partecipanti.",
+  "eventsOrganizedBy": "Organizzato da",
+  "eventsOrganizerYou": "{name} (tu)",
+  "eventsByOrganizer": "di {name}"
 }

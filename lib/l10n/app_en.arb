@@ -6676,5 +6676,10 @@
   "eventsAttendeeListPrivateHint": "Only you can see the guest list.",
   "eventsAttendeeListParticipantsHint": "People attending can see each other.",
   "eventsAttendeeListPublicHint": "Anyone who can see the event can see the guest list.",
-  "eventsAttendeeListHidden": "The organizer has hidden the guest list."
+  "eventsAttendeeListHidden": "The organizer has hidden the guest list.",
+  "eventsOrganizedBy": "Organized by",
+  "eventsOrganizerYou": "{name} (you)",
+  "@eventsOrganizerYou": {"placeholders": {"name": {"type": "String"}}},
+  "eventsByOrganizer": "by {name}",
+  "@eventsByOrganizer": {"placeholders": {"name": {"type": "String"}}}
 }

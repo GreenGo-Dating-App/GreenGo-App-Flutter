@@ -4718,5 +4718,8 @@
   "eventsAttendeeListPrivateHint": "Nur du siehst die Gästeliste.",
   "eventsAttendeeListParticipantsHint": "Teilnehmende sehen einander.",
   "eventsAttendeeListPublicHint": "Alle, die das Event sehen, sehen auch die Gästeliste.",
-  "eventsAttendeeListHidden": "Die Organisation hat die Gästeliste ausgeblendet."
+  "eventsAttendeeListHidden": "Die Organisation hat die Gästeliste ausgeblendet.",
+  "eventsOrganizedBy": "Organisiert von",
+  "eventsOrganizerYou": "{name} (du)",
+  "eventsByOrganizer": "von {name}"
 }
