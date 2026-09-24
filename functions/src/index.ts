@@ -540,3 +540,7 @@ export {
   sendPasswordResetViaResend,
   reverseGeocodeProfileLocation,
 } from './admin/adminPanelFunctions';
+
+// Link previews (Open Graph) for shared events + communities, served on
+// /e/**, /c/** and /og/** via Firebase Hosting rewrites.
+export { sharePreview } from './share/sharePreview';

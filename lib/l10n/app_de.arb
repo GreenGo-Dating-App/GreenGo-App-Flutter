@@ -4721,5 +4721,7 @@
   "eventsAttendeeListHidden": "Die Organisation hat die Gästeliste ausgeblendet.",
   "eventsOrganizedBy": "Organisiert von",
   "eventsOrganizerYou": "{name} (du)",
-  "eventsByOrganizer": "von {name}"
+  "eventsByOrganizer": "von {name}",
+  "shareEventMessageTitled": "{title}\nSieh dir dieses Event auf GreenGo an: {link}",
+  "shareCommunityMessage": "{name}\nTritt dieser Community auf GreenGo bei: {link}"
 }

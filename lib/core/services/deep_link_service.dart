@@ -3,29 +3,39 @@ import 'dart:async';
 import 'package:app_links/app_links.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../features/chat/presentation/connect_and_chat.dart';
+import '../../features/communities/domain/repositories/communities_repository.dart';
+import '../../features/communities/presentation/bloc/communities_bloc.dart';
+import '../../features/communities/presentation/screens/community_detail_screen.dart';
 import '../../features/events/presentation/screens/event_detail_loader_screen.dart';
+import '../../features/profile/presentation/bloc/profile_bloc.dart';
+import '../../features/profile/presentation/bloc/profile_event.dart';
 import '../../generated/app_localizations.dart';
+import '../di/injection_container.dart' as di;
 import 'push_notification_service.dart';
 
-/// Handles inbound deep links / universal links for shareable PROFILE and EVENT
-/// links, and builds/shares those same links from inside the app.
+/// Handles inbound deep links / universal links for shareable PROFILE, EVENT
+/// and COMMUNITY links, and builds/shares those same links from inside the app.
 ///
 /// Supported link shapes (kept in sync with `web/.well-known/*`,
 /// `AndroidManifest.xml` intent-filters and the iOS entitlements / Info.plist):
 ///   * Profile: `https://greengo-chat.web.app/u/{userId}`  or `greengo://u/{userId}`
 ///   * Event:   `https://greengo-chat.web.app/e/{eventId}` or `greengo://e/{eventId}`
+///   * Community: `https://greengo-chat.web.app/c/{communityId}` or `greengo://c/{communityId}`
 ///
 /// Tapping a link opens the app and:
 ///   * profile -> opens an instant, approval-free chat with that user
 ///     (via [openConnectChat], which loads the target `Profile` itself);
-///   * event   -> opens [EventDetailLoaderScreen] for that event.
+///   * event   -> opens [EventDetailLoaderScreen] for that event;
+///   * community -> opens [CommunityDetailScreen] for that community.
 ///
-/// When the app is NOT installed the link is served by Firebase Hosting
-/// (`web/u/index.html` / `web/e/index.html`) which bounces to the App Store /
-/// Google Play.
+/// Event and community links are rendered by the `sharePreview` Cloud Function
+/// (Hosting rewrite) so WhatsApp / Telegram / Instagram show a preview card
+/// with the real title, description and photo. When the app is NOT installed
+/// that page (and `web/u/index.html` for profiles) bounces to the store.
 ///
 /// NOTE: Firebase Dynamic Links is DEPRECATED and intentionally NOT used here.
 // TODO(deferred-deeplink): There is no deferred deep-linking (opening the exact
@@ -54,6 +64,10 @@ class DeepLinkService {
   /// Canonical shareable HTTPS link for an event.
   static String buildEventLink(String eventId) =>
       'https://$linkHost/e/$eventId';
+
+  /// Canonical shareable HTTPS link for a community.
+  static String buildCommunityLink(String communityId) =>
+      'https://$linkHost/c/$communityId';
 
   /// Wire up cold-start + warm deep-link handling. Call ONCE from the root app
   /// widget's initState (see main.dart / AuthWrapper). Safe to call repeatedly —
@@ -95,7 +109,8 @@ class DeepLinkService {
   }
 
   /// Extract a target from either an https universal link or the `greengo://`
-  /// custom scheme. Returns null for anything that isn't `/u/{id}` or `/e/{id}`.
+  /// custom scheme. Returns null for anything that isn't `/u/{id}`, `/e/{id}`
+  /// or `/c/{id}`.
   _LinkTarget? _parse(Uri uri) {
     final scheme = uri.scheme.toLowerCase();
     final isHttp = scheme == 'http' || scheme == 'https';
@@ -115,6 +130,7 @@ class DeepLinkService {
       if (id.isEmpty) continue;
       if (kind == 'u') return _LinkTarget(_LinkKind.profile, id);
       if (kind == 'e') return _LinkTarget(_LinkKind.event, id);
+      if (kind == 'c') return _LinkTarget(_LinkKind.community, id);
     }
     return null;
   }
@@ -156,6 +172,8 @@ class DeepLinkService {
         currentUserId: currentUserId,
         otherUserId: target.id,
       );
+    } else if (target.kind == _LinkKind.community) {
+      _openCommunity(context, target.id, currentUserId);
     } else {
       Navigator.of(context).push(
         EventDetailLoaderScreen.route(
@@ -165,9 +183,40 @@ class DeepLinkService {
       );
     }
   }
+
+  /// Load the community, then open its detail screen with the blocs it needs.
+  /// A missing/deleted community is ignored.
+  Future<void> _openCommunity(
+      BuildContext context, String communityId, String currentUserId) async {
+    final navigator = Navigator.of(context);
+    try {
+      final result =
+          await di.sl<CommunitiesRepository>().getCommunityById(communityId);
+      final community = result.fold((_) => null, (c) => c);
+      if (community == null) return;
+      await navigator.push(
+        MaterialPageRoute<void>(
+          builder: (_) => MultiBlocProvider(
+            providers: [
+              BlocProvider<CommunitiesBloc>(
+                create: (_) => di.sl<CommunitiesBloc>(),
+              ),
+              BlocProvider<ProfileBloc>(
+                create: (_) => di.sl<ProfileBloc>()
+                  ..add(ProfileLoadRequested(userId: currentUserId)),
+              ),
+            ],
+            child: CommunityDetailScreen(community: community),
+          ),
+        ),
+      );
+    } catch (e) {
+      debugPrint('DeepLinkService: could not open community $communityId: $e');
+    }
+  }
 }
 
-enum _LinkKind { profile, event }
+enum _LinkKind { profile, event, community }
 
 class _LinkTarget {
   const _LinkTarget(this.kind, this.id);
@@ -190,11 +239,30 @@ Future<void> shareProfileLink(BuildContext context, String userId) async {
   await Share.share(text);
 }
 
-/// Share an event deep link via the OS share sheet.
-Future<void> shareEventLink(BuildContext context, String eventId) async {
+/// Share an event deep link via the OS share sheet. The message leads with the
+/// event's title; the link itself unfurls into a preview card (title,
+/// description, photo) in WhatsApp / Telegram / Instagram.
+Future<void> shareEventLink(BuildContext context, String eventId,
+    {String? title}) async {
   final link = DeepLinkService.buildEventLink(eventId);
   final l10n = AppLocalizations.of(context);
-  final text = l10n?.shareEventMessage(link) ??
-      'Check out this event on GreenGo: $link';
-  await Share.share(text);
+  final t = title?.trim() ?? '';
+  final text = t.isNotEmpty
+      ? (l10n?.shareEventMessageTitled(t, link) ??
+          '$t\nCheck out this event on GreenGo: $link')
+      : (l10n?.shareEventMessage(link) ??
+          'Check out this event on GreenGo: $link');
+  await Share.share(text, subject: t.isNotEmpty ? t : null);
+}
+
+/// Share a community deep link via the OS share sheet (same preview card as
+/// events).
+Future<void> shareCommunityLink(BuildContext context, String communityId,
+    {required String name}) async {
+  final link = DeepLinkService.buildCommunityLink(communityId);
+  final l10n = AppLocalizations.of(context);
+  final n = name.trim();
+  final text = l10n?.shareCommunityMessage(n, link) ??
+      '$n\nJoin this community on GreenGo: $link';
+  await Share.share(text, subject: n.isNotEmpty ? n : null);
 }

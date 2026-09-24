@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/app_sound_service.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -373,6 +374,14 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         ],
       ),
       actions: [
+        // Share outside the app (WhatsApp, Telegram...) - the link unfurls
+        // into a card with this community's name, description and photo.
+        IconButton(
+          icon: const Icon(Icons.share, color: AppColors.textSecondary),
+          tooltip: AppLocalizations.of(context)!.eventShare,
+          onPressed: () => shareCommunityLink(context, _community.id,
+              name: _community.name),
+        ),
         // Members list button
         IconButton(
           icon: const Icon(Icons.people_outline, color: AppColors.textSecondary),

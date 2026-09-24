@@ -6681,5 +6681,9 @@
   "eventsOrganizerYou": "{name} (you)",
   "@eventsOrganizerYou": {"placeholders": {"name": {"type": "String"}}},
   "eventsByOrganizer": "by {name}",
-  "@eventsByOrganizer": {"placeholders": {"name": {"type": "String"}}}
+  "@eventsByOrganizer": {"placeholders": {"name": {"type": "String"}}},
+  "shareEventMessageTitled": "{title}\nCheck out this event on GreenGo: {link}",
+  "@shareEventMessageTitled": {"placeholders": {"title": {"type": "String"}, "link": {"type": "String"}}},
+  "shareCommunityMessage": "{name}\nJoin this community on GreenGo: {link}",
+  "@shareCommunityMessage": {"placeholders": {"name": {"type": "String"}, "link": {"type": "String"}}}
 }

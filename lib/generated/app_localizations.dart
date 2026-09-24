@@ -24911,6 +24911,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'by {name}'**
   String eventsByOrganizer(String name);
+
+  /// No description provided for @shareEventMessageTitled.
+  ///
+  /// In en, this message translates to:
+  /// **'{title}\nCheck out this event on GreenGo: {link}'**
+  String shareEventMessageTitled(String title, String link);
+
+  /// No description provided for @shareCommunityMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'{name}\nJoin this community on GreenGo: {link}'**
+  String shareCommunityMessage(String name, String link);
 }
 
 class _AppLocalizationsDelegate

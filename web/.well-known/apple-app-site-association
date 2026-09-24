@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "9885DQB8RF.com.greengochat.greengochatapp",
-        "paths": ["/u/*", "/e/*"]
+        "paths": ["/u/*", "/e/*", "/c/*"]
       }
     ]
   }

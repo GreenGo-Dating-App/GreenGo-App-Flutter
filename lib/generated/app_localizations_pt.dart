@@ -14126,6 +14126,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String eventsByOrganizer(String name) {
     return 'por $name';
   }
+
+  @override
+  String shareEventMessageTitled(String title, String link) {
+    return '$title\nVê este evento no GreenGo: $link';
+  }
+
+  @override
+  String shareCommunityMessage(String name, String link) {
+    return '$name\nJunta-te a esta comunidade no GreenGo: $link';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28253,5 +28263,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String eventsByOrganizer(String name) {
     return 'por $name';
+  }
+
+  @override
+  String shareEventMessageTitled(String title, String link) {
+    return '$title\nConfira este evento no GreenGo: $link';
+  }
+
+  @override
+  String shareCommunityMessage(String name, String link) {
+    return '$name\nParticipe desta comunidade no GreenGo: $link';
   }
 }
