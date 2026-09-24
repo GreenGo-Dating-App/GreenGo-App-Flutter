@@ -1,6 +1,8 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../discovery/presentation/widgets/network_grid_card.dart';
 
 /// A compact in-tile photo carousel for the Apple-safe people grids.
 ///
@@ -109,15 +111,18 @@ class _UserPhotoCarouselState extends State<UserPhotoCarousel> {
 
     Widget content;
     if (hasPhotos) {
-      content = Image.network(
-        photos[safeIndex],
+      // Same decode/disk size as the grid tiles, so a photo warmed or shown
+      // there is reused here (memory + disk cache) instead of re-downloaded.
+      content = CachedNetworkImage(
+        imageUrl: photos[safeIndex],
         key: ValueKey<String>(photos[safeIndex]),
         fit: BoxFit.cover,
         width: double.infinity,
         height: double.infinity,
-        errorBuilder: (_, __, ___) => fallback,
-        loadingBuilder: (context, child, progress) =>
-            progress == null ? child : fallback,
+        memCacheWidth: NetworkGridCard.photoCacheWidth,
+        maxWidthDiskCache: NetworkGridCard.photoCacheWidth,
+        placeholder: (_, __) => fallback,
+        errorWidget: (_, __, ___) => fallback,
       );
     } else {
       content = fallback;

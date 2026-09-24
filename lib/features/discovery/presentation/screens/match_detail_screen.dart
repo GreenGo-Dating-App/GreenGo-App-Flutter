@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -264,12 +265,13 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: photoUrl != null
-            ? Image.network(
-                photoUrl,
+            ? CachedNetworkImage(
+                imageUrl: photoUrl,
                 fit: BoxFit.cover,
                 width: width,
                 height: height,
-                errorBuilder: (_, __, ___) => _buildPlaceholder(),
+                memCacheWidth: 600,
+                errorWidget: (_, __, ___) => _buildPlaceholder(),
               )
             : _buildPlaceholder(),
       ),

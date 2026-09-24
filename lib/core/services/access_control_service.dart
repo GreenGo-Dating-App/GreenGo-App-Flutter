@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
 import 'package:flutter/foundation.dart';
@@ -124,6 +126,28 @@ class UserAccessData {
     };
   }
 
+  UserAccessData copyWith({
+    ApprovalStatus? approvalStatus,
+    DateTime? accessDate,
+    bool? hasEarlyAccess,
+  }) {
+    return UserAccessData(
+      userId: userId,
+      approvalStatus: approvalStatus ?? this.approvalStatus,
+      approvedAt: approvedAt,
+      approvedBy: approvedBy,
+      accessDate: accessDate ?? this.accessDate,
+      membershipTier: membershipTier,
+      notificationsEnabled: notificationsEnabled,
+      hasEarlyAccess: hasEarlyAccess ?? this.hasEarlyAccess,
+      isAdmin: isAdmin,
+      preSaleTier: preSaleTier,
+      preSaleNumberOfDays: preSaleNumberOfDays,
+      subscriptionExpiryDate: subscriptionExpiryDate,
+      baseMembershipExpiryDate: baseMembershipExpiryDate,
+    );
+  }
+
   /// Check if this is a Test user (bypasses countdown)
   bool get isTestUser => membershipTier == SubscriptionTier.test;
 
@@ -213,16 +237,38 @@ class AccessControlService {
   static DateTime get premiumAccessDate => earlyAccessDate;
   static DateTime get basicAccessDate => generalAccessDate;
 
+  static Future<void>? _countdownLoad;
+  static DateTime? _countdownLoadStartedAt;
+  static const Duration _countdownTtl = Duration(minutes: 1);
+
   /// Fetch countdown dates from Firestore `app_config/countdown` document.
   /// Called on app startup and on every login to pick up admin changes.
   /// Uses server fetch (bypasses cache) to ensure fresh data.
   /// Falls back to defaults if fetch fails.
-  static Future<void> loadCountdownDatesFromFirestore() async {
+  ///
+  /// Startup, the auth bloc and the main screen all ask for this within the
+  /// same second, so calls within [_countdownTtl] share one read.
+  static Future<void> loadCountdownDatesFromFirestore() {
+    final startedAt = _countdownLoadStartedAt;
+    final inFlight = _countdownLoad;
+    if (inFlight != null &&
+        startedAt != null &&
+        DateTime.now().difference(startedAt) < _countdownTtl) {
+      return inFlight;
+    }
+    _countdownLoadStartedAt = DateTime.now();
+    return _countdownLoad = _fetchCountdownDates();
+  }
+
+  static Future<void> _fetchCountdownDates() async {
     try {
+      // Bounded: a server read has no deadline of its own, and callers wait
+      // on this before resolving the user's countdown.
       final doc = await FirebaseFirestore.instance
           .collection('app_config')
           .doc('countdown')
-          .get(const GetOptions(source: Source.server));
+          .get(const GetOptions(source: Source.server))
+          .timeout(const Duration(seconds: 8));
       if (doc.exists) {
         final data = doc.data()!;
         if (data['platinumAccessDate'] != null) {
@@ -284,17 +330,88 @@ class AccessControlService {
 
   final PreSaleService _preSaleService;
 
+  /// Recent SERVER reads of the signed-in user's own `users` / `profiles`
+  /// docs, shared by AuthWrapper, MainNavigationScreen and the auth bloc so a
+  /// launch reads each doc from the server once instead of 3-4 times. Holds
+  /// the in-flight future too, so concurrent callers share one round trip.
+  static final Map<String,
+          ({DateTime at, Future<DocumentSnapshot<Map<String, dynamic>>> read})>
+      _ownDocReads = {};
+  static const Duration _ownDocTtl = Duration(seconds: 30);
+
+  /// Server read of `collection/uid`, shared with any other caller within
+  /// [_ownDocTtl]. Callers add their own timeout.
+  Future<DocumentSnapshot<Map<String, dynamic>>> serverDoc(
+      String collection, String uid) {
+    final key = '$collection/$uid';
+    final hit = _ownDocReads[key];
+    if (hit != null && DateTime.now().difference(hit.at) < _ownDocTtl) {
+      return hit.read;
+    }
+    final read = _firestore
+        .collection(collection)
+        .doc(uid)
+        .get(const GetOptions(source: Source.server));
+    _ownDocReads[key] = (at: DateTime.now(), read: read);
+    // A failed read is not replayed to the next caller.
+    read.then((_) {}, onError: (Object _) {
+      if (identical(_ownDocReads[key]?.read, read)) _ownDocReads.remove(key);
+    });
+    return read;
+  }
+
+  /// Drop the shared read of `collection/uid` (call after writing it).
+  static void invalidateOwnDoc(String collection, String uid) =>
+      _ownDocReads.remove('$collection/$uid');
+
+  /// Forget every shared read (sign-out).
+  static void clearSessionCache() {
+    _ownDocReads.clear();
+    _countdownLoad = null;
+    _countdownLoadStartedAt = null;
+  }
+
+  /// The current user's access data from the LOCAL Firestore cache only (no
+  /// network), or null when it isn't cached. Used to paint the shell on a
+  /// returning launch; the server check always follows.
+  Future<UserAccessData?> getCachedUserAccess() async {
+    final user = _auth.currentUser;
+    if (user == null) return null;
+    try {
+      final doc = await _firestore
+          .collection('users')
+          .doc(user.uid)
+          .get(const GetOptions(source: Source.cache));
+      if (!doc.exists) return null;
+      return UserAccessData.fromFirestore(doc.data()!, user.uid);
+    } catch (_) {
+      return null; // not in the local cache
+    }
+  }
+
   /// Get current user's access data
   /// When [forceServer] is true, bypasses Firestore cache to get fresh data.
-  Future<UserAccessData?> getCurrentUserAccess({bool forceServer = false}) async {
+  /// [profileData] is the caller's fresh server copy of `profiles/{uid}`, if
+  /// it already has one, so the cross-check below doesn't read it again.
+  ///
+  /// Null normally means "no access doc OR it couldn't be read". With
+  /// [throwIfServerUnavailable] a failed server read throws instead of
+  /// falling back to the cache, so null means the doc positively does not
+  /// exist on the server (the only case where it is safe to create it).
+  Future<UserAccessData?> getCurrentUserAccess({
+    bool forceServer = false,
+    Map<String, dynamic>? profileData,
+    bool throwIfServerUnavailable = false,
+  }) async {
     final user = _auth.currentUser;
     if (user == null) return null;
 
     try {
-      // Always read from server to avoid stale cached approvalStatus
-      final doc = await _firestore.collection('users').doc(user.uid).get(
-        const GetOptions(source: Source.server),
-      );
+      // Always read from server to avoid stale cached approvalStatus. Both
+      // docs are requested together (one round trip instead of two).
+      final profileRead =
+          profileData == null ? serverDoc('profiles', user.uid) : null;
+      final doc = await serverDoc('users', user.uid);
       if (!doc.exists) return null;
 
       final data = doc.data()!;
@@ -303,40 +420,38 @@ class AccessControlService {
       // Always cross-check profiles.verificationStatus on every login
       // to keep users.approvalStatus in sync with the source of truth
       try {
-        final profileDoc = await _firestore.collection('profiles').doc(user.uid).get(
-          const GetOptions(source: Source.server),
-        );
-        if (profileDoc.exists) {
-          final verificationStatus = profileDoc.data()?['verificationStatus'] as String?;
+        final profile = profileData ?? (await profileRead!).data();
+        if (profile != null) {
+          final verificationStatus = profile['verificationStatus'] as String?;
           debugPrint('🔑 users.approvalStatus=$approvalStatus, profiles.verificationStatus=$verificationStatus');
           final isVerified = verificationStatus == 'approved' || verificationStatus == 'verified';
 
+          // The sync write is not awaited: the corrected value is returned
+          // straight away and the write lands in the background.
           if (isVerified && approvalStatus != 'approved') {
             // Profile verified but users collection out of sync — set approved
             debugPrint('🔑 Syncing users.approvalStatus → approved');
-            await _firestore.collection('users').doc(user.uid).update({
+            _syncUsersDoc(user.uid, {
               'approvalStatus': 'approved',
               'approvedAt': FieldValue.serverTimestamp(),
               'approvedBy': 'system_sync',
               'updatedAt': FieldValue.serverTimestamp(),
             });
-            final correctedDoc = await _firestore.collection('users').doc(user.uid).get(
-              const GetOptions(source: Source.server),
-            );
-            if (!correctedDoc.exists) return null;
-            return UserAccessData.fromFirestore(correctedDoc.data()!, user.uid);
+            return UserAccessData.fromFirestore({
+              ...data,
+              'approvalStatus': 'approved',
+              'approvedAt': Timestamp.now(),
+              'approvedBy': 'system_sync',
+            }, user.uid);
           } else if (!isVerified && approvalStatus == 'approved') {
             // Profile no longer verified but users collection still says approved — revoke
             debugPrint('🔑 Syncing users.approvalStatus → pending (verification revoked)');
-            await _firestore.collection('users').doc(user.uid).update({
+            _syncUsersDoc(user.uid, {
               'approvalStatus': 'pending',
               'updatedAt': FieldValue.serverTimestamp(),
             });
-            final correctedDoc = await _firestore.collection('users').doc(user.uid).get(
-              const GetOptions(source: Source.server),
-            );
-            if (!correctedDoc.exists) return null;
-            return UserAccessData.fromFirestore(correctedDoc.data()!, user.uid);
+            return UserAccessData.fromFirestore(
+                {...data, 'approvalStatus': 'pending'}, user.uid);
           }
         }
       } catch (_) {
@@ -345,6 +460,7 @@ class AccessControlService {
 
       return UserAccessData.fromFirestore(data, user.uid);
     } catch (e) {
+      if (throwIfServerUnavailable) rethrow;
       // Fallback to cache on network error
       try {
         final doc = await _firestore.collection('users').doc(user.uid).get();
@@ -420,6 +536,7 @@ class AccessControlService {
         'notificationsEnabled': false,
         'createdAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
+      invalidateOwnDoc('users', userId);
 
       debugPrint('Pre-sale user registered: ${preSaleEntry.email} '
           'tier=${preSaleTier.displayName} days=${preSaleEntry.numberOfDays} '
@@ -449,6 +566,7 @@ class AccessControlService {
       'notificationsEnabled': false,
       'createdAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
+    invalidateOwnDoc('users', userId);
   }
 
   /// Check and update user's access date based on early access list and tier
@@ -456,27 +574,75 @@ class AccessControlService {
   Future<void> refreshUserAccessDate(String userId, String? email) async {
     // Get current user's tier
     final userDoc = await _firestore.collection('users').doc(userId).get();
-    final tierString = userDoc.data()?['membershipTier'] as String? ?? 'basic';
-    final tier = SubscriptionTierExtension.fromString(tierString);
+    final data = userDoc.data();
+    if (data == null) return;
+    final (:accessDate, :hasEarlyAccess) = await _expectedAccessDate(
+      SubscriptionTierExtension.fromString(
+          data['membershipTier'] as String? ?? 'basic'),
+      email,
+    );
+    // Written only when it changed, instead of on every login.
+    final stored = (data['accessDate'] as Timestamp?)?.toDate();
+    if (stored == accessDate && data['hasEarlyAccess'] == hasEarlyAccess) {
+      return;
+    }
+    await _writeAccessDate(userId, accessDate, hasEarlyAccess);
+  }
 
+  /// Returns [access] with the access date recalculated from the user's tier,
+  /// the early-access list and the latest countdown dates. A changed value is
+  /// persisted in the background, so callers never wait on the write.
+  Future<UserAccessData> reconcileAccessDate(
+      UserAccessData access, String? email) async {
+    final (:accessDate, :hasEarlyAccess) =
+        await _expectedAccessDate(access.membershipTier, email);
+    if (access.accessDate == accessDate &&
+        access.hasEarlyAccess == hasEarlyAccess) {
+      return access;
+    }
+    unawaited(
+      _writeAccessDate(access.userId, accessDate, hasEarlyAccess)
+          .catchError((Object e) {
+        debugPrint('⚠ Access date sync failed for ${access.userId}: $e');
+      }),
+    );
+    return access.copyWith(
+        accessDate: accessDate, hasEarlyAccess: hasEarlyAccess);
+  }
+
+  Future<({DateTime accessDate, bool hasEarlyAccess})> _expectedAccessDate(
+      SubscriptionTier tier, String? email) async {
     var hasEarlyAccess = false;
     if (email != null) {
       hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
     }
-
     // Use earliest available date (early access or tier-based)
-    final DateTime accessDate;
-    if (hasEarlyAccess) {
-      accessDate = earlyAccessDate;
-    } else {
-      accessDate = getAccessDateForSubscriptionTier(tier);
-    }
+    return (
+      accessDate: hasEarlyAccess
+          ? earlyAccessDate
+          : getAccessDateForSubscriptionTier(tier),
+      hasEarlyAccess: hasEarlyAccess,
+    );
+  }
 
+  Future<void> _writeAccessDate(
+      String userId, DateTime accessDate, bool hasEarlyAccess) async {
     await _firestore.collection('users').doc(userId).update({
       'accessDate': Timestamp.fromDate(accessDate),
       'hasEarlyAccess': hasEarlyAccess,
       'updatedAt': FieldValue.serverTimestamp(),
     });
+    invalidateOwnDoc('users', userId);
+  }
+
+  /// Fire-and-forget correction of `users/{uid}`; failures are only logged.
+  void _syncUsersDoc(String userId, Map<String, Object?> fields) {
+    invalidateOwnDoc('users', userId);
+    unawaited(
+      _firestore.collection('users').doc(userId).update(fields).catchError(
+        (Object e) => debugPrint('⚠ users/$userId sync failed: $e'),
+      ),
+    );
   }
 
   /// Update user's membership tier and recalculate access date
@@ -547,6 +713,7 @@ class AccessControlService {
       'approvedBy': adminId,
       'updatedAt': FieldValue.serverTimestamp(),
     });
+    invalidateOwnDoc('users', userId);
   }
 
   /// Reject a user (admin function)

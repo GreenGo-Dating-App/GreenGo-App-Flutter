@@ -65,10 +65,16 @@ class FeatureFlagsService extends ChangeNotifier {
     'emailNotifications': true,
   };
 
-  /// Initialize the service and start listening for updates
-  Future<void> initialize() async {
-    if (_isLoaded) return;
+  Future<void>? _initializing;
 
+  /// Initialize the service and start listening for updates.
+  ///
+  /// Not awaited at startup: until it completes [isEnabled] answers from
+  /// [_defaults], and listeners are notified once the real flags land. Safe to
+  /// call repeatedly; every caller shares the same load.
+  Future<void> initialize() => _initializing ??= _load();
+
+  Future<void> _load() async {
     try {
       // First, try to get the document
       final docRef = _firestore.doc('app_config/feature_flags');
@@ -82,6 +88,7 @@ class FeatureFlagsService extends ChangeNotifier {
       }
 
       _isLoaded = true;
+      notifyListeners();
 
       // Start listening for real-time updates
       _subscription = docRef.snapshots().listen(

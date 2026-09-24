@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -58,10 +59,14 @@ class EventMessageCard extends StatelessWidget {
               height: 110,
               width: double.infinity,
               child: (imageUrl != null && imageUrl.isNotEmpty)
-                  ? Image.network(
-                      imageUrl,
+                  ? CachedNetworkImage(
+                      imageUrl: imageUrl,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => _placeholder(theme),
+                      // The card is 240 wide; decode at that size.
+                      memCacheWidth:
+                          (240 * MediaQuery.of(context).devicePixelRatio)
+                              .round(),
+                      errorWidget: (_, __, ___) => _placeholder(theme),
                     )
                   : _placeholder(theme),
             ),

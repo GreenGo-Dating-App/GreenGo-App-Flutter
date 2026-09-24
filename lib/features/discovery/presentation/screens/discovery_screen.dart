@@ -278,20 +278,46 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     try {
       final firestore = FirebaseFirestore.instance;
 
-      // Load swipe history
-      final swipesSnapshot = await firestore
-          .collection('swipes')
-          .where('userId', isEqualTo: userId)
-          .get();
-
-      // Load active matches to mark matched users
-      final matchesSnapshot = await firestore
-          .collection('matches')
-          .where('isActive', isEqualTo: true)
-          .get();
+      // Every read is per-user, indexed and bounded, and they run in parallel.
+      // (The matches read used to be `isActive == true` with NO user filter —
+      // i.e. every active match in the database on each open.)
+      final results = await Future.wait([
+        // Most recent swipes first (swipes: userId + timestamp desc index).
+        firestore
+            .collection('swipes')
+            .where('userId', isEqualTo: userId)
+            .orderBy('timestamp', descending: true)
+            .limit(2000)
+            .get(),
+        // Active matches on either side (userId1/userId2 + isActive indexes).
+        firestore
+            .collection('matches')
+            .where('userId1', isEqualTo: userId)
+            .where('isActive', isEqualTo: true)
+            .limit(500)
+            .get(),
+        firestore
+            .collection('matches')
+            .where('userId2', isEqualTo: userId)
+            .where('isActive', isEqualTo: true)
+            .limit(500)
+            .get(),
+        // Accepted superLike conversations (visibleTo == null means accepted)
+        firestore
+            .collection('conversations')
+            .where('conversationType', isEqualTo: 'superLike')
+            .where(Filter.or(
+              Filter('userId1', isEqualTo: userId),
+              Filter('userId2', isEqualTo: userId),
+            ))
+            .limit(500)
+            .get(),
+      ]);
+      // Oldest → newest, so the LATEST action per person wins below.
+      final swipeDocs = results[0].docs.reversed.toList();
 
       final matchedUserIds = <String>{};
-      for (final doc in matchesSnapshot.docs) {
+      for (final doc in [...results[1].docs, ...results[2].docs]) {
         final data = doc.data();
         final u1 = data['userId1'] as String?;
         final u2 = data['userId2'] as String?;
@@ -299,15 +325,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         if (u2 == userId && u1 != null) matchedUserIds.add(u1);
       }
 
-      // Load accepted superLike conversations (visibleTo == null means accepted)
-      final superLikeConvSnapshot = await firestore
-          .collection('conversations')
-          .where('conversationType', isEqualTo: 'superLike')
-          .where(Filter.or(
-            Filter('userId1', isEqualTo: userId),
-            Filter('userId2', isEqualTo: userId),
-          ))
-          .get();
+      final superLikeConvSnapshot = results[3];
 
       final acceptedSuperLikeUserIds = <String>{};
       for (final doc in superLikeConvSnapshot.docs) {
@@ -330,7 +348,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         _networkUserIds.addAll(matchedUserIds);
         _networkUserIds.addAll(acceptedSuperLikeUserIds);
 
-        for (final doc in swipesSnapshot.docs) {
+        for (final doc in swipeDocs) {
           final data = doc.data();
           final targetUserId = data['targetUserId'] as String?;
           final actionType = data['actionType'] as String?;

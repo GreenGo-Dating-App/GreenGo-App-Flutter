@@ -1,12 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../../../../core/utils/geo_query.dart';
+import '../../../../core/cache/last_result_cache.dart';
 import '../../domain/entities/external_event.dart';
+import 'geo_ring_scanner.dart';
 
 /// Pages `external_events` **server-ordered** so the app downloads results
 /// already filtered and in order (no client-side global re-sort):
-///   • distance (default) → expanding geohash rings around the user, nearest
-///     first; each `next()` returns the next ring, ordered by exact distance.
+///   • distance (default) → bounded nearest-first geohash rings around the
+///     user ([GeoRingScanner]); each `next()` returns the next ring, ordered by
+///     exact distance.
 ///   • date / rating / reviews → Firestore `orderBy(field)` + cursor pagination.
 /// Optional category filter is a server `where('category', ==)`.
 ///
@@ -18,7 +20,6 @@ class ExternalEventsPager {
     this.category,
     this.userLat,
     this.userLng,
-    this.preferCache = false,
     FirebaseFirestore? firestore,
   }) : _db = firestore ?? FirebaseFirestore.instance;
 
@@ -29,13 +30,32 @@ class ExternalEventsPager {
   final double? userLat;
   final double? userLng;
 
-  /// When true, reads come from the LOCAL cache only (instant paint on a warm
-  /// session); a cold cache yields empty pages. See SessionCacheGate.
-  final bool preferCache;
+  /// [LastResultCache] key for the first page of a given view.
+  static String cacheKey(String source, String sort, String? category) =>
+      'ext_${source}_${sort}_${category ?? ''}';
 
-  GetOptions get _getOpts => GetOptions(
-        source: preferCache ? Source.cache : Source.serverAndCache,
-      );
+  /// Records the first server page of this view so the next open paints it
+  /// instantly (see [loadCached]).
+  Future<void> saveFirstPage(List<ExternalEvent> page) =>
+      LastResultCache.saveIds(
+          cacheKey(source, sort, category), page.map((e) => e.id));
+
+  /// The first page last shown for this view, read by id from the local cache
+  /// and re-checked against today's date / image gates. Empty when nothing
+  /// usable is cached. Never throws.
+  Future<List<ExternalEvent>> loadCached() async {
+    try {
+      final docs = await LastResultCache.loadDocs(
+          cacheKey(source, sort, category), _db.collection('external_events'));
+      return docs
+          .map((d) => ExternalEvent.fromMap(d.id, d.data() ?? const {}))
+          .where(_imageOk)
+          .where(_dateOk)
+          .toList();
+    } catch (_) {
+      return const [];
+    }
+  }
 
   static const int pageSize = 24;
 
@@ -43,16 +63,13 @@ class ExternalEventsPager {
   DocumentSnapshot<Map<String, dynamic>>? _cursor;
   bool _fieldDone = false;
 
-  // Distance-mode (expanding rings).
-  double _radiusM = 50000; // 50 km first ring
-  static const double _maxRadiusM = 20000000; // ~global
-  bool _distDone = false;
-  final Set<String> _seen = {};
+  // Distance mode: created on the first distance page.
+  GeoRingScanner<ExternalEvent>? _scanner;
 
   bool get _useDistance =>
       sort == 'distance' && userLat != null && userLng != null;
 
-  bool get hasMore => _useDistance ? !_distDone : !_fieldDone;
+  bool get hasMore => _useDistance ? (_scanner?.hasMore ?? true) : !_fieldDone;
 
   /// Only show sources that must carry an image when one is present.
   bool _imageOk(ExternalEvent e) {
@@ -127,7 +144,7 @@ class ExternalEventsPager {
         // like "1" (they sort before today). No new index — same orderBy field.
         q = q.startAt([_todayStr]);
       }
-      final snap = await q.get(_getOpts);
+      final snap = await q.get();
       if (snap.docs.isEmpty) {
         _fieldDone = true;
         break;
@@ -142,45 +159,19 @@ class ExternalEventsPager {
     return out;
   }
 
-  Future<List<ExternalEvent>> _nextDistance() async {
-    final out = <ExternalEvent>[];
-    // Expand rings until we collect something or cover the globe.
-    while (out.isEmpty && !_distDone) {
-      final radius = _radiusM;
-      final bounds = GeoQuery.queryBounds(userLat!, userLng!, radius);
-      final snaps = await Future.wait(bounds.map((b) {
-        return _base
-            .orderBy('geohash')
-            .startAt([b[0]]).endAt([b[1]]).get(_getOpts);
-      }));
-      final ring = <ExternalEvent>[];
-      for (final s in snaps) {
-        for (final doc in s.docs) {
-          if (_seen.contains(doc.id)) continue;
-          final e = ExternalEvent.fromFirestore(doc);
-          if (e.lat == null || e.lng == null) continue;
-          if (!_imageOk(e)) continue;
-          if (!_dateOk(e)) continue;
-          final d =
-              GeoQuery.distanceMeters(userLat!, userLng!, e.lat!, e.lng!);
-          // Only emit within the current radius; leave farther ones (and don't
-          // mark them seen) for a later, larger ring.
-          if (d <= radius) {
-            _seen.add(doc.id);
-            ring.add(e);
-          }
-        }
-      }
-      ring.sort((a, b) => GeoQuery.distanceMeters(userLat!, userLng!, a.lat!, a.lng!)
-          .compareTo(
-              GeoQuery.distanceMeters(userLat!, userLng!, b.lat!, b.lng!)));
-      out.addAll(ring);
-      if (radius >= _maxRadiusM) {
-        _distDone = true;
-      } else {
-        _radiusM = (radius * 3).clamp(0, _maxRadiusM).toDouble();
-      }
-    }
-    return out;
+  Future<List<ExternalEvent>> _nextDistance() {
+    final scanner = _scanner ??= GeoRingScanner<ExternalEvent>(
+      base: _base,
+      lat: userLat!,
+      lng: userLng!,
+      perQueryLimit: pageSize * 2,
+      parse: (doc) {
+        final e = ExternalEvent.fromFirestore(doc);
+        return _imageOk(e) && _dateOk(e) ? e : null;
+      },
+      position: (e) =>
+          (e.lat == null || e.lng == null) ? null : (lat: e.lat!, lng: e.lng!),
+    );
+    return scanner.next();
   }
 }

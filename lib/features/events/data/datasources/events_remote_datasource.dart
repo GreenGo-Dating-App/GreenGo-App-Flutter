@@ -9,6 +9,7 @@ import '../../domain/entities/event.dart';
 import '../../domain/entities/event_country_stat.dart';
 import '../models/event_attendee_model.dart';
 import '../models/event_model.dart';
+import 'geo_ring_scanner.dart';
 
 /// Result of a tier-aware join: whether the attendee is going or waitlisted,
 /// and (when waitlisted) their 1-based position in the queue.
@@ -226,6 +227,10 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   /// scheduled -> published once publishAt passes (scheduled query). Not needed
   /// for correctness — the client isLive gate already auto-publishes.
   static const List<String> _liveStatuses = ['published', 'scheduled'];
+
+  /// Read-round budget for [getNearbyCommunityEvents] (each round is up to 9
+  /// parallel limited geohash-range queries).
+  static const int _maxNearbyRounds = 12;
 
   /// Cache-then-network read options (see communities datasource): a preferCache
   /// pass reads ONLY the local cache for an instant first paint; callers do a
@@ -886,6 +891,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .collectionGroup('attendees')
           .where('userId', isEqualTo: userId)
           .where('status', isEqualTo: RSVPStatus.going.name)
+          .limit(500) // Bounded: caps the id fan-out below at 50 batches.
           .get(_opts(preferCache));
 
       // Extract event IDs from the attendee documents
@@ -906,17 +912,18 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final additionalIds =
           attendingEventIds.difference(organizedIds).toList();
 
-      // Fetch attending events by ID (batched)
-      final attendingEvents = <Event>[];
-      for (var i = 0; i < additionalIds.length; i += 10) {
-        final batch = additionalIds.skip(i).take(10).toList();
-        final batchSnapshot = await _eventsCollection
-            .where(FieldPath.documentId, whereIn: batch)
-            .get();
-        attendingEvents.addAll(
-          batchSnapshot.docs.map(EventModel.fromFirestore),
-        );
-      }
+      // Fetch attending events by ID, whereIn batches of 10 in parallel.
+      final batchSnapshots = await Future.wait([
+        for (var i = 0; i < additionalIds.length; i += 10)
+          _eventsCollection
+              .where(FieldPath.documentId,
+                  whereIn: additionalIds.skip(i).take(10).toList())
+              .get(_opts(preferCache)),
+      ]);
+      final attendingEvents = <Event>[
+        for (final snap in batchSnapshots)
+          ...snap.docs.map(EventModel.fromFirestore),
+      ];
 
       // Combine and sort by start date.
       final combined = [...organizedEvents, ...attendingEvents];
@@ -981,37 +988,44 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     bool preferCache = false,
   }) async {
     try {
-      final out = <String, Event>{};
-      // Expanding rings: 100km → 300 → 900 → 2700 → global, until we have enough.
-      var radiusM = 100000.0;
-      const maxRadiusM = 20000000.0;
       final now = DateTime.now();
-      while (out.length < limit && radiusM <= maxRadiusM) {
-        final bounds = GeoQuery.queryBounds(lat, lng, radiusM);
-        final snaps = await Future.wait(bounds.map((b) => _eventsCollection
-            .where('status', whereIn: _liveStatuses)
-            .orderBy('geohash')
-            .startAt([b[0]]).endAt([b[1]]).get(_opts(preferCache))));
-        for (final s in snaps) {
-          for (final doc in s.docs) {
-            if (out.containsKey(doc.id)) continue;
-            final e = EventModel.fromFirestore(doc);
-            if (!e.isPublic) continue;
-            if (!e.isLive) continue; // scheduled-not-yet-due hidden
-            if (e.endDate.isBefore(now)) continue; // upcoming/ongoing only
-            out[doc.id] = e;
-          }
-        }
-        if (radiusM >= maxRadiusM) break;
-        radiusM *= 3;
+      // Bounded nearest-first scan: limited reads per geohash range, each
+      // ring reads only its new annulus, rings come back in true-distance
+      // order — so we can stop as soon as the closest [limit] are in hand.
+      final scanner = GeoRingScanner<Event>(
+        base: _eventsCollection.where('status', whereIn: _liveStatuses),
+        lat: lat,
+        lng: lng,
+        startRadiusM: 100000,
+        perQueryLimit: limit.clamp(20, 100),
+        maxRoundsPerCall: _maxNearbyRounds,
+        options: _opts(preferCache),
+        parse: (doc) {
+          final e = EventModel.fromFirestore(doc);
+          if (!e.isPublic) return null;
+          if (!e.isLive) return null; // scheduled-not-yet-due hidden
+          if (e.endDate.isBefore(now)) return null; // upcoming/ongoing only
+          return e;
+        },
+        position: (e) => (e.latitude == null || e.longitude == null)
+            ? null
+            : (lat: e.latitude!, lng: e.longitude!),
+      );
+      final out = <Event>[];
+      // Total latency/read cap across calls (each call is capped too): a
+      // sparse table, or one full of past events, would otherwise walk ring
+      // after ring.
+      while (out.length < limit &&
+          scanner.hasMore &&
+          scanner.rounds < _maxNearbyRounds) {
+        out.addAll(await scanner.next());
       }
-      final list = out.values.toList();
-      double dist(Event e) {
-        if (e.latitude == null || e.longitude == null) return double.infinity;
-        return GeoQuery.distanceMeters(lat, lng, e.latitude!, e.longitude!);
-      }
-      list.sort((a, b) => dist(a).compareTo(dist(b)));
-      return list.take(limit).toList();
+      // Rings are already closest-first; this only fixes up best-effort
+      // pieces (budget cut, or the global ring near the poles).
+      double dist(Event e) =>
+          GeoQuery.distanceMeters(lat, lng, e.latitude!, e.longitude!);
+      out.sort((a, b) => dist(a).compareTo(dist(b)));
+      return out.take(limit).toList();
     } catch (e) {
       debugPrint('Error getting nearby community events: $e');
       return [];

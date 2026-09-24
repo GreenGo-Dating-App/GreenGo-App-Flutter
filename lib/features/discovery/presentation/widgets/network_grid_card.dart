@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -53,6 +55,43 @@ class NetworkGridCard extends StatefulWidget {
 
   /// Long-press anywhere on the tile (opens the private group-tag sheet).
   final VoidCallback onLongPressTag;
+
+  /// Width the tile decodes (memory) and stores (disk) its photo at.
+  static const int photoCacheWidth = 600;
+
+  /// The exact image provider the tile renders. Precaching anything else (e.g.
+  /// a bare CachedNetworkImageProvider) lands under a different cache key and
+  /// warms nothing the tile can use.
+  static ImageProvider photoProvider(String url) => ResizeImage.resizeIfNeeded(
+        photoCacheWidth,
+        null,
+        CachedNetworkImageProvider(url, maxWidth: photoCacheWidth),
+      );
+
+  /// Downloads + decodes [url] into the cache the tile reads from, so the tile
+  /// paints instantly. Needs no BuildContext (usable from a background
+  /// prefetch). Never throws.
+  static Future<void> precachePhoto(String url) {
+    if (url.isEmpty) return Future<void>.value();
+    final completer = Completer<void>();
+    try {
+      final stream = photoProvider(url).resolve(ImageConfiguration.empty);
+      late final ImageStreamListener listener;
+      void done() {
+        if (!completer.isCompleted) completer.complete();
+        stream.removeListener(listener);
+      }
+
+      listener = ImageStreamListener(
+        (_, __) => done(),
+        onError: (_, __) => done(),
+      );
+      stream.addListener(listener);
+    } catch (_) {
+      if (!completer.isCompleted) completer.complete();
+    }
+    return completer.future;
+  }
 
   @override
   State<NetworkGridCard> createState() => _NetworkGridCardState();
@@ -124,8 +163,8 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
           CachedNetworkImage(
             imageUrl: currentPhotoUrl,
             fit: BoxFit.cover,
-            memCacheWidth: 600,
-            maxWidthDiskCache: 600,
+            memCacheWidth: NetworkGridCard.photoCacheWidth,
+            maxWidthDiskCache: NetworkGridCard.photoCacheWidth,
             fadeInDuration: const Duration(milliseconds: 200),
             placeholder: (context, url) => Container(
               color: AppColors.backgroundCard,

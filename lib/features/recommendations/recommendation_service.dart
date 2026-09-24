@@ -41,13 +41,15 @@ class RecommendationService {
   static const double _jitterAmplitude = 1.5;
 
   /// How many `profiles` docs to pull per bounded batch (kept small/cheap).
-  static const int _poolBatch = 80;
+  static const int _poolBatch = 40;
 
   /// Returns up to [limit] recommended [Profile]s for [userId], ranked by
   /// relevance to [me]. [lat]/[lng] (when provided) drive the proximity bonus.
   ///
-  /// Pool fetch (cheap, index-free): a same-city equality batch (when the user
-  /// has a city) merged with a plain bounded batch — both capped at [_poolBatch].
+  /// Pool fetch (cheap, index-free, in parallel): a same-city and a
+  /// same-country equality batch, each capped at [_poolBatch]. Only when both
+  /// come back too thin is a plain bounded batch read as a top-up (that batch
+  /// is simply the first docs by id — arbitrary, so it is the last resort).
   /// Self, ghost-mode, admin/support and non-active accounts are excluded.
   Future<List<Profile>> recommendPeople({
     required String userId,
@@ -55,41 +57,49 @@ class RecommendationService {
     double? lat,
     double? lng,
     int limit = 15,
+    bool Function(Profile profile)? isVisible,
   }) async {
     final pool = <String, Profile>{};
 
+    // [isVisible] is the caller's extra visibility rule (Explore passes the
+    // shared discovery predicate: blocked, incognito, testers, incomplete).
     void ingest(Iterable<QueryDocumentSnapshot<Map<String, dynamic>>> docs) {
       for (final doc in docs) {
         if (pool.containsKey(doc.id)) continue;
         final profile = _parse(doc.id, doc.data(), userId);
-        if (profile != null) pool[doc.id] = profile;
+        if (profile == null) continue;
+        if (isVisible != null && !isVisible(profile)) continue;
+        pool[doc.id] = profile;
       }
     }
 
-    // 1) Same-city batch — a single-field equality query (auto-indexed).
+    Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> read(
+        Query<Map<String, dynamic>> q) async {
+      try {
+        return (await q.limit(_poolBatch).get()).docs;
+      } catch (_) {
+        return const []; // Non-fatal — the other batch may still fill the pool.
+      }
+    }
+
+    // 1) Same-city + same-country batches — single-field equality queries
+    //    (auto-indexed), read in parallel.
+    final profiles = _firestore.collection('profiles');
     final myCity = me.effectiveLocation.city.trim();
-    if (myCity.isNotEmpty) {
-      try {
-        final snap = await _firestore
-            .collection('profiles')
-            .where('location.city', isEqualTo: myCity)
-            .limit(_poolBatch)
-            .get();
-        ingest(snap.docs);
-      } catch (_) {
-        // Non-fatal — fall through to the general batch.
-      }
+    final myCountry = me.effectiveLocation.country.trim();
+    final batches = await Future.wait([
+      if (myCity.isNotEmpty)
+        read(profiles.where('location.city', isEqualTo: myCity)),
+      if (myCountry.isNotEmpty && myCountry.toLowerCase() != 'unknown')
+        read(profiles.where('location.country', isEqualTo: myCountry)),
+    ]);
+    for (final docs in batches) {
+      ingest(docs);
     }
 
-    // 2) General bounded batch — a plain capped read (auto-indexed).
-    if (pool.length < _poolBatch) {
-      try {
-        final snap =
-            await _firestore.collection('profiles').limit(_poolBatch).get();
-        ingest(snap.docs);
-      } catch (_) {
-        // Keep whatever we have.
-      }
+    // 2) General bounded batch — only when the local pools are too thin.
+    if (pool.length < limit) {
+      ingest(await read(profiles));
     }
 
     if (pool.isEmpty) return const <Profile>[];

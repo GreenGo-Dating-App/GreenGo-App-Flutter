@@ -33,6 +33,51 @@ class LocationShareService {
     }
   }
 
+  /// The OS's cached last fix — instant, never prompts for permission, never
+  /// throws. Null when permission isn't granted or no fix is cached. For
+  /// screens that must render immediately and refine later.
+  Future<Position?> getLastKnownPositionFast() async {
+    try {
+      final permission = await Geolocator.checkPermission();
+      if (permission == LocationPermission.denied ||
+          permission == LocationPermission.deniedForever) {
+        return null;
+      }
+      return await Geolocator.getLastKnownPosition()
+          .timeout(const Duration(seconds: 2));
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// A fresh MEDIUM-accuracy fix (city-block precision, typically well under a
+  /// second vs. several for HIGH) with the same permission handling as
+  /// [getCurrentPosition]. Good enough for distance ordering; falls back to the
+  /// last known position. Null if unavailable / denied; never throws.
+  Future<Position?> getApproximatePosition() async {
+    try {
+      if (!await Geolocator.isLocationServiceEnabled()) return null;
+      var permission = await Geolocator.checkPermission();
+      if (permission == LocationPermission.denied) {
+        permission = await Geolocator.requestPermission();
+      }
+      if (permission == LocationPermission.denied ||
+          permission == LocationPermission.deniedForever) {
+        return null;
+      }
+      return await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.medium,
+        timeLimit: const Duration(seconds: 8),
+      );
+    } catch (_) {
+      try {
+        return await Geolocator.getLastKnownPosition();
+      } catch (_) {
+        return null;
+      }
+    }
+  }
+
   /// Builds the message payload for a shared location.
   /// `content` is "lat,lng" (human/preview friendly); metadata carries doubles.
   static Map<String, dynamic> metadataFor(double lat, double lng) => {

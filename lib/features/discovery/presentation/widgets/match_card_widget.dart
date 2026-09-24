@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -52,12 +53,13 @@ class MatchCardWidget extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(AppDimensions.radiusS),
                     child: profile?.photoUrls.isNotEmpty == true
-                        ? Image.network(
-                            profile!.photoUrls.first,
+                        ? CachedNetworkImage(
+                            imageUrl: profile!.photoUrls.first,
                             width: 64,
                             height: 64,
                             fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) =>
+                            memCacheWidth: 192,
+                            errorWidget: (context, url, error) =>
                                 _buildPlaceholder(),
                           )
                         : _buildPlaceholder(),

@@ -70,54 +70,48 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     required MatchPreferences preferences,
     int limit = 20,
   }) async {
-    // Get current user's profile
-    final userDoc = await firestore.collection('profiles').doc(userId).get();
+    final hasCountries = preferences.preferredCountries.isNotEmpty;
+
+    // Everything that does not depend on the viewer's profile starts NOW, in
+    // parallel with the profile read (these used to run one after another).
+    final userDocFuture = firestore.collection('profiles').doc(userId).get();
+    final travelerIdsFuture = _getTravelerIdsInCountries(preferences: preferences);
+    final worldwideFuture = hasCountries ? null : _randomWorldwideScan();
+    // Mark its error as observed up-front: if anything below throws before it
+    // is awaited (profile read/parse), it must not surface as an unhandled
+    // async error. A later `await` still receives the error normally.
+    worldwideFuture?.ignore();
+
+    final userDoc = await userDocFuture;
     if (!userDoc.exists) throw Exception('User profile not found');
 
     final userProfile = ProfileModel.fromFirestore(userDoc);
-    final userLoc = userProfile.effectiveLocation;
-    final isCurrentUserAdmin = userProfile.isAdmin || userProfile.isSupport;
 
-    // Try pre-computed pools first for targeted candidate fetch
-    final poolCandidateIds = await _getPoolCandidateIds(
-      userProfile: userProfile,
-      preferences: preferences,
-    );
+    // Pre-computed pools are only consulted with a country filter.
+    final poolCandidateIds = hasCountries
+        ? await _getPoolCandidateIds(
+            userProfile: userProfile,
+            preferences: preferences,
+          )
+        : null;
 
     List<QueryDocumentSnapshot<Map<String, dynamic>>> profileDocs;
 
     if (poolCandidateIds != null && poolCandidateIds.isNotEmpty) {
       // Pool path: fetch pool candidates + supplement with direct country scan
       // Pool only contains verified profiles with photos — direct scan catches the rest
-      final travelerIds = await _getTravelerIdsInCountries(
-        userProfile: userProfile,
-        preferences: preferences,
-      );
-      final allIds = {...poolCandidateIds, ...travelerIds};
-
-      // Also do a direct country scan to catch profiles not in pools
-      if (preferences.preferredCountries.isNotEmpty) {
-        final countries = preferences.preferredCountries;
-        final countriesLower = countries.map((c) => c.toLowerCase()).toList();
-        final primaryQuery = await firestore
-            .collection('profiles')
-            .where('location.country', whereIn: countries)
-            .limit(500)
-            .get();
-        for (final doc in primaryQuery.docs) {
-          allIds.add(doc.id);
-        }
-        try {
-          final secondaryQuery = await firestore
-              .collection('profiles')
-              .where('location.countryLower', whereIn: countriesLower)
-              .limit(500)
-              .get();
-          for (final doc in secondaryQuery.docs) {
-            allIds.add(doc.id);
-          }
-        } catch (_) {}
-      }
+      final results = await Future.wait([
+        travelerIdsFuture,
+        _countryScan(preferences.preferredCountries, includeUnknown: false),
+      ]);
+      final travelerIds = results[0] as List<String>;
+      final scanned =
+          results[1] as List<QueryDocumentSnapshot<Map<String, dynamic>>>;
+      final allIds = {
+        ...poolCandidateIds,
+        ...travelerIds,
+        ...scanned.map((d) => d.id),
+      };
 
       final idList = allIds.toList();
       debugPrint('[Matching] Using pool: ${poolCandidateIds.length} pool + ${idList.length - poolCandidateIds.length} extra = ${idList.length}');
@@ -128,87 +122,19 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       // refresh gives a different set of worldwide profiles.
       debugPrint('[Matching] Pool unavailable, falling back to full scan');
 
-      if (preferences.preferredCountries.isEmpty) {
-        // No country filter: random worldwide scan (closest 500 via random pivot)
-        final randomKey = _generateRandomDocId();
-        debugPrint('[Matching] Random worldwide mode — pivot: $randomKey');
-        final queryA = await firestore
-            .collection('profiles')
-            .where(FieldPath.documentId, isGreaterThanOrEqualTo: randomKey)
-            .limit(250)
-            .get();
-        final queryB = await firestore
-            .collection('profiles')
-            .where(FieldPath.documentId, isLessThan: randomKey)
-            .limit(250)
-            .get();
-        profileDocs = [...queryA.docs, ...queryB.docs];
-        debugPrint('[Matching] Random scan: ${queryA.docs.length} + ${queryB.docs.length} = ${profileDocs.length}');
+      if (!hasCountries) {
+        profileDocs = await worldwideFuture!;
       } else {
-        // Country filter active: query both location.country and location.countryLower
-        // to handle locale-dependent country names from geocoding
-        final countries = preferences.preferredCountries;
-        final countriesLower = countries.map((c) => c.toLowerCase()).toList();
-
-        // Primary query: exact match on location.country (e.g., "Italy")
-        final primaryQuery = await firestore
-            .collection('profiles')
-            .where('location.country', whereIn: countries)
-            .limit(500)
-            .get();
-
-        // Secondary query: lowercase match on location.countryLower (e.g., "italia", "italy")
-        // This catches profiles saved with geocoding in a different locale
-        QuerySnapshot<Map<String, dynamic>>? secondaryQuery;
-        try {
-          secondaryQuery = await firestore
-              .collection('profiles')
-              .where('location.countryLower', whereIn: countriesLower)
-              .limit(500)
-              .get();
-        } catch (_) {
-          // countryLower field may not exist yet on older profiles
-        }
-
-        // Tertiary query: profiles with unknown/empty country (e.g. users who
-        // haven't finished setting their location). Without this they'd be
-        // excluded by the country whereIn and invisible to everyone.
-        QuerySnapshot<Map<String, dynamic>>? unknownQuery;
-        try {
-          unknownQuery = await firestore
-              .collection('profiles')
-              .where('location.country', whereIn: ['Unknown', ''])
-              .limit(200)
-              .get();
-        } catch (_) {
-          // ignore — best-effort supplement
-        }
-
-        // Merge results, dedup by doc ID
-        final seenIds = <String>{};
-        profileDocs = [];
-        for (final doc in primaryQuery.docs) {
-          if (seenIds.add(doc.id)) profileDocs.add(doc);
-        }
-        if (secondaryQuery != null) {
-          for (final doc in secondaryQuery.docs) {
-            if (seenIds.add(doc.id)) profileDocs.add(doc);
-          }
-        }
-        if (unknownQuery != null) {
-          for (final doc in unknownQuery.docs) {
-            if (seenIds.add(doc.id)) profileDocs.add(doc);
-          }
-        }
-        debugPrint('[Matching] Country-filtered scan: ${profileDocs.length} profiles for $countries');
+        profileDocs = await _countryScan(
+          preferences.preferredCountries,
+          includeUnknown: true,
+        );
+        debugPrint('[Matching] Country-filtered scan: ${profileDocs.length} profiles for ${preferences.preferredCountries}');
       }
 
       // Merge travelers that may not be in the first 500 docs
       final existingIds = profileDocs.map((d) => d.id).toSet();
-      final travelerIds = await _getTravelerIdsInCountries(
-        userProfile: userProfile,
-        preferences: preferences,
-      );
+      final travelerIds = await travelerIdsFuture;
       final missingTravelerIds = travelerIds.where((id) => !existingIds.contains(id)).toList();
       if (missingTravelerIds.isNotEmpty) {
         debugPrint('[Matching] Adding ${missingTravelerIds.length} missing travelers to fallback scan');
@@ -217,142 +143,92 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       }
     }
 
-    final candidates = <MatchCandidate>[];
-    final now = DateTime.now();
+    // Parsing + scoring hundreds of profiles is the expensive part, so it runs
+    // on a background isolate (plain maps in, plain entities out).
+    final request = CandidateBuildRequest(
+      userId: userId,
+      viewerData: userDoc.data()!,
+      docIds: [for (final d in profileDocs) d.id],
+      docData: [for (final d in profileDocs) d.data()],
+      minAge: preferences.minAge,
+      maxAge: preferences.maxAge,
+      preferredGenders: preferences.preferredGenders,
+      applyDistanceCap: hasCountries,
+      maxDistance: preferences.maxDistance,
+      dealBreakerInterests: preferences.dealBreakerInterests,
+    );
+    return buildCandidatesOffThread(request);
+  }
 
-    for (final doc in profileDocs) {
-      // Skip self
-      if (doc.id == userId) continue;
+  /// Random worldwide slice (no country filter): two bounded reads either side
+  /// of a random document-id pivot, fetched in parallel.
+  Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>>
+      _randomWorldwideScan() async {
+    final randomKey = _generateRandomDocId();
+    debugPrint('[Matching] Random worldwide mode — pivot: $randomKey');
+    final snaps = await Future.wait([
+      firestore
+          .collection('profiles')
+          .where(FieldPath.documentId, isGreaterThanOrEqualTo: randomKey)
+          .limit(250)
+          .get(),
+      firestore
+          .collection('profiles')
+          .where(FieldPath.documentId, isLessThan: randomKey)
+          .limit(250)
+          .get(),
+    ]);
+    debugPrint('[Matching] Random scan: ${snaps[0].docs.length} + ${snaps[1].docs.length}');
+    return [...snaps[0].docs, ...snaps[1].docs];
+  }
 
+  /// Country-filtered scan, all queries in parallel and de-duplicated:
+  ///  * exact `location.country` (e.g. "Italy"),
+  ///  * `location.countryLower` (profiles geocoded in another locale),
+  ///  * optionally profiles with an unknown/empty country, which the country
+  ///    `whereIn` would otherwise make invisible to everyone.
+  Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> _countryScan(
+    List<String> countries, {
+    required bool includeUnknown,
+  }) async {
+    final countriesLower = countries.map((c) => c.toLowerCase()).toList();
+    Future<QuerySnapshot<Map<String, dynamic>>?> optional(
+        Future<QuerySnapshot<Map<String, dynamic>>> q) async {
       try {
-        final candidateProfile = ProfileModel.fromFirestore(doc);
-        final nick = candidateProfile.nickname;
-        final isTraveler = candidateProfile.isTravelerActive;
-
-        // Skip explicitly suspended/banned/deleted profiles
-        final status = candidateProfile.accountStatus.toLowerCase();
-        if (status == 'suspended' || status == 'banned' || status == 'deleted') {
-          if (isTraveler) debugPrint('[Matching] TRAVELER $nick EXCLUDED: account status=$status');
-          continue;
-        }
-
-        // Admin/support profiles bypass all filters — always visible
-        final isPrivileged = candidateProfile.isAdmin || candidateProfile.isSupport;
-
-        // Admin users see ALL profiles (bypass verification, photo, age, gender, distance filters)
-        if (isCurrentUserAdmin) {
-          // Admin sees everyone — skip all filters
-        } else {
-          // Users are visible immediately after registration — no verification or photo gate
-          // Verified badge is shown in the UI but does not block discovery visibility
-
-          // Apply age filter (skip for admin/support candidates)
-          final age = candidateProfile.age;
-          if (!isPrivileged && age > 0 && (age < preferences.minAge || age > preferences.maxAge)) {
-            if (isTraveler) debugPrint('[Matching] TRAVELER $nick EXCLUDED: age $age outside ${preferences.minAge}-${preferences.maxAge}');
-            continue;
-          }
-
-          // Apply gender filter (skip for admin/support candidates)
-          if (!isPrivileged && preferences.preferredGenders.isNotEmpty) {
-            final gender = candidateProfile.gender;
-            if (gender.isNotEmpty &&
-                !preferences.preferredGenders
-                    .map((g) => g.toLowerCase())
-                    .contains(gender.toLowerCase())) {
-              if (isTraveler) debugPrint('[Matching] TRAVELER $nick EXCLUDED: gender $gender not in ${preferences.preferredGenders}');
-              continue;
-            }
-          }
-        }
-        if (isTraveler) debugPrint('[Matching] TRAVELER $nick PASSED all matching filters');
-
-        // Apply distance filter (skip for admin/support candidates and admin users)
-        final candidateLoc = candidateProfile.effectiveLocation;
-        var distance = 0.0;
-        if (!isPrivileged && !isCurrentUserAdmin &&
-            userLoc.latitude != 0 &&
-            userLoc.longitude != 0 &&
-            candidateLoc.latitude != 0 &&
-            candidateLoc.longitude != 0) {
-          distance = featureEngineer.calculateDistance(
-            userLoc.latitude,
-            userLoc.longitude,
-            candidateLoc.latitude,
-            candidateLoc.longitude,
-          );
-
-          // When no country filter is active, skip distance filter so users
-          // see people from around the world sorted by distance.
-          if (preferences.preferredCountries.isNotEmpty && distance > preferences.maxDistance) {
-            continue;
-          }
-        }
-
-        // Apply deal-breaker interests (skip for admin/support and admin users)
-        if (!isPrivileged && !isCurrentUserAdmin && preferences.dealBreakerInterests.isNotEmpty) {
-          final hasAllDealBreakers = preferences.dealBreakerInterests.every(
-            candidateProfile.interests.contains,
-          );
-          if (!hasAllDealBreakers) continue;
-        }
-
-        // Calculate compatibility score
-        // Admin/support candidates always show 100% compatibility
-        MatchScore matchScore;
-        if (isPrivileged) {
-          matchScore = MatchScore(
-            userId1: userId,
-            userId2: candidateProfile.userId,
-            overallScore: 100.0,
-            breakdown: const ScoreBreakdown(
-              locationScore: 100.0,
-              ageCompatibilityScore: 100.0,
-              interestOverlapScore: 100.0,
-              languageScore: 100.0,
-            ),
-            calculatedAt: now,
-          );
-        } else {
-          try {
-            matchScore = compatibilityScorer.calculateScore(
-              profile1: userProfile,
-              profile2: candidateProfile,
-            );
-          } catch (_) {
-            // If scoring fails, use a default neutral score
-            matchScore = MatchScore(
-              userId1: userId,
-              userId2: candidateProfile.userId,
-              overallScore: 50.0,
-              breakdown: const ScoreBreakdown(
-                locationScore: 50.0,
-                ageCompatibilityScore: 50.0,
-                interestOverlapScore: 50.0,
-                languageScore: 50.0,
-              ),
-              calculatedAt: now,
-            );
-          }
-        }
-
-        candidates.add(MatchCandidate(
-          profile: candidateProfile,
-          matchScore: matchScore,
-          distance: distance,
-          suggestedAt: now,
-          isSuperLike: matchScore.overallScore >= 80.0,
-        ));
-      } catch (e) {
-        continue;
+        return await q;
+      } catch (_) {
+        return null; // best-effort supplement (field may not exist yet)
       }
     }
 
-    // Shuffle candidates randomly so users see a different order each time
-    candidates.shuffle(Random());
+    final snaps = await Future.wait([
+      firestore
+          .collection('profiles')
+          .where('location.country', whereIn: countries)
+          .limit(500)
+          .get(),
+      optional(firestore
+          .collection('profiles')
+          .where('location.countryLower', whereIn: countriesLower)
+          .limit(500)
+          .get()),
+      if (includeUnknown)
+        optional(firestore
+            .collection('profiles')
+            .where('location.country', whereIn: ['Unknown', ''])
+            .limit(200)
+            .get()),
+    ]);
 
-    // Return ALL candidates (no limit) for endless scrolling
-    return candidates;
+    final seenIds = <String>{};
+    final out = <QueryDocumentSnapshot<Map<String, dynamic>>>[];
+    for (final snap in snaps) {
+      if (snap == null) continue;
+      for (final doc in snap.docs) {
+        if (seenIds.add(doc.id)) out.add(doc);
+      }
+    }
+    return out;
   }
 
   /// Try to get candidate user IDs from pre-computed pools.
@@ -422,7 +298,6 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
   /// Uses single-field query (isTraveler only) to avoid requiring a composite Firestore index,
   /// then filters by country and expiry in memory.
   Future<List<String>> _getTravelerIdsInCountries({
-    required Profile userProfile,
     required MatchPreferences preferences,
   }) async {
     try {
@@ -605,4 +480,199 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       Iterable.generate(20, (_) => chars.codeUnitAt(rng.nextInt(chars.length))),
     );
   }
+}
+
+/// Plain-data input for [buildCandidatesOffThread]. Holds only maps, strings
+/// and numbers so it can cross an isolate boundary.
+class CandidateBuildRequest {
+  const CandidateBuildRequest({
+    required this.userId,
+    this.viewerData = const {},
+    this.viewer,
+    required this.docIds,
+    required this.docData,
+    this.minAge = 18,
+    this.maxAge = 99,
+    this.preferredGenders = const [],
+    this.applyDistanceCap = false,
+    this.maxDistance = 99999,
+    this.dealBreakerInterests = const [],
+    this.shuffle = true,
+  });
+
+  final String userId;
+
+  /// The viewer's raw `profiles/{userId}` data (ignored when [viewer] is set).
+  final Map<String, dynamic> viewerData;
+
+  /// The viewer's already-parsed profile, when the caller has one.
+  final Profile? viewer;
+
+  /// Candidate document ids and their raw data, index-aligned.
+  final List<String> docIds;
+  final List<Map<String, dynamic>> docData;
+
+  final int minAge;
+  final int maxAge;
+  final List<String> preferredGenders;
+
+  /// Only a country-filtered search caps by [maxDistance]; worldwide browsing
+  /// shows everyone sorted by distance.
+  final bool applyDistanceCap;
+  final double maxDistance;
+  final List<String> dealBreakerInterests;
+
+  /// Shuffle the result (the matching feed's historical behaviour).
+  final bool shuffle;
+}
+
+/// Parses, filters and scores candidate profiles on a background isolate.
+///
+/// Falls back to the calling isolate if the payload cannot be sent (e.g. an
+/// unexpected non-sendable value inside a document), so it never fails where
+/// the old inline loop would have succeeded. On web `compute` already runs
+/// inline.
+Future<List<MatchCandidate>> buildCandidatesOffThread(
+  CandidateBuildRequest request,
+) async {
+  if (request.docIds.isEmpty) return <MatchCandidate>[];
+  try {
+    return await compute(buildCandidates, request);
+  } catch (e) {
+    debugPrint('[Matching] Background build unavailable, running inline: $e');
+    return buildCandidates(request);
+  }
+}
+
+/// The candidate build itself (top-level so it can run in an isolate).
+/// Skips self and suspended/banned/deleted accounts, applies the age / gender /
+/// distance / deal-breaker filters (all bypassed for admin/support candidates
+/// and for admin/support viewers) and computes the compatibility score.
+List<MatchCandidate> buildCandidates(CandidateBuildRequest r) {
+  final userProfile =
+      r.viewer ?? ProfileModel.fromJson({...r.viewerData, 'userId': r.userId});
+  final userLoc = userProfile.effectiveLocation;
+  final isCurrentUserAdmin = userProfile.isAdmin || userProfile.isSupport;
+  final featureEngineer = FeatureEngineer();
+  final compatibilityScorer =
+      CompatibilityScorer(featureEngineer: featureEngineer);
+  final genders = r.preferredGenders.map((g) => g.toLowerCase()).toList();
+
+  final candidates = <MatchCandidate>[];
+  final now = DateTime.now();
+
+  for (var i = 0; i < r.docIds.length; i++) {
+    final id = r.docIds[i];
+    // Skip self
+    if (id == r.userId) continue;
+
+    try {
+      final candidateProfile =
+          ProfileModel.fromJson({...r.docData[i], 'userId': id});
+
+      // Skip explicitly suspended/banned/deleted profiles
+      final status = candidateProfile.accountStatus.toLowerCase();
+      if (status == 'suspended' || status == 'banned' || status == 'deleted') {
+        continue;
+      }
+
+      // Admin/support profiles bypass all filters — always visible
+      final isPrivileged = candidateProfile.isAdmin || candidateProfile.isSupport;
+
+      // Admin users see ALL profiles (bypass age, gender, distance filters).
+      // Users are visible immediately after registration — no verification
+      // or photo gate.
+      if (!isCurrentUserAdmin && !isPrivileged) {
+        final age = candidateProfile.age;
+        if (age > 0 && (age < r.minAge || age > r.maxAge)) continue;
+
+        if (genders.isNotEmpty) {
+          final gender = candidateProfile.gender;
+          if (gender.isNotEmpty && !genders.contains(gender.toLowerCase())) {
+            continue;
+          }
+        }
+      }
+
+      // Apply distance filter (skip for admin/support candidates and admin users)
+      final candidateLoc = candidateProfile.effectiveLocation;
+      var distance = 0.0;
+      if (!isPrivileged && !isCurrentUserAdmin &&
+          userLoc.latitude != 0 &&
+          userLoc.longitude != 0 &&
+          candidateLoc.latitude != 0 &&
+          candidateLoc.longitude != 0) {
+        distance = featureEngineer.calculateDistance(
+          userLoc.latitude,
+          userLoc.longitude,
+          candidateLoc.latitude,
+          candidateLoc.longitude,
+        );
+        if (r.applyDistanceCap && distance > r.maxDistance) continue;
+      }
+
+      // Apply deal-breaker interests (skip for admin/support and admin users)
+      if (!isPrivileged && !isCurrentUserAdmin && r.dealBreakerInterests.isNotEmpty) {
+        final hasAllDealBreakers = r.dealBreakerInterests.every(
+          candidateProfile.interests.contains,
+        );
+        if (!hasAllDealBreakers) continue;
+      }
+
+      // Calculate compatibility score
+      // Admin/support candidates always show 100% compatibility
+      MatchScore matchScore;
+      if (isPrivileged) {
+        matchScore = MatchScore(
+          userId1: r.userId,
+          userId2: candidateProfile.userId,
+          overallScore: 100.0,
+          breakdown: const ScoreBreakdown(
+            locationScore: 100.0,
+            ageCompatibilityScore: 100.0,
+            interestOverlapScore: 100.0,
+            languageScore: 100.0,
+          ),
+          calculatedAt: now,
+        );
+      } else {
+        try {
+          matchScore = compatibilityScorer.calculateScore(
+            profile1: userProfile,
+            profile2: candidateProfile,
+          );
+        } catch (_) {
+          // If scoring fails, use a default neutral score
+          matchScore = MatchScore(
+            userId1: r.userId,
+            userId2: candidateProfile.userId,
+            overallScore: 50.0,
+            breakdown: const ScoreBreakdown(
+              locationScore: 50.0,
+              ageCompatibilityScore: 50.0,
+              interestOverlapScore: 50.0,
+              languageScore: 50.0,
+            ),
+            calculatedAt: now,
+          );
+        }
+      }
+
+      candidates.add(MatchCandidate(
+        profile: candidateProfile,
+        matchScore: matchScore,
+        distance: distance,
+        suggestedAt: now,
+        isSuperLike: matchScore.overallScore >= 80.0,
+      ));
+    } catch (_) {
+      continue;
+    }
+  }
+
+  // Shuffle candidates randomly so users see a different order each time
+  if (r.shuffle) candidates.shuffle(Random());
+
+  // Return ALL candidates (no limit) for endless scrolling
+  return candidates;
 }

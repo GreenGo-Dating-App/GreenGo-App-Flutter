@@ -1,8 +1,9 @@
+import 'dart:async';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/services/session_cache_gate.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/external_events_data_source.dart';
@@ -49,7 +50,13 @@ class ExperiencesTab extends StatefulWidget {
   State<ExperiencesTab> createState() => _ExperiencesTabState();
 }
 
-class _ExperiencesTabState extends State<ExperiencesTab> {
+class _ExperiencesTabState extends State<ExperiencesTab>
+    with AutomaticKeepAliveClientMixin {
+  // Kept alive so swiping between the Events sub-tabs doesn't dispose the
+  // downloaded pages and restart from page 1.
+  @override
+  bool get wantKeepAlive => true;
+
   final _ds = ExternalEventsDataSource();
   // Grid and list each get their OWN ScrollController. A single controller can
   // only be attached to one ScrollPosition; sharing it across the GridView and
@@ -73,8 +80,13 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     }
   }
 
-  /// Session-gate key for this external source.
-  String get _cacheKey => 'ext_${widget.source}';
+  /// Swap the visible list for [page] in one frame (no blank in between).
+  void _replaceWith(Iterable<ExternalEvent> page) {
+    _items.clear();
+    _shownIds.clear();
+    _addUnique(page);
+  }
+
   bool _loadingMore = false;
   bool _firstLoadDone = false;
   int _gen = 0; // bumped per reload so stale pages can't append
@@ -93,13 +105,16 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     if (old.source != widget.source ||
         old.popular != widget.popular ||
         old.sort != widget.sort ||
-        old.category != widget.category ||
-        old.userLat != widget.userLat ||
-        old.userLng != widget.userLng ||
-        old.dateFrom != widget.dateFrom ||
-        old.dateTo != widget.dateTo) {
-      _reload();
+        old.category != widget.category) {
+      _reload(); // a different list: clear and load it
+    } else if (old.userLat != widget.userLat || old.userLng != widget.userLng) {
+      // Same list, better anchor (the parent only moves it when the user is
+      // meaningfully elsewhere): re-query in the background and swap when the
+      // new first page lands, never blanking what's on screen.
+      _reload(keepVisible: true);
     }
+    // The date range and search query are applied to the downloaded items in
+    // [_filtered]; a rebuild is enough.
   }
 
   @override
@@ -120,90 +135,96 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
     }
   }
 
-  Future<void> _reload() async {
-    final gen = ++_gen;
-    setState(() {
-      _items.clear();
-      _shownIds.clear();
-      _firstLoadDone = false;
-    });
-    if (widget.popular) {
-      final list =
-          await _ds.getPopularExperiences(source: widget.source, limit: 60);
-      if (!mounted || gen != _gen) return;
-      setState(() {
-        _addUnique(list);
-        _firstLoadDone = true;
-      });
-      return;
-    }
-    // Adopt the background-preloaded pager for the default view (distance, no
-    // category) so attractions/experiences appear instantly on first open.
-    if (widget.sort == 'distance' &&
-        (widget.category == null || widget.category!.isEmpty)) {
-      final warm = ExternalEventsPreloader.instance.take(widget.source);
-      if (warm != null) {
-        _pager = warm.pager;
-        if (!mounted || gen != _gen) return;
-        setState(() {
-          _addUnique(warm.items);
-          _firstLoadDone = true;
-        });
-        SessionCacheGate.markWarm(_cacheKey);
-        return;
-      }
-    }
-    // Cache-first paint ONLY on a warm session (network-first on a fresh app
-    // open, per SessionCacheGate): load one cache page for an instant first
-    // frame, then reconcile below with the server pager.
-    if (SessionCacheGate.isWarm(_cacheKey)) {
-      final cachePager = ExternalEventsPager(
+  ExternalEventsPager _newPager() => ExternalEventsPager(
         source: widget.source,
         sort: widget.sort,
         category: widget.category,
         userLat: widget.userLat,
         userLng: widget.userLng,
-        preferCache: true,
       );
-      try {
-        final page = await cachePager.next();
-        if (mounted && gen == _gen && page.isNotEmpty) {
-          setState(() {
-            _addUnique(page);
-            _firstLoadDone = true;
-          });
-        }
-      } catch (_) {/* cold/partial cache — ignore, server pass fills it */}
-      if (!mounted || gen != _gen) return;
+
+  /// Load page 1. Paints the last-seen first page from the local cache when
+  /// nothing is on screen yet, then ALWAYS replaces it with the server page —
+  /// adopting the background prefetch's pager when it ran this exact view.
+  Future<void> _reload({bool keepVisible = false}) async {
+    final gen = ++_gen;
+    _loadingMore = false;
+    // Drop the old pager so a scroll during the reload can't append pages
+    // from the previous view/anchor.
+    _pager = null;
+    if (!keepVisible) {
+      setState(() {
+        _items.clear();
+        _shownIds.clear();
+        _firstLoadDone = false;
+      });
     }
-
-    _pager = ExternalEventsPager(
-      source: widget.source,
-      sort: widget.sort,
-      category: widget.category,
-      userLat: widget.userLat,
-      userLng: widget.userLng,
-    );
-    await _loadMore(gen: gen, first: true);
-    SessionCacheGate.markWarm(_cacheKey);
-  }
-
-  Future<void> _loadMore({int? gen, bool first = false}) async {
-    final g = gen ?? _gen;
-    final pager = _pager;
-    if (pager == null || _loadingMore) return;
-    if (!first && !pager.hasMore) return;
-    _loadingMore = true;
-    final page = await pager.next();
-    if (!mounted || g != _gen) {
-      _loadingMore = false;
+    if (widget.popular) {
+      final list =
+          await _ds.getPopularExperiences(source: widget.source, limit: 60);
+      if (!mounted || gen != _gen) return;
+      setState(() {
+        _replaceWith(list);
+        _firstLoadDone = true;
+      });
       return;
     }
-    setState(() {
-      _addUnique(page);
-      _firstLoadDone = true;
-      _loadingMore = false;
-    });
+
+    final pager = _newPager();
+    if (_items.isEmpty) {
+      final cached = await pager.loadCached();
+      if (!mounted || gen != _gen) return;
+      if (cached.isNotEmpty) {
+        setState(() {
+          _replaceWith(cached);
+          _firstLoadDone = true;
+        });
+      }
+    }
+
+    // The prefetch runs exactly the default view (distance, no category).
+    if (widget.sort == 'distance' &&
+        (widget.category == null || widget.category!.isEmpty)) {
+      final warm = await ExternalEventsPreloader.instance
+          .take(widget.source, lat: widget.userLat, lng: widget.userLng);
+      if (!mounted || gen != _gen) return;
+      if (warm != null) {
+        _pager = warm.pager;
+        setState(() {
+          _replaceWith(warm.items);
+          _firstLoadDone = true;
+        });
+        return;
+      }
+    }
+
+    try {
+      final first = await pager.next();
+      if (!mounted || gen != _gen) return;
+      _pager = pager;
+      setState(() {
+        _replaceWith(first);
+        _firstLoadDone = true;
+      });
+      unawaited(pager.saveFirstPage(first));
+    } catch (_) {
+      // Keep whatever is on screen; only resolve the spinner.
+      if (mounted && gen == _gen) setState(() => _firstLoadDone = true);
+    }
+  }
+
+  Future<void> _loadMore() async {
+    final g = _gen;
+    final pager = _pager;
+    if (pager == null || _loadingMore || !pager.hasMore) return;
+    _loadingMore = true;
+    try {
+      final page = await pager.next();
+      if (!mounted || g != _gen) return;
+      setState(() => _addUnique(page));
+    } catch (_) {/* next scroll retries */} finally {
+      if (g == _gen) _loadingMore = false;
+    }
   }
 
   static String _iso(DateTime d) =>
@@ -269,11 +290,12 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
   void _open(ExternalEvent e) =>
       showAttractionMenu(context, event: e, currentUserId: widget.currentUserId);
 
-  /// Pull-to-refresh: re-query from the server.
-  Future<void> _refresh() => _reload();
+  /// Pull-to-refresh: re-query from the server, keeping the list meanwhile.
+  Future<void> _refresh() => _reload(keepVisible: true);
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     if (!_firstLoadDone) {
       return const Center(
           child: CircularProgressIndicator(color: AppColors.richGold));
@@ -386,10 +408,15 @@ class _ExperiencesTabState extends State<ExperiencesTab> {
       // CachedNetworkImage keeps a persistent disk cache keyed by URL, so an
       // event image is downloaded once and reused across sessions; it only
       // re-downloads when the URL changes (i.e. the server refreshed the event).
+      // Decode at the tile's on-screen width, not the source resolution.
+      final mq = MediaQuery.of(context);
+      final w = mq.size.width;
+      final cols = widget.gridView ? (w >= 1100 ? 6 : (w >= 800 ? 4 : 3)) : 1;
       return CachedNetworkImage(
         imageUrl: e.imageUrl!,
         height: height,
         width: double.infinity,
+        memCacheWidth: (w / cols * mq.devicePixelRatio).round(),
         fit: BoxFit.cover,
         placeholder: (c, _) => Container(
           height: height,

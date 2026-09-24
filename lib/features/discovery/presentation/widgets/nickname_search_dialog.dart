@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -829,10 +830,11 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                         height: 50,
                         color: AppColors.backgroundCard,
                         child: hasPhoto
-                            ? Image.network(
-                                profile.photoUrls.first,
+                            ? CachedNetworkImage(
+                                imageUrl: profile.photoUrls.first,
                                 fit: BoxFit.cover,
-                                errorBuilder: (_, __, ___) => const Icon(
+                                memCacheWidth: 150,
+                                errorWidget: (_, __, ___) => const Icon(
                                   Icons.person,
                                   color: AppColors.textTertiary,
                                   size: 24,

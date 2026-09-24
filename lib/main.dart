@@ -27,8 +27,10 @@ import 'features/analytics/data/services/performance_monitoring_service.dart';
 import 'core/constants/app_colors.dart';
 import 'core/constants/app_strings.dart';
 import 'core/di/injection_container.dart' as di;
+import 'core/cache/last_result_cache.dart';
 import 'core/providers/language_provider.dart';
 import 'core/services/access_control_service.dart';
+import 'core/services/api_key_service.dart';
 import 'core/services/app_sound_service.dart';
 import 'core/services/cache_service.dart';
 import 'core/services/data_preload_service.dart';
@@ -37,6 +39,7 @@ import 'core/services/purchase_recovery_service.dart';
 import 'core/services/feature_flags_service.dart';
 import 'core/services/onboarding_gate.dart';
 import 'core/services/push_notification_service.dart';
+import 'core/services/session_cache_gate.dart';
 import 'core/services/version_check_service.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/admin_data_utils.dart';
@@ -67,6 +70,8 @@ import 'features/cultural_exchange/presentation/bloc/cultural_exchange_bloc.dart
 import 'features/cultural_exchange/presentation/screens/cultural_exchange_screen.dart';
 import 'features/cultural_exchange/presentation/screens/dating_etiquette_screen.dart';
 import 'features/discovery/data/datasources/discovery_remote_datasource.dart';
+import 'features/discovery/data/services/discovery_prefetch.dart';
+import 'features/events/data/services/events_prefetch.dart';
 import 'features/events/presentation/bloc/events_bloc.dart';
 import 'features/events/presentation/screens/events_screen.dart';
 import 'features/explore_map/presentation/bloc/explore_map_bloc.dart';
@@ -162,9 +167,6 @@ void main() async {
     debugPrint('⚠ Firestore offline persistence not enabled: $e');
   }
 
-  // Load countdown dates from Firestore (non-blocking, uses defaults on failure)
-  AccessControlService.loadCountdownDatesFromFirestore();
-
   // Initialize cache service (Hive-based caching)
   await cacheService.initialize();
 
@@ -249,11 +251,16 @@ void main() async {
     }
   }
 
+  // Load countdown dates from Firestore (non-blocking, uses defaults on
+  // failure). After App Check so the read carries a token; the result is
+  // shared with the auth bloc and main screen, which ask for it again.
+  AccessControlService.loadCountdownDatesFromFirestore();
+
   // Initialize Firebase Remote Config with default values
   try {
     final remoteConfig = FirebaseRemoteConfig.instance;
     await remoteConfig.setConfigSettings(RemoteConfigSettings(
-      fetchTimeout: const Duration(seconds: kDebugMode ? 10 : 60),
+      fetchTimeout: const Duration(seconds: 10),
       minimumFetchInterval: kDebugMode
           ? const Duration(seconds: 10)  // Fast refresh for local development
           : const Duration(hours: 1),    // Standard interval for production
@@ -269,8 +276,18 @@ void main() async {
       'google_maps_api_key': '',
     });
 
-    // Fetch and activate config
-    await remoteConfig.fetchAndActivate();
+    // Serve the values fetched on a previous launch right away (local, no
+    // network), and refresh them in the background. Waiting on the fetch here
+    // held the first frame for up to the fetch timeout on a slow network.
+    await remoteConfig.activate();
+    unawaited(
+      remoteConfig.fetchAndActivate().then((_) {
+        // The Maps key is memoized on first read; pick up the fresh value.
+        ApiKeyService.invalidateCache();
+      }).catchError((Object e) {
+        debugPrint('Remote Config fetch error: $e');
+      }),
+    );
   } catch (e) {
     debugPrint('Remote Config initialization error: $e');
   }
@@ -294,17 +311,14 @@ void main() async {
     await FirebasePerformance.instance.setPerformanceCollectionEnabled(false);
   }
 
-  // Initialize sound service
-  await AppSoundService().initialize();
-  debugPrint('✓ Sound service initialized');
-
-  // Initialize feature flags service (loads from Firestore)
-  await featureFlags.initialize();
-  debugPrint('✓ Feature flags initialized');
-
-  // Initialize version check service
-  await versionCheck.initialize();
-  debugPrint('✓ Version check initialized');
+  // Sound, feature flags and the version config are not needed for the first
+  // frame, so they load alongside it instead of before it. Sounds initialize
+  // lazily on first play if this hasn't finished; flags answer from their
+  // defaults until loaded; the update / maintenance check in AuthWrapper
+  // awaits the version config itself.
+  unawaited(AppSoundService().initialize());
+  unawaited(featureFlags.initialize());
+  unawaited(versionCheck.initialize());
 
   // Initialize push notification service (FCM handlers)
   await pushNotificationService.initialize();
@@ -651,8 +665,21 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   // `isBanned == true`. Fail-open: a read error never sets this, so a
   // non-banned user is never locked out.
   bool _accountBanned = false;
-  String? _splashUserId;
+  // The user this wrapper has already routed. Login handler + auth stream can
+  // emit two (non-equal) AuthAuthenticated for one sign-in; the second must
+  // not re-run the check (it flashed the splash and remounted the shell).
+  String? _routedUserId;
   UserAccessData? _accessData;
+
+  /// True once this app session has seen a signed-out state, so the next
+  /// AuthAuthenticated is an actual sign-in (credentials / social) rather
+  /// than a cold start of an already-signed-in user. Static because the
+  /// wrapper is recreated (onboarding completion, sign-out, restartApp).
+  /// Only a real sign-in gets the post-login splash.
+  static bool _signInPending = false;
+
+  static bool _isSignedOutState(AuthState state) =>
+      state is AuthUnauthenticated || state is AuthLoading || state is AuthError;
   final AccessControlService _accessControlService = AccessControlService();
 
   @override
@@ -678,7 +705,8 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       // for the already-current AuthAuthenticated state, so the access check
       // would never run and we'd sit on the splash forever. Kick it off here.
       final authState = context.read<AuthBloc>().state;
-      if (authState is AuthAuthenticated && !_isCheckingAccess) {
+      if (_isSignedOutState(authState)) _signInPending = true;
+      if (authState is AuthAuthenticated) {
         _onAuthenticated(authState.user);
       }
     });
@@ -708,10 +736,14 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     return true;
   }
 
-  void _checkVersion() {
+  Future<void> _checkVersion() async {
     if (_hasCheckedVersion) return;
     _hasCheckedVersion = true;
 
+    // The version config loads in the background from main(); a forced update
+    // or maintenance block shows as soon as it arrives.
+    await versionCheck.initialize();
+    if (!mounted) return;
     final result = versionCheck.checkVersion();
 
     switch (result.updateType) {
@@ -743,37 +775,22 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   /// Runs when an authenticated user is detected — from the BlocConsumer
   /// listener on a state change, OR from initState when this wrapper mounts and
   /// the user is already authenticated (e.g. right after onboarding completes).
-  /// The `_isCheckingAccess` / `_splashUserId` guards make it idempotent so the
-  /// two entry points never double-run the work.
+  /// The `_routedUserId` guard makes it idempotent so the two entry points
+  /// (and a double emission) never double-run the work.
   Future<void> _onAuthenticated(dynamic user) async {
     _isSigningOut = false;
-    // Guard: skip if already checking access for this user (prevents duplicate
-    // calls from double AuthAuthenticated emission via login handler + auth
-    // stream, or from listener + initState).
-    if (_isCheckingAccess && _splashUserId == user.uid) return;
+    // Guard: skip if this user is already routed / being checked (prevents
+    // duplicate calls from double AuthAuthenticated emission via login
+    // handler + auth stream, or from listener + initState). Reset on sign-out.
+    if (_routedUserId == user.uid) return;
+    _routedUserId = user.uid;
     // Set checking flag IMMEDIATELY to prevent WaitingScreen flash
     // (builder runs before async work completes)
     setState(() {
       _isCheckingAccess = true;
-      // Show post-login splash on fresh login
-      if (!_showPostLoginSplash && _splashUserId != user.uid) {
-        _showPostLoginSplash = true;
-        _splashUserId = user.uid;
-      }
+      // Post-login splash only on an actual sign-in, not on a cold start.
+      if (_signInPending) _showPostLoginSplash = true;
     });
-    // Ensure admin profiles have isAdmin=true and approvalStatus=approved
-    // in the users collection BEFORE checking access (prevents "under review").
-    //
-    // Time-boxed: this is an await on the critical path to _checkAccessStatus,
-    // and _isCheckingAccess is already true. If it never returns — a blocked
-    // Firestore channel on web will do exactly that — the builder sits on the
-    // splash forever. A slow admin sync is not worth stranding anyone for.
-    try {
-      await AdminDataUtils.ensureAdminDataComplete()
-          .timeout(const Duration(seconds: 6));
-    } catch (e) {
-      debugPrint('⚠ Admin data sync skipped: $e');
-    }
     _checkAccessStatus(user.uid);
     // Load user's saved language from Firestore
     if (mounted) {
@@ -809,146 +826,31 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     }
   }
 
-  Future<void> _checkAccessStatus(String userId) async {
+  Future<void> _checkAccessStatus(String userId, {bool useCache = true}) async {
     // _isCheckingAccess is already set to true by the listener
     if (!_isCheckingAccess) {
       setState(() {
         _isCheckingAccess = true;
       });
     }
+    // Every explicit check reads fresh: drop any shared read left over from
+    // an earlier check (e.g. before onboarding, or before an admin approval
+    // the user is refreshing for). Reads started from here on are shared.
+    AccessControlService.invalidateOwnDoc('profiles', userId);
+    AccessControlService.invalidateOwnDoc('users', userId);
 
     try {
-      // Positively set true only when a profile doc is actually read with
-      // isBanned == true. Stays false on any read error (fail-open).
-      var accountBanned = false;
-      // Check if user profile exists and is complete (force server to avoid stale cache)
-      try {
-        // Timed out deliberately: a server-source read has no deadline of its
-        // own, so a blocked or stalled Firestore channel (common on web behind
-        // a proxy) would hang here without ever throwing, and the catch below
-        // would never run. On timeout we fall through to the cached read.
-        final profileDoc = await FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(userId)
-            .get(const GetOptions(source: Source.server))
-            .timeout(const Duration(seconds: 8));
-        _needsOnboarding = !profileDoc.exists ||
-            profileDoc.data()?['isComplete'] != true;
-        // Permanent ban: only a positively-read isBanned==true locks out.
-        accountBanned = profileDoc.exists &&
-            profileDoc.data()?['isBanned'] == true;
-        // Cache business-account flag so the post-login splash can label it
-        // without needing the full Profile loaded.
-        await _cacheBusinessFlag(profileDoc.data()?['isBusiness'] == true);
-      } catch (e) {
-        debugPrint('Profile check error: $e');
-        // Fallback to default source if server unavailable
-        try {
-          final profileDoc = await FirebaseFirestore.instance
-              .collection('profiles')
-              .doc(userId)
-              .get()
-              .timeout(const Duration(seconds: 6));
-          _needsOnboarding = !profileDoc.exists ||
-              profileDoc.data()?['isComplete'] != true;
-          accountBanned = profileDoc.exists &&
-              profileDoc.data()?['isBanned'] == true;
-          await _cacheBusinessFlag(profileDoc.data()?['isBusiness'] == true);
-        } catch (_) {
-          // Could not read the doc at all — fail open, never lock out.
-          _needsOnboarding = true;
-          accountBanned = false;
-        }
-      }
-
-      // Enforce permanent ban before any access is granted.
-      if (accountBanned) {
-        debugPrint('🚫 Account $userId is permanently banned — blocking access');
-        if (mounted) {
-          setState(() {
-            _accountBanned = true;
-            _accessData = null;
-            _isCheckingAccess = false;
-          });
-        }
+      // Returning user: decide from the local cache (milliseconds, no
+      // network) and confirm with the server in the background. First launch
+      // on this device, or a cache that says anything but "let them in",
+      // waits for the server as before.
+      final cached = useCache ? await _resolveAccessFromCache(userId) : null;
+      if (cached != null) {
+        _applyAccessDecision(userId, cached);
+        unawaited(_verifyAccessInBackground(userId, cached));
         return;
       }
-
-      // Same reasoning as the profile read: bounded, so a stalled channel
-      // surfaces as the pending fallback below rather than an endless splash.
-      var accessData = await _accessControlService
-          .getCurrentUserAccess()
-          .timeout(const Duration(seconds: 8), onTimeout: () => null);
-      debugPrint('🔑 Access data for $userId: isAdmin=${accessData?.isAdmin}, '
-          'isTestUser=${accessData?.isTestUser}, '
-          'approvalStatus=${accessData?.approvalStatus}, '
-          'tier=${accessData?.membershipTier}');
-
-      // If no access data exists, create it now
-      if (accessData == null) {
-        debugPrint('🔑 No access data found — creating for $userId');
-        try {
-          final email = FirebaseAuth.instance.currentUser?.email;
-          await _accessControlService.initializeUserAccess(
-            userId: userId,
-            email: email ?? '',
-          );
-          accessData = await _accessControlService.getCurrentUserAccess();
-        } catch (e) {
-          debugPrint('⚠️ Failed to create access data: $e');
-        }
-        // If still null, use a fallback so user isn't stuck
-        accessData ??= UserAccessData(
-          userId: userId,
-          approvalStatus: ApprovalStatus.pending,
-          accessDate: AccessControlService.generalAccessDate,
-          membershipTier: SubscriptionTier.basic,
-        );
-      }
-
-      // Admin and test users ALWAYS get through — force approve if needed
-      if (accessData.isAdmin || accessData.isTestUser) {
-        if (accessData.approvalStatus != ApprovalStatus.approved) {
-          debugPrint('🔑 Force-approving admin/test user $userId');
-          await _accessControlService.approveUser(userId, 'system');
-          final correctedData = await _accessControlService.getCurrentUserAccess();
-          if (mounted) {
-            setState(() {
-              _accessData = correctedData ?? accessData;
-              _isCheckingAccess = false;
-            });
-            // Prompt for notifications after frame renders
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              _maybeShowNotificationPrompt(userId);
-            });
-          }
-          return;
-        }
-        // Already approved — set data and proceed
-        if (mounted) {
-          setState(() {
-            _accessData = accessData;
-            _isCheckingAccess = false;
-          });
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            _maybeShowNotificationPrompt(userId);
-          });
-        }
-        return;
-      }
-
-      if (mounted) {
-        setState(() {
-          _accessData = accessData;
-          _isCheckingAccess = false;
-        });
-        // Show notification prompt for approved non-admin users
-        if (accessData.approvalStatus == ApprovalStatus.approved) {
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            _maybeShowNotificationPrompt(userId);
-          });
-        }
-      }
+      _applyAccessDecision(userId, await _resolveAccessFromServer(userId));
     } catch (e) {
       debugPrint('🔑 Access check error: $e');
       if (mounted) {
@@ -964,6 +866,249 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         });
       }
     }
+  }
+
+  /// The access decision from the LOCAL Firestore cache, or null when the
+  /// server must decide. Only a cached "let them in" is trusted: anything
+  /// that would route the user away (onboarding, ban, rejection) waits for
+  /// the server, so a stale cache never blocks a user who is fine. A stale
+  /// "let them in" lasts only until [_verifyAccessInBackground] corrects it;
+  /// the security rules enforce access on every read regardless.
+  Future<_AccessDecision?> _resolveAccessFromCache(String userId) async {
+    try {
+      final (profileDoc, accessData) = await (
+        FirebaseFirestore.instance
+            .collection('profiles')
+            .doc(userId)
+            .get(const GetOptions(source: Source.cache)),
+        _accessControlService.getCachedUserAccess(),
+      ).wait.timeout(const Duration(seconds: 2));
+      final profile = profileDoc.data();
+      // Admin accounts always take the server path: it runs the admin data
+      // sync and gets them to 2FA. `isAdmin` is set on the profile first
+      // (ensureAdminDataComplete copies it to `users`), so either cached doc
+      // saying admin is enough. There is no admin auth claim to check.
+      if (profile == null ||
+          accessData == null ||
+          profile['isComplete'] != true ||
+          profile['isBanned'] == true ||
+          profile['isAdmin'] == true ||
+          accessData.isAdmin ||
+          accessData.approvalStatus == ApprovalStatus.rejected) {
+        return null;
+      }
+      await _cacheBusinessFlag(profile['isBusiness'] == true);
+      return _AccessDecision(
+        needsOnboarding: false,
+        banned: false,
+        accessData: accessData,
+      );
+    } catch (_) {
+      return null; // not cached (or cache unavailable) — ask the server
+    }
+  }
+
+  /// Server-authoritative access decision. Every read is time-boxed: a
+  /// server-source read has no deadline of its own, so a blocked or stalled
+  /// Firestore channel (common on web behind a proxy) would otherwise hang
+  /// here without ever throwing.
+  Future<_AccessDecision> _resolveAccessFromServer(String userId) async {
+    Map<String, dynamic>? profile;
+    var profileExists = false;
+    var profileFromServer = false;
+
+    Future<bool> readProfile() async {
+      profileFromServer = false;
+      try {
+        final doc = await _accessControlService
+            .serverDoc('profiles', userId)
+            .timeout(const Duration(seconds: 8));
+        profileExists = doc.exists;
+        profile = doc.data();
+        profileFromServer = true;
+        return true;
+      } catch (e) {
+        debugPrint('Profile check error: $e');
+        // Fallback to default source if server unavailable
+        try {
+          final doc = await FirebaseFirestore.instance
+              .collection('profiles')
+              .doc(userId)
+              .get()
+              .timeout(const Duration(seconds: 6));
+          profileExists = doc.exists;
+          profile = doc.data();
+          return true;
+        } catch (_) {
+          return false;
+        }
+      }
+    }
+
+    var profileRead = await readProfile();
+
+    // Admin accounts get isAdmin=true / approvalStatus=approved written to
+    // `users` before access is read (prevents "under review"), and a missing
+    // profile may be an admin whose profile gets created. Everyone else skips
+    // it: for them it is a no-op that cost a profile read on every launch.
+    // Time-boxed so a slow admin sync never strands anyone on the splash.
+    if (profileRead && (!profileExists || profile?['isAdmin'] == true)) {
+      var synced = false;
+      try {
+        synced = await AdminDataUtils.ensureAdminDataComplete()
+            .timeout(const Duration(seconds: 6));
+      } catch (e) {
+        debugPrint('⚠ Admin data sync skipped: $e');
+      }
+      if (synced) {
+        // The sync may have written both docs: read them fresh.
+        AccessControlService.invalidateOwnDoc('profiles', userId);
+        AccessControlService.invalidateOwnDoc('users', userId);
+        profileRead = await readProfile();
+      }
+    }
+
+    if (profileRead) {
+      await _cacheBusinessFlag(profile?['isBusiness'] == true);
+    }
+    // Could not read the doc at all — fail open, never lock out.
+    final needsOnboarding =
+        !profileRead || !profileExists || profile?['isComplete'] != true;
+    // Permanent ban: only a positively-read isBanned==true locks out.
+    if (profileExists && profile?['isBanned'] == true) {
+      debugPrint('🚫 Account $userId is permanently banned — blocking access');
+      return _AccessDecision(
+        needsOnboarding: needsOnboarding,
+        banned: true,
+        authoritative: profileFromServer,
+      );
+    }
+
+    // Same reasoning as the profile read: bounded, so a stalled channel
+    // surfaces as the fallback below rather than an endless splash. A failed
+    // or timed-out server read is kept apart from "no doc on the server", so
+    // it can never lead to the doc being re-initialized.
+    var accessReadFailed = false;
+    UserAccessData? accessData;
+    try {
+      accessData = await _accessControlService
+          .getCurrentUserAccess(
+            profileData: profileFromServer ? profile : null,
+            throwIfServerUnavailable: true,
+          )
+          .timeout(const Duration(seconds: 8));
+    } catch (e) {
+      debugPrint('🔑 Access read failed for $userId: $e');
+      accessReadFailed = true;
+      // Show what this device last saw, if anything (not authoritative).
+      accessData = await _accessControlService.getCachedUserAccess();
+    }
+    debugPrint('🔑 Access data for $userId: isAdmin=${accessData?.isAdmin}, '
+        'isTestUser=${accessData?.isTestUser}, '
+        'approvalStatus=${accessData?.approvalStatus}, '
+        'tier=${accessData?.membershipTier}');
+
+    // If no access data exists on the server, create it now. Never after a
+    // failed read: the doc may well exist, and re-initializing it would reset
+    // approvalStatus and membershipTier (merge write).
+    if (accessData == null && !accessReadFailed) {
+      debugPrint('🔑 No access data found — creating for $userId');
+      try {
+        final email = FirebaseAuth.instance.currentUser?.email;
+        await _accessControlService.initializeUserAccess(
+          userId: userId,
+          email: email ?? '',
+        );
+        accessData = await _accessControlService.getCurrentUserAccess(
+          profileData: profileFromServer ? profile : null,
+        );
+      } catch (e) {
+        debugPrint('⚠️ Failed to create access data: $e');
+      }
+    }
+    // If still null, use a fallback so user isn't stuck
+    accessData ??= UserAccessData(
+      userId: userId,
+      approvalStatus: ApprovalStatus.pending,
+      accessDate: AccessControlService.generalAccessDate,
+      membershipTier: SubscriptionTier.basic,
+    );
+
+    // Admin and test users ALWAYS get through — force approve if needed
+    if ((accessData.isAdmin || accessData.isTestUser) &&
+        accessData.approvalStatus != ApprovalStatus.approved) {
+      debugPrint('🔑 Force-approving admin/test user $userId');
+      await _accessControlService.approveUser(userId, 'system');
+      accessData = accessData.copyWith(approvalStatus: ApprovalStatus.approved);
+    }
+
+    return _AccessDecision(
+      needsOnboarding: needsOnboarding,
+      banned: false,
+      accessData: accessData,
+      authoritative: profileFromServer && !accessReadFailed,
+    );
+  }
+
+  /// Confirms a cache-based decision with the server and re-routes only if
+  /// the server disagrees (e.g. access revoked, banned, profile incomplete).
+  /// A result that could not actually reach the server never overrides it.
+  Future<void> _verifyAccessInBackground(
+      String userId, _AccessDecision shown) async {
+    try {
+      final fresh = await _resolveAccessFromServer(userId);
+      if (!mounted ||
+          _isSigningOut ||
+          FirebaseAuth.instance.currentUser?.uid != userId ||
+          !fresh.authoritative) {
+        return;
+      }
+      if (fresh.routesSameAs(shown)) {
+        // Same screen either way: keep the fresher copy without a rebuild.
+        _accessData = fresh.accessData ?? _accessData;
+        return;
+      }
+      debugPrint('🔑 Server access differs from cache — re-routing $userId');
+      _applyAccessDecision(userId, fresh);
+    } catch (e) {
+      debugPrint('🔑 Background access check error: $e');
+    }
+  }
+
+  void _applyAccessDecision(String userId, _AccessDecision decision) {
+    if (!mounted) return;
+    setState(() {
+      _needsOnboarding = decision.needsOnboarding;
+      _accountBanned = decision.banned;
+      _accessData = decision.banned ? null : decision.accessData;
+      _isCheckingAccess = false;
+    });
+    final accessData = decision.accessData;
+    // Prompt for notifications (after the frame) for admin/test and approved
+    // users.
+    if (!decision.banned &&
+        accessData != null &&
+        (accessData.isAdmin ||
+            accessData.isTestUser ||
+            accessData.approvalStatus == ApprovalStatus.approved)) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _maybeShowNotificationPrompt(userId);
+      });
+    }
+  }
+
+  /// Drops every per-user, per-session cache so the next account (or the
+  /// same one signing back in) starts clean.
+  void _clearSessionCaches() {
+    unawaited(LastResultCache.clear());
+    SessionCacheGate.reset();
+    AccessControlService.clearSessionCache();
+    DataPreloadService.instance.reset();
+    // ── Other packages' per-user session state (Events / Discovery) ──
+    // EventsPrefetch.reset() also resets EventsLocation and the external
+    // events preloader.
+    EventsPrefetch.reset();
+    DiscoveryPrefetch.reset();
   }
 
   bool _isSigningOut = false;
@@ -989,7 +1134,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       _notificationPromptShown = false;
       _admin2FAVerified = false;
       _showPostLoginSplash = false;
-      _splashUserId = null;
+      _routedUserId = null;
       _isCheckingAccess = false;
       _accountBanned = false;
       Admin2FAScreen.resetVerification();
@@ -1001,10 +1146,10 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     setState(() {
       _accessData = null;
     });
-    // Re-check access status
+    // Re-check access status with the server (the user asked for a refresh)
     final state = context.read<AuthBloc>().state;
     if (state is AuthAuthenticated) {
-      _checkAccessStatus(state.user.uid);
+      _checkAccessStatus(state.user.uid, useCache: false);
     }
   }
 
@@ -1244,6 +1389,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       DataPreloadService.instance.warm(userId);
       return PostLoginSplashScreen(
         onComplete: () {
+          _signInPending = false;
           if (mounted) {
             setState(() {
               _showPostLoginSplash = false;
@@ -1268,17 +1414,18 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         if (state is AuthAuthenticated) {
           await _onAuthenticated(state.user);
         }
+        if (_isSignedOutState(state)) _signInPending = true;
         // When user signs out, reset access state to prevent stuck splash
         if (state is AuthInitial || state is AuthUnauthenticated) {
           _isSigningOut = false;
-      
+          _clearSessionCaches();
           setState(() {
             _accessData = null;
             _needsOnboarding = false;
             _isCheckingAccess = false;
             _admin2FAVerified = false;
             _showPostLoginSplash = false;
-            _splashUserId = null;
+            _routedUserId = null;
             _accountBanned = false;
             Admin2FAScreen.resetVerification();
           });
@@ -1362,6 +1509,32 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       },
     );
   }
+}
+
+/// Outcome of an access check, as far as routing in [AuthWrapper] cares.
+class _AccessDecision {
+  const _AccessDecision({
+    required this.needsOnboarding,
+    required this.banned,
+    this.accessData,
+    this.authoritative = true,
+  });
+
+  final bool needsOnboarding;
+  final bool banned;
+  final UserAccessData? accessData;
+
+  /// False when the server could not be reached and this was assembled from
+  /// fallbacks; such a result never overrides what is already on screen.
+  final bool authoritative;
+
+  /// Whether [other] would show the same screen (and the same approval, which
+  /// decides the notification prompt).
+  bool routesSameAs(_AccessDecision other) =>
+      needsOnboarding == other.needsOnboarding &&
+      banned == other.banned &&
+      (accessData?.isAdmin ?? false) == (other.accessData?.isAdmin ?? false) &&
+      accessData?.approvalStatus == other.accessData?.approvalStatus;
 }
 
 /// Full-screen block shown to a permanently-banned account.

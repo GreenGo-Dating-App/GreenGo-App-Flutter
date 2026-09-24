@@ -48,6 +48,8 @@ import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
 import '../../data/services/event_series_service.dart';
 import '../../data/services/events_cache_service.dart';
+import '../../data/services/events_location.dart';
+import '../../data/services/events_prefetch.dart';
 import '../../domain/entities/event.dart';
 import '../../../safety/presentation/widgets/event_safety_checkin.dart';
 import '../bloc/events_bloc.dart';
@@ -140,10 +142,9 @@ class _EventsScreenState extends State<EventsScreen>
     _eventsBloc.add(const LoadEvents(upcoming: true));
     _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
 
-    // Cache-first community feed: render today's cached feed immediately (if
-    // present) so the tab loads offline/instantly and skips the network. Only a
-    // stale/absent cache — or a pull-to-refresh — triggers a Firestore query.
-    _loadCommunityCache();
+    // Paint the community feed last shown (local cache, no network) while the
+    // anchor resolves and the server query runs; the server result replaces it.
+    _paintCachedCommunity();
 
     // Rebuild on tab change so the category bar shows/hides per tab.
     _tabController.addListener(() {
@@ -155,8 +156,15 @@ class _EventsScreenState extends State<EventsScreen>
       }
     });
 
-    // Best-effort user location for distance-based ordering of all events.
-    _loadUserLocation();
+    // Location for distance ordering: an instant anchor first (never waits
+    // for GPS), refined by a fresh fix afterwards.
+    final anchor = EventsLocation.current;
+    if (anchor != null) {
+      _userLat = anchor.lat;
+      _userLng = anchor.lng;
+      _anchorResolved = true;
+    }
+    _initLocation();
   }
 
   // External tabs (Live Events / Attractions / Experiences) have no GreenGo
@@ -178,54 +186,101 @@ class _EventsScreenState extends State<EventsScreen>
   // Whole-table community search (Community tab): default shows the 100 closest;
   // a search queries the entire events table and shows matches.
   late final EventsRemoteDataSourceImpl _eventsDataSource;
-  static const int _communityNearbyLimit = 100;
+  static const int _communityNearbyLimit = EventsPrefetch.communityLimit;
   List<Event> _communityResults = const [];
   bool _communitySearching = false;
   int _communitySearchGen = 0;
   // Default community list: the closest 100 via geohash (scales to a big table).
   List<Event> _communityNearby = const [];
   bool _communityNearbyLoading = false;
+  // True once the server community query has answered (the cached paint no
+  // longer needs to be kept).
+  bool _communityServerLoaded = false;
 
-  // Daily cache for the community feed. Within the same calendar day the feed is
-  // served from local storage and the network is NOT hit; only a pull-to-refresh
-  // (or a stale/absent cache) forces a fresh Firestore query.
+  /// False until the instant location anchor is known (or known to be absent).
+  /// The external sub-tabs wait for it so they query once, anchored.
+  bool _anchorResolved = false;
+
+  /// Last list state, so a transient state (loading after RSVP/create, a
+  /// snackbar-only state) never blanks the tabs.
+  EventsLoaded? _lastLoaded;
+
   final EventsCacheService _eventsCache = const EventsCacheService();
-  String get _communityFeedKey => 'community_${widget.currentUserId}';
-  bool _communityCacheFresh = false; // true once today's cache is loaded/saved
 
-  /// Cache-first community feed: on open, render today's cached feed (if any)
-  /// WITHOUT any network fetch. A stale/absent cache leaves this a no-op and the
-  /// normal location-driven load populates (and persists) the feed instead.
-  Future<void> _loadCommunityCache() async {
-    final cached = await _eventsCache.getCachedIfFresh(_communityFeedKey);
-    if (cached != null && cached.isNotEmpty && mounted) {
-      setState(() {
-        _communityNearby = cached;
-        _communityCacheFresh = true;
-      });
+  /// Stale-while-revalidate: show the feed rendered last time, instantly, from
+  /// the local cache. Never an empty state; the server load always follows.
+  Future<void> _paintCachedCommunity() async {
+    final cached = await _eventsCache.loadCommunity();
+    if (cached.isNotEmpty &&
+        mounted &&
+        !_communityServerLoaded &&
+        _communityNearby.isEmpty) {
+      setState(() => _communityNearby = cached);
     }
   }
 
+  /// Anchor instantly (last-known fix / last session / profile location), load
+  /// against it, then refine with a medium-accuracy fix and reload only if the
+  /// user turns out to be meaningfully elsewhere.
+  Future<void> _initLocation() async {
+    if (!_anchorResolved) {
+      final anchor = await EventsLocation.quick(widget.currentUserId);
+      if (!mounted) return;
+      setState(() {
+        _userLat = anchor?.lat;
+        _userLng = anchor?.lng;
+        _anchorResolved = true;
+        // No anchor means no geohash query to revalidate a cached paint with;
+        // the tab falls back to the (server-loaded) upcoming list instead.
+        if (anchor == null && !_communityServerLoaded) {
+          _communityNearby = const [];
+        }
+      });
+    }
+    unawaited(_loadCommunityNearby());
+
+    final pos = await const LocationShareService().getApproximatePosition();
+    if (pos == null || !mounted) return;
+    final prev = _userLat == null || _userLng == null
+        ? null
+        : (lat: _userLat!, lng: _userLng!);
+    EventsLocation.remember(pos.latitude, pos.longitude);
+    if (!EventsLocation.movedFar(prev, pos.latitude, pos.longitude)) return;
+    setState(() {
+      _userLat = pos.latitude;
+      _userLng = pos.longitude;
+    });
+    unawaited(_loadCommunityNearby());
+  }
+
+  /// Closest community events around the current anchor. Adopts the background
+  /// prefetch when it ran this exact query; otherwise queries the server. The
+  /// visible list is kept until the new one arrives.
   Future<void> _loadCommunityNearby({bool force = false}) async {
-    if (_userLat == null || _userLng == null) return;
-    // Same-day cache hit: the cache was already rendered, so skip the network
-    // unless the user explicitly pulled to refresh (force == true).
-    if (!force && _communityCacheFresh) return;
+    final lat = _userLat, lng = _userLng;
+    if (lat == null || lng == null) return;
     setState(() => _communityNearbyLoading = true);
     try {
-      final list = await _eventsDataSource.getNearbyCommunityEvents(
-          lat: _userLat!, lng: _userLng!, limit: _communityNearbyLimit);
-      if (!mounted) return;
+      final prefetched =
+          force ? null : await EventsPrefetch.takeCommunity(lat, lng);
+      final list = prefetched ??
+          await _eventsDataSource.getNearbyCommunityEvents(
+              lat: lat, lng: lng, limit: _communityNearbyLimit);
+      // A newer anchor started its own load; let that one win.
+      if (!mounted || lat != _userLat || lng != _userLng) return;
       setState(() {
         _communityNearby = list;
         _communityNearbyLoading = false;
-        _communityCacheFresh = true;
+        _communityServerLoaded = true;
       });
-      // Persist the freshly fetched feed + today's day stamp so the rest of the
-      // day serves from cache.
-      unawaited(_eventsCache.save(_communityFeedKey, list));
+      unawaited(_eventsCache.saveCommunity(list));
     } catch (_) {
-      if (mounted) setState(() => _communityNearbyLoading = false);
+      if (mounted) {
+        setState(() {
+          _communityNearbyLoading = false;
+          _communityServerLoaded = true;
+        });
+      }
     }
   }
 
@@ -250,17 +305,6 @@ class _EventsScreenState extends State<EventsScreen>
       if (!mounted || gen != _communitySearchGen) return;
       setState(() => _communitySearching = false);
     });
-  }
-
-  Future<void> _loadUserLocation() async {
-    final pos = await const LocationShareService().getCurrentPosition();
-    if (pos != null && mounted) {
-      setState(() {
-        _userLat = pos.latitude;
-        _userLng = pos.longitude;
-      });
-      _loadCommunityNearby(); // closest-100 community via geohash
-    }
   }
 
   @override
@@ -405,13 +449,14 @@ class _EventsScreenState extends State<EventsScreen>
             }
           },
           builder: (context, state) {
+            if (state is EventsLoaded) _lastLoaded = state;
             return Column(
               children: [
                 // Search by country/city/name + popularity sort
                 _buildSearchAndSortBar(),
                 // Category filter — native tabs use GreenGo categories; the
                 // Attractions tab uses the Geoapify place categories.
-                if (_isNativeTab) _buildCategoryFilter(state),
+                if (_isNativeTab) _buildCategoryFilter(_lastLoaded),
                 if (_isExperiencesTab) _buildExperienceCategoryFilter(),
                 // Events List
                 Expanded(
@@ -427,38 +472,37 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
+  /// Always the same tab tree: each tab shows its own loading state, so the
+  /// Live / Attractions / Experiences tabs never wait for (or get torn down
+  /// by) the community query, and a reload never swaps the tabs for a spinner.
   Widget _buildBody(EventsState state) {
-    if (state is EventsLoading) {
-      return const Center(
-        child: CircularProgressIndicator(color: AppColors.richGold),
-      );
-    }
-
-    if (state is EventsLoaded) {
-      return TabBarView(
-        controller: _tabController,
-        children: [
-          _buildCommunityTab(state),
-          _buildExperiencesTab('ticketmaster', sortOverride: _liveSort),
-          _buildCuratedAttractionsTab(),
-          _buildExperiencesTab('viator', category: _experienceCategory),
-          _buildMyEventsTab(state),
-        ],
-      );
-    }
-
-    // Default: show empty state for initial/error/other states
+    final loaded = _lastLoaded;
+    final firstLoad = loaded == null && state is! EventsError;
     return TabBarView(
       controller: _tabController,
       children: [
-        _buildEventsList([]),
-        _buildExperiencesTab('ticketmaster', sortOverride: 'date'),
-        _buildCuratedAttractionsTab(),
-        _buildExperiencesTab('viator'),
-        _buildEventsList([]),
+        _KeepAliveTab(child: _buildCommunityTab(loaded, firstLoad)),
+        _buildExternalTab(
+            () => _buildExperiencesTab('ticketmaster', sortOverride: _liveSort)),
+        _buildExternalTab(_buildCuratedAttractionsTab),
+        _buildExternalTab(() =>
+            _buildExperiencesTab('viator', category: _experienceCategory)),
+        _KeepAliveTab(
+          child: loaded != null
+              ? _buildMyEventsTab(loaded)
+              : (firstLoad ? _buildTabSpinner() : _buildEventsList(const [])),
+        ),
       ],
     );
   }
+
+  Widget _buildTabSpinner() => const Center(
+      child: CircularProgressIndicator(color: AppColors.richGold));
+
+  /// External tabs are anchored queries: build them once the instant location
+  /// anchor is known (milliseconds) so they don't query unanchored first.
+  Widget _buildExternalTab(Widget Function() build) =>
+      _anchorResolved ? build() : _buildTabSpinner();
 
   /// Search bar (country / city / name) + popularity sort toggle.
   Widget _buildSearchAndSortBar() {
@@ -702,11 +746,11 @@ class _EventsScreenState extends State<EventsScreen>
   }
 
 
-  Widget _buildCategoryFilter(EventsState state) {
+  Widget _buildCategoryFilter(EventsLoaded? state) {
     // Only show category chips that actually have at least one event across the
     // user's native events (so empty tags are omitted).
     final present = <EventCategory>{};
-    if (state is EventsLoaded) {
+    if (state != null) {
       for (final e in [...state.upcomingEvents, ...state.userEvents]) {
         present.add(e.category);
       }
@@ -803,26 +847,31 @@ class _EventsScreenState extends State<EventsScreen>
 
   /// Community tab body: default = closest 100; while searching, results come
   /// from a whole-table query (searchEvents), refined + sorted client-side.
-  Widget _buildCommunityTab(EventsLoaded state) {
+  Widget _buildCommunityTab(EventsLoaded? state, bool firstLoad) {
     if (_searchQuery.isNotEmpty) {
       if (_communitySearching && _communityResults.isEmpty) {
-        return const Center(
-            child: CircularProgressIndicator(color: AppColors.richGold));
+        return _buildTabSpinner();
       }
       // Auto-publish gate on search results too (drafts/scheduled never listed).
       return _buildEventsList(_applySearchAndSort(
           _communityResults.where((e) => e.isLive).toList()));
     }
-    if (_communityNearbyLoading && _communityNearby.isEmpty) {
-      return const Center(
-          child: CircularProgressIndicator(color: AppColors.richGold));
+    // Prefer the geohash nearest-100 (cached paint, then server); fall back to
+    // the bloc's loaded set when location is unknown or the nearby query
+    // returned nothing.
+    if (_communityNearby.isNotEmpty) {
+      return _buildEventsList(_applySearchAndSort(
+          _communityNearby.where((e) => e.isLive).toList()));
     }
-    // Prefer the geohash nearest-100; fall back to the bloc's loaded set when
-    // location is unknown or the nearby query returned nothing.
-    final list = _communityNearby.isNotEmpty
-        ? _communityNearby.where((e) => e.isLive).toList()
-        : _getCommunityEvents(state);
-    return _buildEventsList(_applySearchAndSort(list));
+    final waiting = _communityNearbyLoading ||
+        !_anchorResolved ||
+        (_userLat != null && !_communityServerLoaded);
+    if (state == null || waiting) {
+      return (firstLoad || waiting)
+          ? _buildTabSpinner()
+          : _buildEventsList(const []);
+    }
+    return _buildEventsList(_applySearchAndSort(_getCommunityEvents(state)));
   }
 
   /// My Events = events the user ORGANIZES **plus** events they've RSVP'd
@@ -971,8 +1020,7 @@ class _EventsScreenState extends State<EventsScreen>
       onRefresh: () async {
         _eventsBloc.add(const LoadEvents(upcoming: true));
         _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
-        // Pull-to-refresh ALWAYS forces a network fetch of the community feed
-        // and re-writes the daily cache (bypassing the same-day cache hit).
+        // Pull-to-refresh always re-queries the server (never the prefetch).
         await _loadCommunityNearby(force: true);
         // Wait briefly for the BLoC to process
         await Future.delayed(const Duration(milliseconds: 500));
@@ -1018,9 +1066,17 @@ class _EventsScreenState extends State<EventsScreen>
             children: [
               Expanded(
                 child: event.imageUrl != null && event.imageUrl!.isNotEmpty
-                    ? Image.network(event.imageUrl!,
+                    ? CachedNetworkImage(
+                        imageUrl: event.imageUrl!,
                         fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => Container(
+                        // Decode at tile size (disk-cached across sessions).
+                        memCacheWidth: (MediaQuery.of(context).size.width /
+                                _gridColumns(context) *
+                                MediaQuery.of(context).devicePixelRatio)
+                            .round(),
+                        placeholder: (_, __) =>
+                            Container(color: AppColors.backgroundInput),
+                        errorWidget: (_, __, ___) => Container(
                             color: AppColors.backgroundInput,
                             child: const Icon(Icons.event,
                                 color: AppColors.textTertiary)))
@@ -1482,6 +1538,28 @@ Widget buildEventStatusBadges(BuildContext context, Event event,
 /// Event Card Widget
 /// Live countdown shown to the organizer of a boosted event — ticks down to
 /// when the boost (featuredUntil) expires.
+/// Keeps an Events sub-tab mounted while the user swipes to another one, so
+/// its scroll position and loaded data survive.
+class _KeepAliveTab extends StatefulWidget {
+  const _KeepAliveTab({required this.child});
+  final Widget child;
+
+  @override
+  State<_KeepAliveTab> createState() => _KeepAliveTabState();
+}
+
+class _KeepAliveTabState extends State<_KeepAliveTab>
+    with AutomaticKeepAliveClientMixin {
+  @override
+  bool get wantKeepAlive => true;
+
+  @override
+  Widget build(BuildContext context) {
+    super.build(context);
+    return widget.child;
+  }
+}
+
 class _BoostCountdown extends StatefulWidget {
   final DateTime until;
   const _BoostCountdown({required this.until});
@@ -1580,10 +1658,13 @@ class EventCard extends StatelessWidget {
                     width: double.infinity,
                     color: AppColors.backgroundDark,
                     child: event.imageUrl != null && event.imageUrl!.isNotEmpty
-                        ? Image.network(
-                            event.imageUrl!,
+                        ? CachedNetworkImage(
+                            imageUrl: event.imageUrl!,
                             fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) => const Icon(
+                            memCacheWidth: (MediaQuery.of(context).size.width *
+                                    MediaQuery.of(context).devicePixelRatio)
+                                .round(),
+                            errorWidget: (_, __, ___) => const Icon(
                               Icons.event,
                               size: 60,
                               color: AppColors.textTertiary,
@@ -1972,7 +2053,21 @@ class EventDetailsScreen extends StatelessWidget {
             backgroundColor: AppColors.backgroundDark,
             flexibleSpace: FlexibleSpaceBar(
               background: event.imageUrl != null
-                  ? Image.network(event.imageUrl!, fit: BoxFit.cover)
+                  ? CachedNetworkImage(
+                      imageUrl: event.imageUrl!,
+                      fit: BoxFit.cover,
+                      memCacheWidth: (MediaQuery.of(context).size.width *
+                              MediaQuery.of(context).devicePixelRatio)
+                          .round(),
+                      errorWidget: (_, __, ___) => Container(
+                        color: AppColors.backgroundCard,
+                        child: const Icon(
+                          Icons.event,
+                          size: 80,
+                          color: AppColors.textTertiary,
+                        ),
+                      ),
+                    )
                   : Container(
                       color: AppColors.backgroundCard,
                       child: const Icon(

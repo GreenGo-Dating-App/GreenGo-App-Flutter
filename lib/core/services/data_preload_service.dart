@@ -2,7 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 /// Warms the local Firestore cache for the heaviest first-load queries as early
-/// as possible (right after login / main navigation init), in parallel.
+/// as possible (during the post-login splash, and again from the main screen's
+/// prefetch as a no-op), in parallel.
 ///
 /// Firestore offline persistence is already enabled, so once these documents
 /// are in the local cache every screen renders instantly from cache while the
@@ -27,9 +28,11 @@ class DataPreloadService {
       } catch (_) {/* best-effort cache warming */}
     }
 
+    // The own profile doc is not warmed here: AuthWrapper and the main screen
+    // already read it from the server during startup. Events and Discovery
+    // are warmed by their own prefetchers (EventsPrefetch, DiscoveryPrefetch),
+    // which mirror those screens' exact queries.
     await Future.wait([
-      // Own profile (used everywhere).
-      guard(fs.collection('profiles').doc(userId).get()),
       // 1:1 conversations inbox.
       guard(fs
           .collection('conversations')
@@ -47,13 +50,6 @@ class DataPreloadService {
           .orderBy('updatedAt', descending: true)
           .limit(30)
           .get()),
-      // Upcoming events (Events tab first paint).
-      guard(fs
-          .collection('events')
-          .where('status', isEqualTo: 'published')
-          .orderBy('startDate')
-          .limit(30)
-          .get()),
       // Communities — Discover (public), so the tab opens from the warm cache.
       guard(fs
           .collection('communities')
@@ -65,12 +61,14 @@ class DataPreloadService {
       guard(fs
           .collection('communities')
           .where('createdByUserId', isEqualTo: userId)
+          .limit(50)
           .get()),
       // The user's community memberships (drives the Joined tab), which also
       // warms the member docs those queries read.
       guard(fs
           .collectionGroup('members')
           .where('userId', isEqualTo: userId)
+          .limit(50)
           .get()),
     ]);
     debugPrint('DataPreloadService: cache warmed for $userId');
