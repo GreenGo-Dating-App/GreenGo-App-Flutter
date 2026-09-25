@@ -136,7 +136,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
       _isLocalGuide = profileState.profile.isLocalGuide;
       _userLanguages = profileState.profile.preferredLanguages;
       _isBusiness = profileState.profile.isBusiness;
-      _membershipTier = profileState.profile.membershipTier;
+      _membershipTier = profileState.profile.effectiveTier;
     }
   }
 

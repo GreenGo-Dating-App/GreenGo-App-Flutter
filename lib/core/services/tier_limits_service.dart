@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../features/membership/domain/entities/membership.dart';
+import 'effective_tier.dart';
 import 'tier_entitlements.dart';
 
 /// Result of a tier-limit check.
@@ -50,9 +51,8 @@ class TierLimitsService {
   Future<MembershipTier> _tierOf(String userId) async {
     try {
       final doc = await _firestore.collection('profiles').doc(userId).get();
-      final raw = doc.data()?['membershipTier'] as String?;
-      if (raw == null) return MembershipTier.free;
-      return MembershipTier.fromString(raw);
+      // Effective tier: an expired paid tier counts as free.
+      return effectiveTierFromDoc(doc.data());
     } catch (_) {
       return MembershipTier.free;
     }

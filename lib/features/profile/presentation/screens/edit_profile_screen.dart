@@ -255,7 +255,7 @@ class EditProfileScreen extends StatelessWidget {
             // storefront-oriented menu; dating-style personal items (voice
             // intro, About Me body-stats) are hidden for them.
             final isBusinessActive = TierEntitlements.isBusinessActive(
-                activeProfile.membershipTier, activeProfile.isBusiness);
+                activeProfile.effectiveTier, activeProfile.isBusiness);
 
             return SingleChildScrollView(
               keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
@@ -286,10 +286,10 @@ class EditProfileScreen extends StatelessWidget {
                             ),
                           ),
                         ),
-                        if (activeProfile.membershipTier != MembershipTier.free) ...[
+                        if (activeProfile.effectiveTier != MembershipTier.free) ...[
                           const SizedBox(width: 10),
                           MembershipBadge(
-                            tier: activeProfile.membershipTier,
+                            tier: activeProfile.effectiveTier,
                             compact: true,
                           ),
                         ],
@@ -1707,7 +1707,7 @@ class EditProfileScreen extends StatelessWidget {
       MaterialPageRoute(
         builder: (context) => UsageStatsScreen(
           userId: profile.userId,
-          membershipTier: profile.membershipTier,
+          membershipTier: profile.effectiveTier,
           profile: profile,
         ),
       ),
@@ -1843,9 +1843,9 @@ class EditProfileScreen extends StatelessWidget {
 
   Future<void> _toggleIncognito(BuildContext context, Profile profile, bool enabled) async {
     // Ghost Mode: free & unlimited for Gold, Platinum, Test tiers
-    final isGhostEligible = profile.membershipTier == MembershipTier.gold ||
-        profile.membershipTier == MembershipTier.platinum ||
-        profile.membershipTier == MembershipTier.test;
+    final isGhostEligible = profile.effectiveTier == MembershipTier.gold ||
+        profile.effectiveTier == MembershipTier.platinum ||
+        profile.effectiveTier == MembershipTier.test;
 
     if (enabled) {
       if (isGhostEligible) {
@@ -2040,14 +2040,14 @@ class EditProfileScreen extends StatelessWidget {
     // Tier gate: Traveler Mode requires a paid plan (Base is blocked with an
     // upgrade prompt). Resolved from the already-loaded profile tier.
     if (!await TierGate()
-        .ensureTravelMode(context, profile.userId, knownTier: profile.membershipTier)) {
+        .ensureTravelMode(context, profile.userId, knownTier: profile.effectiveTier)) {
       return;
     }
     if (!context.mounted) return;
 
     // Platinum gets it free, Gold pays 100 coins
-    final isPlatinum = profile.membershipTier == MembershipTier.platinum ||
-        profile.membershipTier == MembershipTier.test;
+    final isPlatinum = profile.effectiveTier == MembershipTier.platinum ||
+        profile.effectiveTier == MembershipTier.test;
 
     // Show confirmation dialog
     final costText = isPlatinum ? 'Free with Platinum' : '${CoinFeaturePrices.traveler} coins';
@@ -2215,8 +2215,8 @@ class _TravelerToggleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isActive = profile.isTravelerActive;
-    final isPlatinum = profile.membershipTier == MembershipTier.platinum ||
-        profile.membershipTier == MembershipTier.test;
+    final isPlatinum = profile.effectiveTier == MembershipTier.platinum ||
+        profile.effectiveTier == MembershipTier.test;
 
     final remaining = isActive && profile.travelerExpiry != null
         ? profile.travelerExpiry!.difference(DateTime.now())
@@ -2491,9 +2491,9 @@ class _IncognitoToggleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isGhostEligible = profile.membershipTier == MembershipTier.gold ||
-        profile.membershipTier == MembershipTier.platinum ||
-        profile.membershipTier == MembershipTier.test;
+    final isGhostEligible = profile.effectiveTier == MembershipTier.gold ||
+        profile.effectiveTier == MembershipTier.platinum ||
+        profile.effectiveTier == MembershipTier.test;
 
     // Ghost mode: uses isGhostMode field. Incognito: uses isIncognito + expiry.
     final bool isActive;

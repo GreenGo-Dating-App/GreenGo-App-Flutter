@@ -55,71 +55,81 @@ exports.claimReleaseBonus = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
-/** Tiers that get nothing: there is no paid month to extend. */
-const INELIGIBLE_TIERS = ['FREE', 'free', 'TEST', 'test'];
+const effectiveTier_1 = require("../shared/effectiveTier");
+/**
+ * Eligibility comes from `profiles/{uid}` (the entitlement source of truth),
+ * NOT from `memberships/*`, which the client can write: an ACTIVE paid tier
+ * (SILVER/GOLD/PLATINUM with membershipEndDate > now) is required. FREE,
+ * legacy 'BASIC', TEST and expired tiers get nothing — extending an expired
+ * tier's end date would revive it.
+ */
 exports.claimReleaseBonus = (0, https_1.onCall)({ memory: '512MiB' }, async (request) => {
-    var _a, _b;
+    var _a;
     const uid = (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid;
     if (!uid)
         throw new https_1.HttpsError('unauthenticated', 'Sign in required.');
     const userRef = utils_1.db.collection('users').doc(uid);
+    const profileRef = utils_1.db.collection('profiles').doc(uid);
     try {
-        // Claim the flag first, in a transaction. Whoever wins goes on to grant;
-        // everyone else returns `alreadyClaimed` and writes nothing.
-        const claimed = await utils_1.db.runTransaction(async (tx) => {
+        const result = await utils_1.db.runTransaction(async (tx) => {
             var _a;
-            const snap = await tx.get(userRef);
-            if (!snap.exists)
-                return false;
-            if (((_a = snap.data()) === null || _a === void 0 ? void 0 : _a.releaseBonusGranted) === true)
-                return false;
+            const userSnap = await tx.get(userRef);
+            const profileSnap = await tx.get(profileRef);
+            if (!userSnap.exists)
+                return { granted: false, reason: 'alreadyClaimed' };
+            if (((_a = userSnap.data()) === null || _a === void 0 ? void 0 : _a.releaseBonusGranted) === true) {
+                return { granted: false, reason: 'alreadyClaimed' };
+            }
             tx.set(userRef, { releaseBonusGranted: true }, { merge: true });
-            return true;
+            const profile = profileSnap.data();
+            const now = new Date();
+            if (!(0, effectiveTier_1.hasActivePaidTier)(profile, now)) {
+                const stored = (0, effectiveTier_1.normalizeStoredTier)(profile === null || profile === void 0 ? void 0 : profile.membershipTier);
+                return {
+                    granted: false,
+                    reason: stored === 'FREE' || stored === 'BASIC' || stored === 'TEST'
+                        ? 'tierNotEligible'
+                        : 'noActiveMembership',
+                };
+            }
+            // Active paid tier: push its (future) end date by one month.
+            const currentEnd = (0, effectiveTier_1.tierDateFromValue)(profile.membershipEndDate);
+            const newEnd = new Date(currentEnd);
+            newEnd.setMonth(newEnd.getMonth() + 1);
+            const newEndTs = admin.firestore.Timestamp.fromDate(newEnd);
+            const nowTs = admin.firestore.Timestamp.now();
+            tx.set(profileRef, { membershipEndDate: newEndTs, updatedAt: nowTs }, { merge: true });
+            tx.set(userRef, { membershipEndDate: newEndTs, updatedAt: nowTs }, { merge: true });
+            return { granted: true, newEndDate: newEnd.toISOString() };
         });
-        if (!claimed) {
-            return { granted: false, reason: 'alreadyClaimed' };
+        if (!result.granted)
+            return result;
+        // Display mirror only (never read for decisions): keep the active
+        // memberships doc's endDate in step with the profile.
+        try {
+            const memberships = await utils_1.db
+                .collection('memberships')
+                .where('userId', '==', uid)
+                .where('isActive', '==', true)
+                .orderBy('createdAt', 'desc')
+                .limit(1)
+                .get();
+            if (!memberships.empty) {
+                await memberships.docs[0].ref.update({
+                    endDate: admin.firestore.Timestamp.fromDate(new Date(result.newEndDate)),
+                    updatedAt: admin.firestore.Timestamp.now(),
+                });
+            }
         }
-        // The user's active membership decides whether there is anything to extend.
-        const memberships = await utils_1.db
-            .collection('memberships')
-            .where('userId', '==', uid)
-            .where('isActive', '==', true)
-            .orderBy('createdAt', 'desc')
-            .limit(1)
-            .get();
-        if (memberships.empty) {
-            return { granted: false, reason: 'noActiveMembership' };
+        catch (e) {
+            (0, utils_1.logError)(`claimReleaseBonus: memberships mirror update failed for ${uid}`, e);
         }
-        const membership = memberships.docs[0];
-        const data = membership.data();
-        const tier = String((_b = data.tier) !== null && _b !== void 0 ? _b : 'FREE');
-        if (INELIGIBLE_TIERS.includes(tier)) {
-            return { granted: false, reason: 'tierNotEligible' };
-        }
-        // Extend from the later of "now" and the current end date, so a lapsed
-        // membership gets a month from today rather than a month from the past.
-        const currentEnd = data.endDate instanceof admin.firestore.Timestamp
-            ? data.endDate.toDate()
-            : new Date();
-        const base = currentEnd > new Date() ? currentEnd : new Date();
-        const newEnd = new Date(base);
-        newEnd.setMonth(newEnd.getMonth() + 1);
-        const newEndTs = admin.firestore.Timestamp.fromDate(newEnd);
-        const batch = utils_1.db.batch();
-        batch.update(membership.ref, {
-            endDate: newEndTs,
-            updatedAt: admin.firestore.Timestamp.now(),
-        });
-        batch.set(utils_1.db.collection('profiles').doc(uid), { membershipEndDate: newEndTs }, { merge: true });
-        await batch.commit();
-        (0, utils_1.logInfo)(`claimReleaseBonus: granted 1 month to ${uid}, new end ${newEnd.toISOString()}`);
-        return { granted: true, newEndDate: newEnd.toISOString() };
+        (0, utils_1.logInfo)(`claimReleaseBonus: granted 1 month to ${uid}, new end ${result.newEndDate}`);
+        return result;
     }
     catch (e) {
         (0, utils_1.logError)(`claimReleaseBonus failed for ${uid}`, e);
-        // The flag may already be claimed at this point. Releasing it on failure
-        // would reopen the double-grant race, so it stays claimed and the user
-        // keeps their existing membership unchanged.
+        // A failed transaction wrote nothing, so the claim is not spent.
         throw new https_1.HttpsError('internal', 'Could not claim the release bonus.');
     }
 });

@@ -125,7 +125,7 @@ async function verifyGooglePlayPurchase(productId, token) {
  * expiry so the caller can set entitlement without client-side stacking.
  */
 async function verifyGooglePlaySubscription(token) {
-    var _a, _b;
+    var _a, _b, _c, _d;
     try {
         const publisher = await getAndroidPublisher();
         const res = await publisher.purchases.subscriptionsv2.get({
@@ -135,22 +135,42 @@ async function verifyGooglePlaySubscription(token) {
         const state = ((_a = res.data) === null || _a === void 0 ? void 0 : _a.subscriptionState) || '';
         const lineItems = ((_b = res.data) === null || _b === void 0 ? void 0 : _b.lineItems) || [];
         let latestMs;
+        let productId;
         for (const li of lineItems) {
             if (li.expiryTime) {
                 const ms = new Date(li.expiryTime).getTime();
-                if (!latestMs || ms > latestMs)
+                if (!latestMs || ms > latestMs) {
                     latestMs = ms;
+                    productId = li.productId || productId;
+                }
+            }
+            else if (!productId && li.productId) {
+                productId = li.productId;
             }
         }
-        const valid = state === 'SUBSCRIPTION_STATE_ACTIVE' ||
-            state === 'SUBSCRIPTION_STATE_IN_GRACE_PERIOD' ||
-            state === 'SUBSCRIPTION_STATE_CANCELED' || // canceled but not yet expired
-            (latestMs !== undefined && latestMs > Date.now());
-        if (valid) {
-            (0, utils_1.logInfo)(`Google Play subscription verified: state=${state}`);
-            return { verified: true, expiresDateMs: latestMs, originalTransactionId: token };
+        // Not paid yet → not a purchase to act on (the client should wait).
+        if (state === 'SUBSCRIPTION_STATE_PENDING') {
+            return { verified: false, error: `Subscription state: ${state}` };
         }
-        return { verified: false, error: `Subscription state: ${state}` };
+        // A genuine Play subscription whose access is over. Reported as verified
+        // + expired so the caller can acknowledge it without granting anything
+        // (restorePurchases() replays lapsed subscriptions).
+        const lapsedState = state === 'SUBSCRIPTION_STATE_EXPIRED' ||
+            state === 'SUBSCRIPTION_STATE_ON_HOLD' ||
+            state === 'SUBSCRIPTION_STATE_PAUSED' ||
+            state === 'SUBSCRIPTION_STATE_PENDING_PURCHASE_CANCELED';
+        const expiryPassed = latestMs === undefined || latestMs <= Date.now();
+        // ACTIVE / IN_GRACE_PERIOD / CANCELED (auto-renew off) keep access only
+        // until the line item's expiryTime.
+        const expired = lapsedState || expiryPassed;
+        (0, utils_1.logInfo)(`Google Play subscription verified: state=${state} expired=${expired}`);
+        return {
+            verified: true,
+            expired,
+            expiresDateMs: latestMs,
+            originalTransactionId: token,
+            productId,
+        };
     }
     catch (error) {
         const msg = (error === null || error === void 0 ? void 0 : error.message) || String(error);
@@ -163,6 +183,13 @@ async function verifyGooglePlaySubscription(token) {
             // H4: FAIL CLOSED — an unreachable/misconfigured store API must NOT grant
             // entitlement (was `verified: true`, which handed out free coins/tiers).
             return { verified: false, apiUnavailable: true };
+        }
+        // HTTP 410: Play no longer keeps this token (subscription expired long
+        // ago). Nothing to grant; report expired so restore stops retrying it.
+        const status = (_c = error === null || error === void 0 ? void 0 : error.code) !== null && _c !== void 0 ? _c : (_d = error === null || error === void 0 ? void 0 : error.response) === null || _d === void 0 ? void 0 : _d.status;
+        if (status === 410 || msg.includes('410') || msg.includes('no longer available')) {
+            (0, utils_1.logInfo)('Google Play subscription token gone (410) — treating as expired');
+            return { verified: true, expired: true, originalTransactionId: token };
         }
         (0, utils_1.logError)('Google Play subscription verification error:', msg);
         return { verified: false, error: msg };
@@ -240,15 +267,26 @@ async function verifyAppStorePurchase(signedTransaction, expectedProductId, appA
                 error: `Product ID mismatch: expected ${expectedProductId}, got ${transaction.productId}`,
             };
         }
-        (0, utils_1.logInfo)(`App Store purchase verified: productId=${transaction.productId}, transactionId=${transaction.transactionId}`);
+        // Refunded / revoked by Apple (revocationDate set) or a subscription
+        // transaction whose period is over. Still a genuine transaction, so it is
+        // reported verified — callers that grant time-bound entitlements
+        // (memberships) must check `revoked` / `expired` and grant nothing.
+        const revoked = transaction.revocationDate !== undefined && transaction.revocationDate !== null;
+        const expiresDateMs = typeof transaction.expiresDate === 'number' ? transaction.expiresDate : undefined;
+        const expired = expiresDateMs !== undefined && expiresDateMs <= Date.now();
+        (0, utils_1.logInfo)(`App Store purchase verified: productId=${transaction.productId}, transactionId=${transaction.transactionId}` +
+            `${revoked ? ' (REVOKED)' : ''}${expired ? ' (EXPIRED)' : ''}`);
         return {
             verified: true,
+            revoked,
+            expired,
+            productId: String(transaction.productId),
             transactionId: String(transaction.transactionId),
             originalTransactionId: transaction.originalTransactionId
                 ? String(transaction.originalTransactionId)
                 : undefined,
             // For auto-renewable subscriptions StoreKit includes expiresDate (epoch ms).
-            expiresDateMs: typeof transaction.expiresDate === 'number' ? transaction.expiresDate : undefined,
+            expiresDateMs,
         };
     }
     catch (error) {

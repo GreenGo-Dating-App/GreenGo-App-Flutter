@@ -1029,6 +1029,20 @@
       ]
     },
     {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hasBaseMembership",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "baseMembershipEndDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
       "collectionGroup": "purchases",
       "queryScope": "COLLECTION",
       "fields": [

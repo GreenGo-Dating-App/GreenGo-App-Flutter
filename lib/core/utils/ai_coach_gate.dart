@@ -21,7 +21,7 @@ class AiCoachGate {
   static Future<AiCoachAccess> checkAccess(
       String userId, Profile profile) async {
     // Premium members have unlimited access
-    if (_isPremium(profile.membershipTier)) {
+    if (_isPremium(profile.effectiveTier)) {
       return const AiCoachAccess(
         hasAccess: true,
         isPremium: true,
@@ -92,7 +92,7 @@ class AiCoachGate {
   /// Check if user has access to a specific chapter.
   /// Free users can access Chapter 1 (Month 1) without trial.
   static bool hasChapterAccess(Profile profile, int chapterNumber) {
-    if (_isPremium(profile.membershipTier)) return true;
+    if (_isPremium(profile.effectiveTier)) return true;
     // Free users get Chapter 1 for free (no trial needed)
     return chapterNumber <= 1;
   }

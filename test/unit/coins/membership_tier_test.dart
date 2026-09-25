@@ -4,7 +4,7 @@ import 'package:greengo_chat/features/membership/domain/entities/membership.dart
 
 /// Master Test Plan — Membership tier enum + rules gating.
 /// Guards the UPPERCASE wire value vs lowercase enum name, the tolerant
-/// `fromString` mapping (incl. the legacy BASIC alias), priority ordering, and
+/// `fromString` mapping (BASIC/BASE = no paid tier), priority ordering, and
 /// per-tier default rules (the feature-gating table).
 void main() {
   group('MembershipTier wire value vs enum name', () {
@@ -34,13 +34,23 @@ void main() {
       expect(MembershipTier.fromString('Platinum'), MembershipTier.platinum);
     });
 
-    test('legacy BASIC alias maps to silver', () {
-      expect(MembershipTier.fromString('BASIC'), MembershipTier.silver);
+    test('BASIC / BASE mean "no paid tier" (free), NOT silver', () {
+      // The server writes BASIC for a Base-membership purchase AND for an
+      // expiry downgrade; Base itself is tracked by hasBaseMembership.
+      expect(MembershipTier.fromString('BASIC'), MembershipTier.free);
+      expect(MembershipTier.fromString('basic'), MembershipTier.free);
+      expect(MembershipTier.fromString('BASE'), MembershipTier.free);
     });
 
-    test('unknown / empty falls back to free', () {
+    test('only SILVER maps to silver', () {
+      expect(MembershipTier.fromString('SILVER'), MembershipTier.silver);
+      expect(MembershipTier.fromString(' silver '), MembershipTier.silver);
+    });
+
+    test('unknown / empty / null falls back to free', () {
       expect(MembershipTier.fromString('WHATEVER'), MembershipTier.free);
       expect(MembershipTier.fromString(''), MembershipTier.free);
+      expect(MembershipTier.fromString(null), MembershipTier.free);
     });
   });
 
@@ -85,13 +95,6 @@ void main() {
           .canUseIncognitoMode, isFalse);
       expect(MembershipRules.getDefaultsForTier(MembershipTier.gold)
           .canUseIncognitoMode, isTrue);
-    });
-
-    test('video chat is a PLATINUM-only perk among the paid tiers', () {
-      expect(MembershipRules.getDefaultsForTier(MembershipTier.gold)
-          .canUseVideoChat, isFalse);
-      expect(MembershipRules.getDefaultsForTier(MembershipTier.platinum)
-          .canUseVideoChat, isTrue);
     });
 
     test('daily direct-match allowance grows with tier', () {

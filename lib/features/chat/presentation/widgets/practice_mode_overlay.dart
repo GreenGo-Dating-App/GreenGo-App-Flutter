@@ -25,7 +25,7 @@ import '../../../membership/domain/entities/membership.dart';
 /// PracticeModeToggle(
 ///   isActive: _practiceModeActive,
 ///   onToggle: (active) => setState(() => _practiceModeActive = active),
-///   membershipTier: currentUserProfile.membershipTier,
+///   membershipTier: currentUserProfile.effectiveTier,
 ///   userId: currentUserId,
 /// )
 ///

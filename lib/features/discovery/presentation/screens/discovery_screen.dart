@@ -1054,7 +1054,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     final visibleCount = filteredCards.length.clamp(0, limit);
     final visibleCards = filteredCards.take(visibleCount).toList();
     final hasMore = filteredCards.length > limit && limit < _gridMaxProfiles;
-    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final tier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
 
     final tourL10n = AppLocalizations.of(context)!;
 
@@ -1504,7 +1504,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     if (!wasMember) await _loadCurrentUserProfile(forceServer: true);
 
     // Dispatch the swipe action to the bloc with membership data for limit checks
-    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final tier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
     final rules = MembershipRules.getDefaultsForTier(tier);
     // Track the card being actioned so we can revert its overlay if the limit is hit
     _lastAttemptedGridCardId = card.userId;
@@ -1799,7 +1799,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         break;
     }
 
-    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final tier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
     final rules = MembershipRules.getDefaultsForTier(tier);
     debugPrint('Dispatching DiscoveryGridSwipeRecorded (swipe mode): userId=$userId, target=${card.userId}, action=$actionType');
     context.read<DiscoveryBloc>().add(
@@ -1852,7 +1852,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       _openSupportChat();
       return;
     }
-    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final tier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
     final rules = MembershipRules.getDefaultsForTier(tier);
     context.read<DiscoveryBloc>().add(
           DiscoveryGridSwipeRecorded(

@@ -941,7 +941,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
   MembershipTier get _membershipTier {
     final profileState = context.read<ProfileBloc>().state;
     if (profileState is ProfileLoaded) {
-      return profileState.profile.membershipTier;
+      return profileState.profile.effectiveTier;
     }
     return MembershipTier.free;
   }

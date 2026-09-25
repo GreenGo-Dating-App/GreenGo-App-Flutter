@@ -12,9 +12,17 @@ enum MembershipTier {
   final String value;
   const MembershipTier(this.value);
 
-  static MembershipTier fromString(String value) {
-    switch (value.toUpperCase()) {
-      case 'BASIC':
+  /// Parses a STORED tier string (case-insensitive).
+  ///
+  /// 'BASIC' / 'BASE' mean "no paid tier": the server writes 'BASIC' both for
+  /// a Base-membership purchase and for an expiry downgrade. Base membership
+  /// itself is tracked separately (`hasBaseMembership` +
+  /// `baseMembershipEndDate`), so they map to [MembershipTier.free].
+  ///
+  /// This is the RAW stored tier — it ignores the end date. Gate features on
+  /// `effectiveTier(...)` (lib/core/services/effective_tier.dart) instead.
+  static MembershipTier fromString(String? value) {
+    switch ((value ?? '').trim().toUpperCase()) {
       case 'SILVER':
         return MembershipTier.silver;
       case 'GOLD':

@@ -645,26 +645,11 @@ class AccessControlService {
     );
   }
 
-  /// Update user's membership tier and recalculate access date
-  Future<void> updateMembershipTier(String userId, SubscriptionTier tier) async {
-    // Get current early access status
-    final userDoc = await _firestore.collection('users').doc(userId).get();
-    final hasEarlyAccess = userDoc.data()?['hasEarlyAccess'] as bool? ?? false;
-
-    // Recalculate access date: early access list takes priority, then tier-based
-    final DateTime accessDate;
-    if (hasEarlyAccess) {
-      accessDate = earlyAccessDate;
-    } else {
-      accessDate = getAccessDateForSubscriptionTier(tier);
-    }
-
-    await _firestore.collection('users').doc(userId).update({
-      'membershipTier': tier.name.toLowerCase(),
-      'accessDate': Timestamp.fromDate(accessDate),
-      'updatedAt': FieldValue.serverTimestamp(),
-    });
-  }
+  // `updateMembershipTier` (a client write of the `users/{uid}.membershipTier`
+  // mirror) was removed: nothing called it, and `users.*` tier fields are an
+  // untrusted mirror. `users.membershipTier` here is only the PRE-LAUNCH access
+  // tier (countdown date / tester flag) written at registration — paid
+  // features are gated on the profile's effective tier (effective_tier.dart).
 
   /// Enable notifications for the user
   Future<void> enableNotifications(String userId) async {

@@ -456,13 +456,13 @@ class _EventRow extends StatelessWidget {
 
   Future<void> _openAnalytics(BuildContext context) async {
     final allowed = await TierGate()
-        .ensureAnalytics(context, _uid, knownTier: profile.membershipTier);
+        .ensureAnalytics(context, _uid, knownTier: profile.effectiveTier);
     if (!allowed || !context.mounted) return;
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => EventAnalyticsScreen(
           eventId: event.id,
-          tier: profile.membershipTier,
+          tier: profile.effectiveTier,
           eventTitle: event.title,
         ),
       ),

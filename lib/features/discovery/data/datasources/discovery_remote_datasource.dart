@@ -17,6 +17,7 @@ import '../../domain/entities/match_preferences.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../models/match_model.dart';
 import '../models/swipe_action_model.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Discovery Remote Data Source Interface
 abstract class DiscoveryRemoteDataSource {
@@ -321,8 +322,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
          (currentUserData['isSupport'] as bool? ?? false));
 
     // Determine viewer's tier for boost visibility limit
-    final viewerTierStr = currentUserData?['membershipTier'] as String? ?? 'FREE';
-    final maxBoostedVisible = _getMaxBoostedVisible(viewerTierStr);
+    // EFFECTIVE tier — an expired paid tier gets the free allowance.
+    final maxBoostedVisible =
+        _getMaxBoostedVisible(effectiveTierFromDoc(currentUserData).value);
 
     // Admin/support users bypass all discovery preference filters (see all users)
     var filteredCandidates = candidates.toList();
@@ -798,7 +800,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       blockedUserIds: blockedUserIds,
       showSupportUser: false,
       isViewerPrivileged: viewer.isAdmin || viewer.isSupport,
-      maxBoostedVisible: _getMaxBoostedVisible(viewer.membershipTier.value),
+      maxBoostedVisible: _getMaxBoostedVisible(viewer.effectiveTier.value),
       viewerId: userId,
     ).where((c) => !c.profile.isBusiness).take(limit).toList();
 

@@ -19,16 +19,21 @@
 import { onRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
-import { TierName } from '../shared/grants';
 import {
   decodeAppStoreNotification,
   getGooglePlaySubscriptionExpiry,
 } from '../shared/purchase_verification';
-import { PRODUCT_CONFIG } from './index';
+import { PRODUCT_CONFIG, BASE_CATALOG_ID, toCatalogId } from './index';
 import { monitored } from '../shared/monitoring';
-
-const TIER_RANK: Record<string, number> = { BASIC: 0, SILVER: 1, GOLD: 2, PLATINUM: 3 };
-const BASE_PRODUCT_ID = 'greengo_base_membership';
+import { SubscriptionStatus } from '../shared/types';
+import {
+  effectiveTier,
+  hasActivePaidTier,
+  normalizeStoredTier,
+  tierDateFromValue,
+  tierRank,
+} from '../shared/effectiveTier';
+import { downgradeTierNow } from '../shared/membershipExpiry';
 
 interface MatchedSub {
   userId: string;
@@ -59,77 +64,93 @@ async function applyRenewal(
   productId: string,
   expiryMs: number,
 ): Promise<void> {
-  // iOS subscription IDs are prefixed `subscription_`; normalize to catalog key.
-  const catalogId = productId.replace(/^subscription_/, '');
+  // iOS prefixes `subscription_`; Play uses bespoke IDs → PLAY_TO_CANONICAL.
+  const catalogId = toCatalogId(productId);
   const config = PRODUCT_CONFIG[catalogId];
   if (!config) {
     logError(`applyRenewal: unknown productId ${productId}`);
     return;
   }
+  if (expiryMs <= Date.now()) {
+    logInfo(`applyRenewal: ${productId} for ${userId} already expired — ignoring`);
+    return;
+  }
   const now = admin.firestore.Timestamp.now();
   const expiry = admin.firestore.Timestamp.fromMillis(expiryMs);
+  const profileSnap = await db.collection('profiles').doc(userId).get();
+  const profile = profileSnap.data() || {};
 
-  if (catalogId === BASE_PRODUCT_ID) {
-    // Base membership renews independently of the paid VIP tier.
+  if (catalogId === BASE_CATALOG_ID) {
+    // Base membership renews independently of the paid VIP tier. Never
+    // shorten a longer existing Base period.
+    const currentBaseEnd = tierDateFromValue(profile.baseMembershipEndDate);
+    const newEnd = currentBaseEnd && currentBaseEnd.getTime() > expiryMs
+      ? admin.firestore.Timestamp.fromDate(currentBaseEnd)
+      : expiry;
     await db.collection('profiles').doc(userId).set(
       {
         hasBaseMembership: true,
-        baseMembershipEndDate: expiry,
+        baseMembershipEndDate: newEnd,
         baseMembershipSource: 'purchase',
         updatedAt: now,
       },
       { merge: true },
     );
-    logInfo(`Renewal: extended BASE membership for ${userId} to ${expiry.toDate().toISOString()}`);
+    logInfo(`Renewal: extended BASE membership for ${userId} to ${newEnd.toDate().toISOString()}`);
     return;
   }
 
   const tier = config.tier;
-  const profileSnap = await db.collection('profiles').doc(userId).get();
-  const currentTier = (profileSnap.data()?.membershipTier as string) || 'BASIC';
-  const currentEnd = (profileSnap.data()?.membershipEndDate as admin.firestore.Timestamp | undefined)
-    ?.toDate();
-  const currentActive = currentEnd ? currentEnd.getTime() > Date.now() : false;
-
+  const current = effectiveTier(profile);
   // Never downgrade an active, higher tier.
-  if (currentActive && (TIER_RANK[currentTier] ?? 0) > (TIER_RANK[tier] ?? 0)) {
-    logInfo(
-      `Renewal for ${userId}: keeping higher active tier ${currentTier} over renewed ${tier}`,
-    );
+  if (hasActivePaidTier(profile) && tierRank(current) > tierRank(tier)) {
+    logInfo(`Renewal for ${userId}: keeping higher active tier ${current} over renewed ${tier}`);
     return;
   }
+  // Same tier: never shorten remaining time.
+  const currentEnd = tierDateFromValue(profile.membershipEndDate);
+  const newEnd =
+    normalizeStoredTier(profile.membershipTier) === tier && currentEnd && currentEnd.getTime() > expiryMs
+      ? admin.firestore.Timestamp.fromDate(currentEnd)
+      : expiry;
 
   await db.collection('profiles').doc(userId).set(
-    { membershipTier: tier, membershipEndDate: expiry, updatedAt: now },
+    { membershipTier: tier, membershipEndDate: newEnd, membershipSource: 'purchase', updatedAt: now },
     { merge: true },
   );
-  await db.collection('users').doc(userId).set(
-    { subscriptionTier: tier, membershipEndDate: expiry, updatedAt: now },
-    { merge: true },
-  );
-  logInfo(`Renewal: ${userId} -> ${tier} until ${expiry.toDate().toISOString()}`);
+  const userRef = db.collection('users').doc(userId);
+  if ((await userRef.get()).exists) {
+    await userRef.set(
+      { subscriptionTier: tier, membershipEndDate: newEnd, updatedAt: now },
+      { merge: true },
+    );
+  }
+  logInfo(`Renewal: ${userId} -> ${tier} until ${newEnd.toDate().toISOString()}`);
 }
 
 /** Immediately revoke entitlement (refund / revoke / hard expiry). */
 async function revokeEntitlement(userId: string, productId: string | undefined): Promise<void> {
   const now = admin.firestore.Timestamp.now();
-  const catalogId = (productId || '').replace(/^subscription_/, '');
-  if (catalogId === BASE_PRODUCT_ID) {
+  const catalogId = toCatalogId(productId || '');
+  if (catalogId === BASE_CATALOG_ID) {
     await db.collection('profiles').doc(userId).set(
-      { hasBaseMembership: false, baseMembershipEndDate: now, updatedAt: now },
+      { hasBaseMembership: false, baseMembershipEndDate: now, baseMembershipExpiredAt: now, updatedAt: now },
       { merge: true },
     );
+    logInfo(`Revoked BASE membership for ${userId}`);
     return;
   }
-  await db.collection('profiles').doc(userId).set(
-    { membershipTier: 'BASIC', updatedAt: now },
-    { merge: true },
-  );
-  await db.collection('users').doc(userId).set(
-    { subscriptionTier: 'BASIC', updatedAt: now },
-    { merge: true },
-  );
-  logInfo(`Revoked entitlement for ${userId} (product ${productId})`);
+  // Only remove the tier this product granted: a refunded Silver must not
+  // wipe an active Platinum that came from elsewhere (coupon, other store).
+  const config = PRODUCT_CONFIG[catalogId];
+  const profileSnap = await db.collection('profiles').doc(userId).get();
+  const current = effectiveTier(profileSnap.data());
+  if (config && hasActivePaidTier(profileSnap.data()) && tierRank(current) > tierRank(config.tier)) {
+    logInfo(`Revoke for ${userId}: keeping higher active tier ${current} (revoked ${config.tier})`);
+    return;
+  }
+  const removed = await downgradeTierNow(userId, 'store_revoked');
+  logInfo(`Revoked entitlement for ${userId} (product ${productId}, removed ${removed ?? 'nothing'})`);
 }
 
 /** Mark a subscription's auto-renew status (cancel keeps access until expiry). */
@@ -177,7 +198,7 @@ export const appStoreNotificationsV2 = onRequest(
           if (info.productId && info.expiresDateMs) {
             await applyRenewal(match.userId, info.productId, info.expiresDateMs);
             await markSubscription(match.ref, {
-              status: 'ACTIVE',
+              status: SubscriptionStatus.ACTIVE,
               autoRenewing: true,
               storeExpiryDate: admin.firestore.Timestamp.fromMillis(info.expiresDateMs),
               endDate: admin.firestore.Timestamp.fromMillis(info.expiresDateMs),
@@ -196,7 +217,7 @@ export const appStoreNotificationsV2 = onRequest(
         case 'REVOKE':
         case 'REFUND':
           await revokeEntitlement(match.userId, info.productId);
-          await markSubscription(match.ref, { status: 'EXPIRED', autoRenewing: false });
+          await markSubscription(match.ref, { status: SubscriptionStatus.EXPIRED, autoRenewing: false });
           break;
         default:
           logInfo(`App Store notification ${info.notificationType} — no action`);
@@ -262,7 +283,7 @@ export const playStoreNotifications = onRequest(
           if (exp.expiresDateMs && productId) {
             await applyRenewal(match.userId, productId, exp.expiresDateMs);
             await markSubscription(match.ref, {
-              status: 'ACTIVE',
+              status: SubscriptionStatus.ACTIVE,
               autoRenewing: true,
               storeExpiryDate: admin.firestore.Timestamp.fromMillis(exp.expiresDateMs),
               endDate: admin.firestore.Timestamp.fromMillis(exp.expiresDateMs),
@@ -276,12 +297,18 @@ export const playStoreNotifications = onRequest(
         case PLAY.EXPIRED:
         case PLAY.REVOKED:
           await revokeEntitlement(match.userId, match.data.productId as string);
-          await markSubscription(match.ref, { status: 'EXPIRED', autoRenewing: false });
+          await markSubscription(match.ref, { status: SubscriptionStatus.EXPIRED, autoRenewing: false });
+          break;
+        case PLAY.IN_GRACE_PERIOD:
+          // Payment issue; access continues until membershipEndDate, then the
+          // hourly expiry job downgrades unless RECOVERED extends it.
+          await markSubscription(match.ref, { status: SubscriptionStatus.IN_GRACE_PERIOD });
           break;
         case PLAY.ON_HOLD:
-        case PLAY.IN_GRACE_PERIOD:
-          // Payment issue; keep access during grace, just flag it.
-          await markSubscription(match.ref, { status: 'GRACE' });
+          // Grace is over and payment still failing: Play has suspended access.
+          // Status only — membershipEndDate (Play's expiryTime) has passed, so
+          // the hourly expiry job downgrades; RECOVERED → applyRenewal restores.
+          await markSubscription(match.ref, { status: SubscriptionStatus.ON_HOLD });
           break;
         default:
           logInfo(`Play RTDN type ${notificationType} — no action`);

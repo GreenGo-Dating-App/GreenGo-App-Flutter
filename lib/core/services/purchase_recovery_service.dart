@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../constants/product_catalog.dart';
 import '../di/injection_container.dart' as di;
@@ -60,6 +61,37 @@ class PurchaseRecoveryService {
   final Set<String> _handled = <String>{};
 
   bool get _isMobile => !kIsWeb && (Platform.isAndroid || Platform.isIOS);
+
+  /// A RESTORED membership is re-verified at most once per this interval per
+  /// product. restorePurchases() replays every historical transaction on each
+  /// launch; re-verifying them all every time is wasted work and, while the
+  /// server did not reject lapsed receipts, re-granted expired tiers.
+  static const Duration membershipReverifyInterval = Duration(days: 1);
+  static const String _reverifyKeyPrefix = 'iap_membership_reverified_';
+
+  String _reverifyKey(String userId, String productId) =>
+      '$_reverifyKeyPrefix$userId:${ProductCatalog.canonicalId(productId)}';
+
+  Future<bool> _reverifiedRecently(String userId, String productId) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final last = prefs.getInt(_reverifyKey(userId, productId));
+      if (last == null) return false;
+      final age = DateTime.now()
+          .difference(DateTime.fromMillisecondsSinceEpoch(last));
+      return !age.isNegative && age < membershipReverifyInterval;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  Future<void> _markReverified(String userId, String productId) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setInt(
+          _reverifyKey(userId, productId), DateTime.now().millisecondsSinceEpoch);
+    } catch (_) {}
+  }
 
   /// Start listening. Safe to call more than once; later calls are ignored.
   Future<void> initialize() async {
@@ -137,12 +169,23 @@ class PurchaseRecoveryService {
       return;
     }
 
+    final isRestored = purchase.status == PurchaseStatus.restored;
+    if (isMembership &&
+        isRestored &&
+        await _reverifiedRecently(userId, purchase.productID)) {
+      // Already re-verified today — just acknowledge, no server round trip.
+      _handled.add(key);
+      await _finish(purchase);
+      return;
+    }
+
     try {
       if (isMembership) {
-        // Restored subscriptions are already granted; re-verifying is harmless
-        // (the server is idempotent) and repairs an entitlement that was lost
-        // between a successful charge and a failed write.
-        await _functions.httpsCallable('verifyPurchase').call<Object?>({
+        // Restored subscriptions are already granted; re-verifying (at most
+        // once a day, see [membershipReverifyInterval]) repairs an entitlement
+        // that was lost between a successful charge and a failed write.
+        final result =
+            await _functions.httpsCallable('verifyPurchase').call<Object?>({
           'userId': userId,
           'platform': Platform.isIOS ? 'ios' : 'android',
           'productId': purchase.productID,
@@ -150,6 +193,13 @@ class PurchaseRecoveryService {
               Platform.isAndroid ? receipt : (purchase.purchaseID ?? receipt),
           'verificationData': receipt,
         });
+        final data = result.data;
+        if (data is Map && data['expired'] == true) {
+          // Lapsed subscription: the server granted nothing. It is NOT an
+          // active membership — nothing to surface, nothing to change locally.
+          debugPrint('[PurchaseRecovery] ${purchase.productID} is expired — no grant');
+        }
+        if (isRestored) await _markReverified(userId, purchase.productID);
       } else {
         await di.sl<CoinRemoteDataSource>().verifyCoinPurchase(
               productId: purchase.productID,

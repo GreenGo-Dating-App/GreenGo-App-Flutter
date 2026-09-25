@@ -222,7 +222,13 @@ export {
   verifyPurchase,
   checkExpiringSubscriptions as checkExpiringMemberships,
   handleExpiredMemberships,
+  handleExpiredBaseMemberships,
 } from './subscription/index';
+
+// One-off membership tier migration ('BASIC' → 'FREE', expired paid tiers →
+// FREE, Base fields repaired). Token from MEMBERSHIP_MIGRATION_TOKEN in the
+// gitignored functions/.env; dry run unless ?dryRun=0. Delete after use.
+export { runMembershipTierMigrationNow } from './subscription/membershipMigration';
 
 // Auto-renewable subscription server notifications (renewals/cancel/refund/expiry).
 // Inert until the store notification URLs are pointed at these endpoints.
