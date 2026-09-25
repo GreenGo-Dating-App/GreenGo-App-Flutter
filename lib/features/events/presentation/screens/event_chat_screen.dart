@@ -113,10 +113,30 @@ class _EventChatScreenState extends State<EventChatScreen> {
     });
   }
 
-  /// Best display name for a message sender.
+  /// Best display name for a message sender ('' while unresolved - never the
+  /// raw uid).
   String _senderName(EventChatMessage m) {
     if (m.senderName.isNotEmpty && m.senderName != 'User') return m.senderName;
     return UserDirectoryService.instance.nameFor(m.senderId);
+  }
+
+  /// Report/block the sender, resolving the name BEFORE opening the sheet so
+  /// neither the sheet nor a persisted block entry ever carries a uid.
+  Future<void> _openReportSheet(EventChatMessage message) async {
+    final l10n = AppLocalizations.of(context)!;
+    var name = _senderName(message);
+    if (name.isEmpty) {
+      name = await UserDirectoryService.instance.displayName(message.senderId);
+    }
+    if (!mounted) return;
+    await showReportBlockSheet(
+      context,
+      reporterId: widget.currentUserId,
+      reportedUserId: message.senderId,
+      reportedUserName: name.isNotEmpty ? name : l10n.chatUnknown,
+      surface: 'eventChat:${widget.event.id}',
+      contentId: message.id,
+    );
   }
 
   @override
@@ -298,16 +318,7 @@ class _EventChatScreenState extends State<EventChatScreen> {
     // Blocking already filters this list (`_blockedIds`); reporting did not
     // exist here at all.
     return GestureDetector(
-      onLongPress: isMe
-          ? null
-          : () => showReportBlockSheet(
-                context,
-                reporterId: widget.currentUserId,
-                reportedUserId: message.senderId,
-                reportedUserName: _senderName(message),
-                surface: 'eventChat:${widget.event.id}',
-                contentId: message.id,
-              ),
+      onLongPress: isMe ? null : () => _openReportSheet(message),
       child: Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Row(
@@ -361,7 +372,10 @@ class _EventChatScreenState extends State<EventChatScreen> {
                     Padding(
                       padding: const EdgeInsets.only(bottom: 4),
                       child: Text(
-                        _senderName(message),
+                        // Unresolved: keep the line height, show nothing.
+                        _senderName(message).isEmpty
+                            ? ' '
+                            : _senderName(message),
                         style: const TextStyle(
                           color: AppColors.richGold,
                           fontSize: 12,

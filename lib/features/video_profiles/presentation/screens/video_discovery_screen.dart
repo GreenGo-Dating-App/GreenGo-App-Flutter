@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../safety/presentation/widgets/report_block_sheet.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
@@ -181,14 +182,18 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
   /// The reporter is read from FirebaseAuth rather than threaded through the
   /// widget tree: this screen had no notion of "who is watching" at all, which
   /// is part of why it shipped without a report button.
-  void _reportVideo(BuildContext context, VideoProfile video) {
+  Future<void> _reportVideo(BuildContext context, VideoProfile video) async {
     final me = FirebaseAuth.instance.currentUser?.uid;
     if (me == null || me == video.userId) return;
-    showReportBlockSheet(
+    final l10n = AppLocalizations.of(context)!;
+    // Resolve the name BEFORE opening the sheet - never show/persist a uid.
+    final name = await UserDirectoryService.instance.displayName(video.userId);
+    if (!context.mounted) return;
+    await showReportBlockSheet(
       context,
       reporterId: me,
       reportedUserId: video.userId,
-      reportedUserName: UserDirectoryService.instance.nameFor(video.userId),
+      reportedUserName: name.isNotEmpty ? name : l10n.chatUnknown,
       surface: 'videoProfile',
       contentId: video.userId,
     );

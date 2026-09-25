@@ -17,6 +17,7 @@ import '../../domain/usecases/get_group_members.dart';
 import '../../domain/usecases/group_membership.dart';
 import '../../domain/usecases/report_user.dart';
 import '../widgets/group_tags_editor.dart';
+import '../widgets/resolved_users_builder.dart';
 
 /// Group Info Screen — members list, roles, and leave action.
 ///
@@ -66,13 +67,20 @@ class GroupInfoScreen extends StatelessWidget {
           );
           final isAdmin = members
               .any((m) => m.userId == currentUserId && m.isAdmin);
-          return FutureBuilder<Map<String, UserBrief>>(
-            future: UserDirectoryService.instance
-                .resolve(members.map((m) => m.userId)),
-            builder: (context, dirSnap) {
-              final dir = dirSnap.data ?? const <String, UserBrief>{};
-              return _buildList(
-                  context, l10n, members, isAdmin, dir);
+          // Resolve the WHOLE member page (one batched, cache-first read,
+          // memoised per member set) before any row is shown; skeleton rows
+          // until then. Already-cached members render on the first frame.
+          return ResolvedUsersBuilder(
+            uids: members.map((m) => m.userId),
+            maxWait: const Duration(milliseconds: 2500),
+            placeholder: _MemberSkeletonList(count: members.length),
+            builder: (context, _) {
+              final dir = UserDirectoryService.instance;
+              return _buildList(context, l10n, members, isAdmin, {
+                for (final m in members)
+                  if (dir.cached(m.userId) != null)
+                    m.userId: dir.cached(m.userId)!,
+              });
             },
           );
         },
@@ -102,9 +110,15 @@ class GroupInfoScreen extends StatelessWidget {
                 final brief = dir[m.userId];
                 // Show only the member's NAME — never fall back to the raw user
                 // id when the name hasn't resolved yet.
+                // "Unknown" only once the server confirmed the user is gone
+                // (or they have no name at all); blank while still loading.
                 final displayName = m.userId == currentUserId
                     ? l10n.groupYou
-                    : (brief?.name ?? l10n.chatUnknown);
+                    : (brief == null
+                        ? ''
+                        : (brief.name.isNotEmpty
+                            ? brief.name
+                            : l10n.chatUnknown));
                 final photo = brief?.photoUrl;
                 final flag = languageFlagEmoji(brief?.language);
                 // Admin can remove any non-self member.
@@ -658,6 +672,35 @@ class _AddMembersSheetState extends State<_AddMembersSheet> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Placeholder rows shown while the member names/photos are being resolved.
+class _MemberSkeletonList extends StatelessWidget {
+  const _MemberSkeletonList({required this.count});
+  final int count;
+
+  @override
+  Widget build(BuildContext context) {
+    final shade = Theme.of(context).colorScheme.onSurface.withOpacity(0.08);
+    return ListView.builder(
+      itemCount: count.clamp(1, 12),
+      padding: const EdgeInsets.only(top: 48),
+      itemBuilder: (_, __) => ListTile(
+        leading: CircleAvatar(backgroundColor: shade),
+        title: Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
+            width: 140,
+            height: 14,
+            decoration: BoxDecoration(
+              color: shade,
+              borderRadius: BorderRadius.circular(7),
+            ),
+          ),
+        ),
       ),
     );
   }

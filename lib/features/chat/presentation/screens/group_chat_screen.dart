@@ -34,6 +34,7 @@ import '../../domain/entities/message.dart';
 import '../bloc/group_chat_bloc.dart';
 import '../bloc/group_chat_event.dart';
 import '../bloc/group_chat_state.dart';
+import '../widgets/resolved_users_builder.dart';
 import 'group_info_screen.dart';
 
 /// Group Chat Screen ("Culture Circle").
@@ -105,7 +106,10 @@ class _GroupChatView extends StatefulWidget {
 
 class _GroupChatViewState extends State<_GroupChatView> {
   final _controller = TextEditingController();
-  final Set<String> _resolvingNames = {};
+
+  /// Max time the message list waits for sender names before rendering anyway
+  /// (labels of still-unresolved senders stay blank — never ids).
+  static const Duration _namesMaxWait = Duration(milliseconds: 2500);
 
   // Endless scroll: open on a bounded window and page older messages in on
   // scroll (Firestore offline persistence serves them cache-first).
@@ -137,6 +141,24 @@ class _GroupChatViewState extends State<_GroupChatView> {
     super.initState();
     _loadTranslationPrefs();
     _scrollController.addListener(_onScroll);
+    _prefetchMembers();
+  }
+
+  /// Warms the user directory with every member of the group (one batched,
+  /// cache-first read), in parallel with the message stream, so the member
+  /// names are already known when their messages arrive.
+  Future<void> _prefetchMembers() async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('groups')
+          .doc(widget.groupId)
+          .get();
+      final ids = List<String>.from(
+          doc.data()?['participants'] as List? ?? const <String>[]);
+      if (ids.isNotEmpty) await UserDirectoryService.instance.resolve(ids);
+    } catch (_) {
+      // Best effort — senders are still resolved before the list renders.
+    }
   }
 
   /// Reversed list → maxScrollExtent is the TOP (oldest). Near it, grow the
@@ -287,23 +309,6 @@ class _GroupChatViewState extends State<_GroupChatView> {
     _controller.dispose();
     _scrollController.dispose();
     super.dispose();
-  }
-
-  /// Resolves display names for any message senders not yet cached, then
-  /// rebuilds so the bubbles show names instead of raw user ids.
-  void _ensureNames(Iterable<String> ids) {
-    final missing = ids
-        .toSet()
-        .where((id) =>
-            id.isNotEmpty &&
-            UserDirectoryService.instance.cached(id) == null &&
-            !_resolvingNames.contains(id))
-        .toList();
-    if (missing.isEmpty) return;
-    _resolvingNames.addAll(missing);
-    UserDirectoryService.instance.resolve(missing).then((_) {
-      if (mounted) setState(() => _resolvingNames.removeAll(missing));
-    });
   }
 
   void _send(BuildContext context) {
@@ -733,14 +738,27 @@ class _GroupChatViewState extends State<_GroupChatView> {
           }
           final messages =
               state is GroupChatLoaded ? state.messages : <Message>[];
-          _ensureNames(messages.map((m) => m.senderId));
+          // Sender names are loaded BEFORE the list is shown: the spinner stays
+          // up until every sender of the loaded page is resolved (capped at
+          // [_namesMaxWait]); later senders get a reserved, blank label that
+          // fills in when their brief arrives.
+          final senderIds = messages
+              .where((m) =>
+                  m.type != MessageType.system &&
+                  m.senderId != widget.currentUserId)
+              .map((m) => m.senderId);
           return Column(
             children: [
               Expanded(
                 child: messages.isEmpty
                     ? Center(
                         child: Text(AppLocalizations.of(context)!.groupSayHello))
-                    : ListView.builder(
+                    : ResolvedUsersBuilder(
+                        uids: senderIds,
+                        maxWait: _namesMaxWait,
+                        placeholder: const Center(
+                            child: CircularProgressIndicator()),
+                        builder: (context, _) => ListView.builder(
                         reverse: true,
                         controller: _scrollController,
                         padding: const EdgeInsets.symmetric(
@@ -758,6 +776,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                             ttsReadTranslated: _ttsReadTranslated,
                           );
                         },
+                      ),
                       ),
               ),
               _InputBar(
@@ -793,6 +812,23 @@ class _GroupMessageBubble extends StatelessWidget {
   final bool showOriginal;
   final bool ttsReadTranslated;
 
+  /// Report/block the sender. The name is resolved BEFORE the sheet opens so
+  /// the sheet (and a persisted block entry) never carries a raw uid.
+  Future<void> _openReportSheet(BuildContext context) async {
+    final l10n = AppLocalizations.of(context)!;
+    final name =
+        await UserDirectoryService.instance.displayName(message.senderId);
+    if (!context.mounted) return;
+    await showReportBlockSheet(
+      context,
+      reporterId: currentUserId,
+      reportedUserId: message.senderId,
+      reportedUserName: name.isNotEmpty ? name : l10n.chatUnknown,
+      surface: 'groupChat',
+      contentId: message.messageId,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (message.type == MessageType.system) {
@@ -818,17 +854,7 @@ class _GroupMessageBubble extends StatelessWidget {
     return Align(
       alignment: isMine ? Alignment.centerRight : Alignment.centerLeft,
       child: GestureDetector(
-        onLongPress: isMine
-            ? null
-            : () => showReportBlockSheet(
-                  context,
-                  reporterId: currentUserId,
-                  reportedUserId: message.senderId,
-                  reportedUserName:
-                      UserDirectoryService.instance.nameFor(message.senderId),
-                  surface: 'groupChat',
-                  contentId: message.messageId,
-                ),
+        onLongPress: isMine ? null : () => _openReportSheet(context),
         child: Container(
         margin: const EdgeInsets.symmetric(vertical: 3),
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -847,14 +873,22 @@ class _GroupMessageBubble extends StatelessWidget {
             if (!isMine)
               Padding(
                 padding: const EdgeInsets.only(bottom: 2),
-                child: Builder(builder: (context) {
-                  final brief =
-                      UserDirectoryService.instance.cached(message.senderId);
+                child: ListenableBuilder(
+                    listenable: UserDirectoryService.instance,
+                    builder: (context, _) {
+                  final dir = UserDirectoryService.instance;
+                  final brief = dir.cached(message.senderId);
+                  // Unresolved → keep the label line (same height) but blank:
+                  // never the raw id, never a flash of "Unknown".
                   final flag = languageFlagEmoji(brief?.language);
-                  final name = brief?.name ??
-                      UserDirectoryService.instance.nameFor(message.senderId);
+                  var name = brief?.name ?? '';
+                  if (name.isEmpty &&
+                      dir.isConfirmedMissing(message.senderId)) {
+                    name = AppLocalizations.of(context)!.chatUnknown;
+                  }
+                  final label = flag.isNotEmpty ? '$flag  $name' : name;
                   return Text(
-                    flag.isNotEmpty ? '$flag  $name' : name,
+                    label.isEmpty ? ' ' : label,
                     style: theme.textTheme.labelSmall?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: theme.colorScheme.primary,
