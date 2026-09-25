@@ -16,6 +16,7 @@ import '../../domain/usecases/record_swipe.dart';
 import '../../domain/usecases/undo_swipe.dart';
 import 'discovery_event.dart';
 import 'discovery_state.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Discovery BLoC
 ///
@@ -200,11 +201,9 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
               .doc(userId)
               .get();
           final profileData = profileDoc.data();
-          final hasBaseMembership = profileData?['hasBaseMembership'] as bool? ?? false;
-          final endTs = profileData?['baseMembershipEndDate'] as Timestamp?;
-          final isActive = hasBaseMembership &&
-              endTs != null &&
-              endTs.toDate().isAfter(DateTime.now());
+          // Same predicate as Profile.isBaseMembershipActive (active Base, an
+          // active paid tier, or TEST).
+          final isActive = isBaseMembershipActiveFromDoc(profileData);
           // Also allow test tier users through
           final memberTier = profileData?['membershipTier'] as String? ?? '';
           isTesterUser = memberTier == 'test' || memberTier == 'TEST';

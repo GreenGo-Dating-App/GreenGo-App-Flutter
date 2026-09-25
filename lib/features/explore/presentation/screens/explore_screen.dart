@@ -73,6 +73,7 @@ import 'network_discovery_screen.dart';
 import 'qr_hub_screen.dart';
 import 'universal_search_screen.dart';
 import '../../../../core/config/flavor_config.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Explore Screen — the Apple-safe home tab (tab 0) for the iOS flavor.
 ///
@@ -572,8 +573,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 .where((e) => e.isNotEmpty)
                 .toList() ??
             const <String>[];
-        final tier =
-            MembershipTier.fromString((data['membershipTier'] as String?) ?? '');
+        final tier = effectiveTierFromDoc(data);
         _tierStat = _tierShortLabel(tier);
         // Parse the full profile once for the recommendation heuristic. Best
         // effort — a parse failure just disables the "Recommended for you" row.

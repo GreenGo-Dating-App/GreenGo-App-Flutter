@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../../core/services/effective_tier.dart' as tier_rules;
 import '../../../membership/domain/entities/membership.dart';
 import 'location.dart';
 import 'social_links.dart';
@@ -266,24 +267,20 @@ class Profile extends Equatable {
           ? travelerLocation!
           : location;
 
-  /// Check if any membership is currently active
-  /// Checks both legacy base membership fields AND general membership tier fields
-  bool get isBaseMembershipActive {
-    if (membershipTier == MembershipTier.test) return true;
-    // Check general membership tier (set by subscription purchase flow)
-    if (membershipTier != MembershipTier.free &&
-        membershipEndDate != null &&
-        membershipEndDate!.isAfter(DateTime.now())) {
-      return true;
-    }
-    // Check legacy base membership fields
-    if (hasBaseMembership &&
-        baseMembershipEndDate != null &&
-        baseMembershipEndDate!.isAfter(DateTime.now())) {
-      return true;
-    }
-    return false;
-  }
+  /// The tier this user is ENTITLED to right now: the stored
+  /// [membershipTier] only while [membershipEndDate] is in the future (TEST
+  /// and admins excepted). Gate features and show badges with THIS, never
+  /// with the raw [membershipTier].
+  MembershipTier get effectiveTier =>
+      tier_rules.effectiveTierOf(membershipTier, membershipEndDate, isAdmin: isAdmin);
+
+  /// Check if any membership is currently active: an active paid tier, an
+  /// active Base membership, or TEST.
+  bool get isBaseMembershipActive => tier_rules.isBaseMembershipActive(
+        effective: effectiveTier,
+        hasBaseMembership: hasBaseMembership,
+        baseMembershipEndDate: baseMembershipEndDate,
+      );
 
   /// Check if verification was rejected or needs resubmission
   bool get needsVerificationAction =>

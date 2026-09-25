@@ -5,6 +5,7 @@
 
 import * as admin from 'firebase-admin';
 import { db, logInfo } from './utils';
+import { isPaidTier } from './effectiveTier';
 
 export type TierName = 'BASIC' | 'SILVER' | 'GOLD' | 'PLATINUM';
 
@@ -28,6 +29,13 @@ export interface MembershipExtensionResult {
  * - If `requestedTier` is same or higher rank, the user moves to `requestedTier`
  *   and the end date is pushed by `durationMs` from the later of now or current end.
  * - If user has no active membership (or it has expired), start from `now`.
+ *
+ * "Active" means an ACTIVE PAID tier (SILVER/GOLD/PLATINUM with a future end
+ * date — see shared/effectiveTier.ts). A FREE / legacy 'BASIC' / TEST profile
+ * keeps its old `membershipEndDate` for history (the expiry job does not clear
+ * it, and Base purchases used to write the Base end date there), so the end
+ * date alone must NOT count as an active membership — otherwise a new
+ * purchase would start from that stale date instead of from now.
  */
 export function computeMembershipExtension(
   currentTier: TierName | string | undefined | null,
@@ -36,14 +44,16 @@ export function computeMembershipExtension(
   durationMs: number,
   now: Date = new Date(),
 ): MembershipExtensionResult {
-  const isActive = currentEndDate !== null && currentEndDate > now;
+  const currentUpper = typeof currentTier === 'string' ? currentTier.toUpperCase() : '';
+  const isActive =
+    isPaidTier(currentUpper) && currentEndDate !== null && currentEndDate > now;
   let effectiveTier: TierName = requestedTier;
   let baseDate: Date = now;
 
   if (isActive) {
-    const currentRank = TIER_RANK[(currentTier as TierName)] ?? 0;
+    const currentRank = TIER_RANK[(currentUpper as TierName)] ?? 0;
     const requestedRank = TIER_RANK[requestedTier] ?? 0;
-    effectiveTier = requestedRank >= currentRank ? requestedTier : ((currentTier as TierName) || requestedTier);
+    effectiveTier = requestedRank >= currentRank ? requestedTier : (currentUpper as TierName);
     baseDate = currentEndDate as Date;
   }
 

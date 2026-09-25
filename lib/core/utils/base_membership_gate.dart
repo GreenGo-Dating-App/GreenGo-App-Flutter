@@ -14,7 +14,7 @@ class BaseMembershipGate {
     required String userId,
   }) async {
     if (profile == null) return false;
-    if (profile.membershipTier == MembershipTier.test) return true;
+    if (profile.effectiveTier == MembershipTier.test) return true;
     if (profile.isBaseMembershipActive) return true;
 
     // Not a member — send them to the membership screen rather than a popup.

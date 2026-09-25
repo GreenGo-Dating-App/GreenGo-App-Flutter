@@ -235,7 +235,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
   Future<void> _handleToggleStorefront(bool value) async {
     if (_isSaving || value == _isBusiness) return;
     final uid = widget.profile.userId;
-    final tier = widget.profile.membershipTier;
+    final tier = widget.profile.effectiveTier;
     final l10n = AppLocalizations.of(context)!;
 
     // Gate: Platinum-only. Surface the marketplace upsell on deny.

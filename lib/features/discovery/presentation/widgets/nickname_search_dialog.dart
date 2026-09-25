@@ -25,6 +25,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/swipe_action.dart';
 import '../../domain/usecases/record_swipe.dart';
 import '../screens/profile_detail_screen.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Nickname Search Dialog
 ///
@@ -213,12 +214,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
               .collection('profiles')
               .doc(widget.currentUserId)
               .get();
-          final memberTierStr =
-              profileDoc.data()?['membershipTier'] as String? ?? '';
-          tier = MembershipTier.values.firstWhere(
-            (t) => t.name == memberTierStr,
-            orElse: () => MembershipTier.free,
-          );
+          tier = effectiveTierFromDoc(profileDoc.data());
           rules = MembershipRules.getDefaultsForTier(tier);
         } catch (_) {
           // Fall back to free-tier rules on any lookup error.
@@ -350,21 +346,15 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
           .doc(widget.currentUserId)
           .get();
       final profileData = profileDoc.data();
-      final memberTierStr = profileData?['membershipTier'] as String? ?? '';
-      isTester = memberTierStr == 'test' || memberTierStr == 'TEST';
-      tier = MembershipTier.values.firstWhere(
-        (t) => t.name == memberTierStr,
-        orElse: () => MembershipTier.free,
-      );
+      tier = effectiveTierFromDoc(profileData);
+      isTester = tier == MembershipTier.test;
       rules = MembershipRules.getDefaultsForTier(tier);
 
       // ── Priority Connect: membership + daily limit + coins ──
       if (actionType == SwipeActionType.superLike) {
-        final hasBaseMembership = profileData?['hasBaseMembership'] as bool? ?? false;
-        final endTs = profileData?['baseMembershipEndDate'] as Timestamp?;
-        final isActive = hasBaseMembership &&
-            endTs != null &&
-            endTs.toDate().isAfter(DateTime.now());
+        // Same predicate as Profile.isBaseMembershipActive (active Base or
+        // an active paid tier).
+        final isActive = isBaseMembershipActiveFromDoc(profileData);
 
         if (!isActive && !isTester) {
           if (!mounted) return;

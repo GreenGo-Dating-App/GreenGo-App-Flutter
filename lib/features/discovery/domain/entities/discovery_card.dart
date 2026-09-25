@@ -23,7 +23,7 @@ class DiscoveryCard { // Currently visible card
   String get distanceText => candidate.distanceText;
   String get matchPercentage => candidate.matchScore.matchPercentageText;
   bool get isRecommended => candidate.isRecommended;
-  MembershipTier get membershipTier => candidate.profile.membershipTier;
+  MembershipTier get membershipTier => candidate.profile.effectiveTier;
 
   /// Get bio preview (first 100 characters)
   String get bioPreview {

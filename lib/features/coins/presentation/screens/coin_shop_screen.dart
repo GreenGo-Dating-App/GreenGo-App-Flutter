@@ -28,6 +28,7 @@ import '../../domain/entities/coin_transaction.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Coin Shop Screen
 /// Point 157: Coin purchase interface with packages and membership
@@ -241,12 +242,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           .timeout(const Duration(seconds: 10));
       if (doc.exists && mounted) {
         final data = doc.data();
-        final tierString = data?['membershipTier'] as String?;
-        if (tierString != null) {
-          setState(() {
-            _currentTier = SubscriptionTierExtension.fromString(tierString);
-          });
-        }
+        // EFFECTIVE tier: an expired paid tier is no longer the "current plan",
+        // so every tier is purchasable again (no downgrade lock from a lapsed
+        // Platinum). While a tier is active the upgrade/downgrade UX stays.
+        setState(() {
+          _currentTier =
+              SubscriptionTierExtension.fromString(effectiveTierFromDoc(data).value);
+        });
         // Load base membership state and membership end date
         setState(() {
           _hasBaseMembership = data?['hasBaseMembership'] as bool? ?? false;
@@ -337,6 +339,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       DateTime? endDate;
       try {
         final res = await _verifyMembershipOnServer(purchaseDetails);
+        if (_isExpiredReceipt(res)) {
+          // The store handed back a lapsed Base receipt: not an active
+          // membership. No success UI, no local state change.
+          await _completeAndConsume(purchaseDetails);
+          if (mounted) setState(() => _isLoadingSubscription = false);
+          return;
+        }
         final endIso = res['endDate'] as String?;
         endDate = endIso != null ? DateTime.tryParse(endIso) : null;
       } catch (e) {
@@ -436,6 +445,17 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       DateTime? newEndDate;
       try {
         final res = await _verifyMembershipOnServer(purchaseDetails);
+        if (_isExpiredReceipt(res)) {
+          // Lapsed tier receipt: the server granted nothing, so neither do we.
+          await _completeAndConsume(purchaseDetails);
+          if (mounted) {
+            setState(() {
+              _isLoadingSubscription = false;
+              _selectedTier = null;
+            });
+          }
+          return;
+        }
         final endIso = res['endDate'] as String?;
         newEndDate = endIso != null ? DateTime.tryParse(endIso) : null;
       } catch (e) {
@@ -554,6 +574,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   ///             paid for and the cheaper plan starts at the next renewal.
   ///             Never prorate a downgrade — it refunds mid-cycle and invites
   ///             chargebacks.
+  ///
+  /// NB: [_tierRank] is INVERTED (1 = Platinum yearly, 6 = Silver monthly), so
+  /// `new < old` below means the new plan is HIGHER — an upgrade.
   ReplacementMode _replacementModeFor(String newStoreProductId) {
     final oldSub = _activeTierSub;
     if (oldSub == null) return ReplacementMode.withTimeProration;
@@ -650,6 +673,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// `verifyPurchase` Cloud Function validates the store receipt and writes the
   /// entitlement (tier, store-authoritative end date, base flag, bonus coins).
   /// Returns the function result (`tier`, `endDate`, `coinsGranted`).
+  /// `verifyPurchase` answers `{verified: true, expired: true}` — and writes
+  /// nothing — when the receipt belongs to a subscription that has already
+  /// lapsed. That is NOT an active membership.
+  bool _isExpiredReceipt(Map<String, dynamic> res) => res['expired'] == true;
+
   Future<Map<String, dynamic>> _verifyMembershipOnServer(PurchaseDetails p) async {
     final token = p.verificationData.serverVerificationData;
     final result = await FirebaseFunctions.instance

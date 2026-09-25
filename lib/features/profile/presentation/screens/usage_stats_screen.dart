@@ -17,6 +17,7 @@ import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/profile.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Usage Stats Screen
 ///
@@ -74,30 +75,14 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
         .snapshots()
         .listen((doc) {
       if (!mounted || !doc.exists) return;
-      final data = doc.data()!;
-      final tierStr = data['membershipTier'] as String?;
-      if (tierStr != null) {
-        final newTier = _membershipTierFromString(tierStr);
-        if (newTier != _liveMembershipTier) {
-          setState(() {
-            _liveMembershipTier = newTier;
-          });
-        }
+      // Effective tier: an expired paid tier shows (and limits) as free.
+      final newTier = effectiveTierFromDoc(doc.data());
+      if (newTier != _liveMembershipTier) {
+        setState(() {
+          _liveMembershipTier = newTier;
+        });
       }
     });
-  }
-
-  MembershipTier _membershipTierFromString(String tierStr) {
-    switch (tierStr.toUpperCase()) {
-      case 'PLATINUM':
-        return MembershipTier.platinum;
-      case 'GOLD':
-        return MembershipTier.gold;
-      case 'SILVER':
-        return MembershipTier.silver;
-      default:
-        return MembershipTier.free;
-    }
   }
 
   String _getHourKey() {

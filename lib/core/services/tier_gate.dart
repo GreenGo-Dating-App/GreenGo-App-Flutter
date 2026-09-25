@@ -10,6 +10,7 @@ import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../di/injection_container.dart' as di;
 import '../widgets/limit_reached_dialog.dart';
+import 'effective_tier.dart';
 import 'tier_entitlements.dart';
 import 'tier_limits_service.dart';
 import 'usage_limit_service.dart';
@@ -67,8 +68,10 @@ class TierGate {
 
   // ── Tier resolution ────────────────────────────────────────────────────────
 
-  /// Reads the user's membership tier from `profiles/{uid}.membershipTier`.
-  /// Falls back to [MembershipTier.free] on any error or missing value.
+  /// Resolves the user's EFFECTIVE tier from `profiles/{uid}` — the stored
+  /// `membershipTier` only while `membershipEndDate` is in the future (see
+  /// [effectiveTierFromDoc]). Falls back to [MembershipTier.free] on any
+  /// error or missing value.
   Future<MembershipTier> resolveTier(String uid) async {
     try {
       // Hard timeout: an online-but-degraded Firestore socket can leave a
@@ -80,9 +83,7 @@ class TierGate {
           .doc(uid)
           .get()
           .timeout(const Duration(seconds: 6));
-      final raw = doc.data()?['membershipTier'] as String?;
-      if (raw == null) return MembershipTier.free;
-      return MembershipTier.fromString(raw);
+      return effectiveTierFromDoc(doc.data());
     } catch (_) {
       return MembershipTier.free;
     }
@@ -298,26 +299,26 @@ class TierGate {
   /// Whether [p]'s GreenGo membership is currently VALID.
   ///
   /// A valid membership is the precondition for chatting, creating groups and
-  /// creating events. The default active Base (free) membership is ALWAYS
-  /// valid — this only returns false on a REAL not-valid signal:
-  ///   • a paid tier whose [Profile.membershipEndDate] is in the past, or
-  ///   • a legacy base membership whose [Profile.baseMembershipEndDate] has
-  ///     passed.
-  /// With no such signal it defaults to `true`, so normal users are never
-  /// blocked.
-  bool hasValidMembership(Profile p) {
-    if (p.membershipTier == MembershipTier.test) return true;
-    final now = DateTime.now();
-    // Expired PAID membership.
-    if (p.membershipTier != MembershipTier.free &&
-        p.membershipEndDate != null &&
-        !p.membershipEndDate!.isAfter(now)) {
-      return false;
-    }
+  /// creating events. A lapsed PAID tier is NOT a not-valid signal on its own:
+  /// the user simply falls back to what they had before (Base / free), exactly
+  /// as after the server's downgrade job. This only returns false when a
+  /// legacy base membership's [Profile.baseMembershipEndDate] has passed and
+  /// no paid tier is active. With no such signal it defaults to `true`, so
+  /// normal users are never blocked.
+  bool hasValidMembership(Profile p) => _isValid(
+        effective: p.effectiveTier,
+        hasBase: p.hasBaseMembership,
+        baseEnd: p.baseMembershipEndDate,
+      );
+
+  static bool _isValid({
+    required MembershipTier effective,
+    required bool hasBase,
+    required DateTime? baseEnd,
+  }) {
+    if (effective != MembershipTier.free) return true; // active paid / TEST
     // Expired legacy base membership.
-    if (p.hasBaseMembership &&
-        p.baseMembershipEndDate != null &&
-        !p.baseMembershipEndDate!.isAfter(now)) {
+    if (hasBase && baseEnd != null && !baseEnd.isAfter(DateTime.now())) {
       return false;
     }
     return true; // active Base / free → allowed by default.
@@ -350,25 +351,11 @@ class TierGate {
       final doc = await _firestore.collection('profiles').doc(uid).get();
       final data = doc.data();
       if (data == null) return true; // no signal → allowed.
-      final raw = data['membershipTier'] as String?;
-      final tier =
-          raw == null ? MembershipTier.free : MembershipTier.fromString(raw);
-      if (tier == MembershipTier.test) return true;
-      final now = DateTime.now();
-      final endTs = data['membershipEndDate'];
-      final endDate = endTs is Timestamp ? endTs.toDate() : null;
-      if (tier != MembershipTier.free &&
-          endDate != null &&
-          !endDate.isAfter(now)) {
-        return false;
-      }
-      final hasBase = data['hasBaseMembership'] as bool? ?? false;
-      final baseTs = data['baseMembershipEndDate'];
-      final baseEnd = baseTs is Timestamp ? baseTs.toDate() : null;
-      if (hasBase && baseEnd != null && !baseEnd.isAfter(now)) {
-        return false;
-      }
-      return true;
+      return _isValid(
+        effective: effectiveTierFromDoc(data),
+        hasBase: data['hasBaseMembership'] as bool? ?? false,
+        baseEnd: tierDateFromValue(data['baseMembershipEndDate']),
+      );
     } catch (_) {
       return true; // never block on error.
     }

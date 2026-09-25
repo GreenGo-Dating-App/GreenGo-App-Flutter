@@ -340,6 +340,10 @@ class TierEntitlements {
   /// free/base on expiry), the account keeps its [isBusiness] flag but operates
   /// as a normal Base account until Platinum is renewed — at which point the
   /// business capabilities are restored automatically.
+  ///
+  /// [tier] MUST be the EFFECTIVE tier (`Profile.effectiveTier` /
+  /// `effectiveTierFromDoc`), never the raw stored `membershipTier` — the
+  /// stored string still says PLATINUM until the server downgrade job runs.
   static bool isBusinessActive(MembershipTier tier, bool isBusiness) {
     return isBusiness &&
         (tier == MembershipTier.platinum || tier == MembershipTier.test);

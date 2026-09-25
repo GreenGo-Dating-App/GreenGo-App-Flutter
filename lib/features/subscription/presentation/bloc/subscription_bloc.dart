@@ -2,10 +2,13 @@ import 'dart:async';
 import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../../../core/constants/product_catalog.dart';
+import '../../../../core/services/effective_tier.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/subscription.dart';
 import '../../domain/usecases/get_current_subscription.dart';
 import '../../domain/usecases/purchase_subscription.dart' as domain;
@@ -134,13 +137,6 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     }
   }
 
-  static const _tierRanks = {
-    'BASIC': 0,
-    'SILVER': 1,
-    'GOLD': 2,
-    'PLATINUM': 3,
-  };
-
   int _tierRankFromProductId(String productId) {
     if (productId.contains('platinum')) return 3;
     if (productId.contains('gold')) return 2;
@@ -162,16 +158,15 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
               .collection('profiles')
               .doc(_currentUserId)
               .get();
-          final currentTier = profileDoc.data()?['membershipTier'] as String?;
-          final endDate = profileDoc.data()?['membershipEndDate'] as Timestamp?;
-          final isActive = endDate != null && endDate.toDate().isAfter(DateTime.now());
-
-          if (isActive && currentTier != null) {
-            final currentRank = _tierRanks[currentTier.toUpperCase()] ?? 0;
+          // EFFECTIVE tier: an expired paid tier (or 'BASIC' = Base/free)
+          // never blocks a purchase — every tier is buyable again.
+          final current = effectiveTierFromDoc(profileDoc.data());
+          if (current != MembershipTier.free && current != MembershipTier.test) {
+            final currentRank = current.priority;
             final purchaseRank = _tierRankFromProductId(event.product.id);
             if (purchaseRank < currentRank) {
               emit(SubscriptionError(
-                'You already have a $currentTier membership. You cannot buy a lower tier while it is active.',
+                'You already have a ${current.value} membership. You cannot buy a lower tier while it is active.',
               ));
               return;
             }
@@ -233,129 +228,51 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
   ) async {
     for (final purchase in event.purchases) {
       if (purchase.status == PurchaseStatus.purchased) {
-        // Purchase successful - verify it
-        final tier = _getTierFromProductId(purchase.productID);
-        final tierName = tier.name.toUpperCase();
+        // Only membership products belong to this bloc; coin packs are
+        // verified by their own flows (coin shop / PurchaseRecoveryService).
+        final canonicalId = ProductCatalog.canonicalId(purchase.productID);
+        if (!ProductCatalog.canonicalIds.contains(canonicalId)) continue;
+
         final userId = _currentUserId;
-        var newEndDate = DateTime.now().add(const Duration(days: 30));
-        var coinsGranted = 0;
+        if (userId == null) continue; // PurchaseRecoveryService picks it up.
 
-        // Update the user's profile membershipTier in Firestore
+        // The SERVER validates the receipt and writes the entitlement
+        // (profiles/{uid} tier + end date, Base flag, welcome coins). Direct
+        // client writes of those fields are refused by the rules.
+        final Map<String, dynamic> res;
         try {
-          if (userId != null) {
-            // Get membership details to calculate end date
-            final details = _getMembershipDetailsFromProductId(purchase.productID);
-            final duration = details['duration'] as Duration;
-
-            // Get current membership to extend it
-            final profileDoc = await FirebaseFirestore.instance
-                .collection('profiles')
-                .doc(userId)
-                .get();
-
-            final currentEndDate = profileDoc.data()?['membershipEndDate'] as Timestamp?;
-            final currentTier = profileDoc.data()?['membershipTier'] as String?;
-
-            if (currentEndDate != null && currentTier != null) {
-              final currentEndDateTime = currentEndDate.toDate();
-              final now = DateTime.now();
-
-              // If membership is still active, extend from current end date
-              // If expired, start from now
-              if (currentEndDateTime.isAfter(now)) {
-                newEndDate = currentEndDateTime.add(duration);
-              } else {
-                newEndDate = now.add(duration);
-              }
-            } else {
-              // No current membership, start from now
-              newEndDate = DateTime.now().add(duration);
-            }
-
-            await FirebaseFirestore.instance
-                .collection('profiles')
-                .doc(userId)
-                .update({
-                  'membershipTier': tierName,
-                  'membershipEndDate': Timestamp.fromDate(newEndDate),
-                });
-            await FirebaseFirestore.instance
-                .collection('users')
-                .doc(userId)
-                .update({
-                  'membershipTier': tierName,
-                  'membershipEndDate': Timestamp.fromDate(newEndDate),
-                });
-          }
-          debugPrint('Membership purchased: $tierName, ends: $newEndDate');
+          res = await _verifyPurchaseOnServer(userId, purchase);
         } catch (e) {
-          debugPrint('Error updating profile tier: $e');
+          debugPrint('[SubscriptionBloc] verifyPurchase failed: $e');
+          // Leave the purchase unfinished so PurchaseRecoveryService retries
+          // it on the next launch instead of losing it.
+          emit(SubscriptionError(e.toString()));
+          continue;
         }
 
-        // Grant 500 coins for base membership (write to coinBatches array field, not subcollection)
-        if (purchase.productID.endsWith('greengo_base_membership') && userId != null) {
-          try {
-            final now = DateTime.now();
-            final balanceRef = FirebaseFirestore.instance
-                .collection('coinBalances')
-                .doc(userId);
-            final batchEntry = {
-              'batchId': 'membership_${now.millisecondsSinceEpoch}',
-              'initialCoins': 500,
-              'remainingCoins': 500,
-              'source': 'reward',
-              'acquiredDate': Timestamp.fromDate(now),
-            };
-            final balanceDoc = await balanceRef.get();
-            if (balanceDoc.exists) {
-              await balanceRef.update({
-                'totalCoins': FieldValue.increment(500),
-                'earnedCoins': FieldValue.increment(500),
-                'lastUpdated': Timestamp.fromDate(now),
-                'coinBatches': FieldValue.arrayUnion([batchEntry]),
-              });
-            } else {
-              await balanceRef.set({
-                'userId': userId,
-                'totalCoins': 500,
-                'earnedCoins': 500,
-                'purchasedCoins': 0,
-                'giftedCoins': 0,
-                'spentCoins': 0,
-                'lastUpdated': Timestamp.fromDate(now),
-                'coinBatches': [batchEntry],
-              });
-            }
-            coinsGranted = 500;
-          } catch (e) {
-            debugPrint('Error granting base membership coins: $e');
-          }
+        if (res['expired'] == true) {
+          // A lapsed subscription's receipt: nothing was granted, so this is
+          // NOT an active membership — no success UI, no local tier change.
+          debugPrint('[SubscriptionBloc] ${purchase.productID} is expired — no grant');
+          await _completeAndConsumePurchase(purchase);
+          emit(const NoSubscription());
+          continue;
         }
 
-        // Track purchase ownership by app userId
-        try {
-          final token = purchase.purchaseID ?? '';
-          if (token.isNotEmpty && userId != null) {
-            await FirebaseFirestore.instance
-                .collection('membership_purchases')
-                .doc(token)
-                .set({
-              'userId': userId,
-              'productId': purchase.productID,
-              'purchaseId': token,
-              'tier': tierName,
-              'purchasedAt': Timestamp.fromDate(DateTime.now()),
-              'endDate': Timestamp.fromDate(newEndDate),
-            });
-          }
-        } catch (e) {
-          debugPrint('[SubscriptionBloc] Failed to track purchase: $e');
-        }
+        final isBase = canonicalId == ProductCatalog.baseMembership;
+        final serverTier = res['tier'] as String?;
+        final tier = isBase
+            ? SubscriptionTier.basic
+            : (serverTier != null
+                ? SubscriptionTierExtension.fromString(serverTier)
+                : _getTierFromProductId(purchase.productID));
+        final endIso = (isBase ? res['baseMembershipEndDate'] : null) as String? ??
+            res['endDate'] as String?;
+        final endDate = endIso != null ? DateTime.tryParse(endIso) : null;
+        final coinsGranted = (res['coinsGranted'] as num?)?.toInt() ?? 0;
 
-        emit(SubscriptionPurchased(tier, endDate: newEndDate, coinsGranted: coinsGranted));
-
-        // Complete and consume the purchase so it can be bought again
         await _completeAndConsumePurchase(purchase);
+        emit(SubscriptionPurchased(tier, endDate: endDate, coinsGranted: coinsGranted));
       } else if (purchase.status == PurchaseStatus.restored) {
         // Always consume restored purchases to clear "already owned" state
         await _completeAndConsumePurchase(purchase);
@@ -379,38 +296,23 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     return SubscriptionTier.basic;
   }
 
-  Map<String, dynamic> _getMembershipDetailsFromProductId(String productId) {
-    SubscriptionTier tier;
-    Duration duration;
-    
-    // Determine tier
-    if (productId.contains('platinum')) {
-      tier = SubscriptionTier.platinum;
-    } else if (productId.contains('gold')) {
-      tier = SubscriptionTier.gold;
-    } else if (productId.contains('silver')) {
-      tier = SubscriptionTier.silver;
-    } else if (productId.contains('base')) {
-      tier = SubscriptionTier.basic;
-    } else {
-      tier = SubscriptionTier.basic;
-    }
-    
-    // Determine duration
-    if (productId.contains('1_year') || productId.contains('year')) {
-      duration = const Duration(days: 365); // 1 year
-    } else if (productId.contains('1_month') || productId.contains('month')) {
-      duration = const Duration(days: 30); // 1 month
-    } else {
-      // Default to 1 month for base membership
-      duration = const Duration(days: 30);
-    }
-    
-    return {
-      'tier': tier,
-      'duration': duration,
-      'isYearly': duration.inDays >= 365,
-    };
+  /// Calls the `verifyPurchase` callable — same payload as
+  /// PurchaseRecoveryService / the coin shop.
+  Future<Map<String, dynamic>> _verifyPurchaseOnServer(
+      String userId, PurchaseDetails p) async {
+    final receipt = p.verificationData.serverVerificationData;
+    final isIOS = defaultTargetPlatform == TargetPlatform.iOS;
+    final result = await FirebaseFunctions.instance
+        .httpsCallable('verifyPurchase')
+        .call<Object?>(<String, dynamic>{
+      'userId': userId,
+      'platform': isIOS ? 'ios' : 'android',
+      'productId': p.productID,
+      'purchaseToken': isIOS ? (p.purchaseID ?? receipt) : receipt,
+      'verificationData': receipt,
+    });
+    final data = result.data;
+    return data is Map ? Map<String, dynamic>.from(data) : <String, dynamic>{};
   }
 
   @override

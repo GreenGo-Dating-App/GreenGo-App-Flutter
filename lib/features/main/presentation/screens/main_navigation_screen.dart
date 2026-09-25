@@ -78,6 +78,7 @@ import '../../../subscription/domain/entities/subscription.dart';
 import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../../subscription/presentation/screens/membership_screen.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// Main Navigation Screen
 ///
@@ -139,8 +140,16 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   // Discovery screen key for grid mode toggle
   final GlobalKey<DiscoveryScreenState> _discoveryKey = GlobalKey<DiscoveryScreenState>();
 
-  // User's membership tier
+  // User's EFFECTIVE membership tier (expiry-aware, see effective_tier.dart).
   MembershipTier _membershipTier = MembershipTier.free;
+
+  // Live entitlement refresh: a `profiles/{uid}` listener picks up server-side
+  // downgrades/upgrades mid-session, and [_entitlementTimer] fires at the next
+  // membershipEndDate / baseMembershipEndDate so features lapse on time even
+  // before the server's downgrade job writes anything.
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _entitlementSub;
+  Timer? _entitlementTimer;
+  String? _entitlementSignature;
 
   // State de-duplication to prevent cascading rebuilds (black screen fix)
   MembershipTier? _lastProcessedTier;
@@ -276,8 +285,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     // Check subscription expiry and downgrade to free if expired
     _checkSubscriptionExpiry();
 
-    // Check base membership expiry
-    _checkBaseMembershipExpiry();
+    // Keep the effective tier live for the whole session.
+    _startEntitlementWatch();
 
     // Direct Firestore check for trial welcome popup (fallback if BlocListener doesn't fire)
     _checkBaseMembershipDirect();
@@ -814,38 +823,78 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     }
   }
 
-  /// Check if base membership has expired and update Firestore
-  Future<void> _checkBaseMembershipExpiry() async {
-    try {
-      // Shared server read of the own profile (see AccessControlService.serverDoc).
-      final doc = await _accessControlService
-          .serverDoc('profiles', widget.userId)
-          .timeout(const Duration(seconds: 8));
-      if (!doc.exists || !mounted) return;
+  // Base-membership expiry used to be handled here by clearing
+  // `hasBaseMembership` from the client — a write the rules refuse (the server
+  // owns that transition). Nothing needs writing: `isBaseMembershipActive`
+  // already honours `baseMembershipEndDate`, and the gates (BaseMembershipGate
+  // / TierGate.ensureValidMembership) prompt the user to renew.
 
-      final data = doc.data()!;
-      final hasBase = data['hasBaseMembership'] as bool? ?? false;
-      final endTs = data['baseMembershipEndDate'];
-
-      if (hasBase && endTs != null) {
-        final endDate = (endTs as Timestamp).toDate();
-        if (endDate.isBefore(DateTime.now())) {
-          // Expired — clear the flag
-          await FirebaseFirestore.instance
-              .collection('profiles')
-              .doc(widget.userId)
-              .update({'hasBaseMembership': false});
-          AccessControlService.invalidateOwnDoc('profiles', widget.userId);
-
-          // Refresh profile bloc
-          if (mounted) {
-            _profileBloc.add(ProfileLoadRequested(userId: widget.userId));
-          }
-        }
+  /// Watches `profiles/{uid}` for entitlement changes (tier, end dates, base
+  /// membership, admin flag) and re-evaluates at the next end date.
+  void _startEntitlementWatch() {
+    _entitlementSub = FirebaseFirestore.instance
+        .collection('profiles')
+        .doc(widget.userId)
+        .snapshots()
+        .listen((doc) {
+      final data = doc.data();
+      if (data == null || !mounted) return;
+      final signature = [
+        data['membershipTier'],
+        tierDateFromValue(data['membershipEndDate'])?.millisecondsSinceEpoch,
+        data['hasBaseMembership'],
+        tierDateFromValue(data['baseMembershipEndDate'])
+            ?.millisecondsSinceEpoch,
+        data['isAdmin'],
+      ].join('|');
+      if (signature == _entitlementSignature) return;
+      final isFirst = _entitlementSignature == null;
+      _entitlementSignature = signature;
+      _scheduleEntitlementTimer(data);
+      final effective = effectiveTierFromDoc(data);
+      if (effective != _membershipTier) {
+        setState(() => _membershipTier = effective);
       }
-    } catch (e) {
-      debugPrint('[MainNav] Failed to check base membership expiry: $e');
-    }
+      if (!isFirst) {
+        // Server changed the entitlement mid-session -> refresh every screen
+        // that reads the shared profile.
+        AccessControlService.invalidateOwnDoc('profiles', widget.userId);
+        _profileBloc.add(ProfileLoadRequested(userId: widget.userId));
+      }
+    }, onError: (Object e) {
+      debugPrint('[MainNav] entitlement watch failed: $e');
+    });
+  }
+
+  void _scheduleEntitlementTimer(Map<String, dynamic> data) {
+    _entitlementTimer?.cancel();
+    _entitlementTimer = null;
+    final next = nextEntitlementChange(
+      stored: MembershipTier.fromString(data['membershipTier'] as String?),
+      endDate: tierDateFromValue(data['membershipEndDate']),
+      isAdmin: data['isAdmin'] == true,
+      hasBaseMembership: data['hasBaseMembership'] == true,
+      baseMembershipEndDate: tierDateFromValue(data['baseMembershipEndDate']),
+    );
+    if (next == null) return;
+    // Browsers fire a setTimeout longer than ~24.8 days immediately, so cap
+    // the wait and re-check when it elapses.
+    const maxWait = Duration(days: 1);
+    var wait = next.difference(DateTime.now()) + const Duration(seconds: 1);
+    final reachesEnd = wait <= maxWait;
+    if (!reachesEnd) wait = maxWait;
+    _entitlementTimer = Timer(wait, () {
+      if (!mounted) return;
+      if (!reachesEnd) {
+        _scheduleEntitlementTimer(data);
+        return;
+      }
+      // The end date passed while the app is open: features lapse NOW.
+      setState(() => _membershipTier = effectiveTierFromDoc(data));
+      _profileBloc.add(ProfileLoadRequested(userId: widget.userId));
+      _checkSubscriptionExpiry();
+      _scheduleEntitlementTimer(data); // a later base end date, if any
+    });
   }
 
   void _showDowngradeDialog(String previousTierName) {
@@ -1001,12 +1050,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         status = VerificationStatus.notSubmitted;
     }
 
-    // Get membership tier
+    // EFFECTIVE membership tier (an expired paid tier counts as free).
     final membershipTierString = data['membershipTier'] as String?;
-    var membershipTier = MembershipTier.free;
-    if (membershipTierString != null) {
-      membershipTier = MembershipTier.fromString(membershipTierString);
-    }
+    final membershipTier = effectiveTierFromDoc(data);
 
     final isAdmin = data['isAdmin'] as bool? ?? false;
     // Check if test user (tier == 'test' in profiles or users collection)
@@ -1254,6 +1300,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   @override
   void dispose() {
     _navAnim.dispose();
+    _entitlementSub?.cancel();
+    _entitlementTimer?.cancel();
     _matchCountSub?.cancel();
     _messageCountSub?.cancel();
     _groupCountSub?.cancel();
@@ -1464,10 +1512,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
           listenWhen: (previous, current) {
             // Only listen when tier actually changes (prevents cascading rebuilds)
             if (current is ProfileLoaded) {
-              return _lastProcessedTier != current.profile.membershipTier;
+              return _lastProcessedTier != current.profile.effectiveTier;
             }
             if (current is ProfileUpdated) {
-              return _lastProcessedTier != current.profile.membershipTier;
+              return _lastProcessedTier != current.profile.effectiveTier;
             }
             return false;
           },
@@ -1478,18 +1526,18 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
             // Update membership tier when profile is loaded or updated
             if (state is ProfileLoaded) {
-              _lastProcessedTier = state.profile.membershipTier;
+              _lastProcessedTier = state.profile.effectiveTier;
               setState(() {
-                _membershipTier = state.profile.membershipTier;
+                _membershipTier = state.profile.effectiveTier;
               });
               // Check base membership on first profile load
               _checkBaseMembership(state.profile);
               // Show welcome banner(s) for any auto-applied signup grants
               _maybeShowSignupGrantBanners(state.profile);
             } else if (state is ProfileUpdated) {
-              _lastProcessedTier = state.profile.membershipTier;
+              _lastProcessedTier = state.profile.effectiveTier;
               setState(() {
-                _membershipTier = state.profile.membershipTier;
+                _membershipTier = state.profile.effectiveTier;
               });
               _maybeShowSignupGrantBanners(state.profile);
             }

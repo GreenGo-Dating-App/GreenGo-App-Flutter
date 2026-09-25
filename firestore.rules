@@ -120,7 +120,16 @@ service cloud.firestore {
         && request.resource.data.get('isBanned', false) == false
         && request.resource.data.get('isBusinessVerified', false) == false
         && request.resource.data.get('businessVerified', false) == false
-        && request.resource.data.get('isAgeVerified', false) == false;
+        && request.resource.data.get('isAgeVerified', false) == false
+        // Entitlements are server-owned (purchase verification, grants). A
+        // recreated profile must not be able to carry a paid tier or a Base
+        // membership. Older app versions still send the neutral defaults
+        // (FREE / BASIC, false, null), so those stay allowed.
+        && request.resource.data.get('membershipTier', 'FREE')
+             in ['FREE', 'free', 'BASIC', 'basic']
+        && request.resource.data.get('membershipEndDate', null) == null
+        && request.resource.data.get('hasBaseMembership', false) == false
+        && request.resource.data.get('baseMembershipEndDate', null) == null;
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow

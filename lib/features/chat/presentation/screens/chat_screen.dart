@@ -567,7 +567,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
 
     // Grammar check for non-native language messages (Silver+ only)
-    final userTier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final userTier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
     final isSilverPlus = userTier != MembershipTier.free;
     if (isSilverPlus && !_showGrammarBanner && content.split(' ').length >= 3) {
       final lang = widget.otherUserProfile.languages.isNotEmpty
@@ -1188,18 +1188,10 @@ class _ChatScreenState extends State<ChatScreen> {
   /// Check media send limit before uploading
   Future<bool> _checkMediaSendLimit(BuildContext context) async {
     try {
-      // Get user's membership tier from Firestore
-      final membershipDoc = await FirebaseFirestore.instance
-          .collection('memberships')
-          .doc(widget.currentUserId)
-          .get();
-
-      var tier = MembershipTier.free;
-      if (membershipDoc.exists) {
-        tier = MembershipTier.fromString(
-          membershipDoc.data()?['tier'] as String? ?? 'FREE',
-        );
-      }
+      // EFFECTIVE tier from profiles/{uid} (the `memberships` mirror drifts
+      // and an expired paid tier must count as free).
+      final tier = _currentUserProfile?.effectiveTier ??
+          await TierGate().resolveTier(widget.currentUserId);
 
       final rules = MembershipRules.getDefaultsForTier(tier);
       final result = await _usageLimitService.checkLimit(
@@ -1980,7 +1972,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               userSelectedLanguage: _targetLanguage,
                               otherUserIsMale: widget.otherUserProfile.gender.toLowerCase() != 'female',
                               currentUserIsMale: (_currentUserProfile?.gender ?? 'male').toLowerCase() != 'female',
-                              userMembershipTier: _currentUserProfile?.membershipTier,
+                              userMembershipTier: _currentUserProfile?.effectiveTier,
                               onReport: (msg) => _reportMessage(context, msg),
                               onStar: (msg, isStarred) => _starMessage(context, msg, isStarred),
                               onReply: _setReplyMessage,
@@ -2712,7 +2704,7 @@ class _ChatScreenState extends State<ChatScreen> {
   /// A profile with no membershipTier field at all reads as free, which is the
   /// case for more than half of the accounts in production.
   bool get _hasPaidTier {
-    final tier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final tier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
     return tier != MembershipTier.free;
   }
 
@@ -3563,7 +3555,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<void> _loadSmartReplies(String messageText, String language) async {
     // Smart replies are Silver+ only
-    final userTier = _currentUserProfile?.membershipTier ?? MembershipTier.free;
+    final userTier = _currentUserProfile?.effectiveTier ?? MembershipTier.free;
     if (userTier == MembershipTier.free) return;
 
     setState(() => _loadingSmartReplies = true);

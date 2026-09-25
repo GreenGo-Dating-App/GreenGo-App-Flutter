@@ -53,6 +53,8 @@ exports.stripeWebhook = exports.createStripeCheckoutSession = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const stripe_1 = __importDefault(require("stripe"));
+const grants_1 = require("../shared/grants");
+const effectiveTier_1 = require("../shared/effectiveTier");
 const db = admin.firestore();
 function getStripe() {
     const secretKey = process.env.STRIPE_SECRET_KEY || '';
@@ -97,7 +99,7 @@ const BRAZIL_NAMES = new Set(['BR', 'BRA', 'BRAZIL', 'BRASIL']);
  * Create a Stripe Checkout Session for a web purchase. Called from Flutter web.
  */
 exports.createStripeCheckoutSession = functions
-    .runWith({ secrets: ['STRIPE_SECRET_KEY'] })
+    .runWith({ secrets: ['STRIPE_SECRET_KEY'], memory: '512MB' })
     .https.onCall(async (data, context) => {
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated to make a purchase');
@@ -174,7 +176,7 @@ exports.createStripeCheckoutSession = functions
  * Stripe Webhook — credits coins / activates membership on completed payment.
  */
 exports.stripeWebhook = functions
-    .runWith({ secrets: ['STRIPE_SECRET_KEY', 'STRIPE_WEBHOOK_SECRET'] })
+    .runWith({ secrets: ['STRIPE_SECRET_KEY', 'STRIPE_WEBHOOK_SECRET'], memory: '512MB' })
     .https.onRequest(async (req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
     res.set('Access-Control-Allow-Methods', 'POST');
@@ -301,34 +303,25 @@ async function creditCoins(userId, productId, sessionId) {
     console.log(`✅ Credited ${coins} coins to user ${userId} via Stripe`);
 }
 async function activateMembership(userId, productId, sessionId) {
-    var _a, _b;
     const membership = MEMBERSHIP_PRODUCTS[productId];
     if (!membership) {
         console.error(`Unknown membership product: ${productId}`);
         return;
     }
-    const now = new Date();
+    const nowTs = admin.firestore.Timestamp.now();
+    const now = nowTs.toDate();
+    const durationMs = membership.durationDays * 24 * 60 * 60 * 1000;
     const profileRef = db.collection('profiles').doc(userId);
     const profileDoc = await profileRef.get();
-    // Extend from current end date if still active, else start now.
-    let endDate;
-    if (profileDoc.exists) {
-        const dataDoc = profileDoc.data();
-        const currentEndTs = productId === 'greengo_base_membership'
-            ? (_a = dataDoc === null || dataDoc === void 0 ? void 0 : dataDoc.baseMembershipEndDate) === null || _a === void 0 ? void 0 : _a.toDate()
-            : (_b = dataDoc === null || dataDoc === void 0 ? void 0 : dataDoc.membershipEndDate) === null || _b === void 0 ? void 0 : _b.toDate();
-        if (currentEndTs && currentEndTs > now) {
-            endDate = new Date(currentEndTs.getTime() + membership.durationDays * 24 * 60 * 60 * 1000);
-        }
-        else {
-            endDate = new Date(now.getTime() + membership.durationDays * 24 * 60 * 60 * 1000);
-        }
-    }
-    else {
-        endDate = new Date(now.getTime() + membership.durationDays * 24 * 60 * 60 * 1000);
-    }
-    const endTimestamp = admin.firestore.Timestamp.fromDate(endDate);
+    const dataDoc = profileDoc.data() || {};
+    let endTimestamp;
+    let recordedTier = membership.tier;
     if (productId === 'greengo_base_membership') {
+        // Base is independent of the paid tier: extend from the current Base end
+        // if still active, else start now. Never touches membershipTier.
+        const currentBaseEnd = (0, effectiveTier_1.tierDateFromValue)(dataDoc.baseMembershipEndDate);
+        const start = currentBaseEnd && currentBaseEnd > now ? currentBaseEnd : now;
+        endTimestamp = admin.firestore.Timestamp.fromDate(new Date(start.getTime() + durationMs));
         await profileRef.set({
             hasBaseMembership: true,
             baseMembershipEndDate: endTimestamp,
@@ -367,21 +360,38 @@ async function activateMembership(userId, productId, sessionId) {
         }
     }
     else {
+        // Same rule as the store purchases (shared/grants.ts): never downgrade an
+        // ACTIVE higher tier — a lower tier bought while it runs is queued after
+        // it; same/higher tier moves to the bought tier, extending from the later
+        // of now and the current (active) end date.
+        const ext = (0, grants_1.computeMembershipExtension)((0, effectiveTier_1.normalizeStoredTier)(dataDoc.membershipTier), (0, effectiveTier_1.tierDateFromValue)(dataDoc.membershipEndDate), membership.tier, durationMs, now);
+        endTimestamp = ext.newEndTimestamp;
+        recordedTier = ext.effectiveTier;
         await profileRef.set({
-            membershipTier: membership.tier,
+            membershipTier: ext.effectiveTier,
             membershipEndDate: endTimestamp,
+            membershipStartDate: nowTs,
+            membershipSource: 'stripe',
             membershipProductId: productId,
+            updatedAt: nowTs,
         }, { merge: true });
+        // Mirror (never read for decisions) — only if the users doc exists.
+        const userRef = db.collection('users').doc(userId);
+        if ((await userRef.get()).exists) {
+            await userRef.set({ subscriptionTier: ext.effectiveTier, membershipEndDate: endTimestamp, updatedAt: nowTs }, { merge: true });
+        }
     }
     await db.collection('membership_purchases').doc(sessionId).set({
         userId,
         productId,
-        tier: membership.tier,
+        tier: recordedTier,
+        purchasedTier: membership.tier,
         purchaseId: sessionId,
         platform: 'web',
         purchasedAt: admin.firestore.Timestamp.now(),
         endDate: endTimestamp,
     });
-    console.log(`✅ Activated ${membership.tier} membership for user ${userId} via Stripe (expires ${endDate.toISOString()})`);
+    console.log(`✅ Activated ${recordedTier} membership (bought ${membership.tier}) for user ${userId} via Stripe ` +
+        `(expires ${endTimestamp.toDate().toISOString()})`);
 }
 //# sourceMappingURL=stripeCheckout.js.map

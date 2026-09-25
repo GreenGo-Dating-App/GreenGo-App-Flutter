@@ -38,6 +38,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/widgets/people_tags_editor.dart';
 import '../../../saved_searches/data/saved_searches_service.dart';
 import '../../../saved_searches/presentation/screens/saved_searches_screen.dart';
+import '../../../../core/services/effective_tier.dart';
 
 /// A full-screen, Apple-safe people directory reached from the Explore
 /// "Network Discovery → See all" action.
@@ -430,9 +431,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
     } catch (_) {
       self = null;
     }
-    final raw = doc.data()?['membershipTier'] as String?;
-    final tier =
-        raw == null ? MembershipTier.free : MembershipTier.fromString(raw);
+    final tier = effectiveTierFromDoc(doc.data());
     setState(() {
       if (self != null) _selfCandidate = _selfCandidateFor(self);
       if (_revealTier != tier) {

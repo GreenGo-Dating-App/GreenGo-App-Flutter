@@ -44,6 +44,7 @@ exports.grantBaseMembership = grantBaseMembership;
 exports.grantCoins = grantCoins;
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("./utils");
+const effectiveTier_1 = require("./effectiveTier");
 exports.TIER_RANK = {
     BASIC: 0,
     SILVER: 1,
@@ -57,16 +58,24 @@ exports.TIER_RANK = {
  * - If `requestedTier` is same or higher rank, the user moves to `requestedTier`
  *   and the end date is pushed by `durationMs` from the later of now or current end.
  * - If user has no active membership (or it has expired), start from `now`.
+ *
+ * "Active" means an ACTIVE PAID tier (SILVER/GOLD/PLATINUM with a future end
+ * date — see shared/effectiveTier.ts). A FREE / legacy 'BASIC' / TEST profile
+ * keeps its old `membershipEndDate` for history (the expiry job does not clear
+ * it, and Base purchases used to write the Base end date there), so the end
+ * date alone must NOT count as an active membership — otherwise a new
+ * purchase would start from that stale date instead of from now.
  */
 function computeMembershipExtension(currentTier, currentEndDate, requestedTier, durationMs, now = new Date()) {
     var _a, _b;
-    const isActive = currentEndDate !== null && currentEndDate > now;
+    const currentUpper = typeof currentTier === 'string' ? currentTier.toUpperCase() : '';
+    const isActive = (0, effectiveTier_1.isPaidTier)(currentUpper) && currentEndDate !== null && currentEndDate > now;
     let effectiveTier = requestedTier;
     let baseDate = now;
     if (isActive) {
-        const currentRank = (_a = exports.TIER_RANK[currentTier]) !== null && _a !== void 0 ? _a : 0;
+        const currentRank = (_a = exports.TIER_RANK[currentUpper]) !== null && _a !== void 0 ? _a : 0;
         const requestedRank = (_b = exports.TIER_RANK[requestedTier]) !== null && _b !== void 0 ? _b : 0;
-        effectiveTier = requestedRank >= currentRank ? requestedTier : (currentTier || requestedTier);
+        effectiveTier = requestedRank >= currentRank ? requestedTier : currentUpper;
         baseDate = currentEndDate;
     }
     const newEndDate = new Date(baseDate.getTime() + durationMs);

@@ -68,7 +68,7 @@ class DiscoveryVisibility {
     // Admin/support candidates are exempt from the completeness/tester rules.
     if (p.isSupport) return true;
     if (!viewerIsPrivileged) {
-      if (p.membershipTier == MembershipTier.test) return false;
+      if (p.effectiveTier == MembershipTier.test) return false;
       if (hasNoUsableName(p) || hasNoUsableLocation(p)) return false;
     }
     return true;
