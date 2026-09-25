@@ -244,6 +244,15 @@ export {
   stripeWebhook,
 } from './payments/stripeCheckout';
 
+// Stripe reconciliation (every 12h) + token-guarded HTTP twin (dry run by
+// default; token from STRIPE_RECONCILE_TOKEN in the gitignored functions/.env).
+// payments/stripeReconcile.ts + payments/stripeCore.ts are byte-identical in
+// both repos, so deploying these from either repo is equivalent.
+export {
+  reconcileStripeMemberships,
+  runStripeReconcileNow,
+} from './payments/stripeReconcile';
+
 // Coin Functions
 // Use the REAL coin functions (server-side receipt verification) from
 // coins/index.ts — NOT coinManager.ts, whose verify was a `verified = true`
