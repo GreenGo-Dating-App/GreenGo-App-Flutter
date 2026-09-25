@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/data/models/profile_model.dart';
@@ -17,6 +18,7 @@ import '../bloc/conversations_bloc.dart';
 import '../bloc/conversations_event.dart';
 import '../bloc/conversations_state.dart';
 import '../widgets/conversation_card.dart';
+import '../widgets/resolved_users_builder.dart';
 import 'chat_screen.dart';
 import 'create_group_screen.dart';
 import '../bloc/groups_bloc.dart';
@@ -60,7 +62,9 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   final TextEditingController _searchController = TextEditingController();
   String _searchQuery = '';
   ConversationFilter _selectedFilter = ConversationFilter.all;
-  final Map<String, Profile?> _profileCache = {};
+  /// Process-wide, cache-first, batched profile directory (replaces the old
+  /// per-screen cache that was lost on every dispose).
+  final UserDirectoryService _dir = UserDirectoryService.instance;
   final Map<String, String> _chatLanguageCache = {};
   Profile? _currentUserProfile;
   SharedPreferences? _prefs;
@@ -84,7 +88,6 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
         _selectedFilter = ConversationFilter.all;
         _searchQuery = '';
         _searchController.clear();
-        _profileCache.clear();
       });
       _loadCurrentUserProfile();
     }
@@ -147,22 +150,31 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     final conversations = state is ConversationsLoaded
         ? state.conversations
         : const <Conversation>[];
+    final ids = <String>[];
     final seen = <String>{};
-    final candidates = <GroupCandidate>[];
     for (final c in conversations) {
       final otherId = c.getOtherUserId(widget.userId);
       if (otherId.isEmpty || otherId == widget.userId || !seen.add(otherId)) {
         continue;
       }
-      final profile = await _getProfile(otherId);
+      ids.add(otherId);
+    }
+    // One batched, cache-first lookup for all partners.
+    final profiles = await _dir.resolveProfiles(ids);
+    final candidates = <GroupCandidate>[];
+    for (final otherId in ids) {
+      final profile = profiles[otherId];
+      // Deleted / not loadable -> skip (never fall back to the raw uid).
+      if (profile == null) continue;
       // Business/storefront identities can't be added to groups (search-only).
-      if (profile?.isBusiness == true) continue;
+      if (profile.isBusiness) continue;
+      final name = UserBrief.fromProfile(profile).name;
+      if (name.isEmpty) continue;
       candidates.add(GroupCandidate(
         userId: otherId,
-        name: profile?.displayName ?? otherId,
-        photoUrl: (profile != null && profile.photoUrls.isNotEmpty)
-            ? profile.photoUrls.first
-            : null,
+        name: name,
+        photoUrl:
+            profile.photoUrls.isNotEmpty ? profile.photoUrls.first : null,
       ));
     }
     if (!mounted) return;
@@ -174,14 +186,54 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
     );
   }
 
-  Future<Profile?> _getProfile(String userId) async {
-    if (_profileCache.containsKey(userId)) {
-      return _profileCache[userId];
-    }
-    final result = await di.sl<ProfileRepository>().getProfile(userId);
-    final profile = result.fold((l) => null, (r) => r);
-    _profileCache[userId] = profile;
-    return profile;
+  /// Other participants of every loaded 1:1 conversation - the "page" that is
+  /// resolved in ONE batched call before its tiles are shown.
+  Iterable<String> _otherIds(List<Conversation> conversations) => conversations
+      .where((c) => !c.isGroup)
+      .map((c) => c.getOtherUserId(widget.userId))
+      .where((id) => id.isNotEmpty);
+
+  /// A tile is shown only once its other participant is resolved (profile
+  /// loaded, or the server confirmed it no longer exists -> "Unknown").
+  bool _tileReady(Conversation c) {
+    if (c.isGroup) return true;
+    final id = c.getOtherUserId(widget.userId);
+    return id.isEmpty || _dir.isProfileResolved(id);
+  }
+
+  Profile? _profileFor(Conversation c) =>
+      _dir.cachedProfile(c.getOtherUserId(widget.userId));
+
+  /// Skeleton row with the same footprint as a [ConversationCard].
+  Widget _skeletonTile() {
+    final shade = AppColors.textTertiary.withOpacity(0.12);
+    Widget bar(double w, double h) => Container(
+          width: w,
+          height: h,
+          decoration: BoxDecoration(
+            color: shade,
+            borderRadius: BorderRadius.circular(h / 2),
+          ),
+        );
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      child: Row(
+        children: [
+          CircleAvatar(radius: 30, backgroundColor: shade),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                bar(140, 14),
+                const SizedBox(height: 8),
+                bar(200, 12),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildSearchBar() {
@@ -573,14 +625,30 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                         _buildFilterChips(state.conversations),
                                   ),
                                 ),
-                                // Conversations list
-                                SliverList(
+                                // Conversations list. The other participants of
+                                // the whole loaded page are resolved in ONE
+                                // batched call first (skeleton tiles until then);
+                                // a tile whose user is still unresolved stays a
+                                // skeleton - never an id or a flash of "Unknown".
+                                Builder(builder: (context) {
+                                  final filteredConversations = state
+                                      .conversations
+                                      .where(_passesFilter)
+                                      .toList();
+                                  return ResolvedUsersBuilder(
+                                  profiles: true,
+                                  uids: _otherIds(state.conversations),
+                                  maxWait: const Duration(milliseconds: 2500),
+                                  placeholder: SliverList(
+                                    delegate: SliverChildBuilderDelegate(
+                                      (_, __) => _skeletonTile(),
+                                      childCount: filteredConversations.length
+                                          .clamp(0, 8),
+                                    ),
+                                  ),
+                                  builder: (context, _) => SliverList(
                                   delegate: SliverChildBuilderDelegate(
                                     (context, index) {
-                                      final filteredConversations = state
-                                          .conversations
-                                          .where(_passesFilter)
-                                          .toList();
                                       if (index >=
                                           filteredConversations.length) {
                                         return const SizedBox.shrink();
@@ -589,11 +657,14 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                           filteredConversations[index];
                                       final otherUserId = conversation
                                           .getOtherUserId(widget.userId);
+                                      if (!_tileReady(conversation)) {
+                                        return _skeletonTile();
+                                      }
 
-                                      return FutureBuilder(
-                                        future: _getProfile(otherUserId),
-                                        builder: (context, snapshot) {
-                                          final profile = snapshot.data;
+                                      return Builder(
+                                        builder: (context) {
+                                          final profile =
+                                              _profileFor(conversation);
 
                                           // Filter by search query
                                           if (_searchQuery.isNotEmpty &&
@@ -668,7 +739,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                                 context,
                                                 conversation,
                                                 profile?.displayName ??
-                                                    'this user',
+                                                    AppLocalizations.of(context)!.chatUnknown,
                                               );
                                             },
                                             onTap: () async {
@@ -730,11 +801,11 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                         },
                                       );
                                     },
-                                    childCount: state.conversations
-                                        .where(_passesFilter)
-                                        .length,
+                                    childCount: filteredConversations.length,
                                   ),
-                                ),
+                                  ),
+                                  );
+                                }),
                                 const SliverToBoxAdapter(
                                   child: SizedBox(height: 24),
                                 ),
@@ -807,17 +878,26 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                         ),
                       ],
                     )
-                  : ListView.builder(
+                  : ResolvedUsersBuilder(
+                      profiles: true,
+                      uids: _otherIds(state.conversations),
+                      maxWait: const Duration(milliseconds: 2500),
+                      placeholder: ListView.builder(
+                        physics: const AlwaysScrollableScrollPhysics(),
+                        itemCount: inquiries.length.clamp(0, 8),
+                        itemBuilder: (_, __) => _skeletonTile(),
+                      ),
+                      builder: (context, _) => ListView.builder(
                       physics: const AlwaysScrollableScrollPhysics(),
                       itemCount: inquiries.length,
                       itemBuilder: (context, index) {
                         final conversation = inquiries[index];
                         final otherUserId =
                             conversation.getOtherUserId(widget.userId);
-                        return FutureBuilder<Profile?>(
-                          future: _getProfile(otherUserId),
-                          builder: (context, snapshot) {
-                            final profile = snapshot.data;
+                        if (!_tileReady(conversation)) return _skeletonTile();
+                        return Builder(
+                          builder: (context) {
+                            final profile = _profileFor(conversation);
                             if (_searchQuery.isNotEmpty && profile != null) {
                               final q = _searchQuery.toLowerCase();
                               final nameMatch = profile.displayName
@@ -853,7 +933,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 _showDeleteBottomSheet(
                                   context,
                                   conversation,
-                                  profile?.displayName ?? 'this user',
+                                  profile?.displayName ?? AppLocalizations.of(context)!.chatUnknown,
                                 );
                               },
                               onTap: () async {
@@ -877,6 +957,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                           },
                         );
                       },
+                    ),
                     );
 
               return RefreshIndicator(
