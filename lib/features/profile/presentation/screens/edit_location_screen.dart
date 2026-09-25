@@ -7,6 +7,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/web_location_fallback.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/utils/web_location_limit.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
@@ -17,7 +18,6 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
-import 'web_location_picker_screen.dart';
 
 class EditLocationScreen extends StatefulWidget {
 
@@ -145,8 +145,11 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     }
   }
 
-  /// Web-only: open the flutter_map picker, gated to once per month.
-  Future<void> _pickLocationOnWebMap() async {
+  /// Web-only: take the position straight from the browser (no map), gated
+  /// to once per month. The geocoding plugin has no web implementation, so
+  /// the city/country come from WebLocationFallback (Nominatim); if that
+  /// lookup fails the coordinates are still saved.
+  Future<void> _useBrowserLocation() async {
     final l10n = AppLocalizations.of(context)!;
     final userId = widget.profile.userId;
 
@@ -163,15 +166,51 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
       return;
     }
 
-    if (!mounted) return;
-    final picked = await Navigator.of(context).push(
-      WebLocationPickerScreen.route(initial: _selectedLocation),
-    );
-    if (picked != null && mounted) {
+    setState(() => _isLoadingLocation = true);
+    try {
+      var permission = await Geolocator.checkPermission();
+      if (permission == LocationPermission.denied) {
+        permission = await Geolocator.requestPermission();
+      }
+      if (permission == LocationPermission.denied ||
+          permission == LocationPermission.deniedForever) {
+        throw Exception('Location permissions denied');
+      }
+
+      final position = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high,
+      ).timeout(const Duration(seconds: 20));
+
+      final resolved = await WebLocationFallback.reverseGeocode(
+        position.latitude,
+        position.longitude,
+      );
+      final location = resolved ??
+          profile_entity.Location(
+            latitude: position.latitude,
+            longitude: position.longitude,
+            city: '',
+            country: '',
+            displayAddress:
+                '${position.latitude.toStringAsFixed(4)}, ${position.longitude.toStringAsFixed(4)}',
+          );
+
+      if (!mounted) return;
       setState(() {
-        _selectedLocation = picked;
+        _selectedLocation = location;
         _webLocationChanged = true;
       });
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(l10n.profileLocationFailed(e.toString())),
+            backgroundColor: AppColors.errorRed,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _isLoadingLocation = false);
     }
   }
 
@@ -356,10 +395,10 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton.icon(
-                      onPressed: kIsWeb
-                          ? _pickLocationOnWebMap
-                          : (_isLoadingLocation ? null : _getCurrentLocation),
-                      icon: (_isLoadingLocation && !kIsWeb)
+                      onPressed: _isLoadingLocation
+                          ? null
+                          : (kIsWeb ? _useBrowserLocation : _getCurrentLocation),
+                      icon: _isLoadingLocation
                           ? const SizedBox(
                               width: 20,
                               height: 20,
@@ -368,8 +407,8 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                                 color: AppColors.deepBlack,
                               ),
                             )
-                          : const Icon(kIsWeb ? Icons.map_outlined : Icons.my_location),
-                      label: Text(_isLoadingLocation && !kIsWeb
+                          : const Icon(Icons.my_location),
+                      label: Text(_isLoadingLocation
                           ? AppLocalizations.of(context)!.profileGettingLocation
                           : AppLocalizations.of(context)!.profileUpdateCurrentLocation),
                       style: ElevatedButton.styleFrom(
