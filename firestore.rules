@@ -1597,6 +1597,42 @@ service cloud.firestore {
       allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
       allow write: if false;
     }
+    // Stripe server-side state (payments/stripeCore.ts, stripeReconcile.ts).
+    // Admin SDK only; admin-panel users may read for review. Never client-written.
+    //   stripe_events            webhook event dedupe markers
+    //   stripe_invoices          one membership grant per paid invoice
+    //   stripe_revocations       refund / dispute actions
+    //   stripe_customers         trusted uid -> Stripe customer mapping
+    //   stripe_payment_flags     payments flagged for owner review
+    //   stripe_reconciliation_runs / stripe_reconcile_state  12-hourly job
+    match /stripe_events/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_invoices/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_revocations/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_customers/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_payment_flags/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_reconciliation_runs/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_reconcile_state/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
     match /account_actions/{docId} {
       allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
       allow write: if false;
