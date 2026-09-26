@@ -88,6 +88,13 @@ class _ExperiencesTabState extends State<ExperiencesTab>
   }
 
   bool _loadingMore = false;
+
+  /// Extra pages fetched on our own while nothing is visible yet. An empty
+  /// list has nothing to scroll, so without this a first page that filtered
+  /// down to nothing (e.g. all nearby live events already past) would show
+  /// "No events found" even though the pager has more.
+  static const int _maxAutoPages = 3;
+  int _autoPages = 0;
   bool _firstLoadDone = false;
   int _gen = 0; // bumped per reload so stale pages can't append
 
@@ -190,10 +197,12 @@ class _ExperiencesTabState extends State<ExperiencesTab>
       if (!mounted || gen != _gen) return;
       if (warm != null) {
         _pager = warm.pager;
+        _autoPages = 0;
         setState(() {
           _replaceWith(warm.items);
           _firstLoadDone = true;
         });
+        _continueWhileEmpty();
         return;
       }
     }
@@ -202,11 +211,13 @@ class _ExperiencesTabState extends State<ExperiencesTab>
       final first = await pager.next();
       if (!mounted || gen != _gen) return;
       _pager = pager;
+      _autoPages = 0;
       setState(() {
         _replaceWith(first);
         _firstLoadDone = true;
       });
       unawaited(pager.saveFirstPage(first));
+      _continueWhileEmpty();
     } catch (_) {
       // Keep whatever is on screen; only resolve the spinner.
       if (mounted && gen == _gen) setState(() => _firstLoadDone = true);
@@ -225,6 +236,17 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     } catch (_) {/* next scroll retries */} finally {
       if (g == _gen) _loadingMore = false;
     }
+    if (mounted && g == _gen) _continueWhileEmpty();
+  }
+
+  /// Keep loading (a few pages at most) while nothing passes the filters but
+  /// the pager says more exists.
+  void _continueWhileEmpty() {
+    final pager = _pager;
+    if (pager == null || !pager.hasMore || _filtered.isNotEmpty) return;
+    if (_autoPages >= _maxAutoPages) return;
+    _autoPages++;
+    unawaited(_loadMore());
   }
 
   static String _iso(DateTime d) =>
@@ -301,6 +323,13 @@ class _ExperiencesTabState extends State<ExperiencesTab>
           child: CircularProgressIndicator(color: AppColors.richGold));
     }
     final items = _filtered;
+    // Still fetching on our own (see _continueWhileEmpty): not "empty" yet.
+    if (items.isEmpty &&
+        (_loadingMore ||
+            ((_pager?.hasMore ?? false) && _autoPages < _maxAutoPages))) {
+      return const Center(
+          child: CircularProgressIndicator(color: AppColors.richGold));
+    }
     if (items.isEmpty) {
       return Center(
         child: Text(AppLocalizations.of(context)!.eventsNoEventsFound,
