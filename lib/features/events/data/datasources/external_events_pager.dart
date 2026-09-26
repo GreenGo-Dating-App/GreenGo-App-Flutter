@@ -159,7 +159,15 @@ class ExternalEventsPager {
     return out;
   }
 
-  Future<List<ExternalEvent>> _nextDistance() {
+  /// How many scanner calls one page may take while every ring read so far
+  /// filtered down to nothing. Past Ticketmaster events are never purged, so
+  /// the nearest geohash cells are often all past: a single scanner call can
+  /// then legitimately return an empty ring while more exists. Returning that
+  /// empty page made the Live tab show "No events found" with nothing to
+  /// scroll, so it never asked again. ~6 read rounds per call.
+  static const int _maxEmptyScans = 6;
+
+  Future<List<ExternalEvent>> _nextDistance() async {
     final scanner = _scanner ??= GeoRingScanner<ExternalEvent>(
       base: _base,
       lat: userLat!,
@@ -172,6 +180,10 @@ class ExternalEventsPager {
       position: (e) =>
           (e.lat == null || e.lng == null) ? null : (lat: e.lat!, lng: e.lng!),
     );
-    return scanner.next();
+    for (var i = 0; i < _maxEmptyScans; i++) {
+      final page = await scanner.next();
+      if (page.isNotEmpty || !scanner.hasMore) return page;
+    }
+    return const [];
   }
 }
