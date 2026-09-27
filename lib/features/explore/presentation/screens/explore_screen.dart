@@ -7,6 +7,10 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../attractions/data/datasources/attractions_datasource.dart';
+import '../../../attractions/domain/country_resolver.dart';
+import '../../../attractions/domain/entities/attraction.dart';
+import '../../../attractions/presentation/screens/attraction_detail_screen.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
@@ -117,6 +121,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// sponsored slots keep their own smaller counts.
   static const int kFeaturedEventCount = 10;
 
+  /// How many cards the "Featured attractions" carousel shows.
+  static const int kFeaturedAttractionCount = 20;
+
+  /// How many of the user's registered events "Happening soon" shows.
+  static const int kHappeningSoonCount = 20;
+
   /// Round-robin window (minutes) for the luxury "Featured community events"
   /// carousel. When more than 3 sponsored events are eligible, the visible
   /// window advances once per this many minutes so every sponsor gets fair
@@ -151,12 +161,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
   String? _peopleStat; // distinct chat partners (all time)
 
   // null == still loading; empty == loaded but nothing to show.
-  List<_Happening>? _happenings; // the "Happening this week" row
+  // "Happening soon": the UPCOMING events the user has RSVP'd to (going),
+  // soonest first. Hidden entirely (title included) while loading and when
+  // empty.
+  List<_Happening>? _happenings;
   // "Featured events": up to 3 random community/user-created events within
   // [kFeaturedRadiusKm] of the user. Hidden when empty.
   List<_Happening>? _featuredEvents;
-  // "Featured attractions": up to 3 random external (geoapify) attractions near
-  // the user. Hidden when empty.
+  // "Featured attractions": up to [kFeaturedAttractionCount] curated
+  // attractions (the `attractions_index` catalogue) of the country the user is
+  // in, nearest first. Hidden when empty.
   List<_Happening>? _featuredAttractions;
   // "Featured community events" (LUXURY): up to 3 COMMUNITY/user-created events,
   // boosted-first then the nearest normal ones, within [kFeaturedRadiusKm] of
@@ -198,13 +212,36 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // null == loading; empty == none upcoming (section hidden entirely).
   List<Event>? _myEvents;
   // Public communities to join (near the user / by interest, else popular).
-  // null == loading; empty == none (section shows an empty hint).
+  // null == loading; empty == none (section hidden entirely).
   List<Community>? _communities;
-  // The active weekly Country Spotlight, or null when there is none (section
-  // hidden entirely). A dedicated flag distinguishes "still loading" from
-  // "loaded, nothing active".
+  // The active weekly Country Spotlight, or null while loading / when there is
+  // none (section hidden entirely either way).
   CountrySpotlight? _spotlight;
-  bool _spotlightLoaded = false;
+
+  // True while the section loads of [_load] are in flight (drives the single
+  // page-level loading indicator shown until the first section has data).
+  bool _contentLoading = true;
+
+  /// Whether any content section has something to show (cached paints count).
+  bool get _hasAnySectionData =>
+      (_featuredAttractions?.isNotEmpty ?? false) ||
+      (_myEvents?.isNotEmpty ?? false) ||
+      (_luxuryEvents?.isNotEmpty ?? false) ||
+      (_happenings?.isNotEmpty ?? false) ||
+      (_aroundYou?.isNotEmpty ?? false) ||
+      (_recommended?.isNotEmpty ?? false) ||
+      (_sameLanguage?.isNotEmpty ?? false) ||
+      (_businesses?.isNotEmpty ?? false) ||
+      (_communities?.isNotEmpty ?? false) ||
+      (_communityEvents?.isNotEmpty ?? false) ||
+      _spotlight != null;
+
+  /// The header stats row is shown only once all four tiles have a value.
+  bool get _statsReady =>
+      _coinsStat != null &&
+      _tierStat != null &&
+      _countriesStat != null &&
+      _peopleStat != null;
 
   @override
   void initState() {
@@ -230,6 +267,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Future<void> _load({bool forceRefresh = false}) async {
     // Re-read the block list once per load (the service caches it for 5 min).
     _blockedFuture = null;
+    // Likewise the user's own events (shared by My next events, Happening
+    // soon and the Near-you de-duplication).
+    _userEventsFuture = null;
     // Pull-to-refresh must re-read WHERE THE USER IS before reloading anything,
     // otherwise every section below is recomputed against a stale stored
     // position (distances, people nearby, country filtering).
@@ -270,6 +310,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // never throws (a failure just hides its section). On a pull-to-refresh
     // (forceRefresh) the people pool bypasses its in-memory cache; the Firestore
     // .get() loads already return fresh server data when online.
+    if (mounted && !_contentLoading) setState(() => _contentLoading = true);
     await Future.wait<void>([
       // Featured / Happening-today / Near-you share ONE nearby read and are
       // elected in order so they never show the same event twice.
@@ -284,6 +325,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       _loadSpotlight(),
       _loadCoinsStat(),
     ]);
+    if (mounted) setState(() => _contentLoading = false);
   }
 
   /// Background server refresh after a cache-first profile read. If the
@@ -303,7 +345,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   // LastResultCache keys for the sections painted instantly on open.
   static const String _kCacheLuxury = 'explore_luxury_v1';
-  static const String _kCacheHappenings = 'explore_happenings_v1';
+  // v2: "Happening soon" now holds the user's registered events; a v1 entry
+  // is a nearby-events list and must never be painted as one.
+  static const String _kCacheHappenings = 'explore_happenings_v2';
   static const String _kCacheAroundYou = 'explore_around_you_v1';
   static const String _kCacheRecommended = 'explore_recommended_v1';
   static const String _kCacheSameLanguage = 'explore_same_language_v1';
@@ -347,14 +391,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final results = await Future.wait<Object?>([
         // Featured: never past (no radius — it is nearest-first, uncapped).
         _cachedHappenings(_kCacheLuxury),
-        // Happening: the 14-day window and 100 km, as the server election.
-        _cachedHappenings(_kCacheHappenings, communityOk: (h) {
-          final now = DateTime.now();
-          final today = DateTime(now.year, now.month, now.day);
-          return h.community!.startDate
-                  .isBefore(today.add(const Duration(days: 15))) &&
-              _withinKm(h, 100);
-        }),
+        // Happening: the user's registered events, re-checked as live and not
+        // past; the server load then re-checks the RSVPs themselves.
+        _cachedHappenings(_kCacheHappenings),
         people(_kCacheAroundYou),
         people(_kCacheRecommended),
         people(_kCacheSameLanguage),
@@ -431,7 +470,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       });
       _precacheAvatars(around);
     } catch (_) {
-      // Nothing cached — the skeletons stay until the server loads land.
+      // Nothing cached — sections appear as the server loads land.
     }
   }
 
@@ -821,13 +860,47 @@ class _ExploreScreenState extends State<ExploreScreen> {
               .catchError((Object _) => const <Event>[])
           : Future<Object>.value(const <Event>[]),
       _nearbyLiveEvents(),
+      // The user's own events — the SAME (memoised) read that feeds My next
+      // events and Happening soon, so this costs nothing extra.
+      _userEvents(),
     ]);
     final community = results[0] as List<Event>;
     final live = results[1] as List<ExternalEvent>;
+    final registered = _registeredUpcoming(results[2] as List<Event>);
     _usedEventKeys.clear();
     _loadLuxuryEvents(community, live); // Featured — records its keys
-    await _loadHappenings(community, live); // Happening — excludes + records
+    // Happening soon shows the registered events; reserve them so Near-you
+    // doesn't repeat them.
+    for (final e in registered) {
+      _usedEventKeys.add(e.id);
+    }
     _loadCommunityEvents(community); // Near you — excludes
+  }
+
+  /// The current user's own events (organized + RSVP'd "going"), read ONCE per
+  /// load via [EventsRemoteDataSource.getUserEvents] (bounded: 100 organized +
+  /// 500 attendee rows) and shared by My next events, Happening soon and the
+  /// Near-you de-duplication. A failure yields an empty list.
+  Future<List<Event>> _userEvents() => _userEventsFuture ??=
+      EventsRemoteDataSourceImpl(firestore: _firestore)
+          .getUserEvents(widget.userId)
+          .catchError((Object _) => const <Event>[]);
+  Future<List<Event>>? _userEventsFuture;
+
+  /// The UPCOMING events (starting today or later, not cancelled/draft) that
+  /// the user has RSVP'd to as "going", soonest first, capped at
+  /// [kHappeningSoonCount]. Events they only organize don't count.
+  List<Event> _registeredUpcoming(List<Event> all) {
+    final list = all
+        .where((e) =>
+            e.status != EventStatus.cancelled &&
+            e.status != EventStatus.draft &&
+            _eventNotPast(e) &&
+            e.attendees.any((a) =>
+                a.userId == widget.userId && a.status == RSVPStatus.going))
+        .toList()
+      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    return list.take(kHappeningSoonCount).toList();
   }
 
   /// Nearest published community events read once per load (nearest-first);
@@ -859,99 +932,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
       // Keep whatever was found — an empty result just skips the live fill.
     }
     return out;
-  }
-
-  Future<void> _loadHappenings(
-    List<Event> community,
-    List<ExternalEvent> liveEvents,
-  ) async {
-    // 1) Community events happening SOON: ongoing or upcoming (not yet ended).
-    //    One instance per recurring series.
-    int byDate(_Happening a, _Happening b) {
-      final da = a.date;
-      final db = b.date;
-      if (da == null && db == null) return 0;
-      if (da == null) return 1;
-      if (db == null) return -1;
-      return da.compareTo(db);
-    }
-    // Order FIRST by city (the user's OWN city first, then other cities
-    // alphabetically), THEN by date (soonest first) within each city.
-    final myCity = (_city ?? '').trim().toLowerCase();
-    String cityKey(_Happening h) => (h.city ?? '').trim().toLowerCase();
-    int byCityThenDate(_Happening a, _Happening b) {
-      final ca = cityKey(a);
-      final cb = cityKey(b);
-      final aMine = myCity.isNotEmpty && ca == myCity;
-      final bMine = myCity.isNotEmpty && cb == myCity;
-      if (aMine != bMine) return aMine ? -1 : 1; // user's city on top
-      final byCityName = ca.compareTo(cb); // then alphabetical by city
-      if (byCityName != 0) return byCityName;
-      return byDate(a, b); // then soonest first
-    }
-
-    // "Happening soon": the first 20 COMMUNITY events (close by, WITHIN 100km,
-    // starting in the window [today .. today+14 days], ordered by city then date).
-    // If FEWER than 20, the remaining slots are filled with the nearest upcoming
-    // LIVE events by distance.
-    final now = DateTime.now();
-    final startOfToday = DateTime(now.year, now.month, now.day);
-    final windowEnd = startOfToday.add(const Duration(days: 15)); // 14d inclusive
-    bool within14(Event e) =>
-        !e.startDate.isBefore(startOfToday) && e.startDate.isBefore(windowEnd);
-
-    var communityPool = _dedupeSeries(
-      community.where(within14).toList(),
-    )
-        .map((e) => _Happening.community(e))
-        .where((h) => _withinKm(h, 100)) // <= 100km
-        .toList();
-
-    // FALLBACK for near events missing a geohash (the geohash-ordered nearby
-    // query silently omits them): pull the upcoming events and re-apply the SAME
-    // near + 14-day window so the section stays close and on-window.
-    if (communityPool.isEmpty && _userLat != null && _userLng != null) {
-      try {
-        final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
-        final src = await eventsDs.getEvents(upcoming: true);
-        communityPool = _dedupeSeries(src.where(within14).toList())
-            .map((e) => _Happening.community(e))
-            .where((h) => _withinKm(h, 100))
-            .toList();
-      } catch (_) {}
-    }
-    communityPool.sort(byCityThenDate);
-
-    var communityRows = communityPool
-        .where((h) => h.key.isEmpty || !_usedEventKeys.contains(h.key))
-        .take(20)
-        .toList();
-    if (communityRows.isEmpty && communityPool.isNotEmpty) {
-      communityRows = communityPool.take(20).toList();
-    }
-
-    // Fill the remainder up to 20 with the NEAREST upcoming LIVE events, ordered
-    // by distance.
-    final rows = <_Happening>[...communityRows];
-    if (rows.length < 20 && _userLat != null && _userLng != null) {
-      // Already future-only, located and nearest-first.
-      final used = {...rows.map((h) => h.key), ..._usedEventKeys};
-      final live = liveEvents
-          .map((e) => _Happening.external(e))
-          .where((h) => h.key.isNotEmpty && !used.contains(h.key));
-      rows.addAll(live.take(20 - rows.length));
-    }
-    // Reserve these so Near-you doesn't repeat them.
-    for (final h in rows) {
-      if (h.key.isNotEmpty) _usedEventKeys.add(h.key);
-    }
-
-    _saveHappenings(_kCacheHappenings, rows);
-    if (mounted) {
-      setState(() {
-        _happenings = rows;
-      });
-    }
   }
 
   /// Loads "Featured events": up to 3 cards elected BOOSTED-first and
@@ -1056,33 +1036,72 @@ class _ExploreScreenState extends State<ExploreScreen> {
     }
   }
 
-  /// Loads "Featured attractions": random external attractions (Geoapify /
-  /// Wikipedia) near the user, within [kFeaturedRadiusKm] when a location is
-  /// known (otherwise a rating-sorted sample). Up to 3 at random. Empty (or on
-  /// failure) → the carousel is hidden.
+  /// Loads "Featured attractions": up to [kFeaturedAttractionCount] curated
+  /// attractions from the GreenGo catalogue (`attractions_index`, the same
+  /// source as the Attractions tab), for the country the user is IN
+  /// (traveler-aware via [_countryName]/[_userLat]/[_userLng], resolved with
+  /// the Attractions tab's [CountryResolver]; `primaryOrigin` as fallback).
+  /// Nearest to the user first when a location is known, else by GreenGo
+  /// Score; the elected set is shuffled so the carousel stays fresh.
+  ///
+  /// It used to read `external_events` with `source == 'geoapify'`, but that
+  /// feed was purged when the curated catalogue replaced it (Jul 2026): the
+  /// query came back empty, the data source fell back to its hard-coded
+  /// sample experiences, and `take(3)` showed at most three of those.
+  ///
+  /// Bounded: one cached config doc (`attraction_config/geo`), the bucket doc,
+  /// and one country's index shard (<= ~100 compact records), all memoised by
+  /// [AttractionsDataSource] for the session. Empty (or on failure) hides it.
   Future<void> _loadFeaturedAttractions() async {
     List<_Happening> picked = const <_Happening>[];
     try {
-      final ds = ExternalEventsDataSource(firestore: _firestore);
-      List<ExternalEvent> items;
-      if (_userLat != null && _userLng != null) {
-        items = await ds.getNearbyExperiences(
-          source: 'geoapify',
-          userLat: _userLat!,
-          userLng: _userLng!,
-          limit: 60,
+      final ds = AttractionsDataSource(firestore: _firestore);
+      final reads = await Future.wait<Object>([ds.bucket(), ds.geoIndex()]);
+      final bucket = reads[0] as String;
+      final geo = reads[1] as List<Map<String, dynamic>>;
+      final candidates = geo.map((m) {
+        final iso = (m['iso2'] ?? '').toString().toUpperCase();
+        final bboxRaw = m['bbox'];
+        return CountryCandidate(
+          iso2: iso,
+          name: (m['name'] ?? iso).toString(),
+          bbox: bboxRaw is List
+              ? bboxRaw.map((e) => (e as num).toDouble()).toList()
+              : null,
+          cities: ((m['cities'] as List?) ?? const [])
+              .map<(double, double)>((c) =>
+                  ((c[0] as num).toDouble(), (c[1] as num).toDouble()))
+              .toList(),
         );
-      } else {
-        items =
-            await ds.getExperiencesSorted(source: 'geoapify', sort: 'rating');
+      }).toList();
+      final lat = _userLat;
+      final lng = _userLng;
+      final origin = (_countryCode ?? '').toUpperCase();
+      final iso = CountryResolver.resolve(
+            candidates: candidates,
+            countryName: _countryName,
+            lat: lat,
+            lng: lng,
+          ) ??
+          (candidates.any((c) => c.iso2 == origin) ? origin : null);
+      if (iso != null) {
+        final all = (await ds.forCountry(iso))
+            .where((a) => a.imgHash.isNotEmpty && a.imgBase.isNotEmpty)
+            .toList();
+        if (lat != null && lng != null) {
+          double dist(Attraction a) => (a.lat == null || a.lng == null)
+              ? double.infinity
+              : FeatureEngineer().calculateDistance(lat, lng, a.lat!, a.lng!);
+          all.sort((a, b) => dist(a).compareTo(dist(b)));
+        } else {
+          all.sort((a, b) => b.greengoScore.compareTo(a.greengoScore));
+        }
+        picked = all
+            .take(kFeaturedAttractionCount)
+            .map((a) => _Happening.attraction(a, bucket))
+            .toList()
+          ..shuffle();
       }
-      final pool = items
-          .map((e) => _Happening.external(e))
-          .where(_hasImage) // omit picture-less attractions/experiences
-          .where(_withinFeaturedRadius)
-          .toList()
-        ..shuffle();
-      picked = pool.take(3).toList();
     } catch (_) {
       picked = const <_Happening>[];
     }
@@ -1253,29 +1272,37 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// "People that speak {language}" — picks ONE language the CURRENT USER
   /// themselves knows (from their own `profiles.languages`) and shows OTHER
-  /// people who also speak it. Two of the user's languages (random order) are
-  /// queried IN PARALLEL and the first that actually has other speakers is
-  /// chosen, so the section renders reliably rather than hiding on an unlucky
-  /// pick. (It used to retry up to 6 languages one after another.) Shuffled,
-  /// capped at [_peopleWanted]. Hidden entirely when the user lists no
-  /// languages (or neither pick has any other speakers).
+  /// people who also speak it. Up to [_maxLanguageTries] of the user's
+  /// languages are tried (random order) and the FIRST one that actually has
+  /// visible speakers is chosen, so the section renders reliably rather than
+  /// hiding on an unlucky pick: the first two are queried in parallel, the
+  /// rest one at a time only if those two came back empty. Shuffled, capped
+  /// at [_peopleWanted]. Hidden entirely when the user lists no languages (or
+  /// none of them has any other visible speaker).
+  ///
+  /// The performance pass had cut this to TWO languages; combined with the
+  /// stricter shared visibility rules (testers, incomplete profiles, incognito,
+  /// blocked) a user whose first two random picks had no visible speakers lost
+  /// the row entirely, where the original loader kept trying up to six.
   Future<void> _loadSameLanguage() async {
     final own = (List<String>.of(_userLanguages)..shuffle())
         .where((l) => l.isNotEmpty)
-        .take(2)
+        .take(_maxLanguageTries)
         .toList();
     if (own.isEmpty) {
       if (mounted) setState(() => _sameLanguage = const <MatchCandidate>[]);
       return;
     }
-    // Publish the tentative language immediately so the (skeleton) header
-    // reads correctly while the queries run — unless a cached row is already
+    // Publish the tentative language immediately so the header reads
+    // correctly as soon as the row appears — unless a cached row is already
     // on screen under its own language.
     if (mounted && _sameLanguage == null) {
       setState(() => _sameLanguageName = own.first);
     }
     final blocked = await _blockedIds();
-    final pools = await Future.wait(own.map((lang) async {
+
+    // Visible speakers of [lang] (bounded: 60 profile docs per language).
+    Future<Map<String, _Partner>> speakers(String lang) async {
       final byId = <String, _Partner>{};
       try {
         final snap = await _firestore
@@ -1288,14 +1315,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
           if (p != null) byId[doc.id] = p;
         }
       } catch (_) {
-        // Fall through to the other language.
+        // Fall through to the next language.
       }
       return byId;
-    }));
-    for (var i = 0; i < own.length; i++) {
-      final byId = pools[i];
-      if (byId.isEmpty) continue;
-      final lang = own[i];
+    }
+
+    Future<bool> publish(String lang, Map<String, _Partner> byId) async {
+      if (byId.isEmpty) return false;
       final picked = (byId.values.toList()..shuffle())
           .take(_peopleWanted)
           .map(_candidateFor)
@@ -1309,11 +1335,27 @@ class _ExploreScreenState extends State<ExploreScreen> {
           _sameLanguage = picked;
         });
       }
-      return;
+      return true;
+    }
+
+    // First two in parallel (the common case needs nothing more)…
+    final first = own.take(2).toList();
+    final pools = await Future.wait(first.map(speakers));
+    for (var i = 0; i < first.length; i++) {
+      if (await publish(first[i], pools[i])) return;
+    }
+    // …then the remaining languages one at a time, stopping at the first hit.
+    for (final lang in own.skip(2)) {
+      if (!mounted) return;
+      if (await publish(lang, await speakers(lang))) return;
     }
     unawaited(LastResultCache.saveIds(_kCacheSameLanguage, const <String>[]));
     if (mounted) setState(() => _sameLanguage = const <MatchCandidate>[]);
   }
+
+  /// How many of the user's languages "People that speak {language}" tries
+  /// before hiding (the pre-performance-pass value).
+  static const int _maxLanguageTries = 6;
 
   /// "Recommended for you" — heuristic relevance-ranked people via the
   /// [RecommendationService] (shared interests/languages + same city +
@@ -1509,19 +1551,25 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// (organized or RSVP'd). Uses the existing [EventsRemoteDataSource.getUserEvents]
   /// (organized + attending), then keeps only events whose start is in the
   /// future, ordered soonest-first, capped at 10. Failures hide the section.
+  ///
+  /// The same read also feeds "Happening soon": the upcoming events the user
+  /// has RSVP'd to as "going" ([_registeredUpcoming]). No registrations → that
+  /// section is hidden entirely.
   Future<void> _loadMyEvents() async {
-    List<Event> mine = const <Event>[];
-    try {
-      final eventsDs = EventsRemoteDataSourceImpl(firestore: _firestore);
-      final all = await eventsDs.getUserEvents(widget.userId);
-      final now = DateTime.now();
-      mine = all.where((e) => !e.startDate.isBefore(now)).toList()
-        ..sort((a, b) => a.startDate.compareTo(b.startDate));
-      if (mine.length > 10) mine = mine.sublist(0, 10);
-    } catch (_) {
-      mine = const <Event>[];
+    final all = await _userEvents();
+    final now = DateTime.now();
+    var mine = all.where((e) => !e.startDate.isBefore(now)).toList()
+      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    if (mine.length > 10) mine = mine.sublist(0, 10);
+    final registered =
+        _registeredUpcoming(all).map((e) => _Happening.community(e)).toList();
+    _saveHappenings(_kCacheHappenings, registered);
+    if (mounted) {
+      setState(() {
+        _myEvents = mine;
+        _happenings = registered;
+      });
     }
-    if (mounted) setState(() => _myEvents = mine);
   }
 
   /// Loads "Communities to join": PUBLIC communities, preferring ones near the
@@ -1572,12 +1620,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     } catch (_) {
       spotlight = null;
     }
-    if (mounted) {
-      setState(() {
-        _spotlight = spotlight;
-        _spotlightLoaded = true;
-      });
-    }
+    if (mounted) setState(() => _spotlight = spotlight);
   }
 
   /// The viewer's (bidirectional) block list, read once per screen (the
@@ -1753,18 +1796,47 @@ class _ExploreScreenState extends State<ExploreScreen> {
                             ],
                           ),
                         ),
-                        const SizedBox(height: 18),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20),
-                          child: _statsRow(context, l10n, reduceMotion),
+                        // The stats row appears once every tile has its
+                        // value (each resolves to a number or '–'), never as
+                        // a shimmering placeholder row.
+                        AnimatedSize(
+                          duration: reduceMotion
+                              ? Duration.zero
+                              : const Duration(milliseconds: 250),
+                          alignment: Alignment.topCenter,
+                          child: _statsReady
+                              ? Padding(
+                                  padding: const EdgeInsets.fromLTRB(
+                                      20, 18, 20, 0),
+                                  child:
+                                      _statsRow(context, l10n, reduceMotion),
+                                )
+                              : const SizedBox(width: double.infinity),
                         ),
                       ],
                     ),
                   ),
                 ),
               ),
-              // The full section list renders from the first frame; each section
-              // shows its own skeleton while loading and hides itself when empty.
+              // Each section renders only once it has data (no skeletons, no
+              // empty states); until the first one arrives a single small
+              // page-level indicator stands in for all of them.
+              if (_contentLoading && !_hasAnySectionData)
+                const SliverToBoxAdapter(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 48),
+                    child: Center(
+                      child: SizedBox(
+                        width: 26,
+                        height: 26,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2.5,
+                          color: AppColors.richGold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               // Featured attractions carousel near the top (hides itself when
               // empty). We intentionally do NOT show a separate generic
               // "Featured events" carousel here — the community/boosted events
@@ -1778,17 +1850,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // ── EVENTS ────────────────────────────────────────────────────
               // Featured community events, then Happening soon.
               _luxuryEventsSection(context, l10n, reduceMotion),
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-                  child: _sectionHeader(
-                    context,
-                    l10n.exploreHappeningSoon,
-                    l10n.exploreSeeAll,
-                    onSeeAll: () => _openAllEvents(context),
-                  ),
-                ),
-              ),
+              // Only when the user is registered for an upcoming event (the
+              // section carries its own header and hides itself otherwise).
               _happeningSection(context, l10n, reduceMotion),
 
               // ── PEOPLE ────────────────────────────────────────────────────
@@ -1819,17 +1882,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
               // ── BUSINESSES & COMMUNITIES TO JOIN ──────────────────────────
               _businessesSection(context, l10n, reduceMotion),
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-                  child: _sectionHeader(
-                    context,
-                    l10n.exploreCommunitiesTitle,
-                    l10n.exploreSeeAll,
-                    onSeeAll: () => _openCommunitiesList(context),
-                  ),
-                ),
-              ),
               _communitiesSection(context, l10n, reduceMotion),
 
               // ── COMMUNITY EVENTS NEAR YOU ─────────────────────────────────
@@ -2051,8 +2103,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// The personalized stats row (glass): coins, membership tier, countries
-  /// engaged (passport stamps) and distinct people chatted with. Each tile
-  /// shimmers until its value resolves; a failed stat resolves to '–'.
+  /// engaged (passport stamps) and distinct people chatted with. Shown only
+  /// once every tile has resolved (see [_statsReady]); a failed stat resolves
+  /// to '–'.
   Widget _statsRow(
     BuildContext context,
     AppLocalizations l10n,
@@ -2182,9 +2235,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// "Featured events" — a hero carousel of up to three random community events
-  /// within [kFeaturedRadiusKm] ([_FeaturedCard] style). While loading it shows
-  /// a skeleton carousel; once loaded with nothing to show the whole section
-  /// (header included) collapses to nothing. Tapping routes to [_openHappening]
+  /// within [kFeaturedRadiusKm] ([_FeaturedCard] style). Rendered only once it
+  /// has items; while loading or empty the whole section (header included) is
+  /// absent. Tapping routes to [_openHappening]
   /// (→ [EventDetailLoaderScreen]).
   Widget _featuredEventsSection(
     BuildContext context,
@@ -2199,9 +2252,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
         topPadding: 24,
       );
 
-  /// "Featured attractions" — a hero carousel of up to three random external
-  /// attractions near the user ([_FeaturedCard] style), directly below
-  /// "Featured events". Tapping opens the read-only attraction sheet via
+  /// "Featured attractions" — a hero carousel of up to
+  /// [kFeaturedAttractionCount] curated attractions near the user
+  /// ([_FeaturedCard] style). Tapping opens the attraction detail page via
   /// [_openHappening]. Hidden entirely when there are none.
   Widget _featuredAttractionsSection(
     BuildContext context,
@@ -2218,9 +2271,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// "Featured community events" — the LUXURY carousel of up to three
   /// boosted-first community events ([_LuxuryEventCard]: gold gradient frame,
-  /// soft outer glow and an animated shine sweep). While loading it shows a
-  /// premium skeleton; loaded with nothing hides the whole section (header
-  /// included). Tapping opens the event detail / RSVP screen. Reduced-motion
+  /// soft outer glow and an animated shine sweep). While loading or empty the
+  /// whole section (header included) is absent. Tapping opens the event detail / RSVP screen. Reduced-motion
   /// safe (no shine sweep, clamping physics).
   Widget _luxuryEventsSection(
     BuildContext context,
@@ -2228,8 +2280,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     bool reduceMotion,
   ) {
     final events = _luxuryEvents;
-    // Loaded and empty → hide the section entirely (no empty box).
-    if (events != null && events.isEmpty) {
+    // Still loading, or loaded and empty → render nothing at all.
+    if (events == null || events.isEmpty) {
       return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
 
@@ -2237,33 +2289,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ? const ClampingScrollPhysics()
         : const BouncingScrollPhysics();
 
-    Widget content;
-    String stateKey;
-    if (events == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: 14),
-        itemBuilder: (_, __) => _LuxuryEventCardSkeleton(animate: !reduceMotion),
-      );
-    } else {
-      stateKey = 'loaded';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: physics,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: events.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 14),
-        itemBuilder: (context, index) => _LuxuryEventCard(
-          happening: events[index],
-          animate: !reduceMotion,
-          onTap: () => _openHappening(context, events[index]),
-        ),
-      );
-    }
+    final Widget content = ListView.separated(
+      scrollDirection: Axis.horizontal,
+      physics: physics,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      itemCount: events.length,
+      separatorBuilder: (_, __) => const SizedBox(width: 14),
+      itemBuilder: (context, index) => _LuxuryEventCard(
+        happening: events[index],
+        animate: !reduceMotion,
+        onTap: () => _openHappening(context, events[index]),
+      ),
+    );
 
     return SliverToBoxAdapter(
       child: Column(
@@ -2285,21 +2322,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
           SizedBox(
             height: _LuxuryEventCard.cardHeight,
-            child: AnimatedSwitcher(
-              duration: reduceMotion
-                  ? Duration.zero
-                  : const Duration(milliseconds: 300),
-              child:
-                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-            ),
+            child: content,
           ),
         ],
       ),
     );
   }
 
-  /// Shared builder for the two hero carousels. [items] null == loading (show a
-  /// skeleton carousel); empty == hide the whole section (header + carousel).
+  /// Shared builder for the two hero carousels. [items] null (loading) or empty
+  /// == render nothing at all (no header, no skeleton).
   /// The card is wider than the page gutter so the next card peeks (~1.1
   /// visible). Reduced-motion safe (clamping physics + no fade when animations
   /// are disabled).
@@ -2310,8 +2341,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     required List<_Happening>? items,
     required double topPadding,
   }) {
-    // Loaded and empty → hide the section entirely (no empty box).
-    if (items != null && items.isEmpty) {
+    // Still loading, or loaded and empty → render nothing at all.
+    if (items == null || items.isEmpty) {
       return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
 
@@ -2319,33 +2350,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ? const ClampingScrollPhysics()
         : const BouncingScrollPhysics();
 
-    Widget content;
-    String stateKey;
-    if (items == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: 14),
-        itemBuilder: (_, __) => _FeaturedCardSkeleton(animate: !reduceMotion),
-      );
-    } else {
-      stateKey = 'loaded';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: physics,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: items.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 14),
-        itemBuilder: (context, index) => _FeaturedCard(
-          happening: items[index],
-          animate: !reduceMotion,
-          onTap: () => _openHappening(context, items[index]),
-        ),
-      );
-    }
+    final Widget content = ListView.separated(
+      scrollDirection: Axis.horizontal,
+      physics: physics,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      itemCount: items.length,
+      separatorBuilder: (_, __) => const SizedBox(width: 14),
+      itemBuilder: (context, index) => _FeaturedCard(
+        happening: items[index],
+        animate: !reduceMotion,
+        onTap: () => _openHappening(context, items[index]),
+      ),
+    );
 
     return SliverToBoxAdapter(
       child: Column(
@@ -2367,13 +2383,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
           SizedBox(
             height: _FeaturedCard.cardHeight,
-            child: AnimatedSwitcher(
-              duration: reduceMotion
-                  ? Duration.zero
-                  : const Duration(milliseconds: 300),
-              child:
-                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-            ),
+            child: content,
           ),
         ],
       ),
@@ -2433,8 +2443,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   static const double _networkCardHeight = 210;
 
   /// A people carousel section (title + horizontal row of [NetworkGridCard]s).
-  /// [people] null == loading (skeleton row); empty == the whole section
-  /// (header included) collapses to nothing. When [onSeeAll] is non-null a
+  /// [people] null (loading) or empty == the whole section (header included)
+  /// is absent. When [onSeeAll] is non-null a
   /// "See all" action is shown in the header. Reduced-motion safe: clamping
   /// physics + no shimmer/fade when animations are disabled.
   Widget _peopleSection(
@@ -2445,8 +2455,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     required List<MatchCandidate>? people,
     VoidCallback? onSeeAll,
   }) {
-    // Loaded and empty → hide the section entirely (no empty box).
-    if (people != null && people.isEmpty) {
+    // Still loading, or loaded and empty → render nothing at all.
+    if (people == null || people.isEmpty) {
       return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
 
@@ -2454,33 +2464,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ? const ClampingScrollPhysics()
         : const BouncingScrollPhysics();
 
-    Widget content;
-    String stateKey;
-    if (people == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 6,
-        separatorBuilder: (_, __) => const SizedBox(width: 10),
-        itemBuilder: (_, __) => SizedBox(
-          width: _networkCardWidth,
-          height: _networkCardHeight,
-          child: _PersonSkeleton(animate: !reduceMotion),
-        ),
-      );
-    } else {
-      stateKey = 'loaded';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: physics,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: people.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 10),
-        itemBuilder: (context, index) => _personCard(context, people[index]),
-      );
-    }
+    final Widget content = ListView.separated(
+      scrollDirection: Axis.horizontal,
+      physics: physics,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      itemCount: people.length,
+      separatorBuilder: (_, __) => const SizedBox(width: 10),
+      itemBuilder: (context, index) => _personCard(context, people[index]),
+    );
 
     // Header: with a "See all" action when [onSeeAll] is provided, else a plain
     // title (matching the featured-carousel title styling).
@@ -2502,22 +2493,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Hide the section title while loading — only show it once people are
-          // in, so there's no "People around you" header over empty shimmer.
-          if (people != null)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-              child: header,
-            ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+            child: header,
+          ),
           SizedBox(
             height: _networkCardHeight,
-            child: AnimatedSwitcher(
-              duration: reduceMotion
-                  ? Duration.zero
-                  : const Duration(milliseconds: 300),
-              child:
-                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-            ),
+            child: content,
           ),
         ],
       ),
@@ -2571,16 +2553,16 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// "Community events near you" — a carousel of community/user-created events
   /// close to the user, reusing the [_HappeningCard] via a community
   /// [_Happening] so it renders (and taps through to [EventDetailLoaderScreen])
-  /// exactly like the other event cards. While loading it shows a skeleton
-  /// carousel; loaded with nothing hides the whole section (header included).
+  /// exactly like the other event cards. Rendered only once it has events;
+  /// while loading or empty the whole section (header included) is absent.
   Widget _communityEventsSection(
     BuildContext context,
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
     final events = _communityEvents;
-    // Loaded and empty → hide the section entirely.
-    if (events != null && events.isEmpty) {
+    // Still loading, or loaded and empty → render nothing at all.
+    if (events == null || events.isEmpty) {
       return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
 
@@ -2588,36 +2570,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ? const ClampingScrollPhysics()
         : const BouncingScrollPhysics();
 
-    Widget content;
-    String stateKey;
-    if (events == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (_, __) => _HappeningCardSkeleton(animate: !reduceMotion),
-      );
-    } else {
-      stateKey = 'loaded';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: physics,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: events.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (context, index) {
-          final happening = _Happening.community(events[index]);
-          return _HappeningCard(
-            happening: happening,
-            animate: !reduceMotion,
-            onTap: () => _openHappening(context, happening),
-          );
-        },
-      );
-    }
+    final Widget content = ListView.separated(
+      scrollDirection: Axis.horizontal,
+      physics: physics,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      itemCount: events.length,
+      separatorBuilder: (_, __) => const SizedBox(width: 12),
+      itemBuilder: (context, index) {
+        final happening = _Happening.community(events[index]);
+        return _HappeningCard(
+          happening: happening,
+          animate: !reduceMotion,
+          onTap: () => _openHappening(context, happening),
+        );
+      },
+    );
 
     return SliverToBoxAdapter(
       child: Column(
@@ -2639,13 +2606,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
           SizedBox(
             height: _HappeningCard.cardHeight,
-            child: AnimatedSwitcher(
-              duration: reduceMotion
-                  ? Duration.zero
-                  : const Duration(milliseconds: 300),
-              child:
-                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-            ),
+            child: content,
           ),
         ],
       ),
@@ -2653,8 +2614,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// "Businesses near you" — a horizontal carousel of public business profiles,
-  /// nearest-first. While loading it shows a skeleton row; loaded with nothing
-  /// hides the whole section (header included). Tapping opens the business's
+  /// nearest-first. Rendered only once it has businesses; while loading or
+  /// empty the whole section (header included) is absent. Tapping opens the business's
   /// storefront ([BusinessStorefrontScreen]). Reduced-motion safe.
   Widget _businessesSection(
     BuildContext context,
@@ -2662,8 +2623,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     bool reduceMotion,
   ) {
     final businesses = _businesses;
-    // Loaded and empty → hide the section entirely.
-    if (businesses != null && businesses.isEmpty) {
+    // Still loading, or loaded and empty → render nothing at all.
+    if (businesses == null || businesses.isEmpty) {
       return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
 
@@ -2671,33 +2632,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ? const ClampingScrollPhysics()
         : const BouncingScrollPhysics();
 
-    Widget content;
-    String stateKey;
-    if (businesses == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (_, __) => _BusinessCardSkeleton(animate: !reduceMotion),
-      );
-    } else {
-      stateKey = 'loaded';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: physics,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: businesses.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (context, index) => _BusinessCard(
-          business: businesses[index],
-          animate: !reduceMotion,
-          onTap: () => _openBusiness(context, businesses[index]),
-        ),
-      );
-    }
+    final Widget content = ListView.separated(
+      scrollDirection: Axis.horizontal,
+      physics: physics,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      itemCount: businesses.length,
+      separatorBuilder: (_, __) => const SizedBox(width: 12),
+      itemBuilder: (context, index) => _BusinessCard(
+        business: businesses[index],
+        animate: !reduceMotion,
+        onTap: () => _openBusiness(context, businesses[index]),
+      ),
+    );
 
     return SliverToBoxAdapter(
       child: Column(
@@ -2715,13 +2661,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
           SizedBox(
             height: _BusinessCard.cardHeight,
-            child: AnimatedSwitcher(
-              duration: reduceMotion
-                  ? Duration.zero
-                  : const Duration(milliseconds: 300),
-              child:
-                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-            ),
+            child: content,
           ),
         ],
       ),
@@ -2744,64 +2684,53 @@ class _ExploreScreenState extends State<ExploreScreen> {
     );
   }
 
-  /// "Happening this week" — a full-width, horizontally-scrolling carousel of
-  /// LARGE event cards (image-forward), showing at most three items. Community
-  /// events come first (see [_loadHappenings]); tapping routes to
-  /// [_openHappening]. The loading → loaded transition fades via an
-  /// [AnimatedSwitcher] so cards don't pop or jump. Reduced-motion safe.
+  /// "Happening soon" — the UPCOMING events the user has registered for
+  /// (RSVP'd "going"), soonest first, as a horizontally-scrolling carousel of
+  /// large event cards; tapping routes to [_openHappening]. Shown ONLY when
+  /// there is at least one: while loading and when the user has no upcoming
+  /// registrations the whole section (header included) is absent, so it never
+  /// flashes a skeleton or an empty state. Reduced-motion safe.
   Widget _happeningSection(
     BuildContext context,
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
-    Widget content;
-    String stateKey;
-
-    if (_happenings == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (_, __) => _HappeningCardSkeleton(animate: !reduceMotion),
-      );
-    } else if (_happenings!.isEmpty) {
-      stateKey = 'empty';
-      content = Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Align(
-          alignment: Alignment.topCenter,
-          child: _EmptyHint(text: l10n.exploreNoEvents),
-        ),
-      );
-    } else {
-      stateKey = 'loaded';
-      // Up to 20 cards, ordered by date (soonest first).
-      final rows = _happenings!.take(20).toList();
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const BouncingScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: rows.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (context, index) => _HappeningCard(
-          happening: rows[index],
-          animate: !reduceMotion,
-          onTap: () => _openHappening(context, rows[index]),
-        ),
-      );
+    final rows = _happenings;
+    if (rows == null || rows.isEmpty) {
+      return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
-
     return SliverToBoxAdapter(
-      child: SizedBox(
-        height: _HappeningCard.cardHeight,
-        child: AnimatedSwitcher(
-          duration:
-              reduceMotion ? Duration.zero : const Duration(milliseconds: 300),
-          child: KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+            child: _sectionHeader(
+              context,
+              l10n.exploreHappeningSoon,
+              l10n.exploreSeeAll,
+              onSeeAll: () => _openAllEvents(context),
+            ),
+          ),
+          SizedBox(
+            height: _HappeningCard.cardHeight,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              physics: reduceMotion
+                  ? const ClampingScrollPhysics()
+                  : const BouncingScrollPhysics(),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              itemCount: rows.length,
+              separatorBuilder: (_, __) => const SizedBox(width: 12),
+              itemBuilder: (context, index) => _HappeningCard(
+                happening: rows[index],
+                animate: !reduceMotion,
+                onTap: () => _openHappening(context, rows[index]),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -2809,16 +2738,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// "My next events" — the user's UPCOMING events (organized or RSVP'd),
   /// soonest-first, near the top of Explore. Reuses the [_HappeningCard] via a
   /// community [_Happening] so it renders (and taps through to
-  /// [EventDetailLoaderScreen]) exactly like the other event cards. While
-  /// loading it shows a skeleton carousel; once loaded with nothing upcoming the
-  /// whole section (header included) collapses to nothing.
+  /// [EventDetailLoaderScreen]) exactly like the other event cards. Rendered
+  /// only once there is something upcoming; while loading or empty the whole
+  /// section (header included) is absent.
   Widget _myEventsSection(
     BuildContext context,
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
-    // Loaded and empty → hide the section entirely (no empty box).
-    if (_myEvents != null && _myEvents!.isEmpty) {
+    // Still loading, or nothing upcoming → render nothing at all.
+    final events = _myEvents;
+    if (events == null || events.isEmpty) {
       return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
 
@@ -2826,37 +2756,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ? const ClampingScrollPhysics()
         : const BouncingScrollPhysics();
 
-    Widget content;
-    String stateKey;
-    if (_myEvents == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (_, __) => _HappeningCardSkeleton(animate: !reduceMotion),
-      );
-    } else {
-      stateKey = 'loaded';
-      final events = _myEvents!;
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: physics,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: events.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (context, index) {
-          final happening = _Happening.community(events[index]);
-          return _HappeningCard(
-            happening: happening,
-            animate: !reduceMotion,
-            onTap: () => _openHappening(context, happening),
-          );
-        },
-      );
-    }
+    final Widget content = ListView.separated(
+      scrollDirection: Axis.horizontal,
+      physics: physics,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      itemCount: events.length,
+      separatorBuilder: (_, __) => const SizedBox(width: 12),
+      itemBuilder: (context, index) {
+        final happening = _Happening.community(events[index]);
+        return _HappeningCard(
+          happening: happening,
+          animate: !reduceMotion,
+          onTap: () => _openHappening(context, happening),
+        );
+      },
+    );
 
     return SliverToBoxAdapter(
       child: Column(
@@ -2874,13 +2788,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
           SizedBox(
             height: _HappeningCard.cardHeight,
-            child: AnimatedSwitcher(
-              duration: reduceMotion
-                  ? Duration.zero
-                  : const Duration(milliseconds: 300),
-              child:
-                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-            ),
+            child: content,
           ),
         ],
       ),
@@ -2888,105 +2796,79 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// "Communities to join" — a horizontal carousel of public communities near
-  /// the user (or recent/popular). Its section header (with "See all") is added
-  /// by [build]; this returns just the carousel sliver. Reduced-motion safe.
+  /// the user (or recent/popular), with its "See all" header. Rendered only
+  /// once there is at least one community: while loading and when there are
+  /// none the whole section (header included) is absent. Reduced-motion safe.
   Widget _communitiesSection(
     BuildContext context,
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
+    final communities = _communities;
+    if (communities == null || communities.isEmpty) {
+      return const SliverToBoxAdapter(child: SizedBox.shrink());
+    }
     final physics = reduceMotion
         ? const ClampingScrollPhysics()
         : const BouncingScrollPhysics();
 
-    Widget content;
-    String stateKey;
-    if (_communities == null) {
-      stateKey = 'loading';
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: 3,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (_, __) => _CommunityCardSkeleton(animate: !reduceMotion),
-      );
-    } else if (_communities!.isEmpty) {
-      stateKey = 'empty';
-      content = Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Align(
-          alignment: Alignment.topCenter,
-          child: _EmptyHint(text: l10n.exploreNoCommunities),
-        ),
-      );
-    } else {
-      stateKey = 'loaded';
-      final communities = _communities!;
-      content = ListView.separated(
-        scrollDirection: Axis.horizontal,
-        physics: physics,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        itemCount: communities.length,
-        separatorBuilder: (_, __) => const SizedBox(width: 12),
-        itemBuilder: (context, index) => _CommunityCard(
-          community: communities[index],
-          animate: !reduceMotion,
-          onTap: () => _openCommunity(context, communities[index]),
-        ),
-      );
-    }
-
     return SliverToBoxAdapter(
-      child: SizedBox(
-        height: _CommunityCard.cardHeight,
-        child: AnimatedSwitcher(
-          duration:
-              reduceMotion ? Duration.zero : const Duration(milliseconds: 300),
-          child: KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
+            child: _sectionHeader(
+              context,
+              l10n.exploreCommunitiesTitle,
+              l10n.exploreSeeAll,
+              onSeeAll: () => _openCommunitiesList(context),
+            ),
+          ),
+          SizedBox(
+            height: _CommunityCard.cardHeight,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              physics: physics,
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              itemCount: communities.length,
+              separatorBuilder: (_, __) => const SizedBox(width: 12),
+              itemBuilder: (context, index) => _CommunityCard(
+                community: communities[index],
+                animate: !reduceMotion,
+                onTap: () => _openCommunity(context, communities[index]),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 
   /// "Country Spotlight" — a single glass card for the active weekly spotlight.
-  /// While loading it shows a skeleton card; if there is no active spotlight the
-  /// whole section (header included) collapses to nothing. Tapping opens the
+  /// Rendered only once an active spotlight is known; while loading or when
+  /// there is none the whole section (header included) is absent. Tapping opens the
   /// Cultural Exchange hub.
   Widget _spotlightSection(
     BuildContext context,
     AppLocalizations l10n,
     bool reduceMotion,
   ) {
-    // Loaded with no active spotlight → hide the section entirely.
-    if (_spotlightLoaded && _spotlight == null) {
+    // Still loading, or no active spotlight → render nothing at all.
+    final spotlight = _spotlight;
+    if (spotlight == null) {
       return const SliverToBoxAdapter(child: SizedBox.shrink());
     }
 
-    Widget content;
-    String stateKey;
-    if (!_spotlightLoaded) {
-      stateKey = 'loading';
-      content = Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: _ShimmerBox(
-          width: double.infinity,
-          height: _SpotlightCard.cardHeight,
-          radius: AppGlass.radiusCard,
-          animate: !reduceMotion,
-        ),
-      );
-    } else {
-      stateKey = 'loaded';
-      content = Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: _SpotlightCard(
-          spotlight: _spotlight!,
-          animate: !reduceMotion,
-          onTap: () => _openSpotlight(context),
-        ),
-      );
-    }
+    final Widget content = Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: _SpotlightCard(
+        spotlight: spotlight,
+        animate: !reduceMotion,
+        onTap: () => _openSpotlight(context),
+      ),
+    );
 
     return SliverToBoxAdapter(
       child: Column(
@@ -3008,13 +2890,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
           SizedBox(
             height: _SpotlightCard.cardHeight,
-            child: AnimatedSwitcher(
-              duration: reduceMotion
-                  ? Duration.zero
-                  : const Duration(milliseconds: 300),
-              child:
-                  KeyedSubtree(key: ValueKey<String>(stateKey), child: content),
-            ),
+            child: content,
           ),
         ],
       ),
@@ -3035,6 +2911,21 @@ class _ExploreScreenState extends State<ExploreScreen> {
         EventDetailLoaderScreen.route(
           eventId: community.id,
           currentUserId: widget.userId,
+        ),
+      );
+      return;
+    }
+    final attraction = happening.attraction;
+    if (attraction != null) {
+      // Curated catalogue attraction: the same detail page as the
+      // Attractions tab.
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => AttractionDetailScreen(
+            attractionId: attraction.id,
+            fallback: attraction,
+            bucket: happening.attractionBucket ?? '',
+          ),
         ),
       );
       return;
@@ -3391,24 +3282,6 @@ class _FeaturedCard extends StatelessWidget {
   }
 }
 
-/// Skeleton for a loading "Featured experience" carousel card — matches the
-/// [_FeaturedCard] footprint so the loaded content slots in without a jump.
-class _FeaturedCardSkeleton extends StatelessWidget {
-  const _FeaturedCardSkeleton({required this.animate});
-
-  final bool animate;
-
-  @override
-  Widget build(BuildContext context) {
-    return _ShimmerBox(
-      width: _FeaturedCard.cardWidth,
-      height: _FeaturedCard.cardHeight,
-      radius: AppGlass.radiusCard,
-      animate: animate,
-    );
-  }
-}
-
 /// A LUXURY "Featured community event" hero card — a premium treatment that
 /// clearly outranks the ordinary event cards: a gold gradient frame, a soft
 /// gold outer glow ([AppGlass.goldGlow]), a richer gold-tinted glass scrim, a
@@ -3661,34 +3534,6 @@ class _LuxuryEventCardState extends State<_LuxuryEventCard>
             ),
           ),
         ),
-      ),
-    );
-  }
-}
-
-/// Skeleton for a loading LUXURY "Featured community event" card — keeps the
-/// gold frame so the premium treatment reads even while loading, matching the
-/// [_LuxuryEventCard] footprint so the loaded content slots in without a jump.
-class _LuxuryEventCardSkeleton extends StatelessWidget {
-  const _LuxuryEventCardSkeleton({required this.animate});
-
-  final bool animate;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: _LuxuryEventCard.cardWidth,
-      height: _LuxuryEventCard.cardHeight,
-      padding: const EdgeInsets.all(_LuxuryEventCard._frame),
-      decoration: BoxDecoration(
-        gradient: AppColors.goldGradient,
-        borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-      ),
-      child: _ShimmerBox(
-        width: double.infinity,
-        height: double.infinity,
-        radius: AppGlass.radiusCard - _LuxuryEventCard._frame,
-        animate: animate,
       ),
     );
   }
@@ -3986,24 +3831,6 @@ class _CommunityCard extends StatelessWidget {
   }
 }
 
-/// Skeleton for a loading "Communities to join" card — matches the
-/// [_CommunityCard] footprint so the loaded content slots in without a jump.
-class _CommunityCardSkeleton extends StatelessWidget {
-  const _CommunityCardSkeleton({required this.animate});
-
-  final bool animate;
-
-  @override
-  Widget build(BuildContext context) {
-    return _ShimmerBox(
-      width: _CommunityCard.cardWidth,
-      height: _CommunityCard.cardHeight,
-      radius: AppGlass.radiusCard,
-      animate: animate,
-    );
-  }
-}
-
 /// A glass "business near you" card. A full-width cover/avatar image on top
 /// (the business's first photo, else a branded storefront fallback), then the
 /// business name and its category. Solid charcoal surface (no per-card
@@ -4156,24 +3983,6 @@ class _BusinessCard extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-/// Skeleton for a loading "Businesses near you" card — matches the
-/// [_BusinessCard] footprint so the loaded content slots in without a jump.
-class _BusinessCardSkeleton extends StatelessWidget {
-  const _BusinessCardSkeleton({required this.animate});
-
-  final bool animate;
-
-  @override
-  Widget build(BuildContext context) {
-    return _ShimmerBox(
-      width: _BusinessCard.cardWidth,
-      height: _BusinessCard.cardHeight,
-      radius: AppGlass.radiusCard,
-      animate: animate,
     );
   }
 }
@@ -4404,112 +4213,6 @@ class _FadeInImage extends StatelessWidget {
   }
 }
 
-/// A small centered hint used for empty sections.
-class _EmptyHint extends StatelessWidget {
-  const _EmptyHint({required this.text});
-
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-      decoration: BoxDecoration(
-        color: AppColors.charcoal,
-        borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-        border: Border.all(color: AppGlass.border),
-      ),
-      child: Text(
-        text,
-        textAlign: TextAlign.center,
-        style: const TextStyle(
-          color: AppColors.textTertiary,
-          fontSize: 13,
-          height: 1.3,
-        ),
-      ),
-    );
-  }
-}
-
-/// Skeleton for a loading Network Discovery person tile (photo-forward grid
-/// cell) — a single full-bleed shimmer that fills the cell.
-class _PersonSkeleton extends StatelessWidget {
-  const _PersonSkeleton({required this.animate});
-
-  final bool animate;
-
-  @override
-  Widget build(BuildContext context) {
-    return _ShimmerBox(
-      width: double.infinity,
-      height: double.infinity,
-      radius: AppGlass.radiusCard,
-      animate: animate,
-    );
-  }
-}
-
-/// Skeleton for a loading "Happening this week" carousel card — matches the
-/// [_HappeningCard] footprint so the loaded content slots in without a jump.
-class _HappeningCardSkeleton extends StatelessWidget {
-  const _HappeningCardSkeleton({required this.animate});
-
-  final bool animate;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: _HappeningCard.cardWidth,
-      height: _HappeningCard.cardHeight,
-      child: Container(
-        clipBehavior: Clip.antiAlias,
-        decoration: BoxDecoration(
-          color: AppColors.charcoal,
-          borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-          border: Border.all(color: AppGlass.border),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            _ShimmerBox(
-              width: double.infinity,
-              height: 132,
-              radius: 0,
-              animate: animate,
-            ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    _ShimmerBox(
-                      width: double.infinity,
-                      height: 14,
-                      radius: 6,
-                      animate: animate,
-                    ),
-                    const SizedBox(height: 10),
-                    _ShimmerBox(
-                      width: 120,
-                      height: 11,
-                      radius: 6,
-                      animate: animate,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 /// A lightweight pulsing placeholder box. Static (no animation) when the user
 /// prefers reduced motion.
 class _ShimmerBox extends StatefulWidget {
@@ -4590,28 +4293,47 @@ class _Partner {
 /// [Event] (preferred) or a read-only external [ExternalEvent] experience. A
 /// thin adapter so the hero and the card row can render both uniformly.
 class _Happening {
-  const _Happening._({this.community, this.external});
+  const _Happening._({
+    this.community,
+    this.external,
+    this.attraction,
+    this.attractionBucket,
+  });
 
   factory _Happening.community(Event e) => _Happening._(community: e);
   factory _Happening.external(ExternalEvent e) => _Happening._(external: e);
 
+  /// A curated catalogue attraction; [bucket] composes its image URL.
+  factory _Happening.attraction(Attraction a, String bucket) =>
+      _Happening._(attraction: a, attractionBucket: bucket);
+
   final Event? community;
   final ExternalEvent? external;
+  final Attraction? attraction;
+  final String? attractionBucket;
 
   /// Stable identity used to keep the featured item out of the row.
-  String get key => community?.id ?? external?.id ?? '';
+  String get key =>
+      community?.id ??
+      external?.id ??
+      (attraction != null ? 'attraction_${attraction!.id}' : '');
 
-  String? get title => community?.title ?? external?.title;
-  String? get city => community?.city ?? external?.city;
-  String? get country => community?.country ?? external?.country;
+  String? get title => community?.title ?? external?.title ?? attraction?.name;
+  String? get city =>
+      community?.city ?? external?.city ?? attraction?.cityName;
+  String? get country =>
+      community?.country ?? external?.country ?? attraction?.countryName;
 
   /// Latitude/longitude of the experience, when known — used to keep the
   /// featured carousel within [_ExploreScreenState.kFeaturedRadiusKm] km.
-  double? get lat => community?.latitude ?? external?.lat;
-  double? get lng => community?.longitude ?? external?.lng;
+  double? get lat => community?.latitude ?? external?.lat ?? attraction?.lat;
+  double? get lng => community?.longitude ?? external?.lng ?? attraction?.lng;
 
   /// The event/experience image, if any — used by the vertical list thumbnail.
-  String? get imageUrl => community?.imageUrl ?? external?.imageUrl;
+  String? get imageUrl =>
+      community?.imageUrl ??
+      external?.imageUrl ??
+      attraction?.imageUrl('card', bucket: attractionBucket ?? '');
 
   /// Ratings/prices/source labels only exist for external experiences.
   double? get rating => external?.rating;
