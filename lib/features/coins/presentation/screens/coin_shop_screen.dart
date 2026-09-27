@@ -109,6 +109,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   // Current membership end date (for tier plans)
   DateTime? _membershipEndDate;
 
+  /// The paid tier that lapsed at [_membershipEndDate] (null when none did):
+  /// the stored tier until the hourly job downgrades it, then the server's
+  /// `previousMembershipTier`.
+  SubscriptionTier? _expiredTier;
+
+  /// How long after expiry the "Your X membership expired on ..." notice stays.
+  static const Duration _expiredNoticeFor = Duration(days: 7);
+
   @override
   void initState() {
     super.initState();
@@ -232,6 +240,29 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
   }
 
+  static String _ddmmyyyy(DateTime d) =>
+      '${d.day.toString().padLeft(2, '0')}/${d.month.toString().padLeft(2, '0')}/${d.year}';
+
+  /// A Silver/Gold/Platinum membership ended less than a week ago.
+  bool get _showExpiredNotice {
+    final end = _membershipEndDate;
+    if (end == null || _expiredTier == null) return false;
+    final since = DateTime.now().difference(end);
+    return !since.isNegative && since <= _expiredNoticeFor;
+  }
+
+  String _tierLabel(BuildContext context, SubscriptionTier t) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (t) {
+      case SubscriptionTier.silver:
+        return l10n.silver;
+      case SubscriptionTier.gold:
+        return l10n.gold;
+      default:
+        return l10n.platinum;
+    }
+  }
+
   /// Load user's actual membership tier from Firestore
   Future<void> _loadCurrentTierFromFirestore() async {
     try {
@@ -256,6 +287,17 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           _baseMembershipEndDate = ts != null ? (ts as Timestamp).toDate() : null;
           final endTs = data?['membershipEndDate'];
           _membershipEndDate = endTs != null ? (endTs as Timestamp).toDate() : null;
+          SubscriptionTier? paid(Object? raw) {
+            final t = SubscriptionTierExtension.fromString(
+                (raw as String? ?? '').toUpperCase());
+            return (t == SubscriptionTier.silver ||
+                    t == SubscriptionTier.gold ||
+                    t == SubscriptionTier.platinum)
+                ? t
+                : null;
+          }
+          _expiredTier = paid(data?['membershipTier']) ??
+              paid(data?['previousMembershipTier']);
         });
       }
     } catch (e) {
@@ -1040,22 +1082,31 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                   color: AppColors.richGold.withValues(alpha: 0.8),
                 ),
               ),
-              if (_membershipEndDate != null) ...[
+              if (_membershipEndDate != null &&
+                  _membershipEndDate!.isAfter(DateTime.now())) ...[
                 const SizedBox(height: 4),
                 Text(
-                  _membershipEndDate!.isAfter(DateTime.now())
-                      ? AppLocalizations.of(context)!.shopExpires(
-                          '${_membershipEndDate!.day.toString().padLeft(2, '0')}/${_membershipEndDate!.month.toString().padLeft(2, '0')}/${_membershipEndDate!.year}',
-                          _membershipEndDate!.difference(DateTime.now()).inDays.toString(),
-                        )
-                      : AppLocalizations.of(context)!.shopExpired(
-                          '${_membershipEndDate!.day.toString().padLeft(2, '0')}/${_membershipEndDate!.month.toString().padLeft(2, '0')}/${_membershipEndDate!.year}',
-                        ),
+                  AppLocalizations.of(context)!.shopExpires(
+                    _ddmmyyyy(_membershipEndDate!),
+                    _membershipEndDate!.difference(DateTime.now()).inDays.toString(),
+                  ),
+                  style: const TextStyle(
+                    fontSize: 13,
+                    color: Color(0xFF4CAF50),
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ] else if (_showExpiredNotice) ...[
+                const SizedBox(height: 4),
+                Text(
+                  AppLocalizations.of(context)!.shopMembershipExpiredOn(
+                    _tierLabel(context, _expiredTier!),
+                    _ddmmyyyy(_membershipEndDate!),
+                  ),
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 13,
-                    color: _membershipEndDate!.isAfter(DateTime.now())
-                        ? const Color(0xFF4CAF50)
-                        : Colors.red[300],
+                    color: Colors.red[300],
                     fontWeight: FontWeight.w600,
                   ),
                 ),
