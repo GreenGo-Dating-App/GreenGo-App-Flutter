@@ -6685,5 +6685,7 @@
   "shareEventMessageTitled": "{title}\nCheck out this event on GreenGo: {link}",
   "@shareEventMessageTitled": {"placeholders": {"title": {"type": "String"}, "link": {"type": "String"}}},
   "shareCommunityMessage": "{name}\nJoin this community on GreenGo: {link}",
-  "@shareCommunityMessage": {"placeholders": {"name": {"type": "String"}, "link": {"type": "String"}}}
+  "@shareCommunityMessage": {"placeholders": {"name": {"type": "String"}, "link": {"type": "String"}}},
+  "shopMembershipExpiredOn": "Your {tier} membership expired on {date}",
+  "@shopMembershipExpiredOn": {"placeholders": {"tier": {"type": "String"}, "date": {"type": "String"}}}
 }

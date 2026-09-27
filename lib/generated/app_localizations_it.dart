@@ -14158,4 +14158,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String shareCommunityMessage(String name, String link) {
     return '$name\nUnisciti a questa community su GreenGo: $link';
   }
+
+  @override
+  String shopMembershipExpiredOn(String tier, String date) {
+    return 'La tua membership $tier è scaduta il $date';
+  }
 }

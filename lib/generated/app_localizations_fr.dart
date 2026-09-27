@@ -14222,4 +14222,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String shareCommunityMessage(String name, String link) {
     return '$name\nRejoins cette communauté sur GreenGo : $link';
   }
+
+  @override
+  String shopMembershipExpiredOn(String tier, String date) {
+    return 'Ton abonnement $tier a expiré le $date';
+  }
 }

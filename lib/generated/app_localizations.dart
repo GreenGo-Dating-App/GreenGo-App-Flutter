@@ -24923,6 +24923,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{name}\nJoin this community on GreenGo: {link}'**
   String shareCommunityMessage(String name, String link);
+
+  /// No description provided for @shopMembershipExpiredOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {tier} membership expired on {date}'**
+  String shopMembershipExpiredOn(String tier, String date);
 }
 
 class _AppLocalizationsDelegate

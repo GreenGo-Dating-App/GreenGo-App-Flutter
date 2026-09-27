@@ -14136,6 +14136,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String shareCommunityMessage(String name, String link) {
     return '$name\nJunta-te a esta comunidade no GreenGo: $link';
   }
+
+  @override
+  String shopMembershipExpiredOn(String tier, String date) {
+    return 'A tua subscrição $tier expirou a $date';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28273,5 +28278,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String shareCommunityMessage(String name, String link) {
     return '$name\nParticipe desta comunidade no GreenGo: $link';
+  }
+
+  @override
+  String shopMembershipExpiredOn(String tier, String date) {
+    return 'Sua assinatura $tier expirou em $date';
   }
 }

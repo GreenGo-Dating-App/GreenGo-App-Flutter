@@ -4723,5 +4723,6 @@
   "eventsOrganizerYou": "{name} (du)",
   "eventsByOrganizer": "von {name}",
   "shareEventMessageTitled": "{title}\nSieh dir dieses Event auf GreenGo an: {link}",
-  "shareCommunityMessage": "{name}\nTritt dieser Community auf GreenGo bei: {link}"
+  "shareCommunityMessage": "{name}\nTritt dieser Community auf GreenGo bei: {link}",
+  "shopMembershipExpiredOn": "Deine {tier}-Mitgliedschaft ist am {date} abgelaufen"
 }
