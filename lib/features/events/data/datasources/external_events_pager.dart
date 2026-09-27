@@ -20,6 +20,7 @@ class ExternalEventsPager {
     this.category,
     this.userLat,
     this.userLng,
+    this.liveChunks = false,
     FirebaseFirestore? firestore,
   }) : _db = firestore ?? FirebaseFirestore.instance;
 
@@ -29,6 +30,11 @@ class ExternalEventsPager {
   final String? category;
   final double? userLat;
   final double? userLng;
+
+  /// Events > Live Events tab only: load ticketmaster in chunks of
+  /// [liveChunk]. Other callers (e.g. Explore's carousels) keep the
+  /// original one-ring-per-page behaviour.
+  final bool liveChunks;
 
   /// [LastResultCache] key for the first page of a given view.
   static String cacheKey(String source, String sort, String? category) =>
@@ -59,6 +65,17 @@ class ExternalEventsPager {
 
   static const int pageSize = 24;
 
+  /// Live Events tab (see [liveChunks]) loads in chunks of exactly this many per
+  /// infinite-scroll load (fewer only when nothing more exists).
+  static const int liveChunk = 20;
+
+  /// Cap on scanner calls spent filling one Live chunk (each call is a few
+  /// bounded read rounds), so a chunk can never page the whole collection.
+  static const int _maxScansPerChunk = 12;
+
+  bool get _isLive => liveChunks && source == 'ticketmaster';
+  int get _chunk => _isLive ? liveChunk : pageSize;
+
   // Field-mode cursor.
   DocumentSnapshot<Map<String, dynamic>>? _cursor;
   bool _fieldDone = false;
@@ -69,7 +86,9 @@ class ExternalEventsPager {
   bool get _useDistance =>
       sort == 'distance' && userLat != null && userLng != null;
 
-  bool get hasMore => _useDistance ? (_scanner?.hasMore ?? true) : !_fieldDone;
+  bool get hasMore => _useDistance
+      ? (_scanner?.hasMore ?? true) || _liveBuffer.isNotEmpty
+      : !_fieldDone;
 
   /// Only show sources that must carry an image when one is present.
   bool _imageOk(ExternalEvent e) {
@@ -132,9 +151,9 @@ class ExternalEventsPager {
     final descending = sort != 'date'; // soonest dates first; others highest
     final out = <ExternalEvent>[];
     // Keep fetching until we have a page of image-bearing items or run out.
-    while (out.length < pageSize && !_fieldDone) {
+    while (out.length < _chunk && !_fieldDone) {
       Query<Map<String, dynamic>> q =
-          _base.orderBy(orderField, descending: descending).limit(pageSize);
+          _base.orderBy(orderField, descending: descending).limit(_chunk);
       if (_cursor != null) {
         q = q.startAfterDocument(_cursor!);
       } else if (sort == 'date') {
@@ -150,7 +169,7 @@ class ExternalEventsPager {
         break;
       }
       _cursor = snap.docs.last;
-      if (snap.docs.length < pageSize) _fieldDone = true;
+      if (snap.docs.length < _chunk) _fieldDone = true;
       out.addAll(snap.docs
           .map(ExternalEvent.fromFirestore)
           .where(_imageOk)
@@ -159,7 +178,10 @@ class ExternalEventsPager {
     return out;
   }
 
-  Future<List<ExternalEvent>> _nextDistance() {
+  /// Live events not yet handed out (a ring can hold more than one chunk).
+  final List<ExternalEvent> _liveBuffer = [];
+
+  Future<List<ExternalEvent>> _nextDistance() async {
     final scanner = _scanner ??= GeoRingScanner<ExternalEvent>(
       base: _base,
       lat: userLat!,
@@ -172,6 +194,20 @@ class ExternalEventsPager {
       position: (e) =>
           (e.lat == null || e.lng == null) ? null : (lat: e.lat!, lng: e.lng!),
     );
-    return scanner.next();
+    if (!_isLive) return scanner.next();
+
+    // Live: fill a chunk of [liveChunk], nearest first. Rings arrive in
+    // distance order, so appending them keeps the chunk closest-first.
+    for (var i = 0;
+        i < _maxScansPerChunk &&
+            _liveBuffer.length < liveChunk &&
+            scanner.hasMore;
+        i++) {
+      _liveBuffer.addAll(await scanner.next());
+    }
+    final n = _liveBuffer.length < liveChunk ? _liveBuffer.length : liveChunk;
+    final chunk = _liveBuffer.sublist(0, n);
+    _liveBuffer.removeRange(0, n);
+    return chunk;
   }
 }
