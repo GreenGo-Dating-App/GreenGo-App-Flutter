@@ -56,6 +56,7 @@ class ExternalEventsPreloader {
             sort: 'distance',
             userLat: anchor?.lat,
             userLng: anchor?.lng,
+            liveChunks: true,
           );
           final first = await pager.next();
           if (epoch != _epoch) return;

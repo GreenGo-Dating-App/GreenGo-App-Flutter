@@ -141,6 +141,7 @@ class _ExperiencesTabState extends State<ExperiencesTab>
         category: widget.category,
         userLat: widget.userLat,
         userLng: widget.userLng,
+        liveChunks: true,
       );
 
   /// Load page 1. Paints the last-seen first page from the local cache when
