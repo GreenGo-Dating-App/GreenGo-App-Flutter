@@ -20928,11 +20928,29 @@ abstract class AppLocalizations {
   /// **'Friends invited'**
   String get referralCountLabel;
 
-  /// No description provided for @referralHowItWorks.
+  /// Referral rules. Values mirror functions/src/referral/redeemReferral.ts (REFERRER_COIN_REWARD, REFERRER_MONTHLY_CAP, PLATINUM_DURATION_MS = 1 month).
   ///
   /// In en, this message translates to:
-  /// **'Share your code — when a friend joins with it, you both earn coins.'**
-  String get referralHowItWorks;
+  /// **'Share your code — when a friend joins with it, you earn {coins} coins (up to {monthlyCap} a month) and they get 1 month of Platinum.'**
+  String referralHowItWorks(int coins, int monthlyCap);
+
+  /// No description provided for @referralHowItWorksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How it works'**
+  String get referralHowItWorksTitle;
+
+  /// No description provided for @achievementsLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load achievements'**
+  String get achievementsLoadError;
+
+  /// No description provided for @loadErrorCheckConnection.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your connection and try again.'**
+  String get loadErrorCheckConnection;
 
   /// No description provided for @streakTitle.
   ///

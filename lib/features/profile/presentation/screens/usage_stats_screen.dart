@@ -5,23 +5,40 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 
+import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/effective_tier.dart';
+import '../../../../core/services/tier_entitlements.dart';
+import '../../../../core/services/tier_upgrade_benefits.dart';
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/membership_badge.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/profile.dart';
-import '../../../../core/services/effective_tier.dart';
 
-/// Usage Stats Screen
+/// Usage Stats Screen ("My Usage")
 ///
-/// Shows user's current daily usage vs tier limits with progress bars
+/// Shows the user's usage in the current period vs the limits of their
+/// EFFECTIVE tier, live, from the same counters the gates increment:
+///   • `usageLimits/{uid}/days/{YYYY-MM-DD}.connectsCount` — new connections
+///     today (TierGate.recordConnect; cap TierEntitlements.maxDailyConnects)
+///   • `usageLimits/{uid}/months/{YYYY-MM}.boostCount` — profile boosts this
+///     month (TierGate.recordBoost; cap TierEntitlements.boostsPerMonth)
+///   • `usageLimits/{uid}/hours/{YYYY-MM-DD-HH}.likeCount / nopeCount /
+///     superLikeCount` — swipe-deck connects / passes / priority connects this
+///     hour (DiscoveryBloc; caps in MembershipRules). Only shown when the swipe
+///     deck exists in this build ([FlavorConfig.enableSwipeDiscovery]); in the
+///     Explore-first build nothing increments them.
+///   • `usageLimits/{uid}/days/{YYYY-MM-DD}.messageCount / mediaSendCount`.
+///
+/// One single-document listener per period; re-pointed when it rolls over.
 class UsageStatsScreen extends StatefulWidget {
 
   const UsageStatsScreen({
@@ -37,37 +54,52 @@ class UsageStatsScreen extends StatefulWidget {
 }
 
 class _UsageStatsScreenState extends State<UsageStatsScreen> {
-  final UsageLimitService _usageLimitService = UsageLimitService();
-  Map<UsageLimitType, int> _usageStats = {};
+  final Map<UsageLimitType, int> _usageStats = {};
+  int _boostsThisMonth = 0;
   int _coinBalance = 0;
-  bool _isLoading = true;
 
-  // Real-time Firestore listeners
-  StreamSubscription<DocumentSnapshot>? _hourlyUsageSub;
-  StreamSubscription<DocumentSnapshot>? _dailyUsageSub;
-  StreamSubscription<DocumentSnapshot>? _profileSub;
+  // Real-time Firestore listeners (one document each).
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _hourlyUsageSub;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _dailyUsageSub;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _monthlyUsageSub;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _profileSub;
+  Timer? _periodTimer;
+  String? _hourKey;
+  String? _dayKey;
+  String? _monthKey;
 
-  // Real-time membership tier (updates after purchase)
+  // Real-time membership tier (updates after purchase / on expiry)
   late MembershipTier _liveMembershipTier;
+
+  bool get _showSwipeLimits => FlavorConfig.enableSwipeDiscovery;
 
   @override
   void initState() {
     super.initState();
     _liveMembershipTier = widget.membershipTier;
-    _loadStats();
+    _loadCoins();
     _subscribeToRealtimeUsage();
     _subscribeToProfileChanges();
+    // Counters are keyed by hour/day/month: re-point the listeners when the
+    // period rolls over while the screen is open (no-op otherwise).
+    _periodTimer = Timer.periodic(
+      const Duration(seconds: 30),
+      (_) => _subscribeToRealtimeUsage(),
+    );
   }
 
   @override
   void dispose() {
+    _periodTimer?.cancel();
     _hourlyUsageSub?.cancel();
     _dailyUsageSub?.cancel();
+    _monthlyUsageSub?.cancel();
     _profileSub?.cancel();
     super.dispose();
   }
 
-  /// Listen to profile changes so the tier badge updates in real-time after a purchase
+  /// Listen to profile changes so the tier (and its limits) update in
+  /// real-time after a purchase or when the paid tier lapses.
   void _subscribeToProfileChanges() {
     _profileSub = FirebaseFirestore.instance
         .collection('profiles')
@@ -82,99 +114,121 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
           _liveMembershipTier = newTier;
         });
       }
-    });
+    }, onError: (Object _) {});
   }
 
-  String _getHourKey() {
-    final now = DateTime.now();
-    return '${now.year}-${now.month.toString().padLeft(2, '0')}-'
-        '${now.day.toString().padLeft(2, '0')}-'
-        '${now.hour.toString().padLeft(2, '0')}';
-  }
+  // Same period keys as UsageLimitService / TierGate (device-local time).
+  static String _two(int v) => v.toString().padLeft(2, '0');
 
-  String _getDayKey() {
-    final now = DateTime.now();
-    return '${now.year}-${now.month.toString().padLeft(2, '0')}-'
-        '${now.day.toString().padLeft(2, '0')}';
-  }
+  static String _getMonthKey(DateTime now) => '${now.year}-${_two(now.month)}';
 
-  /// Stream the current hour's and current day's usage documents so the UI
-  /// updates automatically the moment a swipe/action is recorded.
+  static String _getDayKey(DateTime now) =>
+      '${_getMonthKey(now)}-${_two(now.day)}';
+
+  static String _getHourKey(DateTime now) =>
+      '${_getDayKey(now)}-${_two(now.hour)}';
+
+  static int _intField(Map<String, dynamic>? data, String field) =>
+      (data?[field] as num?)?.toInt() ?? 0;
+
+  /// Stream the current hour's, day's and month's usage documents so the UI
+  /// updates the moment an action is recorded. Idempotent: only re-subscribes
+  /// a listener whose period key changed.
   void _subscribeToRealtimeUsage() {
-    final userId = widget.userId;
-    final db = FirebaseFirestore.instance;
+    if (!mounted) return;
+    final now = DateTime.now();
+    final usage =
+        FirebaseFirestore.instance.collection('usageLimits').doc(widget.userId);
 
-    _hourlyUsageSub = db
-        .collection('usageLimits')
-        .doc(userId)
-        .collection('hours')
-        .doc(_getHourKey())
-        .snapshots()
-        .listen((doc) {
-      if (!mounted) return;
-      final data = doc.data() ?? {};
-      setState(() {
-        _usageStats[UsageLimitType.likes] =
-            (data['likeCount'] as num?)?.toInt() ?? 0;
-        _usageStats[UsageLimitType.nopes] =
-            (data['nopeCount'] as num?)?.toInt() ?? 0;
-        _usageStats[UsageLimitType.superLikes] =
-            (data['superLikeCount'] as num?)?.toInt() ?? 0;
-      });
-    });
+    final hourKey = _getHourKey(now);
+    if (_showSwipeLimits && hourKey != _hourKey) {
+      _hourKey = hourKey;
+      _hourlyUsageSub?.cancel();
+      _hourlyUsageSub =
+          usage.collection('hours').doc(hourKey).snapshots().listen((doc) {
+        if (!mounted) return;
+        final data = doc.data();
+        setState(() {
+          _usageStats[UsageLimitType.likes] = _intField(data, 'likeCount');
+          _usageStats[UsageLimitType.nopes] = _intField(data, 'nopeCount');
+          _usageStats[UsageLimitType.superLikes] =
+              _intField(data, 'superLikeCount');
+        });
+      }, onError: (Object _) {});
+    }
 
-    _dailyUsageSub = db
-        .collection('usageLimits')
-        .doc(userId)
-        .collection('days')
-        .doc(_getDayKey())
-        .snapshots()
-        .listen((doc) {
-      if (!mounted) return;
-      final data = doc.data() ?? {};
-      setState(() {
-        _usageStats[UsageLimitType.messages] =
-            (data['messageCount'] as num?)?.toInt() ?? 0;
-        _usageStats[UsageLimitType.mediaSends] =
-            (data['mediaSendCount'] as num?)?.toInt() ?? 0;
-      });
-    });
+    final dayKey = _getDayKey(now);
+    if (dayKey != _dayKey) {
+      _dayKey = dayKey;
+      _dailyUsageSub?.cancel();
+      _dailyUsageSub =
+          usage.collection('days').doc(dayKey).snapshots().listen((doc) {
+        if (!mounted) return;
+        final data = doc.data();
+        setState(() {
+          _usageStats[UsageLimitType.connects] =
+              _intField(data, 'connectsCount');
+          _usageStats[UsageLimitType.messages] =
+              _intField(data, 'messageCount');
+          _usageStats[UsageLimitType.mediaSends] =
+              _intField(data, 'mediaSendCount');
+        });
+      }, onError: (Object _) {});
+    }
+
+    final monthKey = _getMonthKey(now);
+    if (monthKey != _monthKey) {
+      _monthKey = monthKey;
+      _monthlyUsageSub?.cancel();
+      _monthlyUsageSub =
+          usage.collection('months').doc(monthKey).snapshots().listen((doc) {
+        if (!mounted) return;
+        setState(() => _boostsThisMonth = _intField(doc.data(), 'boostCount'));
+      }, onError: (Object _) {});
+    }
   }
 
-  Future<void> _loadStats() async {
-    setState(() => _isLoading = true);
-
+  Future<void> _loadCoins() async {
+    var coins = 0;
     try {
-      final stats = await _usageLimitService.getAllUsageStats(widget.userId);
+      final coinRepo = GetIt.instance<CoinRepository>();
+      final balanceResult = await coinRepo
+          .getBalance(widget.userId)
+          .timeout(const Duration(seconds: 8));
+      coins = balanceResult.fold(
+        (failure) => 0,
+        (balance) => balance.availableCoins,
+      );
+    } catch (_) {}
+    if (mounted) setState(() => _coinBalance = coins);
+  }
 
-      // Get coin balance
-      var coins = 0;
-      try {
-        final coinRepo = GetIt.instance<CoinRepository>();
-        final balanceResult = await coinRepo.getBalance(widget.userId);
-        coins = balanceResult.fold(
-          (failure) => 0,
-          (balance) => balance.availableCoins,
-        );
-      } catch (_) {}
-
-      if (mounted) {
-        setState(() {
-          _usageStats = stats;
-          _coinBalance = coins;
-          _isLoading = false;
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() => _isLoading = false);
-      }
-    }
+  void _openMembershipShop() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => BlocProvider(
+          create: (_) => di.sl<CoinBloc>()
+            ..add(LoadCoinBalance(widget.userId))
+            ..add(const LoadAvailablePackages()),
+          child: CoinShopScreen(
+            userId: widget.userId,
+            initialTab: 1,
+          ),
+        ),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    final rules = MembershipRules.getDefaultsForTier(_liveMembershipTier);
+    final l10n = AppLocalizations.of(context)!;
+    final tier = _liveMembershipTier;
+    final rules = MembershipRules.getDefaultsForTier(tier);
+    final nextTier = nextTierUp(tier);
+    final benefits = nextTierBenefits(
+      tier,
+      includeSwipeLimits: _showSwipeLimits,
+    );
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -185,151 +239,158 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => SafeNavigation.pop(context, userId: widget.userId),
         ),
-        title: const Text(
-          'My Usage',
-          style: TextStyle(
+        title: Text(
+          l10n.myUsage,
+          style: const TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: AppColors.textPrimary,
           ),
         ),
       ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: AppColors.richGold))
-          : RefreshIndicator(
-              onRefresh: _loadStats,
-              color: AppColors.richGold,
-              child: SingleChildScrollView(
-                physics: const AlwaysScrollableScrollPhysics(),
-                padding: const EdgeInsets.all(AppDimensions.paddingL),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Current Tier Badge
-                    _buildTierSection(),
+      body: RefreshIndicator(
+        onRefresh: _loadCoins,
+        color: AppColors.richGold,
+        child: SingleChildScrollView(
+          physics: const AlwaysScrollableScrollPhysics(),
+          padding: const EdgeInsets.all(AppDimensions.paddingL),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Current Tier Badge
+              _buildTierSection(),
 
-                    const SizedBox(height: 16),
+              const SizedBox(height: 16),
 
-                    // Base Membership
-                    if (widget.profile != null)
-                      _buildBaseMembershipSection(),
+              // Base Membership
+              if (widget.profile != null)
+                _buildBaseMembershipSection(),
 
-                    const SizedBox(height: 24),
+              const SizedBox(height: 24),
 
-                    // Coin Balance
-                    _buildCoinBalanceCard(),
+              // Coin Balance
+              _buildCoinBalanceCard(),
 
-                    const SizedBox(height: 24),
+              const SizedBox(height: 24),
 
-                    // Usage Stats
-                    const Text(
-                      'Daily Usage',
+              // Usage Stats
+              const Text(
+                'Daily Usage',
+                style: TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 12),
+
+              // New connections today - the connect gate (TierGate).
+              _buildUsageStat(
+                icon: Icons.person_add_alt_1,
+                label: l10n.shopDailyConnects,
+                used: _usageStats[UsageLimitType.connects] ?? 0,
+                limit: TierEntitlements.maxDailyConnects(tier) ?? -1,
+              ),
+              const SizedBox(height: 12),
+
+              // Swipe deck (full build only): hourly connects / passes /
+              // priority connects - DiscoveryBloc's gates.
+              if (_showSwipeLimits) ...[
+                _buildUsageStat(
+                  icon: Icons.favorite,
+                  label: 'Connects This Hour',
+                  used: _usageStats[UsageLimitType.likes] ?? 0,
+                  limit: rules.hourlyConnectLimit,
+                ),
+                const SizedBox(height: 12),
+                _buildUsageStat(
+                  icon: Icons.close,
+                  label: 'Passes This Hour',
+                  used: _usageStats[UsageLimitType.nopes] ?? 0,
+                  limit: rules.hourlyPassLimit,
+                ),
+                const SizedBox(height: 12),
+                _buildUsageStat(
+                  icon: Icons.star,
+                  label: 'Priority Connects This Hour',
+                  used: _usageStats[UsageLimitType.superLikes] ?? 0,
+                  limit: rules.hourlyPriorityConnectLimit,
+                ),
+                const SizedBox(height: 12),
+              ],
+
+              // Profile boosts this month - the boost gate (TierGate).
+              _buildUsageStat(
+                icon: Icons.rocket_launch_outlined,
+                label: l10n.shopMonthlyBoosts,
+                used: _boostsThisMonth,
+                limit: TierEntitlements.boostsPerMonth(tier),
+              ),
+              const SizedBox(height: 12),
+
+              // Daily limits
+              _buildUsageStat(
+                icon: Icons.message,
+                label: 'Messages Today',
+                used: _usageStats[UsageLimitType.messages] ?? 0,
+                limit: rules.dailyMessageLimit,
+              ),
+              const SizedBox(height: 12),
+
+              _buildUsageStat(
+                icon: Icons.photo,
+                label: 'Media Sent Today',
+                used: _usageStats[UsageLimitType.mediaSends] ?? 0,
+                limit: rules.dailyMediaSendLimit,
+              ),
+
+              const SizedBox(height: 32),
+
+              // Upgrade benefits: the real differences to the next tier up.
+              // Nothing at the top (Platinum / Tester).
+              if (nextTier != null && benefits.isNotEmpty) ...[
+                const Text(
+                  'Upgrade Benefits',
+                  style: TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                _buildTierComparison(nextTier, benefits),
+                const SizedBox(height: 24),
+
+                // Upgrade Button
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: _openMembershipShop,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius:
+                            BorderRadius.circular(AppDimensions.radiusL),
+                      ),
+                    ),
+                    child: const Text(
+                      'Upgrade Membership',
                       style: TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 18,
+                        color: Colors.white,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 12),
-
-                    // Hourly limits
-                    _buildUsageStat(
-                      icon: Icons.favorite,
-                      label: 'Connects This Hour',
-                      used: _usageStats[UsageLimitType.likes] ?? 0,
-                      limit: rules.hourlyConnectLimit,
-                    ),
-                    const SizedBox(height: 12),
-
-                    _buildUsageStat(
-                      icon: Icons.close,
-                      label: 'Passes This Hour',
-                      used: _usageStats[UsageLimitType.nopes] ?? 0,
-                      limit: rules.hourlyPassLimit,
-                    ),
-                    const SizedBox(height: 12),
-
-                    _buildUsageStat(
-                      icon: Icons.star,
-                      label: 'Priority Connects This Hour',
-                      used: _usageStats[UsageLimitType.superLikes] ?? 0,
-                      limit: rules.hourlyPriorityConnectLimit,
-                    ),
-                    const SizedBox(height: 12),
-
-                    // Daily limits
-                    _buildUsageStat(
-                      icon: Icons.message,
-                      label: 'Messages Today',
-                      used: _usageStats[UsageLimitType.messages] ?? 0,
-                      limit: rules.dailyMessageLimit,
-                    ),
-                    const SizedBox(height: 12),
-
-                    _buildUsageStat(
-                      icon: Icons.photo,
-                      label: 'Media Sent Today',
-                      used: _usageStats[UsageLimitType.mediaSends] ?? 0,
-                      limit: rules.dailyMediaSendLimit,
-                    ),
-
-                    const SizedBox(height: 32),
-
-                    // Tier Comparison
-                    if (_liveMembershipTier != MembershipTier.platinum) ...[
-                      const Text(
-                        'Upgrade Benefits',
-                        style: TextStyle(
-                          color: AppColors.textPrimary,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      _buildTierComparison(rules),
-                      const SizedBox(height: 24),
-
-                      // Upgrade Button
-                      SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (_) => BlocProvider(
-                                  create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(widget.userId))..add(const LoadAvailablePackages()),
-                                  child: CoinShopScreen(
-                                    userId: widget.userId,
-                                    initialTab: 1,
-                                  ),
-                                ),
-                              ),
-                            );
-                          },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.richGold,
-                            padding: const EdgeInsets.symmetric(vertical: 16),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(AppDimensions.radiusL),
-                            ),
-                          ),
-                          child: const Text(
-                            'Upgrade Membership',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-
-                    const SizedBox(height: 32),
-                  ],
+                  ),
                 ),
-              ),
-            ),
+              ],
+
+              const SizedBox(height: 32),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
@@ -536,7 +597,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
 
     String valueText;
     if (isUnlimited) {
-      valueText = '$used / \u221E';
+      valueText = '$used / ${AppLocalizations.of(context)!.shopUnlimited}';
     } else if (isNotAvailable) {
       valueText = 'Not Available';
     } else {
@@ -614,100 +675,131 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
     );
   }
 
-  Widget _buildTierComparison(MembershipRules currentRules) {
-    // Get next tier
-    MembershipTier nextTier;
-    switch (_liveMembershipTier) {
-      case MembershipTier.free:
-        nextTier = MembershipTier.silver;
-        break;
-      case MembershipTier.silver:
-        nextTier = MembershipTier.gold;
-        break;
-      case MembershipTier.gold:
-        nextTier = MembershipTier.platinum;
-        break;
-      default:
-        return const SizedBox.shrink();
-    }
-
-    final nextRules = MembershipRules.getDefaultsForTier(nextTier);
-
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: AppColors.backgroundCard,
+  Widget _buildTierComparison(
+    MembershipTier nextTier,
+    List<UpgradeBenefit> benefits,
+  ) {
+    return Material(
+      color: AppColors.backgroundCard,
+      borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+      child: InkWell(
         borderRadius: BorderRadius.circular(AppDimensions.radiusL),
-        border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
+        onTap: _openMembershipShop,
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppDimensions.radiusL),
+            border: Border.all(
+              color: AppColors.richGold.withValues(alpha: 0.3),
+            ),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              MembershipBadge(tier: nextTier, compact: true),
-              const SizedBox(width: 8),
-              Text(
-                'With ${nextTier.displayName}',
-                style: const TextStyle(
-                  color: AppColors.richGold,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
+              Row(
+                children: [
+                  MembershipBadge(tier: nextTier, compact: true),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'With ${nextTier.displayName}',
+                      style: const TextStyle(
+                        color: AppColors.richGold,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  const Icon(
+                    Icons.chevron_right,
+                    color: AppColors.richGold,
+                    size: 20,
+                  ),
+                ],
               ),
+              const SizedBox(height: 12),
+              for (final b in benefits) _buildBenefitRow(b),
             ],
           ),
-          const SizedBox(height: 12),
-          _buildComparisonRow('Swipes', currentRules.dailySwipeLimit, nextRules.dailySwipeLimit),
-          _buildComparisonRow('Priority Connects', currentRules.dailyPriorityConnectLimit, nextRules.dailyPriorityConnectLimit),
-          _buildComparisonRow('Messages', currentRules.dailyMessageLimit, nextRules.dailyMessageLimit),
-          _buildComparisonRow('Media Sends', currentRules.dailyMediaSendLimit, nextRules.dailyMediaSendLimit),
-        ],
+        ),
       ),
     );
   }
 
-  Widget _buildComparisonRow(String label, int current, int next) {
-    String formatLimit(int val) {
-      if (val == -1) return '\u221E';
-      return val.toString();
+  String _benefitLabel(AppLocalizations l10n, UpgradeBenefit b) {
+    switch (b.kind) {
+      case UpgradeBenefitKind.dailyConnects:
+        return l10n.shopDailyConnects;
+      case UpgradeBenefitKind.events:
+        return l10n.shopEventsCreate;
+      case UpgradeBenefitKind.groups:
+        return l10n.shopGroupsCreate;
+      case UpgradeBenefitKind.boostsPerMonth:
+        return l10n.shopMonthlyBoosts;
+      case UpgradeBenefitKind.monthlyCoins:
+        return l10n.shopMonthlyCoins;
+      case UpgradeBenefitKind.discoveryReveal:
+        // Closest existing key; a dedicated "People you can see at a time"
+        // label is pending in the ARBs.
+        return l10n.featureDiscoveryReveals(b.to.count ?? 0);
+      case UpgradeBenefitKind.seeWhoConnected:
+        return l10n.shopSeeWhoConnected;
+      case UpgradeBenefitKind.travelMode:
+        return l10n.shopTravelMode;
+      case UpgradeBenefitKind.analytics:
+        return l10n.analyticsTitle;
+      case UpgradeBenefitKind.businessAccount:
+        return l10n.shopBusinessAccount;
+      case UpgradeBenefitKind.hourlyConnects:
+        return 'Connects This Hour';
+      case UpgradeBenefitKind.hourlyPasses:
+        return 'Passes This Hour';
+      case UpgradeBenefitKind.hourlyPriorityConnects:
+        return 'Priority Connects This Hour';
+      case UpgradeBenefitKind.dailyPriorityConnects:
+        return l10n.membershipSuperLikes;
     }
+  }
 
-    final isUpgrade = next > current || (next == -1 && current != -1);
+  String _benefitValue(AppLocalizations l10n, BenefitValue v) {
+    if (v.isFlag) return v.flag! ? l10n.yes : l10n.no;
+    if (v.isUnlimited) return l10n.shopUnlimited;
+    return '${v.count}';
+  }
 
+  Widget _buildBenefitRow(UpgradeBenefit b) {
+    final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          Expanded(
+            child: Text(
+              _benefitLabel(l10n, b),
+              style: const TextStyle(
+                color: AppColors.textSecondary,
+                fontSize: 13,
+              ),
+            ),
+          ),
+          const SizedBox(width: 8),
           Text(
-            label,
+            _benefitValue(l10n, b.from),
             style: const TextStyle(
-              color: AppColors.textSecondary,
+              color: AppColors.textTertiary,
               fontSize: 13,
             ),
           ),
-          Row(
-            children: [
-              Text(
-                formatLimit(current),
-                style: const TextStyle(
-                  color: AppColors.textTertiary,
-                  fontSize: 13,
-                ),
-              ),
-              const SizedBox(width: 8),
-              const Icon(Icons.arrow_forward, size: 12, color: AppColors.textTertiary),
-              const SizedBox(width: 8),
-              Text(
-                formatLimit(next),
-                style: TextStyle(
-                  color: isUpgrade ? AppColors.richGold : AppColors.textSecondary,
-                  fontSize: 13,
-                  fontWeight: isUpgrade ? FontWeight.bold : FontWeight.normal,
-                ),
-              ),
-            ],
+          const SizedBox(width: 8),
+          const Icon(Icons.arrow_forward, size: 12, color: AppColors.textTertiary),
+          const SizedBox(width: 8),
+          Text(
+            _benefitValue(l10n, b.to),
+            style: const TextStyle(
+              color: AppColors.richGold,
+              fontSize: 13,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ],
       ),

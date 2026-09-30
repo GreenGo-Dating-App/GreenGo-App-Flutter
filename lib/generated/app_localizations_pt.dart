@@ -11863,8 +11863,26 @@ class AppLocalizationsPt extends AppLocalizations {
   String get referralCountLabel => 'Amigos convidados';
 
   @override
-  String get referralHowItWorks =>
-      'Partilha o teu código — quando um amigo se junta com ele, ganham ambos moedas.';
+  String referralHowItWorks(int coins, int monthlyCap) {
+    final intl.NumberFormat coinsNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String coinsString = coinsNumberFormat.format(coins);
+    final intl.NumberFormat monthlyCapNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
+
+    return 'Partilha o teu código — quando um amigo se junta com ele, ganhas $coinsString moedas (até $monthlyCapString por mês) e ele recebe 1 mês de Platinum.';
+  }
+
+  @override
+  String get referralHowItWorksTitle => 'Como funciona';
+
+  @override
+  String get achievementsLoadError => 'Não foi possível carregar as conquistas';
+
+  @override
+  String get loadErrorCheckConnection =>
+      'Verifica a tua ligação e tenta novamente.';
 
   @override
   String get streakTitle => 'Sequência';
@@ -26076,8 +26094,26 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get referralCountLabel => 'Amigos convidados';
 
   @override
-  String get referralHowItWorks =>
-      'Compartilhe seu código — quando um amigo entra com ele, os dois ganham moedas.';
+  String referralHowItWorks(int coins, int monthlyCap) {
+    final intl.NumberFormat coinsNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String coinsString = coinsNumberFormat.format(coins);
+    final intl.NumberFormat monthlyCapNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
+
+    return 'Compartilhe seu código — quando um amigo entra com ele, você ganha $coinsString moedas (até $monthlyCapString por mês) e ele ganha 1 mês de Platinum.';
+  }
+
+  @override
+  String get referralHowItWorksTitle => 'Como funciona';
+
+  @override
+  String get achievementsLoadError => 'Não foi possível carregar as conquistas';
+
+  @override
+  String get loadErrorCheckConnection =>
+      'Verifique sua conexão e tente novamente.';
 
   @override
   String get streakTitle => 'Sequência';

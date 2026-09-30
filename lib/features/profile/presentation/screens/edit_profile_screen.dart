@@ -53,6 +53,7 @@ import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 import '../../../gamification/presentation/screens/personal_stats_screen.dart';
 import '../../../gamification/presentation/screens/progress_screen.dart';
 import '../../../passport/presentation/screens/cultural_passport_screen.dart';
+import '../../../referral/data/services/referral_service.dart';
 import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../business/presentation/screens/business_account_screen.dart';
 import '../../../business/presentation/screens/business_hub_screen.dart';
@@ -518,7 +519,12 @@ class EditProfileScreen extends StatelessWidget {
                       // Invite Friends (referral loop)
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.referralInviteFriends,
-                        subtitle: AppLocalizations.of(context)!.referralHowItWorks,
+                        subtitle: AppLocalizations.of(context)!.referralHowItWorks(
+                          ReferralService.referrerCoinReward,
+                          ReferralService.referrerMonthlyCap,
+                        ),
+                        // The reward rules must be readable in full.
+                        subtitleMaxLines: null,
                         icon: Icons.card_giftcard,
                         onTap: () => _navigateToReferral(context, activeProfile),
                       ),
@@ -1191,8 +1197,9 @@ class EditProfileScreen extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider(
-          create: (context) => di.sl<GamificationBloc>()
-            ..add(LoadUserAchievements(currentProfile.userId)),
+          // AchievementsScreen dispatches LoadUserAchievements itself in
+          // initState; adding it here too fired two parallel loads.
+          create: (context) => di.sl<GamificationBloc>(),
           child: AchievementsScreen(userId: currentProfile.userId),
         ),
       ),

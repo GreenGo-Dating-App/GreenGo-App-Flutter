@@ -2,6 +2,7 @@
 /// Points 176-200: State management for all gamification features
 library;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../coins/domain/entities/coin_transaction.dart';
@@ -83,20 +84,38 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     LoadUserAchievements event,
     Emitter<GamificationState> emit,
   ) async {
-    emit(state.copyWith(achievementsLoading: true, achievementsError: null));
+    emit(state.copyWith(
+      achievementsLoading: true,
+      clearAchievementsError: true,
+    ));
 
-    final result = await getUserAchievements(event.userId);
+    // Every path must end in loaded-or-error: an exception thrown here would
+    // otherwise leave achievementsLoading == true and the spinner forever.
+    try {
+      final result = await getUserAchievements(event.userId);
 
-    result.fold(
-      (failure) => emit(state.copyWith(
+      result.fold(
+        (failure) {
+          debugPrint('GamificationBloc: achievements load failed: '
+              '${failure.message}');
+          emit(state.copyWith(
+            achievementsLoading: false,
+            achievementsError: failure.message,
+          ));
+        },
+        (data) => emit(state.copyWith(
+          achievementsLoading: false,
+          achievementsData: data,
+          clearAchievementsError: true,
+        )),
+      );
+    } catch (e) {
+      debugPrint('GamificationBloc: achievements load threw: $e');
+      emit(state.copyWith(
         achievementsLoading: false,
-        achievementsError: failure.message,
-      )),
-      (data) => emit(state.copyWith(
-        achievementsLoading: false,
-        achievementsData: data,
-      )),
-    );
+        achievementsError: e.toString(),
+      ));
+    }
   }
 
   Future<void> _onUnlockAchievement(

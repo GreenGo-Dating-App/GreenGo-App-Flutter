@@ -94,6 +94,7 @@ class GamificationState extends Equatable {
     UserAchievementsData? achievementsData,
     bool? achievementsLoading,
     String? achievementsError,
+    bool clearAchievementsError = false,
     Achievement? recentlyUnlocked,
     bool clearRecentlyUnlocked = false,
 
@@ -134,7 +135,11 @@ class GamificationState extends Equatable {
       // Achievements
       achievementsData: achievementsData ?? this.achievementsData,
       achievementsLoading: achievementsLoading ?? this.achievementsLoading,
-      achievementsError: achievementsError ?? this.achievementsError,
+      // `achievementsError: null` alone can't clear it (?? keeps the old
+      // value), so a reload uses clearAchievementsError.
+      achievementsError: clearAchievementsError
+          ? null
+          : (achievementsError ?? this.achievementsError),
       recentlyUnlocked:
           clearRecentlyUnlocked ? null : (recentlyUnlocked ?? this.recentlyUnlocked),
 

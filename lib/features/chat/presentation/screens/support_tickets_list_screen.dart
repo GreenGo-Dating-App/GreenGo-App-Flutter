@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -23,6 +26,88 @@ class SupportTicketsListScreen extends StatefulWidget {
 class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
+  /// Newest tickets shown; bounded so a heavy user can't pull an unbounded
+  /// list on every open.
+  static const int _pageSize = 50;
+
+  /// If the first snapshot hasn't arrived by then, show error + Retry instead
+  /// of an endless spinner (a late snapshot still replaces the error).
+  static const Duration _firstLoadTimeout = Duration(seconds: 15);
+
+  StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _ticketsSub;
+  Timer? _firstLoadTimer;
+  List<QueryDocumentSnapshot<Map<String, dynamic>>>? _tickets;
+  Object? _loadError;
+  bool _timedOut = false;
+
+  /// The `/support` named route can pass '' — fall back to the signed-in uid.
+  String get _uid => widget.currentUserId.isNotEmpty
+      ? widget.currentUserId
+      : (FirebaseAuth.instance.currentUser?.uid ?? '');
+
+  @override
+  void initState() {
+    super.initState();
+    // Subscribed ONCE here, not in build(): a stream created in build() is
+    // replaced on every rebuild, which resets the StreamBuilder to `waiting`.
+    _subscribe();
+  }
+
+  @override
+  void dispose() {
+    _firstLoadTimer?.cancel();
+    _ticketsSub?.cancel();
+    super.dispose();
+  }
+
+  void _subscribe() {
+    _firstLoadTimer?.cancel();
+    _ticketsSub?.cancel();
+    final uid = _uid;
+    if (uid.isEmpty) {
+      _loadError = StateError('No signed-in user');
+      return;
+    }
+    // Index: support_chats (userId ASC, lastMessageAt DESC) — deployed.
+    _ticketsSub = _firestore
+        .collection('support_chats')
+        .where('userId', isEqualTo: uid)
+        .orderBy('lastMessageAt', descending: true)
+        .limit(_pageSize)
+        .snapshots()
+        .listen(
+      (snapshot) {
+        _firstLoadTimer?.cancel();
+        if (!mounted) return;
+        setState(() {
+          _tickets = snapshot.docs;
+          _loadError = null;
+          _timedOut = false;
+        });
+      },
+      onError: (Object error) {
+        _firstLoadTimer?.cancel();
+        debugPrint('SupportTicketsListScreen: tickets query failed: $error');
+        if (!mounted) return;
+        setState(() => _loadError = error);
+      },
+    );
+    _firstLoadTimer = Timer(_firstLoadTimeout, () {
+      if (!mounted || _tickets != null) return;
+      debugPrint('SupportTicketsListScreen: first snapshot timed out');
+      setState(() => _timedOut = true);
+    });
+  }
+
+  void _retry() {
+    setState(() {
+      _tickets = null;
+      _loadError = null;
+      _timedOut = false;
+    });
+    _subscribe();
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -39,20 +124,18 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
           onPressed: () => SafeNavigation.pop(context, userId: widget.currentUserId),
         ),
       ),
-      body: StreamBuilder<QuerySnapshot>(
-        stream: _firestore
-            .collection('support_chats')
-            .where('userId', isEqualTo: widget.currentUserId)
-            .orderBy('lastMessageAt', descending: true)
-            .snapshots(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
+      body: Builder(
+        builder: (context) {
+          final loaded = _tickets;
+          final failed = _loadError != null || _timedOut;
+
+          if (loaded == null && !failed) {
             return const Center(
               child: CircularProgressIndicator(color: AppColors.richGold),
             );
           }
 
-          if (snapshot.hasError) {
+          if (loaded == null) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -63,9 +146,21 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
                     l10n.chatErrorLoadingTickets,
                     style: const TextStyle(color: AppColors.textSecondary),
                   ),
+                  const SizedBox(height: 4),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: Text(
+                      l10n.loadErrorCheckConnection,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        color: AppColors.textSecondary,
+                        fontSize: 13,
+                      ),
+                    ),
+                  ),
                   const SizedBox(height: 8),
                   ElevatedButton(
-                    onPressed: () => setState(() {}),
+                    onPressed: _retry,
                     child: Text(l10n.retry),
                   ),
                 ],
@@ -73,7 +168,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
             );
           }
 
-          final tickets = snapshot.data?.docs ?? [];
+          final tickets = loaded;
 
           if (tickets.isEmpty) {
             return Center(
@@ -120,7 +215,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
             padding: const EdgeInsets.all(16),
             itemCount: tickets.length,
             itemBuilder: (context, index) {
-              final ticket = tickets[index].data() as Map<String, dynamic>;
+              final ticket = tickets[index].data();
               final ticketId = tickets[index].id;
               final subject = ticket['subject'] ?? 'Support Request';
               final status = ticket['status'] ?? 'open';

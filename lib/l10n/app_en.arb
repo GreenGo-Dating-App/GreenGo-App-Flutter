@@ -5653,7 +5653,23 @@
   "referralShareMessage": "Join me on GreenGo!",
   "referralRewardEarned": "Coins earned",
   "referralCountLabel": "Friends invited",
-  "referralHowItWorks": "Share your code — when a friend joins with it, you both earn coins.",
+  "referralHowItWorks": "Share your code — when a friend joins with it, you earn {coins} coins (up to {monthlyCap} a month) and they get 1 month of Platinum.",
+  "@referralHowItWorks": {
+    "description": "Referral rules. Values mirror functions/src/referral/redeemReferral.ts (REFERRER_COIN_REWARD, REFERRER_MONTHLY_CAP, PLATINUM_DURATION_MS = 1 month).",
+    "placeholders": {
+      "coins": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "monthlyCap": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "referralHowItWorksTitle": "How it works",
+  "achievementsLoadError": "Couldn't load achievements",
+  "loadErrorCheckConnection": "Check your connection and try again.",
   "streakTitle": "Streak",
   "streakDaysLabel": "day streak",
   "streakKeepGoing": "Keep it going!",

@@ -194,9 +194,24 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                     ),
                   ),
                   const SizedBox(height: 16),
+                  // Localized message; the raw failure goes to the log only.
                   Text(
-                    state.achievementsError!,
-                    style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                    l10n.achievementsLoadError,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.9),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: Text(
+                      l10n.loadErrorCheckConnection,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.white.withOpacity(0.7)),
+                    ),
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton.icon(
@@ -206,7 +221,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                           );
                     },
                     icon: const Icon(Icons.refresh),
-                    label: const Text('Retry'),
+                    label: Text(l10n.retry),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
                       foregroundColor: Colors.black,

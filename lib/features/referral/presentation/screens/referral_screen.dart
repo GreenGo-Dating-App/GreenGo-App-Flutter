@@ -29,11 +29,19 @@ class _ReferralScreenState extends State<ReferralScreen> {
   late final String _userId;
   String? _code;
   bool _loadingCode = true;
+  bool _codeFailed = false;
+
+  /// Created once so a rebuild never re-subscribes (and never flashes back
+  /// to an empty state).
+  Stream<ReferralStats>? _statsStream;
 
   @override
   void initState() {
     super.initState();
     _userId = widget.userId ?? FirebaseAuth.instance.currentUser?.uid ?? '';
+    if (_userId.isNotEmpty) {
+      _statsStream = _service.statsStream(_userId);
+    }
     _loadCode();
   }
 
@@ -47,16 +55,29 @@ class _ReferralScreenState extends State<ReferralScreen> {
       setState(() => _loadingCode = false);
       return;
     }
+    if (!_loadingCode || _codeFailed) {
+      setState(() {
+        _loadingCode = true;
+        _codeFailed = false;
+      });
+    }
     try {
-      final code = await _service.getOrCreateCode(_userId);
+      // Bounded: a stalled connection must end in a retry, never a spinner.
+      final code = await _service
+          .getOrCreateCode(_userId)
+          .timeout(ReferralService.requestTimeout);
       if (!mounted) return;
       setState(() {
         _code = code;
         _loadingCode = false;
       });
-    } catch (_) {
+    } catch (e) {
+      debugPrint('ReferralScreen: could not load referral code: $e');
       if (!mounted) return;
-      setState(() => _loadingCode = false);
+      setState(() {
+        _loadingCode = false;
+        _codeFailed = true;
+      });
     }
   }
 
@@ -77,7 +98,7 @@ class _ReferralScreenState extends State<ReferralScreen> {
     // No share_plus dependency — copy an invite message to the clipboard.
     final message = '${l10n.referralShareMessage}\n$code';
     await Clipboard.setData(ClipboardData(text: message));
-    _snack(l10n.referralShareCta);
+    _snack(l10n.inviteCodeCopied);
   }
 
   @override
@@ -105,7 +126,6 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 _buildCodeCard(l10n),
                 const SizedBox(height: 16),
                 _buildStatsCard(l10n),
-                const SizedBox(height: 16),
                 const SizedBox(height: 16),
                 _buildHowItWorks(l10n),
               ],
@@ -160,6 +180,27 @@ class _ReferralScreenState extends State<ReferralScreen> {
                 ),
               ),
             )
+          else if (_code == null && _codeFailed)
+            Column(
+              children: [
+                Text(
+                  l10n.loadErrorCheckConnection,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 13,
+                  ),
+                ),
+                TextButton.icon(
+                  onPressed: _loadCode,
+                  icon: const Icon(Icons.refresh, color: AppColors.richGold),
+                  label: Text(
+                    l10n.retry,
+                    style: const TextStyle(color: AppColors.richGold),
+                  ),
+                ),
+              ],
+            )
           else
             Row(
               children: [
@@ -203,9 +244,10 @@ class _ReferralScreenState extends State<ReferralScreen> {
   }
 
   Widget _buildStatsCard(AppLocalizations l10n) {
-    if (_userId.isEmpty) return const SizedBox.shrink();
+    final statsStream = _statsStream;
+    if (statsStream == null) return const SizedBox.shrink();
     return StreamBuilder<ReferralStats>(
-      stream: _service.statsStream(_userId),
+      stream: statsStream,
       builder: (context, snapshot) {
         final stats = snapshot.data;
         final invited = stats?.invitedCount ?? 0;
@@ -281,19 +323,29 @@ class _ReferralScreenState extends State<ReferralScreen> {
               const Icon(Icons.info_outline,
                   color: AppColors.richGold, size: 18),
               const SizedBox(width: 8),
-              Text(
-                l10n.referralHowItWorks,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
+              // Short heading; Expanded so a long translation wraps instead
+              // of overflowing the row.
+              Expanded(
+                child: Text(
+                  l10n.referralHowItWorksTitle,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 12),
+          // Full rules, always wrapped (no maxLines / ellipsis). Numbers come
+          // from the server-mirrored constants in ReferralService.
           Text(
-            l10n.referralShareMessage,
+            l10n.referralHowItWorks(
+              ReferralService.referrerCoinReward,
+              ReferralService.referrerMonthlyCap,
+            ),
+            softWrap: true,
             style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 13,

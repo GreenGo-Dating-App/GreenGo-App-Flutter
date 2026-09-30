@@ -59,8 +59,13 @@ class GetUserAchievements implements UseCase<UserAchievementsData, String> {
 
     // Calculate statistics
     final totalAchievements = allAchievements.length;
-    final unlockedCount = userProgress.where((p) => p.isUnlocked).length;
-    final progressPercentage = (unlockedCount / totalAchievements * 100).round();
+    // Count against the catalogue so retired ids can't push this past 100%.
+    final unlockedCount =
+        achievementsWithProgress.where((a) => a.isUnlocked).length;
+    // Guard 0/0: NaN.round() throws, which would leave the bloc stuck loading.
+    final progressPercentage = totalAchievements == 0
+        ? 0
+        : (unlockedCount / totalAchievements * 100).round().clamp(0, 100);
 
     return Right(UserAchievementsData(
       allAchievements: achievementsWithProgress,
