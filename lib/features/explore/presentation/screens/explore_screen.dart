@@ -161,10 +161,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   String? _peopleStat; // distinct chat partners (all time)
 
   // null == still loading; empty == loaded but nothing to show.
-  // "Happening soon": the UPCOMING events the user has RSVP'd to (going),
-  // soonest first. Hidden entirely (title included) while loading and when
-  // empty.
-  List<_Happening>? _happenings;
   // "Featured events": up to 3 random community/user-created events within
   // [kFeaturedRadiusKm] of the user. Hidden when empty.
   List<_Happening>? _featuredEvents;
@@ -227,7 +223,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
       (_featuredAttractions?.isNotEmpty ?? false) ||
       (_myEvents?.isNotEmpty ?? false) ||
       (_luxuryEvents?.isNotEmpty ?? false) ||
-      (_happenings?.isNotEmpty ?? false) ||
       (_aroundYou?.isNotEmpty ?? false) ||
       (_recommended?.isNotEmpty ?? false) ||
       (_sameLanguage?.isNotEmpty ?? false) ||
@@ -347,7 +342,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
   static const String _kCacheLuxury = 'explore_luxury_v1';
   // v2: "Happening soon" now holds the user's registered events; a v1 entry
   // is a nearby-events list and must never be painted as one.
-  static const String _kCacheHappenings = 'explore_happenings_v2';
   static const String _kCacheAroundYou = 'explore_around_you_v1';
   static const String _kCacheRecommended = 'explore_recommended_v1';
   static const String _kCacheSameLanguage = 'explore_same_language_v1';
@@ -391,9 +385,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final results = await Future.wait<Object?>([
         // Featured: never past (no radius — it is nearest-first, uncapped).
         _cachedHappenings(_kCacheLuxury),
-        // Happening: the user's registered events, re-checked as live and not
-        // past; the server load then re-checks the RSVPs themselves.
-        _cachedHappenings(_kCacheHappenings),
         people(_kCacheAroundYou),
         people(_kCacheRecommended),
         people(_kCacheSameLanguage),
@@ -407,20 +398,19 @@ class _ExploreScreenState extends State<ExploreScreen> {
       if (!mounted) return;
 
       final luxury = results[0] as List<_Happening>;
-      final happenings = results[1] as List<_Happening>;
-      final around = results[2] as List<MatchCandidate>;
-      final recommended = results[3] as List<MatchCandidate>;
-      final sameLanguage = results[4] as List<MatchCandidate>;
-      final sameLanguageName = results[5];
+      final around = results[1] as List<MatchCandidate>;
+      final recommended = results[2] as List<MatchCandidate>;
+      final sameLanguage = results[3] as List<MatchCandidate>;
+      final sameLanguageName = results[4];
       final businesses = <Profile>[];
       for (final doc
-          in results[6] as List<DocumentSnapshot<Map<String, dynamic>>>) {
+          in results[5] as List<DocumentSnapshot<Map<String, dynamic>>>) {
         final p = _parseBusiness(doc.id, doc.data() ?? const {});
         if (p != null && !(blocked?.contains(doc.id) ?? true)) businesses.add(p);
       }
       final communities = <Community>[];
       for (final doc
-          in results[7] as List<DocumentSnapshot<Map<String, dynamic>>>) {
+          in results[6] as List<DocumentSnapshot<Map<String, dynamic>>>) {
         try {
           final c = CommunityModel.fromFirestore(doc);
           if (c.isPublic) communities.add(c);
@@ -429,7 +419,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final now = DateTime.now();
       final communityEvents = <Event>[];
       for (final doc
-          in results[8] as List<DocumentSnapshot<Map<String, dynamic>>>) {
+          in results[7] as List<DocumentSnapshot<Map<String, dynamic>>>) {
         try {
           final e = EventModel.fromFirestore(doc);
           // As the server path: public, live, not ended, within 50 km.
@@ -444,9 +434,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
       setState(() {
         if (_luxuryEvents == null && luxury.isNotEmpty) _luxuryEvents = luxury;
-        if (_happenings == null && happenings.isNotEmpty) {
-          _happenings = happenings;
-        }
         if (_aroundYou == null && around.isNotEmpty) _aroundYou = around;
         if (_recommended == null && recommended.isNotEmpty) {
           _recommended = recommended;
@@ -861,7 +848,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           : Future<Object>.value(const <Event>[]),
       _nearbyLiveEvents(),
       // The user's own events — the SAME (memoised) read that feeds My next
-      // events and Happening soon, so this costs nothing extra.
+      // events, so this costs nothing extra.
       _userEvents(),
     ]);
     final community = results[0] as List<Event>;
@@ -869,8 +856,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final registered = _registeredUpcoming(results[2] as List<Event>);
     _usedEventKeys.clear();
     _loadLuxuryEvents(community, live); // Featured — records its keys
-    // Happening soon shows the registered events; reserve them so Near-you
-    // doesn't repeat them.
+    // My next events already shows the registered events; reserve them so
+    // Near-you doesn't repeat them.
     for (final e in registered) {
       _usedEventKeys.add(e.id);
     }
@@ -879,8 +866,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// The current user's own events (organized + RSVP'd "going"), read ONCE per
   /// load via [EventsRemoteDataSource.getUserEvents] (bounded: 100 organized +
-  /// 500 attendee rows) and shared by My next events, Happening soon and the
-  /// Near-you de-duplication. A failure yields an empty list.
+  /// 500 attendee rows) and shared by My next events and the Near-you
+  /// de-duplication. A failure yields an empty list.
   Future<List<Event>> _userEvents() => _userEventsFuture ??=
       EventsRemoteDataSourceImpl(firestore: _firestore)
           .getUserEvents(widget.userId)
@@ -1551,25 +1538,13 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// (organized or RSVP'd). Uses the existing [EventsRemoteDataSource.getUserEvents]
   /// (organized + attending), then keeps only events whose start is in the
   /// future, ordered soonest-first, capped at 10. Failures hide the section.
-  ///
-  /// The same read also feeds "Happening soon": the upcoming events the user
-  /// has RSVP'd to as "going" ([_registeredUpcoming]). No registrations → that
-  /// section is hidden entirely.
   Future<void> _loadMyEvents() async {
     final all = await _userEvents();
     final now = DateTime.now();
     var mine = all.where((e) => !e.startDate.isBefore(now)).toList()
       ..sort((a, b) => a.startDate.compareTo(b.startDate));
     if (mine.length > 10) mine = mine.sublist(0, 10);
-    final registered =
-        _registeredUpcoming(all).map((e) => _Happening.community(e)).toList();
-    _saveHappenings(_kCacheHappenings, registered);
-    if (mounted) {
-      setState(() {
-        _myEvents = mine;
-        _happenings = registered;
-      });
-    }
+    if (mounted) setState(() => _myEvents = mine);
   }
 
   /// Loads "Communities to join": PUBLIC communities, preferring ones near the
@@ -1873,8 +1848,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               ),
 
               // ── MORE ──────────────────────────────────────────────────────
-              // Only when the user is registered for an upcoming event.
-              _happeningSection(context, l10n, reduceMotion),
               _businessesSection(context, l10n, reduceMotion),
               _communityEventsSection(context, l10n, reduceMotion),
 
@@ -2666,57 +2639,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
           business: business,
           currentUserId: widget.userId,
         ),
-      ),
-    );
-  }
-
-  /// "Happening soon" — the UPCOMING events the user has registered for
-  /// (RSVP'd "going"), soonest first, as a horizontally-scrolling carousel of
-  /// large event cards; tapping routes to [_openHappening]. Shown ONLY when
-  /// there is at least one: while loading and when the user has no upcoming
-  /// registrations the whole section (header included) is absent, so it never
-  /// flashes a skeleton or an empty state. Reduced-motion safe.
-  Widget _happeningSection(
-    BuildContext context,
-    AppLocalizations l10n,
-    bool reduceMotion,
-  ) {
-    final rows = _happenings;
-    if (rows == null || rows.isEmpty) {
-      return const SliverToBoxAdapter(child: SizedBox.shrink());
-    }
-    return SliverToBoxAdapter(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20, 28, 20, 12),
-            child: _sectionHeader(
-              context,
-              l10n.exploreHappeningSoon,
-              l10n.exploreSeeAll,
-              onSeeAll: () => _openAllEvents(context),
-            ),
-          ),
-          SizedBox(
-            height: _HappeningCard.cardHeight,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              physics: reduceMotion
-                  ? const ClampingScrollPhysics()
-                  : const BouncingScrollPhysics(),
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              itemCount: rows.length,
-              separatorBuilder: (_, __) => const SizedBox(width: 12),
-              itemBuilder: (context, index) => _HappeningCard(
-                happening: rows[index],
-                animate: !reduceMotion,
-                onTap: () => _openHappening(context, rows[index]),
-              ),
-            ),
-          ),
-        ],
       ),
     );
   }

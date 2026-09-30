@@ -4141,7 +4141,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get exploreAroundYou => 'Entdecken';
+  String get exploreAroundYou => 'Neue Leute entdecken';
 
   @override
   String get exploreSameInterests => 'Menschen mit denselben Interessen';
