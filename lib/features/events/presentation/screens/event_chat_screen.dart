@@ -51,8 +51,9 @@ class _EventChatScreenState extends State<EventChatScreen> {
   /// flashing the loading spinner over the already-visible messages.
   late final Stream<List<EventChatMessage>> _messagesStream;
 
-  /// Organizers can broadcast announcements to everyone in the event.
-  bool get _isOrganizer => widget.event.organizerId == widget.currentUserId;
+  /// Organizers (creator + co-owners) can broadcast announcements to everyone
+  /// in the event.
+  bool get _isOrganizer => widget.event.isOwner(widget.currentUserId);
   bool _broadcastMode = false;
 
   // Resolved display name/photo for the current user (avoids storing 'User').

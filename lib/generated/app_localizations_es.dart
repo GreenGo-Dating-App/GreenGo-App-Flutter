@@ -14170,4 +14170,75 @@ class AppLocalizationsEs extends AppLocalizations {
   String shopMembershipExpiredOn(String tier, String date) {
     return 'Tu membresía $tier venció el $date';
   }
+
+  @override
+  String get eventsLocationHelper =>
+      'Escribe un lugar o una dirección, o elígelo en el mapa';
+
+  @override
+  String get eventsPickOnMap => 'Elegir en el mapa';
+
+  @override
+  String get eventsLocationNotOnMap =>
+      'Guardado con la ubicación que escribiste. No pudimos situarla en el mapa, así que no aparecerá en las búsquedas cercanas.';
+
+  @override
+  String get eventsCoOwners => 'Coorganizadores';
+
+  @override
+  String get eventsCoOwnersHelper =>
+      'Los coorganizadores pueden editar el evento, abrir la lista de asistencia, registrar la entrada de invitados y ver la lista completa. Solo tú puedes eliminar el evento o cambiar los coorganizadores.';
+
+  @override
+  String get eventsCoOwnersCreatorOnly =>
+      'Solo quien creó el evento puede cambiar los coorganizadores.';
+
+  @override
+  String get eventsAddCoOwner => 'Añadir coorganizador';
+
+  @override
+  String eventsCoOwnerLimit(int max) {
+    return 'Puedes añadir hasta $max coorganizadores';
+  }
+
+  @override
+  String get eventsCoOwnerSearchHint => 'Buscar por apodo';
+
+  @override
+  String get eventsCoOwnerSearch => 'Buscar';
+
+  @override
+  String get eventsCoOwnerRecentChats => 'Chats recientes';
+
+  @override
+  String get eventsCoOwnerNoRecentChats => 'Aún no hay chats recientes';
+
+  @override
+  String get eventsCoOwnerNotFound => 'No se encontró a nadie con ese apodo';
+
+  @override
+  String get eventsCoOwnerSearchFailed =>
+      'La búsqueda falló. Inténtalo de nuevo.';
+
+  @override
+  String get eventsCoOwnerRemove => 'Quitar coorganizador';
+
+  @override
+  String eventsOrganizedWith(String names) {
+    return 'con $names';
+  }
+
+  @override
+  String get eventsCoOwnerBadge => 'Coorganizador';
+
+  @override
+  String get qrHubCancelRsvpConfirm =>
+      '¿Eliminar esta entrada? Se cancelará tu confirmación y tu plaza quedará libre para otra persona.';
+
+  @override
+  String get qrHubHideTicketConfirm =>
+      '¿Quitar esta entrada de tu lista? Tu registro de asistencia se conserva.';
+
+  @override
+  String get qrHubTicketRemoved => 'Entrada eliminada';
 }

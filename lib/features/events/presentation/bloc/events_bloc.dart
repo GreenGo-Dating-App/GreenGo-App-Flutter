@@ -261,7 +261,7 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
   ) async {
     final wasDetail = state is EventDetailLoaded;
 
-    // OPTIMISTIC: if the user only ATTENDS this event (doesn't organize it),
+    // OPTIMISTIC: if the user only ATTENDS this event (doesn't own/co-own it),
     // drop it from the My Events cache so the "Going" list updates instantly.
     // Keep a copy to restore if the server call fails.
     Event? removed;
@@ -269,7 +269,7 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     if (!wasDetail) {
       removedIdx = _userEvents.indexWhere((e) => e.id == event.eventId);
       if (removedIdx >= 0 &&
-          _userEvents[removedIdx].organizerId != event.userId) {
+          !_userEvents[removedIdx].isOwner(event.userId)) {
         removed = _userEvents.removeAt(removedIdx);
         emit(EventsLoaded(
           events: _allEvents,

@@ -100,6 +100,22 @@ class ExternalLink extends Equatable {
   List<Object?> get props => [url, label];
 }
 
+/// Maximum number of co-owners (besides the creator) an event may have.
+/// Mirrored by the `events` Firestore rule (`coOrganizerIds.size() <= 5`).
+const int kMaxEventCoOrganizers = 5;
+
+/// Event-doc fields only the creator may change. A co-owner's edit never
+/// writes them (stripped client-side) and the `events` rule rejects any
+/// co-owner update touching them.
+const List<String> kEventCreatorOnlyFields = [
+  'organizerId',
+  'organizerName',
+  'organizerPhotoUrl',
+  'coOrganizerIds',
+  'isFeatured',
+  'featuredUntil',
+];
+
 /// Event Entity
 /// Local events and activities for users to meet
 class Event extends Equatable {
@@ -112,6 +128,7 @@ class Event extends Equatable {
     this.imageUrl,
     this.photoUrls = const [],
     this.allowedScannerIds = const [],
+    this.coOrganizerIds = const [],
     this.latitude,
     this.longitude,
     this.address,
@@ -161,6 +178,12 @@ class Event extends Equatable {
   /// Users (besides the organizer) who are allowed to scan/redeem this event's
   /// QR tickets at the door. Owner is always allowed implicitly.
   final List<String> allowedScannerIds;
+
+  /// Co-owners added by the creator ([organizerId]), max
+  /// [kMaxEventCoOrganizers]. A co-owner may do everything the creator can
+  /// (edit, attendance list, QR check-in, see the full guest list) EXCEPT
+  /// delete the event, change this list, or spend coins boosting it.
+  final List<String> coOrganizerIds;
   final DateTime startDate;
   final DateTime endDate;
   final String locationName;
@@ -277,14 +300,28 @@ class Event extends Equatable {
   bool get isUnlimited => maxAttendees <= 0;
   int get spotsLeft => maxAttendees - goingCount;
   bool get isFull => !isUnlimited && spotsLeft <= 0;
+
+  /// The creator of the event. Only the creator may delete it, manage
+  /// [coOrganizerIds] or boost it.
+  bool isCreator(String uid) => uid.isNotEmpty && uid == organizerId;
+
+  /// Whether [uid] owns this event: the creator or one of its co-owners.
+  bool isOwner(String uid) =>
+      uid.isNotEmpty && (uid == organizerId || coOrganizerIds.contains(uid));
+
+  /// The id to pass as the "organizer" to [EventAttendee.isVisibleTo] /
+  /// [EventAttendee.displayNameFor] for [viewerId]: an owner (creator or
+  /// co-owner) sees the roster exactly as the creator does.
+  String organizerViewIdFor(String viewerId) =>
+      isOwner(viewerId) ? viewerId : organizerId;
   /// Whether [viewerId] may see who is attending.
   ///
-  /// The organiser always can - they need the list to run the event, and they
-  /// chose the setting. Everyone else is judged by that setting; a participant
+  /// The organiser (and every co-owner) always can - they need the list to run
+  /// the event, and they chose the setting. Everyone else is judged by that setting; a participant
   /// is anyone with an RSVP, including the waitlist, since they have committed
   /// to the event either way.
   bool canViewAttendeeList(String viewerId) {
-    if (viewerId == organizerId) return true;
+    if (isOwner(viewerId)) return true;
     switch (attendeeListVisibility) {
       case AttendeeListVisibility.public:
         return true;
@@ -317,6 +354,7 @@ class Event extends Equatable {
         category,
         imageUrl,
         allowedScannerIds,
+        coOrganizerIds,
         photoUrls,
         startDate,
         endDate,
@@ -368,6 +406,7 @@ class Event extends Equatable {
     String? imageUrl,
     List<String>? photoUrls,
     List<String>? allowedScannerIds,
+    List<String>? coOrganizerIds,
     DateTime? startDate,
     DateTime? endDate,
     String? locationName,
@@ -406,6 +445,9 @@ class Event extends Equatable {
     List<TicketTier>? ticketTiers,
     String? communityId,
     bool clearCommunityId = false,
+    // Drops latitude/longitude/city/country (a manually typed location that
+    // could not be geocoded). Explicit values passed alongside are ignored.
+    bool clearCoordinates = false,
   }) {
     return Event(
       id: id ?? this.id,
@@ -418,11 +460,12 @@ class Event extends Equatable {
       imageUrl: imageUrl ?? this.imageUrl,
       photoUrls: photoUrls ?? this.photoUrls,
       allowedScannerIds: allowedScannerIds ?? this.allowedScannerIds,
+      coOrganizerIds: coOrganizerIds ?? this.coOrganizerIds,
       startDate: startDate ?? this.startDate,
       endDate: endDate ?? this.endDate,
       locationName: locationName ?? this.locationName,
-      latitude: latitude ?? this.latitude,
-      longitude: longitude ?? this.longitude,
+      latitude: clearCoordinates ? null : (latitude ?? this.latitude),
+      longitude: clearCoordinates ? null : (longitude ?? this.longitude),
       address: address ?? this.address,
       maxAttendees: maxAttendees ?? this.maxAttendees,
       price: price ?? this.price,
@@ -437,8 +480,8 @@ class Event extends Equatable {
       genderPreference: genderPreference ?? this.genderPreference,
       languages: languages ?? this.languages,
       languagePairs: languagePairs ?? this.languagePairs,
-      city: city ?? this.city,
-      country: country ?? this.country,
+      city: clearCoordinates ? null : (city ?? this.city),
+      country: clearCoordinates ? null : (country ?? this.country),
       attendeeCount: attendeeCount ?? this.attendeeCount,
       likeCount: likeCount ?? this.likeCount,
       viewCount: viewCount ?? this.viewCount,

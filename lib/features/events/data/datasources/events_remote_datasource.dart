@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../../../core/error/exceptions.dart';
@@ -211,9 +212,27 @@ class EventChatMessage {
 /// Sub-collection: 'events/{eventId}/messages'
 class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
 
-  EventsRemoteDataSourceImpl({FirebaseFirestore? firestore})
-      : _firestore = firestore ?? FirebaseFirestore.instance;
+  EventsRemoteDataSourceImpl({
+    FirebaseFirestore? firestore,
+    String? Function()? currentUserId,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
+        _currentUserIdFn = currentUserId;
   final FirebaseFirestore _firestore;
+
+  /// Signed-in uid provider (injectable for tests; defaults to FirebaseAuth).
+  final String? Function()? _currentUserIdFn;
+
+  String? get _currentUid {
+    try {
+      final fn = _currentUserIdFn;
+      return fn != null ? fn() : FirebaseAuth.instance.currentUser?.uid;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// Max co-owned events merged into My Events (bounded read).
+  static const int _coOwnedEventsLimit = 50;
 
   CollectionReference<Map<String, dynamic>> get _eventsCollection =>
       _firestore.collection('events');
@@ -389,6 +408,20 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       // CF-maintained counters — never overwrite from a (possibly stale) client.
       json.remove('likeCount');
       json.remove('attendeeCount');
+      // A manually typed location that could not be geocoded has no coords:
+      // drop the stale geohash so it leaves the nearest-first index cleanly.
+      if (event.latitude == null || event.longitude == null) {
+        json['geohash'] = FieldValue.delete();
+      }
+      // Co-owners may edit, but never the creator-only fields (ownership,
+      // the co-owner list, the paid boost). Leave those untouched rather than
+      // re-writing a possibly stale copy, which the rules would reject.
+      final uid = _currentUid;
+      if (uid != null && uid != event.organizerId) {
+        for (final k in kEventCreatorOnlyFields) {
+          json.remove(k);
+        }
+      }
 
       await _eventsCollection.doc(event.id).update(json);
       debugPrint('Event updated: ${event.id}');
@@ -883,6 +916,25 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       final organizedEvents = organizedSnapshot.docs
           .map(EventModel.fromFirestore)
           .toList();
+
+      // Events the user CO-OWNS (added by the creator). Bounded; a failure
+      // here (e.g. the composite index is still building) must never take
+      // down My Events, so it degrades to "none".
+      final organizedIdSet = organizedEvents.map((e) => e.id).toSet();
+      try {
+        final coOwnedSnapshot = await _eventsCollection
+            .where('coOrganizerIds', arrayContains: userId)
+            .orderBy('startDate', descending: true)
+            .limit(_coOwnedEventsLimit)
+            .get(_opts(preferCache));
+        for (final doc in coOwnedSnapshot.docs) {
+          if (organizedIdSet.add(doc.id)) {
+            organizedEvents.add(EventModel.fromFirestore(doc));
+          }
+        }
+      } catch (e) {
+        debugPrint('Co-owned events query failed (ignored): $e');
+      }
 
       // Get events the user is attending (query attendees sub-collections)
       // Firestore does not support sub-collection group queries without

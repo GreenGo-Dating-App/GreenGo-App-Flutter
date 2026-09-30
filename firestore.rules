@@ -1405,6 +1405,21 @@ service cloud.firestore {
       function isOrganizer() {
         return isSignedIn() && resource.data.organizerId == request.auth.uid;
       }
+      // Co-owner added by the creator (coOrganizerIds, max 5). Organizer-level
+      // rights EXCEPT delete, changing ownership / the co-owner list, and the
+      // paid boost fields (see the co-owner update rule below).
+      function isCoOrganizer() {
+        return isSignedIn()
+          && request.auth.uid in resource.data.get('coOrganizerIds', []);
+      }
+      // The co-owner list must stay a list of at most 5 ids, never containing
+      // the creator. Absent (every event created before co-owners) is fine.
+      function validCoOrganizers(data) {
+        return !('coOrganizerIds' in data)
+          || (data.coOrganizerIds is list
+              && data.coOrganizerIds.size() <= 5
+              && !(data.organizerId in data.coOrganizerIds));
+      }
       function isEventAttendee() {
         return isSignedIn() &&
           exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid));
@@ -1421,23 +1436,35 @@ service cloud.firestore {
       allow read: if isSignedIn();
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
-        && request.resource.data.organizerId == request.auth.uid;
+        && request.resource.data.organizerId == request.auth.uid
+        && validCoOrganizers(request.resource.data);
+      // Delete stays CREATOR-only (co-owners cannot delete).
       allow delete: if isOrganizer();
       // Organizer has full update rights. Additionally ANY signed-in user may
       // update ONLY the denormalized RSVP counters (`attendeeCount` and the
       // per-tier `tierGoingCounts` map) — this powers the join / waitlist /
       // auto-promotion transactions that run as the joining/cancelling user.
-      allow update: if isOrganizer()
+      allow update: if (isOrganizer() && validCoOrganizers(request.resource.data))
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
                  .hasOnly(['attendeeCount', 'tierGoingCounts', 'viewCount']));
+      // Co-owners may edit the event, but NEVER the creator-only fields:
+      // ownership (organizerId + the host name/photo snapshot), the co-owner
+      // list itself, or the coin-paid boost (isFeatured / featuredUntil).
+      // Mirrors kEventCreatorOnlyFields in the Event entity.
+      allow update: if isCoOrganizer()
+        && !request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
+                       'coOrganizerIds', 'isFeatured', 'featuredUntil']);
 
       match /attendees/{uid} {
         function parentEvent() {
           return get(/databases/$(database)/documents/events/$(eventId)).data;
         }
+        // Creator OR co-owner: runs the door (check-in) and sees the roster.
         function parentOrganizer() {
-          return parentEvent().organizerId == request.auth.uid;
+          return parentEvent().organizerId == request.auth.uid
+            || request.auth.uid in parentEvent().get('coOrganizerIds', []);
         }
         // Who may see the roster, decided by the organiser on the event.
         // Enforced HERE and not only in the UI: hiding a guest list that the
@@ -1460,9 +1487,10 @@ service cloud.firestore {
         }
         allow read: if canSeeRoster();
         // A user manages only their OWN attendee doc — RSVP status, privacy
-        // flags and guestCount (QR ticket "bring guests"). The organizer may
-        // manage ANY attendee doc, which is what powers QR check-in: flipping
-        // checkedIn / checkedInAt for the attendee they just scanned.
+        // flags and guestCount (QR ticket "bring guests"). The organizer (and
+        // any co-owner) may manage ANY attendee doc, which is what powers QR
+        // check-in: flipping checkedIn / checkedInAt for the attendee they
+        // just scanned.
         allow write: if isSignedIn()
           && (request.auth.uid == uid || parentOrganizer());
         // Waitlist auto-promotion: when a "going" attendee cancels, the
@@ -1489,22 +1517,26 @@ service cloud.firestore {
       }
 
       match /messages/{messageId} {
+        // Creator OR co-owner.
+        function parentOrganizer() {
+          return get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid
+            || request.auth.uid in get(/databases/$(database)/documents/events/$(eventId)).data.get('coOrganizerIds', []);
+        }
         function members() {
           return isSignedIn() && (
             exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid)) ||
-            get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid
+            parentOrganizer()
           );
         }
-        function parentOrganizer() {
-          return get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid;
-        }
         allow read: if members();
-        // Normal messages by any member (sender == self); broadcasts by organizer only.
+        // Normal messages by any member (sender == self); broadcasts by the
+        // organizer / co-owners only.
         allow create: if members()
           && request.resource.data.senderId == request.auth.uid
           && (request.resource.data.isBroadcast != true || parentOrganizer());
-        // Sender edits/deletes their own; the organizer may delete any message
-        // (needed to cascade-delete an event that has attendee chat).
+        // Sender edits/deletes their own; the organizer (or a co-owner) may
+        // delete any message (needed to cascade-delete an event that has
+        // attendee chat, and for chat moderation).
         allow update, delete: if isSignedIn()
           && (resource.data.senderId == request.auth.uid || parentOrganizer());
       }

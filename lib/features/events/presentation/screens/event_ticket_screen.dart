@@ -45,6 +45,122 @@ class EventTicketPayload {
   }
 }
 
+/// Per-user list of QR tickets the user removed from "My tickets".
+///
+/// Removing a PAST ticket must not delete the attendee doc — that doc is the
+/// organizer's attendance / check-in record. Instead we remember the event id
+/// in ONE private doc per user (single cheap read when the QR hub loads, atomic
+/// arrayUnion to add). Lives under `users/{uid}/…`, which the owner may
+/// read/write (users/{userId}/{userSub=**} rule) — no rules change needed.
+///
+/// Doc shape: `users/{uid}/ticket_prefs/hidden = { eventIds: [id, ...] }`
+class HiddenTicketsStore {
+  HiddenTicketsStore({FirebaseFirestore? firestore})
+      : _firestore = firestore ?? FirebaseFirestore.instance;
+
+  final FirebaseFirestore _firestore;
+
+  DocumentReference<Map<String, dynamic>> _doc(String userId) => _firestore
+      .collection('users')
+      .doc(userId)
+      .collection('ticket_prefs')
+      .doc('hidden');
+
+  /// Event ids the user hid from their ticket list (empty when unset).
+  Future<Set<String>> getAll(String userId) async {
+    final raw = (await _doc(userId).get()).data()?['eventIds'];
+    if (raw is! List) return <String>{};
+    return raw.whereType<String>().toSet();
+  }
+
+  /// Hide [eventId]'s ticket from the user's list (idempotent).
+  Future<void> hide(String userId, String eventId) => _doc(userId).set({
+        'eventIds': FieldValue.arrayUnion([eventId]),
+        'updatedAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+}
+
+/// "Delete ticket" — shared by the QR hub list and [EventTicketScreen].
+///
+///  - **Upcoming / ongoing event I'm going to** → cancels my RSVP via
+///    [EventsRemoteDataSource.cancelRsvpWithPromotion] (keeps the denormalized
+///    counters right and auto-promotes the next waitlisted attendee).
+///  - **Past event** (or an event I only organize) → removes the ticket from MY
+///    list only ([HiddenTicketsStore]); the attendance record is kept.
+///
+/// Asks for confirmation first. Returns true when the ticket was removed; on
+/// failure shows an error snackbar and returns false.
+class EventTicketRemoval {
+  const EventTicketRemoval._();
+
+  static Future<bool> confirmAndRemove(
+    BuildContext context, {
+    required Event event,
+    required String userId,
+  }) async {
+    final l10n = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    final isPast = event.endDate.isBefore(DateTime.now());
+    final isGoing = event.attendees
+        .any((a) => a.userId == userId && a.status == RSVPStatus.going);
+    final cancelsRsvp = !isPast && isGoing;
+
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.eventTicketDelete,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(
+            cancelsRsvp
+                ? '${event.title}\n'
+                    '${DateFormat('EEE, MMM d • h:mm a').format(event.startDate)}'
+                    '\n\n${l10n.qrHubCancelRsvpConfirm}'
+                : l10n.qrHubHideTicketConfirm,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(l10n.cancel,
+                style: const TextStyle(color: AppColors.textSecondary)),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(l10n.delete,
+                style: const TextStyle(
+                    color: AppColors.errorRed, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true) return false;
+
+    try {
+      if (cancelsRsvp) {
+        await di
+            .sl<EventsRemoteDataSource>()
+            .cancelRsvpWithPromotion(event.id, userId);
+      }
+      // Past tickets are hidden (record kept). An organizer's own event is
+      // listed because they organize it, so hide it too or it would reappear.
+      if (!cancelsRsvp || event.organizerId == userId) {
+        await HiddenTicketsStore().hide(userId, event.id);
+      }
+    } catch (e) {
+      debugPrint('Delete ticket failed (${event.id}): $e');
+      messenger.showSnackBar(SnackBar(
+        content: Text(
+            cancelsRsvp ? l10n.eventsRsvpError : l10n.somethingWentWrong),
+      ));
+      return false;
+    }
+    messenger.showSnackBar(SnackBar(
+        content: Text(
+            cancelsRsvp ? l10n.eventsRsvpCancelled : l10n.qrHubTicketRemoved)));
+    return true;
+  }
+}
+
 /// Attendee's QR "ticket" for an event they are going to.
 ///
 /// Renders a premium, self-contained ticket: the event image, name, when/where
@@ -63,8 +179,9 @@ class EventTicketScreen extends StatefulWidget {
   final Event event;
   final String userId;
 
-  static Route<void> route({required Event event, required String userId}) {
-    return MaterialPageRoute(
+  /// Pops with `true` when the user deleted the ticket (so lists can refresh).
+  static Route<bool> route({required Event event, required String userId}) {
+    return MaterialPageRoute<bool>(
       builder: (_) => EventTicketScreen(event: event, userId: userId),
     );
   }
@@ -108,45 +225,15 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
     }
   }
 
-  /// Permanently delete this ticket (the user's own attendee doc). Only offered
-  /// once the event ended 24h+ ago (gated in the AppBar).
-  Future<void> _confirmDeleteTicket(
-      BuildContext context, AppLocalizations l10n) async {
+  /// Delete this ticket (cancel RSVP if upcoming, hide if past) and close.
+  Future<void> _confirmDeleteTicket(BuildContext context) async {
     final navigator = Navigator.of(context);
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.eventTicketDelete,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Text(l10n.eventTicketDeleteConfirm,
-            style: const TextStyle(color: AppColors.textSecondary)),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(false),
-            child: Text(l10n.cancel,
-                style: const TextStyle(color: AppColors.textSecondary)),
-          ),
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(true),
-            child: Text(l10n.delete,
-                style: const TextStyle(
-                    color: AppColors.errorRed, fontWeight: FontWeight.bold)),
-          ),
-        ],
-      ),
+    final removed = await EventTicketRemoval.confirmAndRemove(
+      context,
+      event: widget.event,
+      userId: widget.userId,
     );
-    if (confirmed != true) return;
-    try {
-      // The attendees rule lets a user delete their OWN attendee doc.
-      await FirebaseFirestore.instance
-          .collection('events')
-          .doc(widget.event.id)
-          .collection('attendees')
-          .doc(widget.userId)
-          .delete();
-      if (navigator.mounted) navigator.pop();
-    } catch (_) {/* best-effort */}
+    if (removed && navigator.mounted) navigator.pop(true);
   }
 
   /// Best available "where" line: street address, else city/country, else the
@@ -185,15 +272,13 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
         foregroundColor: AppColors.textPrimary,
         title: Text(l10n.eventMyTicket),
         actions: [
-          // Delete the ticket permanently — ONLY once the event ended at least
-          // 24h ago (so an active/upcoming ticket can't be accidentally lost).
-          if (DateTime.now()
-              .isAfter(event.endDate.add(const Duration(hours: 24))))
-            IconButton(
-              tooltip: l10n.eventTicketDelete,
-              icon: const Icon(Icons.delete_outline),
-              onPressed: () => _confirmDeleteTicket(context, l10n),
-            ),
+          // Delete the ticket (confirmed): upcoming = cancel my RSVP, past =
+          // remove from my list only. See [EventTicketRemoval].
+          IconButton(
+            tooltip: l10n.eventTicketDelete,
+            icon: const Icon(Icons.delete_outline),
+            onPressed: () => _confirmDeleteTicket(context),
+          ),
         ],
       ),
       body: SafeArea(

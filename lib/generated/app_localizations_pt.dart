@@ -14141,6 +14141,76 @@ class AppLocalizationsPt extends AppLocalizations {
   String shopMembershipExpiredOn(String tier, String date) {
     return 'A tua subscrição $tier expirou a $date';
   }
+
+  @override
+  String get eventsLocationHelper =>
+      'Escreve um local ou morada, ou escolhe-o no mapa';
+
+  @override
+  String get eventsPickOnMap => 'Escolher no mapa';
+
+  @override
+  String get eventsLocationNotOnMap =>
+      'Guardado com o local que escreveste. Não conseguimos colocá-lo no mapa, por isso não aparecerá nas pesquisas por proximidade.';
+
+  @override
+  String get eventsCoOwners => 'Coorganizadores';
+
+  @override
+  String get eventsCoOwnersHelper =>
+      'Os coorganizadores podem editar o evento, abrir a lista de presenças, fazer o check-in dos convidados e ver a lista completa de participantes. Só tu podes eliminar o evento ou alterar os coorganizadores.';
+
+  @override
+  String get eventsCoOwnersCreatorOnly =>
+      'Só quem criou o evento pode alterar os coorganizadores.';
+
+  @override
+  String get eventsAddCoOwner => 'Adicionar coorganizador';
+
+  @override
+  String eventsCoOwnerLimit(int max) {
+    return 'Podes adicionar até $max coorganizadores';
+  }
+
+  @override
+  String get eventsCoOwnerSearchHint => 'Pesquisar por alcunha';
+
+  @override
+  String get eventsCoOwnerSearch => 'Pesquisar';
+
+  @override
+  String get eventsCoOwnerRecentChats => 'Conversas recentes';
+
+  @override
+  String get eventsCoOwnerNoRecentChats => 'Ainda sem conversas recentes';
+
+  @override
+  String get eventsCoOwnerNotFound => 'Ninguém encontrado com essa alcunha';
+
+  @override
+  String get eventsCoOwnerSearchFailed => 'A pesquisa falhou. Tenta novamente.';
+
+  @override
+  String get eventsCoOwnerRemove => 'Remover coorganizador';
+
+  @override
+  String eventsOrganizedWith(String names) {
+    return 'com $names';
+  }
+
+  @override
+  String get eventsCoOwnerBadge => 'Coorganizador';
+
+  @override
+  String get qrHubCancelRsvpConfirm =>
+      'Eliminar este bilhete? Isto cancela a tua presença e liberta o teu lugar para outra pessoa.';
+
+  @override
+  String get qrHubHideTicketConfirm =>
+      'Remover este bilhete da tua lista? O teu registo de presença é mantido.';
+
+  @override
+  String get qrHubTicketRemoved => 'Bilhete removido';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28284,4 +28354,74 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String shopMembershipExpiredOn(String tier, String date) {
     return 'Sua assinatura $tier expirou em $date';
   }
+
+  @override
+  String get eventsLocationHelper =>
+      'Digite um local ou endereço, ou escolha no mapa';
+
+  @override
+  String get eventsPickOnMap => 'Escolher no mapa';
+
+  @override
+  String get eventsLocationNotOnMap =>
+      'Salvo com o local que você digitou. Não conseguimos colocá-lo no mapa, então ele não aparecerá nas buscas por proximidade.';
+
+  @override
+  String get eventsCoOwners => 'Coorganizadores';
+
+  @override
+  String get eventsCoOwnersHelper =>
+      'Coorganizadores podem editar o evento, abrir a lista de presença, fazer o check-in dos convidados e ver a lista completa de participantes. Só você pode excluir o evento ou alterar os coorganizadores.';
+
+  @override
+  String get eventsCoOwnersCreatorOnly =>
+      'Só quem criou o evento pode alterar os coorganizadores.';
+
+  @override
+  String get eventsAddCoOwner => 'Adicionar coorganizador';
+
+  @override
+  String eventsCoOwnerLimit(int max) {
+    return 'Você pode adicionar até $max coorganizadores';
+  }
+
+  @override
+  String get eventsCoOwnerSearchHint => 'Buscar por apelido';
+
+  @override
+  String get eventsCoOwnerSearch => 'Buscar';
+
+  @override
+  String get eventsCoOwnerRecentChats => 'Conversas recentes';
+
+  @override
+  String get eventsCoOwnerNoRecentChats => 'Nenhuma conversa recente ainda';
+
+  @override
+  String get eventsCoOwnerNotFound => 'Ninguém encontrado com esse apelido';
+
+  @override
+  String get eventsCoOwnerSearchFailed => 'A busca falhou. Tente novamente.';
+
+  @override
+  String get eventsCoOwnerRemove => 'Remover coorganizador';
+
+  @override
+  String eventsOrganizedWith(String names) {
+    return 'com $names';
+  }
+
+  @override
+  String get eventsCoOwnerBadge => 'Coorganizador';
+
+  @override
+  String get qrHubCancelRsvpConfirm =>
+      'Excluir este ingresso? Isso cancela sua presença e libera sua vaga para outra pessoa.';
+
+  @override
+  String get qrHubHideTicketConfirm =>
+      'Remover este ingresso da sua lista? Seu registro de presença é mantido.';
+
+  @override
+  String get qrHubTicketRemoved => 'Ingresso removido';
 }

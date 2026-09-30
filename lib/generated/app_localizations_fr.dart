@@ -14227,4 +14227,74 @@ class AppLocalizationsFr extends AppLocalizations {
   String shopMembershipExpiredOn(String tier, String date) {
     return 'Ton abonnement $tier a expiré le $date';
   }
+
+  @override
+  String get eventsLocationHelper =>
+      'Saisis un lieu ou une adresse, ou choisis-le sur la carte';
+
+  @override
+  String get eventsPickOnMap => 'Choisir sur la carte';
+
+  @override
+  String get eventsLocationNotOnMap =>
+      'Enregistré avec le lieu saisi. Nous n\'avons pas pu le placer sur la carte : il n\'apparaîtra pas dans les recherches à proximité.';
+
+  @override
+  String get eventsCoOwners => 'Co-organisateurs';
+
+  @override
+  String get eventsCoOwnersHelper =>
+      'Les co-organisateurs peuvent modifier l\'événement, ouvrir la liste de présence, enregistrer les invités et voir la liste complète des participants. Toi seul peux supprimer l\'événement ou modifier les co-organisateurs.';
+
+  @override
+  String get eventsCoOwnersCreatorOnly =>
+      'Seul le créateur de l\'événement peut modifier les co-organisateurs.';
+
+  @override
+  String get eventsAddCoOwner => 'Ajouter un co-organisateur';
+
+  @override
+  String eventsCoOwnerLimit(int max) {
+    return 'Tu peux ajouter jusqu\'à $max co-organisateurs';
+  }
+
+  @override
+  String get eventsCoOwnerSearchHint => 'Rechercher par pseudo';
+
+  @override
+  String get eventsCoOwnerSearch => 'Rechercher';
+
+  @override
+  String get eventsCoOwnerRecentChats => 'Discussions récentes';
+
+  @override
+  String get eventsCoOwnerNoRecentChats => 'Aucune discussion récente';
+
+  @override
+  String get eventsCoOwnerNotFound => 'Personne trouvé avec ce pseudo';
+
+  @override
+  String get eventsCoOwnerSearchFailed => 'La recherche a échoué. Réessaie.';
+
+  @override
+  String get eventsCoOwnerRemove => 'Retirer le co-organisateur';
+
+  @override
+  String eventsOrganizedWith(String names) {
+    return 'avec $names';
+  }
+
+  @override
+  String get eventsCoOwnerBadge => 'Co-organisateur';
+
+  @override
+  String get qrHubCancelRsvpConfirm =>
+      'Supprimer ce billet ? Ta participation sera annulée et ta place libérée pour quelqu\'un d\'autre.';
+
+  @override
+  String get qrHubHideTicketConfirm =>
+      'Retirer ce billet de ta liste ? Ton historique de présence est conservé.';
+
+  @override
+  String get qrHubTicketRemoved => 'Billet retiré';
 }

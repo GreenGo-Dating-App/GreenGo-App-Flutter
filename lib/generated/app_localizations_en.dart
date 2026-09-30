@@ -14004,4 +14004,74 @@ class AppLocalizationsEn extends AppLocalizations {
   String shopMembershipExpiredOn(String tier, String date) {
     return 'Your $tier membership expired on $date';
   }
+
+  @override
+  String get eventsLocationHelper =>
+      'Type a venue or address, or pick it on the map';
+
+  @override
+  String get eventsPickOnMap => 'Pick on map';
+
+  @override
+  String get eventsLocationNotOnMap =>
+      'Saved with the location you typed. We couldn\'t place it on the map, so it won\'t show in nearby searches.';
+
+  @override
+  String get eventsCoOwners => 'Co-owners';
+
+  @override
+  String get eventsCoOwnersHelper =>
+      'Co-owners can edit the event, open the attendance list, check guests in and see the full guest list. Only you can delete the event or change co-owners.';
+
+  @override
+  String get eventsCoOwnersCreatorOnly =>
+      'Only the event creator can change co-owners.';
+
+  @override
+  String get eventsAddCoOwner => 'Add co-owner';
+
+  @override
+  String eventsCoOwnerLimit(int max) {
+    return 'You can add up to $max co-owners';
+  }
+
+  @override
+  String get eventsCoOwnerSearchHint => 'Search by nickname';
+
+  @override
+  String get eventsCoOwnerSearch => 'Search';
+
+  @override
+  String get eventsCoOwnerRecentChats => 'Recent chats';
+
+  @override
+  String get eventsCoOwnerNoRecentChats => 'No recent chats yet';
+
+  @override
+  String get eventsCoOwnerNotFound => 'No one found with that nickname';
+
+  @override
+  String get eventsCoOwnerSearchFailed => 'Search failed. Please try again.';
+
+  @override
+  String get eventsCoOwnerRemove => 'Remove co-owner';
+
+  @override
+  String eventsOrganizedWith(String names) {
+    return 'with $names';
+  }
+
+  @override
+  String get eventsCoOwnerBadge => 'Co-owner';
+
+  @override
+  String get qrHubCancelRsvpConfirm =>
+      'Delete this ticket? This cancels your RSVP and frees your spot for someone else.';
+
+  @override
+  String get qrHubHideTicketConfirm =>
+      'Remove this ticket from your list? Your attendance record is kept.';
+
+  @override
+  String get qrHubTicketRemoved => 'Ticket removed';
 }

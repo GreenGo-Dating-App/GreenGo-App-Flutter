@@ -14185,4 +14185,75 @@ class AppLocalizationsDe extends AppLocalizations {
   String shopMembershipExpiredOn(String tier, String date) {
     return 'Deine $tier-Mitgliedschaft ist am $date abgelaufen';
   }
+
+  @override
+  String get eventsLocationHelper =>
+      'Gib einen Ort oder eine Adresse ein oder wähle ihn auf der Karte';
+
+  @override
+  String get eventsPickOnMap => 'Auf der Karte wählen';
+
+  @override
+  String get eventsLocationNotOnMap =>
+      'Mit dem eingegebenen Ort gespeichert. Wir konnten ihn nicht auf der Karte finden, daher erscheint er nicht in der Umkreissuche.';
+
+  @override
+  String get eventsCoOwners => 'Mitveranstalter';
+
+  @override
+  String get eventsCoOwnersHelper =>
+      'Mitveranstalter können das Event bearbeiten, die Anwesenheitsliste öffnen, Gäste einchecken und die vollständige Gästeliste sehen. Nur du kannst das Event löschen oder Mitveranstalter ändern.';
+
+  @override
+  String get eventsCoOwnersCreatorOnly =>
+      'Nur der Ersteller des Events kann Mitveranstalter ändern.';
+
+  @override
+  String get eventsAddCoOwner => 'Mitveranstalter hinzufügen';
+
+  @override
+  String eventsCoOwnerLimit(int max) {
+    return 'Du kannst bis zu $max Mitveranstalter hinzufügen';
+  }
+
+  @override
+  String get eventsCoOwnerSearchHint => 'Nach Nickname suchen';
+
+  @override
+  String get eventsCoOwnerSearch => 'Suchen';
+
+  @override
+  String get eventsCoOwnerRecentChats => 'Letzte Chats';
+
+  @override
+  String get eventsCoOwnerNoRecentChats => 'Noch keine letzten Chats';
+
+  @override
+  String get eventsCoOwnerNotFound => 'Niemand mit diesem Nickname gefunden';
+
+  @override
+  String get eventsCoOwnerSearchFailed =>
+      'Suche fehlgeschlagen. Bitte versuche es erneut.';
+
+  @override
+  String get eventsCoOwnerRemove => 'Mitveranstalter entfernen';
+
+  @override
+  String eventsOrganizedWith(String names) {
+    return 'mit $names';
+  }
+
+  @override
+  String get eventsCoOwnerBadge => 'Mitveranstalter';
+
+  @override
+  String get qrHubCancelRsvpConfirm =>
+      'Dieses Ticket löschen? Damit wird deine Zusage storniert und dein Platz für jemand anderen frei.';
+
+  @override
+  String get qrHubHideTicketConfirm =>
+      'Dieses Ticket aus deiner Liste entfernen? Dein Teilnahmenachweis bleibt erhalten.';
+
+  @override
+  String get qrHubTicketRemoved => 'Ticket entfernt';
 }
