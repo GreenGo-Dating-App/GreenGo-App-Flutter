@@ -14349,4 +14349,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String usageWithTier(String tier) {
     return 'Mit $tier';
   }
+
+  @override
+  String get attrApplyFilter => 'Filter anwenden';
 }

@@ -4769,5 +4769,6 @@
   "usageStatusExpired": "Abgelaufen",
   "usageCoinsAvailable": "Verfügbare Münzen",
   "usageNotAvailable": "Nicht verfügbar",
-  "usageWithTier": "Mit {tier}"
+  "usageWithTier": "Mit {tier}",
+  "attrApplyFilter": "Filter anwenden"
 }

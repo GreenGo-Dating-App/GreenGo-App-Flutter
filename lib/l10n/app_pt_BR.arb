@@ -4769,5 +4769,6 @@
   "usageStatusExpired": "Expirada",
   "usageCoinsAvailable": "Moedas disponíveis",
   "usageNotAvailable": "Indisponível",
-  "usageWithTier": "Com {tier}"
+  "usageWithTier": "Com {tier}",
+  "attrApplyFilter": "Aplicar filtro"
 }

@@ -14165,4 +14165,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String usageWithTier(String tier) {
     return 'With $tier';
   }
+
+  @override
+  String get attrApplyFilter => 'Apply filter';
 }
