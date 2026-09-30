@@ -124,6 +124,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// How many cards the "Featured attractions" carousel shows.
   static const int kFeaturedAttractionCount = 20;
 
+  /// Featured attractions show only the best: GreenGo Score strictly above this.
+  static const int kFeaturedAttractionMinScore = 80;
+
   /// How many of the user's registered events "Happening soon" shows.
   static const int kHappeningSoonCount = 20;
 
@@ -1073,7 +1076,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
           (candidates.any((c) => c.iso2 == origin) ? origin : null);
       if (iso != null) {
         final all = (await ds.forCountry(iso))
-            .where((a) => a.imgHash.isNotEmpty && a.imgBase.isNotEmpty)
+            .where((a) =>
+                a.imgHash.isNotEmpty &&
+                a.imgBase.isNotEmpty &&
+                a.greengoScore > kFeaturedAttractionMinScore)
             .toList();
         if (lat != null && lng != null) {
           double dist(Attraction a) => (a.lat == null || a.lng == null)

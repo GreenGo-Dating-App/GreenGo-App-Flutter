@@ -73,19 +73,26 @@ class AttractionsFilterSheet extends StatefulWidget {
     required List<Attraction> currentPool,
     required Future<List<Attraction>> Function(String iso) loadCountry,
   }) {
-    return showModalBottomSheet<AttractionFilterSelection>(
+    // A centered dialog (not a bottom sheet), capped in width for tablets
+    // and the web.
+    return showDialog<AttractionFilterSelection>(
       context: context,
-      isScrollControlled: true,
-      backgroundColor: AppColors.backgroundCard,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (_) => AttractionsFilterSheet(
-        initial: initial,
-        defaults: defaults,
-        countries: countries,
-        currentPool: currentPool,
-        loadCountry: loadCountry,
+      builder: (_) => Dialog(
+        backgroundColor: AppColors.backgroundCard,
+        insetPadding:
+            const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 520),
+          child: AttractionsFilterSheet(
+            initial: initial,
+            defaults: defaults,
+            countries: countries,
+            currentPool: currentPool,
+            loadCountry: loadCountry,
+          ),
+        ),
       ),
     );
   }
