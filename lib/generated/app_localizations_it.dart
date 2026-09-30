@@ -13417,6 +13417,18 @@ class AppLocalizationsIt extends AppLocalizations {
   String get attrAllCategories => 'Tutte';
 
   @override
+  String get attrFilterCategory => 'Categoria';
+
+  @override
+  String get attrFilterCountry => 'Paese';
+
+  @override
+  String get attrFilterCity => 'Città';
+
+  @override
+  String get attrAllCities => 'Tutte le città';
+
+  @override
   String get attrSortDistance => 'Più vicine';
 
   @override

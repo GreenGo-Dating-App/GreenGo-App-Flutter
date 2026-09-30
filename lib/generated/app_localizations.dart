@@ -23616,6 +23616,30 @@ abstract class AppLocalizations {
   /// **'All'**
   String get attrAllCategories;
 
+  /// No description provided for @attrFilterCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get attrFilterCategory;
+
+  /// No description provided for @attrFilterCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get attrFilterCountry;
+
+  /// No description provided for @attrFilterCity.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get attrFilterCity;
+
+  /// No description provided for @attrAllCities.
+  ///
+  /// In en, this message translates to:
+  /// **'All cities'**
+  String get attrAllCities;
+
   /// No description provided for @attrSortDistance.
   ///
   /// In en, this message translates to:

@@ -28,6 +28,7 @@ import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
+import '../../../attractions/presentation/widgets/attractions_filter_sheet.dart';
 import '../../../attractions/presentation/widgets/attractions_tab.dart';
 import 'event_attendees_screen.dart';
 import '../widgets/experiences_tab.dart';
@@ -113,6 +114,10 @@ class _EventsScreenState extends State<EventsScreen>
   String _extSort = 'distance';
   // Sort for the curated Attractions tab (own keys: distance|score|rating|price|name).
   String _attrSort = 'distance'; // distance | score | rating | price | name
+  // Bridge to the Attractions tab's filter sheet (score / category /
+  // country -> city); the icon lives in the search bar, the data in the tab.
+  final AttractionsFilterController _attrFilters =
+      AttractionsFilterController();
   // Live Events (ticketmaster) has its own order: DISTANCE (nearest) first by
   // default; the user can switch to Date.
   String _liveSort = 'distance'; // date | distance
@@ -312,6 +317,7 @@ class _EventsScreenState extends State<EventsScreen>
   @override
   void dispose() {
     _tabController.dispose();
+    _attrFilters.dispose();
     _eventsBloc.close();
     super.dispose();
   }
@@ -456,8 +462,8 @@ class _EventsScreenState extends State<EventsScreen>
               children: [
                 // Search by country/city/name + popularity sort
                 _buildSearchAndSortBar(),
-                // Category filter — native tabs use GreenGo categories; the
-                // Attractions tab uses the Geoapify place categories.
+                // Category filter — native tabs use GreenGo categories;
+                // Attractions filters live in the search-bar sheet.
                 if (_isNativeTab) _buildCategoryFilter(_lastLoaded),
                 if (_isExperiencesTab) _buildExperienceCategoryFilter(),
                 // Events List
@@ -630,6 +636,9 @@ class _EventsScreenState extends State<EventsScreen>
                     AppLocalizations.of(ctx)!.eventsSortDate, Icons.event),
               ],
             ),
+          // Attractions filters (score / category / country -> city), next to
+          // the sort menu; gold dot while any filter is non-default.
+          if (_tabController.index == 2) _buildAttractionFiltersButton(),
           const SizedBox(width: 4),
           // List / grid view toggle
           IconButton(
@@ -643,6 +652,23 @@ class _EventsScreenState extends State<EventsScreen>
             onPressed: () => setState(() => _gridView = !_gridView),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildAttractionFiltersButton() {
+    return ListenableBuilder(
+      listenable: _attrFilters,
+      builder: (context, _) => IconButton(
+        tooltip: AppLocalizations.of(context)!.filters,
+        onPressed: _attrFilters.open,
+        icon: Badge(
+          isLabelVisible: _attrFilters.active,
+          smallSize: 8,
+          backgroundColor: AppColors.richGold,
+          alignment: AlignmentDirectional.topEnd,
+          child: const Icon(Icons.tune, color: AppColors.richGold),
+        ),
       ),
     );
   }
@@ -1175,9 +1201,9 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  /// Curated attractions (GreenGo dataset) — country-scoped to the user's
-  /// primaryOrigin, with a second chip for the country they're travelling in.
-  /// Owns its own country/category/sort controls, so it does not use _extSort.
+  /// Curated attractions (GreenGo dataset) — country-scoped to where the user
+  /// is (primaryOrigin as fallback). Sort and filters (score / category /
+  /// country -> city) live in the search bar; it does not use _extSort.
   Widget _buildCuratedAttractionsTab() {
     return AttractionsTab(
       key: const ValueKey('curatedAttractions'),
@@ -1187,6 +1213,7 @@ class _EventsScreenState extends State<EventsScreen>
       userLat: _userLat,
       userLng: _userLng,
       sort: _attrSort,
+      filters: _attrFilters,
     );
   }
 
