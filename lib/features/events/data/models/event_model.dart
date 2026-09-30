@@ -16,6 +16,7 @@ class EventModel extends Event {
     super.imageUrl,
     super.photoUrls = const [],
     super.allowedScannerIds = const [],
+    super.coOrganizerIds = const [],
     super.latitude,
     super.longitude,
     super.address,
@@ -62,6 +63,7 @@ class EventModel extends Event {
       imageUrl: event.imageUrl,
       photoUrls: event.photoUrls,
       allowedScannerIds: event.allowedScannerIds,
+      coOrganizerIds: event.coOrganizerIds,
       startDate: event.startDate,
       endDate: event.endDate,
       locationName: event.locationName,
@@ -122,6 +124,8 @@ class EventModel extends Event {
       photoUrls: List<String>.from(json['photoUrls'] as List? ?? []),
       allowedScannerIds:
           List<String>.from(json['allowedScannerIds'] as List? ?? []),
+      coOrganizerIds: _parseCoOrganizerIds(
+          json['coOrganizerIds'], json['organizerId'] as String? ?? ''),
       startDate: _parseDateTime(json['startDate']),
       endDate: _parseDateTime(json['endDate']),
       locationName: json['locationName'] as String? ?? '',
@@ -192,6 +196,9 @@ class EventModel extends Event {
       'imageUrl': imageUrl,
       'photoUrls': photoUrls,
       'allowedScannerIds': allowedScannerIds,
+      // Co-owners (max kMaxEventCoOrganizers). Only the creator may change
+      // this list — enforced by the `events` Firestore rule.
+      'coOrganizerIds': coOrganizerIds,
       'startDate': Timestamp.fromDate(startDate),
       'endDate': Timestamp.fromDate(endDate),
       'locationName': locationName,
@@ -263,6 +270,20 @@ class EventModel extends Event {
       add(t);
     }
     return tokens.toList();
+  }
+
+  /// Parse co-owner ids: strings only, de-duplicated, never the creator,
+  /// capped at [kMaxEventCoOrganizers].
+  static List<String> _parseCoOrganizerIds(dynamic value, String organizerId) {
+    if (value is! List) return const [];
+    final out = <String>[];
+    for (final v in value) {
+      if (v is String && v.isNotEmpty && v != organizerId && !out.contains(v)) {
+        out.add(v);
+        if (out.length >= kMaxEventCoOrganizers) break;
+      }
+    }
+    return out;
   }
 
   /// Parse DateTime from Firestore Timestamp or other formats

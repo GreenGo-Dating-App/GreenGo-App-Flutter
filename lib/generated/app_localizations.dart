@@ -24929,6 +24929,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your {tier} membership expired on {date}'**
   String shopMembershipExpiredOn(String tier, String date);
+
+  /// No description provided for @eventsLocationHelper.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a venue or address, or pick it on the map'**
+  String get eventsLocationHelper;
+
+  /// No description provided for @eventsPickOnMap.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick on map'**
+  String get eventsPickOnMap;
+
+  /// No description provided for @eventsLocationNotOnMap.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved with the location you typed. We couldn\'t place it on the map, so it won\'t show in nearby searches.'**
+  String get eventsLocationNotOnMap;
+
+  /// No description provided for @eventsCoOwners.
+  ///
+  /// In en, this message translates to:
+  /// **'Co-owners'**
+  String get eventsCoOwners;
+
+  /// No description provided for @eventsCoOwnersHelper.
+  ///
+  /// In en, this message translates to:
+  /// **'Co-owners can edit the event, open the attendance list, check guests in and see the full guest list. Only you can delete the event or change co-owners.'**
+  String get eventsCoOwnersHelper;
+
+  /// No description provided for @eventsCoOwnersCreatorOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Only the event creator can change co-owners.'**
+  String get eventsCoOwnersCreatorOnly;
+
+  /// No description provided for @eventsAddCoOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'Add co-owner'**
+  String get eventsAddCoOwner;
+
+  /// No description provided for @eventsCoOwnerLimit.
+  ///
+  /// In en, this message translates to:
+  /// **'You can add up to {max} co-owners'**
+  String eventsCoOwnerLimit(int max);
+
+  /// No description provided for @eventsCoOwnerSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by nickname'**
+  String get eventsCoOwnerSearchHint;
+
+  /// No description provided for @eventsCoOwnerSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get eventsCoOwnerSearch;
+
+  /// No description provided for @eventsCoOwnerRecentChats.
+  ///
+  /// In en, this message translates to:
+  /// **'Recent chats'**
+  String get eventsCoOwnerRecentChats;
+
+  /// No description provided for @eventsCoOwnerNoRecentChats.
+  ///
+  /// In en, this message translates to:
+  /// **'No recent chats yet'**
+  String get eventsCoOwnerNoRecentChats;
+
+  /// No description provided for @eventsCoOwnerNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No one found with that nickname'**
+  String get eventsCoOwnerNotFound;
+
+  /// No description provided for @eventsCoOwnerSearchFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Search failed. Please try again.'**
+  String get eventsCoOwnerSearchFailed;
+
+  /// No description provided for @eventsCoOwnerRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove co-owner'**
+  String get eventsCoOwnerRemove;
+
+  /// No description provided for @eventsOrganizedWith.
+  ///
+  /// In en, this message translates to:
+  /// **'with {names}'**
+  String eventsOrganizedWith(String names);
+
+  /// No description provided for @eventsCoOwnerBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Co-owner'**
+  String get eventsCoOwnerBadge;
+
+  /// No description provided for @qrHubCancelRsvpConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this ticket? This cancels your RSVP and frees your spot for someone else.'**
+  String get qrHubCancelRsvpConfirm;
+
+  /// No description provided for @qrHubHideTicketConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove this ticket from your list? Your attendance record is kept.'**
+  String get qrHubHideTicketConfirm;
+
+  /// No description provided for @qrHubTicketRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket removed'**
+  String get qrHubTicketRemoved;
 }
 
 class _AppLocalizationsDelegate

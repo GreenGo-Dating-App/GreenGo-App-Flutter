@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
@@ -86,6 +87,7 @@ class _MyTicketsTab extends StatefulWidget {
 class _MyTicketsTabState extends State<_MyTicketsTab> {
   // null == loading; empty == loaded, no joined/organized events.
   List<Event>? _events;
+  final HiddenTicketsStore _hiddenStore = HiddenTicketsStore();
 
   @override
   void initState() {
@@ -102,7 +104,18 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
       // featured state. Show a scannable ticket for ALL of them — never filter
       // by publish/live state. We only reorder by time so the tickets the user
       // actually needs at the door surface first.
-      final all = await ds.getUserEvents(widget.currentUserId);
+      // Tickets the user deleted from a PAST event are hidden per-user (the
+      // attendee record is kept) — one small doc read, fetched in parallel.
+      final results = await Future.wait<Object>([
+        ds.getUserEvents(widget.currentUserId),
+        _hiddenStore.getAll(widget.currentUserId).catchError(
+              (Object _) => <String>{},
+            ),
+      ]);
+      final hidden = results[1] as Set<String>;
+      final all = (results[0] as List<Event>)
+          .where((e) => !hidden.contains(e.id))
+          .toList();
       final now = DateTime.now();
       // "Not past" = still upcoming OR currently ongoing (endDate not reached).
       // This keeps today's / in-progress events (which the future-only filter
@@ -117,6 +130,32 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
       mine = const <Event>[];
     }
     if (mounted) setState(() => _events = mine);
+  }
+
+  /// Drop a deleted ticket from the list immediately (no refetch needed).
+  void _removeLocally(Event event) {
+    final events = _events;
+    if (events == null || !mounted) return;
+    setState(() => _events = events.where((e) => e.id != event.id).toList());
+  }
+
+  /// Delete a ticket from the list: upcoming = cancel my RSVP, past = hide it
+  /// from my list (confirm dialog + error snackbar live in the shared helper).
+  Future<void> _deleteTicket(Event event) async {
+    final removed = await EventTicketRemoval.confirmAndRemove(
+      context,
+      event: event,
+      userId: widget.currentUserId,
+    );
+    if (removed) _removeLocally(event);
+  }
+
+  Future<void> _openTicket(Event event) async {
+    final removed = await Navigator.of(context).push(
+      EventTicketScreen.route(event: event, userId: widget.currentUserId),
+    );
+    // The full ticket screen has its own delete; reflect it here on return.
+    if (removed == true) _removeLocally(event);
   }
 
   @override
@@ -181,9 +220,7 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
       color: Colors.transparent,
       child: InkWell(
         borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-        onTap: () => Navigator.of(context).push(
-          EventTicketScreen.route(event: event, userId: widget.currentUserId),
-        ),
+        onTap: () => _openTicket(event),
         child: GlassContainer(
           padding: const EdgeInsets.all(14),
           child: Row(
@@ -241,6 +278,12 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
                 ),
               ),
               const Icon(Icons.qr_code_2, color: AppColors.richGold, size: 22),
+              IconButton(
+                tooltip: AppLocalizations.of(context)!.eventTicketDelete,
+                icon: const Icon(Icons.delete_outline,
+                    color: AppColors.textTertiary, size: 22),
+                onPressed: () => _deleteTicket(event),
+              ),
             ],
           ),
         ),
@@ -333,7 +376,7 @@ class _ScanTabState extends State<_ScanTab> {
     // Only the event OWNER or an invited scanner may redeem tickets. Everyone
     // else is denied — scanning is a door check-in, not a way into the event.
     final canScan =
-        event.organizerId == me || event.allowedScannerIds.contains(me);
+        event.isOwner(me) || event.allowedScannerIds.contains(me);
     if (!canScan) {
       _denied(l10n, l10n.qrScanNotAuthorized);
       return;
@@ -439,8 +482,11 @@ class _ScanTabState extends State<_ScanTab> {
           top: 12,
           child: Row(
             children: [
-              _round(Icons.flash_on, () => _controller.toggleTorch()),
-              const SizedBox(width: 8),
+              // Browsers can't drive the torch.
+              if (!kIsWeb) ...[
+                _round(Icons.flash_on, () => _controller.toggleTorch()),
+                const SizedBox(width: 8),
+              ],
               _round(Icons.cameraswitch, () => _controller.switchCamera()),
             ],
           ),

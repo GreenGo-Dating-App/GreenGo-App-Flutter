@@ -24,12 +24,25 @@ import '../widgets/community_card.dart';
 import 'community_detail_screen.dart';
 import 'create_community_screen.dart';
 
+const int _kDiscoverTab = 0;
+const int _kJoinedTab = 1;
+const int _kManagedTab = 2;
+
 /// Communities Screen
 ///
-/// Main screen for the communities feature with three tabs:
-/// My Groups, Discover, and Language Circles
+/// Main screen for the communities feature with three tabs, in this order:
+/// Discover, Joined communities, My communities (created/managed).
 class CommunitiesScreen extends StatefulWidget {
-  const CommunitiesScreen({super.key});
+  const CommunitiesScreen({super.key, this.initialTab = _kDiscoverTab});
+
+  /// Tab to open on. Defaults to Discover; callers may pass
+  /// [CommunitiesScreen.joinedTab] / [CommunitiesScreen.managedTab].
+  final int initialTab;
+
+  // Tab order (product spec): Discover, Joined, My communities.
+  static const int discoverTab = _kDiscoverTab;
+  static const int joinedTab = _kJoinedTab;
+  static const int managedTab = _kManagedTab;
 
   @override
   State<CommunitiesScreen> createState() => _CommunitiesScreenState();
@@ -62,7 +75,11 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(
+      length: 3,
+      vsync: this,
+      initialIndex: widget.initialTab.clamp(0, 2),
+    );
     _tabController.addListener(_onTabChanged);
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _discoverScrollController.addListener(_onDiscoverScroll);
@@ -80,9 +97,11 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       ];
 
   /// Replay the page guide (from the "?" app-bar button). Jumps to the Joined
-  /// tab first so the search + card steps have something to anchor to.
+  /// tab ([_kJoinedTab]) first so the search + card steps have something to anchor to.
   void _replayTour(BuildContext showcaseContext) {
-    if (_tabController.index != 0) _tabController.animateTo(0);
+    if (_tabController.index != _kJoinedTab) {
+      _tabController.animateTo(_kJoinedTab);
+    }
     // Let the Joined tab build so its showcase targets are mounted.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
@@ -136,9 +155,9 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     if (_tabController.indexIsChanging) return;
     final userId = _currentUserId;
     if (userId == null) return;
-    // Discover (1): guarantee the public list is loaded when the tab is opened
+    // Discover (0): guarantee the public list is loaded when the tab is opened
     // (it's also prefetched at init so it's usually already there).
-    if (_tabController.index == 1) {
+    if (_tabController.index == _kDiscoverTab) {
       final s = context.read<CommunitiesBloc>().state;
       final hasDiscover = s is CommunitiesLoaded && s.communities.isNotEmpty;
       if (!hasDiscover) {
@@ -146,7 +165,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
       }
     }
     // My communities (2): lazy-load the created list on first open.
-    if (_tabController.index == 2 && !_managedLoaded) {
+    if (_tabController.index == _kManagedTab && !_managedLoaded) {
       _managedLoaded = true;
       context.read<CommunitiesBloc>().add(
             LoadManagedCommunities(userId: userId),
@@ -272,8 +291,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                 fontSize: 14,
               ),
               tabs: [
-                Tab(text: AppLocalizations.of(context)!.communitiesTabJoined),
                 Tab(text: AppLocalizations.of(context)!.communitiesTabDiscover),
+                Tab(text: AppLocalizations.of(context)!.communitiesTabJoined),
                 Tab(text: AppLocalizations.of(context)!.communitiesTabManaged),
               ],
             ),
@@ -299,8 +318,8 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           return TabBarView(
             controller: _tabController,
             children: [
-              _buildMyGroupsTab(effective),
               _buildDiscoverTab(effective),
+              _buildMyGroupsTab(effective),
               _buildManagedTab(effective),
             ],
           );
@@ -349,7 +368,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
         title: AppLocalizations.of(context)!.communitiesNoCommunities,
         subtitle: AppLocalizations.of(context)!.communitiesJoinPrompt,
         actionLabel: AppLocalizations.of(context)!.communitiesDiscoverCommunities,
-        onAction: () => _tabController.animateTo(1),
+        onAction: () => _tabController.animateTo(_kDiscoverTab),
       );
     }
 

@@ -12,7 +12,9 @@ import '../../domain/entities/event.dart';
 /// "Organised by" row on the event detail screen: the organiser's CURRENT
 /// photo + name (resolved through the cached [UserDirectoryService], falling
 /// back to the name/photo snapshotted on the event), tappable to open their
-/// profile. One cached read per organiser, not per viewer render.
+/// profile, followed by "with B, C" when the event has co-owners (names
+/// resolved in the same cached batch; unresolved co-owners are omitted, never
+/// shown as ids). One cached read per person, not per viewer render.
 class EventOrganizerRow extends StatefulWidget {
   const EventOrganizerRow({
     super.key,
@@ -29,7 +31,8 @@ class EventOrganizerRow extends StatefulWidget {
 
 class _EventOrganizerRowState extends State<EventOrganizerRow> {
   late final Future<Map<String, UserBrief>> _brief =
-      UserDirectoryService.instance.resolve([widget.event.organizerId]);
+      UserDirectoryService.instance.resolve(
+          [widget.event.organizerId, ...widget.event.coOrganizerIds]);
   bool _opening = false;
 
   bool get _isMe => widget.event.organizerId == widget.currentUserId;
@@ -72,6 +75,13 @@ class _EventOrganizerRowState extends State<EventOrganizerRow> {
                 : '?');
         final photo = brief?.photoUrl ?? widget.event.organizerPhotoUrl;
         final hasPhoto = photo != null && photo.isNotEmpty;
+        final coOwnerNames = [
+          for (final id in widget.event.coOrganizerIds)
+            if ((snap.data?[id]?.name.trim() ?? '').isNotEmpty)
+              id == widget.currentUserId
+                  ? l10n.eventsOrganizerYou(snap.data![id]!.name.trim())
+                  : snap.data![id]!.name.trim(),
+        ];
 
         return InkWell(
           onTap: _isMe ? null : _openProfile,
@@ -122,6 +132,18 @@ class _EventOrganizerRowState extends State<EventOrganizerRow> {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
+                      if (coOwnerNames.isNotEmpty) ...[
+                        const SizedBox(height: 2),
+                        Text(
+                          l10n.eventsOrganizedWith(coOwnerNames.join(', ')),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: AppColors.textSecondary,
+                            fontSize: 12.5,
+                          ),
+                        ),
+                      ],
                     ],
                   ),
                 ),

@@ -80,7 +80,8 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
 
   bool _visible(EventAttendee a) =>
       a.status == RSVPStatus.going &&
-      a.isVisibleTo(widget.currentUserId, widget.event.organizerId);
+      a.isVisibleTo(widget.currentUserId,
+          widget.event.organizerViewIdFor(widget.currentUserId));
 
   Future<void> _loadMore() async {
     if (_loading || _done) return;
@@ -141,12 +142,13 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
   bool _isAnon(EventAttendee a) =>
       a.isAnonymous &&
       widget.currentUserId != a.userId &&
-      widget.currentUserId != widget.event.organizerId;
+      !widget.event.isOwner(widget.currentUserId);
 
   /// "Mark Red +5" when bringing guests, otherwise just "Mark Red".
   String _label(EventAttendee a) {
     final name =
-        a.displayNameFor(widget.currentUserId, widget.event.organizerId);
+        a.displayNameFor(widget.currentUserId,
+            widget.event.organizerViewIdFor(widget.currentUserId));
     final resolved = _isAnon(a) ? name : (_dir[a.userId]?.name ?? name);
     return a.guestCount > 0 ? '$resolved +${a.guestCount}' : resolved;
   }
@@ -255,6 +257,8 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
     final anon = _isAnon(a);
     final photo = anon ? null : (a.userPhotoUrl ?? _dir[a.userId]?.photoUrl);
     final isOrganizer = a.userId == widget.event.organizerId;
+    final isCoOwner =
+        !isOrganizer && widget.event.coOrganizerIds.contains(a.userId);
 
     return ListTile(
       onTap: anon ? null : () => _openProfile(a),
@@ -283,7 +287,7 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
               style: const TextStyle(
                   color: AppColors.textTertiary, fontSize: 11.5))
           : null,
-      trailing: isOrganizer
+      trailing: (isOrganizer || isCoOwner)
           ? Container(
               padding:
                   const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
@@ -291,7 +295,10 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
                 color: AppColors.richGold.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(6),
               ),
-              child: Text(AppLocalizations.of(context)!.attendeesOrganizer,
+              child: Text(
+                  isOrganizer
+                      ? AppLocalizations.of(context)!.attendeesOrganizer
+                      : AppLocalizations.of(context)!.eventsCoOwnerBadge,
                   style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 10,

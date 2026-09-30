@@ -46,6 +46,7 @@ import 'event_location_picker_screen.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../data/repositories/events_repository_impl.dart';
+import '../../data/services/event_geocoder.dart';
 import '../../data/services/event_series_service.dart';
 import '../../data/services/events_cache_service.dart';
 import '../../data/services/events_location.dart';
@@ -55,6 +56,7 @@ import '../../../safety/presentation/widgets/event_safety_checkin.dart';
 import '../bloc/events_bloc.dart';
 import '../bloc/events_event.dart';
 import '../bloc/events_state.dart';
+import '../widgets/co_owner_picker_sheet.dart';
 import '../widgets/share_event_sheet.dart';
 import 'event_attendance_screen.dart';
 import 'event_chat_screen.dart';
@@ -879,7 +881,8 @@ class _EventsScreenState extends State<EventsScreen>
   List<Event> _getMyEvents(EventsLoaded state) {
     final byId = <String, Event>{};
     for (final e in state.userEvents) {
-      final organizes = e.organizerId == widget.currentUserId;
+      // Created OR co-owned.
+      final organizes = e.isOwner(widget.currentUserId);
       final going = e.attendees.any((a) =>
           a.userId == widget.currentUserId && a.status == RSVPStatus.going);
       if (organizes || going) byId[e.id] = e;
@@ -887,7 +890,7 @@ class _EventsScreenState extends State<EventsScreen>
     if (byId.isEmpty) {
       // Fallback: derive from all loaded events.
       for (final e in state.filteredEvents) {
-        if (e.organizerId == widget.currentUserId ||
+        if (e.isOwner(widget.currentUserId) ||
             e.attendees.any((a) => a.userId == widget.currentUserId)) {
           byId[e.id] = e;
         }
@@ -2078,10 +2081,10 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
             ),
             actions: [
-              // Check-in scanner — organizer only, and only while the event
-              // is still running: checking someone in afterwards records an
-              // arrival that did not happen.
-              if (event.organizerId == currentUserId && !event.hasEnded)
+              // Check-in scanner — creator + co-owners, and only while the
+              // event is still running: checking someone in afterwards records
+              // an arrival that did not happen.
+              if (event.isOwner(currentUserId) && !event.hasEnded)
                 IconButton(
                   icon: const Icon(Icons.qr_code_scanner,
                       color: AppColors.richGold),
@@ -2093,9 +2096,8 @@ class EventDetailsScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-              // Attendance list — organizer only
-              // Boosting promotes an event nobody can attend any more.
-              if (event.organizerId == currentUserId && !event.hasEnded)
+              // Attendance list — creator + co-owners
+              if (event.isOwner(currentUserId) && !event.hasEnded)
                 IconButton(
                   icon: const Icon(Icons.fact_check_outlined,
                       color: AppColors.richGold),
@@ -2104,9 +2106,9 @@ class EventDetailsScreen extends StatelessWidget {
                     EventAttendanceScreen.route(event: event),
                   ),
                 ),
-              // Edit — organizer only
+              // Edit — creator + co-owners (deleting stays creator-only).
               // Editing a finished event changes nothing anyone can act on.
-              if (event.organizerId == currentUserId && !event.hasEnded)
+              if (event.isOwner(currentUserId) && !event.hasEnded)
                 IconButton(
                   icon: const Icon(Icons.edit, color: AppColors.richGold),
                   tooltip: AppLocalizations.of(context)!.eventsEditEvent,
@@ -2123,20 +2125,24 @@ class EventDetailsScreen extends StatelessWidget {
                               bloc.add(UpdateEvent(event: e));
                               Navigator.of(ctx).pop();
                             },
-                            onEventDeleted: () {
-                              bloc.add(DeleteEvent(eventId: event.id));
-                              // Pop edit screen + the detail screen.
-                              Navigator.of(ctx).pop();
-                              Navigator.of(context).pop();
-                            },
+                            // Only the creator may delete the event.
+                            onEventDeleted: event.isCreator(currentUserId)
+                                ? () {
+                                    bloc.add(DeleteEvent(eventId: event.id));
+                                    // Pop edit screen + the detail screen.
+                                    Navigator.of(ctx).pop();
+                                    Navigator.of(context).pop();
+                                  }
+                                : null,
                           ),
                         ),
                       ),
                     );
                   },
                 ),
-              // Boost (feature) — organizer only, if not already featured
-              if (event.organizerId == currentUserId &&
+              // Boost (feature) — CREATOR only (spends their coins), if not
+              // already featured. Co-owners cannot boost.
+              if (event.isCreator(currentUserId) &&
                   !event.isCurrentlyFeatured)
                 IconButton(
                   icon: const Icon(Icons.rocket_launch,
@@ -2145,7 +2151,7 @@ class EventDetailsScreen extends StatelessWidget {
                   onPressed: () => _handleBoost(context, event),
                 ),
               // Report — only on OTHER people's events.
-              if (event.organizerId != currentUserId)
+              if (!event.isOwner(currentUserId))
                 IconButton(
                   icon: const Icon(Icons.flag_outlined,
                       color: AppColors.textTertiary),
@@ -2501,7 +2507,8 @@ class EventDetailsScreen extends StatelessWidget {
                       if (event.canViewAttendeeList(currentUserId) &&
                           event.attendees.any((a) =>
                               a.status == RSVPStatus.going &&
-                              a.isVisibleTo(currentUserId, event.organizerId)))
+                              a.isVisibleTo(currentUserId,
+                                  event.organizerViewIdFor(currentUserId))))
                         TextButton(
                           onPressed: () => Navigator.of(context).push(
                             EventAttendeesScreen.route(
@@ -2527,7 +2534,8 @@ class EventDetailsScreen extends StatelessWidget {
                     final visibleGoing = event.attendees
                         .where((a) =>
                             a.status == RSVPStatus.going &&
-                            a.isVisibleTo(currentUserId, event.organizerId))
+                            a.isVisibleTo(currentUserId,
+                                event.organizerViewIdFor(currentUserId)))
                         .take(100)
                         .toList();
                     if (visibleGoing.isEmpty) {
@@ -2561,10 +2569,11 @@ class EventDetailsScreen extends StatelessWidget {
                             itemBuilder: (context, index) {
                               final attendee = visibleGoing[index];
                               final name = attendee.displayNameFor(
-                                  currentUserId, event.organizerId);
+                                  currentUserId,
+                                  event.organizerViewIdFor(currentUserId));
                               final anon = attendee.isAnonymous &&
                                   currentUserId != attendee.userId &&
-                                  currentUserId != event.organizerId;
+                                  !event.isOwner(currentUserId);
                               final photo = anon
                                   ? null
                                   : (attendee.userPhotoUrl ??
@@ -2775,7 +2784,8 @@ class EventDetailsScreen extends StatelessWidget {
   /// screen. When active, shows "Featured until …"; otherwise shows a paid
   /// call-to-action that spends coins to feature the event for 7 days.
   Widget _buildFeaturedSection(BuildContext context, Event event) {
-    if (event.organizerId != currentUserId) {
+    // Creator only: boosting spends the creator's coins.
+    if (!event.isCreator(currentUserId)) {
       return const SizedBox.shrink();
     }
     final until = event.featuredUntil;
@@ -3126,6 +3136,14 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   double? _lng;
   String? _pickedCity;
   String? _pickedCountry;
+  // The location text the coordinates above belong to (the last map pick, or
+  // the saved event's name when editing). When the organiser types something
+  // else, the typed text is geocoded on save instead of reusing stale coords.
+  String? _coordsLabel;
+
+  // ---- Co-owners (creator-managed; max kMaxEventCoOrganizers) ----
+  final List<String> _coOwnerIds = [];
+  final Map<String, UserBrief> _coOwnerBriefs = {};
   XFile? _mainPhoto;
   final List<XFile> _extraPhotos = [];
   // Already-uploaded images kept when editing (URLs, shown alongside new files).
@@ -3157,6 +3175,132 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   String _organizerName = '';
 
   bool get _isEditing => widget.existing != null;
+
+  /// Only the event's creator manages co-owners (a co-owner editing the event
+  /// sees them read-only).
+  bool get _canManageCoOwners =>
+      !_isEditing || widget.existing!.isCreator(widget.currentUserId);
+
+  Future<void> _resolveCoOwnerBriefs() async {
+    final missing =
+        _coOwnerIds.where((id) => !_coOwnerBriefs.containsKey(id)).toList();
+    if (missing.isEmpty) return;
+    final briefs = await UserDirectoryService.instance.resolve(missing);
+    if (!mounted) return;
+    setState(() => _coOwnerBriefs.addAll(briefs));
+  }
+
+  Future<void> _addCoOwner() async {
+    if (!_canManageCoOwners) return;
+    final l10n = AppLocalizations.of(context)!;
+    if (_coOwnerIds.length >= kMaxEventCoOrganizers) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(l10n.eventsCoOwnerLimit(kMaxEventCoOrganizers))));
+      return;
+    }
+    final creatorId = widget.existing?.organizerId ?? widget.currentUserId;
+    final picked = await showCoOwnerPicker(
+      context,
+      currentUserId: widget.currentUserId,
+      excludeIds: {creatorId, ..._coOwnerIds},
+    );
+    if (picked == null || !mounted) return;
+    if (_coOwnerIds.contains(picked.userId) ||
+        _coOwnerIds.length >= kMaxEventCoOrganizers) {
+      return;
+    }
+    setState(() {
+      _coOwnerIds.add(picked.userId);
+      _coOwnerBriefs[picked.userId] =
+          UserBrief(name: picked.name, photoUrl: picked.photoUrl);
+    });
+  }
+
+  /// "Co-owners" section: chips (avatar + name), removable by the creator,
+  /// plus "Add co-owner" (nickname search / recent chats).
+  Widget _buildCoOwnersSection() {
+    final l10n = AppLocalizations.of(context)!;
+    final canManage = _canManageCoOwners;
+    if (!canManage && _coOwnerIds.isEmpty) return const SizedBox.shrink();
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            l10n.eventsCoOwners,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            canManage
+                ? l10n.eventsCoOwnersHelper
+                : l10n.eventsCoOwnersCreatorOnly,
+            style: const TextStyle(
+                color: AppColors.textTertiary, fontSize: 12, height: 1.3),
+          ),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final id in _coOwnerIds) _coOwnerChip(id, canManage, l10n),
+              if (canManage && _coOwnerIds.length < kMaxEventCoOrganizers)
+                ActionChip(
+                  backgroundColor: AppColors.backgroundCard,
+                  avatar: const Icon(Icons.person_add_alt_1,
+                      size: 18, color: AppColors.richGold),
+                  label: Text(l10n.eventsAddCoOwner,
+                      style: const TextStyle(color: AppColors.richGold)),
+                  onPressed: _addCoOwner,
+                ),
+            ],
+          ),
+          if (canManage && _coOwnerIds.length >= kMaxEventCoOrganizers)
+            Padding(
+              padding: const EdgeInsets.only(top: 6),
+              child: Text(
+                l10n.eventsCoOwnerLimit(kMaxEventCoOrganizers),
+                style: const TextStyle(
+                    color: AppColors.textTertiary, fontSize: 12),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _coOwnerChip(String id, bool canManage, AppLocalizations l10n) {
+    final b = _coOwnerBriefs[id];
+    // Never show a raw id: an unresolved name renders as an ellipsis.
+    final resolved = b?.name.trim() ?? '';
+    final name = resolved.isNotEmpty ? resolved : '\u2026';
+    final photo = b?.photoUrl;
+    final hasPhoto = photo != null && photo.isNotEmpty;
+    return InputChip(
+      backgroundColor: AppColors.backgroundCard,
+      avatar: CircleAvatar(
+        backgroundColor: AppColors.backgroundInput,
+        backgroundImage: hasPhoto ? CachedNetworkImageProvider(photo) : null,
+        child: hasPhoto
+            ? null
+            : Text(name[0].toUpperCase(),
+                style: const TextStyle(
+                    fontSize: 11, color: AppColors.textPrimary)),
+      ),
+      label: Text(name,
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(color: AppColors.textPrimary)),
+      deleteIconColor: AppColors.textSecondary,
+      deleteButtonTooltipMessage: l10n.eventsCoOwnerRemove,
+      onDeleted:
+          canManage ? () => setState(() => _coOwnerIds.remove(id)) : null,
+    );
+  }
 
   /// Resolve the organizer's display name from their profile (best-effort).
   Future<void> _loadOrganizerName() async {
@@ -3275,6 +3419,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _lng = e.longitude;
     _pickedCity = e.city;
     _pickedCountry = e.country;
+    _coordsLabel = e.locationName;
+    _coOwnerIds.addAll(e.coOrganizerIds);
+    _resolveCoOwnerBriefs();
     _externalLinks.addAll(e.externalLinks);
     if (e.languagePairs != null) _languagePairsController.text = e.languagePairs!;
     // Show already-uploaded images in the edit form.
@@ -3453,7 +3600,41 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       _pickedCity = loc.city;
       _pickedCountry = loc.country;
       _locationController.text = loc.displayAddress;
+      _coordsLabel = loc.displayAddress;
     });
+  }
+
+  /// Location as saved: the typed text, plus coordinates when they still
+  /// belong to it. If the organiser typed a new place after (or instead of) a
+  /// map pick, geocode the text; if that fails the text is saved with NO
+  /// coordinates (still a valid event, just not in nearest-first lists).
+  Future<_EventPlace> _resolveLocationForSave() async {
+    final text = _locationController.text.trim();
+    final label = _coordsLabel?.trim();
+    if (_lat != null && _lng != null && label != null && label == text) {
+      return _EventPlace(
+        lat: _lat,
+        lng: _lng,
+        city: _pickedCity,
+        country: _pickedCountry,
+        manual: false,
+      );
+    }
+    final loc = await EventGeocoder.geocode(text);
+    if (loc == null) return const _EventPlace(manual: true);
+    // Remember the result so a retried save doesn't geocode again.
+    _lat = loc.latitude;
+    _lng = loc.longitude;
+    _pickedCity = loc.city.isNotEmpty ? loc.city : null;
+    _pickedCountry = loc.country.isNotEmpty ? loc.country : null;
+    _coordsLabel = text;
+    return _EventPlace(
+      lat: _lat,
+      lng: _lng,
+      city: _pickedCity,
+      country: _pickedCountry,
+      manual: true,
+    );
   }
 
   Future<void> _showAddLinkDialog() async {
@@ -3579,18 +3760,26 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ),
             ],
             const SizedBox(height: 16),
+            // Typed by hand (venue / address) OR picked on the map.
             TextFormField(
               controller: _locationController,
               style: const TextStyle(color: AppColors.textPrimary),
-              readOnly: true,
-              onTap: _pickLocation,
+              textCapitalization: TextCapitalization.words,
+              textInputAction: TextInputAction.next,
               decoration: _inputDecoration(
                       AppLocalizations.of(context)!.eventsLocation)
                   .copyWith(
-                suffixIcon:
-                    const Icon(Icons.map_outlined, color: AppColors.richGold),
+                helperText: AppLocalizations.of(context)!.eventsLocationHelper,
+                helperStyle: const TextStyle(color: AppColors.textTertiary),
+                helperMaxLines: 2,
+                suffixIcon: IconButton(
+                  icon: const Icon(Icons.map_outlined,
+                      color: AppColors.richGold),
+                  tooltip: AppLocalizations.of(context)!.eventsPickOnMap,
+                  onPressed: _pickLocation,
+                ),
               ),
-              validator: (v) => v?.isEmpty ?? true
+              validator: (v) => (v?.trim().isEmpty ?? true)
                   ? AppLocalizations.of(context)!.eventsRequired
                   : null,
             ),
@@ -3682,6 +3871,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             // Link to a community (owner/admin communities only). Hidden when the
             // community is fixed by the caller (opened from a community's Events
             // tab) or when the user manages no communities.
+            _buildCoOwnersSection(),
             _buildCommunityLinker(),
             // Visibility: public (discoverable) vs private (invitees/link only)
             SwitchListTile(
@@ -4372,6 +4562,25 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     if (!mounted) return;
     setState(() => _uploading = false);
 
+    // Location: typed text + coordinates (map pick, or geocoded from text).
+    setState(() => _saving = true);
+    final place = await _resolveLocationForSave();
+    if (!mounted) return;
+    setState(() => _saving = false);
+    final locationText = _locationController.text.trim();
+    final noCoords = place.lat == null || place.lng == null;
+    if (noCoords) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!.eventsLocationNotOnMap)));
+    }
+    // Creator-managed co-owner list (never the creator, max 5).
+    final creatorId = widget.existing?.organizerId ?? widget.currentUserId;
+    final coOwnerIds = _coOwnerIds
+        .where((id) => id.isNotEmpty && id != creatorId)
+        .toSet()
+        .take(kMaxEventCoOrganizers)
+        .toList();
+
     final maxAttendees =
         _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20);
     final price = _isFree
@@ -4395,11 +4604,15 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         photoUrls: photoUrls,
         startDate: _startDate,
         endDate: _endDate,
-        locationName: _locationController.text,
-        latitude: _lat,
-        longitude: _lng,
-        city: _pickedCity,
-        country: _pickedCountry,
+        locationName: locationText,
+        address: place.manual ? locationText : null,
+        latitude: place.lat,
+        longitude: place.lng,
+        city: place.city,
+        country: place.country,
+        clearCoordinates: noCoords,
+        // Only the creator changes co-owners; a co-owner's edit keeps them.
+        coOrganizerIds: _canManageCoOwners ? coOwnerIds : null,
         maxAttendees: maxAttendees,
         price: price,
         currency: _isFree ? null : _currency,
@@ -4435,11 +4648,13 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       photoUrls: photoUrls,
       startDate: _startDate,
       endDate: _endDate,
-      locationName: _locationController.text,
-      latitude: _lat,
-      longitude: _lng,
-      city: _pickedCity,
-      country: _pickedCountry,
+      locationName: locationText,
+      address: place.manual ? locationText : null,
+      latitude: place.lat,
+      longitude: place.lng,
+      city: place.city,
+      country: place.country,
+      coOrganizerIds: coOwnerIds,
       maxAttendees: maxAttendees,
       price: price,
       currency: _isFree ? null : _currency,
@@ -4479,4 +4694,21 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
     widget.onEventCreated(base);
   }
+}
+
+/// Where an event is, as resolved on save: coordinates (+ city/country) when
+/// known, and whether the location text was typed by hand ([manual]).
+class _EventPlace {
+  const _EventPlace({
+    required this.manual,
+    this.lat,
+    this.lng,
+    this.city,
+    this.country,
+  });
+  final double? lat;
+  final double? lng;
+  final String? city;
+  final String? country;
+  final bool manual;
 }
