@@ -14314,4 +14314,67 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get qrHubTicketRemoved => 'Billet retiré';
+
+  @override
+  String get usageDailyUsageTitle => 'Utilisation du jour';
+
+  @override
+  String get usageConnectsThisHour => 'Connexions cette heure';
+
+  @override
+  String get usagePassesThisHour => 'Passes cette heure';
+
+  @override
+  String get usagePriorityConnectsThisHour =>
+      'Connexions prioritaires cette heure';
+
+  @override
+  String get usageMessagesToday => 'Messages aujourd\'hui';
+
+  @override
+  String get usageMediaSentToday => 'Médias envoyés aujourd\'hui';
+
+  @override
+  String get usageUpgradeBenefitsTitle => 'Avantages de l\'upgrade';
+
+  @override
+  String get usageUpgradeButton => 'Améliorer mon abonnement';
+
+  @override
+  String usagePlanName(String tier) {
+    return 'Offre $tier';
+  }
+
+  @override
+  String get usageCurrentTierLabel => 'Niveau d\'abonnement actuel';
+
+  @override
+  String get usageNoBaseMembership => 'Aucun abonnement de base GreenGo';
+
+  @override
+  String usageExpiresOn(String date) {
+    return 'Expire le : $date';
+  }
+
+  @override
+  String usageExpiredOn(String date) {
+    return 'Expiré le : $date';
+  }
+
+  @override
+  String get usageStatusActive => 'Actif';
+
+  @override
+  String get usageStatusExpired => 'Expiré';
+
+  @override
+  String get usageCoinsAvailable => 'Pièces disponibles';
+
+  @override
+  String get usageNotAvailable => 'Non disponible';
+
+  @override
+  String usageWithTier(String tier) {
+    return 'Avec $tier';
+  }
 }

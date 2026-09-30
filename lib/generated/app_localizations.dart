@@ -25067,6 +25067,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ticket removed'**
   String get qrHubTicketRemoved;
+
+  /// No description provided for @usageDailyUsageTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Usage'**
+  String get usageDailyUsageTitle;
+
+  /// No description provided for @usageConnectsThisHour.
+  ///
+  /// In en, this message translates to:
+  /// **'Connects This Hour'**
+  String get usageConnectsThisHour;
+
+  /// No description provided for @usagePassesThisHour.
+  ///
+  /// In en, this message translates to:
+  /// **'Passes This Hour'**
+  String get usagePassesThisHour;
+
+  /// No description provided for @usagePriorityConnectsThisHour.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority Connects This Hour'**
+  String get usagePriorityConnectsThisHour;
+
+  /// No description provided for @usageMessagesToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages Today'**
+  String get usageMessagesToday;
+
+  /// No description provided for @usageMediaSentToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Media Sent Today'**
+  String get usageMediaSentToday;
+
+  /// No description provided for @usageUpgradeBenefitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade Benefits'**
+  String get usageUpgradeBenefitsTitle;
+
+  /// No description provided for @usageUpgradeButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade Membership'**
+  String get usageUpgradeButton;
+
+  /// No description provided for @usagePlanName.
+  ///
+  /// In en, this message translates to:
+  /// **'{tier} Plan'**
+  String usagePlanName(String tier);
+
+  /// No description provided for @usageCurrentTierLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Current membership tier'**
+  String get usageCurrentTierLabel;
+
+  /// No description provided for @usageNoBaseMembership.
+  ///
+  /// In en, this message translates to:
+  /// **'No GreenGo Base Membership'**
+  String get usageNoBaseMembership;
+
+  /// No description provided for @usageExpiresOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Expires: {date}'**
+  String usageExpiresOn(String date);
+
+  /// No description provided for @usageExpiredOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired: {date}'**
+  String usageExpiredOn(String date);
+
+  /// No description provided for @usageStatusActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get usageStatusActive;
+
+  /// No description provided for @usageStatusExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired'**
+  String get usageStatusExpired;
+
+  /// No description provided for @usageCoinsAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins Available'**
+  String get usageCoinsAvailable;
+
+  /// No description provided for @usageNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Available'**
+  String get usageNotAvailable;
+
+  /// No description provided for @usageWithTier.
+  ///
+  /// In en, this message translates to:
+  /// **'With {tier}'**
+  String usageWithTier(String tier);
 }
 
 class _AppLocalizationsDelegate

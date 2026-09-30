@@ -274,9 +274,9 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
               const SizedBox(height: 24),
 
               // Usage Stats
-              const Text(
-                'Daily Usage',
-                style: TextStyle(
+              Text(
+                l10n.usageDailyUsageTitle,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -298,21 +298,21 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
               if (_showSwipeLimits) ...[
                 _buildUsageStat(
                   icon: Icons.favorite,
-                  label: 'Connects This Hour',
+                  label: l10n.usageConnectsThisHour,
                   used: _usageStats[UsageLimitType.likes] ?? 0,
                   limit: rules.hourlyConnectLimit,
                 ),
                 const SizedBox(height: 12),
                 _buildUsageStat(
                   icon: Icons.close,
-                  label: 'Passes This Hour',
+                  label: l10n.usagePassesThisHour,
                   used: _usageStats[UsageLimitType.nopes] ?? 0,
                   limit: rules.hourlyPassLimit,
                 ),
                 const SizedBox(height: 12),
                 _buildUsageStat(
                   icon: Icons.star,
-                  label: 'Priority Connects This Hour',
+                  label: l10n.usagePriorityConnectsThisHour,
                   used: _usageStats[UsageLimitType.superLikes] ?? 0,
                   limit: rules.hourlyPriorityConnectLimit,
                 ),
@@ -331,7 +331,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
               // Daily limits
               _buildUsageStat(
                 icon: Icons.message,
-                label: 'Messages Today',
+                label: l10n.usageMessagesToday,
                 used: _usageStats[UsageLimitType.messages] ?? 0,
                 limit: rules.dailyMessageLimit,
               ),
@@ -339,7 +339,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
 
               _buildUsageStat(
                 icon: Icons.photo,
-                label: 'Media Sent Today',
+                label: l10n.usageMediaSentToday,
                 used: _usageStats[UsageLimitType.mediaSends] ?? 0,
                 limit: rules.dailyMediaSendLimit,
               ),
@@ -349,9 +349,9 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
               // Upgrade benefits: the real differences to the next tier up.
               // Nothing at the top (Platinum / Tester).
               if (nextTier != null && benefits.isNotEmpty) ...[
-                const Text(
-                  'Upgrade Benefits',
-                  style: TextStyle(
+                Text(
+                  l10n.usageUpgradeBenefitsTitle,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -374,9 +374,9 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                             BorderRadius.circular(AppDimensions.radiusL),
                       ),
                     ),
-                    child: const Text(
-                      'Upgrade Membership',
-                      style: TextStyle(
+                    child: Text(
+                      l10n.usageUpgradeButton,
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -417,7 +417,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '${_liveMembershipTier.displayName} Plan',
+                  AppLocalizations.of(context)!.usagePlanName(_tierName(context, _liveMembershipTier)),
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 20,
@@ -426,7 +426,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Current membership tier',
+                  AppLocalizations.of(context)!.usageCurrentTierLabel,
                   style: TextStyle(
                     color: AppColors.textTertiary.withOpacity(0.8),
                     fontSize: 14,
@@ -454,13 +454,15 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
           borderRadius: BorderRadius.circular(AppDimensions.radiusL),
           border: Border.all(color: AppColors.richGold.withOpacity(0.3)),
         ),
-        child: const Row(
+        child: Row(
           children: [
-            Icon(Icons.info_outline, color: AppColors.textTertiary, size: 20),
-            SizedBox(width: 12),
+            const Icon(Icons.info_outline,
+                color: AppColors.textTertiary, size: 20),
+            const SizedBox(width: 12),
             Text(
-              'No GreenGo Base Membership',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
+              AppLocalizations.of(context)!.usageNoBaseMembership,
+              style: const TextStyle(
+                  color: AppColors.textSecondary, fontSize: 14),
             ),
           ],
         ),
@@ -504,7 +506,9 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  isActive ? 'Expires: $formattedDate' : 'Expired: $formattedDate',
+                  isActive
+                      ? AppLocalizations.of(context)!.usageExpiresOn(formattedDate)
+                      : AppLocalizations.of(context)!.usageExpiredOn(formattedDate),
                   style: TextStyle(
                     color: isActive ? AppColors.textSecondary : AppColors.errorRed,
                     fontSize: 13,
@@ -520,7 +524,9 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
               borderRadius: BorderRadius.circular(12),
             ),
             child: Text(
-              isActive ? 'Active' : 'Expired',
+              isActive
+                  ? AppLocalizations.of(context)!.usageStatusActive
+                  : AppLocalizations.of(context)!.usageStatusExpired,
               style: const TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.bold,
@@ -560,9 +566,9 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                'Coins Available',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.usageCoinsAvailable,
+                style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 14,
                 ),
@@ -599,7 +605,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
     if (isUnlimited) {
       valueText = '$used / ${AppLocalizations.of(context)!.shopUnlimited}';
     } else if (isNotAvailable) {
-      valueText = 'Not Available';
+      valueText = AppLocalizations.of(context)!.usageNotAvailable;
     } else {
       valueText = '$used / $limit';
     }
@@ -702,7 +708,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      'With ${nextTier.displayName}',
+                      AppLocalizations.of(context)!.usageWithTier(_tierName(context, nextTier)),
                       style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 16,
@@ -751,11 +757,11 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
       case UpgradeBenefitKind.businessAccount:
         return l10n.shopBusinessAccount;
       case UpgradeBenefitKind.hourlyConnects:
-        return 'Connects This Hour';
+        return l10n.usageConnectsThisHour;
       case UpgradeBenefitKind.hourlyPasses:
-        return 'Passes This Hour';
+        return l10n.usagePassesThisHour;
       case UpgradeBenefitKind.hourlyPriorityConnects:
-        return 'Priority Connects This Hour';
+        return l10n.usagePriorityConnectsThisHour;
       case UpgradeBenefitKind.dailyPriorityConnects:
         return l10n.membershipSuperLikes;
     }
@@ -804,5 +810,22 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
         ],
       ),
     );
+  }
+}
+
+/// The tier's name in the app language (tier `displayName` is English-only).
+String _tierName(BuildContext context, MembershipTier tier) {
+  final l10n = AppLocalizations.of(context)!;
+  switch (tier) {
+    case MembershipTier.free:
+      return l10n.tierFree;
+    case MembershipTier.silver:
+      return l10n.silver;
+    case MembershipTier.gold:
+      return l10n.gold;
+    case MembershipTier.platinum:
+      return l10n.platinum;
+    case MembershipTier.test:
+      return tier.displayName;
   }
 }

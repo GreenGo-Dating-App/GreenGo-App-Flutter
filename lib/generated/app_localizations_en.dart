@@ -14091,4 +14091,66 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get qrHubTicketRemoved => 'Ticket removed';
+
+  @override
+  String get usageDailyUsageTitle => 'Daily Usage';
+
+  @override
+  String get usageConnectsThisHour => 'Connects This Hour';
+
+  @override
+  String get usagePassesThisHour => 'Passes This Hour';
+
+  @override
+  String get usagePriorityConnectsThisHour => 'Priority Connects This Hour';
+
+  @override
+  String get usageMessagesToday => 'Messages Today';
+
+  @override
+  String get usageMediaSentToday => 'Media Sent Today';
+
+  @override
+  String get usageUpgradeBenefitsTitle => 'Upgrade Benefits';
+
+  @override
+  String get usageUpgradeButton => 'Upgrade Membership';
+
+  @override
+  String usagePlanName(String tier) {
+    return '$tier Plan';
+  }
+
+  @override
+  String get usageCurrentTierLabel => 'Current membership tier';
+
+  @override
+  String get usageNoBaseMembership => 'No GreenGo Base Membership';
+
+  @override
+  String usageExpiresOn(String date) {
+    return 'Expires: $date';
+  }
+
+  @override
+  String usageExpiredOn(String date) {
+    return 'Expired: $date';
+  }
+
+  @override
+  String get usageStatusActive => 'Active';
+
+  @override
+  String get usageStatusExpired => 'Expired';
+
+  @override
+  String get usageCoinsAvailable => 'Coins Available';
+
+  @override
+  String get usageNotAvailable => 'Not Available';
+
+  @override
+  String usageWithTier(String tier) {
+    return 'With $tier';
+  }
 }
