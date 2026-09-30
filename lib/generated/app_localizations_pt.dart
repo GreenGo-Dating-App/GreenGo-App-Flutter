@@ -14229,6 +14229,69 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get qrHubTicketRemoved => 'Bilhete removido';
+
+  @override
+  String get usageDailyUsageTitle => 'Utilização diária';
+
+  @override
+  String get usageConnectsThisHour => 'Ligações nesta hora';
+
+  @override
+  String get usagePassesThisHour => 'Passagens nesta hora';
+
+  @override
+  String get usagePriorityConnectsThisHour =>
+      'Ligações prioritárias nesta hora';
+
+  @override
+  String get usageMessagesToday => 'Mensagens hoje';
+
+  @override
+  String get usageMediaSentToday => 'Multimédia enviada hoje';
+
+  @override
+  String get usageUpgradeBenefitsTitle => 'Vantagens do upgrade';
+
+  @override
+  String get usageUpgradeButton => 'Melhorar subscrição';
+
+  @override
+  String usagePlanName(String tier) {
+    return 'Plano $tier';
+  }
+
+  @override
+  String get usageCurrentTierLabel => 'Nível de subscrição atual';
+
+  @override
+  String get usageNoBaseMembership => 'Sem subscrição base GreenGo';
+
+  @override
+  String usageExpiresOn(String date) {
+    return 'Expira: $date';
+  }
+
+  @override
+  String usageExpiredOn(String date) {
+    return 'Expirou: $date';
+  }
+
+  @override
+  String get usageStatusActive => 'Ativa';
+
+  @override
+  String get usageStatusExpired => 'Expirada';
+
+  @override
+  String get usageCoinsAvailable => 'Moedas disponíveis';
+
+  @override
+  String get usageNotAvailable => 'Indisponível';
+
+  @override
+  String usageWithTier(String tier) {
+    return 'Com $tier';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28460,4 +28523,67 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get qrHubTicketRemoved => 'Ingresso removido';
+
+  @override
+  String get usageDailyUsageTitle => 'Uso diário';
+
+  @override
+  String get usageConnectsThisHour => 'Conexões nesta hora';
+
+  @override
+  String get usagePassesThisHour => 'Passes nesta hora';
+
+  @override
+  String get usagePriorityConnectsThisHour =>
+      'Conexões prioritárias nesta hora';
+
+  @override
+  String get usageMessagesToday => 'Mensagens hoje';
+
+  @override
+  String get usageMediaSentToday => 'Mídia enviada hoje';
+
+  @override
+  String get usageUpgradeBenefitsTitle => 'Vantagens do upgrade';
+
+  @override
+  String get usageUpgradeButton => 'Fazer upgrade da assinatura';
+
+  @override
+  String usagePlanName(String tier) {
+    return 'Plano $tier';
+  }
+
+  @override
+  String get usageCurrentTierLabel => 'Nível de assinatura atual';
+
+  @override
+  String get usageNoBaseMembership => 'Sem assinatura básica GreenGo';
+
+  @override
+  String usageExpiresOn(String date) {
+    return 'Expira em: $date';
+  }
+
+  @override
+  String usageExpiredOn(String date) {
+    return 'Expirou em: $date';
+  }
+
+  @override
+  String get usageStatusActive => 'Ativa';
+
+  @override
+  String get usageStatusExpired => 'Expirada';
+
+  @override
+  String get usageCoinsAvailable => 'Moedas disponíveis';
+
+  @override
+  String get usageNotAvailable => 'Indisponível';
+
+  @override
+  String usageWithTier(String tier) {
+    return 'Com $tier';
+  }
 }
