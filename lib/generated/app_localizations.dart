@@ -25199,6 +25199,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'With {tier}'**
   String usageWithTier(String tier);
+
+  /// No description provided for @attrApplyFilter.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply filter'**
+  String get attrApplyFilter;
 }
 
 class _AppLocalizationsDelegate

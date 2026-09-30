@@ -4188,5 +4188,6 @@
   "usageStatusExpired": "Expiré",
   "usageCoinsAvailable": "Pièces disponibles",
   "usageNotAvailable": "Non disponible",
-  "usageWithTier": "Avec {tier}"
+  "usageWithTier": "Avec {tier}",
+  "attrApplyFilter": "Appliquer le filtre"
 }

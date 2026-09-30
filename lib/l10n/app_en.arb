@@ -6751,5 +6751,6 @@
   "usageCoinsAvailable": "Coins Available",
   "usageNotAvailable": "Not Available",
   "usageWithTier": "With {tier}",
-  "@usageWithTier": {"placeholders": {"tier": {"type": "String"}}}
+  "@usageWithTier": {"placeholders": {"tier": {"type": "String"}}},
+  "attrApplyFilter": "Apply filter"
 }

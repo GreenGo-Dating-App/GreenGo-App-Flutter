@@ -14304,6 +14304,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String usageWithTier(String tier) {
     return 'Com $tier';
   }
+
+  @override
+  String get attrApplyFilter => 'Aplicar filtro';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28610,4 +28613,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String usageWithTier(String tier) {
     return 'Com $tier';
   }
+
+  @override
+  String get attrApplyFilter => 'Aplicar filtro';
 }

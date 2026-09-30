@@ -306,14 +306,20 @@ class _AttractionsFilterSheetState extends State<AttractionsFilterSheet> {
                   child: Text(l10n.clearFilters,
                       style: const TextStyle(color: AppColors.textSecondary)),
                 ),
-                const Spacer(),
-                ElevatedButton(
-                  onPressed: () => Navigator.pop(context, _draft),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: AppColors.deepBlack,
+                const SizedBox(width: 8),
+                Expanded(
+                  child: ElevatedButton.icon(
+                    onPressed: () => Navigator.pop(context, _draft),
+                    icon: const Icon(Icons.check, size: 18),
+                    label: Text(l10n.attrApplyFilter),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      foregroundColor: AppColors.deepBlack,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      textStyle: const TextStyle(
+                          fontSize: 15, fontWeight: FontWeight.w700),
+                    ),
                   ),
-                  child: Text(l10n.done),
                 ),
               ]),
             ],
