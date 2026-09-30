@@ -113,6 +113,10 @@ class _AttractionsTabState extends State<AttractionsTab>
   double? get _posLat => _lat ?? widget.userLat;
   double? get _posLng => _lng ?? widget.userLng;
   String? _category; // raw xlsx Category (e.g. 'Historic Site'); null = all
+
+  /// GreenGo Score filter (inclusive, 0-100). The full range = no filter.
+  RangeValues _scoreRange = const RangeValues(0, 100);
+  bool get _scoreFiltered => _scoreRange.start > 0 || _scoreRange.end < 100;
   String _bucket = 'greengo-chat.firebasestorage.app';
 
   bool _loading = true;
@@ -557,6 +561,128 @@ class _AttractionsTabState extends State<AttractionsTab>
     );
   }
 
+  /// "GreenGo Score" chip under the category tabs; opens [_pickScoreRange].
+  Widget _scoreFilterBar(AppLocalizations l10n) {
+    final lo = _scoreRange.start.round(), hi = _scoreRange.end.round();
+    return Container(
+      color: AppColors.deepBlack,
+      padding: const EdgeInsets.fromLTRB(12, 6, 12, 6),
+      alignment: Alignment.centerLeft,
+      child: Wrap(spacing: 8, children: [
+        FilterChip(
+          selected: _scoreFiltered,
+          showCheckmark: false,
+          avatar: Icon(Icons.diamond_outlined,
+              size: 16,
+              color:
+                  _scoreFiltered ? AppColors.deepBlack : AppColors.richGold),
+          label: Text('${l10n.attrScoreLabel}  $lo–$hi'),
+          labelStyle: TextStyle(
+            fontSize: 12.5,
+            fontWeight: FontWeight.w600,
+            color: _scoreFiltered ? AppColors.deepBlack : AppColors.textPrimary,
+          ),
+          backgroundColor: AppColors.backgroundCard,
+          selectedColor: AppColors.richGold,
+          side: BorderSide(color: AppColors.richGold.withOpacity(0.4)),
+          onSelected: (_) => _pickScoreRange(l10n),
+        ),
+        if (_scoreFiltered)
+          ActionChip(
+            label: Text(l10n.clearFilters,
+                style: const TextStyle(
+                    fontSize: 12, color: AppColors.textSecondary)),
+            backgroundColor: AppColors.backgroundCard,
+            side: const BorderSide(color: AppColors.divider),
+            onPressed: () =>
+                setState(() => _scoreRange = const RangeValues(0, 100)),
+          ),
+      ]),
+    );
+  }
+
+  /// Bottom sheet with a 0-100 range slider for the GreenGo Score.
+  Future<void> _pickScoreRange(AppLocalizations l10n) async {
+    var draft = _scoreRange;
+    final picked = await showModalBottomSheet<RangeValues>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setSheet) => SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(children: [
+                  Expanded(
+                    child: Text(l10n.attrScoreLabel,
+                        style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold)),
+                  ),
+                  Text('${draft.start.round()} – ${draft.end.round()}',
+                      style: const TextStyle(
+                          color: AppColors.richGold,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700)),
+                ]),
+                const SizedBox(height: 8),
+                RangeSlider(
+                  values: draft,
+                  min: 0,
+                  max: 100,
+                  divisions: 100,
+                  activeColor: AppColors.richGold,
+                  inactiveColor: AppColors.richGold.withOpacity(0.2),
+                  labels: RangeLabels('${draft.start.round()}',
+                      '${draft.end.round()}'),
+                  onChanged: (v) => setSheet(() => draft = v),
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text('0',
+                        style: TextStyle(
+                            color: AppColors.textTertiary, fontSize: 12)),
+                    Text('100',
+                        style: TextStyle(
+                            color: AppColors.textTertiary, fontSize: 12)),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Row(children: [
+                  TextButton(
+                    onPressed: () =>
+                        Navigator.pop(ctx, const RangeValues(0, 100)),
+                    child: Text(l10n.clearFilters,
+                        style:
+                            const TextStyle(color: AppColors.textSecondary)),
+                  ),
+                  const Spacer(),
+                  ElevatedButton(
+                    onPressed: () => Navigator.pop(ctx, draft),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.richGold,
+                      foregroundColor: AppColors.deepBlack,
+                    ),
+                    child: Text(l10n.done),
+                  ),
+                ]),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+    if (picked != null && mounted) setState(() => _scoreRange = picked);
+  }
+
   /// Categories exactly as they appear in the spreadsheet's `Category` column,
   /// as a scrollable TabBar. Only categories present in the loaded country are
   /// shown, most-populated first, each with its own icon.
@@ -751,11 +877,20 @@ class _AttractionsTabState extends State<AttractionsTab>
 
     // ONE computation per build. The tab counts, the result header and the
     // grid all read from this same list, so they can never disagree.
-    final base = _matched;
+    // The score filter narrows the base, so the category tab counts, the
+    // result header and the grid all agree.
+    final base = _scoreFiltered
+        ? _matched
+            .where((a) =>
+                a.greengoScore >= _scoreRange.start.round() &&
+                a.greengoScore <= _scoreRange.end.round())
+            .toList()
+        : _matched;
     final all = _visibleFrom(base);
     // Reset the window when the underlying list changes identity.
     _syncWindow(
-      '${_selectedIso ?? ''}|${_category ?? ''}|$_effectiveSort|${widget.query.trim()}',
+      '${_selectedIso ?? ''}|${_category ?? ''}|$_effectiveSort|${widget.query.trim()}'
+      '|${_scoreRange.start.round()}-${_scoreRange.end.round()}',
       all.length,
     );
     final items = all.length <= _visibleCount
@@ -815,6 +950,7 @@ class _AttractionsTabState extends State<AttractionsTab>
             ]),
           ),
         _categoryTabs(l10n, base),
+        _scoreFilterBar(l10n),
         const Divider(height: 1, color: AppColors.divider),
         Expanded(
           child: RefreshIndicator(
