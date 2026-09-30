@@ -1837,22 +1837,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     ),
                   ),
                 ),
-              // Featured attractions carousel near the top (hides itself when
-              // empty). We intentionally do NOT show a separate generic
-              // "Featured events" carousel here — the community/boosted events
-              // carousel lives just below as "Featured community events"
-              // (_luxuryEventsSection), so the two no longer duplicate.
-              _featuredAttractionsSection(context, l10n, reduceMotion),
-              // Personal & high-priority: the user's own upcoming events. Hidden
-              // entirely when they have none (see [_myEventsSection]).
-              _myEventsSection(context, l10n, reduceMotion),
-
-              // ── EVENTS ────────────────────────────────────────────────────
-              // Featured community events, then Happening soon.
+              // Order (product owner): featured community events, featured
+              // attractions, my next events, communities to join, then the
+              // people rows. Every section hides itself when it has no data.
               _luxuryEventsSection(context, l10n, reduceMotion),
-              // Only when the user is registered for an upcoming event (the
-              // section carries its own header and hides itself otherwise).
-              _happeningSection(context, l10n, reduceMotion),
+              _featuredAttractionsSection(context, l10n, reduceMotion),
+              // The user's upcoming events (going or organised).
+              _myEventsSection(context, l10n, reduceMotion),
+              _communitiesSection(context, l10n, reduceMotion),
 
               // ── PEOPLE ────────────────────────────────────────────────────
               // Discover (around you) → Recommended → speaks {language}.
@@ -1880,11 +1872,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 people: _sameLanguage,
               ),
 
-              // ── BUSINESSES & COMMUNITIES TO JOIN ──────────────────────────
+              // ── MORE ──────────────────────────────────────────────────────
+              // Only when the user is registered for an upcoming event.
+              _happeningSection(context, l10n, reduceMotion),
               _businessesSection(context, l10n, reduceMotion),
-              _communitiesSection(context, l10n, reduceMotion),
-
-              // ── COMMUNITY EVENTS NEAR YOU ─────────────────────────────────
               _communityEventsSection(context, l10n, reduceMotion),
 
               // Country Spotlight — a single glass card. Hidden entirely when

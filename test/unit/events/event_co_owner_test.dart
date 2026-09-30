@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/features/events/data/datasources/events_remote_datasource.dart';
@@ -148,21 +147,23 @@ void main() {
       expect(events.last.isOwner('u1'), isTrue);
     });
 
-    test('a co-owner edit never writes creator-only fields', () async {
+    test('a co-owner can edit and boost, never change ownership or co-owners',
+        () async {
       final db = FakeFirebaseFirestore();
       await db.collection('events').doc('e1').set({
         ...EventFixtures.doc(organizerId: 'creator', startDate: DateTime(2030)),
         'coOrganizerIds': ['co1'],
-        'isFeatured': true,
-        'featuredUntil': Timestamp.fromDate(DateTime(2031)),
+        'isFeatured': false,
       });
       final ds =
           EventsRemoteDataSourceImpl(firestore: db, currentUserId: () => 'co1');
-      final stale = (await ds.getEventById('e1'))!;
-      // A stale local copy: not featured, co-owner list emptied.
-      await ds.updateEvent(stale.copyWith(
+      final loaded = (await ds.getEventById('e1'))!;
+      // Co-owner edits + boosts; a stale copy also has the co-owner list
+      // emptied, which must NOT be written.
+      await ds.updateEvent(loaded.copyWith(
         title: 'Edited by co-owner',
-        isFeatured: false,
+        isFeatured: true,
+        featuredUntil: DateTime(2031),
         coOrganizerIds: const [],
       ));
       final data = (await db.collection('events').doc('e1').get()).data()!;
