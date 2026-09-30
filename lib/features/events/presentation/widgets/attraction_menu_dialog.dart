@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/translation_service.dart';
+import '../../../../core/widgets/translatable_text.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/usecases/report_user.dart';
 import '../../domain/entities/external_event.dart';
@@ -50,6 +51,9 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
     // Use the APP's active locale (what the user selected in-app), not the
     // device locale. Runs once.
     if (_translateStarted) return;
+    // Live events get an explicit Translate / Show original button instead
+    // (see the description block in build).
+    if (_isLive) return;
     final desc = widget.event.description;
     if (desc == null || desc.trim().isEmpty) return;
     final target = Localizations.localeOf(context).languageCode;
@@ -80,6 +84,8 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
       if (mounted) setState(() => _translating = false);
     });
   }
+
+  bool get _isLive => widget.event.source == 'ticketmaster';
 
   String _hostOf(String url) {
     try {
@@ -281,7 +287,23 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
                           ],
                         ),
                       ],
-                      if (e.description != null && e.description!.isNotEmpty) ...[
+                      if (_isLive &&
+                          e.description != null &&
+                          e.description!.trim().isNotEmpty) ...[
+                        const SizedBox(height: 8),
+                        TranslatableText(
+                          text: e.description!,
+                          targetLang:
+                              Localizations.localeOf(context).languageCode,
+                          maxLines: 6,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                              color: AppColors.textSecondary,
+                              fontSize: 12,
+                              height: 1.3),
+                        ),
+                      ] else if (e.description != null &&
+                          e.description!.isNotEmpty) ...[
                         const SizedBox(height: 8),
                         Text(_translatedDesc ?? e.description!,
                             maxLines: 6,

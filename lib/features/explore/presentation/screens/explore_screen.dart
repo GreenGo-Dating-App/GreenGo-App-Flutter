@@ -1966,16 +1966,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // Replay the Explore guide.
-        Builder(
-          builder: (btnContext) => _headerIconButton(
-            icon: Icons.help_outline,
-            tooltip: l10n.tourReplayGuide,
-            onTap: () => TourController.instance.startMiniTourNow(
-              btnContext,
-              [TourKeys.exploreSearch, TourKeys.exploreQr],
-            ),
-          ),
+        // People → straight to the Discovery grid.
+        _headerIconButton(
+          icon: Icons.people_alt_outlined,
+          tooltip: l10n.discover,
+          onTap: () => _openNetworkDiscovery(context),
         ),
         const SizedBox(width: 8),
         TourShowcase(
@@ -3165,32 +3160,7 @@ class _FeaturedCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                // ── "Featured" tag ──────────────────────────────────────────
-                Positioned(
-                  top: 12,
-                  left: 12,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: AppColors.deepBlack.withValues(alpha: 0.55),
-                      borderRadius: BorderRadius.circular(AppGlass.radiusPill),
-                      border: Border.all(color: AppGlass.borderGold),
-                    ),
-                    child: Text(
-                      l10n.exploreFeatured.toUpperCase(),
-                      style: const TextStyle(
-                        color: AppColors.richGold,
-                        fontSize: 10.5,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 0.8,
-                      ),
-                    ),
-                  ),
-                ),
-                // ── Title / going count / gold "Join" affordance ────────────
+                // ── Title / going count ────────────
                 Positioned(
                   left: 14,
                   right: 14,
@@ -3241,33 +3211,6 @@ class _FeaturedCard extends StatelessWidget {
                               ),
                             ],
                           ],
-                        ),
-                      ),
-                      const SizedBox(width: 10),
-                      DecoratedBox(
-                        decoration: BoxDecoration(
-                          borderRadius:
-                              BorderRadius.circular(AppGlass.radiusPill),
-                          boxShadow: AppGlass.goldGlow,
-                        ),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            gradient: AppColors.goldGradient,
-                            borderRadius:
-                                BorderRadius.circular(AppGlass.radiusPill),
-                          ),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 18,
-                            vertical: 9,
-                          ),
-                          child: Text(
-                            l10n.exploreJoin,
-                            style: const TextStyle(
-                              color: AppColors.deepBlack,
-                              fontSize: 13.5,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
                         ),
                       ),
                     ],
