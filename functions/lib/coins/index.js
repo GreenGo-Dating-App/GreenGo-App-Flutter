@@ -37,9 +37,8 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.declineGift = exports.giftCoins = exports.claimReward = exports.grantMonthlyAllowances = exports.verifyAppStoreCoinPurchase = exports.verifyGooglePlayCoinPurchase = void 0;
+exports.declineGift = exports.giftCoins = exports.claimReward = exports.verifyAppStoreCoinPurchase = exports.verifyGooglePlayCoinPurchase = void 0;
 const crypto_1 = require("crypto");
-const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
@@ -197,12 +196,6 @@ async function grantVerifiedCoinPurchase(params) {
         alreadyProcessed: false,
     };
 }
-// Monthly allowances by tier
-const MONTHLY_ALLOWANCES = {
-    [types_1.SubscriptionTier.BASIC]: 0,
-    [types_1.SubscriptionTier.SILVER]: 100,
-    [types_1.SubscriptionTier.GOLD]: 250,
-};
 // Rewards
 const REWARDS = {
     first_match: 50,
@@ -279,83 +272,6 @@ exports.verifyAppStoreCoinPurchase = (0, https_1.onCall)({
     }
     catch (error) {
         throw (0, utils_1.handleError)(error);
-    }
-});
-// ========== 3. GRANT MONTHLY ALLOWANCES (Scheduled - Monthly 1st) ==========
-exports.grantMonthlyAllowances = (0, scheduler_1.onSchedule)({
-    schedule: '0 0 1 * *', // 1st of every month at midnight UTC
-    timeZone: 'UTC',
-    memory: '512MiB',
-    timeoutSeconds: 540,
-}, async () => {
-    (0, utils_1.logInfo)('Granting monthly coin allowances');
-    try {
-        // Get all users with active subscriptions
-        const usersSnapshot = await utils_1.db
-            .collection('users')
-            .where('subscriptionTier', 'in', [types_1.SubscriptionTier.SILVER, types_1.SubscriptionTier.GOLD])
-            .get();
-        (0, utils_1.logInfo)(`Found ${usersSnapshot.size} eligible users for allowances`);
-        let grantedCount = 0;
-        for (const userDoc of usersSnapshot.docs) {
-            const userData = userDoc.data();
-            const userId = userDoc.id;
-            const tier = userData.subscriptionTier;
-            const allowance = MONTHLY_ALLOWANCES[tier];
-            if (!allowance)
-                continue;
-            try {
-                const balanceRef = utils_1.db.collection('coin_balances').doc(userId);
-                const batchId = `allowance_${Date.now()}_${userId}`;
-                await utils_1.db.runTransaction(async (transaction) => {
-                    var _a, _b;
-                    const balanceSnapshot = await transaction.get(balanceRef);
-                    const batches = ((_a = balanceSnapshot.data()) === null || _a === void 0 ? void 0 : _a.batches) || [];
-                    batches.push({
-                        id: batchId,
-                        amount: allowance,
-                        source: types_1.CoinSource.ALLOWANCE,
-                        remainingAmount: allowance,
-                        createdAt: admin.firestore.FieldValue.serverTimestamp(),
-                    });
-                    transaction.set(balanceRef, {
-                        totalCoins: admin.firestore.FieldValue.increment(allowance),
-                        batches,
-                        lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
-                    }, { merge: true });
-                    const transactionRef = utils_1.db.collection('coin_transactions').doc();
-                    transaction.set(transactionRef, {
-                        userId,
-                        amount: allowance,
-                        type: 'credit',
-                        source: types_1.CoinSource.ALLOWANCE,
-                        description: `Monthly ${tier} allowance`,
-                        batchId,
-                        timestamp: admin.firestore.FieldValue.serverTimestamp(),
-                        balanceAfter: (((_b = balanceSnapshot.data()) === null || _b === void 0 ? void 0 : _b.totalCoins) || 0) + allowance,
-                    });
-                });
-                // Send notification
-                await utils_1.db.collection('notifications').add({
-                    userId,
-                    type: 'coins_credited',
-                    title: 'Monthly Coins Added!',
-                    body: `You received ${allowance} coins as part of your ${tier} subscription`,
-                    read: false,
-                    sent: false,
-                    createdAt: admin.firestore.FieldValue.serverTimestamp(),
-                });
-                grantedCount++;
-            }
-            catch (error) {
-                (0, utils_1.logError)(`Error granting allowance to user ${userId}:`, error);
-            }
-        }
-        (0, utils_1.logInfo)(`Monthly allowances granted to ${grantedCount} users`);
-    }
-    catch (error) {
-        (0, utils_1.logError)('Error granting monthly allowances:', error);
-        throw error;
     }
 });
 exports.claimReward = (0, https_1.onCall)({

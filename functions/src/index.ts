@@ -260,7 +260,6 @@ export {
 export {
   verifyGooglePlayCoinPurchase,
   verifyAppStoreCoinPurchase,
-  grantMonthlyAllowances,
   claimReward,
   giftCoins,
   declineGift,
@@ -562,3 +561,9 @@ export { sharePreview } from './share/sharePreview';
 
 // Events — notify people when they are added as a co-owner of an event.
 export { onEventCoOwnersChanged } from './events/coOwnerNotify';
+
+// Monthly coin allowance per membership tier (app: TierEntitlements.monthlyCoins).
+export {
+  grantMonthlyCoinAllowances,
+  runMonthlyCoinAllowancesNow,
+} from './coins/monthlyAllowance';

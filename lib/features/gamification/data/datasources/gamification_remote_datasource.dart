@@ -89,6 +89,12 @@ class GamificationRemoteDataSourceImpl
   final FirebaseFirestore firestore;
   final FirebaseFunctions functions;
 
+  /// Upper bound for a single screen-load read.
+  static const Duration _readTimeout = Duration(seconds: 15);
+
+  /// Upper bound on progress docs read per user (catalogue has ~25 entries).
+  static const int _maxAchievementProgressDocs = 200;
+
   // Collections
   CollectionReference get _achievementProgressCollection =>
       firestore.collection('achievement_progress');
@@ -147,13 +153,25 @@ class GamificationRemoteDataSourceImpl
   Future<List<UserAchievementProgressModel>> getUserAchievementProgress(
     String userId,
   ) async {
+    // Bounded twice over: at most one doc per catalogue achievement (the
+    // limit leaves headroom for retired ids), and a hard timeout so a stalled
+    // connection surfaces as an error + Retry instead of an endless spinner.
     final snapshot = await _achievementProgressCollection
         .where('userId', isEqualTo: userId)
-        .get();
+        .limit(_maxAchievementProgressDocs)
+        .get()
+        .timeout(_readTimeout);
 
-    return snapshot.docs
-        .map(UserAchievementProgressModel.fromFirestore)
-        .toList();
+    final progress = <UserAchievementProgressModel>[];
+    for (final doc in snapshot.docs) {
+      // One malformed doc must not hide the whole screen behind an error.
+      try {
+        progress.add(UserAchievementProgressModel.fromFirestore(doc));
+      } catch (e) {
+        debugPrint('Skipping malformed achievement_progress/${doc.id}: $e');
+      }
+    }
+    return progress;
   }
 
   @override

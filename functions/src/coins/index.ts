@@ -8,7 +8,7 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
 import * as admin from 'firebase-admin';
-import { CoinSource, SubscriptionTier } from '../shared/types';
+import { CoinSource } from '../shared/types';
 import {
   verifyGooglePlayPurchase,
   verifyAppStorePurchase,
@@ -203,13 +203,6 @@ async function grantVerifiedCoinPurchase(params: {
   };
 }
 
-// Monthly allowances by tier
-const MONTHLY_ALLOWANCES = {
-  [SubscriptionTier.BASIC]: 0,
-  [SubscriptionTier.SILVER]: 100,
-  [SubscriptionTier.GOLD]: 250,
-};
-
 // Rewards
 const REWARDS = {
   first_match: 50,
@@ -325,100 +318,8 @@ export const verifyAppStoreCoinPurchase = onCall<VerifyPurchaseRequest>(
   }
 );
 
-// ========== 3. GRANT MONTHLY ALLOWANCES (Scheduled - Monthly 1st) ==========
-
-export const grantMonthlyAllowances = onSchedule(
-  {
-    schedule: '0 0 1 * *', // 1st of every month at midnight UTC
-    timeZone: 'UTC',
-    memory: '512MiB',
-    timeoutSeconds: 540,
-  },
-  async () => {
-    logInfo('Granting monthly coin allowances');
-
-    try {
-      // Get all users with active subscriptions
-      const usersSnapshot = await db
-        .collection('users')
-        .where('subscriptionTier', 'in', [SubscriptionTier.SILVER, SubscriptionTier.GOLD])
-        .get();
-
-      logInfo(`Found ${usersSnapshot.size} eligible users for allowances`);
-
-      let grantedCount = 0;
-
-      for (const userDoc of usersSnapshot.docs) {
-        const userData = userDoc.data();
-        const userId = userDoc.id;
-        const tier = userData.subscriptionTier as SubscriptionTier;
-        const allowance = MONTHLY_ALLOWANCES[tier];
-
-        if (!allowance) continue;
-
-        try {
-          const balanceRef = db.collection('coin_balances').doc(userId);
-          const batchId = `allowance_${Date.now()}_${userId}`;
-
-          await db.runTransaction(async (transaction) => {
-            const balanceSnapshot = await transaction.get(balanceRef);
-            const batches = balanceSnapshot.data()?.batches || [];
-
-            batches.push({
-              id: batchId,
-              amount: allowance,
-              source: CoinSource.ALLOWANCE,
-              remainingAmount: allowance,
-              createdAt: admin.firestore.FieldValue.serverTimestamp(),
-            });
-
-            transaction.set(
-              balanceRef,
-              {
-                totalCoins: admin.firestore.FieldValue.increment(allowance),
-                batches,
-                lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
-              },
-              { merge: true }
-            );
-
-            const transactionRef = db.collection('coin_transactions').doc();
-            transaction.set(transactionRef, {
-              userId,
-              amount: allowance,
-              type: 'credit',
-              source: CoinSource.ALLOWANCE,
-              description: `Monthly ${tier} allowance`,
-              batchId,
-              timestamp: admin.firestore.FieldValue.serverTimestamp(),
-              balanceAfter: (balanceSnapshot.data()?.totalCoins || 0) + allowance,
-            });
-          });
-
-          // Send notification
-          await db.collection('notifications').add({
-            userId,
-            type: 'coins_credited',
-            title: 'Monthly Coins Added!',
-            body: `You received ${allowance} coins as part of your ${tier} subscription`,
-            read: false,
-            sent: false,
-            createdAt: admin.firestore.FieldValue.serverTimestamp(),
-          });
-
-          grantedCount++;
-        } catch (error) {
-          logError(`Error granting allowance to user ${userId}:`, error);
-        }
-      }
-
-      logInfo(`Monthly allowances granted to ${grantedCount} users`);
-    } catch (error) {
-      logError('Error granting monthly allowances:', error);
-      throw error;
-    }
-  }
-);
+// ========== 3. MONTHLY ALLOWANCES ==========
+// Moved to ./monthlyAllowance.ts (grantMonthlyCoinAllowances).
 
 // ========== 6. CLAIM REWARD (HTTP Callable) ==========
 

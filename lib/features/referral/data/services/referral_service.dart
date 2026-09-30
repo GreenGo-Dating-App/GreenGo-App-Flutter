@@ -58,6 +58,18 @@ class ReferralService {
   final FirebaseFirestore firestore;
   final Random _random;
 
+  /// Coins the REFERRER earns per friend who redeems their code.
+  /// Mirrors REFERRER_COIN_REWARD in functions/src/referral/redeemReferral.ts
+  /// (the server is the source of truth; this is only used for display).
+  static const int referrerCoinReward = 100;
+
+  /// Monthly cap on referral coins for one referrer.
+  /// Mirrors REFERRER_MONTHLY_CAP in functions/src/referral/redeemReferral.ts.
+  static const int referrerMonthlyCap = 1000;
+
+  /// Timeout for the code lookup/creation so the screen never spins forever.
+  static const Duration requestTimeout = Duration(seconds: 15);
+
   // Unambiguous charset (no 0/O/1/I/L) for human-friendly codes.
   static const String _charset = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
   static const int _codeLength = 6;

@@ -6,9 +6,14 @@ class EditSectionCard extends StatelessWidget {
 
   const EditSectionCard({
     required this.title, required this.subtitle, required this.icon, required this.onTap, super.key,
+    this.subtitleMaxLines = 1,
   });
   final String title;
   final String subtitle;
+
+  /// Max lines for [subtitle]; `null` lets it wrap fully (no ellipsis), for
+  /// subtitles that carry information the user must read in full.
+  final int? subtitleMaxLines;
   final IconData icon;
   final VoidCallback onTap;
 
@@ -60,8 +65,10 @@ class EditSectionCard extends StatelessWidget {
                         color: AppColors.textSecondary,
                         fontSize: 14,
                       ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                      maxLines: subtitleMaxLines,
+                      overflow: subtitleMaxLines == null
+                          ? TextOverflow.visible
+                          : TextOverflow.ellipsis,
                     ),
                   ],
                 ),

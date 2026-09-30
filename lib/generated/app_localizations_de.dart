@@ -11898,8 +11898,26 @@ class AppLocalizationsDe extends AppLocalizations {
   String get referralCountLabel => 'Eingeladene Freunde';
 
   @override
-  String get referralHowItWorks =>
-      'Teile deinen Code — wenn ein Freund damit beitritt, erhaltet ihr beide Coins.';
+  String referralHowItWorks(int coins, int monthlyCap) {
+    final intl.NumberFormat coinsNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String coinsString = coinsNumberFormat.format(coins);
+    final intl.NumberFormat monthlyCapNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
+    final String monthlyCapString = monthlyCapNumberFormat.format(monthlyCap);
+
+    return 'Teile deinen Code — wenn ein Freund damit beitritt, erhältst du $coinsString Coins (bis zu $monthlyCapString pro Monat) und er bekommt 1 Monat Platinum.';
+  }
+
+  @override
+  String get referralHowItWorksTitle => 'So funktioniert\'s';
+
+  @override
+  String get achievementsLoadError => 'Erfolge konnten nicht geladen werden';
+
+  @override
+  String get loadErrorCheckConnection =>
+      'Prüfe deine Verbindung und versuche es erneut.';
 
   @override
   String get streakTitle => 'Serie';
