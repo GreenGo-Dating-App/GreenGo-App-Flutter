@@ -12,10 +12,12 @@ import '../../../../core/services/location_share_service.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/attractions_datasource.dart';
+import '../../domain/attraction_filters.dart';
 import '../../domain/category_labels.dart';
 import '../../domain/country_resolver.dart';
 import '../../domain/entities/attraction.dart';
 import '../screens/attraction_detail_screen.dart';
+import 'attractions_filter_sheet.dart';
 
 /// Curated attractions, scoped to ONE country at a time.
 ///
@@ -37,6 +39,7 @@ class AttractionsTab extends StatefulWidget {
     this.sort = 'distance',
     this.userLat,
     this.userLng,
+    this.filters,
   });
 
   final bool gridView;
@@ -49,12 +52,17 @@ class AttractionsTab extends StatefulWidget {
   final double? userLat;
   final double? userLng;
 
+  /// Lets a host (the Events search bar) open the filter sheet and show a
+  /// "filters active" badge. Optional: without it the tab still filters with
+  /// its defaults, it just has no external entry point to the sheet.
+  final AttractionsFilterController? filters;
+
   @override
   State<AttractionsTab> createState() => _AttractionsTabState();
 }
 
 class _AttractionsTabState extends State<AttractionsTab>
-    with TickerProviderStateMixin, AutomaticKeepAliveClientMixin {
+    with AutomaticKeepAliveClientMixin {
   final _ds = AttractionsDataSource();
 
   // Kept alive so swiping between the Events sub-tabs doesn't re-bootstrap.
@@ -105,26 +113,49 @@ class _AttractionsTabState extends State<AttractionsTab>
   bool _travelerActive = false;
   bool _locating = false;
 
-  /// Category TabBar. Rebuilt whenever the visible category set changes
-  /// (i.e. when the country changes), since the tab count must match.
-  TabController? _catController;
-  List<String> _catKeys = const [];
-
   double? get _posLat => _lat ?? widget.userLat;
   double? get _posLng => _lng ?? widget.userLng;
   String? _category; // raw xlsx Category (e.g. 'Historic Site'); null = all
+  String? _city; // attractionCityKey; null = all cities
 
   /// GreenGo Score filter (inclusive, 0-100). The full range = no filter.
   RangeValues _scoreRange = const RangeValues(0, 100);
-  bool get _scoreFiltered => _scoreRange.start > 0 || _scoreRange.end < 100;
   String _bucket = 'greengo-chat.firebasestorage.app';
 
   bool _loading = true;
   bool _failed = false;
 
+  // ------------------------------------------------------ image readiness ---
+  //
+  // A card is only revealed once its image is decoded (or has failed, in which
+  // case the card's error fallback shows). The first window is precached
+  // before the grid paints (spinner meanwhile, capped so one slow image never
+  // blocks the list) and the next window is precached ahead while scrolling.
+
+  /// Image variant per layout. Must match what [_tile] / [_card] render, or
+  /// the precache warms a different ImageCache entry than the one displayed.
+  static const String _gridVariant = 'thumb';
+  static const String _listVariant = 'thumb';
+  String get _variant => widget.gridView ? _gridVariant : _listVariant;
+
+  static const Duration _precacheCap = Duration(seconds: 3);
+
+  /// URLs whose image finished (decoded or failed).
+  final Set<String> _decoded = {};
+  final Map<String, Future<void>> _inflight = {};
+
+  /// Window (list identity + variant) whose first page is ready to paint.
+  String _readyKey = '';
+  String? _preparingKey;
+  bool _growing = false;
+
+  /// The full ordered list last built, so scrolling can precache from it.
+  List<Attraction> _lastAll = const [];
+
   @override
   void initState() {
     super.initState();
+    widget.filters?.attach(_openFilters);
     _scroll.addListener(_onScroll);
     _lat = widget.userLat;
     _lng = widget.userLng;
@@ -139,10 +170,70 @@ class _AttractionsTabState extends State<AttractionsTab>
     if (!_scroll.hasClients) return;
     final pos = _scroll.position;
     if (pos.pixels < pos.maxScrollExtent - 600) return;
-    if (_visibleCount >= _lastItemCount) return;
+    _revealMore();
+  }
+
+  /// Grows the window by one page once that page's images are ready (capped),
+  /// then warms the page after it so the next boundary is instant.
+  Future<void> _revealMore() async {
+    if (_growing || _visibleCount >= _lastItemCount) return;
+    _growing = true;
+    final key = _windowKey;
+    final variant = _variant;
+    final next = _lastAll.skip(_visibleCount).take(_pageSize).toList();
+    await _precache(next, variant, cap: _precacheCap);
+    _growing = false;
+    if (!mounted || key != _windowKey) return;
     setState(() {
-      _visibleCount =
-          (_visibleCount + _pageSize).clamp(0, _lastItemCount);
+      _visibleCount = (_visibleCount + _pageSize).clamp(0, _lastItemCount);
+    });
+    unawaited(_precache(
+        _lastAll.skip(_visibleCount).take(_pageSize).toList(), variant));
+  }
+
+  String _urlOf(Attraction a, String variant) =>
+      a.imageUrl(variant, bucket: _bucket);
+
+  /// Decodes [list]'s images into the ImageCache using the SAME provider the
+  /// cards use (CachedNetworkImageProvider keyed by URL), so a revealed card
+  /// paints its image on the first frame. Completes when all are done or
+  /// failed, or after [cap].
+  Future<void> _precache(List<Attraction> list, String variant,
+      {Duration? cap}) {
+    if (!mounted || list.isEmpty) return Future.value();
+    final waits = <Future<void>>[];
+    for (final a in list) {
+      final url = _urlOf(a, variant);
+      if (_decoded.contains(url)) continue;
+      waits.add(_inflight[url] ??= precacheImage(
+        CachedNetworkImageProvider(url),
+        context,
+        onError: (_, __) {/* card shows its error fallback */},
+      ).catchError((_) {}).whenComplete(() {
+        _inflight.remove(url);
+        _decoded.add(url);
+      }));
+    }
+    if (waits.isEmpty) return Future.value();
+    final all = Future.wait(waits);
+    return cap == null
+        ? all
+        : all.timeout(cap, onTimeout: () => const <void>[]);
+  }
+
+  /// Precaches the first window of [readyKey] and then reveals it.
+  void _prepareFirstWindow(String readyKey, List<Attraction> items) {
+    if (_preparingKey == readyKey) return;
+    _preparingKey = readyKey;
+    final variant = _variant;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) return;
+      await _precache(items, variant, cap: _precacheCap);
+      if (!mounted || _preparingKey != readyKey) return;
+      setState(() => _readyKey = readyKey);
+      // Warm the following page before the user reaches it.
+      unawaited(_precache(
+          _lastAll.skip(_visibleCount).take(_pageSize).toList(), variant));
     });
   }
 
@@ -162,15 +253,20 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   @override
   void dispose() {
+    widget.filters?.detach(_openFilters);
     _scroll.removeListener(_onScroll);
     _scroll.dispose();
-    _catController?.dispose();
     super.dispose();
   }
 
   @override
   void didUpdateWidget(AttractionsTab old) {
     super.didUpdateWidget(old);
+    if (!identical(old.filters, widget.filters)) {
+      old.filters?.detach(_openFilters);
+      widget.filters?.attach(_openFilters);
+      _publishActive();
+    }
     if (widget.query.trim().isNotEmpty && _all.isEmpty) _loadAll();
     // A refined device position (from the Events screen) re-sorts and can
     // reveal the "you're here" country — unless Traveler mode pins the anchor.
@@ -341,7 +437,13 @@ class _AttractionsTabState extends State<AttractionsTab>
       setState(() {
         _hereIso = iso;
         if (!_userPickedCountry && iso != null) _selectedIso = iso;
+        // Category / city belong to the previous country.
+        if (switched) {
+          _category = null;
+          _city = null;
+        }
       });
+      _publishActive();
       // A late fix that moves the user into another country must also load it.
       if (switched) await _loadSelected();
     } catch (_) {/* non-fatal: falls back to primaryOrigin */}
@@ -466,14 +568,10 @@ class _AttractionsTabState extends State<AttractionsTab>
     return scored.map((e) => e.$2).toList();
   }
 
-  /// What the grid/list renders: [_matched] narrowed to the selected category
-  /// and ordered. Search results keep their relevance order; browsing uses the
-  /// sort chosen in the search bar.
-  List<Attraction> _visibleFrom(List<Attraction> base) {
-    var list = base;
-    if (_category != null) {
-      list = list.where((a) => a.category == _category).toList();
-    }
+  /// What the grid/list renders: [base] (already narrowed by the filters)
+  /// ordered by the sort chosen in the search bar, with relevance as the
+  /// tie-breaker while searching.
+  List<Attraction> _visibleFrom(List<Attraction> list) {
     // The sort bar stays live while searching: after results load the user can
     // still order them by distance, GreenGo Score, rating, price or name.
     // Relevance is kept as the tie-breaker so equally-ranked items retain a
@@ -516,264 +614,85 @@ class _AttractionsTabState extends State<AttractionsTab>
     return out;
   }
 
-  // ---------------------------------------------------------------- chips ---
+  // -------------------------------------------------------------- filters ---
 
-  Widget _countryChips(AppLocalizations l10n) {
-    final chips = <Widget>[];
-    void add(String iso, String suffix) {
-      final c = _countries.firstWhere((x) => x.iso2 == iso,
-          orElse: () => AttractionCountry(iso2: iso, name: iso, total: 0));
-      final selected = _selectedIso == iso;
-      chips.add(Padding(
-        padding: const EdgeInsets.only(right: 8),
-        child: ChoiceChip(
-          label: Text('${c.name} · $suffix'),
-          selected: selected,
-          backgroundColor: AppColors.backgroundCard,
-          selectedColor: AppColors.richGold,
-          labelStyle: TextStyle(
-              fontSize: 12,
-              color: selected ? AppColors.deepBlack : AppColors.textPrimary),
-          onSelected: (_) {
-            setState(() {
-              _selectedIso = iso;
-              _userPickedCountry = true;
-            });
-            _loadSelected();
-          },
-        ),
-      ));
+  /// The country the tab picks on its own: where the user is, else home, else
+  /// the first published one. "Clear" returns here.
+  String? get _defaultIso =>
+      _hereIso ?? _homeIso ?? (_countries.isNotEmpty ? _countries.first.iso2 : null);
+
+  AttractionFilterSelection get _selection => AttractionFilterSelection(
+        countryIso: _selectedIso,
+        minScore: _scoreRange.start.round(),
+        maxScore: _scoreRange.end.round(),
+        category: _category,
+        city: _city,
+      );
+
+  /// Tells the host whether to badge its filter icon. Deferred to after the
+  /// frame: this can run during build, where notifying listeners is illegal.
+  void _publishActive() {
+    final c = widget.filters;
+    if (c == null) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || !identical(widget.filters, c)) return;
+      c.setActive(_selection.isActive(_defaultIso));
+    });
+  }
+
+  /// Countries for the sheet: "you're here" and home first, then the rest of
+  /// the published catalogue by name.
+  List<AttractionCountryOption> _countryOptions(AppLocalizations l10n) {
+    final out = <AttractionCountryOption>[];
+    final seen = <String>{};
+    void add(String iso, [String? suffix]) {
+      if (!seen.add(iso)) return;
+      final name = _countryNameOf(iso) ?? iso;
+      out.add((iso: iso, label: suffix == null ? name : '$name · $suffix'));
     }
 
     if (_hereIso != null) add(_hereIso!, l10n.attrChipHere);
-    if (_homeIso != null && _homeIso != _hereIso) {
-      add(_homeIso!, l10n.attrChipHome);
+    if (_homeIso != null) add(_homeIso!, l10n.attrChipHome);
+    final rest = [..._countries]..sort((a, b) => a.name.compareTo(b.name));
+    for (final c in rest) {
+      add(c.iso2);
     }
-    // One country available => nothing to switch between.
-    if (chips.length < 2) return const SizedBox.shrink();
-    return SizedBox(
-      height: 44,
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-        children: chips,
-      ),
-    );
+    // A country selected from elsewhere must stay representable.
+    if (_selectedIso != null) add(_selectedIso!);
+    return out;
   }
 
-  /// "GreenGo Score" chip under the category tabs; opens [_pickScoreRange].
-  Widget _scoreFilterBar(AppLocalizations l10n) {
-    final lo = _scoreRange.start.round(), hi = _scoreRange.end.round();
-    return Container(
-      color: AppColors.deepBlack,
-      padding: const EdgeInsets.fromLTRB(12, 6, 12, 6),
-      alignment: Alignment.centerLeft,
-      child: Wrap(spacing: 8, children: [
-        FilterChip(
-          selected: _scoreFiltered,
-          showCheckmark: false,
-          avatar: Icon(Icons.diamond_outlined,
-              size: 16,
-              color:
-                  _scoreFiltered ? AppColors.deepBlack : AppColors.richGold),
-          label: Text('${l10n.attrScoreLabel}  $lo–$hi'),
-          labelStyle: TextStyle(
-            fontSize: 12.5,
-            fontWeight: FontWeight.w600,
-            color: _scoreFiltered ? AppColors.deepBlack : AppColors.textPrimary,
-          ),
-          backgroundColor: AppColors.backgroundCard,
-          selectedColor: AppColors.richGold,
-          side: BorderSide(color: AppColors.richGold.withOpacity(0.4)),
-          onSelected: (_) => _pickScoreRange(l10n),
-        ),
-        if (_scoreFiltered)
-          ActionChip(
-            label: Text(l10n.clearFilters,
-                style: const TextStyle(
-                    fontSize: 12, color: AppColors.textSecondary)),
-            backgroundColor: AppColors.backgroundCard,
-            side: const BorderSide(color: AppColors.divider),
-            onPressed: () =>
-                setState(() => _scoreRange = const RangeValues(0, 100)),
-          ),
-      ]),
+  /// Opens the filter sheet (score, category, country -> city). Attached to
+  /// [AttractionsTab.filters] so the Events search bar icon can call it.
+  Future<void> _openFilters() async {
+    if (!mounted || _loading || _countries.isEmpty) return;
+    final l10n = AppLocalizations.of(context)!;
+    final picked = await AttractionsFilterSheet.show(
+      context,
+      initial: _selection,
+      defaults: AttractionFilterSelection(countryIso: _defaultIso),
+      countries: _countryOptions(l10n),
+      currentPool: _matched,
+      loadCountry: _ds.forCountry,
     );
+    if (picked == null || !mounted) return;
+    _applyFilters(picked);
   }
 
-  /// Bottom sheet with a 0-100 range slider for the GreenGo Score.
-  Future<void> _pickScoreRange(AppLocalizations l10n) async {
-    var draft = _scoreRange;
-    final picked = await showModalBottomSheet<RangeValues>(
-      context: context,
-      backgroundColor: AppColors.backgroundCard,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (ctx) => StatefulBuilder(
-        builder: (ctx, setSheet) => SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(children: [
-                  Expanded(
-                    child: Text(l10n.attrScoreLabel,
-                        style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Text('${draft.start.round()} – ${draft.end.round()}',
-                      style: const TextStyle(
-                          color: AppColors.richGold,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700)),
-                ]),
-                const SizedBox(height: 8),
-                RangeSlider(
-                  values: draft,
-                  min: 0,
-                  max: 100,
-                  divisions: 100,
-                  activeColor: AppColors.richGold,
-                  inactiveColor: AppColors.richGold.withOpacity(0.2),
-                  labels: RangeLabels('${draft.start.round()}',
-                      '${draft.end.round()}'),
-                  onChanged: (v) => setSheet(() => draft = v),
-                ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('0',
-                        style: TextStyle(
-                            color: AppColors.textTertiary, fontSize: 12)),
-                    Text('100',
-                        style: TextStyle(
-                            color: AppColors.textTertiary, fontSize: 12)),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                Row(children: [
-                  TextButton(
-                    onPressed: () =>
-                        Navigator.pop(ctx, const RangeValues(0, 100)),
-                    child: Text(l10n.clearFilters,
-                        style:
-                            const TextStyle(color: AppColors.textSecondary)),
-                  ),
-                  const Spacer(),
-                  ElevatedButton(
-                    onPressed: () => Navigator.pop(ctx, draft),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.richGold,
-                      foregroundColor: AppColors.deepBlack,
-                    ),
-                    child: Text(l10n.done),
-                  ),
-                ]),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-    if (picked != null && mounted) setState(() => _scoreRange = picked);
-  }
-
-  /// Categories exactly as they appear in the spreadsheet's `Category` column,
-  /// as a scrollable TabBar. Only categories present in the loaded country are
-  /// shown, most-populated first, each with its own icon.
-  Widget _categoryTabs(AppLocalizations l10n, List<Attraction> base) {
-    final counts = <String, int>{};
-    final icons = <String, String?>{};
-    for (final a in base) {
-      final c = a.category;
-      if (c == null || c.isEmpty) continue;
-      counts[c] = (counts[c] ?? 0) + 1;
-      icons[c] ??= a.categoryIcon;
-    }
-    final cats = counts.keys.toList()
-      ..sort((a, b) {
-        final byCount = counts[b]!.compareTo(counts[a]!);
-        if (byCount != 0) return byCount;
-        return CategoryLabels.of(l10n, a).compareTo(CategoryLabels.of(l10n, b));
-      });
-    final keys = <String>['', ...cats]; // '' = All
-
-    // Recreate the controller only when the tab set actually changes.
-    if (_catController == null || !_listEq(keys, _catKeys)) {
-      _catController?.dispose();
-      _catKeys = keys;
-      final initial = _category == null ? 0 : keys.indexOf(_category!);
-      if (initial < 0 && _category != null) {
-        // The selected category is not in this result set (the country or the
-        // query changed). The bar falls back to "All", so the filter MUST be
-        // cleared too — otherwise the list stays filtered by an invisible tab
-        // and shows fewer items than the tab counts claim.
-        final stale = _category;
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (mounted && _category == stale) setState(() => _category = null);
-        });
-      }
-      _catController = TabController(
-        length: keys.length,
-        vsync: this,
-        initialIndex: initial < 0 ? 0 : initial,
-      );
-      _catController!.addListener(() {
-        if (_catController!.indexIsChanging) return;
-        final k = _catKeys[_catController!.index];
-        final next = k.isEmpty ? null : k;
-        if (next != _category) setState(() => _category = next);
-      });
-    }
-
-    if (keys.length <= 1) return const SizedBox.shrink();
-
-    return Container(
-      color: AppColors.deepBlack,
-      child: TabBar(
-        controller: _catController,
-        isScrollable: true,
-        tabAlignment: TabAlignment.start,
-        indicatorColor: AppColors.richGold,
-        indicatorWeight: 2.5,
-        labelColor: AppColors.richGold,
-        unselectedLabelColor: AppColors.textTertiary,
-        labelStyle: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w600),
-        unselectedLabelStyle: const TextStyle(fontSize: 12.5),
-        dividerColor: AppColors.divider,
-        tabs: [
-          Tab(
-            height: 46,
-            child: Row(mainAxisSize: MainAxisSize.min, children: [
-              const Icon(Icons.apps, size: 15),
-              const SizedBox(width: 6),
-              Text('${l10n.attrAllCategories}  ${base.length}'),
-            ]),
-          ),
-          ...cats.map((c) => Tab(
-                height: 46,
-                child: Row(mainAxisSize: MainAxisSize.min, children: [
-                  Icon(AttractionIcons.category(icons[c]), size: 15),
-                  const SizedBox(width: 6),
-                  Text('${CategoryLabels.of(l10n, c)}  ${counts[c]}'),
-                ]),
-              )),
-        ],
-      ),
-    );
-  }
-
-  static bool _listEq(List<String> a, List<String> b) {
-    if (a.length != b.length) return false;
-    for (var i = 0; i < a.length; i++) {
-      if (a[i] != b[i]) return false;
-    }
-    return true;
+  void _applyFilters(AttractionFilterSelection f) {
+    final iso = f.countryIso ?? _defaultIso;
+    final countryChanged = iso != _selectedIso;
+    setState(() {
+      _scoreRange = RangeValues(f.minScore.toDouble(), f.maxScore.toDouble());
+      _category = f.category;
+      _city = f.city;
+      if (countryChanged) _selectedIso = iso;
+      // Back on the automatic country => let a later fix move it again.
+      _userPickedCountry = iso != _defaultIso;
+    });
+    // Same memoised, bounded loader the country chips used.
+    if (countryChanged) _loadSelected();
+    _publishActive();
   }
 
   // ----------------------------------------------------------------- misc ---
@@ -875,28 +794,41 @@ class _AttractionsTabState extends State<AttractionsTab>
       return _messageState(l10n.attrNoCoverage, Icons.public_off);
     }
 
-    // ONE computation per build. The tab counts, the result header and the
-    // grid all read from this same list, so they can never disagree.
-    // The score filter narrows the base, so the category tab counts, the
-    // result header and the grid all agree.
-    final base = _scoreFiltered
-        ? _matched
-            .where((a) =>
-                a.greengoScore >= _scoreRange.start.round() &&
-                a.greengoScore <= _scoreRange.end.round())
-            .toList()
-        : _matched;
-    final all = _visibleFrom(base);
+    // ONE computation per build. Score, category and city all narrow the
+    // matched list (country, or search results), and the result header and
+    // the grid both read from it, so they can never disagree.
+    final all = _visibleFrom(filterAttractions(
+      _matched,
+      minScore: _scoreRange.start.round(),
+      maxScore: _scoreRange.end.round(),
+      category: _category,
+      city: _city,
+    ));
+    _lastAll = all;
     // Reset the window when the underlying list changes identity.
     _syncWindow(
-      '${_selectedIso ?? ''}|${_category ?? ''}|$_effectiveSort|${widget.query.trim()}'
+      '${_selectedIso ?? ''}|${_category ?? ''}|${_city ?? ''}|$_effectiveSort'
+      '|${widget.query.trim()}'
       '|${_scoreRange.start.round()}-${_scoreRange.end.round()}',
       all.length,
     );
+    _publishActive();
     final items = all.length <= _visibleCount
         ? all
         : all.sublist(0, _visibleCount);
     final hasMore = all.length > items.length;
+
+    // Hold the grid until the first window's images are decoded (capped).
+    final readyKey = '$_windowKey|$_variant';
+    if (_readyKey != readyKey) {
+      final variant = _variant;
+      if (items.every((a) => _decoded.contains(_urlOf(a, variant)))) {
+        _readyKey = readyKey; // all cached already: no spinner flash
+      } else {
+        _prepareFirstWindow(readyKey, items);
+      }
+    }
+    final imagesReady = _readyKey == readyKey;
 
     return Column(
       children: [
@@ -910,7 +842,7 @@ class _AttractionsTabState extends State<AttractionsTab>
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  l10n.attrSearchResults(base.length, widget.query.trim()),
+                  l10n.attrSearchResults(all.length, widget.query.trim()),
                   style: const TextStyle(
                       color: AppColors.textSecondary, fontSize: 12),
                 ),
@@ -922,9 +854,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                     child: CircularProgressIndicator(
                         strokeWidth: 2, color: AppColors.richGold)),
             ]),
-          )
-        else
-          _countryChips(l10n),
+          ),
         if (!_searching && _posLat == null)
           Container(
             width: double.infinity,
@@ -949,14 +879,14 @@ class _AttractionsTabState extends State<AttractionsTab>
               ),
             ]),
           ),
-        _categoryTabs(l10n, base),
-        _scoreFilterBar(l10n),
-        const Divider(height: 1, color: AppColors.divider),
         Expanded(
           child: RefreshIndicator(
             color: AppColors.richGold,
             onRefresh: _refresh,
-            child: items.isEmpty
+            child: !imagesReady
+                ? const Center(
+                    child: CircularProgressIndicator(color: AppColors.richGold))
+                : items.isEmpty
                 ? ListView(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 80),
@@ -1059,7 +989,7 @@ class _AttractionsTabState extends State<AttractionsTab>
             children: [
               Expanded(
                 child: Stack(fit: StackFit.expand, children: [
-                  Semantics(label: a.altText ?? a.name, child: _img(a, 'thumb', null)),
+                  Semantics(label: a.altText ?? a.name, child: _img(a, _gridVariant, null)),
                   Positioned(top: 4, left: 4, child: _scoreBadge(a, size: 10)),
                   Positioned(
                     top: 4,
@@ -1174,7 +1104,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                     // 'thumb' (720x405) at a 160px-tall row: 'card' (1280x720)
                     // was ~3x the bytes for no visible gain, which hurt most on
                     // web where every row is a fresh network fetch.
-                    label: a.altText ?? a.name, child: _img(a, 'thumb', 160)),
+                    label: a.altText ?? a.name, child: _img(a, _listVariant, 160)),
               ),
               Positioned(top: 8, left: 8, child: _scoreBadge(a, size: 12)),
               Positioned(

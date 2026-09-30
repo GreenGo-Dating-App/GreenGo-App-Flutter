@@ -13394,6 +13394,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String get attrAllCategories => 'Todas';
 
   @override
+  String get attrFilterCategory => 'Categoria';
+
+  @override
+  String get attrFilterCountry => 'País';
+
+  @override
+  String get attrFilterCity => 'Cidade';
+
+  @override
+  String get attrAllCities => 'Todas as cidades';
+
+  @override
   String get attrSortDistance => 'Mais próximas';
 
   @override
@@ -27686,6 +27698,18 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get attrAllCategories => 'Todas';
+
+  @override
+  String get attrFilterCategory => 'Categoria';
+
+  @override
+  String get attrFilterCountry => 'País';
+
+  @override
+  String get attrFilterCity => 'Cidade';
+
+  @override
+  String get attrAllCities => 'Todas as cidades';
 
   @override
   String get attrSortDistance => 'Mais próximas';

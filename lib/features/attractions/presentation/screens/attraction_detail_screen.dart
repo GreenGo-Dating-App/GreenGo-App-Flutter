@@ -241,6 +241,22 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
         ),
       );
 
+  /// Full-screen photo viewer: pinch/double-tap zoom, tap or X to close.
+  void _openImage(BuildContext context, Attraction a) {
+    final url = a.imageUrl('hero', bucket: widget.bucket);
+    Navigator.of(context).push(PageRouteBuilder<void>(
+      opaque: false,
+      barrierColor: Colors.black,
+      pageBuilder: (ctx, _, __) => _AttractionImageViewer(
+        url: url,
+        heroTag: 'attraction-image-${a.id}',
+        semanticLabel: a.altText ?? a.name,
+      ),
+      transitionsBuilder: (_, anim, __, child) =>
+          FadeTransition(opacity: anim, child: child),
+    ));
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -294,23 +310,42 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
           ],
           flexibleSpace: FlexibleSpaceBar(
             background: Stack(fit: StackFit.expand, children: [
+              // Tap the photo to open it full screen (pinch to zoom).
               Semantics(
                 label: a.altText ?? a.name,
-                child: CachedNetworkImage(
-                  imageUrl: a.imageUrl('hero', bucket: widget.bucket),
-                  fit: BoxFit.cover,
-                  placeholder: (_, __) =>
-                      Container(color: AppColors.backgroundInput),
-                  errorWidget: (_, __, ___) =>
-                      Container(color: AppColors.backgroundInput),
+                button: true,
+                child: GestureDetector(
+                  onTap: () => _openImage(context, a),
+                  child: Hero(
+                    tag: 'attraction-image-${a.id}',
+                    child: CachedNetworkImage(
+                      imageUrl: a.imageUrl('hero', bucket: widget.bucket),
+                      fit: BoxFit.cover,
+                      placeholder: (_, __) => Container(
+                        color: AppColors.backgroundInput,
+                        alignment: Alignment.center,
+                        child: const SizedBox(
+                          width: 22,
+                          height: 22,
+                          child: CircularProgressIndicator(
+                              strokeWidth: 2, color: AppColors.richGold),
+                        ),
+                      ),
+                      errorWidget: (_, __, ___) =>
+                          Container(color: AppColors.backgroundInput),
+                    ),
+                  ),
                 ),
               ),
-              const DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [Colors.transparent, Color(0xCC0A0A0A)],
+              // Legibility scrim; must not swallow the tap on the photo.
+              const IgnorePointer(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Colors.transparent, Color(0xCC0A0A0A)],
+                    ),
                   ),
                 ),
               ),
@@ -512,6 +547,69 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
         Text(label,
             style: const TextStyle(
                 color: AppColors.textSecondary, fontSize: 11.5)),
+      ]),
+    );
+  }
+}
+
+class _AttractionImageViewer extends StatelessWidget {
+  const _AttractionImageViewer({
+    required this.url,
+    required this.heroTag,
+    required this.semanticLabel,
+  });
+
+  final String url;
+  final String heroTag;
+  final String semanticLabel;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Stack(children: [
+        Positioned.fill(
+          child: GestureDetector(
+            onTap: () => Navigator.of(context).pop(),
+            child: InteractiveViewer(
+              minScale: 1,
+              maxScale: 5,
+              child: Center(
+                child: Hero(
+                  tag: heroTag,
+                  child: CachedNetworkImage(
+                    imageUrl: url,
+                    fit: BoxFit.contain,
+                    placeholder: (_, __) => const SizedBox(
+                      width: 28,
+                      height: 28,
+                      child: CircularProgressIndicator(
+                          strokeWidth: 2, color: AppColors.richGold),
+                    ),
+                    errorWidget: (_, __, ___) => const Icon(
+                        Icons.broken_image_outlined,
+                        color: AppColors.textTertiary,
+                        size: 48),
+                    imageBuilder: (_, provider) => Image(
+                      image: provider,
+                      fit: BoxFit.contain,
+                      semanticLabel: semanticLabel,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        Positioned(
+          top: MediaQuery.of(context).padding.top + 8,
+          right: 12,
+          child: IconButton(
+            tooltip: MaterialLocalizations.of(context).closeButtonTooltip,
+            icon: const Icon(Icons.close, color: Colors.white, size: 28),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+        ),
       ]),
     );
   }

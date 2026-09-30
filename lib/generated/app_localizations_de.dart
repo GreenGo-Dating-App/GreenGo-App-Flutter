@@ -13436,6 +13436,18 @@ class AppLocalizationsDe extends AppLocalizations {
   String get attrAllCategories => 'Alle';
 
   @override
+  String get attrFilterCategory => 'Kategorie';
+
+  @override
+  String get attrFilterCountry => 'Land';
+
+  @override
+  String get attrFilterCity => 'Stadt';
+
+  @override
+  String get attrAllCities => 'Alle Städte';
+
+  @override
   String get attrSortDistance => 'Nächstgelegene';
 
   @override
