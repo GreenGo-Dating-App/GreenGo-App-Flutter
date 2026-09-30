@@ -559,3 +559,6 @@ export {
 // Link previews (Open Graph) for shared events + communities, served on
 // /e/**, /c/** and /og/** via Firebase Hosting rewrites.
 export { sharePreview } from './share/sharePreview';
+
+// Events — notify people when they are added as a co-owner of an event.
+export { onEventCoOwnersChanged } from './events/coOwnerNotify';
