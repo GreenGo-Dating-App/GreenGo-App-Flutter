@@ -2142,7 +2142,7 @@ class EventDetailsScreen extends StatelessWidget {
                 ),
               // Boost (feature) — CREATOR only (spends their coins), if not
               // already featured. Co-owners cannot boost.
-              if (event.isCreator(currentUserId) &&
+              if (event.isOwner(currentUserId) &&
                   !event.isCurrentlyFeatured)
                 IconButton(
                   icon: const Icon(Icons.rocket_launch,
@@ -2784,8 +2784,8 @@ class EventDetailsScreen extends StatelessWidget {
   /// screen. When active, shows "Featured until …"; otherwise shows a paid
   /// call-to-action that spends coins to feature the event for 7 days.
   Widget _buildFeaturedSection(BuildContext context, Event event) {
-    // Creator only: boosting spends the creator's coins.
-    if (!event.isCreator(currentUserId)) {
+    // Any owner (creator or co-owner) may boost, paying with their own coins.
+    if (!event.isOwner(currentUserId)) {
       return const SizedBox.shrink();
     }
     final until = event.featuredUntil;

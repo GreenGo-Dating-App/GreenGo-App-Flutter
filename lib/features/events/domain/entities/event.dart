@@ -112,8 +112,6 @@ const List<String> kEventCreatorOnlyFields = [
   'organizerName',
   'organizerPhotoUrl',
   'coOrganizerIds',
-  'isFeatured',
-  'featuredUntil',
 ];
 
 /// Event Entity

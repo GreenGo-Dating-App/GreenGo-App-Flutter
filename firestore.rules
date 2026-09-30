@@ -1448,14 +1448,14 @@ service cloud.firestore {
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
                  .hasOnly(['attendeeCount', 'tierGoingCounts', 'viewCount']));
-      // Co-owners may edit the event, but NEVER the creator-only fields:
-      // ownership (organizerId + the host name/photo snapshot), the co-owner
-      // list itself, or the coin-paid boost (isFeatured / featuredUntil).
-      // Mirrors kEventCreatorOnlyFields in the Event entity.
+      // Co-owners may edit and boost the event like the organiser, but NEVER
+      // the creator-only fields: ownership (organizerId + the host name/photo
+      // snapshot) or the co-owner list itself. Mirrors kEventCreatorOnlyFields
+      // in the Event entity.
       allow update: if isCoOrganizer()
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
-                       'coOrganizerIds', 'isFeatured', 'featuredUntil']);
+                       'coOrganizerIds']);
 
       match /attendees/{uid} {
         function parentEvent() {
