@@ -26,6 +26,7 @@ import '../../../business/presentation/widgets/business_follow_button.dart';
 import '../../../../core/services/deep_link_service.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
+import '../../../follows/presentation/widgets/profile_follow_section.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
@@ -543,6 +544,17 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                               ),
                             ),
                           ],
+                        ),
+
+                        const SizedBox(height: 12),
+
+                        // Followers · following (tappable → lists) + Follow
+                        // button for other people. Business accounts keep
+                        // their own follow pill below (same follow graph).
+                        ProfileFollowSection(
+                          profileUserId: widget.profile.userId,
+                          currentUserId: widget.currentUserId,
+                          showButton: !widget.profile.isBusiness,
                         ),
 
                         const SizedBox(height: 24),

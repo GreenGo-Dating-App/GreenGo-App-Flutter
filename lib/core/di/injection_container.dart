@@ -203,6 +203,9 @@ import '../../features/passport/data/services/passport_service.dart';
 import '../../features/saved_searches/data/saved_searches_service.dart';
 import '../services/pronunciation_service.dart';
 import '../services/visual_vocabulary_service.dart';
+import '../../features/user_experiences/data/datasources/user_experiences_remote_datasource.dart';
+import '../../features/user_experiences/data/repositories/user_experiences_repository_impl.dart';
+import '../../features/user_experiences/domain/repositories/user_experiences_repository.dart';
 
 final sl = GetIt.instance;
 
@@ -328,7 +331,7 @@ Future<void> init() async {
   // Business B2B services: follow (denormalized follower counts + fan-out)
   // and lead capture (contact / saved-event leads).
   sl.registerLazySingleton<FollowService>(
-    () => FollowService(firestore: sl()),
+    () => FollowService(firestore: sl(), blockedUsersService: sl()),
   );
   sl.registerLazySingleton<LeadsService>(
     () => LeadsService(firestore: sl()),
@@ -882,6 +885,13 @@ Future<void> init() async {
   sl.registerLazySingleton(PronunciationService.new);
   sl.registerLazySingleton(VisualVocabularyService.new);
   sl.registerLazySingleton(AppSoundService.new);
+
+  //! Features - User experiences (member-hosted, with reviews)
+  sl.registerLazySingleton<UserExperiencesRepository>(
+    () => UserExperiencesRepositoryImpl(
+      remote: UserExperiencesRemoteDataSource(),
+    ),
+  );
 
   //! External
   final sharedPreferences = await SharedPreferences.getInstance();

@@ -18,6 +18,7 @@ import '../../../communities/presentation/bloc/communities_bloc.dart';
 import '../../../communities/presentation/screens/community_detail_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
+import '../../../user_experiences/presentation/screens/experience_detail_screen.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
@@ -357,6 +358,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
         type == NotificationType.superLike ||
         type == NotificationType.newMatch ||
         type == NotificationType.businessFollow ||
+        type == NotificationType.newFollower ||
         type == NotificationType.businessRating ||
         type == NotificationType.qrScanned) {
       final actor = notification.actorId;
@@ -373,6 +375,16 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
             ]);
       if (profileId != null && profileId != userId) {
         _openProfile(context, profileId);
+      }
+      return;
+    }
+
+    // Member-hosted experience (review / reply / '@' mention).
+    final experienceId = pick(['experienceId']);
+    if (action == 'experience' || experienceId != null) {
+      if (experienceId != null) {
+        Navigator.of(context).push(ExperienceDetailScreen.route(
+            experienceId: experienceId, currentUserId: userId));
       }
       return;
     }
@@ -729,6 +741,7 @@ class _NotificationTile extends StatelessWidget {
         return Icons.thumb_up;
       case NotificationType.qrScanned:
         return Icons.qr_code;
+      case NotificationType.newFollower:
       case NotificationType.businessFollow:
         return Icons.person_add;
       case NotificationType.businessRating:

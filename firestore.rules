@@ -129,7 +129,10 @@ service cloud.firestore {
              in ['FREE', 'free', 'BASIC', 'basic']
         && request.resource.data.get('membershipEndDate', null) == null
         && request.resource.data.get('hasBaseMembership', false) == false
-        && request.resource.data.get('baseMembershipEndDate', null) == null;
+        && request.resource.data.get('baseMembershipEndDate', null) == null
+        // Follow counters are server-owned (functions social/follows.ts).
+        && request.resource.data.get('followersCount', 0) == 0
+        && request.resource.data.get('followingCount', 0) == 0;
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
@@ -180,11 +183,27 @@ service cloud.firestore {
               && request.resource.data.get('hasBaseMembership', false)
                  == resource.data.get('hasBaseMembership', false)
               && request.resource.data.get('baseMembershipEndDate', null)
-                 == resource.data.get('baseMembershipEndDate', null))
+                 == resource.data.get('baseMembershipEndDate', null)
+              // Follow counters are maintained ONLY by the follow triggers
+              // (social/follows.ts, Admin SDK).
+              && request.resource.data.get('followersCount', 0)
+                 == resource.data.get('followersCount', 0)
+              && request.resource.data.get('followingCount', 0)
+                 == resource.data.get('followingCount', 0))
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
-                 .hasOnly(['followerCount', 'ratingSum', 'ratingCount']));
+                 .hasOnly(['followerCount', 'ratingSum', 'ratingCount'])
+            // LEGACY `followerCount` (old app versions' business follow) stays
+            // writable for compatibility, but only by +-1 per write. The app
+            // now reads the server-owned `followersCount` instead.
+            && (!request.resource.data.diff(resource.data).affectedKeys()
+                   .hasAny(['followerCount'])
+                || (request.resource.data.followerCount is int
+                    && request.resource.data.followerCount
+                         - resource.data.get('followerCount', 0) >= -1
+                    && request.resource.data.followerCount
+                         - resource.data.get('followerCount', 0) <= 1)));
       allow delete: if isOwner(profileId);
     }
 
@@ -1358,15 +1377,68 @@ service cloud.firestore {
     // Followers of a business. A user manages ONLY their own follower doc under
     // a business; anyone signed in may read (follower lists / counts). The
     // follower fan-out for new events is done server-side by a Cloud Function.
+    //
+    // Since user follows shipped this is THE follow graph for every account
+    // (business or not): followers of {businessId} = any followee. Counters
+    // (profiles.followersCount / followingCount) are kept by the
+    // onUserFollowCreated / onUserFollowDeleted triggers, which mark counted
+    // edges with `counted` — so a client may write ONLY `createdAt` (= server
+    // time), may never update an edge, and may not follow itself.
     match /business_followers/{businessId}/followers/{uid} {
       allow read: if isSignedIn();
-      allow create, delete: if isOwner(uid);
+      allow create: if isOwner(uid)
+        && uid != businessId
+        && request.resource.data.keys().hasOnly(['createdAt'])
+        && request.resource.data.createdAt == request.time;
+      allow delete: if isOwner(uid);
     }
 
-    // Private mirror index of the businesses a user follows (owned by that user).
+    // Mirror index of the accounts a user follows. Readable by signed-in users
+    // (a profile's "Following" list); written only by its owner.
     match /user_business_following/{userId}/businesses/{businessId} {
-      allow read: if isOwner(userId);
-      allow create, delete: if isOwner(userId);
+      allow read: if isSignedIn();
+      allow create: if isOwner(userId) && userId != businessId;
+      allow delete: if isOwner(userId);
+    }
+
+    // ============================================================================
+    // ATTRACTION STATS — unique viewers per day (functions attractions/attractionStats.ts)
+    // ============================================================================
+    // `viewCount` is written only by onAttractionViewRecorded. A viewer creates
+    // ONE doc per attraction per UTC day, id `{YYYYMMDD}_{uid}` (today or
+    // yesterday, to absorb clock skew at midnight); never updated, deleted or
+    // read by clients.
+    // Shared translations of PUBLIC content, written only by the
+    // translateTexts function. Readable by id (the id is a hash of language +
+    // text, so you must already know the text); never listable.
+    match /translations/{id} {
+      allow get: if isSignedIn();
+      allow list, write: if false;
+    }
+    match /translation_quota/{id} {
+      allow read, write: if false;
+    }
+
+    match /attraction_stats/{attractionId} {
+      function utcDay(t) {
+        return string(t.year() * 10000 + t.month() * 100 + t.day());
+      }
+
+      allow read: if isSignedIn();
+      allow write: if false;
+
+      match /daily_viewers/{viewId} {
+        allow create: if isSignedIn()
+          && attractionId.matches('[0-9]{1,12}')
+          && (viewId == utcDay(request.time) + '_' + request.auth.uid
+              || viewId == utcDay(request.time - duration.value(1, 'd'))
+                   + '_' + request.auth.uid)
+          && request.resource.data.keys().hasOnly(['at', 'expireAt'])
+          && request.resource.data.at == request.time
+          && (!('expireAt' in request.resource.data)
+              || request.resource.data.expireAt is timestamp);
+        allow read, update, delete: if false;
+      }
     }
 
     // Leads a business receives ("Contact" / "Save to my events"). Only the
@@ -1789,6 +1861,110 @@ service cloud.firestore {
       allow read: if isSignedIn()
         && (memberId == request.auth.uid
             || resource.data.get('userId', '') == request.auth.uid);
+    }
+
+    // ============================================================================
+    // USER EXPERIENCES (member-hosted) + REVIEWS + REPLIES
+    // ============================================================================
+    // Creation goes ONLY through the createUserExperience callable: it enforces
+    // the per-tier limit (FREE 0 / SILVER 1 / GOLD 5 / PLATINUM, TEST, admin
+    // unlimited, on the EFFECTIVE tier) in one transaction with the
+    // user_experience_counts counter, validates + moderates the payload and sets
+    // every server-owned field. Hosts then edit / publish / unpublish / delete
+    // directly. status 'hidden' is moderation-only (trigger / admin): the host
+    // can neither set it nor move a listing out of it. Ratings are maintained by
+    // the onExperienceReviewWritten trigger; moderation of reviews / replies by
+    // the triggers too (status visible | rejected, never client-set).
+    match /user_experiences/{experienceId} {
+      function serverOwnedExperienceFields() {
+        return ['hostId', 'createdAt', 'ratingSum', 'ratingCount', 'ratingAvg',
+                'ratingDist', 'reviewCount', 'viewCount', 'moderation'];
+      }
+      function validExperienceText(d) {
+        return d.title is string && d.title.size() >= 5 && d.title.size() <= 80
+          && d.description is string && d.description.size() >= 30
+          && d.description.size() <= 2000
+          && d.photoUrls is list && d.photoUrls.size() <= 8
+          && d.included is list && d.included.size() >= 1
+          && d.included.size() <= 20
+          && d.notIncluded is list && d.notIncluded.size() <= 20;
+      }
+
+      allow get, list: if isSignedIn()
+        && (resource.data.status == 'published'
+            || resource.data.hostId == request.auth.uid);
+      allow create: if false;
+      allow update: if isSignedIn()
+        && resource.data.hostId == request.auth.uid
+        && !request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(serverOwnedExperienceFields())
+        && validExperienceText(request.resource.data)
+        && (request.resource.data.status == resource.data.status
+            || (resource.data.status != 'hidden'
+                && request.resource.data.status in ['draft', 'published']));
+      allow delete: if isSignedIn()
+        && (resource.data.hostId == request.auth.uid || isAdmin());
+
+      // ONE review per user per experience: the doc id is the reviewer's uid.
+      match /reviews/{reviewerId} {
+        function reviewedExperience() {
+          return get(/databases/$(database)/documents/user_experiences/$(experienceId)).data;
+        }
+        function validReview(d) {
+          return d.rating is int && d.rating >= 1 && d.rating <= 5
+            && d.comment is string && d.comment.size() <= 1000;
+        }
+
+        allow get, list: if isSignedIn()
+          && (reviewerId == request.auth.uid
+              || resource.data.get('status', '') == 'visible');
+        allow create: if isSignedIn()
+          && reviewerId == request.auth.uid
+          && request.resource.data.keys()
+               .hasOnly(['authorId', 'rating', 'comment', 'createdAt', 'updatedAt'])
+          && request.resource.data.authorId == request.auth.uid
+          && request.resource.data.createdAt == request.time
+          && request.resource.data.updatedAt == request.time
+          && validReview(request.resource.data)
+          && reviewedExperience().hostId != request.auth.uid
+          && reviewedExperience().status == 'published';
+        allow update: if isSignedIn()
+          && reviewerId == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['rating', 'comment', 'updatedAt'])
+          && request.resource.data.updatedAt == request.time
+          && validReview(request.resource.data);
+        allow delete: if isSignedIn()
+          && (reviewerId == request.auth.uid || isAdmin());
+
+        match /replies/{replyId} {
+          allow get, list: if isSignedIn()
+            && (resource.data.get('status', '') == 'visible'
+                || resource.data.authorId == request.auth.uid);
+          allow create: if isSignedIn()
+            && request.resource.data.keys()
+                 .hasOnly(['authorId', 'text', 'mentions', 'createdAt'])
+            && request.resource.data.authorId == request.auth.uid
+            && request.resource.data.createdAt == request.time
+            && request.resource.data.text is string
+            && request.resource.data.text.size() >= 1
+            && request.resource.data.text.size() <= 500
+            && request.resource.data.mentions is list
+            && request.resource.data.mentions.size() <= 10
+            && exists(/databases/$(database)/documents/user_experiences/$(experienceId)/reviews/$(reviewerId))
+            && get(/databases/$(database)/documents/user_experiences/$(experienceId)).data.status == 'published';
+          allow update: if false;
+          allow delete: if isSignedIn()
+            && (resource.data.authorId == request.auth.uid || isAdmin());
+        }
+      }
+    }
+
+    // Per-host experience counter (written only by createUserExperience and
+    // the delete trigger); the host may read their own.
+    match /user_experience_counts/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false;
     }
 
     // ============================================================================

@@ -18,6 +18,7 @@ import '../../../features/communities/presentation/bloc/communities_bloc.dart';
 import '../../../features/communities/presentation/screens/community_detail_screen.dart';
 import '../../../features/discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../features/events/presentation/screens/event_detail_loader_screen.dart';
+import '../../../features/user_experiences/presentation/screens/experience_detail_screen.dart';
 import '../../../features/profile/data/models/profile_model.dart';
 import '../../../features/profile/domain/repositories/profile_repository.dart';
 import '../../../features/profile/presentation/bloc/profile_bloc.dart';
@@ -258,6 +259,16 @@ class PushNotificationService {
       return null;
     }
 
+    // USER EXPERIENCE (experience_review / experience_reply / experience_mention).
+    final experienceId = pick(['experienceId']);
+    if (action == 'experience' || experienceId != null) {
+      if (experienceId != null) {
+        navigator.push(ExperienceDetailScreen.route(
+            experienceId: experienceId, currentUserId: userId));
+      }
+      return;
+    }
+
     // EVENT (community_event / event_reminder / new_event / event_join / like…)
     final eventId = pick(['eventId']);
     if (action == 'event' || action == 'open_event' || eventId != null) {
@@ -311,6 +322,7 @@ class PushNotificationService {
         type == 'superLike' ||
         type == 'profileView' ||
         type == 'business_follow' ||
+        type == 'new_follower' ||
         type == 'business_rating' ||
         type == 'qr_scanned' ||
         (profileId != null && action == null && type == null)) {

@@ -42,6 +42,9 @@ const _serverOwnedProfileFields = <String>{
   'signupGrantsAppliedAt',
   // Denormalised counters maintained by other users' actions.
   'followerCount',
+  // Server-maintained by the follow triggers (rules forbid client writes).
+  'followersCount',
+  'followingCount',
   'ratingSum',
   'ratingCount',
 };

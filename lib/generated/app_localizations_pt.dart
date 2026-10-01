@@ -14307,6 +14307,569 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get attrApplyFilter => 'Aplicar filtro';
+
+  @override
+  String get userFollowFollow => 'Seguir';
+
+  @override
+  String get userFollowFollowing => 'A seguir';
+
+  @override
+  String get userFollowFollowBack => 'Seguir de volta';
+
+  @override
+  String get userFollowError => 'Não foi possível atualizar. Tenta novamente.';
+
+  @override
+  String get userFollowBlocked => 'Não podes seguir este utilizador.';
+
+  @override
+  String userFollowFollowersStat(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted seguidores',
+      one: '$formatted seguidor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowFollowingStat(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted a seguir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get userFollowTabFollowers => 'Seguidores';
+
+  @override
+  String get userFollowTabFollowing => 'A seguir';
+
+  @override
+  String get userFollowEmptyFollowers => 'Ainda sem seguidores';
+
+  @override
+  String get userFollowEmptyFollowing => 'Ainda não segue ninguém';
+
+  @override
+  String get userFollowListError => 'Não foi possível carregar esta lista.';
+
+  @override
+  String attractionViewsCount(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted visualizações',
+      one: '$formatted visualização',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get uexpCommunity => 'Comunidade';
+
+  @override
+  String get uexpPartners => 'Parceiros';
+
+  @override
+  String get uexpCreate => 'Criar experiência';
+
+  @override
+  String get uexpMine => 'As minhas experiências';
+
+  @override
+  String get uexpEmpty =>
+      'Ainda não há experiências da comunidade. Sê o primeiro a organizar uma!';
+
+  @override
+  String get uexpMineEmpty => 'Ainda não criaste nenhuma experiência.';
+
+  @override
+  String get uexpAll => 'Todas';
+
+  @override
+  String get uexpFree => 'Grátis';
+
+  @override
+  String get uexpCatFoodDrink => 'Comida e bebida';
+
+  @override
+  String get uexpCatCultureHistory => 'Cultura e história';
+
+  @override
+  String get uexpCatNatureOutdoors => 'Natureza e ar livre';
+
+  @override
+  String get uexpCatNightlife => 'Vida noturna';
+
+  @override
+  String get uexpCatSportsAdventure => 'Desporto e aventura';
+
+  @override
+  String get uexpCatWellness => 'Bem-estar';
+
+  @override
+  String get uexpCatLanguageLearning => 'Aprendizagem de línguas';
+
+  @override
+  String get uexpCatToursWalks => 'Passeios e visitas';
+
+  @override
+  String get uexpCatWorkshopsClasses => 'Workshops e aulas';
+
+  @override
+  String get uexpCatOther => 'Outro';
+
+  @override
+  String uexpReviewsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count avaliações',
+      one: '1 avaliação',
+      zero: 'Sem avaliações',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get uexpStatusDraft => 'Rascunho';
+
+  @override
+  String get uexpStatusPublished => 'Publicada';
+
+  @override
+  String get uexpStatusHidden => 'Oculta';
+
+  @override
+  String get uexpHiddenNotice =>
+      'Esta experiência foi ocultada por violar as normas do GreenGo. Edita o texto para a restaurar.';
+
+  @override
+  String get uexpNewTitle => 'Nova experiência';
+
+  @override
+  String get uexpEditTitle => 'Editar experiência';
+
+  @override
+  String get uexpSectionPhotos => 'Fotografias';
+
+  @override
+  String get uexpSectionBasics => 'Sobre a experiência';
+
+  @override
+  String get uexpSectionPractical => 'Informações práticas';
+
+  @override
+  String get uexpMainPhoto => 'Fotografia principal (obrigatória)';
+
+  @override
+  String uexpMorePhotos(int max) {
+    return 'até $max fotografias adicionais';
+  }
+
+  @override
+  String get uexpFieldTitle => 'Título';
+
+  @override
+  String get uexpFieldDescription => 'Descrição';
+
+  @override
+  String get uexpFieldCategory => 'Categoria';
+
+  @override
+  String get uexpIncluded => 'O que está incluído';
+
+  @override
+  String get uexpNotIncluded => 'O que não está incluído';
+
+  @override
+  String get uexpAddItem => 'Adicionar item';
+
+  @override
+  String get uexpRemoveItem => 'Remover item';
+
+  @override
+  String get uexpItemHint => 'ex.: Petiscos locais';
+
+  @override
+  String get uexpFieldLocation => 'Local';
+
+  @override
+  String get uexpLocationHint => 'Escreve um local ou escolhe-o no mapa';
+
+  @override
+  String get uexpPickOnMap => 'Escolher no mapa';
+
+  @override
+  String get uexpMeetingPoint => 'Ponto de encontro (opcional)';
+
+  @override
+  String get uexpMeetingPointLabel => 'Ponto de encontro';
+
+  @override
+  String get uexpLocationNotFound =>
+      'Não encontrámos este local no mapa. Fica guardado tal como o escreveste e não aparecerá nos resultados próximos.';
+
+  @override
+  String get uexpDuration => 'Duração';
+
+  @override
+  String get uexpHours => 'Horas';
+
+  @override
+  String get uexpMinutes => 'Minutos';
+
+  @override
+  String uexpDurationHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String uexpDurationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String get uexpLanguages => 'Línguas faladas';
+
+  @override
+  String get uexpGroupSize => 'Tamanho do grupo';
+
+  @override
+  String get uexpMinGroup => 'Mín. pessoas (opcional)';
+
+  @override
+  String get uexpMaxGroup => 'Máx. pessoas';
+
+  @override
+  String uexpGroupSizeRange(int min, int max) {
+    return '$min–$max pessoas';
+  }
+
+  @override
+  String uexpGroupUpTo(int max) {
+    return 'Até $max pessoas';
+  }
+
+  @override
+  String get uexpPrice => 'Preço';
+
+  @override
+  String get uexpCurrency => 'Moeda';
+
+  @override
+  String get uexpIsFree => 'Esta experiência é gratuita';
+
+  @override
+  String get uexpPaymentLink => 'Como os participantes te pagam';
+
+  @override
+  String get uexpPaymentType => 'Método de pagamento';
+
+  @override
+  String get uexpPayPix => 'PIX';
+
+  @override
+  String get uexpPayPaypal => 'PayPal';
+
+  @override
+  String get uexpPayVenmo => 'Venmo';
+
+  @override
+  String get uexpPayStripe => 'Link de pagamento Stripe';
+
+  @override
+  String get uexpPayOther => 'Outro link de pagamento';
+
+  @override
+  String get uexpPaymentValuePix => 'Chave PIX';
+
+  @override
+  String get uexpPaymentValueUrl => 'Link de pagamento';
+
+  @override
+  String get uexpPaymentValueHintPix =>
+      'Email, telefone, CPF ou chave aleatória';
+
+  @override
+  String get uexpPaymentDisclaimer =>
+      'Os pagamentos são feitos fora do GreenGo, diretamente entre os participantes e o anfitrião. O GreenGo não os processa, garante nem reembolsa.';
+
+  @override
+  String get uexpAvailability => 'Disponibilidade (opcional)';
+
+  @override
+  String get uexpAvailabilityLabel => 'Disponibilidade';
+
+  @override
+  String get uexpAvailabilityHint => 'ex.: sábados 10:00–13:00';
+
+  @override
+  String get uexpCancellation => 'Política de cancelamento (opcional)';
+
+  @override
+  String get uexpCancellationLabel => 'Política de cancelamento';
+
+  @override
+  String get uexpSaveDraft => 'Guardar como rascunho';
+
+  @override
+  String get uexpPublish => 'Publicar';
+
+  @override
+  String get uexpSaveChanges => 'Guardar alterações';
+
+  @override
+  String get uexpUnpublish => 'Despublicar';
+
+  @override
+  String get uexpSaved => 'Experiência guardada';
+
+  @override
+  String get uexpPublished => 'Experiência publicada';
+
+  @override
+  String get uexpUnpublished => 'Experiência movida para rascunhos';
+
+  @override
+  String get uexpSaveFailed =>
+      'Não foi possível guardar a experiência. Tenta novamente.';
+
+  @override
+  String get uexpPhotoUploadFailed =>
+      'Não foi possível carregar as fotografias. Tenta novamente.';
+
+  @override
+  String uexpErrTitle(int min, int max) {
+    return 'O título deve ter entre $min e $max caracteres';
+  }
+
+  @override
+  String uexpErrDescription(int min, int max) {
+    return 'A descrição deve ter entre $min e $max caracteres';
+  }
+
+  @override
+  String get uexpErrMainPhoto => 'Adiciona uma fotografia principal';
+
+  @override
+  String uexpErrTooManyPhotos(int max) {
+    return 'Até $max fotografias adicionais';
+  }
+
+  @override
+  String get uexpErrIncluded => 'Adiciona pelo menos um item incluído';
+
+  @override
+  String uexpErrTooManyItems(int max) {
+    return 'Até $max itens';
+  }
+
+  @override
+  String uexpErrItemTooLong(int max) {
+    return 'Cada item pode ter até $max caracteres';
+  }
+
+  @override
+  String get uexpErrLocation => 'Indica um local';
+
+  @override
+  String get uexpErrDuration => 'Indica uma duração entre 15 minutos e 14 dias';
+
+  @override
+  String get uexpErrLanguages => 'Escolhe pelo menos uma língua';
+
+  @override
+  String uexpErrMaxGroup(int max) {
+    return 'O máximo de pessoas deve estar entre 1 e $max';
+  }
+
+  @override
+  String get uexpErrMinGroup =>
+      'O mínimo deve ser pelo menos 1 e não superior ao máximo';
+
+  @override
+  String get uexpErrPrice => 'Indica um preço válido';
+
+  @override
+  String get uexpErrPaymentRequired =>
+      'Indica como te pagam (ou marca a experiência como gratuita)';
+
+  @override
+  String get uexpErrPaymentInvalid =>
+      'Indica um link válido que comece por https://';
+
+  @override
+  String get uexpErrProhibited =>
+      'Algum texto contém linguagem não permitida no GreenGo';
+
+  @override
+  String get uexpErrNoLinks =>
+      'Não são permitidos links em avaliações e respostas';
+
+  @override
+  String uexpErrTooLong(int max) {
+    return 'Até $max caracteres';
+  }
+
+  @override
+  String get uexpErrFixFields => 'Corrige os campos assinalados';
+
+  @override
+  String get uexpLimitFeature => 'Organiza experiências';
+
+  @override
+  String get uexpLimitFreeBody =>
+      'Organizar experiências está disponível com uma subscrição Silver, Gold ou Platinum.';
+
+  @override
+  String uexpLimitReachedBody(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'O teu plano permite $limit experiências.',
+      one: 'O teu plano permite 1 experiência.',
+    );
+    return '$_temp0 Faz upgrade para criar mais experiências.';
+  }
+
+  @override
+  String get uexpUpgradeToCreateMore =>
+      'Faz upgrade para criar mais experiências';
+
+  @override
+  String get shopExperiencesCreate => 'Experiências que podes criar';
+
+  @override
+  String get uexpHostedBy => 'Organizada por';
+
+  @override
+  String get uexpHostBadge => 'Anfitrião';
+
+  @override
+  String get uexpPayBook => 'Pagar / Reservar';
+
+  @override
+  String get uexpPixCopied => 'Chave PIX copiada para a área de transferência';
+
+  @override
+  String get uexpOpenLinkFailed => 'Não foi possível abrir o link';
+
+  @override
+  String get uexpShare => 'Partilhar';
+
+  @override
+  String uexpShareText(String title, String link) {
+    return '$title\nDescobre esta experiência no GreenGo: $link';
+  }
+
+  @override
+  String get uexpReport => 'Denunciar';
+
+  @override
+  String get uexpReportTitle => 'Denunciar esta experiência?';
+
+  @override
+  String get uexpReportBody =>
+      'A nossa equipa vai analisá-la segundo as normas do GreenGo.';
+
+  @override
+  String get uexpReported => 'Obrigado, vamos analisar.';
+
+  @override
+  String get uexpReportReview => 'Denunciar avaliação';
+
+  @override
+  String get uexpEdit => 'Editar';
+
+  @override
+  String get uexpDelete => 'Eliminar';
+
+  @override
+  String get uexpDeleteConfirmTitle => 'Eliminar esta experiência?';
+
+  @override
+  String get uexpDeleteConfirmBody =>
+      'As avaliações também serão eliminadas. Não é possível anular.';
+
+  @override
+  String get uexpDeleted => 'Experiência eliminada';
+
+  @override
+  String get uexpNotFound => 'Esta experiência já não está disponível.';
+
+  @override
+  String get uexpReviews => 'Avaliações';
+
+  @override
+  String get uexpNoReviews => 'Ainda sem avaliações';
+
+  @override
+  String get uexpWriteReview => 'Escrever uma avaliação';
+
+  @override
+  String get uexpEditReview => 'Editar a tua avaliação';
+
+  @override
+  String get uexpYourRating => 'A tua classificação';
+
+  @override
+  String get uexpSelectRating => 'Escolhe de 1 a 5 estrelas';
+
+  @override
+  String get uexpCommentHint => 'Conta o que gostaste (opcional)';
+
+  @override
+  String get uexpSubmit => 'Enviar';
+
+  @override
+  String get uexpDeleteReview => 'Eliminar avaliação';
+
+  @override
+  String get uexpDeleteReviewConfirm => 'Eliminar a tua avaliação?';
+
+  @override
+  String get uexpReviewSaved => 'Avaliação guardada';
+
+  @override
+  String get uexpReviewDeleted => 'Avaliação eliminada';
+
+  @override
+  String get uexpReviewRemoved =>
+      'A tua avaliação foi removida por violar as normas do GreenGo. Edita-a para tentar novamente.';
+
+  @override
+  String get uexpReplyRemoved =>
+      'A tua resposta foi removida por violar as normas do GreenGo.';
+
+  @override
+  String get uexpPendingModeration => 'Em verificação…';
+
+  @override
+  String get uexpHostCannotReview =>
+      'Os anfitriões não podem avaliar a sua própria experiência.';
+
+  @override
+  String get uexpReply => 'Responder';
+
+  @override
+  String get uexpReplyHint =>
+      'Escreve uma resposta. Escreve @ para identificar alguém';
+
+  @override
+  String get uexpShowMoreReplies => 'Ver mais respostas';
+
+  @override
+  String get uexpLoadMoreReviews => 'Carregar mais avaliações';
+
+  @override
+  String get uexpEdited => 'editada';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -28616,4 +29179,568 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get attrApplyFilter => 'Aplicar filtro';
+
+  @override
+  String get userFollowFollow => 'Seguir';
+
+  @override
+  String get userFollowFollowing => 'Seguindo';
+
+  @override
+  String get userFollowFollowBack => 'Seguir de volta';
+
+  @override
+  String get userFollowError => 'Não foi possível atualizar. Tente novamente.';
+
+  @override
+  String get userFollowBlocked => 'Você não pode seguir este usuário.';
+
+  @override
+  String userFollowFollowersStat(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted seguidores',
+      one: '$formatted seguidor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String userFollowFollowingStat(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted seguindo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get userFollowTabFollowers => 'Seguidores';
+
+  @override
+  String get userFollowTabFollowing => 'Seguindo';
+
+  @override
+  String get userFollowEmptyFollowers => 'Ainda sem seguidores';
+
+  @override
+  String get userFollowEmptyFollowing => 'Ainda não segue ninguém';
+
+  @override
+  String get userFollowListError => 'Não foi possível carregar esta lista.';
+
+  @override
+  String attractionViewsCount(int count, String formatted) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$formatted visualizações',
+      one: '$formatted visualização',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get uexpCommunity => 'Comunidade';
+
+  @override
+  String get uexpPartners => 'Parceiros';
+
+  @override
+  String get uexpCreate => 'Criar experiência';
+
+  @override
+  String get uexpMine => 'Minhas experiências';
+
+  @override
+  String get uexpEmpty =>
+      'Ainda não há experiências da comunidade. Seja o primeiro a organizar uma!';
+
+  @override
+  String get uexpMineEmpty => 'Você ainda não criou nenhuma experiência.';
+
+  @override
+  String get uexpAll => 'Todas';
+
+  @override
+  String get uexpFree => 'Grátis';
+
+  @override
+  String get uexpCatFoodDrink => 'Comida e bebida';
+
+  @override
+  String get uexpCatCultureHistory => 'Cultura e história';
+
+  @override
+  String get uexpCatNatureOutdoors => 'Natureza e ar livre';
+
+  @override
+  String get uexpCatNightlife => 'Vida noturna';
+
+  @override
+  String get uexpCatSportsAdventure => 'Esporte e aventura';
+
+  @override
+  String get uexpCatWellness => 'Bem-estar';
+
+  @override
+  String get uexpCatLanguageLearning => 'Aprendizado de idiomas';
+
+  @override
+  String get uexpCatToursWalks => 'Passeios e tours';
+
+  @override
+  String get uexpCatWorkshopsClasses => 'Oficinas e aulas';
+
+  @override
+  String get uexpCatOther => 'Outro';
+
+  @override
+  String uexpReviewsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count avaliações',
+      one: '1 avaliação',
+      zero: 'Sem avaliações',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get uexpStatusDraft => 'Rascunho';
+
+  @override
+  String get uexpStatusPublished => 'Publicada';
+
+  @override
+  String get uexpStatusHidden => 'Oculta';
+
+  @override
+  String get uexpHiddenNotice =>
+      'Esta experiência foi ocultada por violar os padrões do GreenGo. Edite o texto para restaurá-la.';
+
+  @override
+  String get uexpNewTitle => 'Nova experiência';
+
+  @override
+  String get uexpEditTitle => 'Editar experiência';
+
+  @override
+  String get uexpSectionPhotos => 'Fotos';
+
+  @override
+  String get uexpSectionBasics => 'Sobre a experiência';
+
+  @override
+  String get uexpSectionPractical => 'Informações práticas';
+
+  @override
+  String get uexpMainPhoto => 'Foto principal (obrigatória)';
+
+  @override
+  String uexpMorePhotos(int max) {
+    return 'até $max fotos adicionais';
+  }
+
+  @override
+  String get uexpFieldTitle => 'Título';
+
+  @override
+  String get uexpFieldDescription => 'Descrição';
+
+  @override
+  String get uexpFieldCategory => 'Categoria';
+
+  @override
+  String get uexpIncluded => 'O que está incluído';
+
+  @override
+  String get uexpNotIncluded => 'O que não está incluído';
+
+  @override
+  String get uexpAddItem => 'Adicionar item';
+
+  @override
+  String get uexpRemoveItem => 'Remover item';
+
+  @override
+  String get uexpItemHint => 'ex.: Petiscos locais';
+
+  @override
+  String get uexpFieldLocation => 'Local';
+
+  @override
+  String get uexpLocationHint => 'Digite um local ou escolha no mapa';
+
+  @override
+  String get uexpPickOnMap => 'Escolher no mapa';
+
+  @override
+  String get uexpMeetingPoint => 'Ponto de encontro (opcional)';
+
+  @override
+  String get uexpMeetingPointLabel => 'Ponto de encontro';
+
+  @override
+  String get uexpLocationNotFound =>
+      'Não encontramos este local no mapa. Ele será salvo como digitado e não aparecerá nos resultados próximos.';
+
+  @override
+  String get uexpDuration => 'Duração';
+
+  @override
+  String get uexpHours => 'Horas';
+
+  @override
+  String get uexpMinutes => 'Minutos';
+
+  @override
+  String uexpDurationHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String uexpDurationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String get uexpLanguages => 'Idiomas falados';
+
+  @override
+  String get uexpGroupSize => 'Tamanho do grupo';
+
+  @override
+  String get uexpMinGroup => 'Mín. pessoas (opcional)';
+
+  @override
+  String get uexpMaxGroup => 'Máx. pessoas';
+
+  @override
+  String uexpGroupSizeRange(int min, int max) {
+    return '$min–$max pessoas';
+  }
+
+  @override
+  String uexpGroupUpTo(int max) {
+    return 'Até $max pessoas';
+  }
+
+  @override
+  String get uexpPrice => 'Preço';
+
+  @override
+  String get uexpCurrency => 'Moeda';
+
+  @override
+  String get uexpIsFree => 'Esta experiência é gratuita';
+
+  @override
+  String get uexpPaymentLink => 'Como os participantes pagam você';
+
+  @override
+  String get uexpPaymentType => 'Forma de pagamento';
+
+  @override
+  String get uexpPayPix => 'PIX';
+
+  @override
+  String get uexpPayPaypal => 'PayPal';
+
+  @override
+  String get uexpPayVenmo => 'Venmo';
+
+  @override
+  String get uexpPayStripe => 'Link de pagamento Stripe';
+
+  @override
+  String get uexpPayOther => 'Outro link de pagamento';
+
+  @override
+  String get uexpPaymentValuePix => 'Chave PIX';
+
+  @override
+  String get uexpPaymentValueUrl => 'Link de pagamento';
+
+  @override
+  String get uexpPaymentValueHintPix =>
+      'E-mail, telefone, CPF ou chave aleatória';
+
+  @override
+  String get uexpPaymentDisclaimer =>
+      'Os pagamentos acontecem fora do GreenGo, diretamente entre os participantes e o anfitrião. O GreenGo não os processa, garante nem reembolsa.';
+
+  @override
+  String get uexpAvailability => 'Disponibilidade (opcional)';
+
+  @override
+  String get uexpAvailabilityLabel => 'Disponibilidade';
+
+  @override
+  String get uexpAvailabilityHint => 'ex.: sábados 10:00–13:00';
+
+  @override
+  String get uexpCancellation => 'Política de cancelamento (opcional)';
+
+  @override
+  String get uexpCancellationLabel => 'Política de cancelamento';
+
+  @override
+  String get uexpSaveDraft => 'Salvar como rascunho';
+
+  @override
+  String get uexpPublish => 'Publicar';
+
+  @override
+  String get uexpSaveChanges => 'Salvar alterações';
+
+  @override
+  String get uexpUnpublish => 'Despublicar';
+
+  @override
+  String get uexpSaved => 'Experiência salva';
+
+  @override
+  String get uexpPublished => 'Experiência publicada';
+
+  @override
+  String get uexpUnpublished => 'Experiência movida para rascunhos';
+
+  @override
+  String get uexpSaveFailed =>
+      'Não foi possível salvar a experiência. Tente novamente.';
+
+  @override
+  String get uexpPhotoUploadFailed =>
+      'Não foi possível enviar as fotos. Tente novamente.';
+
+  @override
+  String uexpErrTitle(int min, int max) {
+    return 'O título deve ter entre $min e $max caracteres';
+  }
+
+  @override
+  String uexpErrDescription(int min, int max) {
+    return 'A descrição deve ter entre $min e $max caracteres';
+  }
+
+  @override
+  String get uexpErrMainPhoto => 'Adicione uma foto principal';
+
+  @override
+  String uexpErrTooManyPhotos(int max) {
+    return 'Até $max fotos adicionais';
+  }
+
+  @override
+  String get uexpErrIncluded => 'Adicione pelo menos um item incluído';
+
+  @override
+  String uexpErrTooManyItems(int max) {
+    return 'Até $max itens';
+  }
+
+  @override
+  String uexpErrItemTooLong(int max) {
+    return 'Cada item pode ter até $max caracteres';
+  }
+
+  @override
+  String get uexpErrLocation => 'Informe um local';
+
+  @override
+  String get uexpErrDuration =>
+      'Informe uma duração entre 15 minutos e 14 dias';
+
+  @override
+  String get uexpErrLanguages => 'Escolha pelo menos um idioma';
+
+  @override
+  String uexpErrMaxGroup(int max) {
+    return 'O máximo de pessoas deve estar entre 1 e $max';
+  }
+
+  @override
+  String get uexpErrMinGroup =>
+      'O mínimo deve ser pelo menos 1 e não maior que o máximo';
+
+  @override
+  String get uexpErrPrice => 'Informe um preço válido';
+
+  @override
+  String get uexpErrPaymentRequired =>
+      'Informe como pagam você (ou marque a experiência como gratuita)';
+
+  @override
+  String get uexpErrPaymentInvalid =>
+      'Informe um link válido que comece com https://';
+
+  @override
+  String get uexpErrProhibited =>
+      'Algum texto contém linguagem não permitida no GreenGo';
+
+  @override
+  String get uexpErrNoLinks =>
+      'Links não são permitidos em avaliações e respostas';
+
+  @override
+  String uexpErrTooLong(int max) {
+    return 'Até $max caracteres';
+  }
+
+  @override
+  String get uexpErrFixFields => 'Corrija os campos destacados';
+
+  @override
+  String get uexpLimitFeature => 'Organize experiências';
+
+  @override
+  String get uexpLimitFreeBody =>
+      'Organizar experiências está disponível com uma assinatura Silver, Gold ou Platinum.';
+
+  @override
+  String uexpLimitReachedBody(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other: 'Seu plano permite $limit experiências.',
+      one: 'Seu plano permite 1 experiência.',
+    );
+    return '$_temp0 Faça upgrade para criar mais experiências.';
+  }
+
+  @override
+  String get uexpUpgradeToCreateMore =>
+      'Faça upgrade para criar mais experiências';
+
+  @override
+  String get shopExperiencesCreate => 'Experiências que você pode criar';
+
+  @override
+  String get uexpHostedBy => 'Organizada por';
+
+  @override
+  String get uexpHostBadge => 'Anfitrião';
+
+  @override
+  String get uexpPayBook => 'Pagar / Reservar';
+
+  @override
+  String get uexpPixCopied => 'Chave PIX copiada para a área de transferência';
+
+  @override
+  String get uexpOpenLinkFailed => 'Não foi possível abrir o link';
+
+  @override
+  String get uexpShare => 'Compartilhar';
+
+  @override
+  String uexpShareText(String title, String link) {
+    return '$title\nDescubra esta experiência no GreenGo: $link';
+  }
+
+  @override
+  String get uexpReport => 'Denunciar';
+
+  @override
+  String get uexpReportTitle => 'Denunciar esta experiência?';
+
+  @override
+  String get uexpReportBody =>
+      'Nossa equipe vai analisá-la segundo os padrões do GreenGo.';
+
+  @override
+  String get uexpReported => 'Obrigado, vamos analisar.';
+
+  @override
+  String get uexpReportReview => 'Denunciar avaliação';
+
+  @override
+  String get uexpEdit => 'Editar';
+
+  @override
+  String get uexpDelete => 'Excluir';
+
+  @override
+  String get uexpDeleteConfirmTitle => 'Excluir esta experiência?';
+
+  @override
+  String get uexpDeleteConfirmBody =>
+      'As avaliações também serão excluídas. Isso não pode ser desfeito.';
+
+  @override
+  String get uexpDeleted => 'Experiência excluída';
+
+  @override
+  String get uexpNotFound => 'Esta experiência não está mais disponível.';
+
+  @override
+  String get uexpReviews => 'Avaliações';
+
+  @override
+  String get uexpNoReviews => 'Ainda sem avaliações';
+
+  @override
+  String get uexpWriteReview => 'Escrever uma avaliação';
+
+  @override
+  String get uexpEditReview => 'Editar sua avaliação';
+
+  @override
+  String get uexpYourRating => 'Sua nota';
+
+  @override
+  String get uexpSelectRating => 'Escolha de 1 a 5 estrelas';
+
+  @override
+  String get uexpCommentHint => 'Conte o que você gostou (opcional)';
+
+  @override
+  String get uexpSubmit => 'Enviar';
+
+  @override
+  String get uexpDeleteReview => 'Excluir avaliação';
+
+  @override
+  String get uexpDeleteReviewConfirm => 'Excluir sua avaliação?';
+
+  @override
+  String get uexpReviewSaved => 'Avaliação salva';
+
+  @override
+  String get uexpReviewDeleted => 'Avaliação excluída';
+
+  @override
+  String get uexpReviewRemoved =>
+      'Sua avaliação foi removida por violar os padrões do GreenGo. Edite-a para tentar novamente.';
+
+  @override
+  String get uexpReplyRemoved =>
+      'Sua resposta foi removida por violar os padrões do GreenGo.';
+
+  @override
+  String get uexpPendingModeration => 'Em verificação…';
+
+  @override
+  String get uexpHostCannotReview =>
+      'Anfitriões não podem avaliar a própria experiência.';
+
+  @override
+  String get uexpReply => 'Responder';
+
+  @override
+  String get uexpReplyHint =>
+      'Escreva uma resposta. Digite @ para marcar alguém';
+
+  @override
+  String get uexpShowMoreReplies => 'Ver mais respostas';
+
+  @override
+  String get uexpLoadMoreReviews => 'Carregar mais avaliações';
+
+  @override
+  String get uexpEdited => 'editada';
 }

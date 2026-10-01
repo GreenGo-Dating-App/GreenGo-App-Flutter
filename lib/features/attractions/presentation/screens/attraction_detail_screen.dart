@@ -5,8 +5,10 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/attraction_icons.dart';
+import '../../../../core/utils/compact_count.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/attractions_datasource.dart';
+import '../../data/services/attraction_stats_service.dart';
 import '../../domain/category_labels.dart';
 import '../../domain/entities/attraction.dart';
 
@@ -40,11 +42,30 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
   bool _translating = false;
   final Map<String, String> _tr = {}; // original -> translated
 
+  /// The page is translated into the app language automatically once the full
+  /// record has loaded (the toggle then switches back to the original).
+  bool _autoTranslateStarted = false;
+
+  /// Unique viewer-days (server-counted); null until loaded.
+  int? _views;
+
   @override
   void initState() {
     super.initState();
     _a = widget.fallback;
     _load();
+    _loadViews();
+  }
+
+  /// One read of the public count, then record this view (one create per
+  /// user/day). A brand-new view shows up immediately as +1.
+  Future<void> _loadViews() async {
+    final svc = AttractionStatsService();
+    final count = await svc.viewCount(widget.attractionId);
+    if (!mounted) return;
+    setState(() => _views = count);
+    final isNew = await svc.recordView(widget.attractionId);
+    if (isNew && mounted) setState(() => _views = (_views ?? 0) + 1);
   }
 
   Future<void> _load() async {
@@ -54,6 +75,19 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
       if (full != null) _a = full;
       _loading = false;
     });
+    _autoTranslate();
+  }
+
+  /// Translate automatically into the app's language. The catalogue is written
+  /// in English, so English readers need nothing.
+  void _autoTranslate() {
+    final a = _a;
+    if (_autoTranslateStarted || !mounted || a == null) return;
+    final target = TranslationService.normalizeLanguage(
+        Localizations.localeOf(context).toString());
+    if (target == 'en') return;
+    _autoTranslateStarted = true;
+    _toggleTranslate(a, target);
   }
 
   /// Collect every translatable prose field, translate what is not cached, and
@@ -79,15 +113,16 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
     ].where((t) => t.trim().isNotEmpty).toSet();
 
     setState(() => _translating = true);
-    final svc = TranslationService();
-    for (final t in texts) {
-      if (_tr.containsKey(t)) continue;
-      try {
-        final out = await svc.translate(
-          text: t, sourceLanguage: 'auto', targetLanguage: target);
-        if (out.trim().isNotEmpty) _tr[t] = out;
-      } catch (_) {/* leave this block in the original language */}
-    }
+    // One batch through the shared store: each block is translated once per
+    // language for everyone, then simply read back.
+    final todo = texts.where((t) => !_tr.containsKey(t)).toList();
+    try {
+      final out = await TranslationService()
+          .translateShared(todo, targetLanguage: target);
+      for (var i = 0; i < todo.length; i++) {
+        if (out[i].trim().isNotEmpty) _tr[todo[i]] = out[i];
+      }
+    } catch (_) {/* leave the page in the original language */}
     if (!mounted) return;
     setState(() {
       _translating = false;
@@ -292,7 +327,7 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
               onPressed: _translating
                   ? null
                   : () => _toggleTranslate(
-                      a, Localizations.localeOf(context).languageCode),
+                      a, Localizations.localeOf(context).toString()),
               icon: _translating
                   ? const SizedBox(
                       width: 14,
@@ -427,6 +462,20 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                       Text('${a.googleRating}',
                           style: const TextStyle(
                               color: AppColors.textPrimary, fontSize: 13)),
+                    ],
+                    if ((_views ?? 0) > 0) ...[
+                      const SizedBox(width: 10),
+                      const Icon(Icons.visibility_outlined,
+                          size: 15, color: AppColors.textTertiary),
+                      const SizedBox(width: 3),
+                      Text(
+                          l10n.attractionViewsCount(
+                              _views!,
+                              formatCompactCount(_views!,
+                                  locale: Localizations.localeOf(context)
+                                      .toString())),
+                          style: const TextStyle(
+                              color: AppColors.textSecondary, fontSize: 13)),
                     ],
                   ]),
                 ],
