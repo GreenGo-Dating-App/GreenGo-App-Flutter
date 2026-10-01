@@ -73,6 +73,15 @@ class TierEntitlements {
   static const int? _groupsGold = null; // adjustable (∞)
   static const int? _groupsPlatinum = null; // adjustable (∞)
 
+  // --- Member-hosted experiences a user may have (null = unlimited). ---
+  // Counts every experience the host has that is not deleted (drafts +
+  // published + hidden). Enforced server-side by the createUserExperience
+  // callable (functions/src/user_experiences/validation.ts EXPERIENCE_LIMITS).
+  static const int _experiencesFree = 0; // Free: cannot host experiences
+  static const int _experiencesSilver = 1; // Silver: 1 experience
+  static const int _experiencesGold = 5; // Gold: 5 experiences
+  static const int? _experiencesPlatinum = null; // Platinum: unlimited (∞)
+
   // --- New-people connects / first-messages per day (null = unlimited). ---
   static const int _dailyConnectsFree = 10; // adjustable
   static const int _dailyConnectsSilver = 50; // adjustable
@@ -147,6 +156,23 @@ class TierEntitlements {
       case MembershipTier.platinum:
       case MembershipTier.test:
         return _groupsPlatinum;
+    }
+  }
+
+  /// Max member-hosted experiences a tier may have (null = unlimited / ∞).
+  /// Pass the EFFECTIVE tier (an expired Silver is FREE). Admins are
+  /// unlimited regardless of tier (callers check that separately).
+  static int? maxExperiences(MembershipTier tier) {
+    switch (tier) {
+      case MembershipTier.free:
+        return _experiencesFree;
+      case MembershipTier.silver:
+        return _experiencesSilver;
+      case MembershipTier.gold:
+        return _experiencesGold;
+      case MembershipTier.platinum:
+      case MembershipTier.test:
+        return _experiencesPlatinum;
     }
   }
 

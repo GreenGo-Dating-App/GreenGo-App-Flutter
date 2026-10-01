@@ -176,9 +176,16 @@ exports.onBusinessFollowed = (0, firestore_1.onDocumentCreated)({
     document: 'business_followers/{businessId}/followers/{userId}',
     memory: pushRuntime_1.PUSH_MEMORY,
 }, (0, monitoring_1.monitored)('onBusinessFollowed', async (event) => {
+    var _a;
     const businessId = event.params.businessId;
     const userId = event.params.userId;
     if (businessId === userId)
+        return;
+    // This edge collection is now the follow graph for EVERY account. Only
+    // business accounts get 'business_follow'; everyone else is notified
+    // with 'new_follower' by social/follows.ts (onUserFollowCreated).
+    const followee = await db.collection('profiles').doc(businessId).get();
+    if (((_a = followee.data()) === null || _a === void 0 ? void 0 : _a.isBusiness) !== true)
         return;
     const actor = await resolveActor(userId);
     await emit(businessId, 'business_follow', 'started following your business', 'You have a new follower', { type: 'business_follow', businessId, action: 'open_profile', profileId: userId, actorId: userId }, actor, `business_follow_${businessId}_${userId}`);

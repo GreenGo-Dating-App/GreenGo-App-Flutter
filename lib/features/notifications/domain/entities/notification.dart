@@ -100,6 +100,7 @@ class NotificationEntity extends Equatable {
         return 'campaign';
       case NotificationType.qrScanned:
         return 'qr_code';
+      case NotificationType.newFollower:
       case NotificationType.businessFollow:
         return 'person_add';
       case NotificationType.businessRating:
@@ -247,6 +248,7 @@ enum NotificationType {
   businessRating,    // someone rated your business
   boostStarted,      // your profile/event boost started
   boostEnded,        // your profile/event boost ended
+  newFollower,       // someone started following you
 }
 
 /// Extension for NotificationType
@@ -311,6 +313,8 @@ extension NotificationTypeExtension on NotificationType {
         return 'boost_started';
       case NotificationType.boostEnded:
         return 'boost_ended';
+      case NotificationType.newFollower:
+        return 'new_follower';
     }
   }
 
@@ -375,6 +379,8 @@ extension NotificationTypeExtension on NotificationType {
         return NotificationType.boostStarted;
       case 'boost_ended':
         return NotificationType.boostEnded;
+      case 'new_follower':
+        return NotificationType.newFollower;
       default:
         return NotificationType.system;
     }

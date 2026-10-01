@@ -740,6 +740,8 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
         return l10n.shopEventsCreate;
       case UpgradeBenefitKind.groups:
         return l10n.shopGroupsCreate;
+      case UpgradeBenefitKind.experiences:
+        return l10n.shopExperiencesCreate;
       case UpgradeBenefitKind.boostsPerMonth:
         return l10n.shopMonthlyBoosts;
       case UpgradeBenefitKind.monthlyCoins:

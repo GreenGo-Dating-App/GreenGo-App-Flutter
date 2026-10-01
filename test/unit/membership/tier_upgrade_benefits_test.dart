@@ -26,6 +26,7 @@ void main() {
         UpgradeBenefit(UpgradeBenefitKind.dailyConnects, count(10), count(50)),
         UpgradeBenefit(UpgradeBenefitKind.events, count(1), count(3)),
         UpgradeBenefit(UpgradeBenefitKind.groups, count(1), count(null)),
+        UpgradeBenefit(UpgradeBenefitKind.experiences, count(0), count(1)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(0), count(1)),
         UpgradeBenefit(UpgradeBenefitKind.monthlyCoins, count(100), count(500)),
         UpgradeBenefit(
@@ -38,6 +39,7 @@ void main() {
       expect(nextTierBenefits(MembershipTier.silver), [
         UpgradeBenefit(UpgradeBenefitKind.dailyConnects, count(50), count(200)),
         UpgradeBenefit(UpgradeBenefitKind.events, count(3), count(5)),
+        UpgradeBenefit(UpgradeBenefitKind.experiences, count(1), count(5)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(1), count(4)),
         UpgradeBenefit(
             UpgradeBenefitKind.monthlyCoins, count(500), count(1500)),
@@ -53,6 +55,8 @@ void main() {
         UpgradeBenefit(
             UpgradeBenefitKind.dailyConnects, count(200), count(null)),
         UpgradeBenefit(UpgradeBenefitKind.events, count(5), count(null)),
+        UpgradeBenefit(
+            UpgradeBenefitKind.experiences, count(5), count(null)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(4), count(30)),
         UpgradeBenefit(
             UpgradeBenefitKind.monthlyCoins, count(1500), count(5000)),
@@ -94,6 +98,20 @@ void main() {
   });
 
   group('values follow the entitlement source (no duplicated numbers)', () {
+    test('experiences = TierEntitlements.maxExperiences', () {
+      for (final t in MembershipTier.values) {
+        expect(
+          benefitValueFor(UpgradeBenefitKind.experiences, t),
+          count(TierEntitlements.maxExperiences(t)),
+        );
+      }
+      expect(TierEntitlements.maxExperiences(MembershipTier.free), 0);
+      expect(TierEntitlements.maxExperiences(MembershipTier.silver), 1);
+      expect(TierEntitlements.maxExperiences(MembershipTier.gold), 5);
+      expect(TierEntitlements.maxExperiences(MembershipTier.platinum), isNull);
+      expect(TierEntitlements.maxExperiences(MembershipTier.test), isNull);
+    });
+
     test('daily connects = TierEntitlements.maxDailyConnects', () {
       for (final t in MembershipTier.values) {
         expect(

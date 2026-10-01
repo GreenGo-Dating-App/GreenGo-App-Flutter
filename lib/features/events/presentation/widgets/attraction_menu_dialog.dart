@@ -67,11 +67,7 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
     _translateStarted = true;
     _translating = true;
     TranslationService()
-        .translate(
-          text: desc,
-          sourceLanguage: 'auto',
-          targetLanguage: target.replaceAll('_', '-'),
-        )
+        .translateSharedOne(desc, targetLanguage: target.replaceAll('_', '-'))
         .then((result) {
       if (!mounted) return;
       setState(() {
@@ -293,6 +289,7 @@ class _AttractionMenuDialogState extends State<_AttractionMenuDialog> {
                         const SizedBox(height: 8),
                         TranslatableText(
                           text: e.description!,
+                          autoTranslate: true,
                           targetLang:
                               Localizations.localeOf(context).languageCode,
                           maxLines: 6,

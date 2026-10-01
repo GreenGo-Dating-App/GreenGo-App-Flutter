@@ -32,6 +32,7 @@ import '../../../attractions/presentation/widgets/attractions_filter_sheet.dart'
 import '../../../attractions/presentation/widgets/attractions_tab.dart';
 import 'event_attendees_screen.dart';
 import '../widgets/experiences_tab.dart';
+import '../../../user_experiences/presentation/widgets/community_experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../widgets/event_organizer_row.dart';
 import '../../../business/data/services/leads_service.dart';
@@ -189,6 +190,11 @@ class _EventsScreenState extends State<EventsScreen>
   bool get _isExperiencesTab => _tabController.index == 3;
   // Selected categories (null = all).
   String? _experienceCategory;
+  // Experiences tab segment: member-hosted COMMUNITY experiences (default)
+  // or the PARTNER (Viator) feed. The partner feed is only built once it has
+  // been opened, then kept alive in an IndexedStack.
+  bool _expCommunity = true;
+  bool _expPartnerShown = false;
 
   // Whole-table community search (Community tab): default shows the 100 closest;
   // a search queries the entire events table and shows matches.
@@ -465,7 +471,9 @@ class _EventsScreenState extends State<EventsScreen>
                 // Category filter — native tabs use GreenGo categories;
                 // Attractions filters live in the search-bar sheet.
                 if (_isNativeTab) _buildCategoryFilter(_lastLoaded),
-                if (_isExperiencesTab) _buildExperienceCategoryFilter(),
+                if (_isExperiencesTab) _buildExperienceSegment(),
+                if (_isExperiencesTab && !_expCommunity)
+                  _buildExperienceCategoryFilter(),
                 // Events List
                 Expanded(
                   child: _buildBody(state),
@@ -493,8 +501,7 @@ class _EventsScreenState extends State<EventsScreen>
         _buildExternalTab(
             () => _buildExperiencesTab('ticketmaster', sortOverride: _liveSort)),
         _buildExternalTab(_buildCuratedAttractionsTab),
-        _buildExternalTab(() =>
-            _buildExperiencesTab('viator', category: _experienceCategory)),
+        _buildExternalTab(_buildExperiencesSegmentBody),
         _KeepAliveTab(
           child: loaded != null
               ? _buildMyEventsTab(loaded)
@@ -1218,6 +1225,63 @@ class _EventsScreenState extends State<EventsScreen>
   }
 
   /// Category chips for the Experiences (Viator) tab.
+  /// Community (member-hosted) | Partners (Viator) switch on the Experiences tab.
+  Widget _buildExperienceSegment() {
+    final l10n = AppLocalizations.of(context)!;
+    Widget seg(bool community, String label, IconData icon) {
+      final selected = _expCommunity == community;
+      return Padding(
+        padding: const EdgeInsets.only(right: 8),
+        child: ChoiceChip(
+          avatar: Icon(icon,
+              size: 16,
+              color: selected ? AppColors.deepBlack : AppColors.richGold),
+          label: Text(label),
+          selected: selected,
+          showCheckmark: false,
+          backgroundColor: AppColors.backgroundCard,
+          selectedColor: AppColors.richGold,
+          labelStyle: TextStyle(
+              color: selected ? AppColors.deepBlack : AppColors.textPrimary),
+          onSelected: (_) => setState(() {
+            _expCommunity = community;
+            if (!community) _expPartnerShown = true;
+          }),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 6, 12, 0),
+      child: Row(children: [
+        seg(true, l10n.uexpCommunity, Icons.people_alt_outlined),
+        seg(false, l10n.uexpPartners, Icons.storefront_outlined),
+      ]),
+    );
+  }
+
+  /// Both segments stay alive once opened (no reload when switching back).
+  Widget _buildExperiencesSegmentBody() {
+    return IndexedStack(
+      index: _expCommunity ? 0 : 1,
+      sizing: StackFit.expand,
+      children: [
+        CommunityExperiencesTab(
+          key: const ValueKey('uexpCommunity'),
+          currentUserId: widget.currentUserId,
+          gridView: _gridView,
+          query: _searchQuery,
+          userLat: _userLat,
+          userLng: _userLng,
+        ),
+        if (_expPartnerShown || !_expCommunity)
+          _buildExperiencesTab('viator', category: _experienceCategory)
+        else
+          const SizedBox.shrink(),
+      ],
+    );
+  }
+
   Widget _buildExperienceCategoryFilter() {
     final l10n = AppLocalizations.of(context)!;
     final cats = <String, String>{
@@ -2234,6 +2298,7 @@ class EventDetailsScreen extends StatelessWidget {
                 children: [
                   TranslatableText(
                     text: event.title,
+                    autoTranslate: true,
                     targetLang:
                         Localizations.localeOf(context).languageCode,
                     style: const TextStyle(
@@ -2364,6 +2429,7 @@ class EventDetailsScreen extends StatelessWidget {
                   const SizedBox(height: 8),
                   TranslatableText(
                     text: event.description,
+                    autoTranslate: true,
                     targetLang:
                         Localizations.localeOf(context).languageCode,
                     style: const TextStyle(

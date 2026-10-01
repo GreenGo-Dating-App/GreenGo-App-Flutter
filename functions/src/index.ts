@@ -567,3 +567,25 @@ export {
   grantMonthlyCoinAllowances,
   runMonthlyCoinAllowancesNow,
 } from './coins/monthlyAllowance';
+
+// Follow graph — server-maintained followersCount / followingCount, the
+// 'new_follower' notification, and the admin backfill for legacy edges.
+export {
+  onUserFollowCreated,
+  onUserFollowDeleted,
+  backfillFollowCounts,
+} from './social/follows';
+
+// Attraction page views — unique viewers per day → attraction_stats.viewCount.
+export { onAttractionViewRecorded } from './attractions/attractionStats';
+
+// Shared, persistent translations of public content (events/attractions/experiences).
+export { translateTexts } from './messaging/sharedTranslations';
+
+// User-created experiences (member-hosted) with reviews, replies + '@' mentions.
+export {
+  createUserExperience,
+  onUserExperienceWritten,
+  onExperienceReviewWritten,
+  onExperienceReplyCreated,
+} from './user_experiences';

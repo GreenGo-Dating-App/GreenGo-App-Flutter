@@ -5,7 +5,8 @@ import 'tier_entitlements.dart';
 ///
 /// Every kind here is read from the same source the app's gates use:
 ///   • [TierEntitlements] — connects/day (TierGate), events & groups
-///     (TierLimitsService), boosts/month (TierGate), monthly coins, discovery
+///     (TierLimitsService), hosted experiences (createUserExperience),
+///     boosts/month (TierGate), monthly coins, discovery
 ///     reveal ceiling (network discovery), see-who-connected, travel mode
 ///     (TierGate), analytics (TierGate), business account.
 ///   • [MembershipRules] — the swipe-deck limits (DiscoveryBloc), only when the
@@ -14,6 +15,7 @@ enum UpgradeBenefitKind {
   dailyConnects,
   events,
   groups,
+  experiences,
   boostsPerMonth,
   monthlyCoins,
   discoveryReveal,
@@ -109,6 +111,8 @@ BenefitValue benefitValueFor(UpgradeBenefitKind kind, MembershipTier tier) {
       return BenefitValue.count(TierEntitlements.maxEvents(tier));
     case UpgradeBenefitKind.groups:
       return BenefitValue.count(TierEntitlements.maxGroups(tier));
+    case UpgradeBenefitKind.experiences:
+      return BenefitValue.count(TierEntitlements.maxExperiences(tier));
     case UpgradeBenefitKind.boostsPerMonth:
       return BenefitValue.count(TierEntitlements.boostsPerMonth(tier));
     case UpgradeBenefitKind.monthlyCoins:

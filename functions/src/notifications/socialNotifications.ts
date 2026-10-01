@@ -197,6 +197,11 @@ export const onBusinessFollowed = onDocumentCreated(
     const businessId = event.params.businessId as string;
     const userId = event.params.userId as string;
     if (businessId === userId) return;
+    // This edge collection is now the follow graph for EVERY account. Only
+    // business accounts get 'business_follow'; everyone else is notified
+    // with 'new_follower' by social/follows.ts (onUserFollowCreated).
+    const followee = await db.collection('profiles').doc(businessId).get();
+    if (followee.data()?.isBusiness !== true) return;
 
     const actor = await resolveActor(userId);
     await emit(

@@ -25205,6 +25205,960 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Apply filter'**
   String get attrApplyFilter;
+
+  /// No description provided for @userFollowFollow.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow'**
+  String get userFollowFollow;
+
+  /// No description provided for @userFollowFollowing.
+  ///
+  /// In en, this message translates to:
+  /// **'Following'**
+  String get userFollowFollowing;
+
+  /// No description provided for @userFollowFollowBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow back'**
+  String get userFollowFollowBack;
+
+  /// No description provided for @userFollowError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t update follow. Please try again.'**
+  String get userFollowError;
+
+  /// No description provided for @userFollowBlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'You can\'t follow this user.'**
+  String get userFollowBlocked;
+
+  /// No description provided for @userFollowFollowersStat.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{formatted} follower} other{{formatted} followers}}'**
+  String userFollowFollowersStat(int count, String formatted);
+
+  /// No description provided for @userFollowFollowingStat.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, other{{formatted} following}}'**
+  String userFollowFollowingStat(int count, String formatted);
+
+  /// No description provided for @userFollowTabFollowers.
+  ///
+  /// In en, this message translates to:
+  /// **'Followers'**
+  String get userFollowTabFollowers;
+
+  /// No description provided for @userFollowTabFollowing.
+  ///
+  /// In en, this message translates to:
+  /// **'Following'**
+  String get userFollowTabFollowing;
+
+  /// No description provided for @userFollowEmptyFollowers.
+  ///
+  /// In en, this message translates to:
+  /// **'No followers yet'**
+  String get userFollowEmptyFollowers;
+
+  /// No description provided for @userFollowEmptyFollowing.
+  ///
+  /// In en, this message translates to:
+  /// **'Not following anyone yet'**
+  String get userFollowEmptyFollowing;
+
+  /// No description provided for @userFollowListError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load this list.'**
+  String get userFollowListError;
+
+  /// No description provided for @attractionViewsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{formatted} view} other{{formatted} views}}'**
+  String attractionViewsCount(int count, String formatted);
+
+  /// No description provided for @uexpCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Community'**
+  String get uexpCommunity;
+
+  /// No description provided for @uexpPartners.
+  ///
+  /// In en, this message translates to:
+  /// **'Partners'**
+  String get uexpPartners;
+
+  /// No description provided for @uexpCreate.
+  ///
+  /// In en, this message translates to:
+  /// **'Create experience'**
+  String get uexpCreate;
+
+  /// No description provided for @uexpMine.
+  ///
+  /// In en, this message translates to:
+  /// **'My experiences'**
+  String get uexpMine;
+
+  /// No description provided for @uexpEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No community experiences yet. Be the first to host one!'**
+  String get uexpEmpty;
+
+  /// No description provided for @uexpMineEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'You haven\'t created any experiences yet.'**
+  String get uexpMineEmpty;
+
+  /// No description provided for @uexpAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get uexpAll;
+
+  /// No description provided for @uexpFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get uexpFree;
+
+  /// No description provided for @uexpCatFoodDrink.
+  ///
+  /// In en, this message translates to:
+  /// **'Food & drink'**
+  String get uexpCatFoodDrink;
+
+  /// No description provided for @uexpCatCultureHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Culture & history'**
+  String get uexpCatCultureHistory;
+
+  /// No description provided for @uexpCatNatureOutdoors.
+  ///
+  /// In en, this message translates to:
+  /// **'Nature & outdoors'**
+  String get uexpCatNatureOutdoors;
+
+  /// No description provided for @uexpCatNightlife.
+  ///
+  /// In en, this message translates to:
+  /// **'Nightlife'**
+  String get uexpCatNightlife;
+
+  /// No description provided for @uexpCatSportsAdventure.
+  ///
+  /// In en, this message translates to:
+  /// **'Sports & adventure'**
+  String get uexpCatSportsAdventure;
+
+  /// No description provided for @uexpCatWellness.
+  ///
+  /// In en, this message translates to:
+  /// **'Wellness'**
+  String get uexpCatWellness;
+
+  /// No description provided for @uexpCatLanguageLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Language learning'**
+  String get uexpCatLanguageLearning;
+
+  /// No description provided for @uexpCatToursWalks.
+  ///
+  /// In en, this message translates to:
+  /// **'Tours & walks'**
+  String get uexpCatToursWalks;
+
+  /// No description provided for @uexpCatWorkshopsClasses.
+  ///
+  /// In en, this message translates to:
+  /// **'Workshops & classes'**
+  String get uexpCatWorkshopsClasses;
+
+  /// No description provided for @uexpCatOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get uexpCatOther;
+
+  /// No description provided for @uexpReviewsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No reviews} =1{1 review} other{{count} reviews}}'**
+  String uexpReviewsCount(int count);
+
+  /// No description provided for @uexpStatusDraft.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft'**
+  String get uexpStatusDraft;
+
+  /// No description provided for @uexpStatusPublished.
+  ///
+  /// In en, this message translates to:
+  /// **'Published'**
+  String get uexpStatusPublished;
+
+  /// No description provided for @uexpStatusHidden.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden'**
+  String get uexpStatusHidden;
+
+  /// No description provided for @uexpHiddenNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'This experience was hidden because it violates GreenGo standards. Edit the text to restore it.'**
+  String get uexpHiddenNotice;
+
+  /// No description provided for @uexpNewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New experience'**
+  String get uexpNewTitle;
+
+  /// No description provided for @uexpEditTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit experience'**
+  String get uexpEditTitle;
+
+  /// No description provided for @uexpSectionPhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'Photos'**
+  String get uexpSectionPhotos;
+
+  /// No description provided for @uexpSectionBasics.
+  ///
+  /// In en, this message translates to:
+  /// **'About the experience'**
+  String get uexpSectionBasics;
+
+  /// No description provided for @uexpSectionPractical.
+  ///
+  /// In en, this message translates to:
+  /// **'Practical info'**
+  String get uexpSectionPractical;
+
+  /// No description provided for @uexpMainPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Main photo (required)'**
+  String get uexpMainPhoto;
+
+  /// No description provided for @uexpMorePhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'up to {max} more photos'**
+  String uexpMorePhotos(int max);
+
+  /// No description provided for @uexpFieldTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get uexpFieldTitle;
+
+  /// No description provided for @uexpFieldDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get uexpFieldDescription;
+
+  /// No description provided for @uexpFieldCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get uexpFieldCategory;
+
+  /// No description provided for @uexpIncluded.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s included'**
+  String get uexpIncluded;
+
+  /// No description provided for @uexpNotIncluded.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s not included'**
+  String get uexpNotIncluded;
+
+  /// No description provided for @uexpAddItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Add item'**
+  String get uexpAddItem;
+
+  /// No description provided for @uexpRemoveItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove item'**
+  String get uexpRemoveItem;
+
+  /// No description provided for @uexpItemHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Local snacks'**
+  String get uexpItemHint;
+
+  /// No description provided for @uexpFieldLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get uexpFieldLocation;
+
+  /// No description provided for @uexpLocationHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Type a place or pick it on the map'**
+  String get uexpLocationHint;
+
+  /// No description provided for @uexpPickOnMap.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick on map'**
+  String get uexpPickOnMap;
+
+  /// No description provided for @uexpMeetingPoint.
+  ///
+  /// In en, this message translates to:
+  /// **'Meeting point (optional)'**
+  String get uexpMeetingPoint;
+
+  /// No description provided for @uexpMeetingPointLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Meeting point'**
+  String get uexpMeetingPointLabel;
+
+  /// No description provided for @uexpLocationNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn\'t find this place on the map. It is saved as typed and won\'t appear in nearby results.'**
+  String get uexpLocationNotFound;
+
+  /// No description provided for @uexpDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'Duration'**
+  String get uexpDuration;
+
+  /// No description provided for @uexpHours.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours'**
+  String get uexpHours;
+
+  /// No description provided for @uexpMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes'**
+  String get uexpMinutes;
+
+  /// No description provided for @uexpDurationHours.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} h'**
+  String uexpDurationHours(int hours);
+
+  /// No description provided for @uexpDurationMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} min'**
+  String uexpDurationMinutes(int minutes);
+
+  /// No description provided for @uexpLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages spoken'**
+  String get uexpLanguages;
+
+  /// No description provided for @uexpGroupSize.
+  ///
+  /// In en, this message translates to:
+  /// **'Group size'**
+  String get uexpGroupSize;
+
+  /// No description provided for @uexpMinGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Min people (optional)'**
+  String get uexpMinGroup;
+
+  /// No description provided for @uexpMaxGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Max people'**
+  String get uexpMaxGroup;
+
+  /// No description provided for @uexpGroupSizeRange.
+  ///
+  /// In en, this message translates to:
+  /// **'{min}–{max} people'**
+  String uexpGroupSizeRange(int min, int max);
+
+  /// No description provided for @uexpGroupUpTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} people'**
+  String uexpGroupUpTo(int max);
+
+  /// No description provided for @uexpPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get uexpPrice;
+
+  /// No description provided for @uexpCurrency.
+  ///
+  /// In en, this message translates to:
+  /// **'Currency'**
+  String get uexpCurrency;
+
+  /// No description provided for @uexpIsFree.
+  ///
+  /// In en, this message translates to:
+  /// **'This experience is free'**
+  String get uexpIsFree;
+
+  /// No description provided for @uexpPaymentLink.
+  ///
+  /// In en, this message translates to:
+  /// **'How guests pay you'**
+  String get uexpPaymentLink;
+
+  /// No description provided for @uexpPaymentType.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment method'**
+  String get uexpPaymentType;
+
+  /// No description provided for @uexpPayPix.
+  ///
+  /// In en, this message translates to:
+  /// **'PIX'**
+  String get uexpPayPix;
+
+  /// No description provided for @uexpPayPaypal.
+  ///
+  /// In en, this message translates to:
+  /// **'PayPal'**
+  String get uexpPayPaypal;
+
+  /// No description provided for @uexpPayVenmo.
+  ///
+  /// In en, this message translates to:
+  /// **'Venmo'**
+  String get uexpPayVenmo;
+
+  /// No description provided for @uexpPayStripe.
+  ///
+  /// In en, this message translates to:
+  /// **'Stripe payment link'**
+  String get uexpPayStripe;
+
+  /// No description provided for @uexpPayOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other payment link'**
+  String get uexpPayOther;
+
+  /// No description provided for @uexpPaymentValuePix.
+  ///
+  /// In en, this message translates to:
+  /// **'PIX key'**
+  String get uexpPaymentValuePix;
+
+  /// No description provided for @uexpPaymentValueUrl.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment link'**
+  String get uexpPaymentValueUrl;
+
+  /// No description provided for @uexpPaymentValueHintPix.
+  ///
+  /// In en, this message translates to:
+  /// **'Email, phone, CPF or random key'**
+  String get uexpPaymentValueHintPix;
+
+  /// No description provided for @uexpPaymentDisclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Payments happen outside GreenGo, directly between guests and the host. GreenGo does not process, guarantee or refund them.'**
+  String get uexpPaymentDisclaimer;
+
+  /// No description provided for @uexpAvailability.
+  ///
+  /// In en, this message translates to:
+  /// **'Availability (optional)'**
+  String get uexpAvailability;
+
+  /// No description provided for @uexpAvailabilityLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Availability'**
+  String get uexpAvailabilityLabel;
+
+  /// No description provided for @uexpAvailabilityHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Saturdays 10:00–13:00'**
+  String get uexpAvailabilityHint;
+
+  /// No description provided for @uexpCancellation.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancellation policy (optional)'**
+  String get uexpCancellation;
+
+  /// No description provided for @uexpCancellationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancellation policy'**
+  String get uexpCancellationLabel;
+
+  /// No description provided for @uexpSaveDraft.
+  ///
+  /// In en, this message translates to:
+  /// **'Save as draft'**
+  String get uexpSaveDraft;
+
+  /// No description provided for @uexpPublish.
+  ///
+  /// In en, this message translates to:
+  /// **'Publish'**
+  String get uexpPublish;
+
+  /// No description provided for @uexpSaveChanges.
+  ///
+  /// In en, this message translates to:
+  /// **'Save changes'**
+  String get uexpSaveChanges;
+
+  /// No description provided for @uexpUnpublish.
+  ///
+  /// In en, this message translates to:
+  /// **'Unpublish'**
+  String get uexpUnpublish;
+
+  /// No description provided for @uexpSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience saved'**
+  String get uexpSaved;
+
+  /// No description provided for @uexpPublished.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience published'**
+  String get uexpPublished;
+
+  /// No description provided for @uexpUnpublished.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience moved to drafts'**
+  String get uexpUnpublished;
+
+  /// No description provided for @uexpSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save the experience. Please try again.'**
+  String get uexpSaveFailed;
+
+  /// No description provided for @uexpPhotoUploadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t upload the photos. Please try again.'**
+  String get uexpPhotoUploadFailed;
+
+  /// No description provided for @uexpErrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Title must be {min}–{max} characters'**
+  String uexpErrTitle(int min, int max);
+
+  /// No description provided for @uexpErrDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Description must be {min}–{max} characters'**
+  String uexpErrDescription(int min, int max);
+
+  /// No description provided for @uexpErrMainPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a main photo'**
+  String get uexpErrMainPhoto;
+
+  /// No description provided for @uexpErrTooManyPhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} extra photos'**
+  String uexpErrTooManyPhotos(int max);
+
+  /// No description provided for @uexpErrIncluded.
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least one included item'**
+  String get uexpErrIncluded;
+
+  /// No description provided for @uexpErrTooManyItems.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} items'**
+  String uexpErrTooManyItems(int max);
+
+  /// No description provided for @uexpErrItemTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'Each item can have up to {max} characters'**
+  String uexpErrItemTooLong(int max);
+
+  /// No description provided for @uexpErrLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a location'**
+  String get uexpErrLocation;
+
+  /// No description provided for @uexpErrDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a duration between 15 minutes and 14 days'**
+  String get uexpErrDuration;
+
+  /// No description provided for @uexpErrLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick at least one language'**
+  String get uexpErrLanguages;
+
+  /// No description provided for @uexpErrMaxGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Max people must be between 1 and {max}'**
+  String uexpErrMaxGroup(int max);
+
+  /// No description provided for @uexpErrMinGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Min people must be at least 1 and not more than max'**
+  String get uexpErrMinGroup;
+
+  /// No description provided for @uexpErrPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid price'**
+  String get uexpErrPrice;
+
+  /// No description provided for @uexpErrPaymentRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Add how guests pay you (or mark the experience as free)'**
+  String get uexpErrPaymentRequired;
+
+  /// No description provided for @uexpErrPaymentInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid link starting with https://'**
+  String get uexpErrPaymentInvalid;
+
+  /// No description provided for @uexpErrProhibited.
+  ///
+  /// In en, this message translates to:
+  /// **'Some text contains language that isn\'t allowed on GreenGo'**
+  String get uexpErrProhibited;
+
+  /// No description provided for @uexpErrNoLinks.
+  ///
+  /// In en, this message translates to:
+  /// **'Links aren\'t allowed in reviews and replies'**
+  String get uexpErrNoLinks;
+
+  /// No description provided for @uexpErrTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} characters'**
+  String uexpErrTooLong(int max);
+
+  /// No description provided for @uexpErrFixFields.
+  ///
+  /// In en, this message translates to:
+  /// **'Please fix the highlighted fields'**
+  String get uexpErrFixFields;
+
+  /// No description provided for @uexpLimitFeature.
+  ///
+  /// In en, this message translates to:
+  /// **'Host experiences'**
+  String get uexpLimitFeature;
+
+  /// No description provided for @uexpLimitFreeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Hosting experiences is available with a Silver, Gold or Platinum membership.'**
+  String get uexpLimitFreeBody;
+
+  /// No description provided for @uexpLimitReachedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{limit, plural, =1{Your plan allows 1 experience.} other{Your plan allows {limit} experiences.}} Upgrade to create more experiences.'**
+  String uexpLimitReachedBody(int limit);
+
+  /// No description provided for @uexpUpgradeToCreateMore.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to create more experiences'**
+  String get uexpUpgradeToCreateMore;
+
+  /// No description provided for @shopExperiencesCreate.
+  ///
+  /// In en, this message translates to:
+  /// **'Experiences you can create'**
+  String get shopExperiencesCreate;
+
+  /// No description provided for @uexpHostedBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Hosted by'**
+  String get uexpHostedBy;
+
+  /// No description provided for @uexpHostBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Host'**
+  String get uexpHostBadge;
+
+  /// No description provided for @uexpPayBook.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay / Book'**
+  String get uexpPayBook;
+
+  /// No description provided for @uexpPixCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'PIX key copied to the clipboard'**
+  String get uexpPixCopied;
+
+  /// No description provided for @uexpOpenLinkFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t open the link'**
+  String get uexpOpenLinkFailed;
+
+  /// No description provided for @uexpShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get uexpShare;
+
+  /// No description provided for @uexpShareText.
+  ///
+  /// In en, this message translates to:
+  /// **'{title}\nDiscover this experience on GreenGo: {link}'**
+  String uexpShareText(String title, String link);
+
+  /// No description provided for @uexpReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get uexpReport;
+
+  /// No description provided for @uexpReportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this experience?'**
+  String get uexpReportTitle;
+
+  /// No description provided for @uexpReportBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Our team will review it against the GreenGo standards.'**
+  String get uexpReportBody;
+
+  /// No description provided for @uexpReported.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks, we\'ll review it.'**
+  String get uexpReported;
+
+  /// No description provided for @uexpReportReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Report review'**
+  String get uexpReportReview;
+
+  /// No description provided for @uexpEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get uexpEdit;
+
+  /// No description provided for @uexpDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get uexpDelete;
+
+  /// No description provided for @uexpDeleteConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this experience?'**
+  String get uexpDeleteConfirmTitle;
+
+  /// No description provided for @uexpDeleteConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Its reviews will be deleted too. This can\'t be undone.'**
+  String get uexpDeleteConfirmBody;
+
+  /// No description provided for @uexpDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Experience deleted'**
+  String get uexpDeleted;
+
+  /// No description provided for @uexpNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'This experience is no longer available.'**
+  String get uexpNotFound;
+
+  /// No description provided for @uexpReviews.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviews'**
+  String get uexpReviews;
+
+  /// No description provided for @uexpNoReviews.
+  ///
+  /// In en, this message translates to:
+  /// **'No reviews yet'**
+  String get uexpNoReviews;
+
+  /// No description provided for @uexpWriteReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a review'**
+  String get uexpWriteReview;
+
+  /// No description provided for @uexpEditReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit your review'**
+  String get uexpEditReview;
+
+  /// No description provided for @uexpYourRating.
+  ///
+  /// In en, this message translates to:
+  /// **'Your rating'**
+  String get uexpYourRating;
+
+  /// No description provided for @uexpSelectRating.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a rating from 1 to 5 stars'**
+  String get uexpSelectRating;
+
+  /// No description provided for @uexpCommentHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Share what you liked (optional)'**
+  String get uexpCommentHint;
+
+  /// No description provided for @uexpSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Submit'**
+  String get uexpSubmit;
+
+  /// No description provided for @uexpDeleteReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete review'**
+  String get uexpDeleteReview;
+
+  /// No description provided for @uexpDeleteReviewConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete your review?'**
+  String get uexpDeleteReviewConfirm;
+
+  /// No description provided for @uexpReviewSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Review saved'**
+  String get uexpReviewSaved;
+
+  /// No description provided for @uexpReviewDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Review deleted'**
+  String get uexpReviewDeleted;
+
+  /// No description provided for @uexpReviewRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Your review was removed for violating GreenGo standards. Edit it to try again.'**
+  String get uexpReviewRemoved;
+
+  /// No description provided for @uexpReplyRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Your reply was removed for violating GreenGo standards.'**
+  String get uexpReplyRemoved;
+
+  /// No description provided for @uexpPendingModeration.
+  ///
+  /// In en, this message translates to:
+  /// **'Being checked…'**
+  String get uexpPendingModeration;
+
+  /// No description provided for @uexpHostCannotReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Hosts can\'t review their own experience.'**
+  String get uexpHostCannotReview;
+
+  /// No description provided for @uexpReply.
+  ///
+  /// In en, this message translates to:
+  /// **'Reply'**
+  String get uexpReply;
+
+  /// No description provided for @uexpReplyHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a reply. Type @ to tag someone'**
+  String get uexpReplyHint;
+
+  /// No description provided for @uexpShowMoreReplies.
+  ///
+  /// In en, this message translates to:
+  /// **'Show more replies'**
+  String get uexpShowMoreReplies;
+
+  /// No description provided for @uexpLoadMoreReviews.
+  ///
+  /// In en, this message translates to:
+  /// **'Load more reviews'**
+  String get uexpLoadMoreReviews;
+
+  /// No description provided for @uexpEdited.
+  ///
+  /// In en, this message translates to:
+  /// **'edited'**
+  String get uexpEdited;
 }
 
 class _AppLocalizationsDelegate
