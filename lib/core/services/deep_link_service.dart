@@ -6,10 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
-import '../../features/chat/presentation/connect_and_chat.dart';
 import '../../features/communities/domain/repositories/communities_repository.dart';
 import '../../features/communities/presentation/bloc/communities_bloc.dart';
 import '../../features/communities/presentation/screens/community_detail_screen.dart';
+import '../../features/discovery/presentation/open_user_profile.dart';
 import '../../features/events/presentation/screens/event_detail_loader_screen.dart';
 import '../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../features/profile/presentation/bloc/profile_event.dart';
@@ -27,8 +27,9 @@ import 'push_notification_service.dart';
 ///   * Community: `https://greengo-chat.web.app/c/{communityId}` or `greengo://c/{communityId}`
 ///
 /// Tapping a link opens the app and:
-///   * profile -> opens an instant, approval-free chat with that user
-///     (via [openConnectChat], which loads the target `Profile` itself);
+///   * profile -> opens that user's profile ("profile first", via
+///     [openUserProfile], which loads the target `Profile` and skips blocked
+///     users); the chat is one tap away in the profile's app bar;
 ///   * event   -> opens [EventDetailLoaderScreen] for that event;
 ///   * community -> opens [CommunityDetailScreen] for that community.
 ///
@@ -164,13 +165,13 @@ class DeepLinkService {
     }
 
     if (target.kind == _LinkKind.profile) {
-      if (target.id == currentUserId) return; // never open a chat with self
-      // openConnectChat loads the target Profile via ProfileRepository and opens
-      // an instant, approval-free chat.
-      openConnectChat(
+      if (target.id == currentUserId) return; // own link: nothing to open
+      // "Profile first": open the person's profile; the chat is started from
+      // its app bar (with the normal connect gates).
+      openUserProfile(
         context,
         currentUserId: currentUserId,
-        otherUserId: target.id,
+        userId: target.id,
       );
     } else if (target.kind == _LinkKind.community) {
       _openCommunity(context, target.id, currentUserId);

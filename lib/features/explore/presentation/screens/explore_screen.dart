@@ -27,7 +27,6 @@ import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
-import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
@@ -2472,8 +2471,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// One fixed-size person tile in a people carousel — the shared 2.2.4
-  /// [NetworkGridCard] with the Apple-safe gestures: photo → chat, name →
-  /// profile, long-press → private people-tags editor.
+  /// [NetworkGridCard] with the Apple-safe gestures: tap (photo or name) →
+  /// profile (chat is opened from the profile's app bar), long-press →
+  /// private people-tags editor.
   Widget _personCard(BuildContext context, MatchCandidate candidate) {
     final profile = candidate.profile;
     return SizedBox(
@@ -2484,12 +2484,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
         child: NetworkGridCard(
           candidate: candidate,
           isSelf: false,
-          onOpenChat: () => openConnectChat(
-            context,
-            currentUserId: widget.userId,
-            otherUserId: profile.userId,
-            otherUserProfile: profile,
-          ),
           onOpenProfile: () {
             // Interaction logging (fire-and-forget, never throws): a profile tap
             // in the Explore feed feeds the recommendation signal.

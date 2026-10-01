@@ -11,8 +11,8 @@ import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../communities/domain/entities/community.dart';
+import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../communities/domain/repositories/communities_repository.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
 import '../../../communities/presentation/screens/community_detail_screen.dart';
@@ -314,15 +314,19 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
         e.tags.any((t) => t.toLowerCase().contains(lowerQuery));
   }
 
+  /// "Profile first": a person result opens their profile; the chat is one
+  /// tap away in the profile's app bar (which runs the connect gates).
   void _openPerson(Profile profile) {
     _log
       ..logSearch(widget.currentUserId, _query)
       ..logProfileView(widget.currentUserId, profile.userId);
-    openConnectChat(
-      context,
-      currentUserId: widget.currentUserId,
-      otherUserId: profile.userId,
-      otherUserProfile: profile,
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => ProfileDetailScreen(
+          profile: profile,
+          currentUserId: widget.currentUserId,
+        ),
+      ),
     );
   }
 

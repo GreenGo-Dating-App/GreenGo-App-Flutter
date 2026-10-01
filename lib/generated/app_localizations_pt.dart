@@ -14324,6 +14324,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get userFollowBlocked => 'Não podes seguir este utilizador.';
 
   @override
+  String get userFollowUnfollowTooltip => 'Deixar de seguir';
+
+  @override
   String userFollowFollowersStat(int count, String formatted) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -14870,6 +14873,41 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get uexpEdited => 'editada';
+
+  @override
+  String get feedFilterTooltip => 'Mostrar';
+
+  @override
+  String get feedFilterAll => 'Tudo';
+
+  @override
+  String get feedFilterCommunity => 'Comunidade';
+
+  @override
+  String get feedFilterPartner => 'Parceiros';
+
+  @override
+  String get feedFilterMyEvents => 'Os meus eventos';
+
+  @override
+  String get feedFilterMyExperiences => 'As minhas experiências';
+
+  @override
+  String get partnerBadge => 'Parceiro';
+
+  @override
+  String get createChooserTitle => 'O que quer criar?';
+
+  @override
+  String get createChooserEventDesc =>
+      'Organize um encontro ou atividade a que pessoas por perto se possam juntar';
+
+  @override
+  String get createChooserExperienceDesc =>
+      'Ofereça como anfitrião um passeio, uma aula ou uma experiência local';
+
+  @override
+  String get uexpAddExperience => 'Adicionar experiência';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -29196,6 +29234,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get userFollowBlocked => 'Você não pode seguir este usuário.';
 
   @override
+  String get userFollowUnfollowTooltip => 'Deixar de seguir';
+
+  @override
   String userFollowFollowersStat(int count, String formatted) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -29743,4 +29784,39 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get uexpEdited => 'editada';
+
+  @override
+  String get feedFilterTooltip => 'Mostrar';
+
+  @override
+  String get feedFilterAll => 'Tudo';
+
+  @override
+  String get feedFilterCommunity => 'Comunidade';
+
+  @override
+  String get feedFilterPartner => 'Parceiros';
+
+  @override
+  String get feedFilterMyEvents => 'Meus eventos';
+
+  @override
+  String get feedFilterMyExperiences => 'Minhas experiências';
+
+  @override
+  String get partnerBadge => 'Parceiro';
+
+  @override
+  String get createChooserTitle => 'O que você quer criar?';
+
+  @override
+  String get createChooserEventDesc =>
+      'Organize um encontro ou atividade para pessoas por perto participarem';
+
+  @override
+  String get createChooserExperienceDesc =>
+      'Ofereça como anfitrião um passeio, uma aula ou uma experiência local';
+
+  @override
+  String get uexpAddExperience => 'Adicionar experiência';
 }

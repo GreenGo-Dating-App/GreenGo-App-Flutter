@@ -6758,6 +6758,7 @@
   "userFollowFollowBack": "Follow back",
   "userFollowError": "Couldn't update follow. Please try again.",
   "userFollowBlocked": "You can't follow this user.",
+  "userFollowUnfollowTooltip": "Unfollow",
   "userFollowFollowersStat": "{count, plural, =1{{formatted} follower} other{{formatted} followers}}",
   "@userFollowFollowersStat": {"placeholders": {"count": {"type": "int"}, "formatted": {"type": "String"}}},
   "userFollowFollowingStat": "{count, plural, other{{formatted} following}}",
@@ -6929,5 +6930,49 @@
   "uexpReplyHint": "Write a reply. Type @ to tag someone",
   "uexpShowMoreReplies": "Show more replies",
   "uexpLoadMoreReviews": "Load more reviews",
-  "uexpEdited": "edited"
+  "uexpEdited": "edited",
+  "feedFilterTooltip": "Show",
+  "@feedFilterTooltip": {
+    "description": "Tooltip of the Events/Experiences feed filter chip"
+  },
+  "feedFilterAll": "All",
+  "@feedFilterAll": {
+    "description": "Feed filter: community + partner items merged"
+  },
+  "feedFilterCommunity": "Community",
+  "@feedFilterCommunity": {
+    "description": "Feed filter: community-created items only"
+  },
+  "feedFilterPartner": "Partner",
+  "@feedFilterPartner": {
+    "description": "Feed filter: partner (third-party) items only"
+  },
+  "feedFilterMyEvents": "My events",
+  "@feedFilterMyEvents": {
+    "description": "Events feed filter: events I organise or RSVP'd"
+  },
+  "feedFilterMyExperiences": "My experiences",
+  "@feedFilterMyExperiences": {
+    "description": "Experiences feed filter: my own experiences"
+  },
+  "partnerBadge": "Partner",
+  "@partnerBadge": {
+    "description": "Badge on partner (third-party) cards in merged feeds"
+  },
+  "createChooserTitle": "What would you like to create?",
+  "@createChooserTitle": {
+    "description": "Title of the + chooser on the Events screen"
+  },
+  "createChooserEventDesc": "Host a meetup or activity that people nearby can join",
+  "@createChooserEventDesc": {
+    "description": "One-line description of 'Create event' in the chooser"
+  },
+  "createChooserExperienceDesc": "Offer a tour, class or local experience as a host",
+  "@createChooserExperienceDesc": {
+    "description": "One-line description of 'Create experience' in the chooser"
+  },
+  "uexpAddExperience": "Add experience",
+  "@uexpAddExperience": {
+    "description": "Empty-state button in My experiences"
+  }
 }

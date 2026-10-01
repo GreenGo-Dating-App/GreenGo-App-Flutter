@@ -3,16 +3,16 @@
  *
  * Limits per EFFECTIVE tier (see shared/effectiveTier.ts — an expired Silver
  * counts as FREE). Mirrors `TierEntitlements.maxExperiences` on the client:
- *   FREE 0 · SILVER 1 · GOLD 5 · PLATINUM ∞ · TEST ∞ · admin ∞
+ *   FREE 1 · SILVER 5 · GOLD 10 · PLATINUM ∞ · TEST ∞ · admin ∞
  * The count is every experience the host has that is not deleted (drafts +
  * published + hidden).
  */
 import type { EffectiveTier } from '../shared/effectiveTier';
 
 export const EXPERIENCE_LIMITS: Record<EffectiveTier, number | null> = {
-  FREE: 0,
-  SILVER: 1,
-  GOLD: 5,
+  FREE: 1,
+  SILVER: 5,
+  GOLD: 10,
   PLATINUM: null,
   TEST: null,
 };

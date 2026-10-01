@@ -18,8 +18,8 @@ import '../../../matching/domain/entities/match_candidate.dart';
 /// super-like / nope / match / priority-connect logic and overlays.
 ///
 /// Gestures are intentionally minimal:
-///   * tap the photo area        -> [onOpenChat]
-///   * tap the name/age/city text -> [onOpenProfile]
+///   * tap the photo or the name/age/city text -> [onOpenProfile]
+///     ("profile first": the chat is opened from the profile's app bar)
 ///   * long-press anywhere        -> [onLongPressTag]
 ///   * thin gold chevrons         -> previous / next photo (internal state)
 ///
@@ -29,7 +29,6 @@ class NetworkGridCard extends StatefulWidget {
   const NetworkGridCard({
     required this.candidate,
     required this.isSelf,
-    required this.onOpenChat,
     required this.onOpenProfile,
     required this.onLongPressTag,
     this.isBusiness = false,
@@ -47,10 +46,8 @@ class NetworkGridCard extends StatefulWidget {
   /// accounts (same "featured" effect as Explore's community-event card).
   final bool isBusiness;
 
-  /// Tap the photo area (opens the chat with this person).
-  final VoidCallback onOpenChat;
-
-  /// Tap the name / age / city block (opens the full profile).
+  /// Tap anywhere on the tile — photo or name / age / city block (opens the
+  /// full profile; chat is one tap away from there).
   final VoidCallback onOpenProfile;
 
   /// Long-press anywhere on the tile (opens the private group-tag sheet).
@@ -249,13 +246,13 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
             ),
           ),
 
-        // ── Base tap layer: photo tap -> chat, long-press -> tag ──────────
+        // ── Base tap layer: photo tap -> profile, long-press -> tag ───────
         Positioned.fill(
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: () {
               HapticFeedback.lightImpact();
-              widget.onOpenChat();
+              widget.onOpenProfile();
             },
             onLongPress: () {
               HapticFeedback.mediumImpact();

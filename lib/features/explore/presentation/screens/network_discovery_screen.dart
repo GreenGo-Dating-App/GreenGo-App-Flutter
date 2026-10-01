@@ -14,7 +14,6 @@ import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
-import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
@@ -1420,17 +1419,8 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       candidate: candidate,
       isSelf: isSelf,
       isBusiness: isBusiness,
-      // Chat always opens a NORMAL 1:1 chat — even when the target is a business
-      // account (you're messaging the person). Business chat is reached only via
-      // the storefront's Contact button (open the profile card → storefront).
-      onOpenChat: isSelf
-          ? () {}
-          : () => openConnectChat(
-                context,
-                currentUserId: widget.userId,
-                otherUserId: profile.userId,
-                otherUserProfile: profile,
-              ),
+      // "Profile first": photo AND name taps open the profile (business tiles:
+      // the storefront). The chat is started from the profile's app bar.
       onOpenProfile: () {
         if (isBusiness) {
           openStorefront();

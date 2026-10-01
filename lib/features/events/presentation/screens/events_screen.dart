@@ -32,6 +32,17 @@ import '../../../attractions/presentation/widgets/attractions_filter_sheet.dart'
 import '../../../attractions/presentation/widgets/attractions_tab.dart';
 import 'event_attendees_screen.dart';
 import '../widgets/experiences_tab.dart';
+import '../widgets/attraction_menu_dialog.dart';
+import '../widgets/external_event_tiles.dart';
+import '../widgets/interleaved_feed_view.dart';
+import '../../data/datasources/external_events_pager.dart';
+import '../../domain/entities/external_event.dart';
+import '../../domain/feed_interleave.dart';
+import '../../../user_experiences/domain/repositories/user_experiences_repository.dart';
+import '../../../user_experiences/presentation/experience_creation_gate.dart';
+import '../../../user_experiences/presentation/screens/experience_editor_screen.dart';
+import '../../../user_experiences/presentation/screens/my_experiences_screen.dart';
+import '../../../user_experiences/presentation/widgets/merged_experiences_feed.dart';
 import '../../../user_experiences/presentation/widgets/community_experiences_tab.dart';
 import '../widgets/event_like_button.dart';
 import '../widgets/event_organizer_row.dart';
@@ -84,6 +95,10 @@ const int kExtraEventCost = 50; // adjustable
 /// Time bucket for the "My Events" tab (past / on-going now / upcoming).
 enum _MyEventsFilter { ongoing, upcoming, past }
 
+/// Feed filter of the Events and Experiences tabs (the chip next to Sort):
+/// All (community + partner merged) · Community · Partner · Mine.
+enum _FeedFilter { all, community, partner, mine }
+
 class EventsScreen extends StatefulWidget {
 
   const EventsScreen({
@@ -126,19 +141,13 @@ class _EventsScreenState extends State<EventsScreen>
   // by default; the user can still switch to distance/popular from the menu.
   String _nativeSort = 'date'; // distance | date | popular
 
-  // Date-range filter for native event lists (Community / My Events).
-  // Null = no bound. Inclusive window [_dateFrom 00:00 .. _dateTo 23:59:59].
-  DateTime? _dateFrom;
-  DateTime? _dateTo;
-  bool get _hasDateFilter => _dateFrom != null || _dateTo != null;
-
   // My Events time bucket (the old "Going" tab is merged into My Events).
   _MyEventsFilter _myEventsFilter = _MyEventsFilter.upcoming;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 5, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
@@ -158,8 +167,8 @@ class _EventsScreenState extends State<EventsScreen>
     _tabController.addListener(() {
       if (!mounted) return;
       setState(() {});
-      // Refresh "My Events" (now includes Going) when opened.
-      if (_tabController.index == 4) {
+      // Refresh "My events" (organised + going) when its view is opened.
+      if (_isEventsTab && _eventsFilter == _FeedFilter.mine) {
         _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
       }
     });
@@ -175,26 +184,39 @@ class _EventsScreenState extends State<EventsScreen>
     _initLocation();
   }
 
-  // External tabs (Live Events / Attractions / Experiences) have no GreenGo
-  // category tags — hide the category bar there. Native tabs: Community (0),
-  // My Events (4, which now also includes Going).
+  // Tabs: 0 Events (community + partner + mine, via [_eventsFilter]),
+  // 1 Attractions, 2 Experiences (via [_expFilter]). The old Community /
+  // Live Events / My Events tabs are filters of the Events tab now.
+  static const int _kEventsTab = 0;
+  static const int _kAttractionsTab = 1;
+  static const int _kExperiencesTab = 2;
+
+  bool get _isEventsTab => _tabController.index == _kEventsTab;
+
+  // Last filter chosen per tab, remembered for the app session (not persisted).
+  static _FeedFilter _sessionEventsFilter = _FeedFilter.all;
+  static _FeedFilter _sessionExpFilter = _FeedFilter.all;
+  _FeedFilter _eventsFilter = _sessionEventsFilter;
+  _FeedFilter _expFilter = _sessionExpFilter;
+
+  // GreenGo-category lists: every Events filter except Partner. In "All" a
+  // category narrows the community side (partner items carry no category).
   bool get _isNativeTab =>
-      _tabController.index == 0 || _tabController.index == 4;
+      _isEventsTab && _eventsFilter != _FeedFilter.partner;
 
-  // Tabs that support the date-range filter: Community (0), Live Events (1),
-  // My Events (4). Attractions/Experiences have no meaningful event date.
-  bool get _isDateFilterableTab =>
-      _isNativeTab || _tabController.index == 1;
+  // Attractions tab (curated GreenGo catalogue): own sort + filter sheet in
+  // the search bar (no chip row under it).
+  bool get _isAttractionsTab => _tabController.index == _kAttractionsTab;
 
-  // Experiences tab (Viator) — also supports a category filter.
-  bool get _isExperiencesTab => _tabController.index == 3;
-  // Selected categories (null = all).
+  // Experiences tab — the Partner (Viator) view also has a category filter.
+  bool get _isExperiencesTab => _tabController.index == _kExperiencesTab;
+  // Selected Viator category (null = all).
   String? _experienceCategory;
-  // Experiences tab segment: member-hosted COMMUNITY experiences (default)
-  // or the PARTNER (Viator) feed. The partner feed is only built once it has
-  // been opened, then kept alive in an IndexedStack.
-  bool _expCommunity = true;
-  bool _expPartnerShown = false;
+  // Bumped after an experience is created from the "+" chooser so the
+  // Experiences lists re-query and show it.
+  int _expReloadTick = 0;
+  // Order of the merged Events "All" feed: soonest first by default.
+  String _allSort = 'date'; // date | distance
 
   // Whole-table community search (Community tab): default shows the 100 closest;
   // a search queries the entire events table and shows matches.
@@ -334,7 +356,7 @@ class _EventsScreenState extends State<EventsScreen>
     return BlocProvider.value(
       value: _eventsBloc,
       child: ShowCaseWidget(
-        builder: (showcaseContext) => TourTrigger(
+        builder: (_) => TourTrigger(
           // First-time Events tour: create button, search field, and the tabs.
           onVisible: (tourContext) =>
               TourController.instance.maybeStartMiniTour(
@@ -364,34 +386,7 @@ class _EventsScreenState extends State<EventsScreen>
               targetShapeBorder: const CircleBorder(),
               child: IconButton(
                 icon: const Icon(Icons.add, color: AppColors.richGold),
-                onPressed: () => _showCreateEventDialog(context),
-              ),
-            ),
-            // Date-range filter applies to Community, Live Events and My Events
-            // (Attractions & Experiences have no meaningful event date).
-            if (_isDateFilterableTab)
-              IconButton(
-                icon: Icon(
-                  _hasDateFilter
-                      ? Icons.filter_list
-                      : Icons.filter_list_outlined,
-                  color: _hasDateFilter
-                      ? AppColors.richGold
-                      : AppColors.textPrimary,
-                ),
-                onPressed: () => _showFilterDialog(context),
-              ),
-            IconButton(
-              icon:
-                  const Icon(Icons.help_outline, color: AppColors.textTertiary),
-              tooltip: l10n.tourReplayGuide,
-              onPressed: () => TourController.instance.startMiniTourNow(
-                showcaseContext,
-                [
-                  TourKeys.eventsCreate,
-                  TourKeys.eventsSearch,
-                  TourKeys.eventsTabs,
-                ],
+                onPressed: () => _showCreateChooser(context),
               ),
             ),
           ],
@@ -410,11 +405,9 @@ class _EventsScreenState extends State<EventsScreen>
                 isScrollable: true,
                 tabAlignment: TabAlignment.start,
                 tabs: [
-                  Tab(text: AppLocalizations.of(context)!.eventsTabCommunity),
-                  Tab(text: AppLocalizations.of(context)!.eventsTabLiveEvents),
+                  Tab(text: AppLocalizations.of(context)!.eventsTitle),
                   Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
                   Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
-                  Tab(text: AppLocalizations.of(context)!.eventsTabMyEvents),
                 ],
               ),
             ),
@@ -471,8 +464,7 @@ class _EventsScreenState extends State<EventsScreen>
                 // Category filter — native tabs use GreenGo categories;
                 // Attractions filters live in the search-bar sheet.
                 if (_isNativeTab) _buildCategoryFilter(_lastLoaded),
-                if (_isExperiencesTab) _buildExperienceSegment(),
-                if (_isExperiencesTab && !_expCommunity)
+                if (_isExperiencesTab && _expFilter == _FeedFilter.partner)
                   _buildExperienceCategoryFilter(),
                 // Events List
                 Expanded(
@@ -497,18 +489,35 @@ class _EventsScreenState extends State<EventsScreen>
     return TabBarView(
       controller: _tabController,
       children: [
-        _KeepAliveTab(child: _buildCommunityTab(loaded, firstLoad)),
-        _buildExternalTab(
-            () => _buildExperiencesTab('ticketmaster', sortOverride: _liveSort)),
+        _KeepAliveTab(child: _buildEventsTab(loaded, firstLoad)),
         _buildExternalTab(_buildCuratedAttractionsTab),
-        _buildExternalTab(_buildExperiencesSegmentBody),
-        _KeepAliveTab(
-          child: loaded != null
-              ? _buildMyEventsTab(loaded)
-              : (firstLoad ? _buildTabSpinner() : _buildEventsList(const [])),
-        ),
+        _buildExternalTab(_buildExperiencesFilterBody),
       ],
     );
+  }
+
+  /// Events tab body for the selected filter. Each filter is its own keyed
+  /// subtree, so switching filters starts that list from the top (the
+  /// paginated window resets).
+  Widget _buildEventsTab(EventsLoaded? loaded, bool firstLoad) {
+    final Widget body;
+    switch (_eventsFilter) {
+      case _FeedFilter.all:
+        body = _buildExternalTab(() => _buildAllEventsFeed(loaded, firstLoad));
+      case _FeedFilter.community:
+        body = _buildCommunityTab(loaded, firstLoad);
+      case _FeedFilter.partner:
+        // The former Live Events tab: ticketmaster in chunks of 20.
+        body = _buildExternalTab(() =>
+            _buildExperiencesTab('ticketmaster', sortOverride: _liveSort));
+      case _FeedFilter.mine:
+        // The former My Events tab (organised / co-owned + RSVP'd).
+        body = loaded != null
+            ? _buildMyEventsTab(loaded)
+            : (firstLoad ? _buildTabSpinner() : _buildEventsList(const []));
+    }
+    return KeyedSubtree(
+        key: ValueKey('eventsFilter_${_eventsFilter.name}'), child: body);
   }
 
   Widget _buildTabSpinner() => const Center(
@@ -521,6 +530,7 @@ class _EventsScreenState extends State<EventsScreen>
 
   /// Search bar (country / city / name) + popularity sort toggle.
   Widget _buildSearchAndSortBar() {
+    final sortMenu = _buildSortMenu();
     return Padding(
       padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
       child: Row(
@@ -535,8 +545,9 @@ class _EventsScreenState extends State<EventsScreen>
                 style: const TextStyle(color: AppColors.textPrimary),
                 onChanged: (v) {
                   setState(() => _searchQuery = v.trim());
-                  // Community tab searches the whole events table.
-                  if (_tabController.index == 0) _runCommunitySearch(v.trim());
+                  // Events tab (All / Community) searches the whole events
+                  // table.
+                  if (_isEventsTab) _runCommunitySearch(v.trim());
                 },
                 decoration: InputDecoration(
                   isDense: true,
@@ -557,95 +568,12 @@ class _EventsScreenState extends State<EventsScreen>
             ),
           ),
           const SizedBox(width: 8),
-          // Both native and external tabs: a sort menu defaulting to Distance.
-          // Native events have no stars/reviews, so they offer Distance/Date/
-          // Popular; external offer Distance/Stars/Reviews/Date.
-          if (_isNativeTab)
-            PopupMenuButton<String>(
-              icon: const Icon(Icons.sort, color: AppColors.richGold),
-              tooltip: AppLocalizations.of(context)!.eventsSortBy,
-              color: AppColors.backgroundCard,
-              initialValue: _nativeSort,
-              onSelected: (v) => setState(() => _nativeSort = v),
-              itemBuilder: (ctx) => [
-                _sortItem('distance',
-                    AppLocalizations.of(ctx)!.eventsSortDistance, Icons.near_me,
-                    current: _nativeSort),
-                _sortItem('date', AppLocalizations.of(ctx)!.eventsSortDate,
-                    Icons.event,
-                    current: _nativeSort),
-                _sortItem(
-                    'popular',
-                    AppLocalizations.of(ctx)!.eventsSortPopular,
-                    Icons.local_fire_department,
-                    current: _nativeSort),
-              ],
-            )
-          // Live Events (tab 1): its own Date/Distance order (no stars/reviews
-          // on ticketmaster data), bound to _liveSort so the menu actually works.
-          else if (_tabController.index == 1)
-            PopupMenuButton<String>(
-              icon: const Icon(Icons.sort, color: AppColors.richGold),
-              tooltip: AppLocalizations.of(context)!.eventsSortBy,
-              color: AppColors.backgroundCard,
-              initialValue: _liveSort,
-              onSelected: (v) => setState(() => _liveSort = v),
-              itemBuilder: (ctx) => [
-                _sortItem('date', AppLocalizations.of(ctx)!.eventsSortDate,
-                    Icons.event,
-                    current: _liveSort),
-                _sortItem('distance',
-                    AppLocalizations.of(ctx)!.eventsSortDistance, Icons.near_me,
-                    current: _liveSort),
-              ],
-            )
-          // Attractions (tab 2) — curated dataset: its own sort keys, surfaced in
-          // the search bar so the tab needs no second control of its own.
-          else if (_tabController.index == 2)
-            PopupMenuButton<String>(
-              icon: const Icon(Icons.sort, color: AppColors.richGold),
-              tooltip: AppLocalizations.of(context)!.eventsSortBy,
-              color: AppColors.backgroundCard,
-              initialValue: _attrSort,
-              onSelected: (v) => setState(() => _attrSort = v),
-              itemBuilder: (ctx) {
-                final l = AppLocalizations.of(ctx)!;
-                return [
-                  _sortItem('distance', l.attrSortDistance, Icons.near_me,
-                      current: _attrSort),
-                  _sortItem('score', l.attrSortScore, Icons.diamond,
-                      current: _attrSort),
-                  _sortItem('rating', l.attrSortRating, Icons.star,
-                      current: _attrSort),
-                  _sortItem('price', l.attrSortPrice, Icons.local_offer,
-                      current: _attrSort),
-                  _sortItem('name', l.attrSortName, Icons.sort_by_alpha,
-                      current: _attrSort),
-                ];
-              },
-            )
-          // Experiences (3) honours _extSort.
-          else
-            PopupMenuButton<String>(
-              icon: const Icon(Icons.sort, color: AppColors.richGold),
-              tooltip: AppLocalizations.of(context)!.eventsSortBy,
-              color: AppColors.backgroundCard,
-              initialValue: _extSort,
-              onSelected: (v) => setState(() => _extSort = v),
-              itemBuilder: (ctx) => [
-                _sortItem('distance',
-                    AppLocalizations.of(ctx)!.eventsSortDistance, Icons.near_me),
-                _sortItem('rating',
-                    AppLocalizations.of(ctx)!.eventsSortStars, Icons.star),
-                _sortItem('reviews',
-                    AppLocalizations.of(ctx)!.eventsSortReviews, Icons.reviews),
-                _sortItem('date',
-                    AppLocalizations.of(ctx)!.eventsSortDate, Icons.event),
-              ],
-            ),
+          // Events / Experiences: All · Community · Partner · Mine.
+          if (_isEventsTab || _isExperiencesTab) _buildFeedFilterChip(),
+          if (sortMenu != null) sortMenu,
           // Attractions filters (score / category / country -> city), next to
           // the sort menu; gold dot while any filter is non-default.
-          if (_tabController.index == 2) _buildAttractionFiltersButton(),
+          if (_isAttractionsTab) _buildAttractionFiltersButton(),
           const SizedBox(width: 4),
           // List / grid view toggle
           IconButton(
@@ -661,6 +589,184 @@ class _EventsScreenState extends State<EventsScreen>
         ],
       ),
     );
+  }
+
+  /// The sort menu for the current tab / filter (null = nothing to sort).
+  Widget? _buildSortMenu() {
+    PopupMenuButton<String> menu(
+      String current,
+      ValueChanged<String> onSelected,
+      List<PopupMenuEntry<String>> Function(AppLocalizations l) items,
+    ) =>
+        PopupMenuButton<String>(
+          icon: const Icon(Icons.sort, color: AppColors.richGold),
+          tooltip: AppLocalizations.of(context)!.eventsSortBy,
+          color: AppColors.backgroundCard,
+          initialValue: current,
+          onSelected: onSelected,
+          itemBuilder: (ctx) => items(AppLocalizations.of(ctx)!),
+        );
+
+    if (_isEventsTab) {
+      switch (_eventsFilter) {
+        // Merged feed: soonest (default) or nearest across both sources.
+        case _FeedFilter.all:
+          return menu(_allSort, (v) => setState(() => _allSort = v), (l) => [
+                _sortItem('date', l.eventsSortDate, Icons.event,
+                    current: _allSort),
+                _sortItem('distance', l.eventsSortDistance, Icons.near_me,
+                    current: _allSort),
+              ]);
+        // Partner (ticketmaster): Date / Distance, no stars/reviews.
+        case _FeedFilter.partner:
+          return menu(_liveSort, (v) => setState(() => _liveSort = v), (l) => [
+                _sortItem('date', l.eventsSortDate, Icons.event,
+                    current: _liveSort),
+                _sortItem('distance', l.eventsSortDistance, Icons.near_me,
+                    current: _liveSort),
+              ]);
+        // Native events have no stars/reviews: Distance / Date / Popular.
+        case _FeedFilter.community:
+        case _FeedFilter.mine:
+          return menu(_nativeSort, (v) => setState(() => _nativeSort = v),
+              (l) => [
+                    _sortItem('distance', l.eventsSortDistance, Icons.near_me,
+                        current: _nativeSort),
+                    _sortItem('date', l.eventsSortDate, Icons.event,
+                        current: _nativeSort),
+                    _sortItem('popular', l.eventsSortPopular,
+                        Icons.local_fire_department,
+                        current: _nativeSort),
+                  ]);
+      }
+    }
+    // Attractions — curated dataset: its own sort keys.
+    if (_isAttractionsTab) {
+      return menu(_attrSort, (v) => setState(() => _attrSort = v), (l) => [
+            _sortItem('distance', l.attrSortDistance, Icons.near_me,
+                current: _attrSort),
+            _sortItem('score', l.attrSortScore, Icons.diamond,
+                current: _attrSort),
+            _sortItem('rating', l.attrSortRating, Icons.star,
+                current: _attrSort),
+            _sortItem('price', l.attrSortPrice, Icons.local_offer,
+                current: _attrSort),
+            _sortItem('name', l.attrSortName, Icons.sort_by_alpha,
+                current: _attrSort),
+          ]);
+    }
+    // Experiences: the partner sort drives Partner and the merged All feed;
+    // the community feed has a fixed order (nearest, else newest).
+    if (_expFilter == _FeedFilter.all || _expFilter == _FeedFilter.partner) {
+      return menu(_extSort, (v) => setState(() => _extSort = v), (l) => [
+            _sortItem('distance', l.eventsSortDistance, Icons.near_me),
+            _sortItem('rating', l.eventsSortStars, Icons.star),
+            _sortItem('reviews', l.eventsSortReviews, Icons.reviews),
+            _sortItem('date', l.eventsSortDate, Icons.event),
+          ]);
+    }
+    return null;
+  }
+
+  /// Compact dropdown chip choosing what the Events / Experiences tab shows.
+  Widget _buildFeedFilterChip() {
+    final l = AppLocalizations.of(context)!;
+    final events = _isEventsTab;
+    final current = events ? _eventsFilter : _expFilter;
+    String label(_FeedFilter f) => switch (f) {
+          _FeedFilter.all => l.feedFilterAll,
+          _FeedFilter.community => l.feedFilterCommunity,
+          _FeedFilter.partner => l.feedFilterPartner,
+          _FeedFilter.mine =>
+            events ? l.feedFilterMyEvents : l.feedFilterMyExperiences,
+        };
+    IconData icon(_FeedFilter f) => switch (f) {
+          _FeedFilter.all => Icons.layers_outlined,
+          _FeedFilter.community => Icons.people_alt_outlined,
+          _FeedFilter.partner => Icons.handshake_outlined,
+          _FeedFilter.mine => Icons.person_outline,
+        };
+    final active = current != _FeedFilter.all;
+    return PopupMenuButton<_FeedFilter>(
+      tooltip: l.feedFilterTooltip,
+      color: AppColors.backgroundCard,
+      initialValue: current,
+      onSelected: events ? _setEventsFilter : _setExpFilter,
+      itemBuilder: (_) => [
+        for (final f in _FeedFilter.values)
+          PopupMenuItem<_FeedFilter>(
+            value: f,
+            child: Row(
+              children: [
+                Icon(icon(f),
+                    size: 18,
+                    color: f == current
+                        ? AppColors.richGold
+                        : AppColors.textSecondary),
+                const SizedBox(width: 10),
+                Text(label(f),
+                    style: TextStyle(
+                        color: f == current
+                            ? AppColors.richGold
+                            : AppColors.textPrimary)),
+              ],
+            ),
+          ),
+      ],
+      child: Container(
+        height: 36,
+        constraints: const BoxConstraints(maxWidth: 116),
+        padding: const EdgeInsets.only(left: 10, right: 2),
+        decoration: BoxDecoration(
+          color: active
+              ? AppColors.richGold.withValues(alpha: 0.15)
+              : AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(
+              color: active ? AppColors.richGold : AppColors.divider),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon(current), size: 16, color: AppColors.richGold),
+            const SizedBox(width: 4),
+            Flexible(
+              child: Text(
+                label(current),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            const Icon(Icons.arrow_drop_down,
+                color: AppColors.richGold, size: 20),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _setEventsFilter(_FeedFilter f) {
+    if (f == _eventsFilter) return;
+    setState(() {
+      _eventsFilter = f;
+      _sessionEventsFilter = f;
+    });
+    if (f == _FeedFilter.mine) {
+      _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+    }
+  }
+
+  void _setExpFilter(_FeedFilter f) {
+    if (f == _expFilter) return;
+    setState(() {
+      _expFilter = f;
+      _sessionExpFilter = f;
+    });
   }
 
   Widget _buildAttractionFiltersButton() {
@@ -701,39 +807,32 @@ class _EventsScreenState extends State<EventsScreen>
 
   /// Apply the free-text search (country/city/name) and optional popularity sort.
   List<Event> _applySearchAndSort(List<Event> events) {
-    var result = events;
-    // Category chip (applies to EVERY native tab, incl. Community which renders
-    // the server `_communityNearby` list that is not category-scoped upstream).
-    if (_selectedCategory != null) {
-      result = result.where((e) => e.category == _selectedCategory).toList();
-    }
-    final q = _searchQuery.toLowerCase();
-    if (q.isNotEmpty) {
-      result = result.where((e) {
-        return e.title.toLowerCase().contains(q) ||
-            (e.city ?? '').toLowerCase().contains(q) ||
-            e.locationName.toLowerCase().contains(q) ||
-            (e.address ?? '').toLowerCase().contains(q) ||
-            e.tags.any((t) => t.toLowerCase().contains(q));
-      }).toList();
-    }
-    // Date-range filter (inclusive): keep events that OVERLAP the window —
-    // i.e. they end on/after _dateFrom and start on/before _dateTo.
-    if (_hasDateFilter) {
-      final from = _dateFrom;
-      final to = _dateTo;
-      result = result.where((e) {
-        if (from != null && e.endDate.isBefore(from)) return false;
-        if (to != null && e.startDate.isAfter(to)) return false;
-        return true;
-      }).toList();
-    }
+    var result = events.where(_matchesNativeFilters).toList();
     // Apply the selected order (distance by default).
     result = _applyNativeSort(result);
     // Featured/boosted events surface first, preserving relative order.
     final featured = result.where((e) => e.isCurrentlyFeatured).toList();
     final rest = result.where((e) => !e.isCurrentlyFeatured).toList();
     return [...featured, ...rest];
+  }
+
+  /// Category chip (every native list, incl. Community which renders the
+  /// server `_communityNearby` list that is not category-scoped upstream),
+  /// and free-text search (country/city/name).
+  bool _matchesNativeFilters(Event e) {
+    if (_selectedCategory != null && e.category != _selectedCategory) {
+      return false;
+    }
+    final q = _searchQuery.toLowerCase();
+    if (q.isNotEmpty &&
+        !(e.title.toLowerCase().contains(q) ||
+            (e.city ?? '').toLowerCase().contains(q) ||
+            e.locationName.toLowerCase().contains(q) ||
+            (e.address ?? '').toLowerCase().contains(q) ||
+            e.tags.any((t) => t.toLowerCase().contains(q)))) {
+      return false;
+    }
+    return true;
   }
 
   /// Order native events by the chosen mode: distance (default) / date /
@@ -1008,48 +1107,51 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
+  /// Empty state of the event lists, with the "Create event" button.
+  Widget _buildNoEventsState() {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(
+            Icons.event_busy,
+            size: 80,
+            color: AppColors.textTertiary,
+          ),
+          const SizedBox(height: 16),
+          Text(
+            AppLocalizations.of(context)!.eventsNoEventsFound,
+            style: const TextStyle(
+              color: AppColors.textPrimary,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            AppLocalizations.of(context)!.eventsCheckBackLater,
+            style: const TextStyle(
+              color: AppColors.textSecondary,
+              fontSize: 14,
+            ),
+          ),
+          const SizedBox(height: 24),
+          ElevatedButton.icon(
+            onPressed: () => _showCreateEventDialog(context),
+            icon: const Icon(Icons.add),
+            label: Text(AppLocalizations.of(context)!.eventsCreateEvent),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+              foregroundColor: AppColors.deepBlack,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildEventsList(List<Event> events) {
-    if (events.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(
-              Icons.event_busy,
-              size: 80,
-              color: AppColors.textTertiary,
-            ),
-            const SizedBox(height: 16),
-            Text(
-              AppLocalizations.of(context)!.eventsNoEventsFound,
-              style: const TextStyle(
-                color: AppColors.textPrimary,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              AppLocalizations.of(context)!.eventsCheckBackLater,
-              style: const TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 14,
-              ),
-            ),
-            const SizedBox(height: 24),
-            ElevatedButton.icon(
-              onPressed: () => _showCreateEventDialog(context),
-              icon: const Icon(Icons.add),
-              label: Text(AppLocalizations.of(context)!.eventsCreateEvent),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.richGold,
-                foregroundColor: AppColors.deepBlack,
-              ),
-            ),
-          ],
-        ),
-      );
-    }
+    if (events.isEmpty) return _buildNoEventsState();
 
     return RefreshIndicator(
       color: AppColors.richGold,
@@ -1200,11 +1302,6 @@ class _EventsScreenState extends State<EventsScreen>
       userLat: _userLat,
       userLng: _userLng,
       currentUserId: widget.currentUserId,
-      // Live Events honour the shared date-range filter (100km + date/distance
-      // ordering is applied inside the tab). Attractions/Experiences have no
-      // meaningful event date, so no date filter there.
-      dateFrom: source == 'ticketmaster' ? _dateFrom : null,
-      dateTo: source == 'ticketmaster' ? _dateTo : null,
     );
   }
 
@@ -1224,62 +1321,272 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
-  /// Category chips for the Experiences (Viator) tab.
-  /// Community (member-hosted) | Partners (Viator) switch on the Experiences tab.
-  Widget _buildExperienceSegment() {
-    final l10n = AppLocalizations.of(context)!;
-    Widget seg(bool community, String label, IconData icon) {
-      final selected = _expCommunity == community;
-      return Padding(
-        padding: const EdgeInsets.only(right: 8),
-        child: ChoiceChip(
-          avatar: Icon(icon,
-              size: 16,
-              color: selected ? AppColors.deepBlack : AppColors.richGold),
-          label: Text(label),
-          selected: selected,
-          showCheckmark: false,
-          backgroundColor: AppColors.backgroundCard,
-          selectedColor: AppColors.richGold,
-          labelStyle: TextStyle(
-              color: selected ? AppColors.deepBlack : AppColors.textPrimary),
-          onSelected: (_) => setState(() {
-            _expCommunity = community;
-            if (!community) _expPartnerShown = true;
-          }),
-        ),
-      );
-    }
-
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 6, 12, 0),
-      child: Row(children: [
-        seg(true, l10n.uexpCommunity, Icons.people_alt_outlined),
-        seg(false, l10n.uexpPartners, Icons.storefront_outlined),
-      ]),
-    );
-  }
-
-  /// Both segments stay alive once opened (no reload when switching back).
-  Widget _buildExperiencesSegmentBody() {
-    return IndexedStack(
-      index: _expCommunity ? 0 : 1,
-      sizing: StackFit.expand,
-      children: [
-        CommunityExperiencesTab(
-          key: const ValueKey('uexpCommunity'),
+  /// Experiences tab body for the selected filter (each keyed so a filter
+  /// switch — or a newly created experience — restarts its list at the top).
+  Widget _buildExperiencesFilterBody() {
+    switch (_expFilter) {
+      case _FeedFilter.all:
+        return MergedExperiencesFeed(
+          key: ValueKey('uexpAll_$_expReloadTick'),
+          currentUserId: widget.currentUserId,
+          gridView: _gridView,
+          sort: _extSort,
+          query: _searchQuery,
+          userLat: _userLat,
+          userLng: _userLng,
+        );
+      case _FeedFilter.community:
+        return CommunityExperiencesTab(
+          key: ValueKey('uexpCommunity_$_expReloadTick'),
           currentUserId: widget.currentUserId,
           gridView: _gridView,
           query: _searchQuery,
           userLat: _userLat,
           userLng: _userLng,
-        ),
-        if (_expPartnerShown || !_expCommunity)
-          _buildExperiencesTab('viator', category: _experienceCategory)
-        else
-          const SizedBox.shrink(),
-      ],
+          // Creating lives in the "+" chooser; "My experiences" is a filter.
+          showActions: false,
+        );
+      case _FeedFilter.partner:
+        return _buildExperiencesTab('viator', category: _experienceCategory);
+      case _FeedFilter.mine:
+        return MyExperiencesPanel(
+          key: ValueKey('uexpMine_$_expReloadTick'),
+          currentUserId: widget.currentUserId,
+        );
+    }
+  }
+
+  /// Distance in km from the viewer, or null when either side is unknown.
+  double? _kmTo(double? lat, double? lng) {
+    if (_userLat == null || _userLng == null || lat == null || lng == null) {
+      return null;
+    }
+    const r = 6371.0;
+    final dLat = (lat - _userLat!) * math.pi / 180;
+    final dLng = (lng - _userLng!) * math.pi / 180;
+    final a = math.sin(dLat / 2) * math.sin(dLat / 2) +
+        math.cos(_userLat! * math.pi / 180) *
+            math.cos(lat * math.pi / 180) *
+            math.sin(dLng / 2) *
+            math.sin(dLng / 2);
+    return r * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a));
+  }
+
+  /// The community side of the Events "All" feed — the same list the
+  /// Community view shows (nearest community events, whole-table search
+  /// results while searching, the loaded set as a fallback) — plus whether it
+  /// is final yet, and a key that changes only when the list does.
+  ({List<Event> list, bool ready, String key}) _communityFeedInput(
+      EventsLoaded? state, bool firstLoad) {
+    if (_searchQuery.isNotEmpty) {
+      final ready = !_communitySearching || _communityResults.isNotEmpty;
+      return (
+        list: _communityResults.where((e) => e.isLive).toList(),
+        ready: ready,
+        key: 'q${identityHashCode(_communityResults)}_$ready',
+      );
+    }
+    // Server answer only: a cached paint would be replaced (and jump).
+    if (_communityNearby.isNotEmpty && _communityServerLoaded) {
+      return (
+        list: _communityNearby.where((e) => e.isLive).toList(),
+        ready: true,
+        key: 'n${identityHashCode(_communityNearby)}',
+      );
+    }
+    final waiting = _communityNearbyLoading ||
+        !_anchorResolved ||
+        (_userLat != null && !_communityServerLoaded);
+    if (waiting || (state == null && firstLoad)) {
+      return (list: const <Event>[], ready: false, key: 'wait');
+    }
+    if (state == null) return (list: const <Event>[], ready: true, key: 'none');
+    return (
+      list: _getCommunityEvents(state),
+      ready: true,
+      key: 'b${identityHashCode(state.upcomingEvents)}',
     );
+  }
+
+  _MergedEvent _mergedCommunity(Event e) => _MergedEvent.community(
+      e, FeedSortKey(date: e.startDate, distanceKm: _kmTo(e.latitude, e.longitude)));
+
+  _MergedEvent _mergedPartner(ExternalEvent p) => _MergedEvent.partner(
+      p,
+      FeedSortKey(
+          date: parseFeedDate(p.startDate), distanceKm: _kmTo(p.lat, p.lng)));
+
+  /// Client filters of the merged feed: community items use the native
+  /// filters; partner items match search (title/city/country) and are hidden
+  /// while a GreenGo category is selected.
+  bool _matchesMergedFilters(_MergedEvent x) {
+    final e = x.community;
+    if (e != null) return _matchesNativeFilters(e);
+    final p = x.partner!;
+    if (_selectedCategory != null) return false;
+    final q = _searchQuery.toLowerCase();
+    if (q.isNotEmpty &&
+        !(p.title.toLowerCase().contains(q) ||
+            (p.city ?? '').toLowerCase().contains(q) ||
+            (p.country ?? '').toLowerCase().contains(q))) {
+      return false;
+    }
+    return true;
+  }
+
+  /// Events → "All": community events and partner (ticketmaster) live events
+  /// in ONE list. Both sources stay paged (community = the nearest-100 set,
+  /// partner = chunks of 20) and are merged as pages arrive, append-only:
+  /// Date (default) = soonest first, same day nearest first; Distance =
+  /// nearest first across both (needs the viewer's location).
+  Widget _buildAllEventsFeed(EventsLoaded? loaded, bool firstLoad) {
+    final input = _communityFeedInput(loaded, firstLoad);
+    final byDistance =
+        _allSort == 'distance' && _userLat != null && _userLng != null;
+    final anchor = '$_userLat,$_userLng';
+    return InterleavedFeedView<_MergedEvent>(
+      sourceKeyA: '${input.key}|$anchor|$byDistance',
+      sourceKeyB: '$anchor|$byDistance',
+      filterKey: '$_selectedCategory|$_searchQuery',
+      createA: () => input.ready
+          ? ListFeedSource<_MergedEvent>(
+              input.list.map(_mergedCommunity).toList())
+          : null,
+      createB: () {
+        final pager = ExternalEventsPager(
+          source: 'ticketmaster',
+          // Date mode is the server-ordered soonest-first feed; distance mode
+          // the nearest-first geohash rings.
+          sort: byDistance ? 'distance' : 'date',
+          userLat: _userLat,
+          userLng: _userLng,
+          liveChunks: true,
+        );
+        return PagerFeedSource<ExternalEvent, _MergedEvent>(
+          hasMore: () => pager.hasMore,
+          next: pager.next,
+          map: _mergedPartner,
+        );
+      },
+      filter: _matchesMergedFilters,
+      compare: byDistance
+          ? (a, b) => compareNearestThenSoonest(a.key, b.key)
+          : (a, b) => compareSoonestThenNearest(a.key, b.key),
+      gridView: _gridView,
+      itemBuilder: (context, x, grid) {
+        final e = x.community;
+        if (e != null) {
+          return grid
+              ? _buildEventGridTile(e)
+              : EventCard(
+                  event: e,
+                  currentUserId: widget.currentUserId,
+                  onTap: () => _showEventDetails(e),
+                  onRSVP: (status) => _handleRSVP(e, status),
+                );
+        }
+        final p = x.partner!;
+        void open() => showAttractionMenu(context,
+            event: p, currentUserId: widget.currentUserId);
+        return grid
+            ? ExternalEventGridTile(
+                event: p, onTap: open, showPartnerBadge: true)
+            : ExternalEventCard(event: p, onTap: open, showPartnerBadge: true);
+      },
+      emptyBuilder: (_) => _buildNoEventsState(),
+      onRefresh: () async {
+        _eventsBloc.add(const LoadEvents(upcoming: true));
+        _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+        await _loadCommunityNearby(force: true);
+      },
+    );
+  }
+
+  /// "+" in the app bar: choose between creating an event or an experience.
+  void _showCreateChooser(BuildContext context) {
+    final l = AppLocalizations.of(context)!;
+    showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: AppColors.backgroundCard,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheet) {
+        Widget option(
+                IconData icon, String title, String desc, VoidCallback onTap) =>
+            ListTile(
+              contentPadding:
+                  const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+              leading: CircleAvatar(
+                radius: 22,
+                backgroundColor: AppColors.richGold.withValues(alpha: 0.15),
+                child: Icon(icon, color: AppColors.richGold),
+              ),
+              title: Text(title,
+                  style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontWeight: FontWeight.w600)),
+              subtitle: Text(desc,
+                  style: const TextStyle(
+                      color: AppColors.textSecondary, fontSize: 12)),
+              trailing:
+                  const Icon(Icons.chevron_right, color: AppColors.textTertiary),
+              onTap: () {
+                Navigator.pop(sheet);
+                onTap();
+              },
+            );
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: AppColors.divider,
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 16, 20, 8),
+                  child: Text(
+                    l.createChooserTitle,
+                    style: const TextStyle(
+                      color: AppColors.textPrimary,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                option(Icons.event, l.eventsCreateEvent,
+                    l.createChooserEventDesc,
+                    () => _showCreateEventDialog(context)),
+                option(Icons.travel_explore, l.uexpCreate,
+                    l.createChooserExperienceDesc, _createExperience),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  /// Create an experience through the tier gate (Free → upgrade prompt), then
+  /// refresh the Experiences lists so it shows up.
+  Future<void> _createExperience() async {
+    final ok = await ExperienceCreationGate(
+            repository: sl<UserExperiencesRepository>())
+        .ensureCanCreate(context, widget.currentUserId);
+    if (!ok || !mounted) return;
+    final saved = await Navigator.of(context).push(
+        ExperienceEditorScreen.route(currentUserId: widget.currentUserId));
+    if (saved != null && mounted) setState(() => _expReloadTick++);
   }
 
   Widget _buildExperienceCategoryFilter() {
@@ -1334,196 +1641,6 @@ class _EventsScreenState extends State<EventsScreen>
           },
         ),
       ),
-    );
-  }
-
-  void _showFilterDialog(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: AppColors.backgroundCard,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) => _buildFilterSheet(),
-    );
-  }
-
-  Widget _buildFilterSheet() {
-    final l10n = AppLocalizations.of(context)!;
-    // Local working copy; committed to state only on "Apply".
-    DateTime? from = _dateFrom;
-    DateTime? to = _dateTo;
-    final df = DateFormat.yMMMd();
-
-    DateTime startOfDay(DateTime d) => DateTime(d.year, d.month, d.day);
-    DateTime endOfDay(DateTime d) =>
-        DateTime(d.year, d.month, d.day, 23, 59, 59);
-
-    return StatefulBuilder(
-      builder: (context, setSheet) {
-        String rangeLabel() {
-          if (from == null && to == null) return l10n.eventsDateAnyTime;
-          if (from != null && to != null) {
-            return '${df.format(from!)} – ${df.format(to!)}';
-          }
-          if (from != null) return '${l10n.eventsDateFrom} ${df.format(from!)}';
-          return '${l10n.eventsDateUntil} ${df.format(to!)}';
-        }
-
-        // Is [from,to] exactly the given whole-day window? (drives chip highlight)
-        bool matches(DateTime a, DateTime b) =>
-            from != null &&
-            to != null &&
-            from!.isAtSameMomentAs(a) &&
-            to!.isAtSameMomentAs(b);
-
-        final now = DateTime.now();
-        final todayStart = startOfDay(now);
-        final todayEnd = endOfDay(now);
-        final weekEnd = endOfDay(now.add(const Duration(days: 6)));
-        final monthEnd = endOfDay(DateTime(now.year, now.month + 1, 0));
-
-        Widget quick(String label, DateTime a, DateTime b) {
-          final selected = matches(a, b);
-          return Expanded(
-            child: OutlinedButton(
-              onPressed: () => setSheet(() {
-                from = a;
-                to = b;
-              }),
-              style: OutlinedButton.styleFrom(
-                foregroundColor:
-                    selected ? AppColors.deepBlack : AppColors.textPrimary,
-                backgroundColor:
-                    selected ? AppColors.richGold : Colors.transparent,
-                side: BorderSide(
-                  color: selected ? AppColors.richGold : AppColors.textTertiary,
-                ),
-              ),
-              child: Text(label, textAlign: TextAlign.center),
-            ),
-          );
-        }
-
-        return Padding(
-          padding: EdgeInsets.only(
-            left: 20,
-            right: 20,
-            top: 20,
-            bottom: 20 + MediaQuery.of(context).viewInsets.bottom,
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      l10n.eventsFilterEvents,
-                      style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  if (from != null || to != null)
-                    TextButton(
-                      onPressed: () => setSheet(() {
-                        from = null;
-                        to = null;
-                      }),
-                      child: Text(
-                        l10n.eventsDateAnyTime,
-                        style: const TextStyle(color: AppColors.richGold),
-                      ),
-                    ),
-                ],
-              ),
-              const SizedBox(height: 16),
-              Text(
-                l10n.eventsDateRange,
-                style: const TextStyle(color: AppColors.textSecondary),
-              ),
-              const SizedBox(height: 6),
-              // Currently-selected window, human readable.
-              Row(
-                children: [
-                  const Icon(Icons.event, color: AppColors.richGold, size: 18),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      rangeLabel(),
-                      style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 12),
-              Row(
-                children: [
-                  quick(l10n.eventsToday, todayStart, todayEnd),
-                  const SizedBox(width: 8),
-                  quick(l10n.eventsThisWeekFilter, todayStart, weekEnd),
-                  const SizedBox(width: 8),
-                  quick(l10n.eventsThisMonth, todayStart, monthEnd),
-                ],
-              ),
-              const SizedBox(height: 12),
-              SizedBox(
-                width: double.infinity,
-                child: OutlinedButton.icon(
-                  onPressed: () async {
-                    final picked = await showDateRangePicker(
-                      context: context,
-                      firstDate: DateTime(now.year - 1),
-                      lastDate: DateTime(now.year + 2),
-                      initialDateRange: (from != null && to != null)
-                          ? DateTimeRange(start: from!, end: to!)
-                          : null,
-                    );
-                    if (picked != null) {
-                      setSheet(() {
-                        from = startOfDay(picked.start);
-                        to = endOfDay(picked.end);
-                      });
-                    }
-                  },
-                  icon: const Icon(Icons.date_range, size: 18),
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: AppColors.richGold,
-                    side: const BorderSide(color: AppColors.richGold),
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                  ),
-                  label: Text(l10n.eventsCustomRange),
-                ),
-              ),
-              const SizedBox(height: 20),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      _dateFrom = from;
-                      _dateTo = to;
-                    });
-                    Navigator.pop(context);
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.richGold,
-                    foregroundColor: AppColors.deepBlack,
-                  ),
-                  child: Text(l10n.eventsApplyFilters),
-                ),
-              ),
-            ],
-          ),
-        );
-      },
     );
   }
 
@@ -4804,4 +4921,16 @@ class _EventPlace {
   final String? city;
   final String? country;
   final bool manual;
+}
+
+/// One row of the Events "All" feed: a community event or a partner
+/// (ticketmaster) live event, with its merge key.
+class _MergedEvent {
+  _MergedEvent.community(Event this.community, this.key) : partner = null;
+  _MergedEvent.partner(ExternalEvent this.partner, this.key)
+      : community = null;
+
+  final Event? community;
+  final ExternalEvent? partner;
+  final FeedSortKey key;
 }
