@@ -22,11 +22,12 @@ import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
 import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../business/presentation/widgets/business_contact_button.dart';
-import '../../../business/presentation/widgets/business_follow_button.dart';
 import '../../../../core/services/deep_link_service.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
-import '../../../follows/presentation/widgets/profile_follow_section.dart';
+import '../../../follows/presentation/follow_toggle_controller.dart';
+import '../../../follows/presentation/widgets/follow_stats_row.dart';
+import '../../../follows/presentation/widgets/user_follow_button.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/swipe_action.dart';
@@ -71,9 +72,20 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   StreamSubscription<Duration>? _voicePosSub;
   StreamSubscription<void>? _voiceCompleteSub;
 
+  // ONE optimistic follow state for this (viewer -> profile) pair, shared by
+  // the app-bar Follow button and the "N followers" figure in the body so both
+  // move together. Null on your own profile (no follow control there).
+  FollowToggleController? _followController;
+
   @override
   void initState() {
     super.initState();
+    if (!_isSelfView && widget.currentUserId.isNotEmpty) {
+      _followController = UserFollowButton.createController(
+        targetUserId: widget.profile.userId,
+        currentUserId: widget.currentUserId,
+      );
+    }
     _loadPhotoLikes();
     _setupVoicePlayer();
 
@@ -116,6 +128,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     _voiceDurSub?.cancel();
     _voicePosSub?.cancel();
     _voiceCompleteSub?.cancel();
+    _followController?.dispose();
     _pageController.dispose();
     _audioPlayer.dispose();
     super.dispose();
@@ -275,6 +288,14 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   Widget build(BuildContext context) {
     final hasPhotos = widget.profile.photoUrls.isNotEmpty;
     final isMatched = widget.match != null;
+    final l10n = AppLocalizations.of(context)!;
+    final followController = _followController;
+    // Small phones / large text: the Follow control collapses to an icon (its
+    // label stays in the tooltip + semantics) so the app bar never overflows.
+    final compactAppBar = MediaQuery.sizeOf(context).width < 360 ||
+        MediaQuery.textScalerOf(context).scale(14) > 18;
+    final showChatAction = !_isSelfView &&
+        !(FlavorConfig.enableMatching || FlavorConfig.enableSwipeDiscovery);
 
     return PopScope(
       canPop: Navigator.of(context).canPop(),
@@ -306,15 +327,58 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
         ),
         actions: [
           // Share this profile's deep link (https://greengo-chat.web.app/u/{id}).
-          // Tapping the shared link opens the app straight into a chat with this
-          // user, or bounces to the store if the app isn't installed.
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: IconButton(
-              tooltip: AppLocalizations.of(context)!.shareProfileTooltip,
+          // Tapping the shared link opens the app on this PROFILE (chat is one
+          // tap away from here), or bounces to the store if not installed.
+          IconButton(
+            tooltip: l10n.shareProfileTooltip,
+            onPressed: () {
+              HapticFeedback.selectionClick();
+              shareProfileLink(context, widget.profile.userId);
+            },
+            icon: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppColors.backgroundDark.withOpacity(0.7),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                Icons.ios_share,
+                color: AppColors.textPrimary,
+              ),
+            ),
+          ),
+          // The ONE follow / unfollow control of this page (users AND business
+          // accounts share the same follow graph). Optimistic with rollback via
+          // the shared controller; hides itself when the pair is blocked.
+          if (followController != null)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: Center(
+                child: UserFollowButton(
+                  targetUserId: widget.profile.userId,
+                  currentUserId: widget.currentUserId,
+                  controller: followController,
+                  compact: true,
+                  iconOnly: compactAppBar,
+                  onDarkOverlay: true,
+                ),
+              ),
+            ),
+          // Apple-safe culture flavor: the chat entry for this person - the
+          // shared connect flow with its gates (connect limits, business vs
+          // person choice). NO like/super-like/match. Full/dating flavor keeps
+          // its swipe / matched "Let's Chat" buttons instead, so hide it there.
+          if (showChatAction)
+            IconButton(
+              tooltip: l10n.chatWithName(widget.profile.displayName),
               onPressed: () {
-                HapticFeedback.selectionClick();
-                shareProfileLink(context, widget.profile.userId);
+                HapticFeedback.mediumImpact();
+                openConnectChat(
+                  context,
+                  currentUserId: widget.currentUserId,
+                  otherUserId: widget.profile.userId,
+                  otherUserProfile: widget.profile,
+                );
               },
               icon: Container(
                 padding: const EdgeInsets.all(8),
@@ -323,41 +387,8 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(
-                  Icons.ios_share,
-                  color: AppColors.textPrimary,
-                ),
-              ),
-            ),
-          ),
-          // Apple-safe culture flavor: a single, unobtrusive Message action
-          // (opens a chat immediately — NO like/super-like/match/Connect).
-          // Full/dating flavor keeps its swipe buttons instead, so hide it there.
-          if (!_isSelfView &&
-              !(FlavorConfig.enableMatching ||
-                  FlavorConfig.enableSwipeDiscovery))
-            Padding(
-              padding: const EdgeInsets.only(right: 8),
-              child: IconButton(
-                tooltip: AppLocalizations.of(context)!.sendMessage,
-                onPressed: () {
-                  HapticFeedback.mediumImpact();
-                  openConnectChat(
-                    context,
-                    currentUserId: widget.currentUserId,
-                    otherUserId: widget.profile.userId,
-                    otherUserProfile: widget.profile,
-                  );
-                },
-                icon: Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: AppColors.backgroundDark.withOpacity(0.7),
-                    shape: BoxShape.circle,
-                  ),
-                  child: const Icon(
-                    Icons.chat_bubble_outline,
-                    color: AppColors.richGold,
-                  ),
+                  Icons.chat_bubble_outline,
+                  color: AppColors.richGold,
                 ),
               ),
             ),
@@ -548,31 +579,26 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
                         const SizedBox(height: 12),
 
-                        // Followers · following (tappable → lists) + Follow
-                        // button for other people. Business accounts keep
-                        // their own follow pill below (same follow graph).
-                        ProfileFollowSection(
-                          profileUserId: widget.profile.userId,
+                        // Followers · following (tappable → lists). The
+                        // follow button itself lives in the app bar; sharing
+                        // its controller keeps the follower figure in step.
+                        FollowStatsRow(
+                          userId: widget.profile.userId,
                           currentUserId: widget.currentUserId,
-                          showButton: !widget.profile.isBusiness,
+                          controller: followController,
                         ),
 
                         const SizedBox(height: 24),
 
-                        // Business surface: Follow + Contact + storefront entry.
-                        // Shown only for business accounts. The Follow/Contact
-                        // widgets self-hide their action when viewing your own.
+                        // Business surface: Contact + WhatsApp + storefront
+                        // entry. Shown only for business accounts. Following a
+                        // business uses the single app-bar Follow button.
                         if (widget.profile.isBusiness) ...[
                           Wrap(
                             spacing: 12,
                             runSpacing: 12,
                             crossAxisAlignment: WrapCrossAlignment.center,
                             children: [
-                              BusinessFollowButton(
-                                businessId: widget.profile.userId,
-                                currentUserId: widget.currentUserId,
-                                compact: true,
-                              ),
                               if (!_isSelfView)
                                 BusinessContactButton(
                                   businessProfile: widget.profile,

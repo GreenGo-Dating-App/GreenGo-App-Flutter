@@ -193,10 +193,10 @@ void main() {
   });
 
   group('experience limits per effective tier', () {
-    test('FREE 0 · SILVER 1 · GOLD 5 · PLATINUM/TEST ∞ · admin ∞', () {
-      expect(experienceLimitFor(MembershipTier.free), 0);
-      expect(experienceLimitFor(MembershipTier.silver), 1);
-      expect(experienceLimitFor(MembershipTier.gold), 5);
+    test('FREE 1 · SILVER 5 · GOLD 10 · PLATINUM/TEST ∞ · admin ∞', () {
+      expect(experienceLimitFor(MembershipTier.free), 1);
+      expect(experienceLimitFor(MembershipTier.silver), 5);
+      expect(experienceLimitFor(MembershipTier.gold), 10);
       expect(experienceLimitFor(MembershipTier.platinum), isNull);
       expect(experienceLimitFor(MembershipTier.test), isNull);
       expect(experienceLimitFor(MembershipTier.free, isAdmin: true), isNull);
@@ -205,16 +205,19 @@ void main() {
     test('creation allowed only below the limit; downgraded hosts keep theirs', () {
       expect(
           canCreateAnotherExperience(tier: MembershipTier.free, count: 0),
-          isFalse);
-      expect(
-          canCreateAnotherExperience(tier: MembershipTier.silver, count: 0),
           isTrue);
       expect(
-          canCreateAnotherExperience(tier: MembershipTier.silver, count: 1),
+          canCreateAnotherExperience(tier: MembershipTier.free, count: 1),
           isFalse);
-      // Was Gold with 5, now Silver: blocked (nothing is auto-hidden).
+      expect(
+          canCreateAnotherExperience(tier: MembershipTier.silver, count: 4),
+          isTrue);
       expect(
           canCreateAnotherExperience(tier: MembershipTier.silver, count: 5),
+          isFalse);
+      // Was Gold with 10, now Silver: blocked (nothing is auto-hidden).
+      expect(
+          canCreateAnotherExperience(tier: MembershipTier.silver, count: 10),
           isFalse);
       expect(
           canCreateAnotherExperience(tier: MembershipTier.platinum, count: 99),
@@ -222,9 +225,10 @@ void main() {
     });
 
     test('suggests the cheapest tier that allows one more', () {
-      expect(tierNeededForExperiences(0), MembershipTier.silver);
-      expect(tierNeededForExperiences(1), MembershipTier.gold);
-      expect(tierNeededForExperiences(5), MembershipTier.platinum);
+      // The paid tier to upgrade to once the current one is full.
+      expect(tierNeededForExperiences(1), MembershipTier.silver);
+      expect(tierNeededForExperiences(5), MembershipTier.gold);
+      expect(tierNeededForExperiences(10), MembershipTier.platinum);
     });
   });
 }

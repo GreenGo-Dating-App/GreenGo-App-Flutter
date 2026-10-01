@@ -25236,6 +25236,12 @@ abstract class AppLocalizations {
   /// **'You can\'t follow this user.'**
   String get userFollowBlocked;
 
+  /// No description provided for @userFollowUnfollowTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Unfollow'**
+  String get userFollowUnfollowTooltip;
+
   /// No description provided for @userFollowFollowersStat.
   ///
   /// In en, this message translates to:
@@ -26159,6 +26165,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'edited'**
   String get uexpEdited;
+
+  /// Tooltip of the Events/Experiences feed filter chip
+  ///
+  /// In en, this message translates to:
+  /// **'Show'**
+  String get feedFilterTooltip;
+
+  /// Feed filter: community + partner items merged
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get feedFilterAll;
+
+  /// Feed filter: community-created items only
+  ///
+  /// In en, this message translates to:
+  /// **'Community'**
+  String get feedFilterCommunity;
+
+  /// Feed filter: partner (third-party) items only
+  ///
+  /// In en, this message translates to:
+  /// **'Partner'**
+  String get feedFilterPartner;
+
+  /// Events feed filter: events I organise or RSVP'd
+  ///
+  /// In en, this message translates to:
+  /// **'My events'**
+  String get feedFilterMyEvents;
+
+  /// Experiences feed filter: my own experiences
+  ///
+  /// In en, this message translates to:
+  /// **'My experiences'**
+  String get feedFilterMyExperiences;
+
+  /// Badge on partner (third-party) cards in merged feeds
+  ///
+  /// In en, this message translates to:
+  /// **'Partner'**
+  String get partnerBadge;
+
+  /// Title of the + chooser on the Events screen
+  ///
+  /// In en, this message translates to:
+  /// **'What would you like to create?'**
+  String get createChooserTitle;
+
+  /// One-line description of 'Create event' in the chooser
+  ///
+  /// In en, this message translates to:
+  /// **'Host a meetup or activity that people nearby can join'**
+  String get createChooserEventDesc;
+
+  /// One-line description of 'Create experience' in the chooser
+  ///
+  /// In en, this message translates to:
+  /// **'Offer a tour, class or local experience as a host'**
+  String get createChooserExperienceDesc;
+
+  /// Empty-state button in My experiences
+  ///
+  /// In en, this message translates to:
+  /// **'Add experience'**
+  String get uexpAddExperience;
 }
 
 class _AppLocalizationsDelegate

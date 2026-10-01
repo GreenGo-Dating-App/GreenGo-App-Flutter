@@ -77,9 +77,9 @@ class TierEntitlements {
   // Counts every experience the host has that is not deleted (drafts +
   // published + hidden). Enforced server-side by the createUserExperience
   // callable (functions/src/user_experiences/validation.ts EXPERIENCE_LIMITS).
-  static const int _experiencesFree = 0; // Free: cannot host experiences
-  static const int _experiencesSilver = 1; // Silver: 1 experience
-  static const int _experiencesGold = 5; // Gold: 5 experiences
+  static const int _experiencesFree = 1; // Free: 1 experience
+  static const int _experiencesSilver = 5; // Silver: 5 experiences
+  static const int _experiencesGold = 10; // Gold: 10 experiences
   static const int? _experiencesPlatinum = null; // Platinum: unlimited (∞)
 
   // --- New-people connects / first-messages per day (null = unlimited). ---

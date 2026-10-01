@@ -6,9 +6,9 @@ exports.canCreateExperience = canCreateExperience;
 exports.buildSearchKeywords = buildSearchKeywords;
 exports.validateExperiencePayload = validateExperiencePayload;
 exports.EXPERIENCE_LIMITS = {
-    FREE: 0,
-    SILVER: 1,
-    GOLD: 5,
+    FREE: 1,
+    SILVER: 5,
+    GOLD: 10,
     PLATINUM: null,
     TEST: null,
 };

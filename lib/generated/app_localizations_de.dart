@@ -14370,6 +14370,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get userFollowBlocked => 'Du kannst diesem Nutzer nicht folgen.';
 
   @override
+  String get userFollowUnfollowTooltip => 'Nicht mehr folgen';
+
+  @override
   String userFollowFollowersStat(int count, String formatted) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -14916,4 +14919,39 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get uexpEdited => 'bearbeitet';
+
+  @override
+  String get feedFilterTooltip => 'Anzeigen';
+
+  @override
+  String get feedFilterAll => 'Alle';
+
+  @override
+  String get feedFilterCommunity => 'Community';
+
+  @override
+  String get feedFilterPartner => 'Partner';
+
+  @override
+  String get feedFilterMyEvents => 'Meine Events';
+
+  @override
+  String get feedFilterMyExperiences => 'Meine Erlebnisse';
+
+  @override
+  String get partnerBadge => 'Partner';
+
+  @override
+  String get createChooserTitle => 'Was möchtest du erstellen?';
+
+  @override
+  String get createChooserEventDesc =>
+      'Organisiere ein Treffen oder eine Aktivität für Leute in deiner Nähe';
+
+  @override
+  String get createChooserExperienceDesc =>
+      'Biete als Gastgeber eine Tour, einen Kurs oder ein lokales Erlebnis an';
+
+  @override
+  String get uexpAddExperience => 'Erlebnis hinzufügen';
 }

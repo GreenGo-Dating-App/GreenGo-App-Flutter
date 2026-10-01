@@ -4195,6 +4195,7 @@
   "userFollowFollowBack": "Suivre en retour",
   "userFollowError": "Impossible de mettre à jour l'abonnement. Réessaie.",
   "userFollowBlocked": "Tu ne peux pas suivre cet utilisateur.",
+  "userFollowUnfollowTooltip": "Ne plus suivre",
   "userFollowFollowersStat": "{count, plural, =0{{formatted} abonné} =1{{formatted} abonné} other{{formatted} abonnés}}",
   "userFollowFollowingStat": "{count, plural, =0{{formatted} abonnement} =1{{formatted} abonnement} other{{formatted} abonnements}}",
   "userFollowTabFollowers": "Abonnés",
@@ -4348,5 +4349,16 @@
   "uexpReplyHint": "Écrivez une réponse. Tapez @ pour identifier quelqu’un",
   "uexpShowMoreReplies": "Afficher plus de réponses",
   "uexpLoadMoreReviews": "Charger plus d'avis",
-  "uexpEdited": "modifié"
+  "uexpEdited": "modifié",
+  "feedFilterTooltip": "Afficher",
+  "feedFilterAll": "Tout",
+  "feedFilterCommunity": "Communauté",
+  "feedFilterPartner": "Partenaires",
+  "feedFilterMyEvents": "Mes événements",
+  "feedFilterMyExperiences": "Mes expériences",
+  "partnerBadge": "Partenaire",
+  "createChooserTitle": "Que voulez-vous créer ?",
+  "createChooserEventDesc": "Organisez une rencontre ou une activité ouverte aux gens près de vous",
+  "createChooserExperienceDesc": "Proposez une visite, un cours ou une expérience locale en tant qu'hôte",
+  "uexpAddExperience": "Ajouter une expérience"
 }

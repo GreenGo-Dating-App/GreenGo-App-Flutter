@@ -29,6 +29,7 @@ class CommunityExperiencesTab extends StatelessWidget {
     this.query = '',
     this.userLat,
     this.userLng,
+    this.showActions = true,
   });
 
   final String currentUserId;
@@ -36,6 +37,11 @@ class CommunityExperiencesTab extends StatelessWidget {
   final String query;
   final double? userLat;
   final double? userLng;
+
+  /// The "Create experience" / "My experiences" buttons row. The Events
+  /// screen hides it: creation lives in its "+" chooser and "My experiences"
+  /// is a filter there.
+  final bool showActions;
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +54,7 @@ class CommunityExperiencesTab extends StatelessWidget {
         query: query,
         userLat: userLat,
         userLng: userLng,
+        showActions: showActions,
       ),
     );
   }
@@ -60,6 +67,7 @@ class _CommunityView extends StatefulWidget {
     required this.query,
     this.userLat,
     this.userLng,
+    this.showActions = true,
   });
 
   final String currentUserId;
@@ -67,6 +75,7 @@ class _CommunityView extends StatefulWidget {
   final String query;
   final double? userLat;
   final double? userLng;
+  final bool showActions;
 
   @override
   State<_CommunityView> createState() => _CommunityViewState();
@@ -168,6 +177,7 @@ class _CommunityViewState extends State<_CommunityView>
     final l = AppLocalizations.of(context)!;
     return Column(
       children: [
+        if (widget.showActions)
         Padding(
           padding: const EdgeInsets.fromLTRB(12, 4, 12, 0),
           child: Row(children: [

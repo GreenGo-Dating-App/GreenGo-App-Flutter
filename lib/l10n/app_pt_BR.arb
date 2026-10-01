@@ -4776,6 +4776,7 @@
   "userFollowFollowBack": "Seguir de volta",
   "userFollowError": "Não foi possível atualizar. Tente novamente.",
   "userFollowBlocked": "Você não pode seguir este usuário.",
+  "userFollowUnfollowTooltip": "Deixar de seguir",
   "userFollowFollowersStat": "{count, plural, =1{{formatted} seguidor} other{{formatted} seguidores}}",
   "userFollowFollowingStat": "{count, plural, other{{formatted} seguindo}}",
   "userFollowTabFollowers": "Seguidores",
@@ -4929,5 +4930,16 @@
   "uexpReplyHint": "Escreva uma resposta. Digite @ para marcar alguém",
   "uexpShowMoreReplies": "Ver mais respostas",
   "uexpLoadMoreReviews": "Carregar mais avaliações",
-  "uexpEdited": "editada"
+  "uexpEdited": "editada",
+  "feedFilterTooltip": "Mostrar",
+  "feedFilterAll": "Tudo",
+  "feedFilterCommunity": "Comunidade",
+  "feedFilterPartner": "Parceiros",
+  "feedFilterMyEvents": "Meus eventos",
+  "feedFilterMyExperiences": "Minhas experiências",
+  "partnerBadge": "Parceiro",
+  "createChooserTitle": "O que você quer criar?",
+  "createChooserEventDesc": "Organize um encontro ou atividade para pessoas por perto participarem",
+  "createChooserExperienceDesc": "Ofereça como anfitrião um passeio, uma aula ou uma experiência local",
+  "uexpAddExperience": "Adicionar experiência"
 }

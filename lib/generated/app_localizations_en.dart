@@ -14185,6 +14185,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get userFollowBlocked => 'You can\'t follow this user.';
 
   @override
+  String get userFollowUnfollowTooltip => 'Unfollow';
+
+  @override
   String userFollowFollowersStat(int count, String formatted) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -14728,4 +14731,39 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get uexpEdited => 'edited';
+
+  @override
+  String get feedFilterTooltip => 'Show';
+
+  @override
+  String get feedFilterAll => 'All';
+
+  @override
+  String get feedFilterCommunity => 'Community';
+
+  @override
+  String get feedFilterPartner => 'Partner';
+
+  @override
+  String get feedFilterMyEvents => 'My events';
+
+  @override
+  String get feedFilterMyExperiences => 'My experiences';
+
+  @override
+  String get partnerBadge => 'Partner';
+
+  @override
+  String get createChooserTitle => 'What would you like to create?';
+
+  @override
+  String get createChooserEventDesc =>
+      'Host a meetup or activity that people nearby can join';
+
+  @override
+  String get createChooserExperienceDesc =>
+      'Offer a tour, class or local experience as a host';
+
+  @override
+  String get uexpAddExperience => 'Add experience';
 }

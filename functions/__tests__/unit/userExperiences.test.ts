@@ -155,9 +155,9 @@ describe('creation limits', () => {
   const past = new Date(Date.now() - 86400000).toISOString();
 
   it('limits per effective tier', () => {
-    expect(maxExperiencesFor('FREE')).toBe(0);
-    expect(maxExperiencesFor('SILVER')).toBe(1);
-    expect(maxExperiencesFor('GOLD')).toBe(5);
+    expect(maxExperiencesFor('FREE')).toBe(1);
+    expect(maxExperiencesFor('SILVER')).toBe(5);
+    expect(maxExperiencesFor('GOLD')).toBe(10);
     expect(maxExperiencesFor('PLATINUM')).toBeNull();
     expect(maxExperiencesFor('TEST')).toBeNull();
     expect(maxExperiencesFor('FREE', true)).toBeNull();
@@ -166,13 +166,15 @@ describe('creation limits', () => {
   it('an expired Silver counts as Free', () => {
     const expired = effectiveTier({ membershipTier: 'SILVER', membershipEndDate: past });
     const active = effectiveTier({ membershipTier: 'SILVER', membershipEndDate: future });
-    expect(canCreateExperience(expired, 0)).toBe(false);
-    expect(canCreateExperience(active, 0)).toBe(true);
-    expect(canCreateExperience(active, 1)).toBe(false);
+    // Free allows 1, Silver 5: with 1 experience an expired Silver is blocked.
+    expect(canCreateExperience(expired, 0)).toBe(true);
+    expect(canCreateExperience(expired, 1)).toBe(false);
+    expect(canCreateExperience(active, 1)).toBe(true);
+    expect(canCreateExperience(active, 5)).toBe(false);
   });
 
   it('downgraded hosts over the limit just cannot create more', () => {
-    expect(canCreateExperience('GOLD', 7)).toBe(false);
+    expect(canCreateExperience('GOLD', 12)).toBe(false);
     expect(canCreateExperience('PLATINUM', 999)).toBe(true);
   });
 });

@@ -24,6 +24,8 @@ class UserFollowButton extends StatefulWidget {
     this.controller,
     this.compact = false,
     this.followsYou = false,
+    this.iconOnly = false,
+    this.onDarkOverlay = false,
   });
 
   final String targetUserId;
@@ -33,6 +35,14 @@ class UserFollowButton extends StatefulWidget {
 
   /// When true and not yet following, the label reads "Follow back".
   final bool followsYou;
+
+  /// Renders a round icon-only button (label moves to the tooltip/semantics).
+  /// Used in tight app bars on small phones.
+  final bool iconOnly;
+
+  /// When true the outlined ("Following") state gets a translucent dark fill
+  /// so it stays legible over photos (e.g. a transparent app bar).
+  final bool onDarkOverlay;
 
   /// Builds a controller wired to [FollowService] for this pair.
   static FollowToggleController createController({
@@ -153,45 +163,70 @@ class _UserFollowButtonState extends State<UserFollowButton> {
         : (widget.followsYou ? l10n.userFollowFollowBack : l10n.userFollowFollow);
     final filled = !following;
     final fg = filled ? AppColors.deepBlack : AppColors.richGold;
+    final bg = filled
+        ? AppColors.richGold
+        : (widget.onDarkOverlay
+            ? AppColors.backgroundDark.withOpacity(0.7)
+            : Colors.transparent);
+    // Tooltip names the ACTION the tap performs ("Unfollow" when following).
+    final tooltip = following ? l10n.userFollowUnfollowTooltip : label;
+    final icon = Icon(
+      following ? Icons.check : Icons.person_add_alt_1,
+      size: widget.iconOnly ? 20 : (widget.compact ? 15 : 18),
+      color: fg,
+    );
 
-    return Semantics(
-      button: true,
-      toggled: following,
-      label: label,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: _controller.busy ? null : _onTap,
-          borderRadius: BorderRadius.circular(30),
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 150),
-            padding: EdgeInsets.symmetric(
-              horizontal: widget.compact ? 14 : 20,
-              vertical: widget.compact ? 7 : 11,
-            ),
-            decoration: BoxDecoration(
-              color: filled ? AppColors.richGold : Colors.transparent,
-              borderRadius: BorderRadius.circular(30),
-              border: Border.all(color: AppColors.richGold, width: 1.5),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(
-                  following ? Icons.check : Icons.person_add_alt_1,
-                  size: widget.compact ? 15 : 18,
-                  color: fg,
-                ),
-                const SizedBox(width: 6),
-                Text(
-                  label,
-                  style: TextStyle(
-                    color: fg,
-                    fontSize: widget.compact ? 13 : 15,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
+    return Tooltip(
+      message: tooltip,
+      excludeFromSemantics: true,
+      child: Semantics(
+        button: true,
+        toggled: following,
+        label: label,
+        hint: following ? l10n.userFollowUnfollowTooltip : null,
+        // The visual children (icon/text) are replaced by this node, so it
+        // carries the tap action itself.
+        excludeSemantics: true,
+        onTap: _controller.busy ? null : _onTap,
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: _controller.busy ? null : _onTap,
+            borderRadius: BorderRadius.circular(30),
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 150),
+              constraints: widget.iconOnly
+                  ? const BoxConstraints.tightFor(width: 40, height: 40)
+                  : null,
+              padding: widget.iconOnly
+                  ? EdgeInsets.zero
+                  : EdgeInsets.symmetric(
+                      horizontal: widget.compact ? 14 : 20,
+                      vertical: widget.compact ? 7 : 11,
+                    ),
+              decoration: BoxDecoration(
+                color: bg,
+                borderRadius: BorderRadius.circular(30),
+                border: Border.all(color: AppColors.richGold, width: 1.5),
+              ),
+              child: widget.iconOnly
+                  ? Center(child: icon)
+                  : Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        icon,
+                        const SizedBox(width: 6),
+                        Text(
+                          label,
+                          maxLines: 1,
+                          style: TextStyle(
+                            color: fg,
+                            fontSize: widget.compact ? 13 : 15,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
             ),
           ),
         ),
