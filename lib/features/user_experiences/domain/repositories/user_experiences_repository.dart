@@ -172,9 +172,6 @@ abstract class UserExperiencesRepository {
   Future<Either<Failure, void>> deletePendingReview(
       String experienceId, String uid);
 
-  /// Host: instant booking (false) or request to book (true).
-  Future<Either<Failure, void>> setRequestToBook(String id, bool value);
-
   Future<Either<Failure, void>> reportReview({
     required ExperienceReview review,
     required String reporterId,

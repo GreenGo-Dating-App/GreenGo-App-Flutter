@@ -5196,5 +5196,7 @@
   "bkErrGuestCheckedIn": "Der Gast ist bereits eingecheckt.",
   "bkErrCashBeforeMeeting": "Bargeld kann bestätigt werden, sobald du den Gast triffst.",
   "bkErrOutsideDispute": "Probleme können ab Beginn bis 24 Std. nach dem Ende gemeldet werden.",
-  "bkErrReasonRequired": "Beschreibe das Problem (mindestens {min} Zeichen)."
+  "bkErrReasonRequired": "Beschreibe das Problem (mindestens {min} Zeichen).",
+  "uexpDatesRequiredHint": "Gäste können nur die von dir festgelegten Termine buchen, und jede Buchung ist eine Anfrage, die du annimmst oder ablehnst. Füge mindestens einen kommenden Termin hinzu, um zu veröffentlichen.",
+  "uexpDatesRequiredToPublish": "Füge mindestens einen kommenden Termin hinzu, um zu veröffentlichen. Dein Erlebnis ist als Entwurf gespeichert."
 }

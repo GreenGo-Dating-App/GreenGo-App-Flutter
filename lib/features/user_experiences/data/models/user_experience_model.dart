@@ -99,7 +99,8 @@ class UserExperienceModel {
       availability: _optStr(d['availability']),
       cancellationPolicy: policy ?? CancellationPolicy.fallback,
       cancellationNotes: notes,
-      requestToBook: d['requestToBook'] == true,
+      // Request to book is mandatory for every experience.
+      requestToBook: true,
       status: ExperienceStatus.fromWire(d['status']),
       createdAt: experienceDateFrom(d['createdAt']),
       updatedAt: experienceDateFrom(d['updatedAt']),

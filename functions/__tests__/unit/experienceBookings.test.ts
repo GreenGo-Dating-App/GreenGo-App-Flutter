@@ -275,11 +275,19 @@ async function expectCode(p: Promise<unknown>, reason: string) {
   await p.catch((e: HttpsError) => expect((e.details as any)?.code).toBe(reason));
 }
 
-async function book(uid = GUEST, extra: Record<string, any> = {}) {
+/** A booking REQUEST (request to book is mandatory). */
+async function request(uid = GUEST, extra: Record<string, any> = {}) {
   return svc.createBooking(uid, {
     experienceId: EXP, slotId: SLOT, guests: 1, requestId: rid(), consentVersion: 'v1',
     paymentMethod: 'link', ...extra,
   }) as Promise<any>;
+}
+
+/** A request the host accepted: a confirmed booking. */
+async function book(uid = GUEST, extra: Record<string, any> = {}) {
+  const r: any = await request(uid, extra);
+  const a: any = await svc.respondToBookingRequest(HOST, { bookingId: r.bookingId, accept: true });
+  return { ...r, ...a, bookingId: r.bookingId } as any;
 }
 
 beforeEach(() => {
@@ -298,12 +306,14 @@ beforeEach(() => {
 afterAll(() => Object.assign(svc.bookingDeps, saved));
 
 describe('createBooking', () => {
-  test('instant booking: confirmed, seats held, price from the experience, idempotent retry', async () => {
+  test('every booking is a request; accepted -> confirmed, seats held, price from the experience, idempotent retry', async () => {
     seedWorld();
     const requestId = 'req_retry_0001';
     const input = { experienceId: EXP, slotId: SLOT, guests: 2, requestId, consentVersion: 'v1', paymentMethod: 'link', price: 1 };
     const r1: any = await svc.createBooking(GUEST, input);
-    expect(r1.status).toBe('confirmed');
+    expect(r1.status).toBe('requested');
+    expect(slot().bookedCount).toBe(2);
+    await svc.respondToBookingRequest(HOST, { bookingId: r1.bookingId, accept: true });
     expect(r1.price).toEqual({ unitAmount: 1999, currency: 'eur', totalAmount: 3998 });
     expect(r1.payment.mode).toBe('link');
     expect(r1.payment.link).toEqual({ type: 'paypal', value: 'https://paypal.me/host' });
@@ -316,7 +326,7 @@ describe('createBooking', () => {
     expect(r2.bookingId).toBe(r1.bookingId);
     expect(r2.alreadyExisted).toBe(true);
     expect(slot().bookedCount).toBe(2);
-    expect(sent.map((s) => s.type).sort()).toEqual(['booking_confirmed', 'booking_new']);
+    expect(sent.map((s) => s.type).sort()).toEqual(['booking_accepted', 'booking_request']);
   });
 
   test('cash chosen; both methods require an explicit choice', async () => {
@@ -385,8 +395,8 @@ describe('createBooking', () => {
 
 describe('request to book', () => {
   test('requested holds seats; decline releases them; expiry job; accept confirms', async () => {
-    seedWorld({ exp: { requestToBook: true } });
-    const r: any = await book(GUEST, { guests: 2 });
+    seedWorld();
+    const r: any = await request(GUEST, { guests: 2 });
     expect(r.status).toBe('requested');
     expect(slot().bookedCount).toBe(2);
     expect(booking(r.bookingId).requestExpiresAt.toMillis()).toBe(T0 + 48 * H);
@@ -398,7 +408,7 @@ describe('request to book', () => {
     await svc.respondToBookingRequest(HOST, { bookingId: r.bookingId, accept: false });
     expect(slot().bookedCount).toBe(0);
 
-    const r2: any = await book(GUEST2);
+    const r2: any = await request(GUEST2);
     now = T0 + 49 * H;
     await expectCode(svc.respondToBookingRequest(HOST, { bookingId: r2.bookingId, accept: true }), 'request_expired');
     expect(await svc.expireDueRequests()).toBe(1);
@@ -407,7 +417,7 @@ describe('request to book', () => {
     expect(sent.some((s) => s.type === 'booking_expired')).toBe(true);
 
     now = T0;
-    const r3: any = await book(GUEST, { guests: 1 });
+    const r3: any = await request(GUEST, { guests: 1 });
     const a: any = await svc.respondToBookingRequest(HOST, { bookingId: r3.bookingId, accept: true });
     expect(a.status).toBe('confirmed');
     expect(booking(r3.bookingId).reminderAt).toBeDefined();

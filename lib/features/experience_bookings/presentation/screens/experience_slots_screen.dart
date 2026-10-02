@@ -6,7 +6,6 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
-import '../../../user_experiences/domain/repositories/user_experiences_repository.dart';
 import '../../domain/booking_failure.dart';
 import '../../domain/booking_rules.dart';
 import '../../domain/entities/booking.dart';
@@ -18,7 +17,7 @@ import 'bookings_list_screen.dart';
 
 /// Host: "Dates & availability" — add / edit / delete / cancel the dates
 /// guests can book, seats booked per date, and the "Request to book" switch.
-/// Pops with the experience as last saved (requestToBook may have changed).
+/// Pops with the experience as last saved.
 class ExperienceSlotsScreen extends StatelessWidget {
   const ExperienceSlotsScreen({
     super.key,
@@ -43,7 +42,6 @@ class ExperienceSlotsScreen extends StatelessWidget {
     return BlocProvider(
       create: (_) => SlotsBloc(
         repository: di.sl<BookingsRepository>(),
-        experiences: di.sl<UserExperiencesRepository>(),
       )..add(SlotsStarted(experience)),
       child: _SlotsView(currentUserId: currentUserId),
     );
@@ -178,8 +176,6 @@ class _SlotsViewState extends State<_SlotsView> {
           case SlotsFlash.cancelled:
             showBookingSnack(
                 context, l.bkDateCancelled(s.cancelledBookings));
-          case SlotsFlash.toggled:
-            showBookingSnack(context, l.uexpSaved);
           case SlotsFlash.invalid:
             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               content: Text(s.errors.isEmpty
@@ -254,23 +250,6 @@ class _SlotsViewState extends State<_SlotsView> {
                 padding: const EdgeInsets.fromLTRB(12, 8, 12, 96),
                 children: [
                   if (s.busy) const LinearProgressIndicator(color: AppColors.richGold),
-                  Card(
-                    color: AppColors.backgroundCard,
-                    child: SwitchListTile(
-                      key: const ValueKey('request-to-book'),
-                      value: e.requestToBook,
-                      activeThumbColor: AppColors.richGold,
-                      onChanged: s.busy
-                          ? null
-                          : (v) => _bloc.add(RequestToBookToggled(v)),
-                      title: Text(l.bkRequestToBookToggle,
-                          style: const TextStyle(color: AppColors.textPrimary)),
-                      subtitle: Text(l.bkRequestToBookDesc,
-                          style: const TextStyle(
-                              color: AppColors.textTertiary, fontSize: 12)),
-                    ),
-                  ),
-                  const SizedBox(height: 8),
                   if (s.loading && s.slots.isEmpty)
                     const Padding(
                       padding: EdgeInsets.all(32),

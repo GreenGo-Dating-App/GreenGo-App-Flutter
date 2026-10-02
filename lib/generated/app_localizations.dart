@@ -27761,6 +27761,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Describe the problem (at least {min} characters).'**
   String bkErrReasonRequired(int min);
+
+  /// No description provided for @uexpDatesRequiredHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Guests can only book the dates you set, and every booking is a request you accept or decline. Add at least one upcoming date to publish.'**
+  String get uexpDatesRequiredHint;
+
+  /// No description provided for @uexpDatesRequiredToPublish.
+  ///
+  /// In en, this message translates to:
+  /// **'Add at least one upcoming date to publish. Your experience is saved as a draft.'**
+  String get uexpDatesRequiredToPublish;
 }
 
 class _AppLocalizationsDelegate

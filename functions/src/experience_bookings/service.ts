@@ -489,7 +489,8 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       fail('resource-exhausted', 'slot_full', { seatsLeft: Math.max(0, capacity - booked) });
     }
 
-    const requested = e.requestToBook === true;
+    // Request to book is mandatory: the host accepts or declines every booking.
+    const requested = true;
     const booking: Record<string, any> = {
       experienceId,
       slotId,

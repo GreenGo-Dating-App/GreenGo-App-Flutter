@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/error/failures.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
-import '../../../user_experiences/domain/repositories/user_experiences_repository.dart';
 import '../../domain/booking_rules.dart';
 import '../../domain/entities/booking.dart';
 import '../../domain/repositories/bookings_repository.dart';
@@ -49,14 +48,7 @@ class SlotCancelRequested extends SlotsEvent {
   List<Object?> get props => [slot, reason];
 }
 
-class RequestToBookToggled extends SlotsEvent {
-  const RequestToBookToggled(this.value);
-  final bool value;
-  @override
-  List<Object?> get props => [value];
-}
-
-enum SlotsFlash { saved, deleted, cancelled, toggled, invalid, failed }
+enum SlotsFlash { saved, deleted, cancelled, invalid, failed }
 
 class SlotsState extends Equatable {
   const SlotsState({
@@ -130,23 +122,19 @@ class SlotsState extends Equatable {
 class SlotsBloc extends Bloc<SlotsEvent, SlotsState> {
   SlotsBloc({
     required BookingsRepository repository,
-    required UserExperiencesRepository experiences,
   })  : _repo = repository,
-        _experiences = experiences,
         super(const SlotsState()) {
     on<SlotsStarted>(_onStarted);
     on<SlotsRefreshed>((e, emit) => _load(emit));
     on<SlotSaveRequested>(_onSave);
     on<SlotDeleteRequested>(_onDelete);
     on<SlotCancelRequested>(_onCancel);
-    on<RequestToBookToggled>(_onToggle);
   }
 
   /// Bounded: the next [limit] dates (hosts rarely plan more ahead).
   static const int limit = 60;
 
   final BookingsRepository _repo;
-  final UserExperiencesRepository _experiences;
 
   Future<void> _onStarted(SlotsStarted e, Emitter<SlotsState> emit) async {
     emit(SlotsState(experience: e.experience));
@@ -238,22 +226,6 @@ class SlotsBloc extends Bloc<SlotsEvent, SlotsState> {
                 : s,
         ],
       )),
-    );
-  }
-
-  Future<void> _onToggle(
-      RequestToBookToggled e, Emitter<SlotsState> emit) async {
-    final exp = state.experience;
-    if (exp == null || state.busy || exp.requestToBook == e.value) return;
-    emit(state.copyWith(busy: true, experience: exp.copyWith(requestToBook: e.value)));
-    final r = await _experiences.setRequestToBook(exp.id, e.value);
-    r.fold(
-      (f) => emit(state.copyWith(
-          busy: false,
-          experience: exp,
-          flash: SlotsFlash.failed,
-          failure: f)),
-      (_) => emit(state.copyWith(busy: false, flash: SlotsFlash.toggled)),
     );
   }
 }

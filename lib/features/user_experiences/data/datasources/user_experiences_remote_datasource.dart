@@ -23,6 +23,7 @@ class ExperienceCreateException implements Exception {
     'id_document_not_approved',
     'host_agreement_required',
     'new_host_paid_limit',
+    'dates_required',
     'host_banned',
     'hidden',
     'agreement_outdated',
@@ -411,12 +412,6 @@ class UserExperiencesRemoteDataSource {
 
   Future<void> deletePendingReview(String experienceId, String uid) =>
       _pending(experienceId, uid).delete();
-
-  Future<void> setRequestToBook(String id, bool value) =>
-      _col.doc(id).update({
-        'requestToBook': value,
-        'updatedAt': FieldValue.serverTimestamp(),
-      });
 
   // ───────────────────────────────────────────────────────────── replies
 

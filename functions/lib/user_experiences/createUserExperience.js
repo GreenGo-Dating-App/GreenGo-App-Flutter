@@ -101,15 +101,9 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
         const blocked = (0, safety_1.createBlockReason)(profile);
         if (blocked)
             throw safetyError(blocked);
-        if (v.data.status === 'published') {
-            let otherPublishedPaid = 0;
-            if (v.data.isFree !== true && (profile === null || profile === void 0 ? void 0 : profile.isAdmin) !== true && (0, safety_1.isNewHost)(profile)) {
-                otherPublishedPaid = await countPublishedPaid(tx, uid);
-            }
-            const why = (0, safety_1.publishBlockReason)({ profile, experience: v.data, otherPublishedPaid });
-            if (why)
-                throw safetyError(why);
-        }
+        // A new listing has no dates yet, and availability must be defined by
+        // dates: it is always stored as a draft, published via
+        // publishUserExperience once it has an upcoming date.
         const tier = (0, effectiveTier_1.effectiveTier)(profile);
         const max = (0, validation_1.maxExperiencesFor)(tier, (0, effectiveTier_1.isProfileAdmin)(profile));
         let count = Number((_c = (_b = counterSnap.data()) === null || _b === void 0 ? void 0 : _b.count) !== null && _c !== void 0 ? _c : 0) || 0;
@@ -128,7 +122,7 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
             }
         }
         const now = admin.firestore.FieldValue.serverTimestamp();
-        tx.set(expRef, Object.assign(Object.assign({}, v.data), { hostId: uid, createdAt: now, updatedAt: now, ratingSum: 0, ratingCount: 0, ratingAvg: 0, reviewCount: 0, ratingDist: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 }, viewCount: 0, 
+        tx.set(expRef, Object.assign(Object.assign({}, v.data), { status: 'draft', hostId: uid, createdAt: now, updatedAt: now, ratingSum: 0, ratingCount: 0, ratingAvg: 0, reviewCount: 0, ratingDist: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 }, viewCount: 0, 
             // Explore promotion is server-owned (setExperienceFeatured, admin).
             isFeatured: false, 
             // Its (empty) aggregate is part of the host's profile totals from the
@@ -136,7 +130,7 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
             // Without a profile there is nothing to count into (backfill later).
             hostRatingCounted: profileSnap.exists }));
         tx.set(counterRef, { count: count + 1, updatedAt: now }, { merge: true });
-        return { id: expRef.id, count: count + 1, limit: max };
+        return { id: expRef.id, count: count + 1, limit: max, status: 'draft' };
     });
     return result;
 });

@@ -244,7 +244,7 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     availability: optStr(d.availability, LIMITS.shortTextMax),
     // Bookings: true = the host accepts / declines each booking request
     // (experience_bookings snapshots it on every booking).
-    requestToBook: d.requestToBook === true,
+    requestToBook: true, // mandatory: every booking is a request
     // Fixed policy (flexible | moderate | strict, default moderate) + notes;
     // legacy free text becomes moderate + notes.
     ...normalizeCancellation(d),

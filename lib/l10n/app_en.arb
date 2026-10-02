@@ -7261,5 +7261,7 @@
   "bkErrCashBeforeMeeting": "Cash can be confirmed once you meet the guest.",
   "bkErrOutsideDispute": "Problems can be reported from the start until 24 h after the end.",
   "bkErrReasonRequired": "Describe the problem (at least {min} characters).",
-  "@bkErrReasonRequired": {"placeholders": {"min": {"type": "int"}}}
+  "@bkErrReasonRequired": {"placeholders": {"min": {"type": "int"}}},
+  "uexpDatesRequiredHint": "Guests can only book the dates you set, and every booking is a request you accept or decline. Add at least one upcoming date to publish.",
+  "uexpDatesRequiredToPublish": "Add at least one upcoming date to publish. Your experience is saved as a draft."
 }

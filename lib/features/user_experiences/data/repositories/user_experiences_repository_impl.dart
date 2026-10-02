@@ -197,10 +197,6 @@ class UserExperiencesRepositoryImpl implements UserExperiencesRepository {
       _guard(() => _remote.deletePendingReview(experienceId, uid));
 
   @override
-  Future<Either<Failure, void>> setRequestToBook(String id, bool value) =>
-      _guard(() => _remote.setRequestToBook(id, value));
-
-  @override
   Future<Either<Failure, void>> reportReview({
     required ExperienceReview review,
     required String reporterId,
