@@ -61,6 +61,27 @@ void main() {
       expect(events.every((e) => e.isPublic), isTrue);
     });
 
+    test('excludes events without a cover picture from discovery', () async {
+      final db = FakeFirebaseFirestore();
+      await EventFixtures.seedEvent(db,
+          id: 'e_pic', organizerId: 'o1', startDate: DateTime(2030, 1, 1));
+      await EventFixtures.seedEvent(db,
+          id: 'e_bare',
+          organizerId: 'o1',
+          startDate: DateTime(2030, 2, 1),
+          imageUrl: null);
+      await EventFixtures.seedEvent(db,
+          id: 'e_placeholder',
+          organizerId: 'o1',
+          startDate: DateTime(2030, 3, 1),
+          imageUrl: 'https://via.placeholder.com/600x400');
+      final ds = EventsRemoteDataSourceImpl(firestore: db);
+
+      final events = await ds.getEvents();
+
+      expect(events.map((e) => e.id), ['e_pic']);
+    });
+
     test('upcoming:true excludes past events', () async {
       final db = FakeFirebaseFirestore();
       await EventFixtures.seedEvent(db,

@@ -902,7 +902,8 @@ class _DetailViewState extends State<_DetailView> {
         ? l.bkRefundCashUnpaid
         : (r.percent <= 0
             ? l.bkRefundNone
-            : l.bkRefundOwed(BookingL10n.percent(context, r.percent),
+            : (r.linkUnconfirmed ? l.bkRefundIfPaid : l.bkRefundOwed)(
+                BookingL10n.percent(context, r.percent),
                 BookingL10n.money(context, r.amount, r.currency)));
     return BookingSection(
       title: l.bkRefundTitle,

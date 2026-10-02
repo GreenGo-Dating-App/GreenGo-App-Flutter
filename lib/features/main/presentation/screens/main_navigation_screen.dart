@@ -45,6 +45,7 @@ import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../events/data/services/events_prefetch.dart';
+import '../../../events/presentation/events_tabs_image_warmup.dart';
 import '../../../events/presentation/screens/events_screen.dart';
 import '../../../explore/presentation/screens/explore_screen.dart';
 import '../../../chat/presentation/screens/groups_screen.dart';
@@ -560,11 +561,20 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _prefetchWhenResumed = false;
     _prefetchedForUser = widget.userId;
     // All best-effort and self-deduplicating; none of them throws.
+    final userId = widget.userId;
+    final events = EventsPrefetch.warm(userId);
     unawaited(Future.wait([
-      EventsPrefetch.warm(widget.userId),
-      DiscoveryPrefetch.warm(widget.userId),
-      DataPreloadService.instance.warm(widget.userId),
+      events,
+      DiscoveryPrefetch.warm(userId),
+      DataPreloadService.instance.warm(userId),
     ]));
+    // Then decode the first row of pictures of each Events-page tab (never
+    // on the first-paint path: this runs after the prefetch landed).
+    unawaited(events.then((_) {
+      if (mounted && widget.userId == userId) {
+        EventsTabsImageWarmup.run(context, userId);
+      }
+    }));
   }
 
   bool _membershipCheckDone = false;

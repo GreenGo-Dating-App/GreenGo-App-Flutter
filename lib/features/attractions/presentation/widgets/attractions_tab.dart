@@ -11,6 +11,7 @@ import '../../../../core/utils/attraction_icons.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../data/attractions_prefetch.dart';
 import '../../data/datasources/attractions_datasource.dart';
 import '../../domain/attraction_filters.dart';
 import '../../domain/category_labels.dart';
@@ -357,6 +358,12 @@ class _AttractionsTabState extends State<AttractionsTab>
   }
 
   Future<void> _bootstrap({bool relocate = false}) async {
+    // The country the background prefetch resolved (normally already loaded
+    // and memoised): start its shard read NOW, in parallel with the reads
+    // below, instead of after them. Shared with the prefetch's own in-flight
+    // read, so nothing is read twice.
+    final likely = AttractionsPrefetch.likelyIso;
+    if (likely != null && !relocate) unawaited(_ds.forCountry(likely));
     try {
       // Every read here is independent, so they run together. geoIndex is
       // warmed now because _detectHere needs it right after.

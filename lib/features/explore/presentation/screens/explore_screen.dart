@@ -25,6 +25,7 @@ import '../../../analytics/data/services/performance_monitoring_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
+import '../../../../core/utils/display_image.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
@@ -443,10 +444,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
           in results[7] as List<DocumentSnapshot<Map<String, dynamic>>>) {
         try {
           final e = EventModel.fromFirestore(doc);
-          // As the server path: public, live, not ended, within 50 km.
+          // As the server path: public, live, not ended, with a picture,
+          // within 50 km.
           if (e.isPublic &&
               e.isLive &&
               e.endDate.isAfter(now) &&
+              eventHasPicture(e) &&
               _withinFeaturedRadius(_Happening.community(e))) {
             communityEvents.add(e);
           }
@@ -495,7 +498,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
 
   /// Reads a carousel saved by [_saveHappenings] back from the LOCAL cache,
   /// re-applying the server path's checks: community events must still be
-  /// public, live, not ended and not past (plus [communityOk], the carousel's
+  /// public, live, with a picture, not ended and not past (plus [communityOk], the carousel's
   /// own window); live events must be dated today-onward and located.
   Future<List<_Happening>> _cachedHappenings(
     String key, {
@@ -515,6 +518,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           final e = EventModel.fromFirestore(doc);
           if (!e.isPublic ||
               !e.isLive ||
+              !eventHasPicture(e) ||
               e.endDate.isBefore(DateTime.now()) ||
               !_eventNotPast(e)) {
             return null;
@@ -529,7 +533,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
         final data = doc.data();
         if (data == null) return null;
         final e = ExternalEvent.fromMap(doc.id, data);
-        return _externalFuture(e) && e.lat != null && e.lng != null
+        return _externalFuture(e) &&
+                e.lat != null &&
+                e.lng != null &&
+                externalEventHasPicture(e)
             ? _Happening.external(e)
             : null;
       } catch (_) {
@@ -1571,10 +1578,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// True when [h] carries a usable picture. Attractions/experiences with no
   /// image (`imageUrl` null or blank) are OMITTED from Explore entirely — a
   /// picture-less attraction card is never shown.
-  bool _hasImage(_Happening h) {
-    final url = h.imageUrl;
-    return url != null && url.trim().isNotEmpty;
-  }
+  bool _hasImage(_Happening h) => DisplayImage.isUsableUrl(h.imageUrl);
 
   /// True when [h] qualifies for the featured carousel. With a known user
   /// location an experience must sit within [kFeaturedRadiusKm]; an experience

@@ -15,6 +15,7 @@ import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
+import { isUsableImageUrl } from './image';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -93,6 +94,7 @@ function mapProduct(p: any, countryName: string): Doc {
       title: p.title,
       description: p.tagline ?? null,
       imageUrl: p.images?.[0]?.large ?? p.images?.[0]?.medium ?? null,
+      hasImage: isUsableImageUrl(p.images?.[0]?.large ?? p.images?.[0]?.medium),
       category: 'attraction',
       city: p.city?.name ?? null,
       country: p.city?.country?.code ?? countryName,
@@ -147,10 +149,7 @@ async function runTiqets(key: string): Promise<number> {
   }
   // Attractions are only worth showing with a photo → drop the image-less ones
   // so we never store (or later render) a blank card.
-  const withImage = all.filter((d) => {
-    const url = d.data.imageUrl;
-    return typeof url === 'string' && url.length > 0;
-  });
+  const withImage = all.filter((d) => d.data.hasImage === true);
   if (withImage.length > 0) await upsertAll(withImage);
   console.log(
     `ingestTiqets: upserted ${withImage.length}/${all.length} attractions ` +

@@ -15,6 +15,7 @@ import '../../../events/presentation/widgets/external_event_tiles.dart';
 import '../../../events/presentation/widgets/interleaved_feed_view.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
+import '../experience_feed_prefetch.dart';
 import '../experience_first_page_cache.dart';
 import '../screens/experience_detail_screen.dart';
 import 'experience_widgets.dart';
@@ -104,15 +105,11 @@ class _MergedExperiencesFeedState extends State<MergedExperiencesFeed> {
 
   /// LastResultCache key of the community side's first page (unsearched
   /// view only), bucketed to the viewer's ~5km geohash cell.
-  String get _communityCacheKey {
-    final cell = _hasLocation
-        ? GeoQuery.encode(widget.userLat!, widget.userLng!, 5)
-        : 'none';
-    return 'uexp_all_$cell';
-  }
+  String get _communityCacheKey =>
+      ExperienceFeedPrefetch.allFeedKey(widget.userLat, widget.userLng);
 
   FeedSource<_ExpItem> _community() {
-    final pager = di.sl<UserExperiencesRepository>().communityFeed(
+    var pager = di.sl<UserExperiencesRepository>().communityFeed(
           lat: widget.userLat,
           lng: widget.userLng,
           query: _query,
@@ -130,11 +127,18 @@ class _MergedExperiencesFeedState extends State<MergedExperiencesFeed> {
       // Last session's first page, from the local cache (instant).
       cached: () => _firstPages.load(key),
       first: () async {
+        // Adopt the background-warmed first page when it is this view.
+        final warm = await ExperienceFeedPrefetch.take(
+            lat: widget.userLat, lng: widget.userLng);
+        if (warm != null) {
+          pager = warm.pager;
+          return warm.items;
+        }
         final page = await pager.next();
         unawaited(_firstPages.save(key, page));
         return page;
       },
-      next: pager.next,
+      next: () => pager.next(),
       hasMore: () => pager.hasMore,
       id: (e) => e.id,
       map: map,

@@ -10,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/error/failures.dart';
+import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
@@ -257,7 +258,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
           .get();
       final items = snap.docs
           .map(ExternalEvent.fromFirestore)
-          .where((e) => e.lat != null && e.lng != null)
+          .where((e) =>
+              e.lat != null && e.lng != null && externalEventHasPicture(e))
           .toList();
       if (mounted) setState(() => _countryPins = items);
     } catch (_) {/* best-effort */}
@@ -353,7 +355,10 @@ class _GlobeScreenState extends State<GlobeScreen> {
         .where('country', isEqualTo: country)
         .limit(150)
         .get()
-        .then((snap) => snap.docs.map(ExternalEvent.fromFirestore).toList()
+        .then((snap) => snap.docs
+            .map(ExternalEvent.fromFirestore)
+            .where(externalEventHasPicture) // pictures only
+            .toList()
           ..sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0)));
     _countryItems[country] = (DateTime.now(), future);
     // A failed load must not stay memoised.

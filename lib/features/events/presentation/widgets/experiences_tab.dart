@@ -172,6 +172,14 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     }
 
     final pager = _newPager();
+    // The prefetch runs exactly the default view (distance, no category).
+    // Started BEFORE the cached paint is read, so the two run in parallel
+    // instead of one after the other.
+    final warmFuture = (widget.sort == 'distance' &&
+            (widget.category == null || widget.category!.isEmpty))
+        ? ExternalEventsPreloader.instance
+            .take(widget.source, lat: widget.userLat, lng: widget.userLng)
+        : null;
     if (_items.isEmpty) {
       final cached = await pager.loadCached();
       if (!mounted || gen != _gen) return;
@@ -183,11 +191,8 @@ class _ExperiencesTabState extends State<ExperiencesTab>
       }
     }
 
-    // The prefetch runs exactly the default view (distance, no category).
-    if (widget.sort == 'distance' &&
-        (widget.category == null || widget.category!.isEmpty)) {
-      final warm = await ExternalEventsPreloader.instance
-          .take(widget.source, lat: widget.userLat, lng: widget.userLng);
+    if (warmFuture != null) {
+      final warm = await warmFuture;
       if (!mounted || gen != _gen) return;
       if (warm != null) {
         _pager = warm.pager;
@@ -200,7 +205,7 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     }
 
     try {
-      final first = await pager.next();
+      final first = await _nextFilled(pager);
       if (!mounted || gen != _gen) return;
       _pager = pager;
       setState(() {
@@ -214,13 +219,26 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     }
   }
 
+  /// Pages a call may come back with nothing (its read budget went on items
+  /// the picture / date filters dropped) while more exist; read on, bounded,
+  /// so the list never sits empty or stops growing at such a page.
+  static const int _maxEmptyPages = 3;
+
+  Future<List<ExternalEvent>> _nextFilled(ExternalEventsPager pager) async {
+    var page = await pager.next();
+    for (var i = 0; page.isEmpty && pager.hasMore && i < _maxEmptyPages; i++) {
+      page = await pager.next();
+    }
+    return page;
+  }
+
   Future<void> _loadMore() async {
     final g = _gen;
     final pager = _pager;
     if (pager == null || _loadingMore || !pager.hasMore) return;
     _loadingMore = true;
     try {
-      final page = await pager.next();
+      final page = await _nextFilled(pager);
       if (!mounted || g != _gen) return;
       setState(() => _addUnique(page));
     } catch (_) {/* next scroll retries */} finally {

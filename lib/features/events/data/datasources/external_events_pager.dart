@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../../core/cache/last_result_cache.dart';
+import '../../../../core/utils/display_image.dart';
 import '../../domain/entities/external_event.dart';
 import 'geo_ring_scanner.dart';
 
@@ -12,7 +13,8 @@ import 'geo_ring_scanner.dart';
 ///   • date / rating / reviews → Firestore `orderBy(field)` + cursor pagination.
 /// Optional category filter is a server `where('category', ==)`.
 ///
-/// Attractions (geoapify) and experiences (viator) only surface WITH an image.
+/// Every source only surfaces items WITH a picture ([externalEventHasPicture]);
+/// a page dropped by that filter is topped up from the next rounds (bounded).
 class ExternalEventsPager {
   ExternalEventsPager({
     required this.source,
@@ -101,8 +103,16 @@ class ExternalEventsPager {
       country != null &&
       country!.isNotEmpty;
 
-  /// Date mode: still reading the viewer's country (see [country]).
-  late bool _byCountry = _canNarrowByCountry;
+  /// Date mode: still reading the viewer's country (see [country]). Skipped
+  /// for a country already found too sparse this session: that narrow read
+  /// was discarded every time and followed by the worldwide one anyway.
+  late bool _byCountry =
+      _canNarrowByCountry && !_sparseCountries.contains(_sparseKey);
+
+  /// `source|country` views whose country had less than one chunk of
+  /// upcoming events (session memo; a new session re-checks).
+  static final Set<String> _sparseCountries = {};
+  String get _sparseKey => '$source|$country';
 
   /// Worldwide date mode resumes here (inclusive) after the country ran out.
   String? _resumeFrom;
@@ -127,13 +137,13 @@ class ExternalEventsPager {
       ? (_scanner?.hasMore ?? true) || _liveBuffer.isNotEmpty
       : !_fieldDone;
 
-  /// Only show sources that must carry an image when one is present.
-  bool _imageOk(ExternalEvent e) {
-    if (source == 'geoapify' || source == 'viator') {
-      return e.imageUrl != null && e.imageUrl!.isNotEmpty;
-    }
-    return true;
-  }
+  /// Only items with a picture are shown, for every source (ticketmaster
+  /// docs can lack one; viator / tiqets are also filtered at ingest).
+  bool _imageOk(ExternalEvent e) => externalEventHasPicture(e);
+
+  /// Cap on ordered reads spent filling ONE field-mode page (image / date
+  /// filters can drop most of a read), so a page never walks the collection.
+  static const int _maxFieldRounds = 6;
 
   /// Today (yyyy-MM-dd) — ISO strings compare lexicographically == chronological.
   String get _todayStr {
@@ -188,10 +198,12 @@ class ExternalEventsPager {
             : 'rating';
     final descending = sort != 'date'; // soonest dates first; others highest
     final out = <ExternalEvent>[];
-    // Keep fetching until we have a page of image-bearing items or run out.
-    while (out.length < _chunk && !_fieldDone) {
+    // Keep fetching until we have a page of image-bearing items, run out, or
+    // spend this call's read budget (the next call continues from the cursor).
+    var rounds = 0;
+    while (out.length < _chunk && !_fieldDone && rounds++ < _maxFieldRounds) {
       Query<Map<String, dynamic>> q =
-          _base.orderBy(orderField, descending: descending).limit(_chunk);
+          _base.orderBy(orderField, descending: descending);
       if (_cursor != null) {
         q = q.startAfterDocument(_cursor!);
       } else if (sort == 'date') {
@@ -201,6 +213,9 @@ class ExternalEventsPager {
         // like "1" (they sort before today). No new index — same orderBy field.
         q = q.startAt([_resumeFrom ?? _todayStr]);
       }
+      // Cursor first, then the limit (same query server-side; this order is
+      // also what in-memory test fakes evaluate correctly).
+      q = q.limit(_chunk);
       final QuerySnapshot<Map<String, dynamic>> snap;
       try {
         snap = await q.get();
@@ -212,7 +227,9 @@ class ExternalEventsPager {
       }
       if (_byCountry && _cursor == null && snap.docs.length < _chunk) {
         // Too few upcoming events in this country: show the worldwide feed
-        // exactly as before (this page is not used).
+        // exactly as before (this page is not used), and don't re-run the
+        // narrow read for this country again this session.
+        _sparseCountries.add(_sparseKey);
         _toWorldwide();
         continue;
       }

@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../domain/entities/external_event.dart';
 
@@ -22,8 +23,7 @@ class ExternalEventsDataSource {
   /// Attractions/experiences must carry an image to be shown. Mirrors the image
   /// gate in `ExternalEventsPager` so even legacy image-less docs already in
   /// Firestore never reach the UI (the ingester also skips them on write now).
-  static bool _hasImage(ExternalEvent e) =>
-      e.imageUrl != null && e.imageUrl!.isNotEmpty;
+  static bool _hasImage(ExternalEvent e) => externalEventHasPicture(e);
 
   /// Max docs read per geohash range in [getInBounds] (up to 9 ranges).
   static const int perRangeLimit = 60;

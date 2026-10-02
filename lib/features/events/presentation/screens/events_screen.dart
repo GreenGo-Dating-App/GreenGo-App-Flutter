@@ -464,12 +464,22 @@ class _EventsScreenState extends State<EventsScreen>
                 indicatorColor: AppColors.richGold,
                 labelColor: AppColors.richGold,
                 unselectedLabelColor: AppColors.textSecondary,
-                isScrollable: true,
-                tabAlignment: TabAlignment.start,
+                // The three tabs share the full width equally; long
+                // translations scale down instead of overflowing.
+                isScrollable: false,
+                tabAlignment: TabAlignment.fill,
                 tabs: [
-                  Tab(text: AppLocalizations.of(context)!.eventsTitle),
-                  Tab(text: AppLocalizations.of(context)!.eventsTabAttractions),
-                  Tab(text: AppLocalizations.of(context)!.eventsTabExperiences),
+                  for (final label in [
+                    AppLocalizations.of(context)!.eventsTitle,
+                    AppLocalizations.of(context)!.eventsTabAttractions,
+                    AppLocalizations.of(context)!.eventsTabExperiences,
+                  ])
+                    Tab(
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(label, maxLines: 1),
+                      ),
+                    ),
                 ],
               ),
             ),
@@ -551,9 +561,15 @@ class _EventsScreenState extends State<EventsScreen>
     return TabBarView(
       controller: _tabController,
       children: [
+        // Every tab stays mounted once built, so swiping back to it never
+        // re-queries or rebuilds its list from scratch (each list widget
+        // also keeps itself alive; this covers the filter bodies that don't,
+        // e.g. the merged Experiences "All" feed).
         _KeepAliveTab(child: _buildEventsTab(loaded, firstLoad)),
-        _buildExternalTab(_buildCuratedAttractionsTab),
-        _buildExternalTab(_buildExperiencesFilterBody),
+        _KeepAliveTab(
+            child: _buildExternalTab(_buildCuratedAttractionsTab)),
+        _KeepAliveTab(
+            child: _buildExternalTab(_buildExperiencesFilterBody)),
       ],
     );
   }

@@ -15112,15 +15112,15 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get uexpPolicyFlexibleDesc =>
-      'Rimborso completo fino a 24 ore prima dell\'inizio, nessun rimborso dopo.';
+      'Rimborso completo se annulli almeno 24 h prima dell\'inizio; nessun rimborso dopo.';
 
   @override
   String get uexpPolicyModerateDesc =>
-      'Rimborso completo fino a 7 giorni prima, 50% fino a 24 ore prima, nessun rimborso dopo.';
+      'Rimborso completo se annulli almeno 7 giorni prima; 50% se almeno 24 h prima; nessun rimborso dopo.';
 
   @override
   String get uexpPolicyStrictDesc =>
-      'Rimborso completo fino a 7 giorni prima, nessun rimborso dopo.';
+      'Rimborso completo se annulli almeno 7 giorni prima; nessun rimborso dopo.';
 
   @override
   String get uexpPolicyWhen => 'Se annulli';
@@ -15129,13 +15129,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get uexpPolicyRefund => 'Rimborso';
 
   @override
-  String get uexpPolicyMoreThan7d => 'Più di 7 giorni prima';
+  String get uexpPolicyMoreThan7d => '7 giorni o più prima';
 
   @override
-  String get uexpPolicy7dTo24h => 'Tra 7 giorni e 24 ore prima';
+  String get uexpPolicy7dTo24h => 'Meno di 7 giorni, ma almeno 24 h prima';
 
   @override
-  String get uexpPolicyMoreThan24h => 'Più di 24 ore prima';
+  String get uexpPolicyMoreThan24h => '24 h o più prima';
 
   @override
   String get uexpPolicyLess24h => 'Meno di 24 ore prima';
@@ -15151,7 +15151,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get uexpRuleGrace =>
-      'Annulli entro 24 ore dalla prenotazione e mancano più di 48 ore all\'esperienza: rimborso del 100%.';
+      'Annulli entro 24 h dalla conferma della prenotazione da parte dell\'host e mancano più di 48 h all\'esperienza: rimborso del 100%.';
 
   @override
   String get uexpRuleReport =>
@@ -15860,4 +15860,9 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get uexpDatesRequiredToPublish =>
       'Aggiungi almeno una data futura per pubblicare. La tua esperienza è salvata come bozza.';
+
+  @override
+  String bkRefundIfPaid(String percent, String amount) {
+    return 'Se hai già pagato, l\'host ti deve restituire $percent ($amount).';
+  }
 }

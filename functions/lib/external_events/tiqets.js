@@ -50,6 +50,7 @@ const params_1 = require("firebase-functions/params");
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
+const image_1 = require("./image");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const TIQETS_API_KEY = (0, params_1.defineSecret)('TIQETS_API_KEY');
@@ -115,7 +116,7 @@ async function resolveCountryIds(key) {
     }
 }
 function mapProduct(p, countryName) {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2;
     const geo = p.geolocation || {};
     return {
         id: `tiqets_${p.id}`,
@@ -125,16 +126,17 @@ function mapProduct(p, countryName) {
             title: p.title,
             description: (_a = p.tagline) !== null && _a !== void 0 ? _a : null,
             imageUrl: (_g = (_d = (_c = (_b = p.images) === null || _b === void 0 ? void 0 : _b[0]) === null || _c === void 0 ? void 0 : _c.large) !== null && _d !== void 0 ? _d : (_f = (_e = p.images) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.medium) !== null && _g !== void 0 ? _g : null,
+            hasImage: (0, image_1.isUsableImageUrl)((_k = (_j = (_h = p.images) === null || _h === void 0 ? void 0 : _h[0]) === null || _j === void 0 ? void 0 : _j.large) !== null && _k !== void 0 ? _k : (_m = (_l = p.images) === null || _l === void 0 ? void 0 : _l[0]) === null || _m === void 0 ? void 0 : _m.medium),
             category: 'attraction',
-            city: (_j = (_h = p.city) === null || _h === void 0 ? void 0 : _h.name) !== null && _j !== void 0 ? _j : null,
-            country: (_m = (_l = (_k = p.city) === null || _k === void 0 ? void 0 : _k.country) === null || _l === void 0 ? void 0 : _l.code) !== null && _m !== void 0 ? _m : countryName,
-            fromPrice: ((_o = p.price) === null || _o === void 0 ? void 0 : _o.amount) != null ? Number(p.price.amount) : null,
-            currency: (_q = (_p = p.price) === null || _p === void 0 ? void 0 : _p.currency) !== null && _q !== void 0 ? _q : 'EUR',
-            rating: (_s = (_r = p.ratings) === null || _r === void 0 ? void 0 : _r.average) !== null && _s !== void 0 ? _s : 0,
-            reviewCount: (_u = (_t = p.ratings) === null || _t === void 0 ? void 0 : _t.count) !== null && _u !== void 0 ? _u : 0,
-            lat: (_v = geo.lat) !== null && _v !== void 0 ? _v : null,
-            lng: (_w = geo.lng) !== null && _w !== void 0 ? _w : null,
-            bookingUrl: (_x = p.product_url) !== null && _x !== void 0 ? _x : null,
+            city: (_p = (_o = p.city) === null || _o === void 0 ? void 0 : _o.name) !== null && _p !== void 0 ? _p : null,
+            country: (_s = (_r = (_q = p.city) === null || _q === void 0 ? void 0 : _q.country) === null || _r === void 0 ? void 0 : _r.code) !== null && _s !== void 0 ? _s : countryName,
+            fromPrice: ((_t = p.price) === null || _t === void 0 ? void 0 : _t.amount) != null ? Number(p.price.amount) : null,
+            currency: (_v = (_u = p.price) === null || _u === void 0 ? void 0 : _u.currency) !== null && _v !== void 0 ? _v : 'EUR',
+            rating: (_x = (_w = p.ratings) === null || _w === void 0 ? void 0 : _w.average) !== null && _x !== void 0 ? _x : 0,
+            reviewCount: (_z = (_y = p.ratings) === null || _y === void 0 ? void 0 : _y.count) !== null && _z !== void 0 ? _z : 0,
+            lat: (_0 = geo.lat) !== null && _0 !== void 0 ? _0 : null,
+            lng: (_1 = geo.lng) !== null && _1 !== void 0 ? _1 : null,
+            bookingUrl: (_2 = p.product_url) !== null && _2 !== void 0 ? _2 : null,
             fetchedAt: admin.firestore.FieldValue.serverTimestamp(),
         },
     };
@@ -178,10 +180,7 @@ async function runTiqets(key) {
     }
     // Attractions are only worth showing with a photo → drop the image-less ones
     // so we never store (or later render) a blank card.
-    const withImage = all.filter((d) => {
-        const url = d.data.imageUrl;
-        return typeof url === 'string' && url.length > 0;
-    });
+    const withImage = all.filter((d) => d.data.hasImage === true);
     if (withImage.length > 0)
         await upsertAll(withImage);
     console.log(`ingestTiqets: upserted ${withImage.length}/${all.length} attractions ` +

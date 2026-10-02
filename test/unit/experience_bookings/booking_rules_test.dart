@@ -111,7 +111,9 @@ void main() {
       final r = BookingRules.cancelPreview(b, t0, byHost: false)!;
       expect(r.percent, 50);
       expect(r.amount, 5000);
-      expect(r.reason, 'guest_cancelled');
+      // Link payment nobody marked as made: owed only if the guest paid.
+      expect(r.reason, 'guest_cancelled_link_unconfirmed');
+      expect(r.linkUnconfirmed, isTrue);
     });
 
     test('host always owes 100%', () {

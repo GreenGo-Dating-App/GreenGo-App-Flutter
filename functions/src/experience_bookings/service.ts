@@ -609,7 +609,9 @@ export async function cancelBooking(uid: string, data: any): Promise<Record<stri
     if (now >= start) fail('failed-precondition', 'already_started');
     const wasConfirmed = b.status === 'confirmed';
     const percent = wasConfirmed
-      ? refundFor(b.policy, now, start, msOf(b.createdAt) ?? now, by)
+      // Every booking is a request: the guest's booking (and its 24 h grace
+      // window) starts when the host CONFIRMS it, not when it was requested.
+      ? refundFor(b.policy, now, start, msOf(b.confirmedAt) ?? msOf(b.createdAt) ?? now, by)
       : 100;
     const due = wasConfirmed
       ? refundDueFor(b.price, b.payment, percent, by === 'host' ? 'host_cancelled' : 'guest_cancelled')

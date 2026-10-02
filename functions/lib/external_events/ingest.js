@@ -57,6 +57,7 @@ const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
 const build_index_1 = require("./build_index");
 const geohash_1 = require("./geohash");
+const image_1 = require("./image");
 const db = admin.firestore();
 const COLLECTION = 'external_events';
 const VIATOR_API_KEY = (0, params_1.defineSecret)('VIATOR_API_KEY');
@@ -340,6 +341,7 @@ function mapProduct(p, countryName, idMap) {
             title: p.title,
             description: (_c = p.description) !== null && _c !== void 0 ? _c : null,
             imageUrl: (_d = best === null || best === void 0 ? void 0 : best.url) !== null && _d !== void 0 ? _d : null,
+            hasImage: (0, image_1.isUsableImageUrl)(best === null || best === void 0 ? void 0 : best.url),
             category: viatorCategory(p.title, p.description),
             city: city.name,
             country: countryName,
@@ -527,10 +529,7 @@ async function runIngestion(apiKey) {
         if (all.length > 0) {
             // Experiences are only worth showing with a photo → drop the image-less
             // ones so we never store (or later render) a blank card.
-            const withImage = all.filter((d) => {
-                const url = d.data.imageUrl;
-                return typeof url === 'string' && url.length > 0;
-            });
+            const withImage = all.filter((d) => d.data.hasImage === true);
             await upsertAll(withImage);
             await writeCountryStats(withImage, 'viator');
             await (0, build_index_1.buildSourceIndex)('viator');

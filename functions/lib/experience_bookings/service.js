@@ -539,7 +539,7 @@ async function cancelBooking(uid, data) {
     const reason = (0, model_1.cleanText)(data === null || data === void 0 ? void 0 : data.reason, 500);
     const cfg = await loadConfig();
     const r = await transition(bookingId, (b, now) => {
-        var _a;
+        var _a, _b;
         const by = roleOf(uid, b);
         if (!by)
             fail('permission-denied', 'not_a_party');
@@ -553,7 +553,9 @@ async function cancelBooking(uid, data) {
             fail('failed-precondition', 'already_started');
         const wasConfirmed = b.status === 'confirmed';
         const percent = wasConfirmed
-            ? (0, model_1.refundFor)(b.policy, now, start, (_a = msOf(b.createdAt)) !== null && _a !== void 0 ? _a : now, by)
+            // Every booking is a request: the guest's booking (and its 24 h grace
+            // window) starts when the host CONFIRMS it, not when it was requested.
+            ? (0, model_1.refundFor)(b.policy, now, start, (_b = (_a = msOf(b.confirmedAt)) !== null && _a !== void 0 ? _a : msOf(b.createdAt)) !== null && _b !== void 0 ? _b : now, by)
             : 100;
         const due = wasConfirmed
             ? (0, model_1.refundDueFor)(b.price, b.payment, percent, by === 'host' ? 'host_cancelled' : 'guest_cancelled')

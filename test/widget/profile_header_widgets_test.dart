@@ -24,11 +24,11 @@ void main() {
   group('VerifiedBadge', () {
     testWidgets('renders a check icon', (tester) async {
       await pumpBadge(tester, const VerifiedBadge());
-      expect(find.byIcon(Icons.check), findsOneWidget);
+      expect(find.byIcon(Icons.verified_rounded), findsOneWidget);
     });
 
     testWidgets('lays out at the requested size', (tester) async {
-      await pumpBadge(tester, const VerifiedBadge(size: 40, isPremium: true));
+      await pumpBadge(tester, const VerifiedBadge(size: 40));
       final size = tester.getSize(find.byType(VerifiedBadge));
       expect(size.width, 40);
       expect(size.height, 40);
