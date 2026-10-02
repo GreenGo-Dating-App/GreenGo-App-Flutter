@@ -17,6 +17,11 @@ class UserBrief {
     this.photoUrl,
     this.language,
     this.isActive = true,
+    this.hostRatingSum = 0,
+    this.hostRatingCount = 0,
+    this.idVerified = false,
+    this.guestRatingSum = 0,
+    this.guestRatingCount = 0,
   });
 
   /// Builds a brief from a full profile. This is the ONE place the display
@@ -52,11 +57,68 @@ class UserBrief {
   /// such users from pickers (e.g. the event-share list).
   final bool isActive;
 
+  /// Host's overall rating across ALL their experiences — server-owned
+  /// profile fields `hostRatingSum` / `hostRatingCount` (user_experiences
+  /// triggers). 0 / 0 = no ratings yet ("New host").
+  final double hostRatingSum;
+  final int hostRatingCount;
+
+  double get hostRatingAvg =>
+      hostRatingCount <= 0 ? 0 : hostRatingSum / hostRatingCount;
+
+  /// Rating as a GUEST (hosts review guests after a booking) — server-owned
+  /// `guestRatingSum` / `guestRatingCount` (experience_bookings). 0 / 0 =
+  /// "New guest".
+  final double guestRatingSum;
+  final int guestRatingCount;
+
+  double get guestRatingAvg =>
+      guestRatingCount <= 0 ? 0 : guestRatingSum / guestRatingCount;
+
+  /// ID document approved by GreenGo — the server-owned `isAgeVerified`
+  /// profile flag (set ONLY by submitAgeDocument / reviewAgeVerification when
+  /// an identity document is verified; rules forbid client writes).
+  final bool idVerified;
+
+  /// Whether to show the "Verified" badge: approved ID AND an active account
+  /// (banned / suspended / deleted users never show it).
+  bool get showVerifiedBadge => idVerified && isActive;
+
+  /// Copy with the server-owned fields read from a raw profile document
+  /// (host rating totals, ID verification).
+  UserBrief withServerFieldsFrom(Map<String, dynamic> data) {
+    final c = data['hostRatingCount'];
+    final s = data['hostRatingSum'];
+    final count = c is num && c.isFinite && c > 0 ? c.toInt() : 0;
+    final sum = count > 0 && s is num && s.isFinite && s > 0 ? s.toDouble() : 0.0;
+    final gc = data['guestRatingCount'];
+    final gs = data['guestRatingSum'];
+    final gCount = gc is num && gc.isFinite && gc > 0 ? gc.toInt() : 0;
+    final gSum =
+        gCount > 0 && gs is num && gs.isFinite && gs > 0 ? gs.toDouble() : 0.0;
+    return UserBrief(
+      name: name,
+      photoUrl: photoUrl,
+      language: language,
+      isActive: isActive,
+      hostRatingSum: sum,
+      hostRatingCount: count,
+      idVerified: data['isAgeVerified'] == true,
+      guestRatingSum: gSum,
+      guestRatingCount: gCount,
+    );
+  }
+
   Map<String, Object?> _toJson(int fetchedAtMs) => {
         'n': name,
         if (photoUrl != null) 'p': photoUrl,
         if (language != null) 'l': language,
         'a': isActive,
+        if (hostRatingCount > 0) 'hs': hostRatingSum,
+        if (hostRatingCount > 0) 'hc': hostRatingCount,
+        if (idVerified) 'v': true,
+        if (guestRatingCount > 0) 'gs': guestRatingSum,
+        if (guestRatingCount > 0) 'gc': guestRatingCount,
         't': fetchedAtMs,
       };
 
@@ -65,6 +127,11 @@ class UserBrief {
         photoUrl: j['p'] as String?,
         language: j['l'] as String?,
         isActive: j['a'] as bool? ?? true,
+        hostRatingSum: (j['hs'] as num?)?.toDouble() ?? 0,
+        hostRatingCount: (j['hc'] as num?)?.toInt() ?? 0,
+        idVerified: j['v'] == true,
+        guestRatingSum: (j['gs'] as num?)?.toDouble() ?? 0,
+        guestRatingCount: (j['gc'] as num?)?.toInt() ?? 0,
       );
 }
 
@@ -357,7 +424,7 @@ class UserDirectoryService extends ChangeNotifier {
       // Same parsing as ProfileRemoteDataSource.getProfile, so the name
       // precedence and status semantics are identical to before.
       profile = ProfileModel.fromJson({...data, 'userId': uid});
-      brief = UserBrief.fromProfile(profile);
+      brief = UserBrief.fromProfile(profile).withServerFieldsFrom(data);
     } catch (e) {
       // Malformed doc: previously getProfile threw and the user was treated
       // as missing. Keep that behaviour.

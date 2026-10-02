@@ -41,6 +41,7 @@ exports.adminBulkDeleteUsers = exports.executeMassAction = exports.impersonateUs
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
+const hostBan_1 = require("../user_experiences/hostBan");
 const firestore = admin.firestore();
 const auth = admin.auth();
 /**
@@ -354,6 +355,7 @@ exports.suspendUserAccount = functions.https.onCall((0, monitoring_1.monitored)(
             suspendedBy: context.auth.uid,
             suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
         });
+        await (0, hostBan_1.syncHostExperiencesForBan)(userId, true);
         // Log admin action
         await logAdminAction(context.auth.uid, 'suspendedUser', 'user', userId, { reason, durationDays });
         return { success: true, suspendedUntil };
@@ -378,6 +380,7 @@ exports.unsuspendUserAccount = functions.https.onCall((0, monitoring_1.monitored
             unsuspendedBy: context.auth.uid,
             unsuspendedAt: admin.firestore.FieldValue.serverTimestamp(),
         });
+        await (0, hostBan_1.syncHostExperiencesForBan)(userId, false);
         // Log admin action
         await logAdminAction(context.auth.uid, 'unsuspendedUser', 'user', userId, { userId });
         return { success: true };
@@ -401,6 +404,7 @@ exports.banUserAccount = functions.https.onCall((0, monitoring_1.monitored)("ban
             bannedBy: context.auth.uid,
             bannedAt: admin.firestore.FieldValue.serverTimestamp(),
         });
+        await (0, hostBan_1.syncHostExperiencesForBan)(userId, true);
         // Disable Firebase Auth account
         await auth.updateUser(userId, {
             disabled: true,
@@ -428,6 +432,7 @@ exports.unbanUserAccount = functions.https.onCall((0, monitoring_1.monitored)("u
             unbannedBy: context.auth.uid,
             unbannedAt: admin.firestore.FieldValue.serverTimestamp(),
         });
+        await (0, hostBan_1.syncHostExperiencesForBan)(userId, false);
         // Re-enable Firebase Auth account
         await auth.updateUser(userId, {
             disabled: false,

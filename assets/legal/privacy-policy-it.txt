@@ -194,10 +194,13 @@ Potremmo raccogliere e trattare i seguenti dati personali sensibili con il vostr
 - Dati biometrici (solo per la verifica dell'identita)
 - Dati del documento di identita (solo per la verifica dell'eta - vedere la Sezione 2.6)
 
-Non conserviamo le immagini utilizzate per la verifica dell'identita o dell'eta.
-La verifica facciale e la verifica dell'eta vengono elaborate e l'immagine di
-origine viene poi eliminata; viene conservato solo il risultato derivato.
-Vedere le Sezioni 2.6 e 8.1(e).
+Le immagini dei documenti di identita utilizzate per la verifica dell'eta sono
+conservate in un archivio riservato, accessibile solo lato server, a fini di
+prevenzione delle frodi (vedere le Sezioni 2.6 e 8.1(e)). Per la prevenzione
+delle frodi e la sicurezza della community, i documenti di identita vengono
+conservati fino a 30 giorni dopo l'eliminazione dell'account e poi cancellati
+definitivamente. La verifica facciale viene elaborata e viene conservato solo il
+risultato derivato.
 
 La revoca del consenso alla verifica dell'eta rimuove lo stato di verificato e,
 con esso, la possibilita di pubblicare contenuti nelle Community. Non incide sul
@@ -297,15 +300,21 @@ b) Quando desiderate PUBBLICARE contenuti in una Community. Leggere e iscriversi
 
 COSA ACCADE AL VOSTRO DOCUMENTO
 
-Il sistema e progettato per conservare il documento per secondi, non per giorni:
+Il documento viene trattato come segue:
 
 1. Caricate la fotografia di un documento di identita in un'area di archiviazione
    di sola scrittura. Non puo essere riletta - ne da voi, ne dal nostro personale.
 2. I nostri sistemi leggono automaticamente il documento tramite riconoscimento
    ottico dei caratteri, per estrarre la data di nascita.
-3. L'immagine viene eliminata nella stessa operazione, sia che la verifica abbia
-   successo sia che fallisca. Nessun dipendente la visualizza e non esiste alcuna
-   interfaccia in grado di mostrarla.
+3. L'immagine viene quindi spostata in un archivio riservato, accessibile solo
+   lato server, a cui nessun utente e nessuna interfaccia dell'app puo accedere.
+   Viene conservata finche esiste il vostro account, per poter indagare su
+   eventuali frodi (ad esempio un documento falso o riutilizzato). Un documento
+   sostituito viene conservato per 30 giorni e poi cancellato. Per la
+   prevenzione delle frodi e la sicurezza della community, i documenti di
+   identita vengono conservati fino a 30 giorni dopo l'eliminazione dell'account
+   e poi cancellati definitivamente (piu a lungo solo finche lo richieda
+   un'indagine in corso per frode o truffa).
 
 COSA CONSERVIAMO
 
@@ -319,9 +328,10 @@ Solo quanto necessario a sostenere la decisione:
 - L'esito, il punteggio di affidabilita automatico e - se un membro del personale
   ha esaminato un caso dubbio - l'identificativo di tale revisore
 
-NON conserviamo: l'immagine, il vostro nome come stampato sul documento, il
-numero del documento in forma leggibile, la vostra nazionalita o la data di
-scadenza del documento.
+NON memorizziamo nel vostro profilo: l'immagine, il vostro nome come stampato
+sul documento, il numero del documento in forma leggibile, la vostra nazionalita
+o la data di scadenza del documento. L'immagine stessa e conservata solo
+nell'archivio riservato descritto sopra.
 
 DOVE VIENE ELABORATO
 
@@ -570,8 +580,12 @@ d) Dati di Sicurezza e Prevenzione delle Frodi
    - Dati degli account bannati: A tempo indeterminato (per prevenire la ri-registrazione)
 
 e) Dati di Verifica dell'Eta e dell'Identita
-   - Immagini dei documenti: NON CONSERVATE. Eliminate durante la stessa
-     operazione che le legge, tipicamente entro pochi secondi dal caricamento.
+   - Immagini dei documenti: in un archivio riservato, accessibile solo lato
+     server, finche esiste l'account; un documento sostituito viene conservato
+     per 30 giorni. Per la prevenzione delle frodi e la sicurezza della
+     community, i documenti di identita vengono conservati fino a 30 giorni dopo
+     l'eliminazione dell'account e poi cancellati definitivamente (salvo che
+     un'indagine in corso per frode ne richieda la conservazione).
    - Data di nascita estratta, esito della corrispondenza, hash del numero del
      documento ed esito: per la durata dell'account. Eliminati con l'account.
 

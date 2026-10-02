@@ -12,6 +12,7 @@ import '../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../membership/domain/entities/membership.dart';
 import '../domain/experience_limits.dart';
 import '../domain/repositories/user_experiences_repository.dart';
+import 'experience_safety_flow.dart';
 
 /// Result of checking whether a host may create another experience.
 class ExperienceAllowance {
@@ -65,14 +66,19 @@ class ExperienceCreationGate {
     return ExperienceAllowance(tier: tier, count: count, limit: limit);
   }
 
-  /// True when [uid] may create another experience; otherwise shows the
-  /// upgrade prompt (→ Shop, Membership tab) and returns false.
+  /// True when [uid] may create another experience: within the tier limit
+  /// (else the upgrade prompt → Shop, Membership tab) AND with an ID document
+  /// uploaded (else it is asked for in place — upload flow — and creation
+  /// continues once it is there).
   Future<bool> ensureCanCreate(BuildContext context, String uid) async {
     final a = await check(uid);
-    if (a.allowed) return true;
     if (!context.mounted) return false;
-    await showLimitDialog(context, uid, a);
-    return false;
+    if (!a.allowed) {
+      await showLimitDialog(context, uid, a);
+      return false;
+    }
+    return ExperienceSafetyFlow.ensureIdDocument(
+        context, uid, IdDocPurpose.createAsHost);
   }
 
   static Future<void> showLimitDialog(

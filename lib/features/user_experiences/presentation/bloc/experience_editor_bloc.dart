@@ -13,12 +13,24 @@ abstract class ExperienceEditorEvent extends Equatable {
 
 /// Save [experience] (photos already uploaded). New experiences go through
 /// the `createUserExperience` callable (tier limit), edits are direct updates.
+///
+/// Publishing is server-checked (ID document, host agreement, approved
+/// document for paid, new-host paid limit): a refusal comes back as an
+/// [ExperienceSafetyFailure]; for an EDIT, [ExperienceEditorState.saved] then
+/// holds the edits as stored (a draft).
 class ExperienceEditorSaved extends ExperienceEditorEvent {
-  const ExperienceEditorSaved(this.experience, {required this.isNew});
+  const ExperienceEditorSaved(
+    this.experience, {
+    required this.isNew,
+    this.publish = false,
+    this.wasPublished = false,
+  });
   final UserExperience experience;
   final bool isNew;
+  final bool publish;
+  final bool wasPublished;
   @override
-  List<Object?> get props => [experience, isNew];
+  List<Object?> get props => [experience, isNew, publish, wasPublished];
 }
 
 enum ExperienceEditorStatus { idle, saving, saved, failed }
@@ -66,10 +78,30 @@ class ExperienceEditorBloc
       );
       return;
     }
-    final r = await _repo.updateExperience(e.experience);
-    r.fold(
+    final r = await _repo.updateExperience(e.experience,
+        publish: e.publish, wasPublished: e.wasPublished);
+    if (r.isLeft()) {
+      r.fold(
+        (f) => emit(ExperienceEditorState(
+            status: ExperienceEditorStatus.failed, failure: f)),
+        (_) {},
+      );
+      return;
+    }
+    final needsPublish = r.getOrElse(() => false);
+    if (!needsPublish) {
+      emit(ExperienceEditorState(
+          status: ExperienceEditorStatus.saved, saved: e.experience));
+      return;
+    }
+    final p = await _repo.publishExperience(e.experience.id);
+    p.fold(
       (f) => emit(ExperienceEditorState(
-          status: ExperienceEditorStatus.failed, failure: f)),
+        status: ExperienceEditorStatus.failed,
+        failure: f,
+        // The edits are stored, as a draft.
+        saved: e.experience.copyWith(status: ExperienceStatus.draft),
+      )),
       (_) => emit(ExperienceEditorState(
           status: ExperienceEditorStatus.saved, saved: e.experience)),
     );
@@ -102,8 +134,10 @@ class ExperienceEditorBloc
         currency: x.currency,
         isFree: x.isFree,
         paymentLink: x.paymentLink,
+        paymentMethods: x.paymentMethods,
         availability: x.availability,
         cancellationPolicy: x.cancellationPolicy,
+        cancellationNotes: x.cancellationNotes,
         status: x.status,
         createdAt: DateTime.now(),
         updatedAt: DateTime.now(),

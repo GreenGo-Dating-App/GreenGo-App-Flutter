@@ -249,6 +249,8 @@ class _ReplyComposerState extends State<ReplyComposer> {
         err = l.uexpErrProhibited;
       case CommentVerdict.containsLink:
         err = l.uexpErrNoLinks;
+      case CommentVerdict.contactInfo:
+        err = l.uexpErrContactInfo;
     }
     if (err != null) {
       setState(() => _error = err);

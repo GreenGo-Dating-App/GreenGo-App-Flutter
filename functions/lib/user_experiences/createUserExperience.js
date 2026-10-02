@@ -34,6 +34,8 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createUserExperience = exports.EXPERIENCE_COUNTS = exports.EXPERIENCES = void 0;
+exports.safetyError = safetyError;
+exports.countPublishedPaid = countPublishedPaid;
 /**
  * createUserExperience — the ONLY way to create a `user_experiences` doc.
  *
@@ -61,11 +63,12 @@ require("../shared/firebaseAdmin");
 const effectiveTier_1 = require("../shared/effectiveTier");
 const moderation_1 = require("./moderation");
 const validation_1 = require("./validation");
+const safety_1 = require("./safety");
 const db = admin.firestore();
 exports.EXPERIENCES = 'user_experiences';
 exports.EXPERIENCE_COUNTS = 'user_experience_counts';
 exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 60 }, async (request) => {
-    var _a;
+    var _a, _b;
     const uid = (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid;
     if (!uid)
         throw new https_1.HttpsError('unauthenticated', 'Sign in required.');
@@ -78,9 +81,10 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
     }
     const mod = (0, moderation_1.moderateExperienceText)(v.data);
     if (!mod.ok) {
-        throw new https_1.HttpsError('invalid-argument', 'prohibited_text', {
-            code: 'prohibited_text',
-        });
+        // contact_info: phones / e-mails / handles / PIX keys outside the
+        // payment link (anti-scam); prohibited_text: language.
+        const code = mod.reason === 'contact_info' ? 'contact_info' : 'prohibited_text';
+        throw new https_1.HttpsError('invalid-argument', code, { code, kinds: (_b = mod.terms) !== null && _b !== void 0 ? _b : [] });
     }
     const profileRef = db.collection('profiles').doc(uid);
     const counterRef = db.collection(exports.EXPERIENCE_COUNTS).doc(uid);
@@ -92,6 +96,20 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
             tx.get(counterRef),
         ]);
         const profile = (_a = profileSnap.data()) !== null && _a !== void 0 ? _a : null;
+        // Phase 1 safety: ID document uploaded to create; agreement + approved
+        // document (+ new-host paid limit) to publish a listing taking money.
+        const blocked = (0, safety_1.createBlockReason)(profile);
+        if (blocked)
+            throw safetyError(blocked);
+        if (v.data.status === 'published') {
+            let otherPublishedPaid = 0;
+            if (v.data.isFree !== true && (profile === null || profile === void 0 ? void 0 : profile.isAdmin) !== true && (0, safety_1.isNewHost)(profile)) {
+                otherPublishedPaid = await countPublishedPaid(tx, uid);
+            }
+            const why = (0, safety_1.publishBlockReason)({ profile, experience: v.data, otherPublishedPaid });
+            if (why)
+                throw safetyError(why);
+        }
         const tier = (0, effectiveTier_1.effectiveTier)(profile);
         const max = (0, validation_1.maxExperiencesFor)(tier, (0, effectiveTier_1.isProfileAdmin)(profile));
         let count = Number((_c = (_b = counterSnap.data()) === null || _b === void 0 ? void 0 : _b.count) !== null && _c !== void 0 ? _c : 0) || 0;
@@ -110,10 +128,36 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
             }
         }
         const now = admin.firestore.FieldValue.serverTimestamp();
-        tx.set(expRef, Object.assign(Object.assign({}, v.data), { hostId: uid, createdAt: now, updatedAt: now, ratingSum: 0, ratingCount: 0, ratingAvg: 0, reviewCount: 0, ratingDist: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 }, viewCount: 0 }));
+        tx.set(expRef, Object.assign(Object.assign({}, v.data), { hostId: uid, createdAt: now, updatedAt: now, ratingSum: 0, ratingCount: 0, ratingAvg: 0, reviewCount: 0, ratingDist: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 }, viewCount: 0, 
+            // Explore promotion is server-owned (setExperienceFeatured, admin).
+            isFeatured: false, 
+            // Its (empty) aggregate is part of the host's profile totals from the
+            // start, so review triggers keep profiles/{uid}.hostRating* in step.
+            // Without a profile there is nothing to count into (backfill later).
+            hostRatingCounted: profileSnap.exists }));
         tx.set(counterRef, { count: count + 1, updatedAt: now }, { merge: true });
         return { id: expRef.id, count: count + 1, limit: max };
     });
     return result;
 });
+/** Structured refusal the client maps to a guided prompt (see safety.ts). */
+function safetyError(code) {
+    return new https_1.HttpsError('failed-precondition', code, { code });
+}
+/** The host's published PAID listings (aggregate count: 1 read / 1000 docs). */
+async function countPublishedPaid(tx, hostId, excludeId) {
+    const agg = await tx.get(db.collection(exports.EXPERIENCES)
+        .where('hostId', '==', hostId)
+        .where('status', '==', 'published')
+        .where('isFree', '==', false)
+        .count());
+    let n = agg.data().count;
+    if (excludeId) {
+        const self = await tx.get(db.collection(exports.EXPERIENCES).doc(excludeId));
+        const d = self.data();
+        if (d && d.hostId === hostId && d.status === 'published' && d.isFree === false)
+            n -= 1;
+    }
+    return Math.max(0, n);
+}
 //# sourceMappingURL=createUserExperience.js.map

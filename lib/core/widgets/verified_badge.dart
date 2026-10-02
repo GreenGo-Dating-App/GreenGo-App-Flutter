@@ -1,11 +1,91 @@
 import 'package:flutter/material.dart';
+
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../services/user_directory_service.dart';
 
-/// Enhancement #2: Verified Badge
-/// Shows a verification checkmark for verified users
+/// THE "Verified" badge (one badge everywhere): shown next to a user's name
+/// when GreenGo has APPROVED their identity document.
+///
+/// Source of truth: the server-owned profile flag `isAgeVerified` (set only by
+/// the document-verification functions), exposed as [UserBrief.idVerified].
+/// Banned / inactive accounts never show it ([UserBrief.showVerifiedBadge]).
 class VerifiedBadge extends StatelessWidget {
+  const VerifiedBadge({super.key, this.size = 14, this.showLabel = false});
 
-  const VerifiedBadge({
+  final double size;
+
+  /// Adds the word "Verified" after the check (profile headers, host rows).
+  final bool showLabel;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context)!;
+    final icon = Icon(Icons.verified_rounded,
+        size: size, color: AppColors.richGold);
+    return Tooltip(
+      message: l.verifiedBadgeTooltip,
+      child: Semantics(
+        label: l.verifiedBadgeTooltip,
+        child: showLabel
+            ? Row(mainAxisSize: MainAxisSize.min, children: [
+                icon,
+                const SizedBox(width: 3),
+                Text(l.verifiedBadgeLabel,
+                    style: TextStyle(
+                        color: AppColors.richGold,
+                        fontSize: size * 0.85,
+                        fontWeight: FontWeight.w600)),
+              ])
+            : icon,
+      ),
+    );
+  }
+}
+
+/// [VerifiedBadge] for [uid], read from the cached + batched
+/// [UserDirectoryService] brief (no extra reads where the name is already
+/// resolved). Renders nothing until resolved / when not verified.
+class UserVerifiedBadge extends StatelessWidget {
+  const UserVerifiedBadge({
+    super.key,
+    required this.uid,
+    this.size = 14,
+    this.showLabel = false,
+    this.padding = const EdgeInsets.only(left: 4),
+  });
+
+  final String uid;
+  final double size;
+  final bool showLabel;
+  final EdgeInsetsGeometry padding;
+
+  /// Pure visibility rule (unit-tested).
+  static bool isVisible(UserBrief? brief) => brief?.showVerifiedBadge ?? false;
+
+  @override
+  Widget build(BuildContext context) {
+    if (uid.isEmpty) return const SizedBox.shrink();
+    return ListenableBuilder(
+      listenable: UserDirectoryService.instance,
+      builder: (context, _) {
+        final brief = UserDirectoryService.instance.cached(uid);
+        if (brief == null) UserDirectoryService.instance.resolve([uid]);
+        if (!isVisible(brief)) return const SizedBox.shrink();
+        return Padding(
+          padding: padding,
+          child: VerifiedBadge(size: size, showLabel: showLabel),
+        );
+      },
+    );
+  }
+}
+
+/// Plain round check (gold when [isPremium], blue otherwise). NOT the ID
+/// badge — used for BUSINESS verification (storefronts), which has its own
+/// tooltip. (This was the old `VerifiedBadge` visual.)
+class CheckBadge extends StatelessWidget {
+  const CheckBadge({
     super.key,
     this.size = 16,
     this.isPremium = false,

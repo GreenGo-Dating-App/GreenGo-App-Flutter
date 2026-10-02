@@ -115,3 +115,70 @@ export function aggregateFromReviews(
   for (const r of reviews) agg = applyAggregateDelta(agg as any, computeAggregateDelta(null, r));
   return agg;
 }
+
+// ─────────────────────────────────────────────────────────────── host totals
+//
+// The host's OVERALL rating across all their experiences lives on
+// `profiles/{hostId}`: hostRatingSum, hostRatingCount, hostRatingAvg (all
+// server-owned). Invariant: host totals == Σ aggregates of the host's
+// experiences that carry `hostRatingCounted: true`.
+//  - a review delta is applied to the experience AND (when the experience is
+//    counted) to the host, in the same transaction, deduplicated by event id;
+//  - deleting an experience subtracts its last aggregate (its reviews are then
+//    deleted, but their triggers find the experience gone and change nothing);
+//  - `backfillHostRatings` adds an uncounted experience's aggregate and sets
+//    the flag in one transaction (exactly once per experience).
+
+export interface HostRatingDelta {
+  sum: number;
+  count: number;
+}
+
+export interface HostRatingTotals {
+  hostRatingSum: number;
+  hostRatingCount: number;
+  hostRatingAvg: number;
+}
+
+/** The part of a review delta that moves the host totals. */
+export function hostDeltaFromAggregateDelta(d: AggregateDelta): HostRatingDelta {
+  return { sum: d.sum, count: d.count };
+}
+
+/** What one experience currently contributes to its host's totals. */
+export function experienceHostContribution(
+  experience: Record<string, unknown> | null | undefined,
+): HostRatingDelta {
+  const e = experience ?? {};
+  const count = Math.max(0, Math.trunc(num(e.ratingCount)));
+  const sum = count === 0 ? 0 : Math.max(0, num(e.ratingSum));
+  return { sum, count };
+}
+
+export function negateHostDelta(d: HostRatingDelta): HostRatingDelta {
+  return { sum: d.sum === 0 ? 0 : -d.sum, count: d.count === 0 ? 0 : -d.count };
+}
+
+export function isZeroHostDelta(d: HostRatingDelta): boolean {
+  return d.sum === 0 && d.count === 0;
+}
+
+/**
+ * Applies [delta] to the host's current totals (profile fields). Clamped at 0
+ * so a drifted total never shows a negative count or average.
+ */
+export function applyHostRatingDelta(
+  profile: Record<string, unknown> | null | undefined,
+  delta: HostRatingDelta,
+): HostRatingTotals {
+  const p = profile ?? {};
+  const hostRatingCount = Math.max(0, num(p.hostRatingCount) + delta.count);
+  const hostRatingSum = hostRatingCount === 0
+    ? 0
+    : Math.max(0, num(p.hostRatingSum) + delta.sum);
+  return {
+    hostRatingSum,
+    hostRatingCount,
+    hostRatingAvg: hostRatingCount === 0 ? 0 : round2(hostRatingSum / hostRatingCount),
+  };
+}

@@ -18,6 +18,7 @@ import '../../domain/usecases/group_membership.dart';
 import '../../domain/usecases/report_user.dart';
 import '../widgets/group_tags_editor.dart';
 import '../widgets/resolved_users_builder.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Group Info Screen — members list, roles, and leave action.
 ///
@@ -144,6 +145,11 @@ class GroupInfoScreen extends StatelessWidget {
                         child: Text(displayName,
                             overflow: TextOverflow.ellipsis),
                       ),
+                      if (UserVerifiedBadge.isVisible(brief))
+                        const Padding(
+                          padding: EdgeInsets.only(left: 4),
+                          child: VerifiedBadge(size: 15),
+                        ),
                     ],
                   ),
                   trailing: Row(

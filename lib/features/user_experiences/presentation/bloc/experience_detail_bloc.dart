@@ -32,10 +32,21 @@ class ExperienceDetailDeleted extends ExperienceDetailEvent {
 }
 
 class ExperienceDetailReported extends ExperienceDetailEvent {
-  const ExperienceDetailReported(this.reporterId);
+  const ExperienceDetailReported(this.reporterId,
+      {this.reason = 'other', this.details = ''});
   final String reporterId;
+  final String reason;
+  final String details;
   @override
-  List<Object?> get props => [reporterId];
+  List<Object?> get props => [reporterId, reason, details];
+}
+
+/// Replace the shown experience (e.g. after a guided publish).
+class ExperienceDetailReplaced extends ExperienceDetailEvent {
+  const ExperienceDetailReplaced(this.experience);
+  final UserExperience experience;
+  @override
+  List<Object?> get props => [experience];
 }
 
 /// One-shot outcome the screen reacts to (snackbar / pop).
@@ -87,6 +98,10 @@ class ExperienceDetailBloc
     on<ExperienceDetailStatusChanged>(_onStatus);
     on<ExperienceDetailDeleted>(_onDeleted);
     on<ExperienceDetailReported>(_onReported);
+    on<ExperienceDetailReplaced>((e, emit) => emit(state.copyWith(
+          experience: e.experience,
+          action: ExperienceDetailAction.statusChanged,
+        )));
   }
 
   final UserExperiencesRepository _repo;
@@ -145,8 +160,11 @@ class ExperienceDetailBloc
       ExperienceDetailReported e, Emitter<ExperienceDetailState> emit) async {
     final x = state.experience;
     if (x == null) return;
-    final r =
-        await _repo.reportExperience(experience: x, reporterId: e.reporterId);
+    final r = await _repo.reportExperience(
+        experience: x,
+        reporterId: e.reporterId,
+        reason: e.reason,
+        details: e.details);
     emit(state.copyWith(
         action: r.isRight()
             ? ExperienceDetailAction.reported

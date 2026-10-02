@@ -55,6 +55,11 @@ import '../../../events/domain/entities/external_event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../events/presentation/screens/events_screen.dart';
 import '../../../events/presentation/widgets/attraction_menu_dialog.dart';
+import '../../../user_experiences/domain/entities/user_experience.dart';
+import '../../../user_experiences/presentation/screens/experience_detail_screen.dart';
+import '../../data/top_experiences_loader.dart';
+import '../../domain/top_experiences.dart';
+import '../widgets/top_experiences_section.dart';
 import '../../../globe_explore/presentation/bloc/globe_bloc.dart';
 import '../../../globe_explore/presentation/screens/globe_screen.dart';
 import '../../../main/presentation/screens/main_navigation_screen.dart';
@@ -175,6 +180,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // the user. Rendered with a premium gold-glow/shine treatment
   // ([_LuxuryEventCard]). null == loading; empty == hidden.
   List<_Happening>? _luxuryEvents;
+  // "Top experiences": up to [kTopExperiencesLimit] cards — featured member
+  // experiences, then top-rated member ones, then partner (Viator) ones (see
+  // [buildTopExperiences]). null == loading; empty == hidden.
+  List<TopExperienceItem>? _topExperiences;
 
   // ── People sections (each: null == loading, empty == loaded/hidden) ─────────
   // "Recommended for you": heuristic relevance-ranked people via the
@@ -223,6 +232,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// Whether any content section has something to show (cached paints count).
   bool get _hasAnySectionData =>
       (_featuredAttractions?.isNotEmpty ?? false) ||
+      (_topExperiences?.isNotEmpty ?? false) ||
       (_myEvents?.isNotEmpty ?? false) ||
       (_luxuryEvents?.isNotEmpty ?? false) ||
       (_aroundYou?.isNotEmpty ?? false) ||
@@ -300,6 +310,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // Paint what the user saw last time (by id, from the local cache) while the
     // fresh loads below run. Never paints an empty section.
     if (!forceRefresh) unawaited(_paintCachedSections());
+    if (!forceRefresh) unawaited(_paintCachedTopExperiences());
     // The Countries / People counters are the priciest reads on the page and
     // don't need to be live: last value now, recomputed after the first paint.
     _scheduleStats(immediately: forceRefresh);
@@ -313,6 +324,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       // elected in order so they never show the same event twice.
       _loadEventCarousels(),
       _loadFeaturedAttractions(),
+      _loadTopExperiences(),
       _loadRecommended(),
       _loadAroundYou(forceRefresh: forceRefresh),
       _loadSameLanguage(),
@@ -337,6 +349,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       unawaited(_loadEventCarousels());
       unawaited(_loadAroundYou());
       unawaited(_loadCommunities());
+      unawaited(_loadTopExperiences());
     }
   }
 
@@ -719,6 +732,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       // The city drives these sections, so re-resolve them against the new one.
       unawaited(_loadAroundYou());
       unawaited(_loadCommunities());
+      unawaited(_loadTopExperiences());
     });
   }
 
@@ -1822,6 +1836,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // people rows. Every section hides itself when it has no data.
               _luxuryEventsSection(context, l10n, reduceMotion),
               _featuredAttractionsSection(context, l10n, reduceMotion),
+              // Top experiences: featured → top-rated member → partner.
+              TopExperiencesSection(
+                items: _topExperiences,
+                reduceMotion: reduceMotion,
+                onSeeAll: () => _openTopExperiencesAll(context),
+                onOpenCommunity: (e) => _openTopCommunity(context, e),
+                onOpenPartner: (e) => _openPartnerExperience(context, e),
+              ),
               // The user's upcoming events (going or organised).
               _myEventsSection(context, l10n, reduceMotion),
               _communitiesSection(context, l10n, reduceMotion),
@@ -2850,6 +2872,75 @@ class _ExploreScreenState extends State<ExploreScreen> {
         currentUserId: widget.userId,
       );
     }
+  }
+
+  /// Loads "Top experiences" ([TopExperiencesLoader]: bounded featured +
+  /// community + partner reads, ranked by [buildTopExperiences]) around the
+  /// user's effective (traveler-aware) location. Empty hides the section.
+  Future<void> _loadTopExperiences() async {
+    List<TopExperienceItem> items;
+    try {
+      items = await TopExperiencesLoader(firestore: _firestore).load(
+        lat: _userLat,
+        lng: _userLng,
+        blocked: await _blockedIds(),
+      );
+    } catch (_) {
+      items = const <TopExperienceItem>[];
+    }
+    if (mounted) setState(() => _topExperiences = items);
+  }
+
+  /// Paints "Top experiences" from what the last server load showed (ids →
+  /// local Firestore cache, re-checked), only while the section is still
+  /// loading and only with a non-empty result.
+  Future<void> _paintCachedTopExperiences() async {
+    try {
+      final blocked = await di
+          .sl<BlockedUsersService>()
+          .getBlockedUserIds(widget.userId)
+          .then<Set<String>?>((ids) => ids)
+          .timeout(const Duration(milliseconds: 400), onTimeout: () => null);
+      if (blocked == null) return; // can't re-check blocks: skip the paint
+      final cached = await TopExperiencesLoader(firestore: _firestore)
+          .loadCached(blocked: blocked);
+      if (!mounted || cached.isEmpty || _topExperiences != null) return;
+      setState(() => _topExperiences = cached);
+    } catch (_) {
+      // Nothing cached — the server load paints the section.
+    }
+  }
+
+  /// A member experience card → its detail page; an edit / unpublish / delete
+  /// there re-runs the section so it stays truthful.
+  Future<void> _openTopCommunity(
+      BuildContext context, UserExperience experience) async {
+    final r = await Navigator.of(context).push(ExperienceDetailScreen.route(
+      experienceId: experience.id,
+      currentUserId: widget.userId,
+      initial: experience,
+    ));
+    if (mounted && (r?.deletedId != null || r?.updated != null)) {
+      unawaited(_loadTopExperiences());
+    }
+  }
+
+  /// A partner (Viator) card → the existing partner menu dialog.
+  void _openPartnerExperience(BuildContext context, ExternalEvent event) {
+    di.sl<InteractionLogService>().logAttractionView(widget.userId, event.id);
+    showAttractionMenu(context, event: event, currentUserId: widget.userId);
+  }
+
+  /// "Top experiences → See all" → Events screen, Experiences tab, filter All.
+  void _openTopExperiencesAll(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => EventsScreen(
+          currentUserId: widget.userId,
+          initialTab: EventsScreen.experiencesTab,
+        ),
+      ),
+    );
   }
 
   /// "See all" for experiences → the full Events screen (external + native).

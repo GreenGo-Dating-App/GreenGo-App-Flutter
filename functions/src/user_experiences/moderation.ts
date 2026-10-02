@@ -55,7 +55,54 @@ export function containsLink(text: unknown): boolean {
   return typeof text === 'string' && LINK_RE.test(text);
 }
 
-export type ModerationReason = 'prohibited_terms' | 'contains_link';
+// ─────────────────────────────────────────────────────────── contact info
+//
+// Anti-scam: hosts and reviewers must not move people off-platform. Phone
+// numbers, e-mail addresses, social / payment handles and PIX keys are blocked
+// in experience text (title, description, included / not-included, meeting
+// point, availability, cancellation notes) and in review / reply text. The
+// experience's `paymentLink` field is the ONE place a payment destination may
+// appear and is exempt.
+//
+// Mirrored 1:1 by lib/features/user_experiences/domain/contact_info.dart; both
+// are tested against functions/__tests__/fixtures/contact_info_cases.json.
+// KEEP BOTH IN SYNC.
+
+export type ContactKind = 'phone' | 'email' | 'pix_key' | 'handle' | 'payment_phrase';
+
+const EMAIL_RE = /[a-z0-9._%+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}/i;
+/** 9+ digits joined only by spaces, dots, dashes or parentheses (phones, CPF). */
+const PHONE_RE = /(?:\+\s*)?\d(?:[\s().-]{0,3}\d){8,}/;
+/** CNPJ: 12.345.678/0001-90 (the slash breaks the phone rule). */
+const CNPJ_RE = /\b\d{2}\.?\d{3}\.?\d{3}\/\d{4}-?\d{2}\b/;
+/** PIX random key (UUID v4 shape). */
+const UUID_RE = /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/i;
+/** @handle (Instagram / Telegram / PayPal …), not an e-mail. */
+const HANDLE_RE = /(?:^|[\s(,;:])@[a-z0-9_][a-z0-9_.]{2,}/i;
+/** Off-platform payment / contact phrases (lower-case, accents kept). */
+const PAYMENT_PHRASES: readonly string[] = [
+  'whatsapp', 'whats app', 'wa.me', 'telegram', 't.me/', 'signal me',
+  'pay me', 'paga-me', 'me paga', 'me pague', 'pague-me', 'pagame', 'págame',
+  'pagami', 'paie-moi', 'payez-moi', 'bezahl mich', 'zahl mir',
+  'paypal.me', '@paypal', 'venmo.com', 'cash.app', 'cashapp', 'zelle',
+  'western union', 'chave pix', 'pix key', 'clé pix', 'clave pix', 'iban',
+];
+
+/** Kinds of contact / payment info found in [text]; empty when clean. */
+export function findContactInfo(text: unknown): ContactKind[] {
+  if (typeof text !== 'string' || text.trim().length === 0) return [];
+  const out = new Set<ContactKind>();
+  const lower = text.toLowerCase();
+  if (EMAIL_RE.test(text)) out.add('email');
+  if (PHONE_RE.test(text)) out.add('phone');
+  if (CNPJ_RE.test(text) || UUID_RE.test(text)) out.add('pix_key');
+  // A handle that is really an e-mail's domain part was caught above.
+  if (HANDLE_RE.test(text.replace(EMAIL_RE, ' '))) out.add('handle');
+  if (PAYMENT_PHRASES.some((p) => lower.includes(p))) out.add('payment_phrase');
+  return Array.from(out);
+}
+
+export type ModerationReason = 'prohibited_terms' | 'contains_link' | 'contact_info';
 
 export interface ModerationDecision {
   ok: boolean;
@@ -71,14 +118,17 @@ export function moderateCommentText(text: unknown): ModerationDecision {
   const terms = findProhibitedTerms(text);
   if (terms.length > 0) return { ok: false, reason: 'prohibited_terms', terms };
   if (containsLink(text)) return { ok: false, reason: 'contains_link' };
+  const contact = findContactInfo(text);
+  if (contact.length > 0) return { ok: false, reason: 'contact_info', terms: contact };
   return { ok: true };
 }
 
 /**
  * Experience text decision: title, description, included / not-included
- * items, meeting point, availability and cancellation policy. Links are
- * allowed here (the payment link is a URL by design, and hosts may reference
- * a venue site); only prohibited language hides the listing.
+ * items, meeting point, availability and cancellation notes. Links are
+ * allowed here (hosts may reference a venue site); prohibited language and
+ * off-platform contact / payment info (phones, e-mails, handles, PIX keys)
+ * hide the listing. The paymentLink field is exempt.
  */
 export function moderateExperienceText(
   data: Record<string, unknown> | null | undefined,
@@ -89,14 +139,22 @@ export function moderateExperienceText(
     data.description,
     data.meetingPoint,
     data.availability,
+    // Legacy free-text policy (pre-enum docs) and the new host notes.
     data.cancellationPolicy,
+    data.cancellationNotes,
     ...(Array.isArray(data.included) ? data.included : []),
     ...(Array.isArray(data.notIncluded) ? data.notIncluded : []),
   ];
+  // NOT data.paymentLink: the one sanctioned payment destination.
   const terms = new Set<string>();
   for (const p of parts) for (const t of findProhibitedTerms(p)) terms.add(t);
   if (terms.size > 0) {
     return { ok: false, reason: 'prohibited_terms', terms: Array.from(terms) };
+  }
+  const contact = new Set<string>();
+  for (const p of parts) for (const k of findContactInfo(p)) contact.add(k);
+  if (contact.size > 0) {
+    return { ok: false, reason: 'contact_info', terms: Array.from(contact) };
   }
   return { ok: true };
 }

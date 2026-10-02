@@ -9,6 +9,7 @@ import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Reusable, Apple-safe replica of the 2.2.4 Network grid card.
 ///
@@ -281,16 +282,25 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 // Name, age — bold white ("Felipe, 23")
-                Text(
-                  '${widget.candidate.displayName}, ${widget.candidate.age}',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
+                Row(children: [
+                  Flexible(
+                    child: Text(
+                      '${widget.candidate.displayName}, ${widget.candidate.age}',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
+                  if (widget.candidate.profile.showVerifiedBadge)
+                    const Padding(
+                      padding: EdgeInsets.only(left: 3),
+                      child: VerifiedBadge(size: 14),
+                    ),
+                ]),
                 if (showScore || cityText.isNotEmpty) ...[
                   const SizedBox(height: 2),
                   // % (gold) + city (grey) with the small leading icon. The %

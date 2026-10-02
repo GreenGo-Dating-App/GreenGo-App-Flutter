@@ -363,6 +363,17 @@ export {
   backfillDeclaredAge,
 } from './safety/ageAssurance';
 
+// ID-document retention (fraud prevention; DRAFT — lawyer review): documents
+// kept server-only, 30 days after replacement / account deletion, then purged.
+export {
+  purgeRetainedIdDocuments,
+  setIdDocumentLegalHold,
+  backfillIdVerifiedFlags,
+} from './safety/idDocumentRetention';
+
+// Banned / suspended hosts: hide their user experiences (restore on unban).
+export { onProfileBanStateChanged } from './user_experiences/hostBan';
+
 // Account deletion cascade (Guideline 5.1.1(v), GDPR Art. 17)
 // Fires on auth deletion however it is triggered — app, admin panel, console.
 export { onUserDeletedCleanup } from './auth/deleteUserData';
@@ -585,7 +596,36 @@ export { translateTexts } from './messaging/sharedTranslations';
 // User-created experiences (member-hosted) with reviews, replies + '@' mentions.
 export {
   createUserExperience,
+  backfillHostRatings,
+  setExperienceFeatured,
+  publishUserExperience,
+  acceptHostAgreement,
+  onExperienceReportCreated,
   onUserExperienceWritten,
   onExperienceReviewWritten,
   onExperienceReplyCreated,
 } from './user_experiences';
+
+// Experience bookings: slots, bookings (free / cash / host link — no money
+// moves through GreenGo), cancellation refund obligations, check-in, no-show,
+// disputes, reminders, two-way double-blind reviews (experience_bookings/).
+export {
+  createBooking,
+  respondToBookingRequest,
+  cancelBooking,
+  cancelExperienceSlot,
+  getBookingCheckInCode,
+  checkInBooking,
+  markBookingNoShow,
+  markBookingPaid,
+  confirmCashReceived,
+  openBookingDispute,
+  resolveBookingDispute,
+  sendBookingReminders,
+  expireBookingRequests,
+  completeBookings,
+  revealBlindReviews,
+  onGuestReviewWritten,
+  onPendingExperienceReviewCreated,
+  onBookableExperienceDeleted,
+} from './experience_bookings';

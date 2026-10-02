@@ -4,10 +4,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
+import '../../../experience_bookings/domain/entities/booking.dart';
+import '../../../experience_bookings/presentation/screens/bookings_list_screen.dart';
+import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
 import '../bloc/experience_feed_bloc.dart';
 import '../experience_creation_gate.dart';
+import '../experience_safety_flow.dart';
 import '../widgets/experience_widgets.dart';
 import 'experience_detail_screen.dart';
 import 'experience_editor_screen.dart';
@@ -109,10 +113,71 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
     if (saved != null) bloc.add(ExperienceFeedItemUpserted(saved));
   }
 
+  Future<void> _dates(UserExperience e) async {
+    final bloc = context.read<ExperienceFeedBloc>();
+    final updated = await Navigator.of(context).push(ExperienceSlotsScreen.route(
+        experience: e, currentUserId: widget.currentUserId));
+    if (updated != null && updated.requestToBook != e.requestToBook) {
+      bloc.add(ExperienceFeedItemUpserted(updated));
+    }
+  }
+
+  void _bookings({UserExperience? e, BookingRole role = BookingRole.host}) =>
+      Navigator.of(context).push(BookingsListScreen.route(
+        role: role,
+        currentUserId: widget.currentUserId,
+        experienceId: e?.id,
+        title: e?.title,
+      ));
+
+  /// "My bookings" (as a guest) + "Bookings received" (as a host).
+  Widget _bookingsBar(AppLocalizations l) {
+    ButtonStyle style() => OutlinedButton.styleFrom(
+          foregroundColor: AppColors.richGold,
+          side: const BorderSide(color: AppColors.richGold),
+          visualDensity: VisualDensity.compact,
+          minimumSize: const Size(0, 40),
+        );
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+      child: Row(children: [
+        Expanded(
+          child: OutlinedButton.icon(
+            key: const ValueKey('my-bookings'),
+            style: style(),
+            onPressed: () => _bookings(role: BookingRole.guest),
+            icon: const Icon(Icons.confirmation_number_outlined, size: 18),
+            label: Text(l.bkMyBookings, overflow: TextOverflow.ellipsis),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: OutlinedButton.icon(
+            key: const ValueKey('host-bookings'),
+            style: style(),
+            onPressed: () => _bookings(),
+            icon: const Icon(Icons.receipt_long_outlined, size: 18),
+            label: Text(l.bkHostBookings, overflow: TextOverflow.ellipsis),
+          ),
+        ),
+      ]),
+    );
+  }
+
   Future<void> _setStatus(UserExperience e, ExperienceStatus s) async {
     final l = AppLocalizations.of(context)!;
     final bloc = context.read<ExperienceFeedBloc>();
     final m = ScaffoldMessenger.of(context);
+    if (s == ExperienceStatus.published) {
+      // Server-checked publish with the guided safety prompts.
+      final published = await ExperienceSafetyFlow.publish(
+          context, widget.currentUserId, e);
+      if (published != null && mounted) {
+        bloc.add(ExperienceFeedItemUpserted(published));
+        m.showSnackBar(SnackBar(content: Text(l.uexpPublished)));
+      }
+      return;
+    }
     final r = await di.sl<UserExperiencesRepository>().setStatus(e.id, s);
     r.fold(
       (_) => m.showSnackBar(SnackBar(
@@ -220,7 +285,10 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
-    final body = _body(l);
+    final body = Column(children: [
+      _bookingsBar(l),
+      Expanded(child: _body(l)),
+    ]);
     if (widget.embedded) return body;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -303,6 +371,10 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
                       switch (v) {
                         case 'edit':
                           _edit(e);
+                        case 'dates':
+                          _dates(e);
+                        case 'bookings':
+                          _bookings(e: e);
                         case 'publish':
                           _setStatus(e, ExperienceStatus.published);
                         case 'unpublish':
@@ -315,6 +387,16 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
                       PopupMenuItem(
                           value: 'edit',
                           child: Text(l.uexpEdit,
+                              style: const TextStyle(
+                                  color: AppColors.textPrimary))),
+                      PopupMenuItem(
+                          value: 'dates',
+                          child: Text(l.bkDatesTitle,
+                              style: const TextStyle(
+                                  color: AppColors.textPrimary))),
+                      PopupMenuItem(
+                          value: 'bookings',
+                          child: Text(l.bkBookings,
                               style: const TextStyle(
                                   color: AppColors.textPrimary))),
                       if (e.status == ExperienceStatus.draft)

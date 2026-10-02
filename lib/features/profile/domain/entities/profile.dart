@@ -93,6 +93,7 @@ class Profile extends Equatable {
     this.storefrontLinks = const [],
     this.coverImageUrl,
     this.isBanned = false,
+    this.isIdVerified = false,
   });
   final String userId;
   final String displayName;
@@ -246,6 +247,16 @@ class Profile extends Equatable {
   // The app only READS it (e.g. to hide or gate a banned account). Default false.
   final bool isBanned;
 
+  /// GreenGo APPROVED this user's identity document — the server-owned
+  /// `isAgeVerified` profile flag (submitAgeDocument / reviewAgeVerification).
+  /// The ONLY thing the user-facing "Verified" badge means. Read-only: never
+  /// written by the client ([isVerified] is the onboarding account approval).
+  final bool isIdVerified;
+
+  /// Show the "Verified" badge: approved ID document on an active account.
+  bool get showVerifiedBadge =>
+      isIdVerified && !isBanned && accountStatus == 'active';
+
   /// Get formatted nickname with @ prefix
   String? get formattedNickname => nickname != null ? '@$nickname' : null;
 
@@ -377,6 +388,7 @@ class Profile extends Equatable {
         storefrontLinks,
         coverImageUrl,
         isBanned,
+        isIdVerified,
       ];
 
   /// Copy with updated fields
@@ -459,6 +471,7 @@ class Profile extends Equatable {
     List<String>? storefrontLinks,
     String? coverImageUrl,
     bool? isBanned,
+    bool? isIdVerified,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -540,6 +553,7 @@ class Profile extends Equatable {
       storefrontLinks: storefrontLinks ?? this.storefrontLinks,
       coverImageUrl: coverImageUrl ?? this.coverImageUrl,
       isBanned: isBanned ?? this.isBanned,
+      isIdVerified: isIdVerified ?? this.isIdVerified,
     );
   }
 }

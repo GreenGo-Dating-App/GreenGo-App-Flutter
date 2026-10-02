@@ -10,6 +10,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../business/data/services/follow_service.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../widgets/user_follow_button.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Followers / Following of [userId] — two tabs, 30 per page, infinite scroll.
 ///
@@ -306,15 +307,24 @@ class _FollowRow extends StatelessWidget {
       ),
       // Unknown name → a neutral placeholder bar, never the uid.
       title: name.isNotEmpty
-          ? Text(
-              name,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: const TextStyle(
-                color: AppColors.textPrimary,
-                fontWeight: FontWeight.w600,
+          ? Row(children: [
+              Flexible(
+                child: Text(
+                  name,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
               ),
-            )
+              if (UserVerifiedBadge.isVisible(brief))
+                const Padding(
+                  padding: EdgeInsets.only(left: 4),
+                  child: VerifiedBadge(size: 15),
+                ),
+            ])
           : Align(
               alignment: Alignment.centerLeft,
               child: Container(

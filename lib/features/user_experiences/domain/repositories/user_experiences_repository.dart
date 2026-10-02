@@ -20,6 +20,23 @@ class ExperienceProhibitedFailure extends Failure {
   const ExperienceProhibitedFailure() : super('prohibited_text');
 }
 
+/// The server refused off-platform contact / payment info in the text.
+class ExperienceContactInfoFailure extends Failure {
+  const ExperienceContactInfoFailure() : super('contact_info');
+}
+
+/// A Phase 1 safety refusal; [code] is one of
+/// ExperienceCreateException.safetyCodes (id_document_required,
+/// id_document_not_approved, host_agreement_required, new_host_paid_limit,
+/// host_banned, hidden, agreement_outdated).
+class ExperienceSafetyFailure extends Failure {
+  const ExperienceSafetyFailure(this.code) : super(code);
+  final String code;
+
+  @override
+  List<Object?> get props => [message, code];
+}
+
 /// The server refused the payload (field names in [fields]).
 class ExperienceInvalidFailure extends Failure {
   const ExperienceInvalidFailure(this.fields) : super('invalid_experience');
@@ -73,15 +90,40 @@ abstract class UserExperiencesRepository {
   /// server-side). Returns the new id.
   Future<Either<Failure, String>> createExperience(UserExperience draft);
 
-  Future<Either<Failure, void>> updateExperience(UserExperience experience);
+  /// Saves edits; Right(true) = the caller must still [publishExperience]
+  /// (see UserExperiencesRemoteDataSource.update).
+  Future<Either<Failure, bool>> updateExperience(
+    UserExperience experience, {
+    bool publish = false,
+    bool wasPublished = false,
+  });
+
+  /// Publishes via the server (safety checks); [asFree] makes it free first.
+  Future<Either<Failure, void>> publishExperience(String id,
+      {bool asFree = false});
+
+  Future<Either<Failure, void>> acceptHostAgreement(int version);
+
+  /// Guest consent before paying the host (immutable record).
+  Future<Either<Failure, void>> recordBookingConsent({
+    required String experienceId,
+    required String uid,
+    required CancellationPolicy policy,
+    required int version,
+    required PaymentMethod method,
+  });
 
   Future<Either<Failure, void>> setStatus(String id, ExperienceStatus status);
 
   Future<Either<Failure, void>> deleteExperience(String id);
 
+  /// [reason]: scam | off_platform_payment | misleading | no_show |
+  /// inappropriate | other. Three DISTINCT reporters auto-hide the listing.
   Future<Either<Failure, void>> reportExperience({
     required UserExperience experience,
     required String reporterId,
+    String reason = 'other',
+    String details = '',
   });
 
   // ── reviews ──
@@ -105,6 +147,33 @@ abstract class UserExperiencesRepository {
   });
 
   Future<Either<Failure, void>> deleteReview(String experienceId, String uid);
+
+  // ── booking-gated reviews (double-blind) ──
+
+  /// The caller's review eligibility (a completed / checked-in booking), or
+  /// null when they have none.
+  Future<Either<Failure, ReviewEligibility?>> getReviewEligibility(
+      String experienceId, String uid);
+
+  /// The caller's blind review not yet published, or null.
+  Future<Either<Failure, PendingReview?>> getPendingReview(
+      String experienceId, String uid);
+
+  /// Creates ([isNew]) or edits the caller's blind review.
+  Future<Either<Failure, void>> savePendingReview({
+    required String experienceId,
+    required String uid,
+    required String bookingId,
+    required int rating,
+    required String comment,
+    required bool isNew,
+  });
+
+  Future<Either<Failure, void>> deletePendingReview(
+      String experienceId, String uid);
+
+  /// Host: instant booking (false) or request to book (true).
+  Future<Either<Failure, void>> setRequestToBook(String id, bool value);
 
   Future<Either<Failure, void>> reportReview({
     required ExperienceReview review,

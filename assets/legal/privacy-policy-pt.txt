@@ -194,10 +194,12 @@ Podemos recolher e tratar os seguintes dados pessoais sensiveis com o seu consen
 - Dados biometricos (apenas para verificacao de identidade)
 - Dados do documento de identificacao (apenas para verificacao de idade - ver a Seccao 2.6)
 
-Nao conservamos as imagens utilizadas para a verificacao de identidade ou de
-idade. A verificacao facial e a verificacao de idade sao processadas e a imagem
-de origem e depois eliminada; apenas o resultado derivado e conservado. Ver as
-Seccoes 2.6 e 8.1(g).
+As imagens de documentos de identificacao utilizadas para a verificacao de idade
+sao guardadas num armazenamento restrito, acessivel apenas pelo servidor, para
+prevencao de fraude (ver as Seccoes 2.6 e 8.1(g)). Para prevencao de fraude e
+seguranca da comunidade, os documentos de identificacao sao conservados ate 30
+dias apos a eliminacao da conta e depois apagados permanentemente. A verificacao
+facial e processada e apenas o resultado derivado e conservado.
 
 Retirar o consentimento para a verificacao de idade remove o seu estatuto de
 verificado e, com ele, a possibilidade de publicar conteudo nas Comunidades. Nao
@@ -298,16 +300,22 @@ b) Quando pretende PUBLICAR conteudo numa Comunidade. Ler e aderir a Comunidades
 
 O QUE ACONTECE AO SEU DOCUMENTO
 
-O sistema foi concebido para guardar o seu documento durante segundos, nao dias:
+O seu documento e tratado da seguinte forma:
 
 1. Carrega uma fotografia de um documento de identificacao para um local de
    armazenamento apenas de escrita. Nao pode ser lido de novo - nem por si, nem
    pelo nosso pessoal.
 2. Os nossos sistemas leem o documento automaticamente atraves de reconhecimento
    otico de caracteres, para extrair a data de nascimento.
-3. A imagem e eliminada na mesma operacao, quer a verificacao seja bem-sucedida
-   quer falhe. Nenhum colaborador a visualiza e nao existe qualquer interface
-   capaz de a mostrar.
+3. A imagem e depois movida para um armazenamento restrito, acessivel apenas
+   pelo servidor, ao qual nenhum utilizador nem nenhuma interface da app tem
+   acesso. E conservada enquanto a sua conta existir, para que uma fraude (por
+   exemplo, um documento falsificado ou reutilizado) possa ser investigada. Um
+   documento que substitua e conservado durante 30 dias e depois apagado. Para
+   prevencao de fraude e seguranca da comunidade, os documentos de identificacao
+   sao conservados ate 30 dias apos a eliminacao da conta e depois apagados
+   permanentemente (mais tempo apenas enquanto uma investigacao de fraude ou
+   burla em curso o exigir).
 
 O QUE CONSERVAMOS
 
@@ -321,9 +329,10 @@ Apenas o necessario para sustentar a decisao:
 - O resultado, a pontuacao de confianca automatica e - se um colaborador analisou
   um caso duvidoso - o identificador desse revisor
 
-NAO conservamos: a imagem, o seu nome tal como impresso no documento, o numero do
-documento em forma legivel, a sua nacionalidade nem a data de validade do
-documento.
+NAO guardamos no seu perfil: a imagem, o seu nome tal como impresso no
+documento, o numero do documento em forma legivel, a sua nacionalidade nem a
+data de validade do documento. A imagem em si e conservada apenas no
+armazenamento restrito descrito acima.
 
 ONDE E PROCESSADO
 
@@ -589,8 +598,12 @@ f) Dados de Analise
    - Registos de utilizacao individual: 2 anos
 
 g) Dados de Verificacao de Idade e Identidade
-   - Imagens de documentos: NAO CONSERVADAS. Eliminadas durante a mesma operacao
-     que as le, normalmente poucos segundos apos o carregamento.
+   - Imagens de documentos: num armazenamento restrito, acessivel apenas pelo
+     servidor, enquanto a conta existir; um documento substituido e conservado
+     durante 30 dias. Para prevencao de fraude e seguranca da comunidade, os
+     documentos de identificacao sao conservados ate 30 dias apos a eliminacao
+     da conta e depois apagados permanentemente (salvo se uma investigacao de
+     fraude em curso exigir a sua retencao).
    - Data de nascimento extraida, resultado da correspondencia, hash do numero do
      documento e resultado: durante a existencia da conta. Eliminados com a conta.
 

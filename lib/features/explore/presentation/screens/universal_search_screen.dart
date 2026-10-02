@@ -26,6 +26,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Universal Search — look up other PEOPLE (→ open a chat instantly) and
 /// community EVENTS (→ open that event's page), from the Explore header.
@@ -609,6 +610,7 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
             : null,
       ),
       title: profile.displayName,
+      titleVerified: profile.showVerifiedBadge,
       subtitle: subtitle,
       trailing: const Icon(Icons.chat_bubble_outline,
           color: AppColors.richGold, size: 20),
@@ -688,6 +690,7 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     required String title,
     required String subtitle,
     required Widget trailing,
+    bool titleVerified = false,
   }) {
     return Material(
       color: AppColors.charcoal,
@@ -710,16 +713,25 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(
-                      title,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(
-                        color: AppColors.textPrimary,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
+                    Row(children: [
+                      Flexible(
+                        child: Text(
+                          title,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: AppColors.textPrimary,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                       ),
-                    ),
+                      if (titleVerified)
+                        const Padding(
+                          padding: EdgeInsets.only(left: 4),
+                          child: VerifiedBadge(size: 15),
+                        ),
+                    ]),
                     if (subtitle.isNotEmpty) ...[
                       const SizedBox(height: 3),
                       Text(

@@ -13,6 +13,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../data/datasources/profile_remote_data_source.dart';
 import '../../domain/entities/profile.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Screen for searching users by nickname
 class UserSearchScreen extends StatefulWidget {
@@ -333,20 +334,20 @@ class _UserSearchResultCard extends StatelessWidget {
         ),
         title: Row(
           children: [
-            Text(
-              profile.displayName,
-              style: const TextStyle(
-                color: AppColors.textPrimary,
-                fontWeight: FontWeight.w600,
+            Flexible(
+              child: Text(
+                profile.displayName,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  color: AppColors.textPrimary,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
-            if (profile.isVerified) ...[
+            if (profile.showVerifiedBadge) ...[
               const SizedBox(width: 4),
-              const Icon(
-                Icons.verified,
-                color: AppColors.richGold,
-                size: 16,
-              ),
+              const VerifiedBadge(size: 16),
             ],
           ],
         ),

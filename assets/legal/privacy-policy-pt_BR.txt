@@ -194,10 +194,12 @@ Podemos coletar e processar os seguintes dados pessoais sensiveis com seu consen
 - Dados biometricos (apenas para verificacao de identidade)
 - Dados do documento de identidade (apenas para verificacao de idade - ver a Secao 2.6)
 
-Nao armazenamos as imagens utilizadas para a verificacao de identidade ou de
-idade. A verificacao facial e a verificacao de idade sao processadas e a imagem
-de origem e entao excluida; apenas o resultado derivado e mantido. Ver as Secoes
-2.6 e 8.1(g).
+As imagens de documentos de identidade utilizadas para a verificacao de idade
+ficam guardadas em um armazenamento restrito, acessivel apenas pelo servidor,
+para prevencao de fraudes (ver as Secoes 2.6 e 8.1(g)). Para prevencao de
+fraudes e seguranca da comunidade, os documentos de identidade sao mantidos por
+ate 30 dias apos a exclusao da conta e depois apagados permanentemente. A
+verificacao facial e processada e apenas o resultado derivado e mantido.
 
 Retirar o consentimento para a verificacao de idade remove seu status de
 verificado e, com ele, a possibilidade de publicar conteudo nas Comunidades. Nao
@@ -298,16 +300,22 @@ b) Quando voce deseja PUBLICAR conteudo em uma Comunidade. Ler e participar de
 
 O QUE ACONTECE COM SEU DOCUMENTO
 
-O sistema foi projetado para guardar seu documento por segundos, nao por dias:
+Seu documento e tratado da seguinte forma:
 
 1. Voce envia uma fotografia de um documento de identidade para um local de
    armazenamento somente de escrita. Ele nao pode ser lido de volta - nem por
    voce, nem por nossa equipe.
 2. Nossos sistemas leem o documento automaticamente por reconhecimento otico de
    caracteres, para extrair a data de nascimento.
-3. A imagem e excluida na mesma operacao, tenha a verificacao sido bem-sucedida
-   ou nao. Nenhum funcionario a visualiza, e nao existe interface capaz de
-   exibi-la.
+3. Em seguida, a imagem e movida para um armazenamento restrito, acessivel
+   apenas pelo servidor, que nenhum usuario e nenhuma interface do app pode
+   acessar. Ela e mantida enquanto sua conta existir, para que fraudes (por
+   exemplo, um documento falsificado ou reutilizado) possam ser investigadas. Um
+   documento substituido e mantido por 30 dias e depois apagado. Para prevencao
+   de fraudes e seguranca da comunidade, os documentos de identidade sao
+   mantidos por ate 30 dias apos a exclusao da conta e depois apagados
+   permanentemente (por mais tempo somente enquanto uma investigacao de fraude
+   ou golpe em andamento exigir).
 
 O QUE MANTEMOS
 
@@ -321,8 +329,10 @@ Apenas o necessario para sustentar a decisao:
 - O resultado, a pontuacao de confianca automatica e - se um membro da equipe
   revisou um caso limitrofe - o identificador desse revisor
 
-NAO mantemos: a imagem, seu nome como impresso no documento, o numero do
-documento em forma legivel, sua nacionalidade ou a data de validade do documento.
+NAO armazenamos no seu perfil: a imagem, seu nome como impresso no documento, o
+numero do documento em forma legivel, sua nacionalidade ou a data de validade do
+documento. A imagem em si fica guardada apenas no armazenamento restrito
+descrito acima.
 
 ONDE E PROCESSADO
 
@@ -586,8 +596,12 @@ f) Dados de Analise
    - Registros de uso individual: 2 anos
 
 g) Dados de Verificacao de Idade e Identidade
-   - Imagens de documentos: NAO RETIDAS. Excluidas durante a mesma operacao que
-     as le, normalmente poucos segundos apos o envio.
+   - Imagens de documentos: em um armazenamento restrito, acessivel apenas pelo
+     servidor, enquanto a conta existir; um documento substituido e mantido por
+     30 dias. Para prevencao de fraudes e seguranca da comunidade, os documentos
+     de identidade sao mantidos por ate 30 dias apos a exclusao da conta e
+     depois apagados permanentemente (salvo se uma investigacao de fraude em
+     andamento exigir sua retencao).
    - Data de nascimento extraida, resultado da correspondencia, hash do numero do
      documento e resultado: durante a existencia da conta. Excluidos com a conta.
 

@@ -41,6 +41,47 @@ enum PaymentLinkType {
       .firstWhere((t) => t.name == v, orElse: () => PaymentLinkType.other);
 }
 
+/// Fixed cancellation policies (refund the GUEST gets from the HOST — GreenGo
+/// never handles the money):
+///  - flexible: 100% until 24 h before; 0% after.
+///  - moderate (default): 100% until 7 days before, 50% until 24 h, 0% after.
+///  - strict: 100% until 7 days before; 0% after.
+/// Universal rules on top (shown to guests): host cancels → 100%; cancelling
+/// within 24 h of booking when the experience is > 48 h away → 100%; host
+/// no-show / not as described → report within 24 h.
+enum CancellationPolicy {
+  flexible,
+  moderate,
+  strict;
+
+  static const CancellationPolicy fallback = CancellationPolicy.moderate;
+
+  /// The enum for a stored value, or null when it is not one (legacy free
+  /// text from before the fixed policies).
+  static CancellationPolicy? tryWire(Object? v) {
+    for (final p in CancellationPolicy.values) {
+      if (p.name == v) return p;
+    }
+    return null;
+  }
+}
+
+/// How a guest may pay the host (always OUTSIDE GreenGo):
+///  - cash: in cash, to the host, at the meeting;
+///  - link: online via the host's [PaymentLink] (PIX / PayPal / ...).
+/// Paid experiences accept at least one; free ones none.
+enum PaymentMethod {
+  cash,
+  link;
+
+  static PaymentMethod? tryWire(Object? v) {
+    for (final m in PaymentMethod.values) {
+      if (m.name == v) return m;
+    }
+    return null;
+  }
+}
+
 class PaymentLink extends Equatable {
   const PaymentLink({required this.type, required this.value});
 
@@ -90,8 +131,11 @@ class UserExperience extends Equatable {
     this.currency,
     this.isFree = false,
     this.paymentLink,
+    this.paymentMethods = const {},
     this.availability,
-    this.cancellationPolicy,
+    this.cancellationPolicy = CancellationPolicy.moderate,
+    this.cancellationNotes,
+    this.requestToBook = false,
     this.status = ExperienceStatus.draft,
     this.createdAt,
     this.updatedAt,
@@ -103,6 +147,8 @@ class UserExperience extends Equatable {
     this.viewCount = 0,
     this.searchKeywords = const [],
     this.moderationReason,
+    this.isFeatured = false,
+    this.featuredUntil,
   });
 
   final String id;
@@ -139,8 +185,32 @@ class UserExperience extends Equatable {
   final bool isFree;
   final PaymentLink? paymentLink;
 
+  /// Accepted payment methods (empty for free experiences). Legacy docs
+  /// without the field read as {link} when they carry a payment link.
+  final Set<PaymentMethod> paymentMethods;
+
+  bool get acceptsCash => !isFree && paymentMethods.contains(PaymentMethod.cash);
+  bool get acceptsLink =>
+      paymentLink != null &&
+      (isFree || paymentMethods.contains(PaymentMethod.link));
+
+  /// Guests can be shown a Book / Pay action.
+  bool get isBookable => acceptsCash || acceptsLink;
+
+  /// The listing takes money (paid, or carries a payment link) — needs an
+  /// APPROVED host ID to be published (mirrors functions safety.ts).
+  bool get takesPayment => !isFree || paymentLink != null;
+
   final String? availability;
-  final String? cancellationPolicy;
+  final CancellationPolicy cancellationPolicy;
+
+  /// Optional host notes on the policy (≤ 300). Legacy docs' free-text policy
+  /// is shown here (with the policy defaulting to moderate).
+  final String? cancellationNotes;
+
+  /// Bookings: true = the host accepts / declines each request; false =
+  /// instant booking (functions/src/experience_bookings snapshots it).
+  final bool requestToBook;
 
   final ExperienceStatus status;
   final DateTime? createdAt;
@@ -160,6 +230,15 @@ class UserExperience extends Equatable {
   /// Set by the server when the listing was hidden for violating standards.
   final String? moderationReason;
 
+  /// Server-owned (admin `setExperienceFeatured`; never client-writable):
+  /// promoted in Explore "Top experiences" while [featuredUntil] is ahead.
+  final bool isFeatured;
+  final DateTime? featuredUntil;
+
+  /// Featured right now: [isFeatured] and [featuredUntil] not yet passed.
+  bool isCurrentlyFeaturedAt(DateTime now) =>
+      isFeatured && featuredUntil != null && featuredUntil!.isAfter(now);
+
   bool get isPublished => status == ExperienceStatus.published;
   bool get isHidden => status == ExperienceStatus.hidden;
   bool get hasCoordinates => lat != null && lng != null;
@@ -175,8 +254,57 @@ class UserExperience extends Equatable {
         ...photoUrls.where((u) => u.isNotEmpty && u != mainPhotoUrl),
       ];
 
+  /// The same listing made free ("Publish as free"): no price, no methods.
+  UserExperience asFree() => UserExperience(
+        id: id,
+        hostId: hostId,
+        hostName: hostName,
+        hostPhotoUrl: hostPhotoUrl,
+        title: title,
+        description: description,
+        category: category,
+        mainPhotoUrl: mainPhotoUrl,
+        photoUrls: photoUrls,
+        included: included,
+        notIncluded: notIncluded,
+        locationName: locationName,
+        city: city,
+        country: country,
+        lat: lat,
+        lng: lng,
+        geohash: geohash,
+        meetingPoint: meetingPoint,
+        durationMinutes: durationMinutes,
+        languages: languages,
+        minGroupSize: minGroupSize,
+        maxGroupSize: maxGroupSize,
+        price: 0,
+        currency: null,
+        isFree: true,
+        paymentLink: null,
+        paymentMethods: const {},
+        availability: availability,
+        cancellationPolicy: cancellationPolicy,
+        cancellationNotes: cancellationNotes,
+        requestToBook: requestToBook,
+        status: status,
+        createdAt: createdAt,
+        updatedAt: updatedAt,
+        ratingSum: ratingSum,
+        ratingCount: ratingCount,
+        ratingAvg: ratingAvg,
+        ratingDist: ratingDist,
+        reviewCount: reviewCount,
+        viewCount: viewCount,
+        searchKeywords: searchKeywords,
+        moderationReason: moderationReason,
+        isFeatured: isFeatured,
+        featuredUntil: featuredUntil,
+      );
+
   UserExperience copyWith({
     ExperienceStatus? status,
+    bool? requestToBook,
     int? ratingSum,
     int? ratingCount,
     double? ratingAvg,
@@ -210,8 +338,11 @@ class UserExperience extends Equatable {
         currency: currency,
         isFree: isFree,
         paymentLink: paymentLink,
+        paymentMethods: paymentMethods,
         availability: availability,
         cancellationPolicy: cancellationPolicy,
+        cancellationNotes: cancellationNotes,
+        requestToBook: requestToBook ?? this.requestToBook,
         status: status ?? this.status,
         createdAt: createdAt,
         updatedAt: updatedAt,
@@ -223,6 +354,8 @@ class UserExperience extends Equatable {
         viewCount: viewCount,
         searchKeywords: searchKeywords,
         moderationReason: moderationReason,
+        isFeatured: isFeatured,
+        featuredUntil: featuredUntil,
       );
 
   @override
@@ -253,8 +386,11 @@ class UserExperience extends Equatable {
         currency,
         isFree,
         paymentLink,
+        paymentMethods,
         availability,
         cancellationPolicy,
+        cancellationNotes,
+        requestToBook,
         status,
         createdAt,
         updatedAt,
@@ -266,5 +402,7 @@ class UserExperience extends Equatable {
         viewCount,
         searchKeywords,
         moderationReason,
+        isFeatured,
+        featuredUntil,
       ];
 }

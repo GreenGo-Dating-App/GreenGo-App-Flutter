@@ -4181,6 +4181,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get exploreFeaturedAttractions => 'Empfohlene Attraktionen';
 
   @override
+  String get exploreTopExperiences => 'Top-Erlebnisse';
+
+  @override
   String get exploreMyNextEvents => 'Meine nächsten Events';
 
   @override
@@ -14028,7 +14031,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get ageVerifyPrivacyNote =>
-      'Wir lesen nur das Geburtsdatum und löschen das Foto sofort. Das Bild wird nie gespeichert.';
+      'Wir lesen das Geburtsdatum automatisch aus. Das Foto wird zur Betrugsprävention in einem geschützten, nur serverseitigen Speicher aufbewahrt (nie in Ihrem Profil angezeigt) und spätestens 30 Tage nach der Löschung Ihres Kontos gelöscht.';
 
   @override
   String get ageVerifyTakePhoto => 'Ausweis fotografieren';
@@ -14954,4 +14957,931 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get uexpAddExperience => 'Erlebnis hinzufügen';
+
+  @override
+  String get uexpNewHost => 'Neuer Gastgeber';
+
+  @override
+  String uexpHostRatings(int count, String countText) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countText Bewertungen',
+      one: '$countText Bewertung',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get verifiedBadgeLabel => 'Verifiziert';
+
+  @override
+  String get verifiedBadgeTooltip => 'Ausweis von GreenGo verifiziert';
+
+  @override
+  String get idDocumentRetentionNotice =>
+      'Zur Betrugsprävention und zur Sicherheit der Community werden Ausweisdokumente bis zu 30 Tage nach der Kontolöschung aufbewahrt und danach endgültig gelöscht.';
+
+  @override
+  String get uexpErrContactInfo =>
+      'Entferne Telefonnummern, E-Mail-Adressen, @Handles und Zahlungsdaten: Gäste zahlen nur über die Zahlungsarten deines Angebots.';
+
+  @override
+  String get uexpErrPaymentMethods => 'Wähle mindestens eine Zahlungsart';
+
+  @override
+  String get uexpPaymentLinkDetails => 'Online-Zahlungslink';
+
+  @override
+  String get uexpMethodCash => 'Bar beim Treffen';
+
+  @override
+  String get uexpMethodLink => 'Online-Link (PIX/PayPal/…)';
+
+  @override
+  String get uexpBook => 'Buchen';
+
+  @override
+  String get uexpBookedCash =>
+      'Notiert. Bezahle den Gastgeber beim Treffen in bar.';
+
+  @override
+  String get uexpIdDocTitle => 'Ausweisdokument erforderlich';
+
+  @override
+  String get uexpIdDocGuestBody =>
+      'Damit GreenGo sicher bleibt, lade bitte ein Ausweisdokument hoch, bevor du einen Gastgeber bezahlst.';
+
+  @override
+  String get uexpIdDocHostBody =>
+      'Gastgeber müssen ein Ausweisdokument hochladen, bevor sie ein Erlebnis erstellen.';
+
+  @override
+  String get uexpIdDocUpload => 'Dokument hochladen';
+
+  @override
+  String get uexpPaidPendingTitle => 'Ausweisprüfung läuft';
+
+  @override
+  String get uexpPaidPendingBody =>
+      'Bezahlte Erlebnisse brauchen ein bestätigtes Ausweisdokument. Deines wird noch geprüft: Speichere dieses Erlebnis vorerst als Entwurf oder veröffentliche es kostenlos.';
+
+  @override
+  String get uexpPaidMissingBody =>
+      'Bezahlte Erlebnisse brauchen ein bestätigtes Ausweisdokument. Lade eines hoch (oder ein neues, falls es abgelehnt wurde), oder speichere dieses Erlebnis vorerst als Entwurf oder veröffentliche es kostenlos.';
+
+  @override
+  String get uexpNewHostLimitTitle => 'Limit für neue Gastgeber';
+
+  @override
+  String get uexpNewHostLimitBody =>
+      'Bis du 3 Bewertungen hast, kannst du ein bezahltes Erlebnis veröffentlicht haben. Speichere dieses als Entwurf oder veröffentliche es kostenlos.';
+
+  @override
+  String get uexpPublishAsFree => 'Kostenlos veröffentlichen';
+
+  @override
+  String get uexpHostBanned => 'Dein Konto kann keine Erlebnisse anbieten.';
+
+  @override
+  String get hostAgreementTitle => 'Gastgebervereinbarung';
+
+  @override
+  String get hostAgreementIntro =>
+      'Bevor du dein erstes Erlebnis veröffentlichst, lies und akzeptiere bitte diese Regeln.';
+
+  @override
+  String get hostAgreementClause1 =>
+      'Du organisierst und leitest dieses Erlebnis und bist für das Erlebnis und die Sicherheit deiner Gäste verantwortlich.';
+
+  @override
+  String get hostAgreementClause2 =>
+      'Beschreibe es korrekt: Titel, Fotos, Preis, Dauer, Leistungen und Treffpunkt müssen stimmen und aktuell sein.';
+
+  @override
+  String get hostAgreementClause3 =>
+      'Halte dich an das Gesetz: Du besitzt alle Lizenzen, Genehmigungen, Versicherungen oder Anmeldungen, die deine Tätigkeit vor Ort erfordert, und gibst deine Einnahmen wie vorgeschrieben an.';
+
+  @override
+  String get hostAgreementClause4 =>
+      'Erstatte Gästen gemäß der gewählten Stornierungsrichtlinie und immer vollständig, wenn du absagst.';
+
+  @override
+  String get hostAgreementClause5 =>
+      'Bitte Gäste nie, außerhalb der in deinem Angebot angezeigten Zahlungsarten zu zahlen, und schreibe keine Telefonnummern, E-Mail-Adressen oder Zahlungs-Handles in den Angebotstext.';
+
+  @override
+  String get hostAgreementClause6 =>
+      'Behandle Gäste respektvoll: keine Diskriminierung, keine Belästigung, keine unsicheren Situationen.';
+
+  @override
+  String get hostAgreementClause7 =>
+      'GreenGo kann Angebote ausblenden oder entfernen und Konten sperren, die gegen diese Regeln verstoßen oder glaubwürdig gemeldet werden.';
+
+  @override
+  String get hostAgreementCheckbox =>
+      'Ich habe die Gastgebervereinbarung gelesen und akzeptiere sie';
+
+  @override
+  String get hostAgreementAccept => 'Akzeptieren und fortfahren';
+
+  @override
+  String get uexpConsentTitle => 'Bevor du zahlst';
+
+  @override
+  String get uexpConsentBodyLink =>
+      'Du bezahlst den Gastgeber direkt. GreenGo wickelt diese Zahlung nicht ab, garantiert sie nicht und kann sie nicht erstatten. Nutze bevorzugt geschützte Zahlungsarten (PayPal Waren & Dienstleistungen, Kreditkarte). Zahle nie außerhalb des hier angezeigten Links.';
+
+  @override
+  String get uexpConsentBodyCash =>
+      'Du bezahlst den Gastgeber beim Treffen in bar. GreenGo wickelt diese Zahlung nicht ab, garantiert sie nicht und kann sie nicht erstatten. Zähle das Geld, verlange bei Bedarf eine Quittung und zahle nie im Voraus außerhalb der hier aufgeführten Zahlungsarten.';
+
+  @override
+  String get uexpConsentPickMethod => 'Wie möchtest du zahlen?';
+
+  @override
+  String uexpConsentPolicy(String policy) {
+    return 'Stornierungsrichtlinie: $policy';
+  }
+
+  @override
+  String get uexpConsentUnderstand => 'Ich habe verstanden';
+
+  @override
+  String get uexpConsentContinue => 'Weiter';
+
+  @override
+  String get uexpGuidePix =>
+      'PIX: Wenn du Opfer eines Betrugs wirst, bitte deine Bank sofort, einen MED-Antrag (Mecanismo Especial de Devolução) zu stellen.';
+
+  @override
+  String get uexpGuidePaypal =>
+      'PayPal: Wähle „Waren & Dienstleistungen“, nie „Freunde & Familie“, damit der Käuferschutz gilt.';
+
+  @override
+  String get uexpGuideVenmo =>
+      'Venmo: Nutze den Käuferschutz (Waren und Dienstleistungen), wenn verfügbar.';
+
+  @override
+  String get uexpGuideCard =>
+      'Kartenzahlungen können bei deinem Kartenaussteller angefochten werden.';
+
+  @override
+  String get uexpGuideCash =>
+      'Zahle erst beim Treffen mit dem Gastgeber, zählt das Geld gemeinsam und verlange bei Bedarf eine Quittung.';
+
+  @override
+  String get uexpPolicyFlexible => 'Flexibel';
+
+  @override
+  String get uexpPolicyModerate => 'Moderat';
+
+  @override
+  String get uexpPolicyStrict => 'Streng';
+
+  @override
+  String get uexpPolicyFlexibleDesc =>
+      'Volle Erstattung bis 24 Std. vor Beginn, danach keine Erstattung.';
+
+  @override
+  String get uexpPolicyModerateDesc =>
+      'Volle Erstattung bis 7 Tage vorher, 50 % bis 24 Std. vorher, danach keine Erstattung.';
+
+  @override
+  String get uexpPolicyStrictDesc =>
+      'Volle Erstattung bis 7 Tage vorher, danach keine Erstattung.';
+
+  @override
+  String get uexpPolicyWhen => 'Bei Stornierung';
+
+  @override
+  String get uexpPolicyRefund => 'Erstattung';
+
+  @override
+  String get uexpPolicyMoreThan7d => 'Mehr als 7 Tage vorher';
+
+  @override
+  String get uexpPolicy7dTo24h => 'Zwischen 7 Tagen und 24 Std. vorher';
+
+  @override
+  String get uexpPolicyMoreThan24h => 'Mehr als 24 Std. vorher';
+
+  @override
+  String get uexpPolicyLess24h => 'Weniger als 24 Std. vorher';
+
+  @override
+  String get uexpPolicyLess7d => 'Weniger als 7 Tage vorher';
+
+  @override
+  String get uexpPolicyAlwaysTitle => 'Gilt immer';
+
+  @override
+  String get uexpRuleHostCancels => 'Der Gastgeber sagt ab: 100 % Erstattung.';
+
+  @override
+  String get uexpRuleGrace =>
+      'Du stornierst innerhalb von 24 Std. nach der Buchung und das Erlebnis ist mehr als 48 Std. entfernt: 100 % Erstattung.';
+
+  @override
+  String get uexpRuleReport =>
+      'Gastgeber nicht erschienen oder nicht wie beschrieben: Melde es innerhalb von 24 Std.';
+
+  @override
+  String get uexpPolicyNotes => 'Hinweise zu deiner Richtlinie (optional)';
+
+  @override
+  String get uexpPolicyHostNotes => 'Hinweise des Gastgebers';
+
+  @override
+  String get uexpReportScamTitle => 'Dieses Erlebnis melden';
+
+  @override
+  String get uexpReasonScam => 'Betrug';
+
+  @override
+  String get uexpReasonOffPlatform => 'Zahlung außerhalb der App verlangt';
+
+  @override
+  String get uexpReasonMisleading => 'Nicht wie beschrieben';
+
+  @override
+  String get uexpReasonNoShow => 'Gastgeber ist nicht erschienen';
+
+  @override
+  String get uexpReasonInappropriate => 'Unangemessen';
+
+  @override
+  String get uexpReasonOther => 'Sonstiges';
+
+  @override
+  String get uexpReportDetailsHint => 'Was ist passiert? (optional)';
+
+  @override
+  String get uexpReportSend => 'Meldung senden';
+
+  @override
+  String get bkStatusRequested => 'Angefragt';
+
+  @override
+  String get bkStatusConfirmed => 'Bestätigt';
+
+  @override
+  String get bkStatusDeclined => 'Abgelehnt';
+
+  @override
+  String get bkStatusExpired => 'Abgelaufen';
+
+  @override
+  String get bkStatusCancelledGuest => 'Vom Gast storniert';
+
+  @override
+  String get bkStatusCancelledHost => 'Vom Gastgeber storniert';
+
+  @override
+  String get bkStatusCompleted => 'Abgeschlossen';
+
+  @override
+  String get bkStatusNoShow => 'Nicht erschienen';
+
+  @override
+  String get bkStatusDisputed => 'Problem gemeldet';
+
+  @override
+  String get bkStatusResolved => 'Geklärt';
+
+  @override
+  String get bkStatusUnknown => 'Unbekannt';
+
+  @override
+  String get bkRequestToBook => 'Buchung anfragen';
+
+  @override
+  String get bkChooseDate => 'Datum wählen';
+
+  @override
+  String get bkNoDates => 'Noch keine Termine verfügbar.';
+
+  @override
+  String bkDatesAvailable(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Termine verfügbar',
+      one: '1 Termin verfügbar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkSeatsLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Plätze frei',
+      one: '1 Platz frei',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bkFull => 'Ausgebucht';
+
+  @override
+  String get bkGuests => 'Gäste';
+
+  @override
+  String bkGuestsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Gäste',
+      one: '1 Gast',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkMaxGuests(int max) {
+    return 'Bis zu $max an diesem Termin';
+  }
+
+  @override
+  String get bkSummary => 'Übersicht';
+
+  @override
+  String get bkRequestInfo =>
+      'Der Gastgeber hat bis zu 48 Std., um deine Anfrage anzunehmen. Vorher wird nichts bezahlt.';
+
+  @override
+  String get bkInstantInfo => 'Sofortbuchung: sofort bestätigt.';
+
+  @override
+  String get bkConfirmBooking => 'Buchung bestätigen';
+
+  @override
+  String get bkSendRequest => 'Anfrage senden';
+
+  @override
+  String get bkRetry => 'Erneut versuchen';
+
+  @override
+  String get bkResultConfirmedTitle => 'Du hast gebucht!';
+
+  @override
+  String get bkResultConfirmedBody =>
+      'Zeige dem Gastgeber beim Treffen deinen Check-in-Code. Du findest ihn unter Meine Buchungen.';
+
+  @override
+  String get bkResultRequestTitle => 'Anfrage gesendet';
+
+  @override
+  String get bkResultRequestBody =>
+      'Wir benachrichtigen dich, sobald der Gastgeber antwortet (innerhalb von 48 Std.).';
+
+  @override
+  String get bkViewBooking => 'Buchung ansehen';
+
+  @override
+  String get bkDone => 'Fertig';
+
+  @override
+  String get bkPayment => 'Zahlung';
+
+  @override
+  String get bkCashAtMeeting => 'Bezahle den Gastgeber beim Treffen in bar.';
+
+  @override
+  String get bkPayLinkHint =>
+      'Bezahle den Gastgeber über seinen Link und tippe dann in deiner Buchung auf \"Als bezahlt markieren\".';
+
+  @override
+  String get bkPayAfterAccept =>
+      'Du bezahlst über den Link des Gastgebers, sobald er deine Anfrage annimmt.';
+
+  @override
+  String get bkPayNow => 'Zahlungslink öffnen';
+
+  @override
+  String get bkCopyPixKey => 'PIX-Schlüssel kopieren';
+
+  @override
+  String get bkMyBookings => 'Meine Buchungen';
+
+  @override
+  String get bkHostBookings => 'Erhaltene Buchungen';
+
+  @override
+  String get bkUpcoming => 'Bevorstehend';
+
+  @override
+  String get bkPast => 'Vergangen';
+
+  @override
+  String get bkNoUpcoming => 'Keine bevorstehenden Buchungen.';
+
+  @override
+  String get bkNoPast => 'Keine vergangenen Buchungen.';
+
+  @override
+  String get bkBookings => 'Buchungen';
+
+  @override
+  String get bkViewBookings => 'Buchungen ansehen';
+
+  @override
+  String get bkDetailTitle => 'Buchung';
+
+  @override
+  String get bkNotFound => 'Diese Buchung ist nicht verfügbar.';
+
+  @override
+  String get bkExperienceGone => 'Dieses Erlebnis ist nicht mehr gelistet.';
+
+  @override
+  String get bkOpenExperience => 'Erlebnis öffnen';
+
+  @override
+  String get bkGuest => 'Gast';
+
+  @override
+  String get bkCheckedIn => 'Eingecheckt';
+
+  @override
+  String bkAnswerBefore(String date) {
+    return 'Antworte bis $date';
+  }
+
+  @override
+  String get bkWaitingForHost => 'Warten auf die Antwort des Gastgebers.';
+
+  @override
+  String get bkRequestTitle => 'Buchungsanfrage';
+
+  @override
+  String get bkRequestHostHint =>
+      'Sieh dir Profil und Bewertung des Gastes an und nimm an oder lehne ab. Unbeantwortete Anfragen verfallen nach 48 Std.';
+
+  @override
+  String get bkAccept => 'Annehmen';
+
+  @override
+  String get bkDecline => 'Ablehnen';
+
+  @override
+  String get bkDeclineConfirm => 'Diese Anfrage ablehnen?';
+
+  @override
+  String get bkDeclineBody =>
+      'Der Gast wird benachrichtigt und die Plätze werden freigegeben.';
+
+  @override
+  String get bkAccepted => 'Buchung angenommen';
+
+  @override
+  String get bkDeclined => 'Anfrage abgelehnt';
+
+  @override
+  String get bkCheckInTitle => 'Check-in';
+
+  @override
+  String get bkShowCode => 'Check-in-Code zeigen';
+
+  @override
+  String get bkCodeTitle => 'Dein Check-in-Code';
+
+  @override
+  String get bkCodeHint =>
+      'Zeige diesen QR-Code dem Gastgeber beim Treffen. Er kann den Code auch eintippen.';
+
+  @override
+  String get bkCheckInGuest => 'Gast einchecken';
+
+  @override
+  String get bkScanQr => 'QR-Code scannen';
+
+  @override
+  String get bkTypeCode => 'Code eingeben';
+
+  @override
+  String get bkCodeLabel => 'Check-in-Code';
+
+  @override
+  String get bkScanInstructions =>
+      'Richte die Kamera auf den QR-Code des Gastes';
+
+  @override
+  String get bkWrongBooking =>
+      'Dieser QR-Code gehört zu einer anderen Buchung.';
+
+  @override
+  String get bkTorch => 'Blitz';
+
+  @override
+  String get bkSwitchCamera => 'Kamera wechseln';
+
+  @override
+  String get bkCashReceivedQuestion => 'Hast du auch die Barzahlung erhalten?';
+
+  @override
+  String get bkCashYes => 'Ja, erhalten';
+
+  @override
+  String get bkCashNo => 'Noch nicht';
+
+  @override
+  String get bkCheckedInSnack => 'Gast eingecheckt';
+
+  @override
+  String get bkMarkNoShow => 'Als nicht erschienen markieren';
+
+  @override
+  String get bkNoShowConfirm =>
+      'Den Gast als nicht erschienen markieren? Es ist keine Erstattung fällig; er kann bis 24 Std. nach dem Ende widersprechen.';
+
+  @override
+  String get bkNoShowMarked => 'Als nicht erschienen markiert';
+
+  @override
+  String get bkNotPaidYet => 'Noch nicht als bezahlt markiert.';
+
+  @override
+  String get bkYouMarkedPaid =>
+      'Du hast als bezahlt markiert. Warten auf die Bestätigung des Gastgebers.';
+
+  @override
+  String get bkGuestSaysPaid =>
+      'Der Gast gibt an, bezahlt zu haben. Bestätige, sobald du es erhalten hast.';
+
+  @override
+  String get bkPaymentConfirmed => 'Zahlung vom Gastgeber bestätigt.';
+
+  @override
+  String get bkCashConfirmed => 'Bargeld erhalten (vom Gastgeber bestätigt).';
+
+  @override
+  String get bkMarkPaid => 'Als bezahlt markieren';
+
+  @override
+  String get bkConfirmPayment => 'Zahlung erhalten';
+
+  @override
+  String get bkCashReceived => 'Bargeld erhalten';
+
+  @override
+  String get bkPaidMarked => 'Als bezahlt markiert';
+
+  @override
+  String get bkPaymentConfirmedSnack => 'Zahlung bestätigt';
+
+  @override
+  String get bkRefundTitle => 'Erstattung';
+
+  @override
+  String bkRefundOwed(String percent, String amount) {
+    return 'Der Gastgeber schuldet dir $percent zurück ($amount).';
+  }
+
+  @override
+  String get bkRefundNone =>
+      'Laut Stornobedingungen ist keine Erstattung fällig.';
+
+  @override
+  String get bkRefundCashUnpaid =>
+      'Keine Erstattung fällig: Das Bargeld wurde nie bezahlt.';
+
+  @override
+  String get bkRefundOffPlatform =>
+      'GreenGo wickelt kein Geld ab: Der Gastgeber erstattet direkt, auf dem Weg, auf dem du bezahlt hast.';
+
+  @override
+  String bkIfCancelNow(String percent, String amount) {
+    return 'Wenn du jetzt stornierst: $percent zurück ($amount).';
+  }
+
+  @override
+  String get bkIfCancelNowNothing =>
+      'Wenn du jetzt stornierst, ist keine Erstattung fällig.';
+
+  @override
+  String get bkIfCancelNowCash =>
+      'Bar wird beim Treffen bezahlt, eine Stornierung kostet jetzt also nichts.';
+
+  @override
+  String get bkIfCancelNowFree =>
+      'Kostenloses Erlebnis: Du kannst kostenlos stornieren.';
+
+  @override
+  String get bkCancelRequestNoCharge =>
+      'Der Gastgeber hat noch nicht angenommen: Die Anfrage zu stornieren kostet nichts.';
+
+  @override
+  String get bkHostCancelWarning =>
+      'Du stornierst: Dem Gast stehen 100 % zu, und es zählt als Gastgeber-Stornierung (3 in 90 Tagen prüft GreenGo).';
+
+  @override
+  String get bkCancelBooking => 'Buchung stornieren';
+
+  @override
+  String get bkCancelConfirmTitle => 'Diese Buchung stornieren?';
+
+  @override
+  String get bkCancelReasonHint => 'Grund (optional)';
+
+  @override
+  String get bkKeepBooking => 'Buchung behalten';
+
+  @override
+  String get bkCancelled => 'Buchung storniert';
+
+  @override
+  String get bkReportProblem => 'Problem melden';
+
+  @override
+  String get bkDisputeIntro =>
+      'Gastgeber nicht erschienen oder Erlebnis nicht wie beschrieben? Melde es bis 24 Std. nach dem Ende, unser Team prüft es.';
+
+  @override
+  String get bkDisputeHint => 'Was ist passiert? (mindestens 10 Zeichen)';
+
+  @override
+  String get bkSendReport => 'Meldung senden';
+
+  @override
+  String get bkDisputeSent =>
+      'Danke. Unser Team prüft es und meldet sich bei euch beiden.';
+
+  @override
+  String get bkDisputeOpen =>
+      'Ein Problem wurde gemeldet. Unser Team prüft es.';
+
+  @override
+  String bkDisputeResolved(String percent) {
+    return 'Von GreenGo geprüft: $percent Erstattung fällig.';
+  }
+
+  @override
+  String get bkReviewGuest => 'Gast bewerten';
+
+  @override
+  String get bkReviewGuestIntro =>
+      'Hilf anderen Gastgebern: Wie war es mit diesem Gast? Beide Bewertungen bleiben verborgen, bis dein Gast ebenfalls bewertet oder 14 Tage vergehen.';
+
+  @override
+  String get bkReviewGuestHint =>
+      'Pünktlich, respektvoll, unterhaltsam? (optional)';
+
+  @override
+  String get bkGuestReviewSaved =>
+      'Danke! Die Bewertungen werden sichtbar, wenn dein Gast ebenfalls bewertet hat, oder in 14 Tagen.';
+
+  @override
+  String get bkGuestReviewed => 'Deine Bewertung dieses Gastes';
+
+  @override
+  String get bkGuestReviewHeld =>
+      'Verborgen, bis dein Gast ebenfalls bewertet oder 14 Tage vergehen.';
+
+  @override
+  String get bkReviewExperience => 'Erlebnis bewerten';
+
+  @override
+  String get bkReviewExperienceHint =>
+      'Erzähle, wie es war: Deine Bewertung hilft anderen Reisenden.';
+
+  @override
+  String get bkReviewHeld =>
+      'Deine Bewertung wird veröffentlicht, wenn der Gastgeber dich ebenfalls bewertet hat, oder in 14 Tagen.';
+
+  @override
+  String get bkReviewNeedsBooking =>
+      'Nur Gäste, die über eine Buchung teilgenommen haben, können dieses Erlebnis bewerten.';
+
+  @override
+  String get bkNewGuest => 'Neuer Gast';
+
+  @override
+  String get bkDatesTitle => 'Termine & Verfügbarkeit';
+
+  @override
+  String get bkAddDate => 'Termin hinzufügen';
+
+  @override
+  String get bkEditDate => 'Termin bearbeiten';
+
+  @override
+  String get bkDeleteDate => 'Termin löschen';
+
+  @override
+  String get bkCancelDate => 'Termin absagen';
+
+  @override
+  String get bkKeepDate => 'Termin behalten';
+
+  @override
+  String get bkCancelDateTitle => 'Diesen Termin absagen?';
+
+  @override
+  String bkCancelDateBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Alle $count gebuchten Plätze an diesem Termin werden storniert, jedem Gast stehen 100 % Erstattung zu.',
+      one:
+          'Die Buchung an diesem Termin wird storniert, dem Gast stehen 100 % Erstattung zu.',
+    );
+    return '$_temp0 Das zählt als Gastgeber-Stornierung.';
+  }
+
+  @override
+  String get bkDateSaved => 'Termin gespeichert';
+
+  @override
+  String get bkDateDeleted => 'Termin gelöscht';
+
+  @override
+  String bkDateCancelled(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Termin abgesagt: $count Buchungen storniert',
+      one: 'Termin abgesagt: 1 Buchung storniert',
+      zero: 'Termin abgesagt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bkNoDatesHost =>
+      'Keine bevorstehenden Termine. Füge die Termine hinzu, die Gäste buchen können.';
+
+  @override
+  String get bkRequestToBookToggle => 'Buchung auf Anfrage';
+
+  @override
+  String get bkRequestToBookDesc =>
+      'Du nimmst jede Buchung an oder lehnst sie ab (innerhalb von 48 Std.). Aus: Gäste buchen sofort.';
+
+  @override
+  String get bkDatesAfterSave =>
+      'Speichere zuerst das Erlebnis und füge dann unter Meine Erlebnisse die Termine hinzu.';
+
+  @override
+  String get bkDate => 'Datum';
+
+  @override
+  String get bkStartTime => 'Beginn';
+
+  @override
+  String get bkEndTime => 'Ende';
+
+  @override
+  String get bkCapacity => 'Plätze';
+
+  @override
+  String bkBookedOf(int booked, int capacity) {
+    return '$booked/$capacity gebucht';
+  }
+
+  @override
+  String get bkSlotCancelled => 'Abgesagt';
+
+  @override
+  String get bkTimesFrozen =>
+      'An diesem Termin sind Gäste gebucht: Nur die Anzahl der Plätze kann geändert werden. Zum Verschieben den Termin absagen.';
+
+  @override
+  String get bkSlotSaveFailed =>
+      'Termin konnte nicht gespeichert werden. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String get bkSlotErrPast => 'Wähle einen Beginn in der Zukunft.';
+
+  @override
+  String get bkSlotErrEnd => 'Das Ende muss nach dem Beginn liegen.';
+
+  @override
+  String get bkSlotErrTooLong => 'Ein Termin darf höchstens 24 Std. dauern.';
+
+  @override
+  String get bkSlotErrTooFar =>
+      'Termine können höchstens ein Jahr im Voraus liegen.';
+
+  @override
+  String bkSlotErrCapacity(int max) {
+    return 'Plätze: 1 bis $max.';
+  }
+
+  @override
+  String bkSlotErrBelowBooked(int count) {
+    return 'Bereits $count Plätze gebucht: Behalte mindestens so viele.';
+  }
+
+  @override
+  String bkErrSlotFull(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nur noch $count Plätze an diesem Termin.',
+      one: 'Nur noch 1 Platz an diesem Termin.',
+      zero: 'Dieser Termin ist ausgebucht.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bkErrAlreadyBooked =>
+      'Du hast für diesen Termin bereits eine Buchung.';
+
+  @override
+  String get bkErrIdRequired => 'Lade ein Ausweisdokument hoch, um zu buchen.';
+
+  @override
+  String get bkErrHostNotVerified =>
+      'Dieser Gastgeber kann noch keine bezahlten Buchungen annehmen (Identität nicht verifiziert).';
+
+  @override
+  String get bkErrPaymentMethodRequired => 'Wähle, wie du bezahlst.';
+
+  @override
+  String get bkErrPaymentMethodNotAccepted =>
+      'Der Gastgeber akzeptiert diese Zahlungsart nicht mehr. Wähle eine andere.';
+
+  @override
+  String get bkErrOwnExperience =>
+      'Du kannst dein eigenes Erlebnis nicht buchen.';
+
+  @override
+  String get bkErrNotAvailable =>
+      'Dieses Erlebnis ist für dich nicht verfügbar.';
+
+  @override
+  String get bkErrSlotStarted => 'Dieser Termin hat bereits begonnen.';
+
+  @override
+  String get bkErrSlotClosed => 'Dieser Termin ist nicht mehr verfügbar.';
+
+  @override
+  String get bkErrNotBookable =>
+      'Dieses Erlebnis kann gerade nicht gebucht werden.';
+
+  @override
+  String get bkErrPriceInvalid =>
+      'Der Preis dieses Angebots ist unvollständig. Bitte den Gastgeber, ihn zu aktualisieren.';
+
+  @override
+  String get bkErrHostUnavailable =>
+      'Der Gastgeber nimmt gerade keine Buchungen an.';
+
+  @override
+  String get bkErrConsentRequired =>
+      'Bitte akzeptiere zuerst die Buchungsbedingungen.';
+
+  @override
+  String bkErrTooManyGuests(int max) {
+    return 'Höchstens $max Gäste pro Buchung.';
+  }
+
+  @override
+  String get bkErrAccountRestricted =>
+      'Dein Konto kann gerade keine Buchungen vornehmen.';
+
+  @override
+  String get bkErrNetwork =>
+      'Verbindungsproblem. Versuche es erneut: Du wirst nicht doppelt gebucht.';
+
+  @override
+  String get bkErrRequestExpired => 'Diese Anfrage ist abgelaufen.';
+
+  @override
+  String get bkErrStateChanged =>
+      'Diese Buchung hat sich inzwischen geändert. Zum Aktualisieren nach unten ziehen.';
+
+  @override
+  String get bkErrInvalidCode =>
+      'Dieser Check-in-Code ist für diese Buchung nicht gültig.';
+
+  @override
+  String get bkErrOutsideCheckIn =>
+      'Der Check-in öffnet 2 Std. vor Beginn und schließt 12 Std. nach dem Ende.';
+
+  @override
+  String get bkErrTooEarlyNoShow =>
+      'Du kannst ab 30 Min. nach Beginn „nicht erschienen“ markieren.';
+
+  @override
+  String get bkErrGuestCheckedIn => 'Der Gast ist bereits eingecheckt.';
+
+  @override
+  String get bkErrCashBeforeMeeting =>
+      'Bargeld kann bestätigt werden, sobald du den Gast triffst.';
+
+  @override
+  String get bkErrOutsideDispute =>
+      'Probleme können ab Beginn bis 24 Std. nach dem Ende gemeldet werden.';
+
+  @override
+  String bkErrReasonRequired(int min) {
+    return 'Beschreibe das Problem (mindestens $min Zeichen).';
+  }
 }

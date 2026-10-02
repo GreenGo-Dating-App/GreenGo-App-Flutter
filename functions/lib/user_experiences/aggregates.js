@@ -17,6 +17,11 @@ exports.computeAggregateDelta = computeAggregateDelta;
 exports.isZeroDelta = isZeroDelta;
 exports.applyAggregateDelta = applyAggregateDelta;
 exports.aggregateFromReviews = aggregateFromReviews;
+exports.hostDeltaFromAggregateDelta = hostDeltaFromAggregateDelta;
+exports.experienceHostContribution = experienceHostContribution;
+exports.negateHostDelta = negateHostDelta;
+exports.isZeroHostDelta = isZeroHostDelta;
+exports.applyHostRatingDelta = applyHostRatingDelta;
 const STARS = ['1', '2', '3', '4', '5'];
 /** Integer rating 1..5, or null for anything else. */
 function validRating(v) {
@@ -94,5 +99,38 @@ function aggregateFromReviews(reviews) {
     for (const r of reviews)
         agg = applyAggregateDelta(agg, computeAggregateDelta(null, r));
     return agg;
+}
+/** The part of a review delta that moves the host totals. */
+function hostDeltaFromAggregateDelta(d) {
+    return { sum: d.sum, count: d.count };
+}
+/** What one experience currently contributes to its host's totals. */
+function experienceHostContribution(experience) {
+    const e = experience !== null && experience !== void 0 ? experience : {};
+    const count = Math.max(0, Math.trunc(num(e.ratingCount)));
+    const sum = count === 0 ? 0 : Math.max(0, num(e.ratingSum));
+    return { sum, count };
+}
+function negateHostDelta(d) {
+    return { sum: d.sum === 0 ? 0 : -d.sum, count: d.count === 0 ? 0 : -d.count };
+}
+function isZeroHostDelta(d) {
+    return d.sum === 0 && d.count === 0;
+}
+/**
+ * Applies [delta] to the host's current totals (profile fields). Clamped at 0
+ * so a drifted total never shows a negative count or average.
+ */
+function applyHostRatingDelta(profile, delta) {
+    const p = profile !== null && profile !== void 0 ? profile : {};
+    const hostRatingCount = Math.max(0, num(p.hostRatingCount) + delta.count);
+    const hostRatingSum = hostRatingCount === 0
+        ? 0
+        : Math.max(0, num(p.hostRatingSum) + delta.sum);
+    return {
+        hostRatingSum,
+        hostRatingCount,
+        hostRatingAvg: hostRatingCount === 0 ? 0 : round2(hostRatingSum / hostRatingCount),
+    };
 }
 //# sourceMappingURL=aggregates.js.map

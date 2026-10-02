@@ -203,6 +203,9 @@ import '../../features/passport/data/services/passport_service.dart';
 import '../../features/saved_searches/data/saved_searches_service.dart';
 import '../services/pronunciation_service.dart';
 import '../services/visual_vocabulary_service.dart';
+import '../../features/experience_bookings/data/datasources/bookings_remote_datasource.dart';
+import '../../features/experience_bookings/data/repositories/bookings_repository_impl.dart';
+import '../../features/experience_bookings/domain/repositories/bookings_repository.dart';
 import '../../features/user_experiences/data/datasources/user_experiences_remote_datasource.dart';
 import '../../features/user_experiences/data/repositories/user_experiences_repository_impl.dart';
 import '../../features/user_experiences/domain/repositories/user_experiences_repository.dart';
@@ -891,6 +894,11 @@ Future<void> init() async {
     () => UserExperiencesRepositoryImpl(
       remote: UserExperiencesRemoteDataSource(),
     ),
+  );
+
+  //! Features - Experience bookings (slots, bookings, check-in, guest reviews)
+  sl.registerLazySingleton<BookingsRepository>(
+    () => BookingsRepositoryImpl(remote: BookingsRemoteDataSource()),
   );
 
   //! External

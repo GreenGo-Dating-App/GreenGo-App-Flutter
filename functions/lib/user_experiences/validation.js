@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.LIMITS = exports.PAYMENT_TYPES = exports.CATEGORIES = exports.EXPERIENCE_LIMITS = void 0;
+exports.LIMITS = exports.PAYMENT_METHODS = exports.PAYMENT_TYPES = exports.CATEGORIES = exports.EXPERIENCE_LIMITS = void 0;
 exports.maxExperiencesFor = maxExperiencesFor;
 exports.canCreateExperience = canCreateExperience;
+exports.paymentMethodsFrom = paymentMethodsFrom;
 exports.buildSearchKeywords = buildSearchKeywords;
 exports.validateExperiencePayload = validateExperiencePayload;
+const safety_1 = require("./safety");
 exports.EXPERIENCE_LIMITS = {
     FREE: 1,
     SILVER: 5,
@@ -30,6 +32,19 @@ exports.CATEGORIES = [
     'workshopsClasses', 'other',
 ];
 exports.PAYMENT_TYPES = ['pix', 'paypal', 'venmo', 'stripe', 'other'];
+/** How guests pay the host (outside GreenGo): cash at the meeting, or the link. */
+exports.PAYMENT_METHODS = ['cash', 'link'];
+/**
+ * Payment methods of a payload. Missing field (older clients) = ['link'] for
+ * paid listings (they always required a link). Unknown values are dropped.
+ */
+function paymentMethodsFrom(v, isFree) {
+    if (isFree)
+        return [];
+    if (!Array.isArray(v))
+        return ['link'];
+    return exports.PAYMENT_METHODS.filter((m) => v.includes(m));
+}
 exports.LIMITS = {
     titleMin: 5,
     titleMax: 80,
@@ -153,11 +168,17 @@ function validateExperiencePayload(p) {
     if (price === null || price < 0 || price > exports.LIMITS.priceMax)
         errors.push('price');
     const currency = optStr(d.currency, 8);
+    // Paid: at least one method (cash at the meeting and/or the online link);
+    // the link is required only when 'link' is a method. Free: none.
+    const paymentMethods = paymentMethodsFrom(d.paymentMethods, isFree);
+    if (!isFree && paymentMethods.length === 0)
+        errors.push('paymentMethods');
+    const wantsLink = paymentMethods.includes('link');
     let paymentLink = null;
     const pl = (d.paymentLink && typeof d.paymentLink === 'object')
         ? d.paymentLink
         : null;
-    if (pl) {
+    if (pl && wantsLink) {
         const type = str(pl.type);
         const value = str(pl.value);
         const typeOk = exports.PAYMENT_TYPES.includes(type);
@@ -165,16 +186,15 @@ function validateExperiencePayload(p) {
             (type === 'pix' || isHttpUrl(value));
         if (typeOk && valueOk)
             paymentLink = { type, value };
-        else if (!isFree)
+        else
             errors.push('paymentLink');
     }
-    if (!isFree && !paymentLink && !errors.includes('paymentLink'))
+    if (wantsLink && !paymentLink && !errors.includes('paymentLink'))
         errors.push('paymentLink');
     const status = str(d.status) === 'published' ? 'published' : 'draft';
     const city = optStr(d.city, 120);
     const country = optStr(d.country, 120);
-    const data = {
-        title,
+    const data = Object.assign(Object.assign({ title,
         description,
         category,
         mainPhotoUrl,
@@ -183,26 +203,13 @@ function validateExperiencePayload(p) {
         notIncluded,
         locationName,
         city,
-        country,
-        lat: hasCoords ? lat : null,
-        lng: hasCoords ? lng : null,
-        geohash: hasCoords && /^[0-9b-hjkmnp-z]{1,12}$/.test(geohash) ? geohash : null,
-        meetingPoint: optStr(d.meetingPoint, exports.LIMITS.shortTextMax),
-        durationMinutes,
-        languages,
-        minGroupSize: minRaw,
-        maxGroupSize,
-        price: price !== null && price !== void 0 ? price : 0,
-        currency: isFree ? null : currency,
-        isFree,
-        paymentLink,
-        availability: optStr(d.availability, exports.LIMITS.shortTextMax),
-        cancellationPolicy: optStr(d.cancellationPolicy, exports.LIMITS.shortTextMax),
-        status,
-        hostName: optStr(d.hostName, 120),
-        hostPhotoUrl: optStr(d.hostPhotoUrl, 1000),
-        searchKeywords: buildSearchKeywords([title, city, country, category, locationName]),
-    };
+        country, lat: hasCoords ? lat : null, lng: hasCoords ? lng : null, geohash: hasCoords && /^[0-9b-hjkmnp-z]{1,12}$/.test(geohash) ? geohash : null, meetingPoint: optStr(d.meetingPoint, exports.LIMITS.shortTextMax), durationMinutes,
+        languages, minGroupSize: minRaw, maxGroupSize, price: price !== null && price !== void 0 ? price : 0, currency: isFree ? null : currency, isFree,
+        paymentMethods,
+        paymentLink, availability: optStr(d.availability, exports.LIMITS.shortTextMax), 
+        // Bookings: true = the host accepts / declines each booking request
+        // (experience_bookings snapshots it on every booking).
+        requestToBook: d.requestToBook === true }, (0, safety_1.normalizeCancellation)(d)), { status, hostName: optStr(d.hostName, 120), hostPhotoUrl: optStr(d.hostPhotoUrl, 1000), searchKeywords: buildSearchKeywords([title, city, country, category, locationName]) });
     return { ok: errors.length === 0, errors, data };
 }
 //# sourceMappingURL=validation.js.map

@@ -20,6 +20,13 @@
  *   Every document keyed by the user's own id, and every Storage prefix
  *   scoped to them.
  *
+ * WHAT IS RETAINED (DRAFT — lawyer review, LGPD legitimate interest /
+ * GDPR Art. 6(1)(f))
+ *   Identity documents (`id_documents/{uid}/…`): moved to `retention/{uid}/…`
+ *   and kept 30 days for fraud prevention, then erased by
+ *   purgeRetainedIdDocuments (safety/idDocumentRetention.ts). The
+ *   `id_documents/{uid}` prefix is deliberately NOT in USER_STORAGE_PREFIXES.
+ *
  * WHAT IS ANONYMISED INSTEAD
  *   Messages already delivered to another person. Deleting those would edit
  *   somebody else's conversation history, which is neither required nor
@@ -65,6 +72,7 @@ exports.onUserDeletedCleanup = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const utils_1 = require("../shared/utils");
+const idDocumentRetention_1 = require("../safety/idDocumentRetention");
 /** Top-level collections whose document id IS the user id. */
 const USER_KEYED_COLLECTIONS = [
     'profiles',
@@ -198,6 +206,14 @@ exports.onUserDeletedCleanup = functions
             report.failures.push(`anonymise ${collection}.${field}`);
             (0, utils_1.logError)(`onUserDeletedCleanup: anonymise ${collection} failed`, e);
         }
+    }
+    // 4a. Identity documents: retained 30 days (fraud prevention), not deleted.
+    try {
+        report.files += await (0, idDocumentRetention_1.retainIdDocumentsOnAccountDeletion)(uid);
+    }
+    catch (e) {
+        report.failures.push(`id_documents/${uid}`);
+        (0, utils_1.logError)(`onUserDeletedCleanup: ID document retention for ${uid} failed`, e);
     }
     // 4. Storage.
     const bucket = admin.storage().bucket();

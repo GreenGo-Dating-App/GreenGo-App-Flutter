@@ -194,9 +194,11 @@ We may collect and process the following sensitive personal data with your expli
 - Biometric data (for identity verification only)
 - Identity document data (for age verification only - see Section 2.6)
 
-We do not retain the images used for identity or age verification. Facial
-verification and age verification are processed, and the source image is then
-deleted; only the derived result is kept. See Sections 2.6 and 8.1(g).
+Identity document images used for age verification are kept in a restricted,
+server-only store for fraud prevention (see Sections 2.6 and 8.1(g)). For fraud
+prevention and the safety of the community, identity documents are kept for up
+to 30 days after account deletion and then permanently erased. Facial
+verification is processed and only the derived result is kept.
 
 You have the right to withdraw consent for processing sensitive data at any time.
 Withdrawing consent for age verification removes your verified status and, with
@@ -292,15 +294,19 @@ b) When you wish to PUBLISH content in a Community. Reading and joining
 
 WHAT HAPPENS TO YOUR DOCUMENT
 
-This is designed to hold your document for seconds, not days:
+Your document is handled as follows:
 
 1. You upload a photograph of an identity document to a storage location that
    is write-only. It cannot be read back - not by you, not by our staff.
 2. Our systems read the document automatically using optical character
    recognition, to extract the date of birth.
-3. The image is deleted in the same operation, whether verification succeeds or
-   fails. No employee views it, and there is no interface capable of displaying
-   it.
+3. The image is then moved to a restricted, server-only store that no user and
+   no app interface can access. It is kept while your account exists, so that
+   fraud (for example a forged or reused document) can be investigated. A
+   document you replace is kept for 30 days and then erased. For fraud
+   prevention and the safety of the community, identity documents are kept for
+   up to 30 days after account deletion and then permanently erased (longer only
+   while an active fraud or scam investigation requires it).
 
 WHAT WE KEEP
 
@@ -314,8 +320,10 @@ Only what is needed to support the decision:
 - The outcome, the automatic confidence score, and - if a member of staff
   reviewed a borderline case - the identifier of that reviewer
 
-We do NOT keep: the image, your name as printed on the document, the document
-number in readable form, your nationality, or the document expiry date.
+We do NOT store on your profile: the image, your name as printed on the
+document, the document number in readable form, your nationality, or the
+document expiry date. The image itself is kept only in the restricted store
+described above.
 
 WHERE IT IS PROCESSED
 
@@ -577,8 +585,11 @@ f) Analytics Data
    - Individual usage logs: 2 years
 
 g) Age and Identity Verification Data
-   - Document images: NOT RETAINED. Deleted during the same operation that
-     reads them, typically within seconds of upload.
+   - Document images: kept in a restricted, server-only store while the account
+     exists; a replaced document is kept for 30 days. For fraud prevention and
+     the safety of the community, identity documents are kept for up to 30 days
+     after account deletion and then permanently erased (unless an active fraud
+     investigation requires a hold).
    - Extracted date of birth, match result, document-number hash and outcome:
      duration of the account. Deleted when the account is deleted.
 

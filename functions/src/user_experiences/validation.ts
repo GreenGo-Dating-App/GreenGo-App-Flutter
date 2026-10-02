@@ -8,6 +8,7 @@
  * published + hidden).
  */
 import type { EffectiveTier } from '../shared/effectiveTier';
+import { normalizeCancellation } from './safety';
 
 export const EXPERIENCE_LIMITS: Record<EffectiveTier, number | null> = {
   FREE: 1,
@@ -41,6 +42,19 @@ export const CATEGORIES = [
 ] as const;
 
 export const PAYMENT_TYPES = ['pix', 'paypal', 'venmo', 'stripe', 'other'] as const;
+
+/** How guests pay the host (outside GreenGo): cash at the meeting, or the link. */
+export const PAYMENT_METHODS = ['cash', 'link'] as const;
+
+/**
+ * Payment methods of a payload. Missing field (older clients) = ['link'] for
+ * paid listings (they always required a link). Unknown values are dropped.
+ */
+export function paymentMethodsFrom(v: unknown, isFree: boolean): string[] {
+  if (isFree) return [];
+  if (!Array.isArray(v)) return ['link'];
+  return (PAYMENT_METHODS as readonly string[]).filter((m) => v.includes(m));
+}
 
 export const LIMITS = {
   titleMin: 5,
@@ -179,20 +193,25 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
   if (price === null || price < 0 || price > LIMITS.priceMax) errors.push('price');
   const currency = optStr(d.currency, 8);
 
+  // Paid: at least one method (cash at the meeting and/or the online link);
+  // the link is required only when 'link' is a method. Free: none.
+  const paymentMethods = paymentMethodsFrom(d.paymentMethods, isFree);
+  if (!isFree && paymentMethods.length === 0) errors.push('paymentMethods');
+  const wantsLink = paymentMethods.includes('link');
   let paymentLink: Record<string, string> | null = null;
   const pl = (d.paymentLink && typeof d.paymentLink === 'object')
     ? (d.paymentLink as Record<string, unknown>)
     : null;
-  if (pl) {
+  if (pl && wantsLink) {
     const type = str(pl.type);
     const value = str(pl.value);
     const typeOk = (PAYMENT_TYPES as readonly string[]).includes(type);
     const valueOk = value.length > 0 && value.length <= LIMITS.paymentValueMax &&
       (type === 'pix' || isHttpUrl(value));
     if (typeOk && valueOk) paymentLink = { type, value };
-    else if (!isFree) errors.push('paymentLink');
+    else errors.push('paymentLink');
   }
-  if (!isFree && !paymentLink && !errors.includes('paymentLink')) errors.push('paymentLink');
+  if (wantsLink && !paymentLink && !errors.includes('paymentLink')) errors.push('paymentLink');
 
   const status = str(d.status) === 'published' ? 'published' : 'draft';
   const city = optStr(d.city, 120);
@@ -220,9 +239,15 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     price: price ?? 0,
     currency: isFree ? null : currency,
     isFree,
+    paymentMethods,
     paymentLink,
     availability: optStr(d.availability, LIMITS.shortTextMax),
-    cancellationPolicy: optStr(d.cancellationPolicy, LIMITS.shortTextMax),
+    // Bookings: true = the host accepts / declines each booking request
+    // (experience_bookings snapshots it on every booking).
+    requestToBook: d.requestToBook === true,
+    // Fixed policy (flexible | moderate | strict, default moderate) + notes;
+    // legacy free text becomes moderate + notes.
+    ...normalizeCancellation(d),
     status,
     hostName: optStr(d.hostName, 120),
     hostPhotoUrl: optStr(d.hostPhotoUrl, 1000),

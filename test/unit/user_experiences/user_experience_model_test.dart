@@ -31,8 +31,10 @@ UserExperience _sample() => UserExperience(
       currency: r'R$',
       paymentLink: const PaymentLink(
           type: PaymentLinkType.pix, value: 'host@example.com'),
+      paymentMethods: const {PaymentMethod.cash, PaymentMethod.link},
       availability: 'Saturdays 10:00',
-      cancellationPolicy: 'Free up to 24h before',
+      cancellationPolicy: CancellationPolicy.strict,
+      cancellationNotes: 'Free up to 24h before',
       status: ExperienceStatus.published,
       createdAt: DateTime.fromMillisecondsSinceEpoch(1700000000000),
       updatedAt: DateTime.fromMillisecondsSinceEpoch(1700000500000),
@@ -122,6 +124,22 @@ void main() {
       expect(p['price'], 0);
       expect(p['currency'], isNull);
       expect(p['status'], 'draft');
+    });
+
+    test('legacy free-text cancellation policy reads as moderate + notes', () {
+      final e = UserExperienceModel.fromMap('x', {
+        'cancellationPolicy': 'Full refund 48h before',
+      });
+      expect(e.cancellationPolicy, CancellationPolicy.moderate);
+      expect(e.cancellationNotes, 'Full refund 48h before');
+      final n = UserExperienceModel.fromMap('y', {
+        'cancellationPolicy': 'flexible',
+        'cancellationNotes': 'Rain = full refund',
+      });
+      expect(n.cancellationPolicy, CancellationPolicy.flexible);
+      expect(n.cancellationNotes, 'Rain = full refund');
+      expect(UserExperienceModel.fromMap('z', {}).cancellationPolicy,
+          CancellationPolicy.moderate);
     });
 
     test('PIX keys are copied, URLs opened', () {

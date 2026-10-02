@@ -10,14 +10,24 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/widgets/translatable_text.dart';
+import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../experience_bookings/domain/entities/booking.dart';
+import '../../../experience_bookings/domain/repositories/bookings_repository.dart';
+import '../../../experience_bookings/presentation/screens/book_experience_screen.dart';
+import '../../../experience_bookings/presentation/screens/bookings_list_screen.dart';
+import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
 import '../bloc/experience_detail_bloc.dart';
 import '../bloc/experience_reviews_bloc.dart';
 import '../experience_l10n.dart';
+import '../experience_safety_flow.dart';
+import '../widgets/booking_consent_dialog.dart';
+import '../widgets/experience_policy_widgets.dart';
 import '../widgets/experience_reviews_section.dart';
 import '../widgets/experience_widgets.dart';
+import '../widgets/report_experience_sheet.dart';
 import 'experience_editor_screen.dart';
 
 /// What the detail screen reports back to the list that opened it.
@@ -70,13 +80,15 @@ class ExperienceDetailScreen extends StatelessWidget {
                 experienceId: experienceId, uid: currentUserId)),
         ),
       ],
-      child: _DetailView(currentUserId: currentUserId),
+      child: _DetailView(
+          experienceId: experienceId, currentUserId: currentUserId),
     );
   }
 }
 
 class _DetailView extends StatefulWidget {
-  const _DetailView({required this.currentUserId});
+  const _DetailView({required this.experienceId, required this.currentUserId});
+  final String experienceId;
   final String currentUserId;
 
   @override
@@ -89,6 +101,61 @@ class _DetailViewState extends State<_DetailView> {
   Timer? _refresh;
   UserExperience? _edited;
 
+  /// Upcoming open dates, full ones included (null = loading / failed).
+  /// Any date → "Book" opens the booking flow (full dates shown disabled),
+  /// never the dateless direct pay.
+  List<ExperienceSlot>? _slots;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSlots();
+  }
+
+  Future<void> _loadSlots() async {
+    final r = await di.sl<BookingsRepository>().slots(widget.experienceId);
+    if (!mounted) return;
+    r.fold((_) {}, (list) {
+      final now = DateTime.now();
+      setState(() =>
+          _slots = list.where((x) => x.isOpen && x.start.isAfter(now)).toList());
+    });
+  }
+
+  bool get _hasSlots => _slots?.isNotEmpty ?? false;
+
+  /// Book a date (bookings) — or, for a listing without dates, the earlier
+  /// direct pay flow.
+  Future<void> _book(UserExperience e) async {
+    if (!_hasSlots) return _pay(e);
+    await Navigator.of(context).push(BookExperienceScreen.route(
+        experience: e, currentUserId: widget.currentUserId));
+    if (mounted) _loadSlots();
+  }
+
+  Future<void> _openDates(UserExperience e) async {
+    final updated = await Navigator.of(context).push(
+        ExperienceSlotsScreen.route(
+            experience: e, currentUserId: widget.currentUserId));
+    if (!mounted) return;
+    _loadSlots();
+    if (updated != null && updated.requestToBook != e.requestToBook) {
+      _edited = updated;
+      context
+          .read<ExperienceDetailBloc>()
+          .add(ExperienceDetailRequested(updated.id, initial: updated));
+    }
+  }
+
+  void _openBookings(UserExperience e) => Navigator.of(context).push(
+        BookingsListScreen.route(
+          role: BookingRole.host,
+          currentUserId: widget.currentUserId,
+          experienceId: e.id,
+          title: e.title,
+        ),
+      );
+
   @override
   void dispose() {
     _pageCtrl.dispose();
@@ -100,11 +167,40 @@ class _DetailViewState extends State<_DetailView> {
 
   void _pop(ExperienceDetailResult r) => Navigator.of(context).pop(r);
 
+  /// Pay / Book: ID document uploaded (asked for in place, then continues),
+  /// consent dialog (+ method choice), consent recorded, THEN the link opens
+  /// (or, for cash, the guest is told to pay at the meeting).
   Future<void> _pay(UserExperience e) async {
     final l = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    if (!e.isBookable) return;
+    if (!await ExperienceSafetyFlow.ensureIdDocument(
+        context, widget.currentUserId, IdDocPurpose.payAsGuest)) {
+      return;
+    }
+    if (!mounted) return;
+    final method = await BookingConsentDialog.show(context, e);
+    if (method == null || !mounted) return;
+    final saved = await di.sl<UserExperiencesRepository>().recordBookingConsent(
+          experienceId: e.id,
+          uid: widget.currentUserId,
+          policy: e.cancellationPolicy,
+          version: BookingConsentDialog.version,
+          method: method,
+        );
+    if (!mounted) return;
+    if (saved.isLeft()) {
+      messenger.showSnackBar(SnackBar(
+          content: Text(l.somethingWentWrong),
+          backgroundColor: AppColors.errorRed));
+      return;
+    }
+    if (method == PaymentMethod.cash) {
+      messenger.showSnackBar(SnackBar(content: Text(l.uexpBookedCash)));
+      return;
+    }
     final link = e.paymentLink;
     if (link == null) return;
-    final messenger = ScaffoldMessenger.of(context);
     if (!link.isOpenable) {
       // PIX key (or any non-URL value): copy it.
       await Clipboard.setData(ClipboardData(text: link.value));
@@ -140,30 +236,25 @@ class _DetailViewState extends State<_DetailView> {
     );
   }
 
+  /// "Report scam": reason chips + text → `reports` (3 distinct reporters
+  /// auto-hide the listing pending admin review).
   Future<void> _report() async {
-    final l = AppLocalizations.of(context)!;
     final bloc = context.read<ExperienceDetailBloc>();
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.backgroundCard,
-        title: Text(l.uexpReportTitle,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Text(l.uexpReportBody,
-            style: const TextStyle(color: AppColors.textSecondary)),
-        actions: [
-          TextButton(
-              onPressed: () => Navigator.pop(ctx, false),
-              child: Text(l.cancel)),
-          TextButton(
-            onPressed: () => Navigator.pop(ctx, true),
-            child: Text(l.uexpReport,
-                style: const TextStyle(color: AppColors.errorRed)),
-          ),
-        ],
-      ),
-    );
-    if (ok == true) bloc.add(ExperienceDetailReported(widget.currentUserId));
+    final input = await ReportExperienceSheet.show(context);
+    if (input == null) return;
+    bloc.add(ExperienceDetailReported(widget.currentUserId,
+        reason: input.reason.wire, details: input.details));
+  }
+
+  /// Publish through the server with the guided safety prompts.
+  Future<void> _publish(UserExperience e) async {
+    final bloc = context.read<ExperienceDetailBloc>();
+    final published =
+        await ExperienceSafetyFlow.publish(context, widget.currentUserId, e);
+    if (published != null && mounted) {
+      _edited = published;
+      bloc.add(ExperienceDetailReplaced(published));
+    }
   }
 
   Future<void> _delete() async {
@@ -291,6 +382,14 @@ class _DetailViewState extends State<_DetailView> {
                       ),
                       const SizedBox(height: 20),
                       _infoCard(e, l),
+                      if (!e.isFree) ...[
+                        const SizedBox(height: 20),
+                        CancellationPolicyCard(
+                          policy: e.cancellationPolicy,
+                          notes: e.cancellationNotes,
+                          targetLang: _lang,
+                        ),
+                      ],
                       const SizedBox(height: 20),
                       _itemsSection(l.uexpIncluded, e.included, included: true),
                       if (e.notIncluded.isNotEmpty) ...[
@@ -338,9 +437,12 @@ class _DetailViewState extends State<_DetailView> {
               switch (v) {
                 case 'edit':
                   _edit(e);
+                case 'dates':
+                  _openDates(e);
+                case 'bookings':
+                  _openBookings(e);
                 case 'publish':
-                  bloc.add(const ExperienceDetailStatusChanged(
-                      ExperienceStatus.published));
+                  _publish(e);
                 case 'unpublish':
                   bloc.add(const ExperienceDetailStatusChanged(
                       ExperienceStatus.draft));
@@ -352,6 +454,14 @@ class _DetailViewState extends State<_DetailView> {
               PopupMenuItem(
                   value: 'edit',
                   child: Text(l.uexpEdit,
+                      style: const TextStyle(color: AppColors.textPrimary))),
+              PopupMenuItem(
+                  value: 'dates',
+                  child: Text(l.bkDatesTitle,
+                      style: const TextStyle(color: AppColors.textPrimary))),
+              PopupMenuItem(
+                  value: 'bookings',
+                  child: Text(l.bkBookings,
                       style: const TextStyle(color: AppColors.textPrimary))),
               if (e.status == ExperienceStatus.draft)
                 PopupMenuItem(
@@ -501,9 +611,13 @@ class _DetailViewState extends State<_DetailView> {
                 fallbackName: e.hostName,
                 fallbackPhoto: e.hostPhotoUrl,
                 radius: 18,
+                trailing: UserVerifiedBadge(
+                    uid: e.hostId, size: 16, showLabel: true),
                 onTap: () => openExperienceUserProfile(
                     context, e.hostId, widget.currentUserId),
               ),
+              const SizedBox(height: 6),
+              HostRatingBadge(hostId: e.hostId),
             ],
           ),
         ),
@@ -512,7 +626,11 @@ class _DetailViewState extends State<_DetailView> {
   }
 
   Widget _priceCard(UserExperience e, AppLocalizations l) {
-    final hasLink = e.paymentLink != null;
+    final isHost = e.hostId == widget.currentUserId;
+    // The host never books their own listing. With dates: the booking flow;
+    // without: the earlier direct pay / book (link or cash).
+    final canBook = !isHost && (_hasSlots || e.isBookable);
+    final hasLink = e.acceptsLink;
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -526,35 +644,44 @@ class _DetailViewState extends State<_DetailView> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(children: [
-            Expanded(
-              child: Text(ExperienceL10n.price(l, e),
+          ExperiencePriceBar(
+            priceText: ExperienceL10n.price(l, e),
+            // Cash only: "Book" (payment at the meeting); with a link:
+            // "Pay / Book".
+            payLabel: !canBook
+                ? null
+                : (_hasSlots
+                    ? (e.requestToBook ? l.bkRequestToBook : l.uexpBook)
+                    : (hasLink ? l.uexpPayBook : l.uexpBook)),
+            payIcon: _hasSlots || !hasLink
+                ? Icons.event_available
+                : (!e.paymentLink!.isOpenable
+                    ? Icons.copy_rounded
+                    : Icons.open_in_new),
+            onPay: () => _book(e),
+          ),
+          if (_slots != null && (!isHost || _hasSlots)) ...[
+            const SizedBox(height: 8),
+            Row(children: [
+              const Icon(Icons.calendar_month_outlined,
+                  size: 15, color: AppColors.richGold),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  _hasSlots
+                      ? l.bkDatesAvailable(_slots!
+                          .where((x) => x.isBookableAt(DateTime.now()))
+                          .length)
+                      : l.bkNoDates,
                   style: const TextStyle(
-                      color: AppColors.richGold,
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold)),
-            ),
-            if (hasLink)
-              ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.richGold,
-                  foregroundColor: AppColors.deepBlack,
+                      color: AppColors.textSecondary, fontSize: 12),
                 ),
-                onPressed: () => _pay(e),
-                icon: Icon(e.paymentLink!.isOpenable
-                    ? Icons.open_in_new
-                    : Icons.copy_rounded),
-                label: Text(l.uexpPayBook),
               ),
-          ]),
-          if (hasLink) ...[
-            const SizedBox(height: 6),
-            Text(
-              '${ExperienceL10n.paymentType(l, e.paymentLink!.type)}'
-              '${e.paymentLink!.isOpenable ? '' : ' · ${e.paymentLink!.value}'}',
-              style:
-                  const TextStyle(color: AppColors.textSecondary, fontSize: 12),
-            ),
+            ]),
+          ],
+          if (e.isBookable) ...[
+            const SizedBox(height: 10),
+            PaymentMethodsList(experience: e),
           ],
           if (hasLink || !e.isFree) ...[
             const SizedBox(height: 8),
@@ -634,9 +761,6 @@ class _DetailViewState extends State<_DetailView> {
         if (e.availability != null)
           row(Icons.event_available, l.uexpAvailabilityLabel,
               translated(e.availability!)),
-        if (e.cancellationPolicy != null)
-          row(Icons.policy_outlined, l.uexpCancellationLabel,
-              translated(e.cancellationPolicy!)),
       ]),
     );
   }

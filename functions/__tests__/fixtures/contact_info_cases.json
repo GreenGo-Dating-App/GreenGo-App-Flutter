@@ -1,0 +1,92 @@
+{
+  "_comment": "Shared by functions/__tests__/unit/experienceSafety.test.ts AND test/unit/user_experiences/contact_info_test.dart. Each case: text + the exact set of kinds both detectors must return.",
+  "cases": [
+    {
+      "text": "Lovely cooking class in Trastevere, 3 hours, max 8 people.",
+      "kinds": []
+    },
+    {
+      "text": "Price R$ 1.200,00 per group; starts 12/03/2026 at 10:30.",
+      "kinds": []
+    },
+    {
+      "text": "Meet at Via Roma 120, door 4B, 2nd floor.",
+      "kinds": []
+    },
+    {
+      "text": "Call me on +55 11 98765-4321 to book",
+      "kinds": [
+        "phone"
+      ]
+    },
+    {
+      "text": "ligue (11) 98765 4321",
+      "kinds": [
+        "phone"
+      ]
+    },
+    {
+      "text": "CPF 123.456.789-09",
+      "kinds": [
+        "phone"
+      ]
+    },
+    {
+      "text": "CNPJ 12.345.678/0001-90",
+      "kinds": [
+        "pix_key"
+      ]
+    },
+    {
+      "text": "key 123e4567-e89b-42d3-a456-426614174000",
+      "kinds": [
+        "phone",
+        "pix_key"
+      ]
+    },
+    {
+      "text": "write to maria.rossi@example.com",
+      "kinds": [
+        "email"
+      ]
+    },
+    {
+      "text": "follow me @maria_tours",
+      "kinds": [
+        "handle"
+      ]
+    },
+    {
+      "text": "Pay me on PayPal before we meet",
+      "kinds": [
+        "payment_phrase"
+      ]
+    },
+    {
+      "text": "manda mensagem no WhatsApp",
+      "kinds": [
+        "payment_phrase"
+      ]
+    },
+    {
+      "text": "Chave PIX no perfil",
+      "kinds": [
+        "payment_phrase"
+      ]
+    },
+    {
+      "text": "send to @paypal.me/maria",
+      "kinds": [
+        "handle",
+        "payment_phrase"
+      ]
+    },
+    {
+      "text": "wa.me/5511987654321",
+      "kinds": [
+        "phone",
+        "payment_phrase"
+      ]
+    }
+  ]
+}

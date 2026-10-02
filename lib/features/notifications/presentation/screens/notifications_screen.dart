@@ -18,6 +18,7 @@ import '../../../communities/presentation/bloc/communities_bloc.dart';
 import '../../../communities/presentation/screens/community_detail_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
+import '../../../experience_bookings/presentation/screens/booking_detail_screen.dart';
 import '../../../user_experiences/presentation/screens/experience_detail_screen.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -344,6 +345,18 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
           ),
         );
       }
+      return;
+    }
+
+    // Experience booking (booking_* / guest_review_*): the booking detail.
+    // Before the profile route: these carry the actor too.
+    final bookingId = pick(['bookingId']);
+    if ((action == 'booking' ||
+            action == 'guest_review' ||
+            action == 'admin_booking_dispute') &&
+        bookingId != null) {
+      Navigator.of(context).push(
+          BookingDetailScreen.route(bookingId: bookingId, currentUserId: userId));
       return;
     }
 
