@@ -42,6 +42,7 @@ import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../discovery/domain/entities/match.dart';
 import '../../../discovery/presentation/screens/match_detail_screen.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
+import '../../../gamification/domain/utils/week_key.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/data/datasources/album_access_datasource.dart';
 import '../../../profile/data/models/profile_model.dart';
@@ -2843,14 +2844,18 @@ class _ChatScreenState extends State<ChatScreen> {
       final userLevelRef = FirebaseFirestore.instance
           .collection('user_levels')
           .doc(userId);
-      final doc = await userLevelRef.get();
-      if (doc.exists) {
-        await userLevelRef.update({
+      // Transaction so the weekly leaderboard fields (weekKey/weeklyXP) move
+      // atomically with totalXP.
+      await FirebaseFirestore.instance.runTransaction((tx) async {
+        final doc = await tx.get(userLevelRef);
+        if (!doc.exists) return;
+        tx.update(userLevelRef, {
           'currentXP': FieldValue.increment(xp),
           'totalXP': FieldValue.increment(xp),
+          ...weeklyXpFields(doc.data(), xp),
           'lastUpdated': FieldValue.serverTimestamp(),
         });
-      }
+      });
       // Log XP transaction
       await FirebaseFirestore.instance.collection('xp_transactions').add({
         'userId': userId,

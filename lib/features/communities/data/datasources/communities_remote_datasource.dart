@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../domain/community_language.dart';
+import '../../domain/community_search_keywords.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
 import '../models/community_member_model.dart';
@@ -243,6 +245,23 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     int limit = 50,
     bool preferCache = false,
   }) async {
+    // Server-side keyword search first (first page only — it returns at most
+    // [_kSearchLimit] < page size, so the bloc never asks it for a page 2).
+    // Falls back to the legacy recent-page scan below when the query fails
+    // (index still building) or finds nothing (docs not backfilled yet).
+    if (searchQuery != null &&
+        searchQuery.trim().isNotEmpty &&
+        startAfterActivity == null &&
+        !preferCache) {
+      final hits = await _searchByKeywords(
+        searchQuery,
+        type: type,
+        language: language,
+        city: city,
+      );
+      if (hits.isNotEmpty) return hits;
+    }
+
     try {
       var query = _communitiesRef.where('isPublic', isEqualTo: true);
 
@@ -313,6 +332,63 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       debugPrint('Error getting communities: $e');
       rethrow;
     }
+  }
+
+  static const int _kSearchLimit = 20;
+
+  /// `isPublic == true && searchKeywords arrayContains <longest query word>`
+  /// ordered by memberCount desc, limit [_kSearchLimit]. Index:
+  /// communities (isPublic ASC, searchKeywords CONTAINS, memberCount DESC).
+  /// The remaining query words and the optional type/language/city filters
+  /// are checked client-side. Never throws: an empty list means "fall back".
+  Future<List<CommunityModel>> _searchByKeywords(
+    String searchQuery, {
+    CommunityType? type,
+    String? language,
+    String? city,
+  }) async {
+    final token = communitySearchQueryToken(searchQuery);
+    if (token == null) return const [];
+    try {
+      final snap = await _communitiesRef
+          .where('isPublic', isEqualTo: true)
+          .where(kCommunitySearchKeywordsField, arrayContains: token)
+          .orderBy('memberCount', descending: true)
+          .limit(_kSearchLimit)
+          .get();
+      final lc = city?.trim().toLowerCase();
+      return snap.docs
+          .map(CommunityModel.fromFirestore)
+          .where((c) => c.isPublic)
+          .where((c) => type == null || c.type == type)
+          .where((c) =>
+              language == null ||
+              language.isEmpty ||
+              c.languages.contains(language))
+          .where((c) =>
+              lc == null || lc.isEmpty || (c.city ?? '').toLowerCase() == lc)
+          .where((c) => communityMatchesSearchQuery(
+                query: searchQuery,
+                name: c.name,
+                city: c.city,
+                tags: c.tags,
+              ))
+          .toList();
+    } catch (e) {
+      debugPrint('Community keyword search failed, falling back: $e');
+      return const [];
+    }
+  }
+
+  /// [data] plus a fresh `searchKeywords` array derived from name/city/tags.
+  Map<String, dynamic> _withSearchKeywords(
+      Map<String, dynamic> data, CommunityModel community) {
+    return data
+      ..[kCommunitySearchKeywordsField] = buildCommunitySearchKeywords(
+        name: community.name,
+        city: community.city,
+        tags: community.tags,
+      );
   }
 
   @override
@@ -435,7 +511,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   @override
   Future<CommunityModel> createCommunity(CommunityModel community) async {
     try {
-      final docRef = await _communitiesRef.add(community.toFirestore());
+      final docRef = await _communitiesRef
+          .add(_withSearchKeywords(community.toFirestore(), community));
 
       // Add the CREATOR as the OWNER member. Without a member doc the creator
       // is invisible to membership-based reads ("My Communities" uses a
@@ -466,7 +543,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       // Strip server-maintained / denormalized fields so an owner edit (rules,
       // resources, sponsor, promo) never overwrites the join/leave counter or
       // the last-message denormalization.
-      final data = community.toFirestore()
+      // searchKeywords is recomputed from the (possibly renamed) name/city/tags.
+      final data = _withSearchKeywords(community.toFirestore(), community)
         ..remove('memberCount')
         ..remove('lastMessagePreview')
         ..remove('lastActivityAt');
@@ -729,34 +807,48 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         }
       }
 
-      // Fire the per-language queries + the popular fallback CONCURRENTLY
-      // (Future.wait) instead of sequentially — one wall-clock hop instead of
-      // up to 4 serial round-trips.
+      // Profile languages are mostly display names ("Portuguese (Brazil)")
+      // while communities store 2-letter codes ("pt"): normalise, dedupe and
+      // cap at 10 (the arrayContainsAny limit) so the language query can match.
+      final langCodes = normalizeCommunityLanguages(languages);
+
+      // Each branch degrades to empty on failure so one bad query (e.g. an
+      // index still building) never sinks the whole recommendation list. All
+      // run CONCURRENTLY — one wall-clock hop.
+      Future<List<QueryDocumentSnapshot<Object?>>> safe(
+              Future<QuerySnapshot<Object?>> f, String label) =>
+          f.then((s) => s.docs).catchError((Object e) {
+            debugPrint('Recommended $label query failed: $e');
+            return <QueryDocumentSnapshot<Object?>>[];
+          });
+
       final hasCity = city != null && city.trim().isNotEmpty;
-      final futures = <Future<QuerySnapshot<Object?>>>[
+      final public = _communitiesRef.where('isPublic', isEqualTo: true);
+      final futures = <Future<List<QueryDocumentSnapshot<Object?>>>>[
         // Communities in the viewer's own city first (index: isPublic, city,
         // lastActivityAt desc).
         if (hasCity)
-          _communitiesRef
-              .where('isPublic', isEqualTo: true)
-              .where('city', isEqualTo: city.trim())
-              .orderBy('lastActivityAt', descending: true)
-              .limit(10)
-              .get(),
-        for (final lang in languages.take(3))
-          _communitiesRef
-              .where('isPublic', isEqualTo: true)
-              .where('languages', arrayContains: lang)
-              .limit(10)
-              .get(),
-        _communitiesRef
-            .where('isPublic', isEqualTo: true)
-            .orderBy('memberCount', descending: true)
-            .limit(10)
-            .get(),
+          safe(
+              public
+                  .where('city', isEqualTo: city.trim())
+                  .orderBy('lastActivityAt', descending: true)
+                  .limit(10)
+                  .get(),
+              'city'),
+        // ONE query for all the viewer's languages (index: isPublic,
+        // languages CONTAINS) instead of one per language.
+        if (langCodes.isNotEmpty)
+          safe(
+              public
+                  .where('languages', arrayContainsAny: langCodes)
+                  .limit(15)
+                  .get(),
+              'language'),
+        safe(public.orderBy('memberCount', descending: true).limit(10).get(),
+            'popular'),
       ];
-      for (final snap in await Future.wait(futures)) {
-        addAll(snap.docs);
+      for (final docs in await Future.wait(futures)) {
+        addAll(docs);
       }
 
       // Note: already-joined communities are filtered out in the bloc using the
@@ -1168,7 +1260,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       ];
 
       for (final community in sampleCommunities) {
-        await _communitiesRef.add(community.toFirestore());
+        await _communitiesRef
+            .add(_withSearchKeywords(community.toFirestore(), community));
       }
 
       debugPrint('Seeded ${sampleCommunities.length} sample communities');

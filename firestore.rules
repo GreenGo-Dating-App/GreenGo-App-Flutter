@@ -422,7 +422,9 @@ service cloud.firestore {
     // ============================================================================
     match /user_levels/{userId} {
       allow read: if isSignedIn();
-      allow create, update: if isSignedIn();
+      // Only the owner (XP is granted to yourself; the Admin SDK bypasses
+      // rules). Any signed-in user used to be able to rewrite anyone's XP.
+      allow create, update: if isOwner(userId);
       allow delete: if false;
     }
 

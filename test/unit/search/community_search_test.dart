@@ -3,6 +3,9 @@ import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:greengo_chat/features/communities/data/datasources/communities_remote_datasource.dart';
+import 'package:greengo_chat/features/communities/data/models/community_model.dart';
+import 'package:greengo_chat/features/communities/domain/community_search_keywords.dart';
+import 'package:greengo_chat/features/communities/domain/entities/community.dart';
 
 /// Master Test Plan — Universal Search / Community tab.
 /// The screen's `_searchCommunities` delegates to
@@ -97,5 +100,99 @@ void main() {
     final result = await ds.getCommunities(searchQuery: '');
     expect(result.length, 2);
     expect(result.every((c) => c.isPublic), isTrue);
+  });
+
+  group('server-side keyword search (searchKeywords)', () {
+    Future<FakeFirebaseFirestore> seedMany() async {
+      final db = FakeFirebaseFirestore();
+      // 60 recently-active communities that do NOT match — the legacy scan
+      // (50 most recent, filtered client-side) can never reach the match.
+      for (var i = 0; i < 60; i++) {
+        final name = 'Recent Group $i';
+        await db.collection('communities').doc('recent_$i').set({
+          'name': name,
+          'description': 'filler',
+          'type': 'general',
+          'createdByUserId': 'system',
+          'createdByName': 'GreenGo',
+          'createdAt': Timestamp.fromDate(now),
+          'memberCount': 5,
+          'languages': const ['en'],
+          'tags': const <String>[],
+          'isPublic': true,
+          'lastActivityAt':
+              Timestamp.fromDate(now.subtract(Duration(minutes: i))),
+          'searchKeywords': buildCommunitySearchKeywords(name: name),
+        });
+      }
+      Future<void> addOld(String id, String name,
+          {bool isPublic = true, int members = 10, String? city}) async {
+        await db.collection('communities').doc(id).set({
+          'name': name,
+          'description': 'old one',
+          'type': 'general',
+          'createdByUserId': 'system',
+          'createdByName': 'GreenGo',
+          'createdAt': Timestamp.fromDate(DateTime(2024)),
+          'memberCount': members,
+          'languages': const ['pt'],
+          'tags': const <String>[],
+          'isPublic': isPublic,
+          'city': city,
+          'lastActivityAt': Timestamp.fromDate(DateTime(2024)),
+          'searchKeywords': buildCommunitySearchKeywords(name: name, city: city),
+        });
+      }
+
+      await addOld('c_cafe', 'Café Lisboa', members: 40, city: 'Lisbon');
+      await addOld('c_cafe2', 'Cafe Racers', members: 90);
+      await addOld('c_cafe_private', 'Café Secreto', isPublic: false);
+      return db;
+    }
+
+    test('finds an old community the 50-recent scan would miss', () async {
+      final ds = CommunitiesRemoteDataSourceImpl(firestore: await seedMany());
+      final result = await ds.getCommunities(searchQuery: 'lisb');
+      expect(result.map((c) => c.id), ['c_cafe']);
+    });
+
+    test('accent-insensitive prefix, ordered by memberCount, private excluded',
+        () async {
+      final ds = CommunitiesRemoteDataSourceImpl(firestore: await seedMany());
+      final result = await ds.getCommunities(searchQuery: 'CAFÉ');
+      expect(result.map((c) => c.id), ['c_cafe2', 'c_cafe']);
+    });
+
+    test('multi-word query is checked in full client-side', () async {
+      final ds = CommunitiesRemoteDataSourceImpl(firestore: await seedMany());
+      expect((await ds.getCommunities(searchQuery: 'cafe lisbon')).map((c) => c.id),
+          ['c_cafe']);
+      expect((await ds.getCommunities(searchQuery: 'cafe racers')).map((c) => c.id),
+          ['c_cafe2']);
+    });
+
+    test('create and update write searchKeywords', () async {
+      final db = FakeFirebaseFirestore();
+      final ds = CommunitiesRemoteDataSourceImpl(firestore: db);
+      final created = await ds.createCommunity(CommunityModel(
+        id: '',
+        name: 'Tea House',
+        description: 'd',
+        type: CommunityType.general,
+        createdByUserId: 'u1',
+        createdByName: 'U',
+        createdAt: now,
+        city: 'Kyoto',
+      ));
+      var doc = await db.collection('communities').doc(created.id).get();
+      expect(doc.data()!['searchKeywords'], containsAll(['t', 'tea', 'house', 'kyoto']));
+
+      await ds.updateCommunity(CommunityModel.fromEntity(
+          created.copyWith(name: 'Matcha Club')));
+      doc = await db.collection('communities').doc(created.id).get();
+      final kw = (doc.data()!['searchKeywords'] as List).cast<String>();
+      expect(kw, containsAll(['matcha', 'club', 'kyoto']));
+      expect(kw, isNot(contains('tea')));
+    });
   });
 }

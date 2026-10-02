@@ -10,6 +10,7 @@ import '../../domain/entities/achievement.dart';
 import '../../domain/entities/daily_challenge.dart';
 import '../../domain/entities/user_level.dart';
 import '../../domain/repositories/gamification_repository.dart';
+import '../../domain/utils/week_key.dart';
 import '../models/achievement_model.dart';
 import '../models/daily_challenge_model.dart';
 import '../models/user_level_model.dart';
@@ -440,7 +441,13 @@ class GamificationRemoteDataSourceImpl
 
       // merge: keep the leaderboard display fields (displayName, photoUrl)
       // written by getUserLevel; a plain set() wiped them on every grant.
-      transaction.set(docRef, updated.toMap(), SetOptions(merge: true));
+      // Weekly leaderboard bookkeeping (weekKey/weeklyXP) in the same write.
+      final levelMap = updated.toMap()
+        ..addAll(weeklyXpFields(
+          doc.exists ? doc.data() as Map<String, dynamic>? : null,
+          xpAmount,
+        ));
+      transaction.set(docRef, levelMap, SetOptions(merge: true));
 
       // Record XP transaction
       final xpTransaction = XPTransactionModel(
@@ -484,6 +491,24 @@ class GamificationRemoteDataSourceImpl
     required int limit, String? region,
     String? timePeriod,
   }) async {
+    // Weekly board: served by the per-user weekKey/weeklyXP fields every XP
+    // writer maintains (index user_levels(weekKey, weeklyXP DESC) and
+    // (weekKey, region, weeklyXP DESC)). Falls back to the legacy
+    // xp_transactions aggregation below if the query fails (index still
+    // building) or nobody has weekly fields yet (pre-deploy data).
+    if (timePeriod == 'week') {
+      try {
+        final weekly = await _getWeeklyLeaderboard(
+          type: type,
+          region: region,
+          limit: limit,
+        );
+        if (weekly.isNotEmpty) return weekly;
+      } catch (e) {
+        debugPrint('Leaderboard: weekly query failed, legacy fallback: $e');
+      }
+    }
+
     // If a time period is specified, aggregate XP from xp_transactions
     if (timePeriod != null) {
       try {
@@ -554,6 +579,53 @@ class GamificationRemoteDataSourceImpl
       entries.add(_entryFromLevelDoc(doc.id, data, rank++));
     }
 
+    return entries;
+  }
+
+  /// True weekly leaderboard: users whose `weekKey` is the current ISO week
+  /// (UTC), ranked by `weeklyXP`. One bounded indexed query + batched
+  /// exclusion reads.
+  Future<List<LeaderboardEntryModel>> _getWeeklyLeaderboard({
+    required LeaderboardType type,
+    required int limit,
+    String? region,
+  }) async {
+    final regionFilter =
+        type == LeaderboardType.regional && region != null && region.isNotEmpty
+            ? region
+            : null;
+    // Headroom for rows dropped by the exclusion filter.
+    final fetchLimit = limit + 20;
+
+    Query query = _userLevelsCollection
+        .where('weekKey', isEqualTo: currentIsoWeekKey());
+    if (regionFilter != null) {
+      query = query.where('region', isEqualTo: regionFilter);
+    }
+    final candidates = (await query
+            .orderBy('weeklyXP', descending: true)
+            .limit(fetchLimit)
+            .get()
+            .timeout(_readTimeout))
+        .docs;
+    if (candidates.isEmpty) return const [];
+
+    final excluded =
+        await _excludedFromLeaderboard(candidates.map((d) => d.id).toList());
+
+    final entries = <LeaderboardEntryModel>[];
+    var rank = 1;
+    for (final doc in candidates) {
+      if (entries.length >= limit) break;
+      if (excluded.contains(doc.id)) continue;
+      final data = doc.data() as Map<String, dynamic>? ?? const {};
+      entries.add(_entryFromLevelDoc(
+        doc.id,
+        data,
+        rank++,
+        xpOverride: (data['weeklyXP'] as num?)?.toInt() ?? 0, // week XP
+      ));
+    }
     return entries;
   }
 

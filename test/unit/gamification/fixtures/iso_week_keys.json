@@ -1,0 +1,20 @@
+{
+  "_comment": "Shared by test/unit/gamification/week_key_test.dart AND functions/__tests__/unit/weekKey.test.ts. Both isoWeekKey implementations must agree on every row. Instants are UTC (ISO-8601 with Z or offset).",
+  "cases": [
+    { "instant": "2026-10-01T12:00:00Z", "weekKey": "2026-W40", "note": "Thursday (today when written)" },
+    { "instant": "2026-10-04T23:59:59Z", "weekKey": "2026-W40", "note": "Sunday, last second of the week" },
+    { "instant": "2026-10-05T00:00:00Z", "weekKey": "2026-W41", "note": "Monday, first second of the next week" },
+    { "instant": "2026-12-28T00:00:00Z", "weekKey": "2026-W53", "note": "Monday of the 53rd week (2026 starts on a Thursday)" },
+    { "instant": "2026-12-31T23:59:59Z", "weekKey": "2026-W53", "note": "year boundary: Dec 31 (Thursday)" },
+    { "instant": "2027-01-01T00:00:00Z", "weekKey": "2026-W53", "note": "year boundary: Jan 1 (Friday) belongs to the previous ISO year" },
+    { "instant": "2027-01-03T23:59:59Z", "weekKey": "2026-W53", "note": "Sunday still in 2026-W53" },
+    { "instant": "2027-01-04T00:00:00Z", "weekKey": "2027-W01", "note": "Monday starts 2027-W01" },
+    { "instant": "2025-12-29T00:00:00Z", "weekKey": "2026-W01", "note": "Dec 29 belongs to the next ISO year" },
+    { "instant": "2026-01-01T00:00:00Z", "weekKey": "2026-W01", "note": "Jan 1 2026 (Thursday)" },
+    { "instant": "2024-12-30T08:00:00Z", "weekKey": "2025-W01", "note": "Monday Dec 30 2024" },
+    { "instant": "2021-01-03T12:00:00Z", "weekKey": "2020-W53", "note": "Sunday Jan 3 2021" },
+    { "instant": "2024-02-29T12:00:00Z", "weekKey": "2024-W09", "note": "leap day" },
+    { "instant": "2026-10-05T01:30:00+02:00", "weekKey": "2026-W40", "note": "local Monday 01:30 CEST is still Sunday 23:30 UTC" },
+    { "instant": "2026-10-04T20:00:00-05:00", "weekKey": "2026-W41", "note": "local Sunday 20:00 UTC-5 is already Monday 01:00 UTC" }
+  ]
+}

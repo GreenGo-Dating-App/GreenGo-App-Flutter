@@ -133,6 +133,9 @@ export {
   onCommunityEventChanged,
 } from './communities/eventFanout';
 
+// Communities — searchKeywords for server-side community search (onCreate fill).
+export { onCommunityCreatedSearchKeywords } from './communities/searchKeywords';
+
 // H3: debug/seed HTTP endpoints (backfillCommunityCreatorMembers, seedMockData,
 // removeMockData, diagLiveEvents, diagCommunityEvents) REMOVED — they were
 // guarded only by a committed static token (unauthenticated data-delete/spam).

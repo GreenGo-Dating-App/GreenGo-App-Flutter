@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import '../../features/gamification/domain/utils/week_key.dart';
 import 'vocabulary_service.dart';
 
 /// Service for tracking user vocabulary usage in chat messages
@@ -103,15 +104,18 @@ class VocabularyTrackingService {
   static Future<void> _awardVocabularyXp(String userId, int xp) async {
     try {
       final userLevelRef = _firestore.collection('user_levels').doc(userId);
-      final doc = await userLevelRef.get();
-
-      if (doc.exists) {
-        await userLevelRef.update({
+      // Transaction so the weekly leaderboard fields (weekKey/weeklyXP) move
+      // atomically with totalXP.
+      await _firestore.runTransaction((tx) async {
+        final doc = await tx.get(userLevelRef);
+        if (!doc.exists) return;
+        tx.update(userLevelRef, {
           'currentXP': FieldValue.increment(xp),
           'totalXP': FieldValue.increment(xp),
+          ...weeklyXpFields(doc.data(), xp),
           'lastUpdated': FieldValue.serverTimestamp(),
         });
-      }
+      });
 
       // Log XP transaction
       await _firestore.collection('xp_transactions').add({

@@ -17,6 +17,7 @@ import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../data/datasources/community_favorites_service.dart';
+import '../../domain/community_language.dart';
 import '../../domain/entities/community.dart';
 import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
@@ -225,7 +226,15 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
     // Load recommended based on profile languages. Always dispatch (don't gate
     // on ProfileBloc being loaded yet, which caused recommended to never load on
     // a cold start) — fall back to empty languages if the profile isn't ready.
-    final langs = profile?.preferredLanguages ?? const <String>[];
+    // Learning languages first, then spoken, then native — normalised to the
+    // community code format (profiles store display names like "Portuguese").
+    final langs = profile == null
+        ? const <String>[]
+        : normalizeCommunityLanguages([
+            ...profile.preferredLanguages,
+            ...profile.languages,
+            profile.nativeLanguage,
+          ]);
     context.read<CommunitiesBloc>().add(
           LoadRecommendedCommunities(
               userId: userId, languages: langs, city: nearCity),

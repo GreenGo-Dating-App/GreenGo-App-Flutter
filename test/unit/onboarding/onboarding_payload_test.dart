@@ -109,8 +109,10 @@ void main() {
   });
 
   group('OnboardingComplete / OnboardingError states', () {
-    test('OnboardingComplete exposes the profile and null coupon by default',
-        () {
+    // The coupon redemption step (and OnboardingComplete.couponOutcome) was
+    // removed in v4.0.0 (commit 3e92076, Guideline 3.1.1: no unlock outside
+    // In-App Purchase). The completion state now carries only the profile.
+    test('OnboardingComplete carries only the created profile', () {
       final profile = Profile(
         userId: 'u1',
         displayName: 'Ava',
@@ -127,7 +129,9 @@ void main() {
       );
       final state = OnboardingComplete(profile: profile);
       expect(state.profile.userId, 'u1');
-      expect(state.couponOutcome, isNull);
+      expect(state.profile.isComplete, isTrue);
+      expect(state.props, [profile]);
+      expect(state, OnboardingComplete(profile: profile));
     });
 
     test('OnboardingError carries its message in props', () {

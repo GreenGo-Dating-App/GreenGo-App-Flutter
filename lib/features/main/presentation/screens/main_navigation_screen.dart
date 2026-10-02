@@ -13,6 +13,7 @@ import '../../../../core/config/app_config.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../gamification/data/services/achievement_unlock_watcher.dart';
 import '../../../gamification/data/services/streak_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
@@ -189,9 +190,8 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   // Real-time level-up & achievement listeners
   StreamSubscription? _levelUpSub;
-  StreamSubscription? _achievementSub;
+  AchievementUnlockWatcher? _achievementWatcher;
   int? _lastKnownLevel; // track to detect level changes
-  Set<String> _knownUnlockedAchievements = {}; // track already-unlocked achievements
 
   // Tabs are built on first visit and kept alive afterwards (IndexedStack), so
   // opening the app runs only the first tab's initState instead of all five
@@ -1154,41 +1154,31 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     });
   }
 
-  /// Listen to user_achievements for newly unlocked achievements
+  /// Show a popup for achievements unlocked during this session.
+  ///
+  /// Achievements live in `achievement_progress` (the old listener watched
+  /// `user_achievements`, which nothing writes, so popups never fired).
+  /// [AchievementUnlockWatcher] ignores the first snapshot and anything
+  /// unlocked before it started, and persists shown ids so a restart never
+  /// replays a popup.
   void _startAchievementListener() {
-    final fs = FirebaseFirestore.instance;
-    _achievementSub = fs
-        .collection('user_achievements')
-        .where('userId', isEqualTo: widget.userId)
-        .where('isUnlocked', isEqualTo: true)
-        .snapshots()
-        .listen((snapshot) {
-      if (!mounted) return;
-
-      final currentIds = snapshot.docs.map((d) => d.data()['achievementId'] as String? ?? d.id).toSet();
-
-      if (_knownUnlockedAchievements.isEmpty) {
-        // First snapshot — record all currently unlocked achievements
-        _knownUnlockedAchievements = currentIds;
-        return;
-      }
-
-      // Find newly unlocked achievements
-      final newlyUnlocked = currentIds.difference(_knownUnlockedAchievements);
-      _knownUnlockedAchievements = currentIds;
-
-      for (final achievementId in newlyUnlocked) {
+    final watcher = AchievementUnlockWatcher(
+      firestore: FirebaseFirestore.instance,
+      userId: widget.userId,
+      onUnlocked: (achievementId) {
         final achievement = Achievements.getById(achievementId);
-        if (achievement != null && mounted) {
-          showDialog(
-            context: context,
-            barrierDismissible: false,
-            barrierColor: Colors.black87,
-            builder: (ctx) => AchievementUnlockDialog(achievement: achievement),
-          );
-        }
-      }
-    });
+        if (achievement == null || !mounted) return;
+        showDialog<void>(
+          context: context,
+          barrierDismissible: false,
+          barrierColor: Colors.black87,
+          builder: (ctx) => AchievementUnlockDialog(achievement: achievement),
+        );
+      },
+    );
+    unawaited(_achievementWatcher?.dispose());
+    _achievementWatcher = watcher;
+    unawaited(watcher.start());
   }
 
   /// Decrement badge count for instant UI feedback (Firestore listener will confirm)
@@ -1323,7 +1313,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _messageCountSub?.cancel();
     _groupCountSub?.cancel();
     _levelUpSub?.cancel();
-    _achievementSub?.cancel();
+    _achievementWatcher?.dispose();
     WidgetsBinding.instance.removeObserver(this);
     _presenceService.dispose();
     _activityTrackingService.dispose();

@@ -4,9 +4,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/subscription.dart';
+import '../../domain/membership_product_mapping.dart';
 import '../bloc/subscription_bloc.dart';
 
 /// Membership Selection Screen
@@ -94,17 +96,26 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
   }
 
   int _tierRankFromProductId(String productId) {
-    if (productId.contains('platinum')) return 3;
-    if (productId.contains('gold')) return 2;
-    if (productId.contains('silver')) return 1;
-    return 0;
+    switch (ProductCatalog.classify(productId).tier) {
+      case MembershipProductTier.platinum:
+        return 3;
+      case MembershipProductTier.gold:
+        return 2;
+      case MembershipProductTier.silver:
+        return 1;
+      case MembershipProductTier.base:
+        return 0;
+    }
   }
+
+  bool _isBaseProduct(String productId) =>
+      ProductCatalog.classify(productId).isBase;
 
   /// Returns true if the product should be locked (not selectable).
   /// Locked when: active base membership being re-purchased, or tier <= current active tier.
   bool _isLowerThanCurrentTier(String productId) {
     // Block re-purchasing active base membership
-    if (productId == 'greengo_base_membership') return _hasActiveBaseMembership;
+    if (_isBaseProduct(productId)) return _hasActiveBaseMembership;
     final currentRank = _currentTierRank();
     if (currentRank <= 0) return false; // No active premium tier, everything allowed
     final productRank = _tierRankFromProductId(productId);
@@ -156,17 +167,29 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
         builder: (context, state) {
           final isLoading = state is SubscriptionLoading;
           if (state is ProductsLoaded) _products = state.products;
-          final products = _products;
+          // One card per product id: Play returns one entry per offer.
+          final products = ProductCatalog.onePerProduct(_products);
           final productsLoading = state is ProductsLoading && products.isEmpty;
 
-          // Group products by tier
-          final monthlyProducts =
-              products.where((p) => p.id.contains('1_month')).toList();
-          final yearlyProducts =
-              products.where((p) => p.id.contains('1_year')).toList();
-          final baseProducts =
-              products.where((p) => p.id == 'greengo_base_membership').toList();
-          final baseProduct = baseProducts.isNotEmpty ? baseProducts.first : null;
+          // Group products by period via the shared ProductCatalog
+          // classifier (store IDs differ per platform: iOS
+          // `subscription_1_month_silver`, Play `silver_premium_monthly`).
+          // Only the known base product gets the base slot; every other
+          // product (including unknown IDs) lands in a period group, so
+          // nothing the store returns silently disappears.
+          ProductDetails? baseProduct;
+          final monthlyProducts = <ProductDetails>[];
+          final yearlyProducts = <ProductDetails>[];
+          for (final p in products) {
+            final info = ProductCatalog.classify(p.id);
+            if (info.isBase && info.isKnown && baseProduct == null) {
+              baseProduct = p;
+            } else if (info.isYearly) {
+              yearlyProducts.add(p);
+            } else {
+              monthlyProducts.add(p);
+            }
+          }
 
           return Stack(
             children: [
@@ -293,7 +316,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                             ),
                           ),
                           child: Text(
-                            'Buy ${_selectedProduct!.title} - ${_selectedProduct!.price}  ${AppLocalizations.of(context)!.plusTaxes}',
+                            'Buy ${_selectedProduct!.title} - ${_displayPrice(_selectedProduct!)}  ${AppLocalizations.of(context)!.plusTaxes}',
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -478,7 +501,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Text(
-                              product.id == 'greengo_base_membership'
+                              _isBaseProduct(product.id)
                                   ? AppLocalizations.of(context)!.membershipActive
                                   : (_tierRankFromProductId(product.id) == _currentTierRank()
                                       ? AppLocalizations.of(context)!.membershipActive
@@ -510,7 +533,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                             ),
                           ),
                         ],
-                        if (product.id == 'greengo_base_membership') ...[
+                        if (_isBaseProduct(product.id)) ...[
                           const SizedBox(width: 8),
                           Container(
                             padding: const EdgeInsets.symmetric(
@@ -567,13 +590,28 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                     ),
                   ],
                   Text(
-                    '${product.price}  ${AppLocalizations.of(context)!.plusTaxes}',
+                    '${_displayPrice(product)}  ${AppLocalizations.of(context)!.plusTaxes}',
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: color,
                     ),
                   ),
+                  if (ProductCatalog.hasSevenDayFreeTrial(product)) ...[
+                    const SizedBox(height: 4),
+                    // Bounded: this Column is a non-flex Row child.
+                    SizedBox(
+                      width: 150,
+                      child: Text(
+                        AppLocalizations.of(context)!.subscriptionFreeTrialInfo,
+                        textAlign: TextAlign.end,
+                        style: const TextStyle(
+                          fontSize: 11,
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ),
+                  ],
                 ],
               ),
               const SizedBox(width: 8),
@@ -680,25 +718,41 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
 
   String _getTierDisplayName(String productId) {
     final l10n = AppLocalizations.of(context)!;
-    if (productId.contains('platinum')) return l10n.membershipPlatinum;
-    if (productId.contains('gold')) return l10n.membershipGold;
-    if (productId.contains('silver')) return l10n.membershipSilver;
-    if (productId == 'greengo_base_membership') return l10n.membershipBaseMembership;
-    return l10n.membershipGeneric;
+    final info = ProductCatalog.classify(productId);
+    switch (info.tier) {
+      case MembershipProductTier.platinum:
+        return l10n.membershipPlatinum;
+      case MembershipProductTier.gold:
+        return l10n.membershipGold;
+      case MembershipProductTier.silver:
+        return l10n.membershipSilver;
+      case MembershipProductTier.base:
+        return info.isKnown
+            ? l10n.membershipBaseMembership
+            : l10n.membershipGeneric;
+    }
   }
 
   Color _getTierColor(String productId) {
-    if (productId.contains('platinum')) return AppColors.platinumBlue;
-    if (productId.contains('gold')) return const Color(0xFFD4AF37);
-    if (productId.contains('silver')) return Colors.grey[400]!;
-    if (productId.contains('base')) return AppColors.basePurple;
-    return AppColors.basePurple;
+    switch (ProductCatalog.classify(productId).tier) {
+      case MembershipProductTier.platinum:
+        return AppColors.platinumBlue;
+      case MembershipProductTier.gold:
+        return const Color(0xFFD4AF37);
+      case MembershipProductTier.silver:
+        return Colors.grey[400]!;
+      case MembershipProductTier.base:
+        return AppColors.basePurple;
+    }
   }
 
-  SubscriptionTier _getTierFromProductId(String productId) {
-    if (productId.contains('platinum')) return SubscriptionTier.platinum;
-    if (productId.contains('gold')) return SubscriptionTier.gold;
-    if (productId.contains('silver')) return SubscriptionTier.silver;
-    return SubscriptionTier.basic;
-  }
+  /// Plan price to display: the store's RECURRING price. On Android
+  /// `ProductDetails.price` is the first pricing phase, i.e. "Free" or an
+  /// intro price for a trial offer. Display only — purchases still use the
+  /// selected [ProductDetails] untouched.
+  String _displayPrice(ProductDetails product) =>
+      ProductCatalog.recurringPriceLabel(product) ?? product.price;
+
+  SubscriptionTier _getTierFromProductId(String productId) =>
+      subscriptionTierForProduct(productId);
 }

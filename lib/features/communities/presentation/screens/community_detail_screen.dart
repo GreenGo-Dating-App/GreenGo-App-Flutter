@@ -17,6 +17,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../domain/community_language.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
 import '../../domain/entities/community_message.dart';
@@ -135,7 +136,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           ? profileState.profile.photoUrls.first
           : null;
       _isLocalGuide = profileState.profile.isLocalGuide;
-      _userLanguages = profileState.profile.preferredLanguages;
+      // Member docs store community-format codes (the member tile shows them
+      // uppercased); profiles hold display names.
+      final p = profileState.profile;
+      _userLanguages = normalizeCommunityLanguages(
+          [...p.languages, ...p.preferredLanguages, p.nativeLanguage]);
       _isBusiness = profileState.profile.isBusiness;
       _membershipTier = profileState.profile.effectiveTier;
     }
