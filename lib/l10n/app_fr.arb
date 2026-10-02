@@ -4615,5 +4615,7 @@
   "bkErrGuestCheckedIn": "L'invité est déjà enregistré.",
   "bkErrCashBeforeMeeting": "Les espèces peuvent être confirmées une fois l'invité rencontré.",
   "bkErrOutsideDispute": "Les problèmes peuvent être signalés du début jusqu'à 24 h après la fin.",
-  "bkErrReasonRequired": "Décris le problème ({min} caractères minimum)."
+  "bkErrReasonRequired": "Décris le problème ({min} caractères minimum).",
+  "uexpDatesRequiredHint": "Les participants ne peuvent réserver que les dates que vous définissez, et chaque réservation est une demande que vous acceptez ou refusez. Ajoutez au moins une date à venir pour publier.",
+  "uexpDatesRequiredToPublish": "Ajoutez au moins une date à venir pour publier. Votre expérience est enregistrée comme brouillon."
 }

@@ -28,8 +28,6 @@ import { maxExperiencesFor, validateExperiencePayload } from './validation';
 import {
   SafetyCode,
   createBlockReason,
-  isNewHost,
-  publishBlockReason,
 } from './safety';
 
 const db = admin.firestore();
@@ -73,14 +71,9 @@ export const createUserExperience = onCall(
       // document (+ new-host paid limit) to publish a listing taking money.
       const blocked = createBlockReason(profile);
       if (blocked) throw safetyError(blocked);
-      if (v.data.status === 'published') {
-        let otherPublishedPaid = 0;
-        if (v.data.isFree !== true && profile?.isAdmin !== true && isNewHost(profile)) {
-          otherPublishedPaid = await countPublishedPaid(tx, uid);
-        }
-        const why = publishBlockReason({ profile, experience: v.data, otherPublishedPaid });
-        if (why) throw safetyError(why);
-      }
+      // A new listing has no dates yet, and availability must be defined by
+      // dates: it is always stored as a draft, published via
+      // publishUserExperience once it has an upcoming date.
 
       const tier = effectiveTier(profile);
       const max = maxExperiencesFor(tier, isProfileAdmin(profile));
@@ -106,6 +99,7 @@ export const createUserExperience = onCall(
       const now = admin.firestore.FieldValue.serverTimestamp();
       tx.set(expRef, {
         ...v.data,
+        status: 'draft',
         hostId: uid,
         createdAt: now,
         updatedAt: now,
@@ -123,7 +117,7 @@ export const createUserExperience = onCall(
         hostRatingCounted: profileSnap.exists,
       });
       tx.set(counterRef, { count: count + 1, updatedAt: now }, { merge: true });
-      return { id: expRef.id, count: count + 1, limit: max };
+      return { id: expRef.id, count: count + 1, limit: max, status: 'draft' };
     });
 
     return result;

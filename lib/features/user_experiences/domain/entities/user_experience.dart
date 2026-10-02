@@ -135,7 +135,7 @@ class UserExperience extends Equatable {
     this.availability,
     this.cancellationPolicy = CancellationPolicy.moderate,
     this.cancellationNotes,
-    this.requestToBook = false,
+    this.requestToBook = true,
     this.status = ExperienceStatus.draft,
     this.createdAt,
     this.updatedAt,

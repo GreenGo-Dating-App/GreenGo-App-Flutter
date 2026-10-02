@@ -5196,5 +5196,7 @@
   "bkErrGuestCheckedIn": "O convidado já fez check-in.",
   "bkErrCashBeforeMeeting": "O dinheiro pode ser confirmado quando encontrares o convidado.",
   "bkErrOutsideDispute": "Os problemas podem ser comunicados desde o início até 24 h após o fim.",
-  "bkErrReasonRequired": "Descreve o problema (pelo menos {min} caracteres)."
+  "bkErrReasonRequired": "Descreve o problema (pelo menos {min} caracteres).",
+  "uexpDatesRequiredHint": "Os hóspedes só podem reservar as datas que definir e cada reserva é um pedido que aceita ou recusa. Adicione pelo menos uma data futura para publicar.",
+  "uexpDatesRequiredToPublish": "Adicione pelo menos uma data futura para publicar. A sua experiência foi guardada como rascunho."
 }

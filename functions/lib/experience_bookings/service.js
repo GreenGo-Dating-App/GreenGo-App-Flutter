@@ -445,7 +445,8 @@ async function createBooking(uid, data) {
         if (capacity - booked < guests) {
             fail('resource-exhausted', 'slot_full', { seatsLeft: Math.max(0, capacity - booked) });
         }
-        const requested = e.requestToBook === true;
+        // Request to book is mandatory: the host accepts or declines every booking.
+        const requested = true;
         const booking = Object.assign({ experienceId,
             slotId,
             hostId, guestId: uid, guests, status: requested ? 'requested' : 'confirmed', requestToBook: requested, policy: (0, model_1.policyOf)(e), experienceTitle: typeof e.title === 'string' ? e.title.slice(0, 120) : null, slotStart: ts(start), slotEnd: ts(end), price: priced.price, payment: {

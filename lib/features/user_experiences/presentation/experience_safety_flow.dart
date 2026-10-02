@@ -153,6 +153,9 @@ class ExperienceSafetyFlow {
       case 'host_banned':
         _snack(context, l.uexpHostBanned);
         return SafetyResolution.cancel;
+      case 'dates_required':
+        _snack(context, l.uexpDatesRequiredToPublish);
+        return SafetyResolution.cancel;
       default:
         _snack(context, l.somethingWentWrong);
         return SafetyResolution.cancel;

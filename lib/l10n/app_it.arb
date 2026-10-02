@@ -5196,5 +5196,7 @@
   "bkErrGuestCheckedIn": "L'ospite ha già fatto il check-in.",
   "bkErrCashBeforeMeeting": "I contanti si possono confermare dopo aver incontrato l'ospite.",
   "bkErrOutsideDispute": "I problemi si possono segnalare dall'inizio fino a 24 ore dopo la fine.",
-  "bkErrReasonRequired": "Descrivi il problema (almeno {min} caratteri)."
+  "bkErrReasonRequired": "Descrivi il problema (almeno {min} caratteri).",
+  "uexpDatesRequiredHint": "Gli ospiti possono prenotare solo le date che imposti e ogni prenotazione è una richiesta che accetti o rifiuti. Aggiungi almeno una data futura per pubblicare.",
+  "uexpDatesRequiredToPublish": "Aggiungi almeno una data futura per pubblicare. La tua esperienza è salvata come bozza."
 }

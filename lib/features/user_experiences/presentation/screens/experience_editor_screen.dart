@@ -121,7 +121,6 @@ class _EditorFormState extends State<_EditorForm> {
   final Set<PaymentMethod> _methods = {PaymentMethod.link};
   CancellationPolicy _policy = CancellationPolicy.fallback;
   // Bookings: host approves each request (false = instant booking).
-  bool _requestToBook = false;
 
   // Photos: a new pick takes precedence over the existing URL.
   final ImagePicker _picker = ImagePicker();
@@ -183,7 +182,6 @@ class _EditorFormState extends State<_EditorForm> {
       }
       _availability.text = e.availability ?? '';
       _policy = e.cancellationPolicy;
-      _requestToBook = e.requestToBook;
       _cancellation.text = e.cancellationNotes ?? '';
       if (!e.isFree && e.paymentMethods.isNotEmpty) {
         _methods
@@ -468,9 +466,10 @@ class _EditorFormState extends State<_EditorForm> {
                 ? null
                 : PaymentLink(type: _paymentType, value: payValue),
         paymentMethods: _isFree ? const {} : {..._methods},
-        availability: _opt(_availability).isEmpty ? null : _opt(_availability),
+        // Availability is defined by the dates (slots), not free text.
+        availability: null,
         cancellationPolicy: _policy,
-        requestToBook: _requestToBook,
+        requestToBook: true,
         cancellationNotes: _opt(_cancellation,
                     ExperienceLimits.cancellationNotesMax)
                 .isEmpty
@@ -495,9 +494,18 @@ class _EditorFormState extends State<_EditorForm> {
   /// Last submitted experience (re-submitted after a guided safety prompt).
   UserExperience? _submitted;
 
+  /// A new listing the host asked to publish: stored as a draft first (it
+  /// has no dates yet), then its dates screen, then [_publishWithDates].
+  bool _publishAfterDates = false;
+
   void _submit(UserExperience experience) {
     _submitted = experience;
     _requestedStatus = experience.status;
+    _publishAfterDates =
+        _isNew && experience.status == ExperienceStatus.published;
+    if (_publishAfterDates) {
+      experience = experience.copyWith(status: ExperienceStatus.draft);
+    }
     context.read<ExperienceEditorBloc>().add(ExperienceEditorSaved(
           experience,
           isNew: _isNew,
@@ -506,12 +514,181 @@ class _EditorFormState extends State<_EditorForm> {
         ));
   }
 
+  /// Opens the dates of the stored draft [draft], then publishes it (the
+  /// server requires an upcoming date). No date added: it stays a draft.
+  Future<void> _publishWithDates(UserExperience draft) async {
+    final l = AppLocalizations.of(context)!;
+    await Navigator.of(context).push(ExperienceSlotsScreen.route(
+        experience: draft, currentUserId: widget.currentUserId));
+    if (!mounted) return;
+    setState(() => _busy = true);
+    final repo = di.sl<UserExperiencesRepository>();
+    try {
+      var asFree = false;
+      for (var attempt = 0; attempt < 2; attempt++) {
+        final r = await repo.publishExperience(draft.id, asFree: asFree);
+        if (!mounted) return;
+        final f = r.fold((f) => f, (_) => null);
+        if (f == null) {
+          _snack(l.uexpPublished, error: false);
+          Navigator.of(context).pop((asFree ? draft.asFree() : draft)
+              .copyWith(status: ExperienceStatus.published));
+          return;
+        }
+        if (f is ExperienceSafetyFailure && f.code != 'dates_required') {
+          final res = await ExperienceSafetyFlow.resolve(
+              context, widget.currentUserId, f.code);
+          if (!mounted) return;
+          if (res == SafetyResolution.retry) continue;
+          if (res == SafetyResolution.publishFree) {
+            asFree = true;
+            continue;
+          }
+          break;
+        }
+        _snack(f is ExperienceSafetyFailure
+            ? l.uexpDatesRequiredToPublish
+            : l.uexpSaveFailed);
+        break;
+      }
+      if (mounted) Navigator.of(context).pop(draft);
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  /// Languages as a compact combobox: a field that opens a searchable
+  /// multi-select list, with the chosen ones as removable chips.
+  Widget _languagesField(AppLocalizations l) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        InkWell(
+          key: const ValueKey('editor-languages'),
+          borderRadius: BorderRadius.circular(12),
+          onTap: () => _pickLanguages(l),
+          child: InputDecorator(
+            decoration: _dec(l.uexpLanguages).copyWith(
+              suffixIcon: const Icon(Icons.arrow_drop_down,
+                  color: AppColors.richGold),
+            ),
+            isEmpty: _languages.isEmpty,
+            child: Text(
+              _languages.join(', '),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: _text,
+            ),
+          ),
+        ),
+        if (_languages.isNotEmpty) ...[
+          const SizedBox(height: 6),
+          Wrap(spacing: 6, runSpacing: 6, children: [
+            for (final lang in _languages)
+              InputChip(
+                label: Text(lang),
+                labelStyle: const TextStyle(
+                    color: AppColors.textPrimary, fontSize: 12),
+                backgroundColor: AppColors.richGold.withValues(alpha: 0.18),
+                deleteIconColor: AppColors.textSecondary,
+                onDeleted: () => setState(() => _languages.remove(lang)),
+              ),
+          ]),
+        ],
+      ],
+    );
+  }
+
+  Future<void> _pickLanguages(AppLocalizations l) async {
+    final draft = {..._languages};
+    var query = '';
+    final picked = await showDialog<Set<String>>(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setD) {
+          final q = query.toLowerCase();
+          final options = kExperienceLanguages
+              .where((x) => q.isEmpty || x.toLowerCase().contains(q))
+              .toList();
+          final full = draft.length >= ExperienceLimits.languagesMax;
+          return AlertDialog(
+            backgroundColor: AppColors.backgroundCard,
+            title: Text(l.uexpLanguages,
+                style: const TextStyle(color: AppColors.textPrimary)),
+            contentPadding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+            content: SizedBox(
+              width: 360,
+              height: 420,
+              child: Column(children: [
+                TextField(
+                  style: _text,
+                  decoration: _dec(
+                          MaterialLocalizations.of(ctx).searchFieldLabel)
+                      .copyWith(
+                          prefixIcon: const Icon(Icons.search,
+                              color: AppColors.textTertiary)),
+                  onChanged: (v) => setD(() => query = v.trim()),
+                ),
+                const SizedBox(height: 8),
+                Expanded(
+                  child: ListView(children: [
+                    for (final lang in options)
+                      CheckboxListTile(
+                        dense: true,
+                        value: draft.contains(lang),
+                        activeColor: AppColors.richGold,
+                        checkColor: Colors.black,
+                        title: Text(lang, style: _text),
+                        onChanged: !draft.contains(lang) && full
+                            ? null
+                            : (v) => setD(() {
+                                  if (v == true) {
+                                    draft.add(lang);
+                                  } else {
+                                    draft.remove(lang);
+                                  }
+                                }),
+                      ),
+                  ]),
+                ),
+              ]),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(ctx),
+                child: Text(MaterialLocalizations.of(ctx).cancelButtonLabel,
+                    style: const TextStyle(color: AppColors.textSecondary)),
+              ),
+              ElevatedButton(
+                onPressed: () => Navigator.pop(ctx, draft),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.richGold,
+                  foregroundColor: Colors.black,
+                ),
+                child: Text(l.done),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+    if (picked != null && mounted) {
+      setState(() => _languages
+        ..clear()
+        ..addAll(picked));
+    }
+  }
+
   /// The server refused to publish ([code]): ask for what is missing, then
   /// re-submit (or save as draft / publish as free).
   Future<void> _resolveSafety(String code, UserExperience? savedDraft) async {
     final l = AppLocalizations.of(context)!;
     final x = _submitted;
     if (x == null) return;
+    if (code == 'dates_required' && savedDraft != null) {
+      await _publishWithDates(savedDraft);
+      return;
+    }
     final r =
         await ExperienceSafetyFlow.resolve(context, widget.currentUserId, code);
     if (!mounted) return;
@@ -582,7 +759,13 @@ class _EditorFormState extends State<_EditorForm> {
     final l = AppLocalizations.of(context)!;
     return BlocListener<ExperienceEditorBloc, ExperienceEditorState>(
       listener: (context, s) async {
-        if (s.status == ExperienceEditorStatus.saved && s.saved != null) {
+        if (s.status == ExperienceEditorStatus.saved &&
+            s.saved != null &&
+            _publishAfterDates) {
+          _publishAfterDates = false;
+          await _publishWithDates(s.saved!);
+        } else if (s.status == ExperienceEditorStatus.saved &&
+            s.saved != null) {
           _snack(
               _requestedStatus == ExperienceStatus.published
                   ? l.uexpPublished
@@ -782,47 +965,10 @@ class _EditorFormState extends State<_EditorForm> {
                       ),
                     ]),
                     const SizedBox(height: 12),
-                    Text(l.uexpLanguages,
-                        style: const TextStyle(color: AppColors.textSecondary)),
-                    const SizedBox(height: 6),
-                    Wrap(
-                      spacing: 6,
-                      runSpacing: 6,
-                      children: [
-                        for (final lang in kExperienceLanguages)
-                          FilterChip(
-                            label: Text(lang),
-                            selected: _languages.contains(lang),
-                            selectedColor:
-                                AppColors.richGold.withValues(alpha: 0.25),
-                            checkmarkColor: AppColors.richGold,
-                            backgroundColor: AppColors.backgroundInput,
-                            labelStyle: const TextStyle(
-                                color: AppColors.textPrimary, fontSize: 12),
-                            onSelected: (v) => setState(() {
-                              if (v) {
-                                if (_languages.length <
-                                    ExperienceLimits.languagesMax) {
-                                  _languages.add(lang);
-                                }
-                              } else {
-                                _languages.remove(lang);
-                              }
-                            }),
-                          ),
-                      ],
-                    ),
+                    _languagesField(l),
                     if (_err([ExperienceFieldError.languagesRequired]) != null)
                       _errorLine(
                           _err([ExperienceFieldError.languagesRequired])!),
-                    const SizedBox(height: 12),
-                    TextField(
-                      controller: _availability,
-                      maxLength: ExperienceLimits.shortTextMax,
-                      style: _text,
-                      decoration: _dec(l.uexpAvailability,
-                          hint: l.uexpAvailabilityHint),
-                    ),
                     Text(l.uexpCancellationLabel,
                         style:
                             const TextStyle(color: AppColors.textSecondary)),
@@ -896,30 +1042,25 @@ class _EditorFormState extends State<_EditorForm> {
     );
   }
 
-  /// "Request to book" switch + "Dates & availability" (existing listings;
-  /// a new one gets its dates once saved).
+  /// "Dates & availability": every booking is a request on one of these
+  /// dates, and a listing needs an upcoming one to be published (a new
+  /// listing is saved first, then its dates screen opens).
   Widget _bookingSettings(AppLocalizations l) {
     final existing = widget.existing;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         const SizedBox(height: 4),
-        Container(
-          decoration: BoxDecoration(
-            color: AppColors.backgroundInput,
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: SwitchListTile(
-            key: const ValueKey('editor-request-to-book'),
-            value: _requestToBook,
-            activeThumbColor: AppColors.richGold,
-            onChanged: (v) => setState(() => _requestToBook = v),
-            title: Text(l.bkRequestToBookToggle, style: _text),
-            subtitle: Text(l.bkRequestToBookDesc,
+        Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          const Icon(Icons.event_available,
+              size: 18, color: AppColors.richGold),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(l.uexpDatesRequiredHint,
                 style: const TextStyle(
                     color: AppColors.textTertiary, fontSize: 12)),
           ),
-        ),
+        ]),
         const SizedBox(height: 10),
         if (existing != null && existing.id.isNotEmpty)
           OutlinedButton.icon(

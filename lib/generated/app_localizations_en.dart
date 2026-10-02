@@ -15682,4 +15682,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String bkErrReasonRequired(int min) {
     return 'Describe the problem (at least $min characters).';
   }
+
+  @override
+  String get uexpDatesRequiredHint =>
+      'Guests can only book the dates you set, and every booking is a request you accept or decline. Add at least one upcoming date to publish.';
+
+  @override
+  String get uexpDatesRequiredToPublish =>
+      'Add at least one upcoming date to publish. Your experience is saved as a draft.';
 }

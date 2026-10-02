@@ -758,9 +758,6 @@ class _DetailViewState extends State<_DetailView> {
         row(Icons.groups_outlined, l.uexpGroupSize,
             plain(ExperienceL10n.groupSize(l, e.minGroupSize, e.maxGroupSize))),
         row(Icons.translate, l.uexpLanguages, plain(e.languages.join(', '))),
-        if (e.availability != null)
-          row(Icons.event_available, l.uexpAvailabilityLabel,
-              translated(e.availability!)),
       ]),
     );
   }

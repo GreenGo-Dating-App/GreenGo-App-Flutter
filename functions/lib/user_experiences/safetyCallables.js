@@ -95,10 +95,21 @@ exports.publishUserExperience = (0, https_1.onCall)(OPTS, async (request) => {
         const why = (0, safety_1.publishBlockReason)({ profile, experience: next, otherPublishedPaid });
         if (why)
             throw (0, createUserExperience_1.safetyError)(why);
+        // Availability must be defined: at least one upcoming open date.
+        if (!(await hasUpcomingDate(tx, expRef)))
+            throw (0, createUserExperience_1.safetyError)('dates_required');
         tx.update(expRef, Object.assign(Object.assign({}, (asFree ? safety_1.AS_FREE_PATCH : {})), { status: 'published', updatedAt: admin.firestore.FieldValue.serverTimestamp() }));
         return { status: 'published', asFree };
     });
 });
+/** Whether the listing has at least one OPEN date starting in the future. */
+async function hasUpcomingDate(tx, expRef) {
+    const snap = await tx.get(expRef.collection('slots')
+        .where('start', '>', admin.firestore.Timestamp.now())
+        .orderBy('start')
+        .limit(25));
+    return snap.docs.some((d) => d.get('status') === 'open');
+}
 exports.acceptHostAgreement = (0, https_1.onCall)(OPTS, async (request) => {
     var _a, _b;
     const uid = (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid;

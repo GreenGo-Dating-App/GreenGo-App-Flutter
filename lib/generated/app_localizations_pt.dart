@@ -15836,6 +15836,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String bkErrReasonRequired(int min) {
     return 'Descreve o problema (pelo menos $min caracteres).';
   }
+
+  @override
+  String get uexpDatesRequiredHint =>
+      'Os hóspedes só podem reservar as datas que definir e cada reserva é um pedido que aceita ou recusa. Adicione pelo menos uma data futura para publicar.';
+
+  @override
+  String get uexpDatesRequiredToPublish =>
+      'Adicione pelo menos uma data futura para publicar. A sua experiência foi guardada como rascunho.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -31673,4 +31681,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String bkErrReasonRequired(int min) {
     return 'Descreva o problema (pelo menos $min caracteres).';
   }
+
+  @override
+  String get uexpDatesRequiredHint =>
+      'Os participantes só podem reservar as datas que você definir, e cada reserva é uma solicitação que você aceita ou recusa. Adicione pelo menos uma data futura para publicar.';
+
+  @override
+  String get uexpDatesRequiredToPublish =>
+      'Adicione pelo menos uma data futura para publicar. Sua experiência foi salva como rascunho.';
 }

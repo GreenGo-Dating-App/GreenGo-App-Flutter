@@ -15867,4 +15867,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String bkErrReasonRequired(int min) {
     return 'Describe el problema (al menos $min caracteres).';
   }
+
+  @override
+  String get uexpDatesRequiredHint =>
+      'Los huéspedes solo pueden reservar las fechas que definas y cada reserva es una solicitud que aceptas o rechazas. Añade al menos una fecha próxima para publicar.';
+
+  @override
+  String get uexpDatesRequiredToPublish =>
+      'Añade al menos una fecha próxima para publicar. Tu experiencia se ha guardado como borrador.';
 }

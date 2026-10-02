@@ -66,6 +66,8 @@ export const publishUserExperience = onCall<{ experienceId?: string; asFree?: bo
       }
       const why = publishBlockReason({ profile, experience: next, otherPublishedPaid });
       if (why) throw safetyError(why);
+      // Availability must be defined: at least one upcoming open date.
+      if (!(await hasUpcomingDate(tx, expRef))) throw safetyError('dates_required');
 
       tx.update(expRef, {
         ...(asFree ? AS_FREE_PATCH : {}),
@@ -76,6 +78,20 @@ export const publishUserExperience = onCall<{ experienceId?: string; asFree?: bo
     });
   },
 );
+
+/** Whether the listing has at least one OPEN date starting in the future. */
+async function hasUpcomingDate(
+  tx: admin.firestore.Transaction,
+  expRef: admin.firestore.DocumentReference,
+): Promise<boolean> {
+  const snap = await tx.get(
+    expRef.collection('slots')
+      .where('start', '>', admin.firestore.Timestamp.now())
+      .orderBy('start')
+      .limit(25),
+  );
+  return snap.docs.some((d) => d.get('status') === 'open');
+}
 
 export const acceptHostAgreement = onCall<{ version?: number }>(OPTS, async (request) => {
   const uid = request.auth?.uid;

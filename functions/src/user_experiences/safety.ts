@@ -84,6 +84,7 @@ export type SafetyCode =
   | 'id_document_not_approved'
   | 'host_agreement_required'
   | 'new_host_paid_limit'
+  | 'dates_required'
   | 'host_banned';
 
 /** Why [profile] may not CREATE an experience at all (any status), or null. */

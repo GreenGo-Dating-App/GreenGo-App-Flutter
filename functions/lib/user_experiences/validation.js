@@ -209,7 +209,7 @@ function validateExperiencePayload(p) {
         paymentLink, availability: optStr(d.availability, exports.LIMITS.shortTextMax), 
         // Bookings: true = the host accepts / declines each booking request
         // (experience_bookings snapshots it on every booking).
-        requestToBook: d.requestToBook === true }, (0, safety_1.normalizeCancellation)(d)), { status, hostName: optStr(d.hostName, 120), hostPhotoUrl: optStr(d.hostPhotoUrl, 1000), searchKeywords: buildSearchKeywords([title, city, country, category, locationName]) });
+        requestToBook: true }, (0, safety_1.normalizeCancellation)(d)), { status, hostName: optStr(d.hostName, 120), hostPhotoUrl: optStr(d.hostPhotoUrl, 1000), searchKeywords: buildSearchKeywords([title, city, country, category, locationName]) });
     return { ok: errors.length === 0, errors, data };
 }
 //# sourceMappingURL=validation.js.map

@@ -248,10 +248,10 @@ describe('payload validation', () => {
     expect(free.data.currency).toBeNull();
   });
 
-  it('requestToBook is kept only as a strict boolean (default false)', () => {
-    expect(validateExperiencePayload(good).data.requestToBook).toBe(false);
-    expect(validateExperiencePayload({ ...good, requestToBook: true }).data.requestToBook).toBe(true);
-    expect(validateExperiencePayload({ ...good, requestToBook: 'yes' }).data.requestToBook).toBe(false);
+  it('requestToBook is always true (request to book is mandatory)', () => {
+    expect(validateExperiencePayload(good).data.requestToBook).toBe(true);
+    expect(validateExperiencePayload({ ...good, requestToBook: false }).data.requestToBook).toBe(true);
+    expect(validateExperiencePayload({ ...good, requestToBook: 'yes' }).data.requestToBook).toBe(true);
   });
 
   it('payment methods: cash and/or link for paid, none for free', () => {
