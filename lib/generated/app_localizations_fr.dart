@@ -15188,15 +15188,15 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get uexpPolicyFlexibleDesc =>
-      'Remboursement intégral jusqu\'à 24 h avant le début, aucun remboursement ensuite.';
+      'Remboursement intégral si vous annulez au moins 24 h avant le début ; aucun remboursement ensuite.';
 
   @override
   String get uexpPolicyModerateDesc =>
-      'Remboursement intégral jusqu\'à 7 jours avant, 50 % jusqu\'à 24 h avant, aucun remboursement ensuite.';
+      'Remboursement intégral si vous annulez au moins 7 jours avant ; 50 % si au moins 24 h avant ; aucun remboursement ensuite.';
 
   @override
   String get uexpPolicyStrictDesc =>
-      'Remboursement intégral jusqu\'à 7 jours avant, aucun remboursement ensuite.';
+      'Remboursement intégral si vous annulez au moins 7 jours avant ; aucun remboursement ensuite.';
 
   @override
   String get uexpPolicyWhen => 'Si tu annules';
@@ -15205,13 +15205,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get uexpPolicyRefund => 'Remboursement';
 
   @override
-  String get uexpPolicyMoreThan7d => 'Plus de 7 jours avant';
+  String get uexpPolicyMoreThan7d => '7 jours ou plus avant';
 
   @override
-  String get uexpPolicy7dTo24h => 'Entre 7 jours et 24 h avant';
+  String get uexpPolicy7dTo24h => 'Moins de 7 jours, mais au moins 24 h avant';
 
   @override
-  String get uexpPolicyMoreThan24h => 'Plus de 24 h avant';
+  String get uexpPolicyMoreThan24h => '24 h ou plus avant';
 
   @override
   String get uexpPolicyLess24h => 'Moins de 24 h avant';
@@ -15227,7 +15227,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get uexpRuleGrace =>
-      'Tu annules dans les 24 h suivant la réservation et l\'expérience a lieu dans plus de 48 h : remboursement à 100 %.';
+      'Vous annulez dans les 24 h suivant la confirmation de votre réservation par l\'hôte, et l\'expérience a lieu dans plus de 48 h : remboursement à 100 %.';
 
   @override
   String get uexpRuleReport =>
@@ -15939,4 +15939,9 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get uexpDatesRequiredToPublish =>
       'Ajoutez au moins une date à venir pour publier. Votre expérience est enregistrée comme brouillon.';
+
+  @override
+  String bkRefundIfPaid(String percent, String amount) {
+    return 'Si vous avez déjà payé, l\'hôte vous doit $percent ($amount).';
+  }
 }

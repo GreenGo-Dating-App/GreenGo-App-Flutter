@@ -1,3 +1,4 @@
+import '../../../core/utils/display_image.dart';
 import '../../events/domain/entities/external_event.dart';
 import '../../user_experiences/domain/entities/user_experience.dart';
 
@@ -53,6 +54,9 @@ double weightedRating(UserExperience e) {
 /// Builds Explore "Top experiences" — up to [limit] cards, de-duplicated,
 /// filled strictly in this order:
 ///
+/// Only items with a picture are ever returned ([experienceHasPicture],
+/// [externalEventHasPicture]).
+///
 ///  1. FEATURED published member experiences (`isFeatured && featuredUntil >
 ///     now`, from either list — an expired promotion falls back to tier 2):
 ///     nearest first when [distanceKm] is given, else latest `featuredUntil`
@@ -81,7 +85,8 @@ List<TopExperienceItem> buildTopExperiences(
   // Unique published member experiences across both lists (first wins).
   final pool = <String, UserExperience>{};
   for (final e in [...featured, ...community]) {
-    if (e.id.isEmpty || !e.isPublished) continue;
+    // Pictures only (see experienceHasPicture).
+    if (e.id.isEmpty || !e.isPublished || !experienceHasPicture(e)) continue;
     pool.putIfAbsent(e.id, () => e);
   }
 
@@ -136,8 +141,7 @@ List<TopExperienceItem> buildTopExperiences(
   // 3 — partner experiences fill what is left.
   for (final p in partner) {
     if (out.length >= limit) break;
-    final img = p.imageUrl;
-    if (p.id.isEmpty || img == null || img.trim().isEmpty) continue;
+    if (p.id.isEmpty || !externalEventHasPicture(p)) continue;
     if (seen.add('x:${p.id}')) out.add(TopExperienceItem.partner(p));
   }
   return out;

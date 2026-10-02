@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../../../../core/utils/display_image.dart';
 import '../../domain/entities/attraction.dart';
 
 /// Reads curated attractions.
@@ -18,6 +19,10 @@ class AttractionsDataSource {
   final FirebaseFirestore _db;
 
   static final Map<String, List<Attraction>> _cache = {};
+
+  /// Country loads in flight, so the background prefetch and the tab (or two
+  /// screens) asking for the same country share ONE read.
+  static final Map<String, Future<List<Attraction>>> _inflight = {};
   static List<AttractionCountry>? _countries;
   static List<Attraction>? _all;
   static String? _bucket;
@@ -148,10 +153,25 @@ class AttractionsDataSource {
 
   /// Every published attraction for [iso2]. One doc read per shard; a country
   /// holds at most 100 records so this is normally a single read.
-  Future<List<Attraction>> forCountry(String iso2) async {
+  Future<List<Attraction>> forCountry(String iso2) {
     final key = iso2.toUpperCase();
     final hit = _cache[key];
-    if (hit != null) return hit;
+    if (hit != null) return Future.value(hit);
+    // (Block body: returning the removed future from whenComplete would make
+    // the load wait on itself.)
+    return _inflight[key] ??= _readCountry(key).whenComplete(() {
+      _inflight.remove(key);
+    });
+  }
+
+  /// The memoised list for [iso2] when already loaded (synchronous), else null.
+  static List<Attraction>? cachedCountry(String iso2) =>
+      _cache[iso2.toUpperCase()];
+
+  /// The storage bucket once [bucket] has resolved it (synchronous), else null.
+  static String? get cachedBucket => _bucket;
+
+  Future<List<Attraction>> _readCountry(String key) async {
     try {
       final snap = await _queryCacheFirst(
           _db.collection('attractions_index').where('iso2', isEqualTo: key));
@@ -162,8 +182,10 @@ class AttractionsDataSource {
         if (items is! List) continue;
         for (final it in items) {
           if (it is Map) {
-            out.add(Attraction.fromIndex(
-                {...Map<String, dynamic>.from(it), 'iso': key}));
+            final a = Attraction.fromIndex(
+                {...Map<String, dynamic>.from(it), 'iso': key});
+            // Pictures only (lists, counts, filters and Explore all read here).
+            if (attractionHasPicture(a)) out.add(a);
           }
         }
       }
@@ -194,8 +216,9 @@ class AttractionsDataSource {
         if (items is! List) continue;
         for (final it in items) {
           if (it is Map) {
-            out.add(Attraction.fromIndex(
-                {...Map<String, dynamic>.from(it), 'iso': iso}));
+            final a = Attraction.fromIndex(
+                {...Map<String, dynamic>.from(it), 'iso': iso});
+            if (attractionHasPicture(a)) out.add(a); // pictures only
           }
         }
       }
@@ -220,6 +243,7 @@ class AttractionsDataSource {
   /// Drop memoised data (pull-to-refresh).
   static void invalidate() {
     _cache.clear();
+    _inflight.clear();
     _countries = null;
     _all = null;
   }

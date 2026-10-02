@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/cache/last_result_cache.dart';
+import '../../../../core/utils/display_image.dart';
 import '../../domain/entities/event.dart';
 import '../models/event_model.dart';
 
@@ -19,8 +20,9 @@ class EventsCacheService {
 
   static const String _communityKey = 'events_community_nearby';
 
-  /// The community feed last shown, minus anything that has since ended or
-  /// stopped being public/live. Empty when nothing usable is cached.
+  /// The community feed last shown, minus anything that has since ended,
+  /// stopped being public/live, or has no picture (same gate as the server
+  /// query, so a cached paint never shows what the live list would hide). Empty when nothing usable is cached.
   Future<List<Event>> loadCommunity() async {
     unawaited(_purgeLegacy());
     try {
@@ -29,7 +31,11 @@ class EventsCacheService {
       final now = DateTime.now();
       return docs
           .map(EventModel.fromFirestore)
-          .where((e) => e.isPublic && e.isLive && !e.endDate.isBefore(now))
+          .where((e) =>
+              e.isPublic &&
+              e.isLive &&
+              !e.endDate.isBefore(now) &&
+              eventHasPicture(e))
           .toList();
     } catch (_) {
       return const [];

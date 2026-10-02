@@ -14,6 +14,7 @@ import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { buildSourceIndex } from './build_index';
 import { geohashEncode } from './geohash';
+import { isUsableImageUrl, pickTicketmasterImage } from './image';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -37,6 +38,11 @@ const COUNTRY_ISO: Record<string, string> = {
 };
 
 type Doc = { id: string; data: Record<string, unknown> };
+
+/** Only the docs the app can show (they carry a usable picture). */
+function withPicture(docs: Doc[]): Doc[] {
+  return docs.filter((d) => d.data.hasImage === true);
+}
 
 async function upsertAll(docs: Doc[]): Promise<void> {
   let batch = db.batch();
@@ -96,15 +102,10 @@ function mapEvent(e: any, countryName: string): Doc | null {
   const loc = venue.location || {};
   const lat = loc.latitude != null ? Number(loc.latitude) : null;
   const lng = loc.longitude != null ? Number(loc.longitude) : null;
-  // Largest image.
-  let img: string | undefined;
-  let bestW = -1;
-  for (const im of e.images || []) {
-    if ((im.width || 0) > bestW) {
-      bestW = im.width || 0;
-      img = im.url;
-    }
-  }
+  // Largest of the event's OWN images; Ticketmaster's generic category
+  // "fallback" image only when the event has none of its own.
+  const picked = pickTicketmasterImage(e.images);
+  const img = picked.url;
   const price = (e.priceRanges || [])[0] || {};
   return {
     id: `tm_${e.id}`,
@@ -114,6 +115,9 @@ function mapEvent(e: any, countryName: string): Doc | null {
       title: e.name,
       description: e.info ?? null,
       imageUrl: img ?? null,
+      // App shows only items with a picture (see ./image.ts).
+      hasImage: isUsableImageUrl(img),
+      imageIsFallback: picked.fallback,
       category: e.classifications?.[0]?.segment?.name ?? 'event',
       city: venue.city?.name ?? venue.name ?? null,
       country: countryName,
@@ -318,7 +322,7 @@ async function runPriorityCities(key: string): Promise<Record<string, number>> {
       for (const d of byName) if (!have.has(d.id)) docs.push(d);
     }
     counts[city] = docs.length;
-    for (const d of docs) {
+    for (const d of withPicture(docs)) {
       const k =
         `${(d.data.title as string) || ''}|${(d.data.city as string) || ''}`
           .toLowerCase();
@@ -357,11 +361,13 @@ async function runTicketmaster(key: string): Promise<number> {
     }
   }
 
+  // Picture-less events are never shown by the app, so they are not stored
+  // (nor counted in external_country_stats) — same rule as Viator / Tiqets.
   for (const [name, iso] of Object.entries(COUNTRY_ISO)) {
-    add(await fetchForCountry(key, iso, name));
+    add(withPicture(await fetchForCountry(key, iso, name)));
   }
   for (const { city, country } of TOP_CITIES) {
-    add(await fetchForCity(key, city, country));
+    add(withPicture(await fetchForCity(key, city, country)));
   }
   if (all.length > 0) {
     await upsertAll(all);

@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../domain/entities/event.dart';
 import '../../domain/entities/event_country_stat.dart';
@@ -358,15 +359,17 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       query = query.orderBy('startDate', descending: false);
 
       // Pull a wider page when city must also be narrowed client-side.
-      query = query.limit(hasCategory && hasCity ? 200 : 100);
+      final pageSize = hasCategory && hasCity ? 200 : 100;
 
-      final snapshot = await query.get(_opts(preferCache));
-
-      var events = snapshot.docs
-          .map(EventModel.fromFirestore)
-          .where((e) => e.isPublic) // private events excluded from discovery
-          .where((e) => e.isLive) // scheduled-but-not-yet-due events hidden
-          .toList();
+      // Public browsing: private, not-yet-due and picture-less events are
+      // dropped; one extra page tops the list up only when the filter thinned
+      // it by more than a quarter (a stray private event costs no extra read).
+      var events = await _readDiscoverable(
+        query,
+        pageSize: pageSize,
+        want: pageSize * 3 ~/ 4,
+        options: _opts(preferCache),
+      );
 
       // Narrow the remaining filter (city) client-side when both were requested.
       if (hasCategory && hasCity) {
@@ -382,6 +385,36 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       debugPrint('Error getting events: $e');
       throw ServerException('Failed to load events: $e');
     }
+  }
+
+  /// Extra ordered pages [_readDiscoverable] may read to refill a page the
+  /// discovery filter thinned (so the cost is at most 1 + this many pages).
+  static const int _maxTopUpPages = 1;
+
+  /// Reads [query] in pages of [pageSize] and keeps the publicly browsable
+  /// events (public, live, with a picture — see [eventHasPicture]) until
+  /// [want] are kept, the query runs out, or [_maxTopUpPages] extra pages were
+  /// read. Never an unbounded loop.
+  Future<List<Event>> _readDiscoverable(
+    Query<Map<String, dynamic>> query, {
+    required int pageSize,
+    required int want,
+    GetOptions options = const GetOptions(),
+  }) async {
+    final out = <Event>[];
+    DocumentSnapshot<Map<String, dynamic>>? cursor;
+    for (var page = 0; page <= _maxTopUpPages; page++) {
+      var q = query;
+      if (cursor != null) q = q.startAfterDocument(cursor);
+      final snap = await q.limit(pageSize).get(options);
+      out.addAll(snap.docs.map(EventModel.fromFirestore).where((e) =>
+          e.isPublic && // private events excluded from discovery
+          e.isLive && // scheduled-but-not-yet-due events hidden
+          eventHasPicture(e)));
+      if (out.length >= want || snap.docs.length < pageSize) break;
+      cursor = snap.docs.last;
+    }
+    return out;
   }
 
   @override
@@ -951,6 +984,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .where((event) {
         if (!event.isPublic) return false; // private events excluded from discovery
         if (!event.isLive) return false; // scheduled-not-yet-due hidden
+        if (!eventHasPicture(event)) return false; // pictures only
         if (event.latitude == null || event.longitude == null) return false;
         final distance = _calculateDistanceKm(
           lat,
@@ -1212,6 +1246,9 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           if (!e.isPublic) return null;
           if (!e.isLive) return null; // scheduled-not-yet-due hidden
           if (e.endDate.isBefore(now)) return null; // upcoming/ongoing only
+          // Pictures only: the scan keeps reading rings (bounded) until the
+          // closest [limit] WITH a picture are in hand.
+          if (!eventHasPicture(e)) return null;
           return e;
         },
         position: (e) => (e.latitude == null || e.longitude == null)
@@ -1257,7 +1294,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
 
       return snapshot.docs
           .map(EventModel.fromFirestore)
-          .where((e) => e.isLive && e.isPublic)
+          .where((e) => e.isLive && e.isPublic && eventHasPicture(e))
           .toList()
         ..sort((a, b) => a.startDate.compareTo(b.startDate));
     } catch (e) {
@@ -1300,16 +1337,17 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     List<String>? networkUserIds,
   }) async {
     try {
-      final snap = await _eventsCollection
+      final query = _eventsCollection
           .where('country', isEqualTo: country)
           .where('status', whereIn: _liveStatuses)
           .where('visibility', isEqualTo: 'public')
-          .orderBy('attendeeCount', descending: true)
-          .limit(networkUserIds == null ? limit : 60)
-          .get();
-      var events = snap.docs
-          .map(EventModel.fromFirestore)
-          .where((e) => e.isLive) // scheduled-not-yet-due hidden
+          .orderBy('attendeeCount', descending: true);
+      final pageSize = networkUserIds == null ? limit : 60;
+      // Live + picture-only, topped up (one extra page) to fill [limit].
+      var events = (await _readDiscoverable(query,
+              pageSize: pageSize,
+              want: networkUserIds == null ? limit : pageSize))
+          .take(networkUserIds == null ? limit : pageSize)
           .toList();
       if (networkUserIds != null) {
         final net = networkUserIds.toSet();

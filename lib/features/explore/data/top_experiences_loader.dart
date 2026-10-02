@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../core/cache/last_result_cache.dart';
 import '../../../core/services/user_directory_service.dart';
+import '../../../core/utils/display_image.dart';
 import '../../../core/utils/geo_query.dart';
 import '../../events/data/datasources/external_events_pager.dart';
 import '../../events/domain/entities/external_event.dart';
@@ -101,6 +102,7 @@ class TopExperiencesLoader {
             if (!doc.exists) return null;
             final e = UserExperienceModel.fromDoc(doc);
             if (!e.isPublished ||
+                !experienceHasPicture(e) ||
                 blocked.contains(e.hostId) ||
                 ExperienceCard.isHostHidden(e.hostId)) {
               return null;
@@ -116,10 +118,9 @@ class TopExperiencesLoader {
             final data = doc.data();
             if (data == null) return null;
             final p = ExternalEvent.fromMap(doc.id, data);
-            final img = p.imageUrl;
-            return img == null || img.trim().isEmpty
-                ? null
-                : TopExperienceItem.partner(p);
+            return externalEventHasPicture(p)
+                ? TopExperienceItem.partner(p)
+                : null;
           }
         } catch (_) {
           // not in the local cache
@@ -205,7 +206,9 @@ class TopExperiencesLoader {
   /// slow network never stalls the section).
   Future<List<UserExperience>> _visible(
       List<UserExperience> list, Set<String> blocked) async {
-    final kept = list.where((e) => !blocked.contains(e.hostId)).toList();
+    final kept = list
+        .where((e) => !blocked.contains(e.hostId) && experienceHasPicture(e))
+        .toList();
     final hosts = {for (final e in kept) e.hostId}..remove('');
     if (hosts.isNotEmpty) {
       try {

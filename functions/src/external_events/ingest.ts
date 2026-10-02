@@ -21,6 +21,7 @@ import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 import { buildSourceIndex } from './build_index';
 import { geohashEncode } from './geohash';
+import { isUsableImageUrl } from './image';
 
 const db = admin.firestore();
 const COLLECTION = 'external_events';
@@ -340,6 +341,7 @@ function mapProduct(
       title: p.title,
       description: p.description ?? null,
       imageUrl: best?.url ?? null,
+      hasImage: isUsableImageUrl(best?.url),
       category: viatorCategory(p.title, p.description),
       city: city.name,
       country: countryName,
@@ -549,10 +551,7 @@ async function runIngestion(apiKey: string): Promise<number> {
     if (all.length > 0) {
       // Experiences are only worth showing with a photo → drop the image-less
       // ones so we never store (or later render) a blank card.
-      const withImage = all.filter((d) => {
-        const url = d.data.imageUrl;
-        return typeof url === 'string' && url.length > 0;
-      });
+      const withImage = all.filter((d) => d.data.hasImage === true);
       await upsertAll(withImage);
       await writeCountryStats(withImage, 'viator');
       await buildSourceIndex('viator');

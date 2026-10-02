@@ -59,6 +59,8 @@ class EventFixtures {
     int attendeeCount = 0,
     String? city,
     String? country,
+    // Public discovery lists only show events with a cover picture.
+    String? imageUrl = 'https://cdn.example.com/event.jpg',
   }) {
     return {
       'organizerId': organizerId,
@@ -75,6 +77,7 @@ class EventFixtures {
       'visibility': visibility,
       'city': city,
       'country': country,
+      'imageUrl': imageUrl,
       'createdAt': Timestamp.fromDate(DateTime(2026, 1, 1)),
     };
   }
@@ -90,6 +93,7 @@ class EventFixtures {
     String status = 'published',
     String visibility = 'public',
     String? city,
+    String? imageUrl = 'https://cdn.example.com/event.jpg',
   }) async {
     await db.collection('events').doc(id).set(doc(
           organizerId: organizerId,
@@ -99,6 +103,7 @@ class EventFixtures {
           status: status,
           visibility: visibility,
           city: city,
+          imageUrl: imageUrl,
         ));
     return id;
   }

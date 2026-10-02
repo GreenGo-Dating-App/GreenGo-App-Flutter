@@ -10,6 +10,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/theme/app_glass.dart';
+import '../../../../core/utils/display_image.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../communities/domain/entities/community.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
@@ -251,8 +252,11 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
             .get();
         for (final doc in snap.docs) {
           final e = EventModel.fromFirestore(doc);
+          // Public results: pictures only (the user's own events below keep
+          // everything).
           if (e.isLive &&
               e.isPublic &&
+              eventHasPicture(e) &&
               !e.startDate.isBefore(startOfToday)) {
             byId[e.id] = e;
           }

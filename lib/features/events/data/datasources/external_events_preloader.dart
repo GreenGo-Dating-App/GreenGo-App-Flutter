@@ -118,6 +118,11 @@ class ExternalEventsPreloader {
     return sameAnchor ? (pager: w.pager, items: w.items) : null;
   }
 
+  /// The warmed first page of [source]/[sort] without claiming it (image
+  /// warm-up only); empty when nothing is warmed.
+  List<ExternalEvent> peek(String source, {String sort = 'distance'}) =>
+      _warm[keyFor(source, sort)]?.items ?? const [];
+
   /// Forget everything warmed or claimed (sign-out / account switch).
   void reset() {
     _epoch++;

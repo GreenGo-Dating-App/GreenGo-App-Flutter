@@ -14952,15 +14952,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get uexpPolicyFlexibleDesc =>
-      'Full refund until 24 h before the start, no refund after.';
+      'Full refund if you cancel at least 24 h before the start; no refund after that.';
 
   @override
   String get uexpPolicyModerateDesc =>
-      'Full refund until 7 days before, 50% until 24 h before, no refund after.';
+      'Full refund if you cancel at least 7 days before; 50% if at least 24 h before; no refund after that.';
 
   @override
   String get uexpPolicyStrictDesc =>
-      'Full refund until 7 days before, no refund after.';
+      'Full refund if you cancel at least 7 days before; no refund after that.';
 
   @override
   String get uexpPolicyWhen => 'If you cancel';
@@ -14969,13 +14969,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get uexpPolicyRefund => 'Refund';
 
   @override
-  String get uexpPolicyMoreThan7d => 'More than 7 days before';
+  String get uexpPolicyMoreThan7d => '7 days or more before';
 
   @override
-  String get uexpPolicy7dTo24h => 'Between 7 days and 24 h before';
+  String get uexpPolicy7dTo24h => 'Less than 7 days, but at least 24 h before';
 
   @override
-  String get uexpPolicyMoreThan24h => 'More than 24 h before';
+  String get uexpPolicyMoreThan24h => '24 h or more before';
 
   @override
   String get uexpPolicyLess24h => 'Less than 24 h before';
@@ -14991,7 +14991,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get uexpRuleGrace =>
-      'You cancel within 24 h of booking and the experience is more than 48 h away: 100% refund.';
+      'You cancel within 24 h of the host confirming your booking, and the experience is more than 48 h away: 100% refund.';
 
   @override
   String get uexpRuleReport =>
@@ -15690,4 +15690,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get uexpDatesRequiredToPublish =>
       'Add at least one upcoming date to publish. Your experience is saved as a draft.';
+
+  @override
+  String bkRefundIfPaid(String percent, String amount) {
+    return 'If you already paid, the host owes you $percent back ($amount).';
+  }
 }

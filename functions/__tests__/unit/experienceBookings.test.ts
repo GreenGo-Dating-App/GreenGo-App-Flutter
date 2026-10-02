@@ -182,7 +182,12 @@ describe('payment methods + refund obligation', () => {
   });
   test('refundDueFor: link owes the policy share; unpaid cash owes 0; free -> null', () => {
     const price = { unitAmount: 1999, currency: 'eur', totalAmount: 5997 };
+    // Nobody marked the link payment as made: still owed, but only if paid.
     expect(M.refundDueFor(price, { mode: 'link' }, 50, 'guest_cancelled')).toEqual({
+      percent: 50, policyPercent: 50, amount: 2999, currency: 'eur',
+      reason: 'guest_cancelled_link_unconfirmed',
+    });
+    expect(M.refundDueFor(price, { mode: 'link', guestMarkedPaidAt: ts(T0) }, 50, 'guest_cancelled')).toEqual({
       percent: 50, policyPercent: 50, amount: 2999, currency: 'eur', reason: 'guest_cancelled',
     });
     expect(M.refundDueFor(price, { mode: 'cash', hostConfirmedPaidAt: null }, 100, 'host_cancelled')).toEqual({
@@ -390,6 +395,30 @@ describe('createBooking', () => {
     await expectCode(book(), 'slot_started');
     seedWorld({ slot: { status: 'cancelled' } });
     await expectCode(book(), 'slot_closed');
+  });
+});
+
+describe('grace window', () => {
+  test('the 24 h grace counts from the host confirming, not from the request', async () => {
+    // Strict listing 5 days out: without the grace, a guest cancelling now
+    // gets nothing back.
+    seedWorld({ exp: { cancellationPolicy: 'strict' }, slot: { start: ts(T0 + 5 * D), end: ts(T0 + 5 * D + 3 * H) } });
+    const r: any = await request(GUEST);
+    now = T0 + 30 * H; // the host accepts 30 h after the request
+    await svc.respondToBookingRequest(HOST, { bookingId: r.bookingId, accept: true });
+    now = T0 + 31 * H; // 1 h after confirmation, start still > 48 h away
+    await svc.cancelBooking(GUEST, { bookingId: r.bookingId });
+    expect(booking(r.bookingId).refundDue.policyPercent).toBe(100);
+
+    // Same, but cancelling 25 h after confirmation: strict applies (< 7 days).
+    seedWorld({ exp: { cancellationPolicy: 'strict' }, slot: { start: ts(T0 + 5 * D), end: ts(T0 + 5 * D + 3 * H), bookedCount: 0 } });
+    now = T0;
+    const r2: any = await request(GUEST2);
+    now = T0 + 2 * H;
+    await svc.respondToBookingRequest(HOST, { bookingId: r2.bookingId, accept: true });
+    now = T0 + 27 * H;
+    await svc.cancelBooking(GUEST2, { bookingId: r2.bookingId });
+    expect(booking(r2.bookingId).refundDue.policyPercent).toBe(0);
   });
 });
 

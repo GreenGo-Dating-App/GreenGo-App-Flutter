@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import '../../../attractions/data/attractions_prefetch.dart';
+import '../../../user_experiences/presentation/experience_feed_prefetch.dart';
 import '../../domain/entities/event.dart';
 import '../datasources/events_remote_datasource.dart';
 import '../datasources/external_events_preloader.dart';
@@ -9,11 +11,13 @@ import 'events_location.dart';
 /// Background prefetch for the Events tab.
 ///
 /// Called by MainNavigationScreen once the first tab has painted. It warms
-/// EXACTLY the queries the Events tab runs on open — the Community feed
-/// (closest [communityLimit] around [EventsLocation]) and the first Live /
-/// Experiences pages ([ExternalEventsPreloader]) — writing the LastResultCache
-/// so the tab paints instantly, and handing the results to the tab so it does
-/// not re-read them. Never throws; deduplicated per session.
+/// EXACTLY the queries the Events page runs on open — the Community feed
+/// (closest [communityLimit] around [EventsLocation]), the first partner
+/// pages ([ExternalEventsPreloader]), the Attractions tab's country
+/// ([AttractionsPrefetch]) and the Experiences "All" community page
+/// ([ExperienceFeedPrefetch]) — writing the LastResultCache so each tab
+/// paints instantly, and handing the results over so nothing is re-read.
+/// All of them run in parallel. Never throws; deduplicated per session.
 class EventsPrefetch {
   EventsPrefetch._();
 
@@ -54,10 +58,22 @@ class EventsPrefetch {
   static Future<void> _run(String userId, int epoch) async {
     final live = ExternalEventsPreloader.instance.warm(userId);
     final anchor = await EventsLocation.quick(userId);
-    if (anchor != null && !_communityClaimed && epoch == _epoch) {
+    if (epoch != _epoch) return;
+    if (anchor != null && !_communityClaimed) {
       _communityJob = _warmCommunity(anchor.lat, anchor.lng, epoch);
     }
-    await Future.wait([live, if (_communityJob != null) _communityJob!]);
+    // The other two tabs of the Events page (built lazily by its TabBarView,
+    // so without this their first open always waited for the network).
+    final attractions =
+        AttractionsPrefetch.warm(userId, lat: anchor?.lat, lng: anchor?.lng);
+    final experiences =
+        ExperienceFeedPrefetch.warm(lat: anchor?.lat, lng: anchor?.lng);
+    await Future.wait([
+      live,
+      attractions,
+      experiences,
+      if (_communityJob != null) _communityJob!,
+    ]);
   }
 
   static Future<void> _warmCommunity(double lat, double lng, int epoch) async {
@@ -85,8 +101,12 @@ class EventsPrefetch {
     return c.events;
   }
 
-  /// Forget all per-account prefetch state — this, [ExternalEventsPreloader]
-  /// and the [EventsLocation] anchor (sign-out / account switch).
+  /// The prefetched Community feed without claiming it (image warm-up only).
+  static List<Event> peekCommunity() => _community?.events ?? const [];
+
+  /// Forget all per-account prefetch state — this, [ExternalEventsPreloader],
+  /// the Attractions / Experiences warm-ups and the [EventsLocation] anchor
+  /// (sign-out / account switch).
   static void reset() {
     _epoch++;
     _userId = null;
@@ -95,6 +115,8 @@ class EventsPrefetch {
     _communityClaimed = false;
     _community = null;
     ExternalEventsPreloader.instance.reset();
+    AttractionsPrefetch.reset();
+    ExperienceFeedPrefetch.reset();
     EventsLocation.reset();
   }
 }

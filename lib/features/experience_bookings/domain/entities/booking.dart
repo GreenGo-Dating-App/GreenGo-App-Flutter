@@ -142,6 +142,9 @@ class RefundDue extends Equatable {
 
   bool get cashUnpaid => reason.endsWith('_cash_unpaid');
 
+  /// Link payment nobody has marked as made: owed only if the guest paid.
+  bool get linkUnconfirmed => reason.endsWith('_link_unconfirmed');
+
   @override
   List<Object?> get props =>
       [percent, policyPercent, amount, currency, reason, decidedAt];

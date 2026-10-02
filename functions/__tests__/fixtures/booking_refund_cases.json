@@ -283,7 +283,7 @@
         "policyPercent": 50,
         "amount": 2999,
         "currency": "eur",
-        "reason": "guest_cancelled"
+        "reason": "guest_cancelled_link_unconfirmed"
       }
     },
     {
@@ -363,7 +363,7 @@
         "policyPercent": 0,
         "amount": 0,
         "currency": "brl",
-        "reason": "guest_cancelled"
+        "reason": "guest_cancelled_link_unconfirmed"
       }
     },
     {
@@ -383,7 +383,7 @@
         "policyPercent": 50,
         "amount": 2250,
         "currency": "jpy",
-        "reason": "guest_cancelled"
+        "reason": "guest_cancelled_link_unconfirmed"
       }
     },
     {
@@ -403,7 +403,7 @@
         "policyPercent": 50,
         "amount": 167,
         "currency": "usd",
-        "reason": "guest_cancelled"
+        "reason": "guest_cancelled_link_unconfirmed"
       }
     },
     {

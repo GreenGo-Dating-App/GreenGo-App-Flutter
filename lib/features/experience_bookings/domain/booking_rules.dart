@@ -91,7 +91,13 @@ class BookingRules {
       policyPercent: policyPercent,
       amount: (price.totalAmount * pct / 100).round(),
       currency: price.currency,
-      reason: unpaidCash ? '${reason}_cash_unpaid' : reason,
+      reason: unpaidCash
+          ? '${reason}_cash_unpaid'
+          : (mode == BookingPaymentMode.link &&
+                  payment.guestMarkedPaidAt == null &&
+                  payment.hostConfirmedPaidAt == null)
+              ? '${reason}_link_unconfirmed'
+              : reason,
     );
   }
 
@@ -104,7 +110,8 @@ class BookingRules {
       b.policy,
       now: now,
       slotStart: b.slotStart,
-      bookedAt: b.createdAt ?? b.confirmedAt ?? now,
+      // The 24 h grace window starts when the host confirms the request.
+      bookedAt: b.confirmedAt ?? b.createdAt ?? now,
       byHost: byHost,
     );
     return refundDue(b.price, b.payment, percent,

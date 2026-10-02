@@ -15095,15 +15095,15 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get uexpPolicyFlexibleDesc =>
-      'Reembolso total até 24 h antes do início; depois, sem reembolso.';
+      'Reembolso total se cancelar pelo menos 24 h antes do início; sem reembolso depois disso.';
 
   @override
   String get uexpPolicyModerateDesc =>
-      'Reembolso total até 7 dias antes, 50% até 24 h antes; depois, sem reembolso.';
+      'Reembolso total se cancelar pelo menos 7 dias antes; 50% se for pelo menos 24 h antes; sem reembolso depois disso.';
 
   @override
   String get uexpPolicyStrictDesc =>
-      'Reembolso total até 7 dias antes; depois, sem reembolso.';
+      'Reembolso total se cancelar pelo menos 7 dias antes; sem reembolso depois disso.';
 
   @override
   String get uexpPolicyWhen => 'Se cancelares';
@@ -15112,13 +15112,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get uexpPolicyRefund => 'Reembolso';
 
   @override
-  String get uexpPolicyMoreThan7d => 'Mais de 7 dias antes';
+  String get uexpPolicyMoreThan7d => '7 dias ou mais antes';
 
   @override
-  String get uexpPolicy7dTo24h => 'Entre 7 dias e 24 h antes';
+  String get uexpPolicy7dTo24h => 'Menos de 7 dias, mas pelo menos 24 h antes';
 
   @override
-  String get uexpPolicyMoreThan24h => 'Mais de 24 h antes';
+  String get uexpPolicyMoreThan24h => '24 h ou mais antes';
 
   @override
   String get uexpPolicyLess24h => 'Menos de 24 h antes';
@@ -15134,7 +15134,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get uexpRuleGrace =>
-      'Cancelas nas 24 h seguintes à reserva e faltam mais de 48 h para a experiência: reembolso de 100%.';
+      'Cancela nas 24 h seguintes à confirmação da reserva pelo anfitrião e faltam mais de 48 h para a experiência: reembolso de 100%.';
 
   @override
   String get uexpRuleReport =>
@@ -15844,6 +15844,11 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get uexpDatesRequiredToPublish =>
       'Adicione pelo menos uma data futura para publicar. A sua experiência foi guardada como rascunho.';
+
+  @override
+  String bkRefundIfPaid(String percent, String amount) {
+    return 'Se já pagou, o anfitrião deve-lhe devolver $percent ($amount).';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -30942,15 +30947,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get uexpPolicyFlexibleDesc =>
-      'Reembolso total até 24 h antes do início; depois disso, sem reembolso.';
+      'Reembolso total se você cancelar pelo menos 24 h antes do início; sem reembolso depois disso.';
 
   @override
   String get uexpPolicyModerateDesc =>
-      'Reembolso total até 7 dias antes, 50% até 24 h antes; depois disso, sem reembolso.';
+      'Reembolso total se você cancelar pelo menos 7 dias antes; 50% se for pelo menos 24 h antes; sem reembolso depois disso.';
 
   @override
   String get uexpPolicyStrictDesc =>
-      'Reembolso total até 7 dias antes; depois disso, sem reembolso.';
+      'Reembolso total se você cancelar pelo menos 7 dias antes; sem reembolso depois disso.';
 
   @override
   String get uexpPolicyWhen => 'Se você cancelar';
@@ -30959,13 +30964,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get uexpPolicyRefund => 'Reembolso';
 
   @override
-  String get uexpPolicyMoreThan7d => 'Mais de 7 dias antes';
+  String get uexpPolicyMoreThan7d => '7 dias ou mais antes';
 
   @override
-  String get uexpPolicy7dTo24h => 'Entre 7 dias e 24 h antes';
+  String get uexpPolicy7dTo24h => 'Menos de 7 dias, mas pelo menos 24 h antes';
 
   @override
-  String get uexpPolicyMoreThan24h => 'Mais de 24 h antes';
+  String get uexpPolicyMoreThan24h => '24 h ou mais antes';
 
   @override
   String get uexpPolicyLess24h => 'Menos de 24 h antes';
@@ -30981,7 +30986,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get uexpRuleGrace =>
-      'Você cancela em até 24 h após a reserva e faltam mais de 48 h para a experiência: reembolso de 100%.';
+      'Você cancela em até 24 h depois que o anfitrião confirma sua reserva e faltam mais de 48 h para a experiência: reembolso de 100%.';
 
   @override
   String get uexpRuleReport =>
@@ -31689,4 +31694,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get uexpDatesRequiredToPublish =>
       'Adicione pelo menos uma data futura para publicar. Sua experiência foi salva como rascunho.';
+
+  @override
+  String bkRefundIfPaid(String percent, String amount) {
+    return 'Se você já pagou, o anfitrião deve devolver $percent ($amount).';
+  }
 }

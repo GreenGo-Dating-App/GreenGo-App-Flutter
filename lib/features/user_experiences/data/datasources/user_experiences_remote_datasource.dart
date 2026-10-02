@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 
+import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../events/data/datasources/geo_ring_scanner.dart';
 import '../../domain/entities/experience_review.dart';
@@ -75,6 +76,12 @@ class UserExperiencesRemoteDataSource {
     int pageSize = 20,
   }) {
     final published = _col.where('status', isEqualTo: 'published');
+    // Public feed: pictures only (the host's own list, [hostFeed], keeps all).
+    UserExperience? parsePublic(QueryDocumentSnapshot<Map<String, dynamic>> d) {
+      final e = UserExperienceModel.fromDoc(d);
+      return experienceHasPicture(e) ? e : null;
+    }
+
     final tokens = query
         .toLowerCase()
         .split(RegExp(r'[\s!-/:-@\[-`{-~]+'))
@@ -90,6 +97,7 @@ class UserExperiencesRemoteDataSource {
             .orderBy('createdAt', descending: true),
         pageSize,
         keep: (e) =>
+            experienceHasPicture(e) &&
             tokens.skip(1).every(e.searchKeywords.contains) &&
             (category == null || e.category == category),
       );
@@ -99,6 +107,7 @@ class UserExperiencesRemoteDataSource {
       final newestInCategory = _QueryPager(
         byCategory.orderBy('createdAt', descending: true),
         pageSize,
+        keep: experienceHasPicture,
       );
       if (lat == null || lng == null) return newestInCategory;
       // Nearest-first within the category too (index user_experiences(status,
@@ -112,7 +121,7 @@ class UserExperiencesRemoteDataSource {
           startRadiusM: 50000,
           perQueryLimit: pageSize,
           maxRoundsPerCall: 4,
-          parse: UserExperienceModel.fromDoc,
+          parse: parsePublic,
           position: (e) =>
               e.hasCoordinates ? (lat: e.lat!, lng: e.lng!) : null,
         ),
@@ -121,7 +130,8 @@ class UserExperiencesRemoteDataSource {
       );
     }
     final newest = _QueryPager(
-        published.orderBy('createdAt', descending: true), pageSize);
+        published.orderBy('createdAt', descending: true), pageSize,
+        keep: experienceHasPicture);
     if (lat == null || lng == null) return newest;
     return _NearbyThenNewestPager(
       scanner: GeoRingScanner<UserExperience>(
@@ -131,7 +141,7 @@ class UserExperiencesRemoteDataSource {
         startRadiusM: 50000,
         perQueryLimit: pageSize,
         maxRoundsPerCall: 4,
-        parse: UserExperienceModel.fromDoc,
+        parse: parsePublic,
         position: (e) => e.hasCoordinates ? (lat: e.lat!, lng: e.lng!) : null,
       ),
       fallback: newest,
@@ -493,9 +503,13 @@ class UserExperiencesRemoteDataSource {
 }
 
 /// Cursor pager over an ordered query; [keep] filters a page client-side
-/// (the cursor still advances past dropped docs).
+/// (the cursor still advances past dropped docs). A page thinned by [keep] /
+/// [skipIds] is topped up from the following docs, at most [maxReadsPerPage]
+/// reads per [next] (never an unbounded loop).
 class _QueryPager implements ExperienceFeedPager {
   _QueryPager(this._query, this._pageSize, {this.keep, this.skipIds});
+
+  static const int maxReadsPerPage = 3;
 
   final Query<Map<String, dynamic>> _query;
   final int _pageSize;
@@ -512,17 +526,22 @@ class _QueryPager implements ExperienceFeedPager {
 
   @override
   Future<List<UserExperience>> next() async {
-    if (!_hasMore) return const [];
-    var q = _query.limit(_pageSize);
-    if (_last != null) q = q.startAfterDocument(_last!);
-    final snap = await q.get();
-    if (snap.docs.isNotEmpty) _last = snap.docs.last;
-    _hasMore = snap.docs.length >= _pageSize;
-    return [
-      for (final d in snap.docs)
-        if (!(skipIds?.contains(d.id) ?? false))
-          UserExperienceModel.fromDoc(d),
-    ].where((e) => keep?.call(e) ?? true).toList();
+    final out = <UserExperience>[];
+    for (var reads = 0;
+        _hasMore && out.length < _pageSize && reads < maxReadsPerPage;
+        reads++) {
+      var q = _query;
+      if (_last != null) q = q.startAfterDocument(_last!);
+      final snap = await q.limit(_pageSize).get();
+      if (snap.docs.isNotEmpty) _last = snap.docs.last;
+      _hasMore = snap.docs.length >= _pageSize;
+      out.addAll([
+        for (final d in snap.docs)
+          if (!(skipIds?.contains(d.id) ?? false))
+            UserExperienceModel.fromDoc(d),
+      ].where((e) => keep?.call(e) ?? true));
+    }
+    return out;
   }
 }
 
@@ -534,10 +553,14 @@ class _NearbyThenNewestPager implements ExperienceFeedPager {
     required this.scanner,
     required _QueryPager fallback,
     required this.pageSize,
-  }) : _fallbackQuery = fallback._query;
+  })  : _fallbackQuery = fallback._query,
+        _fallbackKeep = fallback.keep;
 
   final GeoRingScanner<UserExperience> scanner;
   final Query<Map<String, dynamic>> _fallbackQuery;
+
+  /// The fallback's own filter (pictures only), kept across the hand-off.
+  final bool Function(UserExperience e)? _fallbackKeep;
   final int pageSize;
   final Set<String> _seen = {};
   _QueryPager? _fallback;
@@ -546,8 +569,9 @@ class _NearbyThenNewestPager implements ExperienceFeedPager {
   /// serve the newest-first list instead.
   bool _scanFailed = false;
 
-  /// The fallback's first page, read in parallel with the first scan so a
-  /// sparse area (scan exhausted quickly) doesn't wait for it afterwards.
+  /// The fallback's first page, read in parallel with the scan once the
+  /// nearest ring came back empty, so a sparse area (scan exhausted quickly)
+  /// doesn't wait for it afterwards.
   Future<List<UserExperience>>? _prefetch;
   bool _first = true;
 
@@ -572,16 +596,22 @@ class _NearbyThenNewestPager implements ExperienceFeedPager {
     final out = <UserExperience>[];
     if (_first) {
       _first = false;
-      _fallback = _QueryPager(_fallbackQuery, pageSize, skipIds: _seen);
-      final prefetch = _fallback!.next();
-      prefetch.then((_) {}, onError: (Object _) {});
-      _prefetch = prefetch;
       // Fast first paint: one read round; return as soon as the nearest ring
       // has anything instead of filling a whole page first.
       for (final e in await _scan(maxRounds: 1)) {
         if (_seen.add(e.id)) out.add(e);
       }
       if (out.isNotEmpty) return out;
+      // Sparse area (nearest ring empty): read the fallback's first page in
+      // parallel with the remaining rings. It used to start on EVERY open,
+      // so a dense area paid for a newest-first page it never showed.
+      if (_scanning) {
+        _fallback = _QueryPager(_fallbackQuery, pageSize,
+            keep: _fallbackKeep, skipIds: _seen);
+        final prefetch = _fallback!.next();
+        prefetch.then((_) {}, onError: (Object _) {});
+        _prefetch = prefetch;
+      }
     }
     // A ring can come back empty (sparse area) — keep scanning, bounded.
     var guard = 0;
@@ -592,7 +622,8 @@ class _NearbyThenNewestPager implements ExperienceFeedPager {
     }
     if (out.isNotEmpty) return out;
     if (_scanning) return out; // budget spent; next scroll continues
-    _fallback ??= _QueryPager(_fallbackQuery, pageSize, skipIds: _seen);
+    _fallback ??= _QueryPager(_fallbackQuery, pageSize,
+        keep: _fallbackKeep, skipIds: _seen);
     final prefetched = _prefetch;
     if (prefetched != null) {
       _prefetch = null;

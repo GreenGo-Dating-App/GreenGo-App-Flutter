@@ -15141,15 +15141,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get uexpPolicyFlexibleDesc =>
-      'Volle Erstattung bis 24 Std. vor Beginn, danach keine Erstattung.';
+      'Volle Erstattung bei Stornierung mindestens 24 Std. vor Beginn; danach keine Erstattung.';
 
   @override
   String get uexpPolicyModerateDesc =>
-      'Volle Erstattung bis 7 Tage vorher, 50 % bis 24 Std. vorher, danach keine Erstattung.';
+      'Volle Erstattung bei Stornierung mindestens 7 Tage vorher; 50 % bei mindestens 24 Std. vorher; danach keine Erstattung.';
 
   @override
   String get uexpPolicyStrictDesc =>
-      'Volle Erstattung bis 7 Tage vorher, danach keine Erstattung.';
+      'Volle Erstattung bei Stornierung mindestens 7 Tage vorher; danach keine Erstattung.';
 
   @override
   String get uexpPolicyWhen => 'Bei Stornierung';
@@ -15158,13 +15158,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get uexpPolicyRefund => 'Erstattung';
 
   @override
-  String get uexpPolicyMoreThan7d => 'Mehr als 7 Tage vorher';
+  String get uexpPolicyMoreThan7d => '7 Tage oder mehr vorher';
 
   @override
-  String get uexpPolicy7dTo24h => 'Zwischen 7 Tagen und 24 Std. vorher';
+  String get uexpPolicy7dTo24h =>
+      'Weniger als 7 Tage, aber mindestens 24 Std. vorher';
 
   @override
-  String get uexpPolicyMoreThan24h => 'Mehr als 24 Std. vorher';
+  String get uexpPolicyMoreThan24h => '24 Std. oder mehr vorher';
 
   @override
   String get uexpPolicyLess24h => 'Weniger als 24 Std. vorher';
@@ -15180,7 +15181,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get uexpRuleGrace =>
-      'Du stornierst innerhalb von 24 Std. nach der Buchung und das Erlebnis ist mehr als 48 Std. entfernt: 100 % Erstattung.';
+      'Du stornierst innerhalb von 24 Std., nachdem der Gastgeber deine Buchung bestätigt hat, und das Erlebnis ist mehr als 48 Std. entfernt: 100 % Erstattung.';
 
   @override
   String get uexpRuleReport =>
@@ -15892,4 +15893,9 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get uexpDatesRequiredToPublish =>
       'Füge mindestens einen kommenden Termin hinzu, um zu veröffentlichen. Dein Erlebnis ist als Entwurf gespeichert.';
+
+  @override
+  String bkRefundIfPaid(String percent, String amount) {
+    return 'Wenn du bereits bezahlt hast, schuldet dir der Gastgeber $percent ($amount).';
+  }
 }

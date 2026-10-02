@@ -226,8 +226,9 @@ export type CancelledBy = 'guest' | 'host';
  * Percent of the price the guest is owed back.
  *   host cancels                                   -> 100
  *   at / after the start (late, guest no-show)     -> 0
- *   guest, within 24 h of booking AND the start is
- *     still more than 48 h away (at cancel time)    -> 100 (grace)
+ *   guest, within 24 h of the booking being CONFIRMED
+ *     by the host ([bookedAt]) AND the start is still
+ *     more than 48 h away (at cancel time)           -> 100 (grace)
  *   flexible  100 until 24 h before, then 0
  *   moderate  100 until 7 days before, 50 until 24 h before, then 0
  *   strict    100 until 7 days before, then 0
@@ -383,7 +384,10 @@ export interface RefundDue {
 /**
  * The refund OBLIGATION for a booking (GreenGo never executes it).
  *   free                      -> null
- *   link                      -> policy percent of the total
+ *   link                      -> policy percent of the total; when nobody has
+ *                                marked the link payment as made yet, the
+ *                                reason ends in `_link_unconfirmed` (owed only
+ *                                if the guest did pay)
  *   cash, host has NOT yet confirmed receiving it -> 0 (cash is paid at the
  *                                meeting, so nothing has changed hands)
  *   cash, receipt confirmed   -> policy percent of the total
@@ -404,7 +408,11 @@ export function refundDueFor(
     policyPercent,
     amount: Math.round((price.totalAmount * pct) / 100),
     currency: price.currency,
-    reason: mode === 'cash' && !paidCash ? `${reason}_cash_unpaid` : reason,
+    reason: mode === 'cash' && !paidCash
+      ? `${reason}_cash_unpaid`
+      : mode === 'link' && !payment?.guestMarkedPaidAt && !payment?.hostConfirmedPaidAt
+        ? `${reason}_link_unconfirmed`
+        : reason,
   };
 }
 

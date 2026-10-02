@@ -174,13 +174,22 @@ class ExperienceFeedBloc extends Bloc<ExperienceFeedEvent, ExperienceFeedState> 
     final pager = _newPager(started);
     _pager = pager;
     final key = cacheKeyFor(started);
+    // The server page starts NOW, in parallel with the cached paint below
+    // (it used to start only after the local cache had been read).
+    final firstPage = _page(pager);
+    var serverDone = false;
+    // Errors surface when awaited below, never as "unhandled".
+    firstPage.then((_) => serverDone = true, onError: (Object _) {
+      serverDone = true;
+    });
     if (!keepVisible) {
       emit(const ExperienceFeedState(status: ExperienceFeedStatus.loading));
       // Paint the first page shown last time (local cache, milliseconds);
       // the server page below replaces it. Never paints an empty result.
       if (key != null) {
         final cached = await _cache.load(key);
-        if (cached.isNotEmpty && identical(pager, _pager)) {
+        // (Skipped when the server page already landed: it is fresher.)
+        if (cached.isNotEmpty && identical(pager, _pager) && !serverDone) {
           emit(ExperienceFeedState(
             status: ExperienceFeedStatus.ready,
             items: cached,
@@ -191,7 +200,7 @@ class ExperienceFeedBloc extends Bloc<ExperienceFeedEvent, ExperienceFeedState> 
       }
     }
     try {
-      final page = await _page(pager);
+      final page = await firstPage;
       if (!identical(pager, _pager)) return; // superseded
       _ids.clear();
       final items = _unique(page);

@@ -26535,19 +26535,19 @@ abstract class AppLocalizations {
   /// No description provided for @uexpPolicyFlexibleDesc.
   ///
   /// In en, this message translates to:
-  /// **'Full refund until 24 h before the start, no refund after.'**
+  /// **'Full refund if you cancel at least 24 h before the start; no refund after that.'**
   String get uexpPolicyFlexibleDesc;
 
   /// No description provided for @uexpPolicyModerateDesc.
   ///
   /// In en, this message translates to:
-  /// **'Full refund until 7 days before, 50% until 24 h before, no refund after.'**
+  /// **'Full refund if you cancel at least 7 days before; 50% if at least 24 h before; no refund after that.'**
   String get uexpPolicyModerateDesc;
 
   /// No description provided for @uexpPolicyStrictDesc.
   ///
   /// In en, this message translates to:
-  /// **'Full refund until 7 days before, no refund after.'**
+  /// **'Full refund if you cancel at least 7 days before; no refund after that.'**
   String get uexpPolicyStrictDesc;
 
   /// No description provided for @uexpPolicyWhen.
@@ -26565,19 +26565,19 @@ abstract class AppLocalizations {
   /// No description provided for @uexpPolicyMoreThan7d.
   ///
   /// In en, this message translates to:
-  /// **'More than 7 days before'**
+  /// **'7 days or more before'**
   String get uexpPolicyMoreThan7d;
 
   /// No description provided for @uexpPolicy7dTo24h.
   ///
   /// In en, this message translates to:
-  /// **'Between 7 days and 24 h before'**
+  /// **'Less than 7 days, but at least 24 h before'**
   String get uexpPolicy7dTo24h;
 
   /// No description provided for @uexpPolicyMoreThan24h.
   ///
   /// In en, this message translates to:
-  /// **'More than 24 h before'**
+  /// **'24 h or more before'**
   String get uexpPolicyMoreThan24h;
 
   /// No description provided for @uexpPolicyLess24h.
@@ -26607,7 +26607,7 @@ abstract class AppLocalizations {
   /// No description provided for @uexpRuleGrace.
   ///
   /// In en, this message translates to:
-  /// **'You cancel within 24 h of booking and the experience is more than 48 h away: 100% refund.'**
+  /// **'You cancel within 24 h of the host confirming your booking, and the experience is more than 48 h away: 100% refund.'**
   String get uexpRuleGrace;
 
   /// No description provided for @uexpRuleReport.
@@ -27773,6 +27773,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add at least one upcoming date to publish. Your experience is saved as a draft.'**
   String get uexpDatesRequiredToPublish;
+
+  /// No description provided for @bkRefundIfPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'If you already paid, the host owes you {percent} back ({amount}).'**
+  String bkRefundIfPaid(String percent, String amount);
 }
 
 class _AppLocalizationsDelegate

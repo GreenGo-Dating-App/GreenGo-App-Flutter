@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../core/cache/last_result_cache.dart';
+import '../../../core/utils/display_image.dart';
 import '../data/datasources/user_experiences_remote_datasource.dart';
 import '../data/models/user_experience_model.dart';
 import '../domain/entities/user_experience.dart';
@@ -24,12 +25,16 @@ class ExperienceFirstPageCache {
           key,
           FirebaseFirestore.instance
               .collection(UserExperiencesRemoteDataSource.collection));
-      // A host's own list legitimately holds drafts; public lists must not
-      // resurface a listing unpublished since.
+      // A host's own list legitimately holds drafts (and anything without a
+      // picture); public lists must not resurface a listing unpublished
+      // since, nor one the live feed hides for having no picture.
       final own = key.startsWith('uexp_host_');
       return docs
           .map(UserExperienceModel.fromDoc)
-          .where((e) => own || e.status == ExperienceStatus.published)
+          .where((e) =>
+              own ||
+              (e.status == ExperienceStatus.published &&
+                  experienceHasPicture(e)))
           .toList();
     } catch (_) {
       return const [];
