@@ -14,6 +14,11 @@ class SubscriptionInitial extends SubscriptionState {}
 /// Loading state
 class SubscriptionLoading extends SubscriptionState {}
 
+/// Store product query in flight. Separate from [SubscriptionLoading] (which
+/// drives the full-screen purchase overlay) so screens can keep rendering
+/// while prices load.
+class ProductsLoading extends SubscriptionState {}
+
 /// Subscription loaded
 class SubscriptionLoaded extends SubscriptionState {
 

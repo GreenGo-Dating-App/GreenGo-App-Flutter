@@ -25,6 +25,9 @@ class ExternalEventsDataSource {
   static bool _hasImage(ExternalEvent e) =>
       e.imageUrl != null && e.imageUrl!.isNotEmpty;
 
+  /// Max docs read per geohash range in [getInBounds] (up to 9 ranges).
+  static const int perRangeLimit = 60;
+
   /// Events of [source] within [radiusM] of (lat,lng) via geohash — for plotting
   /// per-coordinate dots in the current map viewport (no country aggregation).
   Future<List<ExternalEvent>> getInBounds({
@@ -36,11 +39,16 @@ class ExternalEventsDataSource {
   }) async {
     try {
       final bounds = GeoQuery.queryBounds(lat, lng, radiusM);
+      // Bounded per range: zoomed out, a range can span a whole region, and
+      // without a limit every pan downloaded all of it.
       final snaps = await Future.wait(bounds.map((b) => _firestore
           .collection('external_events')
           .where('source', isEqualTo: source)
           .orderBy('geohash')
-          .startAt([b[0]]).endAt([b[1]]).get()));
+          .startAt([b[0]])
+          .endAt([b[1]])
+          .limit(perRangeLimit)
+          .get()));
       final out = <String, ExternalEvent>{};
       for (final s in snaps) {
         for (final doc in s.docs) {

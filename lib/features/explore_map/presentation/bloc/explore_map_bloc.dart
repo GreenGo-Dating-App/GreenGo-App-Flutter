@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/datasources/explore_map_remote_datasource.dart';
+import '../../domain/entities/map_user.dart';
 import 'explore_map_event.dart';
 import 'explore_map_state.dart';
 
@@ -25,17 +26,34 @@ class ExploreMapBloc extends Bloc<ExploreMapEvent, ExploreMapState> {
     emit(const ExploreMapLoading());
 
     try {
-      // Fetch the user's current showOnMap setting
-      final showOnMap =
-          await remoteDataSource.getUserMapSettings(event.userId);
-
-      final users = await remoteDataSource.getNearbyUsers(
+      // Setting + users in parallel (the setting used to be awaited first).
+      final settingFuture = remoteDataSource.getUserMapSettings(event.userId);
+      final usersFuture = remoteDataSource.getNearbyUsers(
         latitude: event.latitude,
         longitude: event.longitude,
         radiusKm: event.radiusKm,
         currentUserId: event.userId,
         currentUserLanguages: event.currentUserLanguages,
       );
+      // If either throws before both are awaited, the other's error must not
+      // surface as unhandled; awaiting below still receives it.
+      settingFuture.ignore();
+      usersFuture.ignore();
+
+      // Instant paint of the last result (local cache only; never empty).
+      final cached = await remoteDataSource.getCachedNearbyUsers(
+        latitude: event.latitude,
+        longitude: event.longitude,
+        radiusKm: event.radiusKm,
+        currentUserId: event.userId,
+        currentUserLanguages: event.currentUserLanguages,
+      );
+      if (cached.isNotEmpty && state is ExploreMapLoading) {
+        emit(ExploreMapLoaded(users: cached, radiusKm: event.radiusKm));
+      }
+
+      final showOnMap = await settingFuture;
+      final users = await usersFuture;
 
       debugPrint(
           '[ExploreMapBloc] Loaded ${users.length} nearby users (radius: ${event.radiusKm}km)');
@@ -57,16 +75,18 @@ class ExploreMapBloc extends Bloc<ExploreMapEvent, ExploreMapState> {
   ) async {
     // Keep current state visible while refreshing (no loading spinner)
     try {
-      final showOnMap =
-          await remoteDataSource.getUserMapSettings(event.userId);
-
-      final users = await remoteDataSource.getNearbyUsers(
-        latitude: event.latitude,
-        longitude: event.longitude,
-        radiusKm: event.radiusKm,
-        currentUserId: event.userId,
-        currentUserLanguages: event.currentUserLanguages,
-      );
+      final results = await Future.wait<Object>([
+        remoteDataSource.getUserMapSettings(event.userId),
+        remoteDataSource.getNearbyUsers(
+          latitude: event.latitude,
+          longitude: event.longitude,
+          radiusKm: event.radiusKm,
+          currentUserId: event.userId,
+          currentUserLanguages: event.currentUserLanguages,
+        ),
+      ]);
+      final showOnMap = results[0] as bool;
+      final users = results[1] as List<MapUser>;
 
       emit(ExploreMapLoaded(
         users: users,

@@ -1,7 +1,10 @@
+import 'dart:async';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
@@ -134,15 +137,49 @@ class _FollowListTabState extends State<_FollowListTab>
     _init();
   }
 
+  String get _cacheKey =>
+      '${widget.followersTab ? 'followers' : 'following'}_${widget.userId}';
+
+  /// True while the list shows the LAST-RESULT ids (not yet a server page).
+  bool _showingCached = false;
+
+  /// A server page has been applied (the cached paint must never follow it).
+  bool _serverLoaded = false;
+
   Future<void> _init() async {
+    // Blocked ids, the first server page and the last-result ids all load in
+    // PARALLEL (they used to run blocked → page → names in sequence).
+    final blockedFuture = () async {
+      try {
+        if (di.sl.isRegistered<BlockedUsersService>()) {
+          return await di
+              .sl<BlockedUsersService>()
+              .getBlockedUserIds(widget.currentUserId);
+        }
+      } catch (_) {/* no blocks known */}
+      return const <String>{};
+    }();
+    unawaited(_paintLastResult(blockedFuture));
+    await _loadMore(blockedFuture: blockedFuture);
+  }
+
+  /// Paint the ids this tab showed last time (only non-empty, only once the
+  /// blocked set is known so a blocked user is never shown, and only if the
+  /// server page hasn't arrived yet). The server page then replaces them.
+  Future<void> _paintLastResult(Future<Set<String>> blockedFuture) async {
     try {
-      if (di.sl.isRegistered<BlockedUsersService>()) {
-        _blocked = await di
-            .sl<BlockedUsersService>()
-            .getBlockedUserIds(widget.currentUserId);
-      }
-    } catch (_) {/* no blocks known */}
-    await _loadMore();
+      final ids = await LastResultCache.loadIds(_cacheKey);
+      if (ids.isEmpty) return;
+      final blocked = await blockedFuture;
+      final shown = ids.where((id) => !blocked.contains(id)).toList();
+      if (shown.isEmpty) return;
+      await _directory.resolve(shown);
+      if (!mounted || _serverLoaded || _ids.isNotEmpty) return;
+      setState(() {
+        _showingCached = true;
+        _ids.addAll(shown);
+      });
+    } catch (_) {/* no instant paint */}
   }
 
   void _onDirectory() {
@@ -154,16 +191,25 @@ class _FollowListTabState extends State<_FollowListTab>
     if (_scroll.position.extentAfter < 600) _loadMore();
   }
 
-  Future<void> _loadMore() async {
+  Future<void> _loadMore({Future<Set<String>>? blockedFuture}) async {
     if (_loading || !_hasMore) return;
     setState(() {
       _loading = true;
       _error = false;
     });
     try {
+      final firstPage = _cursor == null;
       final page = widget.followersTab
           ? await _service.followersPage(widget.userId, after: _cursor)
           : await _service.followingPage(widget.userId, after: _cursor);
+      if (blockedFuture != null) _blocked = await blockedFuture;
+      _serverLoaded = true;
+      if (_showingCached) {
+        // The server page replaces the last-result paint.
+        _showingCached = false;
+        _ids.clear();
+        _seen.clear();
+      }
       final fresh = page.userIds
           .where((id) => id.isNotEmpty && !_blocked.contains(id) && _seen.add(id))
           .toList();
@@ -176,6 +222,7 @@ class _FollowListTabState extends State<_FollowListTab>
         _hasMore = page.hasMore;
         _loading = false;
       });
+      if (firstPage) unawaited(LastResultCache.saveIds(_cacheKey, fresh));
       // A page that was entirely filtered out must not stall the scroll.
       if (fresh.isEmpty && _hasMore) _loadMore();
     } catch (_) {

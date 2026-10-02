@@ -39,6 +39,23 @@ class _BusinessRatingBarState extends State<BusinessRatingBar> {
 
   bool get _isSelf => widget.businessId == widget.raterId;
 
+  /// Created on first use and kept (not per build). Never created for a
+  /// self-view, which renders nothing.
+  late Stream<int?> _mine = _watchMine();
+
+  Stream<int?> _watchMine() => _service.myRating(
+        businessId: widget.businessId,
+        raterId: widget.raterId,
+      );
+
+  @override
+  void didUpdateWidget(BusinessRatingBar old) {
+    super.didUpdateWidget(old);
+    if (old.businessId != widget.businessId || old.raterId != widget.raterId) {
+      _mine = _watchMine();
+    }
+  }
+
   Future<void> _rate(int stars) async {
     if (_busy) return;
     setState(() => _busy = true);
@@ -72,10 +89,7 @@ class _BusinessRatingBarState extends State<BusinessRatingBar> {
     final l10n = AppLocalizations.of(context)!;
 
     return StreamBuilder<int?>(
-      stream: _service.myRating(
-        businessId: widget.businessId,
-        raterId: widget.raterId,
-      ),
+      stream: _mine,
       builder: (context, snap) {
         final mine = snap.data ?? 0;
 
@@ -169,7 +183,7 @@ class _StarButton extends StatelessWidget {
 /// filled / half / empty gold stars followed by the rater count `(N)`.
 /// Shows nothing (empty stars + `(0)`) gracefully when a business has no
 /// ratings yet.
-class BusinessRatingSummary extends StatelessWidget {
+class BusinessRatingSummary extends StatefulWidget {
   const BusinessRatingSummary({
     required this.businessId,
     super.key,
@@ -180,13 +194,36 @@ class BusinessRatingSummary extends StatelessWidget {
   final double starSize;
 
   @override
+  State<BusinessRatingSummary> createState() => _BusinessRatingSummaryState();
+}
+
+class _BusinessRatingSummaryState extends State<BusinessRatingSummary> {
+  /// Created once per business (not on every parent rebuild).
+  late Stream<({double avg, int count})> _aggregate =
+      di.sl<RatingService>().aggregate(widget.businessId);
+  ({double avg, int count})? _last;
+
+  String get businessId => widget.businessId;
+  double get starSize => widget.starSize;
+
+  @override
+  void didUpdateWidget(BusinessRatingSummary old) {
+    super.didUpdateWidget(old);
+    if (old.businessId != widget.businessId) {
+      _aggregate = di.sl<RatingService>().aggregate(widget.businessId);
+      _last = null;
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final service = di.sl<RatingService>();
 
     return StreamBuilder<({double avg, int count})>(
-      stream: service.aggregate(businessId),
+      stream: _aggregate,
+      initialData: _last,
       builder: (context, snap) {
+        _last = snap.data ?? _last;
         final avg = snap.data?.avg ?? 0;
         final count = snap.data?.count ?? 0;
 

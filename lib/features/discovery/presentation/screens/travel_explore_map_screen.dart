@@ -55,13 +55,34 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
 
     try {
       final firestore = FirebaseFirestore.instance;
+      final profiles = firestore.collection('profiles');
 
-      // Query active travelers (isTraveler == true)
-      final travelerQuery = await firestore
-          .collection('profiles')
-          .where('isTraveler', isEqualTo: true)
-          .limit(200)
-          .get();
+      // Active travelers only, server-side (index isTraveler + travelerExpiry);
+      // falls back to the old single-field read if that query is rejected.
+      Future<QuerySnapshot<Map<String, dynamic>>> travelersQuery() async {
+        try {
+          return await profiles
+              .where('isTraveler', isEqualTo: true)
+              .where('travelerExpiry',
+                  isGreaterThan: Timestamp.fromDate(DateTime.now()))
+              .orderBy('travelerExpiry')
+              .limit(100)
+              .get();
+        } catch (_) {
+          return profiles
+              .where('isTraveler', isEqualTo: true)
+              .limit(200)
+              .get();
+        }
+      }
+
+      // Travelers and local guides in ONE parallel round trip.
+      final snaps = await Future.wait([
+        travelersQuery(),
+        profiles.where('isLocalGuide', isEqualTo: true).limit(200).get(),
+      ]);
+      final travelerQuery = snaps[0];
+      final guideQuery = snaps[1];
 
       final travelers = <Profile>[];
       for (final doc in travelerQuery.docs) {
@@ -75,13 +96,6 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
           // Skip invalid profiles
         }
       }
-
-      // Query local guides
-      final guideQuery = await firestore
-          .collection('profiles')
-          .where('isLocalGuide', isEqualTo: true)
-          .limit(200)
-          .get();
 
       final guides = <Profile>[];
       for (final doc in guideQuery.docs) {

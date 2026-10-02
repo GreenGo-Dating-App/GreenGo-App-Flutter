@@ -59,7 +59,18 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     PushNotificationService.activeConversationId = widget.conversationId;
     _loadConversationDetails();
     _markAsRead();
-    _loadInitialMessages();
+    // ONE live listener for the newest page, created once (not in build). Its
+    // first snapshot also seeds the pagination cursor — no separate .get().
+    _liveStream = _firestore
+        .collection('support_messages')
+        .where('conversationId', isEqualTo: widget.conversationId)
+        .orderBy('createdAt', descending: true)
+        .limit(_pageSize)
+        .snapshots()
+        .map((snapshot) {
+      _onFirstLiveSnapshot(snapshot);
+      return snapshot;
+    });
 
     // Listen for scroll to load more
     _scrollController.addListener(_onScroll);
@@ -84,36 +95,23 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     }
   }
 
-  Future<void> _loadInitialMessages() async {
-    try {
-      final query = _firestore
-          .collection('support_messages')
-          .where('conversationId', isEqualTo: widget.conversationId)
-          .orderBy('createdAt', descending: true)
-          .limit(_pageSize);
+  late final Stream<QuerySnapshot<Map<String, dynamic>>> _liveStream;
+  bool _seededFromLive = false;
 
-      final snapshot = await query.get();
-
-      if (mounted) {
-        setState(() {
-          _messages = snapshot.docs;
-          if (snapshot.docs.isNotEmpty) {
-            _lastDocument = snapshot.docs.last;
-          }
-          _hasMoreMessages = snapshot.docs.length >= _pageSize;
-        });
-
-        // Find ticket start message
-        for (final doc in _messages) {
-          final data = doc.data() as Map<String, dynamic>;
-          if (data['isTicketStart'] == true) {
-            _ticketStartMessageId = doc.id;
-            break;
-          }
-        }
+  /// Seeds the paginated list from the FIRST live snapshot (exactly what the
+  /// old one-shot initial .get() fetched), so older pages page in after it
+  /// and messages that later slide out of the live window stay visible.
+  void _onFirstLiveSnapshot(QuerySnapshot<Map<String, dynamic>> snapshot) {
+    if (_seededFromLive) return;
+    _seededFromLive = true;
+    _messages = List<QueryDocumentSnapshot>.of(snapshot.docs);
+    if (snapshot.docs.isNotEmpty) _lastDocument = snapshot.docs.last;
+    _hasMoreMessages = snapshot.docs.length >= _pageSize;
+    for (final doc in snapshot.docs) {
+      if (doc.data()['isTicketStart'] == true) {
+        _ticketStartMessageId = doc.id;
+        break;
       }
-    } catch (e) {
-      debugPrint('Error loading initial messages: $e');
     }
   }
 
@@ -189,9 +187,18 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
           .where(readField, isEqualTo: false)
           .get();
 
-      for (final doc in messagesSnapshot.docs) {
-        await doc.reference.update({readField: true});
+      // Batched writes (≤500 per batch, committed in parallel) instead of one
+      // round-trip per message.
+      final docs = messagesSnapshot.docs;
+      final commits = <Future<void>>[];
+      for (var i = 0; i < docs.length; i += 500) {
+        final batch = _firestore.batch();
+        for (final doc in docs.skip(i).take(500)) {
+          batch.update(doc.reference, {readField: true});
+        }
+        commits.add(batch.commit());
       }
+      await Future.wait(commits);
 
       // Reset unread count
       await _firestore
@@ -592,12 +599,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
           // Messages list with real-time updates
           Expanded(
             child: StreamBuilder<QuerySnapshot>(
-              stream: _firestore
-                  .collection('support_messages')
-                  .where('conversationId', isEqualTo: widget.conversationId)
-                  .orderBy('createdAt', descending: true)
-                  .limit(_pageSize)
-                  .snapshots(),
+              stream: _liveStream,
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting && _messages.isEmpty) {
                   return const Center(

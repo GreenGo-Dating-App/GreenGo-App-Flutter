@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -289,7 +290,9 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                   radius: 28,
                   backgroundColor: AppColors.backgroundInput,
                   backgroundImage: user.photoUrl != null
-                      ? NetworkImage(user.photoUrl!)
+                      // Disk-cached + decoded at ~2x the 56px avatar.
+                      ? ResizeImage(CachedNetworkImageProvider(user.photoUrl!),
+                          width: 112, policy: ResizeImagePolicy.fit)
                       : null,
                   child: user.photoUrl == null
                       ? const Icon(

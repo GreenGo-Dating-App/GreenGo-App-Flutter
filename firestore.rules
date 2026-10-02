@@ -1801,8 +1801,26 @@ service cloud.firestore {
     }
     match /spots/{docId} {
       allow read: if isSignedIn();
-      allow create, update: if isSignedIn()
-        && request.resource.data.get('createdBy', '') == request.auth.uid;
+      // The app stores the author as `createdByUserId` (older docs may use
+      // `createdBy`); the rule used to check only `createdBy`, which denied
+      // every spot create/update.
+      allow create: if isSignedIn()
+        && (request.resource.data.get('createdByUserId', '') == request.auth.uid
+            || request.resource.data.get('createdBy', '') == request.auth.uid);
+      allow update: if isSignedIn()
+        && ((resource.data.get('createdByUserId', '') == request.auth.uid
+              || resource.data.get('createdBy', '') == request.auth.uid)
+            // The author can never be reassigned.
+            && request.resource.data.get('createdByUserId', '')
+               == resource.data.get('createdByUserId', '')
+            // Any reviewer refreshes ONLY the aggregate after adding a review.
+            || (request.resource.data.diff(resource.data).affectedKeys()
+                  .hasOnly(['rating', 'reviewCount'])
+                && request.resource.data.rating is number
+                && request.resource.data.rating >= 0
+                && request.resource.data.rating <= 5
+                && request.resource.data.reviewCount is int
+                && request.resource.data.reviewCount >= 0));
       allow delete: if false;
     }
     match /cards/{docId} {

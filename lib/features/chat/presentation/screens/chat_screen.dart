@@ -5,6 +5,7 @@ import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -92,6 +93,18 @@ class _ChatScreenState extends State<ChatScreen> {
 
   // Cache for translated messages (all messages translated to selected language)
   final Map<String, String> _translatedMessages = {};
+
+  /// One translation Future per (message, language, content) — the list's
+  /// FutureBuilders reuse it across rebuilds instead of starting a new async
+  /// translation (and a frame of untranslated text) on every build.
+  final Map<String, Future<Message>> _translationFutures = {};
+
+  Future<Message> _memoTranslation(Message message) {
+    final key =
+        '${message.messageId}_${_targetLanguage}_${message.content.hashCode}';
+    if (_translationFutures.length > 600) _translationFutures.clear();
+    return _translationFutures[key] ??= _translateMessage(message);
+  }
   // Cache for detected source languages per message
   final Map<String, String> _detectedLanguages = {};
   bool _hasCheckedModels = false;
@@ -1340,11 +1353,12 @@ class _ChatScreenState extends State<ChatScreen> {
                               Positioned.fill(
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(12),
-                                  child: Image.network(
-                                    photoUrl,
+                                  child: CachedNetworkImage(
+                                    imageUrl: photoUrl,
                                     fit: BoxFit.cover,
-                                    loadingBuilder: (context, child, progress) {
-                                      if (progress == null) return child;
+                                    // Grid thumbnail (~120dp, 3 columns) — decode small.
+                                    memCacheWidth: 300,
+                                    placeholder: (context, _) {
                                       return Container(
                                         color: AppColors.backgroundDark,
                                         child: const Center(
@@ -1556,11 +1570,12 @@ class _ChatScreenState extends State<ChatScreen> {
                       onTap: () => _openPhotoFullscreen(context, photoUrl, privatePhotos.cast<String>(), index),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
-                        child: Image.network(
-                          photoUrl,
+                        child: CachedNetworkImage(
+                          imageUrl: photoUrl,
                           fit: BoxFit.cover,
-                          loadingBuilder: (context, child, progress) {
-                            if (progress == null) return child;
+                          // Grid thumbnail (~120dp, 3 columns) — decode small.
+                          memCacheWidth: 300,
+                          placeholder: (context, _) {
                             return Container(
                               color: AppColors.backgroundDark,
                               child: const Center(
@@ -1625,11 +1640,11 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: InteractiveViewer(
                   minScale: 0.5,
                   maxScale: 3.0,
-                  child: Image.network(
-                    photoUrl,
+                  child: CachedNetworkImage(
+                    imageUrl: photoUrl,
                     fit: BoxFit.contain,
-                    loadingBuilder: (context, child, progress) {
-                      if (progress == null) return child;
+                    // Full-screen viewer: full resolution, disk-cached.
+                    placeholder: (context, _) {
                       return const Center(
                         child: CircularProgressIndicator(
                           color: AppColors.richGold,
@@ -1847,7 +1862,8 @@ class _ChatScreenState extends State<ChatScreen> {
                               radius: 50,
                               backgroundColor: AppColors.backgroundCard,
                               backgroundImage: _headerPhoto != null
-                                  ? NetworkImage(_headerPhoto!)
+                                  ? CachedNetworkImageProvider(_headerPhoto!,
+                                      maxWidth: 200)
                                   : null,
                               child: _headerPhoto == null
                                   ? Icon(
@@ -1954,9 +1970,18 @@ class _ChatScreenState extends State<ChatScreen> {
                         // Apply translation asynchronously
                         return FutureBuilder<Message>(
                           key: ValueKey('${message.messageId}_$_targetLanguage'),
-                          future: _translateMessage(message),
+                          future: _memoTranslation(message),
                           builder: (context, snapshot) {
-                            final translatedMessage = snapshot.data ?? message;
+                            // Apply the (memoised) translation onto the
+                            // LATEST message so reactions/stars/read state
+                            // stay live.
+                            final t = snapshot.data;
+                            final translatedMessage = t == null
+                                ? message
+                                : message.copyWith(
+                                    translatedContent: t.translatedContent,
+                                    detectedLanguage: t.detectedLanguage,
+                                  );
                             final bubble = MessageBubble(
                               message: translatedMessage,
                               isCurrentUser:
@@ -2136,7 +2161,7 @@ class _ChatScreenState extends State<ChatScreen> {
               radius: 20,
               backgroundColor: AppColors.backgroundDark,
               backgroundImage: _headerPhoto != null
-                  ? NetworkImage(_headerPhoto!)
+                  ? CachedNetworkImageProvider(_headerPhoto!, maxWidth: 80)
                   : null,
               child: _headerPhoto == null
                   ? Icon(
@@ -3389,13 +3414,13 @@ class _ChatScreenState extends State<ChatScreen> {
                 itemBuilder: (context, index) {
                   return ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: Image.network(
-                      _selectedAlbumPhotos[index],
+                    child: CachedNetworkImage(
+                      imageUrl: _selectedAlbumPhotos[index],
                       width: 80,
                       height: 80,
                       fit: BoxFit.cover,
-                      cacheWidth: 160,
-                      errorBuilder: (_, __, ___) => Container(
+                      memCacheWidth: 160,
+                      errorWidget: (_, __, ___) => Container(
                         width: 80,
                         height: 80,
                         color: AppColors.backgroundDark,

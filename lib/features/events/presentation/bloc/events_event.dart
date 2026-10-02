@@ -8,10 +8,20 @@ abstract class EventsEvent {
 /// Load events with optional filters
 class LoadEvents extends EventsEvent {
 
-  const LoadEvents({this.category, this.city, this.upcoming});
+  const LoadEvents({
+    this.category,
+    this.city,
+    this.upcoming,
+    this.widenIfFew = false,
+  });
   final String? category;
   final String? city;
   final bool? upcoming;
+
+  /// With [city]: when the city query fails or returns fewer than
+  /// [EventsBloc.minCityEvents], load again without the city (the old
+  /// worldwide list).
+  final bool widenIfFew;
 }
 
 /// Load a single event by ID

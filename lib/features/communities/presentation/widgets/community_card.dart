@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -198,10 +199,11 @@ class CommunityCard extends StatelessWidget {
       child: community.imageUrl != null
           ? ClipRRect(
               borderRadius: BorderRadius.circular(AppDimensions.radiusM),
-              child: Image.network(
-                community.imageUrl!,
+              child: CachedNetworkImage(
+                imageUrl: community.imageUrl!,
                 fit: BoxFit.cover,
-                errorBuilder: (_, __, ___) => _buildTypeIcon(),
+                memCacheWidth: 112,
+                errorWidget: (_, __, ___) => _buildTypeIcon(),
               ),
             )
           : _buildTypeIcon(),

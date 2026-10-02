@@ -96,8 +96,14 @@ class GeoRingScanner<T> {
 
   /// The next ring, nearest first. Empty once the collection is exhausted, or
   /// when this call's read budget ran out before anything matched.
-  Future<List<T>> next() async {
-    final budget = _rounds + maxRoundsPerCall;
+  ///
+  /// [maxRounds] lowers this call's budget (e.g. 1 for a fast first paint);
+  /// it never raises it above [maxRoundsPerCall].
+  Future<List<T>> next({int? maxRounds}) async {
+    final perCall = maxRounds == null
+        ? maxRoundsPerCall
+        : math.min(math.max(1, maxRounds), maxRoundsPerCall);
+    final budget = _rounds + perCall;
     bool spent() => _rounds >= budget;
     while (!_exhausted) {
       final r = _radiusM;

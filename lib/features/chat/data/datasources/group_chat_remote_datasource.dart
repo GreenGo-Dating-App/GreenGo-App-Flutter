@@ -410,9 +410,13 @@ class GroupChatRemoteDataSourceImpl implements GroupChatRemoteDataSource {
 
   @override
   Stream<List<GroupMember>> getGroupMembersStream(String groupId) {
+    // Bounded: groups hold at most [maxGroupMembers] ACTIVE members, but
+    // members who left keep their doc (leftAt set), so allow headroom for
+    // those instead of capping at exactly 256.
     return _groups
         .doc(groupId)
         .collection(membersSub)
+        .limit(maxGroupMembers * 4)
         .snapshots()
         .map((snap) => snap.docs.map(_memberFromDoc).toList());
   }

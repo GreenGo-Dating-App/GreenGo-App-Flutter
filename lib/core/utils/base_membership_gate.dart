@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../features/membership/domain/entities/membership.dart';
 import '../../features/profile/domain/entities/profile.dart';
 import '../../features/subscription/presentation/screens/membership_screen.dart';
+import '../services/own_profile_store.dart';
 
 /// Centralized gate that blocks interactions for non-members.
 ///
@@ -13,7 +14,15 @@ class BaseMembershipGate {
     required Profile? profile,
     required String userId,
   }) async {
+    // A screen whose own profile hasn't loaded yet used to make every gated
+    // tap do nothing. Fall back to the shared own-profile store (the shell's
+    // live listener), reading it once if it's still empty.
+    profile ??= OwnProfileStore.instance.peek(userId) ??
+        await OwnProfileStore.instance
+            .current(userId)
+            .timeout(const Duration(seconds: 5), onTimeout: () => null);
     if (profile == null) return false;
+    if (!context.mounted) return false;
     if (profile.effectiveTier == MembershipTier.test) return true;
     if (profile.isBaseMembershipActive) return true;
 

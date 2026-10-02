@@ -27,12 +27,15 @@ class LoadSpotlightHistory extends CulturalExchangeEvent {
 
 class LoadCulturalTips extends CulturalExchangeEvent {
 
-  const LoadCulturalTips({this.country, this.category});
+  const LoadCulturalTips({this.country, this.category, this.limit = 50});
   final String? country;
   final String? category;
 
+  /// Max tips to fetch (the hub shows 10).
+  final int limit;
+
   @override
-  List<Object?> get props => [country, category];
+  List<Object?> get props => [country, category, limit];
 }
 
 class SubmitCulturalTip extends CulturalExchangeEvent {

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -36,7 +37,7 @@ class CommunityMemberTile extends StatelessWidget {
             radius: 20,
             backgroundColor: AppColors.backgroundInput,
             backgroundImage: member.photoUrl != null
-                ? NetworkImage(member.photoUrl!)
+                ? CachedNetworkImageProvider(member.photoUrl!, maxWidth: 80)
                 : null,
             child: member.photoUrl == null
                 ? Text(

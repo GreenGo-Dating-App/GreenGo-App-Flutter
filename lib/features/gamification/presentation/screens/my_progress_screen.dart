@@ -103,17 +103,19 @@ class _MyProgressScreenState extends State<MyProgressScreen> {
 
   Future<void> _loadUserLevel() async {
     try {
+      // user_levels is the collection every XP writer maintains (the old
+      // 'userLevels' name is never written, so this always showed level 1).
       final levelDoc = await FirebaseFirestore.instance
-          .collection('userLevels')
+          .collection('user_levels')
           .doc(widget.userId)
           .get();
 
       if (levelDoc.exists && mounted) {
         final data = levelDoc.data()!;
         setState(() {
-          _level = data['level'] as int? ?? 1;
-          _currentXP = data['currentXP'] as int? ?? 0;
-          _totalXP = data['totalXP'] as int? ?? 0;
+          _level = (data['level'] as num?)?.toInt() ?? 1;
+          _currentXP = (data['currentXP'] as num?)?.toInt() ?? 0;
+          _totalXP = (data['totalXP'] as num?)?.toInt() ?? 0;
           _levelTitle = _getLevelTitle(_level);
           _loadingLevel = false;
         });
@@ -153,22 +155,28 @@ class _MyProgressScreenState extends State<MyProgressScreen> {
 
   Future<void> _loadAchievements() async {
     try {
-      final achievementsSnapshot = await FirebaseFirestore.instance
-          .collection('userAchievements')
-          .where('userId', isEqualTo: widget.userId)
-          .where('isUnlocked', isEqualTo: true)
-          .get();
-
-      final challengesSnapshot = await FirebaseFirestore.instance
-          .collection('userChallenges')
-          .where('userId', isEqualTo: widget.userId)
-          .where('isCompleted', isEqualTo: true)
-          .get();
+      // achievement_progress / challenge_progress are what the gamification
+      // datasource writes ('userAchievements'/'userChallenges' never were).
+      // count() aggregates in parallel instead of downloading every doc.
+      final counts = await Future.wait([
+        FirebaseFirestore.instance
+            .collection('achievement_progress')
+            .where('userId', isEqualTo: widget.userId)
+            .where('isUnlocked', isEqualTo: true)
+            .count()
+            .get(),
+        FirebaseFirestore.instance
+            .collection('challenge_progress')
+            .where('userId', isEqualTo: widget.userId)
+            .where('isCompleted', isEqualTo: true)
+            .count()
+            .get(),
+      ]);
 
       if (mounted) {
         setState(() {
-          _achievementCount = achievementsSnapshot.docs.length;
-          _completedChallenges = challengesSnapshot.docs.length;
+          _achievementCount = counts[0].count ?? 0;
+          _completedChallenges = counts[1].count ?? 0;
           _loadingAchievements = false;
         });
       }

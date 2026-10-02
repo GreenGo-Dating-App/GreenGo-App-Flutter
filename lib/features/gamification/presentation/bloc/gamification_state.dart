@@ -112,11 +112,13 @@ class GamificationState extends Equatable {
     LeaderboardData? leaderboardData,
     bool? leaderboardLoading,
     String? leaderboardError,
+    bool clearLeaderboardError = false,
 
     // Challenges
     DailyChallengesData? challengesData,
     bool? challengesLoading,
     String? challengesError,
+    bool clearChallengesError = false,
     DailyChallenge? recentlyCompleted,
     bool clearRecentlyCompleted = false,
 
@@ -155,12 +157,16 @@ class GamificationState extends Equatable {
       // Leaderboard
       leaderboardData: leaderboardData ?? this.leaderboardData,
       leaderboardLoading: leaderboardLoading ?? this.leaderboardLoading,
-      leaderboardError: leaderboardError ?? this.leaderboardError,
+      leaderboardError: clearLeaderboardError
+          ? null
+          : (leaderboardError ?? this.leaderboardError),
 
       // Challenges
       challengesData: challengesData ?? this.challengesData,
       challengesLoading: challengesLoading ?? this.challengesLoading,
-      challengesError: challengesError ?? this.challengesError,
+      challengesError: clearChallengesError
+          ? null
+          : (challengesError ?? this.challengesError),
       recentlyCompleted: clearRecentlyCompleted
           ? null
           : (recentlyCompleted ?? this.recentlyCompleted),

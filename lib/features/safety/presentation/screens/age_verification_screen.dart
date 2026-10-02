@@ -56,8 +56,17 @@ class _AgeVerificationScreenState extends State<AgeVerificationScreen> {
   }
 
   Future<void> _load() async {
-    final state = await _service.loadState();
-    if (!mounted) return;
+    // Paint the last known state at once, then refresh from the server.
+    final liveFuture = _service.loadState();
+    final cached = await _service.loadCachedState();
+    if (cached != null && mounted && _loading) {
+      setState(() {
+        _state = cached;
+        _loading = false;
+      });
+    }
+    final state = await liveFuture;
+    if (!mounted || _submitting) return;
     setState(() {
       _state = state;
       _loading = false;

@@ -109,15 +109,19 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
           added++;
         }
       }
-      // Resolve current photos/names — the snapshotted ones are often stale.
-      final dir = await UserDirectoryService.instance
-          .resolve(_items.map((a) => a.userId));
       if (!mounted) return;
+      // Paint the rows now, from the names/photos on the attendee docs.
       setState(() {
-        _dir = dir;
         _loading = false;
         _failed = false;
       });
+      // Then refresh to the current photos/names (the snapshotted ones are
+      // often stale) — batched and cached, never blocking the list.
+      final ids = _items.map((a) => a.userId).toList();
+      UserDirectoryService.instance.resolve(ids).then((dir) {
+        if (!mounted) return;
+        setState(() => _dir = {..._dir, ...dir});
+      }, onError: (Object _) {});
     } catch (_) {
       if (!mounted) return;
       setState(() {

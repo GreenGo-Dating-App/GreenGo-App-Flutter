@@ -4,6 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../models/profile_model.dart';
@@ -118,17 +119,26 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
 
   @override
   Future<ProfileModel> getProfile(String userId) async {
+    // Own profile while the shell's live listener is feeding OwnProfileStore:
+    // that value is as fresh as a server read, so answer without a round
+    // trip. Paths that must see a just-granted entitlement read the server
+    // themselves (forceServer in the screens, OwnProfileStore.current).
+    final live = OwnProfileStore.instance.peekLive(userId);
+    if (live is ProfileModel) return live;
+
     try {
-      final doc = await firestore.collection('profiles').doc(userId).get(
-        const GetOptions(source: Source.server),
-      );
+      // Default source: the server when online, the local cache when offline.
+      // Forcing Source.server here made every profile open wait a round trip
+      // and fail outright offline.
+      final doc = await firestore.collection('profiles').doc(userId).get();
 
       if (!doc.exists) {
         throw CacheException( 'Profile not found');
       }
 
+      final data = doc.data()!;
       // Inject doc.id as userId to ensure it's always present
-      return ProfileModel.fromJson({...doc.data()!, 'userId': doc.id});
+      return ProfileModel.fromJson({...data, 'userId': doc.id});
     } on FirebaseException catch (e) {
       throw ServerException( e.message ?? 'Failed to get profile');
     } catch (e) {

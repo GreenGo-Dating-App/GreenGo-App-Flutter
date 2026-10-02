@@ -37,13 +37,16 @@ class SpotsRemoteDataSourceImpl implements SpotsRemoteDataSource {
   SpotsRemoteDataSourceImpl({required this.firestore});
   final FirebaseFirestore firestore;
 
+  /// Top-rated spots returned per city (and category).
+  static const int pageSize = 30;
+
   @override
   Future<List<SpotModel>> getSpots({
     required String city,
     SpotCategory? category,
   }) async {
     try {
-      Query query = firestore
+      Query<Map<String, dynamic>> query = firestore
           .collection('spots')
           .where('city', isEqualTo: city);
 
@@ -51,14 +54,22 @@ class SpotsRemoteDataSourceImpl implements SpotsRemoteDataSource {
         query = query.where('category', isEqualTo: category.firestoreValue);
       }
 
-      final querySnapshot = await query.limit(200).get();
-
-      final spots = querySnapshot.docs
-          .map(SpotModel.fromFirestore)
-          .toList();
-
-      // Sort by rating descending (client-side to avoid composite index)
-      spots.sort((a, b) => b.rating.compareTo(a.rating));
+      List<SpotModel> spots;
+      try {
+        // Server-ordered top [pageSize] (indexes spots(city, rating DESC) and
+        // spots(city, category, rating DESC)).
+        final snap = await query
+            .orderBy('rating', descending: true)
+            .limit(pageSize)
+            .get();
+        spots = snap.docs.map(SpotModel.fromFirestore).toList();
+      } on FirebaseException catch (e) {
+        if (e.code != 'failed-precondition') rethrow;
+        // Index not built yet: the original query, sorted client-side.
+        final snap = await query.limit(200).get();
+        spots = snap.docs.map(SpotModel.fromFirestore).toList()
+          ..sort((a, b) => b.rating.compareTo(a.rating));
+      }
 
       debugPrint('[Spots] Found ${spots.length} spots in $city'
           '${category != null ? ' (${category.displayName})' : ''}');
@@ -154,31 +165,31 @@ class SpotsRemoteDataSourceImpl implements SpotsRemoteDataSource {
   }
 
   /// Recalculate and update the aggregate rating and review count on a spot.
+  ///
+  /// Server-side sum + count aggregate: the same average as summing every
+  /// review client-side, without downloading them (1 read per 1000 entries).
   Future<void> _updateAggregateRating(String spotId) async {
     try {
-      final reviewsSnapshot = await firestore
+      final agg = await firestore
           .collection('spots')
           .doc(spotId)
           .collection('reviews')
+          .aggregate(sum('rating'), count())
           .get();
 
-      if (reviewsSnapshot.docs.isEmpty) return;
+      final reviewCount = agg.count ?? 0;
+      if (reviewCount == 0) return;
 
-      final totalRating = reviewsSnapshot.docs.fold<int>(
-        0,
-        (sum, doc) => sum + ((doc.data()['rating'] as num?)?.toInt() ?? 0),
-      );
-
-      final count = reviewsSnapshot.docs.length;
-      final avgRating = totalRating / count;
+      final totalRating = agg.getSum('rating') ?? 0;
+      final avgRating = totalRating / reviewCount;
 
       await firestore.collection('spots').doc(spotId).update({
         'rating': double.parse(avgRating.toStringAsFixed(1)),
-        'reviewCount': count,
+        'reviewCount': reviewCount,
       });
 
       debugPrint(
-          '[Spots] Updated aggregate rating for $spotId: $avgRating ($count reviews)');
+          '[Spots] Updated aggregate rating for $spotId: $avgRating ($reviewCount reviews)');
     } catch (e) {
       debugPrint('[Spots] Error updating aggregate rating: $e');
     }

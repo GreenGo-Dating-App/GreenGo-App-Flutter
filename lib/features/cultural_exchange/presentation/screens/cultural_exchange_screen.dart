@@ -28,11 +28,16 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
   }
 
   Future<void> _onRefresh() async {
-    context
-        .read<CulturalExchangeBloc>()
-        .add(const LoadCulturalExchangeData());
-    // Give time for data to load
-    await Future.delayed(const Duration(seconds: 1));
+    final bloc = context.read<CulturalExchangeBloc>()
+      ..add(const LoadCulturalExchangeData());
+    // End the refresh when the reload actually completes (tips + spotlight
+    // done loading), not after a fixed delay. Bounded as a safety net.
+    try {
+      await bloc.stream
+          .skipWhile((s) => !s.isTipsLoading)
+          .firstWhere((s) => !s.isTipsLoading && !s.isSpotlightLoading)
+          .timeout(const Duration(seconds: 15));
+    } catch (_) {/* stop the indicator anyway */}
   }
 
   @override

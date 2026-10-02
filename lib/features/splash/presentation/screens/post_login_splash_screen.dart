@@ -11,8 +11,17 @@ class PostLoginSplashScreen extends StatefulWidget {
 
   const PostLoginSplashScreen({
     required this.onComplete, super.key,
+    this.ready,
   });
   final VoidCallback onComplete;
+
+  /// Completes when the post-login preload is done. The splash then ends
+  /// early (never sooner than [minDuration]); without it, or if it takes
+  /// longer, the splash runs its full length (the old fixed 2.2s).
+  final Future<void>? ready;
+
+  /// Shortest the splash may run when [ready] completes quickly.
+  static const Duration minDuration = Duration(milliseconds: 1200);
 
   @override
   State<PostLoginSplashScreen> createState() => _PostLoginSplashScreenState();
@@ -81,6 +90,40 @@ class _PostLoginSplashScreenState extends State<PostLoginSplashScreen>
     });
 
     _controller.forward();
+
+    widget.ready?.then((_) {
+      _ready = true;
+      _maybeFinishEarly();
+    }, onError: (Object _) {/* preload is best-effort: run the full length */});
+    _controller.addListener(_maybeFinishEarly);
+  }
+
+  // Timeline (fraction of the 2.2s controller): fade-in 0-0.3, hold
+  // 0.3-0.7, fade-out 0.7-1.0. During the hold opacity and scale are
+  // constant, so skipping part of it is invisible.
+  static const double _fadeInEnd = 0.3;
+  static const double _fadeOutStart = 0.7;
+
+  bool _ready = false;
+  bool _finishingEarly = false;
+
+  /// Once the preload is done and the logo has faded in, skips the rest of
+  /// the hold and fades out, keeping the total at least
+  /// [PostLoginSplashScreen.minDuration].
+  void _maybeFinishEarly() {
+    if (!_ready || _finishingEarly || !mounted) return;
+    final v = _controller.value;
+    if (v < _fadeInEnd || v >= _fadeOutStart) return;
+    _finishingEarly = true;
+    final total = _controller.duration!;
+    final elapsed = total * v;
+    final fadeOut = total * (1 - _fadeOutStart);
+    final minRest = PostLoginSplashScreen.minDuration - elapsed;
+    // Fade out over the usual time, or longer if needed to reach the minimum.
+    final rest = minRest > fadeOut ? minRest : fadeOut;
+    _controller
+      ..value = _fadeOutStart
+      ..animateTo(1, duration: rest);
   }
 
   Future<void> _loadBusinessFlag() async {

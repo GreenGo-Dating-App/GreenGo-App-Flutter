@@ -134,12 +134,22 @@ class VideoProfileBloc extends Bloc<VideoProfileEvent, VideoProfileState> {
       (failure) {
         debugPrint(
             '[VideoProfileBloc] Discovery load failed: ${failure.message}');
+        // A failed NEXT page must not wipe the feed the user is watching.
+        if (event.lastId != null && currentVideos.isNotEmpty) return;
         emit(VideoProfileError(message: failure.message));
       },
       (newVideos) {
-        final allVideos = event.lastId != null
-            ? [...currentVideos.cast<VideoProfile>(), ...newVideos]
-            : newVideos;
+        final List<VideoProfile> allVideos;
+        if (event.lastId != null) {
+          final existing = currentVideos.cast<VideoProfile>();
+          final seen = existing.map((v) => v.id).toSet();
+          allVideos = [
+            ...existing,
+            ...newVideos.where((v) => seen.add(v.id)),
+          ];
+        } else {
+          allVideos = newVideos;
+        }
 
         emit(VideoProfileLoaded(
           videoProfile: currentProfile,

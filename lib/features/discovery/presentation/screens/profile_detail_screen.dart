@@ -134,36 +134,70 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
     super.dispose();
   }
 
-  /// Load like status for all photos
+  /// Load like status for all photos.
+  ///
+  /// "Liked by me" for EVERY photo comes from one query (my likes on this
+  /// profile); the per-photo counts run in parallel. This used to be a doc
+  /// read + a count() per photo, one photo after another.
   Future<void> _loadPhotoLikes() async {
-    if (widget.profile.photoUrls.isEmpty) return;
+    final urls = widget.profile.photoUrls;
+    if (urls.isEmpty) return;
 
     final firestore = FirebaseFirestore.instance;
+    final likes = firestore.collection('photo_likes');
+    final photoIds = [for (final u in urls) _getPhotoId(u)];
 
-    for (var i = 0; i < widget.profile.photoUrls.length; i++) {
-      final photoUrl = widget.profile.photoUrls[i];
-      final photoId = _getPhotoId(photoUrl);
-
-      // Check if current user liked this photo
-      final likeDoc = await firestore
-          .collection('photo_likes')
-          .doc('${widget.profile.userId}_${photoId}_${widget.currentUserId}')
-          .get();
-
-      // Get total like count
-      final likesQuery = await firestore
-          .collection('photo_likes')
-          .where('profileUserId', isEqualTo: widget.profile.userId)
-          .where('photoId', isEqualTo: photoId)
-          .count()
-          .get();
-
-      if (mounted) {
-        setState(() {
-          _photoLikedByMe[i] = likeDoc.exists;
-          _photoLikeCounts[i] = likesQuery.count ?? 0;
-        });
+    Future<Set<String>> likedByMe() async {
+      try {
+        // Equality-only on two fields: served by single-field index merging.
+        final snap = await likes
+            .where('profileUserId', isEqualTo: widget.profile.userId)
+            .where('likerId', isEqualTo: widget.currentUserId)
+            .limit(100)
+            .get();
+        return {
+          for (final d in snap.docs)
+            if (d.data()['photoId'] is String) d.data()['photoId'] as String,
+        };
+      } catch (_) {
+        // Fallback: the original per-photo doc reads (in parallel).
+        final docs = await Future.wait(photoIds.map((id) => likes
+            .doc('${widget.profile.userId}_${id}_${widget.currentUserId}')
+            .get()));
+        return {
+          for (var i = 0; i < docs.length; i++)
+            if (docs[i].exists) photoIds[i],
+        };
       }
+    }
+
+    Future<int> countFor(String photoId) async {
+      try {
+        final agg = await likes
+            .where('profileUserId', isEqualTo: widget.profile.userId)
+            .where('photoId', isEqualTo: photoId)
+            .count()
+            .get();
+        return agg.count ?? 0;
+      } catch (_) {
+        return 0;
+      }
+    }
+
+    final results = await Future.wait<Object>([
+      likedByMe(),
+      Future.wait(photoIds.map(countFor)),
+    ]);
+    final liked = results[0] as Set<String>;
+    final counts = results[1] as List<int>;
+
+    if (mounted) {
+      setState(() {
+        for (var i = 0; i < photoIds.length; i++) {
+          _photoLikedByMe[i] = liked.contains(photoIds[i]);
+          _photoLikeCounts[i] = counts[i];
+        }
+      });
     }
   }
 

@@ -102,19 +102,26 @@ class ExperienceImage extends StatelessWidget {
           ),
         );
     if (url.isEmpty) return placeholder();
-    return CachedNetworkImage(
-      imageUrl: url,
-      height: height,
-      width: width,
-      fit: fit,
-      memCacheWidth: (mq.size.width * mq.devicePixelRatio).round(),
-      placeholder: (_, __) => Container(
+    // Decode at the box's real width (a grid cell, not the whole screen).
+    return LayoutBuilder(builder: (context, box) {
+      final logical = width.isFinite
+          ? width
+          : (box.maxWidth.isFinite ? box.maxWidth : mq.size.width);
+      return CachedNetworkImage(
+        imageUrl: url,
         height: height,
         width: width,
-        color: AppColors.backgroundInput,
-      ),
-      errorWidget: (_, __, ___) => placeholder(),
-    );
+        fit: fit,
+        memCacheWidth:
+            (logical * mq.devicePixelRatio).round().clamp(64, 4096),
+        placeholder: (_, __) => Container(
+          height: height,
+          width: width,
+          color: AppColors.backgroundInput,
+        ),
+        errorWidget: (_, __, ___) => placeholder(),
+      );
+    });
   }
 }
 

@@ -17,6 +17,7 @@ import '../../../gamification/data/services/streak_service.dart';
 import '../../../../core/services/access_control_service.dart';
 import '../../../../core/services/activity_tracking_service.dart';
 import '../../../../core/services/onboarding_gate.dart';
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/data_preload_service.dart';
 import '../../../../core/services/push_notification_service.dart';
@@ -87,8 +88,13 @@ class MainNavigationScreen extends StatefulWidget {
 
   const MainNavigationScreen({
     required this.userId, super.key,
+    this.initialAccessData,
   });
   final String userId;
+
+  /// Access data AuthWrapper already resolved for [userId], if any. Lets the
+  /// shell show without re-reading it (the server check still follows).
+  final UserAccessData? initialAccessData;
 
   @override
   MainNavigationScreenState createState() => MainNavigationScreenState();
@@ -234,18 +240,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     _presenceService.onAppResumed();
     WidgetsBinding.instance.addObserver(this);
 
-    // Initialize gamification bloc (only when enabled)
+    // Initialize gamification bloc (only when enabled). Its level load and
+    // the level-up / achievement listeners start after the first paint, see
+    // [_startDeferredWork].
     if (AppConfig.enableGamification) {
-      _gamificationBloc = di.sl<GamificationBloc>()
-        ..add(LoadUserLevel(widget.userId));
-      // Start real-time listeners for level-up and achievement unlock celebrations
-      _startLevelUpListener();
-      _startAchievementListener();
+      _gamificationBloc = di.sl<GamificationBloc>();
     }
-
-    // Record daily engagement streak on app start (fire-and-forget; grants
-    // milestone coins at 3/7/30-day streaks via the coin ledger). Never throws.
-    di.sl<StreakService>().touch(widget.userId);
 
     // Initialize notifications bloc for badge count
     _notificationsBloc = di.sl<NotificationsBloc>()
@@ -254,13 +254,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         unreadOnly: true,
       ));
 
-    // Initialize coin bloc for balance display — load immediately then subscribe to stream
+    // Coin balance for the app bar. The live stream alone: its first event
+    // comes straight from the local cache when the doc is cached, so a
+    // separate one-shot server load only added a round trip (and a loading
+    // flicker).
     _coinBloc = di.sl<CoinBloc>()
-      ..add(LoadCoinBalance(widget.userId))
       ..add(SubscribeToCoinBalance(widget.userId));
-
-    // Grant daily 100 free coins
-    _grantDailyFreeCoins();
 
     // Initialize profile bloc for shared profile state (MUST be before _screens)
     _profileBloc = di.sl<ProfileBloc>()
@@ -282,14 +281,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       _loadUsageCounters();
     }
 
-    // Check subscription expiry and downgrade to free if expired
-    _checkSubscriptionExpiry();
-
     // Keep the effective tier live for the whole session.
     _startEntitlementWatch();
 
-    // Direct Firestore check for trial welcome popup (fallback if BlocListener doesn't fire)
-    _checkBaseMembershipDirect();
+    // Subscription expiry, release bonus, daily coins, streak and the
+    // gamification listeners run once the first tab has painted
+    // ([_startDeferredWork]) instead of competing with it for the network.
 
     // First-launch gesture tour: _tourPending makes the membership/trial
     // dialogs defer until the tour decision is made (see _showOrDeferDialog).
@@ -474,14 +471,24 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   /// cache. Returns false when either is missing (the server must decide).
   Future<bool> _applyCachedState() async {
     try {
-      final (profileDoc, accessData) = await (
-        FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(widget.userId)
-            .get(const GetOptions(source: Source.cache)),
-        _accessControlService.getCachedUserAccess(),
+      // AuthWrapper usually resolved both moments ago: its access data comes
+      // in through the constructor and the profile through OwnProfileStore.
+      // Only what's missing is read from the local cache.
+      final store = OwnProfileStore.instance;
+      final storedProfile =
+          store.uid == widget.userId ? store.raw : null;
+      final (profileData, accessData) = await (
+        storedProfile != null
+            ? Future.value(storedProfile)
+            : FirebaseFirestore.instance
+                .collection('profiles')
+                .doc(widget.userId)
+                .get(const GetOptions(source: Source.cache))
+                .then((d) => d.data()),
+        widget.initialAccessData?.userId == widget.userId
+            ? Future.value(widget.initialAccessData)
+            : _accessControlService.getCachedUserAccess(),
       ).wait.timeout(const Duration(seconds: 2));
-      final profileData = profileDoc.data();
       if (!mounted || profileData == null || accessData == null) return false;
       _applyProfileData(profileData);
       await _applyAccessData(accessData, fromServer: false);
@@ -508,8 +515,39 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   void _schedulePrefetch() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       // A short breather so the first tab's own requests go out first.
-      Future.delayed(const Duration(milliseconds: 800), _runPrefetch);
+      Future.delayed(const Duration(milliseconds: 800), () {
+        _startDeferredWork();
+        _runPrefetch();
+      });
     });
+  }
+
+  bool _deferredWorkStarted = false;
+
+  /// Per-shell work that used to start in initState and competed with the
+  /// first tab for the network. None of it is needed for the first paint.
+  void _startDeferredWork() {
+    if (!mounted || _deferredWorkStarted) return;
+    _deferredWorkStarted = true;
+
+    final gamification = _gamificationBloc;
+    if (gamification != null) {
+      gamification.add(LoadUserLevel(widget.userId));
+      // Real-time listeners for level-up and achievement unlock celebrations.
+      _startLevelUpListener();
+      _startAchievementListener();
+    }
+
+    // Record daily engagement streak (fire-and-forget; grants milestone coins
+    // at 3/7/30-day streaks via the coin ledger). Never throws.
+    di.sl<StreakService>().touch(widget.userId);
+
+    // Daily free coins (once per calendar day).
+    _grantDailyFreeCoins();
+
+    // Check subscription expiry (downgrade to free if expired) and the
+    // one-time release bonus month.
+    _checkSubscriptionExpiry();
   }
 
   void _runPrefetch() {
@@ -629,41 +667,6 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     }
   }
 
-  /// Directly fetch profile from Firestore and trigger membership check
-  /// This is a fallback in case the BlocListener doesn't fire
-  /// Suppressed during countdown phase (pre-launch)
-  Future<void> _checkBaseMembershipDirect() async {
-    // Wait for widget tree to be fully built
-    await Future.delayed(const Duration(seconds: 2));
-    if (!mounted || _membershipCheckDone) return;
-
-    // Suppress during countdown phase
-    if (_accessData != null && _accessData!.isCountdownActive) {
-      _membershipCheckDone = true;
-      return;
-    }
-
-    try {
-      // Shared server read of the own profile (see AccessControlService.serverDoc).
-      final doc = await _accessControlService
-          .serverDoc('profiles', widget.userId)
-          .timeout(const Duration(seconds: 8));
-      if (!doc.exists || !mounted || _membershipCheckDone) return;
-
-      final data = doc.data()!;
-      final hasBase = data['hasBaseMembership'] as bool? ?? false;
-      final endTs = data['baseMembershipEndDate'] as Timestamp?;
-      final endDate = endTs?.toDate();
-      final isActive = hasBase && endDate != null && endDate.isAfter(DateTime.now());
-
-      _membershipCheckDone = true;
-      // Membership state is still read (other UI keys off it); it just no
-      // longer triggers a popup either way. See _checkBaseMembership.
-    } catch (e) {
-      debugPrint('Direct membership check error: $e');
-    }
-  }
-
   /// Open the membership screen to extend (called from profile/shop).
   void showExtendMembershipDialog() {
     Navigator.of(context).push(
@@ -693,11 +696,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       );
 
       await prefs.setString('daily_coins_last_granted_${widget.userId}', todayKey);
-
-      // Refresh coin balance
-      if (mounted) {
-        _coinBloc.add(LoadCoinBalance(widget.userId));
-      }
+      // The balance stream (SubscribeToCoinBalance) picks up the new balance.
 
       debugPrint('Daily free coins: Granted 20 coins for $todayKey');
     } catch (e) {
@@ -839,6 +838,10 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
         .listen((doc) {
       final data = doc.data();
       if (data == null || !mounted) return;
+      // Share every snapshot app-wide, so other screens read the own profile
+      // from memory instead of the server (see OwnProfileStore).
+      OwnProfileStore.instance
+          .publish(widget.userId, data, fromServer: !doc.metadata.isFromCache);
       final signature = [
         data['membershipTier'],
         tierDateFromValue(data['membershipEndDate'])?.millisecondsSinceEpoch,
@@ -1002,6 +1005,13 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   }
 
   Future<void> _checkUserProfile() async {
+    // The live listener already delivered a server copy: nothing to read.
+    final store = OwnProfileStore.instance;
+    final live = store.isLive && store.uid == widget.userId ? store.raw : null;
+    if (live != null) {
+      if (mounted) _applyProfileData(live);
+      return;
+    }
     try {
       // Shared with AuthWrapper's server read of the same doc (see
       // AccessControlService.serverDoc), so launch reads it once.
@@ -1225,13 +1235,19 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
       });
     }
 
-    // Badge count: Firestore is single source of truth for unread + to approve count
+    // Badge count: Firestore is single source of truth for unread + to approve count.
+    // Bounded to the 100 most recent conversations (the inbox itself lists
+    // the latest 50), so a user with thousands of chats doesn't stream them
+    // all on every change. Served by the (userId1|userId2, lastMessageAt desc)
+    // indexes.
     _messageCountSub = fs
         .collection('conversations')
         .where(Filter.or(
           Filter('userId1', isEqualTo: uid),
           Filter('userId2', isEqualTo: uid),
         ))
+        .orderBy('lastMessageAt', descending: true)
+        .limit(100)
         .snapshots()
         .listen((snapshot) {
       if (!mounted) return;
@@ -1301,6 +1317,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
   void dispose() {
     _navAnim.dispose();
     _entitlementSub?.cancel();
+    OwnProfileStore.instance.detach(widget.userId);
     _entitlementTimer?.cancel();
     _matchCountSub?.cancel();
     _messageCountSub?.cancel();

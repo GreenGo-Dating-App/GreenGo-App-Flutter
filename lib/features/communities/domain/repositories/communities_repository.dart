@@ -43,10 +43,19 @@ abstract class CommunitiesRepository {
     required String userId,
   });
 
-  /// Get members of a community
+  /// Get members of a community, oldest first. [limit] bounds the page;
+  /// [startAfterJoinedAt] is the keyset cursor for the next page.
   Future<Either<Failure, List<CommunityMember>>> getCommunityMembers(
-    String communityId,
-  );
+    String communityId, {
+    int? limit,
+    DateTime? startAfterJoinedAt,
+  });
+
+  /// The current user's own member doc (null = not a member). One read.
+  Future<Either<Failure, CommunityMember?>> getMember({
+    required String communityId,
+    required String userId,
+  });
 
   /// Stream of messages for a community (real-time)
   Stream<Either<Failure, List<CommunityMessage>>> getCommunityMessages(
@@ -69,6 +78,7 @@ abstract class CommunitiesRepository {
     required String userId,
     required List<String> languages,
     List<String> interests,
+    String? city,
   });
 
   /// Check if user is a member of a community

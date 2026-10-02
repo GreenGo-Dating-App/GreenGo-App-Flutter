@@ -13,6 +13,7 @@ import 'package:in_app_purchase_android/billing_client_wrappers.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/product_catalog.dart';
+import '../../../../core/cache/last_result_cache.dart';
 import '../widgets/web_checkout_dialog.dart';
 import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -124,6 +125,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     _tabController = TabController(length: 2, vsync: this, initialIndex: widget.initialTab.clamp(0, 1));
 
     try {
+      // Show the balance the app already knows instead of 0 until reload.
+      final coinState = context.read<CoinBloc>().state;
+      if (coinState is CoinBalanceLoaded) {
+        _currentCoinBalance = coinState.balance.availableCoins;
+      } else if (coinState is CoinBalanceUpdated) {
+        _currentCoinBalance = coinState.balance.availableCoins;
+      }
       context.read<CoinBloc>().add(LoadCoinBalance(widget.userId));
       context.read<CoinBloc>().add(const LoadAvailablePackages());
     } catch (e) {
@@ -178,13 +186,76 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     return parts.length > 1 ? parts[1].toUpperCase() : '';
   }
 
+  /// Price map + store availability from the first successful load this
+  /// session: store prices don't change mid-session, so re-opening the shop
+  /// skips the billing query and the pricing callable entirely.
+  static Map<String, String>? _sessionPrices;
+  static Set<String>? _sessionAvailableIds;
+  static const String _pricesCacheKey = 'shop_prices';
+
   /// Load prices for coins + all memberships, keyed by canonical productId.
   /// Prefers the real Apple/Google store price (localized to the user's store
   /// region); fills anything the store doesn't return from the country-resolved
   /// pricing function, so every price always shows in the right currency.
   Future<void> _loadStorePrices() async {
+    final memo = _sessionPrices;
+    if (memo != null) {
+      setState(() {
+        _storePrices = memo;
+        _availableProductIds = _sessionAvailableIds;
+      });
+      return;
+    }
+
+    // Paint last session's labels at once (replaced below by fresh ones).
+    unawaited(_paintCachedPrices());
+
+    // The store query and the pricing callable are independent: run both
+    // at once instead of back-to-back.
+    final storeFuture = _queryStorePrices();
+    final fallbackFuture = _queryDisplayPrices();
+    final store = await storeFuture;
+    final fallback = await fallbackFuture;
+
+    // 1) Real store prices win; 2) the pricing function fills any product the
+    //    store didn't return (e.g. not live yet), in the right currency.
+    final map = <String, String>{...store.prices};
+    fallback.forEach((id, display) => map.putIfAbsent(id, () => display));
+
+    if (map.isNotEmpty) {
+      _sessionPrices = map;
+      _sessionAvailableIds = store.available;
+      unawaited(LastResultCache.saveJson(_pricesCacheKey, map));
+    }
+    if (mounted) {
+      setState(() {
+        _storePrices = map;
+        _availableProductIds = store.available;
+      });
+    }
+  }
+
+  /// Last-known price labels (non-empty only), shown until fresh ones land.
+  Future<void> _paintCachedPrices() async {
+    try {
+      final cached = await LastResultCache.loadJson(_pricesCacheKey);
+      if (cached is! Map || cached.isEmpty) return;
+      final map = <String, String>{
+        for (final e in cached.entries)
+          if (e.key is String && e.value is String)
+            e.key as String: e.value as String,
+      };
+      if (map.isEmpty || !mounted || _storePrices.isNotEmpty) return;
+      setState(() => _storePrices = map);
+    } catch (_) {}
+  }
+
+  /// Store-localized labels keyed by canonical id, plus the canonical ids the
+  /// store actually sells (null when the store could not be asked).
+  Future<({Map<String, String> prices, Set<String>? available})>
+      _queryStorePrices() async {
     final map = <String, String>{};
-    // 1) Real store prices (Apple/Google, localized by the store account region).
+    Set<String>? available;
     try {
       if (_inAppPurchase != null && await _inAppPurchase!.isAvailable()) {
         final ids = <String>{
@@ -194,7 +265,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         final resp = await _inAppPurchase!.queryProductDetails(ids);
         // Remember what the store actually sells, so the UI can hide anything
         // that would fail if tapped (Guideline 2.1(b)).
-        _availableProductIds = resp.productDetails
+        available = resp.productDetails
             .map((pd) => ProductCatalog.canonicalId(pd.id))
             .toSet();
         if (resp.notFoundIDs.isNotEmpty) {
@@ -209,8 +280,12 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     } catch (e) {
       debugPrint('[CoinShop] store prices load failed: $e');
     }
-    // 2) Fill any prices the store didn't return (e.g. products not live yet)
-    //    from the country-resolved pricing function, in the right currency.
+    return (prices: map, available: available);
+  }
+
+  /// Country-resolved display prices from the `getDisplayPrices` callable.
+  Future<Map<String, String>> _queryDisplayPrices() async {
+    final map = <String, String>{};
     try {
       final country = await _resolveCountry();
       final result = await FirebaseFunctions.instance
@@ -218,16 +293,13 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           .call({'userCountry': country});
       final prices = (result.data as Map?)?['prices'] as Map?;
       prices?.forEach((key, value) {
-        final id = key as String;
-        if (!map.containsKey(id)) {
-          final display = (value as Map?)?['display'] as String?;
-          if (display != null) map[id] = display;
-        }
+        final display = (value as Map?)?['display'] as String?;
+        if (display != null) map[key as String] = display;
       });
     } catch (e) {
       debugPrint('[CoinShop] price fallback failed: $e');
     }
-    if (mounted) setState(() => _storePrices = map);
+    return map;
   }
 
   /// Restore and consume any old unconsumed purchases to clear "already owned" state

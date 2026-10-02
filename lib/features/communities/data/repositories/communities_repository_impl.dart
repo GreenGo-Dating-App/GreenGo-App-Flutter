@@ -14,7 +14,6 @@ import '../models/community_model.dart';
 
 /// Communities Repository Implementation
 class CommunitiesRepositoryImpl implements CommunitiesRepository {
-
   CommunitiesRepositoryImpl({required this.remoteDataSource});
   final CommunitiesRemoteDataSource remoteDataSource;
 
@@ -125,12 +124,31 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
 
   @override
   Future<Either<Failure, List<CommunityMember>>> getCommunityMembers(
-    String communityId,
-  ) async {
+    String communityId, {
+    int? limit,
+    DateTime? startAfterJoinedAt,
+  }) async {
     try {
-      final members =
-          await remoteDataSource.getCommunityMembers(communityId);
+      final members = await remoteDataSource.getCommunityMembers(
+        communityId,
+        limit: limit,
+        startAfterJoinedAt: startAfterJoinedAt,
+      );
       return Right(members.map((m) => m.toEntity()).toList());
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, CommunityMember?>> getMember({
+    required String communityId,
+    required String userId,
+  }) async {
+    try {
+      final m = await remoteDataSource.getMember(
+          communityId: communityId, userId: userId);
+      return Right(m?.toEntity());
     } catch (e) {
       return Left(ServerFailure(e.toString()));
     }
@@ -145,7 +163,7 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
       return remoteDataSource
           .getCommunityMessages(communityId, limit: limit)
           .map<Either<Failure, List<CommunityMessage>>>(
-            (messages) => Right(messages.map((m) => m.toEntity()).toList()))
+              (messages) => Right(messages.map((m) => m.toEntity()).toList()))
           .transform(_errorsToLeft<List<CommunityMessage>>());
     } catch (e) {
       return Stream.value(Left(ServerFailure(e.toString())));
@@ -188,12 +206,14 @@ class CommunitiesRepositoryImpl implements CommunitiesRepository {
     required String userId,
     required List<String> languages,
     List<String> interests = const [],
+    String? city,
   }) async {
     try {
       final communities = await remoteDataSource.getRecommendedCommunities(
         userId: userId,
         languages: languages,
         interests: interests,
+        city: city,
       );
       return Right(communities.map((c) => c.toEntity()).toList());
     } catch (e) {

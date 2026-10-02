@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../domain/repositories/group_chat_repository.dart';
@@ -66,10 +68,13 @@ class GroupChatBloc extends Bloc<GroupChatEvent, GroupChatState> {
     if (!_hasLoadedOnce) emit(const GroupChatLoading());
     _hasLoadedOnce = true;
 
-    // Mark read on open (fire-and-forget — own write).
-    await markGroupRead(
+    // Mark read on open — fire-and-forget (own write) so the message stream
+    // subscribes immediately instead of waiting for the batch commit. Also
+    // re-run on scroll re-subscriptions so messages received while the chat
+    // is open are caught up, but never blocks the listener.
+    unawaited(markGroupRead(
       MarkGroupReadParams(groupId: _groupId, userId: _userId),
-    );
+    ).then((_) {}, onError: (Object _) {}));
 
     await emit.forEach(
       getGroupMessages(

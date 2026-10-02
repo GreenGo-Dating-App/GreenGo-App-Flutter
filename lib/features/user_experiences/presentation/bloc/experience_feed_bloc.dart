@@ -1,8 +1,12 @@
+import 'dart:async';
+
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/utils/geo_query.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
+import '../experience_first_page_cache.dart';
 
 // ───────────────────────────────────────────────────────────── events
 
@@ -93,8 +97,11 @@ class ExperienceFeedState extends Equatable {
 
 /// Paginated (20 per page) infinite-scroll feed of experiences.
 class ExperienceFeedBloc extends Bloc<ExperienceFeedEvent, ExperienceFeedState> {
-  ExperienceFeedBloc({required UserExperiencesRepository repository})
-      : _repo = repository,
+  ExperienceFeedBloc({
+    required UserExperiencesRepository repository,
+    ExperienceFirstPageCache cache = const ExperienceFirstPageCache(),
+  })  : _repo = repository,
+        _cache = cache,
         super(const ExperienceFeedState()) {
     on<ExperienceFeedStarted>(_onStarted);
     on<ExperienceFeedMoreRequested>(_onMore);
@@ -104,6 +111,7 @@ class ExperienceFeedBloc extends Bloc<ExperienceFeedEvent, ExperienceFeedState> 
   }
 
   final UserExperiencesRepository _repo;
+  final ExperienceFirstPageCache _cache;
   ExperienceFeedPager? _pager;
   ExperienceFeedStarted? _last;
   final Set<String> _ids = {};
@@ -129,10 +137,29 @@ class ExperienceFeedBloc extends Bloc<ExperienceFeedEvent, ExperienceFeedState> 
   List<UserExperience> _unique(Iterable<UserExperience> page) =>
       [for (final e in page) if (_ids.add(e.id)) e];
 
+  /// [LastResultCache] key of page 1 for [e]; null for searches (not
+  /// cached). Location is bucketed to its ~5km geohash cell.
+  static String? cacheKeyFor(ExperienceFeedStarted e) {
+    if (e.hostId != null) return 'uexp_host_${e.hostId}';
+    if (e.query.trim().isNotEmpty) return null;
+    final cell = (e.lat != null && e.lng != null)
+        ? GeoQuery.encode(e.lat!, e.lng!, 5)
+        : 'none';
+    return 'uexp_comm_${cell}_${e.category?.name ?? ''}';
+  }
+
   Future<void> _onStarted(
       ExperienceFeedStarted e, Emitter<ExperienceFeedState> emit) async {
+    final prev = _last;
     _last = e;
-    await _load(emit, keepVisible: false);
+    // Only the location moved (anchor refined): keep the list on screen
+    // while the re-query runs instead of flashing a spinner.
+    final onlyMoved = prev != null &&
+        prev.hostId == e.hostId &&
+        prev.category == e.category &&
+        prev.query == e.query &&
+        state.items.isNotEmpty;
+    await _load(emit, keepVisible: onlyMoved);
   }
 
   Future<void> _onRefresh(
@@ -143,20 +170,37 @@ class ExperienceFeedBloc extends Bloc<ExperienceFeedEvent, ExperienceFeedState> 
 
   Future<void> _load(Emitter<ExperienceFeedState> emit,
       {required bool keepVisible}) async {
-    final pager = _newPager(_last!);
+    final started = _last!;
+    final pager = _newPager(started);
     _pager = pager;
+    final key = cacheKeyFor(started);
     if (!keepVisible) {
       emit(const ExperienceFeedState(status: ExperienceFeedStatus.loading));
+      // Paint the first page shown last time (local cache, milliseconds);
+      // the server page below replaces it. Never paints an empty result.
+      if (key != null) {
+        final cached = await _cache.load(key);
+        if (cached.isNotEmpty && identical(pager, _pager)) {
+          emit(ExperienceFeedState(
+            status: ExperienceFeedStatus.ready,
+            items: cached,
+            // No paging until the real first page is in.
+            hasMore: false,
+          ));
+        }
+      }
     }
     try {
       final page = await _page(pager);
       if (!identical(pager, _pager)) return; // superseded
       _ids.clear();
+      final items = _unique(page);
       emit(ExperienceFeedState(
         status: ExperienceFeedStatus.ready,
-        items: _unique(page),
+        items: items,
         hasMore: pager.hasMore,
       ));
+      if (key != null) unawaited(_cache.save(key, items));
     } catch (_) {
       if (!identical(pager, _pager)) return;
       emit(state.copyWith(

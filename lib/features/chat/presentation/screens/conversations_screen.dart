@@ -772,17 +772,19 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                                           widget.userId,
                                                       otherUserId: otherUserId,
                                                       otherUserProfile: profile,
+                                                      // Already loaded in this
+                                                      // list — the chat opens
+                                                      // without re-reading it.
+                                                      initialConversation:
+                                                          conversation,
                                                     ),
                                                   ),
                                                 );
 
-                                                // Refresh conversations after returning from chat
-                                                if (context.mounted) {
-                                                  context
-                                                      .read<ConversationsBloc>()
-                                                      .add(
-                                                          const ConversationsRefreshRequested());
-                                                }
+                                                // No refresh on return: the
+                                                // conversations stream is live
+                                                // and already reflects any
+                                                // change made in the chat.
                                                 // Decrement badge by 1 conversation (Instagram style)
                                                 // Only decrement if truly unread for current user
                                                 if (conversation.unreadCount >

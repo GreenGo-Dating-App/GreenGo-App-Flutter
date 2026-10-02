@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -42,9 +43,9 @@ import '../widgets/sponsorship_gate.dart';
 /// Shows the community group chat, members, and info.
 /// Allows joining/leaving and sending messages.
 class CommunityDetailScreen extends StatefulWidget {
-
   const CommunityDetailScreen({
-    required this.community, super.key,
+    required this.community,
+    super.key,
   });
   final Community community;
 
@@ -156,6 +157,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           LoadCommunityDetail(
             communityId: widget.community.id,
             community: widget.community,
+            userId: _currentUserId,
           ),
         );
 
@@ -196,8 +198,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           } else if (state is CommunityDeleted) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content:
-                    Text(AppLocalizations.of(context)!.communitiesDeletedSuccess),
+                content: Text(
+                    AppLocalizations.of(context)!.communitiesDeletedSuccess),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -219,28 +221,30 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             );
           } else if (state is CommunityDetailLoaded) {
             // Check membership + role + refresh the community (sponsor/promo may
-            // have changed since navigation).
+            // have changed since navigation). Membership comes from the user's
+            // single members/{uid} doc - only applied once it has resolved, so
+            // an optimistic "joined" isn't reset by the instant first paint.
             final userId = _currentUserId;
             if (mounted) {
-              final me = userId == null
-                  ? null
-                  : state.members
-                      .where((m) => m.userId == userId)
-                      .cast<CommunityMember?>()
-                      .firstWhere((m) => true, orElse: () => null);
+              final me = state.myMembership;
               setState(() {
                 _community = state.community;
-                _isMember = me != null;
-                _myRole = me?.role;
-                _isMuted = me?.isMuted ?? false;
-                _canWriteTips = me?.mayWriteTips ?? false;
-                _canWriteAnnouncements = me?.mayWriteAnnouncements ?? false;
+                if (state.membershipLoaded) {
+                  _isMember = me != null;
+                  _myRole = me?.role;
+                  _isMuted = me?.isMuted ?? false;
+                  _canWriteTips = me?.mayWriteTips ?? false;
+                  _canWriteAnnouncements = me?.mayWriteAnnouncements ?? false;
+                }
               });
               // Owners/admins: load pending join requests ONCE (guarded so the
               // re-emit from the load doesn't loop the listener).
               final canModerate = (me?.isAdminOrOwner ?? false) ||
                   userId == state.community.createdByUserId;
-              if (canModerate && !_requestsRequested) {
+              if (canModerate &&
+                  !_requestsRequested &&
+                  (state.membershipLoaded ||
+                      userId == state.community.createdByUserId)) {
                 _requestsRequested = true;
                 context
                     .read<CommunitiesBloc>()
@@ -249,6 +253,13 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             }
           }
         },
+        // Transient one-shot states (joined / left / request sent / an action
+        // error) are handled by the listener; keep the loaded detail on
+        // screen instead of swapping it for the fallback text.
+        buildWhen: (previous, current) =>
+            current is CommunityDetailLoaded ||
+            current is CommunitiesLoading ||
+            previous is! CommunityDetailLoaded,
         builder: (context, state) {
           if (state is CommunitiesLoading) {
             return const Center(
@@ -265,10 +276,13 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                   SizedBox(
                     height: 140,
                     width: double.infinity,
-                    child: Image.network(
-                      _community.imageUrl!,
+                    child: CachedNetworkImage(
+                      imageUrl: _community.imageUrl!,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                      memCacheWidth: (MediaQuery.sizeOf(context).width *
+                              MediaQuery.devicePixelRatioOf(context))
+                          .round(),
+                      errorWidget: (_, __, ___) => const SizedBox.shrink(),
                     ),
                   ),
 
@@ -350,7 +364,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             ],
           ),
           Text(
-            AppLocalizations.of(context)!.communitiesMembersCount(_community.memberCount),
+            AppLocalizations.of(context)!
+                .communitiesMembersCount(_community.memberCount),
             style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 12,
@@ -379,12 +394,13 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         IconButton(
           icon: const Icon(Icons.share, color: AppColors.textSecondary),
           tooltip: AppLocalizations.of(context)!.eventShare,
-          onPressed: () => shareCommunityLink(context, _community.id,
-              name: _community.name),
+          onPressed: () =>
+              shareCommunityLink(context, _community.id, name: _community.name),
         ),
         // Members list button
         IconButton(
-          icon: const Icon(Icons.people_outline, color: AppColors.textSecondary),
+          icon:
+              const Icon(Icons.people_outline, color: AppColors.textSecondary),
           onPressed: _showMembersSheet,
         ),
         // Info / More button
@@ -415,7 +431,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               value: 'info',
               child: Row(
                 children: [
-                  const Icon(Icons.info_outline, color: AppColors.textSecondary, size: 20),
+                  const Icon(Icons.info_outline,
+                      color: AppColors.textSecondary, size: 20),
                   const SizedBox(width: 12),
                   Text(AppLocalizations.of(context)!.communitiesCommunityInfo,
                       style: const TextStyle(color: AppColors.textPrimary)),
@@ -431,7 +448,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.how_to_reg_outlined,
                         color: AppColors.richGold, size: 20),
                     const SizedBox(width: 12),
-                    Text(AppLocalizations.of(context)!.communitiesJoinRequestsTitle,
+                    Text(
+                        AppLocalizations.of(context)!
+                            .communitiesJoinRequestsTitle,
                         style: const TextStyle(color: AppColors.textPrimary)),
                   ],
                 ),
@@ -444,7 +463,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     const Icon(Icons.workspace_premium,
                         color: AppColors.richGold, size: 20),
                     const SizedBox(width: 12),
-                    Text(AppLocalizations.of(context)!.communitiesEditSponsorship,
+                    Text(
+                        AppLocalizations.of(context)!
+                            .communitiesEditSponsorship,
                         style: const TextStyle(color: AppColors.textPrimary)),
                   ],
                 ),
@@ -454,9 +475,11 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                 value: 'leave',
                 child: Row(
                   children: [
-                    const Icon(Icons.exit_to_app, color: AppColors.errorRed, size: 20),
+                    const Icon(Icons.exit_to_app,
+                        color: AppColors.errorRed, size: 20),
                     const SizedBox(width: 12),
-                    Text(AppLocalizations.of(context)!.communitiesLeaveCommunity,
+                    Text(
+                        AppLocalizations.of(context)!.communitiesLeaveCommunity,
                         style: const TextStyle(color: AppColors.errorRed)),
                   ],
                 ),
@@ -467,9 +490,12 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                 value: 'delete',
                 child: Row(
                   children: [
-                    const Icon(Icons.delete_forever, color: AppColors.errorRed, size: 20),
+                    const Icon(Icons.delete_forever,
+                        color: AppColors.errorRed, size: 20),
                     const SizedBox(width: 12),
-                    Text(AppLocalizations.of(context)!.communitiesDeleteCommunity,
+                    Text(
+                        AppLocalizations.of(context)!
+                            .communitiesDeleteCommunity,
                         style: const TextStyle(color: AppColors.errorRed)),
                   ],
                 ),
@@ -494,7 +520,14 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         Expanded(
           child: chat.isEmpty ? _buildEmptyChat() : _buildMessagesList(chat),
         ),
-        if (_isMember) _buildMessageInput(state) else _buildJoinBar(),
+        // Until the user's member doc resolves, show neither bar (avoids a
+        // Join-bar flash for existing members).
+        if (!state.membershipLoaded && !_isMember)
+          const SizedBox.shrink()
+        else if (_isMember)
+          _buildMessageInput(state)
+        else
+          _buildJoinBar(),
       ],
     );
   }
@@ -546,8 +579,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
   Widget _buildTipSearch() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(
-          AppDimensions.paddingM, AppDimensions.paddingS, AppDimensions.paddingM, 0),
+      padding: const EdgeInsets.fromLTRB(AppDimensions.paddingM,
+          AppDimensions.paddingS, AppDimensions.paddingM, 0),
       child: TextField(
         style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
         onChanged: (v) => setState(() => _tipSearch = v),
@@ -741,14 +774,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, size: 56, color: AppColors.textTertiary.withValues(alpha: 0.5)),
+          Icon(icon,
+              size: 56, color: AppColors.textTertiary.withValues(alpha: 0.5)),
           const SizedBox(height: AppDimensions.paddingM),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 32),
             child: Text(
               text,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: AppColors.textTertiary, fontSize: 14),
+              style:
+                  const TextStyle(color: AppColors.textTertiary, fontSize: 14),
             ),
           ),
         ],
@@ -780,7 +815,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
         // Determine if we should show sender info (group chat style)
         var showSenderInfo = true;
         if (index < messages.length - 1) {
-          final prevMessage = messages[index + 1]; // Previous in display (next in list)
+          final prevMessage =
+              messages[index + 1]; // Previous in display (next in list)
           if (prevMessage.senderId == message.senderId) {
             showSenderInfo = false;
           }
@@ -1061,8 +1097,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               foregroundColor: AppColors.deepBlack,
               padding: const EdgeInsets.symmetric(vertical: 14),
               shape: RoundedRectangleBorder(
-                borderRadius:
-                    BorderRadius.circular(AppDimensions.radiusFull),
+                borderRadius: BorderRadius.circular(AppDimensions.radiusFull),
               ),
             ),
             child: Text(
@@ -1263,7 +1298,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          AppLocalizations.of(this.context)!.communitiesLeaveConfirm(widget.community.name),
+          AppLocalizations.of(this.context)!
+              .communitiesLeaveConfirm(widget.community.name),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
@@ -1379,8 +1415,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                         if (!dialogContext.mounted) return;
                         Navigator.of(dialogContext).pop();
                         this.context.read<CommunitiesBloc>().add(
-                              DeleteCommunity(
-                                  communityId: widget.community.id),
+                              DeleteCommunity(communityId: widget.community.id),
                             );
                       } on FirebaseAuthException catch (e) {
                         setDialogState(() {
@@ -1463,6 +1498,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   void _showMembersSheet() {
     final bloc = context.read<CommunitiesBloc>();
     if (bloc.state is! CommunityDetailLoaded) return;
+    // The roster is loaded lazily (first page of 50) when the sheet opens.
+    bloc.add(LoadCommunityMembers(communityId: _community.id));
 
     showModalBottomSheet<void>(
       context: context,
@@ -1485,12 +1522,15 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
               return BlocBuilder<CommunitiesBloc, CommunitiesState>(
                 builder: (context, state) {
                   // Banned and blocked members are hidden from the roster.
-                  final members = state is CommunityDetailLoaded
-                      ? state.members
+                  final detail = state is CommunityDetailLoaded ? state : null;
+                  final members = detail != null
+                      ? detail.members
                           .where((m) =>
                               !m.isBanned && !_blockedIds.contains(m.userId))
                           .toList()
                       : const <CommunityMember>[];
+                  final loading = detail == null || !detail.membersLoaded;
+                  final hasMore = detail?.hasMoreMembers ?? false;
                   return Column(
                     children: [
                       Container(
@@ -1520,7 +1560,9 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                             ),
                             const SizedBox(width: 8),
                             Text(
-                              '(${members.length})',
+                              // Whole roster not paged in yet: show the
+                              // community's member counter.
+                              '(${hasMore ? _community.memberCount : members.length})',
                               style: const TextStyle(
                                 color: AppColors.textTertiary,
                                 fontSize: 16,
@@ -1531,20 +1573,52 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                       ),
                       const Divider(color: AppColors.divider, height: 1),
                       Expanded(
-                        child: ListView.builder(
-                          controller: scrollController,
-                          itemCount: members.length,
-                          itemBuilder: (context, index) {
-                            final member = members[index];
-                            final isSelf = member.userId == _currentUserId;
-                            return InkWell(
-                              onTap: isSelf
-                                  ? null
-                                  : () => _onMemberTap(context, bloc, member),
-                              child: CommunityMemberTile(member: member),
-                            );
-                          },
-                        ),
+                        child: loading
+                            ? const Center(
+                                child: CircularProgressIndicator(
+                                    color: AppColors.richGold),
+                              )
+                            : NotificationListener<ScrollNotification>(
+                                onNotification: (n) {
+                                  if (hasMore &&
+                                      !detail.isLoadingMembers &&
+                                      n.metrics.pixels >=
+                                          n.metrics.maxScrollExtent - 200) {
+                                    bloc.add(LoadCommunityMembers(
+                                      communityId: _community.id,
+                                      loadMore: true,
+                                    ));
+                                  }
+                                  return false;
+                                },
+                                child: ListView.builder(
+                                  controller: scrollController,
+                                  itemCount: members.length + (hasMore ? 1 : 0),
+                                  itemBuilder: (context, index) {
+                                    if (index >= members.length) {
+                                      return const Padding(
+                                        padding: EdgeInsets.all(16),
+                                        child: Center(
+                                          child: CircularProgressIndicator(
+                                              strokeWidth: 2,
+                                              color: AppColors.richGold),
+                                        ),
+                                      );
+                                    }
+                                    final member = members[index];
+                                    final isSelf =
+                                        member.userId == _currentUserId;
+                                    return InkWell(
+                                      onTap: isSelf
+                                          ? null
+                                          : () => _onMemberTap(
+                                              context, bloc, member),
+                                      child:
+                                          CommunityMemberTile(member: member),
+                                    );
+                                  },
+                                ),
+                              ),
                       ),
                     ],
                   );
@@ -1801,13 +1875,15 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                       _buildStatItem(
                         Icons.people_outline,
                         '${widget.community.memberCount}',
-                        AppLocalizations.of(this.context)!.communitiesMembersStatLabel,
+                        AppLocalizations.of(this.context)!
+                            .communitiesMembersStatLabel,
                       ),
                       const SizedBox(width: 24),
                       _buildStatItem(
                         Icons.calendar_today_outlined,
                         _formatDate(widget.community.createdAt),
-                        AppLocalizations.of(this.context)!.communitiesCreatedStatLabel,
+                        AppLocalizations.of(this.context)!
+                            .communitiesCreatedStatLabel,
                       ),
                     ],
                   ),
@@ -1815,7 +1891,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
                   // Created by
                   Text(
-                    AppLocalizations.of(this.context)!.communitiesCreatedBy(widget.community.createdByName),
+                    AppLocalizations.of(this.context)!
+                        .communitiesCreatedBy(widget.community.createdByName),
                     style: const TextStyle(
                       color: AppColors.textTertiary,
                       fontSize: 12,
@@ -1861,8 +1938,18 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
 
   String _formatDate(DateTime date) {
     final months = [
-      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
     ];
     return '${months[date.month - 1]} ${date.day}, ${date.year}';
   }

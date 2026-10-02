@@ -19,7 +19,6 @@ class CommunitiesLoading extends CommunitiesState {
 
 /// Communities loaded (list view)
 class CommunitiesLoaded extends CommunitiesState {
-
   const CommunitiesLoaded({
     this.communities = const [],
     this.userCommunities = const [],
@@ -84,7 +83,6 @@ class CommunitiesLoaded extends CommunitiesState {
 
 /// Community detail loaded (single community view)
 class CommunityDetailLoaded extends CommunitiesState {
-
   const CommunityDetailLoaded({
     required this.community,
     this.members = const [],
@@ -92,8 +90,16 @@ class CommunityDetailLoaded extends CommunitiesState {
     this.isMember = false,
     this.isSending = false,
     this.pendingRequests = const [],
+    this.myMembership,
+    this.membershipLoaded = false,
+    this.membersLoaded = false,
+    this.isLoadingMembers = false,
+    this.hasMoreMembers = false,
   });
   final Community community;
+
+  /// The roster pages loaded so far (lazy — empty until the Members sheet
+  /// asks for them, see [membersLoaded]).
   final List<CommunityMember> members;
   final List<CommunityMessage> messages;
   final bool isMember;
@@ -102,6 +108,20 @@ class CommunityDetailLoaded extends CommunitiesState {
   /// Pending join requests (private communities) — loaded for owner/admins.
   final List<CommunityMember> pendingRequests;
 
+  /// The signed-in user's own member doc (null = not a member) — read as a
+  /// single document so the detail never waits for the whole roster.
+  final CommunityMember? myMembership;
+
+  /// True once [myMembership] has been resolved (found or confirmed absent).
+  final bool membershipLoaded;
+
+  /// True once the first roster page has loaded.
+  final bool membersLoaded;
+  final bool isLoadingMembers;
+
+  /// Another roster page may exist.
+  final bool hasMoreMembers;
+
   CommunityDetailLoaded copyWith({
     Community? community,
     List<CommunityMember>? members,
@@ -109,6 +129,12 @@ class CommunityDetailLoaded extends CommunitiesState {
     bool? isMember,
     bool? isSending,
     List<CommunityMember>? pendingRequests,
+    CommunityMember? myMembership,
+    bool clearMyMembership = false,
+    bool? membershipLoaded,
+    bool? membersLoaded,
+    bool? isLoadingMembers,
+    bool? hasMoreMembers,
   }) {
     return CommunityDetailLoaded(
       community: community ?? this.community,
@@ -117,48 +143,48 @@ class CommunityDetailLoaded extends CommunitiesState {
       isMember: isMember ?? this.isMember,
       isSending: isSending ?? this.isSending,
       pendingRequests: pendingRequests ?? this.pendingRequests,
+      myMembership:
+          clearMyMembership ? null : (myMembership ?? this.myMembership),
+      membershipLoaded: membershipLoaded ?? this.membershipLoaded,
+      membersLoaded: membersLoaded ?? this.membersLoaded,
+      isLoadingMembers: isLoadingMembers ?? this.isLoadingMembers,
+      hasMoreMembers: hasMoreMembers ?? this.hasMoreMembers,
     );
   }
 }
 
 /// Community created successfully
 class CommunityCreated extends CommunitiesState {
-
   const CommunityCreated({required this.community});
   final Community community;
 }
 
 /// Community joined successfully
 class CommunityJoined extends CommunitiesState {
-
   const CommunityJoined({required this.communityId});
   final String communityId;
 }
 
 /// Join request submitted for a private community (awaiting approval).
 class CommunityJoinRequested extends CommunitiesState {
-
   const CommunityJoinRequested({required this.communityId});
   final String communityId;
 }
 
 /// Community left successfully
 class CommunityLeft extends CommunitiesState {
-
   const CommunityLeft({required this.communityId});
   final String communityId;
 }
 
 /// Community permanently deleted (owner action).
 class CommunityDeleted extends CommunitiesState {
-
   const CommunityDeleted({required this.communityId});
   final String communityId;
 }
 
 /// Error state
 class CommunitiesError extends CommunitiesState {
-
   const CommunitiesError({required this.message});
   final String message;
 }

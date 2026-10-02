@@ -36,7 +36,24 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
     Emitter<GlobeState> emit,
   ) async {
     emit(GlobeLoading());
-    final result = await getGlobeData(event.userId);
+    final resultFuture = getGlobeData(event.userId);
+
+    // Show the map as soon as the user's own pin is known (one doc read,
+    // shared with the load above); matched pins are added when they arrive.
+    final me = await repository.getCurrentUserPin(userId: event.userId);
+    if (me != null && state is GlobeLoading && _currentData == null) {
+      emit(GlobeLoaded(
+        data: GlobeData(
+          currentUser: me,
+          matchedUsers: const [],
+          discoveryUsers: const [],
+        ),
+        showMatched: _showMatched,
+        showDiscovery: _showDiscovery,
+      ));
+    }
+
+    final result = await resultFuture;
     result.fold(
       (failure) => emit(GlobeError(message: failure.message)),
       (data) {
@@ -78,7 +95,20 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
     _matchSub = repository.watchMatchUpdates(userId: userId).listen(
       (updatedMatches) =>
           add(GlobeMatchesUpdated(updatedMatches: updatedMatches)),
+      onError: (Object _) {}, // keep the pins we have
     );
+  }
+
+  /// Same pins (by user + match) as already shown.
+  bool _sameMatches(List<GlobeUser> next) {
+    final cur = _currentData?.matchedUsers;
+    if (cur == null || cur.length != next.length) return false;
+    for (var i = 0; i < cur.length; i++) {
+      if (cur[i].userId != next[i].userId || cur[i].matchId != next[i].matchId) {
+        return false;
+      }
+    }
+    return true;
   }
 
   void _startOnlineStream(GlobeData data) {
@@ -163,6 +193,10 @@ class GlobeBloc extends Bloc<GlobeEvent, GlobeState> {
     Emitter<GlobeState> emit,
   ) {
     if (_currentData == null) return;
+    // The listeners' first snapshots (and unrelated match-doc edits) repeat
+    // the pins already on screen; re-emitting reset the selection and
+    // restarted the online-status listeners for nothing.
+    if (_sameMatches(event.updatedMatches)) return;
     _currentData = GlobeData(
       currentUser: _currentData!.currentUser,
       matchedUsers: event.updatedMatches,

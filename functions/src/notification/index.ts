@@ -217,6 +217,9 @@ export const sendBundledNotifications = onCall<BundledNotificationRequest>(
         const ref = db.collection('notifications').doc();
         batch.set(ref, {
           userId,
+          // The notifications list orders by createdAt: a doc without it
+          // would never be listed (the bundled payload may carry its own).
+          createdAt: admin.firestore.FieldValue.serverTimestamp(),
           ...notif,
           read: false,
           sent: true,

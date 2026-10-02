@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -408,7 +409,9 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
           CircleAvatar(
             radius: 24,
             backgroundColor: AppColors.backgroundDark,
-            backgroundImage: photoUrl != null ? NetworkImage(photoUrl) : null,
+            backgroundImage: photoUrl != null
+                ? CachedNetworkImageProvider(photoUrl, maxWidth: 96)
+                : null,
             child: photoUrl == null
                 ? const Icon(Icons.person, color: AppColors.textTertiary)
                 : null,

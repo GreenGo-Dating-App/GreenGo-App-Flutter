@@ -5,6 +5,8 @@ import 'package:geolocator/geolocator.dart';
 
 import '../../features/profile/data/models/profile_model.dart'
     show normalizeCountryName;
+import '../../features/profile/data/profile_geohash.dart';
+import 'own_profile_store.dart';
 
 /// Silently refreshes the current user's GPS location in Firestore.
 ///
@@ -98,6 +100,22 @@ class LocationRefreshService {
       }
       if (displayAddress.isNotEmpty) {
         update['location.displayAddress'] = displayAddress;
+      }
+      // Keep the discovery geohash in step with the home location, unless an
+      // active travel location is what people discover this profile at (or
+      // the traveller state is unknown: the next profile save fixes it).
+      final raw = OwnProfileStore.instance.raw;
+      if (raw != null && OwnProfileStore.instance.uid == userId) {
+        final merged = <String, dynamic>{
+          ...raw,
+          'location': {
+            ...((raw['location'] as Map?)?.cast<String, dynamic>() ?? const {}),
+            'latitude': position.latitude,
+            'longitude': position.longitude,
+          },
+        };
+        final hash = profileGeohash(merged);
+        if (hash != null) update[kProfileGeohashField] = hash;
       }
 
       await _firestore.collection('profiles').doc(userId).update(update);

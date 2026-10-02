@@ -21,8 +21,13 @@ class DailyChallengesScreen extends StatefulWidget {
 
   const DailyChallengesScreen({
     required this.userId, super.key,
+    this.listenForProgress = true,
   });
   final String userId;
+
+  /// False when embedded in the Progress hub, which already owns a
+  /// challenge_progress listener feeding the same bloc.
+  final bool listenForProgress;
 
   @override
   State<DailyChallengesScreen> createState() => _DailyChallengesScreenState();
@@ -38,8 +43,13 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
 
-    // Load challenges
-    context.read<GamificationBloc>().add(LoadDailyChallenges(widget.userId));
+    // Load challenges once (the Progress hub may already have loaded them).
+    final bloc = context.read<GamificationBloc>();
+    if (bloc.state.challengesData == null && !bloc.state.challengesLoading) {
+      bloc.add(LoadDailyChallenges(widget.userId));
+    }
+
+    if (!widget.listenForProgress) return;
 
     // Watch for real-time challenge progress changes
     _progressSubscription = FirebaseFirestore.instance
@@ -134,7 +144,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
           }
         },
         builder: (context, state) {
-          if (state.challengesLoading) {
+          if (state.challengesLoading && state.challengesData == null) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -172,7 +182,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
             );
           }
 
-          if (state.challengesError != null) {
+          if (state.challengesError != null && state.challengesData == null) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

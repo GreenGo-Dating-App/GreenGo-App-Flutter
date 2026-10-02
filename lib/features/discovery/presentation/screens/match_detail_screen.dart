@@ -11,6 +11,8 @@ import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/match.dart';
 import '../bloc/matches_bloc.dart';
 import '../bloc/matches_event.dart';
@@ -37,56 +39,77 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
   Profile? _otherUserProfile;
   Map<String, dynamic>? _currentUserGamification;
   Map<String, dynamic>? _otherUserGamification;
-  bool _isLoading = true;
+  /// Full-screen spinner only while there is nothing to render at all: when
+  /// the caller passed the other user's profile the screen paints at once and
+  /// only the stats section fills in later.
+  late bool _isLoading;
 
   @override
   void initState() {
     super.initState();
     _otherUserProfile = widget.profile;
+    _currentUserProfile = _profileFromBloc();
+    _isLoading = widget.profile == null;
     _fetchData();
   }
 
   String get _otherUserId => widget.match.getOtherUserId(widget.currentUserId);
 
+  /// The signed-in user's profile from the app-level ProfileBloc, when it
+  /// already holds it (saves a server read before first paint).
+  Profile? _profileFromBloc() {
+    try {
+      final s = context.read<ProfileBloc>().state;
+      final Profile? p = s is ProfileLoaded
+          ? s.profile
+          : s is ProfileUpdated
+              ? s.profile
+              : null;
+      return p != null && p.userId == widget.currentUserId ? p : null;
+    } catch (_) {
+      return null; // No ProfileBloc above this route.
+    }
+  }
+
   Future<void> _fetchData() async {
     try {
       final firestore = FirebaseFirestore.instance;
+      final needCurrent = _currentUserProfile == null;
+      final needOther = widget.profile == null;
 
-      // Fetch current user's profile, other user profile (if not provided), and gamification data
-      final futures = <Future<dynamic>>[
-        firestore.collection('profiles').doc(widget.currentUserId).get(),
+      // All reads in parallel; profiles only when not already in hand.
+      final results = await Future.wait<DocumentSnapshot<Map<String, dynamic>>?>([
         firestore.collection('user_levels').doc(widget.currentUserId).get(),
         firestore.collection('user_levels').doc(_otherUserId).get(),
-      ];
+        if (needCurrent)
+          firestore.collection('profiles').doc(widget.currentUserId).get()
+        else
+          Future.value(),
+        if (needOther)
+          firestore.collection('profiles').doc(_otherUserId).get()
+        else
+          Future.value(),
+      ]);
 
-      // Also fetch other user's profile if not provided
-      if (widget.profile == null) {
-        futures.add(firestore.collection('profiles').doc(_otherUserId).get());
-      }
-
-      final results = await Future.wait(futures);
-
-      final profileDoc = results[0] as DocumentSnapshot;
-      final currentGamDoc = results[1] as DocumentSnapshot;
-      final otherGamDoc = results[2] as DocumentSnapshot;
+      final currentGamDoc = results[0];
+      final otherGamDoc = results[1];
+      final profileDoc = results[2];
+      final otherProfileDoc = results[3];
 
       if (mounted) {
         setState(() {
-          if (profileDoc.exists) {
+          if (profileDoc != null && profileDoc.exists) {
             _currentUserProfile = ProfileModel.fromFirestore(profileDoc);
           }
-          if (currentGamDoc.exists) {
-            _currentUserGamification = currentGamDoc.data() as Map<String, dynamic>?;
+          if (currentGamDoc != null && currentGamDoc.exists) {
+            _currentUserGamification = currentGamDoc.data();
           }
-          if (otherGamDoc.exists) {
-            _otherUserGamification = otherGamDoc.data() as Map<String, dynamic>?;
+          if (otherGamDoc != null && otherGamDoc.exists) {
+            _otherUserGamification = otherGamDoc.data();
           }
           // Set other user profile from Firestore if not provided
-          if (widget.profile == null && results.length > 3) {
-            final otherProfileDoc = results[3] as DocumentSnapshot;
-            if (otherProfileDoc.exists) {
-              _otherUserProfile = ProfileModel.fromFirestore(otherProfileDoc);
-            }
+          if (otherProfileDoc != null && otherProfileDoc.exists) {
+            _otherUserProfile = ProfileModel.fromFirestore(otherProfileDoc);
           }
           _isLoading = false;
         });

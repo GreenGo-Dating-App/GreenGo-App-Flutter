@@ -93,12 +93,14 @@ async function computeUserStats(userId) {
         }
     }
     // 6. Achievements unlocked
-    const achieveCount = await utils_1.db.collection('user_achievements')
+    // achievement_progress / challenge_progress are the collections the app
+    // writes; user_achievements / user_challenges are never written (always 0).
+    const achieveCount = await utils_1.db.collection('achievement_progress')
         .where('userId', '==', userId)
         .where('isUnlocked', '==', true)
         .count().get();
     // 7. Challenges completed
-    const challengeCount = await utils_1.db.collection('user_challenges')
+    const challengeCount = await utils_1.db.collection('challenge_progress')
         .where('userId', '==', userId)
         .where('isCompleted', '==', true)
         .count().get();

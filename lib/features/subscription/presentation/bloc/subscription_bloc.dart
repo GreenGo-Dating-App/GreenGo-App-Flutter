@@ -52,7 +52,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     }
 
     // Restore old purchases on init to consume any unconsumed ones
-    _consumeOldPurchases();
+    _consumeOldPurchases(oncePerSession: true);
   }
   final GetCurrentSubscription getCurrentSubscription;
   final domain.PurchaseSubscription purchaseSubscription;
@@ -62,9 +62,26 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
   StreamSubscription<List<PurchaseDetails>>? _purchaseSubscription;
   String? _currentUserId;
 
+  /// Store products from the first successful query this session. Store
+  /// listings don't change mid-session, so later opens render instantly.
+  static List<ProductDetails>? _sessionProducts;
+
+  /// Products already fetched this session (null until the first query).
+  static List<ProductDetails>? get sessionProducts => _sessionProducts;
+
+  /// The constructor-time restore runs once per app session: every
+  /// restorePurchases() replays the whole purchase history to every stream
+  /// listener (incl. PurchaseRecoveryService, which already restores at
+  /// startup). The ALREADY_OWNED recovery path below still restores on demand.
+  static bool _restoredThisSession = false;
+
   /// Restore and consume any old unconsumed purchases to clear "already owned" state
-  Future<void> _consumeOldPurchases() async {
+  Future<void> _consumeOldPurchases({bool oncePerSession = false}) async {
     if (kIsWeb || !Platform.isAndroid) return;
+    if (oncePerSession) {
+      if (_restoredThisSession) return;
+      _restoredThisSession = true;
+    }
     try {
       await inAppPurchase.restorePurchases();
     } catch (e) {
@@ -106,7 +123,13 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
     LoadAvailableProducts event,
     Emitter<SubscriptionState> emit,
   ) async {
-    emit(SubscriptionLoading());
+    final memo = _sessionProducts;
+    if (memo != null && memo.isNotEmpty) {
+      emit(ProductsLoaded(memo));
+      return;
+    }
+
+    emit(ProductsLoading());
 
     try {
       final available = await inAppPurchase.isAvailable();
@@ -131,6 +154,7 @@ class SubscriptionBloc extends Bloc<SubscriptionEvent, SubscriptionState> {
         return;
       }
 
+      _sessionProducts = List.unmodifiable(response.productDetails);
       emit(ProductsLoaded(response.productDetails));
     } catch (e) {
       emit(SubscriptionError(e.toString()));

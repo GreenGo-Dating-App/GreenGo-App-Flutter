@@ -32,9 +32,10 @@ import '../../../../core/services/deep_link_service.dart';
 /// events and the communities they own, plus Follow + Contact actions.
 ///
 /// Reads are deliberately cheap and index-free so this scales to millions:
-///   * Events: a single equality query `events.where(organizerId == businessId)`
-///     limited to 20, then filtered to published + upcoming and sorted CLIENT
-///     side (no composite index required).
+///   * Events: `events.where(organizerId == businessId)` from today onward,
+///     ordered by startDate, limited to 10 (existing organizerId+startDate
+///     index), then filtered to published + not ended; falls back to the
+///     unordered limit-20 read if that query fails.
 ///   * Communities: `communities.where(createdByUserId == businessId)` limited
 ///     to 20, filtered to public client side.
 class BusinessStorefrontScreen extends StatefulWidget {
@@ -59,12 +60,24 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
   // Cheap denormalized follower count stream (reads profiles/{id}.followerCount).
   final FollowService _followService = di.sl<FollowService>();
 
+  /// Created once (not per build, which re-subscribed on every repaint).
+  late final Stream<int> _followerCount =
+      _followService.followerCount(widget.business.userId);
+
   @override
   void initState() {
     super.initState();
     _eventsFuture = _loadEvents();
     _communitiesFuture = _loadCommunities();
   }
+
+  /// Decode width (physical px) for an image [logical] dp wide.
+  int _px(double logical) =>
+      (logical * MediaQuery.of(context).devicePixelRatio).round();
+
+  ImageProvider _thumb(String url, double logical) =>
+      ResizeImage.resizeIfNeeded(
+          _px(logical), null, CachedNetworkImageProvider(url));
 
   String get _title =>
       (widget.business.businessName?.trim().isNotEmpty ?? false)
@@ -84,13 +97,25 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
 
   Future<List<_EventCard>> _loadEvents() async {
     try {
-      // Single-field equality filter → no composite index. Sort/filter client side.
-      final snap = await FirebaseFirestore.instance
+      final events = FirebaseFirestore.instance
           .collection('events')
-          .where('organizerId', isEqualTo: widget.business.userId)
-          .limit(20)
-          .get();
+          .where('organizerId', isEqualTo: widget.business.userId);
       final now = DateTime.now();
+      final startOfToday = DateTime(now.year, now.month, now.day);
+      QuerySnapshot<Map<String, dynamic>> snap;
+      try {
+        // Upcoming only, soonest first, server-side (existing
+        // events(organizerId, startDate) index).
+        snap = await events
+            .where('startDate',
+                isGreaterThanOrEqualTo: Timestamp.fromDate(startOfToday))
+            .orderBy('startDate')
+            .limit(10)
+            .get();
+      } catch (_) {
+        // The original unordered read, filtered/sorted below.
+        snap = await events.limit(20).get();
+      }
       final cards = snap.docs
           .map((d) => _EventCard.fromDoc(d.id, d.data()))
           .where((e) =>
@@ -177,7 +202,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                               width: 2),
                           image: avatarUrl != null
                               ? DecorationImage(
-                                  image: NetworkImage(avatarUrl),
+                                  image: _thumb(avatarUrl, 64),
                                   fit: BoxFit.cover,
                                 )
                               : null,
@@ -336,12 +361,18 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                         itemBuilder: (_, i) => ClipRRect(
                           borderRadius:
                               BorderRadius.circular(AppDimensions.radiusM),
-                          child: Image.network(
-                            _galleryImages[i],
+                          child: CachedNetworkImage(
+                            imageUrl: _galleryImages[i],
                             width: 110,
                             height: 110,
                             fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) => Container(
+                            memCacheWidth: _px(110),
+                            placeholder: (_, __) => Container(
+                              width: 110,
+                              height: 110,
+                              color: AppColors.backgroundCard,
+                            ),
+                            errorWidget: (_, __, ___) => Container(
                               width: 110,
                               height: 110,
                               color: AppColors.backgroundCard,
@@ -457,7 +488,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
   /// `profiles/{businessId}.followerCount` via [FollowService] (one cheap doc
   /// read) and formats it with the existing `businessFollowersCount` plural.
   Widget _followersLine(AppLocalizations l10n) => StreamBuilder<int>(
-        stream: _followService.followerCount(widget.business.userId),
+        stream: _followerCount,
         builder: (context, snap) {
           final count = snap.data ?? 0;
           return Row(
@@ -593,25 +624,51 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
 
   /// Open the storefront community's detail page (fetch by id, then push with
   /// the blocs CommunityDetailScreen needs).
+  ///
+  /// The page opens at once (spinner) and the fetch runs inside it, instead of
+  /// the tap waiting for the read before anything happens. A missing
+  /// community closes the page again (same outcome as before: no detail).
   Future<void> _openStorefrontCommunity(String communityId) async {
     if (communityId.isEmpty) return;
-    final result =
-        await di.sl<CommunitiesRepository>().getCommunityById(communityId);
-    final Community? community = result.fold((_) => null, (c) => c);
-    if (community == null || !mounted) return;
+    final currentUserId = widget.currentUserId;
+    final load = di
+        .sl<CommunitiesRepository>()
+        .getCommunityById(communityId)
+        .then<Community?>((r) => r.fold((_) => null, (c) => c),
+            onError: (Object _) => null);
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => MultiBlocProvider(
-          providers: [
-            BlocProvider<CommunitiesBloc>(
-              create: (_) => di.sl<CommunitiesBloc>(),
-            ),
-            BlocProvider<ProfileBloc>(
-              create: (_) => di.sl<ProfileBloc>()
-                ..add(ProfileLoadRequested(userId: widget.currentUserId)),
-            ),
-          ],
-          child: CommunityDetailScreen(community: community),
+        builder: (_) => FutureBuilder<Community?>(
+          future: load,
+          builder: (context, snap) {
+            final community = snap.data;
+            if (snap.connectionState != ConnectionState.done) {
+              return const Scaffold(
+                backgroundColor: AppColors.backgroundDark,
+                body: Center(
+                  child: CircularProgressIndicator(color: AppColors.richGold),
+                ),
+              );
+            }
+            if (community == null) {
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (context.mounted) Navigator.of(context).maybePop();
+              });
+              return const Scaffold(backgroundColor: AppColors.backgroundDark);
+            }
+            return MultiBlocProvider(
+              providers: [
+                BlocProvider<CommunitiesBloc>(
+                  create: (_) => di.sl<CommunitiesBloc>(),
+                ),
+                BlocProvider<ProfileBloc>(
+                  create: (_) => di.sl<ProfileBloc>()
+                    ..add(ProfileLoadRequested(userId: currentUserId)),
+                ),
+              ],
+              child: CommunityDetailScreen(community: community),
+            );
+          },
         ),
       ),
     );
@@ -639,7 +696,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
               borderRadius: BorderRadius.circular(AppDimensions.radiusS),
               image: e.imageUrl != null
                   ? DecorationImage(
-                      image: NetworkImage(e.imageUrl!), fit: BoxFit.cover)
+                      image: _thumb(e.imageUrl!, 48), fit: BoxFit.cover)
                   : null,
             ),
             child: e.imageUrl == null
@@ -700,7 +757,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
               borderRadius: BorderRadius.circular(AppDimensions.radiusS),
               image: c.imageUrl != null
                   ? DecorationImage(
-                      image: NetworkImage(c.imageUrl!), fit: BoxFit.cover)
+                      image: _thumb(c.imageUrl!, 48), fit: BoxFit.cover)
                   : null,
             ),
             child: c.imageUrl == null

@@ -194,7 +194,10 @@ exports.sendBundledNotifications = (0, https_1.onCall)({
         const batch = utils_1.db.batch();
         notifications.forEach(notif => {
             const ref = utils_1.db.collection('notifications').doc();
-            batch.set(ref, Object.assign(Object.assign({ userId }, notif), { read: false, sent: true, bundled: true, 
+            batch.set(ref, Object.assign(Object.assign({ userId, 
+                // The notifications list orders by createdAt: a doc without it
+                // would never be listed (the bundled payload may carry its own).
+                createdAt: admin.firestore.FieldValue.serverTimestamp() }, notif), { read: false, sent: true, bundled: true, 
                 // Bundled multicast already sent above — skip the parity trigger.
                 pushSent: true, sentAt: admin.firestore.FieldValue.serverTimestamp() }));
         });

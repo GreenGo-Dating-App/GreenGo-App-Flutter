@@ -95,11 +95,29 @@ class UserExperiencesRemoteDataSource {
       );
     }
     if (category != null) {
-      return _QueryPager(
-        published
-            .where('category', isEqualTo: category.name)
-            .orderBy('createdAt', descending: true),
+      final byCategory = published.where('category', isEqualTo: category.name);
+      final newestInCategory = _QueryPager(
+        byCategory.orderBy('createdAt', descending: true),
         pageSize,
+      );
+      if (lat == null || lng == null) return newestInCategory;
+      // Nearest-first within the category too (index user_experiences(status,
+      // category, geohash)); while that index is missing the scan fails over
+      // to the newest-first category list, exactly as before.
+      return _NearbyThenNewestPager(
+        scanner: GeoRingScanner<UserExperience>(
+          base: byCategory,
+          lat: lat,
+          lng: lng,
+          startRadiusM: 50000,
+          perQueryLimit: pageSize,
+          maxRoundsPerCall: 4,
+          parse: UserExperienceModel.fromDoc,
+          position: (e) =>
+              e.hasCoordinates ? (lat: e.lat!, lng: e.lng!) : null,
+        ),
+        fallback: newestInCategory,
+        pageSize: pageSize,
       );
     }
     final newest = _QueryPager(
@@ -524,26 +542,67 @@ class _NearbyThenNewestPager implements ExperienceFeedPager {
   final Set<String> _seen = {};
   _QueryPager? _fallback;
 
+  /// The scan's query failed (e.g. its geohash index is still building):
+  /// serve the newest-first list instead.
+  bool _scanFailed = false;
+
+  /// The fallback's first page, read in parallel with the first scan so a
+  /// sparse area (scan exhausted quickly) doesn't wait for it afterwards.
+  Future<List<UserExperience>>? _prefetch;
+  bool _first = true;
+
+  bool get _scanning => !_scanFailed && scanner.hasMore;
+
   @override
-  bool get hasMore => scanner.hasMore || (_fallback?.hasMore ?? true);
+  bool get hasMore =>
+      _scanning || _prefetch != null || (_fallback?.hasMore ?? true);
+
+  Future<List<UserExperience>> _scan({int? maxRounds}) async {
+    try {
+      return await scanner.next(maxRounds: maxRounds);
+    } on FirebaseException catch (e) {
+      if (e.code != 'failed-precondition') rethrow;
+      _scanFailed = true;
+      return const [];
+    }
+  }
 
   @override
   Future<List<UserExperience>> next() async {
     final out = <UserExperience>[];
+    if (_first) {
+      _first = false;
+      _fallback = _QueryPager(_fallbackQuery, pageSize, skipIds: _seen);
+      final prefetch = _fallback!.next();
+      prefetch.then((_) {}, onError: (Object _) {});
+      _prefetch = prefetch;
+      // Fast first paint: one read round; return as soon as the nearest ring
+      // has anything instead of filling a whole page first.
+      for (final e in await _scan(maxRounds: 1)) {
+        if (_seen.add(e.id)) out.add(e);
+      }
+      if (out.isNotEmpty) return out;
+    }
     // A ring can come back empty (sparse area) — keep scanning, bounded.
     var guard = 0;
-    while (out.length < pageSize && scanner.hasMore && guard++ < 4) {
-      for (final e in await scanner.next()) {
+    while (out.length < pageSize && _scanning && guard++ < 4) {
+      for (final e in await _scan()) {
         if (_seen.add(e.id)) out.add(e);
       }
     }
     if (out.isNotEmpty) return out;
-    if (scanner.hasMore) return out; // budget spent; next scroll continues
+    if (_scanning) return out; // budget spent; next scroll continues
     _fallback ??= _QueryPager(_fallbackQuery, pageSize, skipIds: _seen);
+    final prefetched = _prefetch;
+    if (prefetched != null) {
+      _prefetch = null;
+      // Read before the scan finished: drop what the scan has shown since.
+      out.addAll((await prefetched).where((e) => _seen.add(e.id)));
+    }
     // Pages can be fully deduplicated away; read a few until something new.
     var g2 = 0;
     while (out.isEmpty && _fallback!.hasMore && g2++ < 3) {
-      out.addAll(await _fallback!.next());
+      out.addAll((await _fallback!.next()).where((e) => _seen.add(e.id)));
     }
     return out;
   }

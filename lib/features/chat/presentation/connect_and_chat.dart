@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/di/injection_container.dart' as di;
 import '../../../core/services/tier_gate.dart';
+import '../../../core/services/user_directory_service.dart';
 import '../../../generated/app_localizations.dart';
 import '../../profile/domain/entities/profile.dart';
 import '../../profile/domain/repositories/profile_repository.dart';
@@ -92,18 +93,15 @@ Future<void> openConnectChat(
   }
 
   try {
-    // Resolve the other user's profile (needed by ChatScreen).
-    var profile = otherUserProfile;
-    if (profile == null) {
-      final result = await di
-          .sl<ProfileRepository>()
-          .getProfile(otherUserId)
-          .timeout(const Duration(seconds: 10));
-      profile = result.fold((_) => null, (p) => p);
-    }
-    if (profile == null) {
-      throw Exception('profile-unavailable');
-    }
+    // Resolve the other user's profile (needed by ChatScreen) CONCURRENTLY
+    // with the conversation lookup below: shared user directory first (memory
+    // / disk cached, batched), then the repository. Awaited before anything
+    // is created, so a missing profile still opens nothing.
+    final Future<Profile?> profileFuture = otherUserProfile != null
+        ? Future.value(otherUserProfile)
+        : _resolveProfile(otherUserId);
+    // Never leave an unobserved error if the lookup below throws first.
+    unawaited(profileFuture.then((_) {}, onError: (Object _) {}));
 
     // Is this a NEW connection? Only NEW connects count against — and are gated
     // by — the per-tier daily cap; re-opening an existing chat is always free.
@@ -138,6 +136,11 @@ Future<void> openConnectChat(
           .timeout(const Duration(seconds: 10));
     }
     final isNewConnect = existing.docs.isEmpty;
+
+    final profile = await profileFuture;
+    if (profile == null) {
+      throw Exception('profile-unavailable');
+    }
 
     final dataSource = di.sl<ChatRemoteDataSource>();
 
@@ -196,7 +199,7 @@ Future<void> openConnectChat(
           matchId: conversation.matchId,
           currentUserId: currentUserId,
           otherUserId: otherUserId,
-          otherUserProfile: profile!,
+          otherUserProfile: profile,
           // Hand the just-created conversation straight to the chat so it opens
           // instantly — no re-fetch, no chance of hanging on the loading spinner.
           initialConversation: conversation,
@@ -276,4 +279,26 @@ Future<bool?> _askBusinessOrPersonChat(
       ),
     ),
   );
+}
+
+/// The other user's profile for opening a chat: the shared directory's
+/// cached copy when present, else its batched/cached resolve, else the
+/// repository. Time-bounded; null when unavailable.
+Future<Profile?> _resolveProfile(String uid) async {
+  final directory = UserDirectoryService.instance;
+  final cached = directory.cachedProfile(uid);
+  if (cached != null) return cached;
+  try {
+    final map = await directory
+        .resolveProfiles([uid]).timeout(const Duration(seconds: 10));
+    final p = map[uid];
+    if (p != null) return p;
+  } catch (_) {
+    // Fall through to the repository.
+  }
+  final result = await di
+      .sl<ProfileRepository>()
+      .getProfile(uid)
+      .timeout(const Duration(seconds: 10));
+  return result.fold((_) => null, (p) => p);
 }

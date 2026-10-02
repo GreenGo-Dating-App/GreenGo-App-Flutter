@@ -79,20 +79,19 @@ class NotificationRemoteDataSourceImpl
     bool unreadOnly = false,
     int? limit,
   }) {
-    // Index-light query: filter by `userId` equality only (served by
-    // Firestore's automatic single-field index — no composite index needed).
-    // Ordering by `createdAt` + this `where` would require a composite index
-    // that, when absent, makes `snapshots()` error out and the page hang.
-    // We therefore sort (newest first) and cap the list client-side instead.
+    // Newest first, bounded server-side. Served by the composite indexes
+    // notifications(userId ASC, createdAt DESC) and, for the unread badge,
+    // notifications(userId ASC, isRead ASC, createdAt DESC) — both defined in
+    // firestore.indexes.json. Without the orderBy the limit returned an
+    // ARBITRARY `cap` docs, not the latest ones.
     final cap = limit ?? 100;
 
-    return firestore
+    Query<Map<String, dynamic>> query = firestore
         .collection('notifications')
-        .where('userId', isEqualTo: userId)
-        // Bounded reads (G0): cap the SERVER query so it bills at most `cap`
-        // docs, not every notification the user ever had. Order within the cap
-        // is arbitrary (no composite index) — the client re-sorts newest-first
-        // below, which is fine for a notifications badge/list.
+        .where('userId', isEqualTo: userId);
+    if (unreadOnly) query = query.where('isRead', isEqualTo: false);
+    return query
+        .orderBy('createdAt', descending: true)
         .limit(cap)
         .snapshots()
         .map((snapshot) {

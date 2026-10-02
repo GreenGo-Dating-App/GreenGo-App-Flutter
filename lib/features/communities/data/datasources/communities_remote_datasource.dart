@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
+import '../../../../core/cache/last_result_cache.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
 import '../models/community_member_model.dart';
@@ -25,6 +27,23 @@ abstract class CommunitiesRemoteDataSource {
     int limit = 50,
     bool preferCache = false,
   });
+
+  /// Personalised Discover: communities in the viewer's [city] and in their
+  /// [language] first, then the worldwide most-recently-active fill. The three
+  /// bounded queries run in parallel and are de-duplicated.
+  Future<DiscoverCommunities> getDiscoverCommunities({
+    String? city,
+    String? language,
+    int limit = 50,
+  });
+
+  /// The communities a tab rendered last time (ids saved under [key]), read
+  /// by id from the LOCAL Firestore cache only — instant first paint. Empty
+  /// when nothing usable is cached. See [LastResultCache].
+  Future<List<CommunityModel>> loadLastResult(String key);
+
+  /// Remember the ordered ids a tab just rendered from the SERVER.
+  Future<void> saveLastResult(String key, Iterable<String> ids);
 
   /// Get a community by ID
   Future<CommunityModel> getCommunityById(String communityId);
@@ -54,8 +73,23 @@ abstract class CommunitiesRemoteDataSource {
     required String userId,
   });
 
-  /// Get members of a community
-  Future<List<CommunityMemberModel>> getCommunityMembers(String communityId);
+  /// Get members of a community, oldest first.
+  ///
+  /// [limit] bounds the page (null = all — avoid for large communities);
+  /// [startAfterJoinedAt] is the keyset cursor (the `joinedAt` of the last
+  /// member already shown) for the next page.
+  Future<List<CommunityMemberModel>> getCommunityMembers(
+    String communityId, {
+    int? limit,
+    DateTime? startAfterJoinedAt,
+  });
+
+  /// The single `members/{userId}` doc (role, mute, writer permissions), or
+  /// null when the user is not a member. One document read.
+  Future<CommunityMemberModel?> getMember({
+    required String communityId,
+    required String userId,
+  });
 
   /// Stream of messages for a community (real-time)
   Stream<List<CommunityMessageModel>> getCommunityMessages(
@@ -78,6 +112,7 @@ abstract class CommunitiesRemoteDataSource {
     required String userId,
     required List<String> languages,
     List<String> interests,
+    String? city,
   });
 
   /// Check if user is a member
@@ -143,9 +178,34 @@ abstract class CommunitiesRemoteDataSource {
   Future<void> seedSampleCommunities();
 }
 
+/// Result of [CommunitiesRemoteDataSource.getDiscoverCommunities]: the
+/// de-duplicated groups, in display priority (local, language, worldwide).
+class DiscoverCommunities {
+  const DiscoverCommunities({
+    this.local = const [],
+    this.language = const [],
+    this.worldwide = const [],
+    this.worldwidePageFull = false,
+    this.worldwideCursor,
+  });
+  final List<CommunityModel> local;
+  final List<CommunityModel> language;
+
+  /// Worldwide fill (minus anything already in [local]/[language]).
+  final List<CommunityModel> worldwide;
+
+  /// The worldwide query returned a full page → more may exist.
+  final bool worldwidePageFull;
+
+  /// Oldest `lastActivityAt` of the worldwide page — the keyset cursor for
+  /// endless scroll (only the worldwide query is paginated).
+  final DateTime? worldwideCursor;
+
+  List<CommunityModel> get all => [...local, ...language, ...worldwide];
+}
+
 /// Implementation of CommunitiesRemoteDataSource
 class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
-
   CommunitiesRemoteDataSourceImpl({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
@@ -218,9 +278,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           .limit(needsClientFilter ? limit * 3 : limit)
           .get(_opts(preferCache));
 
-      var communities = snapshot.docs
-          .map(CommunityModel.fromFirestore)
-          .toList();
+      var communities =
+          snapshot.docs.map(CommunityModel.fromFirestore).toList();
 
       // Re-apply every requested filter client-side (idempotent for whichever
       // one was already pushed to the server; narrows the combinatorial rest).
@@ -254,6 +313,100 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       debugPrint('Error getting communities: $e');
       rethrow;
     }
+  }
+
+  @override
+  Future<DiscoverCommunities> getDiscoverCommunities({
+    String? city,
+    String? language,
+    int limit = 50,
+  }) async {
+    final hasCity = city != null && city.trim().isNotEmpty;
+    final hasLang = language != null && language.trim().isNotEmpty;
+    final public = _communitiesRef.where('isPublic', isEqualTo: true);
+
+    // Each query has its composite index (isPublic + city/languages +
+    // lastActivityAt desc). A failing personalised query must never sink the
+    // worldwide list, so those degrade to empty.
+    Future<List<CommunityModel>> run(Query q, int n) async {
+      final snap =
+          await q.orderBy('lastActivityAt', descending: true).limit(n).get();
+      return snap.docs.map(CommunityModel.fromFirestore).toList();
+    }
+
+    Future<List<CommunityModel>> safe(Future<List<CommunityModel>> f) =>
+        f.catchError((Object e) {
+          debugPrint('Discover personalised query failed: $e');
+          return <CommunityModel>[];
+        });
+
+    final results = await Future.wait([
+      hasCity
+          ? safe(run(public.where('city', isEqualTo: city.trim()), 20))
+          : Future.value(<CommunityModel>[]),
+      hasLang
+          ? safe(run(
+              public.where('languages', arrayContains: language.trim()), 20))
+          : Future.value(<CommunityModel>[]),
+      run(public, limit),
+    ]);
+
+    final seen = <String>{};
+    List<CommunityModel> dedupe(List<CommunityModel> l) =>
+        l.where((c) => seen.add(c.id)).toList();
+
+    final worldwideRaw = results[2];
+    DateTime? cursor;
+    for (final c in worldwideRaw) {
+      final a = c.lastActivityAt;
+      if (a != null && (cursor == null || a.isBefore(cursor))) cursor = a;
+    }
+    return DiscoverCommunities(
+      local: dedupe(results[0]),
+      language: dedupe(results[1]),
+      worldwide: dedupe(worldwideRaw),
+      worldwidePageFull: worldwideRaw.length >= limit,
+      worldwideCursor: cursor,
+    );
+  }
+
+  @override
+  Future<List<CommunityModel>> loadLastResult(String key) async {
+    try {
+      final docs = await LastResultCache.loadDocs(
+          key, _firestore.collection('communities'));
+      return docs.map(CommunityModel.fromFirestore).toList();
+    } catch (e) {
+      debugPrint('Communities last-result paint skipped ($key): $e');
+      return const [];
+    }
+  }
+
+  @override
+  Future<void> saveLastResult(String key, Iterable<String> ids) async {
+    try {
+      await LastResultCache.saveIds(key, ids);
+    } catch (_) {}
+  }
+
+  /// Community docs by id: whereIn chunks of 30 (the Firestore limit), all
+  /// chunks in parallel.
+  Future<List<CommunityModel>> _getByIds(
+      List<String> ids, GetOptions? options) async {
+    const chunk = 30;
+    final futures = <Future<QuerySnapshot<Object?>>>[
+      for (var i = 0; i < ids.length; i += chunk)
+        _communitiesRef
+            .where(FieldPath.documentId,
+                whereIn: ids.sublist(
+                    i, i + chunk > ids.length ? ids.length : i + chunk))
+            .get(options),
+    ];
+    final snapshots = await Future.wait(futures);
+    return [
+      for (final snapshot in snapshots)
+        ...snapshot.docs.map(CommunityModel.fromFirestore),
+    ];
   }
 
   @override
@@ -398,56 +551,42 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
   @override
   Future<List<CommunityMemberModel>> getCommunityMembers(
-    String communityId,
-  ) async {
+    String communityId, {
+    int? limit,
+    DateTime? startAfterJoinedAt,
+  }) async {
     try {
-      final snapshot = await _membersRef(communityId)
-          .orderBy('joinedAt', descending: false)
-          .get();
+      Query query =
+          _membersRef(communityId).orderBy('joinedAt', descending: false);
+      if (startAfterJoinedAt != null) {
+        query = query.startAfter([Timestamp.fromDate(startAfterJoinedAt)]);
+      }
+      if (limit != null) query = query.limit(limit);
+      final snapshot = await query.get();
 
       final members =
           snapshot.docs.map(CommunityMemberModel.fromFirestore).toList();
 
       // Legacy/early member docs may have an empty displayName (or photo),
-      // which renders as a "?" tile. Enrich ONLY those from their profiles,
-      // batched (whereIn ≤10) so this stays bounded for large communities.
+      // which renders as a "?" tile. Enrich ONLY those, through the shared
+      // user directory (memory/disk cached, batched whereIn of 30 in
+      // parallel) — bounded by the page size.
       final missing = members
           .where((m) => m.displayName.trim().isEmpty)
           .map((m) => m.userId)
           .toList();
       if (missing.isEmpty) return members;
 
-      final resolved = <String, Map<String, dynamic>>{};
-      for (var i = 0; i < missing.length; i += 10) {
-        final batch = missing.sublist(
-            i, i + 10 > missing.length ? missing.length : i + 10);
-        final snap = await _firestore
-            .collection('profiles')
-            .where(FieldPath.documentId, whereIn: batch)
-            .get();
-        for (final d in snap.docs) {
-          resolved[d.id] = d.data();
-        }
-      }
+      final resolved = await UserDirectoryService.instance.resolve(missing);
 
       return members.map((m) {
         if (m.displayName.trim().isNotEmpty) return m;
         final p = resolved[m.userId];
-        if (p == null) return m;
-        final name = (p['displayName'] as String?) ??
-            (p['nickname'] as String?) ??
-            (p['name'] as String?) ??
-            '';
-        final photo = m.photoUrl ??
-            (p['profilePhotoUrl'] as String?) ??
-            (p['photoUrl'] as String?) ??
-            ((p['photoUrls'] is List && (p['photoUrls'] as List).isNotEmpty)
-                ? (p['photoUrls'] as List).first as String?
-                : null);
+        if (p == null || (p.name.isEmpty && p.photoUrl == null)) return m;
         return CommunityMemberModel(
           userId: m.userId,
-          displayName: name,
-          photoUrl: photo,
+          displayName: p.name,
+          photoUrl: m.photoUrl ?? p.photoUrl,
           role: m.role,
           joinedAt: m.joinedAt,
           languages: m.languages,
@@ -465,13 +604,22 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
   }
 
   @override
+  Future<CommunityMemberModel?> getMember({
+    required String communityId,
+    required String userId,
+  }) async {
+    final doc = await _membersRef(communityId).doc(userId).get();
+    if (!doc.exists) return null;
+    return CommunityMemberModel.fromFirestore(doc);
+  }
+
+  @override
   Stream<List<CommunityMessageModel>> getCommunityMessages(
     String communityId, {
     int? limit,
   }) {
     try {
-      var query = _messagesRef(communityId)
-          .orderBy('sentAt', descending: true);
+      var query = _messagesRef(communityId).orderBy('sentAt', descending: true);
 
       if (limit != null) {
         query = query.limit(limit);
@@ -546,25 +694,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
       if (communityIds.isEmpty) return [];
 
-      // Fetch communities in batches of 10 (Firestore whereIn limit). The
-      // batches are independent, so fire them CONCURRENTLY (Future.wait) instead
-      // of awaiting each in turn — collapses 1+ceil(N/10) sequential round-trips
-      // into a single wall-clock hop (major win for users in many communities).
-      final batches = <Future<QuerySnapshot<Object?>>>[];
-      for (var i = 0; i < communityIds.length; i += 10) {
-        final batchIds = communityIds.sublist(
-          i,
-          i + 10 > communityIds.length ? communityIds.length : i + 10,
-        );
-        batches.add(_communitiesRef
-            .where(FieldPath.documentId, whereIn: batchIds)
-            .get(_opts(preferCache)));
-      }
-      final snapshots = await Future.wait(batches);
-      final communities = <CommunityModel>[];
-      for (final snapshot in snapshots) {
-        communities.addAll(snapshot.docs.map(CommunityModel.fromFirestore));
-      }
+      // Fetch communities in chunks of 30 (Firestore whereIn limit), all
+      // chunks CONCURRENTLY — one wall-clock hop regardless of N.
+      final communities = await _getByIds(communityIds, _opts(preferCache));
 
       // Sort by last activity
       communities.sort((a, b) {
@@ -585,6 +717,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
     required String userId,
     required List<String> languages,
     List<String> interests = const [],
+    String? city,
   }) async {
     try {
       final recommended = <CommunityModel>[];
@@ -599,7 +732,17 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       // Fire the per-language queries + the popular fallback CONCURRENTLY
       // (Future.wait) instead of sequentially — one wall-clock hop instead of
       // up to 4 serial round-trips.
+      final hasCity = city != null && city.trim().isNotEmpty;
       final futures = <Future<QuerySnapshot<Object?>>>[
+        // Communities in the viewer's own city first (index: isPublic, city,
+        // lastActivityAt desc).
+        if (hasCity)
+          _communitiesRef
+              .where('isPublic', isEqualTo: true)
+              .where('city', isEqualTo: city.trim())
+              .orderBy('lastActivityAt', descending: true)
+              .limit(10)
+              .get(),
         for (final lang in languages.take(3))
           _communitiesRef
               .where('isPublic', isEqualTo: true)
@@ -702,7 +845,8 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
       final manageableIds = memberDocs.docs
           .where((d) {
-            final role = (d.data() as Map<String, dynamic>?)?['role'] as String?;
+            final role =
+                (d.data() as Map<String, dynamic>?)?['role'] as String?;
             return role == 'owner' || role == 'admin';
           })
           .map((d) => d.reference.parent.parent?.id)
@@ -711,18 +855,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
 
       if (manageableIds.isEmpty) return [];
 
-      final communities = <CommunityModel>[];
-      for (var i = 0; i < manageableIds.length; i += 10) {
-        final batchIds = manageableIds.sublist(
-          i,
-          i + 10 > manageableIds.length ? manageableIds.length : i + 10,
-        );
-        final snapshot = await _communitiesRef
-            .where(FieldPath.documentId, whereIn: batchIds)
-            .get();
-        communities.addAll(snapshot.docs.map(CommunityModel.fromFirestore));
-      }
-      communities.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+      final communities = await _getByIds(manageableIds, null);
+      communities
+          .sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
       return communities;
     } catch (e) {
       debugPrint('Error getting manageable communities: $e');

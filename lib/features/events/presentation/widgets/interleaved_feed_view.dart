@@ -49,6 +49,72 @@ class PagerFeedSource<P, T> implements FeedSource<T> {
   Future<List<T>> next() async => (await _next()).map(_map).toList();
 }
 
+/// A pager source that paints its LAST-SHOWN first page instantly.
+///
+/// The first [next] returns [cached] (last session's first page, read from
+/// the local cache) when it is non-empty, while [first] (the real first
+/// server page) is already running; the following [next] returns that server
+/// page minus anything already handed out, then the pager continues with
+/// [next]. With an empty cache it behaves exactly like a plain pager.
+class CachedFirstPageFeedSource<P, T> implements FeedSource<T> {
+  CachedFirstPageFeedSource({
+    required Future<List<P>> Function() cached,
+    required Future<List<P>> Function() first,
+    required Future<List<P>> Function() next,
+    required bool Function() hasMore,
+    required String Function(P) id,
+    required T Function(P) map,
+  })  : _cached = cached,
+        _first = first,
+        _next = next,
+        _hasMore = hasMore,
+        _id = id,
+        _map = map;
+
+  final Future<List<P>> Function() _cached;
+  final Future<List<P>> Function() _first;
+  final Future<List<P>> Function() _next;
+  final bool Function() _hasMore;
+  final String Function(P) _id;
+  final T Function(P) _map;
+
+  bool _started = false;
+  Future<List<P>>? _server;
+  final Set<String> _given = {};
+
+  @override
+  bool get hasMore => !_started || _server != null || _hasMore();
+
+  List<T> _hand(List<P> page) => page
+      .where((p) => _given.add(_id(p)))
+      .map(_map)
+      .toList();
+
+  @override
+  Future<List<T>> next() async {
+    if (!_started) {
+      _started = true;
+      final server = _first();
+      // Errors surface when awaited below, never as "unhandled".
+      server.then((_) {}, onError: (Object _) {});
+      _server = server;
+      List<P> cached;
+      try {
+        cached = await _cached();
+      } catch (_) {
+        cached = const [];
+      }
+      if (cached.isNotEmpty) return _hand(cached);
+    }
+    final server = _server;
+    if (server != null) {
+      _server = null;
+      return _hand(await server);
+    }
+    return _hand(await _next());
+  }
+}
+
 /// Infinite-scroll list/grid of TWO paged sources merged by [InterleavedFeed]
 /// (ordered by [compare], or round-robin when it's null).
 ///

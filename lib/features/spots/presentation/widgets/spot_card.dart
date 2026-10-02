@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/spot.dart';
@@ -40,10 +41,16 @@ class SpotCard extends StatelessWidget {
                 child: Stack(
                   fit: StackFit.expand,
                   children: [
-                    Image.network(
-                      spot.photos.first,
+                    CachedNetworkImage(
+                      imageUrl: spot.photos.first,
                       fit: BoxFit.cover,
-                      errorBuilder: (_, __, ___) => Container(
+                      // Full-width card: decode at screen width.
+                      memCacheWidth: (MediaQuery.of(context).size.width *
+                              MediaQuery.of(context).devicePixelRatio)
+                          .round(),
+                      placeholder: (_, __) =>
+                          Container(color: AppColors.backgroundInput),
+                      errorWidget: (_, __, ___) => Container(
                         color: AppColors.backgroundInput,
                         child: const Icon(
                           Icons.image_not_supported_outlined,

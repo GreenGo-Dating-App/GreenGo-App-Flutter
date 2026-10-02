@@ -44,8 +44,9 @@ class _ProgressScreenState extends State<ProgressScreen>
     context.read<GamificationBloc>()
       ..add(LoadUserLevel(widget.userId))
       ..add(LoadUserAchievements(widget.userId))
-      ..add(LoadDailyChallenges(widget.userId))
-      ..add(LoadLeaderboard(userId: widget.userId));
+      ..add(LoadDailyChallenges(widget.userId));
+    // The leaderboard is loaded by LeaderboardScreen itself, only when its
+    // tab is actually opened (TabBarView builds pages lazily).
 
     // Watch for real-time challenge progress changes
     _progressSubscription = FirebaseFirestore.instance
@@ -116,7 +117,10 @@ class _ProgressScreenState extends State<ProgressScreen>
           children: [
             _buildOverviewTab(context, l10n),
             AchievementsScreen(userId: widget.userId),
-            DailyChallengesScreen(userId: widget.userId),
+            DailyChallengesScreen(
+              userId: widget.userId,
+              listenForProgress: false,
+            ),
             LeaderboardScreen(userId: widget.userId),
           ],
         ),
@@ -164,7 +168,8 @@ class _ProgressScreenState extends State<ProgressScreen>
   Widget _buildOverviewTab(BuildContext context, AppLocalizations l10n) {
     return BlocBuilder<GamificationBloc, GamificationState>(
       builder: (context, state) {
-        if (state.levelLoading || state.achievementsLoading) {
+        if ((state.levelLoading && state.userLevel == null) ||
+            (state.achievementsLoading && state.achievementsData == null)) {
           return Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

@@ -37,21 +37,41 @@ class CulturalExchangeBloc
   ) async {
     emit(state.copyWith(status: CulturalExchangeStatus.loading));
 
-    // Load all initial data in parallel
-    add(const LoadActiveSpotlight());
-    add(const LoadCulturalTips());
-    add(const LoadAvailableCountries());
+    // Load all initial data in parallel. The hub shows the 10 newest tips,
+    // so fetch exactly those (was 50). The hub renders right away with
+    // per-section loaders (as before); the handler stays alive until all
+    // three finish.
+    final all = Future.wait([
+      _loadSpotlight(emit),
+      _loadTips(const LoadCulturalTips(limit: _hubTipsLimit), emit),
+      _loadCountries(emit),
+    ]);
 
     emit(state.copyWith(status: CulturalExchangeStatus.loaded));
+    await all;
   }
 
   // ==================== Spotlight Handlers ====================
 
+  /// Tips shown on the hub.
+  static const int _hubTipsLimit = 10;
+
   Future<void> _onLoadActiveSpotlight(
     LoadActiveSpotlight event,
     Emitter<CulturalExchangeState> emit,
-  ) async {
+  ) =>
+      _loadSpotlight(emit);
+
+  Future<void> _loadSpotlight(Emitter<CulturalExchangeState> emit) async {
     emit(state.copyWith(isSpotlightLoading: true));
+
+    // Instant paint of the spotlight shown last time (local), then refresh.
+    if (state.activeSpotlight == null) {
+      final cached = await repository.getCachedActiveSpotlight();
+      if (cached != null && state.activeSpotlight == null) {
+        emit(state.copyWith(activeSpotlight: cached));
+      }
+    }
 
     try {
       final spotlight = await repository.getActiveSpotlight();
@@ -92,6 +112,12 @@ class CulturalExchangeBloc
   Future<void> _onLoadCulturalTips(
     LoadCulturalTips event,
     Emitter<CulturalExchangeState> emit,
+  ) =>
+      _loadTips(event, emit);
+
+  Future<void> _loadTips(
+    LoadCulturalTips event,
+    Emitter<CulturalExchangeState> emit,
   ) async {
     emit(state.copyWith(isTipsLoading: true));
 
@@ -99,6 +125,7 @@ class CulturalExchangeBloc
       final tips = await repository.getCulturalTips(
         country: event.country,
         category: event.category,
+        limit: event.limit,
       );
       emit(state.copyWith(
         isTipsLoading: false,
@@ -119,7 +146,7 @@ class CulturalExchangeBloc
     try {
       await repository.submitCulturalTip(event.tip);
       // Refresh tips after submission
-      add(const LoadCulturalTips());
+      add(const LoadCulturalTips(limit: _hubTipsLimit));
     } catch (e) {
       emit(state.copyWith(errorMessage: e.toString()));
     }
@@ -171,7 +198,23 @@ class CulturalExchangeBloc
   Future<void> _onLoadAvailableCountries(
     LoadAvailableCountries event,
     Emitter<CulturalExchangeState> emit,
-  ) async {
+  ) =>
+      _loadCountries(emit);
+
+  Future<void> _loadCountries(Emitter<CulturalExchangeState> emit) async {
+    // The list is admin-seeded and rarely changes: a copy saved within the
+    // last day is used as-is (no full-collection read); an older one paints
+    // first while the server refreshes it.
+    final fresh = await repository.getCachedAvailableCountries(
+        maxAge: const Duration(days: 1));
+    if (fresh.isNotEmpty) {
+      emit(state.copyWith(availableCountries: fresh));
+      return;
+    }
+    if (state.availableCountries.isEmpty) {
+      final stale = await repository.getCachedAvailableCountries();
+      if (stale.isNotEmpty) emit(state.copyWith(availableCountries: stale));
+    }
     try {
       final countries = await repository.getAvailableCountries();
       emit(state.copyWith(availableCountries: countries));

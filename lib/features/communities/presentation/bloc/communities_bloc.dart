@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:dartz/dartz.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/error/failures.dart';
-import '../../../../core/services/session_cache_gate.dart';
 import '../../data/datasources/communities_remote_datasource.dart';
 import '../../domain/entities/community.dart';
 import '../../domain/entities/community_member.dart';
@@ -20,7 +20,6 @@ import 'communities_state.dart';
 /// Manages state for the communities feature including
 /// interest groups, language circles, and local guide program
 class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
-
   CommunitiesBloc({
     required CommunitiesRepository repository,
     required CommunitiesRemoteDataSource remoteDataSource,
@@ -33,6 +32,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     on<LoadManagedCommunities>(_onLoadManagedCommunities);
     on<LoadRecommendedCommunities>(_onLoadRecommendedCommunities);
     on<LoadCommunityDetail>(_onLoadCommunityDetail);
+    on<LoadCommunityMembers>(_onLoadCommunityMembers);
     on<CreateCommunity>(_onCreateCommunity);
     on<UpdateCommunity>(_onUpdateCommunity);
     on<JoinCommunity>(_onJoinCommunity);
@@ -86,6 +86,22 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
   String? _subscribedCommunityId;
   List<CommunityMessage> _latestMessages = const [];
 
+  // Last-result keys (see LastResultCache): per tab, per signed-in user.
+  static const String _kDiscoverKey = 'communities_discover_v1';
+  static const String _kJoinedKey = 'communities_joined_v1';
+  static const String _kMyKey = 'communities_my_v1';
+
+  /// Personalisation remembered from the last LoadCommunities that carried it.
+  String? _nearCity;
+  String? _nearLanguage;
+
+  /// Per-session memo of the personalised, unfiltered Discover page keyed by
+  /// (uid, city, language): re-loads with the same inputs (after join/leave,
+  /// the "All" chip, re-opening the screen) re-use it instead of re-running
+  /// three queries. Static because the bloc is a factory (one per screen).
+  static final Map<String, _DiscoverMemo> _discoverMemo = {};
+  static const Duration _discoverMemoTtl = Duration(minutes: 10);
+
   Future<void> _onLoadCommunities(
     LoadCommunities event,
     Emitter<CommunitiesState> emit,
@@ -98,21 +114,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       emit(const CommunitiesLoading());
     }
 
-    // CACHE-THEN-NETWORK — but only ONCE the server has been hit this session.
-    // On a fresh app open the gate is cold, so we go NETWORK-FIRST (fresh data);
-    // subsequent loads paint instantly from the cache, then reconcile.
-    if (SessionCacheGate.isWarm(SessionCacheGate.communitiesDiscover)) {
-      final cached = await _repository.getCommunities(
-        type: event.type,
-        language: event.language,
-        city: event.city,
-        searchQuery: event.searchQuery,
-        limit: _communitiesPageSize,
-        preferCache: true,
-      );
-      cached.fold((_) {}, (list) {
-        if (list.isNotEmpty) _emitDiscover(list, emit);
-      });
+    if (event.nearCity != null) _nearCity = event.nearCity;
+    if (event.nearLanguage != null) _nearLanguage = event.nearLanguage;
+
+    final unfiltered = event.type == null &&
+        (event.language == null || event.language!.isEmpty) &&
+        (event.city == null || event.city!.isEmpty) &&
+        (event.searchQuery == null || event.searchQuery!.isEmpty);
+
+    if (unfiltered) {
+      await _loadPersonalisedDiscover(emit, force: event.forceRefresh);
+      return;
     }
 
     final result = await _repository.getCommunities(
@@ -133,27 +145,128 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           emit(CommunitiesError(message: failure.message));
         }
       },
-      (communities) {
-        _emitDiscover(communities, emit);
-        SessionCacheGate.markWarm(SessionCacheGate.communitiesDiscover);
-      },
+      (communities) => _emitDiscover(communities, emit),
     );
   }
 
+  /// Unfiltered Discover: local (viewer's city) + language + worldwide fill,
+  /// in parallel and de-duplicated. Paints the last-rendered list from the
+  /// local cache first, then the server result; memoised for the session.
+  Future<void> _loadPersonalisedDiscover(
+    Emitter<CommunitiesState> emit, {
+    bool force = false,
+  }) async {
+    final uid = _currentUid();
+    final memoKey = '$uid|${_nearCity ?? ''}|${_nearLanguage ?? ''}';
+    final memo = _discoverMemo[memoKey];
+    if (!force &&
+        memo != null &&
+        DateTime.now().difference(memo.at) < _discoverMemoTtl) {
+      _emitDiscoverDisplay(memo.display, emit,
+          hasMore: memo.hasMore, cursor: memo.cursor);
+      return;
+    }
+
+    // Instant paint: exactly what this tab showed last time (by id, from the
+    // local cache). Only a NON-EMPTY result, and only into an empty slice.
+    List<Community> painted = const [];
+    final cur0 = state;
+    if (cur0 is! CommunitiesLoaded || cur0.communities.isEmpty) {
+      final cached = await _remoteDataSource.loadLastResult(_kDiscoverKey);
+      final cur = state;
+      if (cached.isNotEmpty &&
+          (cur is! CommunitiesLoaded || cur.communities.isEmpty)) {
+        painted = cached;
+        _emitDiscoverDisplay(cached, emit, hasMore: true, cursor: null);
+      }
+    }
+
+    DiscoverCommunities page;
+    try {
+      page = await _remoteDataSource.getDiscoverCommunities(
+        city: _nearCity,
+        language: _nearLanguage,
+        limit: _communitiesPageSize,
+      );
+    } catch (e) {
+      debugPrint('LoadCommunities failed: $e');
+      if (state is! CommunitiesLoaded) {
+        emit(CommunitiesError(message: e.toString()));
+      }
+      return;
+    }
+
+    // Local first, then language, then worldwide — each group in random order
+    // for variety. Items already painted from the cache keep their position
+    // (no visible reshuffle); new ones follow.
+    var display = <Community>[
+      ..._shuffled(page.local),
+      ..._shuffled(page.language),
+      ..._shuffled(page.worldwide),
+    ];
+    if (painted.isNotEmpty) {
+      final byId = {for (final c in display) c.id: c};
+      final kept = [
+        for (final c in painted)
+          if (byId.containsKey(c.id)) byId[c.id]!,
+      ];
+      final keptIds = kept.map((c) => c.id).toSet();
+      display = [...kept, ...display.where((c) => !keptIds.contains(c.id))];
+    }
+
+    _emitDiscoverDisplay(display, emit,
+        hasMore: page.worldwidePageFull, cursor: page.worldwideCursor);
+    _discoverMemo[memoKey] = _DiscoverMemo(
+      display: display,
+      hasMore: page.worldwidePageFull,
+      cursor: page.worldwideCursor,
+      at: DateTime.now(),
+    );
+    unawaited(_remoteDataSource.saveLastResult(
+        _kDiscoverKey, display.map((c) => c.id)));
+  }
+
+  String _currentUid() {
+    try {
+      return FirebaseAuth.instance.currentUser?.uid ?? '';
+    } catch (_) {
+      return '';
+    }
+  }
+
   /// Emit a Discover page (random order, keyset cursor) merged onto current
-  /// state. Shared by the cache and server passes of _onLoadCommunities.
+  /// state. Used by the filtered (type / search) loads.
   void _emitDiscover(List<Community> communities, Emitter<CommunitiesState> emit) {
-    final display = _shuffled(communities);
+    _emitDiscoverDisplay(
+      _shuffled(communities),
+      emit,
+      hasMore: communities.length >= _communitiesPageSize,
+      cursor: _oldestActivity(communities),
+    );
+  }
+
+  void _emitDiscoverDisplay(
+    List<Community> display,
+    Emitter<CommunitiesState> emit, {
+    required bool hasMore,
+    required DateTime? cursor,
+  }) {
     final languageCircles =
         display.where((c) => c.type == CommunityType.languageCircle).toList();
     final cur = state;
     final base = cur is CommunitiesLoaded ? cur : const CommunitiesLoaded();
-    emit(base.copyWith(
+    emit(CommunitiesLoaded(
       communities: display,
+      userCommunities: base.userCommunities,
+      recommended: base.recommended,
       languageCircles: languageCircles,
-      hasMoreCommunities: communities.length >= _communitiesPageSize,
+      hasMoreCommunities: hasMore,
       isLoadingMore: false,
-      communitiesCursor: _oldestActivity(communities),
+      // Explicit (copyWith can't clear it): a cached paint has no cursor
+      // yet, so endless scroll waits for the server pass.
+      communitiesCursor: cursor,
+      managedCommunities: base.managedCommunities,
+      managedLoaded: base.managedLoaded,
     ));
   }
 
@@ -202,8 +315,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         // Dedupe by id in case a boundary item overlaps. Append the (shuffled)
         // fresh chunk so already-seen items don't reorder mid-scroll.
         final existingIds = s.communities.map((c) => c.id).toSet();
-        final fresh =
-            page.where((c) => !existingIds.contains(c.id)).toList();
+        final fresh = page.where((c) => !existingIds.contains(c.id)).toList();
         final merged = [...s.communities, ..._shuffled(fresh)];
         // Advance the cursor to the oldest across old + new.
         final pageOldest = _oldestActivity(fresh);
@@ -233,17 +345,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       emit(const CommunitiesLoading());
     }
 
-    // Network-first on a fresh open; cache-then-network once warm this session.
-    if (SessionCacheGate.isWarm(SessionCacheGate.communitiesJoined)) {
-      final cached =
-          await _repository.getUserCommunities(event.userId, preferCache: true);
-      cached.fold((_) {}, (list) {
-        if (list.isNotEmpty) {
-          final c = state;
-          final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
-          emit(b.copyWith(userCommunities: list));
-        }
-      });
+    // Instant paint of what this tab showed last time (local cache, by id) —
+    // only non-empty, only into an empty slice; the server pass follows.
+    final c0 = state;
+    if (c0 is! CommunitiesLoaded || c0.userCommunities.isEmpty) {
+      final cached = await _remoteDataSource.loadLastResult(_kJoinedKey);
+      final c = state;
+      if (cached.isNotEmpty &&
+          (c is! CommunitiesLoaded || c.userCommunities.isEmpty)) {
+        final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
+        emit(b.copyWith(userCommunities: cached));
+      }
     }
 
     final result = await _repository.getUserCommunities(event.userId);
@@ -261,11 +373,11 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         // Keep recommendations free of communities the user is already in, even
         // if recommended loaded first (order-independent exclusion).
         final joinedIds = userCommunities.map((c) => c.id).toSet();
-        final rec = base.recommended
-            .where((c) => !joinedIds.contains(c.id))
-            .toList();
+        final rec =
+            base.recommended.where((c) => !joinedIds.contains(c.id)).toList();
         emit(base.copyWith(userCommunities: userCommunities, recommended: rec));
-        SessionCacheGate.markWarm(SessionCacheGate.communitiesJoined);
+        unawaited(_remoteDataSource.saveLastResult(
+            _kJoinedKey, userCommunities.map((c) => c.id)));
       },
     );
   }
@@ -274,17 +386,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     LoadManagedCommunities event,
     Emitter<CommunitiesState> emit,
   ) async {
-    // Network-first on a fresh open; cache-then-network once warm this session.
-    if (SessionCacheGate.isWarm(SessionCacheGate.communitiesMy)) {
-      final cached = await _repository.getCreatedCommunities(event.userId,
-          preferCache: true);
-      cached.fold((_) {}, (list) {
-        if (list.isNotEmpty) {
-          final c = state;
-          final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
-          emit(b.copyWith(managedCommunities: list, managedLoaded: true));
-        }
-      });
+    // Instant paint of what this tab showed last time (local cache, by id) —
+    // only non-empty, only into an empty slice; the server pass follows.
+    final c0 = state;
+    if (c0 is! CommunitiesLoaded || c0.managedCommunities.isEmpty) {
+      final cached = await _remoteDataSource.loadLastResult(_kMyKey);
+      final c = state;
+      if (cached.isNotEmpty &&
+          (c is! CommunitiesLoaded || c.managedCommunities.isEmpty)) {
+        final b = c is CommunitiesLoaded ? c : const CommunitiesLoaded();
+        emit(b.copyWith(managedCommunities: cached, managedLoaded: true));
+      }
     }
 
     final result = await _repository.getCreatedCommunities(event.userId);
@@ -308,7 +420,8 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
             managedLoaded: true,
           ));
         }
-        SessionCacheGate.markWarm(SessionCacheGate.communitiesMy);
+        unawaited(_remoteDataSource.saveLastResult(
+            _kMyKey, managed.map((c) => c.id)));
       },
     );
   }
@@ -321,6 +434,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
       userId: event.userId,
       languages: event.languages,
       interests: event.interests,
+      city: event.city,
     );
 
     // Merge onto the CURRENT state (copyWith) so we never clobber a concurrent
@@ -344,17 +458,27 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     );
   }
 
+  /// Roster page size for the lazily-loaded Members sheet.
+  static const int _membersPageSize = 50;
+
+  /// The last community shown in detail — lets a re-load without a community
+  /// (e.g. right after joining) repaint instantly instead of re-fetching.
+  Community? _lastDetailCommunity;
+  String? _detailUserId;
+
   Future<void> _onLoadCommunityDetail(
     LoadCommunityDetail event,
     Emitter<CommunitiesState> emit,
   ) async {
-    emit(const CommunitiesLoading());
-
     // Prefer the community the caller already has (the detail screen always
     // passes it). Only re-fetch when it wasn't provided. This eliminates the
     // "Unable to load community" that appeared right after creating one.
-    Community? community = event.community;
+    Community? community = event.community ??
+        (_lastDetailCommunity?.id == event.communityId
+            ? _lastDetailCommunity
+            : null);
     if (community == null) {
+      emit(const CommunitiesLoading());
       final communityResult =
           await _repository.getCommunityById(event.communityId);
       community = communityResult.fold((_) => null, (c) => c);
@@ -363,13 +487,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         return;
       }
     }
-
-    final membersResult =
-        await _repository.getCommunityMembers(event.communityId);
-    final members = membersResult.fold(
-      (failure) => <CommunityMember>[],
-      (members) => members,
-    );
+    _lastDetailCommunity = community;
 
     // Re-apply any messages that already streamed in for THIS community
     // before the detail finished loading (otherwise they'd be lost).
@@ -377,12 +495,85 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         ? _latestMessages
         : const <CommunityMessage>[];
 
+    // Paint the detail IMMEDIATELY with the known community. The roster is
+    // NOT loaded here (it is unbounded for big communities) — the Members
+    // sheet loads it lazily, page by page. Membership/role comes from the
+    // user's single members/{uid} doc below.
+    final prev = state;
+    final same =
+        prev is CommunityDetailLoaded && prev.community.id == event.communityId
+            ? prev
+            : null;
     emit(CommunityDetailLoaded(
       community: community,
-      members: members,
-      messages: cached,
-      isMember: false,
+      messages:
+          same != null && same.messages.isNotEmpty ? same.messages : cached,
+      pendingRequests: same?.pendingRequests ?? const [],
     ));
+
+    final uid = event.userId ?? _detailUserId;
+    if (event.userId != null) _detailUserId = event.userId;
+    CommunityMember? me;
+    if (uid != null && uid.isNotEmpty) {
+      final r = await _repository.getMember(
+          communityId: event.communityId, userId: uid);
+      me = r.fold((_) => null, (m) => m);
+    }
+    final s = state;
+    if (s is CommunityDetailLoaded && s.community.id == event.communityId) {
+      emit(s.copyWith(
+        myMembership: me,
+        clearMyMembership: me == null,
+        membershipLoaded: true,
+      ));
+    }
+  }
+
+  /// Lazily load the roster (first page, or the next one when [loadMore]).
+  Future<void> _onLoadCommunityMembers(
+    LoadCommunityMembers event,
+    Emitter<CommunitiesState> emit,
+  ) async {
+    final cur = state;
+    if (cur is! CommunityDetailLoaded ||
+        cur.community.id != event.communityId ||
+        cur.isLoadingMembers) {
+      return;
+    }
+    if (event.loadMore && (!cur.membersLoaded || !cur.hasMoreMembers)) return;
+    if (!event.loadMore && cur.membersLoaded) return;
+
+    emit(cur.copyWith(isLoadingMembers: true));
+    final cursor = event.loadMore && cur.members.isNotEmpty
+        ? cur.members.last.joinedAt
+        : null;
+    final result = await _repository.getCommunityMembers(
+      event.communityId,
+      limit: _membersPageSize,
+      startAfterJoinedAt: cursor,
+    );
+    final s = state;
+    if (s is! CommunityDetailLoaded || s.community.id != event.communityId) {
+      return;
+    }
+    result.fold(
+      (failure) {
+        debugPrint('LoadCommunityMembers failed: ${failure.message}');
+        emit(s.copyWith(isLoadingMembers: false, membersLoaded: true));
+      },
+      (page) {
+        final seen = s.members.map((m) => m.userId).toSet();
+        final merged = event.loadMore
+            ? [...s.members, ...page.where((m) => !seen.contains(m.userId))]
+            : page;
+        emit(s.copyWith(
+          members: merged,
+          membersLoaded: true,
+          isLoadingMembers: false,
+          hasMoreMembers: page.length >= _membersPageSize,
+        ));
+      },
+    );
   }
 
   Future<void> _onCreateCommunity(
@@ -414,6 +605,8 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           member: member,
         );
 
+        // A new community belongs in Discover right away.
+        _discoverMemo.clear();
         emit(CommunityCreated(community: community));
       },
     );
@@ -463,7 +656,8 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
         emit(CommunityJoined(communityId: event.communityId));
 
         // Refresh detail if currently viewing this community
-        add(LoadCommunityDetail(communityId: event.communityId));
+        add(LoadCommunityDetail(
+            communityId: event.communityId, userId: event.userId));
       },
     );
   }
@@ -487,11 +681,13 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     DeleteCommunity event,
     Emitter<CommunitiesState> emit,
   ) async {
-    final result =
-        await _repository.deleteCommunity(event.communityId);
+    final result = await _repository.deleteCommunity(event.communityId);
     result.fold(
       (failure) => emit(CommunitiesError(message: failure.message)),
-      (_) => emit(CommunityDeleted(communityId: event.communityId)),
+      (_) {
+        _discoverMemo.clear();
+        emit(CommunityDeleted(communityId: event.communityId));
+      },
     );
   }
 
@@ -545,9 +741,8 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     _subscribedCommunityId = event.communityId;
     _latestMessages = const [];
 
-    _messagesSubscription = _repository
-        .getCommunityMessages(event.communityId)
-        .listen(
+    _messagesSubscription =
+        _repository.getCommunityMessages(event.communityId).listen(
       (result) {
         result.fold(
           (failure) {
@@ -735,21 +930,38 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     final current = state;
     if (current is! CommunityDetailLoaded) return;
 
-    final membersResult = await _repository.getCommunityMembers(communityId);
+    // Re-read only what the sheet has shown (bounded), in parallel with the
+    // pending requests.
+    final shown = current.members.length;
+    final limit = shown <= _membersPageSize
+        ? _membersPageSize
+        : ((shown + _membersPageSize - 1) ~/ _membersPageSize) *
+            _membersPageSize;
+    final membersFuture =
+        _repository.getCommunityMembers(communityId, limit: limit);
+    final requestsFuture = _repository.getJoinRequests(communityId);
+    final membersResult = await membersFuture;
+    final requestsResult = await requestsFuture;
+
     final members = membersResult.fold(
       (_) => current.members,
       (m) => m,
     );
-
-    final requestsResult = await _repository.getJoinRequests(communityId);
     final requests = requestsResult.fold(
       (_) => current.pendingRequests,
       (r) => r,
     );
 
     if (state is CommunityDetailLoaded) {
-      emit((state as CommunityDetailLoaded)
-          .copyWith(members: members, pendingRequests: requests));
+      emit((state as CommunityDetailLoaded).copyWith(
+        members: members,
+        pendingRequests: requests,
+        membersLoaded: true,
+        hasMoreMembers: membersResult.fold(
+          (_) => current.hasMoreMembers,
+          (m) => m.length >= limit,
+        ),
+      ));
     }
   }
 
@@ -769,4 +981,17 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
     _messagesSubscription?.cancel();
     return super.close();
   }
+}
+
+class _DiscoverMemo {
+  const _DiscoverMemo({
+    required this.display,
+    required this.hasMore,
+    required this.cursor,
+    required this.at,
+  });
+  final List<Community> display;
+  final bool hasMore;
+  final DateTime? cursor;
+  final DateTime at;
 }

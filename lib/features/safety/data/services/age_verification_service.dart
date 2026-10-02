@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -5,6 +7,8 @@ import 'package:firebase_storage/firebase_storage.dart';
 // `cross_file` directly, which is only a transitive dependency here.
 import 'package:image_picker/image_picker.dart' show XFile;
 import 'package:flutter/foundation.dart';
+
+import '../../../../core/cache/last_result_cache.dart';
 
 /// Where a user stands on age assurance.
 ///
@@ -92,6 +96,30 @@ class AgeVerificationService {
   final FirebaseStorage _storage;
   final FirebaseAuth _auth;
 
+  static const String _cacheKey = 'age_verification_state';
+
+  static AgeVerificationState _fromMap(Map<String, dynamic> data) =>
+      AgeVerificationState(
+        status: AgeVerificationStatus.parse(data['status'] as String?),
+        documentRequired: data['documentRequired'] as bool? ?? false,
+        canPublishToCommunities:
+            data['canPublishToCommunities'] as bool? ?? false,
+        rejectionReason: data['rejectionReason'] as String?,
+      );
+
+  /// The last state the server returned (per signed-in user), for painting
+  /// the screen instantly before [loadState] refreshes it. Display only:
+  /// never use it for a gating decision.
+  Future<AgeVerificationState?> loadCachedState() async {
+    try {
+      final cached = await LastResultCache.loadJson(_cacheKey);
+      if (cached is! Map || cached.isEmpty) return null;
+      return _fromMap(Map<String, dynamic>.from(cached));
+    } catch (_) {
+      return null;
+    }
+  }
+
   /// Reads the current state. Never throws — a network blip must not block the
   /// UI, and the authoritative gate lives in Firestore rules regardless.
   Future<AgeVerificationState> loadState() async {
@@ -99,13 +127,15 @@ class AgeVerificationService {
       final result =
           await _functions.httpsCallable('getAgeVerificationState').call<dynamic>();
       final data = Map<String, dynamic>.from(result.data as Map);
-      return AgeVerificationState(
-        status: AgeVerificationStatus.parse(data['status'] as String?),
-        documentRequired: data['documentRequired'] as bool? ?? false,
-        canPublishToCommunities:
+      // Remember only real server answers (never the offline fallback).
+      unawaited(LastResultCache.saveJson(_cacheKey, {
+        'status': data['status'] as String?,
+        'documentRequired': data['documentRequired'] as bool? ?? false,
+        'canPublishToCommunities':
             data['canPublishToCommunities'] as bool? ?? false,
-        rejectionReason: data['rejectionReason'] as String?,
-      );
+        'rejectionReason': data['rejectionReason'] as String?,
+      }));
+      return _fromMap(data);
     } catch (e) {
       debugPrint('[AgeVerification] loadState failed: $e');
       return const AgeVerificationState.unknown();

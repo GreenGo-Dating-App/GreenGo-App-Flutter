@@ -10,6 +10,15 @@ class GlobeRepositoryImpl implements GlobeRepository {
   final GlobeRemoteDataSource remoteDataSource;
 
   @override
+  Future<GlobeUser?> getCurrentUserPin({required String userId}) async {
+    try {
+      return await remoteDataSource.getCurrentUserPin(userId: userId);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  @override
   Future<Either<Failure, GlobeData>> getGlobeData({
     required String userId,
   }) async {

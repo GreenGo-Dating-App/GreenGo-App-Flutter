@@ -2,11 +2,13 @@ import 'dart:io';
 import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dartz/dartz.dart' show Either;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/error/failures.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/utils/language_flags.dart';
@@ -53,11 +55,11 @@ class GroupInfoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final getMembers = sl<GetGroupMembers>();
     return Scaffold(
       appBar: AppBar(title: Text(l10n.groupInfo)),
-      body: StreamBuilder(
-        stream: getMembers(groupId),
+      // The members stream is created ONCE per screen (not on every rebuild).
+      body: _OnceStreamBuilder<Either<Failure, List<GroupMember>>>(
+        create: () => sl<GetGroupMembers>()(groupId),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return const Center(child: CircularProgressIndicator());
@@ -710,4 +712,24 @@ class _MemberSkeletonList extends StatelessWidget {
       ),
     );
   }
+}
+
+/// A [StreamBuilder] whose stream is created once, in initState — so a parent
+/// rebuild never tears down and re-subscribes the Firestore listener.
+class _OnceStreamBuilder<T> extends StatefulWidget {
+  const _OnceStreamBuilder({required this.create, required this.builder});
+
+  final Stream<T> Function() create;
+  final AsyncWidgetBuilder<T> builder;
+
+  @override
+  State<_OnceStreamBuilder<T>> createState() => _OnceStreamBuilderState<T>();
+}
+
+class _OnceStreamBuilderState<T> extends State<_OnceStreamBuilder<T>> {
+  late final Stream<T> _stream = widget.create();
+
+  @override
+  Widget build(BuildContext context) =>
+      StreamBuilder<T>(stream: _stream, builder: widget.builder);
 }

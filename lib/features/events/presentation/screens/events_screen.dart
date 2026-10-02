@@ -36,6 +36,7 @@ import '../widgets/attraction_menu_dialog.dart';
 import '../widgets/external_event_tiles.dart';
 import '../widgets/interleaved_feed_view.dart';
 import '../../data/datasources/external_events_pager.dart';
+import '../../data/datasources/external_events_preloader.dart';
 import '../../domain/entities/external_event.dart';
 import '../../domain/feed_interleave.dart';
 import '../../../user_experiences/domain/repositories/user_experiences_repository.dart';
@@ -169,9 +170,12 @@ class _EventsScreenState extends State<EventsScreen>
     final repository = EventsRepositoryImpl(remoteDataSource: dataSource);
     _eventsBloc = EventsBloc(repository: repository);
 
-    // Load initial events
-    _eventsBloc.add(const LoadEvents(upcoming: true));
+    // Load initial events. The worldwide "upcoming" list is only a fallback
+    // for viewers with no location anchor (the nearest-first community query
+    // covers everyone else), so it is requested once the anchor is known to
+    // be missing — see [_loadUpcomingFallback].
     _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
+    _resolveProfilePlace();
 
     // Paint the community feed last shown (local cache, no network) while the
     // anchor resolves and the server query runs; the server result replaces it.
@@ -181,7 +185,11 @@ class _EventsScreenState extends State<EventsScreen>
     _tabController.addListener(() {
       if (!mounted) return;
       setState(() {});
-      // Refresh "My events" (organised + going) when its view is opened.
+      // The listener also fires while the swipe animation runs; act once,
+      // when the index has settled.
+      if (_tabController.indexIsChanging) return;
+      // Refresh "My events" (organised + going) when its view is opened
+      // (served from the datasource's session memo when still fresh).
       if (_isEventsTab && _eventsFilter == _FeedFilter.mine) {
         _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
       }
@@ -196,6 +204,43 @@ class _EventsScreenState extends State<EventsScreen>
       _anchorResolved = true;
     }
     _initLocation();
+  }
+
+  /// Profile city / country (local cache first) — narrows the partner side of
+  /// "All" to the viewer's country and the no-location fallback list to their
+  /// city.
+  String? _profileCity;
+  String? _profileCountry;
+  bool _placeResolved = false;
+
+  Future<void> _resolveProfilePlace() async {
+    final place = await EventsLocation.profilePlace(widget.currentUserId);
+    if (!mounted) return;
+    setState(() {
+      _profileCity = place?.city;
+      _profileCountry = place?.country;
+      _placeResolved = true;
+    });
+  }
+
+  /// The bloc's "upcoming events" list is only shown when there is no
+  /// location anchor (otherwise the nearest-first community list is used and
+  /// only its within-100km part of the upcoming list could ever show — which
+  /// the nearest-first list already contains). Without an anchor it is
+  /// narrowed to the profile city, widening to the old worldwide query when
+  /// the city has too few events (see [LoadEvents.widenIfFew]).
+  Future<void> _loadUpcomingFallback() async {
+    if (!_anchorResolved || (_userLat != null && _userLng != null)) return;
+    if (!_placeResolved) {
+      await _resolveProfilePlace();
+      if (!mounted) return;
+    }
+    final city = _profileCity;
+    _eventsBloc.add(LoadEvents(
+      upcoming: true,
+      city: (city != null && city.isNotEmpty) ? city : null,
+      widenIfFew: true,
+    ));
   }
 
   // Tabs: 0 Events (community + partner + mine, via [_eventsFilter]),
@@ -286,6 +331,7 @@ class _EventsScreenState extends State<EventsScreen>
         }
       });
     }
+    unawaited(_loadUpcomingFallback());
     unawaited(_loadCommunityNearby());
 
     final pos = await const LocationShareService().getApproximatePosition();
@@ -309,6 +355,8 @@ class _EventsScreenState extends State<EventsScreen>
     final lat = _userLat, lng = _userLng;
     if (lat == null || lng == null) return;
     setState(() => _communityNearbyLoading = true);
+    // Pull-to-refresh must reach the server, not the session memo.
+    if (force) _eventsDataSource.invalidateNearbyCommunity();
     try {
       final prefetched =
           force ? null : await EventsPrefetch.takeCommunity(lat, lng);
@@ -437,7 +485,7 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
               );
               // Reload events
-              _eventsBloc.add(const LoadEvents(upcoming: true));
+              unawaited(_loadUpcomingFallback());
               _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
             } else if (state is EventRsvpSuccess) {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -450,8 +498,8 @@ class _EventsScreenState extends State<EventsScreen>
                   backgroundColor: AppColors.successGreen,
                 ),
               );
-              // Reload events to reflect changes
-              _eventsBloc.add(const LoadEvents(upcoming: true));
+              // The bloc already re-read the affected event into its lists;
+              // only "My events" (going set) can change. No list reload.
               _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
             } else if (state is EventDeleted) {
               ScaffoldMessenger.of(context).showSnackBar(
@@ -903,6 +951,9 @@ class _EventsScreenState extends State<EventsScreen>
         present.add(e.category);
       }
     }
+    for (final e in _communityNearby) {
+      present.add(e.category);
+    }
     if (present.isEmpty) return const SizedBox.shrink();
     final cats = EventCategory.values.where(present.contains).toList();
     return SizedBox(
@@ -1170,7 +1221,8 @@ class _EventsScreenState extends State<EventsScreen>
     return RefreshIndicator(
       color: AppColors.richGold,
       onRefresh: () async {
-        _eventsBloc.add(const LoadEvents(upcoming: true));
+        _eventsDataSource.invalidateUserEvents(widget.currentUserId);
+        unawaited(_loadUpcomingFallback());
         _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
         // Pull-to-refresh always re-queries the server (never the prefetch).
         await _loadCommunityNearby(force: true);
@@ -1400,12 +1452,15 @@ class _EventsScreenState extends State<EventsScreen>
         key: 'q${identityHashCode(_communityResults)}_$ready',
       );
     }
-    // Server answer only: a cached paint would be replaced (and jump).
-    if (_communityNearby.isNotEmpty && _communityServerLoaded) {
+    // The cached paint (last session's list) seeds the feed instantly; the
+    // server answer only restarts it when it holds different events (the key
+    // is the id list, so an identical answer causes no jump).
+    if (_communityNearby.isNotEmpty) {
+      final live = _communityNearby.where((e) => e.isLive).toList();
       return (
-        list: _communityNearby.where((e) => e.isLive).toList(),
+        list: live,
         ready: true,
-        key: 'n${identityHashCode(_communityNearby)}',
+        key: 'n${Object.hashAll(live.map((e) => e.id))}',
       );
     }
     final waiting = _communityNearbyLoading ||
@@ -1458,16 +1513,21 @@ class _EventsScreenState extends State<EventsScreen>
     final byDistance =
         _allSort == 'distance' && _userLat != null && _userLng != null;
     final anchor = '$_userLat,$_userLng';
+    // Date mode (worldwide soonest-first) starts in the viewer's country.
+    final country = byDistance ? null : _profileCountry;
     return InterleavedFeedView<_MergedEvent>(
       sourceKeyA: '${input.key}|$anchor|$byDistance',
-      sourceKeyB: '$anchor|$byDistance',
+      sourceKeyB: '$anchor|$byDistance|$_placeResolved|$country',
       filterKey: '$_selectedCategory|$_searchQuery',
       createA: () => input.ready
           ? ListFeedSource<_MergedEvent>(
               input.list.map(_mergedCommunity).toList())
           : null,
       createB: () {
-        final pager = ExternalEventsPager(
+        // Wait (milliseconds, local cache) for the profile country so the
+        // date feed queries once, already narrowed.
+        if (!byDistance && !_placeResolved) return null;
+        var pager = ExternalEventsPager(
           source: 'ticketmaster',
           // Date mode is the server-ordered soonest-first feed; distance mode
           // the nearest-first geohash rings.
@@ -1475,10 +1535,30 @@ class _EventsScreenState extends State<EventsScreen>
           userLat: _userLat,
           userLng: _userLng,
           liveChunks: true,
+          country: country,
         );
-        return PagerFeedSource<ExternalEvent, _MergedEvent>(
+        return CachedFirstPageFeedSource<ExternalEvent, _MergedEvent>(
+          // Last session's first page, from the local cache (instant).
+          cached: pager.loadCached,
+          first: () async {
+            // Adopt the background-warmed first page when it is this view.
+            if (!byDistance) {
+              final warm = await ExternalEventsPreloader.instance.take(
+                  'ticketmaster',
+                  sort: 'date',
+                  country: country);
+              if (warm != null) {
+                pager = warm.pager;
+                return warm.items;
+              }
+            }
+            final page = await pager.next();
+            unawaited(pager.saveFirstPage(page));
+            return page;
+          },
+          next: () => pager.next(),
           hasMore: () => pager.hasMore,
-          next: pager.next,
+          id: (e) => e.id,
           map: _mergedPartner,
         );
       },
@@ -1509,7 +1589,8 @@ class _EventsScreenState extends State<EventsScreen>
       },
       emptyBuilder: (_) => _buildNoEventsState(),
       onRefresh: () async {
-        _eventsBloc.add(const LoadEvents(upcoming: true));
+        _eventsDataSource.invalidateUserEvents(widget.currentUserId);
+        unawaited(_loadUpcomingFallback());
         _eventsBloc.add(LoadUserEvents(userId: widget.currentUserId));
         await _loadCommunityNearby(force: true);
       },
@@ -2393,18 +2474,14 @@ class EventDetailsScreen extends StatelessWidget {
               // Group Chat button
               IconButton(
                 icon: const Icon(Icons.chat, color: AppColors.richGold),
-                onPressed: () async {
-                  // Resolve the real display name so messages aren't sent as "User".
-                  String name = 'User';
-                  try {
-                    final doc = await FirebaseFirestore.instance
-                        .collection('profiles')
-                        .doc(currentUserId)
-                        .get();
-                    final n = (doc.data()?['displayName'] as String?)?.trim();
-                    if (n != null && n.isNotEmpty) name = n;
-                  } catch (_) {/* fall back to "User" */}
-                  if (!context.mounted) return;
+                onPressed: () {
+                  // Open at once: the chat screen resolves the sender's real
+                  // name itself (UserDirectoryService); pass what is already
+                  // known as the fallback.
+                  final known = UserDirectoryService.instance
+                      .nameFor(currentUserId)
+                      .trim();
+                  final name = known.isNotEmpty ? known : 'User';
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (_) => EventChatScreen(
@@ -2781,12 +2858,17 @@ class EventDetailsScreen extends StatelessWidget {
                     // anonymity.
                     return SizedBox(
                       height: 80,
-                      child: FutureBuilder<Map<String, UserBrief>>(
-                        future: UserDirectoryService.instance.resolve(
-                            visibleGoing.map((a) => a.userId)),
-                        builder: (context, dirSnap) {
-                          final dir =
-                              dirSnap.data ?? const <String, UserBrief>{};
+                      // Paint at once from the attendee docs; photos fill in
+                      // as the (batched, cached) directory resolves.
+                      child: ListenableBuilder(
+                        listenable: UserDirectoryService.instance,
+                        builder: (context, _) {
+                          final directory = UserDirectoryService.instance;
+                          final missing = visibleGoing
+                              .map((a) => a.userId)
+                              .where((u) => !directory.isResolved(u))
+                              .toList();
+                          if (missing.isNotEmpty) directory.resolve(missing);
                           return ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemCount: visibleGoing.length,
@@ -2801,7 +2883,9 @@ class EventDetailsScreen extends StatelessWidget {
                               final photo = anon
                                   ? null
                                   : (attendee.userPhotoUrl ??
-                                      dir[attendee.userId]?.photoUrl);
+                                      directory
+                                          .cached(attendee.userId)
+                                          ?.photoUrl);
                               return Padding(
                                 padding: const EdgeInsets.only(right: 12),
                                 child: Column(
@@ -2997,10 +3081,9 @@ class EventDetailsScreen extends StatelessWidget {
       }
     }
 
-    // Refresh the lists (we wrote directly, bypassing the RSVP bloc event).
-    bloc
-      ..add(const LoadEvents(upcoming: true))
-      ..add(LoadUserEvents(userId: currentUserId));
+    // Refresh "My events" (we wrote directly, bypassing the RSVP bloc event;
+    // the datasource dropped its memo on the write).
+    bloc.add(LoadUserEvents(userId: currentUserId));
     if (context.mounted) Navigator.pop(context);
   }
 
@@ -3222,6 +3305,22 @@ class EventDetailsScreen extends StatelessWidget {
     );
   }
 
+  static final Map<String, ({Future<int> pos, DateTime at})> _waitlistMemo =
+      {};
+
+  static Future<int> _waitlistPosition(String eventId, String userId) {
+    final key = '$eventId|$userId';
+    final hit = _waitlistMemo[key];
+    if (hit != null &&
+        DateTime.now().difference(hit.at) < const Duration(seconds: 30)) {
+      return hit.pos;
+    }
+    if (_waitlistMemo.length > 50) _waitlistMemo.clear();
+    final f = sl<EventsRemoteDataSource>().getWaitlistPosition(eventId, userId);
+    _waitlistMemo[key] = (pos: f, at: DateTime.now());
+    return f;
+  }
+
   /// "You're #N on the waitlist" banner for a queued attendee. Position is read
   /// on demand (bounded query); waitlisted attendees never get the QR ticket.
   Widget _buildWaitlistBanner(BuildContext context, Event event) {
@@ -3235,8 +3334,8 @@ class EventDetailsScreen extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 16),
       child: FutureBuilder<int>(
-        future:
-            sl<EventsRemoteDataSource>().getWaitlistPosition(event.id, currentUserId),
+        // Memoised per event/user: a rebuild must not re-run the query.
+        future: _waitlistPosition(event.id, currentUserId),
         builder: (context, snap) {
           final pos = snap.data ?? 0;
           return Container(

@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../domain/entities/booking.dart';
 import '../../domain/repositories/bookings_repository.dart';
+import '../bookings_first_page_cache.dart';
 
 abstract class BookingsListEvent extends Equatable {
   const BookingsListEvent();
@@ -68,8 +71,11 @@ class BookingsListState extends Equatable {
 /// One tab of "My bookings" / "Bookings received": pages of [pageSize] on
 /// an indexed query, infinite scroll.
 class BookingsListBloc extends Bloc<BookingsListEvent, BookingsListState> {
-  BookingsListBloc({required BookingsRepository repository})
-      : _repo = repository,
+  BookingsListBloc({
+    required BookingsRepository repository,
+    BookingsFirstPageCache cache = const BookingsFirstPageCache(),
+  })  : _repo = repository,
+        _cache = cache,
         super(const BookingsListState()) {
     on<BookingsListStarted>(_onStarted);
     on<BookingsListRefreshed>(_onRefreshed);
@@ -80,6 +86,7 @@ class BookingsListBloc extends Bloc<BookingsListEvent, BookingsListState> {
   static const int pageSize = 20;
 
   final BookingsRepository _repo;
+  final BookingsFirstPageCache _cache;
   BookingsQuery? _query;
   Object? _cursor;
 
@@ -98,10 +105,28 @@ class BookingsListBloc extends Bloc<BookingsListEvent, BookingsListState> {
   Future<void> _first(Emitter<BookingsListState> emit,
       {bool keepItems = false}) async {
     _cursor = null;
-    if (!keepItems) emit(const BookingsListState());
-    final r = await _repo.bookings(_query!, limit: pageSize);
+    final query = _query!;
+    if (!keepItems) {
+      emit(const BookingsListState());
+      // Paint the page shown last time for this tab (local cache, ms); the
+      // server page replaces it. Never paints an empty result.
+      final cached = await _cache.load(query);
+      if (cached.isNotEmpty && identical(query, _query)) {
+        emit(BookingsListState(
+          status: BookingsListStatus.ready,
+          items: cached,
+          // No paging until the real first page is in.
+          hasMore: false,
+        ));
+      }
+    }
+    final r = await _repo.bookings(query, limit: pageSize);
+    if (!identical(query, _query)) return; // superseded
     r.fold(
-      (_) => emit(state.copyWith(status: BookingsListStatus.failure)),
+      (_) => emit(state.items.isNotEmpty && !keepItems
+          // Keep the cached paint rather than replacing it with an error.
+          ? state
+          : state.copyWith(status: BookingsListStatus.failure)),
       (p) {
         _cursor = p.cursor;
         emit(BookingsListState(
@@ -109,6 +134,7 @@ class BookingsListBloc extends Bloc<BookingsListEvent, BookingsListState> {
           items: p.items,
           hasMore: p.hasMore,
         ));
+        unawaited(_cache.save(query, p.items));
       },
     );
   }

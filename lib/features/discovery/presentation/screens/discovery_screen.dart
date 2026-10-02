@@ -37,6 +37,8 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../data/datasources/discovery_remote_datasource.dart';
+import '../../data/services/discovery_prefetch.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match.dart';
 import '../../domain/entities/match_preferences.dart';
@@ -206,17 +208,32 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   StreamSubscription<String>? _blockedSub;
 
-  /// Load saved match preferences from Firestore, then start the discovery stack
+  /// Load saved match preferences, then start the discovery stack.
+  ///
+  /// Cache-first: the preferences from the LOCAL Firestore cache start the
+  /// stack immediately (no server round trip before the first query); the
+  /// server copy is then checked and, only if it differs, the stack reloads
+  /// with it. With nothing cached this is the previous server-first read.
   Future<void> _loadSavedPreferencesAndStart() async {
+    MatchPreferences? cached;
     try {
-      final doc = await FirebaseFirestore.instance
-          .collection('users')
-          .doc(userId)
-          .get();
+      cached =
+          await DiscoveryPrefetch.loadSavedPreferences(userId, cacheOnly: true);
+    } catch (_) {
+      // Not in the local cache.
+    }
 
-      if (doc.exists && doc.data()?['matchPreferences'] != null) {
-        final prefsMap = doc.data()!['matchPreferences'] as Map<String, dynamic>;
-        _savedPreferences = MatchPreferences.fromMap(prefsMap);
+    if (cached != null) {
+      _savedPreferences = cached;
+      _preferencesLoaded = true;
+      _startStack();
+      unawaited(_revalidateSavedPreferences(cached));
+      return;
+    }
+
+    try {
+      _savedPreferences = await DiscoveryPrefetch.loadSavedPreferences(userId);
+      if (_savedPreferences != null) {
         debugPrint('Loaded saved preferences: maxDistance=${_savedPreferences!.maxDistanceKm}km');
       }
     } catch (e) {
@@ -226,12 +243,27 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
     // If no preferences exist yet, use defaults (no country filter = worldwide)
     _savedPreferences ??= MatchPreferences.defaultFor(userId);
     _preferencesLoaded = true;
+    _startStack();
+  }
 
-    if (mounted) {
-      context.read<DiscoveryBloc>().add(DiscoveryStackLoadRequested(
-        userId: userId,
-        preferences: _currentPreferences,
-      ));
+  void _startStack() {
+    if (!mounted) return;
+    context.read<DiscoveryBloc>().add(DiscoveryStackLoadRequested(
+          userId: userId,
+          preferences: _currentPreferences,
+        ));
+  }
+
+  Future<void> _revalidateSavedPreferences(MatchPreferences cached) async {
+    try {
+      final fresh = await DiscoveryPrefetch.loadSavedPreferences(userId) ??
+          MatchPreferences.defaultFor(userId);
+      // Unchanged, or the user already edited them on this screen meanwhile.
+      if (!mounted || fresh == cached || _savedPreferences != cached) return;
+      _savedPreferences = fresh;
+      _startStack();
+    } catch (_) {
+      // Keep the cached preferences.
     }
   }
 
@@ -282,27 +314,35 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       // Every read is per-user, indexed and bounded, and they run in parallel.
       // (The matches read used to be `isActive == true` with NO user filter —
       // i.e. every active match in the database on each open.)
-      final results = await Future.wait([
-        // Most recent swipes first (swipes: userId + timestamp desc index).
-        firestore
-            .collection('swipes')
-            .where('userId', isEqualTo: userId)
-            .orderBy('timestamp', descending: true)
-            .limit(2000)
-            .get(),
-        // Active matches on either side (userId1/userId2 + isActive indexes).
-        firestore
-            .collection('matches')
-            .where('userId1', isEqualTo: userId)
-            .where('isActive', isEqualTo: true)
-            .limit(500)
-            .get(),
-        firestore
-            .collection('matches')
-            .where('userId2', isEqualTo: userId)
-            .where('isActive', isEqualTo: true)
-            .limit(500)
-            .get(),
+      //
+      // Swipes come from the discovery datasource's memo — the SAME 90-day,
+      // newest-first history the stack load reads, so opening Discovery reads
+      // it once instead of twice (it used to be a separate 2000-doc read).
+      Future<QuerySnapshot<Map<String, dynamic>>> activeMatches(
+          String field) async {
+        try {
+          return await firestore
+              .collection('matches')
+              .where(field, isEqualTo: userId)
+              .where('isActive', isEqualTo: true)
+              .orderBy('matchedAt', descending: true)
+              .limit(200)
+              .get();
+        } catch (_) {
+          return firestore
+              .collection('matches')
+              .where(field, isEqualTo: userId)
+              .where('isActive', isEqualTo: true)
+              .limit(500)
+              .get();
+        }
+      }
+
+      final results = await Future.wait<Object>([
+        di.sl<DiscoveryRemoteDataSource>().recentSwipeActions(userId),
+        // Active matches on either side (userId1/userId2 + isActive + matchedAt indexes).
+        activeMatches('userId1'),
+        activeMatches('userId2'),
         // Accepted superLike conversations (visibleTo == null means accepted)
         firestore
             .collection('conversations')
@@ -314,11 +354,13 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             .limit(500)
             .get(),
       ]);
-      // Oldest → newest, so the LATEST action per person wins below.
-      final swipeDocs = results[0].docs.reversed.toList();
+      // targetUserId -> latest actionType.
+      final swipeActions = results[0] as Map<String, String>;
+      final matchDocs1 = results[1] as QuerySnapshot<Map<String, dynamic>>;
+      final matchDocs2 = results[2] as QuerySnapshot<Map<String, dynamic>>;
 
       final matchedUserIds = <String>{};
-      for (final doc in [...results[1].docs, ...results[2].docs]) {
+      for (final doc in [...matchDocs1.docs, ...matchDocs2.docs]) {
         final data = doc.data();
         final u1 = data['userId1'] as String?;
         final u2 = data['userId2'] as String?;
@@ -326,7 +368,8 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         if (u2 == userId && u1 != null) matchedUserIds.add(u1);
       }
 
-      final superLikeConvSnapshot = results[3];
+      final superLikeConvSnapshot =
+          results[3] as QuerySnapshot<Map<String, dynamic>>;
 
       final acceptedSuperLikeUserIds = <String>{};
       for (final doc in superLikeConvSnapshot.docs) {
@@ -349,12 +392,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         _networkUserIds.addAll(matchedUserIds);
         _networkUserIds.addAll(acceptedSuperLikeUserIds);
 
-        for (final doc in swipeDocs) {
-          final data = doc.data();
-          final targetUserId = data['targetUserId'] as String?;
-          final actionType = data['actionType'] as String?;
-          if (targetUserId == null || actionType == null) continue;
-
+        swipeActions.forEach((targetUserId, actionType) {
           // Record the raw action regardless of match status, so the grid
           // filters (Connected/Priority/Passed) keep working after a match.
           switch (actionType) {
@@ -395,7 +433,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 break;
             }
           }
-        }
+        });
       });
       debugPrint('[Discovery] Loaded ${_gridActionOverlays.length} swipe overlays from history');
     } catch (e) {
@@ -1684,7 +1722,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             onPressed: () {
               Navigator.of(ctx).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => BlocProvider(create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(userId))..add(const LoadAvailablePackages()), child: CoinShopScreen(userId: userId))),
+                MaterialPageRoute(builder: (_) => _coinShopRoute(appCoinBloc(context), userId)),
               );
             },
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
@@ -2016,7 +2054,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
             onPressed: () {
               Navigator.of(ctx).pop();
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => BlocProvider(create: (_) => di.sl<CoinBloc>()..add(LoadCoinBalance(userId))..add(const LoadAvailablePackages()), child: CoinShopScreen(userId: userId))),
+                MaterialPageRoute(builder: (_) => _coinShopRoute(appCoinBloc(context), userId)),
               );
             },
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
@@ -2920,3 +2958,28 @@ class _GridProfileCardState extends State<_GridProfileCard>
     );
   }
 }
+
+/// The app-level CoinBloc from [context] (MainNavigationScreen provides one
+/// with the balance already loaded), or null when there is none.
+CoinBloc? appCoinBloc(BuildContext context) {
+  try {
+    return context.read<CoinBloc>();
+  } catch (_) {
+    return null;
+  }
+}
+
+/// Coin shop route body: reuses the app's CoinBloc (no fresh bloc that starts
+/// at 0 and reloads everything; CoinShopScreen refreshes balance + packages
+/// itself), else creates one as before.
+Widget _coinShopRoute(CoinBloc? existing, String userId) => existing != null
+    ? BlocProvider<CoinBloc>.value(
+        value: existing,
+        child: CoinShopScreen(userId: userId),
+      )
+    : BlocProvider(
+        create: (_) => di.sl<CoinBloc>()
+          ..add(LoadCoinBalance(userId))
+          ..add(const LoadAvailablePackages()),
+        child: CoinShopScreen(userId: userId),
+      );

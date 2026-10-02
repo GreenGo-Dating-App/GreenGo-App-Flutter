@@ -204,17 +204,25 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
   }
 
   void _openMembershipShop() {
+    // Reuse the app-level CoinBloc when one is above us (balance already
+    // loaded) instead of a brand-new bloc that starts at 0.
+    CoinBloc? appBloc;
+    try {
+      appBloc = context.read<CoinBloc>();
+    } catch (_) {
+      appBloc = null;
+    }
+    final shop = CoinShopScreen(userId: widget.userId, initialTab: 1);
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => BlocProvider(
-          create: (_) => di.sl<CoinBloc>()
-            ..add(LoadCoinBalance(widget.userId))
-            ..add(const LoadAvailablePackages()),
-          child: CoinShopScreen(
-            userId: widget.userId,
-            initialTab: 1,
-          ),
-        ),
+        builder: (_) => appBloc != null
+            ? BlocProvider<CoinBloc>.value(value: appBloc, child: shop)
+            : BlocProvider(
+                create: (_) => di.sl<CoinBloc>()
+                  ..add(LoadCoinBalance(widget.userId))
+                  ..add(const LoadAvailablePackages()),
+                child: shop,
+              ),
       ),
     );
   }

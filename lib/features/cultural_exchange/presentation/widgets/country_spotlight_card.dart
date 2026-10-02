@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/country_spotlight.dart';
@@ -35,10 +36,11 @@ class CountrySpotlightCard extends StatelessWidget {
           children: [
             // Background image
             if (spotlight.imageUrl.isNotEmpty)
-              Image.network(
-                spotlight.imageUrl,
+              CachedNetworkImage(
+                imageUrl: spotlight.imageUrl,
                 fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) => Container(
+                memCacheWidth: 900,
+                errorWidget: (context, _, __) => Container(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.topLeft,

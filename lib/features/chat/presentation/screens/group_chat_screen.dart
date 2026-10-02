@@ -136,6 +136,14 @@ class _GroupChatViewState extends State<_GroupChatView> {
     {'code': 'pt_BR', 'name': 'Português (BR)', 'flag': '🇧🇷'},
   ];
 
+  /// Live group doc for the header photo — created ONCE (a stream built in
+  /// build() would re-subscribe on every rebuild).
+  late final Stream<DocumentSnapshot<Map<String, dynamic>>> _groupDocStream =
+      FirebaseFirestore.instance
+          .collection('groups')
+          .doc(widget.groupId)
+          .snapshots();
+
   @override
   void initState() {
     super.initState();
@@ -663,10 +671,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
           child: Row(
             children: [
               StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
-                stream: FirebaseFirestore.instance
-                    .collection('groups')
-                    .doc(widget.groupId)
-                    .snapshots(),
+                stream: _groupDocStream,
                 builder: (context, snap) {
                   final liveUrl = (snap.data?.data()?['groupInfo']
                           as Map<String, dynamic>?)?['photoUrl'] as String?;
@@ -676,7 +681,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                   return CircleAvatar(
                     radius: 16,
                     backgroundImage: (photo != null && photo.isNotEmpty)
-                        ? CachedNetworkImageProvider(photo)
+                        ? CachedNetworkImageProvider(photo, maxWidth: 64)
                         : null,
                     child: (photo == null || photo.isEmpty)
                         ? Text(
@@ -920,11 +925,12 @@ class _GroupMessageBubble extends StatelessWidget {
                 )),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
-                  child: Image.network(
-                    message.content,
+                  child: CachedNetworkImage(
+                    imageUrl: message.content,
                     width: 200,
                     fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) =>
+                    memCacheWidth: 400,
+                    errorWidget: (_, __, ___) =>
                         const Icon(Icons.broken_image, size: 60),
                   ),
                 ),
@@ -1289,7 +1295,8 @@ class _FullImageScreen extends StatelessWidget {
       appBar: AppBar(backgroundColor: Colors.black),
       body: Center(
         child: InteractiveViewer(
-          child: Image.network(url),
+          // Full resolution, disk-cached.
+          child: CachedNetworkImage(imageUrl: url),
         ),
       ),
     );
