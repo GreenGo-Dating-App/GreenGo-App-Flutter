@@ -16,11 +16,23 @@ abstract class BookingFlowEvent extends Equatable {
 }
 
 class BookingFlowStarted extends BookingFlowEvent {
-  const BookingFlowStarted(this.experience, {this.initialSlotId});
+  const BookingFlowStarted(
+    this.experience, {
+    this.initialSlotId,
+    this.initialSlots,
+    this.initialSlotsAt,
+  });
   final UserExperience experience;
   final String? initialSlotId;
+
+  /// Slots the caller already read (the experience page), so the flow opens
+  /// with its dates at once instead of re-reading them. Used when read less
+  /// than [BookingFlowBloc.initialSlotsMaxAge] ago ([initialSlotsAt]).
+  final List<ExperienceSlot>? initialSlots;
+  final DateTime? initialSlotsAt;
   @override
-  List<Object?> get props => [experience, initialSlotId];
+  List<Object?> get props =>
+      [experience, initialSlotId, initialSlots, initialSlotsAt];
 }
 
 class BookingSlotsRefreshed extends BookingFlowEvent {
@@ -206,10 +218,22 @@ class BookingFlowBloc extends Bloc<BookingFlowEvent, BookingFlowState> {
   /// The idempotency key of the attempt in progress (tests).
   String? get requestId => _requestId;
 
+  /// How old [BookingFlowStarted.initialSlots] may be to skip the re-read
+  /// (the server re-checks seats on submit either way).
+  static const Duration initialSlotsMaxAge = Duration(minutes: 2);
+
   Future<void> _onStarted(
       BookingFlowStarted e, Emitter<BookingFlowState> emit) async {
     _initialSlotId = e.initialSlotId;
     emit(BookingFlowState(experience: e.experience));
+    final initial = e.initialSlots;
+    final at = e.initialSlotsAt;
+    if (initial != null &&
+        at != null &&
+        DateTime.now().difference(at) < initialSlotsMaxAge) {
+      _applySlots(initial, emit);
+      return;
+    }
     await _loadSlots(emit);
   }
 
@@ -220,24 +244,26 @@ class BookingFlowBloc extends Bloc<BookingFlowEvent, BookingFlowState> {
     final r = await _repo.slots(e.id);
     r.fold(
       (_) => emit(state.copyWith(slotsLoading: false, slotsFailed: true)),
-      (list) {
-        final now = DateTime.now();
-        final bookable = list.where((s) => s.isOpen && s.start.isAfter(now))
-            .toList();
-        final keep = bookable.any((s) => s.id == state.selectedSlotId)
-            ? state.selectedSlotId
-            : (bookable.any((s) => s.id == _initialSlotId && s.seatsLeft > 0)
-                ? _initialSlotId
-                : null);
-        emit(state.copyWith(
-          slots: bookable,
-          slotsLoading: false,
-          selectedSlotId: keep,
-          clearSlot: keep == null,
-        ));
-        _clampGuests(emit);
-      },
+      (list) => _applySlots(list, emit),
     );
+  }
+
+  void _applySlots(List<ExperienceSlot> list, Emitter<BookingFlowState> emit) {
+    final now = DateTime.now();
+    final bookable =
+        list.where((s) => s.isOpen && s.start.isAfter(now)).toList();
+    final keep = bookable.any((s) => s.id == state.selectedSlotId)
+        ? state.selectedSlotId
+        : (bookable.any((s) => s.id == _initialSlotId && s.seatsLeft > 0)
+            ? _initialSlotId
+            : null);
+    emit(state.copyWith(
+      slots: bookable,
+      slotsLoading: false,
+      selectedSlotId: keep,
+      clearSlot: keep == null,
+    ));
+    _clampGuests(emit);
   }
 
   void _onSlot(BookingSlotSelected e, Emitter<BookingFlowState> emit) {

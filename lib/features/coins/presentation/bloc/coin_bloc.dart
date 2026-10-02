@@ -92,19 +92,30 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
 
   StreamSubscription? _balanceSubscription;
 
+  /// Last balance seen (load or stream). This bloc has a single state slot,
+  /// so any other state (packages, loading) used to blank every balance
+  /// display; remembering it lets those flows hand the balance back.
+  CoinBalance? _lastBalance;
+
   // ===== Balance Event Handlers =====
 
   Future<void> _onLoadCoinBalance(
     LoadCoinBalance event,
     Emitter<CoinState> emit,
   ) async {
-    emit(CoinLoading());
+    // Refresh silently when a balance is already on screen.
+    if (_lastBalance == null || _lastBalance!.userId != event.userId) {
+      emit(CoinLoading());
+    }
 
     final result = await getCoinBalance(event.userId);
 
     result.fold(
       (failure) => emit(CoinError(failure.toString())),
-      (balance) => emit(CoinBalanceLoaded(balance)),
+      (balance) {
+        _lastBalance = balance;
+        emit(CoinBalanceLoaded(balance));
+      },
     );
   }
 
@@ -130,7 +141,10 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
   ) async {
     event.result.fold(
       (failure) => emit(CoinError(failure.toString())),
-      (balance) => emit(CoinBalanceLoaded(balance)),
+      (balance) {
+        _lastBalance = balance;
+        emit(CoinBalanceLoaded(balance));
+      },
     );
   }
 
@@ -140,10 +154,14 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
     LoadAvailablePackages event,
     Emitter<CoinState> emit,
   ) async {
-    emit(CoinLoading());
+    // No CoinLoading here: it wiped the app-bar balance while the store was
+    // queried, and the shop already renders fallback packages meanwhile.
 
-    final packagesResult = await getAvailablePackages();
-    final promotionsResult = await getActivePromotions();
+    // Store query and promotions are independent: run them in parallel.
+    final packagesFuture = getAvailablePackages();
+    final promotionsFuture = getActivePromotions();
+    final packagesResult = await packagesFuture;
+    final promotionsResult = await promotionsFuture;
 
     packagesResult.fold(
       (failure) {
@@ -168,6 +186,12 @@ class CoinBloc extends Bloc<CoinEvent, CoinState> {
         );
       },
     );
+
+    // Hand the balance back to the balance displays (BlocBuilders that only
+    // understand CoinBalanceLoaded); the packages state was already delivered
+    // to listeners above.
+    final last = _lastBalance;
+    if (last != null) emit(CoinBalanceLoaded(last));
   }
 
   Future<void> _onPurchaseCoinPackage(

@@ -194,6 +194,19 @@ class _AttractionsTabState extends State<AttractionsTab>
   String _urlOf(Attraction a, String variant) =>
       a.imageUrl(variant, bucket: _bucket);
 
+  /// Decode width (physical px) of a card image: the grid cell or the full
+  /// list width. Shared by [_img] and [_precache] so both hit the SAME
+  /// ImageCache entry (CachedNetworkImage wraps its provider in a ResizeImage).
+  int _memW() {
+    final mq = MediaQuery.of(context);
+    final w = mq.size.width;
+    final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
+    final box = widget.gridView ? w / cols : w;
+    return (box * mq.devicePixelRatio).round().clamp(64, 4096);
+  }
+
+  String _decodedKey(String url, int memW) => '$url@$memW';
+
   /// Decodes [list]'s images into the ImageCache using the SAME provider the
   /// cards use (CachedNetworkImageProvider keyed by URL), so a revealed card
   /// paints its image on the first frame. Completes when all are done or
@@ -201,17 +214,20 @@ class _AttractionsTabState extends State<AttractionsTab>
   Future<void> _precache(List<Attraction> list, String variant,
       {Duration? cap}) {
     if (!mounted || list.isEmpty) return Future.value();
+    final memW = _memW();
     final waits = <Future<void>>[];
     for (final a in list) {
       final url = _urlOf(a, variant);
-      if (_decoded.contains(url)) continue;
-      waits.add(_inflight[url] ??= precacheImage(
-        CachedNetworkImageProvider(url),
+      final key = _decodedKey(url, memW);
+      if (_decoded.contains(key)) continue;
+      waits.add(_inflight[key] ??= precacheImage(
+        ResizeImage.resizeIfNeeded(
+            memW, null, CachedNetworkImageProvider(url)),
         context,
         onError: (_, __) {/* card shows its error fallback */},
       ).catchError((_) {}).whenComplete(() {
-        _inflight.remove(url);
-        _decoded.add(url);
+        _inflight.remove(key);
+        _decoded.add(key);
       }));
     }
     if (waits.isEmpty) return Future.value();
@@ -221,17 +237,15 @@ class _AttractionsTabState extends State<AttractionsTab>
         : all.timeout(cap, onTimeout: () => const <void>[]);
   }
 
-  /// Precaches the first window of [readyKey] and then reveals it.
-  void _prepareFirstWindow(String readyKey, List<Attraction> items) {
+  /// The first window paints at once (cards show their placeholder until
+  /// their image decodes); only the FOLLOWING page is predecoded, after the
+  /// first frame, so the next boundary is instant.
+  void _prepareFirstWindow(String readyKey) {
     if (_preparingKey == readyKey) return;
     _preparingKey = readyKey;
     final variant = _variant;
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      if (!mounted) return;
-      await _precache(items, variant, cap: _precacheCap);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted || _preparingKey != readyKey) return;
-      setState(() => _readyKey = readyKey);
-      // Warm the following page before the user reaches it.
       unawaited(_precache(
           _lastAll.skip(_visibleCount).take(_pageSize).toList(), variant));
     });
@@ -733,6 +747,8 @@ class _AttractionsTabState extends State<AttractionsTab>
         height: h,
         width: double.infinity,
         fit: BoxFit.cover,
+        // Decode at the card's size, not the source's.
+        memCacheWidth: _memW(),
         placeholder: (_, __) => Container(color: AppColors.backgroundInput),
         errorWidget: (_, __, ___) => Container(
             color: AppColors.backgroundInput,
@@ -818,15 +834,12 @@ class _AttractionsTabState extends State<AttractionsTab>
         : all.sublist(0, _visibleCount);
     final hasMore = all.length > items.length;
 
-    // Hold the grid until the first window's images are decoded (capped).
+    // Paint the first window immediately (no wait on image decoding) and
+    // warm the next page in the background.
     final readyKey = '$_windowKey|$_variant';
     if (_readyKey != readyKey) {
-      final variant = _variant;
-      if (items.every((a) => _decoded.contains(_urlOf(a, variant)))) {
-        _readyKey = readyKey; // all cached already: no spinner flash
-      } else {
-        _prepareFirstWindow(readyKey, items);
-      }
+      _readyKey = readyKey;
+      _prepareFirstWindow(readyKey);
     }
     final imagesReady = _readyKey == readyKey;
 

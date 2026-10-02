@@ -158,8 +158,17 @@ class BookingDetailBloc extends Bloc<BookingDetailEvent, BookingDetailState> {
 
   Future<void> _onRequested(
       BookingDetailRequested e, Emitter<BookingDetailState> emit) async {
-    if (e.initial != null) {
-      emit(state.copyWith(load: BookingDetailLoad.ready, booking: e.initial));
+    // With the booking already in hand (opened from a list), its secondary
+    // reads start NOW, alongside the fresh booking read, not after it.
+    final initial = e.initial;
+    Future<Either<Failure, UserExperience?>>? earlyExp;
+    Future<Either<Failure, GuestReview?>>? earlyReview;
+    if (initial != null) {
+      emit(state.copyWith(load: BookingDetailLoad.ready, booking: initial));
+      earlyExp = _experiences.getExperience(initial.experienceId);
+      if (initial.isHost(currentUserId)) {
+        earlyReview = _repo.guestReviewFor(initial.id);
+      }
     }
     final r = await _repo.getBooking(e.bookingId);
     Booking? b;
@@ -176,10 +185,15 @@ class BookingDetailBloc extends Bloc<BookingDetailEvent, BookingDetailState> {
       return;
     }
     emit(state.copyWith(load: BookingDetailLoad.ready, booking: b));
-    // Secondary reads, in parallel.
-    final expF = _experiences.getExperience(b!.experienceId);
+    // Secondary reads, in parallel (reusing the early ones when they are for
+    // the same experience / booking).
+    final expF = (earlyExp != null && initial!.experienceId == b!.experienceId)
+        ? earlyExp
+        : _experiences.getExperience(b!.experienceId);
     final reviewF = b!.isHost(currentUserId)
-        ? _repo.guestReviewFor(b!.id)
+        ? ((earlyReview != null && initial!.id == b!.id)
+            ? earlyReview
+            : _repo.guestReviewFor(b!.id))
         : Future.value(const Right<Failure, GuestReview?>(null));
     final exp = (await expF).fold((_) => null, (x) => x);
     final review = (await reviewF).fold((_) => null, (x) => x);

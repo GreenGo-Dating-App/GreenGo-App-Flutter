@@ -43,26 +43,34 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
 
     _userId = event.userId;
 
+    // Guard only the FIRST event: if nothing arrives within 30s, surface a
+    // retryable error instead of an endless spinner. The live stream itself
+    // stays open — a quiet period after the first snapshot is normal and must
+    // not cut off real-time updates.
+    var gotFirst = false;
+    final firstEventTimer = Timer(const Duration(seconds: 30), () {
+      if (!gotFirst && !emit.isDone && state is NotificationsLoading) {
+        debugPrint('[NotificationsBloc] Timeout loading notifications');
+        emit(const NotificationsError(
+            'Loading notifications timed out. Please try again.'));
+      }
+    });
+
     try {
-      // Add timeout to prevent endless loading
       final stream = getNotifications(
         GetNotificationsParams(
           userId: event.userId,
           unreadOnly: event.unreadOnly,
           limit: event.limit,
         ),
-      ).timeout(
-        const Duration(seconds: 30),
-        onTimeout: (sink) {
-          debugPrint('[NotificationsBloc] Stream timeout - closing sink');
-          sink.close();
-        },
       );
 
       // Use emit.forEach to properly handle stream emissions within bloc
       await emit.forEach(
         stream,
         onData: (notificationsResult) {
+          gotFirst = true;
+          firstEventTimer.cancel();
           return notificationsResult.fold(
             (failure) => NotificationsError(
                 'Failed to load notifications: ${failure.toString()}'),
@@ -79,12 +87,11 @@ class NotificationsBloc extends Bloc<NotificationsEvent, NotificationsState> {
           );
         },
       );
-    } on TimeoutException {
-      debugPrint('[NotificationsBloc] Timeout loading notifications');
-      emit(const NotificationsError('Loading notifications timed out. Please try again.'));
     } catch (e) {
       debugPrint('[NotificationsBloc] Error loading notifications: $e');
       emit(NotificationsError('Failed to load notifications: ${e.toString()}'));
+    } finally {
+      firstEventTimer.cancel();
     }
   }
 

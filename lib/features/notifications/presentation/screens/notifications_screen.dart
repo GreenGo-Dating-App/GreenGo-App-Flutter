@@ -5,6 +5,7 @@ import 'package:showcaseview/showcaseview.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
@@ -13,6 +14,7 @@ import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../chat/presentation/connect_and_chat.dart';
 import '../../../chat/presentation/screens/group_chat_screen.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
+import '../../../communities/domain/entities/community.dart';
 import '../../../communities/domain/repositories/communities_repository.dart';
 import '../../../communities/presentation/bloc/communities_bloc.dart';
 import '../../../communities/presentation/screens/community_detail_screen.dart';
@@ -20,9 +22,11 @@ import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../experience_bookings/presentation/screens/booking_detail_screen.dart';
 import '../../../user_experiences/presentation/screens/experience_detail_screen.dart';
+import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/domain/repositories/profile_repository.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
+import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/notification.dart';
 import '../../domain/entities/notification_preferences.dart';
 import '../../domain/usecases/get_notification_preferences.dart';
@@ -512,15 +516,41 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     }
   }
 
-  /// Loads a community by id then opens [CommunityDetailScreen] (wrapped with its
-  /// blocs). Silent on failure.
+  /// Opens [CommunityDetailScreen] for [communityId] (wrapped with its blocs).
+  /// The route is pushed IMMEDIATELY and loads the community inside (spinner
+  /// meanwhile) instead of waiting on the read before navigating. Pops
+  /// silently if the community can't be loaded.
   Future<void> _openCommunity(
       BuildContext context, String communityId) async {
     final navigator = Navigator.of(context);
-    final result =
-        await di.sl<CommunitiesRepository>().getCommunityById(communityId);
-    final community = result.fold((_) => null, (c) => c);
-    if (community == null) return;
+    // Reuse the app's already-loaded ProfileBloc when this screen can see it
+    // (the detail reads the profile synchronously in initState); otherwise
+    // create one and let the loader wait for its first load.
+    ProfileBloc? existing;
+    try {
+      existing = context.read<ProfileBloc>();
+    } catch (_) {
+      existing = null;
+    }
+    final profileBloc = existing ??
+        (di.sl<ProfileBloc>()..add(ProfileLoadRequested(userId: userId)));
+    final ownsBloc = existing == null;
+
+    Future<Community?> load() async {
+      // Community read and (if needed) the profile load run concurrently.
+      final communityF =
+          di.sl<CommunitiesRepository>().getCommunityById(communityId);
+      final Future<void> profileF = profileBloc.state is ProfileLoaded
+          ? Future<void>.value()
+          : profileBloc.stream
+              .firstWhere((s) => s is ProfileLoaded || s is ProfileError)
+              .timeout(const Duration(seconds: 8))
+              .then((_) {}, onError: (Object _) {});
+      final result = await communityF;
+      await profileF;
+      return result.fold((_) => null, (c) => c);
+    }
+
     await navigator.push(
       MaterialPageRoute<void>(
         builder: (_) => MultiBlocProvider(
@@ -528,29 +558,108 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
             BlocProvider<CommunitiesBloc>(
               create: (_) => di.sl<CommunitiesBloc>(),
             ),
-            BlocProvider<ProfileBloc>(
-              create: (_) => di.sl<ProfileBloc>()
-                ..add(ProfileLoadRequested(userId: userId)),
-            ),
+            if (ownsBloc)
+              BlocProvider<ProfileBloc>(create: (_) => profileBloc)
+            else
+              BlocProvider<ProfileBloc>.value(value: profileBloc),
           ],
-          child: CommunityDetailScreen(community: community),
+          child: _LoadThenShow<Community>(
+            load: load,
+            builder: (community) => CommunityDetailScreen(community: community),
+          ),
         ),
       ),
     );
   }
 
-  /// Loads a profile then opens [ProfileDetailScreen]. Silent on failure.
+  /// Opens [ProfileDetailScreen]. Instant when the profile is already in the
+  /// shared [UserDirectoryService] cache; otherwise the route is pushed
+  /// immediately and resolves the profile inside (cached + batched path,
+  /// falling back to the repository). Pops silently on failure.
   Future<void> _openProfile(BuildContext context, String profileId) async {
     final navigator = Navigator.of(context);
-    final result = await di.sl<ProfileRepository>().getProfile(profileId);
-    final profile = result.fold((_) => null, (p) => p);
-    if (profile == null) return;
+    final directory = UserDirectoryService.instance;
+
+    Future<Profile?> load() async {
+      final cached = directory.cachedProfile(profileId);
+      if (cached != null) return cached;
+      try {
+        final map = await directory.resolveProfiles([profileId]);
+        final p = map[profileId];
+        if (p != null) return p;
+        // Confirmed deleted → nothing to open.
+        if (map.containsKey(profileId)) return null;
+      } catch (_) {}
+      final result = await di.sl<ProfileRepository>().getProfile(profileId);
+      return result.fold((_) => null, (p) => p);
+    }
+
     await navigator.push(
       MaterialPageRoute(
-        builder: (_) => ProfileDetailScreen(
-          profile: profile,
-          currentUserId: userId,
+        builder: (_) => _LoadThenShow<Profile>(
+          initial: directory.cachedProfile(profileId),
+          load: load,
+          builder: (profile) => ProfileDetailScreen(
+            profile: profile,
+            currentUserId: userId,
+          ),
         ),
+      ),
+    );
+  }
+}
+
+/// A route body that shows a spinner while [load] runs, then [builder] with
+/// the result — so navigation never waits on the network. Pops itself when
+/// the result is null (not found / failed). With [initial] it builds at once.
+class _LoadThenShow<T extends Object> extends StatefulWidget {
+  const _LoadThenShow({
+    required this.load,
+    required this.builder,
+    this.initial,
+  });
+
+  final Future<T?> Function() load;
+  final Widget Function(T value) builder;
+  final T? initial;
+
+  @override
+  State<_LoadThenShow<T>> createState() => _LoadThenShowState<T>();
+}
+
+class _LoadThenShowState<T extends Object> extends State<_LoadThenShow<T>> {
+  T? _value;
+
+  @override
+  void initState() {
+    super.initState();
+    _value = widget.initial;
+    if (_value == null) _run();
+  }
+
+  Future<void> _run() async {
+    T? v;
+    try {
+      v = await widget.load();
+    } catch (_) {
+      v = null;
+    }
+    if (!mounted) return;
+    if (v == null) {
+      Navigator.of(context).maybePop();
+      return;
+    }
+    setState(() => _value = v);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final v = _value;
+    if (v != null) return widget.builder(v);
+    return const Scaffold(
+      backgroundColor: AppColors.backgroundDark,
+      body: Center(
+        child: CircularProgressIndicator(color: AppColors.richGold),
       ),
     );
   }

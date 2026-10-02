@@ -47,7 +47,6 @@ import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../follows/presentation/widgets/follow_stats_row.dart';
 import '../../../gamification/domain/entities/achievement.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
-import '../../../gamification/presentation/bloc/gamification_event.dart';
 import '../../../gamification/presentation/screens/achievements_screen.dart';
 import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
@@ -59,6 +58,7 @@ import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../business/presentation/screens/business_account_screen.dart';
 import '../../../business/presentation/screens/business_hub_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../data/profile_geohash.dart';
 import '../../domain/entities/location.dart' as profile_entity;
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
@@ -1163,15 +1163,30 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   void _navigateToCoinShop(BuildContext context, Profile profile) {
+    // Reuse the app-level CoinBloc when one is above us (balance already
+    // loaded; CoinShopScreen refreshes balance + packages itself) instead of a
+    // brand-new bloc that starts at 0.
+    CoinBloc? existing;
+    try {
+      existing = context.read<CoinBloc>();
+    } catch (_) {
+      existing = null;
+    }
+    final appBloc = existing;
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => BlocProvider(
-          create: (context) => di.sl<CoinBloc>()
-            ..add(LoadCoinBalance(profile.userId))
-            ..add(const LoadAvailablePackages()),
-          child: CoinShopScreen(userId: profile.userId),
-        ),
+        builder: (context) => appBloc != null
+            ? BlocProvider<CoinBloc>.value(
+                value: appBloc,
+                child: CoinShopScreen(userId: profile.userId),
+              )
+            : BlocProvider(
+                create: (context) => di.sl<CoinBloc>()
+                  ..add(LoadCoinBalance(profile.userId))
+                  ..add(const LoadAvailablePackages()),
+                child: CoinShopScreen(userId: profile.userId),
+              ),
       ),
     );
   }
@@ -1199,8 +1214,9 @@ class EditProfileScreen extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider(
-          create: (context) => di.sl<GamificationBloc>()
-            ..add(LoadLeaderboard(userId: currentProfile.userId)),
+          // LeaderboardScreen loads its own (weekly) board in initState; an
+          // extra all-time load here was a wasted query.
+          create: (context) => di.sl<GamificationBloc>(),
           child: LeaderboardScreen(userId: currentProfile.userId),
         ),
       ),
@@ -1232,8 +1248,9 @@ class EditProfileScreen extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => BlocProvider(
-          create: (context) => di.sl<GamificationBloc>()
-            ..add(LoadDailyChallenges(currentProfile.userId)),
+          // DailyChallengesScreen dispatches LoadDailyChallenges itself when
+          // nothing is loaded; adding it here too double-sent it.
+          create: (context) => di.sl<GamificationBloc>(),
           child: DailyChallengesScreen(userId: currentProfile.userId),
         ),
       ),
@@ -2190,6 +2207,10 @@ class EditProfileScreen extends StatelessWidget {
         'country': location.country,
         'displayAddress': location.displayAddress,
       },
+      // Discoverable location moves with the traveller (nearest-first scans).
+      kProfileGeohashField:
+          geohashFor(location.latitude, location.longitude) ??
+              FieldValue.delete(),
     });
 
     if (context.mounted) {
@@ -2207,6 +2228,10 @@ class EditProfileScreen extends StatelessWidget {
     await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
       'isTraveler': false,
       'travelerLocation': null,
+      // Back to the home location for nearest-first discovery scans.
+      kProfileGeohashField: geohashFor(
+              profile.location.latitude, profile.location.longitude) ??
+          FieldValue.delete(),
     });
 
     if (context.mounted) {
@@ -2609,18 +2634,20 @@ class _AchievementBadgesSectionState extends State<_AchievementBadgesSection> {
     try {
       final firestore = FirebaseFirestore.instance;
 
-      // Load unlocked achievements
-      final progressDocs = await firestore
-          .collection('achievement_progress')
-          .where('userId', isEqualTo: widget.userId)
-          .where('isUnlocked', isEqualTo: true)
-          .get();
-
-      // Load displayed badges preference
-      final prefDoc = await firestore
-          .collection('user_badge_preferences')
-          .doc(widget.userId)
-          .get();
+      // Unlocked achievements + displayed-badges preference, in parallel.
+      final results = await Future.wait<Object>([
+        firestore
+            .collection('achievement_progress')
+            .where('userId', isEqualTo: widget.userId)
+            .where('isUnlocked', isEqualTo: true)
+            .get(),
+        firestore
+            .collection('user_badge_preferences')
+            .doc(widget.userId)
+            .get(),
+      ]);
+      final progressDocs = results[0] as QuerySnapshot<Map<String, dynamic>>;
+      final prefDoc = results[1] as DocumentSnapshot<Map<String, dynamic>>;
 
       final displayed = <String>{};
       if (prefDoc.exists) {

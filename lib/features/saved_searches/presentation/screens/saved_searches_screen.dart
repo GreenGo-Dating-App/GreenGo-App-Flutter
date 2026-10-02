@@ -14,15 +14,27 @@ import '../../domain/entities/saved_search.dart';
 ///  • Alerts — a toggle-only opt-in that persists `alertsEnabled` (see the
 ///             TODO(saved-search-alerts) note on the toggle handler).
 ///  • Delete — removes the saved search.
-class SavedSearchesScreen extends StatelessWidget {
+class SavedSearchesScreen extends StatefulWidget {
   const SavedSearchesScreen({required this.userId, super.key});
 
   final String userId;
 
   @override
+  State<SavedSearchesScreen> createState() => _SavedSearchesScreenState();
+}
+
+class _SavedSearchesScreenState extends State<SavedSearchesScreen> {
+  final SavedSearchesService service = di.sl<SavedSearchesService>();
+
+  /// Opened once: creating it in build() re-subscribed (and re-read the list)
+  /// on every rebuild.
+  late final Stream<List<SavedSearch>> _searches = service.watch(widget.userId);
+
+  String get userId => widget.userId;
+
+  @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final service = di.sl<SavedSearchesService>();
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -41,7 +53,7 @@ class SavedSearchesScreen extends StatelessWidget {
       body: SafeArea(
         top: false,
         child: StreamBuilder<List<SavedSearch>>(
-          stream: service.watch(userId),
+          stream: _searches,
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return const Center(

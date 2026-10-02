@@ -27,22 +27,32 @@ class BookExperienceScreen extends StatelessWidget {
     required this.experience,
     required this.currentUserId,
     this.initialSlotId,
+    this.initialSlots,
+    this.initialSlotsAt,
   });
 
   final UserExperience experience;
   final String currentUserId;
   final String? initialSlotId;
 
+  /// Dates the caller already read, and when (see [BookingFlowStarted]).
+  final List<ExperienceSlot>? initialSlots;
+  final DateTime? initialSlotsAt;
+
   static Route<void> route({
     required UserExperience experience,
     required String currentUserId,
     String? initialSlotId,
+    List<ExperienceSlot>? initialSlots,
+    DateTime? initialSlotsAt,
   }) =>
       MaterialPageRoute(
         builder: (_) => BookExperienceScreen(
           experience: experience,
           currentUserId: currentUserId,
           initialSlotId: initialSlotId,
+          initialSlots: initialSlots,
+          initialSlotsAt: initialSlotsAt,
         ),
       );
 
@@ -50,7 +60,12 @@ class BookExperienceScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => BookingFlowBloc(repository: di.sl<BookingsRepository>())
-        ..add(BookingFlowStarted(experience, initialSlotId: initialSlotId)),
+        ..add(BookingFlowStarted(
+          experience,
+          initialSlotId: initialSlotId,
+          initialSlots: initialSlots,
+          initialSlotsAt: initialSlotsAt,
+        )),
       child: _BookView(currentUserId: currentUserId),
     );
   }

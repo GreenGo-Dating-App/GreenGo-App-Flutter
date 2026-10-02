@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -107,10 +108,11 @@ class SponsoredPromoCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 child: AspectRatio(
                   aspectRatio: 16 / 9,
-                  child: Image.network(
-                    promo.imageUrl!,
+                  child: CachedNetworkImage(
+                    imageUrl: promo.imageUrl!,
                     fit: BoxFit.cover,
-                    errorBuilder: (_, __, ___) => Container(
+                    memCacheWidth: 800,
+                    errorWidget: (_, __, ___) => Container(
                       color: AppColors.backgroundCard,
                       alignment: Alignment.center,
                       child: const Icon(

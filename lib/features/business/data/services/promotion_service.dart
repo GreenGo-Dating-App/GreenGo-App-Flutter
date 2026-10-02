@@ -185,8 +185,12 @@ class PromotionService {
   Future<List<Event>> getPromotableEvents(String uid) async {
     final now = DateTime.now();
     final startOfToday = DateTime(now.year, now.month, now.day);
-    final all = await _eventsDataSource.getUserEvents(uid);
-    return all
+    // Server-narrowed (organizerId == uid, startDate >= today, soonest
+    // first) instead of the full organized + co-owned + attending set; the
+    // datasource falls back to that set if the narrow query fails.
+    final events =
+        await _eventsDataSource.getOrganizedEventsFrom(uid, startOfToday);
+    return events
         .where((e) =>
             e.organizerId == uid && !e.startDate.isBefore(startOfToday))
         .toList()

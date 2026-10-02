@@ -38,11 +38,25 @@ class _EventLikeButtonState extends State<EventLikeButton> {
   bool get _liked => _optimisticLiked ?? _serverLiked ?? false;
   int get _count => _optimisticCount ?? widget.likeCount;
 
+  /// The like-state listener, created once (not on every rebuild, which
+  /// re-subscribed each tile on every parent repaint).
+  late Stream<bool> _likedStream = _watch();
+
+  Stream<bool> _watch() => di
+      .sl<EventsRepository>()
+      .watchEventLiked(widget.eventId, widget.userId);
+
   @override
   void didUpdateWidget(EventLikeButton old) {
     super.didUpdateWidget(old);
     // The denormalized count caught up → drop the optimistic override.
     if (old.likeCount != widget.likeCount) _optimisticCount = null;
+    if (old.eventId != widget.eventId || old.userId != widget.userId) {
+      _likedStream = _watch();
+      _serverLiked = null;
+      _optimisticLiked = null;
+      _optimisticCount = null;
+    }
   }
 
   Future<void> _toggle() async {
@@ -70,9 +84,7 @@ class _EventLikeButtonState extends State<EventLikeButton> {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<bool>(
-      stream: di
-          .sl<EventsRepository>()
-          .watchEventLiked(widget.eventId, widget.userId),
+      stream: _likedStream,
       builder: (context, snap) {
         if (snap.hasData) {
           _serverLiked = snap.data;

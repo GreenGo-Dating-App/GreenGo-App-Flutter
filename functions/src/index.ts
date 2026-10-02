@@ -527,6 +527,9 @@ export {
   getCandidatePoolStats,
 } from './discovery/candidatePoolPrecompute';
 
+// Discovery: profile geohash backfill (admin-only callable; no onWrite trigger)
+export { backfillProfileGeohash } from './discovery/profileGeohash';
+
 // Presence / Location Enrichment Functions
 export {
   onPresenceUpdate,

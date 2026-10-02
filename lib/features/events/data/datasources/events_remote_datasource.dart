@@ -120,6 +120,12 @@ abstract class EventsRemoteDataSource {
 
   Future<List<Event>> getUserEvents(String userId, {bool preferCache = false});
 
+  /// Events [userId] ORGANIZED (creator only) starting on/after [from],
+  /// soonest first. Server-narrowed (organizerId == uid, startDate >= from), so
+  /// a long-lived organizer doesn't download their whole history. Falls back
+  /// to [getUserEvents] filtered client-side if the narrow query fails.
+  Future<List<Event>> getOrganizedEventsFrom(String userId, DateTime from);
+
   /// Events owned by a community (its Events tab). Filters on `communityId`.
   Future<List<Event>> getCommunityEvents(String communityId);
 
@@ -234,6 +240,65 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   /// Max co-owned events merged into My Events (bounded read).
   static const int _coOwnedEventsLimit = 50;
 
+  /// Session memo of [getUserEvents] per Firestore instance + uid. Several
+  /// screens (Events "My events", QR hub, Explore, search, business tools)
+  /// ask for the same list within seconds; they now share one load. Cleared
+  /// by every write this datasource makes that can change the list
+  /// (RSVP / join / cancel / create / update / delete / cancel series) and
+  /// expires after [_userEventsMemoTtl] as a safety net for changes made
+  /// elsewhere (e.g. another device, a co-owner being added).
+  static final Expando<Map<String, ({Future<List<Event>> list, DateTime at})>>
+      _userEventsMemo = Expando('userEventsMemo');
+  static const Duration _userEventsMemoTtl = Duration(minutes: 2);
+
+  /// Session memo of [getNearbyCommunityEvents], keyed by the ~5km geohash
+  /// cell of the anchor. Explore, the Events tab and the prefetch ask for the
+  /// same area (limits 60 / 100); a hit with a limit >= the requested one is
+  /// re-sorted for the exact point and trimmed.
+  static final Expando<
+          Map<String, ({Future<List<Event>> list, int limit, DateTime at})>>
+      _nearbyMemo = Expando('nearbyCommunityMemo');
+  static const Duration _nearbyMemoTtl = Duration(minutes: 3);
+
+  Map<String, ({Future<List<Event>> list, DateTime at})> get _userMemo =>
+      _userEventsMemo[_firestore] ??= {};
+
+  Map<String, ({Future<List<Event>> list, int limit, DateTime at})>
+      get _nearMemo => _nearbyMemo[_firestore] ??= {};
+
+  /// Forget memoised "my events" (all users when [userId] is null).
+  void invalidateUserEvents([String? userId]) {
+    if (userId == null) {
+      _userMemo.clear();
+    } else {
+      _userMemo.remove(userId);
+    }
+  }
+
+  /// Forget memoised nearby community events (pull-to-refresh, new event).
+  void invalidateNearbyCommunity() => _nearMemo.clear();
+
+  void _invalidateUserEventsFor(String userId) => _userMemo.remove(userId);
+
+  void _invalidateAfterWrite() {
+    _userMemo.clear();
+    _nearMemo.clear();
+  }
+
+  /// profiles/{uid} data for an attendee card: the local cache first (the
+  /// signed-in user's own profile is virtually always cached), the server
+  /// otherwise. Same fields as the old direct server read.
+  Future<Map<String, dynamic>> _profileData(String userId) async {
+    final ref = _firestore.collection('profiles').doc(userId);
+    try {
+      final c = await ref.get(const GetOptions(source: Source.cache));
+      final d = c.data();
+      if (c.exists && d != null) return d;
+    } catch (_) {/* not cached */}
+    final s = await ref.get();
+    return s.data() ?? {};
+  }
+
   CollectionReference<Map<String, dynamic>> get _eventsCollection =>
       _firestore.collection('events');
 
@@ -341,9 +406,11 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       if (event.id.isNotEmpty &&
           !event.id.startsWith(RegExp(r'\d').pattern)) {
         await _eventsCollection.doc(event.id).set(json);
+        _invalidateAfterWrite();
         return event.id;
       } else {
         final docRef = await _eventsCollection.add(json);
+        _invalidateAfterWrite();
         debugPrint('Event created: ${docRef.id}');
         return docRef.id;
       }
@@ -365,6 +432,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         batch.set(ref, json);
       }
       await batch.commit();
+      _invalidateAfterWrite();
       debugPrint('Event series created: ${events.length} occurrences');
     } catch (e) {
       debugPrint('Error creating event series: $e');
@@ -392,6 +460,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         }
       }
       await batch.commit();
+      _invalidateAfterWrite();
       debugPrint('Series cancelled: $seriesId');
     } catch (e) {
       debugPrint('Error cancelling series: $e');
@@ -424,6 +493,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       }
 
       await _eventsCollection.doc(event.id).update(json);
+      _invalidateAfterWrite();
       debugPrint('Event updated: ${event.id}');
     } catch (e) {
       debugPrint('Error updating event: $e');
@@ -454,6 +524,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
 
       // Delete the event document
       await _eventsCollection.doc(eventId).delete();
+      _invalidateAfterWrite();
       debugPrint('Event deleted: $eventId');
     } catch (e) {
       debugPrint('Error deleting event: $e');
@@ -472,10 +543,8 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     bool visibleToOrganizerOnly = false,
   }) async {
     try {
-      // Get user profile for attendee info
-      final userDoc =
-          await _firestore.collection('profiles').doc(userId).get();
-      final userData = userDoc.data() ?? {};
+      // User profile for the attendee card (local cache first).
+      final userData = await _profileData(userId);
 
       final attendeeData = EventAttendeeModel(
         id: userId,
@@ -505,6 +574,8 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .doc(userId)
           .set(attendeeData.toJson());
 
+      _invalidateUserEventsFor(userId);
+
       // Update attendee count on the event document
       await _updateAttendeeCount(eventId);
 
@@ -529,6 +600,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
           .collection('attendees')
           .doc(userId)
           .delete();
+      _invalidateUserEventsFor(userId);
 
       // Update attendee count
       await _updateAttendeeCount(eventId);
@@ -547,10 +619,9 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     String? tierId,
   }) async {
     try {
-      // Resolve profile for the attendee card (outside the transaction).
-      final userDoc =
-          await _firestore.collection('profiles').doc(userId).get();
-      final userData = userDoc.data() ?? {};
+      // Resolve profile for the attendee card (outside the transaction;
+      // local cache first).
+      final userData = await _profileData(userId);
       final userName = userData['displayName'] as String? ??
           userData['nickname'] as String? ??
           'Unknown';
@@ -629,6 +700,7 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         }
         return target;
       });
+      _invalidateUserEventsFor(userId);
 
       if (status == RSVPStatus.waitlist) {
         final pos = await getWaitlistPosition(eventId, userId);
@@ -710,6 +782,8 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         if (tierId != null) update['tierGoingCounts.$tierId'] = newTierGoing;
         tx.update(eventRef, update);
       });
+      // The promoted attendee (another user) may be memoised too.
+      invalidateUserEvents();
       debugPrint('RSVP cancelled + promotion run: $userId -> $eventId');
     } catch (e) {
       debugPrint('Error cancelling RSVP with promotion: $e');
@@ -905,46 +979,94 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   @override
   Future<List<Event>> getUserEvents(String userId,
       {bool preferCache = false}) async {
+    // A cache-only pass is a quick local paint; never memoised.
+    if (preferCache) return _loadUserEvents(userId, true);
+    final hit = _userMemo[userId];
+    if (hit != null && DateTime.now().difference(hit.at) < _userEventsMemoTtl) {
+      // A copy: callers (the bloc) mutate their list in place.
+      return List.of(await hit.list);
+    }
+    final load = _loadUserEvents(userId, false);
+    _userMemo[userId] = (list: load, at: DateTime.now());
     try {
-      // Get events the user organized
-      final organizedSnapshot = await _eventsCollection
+      return List.of(await load);
+    } catch (_) {
+      if (identical(_userMemo[userId]?.list, load)) _userMemo.remove(userId);
+      rethrow;
+    }
+  }
+
+  @override
+  Future<List<Event>> getOrganizedEventsFrom(
+      String userId, DateTime from) async {
+    try {
+      final snap = await _eventsCollection
+          .where('organizerId', isEqualTo: userId)
+          .where('startDate', isGreaterThanOrEqualTo: Timestamp.fromDate(from))
+          .orderBy('startDate', descending: false)
+          .limit(100)
+          .get();
+      return snap.docs.map(EventModel.fromFirestore).toList();
+    } catch (e) {
+      // Same (organizerId, startDate) index as getUserEvents; if it still
+      // fails, use the full list.
+      debugPrint('Organized-from query failed, using full list: $e');
+      final all = await getUserEvents(userId);
+      return all
+          .where((e) => e.organizerId == userId && !e.startDate.isBefore(from))
+          .toList()
+        ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    }
+  }
+
+  Future<List<Event>> _loadUserEvents(String userId, bool preferCache) async {
+    try {
+      // Organized, co-owned and attending are independent: run them together.
+      final organizedFuture = _eventsCollection
           .where('organizerId', isEqualTo: userId)
           .orderBy('startDate', descending: false)
           .limit(100) // Bounded (G0), matches the events-list pattern.
           .get(_opts(preferCache));
-
-      final organizedEvents = organizedSnapshot.docs
-          .map(EventModel.fromFirestore)
-          .toList();
-
       // Events the user CO-OWNS (added by the creator). Bounded; a failure
       // here (e.g. the composite index is still building) must never take
       // down My Events, so it degrades to "none".
-      final organizedIdSet = organizedEvents.map((e) => e.id).toSet();
-      try {
-        final coOwnedSnapshot = await _eventsCollection
-            .where('coOrganizerIds', arrayContains: userId)
-            .orderBy('startDate', descending: true)
-            .limit(_coOwnedEventsLimit)
-            .get(_opts(preferCache));
-        for (final doc in coOwnedSnapshot.docs) {
-          if (organizedIdSet.add(doc.id)) {
-            organizedEvents.add(EventModel.fromFirestore(doc));
-          }
-        }
-      } catch (e) {
+      final coOwnedFuture = _eventsCollection
+          .where('coOrganizerIds', arrayContains: userId)
+          .orderBy('startDate', descending: true)
+          .limit(_coOwnedEventsLimit)
+          .get(_opts(preferCache))
+          .then<QuerySnapshot<Map<String, dynamic>>?>((s) => s,
+              onError: (Object e) {
         debugPrint('Co-owned events query failed (ignored): $e');
-      }
-
-      // Get events the user is attending (query attendees sub-collections)
-      // Firestore does not support sub-collection group queries without
-      // collectionGroup, so we use collectionGroup on 'attendees'.
-      final attendingSnapshot = await _firestore
+        return null;
+      });
+      // Events the user is attending, via collectionGroup on 'attendees'.
+      final attendingFuture = _firestore
           .collectionGroup('attendees')
           .where('userId', isEqualTo: userId)
           .where('status', isEqualTo: RSVPStatus.going.name)
           .limit(500) // Bounded: caps the id fan-out below at 50 batches.
           .get(_opts(preferCache));
+      final results = await Future.wait<Object?>(
+          [organizedFuture, coOwnedFuture, attendingFuture]);
+      final organizedSnapshot =
+          results[0]! as QuerySnapshot<Map<String, dynamic>>;
+      final coOwnedSnapshot =
+          results[1] as QuerySnapshot<Map<String, dynamic>>?;
+      final attendingSnapshot =
+          results[2]! as QuerySnapshot<Map<String, dynamic>>;
+
+      final organizedEvents = organizedSnapshot.docs
+          .map(EventModel.fromFirestore)
+          .toList();
+
+      final organizedIdSet = organizedEvents.map((e) => e.id).toSet();
+      for (final doc in coOwnedSnapshot?.docs ??
+          const <QueryDocumentSnapshot<Map<String, dynamic>>>[]) {
+        if (organizedIdSet.add(doc.id)) {
+          organizedEvents.add(EventModel.fromFirestore(doc));
+        }
+      }
 
       // Extract event IDs from the attendee documents
       final attendingEventIds = attendingSnapshot.docs
@@ -1038,6 +1160,39 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     required double lng,
     int limit = 100,
     bool preferCache = false,
+  }) async {
+    if (preferCache) {
+      return _scanNearby(lat: lat, lng: lng, limit: limit, preferCache: true);
+    }
+    final cell = GeoQuery.encode(lat, lng, 5);
+    final hit = _nearMemo[cell];
+    if (hit != null &&
+        hit.limit >= limit &&
+        DateTime.now().difference(hit.at) < _nearbyMemoTtl) {
+      final list = await hit.list;
+      // Re-rank for this exact point, then trim to what was asked for.
+      double dist(Event e) =>
+          GeoQuery.distanceMeters(lat, lng, e.latitude!, e.longitude!);
+      return (List.of(list)..sort((a, b) => dist(a).compareTo(dist(b))))
+          .take(limit)
+          .toList();
+    }
+    final load =
+        _scanNearby(lat: lat, lng: lng, limit: limit, preferCache: false);
+    _nearMemo[cell] = (list: load, limit: limit, at: DateTime.now());
+    final list = await load;
+    // Errors come back as an empty list: never keep those.
+    if (list.isEmpty && identical(_nearMemo[cell]?.list, load)) {
+      _nearMemo.remove(cell);
+    }
+    return List.of(list);
+  }
+
+  Future<List<Event>> _scanNearby({
+    required double lat,
+    required double lng,
+    required int limit,
+    required bool preferCache,
   }) async {
     try {
       final now = DateTime.now();
@@ -1224,14 +1379,17 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
   /// Update the attendeeCount field on the event document
   Future<void> _updateAttendeeCount(String eventId) async {
     try {
-      final attendeesSnapshot = await _eventsCollection
+      // Server-side count aggregate: the same exact number as reading every
+      // going attendee, without downloading them (1 read per 1000 docs).
+      final agg = await _eventsCollection
           .doc(eventId)
           .collection('attendees')
           .where('status', isEqualTo: RSVPStatus.going.name)
+          .count()
           .get();
 
       await _eventsCollection.doc(eventId).update({
-        'attendeeCount': attendeesSnapshot.docs.length,
+        'attendeeCount': agg.count ?? 0,
       });
     } catch (e) {
       debugPrint('Error updating attendee count: $e');

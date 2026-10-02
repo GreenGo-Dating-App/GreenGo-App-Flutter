@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
+import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 
@@ -92,26 +93,74 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     _loadStats();
   }
 
+  static const String _cacheKey = 'personal_stats';
+
+  /// The JSON-safe subset of a user_stats doc that this screen renders.
+  static Map<String, dynamic> _plainStats(Map<String, dynamic> data) => {
+        for (final k in const [
+          'messagesSent',
+          'totalConversations',
+          'wordsPerLanguage',
+          'wordsLearnedPerLanguage',
+          'achievementsUnlocked',
+          'challengesCompleted',
+          'dailyActivity',
+        ])
+          if (data[k] != null) k: data[k],
+      };
+
+  void _rememberStats(Map<String, dynamic> data, int totalXp, int level) {
+    unawaited(LastResultCache.saveJson(_cacheKey, {
+      'totalXp': totalXp,
+      'level': level,
+      'data': _plainStats(data),
+    }));
+  }
+
+  /// Paint last time's stats at once (only a non-empty cache), then refresh.
+  Future<void> _paintCachedStats() async {
+    try {
+      final cached = await LastResultCache.loadJson(_cacheKey);
+      if (cached is! Map || !_isLoading || !mounted) return;
+      final data = cached['data'];
+      if (data is! Map || data.isEmpty) return;
+      _applyStatsFromDoc(
+        Map<String, dynamic>.from(data),
+        (cached['totalXp'] as num?)?.toInt() ?? 0,
+        (cached['level'] as num?)?.toInt() ?? 1,
+      );
+    } catch (e) {
+      debugPrint('PersonalStats: cached paint skipped: $e');
+    }
+  }
+
   Future<void> _loadStats() async {
     final firestore = FirebaseFirestore.instance;
     final userId = widget.userId;
 
+    unawaited(_paintCachedStats());
+
     try {
-      // Always read XP from user_levels (authoritative source)
+      // XP (user_levels is authoritative) and the cached stats doc (kept
+      // fresh by a daily Cloud Function) are independent: read in parallel.
+      final docs = await Future.wait([
+        firestore.collection('user_levels').doc(userId).get(),
+        firestore.collection('user_stats').doc(userId).get(),
+      ]);
+      final userLevelDoc = docs[0];
+      final statsDoc = docs[1];
+
       var totalXp = 0;
       var level = 1;
-      final userLevelDoc = await firestore.collection('user_levels').doc(userId).get();
       if (userLevelDoc.exists) {
         final lvlData = userLevelDoc.data()!;
         totalXp = (lvlData['totalXP'] as num?)?.toInt() ?? 0;
         level = _calculateLevel(totalXp);
       }
 
-      // Read cached stats from user_stats (kept fresh by daily Cloud Function)
-      final statsDoc = await firestore.collection('user_stats').doc(userId).get();
-
       if (statsDoc.exists) {
         _applyStatsFromDoc(statsDoc.data()!, totalXp, level);
+        _rememberStats(statsDoc.data()!, totalXp, level);
         return;
       }
 
@@ -169,12 +218,93 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
     }
   }
 
+  /// Upper bound on vocabulary docs scanned by the local fallback (the
+  /// server's refreshMyStats computes exact totals).
+  static const int _maxVocabDocs = 2000;
+
   /// Compute stats from source collections and cache in user_stats/{userId}
   Future<void> _computeAndCacheStats(FirebaseFirestore firestore, String userId) async {
+    // Every source below is independent: issue all reads at once instead of
+    // ~9 sequential round-trips.
+    final levelFuture = firestore.collection('user_levels').doc(userId).get();
+
+    // Load daily activity from xp_transactions (last 30 days only)
+    // Wrapped in catchError: this query requires a composite index that may not exist yet
+    final thirtyDaysAgo = DateTime.now().subtract(const Duration(days: 30));
+    final Future<QuerySnapshot<Map<String, dynamic>>?> xpFuture = firestore
+        .collection('xp_transactions')
+        .where('userId', isEqualTo: userId)
+        .where('createdAt', isGreaterThanOrEqualTo: Timestamp.fromDate(thirtyDaysAgo))
+        .orderBy('createdAt', descending: true)
+        .limit(1000)
+        .get()
+        .then<QuerySnapshot<Map<String, dynamic>>?>((s) => s)
+        .catchError((Object e) {
+      debugPrint('xp_transactions query failed (index may be missing): $e');
+      return null;
+    });
+
+    // Conversations count (two queries, count only)
+    final convos1Future = firestore
+        .collection('conversations')
+        .where('userId1', isEqualTo: userId)
+        .count()
+        .get();
+    final convos2Future = firestore
+        .collection('conversations')
+        .where('userId2', isEqualTo: userId)
+        .count()
+        .get();
+
+    // Messages sent count from profile
+    final profileFuture = firestore.collection('profiles').doc(userId).get();
+
+    // Vocabulary is processed server-side by the onMessageCreatedVocabulary
+    // Cloud Function trigger; we just read (a bounded page of) the words.
+    final vocabFuture = firestore
+        .collection('user_vocabulary')
+        .doc(userId)
+        .collection('words')
+        .limit(_maxVocabDocs)
+        .get();
+
+    // Achievements unlocked / challenges completed: count() aggregates
+    final achieveFuture = firestore
+        .collection('achievement_progress') // the collection the app writes
+        .where('userId', isEqualTo: userId)
+        .where('isUnlocked', isEqualTo: true)
+        .count()
+        .get();
+    final challengeFuture = firestore
+        .collection('challenge_progress') // the collection the app writes
+        .where('userId', isEqualTo: userId)
+        .where('isCompleted', isEqualTo: true)
+        .count()
+        .get();
+
+    // Await together so one failure can't leave the others' errors unhandled.
+    final results = await Future.wait<Object?>([
+      levelFuture,
+      xpFuture,
+      convos1Future,
+      convos2Future,
+      profileFuture,
+      vocabFuture,
+      achieveFuture,
+      challengeFuture,
+    ]);
+    final userLevelDoc = results[0]! as DocumentSnapshot<Map<String, dynamic>>;
+    final xpDocs = results[1] as QuerySnapshot<Map<String, dynamic>>?;
+    final convos1 = results[2]! as AggregateQuerySnapshot;
+    final convos2 = results[3]! as AggregateQuerySnapshot;
+    final profileDoc = results[4]! as DocumentSnapshot<Map<String, dynamic>>;
+    final vocabDocs = results[5]! as QuerySnapshot<Map<String, dynamic>>;
+    final achieveCount = results[6]! as AggregateQuerySnapshot;
+    final challengeCount = results[7]! as AggregateQuerySnapshot;
+
     // Load XP from user_levels (primary authoritative source)
     var totalXp = 0;
     var level = 1;
-    final userLevelDoc = await firestore.collection('user_levels').doc(userId).get();
     if (userLevelDoc.exists) {
       final data = userLevelDoc.data()!;
       totalXp = (data['totalXP'] as num?)?.toInt() ?? 0;
@@ -193,62 +323,27 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       level = _calculateLevel(totalXp);
     }
 
-    // Load daily activity from xp_transactions (last 30 days only)
-    // Wrapped in try-catch: this query requires a composite index that may not exist yet
     final dailyActivity = <String, int>{};
-    try {
-      final thirtyDaysAgo = DateTime.now().subtract(const Duration(days: 30));
-      final xpDocs = await firestore
-          .collection('xp_transactions')
-          .where('userId', isEqualTo: userId)
-          .where('createdAt', isGreaterThanOrEqualTo: Timestamp.fromDate(thirtyDaysAgo))
-          .orderBy('createdAt', descending: true)
-          .limit(1000)
-          .get();
-      for (final doc in xpDocs.docs) {
-        final data = doc.data();
-        final createdAt = data['createdAt'] as Timestamp?;
-        if (createdAt != null) {
-          final date = createdAt.toDate();
-          final key = '${date.month}/${date.day}';
-          dailyActivity[key] = (dailyActivity[key] ?? 0) + 1;
-        }
+    for (final doc in xpDocs?.docs ?? const []) {
+      final data = doc.data();
+      final createdAt = data['createdAt'] as Timestamp?;
+      if (createdAt != null) {
+        final date = createdAt.toDate();
+        final key = '${date.month}/${date.day}';
+        dailyActivity[key] = (dailyActivity[key] ?? 0) + 1;
       }
-    } catch (e) {
-      debugPrint('xp_transactions query failed (index may be missing): $e');
     }
 
-    // Conversations count (two queries, count only)
-    final convos1 = await firestore
-        .collection('conversations')
-        .where('userId1', isEqualTo: userId)
-        .count()
-        .get();
-    final convos2 = await firestore
-        .collection('conversations')
-        .where('userId2', isEqualTo: userId)
-        .count()
-        .get();
     final totalConvos = (convos1.count ?? 0) + (convos2.count ?? 0);
 
-    // Messages sent count from profile or estimate
     var messagesSent = 0;
-    final profileDoc = await firestore.collection('profiles').doc(userId).get();
     if (profileDoc.exists) {
       messagesSent = (profileDoc.data()?['messagesSent'] as num?)?.toInt() ?? 0;
     }
 
-    // Vocabulary is now processed server-side by the onMessageCreatedVocabulary
-    // Cloud Function trigger. We just read the cached data here.
-
     // Vocabulary words per language (all tracked + learned with useCount >= 3)
     final wordsPerLang = <String, int>{};
     final wordsLearnedPerLang = <String, int>{};
-    final vocabDocs = await firestore
-        .collection('user_vocabulary')
-        .doc(userId)
-        .collection('words')
-        .get();
     for (final doc in vocabDocs.docs) {
       final data = doc.data();
       final lang = data['language'] as String? ?? 'unknown';
@@ -259,24 +354,9 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       }
     }
 
-    // Achievements unlocked count
-    final achieveCount = await firestore
-        .collection('user_achievements')
-        .where('userId', isEqualTo: userId)
-        .where('isUnlocked', isEqualTo: true)
-        .count()
-        .get();
-
-    // Challenges completed count
-    final challengeCount = await firestore
-        .collection('user_challenges')
-        .where('userId', isEqualTo: userId)
-        .where('isCompleted', isEqualTo: true)
-        .count()
-        .get();
 
     // Cache the computed stats for fast future reads
-    final statsData = {
+    final statsData = <String, dynamic>{
       'totalXp': totalXp,
       'level': level,
       'messagesSent': messagesSent,
@@ -289,6 +369,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
       'updatedAt': FieldValue.serverTimestamp(),
     };
     firestore.collection('user_stats').doc(userId).set(statsData).catchError((_) {});
+    _rememberStats(statsData, totalXp, level);
 
     if (mounted) {
       setState(() {

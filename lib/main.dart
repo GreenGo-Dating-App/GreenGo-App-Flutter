@@ -38,6 +38,7 @@ import 'core/services/deep_link_service.dart';
 import 'core/services/purchase_recovery_service.dart';
 import 'core/services/feature_flags_service.dart';
 import 'core/services/onboarding_gate.dart';
+import 'core/services/own_profile_store.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/session_cache_gate.dart';
 import 'core/services/version_check_service.dart';
@@ -167,9 +168,6 @@ void main() async {
     debugPrint('⚠ Firestore offline persistence not enabled: $e');
   }
 
-  // Initialize cache service (Hive-based caching)
-  await cacheService.initialize();
-
   // Configure Firebase Emulators for local development
   if (kDebugMode && AppConfig.useLocalEmulators) {
     debugPrint('🔧 Connecting to Firebase Emulators...');
@@ -207,24 +205,124 @@ void main() async {
     }
   }
 
-  // Initialize Firebase App Check
-  // Skip App Check when using local emulators (it doesn't work with emulators)
-  // Skip on web — App Check for web requires reCAPTCHA Enterprise setup
+  // Everything below only needs Firebase (and, for the emulators, the
+  // connection set above), not each other, so it runs IN PARALLEL instead of
+  // one await after another before the first frame:
+  //  * Hive boxes (CacheService; LastResultCache relies on Hive.initFlutter)
+  //  * App Check activation
+  //  * Remote Config defaults + last-fetched values
+  //  * dependency injection (registrations are lazy; it awaits only
+  //    SharedPreferences, which is memoized and shared with the read below)
+  //  * the saved UI language
+  final startup = await (
+    cacheService.initialize(),
+    _activateAppCheck(),
+    _initRemoteConfig(),
+    di.init(),
+    SharedPreferences.getInstance(),
+  ).wait;
+  final prefs = startup.$5;
+
+  // Load countdown dates from Firestore (non-blocking, uses defaults on
+  // failure). After App Check so the read carries a token; the result is
+  // shared with the auth bloc and main screen, which ask for it again.
+  AccessControlService.loadCountdownDatesFromFirestore();
+
+  // Firebase Performance + Crashlytics (G0 Task 4): enable collection + wire the
+  // error handlers, and start the app_launch trace - RELEASE builds only, so
+  // debug/emulator runs never pollute production metrics. Not awaited: it is
+  // a few platform calls the first frame doesn't need; the launch trace is
+  // completed on the first frame once this has finished (see
+  // [_performanceInit]).
+  if (!kDebugMode) {
+    _performanceInit = () async {
+      try {
+        await di.sl<PerformanceMonitoringService>().initialize();
+        await di.sl<PerformanceMonitoringService>().trackAppLaunch();
+      } catch (e) {
+        debugPrint('⚠ Performance monitoring init failed: $e');
+      }
+    }();
+  } else if (!AppConfig.useLocalEmulators) {
+    // Debug on a real device (no emulator): keep collection OFF.
+    unawaited(FirebasePerformance.instance
+        .setPerformanceCollectionEnabled(false)
+        .catchError((Object e) => debugPrint('Performance off failed: $e')));
+  }
+
+  // Sound, feature flags and the version config are not needed for the first
+  // frame, so they load alongside it instead of before it. Sounds initialize
+  // lazily on first play if this hasn't finished; flags answer from their
+  // defaults until loaded; the update / maintenance check in AuthWrapper
+  // awaits the version config itself.
+  unawaited(AppSoundService().initialize());
+  unawaited(featureFlags.initialize());
+  unawaited(versionCheck.initialize());
+
+  // The FCM background handler must be registered before runApp (it is what
+  // lets a terminated app handle a message). The rest of the push setup
+  // (channels, local notifications, listeners, the launch notification) runs
+  // right after runApp - see below.
+  if (!kIsWeb) {
+    FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
+  }
+
+  // App-wide in-app-purchase recovery. Must be started here, NOT on the shop
+  // screen: a purchase that completes while the shop is closed is delivered
+  // only to a live purchaseStream listener, and an unacknowledged purchase is
+  // auto-refunded by Google after 3 days.
+  unawaited(
+    di.sl<PurchaseRecoveryService>().initialize().catchError((Object e) {
+      debugPrint('⚠ Purchase recovery init failed: $e');
+    }),
+  );
+
+  // Saved language, loaded before the app starts (prevents flicker).
+  final savedLanguage = prefs.getString('selected_language');
+
+  // Basemap style override, if one is configured. Not awaited - the maps fall
+  // back to the built-in default until it lands.
+  unawaited(MapBasemap.load());
+
+  runApp(GreenGoChatApp(savedLanguage: savedLanguage));
+
+  // Push notification service (FCM handlers). After runApp, so it doesn't
+  // hold the first frame and the navigator exists when a launch notification
+  // is routed.
+  unawaited(pushNotificationService.initialize().then((_) {
+    debugPrint('✓ Push notification service initialized');
+  }).catchError((Object e) {
+    debugPrint('⚠ Push notification init failed: $e');
+  }));
+}
+
+/// Completes when release-mode performance monitoring is set up (and the
+/// app_launch trace started). Null in debug.
+Future<void>? _performanceInit;
+
+/// Firebase App Check. Skipped with local emulators (it doesn't work with
+/// them) and on web (needs reCAPTCHA Enterprise setup). With the emulators,
+/// seeds development data instead.
+Future<void> _activateAppCheck() async {
   if (!AppConfig.useLocalEmulators && !kIsWeb) {
-    await FirebaseAppCheck.instance.activate(
-      // Use Play Integrity for production builds, debug for development
-      androidProvider: kDebugMode
-          ? AndroidProvider.debug
-          : AndroidProvider.playIntegrity,
-      appleProvider: kDebugMode
-          ? AppleProvider.debug
-          : AppleProvider.appAttest,
-    );
-    debugPrint('✓ Firebase App Check activated (${kDebugMode ? 'debug' : 'production'} mode)');
+    try {
+      await FirebaseAppCheck.instance.activate(
+        // Use Play Integrity for production builds, debug for development
+        androidProvider: kDebugMode
+            ? AndroidProvider.debug
+            : AndroidProvider.playIntegrity,
+        appleProvider: kDebugMode
+            ? AppleProvider.debug
+            : AppleProvider.appAttest,
+      );
+      debugPrint('✓ Firebase App Check activated (${kDebugMode ? 'debug' : 'production'} mode)');
+    } catch (e) {
+      debugPrint('⚠ Firebase App Check activation failed: $e');
+    }
   } else if (kIsWeb) {
-    debugPrint('⚠️ Firebase App Check skipped (web platform)');
+    debugPrint('⚠ Firebase App Check skipped (web platform)');
   } else {
-    debugPrint('⚠️ Firebase App Check skipped (using local emulators)');
+    debugPrint('⚠ Firebase App Check skipped (using local emulators)');
 
     // Seed fake users for development/testing
     try {
@@ -234,29 +332,27 @@ void main() async {
           .get();
 
       final profileCount = existingProfiles.docs.length;
-      debugPrint('📊 Found $profileCount existing profiles');
+      debugPrint('Found $profileCount existing profiles');
 
       if (profileCount < 1000) {
-        debugPrint('📊 Seeding test data (need ${1000 - profileCount} more profiles)...');
+        debugPrint('Seeding test data (need ${1000 - profileCount} more profiles)...');
         final seeded = await SeedData.seedUsers(count: 1000, clearExisting: true);
-        debugPrint('✅ Seeded $seeded test profiles');
+        debugPrint('Seeded $seeded test profiles');
       } else {
-        debugPrint('📊 $profileCount profiles exist, skipping seed');
+        debugPrint('$profileCount profiles exist, skipping seed');
       }
 
       // Always ensure admin user exists
       await SeedData.seedAdminUser();
     } catch (e) {
-      debugPrint('⚠️ Could not seed data: $e');
+      debugPrint('Could not seed data: $e');
     }
   }
+}
 
-  // Load countdown dates from Firestore (non-blocking, uses defaults on
-  // failure). After App Check so the read carries a token; the result is
-  // shared with the auth bloc and main screen, which ask for it again.
-  AccessControlService.loadCountdownDatesFromFirestore();
-
-  // Initialize Firebase Remote Config with default values
+/// Firebase Remote Config: defaults, then the values fetched on a previous
+/// launch (local, no network). The fresh fetch runs in the background.
+Future<void> _initRemoteConfig() async {
   try {
     final remoteConfig = FirebaseRemoteConfig.instance;
     await remoteConfig.setConfigSettings(RemoteConfigSettings(
@@ -291,58 +387,6 @@ void main() async {
   } catch (e) {
     debugPrint('Remote Config initialization error: $e');
   }
-
-  // Initialize dependency injection
-  await di.init();
-
-  // Firebase Performance + Crashlytics (G0 Task 4): enable collection + wire the
-  // error handlers, and start the app_launch trace — RELEASE builds only, so
-  // debug/emulator runs never pollute production metrics. Start the launch trace
-  // before runApp; it is completed on the first frame of the root widget.
-  if (!kDebugMode) {
-    try {
-      await di.sl<PerformanceMonitoringService>().initialize();
-      await di.sl<PerformanceMonitoringService>().trackAppLaunch();
-    } catch (e) {
-      debugPrint('⚠ Performance monitoring init failed: $e');
-    }
-  } else if (!AppConfig.useLocalEmulators) {
-    // Debug on a real device (no emulator): keep collection OFF.
-    await FirebasePerformance.instance.setPerformanceCollectionEnabled(false);
-  }
-
-  // Sound, feature flags and the version config are not needed for the first
-  // frame, so they load alongside it instead of before it. Sounds initialize
-  // lazily on first play if this hasn't finished; flags answer from their
-  // defaults until loaded; the update / maintenance check in AuthWrapper
-  // awaits the version config itself.
-  unawaited(AppSoundService().initialize());
-  unawaited(featureFlags.initialize());
-  unawaited(versionCheck.initialize());
-
-  // Initialize push notification service (FCM handlers)
-  await pushNotificationService.initialize();
-  debugPrint('✓ Push notification service initialized');
-
-  // App-wide in-app-purchase recovery. Must be started here, NOT on the shop
-  // screen: a purchase that completes while the shop is closed is delivered
-  // only to a live purchaseStream listener, and an unacknowledged purchase is
-  // auto-refunded by Google after 3 days.
-  unawaited(
-    di.sl<PurchaseRecoveryService>().initialize().catchError((Object e) {
-      debugPrint('⚠ Purchase recovery init failed: $e');
-    }),
-  );
-
-  // Load saved language before app starts (prevents flicker)
-  final prefs = await SharedPreferences.getInstance();
-  final savedLanguage = prefs.getString('selected_language');
-
-  // Basemap style override, if one is configured. Not awaited — the maps fall
-  // back to the built-in default until it lands.
-  unawaited(MapBasemap.load());
-
-  runApp(GreenGoChatApp(savedLanguage: savedLanguage));
 }
 
 /// Recovery action offered by [AppErrorScreen].
@@ -371,7 +415,9 @@ class GreenGoChatApp extends StatelessWidget {
     if (!kDebugMode && !_appLaunchTraceCompleted) {
       _appLaunchTraceCompleted = true;
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        di.sl<PerformanceMonitoringService>().completeAppLaunch();
+        // Only once the launch trace has actually been started.
+        (_performanceInit ?? Future<void>.value()).then((_) =>
+            di.sl<PerformanceMonitoringService>().completeAppLaunch());
       });
     }
     return MultiProvider(
@@ -898,6 +944,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         return null;
       }
       await _cacheBusinessFlag(profile['isBusiness'] == true);
+      OwnProfileStore.instance.seed(userId, profile, fromServer: false);
       return _AccessDecision(
         needsOnboarding: false,
         banned: false,
@@ -945,6 +992,28 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       }
     }
 
+    // The access read runs ALONGSIDE the profile read instead of after it
+    // (first launch / cache miss used to wait for two 8s-bounded reads back to
+    // back). Without profileData it cross-checks the profile through the same
+    // shared server read (AccessControlService.serverDoc), so the profile is
+    // still fetched once.
+    Future<({UserAccessData? data, bool failed})> readAccess(
+        {Map<String, dynamic>? profileData}) async {
+      try {
+        final data = await _accessControlService
+            .getCurrentUserAccess(
+              profileData: profileData,
+              throwIfServerUnavailable: true,
+            )
+            .timeout(const Duration(seconds: 8));
+        return (data: data, failed: false);
+      } catch (e) {
+        debugPrint('🔑 Access read failed for $userId: $e');
+        return (data: null, failed: true);
+      }
+    }
+
+    var accessRead = readAccess();
     var profileRead = await readProfile();
 
     // Admin accounts get isAdmin=true / approvalStatus=approved written to
@@ -964,12 +1033,23 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         // The sync may have written both docs: read them fresh.
         AccessControlService.invalidateOwnDoc('profiles', userId);
         AccessControlService.invalidateOwnDoc('users', userId);
+        // The early access read may predate the sync; let it finish (so the
+        // fresh reads below aren't shared with it), then read both again.
+        await accessRead;
+        AccessControlService.invalidateOwnDoc('users', userId);
         profileRead = await readProfile();
+        accessRead =
+            readAccess(profileData: profileFromServer ? profile : null);
       }
     }
 
     if (profileRead) {
       await _cacheBusinessFlag(profile?['isBusiness'] == true);
+      final p = profile;
+      if (p != null) {
+        // Share it: the shell and Conversations read it from memory.
+        OwnProfileStore.instance.seed(userId, p, fromServer: profileFromServer);
+      }
     }
     // Could not read the doc at all — fail open, never lock out.
     final needsOnboarding =
@@ -988,18 +1068,10 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     // surfaces as the fallback below rather than an endless splash. A failed
     // or timed-out server read is kept apart from "no doc on the server", so
     // it can never lead to the doc being re-initialized.
-    var accessReadFailed = false;
-    UserAccessData? accessData;
-    try {
-      accessData = await _accessControlService
-          .getCurrentUserAccess(
-            profileData: profileFromServer ? profile : null,
-            throwIfServerUnavailable: true,
-          )
-          .timeout(const Duration(seconds: 8));
-    } catch (e) {
-      debugPrint('🔑 Access read failed for $userId: $e');
-      accessReadFailed = true;
+    final access = await accessRead;
+    final accessReadFailed = access.failed;
+    var accessData = access.data;
+    if (accessReadFailed) {
       // Show what this device last saw, if anything (not authoritative).
       accessData = await _accessControlService.getCachedUserAccess();
     }
@@ -1101,6 +1173,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   /// same one signing back in) starts clean.
   void _clearSessionCaches() {
     unawaited(LastResultCache.clear());
+    OwnProfileStore.instance.reset();
     SessionCacheGate.reset();
     AccessControlService.clearSessionCache();
     DataPreloadService.instance.reset();
@@ -1386,8 +1459,9 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
       // events) DURING the splash animation so the first tab (Explore) opens
       // against a warm cache. Idempotent (guarded by DataPreloadService._done),
       // so the redundant call from MainNavigationScreen.initState is a no-op.
-      DataPreloadService.instance.warm(userId);
+      _preload ??= DataPreloadService.instance.warm(userId);
       return PostLoginSplashScreen(
+        ready: _preload,
         onComplete: () {
           _signInPending = false;
           if (mounted) {
@@ -1398,8 +1472,15 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         },
       );
     }
-    return MainNavigationScreen(userId: userId);
+    return MainNavigationScreen(
+      userId: userId,
+      initialAccessData: _accessData?.userId == userId ? _accessData : null,
+    );
   }
+
+  /// The post-login preload, shared with the splash so it can end as soon as
+  /// the preload is done. Reset on sign-out.
+  Future<void>? _preload;
 
   @override
   Widget build(BuildContext context) {
@@ -1419,6 +1500,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         if (state is AuthInitial || state is AuthUnauthenticated) {
           _isSigningOut = false;
           _clearSessionCaches();
+          _preload = null;
           setState(() {
             _accessData = null;
             _needsOnboarding = false;

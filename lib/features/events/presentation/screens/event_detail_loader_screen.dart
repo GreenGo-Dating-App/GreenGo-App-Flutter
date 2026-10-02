@@ -10,6 +10,8 @@ import '../../../../generated/app_localizations.dart';
 import '../bloc/events_bloc.dart';
 import '../bloc/events_event.dart';
 import '../bloc/events_state.dart';
+import '../../data/models/event_model.dart';
+import '../../domain/entities/event.dart';
 import 'events_screen.dart';
 
 /// Per-session in-memory guard so the repeated `BlocBuilder` rebuilds on one
@@ -49,7 +51,7 @@ Future<void> _recordEventView(String eventId, String userId) async {
 /// Loads an event by id (e.g. when opening a shared event card from a chat)
 /// and shows the full [EventDetailsScreen]. Provides its own [EventsBloc] so it
 /// works from anywhere — chat, group chat, deep links.
-class EventDetailLoaderScreen extends StatelessWidget {
+class EventDetailLoaderScreen extends StatefulWidget {
   const EventDetailLoaderScreen({
     super.key,
     required this.eventId,
@@ -72,6 +74,37 @@ class EventDetailLoaderScreen extends StatelessWidget {
   }
 
   @override
+  State<EventDetailLoaderScreen> createState() =>
+      _EventDetailLoaderScreenState();
+}
+
+class _EventDetailLoaderScreenState extends State<EventDetailLoaderScreen> {
+  String get eventId => widget.eventId;
+  String get currentUserId => widget.currentUserId;
+
+  /// The event from the LOCAL Firestore cache (no network), painted while the
+  /// bloc's server read runs; the server answer replaces it.
+  Event? _cached;
+
+  @override
+  void initState() {
+    super.initState();
+    _readCached();
+  }
+
+  Future<void> _readCached() async {
+    if (eventId.isEmpty) return;
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('events')
+          .doc(eventId)
+          .get(const GetOptions(source: Source.cache));
+      if (!doc.exists || !mounted) return;
+      setState(() => _cached = EventModel.fromFirestore(doc));
+    } catch (_) {/* not cached: wait for the server */}
+  }
+
+  @override
   Widget build(BuildContext context) {
     return BlocProvider<EventsBloc>(
       create: (_) => di.sl<EventsBloc>()..add(LoadEventById(eventId: eventId)),
@@ -79,13 +112,22 @@ class EventDetailLoaderScreen extends StatelessWidget {
         builder: (context) {
           return BlocBuilder<EventsBloc, EventsState>(
             builder: (context, state) {
-              if (state is EventDetailLoaded) {
-                // Attendees load separately (subcollection); merge them onto the
-                // event so the roster + "My ticket" gate work from deep links.
-                final event = state.event.attendees.isEmpty &&
-                        state.attendees.isNotEmpty
-                    ? state.event.copyWith(attendees: state.attendees)
-                    : state.event;
+              final cached = _cached;
+              if (state is EventDetailLoaded || cached != null) {
+                final Event event;
+                if (state is EventDetailLoaded) {
+                  // Attendees load separately (subcollection); merge them onto
+                  // the event so the roster + "My ticket" gate work from deep
+                  // links.
+                  event = state.event.attendees.isEmpty &&
+                          state.attendees.isNotEmpty
+                      ? state.event.copyWith(attendees: state.attendees)
+                      : state.event;
+                } else if (state is EventsError) {
+                  return _errorScaffold(context);
+                } else {
+                  event = cached!;
+                }
                 // Log the event view for recommendations (fire-and-forget,
                 // never throws; the service dedupes identical rebuilds).
                 di.sl<InteractionLogService>().logEventView(
@@ -101,18 +143,7 @@ class EventDetailLoaderScreen extends StatelessWidget {
                   currentUserId: currentUserId,
                 );
               }
-              if (state is EventsError) {
-                return Scaffold(
-                  backgroundColor: AppColors.backgroundDark,
-                  appBar: AppBar(backgroundColor: AppColors.backgroundDark),
-                  body: Center(
-                    child: Text(
-                      AppLocalizations.of(context)!.eventLoadError,
-                      style: const TextStyle(color: AppColors.textSecondary),
-                    ),
-                  ),
-                );
-              }
+              if (state is EventsError) return _errorScaffold(context);
               return const Scaffold(
                 backgroundColor: AppColors.backgroundDark,
                 body: Center(
@@ -125,4 +156,15 @@ class EventDetailLoaderScreen extends StatelessWidget {
       ),
     );
   }
+
+  Widget _errorScaffold(BuildContext context) => Scaffold(
+        backgroundColor: AppColors.backgroundDark,
+        appBar: AppBar(backgroundColor: AppColors.backgroundDark),
+        body: Center(
+          child: Text(
+            AppLocalizations.of(context)!.eventLoadError,
+            style: const TextStyle(color: AppColors.textSecondary),
+          ),
+        ),
+      );
 }

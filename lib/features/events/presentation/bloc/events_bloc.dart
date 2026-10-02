@@ -29,6 +29,10 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
   }
   final EventsRepository repository;
 
+  /// Below this many events, a city-narrowed [LoadEvents] with
+  /// `widenIfFew` falls back to the unnarrowed list.
+  static const int minCityEvents = 10;
+
   // Cache the full events list for client-side filtering
   List<Event> _allEvents = [];
   List<Event> _userEvents = [];
@@ -44,11 +48,19 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
     // pull-to-refresh) keeps the current list on screen until the new one lands.
     if (_allEvents.isEmpty) emit(const EventsLoading());
 
-    final result = await repository.getEvents(
+    var result = await repository.getEvents(
       category: event.category,
       city: event.city,
       upcoming: event.upcoming,
     );
+    if (event.widenIfFew &&
+        event.city != null &&
+        result.fold((_) => true, (e) => e.length < minCityEvents)) {
+      result = await repository.getEvents(
+        category: event.category,
+        upcoming: event.upcoming,
+      );
+    }
 
     result.fold(
       (failure) {
@@ -417,6 +429,16 @@ class EventsBloc extends Bloc<EventsEvent, EventsState> {
           nearbyEvents: _nearbyEvents,
         ));
       }
+    }
+
+    // First load: paint from the local Firestore cache (milliseconds), then
+    // the server answer replaces it. Only a NON-EMPTY cached result paints.
+    if (_userEvents.isEmpty) {
+      final cached =
+          await repository.getUserEvents(event.userId, preferCache: true);
+      cached.fold((_) {}, (events) {
+        if (events.isNotEmpty && _userEvents.isEmpty) applyUser(events);
+      });
     }
 
     final result = await repository.getUserEvents(event.userId);

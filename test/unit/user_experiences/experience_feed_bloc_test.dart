@@ -2,6 +2,16 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/features/user_experiences/domain/entities/user_experience.dart';
 import 'package:greengo_chat/features/user_experiences/domain/repositories/user_experiences_repository.dart';
 import 'package:greengo_chat/features/user_experiences/presentation/bloc/experience_feed_bloc.dart';
+import 'package:greengo_chat/features/user_experiences/presentation/experience_first_page_cache.dart';
+
+/// No local first-page cache in unit tests (no Hive / Firebase).
+class _NoCache extends ExperienceFirstPageCache {
+  const _NoCache();
+  @override
+  Future<List<UserExperience>> load(String key) async => const [];
+  @override
+  Future<void> save(String key, List<UserExperience> page) async {}
+}
 
 UserExperience _exp(String id) => UserExperience(
       id: id,
@@ -67,7 +77,7 @@ void main() {
       [],
       [_exp('b'), _exp('c')],
     ]);
-    final bloc = ExperienceFeedBloc(repository: repo)
+    final bloc = ExperienceFeedBloc(repository: repo, cache: const _NoCache())
       ..add(const ExperienceFeedStarted(query: 'food'));
     var s = await _settle(bloc);
     expect(s.status, ExperienceFeedStatus.ready);
@@ -86,7 +96,7 @@ void main() {
     final repo = _Repo([
       [_exp('a')],
     ]);
-    final bloc = ExperienceFeedBloc(repository: repo)
+    final bloc = ExperienceFeedBloc(repository: repo, cache: const _NoCache())
       ..add(const ExperienceFeedStarted(hostId: 'me'));
     await _settle(bloc);
     expect(repo.lastHost, 'me');

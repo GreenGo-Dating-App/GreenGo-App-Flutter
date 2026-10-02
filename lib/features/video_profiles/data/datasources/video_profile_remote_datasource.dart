@@ -228,22 +228,40 @@ class VideoProfileRemoteDataSourceImpl implements VideoProfileRemoteDataSource {
     String? lastId,
   }) async {
     try {
+      // Paginate using the last document ID
+      DocumentSnapshot? lastDoc;
+      if (lastId != null) {
+        final doc = await _firestore.collection(_collection).doc(lastId).get();
+        if (doc.exists) lastDoc = doc;
+      }
+
       Query query = _firestore
           .collection(_collection)
           .where('isActive', isEqualTo: true)
           .orderBy('createdAt', descending: true)
           .limit(limit);
+      if (lastDoc != null) query = query.startAfterDocument(lastDoc);
 
-      // Paginate using the last document ID
-      if (lastId != null) {
-        final lastDoc =
-            await _firestore.collection(_collection).doc(lastId).get();
-        if (lastDoc.exists) {
-          query = query.startAfterDocument(lastDoc);
-        }
+      QuerySnapshot querySnapshot;
+      try {
+        querySnapshot = await query.get();
+      } on FirebaseException catch (e) {
+        if (e.code != 'failed-precondition') rethrow;
+        // Composite index video_profiles(isActive, createdAt DESC) not built
+        // yet: equality-only query (no index needed), paged by document id,
+        // newest-first within the page. Keeps the feed working meanwhile.
+        debugPrint('[VideoProfileDS] discovery index missing, fallback: $e');
+        Query fallback = _firestore
+            .collection(_collection)
+            .where('isActive', isEqualTo: true)
+            .limit(limit);
+        if (lastDoc != null) fallback = fallback.startAfterDocument(lastDoc);
+        querySnapshot = await fallback.get();
+        final models =
+            querySnapshot.docs.map(VideoProfileModel.fromFirestore).toList()
+              ..sort((a, b) => b.createdAt.compareTo(a.createdAt));
+        return models;
       }
-
-      final querySnapshot = await query.get();
 
       return querySnapshot.docs
           .map(VideoProfileModel.fromFirestore)

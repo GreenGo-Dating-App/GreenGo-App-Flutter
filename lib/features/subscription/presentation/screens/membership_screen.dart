@@ -42,6 +42,10 @@ class _MembershipScreenView extends StatefulWidget {
 
 class _MembershipScreenState extends State<_MembershipScreenView> {
   ProductDetails? _selectedProduct;
+  /// Last store products shown. Survives non-product states (purchase
+  /// errors, cancellations) that used to blank the list.
+  List<ProductDetails> _products =
+      SubscriptionBloc.sessionProducts ?? const <ProductDetails>[];
   String? _currentTierName;
   DateTime? _currentEndDate;
   bool _hasActiveBaseMembership = false;
@@ -160,7 +164,9 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
         },
         builder: (context, state) {
           final isLoading = state is SubscriptionLoading;
-          final products = state is ProductsLoaded ? state.products : [];
+          if (state is ProductsLoaded) _products = state.products;
+          final products = _products;
+          final productsLoading = state is ProductsLoading && products.isEmpty;
 
           return Stack(
             children: [
@@ -192,6 +198,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                       const SizedBox(height: 32),
 
                       // Product List
+                      if (productsLoading) _buildProductsPlaceholder(),
                       if (products.isNotEmpty)
                         ...products.map((product) {
                           final isLocked = _isProductLocked(product.id);
@@ -256,6 +263,33 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
             ],
           );
         },
+      ),
+    );
+  }
+
+  /// Placeholder cards while the store is queried: the page renders at once
+  /// (no full-screen overlay) and no price is shown until the store's own.
+  Widget _buildProductsPlaceholder() {
+    return Column(
+      children: List.generate(
+        3,
+        (_) => Container(
+          height: 92,
+          margin: const EdgeInsets.only(bottom: 16),
+          decoration: BoxDecoration(
+            color: Colors.grey[900],
+            borderRadius: BorderRadius.circular(16),
+          ),
+          alignment: Alignment.center,
+          child: const SizedBox(
+            width: 22,
+            height: 22,
+            child: CircularProgressIndicator(
+              strokeWidth: 2,
+              valueColor: AlwaysStoppedAnimation<Color>(AppColors.richGold),
+            ),
+          ),
+        ),
       ),
     );
   }

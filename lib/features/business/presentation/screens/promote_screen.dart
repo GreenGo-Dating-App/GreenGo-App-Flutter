@@ -344,11 +344,9 @@ class _PromoteScreenState extends State<PromoteScreen> {
             style: const TextStyle(color: AppColors.textPrimary)),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
       ),
-      body: _loading
-          ? const Center(
-              child: CircularProgressIndicator(color: AppColors.richGold),
-            )
-          : ListView(
+      // Render at once; only the business card's status line waits for the
+      // one promoted-until field.
+      body: ListView(
               padding: const EdgeInsets.all(16),
               children: [
                 Text(
@@ -364,10 +362,12 @@ class _PromoteScreenState extends State<PromoteScreen> {
                   title: l10n.promoteBusinessOption,
                   description: l10n.promoteBusinessDesc,
                   active: active,
-                  statusLabel: active
-                      ? l10n.promoteActiveUntil(
-                          _formatDate(_businessPromotedUntil!))
-                      : l10n.promoteNotActive,
+                  statusLabel: _loading
+                      ? null
+                      : active
+                          ? l10n.promoteActiveUntil(
+                              _formatDate(_businessPromotedUntil!))
+                          : l10n.promoteNotActive,
                   onTap: _promoteBusiness,
                 ),
                 const SizedBox(height: 14),

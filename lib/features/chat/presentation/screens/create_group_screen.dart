@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -484,7 +485,8 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
                         secondary: CircleAvatar(
                           backgroundImage: (c.photoUrl != null &&
                                   c.photoUrl!.isNotEmpty)
-                              ? NetworkImage(c.photoUrl!)
+                              ? CachedNetworkImageProvider(c.photoUrl!,
+                                  maxWidth: 80)
                               : null,
                           child: (c.photoUrl == null || c.photoUrl!.isEmpty)
                               ? Text(c.name.isNotEmpty

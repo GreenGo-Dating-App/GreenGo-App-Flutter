@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart';
 import '../../domain/entities/profile.dart';
+import '../profile_geohash.dart';
 import '../../domain/entities/social_links.dart';
 
 class ProfileModel extends Profile {
@@ -368,7 +369,7 @@ class ProfileModel extends Profile {
       }
     }
 
-    return {
+    final json = <String, dynamic>{
       'userId': userId,
       'displayName': displayName,
       'nickname': nickname,
@@ -474,6 +475,12 @@ class ProfileModel extends Profile {
       'coverImageUrl': coverImageUrl,
       'isBanned': isBanned,
     };
+    // Discoverable-location geohash (travel location while travelling, else
+    // home) for Discovery's nearest-first range queries. Omitted when the
+    // location is unknown so a write never stores a bogus (0,0) cell.
+    final geohash = profileGeohash(json);
+    if (geohash != null) json[kProfileGeohashField] = geohash;
+    return json;
   }
 }
 

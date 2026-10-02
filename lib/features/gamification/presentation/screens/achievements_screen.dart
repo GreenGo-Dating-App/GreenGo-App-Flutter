@@ -45,8 +45,12 @@ class _AchievementsScreenState extends State<AchievementsScreen>
       vsync: this,
     );
 
-    // Load achievements
-    context.read<GamificationBloc>().add(LoadUserAchievements(widget.userId));
+    // Load achievements once: when embedded in the Progress hub the parent
+    // already loaded them into the shared bloc, so don't fetch a second time.
+    final bloc = context.read<GamificationBloc>();
+    if (bloc.state.achievementsData == null && !bloc.state.achievementsLoading) {
+      bloc.add(LoadUserAchievements(widget.userId));
+    }
   }
 
   @override
@@ -137,7 +141,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
           }
         },
         builder: (context, state) {
-          if (state.achievementsLoading) {
+          if (state.achievementsLoading && state.achievementsData == null) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -175,7 +179,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
             );
           }
 
-          if (state.achievementsError != null) {
+          if (state.achievementsError != null && state.achievementsData == null) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

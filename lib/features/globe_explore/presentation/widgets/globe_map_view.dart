@@ -576,6 +576,8 @@ class _GlobeMapViewState extends State<GlobeMapView>
                         ? CachedNetworkImage(
                             imageUrl: user.photoUrl!,
                             fit: BoxFit.cover,
+                            // Tiny pin: decode ~2x its box, not the full photo.
+                            memCacheWidth: (markerSize * 2).round(),
                             placeholder: (_, __) =>
                                 _buildFallbackAvatar(user),
                             errorWidget: (_, __, ___) =>
@@ -650,6 +652,8 @@ class _GlobeMapViewState extends State<GlobeMapView>
                         ? CachedNetworkImage(
                             imageUrl: user.photoUrl!,
                             fit: BoxFit.cover,
+                            // Tiny pin: decode ~2x its box, not the full photo.
+                            memCacheWidth: (markerSize * 2).round(),
                             placeholder: (_, __) => Container(
                               color: AppColors.backgroundCard,
                               child: Center(

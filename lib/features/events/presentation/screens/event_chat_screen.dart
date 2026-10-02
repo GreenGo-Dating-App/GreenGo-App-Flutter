@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -331,7 +332,11 @@ class _EventChatScreenState extends State<EventChatScreen> {
             CircleAvatar(
               radius: 16,
               backgroundImage: message.senderPhotoUrl != null
-                  ? NetworkImage(message.senderPhotoUrl!)
+                  // Disk-cached, decoded at avatar size (32dp).
+                  ? ResizeImage.resizeIfNeeded(
+                      (32 * MediaQuery.of(context).devicePixelRatio).round(),
+                      null,
+                      CachedNetworkImageProvider(message.senderPhotoUrl!))
                   : null,
               backgroundColor: AppColors.backgroundCard,
               child: message.senderPhotoUrl == null

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/safety_lesson.dart';
 import '../../domain/entities/safety_module.dart';
 import '../bloc/safety_academy_bloc.dart';
@@ -68,6 +69,42 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
           }
 
           final lessons = state.currentLessons;
+          if (lessons.isEmpty && state.errorMessage != null) {
+            // A failed load used to fall through to "No lessons available
+            // yet", hiding the real problem and offering no way to retry.
+            final l10n = AppLocalizations.of(context)!;
+            return Center(
+              child: Padding(
+                padding: const EdgeInsets.all(24),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(
+                      Icons.error_outline,
+                      color: AppColors.errorRed,
+                      size: 48,
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      l10n.somethingWentWrong,
+                      style: const TextStyle(color: AppColors.textSecondary),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 16),
+                    ElevatedButton(
+                      onPressed: () => context
+                          .read<SafetyAcademyBloc>()
+                          .add(LoadLessons(widget.module.id)),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.richGold,
+                      ),
+                      child: Text(l10n.retry),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          }
           if (lessons.isEmpty) {
             return const Center(
               child: Text(

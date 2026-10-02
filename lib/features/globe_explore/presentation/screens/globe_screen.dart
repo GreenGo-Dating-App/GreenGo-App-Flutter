@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart' hide State;
@@ -65,6 +67,55 @@ class _GlobeScreenState extends State<GlobeScreen> {
   // emits onPositionChanged without a real move (prevents a refresh loop).
   double? _loadedLat, _loadedLng, _loadedRadius;
 
+  // Session cache of viewport loads keyed by geohash-prefix cell + zoom band,
+  // so panning back over an area (or toggling a layer off and on) does not
+  // re-query it. Entries expire after [_cellTtl]; at most [_maxCells] each.
+  static const Duration _cellTtl = Duration(minutes: 10);
+  static const int _maxCells = 80;
+  static final Map<String, (DateTime, List<ExternalEvent>)> _extCellCache = {};
+  static final Map<String, (DateTime, List<Event>)> _communityCellCache = {};
+
+  /// Cell id for a viewport: a geohash prefix whose cell is about the size of
+  /// the visible radius, plus the radius band (log2), so a zoomed-in view
+  /// never reuses a zoomed-out (sparser) result or vice versa.
+  static String _viewportCell(double lat, double lng, double radiusM) {
+    final km = radiusM / 1000;
+    final precision = km > 2500
+        ? 1
+        : km > 600
+            ? 2
+            : km > 150
+                ? 3
+                : km > 40
+                    ? 4
+                    : km > 5
+                        ? 5
+                        : 6;
+    final band = radiusM <= 1 ? 0 : (math.log(radiusM) / math.ln2).round();
+    return '${GeoQuery.encode(lat, lng, precision)}@$band';
+  }
+
+  /// Country tap sheet's events, one future per country for this screen.
+  final Map<String, Future<Either<Failure, List<Event>>>> _countryEvents = {};
+
+  static Future<List<T>> _cached<T>(
+    Map<String, (DateTime, List<T>)> cache,
+    String key,
+    Future<List<T>> Function() load,
+  ) async {
+    final hit = cache[key];
+    if (hit != null && DateTime.now().difference(hit.$1) < _cellTtl) {
+      return hit.$2;
+    }
+    final value = await load();
+    cache.remove(key);
+    cache[key] = (DateTime.now(), value);
+    while (cache.length > _maxCells) {
+      cache.remove(cache.keys.first);
+    }
+    return value;
+  }
+
   @override
   void initState() {
     super.initState();
@@ -98,38 +149,45 @@ class _GlobeScreenState extends State<GlobeScreen> {
     _vpLng = lng;
     _vpRadius = radiusM;
     final gen = ++_viewportGen;
-    // External layers (each enabled source), within the viewport.
-    final futures = <Future<List<ExternalEvent>>>[];
-    if (_showAttractions) {
-      futures.add(_extDs.getInBounds(
-          source: 'geoapify', lat: lat, lng: lng, radiusM: radiusM));
-    }
-    if (_showExperiences) {
-      futures.add(_extDs.getInBounds(
-          source: 'viator', lat: lat, lng: lng, radiusM: radiusM));
-    }
-    if (_showLiveEvents) {
-      futures.add(_extDs.getInBounds(
-          source: 'ticketmaster', lat: lat, lng: lng, radiusM: radiusM));
-    }
-    final external =
-        (await Future.wait(futures)).expand((e) => e).toList();
+    // External layers (each enabled source) AND community events, all in
+    // parallel (community used to wait for the external layers), each served
+    // from the session cell cache when this area was already loaded.
+    final cell = _viewportCell(lat, lng, radiusM);
+    Future<List<ExternalEvent>> external(String source) => _cached(
+        _extCellCache,
+        '$source|$cell',
+        () => _extDs.getInBounds(
+            source: source, lat: lat, lng: lng, radiusM: radiusM));
+    final futures = <Future<List<ExternalEvent>>>[
+      if (_showAttractions) external('geoapify'),
+      if (_showExperiences) external('viator'),
+      if (_showLiveEvents) external('ticketmaster'),
+    ];
+    final communityFuture = _showCommunityEvents
+        ? _cached(
+            _communityCellCache,
+            'community|$cell',
+            () => _nativeDs.getNearbyCommunityEvents(
+                lat: lat, lng: lng, limit: 200))
+        : Future.value(const <Event>[]);
+    final results = await Future.wait<Object>([
+      Future.wait(futures),
+      communityFuture,
+    ]);
+    final external_ =
+        (results[0] as List<List<ExternalEvent>>).expand((e) => e).toList();
     // Public community events nearby (getNearbyCommunityEvents filters private).
-    List<Event> community = const [];
-    if (_showCommunityEvents) {
-      community = await _nativeDs.getNearbyCommunityEvents(
-          lat: lat, lng: lng, limit: 200);
-      // Auto-publish gate (defensive): drafts / not-yet-due scheduled events
-      // never leak onto the map. The datasource already filters; guard here too
-      // (see Event.isLive).
-      community = community.where((e) => e.isLive).toList();
-    }
+    // Auto-publish gate (defensive): drafts / not-yet-due scheduled events
+    // never leak onto the map. The datasource already filters; guard here too
+    // (see Event.isLive).
+    final community =
+        (results[1] as List<Event>).where((e) => e.isLive).toList();
     if (!mounted || gen != _viewportGen) return;
     _loadedLat = lat;
     _loadedLng = lng;
     _loadedRadius = radiusM;
     setState(() {
-      _viewportExternal = external;
+      _viewportExternal = external_;
       _viewportCommunity = community;
     });
   }
@@ -213,7 +271,9 @@ class _GlobeScreenState extends State<GlobeScreen> {
             height: 48,
             child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
                 ? Image(
-                    image: CachedNetworkImageProvider(e.imageUrl!),
+                    // Landscape art: bound the height (~2x the 48px box).
+                    image: ResizeImage(CachedNetworkImageProvider(e.imageUrl!),
+                        height: 96, policy: ResizeImagePolicy.fit),
                     fit: BoxFit.cover)
                 : Container(
                     color: AppColors.backgroundInput,
@@ -278,18 +338,41 @@ class _GlobeScreenState extends State<GlobeScreen> {
 
   /// Tap a country → list its Experiences + Attractions (queried directly, so
   /// it's complete regardless of which markers are on the map).
-  Future<void> _showCountryDetailSheet(
-      BuildContext context, String country) async {
-    final snap = await FirebaseFirestore.instance
+  /// Country items (sorted by rating), memoised per country for the session
+  /// so re-opening the sheet is instant.
+  static final Map<String, (DateTime, Future<List<ExternalEvent>>)>
+      _countryItems = {};
+
+  Future<List<ExternalEvent>> _countryItemsFor(String country) {
+    final hit = _countryItems[country];
+    if (hit != null && DateTime.now().difference(hit.$1) < _cellTtl) {
+      return hit.$2;
+    }
+    final future = FirebaseFirestore.instance
         .collection('external_events')
         .where('country', isEqualTo: country)
         .limit(150)
-        .get();
-    final all = snap.docs.map(ExternalEvent.fromFirestore).toList()
-      ..sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0));
-    final exp = all.where((e) => e.source == 'viator').toList();
-    final att = all.where((e) => e.source == 'geoapify').toList();
-    final live = all.where((e) => e.source == 'ticketmaster').toList();
+        .get()
+        .then((snap) => snap.docs.map(ExternalEvent.fromFirestore).toList()
+          ..sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0)));
+    _countryItems[country] = (DateTime.now(), future);
+    // A failed load must not stay memoised.
+    future.catchError((Object _) {
+      if (identical(_countryItems[country]?.$2, future)) {
+        _countryItems.remove(country);
+      }
+      return const <ExternalEvent>[];
+    }).ignore();
+    while (_countryItems.length > _maxCells) {
+      _countryItems.remove(_countryItems.keys.first);
+    }
+    return future;
+  }
+
+  Future<void> _showCountryDetailSheet(
+      BuildContext context, String country) async {
+    // Open the sheet at once with a loader; the (memoised) query fills it.
+    final itemsFuture = _countryItemsFor(country);
     if (!mounted) return;
     final l10n = AppLocalizations.of(context)!;
 
@@ -301,7 +384,11 @@ class _GlobeScreenState extends State<GlobeScreen> {
               height: 48,
               child: (e.imageUrl != null && e.imageUrl!.isNotEmpty)
                   ? Image(
-                      image: CachedNetworkImageProvider(e.imageUrl!),
+                      // Landscape art: bound the height (~2x the 48px box).
+                      image: ResizeImage(
+                          CachedNetworkImageProvider(e.imageUrl!),
+                          height: 96,
+                          policy: ResizeImagePolicy.fit),
                       fit: BoxFit.cover)
                   : Container(
                       color: AppColors.backgroundInput,
@@ -342,7 +429,16 @@ class _GlobeScreenState extends State<GlobeScreen> {
           initialChildSize: 0.7,
           maxChildSize: 0.95,
           expand: false,
-          builder: (_, sc) => ListView(
+          builder: (_, sc) => FutureBuilder<List<ExternalEvent>>(
+            future: itemsFuture,
+            builder: (_, snapshot) {
+            final loading =
+                snapshot.connectionState != ConnectionState.done;
+            final all = snapshot.data ?? const <ExternalEvent>[];
+            final exp = all.where((e) => e.source == 'viator').toList();
+            final att = all.where((e) => e.source == 'geoapify').toList();
+            final live = all.where((e) => e.source == 'ticketmaster').toList();
+            return ListView(
             controller: sc,
             children: [
               const SizedBox(height: 10),
@@ -353,7 +449,15 @@ class _GlobeScreenState extends State<GlobeScreen> {
                         fontSize: 18,
                         fontWeight: FontWeight.bold)),
               ),
-              if (exp.isEmpty && att.isEmpty && live.isEmpty)
+              if (loading)
+                const Padding(
+                  padding: EdgeInsets.all(24),
+                  child: Center(
+                    child: CircularProgressIndicator(
+                        color: AppColors.richGold),
+                  ),
+                )
+              else if (exp.isEmpty && att.isEmpty && live.isEmpty)
                 Padding(
                   padding: const EdgeInsets.all(24),
                   child: Center(
@@ -379,6 +483,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
               ],
               const SizedBox(height: 16),
             ],
+            );
+            },
           ),
         ),
       ),
@@ -734,7 +840,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
                 CircleAvatar(
                   radius: 32,
                   backgroundImage: user.photoUrl != null
-                      ? CachedNetworkImageProvider(user.photoUrl!)
+                      ? ResizeImage(CachedNetworkImageProvider(user.photoUrl!),
+                          width: 128, policy: ResizeImagePolicy.fit)
                       : null,
                   backgroundColor: AppColors.backgroundCard,
                   child: user.photoUrl == null
@@ -870,7 +977,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
             CircleAvatar(
               radius: 36,
               backgroundImage: user.photoUrl != null
-                  ? CachedNetworkImageProvider(user.photoUrl!)
+                  ? ResizeImage(CachedNetworkImageProvider(user.photoUrl!),
+                      width: 144, policy: ResizeImagePolicy.fit)
                   : null,
               backgroundColor: AppColors.backgroundCard,
               child: user.photoUrl == null
@@ -980,8 +1088,14 @@ class _GlobeScreenState extends State<GlobeScreen> {
   Widget _buildCountryEventsSection(BuildContext context, String countryName) {
     final l10n = AppLocalizations.of(context)!;
     return FutureBuilder<Either<Failure, List<Event>>>(
-      future:
-          di.sl<EventsRepository>().getEventsByCountry(countryName, limit: 10),
+      // Created ONCE per country: this lives inside a DraggableScrollableSheet
+      // builder, which rebuilds on every drag frame — a future made here
+      // re-ran the query each frame.
+      future: _countryEvents.putIfAbsent(
+          countryName,
+          () => di
+              .sl<EventsRepository>()
+              .getEventsByCountry(countryName, limit: 10)),
       builder: (context, snapshot) {
         final events =
             (snapshot.data?.fold((_) => <Event>[], (e) => e) ?? const <Event>[])
@@ -1031,9 +1145,11 @@ class _GlobeScreenState extends State<GlobeScreen> {
   Widget _buildCountryEventCard(BuildContext context, Event e) {
     final l10n = AppLocalizations.of(context)!;
     Widget cover() => (e.imageUrl != null && e.imageUrl!.isNotEmpty)
-        ? Image.network(e.imageUrl!,
+        ? CachedNetworkImage(
+            imageUrl: e.imageUrl!,
             fit: BoxFit.cover,
-            errorBuilder: (_, __, ___) => Container(
+            memCacheWidth: 300, // 150-wide card, ~2x
+            errorWidget: (_, __, ___) => Container(
                 color: AppColors.backgroundDark,
                 child: const Icon(Icons.event, color: AppColors.richGold)))
         : Container(
@@ -1199,7 +1315,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
       leading: CircleAvatar(
         radius: 24,
         backgroundImage: match.photoUrl != null
-            ? CachedNetworkImageProvider(match.photoUrl!)
+            ? ResizeImage(CachedNetworkImageProvider(match.photoUrl!),
+                width: 96, policy: ResizeImagePolicy.fit)
             : null,
         backgroundColor: AppColors.backgroundCard,
         child: match.photoUrl == null

@@ -21,6 +21,7 @@ class ExternalEventsPager {
     this.userLat,
     this.userLng,
     this.liveChunks = false,
+    this.country,
     FirebaseFirestore? firestore,
   }) : _db = firestore ?? FirebaseFirestore.instance;
 
@@ -36,15 +37,29 @@ class ExternalEventsPager {
   /// original one-ring-per-page behaviour.
   final bool liveChunks;
 
+  /// Date sort only (no category): the viewer's country (canonical English
+  /// name, as stored on `external_events.country`). The soonest-first feed
+  /// then starts with events in that country instead of the whole world
+  /// (index external_events(source, country, startDate)). Falls back to the
+  /// worldwide feed when the narrow query fails (e.g. index still building)
+  /// or the country has less than one chunk of upcoming events; when the
+  /// country runs out, the feed continues worldwide from the last date shown.
+  final String? country;
+
   /// [LastResultCache] key for the first page of a given view.
-  static String cacheKey(String source, String sort, String? category) =>
-      'ext_${source}_${sort}_${category ?? ''}';
+  static String cacheKey(String source, String sort, String? category,
+          [String? country]) =>
+      'ext_${source}_${sort}_${category ?? ''}'
+      '${(country == null || country.isEmpty) ? '' : '_$country'}';
+
+  String get _key => cacheKey(source, sort, category, _countryKey);
+
+  String? get _countryKey => _canNarrowByCountry ? country : null;
 
   /// Records the first server page of this view so the next open paints it
   /// instantly (see [loadCached]).
   Future<void> saveFirstPage(List<ExternalEvent> page) =>
-      LastResultCache.saveIds(
-          cacheKey(source, sort, category), page.map((e) => e.id));
+      LastResultCache.saveIds(_key, page.map((e) => e.id));
 
   /// The first page last shown for this view, read by id from the local cache
   /// and re-checked against today's date / image gates. Empty when nothing
@@ -52,7 +67,7 @@ class ExternalEventsPager {
   Future<List<ExternalEvent>> loadCached() async {
     try {
       final docs = await LastResultCache.loadDocs(
-          cacheKey(source, sort, category), _db.collection('external_events'));
+          _key, _db.collection('external_events'));
       return docs
           .map((d) => ExternalEvent.fromMap(d.id, d.data() ?? const {}))
           .where(_imageOk)
@@ -79,6 +94,28 @@ class ExternalEventsPager {
   // Field-mode cursor.
   DocumentSnapshot<Map<String, dynamic>>? _cursor;
   bool _fieldDone = false;
+
+  bool get _canNarrowByCountry =>
+      sort == 'date' &&
+      (category == null || category!.isEmpty) &&
+      country != null &&
+      country!.isNotEmpty;
+
+  /// Date mode: still reading the viewer's country (see [country]).
+  late bool _byCountry = _canNarrowByCountry;
+
+  /// Worldwide date mode resumes here (inclusive) after the country ran out.
+  String? _resumeFrom;
+
+  /// Ids already handed out (the worldwide continuation re-reads the boundary
+  /// date, and could re-read the country's own events).
+  final Set<String> _seen = {};
+
+  void _toWorldwide({String? from}) {
+    _byCountry = false;
+    _cursor = null;
+    _resumeFrom = from;
+  }
 
   // Distance mode: created on the first distance page.
   GeoRingScanner<ExternalEvent>? _scanner;
@@ -134,6 +171,7 @@ class ExternalEventsPager {
     if (category != null && category!.isNotEmpty) {
       q = q.where('category', isEqualTo: category);
     }
+    if (_byCountry) q = q.where('country', isEqualTo: country);
     return q;
   }
 
@@ -161,22 +199,58 @@ class ExternalEventsPager {
         // ordered range at today. This avoids paging through the whole past
         // (which made the Live tab load endlessly) and drops malformed dates
         // like "1" (they sort before today). No new index — same orderBy field.
-        q = q.startAt([_todayStr]);
+        q = q.startAt([_resumeFrom ?? _todayStr]);
       }
-      final snap = await q.get();
+      final QuerySnapshot<Map<String, dynamic>> snap;
+      try {
+        snap = await q.get();
+      } catch (e) {
+        if (!_byCountry) rethrow;
+        // Narrow query unavailable (index building): the worldwide feed.
+        _toWorldwide(from: _lastDate);
+        continue;
+      }
+      if (_byCountry && _cursor == null && snap.docs.length < _chunk) {
+        // Too few upcoming events in this country: show the worldwide feed
+        // exactly as before (this page is not used).
+        _toWorldwide();
+        continue;
+      }
       if (snap.docs.isEmpty) {
+        if (_byCountry) {
+          _toWorldwide(from: _lastDate);
+          continue;
+        }
         _fieldDone = true;
         break;
       }
       _cursor = snap.docs.last;
-      if (snap.docs.length < _chunk) _fieldDone = true;
-      out.addAll(snap.docs
+      if (snap.docs.length < _chunk) {
+        if (_byCountry) {
+          // Country exhausted: continue worldwide from the last date shown,
+          // so the feed stays in date order.
+          _lastDate = snap.docs.last.data()['startDate'] as String? ?? _lastDate;
+          _toWorldwide(from: _lastDate);
+        } else {
+          _fieldDone = true;
+        }
+      }
+      final page = snap.docs
           .map(ExternalEvent.fromFirestore)
           .where(_imageOk)
-          .where(_dateOk));
+          .where(_dateOk)
+          .where((e) => _seen.add(e.id))
+          .toList();
+      if (page.isNotEmpty && page.last.startDate != null) {
+        _lastDate = page.last.startDate;
+      }
+      out.addAll(page);
     }
     return out;
   }
+
+  /// startDate of the last item read in date mode.
+  String? _lastDate;
 
   /// Live events not yet handed out (a ring can hold more than one chunk).
   final List<ExternalEvent> _liveBuffer = [];

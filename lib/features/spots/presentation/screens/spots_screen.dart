@@ -1,10 +1,15 @@
+import 'dart:async';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
+import '../../data/models/spot_model.dart';
 import '../../domain/entities/spot.dart';
 import '../bloc/spots_bloc.dart';
 import '../bloc/spots_event.dart';
@@ -30,6 +35,15 @@ class SpotsScreen extends StatefulWidget {
 class _SpotsScreenState extends State<SpotsScreen> {
   SpotCategory? _selectedCategory;
 
+  /// The list on screen: the last server answer, or the cached paint of the
+  /// list shown last time (see [_paintCached]) until it arrives. Kept while a
+  /// reload runs so the list never blanks.
+  List<Spot>? _shown;
+  String _shownKey = '';
+
+  static String _cacheKey(String city, SpotCategory? category) =>
+      'spots_${city.toLowerCase()}_${category?.firestoreValue ?? ''}';
+
   @override
   void initState() {
     super.initState();
@@ -47,11 +61,27 @@ class _SpotsScreenState extends State<SpotsScreen> {
   void _loadSpots() {
     final city = _getCurrentCity();
     if (city.isNotEmpty) {
+      final key = _cacheKey(city, _selectedCategory);
+      if (key != _shownKey) {
+        // A different list: never show the previous filter's spots.
+        _shown = null;
+        _shownKey = key;
+        unawaited(_paintCached(key));
+      }
       context.read<SpotsBloc>().add(LoadSpots(
             city: city,
             category: _selectedCategory,
           ));
     }
+  }
+
+  /// Paint the spots last shown for [key] from the local cache (no network);
+  /// only a non-empty result paints, and the server answer replaces it.
+  Future<void> _paintCached(String key) async {
+    final docs = await LastResultCache.loadDocs(
+        key, FirebaseFirestore.instance.collection('spots'));
+    if (!mounted || docs.isEmpty || key != _shownKey || _shown != null) return;
+    setState(() => _shown = docs.map(SpotModel.fromFirestore).toList());
   }
 
   @override
@@ -91,6 +121,23 @@ class _SpotsScreenState extends State<SpotsScreen> {
                 }
               },
               builder: (context, state) {
+                if (state is SpotsLoaded) {
+                  final key = _cacheKey(state.city, state.selectedCategory);
+                  if (key == _shownKey) {
+                    if (!identical(_shown, state.spots)) {
+                      unawaited(LastResultCache.saveIds(
+                          key, state.spots.map((s) => s.id)));
+                    }
+                    _shown = state.spots;
+                  }
+                }
+                final shown = _shown;
+                if (state is! SpotsLoaded &&
+                    state is! SpotsError &&
+                    shown != null &&
+                    shown.isNotEmpty) {
+                  return _buildList(shown);
+                }
                 if (state is SpotsLoading) {
                   return const Center(
                     child: CircularProgressIndicator(
@@ -134,34 +181,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
                   if (state.spots.isEmpty) {
                     return _buildEmptyState();
                   }
-                  return RefreshIndicator(
-                    color: AppColors.richGold,
-                    backgroundColor: AppColors.backgroundCard,
-                    onRefresh: () async {
-                      _loadSpots();
-                      await Future.delayed(const Duration(milliseconds: 500));
-                    },
-                    child: ListView.builder(
-                      padding: const EdgeInsets.all(16),
-                      itemCount: state.spots.length,
-                      itemBuilder: (context, index) {
-                        final spot = state.spots[index];
-                        return SpotCard(
-                          spot: spot,
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (_) => BlocProvider.value(
-                                  value: context.read<SpotsBloc>(),
-                                  child: SpotDetailScreen(spotId: spot.id),
-                                ),
-                              ),
-                            );
-                          },
-                        );
-                      },
-                    ),
-                  );
+                  return _buildList(state.spots);
                 }
 
                 return const SizedBox.shrink();
@@ -180,6 +200,41 @@ class _SpotsScreenState extends State<SpotsScreen> {
           AppLocalizations.of(context)!.spotsAddSpot,
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
+      ),
+    );
+  }
+
+  Widget _buildList(List<Spot> spots) {
+    return RefreshIndicator(
+      color: AppColors.richGold,
+      backgroundColor: AppColors.backgroundCard,
+      onRefresh: () async {
+        _loadSpots();
+        await Future.delayed(const Duration(milliseconds: 500));
+      },
+      child: ListView.builder(
+        padding: const EdgeInsets.all(16),
+        itemCount: spots.length,
+        itemBuilder: (context, index) {
+          final spot = spots[index];
+          return SpotCard(
+            spot: spot,
+            onTap: () {
+              // The detail gets its OWN bloc: sharing the list's bloc
+              // replaced the list state with the detail's, so coming back
+              // showed a blank list.
+              final ds = context.read<SpotsBloc>().remoteDataSource;
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => BlocProvider(
+                    create: (_) => SpotsBloc(remoteDataSource: ds),
+                    child: SpotDetailScreen(spotId: spot.id, initialSpot: spot),
+                  ),
+                ),
+              );
+            },
+          );
+        },
       ),
     );
   }

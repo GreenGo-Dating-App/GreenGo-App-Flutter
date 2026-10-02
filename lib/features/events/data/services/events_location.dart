@@ -5,6 +5,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/utils/geo_query.dart';
+import '../../../profile/data/models/profile_model.dart'
+    show normalizeCountryName;
 
 /// Where the Events tab (and its prefetch) centres its nearest-first queries.
 ///
@@ -90,6 +92,44 @@ class EventsLocation {
     return (lat: la, lng: ln);
   }
 
+  static final Map<String, Future<({String city, String country})?>> _places =
+      {};
+
+  /// The profile's stored city / country (profiles/{uid}.location), local
+  /// cache first, memoised for the session. Null when unknown. Used to narrow
+  /// worldwide queries (e.g. live events by date) to the user's own area.
+  /// Country is the canonical English name, as the ingesters store it.
+  static Future<({String city, String country})?> profilePlace(
+      String userId) {
+    if (userId.isEmpty) return Future.value(null);
+    return _places[userId] ??= () async {
+      final ref = FirebaseFirestore.instance.collection('profiles').doc(userId);
+      DocumentSnapshot<Map<String, dynamic>>? snap;
+      try {
+        snap = await ref.get(const GetOptions(source: Source.cache));
+      } catch (_) {/* not cached */}
+      try {
+        if (snap == null || !snap.exists) {
+          snap = await ref.get().timeout(const Duration(seconds: 4));
+        }
+      } catch (_) {
+        _places.remove(userId); // retry next time
+        return null;
+      }
+      final loc = snap.data()?['location'];
+      if (loc is! Map) return null;
+      String clean(Object? v) {
+        final s = (v as String? ?? '').trim();
+        return s == 'Unknown' ? '' : s;
+      }
+
+      final city = clean(loc['city']);
+      final country = normalizeCountryName(clean(loc['country']));
+      if (city.isEmpty && country.isEmpty) return null;
+      return (city: city, country: country);
+    }();
+  }
+
   /// Adopt a fresh fix as the anchor (and persist it for the next launch).
   static void remember(double lat, double lng) {
     _current = (lat: lat, lng: lng);
@@ -102,6 +142,7 @@ class EventsLocation {
     _epoch++;
     _current = null;
     _resolving = null;
+    _places.clear();
   }
 
   /// True when [b] is far enough from [a] that nearby results must reload.

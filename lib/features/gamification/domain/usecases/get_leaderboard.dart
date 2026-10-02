@@ -17,13 +17,20 @@ class GetLeaderboard implements UseCase<LeaderboardData, GetLeaderboardParams> {
   Future<Either<Failure, LeaderboardData>> call(
     GetLeaderboardParams params,
   ) async {
-    // Get leaderboard entries
-    final leaderboardResult = await repository.getLeaderboard(
+    // Board and the user's own rank are independent reads: run them in
+    // parallel instead of back-to-back.
+    final leaderboardFuture = repository.getLeaderboard(
       type: params.type,
       region: params.region,
       limit: params.limit,
       timePeriod: params.timePeriod,
     );
+    final userRankFuture = params.userId != null
+        ? repository.getUserRank(params.userId!, type: params.type)
+        : null;
+
+    final leaderboardResult = await leaderboardFuture;
+    final userRankResult = await userRankFuture;
 
     if (leaderboardResult.isLeft()) {
       return Left(leaderboardResult.fold((l) => l, (r) => throw Exception()));
@@ -37,12 +44,7 @@ class GetLeaderboard implements UseCase<LeaderboardData, GetLeaderboardParams> {
     // Get user's rank if userId provided
     int? userRank;
     LeaderboardEntry? userEntry;
-    if (params.userId != null) {
-      final userRankResult = await repository.getUserRank(
-        params.userId!,
-        type: params.type,
-      );
-
+    if (params.userId != null && userRankResult != null) {
       if (userRankResult.isRight()) {
         userRank = userRankResult.fold(
           (l) => null,

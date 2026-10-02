@@ -1,5 +1,6 @@
 import 'dart:ui' as ui;
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:audioplayers/audioplayers.dart' hide Source;
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
@@ -774,10 +775,11 @@ class _MessageBubbleState extends State<MessageBubble> {
                     height: 40,
                     child: ImageFiltered(
                       imageFilter: ui.ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                      child: Image.network(
-                        replyContent,
+                      child: CachedNetworkImage(
+                        imageUrl: replyContent,
                         fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => const Icon(
+                        memCacheWidth: 80,
+                        errorWidget: (_, __, ___) => const Icon(
                           Icons.image, color: Colors.white54, size: 20,
                         ),
                       ),
@@ -975,13 +977,13 @@ class _MessageBubbleState extends State<MessageBubble> {
                       // Blurred thumbnail
                       ImageFiltered(
                         imageFilter: ui.ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-                        child: Image.network(
-                          message.content,
+                        child: CachedNetworkImage(
+                          imageUrl: message.content,
                           width: 200,
                           height: 200,
                           fit: BoxFit.cover,
-                          cacheWidth: 200,
-                          errorBuilder: (context, error, stackTrace) => Container(
+                          memCacheWidth: 200,
+                          errorWidget: (context, _, __) => Container(
                             color: AppColors.backgroundDark,
                             child: const Icon(
                               Icons.broken_image,
@@ -1391,16 +1393,14 @@ class _MessageBubbleState extends State<MessageBubble> {
             child: InteractiveViewer(
               minScale: 0.5,
               maxScale: 4.0,
-              child: Image.network(
-                imageUrl,
+              // Full-screen viewer: full resolution, but disk-cached.
+              child: CachedNetworkImage(
+                imageUrl: imageUrl,
                 fit: BoxFit.contain,
-                loadingBuilder: (context, child, progress) {
-                  if (progress == null) return child;
-                  return const Center(
-                    child: CircularProgressIndicator(color: AppColors.richGold),
-                  );
-                },
-                errorBuilder: (context, error, stackTrace) => const Center(
+                placeholder: (context, _) => const Center(
+                  child: CircularProgressIndicator(color: AppColors.richGold),
+                ),
+                errorWidget: (context, _, __) => const Center(
                   child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
                 ),
               ),

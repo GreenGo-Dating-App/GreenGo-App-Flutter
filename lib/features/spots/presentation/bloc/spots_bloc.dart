@@ -52,8 +52,13 @@ class SpotsBloc extends Bloc<SpotsEvent, SpotsState> {
     emit(const SpotsLoading());
 
     try {
-      final spot = await remoteDataSource.getSpotById(event.spotId);
-      final reviews = await remoteDataSource.getReviews(event.spotId);
+      // Spot and reviews are independent: read them together.
+      final results = await Future.wait<Object>([
+        remoteDataSource.getSpotById(event.spotId),
+        remoteDataSource.getReviews(event.spotId),
+      ]);
+      final spot = results[0] as SpotModel;
+      final reviews = results[1] as List<SpotReviewModel>;
 
       debugPrint(
           '[SpotsBloc] Loaded spot ${spot.name} with ${reviews.length} reviews');

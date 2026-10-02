@@ -39,9 +39,14 @@ class _MissionsScreenState extends State<MissionsScreen> {
   }
 
   Future<void> _load() async {
-    // Touch the streak on open (safety net for app-start touch), then load.
-    final streak = await _streakService.touch(widget.userId);
-    final missions = await _missionsService.load(widget.userId);
+    // Touch the streak on open (safety net for app-start touch) and load the
+    // missions at the same time: the two are independent.
+    final results = await Future.wait<Object>([
+      _streakService.touch(widget.userId),
+      _missionsService.load(widget.userId),
+    ]);
+    final streak = results[0] as StreakInfo;
+    final missions = results[1] as List<MissionState>;
     if (!mounted) return;
     setState(() {
       _streak = streak.lastActiveDay.isEmpty

@@ -106,16 +106,15 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     if (!mounted) return;
     setState(() => _loading = true);
 
+    // The block list (never surface blocked users — personal OR business —
+    // or their events) is read alongside the searches, not after them.
     final results = await Future.wait<Object>([
       _searchProfiles(q),
       _searchEvents(q),
       _searchCommunities(q),
+      di.sl<BlockedUsersService>().getBlockedUserIds(widget.currentUserId),
     ]);
-
-    // Never surface blocked users (personal OR business) or their events.
-    final blocked = await di
-        .sl<BlockedUsersService>()
-        .getBlockedUserIds(widget.currentUserId);
+    final blocked = results[3] as Set<String>;
     if (!mounted || generation != _generation) return;
     final profiles = (results[0] as List<Profile>)
         .where((p) => !blocked.contains(p.userId))
@@ -173,62 +172,43 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
       }
     }
 
+    // Every prefix range below is independent: run them all at once (they
+    // used to run one after another). Results are absorbed in the original
+    // order, so de-duplication is unchanged. A failed query just contributes
+    // nothing.
+    final profiles = _firestore.collection('profiles');
+    final sentinel = String.fromCharCode(0xf8ff);
+    Query<Map<String, dynamic>> prefix(String field, String term) => profiles
+        .orderBy(field)
+        .startAt([term])
+        .endAt(['$term$sentinel'])
+        .limit(20);
+
     // 1) Nickname PREFIX. Usernames are stored lowercase, so a lowercased range
     //    is inherently case-insensitive AND a prefix — typing "apple" (or
     //    "Apple") now finds "appletest". The 0xF8FF sentinel makes it a real
     //    prefix instead of an exact match.
     final ql = q.toLowerCase();
-    try {
-      absorb(await _firestore
-          .collection('profiles')
-          .orderBy('nickname')
-          .startAt([ql])
-          .endAt(['$ql${String.fromCharCode(0xf8ff)}'])
-          .limit(20)
-          .get());
-    } catch (_) {/* keep whatever we have */}
-
-    // 2) displayName prefix range (single-field, index-free).
-    try {
-      absorb(await _firestore
-          .collection('profiles')
-          .orderBy('displayName')
-          .startAt([q])
-          .endAt(['$q'])
-          .limit(20)
-          .get());
-    } catch (_) {/* keep whatever we have */}
-
-    // 2b) displayName case variants. displayName keeps its original case and has
-    //     no lowercase mirror field, so also query the common capitalizations
-    //     (Capitalized, lowercase, UPPERCASE) so a name search is effectively
-    //     case-insensitive — "apple", "Apple" and "APPLE" all find "Apple".
-    for (final term in {_capitalize(q), q.toLowerCase(), q.toUpperCase()}) {
-      if (term.isEmpty || term == q) continue;
-      try {
-        absorb(await _firestore
-            .collection('profiles')
-            .orderBy('displayName')
-            .startAt([term])
-            .endAt(['$term${String.fromCharCode(0xf8ff)}'])
-            .limit(20)
-            .get());
-      } catch (_) {/* keep whatever we have */}
-    }
-
-    // 3) businessName prefix — find business accounts by their storefront name.
-    for (final term in {q, _capitalize(q)}) {
-      try {
-        absorb(await _firestore
-            .collection('profiles')
-            .orderBy('businessName')
-            .startAt([term])
-            // Real PREFIX range via the 0xF8FF sentinel (plain endAt([term])
-            // would only match the exact full business name).
-            .endAt([term + String.fromCharCode(0xf8ff)])
-            .limit(20)
-            .get());
-      } catch (_) {/* keep whatever we have */}
+    final queries = <Query<Map<String, dynamic>>>[
+      prefix('nickname', ql),
+      // 2) displayName prefix range (single-field, index-free). (It used to
+      //    end at the bare term, which only matched the exact full name.)
+      prefix('displayName', q),
+      // 2b) displayName case variants. displayName keeps its original case and
+      //     has no lowercase mirror field, so also query the common
+      //     capitalizations (Capitalized, lowercase, UPPERCASE) so a name
+      //     search is effectively case-insensitive.
+      for (final term in {_capitalize(q), q.toLowerCase(), q.toUpperCase()})
+        if (term.isNotEmpty && term != q) prefix('displayName', term),
+      // 3) businessName prefix — find business accounts by storefront name.
+      for (final term in {q, _capitalize(q)}) prefix('businessName', term),
+    ];
+    final snaps = await Future.wait(queries.map((query) => query
+        .get()
+        .then<QuerySnapshot<Map<String, dynamic>>?>((s) => s,
+            onError: (Object _) => null)));
+    for (final snap in snaps) {
+      if (snap != null) absorb(snap);
     }
 
     final list = byId.values.toList()

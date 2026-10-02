@@ -39,25 +39,29 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   @override
   void initState() {
     super.initState();
-    _initLeaderboard();
+    // The board opens on Global, which needs no country: request it right
+    // away and resolve the country in parallel (only Regional uses it).
+    _loadLeaderboard();
+    _resolveUserCountry();
   }
 
-  /// Load user country first, then load leaderboard with correct region data
-  Future<void> _initLeaderboard() async {
+  Future<void> _resolveUserCountry() async {
     try {
       final doc = await FirebaseFirestore.instance
           .collection('profiles')
           .doc(widget.userId)
           .get();
-      if (doc.exists && mounted) {
-        final data = doc.data();
-        final location = data?['location'] as Map<String, dynamic>?;
-        _userCountry = location?['country'] as String?;
-      }
+      if (!mounted) return;
+      final location = doc.data()?['location'] as Map<String, dynamic>?;
+      _userCountry = location?['country'] as String?;
     } catch (_) {
       // Silently fail - regional filtering will just not apply
+      return;
     }
-    if (mounted) {
+    // User switched to Regional before the country arrived: reload with it.
+    if (mounted &&
+        _currentType == LeaderboardType.regional &&
+        _userCountry != null) {
       _loadLeaderboard();
     }
   }
@@ -67,7 +71,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           userId: widget.userId,
           type: _currentType,
           timePeriod: _selectedPeriod.name,
-          limit: 100,
+          limit: 50,
           region: _currentType == LeaderboardType.regional ? _userCountry : null,
         ));
   }
@@ -107,7 +111,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           Expanded(
             child: BlocBuilder<GamificationBloc, GamificationState>(
               builder: (context, state) {
-                if (state.leaderboardLoading) {
+                // Spinner only on the very first load; a reload (type or
+                // period switch) keeps the previous board visible.
+                if (state.leaderboardLoading && state.leaderboardData == null) {
                   return _buildLoadingState(l10n);
                 }
 
@@ -126,6 +132,15 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   padding: const EdgeInsets.all(16),
                   child: Column(
                     children: [
+                      if (state.leaderboardLoading)
+                        const Padding(
+                          padding: EdgeInsets.only(bottom: 8),
+                          child: LinearProgressIndicator(
+                            minHeight: 2,
+                            color: AppColors.richGold,
+                            backgroundColor: Colors.transparent,
+                          ),
+                        ),
                       // User's rank card
                       if (data.userEntry != null) _buildUserRankCard(data),
 
@@ -581,7 +596,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               backgroundColor: Colors.black,
               backgroundImage:
                   entry.photoUrl != null && entry.photoUrl!.isNotEmpty
-                      ? CachedNetworkImageProvider(entry.photoUrl!)
+                      ? CachedNetworkImageProvider(entry.photoUrl!,
+                          maxWidth: 120, maxHeight: 120)
                       : null,
               child: entry.photoUrl == null || entry.photoUrl!.isEmpty
                   ? Text(
@@ -793,7 +809,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               backgroundColor: Colors.black,
               backgroundImage:
                   entry.photoUrl != null && entry.photoUrl!.isNotEmpty
-                      ? CachedNetworkImageProvider(entry.photoUrl!)
+                      ? CachedNetworkImageProvider(entry.photoUrl!,
+                          maxWidth: 120, maxHeight: 120)
                       : null,
               child: entry.photoUrl == null || entry.photoUrl!.isEmpty
                   ? Text(

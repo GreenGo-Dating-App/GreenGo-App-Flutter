@@ -60,9 +60,17 @@ class CoinRemoteDataSource {
 
   /// Get coin balance for user
   Future<CoinBalanceModel> getBalance(String userId) async {
-    final doc = await _balancesCollection.doc(userId).get(
-      const GetOptions(source: Source.server),
-    );
+    // Default source: server when online (same freshness as before), cache
+    // when offline instead of failing. Live updates come from balanceStream.
+    final doc = await _balancesCollection.doc(userId).get();
+
+    if (!doc.exists && doc.metadata.isFromCache) {
+      // A cached "missing" is not proof the doc is missing on the server:
+      // never create (and so possibly overwrite) a balance from the cache,
+      // and don't show a fake 0 either. Same outcome as the old
+      // server-only read when offline: an error.
+      throw StateError('Coin balance unavailable offline');
+    }
 
     if (!doc.exists) {
       // Create new balance if doesn't exist
@@ -233,7 +241,14 @@ class CoinRemoteDataSource {
   /// Falls back to the hard-coded price for any product the store doesn't
   /// return, but a missing product is a store-misconfiguration signal, so it is
   /// logged loudly rather than swallowed.
+  /// Store-priced packages from the last successful store query this
+  /// session. Store prices don't change mid-session, so re-opening the shop
+  /// skips the billing round-trip.
+  static List<CoinPackage>? _sessionPackages;
+
   Future<List<CoinPackage>> getAvailablePackages() async {
+    final memo = _sessionPackages;
+    if (memo != null) return memo;
     final fallback = CoinPackages.standardPackages;
     try {
       final available = await inAppPurchase.isAvailable();
@@ -270,7 +285,7 @@ class CoinRemoteDataSource {
         for (final pd in response.productDetails) pd.id: pd,
       };
 
-      return fallback.map((pkg) {
+      final priced = fallback.map((pkg) {
         final details = byId[pkg.productId];
         if (details == null) return pkg;
         return pkg.copyWith(
@@ -279,6 +294,8 @@ class CoinRemoteDataSource {
           currency: details.currencyCode,
         );
       }).toList();
+      _sessionPackages = priced; // only real store results are memoised
+      return priced;
     } catch (e) {
       debugPrint('[CoinShop] IAP error: $e — using fallback prices');
       return fallback;
@@ -965,6 +982,30 @@ class CoinRemoteDataSource {
   /// Get active promotions
   Future<List<CoinPromotionModel>> getActivePromotions() async {
     final now = DateTime.now();
+    final nowTs = Timestamp.fromDate(now);
+    try {
+      // Bounded: not-yet-ended promotions soonest-ending first, startDate
+      // checked client-side. Needs index coinPromotions(isActive, endDate).
+      final snapshot = await _promotionsCollection
+          .where('isActive', isEqualTo: true)
+          .where('endDate', isGreaterThanOrEqualTo: nowTs)
+          .orderBy('endDate')
+          .limit(20)
+          .get();
+      return snapshot.docs
+          .where((doc) {
+            final data = doc.data() as Map<String, dynamic>?;
+            final startDate = data?['startDate'] as Timestamp?;
+            return startDate != null && startDate.compareTo(nowTs) <= 0;
+          })
+          .map(CoinPromotionModel.fromFirestore)
+          .toList();
+    } on FirebaseException catch (e) {
+      // Index not built yet -> previous (unbounded) query below.
+      if (e.code != 'failed-precondition') rethrow;
+      debugPrint('[Coins] promotions index missing, legacy query: $e');
+    }
+
     // Firestore only allows inequality on one field per query,
     // so filter startDate server-side and endDate client-side
     final snapshot = await _promotionsCollection

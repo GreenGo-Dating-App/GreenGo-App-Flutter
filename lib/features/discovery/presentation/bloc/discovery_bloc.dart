@@ -7,6 +7,7 @@ import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../gamification/domain/usecases/track_user_action.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../../matching/domain/entities/match_candidate.dart';
 import '../../data/datasources/discovery_remote_datasource.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../domain/entities/match_preferences.dart';
@@ -72,9 +73,10 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     // Store current context for prefetching
     _currentUserId = event.userId;
     _currentPreferences = event.preferences;
+    _swipedSincePaint.clear();
 
     // Always load the full queue size (20 profiles)
-    final result = await getDiscoveryStack(
+    final serverFuture = getDiscoveryStack(
       GetDiscoveryStackParams(
         userId: event.userId,
         preferences: event.preferences,
@@ -82,29 +84,65 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
       ),
     );
 
+    // Instant paint of the last server stack for these preferences (local
+    // cache only) while the server load runs. Never paints an empty stack,
+    // and only while still on the loading skeleton.
+    var painted = false;
+    final ds = discoveryDataSource;
+    if (ds != null) {
+      try {
+        final cached = await ds.cachedDiscoveryStack(
+          userId: event.userId,
+          preferences: event.preferences,
+        );
+        if (cached.isNotEmpty && state is DiscoveryLoading) {
+          emit(DiscoveryLoaded(cards: _cardsFor(cached), currentIndex: 0));
+          painted = true;
+        }
+      } catch (_) {
+        // Paint is best-effort.
+      }
+    }
+
+    final result = await serverFuture;
+
     result.fold(
-      (failure) => emit(DiscoveryError(failure.message)),
-      (candidates) {
+      (failure) {
+        // Keep the cached stack on screen rather than replacing it with an
+        // error; a later refresh retries.
+        if (!painted) emit(DiscoveryError(failure.message));
+      },
+      (fetched) {
+        // Anyone swiped on the cached cards must not come back.
+        final candidates = painted && _swipedSincePaint.isNotEmpty
+            ? fetched
+                .where((c) => !_swipedSincePaint.contains(c.profile.userId))
+                .toList()
+            : fetched;
         if (candidates.isEmpty) {
           emit(const DiscoveryStackEmpty());
         } else {
-          final cards = candidates
-              .asMap()
-              .entries
-              .map((entry) => DiscoveryCard(
-                    candidate: entry.value,
-                    position: entry.key,
-                    isFocused: entry.key == 0,
-                  ))
-              .toList();
-
+          final cards = _cardsFor(candidates);
           final usedFallback = discoveryDataSource?.lastUsedWorldwideFallback ?? false;
-          debugPrint('📱 Discovery queue loaded: ${cards.length} profiles ready (worldwide=$usedFallback)');
+          debugPrint('Discovery queue loaded: ${cards.length} profiles ready (worldwide=$usedFallback)');
           emit(DiscoveryLoaded(cards: cards, currentIndex: 0, usedWorldwideFallback: usedFallback));
         }
       },
     );
   }
+
+  /// Targets swiped while a cached stack was on screen (filtered out of the
+  /// server result that replaces it).
+  final Set<String> _swipedSincePaint = {};
+
+  static List<DiscoveryCard> _cardsFor(List<MatchCandidate> candidates) => [
+        for (var i = 0; i < candidates.length; i++)
+          DiscoveryCard(
+            candidate: candidates[i],
+            position: i,
+            isFocused: i == 0,
+          ),
+      ];
 
   /// A user was blocked anywhere — drop their card from the stack immediately so
   /// they vanish without waiting for a reload/refetch.
@@ -143,6 +181,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     DiscoverySwipeRecorded event,
     Emitter<DiscoveryState> emit,
   ) async {
+    _swipedSincePaint.add(event.targetUserId);
     await _processSwipeAction(
       userId: event.userId,
       targetUserId: event.targetUserId,
@@ -158,6 +197,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
     DiscoveryGridSwipeRecorded event,
     Emitter<DiscoveryState> emit,
   ) async {
+    _swipedSincePaint.add(event.targetUserId);
     await _processSwipeAction(
       userId: event.userId,
       targetUserId: event.targetUserId,

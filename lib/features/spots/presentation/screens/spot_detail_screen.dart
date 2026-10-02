@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -22,14 +23,20 @@ import '../bloc/spots_state.dart';
 /// - Dark theme using AppColors
 class SpotDetailScreen extends StatefulWidget {
 
-  const SpotDetailScreen({required this.spotId, super.key});
+  const SpotDetailScreen({required this.spotId, this.initialSpot, super.key});
   final String spotId;
+
+  /// The spot as already shown in the list, painted at once while the fresh
+  /// copy and its reviews load.
+  final Spot? initialSpot;
 
   @override
   State<SpotDetailScreen> createState() => _SpotDetailScreenState();
 }
 
 class _SpotDetailScreenState extends State<SpotDetailScreen> {
+  SpotDetailLoaded? _last;
+
   @override
   void initState() {
     super.initState();
@@ -53,14 +60,27 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
           }
         },
         builder: (context, state) {
+          if (state is SpotDetailLoaded) {
+            _last = state;
+            return _buildDetailContent(state.spot, state.reviews);
+          }
+
+          // Loading (first open, or the reload after a new review): keep what
+          // is known on screen — the last detail, else the list's copy.
+          final last = _last;
+          final initial = widget.initialSpot;
+          if (state is! SpotsError && last != null) {
+            return _buildDetailContent(last.spot, last.reviews);
+          }
+          if (state is! SpotsError && initial != null) {
+            return _buildDetailContent(initial, const [],
+                reviewsLoading: true);
+          }
+
           if (state is SpotsLoading) {
             return const Center(
               child: CircularProgressIndicator(color: AppColors.richGold),
             );
-          }
-
-          if (state is SpotDetailLoaded) {
-            return _buildDetailContent(state.spot, state.reviews);
           }
 
           if (state is SpotsError) {
@@ -95,7 +115,8 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
     );
   }
 
-  Widget _buildDetailContent(Spot spot, List<SpotReview> reviews) {
+  Widget _buildDetailContent(Spot spot, List<SpotReview> reviews,
+      {bool reviewsLoading = false}) {
     final l10n = AppLocalizations.of(context)!;
     return CustomScrollView(
       slivers: [
@@ -229,7 +250,8 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      l10n.spotsReviewsCount(reviews.length),
+                      l10n.spotsReviewsCount(
+                          reviewsLoading ? spot.reviewCount : reviews.length),
                       style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 18,
@@ -247,7 +269,15 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                   ],
                 ),
                 const SizedBox(height: 12),
-                if (reviews.isEmpty)
+                if (reviewsLoading)
+                  const Padding(
+                    padding: EdgeInsets.all(24),
+                    child: Center(
+                      child: CircularProgressIndicator(
+                          color: AppColors.richGold),
+                    ),
+                  )
+                else if (reviews.isEmpty)
                   Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
@@ -275,12 +305,20 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
     );
   }
 
+  /// Gallery images fill the screen width: decode at that size.
+  int _galleryWidth(BuildContext context) {
+    final mq = MediaQuery.of(context);
+    return (mq.size.width * mq.devicePixelRatio).round();
+  }
+
   Widget _buildPhotoGallery(List<String> photos) {
     if (photos.length == 1) {
-      return Image.network(
-        photos.first,
+      return CachedNetworkImage(
+        imageUrl: photos.first,
         fit: BoxFit.cover,
-        errorBuilder: (_, __, ___) => Container(
+        memCacheWidth: _galleryWidth(context),
+        placeholder: (_, __) => Container(color: AppColors.backgroundInput),
+        errorWidget: (_, __, ___) => Container(
           color: AppColors.backgroundInput,
           child: const Center(
             child: Icon(Icons.image_not_supported_outlined,
@@ -296,10 +334,13 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
         return Stack(
           fit: StackFit.expand,
           children: [
-            Image.network(
-              photos[index],
+            CachedNetworkImage(
+              imageUrl: photos[index],
               fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Container(
+              memCacheWidth: _galleryWidth(context),
+              placeholder: (_, __) =>
+                  Container(color: AppColors.backgroundInput),
+              errorWidget: (_, __, ___) => Container(
                 color: AppColors.backgroundInput,
                 child: const Center(
                   child: Icon(Icons.image_not_supported_outlined,
@@ -384,7 +425,10 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                 radius: 18,
                 backgroundColor: AppColors.backgroundInput,
                 backgroundImage: review.userPhotoUrl != null
-                    ? NetworkImage(review.userPhotoUrl!)
+                    ? ResizeImage.resizeIfNeeded(
+                        (36 * MediaQuery.of(context).devicePixelRatio).round(),
+                        null,
+                        CachedNetworkImageProvider(review.userPhotoUrl!))
                     : null,
                 child: review.userPhotoUrl == null
                     ? const Icon(Icons.person,

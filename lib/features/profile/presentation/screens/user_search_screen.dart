@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -326,7 +327,11 @@ class _UserSearchResultCard extends StatelessWidget {
           radius: 28,
           backgroundColor: AppColors.backgroundDark,
           backgroundImage: profile.photoUrls.isNotEmpty
-              ? NetworkImage(profile.photoUrls.first)
+              // Disk-cached + decoded at ~2x the 56px avatar.
+              ? ResizeImage(
+                  CachedNetworkImageProvider(profile.photoUrls.first),
+                  width: 112,
+                  policy: ResizeImagePolicy.fit)
               : null,
           child: profile.photoUrls.isEmpty
               ? const Icon(Icons.person, color: AppColors.textTertiary)

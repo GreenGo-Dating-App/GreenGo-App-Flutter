@@ -101,13 +101,15 @@ export async function computeUserStats(userId: string): Promise<Record<string, a
   }
 
   // 6. Achievements unlocked
-  const achieveCount = await db.collection('user_achievements')
+  // achievement_progress / challenge_progress are the collections the app
+  // writes; user_achievements / user_challenges are never written (always 0).
+  const achieveCount = await db.collection('achievement_progress')
     .where('userId', '==', userId)
     .where('isUnlocked', '==', true)
     .count().get();
 
   // 7. Challenges completed
-  const challengeCount = await db.collection('user_challenges')
+  const challengeCount = await db.collection('challenge_progress')
     .where('userId', '==', userId)
     .where('isCompleted', '==', true)
     .count().get();

@@ -7,6 +7,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/data/datasources/external_events_pager.dart';
+import '../../../events/data/datasources/external_events_preloader.dart';
 import '../../../events/domain/entities/external_event.dart';
 import '../../../events/domain/feed_interleave.dart';
 import '../../../events/presentation/widgets/attraction_menu_dialog.dart';
@@ -14,6 +15,7 @@ import '../../../events/presentation/widgets/external_event_tiles.dart';
 import '../../../events/presentation/widgets/interleaved_feed_view.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
+import '../experience_first_page_cache.dart';
 import '../screens/experience_detail_screen.dart';
 import 'experience_widgets.dart';
 
@@ -98,29 +100,75 @@ class _MergedExperiencesFeedState extends State<MergedExperiencesFeed> {
         1000;
   }
 
+  static const ExperienceFirstPageCache _firstPages = ExperienceFirstPageCache();
+
+  /// LastResultCache key of the community side's first page (unsearched
+  /// view only), bucketed to the viewer's ~5km geohash cell.
+  String get _communityCacheKey {
+    final cell = _hasLocation
+        ? GeoQuery.encode(widget.userLat!, widget.userLng!, 5)
+        : 'none';
+    return 'uexp_all_$cell';
+  }
+
   FeedSource<_ExpItem> _community() {
     final pager = di.sl<UserExperiencesRepository>().communityFeed(
           lat: widget.userLat,
           lng: widget.userLng,
           query: _query,
         );
-    return PagerFeedSource<UserExperience, _ExpItem>(
-      hasMore: () => pager.hasMore,
+    _ExpItem map(UserExperience e) => _ExpItem.community(e, _km(e.lat, e.lng));
+    if (_query.isNotEmpty) {
+      return PagerFeedSource<UserExperience, _ExpItem>(
+        hasMore: () => pager.hasMore,
+        next: pager.next,
+        map: map,
+      );
+    }
+    final key = _communityCacheKey;
+    return CachedFirstPageFeedSource<UserExperience, _ExpItem>(
+      // Last session's first page, from the local cache (instant).
+      cached: () => _firstPages.load(key),
+      first: () async {
+        final page = await pager.next();
+        unawaited(_firstPages.save(key, page));
+        return page;
+      },
       next: pager.next,
-      map: (e) => _ExpItem.community(e, _km(e.lat, e.lng)),
+      hasMore: () => pager.hasMore,
+      id: (e) => e.id,
+      map: map,
     );
   }
 
   FeedSource<_ExpItem> _partner() {
-    final pager = ExternalEventsPager(
+    var pager = ExternalEventsPager(
       source: 'viator',
       sort: widget.sort,
       userLat: widget.userLat,
       userLng: widget.userLng,
     );
-    return PagerFeedSource<ExternalEvent, _ExpItem>(
+    return CachedFirstPageFeedSource<ExternalEvent, _ExpItem>(
+      // Last session's first page of this view, from the local cache.
+      cached: pager.loadCached,
+      first: () async {
+        // The background preloader warms exactly the distance view: adopt
+        // its pager + first page instead of re-reading them.
+        if (widget.sort == 'distance') {
+          final warm = await ExternalEventsPreloader.instance
+              .take('viator', lat: widget.userLat, lng: widget.userLng);
+          if (warm != null) {
+            pager = warm.pager;
+            return warm.items;
+          }
+        }
+        final page = await pager.next();
+        unawaited(pager.saveFirstPage(page));
+        return page;
+      },
+      next: () => pager.next(),
       hasMore: () => pager.hasMore,
-      next: pager.next,
+      id: (e) => e.id,
       map: (e) => _ExpItem.partner(e, _km(e.lat, e.lng)),
     );
   }

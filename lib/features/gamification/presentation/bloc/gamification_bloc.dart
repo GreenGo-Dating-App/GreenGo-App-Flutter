@@ -78,6 +78,9 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
   final GamificationRepository repository;
   final CoinRepository coinRepository;
 
+  /// Monotonic id of the latest leaderboard request (see _onLoadLeaderboard).
+  int _leaderboardRequestId = 0;
+
   // ===== Achievement Event Handlers =====
 
   Future<void> _onLoadUserAchievements(
@@ -267,7 +270,11 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     LoadLeaderboard event,
     Emitter<GamificationState> emit,
   ) async {
-    emit(state.copyWith(leaderboardLoading: true, leaderboardError: null));
+    // Tag the request: a quick Global/Regional or period switch fires several
+    // loads concurrently and an older, slower response must not overwrite
+    // the board the user is now looking at.
+    final requestId = ++_leaderboardRequestId;
+    emit(state.copyWith(leaderboardLoading: true, clearLeaderboardError: true));
 
     final params = GetLeaderboardParams(
       userId: event.userId,
@@ -278,6 +285,7 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     );
 
     final result = await getLeaderboard(params);
+    if (requestId != _leaderboardRequestId) return;
 
     result.fold(
       (failure) => emit(state.copyWith(
@@ -287,6 +295,7 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
       (data) => emit(state.copyWith(
         leaderboardLoading: false,
         leaderboardData: data,
+        clearLeaderboardError: true,
       )),
     );
   }
@@ -359,7 +368,7 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
     LoadDailyChallenges event,
     Emitter<GamificationState> emit,
   ) async {
-    emit(state.copyWith(challengesLoading: true, challengesError: null));
+    emit(state.copyWith(challengesLoading: true, clearChallengesError: true));
 
     final result = await getDailyChallenges(event.userId);
 
@@ -371,6 +380,7 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
       (data) => emit(state.copyWith(
         challengesLoading: false,
         challengesData: data,
+        clearChallengesError: true,
       )),
     );
   }

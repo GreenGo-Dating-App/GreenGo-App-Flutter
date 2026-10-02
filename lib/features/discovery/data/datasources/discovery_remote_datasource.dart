@@ -1,8 +1,10 @@
+import 'dart:async';
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/utils/conversation_queries.dart';
 import 'package:flutter/foundation.dart';
 
+import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../matching/data/datasources/matching_remote_datasource.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
@@ -42,6 +44,20 @@ abstract class DiscoveryRemoteDataSource {
     required String userId,
     required Profile viewer,
     int limit = 15,
+  });
+
+  /// The user's latest swipe action per target (`targetUserId → actionType`)
+  /// over the last 90 days — the same memoised read the stack uses, so
+  /// screens that need it (grid overlays) do not read the swipes again.
+  Future<Map<String, String>> recentSwipeActions(String userId);
+
+  /// The stack last built from the SERVER for these [preferences], rebuilt
+  /// from the LOCAL Firestore cache only (no network) for an instant first
+  /// paint. Empty when nothing usable is cached. Always follow it with
+  /// [getDiscoveryStack] and let that replace it.
+  Future<List<MatchCandidate>> cachedDiscoveryStack({
+    required String userId,
+    required MatchPreferences preferences,
   });
 
   /// Clears the in-memory discovery cache for a user
@@ -169,6 +185,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     _cache.clear();
     _nearbyFallback = null;
     _swipeMemo = null;
+    _swipeInflight = null;
     _cachedUserProfile = null;
     _cachedUserProfileId = null;
     _cachedAdminCandidate = null;
@@ -195,6 +212,67 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       '|${p.preferredInterests.join(',')}'
       '|${p.dealBreakers.join(',')}'
       '|${p.preferredOrientations.join(',')}';
+
+  /// [LastResultCache] key per preference set (stable FNV-1a of the hash, so
+  /// it survives restarts - String.hashCode is not guaranteed to).
+  static String _stackCacheKey(String prefHash) {
+    var h = 0x811c9dc5;
+    for (final c in prefHash.codeUnits) {
+      h = ((h ^ c) * 0x01000193) & 0xffffffff;
+    }
+    return 'discovery_stack_v1_${h.toRadixString(16)}';
+  }
+
+  @override
+  Future<List<MatchCandidate>> cachedDiscoveryStack({
+    required String userId,
+    required MatchPreferences preferences,
+  }) async {
+    try {
+      final profiles = firestore.collection('profiles');
+      Future<Map<String, dynamic>?> viewerFromCache() async {
+        try {
+          final d = await profiles
+              .doc(userId)
+              .get(const GetOptions(source: Source.cache));
+          return d.data();
+        } catch (_) {
+          return null;
+        }
+      }
+
+      final results = await Future.wait<Object?>([
+        LastResultCache.loadDocs(
+            _stackCacheKey(_preferencesHash(preferences)), profiles),
+        viewerFromCache(),
+        blockedUsersService.getBlockedUserIds(userId),
+      ]);
+      final docs = results[0] as List<DocumentSnapshot<Map<String, dynamic>>>;
+      final viewer = results[1] as Map<String, dynamic>?;
+      final blocked = results[2] as Set<String>;
+      if (docs.isEmpty || viewer == null) return const [];
+      final kept = docs
+          .where((d) =>
+              d.id != userId && !blocked.contains(d.id) && d.data() != null)
+          .toList();
+      if (kept.isEmpty) return const [];
+      // The ids were saved AFTER every filter ran, in display order; this only
+      // re-parses and re-scores them (age bounds open, no shuffle) and still
+      // drops suspended/banned/deleted accounts.
+      return buildCandidatesOffThread(CandidateBuildRequest(
+        userId: userId,
+        viewerData: viewer,
+        docIds: [for (final d in kept) d.id],
+        docData: [for (final d in kept) d.data()!],
+        minAge: 0,
+        maxAge: 1000,
+        shuffle: false,
+      ));
+    } catch (e) {
+      debugPrint('[Discovery] Cached stack unavailable: $e');
+      return const [];
+    }
+  }
 
   void _storeStack(String key, List<MatchCandidate> result, String prefHash) {
     _cache.remove(key);
@@ -541,6 +619,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     // Store in in-memory cache (keyed by userId + preferences hash)
     if (primary) {
       _storeStack(cacheKey, result, prefHash);
+      // Ids for the next cold open's instant paint ([cachedDiscoveryStack]).
+      unawaited(LastResultCache.saveIds(
+          _stackCacheKey(prefHash), result.map((c) => c.profile.userId)));
     } else {
       _nearbyFallback = (userId, _CachedStack(result, prefHash));
     }
@@ -817,6 +898,12 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     return people;
   }
 
+  @override
+  Future<Map<String, String>> recentSwipeActions(String userId) async {
+    final history = await _getSwipeHistoryWithTypes(userId);
+    return {for (final e in history.entries) e.key: e.value.actionType};
+  }
+
   /// Get swipe history with action types and timestamps
   /// Only fetches last 90 days (nope cooldown) to reduce reads at scale
   Future<Map<String, _SwipeRecord>> _getSwipeHistoryWithTypes(
@@ -829,6 +916,25 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         DateTime.now().difference(memo.$2) < _CachedStack.ttl) {
       return memo.$3;
     }
+    // Concurrent callers (the stack load and the grid overlays both start on
+    // screen open) share ONE read instead of each issuing their own.
+    final inflight = _swipeInflight;
+    if (inflight != null && inflight.$1 == userId) return inflight.$2;
+    final future = _readSwipeHistory(userId, limit);
+    _swipeInflight = (userId, future);
+    try {
+      return await future;
+    } finally {
+      if (identical(_swipeInflight?.$2, future)) _swipeInflight = null;
+    }
+  }
+
+  (String, Future<Map<String, _SwipeRecord>>)? _swipeInflight;
+
+  Future<Map<String, _SwipeRecord>> _readSwipeHistory(
+    String userId,
+    int limit,
+  ) async {
     final ninetyDaysAgo = DateTime.now().subtract(const Duration(days: 90));
     final querySnapshot = await firestore
         .collection('swipes')
@@ -975,6 +1081,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     final model = SwipeActionModel.fromEntity(action);
     await firestore.collection('swipes').add(model.toFirestore());
     _swipeMemo = null; // history changed
+    _swipeInflight = null;
 
     // If it's a like or super like, send notification and check for match
     if (action.isPositive) {
@@ -1205,6 +1312,10 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   // "new match" notifications. The match doc + conversation are created directly
   // in checkForMatch; connecting happens through the Exchange, not a push.
 
+  /// Matches read per side (newest first). Bounded so a heavy user never
+  /// pulls hundreds of match docs + profiles just to open the list.
+  static const int _matchesPageSize = 100;
+
   @override
   Future<List<Match>> getMatches({
     required String userId,
@@ -1212,37 +1323,46 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
   }) async {
     debugPrint('[getMatches] Loading matches for userId: $userId, activeOnly: $activeOnly');
 
-    // Query matches where user is userId1
-    final Query query1 = firestore
-        .collection('matches')
-        .where('userId1', isEqualTo: userId)
-        .limit(500);
+    // Newest first, bounded, both sides + the block list in ONE parallel
+    // round trip (they used to be three sequential reads of up to 500 docs).
+    // Indexes: matches (userId1, matchedAt desc) / (userId2, matchedAt desc).
+    // If the ordered query is rejected (index missing on a project), fall back
+    // to the previous unordered bounded read; we sort client-side anyway.
+    Future<QuerySnapshot<Map<String, dynamic>>> side(String field) async {
+      try {
+        return await firestore
+            .collection('matches')
+            .where(field, isEqualTo: userId)
+            .orderBy('matchedAt', descending: true)
+            .limit(_matchesPageSize)
+            .get();
+      } catch (e) {
+        debugPrint('[getMatches] ordered query failed ($e) — unordered fallback');
+        return firestore
+            .collection('matches')
+            .where(field, isEqualTo: userId)
+            .limit(500)
+            .get();
+      }
+    }
 
-    // Query matches where user is userId2
-    final Query query2 = firestore
-        .collection('matches')
-        .where('userId2', isEqualTo: userId)
-        .limit(500);
-
-    // NOTE: We do NOT filter isActive in Firestore query because legacy matches
-    // may not have the isActive field at all (null != true). Instead we filter
-    // client-side after fetching.
-    // NOTE: No orderBy here — avoids requiring composite indexes.
-    // We sort client-side after combining both queries.
-
-    // Execute both queries
-    final results1 = await query1.get();
-    final results2 = await query2.get();
-
-    // Get blocked user IDs to filter out blocked matches
-    final blockedUserIds = await blockedUsersService.getBlockedUserIds(userId);
+    // NOTE: isActive is NOT filtered in the query because legacy matches may
+    // not have the field at all (null != true); it is filtered client-side.
+    final fetched = await Future.wait<Object>([
+      side('userId1'),
+      side('userId2'),
+      blockedUsersService.getBlockedUserIds(userId),
+    ]);
+    final results1 = fetched[0] as QuerySnapshot<Map<String, dynamic>>;
+    final results2 = fetched[1] as QuerySnapshot<Map<String, dynamic>>;
+    final blockedUserIds = fetched[2] as Set<String>;
 
     // Combine and convert
     final matches = <Match>[];
 
     for (final doc in results1.docs) {
-      final data = doc.data() as Map<String, dynamic>?;
-      if (activeOnly && data != null) {
+      final data = doc.data();
+      if (activeOnly) {
         // Skip globally deactivated matches (delete for both)
         if (data['isActive'] == false) continue;
         // Skip matches deactivated for this user (delete for me)
@@ -1256,8 +1376,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     }
 
     for (final doc in results2.docs) {
-      final data = doc.data() as Map<String, dynamic>?;
-      if (activeOnly && data != null) {
+      final data = doc.data();
+      if (activeOnly) {
         if (data['isActive'] == false) continue;
         final deactivatedFor = data['deactivatedFor'] as Map<String, dynamic>?;
         if (deactivatedFor != null && deactivatedFor[userId] == true) continue;
@@ -1510,6 +1630,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     if (querySnapshot.docs.isNotEmpty) {
       await querySnapshot.docs.first.reference.delete();
       _swipeMemo = null; // history changed
+      _swipeInflight = null;
     }
   }
 }

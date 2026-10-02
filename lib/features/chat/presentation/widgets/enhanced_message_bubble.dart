@@ -1,5 +1,6 @@
 import 'dart:ui' as ui;
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -287,13 +288,13 @@ class EnhancedMessageBubble extends StatelessWidget {
                       // Blurred thumbnail
                       ImageFiltered(
                         imageFilter: ui.ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-                        child: Image.network(
-                          message.content,
+                        child: CachedNetworkImage(
+                          imageUrl: message.content,
                           width: 200,
                           height: 200,
                           fit: BoxFit.cover,
-                          cacheWidth: 200,
-                          errorBuilder: (context, error, stackTrace) => Container(
+                          memCacheWidth: 200,
+                          errorWidget: (context, _, __) => Container(
                             color: AppColors.backgroundDark,
                             child: const Icon(
                               Icons.broken_image,
@@ -356,11 +357,12 @@ class EnhancedMessageBubble extends StatelessWidget {
               if (message.metadata?['thumbnailUrl'] != null)
                 ClipRRect(
                   borderRadius: BorderRadius.circular(AppDimensions.radiusS),
-                  child: Image.network(
-                    message.metadata!['thumbnailUrl'] as String,
+                  child: CachedNetworkImage(
+                    imageUrl: message.metadata!['thumbnailUrl'] as String,
                     width: 200,
                     height: 200,
                     fit: BoxFit.cover,
+                    memCacheWidth: 400,
                   ),
                 ),
               // Play button
@@ -433,12 +435,14 @@ class EnhancedMessageBubble extends StatelessWidget {
       case MessageType.sticker:
         return ClipRRect(
           borderRadius: BorderRadius.circular(AppDimensions.radiusS),
-          child: Image.network(
-            message.content,
+          child: CachedNetworkImage(
+            imageUrl: message.content,
             width: 150,
             height: 150,
             fit: BoxFit.cover,
-            errorBuilder: (context, error, stackTrace) => Container(
+            // Animated GIFs/stickers decode every frame at this size.
+            memCacheWidth: 300,
+            errorWidget: (context, _, __) => Container(
               width: 150,
               height: 150,
               color: AppColors.backgroundDark,
@@ -708,16 +712,14 @@ class EnhancedMessageBubble extends StatelessWidget {
             child: InteractiveViewer(
               minScale: 0.5,
               maxScale: 4.0,
-              child: Image.network(
-                imageUrl,
+              // Full-screen viewer: full resolution, but disk-cached.
+              child: CachedNetworkImage(
+                imageUrl: imageUrl,
                 fit: BoxFit.contain,
-                loadingBuilder: (context, child, progress) {
-                  if (progress == null) return child;
-                  return const Center(
-                    child: CircularProgressIndicator(color: AppColors.richGold),
-                  );
-                },
-                errorBuilder: (context, error, stackTrace) => const Center(
+                placeholder: (context, _) => const Center(
+                  child: CircularProgressIndicator(color: AppColors.richGold),
+                ),
+                errorWidget: (context, _, __) => const Center(
                   child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
                 ),
               ),

@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
 
@@ -27,17 +30,49 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
   Map<String, int> _stats = {};
   bool _isLoadingStats = true;
 
+  /// Newest tickets per tab (bounded; the counts come from getSupportStats).
+  static const int _ticketsPerTab = 50;
+
+  static const List<List<String>> _tabStatuses = [
+    ['open'],
+    ['assigned', 'inProgress'],
+    ['waitingOnUser'],
+    ['resolved', 'closed'],
+  ];
+
+  /// One stream per tab, created once. Building them inside build() made
+  /// every rebuild (e.g. the stats refresh) tear down and re-open the
+  /// listener, re-reading the whole unbounded list.
+  late final List<Stream<QuerySnapshot>> _tabStreams = [
+    for (final statuses in _tabStatuses)
+      _firestore
+          .collection('conversations')
+          .where('conversationType', isEqualTo: 'support')
+          .where('supportTicketStatus', whereIn: statuses)
+          .orderBy('createdAt', descending: true)
+          .limit(_ticketsPerTab)
+          .snapshots(),
+  ];
+
+  final UserDirectoryService _directory = UserDirectoryService.instance;
+
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 4, vsync: this);
+    _directory.addListener(_onDirectoryChanged);
     _loadStats();
   }
 
   @override
   void dispose() {
+    _directory.removeListener(_onDirectoryChanged);
     _tabController.dispose();
     super.dispose();
+  }
+
+  void _onDirectoryChanged() {
+    if (mounted) setState(() {});
   }
 
   Future<void> _loadStats() async {
@@ -115,10 +150,8 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
             child: TabBarView(
               controller: _tabController,
               children: [
-                _buildTicketsList(['open']),
-                _buildTicketsList(['assigned', 'inProgress']),
-                _buildTicketsList(['waitingOnUser']),
-                _buildTicketsList(['resolved', 'closed']),
+                for (var i = 0; i < _tabStatuses.length; i++)
+                  _buildTicketsList(_tabStatuses[i], _tabStreams[i]),
               ],
             ),
           ),
@@ -163,14 +196,10 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
     );
   }
 
-  Widget _buildTicketsList(List<String> statuses) {
+  Widget _buildTicketsList(
+      List<String> statuses, Stream<QuerySnapshot> stream) {
     return StreamBuilder<QuerySnapshot>(
-      stream: _firestore
-          .collection('conversations')
-          .where('conversationType', isEqualTo: 'support')
-          .where('supportTicketStatus', whereIn: statuses)
-          .orderBy('createdAt', descending: true)
-          .snapshots(),
+      stream: stream,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Center(
@@ -188,6 +217,20 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
         }
 
         final tickets = snapshot.data?.docs ?? [];
+
+        // Resolve every requester's name in one batched directory lookup
+        // (was one profile read per ticket card). The directory notifies
+        // when names land, which rebuilds this list.
+        final unresolved = <String>[
+          for (final t in tickets)
+            if ((t.data() as Map<String, dynamic>?)?['userId1']
+                case final String uid
+                when uid.isNotEmpty && !_directory.isResolved(uid))
+              uid,
+        ];
+        if (unresolved.isNotEmpty) {
+          unawaited(_directory.resolve(unresolved));
+        }
 
         if (tickets.isEmpty) {
           return Center(
@@ -236,14 +279,18 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
     final createdAt = data['createdAt'] as Timestamp?;
     final agentId = data['supportAgentId'] as String?;
 
-    return FutureBuilder<DocumentSnapshot>(
-      future: userId != null
-          ? _firestore.collection('profiles').doc(userId).get()
-          : null,
-      builder: (context, profileSnapshot) {
-        final userName = profileSnapshot.data?.data() != null
-            ? (profileSnapshot.data!.data() as Map<String, dynamic>)['displayName'] as String? ?? AppLocalizations.of(context)!.adminUnknown
-            : AppLocalizations.of(context)!.adminLoading;
+    return Builder(
+      builder: (context) {
+        final l10n = AppLocalizations.of(context)!;
+        final String userName;
+        if (userId == null || userId.isEmpty) {
+          userName = l10n.adminUnknown;
+        } else if (!_directory.isResolved(userId)) {
+          userName = l10n.adminLoading;
+        } else {
+          final name = _directory.nameFor(userId);
+          userName = name.isNotEmpty ? name : l10n.adminUnknown;
+        }
 
         return Card(
           color: AppColors.backgroundCard,

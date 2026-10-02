@@ -1,9 +1,11 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
@@ -15,12 +17,13 @@ import '../../../profile/domain/repositories/profile_repository.dart';
 /// "contact", or saved/RSVP'd one of the business's events → "saved_event").
 ///
 /// Reads are deliberately cheap and index-free so this scales to millions:
-///   * A single-collection read of `business_leads/{businessId}/leads`
-///     `.limit(100)` (no `.orderBy` → no single-field index needed at all),
-///     then sorted CLIENT side by `updatedAt` newest-first.
-///   * The acting user's minimal profile (name + avatar) is loaded best-effort
-///     in parallel via `profiles/{uid}` `get()`; a failed/missing profile just
-///     falls back to a neutral placeholder so one bad doc never breaks the list.
+///   * `business_leads/{businessId}/leads` ordered by `updatedAt` newest-first
+///     (single-field index), [_BusinessLeadsScreenState._pageSize] per page
+///     with a cursor; the original unordered `.limit(100)` read is the
+///     fallback if that query fails.
+///   * Names + avatars come from the batched, cached [UserDirectoryService]
+///     after the rows paint; a failed/missing profile falls back to a neutral
+///     placeholder so one bad doc never breaks the list.
 class BusinessLeadsScreen extends StatefulWidget {
   const BusinessLeadsScreen({required this.businessId, super.key});
 
@@ -32,64 +35,122 @@ class BusinessLeadsScreen extends StatefulWidget {
 }
 
 class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
-  late Future<List<_Lead>> _leadsFuture;
+  static const int _pageSize = 30;
+
+  final _scroll = ScrollController();
+  final List<_Lead> _leads = [];
+  final Set<String> _seen = {};
+  DocumentSnapshot<Map<String, dynamic>>? _cursor;
+  bool _loading = false;
+  bool _done = false;
+  bool _firstDone = false;
+  bool _failed = false;
+
+  /// Bumped by refresh so a stale page never lands in the new list.
+  int _gen = 0;
+
+  CollectionReference<Map<String, dynamic>> get _col => FirebaseFirestore
+      .instance
+      .collection('business_leads')
+      .doc(widget.businessId)
+      .collection('leads');
 
   @override
   void initState() {
     super.initState();
-    _leadsFuture = _loadLeads();
+    _scroll.addListener(_onScroll);
+    _loadMore();
   }
 
-  Future<List<_Lead>> _loadLeads() async {
-    // Single-collection read, no orderBy → no index required. Bounded to 100.
-    final snap = await FirebaseFirestore.instance
-        .collection('business_leads')
-        .doc(widget.businessId)
-        .collection('leads')
-        .limit(100)
-        .get();
+  @override
+  void dispose() {
+    _scroll.dispose();
+    super.dispose();
+  }
 
-    final leads = snap.docs
-        .map((d) => _Lead.fromDoc(d.id, d.data()))
-        .toList()
-      // Newest interaction first (client-side sort → no composite index).
-      ..sort((a, b) {
-        final at = a.updatedAt;
-        final bt = b.updatedAt;
-        if (at == null && bt == null) return 0;
-        if (at == null) return 1;
-        if (bt == null) return -1;
-        return bt.compareTo(at);
-      });
+  void _onScroll() {
+    if (!_scroll.hasClients || _loading || _done) return;
+    if (_scroll.position.maxScrollExtent - _scroll.position.pixels < 400) {
+      _loadMore();
+    }
+  }
 
-    // Name + avatar hydration via the shared ProfileRepository (the same,
-    // reliable path the rest of the app uses) — more robust than a raw doc read.
-    await Future.wait(leads.map((lead) async {
-      try {
-        final result = await di.sl<ProfileRepository>().getProfile(lead.uid);
-        final profile = result.fold((f) {
-          debugPrint('[Leads] profile load failed for ${lead.uid}: ${f.message}');
-          return null;
-        }, (p) => p);
-        if (profile != null) {
-          final name = profile.displayName.trim();
-          lead.displayName = name.isNotEmpty ? name : null;
-          if (profile.photoUrls.isNotEmpty) {
-            lead.avatarUrl = profile.photoUrls.first;
-          }
-        }
-      } catch (e) {
-        debugPrint('[Leads] hydration error for ${lead.uid}: $e');
+  /// Newest interaction first, a page at a time (single-field `updatedAt`
+  /// index — every lead write sets it). The list paints as soon as a page
+  /// arrives; names/avatars fill in from the batched, cached
+  /// [UserDirectoryService] instead of one full profile read per row.
+  Future<void> _loadMore() async {
+    if (_loading || _done) return;
+    final gen = _gen;
+    setState(() => _loading = true);
+    List<_Lead> page;
+    try {
+      Query<Map<String, dynamic>> q =
+          _col.orderBy('updatedAt', descending: true).limit(_pageSize);
+      if (_cursor != null) q = q.startAfterDocument(_cursor!);
+      final snap = await q.get();
+      if (snap.docs.isNotEmpty) _cursor = snap.docs.last;
+      _done = snap.docs.length < _pageSize;
+      page = snap.docs.map((d) => _Lead.fromDoc(d.id, d.data())).toList();
+    } catch (e) {
+      if (gen != _gen) return;
+      if (_leads.isNotEmpty) {
+        // Keep what is shown; a later scroll retries.
+        if (mounted) setState(() => _loading = false);
+        return;
       }
-    }));
-
-    return leads;
+      // First page failed: the original bounded, unordered read, sorted here.
+      try {
+        final snap = await _col.limit(100).get();
+        page = snap.docs.map((d) => _Lead.fromDoc(d.id, d.data())).toList()
+          ..sort((a, b) {
+            final at = a.updatedAt;
+            final bt = b.updatedAt;
+            if (at == null && bt == null) return 0;
+            if (at == null) return 1;
+            if (bt == null) return -1;
+            return bt.compareTo(at);
+          });
+        _done = true;
+      } catch (e) {
+        debugPrint('[Leads] load failed: $e');
+        if (!mounted || gen != _gen) return;
+        setState(() {
+          _loading = false;
+          _firstDone = true;
+          _failed = true;
+          _done = true;
+        });
+        return;
+      }
+    }
+    if (!mounted || gen != _gen) return;
+    setState(() {
+      _leads.addAll(page.where((l) => _seen.add(l.uid)));
+      _loading = false;
+      _firstDone = true;
+      _failed = false;
+    });
+    final ids = page.map((l) => l.uid).toList();
+    if (ids.isNotEmpty) UserDirectoryService.instance.resolve(ids);
+    // A page that doesn't fill the screen can't be scrolled: fetch the next.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || _done || !_scroll.hasClients) return;
+      if (_scroll.position.maxScrollExtent <= 0) _loadMore();
+    });
   }
 
   Future<void> _refresh() async {
-    final future = _loadLeads();
-    setState(() => _leadsFuture = future);
-    await future;
+    setState(() {
+      _gen++;
+      _leads.clear();
+      _seen.clear();
+      _cursor = null;
+      _done = false;
+      _loading = false;
+      _failed = false;
+    });
+    await _loadMore();
   }
 
   @override
@@ -113,32 +174,31 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
           ),
         ),
       ),
-      body: FutureBuilder<List<_Lead>>(
-        future: _leadsFuture,
-        builder: (context, snap) {
-          if (snap.connectionState == ConnectionState.waiting) {
-            return _loading();
-          }
-          if (snap.hasError) {
-            return _errorState();
-          }
-          final leads = snap.data ?? const <_Lead>[];
-          if (leads.isEmpty) {
-            return _emptyState(l10n.businessLeadsEmpty);
-          }
-          return RefreshIndicator(
-            color: AppColors.richGold,
-            backgroundColor: AppColors.backgroundCard,
-            onRefresh: _refresh,
-            child: ListView.separated(
-              physics: const AlwaysScrollableScrollPhysics(),
-              padding: const EdgeInsets.all(AppDimensions.paddingL),
-              itemCount: leads.length,
-              separatorBuilder: (_, __) => const SizedBox(height: 12),
-              itemBuilder: (_, i) => _leadTile(leads[i]),
-            ),
-          );
-        },
+      body: _buildBody(l10n),
+    );
+  }
+
+  Widget _buildBody(AppLocalizations l10n) {
+    if (!_firstDone) return _loadingIndicator();
+    if (_failed && _leads.isEmpty) return _errorState();
+    if (_leads.isEmpty) return _emptyState(l10n.businessLeadsEmpty);
+    final showLoader = !_done;
+    return RefreshIndicator(
+      color: AppColors.richGold,
+      backgroundColor: AppColors.backgroundCard,
+      onRefresh: _refresh,
+      child: ListView.separated(
+        controller: _scroll,
+        physics: const AlwaysScrollableScrollPhysics(),
+        padding: const EdgeInsets.all(AppDimensions.paddingL),
+        itemCount: _leads.length + (showLoader ? 1 : 0),
+        separatorBuilder: (_, __) => const SizedBox(height: 12),
+        itemBuilder: (_, i) => i >= _leads.length
+            ? _loadingIndicator()
+            : ListenableBuilder(
+                listenable: UserDirectoryService.instance,
+                builder: (_, __) => _leadTile(_leads[i]),
+              ),
       ),
     );
   }
@@ -150,9 +210,11 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
         isContact ? l10n.businessLeadContact : l10n.businessLeadSavedEvent;
     // Never show the raw uid — fall back to a neutral label if the name is
     // unavailable (e.g. a deleted profile or a transient load failure).
-    final name = (lead.displayName?.isNotEmpty ?? false)
-        ? lead.displayName!
-        : l10n.chatUnknown;
+    final brief = UserDirectoryService.instance.cached(lead.uid);
+    final resolvedName = brief?.name.trim() ?? '';
+    final name = resolvedName.isNotEmpty ? resolvedName : l10n.chatUnknown;
+    final avatarUrl =
+        (brief?.photoUrl?.isNotEmpty ?? false) ? brief!.photoUrl : null;
 
     return InkWell(
       borderRadius: BorderRadius.circular(AppDimensions.radiusM),
@@ -173,12 +235,18 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.richGold.withOpacity(0.12),
-              image: lead.avatarUrl != null
+              image: avatarUrl != null
                   ? DecorationImage(
-                      image: NetworkImage(lead.avatarUrl!), fit: BoxFit.cover)
+                      // Disk-cached, decoded at avatar size (48dp).
+                      image: ResizeImage.resizeIfNeeded(
+                          (48 * MediaQuery.of(context).devicePixelRatio)
+                              .round(),
+                          null,
+                          CachedNetworkImageProvider(avatarUrl)),
+                      fit: BoxFit.cover)
                   : null,
             ),
-            child: lead.avatarUrl == null
+            child: avatarUrl == null
                 ? const Icon(Icons.person, color: AppColors.richGold)
                 : null,
           ),
@@ -262,7 +330,7 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
     );
   }
 
-  Widget _loading() => const Center(
+  Widget _loadingIndicator() => const Center(
         child: SizedBox(
           width: 26,
           height: 26,
@@ -323,8 +391,7 @@ class _BusinessLeadsScreenState extends State<BusinessLeadsScreen> {
       '${d.day}/${d.month}/${d.year}';
 }
 
-/// Lightweight mutable view model for a lead row (name/avatar are hydrated
-/// best-effort after the initial list read).
+/// View model for a lead row (name/avatar come from [UserDirectoryService]).
 class _Lead {
   _Lead({
     required this.uid,
@@ -337,9 +404,6 @@ class _Lead {
   final String type;
   final String? eventId;
   final DateTime? updatedAt;
-
-  String? displayName;
-  String? avatarUrl;
 
   factory _Lead.fromDoc(String id, Map<String, dynamic> d) {
     DateTime? ts(dynamic v) => v is Timestamp ? v.toDate() : null;

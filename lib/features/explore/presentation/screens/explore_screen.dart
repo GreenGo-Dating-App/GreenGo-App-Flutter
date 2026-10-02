@@ -277,6 +277,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // Likewise the user's own events (shared by My next events, Happening
     // soon and the Near-you de-duplication).
     _userEventsFuture = null;
+    if (forceRefresh) {
+      // Pull-to-refresh reaches the server, not the shared session memos.
+      EventsRemoteDataSourceImpl(firestore: _firestore)
+        ..invalidateUserEvents(widget.userId)
+        ..invalidateNearbyCommunity();
+    }
     // Pull-to-refresh must re-read WHERE THE USER IS before reloading anything,
     // otherwise every section below is recomputed against a stale stored
     // position (distances, people nearby, country filtering).
@@ -1308,22 +1314,37 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final blocked = await _blockedIds();
 
     // Visible speakers of [lang] (bounded: 60 profile docs per language).
+    // Speakers in the user's own country first (index profiles(languages
+    // CONTAINS, location.country)); when that query fails (index building)
+    // or finds fewer than a row's worth, the original worldwide query.
+    final country = _countryName;
     Future<Map<String, _Partner>> speakers(String lang) async {
-      final byId = <String, _Partner>{};
-      try {
-        final snap = await _firestore
-            .collection('profiles')
-            .where('languages', arrayContains: lang)
-            .limit(60)
-            .get();
+      Future<Map<String, _Partner>> read(Query<Map<String, dynamic>> q) async {
+        final byId = <String, _Partner>{};
+        final snap = await q.limit(60).get();
         for (final doc in snap.docs) {
           final p = _parsePartner(doc.id, doc.data(), blocked: blocked);
           if (p != null) byId[doc.id] = p;
         }
+        return byId;
+      }
+
+      final base = _firestore
+          .collection('profiles')
+          .where('languages', arrayContains: lang);
+      if (country != null && country.isNotEmpty) {
+        try {
+          final local =
+              await read(base.where('location.country', isEqualTo: country));
+          if (local.length >= _peopleWanted) return local;
+        } catch (_) {/* fall back to worldwide */}
+      }
+      try {
+        return await read(base);
       } catch (_) {
         // Fall through to the next language.
+        return <String, _Partner>{};
       }
-      return byId;
     }
 
     Future<bool> publish(String lang, Map<String, _Partner> byId) async {
@@ -1447,15 +1468,34 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Future<void> _loadBusinesses() async {
     List<Profile> result = const <Profile>[];
     try {
-      final snap = await _firestore
+      final base = _firestore
           .collection('profiles')
-          .where('isBusiness', isEqualTo: true)
-          .limit(20)
-          .get();
+          .where('isBusiness', isEqualTo: true);
+      // Businesses in the user's country first (index profiles(isBusiness,
+      // location.country)); the original worldwide query when the country
+      // query fails (index building) or returns less than a full row.
+      final country = _countryName;
+      List<QueryDocumentSnapshot<Map<String, dynamic>>> docs = const [];
+      if (country != null && country.isNotEmpty) {
+        try {
+          docs = (await base
+                  .where('location.country', isEqualTo: country)
+                  .limit(20)
+                  .get())
+              .docs;
+        } catch (_) {
+          docs = const [];
+        }
+      }
+      if (docs.length < 20) {
+        final world = (await base.limit(20).get()).docs;
+        final seen = docs.map((d) => d.id).toSet();
+        docs = [...docs, ...world.where((d) => seen.add(d.id))];
+      }
       final lat = _userLat;
       final lng = _userLng;
       final list = <Profile>[];
-      for (final doc in snap.docs) {
+      for (final doc in docs) {
         final p = _parseBusiness(doc.id, doc.data());
         if (p != null) list.add(p);
       }
@@ -1474,9 +1514,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
         }
         return dist(a).compareTo(dist(b));
       });
-      result = list;
+      // Same row size as before (country + worldwide can exceed it).
+      result = list.take(20).toList();
       unawaited(LastResultCache.saveIds(
-          _kCacheBusinesses, list.map((p) => p.userId)));
+          _kCacheBusinesses, result.map((p) => p.userId)));
     } catch (_) {
       result = _businesses ?? const <Profile>[];
     }

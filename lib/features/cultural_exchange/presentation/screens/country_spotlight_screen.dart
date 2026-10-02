@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/country_spotlight.dart';
@@ -41,10 +42,11 @@ class CountrySpotlightScreen extends StatelessWidget {
                 children: [
                   // Hero image
                   if (spotlight.imageUrl.isNotEmpty)
-                    Image.network(
-                      spotlight.imageUrl,
+                    CachedNetworkImage(
+                      imageUrl: spotlight.imageUrl,
                       fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) =>
+                      memCacheWidth: 1080,
+                      errorWidget: (context, _, __) =>
                           _buildPlaceholderImage(),
                     )
                   else
@@ -220,12 +222,13 @@ class CountrySpotlightScreen extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 12),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8),
-                child: Image.network(
-                  section.imageUrl!,
+                child: CachedNetworkImage(
+                  imageUrl: section.imageUrl!,
                   width: double.infinity,
                   height: 160,
                   fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                  memCacheWidth: 800,
+                  errorWidget: (_, __, ___) => const SizedBox.shrink(),
                 ),
               ),
             ),

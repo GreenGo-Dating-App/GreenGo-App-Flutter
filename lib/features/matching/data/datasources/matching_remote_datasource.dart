@@ -3,7 +3,9 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import '../../../../core/services/candidate_pool_service.dart';
+import '../../../../core/utils/geo_query.dart';
 import '../../../profile/data/models/profile_model.dart';
+import '../../../profile/data/profile_geohash.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/match_candidate.dart';
 import '../../domain/entities/match_preferences.dart';
@@ -76,12 +78,25 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     // parallel with the profile read (these used to run one after another).
     final userDocFuture = firestore.collection('profiles').doc(userId).get();
     final travelerIdsFuture = _getTravelerIdsInCountries(preferences: preferences);
-    final worldwideFuture = hasCountries ? null : _randomWorldwideScan();
-    // Mark its error as observed up-front: if anything below throws before it
-    // is awaited (profile read/parse), it must not surface as an unhandled
-    // async error. A later `await` still receives the error normally.
-    worldwideFuture?.ignore();
 
+    // LOCATION-FIRST (worldwide mode): when the viewer's coordinates are known
+    // (local cache, instant) query the profiles whose `geohash` falls within
+    // maxDistance — the people who will actually be shown first — instead of
+    // a random worldwide slice that rarely contains anyone nearby.
+    final cachedCoordsFuture =
+        hasCountries ? null : _viewerCoordsFromCache(userId);
+    final geoFuture = cachedCoordsFuture?.then((c) => c == null
+        ? null
+        : _geoScan(c.$1, c.$2, preferences.maxDistance));
+    geoFuture?.ignore();
+    // With no distance limit the random slice is always part of the pool, so
+    // it starts now too (as it always did); with an explicit radius it is
+    // only read if the nearby result is thin.
+    final eagerRandom =
+        hasCountries || _isExplicitRadius(preferences.maxDistance)
+            ? null
+            : _randomWorldwideScan();
+    eagerRandom?.ignore();
     final userDoc = await userDocFuture;
     if (!userDoc.exists) throw Exception('User profile not found');
 
@@ -123,7 +138,13 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       debugPrint('[Matching] Pool unavailable, falling back to full scan');
 
       if (!hasCountries) {
-        profileDocs = await worldwideFuture!;
+        profileDocs = await _worldwide(
+          cachedCoordsFuture: cachedCoordsFuture!,
+          geoFuture: geoFuture!,
+          viewerData: userDoc.data(),
+          maxDistanceKm: preferences.maxDistance,
+          eagerRandom: eagerRandom,
+        );
       } else {
         profileDocs = await _countryScan(
           preferences.preferredCountries,
@@ -160,8 +181,130 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     return buildCandidatesOffThread(request);
   }
 
+  /// Minimum nearby profiles before the location-first scan is considered
+  /// enough on its own; below this the random worldwide slice pads it.
+  static const int _geoEnough = 60;
+
+  /// Per geohash-range read size (up to 9 ranges, in parallel).
+  static const int _geoPerRange = 40;
+
+  /// Above this radius a geohash scan covers most of the planet and is no
+  /// better than the random slice, so the "no limit" radius below is used.
+  static const double _geoMaxRadiusKm = 2000;
+
+  /// "Nearby" radius merged in front of worldwide (no distance limit) results.
+  static const double _defaultNearbyKm = 200;
+
+  static bool _isExplicitRadius(double km) => km > 0 && km <= _geoMaxRadiusKm;
+
+  /// The viewer's discoverable coordinates (active travel location, else
+  /// home) from the LOCAL Firestore cache only. Null when unknown, so the
+  /// caller simply keeps the previous behaviour.
+  Future<(double, double)?> _viewerCoordsFromCache(String userId) async {
+    try {
+      final doc = await firestore
+          .collection('profiles')
+          .doc(userId)
+          .get(const GetOptions(source: Source.cache));
+      final data = doc.data();
+      return data == null ? null : discoverableCoords(data);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// Profiles within [maxDistanceKm] of the point via up to 9 parallel
+  /// `orderBy('geohash')` range reads (single-field index; no composite).
+  /// Profiles that were never geohashed are simply not returned here — the
+  /// random slice still covers them. Returns null when the scan is not
+  /// applicable or fails, so the caller falls back to the old path.
+  Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>?> _geoScan(
+    double lat,
+    double lng,
+    double maxDistanceKm,
+  ) async {
+    final radiusKm =
+        _isExplicitRadius(maxDistanceKm) ? maxDistanceKm : _defaultNearbyKm;
+    try {
+      final bounds = GeoQuery.queryBounds(lat, lng, radiusKm * 1000);
+      final snaps = await Future.wait(bounds.map((b) => firestore
+          .collection('profiles')
+          .orderBy('geohash')
+          .startAt([b[0]])
+          .endAt([b[1]])
+          .limit(_geoPerRange)
+          .get()));
+      final seen = <String>{};
+      final out = <QueryDocumentSnapshot<Map<String, dynamic>>>[];
+      for (final snap in snaps) {
+        for (final d in snap.docs) {
+          if (seen.add(d.id)) out.add(d);
+        }
+      }
+      debugPrint('[Matching] Geo scan: ${out.length} profiles in '
+          '${bounds.length} ranges (${radiusKm.round()} km)');
+      return out;
+    } catch (e) {
+      debugPrint('[Matching] Geo scan unavailable, using random slice: $e');
+      return null;
+    }
+  }
+
+  /// Worldwide pool: nearby people first (geo scan) plus the random
+  /// worldwide slice.
+  ///  * An explicit distance (<= [_geoMaxRadiusKm]): the geo scan alone when
+  ///    it found enough people, padded with the random slice when thin.
+  ///  * No distance limit (default worldwide browsing): the random slice as
+  ///    before, with the nearest people within [_defaultNearbyKm] merged in
+  ///    front so a nearest-first grid actually starts with people nearby.
+  /// With no geo result (no coords, profiles not geohashed yet, query
+  /// failure) this is exactly the previous random slice.
+  Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> _worldwide({
+    required Future<(double, double)?> cachedCoordsFuture,
+    required Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>?>
+        geoFuture,
+    required Map<String, dynamic>? viewerData,
+    required double maxDistanceKm,
+    Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>>? eagerRandom,
+  }) async {
+    final explicit = _isExplicitRadius(maxDistanceKm);
+    Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> random() =>
+        eagerRandom ?? _randomWorldwideScan();
+    final cached = await cachedCoordsFuture;
+    if (cached == null) {
+      // Not in the local cache: use the server profile we just read, with the
+      // random slice alongside so a thin area costs no extra latency.
+      final c = viewerData == null ? null : discoverableCoords(viewerData);
+      if (c == null) return random();
+      final both = await Future.wait([
+        _geoScan(c.$1, c.$2, maxDistanceKm),
+        random(),
+      ]);
+      return _mergeGeo(both[0], both[1]!, padAlways: !explicit);
+    }
+    if (!explicit) {
+      final both = await Future.wait([geoFuture, random()]);
+      return _mergeGeo(both[0], both[1]!, padAlways: true);
+    }
+    final geo = await geoFuture;
+    if (geo != null && geo.length >= _geoEnough) return geo;
+    return _mergeGeo(geo, await random(), padAlways: true);
+  }
+
+  static List<QueryDocumentSnapshot<Map<String, dynamic>>> _mergeGeo(
+    List<QueryDocumentSnapshot<Map<String, dynamic>>>? geo,
+    List<QueryDocumentSnapshot<Map<String, dynamic>>> random, {
+    required bool padAlways,
+  }) {
+    if (geo == null || geo.isEmpty) return random;
+    if (!padAlways && geo.length >= _geoEnough) return geo;
+    final seen = geo.map((d) => d.id).toSet();
+    return [...geo, ...random.where((d) => seen.add(d.id))];
+  }
+
   /// Random worldwide slice (no country filter): two bounded reads either side
-  /// of a random document-id pivot, fetched in parallel.
+  /// of a random document-id pivot, fetched in parallel. (150 total — it is a
+  /// fallback/padding now; it used to read 500 full profiles every load.)
   Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>>
       _randomWorldwideScan() async {
     final randomKey = _generateRandomDocId();
@@ -170,12 +313,12 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       firestore
           .collection('profiles')
           .where(FieldPath.documentId, isGreaterThanOrEqualTo: randomKey)
-          .limit(250)
+          .limit(75)
           .get(),
       firestore
           .collection('profiles')
           .where(FieldPath.documentId, isLessThan: randomKey)
-          .limit(250)
+          .limit(75)
           .get(),
     ]);
     debugPrint('[Matching] Random scan: ${snaps[0].docs.length} + ${snaps[1].docs.length}');
@@ -293,10 +436,22 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     }
   }
 
+  /// Active-traveler ids per country filter, memoised for the session (the
+  /// set changes slowly; every discovery load used to re-read 200 profiles).
+  static final Map<String, (DateTime, List<String>)> _travelerMemo = {};
+  static const Duration _travelerMemoTtl = Duration(minutes: 5);
+
   /// Fetch active travelers whose travelerLocation.country matches the target countries.
   /// These users are missed by the pool system because pools are indexed by home country.
-  /// Uses single-field query (isTraveler only) to avoid requiring a composite Firestore index,
-  /// then filters by country and expiry in memory.
+  ///
+  /// Server-side: `isTraveler == true && travelerExpiry > now`, ordered by
+  /// expiry, limit 100 (index profiles(isTraveler, travelerExpiry)). With a
+  /// country filter it also narrows by `travelerLocation.country in [...]`
+  /// (needs index profiles(isTraveler, travelerLocation.country,
+  /// travelerExpiry)); if that is rejected it drops the country clause, and if
+  /// the expiry query is rejected too it falls back to the previous
+  /// single-field read. The expiry and country checks still run in memory on
+  /// every path as the safety net.
   Future<List<String>> _getTravelerIdsInCountries({
     required MatchPreferences preferences,
   }) async {
@@ -305,17 +460,50 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       final filterByCountry = preferences.preferredCountries.isNotEmpty;
       final countries = filterByCountry
           ? preferences.preferredCountries.map((c) => c.toLowerCase()).toList()
-          : [];
+          : <String>[];
+
+      final memoKey = ([...countries]..sort()).join('|');
+      final memo = _travelerMemo[memoKey];
+      if (memo != null && DateTime.now().difference(memo.$1) < _travelerMemoTtl) {
+        return memo.$2;
+      }
 
       final now = DateTime.now();
       final travelerIds = <String>[];
 
-      // Single-field query — no composite index needed
-      final snapshot = await firestore
+      Query<Map<String, dynamic>> active() => firestore
           .collection('profiles')
           .where('isTraveler', isEqualTo: true)
-          .limit(200)
-          .get();
+          .where('travelerExpiry', isGreaterThan: Timestamp.fromDate(now));
+
+      // Exact spellings the user picked plus their lower-case forms
+      // (Firestore `in` is case-sensitive; max 30 values).
+      final countryValues = <String>{
+        ...preferences.preferredCountries,
+        ...countries,
+      }.take(30).toList();
+
+      QuerySnapshot<Map<String, dynamic>> snapshot;
+      try {
+        var q = active();
+        if (filterByCountry) {
+          q = q.where('travelerLocation.country', whereIn: countryValues);
+        }
+        snapshot = await q.orderBy('travelerExpiry').limit(100).get();
+      } catch (e) {
+        debugPrint('[Matching] Traveler indexed query failed ($e) — fallback');
+        try {
+          snapshot =
+              await active().orderBy('travelerExpiry').limit(100).get();
+        } catch (_) {
+          // Single-field query — no composite index needed
+          snapshot = await firestore
+              .collection('profiles')
+              .where('isTraveler', isEqualTo: true)
+              .limit(200)
+              .get();
+        }
+      }
 
       for (final doc in snapshot.docs) {
         final data = doc.data();
@@ -340,6 +528,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
       }
 
       debugPrint('[Matching] Found ${travelerIds.length} active travelers in $countries');
+      _travelerMemo[memoKey] = (DateTime.now(), travelerIds);
       return travelerIds;
     } catch (e) {
       debugPrint('[Matching] Traveler lookup failed: $e');

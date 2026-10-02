@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
+import '../../../gamification/data/services/chat_partner_ids.dart';
 import '../../domain/entities/cultural_passport.dart';
 
 /// Builds and persists a user's [CulturalPassport].
@@ -35,8 +36,6 @@ class PassportService {
   static const String _eventsCol = 'events';
 
   // Bounds — keep every read cheap regardless of how active the user is.
-  static const int _maxConversationsPerSide = 40;
-  static const int _maxPartners = 30;
   static const int _maxEventRsvps = 60;
   static const int _whereInBatch = 10; // Firestore `whereIn` hard cap.
 
@@ -171,34 +170,13 @@ class PassportService {
 
   /// The other participants of the user's 1:1 conversations, capped.
   ///
-  /// Uses two single-field equality queries (no composite index) instead of a
-  /// `Filter.or`, each bounded by [_maxConversationsPerSide], read in parallel
-  /// (the `userId1` side still takes precedence when capping).
-  Future<List<String>> _partnerUserIds(String userId) async {
-    final snaps = await Future.wait([
-      for (final field in const ['userId1', 'userId2'])
-        _firestore
-            .collection(_conversationsCol)
-            .where(field, isEqualTo: userId)
-            .limit(_maxConversationsPerSide)
-            .get(),
-    ]);
-
-    final ids = <String>{};
-    for (final snap in snaps) {
-      for (final doc in snap.docs) {
-        if (ids.length >= _maxPartners) break;
-        final data = doc.data();
-        final u1 = data['userId1'] as String?;
-        final u2 = data['userId2'] as String?;
-        final other = u1 == userId ? u2 : u1;
-        if (other != null && other.isNotEmpty && other != userId) {
-          ids.add(other);
-        }
-      }
-    }
-    return ids.toList();
-  }
+  /// Shared with Missions through [ChatPartnerIds] (two parallel single-field
+  /// equality queries, `userId1` side first when capping, briefly memoised).
+  Future<List<String>> _partnerUserIds(String userId) => ChatPartnerIds.load(
+        _firestore,
+        userId,
+        conversationsCollection: _conversationsCol,
+      );
 
   /// Batch-reads profile docs by id (`whereIn`, ≤10 per query), capped.
   /// The batches are read in parallel.

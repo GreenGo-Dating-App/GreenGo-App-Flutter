@@ -3,11 +3,15 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/safety_lesson_model.dart';
 import '../models/safety_module_model.dart';
 import '../models/safety_progress_model.dart';
+import '../seed/safety_academy_seed_data.dart';
 
 /// Remote datasource for the Safety Academy feature.
 ///
-/// Handles all Firestore CRUD operations for safety modules,
-/// lessons, and user progress tracking.
+/// Module and lesson CONTENT ships in the app bundle
+/// ([SafetyAcademySeedData]) and is served from there with zero network.
+/// Firestore is read for content only when the bundle has nothing for the
+/// request (e.g. a module added server-side later). User progress always
+/// lives in Firestore.
 class SafetyAcademyRemoteDatasource {
 
   SafetyAcademyRemoteDatasource({FirebaseFirestore? firestore})
@@ -37,13 +41,17 @@ class SafetyAcademyRemoteDatasource {
 
   /// Fetch all safety modules ordered by [order] field
   Future<List<SafetyModuleModel>> getModules() async {
+    const bundled = SafetyAcademySeedData.modules;
+    if (bundled.isNotEmpty) {
+      return (bundled.map(SafetyModuleModel.fromEntity).toList()
+        ..sort((a, b) => a.order.compareTo(b.order)));
+    }
     try {
-      final snapshot =
-          await _modulesCollection.orderBy('order', descending: false).get();
+      // No orderBy: sorted client-side so no index is required.
+      final snapshot = await _modulesCollection.get();
 
-      return snapshot.docs
-          .map(SafetyModuleModel.fromFirestore)
-          .toList();
+      return snapshot.docs.map(SafetyModuleModel.fromFirestore).toList()
+        ..sort((a, b) => a.order.compareTo(b.order));
     } catch (e) {
       throw Exception('Failed to fetch safety modules: $e');
     }
@@ -51,6 +59,9 @@ class SafetyAcademyRemoteDatasource {
 
   /// Fetch a single module by ID
   Future<SafetyModuleModel?> getModuleById(String id) async {
+    for (final m in SafetyAcademySeedData.modules) {
+      if (m.id == id) return SafetyModuleModel.fromEntity(m);
+    }
     try {
       final doc = await _modulesCollection.doc(id).get();
       if (!doc.exists) return null;
@@ -66,15 +77,23 @@ class SafetyAcademyRemoteDatasource {
 
   /// Fetch all lessons for a given module, ordered by [order] field
   Future<List<SafetyLessonModel>> getLessonsForModule(String moduleId) async {
+    final bundled = SafetyAcademySeedData.allLessons
+        .where((l) => l.moduleId == moduleId)
+        .map(SafetyLessonModel.fromEntity)
+        .toList();
+    if (bundled.isNotEmpty) {
+      return bundled..sort((a, b) => a.order.compareTo(b.order));
+    }
     try {
+      // Equality filter only + client-side sort: the previous
+      // where(moduleId)+orderBy(order) needed a composite index that was
+      // never created, so lessons never loaded.
       final snapshot = await _lessonsCollection
           .where('moduleId', isEqualTo: moduleId)
-          .orderBy('order', descending: false)
           .get();
 
-      return snapshot.docs
-          .map(SafetyLessonModel.fromFirestore)
-          .toList();
+      return snapshot.docs.map(SafetyLessonModel.fromFirestore).toList()
+        ..sort((a, b) => a.order.compareTo(b.order));
     } catch (e) {
       throw Exception('Failed to fetch lessons for module $moduleId: $e');
     }
@@ -82,6 +101,9 @@ class SafetyAcademyRemoteDatasource {
 
   /// Fetch a single lesson by ID
   Future<SafetyLessonModel?> getLessonById(String id) async {
+    for (final l in SafetyAcademySeedData.allLessons) {
+      if (l.id == id) return SafetyLessonModel.fromEntity(l);
+    }
     try {
       final doc = await _lessonsCollection.doc(id).get();
       if (!doc.exists) return null;

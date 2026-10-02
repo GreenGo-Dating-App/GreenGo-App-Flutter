@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -126,7 +127,8 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
                     radius: 12,
                     backgroundColor: AppColors.backgroundInput,
                     backgroundImage: message.senderPhotoUrl != null
-                        ? NetworkImage(message.senderPhotoUrl!)
+                        ? CachedNetworkImageProvider(message.senderPhotoUrl!,
+                            maxWidth: 48)
                         : null,
                     child: message.senderPhotoUrl == null
                         ? Text(

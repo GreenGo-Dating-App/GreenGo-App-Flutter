@@ -68,7 +68,9 @@ class ConversationsBloc extends Bloc<ConversationsEvent, ConversationsState> {
     ConversationsLoadRequested event,
     Emitter<ConversationsState> emit,
   ) async {
-    emit(const ConversationsLoading());
+    // Re-subscriptions (pull-to-refresh, failure recovery) keep the current
+    // list on screen instead of flashing the full-screen spinner.
+    if (state is! ConversationsLoaded) emit(const ConversationsLoading());
 
     _userId = event.userId;
 

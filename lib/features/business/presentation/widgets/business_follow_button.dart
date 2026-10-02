@@ -36,6 +36,34 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
   final FollowService _service = di.sl<FollowService>();
   bool _busy = false;
 
+  // Created once per business/viewer — not in build, where the follow-state
+  // listener used to restart on every follower-count update.
+  late Stream<int> _count = _service.followerCount(widget.businessId);
+  late Stream<bool> _following = _watchFollowing();
+
+  Stream<bool> _watchFollowing() => _service.isFollowing(
+        businessId: widget.businessId,
+        uid: widget.currentUserId,
+      );
+
+  /// Last values, so a re-subscription paints them instead of a blank state.
+  int? _lastCount;
+  bool? _lastFollowing;
+
+  @override
+  void didUpdateWidget(BusinessFollowButton old) {
+    super.didUpdateWidget(old);
+    if (old.businessId != widget.businessId) {
+      _count = _service.followerCount(widget.businessId);
+      _lastCount = null;
+    }
+    if (old.businessId != widget.businessId ||
+        old.currentUserId != widget.currentUserId) {
+      _following = _watchFollowing();
+      _lastFollowing = null;
+    }
+  }
+
   bool get _isSelf => widget.businessId == widget.currentUserId;
 
   Future<void> _toggle(bool currentlyFollowing) async {
@@ -67,9 +95,11 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
     final l10n = AppLocalizations.of(context)!;
 
     return StreamBuilder<int>(
-      stream: _service.followerCount(widget.businessId),
+      stream: _count,
+      initialData: _lastCount,
       builder: (context, countSnap) {
         final count = countSnap.data ?? 0;
+        _lastCount = countSnap.data ?? _lastCount;
 
         // Self-view: show a passive follower-count chip, no action.
         if (_isSelf) {
@@ -80,12 +110,11 @@ class _BusinessFollowButtonState extends State<BusinessFollowButton> {
         }
 
         return StreamBuilder<bool>(
-          stream: _service.isFollowing(
-            businessId: widget.businessId,
-            uid: widget.currentUserId,
-          ),
+          stream: _following,
+          initialData: _lastFollowing,
           builder: (context, followSnap) {
             final following = followSnap.data ?? false;
+            _lastFollowing = followSnap.data ?? _lastFollowing;
             final label = following
                 ? l10n.businessFollowing
                 : l10n.businessFollow;

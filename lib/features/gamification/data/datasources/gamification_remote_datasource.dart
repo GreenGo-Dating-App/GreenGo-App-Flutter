@@ -109,36 +109,108 @@ class GamificationRemoteDataSourceImpl
   CollectionReference get _levelRewardsClaimedCollection =>
       firestore.collection('level_rewards_claimed');
 
-  /// Check if a user should be excluded from leaderboard
-  /// Excludes: admins, support, inactive/banned/deleted accounts, users not seen in 30+ days
-  Future<bool> _shouldExcludeFromLeaderboard(String userId) async {
-    try {
-      final doc = await firestore.collection('profiles').doc(userId).get();
-      if (!doc.exists) return true; // No profile = exclude
-      final data = doc.data();
-      if (data == null) return true;
+  /// Firestore `whereIn` accepts at most 30 values per query.
+  static const int _whereInChunk = 30;
 
-      // Exclude admins and supporters
-      if ((data['isAdmin'] as bool? ?? false) ||
-          (data['isSupport'] as bool? ?? false)) {
-        return true;
-      }
+  /// Marker put in a [_fetchDocsByIds] result when the read for that id
+  /// failed, so callers can tell "read failed" from "doc does not exist".
+  static const String _readFailedKey = '__readFailed';
 
-      // Exclude non-active accounts (suspended, banned, deleted)
-      final accountStatus = data['accountStatus'] as String? ?? 'active';
-      if (accountStatus != 'active') return true;
+  /// Decide from a profile map whether that user is hidden from leaderboards.
+  /// Excludes: admins, support, inactive/banned/deleted accounts, users not
+  /// seen in 30+ days.
+  static bool _isExcludedProfile(Map<String, dynamic>? data) {
+    if (data == null) return true; // No profile = exclude
 
-      // Exclude users not seen in the last 30 days
-      final lastSeen = data['lastSeen'];
-      if (lastSeen != null) {
-        final lastSeenDate = (lastSeen as Timestamp).toDate();
-        if (DateTime.now().difference(lastSeenDate).inDays > 30) return true;
-      }
-
-      return false;
-    } catch (_) {
-      return false;
+    // Exclude admins and supporters
+    if ((data['isAdmin'] as bool? ?? false) ||
+        (data['isSupport'] as bool? ?? false)) {
+      return true;
     }
+
+    // Exclude non-active accounts (suspended, banned, deleted)
+    final accountStatus = data['accountStatus'] as String? ?? 'active';
+    if (accountStatus != 'active') return true;
+
+    // Exclude users not seen in the last 30 days
+    final lastSeen = data['lastSeen'];
+    if (lastSeen is Timestamp) {
+      if (DateTime.now().difference(lastSeen.toDate()).inDays > 30) return true;
+    }
+
+    return false;
+  }
+
+  /// Fetch docs of [collection] for [ids] in parallel `whereIn` batches of 30
+  /// (a few concurrent round-trips instead of one sequential read per row).
+  /// Ids whose batch failed map to `{_readFailedKey: true}`.
+  Future<Map<String, Map<String, dynamic>>> _fetchDocsByIds(
+    CollectionReference collection,
+    List<String> ids,
+  ) async {
+    final result = <String, Map<String, dynamic>>{};
+    if (ids.isEmpty) return result;
+    final failedIds = <String>{};
+    final chunks = <List<String>>[
+      for (var i = 0; i < ids.length; i += _whereInChunk)
+        ids.sublist(i, (i + _whereInChunk).clamp(0, ids.length)),
+    ];
+    await Future.wait(chunks.map((chunk) async {
+      try {
+        final snap = await collection
+            .where(FieldPath.documentId, whereIn: chunk)
+            .get()
+            .timeout(_readTimeout);
+        for (final doc in snap.docs) {
+          final data = doc.data() as Map<String, dynamic>?;
+          if (data != null) result[doc.id] = data;
+        }
+      } catch (e) {
+        debugPrint('Leaderboard: batch read of ${collection.path} failed: $e');
+        failedIds.addAll(chunk);
+      }
+    }));
+    for (final id in failedIds) {
+      result.putIfAbsent(id, () => const {_readFailedKey: true});
+    }
+    return result;
+  }
+
+  /// Ids (of [userIds]) hidden from the leaderboard, resolved with parallel
+  /// batched reads. Matches the old per-row behaviour: a missing profile is
+  /// excluded, a failed read is NOT (fail open).
+  Future<Set<String>> _excludedFromLeaderboard(List<String> userIds) async {
+    final profiles = await _fetchDocsByIds(
+      firestore.collection('profiles'),
+      userIds,
+    );
+    final excluded = <String>{};
+    for (final id in userIds) {
+      final data = profiles[id];
+      if (data != null && data[_readFailedKey] == true) continue;
+      if (_isExcludedProfile(data)) excluded.add(id);
+    }
+    return excluded;
+  }
+
+  LeaderboardEntryModel _entryFromLevelDoc(
+    String userId,
+    Map<String, dynamic> data,
+    int rank, {
+    int? xpOverride,
+  }) {
+    return LeaderboardEntryModel(
+      rank: rank,
+      userId: userId,
+      username: data['displayName'] as String? ??
+          data['username'] as String? ??
+          'Unknown',
+      level: (data['level'] as num?)?.toInt() ?? 1,
+      totalXP: xpOverride ?? (data['totalXP'] as num?)?.toInt() ?? 0,
+      region: data['region'] as String? ?? '',
+      isVIP: data['isVIP'] as bool? ?? false,
+      photoUrl: data['photoUrl'] as String?,
+    );
   }
 
   // ===== Achievement Operations =====
@@ -366,7 +438,9 @@ class GamificationRemoteDataSourceImpl
         isVIP: isVIP,
       );
 
-      transaction.set(docRef, updated.toMap());
+      // merge: keep the leaderboard display fields (displayName, photoUrl)
+      // written by getUserLevel; a plain set() wiped them on every grant.
+      transaction.set(docRef, updated.toMap(), SetOptions(merge: true));
 
       // Record XP transaction
       final xpTransaction = XPTransactionModel(
@@ -426,38 +500,58 @@ class GamificationRemoteDataSourceImpl
       }
     }
 
-    // Default: all-time leaderboard from user_levels. Region is filtered
-    // CLIENT-SIDE (avoids needing a composite index on region+totalXP, which
-    // was making the regional filter fail); fetch extra to account for it.
-    final snapshot = await _userLevelsCollection
-        .orderBy('totalXP', descending: true)
-        .limit(type == LeaderboardType.regional ? 500 : limit + 20)
-        .get();
+    // Default: all-time leaderboard from user_levels.
+    final regionFilter =
+        type == LeaderboardType.regional && region != null && region.isNotEmpty
+            ? region
+            : null;
+    // Headroom for rows dropped by the exclusion filter.
+    final fetchLimit = limit + 20;
+
+    List<QueryDocumentSnapshot> candidates;
+    if (regionFilter != null) {
+      try {
+        // Server-side region filter (index user_levels(region, totalXP DESC)).
+        candidates = (await _userLevelsCollection
+                .where('region', isEqualTo: regionFilter)
+                .orderBy('totalXP', descending: true)
+                .limit(fetchLimit)
+                .get()
+                .timeout(_readTimeout))
+            .docs;
+      } catch (e) {
+        // Index missing/building: fall back to the old client-side filter.
+        debugPrint('Leaderboard: regional query failed, client filter: $e');
+        final snap = await _userLevelsCollection
+            .orderBy('totalXP', descending: true)
+            .limit(500)
+            .get();
+        candidates = snap.docs
+            .where((d) =>
+                ((d.data() as Map<String, dynamic>?)?['region'] as String? ??
+                    '') ==
+                regionFilter)
+            .toList();
+      }
+    } else {
+      candidates = (await _userLevelsCollection
+              .orderBy('totalXP', descending: true)
+              .limit(fetchLimit)
+              .get())
+          .docs;
+    }
+
+    final excluded =
+        await _excludedFromLeaderboard(candidates.map((d) => d.id).toList());
 
     final entries = <LeaderboardEntryModel>[];
     var rank = 1;
-
-    for (final doc in snapshot.docs) {
+    for (final doc in candidates) {
       if (entries.length >= limit) break;
       // Exclude admins and supporters from leaderboard
-      if (await _shouldExcludeFromLeaderboard(doc.id)) continue;
-      final data = doc.data() as Map<String, dynamic>;
-      // Regional filter (client-side, no composite index needed).
-      if (type == LeaderboardType.regional &&
-          region != null &&
-          (data['region'] as String? ?? '') != region) {
-        continue;
-      }
-      entries.add(LeaderboardEntryModel(
-        rank: rank++,
-        userId: doc.id,
-        username: data['displayName'] as String? ?? data['username'] as String? ?? 'Unknown',
-        level: (data['level'] as num?)?.toInt() ?? 1,
-        totalXP: (data['totalXP'] as num?)?.toInt() ?? 0,
-        region: data['region'] as String? ?? '',
-        isVIP: data['isVIP'] as bool? ?? false,
-        photoUrl: data['photoUrl'] as String?,
-      ));
+      if (excluded.contains(doc.id)) continue;
+      final data = doc.data() as Map<String, dynamic>? ?? const {};
+      entries.add(_entryFromLevelDoc(doc.id, data, rank++));
     }
 
     return entries;
@@ -508,36 +602,46 @@ class GamificationRemoteDataSourceImpl
     final sorted = xpByUser.entries.toList()
       ..sort((a, b) => b.value.compareTo(a.value));
 
-    // Fetch user details and apply regional filter
+    final regionFilter =
+        type == LeaderboardType.regional && region != null ? region : null;
+
+    // Resolve user details + exclusion one page at a time, each page with
+    // parallel batched reads (was 2 sequential reads per row).
     final entries = <LeaderboardEntryModel>[];
     var rank = 1;
-    for (final entry in sorted) {
-      if (entries.length >= limit) break;
+    const pageSize = 60;
+    for (var start = 0;
+        start < sorted.length && entries.length < limit;
+        start += pageSize) {
+      final page =
+          sorted.sublist(start, (start + pageSize).clamp(0, sorted.length));
+      final ids = page.map((e) => e.key).toList();
+      final levelsFuture = _fetchDocsByIds(_userLevelsCollection, ids);
+      final excludedFuture = _excludedFromLeaderboard(ids);
+      final levels = await levelsFuture;
+      final excluded = await excludedFuture;
 
-      final userDoc = await _userLevelsCollection.doc(entry.key).get();
-      if (!userDoc.exists) continue;
-      // Exclude admins and supporters from leaderboard
-      if (await _shouldExcludeFromLeaderboard(entry.key)) continue;
-      final data = userDoc.data() as Map<String, dynamic>;
+      for (final entry in page) {
+        if (entries.length >= limit) break;
+        final data = levels[entry.key];
+        // No user_levels doc (or its read failed) -> skip, as before.
+        if (data == null || data[_readFailedKey] == true) continue;
+        // Exclude admins and supporters from leaderboard
+        if (excluded.contains(entry.key)) continue;
 
-      // Regional filter: skip if region doesn't match
-      if (type == LeaderboardType.regional && region != null) {
-        final userRegion = data['region'] as String? ?? '';
-        if (userRegion != region) continue;
+        // Regional filter: skip if region doesn't match
+        if (regionFilter != null &&
+            (data['region'] as String? ?? '') != regionFilter) {
+          continue;
+        }
+
+        entries.add(_entryFromLevelDoc(
+          entry.key,
+          data,
+          rank++,
+          xpOverride: entry.value, // period XP, not all-time
+        ));
       }
-
-      entries.add(LeaderboardEntryModel(
-        rank: rank++,
-        userId: entry.key,
-        username: data['displayName'] as String? ??
-            data['username'] as String? ??
-            'Unknown',
-        level: data['level'] as int? ?? 1,
-        totalXP: entry.value, // period XP, not all-time
-        region: data['region'] as String? ?? '',
-        isVIP: data['isVIP'] as bool? ?? false,
-        photoUrl: data['photoUrl'] as String?,
-      ));
     }
 
     return entries;

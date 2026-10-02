@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/interaction_log_service.dart';
+import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
@@ -206,20 +207,28 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
           LoadManagedCommunities(userId: userId),
         );
 
-    // Load all communities for discover tab
+    // Personalisation from the profile (when already loaded): the viewer's
+    // effective city (traveler location when active) and primary language.
+    final profileState = context.read<ProfileBloc>().state;
+    final profile = profileState is ProfileLoaded ? profileState.profile : null;
+    final city = profile?.effectiveLocation.city.trim();
+    final nearCity = (city == null || city.isEmpty) ? null : city;
+    final nearLanguage = profile == null || profile.languages.isEmpty
+        ? null
+        : languageCode(profile.languages.first);
+
+    // Discover: local + language + worldwide (memoised per session).
     context.read<CommunitiesBloc>().add(
-          const LoadCommunities(),
+          LoadCommunities(nearCity: nearCity, nearLanguage: nearLanguage),
         );
 
     // Load recommended based on profile languages. Always dispatch (don't gate
     // on ProfileBloc being loaded yet, which caused recommended to never load on
     // a cold start) — fall back to empty languages if the profile isn't ready.
-    final profileState = context.read<ProfileBloc>().state;
-    final langs = profileState is ProfileLoaded
-        ? profileState.profile.preferredLanguages
-        : const <String>[];
+    final langs = profile?.preferredLanguages ?? const <String>[];
     context.read<CommunitiesBloc>().add(
-          LoadRecommendedCommunities(userId: userId, languages: langs),
+          LoadRecommendedCommunities(
+              userId: userId, languages: langs, city: nearCity),
         );
   }
 

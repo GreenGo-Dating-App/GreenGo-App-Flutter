@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
@@ -28,15 +29,30 @@ class VideoDiscoveryScreen extends StatefulWidget {
 class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
   late PageController _pageController;
   final Map<int, VideoPlayerController> _controllers = {};
+  /// Pages whose controller failed to initialise: they show the thumbnail +
+  /// an error icon instead of an endless spinner, and are retried when the
+  /// user scrolls back onto them.
+  final Set<int> _failed = {};
   int _currentPage = 0;
   bool _isDisposed = false;
+
+  /// Page size of the discovery feed.
+  static const int _pageSize = 10;
+  /// lastId of the page already requested (prevents duplicate page loads
+  /// as the user scrolls within the last few items).
+  String? _requestedLastId;
+  /// Set when a page request added no new videos: the feed is exhausted.
+  bool _feedExhausted = false;
+  int _lastVideoCount = 0;
 
   @override
   void initState() {
     super.initState();
     _pageController = PageController();
     // Load discovery videos
-    context.read<VideoProfileBloc>().add(const LoadDiscoveryVideos());
+    context
+        .read<VideoProfileBloc>()
+        .add(const LoadDiscoveryVideos(limit: _pageSize));
   }
 
   @override
@@ -55,14 +71,17 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
   Future<void> _initializeController(
       int index, List<VideoProfile> videos) async {
     if (_isDisposed || index < 0 || index >= videos.length) return;
-    if (_controllers.containsKey(index)) return;
+    if (_controllers.containsKey(index) || _failed.contains(index)) return;
 
+    VideoPlayerController? controller;
     try {
-      final controller = VideoPlayerController.networkUrl(
+      controller = VideoPlayerController.networkUrl(
         Uri.parse(videos[index].videoUrl),
       );
       _controllers[index] = controller;
       await controller.initialize();
+      // Disposed or evicted while initialising.
+      if (_isDisposed || _controllers[index] != controller) return;
       controller.setLooping(true);
 
       // Auto-play if this is the current page
@@ -73,6 +92,14 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
       if (mounted) setState(() {});
     } catch (e) {
       debugPrint('[VideoDiscovery] Failed to init video $index: $e');
+      // Drop the dead controller (it used to stay in the map forever, so
+      // the page spun indefinitely and was never retried).
+      if (_controllers[index] == controller) {
+        _controllers.remove(index);
+        controller?.dispose();
+      }
+      _failed.add(index);
+      if (mounted) setState(() {});
     }
   }
 
@@ -106,6 +133,9 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
 
     _currentPage = page;
 
+    // Landing on a page that failed earlier: give it another try.
+    if (_failed.remove(page) && mounted) setState(() {});
+
     // Play new video
     final controller = _controllers[page];
     if (controller != null && controller.value.isInitialized) {
@@ -114,13 +144,36 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
 
     _preloadVideos(page, videos);
 
-    // Load more videos when near the end
-    if (page >= videos.length - 3) {
-      final lastId = videos.isNotEmpty ? videos.last.id : null;
-      context
-          .read<VideoProfileBloc>()
-          .add(LoadDiscoveryVideos(lastId: lastId));
+    // Load more videos when near the end (once per page, until exhausted)
+    if (page >= videos.length - 3 && !_feedExhausted && videos.isNotEmpty) {
+      final lastId = videos.last.id;
+      if (lastId != _requestedLastId) {
+        _requestedLastId = lastId;
+        context
+            .read<VideoProfileBloc>()
+            .add(LoadDiscoveryVideos(limit: _pageSize, lastId: lastId));
+      }
     }
+  }
+
+  /// Runs on every new discovery list (outside build): warms the players
+  /// around the current page and detects an exhausted feed.
+  void _onVideosLoaded(List<VideoProfile> videos) {
+    if (_requestedLastId != null && videos.length <= _lastVideoCount) {
+      _feedExhausted = true;
+    }
+    if (videos.length < _lastVideoCount) {
+      // Fresh (non-paginated) reload: indexes now point at other videos.
+      for (final c in _controllers.values) {
+        c.dispose();
+      }
+      _controllers.clear();
+      _failed.clear();
+      _requestedLastId = null;
+      _feedExhausted = false;
+    }
+    _lastVideoCount = videos.length;
+    if (videos.isNotEmpty) _preloadVideos(_currentPage, videos);
   }
 
   void _onLike() {
@@ -219,7 +272,16 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
           ),
         ),
       ),
-      body: BlocBuilder<VideoProfileBloc, VideoProfileState>(
+      body: BlocConsumer<VideoProfileBloc, VideoProfileState>(
+        listenWhen: (prev, curr) =>
+            curr is VideoProfileLoaded &&
+            (prev is! VideoProfileLoaded ||
+                prev.discoveryVideos != curr.discoveryVideos),
+        listener: (context, state) {
+          if (state is VideoProfileLoaded) {
+            _onVideosLoaded(state.discoveryVideos);
+          }
+        },
         builder: (context, state) {
           if (state is VideoProfileLoading) {
             return const Center(
@@ -247,7 +309,7 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
                   ElevatedButton(
                     onPressed: () => context
                         .read<VideoProfileBloc>()
-                        .add(const LoadDiscoveryVideos()),
+                        .add(const LoadDiscoveryVideos(limit: _pageSize)),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
                     ),
@@ -292,9 +354,8 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
               );
             }
 
-            // Initialize first videos
-            _preloadVideos(_currentPage, videos);
-
+            // Players are warmed in the BlocConsumer listener, not here:
+            // build must stay side-effect free.
             return PageView.builder(
               controller: _pageController,
               scrollDirection: Axis.vertical,
@@ -304,6 +365,7 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
                 return _VideoPage(
                   videoProfile: videos[index],
                   controller: _controllers[index],
+                  failed: _failed.contains(index),
                   onLike: _onLike,
                   onPass: _onPass,
                   onReport: (ctx) => _reportVideo(ctx, videos[index]),
@@ -329,8 +391,11 @@ class _VideoPage extends StatelessWidget {
     required this.videoProfile,
     required this.onLike, required this.onPass, required this.onReport,
     this.controller,
+    this.failed = false,
   });
   final VideoProfile videoProfile;
+  /// The player could not be initialised (bad URL / network).
+  final bool failed;
   /// Opens the shared report/block sheet for this video's author.
   final void Function(BuildContext) onReport;
   final VideoPlayerController? controller;
@@ -364,11 +429,30 @@ class _VideoPage extends StatelessWidget {
           else
             Container(
               color: AppColors.pureBlack,
-              child: const Center(
-                child: CircularProgressIndicator(
-                  color: AppColors.richGold,
-                  strokeWidth: 2,
-                ),
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  // Show the thumbnail while the video buffers (or failed).
+                  if (videoProfile.thumbnailUrl != null &&
+                      videoProfile.thumbnailUrl!.isNotEmpty)
+                    CachedNetworkImage(
+                      imageUrl: videoProfile.thumbnailUrl!,
+                      fit: BoxFit.cover,
+                      errorWidget: (_, __, ___) => const SizedBox.shrink(),
+                    ),
+                  Center(
+                    child: failed
+                        ? const Icon(
+                            Icons.error_outline,
+                            color: AppColors.textSecondary,
+                            size: 48,
+                          )
+                        : const CircularProgressIndicator(
+                            color: AppColors.richGold,
+                            strokeWidth: 2,
+                          ),
+                  ),
+                ],
               ),
             ),
 

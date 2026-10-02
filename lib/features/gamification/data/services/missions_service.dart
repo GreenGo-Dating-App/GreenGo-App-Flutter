@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../coins/data/datasources/coin_remote_datasource.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
+import 'chat_partner_ids.dart';
 
 /// A static mission definition from the catalog.
 @immutable
@@ -80,8 +81,7 @@ class MissionsService {
   static const String _membersGroup = 'members';
 
   // Bounds — keep every read cheap regardless of how active the user is.
-  static const int _maxConversationsPerSide = 40;
-  static const int _maxPartners = 30;
+  // Conversation/partner caps live in ChatPartnerIds (shared with Passport).
   static const int _maxEventRsvps = 20;
   static const int _whereInBatch = 10; // Firestore `whereIn` hard cap.
 
@@ -146,33 +146,43 @@ class MissionsService {
           .toList();
     }
 
-    // Claimed set (persisted).
-    final claimed = <String>{};
-    try {
-      final snap = await _doc(userId).get();
-      final list = snap.data()?['claimed'] as List<dynamic>?;
-      if (list != null) {
-        claimed.addAll(list.map((e) => e.toString()));
+    // Claimed set (persisted). Read in parallel with every derivation below.
+    Future<Set<String>> readClaimed() async {
+      final claimed = <String>{};
+      try {
+        final snap = await _doc(userId).get();
+        final list = snap.data()?['claimed'] as List<dynamic>?;
+        if (list != null) {
+          claimed.addAll(list.map((e) => e.toString()));
+        }
+      } catch (e) {
+        debugPrint('MissionsService.load claimed read failed: $e');
       }
-    } catch (e) {
-      debugPrint('MissionsService.load claimed read failed: $e');
+      return claimed;
     }
 
-    // Resolve chat partners once (reused by two missions).
-    List<String> partnerIds = const <String>[];
-    try {
-      partnerIds = await _partnerUserIds(userId);
-    } catch (e) {
-      debugPrint('MissionsService.load partners failed: $e');
+    // Chat partners resolved once (reused by two missions, and shared with
+    // the Cultural Passport via ChatPartnerIds).
+    Future<List<String>> readPartners() async {
+      try {
+        return await _partnerUserIds(userId);
+      } catch (e) {
+        debugPrint('MissionsService.load partners failed: $e');
+        return const <String>[];
+      }
     }
 
+    final partnersFuture = readPartners();
+    final claimedFuture = readClaimed();
     final results = await Future.wait<int>(<Future<int>>[
       _guard(() => _attendedEventCount(userId)), // attend events
-      _guard(() => _distinctPartnerCountries(partnerIds)), // countries
+      _guard(() async =>
+          _distinctPartnerCountries(await partnersFuture)), // countries
       _guard(() => _joinedCommunityCount(userId)), // join community
       _guard(() => _profileCompletionSections(userId)), // complete profile
-      Future<int>.value(partnerIds.length), // add people
+      partnersFuture.then((ids) => ids.length), // add people
     ]);
+    final claimed = await claimedFuture;
 
     return <MissionState>[
       _state(catalog[0], results[0], claimed),
@@ -285,43 +295,26 @@ class MissionsService {
   }
 
   /// The other participants of the user's 1:1 conversations, capped.
-  Future<List<String>> _partnerUserIds(String userId) async {
-    final ids = <String>{};
-
-    Future<void> collect(String field) async {
-      final snap = await _firestore
-          .collection(_conversationsCol)
-          .where(field, isEqualTo: userId)
-          .limit(_maxConversationsPerSide)
-          .get();
-      for (final doc in snap.docs) {
-        final data = doc.data();
-        final u1 = data['userId1'] as String?;
-        final u2 = data['userId2'] as String?;
-        final other = u1 == userId ? u2 : u1;
-        if (other != null && other.isNotEmpty && other != userId) {
-          ids.add(other);
-        }
-        if (ids.length >= _maxPartners) break;
-      }
-    }
-
-    await collect('userId1');
-    if (ids.length < _maxPartners) await collect('userId2');
-    return ids.take(_maxPartners).toList();
-  }
+  Future<List<String>> _partnerUserIds(String userId) => ChatPartnerIds.load(
+        _firestore,
+        userId,
+        conversationsCollection: _conversationsCol,
+      );
 
   /// Number of distinct countries among the user's chat partners.
   Future<int> _distinctPartnerCountries(List<String> partnerIds) async {
     if (partnerIds.isEmpty) return 0;
     final countries = <String>{};
-    for (var i = 0; i < partnerIds.length; i += _whereInBatch) {
-      final batch = partnerIds.skip(i).take(_whereInBatch).toList();
-      if (batch.isEmpty) break;
-      final snap = await _firestore
-          .collection(_profilesCol)
-          .where(FieldPath.documentId, whereIn: batch)
-          .get();
+    // Batches read in parallel (was one sequential round-trip per batch).
+    final snaps = await Future.wait([
+      for (var i = 0; i < partnerIds.length; i += _whereInBatch)
+        _firestore
+            .collection(_profilesCol)
+            .where(FieldPath.documentId,
+                whereIn: partnerIds.skip(i).take(_whereInBatch).toList())
+            .get(),
+    ]);
+    for (final snap in snaps) {
       for (final doc in snap.docs) {
         final location = doc.data()['location'];
         if (location is Map) {

@@ -106,6 +106,10 @@ class _DetailViewState extends State<_DetailView> {
   /// never the dateless direct pay.
   List<ExperienceSlot>? _slots;
 
+  /// When [_slots] was read (handed to the booking flow so it can skip its
+  /// own re-read of the same dates).
+  DateTime? _slotsAt;
+
   @override
   void initState() {
     super.initState();
@@ -117,8 +121,10 @@ class _DetailViewState extends State<_DetailView> {
     if (!mounted) return;
     r.fold((_) {}, (list) {
       final now = DateTime.now();
-      setState(() =>
-          _slots = list.where((x) => x.isOpen && x.start.isAfter(now)).toList());
+      setState(() {
+        _slots = list.where((x) => x.isOpen && x.start.isAfter(now)).toList();
+        _slotsAt = now;
+      });
     });
   }
 
@@ -129,7 +135,10 @@ class _DetailViewState extends State<_DetailView> {
   Future<void> _book(UserExperience e) async {
     if (!_hasSlots) return _pay(e);
     await Navigator.of(context).push(BookExperienceScreen.route(
-        experience: e, currentUserId: widget.currentUserId));
+        experience: e,
+        currentUserId: widget.currentUserId,
+        initialSlots: _slots,
+        initialSlotsAt: _slotsAt));
     if (mounted) _loadSlots();
   }
 

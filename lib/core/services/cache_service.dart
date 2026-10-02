@@ -31,9 +31,16 @@ class CacheService {
     try {
       await Hive.initFlutter();
 
-      _profilesBox = await Hive.openBox<String>('profiles_cache');
-      _settingsBox = await Hive.openBox<String>('settings_cache');
-      _generalBox = await Hive.openBox<String>('general_cache');
+      // Opened together: each open is a separate file read, and doing them one
+      // after another held app startup for all three.
+      final (profiles, settings, general) = await (
+        Hive.openBox<String>('profiles_cache'),
+        Hive.openBox<String>('settings_cache'),
+        Hive.openBox<String>('general_cache'),
+      ).wait;
+      _profilesBox = profiles;
+      _settingsBox = settings;
+      _generalBox = general;
 
       debugPrint('✓ Cache Service initialized');
     } catch (e) {

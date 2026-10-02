@@ -1,6 +1,9 @@
+import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+
+import '../../core/cache/last_result_cache.dart';
 
 import '../profile/data/models/profile_model.dart';
 import '../profile/domain/entities/profile.dart';
@@ -46,10 +49,11 @@ class RecommendationService {
   /// Returns up to [limit] recommended [Profile]s for [userId], ranked by
   /// relevance to [me]. [lat]/[lng] (when provided) drive the proximity bonus.
   ///
-  /// Pool fetch (cheap, index-free, in parallel): a same-city and a
-  /// same-country equality batch, each capped at [_poolBatch]. Only when both
-  /// come back too thin is a plain bounded batch read as a top-up (that batch
-  /// is simply the first docs by id — arbitrary, so it is the last resort).
+  /// Pool fetch (cheap, index-free, in parallel): same city+country, same
+  /// country, travellers in my country and same-language batches, each capped
+  /// at [_poolBatch]. Only when they all come back too thin is a plain bounded
+  /// batch read as a top-up (that batch is simply the first docs by id —
+  /// arbitrary, so it is the last resort).
   /// Self, ghost-mode, admin/support and non-active accounts are excluded.
   Future<List<Profile>> recommendPeople({
     required String userId,
@@ -82,16 +86,51 @@ class RecommendationService {
       }
     }
 
-    // 1) Same-city + same-country batches — single-field equality queries
-    //    (auto-indexed), read in parallel.
+    // 1) Local batches, all in ONE parallel round (equality / array-contains
+    //    only, so Firestore serves them from single-field indexes — no
+    //    composite index):
+    //    * same city AND same country (city alone mixed same-name cities in
+    //      different countries); city-only if that query is rejected,
+    //    * same country,
+    //    * travellers currently in my country (their `location.*` is home,
+    //      but scoring uses effectiveLocation, so they were never fetched),
+    //    * people who speak my first language (fills sparse areas without
+    //      the arbitrary top-up).
     final profiles = _firestore.collection('profiles');
     final myCity = me.effectiveLocation.city.trim();
     final myCountry = me.effectiveLocation.country.trim();
+    final hasCountry =
+        myCountry.isNotEmpty && myCountry.toLowerCase() != 'unknown';
+    final myLanguage = me.languages
+        .map((l) => l.trim())
+        .firstWhere((l) => l.isNotEmpty, orElse: () => '');
+
+    Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>> cityBatch() async {
+      if (!hasCountry) {
+        return read(profiles.where('location.city', isEqualTo: myCity));
+      }
+      try {
+        return (await profiles
+                .where('location.city', isEqualTo: myCity)
+                .where('location.country', isEqualTo: myCountry)
+                .limit(_poolBatch)
+                .get())
+            .docs;
+      } catch (_) {
+        return read(profiles.where('location.city', isEqualTo: myCity));
+      }
+    }
+
     final batches = await Future.wait([
-      if (myCity.isNotEmpty)
-        read(profiles.where('location.city', isEqualTo: myCity)),
-      if (myCountry.isNotEmpty && myCountry.toLowerCase() != 'unknown')
+      if (myCity.isNotEmpty) cityBatch(),
+      if (hasCountry)
         read(profiles.where('location.country', isEqualTo: myCountry)),
+      if (hasCountry)
+        read(profiles
+            .where('isTraveler', isEqualTo: true)
+            .where('travelerLocation.country', isEqualTo: myCountry)),
+      if (myLanguage.isNotEmpty)
+        read(profiles.where('languages', arrayContains: myLanguage)),
     ]);
     for (final docs in batches) {
       ingest(docs);
@@ -142,7 +181,38 @@ class RecommendationService {
     }).toList()
       ..sort((a, b) => b.score.compareTo(a.score));
 
-    return scored.take(limit).map((s) => s.profile).toList();
+    final result = scored.take(limit).map((s) => s.profile).toList();
+    // Ids for an instant paint on the next open ([cachedRecommendations]).
+    unawaited(LastResultCache.saveIds(cacheKey, result.map((p) => p.userId)));
+    return result;
+  }
+
+  /// [LastResultCache] key of the last server-ranked result.
+  static const String cacheKey = 'recommendations_v1';
+
+  /// The last ranked result, read by id from the LOCAL Firestore cache only
+  /// (no network), with the same exclusions as [recommendPeople]. Paint it
+  /// only when NON-EMPTY, then call [recommendPeople] and replace it.
+  Future<List<Profile>> cachedRecommendations({
+    required String userId,
+    bool Function(Profile profile)? isVisible,
+  }) async {
+    try {
+      final docs = await LastResultCache.loadDocs(
+          cacheKey, _firestore.collection('profiles'));
+      final out = <Profile>[];
+      for (final doc in docs) {
+        final data = doc.data();
+        if (data == null) continue;
+        final p = _parse(doc.id, data, userId);
+        if (p == null) continue;
+        if (isVisible != null && !isVisible(p)) continue;
+        out.add(p);
+      }
+      return out;
+    } catch (_) {
+      return const <Profile>[];
+    }
   }
 
   /// Parses a `profiles` document into a [Profile], or null when it must not be

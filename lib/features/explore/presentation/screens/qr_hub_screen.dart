@@ -106,30 +106,44 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
       // actually needs at the door surface first.
       // Tickets the user deleted from a PAST event are hidden per-user (the
       // attendee record is kept) — one small doc read, fetched in parallel.
-      final results = await Future.wait<Object>([
-        ds.getUserEvents(widget.currentUserId),
-        _hiddenStore.getAll(widget.currentUserId).catchError(
-              (Object _) => <String>{},
-            ),
-      ]);
-      final hidden = results[1] as Set<String>;
-      final all = (results[0] as List<Event>)
-          .where((e) => !hidden.contains(e.id))
-          .toList();
-      final now = DateTime.now();
-      // "Not past" = still upcoming OR currently ongoing (endDate not reached).
-      // This keeps today's / in-progress events (which the future-only filter
-      // used to hide) at the top alongside upcoming ones.
-      bool isPast(Event e) => e.endDate.isBefore(now);
-      final upcoming = all.where((e) => !isPast(e)).toList()
-        ..sort((a, b) => a.startDate.compareTo(b.startDate));
-      final past = all.where(isPast).toList()
-        ..sort((a, b) => b.startDate.compareTo(a.startDate));
-      mine = [...upcoming, ...past];
+      final hiddenFuture = _hiddenStore
+          .getAll(widget.currentUserId)
+          .catchError((Object _) => <String>{});
+      // Server load (shared session memo) starts now…
+      final serverFuture = ds.getUserEvents(widget.currentUserId);
+      serverFuture.then((_) {}, onError: (Object _) {});
+      // …while the local cache paints the tickets in milliseconds.
+      try {
+        final cached = await ds.getUserEvents(widget.currentUserId,
+            preferCache: true);
+        if (cached.isNotEmpty) {
+          final hidden = await hiddenFuture;
+          if (mounted && _events == null) {
+            setState(() => _events = _arrange(cached, hidden));
+          }
+        }
+      } catch (_) {/* not cached: wait for the server */}
+      final results = await Future.wait<Object>([serverFuture, hiddenFuture]);
+      mine = _arrange(results[0] as List<Event>, results[1] as Set<String>);
     } catch (_) {
-      mine = const <Event>[];
+      // Keep a cached paint rather than blanking it on a server failure.
+      mine = _events ?? const <Event>[];
     }
     if (mounted) setState(() => _events = mine);
+  }
+
+  /// Hidden tickets dropped; "not past" (upcoming OR ongoing, endDate not
+  /// reached — so today's / in-progress events stay at the top) soonest
+  /// first, then past ones most recent first.
+  List<Event> _arrange(List<Event> events, Set<String> hidden) {
+    final all = events.where((e) => !hidden.contains(e.id)).toList();
+    final now = DateTime.now();
+    bool isPast(Event e) => e.endDate.isBefore(now);
+    final upcoming = all.where((e) => !isPast(e)).toList()
+      ..sort((a, b) => a.startDate.compareTo(b.startDate));
+    final past = all.where(isPast).toList()
+      ..sort((a, b) => b.startDate.compareTo(a.startDate));
+    return [...upcoming, ...past];
   }
 
   /// Drop a deleted ticket from the list immediately (no refetch needed).

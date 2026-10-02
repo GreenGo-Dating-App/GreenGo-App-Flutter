@@ -18,7 +18,18 @@ class ExternalEventsPreloader {
   ExternalEventsPreloader._();
   static final ExternalEventsPreloader instance = ExternalEventsPreloader._();
 
-  static const List<String> _sources = ['ticketmaster', 'viator'];
+  /// Warmed views: Live (ticketmaster, distance), Experiences (viator,
+  /// distance) and the partner side of Events "All" (ticketmaster by date,
+  /// narrowed to the profile's country when known).
+  static const List<({String key, String source, String sort})> _views = [
+    (key: 'ticketmaster', source: 'ticketmaster', sort: 'distance'),
+    (key: 'viator', source: 'viator', sort: 'distance'),
+    (key: 'ticketmaster:date', source: 'ticketmaster', sort: 'date'),
+  ];
+
+  /// Job key of a view (distance views keep their bare source name).
+  static String keyFor(String source, String sort) =>
+      sort == 'distance' ? source : '$source:$sort';
 
   /// A warmed page older than this is re-queried by the tab instead.
   static const Duration _maxAge = Duration(minutes: 5);
@@ -37,30 +48,35 @@ class ExternalEventsPreloader {
 
   /// Fire-and-forget; each source runs at most once per session. Never throws.
   Future<void> warm([String? userId]) async {
-    final todo = _sources
-        .where((s) => !_jobs.containsKey(s) && !_claimed.contains(s))
+    final todo = _views
+        .where((v) => !_jobs.containsKey(v.key) && !_claimed.contains(v.key))
         .toList();
     if (todo.isEmpty) return;
-    final anchorFuture = EventsLocation.quick(
-        userId ?? FirebaseAuth.instance.currentUser?.uid ?? '');
+    final uid = userId ?? FirebaseAuth.instance.currentUser?.uid ?? '';
+    final anchorFuture = EventsLocation.quick(uid);
     final epoch = _epoch;
-    for (final source in todo) {
-      _jobs[source] = () async {
+    for (final view in todo) {
+      final key = view.key;
+      _jobs[key] = () async {
         try {
           final anchor = await anchorFuture;
+          final place = view.sort == 'date'
+              ? await EventsLocation.profilePlace(uid)
+              : null;
           // Claims are honoured only BEFORE the read starts; once started, the
           // result is always stored so a tab waiting in [take] receives it.
-          if (_claimed.contains(source) || epoch != _epoch) return;
+          if (_claimed.contains(key) || epoch != _epoch) return;
           final pager = ExternalEventsPager(
-            source: source,
-            sort: 'distance',
+            source: view.source,
+            sort: view.sort,
             userLat: anchor?.lat,
             userLng: anchor?.lng,
             liveChunks: true,
+            country: place?.country,
           );
           final first = await pager.next();
           if (epoch != _epoch) return;
-          _warm[source] = (pager: pager, items: first, at: DateTime.now());
+          _warm[key] = (pager: pager, items: first, at: DateTime.now());
           unawaited(pager.saveFirstPage(first));
         } catch (_) {/* best-effort */}
       }();
@@ -72,16 +88,27 @@ class ExternalEventsPreloader {
   /// anchor ([lat]/[lng]) and is still fresh; waits for an in-flight warm of
   /// that source. Null otherwise. Handing it over transfers ownership, and
   /// marks the source claimed either way.
+  ///
+  /// [sort] 'date' takes the soonest-first view; it is anchor-free, so only
+  /// the [country] it was narrowed to must match.
   Future<({ExternalEventsPager pager, List<ExternalEvent> items})?> take(
       String source,
       {double? lat,
-      double? lng}) async {
-    _claimed.add(source);
-    final job = _jobs[source];
+      double? lng,
+      String sort = 'distance',
+      String? country}) async {
+    final key = keyFor(source, sort);
+    _claimed.add(key);
+    final job = _jobs[key];
     if (job != null) await job;
-    final w = _warm.remove(source);
+    final w = _warm.remove(key);
     if (w == null) return null;
     if (DateTime.now().difference(w.at) > _maxAge) return null;
+    if (sort != 'distance') {
+      return (w.pager.country ?? '') == (country ?? '')
+          ? (pager: w.pager, items: w.items)
+          : null;
+    }
     final pLat = w.pager.userLat, pLng = w.pager.userLng;
     final sameAnchor = (pLat == null || pLng == null)
         ? lat == null && lng == null

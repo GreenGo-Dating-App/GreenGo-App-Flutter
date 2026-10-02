@@ -7,9 +7,11 @@ import '../models/dating_etiquette_model.dart';
 abstract class CulturalExchangeRemoteDataSource {
   Future<CountrySpotlightModel?> getActiveSpotlight();
   Future<List<CountrySpotlightModel>> getSpotlightHistory();
+  /// Newest tips first, at most [limit].
   Future<List<CulturalTipModel>> getCulturalTips({
     String? country,
     String? category,
+    int limit = 50,
   });
   Future<void> submitCulturalTip(CulturalTipModel tip);
   Future<void> likeCulturalTip(String tipId, String userId);
@@ -91,6 +93,7 @@ class CulturalExchangeRemoteDataSourceImpl
   Future<List<CulturalTipModel>> getCulturalTips({
     String? country,
     String? category,
+    int limit = 50,
   }) async {
     try {
       Query<Map<String, dynamic>> query = _tipsCollection;
@@ -105,7 +108,7 @@ class CulturalExchangeRemoteDataSourceImpl
 
       final snapshot = await query
           .orderBy('createdAt', descending: true)
-          .limit(50)
+          .limit(limit)
           .get();
 
       return snapshot.docs
@@ -120,7 +123,9 @@ class CulturalExchangeRemoteDataSourceImpl
           query = query.where('country', isEqualTo: country);
         }
 
-        final snapshot = await query.limit(50).get();
+        // Unordered fallback: keep the wider window so the local sort still
+        // surfaces recent tips, then trim to [limit].
+        final snapshot = await query.limit(limit < 50 ? 50 : limit).get();
 
         final tips = snapshot.docs
             .map(CulturalTipModel.fromFirestore)
@@ -132,12 +137,14 @@ class CulturalExchangeRemoteDataSourceImpl
             (e) => e.name == category,
             orElse: () => TipCategory.customs,
           );
-          return tips.where((t) => t.category == tipCategory).toList();
+          final filtered =
+              tips.where((t) => t.category == tipCategory).toList();
+          return filtered.take(limit).toList();
         }
 
         // Sort locally by createdAt descending
         tips.sort((a, b) => b.createdAt.compareTo(a.createdAt));
-        return tips;
+        return tips.take(limit).toList();
       } catch (_) {
         return [];
       }
