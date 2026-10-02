@@ -1,4 +1,5 @@
 import '../../../core/services/content_filter_service.dart';
+import 'contact_info.dart';
 import 'entities/user_experience.dart';
 
 /// Field limits — mirrored by functions/src/user_experiences/validation.ts and
@@ -22,6 +23,7 @@ class ExperienceLimits {
   static const int locationMax = 200;
   static const int paymentValueMax = 300;
   static const int languagesMax = 10;
+  static const int cancellationNotesMax = 300;
   static const int reviewMax = 1000;
   static const int replyMax = 500;
   static const int mentionsMax = 10;
@@ -46,7 +48,14 @@ enum ExperienceFieldError {
   priceInvalid,
   paymentLinkRequired,
   paymentLinkInvalid,
+
+  /// Paid experience without any payment method (cash / link).
+  paymentMethodsRequired,
   prohibitedText,
+
+  /// Phone / e-mail / handle / PIX key / "pay me on…" outside the payment
+  /// link (anti-scam).
+  contactInfo,
 }
 
 /// Raw values of the create/edit form (what validation looks at).
@@ -66,11 +75,12 @@ class ExperienceDraft {
     this.minGroupSize,
     this.meetingPoint = '',
     this.availability = '',
-    this.cancellationPolicy = '',
+    this.cancellationNotes = '',
     this.isFree = false,
     this.price,
     this.paymentType = PaymentLinkType.pix,
     this.paymentValue = '',
+    this.paymentMethods = const {PaymentMethod.link},
   });
 
   final String title;
@@ -87,11 +97,14 @@ class ExperienceDraft {
   final int? minGroupSize;
   final String meetingPoint;
   final String availability;
-  final String cancellationPolicy;
+  final String cancellationNotes;
   final bool isFree;
   final double? price;
   final PaymentLinkType paymentType;
   final String paymentValue;
+
+  /// Cash at the meeting and/or the online link (paid experiences).
+  final Set<PaymentMethod> paymentMethods;
 }
 
 /// Pure validation for the experience form (unit tested).
@@ -199,25 +212,42 @@ class ExperienceValidator {
         add(ExperienceFieldError.priceInvalid);
       }
     }
-    add(paymentLink(d.isFree, d.paymentType, d.paymentValue));
+    // Paid: at least one method; the link is required only when chosen.
+    // Free: no payment at all.
+    if (!d.isFree) {
+      if (d.paymentMethods.isEmpty) {
+        add(ExperienceFieldError.paymentMethodsRequired);
+      }
+      if (d.paymentMethods.contains(PaymentMethod.link)) {
+        add(paymentLink(false, d.paymentType, d.paymentValue));
+      }
+    }
 
     if (prohibitedTerms(d).isNotEmpty) add(ExperienceFieldError.prohibitedText);
+    if (hasContactInfo(d)) add(ExperienceFieldError.contactInfo);
     return errors;
   }
+
+  /// Every free-text field the server moderates (NOT the payment link).
+  static List<String> _texts(ExperienceDraft d) => [
+        d.title,
+        d.description,
+        d.meetingPoint,
+        d.availability,
+        d.cancellationNotes,
+        ...d.included,
+        ...d.notIncluded,
+      ];
+
+  /// Off-platform contact / payment info in any moderated field.
+  static bool hasContactInfo(ExperienceDraft d) =>
+      _texts(d).any(ContactInfoDetector.contains);
 
   /// Prohibited terms across every free-text field of the form.
   static List<String> prohibitedTerms(ExperienceDraft d) {
     final filter = ContentFilterService();
     final hits = <String>{};
-    for (final t in [
-      d.title,
-      d.description,
-      d.meetingPoint,
-      d.availability,
-      d.cancellationPolicy,
-      ...d.included,
-      ...d.notIncluded,
-    ]) {
+    for (final t in _texts(d)) {
       hits.addAll(filter.findProhibitedTerms(t));
     }
     return hits.toList();

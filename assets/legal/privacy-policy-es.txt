@@ -194,10 +194,13 @@ Podemos recopilar y procesar los siguientes datos personales sensibles con su co
 - Datos biometricos (solo para verificacion de identidad)
 - Datos del documento de identidad (solo para la verificacion de edad - vease la Seccion 2.6)
 
-No conservamos las imagenes utilizadas para la verificacion de identidad o de
-edad. La verificacion facial y la verificacion de edad se procesan y la imagen
-de origen se elimina despues; solo se conserva el resultado derivado. Veanse las
-Secciones 2.6 y 8.1(e).
+Las imagenes de documentos de identidad utilizadas para la verificacion de edad
+se guardan en un almacenamiento restringido, accesible solo desde el servidor,
+para prevenir el fraude (veanse las Secciones 2.6 y 8.1(e)). Para prevenir el
+fraude y por la seguridad de la comunidad, los documentos de identidad se
+conservan hasta 30 dias despues de la eliminacion de la cuenta y luego se borran
+de forma permanente. La verificacion facial se procesa y solo se conserva el
+resultado derivado.
 
 Retirar el consentimiento para la verificacion de edad elimina su estado de
 verificado y, con el, la posibilidad de publicar contenido en las Comunidades.
@@ -298,16 +301,22 @@ b) Cuando desea PUBLICAR contenido en una Comunidad. Leer y unirse a Comunidades
 
 QUE OCURRE CON SU DOCUMENTO
 
-Esta disenado para conservar su documento durante segundos, no dias:
+Su documento se trata de la siguiente manera:
 
 1. Usted sube una fotografia de un documento de identidad a una ubicacion de
    almacenamiento de solo escritura. No puede volver a leerse - ni por usted ni
    por nuestro personal.
 2. Nuestros sistemas leen el documento automaticamente mediante reconocimiento
    optico de caracteres, para extraer la fecha de nacimiento.
-3. La imagen se elimina en la misma operacion, tanto si la verificacion tiene
-   exito como si falla. Ningun empleado la ve, y no existe ninguna interfaz capaz
-   de mostrarla.
+3. A continuacion, la imagen se traslada a un almacenamiento restringido,
+   accesible solo desde el servidor, al que ningun usuario ni ninguna interfaz
+   de la app puede acceder. Se conserva mientras exista su cuenta, para poder
+   investigar fraudes (por ejemplo, un documento falsificado o reutilizado). Un
+   documento que usted sustituya se conserva 30 dias y despues se borra. Para
+   prevenir el fraude y por la seguridad de la comunidad, los documentos de
+   identidad se conservan hasta 30 dias despues de la eliminacion de la cuenta y
+   luego se borran de forma permanente (mas tiempo solo mientras lo requiera una
+   investigacion de fraude o estafa en curso).
 
 QUE CONSERVAMOS
 
@@ -321,9 +330,10 @@ Solo lo necesario para sustentar la decision:
 - El resultado, la puntuacion de confianza automatica y - si un miembro del
   personal reviso un caso dudoso - el identificador de ese revisor
 
-NO conservamos: la imagen, su nombre tal como figura impreso en el documento, el
-numero del documento en forma legible, su nacionalidad ni la fecha de caducidad
-del documento.
+NO guardamos en su perfil: la imagen, su nombre tal como figura impreso en el
+documento, el numero del documento en forma legible, su nacionalidad ni la fecha
+de caducidad del documento. La imagen en si solo se conserva en el
+almacenamiento restringido descrito arriba.
 
 DONDE SE PROCESA
 
@@ -574,8 +584,12 @@ d) Datos de Seguridad y Prevencion de Fraude
    - Datos de cuentas prohibidas: Indefinidamente (para prevenir nuevo registro)
 
 e) Datos de Verificacion de Edad e Identidad
-   - Imagenes de documentos: NO SE CONSERVAN. Se eliminan durante la misma
-     operacion que las lee, normalmente a los pocos segundos de la subida.
+   - Imagenes de documentos: en un almacenamiento restringido, accesible solo
+     desde el servidor, mientras exista la cuenta; un documento sustituido se
+     conserva 30 dias. Para prevenir el fraude y por la seguridad de la
+     comunidad, los documentos de identidad se conservan hasta 30 dias despues
+     de la eliminacion de la cuenta y luego se borran de forma permanente (salvo
+     que una investigacion de fraude en curso exija su retencion).
    - Fecha de nacimiento extraida, resultado de la coincidencia, hash del numero
      del documento y resultado: durante la vigencia de la cuenta. Se eliminan al
      eliminarse la cuenta.

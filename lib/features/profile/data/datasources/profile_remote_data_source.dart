@@ -47,6 +47,14 @@ const _serverOwnedProfileFields = <String>{
   'followingCount',
   'ratingSum',
   'ratingCount',
+  // Host overall rating across all experiences (user_experiences triggers).
+  'hostRatingSum',
+  'hostRatingCount',
+  'hostRatingAvg',
+  // Guest rating from host reviews (experience_bookings onGuestReviewWritten).
+  'guestRatingSum',
+  'guestRatingCount',
+  'guestRatingAvg',
 };
 
 /// The part of a profile a client may write.

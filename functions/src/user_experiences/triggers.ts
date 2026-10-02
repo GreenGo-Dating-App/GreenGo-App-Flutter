@@ -4,15 +4,20 @@
  *  onUserExperienceWritten   user_experiences/{experienceId}
  *    - create/update: re-moderates the listing text (the client check can be
  *      bypassed) → auto-hides on prohibited language, auto-restores once clean;
- *    - delete: decrements the host's `user_experience_counts` counter and
- *      deletes the reviews/replies subtree (bounded by the subtree size).
+ *    - delete: decrements the host's `user_experience_counts` counter,
+ *      subtracts the experience's last rating aggregate from the host's
+ *      profile totals (exactly once, by event id) and deletes the
+ *      reviews/replies subtree (bounded by the subtree size). The review
+ *      delete events that follow find the experience gone and change nothing,
+ *      so the host is never decremented twice.
  *
  *  onExperienceReviewWritten user_experiences/{experienceId}/reviews/{reviewerId}
  *    - moderation: sets status visible|rejected from the comment (prohibited
  *      language or a link → rejected; hidden from everyone but the author);
  *    - aggregates: ratingSum/ratingCount/ratingAvg/reviewCount/ratingDist on the
- *      experience, in a transaction, deduplicated by event id (only visible
- *      reviews count);
+ *      experience AND hostRatingSum/hostRatingCount/hostRatingAvg on the
+ *      host's profile (when the experience is `hostRatingCounted`), in ONE
+ *      transaction, deduplicated by event id (only visible reviews count);
  *    - notifies the host once when a review first becomes visible.
  *
  *  onExperienceReplyCreated  …/reviews/{reviewerId}/replies/{replyId}
@@ -36,8 +41,13 @@ import {
 } from './moderation';
 import {
   applyAggregateDelta,
+  applyHostRatingDelta,
   computeAggregateDelta,
+  experienceHostContribution,
+  hostDeltaFromAggregateDelta,
   isZeroDelta,
+  isZeroHostDelta,
+  negateHostDelta,
 } from './aggregates';
 import { EXPERIENCES, EXPERIENCE_COUNTS } from './createUserExperience';
 
@@ -45,8 +55,16 @@ const db = admin.firestore();
 const OPTS = { memory: '512MiB' as const, timeoutSeconds: 120 };
 
 /** Dedupe markers for aggregate deltas (TTL on `expireAt`; no client access). */
-const AGG_EVENTS = 'user_experience_agg_events';
+export const AGG_EVENTS = 'user_experience_agg_events';
 const AGG_EVENT_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+const PROFILES = 'profiles';
+
+function aggMarker(extra: Record<string, unknown>) {
+  return {
+    ...extra,
+    expireAt: admin.firestore.Timestamp.fromMillis(Date.now() + AGG_EVENT_TTL_MS),
+  };
+}
 
 function snippet(text: unknown, max = 120): string {
   const s = typeof text === 'string' ? text.trim().replace(/\s+/g, ' ') : '';
@@ -57,7 +75,7 @@ function snippet(text: unknown, max = 120): string {
 
 const MODERATED_FIELDS = [
   'title', 'description', 'meetingPoint', 'availability', 'cancellationPolicy',
-  'included', 'notIncluded', 'status',
+  'included', 'notIncluded', 'status', 'cancellationNotes',
 ];
 
 function moderatedFieldsChanged(
@@ -92,6 +110,31 @@ export const onUserExperienceWritten = onDocumentWritten(
           });
         } catch (e) {
           console.error(`experience counter decrement failed (${hostId}):`, e);
+        }
+      }
+      // Host overall rating: remove this experience's contribution. Uses the
+      // deleted snapshot, which includes every review delta committed before
+      // the delete (review transactions read the experience, so they either
+      // committed first or will see it missing and skip).
+      const contribution = experienceHostContribution(before);
+      if (hostId && before?.hostRatingCounted === true && !isZeroHostDelta(contribution)) {
+        try {
+          const markerRef = db.collection(AGG_EVENTS).doc(event.id);
+          const profileRef = db.collection(PROFILES).doc(hostId);
+          await db.runTransaction(async (tx) => {
+            const [marker, profile] = await Promise.all([
+              tx.get(markerRef),
+              tx.get(profileRef),
+            ]);
+            if (marker.exists) return; // duplicate delivery
+            tx.set(markerRef, aggMarker({ experienceId, hostId, kind: 'experience_deleted' }));
+            if (!profile.exists) return;
+            tx.update(profileRef, {
+              ...applyHostRatingDelta(profile.data(), negateHostDelta(contribution)),
+            });
+          });
+        } catch (e) {
+          console.error(`host rating decrement failed (${hostId}/${experienceId}):`, e);
         }
       }
       try {
@@ -164,14 +207,28 @@ export const onExperienceReviewWritten = onDocumentWritten(
       const markerRef = db.collection(AGG_EVENTS).doc(event.id);
       try {
         await db.runTransaction(async (tx) => {
+          // All reads before any write (Firestore transaction rule).
           const [marker, exp] = await Promise.all([tx.get(markerRef), tx.get(expRef)]);
           if (marker.exists) return; // duplicate delivery
-          tx.set(markerRef, {
-            experienceId,
-            expireAt: admin.firestore.Timestamp.fromMillis(Date.now() + AGG_EVENT_TTL_MS),
-          });
-          if (!exp.exists) return; // experience deleted meanwhile
-          tx.update(expRef, { ...applyAggregateDelta(exp.data(), delta) });
+          const expData = exp.exists ? exp.data() ?? {} : null;
+          const hostId = typeof expData?.hostId === 'string' ? expData.hostId : '';
+          // Only experiences already folded into the host totals (new ones, or
+          // after backfillHostRatings) move them; others wait for the backfill,
+          // which adds their whole aggregate at once.
+          const profile = expData && hostId && expData.hostRatingCounted === true
+            ? await tx.get(db.collection(PROFILES).doc(hostId))
+            : null;
+
+          tx.set(markerRef, aggMarker({ experienceId }));
+          // Experience deleted meanwhile: its delete trigger already removed
+          // its (committed) aggregate from the host, so nothing to do here.
+          if (!expData) return;
+          tx.update(expRef, { ...applyAggregateDelta(expData, delta) });
+          if (profile?.exists) {
+            tx.update(profile.ref, {
+              ...applyHostRatingDelta(profile.data(), hostDeltaFromAggregateDelta(delta)),
+            });
+          }
         });
       } catch (e) {
         console.error(`review aggregate failed (${experienceId}/${reviewerId}):`, e);

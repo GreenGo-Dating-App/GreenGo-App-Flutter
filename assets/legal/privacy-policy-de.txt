@@ -194,10 +194,13 @@ Wir koennen die folgenden sensiblen personenbezogenen Daten mit Ihrer ausdrueckl
 - Biometrische Daten (nur zur Identitaetsueberpruefung)
 - Ausweisdokumentdaten (nur zur Altersverifikation - siehe Abschnitt 2.6)
 
-Wir speichern die fuer die Identitaets- oder Altersverifikation verwendeten
-Bilder nicht. Gesichtsverifikation und Altersverifikation werden verarbeitet,
-und das Ausgangsbild wird anschliessend geloescht; nur das abgeleitete Ergebnis
-wird aufbewahrt. Siehe Abschnitte 2.6 und 8.1(e).
+Bilder von Ausweisdokumenten, die zur Altersverifikation verwendet werden,
+werden zur Betrugspraevention in einem zugriffsbeschraenkten, nur serverseitig
+zugaenglichen Speicher aufbewahrt (siehe Abschnitte 2.6 und 8.1(e)). Zur
+Betrugspraevention und zur Sicherheit der Community werden Ausweisdokumente bis
+zu 30 Tage nach der Kontoloeschung aufbewahrt und danach endgueltig geloescht.
+Die Gesichtsverifikation wird verarbeitet, und nur das abgeleitete Ergebnis wird
+aufbewahrt.
 
 Der Widerruf der Einwilligung zur Altersverifikation entfernt Ihren
 verifizierten Status und damit die Moeglichkeit, Inhalte in Communities zu
@@ -298,17 +301,22 @@ b) Wenn Sie Inhalte in einer Community VEROEFFENTLICHEN moechten. Lesen und
 
 WAS MIT IHREM DOKUMENT GESCHIEHT
 
-Das Verfahren ist darauf ausgelegt, Ihr Dokument Sekunden statt Tage
-aufzubewahren:
+Ihr Dokument wird wie folgt behandelt:
 
 1. Sie laden ein Foto eines Ausweisdokuments an einen Speicherort, der nur
    beschreibbar ist. Es kann nicht zurueckgelesen werden - weder von Ihnen noch
    von unseren Mitarbeitenden.
 2. Unsere Systeme lesen das Dokument automatisch mittels optischer
    Zeichenerkennung, um das Geburtsdatum zu entnehmen.
-3. Das Bild wird im selben Vorgang geloescht, unabhaengig davon, ob die
-   Verifikation gelingt oder scheitert. Kein Mitarbeitender sieht es, und es gibt
-   keine Oberflaeche, die es anzeigen koennte.
+3. Das Bild wird anschliessend in einen zugriffsbeschraenkten, nur serverseitig
+   zugaenglichen Speicher verschoben, auf den weder Nutzende noch eine App-
+   Oberflaeche zugreifen koennen. Es wird aufbewahrt, solange Ihr Konto besteht,
+   damit Betrug (z. B. ein gefaelschtes oder mehrfach verwendetes Dokument)
+   untersucht werden kann. Ein ersetztes Dokument wird 30 Tage aufbewahrt und
+   danach geloescht. Zur Betrugspraevention und zur Sicherheit der Community
+   werden Ausweisdokumente bis zu 30 Tage nach der Kontoloeschung aufbewahrt und
+   danach endgueltig geloescht (laenger nur, solange eine laufende
+   Betrugsuntersuchung dies erfordert).
 
 WAS WIR AUFBEWAHREN
 
@@ -322,9 +330,10 @@ Nur das, was die Entscheidung stuetzt:
 - Das Ergebnis, den automatischen Konfidenzwert und - falls ein Mitarbeitender
   einen Grenzfall geprueft hat - die Kennung dieser Person
 
-Wir bewahren NICHT auf: das Bild, Ihren auf dem Dokument gedruckten Namen, die
-Dokumentnummer in lesbarer Form, Ihre Staatsangehoerigkeit oder das Ablaufdatum
-des Dokuments.
+Wir speichern NICHT in Ihrem Profil: das Bild, Ihren auf dem Dokument gedruckten
+Namen, die Dokumentnummer in lesbarer Form, Ihre Staatsangehoerigkeit oder das
+Ablaufdatum des Dokuments. Das Bild selbst wird nur in dem oben beschriebenen
+zugriffsbeschraenkten Speicher aufbewahrt.
 
 WO DIE VERARBEITUNG STATTFINDET
 
@@ -575,8 +584,12 @@ d) Sicherheits- und Betrugspraeventionsdaten
    - Daten gesperrter Konten: Unbegrenzt (um erneute Registrierung zu verhindern)
 
 e) Daten zur Alters- und Identitaetsverifikation
-   - Dokumentbilder: NICHT AUFBEWAHRT. Sie werden in demselben Vorgang geloescht,
-     der sie liest, in der Regel innerhalb von Sekunden nach dem Hochladen.
+   - Dokumentbilder: in einem zugriffsbeschraenkten, nur serverseitig
+     zugaenglichen Speicher, solange das Konto besteht; ein ersetztes Dokument
+     wird 30 Tage aufbewahrt. Zur Betrugspraevention und zur Sicherheit der
+     Community werden Ausweisdokumente bis zu 30 Tage nach der Kontoloeschung
+     aufbewahrt und danach endgueltig geloescht (sofern keine laufende
+     Betrugsuntersuchung eine Sperre erfordert).
    - Entnommenes Geburtsdatum, Abgleichergebnis, Hash der Dokumentnummer und
      Ergebnis: fuer die Dauer des Kontos. Werden mit dem Konto geloescht.
 

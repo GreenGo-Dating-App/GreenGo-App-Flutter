@@ -12,7 +12,21 @@ import '../models/user_experience_model.dart';
 /// structured refusals (limit / prohibited text / invalid payload).
 class ExperienceCreateException implements Exception {
   const ExperienceCreateException(this.code, {this.limit, this.count, this.fields = const []});
-  final String code; // experience_limit | prohibited_text | invalid_experience
+
+  /// experience_limit | prohibited_text | contact_info | invalid_experience |
+  /// one of [safetyCodes].
+  final String code;
+
+  /// Phase 1 safety refusals (functions/src/user_experiences/safety.ts).
+  static const Set<String> safetyCodes = {
+    'id_document_required',
+    'id_document_not_approved',
+    'host_agreement_required',
+    'new_host_paid_limit',
+    'host_banned',
+    'hidden',
+    'agreement_outdated',
+  };
   final int? limit;
   final int? count;
   final List<String> fields;
@@ -132,17 +146,12 @@ class UserExperiencesRemoteDataSource {
     return agg.count ?? 0;
   }
 
-  Future<String> create(UserExperience draft) async {
+  /// Calls [name]; maps the server's structured refusals to
+  /// [ExperienceCreateException].
+  Future<Object?> _call(String name, Map<String, dynamic> payload) async {
     try {
-      final res = await _functions
-          .httpsCallable('createUserExperience')
-          .call<Object?>(UserExperienceModel.createPayload(draft));
-      final data = res.data;
-      final id = data is Map ? data['id'] as String? : null;
-      if (id == null || id.isEmpty) {
-        throw const ExperienceCreateException('invalid_response');
-      }
-      return id;
+      final res = await _functions.httpsCallable(name).call<Object?>(payload);
+      return res.data;
     } on FirebaseFunctionsException catch (e) {
       final details = e.details;
       final code = details is Map ? details['code'] as String? : null;
@@ -153,8 +162,8 @@ class UserExperiencesRemoteDataSource {
           count: details is Map ? (details['count'] as num?)?.toInt() : null,
         );
       }
-      if (code == 'prohibited_text') {
-        throw const ExperienceCreateException('prohibited_text');
+      if (code == 'prohibited_text' || code == 'contact_info') {
+        throw ExperienceCreateException(code!);
       }
       if (code == 'invalid_experience') {
         throw ExperienceCreateException(
@@ -164,26 +173,108 @@ class UserExperiencesRemoteDataSource {
               : const [],
         );
       }
+      if (code != null && ExperienceCreateException.safetyCodes.contains(code)) {
+        throw ExperienceCreateException(code);
+      }
       rethrow;
     }
   }
 
-  Future<void> update(UserExperience e) {
-    return _col.doc(e.id).update({
+  Future<String> create(UserExperience draft) async {
+    final data = await _call(
+        'createUserExperience', UserExperienceModel.createPayload(draft));
+    final id = data is Map ? data['id'] as String? : null;
+    if (id == null || id.isEmpty) {
+      throw const ExperienceCreateException('invalid_response');
+    }
+    return id;
+  }
+
+  /// Saves the host's edits. Every PUBLISH goes through [publish] (the rules
+  /// only let a client write status 'published' on an already-published
+  /// listing). Returns true when the caller must still call [publish]:
+  ///  - [publish] false: saved with the status of [e] (draft = unpublish);
+  ///  - [publish] true and [wasPublished]: saved in place when the rules
+  ///    allow it (returns false); when they do not (e.g. a free listing made
+  ///    paid), it is saved as a draft and must be re-published (true);
+  ///  - [publish] true on a draft: saved as a draft (true).
+  Future<bool> update(
+    UserExperience e, {
+    bool publish = false,
+    bool wasPublished = false,
+  }) async {
+    final payload = <String, dynamic>{
       ...UserExperienceModel.editablePayload(e),
       'hostName': e.hostName,
       'hostPhotoUrl': e.hostPhotoUrl,
-      // The host can't move a moderation-hidden listing (rules enforce it).
-      if (!e.isHidden) 'status': e.status.name,
+      'updatedAt': FieldValue.serverTimestamp(),
+    };
+    final ref = _col.doc(e.id);
+    // A moderation-hidden listing keeps its status (rules enforce it).
+    if (e.isHidden) {
+      await ref.update(payload);
+      return false;
+    }
+    if (!publish) {
+      await ref.update({...payload, 'status': e.status.name});
+      return false;
+    }
+    if (wasPublished) {
+      try {
+        await ref.update(payload);
+        return false;
+      } on FirebaseException catch (x) {
+        if (x.code != 'permission-denied') rethrow;
+      }
+    }
+    await ref.update({...payload, 'status': 'draft'});
+    return true;
+  }
+
+  /// Publishes through the `publishUserExperience` callable (ID document,
+  /// host agreement, approved document for paid, new-host paid limit).
+  /// [asFree] first turns the listing into a free one.
+  Future<void> publish(String id, {bool asFree = false}) =>
+      _call('publishUserExperience', {'experienceId': id, 'asFree': asFree});
+
+  Future<void> setStatus(String id, ExperienceStatus status) {
+    if (status == ExperienceStatus.published) return publish(id);
+    return _col.doc(id).update({
+      'status': status.name,
       'updatedAt': FieldValue.serverTimestamp(),
     });
   }
 
-  Future<void> setStatus(String id, ExperienceStatus status) =>
-      _col.doc(id).update({
-        'status': status.name,
-        'updatedAt': FieldValue.serverTimestamp(),
+  /// Records the host agreement (server-owned profile fields).
+  Future<void> acceptHostAgreement(int version) =>
+      _call('acceptHostAgreement', {'version': version});
+
+  /// The guest consent before paying the host directly. Immutable: a second
+  /// consent for the same experience keeps the first record.
+  Future<void> recordBookingConsent({
+    required String experienceId,
+    required String uid,
+    required CancellationPolicy policy,
+    required int version,
+    required PaymentMethod method,
+  }) async {
+    final ref =
+        _col.doc(experienceId).collection('booking_consents').doc(uid);
+    try {
+      await ref.set({
+        'acceptedAt': FieldValue.serverTimestamp(),
+        'policy': policy.name,
+        'version': version,
+        'experienceId': experienceId,
+        'method': method.name,
       });
+    } on FirebaseException catch (x) {
+      // Already recorded: the write is then a (forbidden) update. Fine.
+      if (x.code != 'permission-denied') rethrow;
+      final existing = await ref.get();
+      if (!existing.exists) rethrow;
+    }
+  }
 
   Future<void> delete(String id) => _col.doc(id).delete();
 
@@ -249,6 +340,83 @@ class UserExperiencesRemoteDataSource {
 
   Future<void> deleteReview(String experienceId, String uid) =>
       _reviews(experienceId).doc(uid).delete();
+
+  // ───────────────────────────────────────────── booking-gated reviews
+
+  DocumentReference<Map<String, dynamic>> _pending(
+          String experienceId, String uid) =>
+      _col.doc(experienceId).collection('pending_reviews').doc(uid);
+
+  Future<ReviewEligibility?> reviewEligibility(
+      String experienceId, String uid) async {
+    final d = await _col
+        .doc(experienceId)
+        .collection('review_eligibility')
+        .doc(uid)
+        .get();
+    final m = d.data();
+    if (!d.exists || m == null) return null;
+    final bookingId = m['bookingId'] as String? ?? '';
+    if (bookingId.isEmpty) return null;
+    return ReviewEligibility(
+      bookingId: bookingId,
+      hostId: m['hostId'] as String?,
+      reviewUntil: experienceDateFrom(m['reviewUntil']),
+    );
+  }
+
+  Future<PendingReview?> pendingReview(String experienceId, String uid) async {
+    final d = await _pending(experienceId, uid).get();
+    final m = d.data();
+    if (!d.exists || m == null) return null;
+    return PendingReview(
+      experienceId: experienceId,
+      authorId: uid,
+      bookingId: m['bookingId'] as String? ?? '',
+      rating: ((m['rating'] as num?)?.toInt() ?? 1).clamp(1, 5),
+      comment: m['comment'] as String? ?? '',
+      createdAt: experienceDateFrom(m['createdAt']),
+      revealAt: experienceDateFrom(m['revealAt']),
+    );
+  }
+
+  /// The rules: create with exactly {authorId, bookingId, rating, comment,
+  /// createdAt, updatedAt} (server timestamps) and a matching eligibility;
+  /// edits touch only rating / comment / updatedAt.
+  Future<void> savePendingReview({
+    required String experienceId,
+    required String uid,
+    required String bookingId,
+    required int rating,
+    required String comment,
+    required bool isNew,
+  }) {
+    final ref = _pending(experienceId, uid);
+    if (isNew) {
+      return ref.set({
+        'authorId': uid,
+        'bookingId': bookingId,
+        'rating': rating,
+        'comment': comment,
+        'createdAt': FieldValue.serverTimestamp(),
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+    }
+    return ref.update({
+      'rating': rating,
+      'comment': comment,
+      'updatedAt': FieldValue.serverTimestamp(),
+    });
+  }
+
+  Future<void> deletePendingReview(String experienceId, String uid) =>
+      _pending(experienceId, uid).delete();
+
+  Future<void> setRequestToBook(String id, bool value) =>
+      _col.doc(id).update({
+        'requestToBook': value,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
 
   // ───────────────────────────────────────────────────────────── replies
 

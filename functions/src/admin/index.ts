@@ -6,6 +6,7 @@
 import { onCall } from 'firebase-functions/v2/https';
 import { verifyAdminAuth, handleError, logInfo, logError, db, FieldValue } from '../shared/utils';
 import * as admin from 'firebase-admin';
+import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
 import { SubscriptionTier, UserRole, ReportStatus } from '../shared/types';
 
 // Interfaces
@@ -1212,6 +1213,7 @@ export const banUser = onCall<BanUserRequest>(
         permanentBan: permanent,
         updatedAt: FieldValue.serverTimestamp(),
       });
+      await syncHostExperiencesForBan(userId, true);
 
       return { success: true };
     } catch (error) {
@@ -1240,6 +1242,7 @@ export const unbanUser = onCall<UnbanUserRequest>(
         unbannedBy: request.auth?.uid,
         updatedAt: FieldValue.serverTimestamp(),
       });
+      await syncHostExperiencesForBan(userId, false);
 
       return { success: true };
     } catch (error) {

@@ -90,7 +90,21 @@ class _MyReviewRefreshed extends ExperienceReviewsEvent {
 // ───────────────────────────────────────────────────────────── state
 
 /// One-shot outcomes for snackbars.
-enum ReviewsFlash { none, reviewSaved, reviewDeleted, replyRejected, reported, failed }
+enum ReviewsFlash {
+  none,
+  reviewSaved,
+  reviewDeleted,
+  replyRejected,
+  reported,
+  failed,
+
+  /// A blind review was saved: published once the host reviewed the guest
+  /// too, or after 14 days.
+  reviewHeld,
+
+  /// No completed booking: reviews need a real booking.
+  notEligible,
+}
 
 class ExperienceReviewsState extends Equatable {
   const ExperienceReviewsState({
@@ -105,9 +119,22 @@ class ExperienceReviewsState extends Equatable {
     this.repliesLoading = const {},
     this.flash = ReviewsFlash.none,
     this.flashSeq = 0,
+    this.eligibility,
+    this.pendingReview,
   });
 
   final bool loading;
+
+  /// Booking-gated reviews: the caller's eligibility marker and their blind
+  /// (not yet published) review.
+  final ReviewEligibility? eligibility;
+  final PendingReview? pendingReview;
+
+  /// The caller may start a NEW review (eligible, nothing written yet).
+  bool canWriteAt(DateTime now) =>
+      myReview == null &&
+      pendingReview == null &&
+      (eligibility?.isOpenAt(now) ?? false);
 
   /// Visible reviews of OTHER people, newest first (the caller's own review
   /// is [myReview], always shown on top — including when rejected).
@@ -138,6 +165,10 @@ class ExperienceReviewsState extends Equatable {
     Map<String, bool>? repliesHasMore,
     Set<String>? repliesLoading,
     ReviewsFlash? flash,
+    ReviewEligibility? eligibility,
+    bool clearEligibility = false,
+    PendingReview? pendingReview,
+    bool clearPending = false,
   }) =>
       ExperienceReviewsState(
         loading: loading ?? this.loading,
@@ -151,6 +182,10 @@ class ExperienceReviewsState extends Equatable {
         repliesLoading: repliesLoading ?? this.repliesLoading,
         flash: flash ?? ReviewsFlash.none,
         flashSeq: flash != null ? flashSeq + 1 : flashSeq,
+        eligibility:
+            clearEligibility ? null : (eligibility ?? this.eligibility),
+        pendingReview:
+            clearPending ? null : (pendingReview ?? this.pendingReview),
       );
 
   @override
@@ -166,6 +201,8 @@ class ExperienceReviewsState extends Equatable {
         repliesLoading,
         flash,
         flashSeq,
+        eligibility,
+        pendingReview,
       ];
 }
 
@@ -212,8 +249,12 @@ class ExperienceReviewsBloc
     // Both reads in flight at once.
     final pageF = _repo.getReviews(_experienceId, limit: pageSize);
     final mineF = _repo.getMyReview(_experienceId, _uid);
+    final eligF = _repo.getReviewEligibility(_experienceId, _uid);
+    final pendingF = _repo.getPendingReview(_experienceId, _uid);
     final page = (await pageF).fold((_) => null, (p) => p);
     final mine = (await mineF).fold((_) => null, (r) => r);
+    final elig = (await eligF).fold((_) => null, (r) => r);
+    final pending = (await pendingF).fold((_) => null, (r) => r);
     _cursor = page?.cursor;
     final others =
         (page?.items ?? const <ExperienceReview>[]).where((r) => r.authorId != _uid).toList();
@@ -223,6 +264,10 @@ class ExperienceReviewsBloc
       myReview: mine,
       clearMyReview: mine == null,
       hasMore: page?.hasMore ?? false,
+      eligibility: elig,
+      clearEligibility: elig == null,
+      pendingReview: pending,
+      clearPending: pending == null,
     ));
     await _loadFirstReplies([if (mine != null) mine, ...others], emit);
   }
@@ -272,14 +317,16 @@ class ExperienceReviewsBloc
   Future<void> _onSubmit(
       ReviewSubmitted e, Emitter<ExperienceReviewsState> emit) async {
     if (state.submitting) return;
+    // Only a published review is edited in place; everything new goes
+    // through the blind pending review (rules deny direct review creates).
+    if (state.myReview == null) return _submitPending(e, emit);
     emit(state.copyWith(submitting: true));
-    final isNew = state.myReview == null;
     final r = await _repo.saveReview(
       experienceId: _experienceId,
       uid: _uid,
       rating: e.rating,
       comment: e.comment.trim(),
-      isNew: isNew,
+      isNew: false,
     );
     r.fold(
       (_) => emit(state.copyWith(submitting: false, flash: ReviewsFlash.failed)),
@@ -307,17 +354,85 @@ class ExperienceReviewsBloc
     );
   }
 
+  /// New / edited blind review (needs a booking's eligibility marker).
+  Future<void> _submitPending(
+      ReviewSubmitted e, Emitter<ExperienceReviewsState> emit) async {
+    final pending = state.pendingReview;
+    final elig = state.eligibility;
+    final now = DateTime.now();
+    if (pending == null && !(elig?.isOpenAt(now) ?? false)) {
+      emit(state.copyWith(flash: ReviewsFlash.notEligible));
+      return;
+    }
+    final bookingId = pending?.bookingId ?? elig!.bookingId;
+    emit(state.copyWith(submitting: true));
+    final r = await _repo.savePendingReview(
+      experienceId: _experienceId,
+      uid: _uid,
+      bookingId: bookingId,
+      rating: e.rating,
+      comment: e.comment.trim(),
+      isNew: pending == null,
+    );
+    r.fold(
+      (_) => emit(state.copyWith(submitting: false, flash: ReviewsFlash.failed)),
+      (_) {
+        emit(state.copyWith(
+          submitting: false,
+          flash: ReviewsFlash.reviewHeld,
+          pendingReview: PendingReview(
+            experienceId: _experienceId,
+            authorId: _uid,
+            bookingId: bookingId,
+            rating: e.rating,
+            comment: e.comment.trim(),
+            createdAt: pending?.createdAt ?? now,
+            revealAt: pending?.revealAt,
+          ),
+        ));
+        // The host may have reviewed already: the server then publishes it
+        // right away — pick that up shortly after.
+        _myReviewPoll?.cancel();
+        _myReviewPoll = Timer(const Duration(seconds: 5), () {
+          if (!isClosed) add(const _MyReviewRefreshed());
+        });
+      },
+    );
+  }
+
   Future<void> _onMyReviewRefreshed(
       _MyReviewRefreshed e, Emitter<ExperienceReviewsState> emit) async {
     final r = await _repo.getMyReview(_experienceId, _uid);
-    r.fold((_) {}, (mine) {
-      if (mine != null) emit(state.copyWith(myReview: mine));
-    });
+    final mine = r.fold((_) => null, (x) => x);
+    if (mine != null) {
+      emit(state.copyWith(myReview: mine, clearPending: true));
+      return;
+    }
+    if (state.pendingReview != null) {
+      final p = await _repo.getPendingReview(_experienceId, _uid);
+      p.fold((_) {}, (x) {
+        if (x != null) emit(state.copyWith(pendingReview: x));
+      });
+    }
   }
 
   Future<void> _onDelete(
       ReviewDeleteRequested e, Emitter<ExperienceReviewsState> emit) async {
-    if (state.myReview == null || state.submitting) return;
+    if (state.submitting) return;
+    if (state.myReview == null && state.pendingReview != null) {
+      emit(state.copyWith(submitting: true));
+      final r = await _repo.deletePendingReview(_experienceId, _uid);
+      r.fold(
+        (_) =>
+            emit(state.copyWith(submitting: false, flash: ReviewsFlash.failed)),
+        (_) => emit(state.copyWith(
+            submitting: false,
+            clearPending: true,
+            flash: ReviewsFlash.reviewDeleted)),
+      );
+      return;
+    }
+    if (state.myReview == null) return;
     emit(state.copyWith(submitting: true));
     final r = await _repo.deleteReview(_experienceId, _uid);
     r.fold(

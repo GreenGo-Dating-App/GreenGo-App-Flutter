@@ -51,6 +51,7 @@ const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
 require("../shared/firebaseAdmin");
+const idDocumentRetention_1 = require("../safety/idDocumentRetention");
 const db = admin.firestore();
 exports.onProfileDeleted = (0, firestore_1.onDocumentDeleted)('profiles/{uid}', (0, monitoring_1.monitored)('onProfileDeleted', async (event) => {
     const uid = event.params.uid;
@@ -160,6 +161,15 @@ exports.onProfileDeleted = (0, firestore_1.onDocumentDeleted)('profiles/{uid}', 
     }
     catch (e) {
         // Already deleted (client did it) or never existed — fine.
+    }
+    // 5b) Identity documents are NOT deleted: moved to retention/{uid}/ and
+    //     kept 30 days (fraud prevention; DRAFT — lawyer review). Idempotent
+    //     with the same call in onUserDeletedCleanup.
+    try {
+        await (0, idDocumentRetention_1.retainIdDocumentsOnAccountDeletion)(uid);
+    }
+    catch (e) {
+        console.error('onProfileDeleted: ID document retention failed', uid, e);
     }
     // 6) Storage media under the user's known prefixes (best-effort).
     try {

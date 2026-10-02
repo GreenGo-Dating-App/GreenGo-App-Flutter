@@ -41,6 +41,7 @@ exports.getModeratorStats = exports.assignModerator = exports.getReportDetails =
 const https_1 = require("firebase-functions/v2/https");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
+const hostBan_1 = require("../user_experiences/hostBan");
 const types_1 = require("../shared/types");
 // ========== DASHBOARD FUNCTIONS ==========
 // 1. Get Dashboard Stats
@@ -905,6 +906,7 @@ exports.banUser = (0, https_1.onCall)({
             permanentBan: permanent,
             updatedAt: utils_1.FieldValue.serverTimestamp(),
         });
+        await (0, hostBan_1.syncHostExperiencesForBan)(userId, true);
         return { success: true };
     }
     catch (error) {
@@ -928,6 +930,7 @@ exports.unbanUser = (0, https_1.onCall)({
             unbannedBy: (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid,
             updatedAt: utils_1.FieldValue.serverTimestamp(),
         });
+        await (0, hostBan_1.syncHostExperiencesForBan)(userId, false);
         return { success: true };
     }
     catch (error) {

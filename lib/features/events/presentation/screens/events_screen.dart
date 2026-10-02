@@ -76,6 +76,7 @@ import 'event_chat_screen.dart';
 import 'event_scanner_screen.dart';
 import 'event_ticket_screen.dart';
 import '../../../../core/widgets/boost_celebration.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -103,8 +104,16 @@ class EventsScreen extends StatefulWidget {
 
   const EventsScreen({
     required this.currentUserId, super.key,
+    this.initialTab = 0,
   });
   final String currentUserId;
+
+  /// Tab to open on: 0 Events, 1 Attractions, [experiencesTab] Experiences.
+  /// Opening on Experiences (e.g. Explore "Top experiences → See all") also
+  /// selects its "All" filter (community + partner).
+  final int initialTab;
+
+  static const int experiencesTab = 2;
 
   @override
   State<EventsScreen> createState() => _EventsScreenState();
@@ -147,7 +156,12 @@ class _EventsScreenState extends State<EventsScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(
+        length: 3, vsync: this, initialIndex: widget.initialTab.clamp(0, 2));
+    if (widget.initialTab == EventsScreen.experiencesTab) {
+      _expFilter = _FeedFilter.all;
+      _sessionExpFilter = _FeedFilter.all;
+    }
 
     // Create the BLoC with repository and datasource
     final dataSource = EventsRemoteDataSourceImpl();
@@ -3502,9 +3516,18 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 style: const TextStyle(
                     fontSize: 11, color: AppColors.textPrimary)),
       ),
-      label: Text(name,
-          overflow: TextOverflow.ellipsis,
-          style: const TextStyle(color: AppColors.textPrimary)),
+      label: Row(mainAxisSize: MainAxisSize.min, children: [
+        Flexible(
+          child: Text(name,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(color: AppColors.textPrimary)),
+        ),
+        if (UserVerifiedBadge.isVisible(b))
+          const Padding(
+            padding: EdgeInsets.only(left: 4),
+            child: VerifiedBadge(size: 14),
+          ),
+      ]),
       deleteIconColor: AppColors.textSecondary,
       deleteButtonTooltipMessage: l10n.eventsCoOwnerRemove,
       onDeleted:

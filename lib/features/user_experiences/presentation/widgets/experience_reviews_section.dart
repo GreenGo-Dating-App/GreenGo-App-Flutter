@@ -5,6 +5,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/widgets/translatable_text.dart';
+import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
@@ -70,11 +71,13 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
 
   // ───────────────────────────────────────────── review editor
 
-  Future<void> _openReviewEditor(ExperienceReview? existing) async {
+  /// [rating] / [comment]: the review being edited (published or blind).
+  Future<void> _openReviewEditor({int? rating, String? comment}) async {
     final l = AppLocalizations.of(context)!;
     final bloc = context.read<ExperienceReviewsBloc>();
-    var rating = existing?.rating ?? 0;
-    final ctrl = TextEditingController(text: existing?.comment ?? '');
+    final editing = rating != null;
+    var stars = rating ?? 0;
+    final ctrl = TextEditingController(text: comment ?? '');
     String? error;
     final submitted = await showModalBottomSheet<bool>(
       context: context,
@@ -90,7 +93,7 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(existing == null ? l.uexpWriteReview : l.uexpEditReview,
+              Text(editing ? l.uexpEditReview : l.uexpWriteReview,
                   style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 18,
@@ -100,9 +103,9 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
                   style: const TextStyle(color: AppColors.textSecondary)),
               Center(
                 child: StarRatingInput(
-                  value: rating,
+                  value: stars,
                   onChanged: (v) => setSheet(() {
-                    rating = v;
+                    stars = v;
                     error = null;
                   }),
                 ),
@@ -133,7 +136,7 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
                   padding: const EdgeInsets.symmetric(vertical: 14),
                 ),
                 onPressed: () {
-                  if (rating < 1) {
+                  if (stars < 1) {
                     setSheet(() => error = l.uexpSelectRating);
                     return;
                   }
@@ -145,6 +148,7 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
                       l.uexpErrTooLong(ExperienceLimits.reviewMax),
                     CommentVerdict.prohibited => l.uexpErrProhibited,
                     CommentVerdict.containsLink => l.uexpErrNoLinks,
+                    CommentVerdict.contactInfo => l.uexpErrContactInfo,
                   };
                   if (msg != null) {
                     setSheet(() => error = msg);
@@ -159,11 +163,11 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
         ),
       ),
     );
-    final comment = ctrl.text;
+    final text = ctrl.text;
     // The sheet's TextField is still animating out; dispose afterwards.
     Future<void>.delayed(const Duration(seconds: 1), ctrl.dispose);
     if (submitted == true && mounted) {
-      bloc.add(ReviewSubmitted(rating: rating, comment: comment));
+      bloc.add(ReviewSubmitted(rating: stars, comment: text));
     }
   }
 
@@ -244,6 +248,8 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
           ReviewsFlash.replyRejected => l.uexpReplyRemoved,
           ReviewsFlash.reported => l.uexpReported,
           ReviewsFlash.failed => l.somethingWentWrong,
+          ReviewsFlash.reviewHeld => l.bkReviewHeld,
+          ReviewsFlash.notEligible => l.bkReviewNeedsBooking,
         };
         if (msg != null) {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -251,11 +257,14 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
             backgroundColor: s.flash == ReviewsFlash.failed ||
                     s.flash == ReviewsFlash.replyRejected
                 ? AppColors.errorRed
-                : AppColors.successGreen,
+                : (s.flash == ReviewsFlash.notEligible
+                    ? AppColors.backgroundCard
+                    : AppColors.successGreen),
           ));
         }
         if (s.flash == ReviewsFlash.reviewSaved ||
-            s.flash == ReviewsFlash.reviewDeleted) {
+            s.flash == ReviewsFlash.reviewDeleted ||
+            s.flash == ReviewsFlash.reviewHeld) {
           widget.onReviewChanged?.call();
         }
       },
@@ -275,16 +284,30 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
               Text(l.uexpHostCannotReview,
                   style: const TextStyle(
                       color: AppColors.textTertiary, fontSize: 12))
-            else if (s.myReview == null && !s.loading)
+            else if (s.canWriteAt(DateTime.now()) && !s.loading)
               OutlinedButton.icon(
                 style: OutlinedButton.styleFrom(
                   foregroundColor: AppColors.richGold,
                   side: const BorderSide(color: AppColors.richGold),
                 ),
-                onPressed: s.submitting ? null : () => _openReviewEditor(null),
+                onPressed: s.submitting ? null : () => _openReviewEditor(),
                 icon: const Icon(Icons.rate_review_outlined),
                 label: Text(l.uexpWriteReview),
-              ),
+              )
+            else if (s.myReview == null &&
+                s.pendingReview == null &&
+                !s.loading)
+              // Reviews need a real booking (checked in / completed).
+              Row(children: [
+                const Icon(Icons.lock_outline,
+                    size: 14, color: AppColors.textTertiary),
+                const SizedBox(width: 6),
+                Expanded(
+                  child: Text(l.bkReviewNeedsBooking,
+                      style: const TextStyle(
+                          color: AppColors.textTertiary, fontSize: 12)),
+                ),
+              ]),
             if (s.loading)
               const Padding(
                 padding: EdgeInsets.all(16),
@@ -294,9 +317,15 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
             if (s.myReview != null) ...[
               const SizedBox(height: 8),
               _reviewTile(s.myReview!, s, mine: true),
+            ] else if (s.pendingReview != null) ...[
+              const SizedBox(height: 8),
+              _pendingTile(s.pendingReview!, s),
             ],
             for (final r in s.reviews) _reviewTile(r, s),
-            if (!s.loading && s.reviews.isEmpty && s.myReview == null)
+            if (!s.loading &&
+                s.reviews.isEmpty &&
+                s.myReview == null &&
+                s.pendingReview == null)
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Text(l.uexpNoReviews,
@@ -425,7 +454,14 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
                 uid: r.authorId,
                 onTap: () => openExperienceUserProfile(
                     context, r.authorId, widget.currentUserId),
-                trailing: isAuthorHost ? _hostBadge(l) : null,
+                trailing: Row(mainAxisSize: MainAxisSize.min, children: [
+                  UserVerifiedBadge(
+                      uid: r.authorId, size: 14, padding: EdgeInsets.zero),
+                  if (isAuthorHost) ...[
+                    const SizedBox(width: 4),
+                    _hostBadge(l),
+                  ],
+                ]),
               ),
             ),
             Text(
@@ -547,9 +583,14 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
                     color: AppColors.textPrimary,
                     fontWeight: FontWeight.w600,
                     fontSize: 12),
-                trailing: rep.authorId == widget.experience.hostId
-                    ? _hostBadge(l)
-                    : null,
+                trailing: Row(mainAxisSize: MainAxisSize.min, children: [
+                  UserVerifiedBadge(
+                      uid: rep.authorId, size: 12, padding: EdgeInsets.zero),
+                  if (rep.authorId == widget.experience.hostId) ...[
+                    const SizedBox(width: 4),
+                    _hostBadge(l),
+                  ],
+                ]),
                 onTap: () => openExperienceUserProfile(
                     context, rep.authorId, widget.currentUserId),
               ),
@@ -607,7 +648,7 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
       onSelected: (v) {
         switch (v) {
           case 'edit':
-            _openReviewEditor(r);
+            _openReviewEditor(rating: r.rating, comment: r.comment);
           case 'delete':
             _confirmDeleteReview();
           case 'report':
@@ -630,6 +671,82 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
               child: Text(l.uexpReportReview,
                   style: const TextStyle(color: AppColors.textPrimary))),
       ],
+    );
+  }
+
+  /// The caller's blind review, waiting for the host's review of them (or
+  /// the 14-day reveal).
+  Widget _pendingTile(PendingReview r, ExperienceReviewsState s) {
+    final l = AppLocalizations.of(context)!;
+    return Container(
+      margin: const EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppColors.richGold.withValues(alpha: 0.4)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(children: [
+            Expanded(
+              child: UserNameAvatar(
+                uid: r.authorId,
+                trailing: UserVerifiedBadge(
+                    uid: r.authorId, size: 14, padding: EdgeInsets.zero),
+              ),
+            ),
+            Text(ExperienceL10n.date(context, r.createdAt),
+                style: const TextStyle(
+                    color: AppColors.textTertiary, fontSize: 11)),
+            PopupMenuButton<String>(
+              icon: const Icon(Icons.more_vert,
+                  size: 18, color: AppColors.textTertiary),
+              color: AppColors.backgroundCard,
+              enabled: !s.submitting,
+              onSelected: (v) {
+                if (v == 'edit') {
+                  _openReviewEditor(rating: r.rating, comment: r.comment);
+                } else if (v == 'delete') {
+                  _confirmDeleteReview();
+                }
+              },
+              itemBuilder: (_) => [
+                PopupMenuItem(
+                    value: 'edit',
+                    child: Text(l.uexpEdit,
+                        style: const TextStyle(color: AppColors.textPrimary))),
+                PopupMenuItem(
+                    value: 'delete',
+                    child: Text(l.uexpDeleteReview,
+                        style: const TextStyle(color: AppColors.errorRed))),
+              ],
+            ),
+          ]),
+          const SizedBox(height: 6),
+          StarRatingDisplay(rating: r.rating.toDouble()),
+          if (r.comment.trim().isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Text(r.comment,
+                style: const TextStyle(
+                    color: AppColors.textSecondary, fontSize: 13, height: 1.4)),
+          ],
+          const SizedBox(height: 8),
+          Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            const Icon(Icons.visibility_off_outlined,
+                size: 15, color: AppColors.richGold),
+            const SizedBox(width: 6),
+            Expanded(
+              child: Text(l.bkReviewHeld,
+                  style: const TextStyle(
+                      color: AppColors.textTertiary,
+                      fontSize: 12,
+                      fontStyle: FontStyle.italic)),
+            ),
+          ]),
+        ],
+      ),
     );
   }
 

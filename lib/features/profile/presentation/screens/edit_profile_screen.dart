@@ -288,6 +288,10 @@ class EditProfileScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+                        if (activeProfile.showVerifiedBadge) ...[
+                          const SizedBox(width: 8),
+                          const VerifiedBadge(size: 20),
+                        ],
                         if (activeProfile.effectiveTier != MembershipTier.free) ...[
                           const SizedBox(width: 10),
                           MembershipBadge(

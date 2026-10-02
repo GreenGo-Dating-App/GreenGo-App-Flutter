@@ -75,6 +75,7 @@ class ProfileModel extends Profile {
     super.storefrontLinks,
     super.coverImageUrl,
     super.isBanned,
+    super.isIdVerified,
   });
 
   factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
@@ -162,6 +163,7 @@ class ProfileModel extends Profile {
       storefrontLinks: profile.storefrontLinks,
       coverImageUrl: profile.coverImageUrl,
       isBanned: profile.isBanned,
+      isIdVerified: profile.isIdVerified,
     );
   }
 
@@ -306,6 +308,8 @@ class ProfileModel extends Profile {
           : <String>[],
       coverImageUrl: json['coverImageUrl'] as String?,
       isBanned: json['isBanned'] as bool? ?? false,
+      // Server-owned; read only (never in toJson).
+      isIdVerified: json['isAgeVerified'] == true,
     );
   }
 

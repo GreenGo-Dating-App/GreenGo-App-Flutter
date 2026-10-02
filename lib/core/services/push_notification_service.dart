@@ -18,6 +18,7 @@ import '../../../features/communities/presentation/bloc/communities_bloc.dart';
 import '../../../features/communities/presentation/screens/community_detail_screen.dart';
 import '../../../features/discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../features/events/presentation/screens/event_detail_loader_screen.dart';
+import '../../../features/experience_bookings/presentation/screens/booking_detail_screen.dart';
 import '../../../features/user_experiences/presentation/screens/experience_detail_screen.dart';
 import '../../../features/profile/data/models/profile_model.dart';
 import '../../../features/profile/domain/repositories/profile_repository.dart';
@@ -257,6 +258,20 @@ class PushNotificationService {
         if (v is String && v.isNotEmpty) return v;
       }
       return null;
+    }
+
+    // EXPERIENCE BOOKING (booking_request / booking_confirmed / booking_cancelled
+    // / booking_reminder / booking_review_prompt / guest_review_* …): the
+    // booking, before the generic experience route (they carry experienceId).
+    final bookingId = pick(['bookingId']);
+    if ((action == 'booking' ||
+            action == 'guest_review' ||
+            action == 'admin_booking_dispute' ||
+            (type?.startsWith('booking_') ?? false)) &&
+        bookingId != null) {
+      navigator.push(
+          BookingDetailScreen.route(bookingId: bookingId, currentUserId: userId));
+      return;
     }
 
     // USER EXPERIENCE (experience_review / experience_reply / experience_mention).

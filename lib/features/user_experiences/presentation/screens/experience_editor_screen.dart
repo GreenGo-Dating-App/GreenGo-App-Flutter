@@ -16,6 +16,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../events/data/services/event_geocoder.dart';
 import '../../../events/presentation/screens/event_location_picker_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
+import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
 import '../../../profile/domain/entities/location.dart' as profile_entity;
 import '../../domain/entities/user_experience.dart';
 import '../../domain/experience_validation.dart';
@@ -23,6 +24,8 @@ import '../../domain/repositories/user_experiences_repository.dart';
 import '../bloc/experience_editor_bloc.dart';
 import '../experience_creation_gate.dart';
 import '../experience_l10n.dart';
+import '../experience_safety_flow.dart';
+import '../widgets/experience_policy_widgets.dart';
 
 /// Languages a host can offer (same names profiles store).
 const List<String> kExperienceLanguages = [
@@ -114,6 +117,11 @@ class _EditorFormState extends State<_EditorForm> {
   bool _isFree = false;
   String _currency = kExperienceCurrencies.first;
   PaymentLinkType _paymentType = PaymentLinkType.pix;
+  // Paid listings: cash at the meeting and/or the online link.
+  final Set<PaymentMethod> _methods = {PaymentMethod.link};
+  CancellationPolicy _policy = CancellationPolicy.fallback;
+  // Bookings: host approves each request (false = instant booking).
+  bool _requestToBook = false;
 
   // Photos: a new pick takes precedence over the existing URL.
   final ImagePicker _picker = ImagePicker();
@@ -174,7 +182,14 @@ class _EditorFormState extends State<_EditorForm> {
         _paymentValue.text = e.paymentLink!.value;
       }
       _availability.text = e.availability ?? '';
-      _cancellation.text = e.cancellationPolicy ?? '';
+      _policy = e.cancellationPolicy;
+      _requestToBook = e.requestToBook;
+      _cancellation.text = e.cancellationNotes ?? '';
+      if (!e.isFree && e.paymentMethods.isNotEmpty) {
+        _methods
+          ..clear()
+          ..addAll(e.paymentMethods);
+      }
     }
   }
 
@@ -233,8 +248,9 @@ class _EditorFormState extends State<_EditorForm> {
             : int.tryParse(_minGroup.text.trim()) ?? -1,
         meetingPoint: _meetingPoint.text,
         availability: _availability.text,
-        cancellationPolicy: _cancellation.text,
+        cancellationNotes: _cancellation.text,
         isFree: _isFree,
+        paymentMethods: _methods,
         price: _isFree ? 0 : double.tryParse(_price.text.trim().replaceAll(',', '.')),
         paymentType: _paymentType,
         paymentValue: _paymentValue.text,
@@ -330,8 +346,45 @@ class _EditorFormState extends State<_EditorForm> {
     if (errors.isNotEmpty) {
       _snack(errors.contains(ExperienceFieldError.prohibitedText)
           ? l.uexpErrProhibited
-          : l.uexpErrFixFields);
+          : (errors.contains(ExperienceFieldError.contactInfo)
+              ? l.uexpErrContactInfo
+              : l.uexpErrFixFields));
       return;
+    }
+
+    // Phase 1 safety, asked in place BEFORE uploading (the server enforces
+    // the same rules): host agreement to publish; an APPROVED ID document to
+    // publish a paid listing (else: save as draft / publish as free).
+    if (status == ExperienceStatus.published &&
+        widget.existing?.isHidden != true) {
+      setState(() => _busy = true);
+      try {
+        final snap = await ExperienceSafetyFlow.load(widget.currentUserId);
+        if (!mounted) return;
+        if (!await ExperienceSafetyFlow.ensureHostAgreement(
+            context, widget.currentUserId,
+            snapshot: snap)) {
+          return;
+        }
+        if (!mounted) return;
+        if (!_isFree && snap.idState != IdDocState.approved) {
+          final r = await ExperienceSafetyFlow.paidBlocked(
+              context, widget.currentUserId);
+          if (!mounted) return;
+          switch (r) {
+            case SafetyResolution.saveDraft:
+              status = ExperienceStatus.draft;
+            case SafetyResolution.publishFree:
+              setState(() => _isFree = true);
+            case SafetyResolution.retry:
+              break; // approved meanwhile
+            case SafetyResolution.cancel:
+              return;
+          }
+        }
+      } finally {
+        if (mounted) setState(() => _busy = false);
+      }
     }
 
     setState(() => _busy = true);
@@ -410,12 +463,19 @@ class _EditorFormState extends State<_EditorForm> {
         price: price,
         currency: _isFree ? null : _currency,
         isFree: _isFree,
-        paymentLink: payValue.isEmpty
-            ? null
-            : PaymentLink(type: _paymentType, value: payValue),
+        paymentLink:
+            payValue.isEmpty || _isFree || !_methods.contains(PaymentMethod.link)
+                ? null
+                : PaymentLink(type: _paymentType, value: payValue),
+        paymentMethods: _isFree ? const {} : {..._methods},
         availability: _opt(_availability).isEmpty ? null : _opt(_availability),
-        cancellationPolicy:
-            _opt(_cancellation).isEmpty ? null : _opt(_cancellation),
+        cancellationPolicy: _policy,
+        requestToBook: _requestToBook,
+        cancellationNotes: _opt(_cancellation,
+                    ExperienceLimits.cancellationNotesMax)
+                .isEmpty
+            ? null
+            : _opt(_cancellation, ExperienceLimits.cancellationNotesMax),
         // A moderation-hidden listing stays hidden (the server restores it
         // once the text is clean).
         status: e?.isHidden == true ? ExperienceStatus.hidden : status,
@@ -426,11 +486,54 @@ class _EditorFormState extends State<_EditorForm> {
         ratingDist: e?.ratingDist ?? const {},
         reviewCount: e?.reviewCount ?? 0,
       );
-      context
-          .read<ExperienceEditorBloc>()
-          .add(ExperienceEditorSaved(experience, isNew: _isNew));
+      _submit(experience);
     } finally {
       if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  /// Last submitted experience (re-submitted after a guided safety prompt).
+  UserExperience? _submitted;
+
+  void _submit(UserExperience experience) {
+    _submitted = experience;
+    _requestedStatus = experience.status;
+    context.read<ExperienceEditorBloc>().add(ExperienceEditorSaved(
+          experience,
+          isNew: _isNew,
+          publish: experience.status == ExperienceStatus.published,
+          wasPublished: widget.existing?.isPublished == true,
+        ));
+  }
+
+  /// The server refused to publish ([code]): ask for what is missing, then
+  /// re-submit (or save as draft / publish as free).
+  Future<void> _resolveSafety(String code, UserExperience? savedDraft) async {
+    final l = AppLocalizations.of(context)!;
+    final x = _submitted;
+    if (x == null) return;
+    final r =
+        await ExperienceSafetyFlow.resolve(context, widget.currentUserId, code);
+    if (!mounted) return;
+    switch (r) {
+      case SafetyResolution.retry:
+        _submit(x);
+      case SafetyResolution.publishFree:
+        setState(() => _isFree = true);
+        _submit(x.asFree());
+      case SafetyResolution.saveDraft:
+        if (savedDraft != null) {
+          // Edits are already stored as a draft.
+          _snack(l.uexpSaved, error: false);
+          Navigator.of(context).pop(savedDraft);
+        } else {
+          _submit(x.copyWith(status: ExperienceStatus.draft));
+        }
+      case SafetyResolution.cancel:
+        if (savedDraft != null) {
+          // Stored as a draft already: leave the editor with it.
+          Navigator.of(context).pop(savedDraft);
+        }
     }
   }
 
@@ -495,6 +598,11 @@ class _EditorFormState extends State<_EditorForm> {
             if (!context.mounted) return;
             await ExperienceCreationGate.showLimitDialog(
                 context, widget.currentUserId, allowance);
+          } else if (f is ExperienceSafetyFailure) {
+            await _resolveSafety(f.code, s.saved);
+          } else if (f is ExperienceContactInfoFailure) {
+            setState(() => _errors = [..._errors, ExperienceFieldError.contactInfo]);
+            _snack(l.uexpErrContactInfo);
           } else if (f is ExperienceProhibitedFailure) {
             _snack(l.uexpErrProhibited);
           } else if (f is ExperienceInvalidFailure) {
@@ -715,14 +823,23 @@ class _EditorFormState extends State<_EditorForm> {
                       decoration: _dec(l.uexpAvailability,
                           hint: l.uexpAvailabilityHint),
                     ),
+                    Text(l.uexpCancellationLabel,
+                        style:
+                            const TextStyle(color: AppColors.textSecondary)),
+                    const SizedBox(height: 6),
+                    CancellationPolicyPicker(
+                      value: _policy,
+                      onChanged: (p) => setState(() => _policy = p),
+                    ),
                     TextField(
                       controller: _cancellation,
-                      maxLength: ExperienceLimits.shortTextMax,
+                      maxLength: ExperienceLimits.cancellationNotesMax,
                       minLines: 1,
                       maxLines: 4,
                       style: _text,
-                      decoration: _dec(l.uexpCancellation),
+                      decoration: _dec(l.uexpPolicyNotes),
                     ),
+                    _bookingSettings(l),
                   ]),
                   _pricingSection(l),
                 ],
@@ -776,6 +893,52 @@ class _EditorFormState extends State<_EditorForm> {
           );
         },
       ),
+    );
+  }
+
+  /// "Request to book" switch + "Dates & availability" (existing listings;
+  /// a new one gets its dates once saved).
+  Widget _bookingSettings(AppLocalizations l) {
+    final existing = widget.existing;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SizedBox(height: 4),
+        Container(
+          decoration: BoxDecoration(
+            color: AppColors.backgroundInput,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: SwitchListTile(
+            key: const ValueKey('editor-request-to-book'),
+            value: _requestToBook,
+            activeThumbColor: AppColors.richGold,
+            onChanged: (v) => setState(() => _requestToBook = v),
+            title: Text(l.bkRequestToBookToggle, style: _text),
+            subtitle: Text(l.bkRequestToBookDesc,
+                style: const TextStyle(
+                    color: AppColors.textTertiary, fontSize: 12)),
+          ),
+        ),
+        const SizedBox(height: 10),
+        if (existing != null && existing.id.isNotEmpty)
+          OutlinedButton.icon(
+            style: OutlinedButton.styleFrom(
+              foregroundColor: AppColors.richGold,
+              side: const BorderSide(color: AppColors.richGold),
+              minimumSize: const Size(0, 44),
+            ),
+            onPressed: () => Navigator.of(context).push(
+                ExperienceSlotsScreen.route(
+                    experience: existing, currentUserId: widget.currentUserId)),
+            icon: const Icon(Icons.calendar_month_outlined),
+            label: Text(l.bkDatesTitle),
+          )
+        else
+          Text(l.bkDatesAfterSave,
+              style: const TextStyle(
+                  color: AppColors.textTertiary, fontSize: 12)),
+      ],
     );
   }
 
@@ -983,8 +1146,33 @@ class _EditorFormState extends State<_EditorForm> {
             ),
           ),
         ]),
+      if (!_isFree) ...[
+        const SizedBox(height: 12),
+        Text(l.uexpPaymentLink,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        const SizedBox(height: 6),
+        Wrap(spacing: 8, runSpacing: 6, children: [
+          for (final m in PaymentMethod.values)
+            FilterChip(
+              key: ValueKey('payment-method-${m.name}'),
+              selected: _methods.contains(m),
+              avatar: Icon(ExperienceL10n.paymentMethodIcon(m), size: 16),
+              label: Text(ExperienceL10n.paymentMethod(l, m)),
+              onSelected: (v) => setState(() {
+                if (v) {
+                  _methods.add(m);
+                } else {
+                  _methods.remove(m);
+                }
+              }),
+            ),
+        ]),
+        if (_err([ExperienceFieldError.paymentMethodsRequired]) != null)
+          _errorLine(_err([ExperienceFieldError.paymentMethodsRequired])!),
+      ],
+      if (!_isFree && _methods.contains(PaymentMethod.link)) ...[
       const SizedBox(height: 12),
-      Text(l.uexpPaymentLink,
+      Text(l.uexpPaymentLinkDetails,
           style: const TextStyle(color: AppColors.textSecondary)),
       const SizedBox(height: 6),
       DropdownButtonFormField<PaymentLinkType>(
@@ -1015,6 +1203,7 @@ class _EditorFormState extends State<_EditorForm> {
           ]),
         ),
       ),
+      ],
       Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(

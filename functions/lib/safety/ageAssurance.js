@@ -24,11 +24,26 @@
  *     1.2.1 is about.
  *
  * PRIVACY. An identity document is the most sensitive data GreenGo will ever
- * hold. The design keeps it for seconds, not days: OCR runs, a derived result
- * is stored, the original is deleted from Storage. What survives is the
- * extracted birth date, a one-way hash of the document number (so the same
- * document cannot be reused across accounts), and the decision. No image, no
- * name, no document number in clear.
+ * hold. Originally the image was deleted seconds after OCR. Since Phase 1
+ * experience safety (hosts / paying guests must have an ID document on file,
+ * admins review uncertain documents) the image is RETAINED for fraud
+ * prevention — DRAFT, LAWYER REVIEW (LGPD art. 7 IX legitimate interest /
+ * GDPR Art. 6(1)(f)); the privacy policy text was updated accordingly:
+ *   - the upload lands in the client's write-only `age_verification/{uid}/`
+ *     prefix and is immediately MOVED to the server-only
+ *     `id_documents/{uid}/` prefix (no client read/write, admins via Admin
+ *     SDK only), indexed by `id_documents/{uid}` (server-only);
+ *   - every SUBMITTED document is kept, including unreadable / underage /
+ *     reused ones: those are exactly the fraud attempts worth evidencing;
+ *   - a replaced document is kept 30 days, and on account deletion all of
+ *     them are moved to `retention/{uid}/` for 30 days, then erased by
+ *     `purgeRetainedIdDocuments` (see idDocumentRetention*.ts) unless an
+ *     admin placed a legal hold;
+ *   - the upload is still DELETED when there is no profile (nothing to verify)
+ *     or when the move fails (never leave it under the client prefix).
+ * On the profile (readable by signed-in users) only the derived result is
+ * stored: extracted birth date, a one-way hash of the document number (so the
+ * same document cannot be reused across accounts) and the decision.
  */
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -76,6 +91,7 @@ const admin = __importStar(require("firebase-admin"));
 const crypto_1 = require("crypto");
 const vision_1 = __importDefault(require("@google-cloud/vision"));
 const utils_1 = require("../shared/utils");
+const idDocumentRetention_1 = require("./idDocumentRetention");
 const visionClient = new vision_1.default.ImageAnnotatorClient();
 exports.MINIMUM_AGE = 18;
 /** How far the document's birth date may sit from the declared one. */
@@ -300,26 +316,41 @@ exports.submitAgeDocument = (0, https_1.onCall)({ memory: '1GiB' }, async (reque
     const declaredTs = (_f = profileSnap.data()) === null || _f === void 0 ? void 0 : _f.dateOfBirth;
     const declaredDob = declaredTs instanceof admin.firestore.Timestamp ? declaredTs.toDate() : null;
     await writeStatus(uid, 'pending', { submittedAt: admin.firestore.Timestamp.now() });
+    // Retain (move to the server-only prefix) BEFORE OCR, so the image is never
+    // left under the client's upload prefix. Null = move failed → OCR the upload
+    // and delete it afterwards (old behaviour).
+    const keptPath = await (0, idDocumentRetention_1.retainSubmittedDocument)(uid, documentPath, documentType);
+    const ocrPath = keptPath !== null && keptPath !== void 0 ? keptPath : documentPath;
+    const releaseUpload = async () => {
+        if (!keptPath)
+            await destroyDocument(documentPath);
+    };
+    const recordDecision = async (status) => {
+        if (keptPath)
+            await (0, idDocumentRetention_1.setIdDocumentStatus)(uid, status);
+    };
     let text = '';
     try {
         const bucket = admin.storage().bucket().name;
-        const [result] = await visionClient.textDetection(`gs://${bucket}/${documentPath}`);
+        const [result] = await visionClient.textDetection(`gs://${bucket}/${ocrPath}`);
         text = (_h = (_g = result.fullTextAnnotation) === null || _g === void 0 ? void 0 : _g.text) !== null && _h !== void 0 ? _h : '';
     }
     catch (e) {
         (0, utils_1.logError)(`submitAgeDocument: OCR failed for ${uid}`, e);
-        await destroyDocument(documentPath);
+        await releaseUpload();
         await writeStatus(uid, 'rejected', {
             rejectionReason: 'unreadable',
             reviewedBy: 'system',
         });
+        await recordDecision('rejected');
         return { status: 'rejected', reason: 'unreadable' };
     }
     const documentDob = parseDateOfBirth(text);
     const documentNumber = (_k = (_j = text.match(/\b[A-Z0-9]{6,12}\b/)) === null || _j === void 0 ? void 0 : _j[0]) !== null && _k !== void 0 ? _k : null;
-    // The image has served its purpose the moment OCR returns.
-    await destroyDocument(documentPath);
+    // Not retained (move failed): the upload has served its purpose.
+    await releaseUpload();
     if (!documentDob) {
+        await recordDecision('rejected');
         await writeStatus(uid, 'rejected', {
             rejectionReason: 'noBirthDateFound',
             reviewedBy: 'system',
@@ -333,6 +364,7 @@ exports.submitAgeDocument = (0, https_1.onCall)({ memory: '1GiB' }, async (reque
             reviewedBy: 'system',
             documentDateOfBirth: admin.firestore.Timestamp.fromDate(documentDob),
         });
+        await recordDecision('rejected');
         (0, utils_1.logWarning)(`submitAgeDocument: underage document for ${uid} (age ${age})`);
         return { status: 'rejected', reason: 'underage' };
     }
@@ -358,6 +390,7 @@ exports.submitAgeDocument = (0, https_1.onCall)({ memory: '1GiB' }, async (reque
                 rejectionReason: 'documentAlreadyUsed',
                 reviewedBy: 'system',
             });
+            await recordDecision('rejected');
             (0, utils_1.logWarning)(`submitAgeDocument: document reuse by ${uid}`);
             return { status: 'rejected', reason: 'documentAlreadyUsed' };
         }
@@ -376,6 +409,7 @@ exports.submitAgeDocument = (0, https_1.onCall)({ memory: '1GiB' }, async (reque
             documentDateOfBirth: admin.firestore.Timestamp.fromDate(documentDob),
             verifiedAt: admin.firestore.Timestamp.now(),
         });
+        await recordDecision('verified');
         (0, utils_1.logInfo)(`submitAgeDocument: auto-verified ${uid} (confidence ${confidence})`);
         return { status: 'verified' };
     }
@@ -394,6 +428,7 @@ exports.submitAgeDocument = (0, https_1.onCall)({ memory: '1GiB' }, async (reque
         status: 'pending',
     });
     await writeStatus(uid, 'pending', { confidence, documentHash });
+    await recordDecision('pending');
     (0, utils_1.logInfo)(`submitAgeDocument: queued ${uid} for review (confidence ${confidence})`);
     return { status: 'pending' };
 });
@@ -434,6 +469,7 @@ exports.reviewAgeVerification = (0, https_1.onCall)({ memory: '512MiB' }, async 
         reviewedAt: admin.firestore.Timestamp.now(),
         reason: reason || null,
     }, { merge: true });
+    await (0, idDocumentRetention_1.setIdDocumentStatus)(targetUid, approve ? 'verified' : 'rejected');
     (0, utils_1.logInfo)(`reviewAgeVerification: ${adminUid} ${approve ? 'approved' : 'rejected'} ${targetUid}`);
     return { status: approve ? 'verified' : 'rejected' };
 });

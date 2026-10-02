@@ -1,8 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_experience.dart';
 import '../experience_l10n.dart';
@@ -190,6 +192,154 @@ class UserNameAvatar extends StatelessWidget {
   }
 }
 
+/// The host's OVERALL rating across all their experiences (server-owned
+/// profile totals, read through the cached + batched UserDirectoryService
+/// brief — no extra reads where the host avatar is already shown):
+/// "★ 4.7 · 23 ratings", or "New host" when nobody has rated them yet.
+/// [compact] (cards) drops the word: "★ 4.7 (23)".
+class HostRatingBadge extends StatelessWidget {
+  const HostRatingBadge({super.key, required this.hostId, this.compact = false});
+  final String hostId;
+  final bool compact;
+
+  /// Pure formatter (unit-tested): null count/avg → "New host".
+  static String label(
+    AppLocalizations l,
+    String locale, {
+    required int count,
+    required double avg,
+    bool compact = false,
+  }) {
+    if (count <= 0) return l.uexpNewHost;
+    String avgText;
+    String countText;
+    try {
+      avgText = NumberFormat('0.0', locale).format(avg);
+      countText = NumberFormat.compact(locale: locale).format(count);
+    } catch (_) {
+      avgText = avg.toStringAsFixed(1);
+      countText = NumberFormat.compact().format(count);
+    }
+    return compact
+        ? '$avgText ($countText)'
+        : '$avgText · ${l.uexpHostRatings(count, countText)}';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context)!;
+    final locale = Localizations.localeOf(context).toString();
+    return ListenableBuilder(
+      listenable: UserDirectoryService.instance,
+      builder: (context, _) {
+        final brief = UserDirectoryService.instance.cached(hostId);
+        if (brief == null) {
+          UserDirectoryService.instance.resolve([hostId]);
+          return const SizedBox.shrink();
+        }
+        final count = brief.hostRatingCount;
+        final text = label(l, locale,
+            count: count, avg: brief.hostRatingAvg, compact: compact);
+        final size = compact ? 11.0 : 13.0;
+        return Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(count > 0 ? Icons.star_rounded : Icons.fiber_new_rounded,
+                size: size + 2, color: AppColors.richGold),
+            const SizedBox(width: 3),
+            Flexible(
+              child: Text(
+                text,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                    color: count > 0
+                        ? AppColors.textSecondary
+                        : AppColors.richGold,
+                    fontSize: size,
+                    fontWeight: FontWeight.w600),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+/// Price + "Pay / Book" bar of the detail page.
+///
+/// The price is ALWAYS one line (ellipsized only when even the full width is
+/// too narrow). The app theme gives every ElevatedButton
+/// `minimumSize: Size(double.infinity, …)`; as an inflexible Row child that
+/// asks for infinite width, leaving the price's Expanded ~0 px wide, which
+/// rendered it one character per line. So: on narrow widths the button goes
+/// full-width UNDER the price; on wide ones it sits beside it with a finite
+/// minimum size.
+class ExperiencePriceBar extends StatelessWidget {
+  const ExperiencePriceBar({
+    super.key,
+    required this.priceText,
+    this.payLabel,
+    this.payIcon,
+    this.onPay,
+  });
+  final String priceText;
+
+  /// Null = no payment link (free / not set): price only.
+  final String? payLabel;
+  final IconData? payIcon;
+  final VoidCallback? onPay;
+
+  /// Below this width the button wraps under the price.
+  static const double sideBySideMinWidth = 420;
+  static const TextStyle priceStyle = TextStyle(
+      color: AppColors.richGold, fontSize: 22, fontWeight: FontWeight.bold);
+
+  @override
+  Widget build(BuildContext context) {
+    final price = Text(
+      priceText,
+      key: const ValueKey('experience-price'),
+      maxLines: 1,
+      softWrap: false,
+      overflow: TextOverflow.ellipsis,
+      style: priceStyle,
+    );
+    if (payLabel == null) return price;
+    return LayoutBuilder(builder: (context, c) {
+      final wide = c.hasBoundedWidth && c.maxWidth >= sideBySideMinWidth;
+      final button = ElevatedButton.icon(
+        key: const ValueKey('experience-pay'),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.richGold,
+          foregroundColor: AppColors.deepBlack,
+          // Finite: never inherit the theme's infinite minimum width.
+          minimumSize: Size(wide || !c.hasBoundedWidth ? 0 : c.maxWidth, 44),
+        ),
+        onPressed: onPay,
+        icon: Icon(payIcon ?? Icons.open_in_new),
+        label: Text(payLabel!, maxLines: 1, overflow: TextOverflow.ellipsis),
+      );
+      if (wide) {
+        return Row(children: [
+          Expanded(child: price),
+          const SizedBox(width: 12),
+          ConstrainedBox(
+            constraints: BoxConstraints(maxWidth: c.maxWidth * 0.5),
+            child: button,
+          ),
+        ]);
+      }
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisSize: MainAxisSize.min,
+        children: [price, const SizedBox(height: 10), button],
+      );
+    });
+  }
+}
+
 /// Feed card: main photo, title, category, price, rating + host avatar.
 class ExperienceCard extends StatelessWidget {
   const ExperienceCard({
@@ -206,10 +356,21 @@ class ExperienceCard extends StatelessWidget {
   final bool showStatus; // "My experiences"
   final double? distanceKm;
 
+  /// True when the host's account is known to be inactive (banned /
+  /// suspended / deleted) — from the cached directory brief, no read.
+  static bool isHostHidden(String hostId) {
+    final b = UserDirectoryService.instance.cached(hostId);
+    return b != null && !b.isActive;
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
     final e = experience;
+    // Banned / suspended / deleted hosts: never shown in feeds. The server
+    // also hides their listings on ban (status 'hidden', host_banned); this
+    // covers cached pages and the window before that trigger runs.
+    if (!showStatus && isHostHidden(e.hostId)) return const SizedBox.shrink();
     final badge = Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
@@ -388,14 +549,33 @@ class ExperienceCard extends StatelessWidget {
                         fallbackName: e.hostName,
                         fallbackPhoto: e.hostPhotoUrl,
                         radius: 12,
+                        trailing: Flexible(
+                          child: Row(mainAxisSize: MainAxisSize.min, children: [
+                            UserVerifiedBadge(
+                                uid: e.hostId,
+                                size: 13,
+                                padding: const EdgeInsets.only(right: 4)),
+                            Flexible(
+                                child: HostRatingBadge(
+                                    hostId: e.hostId, compact: true)),
+                          ]),
+                        ),
                       ),
                     ),
                     const SizedBox(width: 8),
-                    Text(ExperienceL10n.price(l, e),
-                        style: const TextStyle(
-                            color: AppColors.richGold,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold)),
+                    // Bounded + single line: a long price ellipsizes instead
+                    // of squeezing the host row or wrapping.
+                    ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 140),
+                      child: Text(ExperienceL10n.price(l, e),
+                          maxLines: 1,
+                          softWrap: false,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                              color: AppColors.richGold,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold)),
+                    ),
                   ]),
                 ],
               ),

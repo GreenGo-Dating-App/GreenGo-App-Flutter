@@ -47,6 +47,27 @@ class UserExperienceModel {
       }
     }
     final mod = d['moderation'];
+    final link = pl is Map && _optStr(pl['value']) != null
+        ? PaymentLink(
+            type: PaymentLinkType.fromWire(pl['type']),
+            value: _optStr(pl['value'])!,
+          )
+        : null;
+    final isFree = d['isFree'] == true;
+    final rawMethods = d['paymentMethods'];
+    final methods = <PaymentMethod>{
+      if (rawMethods is List)
+        for (final m in rawMethods)
+          if (PaymentMethod.tryWire(m) != null) PaymentMethod.tryWire(m)!,
+    };
+    // Legacy docs (before payment methods): a link means "link".
+    if (rawMethods is! List && !isFree && link != null) {
+      methods.add(PaymentMethod.link);
+    }
+    // Fixed policy, or (legacy docs) free text → moderate + that text as notes.
+    final policy = CancellationPolicy.tryWire(d['cancellationPolicy']);
+    final notes = _optStr(d['cancellationNotes']) ??
+        (policy == null ? _optStr(d['cancellationPolicy']) : null);
     return UserExperience(
       id: id,
       hostId: d['hostId'] as String? ?? '',
@@ -72,15 +93,13 @@ class UserExperienceModel {
       maxGroupSize: _int(d['maxGroupSize'], 1),
       price: _optDouble(d['price']) ?? 0,
       currency: _optStr(d['currency']),
-      isFree: d['isFree'] == true,
-      paymentLink: pl is Map && _optStr(pl['value']) != null
-          ? PaymentLink(
-              type: PaymentLinkType.fromWire(pl['type']),
-              value: _optStr(pl['value'])!,
-            )
-          : null,
+      isFree: isFree,
+      paymentLink: link,
+      paymentMethods: isFree ? const {} : methods,
       availability: _optStr(d['availability']),
-      cancellationPolicy: _optStr(d['cancellationPolicy']),
+      cancellationPolicy: policy ?? CancellationPolicy.fallback,
+      cancellationNotes: notes,
+      requestToBook: d['requestToBook'] == true,
       status: ExperienceStatus.fromWire(d['status']),
       createdAt: experienceDateFrom(d['createdAt']),
       updatedAt: experienceDateFrom(d['updatedAt']),
@@ -92,6 +111,9 @@ class UserExperienceModel {
       viewCount: _int(d['viewCount']),
       searchKeywords: _strList(d['searchKeywords']),
       moderationReason: mod is Map ? _optStr(mod['reason']) : null,
+      // Server-owned (read-only here; never in editablePayload/createPayload).
+      isFeatured: d['isFeatured'] == true,
+      featuredUntil: experienceDateFrom(d['featuredUntil']),
     );
   }
 
@@ -125,11 +147,23 @@ class UserExperienceModel {
       'price': e.isFree ? 0 : e.price,
       'currency': e.isFree ? null : e.currency,
       'isFree': e.isFree,
-      'paymentLink': e.paymentLink == null
+      // Free: no methods, no link. Paid: the chosen methods; the link only
+      // when 'link' is one of them.
+      'paymentMethods': e.isFree
+          ? const <String>[]
+          : [
+              for (final m in PaymentMethod.values)
+                if (e.paymentMethods.contains(m)) m.name,
+            ],
+      'paymentLink': e.isFree ||
+              e.paymentLink == null ||
+              !e.paymentMethods.contains(PaymentMethod.link)
           ? null
           : {'type': e.paymentLink!.type.name, 'value': e.paymentLink!.value},
       'availability': e.availability,
-      'cancellationPolicy': e.cancellationPolicy,
+      'cancellationPolicy': e.cancellationPolicy.name,
+      'cancellationNotes': e.cancellationNotes,
+      'requestToBook': e.requestToBook,
       'searchKeywords': buildExperienceKeywords(
           [e.title, e.city, e.country, e.category.name, e.locationName]),
     };
@@ -165,6 +199,8 @@ class UserExperienceModel {
         'searchKeywords': e.searchKeywords,
         if (e.moderationReason != null)
           'moderation': {'reason': e.moderationReason},
+        'isFeatured': e.isFeatured,
+        'featuredUntil': e.featuredUntil?.millisecondsSinceEpoch,
       };
 }
 

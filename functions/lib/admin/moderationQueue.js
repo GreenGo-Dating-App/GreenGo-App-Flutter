@@ -41,6 +41,7 @@ exports.getModerationStatistics = exports.executeBulkModeration = exports.takeMo
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
+const hostBan_1 = require("../user_experiences/hostBan");
 const firestore = admin.firestore();
 /**
  * Verify Moderator Permission Helper
@@ -489,6 +490,7 @@ async function suspendUser(userId, reason, durationDays) {
         suspendedUntil: admin.firestore.Timestamp.fromDate(suspendedUntil),
         suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    await (0, hostBan_1.syncHostExperiencesForBan)(userId, true);
 }
 /**
  * Helper: Ban User
@@ -500,6 +502,7 @@ async function banUser(userId, reason) {
         bannedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
     await admin.auth().updateUser(userId, { disabled: true });
+    await (0, hostBan_1.syncHostExperiencesForBan)(userId, true);
 }
 /**
  * Helper: Shadow Ban User

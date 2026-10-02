@@ -25,6 +25,12 @@ import '../shared/firebaseAdmin';
 import { effectiveTier, isProfileAdmin } from '../shared/effectiveTier';
 import { moderateExperienceText } from './moderation';
 import { maxExperiencesFor, validateExperiencePayload } from './validation';
+import {
+  SafetyCode,
+  createBlockReason,
+  isNewHost,
+  publishBlockReason,
+} from './safety';
 
 const db = admin.firestore();
 
@@ -46,9 +52,10 @@ export const createUserExperience = onCall(
     }
     const mod = moderateExperienceText(v.data);
     if (!mod.ok) {
-      throw new HttpsError('invalid-argument', 'prohibited_text', {
-        code: 'prohibited_text',
-      });
+      // contact_info: phones / e-mails / handles / PIX keys outside the
+      // payment link (anti-scam); prohibited_text: language.
+      const code = mod.reason === 'contact_info' ? 'contact_info' : 'prohibited_text';
+      throw new HttpsError('invalid-argument', code, { code, kinds: mod.terms ?? [] });
     }
 
     const profileRef = db.collection('profiles').doc(uid);
@@ -61,6 +68,20 @@ export const createUserExperience = onCall(
         tx.get(counterRef),
       ]);
       const profile = profileSnap.data() ?? null;
+
+      // Phase 1 safety: ID document uploaded to create; agreement + approved
+      // document (+ new-host paid limit) to publish a listing taking money.
+      const blocked = createBlockReason(profile);
+      if (blocked) throw safetyError(blocked);
+      if (v.data.status === 'published') {
+        let otherPublishedPaid = 0;
+        if (v.data.isFree !== true && profile?.isAdmin !== true && isNewHost(profile)) {
+          otherPublishedPaid = await countPublishedPaid(tx, uid);
+        }
+        const why = publishBlockReason({ profile, experience: v.data, otherPublishedPaid });
+        if (why) throw safetyError(why);
+      }
+
       const tier = effectiveTier(profile);
       const max = maxExperiencesFor(tier, isProfileAdmin(profile));
 
@@ -94,6 +115,12 @@ export const createUserExperience = onCall(
         reviewCount: 0,
         ratingDist: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 },
         viewCount: 0,
+        // Explore promotion is server-owned (setExperienceFeatured, admin).
+        isFeatured: false,
+        // Its (empty) aggregate is part of the host's profile totals from the
+        // start, so review triggers keep profiles/{uid}.hostRating* in step.
+        // Without a profile there is nothing to count into (backfill later).
+        hostRatingCounted: profileSnap.exists,
       });
       tx.set(counterRef, { count: count + 1, updatedAt: now }, { merge: true });
       return { id: expRef.id, count: count + 1, limit: max };
@@ -102,3 +129,30 @@ export const createUserExperience = onCall(
     return result;
   },
 );
+
+/** Structured refusal the client maps to a guided prompt (see safety.ts). */
+export function safetyError(code: SafetyCode): HttpsError {
+  return new HttpsError('failed-precondition', code, { code });
+}
+
+/** The host's published PAID listings (aggregate count: 1 read / 1000 docs). */
+export async function countPublishedPaid(
+  tx: admin.firestore.Transaction,
+  hostId: string,
+  excludeId?: string,
+): Promise<number> {
+  const agg = await tx.get(
+    db.collection(EXPERIENCES)
+      .where('hostId', '==', hostId)
+      .where('status', '==', 'published')
+      .where('isFree', '==', false)
+      .count(),
+  );
+  let n = agg.data().count;
+  if (excludeId) {
+    const self = await tx.get(db.collection(EXPERIENCES).doc(excludeId));
+    const d = self.data();
+    if (d && d.hostId === hostId && d.status === 'published' && d.isFree === false) n -= 1;
+  }
+  return Math.max(0, n);
+}

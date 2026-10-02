@@ -132,7 +132,19 @@ service cloud.firestore {
         && request.resource.data.get('baseMembershipEndDate', null) == null
         // Follow counters are server-owned (functions social/follows.ts).
         && request.resource.data.get('followersCount', 0) == 0
-        && request.resource.data.get('followingCount', 0) == 0;
+        && request.resource.data.get('followingCount', 0) == 0
+        // Host overall rating is server-owned (user_experiences triggers).
+        && request.resource.data.get('hostRatingSum', 0) == 0
+        && request.resource.data.get('hostRatingCount', 0) == 0
+        && request.resource.data.get('hostRatingAvg', 0) == 0
+        // Guest rating (host -> guest reviews) is server-owned
+        // (experience_bookings onGuestReviewWritten).
+        && request.resource.data.get('guestRatingSum', 0) == 0
+        && request.resource.data.get('guestRatingCount', 0) == 0
+        && request.resource.data.get('guestRatingAvg', 0) == 0
+        // Host agreement acceptance is recorded only by acceptHostAgreement.
+        && request.resource.data.get('hostAgreementVersion', 0) == 0
+        && request.resource.data.get('hostAgreementAcceptedAt', null) == null;
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
@@ -189,7 +201,29 @@ service cloud.firestore {
               && request.resource.data.get('followersCount', 0)
                  == resource.data.get('followersCount', 0)
               && request.resource.data.get('followingCount', 0)
-                 == resource.data.get('followingCount', 0))
+                 == resource.data.get('followingCount', 0)
+              // Host overall rating across all experiences: maintained ONLY
+              // by onExperienceReviewWritten / onUserExperienceWritten /
+              // backfillHostRatings (Admin SDK).
+              && request.resource.data.get('hostRatingSum', 0)
+                 == resource.data.get('hostRatingSum', 0)
+              && request.resource.data.get('hostRatingCount', 0)
+                 == resource.data.get('hostRatingCount', 0)
+              && request.resource.data.get('hostRatingAvg', 0)
+                 == resource.data.get('hostRatingAvg', 0)
+              // Guest rating from host reviews: experience_bookings
+              // onGuestReviewWritten only (Admin SDK).
+              && request.resource.data.get('guestRatingSum', 0)
+                 == resource.data.get('guestRatingSum', 0)
+              && request.resource.data.get('guestRatingCount', 0)
+                 == resource.data.get('guestRatingCount', 0)
+              && request.resource.data.get('guestRatingAvg', 0)
+                 == resource.data.get('guestRatingAvg', 0)
+              // Host agreement (acceptHostAgreement callable only).
+              && request.resource.data.get('hostAgreementVersion', 0)
+                 == resource.data.get('hostAgreementVersion', 0)
+              && request.resource.data.get('hostAgreementAcceptedAt', null)
+                 == resource.data.get('hostAgreementAcceptedAt', null))
         || isAdminPanelUser() || isProfileAdmin()
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
@@ -283,7 +317,11 @@ service cloud.firestore {
     // ============================================================================
     match /reports/{reportId} {
       allow read: if isAdmin();
-      allow create: if isSignedIn();
+      // A report is filed in the reporter's OWN name (the experience report
+      // trigger counts distinct reporterIds to auto-hide scams).
+      allow create: if isSignedIn()
+        && (!('reporterId' in request.resource.data)
+            || request.resource.data.reporterId == request.auth.uid);
       allow update: if isAdmin();
       allow delete: if false;
     }
@@ -1878,7 +1916,37 @@ service cloud.firestore {
     match /user_experiences/{experienceId} {
       function serverOwnedExperienceFields() {
         return ['hostId', 'createdAt', 'ratingSum', 'ratingCount', 'ratingAvg',
-                'ratingDist', 'reviewCount', 'viewCount', 'moderation'];
+                'ratingDist', 'reviewCount', 'viewCount', 'moderation',
+                'hostRatingCounted', 'reportCount',
+                // Explore "Top experiences" promotion: admin callable
+                // setExperienceFeatured only.
+                'isFeatured', 'featuredUntil'];
+      }
+      // ── Phase 1 safety (mirrors functions/src/user_experiences/safety.ts) ──
+      function hostProfileData() {
+        return get(/databases/$(database)/documents/profiles/$(request.auth.uid)).data;
+      }
+      // ID document APPROVED (age-assurance flow; isAgeVerified is server-owned).
+      function hostIdApproved(p) {
+        return p.get('isAgeVerified', false) == true
+          || p.get('ageVerification', {}).get('status', '') == 'verified';
+      }
+      // The listing takes money: paid, or carries a payment link.
+      function takesPayment(d) {
+        return d.get('isFree', false) != true || d.get('paymentLink', null) != null;
+      }
+      // A client may only WRITE status 'published' on a listing that already
+      // is published: every publish goes through publishUserExperience (ID
+      // document, host agreement, approved document for paid, new-host paid
+      // limit — a count rules cannot do). While published, edits keep a free
+      // listing free; a listing already taking payment may be edited only by
+      // a host whose document is approved (e.g. changing the payment link).
+      function publishWriteAllowed() {
+        return request.resource.data.status != 'published'
+          || (resource.data.status == 'published'
+              && (!takesPayment(request.resource.data)
+                  || (takesPayment(resource.data)
+                      && hostIdApproved(hostProfileData()))));
       }
       function validExperienceText(d) {
         return d.title is string && d.title.size() >= 5 && d.title.size() <= 80
@@ -1887,7 +1955,18 @@ service cloud.firestore {
           && d.photoUrls is list && d.photoUrls.size() <= 8
           && d.included is list && d.included.size() >= 1
           && d.included.size() <= 20
-          && d.notIncluded is list && d.notIncluded.size() <= 20;
+          && d.notIncluded is list && d.notIncluded.size() <= 20
+          // Fixed cancellation policy + optional host notes (≤ 300).
+          && (d.get('cancellationNotes', null) == null
+              || (d.cancellationNotes is string
+                  && d.cancellationNotes.size() <= 300))
+          // Payment methods: cash at the meeting and/or the online link.
+          && (d.get('paymentMethods', null) == null
+              || (d.paymentMethods is list
+                  && d.paymentMethods.size() <= 2
+                  && d.paymentMethods.toSet().hasOnly(['cash', 'link'])))
+          // Bookings: the host approves each request (snapshotted per booking).
+          && (d.get('requestToBook', false) is bool);
       }
 
       allow get, list: if isSignedIn()
@@ -1899,11 +1978,116 @@ service cloud.firestore {
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(serverOwnedExperienceFields())
         && validExperienceText(request.resource.data)
+        && publishWriteAllowed()
         && (request.resource.data.status == resource.data.status
             || (resource.data.status != 'hidden'
                 && request.resource.data.status in ['draft', 'published']));
       allow delete: if isSignedIn()
         && (resource.data.hostId == request.auth.uid || isAdmin());
+
+      // Guest consent before paying the host (one per guest; immutable
+      // evidence: no update / delete). The host may read a guest's consent.
+      match /booking_consents/{uid} {
+        allow get: if isSignedIn()
+          && (uid == request.auth.uid
+              || get(/databases/$(database)/documents/user_experiences/$(experienceId)).data.hostId
+                   == request.auth.uid);
+        allow list: if false;
+        allow create: if isSignedIn()
+          && uid == request.auth.uid
+          && request.resource.data.keys()
+               .hasOnly(['acceptedAt', 'policy', 'version', 'experienceId', 'method'])
+          && request.resource.data.get('method', 'link') in ['cash', 'link']
+          && request.resource.data.acceptedAt == request.time
+          && request.resource.data.policy in ['flexible', 'moderate', 'strict']
+          && request.resource.data.version is int
+          && request.resource.data.version >= 1
+          && request.resource.data.version <= 100
+          && request.resource.data.experienceId == experienceId;
+        allow update, delete: if false;
+      }
+
+      // -- Bookings (functions/src/experience_bookings) ------------------
+      // Bookable slots. Host-managed; bookedCount is server-owned (booking
+      // transactions). While seats are booked, start / end / status are
+      // frozen (cancel through the cancelExperienceSlot callable) and the
+      // capacity cannot drop below bookedCount. Cancelled slots are final.
+      match /slots/{slotId} {
+        function slotExperience() {
+          return get(/databases/$(database)/documents/user_experiences/$(experienceId)).data;
+        }
+        function validSlot(d) {
+          return d.keys().hasOnly(['start', 'end', 'capacity', 'bookedCount',
+                                   'status', 'createdAt', 'updatedAt'])
+            && d.start is timestamp && d.end is timestamp && d.end > d.start
+            && d.capacity is int && d.capacity >= 1 && d.capacity <= 500
+            && d.bookedCount is int
+            && d.status in ['open', 'cancelled'];
+        }
+        allow get, list: if isSignedIn()
+          && (slotExperience().status == 'published'
+              || slotExperience().hostId == request.auth.uid);
+        allow create: if isSignedIn()
+          && slotExperience().hostId == request.auth.uid
+          && validSlot(request.resource.data)
+          && request.resource.data.bookedCount == 0
+          && request.resource.data.status == 'open'
+          && request.resource.data.start > request.time;
+        allow update: if isSignedIn()
+          && slotExperience().hostId == request.auth.uid
+          && resource.data.status == 'open'
+          && validSlot(request.resource.data)
+          && request.resource.data.bookedCount == resource.data.bookedCount
+          && request.resource.data.capacity >= resource.data.bookedCount
+          && (resource.data.bookedCount == 0
+              || (request.resource.data.start == resource.data.start
+                  && request.resource.data.end == resource.data.end
+                  && request.resource.data.status == resource.data.status));
+        allow delete: if isSignedIn()
+          && slotExperience().hostId == request.auth.uid
+          && resource.data.bookedCount == 0;
+      }
+
+      // Server-written when a booking becomes reviewable (check-in or
+      // completion); deleted on a dispute. The guest reads their own.
+      match /review_eligibility/{guestId} {
+        allow get: if isOwner(guestId);
+        allow list, write: if false;
+      }
+
+      // The guest's BLIND review of this experience (double-blind with the
+      // host's guest_reviews/{bookingId}). Only its author can read it; status
+      // and revealAt are server fields. Needs the eligibility marker of the
+      // same booking.
+      match /pending_reviews/{reviewerId} {
+        function eligibility() {
+          return get(/databases/$(database)/documents/user_experiences/$(experienceId)/review_eligibility/$(reviewerId)).data;
+        }
+        function validPendingReview(d) {
+          return d.rating is int && d.rating >= 1 && d.rating <= 5
+            && d.comment is string && d.comment.size() <= 1000;
+        }
+        allow get: if isOwner(reviewerId);
+        allow list: if false;
+        allow create: if isOwner(reviewerId)
+          && request.resource.data.keys()
+               .hasOnly(['authorId', 'bookingId', 'rating', 'comment', 'createdAt', 'updatedAt'])
+          && request.resource.data.authorId == request.auth.uid
+          && request.resource.data.createdAt == request.time
+          && request.resource.data.updatedAt == request.time
+          && validPendingReview(request.resource.data)
+          && exists(/databases/$(database)/documents/user_experiences/$(experienceId)/review_eligibility/$(reviewerId))
+          && request.resource.data.bookingId == eligibility().bookingId
+          && request.time < eligibility().reviewUntil;
+        allow update: if isOwner(reviewerId)
+          && resource.data.get('status', 'pending') == 'pending'
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['rating', 'comment', 'updatedAt'])
+          && request.resource.data.updatedAt == request.time
+          && validPendingReview(request.resource.data);
+        allow delete: if isOwner(reviewerId)
+          && resource.data.get('status', 'pending') == 'pending';
+      }
 
       // ONE review per user per experience: the doc id is the reviewer's uid.
       match /reviews/{reviewerId} {
@@ -1918,16 +2102,11 @@ service cloud.firestore {
         allow get, list: if isSignedIn()
           && (reviewerId == request.auth.uid
               || resource.data.get('status', '') == 'visible');
-        allow create: if isSignedIn()
-          && reviewerId == request.auth.uid
-          && request.resource.data.keys()
-               .hasOnly(['authorId', 'rating', 'comment', 'createdAt', 'updatedAt'])
-          && request.resource.data.authorId == request.auth.uid
-          && request.resource.data.createdAt == request.time
-          && request.resource.data.updatedAt == request.time
-          && validReview(request.resource.data)
-          && reviewedExperience().hostId != request.auth.uid
-          && reviewedExperience().status == 'published';
+        // New reviews need a real booking: the guest writes
+        // pending_reviews/{uid} (above) and experience_bookings reveals it into
+        // this doc (Admin SDK) once the host reviewed too or 14 days passed.
+        // Existing reviews stay editable / deletable by their author.
+        allow create: if false;
         allow update: if isSignedIn()
           && reviewerId == request.auth.uid
           && request.resource.data.diff(resource.data).affectedKeys()
@@ -1966,6 +2145,85 @@ service cloud.firestore {
       allow read: if isOwner(uid);
       allow write: if false;
     }
+
+    // ============================================================================
+    // IDENTITY DOCUMENTS (server-only) — age-assurance document index and the
+    // 30-day retention entries (replaced documents / deleted accounts). Written
+    // and read ONLY by Cloud Functions (Admin SDK). No client access at all.
+    // DRAFT — lawyer review (fraud prevention, LGPD / GDPR Art. 6(1)(f)).
+    // ============================================================================
+    match /id_documents/{uid} {
+      allow read, write: if false;
+    }
+    match /id_document_retention/{entryId} {
+      allow read, write: if false;
+    }
+
+    // ============================================================================
+    // EXPERIENCE BOOKINGS (functions/src/experience_bookings)
+    // ============================================================================
+    // No money moves through GreenGo (cash / the host's link). Every write
+    // goes through the booking callables / jobs (Admin SDK); the guest and the
+    // host read their own bookings, admins read all.
+    match /bookings/{bookingId} {
+      allow get, list: if isSignedIn()
+        && (resource.data.guestId == request.auth.uid
+            || resource.data.hostId == request.auth.uid
+            || isAdminPanelUser() || isAdmin());
+      allow write: if false;
+    }
+
+    // Host -> guest review, one per booking (doc id = bookingId), written by
+    // the booking's host after check-in / completion / a no-show, within 30
+    // days of the end. status (held -> visible | rejected) and revealAt are
+    // server fields; it stays hidden until the guest's review is in or 14 days
+    // passed (double-blind). Aggregates into profiles.guestRating*.
+    match /guest_reviews/{bookingId} {
+      function reviewedBooking() {
+        return get(/databases/$(database)/documents/bookings/$(bookingId)).data;
+      }
+      allow get, list: if isSignedIn()
+        && (resource.data.get('status', '') == 'visible'
+            || resource.data.hostId == request.auth.uid
+            || isAdminPanelUser() || isAdmin());
+      allow create: if isSignedIn()
+        && request.resource.data.keys()
+             .hasOnly(['hostId', 'guestId', 'experienceId', 'rating', 'comment', 'createdAt'])
+        && request.resource.data.hostId == request.auth.uid
+        && reviewedBooking().hostId == request.auth.uid
+        && request.resource.data.guestId == reviewedBooking().guestId
+        && request.resource.data.experienceId == reviewedBooking().experienceId
+        && request.resource.data.rating is int
+        && request.resource.data.rating >= 1 && request.resource.data.rating <= 5
+        && request.resource.data.comment is string
+        && request.resource.data.comment.size() <= 500
+        && request.resource.data.createdAt == request.time
+        && (reviewedBooking().status in ['completed', 'no_show']
+            || (reviewedBooking().status == 'confirmed'
+                && reviewedBooking().get('checkIn', null) != null))
+        && request.time < reviewedBooking().slotEnd + duration.value(30, 'd');
+      allow update: if false;
+      allow delete: if isAdminPanelUser() || isAdmin();
+    }
+
+    // Host cancellation counter (3 in 90 days -> host_flags). Host reads own.
+    match /host_cancellation_stats/{uid} {
+      allow get: if isOwner(uid) || isAdminPanelUser();
+      allow list: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /host_flags/{uid} {
+      allow read: if isAdminPanelUser() || isAdmin();
+      allow write: if false;
+    }
+    // Set by resolveBookingDispute (hostAction suspend_hosting): no new bookings.
+    match /host_suspensions/{uid} {
+      allow get: if isOwner(uid) || isAdminPanelUser();
+      allow list: if isAdminPanelUser();
+      allow write: if false;
+    }
+    // server_secrets (check-in HMAC key) and booking_agg_events (aggregate
+    // dedupe) have no rule on purpose: DEFAULT DENY below.
 
     // ============================================================================
     // IMAGE MODERATION VERDICTS

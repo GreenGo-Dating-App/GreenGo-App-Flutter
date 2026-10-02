@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
 
 const firestore = admin.firestore();
 
@@ -549,6 +550,7 @@ async function suspendUser(
     suspendedUntil: admin.firestore.Timestamp.fromDate(suspendedUntil),
     suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
   });
+  await syncHostExperiencesForBan(userId, true);
 }
 
 /**
@@ -562,6 +564,7 @@ async function banUser(userId: string, reason: string | null): Promise<void> {
   });
 
   await admin.auth().updateUser(userId, { disabled: true });
+  await syncHostExperiencesForBan(userId, true);
 }
 
 /**

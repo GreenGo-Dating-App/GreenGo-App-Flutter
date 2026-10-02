@@ -450,14 +450,21 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                 ),
                               ),
                             ),
-                            // Gold verified check badge for verified users.
-                            if (widget.profile.isVerified ||
-                                widget.profile.businessVerified) ...[
+                            // "Verified" = GreenGo APPROVED an ID document
+                            // (server-owned isAgeVerified), never the
+                            // onboarding account approval.
+                            if (widget.profile.showVerifiedBadge) ...[
+                              const SizedBox(width: 8),
+                              const VerifiedBadge(size: 24),
+                            ],
+                            // Business verification is a different claim
+                            // with its own tooltip.
+                            if (widget.profile.businessVerified) ...[
                               const SizedBox(width: 8),
                               Tooltip(
-                                message:
-                                    AppLocalizations.of(context)!.safetyVerifiedBadge,
-                                child: const VerifiedBadge(
+                                message: AppLocalizations.of(context)!
+                                    .businessVerifiedBadgeTooltip,
+                                child: const CheckBadge(
                                   size: 22,
                                   isPremium: true,
                                 ),

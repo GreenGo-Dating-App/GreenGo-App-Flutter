@@ -54,6 +54,7 @@ import '../bloc/chat_state.dart';
 import '../widgets/forward_message_sheet.dart';
 import '../widgets/message_bubble.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Chat Screen
 ///
@@ -2163,6 +2164,9 @@ class _ChatScreenState extends State<ChatScreen> {
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
+                    // Brief-backed (batched cache): the profile passed in
+                    // may be a partial one built from a conversation row.
+                    UserVerifiedBadge(uid: widget.otherUserId, size: 15),
                     if (widget.otherUserProfile.languages.isNotEmpty) ...[
                       const SizedBox(width: 6),
                       LanguageFlagBadge(

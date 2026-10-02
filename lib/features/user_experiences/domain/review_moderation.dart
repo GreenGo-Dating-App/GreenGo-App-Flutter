@@ -1,9 +1,10 @@
 import '../../../core/services/content_filter_service.dart';
+import 'contact_info.dart';
 
 /// Client-side verdict on review / reply text, before it is submitted.
 /// The server re-checks with the same rules (functions/src/user_experiences/
 /// moderation.ts) because the client can be bypassed.
-enum CommentVerdict { ok, empty, tooLong, prohibited, containsLink }
+enum CommentVerdict { ok, empty, tooLong, prohibited, containsLink, contactInfo }
 
 class ReviewModeration {
   const ReviewModeration._();
@@ -26,6 +27,7 @@ class ReviewModeration {
       return CommentVerdict.prohibited;
     }
     if (containsLink(t)) return CommentVerdict.containsLink;
+    if (ContactInfoDetector.contains(t)) return CommentVerdict.contactInfo;
     return CommentVerdict.ok;
   }
 }

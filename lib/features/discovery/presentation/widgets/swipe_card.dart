@@ -9,6 +9,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/widgets/language_badge.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/discovery_card.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Swipeable Card Widget
 ///
@@ -319,6 +320,11 @@ class _SwipeCardState extends State<SwipeCard>
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
+              if (profile.showVerifiedBadge)
+                const Padding(
+                  padding: EdgeInsets.only(left: 6),
+                  child: VerifiedBadge(size: 22),
+                ),
               if (profile.languages.isNotEmpty) ...[
                 const SizedBox(width: 8),
                 LanguageFlagBadge(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import '../../../generated/app_localizations.dart';
+import '../domain/cancellation_rules.dart';
 import '../domain/entities/user_experience.dart';
 import '../domain/experience_validation.dart';
 
@@ -123,6 +124,52 @@ class ExperienceL10n {
         return l.uexpErrPaymentInvalid;
       case ExperienceFieldError.prohibitedText:
         return l.uexpErrProhibited;
+      case ExperienceFieldError.contactInfo:
+        return l.uexpErrContactInfo;
+      case ExperienceFieldError.paymentMethodsRequired:
+        return l.uexpErrPaymentMethods;
+    }
+  }
+
+  static String policy(AppLocalizations l, CancellationPolicy p) => switch (p) {
+        CancellationPolicy.flexible => l.uexpPolicyFlexible,
+        CancellationPolicy.moderate => l.uexpPolicyModerate,
+        CancellationPolicy.strict => l.uexpPolicyStrict,
+      };
+
+  static String policyDescription(AppLocalizations l, CancellationPolicy p) =>
+      switch (p) {
+        CancellationPolicy.flexible => l.uexpPolicyFlexibleDesc,
+        CancellationPolicy.moderate => l.uexpPolicyModerateDesc,
+        CancellationPolicy.strict => l.uexpPolicyStrictDesc,
+      };
+
+  static String cancelWindow(AppLocalizations l, CancelWindow w) => switch (w) {
+        CancelWindow.moreThan7Days => l.uexpPolicyMoreThan7d,
+        CancelWindow.between7DaysAnd24h => l.uexpPolicy7dTo24h,
+        CancelWindow.moreThan24h => l.uexpPolicyMoreThan24h,
+        CancelWindow.lessThan24h => l.uexpPolicyLess24h,
+        CancelWindow.lessThan7Days => l.uexpPolicyLess7d,
+      };
+
+  static String paymentMethod(AppLocalizations l, PaymentMethod m) =>
+      switch (m) {
+        PaymentMethod.cash => l.uexpMethodCash,
+        PaymentMethod.link => l.uexpMethodLink,
+      };
+
+  static IconData paymentMethodIcon(PaymentMethod m) => switch (m) {
+        PaymentMethod.cash => Icons.payments_outlined,
+        PaymentMethod.link => Icons.link_rounded,
+      };
+
+  /// Localized percentage ("100%", "50 %" …).
+  static String percent(BuildContext context, double fraction) {
+    final locale = Localizations.localeOf(context).toString();
+    try {
+      return NumberFormat.percentPattern(locale).format(fraction);
+    } catch (_) {
+      return NumberFormat.percentPattern().format(fraction);
     }
   }
 

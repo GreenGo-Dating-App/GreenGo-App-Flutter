@@ -97,3 +97,54 @@ class ExperienceReply extends Equatable {
   List<Object?> get props =>
       [id, experienceId, reviewId, authorId, text, mentions, createdAt, status];
 }
+
+/// `user_experiences/{id}/review_eligibility/{guestId}` — server-written once
+/// the guest's booking became reviewable (check-in or completion); deleted
+/// when a dispute is opened. Only the guest reads it.
+class ReviewEligibility extends Equatable {
+  const ReviewEligibility({
+    required this.bookingId,
+    this.hostId,
+    this.reviewUntil,
+  });
+
+  final String bookingId;
+  final String? hostId;
+  final DateTime? reviewUntil;
+
+  /// The rules accept a pending review only before [reviewUntil].
+  bool isOpenAt(DateTime now) =>
+      bookingId.isNotEmpty && (reviewUntil == null || now.isBefore(reviewUntil!));
+
+  @override
+  List<Object?> get props => [bookingId, hostId, reviewUntil];
+}
+
+/// The guest's BLIND review, `user_experiences/{id}/pending_reviews/{uid}`:
+/// only its author can read it; the server publishes it into reviews/{uid}
+/// once the host reviewed the guest too, or after 14 days.
+class PendingReview extends Equatable {
+  const PendingReview({
+    required this.experienceId,
+    required this.authorId,
+    required this.bookingId,
+    required this.rating,
+    required this.comment,
+    this.createdAt,
+    this.revealAt,
+  });
+
+  final String experienceId;
+  final String authorId;
+  final String bookingId;
+  final int rating;
+  final String comment;
+  final DateTime? createdAt;
+
+  /// Server field (set by the trigger right after the write).
+  final DateTime? revealAt;
+
+  @override
+  List<Object?> get props =>
+      [experienceId, authorId, bookingId, rating, comment, createdAt, revealAt];
+}

@@ -80,11 +80,22 @@ service firebase.storage {
       allow write: if isOwner(uid) && validUpload();
     }
 
+    // Retained identity documents (moved here by submitAgeDocument / the
+    // account-deletion cascade). Server-only: Cloud Functions use the Admin SDK,
+    // which bypasses these rules. Nobody else may read or write them.
+    match /id_documents/{allPaths=**} {
+      allow read, write: if false;
+    }
+    match /retention/{allPaths=**} {
+      allow read, write: if false;
+    }
+
     // Age-assurance documents. WRITE-ONLY by design.
     //
     // The owner uploads an identity document here and the `submitAgeDocument`
     // function reads it with admin credentials, extracts the birth date, and
-    // DELETES the image within the same invocation. Nobody — not the uploader,
+    // MOVES the image to the server-only id_documents/ prefix (retained for
+    // fraud prevention) within the same invocation. Nobody — not the uploader,
     // not an admin — can read it back, because there is no legitimate reason
     // to and every reason not to: this is the most sensitive data the app
     // handles. Images are capped tighter than ordinary media since a document

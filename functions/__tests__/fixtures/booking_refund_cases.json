@@ -1,0 +1,448 @@
+{
+  "_comment": "Shared by functions/__tests__/unit/experienceBookings.test.ts (refundFor / refundDueFor in src/experience_bookings/model.ts) and the app's test/unit/experience_bookings/booking_rules_test.dart (BookingRules). Times are relative to the slot start.",
+  "refundFor": [
+    {
+      "policy": "flexible",
+      "beforeStartMs": 864000000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": 90000000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": 86400000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": 86399999,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": 3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 691200000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 604800000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 604799999,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 50
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 259200000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 50
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 86400000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 50
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 86399999,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 691200000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 604800000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 604799999,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 172800000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": 3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "host",
+      "expected": 100,
+      "note": "host cancels"
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": -3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "host",
+      "expected": 100,
+      "note": "host cancels after start"
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": 0,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0,
+      "note": "at the start"
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": -3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0,
+      "note": "after the start"
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "host",
+      "expected": 100,
+      "note": "host cancels"
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": -3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "host",
+      "expected": 100,
+      "note": "host cancels after start"
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 0,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0,
+      "note": "at the start"
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": -3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0,
+      "note": "after the start"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "host",
+      "expected": 100,
+      "note": "host cancels"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": -3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "host",
+      "expected": 100,
+      "note": "host cancels after start"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 0,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0,
+      "note": "at the start"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": -3600000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 0,
+      "note": "after the start"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 259200000,
+      "sinceBookingMs": 82800000,
+      "by": "guest",
+      "expected": 100,
+      "note": "grace: booked < 24 h ago, start > 48 h away"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 259200000,
+      "sinceBookingMs": 86400000,
+      "by": "guest",
+      "expected": 100,
+      "note": "grace boundary inclusive"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 259200000,
+      "sinceBookingMs": 90000000,
+      "by": "guest",
+      "expected": 0,
+      "note": "grace over"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 169200000,
+      "sinceBookingMs": 3600000,
+      "by": "guest",
+      "expected": 0,
+      "note": "start not > 48 h away"
+    },
+    {
+      "policy": "strict",
+      "beforeStartMs": 172800000,
+      "sinceBookingMs": 3600000,
+      "by": "guest",
+      "expected": 0,
+      "note": "exactly 48 h is not > 48 h"
+    },
+    {
+      "policy": "moderate",
+      "beforeStartMs": 169200000,
+      "sinceBookingMs": 3600000,
+      "by": "guest",
+      "expected": 50
+    },
+    {
+      "policy": "flexible",
+      "beforeStartMs": 259200000,
+      "sinceBookingMs": 3600000,
+      "by": "guest",
+      "expected": 100
+    },
+    {
+      "policy": "weird",
+      "beforeStartMs": 259200000,
+      "sinceBookingMs": 2592000000,
+      "by": "guest",
+      "expected": 50,
+      "note": "unknown policy -> moderate"
+    }
+  ],
+  "refundDueFor": [
+    {
+      "price": {
+        "unitAmount": 1999,
+        "currency": "eur",
+        "totalAmount": 5997
+      },
+      "payment": {
+        "mode": "link",
+        "hostConfirmedPaid": false
+      },
+      "percent": 50,
+      "reason": "guest_cancelled",
+      "expected": {
+        "percent": 50,
+        "policyPercent": 50,
+        "amount": 2999,
+        "currency": "eur",
+        "reason": "guest_cancelled"
+      }
+    },
+    {
+      "price": {
+        "unitAmount": 1999,
+        "currency": "eur",
+        "totalAmount": 5997
+      },
+      "payment": {
+        "mode": "link",
+        "hostConfirmedPaid": true
+      },
+      "percent": 100,
+      "reason": "host_cancelled",
+      "expected": {
+        "percent": 100,
+        "policyPercent": 100,
+        "amount": 5997,
+        "currency": "eur",
+        "reason": "host_cancelled"
+      }
+    },
+    {
+      "price": {
+        "unitAmount": 1999,
+        "currency": "eur",
+        "totalAmount": 5997
+      },
+      "payment": {
+        "mode": "cash",
+        "hostConfirmedPaid": false
+      },
+      "percent": 100,
+      "reason": "host_cancelled",
+      "expected": {
+        "percent": 0,
+        "policyPercent": 100,
+        "amount": 0,
+        "currency": "eur",
+        "reason": "host_cancelled_cash_unpaid"
+      }
+    },
+    {
+      "price": {
+        "unitAmount": 1999,
+        "currency": "eur",
+        "totalAmount": 5997
+      },
+      "payment": {
+        "mode": "cash",
+        "hostConfirmedPaid": true
+      },
+      "percent": 50,
+      "reason": "guest_cancelled",
+      "expected": {
+        "percent": 50,
+        "policyPercent": 50,
+        "amount": 2999,
+        "currency": "eur",
+        "reason": "guest_cancelled"
+      }
+    },
+    {
+      "price": {
+        "unitAmount": 4990,
+        "currency": "brl",
+        "totalAmount": 9980
+      },
+      "payment": {
+        "mode": "link",
+        "hostConfirmedPaid": false
+      },
+      "percent": 0,
+      "reason": "guest_cancelled",
+      "expected": {
+        "percent": 0,
+        "policyPercent": 0,
+        "amount": 0,
+        "currency": "brl",
+        "reason": "guest_cancelled"
+      }
+    },
+    {
+      "price": {
+        "unitAmount": 1500,
+        "currency": "jpy",
+        "totalAmount": 4500
+      },
+      "payment": {
+        "mode": "link",
+        "hostConfirmedPaid": false
+      },
+      "percent": 50,
+      "reason": "guest_cancelled",
+      "expected": {
+        "percent": 50,
+        "policyPercent": 50,
+        "amount": 2250,
+        "currency": "jpy",
+        "reason": "guest_cancelled"
+      }
+    },
+    {
+      "price": {
+        "unitAmount": 333,
+        "currency": "usd",
+        "totalAmount": 333
+      },
+      "payment": {
+        "mode": "link",
+        "hostConfirmedPaid": false
+      },
+      "percent": 50,
+      "reason": "guest_cancelled",
+      "expected": {
+        "percent": 50,
+        "policyPercent": 50,
+        "amount": 167,
+        "currency": "usd",
+        "reason": "guest_cancelled"
+      }
+    },
+    {
+      "price": {
+        "unitAmount": 0,
+        "currency": null,
+        "totalAmount": 0
+      },
+      "payment": {
+        "mode": "free",
+        "hostConfirmedPaid": false
+      },
+      "percent": 100,
+      "reason": "x",
+      "expected": null
+    },
+    {
+      "price": null,
+      "payment": {
+        "mode": "link",
+        "hostConfirmedPaid": false
+      },
+      "percent": 100,
+      "reason": "x",
+      "expected": null
+    },
+    {
+      "price": {
+        "unitAmount": 1999,
+        "currency": "eur",
+        "totalAmount": 5997
+      },
+      "payment": {
+        "mode": "free",
+        "hostConfirmedPaid": false
+      },
+      "percent": 100,
+      "reason": "x",
+      "expected": null
+    }
+  ]
+}

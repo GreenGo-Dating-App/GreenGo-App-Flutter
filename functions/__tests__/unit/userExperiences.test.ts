@@ -248,6 +248,35 @@ describe('payload validation', () => {
     expect(free.data.currency).toBeNull();
   });
 
+  it('requestToBook is kept only as a strict boolean (default false)', () => {
+    expect(validateExperiencePayload(good).data.requestToBook).toBe(false);
+    expect(validateExperiencePayload({ ...good, requestToBook: true }).data.requestToBook).toBe(true);
+    expect(validateExperiencePayload({ ...good, requestToBook: 'yes' }).data.requestToBook).toBe(false);
+  });
+
+  it('payment methods: cash and/or link for paid, none for free', () => {
+    const cash = validateExperiencePayload({ ...good, paymentMethods: ['cash'], paymentLink: null });
+    expect(cash.ok).toBe(true);
+    expect(cash.data.paymentMethods).toEqual(['cash']);
+    expect(cash.data.paymentLink).toBeNull();
+    // a link sent with cash only is dropped
+    const cashOnly = validateExperiencePayload({ ...good, paymentMethods: ['cash'] });
+    expect(cashOnly.data.paymentLink).toBeNull();
+    const both = validateExperiencePayload({ ...good, paymentMethods: ['link', 'cash', 'bogus'] });
+    expect(both.ok).toBe(true);
+    expect(both.data.paymentMethods).toEqual(['cash', 'link']);
+    expect(both.data.paymentLink).not.toBeNull();
+    expect(validateExperiencePayload({ ...good, paymentMethods: ['link'], paymentLink: null }).errors)
+      .toContain('paymentLink');
+    expect(validateExperiencePayload({ ...good, paymentMethods: [] }).errors)
+      .toContain('paymentMethods');
+    // older clients (no field) = link
+    expect(validateExperiencePayload(good).data.paymentMethods).toEqual(['link']);
+    const free = validateExperiencePayload({ ...good, isFree: true, paymentMethods: ['cash'] });
+    expect(free.data.paymentMethods).toEqual([]);
+    expect(free.data.paymentLink).toBeNull();
+  });
+
   it('min group size must not exceed max', () => {
     expect(validateExperiencePayload({ ...good, minGroupSize: 20 }).errors).toContain('minGroupSize');
     expect(validateExperiencePayload({ ...good, minGroupSize: null }).ok).toBe(true);

@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
 
 const firestore = admin.firestore();
 const auth = admin.auth();
@@ -393,6 +394,7 @@ export const suspendUserAccount = functions.https.onCall(monitored("suspendUserA
       suspendedBy: context.auth!.uid,
       suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    await syncHostExperiencesForBan(userId, true);
 
     // Log admin action
     await logAdminAction(
@@ -427,6 +429,7 @@ export const unsuspendUserAccount = functions.https.onCall(monitored("unsuspendU
       unsuspendedBy: context.auth!.uid,
       unsuspendedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    await syncHostExperiencesForBan(userId, false);
 
     // Log admin action
     await logAdminAction(
@@ -460,6 +463,7 @@ export const banUserAccount = functions.https.onCall(monitored("banUserAccount",
       bannedBy: context.auth!.uid,
       bannedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    await syncHostExperiencesForBan(userId, true);
 
     // Disable Firebase Auth account
     await auth.updateUser(userId, {
@@ -498,6 +502,7 @@ export const unbanUserAccount = functions.https.onCall(monitored("unbanUserAccou
       unbannedBy: context.auth!.uid,
       unbannedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
+    await syncHostExperiencesForBan(userId, false);
 
     // Re-enable Firebase Auth account
     await auth.updateUser(userId, {

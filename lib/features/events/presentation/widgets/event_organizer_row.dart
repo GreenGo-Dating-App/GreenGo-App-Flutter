@@ -8,6 +8,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
 import '../../domain/entities/event.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// "Organised by" card on the event detail screen: the organiser AND every
 /// co-owner, side by side as equal people (photo + current name, resolved in
@@ -71,15 +72,22 @@ class _EventOrganizerRowState extends State<EventOrganizerRow> {
                 ? snapshotName
                 : '?');
 
-        final people = <({String uid, String name, String? photo})>[
+        final people =
+            <({String uid, String name, String? photo, bool verified})>[
           (
             uid: widget.event.organizerId,
             name: organizerName,
             photo: organizer?.photoUrl ?? widget.event.organizerPhotoUrl,
+            verified: UserVerifiedBadge.isVisible(organizer),
           ),
           for (final id in widget.event.coOrganizerIds)
             if ((briefs[id]?.name.trim() ?? '').isNotEmpty)
-              (uid: id, name: briefs[id]!.name.trim(), photo: briefs[id]!.photoUrl),
+              (
+                uid: id,
+                name: briefs[id]!.name.trim(),
+                photo: briefs[id]!.photoUrl,
+                verified: UserVerifiedBadge.isVisible(briefs[id]),
+              ),
         ];
 
         return Container(
@@ -111,6 +119,7 @@ class _EventOrganizerRowState extends State<EventOrganizerRow> {
                           ? l10n.eventsOrganizerYou(p.name)
                           : p.name,
                       photo: p.photo,
+                      verified: p.verified,
                       loading: _opening == p.uid,
                       onTap: p.uid == widget.currentUserId
                           ? null
@@ -132,10 +141,12 @@ class _PersonChip extends StatelessWidget {
     required this.photo,
     required this.loading,
     required this.onTap,
+    this.verified = false,
   });
 
   final String name;
   final String? photo;
+  final bool verified;
   final bool loading;
   final VoidCallback? onTap;
 
@@ -184,6 +195,10 @@ class _PersonChip extends StatelessWidget {
                 ),
               ),
             ),
+            if (verified) ...[
+              const SizedBox(width: 4),
+              const VerifiedBadge(size: 15),
+            ],
             if (loading) ...[
               const SizedBox(width: 8),
               const SizedBox(

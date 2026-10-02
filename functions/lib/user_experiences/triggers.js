@@ -33,22 +33,27 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onExperienceReplyCreated = exports.onExperienceReviewWritten = exports.onUserExperienceWritten = void 0;
+exports.onExperienceReplyCreated = exports.onExperienceReviewWritten = exports.onUserExperienceWritten = exports.AGG_EVENTS = void 0;
 /**
  * User experiences — Firestore triggers.
  *
  *  onUserExperienceWritten   user_experiences/{experienceId}
  *    - create/update: re-moderates the listing text (the client check can be
  *      bypassed) → auto-hides on prohibited language, auto-restores once clean;
- *    - delete: decrements the host's `user_experience_counts` counter and
- *      deletes the reviews/replies subtree (bounded by the subtree size).
+ *    - delete: decrements the host's `user_experience_counts` counter,
+ *      subtracts the experience's last rating aggregate from the host's
+ *      profile totals (exactly once, by event id) and deletes the
+ *      reviews/replies subtree (bounded by the subtree size). The review
+ *      delete events that follow find the experience gone and change nothing,
+ *      so the host is never decremented twice.
  *
  *  onExperienceReviewWritten user_experiences/{experienceId}/reviews/{reviewerId}
  *    - moderation: sets status visible|rejected from the comment (prohibited
  *      language or a link → rejected; hidden from everyone but the author);
  *    - aggregates: ratingSum/ratingCount/ratingAvg/reviewCount/ratingDist on the
- *      experience, in a transaction, deduplicated by event id (only visible
- *      reviews count);
+ *      experience AND hostRatingSum/hostRatingCount/hostRatingAvg on the
+ *      host's profile (when the experience is `hostRatingCounted`), in ONE
+ *      transaction, deduplicated by event id (only visible reviews count);
  *    - notifies the host once when a review first becomes visible.
  *
  *  onExperienceReplyCreated  …/reviews/{reviewerId}/replies/{replyId}
@@ -68,8 +73,12 @@ const createUserExperience_1 = require("./createUserExperience");
 const db = admin.firestore();
 const OPTS = { memory: '512MiB', timeoutSeconds: 120 };
 /** Dedupe markers for aggregate deltas (TTL on `expireAt`; no client access). */
-const AGG_EVENTS = 'user_experience_agg_events';
+exports.AGG_EVENTS = 'user_experience_agg_events';
 const AGG_EVENT_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+const PROFILES = 'profiles';
+function aggMarker(extra) {
+    return Object.assign(Object.assign({}, extra), { expireAt: admin.firestore.Timestamp.fromMillis(Date.now() + AGG_EVENT_TTL_MS) });
+}
 function snippet(text, max = 120) {
     const s = typeof text === 'string' ? text.trim().replace(/\s+/g, ' ') : '';
     return s.length > max ? `${s.slice(0, max - 1)}…` : s;
@@ -77,7 +86,7 @@ function snippet(text, max = 120) {
 // ─────────────────────────────────────────────────────────────── experience
 const MODERATED_FIELDS = [
     'title', 'description', 'meetingPoint', 'availability', 'cancellationPolicy',
-    'included', 'notIncluded', 'status',
+    'included', 'notIncluded', 'status', 'cancellationNotes',
 ];
 function moderatedFieldsChanged(before, after) {
     return MODERATED_FIELDS.some((f) => { var _a, _b; return JSON.stringify((_a = before[f]) !== null && _a !== void 0 ? _a : null) !== JSON.stringify((_b = after[f]) !== null && _b !== void 0 ? _b : null); });
@@ -105,6 +114,32 @@ exports.onUserExperienceWritten = (0, firestore_1.onDocumentWritten)(Object.assi
             }
             catch (e) {
                 console.error(`experience counter decrement failed (${hostId}):`, e);
+            }
+        }
+        // Host overall rating: remove this experience's contribution. Uses the
+        // deleted snapshot, which includes every review delta committed before
+        // the delete (review transactions read the experience, so they either
+        // committed first or will see it missing and skip).
+        const contribution = (0, aggregates_1.experienceHostContribution)(before);
+        if (hostId && (before === null || before === void 0 ? void 0 : before.hostRatingCounted) === true && !(0, aggregates_1.isZeroHostDelta)(contribution)) {
+            try {
+                const markerRef = db.collection(exports.AGG_EVENTS).doc(event.id);
+                const profileRef = db.collection(PROFILES).doc(hostId);
+                await db.runTransaction(async (tx) => {
+                    const [marker, profile] = await Promise.all([
+                        tx.get(markerRef),
+                        tx.get(profileRef),
+                    ]);
+                    if (marker.exists)
+                        return; // duplicate delivery
+                    tx.set(markerRef, aggMarker({ experienceId, hostId, kind: 'experience_deleted' }));
+                    if (!profile.exists)
+                        return;
+                    tx.update(profileRef, Object.assign({}, (0, aggregates_1.applyHostRatingDelta)(profile.data(), (0, aggregates_1.negateHostDelta)(contribution))));
+                });
+            }
+            catch (e) {
+                console.error(`host rating decrement failed (${hostId}/${experienceId}):`, e);
             }
         }
         try {
@@ -166,19 +201,31 @@ exports.onExperienceReviewWritten = (0, firestore_1.onDocumentWritten)(Object.as
     let becameVisible = false;
     if (!(0, aggregates_1.isZeroDelta)(delta)) {
         const expRef = db.collection(createUserExperience_1.EXPERIENCES).doc(experienceId);
-        const markerRef = db.collection(AGG_EVENTS).doc(event.id);
+        const markerRef = db.collection(exports.AGG_EVENTS).doc(event.id);
         try {
             await db.runTransaction(async (tx) => {
+                var _a;
+                // All reads before any write (Firestore transaction rule).
                 const [marker, exp] = await Promise.all([tx.get(markerRef), tx.get(expRef)]);
                 if (marker.exists)
                     return; // duplicate delivery
-                tx.set(markerRef, {
-                    experienceId,
-                    expireAt: admin.firestore.Timestamp.fromMillis(Date.now() + AGG_EVENT_TTL_MS),
-                });
-                if (!exp.exists)
-                    return; // experience deleted meanwhile
-                tx.update(expRef, Object.assign({}, (0, aggregates_1.applyAggregateDelta)(exp.data(), delta)));
+                const expData = exp.exists ? (_a = exp.data()) !== null && _a !== void 0 ? _a : {} : null;
+                const hostId = typeof (expData === null || expData === void 0 ? void 0 : expData.hostId) === 'string' ? expData.hostId : '';
+                // Only experiences already folded into the host totals (new ones, or
+                // after backfillHostRatings) move them; others wait for the backfill,
+                // which adds their whole aggregate at once.
+                const profile = expData && hostId && expData.hostRatingCounted === true
+                    ? await tx.get(db.collection(PROFILES).doc(hostId))
+                    : null;
+                tx.set(markerRef, aggMarker({ experienceId }));
+                // Experience deleted meanwhile: its delete trigger already removed
+                // its (committed) aggregate from the host, so nothing to do here.
+                if (!expData)
+                    return;
+                tx.update(expRef, Object.assign({}, (0, aggregates_1.applyAggregateDelta)(expData, delta)));
+                if (profile === null || profile === void 0 ? void 0 : profile.exists) {
+                    tx.update(profile.ref, Object.assign({}, (0, aggregates_1.applyHostRatingDelta)(profile.data(), (0, aggregates_1.hostDeltaFromAggregateDelta)(delta))));
+                }
             });
         }
         catch (e) {

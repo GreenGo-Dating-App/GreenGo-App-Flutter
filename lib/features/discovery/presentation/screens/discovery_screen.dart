@@ -51,6 +51,7 @@ import 'discovery_preferences_screen.dart';
 import 'match_detail_screen.dart';
 import 'profile_detail_screen.dart';
 import 'travel_explore_map_screen.dart';
+import '../../../../core/widgets/verified_badge.dart';
 
 /// Discovery Screen
 ///
@@ -2373,16 +2374,26 @@ class _GridProfileCardState extends State<_GridProfileCard>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      '${widget.card.displayName}, ${widget.card.age}',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: widget.gridColumns >= 4 ? 11 : (widget.gridColumns == 3 ? 13 : 17),
-                        fontWeight: FontWeight.bold,
+                    Row(children: [
+                      Flexible(
+                        child: Text(
+                          '${widget.card.displayName}, ${widget.card.age}',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: widget.gridColumns >= 4 ? 11 : (widget.gridColumns == 3 ? 13 : 17),
+                            fontWeight: FontWeight.bold,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
+                      if (widget.card.candidate.profile.showVerifiedBadge)
+                        Padding(
+                          padding: const EdgeInsets.only(left: 3),
+                          child: VerifiedBadge(
+                              size: widget.gridColumns >= 4 ? 10 : (widget.gridColumns == 3 ? 12 : 16)),
+                        ),
+                    ]),
                     SizedBox(height: widget.gridColumns >= 4 ? 1 : (widget.gridColumns == 3 ? 2 : 3)),
                     Row(
                       children: [
@@ -2698,16 +2709,26 @@ class _GridProfileCardState extends State<_GridProfileCard>
                         children: [
                           const Spacer(),
                           // Name and age
-                          Text(
-                            '${widget.card.displayName}, ${widget.card.age}',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: widget.gridColumns == 3 ? 15 : 19,
-                              fontWeight: FontWeight.bold,
+                          Row(children: [
+                            Flexible(
+                              child: Text(
+                                '${widget.card.displayName}, ${widget.card.age}',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: widget.gridColumns == 3 ? 15 : 19,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                              ),
                             ),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                          ),
+                            if (profile.showVerifiedBadge)
+                              Padding(
+                                padding: const EdgeInsets.only(left: 4),
+                                child: VerifiedBadge(
+                                    size: widget.gridColumns == 3 ? 14 : 18),
+                              ),
+                          ]),
                           SizedBox(height: widget.gridColumns == 3 ? 3 : 6),
                           // Distance & city
                           Row(

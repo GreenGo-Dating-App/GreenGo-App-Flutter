@@ -7469,6 +7469,12 @@ abstract class AppLocalizations {
   /// **'Featured attractions'**
   String get exploreFeaturedAttractions;
 
+  /// Explore section title: top 20 experiences (featured member experiences, then top-rated member experiences, then partner experiences)
+  ///
+  /// In en, this message translates to:
+  /// **'Top experiences'**
+  String get exploreTopExperiences;
+
   /// No description provided for @exploreMyNextEvents.
   ///
   /// In en, this message translates to:
@@ -24675,7 +24681,7 @@ abstract class AppLocalizations {
   /// No description provided for @ageVerifyPrivacyNote.
   ///
   /// In en, this message translates to:
-  /// **'We read only the date of birth and delete the photo immediately. The image is never stored.'**
+  /// **'We read the date of birth automatically. The photo is kept in a restricted server-only store for fraud prevention (never shown on your profile) and erased up to 30 days after you delete your account.'**
   String get ageVerifyPrivacyNote;
 
   /// No description provided for @ageVerifyTakePhoto.
@@ -26231,6 +26237,1530 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add experience'**
   String get uexpAddExperience;
+
+  /// Shown instead of stars when the host has no ratings yet
+  ///
+  /// In en, this message translates to:
+  /// **'New host'**
+  String get uexpNewHost;
+
+  /// Host overall rating count across all experiences; countText is the compact-formatted count (e.g. 1.2K)
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{countText} rating} other{{countText} ratings}}'**
+  String uexpHostRatings(int count, String countText);
+
+  /// Badge next to a user whose ID document was approved
+  ///
+  /// In en, this message translates to:
+  /// **'Verified'**
+  String get verifiedBadgeLabel;
+
+  /// Tooltip / accessibility label of the verified badge
+  ///
+  /// In en, this message translates to:
+  /// **'ID verified by GreenGo'**
+  String get verifiedBadgeTooltip;
+
+  /// Legal notice (DRAFT - lawyer review): ID document retention after account deletion. Used in the host agreement / privacy texts.
+  ///
+  /// In en, this message translates to:
+  /// **'For fraud prevention and the safety of the community, identity documents are kept for up to 30 days after account deletion and then permanently erased.'**
+  String get idDocumentRetentionNotice;
+
+  /// Validation error: off-platform contact or payment info in experience / review text
+  ///
+  /// In en, this message translates to:
+  /// **'Remove phone numbers, e-mails, @handles and payment details: guests pay only through the methods on your listing.'**
+  String get uexpErrContactInfo;
+
+  /// No description provided for @uexpErrPaymentMethods.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose at least one payment method'**
+  String get uexpErrPaymentMethods;
+
+  /// No description provided for @uexpPaymentLinkDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Online payment link'**
+  String get uexpPaymentLinkDetails;
+
+  /// Payment method: cash paid to the host at the meeting
+  ///
+  /// In en, this message translates to:
+  /// **'Cash at the meeting'**
+  String get uexpMethodCash;
+
+  /// No description provided for @uexpMethodLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Online link (PIX/PayPal/…)'**
+  String get uexpMethodLink;
+
+  /// Detail page button when the experience is paid in cash only
+  ///
+  /// In en, this message translates to:
+  /// **'Book'**
+  String get uexpBook;
+
+  /// No description provided for @uexpBookedCash.
+  ///
+  /// In en, this message translates to:
+  /// **'Noted. Pay the host in cash at the meeting.'**
+  String get uexpBookedCash;
+
+  /// No description provided for @uexpIdDocTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'ID document needed'**
+  String get uexpIdDocTitle;
+
+  /// No description provided for @uexpIdDocGuestBody.
+  ///
+  /// In en, this message translates to:
+  /// **'To keep GreenGo safe, upload an ID document before paying a host.'**
+  String get uexpIdDocGuestBody;
+
+  /// No description provided for @uexpIdDocHostBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Hosts must upload an ID document before creating an experience.'**
+  String get uexpIdDocHostBody;
+
+  /// No description provided for @uexpIdDocUpload.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload document'**
+  String get uexpIdDocUpload;
+
+  /// No description provided for @uexpPaidPendingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'ID review pending'**
+  String get uexpPaidPendingTitle;
+
+  /// No description provided for @uexpPaidPendingBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid experiences need an approved ID document. Yours is still under review: save this one as a draft or publish it as free for now.'**
+  String get uexpPaidPendingBody;
+
+  /// No description provided for @uexpPaidMissingBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid experiences need an approved ID document. Upload one (or a new one if it was not approved), or save this one as a draft or publish it as free for now.'**
+  String get uexpPaidMissingBody;
+
+  /// No description provided for @uexpNewHostLimitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New host limit'**
+  String get uexpNewHostLimitTitle;
+
+  /// No description provided for @uexpNewHostLimitBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Until you have 3 reviews you can have one published paid experience. Save this one as a draft or publish it as free.'**
+  String get uexpNewHostLimitBody;
+
+  /// No description provided for @uexpPublishAsFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Publish as free'**
+  String get uexpPublishAsFree;
+
+  /// No description provided for @uexpHostBanned.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account can\'t host experiences.'**
+  String get uexpHostBanned;
+
+  /// Title of the host agreement screen (LEGAL TEXT: DRAFT for lawyer review, v1)
+  ///
+  /// In en, this message translates to:
+  /// **'Host agreement'**
+  String get hostAgreementTitle;
+
+  /// No description provided for @hostAgreementIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Before you publish your first experience, please read and accept these rules.'**
+  String get hostAgreementIntro;
+
+  /// Host agreement clause (LEGAL TEXT: DRAFT for lawyer review, v1)
+  ///
+  /// In en, this message translates to:
+  /// **'You organise and host this experience and are responsible for it and for the safety of your guests.'**
+  String get hostAgreementClause1;
+
+  /// No description provided for @hostAgreementClause2.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe it accurately: title, photos, price, duration, what is included and the meeting point must be true and up to date.'**
+  String get hostAgreementClause2;
+
+  /// No description provided for @hostAgreementClause3.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow the law: you hold any licence, permit, insurance or registration your activity requires where it takes place, and you declare your income as required.'**
+  String get hostAgreementClause3;
+
+  /// No description provided for @hostAgreementClause4.
+  ///
+  /// In en, this message translates to:
+  /// **'Refund guests according to the cancellation policy you chose, and always in full if you cancel.'**
+  String get hostAgreementClause4;
+
+  /// No description provided for @hostAgreementClause5.
+  ///
+  /// In en, this message translates to:
+  /// **'Never ask guests to pay outside the methods shown on your listing, and never put phone numbers, e-mails or payment handles in the listing text.'**
+  String get hostAgreementClause5;
+
+  /// No description provided for @hostAgreementClause6.
+  ///
+  /// In en, this message translates to:
+  /// **'Treat guests with respect: no discrimination, harassment or unsafe situations.'**
+  String get hostAgreementClause6;
+
+  /// No description provided for @hostAgreementClause7.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo may hide or remove listings and suspend or ban accounts that break these rules or receive credible reports.'**
+  String get hostAgreementClause7;
+
+  /// No description provided for @hostAgreementCheckbox.
+  ///
+  /// In en, this message translates to:
+  /// **'I have read and accept the host agreement'**
+  String get hostAgreementCheckbox;
+
+  /// No description provided for @hostAgreementAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept and continue'**
+  String get hostAgreementAccept;
+
+  /// Guest consent dialog title (LEGAL TEXT: DRAFT for lawyer review, v1)
+  ///
+  /// In en, this message translates to:
+  /// **'Before you pay'**
+  String get uexpConsentTitle;
+
+  /// No description provided for @uexpConsentBodyLink.
+  ///
+  /// In en, this message translates to:
+  /// **'You are paying the host directly. GreenGo does not process or guarantee this payment and cannot refund it. Prefer protected methods (PayPal Goods & Services, credit card). Never pay outside the link shown here.'**
+  String get uexpConsentBodyLink;
+
+  /// No description provided for @uexpConsentBodyCash.
+  ///
+  /// In en, this message translates to:
+  /// **'You will pay the host in cash at the meeting. GreenGo does not process or guarantee this payment and cannot refund it. Count the money, ask for a receipt if needed, and never pay in advance outside the methods listed on this page.'**
+  String get uexpConsentBodyCash;
+
+  /// No description provided for @uexpConsentPickMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'How will you pay?'**
+  String get uexpConsentPickMethod;
+
+  /// No description provided for @uexpConsentPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancellation policy: {policy}'**
+  String uexpConsentPolicy(String policy);
+
+  /// No description provided for @uexpConsentUnderstand.
+  ///
+  /// In en, this message translates to:
+  /// **'I understand'**
+  String get uexpConsentUnderstand;
+
+  /// No description provided for @uexpConsentContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get uexpConsentContinue;
+
+  /// No description provided for @uexpGuidePix.
+  ///
+  /// In en, this message translates to:
+  /// **'PIX: if you are the victim of a scam, ask your bank right away to open a MED (Mecanismo Especial de Devolução) claim.'**
+  String get uexpGuidePix;
+
+  /// No description provided for @uexpGuidePaypal.
+  ///
+  /// In en, this message translates to:
+  /// **'PayPal: choose Goods & Services, never Friends & Family, to keep buyer protection.'**
+  String get uexpGuidePaypal;
+
+  /// No description provided for @uexpGuideVenmo.
+  ///
+  /// In en, this message translates to:
+  /// **'Venmo: use purchase protection (goods and services) when available.'**
+  String get uexpGuideVenmo;
+
+  /// No description provided for @uexpGuideCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Card payments can be disputed with your card issuer.'**
+  String get uexpGuideCard;
+
+  /// No description provided for @uexpGuideCash.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay only when you meet the host, count the money together and ask for a receipt if needed.'**
+  String get uexpGuideCash;
+
+  /// No description provided for @uexpPolicyFlexible.
+  ///
+  /// In en, this message translates to:
+  /// **'Flexible'**
+  String get uexpPolicyFlexible;
+
+  /// No description provided for @uexpPolicyModerate.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderate'**
+  String get uexpPolicyModerate;
+
+  /// No description provided for @uexpPolicyStrict.
+  ///
+  /// In en, this message translates to:
+  /// **'Strict'**
+  String get uexpPolicyStrict;
+
+  /// No description provided for @uexpPolicyFlexibleDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Full refund until 24 h before the start, no refund after.'**
+  String get uexpPolicyFlexibleDesc;
+
+  /// No description provided for @uexpPolicyModerateDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Full refund until 7 days before, 50% until 24 h before, no refund after.'**
+  String get uexpPolicyModerateDesc;
+
+  /// No description provided for @uexpPolicyStrictDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Full refund until 7 days before, no refund after.'**
+  String get uexpPolicyStrictDesc;
+
+  /// No description provided for @uexpPolicyWhen.
+  ///
+  /// In en, this message translates to:
+  /// **'If you cancel'**
+  String get uexpPolicyWhen;
+
+  /// No description provided for @uexpPolicyRefund.
+  ///
+  /// In en, this message translates to:
+  /// **'Refund'**
+  String get uexpPolicyRefund;
+
+  /// No description provided for @uexpPolicyMoreThan7d.
+  ///
+  /// In en, this message translates to:
+  /// **'More than 7 days before'**
+  String get uexpPolicyMoreThan7d;
+
+  /// No description provided for @uexpPolicy7dTo24h.
+  ///
+  /// In en, this message translates to:
+  /// **'Between 7 days and 24 h before'**
+  String get uexpPolicy7dTo24h;
+
+  /// No description provided for @uexpPolicyMoreThan24h.
+  ///
+  /// In en, this message translates to:
+  /// **'More than 24 h before'**
+  String get uexpPolicyMoreThan24h;
+
+  /// No description provided for @uexpPolicyLess24h.
+  ///
+  /// In en, this message translates to:
+  /// **'Less than 24 h before'**
+  String get uexpPolicyLess24h;
+
+  /// No description provided for @uexpPolicyLess7d.
+  ///
+  /// In en, this message translates to:
+  /// **'Less than 7 days before'**
+  String get uexpPolicyLess7d;
+
+  /// No description provided for @uexpPolicyAlwaysTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Always applies'**
+  String get uexpPolicyAlwaysTitle;
+
+  /// No description provided for @uexpRuleHostCancels.
+  ///
+  /// In en, this message translates to:
+  /// **'The host cancels: 100% refund.'**
+  String get uexpRuleHostCancels;
+
+  /// No description provided for @uexpRuleGrace.
+  ///
+  /// In en, this message translates to:
+  /// **'You cancel within 24 h of booking and the experience is more than 48 h away: 100% refund.'**
+  String get uexpRuleGrace;
+
+  /// No description provided for @uexpRuleReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Host no-show or not as described: report it within 24 h.'**
+  String get uexpRuleReport;
+
+  /// No description provided for @uexpPolicyNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes on your policy (optional)'**
+  String get uexpPolicyNotes;
+
+  /// No description provided for @uexpPolicyHostNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Host notes'**
+  String get uexpPolicyHostNotes;
+
+  /// No description provided for @uexpReportScamTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this experience'**
+  String get uexpReportScamTitle;
+
+  /// No description provided for @uexpReasonScam.
+  ///
+  /// In en, this message translates to:
+  /// **'Scam or fraud'**
+  String get uexpReasonScam;
+
+  /// No description provided for @uexpReasonOffPlatform.
+  ///
+  /// In en, this message translates to:
+  /// **'Asked to pay outside the app'**
+  String get uexpReasonOffPlatform;
+
+  /// No description provided for @uexpReasonMisleading.
+  ///
+  /// In en, this message translates to:
+  /// **'Not as described'**
+  String get uexpReasonMisleading;
+
+  /// No description provided for @uexpReasonNoShow.
+  ///
+  /// In en, this message translates to:
+  /// **'Host didn\'t show up'**
+  String get uexpReasonNoShow;
+
+  /// No description provided for @uexpReasonInappropriate.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate'**
+  String get uexpReasonInappropriate;
+
+  /// No description provided for @uexpReasonOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get uexpReasonOther;
+
+  /// No description provided for @uexpReportDetailsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What happened? (optional)'**
+  String get uexpReportDetailsHint;
+
+  /// No description provided for @uexpReportSend.
+  ///
+  /// In en, this message translates to:
+  /// **'Send report'**
+  String get uexpReportSend;
+
+  /// No description provided for @bkStatusRequested.
+  ///
+  /// In en, this message translates to:
+  /// **'Requested'**
+  String get bkStatusRequested;
+
+  /// No description provided for @bkStatusConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirmed'**
+  String get bkStatusConfirmed;
+
+  /// No description provided for @bkStatusDeclined.
+  ///
+  /// In en, this message translates to:
+  /// **'Declined'**
+  String get bkStatusDeclined;
+
+  /// No description provided for @bkStatusExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired'**
+  String get bkStatusExpired;
+
+  /// No description provided for @bkStatusCancelledGuest.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled by guest'**
+  String get bkStatusCancelledGuest;
+
+  /// No description provided for @bkStatusCancelledHost.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled by host'**
+  String get bkStatusCancelledHost;
+
+  /// No description provided for @bkStatusCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get bkStatusCompleted;
+
+  /// No description provided for @bkStatusNoShow.
+  ///
+  /// In en, this message translates to:
+  /// **'No-show'**
+  String get bkStatusNoShow;
+
+  /// No description provided for @bkStatusDisputed.
+  ///
+  /// In en, this message translates to:
+  /// **'Problem reported'**
+  String get bkStatusDisputed;
+
+  /// No description provided for @bkStatusResolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Resolved'**
+  String get bkStatusResolved;
+
+  /// No description provided for @bkStatusUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get bkStatusUnknown;
+
+  /// No description provided for @bkRequestToBook.
+  ///
+  /// In en, this message translates to:
+  /// **'Request to book'**
+  String get bkRequestToBook;
+
+  /// No description provided for @bkChooseDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a date'**
+  String get bkChooseDate;
+
+  /// No description provided for @bkNoDates.
+  ///
+  /// In en, this message translates to:
+  /// **'No dates available yet.'**
+  String get bkNoDates;
+
+  /// No description provided for @bkDatesAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 date available} other{{count} dates available}}'**
+  String bkDatesAvailable(int count);
+
+  /// No description provided for @bkSeatsLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 seat left} other{{count} seats left}}'**
+  String bkSeatsLeft(int count);
+
+  /// No description provided for @bkFull.
+  ///
+  /// In en, this message translates to:
+  /// **'Full'**
+  String get bkFull;
+
+  /// No description provided for @bkGuests.
+  ///
+  /// In en, this message translates to:
+  /// **'Guests'**
+  String get bkGuests;
+
+  /// No description provided for @bkGuestsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 guest} other{{count} guests}}'**
+  String bkGuestsCount(int count);
+
+  /// No description provided for @bkMaxGuests.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} on this date'**
+  String bkMaxGuests(int max);
+
+  /// No description provided for @bkSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Summary'**
+  String get bkSummary;
+
+  /// No description provided for @bkRequestInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'The host has up to 48 h to accept your request. Nothing is paid before they accept.'**
+  String get bkRequestInfo;
+
+  /// No description provided for @bkInstantInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Instant booking: confirmed right away.'**
+  String get bkInstantInfo;
+
+  /// No description provided for @bkConfirmBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm booking'**
+  String get bkConfirmBooking;
+
+  /// No description provided for @bkSendRequest.
+  ///
+  /// In en, this message translates to:
+  /// **'Send request'**
+  String get bkSendRequest;
+
+  /// No description provided for @bkRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get bkRetry;
+
+  /// No description provided for @bkResultConfirmedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re booked!'**
+  String get bkResultConfirmedTitle;
+
+  /// No description provided for @bkResultConfirmedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Show your check-in code to the host when you meet. You find it in My bookings.'**
+  String get bkResultConfirmedBody;
+
+  /// No description provided for @bkResultRequestTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Request sent'**
+  String get bkResultRequestTitle;
+
+  /// No description provided for @bkResultRequestBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We\'ll notify you as soon as the host answers (within 48 h).'**
+  String get bkResultRequestBody;
+
+  /// No description provided for @bkViewBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'View booking'**
+  String get bkViewBooking;
+
+  /// No description provided for @bkDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get bkDone;
+
+  /// No description provided for @bkPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment'**
+  String get bkPayment;
+
+  /// No description provided for @bkCashAtMeeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay the host in cash when you meet.'**
+  String get bkCashAtMeeting;
+
+  /// No description provided for @bkPayLinkHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay the host with their link, then tap \"Mark as paid\" in your booking.'**
+  String get bkPayLinkHint;
+
+  /// No description provided for @bkPayAfterAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'You pay with the host\'s link once they accept your request.'**
+  String get bkPayAfterAccept;
+
+  /// No description provided for @bkPayNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Open payment link'**
+  String get bkPayNow;
+
+  /// No description provided for @bkCopyPixKey.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy PIX key'**
+  String get bkCopyPixKey;
+
+  /// No description provided for @bkMyBookings.
+  ///
+  /// In en, this message translates to:
+  /// **'My bookings'**
+  String get bkMyBookings;
+
+  /// No description provided for @bkHostBookings.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookings received'**
+  String get bkHostBookings;
+
+  /// No description provided for @bkUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get bkUpcoming;
+
+  /// No description provided for @bkPast.
+  ///
+  /// In en, this message translates to:
+  /// **'Past'**
+  String get bkPast;
+
+  /// No description provided for @bkNoUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'No upcoming bookings.'**
+  String get bkNoUpcoming;
+
+  /// No description provided for @bkNoPast.
+  ///
+  /// In en, this message translates to:
+  /// **'No past bookings.'**
+  String get bkNoPast;
+
+  /// No description provided for @bkBookings.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookings'**
+  String get bkBookings;
+
+  /// No description provided for @bkViewBookings.
+  ///
+  /// In en, this message translates to:
+  /// **'View bookings'**
+  String get bkViewBookings;
+
+  /// No description provided for @bkDetailTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking'**
+  String get bkDetailTitle;
+
+  /// No description provided for @bkNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'This booking is not available.'**
+  String get bkNotFound;
+
+  /// No description provided for @bkExperienceGone.
+  ///
+  /// In en, this message translates to:
+  /// **'This experience is no longer listed.'**
+  String get bkExperienceGone;
+
+  /// No description provided for @bkOpenExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Open experience'**
+  String get bkOpenExperience;
+
+  /// No description provided for @bkGuest.
+  ///
+  /// In en, this message translates to:
+  /// **'Guest'**
+  String get bkGuest;
+
+  /// No description provided for @bkCheckedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked in'**
+  String get bkCheckedIn;
+
+  /// No description provided for @bkAnswerBefore.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer before {date}'**
+  String bkAnswerBefore(String date);
+
+  /// No description provided for @bkWaitingForHost.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for the host to answer.'**
+  String get bkWaitingForHost;
+
+  /// No description provided for @bkRequestTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking request'**
+  String get bkRequestTitle;
+
+  /// No description provided for @bkRequestHostHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the guest\'s profile and rating, then accept or decline. Unanswered requests expire after 48 h.'**
+  String get bkRequestHostHint;
+
+  /// No description provided for @bkAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get bkAccept;
+
+  /// No description provided for @bkDecline.
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get bkDecline;
+
+  /// No description provided for @bkDeclineConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Decline this request?'**
+  String get bkDeclineConfirm;
+
+  /// No description provided for @bkDeclineBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The guest is notified and the seats are released.'**
+  String get bkDeclineBody;
+
+  /// No description provided for @bkAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking accepted'**
+  String get bkAccepted;
+
+  /// No description provided for @bkDeclined.
+  ///
+  /// In en, this message translates to:
+  /// **'Request declined'**
+  String get bkDeclined;
+
+  /// No description provided for @bkCheckInTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in'**
+  String get bkCheckInTitle;
+
+  /// No description provided for @bkShowCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Show check-in code'**
+  String get bkShowCode;
+
+  /// No description provided for @bkCodeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your check-in code'**
+  String get bkCodeTitle;
+
+  /// No description provided for @bkCodeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Show this QR code to the host when you meet. They can also type the code.'**
+  String get bkCodeHint;
+
+  /// No description provided for @bkCheckInGuest.
+  ///
+  /// In en, this message translates to:
+  /// **'Check in guest'**
+  String get bkCheckInGuest;
+
+  /// No description provided for @bkScanQr.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan QR code'**
+  String get bkScanQr;
+
+  /// No description provided for @bkTypeCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Type the code'**
+  String get bkTypeCode;
+
+  /// No description provided for @bkCodeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in code'**
+  String get bkCodeLabel;
+
+  /// No description provided for @bkScanInstructions.
+  ///
+  /// In en, this message translates to:
+  /// **'Point the camera at the guest\'s QR code'**
+  String get bkScanInstructions;
+
+  /// No description provided for @bkWrongBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'This QR code is for another booking.'**
+  String get bkWrongBooking;
+
+  /// No description provided for @bkTorch.
+  ///
+  /// In en, this message translates to:
+  /// **'Flash'**
+  String get bkTorch;
+
+  /// No description provided for @bkSwitchCamera.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch camera'**
+  String get bkSwitchCamera;
+
+  /// No description provided for @bkCashReceivedQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Did you also receive the cash payment?'**
+  String get bkCashReceivedQuestion;
+
+  /// No description provided for @bkCashYes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, received'**
+  String get bkCashYes;
+
+  /// No description provided for @bkCashNo.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet'**
+  String get bkCashNo;
+
+  /// No description provided for @bkCheckedInSnack.
+  ///
+  /// In en, this message translates to:
+  /// **'Guest checked in'**
+  String get bkCheckedInSnack;
+
+  /// No description provided for @bkMarkNoShow.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark no-show'**
+  String get bkMarkNoShow;
+
+  /// No description provided for @bkNoShowConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark the guest as a no-show? No refund is due, and they can contest it until 24 h after the end.'**
+  String get bkNoShowConfirm;
+
+  /// No description provided for @bkNoShowMarked.
+  ///
+  /// In en, this message translates to:
+  /// **'Marked as no-show'**
+  String get bkNoShowMarked;
+
+  /// No description provided for @bkNotPaidYet.
+  ///
+  /// In en, this message translates to:
+  /// **'Not marked as paid yet.'**
+  String get bkNotPaidYet;
+
+  /// No description provided for @bkYouMarkedPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'You marked it as paid. Waiting for the host to confirm.'**
+  String get bkYouMarkedPaid;
+
+  /// No description provided for @bkGuestSaysPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'The guest says they paid. Confirm once you received it.'**
+  String get bkGuestSaysPaid;
+
+  /// No description provided for @bkPaymentConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment confirmed by the host.'**
+  String get bkPaymentConfirmed;
+
+  /// No description provided for @bkCashConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash received (confirmed by the host).'**
+  String get bkCashConfirmed;
+
+  /// No description provided for @bkMarkPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as paid'**
+  String get bkMarkPaid;
+
+  /// No description provided for @bkConfirmPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment received'**
+  String get bkConfirmPayment;
+
+  /// No description provided for @bkCashReceived.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash received'**
+  String get bkCashReceived;
+
+  /// No description provided for @bkPaidMarked.
+  ///
+  /// In en, this message translates to:
+  /// **'Marked as paid'**
+  String get bkPaidMarked;
+
+  /// No description provided for @bkPaymentConfirmedSnack.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment confirmed'**
+  String get bkPaymentConfirmedSnack;
+
+  /// No description provided for @bkRefundTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Refund'**
+  String get bkRefundTitle;
+
+  /// Refund obligation after a cancellation; GreenGo never moves the money
+  ///
+  /// In en, this message translates to:
+  /// **'The host owes you {percent} back ({amount}).'**
+  String bkRefundOwed(String percent, String amount);
+
+  /// No description provided for @bkRefundNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No refund is due under the cancellation policy.'**
+  String get bkRefundNone;
+
+  /// No description provided for @bkRefundCashUnpaid.
+  ///
+  /// In en, this message translates to:
+  /// **'No refund is due: the cash was never paid.'**
+  String get bkRefundCashUnpaid;
+
+  /// No description provided for @bkRefundOffPlatform.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo does not handle the money: the host refunds you directly, the same way you paid.'**
+  String get bkRefundOffPlatform;
+
+  /// No description provided for @bkIfCancelNow.
+  ///
+  /// In en, this message translates to:
+  /// **'If you cancel now: {percent} back ({amount}).'**
+  String bkIfCancelNow(String percent, String amount);
+
+  /// No description provided for @bkIfCancelNowNothing.
+  ///
+  /// In en, this message translates to:
+  /// **'If you cancel now, no refund is due.'**
+  String get bkIfCancelNowNothing;
+
+  /// No description provided for @bkIfCancelNowCash.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash is paid at the meeting, so cancelling now costs nothing.'**
+  String get bkIfCancelNowCash;
+
+  /// No description provided for @bkIfCancelNowFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Free experience: you can cancel at no cost.'**
+  String get bkIfCancelNowFree;
+
+  /// No description provided for @bkCancelRequestNoCharge.
+  ///
+  /// In en, this message translates to:
+  /// **'The host has not accepted yet: cancelling the request costs nothing.'**
+  String get bkCancelRequestNoCharge;
+
+  /// No description provided for @bkHostCancelWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'You cancel: the guest is owed 100% back and it counts as a host cancellation (3 in 90 days are reviewed by GreenGo).'**
+  String get bkHostCancelWarning;
+
+  /// No description provided for @bkCancelBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel booking'**
+  String get bkCancelBooking;
+
+  /// No description provided for @bkCancelConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel this booking?'**
+  String get bkCancelConfirmTitle;
+
+  /// No description provided for @bkCancelReasonHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason (optional)'**
+  String get bkCancelReasonHint;
+
+  /// No description provided for @bkKeepBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep booking'**
+  String get bkKeepBooking;
+
+  /// No description provided for @bkCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking cancelled'**
+  String get bkCancelled;
+
+  /// No description provided for @bkReportProblem.
+  ///
+  /// In en, this message translates to:
+  /// **'Report a problem'**
+  String get bkReportProblem;
+
+  /// No description provided for @bkDisputeIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Host didn\'t show up, or the experience was not as described? Tell us within 24 h of the end and our team will review it.'**
+  String get bkDisputeIntro;
+
+  /// No description provided for @bkDisputeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What happened? (at least 10 characters)'**
+  String get bkDisputeHint;
+
+  /// No description provided for @bkSendReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Send report'**
+  String get bkSendReport;
+
+  /// No description provided for @bkDisputeSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks. Our team will review it and contact you both.'**
+  String get bkDisputeSent;
+
+  /// No description provided for @bkDisputeOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'A problem was reported. Our team is reviewing it.'**
+  String get bkDisputeOpen;
+
+  /// No description provided for @bkDisputeResolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Reviewed by GreenGo: {percent} refund owed.'**
+  String bkDisputeResolved(String percent);
+
+  /// No description provided for @bkReviewGuest.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your guest'**
+  String get bkReviewGuest;
+
+  /// No description provided for @bkReviewGuestIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Help other hosts: how was hosting this guest? Both reviews stay hidden until your guest reviews too, or 14 days pass.'**
+  String get bkReviewGuestIntro;
+
+  /// No description provided for @bkReviewGuestHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Punctual, respectful, fun? (optional)'**
+  String get bkReviewGuestHint;
+
+  /// No description provided for @bkGuestReviewSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks! Reviews are revealed when your guest has reviewed too, or in 14 days.'**
+  String get bkGuestReviewSaved;
+
+  /// No description provided for @bkGuestReviewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Your review of this guest'**
+  String get bkGuestReviewed;
+
+  /// No description provided for @bkGuestReviewHeld.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden until your guest reviews too, or 14 days pass.'**
+  String get bkGuestReviewHeld;
+
+  /// No description provided for @bkReviewExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'Review the experience'**
+  String get bkReviewExperience;
+
+  /// No description provided for @bkReviewExperienceHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Share how it went: your review helps other travelers.'**
+  String get bkReviewExperienceHint;
+
+  /// No description provided for @bkReviewHeld.
+  ///
+  /// In en, this message translates to:
+  /// **'Your review will be published when the host has reviewed you too, or in 14 days.'**
+  String get bkReviewHeld;
+
+  /// No description provided for @bkReviewNeedsBooking.
+  ///
+  /// In en, this message translates to:
+  /// **'Only guests who took part through a booking can review this experience.'**
+  String get bkReviewNeedsBooking;
+
+  /// Shown instead of stars when the guest has no host reviews yet
+  ///
+  /// In en, this message translates to:
+  /// **'New guest'**
+  String get bkNewGuest;
+
+  /// No description provided for @bkDatesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dates & availability'**
+  String get bkDatesTitle;
+
+  /// No description provided for @bkAddDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Add date'**
+  String get bkAddDate;
+
+  /// No description provided for @bkEditDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit date'**
+  String get bkEditDate;
+
+  /// No description provided for @bkDeleteDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete date'**
+  String get bkDeleteDate;
+
+  /// No description provided for @bkCancelDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel date'**
+  String get bkCancelDate;
+
+  /// No description provided for @bkKeepDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep date'**
+  String get bkKeepDate;
+
+  /// No description provided for @bkCancelDateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel this date?'**
+  String get bkCancelDateTitle;
+
+  /// No description provided for @bkCancelDateBody.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{The booking on this date is cancelled and the guest is owed a 100% refund.} other{All {count} booked seats on this date are cancelled and every guest is owed a 100% refund.}} This counts as a host cancellation.'**
+  String bkCancelDateBody(int count);
+
+  /// No description provided for @bkDateSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Date saved'**
+  String get bkDateSaved;
+
+  /// No description provided for @bkDateDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Date deleted'**
+  String get bkDateDeleted;
+
+  /// No description provided for @bkDateCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Date cancelled} =1{Date cancelled: 1 booking cancelled} other{Date cancelled: {count} bookings cancelled}}'**
+  String bkDateCancelled(int count);
+
+  /// No description provided for @bkNoDatesHost.
+  ///
+  /// In en, this message translates to:
+  /// **'No upcoming dates. Add the dates guests can book.'**
+  String get bkNoDatesHost;
+
+  /// No description provided for @bkRequestToBookToggle.
+  ///
+  /// In en, this message translates to:
+  /// **'Request to book'**
+  String get bkRequestToBookToggle;
+
+  /// No description provided for @bkRequestToBookDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'You accept or decline each booking (within 48 h). Off: guests book instantly.'**
+  String get bkRequestToBookDesc;
+
+  /// No description provided for @bkDatesAfterSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save the experience first, then add its dates from My experiences.'**
+  String get bkDatesAfterSave;
+
+  /// No description provided for @bkDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get bkDate;
+
+  /// No description provided for @bkStartTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get bkStartTime;
+
+  /// No description provided for @bkEndTime.
+  ///
+  /// In en, this message translates to:
+  /// **'End'**
+  String get bkEndTime;
+
+  /// No description provided for @bkCapacity.
+  ///
+  /// In en, this message translates to:
+  /// **'Seats'**
+  String get bkCapacity;
+
+  /// No description provided for @bkBookedOf.
+  ///
+  /// In en, this message translates to:
+  /// **'{booked}/{capacity} booked'**
+  String bkBookedOf(int booked, int capacity);
+
+  /// No description provided for @bkSlotCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get bkSlotCancelled;
+
+  /// No description provided for @bkTimesFrozen.
+  ///
+  /// In en, this message translates to:
+  /// **'Guests are booked on this date: only the number of seats can change. To move it, cancel the date.'**
+  String get bkTimesFrozen;
+
+  /// No description provided for @bkSlotSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save the date. Check your connection and try again.'**
+  String get bkSlotSaveFailed;
+
+  /// No description provided for @bkSlotErrPast.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a start time in the future.'**
+  String get bkSlotErrPast;
+
+  /// No description provided for @bkSlotErrEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'The end must be after the start.'**
+  String get bkSlotErrEnd;
+
+  /// No description provided for @bkSlotErrTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'A date can last at most 24 h.'**
+  String get bkSlotErrTooLong;
+
+  /// No description provided for @bkSlotErrTooFar.
+  ///
+  /// In en, this message translates to:
+  /// **'Dates can be at most one year ahead.'**
+  String get bkSlotErrTooFar;
+
+  /// No description provided for @bkSlotErrCapacity.
+  ///
+  /// In en, this message translates to:
+  /// **'Seats: from 1 to {max}.'**
+  String bkSlotErrCapacity(int max);
+
+  /// No description provided for @bkSlotErrBelowBooked.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} seats are already booked: keep at least that many.'**
+  String bkSlotErrBelowBooked(int count);
+
+  /// No description provided for @bkErrSlotFull.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{This date is full.} =1{Only 1 seat left on this date.} other{Only {count} seats left on this date.}}'**
+  String bkErrSlotFull(int count);
+
+  /// No description provided for @bkErrAlreadyBooked.
+  ///
+  /// In en, this message translates to:
+  /// **'You already have a booking for this date.'**
+  String get bkErrAlreadyBooked;
+
+  /// No description provided for @bkErrIdRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload an ID document to book.'**
+  String get bkErrIdRequired;
+
+  /// No description provided for @bkErrHostNotVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'This host can\'t take paid bookings yet (identity not verified).'**
+  String get bkErrHostNotVerified;
+
+  /// No description provided for @bkErrPaymentMethodRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose how you will pay.'**
+  String get bkErrPaymentMethodRequired;
+
+  /// No description provided for @bkErrPaymentMethodNotAccepted.
+  ///
+  /// In en, this message translates to:
+  /// **'The host no longer accepts this payment method. Choose another one.'**
+  String get bkErrPaymentMethodNotAccepted;
+
+  /// No description provided for @bkErrOwnExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'You can\'t book your own experience.'**
+  String get bkErrOwnExperience;
+
+  /// No description provided for @bkErrNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'This experience isn\'t available to you.'**
+  String get bkErrNotAvailable;
+
+  /// No description provided for @bkErrSlotStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'This date has already started.'**
+  String get bkErrSlotStarted;
+
+  /// No description provided for @bkErrSlotClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'This date is no longer available.'**
+  String get bkErrSlotClosed;
+
+  /// No description provided for @bkErrNotBookable.
+  ///
+  /// In en, this message translates to:
+  /// **'This experience can\'t be booked right now.'**
+  String get bkErrNotBookable;
+
+  /// No description provided for @bkErrPriceInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'This listing\'s price is incomplete. Ask the host to update it.'**
+  String get bkErrPriceInvalid;
+
+  /// No description provided for @bkErrHostUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'The host is not taking bookings right now.'**
+  String get bkErrHostUnavailable;
+
+  /// No description provided for @bkErrConsentRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please accept the booking terms first.'**
+  String get bkErrConsentRequired;
+
+  /// No description provided for @bkErrTooManyGuests.
+  ///
+  /// In en, this message translates to:
+  /// **'At most {max} guests per booking.'**
+  String bkErrTooManyGuests(int max);
+
+  /// No description provided for @bkErrAccountRestricted.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account can\'t make bookings right now.'**
+  String get bkErrAccountRestricted;
+
+  /// No description provided for @bkErrNetwork.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection problem. Try again: you won\'t be booked twice.'**
+  String get bkErrNetwork;
+
+  /// No description provided for @bkErrRequestExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'This request has expired.'**
+  String get bkErrRequestExpired;
+
+  /// No description provided for @bkErrStateChanged.
+  ///
+  /// In en, this message translates to:
+  /// **'This booking changed in the meantime. Pull down to refresh.'**
+  String get bkErrStateChanged;
+
+  /// No description provided for @bkErrInvalidCode.
+  ///
+  /// In en, this message translates to:
+  /// **'This check-in code isn\'t valid for this booking.'**
+  String get bkErrInvalidCode;
+
+  /// No description provided for @bkErrOutsideCheckIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in opens 2 h before the start and closes 12 h after the end.'**
+  String get bkErrOutsideCheckIn;
+
+  /// No description provided for @bkErrTooEarlyNoShow.
+  ///
+  /// In en, this message translates to:
+  /// **'You can mark a no-show from 30 min after the start.'**
+  String get bkErrTooEarlyNoShow;
+
+  /// No description provided for @bkErrGuestCheckedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'The guest is already checked in.'**
+  String get bkErrGuestCheckedIn;
+
+  /// No description provided for @bkErrCashBeforeMeeting.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash can be confirmed once you meet the guest.'**
+  String get bkErrCashBeforeMeeting;
+
+  /// No description provided for @bkErrOutsideDispute.
+  ///
+  /// In en, this message translates to:
+  /// **'Problems can be reported from the start until 24 h after the end.'**
+  String get bkErrOutsideDispute;
+
+  /// No description provided for @bkErrReasonRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe the problem (at least {min} characters).'**
+  String bkErrReasonRequired(int min);
 }
 
 class _AppLocalizationsDelegate

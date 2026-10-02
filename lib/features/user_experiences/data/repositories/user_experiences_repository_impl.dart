@@ -22,9 +22,14 @@ class UserExperiencesRepositoryImpl implements UserExperiencesRepository {
           return Left(ExperienceLimitFailure(limit: e.limit, count: e.count));
         case 'prohibited_text':
           return const Left(ExperienceProhibitedFailure());
+        case 'contact_info':
+          return const Left(ExperienceContactInfoFailure());
         case 'invalid_experience':
           return Left(ExperienceInvalidFailure(e.fields));
         default:
+          if (ExperienceCreateException.safetyCodes.contains(e.code)) {
+            return Left(ExperienceSafetyFailure(e.code));
+          }
           return Left(ServerFailure(e.code));
       }
     } catch (e) {
@@ -66,8 +71,37 @@ class UserExperiencesRepositoryImpl implements UserExperiencesRepository {
       _guard(() => _remote.create(draft));
 
   @override
-  Future<Either<Failure, void>> updateExperience(UserExperience experience) =>
-      _guard(() => _remote.update(experience));
+  Future<Either<Failure, bool>> updateExperience(
+    UserExperience experience, {
+    bool publish = false,
+    bool wasPublished = false,
+  }) =>
+      _guard(() => _remote.update(experience,
+          publish: publish, wasPublished: wasPublished));
+
+  @override
+  Future<Either<Failure, void>> publishExperience(String id,
+          {bool asFree = false}) =>
+      _guard(() => _remote.publish(id, asFree: asFree));
+
+  @override
+  Future<Either<Failure, void>> acceptHostAgreement(int version) =>
+      _guard(() => _remote.acceptHostAgreement(version));
+
+  @override
+  Future<Either<Failure, void>> recordBookingConsent({
+    required String experienceId,
+    required String uid,
+    required CancellationPolicy policy,
+    required int version,
+    required PaymentMethod method,
+  }) =>
+      _guard(() => _remote.recordBookingConsent(
+          experienceId: experienceId,
+          uid: uid,
+          policy: policy,
+          version: version,
+          method: method));
 
   @override
   Future<Either<Failure, void>> setStatus(String id, ExperienceStatus status) =>
@@ -81,14 +115,20 @@ class UserExperiencesRepositoryImpl implements UserExperiencesRepository {
   Future<Either<Failure, void>> reportExperience({
     required UserExperience experience,
     required String reporterId,
-  }) =>
-      _guard(() => _remote.report({
-            'type': 'user_experience',
-            'experienceId': experience.id,
-            'hostId': experience.hostId,
-            'experienceTitle': experience.title,
-            'reporterId': reporterId,
-          }));
+    String reason = 'other',
+    String details = '',
+  }) {
+    final d = details.trim();
+    return _guard(() => _remote.report({
+          'type': 'user_experience',
+          'experienceId': experience.id,
+          'hostId': experience.hostId,
+          'experienceTitle': experience.title,
+          'reporterId': reporterId,
+          'reason': reason,
+          if (d.isNotEmpty) 'details': d.length > 1000 ? d.substring(0, 1000) : d,
+        }));
+  }
 
   @override
   Future<Either<Failure, ExperiencePage<ExperienceReview>>> getReviews(
@@ -122,6 +162,43 @@ class UserExperiencesRepositoryImpl implements UserExperiencesRepository {
   @override
   Future<Either<Failure, void>> deleteReview(String experienceId, String uid) =>
       _guard(() => _remote.deleteReview(experienceId, uid));
+
+  @override
+  Future<Either<Failure, ReviewEligibility?>> getReviewEligibility(
+          String experienceId, String uid) =>
+      _guard(() => _remote.reviewEligibility(experienceId, uid));
+
+  @override
+  Future<Either<Failure, PendingReview?>> getPendingReview(
+          String experienceId, String uid) =>
+      _guard(() => _remote.pendingReview(experienceId, uid));
+
+  @override
+  Future<Either<Failure, void>> savePendingReview({
+    required String experienceId,
+    required String uid,
+    required String bookingId,
+    required int rating,
+    required String comment,
+    required bool isNew,
+  }) =>
+      _guard(() => _remote.savePendingReview(
+            experienceId: experienceId,
+            uid: uid,
+            bookingId: bookingId,
+            rating: rating,
+            comment: comment,
+            isNew: isNew,
+          ));
+
+  @override
+  Future<Either<Failure, void>> deletePendingReview(
+          String experienceId, String uid) =>
+      _guard(() => _remote.deletePendingReview(experienceId, uid));
+
+  @override
+  Future<Either<Failure, void>> setRequestToBook(String id, bool value) =>
+      _guard(() => _remote.setRequestToBook(id, value));
 
   @override
   Future<Either<Failure, void>> reportReview({

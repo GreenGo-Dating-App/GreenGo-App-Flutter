@@ -209,7 +209,7 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                                   const SizedBox(width: 8),
                                   Tooltip(
                                     message: l10n.businessVerifiedBadgeTooltip,
-                                    child: const VerifiedBadge(
+                                    child: const CheckBadge(
                                         size: 20, isPremium: true),
                                   ),
                                 ],
