@@ -10,13 +10,14 @@ exports.onMessageCreatedVocabulary = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const utils_1 = require("../shared/utils");
 const monitoring_1 = require("../shared/monitoring");
+const weekKey_1 = require("./weekKey");
 const WORD_REGEX = /[a-zA-ZÀ-ÿ\u00C0-\u024F']+/g;
 const MIN_WORD_LENGTH = 2;
 const BATCH_SIZE = 450;
 const XP_PER_NEW_WORD = 1;
 exports.onMessageCreatedVocabulary = (0, firestore_1.onDocumentCreated)({
     document: 'conversations/{conversationId}/messages/{messageId}',
-    memory: '256MiB',
+    memory: '512MiB', // 256MiB is OOM-killed on cold start (index load ~200MB)
     timeoutSeconds: 30,
 }, (0, monitoring_1.monitored)("onMessageCreatedVocabulary", async (event) => {
     var _a, _b;
@@ -86,15 +87,15 @@ exports.onMessageCreatedVocabulary = (0, firestore_1.onDocumentCreated)({
         if (newWordCount > 0) {
             const totalXp = newWordCount * XP_PER_NEW_WORD;
             // Update user level XP
+            // Transaction so the weekly leaderboard fields (weekKey/weeklyXP)
+            // move atomically with totalXP.
             const userLevelRef = utils_1.db.collection('user_levels').doc(senderId);
-            const userLevelDoc = await userLevelRef.get();
-            if (userLevelDoc.exists) {
-                await userLevelRef.update({
-                    totalXP: utils_1.FieldValue.increment(totalXp),
-                    currentXP: utils_1.FieldValue.increment(totalXp),
-                    lastUpdated: utils_1.FieldValue.serverTimestamp(),
-                });
-            }
+            await utils_1.db.runTransaction(async (tx) => {
+                const userLevelDoc = await tx.get(userLevelRef);
+                if (!userLevelDoc.exists)
+                    return;
+                tx.update(userLevelRef, Object.assign(Object.assign({ totalXP: utils_1.FieldValue.increment(totalXp), currentXP: utils_1.FieldValue.increment(totalXp) }, (0, weekKey_1.weeklyXpFields)(userLevelDoc.data(), totalXp)), { lastUpdated: utils_1.FieldValue.serverTimestamp() }));
+            });
             // Log XP transaction
             await utils_1.db.collection('xp_transactions').add({
                 userId: senderId,

@@ -134,8 +134,10 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     });
   }
 
-  /// Communities matching the query (name / description / tags — the datasource's
-  /// client-side substring search over public communities).
+  /// Public communities matching the query: server-side `searchKeywords`
+  /// prefix search (name / city / tag words, accent-insensitive, top 20 by
+  /// members), falling back to the datasource's client-side substring scan
+  /// of recent communities when that finds nothing (docs not backfilled yet).
   Future<List<Community>> _searchCommunities(String q) async {
     final result =
         await di.sl<CommunitiesRepository>().getCommunities(searchQuery: q);

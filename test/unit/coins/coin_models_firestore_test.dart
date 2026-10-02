@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -31,7 +32,6 @@ void main() {
             remainingCoins: 375,
             source: CoinSource.purchase,
             acquiredDate: now,
-            expirationDate: now.add(const Duration(days: 365)),
           ),
         ],
       );
@@ -49,6 +49,83 @@ void main() {
       expect(read.coinBatches.single.batchId, 'b1');
       expect(read.coinBatches.single.remainingCoins, 375);
       expect(read.coinBatches.single.source, CoinSource.purchase);
+      expect(read.coinBatches.single.acquiredDate, now);
+    });
+
+    test('toFirestore never writes an expirationDate (coins never expire)',
+        () {
+      final model = CoinBalanceModel(
+        userId: 'u1',
+        totalCoins: 10,
+        earnedCoins: 0,
+        purchasedCoins: 10,
+        giftedCoins: 0,
+        spentCoins: 0,
+        lastUpdated: now,
+        coinBatches: [
+          CoinBatch(
+            batchId: 'b1',
+            initialCoins: 10,
+            remainingCoins: 10,
+            source: CoinSource.purchase,
+            acquiredDate: now,
+          ),
+        ],
+      );
+      final batches = model.toFirestore()['coinBatches'] as List;
+      final map = batches.single as Map<String, dynamic>;
+      expect(map.containsKey('expirationDate'), isFalse);
+    });
+
+    test('legacy doc with expirationDate (even in the past) still parses and '
+        'counts', () async {
+      final db = FakeFirebaseFirestore();
+      await db.collection('balances').doc('u1').set({
+        'userId': 'u1',
+        'totalCoins': 0,
+        'lastUpdated': Timestamp.fromDate(now),
+        'coinBatches': [
+          {
+            'batchId': 'old',
+            'initialCoins': 200,
+            'remainingCoins': 150,
+            'source': 'purchase',
+            'acquiredDate':
+                Timestamp.fromDate(now.subtract(const Duration(days: 500))),
+            'expirationDate':
+                Timestamp.fromDate(now.subtract(const Duration(days: 135))),
+          },
+        ],
+      });
+      final read = CoinBalanceModel.fromFirestore(
+          await db.collection('balances').doc('u1').get());
+      expect(read.coinBatches.single.remainingCoins, 150);
+      expect(read.availableCoins, 150);
+    });
+
+    test('a malformed batch is skipped without losing the rest', () async {
+      final db = FakeFirebaseFirestore();
+      await db.collection('balances').doc('u1').set({
+        'userId': 'u1',
+        'totalCoins': 75,
+        'lastUpdated': Timestamp.fromDate(now),
+        'coinBatches': [
+          {'batchId': 'bad', 'initialCoins': 'oops'},
+          {
+            'batchId': 'good',
+            'initialCoins': 50,
+            'remainingCoins': 50,
+            'source': 'gift',
+            'acquiredDate': Timestamp.fromDate(now),
+          },
+        ],
+      });
+      final read = CoinBalanceModel.fromFirestore(
+          await db.collection('balances').doc('u1').get());
+      expect(read.coinBatches.map((b) => b.batchId), ['good']);
+      expect(read.coinBatches.single.source, CoinSource.gift);
+      // Unbatched remainder still spendable via totalCoins.
+      expect(read.availableCoins, 75);
     });
 
     test('empty() factory produces a zeroed balance', () {

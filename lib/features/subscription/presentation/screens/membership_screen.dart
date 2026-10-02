@@ -4,9 +4,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/subscription.dart';
+import '../../domain/membership_product_mapping.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../bloc/subscription_bloc.dart';
 
@@ -86,7 +88,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
   }
 
   bool _isProductLocked(String productId) {
-    if (productId == 'greengo_base_membership') return _hasActiveBaseMembership;
+    if (ProductCatalog.classify(productId).isBase) return _hasActiveBaseMembership;
     if (_currentTierName == null || _currentEndDate == null) return false;
     final isActive = _currentEndDate!.isAfter(DateTime.now());
     if (!isActive) return false;
@@ -105,26 +107,30 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
   }
 
   int _tierRankFromProductId(String productId) {
-    if (productId.contains('platinum')) return 3;
-    if (productId.contains('gold')) return 2;
-    if (productId.contains('silver')) return 1;
-    return 0;
-  }
-
-  /// Get subscription tier from product ID
-  SubscriptionTier _getTierFromProductId(String productId) {
-    if (productId.contains('platinum')) return SubscriptionTier.platinum;
-    if (productId.contains('gold')) return SubscriptionTier.gold;
-    if (productId.contains('silver')) return SubscriptionTier.silver;
-    return SubscriptionTier.basic;
+    switch (ProductCatalog.classify(productId).tier) {
+      case MembershipProductTier.platinum:
+        return 3;
+      case MembershipProductTier.gold:
+        return 2;
+      case MembershipProductTier.silver:
+        return 1;
+      case MembershipProductTier.base:
+        return 0;
+    }
   }
 
   /// Get tier-specific accent color based on product ID
   Color _getTierColor(String productId) {
-    if (productId.contains('platinum')) return AppColors.platinumBlue;
-    if (productId.contains('gold')) return AppColors.richGold;
-    if (productId.contains('silver')) return const Color(0xFFC0C0C0);
-    return AppColors.basePurple; // Base membership
+    switch (ProductCatalog.classify(productId).tier) {
+      case MembershipProductTier.platinum:
+        return AppColors.platinumBlue;
+      case MembershipProductTier.gold:
+        return AppColors.richGold;
+      case MembershipProductTier.silver:
+        return const Color(0xFFC0C0C0);
+      case MembershipProductTier.base:
+        return AppColors.basePurple; // Base membership
+    }
   }
 
   @override
@@ -165,7 +171,8 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
         builder: (context, state) {
           final isLoading = state is SubscriptionLoading;
           if (state is ProductsLoaded) _products = state.products;
-          final products = _products;
+          // One card per product id: Play returns one entry per offer.
+          final products = ProductCatalog.onePerProduct(_products);
           final productsLoading = state is ProductsLoading && products.isEmpty;
 
           return Stack(
@@ -227,7 +234,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                             ),
                           ),
                           child: Text(
-                            'Buy ${_selectedProduct!.title} - ${_selectedProduct!.price}  ${AppLocalizations.of(context)!.plusTaxes}',
+                            'Buy ${_selectedProduct!.title} - ${_displayPrice(_selectedProduct!)}  ${AppLocalizations.of(context)!.plusTaxes}',
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -300,16 +307,25 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
     required VoidCallback onSelect,
     bool isLocked = false,
   }) {
-    final isYearly = product.id.contains('1_year');
-    final isBase = product.id.contains('base');
+    // Shared classifier: Play IDs (e.g. `greengo_silver_yearly`) don't
+    // contain `1_year`, so substring checks mislabelled them as monthly.
+    final info = ProductCatalog.classify(product.id);
+    final isBase = info.isBase;
+    final isYearly = info.isYearly && !isBase;
     final tierColor = _getTierColor(product.id);
 
     final l10n = AppLocalizations.of(context)!;
-    var tierName = l10n.membershipGreenGoBase;
-    if (product.id.contains('platinum')) {
-      tierName = l10n.membershipPlatinum;
-    } else if (product.id.contains('gold')) tierName = l10n.membershipGold;
-    else if (product.id.contains('silver')) tierName = l10n.membershipSilver;
+    final String tierName;
+    switch (info.tier) {
+      case MembershipProductTier.platinum:
+        tierName = l10n.membershipPlatinum;
+      case MembershipProductTier.gold:
+        tierName = l10n.membershipGold;
+      case MembershipProductTier.silver:
+        tierName = l10n.membershipSilver;
+      case MembershipProductTier.base:
+        tierName = l10n.membershipGreenGoBase;
+    }
 
     var duration = l10n.membershipOneMonth;
     if (isYearly) duration = l10n.membershipOneYear;
@@ -405,7 +421,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                   border: Border.all(color: tierColor, width: 2),
                 ),
                 child: Text(
-                  '${product.price}  ${l10n.plusTaxes} / ${l10n.membershipOneYear}',
+                  '${_displayPrice(product)}  ${l10n.plusTaxes} / ${l10n.membershipOneYear}',
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
@@ -415,17 +431,24 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
               )
             else
               Text(
-                '${product.price}  ${AppLocalizations.of(context)!.plusTaxes}',
+                '${_displayPrice(product)}  ${AppLocalizations.of(context)!.plusTaxes}',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: tierColor,
                 ),
               ),
-            const SizedBox(height: 8),
-            if (isYearly)
+            if (ProductCatalog.hasSevenDayFreeTrial(product)) ...[
+              const SizedBox(height: 6),
               Text(
-                l10n.membershipEquivalentMonthly(_calculateMonthlyPrice(product)),
+                l10n.subscriptionFreeTrialInfo,
+                style: const TextStyle(fontSize: 12, color: Colors.white70),
+              ),
+            ],
+            const SizedBox(height: 8),
+            if (isYearly && _calculateMonthlyPrice(product) != null)
+              Text(
+                l10n.membershipEquivalentMonthly(_calculateMonthlyPrice(product)!),
                 style: const TextStyle(
                   fontSize: 14,
                   color: Colors.white70,
@@ -438,30 +461,32 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
     );
   }
 
-  String _calculateMonthlyPrice(ProductDetails product) {
-    try {
-      // Extract price from string like "\$119.99"
-      final priceStr = product.price.replaceAll(r'$', '').replaceAll(',', '');
-      final price = double.tryParse(priceStr) ?? 0;
-      final monthlyPrice = price / 12;
-      return '\$${monthlyPrice.toStringAsFixed(2)}';
-    } catch (e) {
-      return product.price;
-    }
+  /// Monthly equivalent of a yearly product in the store's own currency, or
+  /// null when the store gave no usable amount (the line is then hidden).
+  /// Uses [ProductCatalog.recurringPrice] — parsing the formatted string broke on
+  /// non-USD locales ("R$ 24,99" became "$0.00").
+  String? _calculateMonthlyPrice(ProductDetails product) {
+    // Recurring phase, not the first (possibly free-trial) phase.
+    final recurring = ProductCatalog.recurringPrice(product);
+    if (recurring == null) return null;
+    return '${recurring.currencySymbol}'
+        '${(recurring.amount / 12).toStringAsFixed(2)}';
   }
 
+  /// Plan price to display: the store's RECURRING price. On Android
+  /// `ProductDetails.price` is the first pricing phase, i.e. "Free" or an
+  /// intro price for a trial offer. Display only — purchases still use the
+  /// selected [ProductDetails] untouched.
+  String _displayPrice(ProductDetails product) =>
+      ProductCatalog.recurringPriceLabel(product) ?? product.price;
+
+  SubscriptionTier _getTierFromProductId(String productId) =>
+      subscriptionTierForProduct(productId);
+
   void _handlePurchase(BuildContext context, ProductDetails product) {
-    // Determine tier from product ID
-    SubscriptionTier tier;
-    if (product.id.contains('platinum')) {
-      tier = SubscriptionTier.platinum;
-    } else if (product.id.contains('gold')) {
-      tier = SubscriptionTier.gold;
-    } else if (product.id.contains('silver')) {
-      tier = SubscriptionTier.silver;
-    } else {
-      tier = SubscriptionTier.basic;
-    }
+    // Determine tier from product ID (same result as before for every real
+    // ID; see test/unit/subscription/product_catalog_classify_test.dart).
+    final SubscriptionTier tier = subscriptionTierForProduct(product.id);
 
     context.read<SubscriptionBloc>().add(
       PurchaseSubscription(

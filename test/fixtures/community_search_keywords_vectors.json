@@ -1,0 +1,504 @@
+{
+ "keywords": [
+  {
+   "input": {
+    "name": "Café Lisboa"
+   },
+   "expected": [
+    "c",
+    "ca",
+    "caf",
+    "cafe",
+    "l",
+    "li",
+    "lis",
+    "lisb",
+    "lisbo",
+    "lisboa"
+   ]
+  },
+  {
+   "input": {
+    "name": "Spanish Learners Worldwide",
+    "city": "Madrid",
+    "tags": [
+     "spanish",
+     "language-learning"
+    ]
+   },
+   "expected": [
+    "s",
+    "sp",
+    "spa",
+    "span",
+    "spani",
+    "spanis",
+    "spanish",
+    "l",
+    "le",
+    "lea",
+    "lear",
+    "learn",
+    "learne",
+    "learner",
+    "learners",
+    "w",
+    "wo",
+    "wor",
+    "worl",
+    "world",
+    "worldw",
+    "worldwi",
+    "worldwid",
+    "worldwide",
+    "m",
+    "ma",
+    "mad",
+    "madr",
+    "madri",
+    "madrid",
+    "la",
+    "lan",
+    "lang",
+    "langu",
+    "langua",
+    "languag",
+    "language",
+    "learni",
+    "learnin",
+    "learning"
+   ]
+  },
+  {
+   "input": {
+    "name": "São Paulo Foodies",
+    "city": "São Paulo",
+    "tags": [
+     "food"
+    ]
+   },
+   "expected": [
+    "s",
+    "sa",
+    "sao",
+    "p",
+    "pa",
+    "pau",
+    "paul",
+    "paulo",
+    "f",
+    "fo",
+    "foo",
+    "food",
+    "foodi",
+    "foodie",
+    "foodies"
+   ]
+  },
+  {
+   "input": {
+    "name": "Straße & Œuvre — Ærø!",
+    "city": null,
+    "tags": []
+   },
+   "expected": [
+    "s",
+    "st",
+    "str",
+    "stra",
+    "stras",
+    "strass",
+    "strasse",
+    "o",
+    "oe",
+    "oeu",
+    "oeuv",
+    "oeuvr",
+    "oeuvre",
+    "a",
+    "ae",
+    "aer",
+    "aero"
+   ]
+  },
+  {
+   "input": {
+    "name": "東京 Tech Meetup",
+    "city": "Tōkyō",
+    "tags": [
+     "tech"
+    ]
+   },
+   "expected": [
+    "東",
+    "東京",
+    "t",
+    "te",
+    "tec",
+    "tech",
+    "m",
+    "me",
+    "mee",
+    "meet",
+    "meetu",
+    "meetup",
+    "to",
+    "tok",
+    "toky",
+    "tokyo"
+   ]
+  },
+  {
+   "input": {
+    "name": "Internationalization Enthusiasts",
+    "city": "Zürich"
+   },
+   "expected": [
+    "i",
+    "in",
+    "int",
+    "inte",
+    "inter",
+    "intern",
+    "interna",
+    "internat",
+    "internati",
+    "internatio",
+    "internation",
+    "internationa",
+    "international",
+    "internationali",
+    "internationaliz",
+    "e",
+    "en",
+    "ent",
+    "enth",
+    "enthu",
+    "enthus",
+    "enthusi",
+    "enthusia",
+    "enthusias",
+    "enthusiast",
+    "enthusiasts",
+    "z",
+    "zu",
+    "zur",
+    "zuri",
+    "zuric",
+    "zurich"
+   ]
+  },
+  {
+   "input": {
+    "name": "Café decomposed",
+    "city": "Kraków",
+    "tags": [
+     "Łódź"
+    ]
+   },
+   "expected": [
+    "c",
+    "ca",
+    "caf",
+    "cafe",
+    "d",
+    "de",
+    "dec",
+    "deco",
+    "decom",
+    "decomp",
+    "decompo",
+    "decompos",
+    "decompose",
+    "decomposed",
+    "k",
+    "kr",
+    "kra",
+    "krak",
+    "krako",
+    "krakow",
+    "l",
+    "lo",
+    "lod",
+    "lodz"
+   ]
+  },
+  {
+   "input": {
+    "name": "  ",
+    "city": "",
+    "tags": []
+   },
+   "expected": []
+  },
+  {
+   "input": {
+    "name": "A very long community name with many different words to overflow the hundred keyword cap entirely",
+    "city": "Copenhagen",
+    "tags": [
+     "overflow",
+     "cap"
+    ]
+   },
+   "expected": [
+    "a",
+    "v",
+    "ve",
+    "ver",
+    "very",
+    "l",
+    "lo",
+    "lon",
+    "long",
+    "c",
+    "co",
+    "com",
+    "comm",
+    "commu",
+    "commun",
+    "communi",
+    "communit",
+    "community",
+    "n",
+    "na",
+    "nam",
+    "name",
+    "w",
+    "wi",
+    "wit",
+    "with",
+    "m",
+    "ma",
+    "man",
+    "many",
+    "d",
+    "di",
+    "dif",
+    "diff",
+    "diffe",
+    "differ",
+    "differe",
+    "differen",
+    "different",
+    "wo",
+    "wor",
+    "word",
+    "words",
+    "t",
+    "to",
+    "o",
+    "ov",
+    "ove",
+    "over",
+    "overf",
+    "overfl",
+    "overflo",
+    "overflow",
+    "th",
+    "the",
+    "h",
+    "hu",
+    "hun",
+    "hund",
+    "hundr",
+    "hundre",
+    "hundred",
+    "k",
+    "ke",
+    "key",
+    "keyw",
+    "keywo",
+    "keywor",
+    "keyword",
+    "ca",
+    "cap",
+    "e",
+    "en",
+    "ent",
+    "enti",
+    "entir",
+    "entire",
+    "entirel",
+    "entirely",
+    "cop",
+    "cope",
+    "copen",
+    "copenh",
+    "copenha",
+    "copenhag",
+    "copenhage",
+    "copenhagen"
+   ]
+  },
+  {
+   "input": {
+    "name": "Worldwide Backpackers Photography Mountaineering Snowboarding Kayaking Volunteering Gastronomy",
+    "city": "Reykjavík",
+    "tags": [
+     "adventure"
+    ]
+   },
+   "expected": [
+    "w",
+    "wo",
+    "wor",
+    "worl",
+    "world",
+    "worldw",
+    "worldwi",
+    "worldwid",
+    "worldwide",
+    "b",
+    "ba",
+    "bac",
+    "back",
+    "backp",
+    "backpa",
+    "backpac",
+    "backpack",
+    "backpacke",
+    "backpacker",
+    "backpackers",
+    "p",
+    "ph",
+    "pho",
+    "phot",
+    "photo",
+    "photog",
+    "photogr",
+    "photogra",
+    "photograp",
+    "photograph",
+    "photography",
+    "m",
+    "mo",
+    "mou",
+    "moun",
+    "mount",
+    "mounta",
+    "mountai",
+    "mountain",
+    "mountaine",
+    "mountainee",
+    "mountaineer",
+    "mountaineeri",
+    "mountaineerin",
+    "mountaineering",
+    "s",
+    "sn",
+    "sno",
+    "snow",
+    "snowb",
+    "snowbo",
+    "snowboa",
+    "snowboar",
+    "snowboard",
+    "snowboardi",
+    "snowboardin",
+    "snowboarding",
+    "k",
+    "ka",
+    "kay",
+    "kaya",
+    "kayak",
+    "kayaki",
+    "kayakin",
+    "kayaking",
+    "v",
+    "vo",
+    "vol",
+    "volu",
+    "volun",
+    "volunt",
+    "volunte",
+    "voluntee",
+    "volunteer",
+    "volunteeri",
+    "volunteerin",
+    "volunteering",
+    "g",
+    "ga",
+    "gas",
+    "gast",
+    "gastr",
+    "gastro",
+    "gastron",
+    "gastrono",
+    "gastronom",
+    "gastronomy",
+    "r",
+    "re",
+    "rey",
+    "reyk",
+    "reykj",
+    "reykja",
+    "reykjav",
+    "reykjavi",
+    "reykjavik",
+    "a",
+    "ad",
+    "adv",
+    "adve"
+   ]
+  }
+ ],
+ "normalize": [
+  {
+   "input": "cafe",
+   "normalized": "cafe",
+   "tokens": [
+    "cafe"
+   ]
+  },
+  {
+   "input": "Café Lis",
+   "normalized": "cafe lis",
+   "tokens": [
+    "cafe",
+    "lis"
+   ]
+  },
+  {
+   "input": "  São  ",
+   "normalized": "  sao  ",
+   "tokens": [
+    "sao"
+   ]
+  },
+  {
+   "input": "spanish learners",
+   "normalized": "spanish learners",
+   "tokens": [
+    "spanish",
+    "learners"
+   ]
+  },
+  {
+   "input": "Internationalization",
+   "normalized": "internationalization",
+   "tokens": [
+    "internationalization"
+   ]
+  },
+  {
+   "input": "!!!",
+   "normalized": "!!!",
+   "tokens": []
+  },
+  {
+   "input": "東京 tech",
+   "normalized": "東京 tech",
+   "tokens": [
+    "東京",
+    "tech"
+   ]
+  },
+  {
+   "input": "ZÜRICH",
+   "normalized": "zurich",
+   "tokens": [
+    "zurich"
+   ]
+  }
+ ]
+}

@@ -16,6 +16,7 @@ exports.handleClaimChallengeReward = handleClaimChallengeReward;
 exports.handleResetDailyChallenges = handleResetDailyChallenges;
 exports.handleUpdateLeaderboardRankings = handleUpdateLeaderboardRankings;
 const utils_1 = require("../shared/utils");
+const weekKey_1 = require("./weekKey");
 // XP Configuration
 exports.XP_ACTIONS = {
     profile_complete: 50,
@@ -112,19 +113,12 @@ async function handleGrantXP(params) {
         (0, utils_1.logInfo)(`User ${uid} leveled up from ${currentLevel} to ${newLevel}, earned ${totalCoins} coins`);
     }
     // Update gamification data
-    await userGamificationRef.set({
-        userId: uid,
-        currentXP: newCurrentXP,
-        totalXP: newTotalXP,
-        level: newLevel,
-        lastXPGained: {
+    await userGamificationRef.set(Object.assign(Object.assign({ userId: uid, currentXP: newCurrentXP, totalXP: newTotalXP }, (0, weekKey_1.weeklyXpFields)(userGamificationDoc.exists ? userGamificationDoc.data() : undefined, xpGained)), { level: newLevel, lastXPGained: {
             action,
             amount: xpGained,
             timestamp: utils_1.FieldValue.serverTimestamp(),
             metadata,
-        },
-        updatedAt: utils_1.FieldValue.serverTimestamp(),
-    }, { merge: true });
+        }, updatedAt: utils_1.FieldValue.serverTimestamp() }), { merge: true });
     // Log XP event
     await utils_1.db.collection('gamification').doc(uid).collection('xp_history').add({
         action,
@@ -290,11 +284,7 @@ async function handleUnlockAchievementReward(params) {
         const gamificationDoc = await transaction.get(gamificationRef);
         const currentTotalXP = gamificationDoc.exists ? (((_a = gamificationDoc.data()) === null || _a === void 0 ? void 0 : _a.totalXP) || 0) : 0;
         const currentXP = gamificationDoc.exists ? (((_b = gamificationDoc.data()) === null || _b === void 0 ? void 0 : _b.currentXP) || 0) : 0;
-        transaction.set(gamificationRef, {
-            totalXP: currentTotalXP + achievement.xpReward,
-            currentXP: currentXP + achievement.xpReward,
-            updatedAt: utils_1.FieldValue.serverTimestamp(),
-        }, { merge: true });
+        transaction.set(gamificationRef, Object.assign(Object.assign({ totalXP: currentTotalXP + achievement.xpReward, currentXP: currentXP + achievement.xpReward }, (0, weekKey_1.weeklyXpFields)(gamificationDoc.exists ? gamificationDoc.data() : undefined, achievement.xpReward)), { updatedAt: utils_1.FieldValue.serverTimestamp() }), { merge: true });
         const userRef = utils_1.db.collection('users').doc(uid);
         transaction.update(userRef, {
             'coins.balance': utils_1.FieldValue.increment(achievement.coinReward),
@@ -488,11 +478,7 @@ async function handleClaimChallengeReward(params) {
         const gamificationDoc = await transaction.get(gamificationRef);
         const currentTotalXP = gamificationDoc.exists ? (((_a = gamificationDoc.data()) === null || _a === void 0 ? void 0 : _a.totalXP) || 0) : 0;
         const currentXP = gamificationDoc.exists ? (((_b = gamificationDoc.data()) === null || _b === void 0 ? void 0 : _b.currentXP) || 0) : 0;
-        transaction.set(gamificationRef, {
-            totalXP: currentTotalXP + challengeDef.xpReward,
-            currentXP: currentXP + challengeDef.xpReward,
-            updatedAt: utils_1.FieldValue.serverTimestamp(),
-        }, { merge: true });
+        transaction.set(gamificationRef, Object.assign(Object.assign({ totalXP: currentTotalXP + challengeDef.xpReward, currentXP: currentXP + challengeDef.xpReward }, (0, weekKey_1.weeklyXpFields)(gamificationDoc.exists ? gamificationDoc.data() : undefined, challengeDef.xpReward)), { updatedAt: utils_1.FieldValue.serverTimestamp() }), { merge: true });
         const userRef = utils_1.db.collection('users').doc(uid);
         transaction.update(userRef, {
             'coins.balance': utils_1.FieldValue.increment(challengeDef.coinReward),

@@ -41,6 +41,7 @@ exports.updateLeaderboardRankings = exports.resetDailyChallenges = exports.claim
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
 const monitoring_1 = require("../shared/monitoring");
+const weekKey_1 = require("./weekKey");
 const firestore = admin.firestore();
 /**
  * Grant XP to User
@@ -61,6 +62,8 @@ exports.grantXP = functions.https.onCall((0, monitoring_1.monitored)("grantXP", 
             let currentLevel = 1;
             let currentXP = 0;
             let totalXP = 0;
+            // Weekly leaderboard bookkeeping (weekKey/weeklyXP), same transaction.
+            const weekly = (0, weekKey_1.weeklyXpFields)(levelDoc.exists ? levelDoc.data() : undefined, xpAmount);
             if (levelDoc.exists) {
                 const data = levelDoc.data();
                 currentLevel = data.level;
@@ -81,6 +84,8 @@ exports.grantXP = functions.https.onCall((0, monitoring_1.monitored)("grantXP", 
                 currentXP: newCurrentXP,
                 totalXP: newTotalXP,
                 isVIP,
+                weekKey: weekly.weekKey,
+                weeklyXP: weekly.weeklyXP,
                 updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             }, { merge: true });
             // Record XP transaction

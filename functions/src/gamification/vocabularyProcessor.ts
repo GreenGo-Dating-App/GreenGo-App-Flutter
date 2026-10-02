@@ -8,6 +8,7 @@
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import { db, FieldValue, logInfo, logError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
+import { weeklyXpFields } from './weekKey';
 
 const WORD_REGEX = /[a-zA-ZÀ-ÿ\u00C0-\u024F']+/g;
 const MIN_WORD_LENGTH = 2;
@@ -17,7 +18,7 @@ const XP_PER_NEW_WORD = 1;
 export const onMessageCreatedVocabulary = onDocumentCreated(
   {
     document: 'conversations/{conversationId}/messages/{messageId}',
-    memory: '256MiB',
+    memory: '512MiB', // 256MiB is OOM-killed on cold start (index load ~200MB)
     timeoutSeconds: 30,
   },
   monitored("onMessageCreatedVocabulary", async (event) => {
@@ -104,16 +105,19 @@ export const onMessageCreatedVocabulary = onDocumentCreated(
         const totalXp = newWordCount * XP_PER_NEW_WORD;
 
         // Update user level XP
+        // Transaction so the weekly leaderboard fields (weekKey/weeklyXP)
+        // move atomically with totalXP.
         const userLevelRef = db.collection('user_levels').doc(senderId);
-        const userLevelDoc = await userLevelRef.get();
-
-        if (userLevelDoc.exists) {
-          await userLevelRef.update({
+        await db.runTransaction(async (tx) => {
+          const userLevelDoc = await tx.get(userLevelRef);
+          if (!userLevelDoc.exists) return;
+          tx.update(userLevelRef, {
             totalXP: FieldValue.increment(totalXp),
             currentXP: FieldValue.increment(totalXp),
+            ...weeklyXpFields(userLevelDoc.data(), totalXp),
             lastUpdated: FieldValue.serverTimestamp(),
           });
-        }
+        });
 
         // Log XP transaction
         await db.collection('xp_transactions').add({

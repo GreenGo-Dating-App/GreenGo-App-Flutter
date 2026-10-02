@@ -5,6 +5,7 @@
 
 import { db, FieldValue, logInfo, logError } from '../shared/utils';
 import * as admin from 'firebase-admin';
+import { weeklyXpFields } from './weekKey';
 
 // XP Configuration
 export const XP_ACTIONS = {
@@ -143,6 +144,8 @@ export async function handleGrantXP(params: GrantXPParams): Promise<GrantXPResul
     userId: uid,
     currentXP: newCurrentXP,
     totalXP: newTotalXP,
+    // Weekly leaderboard bookkeeping, kept next to totalXP on the same doc.
+    ...weeklyXpFields(userGamificationDoc.exists ? userGamificationDoc.data() : undefined, xpGained),
     level: newLevel,
     lastXPGained: {
       action,
@@ -355,6 +358,7 @@ export async function handleUnlockAchievementReward(params: UnlockAchievementPar
     transaction.set(gamificationRef, {
       totalXP: currentTotalXP + achievement.xpReward,
       currentXP: currentXP + achievement.xpReward,
+      ...weeklyXpFields(gamificationDoc.exists ? gamificationDoc.data() : undefined, achievement.xpReward),
       updatedAt: FieldValue.serverTimestamp(),
     }, { merge: true });
 
@@ -611,6 +615,7 @@ export async function handleClaimChallengeReward(params: ClaimChallengeParams) {
     transaction.set(gamificationRef, {
       totalXP: currentTotalXP + challengeDef.xpReward,
       currentXP: currentXP + challengeDef.xpReward,
+      ...weeklyXpFields(gamificationDoc.exists ? gamificationDoc.data() : undefined, challengeDef.xpReward),
       updatedAt: FieldValue.serverTimestamp(),
     }, { merge: true });
 

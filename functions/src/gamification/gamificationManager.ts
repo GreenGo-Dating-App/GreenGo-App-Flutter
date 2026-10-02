@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { weeklyXpFields } from './weekKey';
 
 const firestore = admin.firestore();
 
@@ -39,6 +40,8 @@ export const grantXP = functions.https.onCall(monitored("grantXP", async (data, 
       let currentLevel = 1;
       let currentXP = 0;
       let totalXP = 0;
+      // Weekly leaderboard bookkeeping (weekKey/weeklyXP), same transaction.
+      const weekly = weeklyXpFields(levelDoc.exists ? levelDoc.data() : undefined, xpAmount);
 
       if (levelDoc.exists) {
         const data = levelDoc.data()!;
@@ -66,6 +69,8 @@ export const grantXP = functions.https.onCall(monitored("grantXP", async (data, 
           currentXP: newCurrentXP,
           totalXP: newTotalXP,
           isVIP,
+          weekKey: weekly.weekKey,
+          weeklyXP: weekly.weeklyXP,
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         },
         { merge: true }

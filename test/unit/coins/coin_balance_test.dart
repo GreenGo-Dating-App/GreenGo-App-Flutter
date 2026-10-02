@@ -2,16 +2,23 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:greengo_chat/features/coins/domain/entities/coin_balance.dart';
 
-/// Master Test Plan — Coins / balance & expiration math.
-/// Pure tests for [CoinBalance] batch accounting: available vs expired coins,
-/// the 30-day "expiring soon" window, and the affordability check.
+/// Master Test Plan — Coins / balance math.
+///
+/// Since v4.0.0 (commit 3e92076, App Store Guideline 3.1.1) coins NEVER
+/// expire: [CoinBatch] carries no expiration date and [CoinBalance] has no
+/// expired / expiring-soon accounting. These tests pin the current rule:
+///
+///   availableCoins = max(totalCoins, sum of batch remainders)
+///
+/// so coins credited by Cloud Functions with a bare `totalCoins` increment
+/// (no batch) are still spendable, and old batches are never withheld.
 void main() {
   final now = DateTime.now();
 
   CoinBatch batch({
     required String id,
     required int remaining,
-    required DateTime expiration,
+    DateTime? acquired,
     CoinSource source = CoinSource.purchase,
   }) =>
       CoinBatch(
@@ -19,13 +26,13 @@ void main() {
         initialCoins: remaining,
         remainingCoins: remaining,
         source: source,
-        acquiredDate: now.subtract(const Duration(days: 1)),
-        expirationDate: expiration,
+        acquiredDate: acquired ?? now.subtract(const Duration(days: 1)),
       );
 
-  CoinBalance balance(List<CoinBatch> batches) => CoinBalance(
+  CoinBalance balance(List<CoinBatch> batches, {int totalCoins = 0}) =>
+      CoinBalance(
         userId: 'u1',
-        totalCoins: 0,
+        totalCoins: totalCoins,
         earnedCoins: 0,
         purchasedCoins: 0,
         giftedCoins: 0,
@@ -34,97 +41,78 @@ void main() {
         coinBatches: batches,
       );
 
-  group('CoinBatch', () {
-    test('isExpired is true only after the expiration instant', () {
-      final b = batch(
-          id: 'b', remaining: 10, expiration: now.add(const Duration(days: 1)));
-      expect(b.isExpired(now), isFalse);
-      expect(b.isExpired(now.add(const Duration(days: 2))), isTrue);
+  group('CoinBalance.availableCoins', () {
+    test('sums every batch remainder — no batch is withheld for age', () {
+      final b = balance([
+        batch(id: 'fresh', remaining: 100),
+        batch(id: 'month', remaining: 50,
+            acquired: now.subtract(const Duration(days: 30))),
+        // Older than the removed 365-day expiry: must still count.
+        batch(id: 'ancient', remaining: 999,
+            acquired: now.subtract(const Duration(days: 800))),
+      ]);
+      expect(b.availableCoins, 1149);
     });
 
-    test('daysUntilExpiration is 0 for an already-expired batch', () {
-      final b = batch(
-          id: 'b',
-          remaining: 10,
-          expiration: now.subtract(const Duration(days: 1)));
-      expect(b.daysUntilExpiration(), 0);
+    test('falls back to totalCoins when there are no batches '
+        '(Cloud Function bare increment)', () {
+      expect(balance(const [], totalCoins: 320).availableCoins, 320);
+    });
+
+    test('unbatched coins in totalCoins above the batch sum are spendable', () {
+      final b = balance([batch(id: 'b', remaining: 100)], totalCoins: 250);
+      expect(b.availableCoins, 250);
+    });
+
+    test('batch sum wins when the document total lags behind', () {
+      final b = balance([
+        batch(id: 'a', remaining: 120),
+        batch(id: 'b', remaining: 80),
+      ], totalCoins: 150);
+      expect(b.availableCoins, 200);
+    });
+
+    test('counts batches of every source', () {
+      final b = balance([
+        for (final s in CoinSource.values)
+          batch(id: s.name, remaining: 10, source: s),
+      ]);
+      expect(b.availableCoins, 10 * CoinSource.values.length);
     });
   });
 
-  group('CoinBalance batch accounting', () {
-    test('availableCoins sums only non-expired batches', () {
+  group('CoinBalance.hasEnoughCoins', () {
+    test('compares against availableCoins (old batches included)', () {
       final b = balance([
-        batch(
-            id: 'live1',
-            remaining: 100,
-            expiration: now.add(const Duration(days: 40))),
-        batch(
-            id: 'live2',
-            remaining: 50,
-            expiration: now.add(const Duration(days: 10))),
-        batch(
-            id: 'dead',
-            remaining: 999,
-            expiration: now.subtract(const Duration(days: 1))),
+        batch(id: 'new', remaining: 40),
+        batch(id: 'old', remaining: 1000,
+            acquired: now.subtract(const Duration(days: 400))),
       ]);
-      expect(b.availableCoins, 150);
+      expect(b.hasEnoughCoins(1040), isTrue);
+      expect(b.hasEnoughCoins(1041), isFalse);
     });
 
-    test('expiredCoins sums only expired batches', () {
-      final b = balance([
-        batch(
-            id: 'live',
-            remaining: 100,
-            expiration: now.add(const Duration(days: 40))),
-        batch(
-            id: 'dead',
-            remaining: 25,
-            expiration: now.subtract(const Duration(days: 5))),
-      ]);
-      expect(b.expiredCoins, 25);
-    });
-
-    test('getCoinsExpiringSoon counts live batches inside the 30-day window',
-        () {
-      final b = balance([
-        batch(
-            id: 'soon',
-            remaining: 30,
-            expiration: now.add(const Duration(days: 10))),
-        batch(
-            id: 'later',
-            remaining: 70,
-            expiration: now.add(const Duration(days: 90))),
-        batch(
-            id: 'dead',
-            remaining: 5,
-            expiration: now.subtract(const Duration(days: 1))),
-      ]);
-      expect(b.getCoinsExpiringSoon(), 30);
-    });
-
-    test('hasEnoughCoins compares against availableCoins', () {
-      final b = balance([
-        batch(
-            id: 'live',
-            remaining: 40,
-            expiration: now.add(const Duration(days: 5))),
-        batch(
-            id: 'dead',
-            remaining: 1000,
-            expiration: now.subtract(const Duration(days: 1))),
-      ]);
+    test('uses totalCoins when no batch backs the balance', () {
+      final b = balance(const [], totalCoins: 40);
       expect(b.hasEnoughCoins(40), isTrue);
-      expect(b.hasEnoughCoins(41), isFalse,
-          reason: 'expired coins do not count toward affordability');
+      expect(b.hasEnoughCoins(41), isFalse);
     });
 
-    test('an empty balance has zero everywhere', () {
+    test('an empty balance has zero available and cannot afford anything', () {
       final b = balance(const []);
       expect(b.availableCoins, 0);
-      expect(b.expiredCoins, 0);
-      expect(b.getCoinsExpiringSoon(), 0);
+      expect(b.hasEnoughCoins(0), isTrue);
       expect(b.hasEnoughCoins(1), isFalse);
+    });
+  });
+
+  group('Equatable', () {
+    test('batches with equal fields are equal', () {
+      final at = DateTime(2026, 1, 1);
+      expect(batch(id: 'x', remaining: 5, acquired: at),
+          batch(id: 'x', remaining: 5, acquired: at));
+      expect(batch(id: 'x', remaining: 5, acquired: at),
+          isNot(batch(id: 'x', remaining: 6, acquired: at)));
     });
   });
 
