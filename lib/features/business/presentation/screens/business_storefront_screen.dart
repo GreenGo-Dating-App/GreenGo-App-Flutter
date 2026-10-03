@@ -276,12 +276,19 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                       ),
                       // Share this storefront/profile via its deep link
                       // (https://greengo-chat.web.app/u/{userId}).
-                      IconButton(
-                        icon: const Icon(Icons.ios_share,
-                            color: AppColors.richGold),
-                        tooltip: l10n.shareProfileTooltip,
-                        onPressed: () =>
-                            shareProfileLink(context, widget.business.userId),
+                      // Builder: the BUTTON's context anchors the iPad
+                      // share popover.
+                      Builder(
+                        builder: (buttonContext) => IconButton(
+                          icon: const Icon(Icons.ios_share,
+                              color: AppColors.richGold),
+                          tooltip: l10n.shareProfileTooltip,
+                          onPressed: () => shareProfileLink(
+                            buttonContext,
+                            widget.business.userId,
+                            displayName: _title,
+                          ),
+                        ),
                       ),
                       if (widget.currentUserId != widget.business.userId) ...[
                         const Spacer(),

@@ -5199,5 +5199,7 @@
   "bkErrReasonRequired": "Descreve o problema (pelo menos {min} caracteres).",
   "uexpDatesRequiredHint": "Os hóspedes só podem reservar as datas que definir e cada reserva é um pedido que aceita ou recusa. Adicione pelo menos uma data futura para publicar.",
   "uexpDatesRequiredToPublish": "Adicione pelo menos uma data futura para publicar. A sua experiência foi guardada como rascunho.",
-  "bkRefundIfPaid": "Se já pagou, o anfitrião deve-lhe devolver {percent} ({amount})."
+  "bkRefundIfPaid": "Se já pagou, o anfitrião deve-lhe devolver {percent} ({amount}).",
+  "shareLinkCopied": "Link copiado para a área de transferência",
+  "shareOtherProfileMessage": "Conhece {name} no GreenGo: {link}"
 }

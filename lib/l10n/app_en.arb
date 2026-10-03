@@ -7265,5 +7265,17 @@
   "uexpDatesRequiredHint": "Guests can only book the dates you set, and every booking is a request you accept or decline. Add at least one upcoming date to publish.",
   "uexpDatesRequiredToPublish": "Add at least one upcoming date to publish. Your experience is saved as a draft.",
   "bkRefundIfPaid": "If you already paid, the host owes you {percent} back ({amount}).",
-  "@bkRefundIfPaid": {"placeholders": {"percent": {"type": "String"}, "amount": {"type": "String"}}}
+  "@bkRefundIfPaid": {"placeholders": {"percent": {"type": "String"}, "amount": {"type": "String"}}},
+  "shareLinkCopied": "Link copied to the clipboard",
+  "shareOtherProfileMessage": "Meet {name} on GreenGo: {link}",
+  "@shareOtherProfileMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  }
 }

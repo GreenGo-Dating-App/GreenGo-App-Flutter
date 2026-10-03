@@ -3,13 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/web_location_fallback.dart';
 import '../../../../core/utils/safe_navigation.dart';
-import '../../../../core/utils/web_location_limit.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
@@ -35,9 +33,6 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
   List<String> _selectedLanguages = [];
   bool _isLoadingLocation = false;
   bool _isSaving = false;
-  // On web the location can only be changed once per month; this flags a
-  // web-picked change so we can stamp the limit after a successful save.
-  bool _webLocationChanged = false;
 
   final List<String> _availableLanguages = [
     'English',
@@ -145,26 +140,14 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     }
   }
 
-  /// Web-only: take the position straight from the browser (no map), gated
-  /// to once per month. The geocoding plugin has no web implementation, so
-  /// the city/country come from WebLocationFallback (Nominatim); if that
-  /// lookup fails the coordinates are still saved.
+  /// Web-only: take the position straight from the browser (no map). No
+  /// cooldown: it can only ever be the device's CURRENT position (nothing is
+  /// typed or picked), so updating it as often as the user moves is fine.
+  /// The geocoding plugin has no web implementation, so the city/country come
+  /// from WebLocationFallback (Nominatim); if that lookup fails the
+  /// coordinates are still saved.
   Future<void> _useBrowserLocation() async {
     final l10n = AppLocalizations.of(context)!;
-    final userId = widget.profile.userId;
-
-    final nextAllowed = await WebLocationLimit.nextAllowed(userId);
-    if (nextAllowed != null) {
-      if (!mounted) return;
-      final dateStr = DateFormat.yMMMMd().format(nextAllowed);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n.webLocationMonthlyLimit(dateStr)),
-          backgroundColor: AppColors.warningAmber,
-        ),
-      );
-      return;
-    }
 
     setState(() => _isLoadingLocation = true);
     try {
@@ -196,10 +179,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
           );
 
       if (!mounted) return;
-      setState(() {
-        _selectedLocation = location;
-        _webLocationChanged = true;
-      });
+      setState(() => _selectedLocation = location);
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -268,12 +248,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
     return BlocListener<ProfileBloc, ProfileState>(
       listener: (context, state) async {
         if (state is ProfileUpdated) {
-          // Stamp the web once-a-month limit only after a successful save.
-          if (kIsWeb && _webLocationChanged) {
-            await WebLocationLimit.markUpdated(widget.profile.userId);
-          }
           // Show success dialog instead of snackbar
-          if (!context.mounted) return;
           await ActionSuccessDialog.showLocationUpdated(context);
           if (context.mounted) {
             Navigator.of(context).pop(state.profile);

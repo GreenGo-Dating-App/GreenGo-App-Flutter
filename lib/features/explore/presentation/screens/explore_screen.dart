@@ -18,6 +18,7 @@ import '../../../app_tour/presentation/widgets/tour_showcase.dart';
 import '../../../app_tour/presentation/widgets/tour_trigger.dart';
 import 'package:showcaseview/showcaseview.dart';
 import '../../../../core/services/blocked_users_service.dart';
+import '../../../../core/services/location_change.dart';
 import '../../../../core/services/location_refresh_service.dart';
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/cache/last_result_cache.dart';
@@ -284,19 +285,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
         ..invalidateUserEvents(widget.userId)
         ..invalidateNearbyCommunity();
     }
-    // Pull-to-refresh must re-read WHERE THE USER IS before reloading anything,
-    // otherwise every section below is recomputed against a stale stored
-    // position (distances, people nearby, country filtering).
-    //
-    // Traveler mode wins over GPS: refreshIfAllowed skips the GPS read entirely
-    // while traveler mode is active, because `effectiveLocation` already points
-    // at the traveler location. When the user comes back OUT of traveler mode
-    // this is what finally refreshes their real position.
-    if (forceRefresh) {
-      await LocationRefreshService().refreshIfAllowed(
-        widget.userId,
-        isTravelerActive: _me?.isTravelerActive ?? false,
-      );
+    // First open after sign-in / app open: wait (bounded — web only, see
+    // LocationRefreshService.defaultSessionBudget) for the session location
+    // refresh, so the location-based sections below start from the NEW
+    // position instead of the stored one. A refresh that lands later is
+    // picked up by the profile listener ([_watchLocation]), which reloads the
+    // location-based sections once. (Pull-to-refresh already refreshed the
+    // location before calling this — see [_onPullToRefresh].)
+    if (!forceRefresh) {
+      await LocationRefreshService.awaitSessionRefresh(widget.userId);
     }
     // Reload the profile AFTER the location write so effectiveLocation, and
     // every section that derives from it, sees the new position.
@@ -312,6 +309,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     } else {
       await _loadProfile();
     }
+    // The sections below are computed for this position.
+    _sectionsAnchor = _currentAnchor;
     // Now that traveler state is known, follow any later change to it.
     _watchLocation();
     // Paint what the user saw last time (by id, from the local cache) while the
@@ -349,14 +348,68 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// snapshot listener can't be relied on for this: when this read lands first
   /// it already sees the new values and treats the change as nothing).
   Future<void> _refreshProfileFromServer() async {
-    final before = (_city, _countryName, _userLat, _userLng, _travelerActive);
     await _loadProfile();
     if (!mounted) return;
-    if (before != (_city, _countryName, _userLat, _userLng, _travelerActive)) {
-      unawaited(_loadEventCarousels());
-      unawaited(_loadAroundYou());
-      unawaited(_loadCommunities());
-      unawaited(_loadTopExperiences());
+    _maybeReloadLocationSections();
+  }
+
+  /// The position (and traveler state) the location-based sections were last
+  /// loaded for. Compared with [isMeaningfulLocationChange] so the cache-first
+  /// server re-read, the profile listener and a late session location refresh
+  /// trigger at most ONE reload per real move.
+  ({LocationPoint point, bool travelling})? _sectionsAnchor;
+
+  ({LocationPoint point, bool travelling}) get _currentAnchor => (
+        point: LocationPoint(
+            lat: _userLat, lng: _userLng, city: _city, country: _countryName),
+        travelling: _travelerActive,
+      );
+
+  /// True while a pull-to-refresh is deciding / reloading: it reloads the
+  /// whole page itself when the location changed, so the listener must not.
+  bool _pullRefreshing = false;
+
+  /// Reloads the location-based sections when the current position differs
+  /// meaningfully from the one they were loaded for (or traveler mode
+  /// toggled). Section order / content rules are unchanged.
+  void _maybeReloadLocationSections() {
+    if (_pullRefreshing) return;
+    final anchor = _sectionsAnchor;
+    final now = _currentAnchor;
+    if (anchor != null &&
+        anchor.travelling == now.travelling &&
+        !isMeaningfulLocationChange(anchor.point, now.point)) {
+      return;
+    }
+    _sectionsAnchor = now;
+    unawaited(_loadEventCarousels());
+    unawaited(_loadFeaturedAttractions());
+    unawaited(_loadAroundYou(forceRefresh: true));
+    unawaited(_loadRecommended());
+    unawaited(_loadBusinesses());
+    unawaited(_loadCommunities());
+    unawaited(_loadTopExperiences());
+  }
+
+  /// Pull-to-refresh: refresh the location first (bounded) and reload the
+  /// page ONLY when it actually changed; otherwise keep the current data and
+  /// end the refresh at once. A refresh that times out but lands later is
+  /// handled by the profile listener ([_maybeReloadLocationSections]).
+  Future<void> _onPullToRefresh() async {
+    _pullRefreshing = true;
+    try {
+      await reloadIfLocationChanged(
+        refreshLocation: () => LocationRefreshService().refreshIfAllowed(
+          widget.userId,
+          // Traveler mode wins over GPS (the refresh is skipped): the
+          // travel location is what Explore follows.
+          isTravelerActive: _travelerActive,
+          fixTimeout: const Duration(seconds: 5),
+        ),
+        reload: () => _load(forceRefresh: true),
+      );
+    } finally {
+      _pullRefreshing = false;
     }
   }
 
@@ -688,9 +741,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// proceeds when location permission has ALREADY been granted, and it never
   /// prompts.
   void _watchLocation() {
+    // Reuses the session refresh started at sign-in / app open (or the
+    // pull-to-refresh one) instead of a second GPS read.
     unawaited(LocationRefreshService().refreshIfAllowed(
       widget.userId,
       isTravelerActive: _travelerActive,
+      maxAge: const Duration(minutes: 2),
     ));
 
     // Re-subscribing on every pull-to-refresh used to leak the old listener.
@@ -723,9 +779,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final lat = (loc?['latitude'] as num?)?.toDouble();
       final lng = (loc?['longitude'] as num?)?.toDouble();
 
-      if (city == _city &&
-          country == _countryName &&
-          travelling == _travelerActive) {
+      // Same shared rule as the location refresh: jitter below the
+      // threshold in the same city is not a move.
+      if (travelling == _travelerActive &&
+          !isMeaningfulLocationChange(
+            LocationPoint(
+                lat: _userLat, lng: _userLng, city: _city, country: _countryName),
+            LocationPoint(lat: lat, lng: lng, city: city, country: country),
+          )) {
         return;
       }
       // "People around you" queries around the parsed profile's location, so it
@@ -742,10 +803,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
         if (lat != null) _userLat = lat;
         if (lng != null) _userLng = lng;
       });
-      // The city drives these sections, so re-resolve them against the new one.
-      unawaited(_loadAroundYou());
-      unawaited(_loadCommunities());
-      unawaited(_loadTopExperiences());
+      // The position drives the location-based sections: reload them once.
+      _maybeReloadLocationSections();
     });
   }
 
@@ -1809,7 +1868,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
             backgroundColor: AppColors.backgroundCard,
             // Swipe down to force-refresh the whole Explore feed with fresh
             // server data (bypasses the people-pool cache on refresh).
-            onRefresh: () => _load(forceRefresh: true),
+            onRefresh: _onPullToRefresh,
             child: CustomScrollView(
               // AlwaysScrollable so the pull-to-refresh works even when the
               // content doesn't fill the screen.

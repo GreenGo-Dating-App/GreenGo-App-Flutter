@@ -15898,4 +15898,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String bkRefundIfPaid(String percent, String amount) {
     return 'Wenn du bereits bezahlt hast, schuldet dir der Gastgeber $percent ($amount).';
   }
+
+  @override
+  String get shareLinkCopied => 'Link in die Zwischenablage kopiert';
+
+  @override
+  String shareOtherProfileMessage(String name, String link) {
+    return 'Lerne $name auf GreenGo kennen: $link';
+  }
 }

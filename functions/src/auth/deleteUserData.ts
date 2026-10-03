@@ -38,6 +38,7 @@ import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
 import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetention';
+import { enqueueFollowGraphCleanup } from '../social/followCleanup';
 
 /** Top-level collections whose document id IS the user id. */
 const USER_KEYED_COLLECTIONS = [
@@ -168,6 +169,17 @@ export const onUserDeletedCleanup = functions
         report.failures.push(`${collection}/${uid}`);
         logError(`onUserDeletedCleanup: ${collection}/${uid} failed`, e);
       }
+    }
+
+    // 1b. Follow graph, both directions. Also queued by onProfileDeleted, but
+    //     an account whose profile doc was already gone (or never written)
+    //     would never fire that trigger. One job per uid, so this is a no-op
+    //     when it is already queued.
+    try {
+      await enqueueFollowGraphCleanup(db, uid);
+    } catch (e) {
+      report.failures.push('follow_graph');
+      logError(`onUserDeletedCleanup: follow-graph cleanup enqueue for ${uid} failed`, e);
     }
 
     // 2. Documents owned via a field.

@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.backfillFollowCounts = exports.onUserFollowDeleted = exports.onUserFollowCreated = void 0;
+exports.backfillFollowCounts = exports.onFollowCleanupJob = exports.onUserFollowDeleted = exports.onUserFollowCreated = void 0;
 /**
  * User follow graph — authoritative follower / following counters.
  *
@@ -50,12 +50,14 @@ exports.backfillFollowCounts = exports.onUserFollowDeleted = exports.onUserFollo
  * (The legacy `followerCount` stays client-writable for old app versions but
  * is no longer read by the app.)
  *
- * Exactly-once counting: the create trigger marks the edge `counted: true` in
- * the same transaction that increments the counters, and the delete trigger
- * only decrements an edge whose deleted snapshot carries `counted: true`. So a
- * retried create never double-counts, an edge deleted before it was counted is
- * never decremented, and legacy edges (created before this shipped) only move
- * the counters once `backfillFollowCounts` has counted them.
+ * Exactly-once counting (see followCounters.ts): the create trigger marks the
+ * edge `counted: true` in the same transaction that increments the counters,
+ * and the delete trigger only decrements an edge whose deleted snapshot
+ * carries `counted: true`, claiming the delete event id so a retry never
+ * decrements twice. Both triggers RETRY (a dropped event used to leave the
+ * counters off by one forever). Legacy edges (created before this shipped)
+ * only move the counters once `backfillFollowCounts` (or
+ * scripts/recount_follow_counters.js) has counted them.
  *
  * Blocks: an edge between users who have blocked each other (either way) is
  * removed uncounted and nobody is notified.
@@ -67,23 +69,16 @@ const monitoring_1 = require("../shared/monitoring");
 const pushRuntime_1 = require("../shared/pushRuntime");
 const notifyHelpers_1 = require("../notifications/notifyHelpers");
 require("../shared/firebaseAdmin");
+const followCounters_1 = require("./followCounters");
+const followCleanup_1 = require("./followCleanup");
 const db = admin.firestore();
 const FieldValue = admin.firestore.FieldValue;
 const EDGE_PATH = 'business_followers/{followeeId}/followers/{followerId}';
-function edgeRef(followeeId, followerId) {
-    return db
-        .collection('business_followers')
-        .doc(followeeId)
-        .collection('followers')
-        .doc(followerId);
-}
-function mirrorRef(followerId, followeeId) {
-    return db
-        .collection('user_business_following')
-        .doc(followerId)
-        .collection('businesses')
-        .doc(followeeId);
-}
+const deps = { db, increment: (n) => FieldValue.increment(n) };
+const edgeRef = (followeeId, followerId) => (0, followCounters_1.edgeRef)(db, followeeId, followerId);
+const mirrorRef = (followerId, followeeId) => (0, followCounters_1.mirrorRef)(db, followerId, followeeId);
+/** Notifications for a follow older than this are not sent (late retries). */
+const NOTIFY_MAX_AGE_MS = 60 * 60 * 1000;
 /** True when either user has blocked the other (bounded: 2 x limit(1)). */
 async function isBlockedEitherWay(a, b) {
     try {
@@ -105,44 +100,7 @@ async function isBlockedEitherWay(a, b) {
         return false; // fail open: a lookup hiccup must not eat a real follow
     }
 }
-/**
- * Count ONE edge exactly once. Returns true when this call did the counting.
- * Profiles that do not exist (deleted accounts) are skipped instead of being
- * resurrected as counter-only stubs.
- */
-async function countEdge(followeeId, followerId) {
-    const followeeRef = db.collection('profiles').doc(followeeId);
-    const followerRef = db.collection('profiles').doc(followerId);
-    // Existence pre-check OUTSIDE the transaction, so a popular followee's
-    // profile is never a transactional read (no lock contention on hot docs).
-    const [followee, follower] = await Promise.all([followeeRef.get(), followerRef.get()]);
-    const ref = edgeRef(followeeId, followerId);
-    return db.runTransaction(async (txn) => {
-        var _a;
-        const edge = await txn.get(ref);
-        if (!edge.exists || ((_a = edge.data()) === null || _a === void 0 ? void 0 : _a.counted) === true)
-            return false;
-        txn.update(ref, { counted: true });
-        if (followee.exists) {
-            txn.update(followeeRef, { followersCount: FieldValue.increment(1) });
-        }
-        if (follower.exists) {
-            txn.update(followerRef, { followingCount: FieldValue.increment(1) });
-        }
-        return true;
-    });
-}
-/** Decrement a counter on [ref] by one, never below zero; no-op if missing. */
-async function decrementClamped(ref, field) {
-    await db.runTransaction(async (txn) => {
-        var _a;
-        const snap = await txn.get(ref);
-        if (!snap.exists)
-            return;
-        const current = Number((_a = snap.get(field)) !== null && _a !== void 0 ? _a : 0);
-        txn.update(ref, { [field]: Math.max(0, (Number.isFinite(current) ? current : 0) - 1) });
-    });
-}
+const countEdge = (followeeId, followerId) => (0, followCounters_1.countEdge)(deps, followeeId, followerId);
 /** Claim a permanent dedup key (true = first time). */
 async function claimOnce(key) {
     try {
@@ -154,13 +112,22 @@ async function claimOnce(key) {
     }
 }
 // ── Follow created → count + notify the followee ────────────────────────────
-exports.onUserFollowCreated = (0, firestore_1.onDocumentCreated)({ document: EDGE_PATH, memory: pushRuntime_1.PUSH_MEMORY }, (0, monitoring_1.monitored)('onUserFollowCreated', async (event) => {
+exports.onUserFollowCreated = (0, firestore_1.onDocumentCreated)(
+// retry: a dropped event (cold-start crash, contention) used to leave the
+// counters permanently off by one. Safe: counting is flag-guarded and the
+// notification is claimed once.
+{ document: EDGE_PATH, memory: pushRuntime_1.PUSH_MEMORY, retry: true }, (0, monitoring_1.monitored)('onUserFollowCreated', async (event) => {
     var _a;
     const followeeId = event.params.followeeId;
     const followerId = event.params.followerId;
     if (!followeeId || !followerId)
         return;
-    if (followeeId === followerId || (await isBlockedEitherWay(followeeId, followerId))) {
+    // A follow of a deleted account (stale client) would only inflate the
+    // follower's followingCount for a ghost: remove it uncounted.
+    const followeeGone = !(await db.collection('profiles').doc(followeeId).get()).exists;
+    if (followeeGone ||
+        followeeId === followerId ||
+        (await isBlockedEitherWay(followeeId, followerId))) {
         // Remove the edge UNCOUNTED (its delete trigger sees no `counted` flag).
         await Promise.all([
             edgeRef(followeeId, followerId).delete().catch(() => undefined),
@@ -170,6 +137,9 @@ exports.onUserFollowCreated = (0, firestore_1.onDocumentCreated)({ document: EDG
     }
     const counted = await countEdge(followeeId, followerId);
     if (!counted)
+        return;
+    const ageMs = Date.now() - Date.parse(event.time || '');
+    if (Number.isFinite(ageMs) && ageMs > NOTIFY_MAX_AGE_MS)
         return;
     // Business accounts are notified by onBusinessFollowed ('business_follow');
     // everyone else gets a 'new_follower'. Once per follower → followee, ever,
@@ -195,16 +165,66 @@ exports.onUserFollowCreated = (0, firestore_1.onDocumentCreated)({ document: EDG
     });
 }));
 // ── Follow deleted → decrement (only edges that were counted) ───────────────
-exports.onUserFollowDeleted = (0, firestore_1.onDocumentDeleted)({ document: EDGE_PATH, memory: pushRuntime_1.PUSH_MEMORY }, (0, monitoring_1.monitored)('onUserFollowDeleted', async (event) => {
+// Decrements BOTH sides: the followee's followersCount and the follower's
+// followingCount, exactly once per delete event (event-id marker), never
+// below zero.
+exports.onUserFollowDeleted = (0, firestore_1.onDocumentDeleted)({ document: EDGE_PATH, memory: pushRuntime_1.PUSH_MEMORY, retry: true }, (0, monitoring_1.monitored)('onUserFollowDeleted', async (event) => {
     var _a, _b;
     const followeeId = event.params.followeeId;
     const followerId = event.params.followerId;
-    if (((_b = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data()) === null || _b === void 0 ? void 0 : _b.counted) !== true)
+    if (!followeeId || !followerId)
         return;
-    await Promise.all([
-        decrementClamped(db.collection('profiles').doc(followeeId), 'followersCount'),
-        decrementClamped(db.collection('profiles').doc(followerId), 'followingCount'),
-    ]);
+    const wasCounted = ((_b = (_a = event.data) === null || _a === void 0 ? void 0 : _a.data()) === null || _b === void 0 ? void 0 : _b.counted) === true;
+    await (0, followCounters_1.uncountEdge)(deps, event.id, followeeId, followerId, wasCounted);
+    // Keep the mirror in step with the canonical edge (a client that deleted
+    // only the edge, or a server-side edge removal, must not leave a ghost in
+    // the follower's "Following" list).
+    // Transactional so a quick re-follow (edge re-created) keeps its mirror.
+    const edge = edgeRef(followeeId, followerId);
+    const mirror = mirrorRef(followerId, followeeId);
+    await db
+        .runTransaction(async (txn) => {
+        const [e, m] = await Promise.all([txn.get(edge), txn.get(mirror)]);
+        if (!e.exists && m.exists)
+            txn.delete(mirror);
+    })
+        .catch(() => undefined);
+}));
+// ── Account deleted → remove its follow graph in BOTH directions ────────────
+// A job doc `follow_cleanup_jobs/{uid}` is created by onProfileDeleted and by
+// onUserDeletedCleanup (one job per uid). Each run removes pages of edges
+// under a deadline; if work is left it bumps `round`, which re-fires this
+// trigger, so an account with millions of followers is drained in bounded
+// steps. Counters of the OTHER side are adjusted by onUserFollowDeleted.
+const CLEANUP_MAX_ROUNDS = 2000;
+const CLEANUP_BUDGET_MS = 420000; // under the 540 s timeout
+exports.onFollowCleanupJob = (0, firestore_1.onDocumentWritten)({
+    document: `${followCleanup_1.FOLLOW_CLEANUP_JOBS}/{uid}`,
+    memory: '512MiB',
+    timeoutSeconds: 540,
+    retry: true,
+}, (0, monitoring_1.monitored)('onFollowCleanupJob', async (event) => {
+    var _a, _b;
+    const after = (_a = event.data) === null || _a === void 0 ? void 0 : _a.after;
+    if (!(after === null || after === void 0 ? void 0 : after.exists))
+        return; // job finished (deleted)
+    const uid = event.params.uid;
+    const round = Number((_b = after.get('round')) !== null && _b !== void 0 ? _b : 0);
+    if (round > CLEANUP_MAX_ROUNDS) {
+        console.error('onFollowCleanupJob: giving up after max rounds', uid, round);
+        return;
+    }
+    const r = await (0, followCleanup_1.removeFollowGraphRound)(deps, uid, {
+        deadlineMs: Date.now() + CLEANUP_BUDGET_MS,
+    });
+    if (r.done) {
+        await after.ref.delete();
+        console.log(`onFollowCleanupJob: done for ${uid} (round ${round})`);
+        return;
+    }
+    // More to do: the write re-fires this trigger. merge-set (not update) so a
+    // retried, late event never throws on an already-finished job.
+    await after.ref.set({ round: round + 1, lastRunAt: new Date(), lastRemoved: r.asFollower + r.asFollowee }, { merge: true });
 }));
 /**
  * Admin-only, resumable backfill: counts every legacy edge that predates the

@@ -17,11 +17,14 @@ import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetention';
+import { enqueueFollowGraphCleanup } from '../social/followCleanup';
 
 const db = admin.firestore();
 
 export const onProfileDeleted = onDocumentDeleted(
-  'profiles/{uid}',
+  // 512MiB: at the 256MiB default the instance can be OOM-killed while loading
+  // the bundle, and this (non-retried) event would be dropped silently.
+  { document: 'profiles/{uid}', memory: '512MiB', timeoutSeconds: 540 },
   monitored('onProfileDeleted', async (event) => {
     const uid = event.params.uid as string;
     if (!uid) return;
@@ -81,40 +84,22 @@ export const onProfileDeleted = onDocumentDeleted(
       // Event likes may not carry a userId field on all docs — best-effort.
     }
 
-    // 3) Business graph — the businesses this user FOLLOWS (via the mirror index
-    //    user_business_following/{uid}/businesses), decrement each business's
-    //    followerCount and delete both edges.
+    // 3) Follow graph — BOTH directions (edges where this user follows someone
+    //    and edges where someone follows this user, plus both mirrors). Queued
+    //    as a bounded, self-continuing job (social/followCleanup.ts) so an
+    //    account with millions of followers cannot time this trigger out. The
+    //    other side's followersCount / followingCount is decremented exactly
+    //    once by onUserFollowDeleted as each counted edge is deleted.
     try {
-      const following = await db
-        .collection('user_business_following')
-        .doc(uid)
-        .collection('businesses')
-        .get();
-      for (const d of following.docs) {
-        const businessId = d.id;
-        const b = db.batch();
-        b.delete(d.ref);
-        b.delete(
-          db
-            .collection('business_followers')
-            .doc(businessId)
-            .collection('followers')
-            .doc(uid),
-        );
-        b.update(db.collection('profiles').doc(businessId), {
-          followerCount: admin.firestore.FieldValue.increment(-1),
-        });
-        await b.commit();
-      }
-      await db.collection('user_business_following').doc(uid).delete();
+      await enqueueFollowGraphCleanup(db, uid);
     } catch (e) {
-      console.error('onProfileDeleted: business-follow cleanup failed', uid, e);
+      console.error('onProfileDeleted: follow-graph cleanup enqueue failed', uid, e);
     }
 
-    // 4) If the user WAS a business, remove its follower/rating/lead trees.
+    // 4) If the user WAS a business, remove its rating/lead trees (its follower
+    //    edges are handled by the follow-graph job above, mirrors included).
     try {
       for (const path of [
-        `business_followers/${uid}`,
         `business_ratings/${uid}`,
         `business_leads/${uid}`,
       ]) {

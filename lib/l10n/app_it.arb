@@ -5199,5 +5199,7 @@
   "bkErrReasonRequired": "Descrivi il problema (almeno {min} caratteri).",
   "uexpDatesRequiredHint": "Gli ospiti possono prenotare solo le date che imposti e ogni prenotazione è una richiesta che accetti o rifiuti. Aggiungi almeno una data futura per pubblicare.",
   "uexpDatesRequiredToPublish": "Aggiungi almeno una data futura per pubblicare. La tua esperienza è salvata come bozza.",
-  "bkRefundIfPaid": "Se hai già pagato, l'host ti deve restituire {percent} ({amount})."
+  "bkRefundIfPaid": "Se hai già pagato, l'host ti deve restituire {percent} ({amount}).",
+  "shareLinkCopied": "Link copiato negli appunti",
+  "shareOtherProfileMessage": "Scopri {name} su GreenGo: {link}"
 }

@@ -299,8 +299,10 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
             gesture: TourGesture.tap,
             child: TabBar(
               controller: _tabController,
-              isScrollable: true,
-              tabAlignment: TabAlignment.start,
+              // Full width like the Events page: the three tabs share it
+              // equally; long translations scale down instead of overflowing.
+              isScrollable: false,
+              tabAlignment: TabAlignment.fill,
               indicatorColor: AppColors.richGold,
               labelColor: AppColors.richGold,
               unselectedLabelColor: AppColors.textTertiary,
@@ -309,9 +311,17 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                 fontSize: 14,
               ),
               tabs: [
-                Tab(text: AppLocalizations.of(context)!.communitiesTabDiscover),
-                Tab(text: AppLocalizations.of(context)!.communitiesTabJoined),
-                Tab(text: AppLocalizations.of(context)!.communitiesTabManaged),
+                for (final label in [
+                  AppLocalizations.of(context)!.communitiesTabDiscover,
+                  AppLocalizations.of(context)!.communitiesTabJoined,
+                  AppLocalizations.of(context)!.communitiesTabManaged,
+                ])
+                  Tab(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(label, maxLines: 1),
+                    ),
+                  ),
               ],
             ),
           ),
