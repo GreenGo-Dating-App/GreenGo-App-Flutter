@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../attractions/data/datasources/attractions_datasource.dart';
@@ -123,7 +124,6 @@ class ExploreScreen extends StatefulWidget {
 
 class _ExploreScreenState extends State<ExploreScreen> {
   // Last-resort default only — real city/country is loaded from the profile.
-  static const String _defaultCity = 'Lisbon';
 
   /// Featured events/attractions are elected only from those within this many
   /// kilometres of the user (when the user has a known location). Adjustable.
@@ -286,6 +286,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   @override
   void initState() {
     super.initState();
+    _seedPlaceFromOwnProfile();
     // G0 perf traces: screen-open (stopped on first frame) + feed-load (stopped
     // when the initial content resolves). No-op in debug (release-only perf).
     final perf = di.sl<PerformanceMonitoringService>();
@@ -2024,10 +2025,34 @@ class _ExploreScreenState extends State<ExploreScreen> {
     );
   }
 
-  String get _displayCity {
+  /// The place in the headline, or null while it is not known yet (the
+  /// headline then reads just "Explore" — never a made-up city).
+  String? get _displayCity {
     if (_city != null && _city!.isNotEmpty) return _city!;
     if (_countryName != null && _countryName!.isNotEmpty) return _countryName!;
-    return _defaultCity;
+    return null;
+  }
+
+  /// Seeds the headline place from the own profile the app already holds
+  /// (OwnProfileStore, fed by the shell's live listener) so the real city is
+  /// there on the first frame; the profile load below then confirms it.
+  void _seedPlaceFromOwnProfile() {
+    final store = OwnProfileStore.instance;
+    final data = store.uid == widget.userId ? store.raw : null;
+    if (data == null) return;
+    Map<String, dynamic>? loc = (data['location'] as Map?)?.cast<String, dynamic>();
+    final expiryRaw = data['travelerExpiry'];
+    final expiry = expiryRaw is Timestamp ? expiryRaw.toDate() : null;
+    if (data['isTraveler'] == true &&
+        expiry != null &&
+        expiry.isAfter(DateTime.now())) {
+      final t = (data['travelerLocation'] as Map?)?.cast<String, dynamic>();
+      if (t != null) loc = t;
+    }
+    final city = (loc?['city'] as String?)?.trim();
+    final country = (loc?['country'] as String?)?.trim();
+    if (city != null && city.isNotEmpty) _city = city;
+    if (country != null && country.isNotEmpty) _countryName = country;
   }
 
   /// The user's first name (first word of their display name), or null.
@@ -2256,7 +2281,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
         const SizedBox(height: 8),
         Text(
-          l10n.exploreHeadline(_displayCity),
+          _displayCity == null
+              ? l10n.exploreTitle
+              : l10n.exploreHeadline(_displayCity!),
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(
