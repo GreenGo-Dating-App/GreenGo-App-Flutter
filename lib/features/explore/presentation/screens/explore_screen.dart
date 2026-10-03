@@ -418,6 +418,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         List<ImageProvider> Function(int fit) images,
         double cardWidth,
         double gap,
+        bool always,
       })> _gatedSections(BuildContext context) {
     bool done(String name) => _contentDone.contains(name);
     ImageProvider? fade(String? url) => url == null || url.isEmpty
@@ -435,6 +436,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     return [
       (
         ready: done('carousels') || _luxuryEvents != null,
+        always: true,
         items: _luxuryEvents,
         height: _kSectionHeader + _LuxuryEventCard.cardHeight,
         cardWidth: _LuxuryEventCard.cardWidth,
@@ -444,6 +446,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       (
         ready: done('attractions') || _featuredAttractions != null,
+        always: true,
         items: _featuredAttractions,
         height: _kSectionHeader - 8 + _FeaturedCard.cardHeight,
         cardWidth: _FeaturedCard.cardWidth,
@@ -453,6 +456,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       (
         ready: done('topExperiences') || _topExperiences != null,
+        always: true,
         items: _topExperiences,
         height: _kSectionHeader + TopExperiencesSection.cardHeight,
         cardWidth: TopExperiencesSection.cardWidth,
@@ -470,6 +474,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       (
         ready: done('myEvents') || _myEvents != null,
+        always: false,
         items: _myEvents,
         height: _kSectionHeader + _HappeningCard.cardHeight,
         cardWidth: _HappeningCard.cardWidth,
@@ -478,6 +483,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       (
         ready: done('communities') || _communities != null,
+        always: false,
         items: _communities,
         height: _kSectionHeader + _CommunityCard.cardHeight,
         cardWidth: _CommunityCard.cardWidth,
@@ -488,6 +494,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       // People rows come here once the gate is open.
       (
         ready: done('businesses') || _businesses != null,
+        always: false,
         items: _businesses,
         height: _kSectionHeader + _BusinessCard.cardHeight,
         cardWidth: _BusinessCard.cardWidth,
@@ -497,6 +504,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       (
         ready: done('carousels') || _communityEvents != null,
+        always: false,
         items: _communityEvents,
         height: _kSectionHeader + _HappeningCard.cardHeight,
         cardWidth: _HappeningCard.cardWidth,
@@ -517,7 +525,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final out = <ImageProvider>[];
     var y = _kHeaderEstimate;
     for (final s in _gatedSections(context)) {
-      if (y >= size.height) break; // below the fold: not gated
+      // Featured community events, featured attractions and top experiences
+      // always appear together; other sections only hold the gate when they
+      // start inside the first viewport.
+      if (!s.always && y >= size.height) break;
       if (!s.ready) return null;
       final items = s.items;
       if (items == null || items.isEmpty) continue; // hidden, no space
