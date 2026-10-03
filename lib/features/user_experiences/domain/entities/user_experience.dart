@@ -149,6 +149,8 @@ class UserExperience extends Equatable {
     this.moderationReason,
     this.isFeatured = false,
     this.featuredUntil,
+    this.communityId,
+    this.communityName,
   });
 
   final String id;
@@ -235,6 +237,14 @@ class UserExperience extends Equatable {
   final bool isFeatured;
   final DateTime? featuredUntil;
 
+  /// Server-owned link to the community it was posted in (set only at
+  /// creation by createUserExperience; immutable — never in
+  /// editablePayload). [communityName] is the denormalised display name.
+  final String? communityId;
+  final String? communityName;
+
+  bool get isInCommunity => (communityId ?? '').isNotEmpty;
+
   /// Featured right now: [isFeatured] and [featuredUntil] not yet passed.
   bool isCurrentlyFeaturedAt(DateTime now) =>
       isFeatured && featuredUntil != null && featuredUntil!.isAfter(now);
@@ -300,6 +310,8 @@ class UserExperience extends Equatable {
         moderationReason: moderationReason,
         isFeatured: isFeatured,
         featuredUntil: featuredUntil,
+        communityId: communityId,
+        communityName: communityName,
       );
 
   UserExperience copyWith({
@@ -356,6 +368,8 @@ class UserExperience extends Equatable {
         moderationReason: moderationReason,
         isFeatured: isFeatured,
         featuredUntil: featuredUntil,
+        communityId: communityId,
+        communityName: communityName,
       );
 
   @override
@@ -404,5 +418,7 @@ class UserExperience extends Equatable {
         moderationReason,
         isFeatured,
         featuredUntil,
+        communityId,
+        communityName,
       ];
 }

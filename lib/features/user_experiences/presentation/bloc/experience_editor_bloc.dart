@@ -141,5 +141,7 @@ class ExperienceEditorBloc
         status: x.status,
         createdAt: DateTime.now(),
         updatedAt: DateTime.now(),
+        communityId: x.communityId,
+        communityName: x.communityName,
       );
 }

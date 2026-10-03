@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/compact_count.dart';
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/external_event.dart';
 
@@ -9,6 +11,26 @@ import '../../domain/entities/external_event.dart';
 int eventsGridColumns(BuildContext context) {
   final w = MediaQuery.of(context).size.width;
   return w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
+}
+
+/// Decode width (physical px) of a partner tile image laid out [cols] per
+/// row (1 = the full-width list card). Shared by [_img] and
+/// [externalEventImageProvider] so a first-screen precache hits the SAME
+/// ImageCache entry the tile paints.
+int externalEventMemCacheWidth(BuildContext context, int cols) {
+  final mq = MediaQuery.of(context);
+  return (mq.size.width / cols * mq.devicePixelRatio).round();
+}
+
+/// The exact provider [ExternalEventGridTile] ([grid]) / [ExternalEventCard]
+/// paints for [e], or null when it has no image.
+ImageProvider? externalEventImageProvider(BuildContext context, ExternalEvent e,
+    {required bool grid}) {
+  final url = e.imageUrl;
+  if (url == null || url.isEmpty) return null;
+  return cachedNetworkImageProvider(url,
+      memCacheWidth: externalEventMemCacheWidth(
+          context, grid ? eventsGridColumns(context) : 1));
 }
 
 /// Small gold "Partner" pill marking third-party (ticketmaster / viator)
@@ -108,12 +130,11 @@ Widget _imgPlaceholder(ExternalEvent e, double height) {
 /// Disk-cached image decoded at the tile's on-screen width ([cols] per row).
 Widget _img(BuildContext context, ExternalEvent e, double height, int cols) {
   if (e.imageUrl != null && e.imageUrl!.isNotEmpty) {
-    final mq = MediaQuery.of(context);
     return CachedNetworkImage(
       imageUrl: e.imageUrl!,
       height: height,
       width: double.infinity,
-      memCacheWidth: (mq.size.width / cols * mq.devicePixelRatio).round(),
+      memCacheWidth: externalEventMemCacheWidth(context, cols),
       fit: BoxFit.cover,
       placeholder: (c, _) => Container(
         height: height,
@@ -276,15 +297,20 @@ class ExternalEventGridTile extends StatelessWidget {
     required this.event,
     required this.onTap,
     this.showPartnerBadge = false,
+    this.showReviewCount = false,
   });
 
   final ExternalEvent event;
   final VoidCallback onTap;
   final bool showPartnerBadge;
 
+  /// Append the review count to the rating ("★ 4.7 (5.3k)") when known.
+  final bool showReviewCount;
+
   @override
   Widget build(BuildContext context) {
     final e = event;
+    final reviews = e.reviewCount ?? 0;
     return GestureDetector(
       onTap: onTap,
       child: ClipRRect(
@@ -355,6 +381,15 @@ class ExternalEventGridTile extends StatelessWidget {
                           Text('${e.rating}',
                               style: const TextStyle(
                                   color: AppColors.textTertiary, fontSize: 10)),
+                          if (showReviewCount && reviews > 0)
+                            Flexible(
+                              child: Text(' (${formatCompactCount(reviews)})',
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                      color: AppColors.textTertiary,
+                                      fontSize: 10)),
+                            ),
                           const Spacer(),
                         ],
                         if (e.fromPrice != null)

@@ -14,6 +14,7 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/platform/web_media.dart';
@@ -1231,7 +1232,31 @@ class _EventsScreenState extends State<EventsScreen>
     );
   }
 
+  /// Community / My events list: the first screen appears in one go (its
+  /// covers decoded first, capped — see [FirstScreenGate]).
   Widget _buildEventsList(List<Event> events) {
+    return FirstScreenGate(
+      ready: true,
+      images: (context, viewport) {
+        final count = _gridView
+            ? firstScreenGridCount(
+                viewport: viewport,
+                columns: _gridColumns(context),
+                childAspectRatio: 0.7)
+            : firstScreenListCount(
+                viewportHeight: viewport.height, itemExtent: 330);
+        return events
+            .take(count)
+            .map((e) => eventCoverImageProvider(context, e, grid: _gridView))
+            .whereType<ImageProvider>()
+            .toList();
+      },
+      placeholder: _buildTabSpinner(),
+      builder: (_) => _buildEventsListBody(events),
+    );
+  }
+
+  Widget _buildEventsListBody(List<Event> events) {
     if (events.isEmpty) return _buildNoEventsState();
 
     return RefreshIndicator(
@@ -1290,10 +1315,8 @@ class _EventsScreenState extends State<EventsScreen>
                         imageUrl: event.imageUrl!,
                         fit: BoxFit.cover,
                         // Decode at tile size (disk-cached across sessions).
-                        memCacheWidth: (MediaQuery.of(context).size.width /
-                                _gridColumns(context) *
-                                MediaQuery.of(context).devicePixelRatio)
-                            .round(),
+                        memCacheWidth:
+                            eventCoverMemCacheWidth(context, grid: true),
                         placeholder: (_, __) =>
                             Container(color: AppColors.backgroundInput),
                         errorWidget: (_, __, ___) => Container(
@@ -1583,6 +1606,13 @@ class _EventsScreenState extends State<EventsScreen>
           ? (a, b) => compareNearestThenSoonest(a.key, b.key)
           : (a, b) => compareSoonestThenNearest(a.key, b.key),
       gridView: _gridView,
+      // First screen in one go: covers of the first viewport decoded first.
+      firstScreenImage: (context, x, grid, _) {
+        final e = x.community;
+        return e != null
+            ? eventCoverImageProvider(context, e, grid: grid)
+            : externalEventImageProvider(context, x.partner!, grid: grid);
+      },
       itemBuilder: (context, x, grid) {
         final e = x.community;
         if (e != null) {
@@ -1800,6 +1830,26 @@ void _logSavedEventLead(Event event, String uid) {
   );
 }
 
+/// Decode width (physical px) of a community event cover: the grid tile
+/// ([grid], one of [eventsGridColumns] per row) or the full-width [EventCard].
+/// Shared by the tiles and [eventCoverImageProvider] so a first-screen
+/// precache hits the SAME ImageCache entry the tile paints.
+int eventCoverMemCacheWidth(BuildContext context, {required bool grid}) {
+  final mq = MediaQuery.of(context);
+  final cols = grid ? eventsGridColumns(context) : 1;
+  return (mq.size.width / cols * mq.devicePixelRatio).round();
+}
+
+/// The exact provider the grid tile ([grid]) / [EventCard] paints for [e]'s
+/// cover, or null when it has none.
+ImageProvider? eventCoverImageProvider(BuildContext context, Event e,
+    {required bool grid}) {
+  final url = e.imageUrl;
+  if (url == null || url.isEmpty) return null;
+  return cachedNetworkImageProvider(url,
+      memCacheWidth: eventCoverMemCacheWidth(context, grid: grid));
+}
+
 /// Small status/recurrence badges shown on cards & tiles: Draft / Scheduled /
 /// Recurring. Only the organizer ever sees draft & scheduled events, so these
 /// double as "not yet public" markers.
@@ -1983,9 +2033,8 @@ class EventCard extends StatelessWidget {
                         ? CachedNetworkImage(
                             imageUrl: event.imageUrl!,
                             fit: BoxFit.cover,
-                            memCacheWidth: (MediaQuery.of(context).size.width *
-                                    MediaQuery.of(context).devicePixelRatio)
-                                .round(),
+                            memCacheWidth:
+                                eventCoverMemCacheWidth(context, grid: false),
                             errorWidget: (_, __, ___) => const Icon(
                               Icons.event,
                               size: 60,

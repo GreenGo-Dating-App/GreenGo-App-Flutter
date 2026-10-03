@@ -4620,5 +4620,8 @@
   "uexpDatesRequiredToPublish": "Ajoutez au moins une date à venir pour publier. Votre expérience est enregistrée comme brouillon.",
   "bkRefundIfPaid": "Si vous avez déjà payé, l'hôte vous doit {percent} ({amount}).",
   "shareLinkCopied": "Lien copié dans le presse-papiers",
-  "shareOtherProfileMessage": "Découvre {name} sur GreenGo : {link}"
+  "shareOtherProfileMessage": "Découvre {name} sur GreenGo : {link}",
+  "communitiesExperiencesEmpty": "Aucune expérience pour l'instant",
+  "uexpPostedInCommunity": "Publiée dans {community}",
+  "uexpErrCommunityNotAllowed": "Seuls le propriétaire et les administrateurs de cette communauté peuvent publier des expériences ici."
 }

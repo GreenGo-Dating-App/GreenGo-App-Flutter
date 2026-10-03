@@ -11,6 +11,7 @@ import '../../../attractions/data/datasources/attractions_datasource.dart';
 import '../../../attractions/domain/country_resolver.dart';
 import '../../../attractions/domain/entities/attraction.dart';
 import '../../../attractions/presentation/screens/attraction_detail_screen.dart';
+import '../../../attractions/presentation/widgets/attraction_score_badge.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
@@ -27,6 +28,7 @@ import '../../../../core/theme/app_glass.dart';
 import '../../../../core/utils/country_flag_colors.dart';
 import '../../../../core/utils/country_flag_helper.dart';
 import '../../../../core/utils/display_image.dart';
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
@@ -57,8 +59,12 @@ import '../../../events/domain/entities/external_event.dart';
 import '../../../events/presentation/screens/event_detail_loader_screen.dart';
 import '../../../events/presentation/screens/events_screen.dart';
 import '../../../events/presentation/widgets/attraction_menu_dialog.dart';
+import '../../../events/presentation/widgets/external_event_tiles.dart'
+    show externalEventImageProvider;
 import '../../../user_experiences/domain/entities/user_experience.dart';
 import '../../../user_experiences/presentation/screens/experience_detail_screen.dart';
+import '../../../user_experiences/presentation/widgets/experience_widgets.dart'
+    show ExperienceImage;
 import '../../data/top_experiences_loader.dart';
 import '../../domain/top_experiences.dart';
 import '../widgets/top_experiences_section.dart';
@@ -231,6 +237,31 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // page-level loading indicator shown until the first section has data).
   bool _contentLoading = true;
 
+  // -- First screen: content in one go, people after ------------------------
+  // The content sections that fall in the FIRST VIEWPORT (featured community
+  // events, featured attractions, top experiences, my next events,
+  // communities, businesses, community events - whichever of them are above
+  // the fold) are revealed TOGETHER, once each has its data (a cached paint
+  // counts) and their images are decoded - or at [_kContentCap] after the
+  // loads start. Sections below the fold never hold the gate: they render as
+  // they land. The people sections (around you / recommended / speaks
+  // {language}) and the below-the-fold Country Spotlight only START loading
+  // once the content is shown, so they never compete with it for bandwidth.
+
+  /// Longest wait for the content's first screen (data + images).
+  static const Duration _kContentCap = Duration(seconds: 5);
+
+  /// Of which, the longest wait for the first viewport's images.
+  static const Duration _kContentImageCap = kFirstScreenImageCap;
+
+  bool _contentGateOpen = false;
+  bool _contentImagesStarted = false;
+  final Completer<void> _contentGate = Completer<void>();
+  Timer? _contentCapTimer;
+
+  /// Content loaders that have completed at least once.
+  final Set<String> _contentDone = <String>{};
+
   /// Whether any content section has something to show (cached paints count).
   bool get _hasAnySectionData =>
       (_featuredAttractions?.isNotEmpty ?? false) ||
@@ -315,8 +346,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
     _watchLocation();
     // Paint what the user saw last time (by id, from the local cache) while the
     // fresh loads below run. Never paints an empty section.
-    if (!forceRefresh) unawaited(_paintCachedSections());
-    if (!forceRefresh) unawaited(_paintCachedTopExperiences());
+    if (!forceRefresh) {
+      unawaited(_paintCachedSections().whenComplete(_checkContentGate));
+      unawaited(_paintCachedTopExperiences().whenComplete(_checkContentGate));
+    }
     // The Countries / People counters are the priciest reads on the page and
     // don't need to be live: last value now, recomputed after the first paint.
     _scheduleStats(immediately: forceRefresh);
@@ -325,22 +358,196 @@ class _ExploreScreenState extends State<ExploreScreen> {
     // (forceRefresh) the people pool bypasses its in-memory cache; the Firestore
     // .get() loads already return fresh server data when online.
     if (mounted && !_contentLoading) setState(() => _contentLoading = true);
+    // The content's first screen opens at the latest [_kContentCap] from now.
+    _contentCapTimer ??= Timer(_kContentCap, _openContentGate);
     await Future.wait<void>([
+      // Content - revealed together (see [_contentGateOpen]).
       // Featured / Happening-today / Near-you share ONE nearby read and are
       // elected in order so they never show the same event twice.
-      _loadEventCarousels(),
-      _loadFeaturedAttractions(),
-      _loadTopExperiences(),
-      _loadRecommended(),
-      _loadAroundYou(forceRefresh: forceRefresh),
-      _loadSameLanguage(),
-      _loadBusinesses(),
-      _loadMyEvents(),
-      _loadCommunities(),
-      _loadSpotlight(),
+      _trackContent('carousels', _loadEventCarousels()),
+      _trackContent('attractions', _loadFeaturedAttractions()),
+      _trackContent('topExperiences', _loadTopExperiences()),
+      _trackContent('businesses', _loadBusinesses()),
+      _trackContent('myEvents', _loadMyEvents()),
+      _trackContent('communities', _loadCommunities()),
       _loadCoinsStat(),
+      // People (and the below-the-fold spotlight) - started only once the
+      // content is on screen.
+      _afterContent(_loadRecommended),
+      _afterContent(() => _loadAroundYou(forceRefresh: forceRefresh)),
+      _afterContent(_loadSameLanguage),
+      _afterContent(_loadSpotlight),
     ]);
     if (mounted) setState(() => _contentLoading = false);
+  }
+
+  /// Marks content loader [name] done and re-checks the gate.
+  Future<void> _trackContent(String name, Future<void> load) =>
+      load.whenComplete(() {
+        _contentDone.add(name);
+        _checkContentGate();
+      });
+
+  /// Runs a deferred [load] (people rows, spotlight) once the content's
+  /// first screen is shown.
+  Future<void> _afterContent(Future<void> Function() load) async {
+    await _contentGate.future;
+    if (!mounted) return;
+    await load();
+  }
+
+  /// Estimated height of the greeting + stats header above the sections.
+  static const double _kHeaderEstimate = 280;
+
+  /// Height of a section's title row + paddings above its card row.
+  static const double _kSectionHeader = 64;
+
+  /// The gated content sections in page order, as they stand before the gate
+  /// opens (the people rows and the spotlight are not on screen yet): whether
+  /// its data is in (a cached paint or a finished loader), its items (empty
+  /// = hidden, takes no space), its height, and the images of the cards that
+  /// fit the width - the SAME providers its cards paint ([_FadeInImage]:
+  /// 800px; Top experiences: member cards at the 150px card width, partner
+  /// tiles at the grid width).
+  List<
+      ({
+        bool ready,
+        List<Object>? items,
+        double height,
+        List<ImageProvider> Function(int fit) images,
+        double cardWidth,
+        double gap,
+      })> _gatedSections(BuildContext context) {
+    bool done(String name) => _contentDone.contains(name);
+    ImageProvider? fade(String? url) => url == null || url.isEmpty
+        ? null
+        : cachedNetworkImageProvider(url,
+            memCacheWidth: _FadeInImage.decodeWidth,
+            maxWidthDiskCache: _FadeInImage.decodeWidth);
+    List<ImageProvider> take<T>(
+            List<T>? items, int fit, ImageProvider? Function(T) image) =>
+        (items ?? const [])
+            .take(fit)
+            .map(image)
+            .whereType<ImageProvider>()
+            .toList();
+    return [
+      (
+        ready: done('carousels') || _luxuryEvents != null,
+        items: _luxuryEvents,
+        height: _kSectionHeader + _LuxuryEventCard.cardHeight,
+        cardWidth: _LuxuryEventCard.cardWidth,
+        gap: 14,
+        images: (fit) =>
+            take<_Happening>(_luxuryEvents, fit, (h) => fade(h.imageUrl)),
+      ),
+      (
+        ready: done('attractions') || _featuredAttractions != null,
+        items: _featuredAttractions,
+        height: _kSectionHeader - 8 + _FeaturedCard.cardHeight,
+        cardWidth: _FeaturedCard.cardWidth,
+        gap: 14,
+        images: (fit) => take<_Happening>(
+            _featuredAttractions, fit, (h) => fade(h.imageUrl)),
+      ),
+      (
+        ready: done('topExperiences') || _topExperiences != null,
+        items: _topExperiences,
+        height: _kSectionHeader + TopExperiencesSection.cardHeight,
+        cardWidth: TopExperiencesSection.cardWidth,
+        gap: 10,
+        images: (fit) =>
+            take<TopExperienceItem>(_topExperiences, fit, (item) {
+              final c = item.community;
+              if (c != null) {
+                return ExperienceImage.providerFor(
+                    context, c.mainPhotoUrl, TopExperiencesSection.cardWidth);
+              }
+              return externalEventImageProvider(context, item.partner!,
+                  grid: true);
+            }),
+      ),
+      (
+        ready: done('myEvents') || _myEvents != null,
+        items: _myEvents,
+        height: _kSectionHeader + _HappeningCard.cardHeight,
+        cardWidth: _HappeningCard.cardWidth,
+        gap: 12,
+        images: (fit) => take<Event>(_myEvents, fit, (e) => fade(e.imageUrl)),
+      ),
+      (
+        ready: done('communities') || _communities != null,
+        items: _communities,
+        height: _kSectionHeader + _CommunityCard.cardHeight,
+        cardWidth: _CommunityCard.cardWidth,
+        gap: 12,
+        images: (fit) =>
+            take<Community>(_communities, fit, (c) => fade(c.imageUrl)),
+      ),
+      // People rows come here once the gate is open.
+      (
+        ready: done('businesses') || _businesses != null,
+        items: _businesses,
+        height: _kSectionHeader + _BusinessCard.cardHeight,
+        cardWidth: _BusinessCard.cardWidth,
+        gap: 12,
+        images: (fit) => take<Profile>(
+            _businesses, fit, (b) => fade(_BusinessCard.imageUrlOf(b))),
+      ),
+      (
+        ready: done('carousels') || _communityEvents != null,
+        items: _communityEvents,
+        height: _kSectionHeader + _HappeningCard.cardHeight,
+        cardWidth: _HappeningCard.cardWidth,
+        gap: 12,
+        images: (fit) =>
+            take<Event>(_communityEvents, fit, (e) => fade(e.imageUrl)),
+      ),
+    ];
+  }
+
+  /// Walks the gated sections top-down. A section whose top lies inside the
+  /// first viewport must have its data before the gate opens (its height is
+  /// only known once it has); everything starting below the fold is ignored.
+  /// Returns null while an above-the-fold section is still loading, else the
+  /// images of the first viewport.
+  List<ImageProvider>? _firstScreenContent(BuildContext context) {
+    final size = MediaQuery.sizeOf(context);
+    final out = <ImageProvider>[];
+    var y = _kHeaderEstimate;
+    for (final s in _gatedSections(context)) {
+      if (y >= size.height) break; // below the fold: not gated
+      if (!s.ready) return null;
+      final items = s.items;
+      if (items == null || items.isEmpty) continue; // hidden, no space
+      final fit = ((size.width - 20) / (s.cardWidth + s.gap)).ceil();
+      out.addAll(s.images(fit < 1 ? 1 : fit));
+      y += s.height;
+    }
+    return out;
+  }
+
+  /// Opens the gate once the first viewport's content has its data and its
+  /// images are decoded (capped by [_kContentImageCap]; failures count).
+  void _checkContentGate() {
+    if (!mounted || _contentGateOpen || _contentImagesStarted) return;
+    final images = _firstScreenContent(context);
+    if (images == null) return;
+    _contentImagesStarted = true;
+    if (images.isEmpty || firstScreenImagesCached(context, images)) {
+      _openContentGate();
+      return;
+    }
+    unawaited(precacheFirstScreen(context, images, cap: _kContentImageCap)
+        .whenComplete(_openContentGate));
+  }
+
+  void _openContentGate() {
+    _contentCapTimer?.cancel();
+    if (_contentGateOpen) return;
+    _contentGateOpen = true;
+    if (mounted) setState(() {});
+    if (!_contentGate.isCompleted) _contentGate.complete();
   }
 
   /// Background server refresh after a cache-first profile read. If the
@@ -384,8 +591,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
     _sectionsAnchor = now;
     unawaited(_loadEventCarousels());
     unawaited(_loadFeaturedAttractions());
-    unawaited(_loadAroundYou(forceRefresh: true));
-    unawaited(_loadRecommended());
+    unawaited(_afterContent(() => _loadAroundYou(forceRefresh: true)));
+    unawaited(_afterContent(_loadRecommended));
     unawaited(_loadBusinesses());
     unawaited(_loadCommunities());
     unawaited(_loadTopExperiences());
@@ -532,7 +739,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
           _communityEvents = communityEvents;
         }
       });
-      _precacheAvatars(around);
+      // People previews are shown (and their photos fetched) only after the
+      // content's first screen.
+      unawaited(_contentGate.future.then((_) {
+        if (mounted) _precacheAvatars(around);
+      }));
     } catch (_) {
       // Nothing cached — sections appear as the server loads land.
     }
@@ -812,6 +1023,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   void dispose() {
     _coinsSub?.cancel();
     _profileSub?.cancel();
+    _contentCapTimer?.cancel();
     super.dispose();
   }
 
@@ -1917,9 +2129,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 ),
               ),
               // Each section renders only once it has data (no skeletons, no
-              // empty states); until the first one arrives a single small
-              // page-level indicator stands in for all of them.
-              if (_contentLoading && !_hasAnySectionData)
+              // empty states). The content sections appear together, in one
+              // go (see [_contentGateOpen]); until then - and while nothing at
+              // all has data - a single small page-level indicator stands in.
+              if (!_contentGateOpen ||
+                  (_contentLoading && !_hasAnySectionData))
                 const SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.only(top: 48),
@@ -1935,6 +2149,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     ),
                   ),
                 ),
+              if (_contentGateOpen) ...[
               // Order (product owner): featured community events, featured
               // attractions, my next events, communities to join, then the
               // people rows. Every section hides itself when it has no data.
@@ -1985,6 +2200,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // Country Spotlight — a single glass card. Hidden entirely when
               // there is no active spotlight (see [_spotlightSection]).
               _spotlightSection(context, l10n, reduceMotion),
+              ],
               const SliverToBoxAdapter(child: SizedBox(height: 24)),
             ],
             ),
@@ -3268,6 +3484,14 @@ class _FeaturedCard extends StatelessWidget {
                     ),
                   ),
                 ),
+                // ── GreenGo Score (attractions), as on the Attractions tab ──
+                if (happening.attraction != null)
+                  Positioned(
+                    top: 10,
+                    left: 10,
+                    child: AttractionScoreBadge(
+                        attraction: happening.attraction!, size: 12),
+                  ),
                 // ── Title / going count ────────────
                 Positioned(
                   left: 14,
@@ -3900,6 +4124,15 @@ class _BusinessCard extends StatelessWidget {
 
   static const double cardWidth = 220;
   static const double cardHeight = 200;
+
+  /// Prefer the storefront cover image; fall back to the first profile photo
+  /// so the card always leads with the most representative storefront visual.
+  static String? imageUrlOf(Profile business) {
+    final cover = business.coverImageUrl?.trim();
+    return (cover != null && cover.isNotEmpty)
+        ? cover
+        : (business.photoUrls.isNotEmpty ? business.photoUrls.first : null);
+  }
   static const double _imageHeight = 108;
 
   @override
@@ -3908,12 +4141,7 @@ class _BusinessCard extends StatelessWidget {
         ? business.businessName!.trim()
         : business.displayName;
     final category = business.businessCategory?.trim();
-    // Prefer the storefront cover image; fall back to the first profile photo so
-    // the card always leads with the most representative storefront visual.
-    final cover = business.coverImageUrl?.trim();
-    final imageUrl = (cover != null && cover.isNotEmpty)
-        ? cover
-        : (business.photoUrls.isNotEmpty ? business.photoUrls.first : null);
+    final imageUrl = imageUrlOf(business);
     // Promoted (paid boost) storefronts get a gold frame + a "Promoted" badge.
     final promoted = business.isBusinessPromoted;
 
@@ -4239,6 +4467,9 @@ class _FadeInImage extends StatelessWidget {
   final double height;
   final bool animate;
 
+  /// Memory + disk decode width (px) of every Explore card image.
+  static const int decodeWidth = 800;
+
   @override
   Widget build(BuildContext context) {
     return CachedNetworkImage(
@@ -4246,8 +4477,8 @@ class _FadeInImage extends StatelessWidget {
       height: height,
       width: double.infinity,
       fit: BoxFit.cover,
-      memCacheWidth: 800,
-      maxWidthDiskCache: 800,
+      memCacheWidth: decodeWidth,
+      maxWidthDiskCache: decodeWidth,
       fadeInDuration:
           animate ? const Duration(milliseconds: 250) : Duration.zero,
       placeholder: (context, _) => Container(color: AppColors.charcoal),

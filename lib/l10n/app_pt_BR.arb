@@ -5201,5 +5201,8 @@
   "uexpDatesRequiredToPublish": "Adicione pelo menos uma data futura para publicar. Sua experiência foi salva como rascunho.",
   "bkRefundIfPaid": "Se você já pagou, o anfitrião deve devolver {percent} ({amount}).",
   "shareLinkCopied": "Link copiado para a área de transferência",
-  "shareOtherProfileMessage": "Conheça {name} no GreenGo: {link}"
+  "shareOtherProfileMessage": "Conheça {name} no GreenGo: {link}",
+  "communitiesExperiencesEmpty": "Ainda não tem experiências",
+  "uexpPostedInCommunity": "Publicada em {community}",
+  "uexpErrCommunityNotAllowed": "Só o dono e os administradores desta comunidade podem publicar experiências aqui."
 }

@@ -26,6 +26,10 @@ class UserExperiencesRepositoryImpl implements UserExperiencesRepository {
           return const Left(ExperienceContactInfoFailure());
         case 'invalid_experience':
           return Left(ExperienceInvalidFailure(e.fields));
+        case 'community_not_allowed':
+        case 'community_not_found':
+        case 'invalid_community':
+          return Left(ExperienceCommunityFailure(e.code));
         default:
           if (ExperienceCreateException.safetyCodes.contains(e.code)) {
             return Left(ExperienceSafetyFailure(e.code));
@@ -57,6 +61,16 @@ class UserExperiencesRepositoryImpl implements UserExperiencesRepository {
   @override
   ExperienceFeedPager hostFeed(String hostId, {int pageSize = 20}) =>
       _remote.hostFeed(hostId, pageSize: pageSize);
+
+  @override
+  ExperienceFeedPager communityExperiences(String communityId,
+          {int pageSize = 20}) =>
+      _remote.communityExperiences(communityId, pageSize: pageSize);
+
+  @override
+  Future<List<UserExperience>> hostCommunityDrafts(
+          String communityId, String hostId) =>
+      _remote.hostCommunityDrafts(communityId, hostId);
 
   @override
   Future<Either<Failure, UserExperience?>> getExperience(String id) =>

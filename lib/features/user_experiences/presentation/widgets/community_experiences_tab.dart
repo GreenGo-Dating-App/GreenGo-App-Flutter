@@ -5,8 +5,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../events/presentation/widgets/external_event_tiles.dart'
+    show eventsGridColumns;
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
 import '../bloc/experience_feed_bloc.dart';
@@ -248,91 +251,124 @@ class _CommunityViewState extends State<_CommunityView>
     );
   }
 
+  static const Widget _loader =
+      Center(child: CircularProgressIndicator(color: AppColors.richGold));
+
+  static bool _isLoading(ExperienceFeedState s) =>
+      s.status == ExperienceFeedStatus.initial ||
+      s.status == ExperienceFeedStatus.loading;
+
+  /// Pictures of the first viewport, as [ExperienceCard] decodes them (the
+  /// grid cell, or the list card's inner width).
+  List<ImageProvider> _firstScreenImages(
+      BuildContext context, Size viewport, List<UserExperience> items) {
+    final cols = eventsGridColumns(context);
+    final count = widget.gridView
+        ? firstScreenGridCount(
+            viewport: viewport, columns: cols, childAspectRatio: 0.66)
+        : firstScreenListCount(
+            viewportHeight: viewport.height, itemExtent: 300);
+    final width = widget.gridView
+        ? gridCellWidth(viewport.width, cols)
+        : ExperienceCard.listImageWidth(viewport.width - 24);
+    return items
+        .take(count)
+        .map((e) => ExperienceImage.providerFor(context, e.mainPhotoUrl, width))
+        .whereType<ImageProvider>()
+        .toList();
+  }
+
   Widget _body(AppLocalizations l) {
     return BlocBuilder<ExperienceFeedBloc, ExperienceFeedState>(
-      builder: (context, s) {
-        if (s.status == ExperienceFeedStatus.initial ||
-            s.status == ExperienceFeedStatus.loading) {
-          return const Center(
-              child: CircularProgressIndicator(color: AppColors.richGold));
-        }
-        if (s.items.isEmpty) {
-          return RefreshIndicator(
-            color: AppColors.richGold,
-            onRefresh: () async => _load(),
-            child: ListView(children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(32, 64, 32, 32),
-                child: Column(children: [
-                  const Icon(Icons.travel_explore,
-                      size: 48, color: AppColors.textTertiary),
-                  const SizedBox(height: 12),
-                  Text(
-                    s.status == ExperienceFeedStatus.failure
-                        ? l.somethingWentWrong
-                        : l.uexpEmpty,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(color: AppColors.textSecondary),
-                  ),
-                ]),
+      // The first page (cached paint or server) appears in one go: the
+      // loader stays until the first viewport's pictures are decoded
+      // (capped). Later loads (category / search) stream as before.
+      builder: (context, s) => FirstScreenGate(
+        ready: !_isLoading(s),
+        images: (context, viewport) =>
+            _firstScreenImages(context, viewport, s.items),
+        placeholder: _loader,
+        builder: (context) => _feed(context, l, s),
+      ),
+    );
+  }
+
+  Widget _feed(BuildContext context, AppLocalizations l, ExperienceFeedState s) {
+    if (_isLoading(s)) return _loader;
+    if (s.items.isEmpty) {
+      return RefreshIndicator(
+        color: AppColors.richGold,
+        onRefresh: () async => _load(),
+        child: ListView(children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(32, 64, 32, 32),
+            child: Column(children: [
+              const Icon(Icons.travel_explore,
+                  size: 48, color: AppColors.textTertiary),
+              const SizedBox(height: 12),
+              Text(
+                s.status == ExperienceFeedStatus.failure
+                    ? l.somethingWentWrong
+                    : l.uexpEmpty,
+                textAlign: TextAlign.center,
+                style: const TextStyle(color: AppColors.textSecondary),
               ),
             ]),
-          );
-        }
+          ),
+        ]),
+      );
+    }
 
-        final Widget child;
-        if (widget.gridView) {
-          final w = MediaQuery.of(context).size.width;
-          final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
-          child = GridView.builder(
-            key: const ValueKey('uexpGrid'),
-            controller: _gridScroll,
-            padding: const EdgeInsets.all(12),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: cols,
-              crossAxisSpacing: 8,
-              mainAxisSpacing: 8,
-              childAspectRatio: 0.66,
-            ),
-            itemCount: s.items.length,
-            itemBuilder: (_, i) => ExperienceCard(
-              experience: s.items[i],
-              compact: true,
-              onTap: () => _open(s.items[i]),
-            ),
+    final Widget child;
+    if (widget.gridView) {
+      final cols = eventsGridColumns(context);
+      child = GridView.builder(
+        key: const ValueKey('uexpGrid'),
+        controller: _gridScroll,
+        padding: const EdgeInsets.all(12),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: cols,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+          childAspectRatio: 0.66,
+        ),
+        itemCount: s.items.length,
+        itemBuilder: (_, i) => ExperienceCard(
+          experience: s.items[i],
+          compact: true,
+          onTap: () => _open(s.items[i]),
+        ),
+      );
+    } else {
+      child = ListView.builder(
+        key: const ValueKey('uexpList'),
+        controller: _listScroll,
+        padding: const EdgeInsets.all(12),
+        itemCount: s.items.length + (s.hasMore ? 1 : 0),
+        itemBuilder: (_, i) {
+          if (i >= s.items.length) {
+            return const Padding(
+              padding: EdgeInsets.all(16),
+              child: Center(
+                  child:
+                      CircularProgressIndicator(color: AppColors.richGold)),
+            );
+          }
+          final e = s.items[i];
+          return ExperienceCard(
+            experience: e,
+            distanceKm: _distanceKm(e),
+            onTap: () => _open(e),
           );
-        } else {
-          child = ListView.builder(
-            key: const ValueKey('uexpList'),
-            controller: _listScroll,
-            padding: const EdgeInsets.all(12),
-            itemCount: s.items.length + (s.hasMore ? 1 : 0),
-            itemBuilder: (_, i) {
-              if (i >= s.items.length) {
-                return const Padding(
-                  padding: EdgeInsets.all(16),
-                  child: Center(
-                      child:
-                          CircularProgressIndicator(color: AppColors.richGold)),
-                );
-              }
-              final e = s.items[i];
-              return ExperienceCard(
-                experience: e,
-                distanceKm: _distanceKm(e),
-                onTap: () => _open(e),
-              );
-            },
-          );
-        }
-        return RefreshIndicator(
-          color: AppColors.richGold,
-          onRefresh: () async => context
-              .read<ExperienceFeedBloc>()
-              .add(const ExperienceFeedRefreshed()),
-          child: child,
-        );
-      },
+        },
+      );
+    }
+    return RefreshIndicator(
+      color: AppColors.richGold,
+      onRefresh: () async => context
+          .read<ExperienceFeedBloc>()
+          .add(const ExperienceFeedRefreshed()),
+      child: child,
     );
   }
 }

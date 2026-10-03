@@ -4,6 +4,8 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../core/utils/compact_count.dart';
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_experience.dart';
@@ -88,6 +90,21 @@ class ExperienceImage extends StatelessWidget {
   final BoxFit fit;
   final ExperienceCategory? category;
 
+  /// Decode width (physical px) for an image laid out [logicalWidth] wide.
+  static int memCacheWidthFor(double logicalWidth, double devicePixelRatio) =>
+      (logicalWidth * devicePixelRatio).round().clamp(64, 4096);
+
+  /// The exact provider an [ExperienceImage] of [url] paints when laid out
+  /// [logicalWidth] wide (a grid cell, or the list card's inner width — see
+  /// [ExperienceCard.listImageWidth]), or null when there is no image.
+  static ImageProvider? providerFor(
+      BuildContext context, String url, double logicalWidth) {
+    if (url.isEmpty) return null;
+    return cachedNetworkImageProvider(url,
+        memCacheWidth: memCacheWidthFor(
+            logicalWidth, MediaQuery.of(context).devicePixelRatio));
+  }
+
   @override
   Widget build(BuildContext context) {
     final mq = MediaQuery.of(context);
@@ -112,8 +129,7 @@ class ExperienceImage extends StatelessWidget {
         height: height,
         width: width,
         fit: fit,
-        memCacheWidth:
-            (logical * mq.devicePixelRatio).round().clamp(64, 4096),
+        memCacheWidth: memCacheWidthFor(logical, mq.devicePixelRatio),
         placeholder: (_, __) => Container(
           height: height,
           width: width,
@@ -356,12 +372,22 @@ class ExperienceCard extends StatelessWidget {
     this.compact = false,
     this.showStatus = false,
     this.distanceKm,
+    this.ratingWithCount = false,
   });
   final UserExperience experience;
   final VoidCallback onTap;
   final bool compact; // grid tile
   final bool showStatus; // "My experiences"
   final double? distanceKm;
+
+  /// Compact tile: show the rating as "★ 4.7 (12)" and hide it entirely when
+  /// there are no ratings yet (instead of "★ –"). Used by Explore "Top
+  /// experiences".
+  final bool ratingWithCount;
+
+  /// Width of the image of a full (non-compact) card laid out in a row
+  /// [rowWidth] wide: the card's 1px border on each side is inside it.
+  static double listImageWidth(double rowWidth) => rowWidth - 2;
 
   /// True when the host's account is known to be inactive (banned /
   /// suspended / deleted) — from the cached directory brief, no read.
@@ -417,7 +443,9 @@ class ExperienceCard extends StatelessWidget {
           )
         : null;
 
-    final ratingRow = Row(
+    final ratingRow = ratingWithCount && compact && e.ratingCount == 0
+        ? const SizedBox.shrink()
+        : Row(
       mainAxisSize: MainAxisSize.min,
       children: [
         const Icon(Icons.star_rounded, size: 14, color: AppColors.richGold),
@@ -431,6 +459,11 @@ class ExperienceCard extends StatelessWidget {
           Text('(${l.uexpReviewsCount(e.ratingCount)})',
               style: const TextStyle(
                   color: AppColors.textTertiary, fontSize: 11)),
+        ] else if (ratingWithCount) ...[
+          const SizedBox(width: 2),
+          Text('(${formatCompactCount(e.ratingCount)})',
+              style: const TextStyle(
+                  color: AppColors.textTertiary, fontSize: 10)),
         ],
       ],
     );
