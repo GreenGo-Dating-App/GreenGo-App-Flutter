@@ -21,6 +21,7 @@ import '../../../../core/services/onboarding_gate.dart';
 import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/presence_service.dart';
 import '../../../../core/services/data_preload_service.dart';
+import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/services/subscription_expiry_service.dart';
 import '../../../../core/services/usage_limit_service.dart';
@@ -301,6 +302,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
     // Start live Firestore listeners for badge counts
     _startBadgeCountListeners();
+
+    // Open a shared /u /e /c link that arrived before sign-in / before this
+    // shell existed (cold start, web hand-off) on top of home.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) DeepLinkService.instance.attachHome(this);
+    });
 
     // First-run community guidelines gate (welcoming, respectful cross-cultural
     // exchange). Shown once, persisted in SharedPreferences. Fire-and-forget.
@@ -1315,6 +1322,7 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
 
   @override
   void dispose() {
+    DeepLinkService.instance.detachHome(this);
     _navAnim.dispose();
     _entitlementSub?.cancel();
     OwnProfileStore.instance.detach(widget.userId);

@@ -1,6 +1,11 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../../core/services/blocked_users_service.dart';
+import 'follow_count_overlay.dart';
+
+export 'follow_count_overlay.dart' show FollowCountOverlay, FollowCounter;
 
 /// Thrown when a follow is refused because one of the two users blocked the
 /// other.
@@ -59,6 +64,10 @@ class FollowPage {
 ///    `onUserFollowDeleted` triggers into `profiles/{id}.followersCount` and
 ///    `.followingCount`, which no client can write. The client only writes its
 ///    own edge docs.
+///  * Because the triggers can lag (cold start), [counts] overlays this
+///    device's committed-but-not-yet-counted changes ([FollowCountOverlay]) on
+///    BOTH sides - the followee's followers and the follower's own following -
+///    until the server value catches up.
 ///
 /// TODO(follow-fanout): when a business publishes a new event, a Cloud Function
 /// fans out a notification to `business_followers/{businessId}/followers/*`
@@ -67,11 +76,14 @@ class FollowService {
   FollowService({
     FirebaseFirestore? firestore,
     BlockedUsersService? blockedUsersService,
+    FollowCountOverlay? overlay,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _blocked = blockedUsersService;
+        _blocked = blockedUsersService,
+        _overlay = overlay ?? FollowCountOverlay.shared;
 
   final FirebaseFirestore _firestore;
   final BlockedUsersService? _blocked;
+  final FollowCountOverlay _overlay;
 
   /// Page size for the followers / following lists.
   static const int pageSize = 30;
@@ -100,10 +112,71 @@ class FollowService {
   }) =>
       _followersCol(followeeId).doc(followerId).snapshots().map((d) => d.exists);
 
-  /// Live server-maintained follower/following counts of [uid].
-  Stream<FollowCounts> counts(String uid) => _profile(uid)
-      .snapshots()
-      .map((d) => FollowCounts.fromProfileData(d.data()));
+  /// Live follower/following counts of [uid]: the server-maintained
+  /// counters plus any change this device made that the server has not
+  /// counted yet (so a follow / unfollow shows on both profiles immediately).
+  Stream<FollowCounts> counts(String uid) {
+    StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? docSub;
+    StreamSubscription<String>? overlaySub;
+    FollowCounts? server;
+    late final StreamController<FollowCounts> out;
+
+    void publish() {
+      final s = server;
+      if (s == null || out.isClosed) return;
+      out.add(FollowCounts(
+        followers: _overlay.apply(uid, FollowCounter.followers, s.followers),
+        following: _overlay.apply(uid, FollowCounter.following, s.following),
+      ));
+    }
+
+    out = StreamController<FollowCounts>(
+      onListen: () {
+        docSub = _profile(uid).snapshots().listen(
+          (d) {
+            final s = FollowCounts.fromProfileData(d.data());
+            _overlay
+              ..observeServer(uid, FollowCounter.followers, s.followers)
+              ..observeServer(uid, FollowCounter.following, s.following);
+            server = s;
+            publish();
+          },
+          onError: out.addError,
+        );
+        overlaySub =
+            _overlay.changes.where((u) => u == uid).listen((_) => publish());
+      },
+      onCancel: () async {
+        await docSub?.cancel();
+        await overlaySub?.cancel();
+      },
+    );
+    return out.stream;
+  }
+
+  /// Current server counters of [uid] (null when unreadable).
+  Future<FollowCounts?> _readServerCounts(String uid) async {
+    try {
+      final d = await _profile(uid).get();
+      return FollowCounts.fromProfileData(d.data());
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// Record a committed follow (+1) / unfollow (-1) on both sides.
+  void _recordChange({
+    required String followeeId,
+    required String followerId,
+    required int delta,
+    required List<FollowCounts?> before,
+  }) {
+    _overlay
+      ..record(followeeId, FollowCounter.followers, delta,
+          serverBefore: before[0]?.followers)
+      ..record(followerId, FollowCounter.following, delta,
+          serverBefore: before[1]?.following);
+  }
 
   /// True when [a] and [b] blocked each other in either direction.
   Future<bool> isBlockedPair(String a, String b) async {
@@ -125,12 +198,21 @@ class FollowService {
   }) async {
     if (followeeId.isEmpty || followerId.isEmpty) return;
     if (followeeId == followerId) return;
+    // Counter baselines are read in parallel with the block check, BEFORE the
+    // write, so they can never already include this follow.
+    final beforeF = Future.wait([
+      _readServerCounts(followeeId),
+      _readServerCounts(followerId),
+    ]);
     if (await isBlockedPair(followerId, followeeId)) {
       throw const FollowBlockedException();
     }
+    final before = await beforeF;
     final edge = _followersCol(followeeId).doc(followerId);
     final mirror = _followingCol(followerId).doc(followeeId);
+    var wrote = false;
     await _firestore.runTransaction((txn) async {
+      wrote = false; // the handler may re-run
       final existing = await txn.get(edge);
       if (existing.exists) return;
       // A stray mirror (edge removed server-side) must not be re-set: the
@@ -139,7 +221,12 @@ class FollowService {
       final now = FieldValue.serverTimestamp();
       txn.set(edge, {'createdAt': now});
       if (!staleMirror.exists) txn.set(mirror, {'createdAt': now});
+      wrote = true;
     });
+    if (wrote) {
+      _recordChange(
+          followeeId: followeeId, followerId: followerId, delta: 1, before: before);
+    }
   }
 
   /// Unfollow [followeeId] as [followerId]. Idempotent.
@@ -148,14 +235,28 @@ class FollowService {
     required String followerId,
   }) async {
     if (followeeId.isEmpty || followerId.isEmpty) return;
+    final before = await Future.wait([
+      _readServerCounts(followeeId),
+      _readServerCounts(followerId),
+    ]);
     final edge = _followersCol(followeeId).doc(followerId);
     final mirror = _followingCol(followerId).doc(followeeId);
+    var deleted = false;
     await _firestore.runTransaction((txn) async {
+      deleted = false; // the handler may re-run
       final existing = await txn.get(edge);
       if (!existing.exists) return;
+      // Deleting the canonical edge is what fires onUserFollowDeleted, which
+      // decrements BOTH the followee's followersCount and the follower's
+      // followingCount.
       txn.delete(edge);
       txn.delete(mirror);
+      deleted = true;
     });
+    if (deleted) {
+      _recordChange(
+          followeeId: followeeId, followerId: followerId, delta: -1, before: before);
+    }
   }
 
   // ── lists ──────────────────────────────────────────────────────────────

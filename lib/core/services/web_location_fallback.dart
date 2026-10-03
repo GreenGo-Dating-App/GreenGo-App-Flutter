@@ -17,9 +17,11 @@ import '../../features/profile/domain/entities/location.dart';
 /// coordinates at all.
 ///
 /// NOTE: both are free public endpoints with no key and no contractual rate
-/// limit. They run during web onboarding and on a web location update (at most
-/// once a month per user), so the volume is low — but if that changes, move them behind a Cloud Function with
-/// a paid geocoder.
+/// limit. They run during web onboarding, on a manual web location update and
+/// when the web session location refresh detects a move of more than
+/// kLocationChangeThresholdKm (never for an unchanged position), so the volume
+/// is low — but if that changes, move them behind a Cloud Function with a paid
+/// geocoder.
 class WebLocationFallback {
   WebLocationFallback._();
 

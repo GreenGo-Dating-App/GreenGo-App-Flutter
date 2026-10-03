@@ -34,6 +34,7 @@ import 'core/services/api_key_service.dart';
 import 'core/services/app_sound_service.dart';
 import 'core/services/cache_service.dart';
 import 'core/services/data_preload_service.dart';
+import 'core/services/location_refresh_service.dart';
 import 'core/services/deep_link_service.dart';
 import 'core/services/purchase_recovery_service.dart';
 import 'core/services/feature_flags_service.dart';
@@ -1177,6 +1178,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     SessionCacheGate.reset();
     AccessControlService.clearSessionCache();
     DataPreloadService.instance.reset();
+    LocationRefreshService.resetSession();
     // ── Other packages' per-user session state (Events / Discovery) ──
     // EventsPrefetch.reset() also resets EventsLocation and the external
     // events preloader.
@@ -1454,14 +1456,25 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   /// Returns PostLoginSplashScreen if splash hasn't been shown yet,
   /// otherwise returns MainNavigationScreen directly.
   Widget _buildMainOrSplash(String userId) {
+    // Refresh WHERE THE USER IS once per session (sign-in AND app open with an
+    // existing session) before the first location-based page loads: the
+    // splash waits for it (bounded) and Explore's first load awaits it
+    // (bounded, web — LocationRefreshService.defaultSessionBudget). The
+    // profile is only written when the position meaningfully changed.
+    // Idempotent per user.
+    unawaited(LocationRefreshService.startSessionRefresh(userId));
     if (_showPostLoginSplash) {
       // Prefetch the shared Firestore data (profile, conversations, inbox,
       // events) DURING the splash animation so the first tab (Explore) opens
       // against a warm cache. Idempotent (guarded by DataPreloadService._done),
       // so the redundant call from MainNavigationScreen.initState is a no-op.
       _preload ??= DataPreloadService.instance.warm(userId);
+      _splashReady ??= Future.wait<void>([
+        _preload!,
+        LocationRefreshService.awaitSessionRefresh(userId),
+      ]);
       return PostLoginSplashScreen(
-        ready: _preload,
+        ready: _splashReady,
         onComplete: () {
           _signInPending = false;
           if (mounted) {
@@ -1482,6 +1495,10 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
   /// the preload is done. Reset on sign-out.
   Future<void>? _preload;
 
+  /// [_preload] + the bounded session location refresh: the splash may end
+  /// early only once both are done. Reset on sign-out.
+  Future<void>? _splashReady;
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(
@@ -1501,6 +1518,7 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
           _isSigningOut = false;
           _clearSessionCaches();
           _preload = null;
+          _splashReady = null;
           setState(() {
             _accessData = null;
             _needsOnboarding = false;

@@ -27779,6 +27779,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'If you already paid, the host owes you {percent} back ({amount}).'**
   String bkRefundIfPaid(String percent, String amount);
+
+  /// No description provided for @shareLinkCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Link copied to the clipboard'**
+  String get shareLinkCopied;
+
+  /// No description provided for @shareOtherProfileMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Meet {name} on GreenGo: {link}'**
+  String shareOtherProfileMessage(String name, String link);
 }
 
 class _AppLocalizationsDelegate

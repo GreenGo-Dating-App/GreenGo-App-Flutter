@@ -15849,6 +15849,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String bkRefundIfPaid(String percent, String amount) {
     return 'Se já pagou, o anfitrião deve-lhe devolver $percent ($amount).';
   }
+
+  @override
+  String get shareLinkCopied => 'Link copiado para a área de transferência';
+
+  @override
+  String shareOtherProfileMessage(String name, String link) {
+    return 'Conhece $name no GreenGo: $link';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -31698,5 +31706,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String bkRefundIfPaid(String percent, String amount) {
     return 'Se você já pagou, o anfitrião deve devolver $percent ($amount).';
+  }
+
+  @override
+  String get shareLinkCopied => 'Link copiado para a área de transferência';
+
+  @override
+  String shareOtherProfileMessage(String name, String link) {
+    return 'Conheça $name no GreenGo: $link';
   }
 }

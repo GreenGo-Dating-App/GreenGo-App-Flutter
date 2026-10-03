@@ -33,7 +33,10 @@
       "rewrites": [
         {
           "source": "/u/**",
-          "destination": "/u/index.html"
+          "function": {
+            "functionId": "sharePreview",
+            "region": "us-central1"
+          }
         },
         {
           "source": "/e/**",

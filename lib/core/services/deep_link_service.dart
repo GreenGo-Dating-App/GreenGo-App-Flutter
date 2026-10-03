@@ -2,7 +2,9 @@ import 'dart:async';
 
 import 'package:app_links/app_links.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -33,10 +35,17 @@ import 'push_notification_service.dart';
 ///   * event   -> opens [EventDetailLoaderScreen] for that event;
 ///   * community -> opens [CommunityDetailScreen] for that community.
 ///
-/// Event and community links are rendered by the `sharePreview` Cloud Function
-/// (Hosting rewrite) so WhatsApp / Telegram / Instagram show a preview card
-/// with the real title, description and photo. When the app is NOT installed
-/// that page (and `web/u/index.html` for profiles) bounces to the store.
+/// Profile, event and community links are all rendered by the `sharePreview`
+/// Cloud Function (Hosting rewrites) so WhatsApp / Telegram / Instagram show a
+/// preview card with the real name/title, description and photo (a profile's
+/// MAIN photo). When the app is NOT installed that page bounces to the store;
+/// desktop browsers are sent to the web app as `/?link=/u/{id}`, which
+/// [captureWebLaunchLink] picks up.
+///
+/// Links that arrive before the user is signed in / before the home shell
+/// (MainNavigationScreen) is up are kept PENDING and opened by [attachHome] -
+/// otherwise the post-login `pushAndRemoveUntil(home)` would wipe the pushed
+/// screen (cold start) or the link would be dropped (web, signed out).
 ///
 /// NOTE: Firebase Dynamic Links is DEPRECATED and intentionally NOT used here.
 // TODO(deferred-deeplink): There is no deferred deep-linking (opening the exact
@@ -58,17 +67,56 @@ class DeepLinkService {
       PushNotificationService.navigatorKey;
   bool _initialized = false;
 
+  /// A link that could not be opened yet (signed out / home not mounted).
+  DeepLinkTarget? _pending;
+
+  /// The signed-in home shells currently mounted (see [attachHome]). A set,
+  /// not a flag: on restart the new shell attaches before the old disposes.
+  final Set<Object> _homeShells = <Object>{};
+  bool get _homeAttached => _homeShells.isNotEmpty;
+  bool _webLaunchCaptured = false;
+
   /// Canonical shareable HTTPS link for a user profile.
   static String buildProfileLink(String userId) =>
-      'https://$linkHost/u/$userId';
+      'https://$linkHost/u/${Uri.encodeComponent(userId.trim())}';
 
   /// Canonical shareable HTTPS link for an event.
   static String buildEventLink(String eventId) =>
-      'https://$linkHost/e/$eventId';
+      'https://$linkHost/e/${Uri.encodeComponent(eventId.trim())}';
 
   /// Canonical shareable HTTPS link for a community.
   static String buildCommunityLink(String communityId) =>
-      'https://$linkHost/c/$communityId';
+      'https://$linkHost/c/${Uri.encodeComponent(communityId.trim())}';
+
+  /// The web app reads `?link=/u/{id}` (set by the share page for desktop
+  /// browsers) or a direct `/u/{id}` path from the page URL. Captured once per
+  /// page load; opened after sign-in by [attachHome].
+  void captureWebLaunchLink([Uri? launchUri]) {
+    if (_webLaunchCaptured) return;
+    _webLaunchCaptured = true;
+    final target = parse(launchUri ?? Uri.base);
+    if (target != null) _pending = target;
+  }
+
+  /// Called by the signed-in home shell ([owner] = its State) once it has
+  /// painted. Opens any pending link on top of it.
+  void attachHome(Object owner) {
+    _homeShells.add(owner);
+    if (kIsWeb) captureWebLaunchLink();
+    final target = _pending;
+    if (target == null) return;
+    _pending = null;
+    _openWhenReady(target);
+  }
+
+  /// Called when the home shell is disposed (sign-out, restart).
+  void detachHome(Object owner) {
+    _homeShells.remove(owner);
+  }
+
+  /// The link waiting for the home shell, if any.
+  @visibleForTesting
+  DeepLinkTarget? get pendingTarget => _pending;
 
   /// Wire up cold-start + warm deep-link handling. Call ONCE from the root app
   /// widget's initState (see main.dart / AuthWrapper). Safe to call repeatedly —
@@ -101,44 +149,70 @@ class DeepLinkService {
 
   /// Parse a URI into a target, then route to it. Malformed links are ignored.
   void _handleUri(Uri uri) {
-    final target = _parse(uri);
+    final target = parse(uri);
     if (target == null) {
       debugPrint('DeepLinkService: ignoring unrecognized link "$uri"');
+      return;
+    }
+    if (!_homeAttached) {
+      // Cold start / signed out: open once the home shell is up.
+      _pending = target;
       return;
     }
     _openWhenReady(target);
   }
 
-  /// Extract a target from either an https universal link or the `greengo://`
-  /// custom scheme. Returns null for anything that isn't `/u/{id}`, `/e/{id}`
-  /// or `/c/{id}`.
-  _LinkTarget? _parse(Uri uri) {
+  static final RegExp _idPattern = RegExp(r'^[A-Za-z0-9_-]{1,128}$');
+
+  /// Extract a target from an https universal link, the `greengo://` custom
+  /// scheme, or the web app's `?link=/u/{id}` hand-off. Returns null for
+  /// anything that isn't `/u/{id}`, `/e/{id}` or `/c/{id}` with a well-formed
+  /// id.
+  static DeepLinkTarget? parse(Uri uri) {
     final scheme = uri.scheme.toLowerCase();
     final isHttp = scheme == 'http' || scheme == 'https';
 
-    // Only accept OUR host for http(s); accept any host for the custom scheme.
-    if (isHttp && uri.host.toLowerCase() != linkHost) return null;
+    // Only accept OUR host for http(s) (plus localhost for web dev); accept
+    // any host for the custom scheme.
+    final host = uri.host.toLowerCase();
+    if (isHttp && host != linkHost && host != 'localhost') return null;
     if (!isHttp && scheme != _customScheme) return null;
+
+    // Web hand-off: https://greengo-chat.web.app/?link=%2Fu%2F{id}
+    if (isHttp) {
+      final handOff = uri.queryParameters['link'];
+      if (handOff != null && handOff.startsWith('/')) {
+        final inner = Uri.tryParse(handOff);
+        if (inner != null) {
+          final t = _fromSegments(inner.pathSegments);
+          if (t != null) return t;
+        }
+      }
+    }
 
     final segments = <String>[];
     // For `greengo://u/{id}` the "u"/"e" lands in uri.host, not the path.
     if (!isHttp && uri.host.isNotEmpty) segments.add(uri.host);
-    segments.addAll(uri.pathSegments.where((s) => s.isNotEmpty));
+    segments.addAll(uri.pathSegments);
+    return _fromSegments(segments);
+  }
 
+  static DeepLinkTarget? _fromSegments(List<String> raw) {
+    final segments = raw.where((s) => s.isNotEmpty).toList();
     for (var i = 0; i < segments.length - 1; i++) {
       final kind = segments[i].toLowerCase();
       final id = segments[i + 1].trim();
-      if (id.isEmpty) continue;
-      if (kind == 'u') return _LinkTarget(_LinkKind.profile, id);
-      if (kind == 'e') return _LinkTarget(_LinkKind.event, id);
-      if (kind == 'c') return _LinkTarget(_LinkKind.community, id);
+      if (!_idPattern.hasMatch(id)) continue;
+      if (kind == 'u') return DeepLinkTarget(DeepLinkKind.profile, id);
+      if (kind == 'e') return DeepLinkTarget(DeepLinkKind.event, id);
+      if (kind == 'c') return DeepLinkTarget(DeepLinkKind.community, id);
     }
     return null;
   }
 
   /// The navigator may not be mounted yet on a cold start — retry briefly until
   /// it is (capped so a malformed launch never loops forever).
-  void _openWhenReady(_LinkTarget target, {int attempt = 0}) {
+  void _openWhenReady(DeepLinkTarget target, {int attempt = 0}) {
     final navigator = _navigatorKey.currentState;
     final context = _navigatorKey.currentContext;
     if (navigator == null || context == null) {
@@ -155,16 +229,15 @@ class DeepLinkService {
     _open(context, target);
   }
 
-  void _open(BuildContext context, _LinkTarget target) {
+  void _open(BuildContext context, DeepLinkTarget target) {
     final currentUserId = FirebaseAuth.instance.currentUser?.uid;
-    // Not signed in yet — we can't open a user-scoped chat/event. Ignore (the
-    // not-installed / logged-out case is already handled by the web fallback).
+    // Not signed in yet — keep it until the home shell attaches after login.
     if (currentUserId == null || currentUserId.isEmpty) {
-      debugPrint('DeepLinkService: no signed-in user; skipping ${target.id}');
+      _pending = target;
       return;
     }
 
-    if (target.kind == _LinkKind.profile) {
+    if (target.kind == DeepLinkKind.profile) {
       if (target.id == currentUserId) return; // own link: nothing to open
       // "Profile first": open the person's profile; the chat is started from
       // its app bar (with the normal connect gates).
@@ -173,7 +246,7 @@ class DeepLinkService {
         currentUserId: currentUserId,
         userId: target.id,
       );
-    } else if (target.kind == _LinkKind.community) {
+    } else if (target.kind == DeepLinkKind.community) {
       _openCommunity(context, target.id, currentUserId);
     } else {
       Navigator.of(context).push(
@@ -217,27 +290,125 @@ class DeepLinkService {
   }
 }
 
-enum _LinkKind { profile, event, community }
+enum DeepLinkKind { profile, event, community }
 
-class _LinkTarget {
-  const _LinkTarget(this.kind, this.id);
-  final _LinkKind kind;
+@immutable
+class DeepLinkTarget {
+  const DeepLinkTarget(this.kind, this.id);
+  final DeepLinkKind kind;
   final String id;
 
   @override
-  String toString() => '_LinkTarget(${kind.name}, $id)';
+  bool operator ==(Object other) =>
+      other is DeepLinkTarget && other.kind == kind && other.id == id;
+
+  @override
+  int get hashCode => Object.hash(kind, id);
+
+  @override
+  String toString() => 'DeepLinkTarget(${kind.name}, $id)';
 }
 
-/// Share a user's profile deep link via the OS share sheet.
+/// Share-sheet anchor for iPad (UIActivityViewController is a popover there
+/// and share_plus REJECTS the call without a non-empty origin inside the
+/// view). Pass the tapped button's context.
+Rect? _shareOrigin(BuildContext context) {
+  if (!context.mounted) return null;
+  try {
+    final box = context.findRenderObject();
+    if (box is RenderBox && box.hasSize && box.attached) {
+      final origin = box.localToGlobal(Offset.zero) & box.size;
+      if (!origin.isEmpty) return origin;
+    }
+    final size = MediaQuery.maybeSizeOf(context);
+    if (size == null || size.isEmpty) return null;
+    return Rect.fromLTWH(size.width / 2, size.height / 2, 1, 1);
+  } catch (_) {
+    return null; // e.g. a sheet's context that is already being torn down
+  }
+}
+
+/// Desktop browsers mostly lack the Web Share API (share_plus then throws or
+/// opens a mailto: draft), so on web only phones/tablets use the native sheet.
+bool get _webCanUseNativeShare =>
+    defaultTargetPlatform == TargetPlatform.android ||
+    defaultTargetPlatform == TargetPlatform.iOS;
+
+/// Open the OS share sheet with [text]; when that is not possible (desktop
+/// web, no share target, platform error) copy [link] to the clipboard and say
+/// so. Never throws.
+Future<void> shareLinkText(
+  BuildContext context, {
+  required String text,
+  required String link,
+  String? subject,
+}) async {
+  final messenger = context.mounted ? ScaffoldMessenger.maybeOf(context) : null;
+  final copiedLabel = (context.mounted
+          ? AppLocalizations.of(context)?.shareLinkCopied
+          : null) ??
+      'Link copied';
+  final origin = _shareOrigin(context);
+
+  if (!kIsWeb || _webCanUseNativeShare) {
+    try {
+      await Share.share(text, subject: subject, sharePositionOrigin: origin);
+      return;
+    } catch (e) {
+      debugPrint('shareLinkText: native share failed, copying instead: $e');
+    }
+  }
+  try {
+    await Clipboard.setData(ClipboardData(text: link));
+    messenger?.showSnackBar(SnackBar(content: Text(copiedLabel)));
+  } catch (e) {
+    debugPrint('shareLinkText: clipboard failed: $e');
+  }
+}
+
+/// The text that accompanies a shared profile link. Your own profile reads
+/// "Chat with me..."; someone else's names them.
+String profileShareText({
+  required String link,
+  required bool isSelf,
+  String? displayName,
+  AppLocalizations? l10n,
+}) {
+  final name = displayName?.trim() ?? '';
+  if (isSelf || name.isEmpty) {
+    return l10n?.shareProfileMessage(link) ?? 'Chat with me on GreenGo: $link';
+  }
+  return l10n?.shareOtherProfileMessage(name, link) ??
+      'Meet $name on GreenGo: $link';
+}
+
+/// Share a user's profile deep link via the OS share sheet (clipboard on
+/// desktop web). The link unfurls into a card with the profile's main photo,
+/// name and a short bio (rendered by the `sharePreview` function).
 ///
-/// Reusable entry point — the profile detail Share button, and later the
-/// own-profile / storefront share actions, all call this.
-Future<void> shareProfileLink(BuildContext context, String userId) async {
+/// Reusable entry point — the profile detail Share button and the storefront
+/// share action call this. Pass the BUTTON's context (iPad popover anchor).
+Future<void> shareProfileLink(
+  BuildContext context,
+  String userId, {
+  String? displayName,
+}) async {
+  if (userId.trim().isEmpty) return;
   final link = DeepLinkService.buildProfileLink(userId);
-  final l10n = AppLocalizations.of(context);
-  final text = l10n?.shareProfileMessage(link) ??
-      'Chat with me on GreenGo: $link';
-  await Share.share(text);
+  final isSelf = FirebaseAuth.instance.currentUser?.uid == userId;
+  final text = profileShareText(
+    link: link,
+    isSelf: isSelf,
+    displayName: displayName,
+    l10n: AppLocalizations.of(context),
+  );
+  final name = displayName?.trim() ?? '';
+  await shareLinkText(
+    context,
+    text: text,
+    link: link,
+    subject: name.isNotEmpty ? name : null,
+  );
 }
 
 /// Share an event deep link via the OS share sheet. The message leads with the
@@ -253,7 +424,8 @@ Future<void> shareEventLink(BuildContext context, String eventId,
           '$t\nCheck out this event on GreenGo: $link')
       : (l10n?.shareEventMessage(link) ??
           'Check out this event on GreenGo: $link');
-  await Share.share(text, subject: t.isNotEmpty ? t : null);
+  await shareLinkText(context,
+      text: text, link: link, subject: t.isNotEmpty ? t : null);
 }
 
 /// Share a community deep link via the OS share sheet (same preview card as
@@ -265,5 +437,6 @@ Future<void> shareCommunityLink(BuildContext context, String communityId,
   final n = name.trim();
   final text = l10n?.shareCommunityMessage(n, link) ??
       '$n\nJoin this community on GreenGo: $link';
-  await Share.share(text, subject: n.isNotEmpty ? n : null);
+  await shareLinkText(context,
+      text: text, link: link, subject: n.isNotEmpty ? n : null);
 }

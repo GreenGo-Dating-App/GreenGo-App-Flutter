@@ -363,21 +363,33 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
           // Share this profile's deep link (https://greengo-chat.web.app/u/{id}).
           // Tapping the shared link opens the app on this PROFILE (chat is one
           // tap away from here), or bounces to the store if not installed.
-          IconButton(
-            tooltip: l10n.shareProfileTooltip,
-            onPressed: () {
-              HapticFeedback.selectionClick();
-              shareProfileLink(context, widget.profile.userId);
-            },
-            icon: Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: AppColors.backgroundDark.withOpacity(0.7),
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(
-                Icons.ios_share,
-                color: AppColors.textPrimary,
+          // Builder: the BUTTON's own context anchors the iPad share popover
+          // (share_plus rejects the call without a valid origin rect there).
+          Builder(
+            builder: (buttonContext) => IconButton(
+              tooltip: l10n.shareProfileTooltip,
+              onPressed: () {
+                HapticFeedback.selectionClick();
+                shareProfileLink(
+                  buttonContext,
+                  widget.profile.userId,
+                  displayName: (widget.profile.isBusiness &&
+                          (widget.profile.businessName?.trim().isNotEmpty ??
+                              false))
+                      ? widget.profile.businessName
+                      : widget.profile.displayName,
+                );
+              },
+              icon: Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: AppColors.backgroundDark.withOpacity(0.7),
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.ios_share,
+                  color: AppColors.textPrimary,
+                ),
               ),
             ),
           ),
