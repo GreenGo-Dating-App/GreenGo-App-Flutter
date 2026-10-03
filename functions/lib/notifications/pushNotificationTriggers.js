@@ -159,7 +159,9 @@ async function sendPushToUser(userId, type, title, body, data, options) {
         // Build FCM message
         const message = {
             token: fcmToken,
-            notification: (0, brand_1.brandPush)(title, body, options === null || options === void 0 ? void 0 : options.imageUrl),
+            notification: (options === null || options === void 0 ? void 0 : options.messageStyle)
+                ? (0, brand_1.messagePush)(title, body, options === null || options === void 0 ? void 0 : options.imageUrl)
+                : (0, brand_1.brandPush)(title, body, options === null || options === void 0 ? void 0 : options.imageUrl),
             data: Object.assign(Object.assign(Object.assign({ type, timestamp: new Date().toISOString() }, (data || {})), ((actor === null || actor === void 0 ? void 0 : actor.actorId) ? { actorId: actor.actorId } : {})), ((actor === null || actor === void 0 ? void 0 : actor.actorName) ? { actorName: actor.actorName } : {})),
             android: Object.assign(Object.assign({ priority: 'high' }, ((options === null || options === void 0 ? void 0 : options.collapseKey) ? { collapseKey: options.collapseKey } : {})), { notification: Object.assign(Object.assign({ sound: 'default', channelId: 'greengo_notifications', priority: 'high' }, ((options === null || options === void 0 ? void 0 : options.collapseKey) ? { tag: options.collapseKey } : {})), ((options === null || options === void 0 ? void 0 : options.imageUrl) ? { imageUrl: options.imageUrl } : {})) }),
             apns: Object.assign(Object.assign({}, ((options === null || options === void 0 ? void 0 : options.collapseKey)
@@ -310,14 +312,9 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
             // like a message from/to a normal person — never separately gated.
             if (!(await (0, prefs_1.shouldNotify)(recipientId, 'exchanges')))
                 return;
-            // One wording for every message push: "<name> sent you a message."
-            //
-            // The sender's name used to be the title and the message text the
-            // body, which brandPush then joined into "Maria: see you at 8" -
-            // saying the same thing twice once the app name is added, and
-            // leaking the message content onto the lock screen. The title is
-            // always "GreenGo" (brandPush), so the name belongs in the body.
-            await sendPushToUser(recipientId, 'newMessage', '', `${senderName} sent you a message.`, {
+            // Title = the sender's name, body = the message itself (product
+            // decision 2026-10-03; see messagePush).
+            await sendPushToUser(recipientId, 'newMessage', senderName, preview, {
                 conversationId: convId,
                 fromUserId: senderId,
                 senderName,
@@ -326,6 +323,7 @@ exports.onNewMessagePush = (0, firestore_1.onDocumentCreated)({
                 imageUrl: senderAvatar,
                 collapseKey: convId, // Replaces previous notif from same conversation
                 threadId: convId, // iOS groups them
+                messageStyle: true,
             });
         }));
     }

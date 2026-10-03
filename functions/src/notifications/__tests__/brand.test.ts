@@ -39,3 +39,19 @@ describe('brandPush', () => {
     expect('imageUrl' in brandPush('a', 'b')).toBe(false);
   });
 });
+
+describe('messagePush (chat messages)', () => {
+  const { messagePush } = require('../brand');
+  it('title is the sender, body is the message', () => {
+    expect(messagePush('Maria', 'see you at 8')).toEqual({ title: 'Maria', body: 'see you at 8' });
+  });
+  it('keeps the image and falls back to GreenGo without a name', () => {
+    expect(messagePush('', 'hi', 'https://x/y.jpg')).toEqual({ title: 'GreenGo', body: 'hi', imageUrl: 'https://x/y.jpg' });
+  });
+  it('collapses whitespace and truncates long messages', () => {
+    const out = messagePush('Ana', `a\n\n${'b'.repeat(300)}`);
+    expect(out.body.length).toBe(180);
+    expect(out.body.startsWith('a b')).toBe(true);
+    expect(out.body.endsWith('...')).toBe(true);
+  });
+});

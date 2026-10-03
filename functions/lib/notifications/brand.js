@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.messagePush = messagePush;
 exports.brandPush = brandPush;
 /**
  * App-wide push branding.
@@ -12,6 +13,17 @@ exports.brandPush = brandPush;
  * displays). The `android.notification` sub-block does not carry title/body and
  * is left untouched.
  */
+/**
+ * Chat-message pushes (product decision 2026-10-03): the title is the
+ * SENDER's name and the body is the message itself (or a media label), not
+ * the uniform "GreenGo" branding.
+ */
+function messagePush(senderName, preview, imageUrl) {
+    const title = (senderName || '').trim() || 'GreenGo';
+    const raw = (preview || '').replace(/\s+/g, ' ').trim();
+    const body = raw.length > 180 ? `${raw.substring(0, 177)}...` : raw;
+    return Object.assign({ title, body }, (imageUrl ? { imageUrl } : {}));
+}
 function brandPush(title, body, imageUrl) {
     const t = (title || '').trim();
     const b = (body || '').trim();

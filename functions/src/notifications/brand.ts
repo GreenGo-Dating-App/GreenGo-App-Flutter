@@ -9,6 +9,22 @@
  * displays). The `android.notification` sub-block does not carry title/body and
  * is left untouched.
  */
+/**
+ * Chat-message pushes (product decision 2026-10-03): the title is the
+ * SENDER's name and the body is the message itself (or a media label), not
+ * the uniform "GreenGo" branding.
+ */
+export function messagePush(
+  senderName: string,
+  preview: string,
+  imageUrl?: string,
+): { title: string; body: string; imageUrl?: string } {
+  const title = (senderName || '').trim() || 'GreenGo';
+  const raw = (preview || '').replace(/\s+/g, ' ').trim();
+  const body = raw.length > 180 ? `${raw.substring(0, 177)}...` : raw;
+  return { title, body, ...(imageUrl ? { imageUrl } : {}) };
+}
+
 export function brandPush(
   title?: string,
   body?: string,

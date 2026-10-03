@@ -21,7 +21,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
-import { brandPush } from '../notifications/brand';
+import { messagePush } from '../notifications/brand';
 import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
@@ -191,15 +191,10 @@ export const onGroupMessageCreated = onDocumentCreated(
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          // Same wording as a 1:1 message, plus which group it was in. The
-          // preview is deliberately dropped: "New message in group X: Maria:
-          // hello" said the same thing twice and put the message itself on the
-          // lock screen.
-          notification: brandPush(
-            '',
-            `${senderName} sent you a message in ${groupName}.`,
-            groupPhoto ?? undefined,
-          ),
+          // Title = the sender's name, body = the message (same as 1:1;
+          // product decision 2026-10-03). Android tag / iOS collapse id keep
+          // one entry per group in the tray.
+          notification: messagePush(senderName, preview, groupPhoto ?? undefined),
           data: {
             type: 'group_message',
             groupId,

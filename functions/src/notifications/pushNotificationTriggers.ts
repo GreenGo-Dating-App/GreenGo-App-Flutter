@@ -6,7 +6,7 @@
 import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
-import { brandPush } from './brand';
+import { brandPush, messagePush } from './brand';
 import { shouldNotify } from './prefs';
 import { logInfo, logError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
@@ -50,6 +50,8 @@ interface SendOptions {
   isCritical?: boolean; // bypasses quiet hours, sets time-sensitive on iOS
   actorId?: string; // actor identity → in-app tile avatar + tappable name
   actorName?: string;
+  /** Show [title]/[body] as they are (chat messages: sender name + text). */
+  messageStyle?: boolean;
 }
 
 function isInQuietHours(prefs: any): boolean {
@@ -150,7 +152,9 @@ async function sendPushToUser(
     // Build FCM message
     const message: admin.messaging.Message = {
       token: fcmToken,
-      notification: brandPush(title, body, options?.imageUrl),
+      notification: options?.messageStyle
+        ? messagePush(title, body, options?.imageUrl)
+        : brandPush(title, body, options?.imageUrl),
       data: {
         type,
         timestamp: new Date().toISOString(),
@@ -362,18 +366,13 @@ export const onNewMessagePush = onDocumentCreated(
           // like a message from/to a normal person — never separately gated.
           if (!(await shouldNotify(recipientId, 'exchanges'))) return;
 
-          // One wording for every message push: "<name> sent you a message."
-          //
-          // The sender's name used to be the title and the message text the
-          // body, which brandPush then joined into "Maria: see you at 8" -
-          // saying the same thing twice once the app name is added, and
-          // leaking the message content onto the lock screen. The title is
-          // always "GreenGo" (brandPush), so the name belongs in the body.
+          // Title = the sender's name, body = the message itself (product
+          // decision 2026-10-03; see messagePush).
           await sendPushToUser(
             recipientId,
             'newMessage',
-            '',
-            `${senderName} sent you a message.`,
+            senderName,
+            preview,
             {
               conversationId: convId,
               fromUserId: senderId,
@@ -384,6 +383,7 @@ export const onNewMessagePush = onDocumentCreated(
               imageUrl: senderAvatar,
               collapseKey: convId, // Replaces previous notif from same conversation
               threadId: convId, // iOS groups them
+              messageStyle: true,
             },
           );
         }),
