@@ -62,18 +62,31 @@ class ExperienceEditorScreen extends StatelessWidget {
     super.key,
     required this.currentUserId,
     this.existing,
+    this.communityId,
+    this.communityName,
   });
 
   final String currentUserId;
   final UserExperience? existing;
 
+  /// New listing posted from a community's Experiences tab: the link is
+  /// sent with the create call (the server checks the host may post there).
+  /// Ignored when editing ([existing] keeps its own, immutable link).
+  final String? communityId;
+  final String? communityName;
+
   static Route<UserExperience> route({
     required String currentUserId,
     UserExperience? existing,
+    String? communityId,
+    String? communityName,
   }) =>
       MaterialPageRoute(
         builder: (_) => ExperienceEditorScreen(
-            currentUserId: currentUserId, existing: existing),
+            currentUserId: currentUserId,
+            existing: existing,
+            communityId: communityId,
+            communityName: communityName),
       );
 
   @override
@@ -81,15 +94,26 @@ class ExperienceEditorScreen extends StatelessWidget {
     return BlocProvider(
       create: (_) => ExperienceEditorBloc(
           repository: di.sl<UserExperiencesRepository>()),
-      child: _EditorForm(currentUserId: currentUserId, existing: existing),
+      child: _EditorForm(
+          currentUserId: currentUserId,
+          existing: existing,
+          communityId: communityId,
+          communityName: communityName),
     );
   }
 }
 
 class _EditorForm extends StatefulWidget {
-  const _EditorForm({required this.currentUserId, this.existing});
+  const _EditorForm({
+    required this.currentUserId,
+    this.existing,
+    this.communityId,
+    this.communityName,
+  });
   final String currentUserId;
   final UserExperience? existing;
+  final String? communityId;
+  final String? communityName;
 
   @override
   State<_EditorForm> createState() => _EditorFormState();
@@ -141,6 +165,14 @@ class _EditorFormState extends State<_EditorForm> {
   ExperienceStatus _requestedStatus = ExperienceStatus.published;
 
   bool get _isNew => widget.existing == null;
+
+  /// The community this listing is (or will be) posted in.
+  String? get _communityId => widget.existing != null
+      ? widget.existing!.communityId
+      : widget.communityId;
+  String? get _communityName => widget.existing != null
+      ? widget.existing!.communityName
+      : widget.communityName;
 
   @override
   void initState() {
@@ -484,6 +516,9 @@ class _EditorFormState extends State<_EditorForm> {
         ratingAvg: e?.ratingAvg ?? 0,
         ratingDist: e?.ratingDist ?? const {},
         reviewCount: e?.reviewCount ?? 0,
+        // Server-owned link: only sent on create (createPayload).
+        communityId: _communityId,
+        communityName: _communityName,
       );
       _submit(experience);
     } finally {
@@ -555,6 +590,31 @@ class _EditorFormState extends State<_EditorForm> {
     } finally {
       if (mounted) setState(() => _busy = false);
     }
+  }
+
+  /// "Posted in <community>" — the listing's (immutable) community link.
+  Widget _postedInChip(AppLocalizations l) {
+    final name = (_communityName ?? '').trim();
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 12),
+        child: Chip(
+          key: const Key('uexpPostedInChip'),
+          avatar: const Icon(Icons.groups_outlined,
+              size: 18, color: AppColors.richGold),
+          label: Text(
+            l.uexpPostedInCommunity(name.isEmpty ? '…' : name),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(color: AppColors.textPrimary),
+          ),
+          backgroundColor: AppColors.backgroundCard,
+          side: BorderSide(color: AppColors.richGold.withValues(alpha: 0.5)),
+          visualDensity: VisualDensity.compact,
+        ),
+      ),
+    );
   }
 
   /// Languages as a compact combobox: a field that opens a searchable
@@ -788,6 +848,8 @@ class _EditorFormState extends State<_EditorForm> {
             _snack(l.uexpErrContactInfo);
           } else if (f is ExperienceProhibitedFailure) {
             _snack(l.uexpErrProhibited);
+          } else if (f is ExperienceCommunityFailure) {
+            _snack(l.uexpErrCommunityNotAllowed);
           } else if (f is ExperienceInvalidFailure) {
             _snack(l.uexpErrFixFields);
           } else {
@@ -813,6 +875,8 @@ class _EditorFormState extends State<_EditorForm> {
                     ScrollViewKeyboardDismissBehavior.onDrag,
                 padding: const EdgeInsets.fromLTRB(16, 12, 16, 120),
                 children: [
+                  if ((_communityId ?? '').isNotEmpty)
+                    _postedInChip(l),
                   _photosSection(l),
                   _section(l.uexpSectionBasics, [
                     TextField(

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../domain/feed_interleave.dart';
 import 'external_event_tiles.dart';
 
@@ -141,6 +142,8 @@ class InterleavedFeedView<T> extends StatefulWidget {
     this.gridAspectRatio = 0.62,
     this.onRefresh,
     this.pageSize = 20,
+    this.firstScreenImage,
+    this.listItemExtent = 280,
   });
 
   /// Source A (the community side). Returning null means "not ready yet"
@@ -163,6 +166,17 @@ class InterleavedFeedView<T> extends StatefulWidget {
   /// sources are recreated afterwards.
   final Future<void> Function()? onRefresh;
   final int pageSize;
+
+  /// The image [itemBuilder]'s tile paints for an item — the SAME provider
+  /// (URL + resize) — or null for none. When set, the loader stays up until
+  /// the first page is merged and the first viewport's images are decoded
+  /// (capped, see [FirstScreenGate]), so the first screen appears in one go;
+  /// later pages still stream in. [viewport] is the feed's own size.
+  final ImageProvider? Function(
+      BuildContext context, T item, bool grid, Size viewport)? firstScreenImage;
+
+  /// Rough height of one list row, to estimate the first viewport.
+  final double listItemExtent;
 
   @override
   State<InterleavedFeedView<T>> createState() => _InterleavedFeedViewState<T>();
@@ -342,13 +356,45 @@ class _InterleavedFeedViewState<T> extends State<InterleavedFeedView<T>> {
       (!_feed.isComplete &&
           ((_feed.needsA && _a == null) || (_feed.needsB && _b == null)));
 
+  static const Widget _loader =
+      Center(child: CircularProgressIndicator(color: AppColors.richGold));
+
+  /// Images of the items in the first viewport.
+  List<ImageProvider> _firstScreenImages(BuildContext context, Size viewport) {
+    final image = widget.firstScreenImage;
+    if (image == null) return const [];
+    final count = widget.gridView
+        ? firstScreenGridCount(
+            viewport: viewport,
+            columns: eventsGridColumns(context),
+            childAspectRatio: widget.gridAspectRatio)
+        : firstScreenListCount(
+            viewportHeight: viewport.height,
+            itemExtent: widget.listItemExtent);
+    return _feed.items
+        .take(count)
+        .map((x) => image(context, x, widget.gridView, viewport))
+        .whereType<ImageProvider>()
+        .toList();
+  }
+
   @override
   Widget build(BuildContext context) {
+    if (widget.firstScreenImage == null) return _buildFeed(context);
+    return FirstScreenGate(
+      // The first window is merged (both sides answered, or a full page).
+      ready: !_busy || _feed.length >= widget.pageSize,
+      images: _firstScreenImages,
+      placeholder: _loader,
+      builder: _buildFeed,
+    );
+  }
+
+  Widget _buildFeed(BuildContext context) {
     final items = _feed.items;
     if (items.isEmpty) {
       if (!_feed.isComplete && (_busy || _stall < _maxStall)) {
-        return const Center(
-            child: CircularProgressIndicator(color: AppColors.richGold));
+        return _loader;
       }
       return RefreshIndicator(
         color: AppColors.richGold,

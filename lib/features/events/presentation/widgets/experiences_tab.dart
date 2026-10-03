@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/external_events_data_source.dart';
@@ -91,6 +92,10 @@ class _ExperiencesTabState extends State<ExperiencesTab>
   bool _firstLoadDone = false;
   int _gen = 0; // bumped per reload so stale pages can't append
 
+  /// Bumped when a reload clears the list (a different view), so that view's
+  /// first screen is gated again; background re-queries keep the gate open.
+  int _gateEpoch = 0;
+
   @override
   void initState() {
     super.initState();
@@ -158,6 +163,7 @@ class _ExperiencesTabState extends State<ExperiencesTab>
         _items.clear();
         _shownIds.clear();
         _firstLoadDone = false;
+        _gateEpoch++;
       });
     }
     if (widget.popular) {
@@ -312,13 +318,42 @@ class _ExperiencesTabState extends State<ExperiencesTab>
   /// Pull-to-refresh: re-query from the server, keeping the list meanwhile.
   Future<void> _refresh() => _reload(keepVisible: true);
 
+  static const Widget _loader =
+      Center(child: CircularProgressIndicator(color: AppColors.richGold));
+
+  /// Images of the first viewport (same providers as the tiles).
+  List<ImageProvider> _firstScreenImages(BuildContext context, Size viewport) {
+    final count = widget.gridView
+        ? firstScreenGridCount(
+            viewport: viewport,
+            columns: eventsGridColumns(context),
+            childAspectRatio: 0.62)
+        : firstScreenListCount(
+            viewportHeight: viewport.height, itemExtent: 280);
+    return _filtered
+        .take(count)
+        .map((e) =>
+            externalEventImageProvider(context, e, grid: widget.gridView))
+        .whereType<ImageProvider>()
+        .toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    if (!_firstLoadDone) {
-      return const Center(
-          child: CircularProgressIndicator(color: AppColors.richGold));
-    }
+    // The first screen (cached paint or first server page) appears in one
+    // go: the loader stays until its images are decoded (capped).
+    return FirstScreenGate(
+      key: ValueKey(_gateEpoch),
+      ready: _firstLoadDone,
+      images: _firstScreenImages,
+      placeholder: _loader,
+      builder: _buildList,
+    );
+  }
+
+  Widget _buildList(BuildContext context) {
+    if (!_firstLoadDone) return _loader;
     final items = _filtered;
     if (items.isEmpty) {
       return Center(
@@ -341,8 +376,7 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     // view a distinct key makes the swap clean, so the list shows the events.
     final Widget child;
     if (widget.gridView) {
-      final w = MediaQuery.of(context).size.width;
-      final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
+      final cols = eventsGridColumns(context);
       child = GridView.builder(
         key: const ValueKey('expGrid'),
         controller: _gridScroll,

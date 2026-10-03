@@ -1938,6 +1938,8 @@ service cloud.firestore {
         return ['hostId', 'createdAt', 'ratingSum', 'ratingCount', 'ratingAvg',
                 'ratingDist', 'reviewCount', 'viewCount', 'moderation',
                 'hostRatingCounted', 'reportCount',
+                // Community link: set only by createUserExperience; immutable.
+                'communityId', 'communityName',
                 // Explore "Top experiences" promotion: admin callable
                 // setExperienceFeatured only.
                 'isFeatured', 'featuredUntil'];

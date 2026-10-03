@@ -109,12 +109,14 @@ class TopExperiencesSection extends StatelessWidget {
       return ExternalEventGridTile(
         event: p,
         showPartnerBadge: true,
+        showReviewCount: true,
         onTap: () => onOpenPartner(p),
       );
     }
     final card = ExperienceCard(
       experience: c,
       compact: true,
+      ratingWithCount: true,
       onTap: () => onOpenCommunity(c),
     );
     if (!item.featured || ExperienceCard.isHostHidden(c.hostId)) return card;

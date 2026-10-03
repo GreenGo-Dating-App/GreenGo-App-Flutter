@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/attraction_icons.dart';
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../core/services/location_share_service.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
@@ -18,6 +19,7 @@ import '../../domain/category_labels.dart';
 import '../../domain/country_resolver.dart';
 import '../../domain/entities/attraction.dart';
 import '../screens/attraction_detail_screen.dart';
+import 'attraction_score_badge.dart';
 import 'attractions_filter_sheet.dart';
 
 /// Curated attractions, scoped to ONE country at a time.
@@ -128,10 +130,11 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   // ------------------------------------------------------ image readiness ---
   //
-  // A card is only revealed once its image is decoded (or has failed, in which
-  // case the card's error fallback shows). The first window is precached
-  // before the grid paints (spinner meanwhile, capped so one slow image never
-  // blocks the list) and the next window is precached ahead while scrolling.
+  // The FIRST screen of a country / layout appears in one go: the spinner
+  // stays until the first viewport's images are decoded (or failed — the
+  // card's fallback shows), capped by [FirstScreenGate] so one slow image
+  // never blocks the list. Each next window is precached ahead while
+  // scrolling and revealed once decoded (capped).
 
   /// Image variant per layout. Must match what [_tile] / [_card] render, or
   /// the precache warms a different ImageCache entry than the one displayed.
@@ -208,6 +211,24 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   String _decodedKey(String url, int memW) => '$url@$memW';
 
+  /// The exact provider [_img] paints (CachedNetworkImage + memCacheWidth).
+  ImageProvider _providerOf(Attraction a, String variant) =>
+      cachedNetworkImageProvider(_urlOf(a, variant), memCacheWidth: _memW());
+
+  /// Images of the first viewport of [all] in the current layout.
+  List<ImageProvider> _firstScreenImages(
+      List<Attraction> all, Size viewport) {
+    final w = MediaQuery.of(context).size.width;
+    final cols = w >= 1100 ? 6 : (w >= 800 ? 4 : 3);
+    final count = widget.gridView
+        ? firstScreenGridCount(
+            viewport: viewport, columns: cols, childAspectRatio: 0.62)
+        : firstScreenListCount(
+            viewportHeight: viewport.height, itemExtent: 290);
+    final variant = _variant;
+    return [for (final a in all.take(count)) _providerOf(a, variant)];
+  }
+
   /// Decodes [list]'s images into the ImageCache using the SAME provider the
   /// cards use (CachedNetworkImageProvider keyed by URL), so a revealed card
   /// paints its image on the first frame. Completes when all are done or
@@ -222,8 +243,7 @@ class _AttractionsTabState extends State<AttractionsTab>
       final key = _decodedKey(url, memW);
       if (_decoded.contains(key)) continue;
       waits.add(_inflight[key] ??= precacheImage(
-        ResizeImage.resizeIfNeeded(
-            memW, null, CachedNetworkImageProvider(url)),
+        _providerOf(a, variant),
         context,
         onError: (_, __) {/* card shows its error fallback */},
       ).catchError((_) {}).whenComplete(() {
@@ -238,9 +258,9 @@ class _AttractionsTabState extends State<AttractionsTab>
         : all.timeout(cap, onTimeout: () => const <void>[]);
   }
 
-  /// The first window paints at once (cards show their placeholder until
-  /// their image decodes); only the FOLLOWING page is predecoded, after the
-  /// first frame, so the next boundary is instant.
+  /// The first window is gated by [FirstScreenGate] (its viewport decoded
+  /// first); the FOLLOWING page is predecoded after the first frame, so the
+  /// next boundary is instant.
   void _prepareFirstWindow(String readyKey) {
     if (_preparingKey == readyKey) return;
     _preparingKey = readyKey;
@@ -733,21 +753,8 @@ class _AttractionsTabState extends State<AttractionsTab>
     }
   }
 
-  Widget _scoreBadge(Attraction a, {double size = 11}) {
-    final c = AttractionIcons.tierColor(a.scoreTier);
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: size * 0.5, vertical: size * 0.16),
-      decoration: BoxDecoration(
-        color: c.withValues(alpha: 0.92),
-        borderRadius: BorderRadius.circular(6),
-      ),
-      child: Text('${a.greengoScore}',
-          style: TextStyle(
-              color: AppColors.deepBlack,
-              fontSize: size,
-              fontWeight: FontWeight.bold)),
-    );
-  }
+  Widget _scoreBadge(Attraction a, {double size = 11}) =>
+      AttractionScoreBadge(attraction: a, size: size);
 
   Widget _img(Attraction a, String variant, double? h) => CachedNetworkImage(
         imageUrl: a.imageUrl(variant, bucket: _bucket),
@@ -784,6 +791,13 @@ class _AttractionsTabState extends State<AttractionsTab>
     if (!_searching) return a.cityName;
     final c = _countryNameOf(a.countryIso2);
     return (c == null || c.isEmpty) ? a.cityName : '${a.cityName}, $c';
+  }
+
+  /// "City - Country", shown next to the distance so the user knows where
+  /// the attraction is, not only how far.
+  String _cityCountry(Attraction a) {
+    final c = _countryNameOf(a.countryIso2) ?? a.countryName ?? a.countryIso2;
+    return c.isEmpty ? a.cityName : '${a.cityName} - $c';
   }
 
   String? _distanceLabel(AppLocalizations l10n, Attraction a) {
@@ -841,14 +855,13 @@ class _AttractionsTabState extends State<AttractionsTab>
         : all.sublist(0, _visibleCount);
     final hasMore = all.length > items.length;
 
-    // Paint the first window immediately (no wait on image decoding) and
-    // warm the next page in the background.
+    // The first window appears in one go (gated below on its first
+    // viewport's images); the next page is warmed in the background.
     final readyKey = '$_windowKey|$_variant';
     if (_readyKey != readyKey) {
       _readyKey = readyKey;
       _prepareFirstWindow(readyKey);
     }
-    final imagesReady = _readyKey == readyKey;
 
     return Column(
       children: [
@@ -903,10 +916,14 @@ class _AttractionsTabState extends State<AttractionsTab>
           child: RefreshIndicator(
             color: AppColors.richGold,
             onRefresh: _refresh,
-            child: !imagesReady
-                ? const Center(
-                    child: CircularProgressIndicator(color: AppColors.richGold))
-                : items.isEmpty
+            // Re-armed per country / layout (not per keystroke or filter).
+            child: FirstScreenGate(
+              key: ValueKey('attrGate|$_selectedIso|$_variant|${widget.gridView}'),
+              ready: true,
+              images: (_, viewport) => _firstScreenImages(items, viewport),
+              placeholder: const Center(
+                  child: CircularProgressIndicator(color: AppColors.richGold)),
+              builder: (_) => items.isEmpty
                 ? ListView(children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 80),
@@ -919,6 +936,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                 : (widget.gridView
                     ? _grid(items, l10n, hasMore)
                     : _list(items, l10n, hasMore)),
+            ),
           ),
         ),
       ],
@@ -1044,7 +1062,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                           size: 11, color: AppColors.textTertiary),
                       const SizedBox(width: 3),
                       Expanded(
-                        child: Text(dist ?? _placeLabel(a),
+                        child: Text(dist != null ? _cityCountry(a) : _placeLabel(a),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: const TextStyle(
@@ -1063,6 +1081,18 @@ class _AttractionsTabState extends State<AttractionsTab>
                         Text('${a.currency ?? ''} ${a.ticketPrice!.toStringAsFixed(0)}',
                             style: const TextStyle(
                                 color: AppColors.textTertiary, fontSize: 10)),
+                      if (dist != null) ...[
+                        if (a.freeEntry ||
+                            (a.ticketPrice != null && a.ticketPrice! > 0))
+                          const SizedBox(width: 4),
+                        Flexible(
+                          child: Text(dist,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                  color: AppColors.textTertiary, fontSize: 10)),
+                        ),
+                      ],
                       const Spacer(),
                       if (a.googleRating != null) ...[
                         const Icon(Icons.star, size: 10, color: AppColors.richGold),
@@ -1165,7 +1195,8 @@ class _AttractionsTabState extends State<AttractionsTab>
                   ]),
                   const SizedBox(height: 4),
                   Text(
-                    [_placeLabel(a), dist, _tierLabel(l10n, a.scoreTier)]
+                    [dist != null ? _cityCountry(a) : _placeLabel(a), dist,
+                        _tierLabel(l10n, a.scoreTier)]
                         .whereType<String>()
                         .where((s) => s.isNotEmpty)
                         .join(' · '),

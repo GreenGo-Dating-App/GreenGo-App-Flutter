@@ -26,6 +26,11 @@ import { effectiveTier, isProfileAdmin } from '../shared/effectiveTier';
 import { moderateExperienceText } from './moderation';
 import { maxExperiencesFor, validateExperiencePayload } from './validation';
 import {
+  communityDisplayName,
+  communityPostRefusal,
+  requestedCommunityId,
+} from './communityLink';
+import {
   SafetyCode,
   createBlockReason,
 } from './safety';
@@ -56,6 +61,17 @@ export const createUserExperience = onCall(
       throw new HttpsError('invalid-argument', code, { code, kinds: mod.terms ?? [] });
     }
 
+    // Optional community link (Experiences tab of a community). Set ONLY
+    // here; immutable afterwards (server-owned in the rules).
+    const communityId = requestedCommunityId(
+      (request.data as Record<string, unknown> | null)?.communityId,
+    );
+    if (communityId === 'invalid') {
+      throw new HttpsError('invalid-argument', 'invalid_community', {
+        code: 'invalid_community',
+      });
+    }
+
     const profileRef = db.collection('profiles').doc(uid);
     const counterRef = db.collection(EXPERIENCE_COUNTS).doc(uid);
     const expRef = db.collection(EXPERIENCES).doc();
@@ -66,6 +82,28 @@ export const createUserExperience = onCall(
         tx.get(counterRef),
       ]);
       const profile = profileSnap.data() ?? null;
+
+      // Same rule as the community Events tab's create button: the
+      // community's creator, or a member with role owner / admin.
+      let communityName: string | null = null;
+      if (communityId) {
+        const communityRef = db.collection('communities').doc(communityId);
+        const [communitySnap, memberSnap] = await Promise.all([
+          tx.get(communityRef),
+          tx.get(communityRef.collection('members').doc(uid)),
+        ]);
+        const community = communitySnap.exists ? communitySnap.data() ?? {} : null;
+        const refusal = communityPostRefusal(
+          uid, community, memberSnap.exists ? memberSnap.data() ?? {} : null);
+        if (refusal) {
+          throw new HttpsError(
+            refusal === 'community_not_found' ? 'not-found' : 'permission-denied',
+            refusal,
+            { code: refusal },
+          );
+        }
+        communityName = communityDisplayName(community);
+      }
 
       // Phase 1 safety: ID document uploaded to create; agreement + approved
       // document (+ new-host paid limit) to publish a listing taking money.
@@ -115,6 +153,7 @@ export const createUserExperience = onCall(
         // start, so review triggers keep profiles/{uid}.hostRating* in step.
         // Without a profile there is nothing to count into (backfill later).
         hostRatingCounted: profileSnap.exists,
+        ...(communityId ? { communityId, communityName } : {}),
       });
       tx.set(counterRef, { count: count + 1, updatedAt: now }, { merge: true });
       return { id: expRef.id, count: count + 1, limit: max, status: 'draft' };

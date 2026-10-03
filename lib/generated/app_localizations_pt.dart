@@ -15857,6 +15857,18 @@ class AppLocalizationsPt extends AppLocalizations {
   String shareOtherProfileMessage(String name, String link) {
     return 'Conhece $name no GreenGo: $link';
   }
+
+  @override
+  String get communitiesExperiencesEmpty => 'Ainda não há experiências';
+
+  @override
+  String uexpPostedInCommunity(String community) {
+    return 'Publicada em $community';
+  }
+
+  @override
+  String get uexpErrCommunityNotAllowed =>
+      'Apenas o proprietário e os administradores desta comunidade podem publicar experiências aqui.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -31715,4 +31727,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String shareOtherProfileMessage(String name, String link) {
     return 'Conheça $name no GreenGo: $link';
   }
+
+  @override
+  String get communitiesExperiencesEmpty => 'Ainda não tem experiências';
+
+  @override
+  String uexpPostedInCommunity(String community) {
+    return 'Publicada em $community';
+  }
+
+  @override
+  String get uexpErrCommunityNotAllowed =>
+      'Só o dono e os administradores desta comunidade podem publicar experiências aqui.';
 }

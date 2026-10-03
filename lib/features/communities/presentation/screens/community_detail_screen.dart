@@ -25,7 +25,9 @@ import '../bloc/communities_bloc.dart';
 import '../bloc/communities_event.dart';
 import '../bloc/communities_state.dart';
 import '../widgets/announcement_composer_sheet.dart';
+import '../widgets/community_detail_tab_bar.dart';
 import '../widgets/community_events_tab.dart';
+import '../widgets/community_linked_experiences_tab.dart';
 import '../widgets/community_member_tile.dart';
 import '../widgets/community_report.dart';
 import '../widgets/community_message_bubble.dart';
@@ -107,7 +109,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   void initState() {
     super.initState();
     _community = widget.community;
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController =
+        TabController(length: CommunityDetailTabBar.tabCount, vsync: this);
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     _loadUserInfo();
     _loadCommunityDetail();
@@ -306,7 +309,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                     onEdit: _editRules,
                   ),
 
-                // Chat · Tips · Announcements · Events
+                // Chat · Tips · Announcements · Events · Experiences
                 Expanded(
                   child: TabBarView(
                     controller: _tabController,
@@ -315,6 +318,13 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                       _buildTipsTab(state),
                       _buildAnnouncementsTab(state),
                       CommunityEventsTab(
+                        community: _community,
+                        canManage: _isModerator,
+                        currentUserId: _currentUserId ?? '',
+                      ),
+                      // Same create rule as Events (owner/admin); enforced
+                      // server-side by createUserExperience.
+                      CommunityLinkedExperiencesTab(
                         community: _community,
                         canManage: _isModerator,
                         currentUserId: _currentUserId ?? '',
@@ -378,21 +388,8 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
           ),
         ],
       ),
-      bottom: TabBar(
-        controller: _tabController,
-        isScrollable: true,
-        tabAlignment: TabAlignment.start,
-        indicatorColor: AppColors.richGold,
-        labelColor: AppColors.richGold,
-        unselectedLabelColor: AppColors.textTertiary,
-        labelStyle: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14),
-        tabs: [
-          Tab(text: AppLocalizations.of(context)!.communitiesTabChat),
-          Tab(text: AppLocalizations.of(context)!.communitiesTabTips),
-          Tab(text: AppLocalizations.of(context)!.communitiesTabAnnouncements),
-          Tab(text: AppLocalizations.of(context)!.communitiesTabEvents),
-        ],
-      ),
+      // Full-width tabs (long translations scale down on one line).
+      bottom: CommunityDetailTabBar(controller: _tabController),
       actions: [
         // Share outside the app (WhatsApp, Telegram...) - the link unfurls
         // into a card with this community's name, description and photo.

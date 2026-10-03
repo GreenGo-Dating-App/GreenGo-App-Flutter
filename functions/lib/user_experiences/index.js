@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onExperienceReplyCreated = exports.onExperienceReviewWritten = exports.onUserExperienceWritten = exports.onExperienceReportCreated = exports.acceptHostAgreement = exports.publishUserExperience = exports.setExperienceFeatured = exports.backfillHostRatings = exports.createUserExperience = void 0;
+exports.onExperienceReplyCreated = exports.onExperienceReviewWritten = exports.onUserExperienceWritten = exports.onExperienceReportCreated = exports.acceptHostAgreement = exports.publishUserExperience = exports.onCommunityDeletedUnlinkExperiences = exports.setExperienceFeatured = exports.backfillHostRatings = exports.createUserExperience = void 0;
 /**
  * User-created experiences (hosted by members) with reviews + replies.
  * Exported from src/index.ts.
@@ -11,6 +11,8 @@ var backfillHostRatings_1 = require("./backfillHostRatings");
 Object.defineProperty(exports, "backfillHostRatings", { enumerable: true, get: function () { return backfillHostRatings_1.backfillHostRatings; } });
 var featured_1 = require("./featured");
 Object.defineProperty(exports, "setExperienceFeatured", { enumerable: true, get: function () { return featured_1.setExperienceFeatured; } });
+var communityUnlink_1 = require("./communityUnlink");
+Object.defineProperty(exports, "onCommunityDeletedUnlinkExperiences", { enumerable: true, get: function () { return communityUnlink_1.onCommunityDeletedUnlinkExperiences; } });
 var safetyCallables_1 = require("./safetyCallables");
 Object.defineProperty(exports, "publishUserExperience", { enumerable: true, get: function () { return safetyCallables_1.publishUserExperience; } });
 Object.defineProperty(exports, "acceptHostAgreement", { enumerable: true, get: function () { return safetyCallables_1.acceptHostAgreement; } });

@@ -27791,6 +27791,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Meet {name} on GreenGo: {link}'**
   String shareOtherProfileMessage(String name, String link);
+
+  /// No description provided for @communitiesExperiencesEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No experiences yet'**
+  String get communitiesExperiencesEmpty;
+
+  /// No description provided for @uexpPostedInCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Posted in {community}'**
+  String uexpPostedInCommunity(String community);
+
+  /// No description provided for @uexpErrCommunityNotAllowed.
+  ///
+  /// In en, this message translates to:
+  /// **'Only this community\'s owner and admins can post experiences here.'**
+  String get uexpErrCommunityNotAllowed;
 }
 
 class _AppLocalizationsDelegate

@@ -63,12 +63,13 @@ require("../shared/firebaseAdmin");
 const effectiveTier_1 = require("../shared/effectiveTier");
 const moderation_1 = require("./moderation");
 const validation_1 = require("./validation");
+const communityLink_1 = require("./communityLink");
 const safety_1 = require("./safety");
 const db = admin.firestore();
 exports.EXPERIENCES = 'user_experiences';
 exports.EXPERIENCE_COUNTS = 'user_experience_counts';
 exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 60 }, async (request) => {
-    var _a, _b;
+    var _a, _b, _c;
     const uid = (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid;
     if (!uid)
         throw new https_1.HttpsError('unauthenticated', 'Sign in required.');
@@ -86,16 +87,40 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
         const code = mod.reason === 'contact_info' ? 'contact_info' : 'prohibited_text';
         throw new https_1.HttpsError('invalid-argument', code, { code, kinds: (_b = mod.terms) !== null && _b !== void 0 ? _b : [] });
     }
+    // Optional community link (Experiences tab of a community). Set ONLY
+    // here; immutable afterwards (server-owned in the rules).
+    const communityId = (0, communityLink_1.requestedCommunityId)((_c = request.data) === null || _c === void 0 ? void 0 : _c.communityId);
+    if (communityId === 'invalid') {
+        throw new https_1.HttpsError('invalid-argument', 'invalid_community', {
+            code: 'invalid_community',
+        });
+    }
     const profileRef = db.collection('profiles').doc(uid);
     const counterRef = db.collection(exports.EXPERIENCE_COUNTS).doc(uid);
     const expRef = db.collection(exports.EXPERIENCES).doc();
     const result = await db.runTransaction(async (tx) => {
-        var _a, _b, _c;
+        var _a, _b, _c, _d, _e;
         const [profileSnap, counterSnap] = await Promise.all([
             tx.get(profileRef),
             tx.get(counterRef),
         ]);
         const profile = (_a = profileSnap.data()) !== null && _a !== void 0 ? _a : null;
+        // Same rule as the community Events tab's create button: the
+        // community's creator, or a member with role owner / admin.
+        let communityName = null;
+        if (communityId) {
+            const communityRef = db.collection('communities').doc(communityId);
+            const [communitySnap, memberSnap] = await Promise.all([
+                tx.get(communityRef),
+                tx.get(communityRef.collection('members').doc(uid)),
+            ]);
+            const community = communitySnap.exists ? (_b = communitySnap.data()) !== null && _b !== void 0 ? _b : {} : null;
+            const refusal = (0, communityLink_1.communityPostRefusal)(uid, community, memberSnap.exists ? (_c = memberSnap.data()) !== null && _c !== void 0 ? _c : {} : null);
+            if (refusal) {
+                throw new https_1.HttpsError(refusal === 'community_not_found' ? 'not-found' : 'permission-denied', refusal, { code: refusal });
+            }
+            communityName = (0, communityLink_1.communityDisplayName)(community);
+        }
         // Phase 1 safety: ID document uploaded to create; agreement + approved
         // document (+ new-host paid limit) to publish a listing taking money.
         const blocked = (0, safety_1.createBlockReason)(profile);
@@ -106,7 +131,7 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
         // publishUserExperience once it has an upcoming date.
         const tier = (0, effectiveTier_1.effectiveTier)(profile);
         const max = (0, validation_1.maxExperiencesFor)(tier, (0, effectiveTier_1.isProfileAdmin)(profile));
-        let count = Number((_c = (_b = counterSnap.data()) === null || _b === void 0 ? void 0 : _b.count) !== null && _c !== void 0 ? _c : 0) || 0;
+        let count = Number((_e = (_d = counterSnap.data()) === null || _d === void 0 ? void 0 : _d.count) !== null && _e !== void 0 ? _e : 0) || 0;
         if (max !== null && count >= max) {
             // Self-heal a drifted counter (e.g. a failed delete trigger) before
             // refusing: the authoritative number is the host's actual docs.
@@ -122,13 +147,13 @@ exports.createUserExperience = (0, https_1.onCall)({ memory: '512MiB', timeoutSe
             }
         }
         const now = admin.firestore.FieldValue.serverTimestamp();
-        tx.set(expRef, Object.assign(Object.assign({}, v.data), { status: 'draft', hostId: uid, createdAt: now, updatedAt: now, ratingSum: 0, ratingCount: 0, ratingAvg: 0, reviewCount: 0, ratingDist: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 }, viewCount: 0, 
+        tx.set(expRef, Object.assign(Object.assign(Object.assign({}, v.data), { status: 'draft', hostId: uid, createdAt: now, updatedAt: now, ratingSum: 0, ratingCount: 0, ratingAvg: 0, reviewCount: 0, ratingDist: { '1': 0, '2': 0, '3': 0, '4': 0, '5': 0 }, viewCount: 0, 
             // Explore promotion is server-owned (setExperienceFeatured, admin).
             isFeatured: false, 
             // Its (empty) aggregate is part of the host's profile totals from the
             // start, so review triggers keep profiles/{uid}.hostRating* in step.
             // Without a profile there is nothing to count into (backfill later).
-            hostRatingCounted: profileSnap.exists }));
+            hostRatingCounted: profileSnap.exists }), (communityId ? { communityId, communityName } : {})));
         tx.set(counterRef, { count: count + 1, updatedAt: now }, { merge: true });
         return { id: expRef.id, count: count + 1, limit: max, status: 'draft' };
     });

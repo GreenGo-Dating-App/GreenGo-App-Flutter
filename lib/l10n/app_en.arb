@@ -7277,5 +7277,15 @@
         "type": "String"
       }
     }
-  }
+  },
+  "communitiesExperiencesEmpty": "No experiences yet",
+  "uexpPostedInCommunity": "Posted in {community}",
+  "@uexpPostedInCommunity": {
+    "placeholders": {
+      "community": {
+        "type": "String"
+      }
+    }
+  },
+  "uexpErrCommunityNotAllowed": "Only this community's owner and admins can post experiences here."
 }

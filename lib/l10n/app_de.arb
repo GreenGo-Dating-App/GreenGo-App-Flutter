@@ -5201,5 +5201,8 @@
   "uexpDatesRequiredToPublish": "Füge mindestens einen kommenden Termin hinzu, um zu veröffentlichen. Dein Erlebnis ist als Entwurf gespeichert.",
   "bkRefundIfPaid": "Wenn du bereits bezahlt hast, schuldet dir der Gastgeber {percent} ({amount}).",
   "shareLinkCopied": "Link in die Zwischenablage kopiert",
-  "shareOtherProfileMessage": "Lerne {name} auf GreenGo kennen: {link}"
+  "shareOtherProfileMessage": "Lerne {name} auf GreenGo kennen: {link}",
+  "communitiesExperiencesEmpty": "Noch keine Erlebnisse",
+  "uexpPostedInCommunity": "Gepostet in {community}",
+  "uexpErrCommunityNotAllowed": "Nur der Inhaber und die Admins dieser Community können hier Erlebnisse veröffentlichen."
 }

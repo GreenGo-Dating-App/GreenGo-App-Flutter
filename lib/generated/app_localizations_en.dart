@@ -15703,4 +15703,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String shareOtherProfileMessage(String name, String link) {
     return 'Meet $name on GreenGo: $link';
   }
+
+  @override
+  String get communitiesExperiencesEmpty => 'No experiences yet';
+
+  @override
+  String uexpPostedInCommunity(String community) {
+    return 'Posted in $community';
+  }
+
+  @override
+  String get uexpErrCommunityNotAllowed =>
+      'Only this community\'s owner and admins can post experiences here.';
 }

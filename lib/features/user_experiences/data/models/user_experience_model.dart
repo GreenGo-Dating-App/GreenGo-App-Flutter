@@ -115,6 +115,9 @@ class UserExperienceModel {
       // Server-owned (read-only here; never in editablePayload/createPayload).
       isFeatured: d['isFeatured'] == true,
       featuredUntil: experienceDateFrom(d['featuredUntil']),
+      // Server-owned community link (createUserExperience only).
+      communityId: _optStr(d['communityId']),
+      communityName: _optStr(d['communityName']),
     );
   }
 
@@ -170,7 +173,9 @@ class UserExperienceModel {
     };
   }
 
-  /// Payload of the `createUserExperience` callable (JSON-safe).
+  /// Payload of the `createUserExperience` callable (JSON-safe). The
+  /// community link is requested here only (the server checks the host may
+  /// post there and stores the community name itself); edits never send it.
   static Map<String, dynamic> createPayload(UserExperience e) => {
         ...editablePayload(e),
         'status': e.status == ExperienceStatus.published
@@ -178,6 +183,7 @@ class UserExperienceModel {
             : 'draft',
         'hostName': e.hostName,
         'hostPhotoUrl': e.hostPhotoUrl,
+        if (e.isInCommunity) 'communityId': e.communityId,
       };
 
   /// Full JSON (dates as epoch millis) — local caching / round-trip tests.
@@ -202,6 +208,8 @@ class UserExperienceModel {
           'moderation': {'reason': e.moderationReason},
         'isFeatured': e.isFeatured,
         'featuredUntil': e.featuredUntil?.millisecondsSinceEpoch,
+        if (e.communityId != null) 'communityId': e.communityId,
+        if (e.communityName != null) 'communityName': e.communityName,
       };
 }
 

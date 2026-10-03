@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/data/datasources/external_events_pager.dart';
@@ -212,6 +213,20 @@ class _MergedExperiencesFeedState extends State<MergedExperiencesFeed> {
           ? (a, b) => compareNearestThenSoonest(a.key, b.key)
           : null,
       gridView: widget.gridView,
+      listItemExtent: 300,
+      // First screen in one go: the first viewport's pictures decoded first
+      // (member cards decode at their real width: the grid cell, or the list
+      // card's inner width).
+      firstScreenImage: (context, x, grid, viewport) {
+        final c = x.community;
+        if (c == null) {
+          return externalEventImageProvider(context, x.partner!, grid: grid);
+        }
+        final width = grid
+            ? gridCellWidth(viewport.width, eventsGridColumns(context))
+            : ExperienceCard.listImageWidth(viewport.width - 24);
+        return ExperienceImage.providerFor(context, c.mainPhotoUrl, width);
+      },
       itemBuilder: (context, x, grid) {
         final c = x.community;
         if (c != null) {

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
@@ -157,6 +158,53 @@ class UserExperiencesRemoteDataSource {
         pageSize,
       );
 
+  /// Published experiences posted in [communityId], newest first, pictures
+  /// only, [pageSize] per page. Needs the composite index
+  /// user_experiences(communityId ASC, status ASC, createdAt DESC); while it
+  /// builds the query fails with failed-precondition and the pager returns
+  /// an empty list (logged) instead of an error.
+  ExperienceFeedPager communityExperiences(String communityId,
+          {int pageSize = 20}) =>
+      FailSafeExperiencePager(
+        _QueryPager(
+          _col
+              .where('communityId', isEqualTo: communityId)
+              .where('status', isEqualTo: 'published')
+              .orderBy('createdAt', descending: true),
+          pageSize,
+          keep: experienceHasPicture,
+        ),
+        label: 'communityExperiences($communityId)',
+      );
+
+  /// The host's own NOT-published listings (drafts / hidden) in
+  /// [communityId], newest first — visible only to the host (the rules let a
+  /// host read their own docs). Two equality filters, no orderBy: served by
+  /// the automatic single-field indexes (no composite needed); bounded by
+  /// [limit] (a host has at most their tier's experience count anyway).
+  Future<List<UserExperience>> hostCommunityDrafts(
+    String communityId,
+    String hostId, {
+    int limit = 20,
+  }) async {
+    try {
+      final snap = await _col
+          .where('communityId', isEqualTo: communityId)
+          .where('hostId', isEqualTo: hostId)
+          .limit(limit)
+          .get();
+      final out = [
+        for (final d in snap.docs) UserExperienceModel.fromDoc(d),
+      ].where((e) => !e.isPublished).toList()
+        ..sort((a, b) => (b.createdAt ?? DateTime(0))
+            .compareTo(a.createdAt ?? DateTime(0)));
+      return out;
+    } on FirebaseException catch (e) {
+      debugPrint('hostCommunityDrafts($communityId) failed: ${e.code}');
+      return const [];
+    }
+  }
+
   /// null when the experience doesn't exist OR the viewer may not read it
   /// (someone else's draft / a moderation-hidden listing).
   Future<UserExperience?> get(String id) async {
@@ -190,6 +238,11 @@ class UserExperiencesRemoteDataSource {
           limit: details is Map ? (details['limit'] as num?)?.toInt() : null,
           count: details is Map ? (details['count'] as num?)?.toInt() : null,
         );
+      }
+      if (code == 'community_not_allowed' ||
+          code == 'community_not_found' ||
+          code == 'invalid_community') {
+        throw ExperienceCreateException(code!);
       }
       if (code == 'prohibited_text' || code == 'contact_info') {
         throw ExperienceCreateException(code!);
@@ -500,6 +553,36 @@ class UserExperiencesRemoteDataSource {
           .doc(replyId)
           .snapshots()
           .map((s) => ReviewStatus.fromWire(s.data()?['status']));
+}
+
+/// Wraps [inner]: a query that needs a composite index still building
+/// (`failed-precondition`) ends the feed with an empty page (logged) instead
+/// of surfacing an error, so the screen shows its empty state.
+class FailSafeExperiencePager implements ExperienceFeedPager {
+  FailSafeExperiencePager(this._inner, {this.label = 'experiences'});
+
+  final ExperienceFeedPager _inner;
+  final String label;
+  bool _failed = false;
+
+  /// The last [next] hit a missing index.
+  bool get indexMissing => _failed;
+
+  @override
+  bool get hasMore => !_failed && _inner.hasMore;
+
+  @override
+  Future<List<UserExperience>> next() async {
+    if (_failed) return const [];
+    try {
+      return await _inner.next();
+    } on FirebaseException catch (e) {
+      if (e.code != 'failed-precondition') rethrow;
+      _failed = true;
+      debugPrint('$label: index not ready (${e.message}); showing empty');
+      return const [];
+    }
+  }
 }
 
 /// Cursor pager over an ordered query; [keep] filters a page client-side

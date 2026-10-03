@@ -611,6 +611,8 @@ export {
   onUserExperienceWritten,
   onExperienceReviewWritten,
   onExperienceReplyCreated,
+  // Community deleted -> its experiences are kept and unlinked.
+  onCommunityDeletedUnlinkExperiences,
 } from './user_experiences';
 
 // Experience bookings: slots, bookings (free / cash / host link — no money

@@ -38,6 +38,17 @@ class ExperienceSafetyFailure extends Failure {
 }
 
 /// The server refused the payload (field names in [fields]).
+/// The server refused the community link: [code] is community_not_allowed
+/// (only the community's owner / admins may post there), community_not_found
+/// or invalid_community.
+class ExperienceCommunityFailure extends Failure {
+  const ExperienceCommunityFailure(this.code) : super(code);
+  final String code;
+
+  @override
+  List<Object?> get props => [message, code];
+}
+
 class ExperienceInvalidFailure extends Failure {
   const ExperienceInvalidFailure(this.fields) : super('invalid_experience');
   final List<String> fields;
@@ -80,6 +91,15 @@ abstract class UserExperiencesRepository {
 
   /// Every experience of [hostId] (drafts, published, hidden), newest first.
   ExperienceFeedPager hostFeed(String hostId, {int pageSize = 20});
+
+  /// Published experiences posted in [communityId] (pictures only), newest
+  /// first; empty while its composite index is building.
+  ExperienceFeedPager communityExperiences(String communityId,
+      {int pageSize = 20});
+
+  /// [hostId]'s own not-published listings in [communityId] (host-only).
+  Future<List<UserExperience>> hostCommunityDrafts(
+      String communityId, String hostId);
 
   Future<Either<Failure, UserExperience?>> getExperience(String id);
 
