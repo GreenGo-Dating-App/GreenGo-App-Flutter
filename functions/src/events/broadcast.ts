@@ -9,7 +9,7 @@
 
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
-import { brandPush } from '../notifications/brand';
+import { brandPush, messagePush } from '../notifications/brand';
 import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
@@ -163,13 +163,13 @@ export const onEventMessageCreated = onDocumentCreated(
     }
     if (tokens.length === 0) return;
 
-    const body = senderName ? `${senderName}: ${text}` : text;
     for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
       const chunk = tokens.slice(i, i + FCM_CHUNK);
       try {
         await admin.messaging().sendEachForMulticast({
           tokens: chunk,
-          notification: brandPush(`New message in event ${title}`, body, eventImage),
+          // Title = the sender's name, body = the message (2026-10-03).
+          notification: messagePush(senderName || title, text, eventImage),
           data: { type: 'event_message', eventId, conversationId: eventId },
           android: {
             priority: 'high',
