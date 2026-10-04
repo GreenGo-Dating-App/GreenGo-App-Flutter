@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/constants/business_categories.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -282,12 +283,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     } catch (_) {
       if (!mounted) return;
       setState(() => _isSaving = false);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n.becomeBusinessError),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(context, l10n.becomeBusinessError);
     }
   }
 
@@ -321,12 +317,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
           if (context.mounted) Navigator.of(context).pop(state.profile);
         } else if (state is ProfileError) {
           setState(() => _isSaving = false);
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.message),
-              backgroundColor: AppColors.errorRed,
-            ),
-          );
+          showUserError(context, state.message);
         }
       },
       child: Scaffold(

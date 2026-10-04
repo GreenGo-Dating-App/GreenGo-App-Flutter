@@ -18,6 +18,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Edit Voice Introduction Screen
 /// Allows users to record, play, and save a voice introduction
@@ -116,12 +117,8 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
     if (!await _recorder.hasPermission()) {
       if (mounted) {
         final l10n = AppLocalizations.of(context);
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(l10n?.voiceMicrophonePermissionRequired ?? 'Microphone permission is required'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(context,
+            l10n?.voiceMicrophonePermissionRequired ?? 'Microphone permission is required');
       }
       return;
     }
@@ -285,16 +282,10 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
       }
     } catch (e) {
       if (mounted) {
-        final l10n = AppLocalizations.of(context);
         setState(() {
           _isUploading = false;
         });
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${l10n?.voiceUploadFailed ?? "Failed to upload voice recording"}: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -321,12 +312,7 @@ class _EditVoiceScreenState extends State<EditVoiceScreen>
           setState(() {
             _isUploading = false;
           });
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.message),
-              backgroundColor: AppColors.errorRed,
-            ),
-          );
+          showUserError(context, state.message);
         }
       },
       child: Scaffold(

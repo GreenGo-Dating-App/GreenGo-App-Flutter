@@ -14,6 +14,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:showcaseview/showcaseview.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -472,48 +473,73 @@ class _ChatScreenState extends State<ChatScreen> {
 
     debugPrint('TRANSLATE: "${message.content.length > 40 ? message.content.substring(0, 40) : message.content}" -> $translateTo');
 
-    try {
-      final translatedText = await _translationService.translate(
-        text: message.content,
-        sourceLanguage: 'auto',
-        targetLanguage: translateTo,
-      );
+    // translateDetailed never throws, returns THIS message's detected language
+    // (not a service-wide "last detected" value shared with every other
+    // bubble), and reports failure separately from "already in your language".
+    final result = await _translationService.translateDetailed(
+      text: message.content,
+      sourceLanguage: 'auto',
+      targetLanguage: translateTo,
+    );
+    final detectedLang = result.detectedLanguage;
 
-      // Store detected source language for flag display
-      final detectedLang = _translationService.lastDetectedLanguage;
-      if (detectedLang != null) {
-        _detectedLanguages[message.messageId] = detectedLang;
-      }
-
-      debugPrint('TRANSLATE RESULT: "${translatedText.length > 40 ? translatedText.substring(0, 40) : translatedText}" (detected: $detectedLang)');
-
-      // If detected language matches target, skip — no point translating Italian→Italian
-      final detectedNorm = (detectedLang ?? '').toLowerCase().replaceAll('-', '').replaceAll('_', '');
-      final targetNorm = translateTo.toLowerCase().replaceAll('-', '').replaceAll('_', '');
-      if (detectedNorm.isNotEmpty && (
-          detectedNorm == targetNorm ||
-          targetNorm.startsWith(detectedNorm) ||
-          detectedNorm.startsWith(targetNorm))) {
-        debugPrint('TRANSLATE: Same language ($detectedLang == $translateTo), no translation needed');
-        _translatedMessages[cacheKey] = message.content;
-        return message.copyWith(detectedLanguage: detectedLang);
-      }
-
-      // Cache result
-      _translatedMessages[cacheKey] = translatedText;
-
-      // Return with translation if different from original
-      if (translatedText != message.content) {
-        return message.copyWith(
-          translatedContent: translatedText,
-          detectedLanguage: detectedLang ?? message.detectedLanguage,
-        );
-      }
-    } catch (e) {
-      debugPrint('TRANSLATE ERROR: $e');
+    if (result.failed) {
+      // Not cached: the Retry action (or reopening the chat) tries again.
+      debugPrint('TRANSLATE FAILED for ${message.messageId}');
+      _onTranslationFailed(message);
+      return message;
     }
 
-    return message;
+    if (detectedLang != null) {
+      _detectedLanguages[message.messageId] = detectedLang;
+    }
+
+    if (!result.isTranslated) {
+      // Same language (or nothing to change): nothing to show.
+      _translatedMessages[cacheKey] = message.content;
+      return message.copyWith(detectedLanguage: detectedLang);
+    }
+
+    _translatedMessages[cacheKey] = result.text;
+    return message.copyWith(
+      translatedContent: result.text,
+      detectedLanguage: detectedLang ?? message.detectedLanguage,
+    );
+  }
+
+  /// Memo keys of translations that failed, so Retry re-runs exactly those.
+  final Set<String> _failedTranslationKeys = {};
+  bool _translationErrorShown = false;
+
+  void _onTranslationFailed(Message message) {
+    _failedTranslationKeys.add(
+        '${message.messageId}_${_targetLanguage}_${message.content.hashCode}');
+    if (_translationErrorShown || !mounted) return;
+    _translationErrorShown = true;
+    // Post-frame: this runs inside a FutureBuilder's future.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final l10n = AppLocalizations.of(context)!;
+      ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+        SnackBar(
+          content: Text(l10n.chatTranslationFailed),
+          duration: const Duration(seconds: 6),
+          action: SnackBarAction(
+            label: l10n.retry,
+            onPressed: _retryFailedTranslations,
+          ),
+        ),
+      );
+    });
+  }
+
+  void _retryFailedTranslations() {
+    if (!mounted) return;
+    setState(() {
+      _failedTranslationKeys.forEach(_translationFutures.remove);
+      _failedTranslationKeys.clear();
+      _translationErrorShown = false;
+    });
   }
 
   Future<void> _sendMessage(BuildContext _) async {
@@ -569,15 +595,7 @@ class _ChatScreenState extends State<ChatScreen> {
     // Check for contact information
     final filterResult = _contentFilter.analyzeContent(content);
     if (filterResult.hasContactInfo) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            AppLocalizations.of(context)!.chatMessageBlockedContains(filterResult.violations.join(', ')),
-          ),
-          backgroundColor: AppColors.errorRed,
-          duration: const Duration(seconds: 4),
-        ),
-      );
+      showUserErrorMessage(context, AppLocalizations.of(context)!.chatMessageBlockedContains(filterResult.violations.join(', ')),);
       return;
     }
 
@@ -707,12 +725,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatFailedToReportMessage(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -892,12 +905,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatFailedToPickImage(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -919,12 +927,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatFailedToPickVideo(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -962,16 +965,7 @@ class _ChatScreenState extends State<ChatScreen> {
             _selectedImage = null;
             _selectedImageXFile = null;
           });
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                AppLocalizations.of(context)?.photoExplicitContent ??
-                    'This image contains inappropriate content and cannot be sent.',
-              ),
-              backgroundColor: AppColors.errorRed,
-              duration: const Duration(seconds: 4),
-            ),
-          );
+          showUserErrorMessage(context, AppLocalizations.of(context)?.photoExplicitContent ?? 'This image contains inappropriate content and cannot be sent.',);
         }
         return;
       }
@@ -1025,16 +1019,7 @@ class _ChatScreenState extends State<ChatScreen> {
               _selectedImage = null;
               _selectedImageXFile = null;
             });
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(
-                  AppLocalizations.of(context)?.photoExplicitContent ??
-                      'This image contains inappropriate content and cannot be sent.',
-                ),
-                backgroundColor: AppColors.errorRed,
-                duration: const Duration(seconds: 4),
-              ),
-            );
+            showUserErrorMessage(context, AppLocalizations.of(context)?.photoExplicitContent ?? 'This image contains inappropriate content and cannot be sent.',);
           }
           return;
         }
@@ -1058,12 +1043,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatFailedToUploadImage(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) {
@@ -1099,13 +1079,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)?.voiceFailedToSend ??
-                'Failed to send voice message'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(context, AppLocalizations.of(context)?.voiceFailedToSend ?? 'Failed to send voice message');
       }
     } finally {
       if (mounted) setState(() => _isUploadingMedia = false);
@@ -1129,12 +1103,7 @@ class _ChatScreenState extends State<ChatScreen> {
       final fileSize = await file.length();
       if (fileSize > 50 * 1024 * 1024) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(AppLocalizations.of(context)!.chatVideoTooLarge),
-              backgroundColor: AppColors.errorRed,
-            ),
-          );
+          showUserErrorMessage(context, AppLocalizations.of(context)!.chatVideoTooLarge);
         }
         return;
       }
@@ -1183,12 +1152,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatFailedToUploadVideo(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) {
@@ -1457,12 +1421,7 @@ class _ChatScreenState extends State<ChatScreen> {
       );
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadAlbum}: ${e.toString()}'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e, title: AppLocalizations.of(context)!.chatFailedToLoadAlbum);
       }
     }
   }
@@ -1599,12 +1558,7 @@ class _ChatScreenState extends State<ChatScreen> {
       );
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadAlbum}: ${e.toString()}'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e, title: AppLocalizations.of(context)!.chatFailedToLoadAlbum);
       }
     }
   }
@@ -1688,12 +1642,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.chatFailedToShareAlbum}: ${e.toString()}'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e, title: AppLocalizations.of(context)!.chatFailedToShareAlbum);
       }
     }
   }
@@ -1724,12 +1673,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.chatFailedToRevokeAccess}: ${e.toString()}'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e, title: AppLocalizations.of(context)!.chatFailedToRevokeAccess);
       }
     }
   }
@@ -1760,12 +1704,7 @@ class _ChatScreenState extends State<ChatScreen> {
       _viewOtherUserAlbum(context);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadAlbum}: ${e.toString()}'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e, title: AppLocalizations.of(context)!.chatFailedToLoadAlbum);
       }
     }
   }
@@ -3187,12 +3126,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _confirmBlockUser(BuildContext context) async {
     // Check if the other user is an admin - cannot block admin
     if (widget.otherUserProfile.isAdmin) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.chatCannotBlockAdmin),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(context, AppLocalizations.of(context)!.chatCannotBlockAdmin);
       return;
     }
 
@@ -3236,12 +3170,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _showReportUserDialog(BuildContext context) async {
     // Check if the other user is an admin - cannot report admin
     if (widget.otherUserProfile.isAdmin) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.chatCannotReportAdmin),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(context, AppLocalizations.of(context)!.chatCannotReportAdmin);
       return;
     }
 
@@ -3505,12 +3434,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
 
     if (conversationId == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.chatUnableToForward),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(context, AppLocalizations.of(context)!.chatUnableToForward);
       return;
     }
 

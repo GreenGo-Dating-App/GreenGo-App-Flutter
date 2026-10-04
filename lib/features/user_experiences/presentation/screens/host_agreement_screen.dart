@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
 
@@ -48,7 +49,6 @@ class _HostAgreementScreenState extends State<HostAgreementScreen> {
   bool _saving = false;
 
   Future<void> _accept() async {
-    final l = AppLocalizations.of(context)!;
     setState(() => _saving = true);
     final r = await di
         .sl<UserExperiencesRepository>()
@@ -56,9 +56,7 @@ class _HostAgreementScreenState extends State<HostAgreementScreen> {
     if (!mounted) return;
     setState(() => _saving = false);
     r.fold(
-      (_) => ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text(l.somethingWentWrong),
-          backgroundColor: AppColors.errorRed)),
+      (f) => showUserError(context, f),
       (_) => Navigator.of(context).pop(true),
     );
   }

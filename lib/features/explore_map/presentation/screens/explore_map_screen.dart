@@ -159,9 +159,9 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                         const SizedBox(height: 8),
                         TextButton(
                           onPressed: _loadNearbyUsers,
-                          child: const Text(
-                            'Try Again',
-                            style: TextStyle(color: AppColors.richGold),
+                          child: Text(
+                            AppLocalizations.of(context)!.tryAgain,
+                            style: const TextStyle(color: AppColors.richGold),
                           ),
                         ),
                       ],

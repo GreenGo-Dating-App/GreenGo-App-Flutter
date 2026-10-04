@@ -10,6 +10,34 @@ class CountryCandidate {
     this.cities = const [],
   });
 
+  /// One row of `attraction_config/geo` (cities as [[lat, lng], ...] or the
+  /// stored flat [lat, lng, lat, lng, ...]).
+  factory CountryCandidate.fromGeo(Map<String, dynamic> m) {
+    final iso = (m['iso2'] ?? '').toString().toUpperCase();
+    final bboxRaw = m['bbox'];
+    final raw = (m['cities'] as List?) ?? const [];
+    final cities = <(double, double)>[];
+    if (raw.isNotEmpty && raw.first is num) {
+      for (var i = 0; i + 1 < raw.length; i += 2) {
+        cities.add(((raw[i] as num).toDouble(), (raw[i + 1] as num).toDouble()));
+      }
+    } else {
+      for (final c in raw) {
+        if (c is List && c.length >= 2 && c[0] is num && c[1] is num) {
+          cities.add(((c[0] as num).toDouble(), (c[1] as num).toDouble()));
+        }
+      }
+    }
+    return CountryCandidate(
+      iso2: iso,
+      name: (m['name'] ?? iso).toString(),
+      bbox: bboxRaw is List && bboxRaw.length == 4
+          ? [for (final e in bboxRaw) (e as num).toDouble()]
+          : null,
+      cities: cities,
+    );
+  }
+
   final String iso2;
   final String name;
   final List<double>? bbox;

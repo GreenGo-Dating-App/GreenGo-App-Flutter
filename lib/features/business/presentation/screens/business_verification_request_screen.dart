@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -149,7 +150,7 @@ class _BusinessVerificationRequestScreenState
           if (mounted) {
             setState(() {
               _sendingCode = false;
-              _phoneError = e.message ?? e.code;
+              _phoneError = _phoneErrorText(e);
             });
           }
         },
@@ -172,10 +173,21 @@ class _BusinessVerificationRequestScreenState
       if (mounted) {
         setState(() {
           _sendingCode = false;
-          _phoneError = e.toString();
+          _phoneError = _phoneErrorText(e);
         });
       }
     }
+  }
+
+  /// Friendly, localized text for a phone-verification failure (never the
+  /// raw Firebase message).
+  String _phoneErrorText(Object e) {
+    debugPrint('[BusinessVerification] phone error: $e');
+    final kind = classifyUserError(e);
+    if (kind == UserErrorKind.auth || kind == UserErrorKind.generic) {
+      return AppLocalizations.of(context)!.verificationPhoneError;
+    }
+    return userErrorMessage(context, e);
   }
 
   Future<void> _verifyCode() async {
@@ -219,14 +231,14 @@ class _BusinessVerificationRequestScreenState
           _verifyingCode = false;
           _phoneError = e.code == 'invalid-verification-code'
               ? l10n.verificationInvalidCode
-              : (e.message ?? l10n.verificationPhoneError);
+              : _phoneErrorText(e);
         });
       }
     } catch (e) {
       if (mounted) {
         setState(() {
           _verifyingCode = false;
-          _phoneError = e.toString();
+          _phoneError = _phoneErrorText(e);
         });
       }
     }
@@ -271,11 +283,12 @@ class _BusinessVerificationRequestScreenState
 
   void _snack(String message, {bool isError = false}) {
     if (!mounted) return;
+    if (isError) {
+      showUserErrorMessage(context, message);
+      return;
+    }
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(message),
-        backgroundColor: isError ? AppColors.errorRed : null,
-      ),
+      SnackBar(content: Text(message)),
     );
   }
 

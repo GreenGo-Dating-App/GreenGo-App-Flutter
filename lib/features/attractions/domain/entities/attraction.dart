@@ -260,21 +260,32 @@ class AttractionCountry {
     required this.iso2,
     required this.name,
     required this.total,
+    this.bbox,
   });
 
   final String iso2;
   final String name;
   final int total;
 
+  /// [south, west, north, east] of the country's published attractions (plus
+  /// padding), written by tools/attractions/seed_bbox.cjs. Lets the country a
+  /// user stands in be resolved WITHOUT the ~0.5 MB geo index whenever only
+  /// one box contains the point.
+  final List<double>? bbox;
+
   factory AttractionCountry.fromDoc(
       QueryDocumentSnapshot<Map<String, dynamic>> d) {
     final m = d.data();
+    final box = m['bbox'];
     return AttractionCountry(
       iso2: (m['iso2'] ?? d.id).toString(),
       name: (m['name'] ?? d.id).toString(),
       total: (m['publishedCount'] as num?)?.toInt() ??
           (m['total'] as num?)?.toInt() ??
           0,
+      bbox: box is List && box.length == 4 && box.every((e) => e is num)
+          ? [for (final e in box) (e as num).toDouble()]
+          : null,
     );
   }
 }

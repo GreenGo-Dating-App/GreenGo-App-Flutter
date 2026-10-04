@@ -2754,6 +2754,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get chatTranslationFailed => 'Tradução falhou. Tenta novamente.';
 
   @override
+  String get translationFailedTapRetry =>
+      'Não foi possível traduzir · Toca para tentar de novo';
+
+  @override
   String get chatTrialExpired => 'O teu teste gratuito expirou.';
 
   @override
@@ -15902,6 +15906,56 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get attrRatingGoogleLabel => 'Avaliação Google';
+
+  @override
+  String get webUpdateAvailable =>
+      'Está disponível uma nova versão do GreenGo.';
+
+  @override
+  String get webUpdateRefresh => 'Atualizar';
+
+  @override
+  String get webUpdateLater => 'Mais tarde';
+
+  @override
+  String get userErrorTitle => 'Ups!';
+
+  @override
+  String get userErrorGeneric => 'Algo correu mal. Tenta novamente.';
+
+  @override
+  String get userErrorTimeout =>
+      'Isto está a demorar mais do que o esperado. Tenta novamente.';
+
+  @override
+  String get userErrorPermissionDenied => 'Não tens permissão para fazer isto.';
+
+  @override
+  String get userErrorNotFound => 'Este conteúdo já não está disponível.';
+
+  @override
+  String get userErrorTooManyRequests =>
+      'Estás a fazer isto com demasiada frequência. Aguarda um momento e tenta novamente.';
+
+  @override
+  String get userErrorSessionExpired =>
+      'A tua sessão expirou. Inicia sessão novamente.';
+
+  @override
+  String get userErrorInvalidInput =>
+      'Algumas informações não são válidas. Verifica-as e tenta novamente.';
+
+  @override
+  String get userErrorNotAllowed => 'Esta ação não está disponível de momento.';
+
+  @override
+  String get userErrorUploadFailed =>
+      'O carregamento não foi concluído. Tenta novamente.';
+
+  @override
+  String videoMaxDurationError(int seconds) {
+    return 'O vídeo deve ter no máximo $seconds segundos';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -18656,6 +18710,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get chatTranslationFailed => 'Tradução falhou. Tente novamente.';
+
+  @override
+  String get translationFailedTapRetry =>
+      'Não foi possível traduzir · Toque para tentar de novo';
 
   @override
   String get chatTrialExpired => 'Seu teste gratuito expirou.';
@@ -31805,4 +31863,54 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get attrRatingGoogleLabel => 'Avaliação do Google';
+
+  @override
+  String get webUpdateAvailable =>
+      'Uma nova versão do GreenGo está disponível.';
+
+  @override
+  String get webUpdateRefresh => 'Atualizar';
+
+  @override
+  String get webUpdateLater => 'Mais tarde';
+
+  @override
+  String get userErrorTitle => 'Ops!';
+
+  @override
+  String get userErrorGeneric => 'Algo deu errado. Tente novamente.';
+
+  @override
+  String get userErrorTimeout =>
+      'Isso está demorando mais do que o esperado. Tente novamente.';
+
+  @override
+  String get userErrorPermissionDenied =>
+      'Você não tem permissão para fazer isso.';
+
+  @override
+  String get userErrorNotFound => 'Este conteúdo não está mais disponível.';
+
+  @override
+  String get userErrorTooManyRequests =>
+      'Você está fazendo isso com muita frequência. Aguarde um momento e tente novamente.';
+
+  @override
+  String get userErrorSessionExpired => 'Sua sessão expirou. Entre novamente.';
+
+  @override
+  String get userErrorInvalidInput =>
+      'Algumas informações não são válidas. Verifique e tente novamente.';
+
+  @override
+  String get userErrorNotAllowed => 'Esta ação não está disponível no momento.';
+
+  @override
+  String get userErrorUploadFailed =>
+      'O envio não foi concluído. Tente novamente.';
+
+  @override
+  String videoMaxDurationError(int seconds) {
+    return 'O vídeo deve ter no máximo $seconds segundos';
+  }
 }

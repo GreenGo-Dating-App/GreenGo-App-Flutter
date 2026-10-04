@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
@@ -133,6 +134,23 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
     }
   }
 
+  /// SubscriptionBloc errors carry developer text; show it as a friendly
+  /// popup. A user cancellation stays a quiet info snackbar.
+  void _showSubscriptionError(BuildContext context, String message) {
+    final l10n = AppLocalizations.of(context)!;
+    if (message == 'Purchase cancelled') {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(l10n.paymentCancelledMessage)),
+      );
+      return;
+    }
+    if (message.startsWith('You already have a')) {
+      showUserErrorMessage(context, l10n.userErrorNotAllowed);
+      return;
+    }
+    showUserError(context, message);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -160,12 +178,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
               },
             );
           } else if (state is SubscriptionError) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: Colors.red,
-              ),
-            );
+            _showSubscriptionError(context, state.message);
           }
         },
         builder: (context, state) {

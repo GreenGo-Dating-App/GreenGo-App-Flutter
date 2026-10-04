@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
@@ -69,12 +70,8 @@ class _BusinessRatingBarState extends State<BusinessRatingBar> {
       widget.onRated?.call(stars);
     } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.businessRatingError),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(
+            context, AppLocalizations.of(context)!.businessRatingError);
       }
     } finally {
       if (mounted) setState(() => _busy = false);

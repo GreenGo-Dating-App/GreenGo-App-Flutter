@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:cached_network_image/cached_network_image.dart';
@@ -10,6 +11,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/glass_container.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
@@ -148,10 +150,13 @@ class EventTicketRemoval {
       }
     } catch (e) {
       debugPrint('Delete ticket failed (${event.id}): $e');
-      messenger.showSnackBar(SnackBar(
-        content: Text(
-            cancelsRsvp ? l10n.eventsRsvpError : l10n.somethingWentWrong),
-      ));
+      if (context.mounted) {
+        if (cancelsRsvp) {
+          unawaited(showUserErrorMessage(context, l10n.eventsRsvpError));
+        } else {
+          unawaited(showUserError(context, e));
+        }
+      }
       return false;
     }
     messenger.showSnackBar(SnackBar(

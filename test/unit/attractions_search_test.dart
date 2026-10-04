@@ -19,62 +19,97 @@ Map<String, dynamic> rec(int i, String name, String city, String slug) => {
 void main() {
   setUp(AttractionsDataSource.invalidate);
 
-  group('allPublished — the catalogue search reads from', () {
-    test('collects every country and skips _meta docs', () async {
-      final db = FakeFirebaseFirestore();
+  group('searchCatalogue - bounded cross-catalogue search', () {
+    Future<void> seedItaly(FakeFirebaseFirestore db) async {
+      await db.collection('attraction_countries').doc('IT').set(
+          {'iso2': 'IT', 'name': 'Italy', 'published': true, 'total': 2});
+      await db.collection('attraction_countries').doc('US').set(
+          {'iso2': 'US', 'name': 'United States', 'published': true, 'total': 1});
       await db.collection('attractions_index').doc('IT_0').set({
         'iso2': 'IT',
+        'shard': 0,
         'items': [
           rec(401, 'Colosseum', 'Rome', 'colosseum-rome'),
           rec(421, 'Florence Cathedral', 'Florence', 'florence-cathedral'),
         ],
       });
-      await db.collection('attractions_index').doc('IT_meta').set({
-        'iso2': 'IT',
-        'total': 2,
-      });
-      await db.collection('attractions_index').doc('US_0').set({
-        'iso2': 'US',
-        'items': [rec(253, 'Hollywood Walk of Fame', 'Los Angeles', 'walk-of-fame')],
-      });
-      await db.collection('attractions_index').doc('US_meta').set({'iso2': 'US'});
+      await db
+          .collection('attractions_index')
+          .doc('IT_meta')
+          .set({'iso2': 'IT', 'shardCount': 1, 'total': 2});
+    }
 
-      final all = await AttractionsDataSource(firestore: db).allPublished();
+    Map<String, dynamic> fullDoc(
+            int id, String name, String slug, String iso, String citySlug,
+            {int score = 90}) =>
+        {
+          'id': id,
+          'name': name,
+          'slug': slug,
+          'cityName': citySlug,
+          'citySlug': citySlug,
+          'countryIso2': iso,
+          'greengoScore': score,
+          'status': 'published',
+          'img': {'base': 'attractions/$iso/$id', 'hash': 'h', 'token': 't'},
+        };
 
-      expect(all, hasLength(3), reason: '_meta docs must not add records');
-      expect(all.map((a) => a.countryIso2).toSet(), {'IT', 'US'});
-      expect(all.firstWhere((a) => a.id == 253).cityName, 'Los Angeles');
+    test('a country name returns that whole country (memoised list)',
+        () async {
+      final db = FakeFirebaseFirestore();
+      await seedItaly(db);
+      final hits =
+          await AttractionsDataSource(firestore: db).searchCatalogue('Italy');
+      expect(hits.map((a) => a.id).toSet(), {401, 421});
     });
 
-    test('memoises — a second call does not depend on Firestore', () async {
+    test('an attraction name matches by slug prefix, in any country',
+        () async {
       final db = FakeFirebaseFirestore();
-      await db.collection('attractions_index').doc('IT_0').set({
+      await seedItaly(db);
+      await db.collection('attractions').doc('253').set(fullDoc(
+          253, 'Hollywood Walk of Fame', 'hollywood-walk-of-fame', 'US',
+          'los-angeles'));
+      final hits = await AttractionsDataSource(firestore: db)
+          .searchCatalogue('Hollywood');
+      expect(hits.map((a) => a.id), [253]);
+      expect(hits.single.countryIso2, 'US');
+    });
+
+    test('a city name returns that city\'s attractions', () async {
+      final db = FakeFirebaseFirestore();
+      await seedItaly(db);
+      await db.collection('attraction_cities').doc('IT_rome').set({
         'iso2': 'IT',
-        'items': [rec(401, 'Colosseum', 'Rome', 'colosseum-rome')],
+        'citySlug': 'rome',
+        'published': true,
+        'attractionCount': 1,
+      });
+      await db.collection('attractions').doc('401').set(
+          fullDoc(401, 'Colosseum', 'colosseum-rome', 'IT', 'rome'));
+      final hits =
+          await AttractionsDataSource(firestore: db).searchCatalogue('Rome');
+      expect(hits.map((a) => a.id), [401]);
+    });
+
+    test('pictures only, and nothing for an unrelated query', () async {
+      final db = FakeFirebaseFirestore();
+      await seedItaly(db);
+      await db.collection('attractions').doc('9').set({
+        ...fullDoc(9, 'Zzz Tower', 'zzz-tower', 'IT', 'x'),
+        'img': {'base': '', 'hash': '', 'token': ''},
       });
       final ds = AttractionsDataSource(firestore: db);
-      expect(await ds.allPublished(), hasLength(1));
-
-      // Adding data after the first call must NOT appear until invalidate().
-      await db.collection('attractions_index').doc('US_0').set({
-        'iso2': 'US',
-        'items': [rec(253, 'Walk of Fame', 'Los Angeles', 'wof')],
-      });
-      expect(await ds.allPublished(), hasLength(1));
-
-      AttractionsDataSource.invalidate();
-      expect(await ds.allPublished(), hasLength(2));
+      expect(await ds.searchCatalogue('zzz'), isEmpty);
+      expect(await ds.searchCatalogue('qqqq'), isEmpty);
     });
 
-    test('an empty catalogue yields an empty list, not an error', () async {
-      final db = FakeFirebaseFirestore();
-      expect(await AttractionsDataSource(firestore: db).allPublished(), isEmpty);
-    });
-
-    test('a shard with no items list is skipped safely', () async {
-      final db = FakeFirebaseFirestore();
-      await db.collection('attractions_index').doc('IT_0').set({'iso2': 'IT'});
-      expect(await AttractionsDataSource(firestore: db).allPublished(), isEmpty);
+    test('slugify matches the seeder (NFKD, accents dropped)', () {
+      expect(AttractionsDataSource.slugify('Zürich'), 'zurich');
+      expect(AttractionsDataSource.slugify('Notre-Dame de Paris'),
+          'notre-dame-de-paris');
+      expect(AttractionsDataSource.slugify('  São Paulo! '), 'sao-paulo');
+      expect(AttractionsDataSource.slugify('Kraków'), 'krakow');
     });
   });
 

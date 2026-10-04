@@ -76,6 +76,7 @@ import 'photo_management_screen.dart';
 import 'traveler_location_picker_screen.dart';
 import 'usage_stats_screen.dart';
 import '../../../../core/widgets/boost_celebration.dart';
+import '../../../../core/utils/user_error.dart';
 
 class EditProfileScreen extends StatelessWidget {
 
@@ -212,12 +213,7 @@ class EditProfileScreen extends StatelessWidget {
             // Only show error messages here - sub-screens handle their own success responses
             // Do NOT pop on ProfileUpdated as child screens may trigger updates
             if (state is ProfileError) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(state.message),
-                  backgroundColor: AppColors.errorRed,
-                ),
-              );
+              showUserError(context, state.message);
             }
           },
           builder: (context, state) {
@@ -1467,12 +1463,8 @@ class EditProfileScreen extends StatelessWidget {
   void _showDeleteAccountDialog(BuildContext screenContext, Profile currentProfile) {
     // Prevent admin account deletion
     if (currentProfile.isAdmin) {
-      ScaffoldMessenger.of(screenContext).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(screenContext)!.adminAccountsCannotBeDeleted),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(screenContext,
+          AppLocalizations.of(screenContext)!.adminAccountsCannotBeDeleted);
       return;
     }
 
@@ -1640,13 +1632,15 @@ class EditProfileScreen extends StatelessWidget {
                         e.code == 'invalid-credential') {
                       errorText = AppLocalizations.of(context)!.authErrorWrongPassword;
                     } else {
-                      errorText = e.message ?? AppLocalizations.of(context)!.profileAuthenticationFailed;
+                      reportUserError(e);
+                      errorText = userErrorMessage(context, e);
                     }
                   });
                 } catch (e) {
+                  reportUserError(e);
                   setDialogState(() {
                     isLoading = false;
-                    errorText = e.toString();
+                    errorText = userErrorMessage(context, e);
                   });
                 }
               },
@@ -1937,9 +1931,7 @@ class EditProfileScreen extends StatelessWidget {
           }
         } catch (e) {
           if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
-            );
+            showUserError(context, e);
           }
         }
       } else {
@@ -2045,9 +2037,7 @@ class EditProfileScreen extends StatelessWidget {
           }
         } catch (e) {
           if (context.mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
-            );
+            showUserError(context, e);
           }
         }
       }
@@ -2171,9 +2161,7 @@ class EditProfileScreen extends StatelessWidget {
         );
       } catch (e) {
         if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: $e'), backgroundColor: AppColors.errorRed),
-          );
+          showUserError(context, e);
         }
         return;
       }

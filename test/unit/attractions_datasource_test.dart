@@ -148,4 +148,115 @@ void main() {
       expect(await AttractionsDataSource(firestore: db).forCountry('ZZ'), isEmpty);
     });
   });
+
+  group('AttractionsDataSource - bounded reads', () {
+    setUp(AttractionsDataSource.invalidate);
+
+    Map<String, dynamic> item(int id, int score) =>
+        {...colosseumRecord(), 'i': id, 'sc': score};
+
+    Future<FakeFirebaseFirestore> twoShards(
+        {required int shard0Lowest}) async {
+      final db = FakeFirebaseFirestore();
+      await db.collection('attractions_index').doc('IT_0').set({
+        'iso2': 'IT',
+        'shard': 0,
+        'items': [item(1, 97), item(2, 90), item(3, shard0Lowest)],
+      });
+      await db.collection('attractions_index').doc('IT_1').set({
+        'iso2': 'IT',
+        'shard': 1,
+        'items': [item(4, 85), item(5, 60)],
+      });
+      await db
+          .collection('attractions_index')
+          .doc('IT_meta')
+          .set({'iso2': 'IT', 'shardCount': 2, 'total': 5});
+      return db;
+    }
+
+    test('aboveScore stops at the first shard reaching the threshold',
+        () async {
+      // Shard 1 deliberately holds an 85: reading it would show up.
+      final db = await twoShards(shard0Lowest: 70);
+      final top =
+          await AttractionsDataSource(firestore: db).aboveScore('IT', 80);
+      expect(top.map((a) => a.id), [1, 2],
+          reason: 'shard 0 already reaches a score <= 80: shard 1 not read');
+    });
+
+    test('aboveScore reads on while a whole shard is above the threshold',
+        () async {
+      final db = await twoShards(shard0Lowest: 88);
+      final top =
+          await AttractionsDataSource(firestore: db).aboveScore('IT', 80);
+      expect(top.map((a) => a.id), [1, 2, 3, 4]);
+    });
+
+    test('aboveScore equals forCountry filtered by score', () async {
+      final db = await twoShards(shard0Lowest: 88);
+      final ds = AttractionsDataSource(firestore: db);
+      final all = await ds.forCountry('IT');
+      expect(all.map((a) => a.id), [1, 2, 3, 4, 5]);
+      final top = await ds.aboveScore('IT', 80);
+      expect(top.map((a) => a.id),
+          all.where((a) => a.greengoScore > 80).map((a) => a.id));
+    });
+
+    Future<FakeFirebaseFirestore> countries() async {
+      final db = FakeFirebaseFirestore();
+      await db.collection('attraction_countries').doc('PT').set({
+        'iso2': 'PT',
+        'name': 'Portugal',
+        'published': true,
+        'bbox': [35.0, -11.0, 43.5, -5.0],
+      });
+      await db.collection('attraction_countries').doc('ES').set({
+        'iso2': 'ES',
+        'name': 'Spain',
+        'published': true,
+        'bbox': [34.0, -10.0, 45.0, 5.0],
+      });
+      return db;
+    }
+
+    test('resolveCountry: the profile country name needs no geo index',
+        () async {
+      final db = await countries();
+      final iso = await AttractionsDataSource(firestore: db)
+          .resolveCountry(countryName: 'portugal', lat: 38.7, lng: -9.1);
+      expect(iso, 'PT');
+    });
+
+    test('resolveCountry: a single containing box needs no geo index',
+        () async {
+      final db = await countries();
+      // Madrid is only inside the Spain box (no geo doc exists here).
+      expect(
+          await AttractionsDataSource(firestore: db)
+              .resolveCountry(lat: 40.4, lng: -3.7),
+          'ES');
+    });
+
+    test('resolveCountry: overlapping boxes use the geo index cities',
+        () async {
+      final db = await countries();
+      await db.collection('attraction_config').doc('geo').set({
+        'countries': [
+          {'iso2': 'PT', 'name': 'Portugal', 'cities': [38.72, -9.14]},
+          {'iso2': 'ES', 'name': 'Spain', 'cities': [40.42, -3.70]},
+        ],
+      });
+      final ds = AttractionsDataSource(firestore: db);
+      // Lisbon sits in both boxes; its nearest city is Portuguese.
+      expect(await ds.resolveCountry(lat: 38.7, lng: -9.1), 'PT');
+      // The memoised geo index keeps its [[lat, lng]] shape on a 2nd call
+      // (it used to hand back the raw flat list, which broke every caller).
+      final geo = await ds.geoIndex();
+      expect(geo.first['cities'], [
+        [38.72, -9.14]
+      ]);
+      expect(await ds.resolveCountry(lat: 38.7, lng: -9.1), 'PT');
+    });
+  });
 }

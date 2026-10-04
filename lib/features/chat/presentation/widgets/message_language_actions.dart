@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
@@ -81,11 +82,15 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
     setState(() => _isTranslating = true);
 
     try {
-      final translated = await _translationService.translate(
+      final result = await _translationService.translateDetailed(
         text: widget.message.content,
         sourceLanguage: 'auto',
         targetLanguage: targetLanguage,
       );
+      // A failure used to come back as the original text and was reported
+      // as "already in your language".
+      if (result.failed) throw StateError('translation failed');
+      final translated = result.text;
 
       if (mounted) {
         setState(() {
@@ -158,7 +163,8 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
     } catch (e) {
       if (mounted) {
         setState(() => _isSavingFlashcard = false);
-        _showSnackBar(AppLocalizations.of(context)!.chatFailedToSaveFlashcard, isError: true);
+        showUserErrorMessage(
+            context, AppLocalizations.of(context)!.chatFailedToSaveFlashcard);
       }
     }
   }

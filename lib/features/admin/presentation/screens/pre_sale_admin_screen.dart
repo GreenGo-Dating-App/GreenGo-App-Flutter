@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/pre_sale_service.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Admin screen for managing the pre-sale tier list.
 /// - Upload CSV files with headers: EMAIL, NUMBER_OF_DAYS, TIER
@@ -162,11 +163,10 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
           ),
         );
       }
-    } catch (e) {
-      setState(() {
-        _errorMessage = 'Error uploading file: $e';
-        _isUploading = false;
-      });
+    } catch (e, st) {
+      if (!mounted) return;
+      setState(() => _isUploading = false);
+      showUserError(context, e, stackTrace: st);
     }
   }
 
@@ -210,8 +210,8 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
           ),
         );
       }
-    } catch (e) {
-      setState(() => _errorMessage = 'Error adding entry: $e');
+    } catch (e, st) {
+      if (mounted) showUserError(context, e, stackTrace: st);
     } finally {
       setState(() => _isLoading = false);
     }
@@ -258,12 +258,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error removing entry: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }

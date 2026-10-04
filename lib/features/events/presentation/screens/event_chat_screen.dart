@@ -11,6 +11,7 @@ import '../../../../core/services/content_filter_service.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../safety/presentation/widgets/report_block_sheet.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/data/chat_constants.dart';
 import '../../data/datasources/events_remote_datasource.dart';
@@ -504,23 +505,15 @@ class _EventChatScreenState extends State<EventChatScreen> {
     // Enforce the maximum message length (defense in depth alongside the
     // input cap — protects pasted content).
     if (text.length > kMaxMessageLength) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.messageTooLong),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(
+          context, AppLocalizations.of(context)!.messageTooLong);
       return;
     }
 
     // Block hate/discriminatory/explicit sexual language.
     if (ContentFilterService().containsProhibitedContent(text)) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.eventTextProhibited),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(
+          context, AppLocalizations.of(context)!.eventTextProhibited);
       return;
     }
 
@@ -587,6 +580,7 @@ class _TranslatableEventTextState extends State<_TranslatableEventText> {
   String? _translated;
   bool _translating = false;
   bool _showingTranslation = false;
+  bool _failed = false;
 
   String get _display =>
       _showingTranslation && _translated != null ? _translated! : widget.text;
@@ -596,23 +590,24 @@ class _TranslatableEventTextState extends State<_TranslatableEventText> {
       setState(() => _showingTranslation = !_showingTranslation);
       return;
     }
-    setState(() => _translating = true);
-    try {
-      final result = await TranslationService().translate(
-        text: widget.text,
-        sourceLanguage: 'auto',
-        targetLanguage: widget.targetLang.replaceAll('_', '-'),
-      );
-      if (!mounted) return;
-      setState(() {
-        _translated = result;
+    setState(() {
+      _translating = true;
+      _failed = false;
+    });
+    final result = await TranslationService().translateDetailed(
+      text: widget.text,
+      sourceLanguage: 'auto',
+      targetLanguage: widget.targetLang.replaceAll('_', '-'),
+    );
+    if (!mounted) return;
+    setState(() {
+      _translating = false;
+      _failed = result.failed;
+      if (!result.failed) {
+        _translated = result.text;
         _showingTranslation = true;
-      });
-    } catch (_) {
-      // Best-effort — leave the original on failure.
-    } finally {
-      if (mounted) setState(() => _translating = false);
-    }
+      }
+    });
   }
 
   @override
@@ -621,9 +616,11 @@ class _TranslatableEventTextState extends State<_TranslatableEventText> {
     // Nothing to translate (empty or already in the target language after a try).
     final label = _translating
         ? l10n.communitiesTranslating
-        : (_showingTranslation
-            ? l10n.communitiesShowOriginal
-            : l10n.communitiesTranslate);
+        : _failed
+            ? l10n.translationFailedTapRetry
+            : (_showingTranslation
+                ? l10n.communitiesShowOriginal
+                : l10n.communitiesTranslate);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,

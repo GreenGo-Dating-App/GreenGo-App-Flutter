@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../business/data/services/follow_service.dart';
 import '../follow_toggle_controller.dart';
@@ -137,12 +138,8 @@ class _UserFollowButtonState extends State<UserFollowButton> {
     final l10n = AppLocalizations.of(context)!;
     final blocked = _controller.lastError is FollowBlockedException;
     if (blocked) setState(() => _blocked = true);
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(blocked ? l10n.userFollowBlocked : l10n.userFollowError),
-        backgroundColor: AppColors.errorRed,
-      ),
-    );
+    showUserErrorMessage(
+        context, blocked ? l10n.userFollowBlocked : l10n.userFollowError);
   }
 
   @override

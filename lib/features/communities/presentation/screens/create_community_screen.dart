@@ -8,6 +8,7 @@ import 'package:image_picker/image_picker.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/platform/web_media.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -161,12 +162,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
               ),
             );
           } else if (state is CommunitiesError) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: AppColors.errorRed,
-              ),
-            );
+            showUserError(context, state.message);
           }
         },
         child: _showPreview ? _buildPreview() : _buildForm(),

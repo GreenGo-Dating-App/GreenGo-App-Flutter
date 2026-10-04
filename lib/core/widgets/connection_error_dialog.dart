@@ -14,6 +14,7 @@ class ConnectionErrorDialog extends StatefulWidget {
     this.onRetry,
     this.onDismiss,
     this.showRetryButton = true,
+    this.dismissLabel,
   });
   final String title;
   final String message;
@@ -22,6 +23,9 @@ class ConnectionErrorDialog extends StatefulWidget {
   final VoidCallback? onRetry;
   final VoidCallback? onDismiss;
   final bool showRetryButton;
+
+  /// Label of the dismiss button; defaults to the localized "Dismiss".
+  final String? dismissLabel;
 
   /// Show a network/connection error dialog
   static Future<void> showConnectionError(
@@ -243,7 +247,9 @@ class _ConnectionErrorDialogState extends State<ConnectionErrorDialog>
                         ),
                       ),
                       child: Text(
-                        AppLocalizations.of(context)?.dismiss ?? 'Dismiss',
+                        widget.dismissLabel ??
+                            AppLocalizations.of(context)?.dismiss ??
+                            'Dismiss',
                         style: const TextStyle(
                           fontWeight: FontWeight.w600,
                         ),

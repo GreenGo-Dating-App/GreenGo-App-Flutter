@@ -1,7 +1,26 @@
 "use strict";
 /**
- * Message Translation Cloud Function
- * Points 111-113: Real-time translation using Cloud Translation API
+ * Message translation callables (kept for API compatibility).
+ *
+ * The app translates chat messages ON THE DEVICE with the free Google
+ * endpoint (TranslationService.translateDetailed); these callables are not
+ * called by the current app. They exist so any older client keeps working,
+ * and they use the same FREE endpoint (./freeTranslate) — nothing here
+ * depends on the paid Cloud Translation API, which is being switched off.
+ *
+ * Chat translations are PRIVATE: they are returned to the caller only, never
+ * written to the shared `translations/` store or into the message document
+ * (a translation in one reader's language written onto the shared message was
+ * also shown to the other participant).
+ *
+ * The former `autoTranslateMessage` Firestore trigger was removed: it ran on
+ * every message create, no user has `autoTranslateMessages` set (0 of 65 on
+ * 2026-10-04), and the app already auto-translates every message for each
+ * reader in their own language. Delete the deployed copy with
+ * `firebase functions:delete autoTranslateMessage`.
+ *
+ * 512MB: the shared index.js needs ~200MB just to load, so 256MB instances are
+ * OOM-killed on cold start.
  */
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -37,35 +56,56 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getSupportedLanguages = exports.batchTranslateMessages = exports.autoTranslateMessage = exports.translateMessage = void 0;
+exports.getSupportedLanguages = exports.batchTranslateMessages = exports.translateMessage = void 0;
 const functions = __importStar(require("firebase-functions/v1"));
 const admin = __importStar(require("firebase-admin"));
-const translate_1 = require("@google-cloud/translate");
 const monitoring_1 = require("../shared/monitoring");
+const freeTranslate_1 = require("./freeTranslate");
 const firestore = admin.firestore();
-const translationClient = new translate_1.TranslationServiceClient();
-// Your Google Cloud project ID
-const projectId = process.env.GCLOUD_PROJECT;
+const MAX_CHARS = 5000;
+const runtime = { memory: '512MB', timeoutSeconds: 60 };
+/** The caller must be a participant of the conversation. */
+async function assertParticipant(conversationId, uid) {
+    const conv = await firestore.collection('conversations').doc(conversationId).get();
+    const d = conv.data();
+    const participants = Array.isArray(d === null || d === void 0 ? void 0 : d.participants) ? d.participants : [];
+    if (!conv.exists || !((d === null || d === void 0 ? void 0 : d.userId1) === uid || (d === null || d === void 0 ? void 0 : d.userId2) === uid || participants.includes(uid))) {
+        throw new functions.https.HttpsError('permission-denied', 'Not a participant of this conversation');
+    }
+}
+function toHttpsError(error) {
+    var _a;
+    if (error instanceof functions.https.HttpsError)
+        return error;
+    if (error instanceof freeTranslate_1.FreeTranslateError) {
+        return new functions.https.HttpsError(error.transient ? 'unavailable' : 'internal', 'Translation is temporarily unavailable');
+    }
+    return new functions.https.HttpsError('internal', (_a = error === null || error === void 0 ? void 0 : error.message) !== null && _a !== void 0 ? _a : 'Translation failed');
+}
 /**
- * Translate a message to the target language
+ * Translate one message into the caller's target language.
+ * Request: { messageId, conversationId, targetLanguage = 'en' }.
  */
-exports.translateMessage = functions.https.onCall((0, monitoring_1.monitored)("translateMessage", async (data, context) => {
-    var _a, _b, _c, _d, _e, _f, _g;
+exports.translateMessage = functions
+    .runWith(runtime)
+    .https.onCall((0, monitoring_1.monitored)("translateMessage", async (data, context) => {
+    var _a, _b, _c, _d;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
-    const { messageId, conversationId, targetLanguage = 'en' } = data;
+    const { messageId, conversationId } = data !== null && data !== void 0 ? data : {};
+    const targetLanguage = (0, freeTranslate_1.normalizeTarget)(String((_a = data === null || data === void 0 ? void 0 : data.targetLanguage) !== null && _a !== void 0 ? _a : 'en'));
     if (!messageId || !conversationId) {
         throw new functions.https.HttpsError('invalid-argument', 'messageId and conversationId are required');
     }
     try {
-        // Get the message
-        const messageRef = firestore
+        await assertParticipant(conversationId, context.auth.uid);
+        const messageDoc = await firestore
             .collection('conversations')
             .doc(conversationId)
             .collection('messages')
-            .doc(messageId);
-        const messageDoc = await messageRef.get();
+            .doc(messageId)
+            .get();
         if (!messageDoc.exists) {
             throw new functions.https.HttpsError('not-found', 'Message not found');
         }
@@ -73,235 +113,86 @@ exports.translateMessage = functions.https.onCall((0, monitoring_1.monitored)("t
         if (!message || message.type !== 'text') {
             throw new functions.https.HttpsError('invalid-argument', 'Only text messages can be translated');
         }
-        const text = message.content;
-        // Check if already translated to this language
-        if (message.translatedContent &&
-            ((_a = message.metadata) === null || _a === void 0 ? void 0 : _a.translatedLanguage) === targetLanguage) {
-            return {
-                success: true,
-                translatedContent: message.translatedContent,
-                detectedLanguage: message.detectedLanguage,
-                cached: true,
-            };
-        }
-        // Detect language and translate
-        const parent = `projects/${projectId}/locations/global`;
-        // Detect language
-        const [detection] = await translationClient.detectLanguage({
-            parent,
-            content: text,
-        });
-        const detectedLanguage = ((_c = (_b = detection.languages) === null || _b === void 0 ? void 0 : _b[0]) === null || _c === void 0 ? void 0 : _c.languageCode) || 'unknown';
-        const confidence = ((_e = (_d = detection.languages) === null || _d === void 0 ? void 0 : _d[0]) === null || _e === void 0 ? void 0 : _e.confidence) || 0;
-        console.log(`Detected language: ${detectedLanguage} (confidence: ${confidence})`);
-        // If already in target language, don't translate
-        if (detectedLanguage === targetLanguage) {
+        const text = String((_b = message.content) !== null && _b !== void 0 ? _b : '').slice(0, MAX_CHARS);
+        const result = await (0, freeTranslate_1.freeTranslate)(text, targetLanguage);
+        if (result.sameLanguage) {
             return {
                 success: true,
                 translatedContent: text,
-                detectedLanguage,
+                detectedLanguage: (_c = result.detectedLanguage) !== null && _c !== void 0 ? _c : 'unknown',
                 sameLanguage: true,
             };
         }
-        // Translate the text
-        const [translation] = await translationClient.translateText({
-            parent,
-            contents: [text],
-            targetLanguageCode: targetLanguage,
-            sourceLanguageCode: detectedLanguage,
-        });
-        const translatedContent = ((_g = (_f = translation.translations) === null || _f === void 0 ? void 0 : _f[0]) === null || _g === void 0 ? void 0 : _g.translatedText) || text;
-        console.log(`Translated from ${detectedLanguage} to ${targetLanguage}`);
-        // Update message with translation
-        await messageRef.update({
-            translatedContent,
-            detectedLanguage,
-            'metadata.translatedLanguage': targetLanguage,
-            'metadata.translationConfidence': confidence,
-            'metadata.translatedAt': admin.firestore.FieldValue.serverTimestamp(),
-        });
         return {
             success: true,
-            translatedContent,
-            detectedLanguage,
+            translatedContent: result.text,
+            detectedLanguage: (_d = result.detectedLanguage) !== null && _d !== void 0 ? _d : 'unknown',
             targetLanguage,
-            confidence,
         };
     }
     catch (error) {
         console.error('Error translating message:', error);
-        throw new functions.https.HttpsError('internal', error.message);
+        throw toHttpsError(error);
     }
 }));
 /**
- * Auto-translate messages based on user preferences
+ * Translate recent text messages of a conversation for the caller.
+ * Request: { conversationId, targetLanguage = 'en', limit = 20 (max 50) }.
+ * Returns the translations; nothing is written.
  */
-exports.autoTranslateMessage = functions.firestore
-    .document('conversations/{conversationId}/messages/{messageId}')
-    .onCreate((0, monitoring_1.monitored)("autoTranslateMessage", async (snapshot, context) => {
-    var _a, _b, _c, _d;
-    const message = snapshot.data();
-    // Only auto-translate text messages
-    if (message.type !== 'text') {
-        return null;
-    }
-    try {
-        // Get receiver's language preference
-        const receiverId = message.receiverId;
-        const userDoc = await firestore.collection('users').doc(receiverId).get();
-        if (!userDoc.exists) {
-            return null;
-        }
-        const userData = userDoc.data();
-        const preferredLanguage = userData === null || userData === void 0 ? void 0 : userData.preferredLanguage;
-        const autoTranslate = userData === null || userData === void 0 ? void 0 : userData.autoTranslateMessages;
-        // If auto-translate is not enabled, skip
-        if (!autoTranslate || !preferredLanguage) {
-            console.log('Auto-translate not enabled for user');
-            return null;
-        }
-        const parent = `projects/${projectId}/locations/global`;
-        // Detect source language
-        const [detection] = await translationClient.detectLanguage({
-            parent,
-            content: message.content,
-        });
-        const detectedLanguage = ((_b = (_a = detection.languages) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.languageCode) || 'unknown';
-        // If already in preferred language, skip
-        if (detectedLanguage === preferredLanguage) {
-            console.log('Message already in preferred language');
-            return null;
-        }
-        // Translate
-        const [translation] = await translationClient.translateText({
-            parent,
-            contents: [message.content],
-            targetLanguageCode: preferredLanguage,
-            sourceLanguageCode: detectedLanguage,
-        });
-        const translatedContent = ((_d = (_c = translation.translations) === null || _c === void 0 ? void 0 : _c[0]) === null || _d === void 0 ? void 0 : _d.translatedText) || message.content;
-        // Update message
-        await snapshot.ref.update({
-            translatedContent,
-            detectedLanguage,
-            'metadata.autoTranslated': true,
-            'metadata.translatedLanguage': preferredLanguage,
-            'metadata.translatedAt': admin.firestore.FieldValue.serverTimestamp(),
-        });
-        console.log(`Auto-translated message from ${detectedLanguage} to ${preferredLanguage}`);
-        return null;
-    }
-    catch (error) {
-        console.error('Error in auto-translate:', error);
-        return null; // Don't fail message creation
-    }
-}));
-/**
- * Batch translate multiple messages
- */
-exports.batchTranslateMessages = functions.https.onCall((0, monitoring_1.monitored)("batchTranslateMessages", async (data, context) => {
-    var _a, _b, _c, _d;
-    if (!context.auth) {
-        throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
-    }
-    const { conversationId, targetLanguage = 'en', limit = 20 } = data;
-    if (!conversationId) {
-        throw new functions.https.HttpsError('invalid-argument', 'conversationId is required');
-    }
-    try {
-        // Get text messages without translation
-        const messagesSnapshot = await firestore
-            .collection('conversations')
-            .doc(conversationId)
-            .collection('messages')
-            .where('type', '==', 'text')
-            .where('translatedContent', '==', null)
-            .limit(limit)
-            .get();
-        const parent = `projects/${projectId}/locations/global`;
-        const results = [];
-        for (const doc of messagesSnapshot.docs) {
-            const message = doc.data();
-            try {
-                // Detect and translate
-                const [detection] = await translationClient.detectLanguage({
-                    parent,
-                    content: message.content,
-                });
-                const detectedLanguage = ((_b = (_a = detection.languages) === null || _a === void 0 ? void 0 : _a[0]) === null || _b === void 0 ? void 0 : _b.languageCode) || 'unknown';
-                if (detectedLanguage !== targetLanguage) {
-                    const [translation] = await translationClient.translateText({
-                        parent,
-                        contents: [message.content],
-                        targetLanguageCode: targetLanguage,
-                        sourceLanguageCode: detectedLanguage,
-                    });
-                    const translatedContent = ((_d = (_c = translation.translations) === null || _c === void 0 ? void 0 : _c[0]) === null || _d === void 0 ? void 0 : _d.translatedText) || message.content;
-                    await doc.ref.update({
-                        translatedContent,
-                        detectedLanguage,
-                        'metadata.translatedLanguage': targetLanguage,
-                        'metadata.translatedAt': admin.firestore.FieldValue.serverTimestamp(),
-                    });
-                    results.push({
-                        messageId: doc.id,
-                        success: true,
-                        detectedLanguage,
-                    });
-                }
-                else {
-                    results.push({
-                        messageId: doc.id,
-                        success: true,
-                        sameLanguage: true,
-                    });
-                }
-            }
-            catch (error) {
-                results.push({
-                    messageId: doc.id,
-                    success: false,
-                    error: error.message,
-                });
-            }
-        }
-        return {
-            success: true,
-            processed: results.length,
-            results,
-        };
-    }
-    catch (error) {
-        console.error('Error in batchTranslateMessages:', error);
-        throw new functions.https.HttpsError('internal', error.message);
-    }
-}));
-/**
- * Get supported languages
- */
-exports.getSupportedLanguages = functions.https.onCall((0, monitoring_1.monitored)("getSupportedLanguages", async (data, context) => {
+exports.batchTranslateMessages = functions
+    .runWith(runtime)
+    .https.onCall((0, monitoring_1.monitored)("batchTranslateMessages", async (data, context) => {
     var _a;
     if (!context.auth) {
         throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
+    const conversationId = data === null || data === void 0 ? void 0 : data.conversationId;
+    const targetLanguage = (0, freeTranslate_1.normalizeTarget)(String((_a = data === null || data === void 0 ? void 0 : data.targetLanguage) !== null && _a !== void 0 ? _a : 'en'));
+    const limit = Math.min(Math.max(Number(data === null || data === void 0 ? void 0 : data.limit) || 20, 1), 50);
+    if (!conversationId) {
+        throw new functions.https.HttpsError('invalid-argument', 'conversationId is required');
+    }
     try {
-        const parent = `projects/${projectId}/locations/global`;
-        const [response] = await translationClient.getSupportedLanguages({
-            parent,
-            displayLanguageCode: data.displayLanguage || 'en',
+        await assertParticipant(conversationId, context.auth.uid);
+        const messagesSnapshot = await firestore
+            .collection('conversations')
+            .doc(conversationId)
+            .collection('messages')
+            .orderBy('sentAt', 'desc') // single-field: no composite index needed
+            .limit(limit)
+            .get();
+        const docs = messagesSnapshot.docs.filter((d) => d.data().type === 'text');
+        const translations = await (0, freeTranslate_1.freeTranslateMany)(docs.map((d) => { var _a; return String((_a = d.data().content) !== null && _a !== void 0 ? _a : '').slice(0, MAX_CHARS); }), targetLanguage, { concurrency: 4, timeoutMs: 6000, deadlineMs: 40000 });
+        const results = docs.map((doc, i) => {
+            const t = translations[i];
+            if (!t)
+                return { messageId: doc.id, success: false, error: 'unavailable' };
+            return t.sameLanguage
+                ? { messageId: doc.id, success: true, sameLanguage: true, detectedLanguage: t.detectedLanguage }
+                : {
+                    messageId: doc.id,
+                    success: true,
+                    translatedContent: t.text,
+                    detectedLanguage: t.detectedLanguage,
+                };
         });
-        const languages = ((_a = response.languages) === null || _a === void 0 ? void 0 : _a.map((lang) => ({
-            code: lang.languageCode,
-            name: lang.displayName,
-        }))) || [];
-        return {
-            success: true,
-            languages,
-        };
+        return { success: true, processed: results.length, results };
     }
     catch (error) {
-        console.error('Error getting supported languages:', error);
-        throw new functions.https.HttpsError('internal', error.message);
+        console.error('Error in batchTranslateMessages:', error);
+        throw toHttpsError(error);
     }
+}));
+/**
+ * Get supported languages (static list; no API call).
+ */
+exports.getSupportedLanguages = functions
+    .runWith(runtime)
+    .https.onCall((0, monitoring_1.monitored)("getSupportedLanguages", async (_data, context) => {
+    if (!context.auth) {
+        throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+    }
+    return { success: true, languages: freeTranslate_1.SUPPORTED_LANGUAGES };
 }));
 //# sourceMappingURL=translation.js.map

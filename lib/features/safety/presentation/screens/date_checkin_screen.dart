@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/date_checkin.dart';
 
@@ -113,12 +114,8 @@ class _DateCheckInScreenState extends State<DateCheckInScreen> {
     if (!_formKey.currentState!.validate()) return;
 
     if (_emergencyContacts.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.safetyAddAtLeastOneContact),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(
+          context, AppLocalizations.of(context)!.safetyAddAtLeastOneContact);
       return;
     }
 

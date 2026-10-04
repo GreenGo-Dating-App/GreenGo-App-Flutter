@@ -7,6 +7,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/early_access_service.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Admin screen for managing the early access email list
 /// - Upload CSV files with email addresses
@@ -140,11 +141,10 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           ),
         );
       }
-    } catch (e) {
-      setState(() {
-        _errorMessage = AppLocalizations.of(context)!.adminErrorUploadingFile(e.toString());
-        _isUploading = false;
-      });
+    } catch (e, st) {
+      if (!mounted) return;
+      setState(() => _isUploading = false);
+      showUserError(context, e, stackTrace: st);
     }
   }
 
@@ -178,8 +178,8 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           ),
         );
       }
-    } catch (e) {
-      setState(() => _errorMessage = AppLocalizations.of(context)!.adminErrorAddingEmail(e.toString()));
+    } catch (e, st) {
+      if (mounted) showUserError(context, e, stackTrace: st);
     } finally {
       setState(() => _isLoading = false);
     }
@@ -228,12 +228,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(l10n.adminErrorRemovingEmail(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }

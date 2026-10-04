@@ -18,7 +18,6 @@ import '../../data/services/attraction_ratings_store.dart';
 import '../../domain/attraction_filters.dart';
 import '../../domain/attraction_rating.dart';
 import '../../domain/category_labels.dart';
-import '../../domain/country_resolver.dart';
 import '../../domain/entities/attraction.dart';
 import '../screens/attraction_detail_screen.dart';
 import 'attraction_grid_tile.dart';
@@ -79,6 +78,25 @@ class _AttractionsTabState extends State<AttractionsTab>
   List<AttractionCountry> _countries = const [];
   List<Attraction> _items = const [];
 
+  /// Ids of [_items] (rebuilt only when the list changes identity).
+  Set<int> get _itemIds {
+    if (!identical(_itemIdsOf, _items)) {
+      _itemIdsOf = _items;
+      _itemIdsCache = {for (final a in _items) a.id};
+    }
+    return _itemIdsCache;
+  }
+
+  List<Attraction>? _itemIdsOf;
+  Set<int> _itemIdsCache = const {};
+
+  /// The last ordered + filtered list and what it was computed from. A big
+  /// country is ~2,800 records: re-scoring / re-sorting it (a haversine per
+  /// comparison) on EVERY rebuild — each ratings batch, each scroll page —
+  /// was pure waste.
+  List<Attraction>? _memoAll;
+  _ViewKey? _memoKey;
+
   /// How many records are rendered right now. The list grows by [_pageSize] as
   /// the user reaches the end, rather than laying out the whole country up
   /// front.
@@ -92,10 +110,17 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   final ScrollController _scroll = ScrollController();
 
-  /// Whole catalogue, loaded lazily the first time the user searches so a query
-  /// can match a country or city outside the one currently being browsed.
-  List<Attraction> _all = const [];
+  /// Cross-catalogue matches for [_hitsQuery] (a country, city or attraction
+  /// named like the query, anywhere — see
+  /// [AttractionsDataSource.searchCatalogue]); ranked in memory together with
+  /// the country on screen. The whole catalogue (~45 MB) is never read.
+  List<Attraction> _hits = const [];
+  String _hitsQuery = '';
   bool _loadingAll = false;
+  Timer? _searchDebounce;
+
+  /// Waits for typing to settle before querying the server.
+  static const Duration _searchDelay = Duration(milliseconds: 350);
 
   /// attractionId -> relevance rank for the current query. Kept so an explicit
   /// sort can still fall back to relevance when two records tie.
@@ -200,6 +225,7 @@ class _AttractionsTabState extends State<AttractionsTab>
     _lat = widget.userLat;
     _lng = widget.userLng;
     _bootstrap();
+    if (widget.query.trim().isNotEmpty) _scheduleSearch();
   }
 
   /// Extends the window when the user gets near the end.
@@ -328,6 +354,7 @@ class _AttractionsTabState extends State<AttractionsTab>
     _scroll.removeListener(_onScroll);
     _scroll.dispose();
     _ratings.removeListener(_onRatings);
+    _searchDebounce?.cancel();
     super.dispose();
   }
 
@@ -339,7 +366,7 @@ class _AttractionsTabState extends State<AttractionsTab>
       widget.filters?.attach(_openFilters);
       _publishActive();
     }
-    if (widget.query.trim().isNotEmpty && _all.isEmpty) _loadAll();
+    if (old.query.trim() != widget.query.trim()) _scheduleSearch();
     // A refined device position (from the Events screen) re-sorts and can
     // reveal the "you're here" country — unless Traveler mode pins the anchor.
     if ((old.userLat != widget.userLat || old.userLng != widget.userLng) &&
@@ -422,13 +449,14 @@ class _AttractionsTabState extends State<AttractionsTab>
     final likely = AttractionsPrefetch.likelyIso;
     if (likely != null && !relocate) unawaited(_ds.forCountry(likely));
     try {
-      // Every read here is independent, so they run together. geoIndex is
-      // warmed now because _detectHere needs it right after.
+      // Every read here is independent, so they run together. (The ~0.5 MB
+      // geo index is NOT on this path: _detectHere resolves the country from
+      // the profile's country name / the countries' boxes and reads it only
+      // when those are ambiguous.)
       final reads = await Future.wait<Object>([
         _ds.bucket(),
         _ds.publishedCountries(),
         _readProfile(),
-        _ds.geoIndex(),
       ]);
       _bucket = reads[0] as String;
       final countries = reads[1] as List<AttractionCountry>;
@@ -481,28 +509,10 @@ class _AttractionsTabState extends State<AttractionsTab>
     final lat = _posLat, lng = _posLng;
     if (lat == null && _anchorCountryName == null) return;
     try {
-      // ONE cached document (attraction_config/geo) carries every published
-      // country's bbox and its city coordinates. This used to read ~700
-      // attraction_cities docs plus ~60 attraction_countries docs on every
-      // open, before the first attraction could even be shown.
-      final candidates = (await _ds.geoIndex()).map((m) {
-        final iso = (m['iso2'] ?? '').toString().toUpperCase();
-        final bboxRaw = m['bbox'];
-        return CountryCandidate(
-          iso2: iso,
-          name: (m['name'] ?? iso).toString(),
-          bbox: bboxRaw is List
-              ? bboxRaw.map((e) => (e as num).toDouble()).toList()
-              : null,
-          cities: ((m['cities'] as List?) ?? const [])
-              .map<(double, double)>((c) =>
-                  ((c[0] as num).toDouble(), (c[1] as num).toDouble()))
-              .toList(),
-        );
-      }).toList();
-
-      final iso = CountryResolver.resolve(
-        candidates: candidates,
+      // Country name first, then a single containing bounding box; the geo
+      // index (every city) only for border cases. Same answer as the full
+      // CountryResolver pass, without its ~0.5 MB read on most opens.
+      final iso = await _ds.resolveCountry(
         countryName: _anchorCountryName,
         lat: lat,
         lng: lng,
@@ -527,14 +537,33 @@ class _AttractionsTabState extends State<AttractionsTab>
     } catch (_) {/* non-fatal: falls back to primaryOrigin */}
   }
 
-  /// Pull the whole catalogue once, so search is not limited to the country
-  /// currently on screen.
-  Future<void> _loadAll() async {
-    if (_loadingAll || _all.isNotEmpty) return;
-    _loadingAll = true;
-    final list = await _ds.allPublished();
-    if (mounted) setState(() => _all = list);
-    _loadingAll = false;
+  /// Looks the (settled) query up across the whole catalogue, so search is
+  /// not limited to the country on screen. Bounded and memoised per query by
+  /// [AttractionsDataSource.searchCatalogue].
+  void _scheduleSearch() {
+    _searchDebounce?.cancel();
+    final q = widget.query.trim();
+    if (q.isEmpty) {
+      if (_hits.isNotEmpty || _loadingAll) {
+        setState(() {
+          _hits = const [];
+          _hitsQuery = '';
+          _loadingAll = false;
+        });
+      }
+      return;
+    }
+    _searchDebounce = Timer(_searchDelay, () async {
+      if (!mounted) return;
+      setState(() => _loadingAll = true);
+      final list = await _ds.searchCatalogue(q);
+      if (!mounted || widget.query.trim() != q) return;
+      setState(() {
+        _hits = list;
+        _hitsQuery = q;
+        _loadingAll = false;
+      });
+    });
   }
 
   Future<void> _loadSelected() async {
@@ -623,9 +652,15 @@ class _AttractionsTabState extends State<AttractionsTab>
   List<Attraction> get _matched {
     if (!_searching) return _items;
     final q = widget.query.trim().toLowerCase();
-    // Fall back to the current country while the full catalogue is still
-    // loading, so the first keystrokes still show something.
-    final pool = _all.isNotEmpty ? _all : _items;
+    // The country on screen, plus the cross-catalogue matches once they
+    // landed for this query (the first keystrokes still show something).
+    final hits = _hitsQuery == widget.query.trim() ? _hits : const <Attraction>[];
+    final pool = hits.isEmpty
+        ? _items
+        : [
+            ..._items,
+            ...hits.where((h) => !_itemIds.contains(h.id)),
+          ];
     final l10n = AppLocalizations.of(context);
     final scored = <(int, Attraction)>[];
     for (final a in pool) {
@@ -848,13 +883,26 @@ class _AttractionsTabState extends State<AttractionsTab>
     // ONE computation per build. Score, category and city all narrow the
     // matched list (country, or search results), and the result header and
     // the grid both read from it, so they can never disagree.
-    final all = _visibleFrom(filterAttractions(
-      _matched,
-      minScore: _scoreRange.start.round(),
-      maxScore: _scoreRange.end.round(),
-      category: _category,
-      city: _city,
-    ));
+    final memoKey = _ViewKey(
+      items: _items,
+      hits: _hits,
+      countries: _countries,
+      params: '${widget.query.trim()}|$_hitsQuery'
+          '|${_scoreRange.start.round()}-${_scoreRange.end.round()}'
+          '|${_category ?? ''}|${_city ?? ''}|$_effectiveSort'
+          '|$_posLat,$_posLng|${Localizations.localeOf(context)}',
+    );
+    final all = _memoAll != null && memoKey.sameAs(_memoKey)
+        ? _memoAll!
+        : _visibleFrom(filterAttractions(
+            _matched,
+            minScore: _scoreRange.start.round(),
+            maxScore: _scoreRange.end.round(),
+            category: _category,
+            city: _city,
+          ));
+    _memoAll = all;
+    _memoKey = memoKey;
     _lastAll = all;
     // Reset the window when the underlying list changes identity.
     _syncWindow(
@@ -1176,6 +1224,26 @@ class _AttractionsTabState extends State<AttractionsTab>
   }
 }
 
+/// What [_AttractionsTabState]'s ordered list was computed from. The lists are
+/// replaced, never mutated, so they compare by identity; everything else is
+/// folded into [params].
+class _ViewKey {
+  const _ViewKey({
+    required this.items,
+    required this.hits,
+    required this.countries,
+    required this.params,
+  });
 
+  final List<Attraction> items;
+  final List<Attraction> hits;
+  final List<AttractionCountry> countries;
+  final String params;
 
-
+  bool sameAs(_ViewKey? o) =>
+      o != null &&
+      identical(items, o.items) &&
+      identical(hits, o.hits) &&
+      identical(countries, o.countries) &&
+      params == o.params;
+}

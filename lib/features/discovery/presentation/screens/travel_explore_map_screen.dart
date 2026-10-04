@@ -3,6 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/widgets/language_badge.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -285,19 +287,23 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
         children: [
           const Icon(Icons.error_outline, color: AppColors.errorRed, size: 48),
           const SizedBox(height: 16),
-          const Text(
-            'Could not load travelers',
-            style: TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 16,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 32),
+            child: Text(
+              userErrorMessage(context, _error),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 16,
+              ),
             ),
           ),
           const SizedBox(height: 8),
           TextButton(
             onPressed: _loadTravelers,
-            child: const Text(
-              'Try again',
-              style: TextStyle(color: AppColors.richGold),
+            child: Text(
+              AppLocalizations.of(context)?.tryAgain ?? 'Try again',
+              style: const TextStyle(color: AppColors.richGold),
             ),
           ),
         ],

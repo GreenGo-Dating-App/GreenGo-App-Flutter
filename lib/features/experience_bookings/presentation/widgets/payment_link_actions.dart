@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
 
@@ -21,9 +21,7 @@ Future<void> openBookingPaymentLink(
   final ok = uri != null &&
       await launchUrl(uri, mode: LaunchMode.externalApplication)
           .catchError((_) => false);
-  if (!ok) {
-    messenger.showSnackBar(SnackBar(
-        content: Text(l.uexpOpenLinkFailed),
-        backgroundColor: AppColors.errorRed));
+  if (!ok && context.mounted) {
+    await showUserErrorMessage(context, l.uexpOpenLinkFailed);
   }
 }

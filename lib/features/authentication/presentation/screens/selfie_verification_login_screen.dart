@@ -6,6 +6,7 @@ import 'package:image_picker/image_picker.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user.dart';
 import '../bloc/auth_bloc.dart';
@@ -48,23 +49,14 @@ class _SelfieVerificationLoginScreenState
       }
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.authFailedToTakePhoto(e.toString())),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserError(context, e);
     }
   }
 
   Future<void> _verifyAndProceed() async {
     if (_capturedPhoto == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.authTakeSelfieToVerify),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(
+          context, AppLocalizations.of(context)!.authTakeSelfieToVerify);
       return;
     }
 

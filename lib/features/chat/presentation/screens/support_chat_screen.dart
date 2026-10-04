@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -331,12 +332,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     } catch (e) {
       debugPrint('Error sending message: $e');
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatSupportFailedToSend(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) {
@@ -458,12 +454,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
     } catch (e) {
       debugPrint('Error picking image: $e');
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatFailedToPickImage(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -1259,12 +1250,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.chatSupportFailedToReopen(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }

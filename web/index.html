@@ -203,11 +203,135 @@
   </script>
 
   <!--
+    Restart diagnostics + new-version detection.
+
+    1. Every boot records why this page (re)started: a normal navigation, a
+       reload (user F5, or the browser reloading a tab it killed for memory --
+       iOS Safari does this silently), or a restore of a tab the browser
+       discarded in the background (`document.wasDiscarded`, Chrome/Android).
+       The record lives in sessionStorage so consecutive boots in one tab are
+       linked; Dart reads `__ggBootInfo` and logs it. This is the only way to
+       tell "the app restarted by itself" apart in the field.
+
+    2. A deploy is detected by polling version.json (no-store). It NEVER
+       reloads the page by itself -- it only notifies Dart, which shows a
+       dismissible "new version available" banner. `apply()` reloads once per
+       target build per tab: if the reload still boots the old build (stale
+       edge cache), that build is never offered again in this tab, so a
+       refresh loop is impossible.
+  -->
+  <script>
+    (function () {
+      function ss(key, value) {
+        try {
+          if (value === undefined) return sessionStorage.getItem(key);
+          if (value === null) sessionStorage.removeItem(key);
+          else sessionStorage.setItem(key, value);
+        } catch (e) {}
+        return null;
+      }
+
+      // -- restart diagnostics ---------------------------------------------
+      var now = Date.now();
+      var navType = 'navigate';
+      try {
+        var entry = performance.getEntriesByType('navigation')[0];
+        if (entry && entry.type) navType = entry.type;
+      } catch (e) {}
+      var boots = [];
+      try { boots = JSON.parse(ss('gg_boot_log') || '[]') || []; } catch (e) {}
+      var selfReload = ss('gg_self_reload');
+      ss('gg_self_reload', null);
+      var info = {
+        navType: navType,
+        wasDiscarded: document.wasDiscarded === true,
+        selfReload: selfReload === '1',
+        bootsThisTab: boots.length + 1,
+        sinceLastBootMs: boots.length ? now - boots[boots.length - 1] : -1
+      };
+      boots.push(now);
+      ss('gg_boot_log', JSON.stringify(boots.slice(-10)));
+      window.__ggBootInfo = info;
+      if ((navType === 'reload' || info.wasDiscarded) && !info.selfReload) {
+        console.warn('[GreenGo] page restarted: ' + JSON.stringify(info));
+      }
+
+      // -- new-version detection -------------------------------------------
+      var POLL_MS = 15 * 60 * 1000;     // while the tab is visible
+      var RESUME_MIN_MS = 5 * 60 * 1000; // re-check on return, at most this often
+      var bootBuild = null;
+      var latestBuild = null;
+      var lastCheck = 0;
+      var listeners = [];
+      var notified = false;
+
+      function readBuild() {
+        return fetch('version.json?gg=' + Date.now(), { cache: 'no-store' })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (j) {
+            return j && j.version ? String(j.version) + '+' + String(j.build_number || '') : null;
+          })
+          .catch(function () { return null; });
+      }
+
+      function check() {
+        lastCheck = Date.now();
+        return readBuild().then(function (build) {
+          if (!build) return;
+          if (bootBuild === null) { bootBuild = build; return; }
+          if (build === bootBuild) return;
+          // Already reloaded for this build in this tab and still running the
+          // old one: never offer it again here (no loops).
+          if (ss('gg_update_tried') === build) return;
+          latestBuild = build;
+          if (notified) return;
+          notified = true;
+          listeners.forEach(function (fn) { try { fn(build); } catch (e) {} });
+        });
+      }
+
+      // Baseline: the build that was live as this page booted.
+      check();
+      setInterval(function () {
+        if (document.visibilityState === 'visible') check();
+      }, POLL_MS);
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'visible' &&
+            Date.now() - lastCheck > RESUME_MIN_MS) {
+          check();
+        }
+      });
+
+      window.__ggUpdate = {
+        bootBuild: function () { return bootBuild; },
+        latestBuild: function () { return latestBuild; },
+        // Registers a callback for "a newer build is live". Fires at most once
+        // per page; fires immediately if one was already seen.
+        onAvailable: function (fn) {
+          if (typeof fn !== 'function') return;
+          listeners.push(fn);
+          if (notified && latestBuild) { try { fn(latestBuild); } catch (e) {} }
+        },
+        // User-initiated only (the banner's Refresh button).
+        apply: function () {
+          if (!latestBuild) return false;
+          if (ss('gg_update_tried') === latestBuild) return false;
+          ss('gg_update_tried', latestBuild);
+          ss('gg_self_reload', '1');
+          window.location.reload();
+          return true;
+        },
+        bootInfo: function () { return JSON.stringify(window.__ggBootInfo || {}); }
+      };
+    })();
+  </script>
+
+  <!--
     Boot screen. Flutter web paints nothing until the engine has downloaded and
     rendered its first frame, and the default document background is white, so
     the app opened on a white flash. This paints the brand black immediately
-    (inline, so it costs no extra round trip) and reports real download
-    progress while main.dart.js streams in.
+    (inline, so it costs no extra round trip) and shows which boot phase is
+    running (downloading, then starting) without requesting anything itself.
   -->
   <style>
     html, body { margin: 0; padding: 0; background: #0A0A0A; }
@@ -247,7 +371,7 @@
       background: linear-gradient(90deg, #D4AF37, #FFD700);
       transition: width 180ms ease-out;
     }
-    /* Until the total size is known the bar sweeps instead of filling. */
+    /* While main.dart.js downloads the bar sweeps; it fills once the engine starts. */
     #gg-bar.gg-indeterminate #gg-fill {
       width: 40%;
       animation: gg-sweep 1200ms ease-in-out infinite;
@@ -298,19 +422,10 @@
       var lang = (navigator.language || 'en').slice(0, 2).toLowerCase();
       var words = COPY[lang] || COPY.en;
 
-      function mb(bytes) { return (bytes / 1048576).toFixed(1); }
-
-      function setProgress(received, total) {
-        if (!label) return;
-        if (total > 0) {
-          if (bar) bar.classList.remove('gg-indeterminate');
-          var pct = Math.max(0, Math.min(100, received / total * 100));
-          if (fill) fill.style.width = pct.toFixed(1) + '%';
-          label.textContent =
-            words[0] + '  ' + mb(received) + ' / ' + mb(total) + ' MB';
-        } else {
-          label.textContent = words[0] + '  ' + mb(received) + ' MB';
-        }
+      // Phase 1 -- downloading: the bar sweeps (indeterminate, its initial
+      // class) and the label names the phase.
+      function startProgress() {
+        if (label) label.textContent = words[0] + '...';
       }
 
       // Download finished: hand the bar over to engine startup, which has no
@@ -332,42 +447,15 @@
       }
 
       // -- progress ---------------------------------------------------------
-      // Observational only: the engine loads main.dart.js through its own
-      // <script> tag, and Chrome serves both that and this fetch from a single
-      // network request (verified against a local server -- one GET per load).
-      // Reading the stream is the only way to get byte-level progress, since
-      // Firebase serves it Brotli-encoded with chunked transfer and therefore
-      // no Content-Length.
-      function trackProgress() {
-        if (!window.fetch || !window.ReadableStream) return;
-
-        // Stamped by tools/stamp_boot_size.py after `flutter build web`.
-        var total = 0; /*GG_BOOT_BYTES*/
-
-        fetch('main.dart.js')
-          .then(function (res) {
-            if (!res.ok || !res.body || !res.body.getReader) {
-              throw new Error('not streamable');
-            }
-            var reader = res.body.getReader();
-            var received = 0;
-            setProgress(0, total);
-            return (function pump() {
-              return reader.read().then(function (chunk) {
-                if (chunk.done) return;
-                received += chunk.value.length;
-                setProgress(received, total);
-                return pump();
-              });
-            })();
-          })
-          .catch(function () {
-            // Cosmetic only -- the engine loads the entrypoint regardless.
-          });
-      }
-
+      // Phase-based, not byte-based, and deliberately issues NO request of
+      // its own. It used to fetch('main.dart.js') in parallel with the
+      // engine's <script> tag to stream byte progress, on the assumption that
+      // the browser would share one network request. It does not: Chrome
+      // downloaded the ~9 MB entrypoint twice on every load (once for the
+      // script, once for this cosmetic fetch). The engine loads main.dart.js
+      // exactly once; onEntrypointLoaded below marks the end of that phase.
       // -- boot -------------------------------------------------------------
-      trackProgress();
+      startProgress();
 
       // Dart calls this from AuthWrapper's first frame, i.e. the moment a real
       // branded screen is actually on the display.

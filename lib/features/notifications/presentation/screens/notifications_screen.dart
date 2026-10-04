@@ -33,6 +33,7 @@ import '../../domain/usecases/get_notification_preferences.dart';
 import '../bloc/notifications_bloc.dart';
 import '../bloc/notifications_event.dart';
 import '../bloc/notifications_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Notifications Screen — the app's notifications hub.
 ///
@@ -183,7 +184,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      state.message,
+                      userErrorMessage(context, state.message),
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 16,

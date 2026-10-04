@@ -11,6 +11,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/deep_link_service.dart';
 import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/domain/repositories/bookings_repository.dart';
@@ -199,9 +200,7 @@ class _DetailViewState extends State<_DetailView> {
         );
     if (!mounted) return;
     if (saved.isLeft()) {
-      messenger.showSnackBar(SnackBar(
-          content: Text(l.somethingWentWrong),
-          backgroundColor: AppColors.errorRed));
+      unawaited(showUserError(context, saved.fold((f) => f, (_) => null)));
       return;
     }
     if (method == PaymentMethod.cash) {
@@ -220,10 +219,8 @@ class _DetailViewState extends State<_DetailView> {
     final ok = uri != null &&
         await launchUrl(uri, mode: LaunchMode.externalApplication)
             .catchError((_) => false);
-    if (!ok) {
-      messenger.showSnackBar(SnackBar(
-          content: Text(l.uexpOpenLinkFailed),
-          backgroundColor: AppColors.errorRed));
+    if (!ok && mounted) {
+      unawaited(showUserErrorMessage(context, l.uexpOpenLinkFailed));
     }
   }
 
@@ -336,9 +333,7 @@ class _DetailViewState extends State<_DetailView> {
                     ? l.uexpPublished
                     : l.uexpUnpublished)));
           case ExperienceDetailAction.failed:
-            m.showSnackBar(SnackBar(
-                content: Text(l.somethingWentWrong),
-                backgroundColor: AppColors.errorRed));
+            showUserErrorMessage(context, l.userErrorGeneric);
           case ExperienceDetailAction.none:
             break;
         }

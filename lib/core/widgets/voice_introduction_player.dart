@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../utils/user_error.dart';
 
 /// Voice Introduction Player Widget
 ///
@@ -102,12 +103,8 @@ class _VoiceIntroductionPlayerState extends State<VoiceIntroductionPlayer> {
     } catch (e) {
       debugPrint('Error playing audio: $e');
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.unableToPlayVoiceIntro),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(
+            context, AppLocalizations.of(context)!.unableToPlayVoiceIntro);
       }
     } finally {
       if (mounted) {

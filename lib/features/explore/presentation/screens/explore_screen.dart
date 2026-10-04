@@ -11,7 +11,6 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../attractions/data/datasources/attractions_datasource.dart';
 import '../../../attractions/data/services/attraction_ratings_store.dart';
 import '../../../attractions/domain/attraction_rating.dart';
-import '../../../attractions/domain/country_resolver.dart';
 import '../../../attractions/domain/entities/attraction.dart';
 import '../../../attractions/presentation/screens/attraction_detail_screen.dart';
 import '../../../attractions/presentation/widgets/attraction_rating_line.dart';
@@ -37,6 +36,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
+import '../../../coins/presentation/bloc/coin_state.dart';
 import '../../../coins/presentation/bloc/coin_event.dart';
 import '../../../coins/presentation/screens/coin_shop_screen.dart';
 import '../../../communities/data/datasources/communities_remote_datasource.dart';
@@ -279,17 +279,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
       (_communityEvents?.isNotEmpty ?? false) ||
       _spotlight != null;
 
-  /// The header stats row is shown only once all four tiles have a value.
-  bool get _statsReady =>
-      _coinsStat != null &&
-      _tierStat != null &&
-      _countriesStat != null &&
-      _peopleStat != null;
-
   @override
   void initState() {
     super.initState();
     _seedPlaceFromOwnProfile();
+    // The stats header (coins, tier, countries, chats) is at the TOP of the
+    // page and depends on nothing location-based, so it starts NOW: last
+    // known values on the first frame, live/fresh values right after —
+    // never behind the session location wait or the content gate below.
+    _seedStats();
+    unawaited(_loadCoinsStat());
+    _scheduleStats();
     // G0 perf traces: screen-open (stopped on first frame) + feed-load (stopped
     // when the initial content resolves). No-op in debug (release-only perf).
     final perf = di.sl<PerformanceMonitoringService>();
@@ -354,9 +354,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
       unawaited(_paintCachedSections().whenComplete(_checkContentGate));
       unawaited(_paintCachedTopExperiences().whenComplete(_checkContentGate));
     }
-    // The Countries / People counters are the priciest reads on the page and
-    // don't need to be live: last value now, recomputed after the first paint.
-    _scheduleStats(immediately: forceRefresh);
+    // The stats header started in initState; a pull-to-refresh recomputes
+    // the Countries / People counters now (coins and tier are live).
+    if (forceRefresh) _scheduleStats(immediately: true);
     // Fire the content loads concurrently; each updates state on its own and
     // never throws (a failure just hides its section). On a pull-to-refresh
     // (forceRefresh) the people pool bypasses its in-memory cache; the Firestore
@@ -374,7 +374,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
       _trackContent('businesses', _loadBusinesses()),
       _trackContent('myEvents', _loadMyEvents()),
       _trackContent('communities', _loadCommunities()),
-      _loadCoinsStat(),
       // People (and the below-the-fold spotlight) - started only once the
       // content is on screen.
       _afterContent(_loadRecommended),
@@ -648,6 +647,28 @@ class _ExploreScreenState extends State<ExploreScreen> {
   static const String _kCacheCommunityEvents = 'explore_community_events_v1';
   static const String _kCacheStatCountries = 'explore_stat_countries_v1';
   static const String _kCacheStatPeople = 'explore_stat_people_v1';
+  static const String _kCacheStatCoins = 'explore_stat_coins_v1';
+
+  /// First-frame values for the stats header from what the app already holds:
+  /// the tier from the shell's live own-profile copy (same effective-tier
+  /// rule as [_loadProfile]) and the coins from the shell's CoinBloc. The
+  /// last-session values of every tile follow from [LastResultCache].
+  void _seedStats() {
+    final store = OwnProfileStore.instance;
+    final data = store.uid == widget.userId ? store.raw : null;
+    if (data != null) _tierStat = _tierShortLabel(effectiveTierFromDoc(data));
+    try {
+      final state = context.read<CoinBloc>().state;
+      final balance = state is CoinBalanceLoaded
+          ? state.balance
+          : state is CoinBalanceUpdated
+              ? state.balance
+              : null;
+      if (balance != null && balance.userId == widget.userId) {
+        _coinsStat = NumberFormat.compact().format(balance.availableCoins);
+      }
+    } catch (_) {/* no CoinBloc above (preview / tests): cache + listener */}
+  }
 
   /// Paints every cacheable section from what the last SERVER load rendered
   /// (ids → documents read from the local Firestore cache, see
@@ -833,6 +854,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final cached = await Future.wait([
         LastResultCache.loadJson(_kCacheStatCountries),
         LastResultCache.loadJson(_kCacheStatPeople),
+        LastResultCache.loadJson(_kCacheStatCoins),
       ]);
       if (!mounted) return;
       setState(() {
@@ -841,6 +863,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
         }
         if (_peopleStat == null && cached[1] is String) {
           _peopleStat = cached[1] as String;
+        }
+        if (_coinsStat == null && cached[2] is String) {
+          _coinsStat = cached[2] as String;
         }
       });
     }());
@@ -948,7 +973,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final coins = (data?['availableCoins'] as num?)?.toInt() ??
           (data?['totalCoins'] as num?)?.toInt() ??
           0;
-      setState(() => _coinsStat = NumberFormat.compact().format(coins));
+      final value = NumberFormat.compact().format(coins);
+      if (value != _coinsStat) {
+        setState(() => _coinsStat = value);
+      }
+      // A server-confirmed value is what the next open paints first.
+      if (!doc.metadata.isFromCache) {
+        unawaited(LastResultCache.saveJson(_kCacheStatCoins, value));
+      }
     }, onError: (Object _) {
       if (mounted) setState(() => _coinsStat = '–');
     });
@@ -1341,8 +1373,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// Loads "Featured attractions": up to [kFeaturedAttractionCount] curated
   /// attractions from the GreenGo catalogue (`attractions_index`, the same
   /// source as the Attractions tab), for the country the user is IN
-  /// (traveler-aware via [_countryName]/[_userLat]/[_userLng], resolved with
-  /// the Attractions tab's [CountryResolver]; `primaryOrigin` as fallback).
+  /// (traveler-aware via [_countryName]/[_userLat]/[_userLng], resolved by
+  /// [AttractionsDataSource.resolveCountry] like the Attractions tab;
+  /// `primaryOrigin` as fallback).
   /// Nearest to the user first when a location is known, else by GreenGo
   /// Score; the elected set is shuffled so the carousel stays fresh.
   ///
@@ -1351,47 +1384,35 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// query came back empty, the data source fell back to its hard-coded
   /// sample experiences, and `take(3)` showed at most three of those.
   ///
-  /// Bounded: one cached config doc (`attraction_config/geo`), the bucket doc,
-  /// and one country's index shard (<= ~100 compact records), all memoised by
+  /// Bounded: the bucket doc, the published countries (~85 tiny docs) and the
+  /// country's TOP index shard (`{ISO2}_0`, the 500 best records, ~290 KB —
+  /// not the whole country, up to ~1.7 MB), all cache-first and memoised by
   /// [AttractionsDataSource] for the session. Empty (or on failure) hides it.
   Future<void> _loadFeaturedAttractions() async {
     List<_Happening> picked = const <_Happening>[];
     try {
       final ds = AttractionsDataSource(firestore: _firestore);
-      final reads = await Future.wait<Object>([ds.bucket(), ds.geoIndex()]);
-      final bucket = reads[0] as String;
-      final geo = reads[1] as List<Map<String, dynamic>>;
-      final candidates = geo.map((m) {
-        final iso = (m['iso2'] ?? '').toString().toUpperCase();
-        final bboxRaw = m['bbox'];
-        return CountryCandidate(
-          iso2: iso,
-          name: (m['name'] ?? iso).toString(),
-          bbox: bboxRaw is List
-              ? bboxRaw.map((e) => (e as num).toDouble()).toList()
-              : null,
-          cities: ((m['cities'] as List?) ?? const [])
-              .map<(double, double)>((c) =>
-                  ((c[0] as num).toDouble(), (c[1] as num).toDouble()))
-              .toList(),
-        );
-      }).toList();
       final lat = _userLat;
       final lng = _userLng;
+      // The country comes from the profile's country name (or a single
+      // containing bounding box) — the ~0.5 MB geo index is read only for
+      // border cases — and only the top shard(s) of that country are read:
+      // everything above the featured score sits in `{ISO2}_0`.
+      final reads = await Future.wait<Object?>([
+        ds.bucket(),
+        ds.publishedCountries(),
+        ds.resolveCountry(countryName: _countryName, lat: lat, lng: lng),
+      ]);
+      final bucket = reads[0] as String;
+      final published = (reads[1] as List<AttractionCountry>)
+          .map((c) => c.iso2)
+          .toSet();
       final origin = (_countryCode ?? '').toUpperCase();
-      final iso = CountryResolver.resolve(
-            candidates: candidates,
-            countryName: _countryName,
-            lat: lat,
-            lng: lng,
-          ) ??
-          (candidates.any((c) => c.iso2 == origin) ? origin : null);
+      final iso = reads[2] as String? ??
+          (published.contains(origin) ? origin : null);
       if (iso != null) {
-        final all = (await ds.forCountry(iso))
-            .where((a) =>
-                a.imgHash.isNotEmpty &&
-                a.imgBase.isNotEmpty &&
-                a.greengoScore > kFeaturedAttractionMinScore)
+        final all = (await ds.aboveScore(iso, kFeaturedAttractionMinScore))
+            .where((a) => a.imgHash.isNotEmpty && a.imgBase.isNotEmpty)
             .toList();
         if (lat != null && lng != null) {
           double dist(Attraction a) => (a.lat == null || a.lng == null)
@@ -2151,22 +2172,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
                             ],
                           ),
                         ),
-                        // The stats row appears once every tile has its
-                        // value (each resolves to a number or '–'), never as
-                        // a shimmering placeholder row.
-                        AnimatedSize(
-                          duration: reduceMotion
-                              ? Duration.zero
-                              : const Duration(milliseconds: 250),
-                          alignment: Alignment.topCenter,
-                          child: _statsReady
-                              ? Padding(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      20, 18, 20, 0),
-                                  child:
-                                      _statsRow(context, l10n, reduceMotion),
-                                )
-                              : const SizedBox(width: double.infinity),
+                        // The stats row is ALWAYS there, from the first
+                        // frame: each tile shows its last known value (or a
+                        // small shimmer until its first value lands) and then
+                        // its fresh one. It used to wait for all four tiles,
+                        // so the slowest (the passport-derived countries)
+                        // kept the whole panel off the page.
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 18, 20, 0),
+                          child: _statsRow(context, l10n, reduceMotion),
                         ),
                       ],
                     ),
@@ -2456,9 +2470,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// The personalized stats row (glass): coins, membership tier, countries
-  /// engaged (passport stamps) and distinct people chatted with. Shown only
-  /// once every tile has resolved (see [_statsReady]); a failed stat resolves
-  /// to '–'.
+  /// engaged (passport stamps) and distinct people chatted with. Always shown;
+  /// a tile without a value yet shimmers, and a failed stat resolves to '–'.
   Widget _statsRow(
     BuildContext context,
     AppLocalizations l10n,

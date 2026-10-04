@@ -13,6 +13,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/app_sound_service.dart';
@@ -323,9 +324,8 @@ class _GroupChatViewState extends State<_GroupChatView> {
     final text = _controller.text.trim();
     if (text.isEmpty) return;
     if (text.length > kMaxMessageLength) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context)!.messageTooLong)),
-      );
+      showUserErrorMessage(
+          context, AppLocalizations.of(context)!.messageTooLong);
       return;
     }
     context
@@ -356,9 +356,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
         metadata: {'durationMs': duration.inMilliseconds},
       ));
     } catch (_) {
-      messenger.showSnackBar(SnackBar(
-        content: Text(l10n.voiceFailedToSend),
-      ));
+      if (context.mounted) {
+        showUserErrorMessage(context, l10n.voiceFailedToSend);
+      } else {
+        messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
+      }
     }
   }
 
@@ -516,7 +518,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
       bloc.add(GroupChatMessageSent(content: url, type: MessageType.image));
       AppSoundService().play(AppSound.messageSent);
     } catch (_) {
-      messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
+      if (context.mounted) {
+        showUserErrorMessage(context, l10n.voiceFailedToSend);
+      } else {
+        messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
+      }
     }
   }
 
@@ -531,7 +537,11 @@ class _GroupChatViewState extends State<_GroupChatView> {
       bloc.add(GroupChatMessageSent(content: url, type: MessageType.video));
       AppSoundService().play(AppSound.messageSent);
     } catch (_) {
-      messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
+      if (context.mounted) {
+        showUserErrorMessage(context, l10n.voiceFailedToSend);
+      } else {
+        messenger.showSnackBar(SnackBar(content: Text(l10n.voiceFailedToSend)));
+      }
     }
   }
 
@@ -727,9 +737,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
       body: BlocConsumer<GroupChatBloc, GroupChatState>(
         listener: (context, state) {
           if (state is GroupChatActionFailure) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text(state.message)),
-            );
+            showUserError(context, state.message);
           } else if (state is GroupChatLeftSuccess) {
             Navigator.of(context).popUntil((r) => r.isFirst);
           }
@@ -739,7 +747,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
             return const Center(child: CircularProgressIndicator());
           }
           if (state is GroupChatError) {
-            return Center(child: Text(state.message));
+            return Center(child: Text(userErrorMessage(context, state.message)));
           }
           final messages =
               state is GroupChatLoaded ? state.messages : <Message>[];
@@ -1014,6 +1022,9 @@ class _TranslatableTextState extends State<_TranslatableText> {
   String? _translated;
   bool _loading = false;
   bool _ttsBusy = false;
+
+  /// The translation could not be fetched (offline / rate limited).
+  bool _failed = false;
   final AudioPlayer _player = AudioPlayer();
 
   @override
@@ -1095,8 +1106,11 @@ class _TranslatableTextState extends State<_TranslatableText> {
 
   Future<void> _maybeTranslate() async {
     if (!widget.translate || widget.text.trim().isEmpty) return;
-    setState(() => _loading = true);
-    final result = await TranslationService().translate(
+    setState(() {
+      _loading = true;
+      _failed = false;
+    });
+    final result = await TranslationService().translateDetailed(
       text: widget.text,
       sourceLanguage: 'auto',
       targetLanguage: widget.targetLang.replaceAll('_', '-'),
@@ -1104,8 +1118,9 @@ class _TranslatableTextState extends State<_TranslatableText> {
     if (!mounted) return;
     setState(() {
       _loading = false;
+      _failed = result.failed;
       // Only treat as a translation if it actually changed.
-      _translated = (result.trim() == widget.text.trim()) ? null : result;
+      _translated = result.isTranslated ? result.text : null;
     });
   }
 
@@ -1167,8 +1182,31 @@ class _TranslatableTextState extends State<_TranslatableText> {
         ],
       );
     }
+    final Widget body = _failed && widget.translate && _translated == null
+        ? Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              content,
+              GestureDetector(
+                onTap: _maybeTranslate,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 2),
+                  child: Text(
+                    AppLocalizations.of(context)!.translationFailedTapRetry,
+                    style: TextStyle(
+                      color: widget.color.withValues(alpha: 0.7),
+                      fontSize: 11,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          )
+        : content;
     // Double-tap to hear it (target or source text, per the group setting).
-    return GestureDetector(onDoubleTap: _playTts, child: content);
+    return GestureDetector(onDoubleTap: _playTts, child: body);
   }
 }
 

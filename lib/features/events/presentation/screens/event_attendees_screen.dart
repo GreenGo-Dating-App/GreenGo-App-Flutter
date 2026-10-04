@@ -1,9 +1,12 @@
+import 'dart:async';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
@@ -170,10 +173,11 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
           currentUserId: widget.currentUserId,
         ),
       ));
-    } catch (_) {
+    } catch (e) {
+      reportUserError(e);
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text(AppLocalizations.of(context)!.attendeesProfileFailed)));
+      unawaited(showUserErrorMessage(
+          context, AppLocalizations.of(context)!.attendeesProfileFailed));
     } finally {
       if (mounted) setState(() => _openingProfile = false);
     }

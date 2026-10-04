@@ -12,6 +12,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 class PhotoManagementScreen extends StatefulWidget {
 
@@ -87,12 +88,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
       }
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n?.photoFailedPickImage(e.toString()) ?? 'Failed to pick image: ${e.toString()}'),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -359,12 +355,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
               _updateProfile();
               await ActionSuccessDialog.showImageUploaded(context);
             } else if (state is ProfileError) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(state.message),
-                  backgroundColor: AppColors.errorRed,
-                ),
-              );
+              showUserError(context, state.message);
             } else if (state is ProfileUpdated) {
               if (_skipNextUpdateDialog) {
                 _skipNextUpdateDialog = false;

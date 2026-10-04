@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../data/datasources/safety_academy_remote_datasource.dart';
 import '../../data/repositories/safety_academy_repository_impl.dart';
 import '../../domain/entities/safety_module.dart';
@@ -82,7 +83,7 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    state.errorMessage!,
+                    userErrorMessage(context, state.errorMessage),
                     style: const TextStyle(color: AppColors.textSecondary),
                     textAlign: TextAlign.center,
                   ),

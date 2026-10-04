@@ -8,6 +8,7 @@ import '../../../chat/domain/entities/message.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
 import '../../data/datasources/reports_admin_remote_datasource.dart';
 import '../../domain/entities/message_report.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Reports Admin Screen
 ///
@@ -61,9 +62,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
     } catch (e) {
       if (mounted) {
         setState(() => _isLoading = false);
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(AppLocalizations.of(context)!.adminErrorLoadingData(e.toString()))),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -450,9 +449,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
     } catch (e) {
       if (!mounted) return;
       Navigator.pop(context); // Close loading
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context)!.adminErrorOpeningChat(e.toString()))),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -478,9 +475,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
     } catch (e) {
       if (!mounted) return;
       Navigator.pop(context);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context)!.adminErrorLoadingContext(e.toString()))),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -636,9 +631,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
         }
       } catch (e) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: $e')),
-          );
+          showUserError(context, e);
         }
       }
     }
@@ -749,9 +742,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
         }
       } catch (e) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: $e')),
-          );
+          showUserError(context, e);
         }
       }
     }
@@ -804,9 +795,7 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
         }
       } catch (e) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: $e')),
-          );
+          showUserError(context, e);
         }
       }
     }

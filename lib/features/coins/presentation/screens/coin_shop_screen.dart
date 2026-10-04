@@ -12,6 +12,7 @@ import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_android/billing_client_wrappers.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../widgets/web_checkout_dialog.dart';
@@ -416,12 +417,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             });
           }
           if (mounted) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(purchaseDetails.error?.message ?? AppLocalizations.of(context)!.coinsPurchaseFailed),
-                backgroundColor: Colors.red,
-              ),
-            );
+            // The store's raw error text is developer-facing (logged above).
+            _showError(AppLocalizations.of(context)!.coinsPurchaseFailed);
           }
           // Always consume to clear "already owned" state
           _completeAndConsume(purchaseDetails);
@@ -467,7 +464,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         await _completeAndConsume(purchaseDetails);
         if (mounted) {
           setState(() => _isLoadingSubscription = false);
-          _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+          _showUserError(e);
         }
         return;
       }
@@ -544,7 +541,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         debugPrint('[IAP] Coin verification failed: $e');
         if (mounted) {
           setState(() => _isLoadingCoinPurchase = false);
-          _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+          _showUserError(e);
         }
       }
       return;
@@ -577,7 +574,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         await _completeAndConsume(purchaseDetails);
         if (mounted) {
           setState(() => _isLoadingSubscription = false);
-          _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+          _showUserError(e);
         }
         return;
       }
@@ -776,7 +773,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     } catch (e) {
       debugPrint('[CoinShop] Restore failed: $e');
       if (mounted) {
-        _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+        _showUserError(e);
       }
     } finally {
       if (mounted) setState(() => _isRestoring = false);
@@ -1034,7 +1031,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  e.toString(),
+                  userErrorMessage(context, e),
                   style: const TextStyle(color: Colors.white60, fontSize: 11),
                   textAlign: TextAlign.center,
                   maxLines: 6,
@@ -1649,7 +1646,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         await Future.delayed(const Duration(seconds: 2));
         if (mounted) _handleBaseMembershipPurchase(); // Retry
       } else {
-        _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+        _showUserError(e);
         setState(() => _isLoadingSubscription = false);
       }
     }
@@ -1982,7 +1979,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         await Future.delayed(const Duration(seconds: 2));
         if (mounted) _handleSubscribe(); // Retry
       } else {
-        _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+        _showUserError(e);
         setState(() => _isLoadingSubscription = false);
       }
     }
@@ -2029,13 +2026,16 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     }
   }
 
+  /// Error popup for an already-localized [message].
   void _showError(String message) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(message),
-        backgroundColor: Colors.red,
-      ),
-    );
+    if (!mounted) return;
+    showUserErrorMessage(context, message);
+  }
+
+  /// Error popup for a thrown [error] (mapped to friendly, localized text).
+  void _showUserError(Object error) {
+    if (!mounted) return;
+    showUserError(context, error);
   }
 
 
@@ -2476,7 +2476,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     } catch (e, stackTrace) {
       debugPrint('[CoinPurchase] Error: $e');
       debugPrint('[CoinPurchase] Stack trace: $stackTrace');
-      _showError(AppLocalizations.of(context)!.shopPurchaseError(e.toString()));
+      _showUserError(e);
       setState(() => _isLoadingCoinPurchase = false);
     }
   }
@@ -2990,7 +2990,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             ),
             const SizedBox(height: 12),
             Text(
-              message,
+              userErrorMessage(context, message),
               style: const TextStyle(
                 color: Colors.white70,
                 fontSize: 14,

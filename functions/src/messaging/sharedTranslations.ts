@@ -15,16 +15,20 @@
  *
  * Guard rails: signed-in only, ≤ 50 texts per call, ≤ 5,000 chars each, and a
  * per-user daily quota of misses (cache hits are free).
+ *
+ * Misses are translated with the FREE Google endpoint (./freeTranslate), at
+ * most 4 requests in flight, retried with backoff. If the endpoint rate-limits
+ * (429) or fails, the untranslated texts come back as '' (same response shape
+ * as always), are not stored, and the app falls back to translating them on
+ * the device. No dependency on the paid Cloud Translation API.
  */
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
-import { TranslationServiceClient } from '@google-cloud/translate';
 import '../shared/firebaseAdmin';
+import { freeTranslateMany } from './freeTranslate';
 
 const db = admin.firestore();
-let client: TranslationServiceClient | null = null;
-const translator = () => (client ??= new TranslationServiceClient());
 
 const MAX_TEXTS = 50;
 const MAX_CHARS = 5000;
@@ -69,7 +73,7 @@ export const translateTexts = onCall<Req>(
     });
 
     if (misses.length > 0) {
-      // Per-user daily quota on paid translations.
+      // Per-user daily quota on translated misses.
       const day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
       const quotaRef = db.collection('translation_quota').doc(`${uid}_${day}`);
       const allowed = await db.runTransaction(async (tx) => {
@@ -85,26 +89,27 @@ export const translateTexts = onCall<Req>(
       });
 
       if (allowed) {
-        const [resp] = await translator().translateText({
-          parent: `projects/${process.env.GCLOUD_PROJECT}/locations/global`,
-          contents: misses,
-          targetLanguageCode: target,
-          mimeType: 'text/plain',
+        const out = await freeTranslateMany(misses, target, {
+          concurrency: 4,
+          timeoutMs: 6000,
+          // Well inside the app's 30s callable timeout.
+          deadlineMs: 20000,
         });
-        const out = resp.translations ?? [];
         const batch = db.batch();
+        let writes = 0;
         misses.forEach((text, i) => {
-          const translated = out[i]?.translatedText || '';
+          const translated = out[i]?.text || '';
           if (!translated) return;
           result.set(text, translated);
           batch.set(db.collection('translations').doc(sharedTranslationId(target, text)), {
             target,
             translated,
-            source: out[i]?.detectedLanguageCode || null,
+            source: out[i]?.detectedLanguage || null,
             createdAt: admin.firestore.FieldValue.serverTimestamp(),
           });
+          writes++;
         });
-        await batch.commit();
+        if (writes > 0) await batch.commit();
       }
     }
 

@@ -9,6 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/access_control_service.dart';
@@ -854,7 +855,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           ),
           const SizedBox(height: 16),
           Text(
-            message,
+            userErrorMessage(context, message),
             style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 16,
@@ -1695,9 +1696,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(AppLocalizations.of(context)!.discoveryError(e.toString())), backgroundColor: AppColors.errorRed),
-        );
+        showUserError(context, e);
       }
     }
   }

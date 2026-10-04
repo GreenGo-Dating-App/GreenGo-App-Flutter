@@ -12,6 +12,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/error/failures.dart';
 import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/chat_screen.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
@@ -754,7 +755,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
                 color: AppColors.errorRed, size: 48),
             const SizedBox(height: 12),
             Text(
-              message,
+              userErrorMessage(context, message),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,

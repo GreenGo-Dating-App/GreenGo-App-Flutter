@@ -292,54 +292,61 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     }
   }
 
+  /// Re-reads the signed-in user's access status (after onboarding, after
+  /// enabling notifications).
+  ///
+  /// Only Firebase Auth decides that a user is signed out — the
+  /// `authStateChanges` stream already emits [AuthUnauthenticated] for a real
+  /// sign-out. A failed or empty read here (offline, slow Firestore channel,
+  /// access doc not written yet) used to emit [AuthUnauthenticated] anyway,
+  /// which made AuthWrapper drop every session cache and swap the running
+  /// app for the login screen while the user was still signed in. Now such a
+  /// failure keeps the current state.
   Future<void> _onCheckAccessStatusRequested(
     AuthCheckAccessStatusRequested event,
     Emitter<AuthState> emit,
   ) async {
-    // Check if app is in pre-launch mode
-    if (!_accessControlService.isPreLaunchMode) {
-      // After launch, all approved users can access
-      final result = await repository.getCurrentUser();
-      result.fold(
-        (failure) => emit(const AuthUnauthenticated()),
-        (user) => user != null
-            ? emit(AuthAuthenticated(user))
-            : emit(const AuthUnauthenticated()),
-      );
-      return;
-    }
-
-    // Pre-launch mode: check access status
-    final accessData = await _accessControlService.getCurrentUserAccess();
-    if (accessData == null) {
-      emit(const AuthUnauthenticated());
-      return;
-    }
-
     final result = await repository.getCurrentUser();
-    result.fold(
-      (failure) => emit(const AuthUnauthenticated()),
-      (user) {
-        if (user == null) {
-          emit(const AuthUnauthenticated());
-          return;
-        }
+    final user = result.fold((_) => null, (u) => u);
+    if (user == null) {
+      // Failure: keep whatever is on screen. Genuinely signed out: say so
+      // (idempotent with the auth stream).
+      if (result.isRight()) emit(const AuthUnauthenticated());
+      return;
+    }
 
-        // Check if user can access the app
-        if (accessData.canAccessApp) {
-          emit(AuthAuthenticated(user));
-        } else {
-          // User needs to wait
-          emit(AuthWaitingForAccess(
-            user: user,
-            approvalStatus: accessData.approvalStatus.name,
-            accessDate: accessData.accessDate,
-            membershipTier: accessData.membershipTier.name,
-            canAccessApp: accessData.canAccessApp,
-          ));
-        }
-      },
-    );
+    // After launch, all signed-in users can access; AuthWrapper does the
+    // per-user approval routing itself.
+    if (!_accessControlService.isPreLaunchMode) {
+      emit(AuthAuthenticated(user));
+      return;
+    }
+
+    // Pre-launch mode: check access status.
+    UserAccessData? accessData;
+    try {
+      accessData = await _accessControlService.getCurrentUserAccess();
+    } catch (_) {
+      accessData = null;
+    }
+    if (accessData == null) {
+      // Could not read it: do not sign the user out of the UI over a read.
+      return;
+    }
+
+    // Check if user can access the app
+    if (accessData.canAccessApp) {
+      emit(AuthAuthenticated(user));
+    } else {
+      // User needs to wait
+      emit(AuthWaitingForAccess(
+        user: user,
+        approvalStatus: accessData.approvalStatus.name,
+        accessDate: accessData.accessDate,
+        membershipTier: accessData.membershipTier.name,
+        canAccessApp: accessData.canAccessApp,
+      ));
+    }
   }
 
   Future<void> _onEnableNotificationsRequested(

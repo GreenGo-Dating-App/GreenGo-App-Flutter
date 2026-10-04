@@ -11,6 +11,7 @@ import '../../domain/entities/social_links.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 class EditSocialLinksScreen extends StatefulWidget {
 
@@ -181,12 +182,7 @@ class _EditSocialLinksScreenState extends State<EditSocialLinksScreen> {
             setState(() {
               _isSaving = false;
             });
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: AppColors.errorRed,
-              ),
-            );
+            showUserError(context, state.message);
           }
         },
         builder: (context, state) {

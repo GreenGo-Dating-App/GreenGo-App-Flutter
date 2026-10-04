@@ -765,22 +765,27 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
     super.dispose();
   }
 
-  /// App-level back handler. When the navigator has nothing to pop (the current
-  /// screen is at the root level — same level as the Discovery page), going
-  /// back would show a black screen / exit. Instead, route to the main screen
-  /// (Discovery tab). Routes that CAN pop are handled normally by the Navigator;
-  /// the main screen's own PopScope handles its exit dialog.
+  /// App-level back handler, reached only when nothing above handled Back:
+  /// the navigator has nothing to pop, so this wrapper's own route is the only
+  /// one and it is showing one of its gate screens (splash, login, onboarding,
+  /// waiting, admin 2FA, banned, post-login splash). The main shell never gets
+  /// here — its PopScope handles Back (tab 0 / exit dialog) itself.
+  ///
+  /// It used to push MainNavigationScreen with pushAndRemoveUntil, which
+  /// (a) removed this wrapper, remounting the whole shell (looks like an app
+  /// restart) and (b) let Back skip onboarding, the waiting screen and admin
+  /// 2FA.
+  ///
+  /// Now: on web, Back is consumed. Letting it through calls
+  /// SystemNavigator.pop, which on web leaves the page for the previous
+  /// history entry — often the greengochat.com/app redirect, which bounces
+  /// straight back and reloads the whole app. Elsewhere the OS default
+  /// (leave the app) applies.
   @override
   Future<bool> didPopRoute() async {
     final nav = PushNotificationService.navigatorKey.currentState;
     if (nav == null || nav.canPop()) return false;
-    final userId = FirebaseAuth.instance.currentUser?.uid;
-    if (userId == null) return false; // not logged in — let the OS handle it
-    nav.pushAndRemoveUntil(
-      MaterialPageRoute(builder: (_) => MainNavigationScreen(userId: userId)),
-      (route) => false,
-    );
-    return true;
+    return kIsWeb;
   }
 
   Future<void> _checkVersion() async {

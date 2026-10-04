@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
@@ -143,7 +144,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
                   }
                   if (state is GroupsError) {
                     return Center(
-                      child: Text(state.message,
+                      child: Text(userErrorMessage(context, state.message),
                           style:
                               const TextStyle(color: AppColors.textSecondary)),
                     );

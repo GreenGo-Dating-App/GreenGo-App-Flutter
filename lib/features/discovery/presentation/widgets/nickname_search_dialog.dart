@@ -9,6 +9,7 @@ import 'package:get_it/get_it.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/usage_limit_service.dart';
 import '../../../../generated/app_localizations.dart';
@@ -275,9 +276,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
       result.fold(
         (failure) {
           setState(() => _isSearching = false);
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: ${failure.message}')),
-          );
+          showUserError(context, failure);
         },
         (conversation) {
           setState(() => _isSearching = false);
@@ -297,9 +296,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
     } catch (e) {
       if (!mounted) return;
       setState(() => _isSearching = false);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -477,9 +474,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
       }
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+      showUserError(context, e);
       return;
     }
 
@@ -496,9 +491,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
 
       result.fold(
         (failure) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: ${failure.message}')),
-          );
+          showUserError(context, failure);
         },
         (swipeAction) {
           HapticFeedback.mediumImpact();
@@ -576,9 +569,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
       );
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+      showUserError(context, e);
     }
   }
 

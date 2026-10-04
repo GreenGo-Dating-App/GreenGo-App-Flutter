@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
 import '../../../user_experiences/domain/repositories/user_experiences_repository.dart';
@@ -88,8 +91,6 @@ class _BookViewState extends State<_BookView> {
     final s = bloc.state;
     final e = s.experience;
     if (e == null || !s.canSubmit || _preparing) return;
-    final l = AppLocalizations.of(context)!;
-    final messenger = ScaffoldMessenger.of(context);
     setState(() => _preparing = true);
     try {
       if (!await ExperienceSafetyFlow.ensureIdDocument(
@@ -111,9 +112,7 @@ class _BookViewState extends State<_BookView> {
                 );
         if (!mounted) return;
         if (saved.isLeft()) {
-          messenger.showSnackBar(SnackBar(
-              content: Text(l.somethingWentWrong),
-              backgroundColor: AppColors.errorRed));
+          unawaited(showUserError(context, saved.fold((f) => f, (_) => null)));
           return;
         }
       }
@@ -173,16 +172,11 @@ class _BookViewState extends State<_BookView> {
     if (!mounted) return;
     if (!f.definitive) {
       // Same requestId on retry: a booking that went through is returned.
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text(BookingL10n.error(l, f)),
-        backgroundColor: AppColors.errorRed,
-        duration: const Duration(seconds: 8),
-        action: SnackBarAction(
-          label: l.bkRetry,
-          textColor: AppColors.deepBlack,
-          onPressed: () => bloc.add(const BookingSubmitted(
-              consentVersion: BookingConsentDialog.version)),
-        ),
+      unawaited(showUserErrorMessage(
+        context,
+        BookingL10n.error(l, f),
+        onRetry: () => bloc.add(const BookingSubmitted(
+            consentVersion: BookingConsentDialog.version)),
       ));
       return;
     }

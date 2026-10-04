@@ -15,6 +15,7 @@ import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../data/datasources/profile_remote_data_source.dart';
 import '../../domain/entities/profile.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Screen for searching users by nickname
 class UserSearchScreen extends StatefulWidget {
@@ -106,9 +107,10 @@ class _UserSearchScreenState extends State<UserSearchScreen> {
         });
       }
     } catch (e) {
+      reportUserError(e);
       if (mounted) {
         setState(() {
-          _error = 'Failed to search: ${e.toString()}';
+          _error = userErrorMessage(context, e);
           _isSearching = false;
         });
       }

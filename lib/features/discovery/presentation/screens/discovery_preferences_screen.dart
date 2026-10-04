@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/match_preferences.dart';
@@ -69,12 +70,7 @@ class _DiscoveryPreferencesScreenState
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.failedToSavePreferences(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) {

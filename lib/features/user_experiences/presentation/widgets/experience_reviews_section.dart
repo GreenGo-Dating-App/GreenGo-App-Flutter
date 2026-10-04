@@ -6,6 +6,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/presentation/screens/profile_detail_screen.dart';
 import '../../../profile/data/datasources/profile_remote_data_source.dart';
@@ -30,10 +31,11 @@ Future<void> openExperienceUserProfile(
       builder: (_) =>
           ProfileDetailScreen(profile: profile, currentUserId: currentUserId),
     ));
-  } catch (_) {
+  } catch (e) {
+    reportUserError(e);
     if (!context.mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text(AppLocalizations.of(context)!.attendeesProfileFailed)));
+    await showUserErrorMessage(
+        context, AppLocalizations.of(context)!.attendeesProfileFailed);
   }
 }
 
@@ -251,7 +253,11 @@ class _ExperienceReviewsSectionState extends State<ExperienceReviewsSection> {
           ReviewsFlash.reviewHeld => l.bkReviewHeld,
           ReviewsFlash.notEligible => l.bkReviewNeedsBooking,
         };
-        if (msg != null) {
+        if (s.flash == ReviewsFlash.failed) {
+          showUserErrorMessage(context, l.userErrorGeneric);
+        } else if (s.flash == ReviewsFlash.replyRejected && msg != null) {
+          showUserErrorMessage(context, msg);
+        } else if (msg != null) {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text(msg),
             backgroundColor: s.flash == ReviewsFlash.failed ||

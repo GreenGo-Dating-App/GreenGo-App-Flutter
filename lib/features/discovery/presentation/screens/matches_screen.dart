@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../matching/domain/usecases/compatibility_scorer.dart';
 import '../../../profile/data/models/profile_model.dart';
@@ -191,7 +192,8 @@ class _MatchesScreenContentState extends State<_MatchesScreenContent> {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    state.message,
+                    userErrorMessage(context, state.message),
+                    textAlign: TextAlign.center,
                     style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 16,

@@ -820,6 +820,7 @@
   "chatTranslationDisabled": "Traduction désactivée",
   "chatTranslationEnabled": "Traduction activée",
   "chatTranslationFailed": "Échec de la traduction. Veuillez réessayer.",
+  "translationFailedTapRetry": "Traduction impossible · Touchez pour réessayer",
   "chatTrialExpired": "Votre essai gratuit a expiré.",
   "chatTtsComingSoon": "Synthèse vocale bientôt disponible !",
   "chatTyping": "en train d'écrire...",
@@ -4631,5 +4632,19 @@
   "attrRatingRemove": "Retirer ma note",
   "attrRatingFailed": "Impossible d'enregistrer votre note. Réessayez.",
   "attrRatingGreengoLabel": "Communauté GreenGo",
-  "attrRatingGoogleLabel": "Note Google"
+  "attrRatingGoogleLabel": "Note Google",
+  "webUpdateAvailable": "Une nouvelle version de GreenGo est disponible.",
+  "webUpdateRefresh": "Actualiser",
+  "webUpdateLater": "Plus tard",
+  "userErrorTitle": "Oups !",
+  "userErrorGeneric": "Une erreur s'est produite. Veuillez réessayer.",
+  "userErrorTimeout": "Cela prend plus de temps que prévu. Veuillez réessayer.",
+  "userErrorPermissionDenied": "Vous n'avez pas l'autorisation de faire cela.",
+  "userErrorNotFound": "Ce contenu n'est plus disponible.",
+  "userErrorTooManyRequests": "Vous effectuez cette action trop souvent. Patientez un instant et réessayez.",
+  "userErrorSessionExpired": "Votre session a expiré. Veuillez vous reconnecter.",
+  "userErrorInvalidInput": "Certaines informations ne sont pas valides. Vérifiez-les et réessayez.",
+  "userErrorNotAllowed": "Cette action n'est pas disponible pour le moment.",
+  "userErrorUploadFailed": "Le téléversement a échoué. Veuillez réessayer.",
+  "videoMaxDurationError": "La vidéo doit durer {seconds} secondes maximum"
 }

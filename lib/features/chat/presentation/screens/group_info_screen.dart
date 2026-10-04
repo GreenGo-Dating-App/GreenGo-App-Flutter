@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/error/failures.dart';
 import '../../../../core/services/user_directory_service.dart';
@@ -272,9 +273,7 @@ class GroupInfoScreen extends StatelessWidget {
     );
     if (!context.mounted) return;
     result.fold(
-      (failure) => ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(failure.message)),
-      ),
+      (failure) => showUserError(context, failure),
       (_) => Navigator.of(context).popUntil((r) => r.isFirst),
     );
   }
@@ -307,7 +306,9 @@ class GroupInfoScreen extends StatelessWidget {
       memberId: memberId,
     );
     result.fold(
-      (f) => messenger.showSnackBar(SnackBar(content: Text(f.message))),
+      (f) {
+        if (context.mounted) showUserError(context, f);
+      },
       (_) => messenger
           .showSnackBar(SnackBar(content: Text(l10n.groupMemberRemoved(name)))),
     );
@@ -340,7 +341,9 @@ class GroupInfoScreen extends StatelessWidget {
       memberIds: picked,
     );
     result.fold(
-      (f) => messenger.showSnackBar(SnackBar(content: Text(f.message))),
+      (f) {
+        if (context.mounted) showUserError(context, f);
+      },
       (_) => messenger.showSnackBar(
           SnackBar(content: Text(l10n.groupAddedCount(picked.length)))),
     );
@@ -386,9 +389,11 @@ class GroupInfoScreen extends StatelessWidget {
         SnackBar(content: Text(l10n.groupPhotoUpdated)),
       );
     } catch (_) {
-      messenger.showSnackBar(
-        SnackBar(content: Text(l10n.groupPhotoUpdateFailed)),
-      );
+      if (context.mounted) {
+        showUserErrorMessage(context, l10n.groupPhotoUpdateFailed);
+      } else {
+        messenger.showSnackBar(SnackBar(content: Text(l10n.groupPhotoUpdateFailed)));
+      }
     }
   }
 
@@ -451,9 +456,7 @@ class GroupInfoScreen extends StatelessWidget {
     );
     if (!context.mounted) return;
     result.fold(
-      (failure) => ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(failure.message)),
-      ),
+      (failure) => showUserError(context, failure),
       (_) => Navigator.of(context).popUntil((r) => r.isFirst),
     );
   }
@@ -491,9 +494,7 @@ class GroupInfoScreen extends StatelessWidget {
     );
     if (!context.mounted) return;
     result.fold(
-      (failure) => ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(failure.message)),
-      ),
+      (failure) => showUserError(context, failure),
       (_) => ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(l10n.groupReportSubmitted)),
       ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/di/injection_container.dart' as di;
 import '../../../core/error/failures.dart';
+import '../../../core/utils/user_error.dart';
 import '../../../generated/app_localizations.dart';
 import '../../safety/presentation/screens/age_verification_screen.dart';
 import '../domain/entities/user_experience.dart';
@@ -157,7 +158,7 @@ class ExperienceSafetyFlow {
         _snack(context, l.uexpDatesRequiredToPublish);
         return SafetyResolution.cancel;
       default:
-        _snack(context, l.somethingWentWrong);
+        _snack(context, l.userErrorGeneric);
         return SafetyResolution.cancel;
     }
   }
@@ -218,8 +219,11 @@ class ExperienceSafetyFlow {
       if (!context.mounted) return null;
       final f = failure;
       if (f is! ExperienceSafetyFailure) {
-        _snack(context,
-            f is ExperienceContactInfoFailure ? l.uexpErrContactInfo : l.somethingWentWrong);
+        if (f is ExperienceContactInfoFailure) {
+          _snack(context, l.uexpErrContactInfo);
+        } else {
+          showUserError(context, f);
+        }
         return null;
       }
       final res = await resolve(context, uid, f.code);
@@ -241,6 +245,10 @@ class ExperienceSafetyFlow {
   }
 
   static void _snack(BuildContext context, String msg, {bool error = true}) {
+    if (error) {
+      showUserErrorMessage(context, msg);
+      return;
+    }
     ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
       content: Text(msg),
       backgroundColor: error ? AppColors.errorRed : AppColors.successGreen,

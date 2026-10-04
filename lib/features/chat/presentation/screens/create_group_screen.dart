@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/services/tier_gate.dart';
 import '../../../../core/services/tier_limits_service.dart';
@@ -332,9 +333,7 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
     result.fold(
       (failure) {
         setState(() => _creating = false);
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(failure.message)),
-        );
+        showUserError(context, failure);
       },
       (group) {
         Navigator.of(context).pushReplacement(

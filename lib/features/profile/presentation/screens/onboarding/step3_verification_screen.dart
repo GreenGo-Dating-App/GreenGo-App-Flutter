@@ -13,6 +13,7 @@ import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
+import '../../../../../core/utils/user_error.dart';
 
 class Step3VerificationScreen extends StatefulWidget {
   const Step3VerificationScreen({super.key});
@@ -117,12 +118,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
       }
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)?.onboardingFailedTakePhoto(e.toString()) ?? 'Failed to take photo: ${e.toString()}'),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -176,7 +172,9 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
                 errorMsg = l10n?.phoneErrorMissingNumber ?? 'Please enter a phone number.';
                 break;
               default:
-                errorMsg = l10n?.phoneErrorGeneric(e.code) ?? 'Phone verification error (${e.code}). Please try again.';
+                // Never show the raw auth code to the user; log it instead.
+                reportUserError(e);
+                errorMsg = l10n?.verificationPhoneError ?? 'Failed to verify phone number. Please try again.';
             }
             setState(() {
               _isVerifyingPhone = false;
@@ -309,9 +307,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
     return BlocConsumer<OnboardingBloc, OnboardingState>(
       listener: (context, state) {
         if (state is OnboardingError) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(state.message), backgroundColor: AppColors.errorRed),
-          );
+          showUserError(context, state.message);
         }
       },
       builder: (context, state) {

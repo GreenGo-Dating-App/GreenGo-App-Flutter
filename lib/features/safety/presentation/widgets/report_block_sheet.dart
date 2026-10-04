@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/safety_actions_service.dart';
@@ -126,6 +127,8 @@ Future<void> _report(
 }) async {
   final l10n = AppLocalizations.of(context)!;
   final messenger = ScaffoldMessenger.of(context);
+  // Stable context for the error popup: the sheet may be gone by then.
+  final errorContext = Navigator.of(context, rootNavigator: true).context;
 
   final reason = await showDialog<String>(
     context: context,
@@ -184,13 +187,10 @@ Future<void> _report(
         backgroundColor: AppColors.successGreen,
       ),
     );
-  } catch (_) {
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(l10n.somethingWentWrong),
-        backgroundColor: AppColors.errorRed,
-      ),
-    );
+  } catch (e, st) {
+    if (errorContext.mounted) {
+      showUserError(errorContext, e, stackTrace: st);
+    }
   }
 }
 
@@ -202,6 +202,8 @@ Future<void> _block(
 }) async {
   final l10n = AppLocalizations.of(context)!;
   final messenger = ScaffoldMessenger.of(context);
+  // Stable context for the error popup: the sheet may be gone by then.
+  final errorContext = Navigator.of(context, rootNavigator: true).context;
 
   final confirmed = await showDialog<bool>(
     context: context,
@@ -244,12 +246,9 @@ Future<void> _block(
         backgroundColor: AppColors.successGreen,
       ),
     );
-  } catch (_) {
-    messenger.showSnackBar(
-      SnackBar(
-        content: Text(l10n.somethingWentWrong),
-        backgroundColor: AppColors.errorRed,
-      ),
-    );
+  } catch (e, st) {
+    if (errorContext.mounted) {
+      showUserError(errorContext, e, stackTrace: st);
+    }
   }
 }

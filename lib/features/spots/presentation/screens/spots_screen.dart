@@ -167,9 +167,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
                         const SizedBox(height: 8),
                         TextButton(
                           onPressed: _loadSpots,
-                          child: const Text(
-                            'Try Again',
-                            style: TextStyle(color: AppColors.richGold),
+                          child: Text(
+                            AppLocalizations.of(context)!.tryAgain,
+                            style: const TextStyle(color: AppColors.richGold),
                           ),
                         ),
                       ],

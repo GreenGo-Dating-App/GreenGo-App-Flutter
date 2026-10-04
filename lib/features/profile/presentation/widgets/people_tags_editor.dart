@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/people_tags_service.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Opens the PRIVATE people-tags editor for a target person.
 ///
@@ -245,7 +246,12 @@ class _EditPeopleTagsDialogState extends State<_EditPeopleTagsDialog> {
         );
         return okSoFar;
       } catch (_) {
-        widget.messenger.showSnackBar(SnackBar(content: Text(failedText)));
+        if (mounted && !_closed) {
+          showUserErrorMessage(context, failedText);
+        } else {
+          // The sheet is gone: no context to anchor a popup on.
+          widget.messenger.showSnackBar(SnackBar(content: Text(failedText)));
+        }
         if (mounted && !_closed) {
           // Re-sync with what is actually stored (the cache was rolled back).
           final stored = widget.service

@@ -8,6 +8,7 @@ import 'package:image_picker/image_picker.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Standalone screen shown when admin requests a better verification photo.
 /// User takes a new selfie, it uploads to Storage, updates the profile doc
@@ -47,10 +48,11 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
         });
       }
     } catch (e) {
+      reportUserError(e);
       if (mounted) {
         final l10n = AppLocalizations.of(context)!;
         setState(() {
-          _errorMessage = '${l10n.reverificationCameraError}: $e';
+          _errorMessage = l10n.reverificationCameraError;
         });
       }
     }

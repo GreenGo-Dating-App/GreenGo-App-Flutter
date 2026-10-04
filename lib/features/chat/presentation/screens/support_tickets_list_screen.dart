@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
@@ -550,9 +551,8 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
       widget.onCreated(docRef.id);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${AppLocalizations.of(context)!.chatFailedToCreateTicket}: $e')),
-        );
+        showUserError(context, e,
+            title: AppLocalizations.of(context)!.chatFailedToCreateTicket);
         setState(() => _isCreating = false);
       }
     }

@@ -10,6 +10,7 @@ import 'city_picker_screen.dart';
 import '../bloc/notification_preferences_bloc.dart';
 import '../bloc/notification_preferences_event.dart';
 import '../bloc/notification_preferences_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Notification Preferences Screen — per-category push controls, sound/vibration,
 /// quiet hours, and the list of cities the user wants event alerts for.
@@ -38,7 +39,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(24),
                   child: Text(
-                    state.message,
+                    userErrorMessage(context, state.message),
                     style: const TextStyle(color: AppColors.textSecondary),
                     textAlign: TextAlign.center,
                   ),

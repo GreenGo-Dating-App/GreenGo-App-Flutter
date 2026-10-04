@@ -12,6 +12,7 @@ import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
+import '../../../../../core/utils/user_error.dart';
 
 class Step2PhotoUploadScreen extends StatefulWidget {
   const Step2PhotoUploadScreen({super.key});
@@ -61,14 +62,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
       }
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)?.onboardingFailedPickImage(e.toString()) ?? 'Failed to pick image: ${e.toString()}'),
-          backgroundColor: AppColors.errorRed,
-          behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        ),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -274,14 +268,7 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
             // Show dialog for photo validation errors
             _showPhotoRejectedDialog(context, message);
           } else {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(message),
-                backgroundColor: AppColors.errorRed,
-                behavior: SnackBarBehavior.floating,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              ),
-            );
+            showUserError(context, state.message);
           }
         }
       },

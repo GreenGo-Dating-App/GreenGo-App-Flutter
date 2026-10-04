@@ -4,6 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/constants/business_categories.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -365,12 +366,7 @@ class _StorefrontEditorScreenState extends State<StorefrontEditorScreen> {
             _saving = false;
             _pendingUploadTarget = null;
             if (mounted) setState(() {});
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: AppColors.errorRed,
-              ),
-            );
+            showUserError(context, state.message);
           }
         },
         child: ListView(

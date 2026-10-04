@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/attraction_icons.dart';
@@ -231,8 +232,8 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
     } catch (_) {
       if (!mounted || seq != _pendingSeq) return;
       _clearPending();
-      ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
-          content: Text(AppLocalizations.of(context)!.attrRatingFailed)));
+      showUserErrorMessage(
+          context, AppLocalizations.of(context)!.attrRatingFailed);
     }
   }
 

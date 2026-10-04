@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Business Verification Admin Screen
 ///
@@ -225,9 +226,7 @@ class _BusinessVerificationAdminScreenState
     } catch (e) {
       if (!mounted) return;
       setState(() => _busyUserIds.remove(request.userId));
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -301,9 +300,7 @@ class _BusinessVerificationAdminScreenState
     } catch (e) {
       if (!mounted) return;
       setState(() => _busyUserIds.remove(request.userId));
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -413,9 +410,7 @@ class _BusinessVerificationAdminScreenState
     } catch (e) {
       if (!mounted) return;
       setState(() => _busyUserIds.remove(request.userId));
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -470,7 +465,7 @@ class _BusinessVerificationAdminScreenState
       return _EmptyState(
         icon: Icons.error_outline,
         iconColor: AppColors.errorRed,
-        message: l10n.adminErrorLoadingData(_loadError!),
+        message: userErrorMessage(context, _loadError),
       );
     }
 

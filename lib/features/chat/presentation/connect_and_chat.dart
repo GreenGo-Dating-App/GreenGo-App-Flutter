@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../core/utils/user_error.dart';
 import '../../../core/utils/conversation_queries.dart';
 import 'package:flutter/material.dart';
 
@@ -210,9 +211,11 @@ Future<void> openConnectChat(
     // Dismiss the loading barrier if it is still up (covers TimeoutException,
     // permission-denied, profile-unavailable, and any other failure).
     dismissBarrier();
-    messenger.showSnackBar(
-      SnackBar(content: Text(l10n.connectError)),
-    );
+    if (context.mounted) {
+      showUserErrorMessage(context, l10n.connectError);
+    } else {
+      messenger.showSnackBar(SnackBar(content: Text(l10n.connectError)));
+    }
   } finally {
     // Last-resort guarantee: the spinner can never outlive this function.
     dismissBarrier();

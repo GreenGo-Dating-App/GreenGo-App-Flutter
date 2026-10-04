@@ -11,6 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/widgets/verified_badge.dart';
@@ -1419,12 +1420,8 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     } else {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.couldNotOpenLink),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(
+            context, AppLocalizations.of(context)!.couldNotOpenLink);
       }
     }
   }

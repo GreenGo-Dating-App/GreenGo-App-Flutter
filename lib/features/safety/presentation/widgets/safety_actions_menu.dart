@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/safety_actions_service.dart';
@@ -86,15 +87,11 @@ class SafetyActionsMenu extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
     final navigator = Navigator.of(context);
+    final errorContext = Navigator.of(context, rootNavigator: true).context;
 
     // Admins cannot be reported — mirror chat behaviour.
     if (isReportedUserAdmin) {
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(l10n.chatCannotReportAdmin),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(context, l10n.chatCannotReportAdmin);
       return;
     }
 
@@ -168,13 +165,10 @@ class SafetyActionsMenu extends StatelessWidget {
       );
       // Leave the profile once reported+blocked.
       if (navigator.canPop()) navigator.pop();
-    } catch (_) {
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(l10n.chatCannotReportAdmin),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+    } catch (e, st) {
+      if (errorContext.mounted) {
+        showUserError(errorContext, e, stackTrace: st);
+      }
     }
   }
 
@@ -182,6 +176,7 @@ class SafetyActionsMenu extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
     final navigator = Navigator.of(context);
+    final errorContext = Navigator.of(context, rootNavigator: true).context;
 
     final confirmed = await showDialog<bool>(
       context: context,
@@ -226,13 +221,10 @@ class SafetyActionsMenu extends StatelessWidget {
       );
       // Leave the profile once blocked.
       if (navigator.canPop()) navigator.pop();
-    } catch (_) {
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(l10n.chatBlockUserTitle),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+    } catch (e, st) {
+      if (errorContext.mounted) {
+        showUserError(errorContext, e, stackTrace: st);
+      }
     }
   }
 }

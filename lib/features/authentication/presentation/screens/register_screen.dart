@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../core/widgets/language_selector.dart';
 import '../../../../generated/app_localizations.dart';
@@ -119,18 +120,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       privacyPolicy: _privacyPolicyAccepted,
       terms: _termsAccepted,
     )) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            l10n.consentRequiredError,
-            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
-          ),
-          backgroundColor: AppColors.errorRed,
-          behavior: SnackBarBehavior.floating,
-          margin: const EdgeInsets.all(16),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        ),
-      );
+      showUserErrorMessage(context, l10n.consentRequiredError);
       return;
     }
 
@@ -170,18 +160,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 context,
                 state.message,
               );
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(
-                    localizedMessage,
-                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
-                  ),
-                  backgroundColor: AppColors.errorRed,
-                  behavior: SnackBarBehavior.floating,
-                  margin: const EdgeInsets.all(16),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                ),
-              );
+              showUserErrorMessage(context, localizedMessage);
             } else if (state is AuthAuthenticated) {
               // Show email verification message
               ScaffoldMessenger.of(context).showSnackBar(

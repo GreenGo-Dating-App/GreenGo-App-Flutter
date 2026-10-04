@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/glass_container.dart';
@@ -161,7 +162,7 @@ class _PromoteScreenState extends State<PromoteScreen> {
       case PromotionOutcome.insufficientCoins:
         _handleInsufficientCoins();
       case PromotionOutcome.error:
-        _snack(l10n.promoteError);
+        showUserErrorMessage(context, l10n.promoteError);
     }
   }
 

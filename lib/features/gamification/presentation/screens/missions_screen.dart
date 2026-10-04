@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/glass_container.dart';
@@ -72,14 +73,9 @@ class _MissionsScreenState extends State<MissionsScreen> {
           behavior: SnackBarBehavior.floating,
         ),
       );
-    } catch (_) {
+    } catch (e, st) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Could not claim reward'),
-          behavior: SnackBarBehavior.floating,
-        ),
-      );
+      showUserError(context, e, stackTrace: st);
     } finally {
       if (mounted) setState(() => _claiming.remove(mission.def.id));
     }

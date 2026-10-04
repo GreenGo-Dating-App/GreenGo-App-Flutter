@@ -5,6 +5,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/user_error.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/video_profile.dart';
 import '../bloc/video_profile_bloc.dart';
 import '../bloc/video_profile_event.dart';
@@ -113,12 +115,10 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
     // Check duration
     if (_videoController!.value.duration.inSeconds > _maxDurationSeconds) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Video must be $_maxDurationSeconds seconds or less'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(
+            context,
+            AppLocalizations.of(context)!
+                .videoMaxDurationError(_maxDurationSeconds));
       }
       _videoController?.dispose();
       _videoController = null;
@@ -164,12 +164,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Upload failed: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) {
@@ -257,12 +252,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
             setState(() {
               _isUploading = false;
             });
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('Upload failed: ${state.message}'),
-                backgroundColor: AppColors.errorRed,
-              ),
-            );
+            showUserError(context, state.message);
           } else if (state is VideoProfileDeleted) {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(

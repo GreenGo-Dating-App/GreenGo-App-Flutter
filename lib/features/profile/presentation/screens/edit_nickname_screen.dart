@@ -12,6 +12,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 class EditNicknameScreen extends StatefulWidget {
 
@@ -175,12 +176,7 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
               Navigator.of(context).pop(state.profile);
             }
           } else if (state is ProfileError) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: AppColors.errorRed,
-              ),
-            );
+            showUserError(context, state.message);
           }
         },
         child: SingleChildScrollView(

@@ -15,6 +15,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/first_screen_gate.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/di/injection_container.dart';
 import '../../../../core/platform/web_media.dart';
@@ -520,12 +521,7 @@ class _EventsScreenState extends State<EventsScreen>
                 ),
               );
             } else if (state is EventsError) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(state.message),
-                  backgroundColor: AppColors.errorRed,
-                ),
-              );
+              showUserError(context, state.message);
             }
           },
           builder: (context, state) {
@@ -2404,11 +2400,8 @@ class EventDetailsScreen extends StatelessWidget {
         backgroundColor: AppColors.errorRed,
       ));
       if (navigator.canPop()) navigator.pop();
-    } catch (_) {
-      messenger.showSnackBar(SnackBar(
-        content: Text(l10n.somethingWentWrong),
-        backgroundColor: AppColors.errorRed,
-      ));
+    } catch (e, st) {
+      if (context.mounted) showUserError(context, e, stackTrace: st);
     }
   }
 
@@ -3088,8 +3081,7 @@ class EventDetailsScreen extends StatelessWidget {
           await sl<CanAffordFeature>()(userId: currentUserId, cost: cost);
       if (!context.mounted) return;
       if (!afford.fold((_) => false, (v) => v)) {
-        messenger.showSnackBar(
-            SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+        unawaited(showUserErrorMessage(context, l10n.eventsInsufficientCoins));
         return;
       }
       final confirmed = await _confirmCoinSpend(
@@ -3104,9 +3096,10 @@ class EventDetailsScreen extends StatelessWidget {
         eventId: event.id,
         userId: currentUserId,
       );
-    } catch (_) {
+    } catch (e) {
+      reportUserError(e);
       if (context.mounted) {
-        messenger.showSnackBar(SnackBar(content: Text(l10n.eventsRsvpError)));
+        unawaited(showUserErrorMessage(context, l10n.eventsRsvpError));
       }
       return;
     }
@@ -3134,8 +3127,8 @@ class EventDetailsScreen extends StatelessWidget {
           // Charge failed after admission — roll the reservation back.
           await ds.cancelRsvpWithPromotion(event.id, currentUserId);
           if (context.mounted) {
-            messenger.showSnackBar(
-                SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+            unawaited(
+                showUserErrorMessage(context, l10n.eventsInsufficientCoins));
           }
           return;
         }
@@ -3275,7 +3268,6 @@ class EventDetailsScreen extends StatelessWidget {
     if (choice == null || !context.mounted) return;
     final duration = choice.$1;
     final cost = choice.$2;
-    final messenger = ScaffoldMessenger.of(context);
     final bloc = context.read<EventsBloc>();
 
     final afford =
@@ -3296,8 +3288,7 @@ class EventDetailsScreen extends StatelessWidget {
     );
     if (!context.mounted) return;
     if (!charge.fold((_) => false, (_) => true)) {
-      messenger.showSnackBar(
-          SnackBar(content: Text(l10n.eventsInsufficientCoins)));
+      unawaited(showUserErrorMessage(context, l10n.eventsInsufficientCoins));
       return;
     }
     bloc.add(UpdateEvent(
@@ -4702,9 +4693,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       messenger.showSnackBar(
           SnackBar(content: Text(l10n.eventsSeriesCancelled)));
       navigator.pop();
-    } catch (_) {
-      messenger.showSnackBar(
-          SnackBar(content: Text(l10n.eventsSeriesCancelError)));
+    } catch (e) {
+      reportUserError(e);
+      if (mounted) {
+        unawaited(showUserErrorMessage(context, l10n.eventsSeriesCancelError));
+      }
     }
   }
 
@@ -4831,12 +4824,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       ...ContentFilterService().findProhibitedTerms(_descriptionController.text),
     ];
     if (prohibited.isNotEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.eventTextProhibited),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      unawaited(showUserErrorMessage(
+          context, AppLocalizations.of(context)!.eventTextProhibited));
       return;
     }
 
@@ -4905,9 +4894,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         );
         if (!mounted) return;
         if (!charge.fold((_) => false, (_) => true)) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(l10n.eventsInsufficientCoins)),
-          );
+          unawaited(showUserErrorMessage(context, l10n.eventsInsufficientCoins));
           return;
         }
       }
@@ -4926,14 +4913,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             await PhotoValidationService().validateImageForSending(File(f.path));
         if (!mounted) return;
         if (!res.isValid) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                  AppLocalizations.of(context)?.photoExplicitContent ??
-                      'This image contains inappropriate content and cannot be used.'),
-              backgroundColor: AppColors.errorRed,
-            ),
-          );
+          unawaited(showUserErrorMessage(
+              context, AppLocalizations.of(context)!.photoExplicitContent));
           return;
         }
       }

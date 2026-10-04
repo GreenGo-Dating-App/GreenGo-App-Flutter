@@ -15,6 +15,7 @@ import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
+import '../../../../../core/utils/user_error.dart';
 
 class Step6VoiceRecordingScreen extends StatefulWidget {
   const Step6VoiceRecordingScreen({super.key});
@@ -56,12 +57,8 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
       // Microphone permission (the plugin prompts on first use).
       if (!await _recorder.hasPermission()) {
         if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.voiceMicPermissionDenied),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(
+            context, AppLocalizations.of(context)!.voiceMicPermissionDenied);
         return;
       }
 
@@ -92,12 +89,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
       });
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.voiceFailedStartRecording(e.toString())),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserError(context, e);
     }
   }
 
@@ -160,12 +152,7 @@ class _Step6VoiceRecordingScreenState extends State<Step6VoiceRecordingScreen> {
       });
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.voiceFailedUploadRecording(e.toString())),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserError(context, e);
       setState(() {
         _isUploading = false;
       });

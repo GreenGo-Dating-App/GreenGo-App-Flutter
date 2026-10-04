@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../generated/app_localizations.dart';
 import '../widgets/auth_button.dart';
@@ -99,29 +100,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         default:
           message = l10n.resetErrorFailed;
       }
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(message, style: const TextStyle(color: Colors.white)),
-          backgroundColor: AppColors.errorRed,
-          behavior: SnackBarBehavior.floating,
-          margin: const EdgeInsets.all(16),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        ),
-      );
+      showUserErrorMessage(context, message);
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n.somethingWentWrong,
-              style: const TextStyle(color: Colors.white)),
-          backgroundColor: AppColors.errorRed,
-          behavior: SnackBarBehavior.floating,
-          margin: const EdgeInsets.all(16),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        ),
-      );
+      showUserError(context, e);
     } finally {
       if (mounted) {
         setState(() => _isLoading = false);

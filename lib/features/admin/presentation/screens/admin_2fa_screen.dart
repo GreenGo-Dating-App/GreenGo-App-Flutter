@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/user_error.dart';
 
 class Admin2FAScreen extends StatefulWidget {
 
@@ -74,10 +75,9 @@ class _Admin2FAScreenState extends State<Admin2FAScreen> {
       }
 
       _startCooldown();
-    } on FirebaseFunctionsException catch (e) {
-      _errorMessage = e.message ?? 'Failed to send code';
-    } catch (e) {
-      _errorMessage = 'Failed to send code';
+    } catch (e, st) {
+      reportUserError(e, st);
+      if (mounted) _errorMessage = userErrorMessage(context, e);
     }
 
     if (mounted) setState(() => _isSending = false);

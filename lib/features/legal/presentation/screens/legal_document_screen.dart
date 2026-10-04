@@ -4,6 +4,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/legal_documents_service.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Screen to display legal documents (Terms & Conditions or Privacy Policy)
 class LegalDocumentScreen extends StatefulWidget {
@@ -168,7 +169,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
               ),
               const SizedBox(height: 8),
               Text(
-                _error!,
+                userErrorMessage(context, _error),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   color: AppColors.textSecondary,

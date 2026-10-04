@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/presentation/screens/bookings_list_screen.dart';
@@ -180,9 +181,9 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
     }
     final r = await di.sl<UserExperiencesRepository>().setStatus(e.id, s);
     r.fold(
-      (_) => m.showSnackBar(SnackBar(
-          content: Text(l.somethingWentWrong),
-          backgroundColor: AppColors.errorRed)),
+      (f) {
+        if (mounted) showUserError(context, f);
+      },
       (_) {
         bloc.add(ExperienceFeedItemUpserted(e.copyWith(status: s)));
         m.showSnackBar(SnackBar(
@@ -220,9 +221,9 @@ class _MyExperiencesViewState extends State<_MyExperiencesView> {
     if (ok != true) return;
     final r = await di.sl<UserExperiencesRepository>().deleteExperience(e.id);
     r.fold(
-      (_) => m.showSnackBar(SnackBar(
-          content: Text(l.somethingWentWrong),
-          backgroundColor: AppColors.errorRed)),
+      (f) {
+        if (mounted) showUserError(context, f);
+      },
       (_) {
         bloc.add(ExperienceFeedItemRemoved(e.id));
         m.showSnackBar(SnackBar(content: Text(l.uexpDeleted)));

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/utils/validators.dart';
 import '../../../../generated/app_localizations.dart';
 import '../widgets/password_strength_indicator.dart';
@@ -69,11 +70,9 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
       // Verify email matches
       if (_emailConfirmController.text.trim() != user.email) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(AppLocalizations.of(context)?.changePasswordEmailMismatch ?? 'Email does not match your account'),
-              backgroundColor: AppColors.errorRed,
-            ),
+          showUserErrorMessage(
+            context,
+            AppLocalizations.of(context)?.changePasswordEmailMismatch ?? 'Email does not match your account',
           );
         }
         setState(() => _isLoading = false);
@@ -113,23 +112,13 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
             message = AppLocalizations.of(context)?.changePasswordReauthRequired ?? 'Please log out and log in again before changing your password';
             break;
           default:
-            message = e.message ?? 'Failed to change password';
+            message = userErrorMessage(context, e);
         }
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(message),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserErrorMessage(context, message);
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(e.toString()),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) setState(() => _isLoading = false);

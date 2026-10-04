@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/group_tags_service.dart';
@@ -77,7 +78,11 @@ class MyGroupTagsTile extends StatelessWidget {
       await service.setTagsForGroup(userId, groupId, updated);
       messenger.showSnackBar(SnackBar(content: Text(l10n.groupTagsSaved)));
     } catch (_) {
-      messenger.showSnackBar(SnackBar(content: Text(l10n.groupTagsSaveFailed)));
+      if (context.mounted) {
+        showUserErrorMessage(context, l10n.groupTagsSaveFailed);
+      } else {
+        messenger.showSnackBar(SnackBar(content: Text(l10n.groupTagsSaveFailed)));
+      }
     }
   }
 }

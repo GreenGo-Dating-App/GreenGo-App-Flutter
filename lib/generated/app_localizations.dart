@@ -4913,6 +4913,12 @@ abstract class AppLocalizations {
   /// **'Translation failed. Please try again.'**
   String get chatTranslationFailed;
 
+  /// Inline hint under a chat message whose translation could not be fetched; tapping retries
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t translate · Tap to retry'**
+  String get translationFailedTapRetry;
+
   /// No description provided for @chatTrialExpired.
   ///
   /// In en, this message translates to:
@@ -27857,6 +27863,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Google rating'**
   String get attrRatingGoogleLabel;
+
+  /// Web banner shown when a newer build of the web app has been deployed
+  ///
+  /// In en, this message translates to:
+  /// **'A new version of GreenGo is available.'**
+  String get webUpdateAvailable;
+
+  /// Web update banner: reload into the new version
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh'**
+  String get webUpdateRefresh;
+
+  /// Web update banner: dismiss
+  ///
+  /// In en, this message translates to:
+  /// **'Later'**
+  String get webUpdateLater;
+
+  /// Title of the friendly error popup
+  ///
+  /// In en, this message translates to:
+  /// **'Oops!'**
+  String get userErrorTitle;
+
+  /// Generic friendly error message (unexpected/parse errors)
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong. Please try again.'**
+  String get userErrorGeneric;
+
+  /// Error popup: request timed out
+  ///
+  /// In en, this message translates to:
+  /// **'This is taking longer than expected. Please try again.'**
+  String get userErrorTimeout;
+
+  /// Error popup: permission denied
+  ///
+  /// In en, this message translates to:
+  /// **'You don\'t have permission to do that.'**
+  String get userErrorPermissionDenied;
+
+  /// Error popup: content not found / deleted
+  ///
+  /// In en, this message translates to:
+  /// **'This content is no longer available.'**
+  String get userErrorNotFound;
+
+  /// Error popup: rate limited
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re doing that too often. Please wait a moment and try again.'**
+  String get userErrorTooManyRequests;
+
+  /// Error popup: user not authenticated
+  ///
+  /// In en, this message translates to:
+  /// **'Your session has expired. Please sign in again.'**
+  String get userErrorSessionExpired;
+
+  /// Error popup: invalid argument
+  ///
+  /// In en, this message translates to:
+  /// **'Some of the information isn\'t valid. Please check it and try again.'**
+  String get userErrorInvalidInput;
+
+  /// Error popup: failed precondition
+  ///
+  /// In en, this message translates to:
+  /// **'This action isn\'t available right now.'**
+  String get userErrorNotAllowed;
+
+  /// Error popup: storage upload failed
+  ///
+  /// In en, this message translates to:
+  /// **'The upload didn\'t go through. Please try again.'**
+  String get userErrorUploadFailed;
+
+  /// Error popup: recorded video too long
+  ///
+  /// In en, this message translates to:
+  /// **'Video must be {seconds} seconds or less'**
+  String videoMaxDurationError(int seconds);
 }
 
 class _AppLocalizationsDelegate

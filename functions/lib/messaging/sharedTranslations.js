@@ -52,15 +52,19 @@ exports.sharedTranslationId = sharedTranslationId;
  *
  * Guard rails: signed-in only, ≤ 50 texts per call, ≤ 5,000 chars each, and a
  * per-user daily quota of misses (cache hits are free).
+ *
+ * Misses are translated with the FREE Google endpoint (./freeTranslate), at
+ * most 4 requests in flight, retried with backoff. If the endpoint rate-limits
+ * (429) or fails, the untranslated texts come back as '' (same response shape
+ * as always), are not stored, and the app falls back to translating them on
+ * the device. No dependency on the paid Cloud Translation API.
  */
 const https_1 = require("firebase-functions/v2/https");
 const admin = __importStar(require("firebase-admin"));
 const crypto = __importStar(require("crypto"));
-const translate_1 = require("@google-cloud/translate");
 require("../shared/firebaseAdmin");
+const freeTranslate_1 = require("./freeTranslate");
 const db = admin.firestore();
-let client = null;
-const translator = () => (client !== null && client !== void 0 ? client : (client = new translate_1.TranslationServiceClient()));
 const MAX_TEXTS = 50;
 const MAX_CHARS = 5000;
 const DAILY_MISS_QUOTA = 1500;
@@ -70,7 +74,7 @@ function sharedTranslationId(target, text) {
     return crypto.createHash('sha256').update(`${target}\u0000${text}`, 'utf8').digest('hex');
 }
 exports.translateTexts = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds: 60 }, async (request) => {
-    var _a, _b, _c, _d;
+    var _a, _b, _c;
     const uid = (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid;
     if (!uid)
         throw new https_1.HttpsError('unauthenticated', 'Sign in required');
@@ -98,7 +102,7 @@ exports.translateTexts = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds:
             misses.push(unique[i]);
     });
     if (misses.length > 0) {
-        // Per-user daily quota on paid translations.
+        // Per-user daily quota on translated misses.
         const day = new Date().toISOString().slice(0, 10).replace(/-/g, '');
         const quotaRef = db.collection('translation_quota').doc(`${uid}_${day}`);
         const allowed = await db.runTransaction(async (tx) => {
@@ -115,28 +119,30 @@ exports.translateTexts = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds:
             return true;
         });
         if (allowed) {
-            const [resp] = await translator().translateText({
-                parent: `projects/${process.env.GCLOUD_PROJECT}/locations/global`,
-                contents: misses,
-                targetLanguageCode: target,
-                mimeType: 'text/plain',
+            const out = await (0, freeTranslate_1.freeTranslateMany)(misses, target, {
+                concurrency: 4,
+                timeoutMs: 6000,
+                // Well inside the app's 30s callable timeout.
+                deadlineMs: 20000,
             });
-            const out = (_d = resp.translations) !== null && _d !== void 0 ? _d : [];
             const batch = db.batch();
+            let writes = 0;
             misses.forEach((text, i) => {
                 var _a, _b;
-                const translated = ((_a = out[i]) === null || _a === void 0 ? void 0 : _a.translatedText) || '';
+                const translated = ((_a = out[i]) === null || _a === void 0 ? void 0 : _a.text) || '';
                 if (!translated)
                     return;
                 result.set(text, translated);
                 batch.set(db.collection('translations').doc(sharedTranslationId(target, text)), {
                     target,
                     translated,
-                    source: ((_b = out[i]) === null || _b === void 0 ? void 0 : _b.detectedLanguageCode) || null,
+                    source: ((_b = out[i]) === null || _b === void 0 ? void 0 : _b.detectedLanguage) || null,
                     createdAt: admin.firestore.FieldValue.serverTimestamp(),
                 });
+                writes++;
             });
-            await batch.commit();
+            if (writes > 0)
+                await batch.commit();
         }
     }
     // Same order as the request; '' = not translated (caller keeps original).

@@ -41,10 +41,11 @@ exports.getScheduledMessages = exports.cancelScheduledMessage = exports.sendSche
 const firestore_1 = require("firebase-functions/v2/firestore");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const https_1 = require("firebase-functions/v2/https");
-const translate_1 = require("@google-cloud/translate");
+const freeTranslate_1 = require("./freeTranslate");
 const utils_1 = require("../shared/utils");
 const admin = __importStar(require("firebase-admin"));
-const translationClient = new translate_1.TranslationServiceClient();
+// Free endpoint (no paid Cloud Translation API). Not exported from src/index.ts.
+const translationClient = freeTranslate_1.freeTranslationClient;
 // Supported languages
 const SUPPORTED_LANGUAGES = [
     'en', 'es', 'fr', 'de', 'pt', 'it', 'ar', 'zh', 'ja', 'ko', 'ru',

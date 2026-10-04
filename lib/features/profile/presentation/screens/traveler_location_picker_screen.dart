@@ -13,6 +13,7 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
+import '../../../../core/utils/user_error.dart';
 
 /// Full-screen location picker for Traveler mode.
 /// Uses geocoding for forward/reverse address lookup, GPS for current location,
@@ -175,12 +176,7 @@ class _TravelerLocationPickerScreenState
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)?.travelerFailedGetLocation(e.toString()) ?? 'Failed to get location: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) setState(() => _isLoadingGps = false);

@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
 import '../../domain/booking_failure.dart';
@@ -177,12 +178,11 @@ class _SlotsViewState extends State<_SlotsView> {
             showBookingSnack(
                 context, l.bkDateCancelled(s.cancelledBookings));
           case SlotsFlash.invalid:
-            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-              content: Text(s.errors.isEmpty
-                  ? l.somethingWentWrong
-                  : BookingL10n.slotError(l, s.errors.first)),
-              backgroundColor: AppColors.errorRed,
-            ));
+            showUserErrorMessage(
+                context,
+                s.errors.isEmpty
+                    ? l.userErrorGeneric
+                    : BookingL10n.slotError(l, s.errors.first));
           case SlotsFlash.failed:
             final f = s.failure;
             if (f is BookingFailure &&
@@ -190,10 +190,7 @@ class _SlotsViewState extends State<_SlotsView> {
                 f.code != BookingFailure.network) {
               showBookingFailure(context, f);
             } else {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text(l.bkSlotSaveFailed),
-                backgroundColor: AppColors.errorRed,
-              ));
+              showUserErrorMessage(context, l.bkSlotSaveFailed);
             }
           case null:
             break;

@@ -13,6 +13,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../safety/presentation/widgets/age_verification_gate.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
@@ -213,12 +214,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
             );
             Navigator.of(context).pop();
           } else if (state is CommunitiesError) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: AppColors.errorRed,
-              ),
-            );
+            showUserError(context, state.message);
           } else if (state is CommunityJoinRequested) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -1428,14 +1424,16 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                               e.code == 'invalid-credential') {
                             errorText = l10n.authErrorWrongPassword;
                           } else {
-                            errorText =
-                                e.message ?? l10n.profileAuthenticationFailed;
+                            reportUserError(e);
+                            errorText = l10n.profileAuthenticationFailed;
                           }
                         });
                       } catch (e) {
+                        reportUserError(e);
                         setDialogState(() {
                           loading = false;
-                          errorText = e.toString();
+                          errorText = userErrorMessageForKind(
+                              l10n, classifyUserError(e));
                         });
                       }
                     },

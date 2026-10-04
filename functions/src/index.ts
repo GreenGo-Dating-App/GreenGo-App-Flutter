@@ -31,7 +31,8 @@ export {
 // Messaging Functions
 export {
   translateMessage,
-  autoTranslateMessage,
+  // autoTranslateMessage removed (see messaging/translation.ts): delete the
+  // deployed copy with `firebase functions:delete autoTranslateMessage`.
   batchTranslateMessages,
   getSupportedLanguages,
 } from './messaging/translation';

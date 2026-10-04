@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
@@ -143,12 +144,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
         setState(() {
           _isLoading = false;
         });
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.chatFailedToLoadConversations}: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e, title: AppLocalizations.of(context)!.chatFailedToLoadConversations);
       }
     }
   }
@@ -213,12 +209,7 @@ class _ForwardMessageSheetState extends State<ForwardMessageSheet> {
         setState(() {
           _isForwarding = false;
         });
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('${AppLocalizations.of(context)!.chatFailedToForwardMessage}: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e, title: AppLocalizations.of(context)!.chatFailedToForwardMessage);
       }
     }
   }

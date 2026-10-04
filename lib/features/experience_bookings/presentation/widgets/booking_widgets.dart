@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/presentation/widgets/experience_widgets.dart';
 import '../../domain/booking_failure.dart';
@@ -222,13 +223,10 @@ class BookingTile extends StatelessWidget {
   }
 }
 
-/// Error snackbar for a booking refusal.
+/// Error popup for a booking refusal.
 void showBookingFailure(BuildContext context, BookingFailure f) {
   final l = AppLocalizations.of(context)!;
-  ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
-    content: Text(BookingL10n.error(l, f)),
-    backgroundColor: AppColors.errorRed,
-  ));
+  showUserErrorMessage(context, BookingL10n.error(l, f));
 }
 
 void showBookingSnack(BuildContext context, String msg) {

@@ -4,6 +4,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/glass_container.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/booking_rules.dart';
 
@@ -49,12 +50,8 @@ class _BookingCheckInScannerScreenState
       if (raw != _lastRejected) {
         _lastRejected = raw;
         final l = AppLocalizations.of(context)!;
-        ScaffoldMessenger.of(context)
-          ..hideCurrentSnackBar()
-          ..showSnackBar(SnackBar(
-            content: Text(parsed == null ? l.bkErrInvalidCode : l.bkWrongBooking),
-            backgroundColor: AppColors.errorRed,
-          ));
+        showUserErrorMessage(
+            context, parsed == null ? l.bkErrInvalidCode : l.bkWrongBooking);
       }
     }
   }

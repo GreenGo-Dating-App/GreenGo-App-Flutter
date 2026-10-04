@@ -101,8 +101,8 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                     onPressed: () => context
                         .read<SpotsBloc>()
                         .add(LoadSpotById(spotId: widget.spotId)),
-                    child: const Text('Try Again',
-                        style: TextStyle(color: AppColors.richGold)),
+                    child: Text(l10n.tryAgain,
+                        style: const TextStyle(color: AppColors.richGold)),
                   ),
                 ],
               ),

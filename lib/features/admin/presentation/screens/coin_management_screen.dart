@@ -8,6 +8,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../coins/domain/entities/coin_package.dart';
 import '../../../coins/domain/entities/invoice.dart';
 import '../../../coins/domain/entities/order.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Coin Management Screen
 /// Admin interface for managing coin packages and user balances
@@ -491,12 +492,7 @@ class _PackageEditDialogState extends State<_PackageEditDialog> {
     final bonus = int.tryParse(_bonusController.text) ?? 0;
 
     if (coins <= 0 || price <= 0) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(AppLocalizations.of(context)!.adminEnterValidCoinAmountAndPrice),
-          backgroundColor: AppColors.errorRed,
-        ),
-      );
+      showUserErrorMessage(context, AppLocalizations.of(context)!.adminEnterValidCoinAmountAndPrice);
       return;
     }
 
@@ -787,21 +783,11 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
             onPressed: () {
               final amount = int.tryParse(controller.text) ?? 0;
               if (amount <= 0) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(l10n.adminEnterValidAmount),
-                    backgroundColor: AppColors.errorRed,
-                  ),
-                );
+                showUserErrorMessage(context, l10n.adminEnterValidAmount);
                 return;
               }
               if (reasonController.text.trim().isEmpty) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(l10n.adminProvideReason),
-                    backgroundColor: AppColors.errorRed,
-                  ),
-                );
+                showUserErrorMessage(context, l10n.adminProvideReason);
                 return;
               }
 

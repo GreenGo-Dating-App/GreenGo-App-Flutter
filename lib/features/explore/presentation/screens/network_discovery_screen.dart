@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
@@ -794,11 +795,9 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       messenger.showSnackBar(
         SnackBar(content: Text(l10n.savedSearchSaved)),
       );
-    } catch (_) {
+    } catch (e, st) {
       if (!mounted) return;
-      messenger.showSnackBar(
-        SnackBar(content: Text(l10n.somethingWentWrong)),
-      );
+      showUserError(context, e, stackTrace: st);
     }
   }
 
@@ -1299,8 +1298,6 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   /// afford it, routes them to the coin shop.
   Future<void> _onSpendCoinsToSeeMore() async {
     if (_spending) return;
-    final l10n = AppLocalizations.of(context)!;
-    final messenger = ScaffoldMessenger.of(context);
     setState(() => _spending = true);
     try {
       final coinRepository = di.sl<CoinRepository>();
@@ -1328,9 +1325,7 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
       spendResult.fold(
         (failure) {
           setState(() => _spending = false);
-          messenger.showSnackBar(
-            SnackBar(content: Text(l10n.somethingWentWrong)),
-          );
+          showUserError(context, failure);
         },
         (_) {
           setState(() {
@@ -1341,12 +1336,10 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
           });
         },
       );
-    } catch (_) {
+    } catch (e, st) {
       if (!mounted) return;
       setState(() => _spending = false);
-      messenger.showSnackBar(
-        SnackBar(content: Text(l10n.somethingWentWrong)),
-      );
+      showUserError(context, e, stackTrace: st);
     }
   }
 

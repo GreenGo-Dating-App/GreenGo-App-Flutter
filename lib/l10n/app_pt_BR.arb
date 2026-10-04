@@ -984,6 +984,7 @@
   "chatTranslationDisabled": "Tradução desativada",
   "chatTranslationEnabled": "Tradução ativada",
   "chatTranslationFailed": "Tradução falhou. Tente novamente.",
+  "translationFailedTapRetry": "Não foi possível traduzir · Toque para tentar de novo",
   "chatTrialExpired": "Seu teste gratuito expirou.",
   "chatTtsComingSoon": "Texto para fala em breve!",
   "chatTyping": "digitando...",
@@ -5212,5 +5213,19 @@
   "attrRatingRemove": "Remover minha avaliação",
   "attrRatingFailed": "Não foi possível salvar sua avaliação. Tente novamente.",
   "attrRatingGreengoLabel": "Comunidade GreenGo",
-  "attrRatingGoogleLabel": "Avaliação do Google"
+  "attrRatingGoogleLabel": "Avaliação do Google",
+  "webUpdateAvailable": "Uma nova versão do GreenGo está disponível.",
+  "webUpdateRefresh": "Atualizar",
+  "webUpdateLater": "Mais tarde",
+  "userErrorTitle": "Ops!",
+  "userErrorGeneric": "Algo deu errado. Tente novamente.",
+  "userErrorTimeout": "Isso está demorando mais do que o esperado. Tente novamente.",
+  "userErrorPermissionDenied": "Você não tem permissão para fazer isso.",
+  "userErrorNotFound": "Este conteúdo não está mais disponível.",
+  "userErrorTooManyRequests": "Você está fazendo isso com muita frequência. Aguarde um momento e tente novamente.",
+  "userErrorSessionExpired": "Sua sessão expirou. Entre novamente.",
+  "userErrorInvalidInput": "Algumas informações não são válidas. Verifique e tente novamente.",
+  "userErrorNotAllowed": "Esta ação não está disponível no momento.",
+  "userErrorUploadFailed": "O envio não foi concluído. Tente novamente.",
+  "videoMaxDurationError": "O vídeo deve ter no máximo {seconds} segundos"
 }

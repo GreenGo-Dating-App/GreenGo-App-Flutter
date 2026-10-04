@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/services/user_directory_service.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../safety/presentation/widgets/report_block_sheet.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -301,7 +302,7 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    state.message,
+                    userErrorMessage(context, state.message),
                     style: const TextStyle(color: AppColors.textSecondary),
                     textAlign: TextAlign.center,
                   ),
@@ -313,7 +314,7 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
                     ),
-                    child: const Text('Retry'),
+                    child: Text(AppLocalizations.of(context)!.tryAgain),
                   ),
                 ],
               ),

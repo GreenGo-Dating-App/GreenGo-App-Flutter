@@ -12,6 +12,7 @@ import '../../../../core/platform/web_media.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/geo_query.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/data/services/event_geocoder.dart';
 import '../../../events/presentation/screens/event_location_picker_screen.dart';
@@ -295,6 +296,10 @@ class _EditorFormState extends State<_EditorForm> {
   }
 
   void _snack(String msg, {bool error = true}) {
+    if (error) {
+      showUserErrorMessage(context, msg);
+      return;
+    }
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text(msg),
       backgroundColor: error ? AppColors.errorRed : AppColors.successGreen,

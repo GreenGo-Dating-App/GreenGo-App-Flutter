@@ -9,6 +9,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../bloc/verification_admin_bloc.dart';
 import '../bloc/verification_admin_event.dart';
 import '../bloc/verification_admin_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 class VerificationAdminScreen extends StatefulWidget {
 
@@ -80,12 +81,7 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
               ),
             );
           } else if (state is VerificationAdminError) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: AppColors.errorRed,
-              ),
-            );
+            showUserError(context, state.message);
           }
         },
         builder: (context, state) {
@@ -395,12 +391,7 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
           ElevatedButton(
             onPressed: () {
               if (controller.text.trim().isEmpty) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(l10n.rejectionReasonRequired),
-                    backgroundColor: AppColors.errorRed,
-                  ),
-                );
+                showUserErrorMessage(context, l10n.rejectionReasonRequired);
                 return;
               }
               Navigator.pop(dialogContext);
@@ -810,12 +801,7 @@ class _VerificationCard extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               if (controller.text.trim().isEmpty) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(l10n.rejectionReasonRequired),
-                    backgroundColor: AppColors.errorRed,
-                  ),
-                );
+                showUserErrorMessage(context, l10n.rejectionReasonRequired);
                 return;
               }
               Navigator.pop(context);
@@ -860,12 +846,7 @@ class _VerificationCard extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               if (controller.text.trim().isEmpty) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(l10n.rejectionReasonRequired),
-                    backgroundColor: AppColors.errorRed,
-                  ),
-                );
+                showUserErrorMessage(context, l10n.rejectionReasonRequired);
                 return;
               }
               Navigator.pop(context);

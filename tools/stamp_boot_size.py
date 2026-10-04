@@ -37,8 +37,11 @@ def main():
     size = os.path.getsize(entry)
     html = io.open(index, encoding="utf-8").read()
     if not PLACEHOLDER.search(html):
-        print("placeholder /*GG_BOOT_BYTES*/ not found in build/web/index.html")
-        return 1
+        # Byte progress was retired (it downloaded main.dart.js twice);
+        # index.html no longer has the placeholder. Not an error.
+        print("no /*GG_BOOT_BYTES*/ placeholder in index.html - nothing to "
+              "stamp (byte progress retired); OK")
+        return 0
 
     html = PLACEHOLDER.sub("var total = %d; /*GG_BOOT_BYTES*/" % size, html)
     io.open(index, "w", encoding="utf-8", newline="\n").write(html)

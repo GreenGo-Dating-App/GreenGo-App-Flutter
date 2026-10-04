@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/repositories/gamification_repository.dart';
 import '../bloc/gamification_bloc.dart';
@@ -357,7 +358,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           ),
           const SizedBox(height: 16),
           Text(
-            state.leaderboardError!,
+            userErrorMessage(context, state.leaderboardError),
             style: TextStyle(
               color: Colors.white.withOpacity(0.7),
             ),
@@ -367,7 +368,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           ElevatedButton.icon(
             onPressed: _loadLeaderboard,
             icon: const Icon(Icons.refresh),
-            label: const Text('Retry'),
+            label: Text(l10n.retry),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.richGold,
               foregroundColor: Colors.black,

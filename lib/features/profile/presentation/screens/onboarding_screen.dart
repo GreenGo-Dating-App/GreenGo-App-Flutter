@@ -21,6 +21,7 @@ import 'onboarding/step6_voice_recording_screen.dart';
 import 'onboarding/step7_personality_quiz_screen.dart';
 import 'onboarding/step8_profile_preview_screen.dart';
 import 'onboarding/step9_social_links_screen.dart';
+import '../../../../core/utils/user_error.dart';
 
 class OnboardingScreen extends StatelessWidget {
 
@@ -43,12 +44,7 @@ class OnboardingScreen extends StatelessWidget {
               Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
             }
           } else if (state is OnboardingError) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(state.message),
-                backgroundColor: Colors.red,
-              ),
-            );
+            showUserError(context, state.message);
           }
         },
         builder: (context, state) {

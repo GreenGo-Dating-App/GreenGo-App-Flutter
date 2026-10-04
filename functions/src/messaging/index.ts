@@ -6,11 +6,12 @@
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
-import { TranslationServiceClient } from '@google-cloud/translate';
+import { freeTranslationClient } from './freeTranslate';
 import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
 import * as admin from 'firebase-admin';
 
-const translationClient = new TranslationServiceClient();
+// Free endpoint (no paid Cloud Translation API). Not exported from src/index.ts.
+const translationClient = freeTranslationClient;
 
 // Supported languages
 const SUPPORTED_LANGUAGES = [

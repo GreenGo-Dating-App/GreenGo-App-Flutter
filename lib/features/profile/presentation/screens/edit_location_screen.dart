@@ -16,6 +16,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 class EditLocationScreen extends StatefulWidget {
 
@@ -128,12 +129,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.profileLocationFailed(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       setState(() => _isLoadingLocation = false);
@@ -147,8 +143,6 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
   /// from WebLocationFallback (Nominatim); if that lookup fails the
   /// coordinates are still saved.
   Future<void> _useBrowserLocation() async {
-    final l10n = AppLocalizations.of(context)!;
-
     setState(() => _isLoadingLocation = true);
     try {
       var permission = await Geolocator.checkPermission();
@@ -182,12 +176,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
       setState(() => _selectedLocation = location);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(l10n.profileLocationFailed(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     } finally {
       if (mounted) setState(() => _isLoadingLocation = false);
@@ -257,12 +246,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
           setState(() {
             _isSaving = false;
           });
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.message),
-              backgroundColor: AppColors.errorRed,
-            ),
-          );
+          showUserError(context, state.message);
         }
       },
       child: Scaffold(

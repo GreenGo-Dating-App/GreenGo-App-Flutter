@@ -8,6 +8,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Support Tickets Admin Screen
 ///
@@ -210,7 +211,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
         if (snapshot.hasError) {
           return Center(
             child: Text(
-              AppLocalizations.of(context)!.adminErrorSnapshot(snapshot.error.toString()),
+              userErrorMessage(context, snapshot.error),
               style: const TextStyle(color: AppColors.errorRed),
             ),
           );
@@ -539,12 +540,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -572,12 +568,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
@@ -601,12 +592,7 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error: $e'),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }

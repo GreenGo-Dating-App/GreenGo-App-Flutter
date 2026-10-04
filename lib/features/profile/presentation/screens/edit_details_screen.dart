@@ -9,6 +9,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../../../../core/utils/user_error.dart';
 
 class EditDetailsScreen extends StatefulWidget {
 
@@ -95,12 +96,7 @@ class _EditDetailsScreenState extends State<EditDetailsScreen> {
           setState(() {
             _isSaving = false;
           });
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.message),
-              backgroundColor: AppColors.errorRed,
-            ),
-          );
+          showUserError(context, state.message);
         }
       },
       child: Scaffold(

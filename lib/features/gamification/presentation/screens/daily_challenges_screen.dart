@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/daily_challenge.dart';
 import '../../domain/usecases/get_daily_challenges.dart';
@@ -202,7 +203,8 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    state.challengesError!,
+                    userErrorMessage(context, state.challengesError),
+                    textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white.withOpacity(0.7)),
                   ),
                   const SizedBox(height: 24),
@@ -213,7 +215,7 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
                           );
                     },
                     icon: const Icon(Icons.refresh),
-                    label: const Text('Retry'),
+                    label: Text(l10n.retry),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
                       foregroundColor: Colors.black,

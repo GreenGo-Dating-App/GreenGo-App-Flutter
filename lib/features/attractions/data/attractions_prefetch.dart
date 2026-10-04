@@ -11,7 +11,7 @@ import 'datasources/attractions_datasource.dart';
 ///
 /// Called from [EventsPrefetch] once the first screen has painted. It runs the
 /// SAME reads the tab's bootstrap needs — the storage bucket, the published
-/// countries, the geo config and the profile (all cache-first) — resolves the
+/// countries and the profile (all cache-first) — resolves the
 /// country the tab will open on (the same layered [CountryResolver], traveler
 /// mode first, then the device anchor, then `primaryOrigin`) and loads that
 /// country's shard. Everything lands in [AttractionsDataSource]'s session
@@ -47,13 +47,11 @@ class AttractionsPrefetch {
       ds.bucket(),
       ds.publishedCountries(),
       _profile(userId),
-      ds.geoIndex(),
     ]);
     if (epoch != _epoch) return;
     final countries = reads[1] as List<AttractionCountry>;
     if (countries.isEmpty) return;
     final profile = reads[2] as Map<String, dynamic>;
-    final geo = reads[3] as List<Map<String, dynamic>>;
 
     final published = countries.map((c) => c.iso2).toSet();
     final home = (profile['primaryOrigin'] as String?)?.toUpperCase();
@@ -66,8 +64,9 @@ class AttractionsPrefetch {
       aLat = lat;
       aLng = lng;
     }
-    final iso = CountryResolver.resolve(
-          candidates: candidatesFromGeo(geo),
+    // Country name / single bounding box first; the ~0.5 MB geo index only
+    // when those are ambiguous (see AttractionsDataSource.resolveCountry).
+    final iso = await ds.resolveCountry(
           countryName: anchor?.country,
           lat: aLat,
           lng: aLng,
@@ -107,21 +106,7 @@ class AttractionsPrefetch {
   /// [AttractionsDataSource.geoIndex] rows as resolver candidates.
   static List<CountryCandidate> candidatesFromGeo(
           List<Map<String, dynamic>> geo) =>
-      geo.map((m) {
-        final iso = (m['iso2'] ?? '').toString().toUpperCase();
-        final bboxRaw = m['bbox'];
-        return CountryCandidate(
-          iso2: iso,
-          name: (m['name'] ?? iso).toString(),
-          bbox: bboxRaw is List
-              ? bboxRaw.map((e) => (e as num).toDouble()).toList()
-              : null,
-          cities: ((m['cities'] as List?) ?? const [])
-              .map<(double, double)>((c) =>
-                  ((c[0] as num).toDouble(), (c[1] as num).toDouble()))
-              .toList(),
-        );
-      }).toList();
+      [for (final m in geo) CountryCandidate.fromGeo(m)];
 
   /// profiles/{uid} from the local cache (warmed at startup), else the server.
   static Future<Map<String, dynamic>> _profile(String uid) async {

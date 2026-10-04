@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../explore/presentation/screens/network_discovery_screen.dart';
@@ -151,14 +152,14 @@ class _SavedSearchCard extends StatelessWidget {
   }
 
   Future<void> _delete(BuildContext context) async {
-    final messenger = ScaffoldMessenger.of(context);
-    final l10n = AppLocalizations.of(context)!;
+    // Stable context: this card may be gone by the time the call fails.
+    final errorContext = Navigator.of(context, rootNavigator: true).context;
     try {
       await service.delete(userId: userId, id: search.id);
-    } catch (_) {
-      messenger.showSnackBar(
-        SnackBar(content: Text(l10n.somethingWentWrong)),
-      );
+    } catch (e, st) {
+      if (errorContext.mounted) {
+        showUserError(errorContext, e, stackTrace: st);
+      }
     }
   }
 
@@ -171,14 +172,14 @@ class _SavedSearchCard extends StatelessWidget {
     // diffs the result against a stored `lastSeenMatchIds`/`lastCheckedAt`
     // watermark, and sends an FCM push via the existing notifications pipeline
     // when new people appear — then advances the watermark. Client stays as-is.
-    final messenger = ScaffoldMessenger.of(context);
-    final l10n = AppLocalizations.of(context)!;
+    // Stable context: this card may be gone by the time the call fails.
+    final errorContext = Navigator.of(context, rootNavigator: true).context;
     try {
       await service.setAlerts(userId: userId, id: search.id, enabled: enabled);
-    } catch (_) {
-      messenger.showSnackBar(
-        SnackBar(content: Text(l10n.somethingWentWrong)),
-      );
+    } catch (e, st) {
+      if (errorContext.mounted) {
+        showUserError(errorContext, e, stackTrace: st);
+      }
     }
   }
 

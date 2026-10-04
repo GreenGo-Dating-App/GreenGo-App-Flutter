@@ -40,6 +40,7 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
   String? _translated;
   bool _translating = false;
   bool _showingTranslation = false;
+  bool _failed = false;
 
   CommunityMessage get message => widget.message;
   bool get isCurrentUser => widget.isCurrentUser;
@@ -54,22 +55,24 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
       setState(() => _showingTranslation = !_showingTranslation);
       return;
     }
-    setState(() => _translating = true);
-    try {
-      final result = await TranslationService().translate(
-        text: message.content,
-        sourceLanguage: 'auto',
-        targetLanguage: widget.currentUserLanguage,
-      );
-      if (!mounted) return;
-      setState(() {
-        _translated = result;
+    setState(() {
+      _translating = true;
+      _failed = false;
+    });
+    final result = await TranslationService().translateDetailed(
+      text: message.content,
+      sourceLanguage: 'auto',
+      targetLanguage: widget.currentUserLanguage,
+    );
+    if (!mounted) return;
+    setState(() {
+      _translating = false;
+      _failed = result.failed;
+      if (!result.failed) {
+        _translated = result.text;
         _showingTranslation = true;
-        _translating = false;
-      });
-    } catch (_) {
-      if (mounted) setState(() => _translating = false);
-    }
+      }
+    });
   }
 
   Widget _translateAction({required Color color}) {
@@ -81,9 +84,11 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
         child: Text(
           _translating
               ? l10n.communitiesTranslating
-              : (_showingTranslation
-                  ? l10n.communitiesShowOriginal
-                  : l10n.communitiesTranslate),
+              : _failed
+                  ? l10n.translationFailedTapRetry
+                  : (_showingTranslation
+                      ? l10n.communitiesShowOriginal
+                      : l10n.communitiesTranslate),
           style: TextStyle(
             color: color,
             fontSize: 11,

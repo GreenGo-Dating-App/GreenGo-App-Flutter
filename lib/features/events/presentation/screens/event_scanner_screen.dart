@@ -8,6 +8,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/glass_container.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../data/datasources/events_remote_datasource.dart';
@@ -164,6 +165,10 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
   /// scanners) — NOT ticket check-in, which uses the full-screen result above.
   void _feedback(String message, {required bool ok}) {
     if (!mounted) return;
+    if (!ok) {
+      showUserErrorMessage(context, message);
+      return;
+    }
     ScaffoldMessenger.of(context)
       ..hideCurrentSnackBar()
       ..showSnackBar(

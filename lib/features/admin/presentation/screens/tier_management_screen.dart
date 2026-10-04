@@ -5,6 +5,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/tier_config.dart';
+import '../../../../core/utils/user_error.dart';
 
 /// Tier Management Screen
 /// Admin interface for configuring tier limits and features
@@ -261,12 +262,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
     } catch (e) {
       setState(() => _isSaving = false);
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(AppLocalizations.of(context)!.adminFailedToSave(e.toString())),
-            backgroundColor: AppColors.errorRed,
-          ),
-        );
+        showUserError(context, e);
       }
     }
   }
