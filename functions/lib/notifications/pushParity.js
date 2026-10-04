@@ -54,7 +54,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onNotificationCreatedPush = void 0;
+exports.onNotificationCreatedPush = exports.CHAT_MESSAGE_TYPES = void 0;
 const firestore_1 = require("firebase-functions/v2/firestore");
 const admin = __importStar(require("firebase-admin"));
 const brand_1 = require("./brand");
@@ -78,6 +78,11 @@ function stringifyData(raw, type) {
         out.type = type;
     return out;
 }
+/** Feed-doc types whose push is sent by a dedicated chat trigger. */
+exports.CHAT_MESSAGE_TYPES = new Set([
+    'new_message', 'new_chat', 'newMessage',
+    'group_message', 'event_message',
+]);
 exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)({
     document: 'notifications/{notifId}',
     memory: pushRuntime_1.PUSH_MEMORY,
@@ -103,6 +108,20 @@ exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)({
         doc.body ||
         '';
     const type = doc.type || 'notification';
+    // Chat messages are pushed by their own triggers (onNewMessagePush,
+    // onGroupMessageCreated, onEventMessageCreated) as "<sender>: <message>".
+    // The feed docs the client writes for them ("New Message" / "New message
+    // from @x") must NOT be pushed again here - that produced a second,
+    // "GreenGo"-branded notification next to the right one.
+    if (exports.CHAT_MESSAGE_TYPES.has(type)) {
+        try {
+            await snap.ref.update({ pushSent: true });
+        }
+        catch (_c) {
+            // ignore
+        }
+        return;
+    }
     const data = stringifyData(doc.data, type);
     const imageUrl = doc.imageUrl || undefined;
     // Actor attribution — the in-app tile prepends the actor's name bold, but a
@@ -120,7 +139,7 @@ exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)({
         try {
             await snap.ref.update({ pushSent: true });
         }
-        catch (_c) {
+        catch (_d) {
             // ignore
         }
         return;
@@ -150,7 +169,7 @@ exports.onNotificationCreatedPush = (0, firestore_1.onDocumentCreated)({
     try {
         await snap.ref.update({ pushSent: true });
     }
-    catch (_d) {
+    catch (_e) {
         // ignore
     }
 }));

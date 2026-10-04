@@ -47,6 +47,12 @@ function stringifyData(
   return out;
 }
 
+/** Feed-doc types whose push is sent by a dedicated chat trigger. */
+export const CHAT_MESSAGE_TYPES: ReadonlySet<string> = new Set([
+  'new_message', 'new_chat', 'newMessage',
+  'group_message', 'event_message',
+]);
+
 export const onNotificationCreatedPush = onDocumentCreated(
   {
     document: 'notifications/{notifId}',
@@ -74,6 +80,21 @@ export const onNotificationCreatedPush = onDocumentCreated(
       (doc.body as string) ||
       '';
     const type = (doc.type as string) || 'notification';
+
+    // Chat messages are pushed by their own triggers (onNewMessagePush,
+    // onGroupMessageCreated, onEventMessageCreated) as "<sender>: <message>".
+    // The feed docs the client writes for them ("New Message" / "New message
+    // from @x") must NOT be pushed again here - that produced a second,
+    // "GreenGo"-branded notification next to the right one.
+    if (CHAT_MESSAGE_TYPES.has(type)) {
+      try {
+        await snap.ref.update({ pushSent: true });
+      } catch {
+        // ignore
+      }
+      return;
+    }
+
     const data = stringifyData(doc.data, type);
     const imageUrl = (doc.imageUrl as string) || undefined;
 
