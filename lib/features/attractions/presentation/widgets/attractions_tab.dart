@@ -14,11 +14,15 @@ import '../../../../core/utils/geo_query.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/attractions_prefetch.dart';
 import '../../data/datasources/attractions_datasource.dart';
+import '../../data/services/attraction_ratings_store.dart';
 import '../../domain/attraction_filters.dart';
+import '../../domain/attraction_rating.dart';
 import '../../domain/category_labels.dart';
 import '../../domain/country_resolver.dart';
 import '../../domain/entities/attraction.dart';
 import '../screens/attraction_detail_screen.dart';
+import 'attraction_grid_tile.dart';
+import 'attraction_rating_line.dart';
 import 'attraction_score_badge.dart';
 import 'attractions_filter_sheet.dart';
 
@@ -156,11 +160,43 @@ class _AttractionsTabState extends State<AttractionsTab>
   /// The full ordered list last built, so scrolling can precache from it.
   List<Attraction> _lastAll = const [];
 
+  // -------------------------------------------------------------- ratings ---
+  //
+  // GreenGo users' ratings live in `attraction_stats`, apart from the static
+  // catalogue. The ids actually on screen are handed to the shared session
+  // memo, which reads only the missing ones in whereIn chunks of 30 and
+  // notifies; the cards then repaint with their rating line. Never per tile,
+  // never the whole country, never gating the first screen.
+  final AttractionRatingsStore _ratings = AttractionRatingsStore.instance;
+
+  /// Ids last handed to the memo (skip identical requests on rebuilds).
+  String _ratingIdsKey = '';
+
+  void _onRatings() {
+    if (mounted) setState(() {});
+  }
+
+  void _requestRatings(List<Attraction> shown) {
+    if (shown.isEmpty) return;
+    final ids = [for (final a in shown) a.id];
+    final key = ids.join(',');
+    if (key == _ratingIdsKey) return;
+    _ratingIdsKey = key;
+    // After the frame: ensure() may notify, which rebuilds this widget.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) unawaited(_ratings.ensure(ids));
+    });
+  }
+
+  AttractionRatingDisplay? _ratingOf(Attraction a) =>
+      AttractionRatingDisplay.of(_ratings.peek(a.id), a.googleRating);
+
   @override
   void initState() {
     super.initState();
     widget.filters?.attach(_openFilters);
     _scroll.addListener(_onScroll);
+    _ratings.addListener(_onRatings);
     _lat = widget.userLat;
     _lng = widget.userLng;
     _bootstrap();
@@ -291,6 +327,7 @@ class _AttractionsTabState extends State<AttractionsTab>
     widget.filters?.detach(_openFilters);
     _scroll.removeListener(_onScroll);
     _scroll.dispose();
+    _ratings.removeListener(_onRatings);
     super.dispose();
   }
 
@@ -738,21 +775,6 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   // ----------------------------------------------------------------- misc ---
 
-  String _tierLabel(AppLocalizations l10n, String? tier) {
-    switch (tier) {
-      case 'iconic':
-        return l10n.attrTierIconic;
-      case 'exceptional':
-        return l10n.attrTierExceptional;
-      case 'excellent':
-        return l10n.attrTierExcellent;
-      case 'great':
-        return l10n.attrTierGreat;
-      default:
-        return l10n.attrTierWorthVisit;
-    }
-  }
-
   Widget _scoreBadge(Attraction a, {double size = 11}) =>
       AttractionScoreBadge(attraction: a, size: size);
 
@@ -785,16 +807,8 @@ class _AttractionsTabState extends State<AttractionsTab>
     );
   }
 
-  /// "Rome" on the country-scoped list; "Rome, Italy" while searching, because
-  /// results then come from every country and the city alone is ambiguous.
-  String _placeLabel(Attraction a) {
-    if (!_searching) return a.cityName;
-    final c = _countryNameOf(a.countryIso2);
-    return (c == null || c.isEmpty) ? a.cityName : '${a.cityName}, $c';
-  }
-
-  /// "City - Country", shown next to the distance so the user knows where
-  /// the attraction is, not only how far.
+  /// "City - Country" — always shown on the cards (the list is one country
+  /// at a time, but search results span every country).
   String _cityCountry(Attraction a) {
     final c = _countryNameOf(a.countryIso2) ?? a.countryName ?? a.countryIso2;
     return c.isEmpty ? a.cityName : '${a.cityName} - $c';
@@ -854,6 +868,7 @@ class _AttractionsTabState extends State<AttractionsTab>
         ? all
         : all.sublist(0, _visibleCount);
     final hasMore = all.length > items.length;
+    _requestRatings(items);
 
     // The first window appears in one go (gated below on its first
     // viewport's images); the next page is warmed in the background.
@@ -1014,103 +1029,17 @@ class _AttractionsTabState extends State<AttractionsTab>
     );
   }
 
-  Widget _tile(Attraction a, AppLocalizations l10n) {
-    final dist = _distanceLabel(l10n, a);
-    return GestureDetector(
-      onTap: () => _open(a),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(12),
-        child: Container(
-          color: AppColors.backgroundCard,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Expanded(
-                child: Stack(fit: StackFit.expand, children: [
-                  Semantics(label: a.altText ?? a.name, child: _img(a, _gridVariant, null)),
-                  Positioned(top: 4, left: 4, child: _scoreBadge(a, size: 10)),
-                  Positioned(
-                    top: 4,
-                    right: 4,
-                    child: Icon(AttractionIcons.importance(a.importanceIcon),
-                        size: 14,
-                        color: AttractionIcons.importanceColor(a.importanceKey)),
-                  ),
-                  if (a.unesco)
-                    const Positioned(
-                        bottom: 4,
-                        left: 4,
-                        child: Icon(Icons.verified,
-                            size: 13, color: AppColors.richGold)),
-                ]),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(6),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(a.name,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                            color: AppColors.textPrimary,
-                            fontSize: 11,
-                            fontWeight: FontWeight.w600)),
-                    const SizedBox(height: 2),
-                    Row(children: [
-                      Icon(AttractionIcons.category(a.categoryIcon),
-                          size: 11, color: AppColors.textTertiary),
-                      const SizedBox(width: 3),
-                      Expanded(
-                        child: Text(dist != null ? _cityCountry(a) : _placeLabel(a),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                                color: AppColors.textSecondary, fontSize: 10)),
-                      ),
-                    ]),
-                    const SizedBox(height: 2),
-                    Row(children: [
-                      if (a.freeEntry)
-                        Text(l10n.attrFree,
-                            style: const TextStyle(
-                                color: AppColors.richGold,
-                                fontSize: 10,
-                                fontWeight: FontWeight.bold))
-                      else if (a.ticketPrice != null && a.ticketPrice! > 0)
-                        Text('${a.currency ?? ''} ${a.ticketPrice!.toStringAsFixed(0)}',
-                            style: const TextStyle(
-                                color: AppColors.textTertiary, fontSize: 10)),
-                      if (dist != null) ...[
-                        if (a.freeEntry ||
-                            (a.ticketPrice != null && a.ticketPrice! > 0))
-                          const SizedBox(width: 4),
-                        Flexible(
-                          child: Text(dist,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: const TextStyle(
-                                  color: AppColors.textTertiary, fontSize: 10)),
-                        ),
-                      ],
-                      const Spacer(),
-                      if (a.googleRating != null) ...[
-                        const Icon(Icons.star, size: 10, color: AppColors.richGold),
-                        Text('${a.googleRating}',
-                            style: const TextStyle(
-                                color: AppColors.textTertiary, fontSize: 10)),
-                      ],
-                    ]),
-                    _attribution(a),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+  Widget _tile(Attraction a, AppLocalizations l10n) => AttractionGridTile(
+        attraction: a,
+        image: _img(a, _gridVariant, null),
+        cityCountry: _cityCountry(a),
+        distance: _distanceLabel(l10n, a),
+        rating: _ratingOf(a),
+        attribution: a.needsAttribution
+            ? l10n.attrPhotoBy(a.attributionAuthor!, a.attributionLicense ?? '')
+            : null,
+        onTap: () => _open(a),
+      );
 
   Widget _list(List<Attraction> items, AppLocalizations l10n, bool hasMore) =>
       ListView.builder(
@@ -1195,8 +1124,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                   ]),
                   const SizedBox(height: 4),
                   Text(
-                    [dist != null ? _cityCountry(a) : _placeLabel(a), dist,
-                        _tierLabel(l10n, a.scoreTier)]
+                    [_cityCountry(a), dist]
                         .whereType<String>()
                         .where((s) => s.isNotEmpty)
                         .join(' · '),
@@ -1232,13 +1160,10 @@ class _AttractionsTabState extends State<AttractionsTab>
                           style: const TextStyle(
                               color: AppColors.textPrimary, fontSize: 12)),
                     const Spacer(),
-                    if (a.googleRating != null) ...[
-                      const Icon(Icons.star, size: 13, color: AppColors.richGold),
-                      const SizedBox(width: 2),
-                      Text('${a.googleRating}',
-                          style: const TextStyle(
-                              color: AppColors.textPrimary, fontSize: 12)),
-                    ],
+                    AttractionRatingLine(
+                        display: _ratingOf(a),
+                        fontSize: 12,
+                        color: AppColors.textPrimary),
                   ]),
                   _attribution(a),
                 ],

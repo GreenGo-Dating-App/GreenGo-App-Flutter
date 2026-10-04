@@ -9,9 +9,12 @@ import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../attractions/data/datasources/attractions_datasource.dart';
+import '../../../attractions/data/services/attraction_ratings_store.dart';
+import '../../../attractions/domain/attraction_rating.dart';
 import '../../../attractions/domain/country_resolver.dart';
 import '../../../attractions/domain/entities/attraction.dart';
 import '../../../attractions/presentation/screens/attraction_detail_screen.dart';
+import '../../../attractions/presentation/widgets/attraction_rating_line.dart';
 import '../../../attractions/presentation/widgets/attraction_score_badge.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
@@ -1408,6 +1411,12 @@ class _ExploreScreenState extends State<ExploreScreen> {
       picked = const <_Happening>[];
     }
     if (mounted) setState(() => _featuredAttractions = picked);
+    // GreenGo users' ratings for the (<= 20) shown cards: one whereIn read
+    // through the shared session memo; the cards repaint when it lands.
+    if (picked.isNotEmpty) {
+      unawaited(AttractionRatingsStore.instance.ensure(
+          [for (final h in picked) h.attraction!.id]));
+    }
   }
 
   /// Round-robin window over [sponsored]: when MORE than 3 are eligible, rotate
@@ -3554,6 +3563,28 @@ class _FeaturedCard extends StatelessWidget {
                                 height: 1.2,
                               ),
                             ),
+                            if (happening.attraction != null)
+                              ListenableBuilder(
+                                listenable: AttractionRatingsStore.instance,
+                                builder: (_, __) {
+                                  final a = happening.attraction!;
+                                  final d = AttractionRatingDisplay.of(
+                                      AttractionRatingsStore.instance
+                                          .peek(a.id),
+                                      a.googleRating);
+                                  if (d == null) {
+                                    return const SizedBox.shrink();
+                                  }
+                                  return Padding(
+                                    padding: const EdgeInsets.only(top: 6),
+                                    child: AttractionRatingLine(
+                                      display: d,
+                                      fontSize: 12.5,
+                                      color: AppColors.pureWhite,
+                                    ),
+                                  );
+                                },
+                              ),
                             if (goingCount > 0) ...[
                               const SizedBox(height: 6),
                               Row(

@@ -15918,4 +15918,37 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get uexpErrCommunityNotAllowed =>
       'Nur der Inhaber und die Admins dieser Community können hier Erlebnisse veröffentlichen.';
+
+  @override
+  String attrRatingsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Bewertungen',
+      one: '1 Bewertung',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get attrNoRatingsYet => 'Noch keine Bewertungen';
+
+  @override
+  String get attrRateThis => 'Bewerte diese Sehenswürdigkeit';
+
+  @override
+  String get attrYourRating => 'Deine Bewertung';
+
+  @override
+  String get attrRatingRemove => 'Meine Bewertung entfernen';
+
+  @override
+  String get attrRatingFailed =>
+      'Deine Bewertung konnte nicht gespeichert werden. Bitte versuche es erneut.';
+
+  @override
+  String get attrRatingGreengoLabel => 'GreenGo-Community';
+
+  @override
+  String get attrRatingGoogleLabel => 'Google-Bewertung';
 }

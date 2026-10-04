@@ -1,6 +1,7 @@
 /**
  * Minimal in-memory Firestore for the follow-graph unit tests — only the
- * surface followCounters.ts / followCleanup.ts use. Not a test file itself.
+ * surface followCounters.ts / followCleanup.ts / attractionRatingAggregate.ts
+ * use. Not a test file itself.
  */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -40,12 +41,16 @@ export function makeDb() {
     store.set(path, next);
   };
 
+  /** `set(d)` replaces; `set(d, { merge: true })` shallow-merges. */
+  const applySet = (path: string, d: Doc, opts?: { merge?: boolean }) =>
+    void store.set(path, opts?.merge ? { ...(store.get(path) ?? {}), ...d } : { ...d });
+
   const ref = (path: string): any => ({
     path,
     id: path.split('/').pop(),
     collection: (c: string) => col(`${path}/${c}`),
     get: async () => snap(path),
-    set: async (d: Doc) => void store.set(path, { ...d }),
+    set: async (d: Doc, opts?: { merge?: boolean }) => applySet(path, d, opts),
     create: async (d: Doc) => {
       if (store.has(path)) throw Object.assign(new Error('ALREADY_EXISTS'), { code: 6 });
       store.set(path, { ...d });
@@ -77,7 +82,8 @@ export function makeDb() {
       return {
         delete: (r: any) => void writes.push(() => remove(r.path)),
         update: (r: any, d: Doc) => void writes.push(() => applyUpdate(r.path, d)),
-        set: (r: any, d: Doc) => void writes.push(() => store.set(r.path, { ...d })),
+        set: (r: any, d: Doc, o?: { merge?: boolean }) =>
+          void writes.push(() => applySet(r.path, d, o)),
         commit: async () => {
           writes.forEach((w) => w());
         },
@@ -88,7 +94,8 @@ export function makeDb() {
       const txn = {
         get: async (r: any) => snap(r.path),
         update: (r: any, d: Doc) => void writes.push(() => applyUpdate(r.path, d)),
-        set: (r: any, d: Doc) => void writes.push(() => store.set(r.path, { ...d })),
+        set: (r: any, d: Doc, o?: { merge?: boolean }) =>
+          void writes.push(() => applySet(r.path, d, o)),
         create: (r: any, d: Doc) => void writes.push(() => store.set(r.path, { ...d })),
         delete: (r: any) => void writes.push(() => remove(r.path)),
       };

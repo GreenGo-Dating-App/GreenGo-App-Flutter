@@ -596,6 +596,8 @@ export {
 
 // Attraction page views — unique viewers per day → attraction_stats.viewCount.
 export { onAttractionViewRecorded } from './attractions/attractionStats';
+// Attraction user ratings → attraction_stats.ratingSum/Count/Avg/Dist.
+export { onAttractionRatingWritten } from './attractions/attractionRatings';
 
 // Shared, persistent translations of public content (events/attractions/experiences).
 export { translateTexts } from './messaging/sharedTranslations';

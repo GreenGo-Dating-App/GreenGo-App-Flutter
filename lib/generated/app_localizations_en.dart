@@ -15715,4 +15715,37 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get uexpErrCommunityNotAllowed =>
       'Only this community\'s owner and admins can post experiences here.';
+
+  @override
+  String attrRatingsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ratings',
+      one: '1 rating',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get attrNoRatingsYet => 'No ratings yet';
+
+  @override
+  String get attrRateThis => 'Rate this attraction';
+
+  @override
+  String get attrYourRating => 'Your rating';
+
+  @override
+  String get attrRatingRemove => 'Remove my rating';
+
+  @override
+  String get attrRatingFailed =>
+      'Couldn\'t save your rating. Please try again.';
+
+  @override
+  String get attrRatingGreengoLabel => 'GreenGo community';
+
+  @override
+  String get attrRatingGoogleLabel => 'Google rating';
 }

@@ -15869,6 +15869,39 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get uexpErrCommunityNotAllowed =>
       'Apenas o proprietário e os administradores desta comunidade podem publicar experiências aqui.';
+
+  @override
+  String attrRatingsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count avaliações',
+      one: '1 avaliação',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get attrNoRatingsYet => 'Ainda sem avaliações';
+
+  @override
+  String get attrRateThis => 'Avalie esta atração';
+
+  @override
+  String get attrYourRating => 'A sua avaliação';
+
+  @override
+  String get attrRatingRemove => 'Remover a minha avaliação';
+
+  @override
+  String get attrRatingFailed =>
+      'Não foi possível guardar a sua avaliação. Tente novamente.';
+
+  @override
+  String get attrRatingGreengoLabel => 'Comunidade GreenGo';
+
+  @override
+  String get attrRatingGoogleLabel => 'Avaliação Google';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -31739,4 +31772,37 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get uexpErrCommunityNotAllowed =>
       'Só o dono e os administradores desta comunidade podem publicar experiências aqui.';
+
+  @override
+  String attrRatingsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count avaliações',
+      one: '1 avaliação',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get attrNoRatingsYet => 'Ainda sem avaliações';
+
+  @override
+  String get attrRateThis => 'Avalie esta atração';
+
+  @override
+  String get attrYourRating => 'Sua avaliação';
+
+  @override
+  String get attrRatingRemove => 'Remover minha avaliação';
+
+  @override
+  String get attrRatingFailed =>
+      'Não foi possível salvar sua avaliação. Tente novamente.';
+
+  @override
+  String get attrRatingGreengoLabel => 'Comunidade GreenGo';
+
+  @override
+  String get attrRatingGoogleLabel => 'Avaliação do Google';
 }

@@ -5204,5 +5204,13 @@
   "shareOtherProfileMessage": "Lerne {name} auf GreenGo kennen: {link}",
   "communitiesExperiencesEmpty": "Noch keine Erlebnisse",
   "uexpPostedInCommunity": "Gepostet in {community}",
-  "uexpErrCommunityNotAllowed": "Nur der Inhaber und die Admins dieser Community können hier Erlebnisse veröffentlichen."
+  "uexpErrCommunityNotAllowed": "Nur der Inhaber und die Admins dieser Community können hier Erlebnisse veröffentlichen.",
+  "attrRatingsCount": "{count, plural, =1{1 Bewertung} other{{count} Bewertungen}}",
+  "attrNoRatingsYet": "Noch keine Bewertungen",
+  "attrRateThis": "Bewerte diese Sehenswürdigkeit",
+  "attrYourRating": "Deine Bewertung",
+  "attrRatingRemove": "Meine Bewertung entfernen",
+  "attrRatingFailed": "Deine Bewertung konnte nicht gespeichert werden. Bitte versuche es erneut.",
+  "attrRatingGreengoLabel": "GreenGo-Community",
+  "attrRatingGoogleLabel": "Google-Bewertung"
 }

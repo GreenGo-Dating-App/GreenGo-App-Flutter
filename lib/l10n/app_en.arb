@@ -7287,5 +7287,21 @@
       }
     }
   },
-  "uexpErrCommunityNotAllowed": "Only this community's owner and admins can post experiences here."
+  "uexpErrCommunityNotAllowed": "Only this community's owner and admins can post experiences here.",
+  "attrRatingsCount": "{count, plural, =1{1 rating} other{{count} ratings}}",
+  "@attrRatingsCount": {
+    "description": "Number of GreenGo users who rated an attraction",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attrNoRatingsYet": "No ratings yet",
+  "attrRateThis": "Rate this attraction",
+  "attrYourRating": "Your rating",
+  "attrRatingRemove": "Remove my rating",
+  "attrRatingFailed": "Couldn't save your rating. Please try again.",
+  "attrRatingGreengoLabel": "GreenGo community",
+  "attrRatingGoogleLabel": "Google rating"
 }

@@ -15885,4 +15885,36 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get uexpErrCommunityNotAllowed =>
       'Solo il proprietario e gli amministratori di questa community possono pubblicare esperienze qui.';
+
+  @override
+  String attrRatingsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count valutazioni',
+      one: '1 valutazione',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get attrNoRatingsYet => 'Ancora nessuna valutazione';
+
+  @override
+  String get attrRateThis => 'Valuta questa attrazione';
+
+  @override
+  String get attrYourRating => 'La tua valutazione';
+
+  @override
+  String get attrRatingRemove => 'Rimuovi la mia valutazione';
+
+  @override
+  String get attrRatingFailed => 'Impossibile salvare la valutazione. Riprova.';
+
+  @override
+  String get attrRatingGreengoLabel => 'Community GreenGo';
+
+  @override
+  String get attrRatingGoogleLabel => 'Valutazione Google';
 }

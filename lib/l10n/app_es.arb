@@ -5204,5 +5204,13 @@
   "shareOtherProfileMessage": "Conoce a {name} en GreenGo: {link}",
   "communitiesExperiencesEmpty": "Aún no hay experiencias",
   "uexpPostedInCommunity": "Publicada en {community}",
-  "uexpErrCommunityNotAllowed": "Solo el propietario y los administradores de esta comunidad pueden publicar experiencias aquí."
+  "uexpErrCommunityNotAllowed": "Solo el propietario y los administradores de esta comunidad pueden publicar experiencias aquí.",
+  "attrRatingsCount": "{count, plural, =1{1 valoración} other{{count} valoraciones}}",
+  "attrNoRatingsYet": "Aún no hay valoraciones",
+  "attrRateThis": "Valora esta atracción",
+  "attrYourRating": "Tu valoración",
+  "attrRatingRemove": "Eliminar mi valoración",
+  "attrRatingFailed": "No se pudo guardar tu valoración. Inténtalo de nuevo.",
+  "attrRatingGreengoLabel": "Comunidad GreenGo",
+  "attrRatingGoogleLabel": "Valoración de Google"
 }

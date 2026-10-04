@@ -1481,6 +1481,39 @@ service cloud.firestore {
       }
     }
 
+    // GreenGo users' ratings of attractions: one doc per user, 1..5 stars.
+    // Aggregates (ratingSum/Count/Avg/Dist on attraction_stats) are written
+    // only by onAttractionRatingWritten (Admin SDK).
+    match /attraction_ratings/{attractionId}/ratings/{uid} {
+      function notBanned() {
+        return get(/databases/$(database)/documents/profiles/$(request.auth.uid))
+                 .data.get('isBanned', false) != true;
+      }
+      function validStars(d) {
+        return d.stars is int && d.stars >= 1 && d.stars <= 5;
+      }
+      allow get: if isOwner(uid);
+      allow list: if false;
+      allow create: if isOwner(uid)
+        && attractionId.matches('[0-9]{1,12}')
+        && notBanned()
+        && request.resource.data.keys().hasOnly(['stars', 'createdAt', 'updatedAt'])
+        && request.resource.data.keys().hasAll(['stars', 'createdAt', 'updatedAt'])
+        && validStars(request.resource.data)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+      allow update: if isOwner(uid)
+        && notBanned()
+        && request.resource.data.keys().hasOnly(['stars', 'createdAt', 'updatedAt'])
+        && validStars(request.resource.data)
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if isOwner(uid);
+    }
+    match /attraction_rating_events/{id} {
+      allow read, write: if false;
+    }
+
     // Leads a business receives ("Contact" / "Save to my events"). Only the
     // acting user may write their own lead doc; only the business owner reads
     // its own leads list.

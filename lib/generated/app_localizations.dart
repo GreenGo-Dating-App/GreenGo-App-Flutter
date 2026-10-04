@@ -27809,6 +27809,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Only this community\'s owner and admins can post experiences here.'**
   String get uexpErrCommunityNotAllowed;
+
+  /// Number of GreenGo users who rated an attraction
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 rating} other{{count} ratings}}'**
+  String attrRatingsCount(int count);
+
+  /// No description provided for @attrNoRatingsYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No ratings yet'**
+  String get attrNoRatingsYet;
+
+  /// No description provided for @attrRateThis.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate this attraction'**
+  String get attrRateThis;
+
+  /// No description provided for @attrYourRating.
+  ///
+  /// In en, this message translates to:
+  /// **'Your rating'**
+  String get attrYourRating;
+
+  /// No description provided for @attrRatingRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove my rating'**
+  String get attrRatingRemove;
+
+  /// No description provided for @attrRatingFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save your rating. Please try again.'**
+  String get attrRatingFailed;
+
+  /// No description provided for @attrRatingGreengoLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo community'**
+  String get attrRatingGreengoLabel;
+
+  /// No description provided for @attrRatingGoogleLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Google rating'**
+  String get attrRatingGoogleLabel;
 }
 
 class _AppLocalizationsDelegate

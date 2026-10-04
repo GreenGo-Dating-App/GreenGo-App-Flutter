@@ -4623,5 +4623,13 @@
   "shareOtherProfileMessage": "Découvre {name} sur GreenGo : {link}",
   "communitiesExperiencesEmpty": "Aucune expérience pour l'instant",
   "uexpPostedInCommunity": "Publiée dans {community}",
-  "uexpErrCommunityNotAllowed": "Seuls le propriétaire et les administrateurs de cette communauté peuvent publier des expériences ici."
+  "uexpErrCommunityNotAllowed": "Seuls le propriétaire et les administrateurs de cette communauté peuvent publier des expériences ici.",
+  "attrRatingsCount": "{count, plural, =1{1 note} other{{count} notes}}",
+  "attrNoRatingsYet": "Pas encore de notes",
+  "attrRateThis": "Notez cette attraction",
+  "attrYourRating": "Votre note",
+  "attrRatingRemove": "Retirer ma note",
+  "attrRatingFailed": "Impossible d'enregistrer votre note. Réessayez.",
+  "attrRatingGreengoLabel": "Communauté GreenGo",
+  "attrRatingGoogleLabel": "Note Google"
 }

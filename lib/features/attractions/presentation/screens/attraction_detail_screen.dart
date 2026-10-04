@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -8,9 +11,13 @@ import '../../../../core/utils/attraction_icons.dart';
 import '../../../../core/utils/compact_count.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/attractions_datasource.dart';
+import '../../data/services/attraction_ratings_store.dart';
 import '../../data/services/attraction_stats_service.dart';
+import '../../domain/attraction_rating.dart';
 import '../../domain/category_labels.dart';
 import '../../domain/entities/attraction.dart';
+import '../../../user_experiences/presentation/widgets/experience_widgets.dart'
+    show StarRatingDisplay, StarRatingInput;
 
 /// Full attraction page. Opens instantly from the compact record already in
 /// memory, then upgrades in place once the full document arrives (1 read).
@@ -49,23 +56,184 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
   /// Unique viewer-days (server-counted); null until loaded.
   int? _views;
 
+  /// viewCount of the FIRST stats snapshot, and whether this open recorded a
+  /// brand-new view (shown immediately as +1, before the trigger catches up).
+  int? _firstViews;
+  bool _newView = false;
+
+  final AttractionStatsService _stats = AttractionStatsService();
+  StreamSubscription<Map<String, dynamic>?>? _statsSub;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _mineSub;
+
+  // ---- GreenGo users' rating ----------------------------------------------
+  /// Server aggregate (attraction_stats), null until the first snapshot.
+  AttractionRatingSummary? _server;
+  Timestamp? _serverRatingAt;
+
+  /// The user's own rating as confirmed by the server (null = not rated).
+  int? _myStars;
+  bool _myDocExists = false;
+  Timestamp? _myUpdatedAt;
+  bool _mineLoaded = false;
+  bool _signedIn = false;
+
+  /// Optimistic overlay while a change of the user's rating is in flight or
+  /// not yet reflected by the server aggregate.
+  _PendingRating? _pending;
+  int _pendingSeq = 0;
+  Timer? _pendingTimer;
+
+  /// A written rating the aggregate has not picked up within this long is
+  /// dropped in favour of the server value.
+  static const Duration _reconcileTimeout = Duration(seconds: 15);
+
   @override
   void initState() {
     super.initState();
     _a = widget.fallback;
     _load();
-    _loadViews();
+    _watchStats();
+    _watchMine();
+    _recordView();
   }
 
-  /// One read of the public count, then record this view (one create per
-  /// user/day). A brand-new view shows up immediately as +1.
-  Future<void> _loadViews() async {
-    final svc = AttractionStatsService();
-    final count = await svc.viewCount(widget.attractionId);
-    if (!mounted) return;
-    setState(() => _views = count);
-    final isNew = await svc.recordView(widget.attractionId);
-    if (isNew && mounted) setState(() => _views = (_views ?? 0) + 1);
+  @override
+  void dispose() {
+    _statsSub?.cancel();
+    _mineSub?.cancel();
+    _pendingTimer?.cancel();
+    super.dispose();
+  }
+
+  /// ONE live listener on attraction_stats/{id} while the page is open: view
+  /// count + rating aggregate, so the user's own rating reconciles as soon as
+  /// the aggregate trigger has run.
+  void _watchStats() {
+    _statsSub = _stats.watchStats(widget.attractionId).listen((m) {
+      if (!mounted) return;
+      final views = (m?['viewCount'] as num?)?.toInt() ?? 0;
+      final at = m?['ratingUpdatedAt'];
+      setState(() {
+        _firstViews ??= views;
+        _views = views < 0 ? 0 : views;
+        _server = AttractionRatingSummary.fromStats(m);
+        _serverRatingAt = at is Timestamp ? at : null;
+      });
+      _reconcile();
+    });
+  }
+
+  void _watchMine() {
+    final stream = _stats.watchMyRating(widget.attractionId);
+    _signedIn = stream != null;
+    _mineSub = stream?.listen((snap) {
+      if (!mounted) return;
+      final d = snap.data();
+      final stars = (d?['stars'] as num?)?.toInt();
+      final at = d?['updatedAt'];
+      setState(() {
+        _mineLoaded = true;
+        _myDocExists = snap.exists;
+        // Local (pending) snapshots carry no server time yet.
+        if (!snap.metadata.hasPendingWrites) {
+          _myStars = snap.exists ? stars : null;
+          _myUpdatedAt = at is Timestamp ? at : null;
+        }
+      });
+      _reconcile();
+    });
+  }
+
+  /// Record this view (one create per user/day).
+  Future<void> _recordView() async {
+    final isNew = await _stats.recordView(widget.attractionId);
+    if (isNew && mounted) setState(() => _newView = true);
+  }
+
+  int? get _shownViews {
+    final v = _views;
+    if (v == null) return null;
+    final floor = _newView ? (_firstViews ?? 0) + 1 : 0;
+    return v > floor ? v : floor;
+  }
+
+  /// The aggregate to show: optimistic overlay > live server value > memo.
+  AttractionRatingSummary? get _shownRating =>
+      _pending?.summary ??
+      _server ??
+      AttractionRatingsStore.instance.peek(widget.attractionId);
+
+  /// The user's stars to show (0 = not rated).
+  int get _shownMyStars =>
+      (_pending != null ? _pending!.stars : _myStars) ?? 0;
+
+  /// Drops the optimistic overlay once the server aggregate reflects it: the
+  /// aggregate equals the expected value, or was updated after the user's
+  /// (server-confirmed) write. Otherwise mirrors the server value into the
+  /// cards' memo.
+  void _reconcile() {
+    final p = _pending;
+    final server = _server;
+    if (p != null && p.acked && server != null) {
+      final mine = _myUpdatedAt;
+      final sa = _serverRatingAt;
+      final caughtUp = server == p.summary ||
+          (p.stars != null &&
+              mine != null &&
+              sa != null &&
+              _myStars == p.stars &&
+              sa.compareTo(mine) >= 0);
+      if (caughtUp) _clearPending();
+    }
+    if (_pending == null && server != null) {
+      AttractionRatingsStore.instance.put(widget.attractionId, server);
+    }
+  }
+
+  void _clearPending() {
+    _pendingTimer?.cancel();
+    _pendingTimer = null;
+    if (!mounted) {
+      _pending = null;
+      return;
+    }
+    setState(() => _pending = null);
+    final server = _server;
+    if (server != null) {
+      AttractionRatingsStore.instance.put(widget.attractionId, server);
+    }
+  }
+
+  /// Set ([stars] 1..5) or remove ([stars] null) the user's rating, shown
+  /// immediately and reconciled with the server aggregate afterwards.
+  Future<void> _rate(int? stars) async {
+    if (!_mineLoaded) return;
+    final old = _pending != null ? _pending!.stars : _myStars;
+    if (stars == old) return;
+    final base = _shownRating ?? AttractionRatingSummary.empty;
+    final optimistic = base.withUserChange(old, stars);
+    final seq = ++_pendingSeq;
+    _pendingTimer?.cancel();
+    setState(() => _pending = _PendingRating(optimistic, stars));
+    AttractionRatingsStore.instance.put(widget.attractionId, optimistic);
+    try {
+      if (stars == null) {
+        await _stats.removeRating(widget.attractionId);
+      } else {
+        await _stats.rate(widget.attractionId, stars, existed: _myDocExists);
+      }
+      if (!mounted || seq != _pendingSeq) return;
+      _pending = _pending?.ackedCopy();
+      _pendingTimer = Timer(_reconcileTimeout, () {
+        if (seq == _pendingSeq) _clearPending();
+      });
+      _reconcile();
+    } catch (_) {
+      if (!mounted || seq != _pendingSeq) return;
+      _clearPending();
+      ScaffoldMessenger.maybeOf(context)?.showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!.attrRatingFailed)));
+    }
   }
 
   Future<void> _load() async {
@@ -457,21 +625,25 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                               color: AppColors.textSecondary, fontSize: 13)),
                     ),
                     if (a.googleRating != null) ...[
-                      const Icon(Icons.star, size: 15, color: AppColors.richGold),
+                      Semantics(
+                        label: l10n.attrRatingGoogleLabel,
+                        child: const Icon(Icons.star,
+                            size: 15, color: AppColors.richGold),
+                      ),
                       const SizedBox(width: 2),
                       Text('${a.googleRating}',
                           style: const TextStyle(
                               color: AppColors.textPrimary, fontSize: 13)),
                     ],
-                    if ((_views ?? 0) > 0) ...[
+                    if ((_shownViews ?? 0) > 0) ...[
                       const SizedBox(width: 10),
                       const Icon(Icons.visibility_outlined,
                           size: 15, color: AppColors.textTertiary),
                       const SizedBox(width: 3),
                       Text(
                           l10n.attractionViewsCount(
-                              _views!,
-                              formatCompactCount(_views!,
+                              _shownViews!,
+                              formatCompactCount(_shownViews!,
                                   locale: Localizations.localeOf(context)
                                       .toString())),
                           style: const TextStyle(
@@ -481,6 +653,8 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                 ],
               ),
             ),
+
+            _ratingBlock(l10n),
 
             if (a.needsAttribution)
               Padding(
@@ -581,6 +755,85 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
     );
   }
 
+  /// GreenGo users' rating (stars + "4.6 · 23 ratings" / "No ratings yet")
+  /// and the "Rate this attraction" stars with the user's current rating.
+  Widget _ratingBlock(AppLocalizations l10n) {
+    final r = _shownRating;
+    final has = r != null && r.hasRatings;
+    final mine = _shownMyStars;
+    return Padding(
+      key: const ValueKey('attrRatingBlock'),
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(12, 10, 8, 6),
+        decoration: BoxDecoration(
+          color: AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Wrap(
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: 6,
+              runSpacing: 2,
+              children: [
+                Text(l10n.attrRatingGreengoLabel,
+                    style: const TextStyle(
+                        color: AppColors.textTertiary, fontSize: 12)),
+                if (has) ...[
+                  StarRatingDisplay(rating: r.average, size: 15),
+                  Text(
+                    '${r.average.toStringAsFixed(1)} · '
+                    '${l10n.attrRatingsCount(r.count)}',
+                    key: const ValueKey('attrGreengoRating'),
+                    style: const TextStyle(
+                        color: AppColors.textPrimary,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600),
+                  ),
+                ] else
+                  Text(l10n.attrNoRatingsYet,
+                      key: const ValueKey('attrNoRatings'),
+                      style: const TextStyle(
+                          color: AppColors.textSecondary, fontSize: 13)),
+              ],
+            ),
+            if (_signedIn) ...[
+              const SizedBox(height: 8),
+              Text(mine > 0 ? l10n.attrYourRating : l10n.attrRateThis,
+                  style: const TextStyle(
+                      color: AppColors.richGold,
+                      fontSize: 11,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 0.6)),
+              Wrap(
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  StarRatingInput(
+                    key: const ValueKey('attrRateStars'),
+                    value: mine,
+                    size: 30,
+                    onChanged: (v) => _rate(v),
+                  ),
+                  if (mine > 0)
+                    TextButton(
+                      onPressed: () => _rate(null),
+                      style: TextButton.styleFrom(
+                          foregroundColor: AppColors.textTertiary,
+                          visualDensity: VisualDensity.compact),
+                      child: Text(l10n.attrRatingRemove,
+                          style: const TextStyle(fontSize: 11.5)),
+                    ),
+                ],
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _chip(IconData icon, String label, {Color color = AppColors.richGold}) {
     if (label.isEmpty) return const SizedBox.shrink();
     return Container(
@@ -662,4 +915,20 @@ class _AttractionImageViewer extends StatelessWidget {
       ]),
     );
   }
+}
+
+/// The user's not-yet-reconciled rating change.
+class _PendingRating {
+  const _PendingRating(this.summary, this.stars, {this.acked = false});
+
+  /// Aggregate expected once the server has applied the change.
+  final AttractionRatingSummary summary;
+
+  /// The user's new stars (null = removed).
+  final int? stars;
+
+  /// True once the write itself succeeded.
+  final bool acked;
+
+  _PendingRating ackedCopy() => _PendingRating(summary, stars, acked: true);
 }

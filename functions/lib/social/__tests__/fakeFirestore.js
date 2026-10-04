@@ -1,7 +1,8 @@
 "use strict";
 /**
  * Minimal in-memory Firestore for the follow-graph unit tests — only the
- * surface followCounters.ts / followCleanup.ts use. Not a test file itself.
+ * surface followCounters.ts / followCleanup.ts / attractionRatingAggregate.ts
+ * use. Not a test file itself.
  */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -40,12 +41,14 @@ function makeDb() {
         }
         store.set(path, next);
     };
+    /** `set(d)` replaces; `set(d, { merge: true })` shallow-merges. */
+    const applySet = (path, d, opts) => { var _a; return void store.set(path, (opts === null || opts === void 0 ? void 0 : opts.merge) ? Object.assign(Object.assign({}, ((_a = store.get(path)) !== null && _a !== void 0 ? _a : {})), d) : Object.assign({}, d)); };
     const ref = (path) => ({
         path,
         id: path.split('/').pop(),
         collection: (c) => col(`${path}/${c}`),
         get: async () => snap(path),
-        set: async (d) => void store.set(path, Object.assign({}, d)),
+        set: async (d, opts) => applySet(path, d, opts),
         create: async (d) => {
             if (store.has(path))
                 throw Object.assign(new Error('ALREADY_EXISTS'), { code: 6 });
@@ -75,7 +78,7 @@ function makeDb() {
             return {
                 delete: (r) => void writes.push(() => remove(r.path)),
                 update: (r, d) => void writes.push(() => applyUpdate(r.path, d)),
-                set: (r, d) => void writes.push(() => store.set(r.path, Object.assign({}, d))),
+                set: (r, d, o) => void writes.push(() => applySet(r.path, d, o)),
                 commit: async () => {
                     writes.forEach((w) => w());
                 },
@@ -86,7 +89,7 @@ function makeDb() {
             const txn = {
                 get: async (r) => snap(r.path),
                 update: (r, d) => void writes.push(() => applyUpdate(r.path, d)),
-                set: (r, d) => void writes.push(() => store.set(r.path, Object.assign({}, d))),
+                set: (r, d, o) => void writes.push(() => applySet(r.path, d, o)),
                 create: (r, d) => void writes.push(() => store.set(r.path, Object.assign({}, d))),
                 delete: (r) => void writes.push(() => remove(r.path)),
             };

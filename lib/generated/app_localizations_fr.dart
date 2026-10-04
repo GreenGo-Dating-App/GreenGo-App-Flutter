@@ -15964,4 +15964,37 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get uexpErrCommunityNotAllowed =>
       'Seuls le propriétaire et les administrateurs de cette communauté peuvent publier des expériences ici.';
+
+  @override
+  String attrRatingsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count notes',
+      one: '1 note',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get attrNoRatingsYet => 'Pas encore de notes';
+
+  @override
+  String get attrRateThis => 'Notez cette attraction';
+
+  @override
+  String get attrYourRating => 'Votre note';
+
+  @override
+  String get attrRatingRemove => 'Retirer ma note';
+
+  @override
+  String get attrRatingFailed =>
+      'Impossible d\'enregistrer votre note. Réessayez.';
+
+  @override
+  String get attrRatingGreengoLabel => 'Communauté GreenGo';
+
+  @override
+  String get attrRatingGoogleLabel => 'Note Google';
 }
