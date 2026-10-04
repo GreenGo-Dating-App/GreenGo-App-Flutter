@@ -31,11 +31,11 @@ import { freeTranslateMany } from './freeTranslate';
 const db = admin.firestore();
 
 const MAX_TEXTS = 50;
-const MAX_CHARS = 5000;
+export const MAX_CHARS = 5000;
 const DAILY_MISS_QUOTA = 1500;
 
 /** Must match TranslationService.normalizeLanguage targets used by the app. */
-const TARGET_RE = /^[a-z]{2}(-[A-Z]{2})?$/;
+export const TARGET_RE = /^[a-z]{2}(-[A-Z]{2})?$/;
 
 export function sharedTranslationId(target: string, text: string): string {
   return crypto.createHash('sha256').update(`${target}\u0000${text}`, 'utf8').digest('hex');

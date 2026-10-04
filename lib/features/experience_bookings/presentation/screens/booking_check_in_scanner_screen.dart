@@ -4,7 +4,6 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/glass_container.dart';
-import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/booking_rules.dart';
 
@@ -50,8 +49,16 @@ class _BookingCheckInScannerScreenState
       if (raw != _lastRejected) {
         _lastRejected = raw;
         final l = AppLocalizations.of(context)!;
-        showUserErrorMessage(
-            context, parsed == null ? l.bkErrInvalidCode : l.bkWrongBooking);
+        // A short bar, not a popup: the camera must stay clear so the host
+        // can scan the next code right away. The text is already localized.
+        ScaffoldMessenger.of(context)
+          ..hideCurrentSnackBar()
+          ..showSnackBar(SnackBar(
+            content: Text(
+                parsed == null ? l.bkErrInvalidCode : l.bkWrongBooking),
+            duration: const Duration(milliseconds: 1600),
+            behavior: SnackBarBehavior.floating,
+          ));
       }
     }
   }

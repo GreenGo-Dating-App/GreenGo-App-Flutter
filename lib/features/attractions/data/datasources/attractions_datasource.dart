@@ -5,14 +5,23 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../../core/utils/display_image.dart';
 import '../../domain/country_resolver.dart';
 import '../../domain/entities/attraction.dart';
+import '../attractions_lite_codec.dart';
 
 /// Reads curated attractions.
 ///
-/// The feature is country-scoped. A country's compact records live in
-/// `attractions_index/{ISO2}_{n}` shards of up to 500, sorted by GreenGo Score
-/// (best first), plus `{ISO2}_meta` { shardCount, total }. Since the
-/// 2026-10 catalogue (77k attractions, 85 countries) a big country is up to
-/// 7 shards / ~1.7 MB, so:
+/// The feature is country-scoped. A country's list records come from:
+///
+///  * the LITE layout `attractions_lite/{ISO2}_{n}` (packed rows, decoded by
+///    [AttractionsLiteShard]; scripts/build_attractions_lite.js) whenever the
+///    country's `attraction_countries/{ISO2}.lite` manifest is current - a big
+///    country is ONE ~0.4 MB doc (FR: 2,827 attractions);
+///  * otherwise the full compact records in `attractions_index/{ISO2}_{n}`
+///    (shards of up to 500, plus `{ISO2}_meta` { shardCount, total }; FR is
+///    6 shards / ~1.4 MB). Any lite failure (missing / partial / unreadable /
+///    unknown format) falls back here, so the lite layout is purely an
+///    optimisation.
+///
+/// Both are sorted by GreenGo Score (best first), so:
 ///
 ///  * the Attractions tab reads ONE country (one query, every shard), then
 ///    sorts / filters / searches it in memory;
@@ -93,6 +102,52 @@ class AttractionsDataSource {
       }
     } catch (_) {/* empty cache */}
     return q.get();
+  }
+
+  /// Lite list shards (see [AttractionsLiteShard]).
+  static const String liteCollection = 'attractions_lite';
+
+  /// The docs of ONE complete lite build in [s], in shard order, or null.
+  ///
+  /// The build named by [manifest] wins; otherwise any other build whose
+  /// every shard is present (the cached manifest can be older than the server
+  /// docs, or the reverse). Only headers are read - no row is parsed.
+  static List<QueryDocumentSnapshot<Map<String, dynamic>>>? _liteBuild(
+      QuerySnapshot<Map<String, dynamic>> s, AttractionLiteManifest manifest) {
+    final byVersion =
+        <String, Map<int, QueryDocumentSnapshot<Map<String, dynamic>>>>{};
+    final shardsOf = <String, int>{};
+    for (final d in s.docs) {
+      final h = AttractionsLiteShard.header(d.data());
+      if (h == null) continue;
+      (byVersion[h.version] ??= {})[h.shard] = d;
+      shardsOf[h.version] = h.shards;
+    }
+    List<QueryDocumentSnapshot<Map<String, dynamic>>>? complete(String v) {
+      final docs = byVersion[v];
+      final n = shardsOf[v];
+      if (docs == null || n == null || docs.length != n) return null;
+      return [for (var i = 0; i < n; i++) docs[i]!];
+    }
+
+    final preferred = complete(manifest.version);
+    if (preferred != null) return preferred;
+    for (final v in byVersion.keys) {
+      final other = complete(v);
+      if (other != null) return other;
+    }
+    return null;
+  }
+
+  /// The current lite manifest of [iso2], or null (use the full shards). Comes
+  /// from the published countries the tab reads anyway - no extra read.
+  Future<AttractionLiteManifest?> _liteManifest(String iso2) async {
+    try {
+      for (final c in await publishedCountries()) {
+        if (c.iso2.toUpperCase() == iso2) return c.lite;
+      }
+    } catch (_) {/* full shards */}
+    return null;
   }
 
   /// True when a cached country query holds its `_meta` doc and every shard
@@ -261,6 +316,39 @@ class AttractionsDataSource {
   }
 
   Future<List<Attraction>> _readCountry(String key) async {
+    final manifest = await _liteManifest(key);
+    if (manifest != null) {
+      final lite = await _readLiteCountry(key, manifest);
+      if (lite != null) return _cache[key] = lite;
+    }
+    return _readIndexCountry(key);
+  }
+
+  /// The country from its lite build (pictures only, shard = score order), or
+  /// null when no complete build is readable - the caller then uses the full
+  /// index shards. Cache-first with the same partial-cache guard as the index:
+  /// a cache holding only some shards of a build is never shown as the list.
+  Future<List<Attraction>?> _readLiteCountry(
+      String key, AttractionLiteManifest manifest) async {
+    try {
+      final snap = await _queryCacheFirst(
+          _db.collection(liteCollection).where('iso2', isEqualTo: key),
+          complete: (s) => _liteBuild(s, manifest) != null);
+      final docs = _liteBuild(snap, manifest);
+      if (docs == null) return null;
+      final out = <Attraction>[];
+      for (final d in docs) {
+        final shard = AttractionsLiteShard.parse(d.data(), iso2: key);
+        if (shard == null) return null;
+        out.addAll(shard.items.where(attractionHasPicture));
+      }
+      return out;
+    } catch (_) {
+      return null; // unreadable (rules, offline with no cache): full shards
+    }
+  }
+
+  Future<List<Attraction>> _readIndexCountry(String key) async {
     try {
       final snap = await _queryCacheFirst(
           _db.collection('attractions_index').where('iso2', isEqualTo: key),
@@ -285,9 +373,10 @@ class AttractionsDataSource {
   /// [minScore] (pictures only), for Explore's "Featured attractions".
   ///
   /// Shards are sorted by score (best first), so this reads `{ISO2}_0` and
-  /// stops at the first shard whose lowest score is <= [minScore] — one
-  /// ~290 KB document instead of the whole country (up to ~1.7 MB). Exactly
-  /// the records [forCountry] would return above that score. Uses the full
+  /// stops at the first shard whose lowest score is <= [minScore]: from the
+  /// lite build (one ~0.4 MB doc = the whole country, memoised for the tab)
+  /// or else the index (one ~250 KB shard instead of ~1.4 MB). Exactly the
+  /// records [forCountry] would return above that score. Uses the full
   /// country instead when it is already memoised or loading.
   Future<List<Attraction>> aboveScore(String iso2, int minScore) {
     final key = iso2.toUpperCase();
@@ -305,6 +394,51 @@ class AttractionsDataSource {
   }
 
   Future<List<Attraction>> _readAbove(String key, int minScore) async {
+    final manifest = await _liteManifest(key);
+    if (manifest != null) {
+      final lite = await _readAboveLite(key, minScore, manifest);
+      if (lite != null) return lite;
+    }
+    return _readAboveIndex(key, minScore);
+  }
+
+  /// [aboveScore] from the lite build: `{ISO2}_0`, then on while a whole
+  /// shard is above [minScore]. Today every country is ONE lite doc, so this
+  /// reads the whole country - which is then memoised as [forCountry]'s list
+  /// too, and the tab opens without another read. Null (=> index shards) when
+  /// a shard is missing / unreadable or shards of different builds mix.
+  Future<List<Attraction>?> _readAboveLite(
+      String key, int minScore, AttractionLiteManifest manifest) async {
+    final out = <Attraction>[];
+    final all = <Attraction>[];
+    String? version;
+    var shards = manifest.shards;
+    try {
+      for (var i = 0; i < shards; i++) {
+        final snap = await _docCacheFirst(
+            _db.collection(liteCollection).doc('${key}_$i'));
+        final shard = AttractionsLiteShard.parse(snap.data(), iso2: key);
+        if (shard == null || shard.shard != i) return null;
+        if (version == null) {
+          version = shard.version;
+          shards = shard.shards;
+        } else if (shard.version != version) {
+          return null;
+        }
+        final pictured = shard.items.where(attractionHasPicture).toList();
+        all.addAll(pictured);
+        out.addAll(pictured.where((a) => a.greengoScore > minScore));
+        if (shard.minScore <= minScore && i + 1 < shards) return out;
+      }
+    } catch (_) {
+      return null;
+    }
+    // Every shard was read: that IS the country list.
+    _cache.putIfAbsent(key, () => all);
+    return out;
+  }
+
+  Future<List<Attraction>> _readAboveIndex(String key, int minScore) async {
     final out = <Attraction>[];
     try {
       for (var shard = 0; shard < 64; shard++) {

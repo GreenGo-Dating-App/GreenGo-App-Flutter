@@ -602,6 +602,8 @@ export { onAttractionRatingWritten } from './attractions/attractionRatings';
 
 // Shared, persistent translations of public content (events/attractions/experiences).
 export { translateTexts } from './messaging/sharedTranslations';
+// Client-contributed translations of public content, shared after 2 users agree.
+export { submitSharedTranslations } from './messaging/submitSharedTranslations';
 
 // User-created experiences (member-hosted) with reviews, replies + '@' mentions.
 export {

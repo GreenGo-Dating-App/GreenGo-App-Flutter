@@ -2,10 +2,18 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// A curated attraction from the GreenGo dataset.
 ///
-/// Two shapes exist for the SAME entity:
-///  • the compact record inside `attractions_index/{ISO2}_{n}.items` — carries
-///    everything the list/cards need, so a whole country lists in ONE doc read;
+/// Three shapes exist for the SAME entity:
+///  • the packed LITE row inside `attractions_lite/{ISO2}_{n}.rows` (decoded by
+///    `AttractionsLiteShard`) — only what the list / grid / filters / sort /
+///    search render, so a whole big country is ONE ~0.4 MB doc;
+///  • the compact record inside `attractions_index/{ISO2}_{n}.items` — the
+///    fallback list source when a country has no (current) lite build;
 ///  • the full `attractions/{id}` doc — read only when a detail screen opens.
+///
+/// A list record (lite or index) leaves the detail-only fields null; the lite
+/// one also leaves [categoryGroup], [indoorOutdoor] and [wheelchairAccessible]
+/// null and may carry a description capped at 120 chars. The detail page
+/// always reloads the full doc.
 ///
 /// Image URLs are COMPOSED from {base, hash, token} rather than stored, which
 /// keeps each compact record ~260 bytes.
@@ -261,6 +269,8 @@ class AttractionCountry {
     required this.name,
     required this.total,
     this.bbox,
+    this.indexVersion,
+    this.liteManifest,
   });
 
   final String iso2;
@@ -272,6 +282,26 @@ class AttractionCountry {
   /// user stands in be resolved WITHOUT the ~0.5 MB geo index whenever only
   /// one box contains the point.
   final List<double>? bbox;
+
+  /// Version of the country's `attractions_index` shards (bumped by every
+  /// catalogue seed).
+  final int? indexVersion;
+
+  /// `lite` manifest written by scripts/build_attractions_lite.js, as stored.
+  final AttractionLiteManifest? liteManifest;
+
+  /// The lite build to list this country from, or null to use the full index
+  /// shards: absent, an unknown format, or built from an older index than the
+  /// current [indexVersion] (a reseed happened after the last lite build).
+  AttractionLiteManifest? get lite {
+    final m = liteManifest;
+    if (m == null || m.format != AttractionLiteManifest.supportedFormat) {
+      return null;
+    }
+    if (m.shards < 1 || m.version.isEmpty) return null;
+    if (indexVersion != null && m.src != indexVersion) return null;
+    return m;
+  }
 
   factory AttractionCountry.fromDoc(
       QueryDocumentSnapshot<Map<String, dynamic>> d) {
@@ -286,6 +316,48 @@ class AttractionCountry {
       bbox: box is List && box.length == 4 && box.every((e) => e is num)
           ? [for (final e in box) (e as num).toDouble()]
           : null,
+      indexVersion: (m['indexVersion'] as num?)?.toInt(),
+      liteManifest: AttractionLiteManifest.fromMap(m['lite']),
+    );
+  }
+}
+
+/// `attraction_countries/{ISO2}.lite`: which `attractions_lite` build holds
+/// the country's list rows (scripts/build_attractions_lite.js).
+class AttractionLiteManifest {
+  const AttractionLiteManifest({
+    required this.format,
+    required this.shards,
+    required this.version,
+    this.src,
+    this.count,
+  });
+
+  /// The lite layout this app decodes (see `AttractionsLiteShard.format`).
+  static const int supportedFormat = 1;
+
+  final int format;
+
+  /// Number of `attractions_lite/{ISO2}_{n}` docs in the build.
+  final int shards;
+
+  /// Content hash every shard of the build carries.
+  final String version;
+
+  /// The `attractions_index` version the build was made from.
+  final int? src;
+  final int? count;
+
+  static AttractionLiteManifest? fromMap(Object? v) {
+    if (v is! Map) return null;
+    final format = v['format'], shards = v['shards'], version = v['version'];
+    if (format is! num || shards is! num || version is! String) return null;
+    return AttractionLiteManifest(
+      format: format.toInt(),
+      shards: shards.toInt(),
+      version: version,
+      src: (v['src'] as num?)?.toInt(),
+      count: (v['count'] as num?)?.toInt(),
     );
   }
 }

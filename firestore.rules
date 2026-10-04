@@ -1253,6 +1253,10 @@ service cloud.firestore {
       allow read: if isSignedIn();
       allow write: if false; // compact per-country shard the list reads
     }
+    match /attractions_lite/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // packed list rows (scripts/build_attractions_lite.js)
+    }
     match /attraction_countries/{docId} {
       allow read: if isSignedIn();
       allow write: if false; // coverage + publish flag (the control plane)
@@ -1456,6 +1460,11 @@ service cloud.firestore {
       allow list, write: if false;
     }
     match /translation_quota/{id} {
+      allow read, write: if false;
+    }
+    // Consensus votes for client-contributed translations; written only by
+    // submitSharedTranslations. Server only.
+    match /translation_candidates/{id} {
       allow read, write: if false;
     }
 

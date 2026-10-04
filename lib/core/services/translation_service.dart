@@ -8,6 +8,8 @@ import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:http/http.dart' as http;
 
+import 'shared_translation_contributor.dart';
+
 /// Outcome of one translation, carrying ITS OWN detected language.
 ///
 /// Callers must use [detectedLanguage] from the result rather than the
@@ -56,9 +58,12 @@ class TranslationService {
     http.Client? client,
     bool persistent = true,
     Duration Function(int attempt)? backoff,
+    SharedTranslationContributor? contributor,
   })  : _client = client,
         _persistent = persistent,
-        _backoff = backoff ?? _defaultBackoff;
+        _backoff = backoff ?? _defaultBackoff,
+        _contributor = contributor ??
+            SharedTranslationContributor(submit: _submitToServer);
   static final TranslationService _instance = TranslationService._internal();
 
   /// A separate, non-singleton instance for tests (fake HTTP, no Hive, no
@@ -67,16 +72,31 @@ class TranslationService {
   factory TranslationService.test({
     required http.Client client,
     Duration Function(int attempt)? backoff,
+    SharedTranslationContributor? contributor,
   }) =>
       TranslationService._internal(
         client: client,
         persistent: false,
         backoff: backoff ?? (_) => Duration.zero,
+        contributor: contributor,
       );
 
   final http.Client? _client;
   final bool _persistent;
   final Duration Function(int attempt) _backoff;
+
+  /// Contributes on-device translations of PUBLIC content (see
+  /// [translateShared]) to the shared store, by two-user consensus.
+  final SharedTranslationContributor _contributor;
+
+  static Future<void> _submitToServer(
+      String target, List<Map<String, String>> items) async {
+    await FirebaseFunctions.instance
+        .httpsCallable('submitSharedTranslations',
+            options:
+                HttpsCallableOptions(timeout: const Duration(seconds: 30)))
+        .call<Map<String, dynamic>>({'target': target, 'items': items});
+  }
 
   static const String freeEndpoint =
       'https://translate.googleapis.com/translate_a/single';
@@ -554,6 +574,9 @@ class TranslationService {
     // 2) Translate the misses once on the server, which stores them for
     //    everyone (chunks of 50).
     final unresolved = <int>[];
+    // Answered '' by translateTexts (server rate-limited): a device
+    // translation of these is contributed back to the shared store.
+    final notStored = <int>{};
     for (var c = 0; c < stillMissing.length; c += 50) {
       final chunk = stillMissing.sublist(
           c, c + 50 > stillMissing.length ? stillMissing.length : c + 50);
@@ -573,6 +596,7 @@ class TranslationService {
             remember(chunk[k], v);
           } else {
             unresolved.add(chunk[k]);
+            notStored.add(chunk[k]);
           }
         }
       } catch (e) {
@@ -581,13 +605,26 @@ class TranslationService {
       }
     }
 
-    // 3) Last resort: the direct endpoint (not stored).
+    // 3) Last resort: the direct endpoint on the device. Successful results
+    //    for texts the server could not translate are offered back as votes
+    //    (fire-and-forget; shared only once another user agrees).
     for (final i in unresolved) {
-      out[i] = await translate(
+      final r = await translateDetailed(
           text: texts[i], sourceLanguage: 'auto', targetLanguage: target);
+      if (r.detectedLanguage != null) _lastDetectedLanguage = r.detectedLanguage;
+      out[i] = r.text;
+      if (r.isTranslated && notStored.contains(i)) {
+        contributeShared(target, texts[i], r.text);
+      }
     }
     return out;
   }
+
+  /// Queues a device translation of PUBLIC content for the shared store.
+  /// Only [translateShared] calls this; never pass private chat text.
+  @visibleForTesting
+  void contributeShared(String target, String text, String translation) =>
+      _contributor.add(target, text, translation);
 
   /// Single-text convenience for [translateShared].
   Future<String> translateSharedOne(String text,
@@ -602,6 +639,7 @@ class TranslationService {
 
   /// Dispose (no-op for online)
   void dispose() {
+    _contributor.dispose();
     _translationCache.clear();
     _detectedCache.clear();
   }

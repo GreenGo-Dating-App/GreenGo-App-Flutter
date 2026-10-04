@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.translateTexts = void 0;
+exports.translateTexts = exports.TARGET_RE = exports.MAX_CHARS = void 0;
 exports.sharedTranslationId = sharedTranslationId;
 /**
  * translateTexts — shared, persistent translations for PUBLIC content
@@ -66,10 +66,10 @@ require("../shared/firebaseAdmin");
 const freeTranslate_1 = require("./freeTranslate");
 const db = admin.firestore();
 const MAX_TEXTS = 50;
-const MAX_CHARS = 5000;
+exports.MAX_CHARS = 5000;
 const DAILY_MISS_QUOTA = 1500;
 /** Must match TranslationService.normalizeLanguage targets used by the app. */
-const TARGET_RE = /^[a-z]{2}(-[A-Z]{2})?$/;
+exports.TARGET_RE = /^[a-z]{2}(-[A-Z]{2})?$/;
 function sharedTranslationId(target, text) {
     return crypto.createHash('sha256').update(`${target}\u0000${text}`, 'utf8').digest('hex');
 }
@@ -79,13 +79,13 @@ exports.translateTexts = (0, https_1.onCall)({ memory: '512MiB', timeoutSeconds:
     if (!uid)
         throw new https_1.HttpsError('unauthenticated', 'Sign in required');
     const target = typeof ((_b = request.data) === null || _b === void 0 ? void 0 : _b.target) === 'string' ? request.data.target : '';
-    if (!TARGET_RE.test(target))
+    if (!exports.TARGET_RE.test(target))
         throw new https_1.HttpsError('invalid-argument', 'Bad target');
     const raw = Array.isArray((_c = request.data) === null || _c === void 0 ? void 0 : _c.texts) ? request.data.texts : [];
     const texts = raw
         .filter((t) => typeof t === 'string' && t.trim().length > 0)
         .slice(0, MAX_TEXTS)
-        .map((t) => t.slice(0, MAX_CHARS));
+        .map((t) => t.slice(0, exports.MAX_CHARS));
     if (texts.length === 0)
         return { translations: [] };
     const unique = [...new Set(texts)];
