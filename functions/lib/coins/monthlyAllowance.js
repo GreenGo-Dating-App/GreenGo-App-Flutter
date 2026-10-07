@@ -39,8 +39,9 @@ exports.isExcluded = isExcluded;
 exports.runAllowances = runAllowances;
 /**
  * Monthly coin allowance — the coins every membership tier promises in the app
- * (TierEntitlements.monthlyCoins): FREE 100, SILVER 500, GOLD 1500,
- * PLATINUM 5000 (TEST = Platinum).
+ * (TierEntitlements.monthlyCoins): Base (FREE tier) 20, SILVER 300, GOLD 400,
+ * PLATINUM 500 (TEST = Platinum). The FREE-tier amount is the Base membership
+ * allowance, so it is paid only while the Base membership is active.
  *
  * Replaces the old `grantMonthlyAllowances`, which never paid anyone: it
  * filtered users.subscriptionTier by lower-case values the server never
@@ -48,7 +49,8 @@ exports.runAllowances = runAllowances;
  * `coinBalances`), had no FREE/PLATINUM amounts and no double-pay guard.
  *
  *  - Tier = the EFFECTIVE tier on profiles/{uid} (shared/effectiveTier.ts):
- *    an expired paid tier gets the FREE amount.
+ *    an expired paid tier gets the FREE (Base) amount — and only with an
+ *    active Base membership; no Base membership = no coins.
  *  - Exactly once per user per month: a ledger doc
  *    `coinAllowanceGrants/{uid}_{YYYYMM}` is CREATED before crediting; a
  *    second run for the same month finds it and skips.
@@ -76,11 +78,11 @@ const utils_1 = require("../shared/utils");
 const db = admin.firestore();
 /** Must match TierEntitlements.monthlyCoins in the app. */
 exports.MONTHLY_COINS = {
-    FREE: 100,
-    SILVER: 500,
-    GOLD: 1500,
-    PLATINUM: 5000,
-    TEST: 5000,
+    FREE: 20, // Base membership (requires an active Base plan)
+    SILVER: 300,
+    GOLD: 400,
+    PLATINUM: 500,
+    TEST: 500,
 };
 const PAGE_SIZE = 300;
 const PARALLEL = 20;
@@ -100,6 +102,9 @@ async function grantOne(uid, data, period, now, dryRun, out) {
         return;
     }
     const tier = (0, effectiveTier_1.effectiveTier)(data, now);
+    // The FREE-tier amount is the Base membership's allowance.
+    if (tier === 'FREE' && !(0, effectiveTier_1.isBaseMembershipActive)(data, now))
+        return;
     const amount = (_a = exports.MONTHLY_COINS[tier]) !== null && _a !== void 0 ? _a : 0;
     if (amount <= 0)
         return;
