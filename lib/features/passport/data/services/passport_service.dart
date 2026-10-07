@@ -22,7 +22,7 @@ import '../../domain/entities/cultural_passport.dart';
 ///
 /// Doc shape: `user_passports/{userId} = {`
 ///   `countryStamps: [ISO...], languageStamps: [lang...], eventStamps: [cat...],`
-///   `updatedAt }`.
+///   `visitedCountries: [ISO...], updatedAt }`.
 class PassportService {
   PassportService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
@@ -44,6 +44,10 @@ class PassportService {
 
   /// Session memo so a re-open of the passport screen is instant (cache-first).
   final Map<String, CulturalPassport> _memo = <String, CulturalPassport>{};
+
+  /// `user_passports` field holding the ISO codes of countries visited.
+  static const String visitedCountriesField = 'visitedCountries';
+  final Map<String, Set<String>> _visitedMemo = <String, Set<String>>{};
 
   DocumentReference<Map<String, dynamic>> _doc(String userId) =>
       _firestore.collection(_passportsCol).doc(userId);
@@ -162,7 +166,68 @@ class PassportService {
   }
 
   /// Drops any cached passport for [userId] (e.g. after external activity).
-  void invalidate(String userId) => _memo.remove(userId);
+  void invalidate(String userId) {
+    _memo.remove(userId);
+    _visitedMemo.remove(userId);
+  }
+
+  /// Countries the user has physically been in, as ISO alpha-2 codes.
+  ///
+  /// Stored as `user_passports/{userId}.visitedCountries`, appended whenever
+  /// the user's REAL location (`profiles.location.country`, GPS / location
+  /// picker) lands in a new country — Traveler mode is a virtual location and
+  /// never counts. The current real country is always included and, when it
+  /// is missing from the stored list (accounts older than this field), is
+  /// recorded here, so the list fills in without a backfill. Two doc reads,
+  /// at most one write, memoised per session.
+  Future<Set<String>> visitedCountries(String userId) async {
+    if (userId.isEmpty) return <String>{};
+    final cached = _visitedMemo[userId];
+    if (cached != null) return cached;
+
+    final reads = await Future.wait([
+      _doc(userId).get(),
+      _firestore.collection(_profilesCol).doc(userId).get(),
+    ]);
+    final visited = <String>{};
+    final stored = reads[0].data()?[visitedCountriesField];
+    if (stored is List) {
+      for (final c in stored) {
+        if (c is String && c.trim().isNotEmpty) visited.add(c.trim());
+      }
+    }
+    final location = reads[1].data()?['location'];
+    final current = location is Map
+        ? _resolveCountryCode(location['country']?.toString())
+        : null;
+    if (current != null && visited.add(current)) {
+      await _addVisited(userId, current);
+    }
+    _visitedMemo[userId] = visited;
+    return visited;
+  }
+
+  /// Records [country] (a name or ISO code) as visited by [userId].
+  /// Idempotent via `arrayUnion`; a no-op for an unresolvable country.
+  Future<void> recordVisitedCountry(String userId, String country) async {
+    if (userId.isEmpty) return;
+    final code = _resolveCountryCode(country);
+    if (code == null) return;
+    if (_visitedMemo[userId]?.contains(code) ?? false) return;
+    await _addVisited(userId, code);
+    _visitedMemo[userId]?.add(code);
+  }
+
+  Future<void> _addVisited(String userId, String code) async {
+    try {
+      await _doc(userId).set(<String, dynamic>{
+        visitedCountriesField: FieldValue.arrayUnion(<String>[code]),
+        'updatedAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+    } catch (e) {
+      debugPrint('PassportService.recordVisitedCountry failed ($code): $e');
+    }
+  }
 
   // ---------------------------------------------------------------------------
   // Derivation helpers (all bounded, index-free)

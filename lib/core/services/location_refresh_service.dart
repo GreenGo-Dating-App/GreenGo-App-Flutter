@@ -8,6 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../features/profile/data/models/profile_model.dart'
     show normalizeCountryName;
+import '../../features/passport/data/services/passport_service.dart';
 import '../../features/profile/data/profile_geohash.dart';
 import 'location_change.dart';
 import 'own_profile_store.dart';
@@ -236,6 +237,12 @@ class LocationRefreshService {
       }
 
       await _firestore.collection('profiles').doc(userId).update(update);
+      // A real (GPS) location — never Traveler mode — so it counts toward the
+      // countries visited shown on Explore.
+      if (country.isNotEmpty) {
+        unawaited(PassportService(firestore: _firestore)
+            .recordVisitedCountry(userId, country));
+      }
       debugPrint('[LocationRefresh] Updated $userId → $city, $country '
           '(${position.latitude.toStringAsFixed(4)}, '
           '${position.longitude.toStringAsFixed(4)})');

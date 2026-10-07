@@ -175,7 +175,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// travelled-to location rather than the real one.
   bool _travelerActive = false;
   String? _tierStat; // derived from the profile's membershipTier
-  String? _countriesStat; // Cultural Passport country-stamp count
+  String? _countriesStat; // Count of countries visited (real location)
+  String? _realCountry; // Last seen profiles.location.country (not Traveler)
   String? _peopleStat; // distinct chat partners (all time)
 
   // null == still loading; empty == loaded but nothing to show.
@@ -645,7 +646,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   static const String _kCacheBusinesses = 'explore_businesses_v1';
   static const String _kCacheCommunities = 'explore_communities_v1';
   static const String _kCacheCommunityEvents = 'explore_community_events_v1';
-  static const String _kCacheStatCountries = 'explore_stat_countries_v1';
+  static const String _kCacheStatCountries = 'explore_stat_countries_v2';
   static const String _kCacheStatPeople = 'explore_stat_people_v1';
   static const String _kCacheStatCoins = 'explore_stat_coins_v1';
 
@@ -1017,6 +1018,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
       final data = doc.data();
       if (data == null || !mounted) return;
 
+      // The real location moved to another country (GPS refresh / location
+      // picker; never Traveler mode): record it and recount visited countries.
+      final realCountry =
+          ((data['location'] as Map?)?['country'] as String?)?.trim() ?? '';
+      if (_realCountry != null &&
+          realCountry.isNotEmpty &&
+          realCountry != _realCountry) {
+        unawaited(_loadCountriesStat(fresh: true));
+      }
+      if (realCountry.isNotEmpty) _realCountry = realCountry;
+
       // Traveler mode is read FROM THE SNAPSHOT, not from the field captured
       // when the profile was first loaded. Reading the stale field meant
       // turning traveler mode on updated nothing: the change that switched it
@@ -1074,17 +1086,17 @@ class _ExploreScreenState extends State<ExploreScreen> {
     super.dispose();
   }
 
-  /// Counts the distinct countries the user has engaged with = their Cultural
-  /// Passport country-stamp count (reuses the bounded, index-free
-  /// [PassportService] singleton, so the Passport screen shares its memo).
-  /// [fresh] drops that memo first (pull-to-refresh).
+  /// Counts the countries the user has visited (been physically in — real
+  /// location only, never Traveler mode), via the [PassportService]
+  /// singleton's memoised `visitedCountries` (two doc reads, no queries).
+  /// [fresh] drops that memo first (pull-to-refresh / a move to a new country).
   Future<void> _loadCountriesStat({bool fresh = false}) async {
     String? value;
     try {
       final service = di.sl<PassportService>();
       if (fresh) service.invalidate(widget.userId);
-      final passport = await service.load(widget.userId);
-      value = passport.countryStamps.length.toString();
+      final visited = await service.visitedCountries(widget.userId);
+      value = visited.length.toString();
       unawaited(LastResultCache.saveJson(_kCacheStatCountries, value));
     } catch (_) {
       value = null;
