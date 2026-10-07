@@ -28,7 +28,7 @@ void main() {
         UpgradeBenefit(UpgradeBenefitKind.groups, count(1), count(null)),
         UpgradeBenefit(UpgradeBenefitKind.experiences, count(1), count(5)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(0), count(1)),
-        UpgradeBenefit(UpgradeBenefitKind.monthlyCoins, count(100), count(500)),
+        UpgradeBenefit(UpgradeBenefitKind.monthlyCoins, count(20), count(300)),
         UpgradeBenefit(
             UpgradeBenefitKind.discoveryReveal, count(100), count(200)),
         UpgradeBenefit(UpgradeBenefitKind.travelMode, flag(false), flag(true)),
@@ -42,7 +42,7 @@ void main() {
         UpgradeBenefit(UpgradeBenefitKind.experiences, count(5), count(10)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(1), count(4)),
         UpgradeBenefit(
-            UpgradeBenefitKind.monthlyCoins, count(500), count(1500)),
+            UpgradeBenefitKind.monthlyCoins, count(300), count(400)),
         UpgradeBenefit(
             UpgradeBenefitKind.discoveryReveal, count(200), count(300)),
         UpgradeBenefit(
@@ -59,7 +59,7 @@ void main() {
             UpgradeBenefitKind.experiences, count(10), count(null)),
         UpgradeBenefit(UpgradeBenefitKind.boostsPerMonth, count(4), count(30)),
         UpgradeBenefit(
-            UpgradeBenefitKind.monthlyCoins, count(1500), count(5000)),
+            UpgradeBenefitKind.monthlyCoins, count(400), count(500)),
         UpgradeBenefit(
             UpgradeBenefitKind.discoveryReveal, count(300), count(500)),
         UpgradeBenefit(UpgradeBenefitKind.analytics, flag(false), flag(true)),

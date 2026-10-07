@@ -1,5 +1,8 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../../core/services/tier_entitlements.dart';
+import '../../../membership/domain/entities/membership.dart';
+
 /// Subscription Tier
 /// Point 148: Four-tier system (updated for MVP release) + Test tier
 enum SubscriptionTier {
@@ -179,7 +182,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'groupsCreate': 1,
           'dailyConnects': 10,
           'boostsPerMonth': 0,
-          'monthlyCoins': 100,
+          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.free),
           'seeWhoConnected': false,
           'travelMode': false,
           'prioritySupport': false,
@@ -193,7 +196,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'groupsCreate': -1, // unlimited
           'dailyConnects': 50,
           'boostsPerMonth': 1,
-          'monthlyCoins': 500,
+          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.silver),
           'seeWhoConnected': false,
           'travelMode': true,
           'prioritySupport': false,
@@ -207,7 +210,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'groupsCreate': -1, // unlimited
           'dailyConnects': 200,
           'boostsPerMonth': 4,
-          'monthlyCoins': 1500,
+          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.gold),
           'seeWhoConnected': true,
           'travelMode': true,
           'prioritySupport': true,
@@ -221,7 +224,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'groupsCreate': -1, // unlimited
           'dailyConnects': -1, // unlimited
           'boostsPerMonth': 30,
-          'monthlyCoins': 5000,
+          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.platinum),
           'seeWhoConnected': true,
           'travelMode': true,
           'prioritySupport': true,
@@ -236,7 +239,7 @@ extension SubscriptionTierExtension on SubscriptionTier {
           'groupsCreate': -1, // unlimited (admin configurable)
           'dailyConnects': -1, // unlimited (admin configurable)
           'boostsPerMonth': 30,
-          'monthlyCoins': 5000,
+          'monthlyCoins': TierEntitlements.monthlyCoins(MembershipTier.test),
           'seeWhoConnected': true,
           'travelMode': true,
           'prioritySupport': true,

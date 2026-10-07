@@ -193,7 +193,7 @@ class TierRewardConfig extends Equatable {
       case MembershipTier.free:
         return const TierRewardConfig(
           tier: MembershipTier.free,
-          monthlyCoins: 0,
+          monthlyCoins: 20,
           dailyLoginCoins: 5,
           dailyLoginXP: 5,
           xpMultiplier: 1.0,
@@ -202,7 +202,7 @@ class TierRewardConfig extends Equatable {
       case MembershipTier.silver:
         return const TierRewardConfig(
           tier: MembershipTier.silver,
-          monthlyCoins: 50,
+          monthlyCoins: 300,
           dailyLoginCoins: 10,
           dailyLoginXP: 10,
           xpMultiplier: 1.25,
@@ -211,7 +211,7 @@ class TierRewardConfig extends Equatable {
       case MembershipTier.gold:
         return const TierRewardConfig(
           tier: MembershipTier.gold,
-          monthlyCoins: 100,
+          monthlyCoins: 400,
           dailyLoginCoins: 15,
           dailyLoginXP: 15,
           xpMultiplier: 1.5,
@@ -220,7 +220,7 @@ class TierRewardConfig extends Equatable {
       case MembershipTier.platinum:
         return const TierRewardConfig(
           tier: MembershipTier.platinum,
-          monthlyCoins: 200,
+          monthlyCoins: 500,
           dailyLoginCoins: 25,
           dailyLoginXP: 25,
           xpMultiplier: 2.0,
@@ -230,7 +230,7 @@ class TierRewardConfig extends Equatable {
         // Test users get same rewards as Platinum
         return const TierRewardConfig(
           tier: MembershipTier.test,
-          monthlyCoins: 200,
+          monthlyCoins: 500,
           dailyLoginCoins: 25,
           dailyLoginXP: 25,
           xpMultiplier: 2.0,

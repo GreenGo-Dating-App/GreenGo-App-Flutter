@@ -6,8 +6,10 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
+import '../../../../core/services/tier_entitlements.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/subscription.dart';
 import '../../domain/membership_product_mapping.dart';
 import '../bloc/subscription_bloc.dart';
@@ -665,7 +667,12 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
           _buildComparisonRow(AppLocalizations.of(context)!.shopGroupsCreate, '1', AppLocalizations.of(context)!.shopUnlimited, AppLocalizations.of(context)!.shopUnlimited),
           _buildComparisonRow(AppLocalizations.of(context)!.shopDailyConnects, '10', '50', '200'),
           _buildComparisonRow(AppLocalizations.of(context)!.shopMonthlyBoosts, '0', '1', '4'),
-          _buildComparisonRow(AppLocalizations.of(context)!.shopMonthlyCoins, '100', '500', '1500'),
+          _buildComparisonRow(
+            AppLocalizations.of(context)!.shopMonthlyCoins,
+            '${TierEntitlements.monthlyCoins(MembershipTier.free)}',
+            '${TierEntitlements.monthlyCoins(MembershipTier.silver)}',
+            '${TierEntitlements.monthlyCoins(MembershipTier.gold)}',
+          ),
           _buildComparisonRow(AppLocalizations.of(context)!.shopSeeWhoConnected, '✗', '✗', '✓'),
           _buildComparisonRow(AppLocalizations.of(context)!.shopTravelMode, '✗', '✓', '✓'),
           _buildComparisonRow(AppLocalizations.of(context)!.membershipPrioritySupport, '✗', '✗', '✓'),

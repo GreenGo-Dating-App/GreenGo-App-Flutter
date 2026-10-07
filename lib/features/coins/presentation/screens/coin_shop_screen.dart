@@ -31,6 +31,8 @@ import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
 import '../../../../core/services/effective_tier.dart';
+import '../../../../core/services/tier_entitlements.dart';
+import '../../../membership/domain/entities/membership.dart';
 
 /// Coin Shop Screen
 /// Point 157: Coin purchase interface with packages and membership
@@ -1525,6 +1527,16 @@ class _CoinShopScreenState extends State<CoinShopScreen>
             Text(
               AppLocalizations.of(context)!.shopBaseMembershipDescription,
               style: const TextStyle(fontSize: 13, color: Colors.white60),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              AppLocalizations.of(context)!.featureMonthlyCoins(
+                  TierEntitlements.monthlyCoins(MembershipTier.free)),
+              style: const TextStyle(
+                fontSize: 13,
+                color: AppColors.basePurple,
+                fontWeight: FontWeight.w600,
+              ),
             ),
             if (isActive && _baseMembershipEndDate != null) ...[
               const SizedBox(height: 8),

@@ -103,10 +103,13 @@ class TierEntitlements {
   static const int _boostedVisiblePlatinum = 999; // adjustable (mirror discovery, ≈∞)
 
   // --- Coins granted each month by the membership. ---
-  static const int _monthlyCoinsFree = 100; // adjustable
-  static const int _monthlyCoinsSilver = 500; // adjustable
-  static const int _monthlyCoinsGold = 1500; // adjustable
-  static const int _monthlyCoinsPlatinum = 5000; // adjustable
+  // Must match MONTHLY_COINS in functions/src/coins/monthlyAllowance.ts (the
+  // server pays them). Base (free tier) is paid only with an active Base
+  // membership.
+  static const int _monthlyCoinsFree = 20; // Base
+  static const int _monthlyCoinsSilver = 300;
+  static const int _monthlyCoinsGold = 400;
+  static const int _monthlyCoinsPlatinum = 500;
 
   // --- Discovery: profiles a viewer can reveal for FREE before the coin gate. ---
   // Starting reveal ceiling in the network-discovery grid; beyond it the user
