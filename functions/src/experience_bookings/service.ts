@@ -64,6 +64,11 @@ import {
   seatsReleased,
   shouldFlagHost,
   verifyCheckInCode,
+  MAX_BOOKING_LENGTH_MS,
+  bookingLengthMs,
+  chooseStart,
+  overlapsAny,
+  windowStarts,
 } from './model';
 
 // ─────────────────────────────────────────────────────────── dependencies
@@ -378,8 +383,81 @@ async function flaggedHostFollowUp(r: TransitionResult | { hostFlagged: boolean 
 
 // ─────────────────────────────────────────────────────────── createBooking
 
+/** Per-host lock doc: every booking of a host writes it in its transaction,
+ * so two bookings for the same host can never be decided concurrently
+ * (server-only collection; no client rule matches). */
+const HOST_SCHEDULES = 'host_schedules';
+
+/** Query of a host's bookings that could overlap [fromMs, toMs). */
+function hostBookingsQuery(hostId: string, fromMs: number, toMs: number) {
+  return fdb().collection(BOOKINGS)
+    .where('hostId', '==', hostId)
+    .where('slotStart', '>=', ts(fromMs - MAX_BOOKING_LENGTH_MS))
+    .where('slotStart', '<', ts(toMs))
+    .limit(500);
+}
+
+/** [start, end) of the host's ACTIVE bookings (requested + confirmed). */
+function busyFrom(docs: FirebaseFirestore.QueryDocumentSnapshot[], excludeId?: string): Array<[number, number]> {
+  const out: Array<[number, number]> = [];
+  for (const d of docs) {
+    if (d.id === excludeId) continue;
+    const b = d.data();
+    if (!(ACTIVE_STATUSES as readonly string[]).includes(b.status)) continue;
+    const s0 = msOf(b.slotStart);
+    const e0 = msOf(b.slotEnd);
+    if (s0 !== null && e0 !== null && e0 > s0) out.push([s0, e0]);
+  }
+  return out;
+}
+
+function requestedStartOf(v: unknown): number | null {
+  if (typeof v === 'number' && Number.isFinite(v)) return Math.round(v);
+  if (typeof v === 'string' && v.trim()) {
+    const t = Date.parse(v);
+    return Number.isNaN(t) ? null : t;
+  }
+  return null;
+}
+
+/**
+ * Start times of one availability window for the booking screen:
+ * { lengthMinutes, starts: [{ start, end, free }] }. Free = in the future and
+ * not overlapping ANY active booking of the host (all their experiences).
+ * Reveals only busy/free, never who booked.
+ */
+export async function getSlotAvailability(uid: string, data: any): Promise<Record<string, unknown>> {
+  const { experienceId, slotId } = data || {};
+  if (!isDocId(experienceId)) fail('invalid-argument', 'invalid_experience_id');
+  if (!isDocId(slotId)) fail('invalid-argument', 'invalid_slot_id');
+  const expRef = fdb().collection(EXPERIENCES).doc(experienceId);
+  const [exp, slot] = await Promise.all([expRef.get(), expRef.collection(SLOTS).doc(slotId).get()]);
+  const e = exp.data();
+  const sl = slot.data();
+  if (!e || (e.status !== 'published' && e.hostId !== uid)) fail('not-found', 'experience_not_found');
+  if (!sl) fail('not-found', 'slot_not_found');
+  const ws = msOf(sl.start);
+  const we = msOf(sl.end);
+  if (ws === null || we === null || we <= ws) fail('failed-precondition', 'slot_invalid');
+  const len = bookingLengthMs(e.durationMinutes, ws, we);
+  const busySnap = await hostBookingsQuery(String(e.hostId), ws, we).get();
+  const busy = busyFrom(busySnap.docs);
+  const now = nowMs();
+  const open = sl.status === 'open';
+  return {
+    slotId,
+    lengthMinutes: Math.round(len / 60000),
+    starts: windowStarts(ws, we, len).map((t) => ({
+      start: new Date(t).toISOString(),
+      end: new Date(t + len).toISOString(),
+      free: open && t > now && !overlapsAny(t, t + len, busy),
+    })),
+  };
+}
+
 export async function createBooking(uid: string, data: any): Promise<Record<string, unknown>> {
   const { experienceId, slotId, guests, requestId } = data || {};
+  const requestedStart = requestedStartOf(data?.startAt);
   if (!isDocId(experienceId)) fail('invalid-argument', 'invalid_experience_id');
   if (!isDocId(slotId)) fail('invalid-argument', 'invalid_slot_id');
   if (!isRequestId(requestId)) fail('invalid-argument', 'invalid_request_id');
@@ -429,13 +507,16 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       .where('slotId', '==', slotId)
       .where('status', 'in', ACTIVE_STATUSES as unknown as string[])
       .limit(10);
-    const [existing, exp, slot, guestP, hostP, susp, dup] = await Promise.all([
+    const lockRef = db.collection(HOST_SCHEDULES).doc(hostId);
+    const [existing, exp, slot, guestP, hostP, susp, dup, lock] = await Promise.all([
       tx.get(bookingRef), tx.get(expRef), tx.get(slotRef),
       tx.get(db.collection('profiles').doc(uid)),
       tx.get(db.collection('profiles').doc(hostId)),
       tx.get(db.collection(HOST_SUSPENSIONS).doc(hostId)),
       tx.get(dupQ),
+      tx.get(lockRef),
     ]);
+    void lock; // read so this transaction conflicts with the host's other bookings
     if (existing.exists) {
       const e = existing.data() as Record<string, any>;
       if (e.guestId !== uid) fail('already-exists', 'request_id_conflict');
@@ -474,21 +555,33 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     const s = slot.data() as Record<string, any> | undefined;
     if (!s) fail('not-found', 'slot_not_found');
     if (s.status !== 'open') fail('failed-precondition', 'slot_closed');
-    const start = msOf(s.start);
-    const end = msOf(s.end);
-    if (start === null || end === null || end <= start) fail('failed-precondition', 'slot_invalid');
-    if (start <= now) fail('failed-precondition', 'slot_started');
-    if (Number.isInteger(e.maxGroupSize) && guests > e.maxGroupSize) {
-      fail('invalid-argument', 'too_many_guests', { max: e.maxGroupSize });
+    const windowStart = msOf(s.start);
+    const windowEnd = msOf(s.end);
+    if (windowStart === null || windowEnd === null || windowEnd <= windowStart) {
+      fail('failed-precondition', 'slot_invalid');
     }
     if (dup.docs.some((d) => d.data()?.experienceId === experienceId)) {
       fail('already-exists', 'already_booked', { bookingId: dup.docs[0].id });
     }
-    const capacity = Number(s.capacity) || 0;
-    const booked = Number(s.bookedCount) || 0;
-    if (capacity - booked < guests) {
-      fail('resource-exhausted', 'slot_full', { seatsLeft: Math.max(0, capacity - booked) });
+    // Private time slots: one start in the window, for the experience's
+    // duration, never overlapping any active booking of this host.
+    const lengthMs = bookingLengthMs(e.durationMinutes, windowStart, windowEnd);
+    const busySnap = await tx.get(hostBookingsQuery(hostId, windowStart, windowEnd));
+    const picked = chooseStart(
+      requestedStart, windowStarts(windowStart, windowEnd, lengthMs), lengthMs,
+      busyFrom(busySnap.docs), now,
+    );
+    if (picked.ok === false) {
+      fail(picked.reason === 'time_taken' ? 'resource-exhausted' : 'failed-precondition', picked.reason);
     }
+    const start = (picked as { ok: true; start: number }).start;
+    const end = start + lengthMs;
+    if (Number.isInteger(e.maxGroupSize) && guests > e.maxGroupSize) {
+      fail('invalid-argument', 'too_many_guests', { max: e.maxGroupSize });
+    }
+    // bookedCount is informational now (people booked in this window); the
+    // party size is bounded by maxGroupSize / maxGuestsPerBooking above.
+    const booked = Number(s.bookedCount) || 0;
 
     // Request to book is mandatory: the host accepts or declines every booking.
     const requested = true;
@@ -529,6 +622,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     };
     tx.set(bookingRef, booking);
     tx.update(slotRef, { bookedCount: booked + guests, updatedAt: ts(now) });
+    tx.set(lockRef, { lastBookingId: bookingId, updatedAt: ts(now) }, { merge: true });
     return { created: true, booking };
   });
 
@@ -557,6 +651,18 @@ export async function respondToBookingRequest(uid: string, data: any): Promise<R
   if (typeof data?.accept !== 'boolean') fail('invalid-argument', 'accept_required');
   const accept: boolean = data.accept;
   const cfg = await loadConfig();
+  // Requests made before private time slots may overlap a confirmed booking:
+  // the host cannot accept two people for the same time.
+  let confirmedBusy: Array<[number, number]> = [];
+  if (accept) {
+    const pre = (await fdb().collection(BOOKINGS).doc(bookingId).get()).data();
+    const ps = msOf(pre?.slotStart);
+    const pe = msOf(pre?.slotEnd);
+    if (pre && pre.hostId === uid && ps !== null && pe !== null) {
+      const snap = await hostBookingsQuery(uid, ps, pe).get();
+      confirmedBusy = busyFrom(snap.docs.filter((d) => d.data().status === 'confirmed'), bookingId);
+    }
+  }
   const r = await transition(bookingId, (b, now) => {
     if (uid !== b.hostId) fail('permission-denied', 'not_host');
     if (accept && b.status === 'confirmed') return { noop: true };
@@ -568,6 +674,7 @@ export async function respondToBookingRequest(uid: string, data: any): Promise<R
     const start = msOf(b.slotStart) as number;
     const end = msOf(b.slotEnd) as number;
     if (start <= now) fail('failed-precondition', 'slot_started');
+    if (overlapsAny(start, end, confirmedBusy)) fail('failed-precondition', 'time_taken');
     return {
       to: 'confirmed',
       patch: {

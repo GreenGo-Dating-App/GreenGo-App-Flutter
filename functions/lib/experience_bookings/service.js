@@ -57,6 +57,7 @@ exports.checkInSecret = checkInSecret;
 exports.resetCachedSecret = resetCachedSecret;
 exports.bookingView = bookingView;
 exports.transition = transition;
+exports.getSlotAvailability = getSlotAvailability;
 exports.createBooking = createBooking;
 exports.respondToBookingRequest = respondToBookingRequest;
 exports.cancelBooking = cancelBooking;
@@ -317,9 +318,86 @@ async function flaggedHostFollowUp(r, hostId) {
     await notifyAdmins('admin_host_cancellations', 'Host flagged for cancellations', `Host ${hostId} cancelled confirmed bookings repeatedly. Review host_flags/${hostId}.`, { action: 'admin_host_flag', hostId });
 }
 // ─────────────────────────────────────────────────────────── createBooking
+/** Per-host lock doc: every booking of a host writes it in its transaction,
+ * so two bookings for the same host can never be decided concurrently
+ * (server-only collection; no client rule matches). */
+const HOST_SCHEDULES = 'host_schedules';
+/** Query of a host's bookings that could overlap [fromMs, toMs). */
+function hostBookingsQuery(hostId, fromMs, toMs) {
+    return fdb().collection(model_1.BOOKINGS)
+        .where('hostId', '==', hostId)
+        .where('slotStart', '>=', ts(fromMs - model_1.MAX_BOOKING_LENGTH_MS))
+        .where('slotStart', '<', ts(toMs))
+        .limit(500);
+}
+/** [start, end) of the host's ACTIVE bookings (requested + confirmed). */
+function busyFrom(docs, excludeId) {
+    const out = [];
+    for (const d of docs) {
+        if (d.id === excludeId)
+            continue;
+        const b = d.data();
+        if (!model_1.ACTIVE_STATUSES.includes(b.status))
+            continue;
+        const s0 = msOf(b.slotStart);
+        const e0 = msOf(b.slotEnd);
+        if (s0 !== null && e0 !== null && e0 > s0)
+            out.push([s0, e0]);
+    }
+    return out;
+}
+function requestedStartOf(v) {
+    if (typeof v === 'number' && Number.isFinite(v))
+        return Math.round(v);
+    if (typeof v === 'string' && v.trim()) {
+        const t = Date.parse(v);
+        return Number.isNaN(t) ? null : t;
+    }
+    return null;
+}
+/**
+ * Start times of one availability window for the booking screen:
+ * { lengthMinutes, starts: [{ start, end, free }] }. Free = in the future and
+ * not overlapping ANY active booking of the host (all their experiences).
+ * Reveals only busy/free, never who booked.
+ */
+async function getSlotAvailability(uid, data) {
+    const { experienceId, slotId } = data || {};
+    if (!(0, model_1.isDocId)(experienceId))
+        fail('invalid-argument', 'invalid_experience_id');
+    if (!(0, model_1.isDocId)(slotId))
+        fail('invalid-argument', 'invalid_slot_id');
+    const expRef = fdb().collection(model_1.EXPERIENCES).doc(experienceId);
+    const [exp, slot] = await Promise.all([expRef.get(), expRef.collection(model_1.SLOTS).doc(slotId).get()]);
+    const e = exp.data();
+    const sl = slot.data();
+    if (!e || (e.status !== 'published' && e.hostId !== uid))
+        fail('not-found', 'experience_not_found');
+    if (!sl)
+        fail('not-found', 'slot_not_found');
+    const ws = msOf(sl.start);
+    const we = msOf(sl.end);
+    if (ws === null || we === null || we <= ws)
+        fail('failed-precondition', 'slot_invalid');
+    const len = (0, model_1.bookingLengthMs)(e.durationMinutes, ws, we);
+    const busySnap = await hostBookingsQuery(String(e.hostId), ws, we).get();
+    const busy = busyFrom(busySnap.docs);
+    const now = nowMs();
+    const open = sl.status === 'open';
+    return {
+        slotId,
+        lengthMinutes: Math.round(len / 60000),
+        starts: (0, model_1.windowStarts)(ws, we, len).map((t) => ({
+            start: new Date(t).toISOString(),
+            end: new Date(t + len).toISOString(),
+            free: open && t > now && !(0, model_1.overlapsAny)(t, t + len, busy),
+        })),
+    };
+}
 async function createBooking(uid, data) {
     var _a, _b, _c;
     const { experienceId, slotId, guests, requestId } = data || {};
+    const requestedStart = requestedStartOf(data === null || data === void 0 ? void 0 : data.startAt);
     if (!(0, model_1.isDocId)(experienceId))
         fail('invalid-argument', 'invalid_experience_id');
     if (!(0, model_1.isDocId)(slotId))
@@ -375,13 +453,16 @@ async function createBooking(uid, data) {
             .where('slotId', '==', slotId)
             .where('status', 'in', model_1.ACTIVE_STATUSES)
             .limit(10);
-        const [existing, exp, slot, guestP, hostP, susp, dup] = await Promise.all([
+        const lockRef = db.collection(HOST_SCHEDULES).doc(hostId);
+        const [existing, exp, slot, guestP, hostP, susp, dup, lock] = await Promise.all([
             tx.get(bookingRef), tx.get(expRef), tx.get(slotRef),
             tx.get(db.collection('profiles').doc(uid)),
             tx.get(db.collection('profiles').doc(hostId)),
             tx.get(db.collection(model_1.HOST_SUSPENSIONS).doc(hostId)),
             tx.get(dupQ),
+            tx.get(lockRef),
         ]);
+        void lock; // read so this transaction conflicts with the host's other bookings
         if (existing.exists) {
             const e = existing.data();
             if (e.guestId !== uid)
@@ -429,23 +510,30 @@ async function createBooking(uid, data) {
             fail('not-found', 'slot_not_found');
         if (s.status !== 'open')
             fail('failed-precondition', 'slot_closed');
-        const start = msOf(s.start);
-        const end = msOf(s.end);
-        if (start === null || end === null || end <= start)
+        const windowStart = msOf(s.start);
+        const windowEnd = msOf(s.end);
+        if (windowStart === null || windowEnd === null || windowEnd <= windowStart) {
             fail('failed-precondition', 'slot_invalid');
-        if (start <= now)
-            fail('failed-precondition', 'slot_started');
-        if (Number.isInteger(e.maxGroupSize) && guests > e.maxGroupSize) {
-            fail('invalid-argument', 'too_many_guests', { max: e.maxGroupSize });
         }
         if (dup.docs.some((d) => { var _a; return ((_a = d.data()) === null || _a === void 0 ? void 0 : _a.experienceId) === experienceId; })) {
             fail('already-exists', 'already_booked', { bookingId: dup.docs[0].id });
         }
-        const capacity = Number(s.capacity) || 0;
-        const booked = Number(s.bookedCount) || 0;
-        if (capacity - booked < guests) {
-            fail('resource-exhausted', 'slot_full', { seatsLeft: Math.max(0, capacity - booked) });
+        // Private time slots: one start in the window, for the experience's
+        // duration, never overlapping any active booking of this host.
+        const lengthMs = (0, model_1.bookingLengthMs)(e.durationMinutes, windowStart, windowEnd);
+        const busySnap = await tx.get(hostBookingsQuery(hostId, windowStart, windowEnd));
+        const picked = (0, model_1.chooseStart)(requestedStart, (0, model_1.windowStarts)(windowStart, windowEnd, lengthMs), lengthMs, busyFrom(busySnap.docs), now);
+        if (picked.ok === false) {
+            fail(picked.reason === 'time_taken' ? 'resource-exhausted' : 'failed-precondition', picked.reason);
         }
+        const start = picked.start;
+        const end = start + lengthMs;
+        if (Number.isInteger(e.maxGroupSize) && guests > e.maxGroupSize) {
+            fail('invalid-argument', 'too_many_guests', { max: e.maxGroupSize });
+        }
+        // bookedCount is informational now (people booked in this window); the
+        // party size is bounded by maxGroupSize / maxGuestsPerBooking above.
+        const booked = Number(s.bookedCount) || 0;
         // Request to book is mandatory: the host accepts or declines every booking.
         const requested = true;
         const booking = Object.assign({ experienceId,
@@ -465,6 +553,7 @@ async function createBooking(uid, data) {
             }));
         tx.set(bookingRef, booking);
         tx.update(slotRef, { bookedCount: booked + guests, updatedAt: ts(now) });
+        tx.set(lockRef, { lastBookingId: bookingId, updatedAt: ts(now) }, { merge: true });
         return { created: true, booking };
     });
     const b = result.booking;
@@ -492,6 +581,18 @@ async function respondToBookingRequest(uid, data) {
         fail('invalid-argument', 'accept_required');
     const accept = data.accept;
     const cfg = await loadConfig();
+    // Requests made before private time slots may overlap a confirmed booking:
+    // the host cannot accept two people for the same time.
+    let confirmedBusy = [];
+    if (accept) {
+        const pre = (await fdb().collection(model_1.BOOKINGS).doc(bookingId).get()).data();
+        const ps = msOf(pre === null || pre === void 0 ? void 0 : pre.slotStart);
+        const pe = msOf(pre === null || pre === void 0 ? void 0 : pre.slotEnd);
+        if (pre && pre.hostId === uid && ps !== null && pe !== null) {
+            const snap = await hostBookingsQuery(uid, ps, pe).get();
+            confirmedBusy = busyFrom(snap.docs.filter((d) => d.data().status === 'confirmed'), bookingId);
+        }
+    }
     const r = await transition(bookingId, (b, now) => {
         if (uid !== b.hostId)
             fail('permission-denied', 'not_host');
@@ -510,6 +611,8 @@ async function respondToBookingRequest(uid, data) {
         const end = msOf(b.slotEnd);
         if (start <= now)
             fail('failed-precondition', 'slot_started');
+        if ((0, model_1.overlapsAny)(start, end, confirmedBusy))
+            fail('failed-precondition', 'time_taken');
         return {
             to: 'confirmed',
             patch: {

@@ -626,6 +626,7 @@ export {
 // disputes, reminders, two-way double-blind reviews (experience_bookings/).
 export {
   createBooking,
+  getSlotAvailability,
   respondToBookingRequest,
   cancelBooking,
   cancelExperienceSlot,

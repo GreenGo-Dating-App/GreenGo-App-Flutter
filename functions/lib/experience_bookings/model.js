@@ -122,10 +122,14 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.HOST_ACTIONS = exports.PAYMENT_METHODS = exports.DEFAULT_POLICY = exports.CANCELLATION_POLICIES = exports.ACTIVE_STATUSES = exports.SEAT_HOLDING = exports.BOOKING_STATUSES = exports.DEFAULT_CONFIG = exports.DAY_MS = exports.HOUR_MS = exports.SERVER_SECRETS = exports.BOOKING_AGG_EVENTS = exports.HOST_SUSPENSIONS = exports.HOST_FLAGS = exports.HOST_CANCEL_STATS = exports.REVIEW_ELIGIBILITY = exports.PENDING_REVIEWS = exports.GUEST_REVIEWS = exports.EXPERIENCES = exports.SLOTS = exports.BOOKINGS = void 0;
+exports.HOST_ACTIONS = exports.PAYMENT_METHODS = exports.DEFAULT_POLICY = exports.CANCELLATION_POLICIES = exports.MAX_STARTS_PER_WINDOW = exports.MAX_BOOKING_LENGTH_MS = exports.ACTIVE_STATUSES = exports.SEAT_HOLDING = exports.BOOKING_STATUSES = exports.DEFAULT_CONFIG = exports.DAY_MS = exports.HOUR_MS = exports.SERVER_SECRETS = exports.BOOKING_AGG_EVENTS = exports.HOST_SUSPENSIONS = exports.HOST_FLAGS = exports.HOST_CANCEL_STATS = exports.REVIEW_ELIGIBILITY = exports.PENDING_REVIEWS = exports.GUEST_REVIEWS = exports.EXPERIENCES = exports.SLOTS = exports.BOOKINGS = void 0;
 exports.resolveConfig = resolveConfig;
 exports.isBookingStatus = isBookingStatus;
 exports.canTransition = canTransition;
+exports.bookingLengthMs = bookingLengthMs;
+exports.windowStarts = windowStarts;
+exports.overlapsAny = overlapsAny;
+exports.chooseStart = chooseStart;
 exports.seatsReleased = seatsReleased;
 exports.policyOf = policyOf;
 exports.refundFor = refundFor;
@@ -243,6 +247,59 @@ exports.SEAT_HOLDING = new Set([
 ]);
 /** Statuses that block a second booking of the same guest on the same slot. */
 exports.ACTIVE_STATUSES = ['requested', 'confirmed'];
+// ─────────────────────────────────────────────── private time slots
+//
+// A slot is the host's AVAILABILITY WINDOW (start..end, at most 24h). A guest
+// books ONE start time inside it; the booking lasts the experience's
+// durationMinutes (Practical info) - or the whole window when the duration is
+// longer than the window / missing. Start times sit on a grid of that length
+// from the window start (10:00, 11:00, ... for 60 min). One booking = one user
+// and their party: a host's active bookings (requested + confirmed, across ALL
+// their experiences) never overlap.
+/** Bookings never run longer than a window, so this bounds the look-back. */
+exports.MAX_BOOKING_LENGTH_MS = 24 * exports.HOUR_MS;
+/** Most start times offered in one window (15-minute grid over 24h = 96). */
+exports.MAX_STARTS_PER_WINDOW = 96;
+/** How long one booking lasts in this window, in ms. */
+function bookingLengthMs(durationMinutes, windowStart, windowEnd) {
+    const windowLen = Math.max(0, windowEnd - windowStart);
+    const d = typeof durationMinutes === 'number' && Number.isFinite(durationMinutes) ? durationMinutes : 0;
+    const len = Math.round(d) * 60 * 1000;
+    return len > 0 && len <= windowLen ? len : windowLen;
+}
+/** Bookable start times in a window: a grid of [lengthMs] from its start. */
+function windowStarts(windowStart, windowEnd, lengthMs) {
+    const out = [];
+    if (lengthMs <= 0)
+        return out;
+    for (let t = windowStart; t + lengthMs <= windowEnd && out.length < exports.MAX_STARTS_PER_WINDOW; t += lengthMs) {
+        out.push(t);
+    }
+    return out;
+}
+function overlapsAny(start, end, busy) {
+    return busy.some(([s, e]) => start < e && s < end);
+}
+/**
+ * The start the guest asked for (ms), validated against the window grid, or
+ * - for app versions that send no start - the window start when the window is
+ * exactly one booking long, else the first free start. Null = no valid start.
+ */
+function chooseStart(requested, starts, lengthMs, busy, now) {
+    const free = (t) => t > now && !overlapsAny(t, t + lengthMs, busy);
+    if (requested !== null) {
+        if (!starts.includes(requested))
+            return { ok: false, reason: 'invalid_start' };
+        if (requested <= now)
+            return { ok: false, reason: 'slot_started' };
+        return free(requested) ? { ok: true, start: requested } : { ok: false, reason: 'time_taken' };
+    }
+    const future = starts.filter((t) => t > now);
+    if (future.length === 0)
+        return { ok: false, reason: 'slot_started' };
+    const first = future.find(free);
+    return first === undefined ? { ok: false, reason: 'time_taken' } : { ok: true, start: first };
+}
 /** Seats to give back to the slot for the move from -> to (0 or guests). */
 function seatsReleased(from, to, guests) {
     return exports.SEAT_HOLDING.has(from) && !exports.SEAT_HOLDING.has(to) ? guests : 0;

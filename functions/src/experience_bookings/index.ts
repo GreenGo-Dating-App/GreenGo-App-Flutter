@@ -6,6 +6,7 @@
  */
 export {
   createBooking,
+  getSlotAvailability,
   respondToBookingRequest,
   cancelBooking,
   cancelExperienceSlot,

@@ -43,6 +43,7 @@ function callable(impl: Impl) {
 
 // Callables
 export const createBooking = callable(svc.createBooking);
+export const getSlotAvailability = callable(svc.getSlotAvailability);
 export const respondToBookingRequest = callable(svc.respondToBookingRequest);
 export const cancelBooking = callable(svc.cancelBooking);
 export const cancelExperienceSlot = callable(svc.cancelSlot);

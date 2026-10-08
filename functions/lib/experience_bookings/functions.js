@@ -41,7 +41,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onBookableExperienceDeleted = exports.onPendingExperienceReviewCreated = exports.onGuestReviewWritten = exports.revealBlindReviews = exports.completeBookings = exports.expireBookingRequests = exports.sendBookingReminders = exports.resolveBookingDispute = exports.openBookingDispute = exports.confirmCashReceived = exports.markBookingPaid = exports.markBookingNoShow = exports.checkInBooking = exports.getBookingCheckInCode = exports.cancelExperienceSlot = exports.cancelBooking = exports.respondToBookingRequest = exports.createBooking = void 0;
+exports.onBookableExperienceDeleted = exports.onPendingExperienceReviewCreated = exports.onGuestReviewWritten = exports.revealBlindReviews = exports.completeBookings = exports.expireBookingRequests = exports.sendBookingReminders = exports.resolveBookingDispute = exports.openBookingDispute = exports.confirmCashReceived = exports.markBookingPaid = exports.markBookingNoShow = exports.checkInBooking = exports.getBookingCheckInCode = exports.cancelExperienceSlot = exports.cancelBooking = exports.respondToBookingRequest = exports.getSlotAvailability = exports.createBooking = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const scheduler_1 = require("firebase-functions/v2/scheduler");
 const firestore_1 = require("firebase-functions/v2/firestore");
@@ -69,6 +69,7 @@ function callable(impl) {
 }
 // Callables
 exports.createBooking = callable(svc.createBooking);
+exports.getSlotAvailability = callable(svc.getSlotAvailability);
 exports.respondToBookingRequest = callable(svc.respondToBookingRequest);
 exports.cancelBooking = callable(svc.cancelBooking);
 exports.cancelExperienceSlot = callable(svc.cancelSlot);

@@ -199,6 +199,67 @@ export const SEAT_HOLDING: ReadonlySet<BookingStatus> = new Set<BookingStatus>([
 /** Statuses that block a second booking of the same guest on the same slot. */
 export const ACTIVE_STATUSES: readonly BookingStatus[] = ['requested', 'confirmed'];
 
+// ─────────────────────────────────────────────── private time slots
+//
+// A slot is the host's AVAILABILITY WINDOW (start..end, at most 24h). A guest
+// books ONE start time inside it; the booking lasts the experience's
+// durationMinutes (Practical info) - or the whole window when the duration is
+// longer than the window / missing. Start times sit on a grid of that length
+// from the window start (10:00, 11:00, ... for 60 min). One booking = one user
+// and their party: a host's active bookings (requested + confirmed, across ALL
+// their experiences) never overlap.
+
+/** Bookings never run longer than a window, so this bounds the look-back. */
+export const MAX_BOOKING_LENGTH_MS = 24 * HOUR_MS;
+/** Most start times offered in one window (15-minute grid over 24h = 96). */
+export const MAX_STARTS_PER_WINDOW = 96;
+
+/** How long one booking lasts in this window, in ms. */
+export function bookingLengthMs(durationMinutes: unknown, windowStart: number, windowEnd: number): number {
+  const windowLen = Math.max(0, windowEnd - windowStart);
+  const d = typeof durationMinutes === 'number' && Number.isFinite(durationMinutes) ? durationMinutes : 0;
+  const len = Math.round(d) * 60 * 1000;
+  return len > 0 && len <= windowLen ? len : windowLen;
+}
+
+/** Bookable start times in a window: a grid of [lengthMs] from its start. */
+export function windowStarts(windowStart: number, windowEnd: number, lengthMs: number): number[] {
+  const out: number[] = [];
+  if (lengthMs <= 0) return out;
+  for (let t = windowStart; t + lengthMs <= windowEnd && out.length < MAX_STARTS_PER_WINDOW; t += lengthMs) {
+    out.push(t);
+  }
+  return out;
+}
+
+export function overlapsAny(start: number, end: number, busy: ReadonlyArray<readonly [number, number]>): boolean {
+  return busy.some(([s, e]) => start < e && s < end);
+}
+
+/**
+ * The start the guest asked for (ms), validated against the window grid, or
+ * - for app versions that send no start - the window start when the window is
+ * exactly one booking long, else the first free start. Null = no valid start.
+ */
+export function chooseStart(
+  requested: number | null,
+  starts: readonly number[],
+  lengthMs: number,
+  busy: ReadonlyArray<readonly [number, number]>,
+  now: number,
+): { ok: true; start: number } | { ok: false; reason: 'invalid_start' | 'slot_started' | 'time_taken' } {
+  const free = (t: number) => t > now && !overlapsAny(t, t + lengthMs, busy);
+  if (requested !== null) {
+    if (!starts.includes(requested)) return { ok: false, reason: 'invalid_start' };
+    if (requested <= now) return { ok: false, reason: 'slot_started' };
+    return free(requested) ? { ok: true, start: requested } : { ok: false, reason: 'time_taken' };
+  }
+  const future = starts.filter((t) => t > now);
+  if (future.length === 0) return { ok: false, reason: 'slot_started' };
+  const first = future.find(free);
+  return first === undefined ? { ok: false, reason: 'time_taken' } : { ok: true, start: first };
+}
+
 /** Seats to give back to the slot for the move from -> to (0 or guests). */
 export function seatsReleased(from: BookingStatus, to: BookingStatus, guests: number): number {
   return SEAT_HOLDING.has(from) && !SEAT_HOLDING.has(to) ? guests : 0;

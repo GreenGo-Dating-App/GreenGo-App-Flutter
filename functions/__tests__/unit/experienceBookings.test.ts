@@ -351,9 +351,9 @@ describe('createBooking', () => {
     expect(r.price.totalAmount).toBe(0);
   });
 
-  test('validation: capacity, duplicate, own listing, ID, host verification, block, status', async () => {
-    seedWorld({ slot: { capacity: 2, bookedCount: 1 } });
-    await expectCode(book(GUEST, { guests: 2 }), 'slot_full');
+  test('validation: party size, duplicate, own listing, ID, host verification, block, status', async () => {
+    seedWorld({ exp: { maxGroupSize: 2 } });
+    await expectCode(book(GUEST, { guests: 3 }), 'too_many_guests');
     await expectCode(book(GUEST, { guests: 0 }), 'invalid_guests');
     await expectCode(book(HOST), 'own_experience');
     await book(GUEST);
@@ -381,7 +381,7 @@ describe('createBooking', () => {
   });
 
   test('consent: explicit (string / int) or from booking_consents, else refused', async () => {
-    seedWorld({ slot: { capacity: 10 } });
+    seedWorld({ exp: { durationMinutes: 60 } });
     await expectCode(book(GUEST, { consentVersion: undefined }), 'consent_required');
     db.seed(`user_experiences/${EXP}/booking_consents/${GUEST}`, { experienceId: EXP, version: 3, policy: 'moderate' });
     const r: any = await book(GUEST, { consentVersion: undefined });
@@ -498,7 +498,7 @@ describe('cancelBooking', () => {
   });
 
   test('cancelExperienceSlot cancels every active booking and the slot', async () => {
-    seedWorld({ slot: { capacity: 10 } });
+    seedWorld({ exp: { durationMinutes: 60 } });
     await book(GUEST, { guests: 2 });
     await book(GUEST2, { guests: 3 });
     await expectCode(svc.cancelSlot(GUEST, { experienceId: EXP, slotId: SLOT }), 'not_host');
@@ -506,6 +506,72 @@ describe('cancelBooking', () => {
     expect(r.cancelledBookings).toBe(2);
     expect(slot()).toMatchObject({ status: 'cancelled', bookedCount: 0 });
     expect((db.get(`host_cancellation_stats/${HOST}`) as any).count).toBe(1);
+  });
+});
+
+describe('private time slots (one user per time, host never double-booked)', () => {
+  const W = T0 + 10 * D; // window 3h: starts at W, W+1h, W+2h for 60 min
+
+  test('each user gets a different time; a taken time is refused', async () => {
+    seedWorld({ exp: { durationMinutes: 60 } });
+    const a: any = await request(GUEST, { startAt: W + H });
+    expect(booking(a.bookingId)).toMatchObject({ slotStart: ts(W + H), slotEnd: ts(W + 2 * H) });
+    await expectCode(request(GUEST2, { startAt: W + H }), 'time_taken');
+    await expectCode(request(GUEST2, { startAt: W + 30 * 60 * 1000 }), 'invalid_start');
+    const b: any = await request(GUEST2, { startAt: W });
+    expect(booking(b.bookingId).slotEnd).toEqual(ts(W + H));
+    // no start sent (older app): first free time
+    db.seed(`profiles/guest3`, { isAgeVerified: true });
+    const c: any = await request('guest3');
+    expect(booking(c.bookingId).slotStart).toEqual(ts(W + 2 * H));
+    db.seed(`profiles/guest4`, { isAgeVerified: true });
+    await expectCode(request('guest4'), 'time_taken');
+  });
+
+  test('the host is never double-booked across their experiences', async () => {
+    seedWorld({ exp: { durationMinutes: 60 } });
+    db.seed(`user_experiences/exp2`, { ...(db.get(`user_experiences/${EXP}`) as any), title: 'Other', durationMinutes: 90 });
+    db.seed(`user_experiences/exp2/slots/s2`, {
+      start: ts(W), end: ts(W + 3 * H), capacity: 4, bookedCount: 0, status: 'open',
+    });
+    await request(GUEST, { startAt: W + H }); // exp1 11:00-12:00
+    // exp2 starts on a 90-min grid: W (10:00-11:30) overlaps 11:00 -> taken
+    await expectCode(svc.createBooking(GUEST2, {
+      experienceId: 'exp2', slotId: 's2', guests: 1, requestId: rid(), consentVersion: 'v1',
+      paymentMethod: 'link', startAt: W,
+    }), 'time_taken');
+    const av: any = await svc.getSlotAvailability(GUEST2, { experienceId: 'exp2', slotId: 's2' });
+    expect(av.lengthMinutes).toBe(90);
+    // 10:00-11:30 and 11:30-13:00 both overlap the 11:00-12:00 booking
+    expect(av.starts.map((x: any) => x.free)).toEqual([false, false]);
+  });
+
+  test('availability marks taken and past times; declining frees a time', async () => {
+    seedWorld({ exp: { durationMinutes: 60 } });
+    const a: any = await request(GUEST, { startAt: W });
+    let av: any = await svc.getSlotAvailability(GUEST2, { experienceId: EXP, slotId: SLOT });
+    expect(av.starts.map((x: any) => x.free)).toEqual([false, true, true]);
+    await svc.respondToBookingRequest(HOST, { bookingId: a.bookingId, accept: false });
+    av = await svc.getSlotAvailability(GUEST2, { experienceId: EXP, slotId: SLOT });
+    expect(av.starts.map((x: any) => x.free)).toEqual([true, true, true]);
+  });
+
+  test('no duration / longer than the window: the booking takes the whole window', async () => {
+    seedWorld({ exp: { durationMinutes: 600 } });
+    const a: any = await request(GUEST);
+    expect(booking(a.bookingId)).toMatchObject({ slotStart: ts(W), slotEnd: ts(W + 3 * H) });
+    await expectCode(request(GUEST2), 'time_taken');
+  });
+
+  test('a host cannot accept a pre-existing request that overlaps a confirmed booking', async () => {
+    seedWorld({ exp: { durationMinutes: 60 } });
+    const a: any = await request(GUEST, { startAt: W });
+    // legacy overlapping request (created before private slots existed)
+    db.seed('bookings/legacy1', {
+      ...(booking(a.bookingId) as any), guestId: GUEST2, requestId: 'legacy',
+    });
+    await svc.respondToBookingRequest(HOST, { bookingId: a.bookingId, accept: true });
+    await expectCode(svc.respondToBookingRequest(HOST, { bookingId: 'legacy1', accept: true }), 'time_taken');
   });
 });
 

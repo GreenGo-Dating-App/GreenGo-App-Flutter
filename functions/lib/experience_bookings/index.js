@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.onBookableExperienceDeleted = exports.onPendingExperienceReviewCreated = exports.onGuestReviewWritten = exports.revealBlindReviews = exports.completeBookings = exports.expireBookingRequests = exports.sendBookingReminders = exports.resolveBookingDispute = exports.openBookingDispute = exports.confirmCashReceived = exports.markBookingPaid = exports.markBookingNoShow = exports.checkInBooking = exports.getBookingCheckInCode = exports.cancelExperienceSlot = exports.cancelBooking = exports.respondToBookingRequest = exports.createBooking = void 0;
+exports.onBookableExperienceDeleted = exports.onPendingExperienceReviewCreated = exports.onGuestReviewWritten = exports.revealBlindReviews = exports.completeBookings = exports.expireBookingRequests = exports.sendBookingReminders = exports.resolveBookingDispute = exports.openBookingDispute = exports.confirmCashReceived = exports.markBookingPaid = exports.markBookingNoShow = exports.checkInBooking = exports.getBookingCheckInCode = exports.cancelExperienceSlot = exports.cancelBooking = exports.respondToBookingRequest = exports.getSlotAvailability = exports.createBooking = void 0;
 /**
  * Experience bookings: slots, bookings (free / cash / external link — no money
  * moves through GreenGo), cancellations with policy refund obligations,
@@ -9,6 +9,7 @@ exports.onBookableExperienceDeleted = exports.onPendingExperienceReviewCreated =
  */
 var functions_1 = require("./functions");
 Object.defineProperty(exports, "createBooking", { enumerable: true, get: function () { return functions_1.createBooking; } });
+Object.defineProperty(exports, "getSlotAvailability", { enumerable: true, get: function () { return functions_1.getSlotAvailability; } });
 Object.defineProperty(exports, "respondToBookingRequest", { enumerable: true, get: function () { return functions_1.respondToBookingRequest; } });
 Object.defineProperty(exports, "cancelBooking", { enumerable: true, get: function () { return functions_1.cancelBooking; } });
 Object.defineProperty(exports, "cancelExperienceSlot", { enumerable: true, get: function () { return functions_1.cancelExperienceSlot; } });
