@@ -39,6 +39,18 @@ export interface VerificationResult {
   revoked?: boolean;
   /** Store product id the token/transaction belongs to (Play: lineItems[].productId). */
   productId?: string;
+  /**
+   * Store environment the purchase was made in. Apple: 'PRODUCTION' | 'SANDBOX'
+   * (TestFlight / App Review / sandbox testers). Play: 'SANDBOX' when the
+   * license-tester flag (purchaseType 0) is set, else 'PRODUCTION'.
+   */
+  environment?: 'PRODUCTION' | 'SANDBOX';
+  /** Play products.get purchaseType: 0 = Test (license tester), 1 = Promo, 2 = Rewarded; undefined = normal. */
+  purchaseType?: number;
+  /** Play obfuscatedExternalAccountId (the app sets it to the buyer's uid via applicationUserName). */
+  obfuscatedAccountId?: string;
+  /** Apple appAccountToken (UUID) when the app set one. */
+  appAccountToken?: string;
 }
 
 // ========== GOOGLE PLAY VERIFICATION ==========
@@ -79,8 +91,20 @@ export async function verifyGooglePlayPurchase(
     const purchaseState = result.data.purchaseState;
 
     if (purchaseState === 0) {
-      logInfo(`Google Play purchase verified: productId=${productId}`);
-      return { verified: true, transactionId: result.data.orderId || undefined };
+      const purchaseType =
+        typeof result.data.purchaseType === 'number' ? result.data.purchaseType : undefined;
+      logInfo(
+        `Google Play purchase verified: productId=${productId}` +
+        `${purchaseType !== undefined ? ` purchaseType=${purchaseType}` : ''}`,
+      );
+      return {
+        verified: true,
+        transactionId: result.data.orderId || undefined,
+        purchaseType,
+        // purchaseType 0 = bought with a license-tester account (no money moved).
+        environment: purchaseType === 0 ? 'SANDBOX' : 'PRODUCTION',
+        obfuscatedAccountId: result.data.obfuscatedExternalAccountId || undefined,
+      };
     }
 
     logInfo(`Google Play purchase state=${purchaseState} for productId=${productId}`);
@@ -263,6 +287,7 @@ export async function verifyAppStorePurchase(
 
     const rootCerts = await getAppleRootCerts();
     let transaction: any;
+    let environment: 'PRODUCTION' | 'SANDBOX' = 'PRODUCTION';
 
     // Try production first, fall back to sandbox for TestFlight / sandbox testers
     try {
@@ -284,7 +309,13 @@ export async function verifyAppStorePurchase(
         appAppleId,
       );
       transaction = await sandboxVerifier.verifyAndDecodeTransaction(signedTransaction);
+      environment = 'SANDBOX';
       logInfo('Verified in SANDBOX environment');
+    }
+    // The signed payload carries its own environment; trust it over the
+    // verifier that happened to accept it.
+    if (typeof transaction?.environment === 'string') {
+      environment = /sandbox|xcode/i.test(transaction.environment) ? 'SANDBOX' : 'PRODUCTION';
     }
 
     // Verify bundle ID
@@ -328,6 +359,8 @@ export async function verifyAppStorePurchase(
         : undefined,
       // For auto-renewable subscriptions StoreKit includes expiresDate (epoch ms).
       expiresDateMs,
+      environment,
+      appAccountToken: transaction.appAccountToken ? String(transaction.appAccountToken) : undefined,
     };
   } catch (error: any) {
     logError('App Store verification error:', error?.message || error);
@@ -344,6 +377,20 @@ export interface AppStoreNotificationInfo {
   originalTransactionId?: string;
   /** Subscription expiry from the signed transaction, epoch ms. */
   expiresDateMs?: number;
+  /** The transaction's own id (for consumables == originalTransactionId). */
+  transactionId?: string;
+  /** 'Consumable' | 'Non-Consumable' | 'Auto-Renewable Subscription' | 'Non-Renewing Subscription'. */
+  productType?: string;
+  /** 'PRODUCTION' | 'SANDBOX' (from the signed notification data). */
+  environment?: 'PRODUCTION' | 'SANDBOX';
+  /** Set when Apple refunded / revoked the transaction, epoch ms. */
+  revocationDateMs?: number;
+  /** Apple revocationReason: 0 = other, 1 = app issue. */
+  revocationReason?: number;
+  /** Unique id of this notification (Apple retries reuse it). */
+  notificationUUID?: string;
+  /** CONSUMPTION_REQUEST only: why the customer asked for the refund. */
+  consumptionRequestReason?: string;
 }
 
 /**
@@ -374,6 +421,17 @@ export async function decodeAppStoreNotification(
         ? String(tx.originalTransactionId)
         : undefined,
       expiresDateMs: typeof tx?.expiresDate === 'number' ? tx.expiresDate : undefined,
+      transactionId: tx?.transactionId ? String(tx.transactionId) : undefined,
+      productType: tx?.type ? String(tx.type) : undefined,
+      environment: /sandbox|xcode/i.test(String(payload?.data?.environment ?? tx?.environment ?? ''))
+        ? 'SANDBOX'
+        : 'PRODUCTION',
+      revocationDateMs: typeof tx?.revocationDate === 'number' ? tx.revocationDate : undefined,
+      revocationReason: typeof tx?.revocationReason === 'number' ? tx.revocationReason : undefined,
+      notificationUUID: payload?.notificationUUID ? String(payload.notificationUUID) : undefined,
+      consumptionRequestReason: payload?.data?.consumptionRequestReason
+        ? String(payload.data.consumptionRequestReason)
+        : undefined,
     };
   };
 
@@ -391,7 +449,14 @@ export async function decodeAppStoreNotification(
  */
 export async function getGooglePlaySubscriptionExpiry(
   token: string,
-): Promise<{ expiresDateMs?: number; productId?: string; apiUnavailable?: boolean; error?: string }> {
+): Promise<{
+  expiresDateMs?: number;
+  productId?: string;
+  /** Play orderId of the latest (current) period: GPA.x or GPA.x..N for renewals. */
+  latestOrderId?: string;
+  apiUnavailable?: boolean;
+  error?: string;
+}> {
   try {
     const publisher = await getAndroidPublisher();
     const res: any = await publisher.purchases.subscriptionsv2.get({
@@ -410,7 +475,11 @@ export async function getGooglePlaySubscriptionExpiry(
         }
       }
     }
-    return { expiresDateMs: latestMs, productId };
+    return {
+      expiresDateMs: latestMs,
+      productId,
+      latestOrderId: res.data?.latestOrderId ? String(res.data.latestOrderId) : undefined,
+    };
   } catch (error: any) {
     const msg = error?.message || String(error);
     const isApiError =
@@ -422,5 +491,60 @@ export async function getGooglePlaySubscriptionExpiry(
     }
     logError('Google Play subscription lookup error:', msg);
     return { error: msg };
+  }
+}
+
+// ========== GOOGLE PLAY VOIDED PURCHASES (refund / chargeback backstop) ==========
+
+export interface VoidedPurchase {
+  purchaseToken: string;
+  orderId?: string;
+  voidedTimeMillis?: number;
+  /** 0 = user, 1 = developer, 2 = Google. */
+  voidedSource?: number;
+  /** 0 other, 1 remorse, 2 not_received, 3 defective, 4 accidental, 5 fraud, 6 friendly_fraud, 7 chargeback. */
+  voidedReason?: number;
+  /** 1 = full refund, 2 = quantity-based partial refund. */
+  refundType?: number;
+}
+
+/**
+ * One page of the Android Publisher Voided Purchases API
+ * (purchases.voidedpurchases.list), consumables AND subscriptions (type=1).
+ * Play only keeps the last 30 days, so an older `startTimeMs` is clamped.
+ * Quota: 6000 queries/day, 30 per 30 s; one daily run is far below it.
+ */
+export async function listGooglePlayVoidedPurchases(
+  startTimeMs: number,
+  pageToken?: string,
+): Promise<{ items: VoidedPurchase[]; nextPageToken?: string; apiUnavailable?: boolean; error?: string }> {
+  try {
+    const publisher = await getAndroidPublisher();
+    const minStart = Date.now() - 30 * 24 * 3600 * 1000 + 60 * 1000;
+    const res: any = await publisher.purchases.voidedpurchases.list({
+      packageName: PACKAGE_NAME,
+      startTime: String(Math.max(startTimeMs, minStart)),
+      maxResults: 1000,
+      type: 1,
+      ...(pageToken ? { token: pageToken } : {}),
+    });
+    const items: VoidedPurchase[] = (res.data?.voidedPurchases || [])
+      .filter((v: any) => v?.purchaseToken)
+      .map((v: any) => ({
+        purchaseToken: String(v.purchaseToken),
+        orderId: v.orderId ? String(v.orderId) : undefined,
+        voidedTimeMillis: v.voidedTimeMillis ? Number(v.voidedTimeMillis) : undefined,
+        voidedSource: typeof v.voidedSource === 'number' ? v.voidedSource : undefined,
+        voidedReason: typeof v.voidedReason === 'number' ? v.voidedReason : undefined,
+        refundType: typeof v.refundType === 'number' ? v.refundType : undefined,
+      }));
+    return { items, nextPageToken: res.data?.tokenPagination?.nextPageToken || undefined };
+  } catch (error: any) {
+    const msg = error?.message || String(error);
+    const isApiError =
+      msg.includes('403') || msg.includes('401') || msg.includes('not enabled') ||
+      msg.includes('PERMISSION_DENIED') || msg.includes('accessNotConfigured');
+    logError('Google Play voided purchases lookup error:', msg);
+    return isApiError ? { items: [], apiUnavailable: true } : { items: [], error: msg };
   }
 }

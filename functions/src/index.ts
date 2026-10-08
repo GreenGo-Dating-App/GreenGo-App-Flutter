@@ -241,6 +241,10 @@ export {
   playStoreNotifications,
 } from './subscription/storeNotifications';
 
+// Daily Google Play Voided Purchases API poll: refund/chargeback clawback
+// backstop for the RTDN voidedPurchaseNotification (security audit H-10).
+export { pollPlayVoidedPurchases } from './subscription/voidedPurchasesPoll';
+
 // Stripe Web Payments — coin packages + memberships via Stripe Checkout
 // (web has no in-app-purchase plugin). Inert until STRIPE_SECRET_KEY is set.
 export {

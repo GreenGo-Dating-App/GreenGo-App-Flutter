@@ -121,6 +121,7 @@ beforeEach(() => {
   core.stripeCoreDeps.stripe = () => stripe;
   core.stripeCoreDeps.now = () => NOW;
   core.stripeCoreDeps.getUserEmail = async (uid: string) => emails[uid] ?? null;
+  core.stripeCoreDeps.getVerifiedUserEmail = async (uid: string) => emails[uid] ?? null;
   core.stripeCoreDeps.downgradeTierNow = async (uid: string, reason: string) => {
     downgrades.push({ uid, reason });
     db.write('profiles', uid, { membershipTier: 'FREE', membershipExpiryReason: reason }, true);
@@ -420,6 +421,114 @@ describe('(c) refunds and disputes end the membership now', () => {
     };
     await deliver(evt('evt_2', 'charge.refunded', { id: 'ch_c' }));
     expect(db.get('stripe_payment_flags', 'coin_refund_ch_c')).toMatchObject({ type: 'coin_refund', uid: 'u1', status: 'open' });
+  });
+
+  // Security audit H-10: refunded / disputed coin purchases are clawed back.
+  function refundableCoinCharge(id = 'ch_c', session = 'cs_1') {
+    state.charges[id] = {
+      id, customer: 'cus_1', invoice: null, amount: 399, amount_refunded: 399, refunded: true,
+      currency: 'usd', payment_intent: `pi_${session}`, livemode: true,
+    };
+  }
+  const coinsOf = (uid: string) => db.get('coinBalances', uid)?.totalCoins;
+  const batchSum = (uid: string) =>
+    ((db.get('coinBalances', uid)?.coinBatches ?? []) as any[]).reduce((s, b) => s + (b.remainingCoins ?? 0), 0);
+
+  test('a refunded coin purchase claws the coins back once (refund, replay, then dispute)', async () => {
+    seedCoinSession('cs_1');
+    await deliver(evt('evt_1', 'checkout.session.completed', { id: 'cs_1' }));
+    expect(db.get('coinBalances', 'u1')?.totalCoins).toBe(500);
+    refundableCoinCharge();
+
+    const res = await deliver(evt('evt_2', 'charge.refunded', { id: 'ch_c' }));
+    expect(res.statusCode).toBe(200);
+    expect(coinsOf('u1')).toBe(0);
+    expect(batchSum('u1')).toBe(0);
+    expect(db.get('coinTransactions', 'stripe_clawback_cs_1')).toMatchObject({
+      userId: 'u1', type: 'debit', amount: 500, balanceAfter: 0, reason: 'refundClawback',
+    });
+    expect(db.get('stripe_orders', 'cs_1')).toMatchObject({ revokeReason: 'stripe_refund', coinsClawedBack: 500 });
+    expect(db.get('fraud_flags', 'stripe_refund_cs_1')).toMatchObject({ type: 'purchase_refunded', userId: 'u1', coins: 500 });
+    expect(db.get('stripe_revocations', 'refund_ch_c')).toMatchObject({ action: 'coins_clawed_back' });
+
+    await deliver(evt('evt_2b', 'charge.refunded', { id: 'ch_c' })); // second delivery, new event id
+    await deliver(evt('evt_3', 'charge.dispute.created', { id: 'dp_c', charge: 'ch_c' }));
+    expect(coinsOf('u1')).toBe(0);
+    expect(db.all('coinTransactions').filter(([, d]) => d.type === 'debit')).toHaveLength(1);
+  });
+
+  test('a coin refund after the coins were spent leaves a debt, not free coins', async () => {
+    seedCoinSession('cs_1');
+    await deliver(evt('evt_1', 'checkout.session.completed', { id: 'cs_1' }));
+    const b = db.get('coinBalances', 'u1')!;
+    db.write('coinBalances', 'u1', {
+      totalCoins: 100, coinBatches: b.coinBatches.map((x: any) => ({ ...x, remainingCoins: 100 })),
+    }, true);
+    refundableCoinCharge();
+    await deliver(evt('evt_2', 'charge.dispute.created', { id: 'dp_c', charge: 'ch_c' }));
+    expect(coinsOf('u1')).toBe(-400);
+    expect(batchSum('u1')).toBe(0);
+    expect(db.get('fraud_flags', 'stripe_refund_cs_1')).toMatchObject({ negativeBalance: true, reason: 'stripe_dispute' });
+  });
+
+  test('a dry run reports the clawback but writes nothing', async () => {
+    seedCoinSession('cs_1');
+    await deliver(evt('evt_1', 'checkout.session.completed', { id: 'cs_1' }));
+    refundableCoinCharge();
+    const out = await core.processChargeReversal(stripe, { kind: 'refund', chargeId: 'ch_c' }, { dryRun: true });
+    expect(out).toMatchObject({ action: 'would_revoke', uid: 'u1', detail: { coins: 500 } });
+    expect(db.get('coinBalances', 'u1')?.totalCoins).toBe(500);
+  });
+});
+
+// ---------------------------------------------------------------------------
+describe('L-06 / redirect hygiene', () => {
+  test('return URLs the web app builds from its own origin are accepted', () => {
+    for (const origin of [
+      'https://greengo-chat.web.app', 'https://greengo-chat.firebaseapp.com', 'https://greengochat.com',
+      'https://www.greengochat.com', 'https://greengo-chat--pr-12-abc123.web.app',
+      'http://localhost:5000', 'http://127.0.0.1:8080',
+    ]) {
+      expect(core.isAllowedStripeRedirect(`${origin}/?payment=success&return=shop`)).toBe(true);
+      expect(core.isAllowedStripeRedirect(`${origin}/?payment=cancel&return=shop`)).toBe(true);
+      expect(core.isAllowedStripeRedirect(`${origin}/?portal=return`)).toBe(true);
+    }
+  });
+
+  test('foreign / look-alike / malformed URLs are rejected', () => {
+    for (const url of [
+      'https://evil.com/?payment=success', 'https://greengo-chat.web.app.evil.com/', 'https://evilgreengochat.com/',
+      'https://greengo-chat.web.app@evil.com/', 'http://greengo-chat.web.app/', 'javascript:alert(1)',
+      'https://other-project--x.web.app/', 'http://evil.localhost.com/', 'not a url', 42, null,
+    ]) {
+      expect(core.isAllowedStripeRedirect(url)).toBe(false);
+    }
+  });
+
+  test('test mode needs the allowlisted email AND email_verified', () => {
+    expect(core.isStripeTestModeToken({ email: 'mauro.tommasi@live.it', email_verified: true })).toBe(true);
+    expect(core.isStripeTestModeToken({ email: 'Mauro.Tommasi@live.it ', email_verified: true })).toBe(true);
+    expect(core.isStripeTestModeToken({ email: 'mauro.tommasi@live.it', email_verified: false })).toBe(false);
+    expect(core.isStripeTestModeToken({ email: 'mauro.tommasi@live.it' })).toBe(false);
+    expect(core.isStripeTestModeToken({ email: 'jdoe@gmail.com', email_verified: true })).toBe(false);
+    expect(core.isStripeTestModeToken(undefined)).toBe(false);
+  });
+
+  test('a test-mode coin session grants only to a VERIFIED allowlisted account', async () => {
+    process.env.STRIPE_TEST_WEBHOOK_SECRET = 'whsec_test_mode';
+    seedCoinSession('cs_t');
+    state.sessions.cs_t.livemode = false;
+    const testEvt = (id: string) => {
+      const e = evt(id, 'checkout.session.completed', { id: 'cs_t' }, false);
+      const res = fakeRes();
+      return core.handleStripeWebhookHttp(signed(e, 'whsec_test_mode'), res).then(() => res);
+    };
+    core.stripeCoreDeps.getVerifiedUserEmail = async () => null; // allowlisted but unverified
+    await testEvt('evt_t1');
+    expect(db.get('coinBalances', 'u1')).toBeUndefined();
+    core.stripeCoreDeps.getVerifiedUserEmail = async () => 'mauro.tommasi@live.it';
+    await testEvt('evt_t2');
+    expect(db.get('coinBalances', 'u1')?.totalCoins).toBe(500);
   });
 });
 
