@@ -19,6 +19,9 @@ class BookingConfig {
   static const int slotCapacityMax = 500;
   static const Duration slotMaxLength = Duration(hours: 24);
   static const Duration slotMaxAhead = Duration(days: 366);
+
+  /// Most dates one "Repeat" can create (same bound as the host's list).
+  static const int maxRepeatDates = 60;
   static const int disputeReasonMin = 10;
   static const int disputeReasonMax = 1000;
   static const int guestReviewMax = 500;
@@ -242,6 +245,43 @@ class BookingRules {
       errors.add(SlotError.capacityBelowBooked);
     }
     return errors;
+  }
+
+  /// "Repeat": the [template]'s time of day, length and seats on every day
+  /// in [from]..[to] (inclusive, local calendar days) whose weekday
+  /// (DateTime.monday..sunday) is in [weekdays]. Days whose start is not in
+  /// the future, beyond [BookingConfig.slotMaxAhead], or already taken by a
+  /// start in [existingStarts] are skipped. At most [max] drafts, soonest
+  /// first. Built from local wall-clock times so a DST change keeps "10:00".
+  static List<SlotDraft> repeatSlot(
+    SlotDraft template, {
+    required DateTime from,
+    required DateTime to,
+    required Set<int> weekdays,
+    required DateTime now,
+    Iterable<DateTime> existingStarts = const [],
+    int max = BookingConfig.maxRepeatDates,
+  }) {
+    final t = template.start.toLocal();
+    final length = template.end.difference(template.start);
+    final taken = {for (final s in existingStarts) s.millisecondsSinceEpoch};
+    final last = DateTime(to.year, to.month, to.day);
+    final out = <SlotDraft>[];
+    for (var day = DateTime(from.year, from.month, from.day);
+        !day.isAfter(last) && out.length < max;
+        day = DateTime(day.year, day.month, day.day + 1)) {
+      if (!weekdays.contains(day.weekday)) continue;
+      final start =
+          DateTime(day.year, day.month, day.day, t.hour, t.minute);
+      if (!start.isAfter(now) ||
+          start.isAfter(now.add(BookingConfig.slotMaxAhead)) ||
+          taken.contains(start.millisecondsSinceEpoch)) {
+        continue;
+      }
+      out.add(SlotDraft(
+          start: start, end: start.add(length), capacity: template.capacity));
+    }
+    return out;
   }
 
   // ─────────────────────────────────────────────── identity

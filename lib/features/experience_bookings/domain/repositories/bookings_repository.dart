@@ -27,6 +27,12 @@ abstract class BookingsRepository {
     ExperienceSlot? existing,
   });
 
+  /// "Repeat": creates many slots at once, skipping starts already taken.
+  Future<Either<Failure, List<ExperienceSlot>>> createSlots(
+    String experienceId,
+    List<SlotDraft> drafts,
+  );
+
   /// Only while nothing is booked on it.
   Future<Either<Failure, void>> deleteSlot(String experienceId, String slotId);
 

@@ -32,6 +32,14 @@ class SlotSaveRequested extends SlotsEvent {
   List<Object?> get props => [draft, existing];
 }
 
+/// "Repeat": create every draft (one date each) in one go.
+class SlotsRepeatRequested extends SlotsEvent {
+  const SlotsRepeatRequested(this.drafts);
+  final List<SlotDraft> drafts;
+  @override
+  List<Object?> get props => [drafts];
+}
+
 class SlotDeleteRequested extends SlotsEvent {
   const SlotDeleteRequested(this.slot);
   final ExperienceSlot slot;
@@ -48,7 +56,7 @@ class SlotCancelRequested extends SlotsEvent {
   List<Object?> get props => [slot, reason];
 }
 
-enum SlotsFlash { saved, deleted, cancelled, invalid, failed }
+enum SlotsFlash { saved, repeated, deleted, cancelled, invalid, failed }
 
 class SlotsState extends Equatable {
   const SlotsState({
@@ -61,6 +69,8 @@ class SlotsState extends Equatable {
     this.failure,
     this.errors = const [],
     this.cancelledBookings = 0,
+    this.repeatCreated = 0,
+    this.repeatSkipped = 0,
     this.seq = 0,
   });
 
@@ -77,6 +87,10 @@ class SlotsState extends Equatable {
   /// Validation errors of the last refused save.
   final List<SlotError> errors;
   final int cancelledBookings;
+
+  /// Last "Repeat": dates created / skipped because they already existed.
+  final int repeatCreated;
+  final int repeatSkipped;
   final int seq;
 
   SlotsState copyWith({
@@ -89,6 +103,8 @@ class SlotsState extends Equatable {
     Failure? failure,
     List<SlotError>? errors,
     int? cancelledBookings,
+    int? repeatCreated,
+    int? repeatSkipped,
   }) =>
       SlotsState(
         experience: experience ?? this.experience,
@@ -100,6 +116,8 @@ class SlotsState extends Equatable {
         failure: failure,
         errors: errors ?? (flash == null ? this.errors : const []),
         cancelledBookings: cancelledBookings ?? this.cancelledBookings,
+        repeatCreated: repeatCreated ?? this.repeatCreated,
+        repeatSkipped: repeatSkipped ?? this.repeatSkipped,
         seq: flash != null ? seq + 1 : seq,
       );
 
@@ -114,6 +132,8 @@ class SlotsState extends Equatable {
         failure,
         errors,
         cancelledBookings,
+        repeatCreated,
+        repeatSkipped,
         seq,
       ];
 }
@@ -127,6 +147,7 @@ class SlotsBloc extends Bloc<SlotsEvent, SlotsState> {
     on<SlotsStarted>(_onStarted);
     on<SlotsRefreshed>((e, emit) => _load(emit));
     on<SlotSaveRequested>(_onSave);
+    on<SlotsRepeatRequested>(_onRepeat);
     on<SlotDeleteRequested>(_onDelete);
     on<SlotCancelRequested>(_onCancel);
   }
@@ -180,6 +201,39 @@ class SlotsBloc extends Bloc<SlotsEvent, SlotsState> {
             if (s.id != slot.id) s,
           slot,
         ]),
+      )),
+    );
+  }
+
+  Future<void> _onRepeat(
+      SlotsRepeatRequested e, Emitter<SlotsState> emit) async {
+    final exp = state.experience;
+    if (exp == null || state.busy) return;
+    final now = DateTime.now();
+    final drafts = e.drafts
+        .take(BookingConfig.maxRepeatDates)
+        .where((d) => BookingRules.validateSlot(d, now).isEmpty)
+        .toList();
+    if (drafts.isEmpty) {
+      emit(state.copyWith(
+          flash: SlotsFlash.invalid,
+          errors: e.drafts.isEmpty
+              ? const []
+              : BookingRules.validateSlot(e.drafts.first, now)));
+      return;
+    }
+    emit(state.copyWith(busy: true));
+    final r = await _repo.createSlots(exp.id, drafts);
+    r.fold(
+      (f) => emit(state.copyWith(
+          busy: false, flash: SlotsFlash.failed, failure: f)),
+      (created) => emit(state.copyWith(
+        busy: false,
+        flash: SlotsFlash.repeated,
+        repeatCreated: created.length,
+        repeatSkipped: e.drafts.length - created.length,
+        // Keep the same bounded window the list loads ([limit]).
+        slots: _sorted([...state.slots, ...created]).take(limit).toList(),
       )),
     );
   }

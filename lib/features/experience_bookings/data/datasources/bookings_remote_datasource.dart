@@ -136,6 +136,61 @@ class BookingsRemoteDataSource {
         experienceId, ref.id, fresh.data() ?? const {});
   }
 
+  /// "Repeat": creates many open slots. Starts already taken by an open slot
+  /// in the same span are skipped (one bounded range read, so dates beyond
+  /// the host's loaded list are also de-duplicated). Written in batches of
+  /// [_slotBatch] — each create rule get()s the experience, and a batched
+  /// write may make at most 20 document reads in rules.
+  Future<List<ExperienceSlot>> createSlots(
+    String experienceId,
+    List<SlotDraft> drafts,
+  ) async {
+    if (drafts.isEmpty) return const [];
+    final sorted = [...drafts]..sort((a, b) => a.start.compareTo(b.start));
+    final existing = await _slots(experienceId)
+        .where('start',
+            isGreaterThanOrEqualTo: Timestamp.fromDate(sorted.first.start))
+        .where('start',
+            isLessThanOrEqualTo: Timestamp.fromDate(sorted.last.start))
+        .orderBy('start')
+        .limit(500)
+        .get();
+    final taken = {
+      for (final d in existing.docs)
+        if (d.data()['status'] != 'cancelled' && d.data()['start'] is Timestamp)
+          (d.data()['start'] as Timestamp).millisecondsSinceEpoch,
+    };
+    final fresh = [
+      for (final d in sorted)
+        if (!taken.contains(d.start.millisecondsSinceEpoch)) d,
+    ];
+
+    final created = <ExperienceSlot>[];
+    for (var i = 0; i < fresh.length; i += _slotBatch) {
+      final chunk = fresh.skip(i).take(_slotBatch).toList();
+      final batch = _db.batch();
+      final refs = <DocumentReference<Map<String, dynamic>>>[];
+      for (final d in chunk) {
+        final ref = _slots(experienceId).doc();
+        refs.add(ref);
+        batch.set(ref, BookingModel.slotPayload(d));
+      }
+      await batch.commit();
+      for (var j = 0; j < chunk.length; j++) {
+        created.add(ExperienceSlot(
+          id: refs[j].id,
+          experienceId: experienceId,
+          start: chunk[j].start,
+          end: chunk[j].end,
+          capacity: chunk[j].capacity,
+        ));
+      }
+    }
+    return created;
+  }
+
+  static const int _slotBatch = 10;
+
   Future<void> deleteSlot(String experienceId, String slotId) =>
       _slots(experienceId).doc(slotId).delete();
 

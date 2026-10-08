@@ -42,6 +42,13 @@ class BookingsRepositoryImpl implements BookingsRepository {
       _guard(() => _remote.saveSlot(experienceId, draft, existing: existing));
 
   @override
+  Future<Either<Failure, List<ExperienceSlot>>> createSlots(
+    String experienceId,
+    List<SlotDraft> drafts,
+  ) =>
+      _guard(() => _remote.createSlots(experienceId, drafts));
+
+  @override
   Future<Either<Failure, void>> deleteSlot(String experienceId, String slotId) =>
       _guard(() => _remote.deleteSlot(experienceId, slotId));
 

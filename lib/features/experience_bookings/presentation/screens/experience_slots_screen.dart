@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -62,19 +63,32 @@ class _SlotsViewState extends State<_SlotsView> {
 
   void _pop() => Navigator.of(context).pop(_bloc.state.experience);
 
-  Future<void> _edit({ExperienceSlot? existing}) async {
+  /// Add / edit one date, or — with [repeatFrom], or the sheet's Repeat
+  /// switch — add the same times on many dates.
+  Future<void> _edit({ExperienceSlot? existing, ExperienceSlot? repeatFrom}) async {
     final e = _bloc.state.experience;
     if (e == null) return;
-    final draft = await showModalBottomSheet<SlotDraft>(
+    final result = await showModalBottomSheet<_SlotSheetResult>(
       context: context,
       isScrollControlled: true,
       backgroundColor: AppColors.backgroundCard,
       shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
-      builder: (_) => _SlotEditorSheet(experience: e, existing: existing),
+      builder: (_) => _SlotEditorSheet(
+        experience: e,
+        existing: existing,
+        repeatFrom: repeatFrom,
+        existingStarts: [
+          for (final s in _bloc.state.slots)
+            if (!s.cancelled) s.start,
+        ],
+      ),
     );
-    if (draft != null && mounted) {
-      _bloc.add(SlotSaveRequested(draft, existing: existing));
+    if (result == null || !mounted) return;
+    if (result.repeat) {
+      _bloc.add(SlotsRepeatRequested(result.drafts));
+    } else if (result.drafts.isNotEmpty) {
+      _bloc.add(SlotSaveRequested(result.drafts.first, existing: existing));
     }
   }
 
@@ -172,6 +186,13 @@ class _SlotsViewState extends State<_SlotsView> {
         switch (s.flash) {
           case SlotsFlash.saved:
             showBookingSnack(context, l.bkDateSaved);
+          case SlotsFlash.repeated:
+            showBookingSnack(
+                context,
+                s.repeatSkipped > 0
+                    ? '${l.bkRepeatAdded(s.repeatCreated)} · '
+                        '${l.bkRepeatSkipped(s.repeatSkipped)}'
+                    : l.bkRepeatAdded(s.repeatCreated));
           case SlotsFlash.deleted:
             showBookingSnack(context, l.bkDateDeleted);
           case SlotsFlash.cancelled:
@@ -331,6 +352,8 @@ class _SlotsViewState extends State<_SlotsView> {
                 switch (v) {
                   case 'edit':
                     _edit(existing: slot);
+                  case 'repeat':
+                    _edit(repeatFrom: slot);
                   case 'bookings':
                     _bookings(e);
                   case 'delete':
@@ -343,6 +366,11 @@ class _SlotsViewState extends State<_SlotsView> {
                 PopupMenuItem(
                     value: 'edit',
                     child: Text(l.bkEditDate,
+                        style: const TextStyle(color: AppColors.textPrimary))),
+                PopupMenuItem(
+                    key: ValueKey('slot-repeat-${slot.id}'),
+                    value: 'repeat',
+                    child: Text(l.bkRepeatThisDate,
                         style: const TextStyle(color: AppColors.textPrimary))),
                 if (slot.hasBookings)
                   PopupMenuItem(
@@ -368,12 +396,28 @@ class _SlotsViewState extends State<_SlotsView> {
   }
 }
 
+/// What the date sheet returns: one draft, or every date of a "Repeat".
+typedef _SlotSheetResult = ({List<SlotDraft> drafts, bool repeat});
+
 /// Date + start / end time + seats. Validates with [BookingRules.validateSlot]
-/// before popping the [SlotDraft]. A booked slot only changes its seats.
+/// before popping. A booked slot only changes its seats. When adding, the
+/// "Repeat" switch applies the same times and seats to every chosen weekday
+/// in a date range picked on a calendar ([BookingRules.repeatSlot]).
 class _SlotEditorSheet extends StatefulWidget {
-  const _SlotEditorSheet({required this.experience, this.existing});
+  const _SlotEditorSheet({
+    required this.experience,
+    this.existing,
+    this.repeatFrom,
+    this.existingStarts = const [],
+  });
   final UserExperience experience;
   final ExperienceSlot? existing;
+
+  /// "Repeat this date": prefill from this slot with Repeat switched on.
+  final ExperienceSlot? repeatFrom;
+
+  /// Open slots already listed (skipped by Repeat, shown in its preview).
+  final List<DateTime> existingStarts;
 
   @override
   State<_SlotEditorSheet> createState() => _SlotEditorSheetState();
@@ -385,13 +429,25 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
   late TimeOfDay _endTime;
   late final TextEditingController _capacity;
   List<SlotError> _errors = const [];
+  bool _repeat = false;
+  DateTimeRange? _range;
+  final Set<int> _weekdays = {};
+  bool _noMatch = false;
 
   bool get _frozen => widget.existing?.hasBookings ?? false;
 
   @override
   void initState() {
     super.initState();
-    final x = widget.existing;
+    final x = widget.existing ?? widget.repeatFrom;
+    if (widget.repeatFrom != null) {
+      _repeat = true;
+      final d = widget.repeatFrom!.start.toLocal();
+      final from = DateTime(d.year, d.month, d.day + 1);
+      _range = DateTimeRange(
+          start: from, end: DateTime(from.year, from.month, from.day + 27));
+      _weekdays.add(d.weekday);
+    }
     if (x != null) {
       final s = x.start.toLocal();
       final e = x.end.toLocal();
@@ -402,6 +458,7 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
     } else {
       final tomorrow = DateTime.now().add(const Duration(days: 1));
       _date = DateTime(tomorrow.year, tomorrow.month, tomorrow.day);
+      _weekdays.add(_date.weekday);
       _startTime = const TimeOfDay(hour: 10, minute: 0);
       final end = DateTime(2000, 1, 1, 10)
           .add(Duration(minutes: widget.experience.durationMinutes.clamp(15, 24 * 60)));
@@ -464,14 +521,115 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
     });
   }
 
+  /// Dates a Repeat would add right now, soonest first — one past the cap,
+  /// so the preview can say the range was cut.
+  List<SlotDraft> _repeatDrafts() {
+    final r = _range;
+    if (r == null || _weekdays.isEmpty) return const [];
+    return BookingRules.repeatSlot(
+      _draft,
+      from: r.start,
+      to: r.end,
+      weekdays: _weekdays,
+      now: DateTime.now(),
+      existingStarts: widget.existingStarts,
+      max: BookingConfig.maxRepeatDates + 1,
+    );
+  }
+
+  Future<void> _pickRange() async {
+    final now = DateTime.now();
+    final first = DateTime(now.year, now.month, now.day);
+    final last = now.add(BookingConfig.slotMaxAhead);
+    final initial = _range ??
+        DateTimeRange(
+            start: _date,
+            end: DateTime(_date.year, _date.month, _date.day + 27));
+    final start = initial.start.isBefore(first) ? first : initial.start;
+    final end = initial.end.isAfter(last) ? last : initial.end;
+    final r = await showDateRangePicker(
+      context: context,
+      firstDate: first,
+      lastDate: last,
+      initialDateRange:
+          DateTimeRange(start: start, end: end.isBefore(start) ? start : end),
+      initialEntryMode: DatePickerEntryMode.calendarOnly,
+    );
+    if (r != null) {
+      setState(() {
+        _range = r;
+        _noMatch = false;
+      });
+    }
+  }
+
   void _save() {
+    if (_repeat) {
+      // Times and seats are checked on the template; past / too-far days are
+      // simply not generated, so those two errors don't apply here.
+      final errors = BookingRules.validateSlot(_draft, DateTime.now())
+          .where((e) =>
+              e != SlotError.startInPast && e != SlotError.tooFarAhead)
+          .toList();
+      final drafts =
+          _repeatDrafts().take(BookingConfig.maxRepeatDates).toList();
+      setState(() {
+        _errors = errors;
+        _noMatch = drafts.isEmpty;
+      });
+      if (errors.isNotEmpty || drafts.isEmpty) return;
+      Navigator.pop<_SlotSheetResult>(context, (drafts: drafts, repeat: true));
+      return;
+    }
     final errors = BookingRules.validateSlot(_draft, DateTime.now(),
         existing: widget.existing);
     if (errors.isNotEmpty) {
       setState(() => _errors = errors);
       return;
     }
-    Navigator.pop(context, _draft);
+    Navigator.pop<_SlotSheetResult>(
+        context, (drafts: [_draft], repeat: false));
+  }
+
+  /// Weekday chips in the locale's week order (Mon.. or Sun..).
+  Widget _weekdayChips(BuildContext context) {
+    final locale = Localizations.localeOf(context).toString();
+    DateFormat fmt;
+    try {
+      fmt = DateFormat.E(locale);
+    } catch (_) {
+      fmt = DateFormat.E();
+    }
+    // MaterialLocalizations: 0 = Sunday; DateTime: monday = 1 .. sunday = 7.
+    final firstIndex = MaterialLocalizations.of(context).firstDayOfWeekIndex;
+    final order = [
+      for (var i = 0; i < 7; i++) ((firstIndex + i + 6) % 7) + 1,
+    ];
+    // 2024-01-01 was a Monday, so day N of that month is weekday N.
+    String name(int wd) => fmt.format(DateTime(2024, 1, wd));
+    return Wrap(
+      spacing: 6,
+      runSpacing: 6,
+      children: [
+        for (final wd in order)
+          FilterChip(
+            key: ValueKey('slot-repeat-day-$wd'),
+            label: Text(name(wd)),
+            selected: _weekdays.contains(wd),
+            showCheckmark: false,
+            selectedColor: AppColors.richGold,
+            backgroundColor: AppColors.backgroundInput,
+            labelStyle: TextStyle(
+                color: _weekdays.contains(wd)
+                    ? AppColors.deepBlack
+                    : AppColors.textPrimary),
+            onSelected: (on) => setState(() {
+              on ? _weekdays.add(wd) : _weekdays.remove(wd);
+              _noMatch = false;
+            }),
+          ),
+      ],
+    );
   }
 
   @override
@@ -521,10 +679,63 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
                       color: AppColors.warningAmber, fontSize: 12)),
             ],
             const SizedBox(height: 14),
-            field(l.bkDate, BookingL10n.day(context, _date),
-                _frozen ? null : _pickDate,
-                key: const ValueKey('slot-date')),
-            const SizedBox(height: 10),
+            if (widget.existing == null) ...[
+              SwitchListTile(
+                key: const ValueKey('slot-repeat'),
+                contentPadding: EdgeInsets.zero,
+                activeThumbColor: AppColors.richGold,
+                secondary: const Icon(Icons.repeat, color: AppColors.richGold),
+                title: Text(l.bkRepeat,
+                    style: const TextStyle(color: AppColors.textPrimary)),
+                subtitle: Text(l.bkRepeatHint,
+                    style: const TextStyle(
+                        color: AppColors.textTertiary, fontSize: 12)),
+                value: _repeat,
+                onChanged: (v) => setState(() {
+                  _repeat = v;
+                  _noMatch = false;
+                  _range ??= DateTimeRange(
+                      start: _date,
+                      end: DateTime(_date.year, _date.month, _date.day + 27));
+                }),
+              ),
+              const SizedBox(height: 6),
+            ],
+            if (_repeat) ...[
+              field(
+                  l.bkRepeatDates,
+                  _range == null
+                      ? l.bkRepeatPickRange
+                      : '${BookingL10n.day(context, _range!.start)} – '
+                          '${BookingL10n.day(context, _range!.end)}',
+                  _pickRange,
+                  key: const ValueKey('slot-repeat-range')),
+              const SizedBox(height: 10),
+              Row(children: [
+                Expanded(
+                  child: Text(l.bkRepeatOnDays,
+                      style: const TextStyle(
+                          color: AppColors.textSecondary, fontSize: 13)),
+                ),
+                TextButton(
+                  onPressed: () => setState(() {
+                    _weekdays.length == 7
+                        ? _weekdays.clear()
+                        : _weekdays.addAll(const [1, 2, 3, 4, 5, 6, 7]);
+                    _noMatch = false;
+                  }),
+                  child: Text(l.bkRepeatEveryDay,
+                      style: const TextStyle(color: AppColors.richGold)),
+                ),
+              ]),
+              _weekdayChips(context),
+              const SizedBox(height: 10),
+            ] else ...[
+              field(l.bkDate, BookingL10n.day(context, _date),
+                  _frozen ? null : _pickDate,
+                  key: const ValueKey('slot-date')),
+              const SizedBox(height: 10),
+            ],
             Row(children: [
               Expanded(
                 child: field(l.bkStartTime, _startTime.format(context),
@@ -537,9 +748,27 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
               ),
             ]),
             const SizedBox(height: 6),
-            Text(BookingL10n.range(context, _draft.start, _draft.end),
-                style: const TextStyle(
-                    color: AppColors.textTertiary, fontSize: 12)),
+            if (_repeat)
+              Builder(builder: (context) {
+                final n = _repeatDrafts().length;
+                final capped = n > BookingConfig.maxRepeatDates;
+                return Text(
+                  capped
+                      ? '${l.bkRepeatPreview(BookingConfig.maxRepeatDates)} · '
+                          '${l.bkRepeatCapped(BookingConfig.maxRepeatDates)}'
+                      : l.bkRepeatPreview(n),
+                  key: const ValueKey('slot-repeat-preview'),
+                  style: TextStyle(
+                      color: n == 0 || _noMatch
+                          ? AppColors.errorRed
+                          : AppColors.textTertiary,
+                      fontSize: 12),
+                );
+              })
+            else
+              Text(BookingL10n.range(context, _draft.start, _draft.end),
+                  style: const TextStyle(
+                      color: AppColors.textTertiary, fontSize: 12)),
             const SizedBox(height: 10),
             TextField(
               key: const ValueKey('slot-capacity'),
@@ -573,7 +802,11 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
             const SizedBox(height: 14),
             BookingPrimaryButton(
               key: const ValueKey('slot-save'),
-              label: l.uexpSaveChanges,
+              label: _repeat
+                  ? l.bkRepeatAddButton(_repeatDrafts()
+                      .take(BookingConfig.maxRepeatDates)
+                      .length)
+                  : l.uexpSaveChanges,
               icon: Icons.check,
               onPressed: _save,
             ),
