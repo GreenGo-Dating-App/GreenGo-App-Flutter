@@ -1,0 +1,19 @@
+{
+  "_comment": "sha256 (CRLF->LF normalised) of assets/legal/*. Regenerate ONLY after the legal text change was reviewed: python tools/security/check_legal_manifest.py --update",
+  "files": {
+    "privacy-policy-de.txt": "4c1b236bfe7c71516b994db8be6d167fa57d41f6f96b5329b63c20f25bf1a4b6",
+    "privacy-policy-en.txt": "e4d3a6c3ec6b6de0d0fb82d868d858db270df420117fe54522d6bb004fc6006f",
+    "privacy-policy-es.txt": "dabbdb8ccbdee44bb3da5de2a21385164cb09bd4a8a9a11077c18a8ab9471e10",
+    "privacy-policy-fr.txt": "881cb7fab11ffccfad7f08e420df5570b7103edb1d678f319f8bd80e37f1b203",
+    "privacy-policy-it.txt": "e7777333769b28a5957818d13cd68d9612d24f1cf37898fdb63fee42b95890bf",
+    "privacy-policy-pt.txt": "d82c585273ff2defb149c933facb548f75f895f2f506c0dbba4cb1fb61f76bb8",
+    "privacy-policy-pt_BR.txt": "e1fde40fd2de422c35ca7291dd596ff7f3c95feab576fab1aa3af23726aec5b4",
+    "terms-and-conditions-de.txt": "c61aac562c97a3e73682aa0ea96c4fe5c67492bc7d3017d73ed7ac0c89a2ca00",
+    "terms-and-conditions-en.txt": "6d9cd13ccd7c2b1f90d03530eacd1404aa55cdda511f01e96d79b04a08ca13d1",
+    "terms-and-conditions-es.txt": "1a5dc94cc3e67bbada25fa86867d4669d81476fef72cbf75d944cc1c8ff79e59",
+    "terms-and-conditions-fr.txt": "5afa2cd6214adfbdcc4c49fcfb5420c3c1a85a64d95e8fd7f6332eeb51719008",
+    "terms-and-conditions-it.txt": "539a4ea740b836f82a812dd5a45df7ef643ecae7b3e6e9e5ec632576cef7efa0",
+    "terms-and-conditions-pt.txt": "abde50aa01e527174c51ce3e390a3747af2a04e7c0b21cfd94b29ae14f692aa2",
+    "terms-and-conditions-pt_BR.txt": "06e77aa6ffdd5df396aee98fa0d0ce8ac929ebfd3bb66d8919c270c14b58179a"
+  }
+}

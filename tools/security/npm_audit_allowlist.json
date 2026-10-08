@@ -1,0 +1,17 @@
+{
+  "_comment": "Critical npm advisories (functions/, prod deps) temporarily accepted by tools/security/npm_audit_gate.py. Every entry needs a reason and an expiry (max ~1 month). An expired entry fails CI again. Remove the entry in the same PR that fixes the dependency.",
+  "advisories": {
+    "GHSA-jqcg-44mw-7w3h": {
+      "package": "proxy-addr 2.0.7 (via express 4)",
+      "reason": "Only affects apps that configure Express 'trust proxy' with an IPv4 subnet; functions/src never sets 'trust proxy'. Fix: proxy-addr 2.0.8 is semver-compatible (`npm update proxy-addr` in functions/, lockfile-only).",
+      "added": "2026-10-08",
+      "expires": "2026-10-31"
+    },
+    "GHSA-xv26-6w52-cph6": {
+      "package": "websocket-driver 0.7.4 (via firebase-admin -> @firebase/database -> faye-websocket)",
+      "reason": "Only reachable through the Realtime Database client, which talks to Google's servers; no user-controlled WebSocket peer. Fix: websocket-driver 0.7.5 is semver-compatible (`npm update websocket-driver` in functions/, lockfile-only).",
+      "added": "2026-10-08",
+      "expires": "2026-10-31"
+    }
+  }
+}

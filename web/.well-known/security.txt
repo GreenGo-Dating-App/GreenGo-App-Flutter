@@ -1,0 +1,8 @@
+# GreenGo security contact (RFC 9116).
+# Policy and scope: https://greengochat.com/security
+# Renew before the Expires date (both copies: greengochat.com and greengo-chat.web.app).
+Contact: mailto:info@greengochat.com
+Expires: 2027-10-08T00:00:00.000Z
+Preferred-Languages: en, pt, it
+Policy: https://greengochat.com/security
+Canonical: https://greengo-chat.web.app/.well-known/security.txt

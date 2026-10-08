@@ -1,0 +1,71 @@
+# gitleaks configuration (CI: .github/workflows/security.yml, job "secrets").
+# Docs: https://github.com/gitleaks/gitleaks#configuration  (pinned: gitleaks 8.30.1)
+#
+# We use ALL of gitleaks' default rules and allowlist only values that are
+# public by design or are obvious placeholders/test fixtures. Every allowlist
+# entry is as narrow as possible (exact value or a placeholder-only pattern),
+# so a real key in the same file is still caught. Verified locally: a planted
+# sk_live_ key, an AWS key, a Google service-account private key and a PEM
+# private key all FAIL the scan with this file (see docs/security/ci.md).
+#
+# Before adding an entry: a real secret must be ROTATED, not allowlisted.
+
+title = "GreenGo gitleaks config"
+
+[extend]
+useDefault = true
+
+# 1) Firebase WEB config API key. Public by design: it ships in every web/app
+#    build and only identifies the project; access is enforced by Firestore /
+#    Storage rules, App Check and the key's API + referrer restrictions in GCP.
+#    Exact value only, so any OTHER Google API key (e.g. an unrestricted
+#    server key) is still reported.
+[[allowlists]]
+description = "Public Firebase web config apiKey (web/firebase-messaging-sw.js)"
+regexes = ['''^REMOVED_FIREBASE_WEB_API_KEY$''']
+
+# 2) The firebase-tools CLI's own installed-app OAuth client. Google documents
+#    installed-app client secrets as non-confidential; this pair is embedded in
+#    the public firebase-tools npm package. Used by scripts/*.js to reuse the
+#    developer's `firebase login` refresh token. Exact value only.
+[[allowlists]]
+description = "Public firebase-tools CLI OAuth client secret (scripts/*.js)"
+targetRules = ["generic-api-key"]
+regexes = ['''^REMOVED_OAUTH_CLIENT_SECRET$''']
+
+# 3) Placeholders and test fixtures.
+[[allowlists]]
+description = "Placeholders (sk_live_xxxx..., whsec_xxxx...) and obvious test fixtures"
+regexes = [
+  # Placeholder made only of x's after the prefix, e.g. docs: sk_live_xxxxxxxxxxxxx
+  '''^(?:sk|rk|pk)_(?:live|test|prod)_x+$''',
+  # Emulator-test keys: 'AIzaGEMINI-test-key-0001', 'unsplash-test-key-0003'
+  '''^[A-Za-z]*-?test-key-\d{4}$''',
+  # functions/__tests__/utils/mock-data.ts
+  '''^encrypted-key-123$''',
+  # Versioned local-cache key NAMES (SharedPreferences keys), not secrets:
+  # 'cultural_countries_v1', 'recommendations_v1'
+  '''^[a-z]+(?:_[a-z]+)*_v\d+$''',
+]
+
+# 4) KNOWN FINDING, not a false positive: functions/src/shared/marketingConsent.ts
+#    has a hard-coded fallback HMAC secret for unsubscribe links, used only if
+#    neither UNSUBSCRIBE_SECRET nor RETENTION_SALT is set. It is allowlisted so
+#    the gate can go live; remove this entry when the fallback is removed (the
+#    function should refuse to sign instead). Exact value only.
+[[allowlists]]
+description = "KNOWN: unsubscribe HMAC fallback secret - remove when fixed"
+targetRules = ["generic-api-key"]
+paths = ['''^functions/src/shared/marketingConsent\.ts$''']
+regexes = ['''^REMOVED-SECRET$''']
+condition = "AND"
+
+# 5) Never scan build output, dependencies or generated platform files.
+[[allowlists]]
+description = "Build output and dependencies"
+paths = [
+  '''(?:^|/)node_modules/''',
+  '''^build/''',
+  '''(?:^|/)\.dart_tool/''',
+  '''^functions/lib/''',
+]
