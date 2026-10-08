@@ -16552,4 +16552,83 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get moderationReasonOther =>
       'Altra violazione delle Linee guida della community';
+
+  @override
+  String get checkoutConsentTitle => 'Prima di pagare';
+
+  @override
+  String get checkoutCoinWaiverCheckbox =>
+      'Accetto che le monete vengano consegnate immediatamente e riconosco di perdere il diritto di recesso una volta iniziata la consegna.';
+
+  @override
+  String get checkoutMembershipWithdrawalInfo =>
+      'Diritto di recesso: puoi recedere da questo abbonamento entro 14 giorni dall\'acquisto (7 giorni per gli acquisti effettuati in Brasile) senza indicarne il motivo e ricevere il rimborso completo, tramite «Recedi dal contratto» nello Shop o sul nostro sito. L\'abbonamento si rinnova automaticamente finché non lo annulli; puoi annullarlo in qualsiasi momento nel portale di fatturazione.';
+
+  @override
+  String get checkoutContinueToPayment => 'Continua al pagamento';
+
+  @override
+  String get withdrawFromContract => 'Recedi dal contratto';
+
+  @override
+  String get withdrawalDialogIntro =>
+      'Scegli l\'acquisto da cui vuoi recedere. Invieremo un link di conferma all\'indirizzo usato per l\'acquisto; nulla viene annullato o rimborsato finché non confermi.';
+
+  @override
+  String get withdrawalNothingEligible =>
+      'Nessuno dei tuoi acquisti web consente il recesso in questo momento. Gli abbonamenti consentono il recesso entro 14 giorni dall\'acquisto (7 giorni in Brasile); gli acquisti di monete solo se al pagamento non si è rinunciato al diritto.';
+
+  @override
+  String withdrawalDeadline(String date) {
+    return 'Recedi entro il $date';
+  }
+
+  @override
+  String get withdrawalRequestSent =>
+      'Controlla la tua email e conferma il recesso con il link che ti abbiamo inviato.';
+
+  @override
+  String get withdrawalRequestFailed =>
+      'Impossibile inviare la richiesta di recesso. Riprova o scrivi a support@greengochat.com.';
+
+  @override
+  String webSubscriptionRenewsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price ogni $interval. Si rinnova automaticamente il $date.';
+  }
+
+  @override
+  String webSubscriptionEndsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price ogni $interval. Annullato; accesso fino al $date.';
+  }
+
+  @override
+  String get billingIntervalMonth => 'mese';
+
+  @override
+  String get billingIntervalYear => 'anno';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Annulla in qualsiasi momento nel portale di fatturazione';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'Impossibile aprire il portale di fatturazione. Riprova.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Gli abbonamenti si rinnovano automaticamente al prezzo e con la cadenza indicati finché non li annulli. Annulla in qualsiasi momento nel portale di fatturazione.';
+
+  @override
+  String get webBillingTitle => 'Fatturazione e recesso';
 }

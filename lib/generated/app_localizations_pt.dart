@@ -16534,6 +16534,85 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get moderationReasonOther =>
       'Outra violação das Diretrizes da Comunidade';
+
+  @override
+  String get checkoutConsentTitle => 'Antes de pagar';
+
+  @override
+  String get checkoutCoinWaiverCheckbox =>
+      'Concordo que as moedas sejam entregues imediatamente e reconheço que perco o meu direito de livre resolução assim que a entrega começar.';
+
+  @override
+  String get checkoutMembershipWithdrawalInfo =>
+      'Direito de livre resolução: pode desistir desta subscrição no prazo de 14 dias após a compra (7 dias para compras feitas no Brasil), sem indicar o motivo, e receber o reembolso total, através de «Desistir do contrato» na Loja ou no nosso site. A subscrição renova-se automaticamente até a cancelar; pode cancelar a qualquer momento no portal de faturação.';
+
+  @override
+  String get checkoutContinueToPayment => 'Continuar para o pagamento';
+
+  @override
+  String get withdrawFromContract => 'Desistir do contrato';
+
+  @override
+  String get withdrawalDialogIntro =>
+      'Escolha a compra da qual quer desistir. Enviaremos um link de confirmação para o email usado na compra; nada é cancelado ou reembolsado até confirmar.';
+
+  @override
+  String get withdrawalNothingEligible =>
+      'Nenhuma das suas compras web permite desistência neste momento. As subscrições permitem desistência no prazo de 14 dias após a compra (7 dias no Brasil); as compras de moedas apenas se o direito não tiver sido renunciado no pagamento.';
+
+  @override
+  String withdrawalDeadline(String date) {
+    return 'Desista até $date';
+  }
+
+  @override
+  String get withdrawalRequestSent =>
+      'Verifique o seu email e confirme a desistência com o link que enviámos.';
+
+  @override
+  String get withdrawalRequestFailed =>
+      'Não foi possível enviar o pedido de desistência. Tente novamente ou escreva para support@greengochat.com.';
+
+  @override
+  String webSubscriptionRenewsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price por $interval. Renova-se automaticamente a $date.';
+  }
+
+  @override
+  String webSubscriptionEndsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price por $interval. Cancelada; o acesso termina a $date.';
+  }
+
+  @override
+  String get billingIntervalMonth => 'mês';
+
+  @override
+  String get billingIntervalYear => 'ano';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Cancele a qualquer momento no portal de faturação';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'Não foi possível abrir o portal de faturação. Tente novamente.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'As subscrições renovam-se automaticamente ao preço e com a periodicidade indicados até as cancelar. Cancele a qualquer momento no portal de faturação.';
+
+  @override
+  String get webBillingTitle => 'Faturação e desistência';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -33069,4 +33148,83 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get moderationReasonOther =>
       'Outra violação das Diretrizes da Comunidade';
+
+  @override
+  String get checkoutConsentTitle => 'Antes de pagar';
+
+  @override
+  String get checkoutCoinWaiverCheckbox =>
+      'Concordo que as moedas sejam entregues imediatamente e reconheço que perco meu direito de arrependimento assim que a entrega começar.';
+
+  @override
+  String get checkoutMembershipWithdrawalInfo =>
+      'Direito de arrependimento: você pode desistir desta assinatura em até 7 dias após a compra no Brasil (14 dias para compras na União Europeia), sem precisar justificar, e receber o reembolso integral, usando \"Desistir do contrato\" na Loja ou no nosso site. A assinatura é renovada automaticamente até você cancelar; você pode cancelar a qualquer momento no portal de cobrança.';
+
+  @override
+  String get checkoutContinueToPayment => 'Continuar para o pagamento';
+
+  @override
+  String get withdrawFromContract => 'Desistir do contrato';
+
+  @override
+  String get withdrawalDialogIntro =>
+      'Escolha a compra da qual deseja desistir. Enviaremos um link de confirmação para o e-mail usado na compra; nada é cancelado ou reembolsado até você confirmar.';
+
+  @override
+  String get withdrawalNothingEligible =>
+      'Nenhuma das suas compras na web pode ser desistida agora. Assinaturas podem ser desistidas em até 7 dias após a compra no Brasil (14 dias na União Europeia); compras de moedas somente se o direito não foi renunciado no pagamento.';
+
+  @override
+  String withdrawalDeadline(String date) {
+    return 'Desista até $date';
+  }
+
+  @override
+  String get withdrawalRequestSent =>
+      'Confira seu e-mail e confirme a desistência pelo link que enviamos.';
+
+  @override
+  String get withdrawalRequestFailed =>
+      'Não foi possível enviar o pedido de desistência. Tente novamente ou escreva para support@greengochat.com.';
+
+  @override
+  String webSubscriptionRenewsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price por $interval. Renovação automática em $date.';
+  }
+
+  @override
+  String webSubscriptionEndsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price por $interval. Cancelada; o acesso termina em $date.';
+  }
+
+  @override
+  String get billingIntervalMonth => 'mês';
+
+  @override
+  String get billingIntervalYear => 'ano';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Cancele a qualquer momento no portal de cobrança';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'Não foi possível abrir o portal de cobrança. Tente novamente.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'As assinaturas são renovadas automaticamente pelo preço e na periodicidade exibidos até você cancelar. Cancele a qualquer momento no portal de cobrança.';
+
+  @override
+  String get webBillingTitle => 'Cobrança e desistência';
 }

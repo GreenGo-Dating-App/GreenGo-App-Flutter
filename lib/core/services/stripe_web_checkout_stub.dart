@@ -1,3 +1,6 @@
+import '../constants/purchase_consent.dart';
+import 'stripe_billing_models.dart';
+
 /// Mobile (iOS / Android) implementation of [StripeWebCheckout] — deliberately
 /// inert.
 ///
@@ -28,7 +31,10 @@ class StripeWebCheckout {
 
   /// No-op on mobile. Returns null so any caller that slips past a `kIsWeb`
   /// guard fails closed instead of opening an external payment page.
-  static Future<String?> startCheckout(String productId) async {
+  static Future<String?> startCheckout(
+    String productId, {
+    CheckoutConsent consent = const CheckoutConsent(),
+  }) async {
     assert(
       false,
       'StripeWebCheckout.startCheckout called on a mobile build. Digital goods '
@@ -47,4 +53,15 @@ class StripeWebCheckout {
     Duration timeout = const Duration(minutes: 6),
   }) async =>
       false;
+
+  /// No-op on mobile (store subscriptions are managed in the store).
+  static Future<WebBillingSummary> billingSummary() async =>
+      WebBillingSummary.empty;
+
+  /// No-op on mobile.
+  static Future<bool> openBillingPortal() async => false;
+
+  /// No-op on mobile (store purchases are refunded by Apple / Google).
+  static Future<String> requestWithdrawal(String orderId) async =>
+      'unsupported';
 }

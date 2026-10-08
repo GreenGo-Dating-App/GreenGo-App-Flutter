@@ -16372,4 +16372,83 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get moderationReasonOther =>
       'Other breach of our Community Guidelines';
+
+  @override
+  String get checkoutConsentTitle => 'Before you pay';
+
+  @override
+  String get checkoutCoinWaiverCheckbox =>
+      'I agree that the coins are delivered immediately and I acknowledge that I lose my right of withdrawal once delivery starts.';
+
+  @override
+  String get checkoutMembershipWithdrawalInfo =>
+      'Right of withdrawal: you can withdraw from this membership within 14 days of purchase (7 days for purchases in Brazil) without giving a reason and receive a full refund, using \"Withdraw from contract\" in the Shop or on our website. The membership renews automatically until you cancel; you can cancel anytime in the billing portal.';
+
+  @override
+  String get checkoutContinueToPayment => 'Continue to payment';
+
+  @override
+  String get withdrawFromContract => 'Withdraw from contract';
+
+  @override
+  String get withdrawalDialogIntro =>
+      'Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm.';
+
+  @override
+  String get withdrawalNothingEligible =>
+      'None of your web purchases can be withdrawn from right now. Memberships can be withdrawn within 14 days of purchase (7 days in Brazil); coin purchases only if the right was not waived at checkout.';
+
+  @override
+  String withdrawalDeadline(String date) {
+    return 'Withdraw by $date';
+  }
+
+  @override
+  String get withdrawalRequestSent =>
+      'Check your email and confirm the withdrawal with the link we sent.';
+
+  @override
+  String get withdrawalRequestFailed =>
+      'The withdrawal request could not be sent. Please try again or email support@greengochat.com.';
+
+  @override
+  String webSubscriptionRenewsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price per $interval. Renews automatically on $date.';
+  }
+
+  @override
+  String webSubscriptionEndsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
+    return '$plan: $price per $interval. Cancelled; access ends on $date.';
+  }
+
+  @override
+  String get billingIntervalMonth => 'month';
+
+  @override
+  String get billingIntervalYear => 'year';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Cancel anytime in the billing portal';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'Could not open the billing portal. Please try again.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.';
+
+  @override
+  String get webBillingTitle => 'Billing and withdrawal';
 }

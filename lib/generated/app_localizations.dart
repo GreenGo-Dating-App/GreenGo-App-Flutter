@@ -28826,6 +28826,124 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Other breach of our Community Guidelines'**
   String get moderationReasonOther;
+
+  /// No description provided for @checkoutConsentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Before you pay'**
+  String get checkoutConsentTitle;
+
+  /// EU CRD art. 16(m) immediate-delivery waiver checkbox. Legal wording: change only with counsel and bump kCoinWaiverVersion / COIN_WAIVER_VERSION.
+  ///
+  /// In en, this message translates to:
+  /// **'I agree that the coins are delivered immediately and I acknowledge that I lose my right of withdrawal once delivery starts.'**
+  String get checkoutCoinWaiverCheckbox;
+
+  /// No description provided for @checkoutMembershipWithdrawalInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Right of withdrawal: you can withdraw from this membership within 14 days of purchase (7 days for purchases in Brazil) without giving a reason and receive a full refund, using \"Withdraw from contract\" in the Shop or on our website. The membership renews automatically until you cancel; you can cancel anytime in the billing portal.'**
+  String get checkoutMembershipWithdrawalInfo;
+
+  /// No description provided for @checkoutContinueToPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue to payment'**
+  String get checkoutContinueToPayment;
+
+  /// No description provided for @withdrawFromContract.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw from contract'**
+  String get withdrawFromContract;
+
+  /// No description provided for @withdrawalDialogIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm.'**
+  String get withdrawalDialogIntro;
+
+  /// No description provided for @withdrawalNothingEligible.
+  ///
+  /// In en, this message translates to:
+  /// **'None of your web purchases can be withdrawn from right now. Memberships can be withdrawn within 14 days of purchase (7 days in Brazil); coin purchases only if the right was not waived at checkout.'**
+  String get withdrawalNothingEligible;
+
+  /// Deadline to withdraw from a web purchase
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw by {date}'**
+  String withdrawalDeadline(String date);
+
+  /// No description provided for @withdrawalRequestSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your email and confirm the withdrawal with the link we sent.'**
+  String get withdrawalRequestSent;
+
+  /// No description provided for @withdrawalRequestFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The withdrawal request could not be sent. Please try again or email support@greengochat.com.'**
+  String get withdrawalRequestFailed;
+
+  /// Web (Stripe) auto-renew disclosure for an active subscription
+  ///
+  /// In en, this message translates to:
+  /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
+  String webSubscriptionRenewsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
+
+  /// Web (Stripe) subscription cancelled at period end
+  ///
+  /// In en, this message translates to:
+  /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
+  String webSubscriptionEndsOn(
+    String plan,
+    String price,
+    String interval,
+    String date,
+  );
+
+  /// No description provided for @billingIntervalMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'month'**
+  String get billingIntervalMonth;
+
+  /// No description provided for @billingIntervalYear.
+  ///
+  /// In en, this message translates to:
+  /// **'year'**
+  String get billingIntervalYear;
+
+  /// No description provided for @cancelAnytimeBillingPortal.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel anytime in the billing portal'**
+  String get cancelAnytimeBillingPortal;
+
+  /// No description provided for @billingPortalOpenFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the billing portal. Please try again.'**
+  String get billingPortalOpenFailed;
+
+  /// No description provided for @subscriptionAutoRenewInfoWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.'**
+  String get subscriptionAutoRenewInfoWeb;
+
+  /// No description provided for @webBillingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Billing and withdrawal'**
+  String get webBillingTitle;
 }
 
 class _AppLocalizationsDelegate

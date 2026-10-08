@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
 import '../../features/legal/presentation/screens/legal_document_screen.dart';
@@ -83,7 +84,9 @@ class SubscriptionLegalFooter extends StatelessWidget {
           const SizedBox(height: 6),
         ],
         Text(
-          l10n.subscriptionAutoRenewInfo,
+          // Web subscriptions are Stripe's, not a store's: say where to
+          // cancel (the billing portal, see WebBillingPanel). Audit L-11.
+          kIsWeb ? l10n.subscriptionAutoRenewInfoWeb : l10n.subscriptionAutoRenewInfo,
           textAlign: TextAlign.center,
           style: TextStyle(
             color: AppColors.textTertiary.withValues(alpha: 0.8),
