@@ -9,18 +9,9 @@ import '../../support/arb_loader.dart';
 /// fails if any NEW untranslated key appears, so the gap can only shrink.
 void main() {
   /// Keys present in en but intentionally not yet translated in the other
-  /// locales (recently-added storefront/event strings). Reported by the QA
-  /// batch; remove entries here as translations land.
-  const knownUntranslated = <String>{
-    'eventScanUseMobileApp',
-    'storefrontFeaturedImage',
-    'storefrontFeaturedImageSubtitle',
-    'storefrontAddFeaturedImage',
-    'storefrontProfileImage',
-    'storefrontProfileImageSubtitle',
-    'storefrontAddProfileImage',
-    'storefrontReplaceProfileImage',
-  };
+  /// locales. Empty since the i18n sweep (Oct 2026): every key ships in all
+  /// 7 locales. Add an entry here only as a short-lived, documented exception.
+  const knownUntranslated = <String>{};
 
   final en = loadArb(kBaseLocale);
   final enKeys = translationKeys(en);
