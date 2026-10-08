@@ -15,6 +15,7 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -1756,7 +1757,11 @@ class _ChatScreenState extends State<ChatScreen> {
             // Phrase of the Day banner
             if (_showPhraseOfDaySetting) _buildPhraseOfDay(),
             // Chat XP bar
-            if (_showXpBar && _sessionXp > 0) _buildXpBar(),
+            // Hidden: gamification is not shown in Exchanges (owner decision).
+            if (AppConfig.showGamificationInExchanges &&
+                _showXpBar &&
+                _sessionXp > 0)
+              _buildXpBar(),
             // Messages list
             Expanded(
               child: BlocBuilder<ChatBloc, ChatState>(
@@ -2623,6 +2628,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 value: _ttsReadTranslated,
                 onChanged: (v) => setState(() => _ttsReadTranslated = v),
               ),
+              if (AppConfig.showGamificationInExchanges)
               _buildSettingToggle(
                 setSheetState,
                 icon: Icons.local_fire_department,
