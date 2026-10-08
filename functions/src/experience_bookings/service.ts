@@ -21,6 +21,8 @@ import '../shared/firebaseAdmin';
 import { tierDateFromValue } from '../shared/effectiveTier';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
 import { recordMeeting } from '../checkin/meetings';
+import { requestOrderRefund } from '../ticket_payments/orders';
+import { SLOT_COUNTERS, counterId as slotCounterId, generateSlots, rulesError, AvailabilityRules } from './availability';
 import {
   ACTIVE_STATUSES,
   BOOKINGS,
@@ -337,8 +339,11 @@ export async function transition(
     if (plan.to && !canTransition(b.status, plan.to)) {
       fail('failed-precondition', 'invalid_transition', { from: b.status, to: plan.to });
     }
-    const release = plan.to ? seatsReleased(b.status, plan.to, Number(b.guests) || 0) : 0;
-    const slotRef = db.collection(EXPERIENCES).doc(b.experienceId).collection(SLOTS).doc(b.slotId);
+    const guestsHeld = b.pricingMode === 'per_group' ? 1 : (Number(b.guests) || 0);
+    const release = plan.to ? seatsReleased(b.status, plan.to, guestsHeld) : 0;
+    const slotRef = b.counterId
+      ? db.collection(SLOT_COUNTERS).doc(String(b.counterId))
+      : db.collection(EXPERIENCES).doc(b.experienceId).collection(SLOTS).doc(b.slotId);
     const statsRef = db.collection(HOST_CANCEL_STATS).doc(b.hostId);
     // All reads before any write.
     const slotSnap = release > 0 ? await tx.get(slotRef) : null;
@@ -347,8 +352,9 @@ export async function transition(
     const after = { ...b, ...(plan.patch || {}), ...(plan.to ? { status: plan.to } : {}), updatedAt: ts(now) };
     tx.update(ref, { ...(plan.patch || {}), ...(plan.to ? { status: plan.to } : {}), updatedAt: ts(now) });
     if (slotSnap?.exists) {
-      const booked = Number(slotSnap.data()?.bookedCount) || 0;
-      tx.update(slotRef, { bookedCount: Math.max(0, booked - release), updatedAt: ts(now) });
+      const field = b.counterId ? 'booked' : 'bookedCount';
+      const booked = Number(slotSnap.data()?.[field]) || 0;
+      tx.update(slotRef, { [field]: Math.max(0, booked - release), updatedAt: ts(now) });
     }
     let hostFlagged = false;
     if (statsSnap) {
@@ -473,8 +479,14 @@ export async function getSlotAvailability(uid: string, data: any): Promise<Recor
 }
 
 export async function createBooking(uid: string, data: any): Promise<Record<string, unknown>> {
-  const { experienceId, slotId, guests, requestId } = data || {};
+  const { experienceId, guests, requestId } = data || {};
   const requestedStart = requestedStartOf(data?.startAt);
+  // Recurring availability (availability.ts): slotId 'recurring' + startAt.
+  // The booking's slotId becomes r_{startMs} and seats live in
+  // experience_slot_counters/{experienceId}_{startMs} (created lazily).
+  const recurring = data?.slotId === 'recurring';
+  if (recurring && requestedStart === null) fail('invalid-argument', 'invalid_start');
+  const slotId: string = recurring ? `r_${requestedStart}` : data?.slotId;
   if (!isDocId(experienceId)) fail('invalid-argument', 'invalid_experience_id');
   if (!isDocId(slotId)) fail('invalid-argument', 'invalid_slot_id');
   if (!isRequestId(requestId)) fail('invalid-argument', 'invalid_request_id');
@@ -501,7 +513,9 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
   const bookingId = bookingIdFor(uid, requestId);
   const bookingRef = db.collection(BOOKINGS).doc(bookingId);
   const expRef = db.collection(EXPERIENCES).doc(experienceId);
-  const slotRef = expRef.collection(SLOTS).doc(slotId);
+  const slotRef = recurring
+    ? db.collection(SLOT_COUNTERS).doc(slotCounterId(experienceId, requestedStart as number))
+    : expRef.collection(SLOTS).doc(slotId);
 
   // Retry of a booking that already exists: answer without re-validating.
   const prior = await bookingRef.get();
@@ -573,7 +587,19 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       if (mode === 'online') provider = onlineProviderOf(e);
     }
 
-    const s = slot.data() as Record<string, any> | undefined;
+    let s = slot.data() as Record<string, any> | undefined;
+    let recurringCap = 0;
+    if (recurring) {
+      // The time must be one the host's rules generate right now.
+      const rules = e.availabilityRules as AvailabilityRules | undefined;
+      if (!rules || rulesError(rules)) fail('not-found', 'slot_not_found');
+      const at = requestedStart as number;
+      const gen = generateSlots(rules, e.availabilityOverrides, at - 60000, at + 60000, now);
+      const g = gen.find((x) => x.startMs === at);
+      if (!g) fail('failed-precondition', 'slot_closed');
+      recurringCap = rules.capacityPerSlot;
+      s = { status: 'open', start: ts(g.startMs), end: ts(g.endMs), bookedCount: Number(s?.booked) || 0 };
+    }
     if (!s) fail('not-found', 'slot_not_found');
     if (s.status !== 'open') fail('failed-precondition', 'slot_closed');
     const windowStart = msOf(s.start);
@@ -588,9 +614,14 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     // duration, never overlapping any active booking of this host.
     const lengthMs = bookingLengthMs(e.durationMinutes, windowStart, windowEnd);
     const busySnap = await tx.get(hostBookingsQuery(hostId, windowStart, windowEnd));
+    // A recurring slot is shared by its capacity: only OTHER bookings of the
+    // host (other experiences / times) make it busy.
+    const busyDocs = recurring
+      ? busySnap.docs.filter((d) => !(d.data().experienceId === experienceId && d.data().slotId === slotId))
+      : busySnap.docs;
     const picked = chooseStart(
       requestedStart, windowStarts(windowStart, windowEnd, lengthMs), lengthMs,
-      busyFrom(busySnap.docs), now,
+      busyFrom(busyDocs), now,
     );
     if (picked.ok === false) {
       fail(picked.reason === 'time_taken' ? 'resource-exhausted' : 'failed-precondition', picked.reason);
@@ -607,6 +638,10 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     // bookedCount is informational now (people booked in this window); the
     // party size is bounded by maxGroupSize / maxGuestsPerBooking above.
     const booked = Number(s.bookedCount) || 0;
+    const seatsTaken = pricingModeOf(e) === 'per_group' ? 1 : guests;
+    if (recurring && booked + seatsTaken > recurringCap) {
+      fail('resource-exhausted', 'slot_full', { seatsLeft: Math.max(0, recurringCap - booked) });
+    }
 
     // Request to book is mandatory: the host accepts or declines every booking.
     const requested = true;
@@ -622,6 +657,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       experienceTitle: typeof e.title === 'string' ? e.title.slice(0, 120) : null,
       slotStart: ts(start),
       slotEnd: ts(end),
+      ...(recurring ? { counterId: slotCounterId(experienceId, start) } : {}),
       price: (pricedAt as { ok: true; price: any }).price,
       priceRule: priced.free ? 'base' : dated.rule,
       pricingMode: pricingModeOf(e),
@@ -653,7 +689,14 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     };
     tx.set(bookingRef, booking);
     // per_group slots count GROUPS, per_person slots count people.
-    tx.update(slotRef, { bookedCount: booked + (pricingModeOf(e) === 'per_group' ? 1 : guests), updatedAt: ts(now) });
+    if (recurring) {
+      tx.set(slotRef, {
+        experienceId, startMs: start, endMs: end, capacity: recurringCap,
+        booked: booked + seatsTaken, updatedAt: ts(now),
+      }, { merge: true });
+    } else {
+      tx.update(slotRef, { bookedCount: booked + seatsTaken, updatedAt: ts(now) });
+    }
     tx.set(lockRef, { lastBookingId: bookingId, updatedAt: ts(now) }, { merge: true });
     return { created: true, booking };
   });
@@ -897,6 +940,52 @@ export async function checkInBooking(uid: string, data: any): Promise<Record<str
     guestName,
     guestPhotoUrl,
   };
+}
+
+/**
+ * Host removed bookable times (updateExperienceAvailability with confirm):
+ * every active booking at those starts is cancelled by the host (100 %
+ * refund owed, no host penalty: it was announced through the schedule),
+ * the guest is notified, and in-app payments are refunded / marked owed.
+ */
+export async function cancelBookingsAtRemovedTimes(hostId: string, experienceId: string, startsMs: number[]): Promise<number> {
+  const cfg = await loadConfig();
+  let n = 0;
+  for (const start of startsMs.slice(0, 200)) {
+    const q = await fdb().collection(BOOKINGS)
+      .where('experienceId', '==', experienceId)
+      .where('slotStart', '==', ts(start))
+      .limit(100)
+      .get();
+    for (const d of q.docs) {
+      const b0 = d.data();
+      if (b0.hostId !== hostId || (b0.status !== 'requested' && b0.status !== 'confirmed')) continue;
+      const r = await transition(d.id, (b, now) => {
+        if (b.status !== 'requested' && b.status !== 'confirmed') return { noop: true };
+        const due = b.status === 'confirmed'
+          ? refundDueFor(b.price, b.payment, 100, 'host_removed_time')
+          : null;
+        return {
+          to: 'cancelled_by_host',
+          patch: {
+            cancellation: { by: 'host', at: ts(now), reason: 'host_removed_time' },
+            refundDue: due ? { ...due, decidedAt: ts(now) } : null,
+            reminderAt: del(), completeAt: del(), requestExpiresAt: del(),
+          },
+        };
+      }, cfg);
+      if (r.noop) continue;
+      n++;
+      const orderId = r.after.payment?.orderId;
+      if (orderId) await requestOrderRefund(String(orderId), 'host_removed_time').catch(() => undefined);
+      await safeNotify({
+        recipientId: r.after.guestId, type: 'booking_cancelled', title: 'Your booking was cancelled by the host',
+        body: `${title(r.after)} — the time is no longer available. Any payment is refunded.`,
+        data: notifData(d.id, r.after),
+      });
+    }
+  }
+  return n;
 }
 
 /** Door: a paid ticket (verified by checkin/eventCheckin.checkInPaidTicket). */

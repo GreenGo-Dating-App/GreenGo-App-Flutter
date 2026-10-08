@@ -384,8 +384,11 @@ export function pricingModeOf(e: Record<string, unknown>): 'per_person' | 'per_g
 
 /** IANA zone of the host's listing (availability.timezone / timeZone), else UTC. */
 export function listingTimeZone(e: Record<string, unknown>): string {
+  const r = e.availabilityRules as Record<string, unknown> | undefined;
   const a = e.availability as Record<string, unknown> | undefined;
-  const tz = (a && typeof a.timezone === 'string' ? a.timezone : null) ?? (typeof e.timeZone === 'string' ? e.timeZone : null);
+  const tz = (r && typeof r.timezone === 'string' ? r.timezone : null)
+    ?? (a && typeof a === 'object' && typeof a.timezone === 'string' ? a.timezone : null)
+    ?? (typeof e.timeZone === 'string' ? e.timeZone : null);
   try {
     if (tz) { new Intl.DateTimeFormat('en-US', { timeZone: tz }); return tz; }
   } catch { /* invalid zone */ }
@@ -417,7 +420,9 @@ export function resolveDatePrice(e: Record<string, unknown>, startMs: number | n
   const baseNum = typeof base === 'number' && Number.isFinite(base) ? base : null;
   if (startMs === null) return { value: baseNum, rule: 'base' };
   const { date, weekday } = localDay(startMs, listingTimeZone(e));
-  const overrides = (e.dayOverrides ?? (e.availability as any)?.dayOverrides) as Record<string, any> | undefined;
+  const overrides = (e.dayOverrides
+    ?? (e.availabilityOverrides as any)?.dayOverrides
+    ?? (e.availability as any)?.dayOverrides) as Record<string, any> | undefined;
   const o = overrides && typeof overrides === 'object' ? overrides[date] : undefined;
   if (o && typeof o.priceOverride === 'number' && o.priceOverride > 0) return { value: o.priceOverride, rule: 'day' };
   const wdays = Array.isArray(e.weekendDays) && e.weekendDays.length

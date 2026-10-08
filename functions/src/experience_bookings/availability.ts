@@ -27,6 +27,7 @@
 import * as admin from 'firebase-admin';
 import { HttpsError } from 'firebase-functions/v2/https';
 import '../shared/firebaseAdmin';
+import { computeBookingPrice, pricingModeOf, resolveDatePrice } from './model';
 
 export const SLOT_COUNTERS = 'experience_slot_counters';
 export const MAX_RANGE_DAYS = 62;
@@ -212,6 +213,16 @@ export function rulesError(r: any): string | null {
   return null;
 }
 
+function cleanOverride(v: DayOverride): DayOverride {
+  const out: DayOverride = {};
+  if (v.closed === true) out.closed = true;
+  if (typeof v.windowStart === 'string' && minutesOf(v.windowStart) !== null) out.windowStart = v.windowStart;
+  if (typeof v.windowEnd === 'string' && minutesOf(v.windowEnd) !== null) out.windowEnd = v.windowEnd;
+  if (Array.isArray(v.slots)) out.slots = v.slots.filter((t) => typeof t === 'string' && minutesOf(t) !== null).slice(0, 48);
+  if (typeof v.priceOverride === 'number' && Number.isFinite(v.priceOverride) && v.priceOverride > 0) out.priceOverride = v.priceOverride;
+  return out;
+}
+
 // ─────────────────────────────────────────────────────────── callables
 
 function fail(code: ConstructorParameters<typeof HttpsError>[0], reason: string, extra: Record<string, unknown> = {}): never {
@@ -245,14 +256,22 @@ export async function getExperienceAvailability(_uid: string, data: any, nowMs =
     const snaps = await db().getAll(...chunk);
     for (const s of snaps) if (s.exists) counters.set(s.id, s.data()!);
   }
+  const perGroup = pricingModeOf(e) === 'per_group';
   return {
     timezone: rules.timezone,
+    pricingMode: perGroup ? 'per_group' : 'per_person',
+    capacityPerSlot: rules.capacityPerSlot,
     slots: slots.map((s) => {
       const c = counters.get(counterId(id, s.startMs));
       const used = (Number(c?.booked) || 0) + (Number(c?.held) || 0);
+      // Price of ONE unit (person, or the group) on that date (server rules).
+      const p = e.isFree === true ? null : computeBookingPrice(e, 1, s.startMs);
       return {
         key: s.key, start: new Date(s.startMs).toISOString(), end: new Date(s.endMs).toISOString(),
         date: s.date, time: s.time, remaining: Math.max(0, rules.capacityPerSlot - used),
+        unitAmount: p && p.ok ? p.price.unitAmount : 0,
+        currency: p && p.ok ? p.price.currency : null,
+        priceRule: e.isFree === true ? 'base' : resolveDatePrice(e, s.startMs).rule,
       };
     }).filter((s) => s.remaining > 0),
   };
@@ -278,7 +297,8 @@ export async function updateExperienceAvailability(uid: string, data: any, nowMs
   const today = new Date(nowMs).toISOString().slice(0, 10);
   const pruned: AvailabilityOverrides = {
     dayOverrides: Object.fromEntries(Object.entries(ov.dayOverrides ?? {})
-      .filter(([d, v]) => DATE.test(d) && d >= today && v && typeof v === 'object')),
+      .filter(([d, v]) => DATE.test(d) && d >= today && v && typeof v === 'object')
+      .map(([d, v]) => [d, cleanOverride(v as DayOverride)])),
     removedSlots: (ov.removedSlots ?? []).filter((k) => k.slice(0, 10) >= today).slice(0, 2000),
     addedSlots: (ov.addedSlots ?? []).filter((k) => k.slice(0, 10) >= today).slice(0, 2000),
   };
@@ -291,13 +311,14 @@ export async function updateExperienceAvailability(uid: string, data: any, nowMs
     const c = d.data();
     return ((Number(c.booked) || 0) + (Number(c.held) || 0)) > 0 && !keep.has(Number(c.startMs));
   });
+  const affectedStarts = affected.map((d) => Number(d.data().startMs));
   if (affected.length && data?.confirm !== true) {
-    return { needsConfirm: true, affected: affected.length };
+    return { needsConfirm: true, affected: affected.length, affectedStarts };
   }
   await ref.update({ availabilityRules: rules, availabilityOverrides: pruned, updatedAt: admin.firestore.Timestamp.fromMillis(nowMs) });
   // Affected bookings: flagged for the cancel + refund flow (see docs).
   const batch = db().batch();
   for (const d of affected) batch.set(d.ref, { removedByHostAt: admin.firestore.Timestamp.fromMillis(nowMs) }, { merge: true });
   if (affected.length) await batch.commit();
-  return { needsConfirm: false, affected: affected.length };
+  return { needsConfirm: false, affected: affected.length, affectedStarts };
 }

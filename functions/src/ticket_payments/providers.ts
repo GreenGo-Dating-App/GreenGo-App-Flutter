@@ -100,6 +100,16 @@ async function stripeSession(accountId: string, i: CheckoutInput, types: string[
   return { id: s.id, url: s.url };
 }
 
+/** Full refund of a direct charge, ON the connected account (idempotent per order). */
+export async function stripeRefund(accountId: string, paymentIntentId: string, orderId: string): Promise<string> {
+  const r = await ticketDeps.stripe().refunds.create({
+    payment_intent: paymentIntentId,
+    reason: 'requested_by_customer',
+    metadata: { orderId, greengo: 'ticket' },
+  }, { stripeAccount: accountId, idempotencyKey: `gg_refund_${orderId}` });
+  return r.id;
+}
+
 export async function stripeRetrieveSession(accountId: string, sessionId: string): Promise<Stripe.Checkout.Session> {
   return ticketDeps.stripe().checkout.sessions.retrieve(sessionId, {}, { stripeAccount: accountId });
 }
@@ -230,6 +240,18 @@ function mpPaymentFrom(p: any): MpPayment {
 export async function mpGetPayment(token: string, paymentId: string): Promise<MpPayment> {
   if (!/^[0-9]{1,30}$/.test(paymentId)) throw new ProviderError('mp_bad_payment_id');
   return mpPaymentFrom(await mpJson(`/v1/payments/${paymentId}`, { method: 'GET', token }));
+}
+
+/** Full refund through the organizer's token (idempotent per order). */
+export async function mpRefund(token: string, paymentId: string, orderId: string): Promise<string> {
+  if (!/^[0-9]{1,30}$/.test(paymentId)) throw new ProviderError('mp_bad_payment_id');
+  const r = await mpJson(`/v1/payments/${paymentId}/refunds`, {
+    method: 'POST',
+    token,
+    body: JSON.stringify({}),
+    headers: { 'X-Idempotency-Key': `gg_refund_${orderId}` } as any,
+  });
+  return String(r?.id ?? '');
 }
 
 export async function mpSearchPayments(token: string, orderId: string): Promise<MpPayment[]> {

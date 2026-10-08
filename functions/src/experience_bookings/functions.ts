@@ -57,7 +57,14 @@ export const openBookingDispute = callable(svc.openBookingDispute);
 export const resolveBookingDispute = callable(svc.resolveBookingDispute);
 // Recurring host schedule, computed on the fly (availability.ts).
 export const getExperienceAvailability = callable((uid, data) => availability.getExperienceAvailability(uid, data));
-export const updateExperienceAvailability = callable((uid, data) => availability.updateExperienceAvailability(uid, data));
+export const updateExperienceAvailability = callable(async (uid, data) => {
+  const r = await availability.updateExperienceAvailability(uid, data);
+  // Confirmed change that removed booked times: cancel + notify + refund.
+  if (!r.needsConfirm && Array.isArray(r.affectedStarts) && r.affectedStarts.length) {
+    r.cancelledBookings = await svc.cancelBookingsAtRemovedTimes(uid, String(data.experienceId), r.affectedStarts as number[]);
+  }
+  return r;
+});
 
 // Schedules
 export const sendBookingReminders = onSchedule(

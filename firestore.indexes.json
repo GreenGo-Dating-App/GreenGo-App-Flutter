@@ -3311,6 +3311,20 @@
           "order": "ASCENDING"
         }
       ]
+    },
+    {
+      "collectionGroup": "bookings",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "experienceId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "slotStart",
+          "order": "ASCENDING"
+        }
+      ]
     }
   ],
   "fieldOverrides": [

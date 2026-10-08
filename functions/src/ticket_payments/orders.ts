@@ -45,6 +45,8 @@ import {
   stripeCreateCheckout,
   stripeExpireSession,
   stripeRetrieveSession,
+  stripeRefund,
+  mpRefund,
   ticketDeps,
   toMajor,
   toMinor,
@@ -958,6 +960,54 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
     }).catch(() => undefined);
   }
   return changed;
+}
+
+/**
+ * The ORGANIZER removed the date/time (or cancelled): give the money back.
+ *  - instant + paid: refund through the provider API on the organizer's own
+ *    account (Stripe refunds.create with stripeAccount / MP POST
+ *    /v1/payments/{id}/refunds with the organizer token), idempotent per
+ *    order; the refund webhook then invalidates the tickets. A provider error
+ *    leaves refund.status 'refund_required' and tells the organizer.
+ *  - link + paid: refund.status 'refund_owed' (the organizer pays back
+ *    outside GreenGo) + a reminder to the organizer.
+ *  - still open: the order is cancelled and its holds released.
+ * Recorded on the order as `refund: { status, providerRefundId?, reason, at }`.
+ */
+export async function requestOrderRefund(orderId: string, reason: string): Promise<string> {
+  const ref = db().collection(COL.orders).doc(orderId);
+  const o = (await ref.get()).data();
+  if (!o) return 'not_found';
+  if (OPEN.has(o.status)) {
+    await closeOrder(orderId, 'cancelled', { cancelReason: reason });
+    return 'cancelled';
+  }
+  if (o.status !== 'paid') return o.status;
+  if (o.refund?.status === 'requested' || o.refund?.status === 'refund_owed') return o.refund.status;
+  const t = ts(now());
+  let refund: Record<string, unknown>;
+  try {
+    if (o.provider === 'stripe' && o.stripePaymentIntentId && o.providerRef?.stripeAccountId) {
+      const id = await stripeRefund(o.providerRef.stripeAccountId, o.stripePaymentIntentId, orderId);
+      refund = { status: 'requested', providerRefundId: id, reason, at: t };
+    } else if (o.provider === 'mercadopago' && o.mpPaymentId) {
+      const id = await mpRefund(await mpAccessTokenFor(o.organizerId), String(o.mpPaymentId), orderId);
+      refund = { status: 'requested', providerRefundId: id, reason, at: t };
+    } else {
+      refund = { status: 'refund_owed', reason, at: t };
+    }
+  } catch (e) {
+    console.error(`[tickets] refund ${orderId} failed:`, (e as Error)?.message);
+    refund = { status: 'refund_required', reason, at: t, error: e instanceof ProviderError ? e.reason : 'provider_error' };
+  }
+  await ref.set({ refund, updatedAt: t }, { merge: true });
+  if (refund.status !== 'requested') {
+    await emitNotification({
+      recipientId: o.organizerId, type: 'ticket_refund_owed', title: 'Refund to pay back',
+      body: `${o.title || ''} · ${o.code || ''}`.trim(), data: { action: 'ticket_confirm', orderId },
+    }).catch(() => undefined);
+  }
+  return String(refund.status);
 }
 
 // ─────────────────────────────────────────────────────────── sync / cancel / expire

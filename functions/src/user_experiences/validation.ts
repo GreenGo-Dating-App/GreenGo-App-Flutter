@@ -248,6 +248,14 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     else maxTicketsPerUser = m;
   }
 
+  // Date-based price: weekendPrice (same unit as the base price of the mode)
+  // on weekendDays (1 = Mon .. 7 = Sun, default Sat + Sun).
+  const weekendPriceRaw = d.weekendPrice === null || d.weekendPrice === undefined ? null : finiteNum(d.weekendPrice);
+  if (weekendPriceRaw !== null && !(weekendPriceRaw > 0)) errors.push('weekendPrice');
+  const weekendDays = Array.isArray(d.weekendDays)
+    ? Array.from(new Set((d.weekendDays as unknown[]).filter((x): x is number => Number.isInteger(x) && (x as number) >= 1 && (x as number) <= 7)))
+    : null;
+
   const status = str(d.status) === 'published' ? 'published' : 'draft';
   const city = optStr(d.city, 120);
   const country = optStr(d.country, 120);
@@ -279,6 +287,8 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     paymentProvider,
     pricingMode,
     groupPrice,
+    weekendPrice: isFree ? null : weekendPriceRaw,
+    weekendDays: weekendDays && weekendDays.length ? weekendDays : null,
     ...(maxTicketsPerUser !== undefined ? { maxTicketsPerUser } : {}),
     paymentLinkMethod,
     paymentInstructions,

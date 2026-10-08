@@ -78,6 +78,7 @@ const fakeFetch = jest.fn(async (url: string, init?: any) => {
   }
   if (url.endsWith('/users/me')) return json(200, { id: 777, site_id: 'MLB', country_id: 'BR' });
   if (url.endsWith('/checkout/preferences')) return json(201, { id: 'pref_1', init_point: 'https://mp.test/checkout/pref_1' });
+  if (url.endsWith('/refunds')) return json(201, { id: 9001, status: 'approved' });
   if (url.includes('/v1/payments/search')) return json(200, { results: [] });
   if (url.includes('/v1/payments/')) return mpPayment ? json(200, mpPayment) : json(404, {});
   return json(404, {});
@@ -803,5 +804,134 @@ describe('event ticket types', () => {
     expect(await clientWrite(ORG, 'events/tt/ticket_types/ga', { sold: 0, held: 0, name: 'General', price: 2500 }, ['price'])).toBe(200);
     expect(await clientWrite(ORG, 'events/tt/ticket_types/ga', { sold: 99 }, ['sold'])).toBe(403);
     expect(await clientWrite(STRANGER, 'events/tt/ticket_types/ga', { price: 1 }, ['price'])).toBe(403);
+  });
+});
+
+// ═══════════════════════════════════════════════ recurring availability + host removals
+
+describe('experiences: recurring availability, per-day prices, host removes booked times', () => {
+  const svcMod = () => require('../../src/experience_bookings/service');
+  const availMod = () => require('../../src/experience_bookings/functions');
+  const DAYMS = 86400000;
+  // A Wednesday 10 days ahead, 10:00 in São Paulo (13:00 UTC).
+  function nextWeekday(): { date: string; start: number } {
+    const d = new Date(Date.now() + 10 * DAYMS);
+    const date = d.toISOString().slice(0, 10);
+    const start = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 13, 0);
+    return { date, start };
+  }
+  async function seedRecurring(over: Record<string, any> = {}) {
+    const { date, start } = nextWeekday();
+    await db.doc('user_experiences/r1').set({
+      hostId: ORG, title: 'Street food walk', status: 'published', price: 50, currency: 'R$', isFree: false,
+      paymentMethods: ['online'], paymentProvider: 'link', paymentLinkMethod: 'pix',
+      maxGroupSize: 10, durationMinutes: 120,
+      weekendPrice: 70,
+      availabilityRules: {
+        timezone: 'America/Sao_Paulo', windowStart: '10:00', windowEnd: '14:00', durationMinutes: 120,
+        weekdays: [1, 2, 3, 4, 5, 6, 7], capacityPerSlot: 3, minNoticeHours: 1, maxAdvanceDays: 60,
+      },
+      availabilityOverrides: { dayOverrides: { [date]: { priceOverride: 90 } } },
+      ...over,
+    });
+    await db.doc(`profiles/${ORG}`).set({ isAgeVerified: true }, { merge: true });
+    for (const u of [BUYER, OTHER, STRANGER]) {
+      await db.doc(`profiles/${u}`).set({ displayName: u, ageVerification: { status: 'pending' } }, { merge: true });
+    }
+    return { date, start };
+  }
+  const book = (uid: string, start: number, guests: number, rid: string) =>
+    call(require('../../src/experience_bookings/functions').createBooking,
+      { experienceId: 'r1', slotId: 'recurring', startAt: start, guests, requestId: rid, consentVersion: 1 }, uid);
+
+  test('availability: generated times with remaining capacity and the per-day price', async () => {
+    const { date, start } = await seedRecurring();
+    const r = await call(availMod().getExperienceAvailability, {
+      experienceId: 'r1', from: new Date(start - DAYMS / 2).toISOString(), to: new Date(start + DAYMS / 2).toISOString(),
+    }, BUYER);
+    expect(r.timezone).toBe('America/Sao_Paulo');
+    const day = r.slots.filter((s: any) => s.date === date);
+    expect(day.map((s: any) => s.time)).toEqual(['10:00', '12:00']);
+    expect(day[0]).toMatchObject({ remaining: 3, unitAmount: 9000, currency: 'brl', priceRule: 'day' });
+    expect((await refused(call(availMod().getExperienceAvailability, {
+      experienceId: 'r1', from: new Date().toISOString(), to: new Date(Date.now() + 70 * DAYMS).toISOString(),
+    }, BUYER))).reason).toBe('range_too_long');
+  });
+
+  test('booking a generated time: capacity per slot, outside-availability refused, last seat race', async () => {
+    const { start } = await seedRecurring();
+    const outside = await refused(book(BUYER, start + 30 * 60000, 1, 'rid-outside-1'));
+    expect(outside.reason).toBe('slot_closed');
+    const a = await book(BUYER, start, 2, 'rid-a-000001');
+    expect(a.status).toBe('requested');
+    expect(a.price).toMatchObject({ unitAmount: 9000, totalAmount: 18000 });
+    const counter = (await db.doc(`experience_slot_counters/r1_${start}`).get()).data()!;
+    expect(counter).toMatchObject({ booked: 2, capacity: 3 });
+    const race = await Promise.allSettled([book(OTHER, start, 1, 'rid-b-000001'), book(STRANGER, start, 1, 'rid-c-000001')]);
+    expect(race.filter((x) => x.status === 'fulfilled').length).toBeLessThanOrEqual(1);
+    expect((await db.doc(`experience_slot_counters/r1_${start}`).get()).data()!.booked).toBeLessThanOrEqual(3);
+  });
+
+  test('host removes a booked time: confirm required, then cancel + refund (Stripe on the organizer account) + push', async () => {
+    const { date, start } = await seedRecurring({ paymentProvider: 'stripe', paymentLinkMethod: null });
+    await connectStripe();
+    // A confirmed, PAID in-app booking at that time.
+    await db.doc('bookings/rb1').set({
+      experienceId: 'r1', slotId: `r_${start}`, counterId: `r1_${start}`, hostId: ORG, guestId: BUYER, guests: 1, status: 'confirmed',
+      experienceTitle: 'Street food walk', slotStart: TS.fromMillis(start), slotEnd: TS.fromMillis(start + 2 * HOUR),
+      price: { unitAmount: 9000, currency: 'brl', totalAmount: 9000 }, policy: 'moderate',
+      payment: { mode: 'online', provider: 'stripe', status: 'paid', orderId: 'ordR1' },
+    });
+    await db.doc(`experience_slot_counters/r1_${start}`).set({ experienceId: 'r1', startMs: start, booked: 1, capacity: 3 });
+    await db.doc('ticket_orders/ordR1').set({
+      kind: 'experience', listingId: 'r1', bookingId: 'rb1', buyerId: BUYER, organizerId: ORG, provider: 'stripe',
+      status: 'paid', quantity: 1, totalAmount: 9000, currency: 'brl', stripePaymentIntentId: 'pi_rec',
+      providerRef: { stripeAccountId: 'acct_org' }, title: 'Street food walk',
+    });
+    const refunds: any[] = [];
+    fakeStripe.refunds = { create: jest.fn(async (p: any, o: any) => { refunds.push({ p, o }); return { id: 're_1' }; }) };
+    const closed = { availabilityRules: undefined, overrides: { dayOverrides: { [date]: { closed: true } } } };
+    const first = await call(availMod().updateExperienceAvailability, { experienceId: 'r1', ...closed }, ORG);
+    expect(first).toMatchObject({ needsConfirm: true, affected: 1 });
+    expect((await db.doc('bookings/rb1').get()).data()!.status).toBe('confirmed');
+    expect((await refused(call(availMod().updateExperienceAvailability, { experienceId: 'r1', ...closed, confirm: true }, BUYER))).code)
+      .toBe('permission-denied');
+    const done = await call(availMod().updateExperienceAvailability, { experienceId: 'r1', ...closed, confirm: true }, ORG);
+    expect(done).toMatchObject({ needsConfirm: false, cancelledBookings: 1 });
+    expect((await db.doc('bookings/rb1').get()).data()).toMatchObject({ status: 'cancelled_by_host', refundDue: { percent: 100 } });
+    expect(refunds).toHaveLength(1);
+    expect(refunds[0].p).toMatchObject({ payment_intent: 'pi_rec' });
+    expect(refunds[0].o).toMatchObject({ stripeAccount: 'acct_org', idempotencyKey: 'gg_refund_ordR1' });
+    expect((await db.doc('ticket_orders/ordR1').get()).data()!.refund).toMatchObject({ status: 'requested', providerRefundId: 're_1' });
+    expect((await db.doc(`experience_slot_counters/r1_${start}`).get()).data()!.booked).toBe(0);
+    const n = await db.collection('notifications').where('userId', '==', BUYER).where('type', '==', 'booking_cancelled').get();
+    expect(n.size).toBe(1);
+  });
+
+  test('manual-mode paid booking on a removed time -> refund_owed + organizer reminder; MP refund via organizer token', async () => {
+    const { date, start } = await seedRecurring();
+    for (const [bid, oid, provider] of [['rb2', 'ordL', 'link'], ['rb3', 'ordM', 'mercadopago']] as const) {
+      await db.doc(`bookings/${bid}`).set({
+        experienceId: 'r1', slotId: `r_${start}`, hostId: ORG, guestId: BUYER, guests: 1, status: 'confirmed',
+        slotStart: TS.fromMillis(start), slotEnd: TS.fromMillis(start + 2 * HOUR), policy: 'moderate',
+        price: { unitAmount: 9000, currency: 'brl', totalAmount: 9000 },
+        payment: { mode: 'online', provider, status: 'paid', orderId: oid },
+      });
+      await db.doc(`ticket_orders/${oid}`).set({
+        kind: 'experience', listingId: 'r1', bookingId: bid, buyerId: BUYER, organizerId: ORG, provider, status: 'paid',
+        quantity: 1, totalAmount: 9000, currency: 'brl', mpPaymentId: provider === 'mercadopago' ? '555' : null, title: 'Walk', code: 'GG-ABCDEF',
+      });
+    }
+    await db.doc(`experience_slot_counters/r1_${start}`).set({ experienceId: 'r1', startMs: start, booked: 2, capacity: 3 });
+    await connectMp();
+    const closed = { overrides: { dayOverrides: { [date]: { closed: true } } }, confirm: true };
+    await call(availMod().updateExperienceAvailability, { experienceId: 'r1', ...closed }, ORG);
+    expect((await db.doc('ticket_orders/ordL').get()).data()!.refund.status).toBe('refund_owed');
+    expect((await db.doc('ticket_orders/ordM').get()).data()!.refund.status).toBe('requested');
+    const mp = mpCalls.find((c) => c.url.endsWith('/v1/payments/555/refunds'))!;
+    expect(mp.init.headers.Authorization).toBe('Bearer APP_USR-org-token');
+    expect(mp.init.headers['X-Idempotency-Key']).toBe('gg_refund_ordM');
+    const owed = await db.collection('notifications').where('userId', '==', ORG).where('type', '==', 'ticket_refund_owed').get();
+    expect(owed.size).toBe(1);
   });
 });

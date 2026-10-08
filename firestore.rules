@@ -2258,6 +2258,10 @@ service cloud.firestore {
                   && d.maxGroupSize is int && d.maxGroupSize >= 2 && d.maxGroupSize <= 100))
           && (d.get('maxTicketsPerUser', null) == null
               || (d.maxTicketsPerUser is int && d.maxTicketsPerUser >= 0 && d.maxTicketsPerUser <= 100))
+          && (d.get('weekendPrice', null) == null
+              || (d.weekendPrice is number && d.weekendPrice > 0))
+          && (d.get('weekendDays', null) == null
+              || (d.weekendDays is list && d.weekendDays.size() <= 7))
           // Bookings: the host approves each request (snapshotted per booking).
           && (d.get('requestToBook', false) is bool);
       }
