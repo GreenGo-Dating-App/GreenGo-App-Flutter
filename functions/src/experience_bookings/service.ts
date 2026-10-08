@@ -66,6 +66,9 @@ import {
   shouldFlagHost,
   verifyCheckInCode,
   onlineProviderOf,
+  pricingModeOf,
+  resolveDatePrice,
+  groupSizeError,
   linkMethodOf,
   MAX_BOOKING_LENGTH_MS,
   bookingLengthMs,
@@ -547,6 +550,8 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     if (!guestP.exists || isBannedProfile(guest)) fail('permission-denied', 'account_restricted');
     if (idDocumentStateOf(guest) === 'none') fail('failed-precondition', 'id_document_required');
 
+    const sizeErr = groupSizeError(e, guests);
+    if (sizeErr) fail('invalid-argument', sizeErr, { min: e.minGroupSize ?? 1, max: e.maxGroupSize ?? null });
     const priced = computeBookingPrice(e, guests);
     if (priced.ok === false) fail('failed-precondition', 'experience_price_invalid', { reason: priced.reason });
     let mode: PaymentMode = 'free';
@@ -595,6 +600,10 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     if (Number.isInteger(e.maxGroupSize) && guests > e.maxGroupSize) {
       fail('invalid-argument', 'too_many_guests', { max: e.maxGroupSize });
     }
+    // Date-based price (host time zone): day override > weekend > base.
+    const dated = resolveDatePrice(e, start);
+    const pricedAt = priced.free ? priced : computeBookingPrice(e, guests, start);
+    if (pricedAt.ok === false) fail('failed-precondition', 'experience_price_invalid', { reason: pricedAt.reason });
     // bookedCount is informational now (people booked in this window); the
     // party size is bounded by maxGroupSize / maxGuestsPerBooking above.
     const booked = Number(s.bookedCount) || 0;
@@ -613,7 +622,10 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
       experienceTitle: typeof e.title === 'string' ? e.title.slice(0, 120) : null,
       slotStart: ts(start),
       slotEnd: ts(end),
-      price: priced.price,
+      price: (pricedAt as { ok: true; price: any }).price,
+      priceRule: priced.free ? 'base' : dated.rule,
+      pricingMode: pricingModeOf(e),
+      maxGroupSize: Number.isInteger(e.maxGroupSize) ? e.maxGroupSize : null,
       payment: {
         mode,
         link,
@@ -640,7 +652,8 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
         }),
     };
     tx.set(bookingRef, booking);
-    tx.update(slotRef, { bookedCount: booked + guests, updatedAt: ts(now) });
+    // per_group slots count GROUPS, per_person slots count people.
+    tx.update(slotRef, { bookedCount: booked + (pricingModeOf(e) === 'per_group' ? 1 : guests), updatedAt: ts(now) });
     tx.set(lockRef, { lastBookingId: bookingId, updatedAt: ts(now) }, { merge: true });
     return { created: true, booking };
   });
@@ -789,9 +802,15 @@ export async function getBookingCheckInCode(uid: string, data: any): Promise<Rec
   const mode = b.payment?.mode;
   if (mode === 'online') {
     if (b.payment?.status !== 'paid' || !b.payment?.orderId) fail('failed-precondition', 'not_paid', { status: b.payment?.status ?? null });
-    const t = (await fdb().collection('tickets').doc(String(b.payment.orderId)).get()).data();
-    if (!t || t.status !== 'valid') fail('failed-precondition', 'ticket_not_valid', { status: t?.status ?? null });
-    return { bookingId, code: null, qrPayload: t.qrPayload, ticketId: b.payment.orderId };
+    const ids: string[] = Array.isArray(b.payment.ticketIds) && b.payment.ticketIds.length
+      ? b.payment.ticketIds : [`${b.payment.orderId}_1`];
+    const snaps = await Promise.all(ids.map((id) => fdb().collection('tickets').doc(id).get()));
+    const tickets = snaps.map((s) => s.data()).filter((t) => t && t.status === 'valid') as Array<Record<string, any>>;
+    if (!tickets.length) fail('failed-precondition', 'ticket_not_valid');
+    return {
+      bookingId, code: null, qrPayload: tickets[0].qrPayload, ticketId: tickets[0].ticketId,
+      tickets: tickets.map((t) => ({ ticketId: t.ticketId, qrPayload: t.qrPayload, partySize: t.partySize ?? 1, checkedIn: !!t.checkedInAt })),
+    };
   }
   if (mode === 'link' && !b.payment?.hostConfirmedPaidAt) fail('failed-precondition', 'not_paid');
   const code = checkInCode(await checkInSecret(), bookingId);

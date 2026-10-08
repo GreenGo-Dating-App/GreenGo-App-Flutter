@@ -47,8 +47,8 @@ export const PAYMENT_TYPES = ['pix', 'paypal', 'venmo', 'stripe', 'other'] as co
 export const PAYMENT_METHODS = ['cash', 'link', 'online'] as const;
 /** In-app ticket providers (paid listings created from 4.7 offer ONLY these). */
 export const ONLINE_PROVIDERS = ['stripe', 'mercadopago', 'link'] as const;
-export const LINK_METHODS = ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
-  'monzo', 'kofi', 'stripe', 'cash', 'bankTransfer'] as const;
+export const LINK_METHODS = ['pix', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
+  'monzo', 'kofi', 'cash', 'bankTransfer'] as const;
 
 /**
  * Payment methods of a payload. Missing field (older clients) = ['link'] for
@@ -229,6 +229,25 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
   const paymentInstructions = paymentProvider === 'link' ? optStr(d.paymentInstructions, 500) : null;
   if (paymentLinkMethod === 'bankTransfer' && !paymentInstructions) errors.push('paymentInstructions');
 
+  // Pricing mode (experiences): per_person (default) | per_group with a fixed
+  // groupPrice in integer MINOR units for a party of up to maxGroupSize (2..100).
+  const pricingMode = str(d.pricingMode) === 'per_group' ? 'per_group' : 'per_person';
+  let groupPrice: number | null = null;
+  if (pricingMode === 'per_group' && !isFree) {
+    const gp = finiteNum(d.groupPrice);
+    if (gp === null || !Number.isSafeInteger(gp) || gp <= 0) errors.push('groupPrice');
+    else groupPrice = gp;
+    if (maxGroupSize === null || maxGroupSize < 2 || maxGroupSize > 100) errors.push('maxGroupSize');
+  }
+  // Per-user limit (tickets; group bookings for per_group): missing = 4, null/0 = none.
+  let maxTicketsPerUser: number | null | undefined;
+  if (d.maxTicketsPerUser === null || d.maxTicketsPerUser === 0) maxTicketsPerUser = null;
+  else if (d.maxTicketsPerUser !== undefined) {
+    const m = finiteNum(d.maxTicketsPerUser);
+    if (m === null || !Number.isInteger(m) || m < 1 || m > 100) errors.push('maxTicketsPerUser');
+    else maxTicketsPerUser = m;
+  }
+
   const status = str(d.status) === 'published' ? 'published' : 'draft';
   const city = optStr(d.city, 120);
   const country = optStr(d.country, 120);
@@ -258,6 +277,9 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     paymentMethods,
     paymentLink: wantsOnline ? null : paymentLink,
     paymentProvider,
+    pricingMode,
+    groupPrice,
+    ...(maxTicketsPerUser !== undefined ? { maxTicketsPerUser } : {}),
     paymentLinkMethod,
     paymentInstructions,
     availability: optStr(d.availability, LIMITS.shortTextMax),

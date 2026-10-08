@@ -24,6 +24,7 @@ import {
   mpAuthorizationUrl,
   mpExchangeCode,
   mpRefresh,
+  mpGetMe,
   stripeAccountLink,
   stripeAccountState,
   stripeCreateStandardAccount,
@@ -33,6 +34,7 @@ import {
 } from './providers';
 import { seal, signState, unseal, verifyState } from './tokens';
 import { ticketKey } from './keys';
+import { mpCurrencyForSite } from './currency';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -131,6 +133,11 @@ async function unsealTok(v: string): Promise<string> {
 
 export async function storeMpTokens(uid: string, t: MpTokens): Promise<void> {
   const now = ticketDeps.now();
+  // MP charges only in the account's site currency: remember it.
+  let siteId: string | null = null;
+  try { siteId = (await mpGetMe(t.accessToken)).siteId; } catch (e) {
+    console.error('[tickets] MP users/me failed:', (e as Error)?.message);
+  }
   const access = await sealTok(t.accessToken);
   const refresh = t.refreshToken ? await sealTok(t.refreshToken) : null;
   const batch = db().batch();
@@ -151,6 +158,8 @@ export async function storeMpTokens(uid: string, t: MpTokens): Promise<void> {
     mercadoPago: {
       userId: t.userId,
       liveMode: t.liveMode,
+      siteId,
+      currency: mpCurrencyForSite(siteId),
       status: 'ready',
       connectedAt: ts(now),
       expiresAt: ts(t.expiresAtMs),
@@ -269,7 +278,9 @@ export async function refreshPaymentAccount(uid: string): Promise<Record<string,
   const fresh = (await ref.get()).data() || {};
   return {
     stripe: fresh.stripe ? { status: fresh.stripe.status, chargesEnabled: !!fresh.stripe.chargesEnabled, country: fresh.stripe.country ?? null } : null,
-    mercadoPago: fresh.mercadoPago ? { status: fresh.mercadoPago.status, liveMode: !!fresh.mercadoPago.liveMode } : null,
+    mercadoPago: fresh.mercadoPago
+      ? { status: fresh.mercadoPago.status, liveMode: !!fresh.mercadoPago.liveMode, currency: fresh.mercadoPago.currency ?? null }
+      : null,
   };
 }
 

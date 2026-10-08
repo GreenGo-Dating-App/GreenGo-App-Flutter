@@ -51,6 +51,8 @@ import {
 } from './providers';
 import { ticketQrPayload } from './tokens';
 import { ticketKey } from './keys';
+import { checkCharge, stripePaymentMethodTypes } from './currency';
+import { CheckoutInput, publicImage, whenText } from './checkoutPayload';
 import { emitNotification } from '../notifications/notifyHelpers';
 
 const db = () => admin.firestore();
@@ -103,6 +105,14 @@ export function newPaymentCode(): string {
 }
 export const PAYMENT_CODE_RE = /^GG-[ABCDEFGHJKMNPQRSTVWXYZ2-9]{6}$/;
 
+export interface OrderLine {
+  typeId: string;
+  name: string;
+  description: string | null;
+  unitAmount: number;
+  quantity: number;
+}
+
 interface Listing {
   kind: 'event' | 'experience';
   listingId: string;
@@ -112,10 +122,18 @@ interface Listing {
   linkMethod: string | null;
   instructions: string | null;
   unitAmount: number;
+  /** Tickets in this order (per_group experiences: 1). */
   quantity: number;
+  /** People per ticket (per_group experiences: the party size). */
+  partySize: number;
   currency: string;
   title: string;
   startsAtMs: number | null;
+  place: string | null;
+  timeZone: string | null;
+  imageUrl: string | null;
+  limit: number | null;
+  slotLabel: string | null;
 }
 
 function cleanInstructions(v: unknown): string | null {
@@ -141,11 +159,61 @@ export function linkPaymentSnapshot(
 
 // ─────────────────────────────────────────────────────────── create order / checkout
 
+/** Per-user ticket limit of a listing: missing = default, null / 0 = none. */
+export function perUserLimit(l: Record<string, any>): number | null {
+  if (!('maxTicketsPerUser' in l)) return cfg.DEFAULT_MAX_TICKETS_PER_USER;
+  const v = l.maxTicketsPerUser;
+  if (v === null || v === 0) return null;
+  return Number.isInteger(v) && v >= 1 && v <= 100 ? v : cfg.DEFAULT_MAX_TICKETS_PER_USER;
+}
+
+/** Per buyer + listing counter: { held (open orders), owned (paid) } in tickets. */
+export function holdingsRef(kind: string, listingId: string, uid: string) {
+  return db().collection(COL.holdings).doc(`${kind}_${listingId}_${uid}`);
+}
+
+export const TICKET_TYPES = 'ticket_types';
+export const MAX_ORDER_ITEMS = 20;
+
+/** Requested event items: [{ typeId, qty }] (merged, validated); null = legacy single type. */
+export function parseItems(raw: unknown): Array<{ typeId: string; qty: number }> | null {
+  if (raw === undefined || raw === null) return null;
+  if (!Array.isArray(raw) || raw.length === 0 || raw.length > MAX_ORDER_ITEMS) fail('invalid-argument', 'invalid_items');
+  const m = new Map<string, number>();
+  for (const it of raw as any[]) {
+    const id = it?.typeId;
+    const q = it?.qty;
+    if (typeof id !== 'string' || !ID_RE.test(id) || !Number.isInteger(q) || q < 0 || q > cfg.MAX_QUANTITY) {
+      fail('invalid-argument', 'invalid_items');
+    }
+    if (q > 0) m.set(id, (m.get(id) || 0) + q);
+  }
+  if (m.size === 0) fail('invalid-argument', 'invalid_items');
+  return Array.from(m.entries()).map(([typeId, qty]) => ({ typeId, qty }));
+}
+
+/** Can [t] be bought at [nowMs]? Returns a reason code or null. */
+export function typeSaleError(t: Record<string, any> | undefined, nowMs: number): string | null {
+  if (!t) return 'ticket_type_not_found';
+  if (t.active === false || t.hidden === true) return 'ticket_type_unavailable';
+  const s = msOf(t.salesStart);
+  const e = msOf(t.salesEnd);
+  if (s !== null && nowMs < s) return 'ticket_type_sales_not_started';
+  if (e !== null && nowMs > e) return 'ticket_type_sales_ended';
+  return null;
+}
+
+export function ticketIdsFor(orderId: string, quantity: number): string[] {
+  return Array.from({ length: Math.max(1, quantity) }, (_, i) => `${orderId}_${i + 1}`);
+}
+
 /**
  * Buyer: data { kind: 'event' | 'experience', id, bookingId? (experience),
- * quantity? (event), platform? 'app' | 'web' }.
- * Instant -> { orderId, mode: 'instant', checkoutUrl, expiresAt, provider, reused }.
- * Link    -> { orderId, mode: 'link', code, amount, currency, payment, expiresAt, reused }.
+ * quantity? (event tickets), platform? 'app' | 'web', locale? }.
+ * Instant -> { orderId, mode: 'instant', checkoutUrl, expiresAt, provider, amount, currency, quantity, reused }.
+ * Link    -> { orderId, mode: 'link', code, amount, currency, payment, expiresAt, quantity, reused }.
+ * Price, currency, title, description and image ALWAYS come from the
+ * server-side listing / booking doc; client-sent values are ignored.
  */
 export async function createTicketCheckout(uid: string, data: any, email: string | null): Promise<Record<string, unknown>> {
   const kind = data?.kind;
@@ -153,12 +221,14 @@ export async function createTicketCheckout(uid: string, data: any, email: string
   if (kind !== 'event' && kind !== 'experience') fail('invalid-argument', 'invalid_kind');
   if (typeof id !== 'string' || !ID_RE.test(id)) fail('invalid-argument', 'invalid_id');
   const platform = clientPlatform(data?.platform);
+  const locale = typeof data?.locale === 'string' ? data.locale.slice(0, 10) : null;
   const bookingId = kind === 'experience' ? data?.bookingId : null;
   if (kind === 'experience' && (typeof bookingId !== 'string' || !ID_RE.test(bookingId))) {
     fail('invalid-argument', 'invalid_booking_id');
   }
-  const qty = kind === 'event' ? (data?.quantity ?? 1) : 1;
-  if (!Number.isInteger(qty) || qty < 1 || qty > cfg.MAX_QUANTITY) fail('invalid-argument', 'invalid_quantity');
+  const items = kind === 'event' ? parseItems(data?.items) : null;
+  const reqQty = items ? items.reduce((s, i) => s + i.qty, 0) : (kind === 'event' ? (data?.quantity ?? 1) : 1);
+  if (!Number.isInteger(reqQty) || reqQty < 1 || reqQty > cfg.MAX_QUANTITY) fail('invalid-argument', 'invalid_quantity');
 
   const orders = db().collection(COL.orders);
   const orderRef = orders.doc();
@@ -170,40 +240,72 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       ? db().collection('events').doc(id)
       : db().collection('user_experiences').doc(id);
     const bookingRef = bookingId ? db().collection('bookings').doc(bookingId) : null;
-    const attRef = kind === 'event' ? db().collection('events').doc(id).collection('attendees').doc(uid) : null;
     const invRef = kind === 'event' ? inventoryRef(id) : null;
+    const holdRef = holdingsRef(kind, id, uid);
     const openQ = orders.where('buyerId', '==', uid).where('listingId', '==', id)
       .where('status', 'in', [...OPEN_STATUSES]).limit(5);
-    const [lSnap, bSnap, aSnap, invSnap, openSnap] = await Promise.all([
+    const typeRefs = items ? items.map((i) => listingRef.collection(TICKET_TYPES).doc(i.typeId)) : [];
+    const [lSnap, bSnap, invSnap, holdSnap, openSnap, ...typeSnaps] = await Promise.all([
       tx.get(listingRef),
       bookingRef ? tx.get(bookingRef) : Promise.resolve(null),
-      attRef ? tx.get(attRef) : Promise.resolve(null),
       invRef ? tx.get(invRef) : Promise.resolve(null),
+      tx.get(holdRef),
       tx.get(openQ),
-    ]);
+      ...typeRefs.map((r) => tx.get(r)),
+    ]) as any[];
     if (!lSnap.exists) fail('not-found', 'listing_not_found');
     const l = lSnap.data() as Record<string, any>;
 
     let listing: Listing;
+    let lines: OrderLine[] | null = null;
     if (kind === 'event') {
-      if (!(typeof l.price === 'number' && l.price > 0)) fail('failed-precondition', 'not_paid_listing');
+      // Ticket types: price, sales window, per-type stock and per-type limit
+      // all from the server docs; the client only says which types and how many.
+      if (items) {
+        const cur0 = isoCurrency(l.currencyCode, l.currency);
+        if (!cur0) fail('failed-precondition', 'currency_missing');
+        const hTypes = (holdSnap.data()?.types || {}) as Record<string, any>;
+        lines = items.map((it, idx) => {
+          const t = typeSnaps[idx].data() as Record<string, any> | undefined;
+          const err = typeSaleError(t, t0);
+          if (err) fail('failed-precondition', err, { typeId: it.typeId });
+          const price = Number(t!.price);
+          if (!Number.isSafeInteger(price) || price < 0) fail('failed-precondition', 'invalid_price', { typeId: it.typeId });
+          const cap = t!.quantity === null || t!.quantity === undefined ? null : Number(t!.quantity);
+          const used = (Number(t!.sold) || 0) + (Number(t!.held) || 0);
+          if (cap !== null && used + it.qty > cap) {
+            fail('resource-exhausted', 'ticket_type_sold_out', { typeId: it.typeId, remaining: Math.max(0, cap - used) });
+          }
+          const per = Number.isInteger(t!.maxPerUser) && t!.maxPerUser > 0 ? t!.maxPerUser : null;
+          const mine = (Number(hTypes[it.typeId]?.held) || 0) + (Number(hTypes[it.typeId]?.owned) || 0);
+          if (per !== null && mine + it.qty > per) {
+            fail('failed-precondition', 'ticket_type_limit_reached', { typeId: it.typeId, remaining: Math.max(0, per - mine) });
+          }
+          return {
+            typeId: it.typeId, name: String(t!.name || 'Ticket').slice(0, 80),
+            description: typeof t!.description === 'string' ? t!.description.slice(0, 300) : null,
+            unitAmount: price, quantity: it.qty,
+          };
+        });
+      }
+      if (!lines && !(typeof l.price === 'number' && l.price > 0)) fail('failed-precondition', 'not_paid_listing');
       if (!isTicketProvider(l.ticketProvider)) fail('failed-precondition', 'organizer_payments_not_ready');
       if (l.status === 'cancelled' || l.status === 'draft') fail('failed-precondition', 'listing_not_on_sale');
       const end = msOf(l.endDate) ?? msOf(l.startDate);
       if (end !== null && end < t0) fail('failed-precondition', 'listing_ended');
       if (l.organizerId === uid) fail('failed-precondition', 'own_listing');
-      const maxQ = 1 + Math.max(0, Math.floor(Number(l.guestsAllowedPerAttendee) || 0));
-      if (qty > maxQ) fail('invalid-argument', 'invalid_quantity', { max: maxQ });
       const currency = isoCurrency(l.currencyCode, l.currency);
       if (!currency) fail('failed-precondition', 'currency_missing');
-      const a = aSnap?.data();
-      if (a && a.status === 'going') fail('already-exists', 'already_has_ticket');
+      const place = [l.locationName, l.address, l.city].filter((x) => typeof x === 'string' && x.trim()).join(', ');
       listing = {
         kind, listingId: id, bookingId: null, organizerId: String(l.organizerId), provider: l.ticketProvider,
         linkMethod: typeof l.ticketLinkMethod === 'string' ? l.ticketLinkMethod : null,
         instructions: cleanInstructions(l.ticketPaymentInstructions),
-        unitAmount: toMinor(l.price, currency), quantity: qty, currency, title: String(l.title || 'Event'),
-        startsAtMs: msOf(l.startDate),
+        unitAmount: lines ? Math.max(...lines.map((x) => x.unitAmount)) : toMinor(l.price, currency),
+        quantity: reqQty, partySize: 1, currency,
+        title: String(l.title || 'Event'), startsAtMs: msOf(l.startDate),
+        place: place || null, timeZone: typeof l.timeZone === 'string' ? l.timeZone : null,
+        imageUrl: publicImage(l.imageUrl), limit: perUserLimit(l), slotLabel: null,
       };
     } else {
       const b = bSnap?.data() as Record<string, any> | undefined;
@@ -216,22 +318,45 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       if (start !== null && start < t0) fail('failed-precondition', 'listing_ended');
       const currency = String(b.price?.currency || '').toLowerCase();
       if (!/^[a-z]{3}$/.test(currency) || !(b.price?.totalAmount > 0)) fail('failed-precondition', 'currency_missing');
+      const guests = Math.max(1, Number(b.guests) || 1);
+      const perGroup = b.pricingMode === 'per_group';
+      const maxG = Number(b.maxGroupSize ?? l.maxGroupSize) || guests;
+      const place = [l.meetingPoint, l.locationName, l.city].filter((x) => typeof x === 'string' && x.trim()).join(', ');
       listing = {
         kind, listingId: id, bookingId, organizerId: String(b.hostId), provider: b.payment.provider,
         linkMethod: typeof b.payment.linkMethod === 'string' ? b.payment.linkMethod : (typeof l.paymentLinkMethod === 'string' ? l.paymentLinkMethod : null),
         instructions: cleanInstructions(l.paymentInstructions),
-        unitAmount: Number(b.price.unitAmount), quantity: Number(b.guests) || 1, currency,
-        title: String(b.experienceTitle || l.title || 'Experience'), startsAtMs: start,
+        // per_person: one ticket per guest at the unit price; per_group: ONE
+        // group ticket at the fixed group price, whatever the party size.
+        unitAmount: perGroup ? Number(b.price.totalAmount) : Number(b.price.unitAmount),
+        quantity: perGroup ? 1 : guests,
+        partySize: perGroup ? guests : 1,
+        currency,
+        title: perGroup
+          ? `${String(b.experienceTitle || l.title || 'Experience')} – group of up to ${maxG}`
+          : String(b.experienceTitle || l.title || 'Experience'),
+        startsAtMs: start,
+        place: place || null, timeZone: typeof l.timeZone === 'string' ? l.timeZone : null,
+        imageUrl: publicImage(l.mainPhotoUrl), limit: perUserLimit(l),
+        slotLabel: perGroup ? `Party of ${guests}` : null,
       };
     }
-    if (!Number.isSafeInteger(listing.unitAmount) || listing.unitAmount <= 0) fail('failed-precondition', 'invalid_price');
+    const totalAmount = lines
+      ? lines.reduce((s, x) => s + x.unitAmount * x.quantity, 0)
+      : listing.unitAmount * listing.quantity;
+    const isFreeOrder = !!lines && totalAmount === 0;
+    if (!isFreeOrder && (!Number.isSafeInteger(listing.unitAmount) || listing.unitAmount <= 0)) fail('failed-precondition', 'invalid_price');
+    if (isFreeOrder) listing.provider = 'free' as any;
 
     // Readiness of the organizer's payment setup.
     let payment: ReturnType<typeof linkPaymentSnapshot> = null;
+    let stripeCountry: string | null = null;
     const codeSnaps = listing.provider === 'link'
       ? await Promise.all(codes.map((c) => tx.get(db().collection(COL.codes).doc(c))))
       : [];
-    if (listing.provider === 'link') {
+    if (isFreeOrder) {
+      // Only free ticket types: no payment, the tickets are issued right away.
+    } else if (listing.provider === 'link') {
       const prof = (await tx.get(db().collection('profiles').doc(listing.organizerId))).data();
       payment = linkPaymentSnapshot(listing.linkMethod, prof, listing.instructions);
       if (!payment) fail('failed-precondition', 'organizer_payments_not_ready', { provider: 'link' });
@@ -240,30 +365,82 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       if (!isProvider(listing.provider) || !cfg.providerConfigured(listing.provider) || !accountReady(acct, listing.provider)) {
         fail('failed-precondition', 'organizer_payments_not_ready', { provider: listing.provider });
       }
+      stripeCountry = acct?.stripe?.country ?? null;
+      const minUnit = lines ? Math.min(...lines.filter((x) => x.unitAmount > 0).map((x) => x.unitAmount)) : listing.unitAmount;
+      const chk = checkCharge(listing.provider as any, listing.currency, minUnit, acct?.mercadoPago?.currency ?? null);
+      if (chk.ok === false) {
+        fail('failed-precondition', chk.reason, chk.reason === 'currency_not_supported'
+          ? { expected: chk.expected, currency: listing.currency }
+          : { minimum: chk.minimum, currency: listing.currency });
+      }
     }
 
-    // One live order per buyer + listing: reuse it while it is still usable.
+    // One live order per buyer + listing: reuse it while it is still usable,
+    // otherwise supersede it (its holds are released in this transaction).
+    let freedSeats = 0;
     let freedHolds = 0;
+    const superseded: Array<Array<Record<string, any>>> = [];
     for (const d of openSnap.docs) {
       const o = d.data();
       if ((o.bookingId ?? null) !== (listing.bookingId ?? null)) continue;
       const exp = msOf(o.expiresAt) ?? 0;
-      const sameShape = o.quantity === listing.quantity && o.provider === listing.provider;
+      const sameShape = o.quantity === listing.quantity && o.provider === listing.provider
+        && JSON.stringify(o.items ?? null) === JSON.stringify(lines ?? null);
       if (sameShape && o.provider === 'link' && exp > t0) return { reused: true, orderId: d.id, order: o, listing };
       if (sameShape && o.checkoutUrl && exp - t0 > 5 * 60000) return { reused: true, orderId: d.id, order: o, listing };
       tx.update(d.ref, { status: 'cancelled', cancelReason: 'superseded', seatHeld: false, updatedAt: ts(t0) });
-      if (o.seatHeld) freedHolds += 1;
+      if (o.seatHeld) {
+        freedHolds += Number(o.quantity) || 1;
+        if (o.kind === 'event') freedSeats += Number(o.quantity) || 1;
+        if (Array.isArray(o.items) && o.items.length) superseded.push(o.items);
+      }
     }
 
+    // Per-user limit: paid tickets + live holds (counter doc, race-safe).
+    const h = holdSnap.data() || {};
+    const heldNow = Math.max(0, (Number(h.held) || 0) - freedHolds);
+    const owned = Math.max(0, Number(h.owned) || 0);
+    if (listing.limit !== null && owned + heldNow + listing.quantity > listing.limit) {
+      fail('failed-precondition', 'ticket_limit_reached', {
+        limit: listing.limit, remaining: Math.max(0, listing.limit - owned - heldNow),
+      });
+    }
     if (kind === 'event') {
-      const held = Math.max(0, (Number(invSnap?.data()?.held) || 0) - freedHolds);
+      const held = Math.max(0, (Number(invSnap?.data()?.held) || 0) - freedSeats);
       const max = Math.floor(Number(l.maxAttendees) || 0);
       const going = Math.max(0, Math.floor(Number(l.attendeeCount) || 0));
-      if (max > 0 && going + held + 1 > max) fail('resource-exhausted', 'sold_out');
-      tx.set(invRef!, { held: held + 1, updatedAt: ts(t0) }, { merge: true });
+      if (max > 0 && going + held + listing.quantity > max) {
+        fail('resource-exhausted', 'sold_out', { remaining: Math.max(0, max - going - held) });
+      }
+      tx.set(invRef!, { held: held + listing.quantity, updatedAt: ts(t0) }, { merge: true });
     }
+    // Per-type stock + per-type per-user holds (superseded orders released first).
+    const typesHold: Record<string, any> = { ...((holdSnap.data()?.types || {}) as Record<string, any>) };
+    const freedByType = new Map<string, number>();
+    for (const its of superseded) for (const x of its) freedByType.set(x.typeId, (freedByType.get(x.typeId) || 0) + Number(x.quantity || 0));
+    if (lines) {
+      lines.forEach((x, idx) => {
+        const t = typeSnaps[idx].data() as Record<string, any>;
+        const freed = freedByType.get(x.typeId) || 0;
+        tx.update(typeRefs[idx], { held: Math.max(0, (Number(t.held) || 0) - freed) + x.quantity, updatedAt: ts(t0) });
+        const cur = typesHold[x.typeId] || {};
+        typesHold[x.typeId] = { held: Math.max(0, (Number(cur.held) || 0) - freed) + x.quantity, owned: Number(cur.owned) || 0 };
+      });
+    }
+    for (const [typeId, freed] of freedByType) {
+      if (lines?.some((x) => x.typeId === typeId)) continue;
+      const cur = typesHold[typeId] || {};
+      typesHold[typeId] = { held: Math.max(0, (Number(cur.held) || 0) - freed), owned: Number(cur.owned) || 0 };
+      tx.set(listingRef.collection(TICKET_TYPES).doc(typeId), { held: admin.firestore.FieldValue.increment(-freed) }, { merge: true });
+    }
+    tx.set(holdRef, {
+      kind, listingId: id, uid, held: heldNow + listing.quantity, owned, types: typesHold, updatedAt: ts(t0),
+    }, { merge: true });
 
     const isLink = listing.provider === 'link';
+    if (isFreeOrder) {
+      // Issued right after the transaction (markOrderPaid with provider 'free').
+    }
     const expiresAtMs = isLink
       ? t0 + cfg.LINK_HOLD_HOURS * HOUR
       : t0 + cfg.HOLD_MINUTES * 60000 + cfg.STRIPE_EXPIRY_MARGIN_SECONDS * 1000;
@@ -277,37 +454,60 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     const order = {
       kind, listingId: id, bookingId: listing.bookingId, buyerId: uid, organizerId: listing.organizerId,
       provider: listing.provider, mode: isLink ? 'link' : 'instant',
-      quantity: listing.quantity, unitAmount: listing.unitAmount,
-      totalAmount: listing.unitAmount * listing.quantity, currency: listing.currency,
-      status: isLink ? 'pending_payment' : 'creating', expiresAt: ts(expiresAtMs), seatHeld: kind === 'event',
+      quantity: listing.quantity, partySize: listing.partySize, unitAmount: listing.unitAmount,
+      // Stored at order time: later price edits never change it.
+      priceRule: kind === 'experience' ? (bSnap?.data()?.priceRule ?? 'base') : 'base',
+      totalAmount, currency: listing.currency, items: lines,
+      status: isLink ? 'pending_payment' : (isFreeOrder ? 'pending' : 'creating'), expiresAt: ts(expiresAtMs), seatHeld: true,
       code, payment: payment ?? null, receiptPath: null, sentAt: null, remindAt: null,
-      checkoutUrl: null, providerRef: {}, ticketId: null, title: listing.title.slice(0, 200),
+      checkoutUrl: null, providerRef: {}, ticketId: null, ticketIds: [], title: listing.title.slice(0, 200),
       startsAt: listing.startsAtMs !== null ? ts(listing.startsAtMs) : null,
       platform, createdAt: ts(t0), updatedAt: ts(t0),
     };
     tx.set(orderRef, order);
-    return { reused: false, orderId: orderRef.id, order, listing };
+    return { reused: false, orderId: orderRef.id, order, listing, stripeCountry };
   });
 
   const o = res.order as Record<string, any>;
+  if (o.provider === 'free' && !res.reused) {
+    await markOrderPaid(res.orderId, { provider: 'free' as any, amount: 0, currency: o.currency, ref: {}, source: 'organizer' });
+    return { orderId: res.orderId, mode: 'free', amount: 0, currency: o.currency, quantity: o.quantity, reused: false };
+  }
   if (o.provider === 'link') return linkView(res.orderId, o, res.reused);
   if (res.reused) {
-    return { orderId: res.orderId, mode: 'instant', checkoutUrl: o.checkoutUrl, expiresAt: iso(o.expiresAt), provider: o.provider, reused: true };
+    return {
+      orderId: res.orderId, mode: 'instant', checkoutUrl: o.checkoutUrl, expiresAt: iso(o.expiresAt),
+      provider: o.provider, amount: o.totalAmount, currency: o.currency, quantity: o.quantity, reused: true,
+    };
   }
 
   const L = res.listing;
   const orderId = res.orderId;
   const expiresAtMs = msOf(o.expiresAt) as number;
-  const input = {
+  const when = whenText(L.startsAtMs, L.timeZone);
+  const input: CheckoutInput = {
     orderId,
+    listingKind: L.kind,
+    listingId: L.listingId,
     title: L.title,
+    description: [when, L.place, L.slotLabel].filter(Boolean).join(' · ') || null,
+    imageUrl: L.imageUrl,
     unitAmount: L.unitAmount,
     quantity: L.quantity,
     currency: L.currency,
     successUrl: returnUrl({ k: 'order', o: orderId, r: 'success', p: platform }),
     cancelUrl: returnUrl({ k: 'order', o: orderId, r: 'cancel', p: platform }),
+    pendingUrl: returnUrl({ k: 'order', o: orderId, r: 'pending', p: platform }),
+    notificationUrl: `${cfg.mpWebhookUrl()}?o=${encodeURIComponent(orderId)}`,
     expiresAtMs,
+    nowMs: now(),
     buyerEmail: email,
+    locale,
+    paymentMethodTypes: stripePaymentMethodTypes(L.currency, (res as any).stripeCountry ?? null),
+    lines: Array.isArray(o.items) && o.items.length
+      ? (o.items as OrderLine[]).filter((x) => x.unitAmount > 0 || o.items.length === 1)
+        .map((x) => ({ ...x, name: `${L.title} – ${x.name}` }))
+      : undefined,
   };
   try {
     let checkoutUrl: string;
@@ -320,16 +520,15 @@ export async function createTicketCheckout(uid: string, data: any, email: string
       providerRef = { stripeAccountId: accountId, stripeSessionId: s.id };
     } else {
       const token = await mpAccessTokenFor(L.organizerId);
-      const p = await mpCreatePreference(token, {
-        ...input,
-        notificationUrl: `${cfg.mpWebhookUrl()}?o=${encodeURIComponent(orderId)}`,
-        pendingUrl: returnUrl({ k: 'order', o: orderId, r: 'pending', p: platform }),
-      });
+      const p = await mpCreatePreference(token, input);
       checkoutUrl = p.url;
       providerRef = { mpPreferenceId: p.id };
     }
     await orderRef.update({ status: 'pending', checkoutUrl, providerRef, updatedAt: ts(now()) });
-    return { orderId, mode: 'instant', checkoutUrl, expiresAt: new Date(expiresAtMs).toISOString(), provider: L.provider, reused: false };
+    return {
+      orderId, mode: 'instant', checkoutUrl, expiresAt: new Date(expiresAtMs).toISOString(), provider: L.provider,
+      amount: o.totalAmount, currency: o.currency, quantity: o.quantity, reused: false,
+    };
   } catch (e) {
     console.error(`[tickets] checkout for ${orderId} failed:`, (e as Error)?.message);
     await closeOrder(orderId, 'failed', { failReason: e instanceof ProviderError ? e.reason : 'provider_error' });
@@ -346,14 +545,14 @@ function iso(v: unknown): string | null {
 function linkView(orderId: string, o: Record<string, any>, reused: boolean): Record<string, unknown> {
   return {
     orderId, mode: 'link', provider: 'link', status: o.status, code: o.code,
-    amount: o.totalAmount, currency: o.currency, payment: o.payment ?? null,
+    amount: o.totalAmount, currency: o.currency, quantity: o.quantity, payment: o.payment ?? null,
     expiresAt: iso(o.expiresAt), reused,
   };
 }
 
 // ─────────────────────────────────────────────────────────── close / release
 
-/** open -> expired | cancelled | failed | rejected, releasing the event seat hold. */
+/** open -> expired | cancelled | failed | rejected, releasing seat + per-user holds. */
 export async function closeOrder(
   orderId: string,
   to: 'expired' | 'cancelled' | 'failed' | 'rejected',
@@ -365,11 +564,49 @@ export async function closeOrder(
     const snap = await tx.get(ref);
     const o = snap.data();
     if (!o || !OPEN.has(o.status) || (only && !only.includes(o.status))) return false;
+    const q = Math.max(1, Number(o.quantity) || 1);
     const inv = o.seatHeld && o.kind === 'event' ? await tx.get(inventoryRef(o.listingId)) : null;
+    const hold = o.seatHeld ? await tx.get(holdingsRef(o.kind, o.listingId, o.buyerId)) : null;
     tx.update(ref, { ...patch, status: to, seatHeld: false, remindAt: null, updatedAt: ts(now()) });
-    if (inv) tx.set(inv.ref, { held: Math.max(0, (Number(inv.data()?.held) || 0) - 1), updatedAt: ts(now()) }, { merge: true });
+    if (o.seatHeld) releaseTypeHolds(tx, o, hold, 'held');
+    if (inv) tx.set(inv.ref, { held: Math.max(0, (Number(inv.data()?.held) || 0) - q), updatedAt: ts(now()) }, { merge: true });
+    if (hold) tx.set(hold.ref, { held: Math.max(0, (Number(hold.data()?.held) || 0) - q), updatedAt: ts(now()) }, { merge: true });
     return true;
   });
+}
+
+/**
+ * Per-type counters for an order's items: 'held' (open order released),
+ * 'sold' (refund / dispute of a paid order), 'toSold' (held -> sold on payment).
+ * Writes only (FieldValue.increment), so it can run after the reads.
+ */
+function releaseTypeHolds(
+  tx: FirebaseFirestore.Transaction,
+  o: Record<string, any>,
+  hold: FirebaseFirestore.DocumentSnapshot | null,
+  what: 'held' | 'sold' | 'toSold' | 'addSold',
+): void {
+  const items: OrderLine[] = Array.isArray(o.items) ? o.items : [];
+  if (o.kind !== 'event' || !items.length) return;
+  const inc = admin.firestore.FieldValue.increment;
+  const typesUpdate: Record<string, unknown> = {};
+  for (const x of items) {
+    const ref = db().collection('events').doc(o.listingId).collection(TICKET_TYPES).doc(x.typeId);
+    // set+merge: never aborts the transaction if the organizer deleted the type.
+    if (what === 'held') tx.set(ref, { held: inc(-x.quantity) }, { merge: true });
+    else if (what === 'sold') tx.set(ref, { sold: inc(-x.quantity) }, { merge: true });
+    else if (what === 'addSold') tx.set(ref, { sold: inc(x.quantity) }, { merge: true });
+    else tx.set(ref, { held: inc(-x.quantity), sold: inc(x.quantity) }, { merge: true });
+    if (hold) {
+      if (what === 'held') typesUpdate[`types.${x.typeId}.held`] = inc(-x.quantity);
+      else if (what === 'sold') typesUpdate[`types.${x.typeId}.owned`] = inc(-x.quantity);
+      else {
+        if (what === 'toSold') typesUpdate[`types.${x.typeId}.held`] = inc(-x.quantity);
+        typesUpdate[`types.${x.typeId}.owned`] = inc(x.quantity);
+      }
+    }
+  }
+  if (hold && Object.keys(typesUpdate).length) tx.update(hold.ref, typesUpdate);
 }
 
 // ─────────────────────────────────────────────────────────── paid
@@ -383,10 +620,11 @@ export interface PaidEvidence {
 }
 
 /**
- * Idempotent: order -> paid, ticket issued, attendee 'going' / booking paid.
+ * Idempotent: order -> paid, one tickets/{orderId}_{n} per ticket (each with
+ * its own signed QR, single-use at the door), attendee 'going' / booking paid.
  * Refuses (returns 'mismatch') when amount / currency / provider differ from
  * what the server priced. Accepts a LATE payment (order expired / cancelled /
- * rejected): the buyer paid, so the ticket is issued (lateOverCapacity if full).
+ * rejected): the buyer paid, so tickets are issued (lateOverCapacity if full).
  */
 export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<'paid' | 'already' | 'mismatch' | 'not_found' | 'closed'> {
   const key = await ticketKey();
@@ -401,7 +639,9 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
       return { r: 'mismatch' as const, o };
     }
     const t = now();
-    const ticketRef = db().collection(COL.tickets).doc(orderId);
+    const q = Math.max(1, Number(o.quantity) || 1);
+    const ids = ticketIdsFor(orderId, q);
+    const holdSnap = await tx.get(holdingsRef(o.kind, o.listingId, o.buyerId));
     let lateOverCapacity = false;
     if (o.kind === 'event') {
       const evRef = db().collection('events').doc(o.listingId);
@@ -413,13 +653,13 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
       const e = evSnap.data() || {};
       const held = Number(invSnap.data()?.held) || 0;
       const going = Math.max(0, Math.floor(Number(e.attendeeCount) || 0));
-      const wasGoing = attSnap.data()?.status === 'going';
       const max = Math.floor(Number(e.maxAttendees) || 0);
-      if (!o.seatHeld && max > 0 && going + held + 1 > max) lateOverCapacity = true;
-      if (o.seatHeld) tx.set(invSnap.ref, { held: Math.max(0, held - 1), updatedAt: ts(t) }, { merge: true });
+      if (!o.seatHeld && max > 0 && going + held + q > max) lateOverCapacity = true;
+      if (o.seatHeld) tx.set(invSnap.ref, { held: Math.max(0, held - q), updatedAt: ts(t) }, { merge: true });
       const p = prof.data() || {};
       const photos = Array.isArray(p.photoUrls) ? p.photoUrls : [];
       const prior = attSnap.data() || {};
+      const ticketCount = (prior.status === 'going' ? Math.max(0, Number(prior.ticketCount) || 0) : 0) + q;
       tx.set(attRef, {
         eventId: o.listingId,
         userId: o.buyerId,
@@ -434,13 +674,16 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
         visibleToOrganizerOnly: prior.visibleToOrganizerOnly ?? false,
         checkedIn: prior.checkedIn ?? false,
         checkedInAt: prior.checkedInAt ?? null,
-        guestCount: Math.max(0, (Number(o.quantity) || 1) - 1),
+        // Party = every ticket this person bought (each ticket still has its own QR).
+        guestCount: Math.max(0, ticketCount - 1),
+        ticketCount,
         tierId: prior.tierId ?? null,
-        ticketId: orderId,
+        ticketId: prior.status === 'going' && prior.ticketId ? prior.ticketId : ids[0],
         ticketStatus: 'valid',
         paidAt: ts(t),
       }, { merge: true });
-      if (!wasGoing) tx.update(evRef, { attendeeCount: going + 1 });
+      // Paid events count SEATS (server-maintained; clients cannot write it).
+      tx.update(evRef, { attendeeCount: going + q });
     } else {
       const bRef = db().collection('bookings').doc(o.bookingId);
       const b = (await tx.get(bRef)).data();
@@ -450,6 +693,7 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
             ...(b.payment || {}),
             status: 'paid',
             orderId,
+            ticketIds: ids,
             paidAt: ts(t),
             hostConfirmedPaidAt: b.payment?.hostConfirmedPaidAt ?? ts(t),
           },
@@ -457,21 +701,47 @@ export async function markOrderPaid(orderId: string, ev: PaidEvidence): Promise<
         });
       }
     }
+    releaseTypeHolds(tx, o, null, o.seatHeld ? 'toSold' : 'addSold');
+    const h = holdSnap.data() || {};
+    const typesOwned: Record<string, any> = { ...((h.types || {}) as Record<string, any>) };
+    for (const x of (Array.isArray(o.items) ? o.items : []) as OrderLine[]) {
+      const cur = typesOwned[x.typeId] || {};
+      typesOwned[x.typeId] = {
+        held: o.seatHeld ? Math.max(0, (Number(cur.held) || 0) - x.quantity) : Number(cur.held) || 0,
+        owned: (Number(cur.owned) || 0) + x.quantity,
+      };
+    }
+    tx.set(holdSnap.ref, {
+      types: typesOwned,
+      kind: o.kind, listingId: o.listingId, uid: o.buyerId,
+      held: o.seatHeld ? Math.max(0, (Number(h.held) || 0) - q) : Math.max(0, Number(h.held) || 0),
+      owned: Math.max(0, Number(h.owned) || 0) + q,
+      updatedAt: ts(t),
+    }, { merge: true });
     tx.update(ref, {
-      status: 'paid', paidAt: ts(t), seatHeld: false, ticketId: orderId, paidVia: ev.source, remindAt: null,
+      status: 'paid', paidAt: ts(t), seatHeld: false, ticketId: ids[0], ticketIds: ids, paidVia: ev.source, remindAt: null,
       providerRef: { ...(o.providerRef || {}), ...ev.ref },
       ...(lateOverCapacity ? { lateOverCapacity: true } : {}),
       ...(ev.ref.stripePaymentIntentId ? { stripePaymentIntentId: ev.ref.stripePaymentIntentId } : {}),
       ...(ev.ref.mpPaymentId ? { mpPaymentId: ev.ref.mpPaymentId } : {}),
       updatedAt: ts(t),
     });
-    tx.set(ticketRef, {
-      orderId, kind: o.kind, listingId: o.listingId, bookingId: o.bookingId ?? null,
-      buyerId: o.buyerId, organizerId: o.organizerId, quantity: o.quantity,
-      status: 'valid', qrPayload: ticketQrPayload(key, orderId),
-      title: o.title ?? null, startsAt: o.startsAt ?? null,
-      amount: o.totalAmount, currency: o.currency, provider: o.provider, code: o.code ?? null,
-      issuedAt: ts(t), checkedInAt: null,
+    // Ticket type per seat (items in order); legacy single type -> null.
+    const typeOf: Array<OrderLine | null> = [];
+    for (const x of (Array.isArray(o.items) ? o.items : []) as OrderLine[]) for (let k = 0; k < x.quantity; k++) typeOf.push(x);
+    ids.forEach((tid, i) => {
+      const tt = typeOf[i] ?? null;
+      tx.set(db().collection(COL.tickets).doc(tid), {
+        ticketTypeId: tt?.typeId ?? null, ticketTypeName: tt?.name ?? null,
+        ticketId: tid, orderId, index: i + 1, of: q,
+        kind: o.kind, listingId: o.listingId, bookingId: o.bookingId ?? null,
+        buyerId: o.buyerId, organizerId: o.organizerId,
+        partySize: Math.max(1, Number(o.partySize) || 1),
+        status: 'valid', qrPayload: ticketQrPayload(key, tid),
+        title: o.title ?? null, startsAt: o.startsAt ?? null,
+        unitAmount: tt ? tt.unitAmount : o.unitAmount, priceRule: o.priceRule ?? 'base', currency: o.currency, provider: o.provider, code: o.code ?? null,
+        issuedAt: ts(t), checkedInAt: null,
+      });
     });
     return { r: 'paid' as const, o };
   });
@@ -619,7 +889,7 @@ export async function remindDueConfirmations(limit = 300): Promise<number> {
 
 // ─────────────────────────────────────────────────────────── refunds / disputes
 
-/** Full refund or dispute: ticket invalid, QR rejected at the door, seat freed. */
+/** Full refund or dispute: every ticket of the order invalid, QR rejected at the door, seats + allowance freed. */
 export async function markOrderReversed(orderId: string, to: 'refunded' | 'disputed', ref: Record<string, unknown> = {}): Promise<boolean> {
   const oref = db().collection(COL.orders).doc(orderId);
   const changed = await db().runTransaction(async (tx) => {
@@ -628,18 +898,28 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
     if (!o) return false;
     if (o.status === to || (o.status === 'refunded' && to === 'disputed')) return false;
     const t = now();
-    const tRef = db().collection(COL.tickets).doc(orderId);
-    const tSnap = await tx.get(tRef);
-    const inv = OPEN.has(o.status) && o.seatHeld ? await tx.get(inventoryRef(o.listingId)) : null;
-    if (o.kind === 'event' && o.status === 'paid') {
+    const q = Math.max(1, Number(o.quantity) || 1);
+    const ids: string[] = Array.isArray(o.ticketIds) && o.ticketIds.length ? o.ticketIds : ticketIdsFor(orderId, q);
+    const tSnaps = await Promise.all(ids.map((id) => tx.get(db().collection(COL.tickets).doc(id))));
+    const wasPaid = o.status === 'paid';
+    const wasOpen = OPEN.has(o.status) && o.seatHeld;
+    const inv = wasOpen && o.kind === 'event' ? await tx.get(inventoryRef(o.listingId)) : null;
+    const hold = wasPaid || wasOpen ? await tx.get(holdingsRef(o.kind, o.listingId, o.buyerId)) : null;
+    if (o.kind === 'event' && wasPaid) {
       const evRef = db().collection('events').doc(o.listingId);
       const attRef = evRef.collection('attendees').doc(o.buyerId);
       const [evSnap, attSnap] = await Promise.all([tx.get(evRef), tx.get(attRef)]);
-      if (attSnap.exists && attSnap.data()?.ticketId === orderId) {
-        tx.delete(attRef);
-        const going = Math.max(0, Math.floor(Number(evSnap.data()?.attendeeCount) || 0));
-        if (evSnap.exists && attSnap.data()?.status === 'going') tx.update(evRef, { attendeeCount: Math.max(0, going - 1) });
+      const a = attSnap.data();
+      if (a && a.status === 'going') {
+        const left = Math.max(0, (Number(a.ticketCount) || q) - q);
+        if (left === 0) tx.delete(attRef);
+        else {
+          const remainingId = ids.includes(a.ticketId) ? null : a.ticketId;
+          tx.update(attRef, { ticketCount: left, guestCount: Math.max(0, left - 1), ticketId: remainingId ?? a.ticketId });
+        }
       }
+      const going = Math.max(0, Math.floor(Number(evSnap.data()?.attendeeCount) || 0));
+      if (evSnap.exists) tx.update(evRef, { attendeeCount: Math.max(0, going - q) });
     } else if (o.kind === 'experience' && o.bookingId) {
       const bRef = db().collection('bookings').doc(o.bookingId);
       const b = (await tx.get(bRef)).data();
@@ -647,9 +927,26 @@ export async function markOrderReversed(orderId: string, to: 'refunded' | 'dispu
         tx.update(bRef, { payment: { ...b.payment, status: to }, updatedAt: ts(t) });
       }
     }
-    if (inv) tx.set(inv.ref, { held: Math.max(0, (Number(inv.data()?.held) || 0) - 1) }, { merge: true });
+    if (inv) tx.set(inv.ref, { held: Math.max(0, (Number(inv.data()?.held) || 0) - q) }, { merge: true });
+    if (wasPaid || wasOpen) releaseTypeHolds(tx, o, null, wasPaid ? 'sold' : 'held');
+    if (hold && Array.isArray(o.items) && o.items.length) {
+      const types: Record<string, any> = { ...((hold.data()?.types || {}) as Record<string, any>) };
+      for (const x of o.items as OrderLine[]) {
+        const cur = types[x.typeId] || {};
+        types[x.typeId] = wasPaid
+          ? { held: Number(cur.held) || 0, owned: Math.max(0, (Number(cur.owned) || 0) - x.quantity) }
+          : { held: Math.max(0, (Number(cur.held) || 0) - x.quantity), owned: Number(cur.owned) || 0 };
+      }
+      tx.set(hold.ref, { types }, { merge: true });
+    }
+    if (hold) {
+      const h = hold.data() || {};
+      tx.set(hold.ref, wasPaid
+        ? { owned: Math.max(0, (Number(h.owned) || 0) - q), updatedAt: ts(t) }
+        : { held: Math.max(0, (Number(h.held) || 0) - q), updatedAt: ts(t) }, { merge: true });
+    }
     tx.update(oref, { status: to, seatHeld: false, [`${to}At`]: ts(t), reversalRef: ref, updatedAt: ts(t) });
-    if (tSnap.exists) tx.update(tRef, { status: to, invalidatedAt: ts(t) });
+    for (const s of tSnaps) if (s.exists) tx.update(s.ref, { status: to, invalidatedAt: ts(t) });
     return true;
   });
   if (changed) {

@@ -76,6 +76,7 @@ const fakeFetch = jest.fn(async (url: string, init?: any) => {
   if (url.endsWith('/oauth/token')) {
     return json(200, { access_token: 'APP_USR-org-token', refresh_token: 'TG-refresh', user_id: 777, expires_in: 15552000, live_mode: false, public_key: 'pk' });
   }
+  if (url.endsWith('/users/me')) return json(200, { id: 777, site_id: 'MLB', country_id: 'BR' });
   if (url.endsWith('/checkout/preferences')) return json(201, { id: 'pref_1', init_point: 'https://mp.test/checkout/pref_1' });
   if (url.includes('/v1/payments/search')) return json(200, { results: [] });
   if (url.includes('/v1/payments/')) return mpPayment ? json(200, mpPayment) : json(404, {});
@@ -116,7 +117,7 @@ async function seedProfiles() {
   await db.doc(`profiles/${OTHER}`).set({ displayName: 'Other' });
 }
 async function connectStripe() {
-  await db.doc(`payment_accounts/${ORG}`).set({ uid: ORG, stripe: { accountId: 'acct_org', chargesEnabled: true, detailsSubmitted: true, status: 'ready' } });
+  await db.doc(`payment_accounts/${ORG}`).set({ uid: ORG, stripe: { accountId: 'acct_org', chargesEnabled: true, detailsSubmitted: true, status: 'ready', country: 'BR' } });
 }
 async function connectMp() {
   await call(tp.startMercadoPagoOnboarding, {}, ORG); // creates the pending doc
@@ -241,10 +242,31 @@ describe('instant mode: Stripe Connect direct charge', () => {
     expect(opts.stripeAccount).toBe('acct_org');
     expect(params.line_items[0].price_data.unit_amount).toBe(2500);
     expect(params.line_items[0].quantity).toBe(2);
-    expect(params.payment_method_types).toEqual(['card']);
+    // BRL on a Brazilian account: cards (+ Apple/Google Pay) and Pix.
+    expect(params.payment_method_types).toEqual(['card', 'pix']);
     expect(params.application_fee_amount).toBeUndefined();
     expect(params.payment_intent_data.application_fee_amount).toBeUndefined();
     expect(params.expires_at * 1000 - Date.now()).toBeGreaterThanOrEqual(30 * 60000);
+  });
+
+  test('provider minimum amount is enforced on the server price', async () => {
+    await connectStripe();
+    await paidEvent('cheap', { price: 0.1, currency: '\$' });
+    const e = await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'cheap' }, BUYER));
+    expect(e.reason).toBe('amount_below_minimum');
+    expect(stripeCalls.length).toBe(0);
+    // USD on a BR account: cards only (no Pix).
+    await paidEvent('usd', { price: 10, currency: '\$' });
+    await call(tp.createTicketCheckout, { kind: 'event', id: 'usd' }, BUYER);
+    expect(stripeCalls[0].params.payment_method_types).toEqual(['card']);
+    expect(stripeCalls[0].params.line_items[0].price_data).toMatchObject({ currency: 'usd', unit_amount: 1000 });
+  });
+
+  test('zero-decimal currency: JPY price goes to Stripe without cents', async () => {
+    await connectStripe();
+    await paidEvent('yen', { price: 1500, currency: '¥' });
+    await call(tp.createTicketCheckout, { kind: 'event', id: 'yen' }, BUYER);
+    expect(stripeCalls[0].params.line_items[0].price_data).toMatchObject({ currency: 'jpy', unit_amount: 1500 });
   });
 
   test('organizer without a ready account cannot sell (no order, no seat held)', async () => {
@@ -277,7 +299,7 @@ describe('instant mode: Stripe Connect direct charge', () => {
     const forged = await handleStripeConnectWebhook(Buffer.from(ev.payload.replace('2500', '2501')), ev.header);
     expect(forged.status).toBe(400);
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('pending');
-    expect((await db.doc(`tickets/${r.orderId}`).get()).exists).toBe(false);
+    expect((await db.doc(`tickets/${r.orderId}_1`).get()).exists).toBe(false);
   });
 
   test('QR only after paid; paid is idempotent; amount mismatch is refused', async () => {
@@ -304,11 +326,11 @@ describe('instant mode: Stripe Connect direct charge', () => {
     expect(again.status).toBe(200);
     const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
     expect(o.status).toBe('paid');
-    const t = (await db.doc(`tickets/${r.orderId}`).get()).data()!;
+    const t = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!;
     expect(t.status).toBe('valid');
-    expect(verifyTicketQr(KEY, t.qrPayload)).toBe(r.orderId);
+    expect(verifyTicketQr(KEY, t.qrPayload)).toBe(`${r.orderId}_1`);
     const att = (await db.doc(`events/e1/attendees/${BUYER}`).get()).data()!;
-    expect(att).toMatchObject({ status: 'going', ticketId: r.orderId });
+    expect(att).toMatchObject({ status: "going", ticketId: `${r.orderId}_1` });
     expect((await db.doc('events/e1').get()).data()!.attendeeCount).toBe(1);
     expect((await db.doc('ticket_inventory/event_e1').get()).data()!.held).toBe(0);
 
@@ -323,11 +345,11 @@ describe('instant mode: Stripe Connect direct charge', () => {
     await paidEvent('e1');
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
     await stripePaid(r.orderId, 2500, 'cs_1', 'pi_refund');
-    const qr = (await db.doc(`tickets/${r.orderId}`).get()).data()!.qrPayload;
+    const qr = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!.qrPayload;
 
     const ref = stripeEvent('charge.refunded', { id: 'ch_1', payment_intent: 'pi_refund', amount: 2500, amount_refunded: 2500, refunded: true });
     expect((await handleStripeConnectWebhook(Buffer.from(ref.payload), ref.header)).status).toBe(200);
-    expect((await db.doc(`tickets/${r.orderId}`).get()).data()!.status).toBe('refunded');
+    expect((await db.doc(`tickets/${r.orderId}_1`).get()).data()!.status).toBe('refunded');
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('refunded');
     expect((await db.doc(`events/e1/attendees/${BUYER}`).get()).exists).toBe(false);
     const e = await refused(call(checkInTicket, { payload: qr, eventId: 'e1' }, ORG));
@@ -342,7 +364,7 @@ describe('instant mode: Stripe Connect direct charge', () => {
     await paidEvent('e1', { startDate: TS.fromMillis(Date.now() - 10 * 60000) });
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
     await stripePaid(r.orderId, 2500, 'cs_1');
-    const qr = (await db.doc(`tickets/${r.orderId}`).get()).data()!.qrPayload;
+    const qr = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!.qrPayload;
     expect((await refused(call(checkInTicket, { payload: ticketQrPayload('wrong-key-wrong-key-wrong-key-12345', r.orderId) }, ORG))).reason).toBe('invalid_code');
     expect((await refused(call(checkInTicket, { payload: qr }, STRANGER))).reason).toBe('not_scanner');
     const ok = await call(checkInTicket, { payload: qr, eventId: 'e1' }, ORG);
@@ -379,6 +401,17 @@ describe('instant mode: Mercado Pago', () => {
     expect(body.purpose).toBeUndefined(); // guest checkout allowed
   });
 
+  test('MP account currency is the only accepted currency (BRL account, USD listing -> refused)', async () => {
+    await connectMp();
+    expect((await db.doc(`payment_accounts/${ORG}`).get()).data()!.mercadoPago).toMatchObject({ siteId: 'MLB', currency: 'brl' });
+    await paidEvent('usd', { ticketProvider: 'mercadopago', currency: '\$' });
+    const e = await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'usd' }, BUYER));
+    expect(e.reason).toBe('currency_not_supported');
+    expect(mpCalls.some((c) => c.url.endsWith('/checkout/preferences'))).toBe(false);
+    await paidEvent('tiny', { ticketProvider: 'mercadopago', price: 0.5 });
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'tiny' }, BUYER))).reason).toBe('amount_below_minimum');
+  });
+
   test('bad x-signature -> 401; payment re-fetched: reference / amount mismatch refused; approved -> paid', async () => {
     const r = await mpOrder();
     const q = { o: r.orderId, 'data.id': '123456', type: 'payment' };
@@ -402,7 +435,7 @@ describe('instant mode: Mercado Pago', () => {
     const ok = await handleMercadoPagoWebhook(q2, {}, { 'x-signature': mpSignature('123457', 'req-4'), 'x-request-id': 'req-4' });
     expect(ok.status).toBe(200);
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('paid');
-    expect((await db.doc(`tickets/${r.orderId}`).get()).data()!.status).toBe('valid');
+    expect((await db.doc(`tickets/${r.orderId}_1`).get()).data()!.status).toBe('valid');
     // Every decision came from a GET on the payment with the organizer token.
     const gets = mpCalls.filter((c) => /\/v1\/payments\/\d+$/.test(c.url));
     expect(gets.length).toBeGreaterThanOrEqual(3);
@@ -411,7 +444,7 @@ describe('instant mode: Mercado Pago', () => {
     // Chargeback -> ticket invalid.
     mpPayment = { ...mpPayment, status: 'charged_back' };
     await handleMercadoPagoWebhook(q2, {}, { 'x-signature': mpSignature('123457', 'req-5'), 'x-request-id': 'req-5' });
-    expect((await db.doc(`tickets/${r.orderId}`).get()).data()!.status).toBe('disputed');
+    expect((await db.doc(`tickets/${r.orderId}_1`).get()).data()!.status).toBe('disputed');
   });
 });
 
@@ -445,6 +478,20 @@ describe('link mode: payment link + organizer confirmation', () => {
     expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER))).reason).toBe('organizer_payments_not_ready');
   });
 
+  test('a pasted Stripe / Mercado Pago link is never a manual method (needs the connected account)', async () => {
+    await db.doc(`profiles/${ORG}`).set({ paymentLinks: { stripe: 'https://buy.stripe.com/abc', mercadoPago: 'https://mpago.la/x' } }, { merge: true });
+    for (const m of ['stripe', 'mercadoPago']) {
+      await linkEvent({ ticketLinkMethod: m });
+      expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER))).reason).toBe('organizer_payments_not_ready');
+    }
+  });
+
+  test('link mode accepts any currency and shows the exact amount', async () => {
+    await linkEvent({ price: 12.5, currency: 'CHF' });
+    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
+    expect(r).toMatchObject({ amount: 1250, currency: 'chf' });
+  });
+
   test('buyer cannot self-confirm; only the listing organizer confirms; ticket + push follow', async () => {
     await linkEvent();
     const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1' }, BUYER);
@@ -459,18 +506,18 @@ describe('link mode: payment link + organizer confirmation', () => {
     // Clients cannot write the order directly either.
     expect(await clientWrite(BUYER, `ticket_orders/${r.orderId}`, { status: 'paid' }, ['status'])).toBe(403);
     expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()!.status).toBe('awaiting_confirmation');
-    expect((await db.doc(`tickets/${r.orderId}`).get()).exists).toBe(false);
+    expect((await db.doc(`tickets/${r.orderId}_1`).get()).exists).toBe(false);
 
     const c = await call(tp.confirmTicketPayment, { orderIds: [r.orderId] }, ORG);
     expect(c.results[r.orderId]).toBe('paid');
-    const t = (await db.doc(`tickets/${r.orderId}`).get()).data()!;
+    const t = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!;
     expect(t.status).toBe('valid');
     expect((await db.doc(`events/e1/attendees/${BUYER}`).get()).data()!.status).toBe('going');
     const ready = await db.collection('notifications').where('userId', '==', BUYER).where('type', '==', 'ticket_ready').get();
     expect(ready.size).toBe(1);
     // Ticket readable by the buyer only.
-    expect(await clientRead(BUYER, `tickets/${r.orderId}`)).toBe(200);
-    expect(await clientRead(ORG, `tickets/${r.orderId}`)).toBe(403);
+    expect(await clientRead(BUYER, `tickets/${r.orderId}_1`)).toBe(200);
+    expect(await clientRead(ORG, `tickets/${r.orderId}_1`)).toBe(403);
     expect(await clientRead(ORG, `ticket_orders/${r.orderId}`)).toBe(200);
     expect(await clientRead(STRANGER, `ticket_orders/${r.orderId}`)).toBe(403);
   });
@@ -533,7 +580,7 @@ describe('experiences: QR only after paid', () => {
     const b = (await db.doc('bookings/bk1').get()).data()!;
     expect(b.payment.status).toBe('paid');
     const code = await call(getBookingCheckInCode, { bookingId: 'bk1' }, BUYER);
-    expect(verifyTicketQr(KEY, code.qrPayload)).toBe(r.orderId);
+    expect(verifyTicketQr(KEY, code.qrPayload)).toBe(`${r.orderId}_1`);
   });
 });
 
@@ -582,5 +629,179 @@ describe('firestore.rules: paid events cannot be self-joined; free events unchan
     await db.doc(`events/e1/attendees/${BUYER}`).set({ userId: BUYER, status: 'going' });
     const legacy = `greengo:${JSON.stringify({ e: 'e1', u: BUYER })}`;
     expect((await refused(call(checkInEventAttendee, { payload: legacy, eventId: 'e1' }, ORG))).reason).toBe('legacy_ticket_rejected');
+  });
+});
+
+// ═══════════════════════════════════════════════ quantity, per-user limit, per-ticket QR
+
+describe('multiple tickets per purchase + per-user limit', () => {
+  test('default limit 4: holds count, concurrent orders cannot exceed it, refund frees the allowance', async () => {
+    await connectStripe();
+    await paidEvent('e1');
+    const a = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 3 }, BUYER);
+    // More than the remaining allowance while 3 are held: refused.
+    const e = await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 5 }, BUYER));
+    expect(e.reason).toBe('ticket_limit_reached');
+    // Racing devices of another buyer: the counter doc serialises them.
+    const both = await Promise.allSettled([
+      call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 3 }, OTHER),
+      call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 3 }, OTHER),
+    ]);
+    const h = (await db.doc(`ticket_holdings/event_e1_${OTHER}`).get()).data()!;
+    expect(h.held).toBeLessThanOrEqual(4);
+    expect(both.some((x) => x.status === 'fulfilled')).toBe(true);
+
+    await stripePaid(a.orderId, 7500);
+    const tickets = await db.collection('tickets').where('orderId', '==', a.orderId).get();
+    expect(tickets.size).toBe(3);
+    expect(new Set(tickets.docs.map((d) => d.data().qrPayload)).size).toBe(3);
+    expect((await db.doc(`ticket_holdings/event_e1_${BUYER}`).get()).data()).toMatchObject({ held: 0, owned: 3 });
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 2 }, BUYER))).reason).toBe('ticket_limit_reached');
+    const one = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 1 }, BUYER);
+    expect(one.orderId).toBeTruthy();
+    await call(tp.cancelTicketOrder, { orderId: one.orderId }, BUYER);
+
+    const ref = stripeEvent('charge.refunded', { id: 'ch_9', payment_intent: 'pi_1', amount: 7500, amount_refunded: 7500, refunded: true });
+    await handleStripeConnectWebhook(Buffer.from(ref.payload), ref.header);
+    expect((await db.doc(`ticket_holdings/event_e1_${BUYER}`).get()).data()!.owned).toBe(0);
+    const after = await db.collection('tickets').where('orderId', '==', a.orderId).get();
+    expect(after.docs.every((d) => d.data().status === 'refunded')).toBe(true);
+    const again = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 4 }, BUYER);
+    expect(again.orderId).toBeTruthy();
+  });
+
+  test('quantity above remaining capacity is refused; organizer-set limit and no limit', async () => {
+    await connectStripe();
+    await paidEvent('cap', { maxAttendees: 3, maxTicketsPerUser: null });
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'cap', quantity: 4 }, BUYER))).reason).toBe('sold_out');
+    const ok = await call(tp.createTicketCheckout, { kind: 'event', id: 'cap', quantity: 3 }, BUYER);
+    expect(ok.quantity).toBe(3);
+    await paidEvent('lim', { maxTicketsPerUser: 1 });
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'lim', quantity: 2 }, BUYER))).reason).toBe('ticket_limit_reached');
+  });
+
+  test('each ticket QR is single-use; the buyer party is admitted once', async () => {
+    await connectStripe();
+    await paidEvent('e1', { startDate: TS.fromMillis(Date.now() - 10 * 60000) });
+    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'e1', quantity: 2 }, BUYER);
+    await stripePaid(r.orderId, 5000);
+    const t1 = (await db.doc(`tickets/${r.orderId}_1`).get()).data()!.qrPayload;
+    const t2 = (await db.doc(`tickets/${r.orderId}_2`).get()).data()!.qrPayload;
+    expect((await call(checkInTicket, { payload: t1, eventId: 'e1' }, ORG)).alreadyCheckedIn).toBe(false);
+    expect((await call(checkInTicket, { payload: t1, eventId: 'e1' }, ORG)).alreadyCheckedIn).toBe(true);
+    expect((await call(checkInTicket, { payload: t2, eventId: 'e1' }, ORG)).alreadyCheckedIn).toBe(false);
+    const att = (await db.doc(`events/e1/attendees/${BUYER}`).get()).data()!;
+    expect(att).toMatchObject({ ticketCount: 2, guestCount: 1, checkedIn: true });
+    expect((await db.doc('events/e1').get()).data()!.attendeeCount).toBe(2);
+  });
+
+  test('checkout payload is built from the listing doc; client values ignored', async () => {
+    await connectStripe();
+    await paidEvent('e1', { title: 'Samba Night', locationName: 'Lapa', imageUrl: 'https://cdn.example/cover.jpg', timeZone: 'America/Sao_Paulo' });
+    await call(tp.createTicketCheckout, {
+      kind: 'event', id: 'e1', quantity: 2, title: 'HACK', price: 1, unitAmount: 1, imageUrl: 'https://evil.example/x.png', locale: 'pt-BR',
+    }, BUYER, { email: 'buyer@example.com' });
+    const p = stripeCalls[0].params;
+    const li = p.line_items[0];
+    expect(li.quantity).toBe(2);
+    expect(li.price_data).toMatchObject({ currency: 'brl', unit_amount: 2500 });
+    expect(li.price_data.product_data.name).toBe('Samba Night');
+    expect(li.price_data.product_data.description).toContain('Lapa');
+    expect(li.price_data.product_data.images).toEqual(['https://cdn.example/cover.jpg']);
+    expect(p.customer_email).toBe('buyer@example.com');
+    expect(p.locale).toBe('pt-BR');
+    expect(p.metadata).toMatchObject({ orderId: expect.any(String), listingKind: 'event', listingId: 'e1' });
+    expect(p.payment_intent_data.description).toBe('Samba Night × 2');
+    expect(p.payment_intent_data.statement_descriptor_suffix.length).toBeLessThanOrEqual(22);
+  });
+});
+
+describe('experiences: per_group pricing', () => {
+  test('total = groupPrice whatever the party size; ONE group ticket with partySize', async () => {
+    await db.doc('user_experiences/g1').set({ hostId: ORG, title: 'Private boat', status: 'published', pricingMode: 'per_group', groupPrice: 40000, maxGroupSize: 8, paymentProvider: 'link', paymentLinkMethod: 'pix' });
+    await db.doc('bookings/gb').set({
+      experienceId: 'g1', slotId: 's1', hostId: ORG, guestId: BUYER, guests: 6, status: 'confirmed', pricingMode: 'per_group', maxGroupSize: 8,
+      experienceTitle: 'Private boat', slotStart: TS.fromMillis(Date.now() + 2 * HOUR), slotEnd: TS.fromMillis(Date.now() + 4 * HOUR),
+      price: { unitAmount: 40000, currency: 'brl', totalAmount: 40000 },
+      payment: { mode: 'online', provider: 'link', linkMethod: 'pix', status: 'unpaid', orderId: null },
+    });
+    const r = await call(tp.createTicketCheckout, { kind: 'experience', id: 'g1', bookingId: 'gb', quantity: 6 }, BUYER);
+    expect(r).toMatchObject({ amount: 40000, quantity: 1 });
+    await call(tp.confirmTicketPayment, { orderId: r.orderId }, ORG);
+    const tks = await db.collection('tickets').where('orderId', '==', r.orderId).get();
+    expect(tks.size).toBe(1);
+    expect(tks.docs[0].data().partySize).toBe(6);
+  });
+});
+
+// ═══════════════════════════════════════════════ event ticket types
+
+describe('event ticket types', () => {
+  async function typedEvent(over: Record<string, any> = {}) {
+    await connectStripe();
+    await paidEvent('tt', { maxAttendees: 10, maxTicketsPerUser: 10, startDate: TS.fromMillis(Date.now() - 10 * 60000), ...over });
+    const types = db.collection('events/tt/ticket_types');
+    await types.doc('ga').set({ name: 'General', price: 2000, quantity: null, active: true, sortOrder: 0 });
+    await types.doc('vip').set({ name: 'VIP', description: 'Backstage', price: 8000, quantity: 2, maxPerUser: 2, active: true, sortOrder: 1 });
+    await types.doc('early').set({ name: 'Early bird', price: 1500, quantity: null, salesEnd: TS.fromMillis(Date.now() - 1000), active: true });
+    await types.doc('later').set({ name: 'Last minute', price: 3000, salesStart: TS.fromMillis(Date.now() + HOUR), active: true });
+    await types.doc('hidden').set({ name: 'Crew', price: 0, hidden: true, active: true });
+  }
+
+  test('multi-type order: total, one Stripe line per type, tickets carry their type', async () => {
+    await typedEvent();
+    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'ga', qty: 2 }, { typeId: 'vip', qty: 1 }], price: 1 }, BUYER);
+    const o = (await db.doc(`ticket_orders/${r.orderId}`).get()).data()!;
+    expect(o).toMatchObject({ totalAmount: 12000, quantity: 3 });
+    const li = stripeCalls[0].params.line_items;
+    expect(li).toHaveLength(2);
+    expect(li[0]).toMatchObject({ quantity: 2, price_data: { unit_amount: 2000 } });
+    expect(li[1]).toMatchObject({ quantity: 1, price_data: { unit_amount: 8000 } });
+    expect(li[1].price_data.product_data.name).toContain('VIP');
+    expect((await db.doc('events/tt/ticket_types/vip').get()).data()!.held).toBe(1);
+    await stripePaid(r.orderId, 12000);
+    const tickets = (await db.collection('tickets').where('orderId', '==', r.orderId).get()).docs.map((d) => d.data());
+    expect(tickets.map((t) => t.ticketTypeName).sort()).toEqual(['General', 'General', 'VIP']);
+    expect((await db.doc('events/tt/ticket_types/vip').get()).data()).toMatchObject({ held: 0, sold: 1 });
+    const vipQr = tickets.find((t) => t.ticketTypeId === 'vip')!.qrPayload;
+    const door = await call(checkInTicket, { payload: vipQr, eventId: 'tt' }, ORG);
+    expect(door.ticketTypeName).toBe('VIP');
+  });
+
+  test('per-type sold out, per-type limit, sales window, hidden types', async () => {
+    await typedEvent();
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'vip', qty: 3 }] }, BUYER))).reason).toBe('ticket_type_sold_out');
+    await call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'vip', qty: 2 }] }, OTHER);
+    // Last VIPs are held by OTHER: sold out for everyone else.
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'vip', qty: 1 }] }, BUYER))).reason).toBe('ticket_type_sold_out');
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'early', qty: 1 }] }, BUYER))).reason).toBe('ticket_type_sales_ended');
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'later', qty: 1 }] }, BUYER))).reason).toBe('ticket_type_sales_not_started');
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'hidden', qty: 1 }] }, BUYER))).reason).toBe('ticket_type_unavailable');
+  });
+
+  test('per-type maxPerUser and total capacity across types; concurrency on the last VIP', async () => {
+    await typedEvent({ maxAttendees: 3 });
+    await db.doc('events/tt/ticket_types/vip').update({ quantity: 1 });
+    expect((await refused(call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'ga', qty: 3 }, { typeId: 'vip', qty: 1 }] }, BUYER))).reason).toBe('sold_out');
+    const race = await Promise.allSettled([
+      call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'vip', qty: 1 }] }, BUYER),
+      call(tp.createTicketCheckout, { kind: 'event', id: 'tt', items: [{ typeId: 'vip', qty: 1 }] }, OTHER),
+    ]);
+    expect(race.filter((x) => x.status === 'fulfilled')).toHaveLength(1);
+    expect((await db.doc('events/tt/ticket_types/vip').get()).data()!.held).toBe(1);
+  });
+
+  test('legacy event without types still sells its single price', async () => {
+    await connectStripe();
+    await paidEvent('legacy1');
+    const r = await call(tp.createTicketCheckout, { kind: 'event', id: 'legacy1', quantity: 1 }, BUYER);
+    expect((await db.doc(`ticket_orders/${r.orderId}`).get()).data()).toMatchObject({ totalAmount: 2500, items: null });
+  });
+
+  test('clients cannot touch the sale counters of a type', async () => {
+    await typedEvent();
+    expect(await clientWrite(ORG, 'events/tt/ticket_types/ga', { sold: 0, held: 0, name: 'General', price: 2500 }, ['price'])).toBe(200);
+    expect(await clientWrite(ORG, 'events/tt/ticket_types/ga', { sold: 99 }, ['sold'])).toBe(403);
+    expect(await clientWrite(STRANGER, 'events/tt/ticket_types/ga', { price: 1 }, ['price'])).toBe(403);
   });
 });

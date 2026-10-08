@@ -31,18 +31,8 @@ export class ProviderError extends Error {
   }
 }
 
-// ─────────────────────────────────────────────────────────── money helpers
-
-const ZERO_DECIMAL = new Set(['bif', 'clp', 'djf', 'gnf', 'jpy', 'kmf', 'krw', 'mga', 'pyg', 'rwf',
-  'ugx', 'vnd', 'vuv', 'xaf', 'xof', 'xpf']);
-export function exponentOf(currency: string): number { return ZERO_DECIMAL.has(currency.toLowerCase()) ? 0 : 2; }
-export function toMinor(major: number, currency: string): number {
-  const f = 10 ** exponentOf(currency);
-  return Math.round(Number((major * f).toFixed(6)));
-}
-export function toMajor(minor: number, currency: string): number {
-  return minor / 10 ** exponentOf(currency);
-}
+// Money helpers live in ./currency (pure, unit-tested).
+export { exponentOf, toMinor, toMajor } from './currency';
 
 // ─────────────────────────────────────────────────────────── Stripe
 
@@ -88,39 +78,24 @@ export async function stripeRetrieveAccount(accountId: string): Promise<Stripe.A
   return ticketDeps.stripe().accounts.retrieve(accountId);
 }
 
-export interface CheckoutInput {
-  orderId: string;
-  title: string;
-  unitAmount: number;
-  quantity: number;
-  currency: string;
-  successUrl: string;
-  cancelUrl: string;
-  expiresAtMs: number;
-  buyerEmail?: string | null;
-}
+export type { CheckoutInput } from './checkoutPayload';
+import { CheckoutInput, mpPreferenceBody, stripeSessionParams } from './checkoutPayload';
 
 /** Direct charge on the connected account. Cards + Apple Pay / Google Pay (wallets ride on `card`). */
 export async function stripeCreateCheckout(accountId: string, i: CheckoutInput): Promise<{ id: string; url: string }> {
-  const s = await ticketDeps.stripe().checkout.sessions.create({
-    mode: 'payment',
-    payment_method_types: ['card'],
-    line_items: [{
-      quantity: i.quantity,
-      price_data: {
-        currency: i.currency,
-        unit_amount: i.unitAmount,
-        product_data: { name: i.title.slice(0, 250) || 'Ticket' },
-      },
-    }],
-    client_reference_id: i.orderId,
-    metadata: { orderId: i.orderId, greengo: 'ticket' },
-    payment_intent_data: { metadata: { orderId: i.orderId, greengo: 'ticket' } },
-    success_url: i.successUrl,
-    cancel_url: i.cancelUrl,
-    expires_at: Math.floor(i.expiresAtMs / 1000),
-    ...(i.buyerEmail ? { customer_email: i.buyerEmail } : {}),
-  }, { stripeAccount: accountId, idempotencyKey: `gg_tco_${i.orderId}` });
+  const types = i.paymentMethodTypes && i.paymentMethodTypes.length ? i.paymentMethodTypes : ['card'];
+  try {
+    return await stripeSession(accountId, i, types);
+  } catch (e) {
+    // Pix not activated on this connected account: cards + wallets only.
+    if (types.includes('pix')) return stripeSession(accountId, { ...i, orderId: i.orderId }, ['card'], '_card');
+    throw e;
+  }
+}
+
+async function stripeSession(accountId: string, i: CheckoutInput, types: string[], keySuffix = ''): Promise<{ id: string; url: string }> {
+  const s = await ticketDeps.stripe().checkout.sessions.create(stripeSessionParams(i, types) as any,
+ { stripeAccount: accountId, idempotencyKey: `gg_tco_${i.orderId}${keySuffix}` });
   if (!s.url) throw new ProviderError('provider_no_url');
   return { id: s.id, url: s.url };
 }
@@ -208,30 +183,8 @@ export async function mpRefresh(refreshToken: string): Promise<MpTokens> {
 }
 
 /** Checkout Pro preference on the organizer's account. Pix + cards + MP balance; no boleto / ATM. */
-export async function mpCreatePreference(token: string, i: CheckoutInput & { notificationUrl: string; pendingUrl: string }): Promise<{ id: string; url: string }> {
-  const body = {
-    items: [{
-      id: i.orderId,
-      title: i.title.slice(0, 250) || 'Ticket',
-      quantity: i.quantity,
-      unit_price: toMajor(i.unitAmount, i.currency),
-      currency_id: i.currency.toUpperCase(),
-      category_id: 'tickets',
-    }],
-    external_reference: i.orderId,
-    metadata: { order_id: i.orderId, greengo: 'ticket' },
-    notification_url: i.notificationUrl,
-    back_urls: { success: i.successUrl, failure: i.cancelUrl, pending: i.pendingUrl },
-    auto_return: 'approved',
-    expires: true,
-    expiration_date_from: new Date(ticketDeps.now() - 60000).toISOString(),
-    expiration_date_to: new Date(i.expiresAtMs).toISOString(),
-    date_of_expiration: new Date(i.expiresAtMs).toISOString(),
-    payment_methods: {
-      excluded_payment_types: [{ id: 'ticket' }, { id: 'atm' }],
-    },
-    ...(i.buyerEmail ? { payer: { email: i.buyerEmail } } : {}),
-  };
+export async function mpCreatePreference(token: string, i: CheckoutInput): Promise<{ id: string; url: string }> {
+  const body = mpPreferenceBody(i);
   const r = await mpJson('/checkout/preferences', {
     method: 'POST',
     token,
@@ -241,6 +194,15 @@ export async function mpCreatePreference(token: string, i: CheckoutInput & { not
   const url = cfg.mpUseSandbox() ? (r?.sandbox_init_point || r?.init_point) : r?.init_point;
   if (!r?.id || !url) throw new ProviderError('provider_no_url');
   return { id: String(r.id), url: String(url) };
+}
+
+/** The organizer's MP account (site => the only currency it charges in). */
+export async function mpGetMe(token: string): Promise<{ siteId: string | null; countryId: string | null }> {
+  const r = await mpJson('/users/me', { method: 'GET', token });
+  return {
+    siteId: typeof r?.site_id === 'string' ? r.site_id : null,
+    countryId: typeof r?.country_id === 'string' ? r.country_id : null,
+  };
 }
 
 export interface MpPayment {

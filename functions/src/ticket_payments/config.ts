@@ -35,7 +35,9 @@ export const STRIPE_EXPIRY_MARGIN_SECONDS = 90;
 /** Any user who completes Stripe / MP onboarding may sell (the provider does KYC). */
 export const SELLER_GATE: 'provider_onboarding' = 'provider_onboarding';
 /** Max tickets per order (events also cap at 1 + guestsAllowedPerAttendee). */
-export const MAX_QUANTITY = 10;
+export const MAX_QUANTITY = 100;
+/** Per-user ticket limit when a listing does not set maxTicketsPerUser (null/0 there = no limit). */
+export const DEFAULT_MAX_TICKETS_PER_USER = 4;
 /** Refresh MP tokens this long before they expire. */
 export const MP_REFRESH_BEFORE_MS = 10 * 24 * 60 * 60 * 1000;
 
@@ -66,13 +68,15 @@ export const REMIND_EVERY_HOURS = 12;
 export const RECEIPT_MAX_MB = 5;
 
 /**
- * Link-mode methods. The first 11 are Profile > Payment methods keys
+ * Link-mode methods. The first 9 are Profile > Payment methods keys
  * (profiles/{uid}.paymentLinks); 'cash' and 'bankTransfer' are listing-only
  * (instructions in ticketPaymentInstructions) and ALSO need the organizer's
  * confirmation before any QR exists (no pay-at-the-door QR).
  */
-export const PROFILE_LINK_METHODS = ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo', 'cashApp',
-  'revolut', 'wise', 'monzo', 'kofi', 'stripe'] as const;
+// Pasted Stripe / Mercado Pago links are NOT manual options: those two
+// providers are always the connected (instant) mode.
+export const PROFILE_LINK_METHODS = ['pix', 'picPay', 'paypal', 'venmo', 'cashApp',
+  'revolut', 'wise', 'monzo', 'kofi'] as const;
 export const LISTING_ONLY_METHODS = ['cash', 'bankTransfer'] as const;
 export function isLinkMethod(v: unknown): v is string {
   return typeof v === 'string'
@@ -86,6 +90,7 @@ export const COL = {
   tickets: 'tickets',
   inventory: 'ticket_inventory',
   codes: 'ticket_codes',
+  holdings: 'ticket_holdings',
   events: 'payment_events',
 } as const;
 

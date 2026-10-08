@@ -202,7 +202,13 @@ export const getEventTicketCode = withAuth(async (uid, data) => {
     const t = await validTicketFor(att.data()?.ticketId, eventId, uid);
     if (!t) fail('failed-precondition', 'ticket_required');
     if (t.status !== 'valid') fail('failed-precondition', 'ticket_not_valid', { status: t.status });
-    return { eventId, userId: uid, code: null, qrPayload: t.qrPayload, ticketId: att.data()?.ticketId };
+    // Every ticket of the buyer for this event (each with its own QR).
+    const all = await admin.firestore().collection('tickets')
+      .where('buyerId', '==', uid).where('listingId', '==', eventId).limit(100).get();
+    const tickets = all.docs.map((d) => d.data())
+      .filter((x) => x.kind === 'event' && x.status === 'valid')
+      .map((x) => ({ ticketId: x.ticketId, qrPayload: x.qrPayload, checkedIn: !!x.checkedInAt }));
+    return { eventId, userId: uid, code: null, qrPayload: t.qrPayload, ticketId: att.data()?.ticketId, tickets };
   }
   const code = eventTicketCode(await ticketSecret(), eventId, uid);
   return { eventId, userId: uid, code, qrPayload: eventTicketPayload(eventId, uid, code) };
@@ -288,9 +294,6 @@ export async function admitEventAttendee(
       checkedInBy: uid,
       checkInMethod: ticketId ? 'ticket' : verified ? 'signed' : 'legacy',
     });
-    if (tSnap) {
-      tx.update(tSnap.ref, { checkedInAt: admin.firestore.FieldValue.serverTimestamp(), checkedInBy: uid });
-    }
     return { already: false, a };
   });
 
@@ -336,13 +339,35 @@ export async function checkInPaidTicket(
     const ev = evSnap.data() as Record<string, any>;
     if (!canScanEvent(uid, ev)) fail('permission-denied', 'not_scanner');
     if (t.status !== 'valid') fail('permission-denied', 'ticket_not_valid', { status: t.status });
-    return admitEventAttendee(uid, t.listingId, t.buyerId, ev, true, ticketId);
+    // Admits the buyer's party on the roster (idempotent), then uses THIS ticket.
+    const r = await admitEventAttendee(uid, t.listingId, t.buyerId, ev, true, ticketId);
+    const already = await useTicketOnce(ticketId, uid);
+    return {
+      ...r, ticketId, partySize: Number(t.partySize) || 1, alreadyCheckedIn: already, guestCount: 0,
+      ticketTypeId: t.ticketTypeId ?? null, ticketTypeName: t.ticketTypeName ?? null,
+    };
   }
   if (open.eventId) fail('failed-precondition', 'wrong_event');
   if (open.experienceId && open.experienceId !== t.listingId) fail('failed-precondition', 'wrong_experience');
-  // checkInBooking checks host / helper rights and re-checks payment.status.
+  // checkInBooking checks host / helper rights, the slot's time window and
+  // re-checks payment.status (idempotent), then THIS ticket is used.
   const r = await checkInBookingWithTicket(uid, t, open.experienceId ?? null);
-  return { kind: 'experience', ...r };
+  const already = await useTicketOnce(ticketId, uid);
+  const party = Number(t.partySize) || 1;
+  return { kind: 'experience', ...r, ticketId, partySize: party, guests: party, alreadyCheckedIn: already };
+}
+
+/** Marks a paid ticket used; true when it had already been used (single-use QR). */
+async function useTicketOnce(ticketId: string, byUid: string): Promise<boolean> {
+  const db = admin.firestore();
+  const ref = db.collection('tickets').doc(ticketId);
+  return db.runTransaction(async (tx) => {
+    const t = (await tx.get(ref)).data();
+    if (!t || t.status !== 'valid') fail('permission-denied', 'ticket_not_valid', { status: t?.status ?? null });
+    if (t.checkedInAt) return true;
+    tx.update(ref, { checkedInAt: admin.firestore.FieldValue.serverTimestamp(), checkedInBy: byUid });
+    return false;
+  });
 }
 
 /** Callable for new clients: any paid ticket QR. data: { payload, eventId?, experienceId? } */

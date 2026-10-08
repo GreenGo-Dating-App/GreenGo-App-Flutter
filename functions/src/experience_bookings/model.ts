@@ -337,6 +337,16 @@ const CURRENCY_SYMBOLS: Record<string, string> = {
   '$': 'usd', 'us$': 'usd', '€': 'eur', '£': 'gbp', 'r$': 'brl', '¥': 'jpy',
 };
 
+/** per_group party size bounds; null when [guests] fits. */
+export function groupSizeError(e: Record<string, unknown>, guests: number): 'too_many_guests' | 'too_few_guests' | null {
+  if (pricingModeOf(e) !== 'per_group') return null;
+  const max = Number.isInteger(e.maxGroupSize) ? (e.maxGroupSize as number) : null;
+  const min = Number.isInteger(e.minGroupSize) ? (e.minGroupSize as number) : 1;
+  if (max !== null && guests > max) return 'too_many_guests';
+  if (guests < min) return 'too_few_guests';
+  return null;
+}
+
 export function normalizeCurrency(c: unknown): string | null {
   if (typeof c !== 'string') return null;
   const v = c.trim().toLowerCase();
@@ -367,11 +377,81 @@ export type PriceResult =
   | { ok: true; free: boolean; price: BookingPrice }
   | { ok: false; reason: 'invalid_price' | 'currency_missing' | 'amount_too_large' };
 
-/** Price for [guests] seats, from the EXPERIENCE doc only. */
+/** 'per_person' (default, also for every doc without the field) | 'per_group'. */
+export function pricingModeOf(e: Record<string, unknown>): 'per_person' | 'per_group' {
+  return e.pricingMode === 'per_group' ? 'per_group' : 'per_person';
+}
+
+/** IANA zone of the host's listing (availability.timezone / timeZone), else UTC. */
+export function listingTimeZone(e: Record<string, unknown>): string {
+  const a = e.availability as Record<string, unknown> | undefined;
+  const tz = (a && typeof a.timezone === 'string' ? a.timezone : null) ?? (typeof e.timeZone === 'string' ? e.timeZone : null);
+  try {
+    if (tz) { new Intl.DateTimeFormat('en-US', { timeZone: tz }); return tz; }
+  } catch { /* invalid zone */ }
+  return 'UTC';
+}
+
+/** Local date (YYYY-MM-DD) and ISO weekday (1 = Mon .. 7 = Sun) of [ms] in [tz]. */
+export function localDay(ms: number, tz: string): { date: string; weekday: number } {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit', weekday: 'short',
+  }).formatToParts(new Date(ms));
+  const get = (t: string) => parts.find((p) => p.type === t)?.value ?? '';
+  const wd = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].indexOf(get('weekday')) + 1;
+  return { date: `${get('year')}-${get('month')}-${get('day')}`, weekday: wd };
+}
+
+export type PriceRule = 'base' | 'weekend' | 'day';
+
+/**
+ * Date-based price of ONE unit (per_person: price per person, major units;
+ * per_group: groupPrice, minor units) for a slot starting at [startMs].
+ * Precedence: dayOverrides[date].priceOverride > weekendPrice on weekendDays
+ * (default Sat + Sun) > base. Resolved in the HOST's time zone.
+ */
+export function resolveDatePrice(e: Record<string, unknown>, startMs: number | null):
+  { value: number | null; rule: PriceRule } {
+  const group = pricingModeOf(e) === 'per_group';
+  const base = group ? e.groupPrice : e.price;
+  const baseNum = typeof base === 'number' && Number.isFinite(base) ? base : null;
+  if (startMs === null) return { value: baseNum, rule: 'base' };
+  const { date, weekday } = localDay(startMs, listingTimeZone(e));
+  const overrides = (e.dayOverrides ?? (e.availability as any)?.dayOverrides) as Record<string, any> | undefined;
+  const o = overrides && typeof overrides === 'object' ? overrides[date] : undefined;
+  if (o && typeof o.priceOverride === 'number' && o.priceOverride > 0) return { value: o.priceOverride, rule: 'day' };
+  const wdays = Array.isArray(e.weekendDays) && e.weekendDays.length
+    ? (e.weekendDays as unknown[]).filter((x): x is number => Number.isInteger(x))
+    : [6, 7];
+  if (typeof e.weekendPrice === 'number' && e.weekendPrice > 0 && wdays.includes(weekday)) {
+    return { value: e.weekendPrice, rule: 'weekend' };
+  }
+  return { value: baseNum, rule: 'base' };
+}
+
+/**
+ * Price for [guests] seats, from the EXPERIENCE doc only.
+ * per_group: ONE fixed groupPrice (integer minor units) for a party of
+ * minGroupSize..maxGroupSize, whatever its size.
+ */
 export function computeBookingPrice(
   experience: Record<string, unknown>,
   guests: number,
+  startMs: number | null = null,
 ): PriceResult {
+  const dated = resolveDatePrice(experience, startMs);
+  if (dated.rule !== 'base') {
+    experience = pricingModeOf(experience) === 'per_group'
+      ? { ...experience, groupPrice: dated.value }
+      : { ...experience, price: dated.value };
+  }
+  if (pricingModeOf(experience) === 'per_group' && experience.isFree !== true) {
+    const gp = experience.groupPrice;
+    const currency = normalizeCurrency(experience.currency);
+    if (!currency) return { ok: false, reason: 'currency_missing' };
+    if (!Number.isSafeInteger(gp) || (gp as number) <= 0) return { ok: false, reason: 'invalid_price' };
+    return { ok: true, free: false, price: { unitAmount: gp as number, currency, totalAmount: gp as number } };
+  }
   const raw = experience.price;
   const priceNum = typeof raw === 'number' && Number.isFinite(raw) ? raw : null;
   const free = experience.isFree === true || priceNum === 0;
@@ -393,8 +473,8 @@ export const PAYMENT_METHODS = ['cash', 'link', 'online'] as const;
 /** In-app ticket payment providers (ticket_payments/). */
 export const ONLINE_PROVIDERS = ['stripe', 'mercadopago', 'link'] as const;
 /** Link-mode methods (ticket_payments/config.ts isLinkMethod mirror). */
-const LINK_METHODS = ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
-  'monzo', 'kofi', 'stripe', 'cash', 'bankTransfer'];
+const LINK_METHODS = ['pix', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
+  'monzo', 'kofi', 'cash', 'bankTransfer'];
 export function linkMethodOf(e: Record<string, unknown>): string | null {
   const m = e.paymentLinkMethod;
   return typeof m === 'string' && LINK_METHODS.includes(m) ? m : null;

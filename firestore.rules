@@ -1703,10 +1703,19 @@ service cloud.firestore {
       // `where('visibility','==','public')` to every list query + matching
       // composite indexes (tracked follow-up) — NOT by re-tightening this rule.
       allow read: if isSignedIn();
+      // Paid tickets: per-user limit (null / 0 = none, else 1..100) and the
+      // sale mode ('link' = organizer confirms, 'stripe' / 'mercadopago' = instant).
+      function validTicketing(d) {
+        return (d.get('maxTicketsPerUser', null) == null
+                || (d.maxTicketsPerUser is int && d.maxTicketsPerUser >= 0 && d.maxTicketsPerUser <= 100))
+          && (d.get('ticketProvider', null) == null
+              || d.ticketProvider in ['link', 'stripe', 'mercadopago']);
+      }
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
         && request.resource.data.organizerId == request.auth.uid
-        && validCoOrganizers(request.resource.data);
+        && validCoOrganizers(request.resource.data)
+        && validTicketing(request.resource.data);
       // Delete stays CREATOR-only (co-owners cannot delete).
       allow delete: if isOrganizer();
       // Organizer has full update rights. Additionally ANY signed-in user may
@@ -1716,7 +1725,8 @@ service cloud.firestore {
       // On a PAID event the counters belong to the server (seats are sold by
       // createTicketCheckout / the payment confirmation): others may only bump
       // viewCount there.
-      allow update: if (isOrganizer() && validCoOrganizers(request.resource.data))
+      allow update: if (isOrganizer() && validCoOrganizers(request.resource.data)
+                        && validTicketing(request.resource.data))
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
                  .hasOnly(['viewCount']))
@@ -1830,6 +1840,36 @@ service cloud.firestore {
           && !touchesTicket();
         // Delegated scanners (allowedScannerIds) no longer write here: they
         // check people in through checkInEventAttendee like the organizer.
+      }
+
+      // Ticket types (paid tickets): the organizer / co-owners manage them;
+      // the sale counters (sold / held) are written ONLY by the server
+      // (createTicketCheckout + payment confirmation, in transactions).
+      match /ticket_types/{typeId} {
+        function typeOwner() {
+          return isSignedIn() && (
+            get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid
+            || request.auth.uid in get(/databases/$(database)/documents/events/$(eventId)).data.get('coOrganizerIds', []));
+        }
+        function validType(d) {
+          return d.name is string && d.name.size() >= 1 && d.name.size() <= 80
+            && (d.get('description', null) == null || (d.description is string && d.description.size() <= 300))
+            && d.price is int && d.price >= 0
+            && (d.get('quantity', null) == null || (d.quantity is int && d.quantity >= 0 && d.quantity <= 100000))
+            && (d.get('maxPerUser', null) == null || (d.maxPerUser is int && d.maxPerUser >= 0 && d.maxPerUser <= 100))
+            && (d.get('hidden', false) is bool) && (d.get('active', true) is bool)
+            && (d.get('sortOrder', 0) is int);
+        }
+        allow read: if isSignedIn();
+        allow create: if typeOwner() && validType(request.resource.data)
+          && request.resource.data.get('sold', 0) == 0
+          && request.resource.data.get('held', 0) == 0;
+        allow update: if typeOwner() && validType(request.resource.data)
+          && request.resource.data.get('sold', 0) == resource.data.get('sold', 0)
+          && request.resource.data.get('held', 0) == resource.data.get('held', 0);
+        // A type with sold tickets is never deleted (stop selling instead);
+        // already issued tickets keep their own type name and price.
+        allow delete: if typeOwner() && resource.data.get('sold', 0) == 0 && resource.data.get('held', 0) == 0;
       }
 
       // Likes — one doc per user; likeCount kept current by onEventLikeWrite CF.
@@ -2205,10 +2245,17 @@ service cloud.firestore {
           && (d.get('paymentProvider', null) == null
               || d.paymentProvider in ['stripe', 'mercadopago', 'link'])
           && (d.get('paymentLinkMethod', null) == null
-              || d.paymentLinkMethod in ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo',
-                   'cashApp', 'revolut', 'wise', 'monzo', 'kofi', 'stripe', 'cash', 'bankTransfer'])
+              || d.paymentLinkMethod in ['pix', 'picPay', 'paypal', 'venmo',
+                   'cashApp', 'revolut', 'wise', 'monzo', 'kofi', 'cash', 'bankTransfer'])
           && (d.get('paymentInstructions', null) == null
               || (d.paymentInstructions is string && d.paymentInstructions.size() <= 500))
+          && (d.get('pricingMode', 'per_person') in ['per_person', 'per_group'])
+          && (d.get('pricingMode', 'per_person') == 'per_person'
+              || d.get('isFree', false) == true
+              || (d.get('groupPrice', null) is int && d.groupPrice > 0
+                  && d.maxGroupSize is int && d.maxGroupSize >= 2 && d.maxGroupSize <= 100))
+          && (d.get('maxTicketsPerUser', null) == null
+              || (d.maxTicketsPerUser is int && d.maxTicketsPerUser >= 0 && d.maxTicketsPerUser <= 100))
           // Bookings: the host approves each request (snapshotted per booking).
           && (d.get('requestToBook', false) is bool);
       }
