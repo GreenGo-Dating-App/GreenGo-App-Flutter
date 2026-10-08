@@ -15,7 +15,8 @@ import * as crypto from 'crypto';
 import { welcomeEmailCopy } from '../emails/welcomeEmailCopy';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
-import { requireAdmin, AdminRole, SUPER_ADMIN_ONLY, SUPPORT_ROLES } from '../shared/adminAuth';
+import { requireAdmin, adminRoleFromDoc, AdminRole, SUPER_ADMIN_ONLY, SUPPORT_ROLES } from '../shared/adminAuth';
+import { setAdmin2faClaim } from './adminClaims';
 import { scrubPII, redact } from '../shared/redact';
 
 const db = admin.firestore();
@@ -239,14 +240,28 @@ export const verify2FACode = functions
 
       await codeDocRef.delete();
 
+      // H-07: bind the verification to the server. The `admin2faUntil` claim
+      // (8h, bound to this session's auth_time) is what requireAdmin checks for
+      // dangerous actions; the panel refreshes its ID token (getIdToken(true))
+      // right after this call so the claim is present.
+      let admin2faUntil: number | null = null;
+      if (await adminRoleFromDoc(uid)) {
+        try {
+          admin2faUntil = await setAdmin2faClaim(uid, context.auth.token?.auth_time);
+        } catch (claimError: any) {
+          console.error('verify2FACode: could not set the 2FA claim:', claimError?.message || claimError);
+        }
+      }
+
       await db.collection('security_audit_logs').add({
         action: '2FA_VERIFIED',
         targetUserId: uid,
         severity: 'medium',
+        claimSet: admin2faUntil !== null,
         timestamp: admin.firestore.FieldValue.serverTimestamp(),
       });
 
-      return { success: true };
+      return { success: true, admin2faUntil };
     } catch (error: any) {
       console.error('Error verifying 2FA code:', error);
       throw new functions.https.HttpsError('internal', 'Failed to verify code');

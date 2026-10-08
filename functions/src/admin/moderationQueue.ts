@@ -6,30 +6,59 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { MODERATION_ROLES, requireAdmin } from '../shared/adminAuth';
 import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
 
 const firestore = admin.firestore();
 
 /**
  * Verify Moderator Permission Helper
+ *
+ * P1-6: the admin panel roles (admin_users / `adminRole` claim) are the only
+ * source of truth. The legacy `moderator` / `admin` boolean claims checked here
+ * before were set by nothing, so panel moderators could not use these
+ * callables at all (and fell back to direct writes that the rules deny).
  */
 async function verifyModeratorPermission(
   context: functions.https.CallableContext
 ): Promise<void> {
-  if (!context.auth) {
-    throw new functions.https.HttpsError(
-      'unauthenticated',
-      'User must be authenticated'
-    );
-  }
+  await requireAdmin(context.auth as any, MODERATION_ROLES);
+}
 
-  const customClaims = context.auth.token;
-  if (!customClaims.moderator && !customClaims.admin) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      'Only moderators can access moderation queue'
-    );
+/**
+ * Statement of reasons (DSA art. 17). The moderator picks a code and writes a
+ * short explanation; both are stored on the queue item, the action log and the
+ * related reports. Optional on the wire for backward compatibility; the admin
+ * panel always sends them.
+ */
+export const STATEMENT_REASON_CODES = [
+  'csae', 'underage', 'sexual_content', 'inappropriate', 'threats', 'violence',
+  'harassment', 'hate', 'spam', 'scam', 'impersonation', 'privacy', 'misleading',
+  'no_show', 'off_platform_payment', 'other', 'no_violation',
+] as const;
+export type StatementReasonCode = typeof STATEMENT_REASON_CODES[number];
+const MAX_EXPLANATION = 2000;
+
+export interface StatementOfReasons {
+  reasonCode: StatementReasonCode;
+  explanation: string;
+}
+
+/** Validates the optional statement of reasons; throws invalid-argument. */
+export function parseStatementOfReasons(data: any): StatementOfReasons | null {
+  const reasonCode = data?.reasonCode ?? data?.statementOfReasons?.reasonCode;
+  const explanation = data?.explanation ?? data?.statementOfReasons?.explanation;
+  if (reasonCode === undefined && explanation === undefined) return null;
+  if (typeof reasonCode !== 'string' || !(STATEMENT_REASON_CODES as readonly string[]).includes(reasonCode)) {
+    throw new functions.https.HttpsError('invalid-argument', 'reasonCode is not a known statement-of-reasons code');
   }
+  if (typeof explanation !== 'string' || explanation.trim().length < 5) {
+    throw new functions.https.HttpsError('invalid-argument', 'explanation must be at least 5 characters');
+  }
+  if (explanation.length > MAX_EXPLANATION) {
+    throw new functions.https.HttpsError('invalid-argument', `explanation must be at most ${MAX_EXPLANATION} characters`);
+  }
+  return { reasonCode: reasonCode as StatementReasonCode, explanation: explanation.trim() };
 }
 
 /**
@@ -39,13 +68,15 @@ async function logModerationAction(
   moderatorId: string,
   queueId: string,
   action: string,
-  notes: string | null
+  notes: string | null,
+  statementOfReasons: StatementOfReasons | null = null
 ): Promise<void> {
   await firestore.collection('moderation_actions_log').add({
     moderatorId,
     queueId,
     action,
     notes,
+    statementOfReasons,
     timestamp: admin.firestore.FieldValue.serverTimestamp(),
   });
 }
@@ -248,6 +279,7 @@ export const getModerationReviewItem = functions.runWith({ memory: '512MB' }).ht
       return {
         actionType: data.action,
         reason: data.notes || '',
+        statementOfReasons: data.statementOfReasons || null,
         moderatorId: data.moderatorId,
         actionAt: data.timestamp,
       };
@@ -273,11 +305,24 @@ export const getModerationReviewItem = functions.runWith({ memory: '512MB' }).ht
       itemType: queueData.itemType,
       content: {
         itemId: queueData.itemId,
-        text: content?.description || content?.text || null,
+        text: content?.description || content?.text || content?.messageContent || queueData.content?.text || null,
         photoUrls: content?.screenshotUrls || content?.photoUrls || [],
         additionalData: content || {},
         createdAt: content?.createdAt || queueData.addedAt,
       },
+      // Report-pipeline fields (P1-12): what was reported, why, and the SLA.
+      source: queueData.source || null,
+      reportType: queueData.reportType || null,
+      contentRef: queueData.contentRef || null,
+      reason: queueData.reason || null,
+      reasonCode: queueData.reasonCode || queueData.metadata?.reasonCode || null,
+      priorityLevel: queueData.priorityLevel || null,
+      slaDueAt: queueData.slaDueAt || null,
+      reporterId: queueData.reporterId || queueData.metadata?.reporterId || null,
+      queueContent: queueData.content || null,
+      status: queueData.status || null,
+      assignedTo: queueData.assignedTo || null,
+      statementOfReasons: queueData.statementOfReasons || null,
       userContext,
       relatedReports,
       history,
@@ -397,72 +442,73 @@ export const assignModerationItem = functions
 export const takeModerationAction = functions.runWith({ memory: '512MB' }).https.onCall(monitored("takeModerationAction", async (data, context) => {
   await verifyModeratorPermission(context);
 
-  const { queueId, action, notes = null, parameters = {} } = data;
+  const { queueId, action, notes = null, parameters = {} } = data || {};
   const moderatorId = context.auth!.uid;
+  if (typeof queueId !== 'string' || !queueId) {
+    throw new functions.https.HttpsError('invalid-argument', 'queueId is required');
+  }
+  if (typeof action !== 'string' || !MODERATION_ACTIONS.has(action)) {
+    throw new functions.https.HttpsError('invalid-argument', `Unknown action: ${action}`);
+  }
+  const statementOfReasons = parseStatementOfReasons(data);
+
+  const queueDoc = await firestore.collection('moderation_queue').doc(queueId).get();
+  if (!queueDoc.exists) {
+    throw new functions.https.HttpsError('not-found', 'Queue item not found');
+  }
+  const queueData = queueDoc.data()!;
+  if (FINAL_QUEUE_STATUSES.has(queueData.status)) {
+    throw new functions.https.HttpsError('failed-precondition', `Queue item is already ${queueData.status}`);
+  }
+
+  // Execute the action FIRST. If it fails the item stays open (it used to be
+  // marked resolved anyway, so a failed ban looked like a handled report).
+  const reasonText = statementOfReasons?.explanation ?? notes;
+  try {
+    switch (action) {
+      case 'approve':
+        await approveContent(queueData);
+        break;
+      case 'dismiss':
+        await dismissReport(queueData);
+        break;
+      case 'removeContent':
+        await removeContent(queueData, moderatorId, statementOfReasons);
+        break;
+      case 'issueWarning':
+        await issueWarningToUser(targetUserId(queueData), queueData, reasonText);
+        break;
+      case 'suspendUser': {
+        const durationDays = Number(parameters.durationDays) > 0 ? Number(parameters.durationDays) : 7;
+        await suspendUser(targetUserId(queueData), reasonText, durationDays);
+        break;
+      }
+      case 'banUser':
+        await banUser(targetUserId(queueData), reasonText);
+        break;
+      case 'shadowBan':
+        await shadowBanUser(targetUserId(queueData));
+        break;
+      case 'requireVerification':
+        await requireVerification(targetUserId(queueData));
+        break;
+    }
+  } catch (err: any) {
+    if (err instanceof functions.https.HttpsError) throw err;
+    console.error(`takeModerationAction ${action} on ${queueId} failed:`, err);
+    throw new functions.https.HttpsError('aborted', `Action ${action} failed: ${err?.message || err}`);
+  }
 
   try {
-    const queueDoc = await firestore.collection('moderation_queue').doc(queueId).get();
-
-    if (!queueDoc.exists) {
-      throw new Error('Queue item not found');
-    }
-
-    const queueData = queueDoc.data()!;
-
-    // Execute the action
-    let success = true;
-    let errorMessage = null;
-
-    try {
-      switch (action) {
-        case 'approve':
-          // Mark content as approved
-          await approveContent(queueData);
-          break;
-
-        case 'dismiss':
-          // Dismiss report as invalid
-          await dismissReport(queueData);
-          break;
-
-        case 'removeContent':
-          // Delete the flagged content
-          await removeContent(queueData);
-          break;
-
-        case 'issueWarning':
-          // Issue warning to user
-          await issueWarningToUser(queueData.userId, queueData, notes);
-          break;
-
-        case 'suspendUser':
-          // Suspend user account
-          const durationDays = parameters.durationDays || 7;
-          await suspendUser(queueData.userId, notes, durationDays);
-          break;
-
-        case 'banUser':
-          // Ban user account
-          await banUser(queueData.userId, notes);
-          break;
-
-        case 'shadowBan':
-          // Shadow ban user
-          await shadowBanUser(queueData.userId);
-          break;
-
-        case 'requireVerification':
-          // Require user to verify identity
-          await requireVerification(queueData.userId);
-          break;
-
-        default:
-          throw new Error(`Unknown action: ${action}`);
-      }
-    } catch (err: any) {
-      success = false;
-      errorMessage = err.message;
-    }
+    const sor = statementOfReasons
+      ? {
+          ...statementOfReasons,
+          action,
+          decidedBy: moderatorId,
+          decidedAt: admin.firestore.FieldValue.serverTimestamp(),
+          automated: false,
+        }
+      : null;
 
     // Update queue item status
     await firestore.collection('moderation_queue').doc(queueId).update({
@@ -470,7 +516,8 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
       resolvedAt: admin.firestore.FieldValue.serverTimestamp(),
       resolvedBy: moderatorId,
       action,
-      moderatorNotes: notes,
+      moderatorNotes: notes ?? statementOfReasons?.explanation ?? null,
+      ...(sor ? { statementOfReasons: sor } : {}),
     });
 
     // Update all related reports
@@ -479,10 +526,11 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
       action,
       reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
       moderatorNotes: notes,
+      ...(statementOfReasons ? { resolutionReasonCode: statementOfReasons.reasonCode } : {}),
     });
 
     // Log moderation action
-    await logModerationAction(moderatorId, queueId, action, notes);
+    await logModerationAction(moderatorId, queueId, action, notes, statementOfReasons);
 
     // Log to admin audit
     await firestore.collection('admin_audit_log').add({
@@ -490,7 +538,7 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
       action: 'reviewedReport',
       targetType: 'moderation_queue',
       targetId: queueId,
-      details: { action, notes, userId: queueData.userId },
+      details: { action, notes, userId: queueData.userId, statementOfReasons },
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
     });
 
@@ -499,15 +547,40 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
       action,
       moderatorId,
       notes,
+      statementOfReasons,
       actionAt: admin.firestore.FieldValue.serverTimestamp(),
-      success,
-      errorMessage,
+      success: true,
+      errorMessage: null,
     };
   } catch (error: any) {
     console.error('Error taking moderation action:', error);
     throw new functions.https.HttpsError('internal', error.message);
   }
 }));
+
+const MODERATION_ACTIONS = new Set([
+  'approve', 'dismiss', 'removeContent', 'issueWarning', 'suspendUser', 'banUser', 'shadowBan', 'requireVerification',
+]);
+/** Statuses after which an item is closed (callables: resolved; old panel: completed). */
+const FINAL_QUEUE_STATUSES = new Set(['resolved', 'completed', 'dismissed', 'closed', 'actioned']);
+
+/** The reported user of an item; user-targeted actions need one. */
+function targetUserId(queueData: any): string {
+  const uid = queueData.userId || queueData.reportedUserId;
+  if (typeof uid !== 'string' || !uid) {
+    throw new functions.https.HttpsError('failed-precondition', 'This item has no reported user to act on');
+  }
+  return uid;
+}
+
+/** Best-effort mirror of an account restriction onto profiles/{uid} (what the panel's Users page reads). */
+async function mirrorProfileStatus(userId: string, patch: Record<string, unknown>): Promise<void> {
+  try {
+    await firestore.collection('profiles').doc(userId).update(patch);
+  } catch (e: any) {
+    if (e?.code !== 5) console.error(`Could not mirror status onto profiles/${userId}:`, e?.message || e);
+  }
+}
 
 /**
  * Helper: Approve Content
@@ -530,19 +603,75 @@ async function dismissReport(queueData: any): Promise<void> {
 
 /**
  * Helper: Remove Content
+ *
+ * Legacy item types (flaggedMessage / flaggedPhoto) plus the report-pipeline
+ * items (P1-12): a reported chat message is replaced for everyone, a reported
+ * event is cancelled, a reported experience is hidden. Content that cannot be
+ * removed from here throws, so the item stays open and the moderator picks
+ * another action (it used to be a silent no-op that still resolved the item).
  */
-async function removeContent(queueData: any): Promise<void> {
+async function removeContent(
+  queueData: any,
+  moderatorId: string,
+  statementOfReasons: StatementOfReasons | null
+): Promise<void> {
+  const moderation = {
+    reason: 'moderator_removed',
+    reasonCode: statementOfReasons?.reasonCode ?? null,
+    queueId: queueData.queueId ?? null,
+    removedBy: moderatorId,
+    removedAt: admin.firestore.FieldValue.serverTimestamp(),
+  };
   if (queueData.itemType === 'flaggedMessage') {
     await firestore.collection('messages').doc(queueData.itemId).update({
       deleted: true,
       deletedBy: 'moderator',
       deletedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
-  } else if (queueData.itemType === 'flaggedPhoto') {
+    return;
+  }
+  if (queueData.itemType === 'flaggedPhoto') {
     await firestore.collection('users').doc(queueData.userId).update({
       photos: admin.firestore.FieldValue.arrayRemove(queueData.metadata.photoUrl),
     });
+    return;
   }
+
+  const ref = queueData.contentRef;
+  const path: string | null = typeof ref?.path === 'string' ? ref.path : null;
+  if (ref?.type === 'message' && path && /^conversations\/[^/]+\/messages\/[^/]+$/.test(path)) {
+    // Same fields the app writes for "delete for everyone".
+    await firestore.doc(path).update({
+      isDeletedForEveryone: true,
+      deletedAt: admin.firestore.FieldValue.serverTimestamp(),
+      content: 'This message was removed by a moderator',
+      moderation,
+    });
+    return;
+  }
+  if (ref?.type === 'event' && path && /^events\/[^/]+$/.test(path)) {
+    const snap = await firestore.doc(path).get();
+    if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The reported event no longer exists');
+    await snap.ref.update({
+      status: 'cancelled',
+      moderation: { ...moderation, previousStatus: snap.data()?.status ?? null },
+    });
+    return;
+  }
+  if (ref?.type === 'experience' && path && /^user_experiences\/[^/]+$/.test(path)) {
+    const snap = await firestore.doc(path).get();
+    if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The reported experience no longer exists');
+    const prev = snap.data()?.status;
+    await snap.ref.update({
+      status: 'hidden',
+      moderation: { ...moderation, previousStatus: prev === 'published' ? 'published' : 'draft' },
+    });
+    return;
+  }
+  throw new functions.https.HttpsError(
+    'failed-precondition',
+    'This report type has no removable content here; use a user action (warn, suspend, ban) or dismiss'
+  );
 }
 
 /**
@@ -555,7 +684,7 @@ async function issueWarningToUser(
 ): Promise<void> {
   await firestore.collection('user_warnings').add({
     userId,
-    reason: queueData.metadata.category || 'Policy violation',
+    reason: queueData.metadata?.category || queueData.reasonCode || 'Policy violation',
     description: notes || 'Content violated community guidelines',
     severity: 'moderate',
     issuedAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -580,6 +709,12 @@ async function suspendUser(
     suspendedUntil: admin.firestore.Timestamp.fromDate(suspendedUntil),
     suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
   });
+  await mirrorProfileStatus(userId, {
+    status: 'suspended',
+    suspensionReason: reason || 'Policy violation',
+    suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
+    suspendedUntil: admin.firestore.Timestamp.fromDate(suspendedUntil),
+  });
   await syncHostExperiencesForBan(userId, true);
 }
 
@@ -594,6 +729,11 @@ async function banUser(userId: string, reason: string | null): Promise<void> {
   });
 
   await admin.auth().updateUser(userId, { disabled: true });
+  await mirrorProfileStatus(userId, {
+    status: 'banned',
+    banReason: reason || 'Severe policy violation',
+    bannedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
   await syncHostExperiencesForBan(userId, true);
 }
 
@@ -625,8 +765,12 @@ async function requireVerification(userId: string): Promise<void> {
 export const executeBulkModeration = functions.runWith({ memory: '512MB' }).https.onCall(monitored("executeBulkModeration", async (data, context) => {
   await verifyModeratorPermission(context);
 
-  const { queueIds, action, notes = null } = data;
+  const { queueIds, action, notes = null } = data || {};
   const moderatorId = context.auth!.uid;
+  if (!Array.isArray(queueIds) || queueIds.length === 0 || queueIds.length > 100) {
+    throw new functions.https.HttpsError('invalid-argument', 'queueIds must be an array of 1-100 ids');
+  }
+  const statementOfReasons = parseStatementOfReasons(data);
 
   try {
     const operationRef = firestore.collection('bulk_moderation_operations').doc();
@@ -636,6 +780,7 @@ export const executeBulkModeration = functions.runWith({ memory: '512MB' }).http
       action,
       moderatorId,
       notes,
+      statementOfReasons,
       initiatedAt: admin.firestore.FieldValue.serverTimestamp(),
       status: 'pending',
       totalItems: queueIds.length,
@@ -652,7 +797,10 @@ export const executeBulkModeration = functions.runWith({ memory: '512MB' }).http
 
     for (const queueId of queueIds) {
       try {
-        await takeModerationAction.run({ queueId, action, notes }, context);
+        await takeModerationAction.run(
+          { queueId, action, notes, parameters: data.parameters || {}, ...(statementOfReasons || {}) },
+          context
+        );
         results.push({ queueId, success: true, errorMessage: null });
         successCount++;
       } catch (err: any) {

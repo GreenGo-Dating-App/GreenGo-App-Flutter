@@ -589,6 +589,18 @@ export {
 // Admin custom claims (P1-6): admin_users/{uid}.role -> `adminRole` claim.
 export { onAdminUserWritten, resyncAllAdminClaims } from './admin/adminClaims';
 
+// Admin-panel user actions (H-29): replace the panel's direct coinBalances /
+// profiles / admin_actions writes with audited, role-checked callables.
+export {
+  adminAdjustUserCoins,
+  adminUpdateUserProfile,
+  adminSetUserStatus,
+  adminBulkApproveVerification,
+  adminOverrideSubscription,
+  adminToggleTestUser,
+  adminSendUserNotification,
+} from './admin/panelUserActions';
+
 // Admin Panel Functions (2FA, password mgmt, user mgmt, AI support)
 export {
   send2FACode,
