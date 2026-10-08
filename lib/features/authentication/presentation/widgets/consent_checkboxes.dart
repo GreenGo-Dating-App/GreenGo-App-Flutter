@@ -11,6 +11,8 @@ class ConsentCheckboxes extends StatelessWidget {
   const ConsentCheckboxes({
     required this.privacyPolicyAccepted, required this.termsAccepted, required this.profilingAccepted, required this.thirdPartyDataAccepted, required this.onPrivacyPolicyChanged, required this.onTermsChanged, required this.onProfilingChanged, required this.onThirdPartyDataChanged, super.key,
     this.enabled = true,
+    this.marketingEmailAccepted,
+    this.onMarketingEmailChanged,
   });
   final bool privacyPolicyAccepted;
   final bool termsAccepted;
@@ -21,6 +23,17 @@ class ConsentCheckboxes extends StatelessWidget {
   final ValueChanged<bool> onProfilingChanged;
   final ValueChanged<bool> onThirdPartyDataChanged;
   final bool enabled;
+
+  /// Optional marketing-email opt-in (P2-5). Shown only when both are set.
+  /// Always starts UNticked: marketing needs an explicit opt-in.
+  final bool? marketingEmailAccepted;
+  final ValueChanged<bool>? onMarketingEmailChanged;
+
+  /// Defaults for the optional boxes: every optional consent starts unticked
+  /// (GDPR art. 4(11)/7, LGPD art. 8: consent must be an affirmative act).
+  static const bool defaultProfilingAccepted = false;
+  static const bool defaultThirdPartyDataAccepted = false;
+  static const bool defaultMarketingEmailAccepted = false;
 
   /// Check if all required consents are accepted
   static bool areRequiredConsentsAccepted({
@@ -122,6 +135,21 @@ class ConsentCheckboxes extends StatelessWidget {
           isRequired: false,
           subtitle: l10n.thirdPartyDataDescription,
         ),
+
+        if (marketingEmailAccepted != null &&
+            onMarketingEmailChanged != null) ...[
+          const SizedBox(height: 8),
+          _buildConsentItem(
+            context: context,
+            value: marketingEmailAccepted!,
+            onChanged: enabled
+                ? (value) => onMarketingEmailChanged!(value ?? false)
+                : null,
+            title: l10n.signupMarketingEmailConsent,
+            isRequired: false,
+            subtitle: l10n.signupMarketingEmailConsentSubtitle,
+          ),
+        ],
       ],
     );
   }

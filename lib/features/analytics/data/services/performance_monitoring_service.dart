@@ -6,6 +6,7 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter/foundation.dart';
 
+import '../../../../core/services/analytics_consent_service.dart';
 import '../../domain/entities/performance_metrics.dart';
 
 class PerformanceMonitoringService {
@@ -13,21 +14,37 @@ class PerformanceMonitoringService {
   final FirebaseCrashlytics _crashlytics = FirebaseCrashlytics.instance;
 
   final Map<String, Trace> _activeTraces = {};
+
+  /// Analytics / crash-reporting consent (P2-5a).
+  bool get _allowed => AnalyticsConsentService.instance.collectionAllowed;
   final Map<String, HttpMetric> _activeHttpMetrics = {};
 
   /// Initialize performance monitoring (Point 261)
   Future<void> initialize() async {
-    await _performance.setPerformanceCollectionEnabled(true);
+    // P2-5(a): collection follows the analytics / crash-reporting consent
+    // (OFF in the EEA/UK/CH until the user accepts). The error handlers are
+    // still installed; with collection off Crashlytics keeps nothing it sends,
+    // and the reporters below check the consent before recording.
+    final allowed = AnalyticsConsentService.instance.collectionAllowed;
+    await _performance.setPerformanceCollectionEnabled(allowed);
 
     // Configure Crashlytics (Point 263)
-    await _crashlytics.setCrashlyticsCollectionEnabled(true);
+    if (!kIsWeb) await _crashlytics.setCrashlyticsCollectionEnabled(allowed);
 
     // Set up Flutter error handling
-    FlutterError.onError = _crashlytics.recordFlutterFatalError;
+    FlutterError.onError = (details) {
+      if (AnalyticsConsentService.instance.collectionAllowed) {
+        _crashlytics.recordFlutterFatalError(details);
+      } else {
+        FlutterError.presentError(details);
+      }
+    };
 
     // Set up Dart error handling
     PlatformDispatcher.instance.onError = (error, stack) {
-      _crashlytics.recordError(error, stack, fatal: true);
+      if (AnalyticsConsentService.instance.collectionAllowed) {
+        _crashlytics.recordError(error, stack, fatal: true);
+      }
       return true;
     };
   }
@@ -182,6 +199,7 @@ class PerformanceMonitoringService {
     bool fatal = false,
     Map<String, dynamic>? customKeys,
   }) async {
+    if (!_allowed) return;
     if (customKeys != null) {
       for (final entry in customKeys.entries) {
         await _crashlytics.setCustomKey(
@@ -201,21 +219,25 @@ class PerformanceMonitoringService {
 
   /// Record Flutter error
   Future<void> recordFlutterError(FlutterErrorDetails details) async {
+    if (!_allowed) return;
     await _crashlytics.recordFlutterError(details);
   }
 
   /// Set user identifier for crash reports
   Future<void> setUserIdentifier(String userId) async {
+    if (!_allowed) return;
     await _crashlytics.setUserIdentifier(userId);
   }
 
   /// Add breadcrumb for debugging
   Future<void> log(String message) async {
+    if (!_allowed) return;
     await _crashlytics.log(message);
   }
 
   /// Set custom keys for crash context
   Future<void> setCustomKeys(Map<String, dynamic> keys) async {
+    if (!_allowed) return;
     for (final entry in keys.entries) {
       await _crashlytics.setCustomKey(
         entry.key,

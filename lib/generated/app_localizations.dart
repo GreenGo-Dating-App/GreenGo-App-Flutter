@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11776,7 +11776,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28451,6 +28454,378 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{km}+ km'**
   String distanceOverKm(String km);
+
+  /// No description provided for @idConsentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Before you upload your ID'**
+  String get idConsentTitle;
+
+  /// No description provided for @idConsentWhat.
+  ///
+  /// In en, this message translates to:
+  /// **'What we process: a photo of your identity document. We read your date of birth and the document number from it automatically (OCR).'**
+  String get idConsentWhat;
+
+  /// No description provided for @idConsentWho.
+  ///
+  /// In en, this message translates to:
+  /// **'Who processes it: GreenGo, using Google Cloud Vision (Google acts as our processor).'**
+  String get idConsentWho;
+
+  /// No description provided for @idConsentRetention.
+  ///
+  /// In en, this message translates to:
+  /// **'How long: the image is deleted as soon as a decision is made, automatically or by a reviewer. If a person needs to review it, it is kept for at most 7 days, then deleted, and you will be asked to upload it again.'**
+  String get idConsentRetention;
+
+  /// No description provided for @idConsentKept.
+  ///
+  /// In en, this message translates to:
+  /// **'What we keep: only whether you are verified, how, the decision date, your birth year, and a keyed one-way fingerprint of the document number so that one document cannot verify many accounts.'**
+  String get idConsentKept;
+
+  /// No description provided for @idConsentAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Who can see it: no other users. Only automated processing and, if needed, a small number of authorised GreenGo reviewers.'**
+  String get idConsentAccess;
+
+  /// No description provided for @idConsentAccept.
+  ///
+  /// In en, this message translates to:
+  /// **'I agree, continue'**
+  String get idConsentAccept;
+
+  /// No description provided for @idConsentRecordError.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not record your consent, so nothing was uploaded. Check your connection and try again.'**
+  String get idConsentRecordError;
+
+  /// No description provided for @ageVerifyRejectedExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Your document could not be reviewed in time and has been deleted. Please upload it again.'**
+  String get ageVerifyRejectedExpired;
+
+  /// No description provided for @analyticsConsentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Help us improve GreenGo'**
+  String get analyticsConsentTitle;
+
+  /// No description provided for @analyticsConsentBody.
+  ///
+  /// In en, this message translates to:
+  /// **'With your permission we use Google Firebase Analytics, Crashlytics and Performance Monitoring to understand how the app is used and to fix crashes. This stores and reads identifiers on your device. Nothing is collected unless you allow it. You can change this at any time in Settings > Privacy & data.'**
+  String get analyticsConsentBody;
+
+  /// No description provided for @analyticsConsentAllow.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get analyticsConsentAllow;
+
+  /// No description provided for @analyticsConsentDecline.
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get analyticsConsentDecline;
+
+  /// No description provided for @privacySettingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy & data'**
+  String get privacySettingsTitle;
+
+  /// No description provided for @privacySettingsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytics, crash reports and marketing emails'**
+  String get privacySettingsSubtitle;
+
+  /// No description provided for @privacyAnalyticsToggle.
+  ///
+  /// In en, this message translates to:
+  /// **'Usage analytics & crash reports'**
+  String get privacyAnalyticsToggle;
+
+  /// No description provided for @privacyAnalyticsToggleSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Share usage statistics and crash reports with us (Google Firebase) to help improve the app.'**
+  String get privacyAnalyticsToggleSubtitle;
+
+  /// No description provided for @privacyMarketingEmailToggle.
+  ///
+  /// In en, this message translates to:
+  /// **'News and offers by email'**
+  String get privacyMarketingEmailToggle;
+
+  /// No description provided for @privacyMarketingEmailSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Occasional emails about new features, tips, activity summaries and offers. You can unsubscribe at any time.'**
+  String get privacyMarketingEmailSubtitle;
+
+  /// No description provided for @privacySettingsSaveError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not save your choice. Please try again.'**
+  String get privacySettingsSaveError;
+
+  /// No description provided for @notificationCatMarketing.
+  ///
+  /// In en, this message translates to:
+  /// **'Marketing & promotions'**
+  String get notificationCatMarketing;
+
+  /// No description provided for @notificationCatMarketingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'News, offers and announcements from GreenGo. Off unless you turn it on.'**
+  String get notificationCatMarketingSubtitle;
+
+  /// No description provided for @signupMarketingEmailConsent.
+  ///
+  /// In en, this message translates to:
+  /// **'Send me news and offers by email'**
+  String get signupMarketingEmailConsent;
+
+  /// No description provided for @signupMarketingEmailConsentSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional. You can unsubscribe at any time.'**
+  String get signupMarketingEmailConsentSubtitle;
+
+  /// No description provided for @moderationDecisionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderation decision'**
+  String get moderationDecisionTitle;
+
+  /// No description provided for @moderationDecisionIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Our team took action on your account or content under our Community Guidelines. This is the statement of reasons.'**
+  String get moderationDecisionIntro;
+
+  /// No description provided for @moderationDecisionActionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Action taken'**
+  String get moderationDecisionActionLabel;
+
+  /// No description provided for @moderationDecisionReasonLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason'**
+  String get moderationDecisionReasonLabel;
+
+  /// No description provided for @moderationDecisionExplanationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Explanation from our team'**
+  String get moderationDecisionExplanationLabel;
+
+  /// Appeal deadline for a moderation decision
+  ///
+  /// In en, this message translates to:
+  /// **'You can appeal until {date}.'**
+  String moderationDecisionAppealUntil(String date);
+
+  /// No description provided for @moderationDecisionAppealButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Appeal this decision'**
+  String get moderationDecisionAppealButton;
+
+  /// No description provided for @moderationDecisionAppealHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Explain why you think this decision is wrong (at least 10 characters).'**
+  String get moderationDecisionAppealHint;
+
+  /// No description provided for @moderationDecisionAppealSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Send appeal'**
+  String get moderationDecisionAppealSubmit;
+
+  /// No description provided for @moderationDecisionAppealSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Your appeal was sent. Our team will review it again and let you know.'**
+  String get moderationDecisionAppealSent;
+
+  /// No description provided for @moderationDecisionAppealAlready.
+  ///
+  /// In en, this message translates to:
+  /// **'You have already appealed this decision.'**
+  String get moderationDecisionAppealAlready;
+
+  /// No description provided for @moderationDecisionAppealClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'This decision can no longer be appealed.'**
+  String get moderationDecisionAppealClosed;
+
+  /// No description provided for @moderationDecisionAppealError.
+  ///
+  /// In en, this message translates to:
+  /// **'Your appeal could not be sent. Please try again.'**
+  String get moderationDecisionAppealError;
+
+  /// No description provided for @moderationDecisionAppealTooShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Please write at least 10 characters.'**
+  String get moderationDecisionAppealTooShort;
+
+  /// No description provided for @moderationDecisionNotAppealable.
+  ///
+  /// In en, this message translates to:
+  /// **'This decision cannot be appealed in the app. Contact support if you think it is wrong.'**
+  String get moderationDecisionNotAppealable;
+
+  /// No description provided for @moderationActionRemoveContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Content removed'**
+  String get moderationActionRemoveContent;
+
+  /// No description provided for @moderationActionWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning issued'**
+  String get moderationActionWarning;
+
+  /// No description provided for @moderationActionSuspend.
+  ///
+  /// In en, this message translates to:
+  /// **'Account temporarily suspended'**
+  String get moderationActionSuspend;
+
+  /// No description provided for @moderationActionBan.
+  ///
+  /// In en, this message translates to:
+  /// **'Account banned'**
+  String get moderationActionBan;
+
+  /// No description provided for @moderationActionShadowBan.
+  ///
+  /// In en, this message translates to:
+  /// **'Reduced visibility of your profile'**
+  String get moderationActionShadowBan;
+
+  /// No description provided for @moderationActionRequireVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Identity verification required'**
+  String get moderationActionRequireVerification;
+
+  /// No description provided for @moderationActionOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Restriction applied'**
+  String get moderationActionOther;
+
+  /// No description provided for @moderationReasonCsae.
+  ///
+  /// In en, this message translates to:
+  /// **'Child sexual exploitation or abuse'**
+  String get moderationReasonCsae;
+
+  /// No description provided for @moderationReasonUnderage.
+  ///
+  /// In en, this message translates to:
+  /// **'Underage user'**
+  String get moderationReasonUnderage;
+
+  /// No description provided for @moderationReasonSexualContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Sexual content'**
+  String get moderationReasonSexualContent;
+
+  /// No description provided for @moderationReasonInappropriate.
+  ///
+  /// In en, this message translates to:
+  /// **'Inappropriate content'**
+  String get moderationReasonInappropriate;
+
+  /// No description provided for @moderationReasonThreats.
+  ///
+  /// In en, this message translates to:
+  /// **'Threats'**
+  String get moderationReasonThreats;
+
+  /// No description provided for @moderationReasonViolence.
+  ///
+  /// In en, this message translates to:
+  /// **'Violence'**
+  String get moderationReasonViolence;
+
+  /// No description provided for @moderationReasonHarassment.
+  ///
+  /// In en, this message translates to:
+  /// **'Harassment or bullying'**
+  String get moderationReasonHarassment;
+
+  /// No description provided for @moderationReasonHate.
+  ///
+  /// In en, this message translates to:
+  /// **'Hate speech'**
+  String get moderationReasonHate;
+
+  /// No description provided for @moderationReasonSpam.
+  ///
+  /// In en, this message translates to:
+  /// **'Spam'**
+  String get moderationReasonSpam;
+
+  /// No description provided for @moderationReasonScam.
+  ///
+  /// In en, this message translates to:
+  /// **'Scam or fraud'**
+  String get moderationReasonScam;
+
+  /// No description provided for @moderationReasonImpersonation.
+  ///
+  /// In en, this message translates to:
+  /// **'Impersonation or fake profile'**
+  String get moderationReasonImpersonation;
+
+  /// No description provided for @moderationReasonPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharing personal information'**
+  String get moderationReasonPrivacy;
+
+  /// No description provided for @moderationReasonMisleading.
+  ///
+  /// In en, this message translates to:
+  /// **'Misleading content'**
+  String get moderationReasonMisleading;
+
+  /// No description provided for @moderationReasonNoShow.
+  ///
+  /// In en, this message translates to:
+  /// **'Did not show up to a booking'**
+  String get moderationReasonNoShow;
+
+  /// No description provided for @moderationReasonOffPlatformPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment outside the platform'**
+  String get moderationReasonOffPlatformPayment;
+
+  /// No description provided for @moderationReasonOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other breach of our Community Guidelines'**
+  String get moderationReasonOther;
 }
 
 class _AppLocalizationsDelegate
@@ -28464,13 +28839,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -28506,8 +28881,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

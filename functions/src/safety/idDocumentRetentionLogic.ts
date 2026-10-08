@@ -2,6 +2,18 @@
  * ID-document retention — PURE decision logic (no Firebase access), so it can
  * be unit-tested. The I/O lives in idDocumentRetention.ts.
  *
+ * P2-6 (OWNER DECISION, 2026-10-08) supersedes the retention policy below:
+ *   - the image is DELETED as soon as a verification decision is made
+ *     (automatic or by an admin, approve or reject), together with any
+ *     retention copy; only {ageVerified, method, decidedAt, birthYear} is kept;
+ *   - while a human review is pending the image is kept at most
+ *     PENDING_REVIEW_DAYS (7) days, then purged and the user must re-upload;
+ *   - the document-number fingerprint is a salted HMAC (RETENTION_SALT), kept
+ *     only to stop one document verifying many accounts (NOTE FOR COUNSEL).
+ *   Entries under an admin LEGAL HOLD are the only exception (kept until the
+ *   hold is lifted) - NOTE FOR COUNSEL.
+ *
+ * Previous policy (kept for the legacy entries still in the store):
  * Policy (DRAFT — lawyer review: LGPD art. 7 IX legitimate interest /
  * GDPR Art. 6(1)(f), fraud prevention):
  *   - the CURRENT identity document of an account is kept server-side
@@ -13,8 +25,40 @@
  *     admin placed a `legalHold` (e.g. an open scam report).
  */
 
+import { createHash, createHmac } from 'crypto';
+
 export const RETENTION_DAYS = 30;
 export const DAY_MS = 24 * 60 * 60 * 1000;
+
+/** P2-6: longest an image may wait for a human review before it is purged. */
+export const PENDING_REVIEW_DAYS = 7;
+
+/** When a document uploaded at [uploadedAtMs] must be purged if still undecided. */
+export function pendingPurgeAfterMs(uploadedAtMs: number, days = PENDING_REVIEW_DAYS): number {
+  return uploadedAtMs + days * DAY_MS;
+}
+
+/** Fallback when RETENTION_SALT is unset (documented; set the env var in production). */
+export const FALLBACK_DOCUMENT_SALT = 'greengo-id-document-v1';
+
+/**
+ * P2-6: keyed one-way fingerprint of a document number. HMAC-SHA256 with a
+ * server secret (RETENTION_SALT), so the stored value cannot be reversed by
+ * brute-forcing the (small) space of document numbers without the key.
+ */
+export function documentFingerprint(documentType: string, documentNumber: string, salt: string): string {
+  return createHmac('sha256', salt || FALLBACK_DOCUMENT_SALT).update(`${documentType}:${documentNumber}`).digest('hex');
+}
+
+/** The pre-P2-6 unsalted hash; still MATCHED (never written) so old records keep blocking reuse. */
+export function legacyDocumentHash(documentType: string, documentNumber: string): string {
+  return createHash('sha256').update(`${documentType}:${documentNumber}`).digest('hex');
+}
+
+/** UTC birth year of a date, or null. */
+export function birthYearOf(d: Date | null | undefined): number | null {
+  return d instanceof Date && !Number.isNaN(d.getTime()) ? d.getUTCFullYear() : null;
+}
 
 export type RetentionReason = 'replaced' | 'account-deleted';
 

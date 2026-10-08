@@ -20,6 +20,9 @@ class NotificationPreferences extends Equatable {
     this.communityChat = false,
     this.announcements = true,
     this.tips = false,
+    // Marketing & promotional pushes (admin broadcasts). Explicit opt-in:
+    // OFF unless the user turns it on (ePrivacy / LGPD).
+    this.marketing = false,
     this.soundEnabled = true,
     this.vibrationEnabled = true,
     this.quietHoursStart = '22:00',
@@ -51,6 +54,9 @@ class NotificationPreferences extends Equatable {
 
   /// Community tips. Default OFF.
   final bool tips;
+
+  /// Marketing & promotions (admin broadcasts). Default OFF (opt-in).
+  final bool marketing;
 
   // ── Delivery ─────────────────────────────────────────────────────────────
   final bool soundEnabled;
@@ -90,6 +96,7 @@ class NotificationPreferences extends Equatable {
     bool? communityChat,
     bool? announcements,
     bool? tips,
+    bool? marketing,
     bool? soundEnabled,
     bool? vibrationEnabled,
     String? quietHoursStart,
@@ -106,6 +113,7 @@ class NotificationPreferences extends Equatable {
       communityChat: communityChat ?? this.communityChat,
       announcements: announcements ?? this.announcements,
       tips: tips ?? this.tips,
+      marketing: marketing ?? this.marketing,
       soundEnabled: soundEnabled ?? this.soundEnabled,
       vibrationEnabled: vibrationEnabled ?? this.vibrationEnabled,
       quietHoursStart: quietHoursStart ?? this.quietHoursStart,
@@ -125,6 +133,7 @@ class NotificationPreferences extends Equatable {
         communityChat,
         announcements,
         tips,
+        marketing,
         soundEnabled,
         vibrationEnabled,
         quietHoursStart,

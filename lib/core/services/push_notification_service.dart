@@ -26,6 +26,7 @@ import '../../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../../features/profile/presentation/bloc/profile_event.dart';
 import '../di/injection_container.dart' as di;
 import 'app_sound_service.dart';
+import '../../features/safety/presentation/screens/moderation_decision_screen.dart';
 
 /// Top-level background message handler (must be a top-level function)
 @pragma('vm:entry-point')
@@ -221,6 +222,13 @@ class PushNotificationService {
 
     if (navigator == null || userId == null) {
       debugPrint('[FCM] Cannot navigate: navigator=$navigator, userId=$userId');
+      return;
+    }
+
+    // Moderation decision (DSA art. 17/20): statement of reasons + appeal.
+    if (action == kModerationDecisionAction) {
+      final decision = ModerationDecision.fromData(data);
+      if (decision != null) navigator.push(ModerationDecisionScreen.route(decision));
       return;
     }
 

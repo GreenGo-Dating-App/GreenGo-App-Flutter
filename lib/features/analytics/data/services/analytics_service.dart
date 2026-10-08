@@ -4,6 +4,8 @@ library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
+
+import '../../../../core/services/analytics_consent_service.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import '../../domain/entities/analytics_event.dart';
 
@@ -146,7 +148,15 @@ class BusinessInsights {
 }
 
 class AnalyticsService {
-  final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
+  /// Firebase Analytics, or null while the user has not allowed analytics
+  /// (P2-5a). Resolved per call so a later "allow" / "deny" takes effect at
+  /// once, and so that on web the JS SDK (which sends a page_view as soon as
+  /// it is touched) is never initialised before consent. Every call site uses
+  /// `?.`, making each event a no-op without consent.
+  FirebaseAnalytics? get _analytics =>
+      AnalyticsConsentService.instance.collectionAllowed
+          ? FirebaseAnalytics.instance
+          : null;
   final FirebaseRemoteConfig _remoteConfig = FirebaseRemoteConfig.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
@@ -156,11 +166,11 @@ class AnalyticsService {
 
   /// Initialize analytics (Point 251)
   Future<void> initialize() async {
-    await _analytics.setAnalyticsCollectionEnabled(true);
+    await _analytics?.setAnalyticsCollectionEnabled(true);
     _currentSessionId = DateTime.now().millisecondsSinceEpoch.toString();
 
     // Set default user properties
-    await _analytics.setUserProperty(
+    await _analytics?.setUserProperty(
       name: 'app_version',
       value: '1.0.0', // Replace with actual version
     );
@@ -175,7 +185,7 @@ class AnalyticsService {
       timeOnPreviousScreen = now.difference(_screenStartTime!);
 
       // Log time spent on previous screen
-      await _analytics.logEvent(
+      await _analytics?.logEvent(
         name: 'screen_time',
         parameters: {
           'screen_name': _currentScreenName!,
@@ -185,13 +195,13 @@ class AnalyticsService {
     }
 
     // Log screen view
-    await _analytics.logScreenView(
+    await _analytics?.logScreenView(
       screenName: screenName,
       screenClass: screenName,
     );
 
     // Track additional screen view data
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'screen_view',
       parameters: {
         'screen_name': screenName,
@@ -207,7 +217,7 @@ class AnalyticsService {
 
   /// Log button click (Point 251)
   Future<void> logButtonClick(String buttonName, {String? screenName}) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'button_click',
       parameters: {
         'button_name': buttonName,
@@ -222,7 +232,7 @@ class AnalyticsService {
     String featureName, {
     Map<String, dynamic>? parameters,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'feature_used',
       parameters: {
         'feature_name': featureName,
@@ -237,7 +247,7 @@ class AnalyticsService {
     CriticalEvent event, {
     Map<String, dynamic>? parameters,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: event.eventName,
       parameters: {
         'timestamp': DateTime.now().toIso8601String(),
@@ -313,7 +323,7 @@ class AnalyticsService {
     );
 
     // Also log as purchase event for revenue tracking
-    await _analytics.logPurchase(
+    await _analytics?.logPurchase(
       value: price,
       currency: currency,
       parameters: {
@@ -330,7 +340,7 @@ class AnalyticsService {
     required int stepOrder,
     Map<String, dynamic>? metadata,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'funnel_step',
       parameters: {
         'funnel_name': funnelType.name,
@@ -348,7 +358,7 @@ class AnalyticsService {
     required Duration completionTime,
     required int totalSteps,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'funnel_completed',
       parameters: {
         'funnel_name': funnelType.name,
@@ -366,24 +376,24 @@ class AnalyticsService {
     String? cohort,
     UserSegment? segment,
   }) async {
-    await _analytics.setUserId(id: userId);
+    await _analytics?.setUserId(id: userId);
 
     if (acquisitionDate != null) {
-      await _analytics.setUserProperty(
+      await _analytics?.setUserProperty(
         name: 'acquisition_date',
         value: acquisitionDate,
       );
     }
 
     if (cohort != null) {
-      await _analytics.setUserProperty(
+      await _analytics?.setUserProperty(
         name: 'cohort',
         value: cohort,
       );
     }
 
     if (segment != null) {
-      await _analytics.setUserProperty(
+      await _analytics?.setUserProperty(
         name: 'user_segment',
         value: segment.displayName,
       );
@@ -396,7 +406,7 @@ class AnalyticsService {
     required UserSegment? previousSegment,
     required double engagementScore,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'user_segment_changed',
       parameters: {
         'new_segment': newSegment.displayName,
@@ -407,7 +417,7 @@ class AnalyticsService {
     );
 
     // Update user property
-    await _analytics.setUserProperty(
+    await _analytics?.setUserProperty(
       name: 'user_segment',
       value: newSegment.displayName,
     );
@@ -441,7 +451,7 @@ class AnalyticsService {
     required String experimentId,
     required ABTestVariant variant,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'ab_test_assigned',
       parameters: {
         'experiment_id': experimentId,
@@ -457,7 +467,7 @@ class AnalyticsService {
     required ABTestVariant variant,
     String? conversionType,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'ab_test_conversion',
       parameters: {
         'experiment_id': experimentId,
@@ -475,7 +485,7 @@ class AnalyticsService {
     required TouchType type,
     String? elementId,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'touch_interaction',
       parameters: {
         'screen_name': _currentScreenName ?? 'unknown',
@@ -496,27 +506,27 @@ class AnalyticsService {
     String? creative,
     Map<String, String>? utmParameters,
   }) async {
-    await _analytics.setUserProperty(
+    await _analytics?.setUserProperty(
       name: 'install_source',
       value: installSource,
     );
 
     if (campaignId != null) {
-      await _analytics.setUserProperty(
+      await _analytics?.setUserProperty(
         name: 'campaign_id',
         value: campaignId,
       );
     }
 
     if (adGroup != null) {
-      await _analytics.setUserProperty(
+      await _analytics?.setUserProperty(
         name: 'ad_group',
         value: adGroup,
       );
     }
 
     // Log attribution event
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'app_install',
       parameters: {
         'install_source': installSource,
@@ -538,7 +548,7 @@ class AnalyticsService {
 
   /// Log that a user opened/viewed a specific event.
   Future<void> logEventView(String eventId) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'event_view',
       parameters: {
         'event_id': eventId,
@@ -551,7 +561,7 @@ class AnalyticsService {
   Future<void> logSearch(String query) async {
     final q = query.trim();
     if (q.isEmpty) return;
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'search',
       parameters: {
         'search_term': q,
@@ -562,7 +572,7 @@ class AnalyticsService {
 
   /// Log a new-people connect action.
   Future<void> logConnect({String? otherUserId, String? source}) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: 'connect',
       parameters: {
         'other_user_id': otherUserId ?? 'unknown',
@@ -576,7 +586,7 @@ class AnalyticsService {
     required String eventName,
     Map<String, dynamic>? parameters,
   }) async {
-    await _analytics.logEvent(
+    await _analytics?.logEvent(
       name: eventName,
       parameters: {
         'screen_name': _currentScreenName ?? 'unknown',
@@ -588,7 +598,7 @@ class AnalyticsService {
 
   /// Reset analytics (e.g., on logout)
   Future<void> reset() async {
-    await _analytics.setUserId(id: null);
+    await _analytics?.setUserId(id: null);
     _currentScreenName = null;
     _screenStartTime = null;
     _currentSessionId = DateTime.now().millisecondsSinceEpoch.toString();

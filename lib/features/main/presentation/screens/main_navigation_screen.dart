@@ -83,6 +83,7 @@ import '../../../subscription/presentation/bloc/subscription_bloc.dart';
 import '../../../subscription/presentation/screens/subscription_selection_screen.dart';
 import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../../core/services/effective_tier.dart';
+import '../../../../core/widgets/analytics_consent_prompt.dart';
 
 /// Main Navigation Screen
 ///
@@ -314,6 +315,9 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
       await CommunityGuidelinesScreen.showIfNeeded(context);
+      // P2-5(a): analytics / crash-reporting consent in the EEA/UK/CH (shown
+      // once per launch until decided; collection stays OFF meanwhile).
+      if (mounted) await showAnalyticsConsentPromptIfNeeded(context);
       // Release the onboarding gate so the notification prompt shows AFTER the
       // guidelines instead of stacking on top of it on first login.
       OnboardingGate.markGuidelinesHandled();

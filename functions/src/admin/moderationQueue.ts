@@ -8,6 +8,7 @@ import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import { MODERATION_ROLES, requireAdmin } from '../shared/adminAuth';
 import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
+import { notifyAffectedUserOfDecision } from '../safety/moderationDecisions';
 
 const firestore = admin.firestore();
 
@@ -542,6 +543,21 @@ export const takeModerationAction = functions.runWith({ memory: '512MB' }).https
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
     });
 
+    // P2-8c (DSA art. 17/20): the affected user gets the statement of reasons
+    // and can appeal. Best-effort: the action itself already happened.
+    try {
+      await notifyAffectedUserOfDecision({
+        queueId,
+        userId: queueData.userId || queueData.reportedUserId,
+        action,
+        reasonCode: statementOfReasons?.reasonCode ?? queueData.reasonCode ?? null,
+        explanation: statementOfReasons?.explanation ?? notes ?? null,
+        moderatorId,
+      });
+    } catch (e) {
+      console.error(`takeModerationAction: decision notice for ${queueId} failed:`, e);
+    }
+
     return {
       queueId,
       action,
@@ -645,6 +661,24 @@ async function removeContent(
       isDeletedForEveryone: true,
       deletedAt: admin.firestore.FieldValue.serverTimestamp(),
       content: 'This message was removed by a moderator',
+      moderation,
+    });
+    return;
+  }
+  if (ref?.type === 'message' && path && /^(groups|communities|events)\/[^/]+\/messages\/[^/]+$/.test(path)) {
+    // P2-8b: auto-flagged shared-chat messages. Each chat type stores the
+    // text in its own field; replace whichever one the message has.
+    const snap = await firestore.doc(path).get();
+    if (!snap.exists) throw new functions.https.HttpsError('not-found', 'The flagged message no longer exists');
+    const d = snap.data() || {};
+    const placeholder = 'This message was removed by a moderator';
+    await snap.ref.update({
+      isDeletedForEveryone: true,
+      isDeleted: true,
+      deletedAt: admin.firestore.FieldValue.serverTimestamp(),
+      ...(typeof d.text === 'string' ? { text: placeholder } : {}),
+      ...(typeof d.content === 'string' ? { content: placeholder } : {}),
+      ...(typeof d.caption === 'string' ? { caption: placeholder } : {}),
       moderation,
     });
     return;

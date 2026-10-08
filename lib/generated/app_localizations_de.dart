@@ -6611,7 +6611,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -16364,4 +16367,222 @@ class AppLocalizationsDe extends AppLocalizations {
   String distanceOverKm(String km) {
     return '$km+ km';
   }
+
+  @override
+  String get idConsentTitle => 'Bevor du deinen Ausweis hochlädst';
+
+  @override
+  String get idConsentWhat =>
+      'Was wir verarbeiten: ein Foto deines Ausweisdokuments. Geburtsdatum und Dokumentnummer lesen wir automatisch aus (OCR).';
+
+  @override
+  String get idConsentWho =>
+      'Wer es verarbeitet: GreenGo mit Google Cloud Vision (Google ist unser Auftragsverarbeiter).';
+
+  @override
+  String get idConsentRetention =>
+      'Wie lange: Das Bild wird gelöscht, sobald eine Entscheidung gefallen ist, automatisch oder durch eine prüfende Person. Muss eine Person es prüfen, bleibt es höchstens 7 Tage gespeichert und wird dann gelöscht; du wirst dann gebeten, es erneut hochzuladen.';
+
+  @override
+  String get idConsentKept =>
+      'Was wir behalten: nur, ob du verifiziert bist, wie, das Entscheidungsdatum, dein Geburtsjahr und einen verschlüsselten Einweg-Fingerabdruck der Dokumentnummer, damit ein Dokument nicht viele Konten verifizieren kann.';
+
+  @override
+  String get idConsentAccess =>
+      'Wer es sehen kann: keine anderen Nutzer. Nur die automatische Verarbeitung und, falls nötig, wenige autorisierte GreenGo-Prüfer.';
+
+  @override
+  String get idConsentAccept => 'Einverstanden, weiter';
+
+  @override
+  String get idConsentRecordError =>
+      'Wir konnten deine Einwilligung nicht speichern, daher wurde nichts hochgeladen. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String get ageVerifyRejectedExpired =>
+      'Dein Dokument konnte nicht rechtzeitig geprüft werden und wurde gelöscht. Bitte lade es erneut hoch.';
+
+  @override
+  String get analyticsConsentTitle => 'Hilf uns, GreenGo zu verbessern';
+
+  @override
+  String get analyticsConsentBody =>
+      'Mit deiner Erlaubnis nutzen wir Google Firebase Analytics, Crashlytics und Performance Monitoring, um zu verstehen, wie die App genutzt wird, und Abstürze zu beheben. Dabei werden Kennungen auf deinem Gerät gespeichert und gelesen. Ohne deine Erlaubnis wird nichts erfasst. Du kannst das jederzeit unter Einstellungen > Datenschutz & Daten ändern.';
+
+  @override
+  String get analyticsConsentAllow => 'Erlauben';
+
+  @override
+  String get analyticsConsentDecline => 'Ablehnen';
+
+  @override
+  String get privacySettingsTitle => 'Datenschutz & Daten';
+
+  @override
+  String get privacySettingsSubtitle =>
+      'Analysen, Absturzberichte und Marketing-E-Mails';
+
+  @override
+  String get privacyAnalyticsToggle => 'Nutzungsanalyse & Absturzberichte';
+
+  @override
+  String get privacyAnalyticsToggleSubtitle =>
+      'Teile Nutzungsstatistiken und Absturzberichte mit uns (Google Firebase), um die App zu verbessern.';
+
+  @override
+  String get privacyMarketingEmailToggle =>
+      'Neuigkeiten und Angebote per E-Mail';
+
+  @override
+  String get privacyMarketingEmailSubtitle =>
+      'Gelegentliche E-Mails zu neuen Funktionen, Tipps, Aktivitätsübersichten und Angeboten. Du kannst dich jederzeit abmelden.';
+
+  @override
+  String get privacySettingsSaveError =>
+      'Deine Auswahl konnte nicht gespeichert werden. Bitte versuche es erneut.';
+
+  @override
+  String get notificationCatMarketing => 'Marketing & Aktionen';
+
+  @override
+  String get notificationCatMarketingSubtitle =>
+      'Neuigkeiten, Angebote und Ankündigungen von GreenGo. Aus, bis du es einschaltest.';
+
+  @override
+  String get signupMarketingEmailConsent =>
+      'Schickt mir Neuigkeiten und Angebote per E-Mail';
+
+  @override
+  String get signupMarketingEmailConsentSubtitle =>
+      'Optional. Du kannst dich jederzeit abmelden.';
+
+  @override
+  String get moderationDecisionTitle => 'Moderationsentscheidung';
+
+  @override
+  String get moderationDecisionIntro =>
+      'Unser Team hat gemäß unseren Community-Richtlinien eine Maßnahme zu deinem Konto oder Inhalt ergriffen. Hier ist die Begründung.';
+
+  @override
+  String get moderationDecisionActionLabel => 'Ergriffene Maßnahme';
+
+  @override
+  String get moderationDecisionReasonLabel => 'Grund';
+
+  @override
+  String get moderationDecisionExplanationLabel => 'Erklärung unseres Teams';
+
+  @override
+  String moderationDecisionAppealUntil(String date) {
+    return 'Du kannst bis $date Einspruch einlegen.';
+  }
+
+  @override
+  String get moderationDecisionAppealButton => 'Einspruch einlegen';
+
+  @override
+  String get moderationDecisionAppealHint =>
+      'Erkläre, warum du die Entscheidung für falsch hältst (mindestens 10 Zeichen).';
+
+  @override
+  String get moderationDecisionAppealSubmit => 'Einspruch senden';
+
+  @override
+  String get moderationDecisionAppealSent =>
+      'Dein Einspruch wurde gesendet. Unser Team prüft ihn erneut und informiert dich.';
+
+  @override
+  String get moderationDecisionAppealAlready =>
+      'Du hast gegen diese Entscheidung bereits Einspruch eingelegt.';
+
+  @override
+  String get moderationDecisionAppealClosed =>
+      'Gegen diese Entscheidung ist kein Einspruch mehr möglich.';
+
+  @override
+  String get moderationDecisionAppealError =>
+      'Dein Einspruch konnte nicht gesendet werden. Bitte versuche es erneut.';
+
+  @override
+  String get moderationDecisionAppealTooShort =>
+      'Bitte schreibe mindestens 10 Zeichen.';
+
+  @override
+  String get moderationDecisionNotAppealable =>
+      'Gegen diese Entscheidung kann in der App kein Einspruch eingelegt werden. Wende dich an den Support, wenn du sie für falsch hältst.';
+
+  @override
+  String get moderationActionRemoveContent => 'Inhalt entfernt';
+
+  @override
+  String get moderationActionWarning => 'Verwarnung erteilt';
+
+  @override
+  String get moderationActionSuspend => 'Konto vorübergehend gesperrt';
+
+  @override
+  String get moderationActionBan => 'Konto gesperrt';
+
+  @override
+  String get moderationActionShadowBan =>
+      'Eingeschränkte Sichtbarkeit deines Profils';
+
+  @override
+  String get moderationActionRequireVerification =>
+      'Identitätsprüfung erforderlich';
+
+  @override
+  String get moderationActionOther => 'Einschränkung angewendet';
+
+  @override
+  String get moderationReasonCsae =>
+      'Sexuelle Ausbeutung oder Missbrauch von Kindern';
+
+  @override
+  String get moderationReasonUnderage => 'Minderjähriger Benutzer';
+
+  @override
+  String get moderationReasonSexualContent => 'Sexuelle Inhalte';
+
+  @override
+  String get moderationReasonInappropriate => 'Unangemessener Inhalt';
+
+  @override
+  String get moderationReasonThreats => 'Drohungen';
+
+  @override
+  String get moderationReasonViolence => 'Gewalt';
+
+  @override
+  String get moderationReasonHarassment => 'Belästigung oder Mobbing';
+
+  @override
+  String get moderationReasonHate => 'Hassrede';
+
+  @override
+  String get moderationReasonSpam => 'Spam';
+
+  @override
+  String get moderationReasonScam => 'Betrug';
+
+  @override
+  String get moderationReasonImpersonation =>
+      'Identitätsbetrug oder falsches Profil';
+
+  @override
+  String get moderationReasonPrivacy => 'Teilen persönlicher Informationen';
+
+  @override
+  String get moderationReasonMisleading => 'Irreführender Inhalt';
+
+  @override
+  String get moderationReasonNoShow => 'Nicht zu einer Buchung erschienen';
+
+  @override
+  String get moderationReasonOffPlatformPayment =>
+      'Zahlung außerhalb der Plattform';
+
+  @override
+  String get moderationReasonOther =>
+      'Sonstiger Verstoß gegen unsere Community-Richtlinien';
 }

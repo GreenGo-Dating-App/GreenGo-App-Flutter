@@ -21,9 +21,9 @@
  *
  * WHAT IS RETAINED (DRAFT — lawyer review, LGPD legitimate interest /
  * GDPR Art. 6(1)(f))
- *   Identity documents (`id_documents/{uid}/…`): moved to `retention/{uid}/…`
- *   and kept 30 days for fraud prevention, then erased by
- *   purgeRetainedIdDocuments (safety/idDocumentRetention.ts). The
+ *   Identity documents (`id_documents/{uid}/…`): P2-6 — DELETED with the
+ *   account (legacy entries under an admin legal hold excepted), see
+ *   safety/idDocumentRetention.ts. The
  *   `id_documents/{uid}` prefix is deliberately NOT a storage inventory entry.
  *
  * WHAT IS ANONYMISED INSTEAD

@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { submitAppealForDecision } from './moderationDecisions';
 
 const firestore = admin.firestore();
 
@@ -291,6 +292,12 @@ export const submitAppeal = functions
       'unauthenticated',
       'User must be authenticated'
     );
+  }
+
+  // P2-8c (DSA art. 20): appeal of a moderation decision the user was
+  // notified about. The old { reportId } shape below keeps working.
+  if (data && typeof data.decisionId === 'string' && !data.reportId) {
+    return submitAppealForDecision(context.auth.uid, data);
   }
 
   const { reportId, appealReason, evidenceUrls = [] } = data;

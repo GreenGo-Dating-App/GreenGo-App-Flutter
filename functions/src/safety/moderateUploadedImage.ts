@@ -33,15 +33,18 @@
  * document before putting the URL anywhere, so an image is never displayed or
  * attached to a profile before it has passed.
  *
- * PRIVATE PHOTOS ARE EXEMPT
- * -------------------------
- * By product decision, private-album photos are not checked. They live in the
- * SAME storage path as public ones (`profiles/{uid}/photos/...`) - only the
- * Firestore array they land in differs - so the path cannot tell them apart.
- * The uploader marks them with `visibility: private` custom metadata instead.
- * An image with NO visibility metadata is treated as PUBLIC and IS checked:
- * the default has to be the safe one, or an old client that sets no metadata
- * would silently bypass moderation.
+ * PRIVATE PHOTOS ARE CHECKED TOO (P2-8a)
+ * --------------------------------------
+ * Private-album photos used to be exempt (`visibility: private` metadata).
+ * They are shared with other users all the same, so since P2-8 EVERY image
+ * under a moderated prefix is checked - private albums, chat and group images
+ * included - with the same quarantine behaviour. The visibility is recorded on
+ * the moderation_queue item so reviewers can tell them apart.
+ *
+ * CHAT VIDEOS ARE NOT CHECKED (yet): Vision cannot read video, and frame
+ * extraction needs an ffmpeg binary the Functions runtime does not ship (only
+ * the fluent-ffmpeg wrapper is installed). Options: ffmpeg-static (new npm
+ * package) or the Video Intelligence API (async, separate API + billing).
  */
 
 import { onObjectFinalized } from 'firebase-functions/v2/storage';
@@ -66,6 +69,7 @@ const MODERATED = [
   'group_media/',
   'support_attachments/',
   'storefronts/',
+  'video_profiles/',      // video-intro thumbnails (images only; videos skipped below)
 ];
 
 /**
@@ -122,12 +126,8 @@ export const moderateUploadedImage = onObjectFinalized(
     // Voice notes and videos live under the same prefixes.
     if (/\/(voice|chat_voice|chat_videos)\//.test('/' + objectPath)) return;
 
-    // PRIVATE ALBUM - exempt by product decision. Absence of the flag means
-    // public, so nothing can opt out of moderation by simply omitting it.
-    if ((meta.visibility || '').toLowerCase() === 'private') {
-      logInfo(`[moderate] skipped (private): ${objectPath}`);
-      return;
-    }
+    // P2-8a: private-album images are moderated like every other image.
+    const visibility = (meta.visibility || '').toLowerCase() === 'private' ? 'private' : 'public';
 
     const docRef = db.collection('image_moderation').doc(moderationDocId(objectPath));
     const userId = meta.userId || objectPath.split('/')[1] || '';
@@ -183,6 +183,7 @@ export const moderateUploadedImage = onObjectFinalized(
           userId,
           objectPath,
           quarantinePath: `quarantine/${objectPath}`,
+          visibility,
           reasons,
           safeSearch: {
             adult: safe.adult || null,

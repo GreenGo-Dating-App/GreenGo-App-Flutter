@@ -10,6 +10,7 @@ import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { SubscriptionTier, ApprovalStatus } from '../shared/types';
 import { monitored } from '../shared/monitoring';
+import { filterUidsByPref } from '../notifications/prefs';
 
 // MVP Release Dates
 const PREMIUM_ACCESS_DATE = new Date('2026-03-01T00:00:00Z'); // March 1st, 2026
@@ -272,6 +273,12 @@ interface BroadcastNotificationRequest {
   customBody?: Record<string, string>; // Language code to body
   targetAudience?: 'all' | 'approved' | 'premium' | 'basic' | 'pending';
   targetTiers?: SubscriptionTier[];
+  /**
+   * P2-5c: 'marketing' (DEFAULT) reaches only users who turned the marketing
+   * notification category ON (default OFF). 'service' (e.g. maintenance
+   * notices) follows the user's 'account' category instead.
+   */
+  category?: 'marketing' | 'service';
 }
 
 interface SendNotificationToUserRequest {
@@ -620,6 +627,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
         targetAudience = 'all',
         targetTiers,
       } = request.data;
+      const prefCategory = request.data?.category === 'service' ? 'account' : 'marketing';
 
       logInfo(`Sending broadcast notification: ${messageType} to ${targetAudience}`);
 
@@ -675,8 +683,15 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
         const messages: admin.messaging.Message[] = [];
         const notificationBatch = db.batch();
         const invalidTokenPromises: Promise<void>[] = [];
+        // P2-5c: respect the user's notification preferences (batched reads).
+        const allowed = await filterUidsByPref(snapshot.docs.map((d) => d.id), prefCategory);
+        let skippedByPref = 0;
 
         for (const doc of snapshot.docs) {
+          if (!allowed.has(doc.id)) {
+            skippedByPref++;
+            continue;
+          }
           const userData = doc.data();
           const fcmToken = userData.fcmToken;
 
@@ -744,6 +759,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
         }
 
         // Commit in-app notification batch
+        if (skippedByPref > 0) logInfo(`Broadcast: ${skippedByPref} users skipped by ${prefCategory} preference`);
         await notificationBatch.commit();
 
         // Send FCM messages in batches of 500
@@ -798,6 +814,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
         type: 'broadcast_notification',
         messageType,
         targetAudience,
+        preferenceCategory: prefCategory,
         totalTargeted,
         successCount,
         failCount,

@@ -36,8 +36,9 @@
  *   on purpose so hashes stay stable, but it is public in the source, so it
  *   only pseudonymises against outsiders who do not have the uid list.
  *
- * RETAINED - IDENTITY DOCUMENTS: unchanged from before: `id_documents/{uid}/`
- *   moved to `retention/{uid}/` for 30 days (safety/idDocumentRetention.ts).
+ * IDENTITY DOCUMENTS (P2-6): `id_documents/{uid}/` images are DELETED (no
+ *   30-day retention any more); only legacy entries under an admin legal hold
+ *   stay in `id_document_retention` (safety/idDocumentRetention.ts).
  *
  * ANONYMISED - MESSAGES IN SHARED CONVERSATIONS: messages the user sent to
  *   OTHER people stay in the other person's history (deleting them would edit
@@ -83,7 +84,7 @@ export const RETENTION_STORES = [
   DELETION_RECEIPTS, // keyed by uid, no personal data
   DELETION_FOLLOWUPS, // work queue for Stripe/analytics; deleted by its worker
   DELETION_JOBS, // only kept when a run FAILED (needed to retry)
-  'id_document_retention', // 30-day fraud retention (existing policy)
+  'id_document_retention', // legacy entries under an admin legal hold only (P2-6)
   'follow_cleanup_jobs', // queued follow-graph job, deleted when done
 ];
 

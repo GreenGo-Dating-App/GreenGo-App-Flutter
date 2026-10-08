@@ -15,6 +15,7 @@ import '../constants/app_colors.dart';
 import '../error/failures.dart';
 import '../widgets/connection_error_dialog.dart';
 import 'auth_error_localizer.dart';
+import '../services/analytics_consent_service.dart';
 
 /// User-facing error handling.
 ///
@@ -297,6 +298,7 @@ void reportUserError(Object? error, [StackTrace? stackTrace]) {
   if (kind != UserErrorKind.generic && kind != UserErrorKind.upload) return;
   try {
     if (Firebase.apps.isEmpty) return;
+    if (!AnalyticsConsentService.instance.collectionAllowed) return;
     FirebaseCrashlytics.instance.recordError(
       error,
       stackTrace ?? StackTrace.current,

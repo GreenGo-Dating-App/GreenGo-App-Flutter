@@ -22,7 +22,19 @@
  *     open to everyone — the gate is on broadcasting to others, which is what
  *     1.2.1 is about.
  *
- * PRIVACY. An identity document is the most sensitive data GreenGo will ever
+ * PRIVACY (P2-6, OWNER DECISION 2026-10-08 — supersedes the retention text
+ * below): the image is DELETED as soon as a decision is made (automatic or by
+ * an admin, approve or reject), including any retention copy; only
+ * {ageVerified, method, decidedAt, birthYear} is kept (id_documents/{uid}).
+ * An image waiting for a human review is kept at most 7 days, then purged and
+ * the user must re-upload. The document-number fingerprint is a salted HMAC
+ * (RETENTION_SALT), kept only so one document cannot verify many accounts.
+ * Explicit consent (consents/{uid}.id_verification, via recordConsent) is
+ * required before upload; app versions without the consent sheet are still
+ * accepted (consentMissing:true) until app_config/compliance
+ * .idConsentRequired is set to true — REMOVE THE GRACE PATH after minVersion.
+ *
+ * Historical note: an identity document is the most sensitive data GreenGo will ever
  * hold. Originally the image was deleted seconds after OCR. Since Phase 1
  * experience safety (hosts / paying guests must have an ID document on file,
  * admins review uncertain documents) the image is RETAINED for fraud
@@ -48,12 +60,55 @@
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { requireAdmin, MODERATION_ROLES, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
-import { createHash } from 'crypto';
 import vision from '@google-cloud/vision';
 import { db, logInfo, logError, logWarning } from '../shared/utils';
-import { retainSubmittedDocument, setIdDocumentStatus } from './idDocumentRetention';
+import {
+  finalizeIdDocumentDecision,
+  retainSubmittedDocument,
+  setIdDocumentStatus,
+} from './idDocumentRetention';
+import { birthYearOf, documentFingerprint, legacyDocumentHash } from './idDocumentRetentionLogic';
 
-const visionClient = new vision.ImageAnnotatorClient();
+// Lazy: index.js loads every module; an eager client costs memory everywhere.
+let visionClientInstance: InstanceType<typeof vision.ImageAnnotatorClient> | null = null;
+function visionClient(): InstanceType<typeof vision.ImageAnnotatorClient> {
+  visionClientInstance ??= new vision.ImageAnnotatorClient();
+  return visionClientInstance;
+}
+
+/** Consent type recorded by the app's ID consent sheet (recordConsent). */
+export const ID_CONSENT_TYPE = 'id_verification';
+export const ID_CONSENT_MIN_VERSION = 1;
+
+/** True when consents/{uid}.id_verification is an accepted, current consent. */
+export async function hasIdVerificationConsent(uid: string): Promise<boolean> {
+  try {
+    const c = (await db.collection('consents').doc(uid).get()).data()?.[ID_CONSENT_TYPE];
+    return !!c && c.accepted === true && Number(c.version) >= ID_CONSENT_MIN_VERSION;
+  } catch (e) {
+    logWarning(`hasIdVerificationConsent: read failed for ${uid}`, e);
+    return false;
+  }
+}
+
+/**
+ * Grace path switch. While false (default), uploads from app versions that do
+ * not show the consent sheet are accepted and flagged consentMissing:true.
+ * Set app_config/compliance.idConsentRequired = true once minVersion includes
+ * the consent sheet; then submitAgeDocument refuses without a consent.
+ */
+async function idConsentEnforced(): Promise<boolean> {
+  if (process.env.ID_CONSENT_ENFORCED === 'true') return true;
+  try {
+    return (await db.collection('app_config').doc('compliance').get()).data()?.idConsentRequired === true;
+  } catch {
+    return false;
+  }
+}
+
+function documentSalt(): string {
+  return process.env.RETENTION_SALT || '';
+}
 
 // ============================================================================
 // Status model
@@ -260,6 +315,7 @@ async function writeStatus(
   const privateAv: Record<string, unknown> = {};
   if (extra.documentHash !== undefined) privateAv.documentHash = extra.documentHash;
   if (extra.documentDateOfBirth !== undefined) privateAv.documentDateOfBirth = extra.documentDateOfBirth;
+  if (extra.documentBirthYear !== undefined) privateAv.documentBirthYear = extra.documentBirthYear;
   if (Object.keys(privateAv).length) {
     await db.collection('profiles_private').doc(uid).set({ ageVerification: privateAv }, { merge: true });
   }
@@ -323,6 +379,10 @@ export const getAgeVerificationState = onCall(
  *
  * `documentPath` is a Storage path (not a URL) so the function can delete it
  * afterwards; the client uploads to a write-only, user-scoped prefix.
+ *
+ * P2-6: requires the `id_verification` consent (grace path for old apps, see
+ * idConsentEnforced); the image is deleted on every decision and kept at most
+ * 7 days while a human review is pending.
  */
 export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
   const uid = request.auth?.uid;
@@ -338,6 +398,20 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
     );
   }
 
+  const consented = await hasIdVerificationConsent(uid);
+  if (!consented && (await idConsentEnforced())) {
+    await destroyDocument(documentPath);
+    throw new HttpsError(
+      'failed-precondition',
+      'Please review and accept the ID verification notice first.',
+      { reason: 'ID_CONSENT_REQUIRED' }
+    );
+  }
+  // GRACE PATH (remove after minVersion): old apps never show the consent
+  // sheet; accept, but flag the record for audit.
+  const consentMissing = !consented;
+  if (consentMissing) logWarning(`submitAgeDocument: no id_verification consent for ${uid} (grace path)`);
+
   const profileRef = db.collection('profiles').doc(uid);
   const profileSnap = await profileRef.get();
   if (!profileSnap.exists) {
@@ -349,22 +423,27 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
 
   await writeStatus(uid, 'pending', { submittedAt: admin.firestore.Timestamp.now() });
 
-  // Retain (move to the server-only prefix) BEFORE OCR, so the image is never
-  // left under the client's upload prefix. Null = move failed → OCR the upload
-  // and delete it afterwards (old behaviour).
-  const keptPath = await retainSubmittedDocument(uid, documentPath, documentType);
+  // Move to the server-only prefix BEFORE OCR, so the image is never left
+  // under the client's upload prefix. Null = move failed -> OCR the upload
+  // and delete it afterwards.
+  const keptPath = await retainSubmittedDocument(uid, documentPath, documentType, { consentMissing });
   const ocrPath = keptPath ?? documentPath;
   const releaseUpload = async () => {
     if (!keptPath) await destroyDocument(documentPath);
   };
-  const recordDecision = async (status: AgeVerificationStatus) => {
-    if (keptPath) await setIdDocumentStatus(uid, status);
+  /** P2-6: a decision was made -> the image (and any retention copy) goes. */
+  const decided = async (verified: boolean, dob: Date | null) => {
+    await finalizeIdDocumentDecision(
+      uid,
+      { verified, method: 'document', birthYear: birthYearOf(dob) },
+      keptPath ? [] : [documentPath],
+    );
   };
 
   let text = '';
   try {
     const bucket = admin.storage().bucket().name;
-    const [result] = await visionClient.textDetection(
+    const [result] = await visionClient().textDetection(
       `gs://${bucket}/${ocrPath}`
     );
     text = result.fullTextAnnotation?.text ?? '';
@@ -375,7 +454,7 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
       rejectionReason: 'unreadable',
       reviewedBy: 'system',
     });
-    await recordDecision('rejected');
+    await decided(false, null);
     return { status: 'rejected', reason: 'unreadable' };
   }
 
@@ -386,11 +465,11 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
   await releaseUpload();
 
   if (!documentDob) {
-    await recordDecision('rejected');
     await writeStatus(uid, 'rejected', {
       rejectionReason: 'noBirthDateFound',
       reviewedBy: 'system',
     });
+    await decided(false, null);
     return { status: 'rejected', reason: 'noBirthDateFound' };
   }
 
@@ -399,9 +478,9 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
     await writeStatus(uid, 'rejected', {
       rejectionReason: 'underage',
       reviewedBy: 'system',
-      documentDateOfBirth: admin.firestore.Timestamp.fromDate(documentDob),
+      documentBirthYear: birthYearOf(documentDob),
     });
-    await recordDecision('rejected');
+    await decided(false, documentDob);
     logWarning(`submitAgeDocument: underage document for ${uid} (age ${age})`);
     return { status: 'rejected', reason: 'underage' };
   }
@@ -414,26 +493,28 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
     matchesDeclaration = deltaDays <= DOB_TOLERANCE_DAYS;
   }
 
-  // One document, one account. A hash, never the number itself.
+  // One document, one account. P2-6: a keyed HMAC (RETENTION_SALT), never the
+  // number itself; the old unsalted hash is still MATCHED so documents used
+  // before this change keep blocking reuse, but never written again.
   const documentHash = documentNumber
-    ? createHash('sha256').update(`${documentType}:${documentNumber}`).digest('hex')
+    ? documentFingerprint(documentType, documentNumber, documentSalt())
     : null;
+  const legacyHash = documentNumber ? legacyDocumentHash(documentType, documentNumber) : null;
 
-  if (documentHash) {
-    // Public copy (legacy) AND private copy (P1-4): the public one is
-    // stripped once every app version writes only the private profile.
-    const [reusedPublic, reusedPrivate] = await Promise.all(
+  if (documentHash && legacyHash) {
+    // Public copy (legacy) AND private copy (P1-4).
+    const snaps = await Promise.all(
       ['profiles', 'profiles_private'].map((c) =>
-        db.collection(c).where('ageVerification.documentHash', '==', documentHash).limit(2).get()
+        db.collection(c).where('ageVerification.documentHash', 'in', [documentHash, legacyHash]).limit(2).get()
       )
     );
-    const otherAccount = [...reusedPublic.docs, ...reusedPrivate.docs].find((d) => d.id !== uid);
+    const otherAccount = snaps.flatMap((s) => s.docs).find((d) => d.id !== uid);
     if (otherAccount) {
       await writeStatus(uid, 'rejected', {
         rejectionReason: 'documentAlreadyUsed',
         reviewedBy: 'system',
       });
-      await recordDecision('rejected');
+      await decided(false, documentDob);
       logWarning(`submitAgeDocument: document reuse by ${uid}`);
       return { status: 'rejected', reason: 'documentAlreadyUsed' };
     }
@@ -451,20 +532,30 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
       reviewedBy: 'system',
       confidence,
       documentHash,
-      documentDateOfBirth: admin.firestore.Timestamp.fromDate(documentDob),
+      documentBirthYear: birthYearOf(documentDob),
       verifiedAt: admin.firestore.Timestamp.now(),
     });
-    await recordDecision('verified');
+    await decided(true, documentDob);
     logInfo(`submitAgeDocument: auto-verified ${uid} (confidence ${confidence})`);
     return { status: 'verified' };
   }
 
-  // Anything uncertain goes to a human rather than guessing.
+  // Anything uncertain goes to a human rather than guessing. The image stays
+  // (server-only) for at most 7 days; the reviewer needs the birth date read
+  // off the document, which is removed again with the decision.
+  if (!keptPath) {
+    // Nothing for a reviewer to look at (the move failed and the upload is
+    // gone): ask for a new upload instead of queueing a blind review.
+    await writeStatus(uid, 'rejected', { rejectionReason: 'reuploadRequired', reviewedBy: 'system' });
+    await decided(false, documentDob);
+    return { status: 'rejected', reason: 'reuploadRequired' };
+  }
   await db.collection('age_verification_queue').doc(uid).set({
     userId: uid,
     submittedAt: admin.firestore.Timestamp.now(),
     documentType,
     documentDateOfBirth: admin.firestore.Timestamp.fromDate(documentDob),
+    documentBirthYear: birthYearOf(documentDob),
     declaredDateOfBirth: declaredDob
       ? admin.firestore.Timestamp.fromDate(declaredDob)
       : null,
@@ -472,9 +563,10 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
     confidence,
     documentHash,
     status: 'pending',
+    ...(consentMissing ? { consentMissing: true } : {}),
   });
   await writeStatus(uid, 'pending', { confidence, documentHash });
-  await recordDecision('pending');
+  await setIdDocumentStatus(uid, 'pending');
   logInfo(`submitAgeDocument: queued ${uid} for review (confidence ${confidence})`);
   return { status: 'pending' };
 });
@@ -509,6 +601,16 @@ export const reviewAgeVerification = onCall({ memory: '512MiB' }, async (request
 
   const queueRef = db.collection('age_verification_queue').doc(targetUid);
   const queued = await queueRef.get();
+  // P2-6: an expired review has no image any more; the user must re-upload.
+  if (approve && queued.data()?.status === 'expired') {
+    throw new HttpsError(
+      'failed-precondition',
+      'This submission expired (image deleted after 7 days). Ask the user to upload the document again.'
+    );
+  }
+  const docDob = queued.data()?.documentDateOfBirth;
+  const birthYear = docDob instanceof admin.firestore.Timestamp ? docDob.toDate().getUTCFullYear()
+    : (typeof queued.data()?.documentBirthYear === 'number' ? queued.data()?.documentBirthYear : null);
 
   await writeStatus(targetUid, approve ? 'verified' : 'rejected', {
     method: 'document',
@@ -516,26 +618,37 @@ export const reviewAgeVerification = onCall({ memory: '512MiB' }, async (request
     reviewedAt: admin.firestore.Timestamp.now(),
     rejectionReason: approve ? null : reason || 'rejectedByReviewer',
     documentHash: queued.data()?.documentHash ?? null,
+    ...(birthYear !== null ? { documentBirthYear: birthYear } : {}),
+    // P2-6: the full birth date read off the document is not kept after a decision.
+    documentDateOfBirth: admin.firestore.FieldValue.delete(),
     ...(approve ? { verifiedAt: admin.firestore.Timestamp.now() } : {}),
   });
 
-  await queueRef.set(
-    {
-      status: approve ? 'approved' : 'rejected',
-      reviewedBy: adminUid,
-      reviewedAt: admin.firestore.Timestamp.now(),
-      reason: reason || null,
-    },
-    { merge: true }
-  );
+  if (queued.exists) {
+    await queueRef.set(
+      {
+        status: approve ? 'approved' : 'rejected',
+        reviewedBy: adminUid,
+        reviewedAt: admin.firestore.Timestamp.now(),
+        reason: reason || null,
+        documentDateOfBirth: admin.firestore.FieldValue.delete(),
+        documentBirthYear: birthYear,
+      },
+      { merge: true }
+    );
+  }
 
-  await setIdDocumentStatus(targetUid, approve ? 'verified' : 'rejected');
+  // P2-6: decision made -> delete the image (+ any retention copy).
+  await finalizeIdDocumentDecision(targetUid, { verified: approve, method: 'document', birthYear });
 
   logInfo(
     `reviewAgeVerification: ${adminUid} ${approve ? 'approved' : 'rejected'} ${targetUid}`
   );
   return { status: approve ? 'verified' : 'rejected' };
 });
+
+const IMAGE_DELETED_MESSAGE =
+  'The document image was deleted after the verification decision (retention policy). Only the result and birth year are kept.';
 
 /** Largest document image returned inline (callable responses cap at 10 MB). */
 const MAX_DOCUMENT_BYTES = 7 * 1024 * 1024;
@@ -597,10 +710,22 @@ export const getAgeVerificationDetails = onCall({ memory: '512MiB' }, async (req
         });
       }
     } catch (e) {
-      logError(`getAgeVerificationDetails: reading ${path} failed`, e);
-      documentError = 'The document file could not be read.';
+      // P2-6: a 404 means the image was already deleted (decision or 7-day purge).
+      const notFound = (e as { code?: unknown })?.code === 404;
+      if (!notFound) logError(`getAgeVerificationDetails: reading ${path} failed`, e);
+      documentError = notFound
+        ? IMAGE_DELETED_MESSAGE
+        : 'The document file could not be read.';
     }
+  } else if (index && (index.imageDeleted === true || index.decidedAt || index.status === 'expired')) {
+    // P2-6: images are deleted once a decision is made / after 7 days pending.
+    documentError = index.status === 'expired'
+      ? 'The document image was deleted after 7 days without a decision. The user must upload it again.'
+      : IMAGE_DELETED_MESSAGE;
   }
+  const imageDeleted = document === null && (
+    index?.imageDeleted === true || !!index?.decidedAt || index?.status === 'expired' || documentError === IMAGE_DELETED_MESSAGE
+  );
 
   const status: AgeVerificationStatus =
     (av.status as AgeVerificationStatus) ?? (profile.dateOfBirth ? 'declared' : 'none');
@@ -617,6 +742,13 @@ export const getAgeVerificationDetails = onCall({ memory: '512MiB' }, async (req
     verifiedAt: isoOf(av.verifiedAt),
     declaredDateOfBirth: isoOf(profile.dateOfBirth),
     documentDateOfBirth: isoOf(av.documentDateOfBirth) ?? isoOf(queue?.documentDateOfBirth),
+    // P2-6: after a decision only the birth year is kept.
+    documentBirthYear: typeof av.documentBirthYear === 'number' ? av.documentBirthYear
+      : (typeof queue?.documentBirthYear === 'number' ? queue.documentBirthYear
+        : (typeof index?.birthYear === 'number' ? index.birthYear : null)),
+    decidedAt: isoOf(index?.decidedAt),
+    imageDeleted,
+    consentMissing: index?.consentMissing === true || queue?.consentMissing === true,
     documentType: queue?.documentType ?? index?.documentType ?? null,
     matchesDeclaration: typeof queue?.matchesDeclaration === 'boolean' ? queue.matchesDeclaration : null,
     queueStatus: queue?.status ?? null,

@@ -33,6 +33,7 @@ import '../bloc/coin_state.dart';
 import '../../../../core/services/effective_tier.dart';
 import '../../../../core/services/tier_entitlements.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../../../core/services/analytics_consent_service.dart';
 
 /// Coin Shop Screen
 /// Point 157: Coin purchase interface with packages and membership
@@ -2015,6 +2016,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     final detail =
         'requested=${requested.join(",")} notFound=${notFound.join(",")}';
     debugPrint('[Store] $context_ products missing — $detail');
+    if (!AnalyticsConsentService.instance.collectionAllowed) return;
     try {
       FirebaseCrashlytics.instance.log('[Store] $context_ missing: $detail');
       FirebaseCrashlytics.instance.recordError(
@@ -2031,6 +2033,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
   /// Same idea for a StoreKit/Billing query that errored outright.
   void _reportStoreQueryError(String context_, String? message) {
     debugPrint('[Store] $context_ query error — $message');
+    if (!AnalyticsConsentService.instance.collectionAllowed) return;
     try {
       FirebaseCrashlytics.instance.log('[Store] $context_ query error: $message');
     } catch (_) {

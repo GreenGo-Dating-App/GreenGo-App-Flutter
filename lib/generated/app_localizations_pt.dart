@@ -6587,7 +6587,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16316,6 +16319,221 @@ class AppLocalizationsPt extends AppLocalizations {
   String distanceOverKm(String km) {
     return '$km+ km';
   }
+
+  @override
+  String get idConsentTitle => 'Antes de carregar o seu documento';
+
+  @override
+  String get idConsentWhat =>
+      'O que tratamos: uma fotografia do seu documento de identificação. Lemos automaticamente a sua data de nascimento e o número do documento (OCR).';
+
+  @override
+  String get idConsentWho =>
+      'Quem o trata: a GreenGo, com o Google Cloud Vision (a Google atua como nossa subcontratante).';
+
+  @override
+  String get idConsentRetention =>
+      'Durante quanto tempo: a imagem é eliminada assim que for tomada uma decisão, automaticamente ou por um revisor. Se uma pessoa precisar de a rever, é guardada no máximo 7 dias, depois eliminada, e ser-lhe-á pedido que a carregue de novo.';
+
+  @override
+  String get idConsentKept =>
+      'O que guardamos: apenas se está verificado, como, a data da decisão, o seu ano de nascimento e uma impressão digital unidirecional com chave do número do documento, para que um documento não possa verificar várias contas.';
+
+  @override
+  String get idConsentAccess =>
+      'Quem pode ver: nenhum outro utilizador. Apenas o tratamento automático e, se necessário, um pequeno número de revisores autorizados da GreenGo.';
+
+  @override
+  String get idConsentAccept => 'Concordo, continuar';
+
+  @override
+  String get idConsentRecordError =>
+      'Não foi possível registar o seu consentimento, por isso nada foi carregado. Verifique a ligação e tente novamente.';
+
+  @override
+  String get ageVerifyRejectedExpired =>
+      'Não foi possível rever o seu documento a tempo e foi eliminado. Carregue-o novamente.';
+
+  @override
+  String get analyticsConsentTitle => 'Ajude-nos a melhorar a GreenGo';
+
+  @override
+  String get analyticsConsentBody =>
+      'Com a sua autorização usamos o Google Firebase Analytics, o Crashlytics e o Performance Monitoring para perceber como a app é usada e corrigir falhas. Isto guarda e lê identificadores no seu dispositivo. Nada é recolhido sem a sua autorização. Pode alterar isto a qualquer momento em Definições > Privacidade e dados.';
+
+  @override
+  String get analyticsConsentAllow => 'Permitir';
+
+  @override
+  String get analyticsConsentDecline => 'Recusar';
+
+  @override
+  String get privacySettingsTitle => 'Privacidade e dados';
+
+  @override
+  String get privacySettingsSubtitle =>
+      'Estatísticas, relatórios de falhas e emails de marketing';
+
+  @override
+  String get privacyAnalyticsToggle =>
+      'Estatísticas de utilização e relatórios de falhas';
+
+  @override
+  String get privacyAnalyticsToggleSubtitle =>
+      'Partilhe connosco estatísticas de utilização e relatórios de falhas (Google Firebase) para melhorar a app.';
+
+  @override
+  String get privacyMarketingEmailToggle => 'Novidades e ofertas por email';
+
+  @override
+  String get privacyMarketingEmailSubtitle =>
+      'Emails ocasionais sobre novas funcionalidades, dicas, resumos de atividade e ofertas. Pode cancelar a subscrição a qualquer momento.';
+
+  @override
+  String get privacySettingsSaveError =>
+      'Não foi possível guardar a sua escolha. Tente novamente.';
+
+  @override
+  String get notificationCatMarketing => 'Marketing e promoções';
+
+  @override
+  String get notificationCatMarketingSubtitle =>
+      'Novidades, ofertas e anúncios da GreenGo. Desligado até o ativar.';
+
+  @override
+  String get signupMarketingEmailConsent =>
+      'Enviem-me novidades e ofertas por email';
+
+  @override
+  String get signupMarketingEmailConsentSubtitle =>
+      'Opcional. Pode cancelar a subscrição a qualquer momento.';
+
+  @override
+  String get moderationDecisionTitle => 'Decisão de moderação';
+
+  @override
+  String get moderationDecisionIntro =>
+      'A nossa equipa tomou uma medida sobre a sua conta ou conteúdo ao abrigo das Diretrizes da Comunidade. Esta é a fundamentação.';
+
+  @override
+  String get moderationDecisionActionLabel => 'Medida tomada';
+
+  @override
+  String get moderationDecisionReasonLabel => 'Motivo';
+
+  @override
+  String get moderationDecisionExplanationLabel => 'Explicação da nossa equipa';
+
+  @override
+  String moderationDecisionAppealUntil(String date) {
+    return 'Pode recorrer até $date.';
+  }
+
+  @override
+  String get moderationDecisionAppealButton => 'Recorrer desta decisão';
+
+  @override
+  String get moderationDecisionAppealHint =>
+      'Explique porque acha que esta decisão está errada (pelo menos 10 caracteres).';
+
+  @override
+  String get moderationDecisionAppealSubmit => 'Enviar recurso';
+
+  @override
+  String get moderationDecisionAppealSent =>
+      'O seu recurso foi enviado. A nossa equipa vai voltar a analisá-lo e informá-lo.';
+
+  @override
+  String get moderationDecisionAppealAlready => 'Já recorreu desta decisão.';
+
+  @override
+  String get moderationDecisionAppealClosed =>
+      'Já não é possível recorrer desta decisão.';
+
+  @override
+  String get moderationDecisionAppealError =>
+      'Não foi possível enviar o seu recurso. Tente novamente.';
+
+  @override
+  String get moderationDecisionAppealTooShort =>
+      'Escreva pelo menos 10 caracteres.';
+
+  @override
+  String get moderationDecisionNotAppealable =>
+      'Não é possível recorrer desta decisão na app. Contacte o suporte se achar que está errada.';
+
+  @override
+  String get moderationActionRemoveContent => 'Conteúdo removido';
+
+  @override
+  String get moderationActionWarning => 'Aviso emitido';
+
+  @override
+  String get moderationActionSuspend => 'Conta suspensa temporariamente';
+
+  @override
+  String get moderationActionBan => 'Conta banida';
+
+  @override
+  String get moderationActionShadowBan => 'Visibilidade do seu perfil reduzida';
+
+  @override
+  String get moderationActionRequireVerification =>
+      'Verificação de identidade obrigatória';
+
+  @override
+  String get moderationActionOther => 'Restrição aplicada';
+
+  @override
+  String get moderationReasonCsae => 'Exploração ou abuso sexual de crianças';
+
+  @override
+  String get moderationReasonUnderage => 'Utilizador menor de idade';
+
+  @override
+  String get moderationReasonSexualContent => 'Conteúdo sexual';
+
+  @override
+  String get moderationReasonInappropriate => 'Conteúdo inapropriado';
+
+  @override
+  String get moderationReasonThreats => 'Ameaças';
+
+  @override
+  String get moderationReasonViolence => 'Violência';
+
+  @override
+  String get moderationReasonHarassment => 'Assédio ou bullying';
+
+  @override
+  String get moderationReasonHate => 'Discurso de ódio';
+
+  @override
+  String get moderationReasonSpam => 'Spam';
+
+  @override
+  String get moderationReasonScam => 'Burla ou fraude';
+
+  @override
+  String get moderationReasonImpersonation =>
+      'Usurpação de identidade ou perfil falso';
+
+  @override
+  String get moderationReasonPrivacy => 'Partilha de informações pessoais';
+
+  @override
+  String get moderationReasonMisleading => 'Conteúdo enganador';
+
+  @override
+  String get moderationReasonNoShow => 'Não compareceu a uma reserva';
+
+  @override
+  String get moderationReasonOffPlatformPayment =>
+      'Pagamento fora da plataforma';
+
+  @override
+  String get moderationReasonOther =>
+      'Outra violação das Diretrizes da Comunidade';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -22908,7 +23126,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -32631,4 +32852,221 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String distanceOverKm(String km) {
     return '$km+ km';
   }
+
+  @override
+  String get idConsentTitle => 'Antes de enviar seu documento';
+
+  @override
+  String get idConsentWhat =>
+      'O que tratamos: uma foto do seu documento de identidade. Lemos automaticamente sua data de nascimento e o número do documento (OCR).';
+
+  @override
+  String get idConsentWho =>
+      'Quem trata: a GreenGo, usando o Google Cloud Vision (o Google atua como nosso operador).';
+
+  @override
+  String get idConsentRetention =>
+      'Por quanto tempo: a imagem é excluída assim que uma decisão é tomada, automaticamente ou por um revisor. Se uma pessoa precisar revisá-la, ela fica guardada no máximo 7 dias, depois é excluída e pediremos que você envie de novo.';
+
+  @override
+  String get idConsentKept =>
+      'O que guardamos: apenas se você está verificado, como, a data da decisão, seu ano de nascimento e uma impressão digital unidirecional com chave do número do documento, para que um documento não possa verificar várias contas.';
+
+  @override
+  String get idConsentAccess =>
+      'Quem pode ver: nenhum outro usuário. Apenas o processamento automático e, se necessário, um pequeno número de revisores autorizados da GreenGo.';
+
+  @override
+  String get idConsentAccept => 'Concordo, continuar';
+
+  @override
+  String get idConsentRecordError =>
+      'Não foi possível registrar seu consentimento, então nada foi enviado. Verifique sua conexão e tente de novo.';
+
+  @override
+  String get ageVerifyRejectedExpired =>
+      'Não foi possível revisar seu documento a tempo e ele foi excluído. Envie de novo.';
+
+  @override
+  String get analyticsConsentTitle => 'Ajude a gente a melhorar o GreenGo';
+
+  @override
+  String get analyticsConsentBody =>
+      'Com sua permissão usamos o Google Firebase Analytics, o Crashlytics e o Performance Monitoring para entender como o app é usado e corrigir falhas. Isso armazena e lê identificadores no seu dispositivo. Nada é coletado sem sua permissão. Você pode mudar isso a qualquer momento em Configurações > Privacidade e dados.';
+
+  @override
+  String get analyticsConsentAllow => 'Permitir';
+
+  @override
+  String get analyticsConsentDecline => 'Recusar';
+
+  @override
+  String get privacySettingsTitle => 'Privacidade e dados';
+
+  @override
+  String get privacySettingsSubtitle =>
+      'Estatísticas, relatórios de falhas e e-mails de marketing';
+
+  @override
+  String get privacyAnalyticsToggle =>
+      'Estatísticas de uso e relatórios de falhas';
+
+  @override
+  String get privacyAnalyticsToggleSubtitle =>
+      'Compartilhe com a gente estatísticas de uso e relatórios de falhas (Google Firebase) para melhorar o app.';
+
+  @override
+  String get privacyMarketingEmailToggle => 'Novidades e ofertas por e-mail';
+
+  @override
+  String get privacyMarketingEmailSubtitle =>
+      'E-mails ocasionais sobre novos recursos, dicas, resumos de atividade e ofertas. Você pode cancelar a inscrição a qualquer momento.';
+
+  @override
+  String get privacySettingsSaveError =>
+      'Não foi possível salvar sua escolha. Tente de novo.';
+
+  @override
+  String get notificationCatMarketing => 'Marketing e promoções';
+
+  @override
+  String get notificationCatMarketingSubtitle =>
+      'Novidades, ofertas e anúncios do GreenGo. Desligado até você ativar.';
+
+  @override
+  String get signupMarketingEmailConsent =>
+      'Quero receber novidades e ofertas por e-mail';
+
+  @override
+  String get signupMarketingEmailConsentSubtitle =>
+      'Opcional. Você pode cancelar a inscrição a qualquer momento.';
+
+  @override
+  String get moderationDecisionTitle => 'Decisão de moderação';
+
+  @override
+  String get moderationDecisionIntro =>
+      'Nossa equipe tomou uma medida sobre sua conta ou conteúdo com base nas Diretrizes da Comunidade. Esta é a justificativa.';
+
+  @override
+  String get moderationDecisionActionLabel => 'Medida tomada';
+
+  @override
+  String get moderationDecisionReasonLabel => 'Motivo';
+
+  @override
+  String get moderationDecisionExplanationLabel => 'Explicação da nossa equipe';
+
+  @override
+  String moderationDecisionAppealUntil(String date) {
+    return 'Você pode recorrer até $date.';
+  }
+
+  @override
+  String get moderationDecisionAppealButton => 'Recorrer desta decisão';
+
+  @override
+  String get moderationDecisionAppealHint =>
+      'Explique por que você acha que esta decisão está errada (pelo menos 10 caracteres).';
+
+  @override
+  String get moderationDecisionAppealSubmit => 'Enviar recurso';
+
+  @override
+  String get moderationDecisionAppealSent =>
+      'Seu recurso foi enviado. Nossa equipe vai analisá-lo de novo e avisar você.';
+
+  @override
+  String get moderationDecisionAppealAlready =>
+      'Você já recorreu desta decisão.';
+
+  @override
+  String get moderationDecisionAppealClosed =>
+      'Não é mais possível recorrer desta decisão.';
+
+  @override
+  String get moderationDecisionAppealError =>
+      'Não foi possível enviar seu recurso. Tente de novo.';
+
+  @override
+  String get moderationDecisionAppealTooShort =>
+      'Escreva pelo menos 10 caracteres.';
+
+  @override
+  String get moderationDecisionNotAppealable =>
+      'Não é possível recorrer desta decisão no app. Fale com o suporte se achar que ela está errada.';
+
+  @override
+  String get moderationActionRemoveContent => 'Conteúdo removido';
+
+  @override
+  String get moderationActionWarning => 'Advertência emitida';
+
+  @override
+  String get moderationActionSuspend => 'Conta suspensa temporariamente';
+
+  @override
+  String get moderationActionBan => 'Conta banida';
+
+  @override
+  String get moderationActionShadowBan => 'Visibilidade do seu perfil reduzida';
+
+  @override
+  String get moderationActionRequireVerification =>
+      'Verificação de identidade obrigatória';
+
+  @override
+  String get moderationActionOther => 'Restrição aplicada';
+
+  @override
+  String get moderationReasonCsae => 'Exploração ou abuso sexual infantil';
+
+  @override
+  String get moderationReasonUnderage => 'Usuário menor de idade';
+
+  @override
+  String get moderationReasonSexualContent => 'Conteúdo sexual';
+
+  @override
+  String get moderationReasonInappropriate => 'Conteúdo inapropriado';
+
+  @override
+  String get moderationReasonThreats => 'Ameaças';
+
+  @override
+  String get moderationReasonViolence => 'Violência';
+
+  @override
+  String get moderationReasonHarassment => 'Assédio ou bullying';
+
+  @override
+  String get moderationReasonHate => 'Discurso de ódio';
+
+  @override
+  String get moderationReasonSpam => 'Spam';
+
+  @override
+  String get moderationReasonScam => 'Golpe ou fraude';
+
+  @override
+  String get moderationReasonImpersonation =>
+      'Falsidade ideológica ou perfil falso';
+
+  @override
+  String get moderationReasonPrivacy =>
+      'Compartilhamento de informações pessoais';
+
+  @override
+  String get moderationReasonMisleading => 'Conteúdo enganoso';
+
+  @override
+  String get moderationReasonNoShow => 'Não compareceu a uma reserva';
+
+  @override
+  String get moderationReasonOffPlatformPayment =>
+      'Pagamento fora da plataforma';
+
+  @override
+  String get moderationReasonOther =>
+      'Outra violação das Diretrizes da Comunidade';
 }

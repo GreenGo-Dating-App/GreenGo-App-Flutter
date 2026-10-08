@@ -91,6 +91,7 @@ import 'features/subscription/domain/entities/subscription.dart';
 import 'features/video_profiles/presentation/bloc/video_profile_bloc.dart';
 import 'features/video_profiles/presentation/screens/video_discovery_screen.dart';
 import 'features/video_profiles/presentation/screens/video_profile_screen.dart';
+import 'core/services/analytics_consent_service.dart';
 import 'firebase_options.dart';
 import 'generated/app_localizations.dart';
 
@@ -106,7 +107,9 @@ void main() async {
     debugPrint('🛑 Widget build failed: ${details.exceptionAsString()}');
     // Best-effort report; never let the reporter itself throw here.
     try {
-      if (!kDebugMode) FirebaseCrashlytics.instance.recordFlutterError(details);
+      if (!kDebugMode && AnalyticsConsentService.instance.collectionAllowed) {
+        FirebaseCrashlytics.instance.recordFlutterError(details);
+      }
     } catch (_) {}
     return AppErrorScreen(details: details, onReload: restartApp);
   };
@@ -223,6 +226,16 @@ void main() async {
     SharedPreferences.getInstance(),
   ).wait;
   final prefs = startup.$5;
+
+  // Analytics / crash-reporting consent (P2-5a, ePrivacy art. 5(3)): decide
+  // the region on first run, load the stored choice, then switch the SDKs on
+  // or off. Native auto-collection is OFF in the manifest / Info.plist, so
+  // nothing is collected before this runs. Release builds only (debug runs
+  // never report).
+  await AnalyticsConsentService.instance.init(prefs);
+  if (!kDebugMode) {
+    unawaited(AnalyticsConsentService.instance.applyAtStartup());
+  }
 
   // Load countdown dates from Firestore (non-blocking, uses defaults on
   // failure). After App Check so the read carries a token; the result is

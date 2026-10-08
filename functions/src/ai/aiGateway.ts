@@ -50,7 +50,23 @@ export const AI_USAGE = 'ai_usage';
 export const AI_CONSENT_TYPE = 'ai_processing';
 /** Oldest consent-text version the server accepts for AI calls. */
 export const AI_CONSENT_MIN_VERSION = 1;
-export const CONSENT_TYPES = new Set([AI_CONSENT_TYPE]);
+/**
+ * Consent records accepted by recordConsent (P2-5 / P2-6): AI processing, ID
+ * verification (P2-6), analytics/crash reporting (ePrivacy art. 5(3)),
+ * marketing e-mail / push opt-ins, and the signup records for the terms,
+ * privacy policy and optional profiling / third-party-data choices.
+ */
+export const CONSENT_TYPES = new Set([
+  AI_CONSENT_TYPE,
+  'id_verification',
+  'analytics',
+  'marketing_email',
+  'marketing_push',
+  'terms',
+  'privacy',
+  'profiling',
+  'third_party_data',
+]);
 
 const num = (name: string, dflt: number) => {
   const v = Number(process.env[name]);
@@ -635,13 +651,20 @@ export async function handleRecordConsent(request: any) {
   if (typeof data.accepted !== 'boolean') throw new AppError('INVALID_ARGUMENT', 'accepted must be a boolean', 400);
   const locale = typeof data.locale === 'string' ? data.locale.slice(0, 20) : null;
   const platform = typeof data.platform === 'string' ? data.platform.slice(0, 20) : null;
+  // Optional (P2-5d): the legal document's own version string, e.g. "1.0" or
+  // "2026-10-08", and the region the client decided the default from.
+  const docVersion = typeof data.docVersion === 'string' && data.docVersion.trim()
+    ? data.docVersion.trim().slice(0, 40) : null;
+  const region = typeof data.region === 'string' && data.region.trim()
+    ? data.region.trim().slice(0, 10) : null;
   await consumeQuota(uid, 'consentEvents', 1, limits().consentEvents);
 
   const at = TS();
+  const extra = { ...(docVersion ? { docVersion } : {}), ...(region ? { region } : {}) };
   const ref = db().collection(CONSENTS).doc(uid);
   const batch = db().batch();
-  batch.set(ref.collection('events').doc(), { type, version, accepted: data.accepted, locale, platform, at });
-  batch.set(ref, { [type]: { accepted: data.accepted, version, locale, at }, updatedAt: at }, { merge: true });
+  batch.set(ref.collection('events').doc(), { type, version, accepted: data.accepted, locale, platform, at, ...extra });
+  batch.set(ref, { [type]: { accepted: data.accepted, version, locale, at, ...extra }, updatedAt: at }, { merge: true });
   await batch.commit();
   return { success: true, type, version, accepted: data.accepted };
 }
