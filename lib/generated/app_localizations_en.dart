@@ -6523,7 +6523,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return '$tierName membership active until $formattedDate$coinsText';
   }
 
@@ -16073,4 +16076,62 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coinReasonRefundClawback => 'Refunded purchase reversed';
+
+  @override
+  String get chatMessageDeleted => 'Message deleted';
+
+  @override
+  String get aiConsentTitle => 'AI features use Google services';
+
+  @override
+  String get aiConsentIntro =>
+      'Smart replies, the AI language coach, translating messages you receive and read-aloud audio only work if GreenGo sends the text involved to Google.';
+
+  @override
+  String get aiConsentProviders =>
+      'Who: Google Gemini (suggestions and coaching), Google Cloud Text-to-Speech (audio) and Google Translate (translations).';
+
+  @override
+  String get aiConsentWhatSent =>
+      'What is sent: only the text of the message you use the feature on (including messages other people sent you) and the languages. Never your name, photos or profile.';
+
+  @override
+  String get aiConsentWhy =>
+      'Why: only to produce the suggestion, translation or audio you asked for.';
+
+  @override
+  String get aiConsentDeclineInfo =>
+      'If you decline, these features stay off and nothing is sent. Tap any of them later to review your choice.';
+
+  @override
+  String get aiConsentAccept => 'Allow';
+
+  @override
+  String get aiConsentDecline => 'Decline';
+
+  @override
+  String get aiConsentDisabledNotice =>
+      'This feature is off because you chose not to send text to Google AI services.';
+
+  @override
+  String get aiConsentReview => 'Review';
+
+  @override
+  String get profileDeleteReauthRequired =>
+      'For your security, please confirm your password again to delete your account.';
+
+  @override
+  String get profileDeleteNetworkError =>
+      'No connection. Your account was not deleted. Please try again.';
+
+  @override
+  String get profileDeleteFailed =>
+      'We could not delete your account, and nothing was deleted. Please try again or contact support.';
+
+  @override
+  String get onboardingAgeBlockedTitle => 'GreenGo is for adults';
+
+  @override
+  String get onboardingAgeBlockedBody =>
+      'You must be at least 18 years old to use GreenGo, so we cannot create your account.';
 }

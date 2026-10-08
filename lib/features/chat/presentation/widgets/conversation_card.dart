@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
+import 'deleted_message_bubble.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/conversation.dart';
 
@@ -310,7 +311,9 @@ class _ConversationCardState extends State<ConversationCard>
             )
           else
             Text(
-              widget.conversation.lastMessagePreview,
+              isDeletedAuthorMessage(widget.conversation.lastMessage?.senderId)
+                  ? AppLocalizations.of(context)!.chatMessageDeleted
+                  : widget.conversation.lastMessagePreview,
               style: TextStyle(
                 color: hasUnread ? AppColors.textPrimary : AppColors.textSecondary,
                 fontSize: 14,

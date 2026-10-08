@@ -5288,5 +5288,21 @@
   "bkErrInvalidStart": "Diese Zeit ist an diesem Termin nicht verfügbar.",
   "coinsGiftPurchaseHold": "Coins, die du in den letzten 72 Stunden gekauft hast, können noch nicht verschenkt werden. Du kannst sie aber für Funktionen ausgeben.",
   "coinsGiftDailyLimit": "Du hast dein heutiges Geschenklimit erreicht (10 Geschenke oder 5.000 Coins). Bitte versuche es morgen erneut.",
-  "coinReasonRefundClawback": "Erstatteter Kauf zurückgebucht"
+  "coinReasonRefundClawback": "Erstatteter Kauf zurückgebucht",
+  "chatMessageDeleted": "Nachricht gelöscht",
+  "aiConsentTitle": "KI-Funktionen nutzen Google-Dienste",
+  "aiConsentIntro": "Antwortvorschläge, der KI-Sprachcoach, das Übersetzen empfangener Nachrichten und das Vorlesen funktionieren nur, wenn GreenGo den betreffenden Text an Google sendet.",
+  "aiConsentProviders": "Wer: Google Gemini (Vorschläge und Coaching), Google Cloud Text-to-Speech (Audio) und Google Übersetzer (Übersetzungen).",
+  "aiConsentWhatSent": "Was gesendet wird: nur der Text der Nachricht, auf die du die Funktion anwendest (auch Nachrichten, die andere dir geschickt haben), und die Sprachen. Nie dein Name, deine Fotos oder dein Profil.",
+  "aiConsentWhy": "Warum: nur um den Vorschlag, die Übersetzung oder das Audio zu erstellen, das du angefordert hast.",
+  "aiConsentDeclineInfo": "Wenn du ablehnst, bleiben diese Funktionen aus und es wird nichts gesendet. Tippe später auf eine davon, um deine Wahl zu ändern.",
+  "aiConsentAccept": "Erlauben",
+  "aiConsentDecline": "Ablehnen",
+  "aiConsentDisabledNotice": "Diese Funktion ist aus, weil du keinen Text an Google-KI-Dienste senden möchtest.",
+  "aiConsentReview": "Ändern",
+  "profileDeleteReauthRequired": "Bitte bestätige zu deiner Sicherheit erneut dein Passwort, um dein Konto zu löschen.",
+  "profileDeleteNetworkError": "Keine Verbindung. Dein Konto wurde nicht gelöscht. Bitte versuche es erneut.",
+  "profileDeleteFailed": "Wir konnten dein Konto nicht löschen, es wurde nichts gelöscht. Bitte versuche es erneut oder kontaktiere den Support.",
+  "onboardingAgeBlockedTitle": "GreenGo ist für Erwachsene",
+  "onboardingAgeBlockedBody": "Du musst mindestens 18 Jahre alt sein, um GreenGo zu nutzen. Daher können wir dein Konto nicht erstellen."
 }

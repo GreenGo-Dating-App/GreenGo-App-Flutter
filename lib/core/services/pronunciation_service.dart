@@ -2,120 +2,109 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:audioplayers/audioplayers.dart' as ap;
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_storage/firebase_storage.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
+import 'ai_consent_service.dart';
+
 /// Service for generating and caching pronunciation audio.
 ///
-/// Uses Google Cloud TTS (Chirp 3 HD) for high-quality neural voices.
-/// Each TTS listen costs 1 coin — coin deduction is handled by the caller.
+/// Audio comes from Google Cloud TTS (Chirp 3 HD) through the
+/// `synthesizeSpeech` callable: the key stays on the server (audit C-08), and
+/// the server fills the shared `pronunciation_cache` / `pronunciation_audio`
+/// cache. Each TTS listen costs coins; the deduction is handled by the caller.
 ///
-/// Strategy: Check Firestore cache first. If the phrase+language combination
-/// already has a cached audio URL, return it. Otherwise, call Cloud TTS to
-/// generate the audio, upload to Firebase Storage, cache the URL in Firestore,
-/// and return it.
+/// Nothing is sent to Google unless the user accepted the AI-processing
+/// notice ([AiConsentService]); callers gate the tap with
+/// `AiConsentGate.ensure` so the user sees why.
+///
+/// Strategy: session cache -> shared cache doc (server key, then the legacy
+/// device-written key) -> `synthesizeSpeech`.
 class PronunciationService {
   factory PronunciationService() => _instance;
   PronunciationService._();
   static final PronunciationService _instance = PronunciationService._();
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final FirebaseStorage _storage = FirebaseStorage.instance;
-
-  // In-memory cache to avoid repeated Firestore reads within same session
-  final Map<String, String> _memoryCache = {};
 
   // Web has no writable filesystem, so freshly synthesised audio is kept in
   // memory for the session instead of on disk.
   final Map<String, Uint8List> _webBytesCache = {};
 
-  String? _cloudTtsApiKey;
+  /// Server input cap (functions/src/ai/aiGateway.ts CAPS.ttsChars).
+  static const int maxChars = 500;
 
-  /// Load API key from Firestore config (never hardcoded)
-  Future<String?> _getApiKey() async {
-    if (_cloudTtsApiKey != null) return _cloudTtsApiKey;
-    try {
-      final doc = await _firestore
-          .collection('app_config')
-          .doc('api_keys')
-          .get();
-      if (doc.exists) {
-        // Use dedicated cloud_tts_api_key, or fall back to gemini_api_key
-        // (same Google Cloud project key works for both)
-        _cloudTtsApiKey = doc.data()?['cloud_tts_api_key'] as String?
-            ?? doc.data()?['gemini_api_key'] as String?;
-      }
-    } catch (e) {
-      debugPrint('PronunciationService: Failed to load API key: $e');
-    }
-    return _cloudTtsApiKey;
-  }
-
-  /// Generate a cache key from phrase + language + voice version
-  String _cacheKey(String phrase, String language) {
+  /// Legacy cache key written by older app versions (Dart String.hashCode).
+  String _legacyCacheKey(String phrase, String language) {
     final normalized = phrase.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
     return 'v5c_${language.toLowerCase()}_${normalized.hashCode.abs()}';
+  }
+
+  /// Same key the server computes (aiGateway.ts ttsCacheKey).
+  @visibleForTesting
+  static String serverCacheKey(String phrase, String language, {required bool isMale}) {
+    final normalized = phrase.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+    var lang = language
+        .toLowerCase()
+        .replaceAll('_', '-')
+        .replaceAll(RegExp('[^a-z0-9-]'), '');
+    if (lang.length > 10) lang = lang.substring(0, 10);
+    if (lang.isEmpty) lang = 'en';
+    final h = sha256.convert(utf8.encode(normalized)).toString().substring(0, 40);
+    return 'v6_${lang}_${h}_${isMale ? 'm' : 'f'}';
   }
 
   // Local file path cache (messageKey -> local file path)
   final Map<String, String> _filePathCache = {};
 
+  /// Cached audio URL from the shared cache, or null.
+  Future<String?> _cachedUrl(String phrase, String language, bool isMale) async {
+    final keys = [
+      serverCacheKey(phrase, language, isMale: isMale),
+      '${_legacyCacheKey(phrase, language)}${isMale ? '_m' : '_f'}',
+    ];
+    for (final key in keys) {
+      try {
+        final doc = await _firestore.collection('pronunciation_cache').doc(key).get();
+        final url = doc.data()?['audioUrl'] as String?;
+        if (url != null && url.isNotEmpty) return url;
+      } catch (e) {
+        debugPrint('PronunciationService: cache check failed: $e');
+      }
+    }
+    return null;
+  }
+
   /// Get pronunciation audio as a local file path for playback.
-  ///
-  /// Strategy: local file cache → Firestore/Storage cache → Cloud TTS generate.
-  /// Audio is saved to Firebase Storage for cross-device/cross-session reuse.
   Future<String?> getPronunciationFilePath(String phrase, String language, {bool isMale = true}) async {
     // Web cannot produce a file path at all — callers must use
     // [getPronunciationSource], which handles both platforms.
     if (kIsWeb) return null;
-    final genderSuffix = isMale ? '_m' : '_f';
-    final key = '${_cacheKey(phrase, language)}$genderSuffix';
+    final key = serverCacheKey(phrase, language, isMale: isMale);
 
-    // 1. Check local file cache
-    if (_filePathCache.containsKey(key)) {
-      final path = _filePathCache[key]!;
-      if (File(path).existsSync()) return path;
+    // 1. Local file cache
+    final local = _filePathCache[key];
+    if (local != null) {
+      if (File(local).existsSync()) return local;
       _filePathCache.remove(key);
     }
 
-    // 2. Check Firestore cache → download from Storage
-    try {
-      final doc = await _firestore
-          .collection('pronunciation_cache')
-          .doc(key)
-          .get();
-
-      if (doc.exists) {
-        final url = doc.data()?['audioUrl'] as String?;
-        if (url != null) {
-          final localPath = await _downloadToLocal(key, url);
-          if (localPath != null) {
-            doc.reference.update({
-              'accessCount': FieldValue.increment(1),
-              'lastAccessed': FieldValue.serverTimestamp(),
-            }).catchError((_) {});
-            return localPath;
-          }
-        }
-      }
-    } catch (e) {
-      debugPrint('PronunciationService: Firestore cache check failed: $e');
+    // 2. Shared cache -> download
+    final url = await _cachedUrl(phrase, language, isMale);
+    if (url != null) {
+      final path = await _downloadToLocal(key, url);
+      if (path != null) return path;
     }
 
-    // 3. Generate via Google Cloud TTS (Chirp 3 HD)
-    final audioBytes = await _generatePronunciation(phrase, language, isMale: isMale);
-    if (audioBytes == null) return null;
-
-    // 4. Save locally for immediate playback
-    final localPath = await _saveLocally(key, audioBytes);
-    if (localPath == null) return null;
-
-    // 5. Upload to Firebase Storage + cache in Firestore (background)
-    _uploadToFirebase(key, phrase, language, audioBytes).catchError((_) {});
-
-    return localPath;
+    // 3. Server synthesis
+    final generated = await _synthesize(phrase, language, isMale: isMale);
+    if (generated == null) return null;
+    if (generated.bytes != null) return _saveLocally(key, generated.bytes!);
+    if (generated.url != null) return _downloadToLocal(key, generated.url!);
+    return null;
   }
 
   /// Download audio from URL to a local temp file
@@ -139,33 +128,10 @@ class PronunciationService {
       final file = File('${tempDir.path}/tts_$key.mp3');
       await file.writeAsBytes(audioBytes);
       _filePathCache[key] = file.path;
-      debugPrint('PronunciationService: Saved to ${file.path} (${audioBytes.length} bytes)');
       return file.path;
     } catch (e) {
       debugPrint('PronunciationService: Local save failed: $e');
       return null;
-    }
-  }
-
-  /// Upload to Firebase Storage and cache URL in Firestore (background, non-blocking)
-  Future<void> _uploadToFirebase(String key, String phrase, String language, Uint8List audioBytes) async {
-    try {
-      final storagePath = 'pronunciation_audio/$language/$key.mp3';
-      final ref = _storage.ref(storagePath);
-      await ref.putData(audioBytes, SettableMetadata(contentType: 'audio/mpeg'));
-      final downloadUrl = await ref.getDownloadURL();
-      await _firestore.collection('pronunciation_cache').doc(key).set({
-        'phrase': phrase,
-        'language': language,
-        'audioUrl': downloadUrl,
-        'storagePath': storagePath,
-        'createdAt': FieldValue.serverTimestamp(),
-        'lastAccessed': FieldValue.serverTimestamp(),
-        'accessCount': 1,
-      });
-      debugPrint('PronunciationService: Uploaded to Firebase Storage');
-    } catch (e) {
-      debugPrint('PronunciationService: Firebase upload failed (non-blocking): $e');
     }
   }
 
@@ -177,12 +143,10 @@ class PronunciationService {
 
   /// Playable audio for [phrase], resolved for the current platform.
   ///
-  /// Native keeps the existing temp-file cache. Web has neither `dart:io` nor
-  /// `path_provider`, so the file layer is skipped entirely: cached audio plays
-  /// straight from its Storage URL and freshly synthesised audio plays from
-  /// bytes. Both platforms share the same `pronunciation_cache` documents, so
-  /// web reuses whatever mobile has already generated and never double-spends
-  /// on Cloud TTS.
+  /// Native keeps the temp-file cache. Web has neither `dart:io` nor
+  /// `path_provider`, so cached audio plays straight from its Storage URL and
+  /// freshly synthesised audio plays from bytes. Both platforms share the same
+  /// `pronunciation_cache` documents.
   Future<ap.Source?> getPronunciationSource(
     String phrase,
     String language, {
@@ -194,187 +158,64 @@ class PronunciationService {
       return path == null ? null : ap.DeviceFileSource(path);
     }
 
-    final genderSuffix = isMale ? '_m' : '_f';
-    final key = '${_cacheKey(phrase, language)}$genderSuffix';
-
-    // 1. Already synthesised earlier in this session.
+    final key = serverCacheKey(phrase, language, isMale: isMale);
     final cachedBytes = _webBytesCache[key];
     if (cachedBytes != null) return ap.BytesSource(cachedBytes);
 
-    // 2. Shared Storage cache.
-    try {
-      final doc =
-          await _firestore.collection('pronunciation_cache').doc(key).get();
-      if (doc.exists) {
-        final url = doc.data()?['audioUrl'] as String?;
-        if (url != null && url.isNotEmpty) {
-          doc.reference.update({
-            'accessCount': FieldValue.increment(1),
-            'lastAccessed': FieldValue.serverTimestamp(),
-          }).catchError((_) {});
-          return ap.UrlSource(url);
-        }
-      }
-    } catch (e) {
-      debugPrint('PronunciationService: web cache check failed: $e');
+    final url = await _cachedUrl(phrase, language, isMale);
+    if (url != null) return ap.UrlSource(url);
+
+    final generated = await _synthesize(phrase, language, isMale: isMale);
+    if (generated == null) return null;
+    if (generated.bytes != null) {
+      _webBytesCache[key] = generated.bytes!;
+      return ap.BytesSource(generated.bytes!);
     }
-
-    // 3. Generate via Cloud TTS, then publish to the shared cache.
-    final audioBytes =
-        await _generatePronunciation(phrase, language, isMale: isMale);
-    if (audioBytes == null) return null;
-
-    _webBytesCache[key] = audioBytes;
-    _uploadToFirebase(key, phrase, language, audioBytes).catchError((_) {});
-    return ap.BytesSource(audioBytes);
+    return generated.url != null ? ap.UrlSource(generated.url!) : null;
   }
 
-  // ===== Google Cloud TTS (Chirp 3 HD) =====
-
-  /// Map language code to Google Cloud TTS language code
-  String _getCloudTtsLanguageCode(String language) {
-    final lower = language.toLowerCase().replaceAll('_', '-');
-    const mapping = {
-      'en': 'en-US',
-      'it': 'it-IT',
-      'es': 'es-ES',
-      'fr': 'fr-FR',
-      'de': 'de-DE',
-      'pt': 'pt-PT',
-      'pt-br': 'pt-BR',
-      'ja': 'ja-JP',
-      'ko': 'ko-KR',
-      'zh': 'cmn-CN',
-      'ar': 'ar-XA',
-      'hi': 'hi-IN',
-      'tr': 'tr-TR',
-      'ru': 'ru-RU',
-    };
-    // If already a full code like en-US, use as-is or map it
-    if (lower.contains('-') && lower.length >= 4) {
-      return mapping[lower] ?? lower;
-    }
-    return mapping[lower] ?? 'en-US';
-  }
-
-  /// Get Chirp 3 HD voice name. Male: Orus, Female: Kore.
-  String _getChirp3VoiceName(String languageCode, {bool isMale = true}) {
-    final voiceName = isMale ? 'Orus' : 'Kore';
-    return '$languageCode-Chirp3-HD-$voiceName';
-  }
-
-  /// Synthesize speech using Google Cloud TTS Chirp 3 HD. Returns MP3 bytes.
-  Future<Uint8List?> _synthesizeWithCloudTts(
-      String phrase, String apiKey, String languageCode, String voiceName) async {
-    final url = Uri.parse(
-        'https://texttospeech.googleapis.com/v1/text:synthesize?key=$apiKey');
-
-    final body = jsonEncode({
-      'input': {'text': phrase},
-      'voice': {
-        'languageCode': languageCode,
-        'name': voiceName,
-      },
-      'audioConfig': {
-        'audioEncoding': 'MP3',
-      },
-    });
-
-    debugPrint('PronunciationService: Cloud TTS - voice=$voiceName, lang=$languageCode');
-
-    final response = await http.post(
-      url,
-      headers: {'Content-Type': 'application/json'},
-      body: body,
-    ).timeout(const Duration(seconds: 30));
-
-    if (response.statusCode == 200) {
-      final json = jsonDecode(response.body) as Map<String, dynamic>;
-      final audioContent = json['audioContent'] as String?;
-      if (audioContent != null && audioContent.isNotEmpty) {
-        debugPrint('PronunciationService: Cloud TTS success (Chirp 3 HD)');
-        return base64Decode(audioContent);
-      }
-      debugPrint('PronunciationService: Cloud TTS - no audioContent in response');
-    } else {
-      debugPrint(
-          'PronunciationService: Cloud TTS error ${response.statusCode}: '
-          '${response.body.length > 300 ? response.body.substring(0, 300) : response.body}');
-    }
-    return null;
-  }
-
-  /// Generate pronunciation audio using Google Cloud TTS (Chirp 3 HD).
-  /// Retries up to 3 times.
-  Future<Uint8List?> _generatePronunciation(
-      String phrase, String language, {bool isMale = true}) async {
-    final apiKey = await _getApiKey();
-    if (apiKey == null || apiKey.isEmpty) {
-      debugPrint('PronunciationService: No API key configured');
+  /// Server synthesis (`synthesizeSpeech`). Null without consent, for text
+  /// over the cap, or when the call failed.
+  Future<({Uint8List? bytes, String? url})?> _synthesize(
+      String phrase, String language, {required bool isMale}) async {
+    if (phrase.trim().isEmpty || phrase.length > maxChars) return null;
+    final consent = AiConsentService.instance;
+    await consent.ensureLoaded();
+    if (!consent.isGranted) {
+      debugPrint('PronunciationService: AI consent not granted');
       return null;
     }
-
-    final languageCode = _getCloudTtsLanguageCode(language);
-    final voiceName = _getChirp3VoiceName(languageCode, isMale: isMale);
-
-    for (var attempt = 1; attempt <= 3; attempt++) {
+    for (var attempt = 0; attempt < 2; attempt++) {
       try {
-        debugPrint('PronunciationService: Attempt $attempt - Cloud TTS (Chirp 3 HD)');
-        final result = await _synthesizeWithCloudTts(phrase, apiKey, languageCode, voiceName);
-        if (result != null) return result;
+        final res = await FirebaseFunctions.instance
+            .httpsCallable('synthesizeSpeech',
+                options: HttpsCallableOptions(timeout: const Duration(seconds: 45)))
+            .call<Map<String, dynamic>>({
+          'text': phrase,
+          'language': language,
+          'isMale': isMale,
+        });
+        final b64 = res.data['audioContent'] as String?;
+        final url = res.data['audioUrl'] as String?;
+        return (
+          bytes: (b64 != null && b64.isNotEmpty) ? base64Decode(b64) : null,
+          url: (url != null && url.isNotEmpty) ? url : null,
+        );
       } catch (e) {
-        debugPrint('PronunciationService: Attempt $attempt failed: $e');
-      }
-
-      if (attempt < 3) {
-        await Future.delayed(Duration(milliseconds: 500 * attempt));
+        if (attempt == 0 && isAiConsentRequiredError(e) &&
+            await consent.resyncAfterServerRejection()) {
+          continue;
+        }
+        debugPrint('PronunciationService: synthesizeSpeech failed: $e');
+        return null;
       }
     }
-
-    debugPrint('PronunciationService: All TTS attempts failed after 3 retries');
     return null;
   }
 
-  /// Pre-warm cache for common phrases in a language.
-  Future<void> prewarmCommonPhrases(String language) async {
-    const commonPhrases = [
-      'Hello', 'Goodbye', 'Thank you', 'Please', 'Yes', 'No',
-      'How are you?', 'Nice to meet you', 'My name is...',
-      'I don\'t understand', 'Can you help me?', 'Where is...?',
-      'How much does it cost?', 'Good morning', 'Good night',
-    ];
-
-    for (final phrase in commonPhrases) {
-      final key = _cacheKey(phrase, language);
-      final doc = await _firestore
-          .collection('pronunciation_cache')
-          .doc(key)
-          .get();
-      if (!doc.exists) {
-        await getPronunciationUrl(phrase, language);
-        await Future.delayed(const Duration(milliseconds: 500));
-      }
-    }
-  }
-
-  /// Get cache statistics for monitoring
-  Future<Map<String, dynamic>> getCacheStats() async {
-    try {
-      final snapshot = await _firestore
-          .collection('pronunciation_cache')
-          .count()
-          .get();
-      return {
-        'totalCachedPhrases': snapshot.count,
-        'memoryCacheSize': _memoryCache.length,
-      };
-    } catch (e) {
-      return {'error': e.toString()};
-    }
-  }
-
-  /// Clear in-memory cache (Firestore cache persists)
+  /// Clear in-memory caches (the shared cache persists)
   void clearMemoryCache() {
-    _memoryCache.clear();
+    _webBytesCache.clear();
+    _filePathCache.clear();
   }
 }

@@ -18,6 +18,7 @@ import { monitored } from '../shared/monitoring';
 import { requireAdmin, adminRoleFromDoc, AdminRole, SUPER_ADMIN_ONLY, SUPPORT_ROLES } from '../shared/adminAuth';
 import { setAdmin2faClaim } from './adminClaims';
 import { scrubPII, redact } from '../shared/redact';
+import { applyProfileAgeGate } from '../auth/ageGate';
 
 const db = admin.firestore();
 const auth = admin.auth();
@@ -1342,7 +1343,10 @@ export const cleanupOrphanedAuthUser = functions.runWith({ memory: '512MB' }).ht
  * To avoid re-geocoding on unrelated writes (presence, bio, etc.), it only runs
  * on profile creation or when the coordinates/country actually changed.
  */
-export const reverseGeocodeProfileLocation = functions.firestore
+export const reverseGeocodeProfileLocation = functions
+  // 512MB: the shared bundle needs ~200MB just to load.
+  .runWith({ memory: '512MB' })
+  .firestore
   .document('profiles/{userId}')
   .onWrite(monitored("reverseGeocodeProfileLocation", async (
     change: functions.Change<functions.firestore.DocumentSnapshot>,
@@ -1350,6 +1354,16 @@ export const reverseGeocodeProfileLocation = functions.firestore
   ) => {
     const after = change.after.exists ? change.after.data() : null;
     if (!after) return null; // document deleted
+
+    // H-21 interim age-gate backstop (auth/ageGate.ts). Rides on this existing
+    // trigger so the hot profiles collection gets no extra function; it only
+    // acts on profile creation or a changed dateOfBirth.
+    try {
+      const before = change.before.exists ? change.before.data() : null;
+      if (await applyProfileAgeGate(context.params.userId, before, after, change.after.ref)) return null;
+    } catch (e: any) {
+      console.error('age gate check failed:', e?.message || e);
+    }
 
     const loc = after.location || {};
     const country = (loc.country || '').toString().trim().toLowerCase();

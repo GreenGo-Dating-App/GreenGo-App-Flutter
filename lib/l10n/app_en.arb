@@ -6707,15 +6707,54 @@
   "eventsAttendeeListHidden": "The organizer has hidden the guest list.",
   "eventsOrganizedBy": "Organized by",
   "eventsOrganizerYou": "{name} (you)",
-  "@eventsOrganizerYou": {"placeholders": {"name": {"type": "String"}}},
+  "@eventsOrganizerYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "eventsByOrganizer": "by {name}",
-  "@eventsByOrganizer": {"placeholders": {"name": {"type": "String"}}},
+  "@eventsByOrganizer": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "shareEventMessageTitled": "{title}\nCheck out this event on GreenGo: {link}",
-  "@shareEventMessageTitled": {"placeholders": {"title": {"type": "String"}, "link": {"type": "String"}}},
+  "@shareEventMessageTitled": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
   "shareCommunityMessage": "{name}\nJoin this community on GreenGo: {link}",
-  "@shareCommunityMessage": {"placeholders": {"name": {"type": "String"}, "link": {"type": "String"}}},
+  "@shareCommunityMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
   "shopMembershipExpiredOn": "Your {tier} membership expired on {date}",
-  "@shopMembershipExpiredOn": {"placeholders": {"tier": {"type": "String"}, "date": {"type": "String"}}},
+  "@shopMembershipExpiredOn": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "eventsLocationHelper": "Type a venue or address, or pick it on the map",
   "eventsPickOnMap": "Pick on map",
   "eventsLocationNotOnMap": "Saved with the location you typed. We couldn't place it on the map, so it won't show in nearby searches.",
@@ -6724,7 +6763,13 @@
   "eventsCoOwnersCreatorOnly": "Only the event creator can change co-owners.",
   "eventsAddCoOwner": "Add co-owner",
   "eventsCoOwnerLimit": "You can add up to {max} co-owners",
-  "@eventsCoOwnerLimit": {"placeholders": {"max": {"type": "int"}}},
+  "@eventsCoOwnerLimit": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "eventsCoOwnerSearchHint": "Search by nickname",
   "eventsCoOwnerSearch": "Search",
   "eventsCoOwnerRecentChats": "Recent chats",
@@ -6733,7 +6778,13 @@
   "eventsCoOwnerSearchFailed": "Search failed. Please try again.",
   "eventsCoOwnerRemove": "Remove co-owner",
   "eventsOrganizedWith": "with {names}",
-  "@eventsOrganizedWith": {"placeholders": {"names": {"type": "String"}}},
+  "@eventsOrganizedWith": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
   "eventsCoOwnerBadge": "Co-owner",
   "qrHubCancelRsvpConfirm": "Delete this ticket? This cancels your RSVP and frees your spot for someone else.",
   "qrHubHideTicketConfirm": "Remove this ticket from your list? Your attendance record is kept.",
@@ -6747,19 +6798,43 @@
   "usageUpgradeBenefitsTitle": "Upgrade Benefits",
   "usageUpgradeButton": "Upgrade Membership",
   "usagePlanName": "{tier} Plan",
-  "@usagePlanName": {"placeholders": {"tier": {"type": "String"}}},
+  "@usagePlanName": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
   "usageCurrentTierLabel": "Current membership tier",
   "usageNoBaseMembership": "No GreenGo Base Membership",
   "usageExpiresOn": "Expires: {date}",
-  "@usageExpiresOn": {"placeholders": {"date": {"type": "String"}}},
+  "@usageExpiresOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "usageExpiredOn": "Expired: {date}",
-  "@usageExpiredOn": {"placeholders": {"date": {"type": "String"}}},
+  "@usageExpiredOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "usageStatusActive": "Active",
   "usageStatusExpired": "Expired",
   "usageCoinsAvailable": "Coins Available",
   "usageNotAvailable": "Not Available",
   "usageWithTier": "With {tier}",
-  "@usageWithTier": {"placeholders": {"tier": {"type": "String"}}},
+  "@usageWithTier": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
   "attrApplyFilter": "Apply filter",
   "userFollowFollow": "Follow",
   "userFollowFollowing": "Following",
@@ -6768,16 +6843,43 @@
   "userFollowBlocked": "You can't follow this user.",
   "userFollowUnfollowTooltip": "Unfollow",
   "userFollowFollowersStat": "{count, plural, =1{{formatted} follower} other{{formatted} followers}}",
-  "@userFollowFollowersStat": {"placeholders": {"count": {"type": "int"}, "formatted": {"type": "String"}}},
+  "@userFollowFollowersStat": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
   "userFollowFollowingStat": "{count, plural, other{{formatted} following}}",
-  "@userFollowFollowingStat": {"placeholders": {"count": {"type": "int"}, "formatted": {"type": "String"}}},
+  "@userFollowFollowingStat": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
   "userFollowTabFollowers": "Followers",
   "userFollowTabFollowing": "Following",
   "userFollowEmptyFollowers": "No followers yet",
   "userFollowEmptyFollowing": "Not following anyone yet",
   "userFollowListError": "Couldn't load this list.",
   "attractionViewsCount": "{count, plural, =1{{formatted} view} other{{formatted} views}}",
-  "@attractionViewsCount": {"placeholders": {"count": {"type": "int"}, "formatted": {"type": "String"}}},
+  "@attractionViewsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "formatted": {
+        "type": "String"
+      }
+    }
+  },
   "uexpCommunity": "Community",
   "uexpPartners": "Partners",
   "uexpCreate": "Create experience",
@@ -6797,7 +6899,13 @@
   "uexpCatWorkshopsClasses": "Workshops & classes",
   "uexpCatOther": "Other",
   "uexpReviewsCount": "{count, plural, =0{No reviews} =1{1 review} other{{count} reviews}}",
-  "@uexpReviewsCount": {"placeholders": {"count": {"type": "int"}}},
+  "@uexpReviewsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "uexpStatusDraft": "Draft",
   "uexpStatusPublished": "Published",
   "uexpStatusHidden": "Hidden",
@@ -6809,7 +6917,13 @@
   "uexpSectionPractical": "Practical info",
   "uexpMainPhoto": "Main photo (required)",
   "uexpMorePhotos": "up to {max} more photos",
-  "@uexpMorePhotos": {"placeholders": {"max": {"type": "int"}}},
+  "@uexpMorePhotos": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpFieldTitle": "Title",
   "uexpFieldDescription": "Description",
   "uexpFieldCategory": "Category",
@@ -6828,17 +6942,44 @@
   "uexpHours": "Hours",
   "uexpMinutes": "Minutes",
   "uexpDurationHours": "{hours} h",
-  "@uexpDurationHours": {"placeholders": {"hours": {"type": "int"}}},
+  "@uexpDurationHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
   "uexpDurationMinutes": "{minutes} min",
-  "@uexpDurationMinutes": {"placeholders": {"minutes": {"type": "int"}}},
+  "@uexpDurationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
   "uexpLanguages": "Languages spoken",
   "uexpGroupSize": "Group size",
   "uexpMinGroup": "Min people (optional)",
   "uexpMaxGroup": "Max people",
   "uexpGroupSizeRange": "{min}–{max} people",
-  "@uexpGroupSizeRange": {"placeholders": {"min": {"type": "int"}, "max": {"type": "int"}}},
+  "@uexpGroupSizeRange": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpGroupUpTo": "Up to {max} people",
-  "@uexpGroupUpTo": {"placeholders": {"max": {"type": "int"}}},
+  "@uexpGroupUpTo": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpPrice": "Price",
   "uexpCurrency": "Currency",
   "uexpIsFree": "This experience is free",
@@ -6868,22 +7009,64 @@
   "uexpSaveFailed": "Couldn't save the experience. Please try again.",
   "uexpPhotoUploadFailed": "Couldn't upload the photos. Please try again.",
   "uexpErrTitle": "Title must be {min}–{max} characters",
-  "@uexpErrTitle": {"placeholders": {"min": {"type": "int"}, "max": {"type": "int"}}},
+  "@uexpErrTitle": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpErrDescription": "Description must be {min}–{max} characters",
-  "@uexpErrDescription": {"placeholders": {"min": {"type": "int"}, "max": {"type": "int"}}},
+  "@uexpErrDescription": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpErrMainPhoto": "Add a main photo",
   "uexpErrTooManyPhotos": "Up to {max} extra photos",
-  "@uexpErrTooManyPhotos": {"placeholders": {"max": {"type": "int"}}},
+  "@uexpErrTooManyPhotos": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpErrIncluded": "Add at least one included item",
   "uexpErrTooManyItems": "Up to {max} items",
-  "@uexpErrTooManyItems": {"placeholders": {"max": {"type": "int"}}},
+  "@uexpErrTooManyItems": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpErrItemTooLong": "Each item can have up to {max} characters",
-  "@uexpErrItemTooLong": {"placeholders": {"max": {"type": "int"}}},
+  "@uexpErrItemTooLong": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpErrLocation": "Enter a location",
   "uexpErrDuration": "Enter a duration between 15 minutes and 14 days",
   "uexpErrLanguages": "Pick at least one language",
   "uexpErrMaxGroup": "Max people must be between 1 and {max}",
-  "@uexpErrMaxGroup": {"placeholders": {"max": {"type": "int"}}},
+  "@uexpErrMaxGroup": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpErrMinGroup": "Min people must be at least 1 and not more than max",
   "uexpErrPrice": "Enter a valid price",
   "uexpErrPaymentRequired": "Add how guests pay you (or mark the experience as free)",
@@ -6891,12 +7074,24 @@
   "uexpErrProhibited": "Some text contains language that isn't allowed on GreenGo",
   "uexpErrNoLinks": "Links aren't allowed in reviews and replies",
   "uexpErrTooLong": "Up to {max} characters",
-  "@uexpErrTooLong": {"placeholders": {"max": {"type": "int"}}},
+  "@uexpErrTooLong": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "uexpErrFixFields": "Please fix the highlighted fields",
   "uexpLimitFeature": "Host experiences",
   "uexpLimitFreeBody": "Hosting experiences is available with a Silver, Gold or Platinum membership.",
   "uexpLimitReachedBody": "{limit, plural, =1{Your plan allows 1 experience.} other{Your plan allows {limit} experiences.}} Upgrade to create more experiences.",
-  "@uexpLimitReachedBody": {"placeholders": {"limit": {"type": "int"}}},
+  "@uexpLimitReachedBody": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
   "uexpUpgradeToCreateMore": "Upgrade to create more experiences",
   "shopExperiencesCreate": "Experiences you can create",
   "uexpHostedBy": "Hosted by",
@@ -6906,7 +7101,16 @@
   "uexpOpenLinkFailed": "Couldn't open the link",
   "uexpShare": "Share",
   "uexpShareText": "{title}\nDiscover this experience on GreenGo: {link}",
-  "@uexpShareText": {"placeholders": {"title": {"type": "String"}, "link": {"type": "String"}}},
+  "@uexpShareText": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      }
+    }
+  },
   "uexpReport": "Report",
   "uexpReportTitle": "Report this experience?",
   "uexpReportBody": "Our team will review it against the GreenGo standards.",
@@ -6984,24 +7188,48 @@
     "description": "Empty-state button in My experiences"
   },
   "uexpNewHost": "New host",
-  "@uexpNewHost": {"description": "Shown instead of stars when the host has no ratings yet"},
+  "@uexpNewHost": {
+    "description": "Shown instead of stars when the host has no ratings yet"
+  },
   "uexpHostRatings": "{count, plural, =1{{countText} rating} other{{countText} ratings}}",
-  "@uexpHostRatings": {"description": "Host overall rating count across all experiences; countText is the compact-formatted count (e.g. 1.2K)", "placeholders": {"count": {"type": "int"}, "countText": {"type": "String"}}},
+  "@uexpHostRatings": {
+    "description": "Host overall rating count across all experiences; countText is the compact-formatted count (e.g. 1.2K)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "countText": {
+        "type": "String"
+      }
+    }
+  },
   "verifiedBadgeLabel": "Verified",
-  "@verifiedBadgeLabel": {"description": "Badge next to a user whose ID document was approved"},
+  "@verifiedBadgeLabel": {
+    "description": "Badge next to a user whose ID document was approved"
+  },
   "verifiedBadgeTooltip": "ID verified by GreenGo",
-  "@verifiedBadgeTooltip": {"description": "Tooltip / accessibility label of the verified badge"},
+  "@verifiedBadgeTooltip": {
+    "description": "Tooltip / accessibility label of the verified badge"
+  },
   "idDocumentRetentionNotice": "For fraud prevention and the safety of the community, identity documents are kept for up to 30 days after account deletion and then permanently erased.",
-  "@idDocumentRetentionNotice": {"description": "Legal notice (DRAFT - lawyer review): ID document retention after account deletion. Used in the host agreement / privacy texts."},
+  "@idDocumentRetentionNotice": {
+    "description": "Legal notice (DRAFT - lawyer review): ID document retention after account deletion. Used in the host agreement / privacy texts."
+  },
   "uexpErrContactInfo": "Remove phone numbers, e-mails, @handles and payment details: guests pay only through the methods on your listing.",
-  "@uexpErrContactInfo": {"description": "Validation error: off-platform contact or payment info in experience / review text"},
+  "@uexpErrContactInfo": {
+    "description": "Validation error: off-platform contact or payment info in experience / review text"
+  },
   "uexpErrPaymentMethods": "Choose at least one payment method",
   "uexpPaymentLinkDetails": "Online payment link",
   "uexpMethodCash": "Cash at the meeting",
-  "@uexpMethodCash": {"description": "Payment method: cash paid to the host at the meeting"},
+  "@uexpMethodCash": {
+    "description": "Payment method: cash paid to the host at the meeting"
+  },
   "uexpMethodLink": "Online link (PIX/PayPal/…)",
   "uexpBook": "Book",
-  "@uexpBook": {"description": "Detail page button when the experience is paid in cash only"},
+  "@uexpBook": {
+    "description": "Detail page button when the experience is paid in cash only"
+  },
   "uexpBookedCash": "Noted. Pay the host in cash at the meeting.",
   "uexpIdDocTitle": "ID document needed",
   "uexpIdDocGuestBody": "To keep GreenGo safe, upload an ID document before paying a host.",
@@ -7015,10 +7243,14 @@
   "uexpPublishAsFree": "Publish as free",
   "uexpHostBanned": "Your account can't host experiences.",
   "hostAgreementTitle": "Host agreement",
-  "@hostAgreementTitle": {"description": "Title of the host agreement screen (LEGAL TEXT: DRAFT for lawyer review, v1)"},
+  "@hostAgreementTitle": {
+    "description": "Title of the host agreement screen (LEGAL TEXT: DRAFT for lawyer review, v1)"
+  },
   "hostAgreementIntro": "Before you publish your first experience, please read and accept these rules.",
   "hostAgreementClause1": "You organise and host this experience and are responsible for it and for the safety of your guests.",
-  "@hostAgreementClause1": {"description": "Host agreement clause (LEGAL TEXT: DRAFT for lawyer review, v1)"},
+  "@hostAgreementClause1": {
+    "description": "Host agreement clause (LEGAL TEXT: DRAFT for lawyer review, v1)"
+  },
   "hostAgreementClause2": "Describe it accurately: title, photos, price, duration, what is included and the meeting point must be true and up to date.",
   "hostAgreementClause3": "Follow the law: you hold any licence, permit, insurance or registration your activity requires where it takes place, and you declare your income as required.",
   "hostAgreementClause4": "Refund guests according to the cancellation policy you chose, and always in full if you cancel.",
@@ -7028,12 +7260,20 @@
   "hostAgreementCheckbox": "I have read and accept the host agreement",
   "hostAgreementAccept": "Accept and continue",
   "uexpConsentTitle": "Before you pay",
-  "@uexpConsentTitle": {"description": "Guest consent dialog title (LEGAL TEXT: DRAFT for lawyer review, v1)"},
+  "@uexpConsentTitle": {
+    "description": "Guest consent dialog title (LEGAL TEXT: DRAFT for lawyer review, v1)"
+  },
   "uexpConsentBodyLink": "You are paying the host directly. GreenGo does not process or guarantee this payment and cannot refund it. Prefer protected methods (PayPal Goods & Services, credit card). Never pay outside the link shown here.",
   "uexpConsentBodyCash": "You will pay the host in cash at the meeting. GreenGo does not process or guarantee this payment and cannot refund it. Count the money, ask for a receipt if needed, and never pay in advance outside the methods listed on this page.",
   "uexpConsentPickMethod": "How will you pay?",
   "uexpConsentPolicy": "Cancellation policy: {policy}",
-  "@uexpConsentPolicy": {"placeholders": {"policy": {"type": "String"}}},
+  "@uexpConsentPolicy": {
+    "placeholders": {
+      "policy": {
+        "type": "String"
+      }
+    }
+  },
   "uexpConsentUnderstand": "I understand",
   "uexpConsentContinue": "Continue",
   "uexpGuidePix": "PIX: if you are the victim of a scam, ask your bank right away to open a MED (Mecanismo Especial de Devolução) claim.",
@@ -7084,15 +7324,39 @@
   "bkChooseDate": "Choose a date",
   "bkNoDates": "No dates available yet.",
   "bkDatesAvailable": "{count, plural, =1{1 date available} other{{count} dates available}}",
-  "@bkDatesAvailable": {"placeholders": {"count": {"type": "int"}}},
+  "@bkDatesAvailable": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkSeatsLeft": "{count, plural, =1{1 seat left} other{{count} seats left}}",
-  "@bkSeatsLeft": {"placeholders": {"count": {"type": "int"}}},
+  "@bkSeatsLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkFull": "Full",
   "bkGuests": "Guests",
   "bkGuestsCount": "{count, plural, =1{1 guest} other{{count} guests}}",
-  "@bkGuestsCount": {"placeholders": {"count": {"type": "int"}}},
+  "@bkGuestsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkMaxGuests": "Up to {max} on this date",
-  "@bkMaxGuests": {"placeholders": {"max": {"type": "int"}}},
+  "@bkMaxGuests": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "bkSummary": "Summary",
   "bkRequestInfo": "The host has up to 48 h to accept your request. Nothing is paid before they accept.",
   "bkInstantInfo": "Instant booking: confirmed right away.",
@@ -7126,7 +7390,13 @@
   "bkGuest": "Guest",
   "bkCheckedIn": "Checked in",
   "bkAnswerBefore": "Answer before {date}",
-  "@bkAnswerBefore": {"placeholders": {"date": {"type": "String"}}},
+  "@bkAnswerBefore": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "bkWaitingForHost": "Waiting for the host to answer.",
   "bkRequestTitle": "Booking request",
   "bkRequestHostHint": "Check the guest's profile and rating, then accept or decline. Unanswered requests expire after 48 h.",
@@ -7167,12 +7437,31 @@
   "bkPaymentConfirmedSnack": "Payment confirmed",
   "bkRefundTitle": "Refund",
   "bkRefundOwed": "The host owes you {percent} back ({amount}).",
-  "@bkRefundOwed": {"description": "Refund obligation after a cancellation; GreenGo never moves the money", "placeholders": {"percent": {"type": "String"}, "amount": {"type": "String"}}},
+  "@bkRefundOwed": {
+    "description": "Refund obligation after a cancellation; GreenGo never moves the money",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "bkRefundNone": "No refund is due under the cancellation policy.",
   "bkRefundCashUnpaid": "No refund is due: the cash was never paid.",
   "bkRefundOffPlatform": "GreenGo does not handle the money: the host refunds you directly, the same way you paid.",
   "bkIfCancelNow": "If you cancel now: {percent} back ({amount}).",
-  "@bkIfCancelNow": {"placeholders": {"percent": {"type": "String"}, "amount": {"type": "String"}}},
+  "@bkIfCancelNow": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "bkIfCancelNowNothing": "If you cancel now, no refund is due.",
   "bkIfCancelNowCash": "Cash is paid at the meeting, so cancelling now costs nothing.",
   "bkIfCancelNowFree": "Free experience: you can cancel at no cost.",
@@ -7190,7 +7479,13 @@
   "bkDisputeSent": "Thanks. Our team will review it and contact you both.",
   "bkDisputeOpen": "A problem was reported. Our team is reviewing it.",
   "bkDisputeResolved": "Reviewed by GreenGo: {percent} refund owed.",
-  "@bkDisputeResolved": {"placeholders": {"percent": {"type": "String"}}},
+  "@bkDisputeResolved": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
   "bkReviewGuest": "Review your guest",
   "bkReviewGuestIntro": "Help other hosts: how was hosting this guest? Both reviews stay hidden until your guest reviews too, or 14 days pass.",
   "bkReviewGuestHint": "Punctual, respectful, fun? (optional)",
@@ -7202,7 +7497,9 @@
   "bkReviewHeld": "Your review will be published when the host has reviewed you too, or in 14 days.",
   "bkReviewNeedsBooking": "Only guests who took part through a booking can review this experience.",
   "bkNewGuest": "New guest",
-  "@bkNewGuest": {"description": "Shown instead of stars when the guest has no host reviews yet"},
+  "@bkNewGuest": {
+    "description": "Shown instead of stars when the guest has no host reviews yet"
+  },
   "bkDatesTitle": "Dates & availability",
   "bkAddDate": "Add date",
   "bkEditDate": "Edit date",
@@ -7211,11 +7508,23 @@
   "bkKeepDate": "Keep date",
   "bkCancelDateTitle": "Cancel this date?",
   "bkCancelDateBody": "{count, plural, =1{The booking on this date is cancelled and the guest is owed a 100% refund.} other{All {count} booked seats on this date are cancelled and every guest is owed a 100% refund.}} This counts as a host cancellation.",
-  "@bkCancelDateBody": {"placeholders": {"count": {"type": "int"}}},
+  "@bkCancelDateBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkDateSaved": "Date saved",
   "bkDateDeleted": "Date deleted",
   "bkDateCancelled": "{count, plural, =0{Date cancelled} =1{Date cancelled: 1 booking cancelled} other{Date cancelled: {count} bookings cancelled}}",
-  "@bkDateCancelled": {"placeholders": {"count": {"type": "int"}}},
+  "@bkDateCancelled": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkNoDatesHost": "No upcoming dates. Add the dates guests can book.",
   "bkRequestToBookToggle": "Request to book",
   "bkRequestToBookDesc": "You accept or decline each booking (within 48 h). Off: guests book instantly.",
@@ -7225,7 +7534,16 @@
   "bkEndTime": "End",
   "bkCapacity": "Seats",
   "bkBookedOf": "{booked}/{capacity} booked",
-  "@bkBookedOf": {"placeholders": {"booked": {"type": "int"}, "capacity": {"type": "int"}}},
+  "@bkBookedOf": {
+    "placeholders": {
+      "booked": {
+        "type": "int"
+      },
+      "capacity": {
+        "type": "int"
+      }
+    }
+  },
   "bkSlotCancelled": "Cancelled",
   "bkTimesFrozen": "Guests are booked on this date: only the number of seats can change. To move it, cancel the date.",
   "bkSlotSaveFailed": "Couldn't save the date. Check your connection and try again.",
@@ -7234,11 +7552,29 @@
   "bkSlotErrTooLong": "A date can last at most 24 h.",
   "bkSlotErrTooFar": "Dates can be at most one year ahead.",
   "bkSlotErrCapacity": "Seats: from 1 to {max}.",
-  "@bkSlotErrCapacity": {"placeholders": {"max": {"type": "int"}}},
+  "@bkSlotErrCapacity": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "bkSlotErrBelowBooked": "{count} seats are already booked: keep at least that many.",
-  "@bkSlotErrBelowBooked": {"placeholders": {"count": {"type": "int"}}},
+  "@bkSlotErrBelowBooked": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkErrSlotFull": "{count, plural, =0{This date is full.} =1{Only 1 seat left on this date.} other{Only {count} seats left on this date.}}",
-  "@bkErrSlotFull": {"placeholders": {"count": {"type": "int"}}},
+  "@bkErrSlotFull": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkErrAlreadyBooked": "You already have a booking for this date.",
   "bkErrIdRequired": "Upload an ID document to book.",
   "bkErrHostNotVerified": "This host can't take paid bookings yet (identity not verified).",
@@ -7253,7 +7589,13 @@
   "bkErrHostUnavailable": "The host is not taking bookings right now.",
   "bkErrConsentRequired": "Please accept the booking terms first.",
   "bkErrTooManyGuests": "At most {max} guests per booking.",
-  "@bkErrTooManyGuests": {"placeholders": {"max": {"type": "int"}}},
+  "@bkErrTooManyGuests": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "bkErrAccountRestricted": "Your account can't make bookings right now.",
   "bkErrNetwork": "Connection problem. Try again: you won't be booked twice.",
   "bkErrRequestExpired": "This request has expired.",
@@ -7265,11 +7607,26 @@
   "bkErrCashBeforeMeeting": "Cash can be confirmed once you meet the guest.",
   "bkErrOutsideDispute": "Problems can be reported from the start until 24 h after the end.",
   "bkErrReasonRequired": "Describe the problem (at least {min} characters).",
-  "@bkErrReasonRequired": {"placeholders": {"min": {"type": "int"}}},
+  "@bkErrReasonRequired": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
   "uexpDatesRequiredHint": "Guests can only book the dates you set, and every booking is a request you accept or decline. Add at least one upcoming date to publish.",
   "uexpDatesRequiredToPublish": "Add at least one upcoming date to publish. Your experience is saved as a draft.",
   "bkRefundIfPaid": "If you already paid, the host owes you {percent} back ({amount}).",
-  "@bkRefundIfPaid": {"placeholders": {"percent": {"type": "String"}, "amount": {"type": "String"}}},
+  "@bkRefundIfPaid": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "shareLinkCopied": "Link copied to the clipboard",
   "shareOtherProfileMessage": "Meet {name} on GreenGo: {link}",
   "@shareOtherProfileMessage": {
@@ -7309,100 +7666,246 @@
   "attrRatingGreengoLabel": "GreenGo community",
   "attrRatingGoogleLabel": "Google rating",
   "webUpdateAvailable": "A new version of GreenGo is available.",
-  "@webUpdateAvailable": {"description": "Web banner shown when a newer build of the web app has been deployed"},
+  "@webUpdateAvailable": {
+    "description": "Web banner shown when a newer build of the web app has been deployed"
+  },
   "webUpdateRefresh": "Refresh",
-  "@webUpdateRefresh": {"description": "Web update banner: reload into the new version"},
+  "@webUpdateRefresh": {
+    "description": "Web update banner: reload into the new version"
+  },
   "webUpdateLater": "Later",
-  "@webUpdateLater": {"description": "Web update banner: dismiss"},
+  "@webUpdateLater": {
+    "description": "Web update banner: dismiss"
+  },
   "userErrorTitle": "Oops!",
-  "@userErrorTitle": {"description": "Title of the friendly error popup"},
+  "@userErrorTitle": {
+    "description": "Title of the friendly error popup"
+  },
   "userErrorGeneric": "Something went wrong. Please try again.",
-  "@userErrorGeneric": {"description": "Generic friendly error message (unexpected/parse errors)"},
+  "@userErrorGeneric": {
+    "description": "Generic friendly error message (unexpected/parse errors)"
+  },
   "userErrorTimeout": "This is taking longer than expected. Please try again.",
-  "@userErrorTimeout": {"description": "Error popup: request timed out"},
+  "@userErrorTimeout": {
+    "description": "Error popup: request timed out"
+  },
   "userErrorPermissionDenied": "You don't have permission to do that.",
-  "@userErrorPermissionDenied": {"description": "Error popup: permission denied"},
+  "@userErrorPermissionDenied": {
+    "description": "Error popup: permission denied"
+  },
   "userErrorNotFound": "This content is no longer available.",
-  "@userErrorNotFound": {"description": "Error popup: content not found / deleted"},
+  "@userErrorNotFound": {
+    "description": "Error popup: content not found / deleted"
+  },
   "userErrorTooManyRequests": "You're doing that too often. Please wait a moment and try again.",
-  "@userErrorTooManyRequests": {"description": "Error popup: rate limited"},
+  "@userErrorTooManyRequests": {
+    "description": "Error popup: rate limited"
+  },
   "userErrorSessionExpired": "Your session has expired. Please sign in again.",
-  "@userErrorSessionExpired": {"description": "Error popup: user not authenticated"},
+  "@userErrorSessionExpired": {
+    "description": "Error popup: user not authenticated"
+  },
   "userErrorInvalidInput": "Some of the information isn't valid. Please check it and try again.",
-  "@userErrorInvalidInput": {"description": "Error popup: invalid argument"},
+  "@userErrorInvalidInput": {
+    "description": "Error popup: invalid argument"
+  },
   "userErrorNotAllowed": "This action isn't available right now.",
-  "@userErrorNotAllowed": {"description": "Error popup: failed precondition"},
+  "@userErrorNotAllowed": {
+    "description": "Error popup: failed precondition"
+  },
   "userErrorUploadFailed": "The upload didn't go through. Please try again.",
-  "@userErrorUploadFailed": {"description": "Error popup: storage upload failed"},
+  "@userErrorUploadFailed": {
+    "description": "Error popup: storage upload failed"
+  },
   "videoMaxDurationError": "Video must be {seconds} seconds or less",
-  "@videoMaxDurationError": {"description": "Error popup: recorded video too long", "placeholders": {"seconds": {"type": "int"}}},
+  "@videoMaxDurationError": {
+    "description": "Error popup: recorded video too long",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "exploreLoadingContent": "Finding the best of what's around you…",
-  "@exploreLoadingContent": {"description": "Explore: shown while the featured events, attractions, experiences and communities load together"},
+  "@exploreLoadingContent": {
+    "description": "Explore: shown while the featured events, attractions, experiences and communities load together"
+  },
   "checkinWrongPlace": "This code is for a different event or experience",
-  "@checkinWrongPlace": {"description": "QR door: the scanned code belongs to another event/experience"},
+  "@checkinWrongPlace": {
+    "description": "QR door: the scanned code belongs to another event/experience"
+  },
   "checkinOutsideWindow": "Check-in is not open right now",
-  "@checkinOutsideWindow": {"description": "QR door: scanned outside the check-in time window"},
+  "@checkinOutsideWindow": {
+    "description": "QR door: scanned outside the check-in time window"
+  },
   "checkinNotConfirmed": "This person is not confirmed for it",
-  "@checkinNotConfirmed": {"description": "QR door: the person has no confirmed RSVP/booking"},
+  "@checkinNotConfirmed": {
+    "description": "QR door: the person has no confirmed RSVP/booking"
+  },
   "checkinUpdateApp": "Old ticket: ask them to update GreenGo and show the new code",
-  "@checkinUpdateApp": {"description": "QR door: legacy unsigned ticket refused"},
+  "@checkinUpdateApp": {
+    "description": "QR door: legacy unsigned ticket refused"
+  },
   "checkinNetwork": "No connection. Try again.",
-  "@checkinNetwork": {"description": "QR door: network error"},
+  "@checkinNetwork": {
+    "description": "QR door: network error"
+  },
   "expDoorTitle": "Check in guests",
-  "@expDoorTitle": {"description": "Experience door scanner title / menu item"},
+  "@expDoorTitle": {
+    "description": "Experience door scanner title / menu item"
+  },
   "expDoorInstructions": "Scan each guest's booking QR code",
-  "@expDoorInstructions": {"description": "Experience door scanner hint"},
+  "@expDoorInstructions": {
+    "description": "Experience door scanner hint"
+  },
   "expDoorCheckedInNow": "{count} checked in",
-  "@expDoorCheckedInNow": {"description": "Count checked in this session", "placeholders": {"count": {"type": "int"}}},
+  "@expDoorCheckedInNow": {
+    "description": "Count checked in this session",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "expDoorAdmits": "Admits {count} people",
-  "@expDoorAdmits": {"description": "Booking for several people", "placeholders": {"count": {"type": "int"}}},
+  "@expDoorAdmits": {
+    "description": "Booking for several people",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "expDoorHelpers": "Door helpers",
-  "@expDoorHelpers": {"description": "Members allowed to scan guests in"},
+  "@expDoorHelpers": {
+    "description": "Members allowed to scan guests in"
+  },
   "expDoorHelpersHint": "Members you add here can scan guests in for this experience.",
-  "@expDoorHelpersHint": {"description": "Door helpers sheet explanation"},
+  "@expDoorHelpersHint": {
+    "description": "Door helpers sheet explanation"
+  },
   "expDoorHelpersMax": "Up to {max} helpers",
-  "@expDoorHelpersMax": {"description": "Helper limit reached", "placeholders": {"max": {"type": "int"}}},
+  "@expDoorHelpersMax": {
+    "description": "Helper limit reached",
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "expAttendanceTitle": "Attendance",
-  "@expAttendanceTitle": {"description": "Host attendance list title"},
+  "@expAttendanceTitle": {
+    "description": "Host attendance list title"
+  },
   "expAttendanceEmpty": "No confirmed guests for upcoming dates yet.",
-  "@expAttendanceEmpty": {"description": "Attendance list empty state"},
+  "@expAttendanceEmpty": {
+    "description": "Attendance list empty state"
+  },
   "expAttendanceCount": "{checked}/{total} in",
-  "@expAttendanceCount": {"description": "People checked in of expected", "placeholders": {"checked": {"type": "int"}, "total": {"type": "int"}}},
+  "@expAttendanceCount": {
+    "description": "People checked in of expected",
+    "placeholders": {
+      "checked": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "qrHubExperienceTicket": "Experience",
-  "@qrHubExperienceTicket": {"description": "QR hub: label on an experience booking ticket"},
+  "@qrHubExperienceTicket": {
+    "description": "QR hub: label on an experience booking ticket"
+  },
   "metInPersonOn": "Met in person · {date}",
-  "@metInPersonOn": {"description": "Profile badge: QR-verified meeting", "placeholders": {"date": {"type": "String"}}},
+  "@metInPersonOn": {
+    "description": "Profile badge: QR-verified meeting",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "metInPersonTimes": "Met in person {count} times · last {date}",
-  "@metInPersonTimes": {"description": "Profile badge: several QR-verified meetings", "placeholders": {"count": {"type": "int"}, "date": {"type": "String"}}},
+  "@metInPersonTimes": {
+    "description": "Profile badge: several QR-verified meetings",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "paymentLinksTitle": "Payment methods",
-  "@paymentLinksTitle": {"description": "Edit profile tile + editor title: user's own external payment links"},
+  "@paymentLinksTitle": {
+    "description": "Edit profile tile + editor title: user's own external payment links"
+  },
   "paymentLinksNone": "No payment methods added",
   "paymentLinksCount": "{count, plural, =1{1 payment method} other{{count} payment methods}}",
-  "@paymentLinksCount": {"placeholders": {"count": {"type": "int"}}},
+  "@paymentLinksCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "paymentLinksInfoTitle": "Get paid directly",
   "paymentLinksInfoBody": "Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.",
   "paymentLinksHintHandle": "Username or link",
   "paymentLinksHintPix": "CPF, CNPJ, e-mail, +55 phone or random key",
   "paymentLinksHintLink": "Paste your payment link",
   "paymentLinkInvalid": "Invalid {method} value — check it and try again",
-  "@paymentLinkInvalid": {"placeholders": {"method": {"type": "String"}}},
+  "@paymentLinkInvalid": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
   "paymentLinksUpdated": "Payment methods updated",
   "paymentLinksRules": "Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.",
   "paymentLinksSection": "Pay directly",
-  "@paymentLinksSection": {"description": "Profile section title listing the user's external payment methods"},
+  "@paymentLinksSection": {
+    "description": "Profile section title listing the user's external payment methods"
+  },
   "paymentDisclaimerTitle": "Pay {name} directly",
-  "@paymentDisclaimerTitle": {"placeholders": {"name": {"type": "String"}}},
+  "@paymentDisclaimerTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "paymentDisclaimerBody": "This payment goes from you to {name} through {method}. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.",
-  "@paymentDisclaimerBody": {"placeholders": {"name": {"type": "String"}, "method": {"type": "String"}}},
+  "@paymentDisclaimerBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "method": {
+        "type": "String"
+      }
+    }
+  },
   "paymentContinueTo": "Continue to {method}",
-  "@paymentContinueTo": {"placeholders": {"method": {"type": "String"}}},
+  "@paymentContinueTo": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
   "pixInstructions": "Scan the QR code or copy the Pix code into your bank app, then enter the amount there.",
   "pixKeyLabel": "Pix key",
   "pixCopyCode": "Copy Pix code",
   "pixCopyKey": "Copy key",
   "pixCopied": "Copied — paste it in your bank app's Pix area",
   "bkRepeat": "Repeat",
-  "@bkRepeat": {"description": "Experience dates: switch to add the same times on several dates"},
+  "@bkRepeat": {
+    "description": "Experience dates: switch to add the same times on several dates"
+  },
   "bkRepeatHint": "Add these times on several dates at once",
   "bkRepeatThisDate": "Repeat this date",
   "bkRepeatDates": "Apply to dates",
@@ -7410,33 +7913,162 @@
   "bkRepeatOnDays": "On these days",
   "bkRepeatEveryDay": "Every day",
   "bkRepeatPreview": "{count, plural, =0{No dates match — choose a wider range or more days} =1{1 date will be added} other{{count} dates will be added}}",
-  "@bkRepeatPreview": {"placeholders": {"count": {"type": "int"}}},
+  "@bkRepeatPreview": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkRepeatCapped": "up to {max} dates at a time",
-  "@bkRepeatCapped": {"placeholders": {"max": {"type": "int"}}},
+  "@bkRepeatCapped": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "bkRepeatAddButton": "{count, plural, =0{Add dates} =1{Add 1 date} other{Add {count} dates}}",
-  "@bkRepeatAddButton": {"placeholders": {"count": {"type": "int"}}},
+  "@bkRepeatAddButton": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkRepeatAdded": "{count, plural, =0{No new dates added} =1{1 date added} other{{count} dates added}}",
-  "@bkRepeatAdded": {"placeholders": {"count": {"type": "int"}}},
+  "@bkRepeatAdded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkRepeatSkipped": "{count, plural, =1{1 already existed} other{{count} already existed}}",
-  "@bkRepeatSkipped": {"placeholders": {"count": {"type": "int"}}},
+  "@bkRepeatSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkChooseTime": "Choose a time",
-  "@bkChooseTime": {"description": "Booking: section title for picking a start time"},
+  "@bkChooseTime": {
+    "description": "Booking: section title for picking a start time"
+  },
   "bkNoFreeTimes": "No free times left on this date",
-  "@bkNoFreeTimes": {"description": "Booking: the selected date has no free time left"},
+  "@bkNoFreeTimes": {
+    "description": "Booking: the selected date has no free time left"
+  },
   "bkTimesHint": "Each time lasts {duration} and is only for you and your group.",
-  "@bkTimesHint": {"description": "Booking: times section hint", "placeholders": {"duration": {"type": "String"}}},
+  "@bkTimesHint": {
+    "description": "Booking: times section hint",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
   "bkWindowHint": "This is when you are available. Guests each book their own {duration} time inside it, and your bookings never overlap, across all your experiences.",
-  "@bkWindowHint": {"description": "Host date editor: availability window explanation", "placeholders": {"duration": {"type": "String"}}},
+  "@bkWindowHint": {
+    "description": "Host date editor: availability window explanation",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
   "bkWindowPeopleBooked": "{count, plural, =0{No bookings yet} =1{1 person booked} other{{count} people booked}}",
-  "@bkWindowPeopleBooked": {"description": "Host date card: people booked in the window", "placeholders": {"count": {"type": "int"}}},
+  "@bkWindowPeopleBooked": {
+    "description": "Host date card: people booked in the window",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "bkErrTimeTaken": "That time was just taken. Please pick another one.",
-  "@bkErrTimeTaken": {"description": "createBooking time_taken"},
+  "@bkErrTimeTaken": {
+    "description": "createBooking time_taken"
+  },
   "bkErrInvalidStart": "That time is not available on this date.",
-  "@bkErrInvalidStart": {"description": "createBooking invalid_start"},
+  "@bkErrInvalidStart": {
+    "description": "createBooking invalid_start"
+  },
   "coinsGiftPurchaseHold": "Coins you bought in the last 72 hours can't be gifted yet. You can still spend them on features.",
-  "@coinsGiftPurchaseHold": {"description": "Gift refused: purchased coins are held 72h before they can be gifted"},
+  "@coinsGiftPurchaseHold": {
+    "description": "Gift refused: purchased coins are held 72h before they can be gifted"
+  },
   "coinsGiftDailyLimit": "You've reached today's gifting limit (10 gifts or 5,000 coins). Please try again tomorrow.",
-  "@coinsGiftDailyLimit": {"description": "Gift refused: per-sender daily gift velocity limit"},
+  "@coinsGiftDailyLimit": {
+    "description": "Gift refused: per-sender daily gift velocity limit"
+  },
   "coinReasonRefundClawback": "Refunded purchase reversed",
-  "@coinReasonRefundClawback": {"description": "Coin history: debit that takes back coins from a refunded purchase"}
+  "@coinReasonRefundClawback": {
+    "description": "Coin history: debit that takes back coins from a refunded purchase"
+  },
+  "chatMessageDeleted": "Message deleted",
+  "@chatMessageDeleted": {
+    "description": "Placeholder bubble for a message whose author deleted their account"
+  },
+  "aiConsentTitle": "AI features use Google services",
+  "@aiConsentTitle": {
+    "description": "AI consent sheet title"
+  },
+  "aiConsentIntro": "Smart replies, the AI language coach, translating messages you receive and read-aloud audio only work if GreenGo sends the text involved to Google.",
+  "@aiConsentIntro": {
+    "description": "AI consent sheet intro"
+  },
+  "aiConsentProviders": "Who: Google Gemini (suggestions and coaching), Google Cloud Text-to-Speech (audio) and Google Translate (translations).",
+  "@aiConsentProviders": {
+    "description": "AI consent sheet: named providers"
+  },
+  "aiConsentWhatSent": "What is sent: only the text of the message you use the feature on (including messages other people sent you) and the languages. Never your name, photos or profile.",
+  "@aiConsentWhatSent": {
+    "description": "AI consent sheet: data sent"
+  },
+  "aiConsentWhy": "Why: only to produce the suggestion, translation or audio you asked for.",
+  "@aiConsentWhy": {
+    "description": "AI consent sheet: purpose"
+  },
+  "aiConsentDeclineInfo": "If you decline, these features stay off and nothing is sent. Tap any of them later to review your choice.",
+  "@aiConsentDeclineInfo": {
+    "description": "AI consent sheet: effect of declining"
+  },
+  "aiConsentAccept": "Allow",
+  "@aiConsentAccept": {
+    "description": "AI consent sheet accept button"
+  },
+  "aiConsentDecline": "Decline",
+  "@aiConsentDecline": {
+    "description": "AI consent sheet decline button"
+  },
+  "aiConsentDisabledNotice": "This feature is off because you chose not to send text to Google AI services.",
+  "@aiConsentDisabledNotice": {
+    "description": "Snackbar when an AI feature is used after declining"
+  },
+  "aiConsentReview": "Review",
+  "@aiConsentReview": {
+    "description": "Snackbar action that reopens the AI consent sheet"
+  },
+  "profileDeleteReauthRequired": "For your security, please confirm your password again to delete your account.",
+  "@profileDeleteReauthRequired": {
+    "description": "deleteMyAccount REQUIRES_RECENT_LOGIN"
+  },
+  "profileDeleteNetworkError": "No connection. Your account was not deleted. Please try again.",
+  "@profileDeleteNetworkError": {
+    "description": "deleteMyAccount network error"
+  },
+  "profileDeleteFailed": "We could not delete your account, and nothing was deleted. Please try again or contact support.",
+  "@profileDeleteFailed": {
+    "description": "deleteMyAccount failed"
+  },
+  "onboardingAgeBlockedTitle": "GreenGo is for adults",
+  "@onboardingAgeBlockedTitle": {
+    "description": "Age gate block dialog title"
+  },
+  "onboardingAgeBlockedBody": "You must be at least 18 years old to use GreenGo, so we cannot create your account.",
+  "@onboardingAgeBlockedBody": {
+    "description": "Age gate block dialog body"
+  }
 }

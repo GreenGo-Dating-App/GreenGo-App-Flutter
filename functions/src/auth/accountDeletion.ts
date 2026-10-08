@@ -41,11 +41,15 @@
  *
  * ANONYMISED - MESSAGES IN SHARED CONVERSATIONS: messages the user sent to
  *   OTHER people stay in the other person's history (deleting them would edit
- *   someone else's records), but `senderId` becomes 'deleted_user', sender
- *   name/photo are removed, and for any non-text message the content/media
- *   link is removed (type becomes 'text', content '', `mediaRemoved: true`)
- *   and the referenced Storage object is deleted. Text bodies stay - this is
- *   the same choice the previous trigger made; flagging it for counsel.
+ *   someone else's records) as an EMPTY placeholder: `senderId` becomes
+ *   'deleted_user', `deletedAuthor: true`, sender name/photo are removed, the
+ *   text body is cleared (`content: ''`) together with every stored
+ *   translation of it, and media is removed (non-text messages become
+ *   type 'text', `mediaRemoved: true`, the Storage object is deleted).
+ *   Timestamps stay, so the conversation keeps its order; the app shows a
+ *   localized "Message deleted" bubble. (Owner decision 2026-10-08: the other
+ *   person no longer sees the deleted user's words.) A conversation's
+ *   `lastMessage` preview written by the deleted user is cleared the same way.
  *
  * NOT DONE HERE (enqueued in `deletion_followups/{uid}` for a later worker):
  *   Stripe customer deletion and GA4 / Crashlytics user-data deletion. Those
@@ -403,6 +407,16 @@ export function storagePathFromUrl(url: unknown): string | null {
   return null;
 }
 
+/**
+ * Message fields that carry (a copy of) the author's words: the body, its
+ * stored translations, captions and previews. Cleared when the author deletes
+ * their account.
+ */
+export const MESSAGE_TEXT_FIELDS = [
+  'text', 'caption', 'originalContent', 'translatedContent', 'translatedText',
+  'translation', 'translations', 'detectedLanguage', 'preview',
+];
+
 const MEDIA_FIELDS = ['imageUrl', 'mediaUrl', 'voiceUrl', 'audioUrl', 'videoUrl', 'thumbnailUrl', 'fileUrl', 'gifUrl', 'stickerUrl'];
 
 async function anonymiseGroup(group: string, field: string, uid: string, report: DeletionReport, topLevelOnly = false) {
@@ -424,7 +438,13 @@ async function anonymiseGroup(group: string, field: string, uid: string, report:
           senderPhoto: admin.firestore.FieldValue.delete(),
           senderNickname: admin.firestore.FieldValue.delete(),
           anonymisedAt: TS(),
+          deletedAuthor: true,
+          // The words go too (owner decision): body + every stored translation.
+          content: '',
         };
+        for (const f of MESSAGE_TEXT_FIELDS) {
+          if (data[f] !== undefined) upd[f] = admin.firestore.FieldValue.delete();
+        }
         const urls: unknown[] = [];
         for (const f of MEDIA_FIELDS) {
           if (data[f] !== undefined) {
@@ -441,8 +461,6 @@ async function anonymiseGroup(group: string, field: string, uid: string, report:
           // Media / location / album share: the content IS the payload.
           urls.push(data.content);
           upd.type = 'text';
-          upd.content = '';
-          upd.translatedContent = admin.firestore.FieldValue.delete();
           upd.mediaRemoved = true;
         } else if (urls.some(Boolean)) {
           upd.mediaRemoved = true;
@@ -484,6 +502,25 @@ export function scrubValue(v: any, uid: string, dropFromArrays: boolean): any {
   return v; // Timestamps, GeoPoints, refs, primitives
 }
 
+/**
+ * A `lastMessage` preview (conversations / groups) written by the deleted user
+ * keeps its timestamps but loses the words, like the message itself.
+ */
+export function clearDeletedAuthorPreview(doc: Record<string, any>): void {
+  // Group / community docs keep a flat preview string + its sender id.
+  if ((doc.lastSenderId === TOMBSTONE || doc.lastMessageSenderId === TOMBSTONE) &&
+      typeof doc.lastMessagePreview === 'string') {
+    doc.lastMessagePreview = '';
+  }
+  const lm = doc.lastMessage;
+  if (!lm || typeof lm !== 'object' || Array.isArray(lm) || lm.senderId !== TOMBSTONE) return;
+  for (const f of MESSAGE_TEXT_FIELDS) delete lm[f];
+  for (const f of MEDIA_FIELDS) delete lm[f];
+  if (typeof lm.content === 'string') lm.content = '';
+  if (lm.type !== undefined && lm.type !== 'system') lm.type = 'text';
+  lm.deletedAuthor = true;
+}
+
 async function scrubQuery(
   q: FirebaseFirestore.Query,
   uid: string,
@@ -501,6 +538,7 @@ async function scrubQuery(
         if (!cur.exists) return;
         const data = cur.data()!;
         const scrubbed = scrubValue(data, uid, dropFromArrays || data.isGroup === true);
+        clearDeletedAuthorPreview(scrubbed);
         scrubbed.participantDeletedAt = TS();
         tx.set(d.ref, scrubbed);
         if (deleteSub) tx.delete(d.ref.collection(deleteSub).doc(uid));

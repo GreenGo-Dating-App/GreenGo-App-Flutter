@@ -6634,7 +6634,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Abonnement $tierName actif jusqu\'au $formattedDate$coinsText';
   }
 
@@ -16333,4 +16336,63 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get coinReasonRefundClawback => 'Achat remboursé annulé';
+
+  @override
+  String get chatMessageDeleted => 'Message supprimé';
+
+  @override
+  String get aiConsentTitle =>
+      'Les fonctions d\'IA utilisent des services Google';
+
+  @override
+  String get aiConsentIntro =>
+      'Les réponses suggérées, le coach linguistique IA, la traduction des messages que vous recevez et la lecture à voix haute ne fonctionnent que si GreenGo envoie le texte concerné à Google.';
+
+  @override
+  String get aiConsentProviders =>
+      'Qui : Google Gemini (suggestions et coaching), Google Cloud Text-to-Speech (audio) et Google Traduction (traductions).';
+
+  @override
+  String get aiConsentWhatSent =>
+      'Ce qui est envoyé : uniquement le texte du message sur lequel vous utilisez la fonction (y compris les messages que d\'autres personnes vous ont envoyés) et les langues. Jamais votre nom, vos photos ni votre profil.';
+
+  @override
+  String get aiConsentWhy =>
+      'Pourquoi : uniquement pour produire la suggestion, la traduction ou l\'audio que vous avez demandé.';
+
+  @override
+  String get aiConsentDeclineInfo =>
+      'Si vous refusez, ces fonctions restent désactivées et rien n\'est envoyé. Touchez l\'une d\'elles plus tard pour revoir votre choix.';
+
+  @override
+  String get aiConsentAccept => 'Autoriser';
+
+  @override
+  String get aiConsentDecline => 'Refuser';
+
+  @override
+  String get aiConsentDisabledNotice =>
+      'Cette fonction est désactivée car vous avez choisi de ne pas envoyer de texte aux services d\'IA de Google.';
+
+  @override
+  String get aiConsentReview => 'Revoir';
+
+  @override
+  String get profileDeleteReauthRequired =>
+      'Pour votre sécurité, confirmez à nouveau votre mot de passe pour supprimer votre compte.';
+
+  @override
+  String get profileDeleteNetworkError =>
+      'Pas de connexion. Votre compte n\'a pas été supprimé. Veuillez réessayer.';
+
+  @override
+  String get profileDeleteFailed =>
+      'Nous n\'avons pas pu supprimer votre compte et rien n\'a été supprimé. Réessayez ou contactez l\'assistance.';
+
+  @override
+  String get onboardingAgeBlockedTitle => 'GreenGo est réservé aux adultes';
+
+  @override
+  String get onboardingAgeBlockedBody =>
+      'Vous devez avoir au moins 18 ans pour utiliser GreenGo, nous ne pouvons donc pas créer votre compte.';
 }

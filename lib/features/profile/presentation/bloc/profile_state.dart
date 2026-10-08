@@ -75,6 +75,26 @@ class ProfileDeleted extends ProfileState {
   const ProfileDeleted();
 }
 
+/// Why `deleteMyAccount` did not delete the account (nothing was deleted).
+enum ProfileDeleteFailure {
+  /// The sign-in is older than the server allows: confirm the password again.
+  requiresRecentLogin,
+
+  /// No connection / timeout.
+  network,
+
+  /// Anything else.
+  failed,
+}
+
+class ProfileDeleteFailed extends ProfileState {
+  const ProfileDeleteFailed({required this.reason});
+  final ProfileDeleteFailure reason;
+
+  @override
+  List<Object?> get props => [reason];
+}
+
 class ProfileCompletionLoaded extends ProfileState {
 
   const ProfileCompletionLoaded({required this.completionPercentage});

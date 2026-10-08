@@ -5288,5 +5288,21 @@
   "bkErrInvalidStart": "Quell'orario non è disponibile in questa data.",
   "coinsGiftPurchaseHold": "Le monete acquistate nelle ultime 72 ore non possono ancora essere regalate. Puoi comunque usarle per le funzioni.",
   "coinsGiftDailyLimit": "Hai raggiunto il limite di regali di oggi (10 regali o 5.000 monete). Riprova domani.",
-  "coinReasonRefundClawback": "Acquisto rimborsato stornato"
+  "coinReasonRefundClawback": "Acquisto rimborsato stornato",
+  "chatMessageDeleted": "Messaggio eliminato",
+  "aiConsentTitle": "Le funzioni IA usano servizi Google",
+  "aiConsentIntro": "Le risposte intelligenti, il coach linguistico IA, la traduzione dei messaggi che ricevi e la lettura ad alta voce funzionano solo se GreenGo invia a Google il testo interessato.",
+  "aiConsentProviders": "Chi: Google Gemini (suggerimenti e coaching), Google Cloud Text-to-Speech (audio) e Google Traduttore (traduzioni).",
+  "aiConsentWhatSent": "Cosa viene inviato: solo il testo del messaggio su cui usi la funzione (compresi i messaggi che altre persone ti hanno inviato) e le lingue. Mai il tuo nome, le tue foto o il tuo profilo.",
+  "aiConsentWhy": "Perché: solo per produrre il suggerimento, la traduzione o l'audio che hai richiesto.",
+  "aiConsentDeclineInfo": "Se rifiuti, queste funzioni restano disattivate e non viene inviato nulla. Tocca una di esse in seguito per rivedere la tua scelta.",
+  "aiConsentAccept": "Consenti",
+  "aiConsentDecline": "Rifiuta",
+  "aiConsentDisabledNotice": "Questa funzione è disattivata perché hai scelto di non inviare testo ai servizi IA di Google.",
+  "aiConsentReview": "Rivedi",
+  "profileDeleteReauthRequired": "Per la tua sicurezza, conferma di nuovo la password per eliminare il tuo account.",
+  "profileDeleteNetworkError": "Nessuna connessione. Il tuo account non è stato eliminato. Riprova.",
+  "profileDeleteFailed": "Non siamo riusciti a eliminare il tuo account e non è stato eliminato nulla. Riprova o contatta l'assistenza.",
+  "onboardingAgeBlockedTitle": "GreenGo è per adulti",
+  "onboardingAgeBlockedBody": "Devi avere almeno 18 anni per usare GreenGo, quindi non possiamo creare il tuo account."
 }

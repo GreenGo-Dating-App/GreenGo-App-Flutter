@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR')
+    Locale('pt', 'BR'),
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11776,7 +11776,10 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText);
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  );
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28313,6 +28316,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Refunded purchase reversed'**
   String get coinReasonRefundClawback;
+
+  /// Placeholder bubble for a message whose author deleted their account
+  ///
+  /// In en, this message translates to:
+  /// **'Message deleted'**
+  String get chatMessageDeleted;
+
+  /// AI consent sheet title
+  ///
+  /// In en, this message translates to:
+  /// **'AI features use Google services'**
+  String get aiConsentTitle;
+
+  /// AI consent sheet intro
+  ///
+  /// In en, this message translates to:
+  /// **'Smart replies, the AI language coach, translating messages you receive and read-aloud audio only work if GreenGo sends the text involved to Google.'**
+  String get aiConsentIntro;
+
+  /// AI consent sheet: named providers
+  ///
+  /// In en, this message translates to:
+  /// **'Who: Google Gemini (suggestions and coaching), Google Cloud Text-to-Speech (audio) and Google Translate (translations).'**
+  String get aiConsentProviders;
+
+  /// AI consent sheet: data sent
+  ///
+  /// In en, this message translates to:
+  /// **'What is sent: only the text of the message you use the feature on (including messages other people sent you) and the languages. Never your name, photos or profile.'**
+  String get aiConsentWhatSent;
+
+  /// AI consent sheet: purpose
+  ///
+  /// In en, this message translates to:
+  /// **'Why: only to produce the suggestion, translation or audio you asked for.'**
+  String get aiConsentWhy;
+
+  /// AI consent sheet: effect of declining
+  ///
+  /// In en, this message translates to:
+  /// **'If you decline, these features stay off and nothing is sent. Tap any of them later to review your choice.'**
+  String get aiConsentDeclineInfo;
+
+  /// AI consent sheet accept button
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get aiConsentAccept;
+
+  /// AI consent sheet decline button
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get aiConsentDecline;
+
+  /// Snackbar when an AI feature is used after declining
+  ///
+  /// In en, this message translates to:
+  /// **'This feature is off because you chose not to send text to Google AI services.'**
+  String get aiConsentDisabledNotice;
+
+  /// Snackbar action that reopens the AI consent sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Review'**
+  String get aiConsentReview;
+
+  /// deleteMyAccount REQUIRES_RECENT_LOGIN
+  ///
+  /// In en, this message translates to:
+  /// **'For your security, please confirm your password again to delete your account.'**
+  String get profileDeleteReauthRequired;
+
+  /// deleteMyAccount network error
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. Your account was not deleted. Please try again.'**
+  String get profileDeleteNetworkError;
+
+  /// deleteMyAccount failed
+  ///
+  /// In en, this message translates to:
+  /// **'We could not delete your account, and nothing was deleted. Please try again or contact support.'**
+  String get profileDeleteFailed;
+
+  /// Age gate block dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo is for adults'**
+  String get onboardingAgeBlockedTitle;
+
+  /// Age gate block dialog body
+  ///
+  /// In en, this message translates to:
+  /// **'You must be at least 18 years old to use GreenGo, so we cannot create your account.'**
+  String get onboardingAgeBlockedBody;
 }
 
 class _AppLocalizationsDelegate
@@ -28326,13 +28425,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'de',
-        'en',
-        'es',
-        'fr',
-        'it',
-        'pt'
-      ].contains(locale.languageCode);
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'pt',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -28368,8 +28467,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

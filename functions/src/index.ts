@@ -418,6 +418,21 @@ export {
   deleteMyAccount,
 } from './auth/accountDeletionEndpoints';
 
+// Server-side AI gateway (C-08 follow-up, H-17, P2-10): Gemini, Cloud TTS,
+// Cloud Translation and image lookups with server-held keys, consent check,
+// input caps and per-user daily quotas; AI-processing consent record.
+export {
+  aiAssist,
+  synthesizeSpeech,
+  translatePrivateText,
+  getVocabularyImages,
+  recordConsent,
+} from './ai/aiGateway';
+
+// Neutral age gate, interim (H-21). The profile-trigger backstop runs inside
+// reverseGeocodeProfileLocation.
+export { declareAge } from './auth/ageGate';
+
 // Release bonus. Moved off the client when the profile rules stopped
 // allowing users to write their own entitlement fields.
 export { claimReleaseBonus } from './subscription/claimReleaseBonus';

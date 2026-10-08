@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/services/photo_validation_service.dart';
@@ -27,6 +27,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
     required this.uploadPhoto,
     required this.verifyPhoto,
     this.coinRepository,
+    this.deleteAccountCall,
   }) : super(const ProfileInitial()) {
     on<ProfileLoadRequested>(_onProfileLoadRequested);
     on<ProfileCreateRequested>(_onProfileCreateRequested);
@@ -43,6 +44,9 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
   final UploadPhoto uploadPhoto;
   final VerifyPhoto verifyPhoto;
   final CoinRepository? coinRepository;
+
+  /// `deleteMyAccount` callable (overridable in tests).
+  final Future<Map<String, dynamic>> Function()? deleteAccountCall;
 
   Future<void> _onProfileLoadRequested(
     ProfileLoadRequested event,
@@ -319,165 +323,46 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
   ) async {
     emit(const ProfileLoading());
 
+    // The server deletes everything (Auth user LAST) and keeps the records
+    // the law requires (payments), so success is reported only when it
+    // confirms (audit H-15, plan P1-10). The client no longer deletes
+    // anything itself: its old cascade destroyed financial records and could
+    // report success after a partial deletion.
     try {
-      final userId = event.userId;
-      final firestore = FirebaseFirestore.instance;
-
-      // Delete all user data from Firestore collections
-      // Top-level user documents
-      final topLevelCollections = [
-        'profiles',
-        'users',
-        'userSettings',
-        'coinBalances',
-        'subscriptions',
-        'memberships',
-        'membership_purchases',
-        'userLevels',
-        'userAchievements',
-        'userBadges',
-        'userChallenges',
-        'userVibeTags',
-        'user_levels',
-        'user_vectors',
-        'user_interactions',
-        'notification_preferences',
-        'match_preferences',
-        'streaks',
-        'dailyUsage',
-        'usageLimits',
-        'achievement_progress',
-        'language_progress',
-        'learning_progress',
-        'daily_hints_progress',
-        // RETIRED product line — kept here on purpose. The video-minute packs
-        // were removed from the app, but existing users may still hold legacy
-        // documents, and account deletion must erase them.
-        'videoCoinBalances',
-      ];
-
-      // Delete top-level docs in parallel batches
-      await Future.wait(
-        topLevelCollections.map((collection) async {
-          try {
-            final docRef = firestore.collection(collection).doc(userId);
-            await _deleteSubcollections(docRef);
-            await docRef.delete();
-          } catch (e) {
-            debugPrint('[DeleteAccount] Error deleting $collection/$userId: $e');
-          }
-        }),
-      );
-
-      // Delete documents where userId is a field (query-based)
-      final queryCollections = <String, List<String>>{
-        'swipes': ['userId'],
-        'matches': ['userId1', 'userId2'],
-        'conversations': ['participants'],
-        'notifications': ['userId'],
-        'blockedUsers': ['userId', 'blockedUserId'],
-        'user_reports': ['reporterId', 'reportedUserId'],
-        'message_reports': ['reporterId'],
-        'coinTransactions': ['userId'],
-        'coinGifts': ['senderId', 'receiverId'],
-        'coinOrders': ['userId'],
-        'purchases': ['userId'],
-        'support_chats': ['userId'],
-        'photo_likes': ['userId', 'targetUserId'],
-        'sentVirtualGifts': ['senderId'],
-        'secondChancePool': ['userId'],
-        'blindMatches': ['userId1', 'userId2'],
-        'scheduledDates': ['userId1', 'userId2'],
-        'call_history': ['callerId', 'receiverId'],
-        'album_access': ['ownerId', 'grantedToUserId'],
-        'account_actions': ['userId'],
-        // RETIRED product line — see the note above; legacy rows must still be
-        // erased on account deletion.
-        'videoCoinTransactions': ['userId'],
-        'xp_transactions': ['userId'],
-      };
-
-      // Run query-based deletions in parallel
-      await Future.wait(
-        queryCollections.entries.expand((entry) {
-          return entry.value.map((field) async {
-            try {
-              if (field == 'participants') {
-                final query = await firestore
-                    .collection(entry.key)
-                    .where(field, arrayContains: userId)
-                    .get();
-                for (final doc in query.docs) {
-                  await _deleteSubcollections(doc.reference);
-                  await doc.reference.delete();
-                }
-              } else {
-                final query = await firestore
-                    .collection(entry.key)
-                    .where(field, isEqualTo: userId)
-                    .get();
-                for (final doc in query.docs) {
-                  await _deleteSubcollections(doc.reference);
-                  await doc.reference.delete();
-                }
-              }
-            } catch (e) {
-              debugPrint('[DeleteAccount] Error querying ${entry.key}.$field: $e');
-            }
-          });
-        }),
-      );
-
-      debugPrint('[DeleteAccount] Account $userId Firestore data deleted');
-
-      // Delete Firebase Auth user FIRST to free the email for re-registration.
-      // We do this before emitting state because emit triggers sign-out which
-      // may dispose the bloc and prevent Auth deletion from completing.
-      // The user was already re-authenticated in the UI before dispatching this event.
-      var authDeleted = false;
-      try {
-        final currentUser = FirebaseAuth.instance.currentUser;
-        if (currentUser != null) {
-          await currentUser.delete();
-          authDeleted = true;
-          debugPrint('[DeleteAccount] Firebase Auth user deleted');
-        }
-      } catch (e) {
-        debugPrint('[DeleteAccount] Auth delete failed: $e');
+      final result = await (deleteAccountCall ?? _callDeleteMyAccount)();
+      if (result['success'] == true) {
+        emit(const ProfileDeleted());
+      } else {
+        emit(const ProfileDeleteFailed(reason: ProfileDeleteFailure.failed));
       }
-
-      // Now emit ProfileDeleted — this triggers sign-out and navigation
-      emit(const ProfileDeleted());
-
-      if (!authDeleted) {
-        debugPrint('[DeleteAccount] WARNING: Auth user was NOT deleted — email may still be registered');
-      }
+    } on FirebaseFunctionsException catch (e) {
+      debugPrint('[DeleteAccount] deleteMyAccount failed: ${e.code}');
+      emit(ProfileDeleteFailed(reason: deleteFailureFor(e.code, e.details)));
     } catch (e) {
-      debugPrint('[DeleteAccount] Error: $e');
-      emit(ProfileError(message: 'Failed to delete account: $e'));
+      debugPrint('[DeleteAccount] deleteMyAccount failed: $e');
+      emit(const ProfileDeleteFailed(reason: ProfileDeleteFailure.failed));
     }
   }
 
-  /// Delete known subcollections of a document
-  Future<void> _deleteSubcollections(DocumentReference docRef) async {
-    final knownSubcollections = [
-      'coinBatches',
-      'coinTransactions',
-      'messages',
-      'support_messages',
-      'days',
-      'hours',
-    ];
+  static Future<Map<String, dynamic>> _callDeleteMyAccount() async {
+    final res = await FirebaseFunctions.instance
+        .httpsCallable('deleteMyAccount',
+            // The server cascade may take minutes for large accounts.
+            options: HttpsCallableOptions(timeout: const Duration(seconds: 540)))
+        .call<Map<String, dynamic>>(<String, dynamic>{});
+    return Map<String, dynamic>.from(res.data);
+  }
 
-    await Future.wait(
-      knownSubcollections.map((sub) async {
-        try {
-          final subDocs = await docRef.collection(sub).limit(500).get();
-          for (final doc in subDocs.docs) {
-            await doc.reference.delete();
-          }
-        } catch (_) {}
-      }),
-    );
+  /// Maps a `deleteMyAccount` error to what the UI does next.
+  @visibleForTesting
+  static ProfileDeleteFailure deleteFailureFor(String code, Object? details) {
+    final detailCode = details is Map ? details['code'] ?? details['reason'] : null;
+    if (detailCode == 'REQUIRES_RECENT_LOGIN') {
+      return ProfileDeleteFailure.requiresRecentLogin;
+    }
+    if (code == 'unavailable' || code == 'deadline-exceeded') {
+      return ProfileDeleteFailure.network;
+    }
+    return ProfileDeleteFailure.failed;
   }
 }

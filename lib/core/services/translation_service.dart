@@ -8,7 +8,12 @@ import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:http/http.dart' as http;
 
+import 'ai_consent_service.dart';
 import 'shared_translation_contributor.dart';
+
+/// `translatePrivateText` call (overridable in tests).
+typedef ServerTranslateCall = Future<Map<String, dynamic>> Function(
+    Map<String, dynamic> payload);
 
 /// Outcome of one translation, carrying ITS OWN detected language.
 ///
@@ -24,7 +29,15 @@ class TranslationResult {
     required this.text,
     this.detectedLanguage,
     this.failed = false,
+    this.consentRequired = false,
   });
+
+  /// Not translated because the user has not accepted (or declined) the AI
+  /// processing notice. Also [failed] (never cached), but it is not an error
+  /// to report: callers show the original and, where the user acted, ask for
+  /// consent (AiConsentGate).
+  const TranslationResult.consentRequired(String original)
+      : this(original: original, text: original, failed: true, consentRequired: true);
 
   /// The text that was asked to be translated.
   final String original;
@@ -40,15 +53,26 @@ class TranslationResult {
   /// retries.
   final bool failed;
 
+  /// See [TranslationResult.consentRequired].
+  final bool consentRequired;
+
   /// True when [text] is a real translation that differs from [original].
   bool get isTranslated => !failed && text.trim() != original.trim();
 }
 
 /// Translation Service
 ///
-/// Translates with Google's FREE translate endpoint
-/// (`translate.googleapis.com/translate_a/single?client=gtx`), called directly
-/// from the device. Chat translation is private and never touches the shared
+/// Private text (chat messages) is translated only after the user accepted
+/// the AI-processing notice ([AiConsentService]; Apple 5.1.2(i), audit H-17).
+/// Two backends:
+///  - default: Google's FREE translate endpoint
+///    (`translate.googleapis.com/translate_a/single?client=gtx`), called
+///    directly from the device;
+///  - when `app_config/feature_flags.serverChatTranslation` is true: the
+///    `translatePrivateText` callable (official Cloud Translation API,
+///    server-side). The owner turns this on once the Cloud Translation API and
+///    its billing are enabled (plan P2-10).
+/// Chat translation is private and never touches the shared
 /// `translations/` store. The free endpoint has no key and no quota of ours,
 /// but it rate-limits bursts (HTTP 429), so requests are de-duplicated,
 /// throttled, retried with backoff and cached (memory + Hive on device).
@@ -59,8 +83,14 @@ class TranslationService {
     bool persistent = true,
     Duration Function(int attempt)? backoff,
     SharedTranslationContributor? contributor,
+    bool Function()? consentGranted,
+    Future<bool> Function()? useServer,
+    ServerTranslateCall? serverCall,
   })  : _client = client,
         _persistent = persistent,
+        _consentGranted = consentGranted,
+        _useServerOverride = useServer,
+        _serverCall = serverCall,
         _backoff = backoff ?? _defaultBackoff,
         _contributor = contributor ??
             SharedTranslationContributor(submit: _submitToServer);
@@ -73,13 +103,97 @@ class TranslationService {
     required http.Client client,
     Duration Function(int attempt)? backoff,
     SharedTranslationContributor? contributor,
+    bool Function()? consentGranted,
+    Future<bool> Function()? useServer,
+    ServerTranslateCall? serverCall,
   }) =>
       TranslationService._internal(
         client: client,
         persistent: false,
         backoff: backoff ?? (_) => Duration.zero,
         contributor: contributor,
+        consentGranted: consentGranted ?? () => true,
+        useServer: useServer ?? () async => false,
+        serverCall: serverCall,
       );
+
+  final bool Function()? _consentGranted;
+  final Future<bool> Function()? _useServerOverride;
+  final ServerTranslateCall? _serverCall;
+
+  Future<bool> _consentOk() async {
+    final f = _consentGranted;
+    if (f != null) return f();
+    final c = AiConsentService.instance;
+    await c.ensureLoaded();
+    return c.isGranted;
+  }
+
+  bool? _serverFlag;
+  DateTime _serverFlagAt = DateTime.fromMillisecondsSinceEpoch(0);
+
+  /// `app_config/feature_flags.serverChatTranslation` (re-read every 10 min).
+  Future<bool> _useServer() async {
+    final o = _useServerOverride;
+    if (o != null) return o();
+    if (_serverFlag != null &&
+        DateTime.now().difference(_serverFlagAt) < const Duration(minutes: 10)) {
+      return _serverFlag!;
+    }
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('app_config')
+          .doc('feature_flags')
+          .get();
+      _serverFlag = doc.data()?['serverChatTranslation'] == true;
+    } catch (_) {
+      _serverFlag = false;
+    }
+    _serverFlagAt = DateTime.now();
+    return _serverFlag!;
+  }
+
+  static Future<Map<String, dynamic>> _defaultServerCall(
+      Map<String, dynamic> payload) async {
+    final res = await FirebaseFunctions.instance
+        .httpsCallable('translatePrivateText',
+            options: HttpsCallableOptions(timeout: const Duration(seconds: 25)))
+        .call<Map<String, dynamic>>(payload);
+    return Map<String, dynamic>.from(res.data);
+  }
+
+  /// One text through `translatePrivateText` (official Cloud Translation).
+  Future<TranslationResult> _fetchViaServer(
+      String text, String from, String target) async {
+    final call = _serverCall ?? _defaultServerCall;
+    for (var attempt = 0; attempt < 2; attempt++) {
+      try {
+        final data = await call({
+          'texts': [text],
+          'target': target,
+          if (from != 'auto') 'source': from,
+        });
+        final list = data['translations'] as List?;
+        final first = (list != null && list.isNotEmpty) ? list.first as Map : null;
+        if (first == null) break;
+        final detected = first['detectedLanguage'] as String?;
+        final out = first['text'] as String? ?? text;
+        return TranslationResult(
+          original: text,
+          text: first['sameLanguage'] == true ? text : out,
+          detectedLanguage: detected,
+        );
+      } catch (e) {
+        if (attempt == 0 && isAiConsentRequiredError(e) &&
+            await AiConsentService.instance.resyncAfterServerRejection()) {
+          continue;
+        }
+        debugPrint('translatePrivateText failed: $e');
+        break;
+      }
+    }
+    return TranslationResult(original: text, text: text, failed: true);
+  }
 
   final http.Client? _client;
   final bool _persistent;
@@ -238,28 +352,39 @@ class TranslationService {
     required String text,
     required String sourceLanguage,
     required String targetLanguage,
+    bool requiresConsent = true,
   }) async {
     final r = await translateDetailed(
       text: text,
       sourceLanguage: sourceLanguage,
       targetLanguage: targetLanguage,
+      requiresConsent: requiresConsent,
     );
     if (r.detectedLanguage != null) _lastDetectedLanguage = r.detectedLanguage;
     return r.text;
   }
 
-  /// Translates [text] into [targetLanguage] with the free endpoint.
+  /// Translates [text] into [targetLanguage].
   ///
   /// Memory cache -> device (Hive) cache -> one throttled, retried request.
   /// Never throws: a failure comes back as [TranslationResult.failed] with the
   /// original text, and is not cached.
+  ///
+  /// [requiresConsent]: true (default) for private / personal text such as
+  /// chat messages. Without an accepted AI-processing notice nothing is sent
+  /// and a [TranslationResult.consentRequired] result comes back. Only public
+  /// content (events, attractions, experiences, public reviews) passes false.
   Future<TranslationResult> translateDetailed({
     required String text,
     String sourceLanguage = 'auto',
     required String targetLanguage,
+    bool requiresConsent = true,
   }) async {
     if (text.trim().isEmpty) {
       return TranslationResult(original: text, text: text);
+    }
+    if (requiresConsent && !await _consentOk()) {
+      return TranslationResult.consentRequired(text);
     }
 
     // Normalize before anything else, including the equality check and the
@@ -286,7 +411,9 @@ class TranslationService {
           _remember(cacheKey, stored);
           return stored;
         }
-        final r = await _throttled(() => _fetchWithRetry(text, from, target));
+        final r = await _throttled(() async => (requiresConsent && await _useServer())
+            ? _fetchViaServer(text, from, target)
+            : _fetchWithRetry(text, from, target));
         if (!r.failed) {
           _remember(cacheKey, r);
           unawaited(_writePersistent(from, target, r));
@@ -610,7 +737,10 @@ class TranslationService {
     //    (fire-and-forget; shared only once another user agrees).
     for (final i in unresolved) {
       final r = await translateDetailed(
-          text: texts[i], sourceLanguage: 'auto', targetLanguage: target);
+          text: texts[i],
+          sourceLanguage: 'auto',
+          targetLanguage: target,
+          requiresConsent: false); // public content only
       if (r.detectedLanguage != null) _lastDetectedLanguage = r.detectedLanguage;
       out[i] = r.text;
       if (r.isTranslated && notStored.contains(i)) {

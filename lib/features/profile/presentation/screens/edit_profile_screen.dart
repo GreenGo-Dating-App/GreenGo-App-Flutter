@@ -216,6 +216,25 @@ class EditProfileScreen extends StatelessWidget {
             if (state is ProfileError) {
               showUserError(context, state.message);
             }
+            if (state is ProfileDeleteFailed) {
+              final l10n = AppLocalizations.of(context)!;
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(switch (state.reason) {
+                    ProfileDeleteFailure.requiresRecentLogin =>
+                      l10n.profileDeleteReauthRequired,
+                    ProfileDeleteFailure.network => l10n.profileDeleteNetworkError,
+                    ProfileDeleteFailure.failed => l10n.profileDeleteFailed,
+                  }),
+                  backgroundColor: AppColors.errorRed,
+                ),
+              );
+              // Sign-in too old: ask for the password again, then retry.
+              final uid = userId ?? FirebaseAuth.instance.currentUser?.uid;
+              if (state.reason == ProfileDeleteFailure.requiresRecentLogin && uid != null) {
+                _showPasswordConfirmDialog(context, uid);
+              }
+            }
           },
           builder: (context, state) {
             // Determine which profile to use - check all states that contain a profile
@@ -1520,7 +1539,7 @@ class EditProfileScreen extends StatelessWidget {
             onPressed: () {
               Navigator.of(dialogContext).pop();
               // Step 2: Ask for password confirmation
-              _showPasswordConfirmDialog(screenContext, currentProfile);
+              _showPasswordConfirmDialog(screenContext, currentProfile.userId);
             },
             child: Text(
               AppLocalizations.of(dialogContext)!.deleteAccount,
@@ -1532,7 +1551,7 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  void _showPasswordConfirmDialog(BuildContext screenContext, Profile currentProfile) {
+  void _showPasswordConfirmDialog(BuildContext screenContext, String deleteUserId) {
     final passwordController = TextEditingController();
     var obscurePassword = true;
     String? errorText;
@@ -1651,7 +1670,7 @@ class EditProfileScreen extends StatelessWidget {
 
                   // Use screenContext (not dialog context) to dispatch BLoC event
                   screenContext.read<ProfileBloc>().add(
-                    ProfileDeleteRequested(userId: currentProfile.userId),
+                    ProfileDeleteRequested(userId: deleteUserId),
                   );
                 } on FirebaseAuthException catch (e) {
                   setDialogState(() {

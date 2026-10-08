@@ -1,17 +1,15 @@
-import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
-import 'package:http/http.dart' as http;
 
 /// Service for fetching contextual images for vocabulary words.
 ///
-/// Uses free image APIs (Unsplash primary, Pexels fallback) to find
-/// real-world photos that illustrate vocabulary words. Results are cached
-/// in Firestore so the same word is never fetched twice.
+/// Images come from Unsplash (Pexels fallback) through the
+/// `getVocabularyImages` callable: the API keys stay on the server (audit
+/// C-08), which also caches results in `vocabulary_images` so the same word is
+/// never fetched twice. Only the word itself is sent (no personal data).
 ///
-/// Example: "red" → images of red flowers, red car, red sunset
-/// Example: "table" → images of different kinds of tables
-/// Example: "run" → images of people running
+/// Example: "red" -> images of red flowers, red car, red sunset
 class VisualVocabularyService {
   factory VisualVocabularyService() => _instance;
   VisualVocabularyService._();
@@ -21,26 +19,6 @@ class VisualVocabularyService {
 
   // In-memory cache for current session
   final Map<String, List<VocabularyImage>> _memoryCache = {};
-
-  String? _unsplashApiKey;
-  String? _pexelsApiKey;
-
-  /// Load API keys from Firestore config
-  Future<void> _loadApiKeys() async {
-    if (_unsplashApiKey != null) return;
-    try {
-      final doc = await _firestore
-          .collection('app_config')
-          .doc('api_keys')
-          .get();
-      if (doc.exists) {
-        _unsplashApiKey = doc.data()?['unsplash_api_key'] as String?;
-        _pexelsApiKey = doc.data()?['pexels_api_key'] as String?;
-      }
-    } catch (e) {
-      debugPrint('VisualVocabularyService: Failed to load API keys: $e');
-    }
-  }
 
   /// Get contextual images for a vocabulary word.
   ///
@@ -83,138 +61,25 @@ class VisualVocabularyService {
       debugPrint('VisualVocabularyService: Firestore read failed: $e');
     }
 
-    // 3. Fetch from image API
-    await _loadApiKeys();
-    var images = <VocabularyImage>[];
-
-    // Try Unsplash first (better quality)
-    if (_unsplashApiKey != null && _unsplashApiKey!.isNotEmpty) {
-      images = await _fetchFromUnsplash(normalizedWord, count);
-    }
-
-    // Fallback to Pexels
-    if (images.isEmpty && _pexelsApiKey != null && _pexelsApiKey!.isNotEmpty) {
-      images = await _fetchFromPexels(normalizedWord, count);
-    }
-
-    if (images.isEmpty) {
-      debugPrint('VisualVocabularyService: No images found for "$word"');
-      return [];
-    }
-
-    // 4. Cache in Firestore
+    // 3. Server lookup (fills the shared cache).
     try {
-      await _firestore.collection('vocabulary_images').doc(cacheKey).set({
+      final res = await FirebaseFunctions.instance
+          .httpsCallable('getVocabularyImages',
+              options: HttpsCallableOptions(timeout: const Duration(seconds: 25)))
+          .call<Map<String, dynamic>>({
         'word': normalizedWord,
         'language': language ?? 'en',
-        'images': images.map((img) => img.toMap()).toList(),
-        'createdAt': FieldValue.serverTimestamp(),
-        'lastAccessed': FieldValue.serverTimestamp(),
-        'accessCount': 1,
-        'source': images.first.source,
+        'count': count,
       });
+      final images = ((res.data['images'] as List?) ?? const [])
+          .map((img) => VocabularyImage.fromMap(Map<String, dynamic>.from(img as Map)))
+          .toList();
+      if (images.isNotEmpty) _memoryCache[cacheKey] = images;
+      return images;
     } catch (e) {
-      debugPrint('VisualVocabularyService: Firestore write failed: $e');
+      debugPrint('VisualVocabularyService: getVocabularyImages failed: $e');
+      return [];
     }
-
-    // 5. Cache in memory
-    _memoryCache[cacheKey] = images;
-
-    return images;
-  }
-
-  /// Fetch images from Unsplash API (free tier: 50 req/hour demo, unlimited production)
-  Future<List<VocabularyImage>> _fetchFromUnsplash(
-      String query, int count) async {
-    try {
-      final url = Uri.parse(
-          'https://api.unsplash.com/search/photos'
-          '?query=${Uri.encodeComponent(query)}'
-          '&per_page=$count'
-          '&orientation=squarish'
-          '&content_filter=high'); // Safe images only
-
-      final response = await http.get(url, headers: {
-        'Authorization': 'Client-ID $_unsplashApiKey',
-        'Accept-Version': 'v1',
-      }).timeout(const Duration(seconds: 10));
-
-      if (response.statusCode == 200) {
-        final json = jsonDecode(response.body) as Map<String, dynamic>;
-        final results = json['results'] as List<dynamic>;
-
-        return results.map((result) {
-          final urls = result['urls'] as Map<String, dynamic>;
-          final user = result['user'] as Map<String, dynamic>;
-          return VocabularyImage(
-            imageUrl: urls['small'] as String, // 400px width — good for mobile
-            thumbnailUrl: urls['thumb'] as String, // 200px — for previews
-            fullUrl: urls['regular'] as String, // 1080px — for detail view
-            description: result['alt_description'] as String? ??
-                result['description'] as String? ??
-                query,
-            photographer: user['name'] as String? ?? 'Unknown',
-            photographerUrl: user['links']?['html'] as String?,
-            source: 'unsplash',
-            // Unsplash requires attribution
-            attribution:
-                'Photo by ${user['name'] ?? 'Unknown'} on Unsplash',
-          );
-        }).toList();
-      } else if (response.statusCode == 403) {
-        debugPrint('VisualVocabularyService: Unsplash rate limit hit');
-      } else {
-        debugPrint(
-            'VisualVocabularyService: Unsplash error ${response.statusCode}');
-      }
-    } catch (e) {
-      debugPrint('VisualVocabularyService: Unsplash fetch failed: $e');
-    }
-    return [];
-  }
-
-  /// Fetch images from Pexels API (free tier: 200 req/hour)
-  Future<List<VocabularyImage>> _fetchFromPexels(
-      String query, int count) async {
-    try {
-      final url = Uri.parse(
-          'https://api.pexels.com/v1/search'
-          '?query=${Uri.encodeComponent(query)}'
-          '&per_page=$count'
-          '&size=small');
-
-      final response = await http.get(url, headers: {
-        'Authorization': _pexelsApiKey!,
-      }).timeout(const Duration(seconds: 10));
-
-      if (response.statusCode == 200) {
-        final json = jsonDecode(response.body) as Map<String, dynamic>;
-        final photos = json['photos'] as List<dynamic>;
-
-        return photos.map((photo) {
-          final src = photo['src'] as Map<String, dynamic>;
-          return VocabularyImage(
-            imageUrl: src['medium'] as String, // 350px height
-            thumbnailUrl: src['tiny'] as String, // 130px height
-            fullUrl: src['large'] as String, // 940px height
-            description: photo['alt'] as String? ?? query,
-            photographer: photo['photographer'] as String? ?? 'Unknown',
-            photographerUrl: photo['photographer_url'] as String?,
-            source: 'pexels',
-            attribution:
-                'Photo by ${photo['photographer'] ?? 'Unknown'} on Pexels',
-          );
-        }).toList();
-      } else if (response.statusCode == 429) {
-        debugPrint('VisualVocabularyService: Pexels rate limit hit');
-      } else {
-        debugPrint(
-            'VisualVocabularyService: Pexels error ${response.statusCode}');
-      }
-    } catch (e) {
-      debugPrint('VisualVocabularyService: Pexels fetch failed: $e');
-    }
-    return [];
   }
 
   /// Get a single representative image for a word (the best one)
