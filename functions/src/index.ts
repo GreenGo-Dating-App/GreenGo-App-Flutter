@@ -383,6 +383,15 @@ export { onProfileBanStateChanged } from './user_experiences/hostBan';
 // Fires on auth deletion however it is triggered — app, admin panel, console.
 export { onUserDeletedCleanup } from './auth/deleteUserData';
 
+// Server-side account deletion (P1-10, audit H-15): website link flow
+// (greengochat.com/delete-account) + app callable. One routine with the
+// trigger above: ./auth/accountDeletion.ts.
+export {
+  requestAccountDeletion,
+  confirmAccountDeletion,
+  deleteMyAccount,
+} from './auth/accountDeletionEndpoints';
+
 // Release bonus. Moved off the client when the profile rules stopped
 // allowing users to write their own entitlement fields.
 export { claimReleaseBonus } from './subscription/claimReleaseBonus';
