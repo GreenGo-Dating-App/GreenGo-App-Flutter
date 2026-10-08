@@ -7,6 +7,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
 import '../models/map_user_model.dart';
 import '../../../profile/data/profile_geo_scan.dart';
+import '../../../safety/data/services/age_assurance_service.dart';
 
 /// Remote data source for the Explore Map feature.
 ///
@@ -282,6 +283,8 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
     required String currentUserId,
     List<String> currentUserLanguages = const [],
   }) async {
+    // P3-1: no people map without age assurance where it is required.
+    if (await AgeAssuranceService.instance.isBlocked()) return <MapUserModel>[];
     try {
       // Blocks in either direction are loaded alongside (cached service), so
       // _build can leave out anyone who blocked the viewer and vice versa.
@@ -320,6 +323,8 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
     required String currentUserId,
     List<String> currentUserLanguages = const [],
   }) async {
+    // P3-1: no people map without age assurance where it is required.
+    if (await AgeAssuranceService.instance.isBlocked()) return <MapUserModel>[];
     try {
       final docs = await LastResultCache.loadDocs(
           _cacheKey, firestore.collection('profiles'));

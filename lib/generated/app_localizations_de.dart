@@ -16655,6 +16655,46 @@ class AppLocalizationsDe extends AppLocalizations {
       'Jederzeit im Abrechnungsportal kündigen';
 
   @override
+  String get ageAssuranceTitle =>
+      'Bestätige dein Alter, um diese Funktion zu nutzen';
+
+  @override
+  String get ageAssuranceBody =>
+      'An deinem Wohnort verlangt das Gesetz, dass wir bestätigen, dass du volljährig bist, bevor du Menschen entdecken oder neue private Unterhaltungen beginnen kannst. Der Rest von GreenGo funktioniert wie gewohnt.';
+
+  @override
+  String get ageAssuranceExistingChats =>
+      'Unterhaltungen, an denen du bereits teilgenommen hast, bleiben verfügbar.';
+
+  @override
+  String get ageAssuranceStoreCheckAndroid => 'Mit Google Play bestätigen';
+
+  @override
+  String get ageAssuranceStoreCheckIos => 'Mit dem App Store bestätigen';
+
+  @override
+  String get ageAssuranceStoreHint =>
+      'Verwendet das Alter, das dein Store-Konto bereits bestätigt hat. Wir erhalten nur eine Altersspanne, nie dein Geburtsdatum.';
+
+  @override
+  String get ageAssuranceIdOption => 'Mit einem Ausweisdokument bestätigen';
+
+  @override
+  String get ageAssuranceStoreUnavailable =>
+      'Dein Store-Konto konnte dein Alter nicht bestätigen. Bitte bestätige es stattdessen mit einem Ausweisdokument.';
+
+  @override
+  String get ageAssuranceVerified => 'Danke, dein Alter ist bestätigt.';
+
+  @override
+  String get ageAssuranceWebNote =>
+      'Im Web wird dein Alter mit einem Ausweisdokument bestätigt.';
+
+  @override
+  String get ageVerifyWhyRegional =>
+      'Um an deinem Wohnort Menschen zu entdecken und neue private Chats zu beginnen, müssen wir bestätigen, dass du über 18 bist.';
+
+  @override
   String get billingPortalOpenFailed =>
       'Das Abrechnungsportal konnte nicht geöffnet werden. Bitte versuche es erneut.';
 

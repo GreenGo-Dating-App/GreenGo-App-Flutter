@@ -57,6 +57,7 @@ import 'profile_detail_screen.dart';
 import 'travel_explore_map_screen.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
+import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// Discovery Screen
 ///
@@ -102,12 +103,15 @@ class DiscoveryScreenState extends State<DiscoveryScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => di.sl<DiscoveryBloc>(),
-      child: _DiscoveryScreenContent(
-        key: _contentKey,
-        userId: widget.userId,
-        onGridModeChanged: widget.onGridModeChanged,
+    // P3-1: people discovery needs age assurance where it is required.
+    return AgeAssuranceGateView(
+      child: BlocProvider(
+        create: (context) => di.sl<DiscoveryBloc>(),
+        child: _DiscoveryScreenContent(
+          key: _contentKey,
+          userId: widget.userId,
+          onGridModeChanged: widget.onGridModeChanged,
+        ),
       ),
     );
   }

@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { isAgeAssured, AGE_ASSURANCE_REQUIRED } from '../safety/ageAssuranceGate';
 
 const firestore = admin.firestore();
 
@@ -101,7 +102,7 @@ export const sendScheduledMessages = functions
 /**
  * Schedule a message for later delivery
  */
-export const scheduleMessage = functions.https.onCall(monitored("scheduleMessage", async (data, context) => {
+export const scheduleMessage = functions.runWith({ memory: '512MB' }).https.onCall(monitored("scheduleMessage", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -139,6 +140,25 @@ export const scheduleMessage = functions.https.onCall(monitored("scheduleMessage
       'permission-denied',
       'Cannot schedule messages on behalf of other users'
     );
+  }
+
+  // P3-1 age assurance: a user who needs strong age assurance (and has none)
+  // may only write in conversations where they have already written.
+  if (!(await isAgeAssured(context.auth.uid))) {
+    const prior = await firestore
+      .collection('conversations')
+      .doc(String(conversationId))
+      .collection('messages')
+      .where('senderId', '==', context.auth.uid)
+      .limit(1)
+      .get();
+    if (prior.empty) {
+      throw new functions.https.HttpsError(
+        'failed-precondition',
+        `${AGE_ASSURANCE_REQUIRED}: Verify your age to start new conversations.`,
+        { reason: AGE_ASSURANCE_REQUIRED, feature: 'messaging' }
+      );
+    }
   }
 
   try {

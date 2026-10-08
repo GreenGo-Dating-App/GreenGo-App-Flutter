@@ -21,6 +21,7 @@ import '../models/match_model.dart';
 import '../models/swipe_action_model.dart';
 import '../../../../core/services/effective_tier.dart';
 import '../../../profile/data/private_profile.dart';
+import '../../../safety/data/services/age_assurance_service.dart';
 
 /// Discovery Remote Data Source Interface
 abstract class DiscoveryRemoteDataSource {
@@ -229,6 +230,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     required String userId,
     required MatchPreferences preferences,
   }) async {
+    if (await AgeAssuranceService.instance.isBlocked()) {
+      return <MatchCandidate>[];
+    }
     try {
       final profiles = firestore.collection('profiles');
       Future<Map<String, dynamic>?> viewerFromCache() async {
@@ -301,13 +305,18 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     required MatchPreferences preferences,
     int limit = 20,
     bool forceRefresh = false,
-  }) =>
-      _stack(
-        userId: userId,
-        preferences: preferences,
-        forceRefresh: forceRefresh,
-        primary: true,
-      );
+  }) async {
+    // P3-1: no people discovery without age assurance where it is required.
+    if (await AgeAssuranceService.instance.isBlocked()) {
+      return <MatchCandidate>[];
+    }
+    return _stack(
+      userId: userId,
+      preferences: preferences,
+      forceRefresh: forceRefresh,
+      primary: true,
+    );
+  }
 
   /// Builds (or serves) a stack. [primary] stacks are Discovery's: they use the
   /// shared LRU and publish [lastUsedWorldwideFallback]. A non-primary stack
@@ -793,6 +802,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     required Profile viewer,
     int limit = 15,
   }) async {
+    if (await AgeAssuranceService.instance.isBlocked()) {
+      return <MatchCandidate>[];
+    }
     final loc = viewer.effectiveLocation;
     final city = loc.city.trim();
     final country = loc.country.trim();
@@ -1146,6 +1158,11 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         .get();
 
     if (existing2.docs.isNotEmpty) return; // Already exists
+
+    // P3-1: a super-like opens a private conversation.
+    if (await AgeAssuranceService.instance.isBlocked()) {
+      throw const AgeAssuranceRequiredException();
+    }
 
     final conversationRef = firestore.collection('conversations').doc();
     final now = Timestamp.now();
@@ -1572,6 +1589,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
 
   @override
   Future<Profile?> searchByNickname(String nickname) async {
+    if (await AgeAssuranceService.instance.isBlocked()) return null;
     try {
       final querySnapshot = await firestore
           .collection('profiles')

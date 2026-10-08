@@ -5407,5 +5407,16 @@
   "cancelAnytimeBillingPortal": "Jederzeit im Abrechnungsportal kündigen",
   "billingPortalOpenFailed": "Das Abrechnungsportal konnte nicht geöffnet werden. Bitte versuche es erneut.",
   "subscriptionAutoRenewInfoWeb": "Abos verlängern sich automatisch zum angezeigten Preis und Intervall, bis du kündigst. Jederzeit im Abrechnungsportal kündbar.",
-  "webBillingTitle": "Abrechnung und Widerruf"
+  "webBillingTitle": "Abrechnung und Widerruf",
+  "ageAssuranceTitle": "Bestätige dein Alter, um diese Funktion zu nutzen",
+  "ageAssuranceBody": "An deinem Wohnort verlangt das Gesetz, dass wir bestätigen, dass du volljährig bist, bevor du Menschen entdecken oder neue private Unterhaltungen beginnen kannst. Der Rest von GreenGo funktioniert wie gewohnt.",
+  "ageAssuranceExistingChats": "Unterhaltungen, an denen du bereits teilgenommen hast, bleiben verfügbar.",
+  "ageAssuranceStoreCheckAndroid": "Mit Google Play bestätigen",
+  "ageAssuranceStoreCheckIos": "Mit dem App Store bestätigen",
+  "ageAssuranceStoreHint": "Verwendet das Alter, das dein Store-Konto bereits bestätigt hat. Wir erhalten nur eine Altersspanne, nie dein Geburtsdatum.",
+  "ageAssuranceIdOption": "Mit einem Ausweisdokument bestätigen",
+  "ageAssuranceStoreUnavailable": "Dein Store-Konto konnte dein Alter nicht bestätigen. Bitte bestätige es stattdessen mit einem Ausweisdokument.",
+  "ageAssuranceVerified": "Danke, dein Alter ist bestätigt.",
+  "ageAssuranceWebNote": "Im Web wird dein Alter mit einem Ausweisdokument bestätigt.",
+  "ageVerifyWhyRegional": "Um an deinem Wohnort Menschen zu entdecken und neue private Chats zu beginnen, müssen wir bestätigen, dass du über 18 bist."
 }

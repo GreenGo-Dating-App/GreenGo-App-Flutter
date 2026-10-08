@@ -15,6 +15,8 @@ import '../../profile/domain/repositories/profile_repository.dart';
 import '../data/datasources/chat_remote_datasource.dart';
 import '../data/models/conversation_model.dart';
 import 'screens/chat_screen.dart';
+import '../../safety/data/services/age_assurance_service.dart';
+import '../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// Shared "Connect" action for the Apple-safe cultural-exchange build.
 ///
@@ -146,6 +148,25 @@ Future<void> openConnectChat(
     final dataSource = di.sl<ChatRemoteDataSource>();
 
     ConversationModel conversation;
+    if (isNewConnect &&
+        await AgeAssuranceService.instance.isBlocked()) {
+      // P3-1: a NEW private conversation needs age assurance where the law
+      // requires it. Existing conversations still open below.
+      dismissBarrier();
+      if (context.mounted) {
+        final ok = await AgeAssuranceGuard.ensureCanStartConversation(context);
+        if (ok && context.mounted) {
+          await openConnectChat(
+            context,
+            currentUserId: currentUserId,
+            otherUserId: otherUserId,
+            otherUserProfile: otherUserProfile,
+            businessInquiry: isBusinessChat,
+          );
+        }
+      }
+      return;
+    }
     if (isNewConnect) {
       // NEW connect: run the daily-limit gate and the conversation create
       // CONCURRENTLY (they touch different docs) so the open is as fast as a

@@ -5407,5 +5407,16 @@
   "cancelAnytimeBillingPortal": "Cancela cuando quieras en el portal de facturación",
   "billingPortalOpenFailed": "No se pudo abrir el portal de facturación. Inténtalo de nuevo.",
   "subscriptionAutoRenewInfoWeb": "Las suscripciones se renuevan automáticamente al precio y con la periodicidad indicados hasta que las canceles. Cancela cuando quieras en el portal de facturación.",
-  "webBillingTitle": "Facturación y desistimiento"
+  "webBillingTitle": "Facturación y desistimiento",
+  "ageAssuranceTitle": "Verifica tu edad para usar esta función",
+  "ageAssuranceBody": "Donde vives, la ley nos exige confirmar que eres mayor de edad antes de que puedas descubrir personas o iniciar nuevas conversaciones privadas. El resto de GreenGo funciona con normalidad.",
+  "ageAssuranceExistingChats": "Las conversaciones en las que ya has participado siguen disponibles.",
+  "ageAssuranceStoreCheckAndroid": "Confirmar con Google Play",
+  "ageAssuranceStoreCheckIos": "Confirmar con el App Store",
+  "ageAssuranceStoreHint": "Usa la edad que tu cuenta de la tienda ya ha confirmado. Solo recibimos un rango de edad, nunca tu fecha de nacimiento.",
+  "ageAssuranceIdOption": "Verificar con un documento de identidad",
+  "ageAssuranceStoreUnavailable": "Tu cuenta de la tienda no pudo confirmar tu edad. Verifícala con un documento de identidad.",
+  "ageAssuranceVerified": "Gracias, tu edad está confirmada.",
+  "ageAssuranceWebNote": "En la web, tu edad se confirma con un documento de identidad.",
+  "ageVerifyWhyRegional": "Para descubrir personas e iniciar nuevos chats privados donde vives, necesitamos confirmar que tienes más de 18 años."
 }

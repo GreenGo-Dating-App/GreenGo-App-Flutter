@@ -11,6 +11,7 @@ import '../../../profile/domain/entities/profile.dart';
 import '../widgets/local_guide_badge.dart';
 import '../widgets/traveler_overlay.dart';
 import 'profile_detail_screen.dart';
+import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// Travel Explore Map Screen
 ///
@@ -165,7 +166,11 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) =>
+      // P3-1: people discovery needs age assurance where it is required.
+      AgeAssuranceGateView(child: Builder(builder: _buildGated));
+
+  Widget _buildGated(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(

@@ -27,6 +27,19 @@ import * as admin from 'firebase-admin';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { db, handleError, logInfo, verifyAuth } from '../shared/utils';
 import { fifoDraw, refusal, REASON, validRequestId } from './ledger';
+import { assertAgeAssured, GatedFeature } from '../safety/ageAssuranceGate';
+
+/**
+ * P3-1 age assurance: coin features that reach people discovery or start a
+ * private 1:1 message. Refused (before any charge) for users who need strong
+ * age assurance and have none (no-op while the flag is off).
+ */
+export const AGE_GATED_FEATURES: Record<string, GatedFeature> = {
+  direct_message: 'messaging',
+  superlike: 'messaging',
+  grid_view_more: 'discovery',
+  discovery_see_more: 'discovery',
+};
 
 type EffectKind = 'profileBoost' | 'incognito' | 'travelerPass' | 'eventFeature' | 'businessPromotion';
 
@@ -130,6 +143,8 @@ export const spendCoins = onCall<SpendCoinsRequest>(
       if (!featureId) {
         throw refusal('invalid-argument', REASON.unknownFeature, `Unknown feature: ${String(data.featureId)}`);
       }
+      const gated = AGE_GATED_FEATURES[featureId];
+      if (gated) await assertAgeAssured(uid, gated);
       if (!validRequestId(data.requestId)) {
         throw new HttpsError('invalid-argument', 'requestId (8-80 chars [A-Za-z0-9_-]) is required');
       }
