@@ -29,7 +29,6 @@ import '../../../admin/data/datasources/verification_admin_remote_data_source.da
 import '../../../admin/data/repositories/verification_admin_repository_impl.dart';
 import '../../../admin/presentation/bloc/verification_admin_bloc.dart';
 import '../../../admin/presentation/screens/admin_2fa_screen.dart';
-import '../../../subscription/presentation/screens/membership_screen.dart';
 import '../../../admin/presentation/screens/reports_admin_screen.dart';
 import '../../../admin/presentation/screens/verification_admin_screen.dart';
 import '../../../authentication/presentation/bloc/auth_bloc.dart';
@@ -49,7 +48,6 @@ import '../../../follows/presentation/widgets/follow_stats_row.dart';
 import '../../../gamification/domain/entities/achievement.dart';
 import '../../../gamification/presentation/bloc/gamification_bloc.dart';
 import '../../../gamification/presentation/screens/achievements_screen.dart';
-import '../../../gamification/presentation/screens/daily_challenges_screen.dart';
 import '../../../gamification/presentation/screens/leaderboard_screen.dart';
 import '../../../gamification/presentation/screens/personal_stats_screen.dart';
 import '../../../gamification/presentation/screens/progress_screen.dart';
@@ -569,6 +567,18 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToSupport(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
+                      // Contact support (email). Guideline 1.5 requires an easy
+                      // way to reach the developer, and 1.2 requires PUBLISHED
+                      // contact details for an app with user-generated content.
+                      EditSectionCard(
+                        key: const ValueKey('help-contact-support'),
+                        title: AppLocalizations.of(context)!.contactSupport,
+                        subtitle:
+                            AppLocalizations.of(context)!.contactSupportSubtitle,
+                        icon: Icons.mail_outline,
+                        onTap: _contactSupport,
+                      ),
+                      const SizedBox(height: 16),
                       // Coin Shop
                       EditSectionCard(
                         title: AppLocalizations.of(context)!.profileCoinShop,
@@ -634,13 +644,6 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => _navigateToCulturalPassport(context, activeProfile),
                       ),
                       const SizedBox(height: 16),
-                      EditSectionCard(
-                        title: AppLocalizations.of(context)!.dailyChallengesTitle,
-                        subtitle: AppLocalizations.of(context)!.dailyChallengesSubtitle,
-                        icon: Icons.today,
-                        onTap: () => _navigateToDailyChallenges(context, activeProfile),
-                      ),
-                      const SizedBox(height: 16),
                       // Achievement Badges
                       _AchievementBadgesSection(userId: activeProfile.userId),
                     ],
@@ -688,26 +691,6 @@ class EditProfileScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-
-                  const SizedBox(height: 16),
-
-                  // Base Membership Section
-                  _buildBaseMembershipSection(context, activeProfile),
-
-                  const SizedBox(height: 16),
-
-                  // Contact support. Guideline 1.5 requires an easy way to
-                  // reach the developer, and 1.2 requires PUBLISHED contact
-                  // details for an app carrying user-generated content. The
-                  // address existed but only on the account-rejection appeal
-                  // screen, which most users never see.
-                  EditSectionCard(
-                    title: AppLocalizations.of(context)!.contactSupport,
-                    subtitle:
-                        AppLocalizations.of(context)!.contactSupportSubtitle,
-                    icon: Icons.support_agent,
-                    onTap: _contactSupport,
-                  ),
 
                   const SizedBox(height: 16),
 
@@ -1291,130 +1274,10 @@ class EditProfileScreen extends StatelessWidget {
     );
   }
 
-  void _navigateToDailyChallenges(BuildContext context, Profile currentProfile) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => BlocProvider(
-          // DailyChallengesScreen dispatches LoadDailyChallenges itself when
-          // nothing is loaded; adding it here too double-sent it.
-          create: (context) => di.sl<GamificationBloc>(),
-          child: DailyChallengesScreen(userId: currentProfile.userId),
-        ),
-      ),
-    );
-  }
-
   void _navigateToPersonalStats(BuildContext context, Profile currentProfile) {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => PersonalStatsScreen(userId: currentProfile.userId),
-      ),
-    );
-  }
-
-  Widget _buildBaseMembershipSection(BuildContext context, Profile profile) {
-    final isActive = profile.isBaseMembershipActive;
-    final endDate = profile.baseMembershipEndDate;
-
-    if (profile.hasBaseMembership && endDate != null) {
-      // Show membership card with status — tappable to extend
-      final isExpired = endDate.isBefore(DateTime.now());
-      return GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute<void>(
-            builder: (_) => MembershipScreen(currentUserId: profile.userId),
-          ),
-        ),
-        child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: AppColors.backgroundCard,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: isActive
-                ? const Color(0xFF4CAF50).withValues(alpha: 0.5)
-                : AppColors.errorRed.withValues(alpha: 0.5),
-          ),
-        ),
-        child: Row(
-          children: [
-            Container(
-              width: 44,
-              height: 44,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: isActive
-                    ? const Color(0xFF4CAF50).withValues(alpha: 0.15)
-                    : AppColors.errorRed.withValues(alpha: 0.15),
-              ),
-              child: Icon(
-                isActive ? Icons.verified : Icons.warning_amber_rounded,
-                color: isActive ? const Color(0xFF4CAF50) : AppColors.errorRed,
-                size: 24,
-              ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    AppLocalizations.of(context)!.profileGreengoMembership,
-                    style: const TextStyle(
-                      color: AppColors.textPrimary,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    AppLocalizations.of(context)!.profileMembershipValidTill('${endDate.day.toString().padLeft(2, '0')}/${endDate.month.toString().padLeft(2, '0')}/${endDate.year}'),
-                    style: TextStyle(
-                      color: isActive ? AppColors.textSecondary : AppColors.errorRed,
-                      fontSize: 13,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-              decoration: BoxDecoration(
-                color: isActive ? const Color(0xFF4CAF50) : AppColors.errorRed,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                isExpired ? AppLocalizations.of(context)!.profileMembershipExpired : AppLocalizations.of(context)!.profileMembershipActive,
-                style: const TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-      );
-    }
-
-    // No membership — show get button
-    return OutlinedButton.icon(
-      onPressed: () => Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => MembershipScreen(currentUserId: profile.userId),
-        ),
-      ),
-      icon: const Icon(Icons.star_outline),
-      label: Text(AppLocalizations.of(context)!.profileGetMembership),
-      style: OutlinedButton.styleFrom(
-        foregroundColor: AppColors.richGold,
-        side: const BorderSide(color: AppColors.richGold),
-        minimumSize: const Size(double.infinity, 50),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
       ),
     );
   }

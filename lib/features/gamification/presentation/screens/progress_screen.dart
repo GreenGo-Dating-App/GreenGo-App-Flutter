@@ -12,13 +12,12 @@ import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
 import 'achievements_screen.dart';
-import 'daily_challenges_screen.dart';
 import 'journey_screen.dart';
 import 'leaderboard_screen.dart';
 import 'missions_screen.dart';
 
 /// Progress Screen - Main hub for gamification features
-/// Displays user's level, achievements, challenges, and leaderboard
+/// Displays user's level, achievements and leaderboard (daily challenges removed)
 class ProgressScreen extends StatefulWidget {
 
   const ProgressScreen({
@@ -38,7 +37,7 @@ class _ProgressScreenState extends State<ProgressScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
 
     // Load gamification data
     context.read<GamificationBloc>()
@@ -117,10 +116,6 @@ class _ProgressScreenState extends State<ProgressScreen>
           children: [
             _buildOverviewTab(context, l10n),
             AchievementsScreen(userId: widget.userId),
-            DailyChallengesScreen(
-              userId: widget.userId,
-              listenForProgress: false,
-            ),
             LeaderboardScreen(userId: widget.userId),
           ],
         ),
@@ -158,7 +153,6 @@ class _ProgressScreenState extends State<ProgressScreen>
         tabs: [
           Tab(text: l10n.progressOverview),
           Tab(text: l10n.progressAchievements),
-          Tab(text: l10n.progressChallenges),
           Tab(text: l10n.progressLeaderboard),
         ],
       ),
@@ -266,19 +260,6 @@ class _ProgressScreenState extends State<ProgressScreen>
                     ],
                   );
                 }(),
-              ],
-
-              // Daily Challenges Preview
-              if (state.challengesData != null) ...[
-                _buildGlassSectionHeader(
-                  context,
-                  l10n.progressTodaysChallenges,
-                  Icons.bolt_rounded,
-                  onSeeAll: () => _tabController.animateTo(2),
-                ),
-                const SizedBox(height: 16),
-                _buildGlassChallengesPreview(context, state),
-                const SizedBox(height: 24),
               ],
 
               // Journey Button with Enhanced Design
@@ -529,10 +510,6 @@ class _ProgressScreenState extends State<ProgressScreen>
             .where((a) => a.isUnlocked)
             .length ??
         0;
-    final completedChallenges = state.challengesData?.dailyChallenges
-            .where((c) => c.isCompleted)
-            .length ??
-        0;
     final totalXP = state.userLevel?.totalXP ?? 0;
 
     return Row(
@@ -543,15 +520,6 @@ class _ProgressScreenState extends State<ProgressScreen>
             '$totalAchievements',
             l10n.progressBadges,
             const Color(0xFFFFD700),
-          ),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _buildGlassStatCard(
-            '✅',
-            '$completedChallenges',
-            l10n.progressCompleted,
-            const Color(0xFF10B981),
           ),
         ),
         const SizedBox(width: 12),
@@ -860,129 +828,6 @@ class _ProgressScreenState extends State<ProgressScreen>
           ),
         ),
       ),
-    );
-  }
-
-  Widget _buildGlassChallengesPreview(BuildContext context, GamificationState state) {
-    final challenges = state.challengesData?.dailyChallenges ?? [];
-    final displayChallenges = challenges.take(3).toList();
-
-    return Column(
-      children: displayChallenges.asMap().entries.map((entry) {
-        final index = entry.key;
-        final challengeWithProgress = entry.value;
-        final challenge = challengeWithProgress.challenge;
-        final isCompleted = challengeWithProgress.isCompleted;
-        final currentProgress = challengeWithProgress.currentProgress;
-        final progressValue = challenge.requiredCount > 0
-            ? currentProgress / challenge.requiredCount
-            : 0.0;
-
-        final colors = [
-          const Color(0xFF8B5CF6),
-          const Color(0xFF3B82F6),
-          const Color(0xFF10B981),
-        ];
-        final color = isCompleted ? const Color(0xFF10B981) : colors[index % colors.length];
-
-        return Container(
-          margin: const EdgeInsets.only(bottom: 12),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(16),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-              child: Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
-                  gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      color.withOpacity(0.15),
-                      color.withOpacity(0.05),
-                    ],
-                  ),
-                  border: Border.all(
-                    color: color.withOpacity(0.3),
-                    width: 1,
-                  ),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        gradient: LinearGradient(
-                          colors: [color, color.withOpacity(0.7)],
-                        ),
-                        boxShadow: [
-                          BoxShadow(
-                            color: color.withOpacity(0.3),
-                            blurRadius: 8,
-                          ),
-                        ],
-                      ),
-                      child: Icon(
-                        isCompleted ? Icons.check_rounded : Icons.flag_rounded,
-                        color: Colors.white,
-                        size: 24,
-                      ),
-                    ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            challenge.name,
-                            style: const TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          Row(
-                            children: [
-                              Expanded(
-                                child: _buildEnhancedProgressBar(
-                                  progressValue.clamp(0.0, 1.0),
-                                ),
-                              ),
-                              const SizedBox(width: 12),
-                              Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 10,
-                                  vertical: 4,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: color.withOpacity(0.2),
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                                child: Text(
-                                  '$currentProgress/${challenge.requiredCount}',
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w600,
-                                    color: color,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        );
-      }).toList(),
     );
   }
 
