@@ -1,6 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../../../core/di/injection_container.dart';
+import '../../../../core/error/failures.dart';
+import '../../../coins/data/datasources/coin_remote_datasource.dart'
+    show CoinRefusalException;
 import '../../../coins/domain/usecases/purchase_feature.dart';
 import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/domain/entities/event.dart';
@@ -108,31 +111,26 @@ class PromotionService {
       return PromotionResult.insufficientCoins();
     }
 
+    // The server prices [days], debits and extends businessPromotedUntil
+    // (from the current expiry when still active) in ONE transaction.
     final charge = await sl<PurchaseFeature>()(
       userId: uid,
       featureName: 'business_promotion',
       cost: cost,
       relatedId: uid,
+      option: days,
     );
-    final charged = charge.fold((_) => false, (_) => true);
-    if (!charged) return PromotionResult.insufficientCoins();
-
-    try {
-      // Extend from the current expiry when still active, else from now.
-      var base = DateTime.now();
-      final existing = await getBusinessPromotedUntil(uid);
-      if (existing != null && existing.isAfter(base)) base = existing;
-      final until = base.add(Duration(days: days));
-
-      await _profiles.doc(uid).set(
-        {kBusinessPromotedUntilField: Timestamp.fromDate(until)},
-        SetOptions(merge: true),
-      );
-      return PromotionResult.success(until);
-    } catch (_) {
-      // Coins were spent but the flag write failed; surface a soft error.
-      return PromotionResult.error();
-    }
+    return charge.fold(
+      (failure) => _isInsufficient(failure)
+          ? PromotionResult.insufficientCoins()
+          : PromotionResult.error(),
+      (txn) {
+        final until = _effectTime(txn.metadata, kBusinessPromotedUntilField);
+        return until != null
+            ? PromotionResult.success(until)
+            : PromotionResult.error();
+      },
+    );
   }
 
   /// Feature an event for [days] at [cost] coins.
@@ -156,9 +154,14 @@ class PromotionService {
       featureName: 'event_featured',
       cost: cost,
       relatedId: event.id,
+      option: days, // the server sets isFeatured / featuredUntil (extends)
     );
-    final charged = charge.fold((_) => false, (_) => true);
-    if (!charged) return PromotionResult.insufficientCoins();
+    final failure = charge.fold((f) => f, (_) => null);
+    if (failure != null) {
+      return _isInsufficient(failure)
+          ? PromotionResult.insufficientCoins()
+          : PromotionResult.error();
+    }
 
     try {
       var base = DateTime.now();
@@ -167,7 +170,11 @@ class PromotionService {
           event.featuredUntil!.isAfter(base)) {
         base = event.featuredUntil!;
       }
-      final until = base.add(Duration(days: days));
+      final until = charge.fold(
+            (_) => null,
+            (txn) => _effectTime(txn.metadata, 'featuredUntil'),
+          ) ??
+          base.add(Duration(days: days));
 
       await _eventsDataSource.updateEvent(
         event.copyWith(isFeatured: true, featuredUntil: until),
@@ -176,6 +183,16 @@ class PromotionService {
     } catch (_) {
       return PromotionResult.error();
     }
+  }
+
+  static bool _isInsufficient(Failure failure) =>
+      CoinRefusalException.reasonIn(failure.message) ==
+      CoinRefusalException.insufficientCoins;
+
+  static DateTime? _effectTime(Map<String, dynamic>? metadata, String key) {
+    final effect = metadata?['effect'];
+    final ms = effect is Map ? effect[key] : null;
+    return ms is num ? DateTime.fromMillisecondsSinceEpoch(ms.toInt()) : null;
   }
 
   /// The business's own events from TODAY into the future, eligible to be

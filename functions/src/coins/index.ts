@@ -13,6 +13,17 @@ import {
   verifyAppStorePurchase,
 } from '../shared/purchase_verification';
 import { flagSandboxGrantIfNeeded } from './purchaseClawback';
+import {
+  checkVelocity,
+  planGiftDebit,
+  stableId,
+  validRequestId,
+  velocityRef,
+} from './ledger';
+import { escrowRefundUpdate } from './gifts';
+
+export { spendCoins } from './spendCoins';
+export { sendGift, acceptGift } from './gifts';
 
 // Coin packages (legacy key → coins), kept for the scheduled/reward paths.
 const COIN_PACKAGES = {
@@ -390,23 +401,29 @@ interface GiftCoinsRequest {
   receiverId: string;
   amount: number;
   message?: string;
+  /** Optional idempotency key: a retried call never sends twice. */
+  requestId?: string;
 }
 
 /**
- * P2P coin gift. Atomically debits the sender's `coinBalances` and credits the
- * receiver's, plus writes a ledger entry for each. This MUST be server-side:
- * Firestore rules only let a user write their OWN balance doc, so the client
- * (which tried to write the receiver's balance directly) was always denied and
- * gifting failed. The Admin SDK bypasses those rules.
+ * Instant P2P coin transfer (the Shop "send coins" flow, audit H-11).
+ * Atomically debits the sender (FIFO over `coinBatches`) and credits the
+ * receiver as a 'gift' batch, with a `giftSent` / `giftReceived` ledger entry
+ * each and an 'accepted' `coinGifts` history doc. This MUST be server-side:
+ * Firestore rules only let a user write their OWN balance doc, so the old
+ * client flow debited the sender and then failed to credit the receiver.
+ *
+ * Same fraud controls as sendGift: the 72h hold on recently purchased coins
+ * and the per-sender daily velocity limits.
  */
 export const giftCoins = onCall<GiftCoinsRequest>(
   { memory: '512MiB', timeoutSeconds: 60 },
   async (request) => {
     try {
       const senderId = await verifyAuth(request.auth);
-      const { receiverId, amount, message } = request.data;
+      const { receiverId, amount, message, requestId } = request.data;
 
-      if (!receiverId || typeof receiverId !== 'string') {
+      if (!receiverId || typeof receiverId !== 'string' || receiverId.includes('/')) {
         throw new HttpsError('invalid-argument', 'receiverId is required');
       }
       if (receiverId === senderId) {
@@ -418,6 +435,9 @@ export const giftCoins = onCall<GiftCoinsRequest>(
           'amount must be a positive integer up to 100000',
         );
       }
+      if (requestId !== undefined && !validRequestId(requestId)) {
+        throw new HttpsError('invalid-argument', 'requestId is invalid');
+      }
 
       // Recipient must exist.
       const receiverProfile = await db.collection('profiles').doc(receiverId).get();
@@ -427,32 +447,60 @@ export const giftCoins = onCall<GiftCoinsRequest>(
 
       const senderRef = db.collection('coinBalances').doc(senderId);
       const receiverRef = db.collection('coinBalances').doc(receiverId);
+      const giftRef = requestId
+        ? db.collection('coinGifts').doc(`t_${stableId(senderId, requestId)}`)
+        : db.collection('coinGifts').doc();
 
       let senderNewTotal = 0;
       let receiverNewTotal = 0;
+      let replay = false;
 
       await db.runTransaction(async (transaction) => {
-        const senderDoc = await transaction.get(senderRef);
-        const receiverDoc = await transaction.get(receiverRef);
+        const nowMs = Date.now();
+        const vRef = velocityRef(senderId, nowMs);
+        const [senderDoc, receiverDoc, giftDoc, vSnap] = await Promise.all([
+          transaction.get(senderRef),
+          transaction.get(receiverRef),
+          transaction.get(giftRef),
+          transaction.get(vRef),
+        ]);
 
-        const senderTotal = (senderDoc.data() as any)?.totalCoins || 0;
-        if (senderTotal < amount) {
-          throw new HttpsError('failed-precondition', 'Insufficient coins');
+        if (giftDoc.exists) {
+          const g = giftDoc.data() as any;
+          if (g.senderId !== senderId || g.receiverId !== receiverId || g.amount !== amount) {
+            throw new HttpsError('invalid-argument', 'requestId was already used for a different gift');
+          }
+          replay = true;
+          senderNewTotal = (senderDoc.data() as any)?.totalCoins ?? 0;
+          receiverNewTotal = (receiverDoc.data() as any)?.totalCoins ?? 0;
+          return;
         }
-        const receiverTotal = (receiverDoc.data() as any)?.totalCoins || 0;
 
-        senderNewTotal = senderTotal - amount;
+        const v = checkVelocity(vSnap, amount);
+        const plan = planGiftDebit(senderDoc, amount, nowMs);
+        const rData = (receiverDoc.data() as any) || {};
+        const receiverTotal = rData.totalCoins || 0;
+
+        senderNewTotal = plan.newTotal;
         receiverNewTotal = receiverTotal + amount;
 
-        const now = admin.firestore.FieldValue.serverTimestamp();
-        const inc = admin.firestore.FieldValue.increment;
+        const now = admin.firestore.Timestamp.fromMillis(nowMs);
+        const receiverBatches = Array.isArray(rData.coinBatches) ? [...rData.coinBatches] : [];
+        receiverBatches.push({
+          batchId: `gift_${giftRef.id}`,
+          initialCoins: amount,
+          remainingCoins: amount,
+          source: 'gift',
+          acquiredDate: now,
+        });
 
         transaction.set(
           senderRef,
           {
             userId: senderId,
-            totalCoins: inc(-amount),
-            spentCoins: inc(amount),
+            totalCoins: plan.newTotal,
+            spentCoins: plan.spent,
+            coinBatches: plan.batches,
             lastUpdated: now,
           },
           { merge: true },
@@ -461,8 +509,12 @@ export const giftCoins = onCall<GiftCoinsRequest>(
           receiverRef,
           {
             userId: receiverId,
-            totalCoins: inc(amount),
-            giftedCoins: inc(amount),
+            totalCoins: receiverNewTotal,
+            earnedCoins: rData.earnedCoins || 0,
+            purchasedCoins: rData.purchasedCoins || 0,
+            giftedCoins: (rData.giftedCoins || 0) + amount,
+            spentCoins: rData.spentCoins || 0,
+            coinBatches: receiverBatches,
             lastUpdated: now,
           },
           { merge: true },
@@ -473,7 +525,9 @@ export const giftCoins = onCall<GiftCoinsRequest>(
           type: 'debit',
           amount,
           balanceAfter: senderNewTotal,
-          reason: 'Gift sent',
+          reason: 'giftSent', // CoinTransactionReason.giftSent
+          relatedId: giftRef.id,
+          relatedUserId: receiverId,
           metadata: { toUserId: receiverId, message: message || null, source: 'gift' },
           createdAt: now,
         });
@@ -482,11 +536,42 @@ export const giftCoins = onCall<GiftCoinsRequest>(
           type: 'credit',
           amount,
           balanceAfter: receiverNewTotal,
-          reason: 'Gift received',
+          reason: 'giftReceived', // CoinTransactionReason.giftReceived
+          relatedId: giftRef.id,
+          relatedUserId: senderId,
           metadata: { fromUserId: senderId, message: message || null, source: 'gift' },
           createdAt: now,
         });
+        // History record (the old client wrote this itself).
+        transaction.set(giftRef, {
+          giftId: giftRef.id,
+          senderId,
+          receiverId,
+          amount,
+          message: message || null,
+          status: 'accepted',
+          sentAt: now,
+          receivedAt: now,
+          expiresAt: null,
+          instant: true,
+        });
+        transaction.set(vRef, {
+          userId: senderId,
+          count: v.count + 1,
+          coins: v.coins + amount,
+          updatedAt: now,
+        }, { merge: true });
       });
+
+      if (replay) {
+        return {
+          success: true,
+          alreadyProcessed: true,
+          giftId: giftRef.id,
+          senderNewBalance: senderNewTotal,
+          receiverNewBalance: receiverNewTotal,
+        };
+      }
 
       logInfo(`giftCoins ${senderId} -> ${receiverId} amount=${amount}`);
 
@@ -532,10 +617,13 @@ export const giftCoins = onCall<GiftCoinsRequest>(
 
       return {
         success: true,
+        alreadyProcessed: false,
+        giftId: giftRef.id,
         senderNewBalance: senderNewTotal,
         receiverNewBalance: receiverNewTotal,
       };
     } catch (error) {
+      if (error instanceof HttpsError) throw error;
       throw handleError(error);
     }
   }
@@ -577,6 +665,46 @@ export const declineGift = onCall<DeclineGiftRequest>(
 
       const giftRef = db.collection('coinGifts').doc(giftId);
 
+      // Server-escrow gift (created by the sendGift callable): the server-only
+      // gift_escrow doc IS the proof, so refund it directly by putting the
+      // exact batch slices the gift drew back on the sender.
+      const escrowRef = db.collection('gift_escrow').doc(giftId);
+      if ((await escrowRef.get()).exists) {
+        const refundedTo = await db.runTransaction(async (tx) => {
+          const [giftDoc, escrowDoc] = await Promise.all([tx.get(giftRef), tx.get(escrowRef)]);
+          if (!giftDoc.exists) throw new HttpsError('not-found', 'Gift not found');
+          const gift = giftDoc.data() as any;
+          const escrow = escrowDoc.data() as any;
+          if (gift.receiverId !== receiverId || escrow.receiverId !== receiverId) {
+            throw new HttpsError('permission-denied', 'Only the gift recipient can decline this gift');
+          }
+          if (gift.status !== 'pending' || escrow.status !== 'held') {
+            throw new HttpsError('failed-precondition', 'Gift is not pending (already accepted or declined)');
+          }
+          const senderRef = db.collection('coinBalances').doc(escrow.senderId);
+          const senderDoc = await tx.get(senderRef);
+          const upd = escrowRefundUpdate(senderDoc, escrow.drawn, escrow.amount);
+          const now = admin.firestore.Timestamp.now();
+          tx.set(senderRef, { userId: escrow.senderId, ...upd.fields, lastUpdated: now }, { merge: true });
+          tx.update(giftRef, { status: 'declined', declinedAt: now });
+          tx.update(escrowRef, { status: 'refunded', settledAt: now });
+          tx.set(db.collection('coinTransactions').doc(), {
+            userId: escrow.senderId,
+            type: 'credit',
+            amount: escrow.amount,
+            balanceAfter: upd.newTotal,
+            reason: 'refund', // CoinTransactionReason.refund
+            relatedId: giftId,
+            relatedUserId: receiverId,
+            metadata: { fromUserId: receiverId, giftId, source: 'gift_refund' },
+            createdAt: now,
+          });
+          return { senderId: escrow.senderId as string, amount: escrow.amount as number, newTotal: upd.newTotal };
+        });
+        logInfo(`declineGift ${giftId}: escrow refunded ${refundedTo.amount} to ${refundedTo.senderId}`);
+        return { success: true, senderNewBalance: refundedTo.newTotal };
+      }
+
       // Escrow proof (security audit C-01). The gift doc is client-written, so
       // its existence proves nothing: a forged `{senderId: me, status:
       // 'pending'}` used to mint coins on decline. A genuine gift is created by
@@ -617,7 +745,9 @@ export const declineGift = onCall<DeclineGiftRequest>(
             const recent = await db.collection('gift_refunds')
               .where('senderId', '==', preData.senderId)
               .get();
-            const recentCount = recent.docs.filter((d) => d.createTime.toMillis() >= since).length;
+            // Legacy accepts (acceptGift) share this ledger; they are not refunds.
+            const recentCount = recent.docs
+              .filter((d) => d.data().kind !== 'accept' && d.createTime.toMillis() >= since).length;
             if (recentCount >= GIFT_REFUND_MONTHLY_CAP) {
               withholdReason = 'monthly_cap';
             }
@@ -723,7 +853,7 @@ export const declineGift = onCall<DeclineGiftRequest>(
           type: 'credit',
           amount,
           balanceAfter: senderNewTotal,
-          reason: 'Gift declined refund',
+          reason: 'refund', // CoinTransactionReason.refund (was free text)
           metadata: { fromUserId: receiverId, giftId, source: 'gift_refund' },
           createdAt: now,
         });
@@ -742,6 +872,7 @@ export const declineGift = onCall<DeclineGiftRequest>(
         senderNewBalance: senderNewTotal,
       };
     } catch (error) {
+      if (error instanceof HttpsError) throw error;
       throw handleError(error);
     }
   }

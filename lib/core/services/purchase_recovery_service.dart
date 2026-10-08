@@ -120,6 +120,24 @@ class PurchaseRecoveryService {
     }
   }
 
+  /// Verify [purchase] with the server, grant it, and only THEN acknowledge
+  /// it (security audit M-13). Used by restore flows that see purchases on
+  /// their own stream listener: they must never `completePurchase` a receipt
+  /// the server has not verified, or a fresh purchase is acknowledged (so the
+  /// store keeps the money) and never granted.
+  ///
+  /// Pending / failed purchases are ignored; an unverifiable purchase is left
+  /// unfinished so the store redelivers it.
+  Future<void> recoverPurchase(PurchaseDetails purchase) async {
+    if (!_isMobile) return;
+    _iap ??= _injectedIap ?? InAppPurchase.instance;
+    if (purchase.status != PurchaseStatus.purchased &&
+        purchase.status != PurchaseStatus.restored) {
+      return;
+    }
+    await _recover(purchase);
+  }
+
   Future<void> dispose() async {
     await _subscription?.cancel();
     _subscription = null;

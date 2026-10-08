@@ -16322,4 +16322,15 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Ce créneau n\'est pas disponible à cette date.';
+
+  @override
+  String get coinsGiftPurchaseHold =>
+      'Les pièces achetées au cours des 72 dernières heures ne peuvent pas encore être offertes. Tu peux toujours les utiliser pour des fonctionnalités.';
+
+  @override
+  String get coinsGiftDailyLimit =>
+      'Tu as atteint la limite de cadeaux du jour (10 cadeaux ou 5 000 pièces). Réessaie demain.';
+
+  @override
+  String get coinReasonRefundClawback => 'Achat remboursé annulé';
 }

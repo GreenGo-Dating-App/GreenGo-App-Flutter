@@ -16221,6 +16221,17 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Esse horário não está disponível nesta data.';
+
+  @override
+  String get coinsGiftPurchaseHold =>
+      'As moedas que compraste nas últimas 72 horas ainda não podem ser oferecidas. Podes usá-las em funcionalidades.';
+
+  @override
+  String get coinsGiftDailyLimit =>
+      'Atingiste o limite de presentes de hoje (10 presentes ou 5.000 moedas). Tenta novamente amanhã.';
+
+  @override
+  String get coinReasonRefundClawback => 'Compra reembolsada revertida';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -32442,4 +32453,15 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get bkErrInvalidStart =>
       'Esse horário não está disponível nesta data.';
+
+  @override
+  String get coinsGiftPurchaseHold =>
+      'As moedas que você comprou nas últimas 72 horas ainda não podem ser presenteadas. Você pode usá-las em recursos.';
+
+  @override
+  String get coinsGiftDailyLimit =>
+      'Você atingiu o limite de presentes de hoje (10 presentes ou 5.000 moedas). Tente novamente amanhã.';
+
+  @override
+  String get coinReasonRefundClawback => 'Compra reembolsada estornada';
 }

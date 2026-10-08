@@ -323,12 +323,23 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
           return;
         }
 
-        // Deduct coins
-        await coinRepository!.purchaseFeature(
+        // Deduct coins (server-priced). Refused -> same insufficient flow.
+        final charge = await coinRepository!.purchaseFeature(
           userId: userId,
           featureName: 'superlike',
           cost: CoinFeaturePrices.superLike,
         );
+        if (charge.isLeft()) {
+          emit(DiscoveryInsufficientCoins(
+            cards: currentState.cards,
+            currentIndex: currentState.currentIndex,
+            required: CoinFeaturePrices.superLike,
+            available: balanceResult.fold((_) => 0, (b) => b.availableCoins),
+            featureName: 'Priority Connect',
+          ));
+          emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
+          return;
+        }
       } else if (!usedFreeAllowance && coinRepository == null) {
         // No free allowance and no coin repository — block action
         emit(DiscoveryInsufficientCoins(

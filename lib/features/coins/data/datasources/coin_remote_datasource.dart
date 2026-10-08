@@ -92,7 +92,13 @@ class CoinRemoteDataSource {
     });
   }
 
-  /// Update coin balance
+  /// Update coin balance (credits).
+  ///
+  /// Spending is server-authoritative (security audit C-03 / H-12): every
+  /// debit goes through [spendCoins] or a gift callable, which price the
+  /// feature and debit in one server transaction. A client-side debit here is
+  /// refused so no new call site can slip back to the old path. The single
+  /// exception is the legacy in-app admin tool ([adminAdjustCoins]).
   Future<void> updateBalance({
     required String userId,
     required int amount,
@@ -102,6 +108,11 @@ class CoinRemoteDataSource {
     String? relatedUserId,
     Map<String, dynamic>? metadata,
   }) async {
+    if (type == CoinTransactionType.debit &&
+        reason != CoinTransactionReason.adminAdjustment) {
+      throw UnsupportedError(
+          'Client-side coin debits are not allowed; use spendCoins()');
+    }
     await firestore.runTransaction((transaction) async {
       final balanceRef = _balancesCollection.doc(userId);
       final balanceDoc = await transaction.get(balanceRef);
@@ -510,206 +521,117 @@ class CoinRemoteDataSource {
     }
   }
 
+  // ===== Spending (server-authoritative) =====
+
+  /// Spend coins on [featureId] through the `spendCoins` callable.
+  ///
+  /// The server owns the price table (the client never sends a price),
+  /// refuses unknown features, debits FIFO over `coinBatches` in one
+  /// transaction and, for server-owned effects (profile boost, incognito,
+  /// event featuring, business promotion), applies the effect in that same
+  /// transaction. [requestId] is the idempotency key for ONE user action:
+  /// generate it once per tap and reuse it on retry, so a retried call never
+  /// charges twice.
+  ///
+  /// [option] selects a priced option: hours for `event_boost`, days for
+  /// `event_featured` / `business_promotion`.
+  ///
+  /// Throws [CoinRefusalException] for a refusal the user should understand
+  /// (insufficient coins, unknown feature); other errors propagate.
+  Future<CoinSpendReceipt> spendCoins({
+    required String featureId,
+    String? requestId,
+    String? relatedId,
+    int? option,
+  }) async {
+    final payload = <String, dynamic>{
+      'featureId': featureId,
+      'requestId': requestId ?? uuid.v4(),
+      if (relatedId != null) 'relatedId': relatedId,
+      if (option != null) 'option': option,
+    };
+    try {
+      final result =
+          await functions.httpsCallable('spendCoins').call<Object?>(payload);
+      return CoinSpendReceipt.fromMap(
+          Map<String, dynamic>.from(result.data as Map? ?? const {}));
+    } on FirebaseFunctionsException catch (e) {
+      throw CoinRefusalException.fromFunctions(e) ?? e;
+    }
+  }
+
   // ===== Gift Operations =====
 
-  /// Debit coins from a user's balance within an existing transaction.
-  /// Returns the new total balance after deduction.
-  Future<int> _debitInTransaction(
-    Transaction transaction, {
-    required String userId,
+  /// Instant coin transfer (Shop "send coins") through the `giftCoins`
+  /// callable: the sender is debited and the receiver credited atomically on
+  /// the server. Subject to the 72h hold on recently purchased coins and the
+  /// daily gift limits ([CoinRefusalException]).
+  Future<GiftCoinsResult> giftCoins({
+    required String receiverId,
     required int amount,
-    required CoinTransactionReason reason,
-    String? relatedUserId,
-    Map<String, dynamic>? metadata,
+    String? message,
+    String? requestId,
   }) async {
-    final balanceRef = _balancesCollection.doc(userId);
-    final balanceDoc = await transaction.get(balanceRef);
-
-    CoinBalanceModel currentBalance;
-    if (!balanceDoc.exists) {
-      currentBalance = CoinBalanceModel.empty(userId);
-    } else {
-      currentBalance = CoinBalanceModel.fromFirestore(balanceDoc);
-    }
-
-    if (currentBalance.totalCoins < amount) {
-      throw Exception('Insufficient coins');
-    }
-
-    final newTotal = currentBalance.totalCoins - amount;
-    final newSpent = currentBalance.spentCoins + amount;
-
-    // Deduct from the oldest batches first (FIFO)
-    var remainingToDeduct = amount;
-    final newBatches = currentBalance.coinBatches.map((batch) {
-      if (remainingToDeduct <= 0) return batch;
-      final deductAmount = batch.remainingCoins <= remainingToDeduct
-          ? batch.remainingCoins
-          : remainingToDeduct;
-      remainingToDeduct -= deductAmount;
-      return CoinBatch(
-        batchId: batch.batchId,
-        initialCoins: batch.initialCoins,
-        remainingCoins: batch.remainingCoins - deductAmount,
-        source: batch.source,
-        acquiredDate: batch.acquiredDate,
+    try {
+      final result = await functions.httpsCallable('giftCoins').call<Object?>({
+        'receiverId': receiverId,
+        'amount': amount,
+        if (message != null && message.isNotEmpty) 'message': message,
+        'requestId': requestId ?? uuid.v4(),
+      });
+      final data = Map<String, dynamic>.from(result.data as Map? ?? const {});
+      return GiftCoinsResult(
+        giftId: data['giftId'] as String?,
+        senderNewBalance: (data['senderNewBalance'] as num?)?.toInt() ?? 0,
       );
-    }).where((batch) => batch.remainingCoins > 0).toList();
-
-    final updatedBalance = CoinBalanceModel(
-      userId: userId,
-      totalCoins: newTotal,
-      earnedCoins: currentBalance.earnedCoins,
-      purchasedCoins: currentBalance.purchasedCoins,
-      giftedCoins: currentBalance.giftedCoins,
-      spentCoins: newSpent,
-      lastUpdated: DateTime.now(),
-      coinBatches: newBatches,
-    );
-
-    transaction.set(balanceRef, updatedBalance.toFirestore());
-
-    // Create transaction record
-    final transactionId = uuid.v4();
-    final txnModel = CoinTransactionModel(
-      transactionId: transactionId,
-      userId: userId,
-      type: CoinTransactionType.debit,
-      amount: amount,
-      balanceAfter: newTotal,
-      reason: reason,
-      relatedUserId: relatedUserId,
-      metadata: metadata,
-      createdAt: DateTime.now(),
-    );
-    transaction.set(
-      _transactionsCollection.doc(transactionId),
-      txnModel.toFirestore(),
-    );
-
-    return newTotal;
+    } on FirebaseFunctionsException catch (e) {
+      throw CoinRefusalException.fromFunctions(e) ?? e;
+    }
   }
 
-  /// Credit coins to a user's balance within an existing transaction.
-  /// Returns the new total balance after credit.
-  Future<int> _creditInTransaction(
-    Transaction transaction, {
-    required String userId,
-    required int amount,
-    required CoinTransactionReason reason,
-    String? relatedUserId,
-    Map<String, dynamic>? metadata,
-  }) async {
-    final balanceRef = _balancesCollection.doc(userId);
-    final balanceDoc = await transaction.get(balanceRef);
-
-    CoinBalanceModel currentBalance;
-    if (!balanceDoc.exists) {
-      currentBalance = CoinBalanceModel.empty(userId);
-    } else {
-      currentBalance = CoinBalanceModel.fromFirestore(balanceDoc);
-    }
-
-    final newTotal = currentBalance.totalCoins + amount;
-
-    var newEarned = currentBalance.earnedCoins;
-    var newPurchased = currentBalance.purchasedCoins;
-    var newGifted = currentBalance.giftedCoins;
-
-    if (reason == CoinTransactionReason.coinPurchase) {
-      newPurchased += amount;
-    } else if (reason == CoinTransactionReason.giftReceived) {
-      newGifted += amount;
-    } else {
-      newEarned += amount;
-    }
-
-    // Create coin batch
-    final source = _getCoinSource(reason);
-    final batchId = uuid.v4();
-    final acquiredDate = DateTime.now();
-
-    final newBatches = List<CoinBatch>.from(currentBalance.coinBatches);
-    newBatches.add(CoinBatch(
-      batchId: batchId,
-      initialCoins: amount,
-      remainingCoins: amount,
-      source: source,
-      acquiredDate: acquiredDate,
-    ));
-
-    final updatedBalance = CoinBalanceModel(
-      userId: userId,
-      totalCoins: newTotal,
-      earnedCoins: newEarned,
-      purchasedCoins: newPurchased,
-      giftedCoins: newGifted,
-      spentCoins: currentBalance.spentCoins,
-      lastUpdated: DateTime.now(),
-      coinBatches: newBatches,
-    );
-
-    transaction.set(balanceRef, updatedBalance.toFirestore());
-
-    // Create transaction record
-    final transactionId = uuid.v4();
-    final txnModel = CoinTransactionModel(
-      transactionId: transactionId,
-      userId: userId,
-      type: CoinTransactionType.credit,
-      amount: amount,
-      balanceAfter: newTotal,
-      reason: reason,
-      relatedUserId: relatedUserId,
-      metadata: metadata,
-      createdAt: DateTime.now(),
-    );
-    transaction.set(
-      _transactionsCollection.doc(transactionId),
-      txnModel.toFirestore(),
-    );
-
-    return newTotal;
-  }
-
-  /// Send gift
+  /// Send gift.
+  ///
+  /// Runs server-side (`sendGift` callable): the sender is debited into a
+  /// server escrow and the pending `coinGifts` doc is created there, so the
+  /// receiver's accept / decline settles real, escrowed coins. [senderId] is
+  /// taken from the auth context server-side.
   Future<CoinGiftModel> sendGift({
     required String senderId,
     required String receiverId,
     required int amount,
     String? message,
+    String? requestId,
   }) async {
-    CoinGiftModel? gift;
+    final Map<String, dynamic> data;
+    try {
+      final result = await functions.httpsCallable('sendGift').call<Object?>({
+        'receiverId': receiverId,
+        'amount': amount,
+        if (message != null && message.isNotEmpty) 'message': message,
+        'requestId': requestId ?? uuid.v4(),
+      });
+      data = Map<String, dynamic>.from(result.data as Map? ?? const {});
+    } on FirebaseFunctionsException catch (e) {
+      throw CoinRefusalException.fromFunctions(e) ?? e;
+    }
 
-    await firestore.runTransaction((transaction) async {
-      // Deduct coins from sender (inline, no nested transaction)
-      await _debitInTransaction(
-        transaction,
-        userId: senderId,
-        amount: amount,
-        reason: CoinTransactionReason.giftSent,
-        relatedUserId: receiverId,
-        metadata: {'toUserId': receiverId},
-      );
+    final now = DateTime.now();
+    DateTime? millis(Object? v) => v is num
+        ? DateTime.fromMillisecondsSinceEpoch(v.toInt())
+        : null;
+    final gift = CoinGiftModel(
+      giftId: data['giftId'] as String? ?? '',
+      senderId: senderId,
+      receiverId: receiverId,
+      amount: amount,
+      message: data['message'] as String? ?? message,
+      status: CoinGiftStatus.pending,
+      sentAt: millis(data['sentAt']) ?? now,
+      expiresAt: millis(data['expiresAt']) ??
+          now.add(CoinGiftConstraints.expirationPeriod),
+    );
 
-      // Create gift
-      final giftId = uuid.v4();
-      final now = DateTime.now();
-      gift = CoinGiftModel(
-        giftId: giftId,
-        senderId: senderId,
-        receiverId: receiverId,
-        amount: amount,
-        message: message,
-        status: CoinGiftStatus.pending,
-        sentAt: now,
-        expiresAt: now.add(CoinGiftConstraints.expirationPeriod),
-      );
-
-      transaction.set(_giftsCollection.doc(giftId), gift!.toFirestore());
-    });
-
-    // After transaction succeeds, create a chat notification for the receiver
+    // After the gift is sent, create a chat notification for the receiver
     try {
       await _createGiftChatNotification(
         senderId: senderId,
@@ -721,7 +643,7 @@ class CoinRemoteDataSource {
       // Don't throw — the gift was already sent successfully
     }
 
-    return gift!;
+    return gift;
   }
 
   /// Create a conversation and send a system message when coins are gifted
@@ -853,44 +775,17 @@ class CoinRemoteDataSource {
     });
   }
 
-  /// Accept gift
+  /// Accept gift.
+  ///
+  /// Server-side (`acceptGift` callable): the receiver is credited from the
+  /// gift's server escrow (or, for a gift sent by an older app version, only
+  /// against the sender's proven debit). [userId] comes from the auth context.
   Future<void> acceptGift({
     required String giftId,
     required String userId,
   }) async {
-    await firestore.runTransaction((transaction) async {
-      final giftRef = _giftsCollection.doc(giftId);
-      final giftDoc = await transaction.get(giftRef);
-
-      if (!giftDoc.exists) {
-        throw Exception('Gift not found');
-      }
-
-      final gift = CoinGiftModel.fromFirestore(giftDoc);
-
-      if (gift.receiverId != userId) {
-        throw Exception('Not authorized to accept this gift');
-      }
-
-      if (gift.status != CoinGiftStatus.pending) {
-        throw Exception('Gift already processed');
-      }
-
-      // Credit coins to receiver (inline, no nested transaction)
-      await _creditInTransaction(
-        transaction,
-        userId: userId,
-        amount: gift.amount,
-        reason: CoinTransactionReason.giftReceived,
-        relatedUserId: gift.senderId,
-        metadata: {'fromUserId': gift.senderId},
-      );
-
-      // Update gift status
-      transaction.update(giftRef, {
-        'status': CoinGiftStatus.accepted.name,
-        'receivedAt': Timestamp.fromDate(DateTime.now()),
-      });
+    await functions.httpsCallable('acceptGift').call<Object?>(<String, dynamic>{
+      'giftId': giftId,
     });
   }
 
@@ -1393,4 +1288,113 @@ class CoinPurchaseResult {
   final int coinsAdded;
   final int newBalance;
   final bool alreadyProcessed;
+}
+
+/// Receipt of a server-side coin spend (`spendCoins`).
+class CoinSpendReceipt {
+  const CoinSpendReceipt({
+    required this.featureId,
+    required this.charged,
+    required this.newBalance,
+    this.transactionId,
+    this.alreadyProcessed = false,
+    this.effect = const <String, dynamic>{},
+  });
+
+  factory CoinSpendReceipt.fromMap(Map<String, dynamic> data) {
+    final effect = data['effect'];
+    return CoinSpendReceipt(
+      featureId: data['featureId'] as String? ?? '',
+      charged: (data['charged'] as num?)?.toInt() ?? 0,
+      newBalance: (data['newBalance'] as num?)?.toInt() ?? 0,
+      transactionId: data['transactionId'] as String?,
+      alreadyProcessed: data['alreadyProcessed'] as bool? ?? false,
+      effect: effect is Map
+          ? Map<String, dynamic>.from(effect)
+          : const <String, dynamic>{},
+    );
+  }
+
+  final String featureId;
+
+  /// Coins actually debited (0 for testers).
+  final int charged;
+  final int newBalance;
+
+  /// The `coinTransactions` doc id of the debit (null when nothing was charged).
+  final String? transactionId;
+  final bool alreadyProcessed;
+
+  /// Server-applied effect values, epoch millis (e.g. `boostExpiry`,
+  /// `incognitoExpiry`, `featuredUntil`, `businessPromotedUntil`).
+  final Map<String, dynamic> effect;
+
+  /// An effect timestamp as a [DateTime], or null.
+  DateTime? effectTime(String key) {
+    final v = effect[key];
+    return v is num ? DateTime.fromMillisecondsSinceEpoch(v.toInt()) : null;
+  }
+}
+
+/// Outcome of the `giftCoins` callable.
+class GiftCoinsResult {
+  const GiftCoinsResult({required this.senderNewBalance, this.giftId});
+  final String? giftId;
+  final int senderNewBalance;
+}
+
+/// A coin refusal the user should be told about in plain words.
+///
+/// [reason] is the server reason code: `insufficient-coins`,
+/// `gift-purchase-hold`, `gift-velocity-limit` or `unknown-feature`. The code
+/// is part of [toString] so it survives the repositories' string failures and
+/// is still recognised by `classifyUserError`.
+class CoinRefusalException implements Exception {
+  const CoinRefusalException(this.reason, [this.message]);
+
+  static const String insufficientCoins = 'insufficient-coins';
+  static const String giftPurchaseHold = 'gift-purchase-hold';
+  static const String giftVelocityLimit = 'gift-velocity-limit';
+  static const String unknownFeature = 'unknown-feature';
+
+  static const Set<String> knownReasons = {
+    insufficientCoins,
+    giftPurchaseHold,
+    giftVelocityLimit,
+    unknownFeature,
+  };
+
+  /// The refusal carried by a callable error, or null when it is not one.
+  static CoinRefusalException? fromFunctions(FirebaseFunctionsException e) {
+    final details = e.details;
+    String? reason;
+    if (details is Map && details['reason'] is String) {
+      reason = details['reason'] as String;
+    } else {
+      final msg = e.message ?? '';
+      for (final r in knownReasons) {
+        if (msg.startsWith(r)) reason = r;
+      }
+    }
+    if (reason == null || !knownReasons.contains(reason)) return null;
+    return CoinRefusalException(reason, e.message);
+  }
+
+  /// Refusal [reason] found in an error or failure text, or null.
+  static String? reasonIn(Object? error) {
+    if (error is CoinRefusalException) return error.reason;
+    final text = error?.toString() ?? '';
+    for (final r in knownReasons) {
+      if (text.contains(r)) return r;
+    }
+    return null;
+  }
+
+  final String reason;
+  final String? message;
+
+  bool get isInsufficientCoins => reason == insufficientCoins;
+
+  @override
+  String toString() => 'CoinRefusalException($reason): ${message ?? ''}';
 }

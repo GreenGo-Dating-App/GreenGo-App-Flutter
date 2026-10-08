@@ -280,6 +280,10 @@ export {
   claimReward,
   giftCoins,
   declineGift,
+  // Security P1-1 (C-03/H-11/H-12): server-authoritative spending + escrow gifts.
+  spendCoins,
+  sendGift,
+  acceptGift,
 } from './coins';
 
 // Coupon Redemption + Admin Management

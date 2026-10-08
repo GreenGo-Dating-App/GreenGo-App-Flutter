@@ -5,6 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/services/photo_validation_service.dart';
+import '../../../coins/data/datasources/coin_remote_datasource.dart'
+    show CoinRefusalException;
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../domain/usecases/create_profile.dart';
@@ -264,20 +266,37 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
         return;
       }
 
-      // Deduct coins
-      await coinRepository!.purchaseFeature(
+      // Pay AND activate in one server transaction (spendCoins sets
+      // isBoosted / boostExpiry, 30 minutes): no coins without a boost, and no
+      // boost without coins.
+      final spend = await coinRepository!.purchaseFeature(
         userId: event.userId,
         featureName: 'boost',
         cost: cost,
       );
-
-      // Activate boost on Firestore (30 minutes)
-      final firestore = FirebaseFirestore.instance;
-      final expiry = DateTime.now().add(const Duration(minutes: 30));
-      await firestore.collection('profiles').doc(event.userId).update({
-        'isBoosted': true,
-        'boostExpiry': Timestamp.fromDate(expiry),
-      });
+      DateTime? serverExpiry;
+      String? failure;
+      spend.fold(
+        (f) => failure = f.message,
+        (txn) {
+          final effect = txn.metadata?['effect'];
+          final ms = effect is Map ? effect['boostExpiry'] : null;
+          if (ms is num) {
+            serverExpiry = DateTime.fromMillisecondsSinceEpoch(ms.toInt());
+          }
+        },
+      );
+      if (failure != null) {
+        if (CoinRefusalException.reasonIn(failure) ==
+            CoinRefusalException.insufficientCoins) {
+          emit(ProfileBoostInsufficientCoins(required: cost, available: balance));
+          emit(ProfileLoaded(profile: profile));
+          return;
+        }
+        throw Exception(failure);
+      }
+      final expiry =
+          serverExpiry ?? DateTime.now().add(const Duration(minutes: 30));
 
       // Reload profile
       final updatedResult = await getProfile(GetProfileParams(userId: event.userId));

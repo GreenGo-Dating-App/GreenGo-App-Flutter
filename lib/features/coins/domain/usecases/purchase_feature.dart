@@ -15,12 +15,16 @@ class PurchaseFeature {
     required String featureName,
     required int cost,
     String? relatedId,
+    int? option,
+    String? requestId,
   }) async {
     return repository.purchaseFeature(
       userId: userId,
       featureName: featureName,
       cost: cost,
       relatedId: relatedId,
+      option: option,
+      requestId: requestId,
     );
   }
 }

@@ -24,7 +24,6 @@ import '../../../../core/services/translation_service.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/language_flags.dart';
 import '../../../coins/data/datasources/coin_remote_datasource.dart';
-import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../../core/widgets/voice_message_widget.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../events/presentation/widgets/event_message_card.dart';
@@ -1064,13 +1063,13 @@ class _TranslatableTextState extends State<_TranslatableText> {
         messenger.showSnackBar(SnackBar(content: Text(notEnoughMsg)));
         return;
       }
-      await coinDs.updateBalance(
-        userId: widget.currentUserId,
-        amount: 5,
-        type: CoinTransactionType.debit,
-        reason: CoinTransactionReason.featurePurchase,
-        metadata: const {'feature': 'tts_listen_group'},
-      );
+      // Server-priced debit (spendCoins 'tts_listen_group', 5 coins).
+      await coinDs.spendCoins(featureId: 'tts_listen_group');
+    } on CoinRefusalException catch (e) {
+      if (e.isInsufficientCoins) {
+        messenger.showSnackBar(SnackBar(content: Text(notEnoughMsg)));
+        return;
+      }
     } catch (_) {
       // Allow playback even if the coin deduction fails (e.g. emulator).
     }

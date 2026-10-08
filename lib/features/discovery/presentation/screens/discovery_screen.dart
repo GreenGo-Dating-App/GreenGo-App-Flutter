@@ -1683,11 +1683,17 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
       if (confirmed != true || !mounted) return;
 
-      await coinRepo.purchaseFeature(
+      final charge = await coinRepo.purchaseFeature(
         userId: userId,
         featureName: 'grid_view_more',
         cost: 10,
       );
+      if (!mounted) return;
+      final failure = charge.fold((f) => f, (_) => null);
+      if (failure != null) {
+        showUserError(context, failure);
+        return;
+      }
 
       if (mounted) {
         setState(() {

@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../../generated/app_localizations.dart';
+
 /// Coin Transaction Entity
 /// Point 159: Transaction history with earnings and spending
 class CoinTransaction extends Equatable {
@@ -104,6 +106,10 @@ enum CoinTransactionReason {
   featurePurchase,
   expired,
 
+  // Debits (store refund / chargeback takes the purchased coins back).
+  // Written server-side by purchaseClawback / Stripe refunds as 'refundClawback'.
+  refundClawback,
+
   // Admin
   adminAdjustment,
 }
@@ -168,6 +174,8 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
       // Other
       case CoinTransactionReason.expired:
         return 'Coins Expired';
+      case CoinTransactionReason.refundClawback:
+        return 'Refunded Purchase Reversed';
 
       // Admin
       case CoinTransactionReason.adminAdjustment:
@@ -237,10 +245,23 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
 
       case CoinTransactionReason.expired:
         return '$amount coins expired.';
+      case CoinTransactionReason.refundClawback:
+        return '$amount coins removed: the purchase was refunded.';
 
       case CoinTransactionReason.adminAdjustment:
         final reason = metadata?['reason'] ?? 'adjustment';
         return 'Admin adjustment: $amount coins ($reason).';
+    }
+  }
+
+  /// Localized label for UI. Only reasons with a translation key use it;
+  /// the rest fall back to [displayName].
+  String localizedDisplayName(AppLocalizations l10n) {
+    switch (this) {
+      case CoinTransactionReason.refundClawback:
+        return l10n.coinReasonRefundClawback;
+      default:
+        return displayName;
     }
   }
 

@@ -256,12 +256,19 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
             return;
           }
 
-          // Deduct coins
-          await coinRepository.purchaseFeature(
+          // Deduct coins (server-priced). A refused charge stops here instead
+          // of opening the conversation for free.
+          final charge = await coinRepository.purchaseFeature(
             userId: widget.currentUserId,
             featureName: 'direct_message',
             cost: CoinFeaturePrices.directMessage,
           );
+          if (!mounted) return;
+          if (charge.isLeft()) {
+            setState(() => _isSearching = false);
+            _showInsufficientCoinsDialog();
+            return;
+          }
         }
       }
 
@@ -421,11 +428,16 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
               return;
             }
 
-            await coinRepository.purchaseFeature(
+            final charge = await coinRepository.purchaseFeature(
               userId: widget.currentUserId,
               featureName: 'superlike',
               cost: CoinFeaturePrices.superLike,
             );
+            if (charge.isLeft()) {
+              if (!mounted) return;
+              _showInsufficientCoinsDialog();
+              return;
+            }
           }
         }
       }

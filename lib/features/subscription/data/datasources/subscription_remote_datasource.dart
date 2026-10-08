@@ -19,10 +19,17 @@ class SubscriptionRemoteDataSource {
     required this.firestore,
     required this.inAppPurchase,
     FirebaseFunctions? functions,
+    this.verifyAndFinish,
   }) : functions = functions ?? FirebaseFunctions.instance;
   final FirebaseFirestore firestore;
   final InAppPurchase inAppPurchase;
   final FirebaseFunctions functions;
+
+  /// Server verification + grant + acknowledge for a purchase seen during
+  /// restore (wired to [PurchaseRecoveryService.recoverPurchase]). When null,
+  /// restored purchases are left unfinished for the app-wide recovery
+  /// listener instead of being acknowledged unverified (audit M-13).
+  final Future<void> Function(PurchaseDetails purchase)? verifyAndFinish;
 
     // Product IDs for one-time membership purchases
   static const String baseMembershipProductId = 'greengo_base_membership';
@@ -130,13 +137,20 @@ class SubscriptionRemoteDataSource {
       subscription = purchaseStream.listen(
         (purchases) {
           for (final purchase in purchases) {
-            if (purchase.status == PurchaseStatus.restored || 
+            if (purchase.status == PurchaseStatus.restored ||
                 purchase.status == PurchaseStatus.purchased) {
               restoredPurchases.add(purchase);
-              
-              // Complete purchase to clear it from queue
-              if (purchase.pendingCompletePurchase) {
-                inAppPurchase.completePurchase(purchase);
+
+              // Security audit M-13: never acknowledge a receipt here. A
+              // fresh `purchased` item can arrive on this stream; completing
+              // it unverified told the store it was delivered while nothing
+              // was granted. Route it through server verification, which
+              // acknowledges only after the grant succeeded.
+              final verify = verifyAndFinish;
+              if (verify != null) {
+                unawaited(verify(purchase).catchError((Object e) {
+                  debugPrint('Restore: verification failed for ${purchase.productID}: $e');
+                }));
               }
             }
           }

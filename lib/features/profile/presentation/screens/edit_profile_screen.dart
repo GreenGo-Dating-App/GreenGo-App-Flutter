@@ -2040,21 +2040,16 @@ class EditProfileScreen extends StatelessWidget {
             return;
           }
 
-          // Deduct coins
-          await coinRepository.purchaseFeature(
+          // Pay AND activate (24h) in one server transaction: spendCoins
+          // writes isIncognito / incognitoExpiry itself.
+          final spend = await coinRepository.purchaseFeature(
             userId: profile.userId,
             featureName: 'incognito',
             cost: CoinFeaturePrices.incognito,
           );
+          spend.fold((failure) => throw failure, (_) {});
 
           if (!context.mounted) return;
-
-          // Update profile with 24h expiry
-          final expiry = DateTime.now().add(const Duration(hours: 24));
-          await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
-            'isIncognito': true,
-            'incognitoExpiry': Timestamp.fromDate(expiry),
-          });
 
           if (context.mounted) {
             context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
@@ -2183,12 +2178,13 @@ class EditProfileScreen extends StatelessWidget {
           return;
         }
 
-        // Deduct coins
-        await coinRepository.purchaseFeature(
+        // Pay on the server; the destination is picked next.
+        final spend = await coinRepository.purchaseFeature(
           userId: profile.userId,
           featureName: 'traveler',
           cost: CoinFeaturePrices.traveler,
         );
+        spend.fold((failure) => throw failure, (_) {});
       } catch (e) {
         if (context.mounted) {
           showUserError(context, e);

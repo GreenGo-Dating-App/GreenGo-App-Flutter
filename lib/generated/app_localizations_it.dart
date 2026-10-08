@@ -16237,4 +16237,15 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Quell\'orario non è disponibile in questa data.';
+
+  @override
+  String get coinsGiftPurchaseHold =>
+      'Le monete acquistate nelle ultime 72 ore non possono ancora essere regalate. Puoi comunque usarle per le funzioni.';
+
+  @override
+  String get coinsGiftDailyLimit =>
+      'Hai raggiunto il limite di regali di oggi (10 regali o 5.000 monete). Riprova domani.';
+
+  @override
+  String get coinReasonRefundClawback => 'Acquisto rimborsato stornato';
 }
