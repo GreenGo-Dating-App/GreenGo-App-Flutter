@@ -136,3 +136,18 @@ __pycache__/
 firebase_options_dev.dart
 lib/firebase_options_dev.dart
 firestore.rules.rollback
+
+# --- Security (2026-10 audit): never commit build output or credentials ---
+functions/lib/
+.runtimeconfig.json
+**/.runtimeconfig.json
+*-firebase-adminsdk-*.json
+serviceAccountKey.json
+service-account*.json
+*.p12
+*.p8
+*.pem
+!android/upload_certificate.pem
+*.jks
+*.keystore
+key.properties

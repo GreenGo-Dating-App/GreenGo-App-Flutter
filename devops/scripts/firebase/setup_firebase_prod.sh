@@ -373,12 +373,12 @@ fi
 # Deploy Firestore rules and indexes
 print_header "Deploying Firestore Configuration"
 print_msg "$YELLOW" "Deploying to PRODUCTION..."
-firebase deploy --only firestore:rules,firestore:indexes --project "$PROJECT_ID" --config firebase.prod.json
+print_msg "$RED" "Refusing to deploy rules from this script. Rules deploy ONLY from the repo-root firebase.json after the security emulator suites pass (see functions/__tests__/security)."; exit 1
 print_msg "$GREEN" "✓ Firestore rules and indexes deployed"
 
 # Deploy Storage rules
 print_header "Deploying Storage Configuration"
-firebase deploy --only storage:rules --project "$PROJECT_ID" --config firebase.prod.json
+true # storage rules: see note above
 print_msg "$GREEN" "✓ Storage rules deployed"
 
 # Enable Authentication methods
