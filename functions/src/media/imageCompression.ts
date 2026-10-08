@@ -198,7 +198,7 @@ export const compressUploadedImage = functions
 /**
  * HTTP function to manually compress an image
  */
-export const compressImage = functions.https.onCall(monitored("compressImage", async (data, context) => {
+export const compressImage = functions.runWith({ memory: '512MB' }).https.onCall(monitored("compressImage", async (data, context) => {
   // Verify authentication
   if (!context.auth) {
     throw new functions.https.HttpsError(

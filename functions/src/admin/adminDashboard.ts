@@ -55,7 +55,7 @@ async function logAdminAction(
  * Get User Activity Metrics
  * Point 228: Real-time user activity
  */
-export const getUserActivityMetrics = functions.https.onCall(monitored("getUserActivityMetrics", async (data, context) => {
+export const getUserActivityMetrics = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getUserActivityMetrics", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   try {
@@ -165,7 +165,7 @@ export const getUserActivityMetrics = functions.https.onCall(monitored("getUserA
  * Get User Growth Chart
  * Point 229: User growth visualization
  */
-export const getUserGrowthChart = functions.https.onCall(monitored("getUserGrowthChart", async (data, context) => {
+export const getUserGrowthChart = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getUserGrowthChart", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   const { period = 'daily', days = 30 } = data;
@@ -241,7 +241,7 @@ export const getUserGrowthChart = functions.https.onCall(monitored("getUserGrowt
  * Get Revenue Metrics
  * Point 230: Revenue dashboard
  */
-export const getRevenueMetrics = functions.https.onCall(monitored("getRevenueMetrics", async (data, context) => {
+export const getRevenueMetrics = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getRevenueMetrics", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   try {
@@ -394,7 +394,7 @@ async function calculateRevenueForPeriod(startDate: Date, endDate: Date): Promis
  * Get Engagement Metrics
  * Point 231: Engagement dashboard
  */
-export const getEngagementMetrics = functions.https.onCall(monitored("getEngagementMetrics", async (data, context) => {
+export const getEngagementMetrics = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getEngagementMetrics", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   try {
@@ -507,7 +507,7 @@ export const getEngagementMetrics = functions.https.onCall(monitored("getEngagem
  * Get Geographic Heatmap
  * Point 232: User distribution map
  */
-export const getGeographicHeatmap = functions.https.onCall(monitored("getGeographicHeatmap", async (data, context) => {
+export const getGeographicHeatmap = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getGeographicHeatmap", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   try {
@@ -575,7 +575,7 @@ export const getGeographicHeatmap = functions.https.onCall(monitored("getGeograp
  * Get System Health Metrics
  * Point 233: System monitoring
  */
-export const getSystemHealthMetrics = functions.https.onCall(monitored("getSystemHealthMetrics", async (data, context) => {
+export const getSystemHealthMetrics = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getSystemHealthMetrics", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   try {
@@ -682,7 +682,7 @@ export const getSystemHealthMetrics = functions.https.onCall(monitored("getSyste
  * Create System Alert
  * Point 234: Alert creation and management
  */
-export const createSystemAlert = functions.https.onCall(monitored("createSystemAlert", async (data, context) => {
+export const createSystemAlert = functions.runWith({ memory: '512MB' }).https.onCall(monitored("createSystemAlert", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   const { title, description, type, severity, metadata = {} } = data;
@@ -716,7 +716,7 @@ export const createSystemAlert = functions.https.onCall(monitored("createSystemA
  * Resolve System Alert
  * Point 234: Alert resolution
  */
-export const resolveSystemAlert = functions.https.onCall(monitored("resolveSystemAlert", async (data, context) => {
+export const resolveSystemAlert = functions.runWith({ memory: '512MB' }).https.onCall(monitored("resolveSystemAlert", async (data, context) => {
   await verifyAdminPermission(context, 'viewDashboard');
 
   const { alertId } = data;

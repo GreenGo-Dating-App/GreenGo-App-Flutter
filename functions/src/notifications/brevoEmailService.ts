@@ -2376,7 +2376,7 @@ export const sendBrevoStreakReminder = onSchedule(
   {
     schedule: '0 20 * * *',
     timeZone: 'UTC',
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 300,
   },
   monitored("sendBrevoStreakReminder", async () => {

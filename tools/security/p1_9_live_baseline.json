@@ -1,0 +1,590 @@
+{
+ "acceptHostAgreement": {
+  "liveSha1": "83083fc393795b69ac78a6a44112ff8d717e94ce",
+  "memoryMb": 512,
+  "module": "src/user_experiences/safetyCallables.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "83f8c4981f95dd4821e1582f6f2657669e7f6bed"
+ },
+ "adminBulkDeleteUsers": {
+  "liveSha1": "3bf72c8fa037bdd64f89cd8c47115166d7efa34a",
+  "memoryMb": 512,
+  "module": "src/admin/userManagement.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "autoBackupConversations": {
+  "liveSha1": "851ce80639948e8c06d1b770323b6f14a32e14e8",
+  "memoryMb": 256,
+  "module": "src/backup/conversationBackup.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "backfillFollowCounts": {
+  "liveSha1": "49da86bab987ad4dea14b79ca0405e3bb36342cb",
+  "memoryMb": 512,
+  "module": "src/social/follows.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "04eb7c7065c478d03ebadb1d53f4f74c36dc9123"
+ },
+ "backupConversation": {
+  "liveSha1": "851ce80639948e8c06d1b770323b6f14a32e14e8",
+  "memoryMb": 256,
+  "module": "src/backup/conversationBackup.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "calculateTrustScore": {
+  "liveSha1": "959df831e4811d6f22c82f1cbc21395de941166c",
+  "memoryMb": 256,
+  "module": "src/safety/identityVerification.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "checkExpiringMemberships": {
+  "liveSha1": "69667f63907d1879aa8418d2ab8613d07e8d4df9",
+  "memoryMb": 512,
+  "module": "src/subscription/index.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "a2342e2f46de3e8e194dcb48a57861e03bfd0dc5"
+ },
+ "checkExpiringModes": {
+  "liveSha1": "ecfa9464955f494f400480d06d57ca82e582d326",
+  "memoryMb": 512,
+  "module": "src/notifications/pushNotificationTriggers.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "8453009d5c1d3e377bacded49c7f6151d0a6400a"
+ },
+ "claimChallengeReward": {
+  "liveSha1": "b734d7f09a9310110eb5fe0883c3925dd9e57d79",
+  "memoryMb": 256,
+  "module": "src/gamification/gamificationManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "claimLevelRewards": {
+  "liveSha1": "b734d7f09a9310110eb5fe0883c3925dd9e57d79",
+  "memoryMb": 256,
+  "module": "src/gamification/gamificationManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "claimReward": {
+  "liveSha1": "8b4465d9966db508f4c53002ecdecb21759e3173",
+  "memoryMb": 512,
+  "module": "src/coins/coinManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "cleanupDisappearingMedia": {
+  "liveSha1": "ae69f30053ff497cc0f82354d813db28a1a8622d",
+  "memoryMb": 256,
+  "module": "src/media/disappearingMedia.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "cleanupStalePresence": {
+  "liveSha1": "7414b2282dd7f1cf65591fccd3ef4eea9ffde85b",
+  "memoryMb": 256,
+  "module": "src/presence/cleanupStalePresence.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "compressImage": {
+  "liveSha1": "29ec761cc7013b2e3e0353c8fec1c7ae71add203",
+  "memoryMb": 256,
+  "module": "src/media/imageCompression.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "compressUploadedImage": {
+  "liveSha1": "29ec761cc7013b2e3e0353c8fec1c7ae71add203",
+  "memoryMb": 256,
+  "module": "src/media/imageCompression.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "computeDailyUserStats": {
+  "liveSha1": "4fa295aa587390103b6fadb8c586b7bba90521d2",
+  "memoryMb": 1024,
+  "module": "src/gamification/index.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "createAdminUser": {
+  "liveSha1": "345403b48791715149b6cbb802dcd927e8d6e8e1",
+  "memoryMb": 256,
+  "module": "src/admin/roleManagement.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "createLesson": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "createSystemAlert": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "deactivateAdminUser": {
+  "liveSha1": "345403b48791715149b6cbb802dcd927e8d6e8e1",
+  "memoryMb": 256,
+  "module": "src/admin/roleManagement.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "deleteBackup": {
+  "liveSha1": "851ce80639948e8c06d1b770323b6f14a32e14e8",
+  "memoryMb": 256,
+  "module": "src/backup/conversationBackup.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "deleteLesson": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getAdminAuditLog": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getAdminLessons": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getCandidatePoolStats": {
+  "liveSha1": "d1645e67313cd8d959818aee8224ed18e5886b48",
+  "memoryMb": 256,
+  "module": "src/discovery/candidatePoolPrecompute.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getCouponRedemptions": {
+  "liveSha1": "607025b83acc4972e2c0972f358c553ac60be98b",
+  "memoryMb": 512,
+  "module": "src/coupons/adminCoupons.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "20505b12c6e3c70e918ddbd352707c6b246912be"
+ },
+ "getEngagementMetrics": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getGeographicHeatmap": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getLearningAnalytics": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getLessonStats": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getNotificationAnalytics": {
+  "liveSha1": "c1d537dbd74d1354bd4eb3f81cb349c57964208e",
+  "memoryMb": 256,
+  "module": "src/notifications/pushNotifications.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "69e1f23470d3698ade2b973825656ec93dc2a5a5"
+ },
+ "getRevenueMetrics": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getSystemHealthMetrics": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getTeacherAnalytics": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getUserActivityMetrics": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getUserGrowthChart": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "getUserProgressReport": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "listBackups": {
+  "liveSha1": "851ce80639948e8c06d1b770323b6f14a32e14e8",
+  "memoryMb": 256,
+  "module": "src/backup/conversationBackup.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "listCoupons": {
+  "liveSha1": "d099ae9260a754caf2d50865800ae46aa246a521",
+  "memoryMb": 512,
+  "module": "src/coupons/adminCoupons.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "20f0b9d2af70529a34e53885c0eb219158c65357"
+ },
+ "markMediaAsDisappearing": {
+  "liveSha1": "ae69f30053ff497cc0f82354d813db28a1a8622d",
+  "memoryMb": 256,
+  "module": "src/media/disappearingMedia.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "onAchievementUnlocked": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 256,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "onEventWriteUpdateCountryStats": {
+  "liveSha1": "c75076d57d3904f3ddaa7a4b83333fb2435e31d5",
+  "memoryMb": 256,
+  "module": "src/events/country_aggregate.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "b29fbf5f99875fc1f02726b299aef3f8c49138f6"
+ },
+ "onExperienceReportCreated": {
+  "liveSha1": "83083fc393795b69ac78a6a44112ff8d717e94ce",
+  "memoryMb": 512,
+  "module": "src/user_experiences/safetyCallables.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "83f8c4981f95dd4821e1582f6f2657669e7f6bed"
+ },
+ "onGroupCreated": {
+  "liveSha1": "dc3c0b559f132c26e94eca2ddc466f15d5f92e0c",
+  "memoryMb": 256,
+  "module": "src/group_chat/membership.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "69e1f23470d3698ade2b973825656ec93dc2a5a5"
+ },
+ "onGroupInfoChanged": {
+  "liveSha1": "dc3c0b559f132c26e94eca2ddc466f15d5f92e0c",
+  "memoryMb": 256,
+  "module": "src/group_chat/membership.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "69e1f23470d3698ade2b973825656ec93dc2a5a5"
+ },
+ "onPhotoModerationUpdated": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 256,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "onPresenceUpdate": {
+  "liveSha1": "5cab57ea42eb85296a623788f80c843131d86008",
+  "memoryMb": 256,
+  "module": "src/presence/onPresenceUpdate.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "onPurchaseCreated": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 256,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "onSubscriptionUpdated": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 256,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "onSupportMessagePush": {
+  "liveSha1": "ecfa9464955f494f400480d06d57ca82e582d326",
+  "memoryMb": 512,
+  "module": "src/notifications/pushNotificationTriggers.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "8453009d5c1d3e377bacded49c7f6151d0a6400a"
+ },
+ "onUserCreatedSendWelcome": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 256,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "onVerificationStatusChange": {
+  "liveSha1": "ecfa9464955f494f400480d06d57ca82e582d326",
+  "memoryMb": 512,
+  "module": "src/notifications/pushNotificationTriggers.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "8453009d5c1d3e377bacded49c7f6151d0a6400a"
+ },
+ "precomputeCandidatePools": {
+  "liveSha1": "d1645e67313cd8d959818aee8224ed18e5886b48",
+  "memoryMb": 1024,
+  "module": "src/discovery/candidatePoolPrecompute.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "publishLesson": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "purchaseLesson": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "recordAdminLogin": {
+  "liveSha1": "345403b48791715149b6cbb802dcd927e8d6e8e1",
+  "memoryMb": 256,
+  "module": "src/admin/roleManagement.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "resetDailyChallenges": {
+  "liveSha1": "b734d7f09a9310110eb5fe0883c3925dd9e57d79",
+  "memoryMb": 256,
+  "module": "src/gamification/gamificationManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "resolveSystemAlert": {
+  "liveSha1": "6f864b6b44ab9969c6ab8cdad30e6ace732e1c7a",
+  "memoryMb": 256,
+  "module": "src/admin/adminDashboard.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "restoreConversation": {
+  "liveSha1": "851ce80639948e8c06d1b770323b6f14a32e14e8",
+  "memoryMb": 256,
+  "module": "src/backup/conversationBackup.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "reviewTeacherApplication": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "runBackfillGeohashNow": {
+  "liveSha1": "5e93c56312a1208053173b5d975dfd637908d3ba",
+  "memoryMb": 512,
+  "module": "src/external_events/geohash.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "84d0f9f74d6cbd9c1c3be04634d103e251bc413b"
+ },
+ "runBackfillViatorCategoriesNow": {
+  "liveSha1": "4fe9b81b3d4fbbccd84be65731a4e375a760f209",
+  "memoryMb": 512,
+  "module": "src/external_events/ingest.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "1a0b5071fb7f64467a328603986735584c614214"
+ },
+ "runBuildExternalIndexNow": {
+  "liveSha1": "421246d3377755b4f5f79fb65277e0e591db50a1",
+  "memoryMb": 512,
+  "module": "src/external_events/build_index.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "35745139ca0637d34d1dc1c972507db49f612f6b"
+ },
+ "runCleanupNoImageNow": {
+  "liveSha1": "d9b90cca07048fb44a531a26dd8e2a35070ad032",
+  "memoryMb": 512,
+  "module": "src/external_events/ingest.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "3fcaba00dd0a4a16bb3a865ce84aac8948b7889c"
+ },
+ "seedLessons": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "sendBrevoReEngagement": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 512,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "sendBrevoStreakReminder": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 256,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "sendBrevoWeeklyDigest": {
+  "liveSha1": "d255c8093df23b0e0001ca46c59d02987b35ce3b",
+  "memoryMb": 512,
+  "module": "src/notifications/brevoEmailService.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "sendScheduledMessages": {
+  "liveSha1": "bd053414eb798c3530b4f299489406dbc0b53d79",
+  "memoryMb": 256,
+  "module": "src/messaging/scheduledMessages.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "startPhotoVerification": {
+  "liveSha1": "959df831e4811d6f22c82f1cbc21395de941166c",
+  "memoryMb": 256,
+  "module": "src/safety/identityVerification.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "submitTeacherApplication": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "trackAchievementProgress": {
+  "liveSha1": "b734d7f09a9310110eb5fe0883c3925dd9e57d79",
+  "memoryMb": 256,
+  "module": "src/gamification/gamificationManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "trackChallengeProgress": {
+  "liveSha1": "b734d7f09a9310110eb5fe0883c3925dd9e57d79",
+  "memoryMb": 256,
+  "module": "src/gamification/gamificationManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "trackNotificationOpened": {
+  "liveSha1": "c1d537dbd74d1354bd4eb3f81cb349c57964208e",
+  "memoryMb": 256,
+  "module": "src/notifications/pushNotifications.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "69e1f23470d3698ade2b973825656ec93dc2a5a5"
+ },
+ "triggerPoolRecompute": {
+  "liveSha1": "d1645e67313cd8d959818aee8224ed18e5886b48",
+  "memoryMb": 1024,
+  "module": "src/discovery/candidatePoolPrecompute.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "unlockAchievementReward": {
+  "liveSha1": "b734d7f09a9310110eb5fe0883c3925dd9e57d79",
+  "memoryMb": 256,
+  "module": "src/gamification/gamificationManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "updateAdminPermissions": {
+  "liveSha1": "345403b48791715149b6cbb802dcd927e8d6e8e1",
+  "memoryMb": 256,
+  "module": "src/admin/roleManagement.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "updateAdminRole": {
+  "liveSha1": "345403b48791715149b6cbb802dcd927e8d6e8e1",
+  "memoryMb": 256,
+  "module": "src/admin/roleManagement.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "updateLeaderboardRankings": {
+  "liveSha1": "b734d7f09a9310110eb5fe0883c3925dd9e57d79",
+  "memoryMb": 256,
+  "module": "src/gamification/gamificationManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "updateLesson": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "updateLessonProgress": {
+  "liveSha1": "fad0871c2ea4396613c9fe1130b136f860a945d5",
+  "memoryMb": 256,
+  "module": "src/language_learning/languageLearningManager.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "upsertCoupon": {
+  "liveSha1": "607025b83acc4972e2c0972f358c553ac60be98b",
+  "memoryMb": 512,
+  "module": "src/coupons/adminCoupons.ts",
+  "platform": "gcfv2",
+  "srcTreeSha1": "20505b12c6e3c70e918ddbd352707c6b246912be"
+ },
+ "verifyIDDocument": {
+  "liveSha1": "959df831e4811d6f22c82f1cbc21395de941166c",
+  "memoryMb": 256,
+  "module": "src/safety/identityVerification.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ },
+ "verifyPhotoSelfie": {
+  "liveSha1": "959df831e4811d6f22c82f1cbc21395de941166c",
+  "memoryMb": 256,
+  "module": "src/safety/identityVerification.ts",
+  "platform": "gcfv1",
+  "srcTreeSha1": "ad3ce3b0093705229b0e31a74d374fdfa06867de"
+ }
+}

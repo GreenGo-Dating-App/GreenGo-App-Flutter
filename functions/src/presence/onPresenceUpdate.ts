@@ -78,7 +78,9 @@ async function reverseGeocode(lat: number, lng: number): Promise<GeocodingResult
 export const onPresenceUpdate = onDocumentUpdated(
   {
     document: 'profiles/{userId}',
-    memory: '256MiB',
+    // 256MiB was OOM-killed in production (index.js needs ~200MB just to load);
+    // every profiles/{uid} update fires this, so OOMs dropped events at scale.
+    memory: '512MiB',
     timeoutSeconds: 30,
   },
   monitored("onPresenceUpdate", async (event) => {

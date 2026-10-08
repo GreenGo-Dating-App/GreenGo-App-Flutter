@@ -12,7 +12,10 @@ const firestore = admin.firestore();
 /**
  * Scheduled function that runs every minute to send scheduled messages
  */
-export const sendScheduledMessages = functions.pubsub
+export const sendScheduledMessages = functions
+  // 512MB: the bundled index.js needs ~200MB to load; 256MB OOMs on cold start.
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('every 1 minutes')
   .onRun(monitored("sendScheduledMessages", async (context) => {
     console.log('Checking for scheduled messages to send...');

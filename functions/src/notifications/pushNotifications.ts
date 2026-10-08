@@ -394,7 +394,7 @@ function getDeepLinkForType(type: string): string {
  * Track Notification Analytics
  * Point 279: Notification analytics
  */
-export const trackNotificationOpened = functions.https.onCall(monitored("trackNotificationOpened", async (data, context) => {
+export const trackNotificationOpened = functions.runWith({ memory: '512MB' }).https.onCall(monitored("trackNotificationOpened", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -436,7 +436,7 @@ export const trackNotificationOpened = functions.https.onCall(monitored("trackNo
  * Get Notification Analytics
  * Point 279: Analytics summary
  */
-export const getNotificationAnalytics = functions.https.onCall(monitored("getNotificationAnalytics", async (data, context) => {
+export const getNotificationAnalytics = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getNotificationAnalytics", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
