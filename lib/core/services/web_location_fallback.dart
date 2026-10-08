@@ -36,9 +36,13 @@ class WebLocationFallback {
     double longitude,
   ) async {
     try {
+      // Only a city is wanted (zoom=10), so the third-party geocoder gets the
+      // position rounded to ~1 km, never the exact browser fix (security P1-4:
+      // exact coordinates stay in profiles_private).
       final uri = Uri.parse(
         'https://nominatim.openstreetmap.org/reverse'
-        '?format=jsonv2&lat=$latitude&lon=$longitude'
+        '?format=jsonv2&lat=${coarseCoordinate(latitude)}'
+        '&lon=${coarseCoordinate(longitude)}'
         '&zoom=10&addressdetails=1',
       );
       final resp = await http
@@ -70,6 +74,9 @@ class WebLocationFallback {
       return null;
     }
   }
+
+  /// [value] rounded to 2 decimals (~1.1 km), as sent to Nominatim.
+  static String coarseCoordinate(double value) => value.toStringAsFixed(2);
 
   /// Forward-geocode a free-text place ([query]: a venue, street address or
   /// city) into coordinates + city/country via Nominatim search.

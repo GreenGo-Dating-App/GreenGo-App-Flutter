@@ -2242,7 +2242,8 @@ class EditProfileScreen extends StatelessWidget {
         'travelerLocation': {
           'city': location.city,
           'country': location.country,
-          'displayAddress': location.displayAddress,
+          'displayAddress': publicDisplayAddress(location.displayAddress,
+              city: location.city, country: location.country),
         },
       });
     await writePrivateProfile(

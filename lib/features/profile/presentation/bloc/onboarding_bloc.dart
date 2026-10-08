@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/error/failures.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../domain/entities/profile.dart';
 import '../../domain/usecases/create_profile.dart';
@@ -160,12 +161,19 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
       emit(currentState.copyWith(isUploading: true));
 
       final uploadResult = await uploadPhoto(
-        UploadPhotoParams(userId: currentState.userId, photo: event.photo),
+        UploadPhotoParams(
+          userId: currentState.userId,
+          photo: event.photo,
+          // The first photo is the main one and must show a face. On web the
+          // on-device check above cannot run, so the server moderation
+          // (requireFace) is the only enforcement - same rule as ProfileBloc.
+          requireFace: isFirstPhoto,
+        ),
       );
 
       uploadResult.fold(
         (failure) {
-          emit(OnboardingError(message: failure.message));
+          emit(OnboardingError(message: _photoFailureMessage(failure)));
           emit(currentState.copyWith(isUploading: false));
         },
         (photoUrl) {
@@ -407,4 +415,20 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     }
   }
 
+}
+
+/// A server moderation rejection (the only check on web) as the same
+/// `photo_validation:<code>` the on-device check emits, so the photo step
+/// shows its localized rejection dialog instead of a raw code.
+String _photoFailureMessage(Failure failure) {
+  if (failure is PhotoRejectedFailure) {
+    if (failure.reasons.contains('no_face')) {
+      return 'photo_validation:mainNoFace';
+    }
+    if (failure.reasons.any(
+        (r) => r == 'adult' || r == 'racy' || r == 'violence')) {
+      return 'photo_validation:explicitContent';
+    }
+  }
+  return failure.message;
 }

@@ -169,6 +169,33 @@ int ageFromDateOfBirth(DateTime dob, {DateTime? now}) {
   return age;
 }
 
+/// A coordinate pair as the location pickers print it when no place name
+/// resolved ("45.4642, 9.1900", "(45.46, 9.19)"): two decimals or more.
+final RegExp _coordinatePair = RegExp(
+    r'\(?\s*-?\d{1,3}\.\d{2,}\s*,\s*-?\d{1,3}\.\d{2,}\s*\)?');
+
+/// [displayAddress] safe for the PUBLIC profile: a label that embeds exact
+/// coordinates (the web browser-location fallback when Nominatim fails, or
+/// the traveller picker when the address can't be resolved) would publish
+/// the very position profiles_private hides. Such a label is replaced by
+/// "city, country" (or whatever is left once the numbers are removed).
+String publicDisplayAddress(String? displayAddress,
+    {String? city, String? country}) {
+  final raw = displayAddress ?? '';
+  if (!_coordinatePair.hasMatch(raw)) return raw;
+  final place = [city, country]
+      .whereType<String>()
+      .map((s) => s.trim())
+      .where((s) => s.isNotEmpty)
+      .join(', ');
+  if (place.isNotEmpty) return place;
+  return raw
+      .replaceAll(_coordinatePair, '')
+      .split(RegExp(r'(^|\s+)[—-]\s+'))
+      .first
+      .replaceAll(RegExp(r'^[\s,;—-]+|[\s,;—-]+$'), '');
+}
+
 /// The public map without any sensitive value: top-level sensitive fields are
 /// removed and `location` / `travelerLocation` lose their coordinates.
 ///
@@ -192,6 +219,12 @@ Map<String, dynamic> publicSafeProfileJson(Map<String, dynamic> json,
     final stripped = Map<String, dynamic>.from(v)
       ..remove('latitude')
       ..remove('longitude');
+    final label = stripped['displayAddress'];
+    if (label is String) {
+      stripped['displayAddress'] = publicDisplayAddress(label,
+          city: stripped['city'] as String?,
+          country: stripped['country'] as String?);
+    }
     if (forUpdate) {
       out.remove(key);
       stripped.forEach((k, val) => out['$key.$k'] = val);
