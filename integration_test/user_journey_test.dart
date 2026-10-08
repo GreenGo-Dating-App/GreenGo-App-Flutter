@@ -18,9 +18,10 @@ void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   // Test credentials
-  const validEmail = 'mauro.tommasi@live.it';
-  const validPassword = 'Bb4649dgurs???';
-  const wrongPassword = 'wrongpassword123';
+  // Provide with --dart-define=E2E_EMAIL=... --dart-define=E2E_PASSWORD=... (never commit real credentials)
+  const validEmail = String.fromEnvironment('E2E_EMAIL');
+  const validPassword = String.fromEnvironment('E2E_PASSWORD');
+  const wrongPassword = 'Definitely-Wrong-Passw0rd!';
   const invalidEmail = 'notanemail';
 
   group('Real User Journey Tests', () {

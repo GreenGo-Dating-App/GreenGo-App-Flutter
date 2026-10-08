@@ -12,7 +12,8 @@ admin.initializeApp({ credential: admin.credential.cert(sa) });
 const db = admin.firestore();
 const auth = admin.auth();
 
-const PASSWORD = 'GreenGoTest!2026';
+const PASSWORD = process.env.QA_PASSWORD; // never commit real passwords
+if (!PASSWORD) { console.error('Set QA_PASSWORD'); process.exit(1); }
 const A = { email: 'qa.translate.a@greengo-test.local', name: 'QA Alice', nick: 'qa_alice' };
 const B = { email: 'qa.translate.b@greengo-test.local', name: 'QA Bruno', nick: 'qa_bruno' };
 
