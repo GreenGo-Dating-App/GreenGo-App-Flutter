@@ -213,6 +213,31 @@ class BookingsRemoteDataSource {
 
   // ───────────────────────────────────────────────────────────── bookings
 
+  /// The start times of a window, free / taken (server-computed: the host's
+  /// bookings on ALL their experiences count; identities never returned).
+  Future<SlotAvailability> slotAvailability(
+      String experienceId, String slotId) async {
+    final m = bookingMap(await _call('getSlotAvailability',
+            {'experienceId': experienceId, 'slotId': slotId})) ??
+        const {};
+    final raw = m['starts'];
+    final times = <SlotTime>[];
+    if (raw is List) {
+      for (final x in raw) {
+        if (x is! Map) continue;
+        final st = DateTime.tryParse('${x['start']}');
+        final en = DateTime.tryParse('${x['end']}');
+        if (st == null || en == null) continue;
+        times.add(SlotTime(start: st, end: en, free: x['free'] == true));
+      }
+    }
+    return SlotAvailability(
+      slotId: slotId,
+      lengthMinutes: (m['lengthMinutes'] as num?)?.toInt() ?? 0,
+      times: times,
+    );
+  }
+
   Future<Booking> createBooking({
     required UserExperience experience,
     required String slotId,
@@ -220,10 +245,12 @@ class BookingsRemoteDataSource {
     required String requestId,
     PaymentMethod? method,
     required int consentVersion,
+    DateTime? startAt,
   }) async {
     final data = await _call('createBooking', {
       'experienceId': experience.id,
       'slotId': slotId,
+      if (startAt != null) 'startAt': startAt.toUtc().toIso8601String(),
       'guests': guests,
       'requestId': requestId,
       if (method != null) 'paymentMethod': method.name,

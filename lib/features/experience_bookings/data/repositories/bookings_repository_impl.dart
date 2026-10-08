@@ -61,6 +61,11 @@ class BookingsRepositoryImpl implements BookingsRepository {
       _guard(() => _remote.cancelSlot(experienceId, slotId, reason: reason));
 
   @override
+  Future<Either<Failure, SlotAvailability>> slotAvailability(
+          String experienceId, String slotId) =>
+      _guard(() => _remote.slotAvailability(experienceId, slotId));
+
+  @override
   Future<Either<Failure, Booking>> createBooking({
     required UserExperience experience,
     required String slotId,
@@ -68,6 +73,7 @@ class BookingsRepositoryImpl implements BookingsRepository {
     required String requestId,
     PaymentMethod? method,
     required int consentVersion,
+    DateTime? startAt,
   }) =>
       _guard(() => _remote.createBooking(
             experience: experience,
@@ -76,6 +82,7 @@ class BookingsRepositoryImpl implements BookingsRepository {
             requestId: requestId,
             method: method,
             consentVersion: consentVersion,
+            startAt: startAt,
           ));
 
   @override

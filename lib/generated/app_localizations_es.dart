@@ -16063,84 +16063,85 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get paymentLinksTitle => 'Payment methods';
+  String get paymentLinksTitle => 'Métodos de pago';
 
   @override
-  String get paymentLinksNone => 'No payment methods added';
+  String get paymentLinksNone => 'No has añadido métodos de pago';
 
   @override
   String paymentLinksCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count payment methods',
-      one: '1 payment method',
+      other: '$count métodos de pago',
+      one: '1 método de pago',
     );
     return '$_temp0';
   }
 
   @override
-  String get paymentLinksInfoTitle => 'Get paid directly';
+  String get paymentLinksInfoTitle => 'Cobra directamente';
 
   @override
   String get paymentLinksInfoBody =>
-      'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.';
+      'Deja que te paguen en tus propias cuentas. El dinero va directo a ti: GreenGo no procesa, no retiene ni cobra comisión por estos pagos.';
 
   @override
-  String get paymentLinksHintHandle => 'Username or link';
+  String get paymentLinksHintHandle => 'Usuario o enlace';
 
   @override
   String get paymentLinksHintPix =>
-      'CPF, CNPJ, e-mail, +55 phone or random key';
+      'CPF, CNPJ, e-mail, teléfono +55 o clave aleatoria';
 
   @override
-  String get paymentLinksHintLink => 'Paste your payment link';
+  String get paymentLinksHintLink => 'Pega tu enlace de pago';
 
   @override
   String paymentLinkInvalid(String method) {
-    return 'Invalid $method value — check it and try again';
+    return 'Valor de $method no válido: revísalo e inténtalo de nuevo';
   }
 
   @override
-  String get paymentLinksUpdated => 'Payment methods updated';
+  String get paymentLinksUpdated => 'Métodos de pago actualizados';
 
   @override
   String get paymentLinksRules =>
-      'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.';
+      'Úsalos solo para pagos entre personas (regalos, propinas, servicios y tours en persona). Las monedas y membresías de GreenGo solo se compran en la app.';
 
   @override
-  String get paymentLinksSection => 'Pay directly';
+  String get paymentLinksSection => 'Pagar directamente';
 
   @override
   String paymentDisclaimerTitle(String name) {
-    return 'Pay $name directly';
+    return 'Pagar a $name directamente';
   }
 
   @override
   String paymentDisclaimerBody(String name, String method) {
-    return 'This payment goes from you to $name through $method. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.';
+    return 'Este pago va de ti a $name mediante $method. GreenGo no participa y no puede reembolsarlo, protegerlo ni verificarlo. Paga solo a personas de confianza.';
   }
 
   @override
   String paymentContinueTo(String method) {
-    return 'Continue to $method';
+    return 'Continuar a $method';
   }
 
   @override
   String get pixInstructions =>
-      'Scan the QR code or copy the Pix code into your bank app, then enter the amount there.';
+      'Escanea el código QR o copia el código Pix en la app de tu banco y luego introduce allí el importe.';
 
   @override
-  String get pixKeyLabel => 'Pix key';
+  String get pixKeyLabel => 'Clave Pix';
 
   @override
-  String get pixCopyCode => 'Copy Pix code';
+  String get pixCopyCode => 'Copiar código Pix';
 
   @override
-  String get pixCopyKey => 'Copy key';
+  String get pixCopyKey => 'Copiar clave';
 
   @override
-  String get pixCopied => 'Copied — paste it in your bank app\'s Pix area';
+  String get pixCopied =>
+      'Copiado: pégalo en la sección Pix de la app de tu banco';
 
   @override
   String get bkRepeat => 'Repetir';
@@ -16214,4 +16215,38 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get bkChooseTime => 'Elige una hora';
+
+  @override
+  String get bkNoFreeTimes => 'No quedan horas libres en esta fecha';
+
+  @override
+  String bkTimesHint(String duration) {
+    return 'Cada hora dura $duration y es solo para ti y tu grupo.';
+  }
+
+  @override
+  String bkWindowHint(String duration) {
+    return 'Es el periodo en que estás disponible. Cada invitado reserva su propia hora de $duration dentro de él y tus reservas nunca se solapan, en todas tus experiencias.';
+  }
+
+  @override
+  String bkWindowPeopleBooked(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count personas reservadas',
+      one: '1 persona reservada',
+      zero: 'Aún sin reservas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bkErrTimeTaken => 'Esa hora se acaba de reservar. Elige otra.';
+
+  @override
+  String get bkErrInvalidStart => 'Esa hora no está disponible en esta fecha.';
 }

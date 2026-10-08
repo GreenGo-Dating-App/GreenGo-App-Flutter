@@ -7418,5 +7418,19 @@
   "bkRepeatAdded": "{count, plural, =0{No new dates added} =1{1 date added} other{{count} dates added}}",
   "@bkRepeatAdded": {"placeholders": {"count": {"type": "int"}}},
   "bkRepeatSkipped": "{count, plural, =1{1 already existed} other{{count} already existed}}",
-  "@bkRepeatSkipped": {"placeholders": {"count": {"type": "int"}}}
+  "@bkRepeatSkipped": {"placeholders": {"count": {"type": "int"}}},
+  "bkChooseTime": "Choose a time",
+  "@bkChooseTime": {"description": "Booking: section title for picking a start time"},
+  "bkNoFreeTimes": "No free times left on this date",
+  "@bkNoFreeTimes": {"description": "Booking: the selected date has no free time left"},
+  "bkTimesHint": "Each time lasts {duration} and is only for you and your group.",
+  "@bkTimesHint": {"description": "Booking: times section hint", "placeholders": {"duration": {"type": "String"}}},
+  "bkWindowHint": "This is when you are available. Guests each book their own {duration} time inside it, and your bookings never overlap, across all your experiences.",
+  "@bkWindowHint": {"description": "Host date editor: availability window explanation", "placeholders": {"duration": {"type": "String"}}},
+  "bkWindowPeopleBooked": "{count, plural, =0{No bookings yet} =1{1 person booked} other{{count} people booked}}",
+  "@bkWindowPeopleBooked": {"description": "Host date card: people booked in the window", "placeholders": {"count": {"type": "int"}}},
+  "bkErrTimeTaken": "That time was just taken. Please pick another one.",
+  "@bkErrTimeTaken": {"description": "createBooking time_taken"},
+  "bkErrInvalidStart": "That time is not available on this date.",
+  "@bkErrInvalidStart": {"description": "createBooking invalid_start"}
 }

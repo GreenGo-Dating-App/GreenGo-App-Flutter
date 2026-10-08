@@ -46,6 +46,12 @@ abstract class BookingsRepository {
   // ── bookings ──
 
   /// [requestId] must be REUSED when retrying after a non-definitive failure.
+  /// Start times of an availability window, free / taken.
+  Future<Either<Failure, SlotAvailability>> slotAvailability(
+      String experienceId, String slotId);
+
+  /// [startAt] = the time the guest picked inside the window (private time
+  /// slots); null lets the server take the first free time.
   Future<Either<Failure, Booking>> createBooking({
     required UserExperience experience,
     required String slotId,
@@ -53,6 +59,7 @@ abstract class BookingsRepository {
     required String requestId,
     PaymentMethod? method,
     required int consentVersion,
+    DateTime? startAt,
   });
 
   Future<Either<Failure, ExperiencePage<Booking>>> bookings(

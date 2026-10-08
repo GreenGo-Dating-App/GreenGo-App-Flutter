@@ -28253,6 +28253,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 already existed} other{{count} already existed}}'**
   String bkRepeatSkipped(int count);
+
+  /// Booking: section title for picking a start time
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a time'**
+  String get bkChooseTime;
+
+  /// Booking: the selected date has no free time left
+  ///
+  /// In en, this message translates to:
+  /// **'No free times left on this date'**
+  String get bkNoFreeTimes;
+
+  /// Booking: times section hint
+  ///
+  /// In en, this message translates to:
+  /// **'Each time lasts {duration} and is only for you and your group.'**
+  String bkTimesHint(String duration);
+
+  /// Host date editor: availability window explanation
+  ///
+  /// In en, this message translates to:
+  /// **'This is when you are available. Guests each book their own {duration} time inside it, and your bookings never overlap, across all your experiences.'**
+  String bkWindowHint(String duration);
+
+  /// Host date card: people booked in the window
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No bookings yet} =1{1 person booked} other{{count} people booked}}'**
+  String bkWindowPeopleBooked(int count);
+
+  /// createBooking time_taken
+  ///
+  /// In en, this message translates to:
+  /// **'That time was just taken. Please pick another one.'**
+  String get bkErrTimeTaken;
+
+  /// createBooking invalid_start
+  ///
+  /// In en, this message translates to:
+  /// **'That time is not available on this date.'**
+  String get bkErrInvalidStart;
 }
 
 class _AppLocalizationsDelegate

@@ -2,6 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get_it/get_it.dart';
+import 'package:greengo_chat/features/experience_bookings/domain/booking_rules.dart';
 import 'package:greengo_chat/core/error/failures.dart';
 import 'package:greengo_chat/features/experience_bookings/domain/entities/booking.dart';
 import 'package:greengo_chat/features/experience_bookings/domain/repositories/bookings_repository.dart';
@@ -105,7 +106,8 @@ void main() {
       expect(d.start,
           DateTime(day.year, day.month, day.day + 7 * (i + 1), 18, 30));
       expect(d.end.difference(d.start), const Duration(hours: 2));
-      expect(d.capacity, 7);
+      // Private time slots: seats no longer limit a window.
+      expect(d.capacity, BookingConfig.slotCapacityMax);
     }
   });
 }

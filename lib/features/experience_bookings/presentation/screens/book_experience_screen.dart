@@ -252,7 +252,8 @@ class _BookViewState extends State<_BookView> {
                   ),
                   const SizedBox(height: 16),
                   _slotsSection(l, s),
-                  if (s.selectedSlot != null) _guestsSection(l, s),
+                  if (s.selectedSlot != null) _timesSection(l, s),
+                  if (s.selectedTime != null) _guestsSection(l, s),
                   if (s.needsMethodChoice) _methodSection(l, s),
                   _summary(l, s, e),
                 ],
@@ -318,19 +319,92 @@ class _BookViewState extends State<_BookView> {
     );
   }
 
+  /// Private time slots: the free start times of the selected window, each
+  /// lasting the experience's duration. Taken times show greyed out.
+  Widget _timesSection(AppLocalizations l, BookingFlowState s) {
+    final bloc = context.read<BookingFlowBloc>();
+    final a = s.availability;
+    Widget body;
+    if (s.timesLoading && a == null) {
+      body = const Padding(
+        padding: EdgeInsets.all(16),
+        child: Center(
+            child: CircularProgressIndicator(color: AppColors.richGold)),
+      );
+    } else if (s.timesFailed && a == null) {
+      body = Row(children: [
+        Expanded(
+          child: Text(l.somethingWentWrong,
+              style: const TextStyle(color: AppColors.textSecondary)),
+        ),
+        TextButton(
+          onPressed: () => bloc.add(const BookingTimesRefreshed()),
+          child: Text(l.bkRetry,
+              style: const TextStyle(color: AppColors.richGold)),
+        ),
+      ]);
+    } else if (a == null || a.freeTimes.isEmpty) {
+      body = Text(l.bkNoFreeTimes,
+          style: const TextStyle(color: AppColors.textSecondary));
+    } else {
+      body = Wrap(spacing: 8, runSpacing: 8, children: [
+        for (final t in a.times)
+          ChoiceChip(
+            key: ValueKey('time-${t.start.millisecondsSinceEpoch}'),
+            label: Text(
+              '${BookingL10n.time(context, t.start.toLocal())}'
+              '\u2013${BookingL10n.time(context, t.end.toLocal())}',
+              style: TextStyle(
+                color: !t.free
+                    ? AppColors.textTertiary
+                    : (s.selectedStart != null &&
+                            t.start.isAtSameMomentAs(s.selectedStart!)
+                        ? AppColors.deepBlack
+                        : AppColors.textPrimary),
+                decoration: t.free ? null : TextDecoration.lineThrough,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            selected: s.selectedStart != null &&
+                t.start.isAtSameMomentAs(s.selectedStart!),
+            selectedColor: AppColors.richGold,
+            backgroundColor: AppColors.backgroundInput,
+            showCheckmark: false,
+            onSelected:
+                t.free ? (_) => bloc.add(BookingTimeSelected(t.start)) : null,
+          ),
+      ]);
+    }
+    return BookingSection(
+      title: l.bkChooseTime,
+      icon: Icons.schedule,
+      children: [
+        if (a != null && a.lengthMinutes > 0)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Text(
+              l.bkTimesHint(
+                  ExperienceL10n.duration(l, a.lengthMinutes)),
+              style: const TextStyle(
+                  color: AppColors.textTertiary, fontSize: 12.5),
+            ),
+          ),
+        body,
+      ],
+    );
+  }
+
   Widget _slotTile(AppLocalizations l, BookingFlowState s, ExperienceSlot slot) {
     final selected = s.selectedSlotId == slot.id;
-    final full = slot.seatsLeft <= 0;
+    // Private time slots: a window has no seats any more; its free times
+    // show once it is selected.
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: InkWell(
         key: ValueKey('slot-${slot.id}'),
         borderRadius: BorderRadius.circular(12),
-        onTap: full
-            ? null
-            : () => context
-                .read<BookingFlowBloc>()
-                .add(BookingSlotSelected(slot.id)),
+        onTap: () =>
+            context.read<BookingFlowBloc>().add(BookingSlotSelected(slot.id)),
         child: Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
@@ -344,31 +418,16 @@ class _BookViewState extends State<_BookView> {
             Icon(
               selected ? Icons.radio_button_checked : Icons.radio_button_off,
               size: 20,
-              color: full
-                  ? AppColors.textTertiary
-                  : (selected ? AppColors.richGold : AppColors.textSecondary),
+              color: selected ? AppColors.richGold : AppColors.textSecondary,
             ),
             const SizedBox(width: 10),
             Expanded(
               child: Text(
                 BookingL10n.range(context, slot.start, slot.end),
-                style: TextStyle(
-                    color:
-                        full ? AppColors.textTertiary : AppColors.textPrimary,
+                style: const TextStyle(
+                    color: AppColors.textPrimary,
                     fontWeight: FontWeight.w600),
               ),
-            ),
-            const SizedBox(width: 8),
-            Text(
-              full ? l.bkFull : l.bkSeatsLeft(slot.seatsLeft),
-              style: TextStyle(
-                  color: full
-                      ? AppColors.errorRed
-                      : (slot.seatsLeft <= 3
-                          ? AppColors.warningAmber
-                          : AppColors.textTertiary),
-                  fontSize: 12,
-                  fontWeight: FontWeight.w600),
             ),
           ]),
         ),

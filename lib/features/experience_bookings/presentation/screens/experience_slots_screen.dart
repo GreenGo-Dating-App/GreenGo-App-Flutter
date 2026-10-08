@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 
@@ -9,6 +8,7 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
 import '../../domain/booking_failure.dart';
+import '../../../user_experiences/presentation/experience_l10n.dart';
 import '../../domain/booking_rules.dart';
 import '../../domain/entities/booking.dart';
 import '../../domain/repositories/bookings_repository.dart';
@@ -297,7 +297,6 @@ class _SlotsViewState extends State<_SlotsView> {
 
   Widget _slotTile(
       AppLocalizations l, SlotsState s, UserExperience e, ExperienceSlot slot) {
-    final ratio = slot.capacity == 0 ? 0.0 : slot.bookedCount / slot.capacity;
     return Card(
       color: AppColors.backgroundCard,
       margin: const EdgeInsets.only(bottom: 8),
@@ -322,23 +321,10 @@ class _SlotsViewState extends State<_SlotsView> {
                   Text(l.bkSlotCancelled,
                       style: const TextStyle(
                           color: AppColors.errorRed, fontSize: 12))
-                else ...[
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: LinearProgressIndicator(
-                      minHeight: 6,
-                      value: ratio.clamp(0.0, 1.0),
-                      backgroundColor: AppColors.backgroundInput,
-                      color: ratio >= 1
-                          ? AppColors.errorRed
-                          : AppColors.richGold,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(l.bkBookedOf(slot.bookedCount, slot.capacity),
+                else
+                  Text(l.bkWindowPeopleBooked(slot.bookedCount),
                       style: const TextStyle(
                           color: AppColors.textTertiary, fontSize: 12)),
-                ],
               ],
             ),
           ),
@@ -454,7 +440,10 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
       _date = DateTime(s.year, s.month, s.day);
       _startTime = TimeOfDay.fromDateTime(s);
       _endTime = TimeOfDay.fromDateTime(e);
-      _capacity = TextEditingController(text: '${x.capacity}');
+      // Private time slots: a window is booked one time at a time, so seats
+      // no longer limit it; keep the stored value valid (>= people booked).
+      _capacity = TextEditingController(
+          text: '${x.capacity > BookingConfig.slotCapacityMax ? x.capacity : BookingConfig.slotCapacityMax}');
     } else {
       final tomorrow = DateTime.now().add(const Duration(days: 1));
       _date = DateTime(tomorrow.year, tomorrow.month, tomorrow.day);
@@ -464,7 +453,7 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
           .add(Duration(minutes: widget.experience.durationMinutes.clamp(15, 24 * 60)));
       _endTime = TimeOfDay.fromDateTime(end);
       _capacity =
-          TextEditingController(text: '${widget.experience.maxGroupSize}');
+          TextEditingController(text: '${BookingConfig.slotCapacityMax}');
     }
   }
 
@@ -770,25 +759,14 @@ class _SlotEditorSheetState extends State<_SlotEditorSheet> {
                   style: const TextStyle(
                       color: AppColors.textTertiary, fontSize: 12)),
             const SizedBox(height: 10),
-            TextField(
-              key: const ValueKey('slot-capacity'),
-              controller: _capacity,
-              keyboardType: TextInputType.number,
-              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-              style: const TextStyle(color: AppColors.textPrimary),
-              decoration: InputDecoration(
-                labelText: l.bkCapacity,
-                labelStyle: const TextStyle(color: AppColors.textSecondary),
-                helperText: widget.existing?.hasBookings == true
-                    ? l.bkBookedOf(widget.existing!.bookedCount,
-                        widget.existing!.capacity)
-                    : null,
-                filled: true,
-                fillColor: AppColors.backgroundInput,
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide.none),
-              ),
+            // Private time slots: the window is the host's availability;
+            // guests each book one time of the experience's duration in it.
+            Text(
+              l.bkWindowHint(ExperienceL10n.duration(
+                  l, widget.experience.durationMinutes)),
+              key: const ValueKey('slot-window-hint'),
+              style: const TextStyle(
+                  color: AppColors.textSecondary, fontSize: 12.5),
             ),
             for (final err in _errors)
               Padding(

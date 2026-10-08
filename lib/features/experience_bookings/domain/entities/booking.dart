@@ -318,13 +318,47 @@ class ExperienceSlot extends Equatable {
   bool get isOpen => !cancelled;
   bool get hasBookings => bookedCount > 0;
 
-  /// A guest can pick it: open, in the future, seats left.
-  bool isBookableAt(DateTime now) =>
-      isOpen && start.isAfter(now) && seatsLeft > 0;
+  /// A guest can pick it: open and not over yet. Since private time slots a
+  /// slot is the host's AVAILABILITY WINDOW: guests book a start time inside
+  /// it (see [SlotAvailability]); seats no longer limit it.
+  bool isBookableAt(DateTime now) => isOpen && end.isAfter(now);
 
   @override
   List<Object?> get props =>
       [id, experienceId, start, end, capacity, bookedCount, cancelled];
+}
+
+/// One bookable start time inside an availability window.
+class SlotTime extends Equatable {
+  const SlotTime({required this.start, required this.end, required this.free});
+
+  final DateTime start;
+  final DateTime end;
+
+  /// In the future and not overlapping any active booking of the host
+  /// (across all their experiences). Computed by the server.
+  final bool free;
+
+  @override
+  List<Object?> get props => [start, end, free];
+}
+
+/// The start times of one window (callable getSlotAvailability).
+class SlotAvailability extends Equatable {
+  const SlotAvailability({
+    required this.slotId,
+    required this.lengthMinutes,
+    required this.times,
+  });
+
+  final String slotId;
+  final int lengthMinutes;
+  final List<SlotTime> times;
+
+  List<SlotTime> get freeTimes => [for (final t in times) if (t.free) t];
+
+  @override
+  List<Object?> get props => [slotId, lengthMinutes, times];
 }
 
 /// What the host types / picks when adding or editing a slot.

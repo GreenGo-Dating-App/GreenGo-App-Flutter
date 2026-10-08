@@ -49,6 +49,8 @@ void main() {
   group('every createBooking code has its own message (7 locales)', () {
     const codes = [
       'slot_full',
+      'time_taken',
+      'invalid_start',
       'already_booked',
       'id_document_required',
       'host_not_verified',

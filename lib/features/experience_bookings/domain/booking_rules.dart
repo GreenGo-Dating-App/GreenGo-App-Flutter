@@ -210,9 +210,10 @@ class BookingRules {
   // ─────────────────────────────────────────────── guests / slots
 
   /// Most guests one booking may hold on [slot].
+  /// Party size of ONE booking. Private time slots: the window's seats no
+  /// longer apply (one booking per time), so [slot] is not a limit.
   static int maxGuests(UserExperience e, ExperienceSlot? slot) {
-    var max = min(e.maxGroupSize, BookingConfig.maxGuestsPerBooking);
-    if (slot != null) max = min(max, slot.seatsLeft);
+    final max = min(e.maxGroupSize, BookingConfig.maxGuestsPerBooking);
     return max < 1 ? 0 : max;
   }
 

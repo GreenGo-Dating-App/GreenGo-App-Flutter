@@ -129,6 +129,10 @@ class BookingL10n {
     switch (f.code) {
       case 'slot_full':
         return l.bkErrSlotFull(f.seatsLeft ?? 0);
+      case 'time_taken':
+        return l.bkErrTimeTaken;
+      case 'invalid_start':
+        return l.bkErrInvalidStart;
       case 'already_booked':
         return l.bkErrAlreadyBooked;
       case 'id_document_required':

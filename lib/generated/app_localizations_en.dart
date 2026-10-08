@@ -16027,4 +16027,39 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get bkChooseTime => 'Choose a time';
+
+  @override
+  String get bkNoFreeTimes => 'No free times left on this date';
+
+  @override
+  String bkTimesHint(String duration) {
+    return 'Each time lasts $duration and is only for you and your group.';
+  }
+
+  @override
+  String bkWindowHint(String duration) {
+    return 'This is when you are available. Guests each book their own $duration time inside it, and your bookings never overlap, across all your experiences.';
+  }
+
+  @override
+  String bkWindowPeopleBooked(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count people booked',
+      one: '1 person booked',
+      zero: 'No bookings yet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get bkErrTimeTaken =>
+      'That time was just taken. Please pick another one.';
+
+  @override
+  String get bkErrInvalidStart => 'That time is not available on this date.';
 }
