@@ -389,7 +389,20 @@ export function computeBookingPrice(
 // ─────────────────────────────────────────────────────────── payment methods
 
 /** How a guest pays a PAID experience (both off-platform). */
-export const PAYMENT_METHODS = ['cash', 'link'] as const;
+export const PAYMENT_METHODS = ['cash', 'link', 'online'] as const;
+/** In-app ticket payment providers (ticket_payments/). */
+export const ONLINE_PROVIDERS = ['stripe', 'mercadopago', 'link'] as const;
+/** Link-mode methods (ticket_payments/config.ts isLinkMethod mirror). */
+const LINK_METHODS = ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
+  'monzo', 'kofi', 'stripe', 'cash', 'bankTransfer'];
+export function linkMethodOf(e: Record<string, unknown>): string | null {
+  const m = e.paymentLinkMethod;
+  return typeof m === 'string' && LINK_METHODS.includes(m) ? m : null;
+}
+export function onlineProviderOf(e: Record<string, unknown>): string | null {
+  const p = e.paymentProvider;
+  return typeof p === 'string' && (ONLINE_PROVIDERS as readonly string[]).includes(p) ? p : null;
+}
 export type PaymentMethod = typeof PAYMENT_METHODS[number];
 export type PaymentMode = 'free' | PaymentMethod;
 
@@ -409,6 +422,12 @@ export function acceptedPaymentMethods(e: Record<string, unknown>): PaymentMetho
   const listed = raw
     ? PAYMENT_METHODS.filter((m) => raw.includes(m))
     : (hasPaymentLink(e) ? ['link' as const] : []);
+  // 'online' (Stripe / Mercado Pago, paid INSIDE the app) needs a provider and
+  // replaces every off-platform method: a listing that offers it offers only it.
+  if (listed.includes('online')) {
+    const p = onlineProviderOf(e);
+    return p && (p !== 'link' || linkMethodOf(e)) ? ['online'] : [];
+  }
   return listed.filter((m) => m !== 'link' || hasPaymentLink(e));
 }
 
@@ -460,6 +479,18 @@ export function refundDueFor(
   reason: string,
 ): RefundDue | null {
   const mode = payment?.mode;
+  if (mode === 'online') {
+    // Refunds are executed by the organizer in their Stripe / MP dashboard; the
+    // provider webhook then invalidates the ticket. Owed only once paid.
+    if (!price || !(price.totalAmount > 0)) return null;
+    const pp = Math.max(0, Math.min(100, Math.round(percent)));
+    const paid = payment?.status === 'paid';
+    const pct = paid ? pp : 0;
+    return {
+      percent: pct, policyPercent: pp, amount: Math.round((price.totalAmount * pct) / 100),
+      currency: price.currency, reason: paid ? reason : `${reason}_online_unpaid`,
+    };
+  }
   if (!price || !(price.totalAmount > 0) || (mode !== 'link' && mode !== 'cash')) return null;
   const policyPercent = Math.max(0, Math.min(100, Math.round(percent)));
   const paidCash = mode === 'cash' && !!payment?.hostConfirmedPaidAt;

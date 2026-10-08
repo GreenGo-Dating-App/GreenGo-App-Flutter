@@ -200,10 +200,11 @@ export const spendCoins = onCall<SpendCoinsRequest>(
         let price: number;
         if (def.eventPrice) {
           if (!eventSnap?.exists) throw new HttpsError('not-found', 'Event not found');
-          const raw = Number(eventSnap.data()?.price ?? 0);
-          price = Number.isFinite(raw) ? Math.round(raw) : 0;
-          if (price <= 0) throw new HttpsError('failed-precondition', 'This event is free');
-          if (price > MAX_EVENT_PRICE) throw new HttpsError('failed-precondition', 'Event price out of range');
+          // Paid events are sold as real tickets (Stripe / Mercado Pago, paid to
+          // the organizer; ticket_payments/). Paying in-person admission with
+          // IAP-bought coins is retired (App Store 3.1.3(e)); free events never
+          // reach this branch.
+          throw new HttpsError('failed-precondition', 'Paid events are sold as tickets, not coins', { code: 'event_paid_with_tickets' });
         } else if (optionPrice !== null) {
           price = optionPrice;
         } else {

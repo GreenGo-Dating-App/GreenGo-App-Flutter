@@ -65,6 +65,8 @@ import {
   seatsReleased,
   shouldFlagHost,
   verifyCheckInCode,
+  onlineProviderOf,
+  linkMethodOf,
   MAX_BOOKING_LENGTH_MS,
   bookingLengthMs,
   chooseStart,
@@ -216,6 +218,11 @@ export function bookingView(id: string, b: Record<string, any>): Record<string, 
     payment: {
       mode: b.payment?.mode ?? 'free',
       link: b.payment?.link ?? null,
+      provider: b.payment?.provider ?? null,
+      linkMethod: b.payment?.linkMethod ?? null,
+      status: b.payment?.status ?? null,
+      orderId: b.payment?.orderId ?? null,
+      paidAt: iso(b.payment?.paidAt),
       guestMarkedPaidAt: iso(b.payment?.guestMarkedPaidAt),
       hostConfirmedPaidAt: iso(b.payment?.hostConfirmedPaidAt),
     },
@@ -242,6 +249,7 @@ function notifData(bookingId: string, b: Record<string, any>): Record<string, st
 function payHint(b: Record<string, any>): string {
   const mode = b.payment?.mode;
   if (mode === 'link') return `${title(b)} — pay the host with their payment link.`;
+  if (mode === 'online') return `${title(b)} — pay in the app to get your ticket.`;
   if (mode === 'cash') return `${title(b)} — pay the host in cash when you meet.`;
   return title(b);
 }
@@ -543,6 +551,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     if (priced.ok === false) fail('failed-precondition', 'experience_price_invalid', { reason: priced.reason });
     let mode: PaymentMode = 'free';
     let link: { type: string; value: string } | null = null;
+    let provider: string | null = null;
     if (!priced.free) {
       if (idDocumentStateOf(host) !== 'approved') fail('failed-precondition', 'host_not_verified');
       const choice = choosePaymentMethod(e, data?.paymentMethod);
@@ -556,6 +565,7 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
         const pl = e.paymentLink as Record<string, any>;
         link = { type: String(pl.type), value: String(pl.value).trim() };
       }
+      if (mode === 'online') provider = onlineProviderOf(e);
     }
 
     const s = slot.data() as Record<string, any> | undefined;
@@ -609,6 +619,9 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
         link,
         guestMarkedPaidAt: null,
         hostConfirmedPaidAt: null,
+        ...(mode === 'online'
+          ? { provider, status: 'unpaid', orderId: null, ...(provider === 'link' ? { linkMethod: linkMethodOf(e) } : {}) }
+          : {}),
       },
       refundDue: null,
       cancellation: null,
@@ -770,6 +783,17 @@ export async function getBookingCheckInCode(uid: string, data: any): Promise<Rec
   const b = snap.data() as Record<string, any>;
   if (b.guestId !== uid) fail('permission-denied', 'not_guest');
   if (b.status !== 'confirmed') fail('failed-precondition', 'not_confirmed', { status: b.status });
+  // No QR before the money arrived: in-app payments need the provider's
+  // confirmation (webhook -> payment.status 'paid'); a link payment needs the
+  // host's "received". Cash is paid at the door (the host confirms there).
+  const mode = b.payment?.mode;
+  if (mode === 'online') {
+    if (b.payment?.status !== 'paid' || !b.payment?.orderId) fail('failed-precondition', 'not_paid', { status: b.payment?.status ?? null });
+    const t = (await fdb().collection('tickets').doc(String(b.payment.orderId)).get()).data();
+    if (!t || t.status !== 'valid') fail('failed-precondition', 'ticket_not_valid', { status: t?.status ?? null });
+    return { bookingId, code: null, qrPayload: t.qrPayload, ticketId: b.payment.orderId };
+  }
+  if (mode === 'link' && !b.payment?.hostConfirmedPaidAt) fail('failed-precondition', 'not_paid');
   const code = checkInCode(await checkInSecret(), bookingId);
   return { bookingId, code, qrPayload: checkInQrPayload(bookingId, code) };
 }
@@ -814,6 +838,10 @@ export async function checkInBooking(uid: string, data: any): Promise<Record<str
     if (!verifyCheckInCode(secret, bookingId, data?.code)) fail('permission-denied', 'invalid_code');
     if (b.status === 'confirmed' && b.checkIn && !wantsCash) return { noop: true };
     if (b.status !== 'confirmed') fail('failed-precondition', 'not_confirmed', { status: b.status });
+    // Re-checked at every scan: a refunded / disputed in-app payment is refused.
+    if (b.payment?.mode === 'online' && b.payment?.status !== 'paid') {
+      fail('permission-denied', 'ticket_not_valid', { status: b.payment?.status ?? null });
+    }
     if (!inCheckInWindow(now, msOf(b.slotStart) as number, msOf(b.slotEnd) as number, cfg)) {
       fail('failed-precondition', 'outside_checkin_window');
     }
@@ -850,6 +878,22 @@ export async function checkInBooking(uid: string, data: any): Promise<Record<str
     guestName,
     guestPhotoUrl,
   };
+}
+
+/** Door: a paid ticket (verified by checkin/eventCheckin.checkInPaidTicket). */
+export async function checkInBookingWithTicket(
+  uid: string,
+  ticket: Record<string, any>,
+  experienceId: string | null,
+): Promise<Record<string, unknown>> {
+  const bookingId = ticket.bookingId;
+  if (!isDocId(bookingId)) fail('permission-denied', 'invalid_code');
+  const pre = (await fdb().collection(BOOKINGS).doc(bookingId).get()).data();
+  if (!pre) fail('not-found', 'booking_not_found');
+  if (!(await canScanExperience(uid, pre.experienceId, pre.hostId))) fail('permission-denied', 'not_host');
+  if (ticket.status !== 'valid') fail('permission-denied', 'ticket_not_valid', { status: ticket.status });
+  const code = checkInCode(await checkInSecret(), bookingId);
+  return checkInBooking(uid, { bookingId, code, experienceId: experienceId ?? undefined });
 }
 
 // ─────────────────────────────────────────────────────────── no-show
@@ -907,6 +951,8 @@ export async function markBookingPaid(uid: string, data: any, onlyMode?: 'cash')
     if (!role) fail('permission-denied', 'not_a_party');
     const mode = b.payment?.mode;
     if (onlyMode && mode !== onlyMode) fail('failed-precondition', 'not_cash_payment');
+    // In-app payments are confirmed ONLY by the provider webhook.
+    if (mode === 'online') fail('failed-precondition', 'paid_in_app');
     if (mode !== 'link' && mode !== 'cash') fail('failed-precondition', 'not_paid_booking');
     if (mode === 'cash' && role !== 'host') fail('permission-denied', 'host_confirms_cash');
     if (!PAYABLE_STATUSES.includes(b.status)) fail('failed-precondition', 'not_confirmed', { status: b.status });

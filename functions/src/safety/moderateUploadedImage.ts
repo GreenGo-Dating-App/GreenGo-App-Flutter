@@ -70,6 +70,7 @@ const MODERATED = [
   'support_attachments/',
   'storefronts/',
   'video_profiles/',      // video-intro thumbnails (images only; videos skipped below)
+  'ticket_receipts/',     // link-mode ticket payment receipts (private: buyer + organizer)
 ];
 
 /**

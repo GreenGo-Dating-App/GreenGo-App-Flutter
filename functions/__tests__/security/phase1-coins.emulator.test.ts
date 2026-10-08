@@ -130,13 +130,13 @@ describe('spendCoins (C-03 / H-12)', () => {
     expect(await coins('rando')).toBe(1000);
   });
 
-  test('event_rsvp charges the event price stored on the server', async () => {
+  test('event_rsvp is retired: paid events are sold as tickets, never for coins', async () => {
     await profile('u1');
     await seedBalance('u1', [batch('b1', 100, 'reward', 100 * HOUR)]);
     await db.doc('events/paid').set({ organizerId: 'org', price: 25.4 });
-    const r = await call(spendCoins, { featureId: 'event_rsvp', requestId: rid(), relatedId: 'paid' }, 'u1');
-    expect(r.charged).toBe(25);
-    expect(await coins('u1')).toBe(75);
+    const e = await refused(call(spendCoins, { featureId: 'event_rsvp', requestId: rid(), relatedId: 'paid' }, 'u1'));
+    expect(e.code).toBe('failed-precondition');
+    expect(await coins('u1')).toBe(100);
   });
 
   test('unknown feature is refused and charges nothing', async () => {

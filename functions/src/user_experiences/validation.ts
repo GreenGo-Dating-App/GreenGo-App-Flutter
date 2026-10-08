@@ -44,7 +44,11 @@ export const CATEGORIES = [
 export const PAYMENT_TYPES = ['pix', 'paypal', 'venmo', 'stripe', 'other'] as const;
 
 /** How guests pay the host (outside GreenGo): cash at the meeting, or the link. */
-export const PAYMENT_METHODS = ['cash', 'link'] as const;
+export const PAYMENT_METHODS = ['cash', 'link', 'online'] as const;
+/** In-app ticket providers (paid listings created from 4.7 offer ONLY these). */
+export const ONLINE_PROVIDERS = ['stripe', 'mercadopago', 'link'] as const;
+export const LINK_METHODS = ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo', 'cashApp', 'revolut', 'wise',
+  'monzo', 'kofi', 'stripe', 'cash', 'bankTransfer'] as const;
 
 /**
  * Payment methods of a payload. Missing field (older clients) = ['link'] for
@@ -212,6 +216,18 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     else errors.push('paymentLink');
   }
   if (wantsLink && !paymentLink && !errors.includes('paymentLink')) errors.push('paymentLink');
+  // In-app payment (Stripe / Mercado Pago): exclusive, needs a provider.
+  const wantsOnline = paymentMethods.includes('online');
+  const paymentProvider = wantsOnline && (ONLINE_PROVIDERS as readonly string[]).includes(str(d.paymentProvider))
+    ? str(d.paymentProvider)
+    : null;
+  if (wantsOnline && (!paymentProvider || paymentMethods.length !== 1)) errors.push('paymentProvider');
+  const paymentLinkMethod = paymentProvider === 'link' && (LINK_METHODS as readonly string[]).includes(str(d.paymentLinkMethod))
+    ? str(d.paymentLinkMethod)
+    : null;
+  if (paymentProvider === 'link' && !paymentLinkMethod) errors.push('paymentLinkMethod');
+  const paymentInstructions = paymentProvider === 'link' ? optStr(d.paymentInstructions, 500) : null;
+  if (paymentLinkMethod === 'bankTransfer' && !paymentInstructions) errors.push('paymentInstructions');
 
   const status = str(d.status) === 'published' ? 'published' : 'draft';
   const city = optStr(d.city, 120);
@@ -240,7 +256,10 @@ export function validateExperiencePayload(p: Record<string, unknown> | null | un
     currency: isFree ? null : currency,
     isFree,
     paymentMethods,
-    paymentLink,
+    paymentLink: wantsOnline ? null : paymentLink,
+    paymentProvider,
+    paymentLinkMethod,
+    paymentInstructions,
     availability: optStr(d.availability, LIMITS.shortTextMax),
     // Bookings: true = the host accepts / declines each booking request
     // (experience_bookings snapshots it on every booking).

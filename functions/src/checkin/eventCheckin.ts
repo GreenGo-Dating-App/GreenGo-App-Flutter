@@ -28,6 +28,9 @@ import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
 import { recordMeeting } from './meetings';
+import { isTicketQr, verifyTicketQr } from '../ticket_payments/tokens';
+import { ticketKey } from '../ticket_payments/keys';
+import { checkInBookingWithTicket } from '../experience_bookings/service';
 
 const CALL_OPTS = { memory: '512MiB' as const, timeoutSeconds: 60 };
 const HOUR_MS = 60 * 60 * 1000;
@@ -165,12 +168,42 @@ function withAuth(impl: (uid: string, data: any) => Promise<Record<string, unkno
   });
 }
 
+/**
+ * Paid events sold through Stripe / Mercado Pago (`ticketProvider` set) admit
+ * ONLY holders of a paid ticket (tickets/{id}.status 'valid'). Legacy
+ * coin-priced events (price > 0, no provider) keep their existing attendees'
+ * signed codes; unsigned legacy JSON tickets are refused on every paid event.
+ */
+export function isPaidEventDoc(ev: Record<string, any> | undefined): boolean {
+  if (!ev) return false;
+  return (typeof ev.price === 'number' && ev.price > 0) || ev.ticketProvider != null;
+}
+function sellsTickets(ev: Record<string, any> | undefined): boolean {
+  return !!ev && ev.ticketProvider != null;
+}
+
+async function validTicketFor(ticketId: unknown, eventId: string, userId: string): Promise<Record<string, any> | null> {
+  if (typeof ticketId !== 'string' || !ID_RE.test(ticketId)) return null;
+  const t = (await admin.firestore().collection('tickets').doc(ticketId).get()).data();
+  if (!t || t.kind !== 'event' || t.listingId !== eventId || t.buyerId !== userId) return null;
+  return t;
+}
+
 /** Attendee: their signed ticket for an event they are going to. */
 export const getEventTicketCode = withAuth(async (uid, data) => {
   const eventId = data?.eventId;
   if (typeof eventId !== 'string' || !ID_RE.test(eventId)) fail('invalid-argument', 'invalid_event_id');
-  const att = await admin.firestore().collection('events').doc(eventId).collection('attendees').doc(uid).get();
+  const evRef = admin.firestore().collection('events').doc(eventId);
+  const [att, evSnap] = await Promise.all([evRef.collection('attendees').doc(uid).get(), evRef.get()]);
   if (!att.exists || att.data()?.status !== 'going') fail('failed-precondition', 'not_going');
+  const ev = evSnap.data();
+  if (sellsTickets(ev)) {
+    // QR only after the provider confirmed the payment (server-issued ticket).
+    const t = await validTicketFor(att.data()?.ticketId, eventId, uid);
+    if (!t) fail('failed-precondition', 'ticket_required');
+    if (t.status !== 'valid') fail('failed-precondition', 'ticket_not_valid', { status: t.status });
+    return { eventId, userId: uid, code: null, qrPayload: t.qrPayload, ticketId: att.data()?.ticketId };
+  }
   const code = eventTicketCode(await ticketSecret(), eventId, uid);
   return { eventId, userId: uid, code, qrPayload: eventTicketPayload(eventId, uid, code) };
 });
@@ -182,6 +215,11 @@ export const getEventTicketCode = withAuth(async (uid, data) => {
  * rights on THAT event are checked).
  */
 export const checkInEventAttendee = withAuth(async (uid, data) => {
+  // Paid-ticket QR (greengo:tk:...) scanned on the event door.
+  if (isTicketQr(data?.payload)) {
+    const openEventId = typeof data?.eventId === 'string' ? data.eventId : null;
+    return checkInPaidTicket(uid, data.payload, { eventId: openEventId });
+  }
   const ticket = parseEventTicket(data?.payload);
   if (!ticket) fail('invalid-argument', 'invalid_code');
   const openEventId = typeof data?.eventId === 'string' ? data.eventId : null;
@@ -201,43 +239,115 @@ export const checkInEventAttendee = withAuth(async (uid, data) => {
     }
     verified = true;
   } else {
+    // Forgeable: never on a paid event, whatever allowLegacyTickets says.
+    if (isPaidEventDoc(ev)) fail('permission-denied', 'legacy_ticket_rejected');
     if (!(await allowLegacyTickets())) fail('permission-denied', 'legacy_ticket_rejected');
     verified = false;
   }
+  let ticketId: string | null = null;
+  if (sellsTickets(ev)) {
+    // A signed RSVP code is not a payment: the paid ticket must be valid NOW.
+    const att = (await evRef.collection('attendees').doc(ticket.userId).get()).data();
+    const t = await validTicketFor(att?.ticketId, ticket.eventId, ticket.userId);
+    if (!t) fail('permission-denied', 'ticket_required');
+    if (t.status !== 'valid') fail('permission-denied', 'ticket_not_valid', { status: t.status });
+    ticketId = att?.ticketId ?? null;
+  }
+  return admitEventAttendee(uid, ticket.eventId, ticket.userId, ev, verified, ticketId);
+});
+
+/** Shared door write: check-in fields + "met in person". */
+export async function admitEventAttendee(
+  uid: string,
+  eventId: string,
+  userId: string,
+  ev: Record<string, any>,
+  verified: boolean,
+  ticketId: string | null,
+): Promise<Record<string, unknown>> {
+  const db = admin.firestore();
+  const evRef = db.collection('events').doc(eventId);
   if (!inEventCheckInWindow(Date.now(), msOf(ev.startDate), msOf(ev.endDate))) {
     fail('failed-precondition', 'outside_checkin_window');
   }
 
-  const attRef = evRef.collection('attendees').doc(ticket.userId);
+  const attRef = evRef.collection('attendees').doc(userId);
   const res = await db.runTransaction(async (tx) => {
     const att = await tx.get(attRef);
+    const tSnap = ticketId ? await tx.get(db.collection('tickets').doc(ticketId)) : null;
     if (!att.exists) fail('not-found', 'not_registered');
     const a = att.data() as Record<string, any>;
     if (a.status !== 'going') fail('failed-precondition', 'not_going', { status: a.status ?? null });
+    if (tSnap && tSnap.data()?.status !== 'valid') {
+      fail('permission-denied', 'ticket_not_valid', { status: tSnap.data()?.status ?? null });
+    }
     if (a.checkedIn === true) return { already: true, a };
     tx.update(attRef, {
       checkedIn: true,
       checkedInAt: admin.firestore.FieldValue.serverTimestamp(),
       checkedInBy: uid,
-      checkInMethod: verified ? 'signed' : 'legacy',
+      checkInMethod: ticketId ? 'ticket' : verified ? 'signed' : 'legacy',
     });
+    if (tSnap) {
+      tx.update(tSnap.ref, { checkedInAt: admin.firestore.FieldValue.serverTimestamp(), checkedInBy: uid });
+    }
     return { already: false, a };
   });
 
   if (!res.already) {
     const title = String(ev.title ?? '');
-    const ctx = { type: 'event' as const, contextId: ticket.eventId, title, verified, byUid: uid };
-    await recordMeeting(String(ev.organizerId ?? ''), ticket.userId, ctx);
+    const ctx = { type: 'event' as const, contextId: eventId, title, verified, byUid: uid };
+    await recordMeeting(String(ev.organizerId ?? ''), userId, ctx);
     const co: string[] = Array.isArray(ev.coOrganizerIds) ? ev.coOrganizerIds : [];
-    if (uid !== ev.organizerId && co.includes(uid)) await recordMeeting(uid, ticket.userId, ctx);
+    if (uid !== ev.organizerId && co.includes(uid)) await recordMeeting(uid, userId, ctx);
   }
   return {
-    eventId: ticket.eventId,
-    userId: ticket.userId,
+    kind: 'event',
+    eventId,
+    userId,
     userName: res.a.userName ?? '',
     userPhotoUrl: res.a.userPhotoUrl ?? null,
     guestCount: Number(res.a.guestCount ?? 0),
     alreadyCheckedIn: res.already,
     verified,
   };
-});
+}
+
+/**
+ * Door: a paid ticket QR (`greengo:tk:{ticketId}:{sig}`) for an event OR an
+ * experience. Verifies the HMAC, then re-reads tickets/{id}: refunded /
+ * disputed / cancelled tickets are refused even though the QR is genuine.
+ */
+export async function checkInPaidTicket(
+  uid: string,
+  payload: unknown,
+  open: { eventId?: string | null; experienceId?: string | null },
+): Promise<Record<string, unknown>> {
+  const ticketId = verifyTicketQr(await ticketKey(), payload);
+  if (!ticketId) fail('permission-denied', 'invalid_code');
+  const db = admin.firestore();
+  const t = (await db.collection('tickets').doc(ticketId).get()).data();
+  if (!t) fail('permission-denied', 'invalid_code');
+  if (t.kind === 'event') {
+    if (open.experienceId) fail('failed-precondition', 'wrong_experience');
+    if (open.eventId && open.eventId !== t.listingId) fail('failed-precondition', 'wrong_event');
+    const evSnap = await db.collection('events').doc(t.listingId).get();
+    if (!evSnap.exists) fail('not-found', 'event_not_found');
+    const ev = evSnap.data() as Record<string, any>;
+    if (!canScanEvent(uid, ev)) fail('permission-denied', 'not_scanner');
+    if (t.status !== 'valid') fail('permission-denied', 'ticket_not_valid', { status: t.status });
+    return admitEventAttendee(uid, t.listingId, t.buyerId, ev, true, ticketId);
+  }
+  if (open.eventId) fail('failed-precondition', 'wrong_event');
+  if (open.experienceId && open.experienceId !== t.listingId) fail('failed-precondition', 'wrong_experience');
+  // checkInBooking checks host / helper rights and re-checks payment.status.
+  const r = await checkInBookingWithTicket(uid, t, open.experienceId ?? null);
+  return { kind: 'experience', ...r };
+}
+
+/** Callable for new clients: any paid ticket QR. data: { payload, eventId?, experienceId? } */
+export const checkInTicket = withAuth(async (uid, data) =>
+  checkInPaidTicket(uid, data?.payload, {
+    eventId: typeof data?.eventId === 'string' ? data.eventId : null,
+    experienceId: typeof data?.experienceId === 'string' ? data.experienceId : null,
+  }));

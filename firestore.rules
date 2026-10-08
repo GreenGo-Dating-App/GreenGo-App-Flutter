@@ -1687,6 +1687,12 @@ service cloud.firestore {
         return isSignedIn() &&
           exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid));
       }
+      // Paid event (ticket_payments/): price > 0 or a ticket provider set.
+      // Mirrors isPaidEvent() in functions/src/ticket_payments/orders.ts.
+      function isPaidEventData(d) {
+        return (d.get('price', null) is number && d.get('price', 0) > 0)
+          || d.get('ticketProvider', null) != null;
+      }
 
       // Events are readable by any signed-in user. The client's list queries
       // (feed / nearby / community / search / Going tab / cancel-series) filter
@@ -1707,8 +1713,15 @@ service cloud.firestore {
       // update ONLY the denormalized RSVP counters (`attendeeCount` and the
       // per-tier `tierGoingCounts` map) — this powers the join / waitlist /
       // auto-promotion transactions that run as the joining/cancelling user.
+      // On a PAID event the counters belong to the server (seats are sold by
+      // createTicketCheckout / the payment confirmation): others may only bump
+      // viewCount there.
       allow update: if (isOrganizer() && validCoOrganizers(request.resource.data))
         || (isSignedIn()
+            && request.resource.data.diff(resource.data).affectedKeys()
+                 .hasOnly(['viewCount']))
+        || (isSignedIn()
+            && !isPaidEventData(resource.data)
             && request.resource.data.diff(resource.data).affectedKeys()
                  .hasOnly(['attendeeCount', 'tierGoingCounts', 'viewCount']));
       // Co-owners may edit and boost the event like the organiser, but NEVER
@@ -1749,6 +1762,23 @@ service cloud.firestore {
           );
         }
         allow read: if canSeeRoster();
+        function paidEvent() {
+          return isPaidEventData(parentEvent());
+        }
+        // Ticket fields are written ONLY by the server when a payment is
+        // confirmed (ticket_payments/orders.ts markOrderPaid).
+        function touchesTicket() {
+          return request.resource.data.get('ticketId', null) != resource.data.get('ticketId', null)
+            || request.resource.data.get('ticketStatus', null) != resource.data.get('ticketStatus', null)
+            || request.resource.data.get('paidAt', null) != resource.data.get('paidAt', null);
+        }
+        // On a paid event nobody admits THEMSELVES: 'going' (or a waitlist
+        // place) comes only with a confirmed ticket. The organizer may still
+        // add people to the roster (comps) - they get no paid ticket / QR.
+        function selfAdmitsOnPaid() {
+          return request.auth.uid == uid && !parentOrganizer() && paidEvent()
+            && request.resource.data.get('status', '') in ['going', 'waitlist'];
+        }
         // QR check-in is SERVER-ONLY since 4.4.0 (checkInEventAttendee
         // verifies a signed ticket, the door rights and the time window). No
         // client - not the attendee, not the organizer - may touch these.
@@ -1770,20 +1800,34 @@ service cloud.firestore {
           && request.resource.data.get('checkedIn', false) == false
           && request.resource.data.get('checkedInAt', null) == null
           && !('checkedInBy' in request.resource.data)
-          && !('checkInMethod' in request.resource.data);
+          && !('checkInMethod' in request.resource.data)
+          && !('ticketId' in request.resource.data)
+          && !('ticketStatus' in request.resource.data)
+          && !('paidAt' in request.resource.data)
+          && !selfAdmitsOnPaid();
         allow update: if isSignedIn()
           && (request.auth.uid == uid || parentOrganizer())
-          && !touchesCheckIn();
+          && !touchesCheckIn()
+          && !touchesTicket()
+          // Paid event: your own status may not become going / waitlist, and
+          // the party size is what you paid for.
+          && !(request.auth.uid == uid && !parentOrganizer() && paidEvent()
+               && (request.resource.data.get('status', '') != resource.data.get('status', '')
+                   && request.resource.data.get('status', '') in ['going', 'waitlist']
+                   || request.resource.data.get('guestCount', 0) != resource.data.get('guestCount', 0)));
         allow delete: if isSignedIn()
           && (request.auth.uid == uid || parentOrganizer());
         // Waitlist auto-promotion: when a "going" attendee cancels, the
         // cancelling user promotes the oldest waitlisted attendee. Allow any
         // signed-in user to update ANOTHER attendee doc ONLY to flip status
         // from 'waitlist' to 'going' (they can promote, never demote/delete).
+        // Never on a paid event: a waitlist place there is not a paid seat.
         allow update: if isSignedIn()
           && resource.data.status == 'waitlist'
           && request.resource.data.status == 'going'
-          && !touchesCheckIn();
+          && !paidEvent()
+          && !touchesCheckIn()
+          && !touchesTicket();
         // Delegated scanners (allowedScannerIds) no longer write here: they
         // check people in through checkInEventAttendee like the organizer.
       }
@@ -2152,7 +2196,19 @@ service cloud.firestore {
           && (d.get('paymentMethods', null) == null
               || (d.paymentMethods is list
                   && d.paymentMethods.size() <= 2
-                  && d.paymentMethods.toSet().hasOnly(['cash', 'link'])))
+                  && d.paymentMethods.toSet().hasOnly(['cash', 'link'])
+                  || (d.paymentMethods is list
+                      && d.paymentMethods.size() == 1
+                      && d.paymentMethods[0] == 'online'
+                      && d.get('paymentProvider', null) in ['stripe', 'mercadopago', 'link'])))
+          // Paid tickets (ticket_payments/): provider + link-mode method.
+          && (d.get('paymentProvider', null) == null
+              || d.paymentProvider in ['stripe', 'mercadopago', 'link'])
+          && (d.get('paymentLinkMethod', null) == null
+              || d.paymentLinkMethod in ['pix', 'mercadoPago', 'picPay', 'paypal', 'venmo',
+                   'cashApp', 'revolut', 'wise', 'monzo', 'kofi', 'stripe', 'cash', 'bankTransfer'])
+          && (d.get('paymentInstructions', null) == null
+              || (d.paymentInstructions is string && d.paymentInstructions.size() <= 500))
           // Bookings: the host approves each request (snapshotted per booking).
           && (d.get('requestToBook', false) is bool);
       }
@@ -2191,7 +2247,7 @@ service cloud.firestore {
           && uid == request.auth.uid
           && request.resource.data.keys()
                .hasOnly(['acceptedAt', 'policy', 'version', 'experienceId', 'method'])
-          && request.resource.data.get('method', 'link') in ['cash', 'link']
+          && request.resource.data.get('method', 'link') in ['cash', 'link', 'online']
           && request.resource.data.acceptedAt == request.time
           && request.resource.data.policy in ['flexible', 'moderate', 'strict']
           && request.resource.data.version is int
@@ -2359,6 +2415,35 @@ service cloud.firestore {
     // No money moves through GreenGo (cash / the host's link). Every write
     // goes through the booking callables / jobs (Admin SDK); the guest and the
     // host read their own bookings, admins read all.
+    // ============================================================================
+    // PAID TICKETS (functions/src/ticket_payments/) - ALL WRITES SERVER-ONLY
+    // ============================================================================
+    // Organizer payout accounts: public status only (no secrets). The owner reads.
+    match /payment_accounts/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false;
+    }
+    // MP OAuth tokens (sealed): no client access at all.
+    match /payment_accounts_private/{uid} {
+      allow read, write: if false;
+    }
+    // Orders: the buyer and the listing organizer read them (per-user indexed
+    // queries: buyerId / organizerId + status). Status changes only through
+    // callables + provider webhooks.
+    match /ticket_orders/{orderId} {
+      allow read: if isSignedIn()
+        && (resource.data.buyerId == request.auth.uid
+            || resource.data.organizerId == request.auth.uid);
+      allow write: if false;
+    }
+    // Issued tickets carry the signed QR: ONLY the buyer reads them.
+    match /tickets/{ticketId} {
+      allow read: if isSignedIn() && resource.data.buyerId == request.auth.uid;
+      allow write: if false;
+    }
+    // ticket_inventory, ticket_codes, payment_events, server_secrets: no
+    // match = default deny (server only).
+
     match /bookings/{bookingId} {
       allow get, list: if isSignedIn()
         && (resource.data.guestId == request.auth.uid

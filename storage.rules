@@ -272,6 +272,28 @@ service firebase.storage {
       allow delete: if isSupportMember(conversationId) && deleterOk();
     }
 
+    // Link-mode ticket payment receipts (functions/src/ticket_payments/):
+    // ticket_receipts/{orderId}/{file}. The BUYER uploads one image (<= 5 MB)
+    // while the order waits for payment / confirmation; the buyer and the
+    // listing ORGANIZER (and staff) can read it. Moderated as a private image
+    // (moderateUploadedImage). Never overwritten, never client-deleted.
+    match /ticket_receipts/{orderId}/{fileName} {
+      function ticketOrder() {
+        return firestore.get(/databases/(default)/documents/ticket_orders/$(orderId)).data;
+      }
+      allow get: if isStaff()
+        || (signedIn()
+            && (ticketOrder().buyerId == request.auth.uid
+                || ticketOrder().organizerId == request.auth.uid));
+      allow create: if signedIn()
+        && ticketOrder().buyerId == request.auth.uid
+        && ticketOrder().status in ['pending_payment', 'awaiting_confirmation']
+        && isChatImage(5)
+        && uploaderStampOk()
+        && isNewObject();
+      allow update, delete: if false;
+    }
+
     // Business verification document — owner (userId in path) writes; the owner
     // and admins can read it back (owner needs to display upload status).
     match /business_verification/{userId}/{allPaths=**} {

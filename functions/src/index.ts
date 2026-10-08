@@ -747,7 +747,30 @@ export {
 
 // QR check-in for events: signed tickets verified by the server, and the
 // shared "met in person" record (checkin/).
-export { getEventTicketCode, checkInEventAttendee } from './checkin/eventCheckin';
+export { getEventTicketCode, checkInEventAttendee, checkInTicket } from './checkin/eventCheckin';
+
+// Paid tickets for events + experiences (docs/payments/ticket-payments.md):
+// link mode (organizer confirms) + instant mode (Stripe Connect Standard /
+// Mercado Pago OAuth). Money goes straight to the organizer; no GreenGo fee.
+export {
+  getTicketPaymentsConfig,
+  startStripeOnboarding,
+  startMercadoPagoOnboarding,
+  refreshPaymentAccount,
+  createTicketCheckout,
+  syncTicketOrder,
+  cancelTicketOrder,
+  markTicketPaymentSent,
+  confirmTicketPayment,
+  rejectTicketPayment,
+  stripeConnectWebhook,
+  mercadoPagoWebhook,
+  mpOAuthCallback,
+  ticketCheckoutReturn,
+  expireTicketOrders,
+  remindTicketConfirmations,
+  refreshMercadoPagoTokens,
+} from './ticket_payments';
 
 // P3-5 security-event alerts (email to SECURITY_ALERT_EMAILS)
 export {
