@@ -7,10 +7,12 @@
  * endpoint, but Cloud Functions IPs are rate-limited (429) quickly, so the app
  * often translates on the device instead — and that work was never shared.
  *
- * Trust model: a contribution becomes a shared translation only once TWO
- * DIFFERENT users independently submitted the SAME (whitespace / Unicode
- * normalised) translation of the same (target, text). One user alone can
- * never plant text. Until then the votes sit in
+ * Trust model: a contribution becomes a shared translation only once THREE
+ * DIFFERENT QUALIFIED users (Auth account older than 7 days AND email
+ * verified) independently submitted the SAME (whitespace / Unicode
+ * normalised) translation of the same (target, text), or an admin submitted
+ * it (security Phase 1, M-06; was two accounts of any age). Submissions from
+ * accounts that do not qualify are accepted but not recorded. Until then the votes sit in
  * `translation_candidates/{id}` (server only, TTL on `expireAt`).
  *
  *   id = sharedTranslationId(target, text)   (same id as translations/{id})
@@ -31,9 +33,9 @@
  * KNOWN LIMIT: the server cannot cheaply verify that a submitted text really
  * is public content (or even exists anywhere in the app). That is acceptable:
  * a translation is only ever served to someone who asks for EXACTLY that text
- * (the id is a hash of it), two distinct accounts must agree, moderation
+ * (the id is a hash of it), three distinct qualified accounts must agree, moderation
  * filters abusive output, and the quota bounds volume. A single person with
- * two accounts can still agree with themselves — the same moderation and
+ * three aged, verified accounts can still agree with themselves — the same moderation and
  * quota apply, and `origin: 'consensus'` + `voters` on the stored doc let an
  * admin find and purge such entries.
  *
@@ -46,13 +48,18 @@ import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
 import { MAX_CHARS, TARGET_RE, sharedTranslationId } from './sharedTranslations';
 import { containsLink, findContactInfo, findProhibitedTerms } from '../user_experiences/moderation';
+import { isAdminCaller } from '../shared/adminAuth';
 
 const db = admin.firestore();
 
 export const MAX_ITEMS = 20;
 export const DAILY_SUBMIT_QUOTA = 500;
-/** Distinct users needed before a translation is shared. */
-export const CONSENSUS_USERS = 2;
+/** Distinct QUALIFIED users needed before a translation is shared. */
+export const CONSENSUS_USERS = 3;
+/** A voter's Auth account must be at least this old ... */
+export const MIN_ACCOUNT_AGE_MS = 7 * 864e5;
+/** ... and email-verified. Candidates from before these rules are discarded. */
+export const CANDIDATE_RULES_VERSION = 2;
 /** Bounded doc size: at most this many uids per variant ... */
 export const MAX_UIDS_PER_VARIANT = 5;
 /** ... and this many competing variants per candidate. */
@@ -164,6 +171,25 @@ function isBlocked(p: Record<string, unknown>): boolean {
   return p.isBanned === true || ['banned', 'suspended', 'deleted'].includes(status);
 }
 
+/** M-06: may this Auth account's vote count towards consensus? */
+export function qualifiesForConsensus(
+  user: { emailVerified?: boolean; metadata?: { creationTime?: string } } | null | undefined,
+  now = Date.now(),
+): boolean {
+  if (!user || user.emailVerified !== true) return false;
+  const created = Date.parse(user.metadata?.creationTime ?? '');
+  return Number.isFinite(created) && now - created >= MIN_ACCOUNT_AGE_MS;
+}
+
+async function voterStatus(auth: { uid: string; token?: any }): Promise<'admin' | 'qualified' | 'none'> {
+  if (await isAdminCaller(auth)) return 'admin';
+  try {
+    return qualifiesForConsensus(await admin.auth().getUser(auth.uid)) ? 'qualified' : 'none';
+  } catch {
+    return 'none';
+  }
+}
+
 // ─────────────────────────────────────────────────────────── callable
 
 interface Req {
@@ -214,6 +240,12 @@ export const submitSharedTranslations = onCall<Req>(
     let items = [...byId.values()];
     if (items.length === 0) return { accepted: 0, shared: 0, rejected, existing: 0 };
 
+    // M-06: votes only from qualified accounts; an admin's vote shares alone.
+    const status = await voterStatus(request.auth!);
+    if (status === 'none') {
+      return { accepted: 0, shared: 0, rejected, existing: 0, notEligible: true };
+    }
+
     // Already shared → nothing to do (and not charged to the quota).
     const snaps = await db.getAll(...items.map((it) => db.collection('translations').doc(it.id)));
     const existingIds = new Set(items.filter((_, i) => snaps[i].exists).map((it) => it.id));
@@ -254,9 +286,16 @@ export const submitSharedTranslations = onCall<Req>(
             return false;
           }
           const now = Date.now();
-          const { candidate, consensus } = applyVote(c.exists ? (c.data() as Candidate) : null, {
+          // Candidates written under the old 2-any-account rule are discarded.
+          const prior = c.exists && c.data()?.rules === CANDIDATE_RULES_VERSION
+            ? (c.data() as Candidate) : null;
+          const outcome = applyVote(prior, {
             uid, target, textHash, translation: it.translation, now,
           });
+          const { candidate } = outcome;
+          const consensus = status === 'admin'
+            ? { translation: cleanTranslation(it.translation), uids: [uid] }
+            : outcome.consensus;
           if (consensus) {
             // Same shape translateTexts writes (clients read `translated`);
             // `source` stays the DETECTED-language field, unknown here.
@@ -265,7 +304,7 @@ export const submitSharedTranslations = onCall<Req>(
               translated: consensus.translation,
               source: null,
               createdAt: admin.firestore.FieldValue.serverTimestamp(),
-              origin: 'consensus',
+              origin: status === 'admin' ? 'admin' : 'consensus',
               voters: consensus.uids,
             });
             tx.delete(candRef);
@@ -273,6 +312,7 @@ export const submitSharedTranslations = onCall<Req>(
           }
           tx.set(candRef, {
             ...candidate,
+            rules: CANDIDATE_RULES_VERSION,
             updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             expireAt: admin.firestore.Timestamp.fromMillis(now + CANDIDATE_TTL_MS),
           });
