@@ -28061,6 +28061,198 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Met in person {count} times · last {date}'**
   String metInPersonTimes(int count, String date);
+
+  /// Edit profile tile + editor title: user's own external payment links
+  ///
+  /// In en, this message translates to:
+  /// **'Payment methods'**
+  String get paymentLinksTitle;
+
+  /// No description provided for @paymentLinksNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No payment methods added'**
+  String get paymentLinksNone;
+
+  /// No description provided for @paymentLinksCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 payment method} other{{count} payment methods}}'**
+  String paymentLinksCount(int count);
+
+  /// No description provided for @paymentLinksInfoTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Get paid directly'**
+  String get paymentLinksInfoTitle;
+
+  /// No description provided for @paymentLinksInfoBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.'**
+  String get paymentLinksInfoBody;
+
+  /// No description provided for @paymentLinksHintHandle.
+  ///
+  /// In en, this message translates to:
+  /// **'Username or link'**
+  String get paymentLinksHintHandle;
+
+  /// No description provided for @paymentLinksHintPix.
+  ///
+  /// In en, this message translates to:
+  /// **'CPF, CNPJ, e-mail, +55 phone or random key'**
+  String get paymentLinksHintPix;
+
+  /// No description provided for @paymentLinksHintLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste your payment link'**
+  String get paymentLinksHintLink;
+
+  /// No description provided for @paymentLinkInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid {method} value — check it and try again'**
+  String paymentLinkInvalid(String method);
+
+  /// No description provided for @paymentLinksUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment methods updated'**
+  String get paymentLinksUpdated;
+
+  /// No description provided for @paymentLinksRules.
+  ///
+  /// In en, this message translates to:
+  /// **'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.'**
+  String get paymentLinksRules;
+
+  /// Profile section title listing the user's external payment methods
+  ///
+  /// In en, this message translates to:
+  /// **'Pay directly'**
+  String get paymentLinksSection;
+
+  /// No description provided for @paymentDisclaimerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay {name} directly'**
+  String paymentDisclaimerTitle(String name);
+
+  /// No description provided for @paymentDisclaimerBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This payment goes from you to {name} through {method}. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.'**
+  String paymentDisclaimerBody(String name, String method);
+
+  /// No description provided for @paymentContinueTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue to {method}'**
+  String paymentContinueTo(String method);
+
+  /// No description provided for @pixInstructions.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan the QR code or copy the Pix code into your bank app, then enter the amount there.'**
+  String get pixInstructions;
+
+  /// No description provided for @pixKeyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Pix key'**
+  String get pixKeyLabel;
+
+  /// No description provided for @pixCopyCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy Pix code'**
+  String get pixCopyCode;
+
+  /// No description provided for @pixCopyKey.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy key'**
+  String get pixCopyKey;
+
+  /// No description provided for @pixCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied — paste it in your bank app\'s Pix area'**
+  String get pixCopied;
+
+  /// Experience dates: switch to add the same times on several dates
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat'**
+  String get bkRepeat;
+
+  /// No description provided for @bkRepeatHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Add these times on several dates at once'**
+  String get bkRepeatHint;
+
+  /// No description provided for @bkRepeatThisDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat this date'**
+  String get bkRepeatThisDate;
+
+  /// No description provided for @bkRepeatDates.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply to dates'**
+  String get bkRepeatDates;
+
+  /// No description provided for @bkRepeatPickRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the dates on the calendar'**
+  String get bkRepeatPickRange;
+
+  /// No description provided for @bkRepeatOnDays.
+  ///
+  /// In en, this message translates to:
+  /// **'On these days'**
+  String get bkRepeatOnDays;
+
+  /// No description provided for @bkRepeatEveryDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Every day'**
+  String get bkRepeatEveryDay;
+
+  /// No description provided for @bkRepeatPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No dates match — choose a wider range or more days} =1{1 date will be added} other{{count} dates will be added}}'**
+  String bkRepeatPreview(int count);
+
+  /// No description provided for @bkRepeatCapped.
+  ///
+  /// In en, this message translates to:
+  /// **'up to {max} dates at a time'**
+  String bkRepeatCapped(int max);
+
+  /// No description provided for @bkRepeatAddButton.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Add dates} =1{Add 1 date} other{Add {count} dates}}'**
+  String bkRepeatAddButton(int count);
+
+  /// No description provided for @bkRepeatAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No new dates added} =1{1 date added} other{{count} dates added}}'**
+  String bkRepeatAdded(int count);
+
+  /// No description provided for @bkRepeatSkipped.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 already existed} other{{count} already existed}}'**
+  String bkRepeatSkipped(int count);
 }
 
 class _AppLocalizationsDelegate

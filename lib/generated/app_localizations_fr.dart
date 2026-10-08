@@ -16130,4 +16130,159 @@ class AppLocalizationsFr extends AppLocalizations {
   String metInPersonTimes(int count, String date) {
     return 'Rencontré $count fois · dernière $date';
   }
+
+  @override
+  String get paymentLinksTitle => 'Payment methods';
+
+  @override
+  String get paymentLinksNone => 'No payment methods added';
+
+  @override
+  String paymentLinksCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count payment methods',
+      one: '1 payment method',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get paymentLinksInfoTitle => 'Get paid directly';
+
+  @override
+  String get paymentLinksInfoBody =>
+      'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.';
+
+  @override
+  String get paymentLinksHintHandle => 'Username or link';
+
+  @override
+  String get paymentLinksHintPix =>
+      'CPF, CNPJ, e-mail, +55 phone or random key';
+
+  @override
+  String get paymentLinksHintLink => 'Paste your payment link';
+
+  @override
+  String paymentLinkInvalid(String method) {
+    return 'Invalid $method value — check it and try again';
+  }
+
+  @override
+  String get paymentLinksUpdated => 'Payment methods updated';
+
+  @override
+  String get paymentLinksRules =>
+      'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.';
+
+  @override
+  String get paymentLinksSection => 'Pay directly';
+
+  @override
+  String paymentDisclaimerTitle(String name) {
+    return 'Pay $name directly';
+  }
+
+  @override
+  String paymentDisclaimerBody(String name, String method) {
+    return 'This payment goes from you to $name through $method. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.';
+  }
+
+  @override
+  String paymentContinueTo(String method) {
+    return 'Continue to $method';
+  }
+
+  @override
+  String get pixInstructions =>
+      'Scan the QR code or copy the Pix code into your bank app, then enter the amount there.';
+
+  @override
+  String get pixKeyLabel => 'Pix key';
+
+  @override
+  String get pixCopyCode => 'Copy Pix code';
+
+  @override
+  String get pixCopyKey => 'Copy key';
+
+  @override
+  String get pixCopied => 'Copied — paste it in your bank app\'s Pix area';
+
+  @override
+  String get bkRepeat => 'Répéter';
+
+  @override
+  String get bkRepeatHint =>
+      'Ajoutez ces horaires sur plusieurs dates à la fois';
+
+  @override
+  String get bkRepeatThisDate => 'Répéter cette date';
+
+  @override
+  String get bkRepeatDates => 'Appliquer aux dates';
+
+  @override
+  String get bkRepeatPickRange => 'Choisissez les dates sur le calendrier';
+
+  @override
+  String get bkRepeatOnDays => 'Ces jours-là';
+
+  @override
+  String get bkRepeatEveryDay => 'Tous les jours';
+
+  @override
+  String bkRepeatPreview(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dates seront ajoutées',
+      one: '1 date sera ajoutée',
+      zero:
+          'Aucune date ne correspond — choisissez une période plus large ou plus de jours',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkRepeatCapped(int max) {
+    return 'jusqu\'à $max dates à la fois';
+  }
+
+  @override
+  String bkRepeatAddButton(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ajouter $count dates',
+      one: 'Ajouter 1 date',
+      zero: 'Ajouter des dates',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkRepeatAdded(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dates ajoutées',
+      one: '1 date ajoutée',
+      zero: 'Aucune nouvelle date ajoutée',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkRepeatSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count existaient déjà',
+      one: '1 existait déjà',
+    );
+    return '$_temp0';
+  }
 }

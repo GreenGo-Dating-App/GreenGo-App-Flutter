@@ -70,6 +70,7 @@ import 'edit_bio_screen.dart';
 import 'edit_interests_screen.dart';
 import 'edit_location_screen.dart';
 import 'edit_nickname_screen.dart';
+import 'edit_payment_links_screen.dart';
 import 'edit_social_links_screen.dart';
 import 'edit_voice_screen.dart';
 import 'photo_management_screen.dart';
@@ -426,6 +427,15 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: _getSocialLinksSubtitle(context, activeProfile),
                         icon: Icons.share,
                         onTap: () => _navigateToEditSocialLinks(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Payment methods — the user's own external accounts so
+                      // others can pay them directly (never via GreenGo).
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.paymentLinksTitle,
+                        subtitle: _getPaymentLinksSubtitle(context, activeProfile),
+                        icon: Icons.payments,
+                        onTap: () => _navigateToEditPaymentLinks(context, activeProfile),
                       ),
                       // NOTE: Business / Venue entries were intentionally moved
                       // OUT of "Edit profile". They now live behind the single
@@ -1098,6 +1108,26 @@ class EditProfileScreen extends StatelessWidget {
       ),
     );
     // Profile updates are propagated through shared BLoC - no reload needed
+  }
+
+  String _getPaymentLinksSubtitle(BuildContext context, Profile profile) {
+    final methods = profile.paymentLinks?.methods ?? const [];
+    if (methods.isEmpty) {
+      return AppLocalizations.of(context)!.paymentLinksNone;
+    }
+    return AppLocalizations.of(context)!.paymentLinksCount(methods.length);
+  }
+
+  Future<void> _navigateToEditPaymentLinks(BuildContext context, Profile currentProfile) async {
+    final profileBloc = context.read<ProfileBloc>();
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => BlocProvider.value(
+          value: profileBloc,
+          child: EditPaymentLinksScreen(profile: currentProfile),
+        ),
+      ),
+    );
   }
 
   String _getAboutMeSubtitle(BuildContext context, Profile profile) {

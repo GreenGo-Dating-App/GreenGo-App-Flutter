@@ -128,6 +128,17 @@ class ActionSuccessDialog extends StatefulWidget {
     );
   }
 
+  /// Show payment methods updated success dialog
+  static Future<void> showPaymentLinksUpdated(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    return _show(
+      context,
+      title: l10n.paymentLinksUpdated,
+      message: l10n.paymentLinksInfoTitle,
+      icon: Icons.payments,
+    );
+  }
+
   /// Show photos updated success dialog
   static Future<void> showPhotosUpdated(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;

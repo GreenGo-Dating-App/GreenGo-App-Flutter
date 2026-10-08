@@ -4,6 +4,7 @@ import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart';
 import '../../domain/entities/profile.dart';
 import '../profile_geohash.dart';
+import '../../domain/entities/payment_links.dart';
 import '../../domain/entities/social_links.dart';
 
 class ProfileModel extends Profile {
@@ -41,6 +42,7 @@ class ProfileModel extends Profile {
     super.isSupport,
     super.is2FAEnabled,
     super.socialLinks,
+    super.paymentLinks,
     super.membershipTier,
     super.membershipStartDate,
     super.membershipEndDate,
@@ -129,6 +131,7 @@ class ProfileModel extends Profile {
       isSupport: profile.isSupport,
       is2FAEnabled: profile.is2FAEnabled,
       socialLinks: profile.socialLinks,
+      paymentLinks: profile.paymentLinks,
       membershipTier: profile.membershipTier,
       membershipStartDate: profile.membershipStartDate,
       membershipEndDate: profile.membershipEndDate,
@@ -245,6 +248,10 @@ class ProfileModel extends Profile {
       is2FAEnabled: json['is2FAEnabled'] as bool? ?? false,
       socialLinks: json['socialLinks'] != null
           ? SocialLinksModel.fromJson(json['socialLinks'] as Map<String, dynamic>)
+          : null,
+      paymentLinks: json['paymentLinks'] is Map
+          ? PaymentLinksModel.fromJson(
+              Map<String, dynamic>.from(json['paymentLinks'] as Map))
           : null,
       membershipTier: MembershipTier.fromString(json['membershipTier'] as String? ?? 'FREE'),
       membershipStartDate: json['membershipStartDate'] != null
@@ -429,6 +436,9 @@ class ProfileModel extends Profile {
       'socialLinks': socialLinks != null
           ? SocialLinksModel.fromEntity(socialLinks!).toJson()
           : null,
+      'paymentLinks': paymentLinks != null
+          ? PaymentLinksModel.fromEntity(paymentLinks!).toJson()
+          : null,
       'membershipTier': membershipTier.value,
       'membershipStartDate': membershipStartDate != null
           ? Timestamp.fromDate(membershipStartDate!)
@@ -522,6 +532,32 @@ class SocialLinksModel extends SocialLinks {
       'x': x,
     };
   }
+}
+
+class PaymentLinksModel extends PaymentLinks {
+  const PaymentLinksModel([super.values]);
+
+  factory PaymentLinksModel.fromEntity(PaymentLinks links) =>
+      PaymentLinksModel(links.values);
+
+  /// Unknown keys and non-string values are ignored, so a provider removed
+  /// from [PaymentMethod] later never breaks profile parsing.
+  factory PaymentLinksModel.fromJson(Map<String, dynamic> json) {
+    final values = <PaymentMethod, String>{};
+    json.forEach((key, value) {
+      final method = PaymentMethod.fromKey(key);
+      if (method != null && value is String && value.isNotEmpty) {
+        values[method] = value;
+      }
+    });
+    return PaymentLinksModel(values);
+  }
+
+  /// Every provider key is written (null when unset) so that a merge write
+  /// clears a removed link instead of keeping the old nested value.
+  Map<String, dynamic> toJson() => {
+        for (final m in PaymentMethod.values) m.key: valueOf(m),
+      };
 }
 
 class LocationModel extends Location {

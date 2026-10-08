@@ -9,6 +9,7 @@ import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../core/widgets/met_in_person_badge.dart';
+import '../../../profile/presentation/widgets/payment_methods_section.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -815,6 +816,20 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                             spacing: 12,
                             runSpacing: 12,
                             children: _buildSocialLinkButtons(),
+                          ),
+                          const SizedBox(height: 24),
+                        ],
+
+                        // Pay directly — the user's own external payment
+                        // methods; money never goes through GreenGo.
+                        if (!_isSelfView &&
+                            (widget.profile.paymentLinks?.hasAnyLink ?? false)) ...[
+                          _buildSectionTitle(AppLocalizations.of(context)!.paymentLinksSection),
+                          const SizedBox(height: 12),
+                          PaymentMethodsSection(
+                            links: widget.profile.paymentLinks!,
+                            receiverName: widget.profile.displayName,
+                            receiverCity: widget.profile.location.city,
                           ),
                           const SizedBox(height: 24),
                         ],

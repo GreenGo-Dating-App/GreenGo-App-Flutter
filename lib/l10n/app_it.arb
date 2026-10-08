@@ -5246,5 +5246,17 @@
   "expAttendanceCount": "{checked}/{total} presenti",
   "qrHubExperienceTicket": "Esperienza",
   "metInPersonOn": "Vi siete incontrati · {date}",
-  "metInPersonTimes": "Incontrati {count} volte · ultima {date}"
+  "metInPersonTimes": "Incontrati {count} volte · ultima {date}",
+  "bkRepeat": "Ripeti",
+  "bkRepeatHint": "Aggiungi questi orari su più date in una volta",
+  "bkRepeatThisDate": "Ripeti questa data",
+  "bkRepeatDates": "Applica alle date",
+  "bkRepeatPickRange": "Scegli le date sul calendario",
+  "bkRepeatOnDays": "In questi giorni",
+  "bkRepeatEveryDay": "Tutti i giorni",
+  "bkRepeatPreview": "{count, plural, =0{Nessuna data corrisponde — scegli un periodo più ampio o più giorni} =1{Verrà aggiunta 1 data} other{Verranno aggiunte {count} date}}",
+  "bkRepeatCapped": "fino a {max} date alla volta",
+  "bkRepeatAddButton": "{count, plural, =0{Aggiungi date} =1{Aggiungi 1 data} other{Aggiungi {count} date}}",
+  "bkRepeatAdded": "{count, plural, =0{Nessuna nuova data aggiunta} =1{1 data aggiunta} other{{count} date aggiunte}}",
+  "bkRepeatSkipped": "{count, plural, =1{1 esisteva già} other{{count} esistevano già}}"
 }

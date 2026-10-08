@@ -5246,5 +5246,17 @@
   "expAttendanceCount": "{checked}/{total} da",
   "qrHubExperienceTicket": "Erlebnis",
   "metInPersonOn": "Persönlich getroffen · {date}",
-  "metInPersonTimes": "{count}-mal persönlich getroffen · zuletzt {date}"
+  "metInPersonTimes": "{count}-mal persönlich getroffen · zuletzt {date}",
+  "bkRepeat": "Wiederholen",
+  "bkRepeatHint": "Diese Zeiten an mehreren Terminen auf einmal hinzufügen",
+  "bkRepeatThisDate": "Diesen Termin wiederholen",
+  "bkRepeatDates": "Auf Termine anwenden",
+  "bkRepeatPickRange": "Wähle die Daten im Kalender",
+  "bkRepeatOnDays": "An diesen Tagen",
+  "bkRepeatEveryDay": "Jeden Tag",
+  "bkRepeatPreview": "{count, plural, =0{Kein Datum passt — wähle einen längeren Zeitraum oder mehr Tage} =1{1 Termin wird hinzugefügt} other{{count} Termine werden hinzugefügt}}",
+  "bkRepeatCapped": "bis zu {max} Termine auf einmal",
+  "bkRepeatAddButton": "{count, plural, =0{Termine hinzufügen} =1{1 Termin hinzufügen} other{{count} Termine hinzufügen}}",
+  "bkRepeatAdded": "{count, plural, =0{Keine neuen Termine hinzugefügt} =1{1 Termin hinzugefügt} other{{count} Termine hinzugefügt}}",
+  "bkRepeatSkipped": "{count, plural, =1{1 gab es bereits} other{{count} gab es bereits}}"
 }

@@ -4665,5 +4665,17 @@
   "expAttendanceCount": "{checked}/{total} présents",
   "qrHubExperienceTicket": "Expérience",
   "metInPersonOn": "Rencontré en personne · {date}",
-  "metInPersonTimes": "Rencontré {count} fois · dernière {date}"
+  "metInPersonTimes": "Rencontré {count} fois · dernière {date}",
+  "bkRepeat": "Répéter",
+  "bkRepeatHint": "Ajoutez ces horaires sur plusieurs dates à la fois",
+  "bkRepeatThisDate": "Répéter cette date",
+  "bkRepeatDates": "Appliquer aux dates",
+  "bkRepeatPickRange": "Choisissez les dates sur le calendrier",
+  "bkRepeatOnDays": "Ces jours-là",
+  "bkRepeatEveryDay": "Tous les jours",
+  "bkRepeatPreview": "{count, plural, =0{Aucune date ne correspond — choisissez une période plus large ou plus de jours} =1{1 date sera ajoutée} other{{count} dates seront ajoutées}}",
+  "bkRepeatCapped": "jusqu'à {max} dates à la fois",
+  "bkRepeatAddButton": "{count, plural, =0{Ajouter des dates} =1{Ajouter 1 date} other{Ajouter {count} dates}}",
+  "bkRepeatAdded": "{count, plural, =0{Aucune nouvelle date ajoutée} =1{1 date ajoutée} other{{count} dates ajoutées}}",
+  "bkRepeatSkipped": "{count, plural, =1{1 existait déjà} other{{count} existaient déjà}}"
 }

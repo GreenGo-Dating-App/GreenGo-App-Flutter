@@ -15874,4 +15874,157 @@ class AppLocalizationsEn extends AppLocalizations {
   String metInPersonTimes(int count, String date) {
     return 'Met in person $count times · last $date';
   }
+
+  @override
+  String get paymentLinksTitle => 'Payment methods';
+
+  @override
+  String get paymentLinksNone => 'No payment methods added';
+
+  @override
+  String paymentLinksCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count payment methods',
+      one: '1 payment method',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get paymentLinksInfoTitle => 'Get paid directly';
+
+  @override
+  String get paymentLinksInfoBody =>
+      'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.';
+
+  @override
+  String get paymentLinksHintHandle => 'Username or link';
+
+  @override
+  String get paymentLinksHintPix =>
+      'CPF, CNPJ, e-mail, +55 phone or random key';
+
+  @override
+  String get paymentLinksHintLink => 'Paste your payment link';
+
+  @override
+  String paymentLinkInvalid(String method) {
+    return 'Invalid $method value — check it and try again';
+  }
+
+  @override
+  String get paymentLinksUpdated => 'Payment methods updated';
+
+  @override
+  String get paymentLinksRules =>
+      'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.';
+
+  @override
+  String get paymentLinksSection => 'Pay directly';
+
+  @override
+  String paymentDisclaimerTitle(String name) {
+    return 'Pay $name directly';
+  }
+
+  @override
+  String paymentDisclaimerBody(String name, String method) {
+    return 'This payment goes from you to $name through $method. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.';
+  }
+
+  @override
+  String paymentContinueTo(String method) {
+    return 'Continue to $method';
+  }
+
+  @override
+  String get pixInstructions =>
+      'Scan the QR code or copy the Pix code into your bank app, then enter the amount there.';
+
+  @override
+  String get pixKeyLabel => 'Pix key';
+
+  @override
+  String get pixCopyCode => 'Copy Pix code';
+
+  @override
+  String get pixCopyKey => 'Copy key';
+
+  @override
+  String get pixCopied => 'Copied — paste it in your bank app\'s Pix area';
+
+  @override
+  String get bkRepeat => 'Repeat';
+
+  @override
+  String get bkRepeatHint => 'Add these times on several dates at once';
+
+  @override
+  String get bkRepeatThisDate => 'Repeat this date';
+
+  @override
+  String get bkRepeatDates => 'Apply to dates';
+
+  @override
+  String get bkRepeatPickRange => 'Choose the dates on the calendar';
+
+  @override
+  String get bkRepeatOnDays => 'On these days';
+
+  @override
+  String get bkRepeatEveryDay => 'Every day';
+
+  @override
+  String bkRepeatPreview(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dates will be added',
+      one: '1 date will be added',
+      zero: 'No dates match — choose a wider range or more days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkRepeatCapped(int max) {
+    return 'up to $max dates at a time';
+  }
+
+  @override
+  String bkRepeatAddButton(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Add $count dates',
+      one: 'Add 1 date',
+      zero: 'Add dates',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkRepeatAdded(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dates added',
+      one: '1 date added',
+      zero: 'No new dates added',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bkRepeatSkipped(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count already existed',
+      one: '1 already existed',
+    );
+    return '$_temp0';
+  }
 }
