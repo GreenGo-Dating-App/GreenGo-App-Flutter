@@ -16294,6 +16294,21 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get onboardingAgeBlockedBody =>
       'Tem de ter pelo menos 18 anos para usar a GreenGo, por isso não podemos criar a sua conta.';
+
+  @override
+  String get distanceBucketUnder2Km => 'a menos de 2 km';
+
+  @override
+  String get distanceBucket2To5Km => 'a 2-5 km';
+
+  @override
+  String get distanceBucket5To10Km => 'a 5-10 km';
+
+  @override
+  String get distanceBucket10To25Km => 'a 10-25 km';
+
+  @override
+  String get distanceBucketOver25Km => 'a mais de 25 km';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -32587,4 +32602,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get onboardingAgeBlockedBody =>
       'Você precisa ter pelo menos 18 anos para usar o GreenGo, por isso não podemos criar sua conta.';
+
+  @override
+  String get distanceBucketUnder2Km => 'a menos de 2 km';
+
+  @override
+  String get distanceBucket2To5Km => 'a 2-5 km';
+
+  @override
+  String get distanceBucket5To10Km => 'a 5-10 km';
+
+  @override
+  String get distanceBucket10To25Km => 'a 10-25 km';
+
+  @override
+  String get distanceBucketOver25Km => 'a mais de 25 km';
 }

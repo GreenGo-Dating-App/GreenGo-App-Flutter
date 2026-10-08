@@ -10,6 +10,7 @@ import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/utils/distance_bucket.dart';
 
 /// Reusable, Apple-safe replica of the 2.2.4 Network grid card.
 ///
@@ -129,7 +130,9 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
     final hasMultiplePhotos = photoUrls.length > 1;
 
     final location = profile.effectiveLocation;
-    final distanceText = widget.candidate.distanceText;
+    // Approximate distance bucket ("2-5 km"), never an exact figure.
+    final distanceText =
+        distanceLabel(AppLocalizations.of(context)!, widget.candidate.distance);
     final matchPercentage = widget.candidate.matchScore.matchPercentageText;
     // Only surface the compatibility % when it is meaningful (> 0) and this is
     // not the user's own tile. Sources that carry no real score (e.g. the

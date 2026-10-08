@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../features/profile/data/models/profile_model.dart'
     show normalizeCountryName;
 import '../../features/passport/data/services/passport_service.dart';
+import '../../features/profile/data/private_profile.dart';
 import '../../features/profile/data/profile_geohash.dart';
 import 'location_change.dart';
 import 'own_profile_store.dart';
@@ -182,12 +183,14 @@ class LocationRefreshService {
       // reload anywhere.
       if (!isMeaningfulLocationChange(stored, fix)) {
         // Still repair a missing / stale discovery geohash (older profiles).
+        // (Private: the 9-char geohash is ~5 m precise. [raw] is the own
+        // view, i.e. it carries the private value when there is one.)
         final hash = raw == null ? null : profileGeohash(raw);
         if (hash != null && raw![kProfileGeohashField] != hash) {
-          await _firestore
-              .collection('profiles')
-              .doc(userId)
-              .update({kProfileGeohashField: hash});
+          await writePrivateProfile(_firestore, userId, {
+            kProfileGeohashField: hash,
+            'updatedAt': FieldValue.serverTimestamp(),
+          });
         }
         debugPrint('[LocationRefresh] Unchanged for $userId');
         return LocationRefreshOutcome.unchanged;
@@ -207,10 +210,21 @@ class LocationRefreshService {
       final country = place?.country ?? '';
       final displayAddress = city.isNotEmpty ? '$city, $country' : country;
 
-      // Build update map — always update coordinates
+      // Public profile: only the coarse place (city / country). The exact
+      // coordinates and the 9-char geohash go to the owner-only
+      // profiles_private document; the server derives the public
+      // geohash5 / approxLocation from them (security P1-4).
+      // `locationUpdatedAt` makes the public document change on every move,
+      // so screens listening to it (Explore header) re-read the location.
       final update = <String, dynamic>{
-        'location.latitude': position.latitude,
-        'location.longitude': position.longitude,
+        'locationUpdatedAt': FieldValue.serverTimestamp(),
+      };
+      final privateUpdate = <String, dynamic>{
+        'location': {
+          'latitude': position.latitude,
+          'longitude': position.longitude,
+        },
+        'updatedAt': FieldValue.serverTimestamp(),
       };
       if (city.isNotEmpty) update['location.city'] = city;
       if (country.isNotEmpty) {
@@ -233,10 +247,16 @@ class LocationRefreshService {
           },
         };
         final hash = profileGeohash(merged);
-        if (hash != null) update[kProfileGeohashField] = hash;
+        if (hash != null) privateUpdate[kProfileGeohashField] = hash;
       }
 
-      await _firestore.collection('profiles').doc(userId).update(update);
+      final batch = _firestore.batch();
+      if (update.isNotEmpty) {
+        batch.update(_firestore.collection('profiles').doc(userId), update);
+      }
+      await writePrivateProfile(_firestore, userId, privateUpdate,
+          batch: batch);
+      await batch.commit();
       // A real (GPS) location — never Traveler mode — so it counts toward the
       // countries visited shown on Explore.
       if (country.isNotEmpty) {

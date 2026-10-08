@@ -40,6 +40,7 @@ import 'group_info_screen.dart';
 import '../widgets/deleted_message_bubble.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
+import '../../../profile/data/private_album.dart';
 
 /// Group Chat Screen ("Culture Circle").
 ///
@@ -554,12 +555,8 @@ class _GroupChatViewState extends State<_GroupChatView> {
     final l10n = AppLocalizations.of(context)!;
     final bloc = context.read<GroupChatBloc>();
     final messenger = ScaffoldMessenger.of(context);
-    final doc = await FirebaseFirestore.instance
-        .collection('profiles')
-        .doc(widget.currentUserId)
-        .get();
-    final photos =
-        (doc.data()?['privatePhotoUrls'] as List<dynamic>? ?? []).cast<String>();
+    // Own private album: profiles_private (security P1-4).
+    final photos = await PrivateAlbum.own(widget.currentUserId);
     if (!mounted) return;
     if (photos.isEmpty) {
       messenger.showSnackBar(SnackBar(content: Text(l10n.chatNoPrivatePhotos)));

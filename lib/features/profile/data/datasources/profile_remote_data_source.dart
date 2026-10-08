@@ -8,6 +8,7 @@ import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/photo_validation_service.dart';
 import '../../../../core/utils/image_compression.dart';
 import '../models/profile_model.dart';
+import '../private_profile.dart';
 import '../../../../core/services/image_moderation_gate.dart';
 
 /// Fields the SERVER owns. A client write must never carry them.
@@ -24,6 +25,20 @@ import '../../../../core/services/image_moderation_gate.dart';
 /// to fail: the profile model always serialised hasBaseMembership, and once the
 /// server started granting a base membership at signup the client's `false`
 /// no longer matched.
+/// `uploadPhoto(folder:)` value for an ID-verification selfie, and the
+/// Storage prefix it is stored under (`verifications/{uid}/...`).
+const String kVerificationFolder = 'verifications';
+
+/// The Storage path of a download URL, or null when it isn't one.
+String? storagePathOfUrl(FirebaseStorage storage, String? url) {
+  if (url == null || url.isEmpty) return null;
+  try {
+    return storage.refFromURL(url).fullPath;
+  } catch (_) {
+    return null;
+  }
+}
+
 const _serverOwnedProfileFields = <String>{
   'membershipTier',
   'membershipStartDate',
@@ -105,10 +120,36 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
       // usually already exists by this point - applySignupGrants creates it to
       // record the welcome pack - so a bare set() would both be refused by the
       // rules and erase what the server had just written.
-      await firestore.collection('profiles').doc(profile.userId).set(
-            clientWritableProfile(profile.toJson()),
-            SetOptions(merge: true),
-          );
+      //
+      // Sensitive values (exact location, birth date, ...) go ONLY to the
+      // owner-only profiles_private document, in the same atomic batch; the
+      // server derives the public coarse fields (geohash5, approxLocation,
+      // age) from it.
+      final json = profile.toJson();
+      // The verification selfie is referenced by its Storage PATH, privately;
+      // its tokenised download URL is never stored.
+      final selfiePath =
+          storagePathOfUrl(storage, profile.verificationPhotoUrl);
+      if (selfiePath != null &&
+          selfiePath.startsWith('$kVerificationFolder/${profile.userId}/')) {
+        json[kVerificationPhotoPathField] ??= selfiePath;
+      }
+      final batch = firestore.batch();
+      batch.set(
+        firestore.collection('profiles').doc(profile.userId),
+        clientWritableProfile(publicSafeProfileJson(json)),
+        SetOptions(merge: true),
+      );
+      await writePrivateProfile(
+        firestore,
+        profile.userId,
+        privateProfileWrite(
+          json,
+          current: await PrivateProfileCache.instance.ensure(profile.userId),
+        ),
+        batch: batch,
+      );
+      await batch.commit();
       return profile;
     } on FirebaseException catch (e) {
       throw ServerException( e.message ?? 'Failed to create profile');
@@ -155,10 +196,30 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         profile.copyWith(updatedAt: DateTime.now()),
       );
 
-      await firestore
-          .collection('profiles')
-          .doc(profile.userId)
-          .update(updatedProfile.toJson());
+      // Public document: everything except the sensitive values, with nested
+      // location maps as dotted paths so the update never deletes the legacy
+      // coordinates old app versions still read. Sensitive values: only the
+      // ones that really changed, to profiles_private, in the same batch.
+      final json = updatedProfile.toJson();
+      final store = OwnProfileStore.instance;
+      final publicData = store.uid == profile.userId && store.raw != null
+          ? store.raw
+          : (await firestore.collection('profiles').doc(profile.userId).get())
+              .data();
+      final batch = firestore.batch()
+        ..update(firestore.collection('profiles').doc(profile.userId),
+            publicSafeProfileJson(json, forUpdate: true));
+      await writePrivateProfile(
+        firestore,
+        profile.userId,
+        privateProfileWrite(
+          json,
+          current: await PrivateProfileCache.instance.ensure(profile.userId),
+          publicData: publicData,
+        ),
+        batch: batch,
+      );
+      await batch.commit();
 
       // Sync displayName, photoUrl, region to user_levels for leaderboard
       try {
@@ -210,6 +271,13 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         } catch (_) {}
       }
 
+      final selfiePath = profile.verificationPhotoPath;
+      if (selfiePath != null && selfiePath.isNotEmpty) {
+        try {
+          await storage.ref(selfiePath).delete();
+        } catch (_) {}
+      }
+
       // Delete profile document (includes phone number, verification data, all personal info)
       await firestore.collection('profiles').doc(userId).delete();
     } on FirebaseException catch (e) {
@@ -230,7 +298,15 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
     try {
       final fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg';
       final folderPath = folder ?? 'photos';
-      final objectPath = 'profiles/$userId/$folderPath/$fileName';
+      // ID-verification selfies (security audit C-10) go to the owner+admin
+      // only `verifications/{uid}/` prefix: under `profiles/{uid}/` every
+      // signed-in user could read them. They are reviewed by an admin, so
+      // they skip the public-photo moderation wait below.
+      final isVerification = folderPath == kVerificationFolder;
+      final private = isPrivate || isVerification;
+      final objectPath = isVerification
+          ? '$kVerificationFolder/$userId/$fileName'
+          : 'profiles/$userId/$folderPath/$fileName';
       final ref = storage.ref().child(objectPath);
       final metadata = SettableMetadata(
         contentType: 'image/jpeg',
@@ -238,7 +314,7 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
           'userId': userId,
           // Read by the moderateUploadedImage Storage trigger. ABSENCE of this
           // flag means public, so nothing can skip moderation by omitting it.
-          'visibility': isPrivate ? 'private' : 'public',
+          'visibility': private ? 'private' : 'public',
           'requireFace': requireFace ? 'true' : 'false',
         },
       );
@@ -248,7 +324,7 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
         // directly. (Server-side moderation still applies.)
         final bytes = await photo.readAsBytes();
         final uploadTask = await ref.putData(bytes, metadata);
-        if (!isPrivate) {
+        if (!private) {
           await ImageModerationGate().awaitVerdict(objectPath);
         }
         return uploadTask.ref.getDownloadURL();
@@ -267,7 +343,7 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
       final uploadTask = await ref.putFile(photoToUpload, metadata);
       // On-device ML Kit already ran as a fast first pass, but it lives inside
       // the app and can be bypassed. This is the check that cannot be.
-      if (!isPrivate) {
+      if (!private) {
         await ImageModerationGate().awaitVerdict(objectPath);
       }
       return uploadTask.ref.getDownloadURL();

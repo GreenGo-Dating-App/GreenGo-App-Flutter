@@ -8070,5 +8070,25 @@
   "onboardingAgeBlockedBody": "You must be at least 18 years old to use GreenGo, so we cannot create your account.",
   "@onboardingAgeBlockedBody": {
     "description": "Age gate block dialog body"
+  },
+  "distanceBucketUnder2Km": "< 2 km",
+  "@distanceBucketUnder2Km": {
+    "description": "Approximate distance bucket: under 2 km"
+  },
+  "distanceBucket2To5Km": "2-5 km",
+  "@distanceBucket2To5Km": {
+    "description": "Approximate distance bucket: 2 to 5 km"
+  },
+  "distanceBucket5To10Km": "5-10 km",
+  "@distanceBucket5To10Km": {
+    "description": "Approximate distance bucket: 5 to 10 km"
+  },
+  "distanceBucket10To25Km": "10-25 km",
+  "@distanceBucket10To25Km": {
+    "description": "Approximate distance bucket: 10 to 25 km"
+  },
+  "distanceBucketOver25Km": "25+ km",
+  "@distanceBucketOver25Km": {
+    "description": "Approximate distance bucket: more than 25 km"
   }
 }

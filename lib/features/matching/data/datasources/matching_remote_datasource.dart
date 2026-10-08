@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import '../../../../core/services/candidate_pool_service.dart';
-import '../../../../core/utils/geo_query.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/data/profile_geohash.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -16,6 +15,8 @@ import '../../domain/usecases/compatibility_scorer.dart';
 import '../../domain/usecases/feature_engineer.dart';
 import '../models/match_preferences_model.dart';
 import '../models/user_vector_model.dart';
+import '../../../profile/data/private_profile.dart';
+import '../../../profile/data/profile_geo_scan.dart';
 
 /// Matching Remote Data Source
 ///
@@ -99,8 +100,11 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     eagerRandom?.ignore();
     final userDoc = await userDocFuture;
     if (!userDoc.exists) throw Exception('User profile not found');
+    // The viewer's own view (exact private location, birth date). Candidate
+    // profiles stay public views: their distance comes from approxLocation.
+    final viewerRaw = (await ownRawViewLoaded(userId, userDoc.data()))!;
 
-    final userProfile = ProfileModel.fromFirestore(userDoc);
+    final userProfile = ProfileModel.fromJson({...viewerRaw, 'userId': userId});
 
     // Pre-computed pools are only consulted with a country filter.
     final poolCandidateIds = hasCountries
@@ -141,7 +145,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
         profileDocs = await _worldwide(
           cachedCoordsFuture: cachedCoordsFuture!,
           geoFuture: geoFuture!,
-          viewerData: userDoc.data(),
+          viewerData: viewerRaw,
           maxDistanceKm: preferences.maxDistance,
           eagerRandom: eagerRandom,
         );
@@ -168,7 +172,7 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     // on a background isolate (plain maps in, plain entities out).
     final request = CandidateBuildRequest(
       userId: userId,
-      viewerData: userDoc.data()!,
+      viewerData: viewerRaw,
       docIds: [for (final d in profileDocs) d.id],
       docData: [for (final d in profileDocs) d.data()],
       minAge: preferences.minAge,
@@ -206,7 +210,8 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
           .collection('profiles')
           .doc(userId)
           .get(const GetOptions(source: Source.cache));
-      final data = doc.data();
+      // Own exact location: profiles_private (security P1-4).
+      final data = ownRawView(userId, doc.data());
       return data == null ? null : discoverableCoords(data);
     } catch (_) {
       return null;
@@ -214,10 +219,10 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
   }
 
   /// Profiles within [maxDistanceKm] of the point via up to 9 parallel
-  /// `orderBy('geohash')` range reads (single-field index; no composite).
-  /// Profiles that were never geohashed are simply not returned here — the
-  /// random slice still covers them. Returns null when the scan is not
-  /// applicable or fails, so the caller falls back to the old path.
+  /// range reads on the public `geohash5` (ProfileGeoScan; single-field
+  /// index, no composite). Profiles without a cell are simply not returned
+  /// here — the random slice still covers them. Returns null when the scan
+  /// is not applicable or fails, so the caller falls back to the old path.
   Future<List<QueryDocumentSnapshot<Map<String, dynamic>>>?> _geoScan(
     double lat,
     double lng,
@@ -226,23 +231,10 @@ class MatchingRemoteDataSourceImpl implements MatchingRemoteDataSource {
     final radiusKm =
         _isExplicitRadius(maxDistanceKm) ? maxDistanceKm : _defaultNearbyKm;
     try {
-      final bounds = GeoQuery.queryBounds(lat, lng, radiusKm * 1000);
-      final snaps = await Future.wait(bounds.map((b) => firestore
-          .collection('profiles')
-          .orderBy('geohash')
-          .startAt([b[0]])
-          .endAt([b[1]])
-          .limit(_geoPerRange)
-          .get()));
-      final seen = <String>{};
-      final out = <QueryDocumentSnapshot<Map<String, dynamic>>>[];
-      for (final snap in snaps) {
-        for (final d in snap.docs) {
-          if (seen.add(d.id)) out.add(d);
-        }
-      }
-      debugPrint('[Matching] Geo scan: ${out.length} profiles in '
-          '${bounds.length} ranges (${radiusKm.round()} km)');
+      final out = await ProfileGeoScan(firestore, perRange: _geoPerRange)
+          .near(lat, lng, radiusKm);
+      debugPrint('[Matching] Geo scan: ${out.length} profiles '
+          '(${radiusKm.round()} km)');
       return out;
     } catch (e) {
       debugPrint('[Matching] Geo scan unavailable, using random slice: $e');

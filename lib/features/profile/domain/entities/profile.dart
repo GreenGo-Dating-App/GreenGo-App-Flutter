@@ -96,6 +96,8 @@ class Profile extends Equatable {
     this.coverImageUrl,
     this.isBanned = false,
     this.isIdVerified = false,
+    this.publicAge,
+    this.verificationPhotoPath,
   });
   final String userId;
   final String displayName;
@@ -258,6 +260,16 @@ class Profile extends Equatable {
   /// written by the client ([isVerified] is the onboarding account approval).
   final bool isIdVerified;
 
+  /// Server-computed `profiles/{uid}.age` (security P1-4). Other users'
+  /// profiles show this instead of deriving it from a date of birth, which
+  /// moves to the owner-only `profiles_private`. Null on the own profile when
+  /// the exact birth date is known.
+  final int? publicAge;
+
+  /// Storage path of the ID-verification selfie (own profile only, from
+  /// `profiles_private`). Admins open it through `getVerificationPhotoUrl`.
+  final String? verificationPhotoPath;
+
   /// Show the "Verified" badge: approved ID document on an active account.
   bool get showVerifiedBadge =>
       isIdVerified && !isBanned && accountStatus == 'active';
@@ -305,6 +317,7 @@ class Profile extends Equatable {
       verificationStatus == VerificationStatus.notSubmitted;
 
   int get age {
+    if (publicAge != null) return publicAge!;
     final now = DateTime.now();
     var age = now.year - dateOfBirth.year;
     if (now.month < dateOfBirth.month ||
@@ -395,6 +408,8 @@ class Profile extends Equatable {
         coverImageUrl,
         isBanned,
         isIdVerified,
+        publicAge,
+        verificationPhotoPath,
       ];
 
   /// Copy with updated fields
@@ -479,6 +494,7 @@ class Profile extends Equatable {
     String? coverImageUrl,
     bool? isBanned,
     bool? isIdVerified,
+    String? verificationPhotoPath,
   }) {
     return Profile(
       userId: userId ?? this.userId,
@@ -562,6 +578,10 @@ class Profile extends Equatable {
       coverImageUrl: coverImageUrl ?? this.coverImageUrl,
       isBanned: isBanned ?? this.isBanned,
       isIdVerified: isIdVerified ?? this.isIdVerified,
+      // A new birth date makes the server's age stale: derive it locally.
+      publicAge: dateOfBirth != null ? null : publicAge,
+      verificationPhotoPath:
+          verificationPhotoPath ?? this.verificationPhotoPath,
     );
   }
 }

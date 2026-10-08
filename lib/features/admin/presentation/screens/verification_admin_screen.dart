@@ -6,6 +6,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/domain/entities/profile.dart';
+import '../../data/verification_photo_url.dart';
 import '../bloc/verification_admin_bloc.dart';
 import '../bloc/verification_admin_event.dart';
 import '../bloc/verification_admin_state.dart';
@@ -643,18 +644,36 @@ class _VerificationCard extends StatelessWidget {
             ),
           ),
 
-          // Verification photo
-          if (profile.verificationPhotoUrl != null)
-            Stack(
+          // Verification photo. New submissions keep only a Storage PATH in
+          // the owner-only profiles_private, so the image is fetched through
+          // the admin callable getVerificationPhotoUrl (short-lived URL);
+          // older submissions still carry the legacy public URL.
+          FutureBuilder<String?>(
+            future: resolveVerificationPhotoUrl(profile.userId,
+                legacyUrl: profile.verificationPhotoUrl),
+            builder: (context, snap) {
+              if (snap.connectionState != ConnectionState.done) {
+                return Container(
+                  width: double.infinity,
+                  height: 300,
+                  color: AppColors.divider,
+                  child: const Center(
+                    child: CircularProgressIndicator(color: AppColors.richGold),
+                  ),
+                );
+              }
+              final url = snap.data;
+              if (url != null) {
+                return Stack(
               children: [
                 GestureDetector(
-                  onTap: () => _showFullScreenImage(context, profile.verificationPhotoUrl!),
+                  onTap: () => _showFullScreenImage(context, url),
                   child: Container(
                     width: double.infinity,
                     height: 300,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: NetworkImage(profile.verificationPhotoUrl!),
+                        image: NetworkImage(url),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -664,7 +683,7 @@ class _VerificationCard extends StatelessWidget {
                   bottom: 8,
                   right: 8,
                   child: ElevatedButton.icon(
-                    onPressed: () => _showFullScreenImage(context, profile.verificationPhotoUrl!),
+                    onPressed: () => _showFullScreenImage(context, url),
                     icon: const Icon(Icons.fullscreen, size: 18),
                     label: Text(l10n.adminViewDocument),
                     style: ElevatedButton.styleFrom(
@@ -678,9 +697,9 @@ class _VerificationCard extends StatelessWidget {
                   ),
                 ),
               ],
-            )
-          else
-            Container(
+            );
+              }
+              return Container(
               width: double.infinity,
               height: 200,
               color: AppColors.divider,
@@ -701,7 +720,9 @@ class _VerificationCard extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
+            );
+            },
+          ),
 
           // Action buttons
           Padding(

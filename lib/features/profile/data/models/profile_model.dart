@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/location.dart';
 import '../../domain/entities/profile.dart';
+import '../private_profile.dart';
 import '../profile_geohash.dart';
 import '../../domain/entities/payment_links.dart';
 import '../../domain/entities/social_links.dart';
@@ -79,6 +80,8 @@ class ProfileModel extends Profile {
     super.coverImageUrl,
     super.isBanned,
     super.isIdVerified,
+    super.publicAge,
+    super.verificationPhotoPath,
   });
 
   factory ProfileModel.fromFirestore(DocumentSnapshot doc) {
@@ -168,10 +171,18 @@ class ProfileModel extends Profile {
       coverImageUrl: profile.coverImageUrl,
       isBanned: profile.isBanned,
       isIdVerified: profile.isIdVerified,
+      publicAge: profile.publicAge,
+      verificationPhotoPath: profile.verificationPhotoPath,
     );
   }
 
-  factory ProfileModel.fromJson(Map<String, dynamic> json) {
+  /// Parses a raw `profiles/{uid}` map. The own profile gets the exact values
+  /// from `profiles_private` laid over it (PrivateProfileCache); any other
+  /// user's profile is reduced to its public, approximate view (their exact
+  /// coordinates, still present on old-app profiles, are replaced by
+  /// `approxLocation`), so nothing downstream can compute an exact distance.
+  factory ProfileModel.fromJson(Map<String, dynamic> raw) {
+    final json = profileViewFor(raw);
     return ProfileModel(
       userId: json['userId'] as String,
       displayName: json['displayName'] as String? ?? 'Unknown',
@@ -318,6 +329,8 @@ class ProfileModel extends Profile {
       isBanned: json['isBanned'] as bool? ?? false,
       // Server-owned; read only (never in toJson).
       isIdVerified: json['isAgeVerified'] == true,
+      publicAge: (json[kPublicAgeField] as num?)?.toInt(),
+      verificationPhotoPath: json[kVerificationPhotoPathField] as String?,
     );
   }
 
@@ -422,6 +435,7 @@ class ProfileModel extends Profile {
       'verificationPhotoUrl': verificationPhotoUrl,
       'verificationMethod': verificationMethod,
       'verificationPhone': verificationPhone,
+      kVerificationPhotoPathField: verificationPhotoPath,
       'verificationRejectionReason': verificationRejectionReason,
       'verificationSubmittedAt': verificationSubmittedAt != null
           ? Timestamp.fromDate(verificationSubmittedAt!)

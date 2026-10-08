@@ -147,6 +147,8 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
     'email_preferences', 'user_levels', 'userLevels', 'user_group_tags', 'user_people_tags',
     'user_group_inbox', 'user_favorite_communities', 'userSettings', 'user_settings',
     'notification_preferences', 'notification_settings', 'user_presence', 'age_verification_queue',
+    // Owner/admin-only half of the profile (exact location, DOB, ...; P1-4).
+    'profiles_private',
     'streaks', 'mission_progress', 'usageLimits', 'dailyUsage', 'user_stats',
     'user_badge_preferences', 'user_vocabulary', 'user_experience_counts',
     'host_cancellation_stats', 'host_flags', 'host_suspensions', 'host_schedules',

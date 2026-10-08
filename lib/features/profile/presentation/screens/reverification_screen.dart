@@ -9,6 +9,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../data/private_profile.dart';
 
 /// Standalone screen shown when admin requests a better verification photo.
 /// User takes a new selfie, it uploads to Storage, updates the profile doc
@@ -77,18 +78,29 @@ class _ReverificationScreenState extends State<ReverificationScreen> {
           .child(fileName);
 
       await ref.putFile(_capturedPhoto!);
-      final downloadUrl = await ref.getDownloadURL();
 
-      // Update Firestore profile: new photo, status → pending
-      await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.userId)
-          .update({
-        'verificationPhotoUrl': downloadUrl,
-        'verificationStatus': 'pending',
-        'verificationSubmittedAt': FieldValue.serverTimestamp(),
-        'verificationRejectionReason': null,
-      });
+      // Status → pending on the public profile; the selfie is referenced only
+      // by its Storage PATH in the owner-only profiles_private document
+      // (admins open it through getVerificationPhotoUrl). The tokenised
+      // download URL is never stored, and the previous one is cleared so an
+      // admin can't review a stale selfie.
+      final firestore = FirebaseFirestore.instance;
+      final batch = firestore.batch()
+        ..update(firestore.collection('profiles').doc(widget.userId), {
+          'verificationPhotoUrl': null,
+          'verificationStatus': 'pending',
+          'verificationSubmittedAt': FieldValue.serverTimestamp(),
+          'verificationRejectionReason': null,
+        });
+      await writePrivateProfile(
+          firestore,
+          widget.userId,
+          {
+            kVerificationPhotoPathField: ref.fullPath,
+            'updatedAt': FieldValue.serverTimestamp(),
+          },
+          batch: batch);
+      await batch.commit();
 
       // Also reset approvalStatus in users collection so access gate shows pending
       await FirebaseFirestore.instance

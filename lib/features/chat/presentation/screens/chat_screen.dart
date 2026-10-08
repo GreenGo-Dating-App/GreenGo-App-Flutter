@@ -60,6 +60,7 @@ import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
+import '../../../profile/data/private_album.dart';
 
 /// Chat Screen
 ///
@@ -1238,25 +1239,9 @@ class _ChatScreenState extends State<ChatScreen> {
   /// Show current user's private album photos for sending in chat
   Future<void> _showMyAlbumPhotos() async {
     try {
-      // Fetch current user's profile to get private photos (force server to get fresh data)
-      DocumentSnapshot profileDoc;
-      try {
-        profileDoc = await FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(widget.currentUserId)
-            .get(const GetOptions(source: Source.server));
-      } catch (_) {
-        // Fallback to cache if server unavailable
-        profileDoc = await FirebaseFirestore.instance
-            .collection('profiles')
-            .doc(widget.currentUserId)
-            .get();
-      }
-
+      // Own private album: profiles_private (security P1-4).
+      final privatePhotos = await PrivateAlbum.own(widget.currentUserId);
       if (!mounted) return;
-
-      final data = profileDoc.data() as Map<String, dynamic>?;
-      final privatePhotos = data?['privatePhotoUrls'] as List<dynamic>? ?? [];
 
       if (privatePhotos.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -1323,7 +1308,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
                       itemCount: privatePhotos.length,
                       itemBuilder: (ctx, index) {
-                        final photoUrl = privatePhotos[index] as String;
+                        final photoUrl = privatePhotos[index];
                         final isSelected = selectedIndices.contains(index);
                         return GestureDetector(
                           onTap: () {
@@ -1400,7 +1385,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         child: ElevatedButton(
                           onPressed: () {
                             final photosToSelect = selectedIndices
-                                .map((i) => privatePhotos[i] as String)
+                                .map((i) => privatePhotos[i])
                                 .toList();
                             // Close the album bottom sheet
                             Navigator.pop(bottomSheetCtx);
@@ -1482,16 +1467,10 @@ class _ChatScreenState extends State<ChatScreen> {
         return;
       }
 
-      // Fetch other user's private photos
-      final profileDoc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(widget.otherUserId)
-          .get();
+      // Other user's private album: server-checked grant (getSharedAlbum).
+      final privatePhotos = await PrivateAlbum.sharedBy(widget.otherUserId);
 
       if (!mounted) return;
-
-      final data = profileDoc.data();
-      final privatePhotos = data?['privatePhotoUrls'] as List<dynamic>? ?? [];
 
       if (privatePhotos.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -1547,7 +1526,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   itemCount: privatePhotos.length,
                   itemBuilder: (ctx, index) {
-                    final photoUrl = privatePhotos[index] as String;
+                    final photoUrl = privatePhotos[index];
                     return GestureDetector(
                       onTap: () => _openPhotoFullscreen(context, photoUrl, privatePhotos.cast<String>(), index),
                       child: ClipRRect(

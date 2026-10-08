@@ -584,6 +584,14 @@ export {
 
 // Discovery: profile geohash backfill (admin-only callable; no onWrite trigger)
 export { backfillProfileGeohash } from './discovery/profileGeohash';
+// Private profile split (audit C-07 / C-10, plan P1-4).
+export {
+  mirrorPrivateProfileFields,
+  syncCoarseFromPrivateProfile,
+  refreshBirthdayAges,
+  getVerificationPhotoUrl,
+  getSharedAlbum,
+} from './profiles/privateProfileTriggers';
 
 // Presence / Location Enrichment Functions
 export {

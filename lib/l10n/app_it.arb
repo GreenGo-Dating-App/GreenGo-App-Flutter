@@ -5304,5 +5304,10 @@
   "profileDeleteNetworkError": "Nessuna connessione. Il tuo account non è stato eliminato. Riprova.",
   "profileDeleteFailed": "Non siamo riusciti a eliminare il tuo account e non è stato eliminato nulla. Riprova o contatta l'assistenza.",
   "onboardingAgeBlockedTitle": "GreenGo è per adulti",
-  "onboardingAgeBlockedBody": "Devi avere almeno 18 anni per usare GreenGo, quindi non possiamo creare il tuo account."
+  "onboardingAgeBlockedBody": "Devi avere almeno 18 anni per usare GreenGo, quindi non possiamo creare il tuo account.",
+  "distanceBucketUnder2Km": "a meno di 2 km",
+  "distanceBucket2To5Km": "a 2-5 km",
+  "distanceBucket5To10Km": "a 5-10 km",
+  "distanceBucket10To25Km": "a 10-25 km",
+  "distanceBucketOver25Km": "a oltre 25 km"
 }

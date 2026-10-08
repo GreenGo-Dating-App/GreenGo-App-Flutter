@@ -9,6 +9,7 @@ import '../../../../core/config/app_config.dart';
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/error/exceptions.dart';
 import '../models/user_model.dart';
+import '../../../profile/data/private_profile.dart';
 
 abstract class AuthRemoteDataSource {
   /// Sign in with email and password
@@ -124,7 +125,12 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource { // Will be Face
       final uid = userCredential.user!.uid;
       final firestore = FirebaseFirestore.instance;
       try {
-        firestore.collection('profiles').doc(uid).update({'email': resolvedEmail});
+        // Email is private (security P1-4): owner-only profiles_private,
+        // never the public profile.
+        writePrivateProfile(firestore, uid, {
+          'email': resolvedEmail,
+          'updatedAt': FieldValue.serverTimestamp(),
+        });
         firestore.collection('users').doc(uid).set({'email': resolvedEmail}, SetOptions(merge: true));
         // Also sync nickname → email in public nicknames collection
         final profileDoc = await firestore.collection('profiles').doc(uid).get();

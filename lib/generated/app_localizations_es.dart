@@ -16321,4 +16321,19 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get onboardingAgeBlockedBody =>
       'Debes tener al menos 18 años para usar GreenGo, así que no podemos crear tu cuenta.';
+
+  @override
+  String get distanceBucketUnder2Km => 'a menos de 2 km';
+
+  @override
+  String get distanceBucket2To5Km => 'a 2-5 km';
+
+  @override
+  String get distanceBucket5To10Km => 'a 5-10 km';
+
+  @override
+  String get distanceBucket10To25Km => 'a 10-25 km';
+
+  @override
+  String get distanceBucketOver25Km => 'a más de 25 km';
 }

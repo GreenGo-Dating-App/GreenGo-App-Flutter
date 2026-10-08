@@ -94,6 +94,7 @@ import 'qr_hub_screen.dart';
 import 'universal_search_screen.dart';
 import '../../../../core/config/flavor_config.dart';
 import '../../../../core/services/effective_tier.dart';
+import '../../../profile/data/private_profile.dart';
 
 /// Explore Screen — the Apple-safe home tab (tab 0) for the iOS flavor.
 ///
@@ -900,7 +901,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
           .collection('profiles')
           .doc(widget.userId)
           .get(source == null ? null : GetOptions(source: source));
-      final data = doc.data();
+      // Own exact location / birth date: profiles_private (security P1-4).
+      final data = await ownRawViewLoaded(widget.userId, doc.data());
       if (data != null) {
         found = true;
         final loc = data['location'] as Map<String, dynamic>?;
@@ -1018,7 +1020,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         .doc(widget.userId)
         .snapshots()
         .listen((doc) {
-      final data = doc.data();
+      final data = ownRawView(widget.userId, doc.data());
       if (data == null || !mounted) return;
 
       // The real location moved to another country (GPS refresh / location

@@ -20,7 +20,6 @@ class DiscoveryCard { // Currently visible card
   String get displayName => candidate.profile.displayName;
   int get age => candidate.age;
   String? get primaryPhoto => candidate.primaryPhotoUrl;
-  String get distanceText => candidate.distanceText;
   String get matchPercentage => candidate.matchScore.matchPercentageText;
   bool get isRecommended => candidate.isRecommended;
   MembershipTier get membershipTier => candidate.profile.effectiveTier;

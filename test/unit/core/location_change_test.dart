@@ -6,6 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:greengo_chat/core/services/location_change.dart';
 import 'package:greengo_chat/core/services/location_refresh_service.dart';
+import 'package:greengo_chat/features/profile/data/private_profile.dart';
 import 'package:greengo_chat/features/profile/data/profile_geohash.dart';
 
 Position _pos(double lat, double lng) => Position(
@@ -178,16 +179,26 @@ void main() {
       expect((await profile())['location']['latitude'], 38.7223);
     });
 
-    test('moved: writes location + geohash in step', () async {
+    test('moved: exact location + geohash go to profiles_private only',
+        () async {
       final outcome =
           await service(_pos(41.1579, -8.6291)).refreshIfAllowed(uid);
       expect(outcome, LocationRefreshOutcome.changed);
       final data = await profile();
       final loc = data['location'] as Map;
-      expect(loc['latitude'], 41.1579);
+      // Public: the coarse place only. The legacy coordinates old app
+      // versions read are left alone (not updated, not deleted).
       expect(loc['city'], 'Porto');
       expect(loc['countryLower'], 'portugal');
-      expect(data[kProfileGeohashField], geohashFor(41.1579, -8.6291));
+      expect(loc['latitude'], 38.7223);
+      expect(data[kProfileGeohashField], geohashFor(38.7223, -9.1393));
+      // Private: the exact fix and its 9-char geohash.
+      final private =
+          (await fs.collection(kPrivateProfilesCollection).doc(uid).get())
+              .data()!;
+      expect((private['location'] as Map)['latitude'], 41.1579);
+      expect((private['location'] as Map)['longitude'], -8.6291);
+      expect(private[kProfileGeohashField], geohashFor(41.1579, -8.6291));
     });
 
     test('traveler mode active: skipped, nothing written', () async {
