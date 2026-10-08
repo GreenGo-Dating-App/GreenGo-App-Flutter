@@ -2192,7 +2192,9 @@ service cloud.firestore {
                 'communityId', 'communityName',
                 // Explore "Top experiences" promotion: admin callable
                 // setExperienceFeatured only.
-                'isFeatured', 'featuredUntil'];
+                'isFeatured', 'featuredUntil',
+                // Recurring schedule: validated by updateExperienceAvailability.
+                'availabilityRules', 'availabilityOverrides'];
       }
       // ── Phase 1 safety (mirrors functions/src/user_experiences/safety.ts) ──
       function hostProfileData() {

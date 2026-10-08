@@ -15,6 +15,7 @@ import {
   onDocumentWritten,
 } from 'firebase-functions/v2/firestore';
 import * as svc from './service';
+import * as availability from './availability';
 import {
   handleGuestReviewWrite,
   handlePendingReviewCreated,
@@ -54,6 +55,9 @@ export const markBookingPaid = callable((uid, data) => svc.markBookingPaid(uid, 
 export const confirmCashReceived = callable(svc.confirmCashReceived);
 export const openBookingDispute = callable(svc.openBookingDispute);
 export const resolveBookingDispute = callable(svc.resolveBookingDispute);
+// Recurring host schedule, computed on the fly (availability.ts).
+export const getExperienceAvailability = callable((uid, data) => availability.getExperienceAvailability(uid, data));
+export const updateExperienceAvailability = callable((uid, data) => availability.updateExperienceAvailability(uid, data));
 
 // Schedules
 export const sendBookingReminders = onSchedule(

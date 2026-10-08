@@ -17,6 +17,8 @@ export {
   confirmCashReceived,
   openBookingDispute,
   resolveBookingDispute,
+  getExperienceAvailability,
+  updateExperienceAvailability,
   sendBookingReminders,
   expireBookingRequests,
   completeBookings,
