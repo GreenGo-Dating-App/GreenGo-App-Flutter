@@ -606,7 +606,7 @@ const GIFT_REFUND_MONTHLY_CAP = 5;
  * call can never double-refund.
  */
 export const declineGift = onCall<DeclineGiftRequest>(
-  { memory: '256MiB', timeoutSeconds: 60 },
+  { memory: '512MiB', timeoutSeconds: 60 },
   async (request) => {
     try {
       const receiverId = await verifyAuth(request.auth);

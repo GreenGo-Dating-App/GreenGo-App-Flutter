@@ -61,7 +61,7 @@ async function isSuperAdminUid(uid: string): Promise<boolean> {
 /**
  * Send a 2FA verification code to an admin user's email
  */
-export const send2FACode = functions.https.onCall(
+export const send2FACode = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("send2FACode", async (_data: any, context: functions.https.CallableContext) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -262,7 +262,7 @@ export const verify2FACode = functions.https.onCall(
 /**
  * Change a user's password directly (admin only)
  */
-export const adminChangeUserPassword = functions.https.onCall(
+export const adminChangeUserPassword = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("adminChangeUserPassword", async (data: any, context: functions.https.CallableContext) => {
     await verifySuperAdmin(context);
 
@@ -310,7 +310,7 @@ export const adminChangeUserPassword = functions.https.onCall(
 /**
  * Send password reset email to user
  */
-export const sendPasswordResetEmail = functions.https.onCall(
+export const sendPasswordResetEmail = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("sendPasswordResetEmail", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
@@ -862,7 +862,7 @@ export const onSupportMessageCreated = functions.firestore
  * Send a branded welcome email via Resend after user registration.
  * No auth required — called right after registration.
  */
-export const sendWelcomeEmail = functions.https.onCall(
+export const sendWelcomeEmail = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("sendWelcomeEmail", async (data: any, context: functions.https.CallableContext) => {
     const { email, locale } = data;
 
@@ -1091,7 +1091,7 @@ async function deliverResetEmail(email: string, resetLink: string): Promise<{ su
  * Send a branded password reset email via Resend.
  * No admin auth required — called from the forgot password screen.
  */
-export const sendPasswordResetViaResend = functions.https.onCall(
+export const sendPasswordResetViaResend = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("sendPasswordResetViaResend", async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;
 
@@ -1180,7 +1180,7 @@ export const sendPasswordResetViaResend = functions.https.onCall(
 /** An auth account active more recently than this is never treated as an orphan. */
 const ORPHAN_MIN_AGE_MS = 15 * 60 * 1000;
 
-export const cleanupOrphanedAuthUser = functions.https.onCall(
+export const cleanupOrphanedAuthUser = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("cleanupOrphanedAuthUser", async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;
 

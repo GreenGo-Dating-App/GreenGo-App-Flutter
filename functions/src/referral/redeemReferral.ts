@@ -35,7 +35,7 @@ const PLATINUM_DURATION_MS = 30 * 24 * 60 * 60 * 1000; // 1 month
 const REDEEM_WINDOW_DAYS = 30;
 
 export const redeemReferral = onCall<RedeemReferralRequest>(
-  { memory: '256MiB', timeoutSeconds: 30 },
+  { memory: '512MiB', timeoutSeconds: 30 },
   monitored('redeemReferral', async (request: CallableRequest<RedeemReferralRequest>): Promise<RedeemReferralResponse> => {
     if (!request.auth) {
       throw new HttpsError('unauthenticated', 'You must be signed in to redeem a referral');

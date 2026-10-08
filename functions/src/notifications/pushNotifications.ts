@@ -15,7 +15,7 @@ const messaging = admin.messaging();
  * Send Push Notification
  * Point 271: Firebase Cloud Messaging
  */
-export const sendPushNotification = functions.https.onCall(monitored("sendPushNotification", async (data, context) => {
+export const sendPushNotification = functions.runWith({ memory: '512MB' }).https.onCall(monitored("sendPushNotification", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',

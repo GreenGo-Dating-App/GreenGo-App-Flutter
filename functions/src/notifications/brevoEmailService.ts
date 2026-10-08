@@ -1700,7 +1700,7 @@ interface SendBrevoEmailRequest {
 
 export const sendBrevoEmailFunction = onCall<SendBrevoEmailRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("sendBrevoEmailFunction", async (request) => {
@@ -1894,7 +1894,7 @@ interface GetEmailAnalyticsRequest {
 
 export const getBrevoEmailAnalytics = onCall<GetEmailAnalyticsRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("getBrevoEmailAnalytics", async (request) => {
