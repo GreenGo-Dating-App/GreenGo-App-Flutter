@@ -6,6 +6,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:url_launcher/url_launcher.dart';
 
+import '../constants/purchase_consent.dart';
+import 'stripe_billing_models.dart';
+
 /// Web-only purchasing via Stripe Checkout.
 ///
 /// The mobile app uses native in-app-purchase; the web build has no IAP plugin,
@@ -24,7 +27,13 @@ class StripeWebCheckout {
   /// Opens Stripe Checkout for [productId] in a new tab. Returns the Stripe
   /// session id, or null if the user is not signed in / no URL was returned.
   /// Throws [FirebaseFunctionsException] on backend errors.
-  static Future<String?> startCheckout(String productId) async {
+  ///
+  /// [consent] carries the pre-checkout consent (EU CRD art. 16(m) waiver for
+  /// coins, the withdrawal notice for memberships); the server records it.
+  static Future<String?> startCheckout(
+    String productId, {
+    CheckoutConsent consent = const CheckoutConsent(),
+  }) async {
     // HARD GUARD — Apple Guideline 3.1.1 / Google Play Payments policy.
     //
     // Stripe Checkout is an EXTERNAL payment method for digital goods. Opening
@@ -57,6 +66,7 @@ class StripeWebCheckout {
       'successUrl': '$origin/?payment=success',
       'cancelUrl': '$origin/?payment=cancel',
       'userCountry': country,
+      ...consent.toPayload(),
     });
 
     final data = Map<String, dynamic>.from(res.data as Map);
@@ -108,6 +118,41 @@ class StripeWebCheckout {
       await Future<void>.delayed(const Duration(seconds: 2));
     }
     return false;
+  }
+
+  /// The signed-in user's Stripe subscriptions (price, interval, next
+  /// renewal) and recent web orders with their withdrawal status.
+  static Future<WebBillingSummary> billingSummary() async {
+    if (!kIsWeb || FirebaseAuth.instance.currentUser == null) {
+      return WebBillingSummary.empty;
+    }
+    final res = await FirebaseFunctions.instance
+        .httpsCallable('getStripeBillingSummary')
+        .call<Map<String, dynamic>>({});
+    return WebBillingSummary.fromMap(
+        Map<String, dynamic>.from(res.data as Map));
+  }
+
+  /// Opens the Stripe billing portal (cancel / update card) in a new tab.
+  /// Returns false when no portal URL could be obtained.
+  static Future<bool> openBillingPortal() async {
+    if (!kIsWeb) return false;
+    final res = await FirebaseFunctions.instance
+        .httpsCallable('createStripePortalSession')
+        .call<Map<String, dynamic>>({'returnUrl': '${Uri.base.origin}/'});
+    final url = (res.data as Map?)?['url'] as String?;
+    if (url == null) return false;
+    return launchUrl(Uri.parse(url), webOnlyWindowName: '_blank');
+  }
+
+  /// Step 1 of a withdrawal: the server emails a confirmation link to the
+  /// purchase email. Returns the server status ('sent', 'not_eligible', ...).
+  static Future<String> requestWithdrawal(String orderId) async {
+    if (!kIsWeb) return 'unsupported';
+    final res = await FirebaseFunctions.instance
+        .httpsCallable('requestWithdrawal')
+        .call<Map<String, dynamic>>({'orderId': orderId});
+    return ((res.data as Map?)?['status'] ?? 'unknown').toString();
   }
 
   static Future<String> _resolveCountry(String uid) async {

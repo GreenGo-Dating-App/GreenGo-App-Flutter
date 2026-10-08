@@ -8090,5 +8090,68 @@
   "distanceBucketOver25Km": "25+ km",
   "@distanceBucketOver25Km": {
     "description": "Approximate distance bucket: more than 25 km"
-  }
+  },
+  "checkoutConsentTitle": "Before you pay",
+  "checkoutCoinWaiverCheckbox": "I agree that the coins are delivered immediately and I acknowledge that I lose my right of withdrawal once delivery starts.",
+  "@checkoutCoinWaiverCheckbox": {
+    "description": "EU CRD art. 16(m) immediate-delivery waiver checkbox. Legal wording: change only with counsel and bump kCoinWaiverVersion / COIN_WAIVER_VERSION."
+  },
+  "checkoutMembershipWithdrawalInfo": "Right of withdrawal: you can withdraw from this membership within 14 days of purchase (7 days for purchases in Brazil) without giving a reason and receive a full refund, using \"Withdraw from contract\" in the Shop or on our website. The membership renews automatically until you cancel; you can cancel anytime in the billing portal.",
+  "checkoutContinueToPayment": "Continue to payment",
+  "withdrawFromContract": "Withdraw from contract",
+  "withdrawalDialogIntro": "Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm.",
+  "withdrawalNothingEligible": "None of your web purchases can be withdrawn from right now. Memberships can be withdrawn within 14 days of purchase (7 days in Brazil); coin purchases only if the right was not waived at checkout.",
+  "withdrawalDeadline": "Withdraw by {date}",
+  "@withdrawalDeadline": {
+    "description": "Deadline to withdraw from a web purchase",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "withdrawalRequestSent": "Check your email and confirm the withdrawal with the link we sent.",
+  "withdrawalRequestFailed": "The withdrawal request could not be sent. Please try again or email support@greengochat.com.",
+  "webSubscriptionRenewsOn": "{plan}: {price} per {interval}. Renews automatically on {date}.",
+  "@webSubscriptionRenewsOn": {
+    "description": "Web (Stripe) auto-renew disclosure for an active subscription",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      },
+      "interval": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "webSubscriptionEndsOn": "{plan}: {price} per {interval}. Cancelled; access ends on {date}.",
+  "@webSubscriptionEndsOn": {
+    "description": "Web (Stripe) subscription cancelled at period end",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      },
+      "interval": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "billingIntervalMonth": "month",
+  "billingIntervalYear": "year",
+  "cancelAnytimeBillingPortal": "Cancel anytime in the billing portal",
+  "billingPortalOpenFailed": "Could not open the billing portal. Please try again.",
+  "subscriptionAutoRenewInfoWeb": "Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.",
+  "webBillingTitle": "Billing and withdrawal"
 }

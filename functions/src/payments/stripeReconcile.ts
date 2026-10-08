@@ -58,6 +58,7 @@ import {
   getStripe,
   idOf,
   invoiceApplied,
+  invoiceExclusiveTax,
   invoiceSubscriptionId,
   linePaidPeriod,
   listPriceCents,
@@ -68,6 +69,7 @@ import {
   processPaidInvoice,
   processSubscriptionEnded,
   resolveStripeUid,
+  sessionExclusiveTax,
   stripeCoreDeps,
   subFields,
   subscriptionLineOf,
@@ -391,6 +393,8 @@ async function handleCharge(ctx: RunCtx, ch: any): Promise<void> {
   const subId = inv ? invoiceSubscriptionId(inv) : null;
   let claimedUid: string | null = null;
   let product: string | null = null;
+  // M-14: exclusive tax is charged on top of the price; compare pre-tax.
+  let exclusiveTax = inv ? invoiceExclusiveTax(inv) : 0;
   if (subId) {
     const meta = inv?.subscription_details?.metadata || (await subscriptionFor(ctx, subId))?.metadata || {};
     claimedUid = meta.userId || null;
@@ -399,6 +403,7 @@ async function handleCharge(ctx: RunCtx, ch: any): Promise<void> {
     const s = await sessionForPaymentIntent(ctx, idOf(ch.payment_intent));
     claimedUid = s?.metadata?.userId || ch.metadata?.userId || null;
     product = s?.metadata?.productId || ch.metadata?.productId || null;
+    exclusiveTax = s ? sessionExclusiveTax(s) : 0;
   }
   const customer = ch.customer && typeof ch.customer === 'object' ? ch.customer : null;
   const customerId = idOf(ch.customer);
@@ -414,13 +419,13 @@ async function handleCharge(ctx: RunCtx, ch: any): Promise<void> {
   if (!product || (!COIN_PACKAGES[product] && !MEMBERSHIP_PRODUCTS[product])) {
     await flag(ctx, `unknown_product_${ch.id}`, { type: 'unknown_product', uid: who.uid, ...base });
   } else if (COIN_PACKAGES[product]) {
-    if (listPriceCents(COIN_PACKAGES[product], currency) !== ch.amount) {
+    if (listPriceCents(COIN_PACKAGES[product], currency) !== (ch.amount ?? 0) - exclusiveTax) {
       await flag(ctx, `amount_mismatch_${ch.id}`, { type: 'amount_mismatch', uid: who.uid, expected: listPriceCents(COIN_PACKAGES[product], currency), ...base });
     }
   } else {
     const allowed = allowedMembershipAmounts(product, currency);
     // A membership charge can be lower than the price (credit balance), never higher.
-    if (allowed.length === 0 || ch.amount <= 0 || ch.amount > Math.max(...allowed)) {
+    if (allowed.length === 0 || ch.amount <= 0 || ch.amount - exclusiveTax > Math.max(...allowed)) {
       await flag(ctx, `amount_mismatch_${ch.id}`, { type: 'amount_mismatch', uid: who.uid, expected: allowed, ...base });
     }
   }

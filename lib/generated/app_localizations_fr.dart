@@ -6634,10 +6634,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Abonnement $tierName actif jusqu\'au $formattedDate$coinsText';
   }
 
@@ -16410,4 +16407,75 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get distanceBucketOver25Km => 'à plus de 25 km';
+
+  @override
+  String get checkoutConsentTitle => 'Avant de payer';
+
+  @override
+  String get checkoutCoinWaiverCheckbox =>
+      'J\'accepte que les pièces soient livrées immédiatement et je reconnais perdre mon droit de rétractation dès le début de la livraison.';
+
+  @override
+  String get checkoutMembershipWithdrawalInfo =>
+      'Droit de rétractation : vous pouvez vous rétracter de cet abonnement dans les 14 jours suivant l\'achat (7 jours pour les achats effectués au Brésil) sans motif et être remboursé intégralement, via « Se rétracter du contrat » dans la Boutique ou sur notre site web. L\'abonnement se renouvelle automatiquement jusqu\'à résiliation ; vous pouvez résilier à tout moment dans le portail de facturation.';
+
+  @override
+  String get checkoutContinueToPayment => 'Continuer vers le paiement';
+
+  @override
+  String get withdrawFromContract => 'Se rétracter du contrat';
+
+  @override
+  String get withdrawalDialogIntro =>
+      'Choisissez l\'achat dont vous souhaitez vous rétracter. Nous enverrons un lien de confirmation à l\'adresse utilisée pour l\'achat ; rien n\'est annulé ni remboursé avant votre confirmation.';
+
+  @override
+  String get withdrawalNothingEligible =>
+      'Aucun de vos achats web ne peut faire l\'objet d\'une rétractation pour le moment. Les abonnements peuvent être rétractés dans les 14 jours suivant l\'achat (7 jours au Brésil) ; les achats de pièces uniquement si le droit n\'a pas été abandonné au paiement.';
+
+  @override
+  String withdrawalDeadline(String date) {
+    return 'Rétractation jusqu\'au $date';
+  }
+
+  @override
+  String get withdrawalRequestSent =>
+      'Consultez vos e-mails et confirmez la rétractation avec le lien envoyé.';
+
+  @override
+  String get withdrawalRequestFailed =>
+      'La demande de rétractation n\'a pas pu être envoyée. Réessayez ou écrivez à support@greengochat.com.';
+
+  @override
+  String webSubscriptionRenewsOn(
+      String plan, String price, String interval, String date) {
+    return '$plan : $price par $interval. Renouvellement automatique le $date.';
+  }
+
+  @override
+  String webSubscriptionEndsOn(
+      String plan, String price, String interval, String date) {
+    return '$plan : $price par $interval. Résilié ; accès jusqu\'au $date.';
+  }
+
+  @override
+  String get billingIntervalMonth => 'mois';
+
+  @override
+  String get billingIntervalYear => 'an';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Résiliez à tout moment dans le portail de facturation';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'Impossible d\'ouvrir le portail de facturation. Veuillez réessayer.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Les abonnements se renouvellent automatiquement au prix et à la périodicité indiqués jusqu\'à résiliation. Résiliez à tout moment dans le portail de facturation.';
+
+  @override
+  String get webBillingTitle => 'Facturation et rétractation';
 }

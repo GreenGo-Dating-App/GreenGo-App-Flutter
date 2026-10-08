@@ -2,11 +2,15 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/constants/purchase_consent.dart';
 import '../../../../core/services/stripe_web_checkout.dart';
 import '../../../../generated/app_localizations.dart';
+import 'checkout_consent_step.dart';
 
 /// Drives the web Stripe checkout flow with a single modal:
-/// opens the hosted checkout in a new tab, then polls `stripe_orders` and
+/// first the mandatory consent step ([CheckoutConsentStep]: the EU waiver
+/// checkbox for coins, the withdrawal information for memberships), then
+/// opens the hosted checkout in a new tab, polls `stripe_orders` and
 /// resolves true once the purchase is credited (or false on cancel/timeout).
 ///
 /// Usage:
@@ -40,21 +44,23 @@ class WebCheckoutDialog extends StatefulWidget {
   State<WebCheckoutDialog> createState() => _WebCheckoutDialogState();
 }
 
-enum _Phase { opening, waiting, timeout, failed }
+enum _Phase { consent, opening, waiting, timeout, failed }
 
 class _WebCheckoutDialogState extends State<WebCheckoutDialog> {
-  _Phase _phase = _Phase.opening;
+  _Phase _phase = _Phase.consent;
 
-  @override
-  void initState() {
-    super.initState();
-    _run();
+  void _onConsent(CheckoutConsent consent) {
+    setState(() => _phase = _Phase.opening);
+    _run(consent);
   }
 
-  Future<void> _run() async {
+  Future<void> _run(CheckoutConsent consent) async {
     try {
       final known = await StripeWebCheckout.existingCompletedOrderIds();
-      final sessionId = await StripeWebCheckout.startCheckout(widget.productId);
+      final sessionId = await StripeWebCheckout.startCheckout(
+        widget.productId,
+        consent: consent,
+      );
       if (sessionId == null) {
         if (mounted) setState(() => _phase = _Phase.failed);
         return;
@@ -76,10 +82,23 @@ class _WebCheckoutDialogState extends State<WebCheckoutDialog> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    if (_phase == _Phase.consent) {
+      return AlertDialog(
+        backgroundColor: AppColors.backgroundDark,
+        content: SingleChildScrollView(
+          child: CheckoutConsentStep(
+            productId: widget.productId,
+            onContinue: _onConsent,
+            onCancel: () => Navigator.of(context).pop(false),
+          ),
+        ),
+      );
+    }
     final busy = _phase == _Phase.opening || _phase == _Phase.waiting;
 
     String message;
     switch (_phase) {
+      case _Phase.consent:
       case _Phase.opening:
         message = l10n.webCheckoutOpening;
         break;

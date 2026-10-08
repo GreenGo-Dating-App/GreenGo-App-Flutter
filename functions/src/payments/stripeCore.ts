@@ -374,6 +374,49 @@ export function mismatchedPayerEmails(accountEmails: unknown[], payerEmails: unk
 // Validation (pure)
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Tax (security audit M-14). Stripe Tax is NOT enabled; these helpers make the
+// validators tolerate it so turning it on later never breaks a grant:
+//   - tax-INCLUSIVE prices: amount_total / amount_paid == list price (the tax
+//     is carved out of it) -> the plain equality already holds;
+//   - tax-EXCLUSIVE prices: the customer pays list price + tax, so the check
+//     uses the pre-tax amount (amount_subtotal / total - exclusive tax).
+// Only Stripe-computed tax amounts are used; nothing here comes from a client.
+// ---------------------------------------------------------------------------
+
+/** Exclusive (added-on-top) tax of a checkout session, in minor units. */
+export function sessionExclusiveTax(session: any): number {
+  const breakdown: any[] | undefined = session?.total_details?.breakdown?.taxes;
+  if (Array.isArray(breakdown) && breakdown.length > 0) {
+    return breakdown
+      .filter((t) => t?.rate?.inclusive !== true && t?.tax_rate?.inclusive !== true)
+      .reduce((s, t) => s + (typeof t?.amount === 'number' ? t.amount : 0), 0);
+  }
+  const tax = session?.total_details?.amount_tax;
+  if (typeof tax !== 'number' || tax <= 0) return 0;
+  // No breakdown: the tax is exclusive exactly when total = subtotal + tax
+  // (no discounts are ever applied to these sessions).
+  const sub = session?.amount_subtotal;
+  return typeof sub === 'number' && session?.amount_total === sub + tax ? tax : 0;
+}
+
+/** Exclusive (added-on-top) tax of an invoice, in minor units, across API versions. */
+export function invoiceExclusiveTax(invoice: any): number {
+  const modern: any[] | undefined = invoice?.total_taxes;
+  if (Array.isArray(modern) && modern.length > 0) {
+    return modern
+      .filter((t) => t?.tax_behavior === 'exclusive')
+      .reduce((s, t) => s + (typeof t?.amount === 'number' ? t.amount : 0), 0);
+  }
+  const legacy: any[] | undefined = invoice?.total_tax_amounts;
+  if (Array.isArray(legacy) && legacy.length > 0) {
+    return legacy
+      .filter((t) => t?.inclusive === false)
+      .reduce((s, t) => s + (typeof t?.amount === 'number' ? t.amount : 0), 0);
+  }
+  return 0;
+}
+
 export interface PaidInvoiceCheck {
   ok: boolean;
   reason?: string;
@@ -435,7 +478,9 @@ export function validatePaidInvoice(invoice: any, sub: any): PaidInvoiceCheck {
   if (amountPaid <= 0 && !trial && !paidFromCredit) {
     return { ok: false, reason: 'zero_amount', productId, currency, unitAmount };
   }
-  if (amountPaid > unitAmount) {
+  // Exclusive tax (M-14) is charged on top of the price; inclusive tax is
+  // already inside unitAmount.
+  if (amountPaid - invoiceExclusiveTax(invoice) > unitAmount) {
     return { ok: false, reason: 'amount_paid_exceeds_price', productId, currency, unitAmount };
   }
   return {
@@ -468,12 +513,24 @@ export function validateCoinSession(session: any): CoinSessionCheck {
   if (!pkg) return { ok: false, reason: 'unknown_product', productId };
   const currency = String(session.currency || '').toLowerCase();
   const expected = listPriceCents(pkg, currency);
-  if (expected === null || session.amount_total !== expected) {
+  // M-14: inclusive tax -> amount_total == price (tax carved out of it);
+  // exclusive tax -> amount_total == price + tax and the pre-tax subtotal
+  // must be exactly the price.
+  const exclusiveTax = sessionExclusiveTax(session);
+  const preTax = typeof session.amount_total === 'number' ? session.amount_total - exclusiveTax : null;
+  const subtotalOk = exclusiveTax === 0
+    || typeof session.amount_subtotal !== 'number'
+    || session.amount_subtotal === expected;
+  if (expected === null || preTax !== expected || !subtotalOk) {
     return { ok: false, reason: 'amount_mismatch', productId, currency, amount: session.amount_total };
   }
   const items: any[] | undefined = session?.line_items?.data;
   if (items) {
-    const total = items.reduce((s, i) => s + (i.amount_total ?? 0), 0);
+    // Per line: the total, minus its own tax only when that tax was added on top.
+    const total = items.reduce((s, i) => {
+      const lineTotal = i.amount_total ?? 0;
+      return s + (exclusiveTax > 0 ? lineTotal - (i.amount_tax ?? 0) : lineTotal);
+    }, 0);
     const qty = items.reduce((s, i) => s + (i.quantity ?? 0), 0);
     if (items.length !== 1 || qty !== 1 || total !== expected) {
       return { ok: false, reason: 'line_items_mismatch', productId, currency, amount: session.amount_total };
@@ -646,6 +703,29 @@ export interface StripeOutcome {
 // Coins
 // ---------------------------------------------------------------------------
 
+/**
+ * Consumer-law evidence copied from the server-written session metadata onto
+ * the order (CRD art. 16(m) waiver for coins, the withdrawal notice for
+ * memberships, the buyer's country for the 14-day EU / 7-day BR window) and
+ * the payer email the durable-medium confirmation is sent to. Every key is
+ * optional: sessions created before this release carry none of them.
+ */
+export function orderConsentFields(s: any): Record<string, any> {
+  const m = s?.metadata || {};
+  const out: Record<string, any> = {};
+  if (m.waiverAccepted === 'true') out.waiverAccepted = true;
+  if (m.waiverMissing === 'true') out.waiverMissing = true;
+  if (typeof m.waiverVersion === 'string' && m.waiverVersion) out.waiverVersion = m.waiverVersion;
+  if (typeof m.waiverAcceptedAt === 'string' && m.waiverAcceptedAt) out.waiverAcceptedAt = m.waiverAcceptedAt;
+  if (typeof m.withdrawalNoticeVersion === 'string' && m.withdrawalNoticeVersion) {
+    out.withdrawalNoticeVersion = m.withdrawalNoticeVersion;
+  }
+  if (typeof m.country === 'string' && m.country) out.country = m.country.toUpperCase();
+  const email = s?.customer_details?.email || s?.customer_email || null;
+  if (typeof email === 'string' && email) out.customerEmail = email;
+  return out;
+}
+
 export async function orderExists(sessionId: string): Promise<boolean> {
   const [byId, legacy] = await Promise.all([
     fdb().collection('stripe_orders').doc(sessionId).get(),
@@ -726,6 +806,7 @@ export async function processCheckoutSession(
           type: 'membership', amount: s.amount_total ?? null, currency: s.currency ?? null,
           stripeCustomerId: idOf(s.customer), stripeSubscriptionId: subId,
           status: 'completed', livemode: s.livemode === true, createdAt: ts(nowDate()),
+          ...orderConsentFields(s),
         });
       });
     }
@@ -780,6 +861,7 @@ async function grantCoinsForSession(uid: string, s: any, check: CoinSessionCheck
       amount: s.amount_total, currency: s.currency, stripeCustomerId: idOf(s.customer),
       paymentIntentId: idOf(s.payment_intent), status: 'completed',
       livemode: s.livemode === true, createdAt: now,
+      ...orderConsentFields(s),
     });
     return true;
   });

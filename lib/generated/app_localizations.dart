@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11776,10 +11776,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28442,6 +28439,116 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'25+ km'**
   String get distanceBucketOver25Km;
+
+  /// No description provided for @checkoutConsentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Before you pay'**
+  String get checkoutConsentTitle;
+
+  /// EU CRD art. 16(m) immediate-delivery waiver checkbox. Legal wording: change only with counsel and bump kCoinWaiverVersion / COIN_WAIVER_VERSION.
+  ///
+  /// In en, this message translates to:
+  /// **'I agree that the coins are delivered immediately and I acknowledge that I lose my right of withdrawal once delivery starts.'**
+  String get checkoutCoinWaiverCheckbox;
+
+  /// No description provided for @checkoutMembershipWithdrawalInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Right of withdrawal: you can withdraw from this membership within 14 days of purchase (7 days for purchases in Brazil) without giving a reason and receive a full refund, using \"Withdraw from contract\" in the Shop or on our website. The membership renews automatically until you cancel; you can cancel anytime in the billing portal.'**
+  String get checkoutMembershipWithdrawalInfo;
+
+  /// No description provided for @checkoutContinueToPayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue to payment'**
+  String get checkoutContinueToPayment;
+
+  /// No description provided for @withdrawFromContract.
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw from contract'**
+  String get withdrawFromContract;
+
+  /// No description provided for @withdrawalDialogIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the purchase to withdraw from. We will email a confirmation link to the address used for the purchase; nothing is cancelled or refunded until you confirm.'**
+  String get withdrawalDialogIntro;
+
+  /// No description provided for @withdrawalNothingEligible.
+  ///
+  /// In en, this message translates to:
+  /// **'None of your web purchases can be withdrawn from right now. Memberships can be withdrawn within 14 days of purchase (7 days in Brazil); coin purchases only if the right was not waived at checkout.'**
+  String get withdrawalNothingEligible;
+
+  /// Deadline to withdraw from a web purchase
+  ///
+  /// In en, this message translates to:
+  /// **'Withdraw by {date}'**
+  String withdrawalDeadline(String date);
+
+  /// No description provided for @withdrawalRequestSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your email and confirm the withdrawal with the link we sent.'**
+  String get withdrawalRequestSent;
+
+  /// No description provided for @withdrawalRequestFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The withdrawal request could not be sent. Please try again or email support@greengochat.com.'**
+  String get withdrawalRequestFailed;
+
+  /// Web (Stripe) auto-renew disclosure for an active subscription
+  ///
+  /// In en, this message translates to:
+  /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
+  String webSubscriptionRenewsOn(
+      String plan, String price, String interval, String date);
+
+  /// Web (Stripe) subscription cancelled at period end
+  ///
+  /// In en, this message translates to:
+  /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
+  String webSubscriptionEndsOn(
+      String plan, String price, String interval, String date);
+
+  /// No description provided for @billingIntervalMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'month'**
+  String get billingIntervalMonth;
+
+  /// No description provided for @billingIntervalYear.
+  ///
+  /// In en, this message translates to:
+  /// **'year'**
+  String get billingIntervalYear;
+
+  /// No description provided for @cancelAnytimeBillingPortal.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel anytime in the billing portal'**
+  String get cancelAnytimeBillingPortal;
+
+  /// No description provided for @billingPortalOpenFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the billing portal. Please try again.'**
+  String get billingPortalOpenFailed;
+
+  /// No description provided for @subscriptionAutoRenewInfoWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.'**
+  String get subscriptionAutoRenewInfoWeb;
+
+  /// No description provided for @webBillingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Billing and withdrawal'**
+  String get webBillingTitle;
 }
 
 class _AppLocalizationsDelegate
@@ -28455,13 +28562,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'de',
-    'en',
-    'es',
-    'fr',
-    'it',
-    'pt',
-  ].contains(locale.languageCode);
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -28497,9 +28604,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

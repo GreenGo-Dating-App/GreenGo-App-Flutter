@@ -6611,10 +6611,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -16357,4 +16354,75 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get distanceBucketOver25Km => 'über 25 km';
+
+  @override
+  String get checkoutConsentTitle => 'Vor der Zahlung';
+
+  @override
+  String get checkoutCoinWaiverCheckbox =>
+      'Ich stimme zu, dass die Coins sofort geliefert werden, und ich nehme zur Kenntnis, dass ich mein Widerrufsrecht verliere, sobald die Lieferung beginnt.';
+
+  @override
+  String get checkoutMembershipWithdrawalInfo =>
+      'Widerrufsrecht: Du kannst diese Mitgliedschaft innerhalb von 14 Tagen nach dem Kauf (7 Tage bei Käufen in Brasilien) ohne Angabe von Gründen widerrufen und erhältst den vollen Betrag zurück, über „Vertrag widerrufen“ im Shop oder auf unserer Website. Die Mitgliedschaft verlängert sich automatisch, bis du kündigst; du kannst jederzeit im Abrechnungsportal kündigen.';
+
+  @override
+  String get checkoutContinueToPayment => 'Weiter zur Zahlung';
+
+  @override
+  String get withdrawFromContract => 'Vertrag widerrufen';
+
+  @override
+  String get withdrawalDialogIntro =>
+      'Wähle den Kauf, den du widerrufen möchtest. Wir senden einen Bestätigungslink an die beim Kauf verwendete E-Mail-Adresse; erst nach deiner Bestätigung wird etwas storniert oder erstattet.';
+
+  @override
+  String get withdrawalNothingEligible =>
+      'Keiner deiner Web-Käufe kann derzeit widerrufen werden. Mitgliedschaften können innerhalb von 14 Tagen nach dem Kauf widerrufen werden (7 Tage in Brasilien); Coin-Käufe nur, wenn beim Kauf nicht auf das Widerrufsrecht verzichtet wurde.';
+
+  @override
+  String withdrawalDeadline(String date) {
+    return 'Widerruf bis $date';
+  }
+
+  @override
+  String get withdrawalRequestSent =>
+      'Prüfe deine E-Mails und bestätige den Widerruf über den gesendeten Link.';
+
+  @override
+  String get withdrawalRequestFailed =>
+      'Der Widerruf konnte nicht gesendet werden. Bitte versuche es erneut oder schreibe an support@greengochat.com.';
+
+  @override
+  String webSubscriptionRenewsOn(
+      String plan, String price, String interval, String date) {
+    return '$plan: $price pro $interval. Verlängert sich automatisch am $date.';
+  }
+
+  @override
+  String webSubscriptionEndsOn(
+      String plan, String price, String interval, String date) {
+    return '$plan: $price pro $interval. Gekündigt; Zugang endet am $date.';
+  }
+
+  @override
+  String get billingIntervalMonth => 'Monat';
+
+  @override
+  String get billingIntervalYear => 'Jahr';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Jederzeit im Abrechnungsportal kündigen';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'Das Abrechnungsportal konnte nicht geöffnet werden. Bitte versuche es erneut.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Abos verlängern sich automatisch zum angezeigten Preis und Intervall, bis du kündigst. Jederzeit im Abrechnungsportal kündbar.';
+
+  @override
+  String get webBillingTitle => 'Abrechnung und Widerruf';
 }

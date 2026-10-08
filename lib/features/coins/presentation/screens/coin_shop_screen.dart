@@ -17,6 +17,7 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../widgets/web_checkout_dialog.dart';
+import '../widgets/web_billing_panel.dart';
 import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
@@ -1316,6 +1317,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                 isRestoring: _isRestoring,
                 showFreeTrialNotice: true,
               ),
+              // Web (Stripe): price / interval / next renewal, the billing
+              // portal and "Withdraw from contract" (P2-9; L-11, H-23).
+              if (kIsWeb) const WebBillingPanel(),
               const SizedBox(height: 8),
             ],
           ),
@@ -2147,6 +2151,9 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               }),
               const SizedBox(height: 24),
               _buildSendCoinsSection(),
+              // Web (Stripe): "Withdraw from contract" for coin purchases
+              // made without the immediate-delivery waiver (P2-9).
+              if (kIsWeb) const WebBillingPanel(showSubscriptions: false),
             ],
           ),
         ),

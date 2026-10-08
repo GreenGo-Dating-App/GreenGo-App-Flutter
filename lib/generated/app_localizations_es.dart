@@ -6611,10 +6611,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Membresía $tierName activa hasta $formattedDate$coinsText';
   }
 
@@ -16336,4 +16333,75 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get distanceBucketOver25Km => 'a más de 25 km';
+
+  @override
+  String get checkoutConsentTitle => 'Antes de pagar';
+
+  @override
+  String get checkoutCoinWaiverCheckbox =>
+      'Acepto que las monedas se entreguen inmediatamente y reconozco que pierdo mi derecho de desistimiento una vez que comienza la entrega.';
+
+  @override
+  String get checkoutMembershipWithdrawalInfo =>
+      'Derecho de desistimiento: puedes desistir de esta membresía dentro de los 14 días posteriores a la compra (7 días en compras realizadas en Brasil) sin indicar el motivo y recibir el reembolso completo, mediante «Desistir del contrato» en la Tienda o en nuestro sitio web. La membresía se renueva automáticamente hasta que la canceles; puedes cancelarla en cualquier momento en el portal de facturación.';
+
+  @override
+  String get checkoutContinueToPayment => 'Continuar al pago';
+
+  @override
+  String get withdrawFromContract => 'Desistir del contrato';
+
+  @override
+  String get withdrawalDialogIntro =>
+      'Elige la compra de la que quieres desistir. Enviaremos un enlace de confirmación al correo usado en la compra; no se cancela ni reembolsa nada hasta que confirmes.';
+
+  @override
+  String get withdrawalNothingEligible =>
+      'Ninguna de tus compras web admite desistimiento ahora. Las membresías pueden desistirse dentro de los 14 días posteriores a la compra (7 días en Brasil); las compras de monedas solo si no se renunció al derecho al pagar.';
+
+  @override
+  String withdrawalDeadline(String date) {
+    return 'Desiste antes del $date';
+  }
+
+  @override
+  String get withdrawalRequestSent =>
+      'Revisa tu correo y confirma el desistimiento con el enlace que te enviamos.';
+
+  @override
+  String get withdrawalRequestFailed =>
+      'No se pudo enviar la solicitud de desistimiento. Inténtalo de nuevo o escribe a support@greengochat.com.';
+
+  @override
+  String webSubscriptionRenewsOn(
+      String plan, String price, String interval, String date) {
+    return '$plan: $price por $interval. Se renueva automáticamente el $date.';
+  }
+
+  @override
+  String webSubscriptionEndsOn(
+      String plan, String price, String interval, String date) {
+    return '$plan: $price por $interval. Cancelada; el acceso termina el $date.';
+  }
+
+  @override
+  String get billingIntervalMonth => 'mes';
+
+  @override
+  String get billingIntervalYear => 'año';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Cancela cuando quieras en el portal de facturación';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'No se pudo abrir el portal de facturación. Inténtalo de nuevo.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Las suscripciones se renuevan automáticamente al precio y con la periodicidad indicados hasta que las canceles. Cancela cuando quieras en el portal de facturación.';
+
+  @override
+  String get webBillingTitle => 'Facturación y desistimiento';
 }
