@@ -6,13 +6,14 @@
 import { createHash } from 'crypto';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
-import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
+import { verifyAuth, handleError, logInfo, logError, db, AppError } from '../shared/utils';
 import * as admin from 'firebase-admin';
 import { CoinSource } from '../shared/types';
 import {
   verifyGooglePlayPurchase,
   verifyAppStorePurchase,
 } from '../shared/purchase_verification';
+import { flagSandboxGrantIfNeeded } from './purchaseClawback';
 
 // Coin packages (legacy key → coins), kept for the scheduled/reward paths.
 const COIN_PACKAGES = {
@@ -67,6 +68,12 @@ async function grantVerifiedCoinPurchase(params: {
   purchaseToken: string;
   platform: 'android' | 'ios';
   transactionId?: string;
+  /** H-13: 'PRODUCTION' | 'SANDBOX' as reported by the store. Recorded, never refused. */
+  environment?: 'PRODUCTION' | 'SANDBOX';
+  /** Play purchaseType (0 = license tester, 1 = promo, 2 = rewarded). */
+  purchaseType?: number;
+  /** M-11: Play obfuscatedExternalAccountId / Apple appAccountToken, for audit. */
+  obfuscatedAccountId?: string;
 }): Promise<{
   success: boolean;
   coinsAdded: number;
@@ -176,6 +183,12 @@ async function grantVerifiedCoinPurchase(params: {
       transactionId: transactionId ?? null,
       coinTransactionId: transactionRef.id,
       createdAt: now,
+      // Audit fields (security Phase 1): refunds are matched by doc id or
+      // transactionId; environment / purchaseType / account id are recorded
+      // so sandbox and cross-account grants can be reviewed.
+      environment: params.environment ?? null,
+      purchaseType: params.purchaseType ?? null,
+      obfuscatedAccountId: params.obfuscatedAccountId ?? null,
     });
 
     return { newBalance: updatedTotal, alreadyProcessed: false };
@@ -194,6 +207,16 @@ async function grantVerifiedCoinPurchase(params: {
   logInfo(
     `Granted ${product.coins} coins to ${uid} for ${productId} (${platform}), new balance ${outcome.newBalance}`
   );
+
+  await flagSandboxGrantIfNeeded({
+    uid,
+    ledgerId,
+    productId,
+    platform,
+    coins: product.coins,
+    environment: params.environment,
+    purchaseType: params.purchaseType,
+  });
 
   return {
     success: true,
@@ -268,12 +291,39 @@ export const verifyGooglePlayCoinPurchase = onCall<VerifyPurchaseRequest>(
         throw new HttpsError('failed-precondition', 'Purchase verification failed');
       }
 
+      // Security audit M-11: the app passes the buyer's uid as
+      // applicationUserName, which Play returns as obfuscatedExternalAccountId.
+      // A receipt bought by account A must not be claimed by account B.
+      // Absent (older purchases / other clients) = not enforced.
+      const boughtBy = verificationResult.obfuscatedAccountId;
+      if (boughtBy && boughtBy !== uid) {
+        logError(`Rejected Play coin claim for ${uid}: purchase belongs to another account`);
+        await db.collection('fraud_flags').add({
+          type: 'purchase_account_mismatch',
+          userId: uid,
+          obfuscatedAccountId: boughtBy,
+          productId,
+          platform: 'android',
+          storeTransactionId: verificationResult.transactionId ?? null,
+          createdAt: admin.firestore.Timestamp.now(),
+          reviewed: false,
+        }).catch(() => undefined);
+        throw new AppError(
+          'purchase-account-mismatch',
+          'This purchase belongs to a different account.',
+          403,
+        );
+      }
+
       return await grantVerifiedCoinPurchase({
         uid,
         productId,
         purchaseToken: gpToken,
         platform: 'android',
         transactionId: verificationResult.transactionId,
+        environment: verificationResult.environment,
+        purchaseType: verificationResult.purchaseType,
+        obfuscatedAccountId: boughtBy,
       });
     } catch (error) {
       throw handleError(error);
@@ -312,6 +362,13 @@ export const verifyAppStoreCoinPurchase = onCall<VerifyPurchaseRequest>(
         throw new HttpsError('failed-precondition', 'Purchase verification failed');
       }
 
+      // Security audit M-12: a transaction Apple already refunded / revoked
+      // (revocationDate set) is genuine but must never be credited.
+      if (verificationResult.revoked) {
+        logError(`Rejected App Store coin claim for ${uid}: transaction was refunded/revoked`);
+        throw new AppError('purchase-revoked', 'This purchase was refunded.', 400);
+      }
+
       // Prefer Apple's transactionId as the idempotency key: the JWS blob
       // itself is not stable across restores.
       const dedupKey = verificationResult.transactionId || purchaseToken;
@@ -322,6 +379,8 @@ export const verifyAppStoreCoinPurchase = onCall<VerifyPurchaseRequest>(
         purchaseToken: dedupKey,
         platform: 'ios',
         transactionId: verificationResult.transactionId,
+        environment: verificationResult.environment,
+        obfuscatedAccountId: verificationResult.appAccountToken,
       });
     } catch (error) {
       throw handleError(error);

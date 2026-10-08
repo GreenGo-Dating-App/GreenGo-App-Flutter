@@ -23,7 +23,13 @@ import { db, logInfo, logError } from '../shared/utils';
 import {
   decodeAppStoreNotification,
   getGooglePlaySubscriptionExpiry,
+  VoidedPurchase,
 } from '../shared/purchase_verification';
+import {
+  clawbackCoinPurchase,
+  findPurchaseLedger,
+  ledgerIdFor,
+} from '../coins/purchaseClawback';
 import { PRODUCT_CONFIG, BASE_CATALOG_ID, toCatalogId } from './index';
 import { monitored } from '../shared/monitoring';
 import { SubscriptionStatus } from '../shared/types';
@@ -162,6 +168,95 @@ async function markSubscription(
   await ref.set({ ...fields, updatedAt: admin.firestore.Timestamp.now() }, { merge: true });
 }
 
+// ========== REFUNDS / CHARGEBACKS (security audit H-10) ==========
+
+/**
+ * A Google Play purchase was voided (refund, chargeback, revoke). Shared by
+ * the RTDN `voidedPurchaseNotification` and the daily Voided Purchases API
+ * poll (pollPlayVoidedPurchases). Idempotent: replays change nothing.
+ *   - coin purchase (purchaseLedger match) -> coins clawed back,
+ *   - subscription -> entitlement revoked, but only when the voided order is
+ *     the subscription's CURRENT period (a refunded past renewal takes
+ *     nothing away), confirmed with the Play API.
+ * Throws on a transient Play API failure so the caller retries.
+ */
+export async function processPlayVoidedPurchase(
+  v: VoidedPurchase & { productType?: number },
+  source: 'rtdn' | 'voided_poll',
+): Promise<string> {
+  const details = {
+    orderId: v.orderId ?? null,
+    voidedReason: v.voidedReason ?? null,
+    voidedSource: v.voidedSource ?? null,
+    refundType: v.refundType ?? null,
+    voidedTimeMillis: v.voidedTimeMillis ?? null,
+  };
+
+  // productType 1 = subscription; 2 (one-time) or unknown -> try the coin ledger.
+  if (v.productType !== 1) {
+    const ledgerRef = await findPurchaseLedger({
+      purchaseToken: v.purchaseToken,
+      transactionId: v.orderId,
+    });
+    if (ledgerRef) {
+      const r = await clawbackCoinPurchase(ledgerRef, {
+        store: 'google_play', reason: 'play_voided', source, details,
+      });
+      return `coins_${r.action}`;
+    }
+  }
+
+  const match = await findSubscription(v.purchaseToken);
+  if (!match) {
+    // Bought before the ledger existed, or not ours: queue for review once.
+    await db.collection('fraud_flags')
+      .doc(`voided_unmatched_${ledgerIdFor(`${v.purchaseToken}|${v.orderId ?? ''}`)}`)
+      .set({
+        type: 'purchase_refunded_unmatched',
+        store: 'google_play',
+        source,
+        productType: v.productType ?? null,
+        ...details,
+        createdAt: admin.firestore.Timestamp.now(),
+        reviewed: false,
+      }, { merge: true });
+    return 'unmatched';
+  }
+
+  const voided: string[] = Array.isArray(match.data.voidedOrderIds) ? match.data.voidedOrderIds : [];
+  const orderKey = v.orderId || v.purchaseToken.slice(0, 64);
+  if (voided.includes(orderKey)) return 'subscription_already';
+
+  const exp = await getGooglePlaySubscriptionExpiry(v.purchaseToken);
+  if (exp.apiUnavailable || exp.error) {
+    throw new Error(`Play API unavailable for voided subscription: ${exp.error || 'not configured'}`);
+  }
+  const currentPeriod = !v.orderId || !exp.latestOrderId || exp.latestOrderId === v.orderId;
+  const now = admin.firestore.Timestamp.now();
+  if (currentPeriod) {
+    await revokeEntitlement(match.userId, match.data.productId as string);
+    await markSubscription(match.ref, { status: SubscriptionStatus.EXPIRED, autoRenewing: false });
+  }
+  await match.ref.set(
+    { voidedOrderIds: admin.firestore.FieldValue.arrayUnion(orderKey), updatedAt: now },
+    { merge: true },
+  );
+  await db.collection('fraud_flags').doc(`refund_sub_${ledgerIdFor(orderKey)}`).set({
+    type: 'purchase_refunded',
+    store: 'google_play',
+    source,
+    userId: match.userId,
+    productId: match.data.productId ?? null,
+    entitlementRevoked: currentPeriod,
+    ...details,
+    createdAt: now,
+    reviewed: false,
+  });
+  return currentPeriod ? 'subscription_revoked' : 'subscription_past_period';
+}
+
+const APPLE_REFUND_TYPES = new Set(['REFUND', 'REVOKE']);
+
 // ========== APP STORE SERVER NOTIFICATIONS V2 ==========
 
 export const appStoreNotificationsV2 = onRequest(
@@ -180,6 +275,66 @@ export const appStoreNotificationsV2 = onRequest(
         `App Store notification: ${info.notificationType}/${info.subtype || '-'} ` +
         `product=${info.productId} origTxn=${info.originalTransactionId}`,
       );
+
+      // Consumable (coin) refunds: match the coin ledger by transactionId and
+      // claw the coins back. Subscriptions fall through to the path below.
+      if (APPLE_REFUND_TYPES.has(info.notificationType) && info.transactionId) {
+        const ledgerRef = await findPurchaseLedger({ transactionId: info.transactionId });
+        if (ledgerRef) {
+          const r = await clawbackCoinPurchase(ledgerRef, {
+            store: 'app_store',
+            reason: info.notificationType === 'REFUND' ? 'apple_refund' : 'apple_revoke',
+            source: 'asn_v2',
+            details: {
+              transactionId: info.transactionId,
+              revocationDateMs: info.revocationDateMs ?? null,
+              revocationReason: info.revocationReason ?? null,
+              environment: info.environment ?? null,
+              notificationUUID: info.notificationUUID ?? null,
+            },
+          });
+          logInfo(`App Store ${info.notificationType} for coin transaction: ${r.action}`);
+          res.status(200).send('OK');
+          return;
+        }
+      }
+
+      // The customer asked Apple for a refund of a consumable. Apple accepts
+      // consumption info for 12h via the App Store Server API (needs an
+      // In-App Purchase API key, not configured yet); until then the request
+      // is recorded for review and Apple decides without it.
+      if (info.notificationType === 'CONSUMPTION_REQUEST') {
+        const key = info.transactionId || info.notificationUUID || 'unknown';
+        await db.collection('apple_consumption_requests').doc(key).set({
+          transactionId: info.transactionId ?? null,
+          productId: info.productId ?? null,
+          productType: info.productType ?? null,
+          environment: info.environment ?? null,
+          reason: info.consumptionRequestReason ?? null,
+          notificationUUID: info.notificationUUID ?? null,
+          receivedAt: admin.firestore.Timestamp.now(),
+          responded: false,
+        }, { merge: true });
+        res.status(200).send('OK');
+        return;
+      }
+
+      if (info.notificationType === 'REFUND_REVERSED' && info.transactionId) {
+        const ledgerRef = await findPurchaseLedger({ transactionId: info.transactionId });
+        if (ledgerRef) {
+          // Clawed-back coins are not re-credited automatically: review.
+          await db.collection('fraud_flags').doc(`refund_reversed_${ledgerRef.id}`).set({
+            type: 'refund_reversed',
+            store: 'app_store',
+            ledgerId: ledgerRef.id,
+            transactionId: info.transactionId,
+            createdAt: admin.firestore.Timestamp.now(),
+            reviewed: false,
+          }, { merge: true });
+          res.status(200).send('OK');
+          return;
+        }
+      }
 
       if (!info.originalTransactionId) {
         res.status(200).send('No transaction info'); // ack — nothing to do
@@ -289,6 +444,22 @@ export const playStoreNotifications = onRequest(
         return;
       }
       const decoded = JSON.parse(Buffer.from(encoded, 'base64').toString('utf8'));
+
+      // Refund / chargeback / revoke of a one-time product or subscription.
+      const voided = decoded?.voidedPurchaseNotification;
+      if (voided?.purchaseToken) {
+        const outcome = await processPlayVoidedPurchase({
+          purchaseToken: String(voided.purchaseToken),
+          orderId: voided.orderId ? String(voided.orderId) : undefined,
+          refundType: typeof voided.refundType === 'number' ? voided.refundType : undefined,
+          productType: typeof voided.productType === 'number' ? voided.productType : undefined,
+          voidedTimeMillis: decoded?.eventTimeMillis ? Number(decoded.eventTimeMillis) : undefined,
+        }, 'rtdn');
+        logInfo(`Play RTDN voided purchase: ${outcome}`);
+        res.status(200).send('OK');
+        return;
+      }
+
       const sub = decoded?.subscriptionNotification;
       if (!sub?.purchaseToken) {
         res.status(200).send('Not a subscription notification');

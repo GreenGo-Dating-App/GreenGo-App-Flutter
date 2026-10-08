@@ -62,6 +62,15 @@ export const stripeCoreDeps = {
       return null;
     }
   },
+  /** The account email only when verified (L-06: test-mode allowlist). */
+  getVerifiedUserEmail: async (uid: string): Promise<string | null> => {
+    try {
+      const u = await admin.auth().getUser(uid);
+      return u.emailVerified ? u.email || null : null;
+    } catch {
+      return null;
+    }
+  },
   now: (): Date => new Date(),
   downgradeTierNow: (uid: string, reason: string): Promise<string | null> =>
     downgradeTierNow(uid, reason, true),
@@ -194,6 +203,44 @@ export const STRIPE_TEST_MODE_EMAILS: readonly string[] = [
 export function isStripeTestModeEmail(email: string | null | undefined): boolean {
   if (!email) return false;
   return STRIPE_TEST_MODE_EMAILS.includes(email.trim().toLowerCase());
+}
+
+/**
+ * Security audit L-06: the test-mode allowlist is keyed on an email, so the
+ * email must be one the account has PROVEN it owns. An unverified token email
+ * (anyone can sign up with someone else's address) never selects test mode.
+ */
+export function isStripeTestModeToken(token: { email?: unknown; email_verified?: unknown } | null | undefined): boolean {
+  if (!token || token.email_verified !== true || typeof token.email !== 'string') return false;
+  return isStripeTestModeEmail(token.email);
+}
+
+/**
+ * Origins Stripe may send the user back to after Checkout / the Customer
+ * Portal (the web app builds them from Uri.base.origin). Anything else would
+ * turn the hosted page into an open redirect. Firebase Hosting preview
+ * channels of the app site (greengo-chat--<channel>.web.app) are allowed.
+ */
+export const STRIPE_REDIRECT_HOSTS: readonly string[] = [
+  'greengo-chat.web.app',
+  'greengo-chat.firebaseapp.com',
+  'greengochat.com',
+  'www.greengochat.com',
+];
+
+export function isAllowedStripeRedirect(raw: unknown): boolean {
+  if (typeof raw !== 'string' || raw.length > 2048) return false;
+  try {
+    const u = new URL(raw);
+    if (u.username || u.password) return false;
+    const host = u.hostname.toLowerCase();
+    if (u.protocol === 'https:') {
+      return STRIPE_REDIRECT_HOSTS.includes(host) || /^greengo-chat--[a-z0-9-]+\.web\.app$/.test(host);
+    }
+    return u.protocol === 'http:' && (host === 'localhost' || host === '127.0.0.1');
+  } catch {
+    return false;
+  }
 }
 
 function createStripeClient(testMode: boolean): Stripe {
@@ -532,7 +579,7 @@ export async function resolveStripeUid(
 /** Test-mode objects only ever grant to the allow-listed accounts. */
 async function testModeAllowed(uid: string, livemode: boolean | undefined): Promise<boolean> {
   if (livemode !== false) return true;
-  return isStripeTestModeEmail(await stripeCoreDeps.getUserEmail(uid));
+  return isStripeTestModeEmail(await stripeCoreDeps.getVerifiedUserEmail(uid));
 }
 
 /**
@@ -1166,8 +1213,10 @@ export async function processInvoicePaymentFailed(stripe: Stripe, invoiceId: str
  *     (refund: only when the refunded period is still running; a refund of a
  *     long-past period changes nothing). Dispute -> also cancels the Stripe
  *     subscription so the disputed card is not charged again.
- *   Coin charge -> flagged for owner review (spent coins cannot be clawed
- *     back reliably).
+ *   Coin charge -> the coins are clawed back (security audit H-10; balance
+ *     may go negative when they were already spent) and the case is still
+ *     flagged for owner review. Idempotent per checkout session, so a refund
+ *     followed by a dispute of the same charge debits once.
  * Marker stripe_revocations/{kind}_{id} makes it idempotent.
  */
 export async function processChargeReversal(
@@ -1215,10 +1264,24 @@ export async function processChargeReversal(
       type: `coin_${args.kind}`, chargeId: ch.id, sessionId, uid, product,
       amount: ch.amount ?? null, currency: ch.currency ?? null, livemode: ch.livemode === true,
     }, opts.dryRun);
+    const claw: CoinClawback = sessionId
+      ? await clawbackStripeCoins(sessionId, { kind: args.kind, chargeId: ch.id, source: opts.source || 'webhook' }, opts.dryRun)
+      : { action: 'not_found' };
     if (!opts.dryRun) {
-      await markerRef.set({ ...record, sessionId, uid, product, action: 'flagged', flag, createdAt: ts(nowDate()) });
+      await markerRef.set({
+        ...record, sessionId, uid, product,
+        action: claw.action === 'clawed_back' ? 'coins_clawed_back' : 'flagged',
+        clawback: claw.action, coinsClawedBack: claw.coins ?? 0, flag, createdAt: ts(nowDate()),
+      });
     }
-    return { action: 'flagged', uid, reason: `coin_${args.kind}`, detail: { flag } };
+    if (claw.action === 'clawed_back' || claw.action === 'would_claw_back') {
+      return {
+        action: claw.action === 'clawed_back' ? 'revoked' : 'would_revoke',
+        uid: claw.uid ?? uid, reason: `coin_${args.kind}`,
+        detail: { flag, coins: claw.coins, balanceAfter: claw.balanceAfter ?? null, sessionId },
+      };
+    }
+    return { action: 'flagged', uid, reason: `coin_${args.kind}`, detail: { flag, clawback: claw.action } };
   }
 
   const sub: any = await stripe.subscriptions.retrieve(subId);
@@ -1285,6 +1348,96 @@ export async function processChargeReversal(
     await markerRef.set({ subscriptionCancelled: cancelled }, { merge: true });
   }
   return { action: 'revoked', uid, detail: { result: endTier, subscriptionCancelled: cancelled } };
+}
+
+/** Remove `amount` from coin batch remainders: `preferBatchId` first, then oldest first. */
+export function deductFromCoinBatches(batches: any[], amount: number, preferBatchId?: string | null): any[] {
+  const out = batches.map((b) => (b && typeof b === 'object' ? { ...b } : b));
+  let left = amount;
+  const order = out
+    .map((b, i) => ({ b, i }))
+    .filter(({ b }) => b && typeof b.remainingCoins === 'number' && b.remainingCoins > 0)
+    .sort((x, y) => {
+      if (preferBatchId && x.b.batchId === preferBatchId) return -1;
+      if (preferBatchId && y.b.batchId === preferBatchId) return 1;
+      return x.i - y.i;
+    });
+  for (const { b } of order) {
+    if (left <= 0) break;
+    const take = Math.min(b.remainingCoins, left);
+    b.remainingCoins -= take;
+    left -= take;
+  }
+  return out;
+}
+
+export interface CoinClawback {
+  action: 'clawed_back' | 'would_claw_back' | 'already' | 'not_found' | 'not_coins';
+  uid?: string;
+  coins?: number;
+  balanceAfter?: number;
+}
+
+/**
+ * Take back the coins of a refunded / disputed Stripe coin session, once per
+ * session (stripe_orders/{sessionId}.revokedAt is the marker). Same semantics
+ * as the store clawback in the mobile repo (coins/purchaseClawback.ts):
+ * totalCoins may go negative, purchasedCoins floors at 0, batch remainders
+ * are reduced (the app shows max(totalCoins, sum of batches)), a debit with
+ * reason 'refundClawback' (the app's enum parser falls back to
+ * featurePurchase and renders metadata.feature) and a fraud_flags entry.
+ */
+export async function clawbackStripeCoins(
+  sessionId: string,
+  why: { kind: 'refund' | 'dispute'; chargeId: string; source: string },
+  dryRun = false,
+): Promise<CoinClawback> {
+  const db = fdb();
+  const orderRef = db.collection('stripe_orders').doc(sessionId);
+  const legacyQ = db.collection('stripe_orders').where('sessionId', '==', sessionId).limit(1);
+  return db.runTransaction(async (tx): Promise<CoinClawback> => {
+    const [direct, legacy] = await Promise.all([tx.get(orderRef), tx.get(legacyQ)]);
+    const snap: any = direct.exists ? direct : legacy.docs[0];
+    if (!snap || !snap.exists) return { action: 'not_found' };
+    const order = snap.data() || {};
+    if (order.type !== 'coins') return { action: 'not_coins' };
+    const uid = String(order.userId || '');
+    if (!uid) return { action: 'not_found' };
+    if (order.revokedAt) return { action: 'already', uid };
+    const coins = typeof order.coins === 'number' && order.coins > 0
+      ? order.coins
+      : (COIN_PACKAGES[order.productId]?.coins ?? 0);
+    if (dryRun) return { action: 'would_claw_back', uid, coins };
+
+    const balanceRef = db.collection('coinBalances').doc(uid);
+    const bal = (await tx.get(balanceRef)).data() || {};
+    const now = ts(nowDate());
+    const total = (Number(bal.totalCoins) || 0) - coins;
+    if (coins > 0) {
+      tx.set(balanceRef, {
+        userId: uid,
+        totalCoins: total,
+        purchasedCoins: Math.max(0, (Number(bal.purchasedCoins) || 0) - coins),
+        coinBatches: deductFromCoinBatches(Array.isArray(bal.coinBatches) ? bal.coinBatches : [], coins, `stripe_${sessionId}`),
+        lastUpdated: now,
+      }, { merge: true });
+      tx.set(db.collection('coinTransactions').doc(`stripe_clawback_${sessionId}`), {
+        userId: uid, type: 'debit', amount: coins, balanceAfter: total, reason: 'refundClawback',
+        description: `Refunded Stripe purchase: ${coins} coins removed`, createdAt: now, relatedId: sessionId,
+        metadata: { feature: 'refunded purchase', platform: 'web', stripeSessionId: sessionId, chargeId: why.chargeId, kind: why.kind },
+      });
+    }
+    tx.update(snap.ref, {
+      revokedAt: now, revokeReason: `stripe_${why.kind}`, revokeChargeId: why.chargeId, coinsClawedBack: coins,
+    });
+    tx.set(db.collection('fraud_flags').doc(`stripe_refund_${sessionId}`), {
+      type: 'purchase_refunded', store: 'stripe', reason: `stripe_${why.kind}`, source: why.source,
+      userId: uid, productId: order.productId ?? null, platform: 'web', coins, balanceAfter: total,
+      negativeBalance: coins > 0 && total < 0, sessionId, chargeId: why.chargeId,
+      livemode: order.livemode === true, createdAt: now, reviewed: false,
+    });
+    return { action: 'clawed_back', uid, coins, balanceAfter: total };
+  });
 }
 
 // ---------------------------------------------------------------------------
