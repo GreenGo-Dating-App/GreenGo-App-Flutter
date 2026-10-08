@@ -39,6 +39,7 @@
  */
 
 import * as crypto from 'crypto';
+import { adminTokenOk } from '../shared/adminToken';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
@@ -782,14 +783,6 @@ export const reconcileStripeMemberships = onSchedule(
   },
 );
 
-function tokenOk(given: unknown): boolean {
-  const expected = process.env.STRIPE_RECONCILE_TOKEN || '';
-  if (!expected || typeof given !== 'string' || given.length === 0) return false;
-  const a = Buffer.from(given);
-  const b = Buffer.from(expected);
-  return a.length === b.length && crypto.timingSafeEqual(a, b);
-}
-
 export const runStripeReconcileNow = onRequest(
   { memory: '512MiB', timeoutSeconds: 540, secrets: ['STRIPE_SECRET_KEY'] },
   async (req, res) => {
@@ -797,7 +790,7 @@ export const runStripeReconcileNow = onRequest(
       res.status(503).json({ error: 'STRIPE_RECONCILE_TOKEN not configured' });
       return;
     }
-    if (!tokenOk(req.query.token)) {
+    if (!adminTokenOk(req, [process.env.STRIPE_RECONCILE_TOKEN], 'runStripeReconcileNow')) { // L-05
       res.status(403).send('forbidden');
       return;
     }

@@ -15,6 +15,7 @@
 
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
+import { adminTokenOk } from '../shared/adminToken';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
@@ -34,7 +35,7 @@ const GEOAPIFY_API_KEY = defineSecret('GEOAPIFY_API_KEY');
 export const runBackfillViatorCategoriesNow = onRequest(
   { timeoutSeconds: 1800, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] },
   async (req, res) => {
-    if (!req.query.token || req.query.token !== GEOAPIFY_API_KEY.value()) {
+    if (!adminTokenOk(req, [GEOAPIFY_API_KEY.value()], 'externalEventsAdmin')) { // L-05
       res.status(403).send('Forbidden');
       return;
     }
@@ -732,7 +733,7 @@ export const runIngestExternalEventsNow = onRequest(
   { timeoutSeconds: 540, memory: '512MiB', secrets: [VIATOR_API_KEY] },
   monitored("runIngestExternalEventsNow", async (req, res) => {
     const key = VIATOR_API_KEY.value();
-    if (!key || req.query.token !== key) {
+    if (!adminTokenOk(req, [key], 'runIngestExternalEventsNow')) { // L-05
       res.status(403).send('Forbidden');
       return;
     }
@@ -764,7 +765,7 @@ export const runIngestExternalEventsNow = onRequest(
 export const runCleanupNoImageNow = onRequest(
   { timeoutSeconds: 1800, memory: '512MiB', secrets: [GEOAPIFY_API_KEY] },
   async (req, res) => {
-    if (!req.query.token || req.query.token !== GEOAPIFY_API_KEY.value()) {
+    if (!adminTokenOk(req, [GEOAPIFY_API_KEY.value()], 'externalEventsAdmin')) { // L-05
       res.status(403).send('Forbidden');
       return;
     }

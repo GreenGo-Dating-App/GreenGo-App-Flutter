@@ -9,6 +9,7 @@
 
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
+import { adminTokenOk } from '../shared/adminToken';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
@@ -390,7 +391,7 @@ export const runIngestTicketmasterNow = onRequest(
   { timeoutSeconds: 540, memory: '512MiB', secrets: [TICKETMASTER_API_KEY] },
   async (req, res) => {
     const key = TICKETMASTER_API_KEY.value();
-    if (!key || req.query.token !== key) {
+    if (!adminTokenOk(req, [key], 'runIngestTicketmasterNow')) { // L-05
       res.status(403).send('Forbidden');
       return;
     }

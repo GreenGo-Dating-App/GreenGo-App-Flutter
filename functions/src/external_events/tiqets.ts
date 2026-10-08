@@ -11,6 +11,7 @@
 
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
+import { adminTokenOk } from '../shared/adminToken';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
@@ -170,7 +171,7 @@ export const runIngestTiqetsNow = onRequest(
   { timeoutSeconds: 540, memory: '512MiB', secrets: [TIQETS_API_KEY] },
   monitored("runIngestTiqetsNow", async (req, res) => {
     const key = TIQETS_API_KEY.value();
-    if (!key || req.query.token !== key) {
+    if (!adminTokenOk(req, [key], 'runIngestTiqetsNow')) { // L-05
       res.status(403).send('Forbidden');
       return;
     }
