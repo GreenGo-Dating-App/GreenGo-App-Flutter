@@ -151,3 +151,6 @@ service-account*.json
 *.jks
 *.keystore
 key.properties
+
+# Generated at build time from lib/firebase_options.dart (tools/web/generate_firebase_config.py)
+web/firebase-config.js

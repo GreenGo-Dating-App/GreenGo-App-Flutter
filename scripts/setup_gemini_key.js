@@ -13,6 +13,15 @@ const path = require('path');
 const os = require('os');
 const fs = require('fs');
 
+// OAuth client of the firebase-tools CLI (to reuse your `firebase login`).
+// Not stored in git: set FIREBASE_TOOLS_CLIENT_ID / FIREBASE_TOOLS_CLIENT_SECRET
+// (values in the GreenGo credentials file).
+function requireEnv(name) {
+  const v = process.env[name];
+  if (!v) { console.error(`Missing env var ${name} (see GreenGo credentials file)`); process.exit(1); }
+  return v;
+}
+
 const firebaseConfigPath = path.join(os.homedir(), '.config', 'configstore', 'firebase-tools.json');
 const firebaseConfig = JSON.parse(fs.readFileSync(firebaseConfigPath, 'utf8'));
 const refreshToken = firebaseConfig.tokens.refresh_token;
@@ -20,8 +29,8 @@ const refreshToken = firebaseConfig.tokens.refresh_token;
 const adcPath = path.join(os.tmpdir(), 'adc_greengo.json');
 fs.writeFileSync(adcPath, JSON.stringify({
   type: 'authorized_user',
-  client_id: 'REMOVED_OAUTH_CLIENT_ID',
-  client_secret: 'REMOVED_OAUTH_CLIENT_SECRET',
+  client_id: requireEnv('FIREBASE_TOOLS_CLIENT_ID'),
+  client_secret: requireEnv('FIREBASE_TOOLS_CLIENT_SECRET'),
   refresh_token: refreshToken,
 }));
 process.env.GOOGLE_APPLICATION_CREDENTIALS = adcPath;

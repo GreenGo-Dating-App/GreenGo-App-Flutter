@@ -23,9 +23,9 @@ const fft = functionsTest({ projectId: PROJECT });
 const db = admin.firestore();
 const auth = admin.auth();
 
-const GEMINI_KEY = 'AIzaGEMINI-test-key-0001';
-const TTS_KEY = 'AIzaTTS-test-key-0002';
-const UNSPLASH_KEY = 'unsplash-test-key-0003';
+const GEMINI_KEY = 'fake-gemini-key-for-tests';
+const TTS_KEY = 'fake-tts-key-for-tests';
+const UNSPLASH_KEY = 'fake-unsplash-key-for-tests';
 const KEYS = [GEMINI_KEY, TTS_KEY, UNSPLASH_KEY];
 
 // --- outbound HTTP mock ------------------------------------------------------
