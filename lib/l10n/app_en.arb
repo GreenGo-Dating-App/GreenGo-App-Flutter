@@ -9520,5 +9520,148 @@
   },
   "@tpPaymentMethodsSaveFailed": {
     "description": "Get paid page: error when saving payment methods fails"
+  },
+  "wzNextTo": "Next: {step}",
+  "@wzNextTo": {
+    "description": "Create / edit wizard",
+    "placeholders": {
+      "step": {
+        "type": "String"
+      }
+    }
+  },
+  "wzSteps": "Steps",
+  "@wzSteps": {
+    "description": "Create / edit wizard"
+  },
+  "wzAllStepsTitle": "All steps",
+  "@wzAllStepsTitle": {
+    "description": "Create / edit wizard"
+  },
+  "wzStepsHint": "Tap any step to go there. You can come back at any time.",
+  "@wzStepsHint": {
+    "description": "Create / edit wizard"
+  },
+  "wzStatusCurrent": "Current step",
+  "@wzStatusCurrent": {
+    "description": "Create / edit wizard"
+  },
+  "wzStatusDone": "Done",
+  "@wzStatusDone": {
+    "description": "Create / edit wizard"
+  },
+  "wzStatusAttention": "Needs attention",
+  "@wzStatusAttention": {
+    "description": "Create / edit wizard"
+  },
+  "wzStatusTodo": "Not started",
+  "@wzStatusTodo": {
+    "description": "Create / edit wizard"
+  },
+  "wzStepSemantics": "Step {step} of {total}: {title}. {status}",
+  "@wzStepSemantics": {
+    "description": "Create / edit wizard",
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "wzPaymentAppearsNote": "The Payment step appears when the price is above 0.",
+  "@wzPaymentAppearsNote": {
+    "description": "Create / edit wizard"
+  },
+  "wzPublishBlocked": "Complete the required items above to publish.",
+  "@wzPublishBlocked": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvBasicsDesc": "Give your event a clear title and tell people what to expect. A cover photo helps it stand out.",
+  "@wzEvBasicsDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvBasicsReq": "Required: title and description.",
+  "@wzEvBasicsReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvWhereDesc": "Say where it happens (type the address or pick it on the map) and when it starts and ends.",
+  "@wzEvWhereDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvWhereReq": "Required: the place, and an end time after the start.",
+  "@wzEvWhereReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvTicketsDesc": "Choose if the event is free or paid, set the price and how many people can join.",
+  "@wzEvTicketsDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvTicketsReq": "Required: how many people can come (or unlimited) and, for paid events, a price.",
+  "@wzEvTicketsReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvPaymentDesc": "Choose how attendees pay you for their tickets.",
+  "@wzEvPaymentDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvPaymentReq": "Required: a way to get paid.",
+  "@wzEvPaymentReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzEvReviewDesc": "Check how your event will look. Fix anything marked in red, then publish, save a draft or schedule it.",
+  "@wzEvReviewDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzExBasicsDesc": "Name your experience, describe it, and add photos, the languages you speak and what's included.",
+  "@wzExBasicsDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzExBasicsReq": "Required: title, description, a main photo, at least one language and what's included.",
+  "@wzExBasicsReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzExLocationDesc": "Tell guests where to meet you.",
+  "@wzExLocationDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzExLocationReq": "Required: the meeting place.",
+  "@wzExLocationReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzExFormatDesc": "Set how long it lasts, the group size, and whether it's free or paid (per person or per group).",
+  "@wzExFormatDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzExFormatReq": "Required: duration, group size and, for paid experiences, a price.",
+  "@wzExFormatReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzExAvailDesc": "Choose when guests can book: a weekly repeating schedule, or single dates you add later.",
+  "@wzExAvailDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzExAvailReq": "Optional: you can also add dates after saving.",
+  "@wzExAvailReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzExPaymentDesc": "Choose how guests pay you.",
+  "@wzExPaymentDesc": {
+    "description": "Create / edit wizard"
+  },
+  "wzExPaymentReq": "Required: at least one way to get paid.",
+  "@wzExPaymentReq": {
+    "description": "Create / edit wizard"
+  },
+  "wzExReviewDesc": "Check how guests will see it. Fix anything marked in red, then publish or save a draft.",
+  "@wzExReviewDesc": {
+    "description": "Create / edit wizard"
   }
 }

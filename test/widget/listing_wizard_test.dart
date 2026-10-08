@@ -44,6 +44,8 @@ class _HarnessState extends State<_Harness> {
           steps: [
             WizardStep(
               title: 'Basics',
+              description: 'Name it and describe it.',
+              requirements: 'Required: title.',
               icon: Icons.edit,
               error: () => title.text.trim().isEmpty ? 'Add a title.' : null,
               summary: () => title.text,
@@ -51,6 +53,8 @@ class _HarnessState extends State<_Harness> {
             ),
             WizardStep(
               title: 'Tickets',
+              description: 'Free or paid.',
+              note: free ? 'Payment appears when paid.' : null,
               icon: Icons.confirmation_number,
               builder: (_) => SwitchListTile(
                 key: const ValueKey('free'),
@@ -66,7 +70,7 @@ class _HarnessState extends State<_Harness> {
               error: () => provider == null ? 'Choose how to get paid.' : null,
               builder: (_) => TextButton(onPressed: () => setState(() => provider = 'link'), child: const Text('pick')),
             ),
-            WizardStep(title: 'Review', icon: Icons.check, builder: (_) => const Text('REVIEW')),
+            WizardStep(title: 'Review', description: 'Check and publish.', icon: Icons.check, builder: (_) => const Text('REVIEW')),
           ],
         ),
       );
@@ -168,5 +172,112 @@ void main() {
     await t.pumpAndSettle();
     expect(find.byKey(const ValueKey('wizard-side-0')), findsOneWidget);
     expect(find.byKey(const ValueKey('wizard-chip-0')), findsNothing);
+  });
+
+  testWidgets('each step shows a header card with description + requirements, and Next names the next step', (t) async {
+    await t.pumpWidget(_app(const _Harness()));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('wizard-step-header')), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-progress')), findsOneWidget);
+    expect(find.text('Name it and describe it.'), findsOneWidget);
+    expect(find.text('Required: title.'), findsOneWidget);
+    expect(find.text('Next: Tickets'), findsOneWidget);
+    await t.enterText(find.byKey(const ValueKey('title')), 'Samba');
+    await t.pump();
+    await t.tap(find.byKey(const ValueKey('wizard-next')));
+    await t.pumpAndSettle();
+    expect(find.text('Free or paid.'), findsOneWidget);
+    // Free listing: the hidden Payment step is explained on the Tickets step.
+    expect(find.text('Payment appears when paid.'), findsOneWidget);
+    expect(find.text('Next: Review'), findsOneWidget);
+    expect(find.text('Back'), findsOneWidget);
+    await t.tap(find.byKey(const ValueKey('free')));
+    await t.pumpAndSettle();
+    expect(find.text('Next: Payment'), findsOneWidget);
+    expect(find.text('Payment appears when paid.'), findsNothing);
+  });
+
+  testWidgets('phone stepper: any step can be opened at any time; skipped steps need attention', (t) async {
+    await t.pumpWidget(_app(const _Harness()));
+    await t.pumpAndSettle();
+    expect(_next(t).onPressed, isNull); // the guided path is still gated
+    await t.tap(find.byKey(const ValueKey('wizard-chip-2')));
+    await t.pumpAndSettle();
+    expect(find.text('REVIEW'), findsOneWidget);
+    expect(find.text('Step 3 of 3'), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-status-2-current')), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-status-0-attention')), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-status-1-todo')), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-next')), findsNothing); // last step
+    // Back to the first step from the stepper.
+    await t.tap(find.byKey(const ValueKey('wizard-chip-0')));
+    await t.pumpAndSettle();
+    expect(find.text('Step 1 of 3'), findsOneWidget);
+  });
+
+  testWidgets('status: done = green check, needs attention = "!" with semantics label', (t) async {
+    final handle = t.ensureSemantics();
+    await t.pumpWidget(_app(const _Harness()));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('wizard-status-0-current')), findsOneWidget);
+    await t.enterText(find.byKey(const ValueKey('title')), 'Samba');
+    await t.pump();
+    await t.tap(find.byKey(const ValueKey('wizard-next')));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('wizard-status-0-done')), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-status-1-current')), findsOneWidget);
+    expect(find.bySemanticsLabel('Step 1 of 3: Basics. Done'), findsOneWidget);
+    expect(find.bySemanticsLabel('Step 2 of 3: Tickets. Current step'), findsOneWidget);
+    expect(find.bySemanticsLabel('Step 3 of 3: Review. Not started'), findsOneWidget);
+    handle.dispose();
+  });
+
+  testWidgets('phone "Steps" sheet lists every step with status + description and jumps', (t) async {
+    await t.pumpWidget(_app(const _Harness()));
+    await t.pumpAndSettle();
+    await t.tap(find.byKey(const ValueKey('wizard-chip-1')));
+    await t.pumpAndSettle();
+    await t.tap(find.byKey(const ValueKey('wizard-steps-button')));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('wizard-steps-sheet')), findsOneWidget);
+    for (var i = 0; i < 3; i++) {
+      expect(find.byKey(ValueKey('wizard-sheet-$i')), findsOneWidget);
+    }
+    final sheet = find.byKey(const ValueKey('wizard-steps-sheet'));
+    expect(find.descendant(of: sheet, matching: find.text('Check and publish.')), findsOneWidget);
+    // Basics was visited and left without a title: amber reason in the sheet.
+    expect(find.descendant(of: sheet, matching: find.text('Add a title.')), findsOneWidget);
+    expect(find.descendant(of: sheet, matching: find.text('Current step')), findsOneWidget);
+    await t.tap(find.byKey(const ValueKey('wizard-sheet-2')));
+    await t.pumpAndSettle();
+    expect(find.byKey(const ValueKey('wizard-steps-sheet')), findsNothing);
+    expect(find.text('REVIEW'), findsOneWidget);
+  });
+
+  testWidgets('wide screens: side list shows descriptions, status and jumps to any step', (t) async {
+    t.view.physicalSize = const Size(1280, 900);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(_app(const _Harness(), size: const Size(1280, 900)));
+    await t.pumpAndSettle();
+    final side0 = find.byKey(const ValueKey('wizard-side-0'));
+    expect(find.descendant(of: side0, matching: find.text('Name it and describe it.')), findsOneWidget);
+    await t.tap(find.byKey(const ValueKey('wizard-side-2')));
+    await t.pumpAndSettle();
+    expect(find.text('REVIEW'), findsOneWidget);
+    expect(find.descendant(of: side0, matching: find.text('Add a title.')), findsOneWidget);
+    expect(find.byKey(const ValueKey('wizard-status-0-attention')), findsOneWidget);
+  });
+
+  testWidgets('narrow phone (320 px): stepper, header and nav lay out without overflow', (t) async {
+    t.view.physicalSize = const Size(320, 640);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(_app(const _Harness(), size: const Size(320, 640)));
+    await t.pumpAndSettle();
+    await t.tap(find.byKey(const ValueKey('wizard-chip-1')));
+    await t.pumpAndSettle();
+    expect(find.text('Next: Review'), findsOneWidget);
+    expect(t.takeException(), isNull);
   });
 }
