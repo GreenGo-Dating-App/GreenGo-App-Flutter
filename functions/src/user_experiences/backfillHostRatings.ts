@@ -18,6 +18,7 @@
  */
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
+import { requireAdmin, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 import '../shared/firebaseAdmin';
 import { applyHostRatingDelta, experienceHostContribution } from './aggregates';
 import { EXPERIENCES } from './createUserExperience';
@@ -29,8 +30,7 @@ export const backfillHostRatings = onCall<{ cursor?: string; pageSize?: number }
   async (request) => {
     const uid = request.auth?.uid;
     if (!uid) throw new HttpsError('unauthenticated', 'Sign in required.');
-    const me = await db.collection('users').doc(uid).get();
-    if (!me.data()?.isAdmin) throw new HttpsError('permission-denied', 'Admin only.');
+    await requireAdmin(request.auth, SUPER_ADMIN_ONLY); // P1-6 (was users.isAdmin)
 
     const pageSize = Math.min(Math.max(Number(request.data?.pageSize) || 200, 1), 500);
     let q = db

@@ -5,6 +5,7 @@
 
 import * as functions from "firebase-functions/v1";
 import * as admin from "firebase-admin";
+import { isAdminCaller, MODERATION_ROLES } from "../shared/adminAuth";
 import { monitored } from '../shared/monitoring';
 
 const db = admin.firestore();
@@ -589,11 +590,8 @@ export const reviewTeacherApplication = functions.https.onCall(
       );
     }
 
-    const adminDoc = await db
-      .collection("profiles")
-      .doc(context.auth.uid)
-      .get();
-    if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+    // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth, MODERATION_ROLES))) {
       throw new functions.https.HttpsError(
         "permission-denied",
         "Admin access required"
@@ -1121,11 +1119,8 @@ export const getLearningAnalytics = functions.https.onCall(
     }
 
     // Verify admin
-    const adminDoc = await db
-      .collection("profiles")
-      .doc(context.auth.uid)
-      .get();
-    if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+    // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth))) {
       throw new functions.https.HttpsError(
         "permission-denied",
         "Admin access required"
@@ -1248,11 +1243,8 @@ export const getUserProgressReport = functions.https.onCall(
 
     // Allow user to get their own report or admin to get any
     if (userId !== context.auth.uid) {
-      const adminDoc = await db
-        .collection("profiles")
-        .doc(context.auth.uid)
-        .get();
-      if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+      // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth))) {
         throw new functions.https.HttpsError(
           "permission-denied",
           "Not authorized"
@@ -1338,11 +1330,8 @@ export const getTeacherAnalytics = functions.https.onCall(
     const isOwnData = teacher.userId === context.auth.uid;
 
     if (!isOwnData) {
-      const adminDoc = await db
-        .collection("profiles")
-        .doc(context.auth.uid)
-        .get();
-      if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+      // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth))) {
         throw new functions.https.HttpsError(
           "permission-denied",
           "Not authorized"
@@ -1433,11 +1422,8 @@ export const getAdminLessons = functions.https.onCall(
     }
 
     // Verify admin
-    const adminDoc = await db
-      .collection("profiles")
-      .doc(context.auth.uid)
-      .get();
-    if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+    // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth))) {
       throw new functions.https.HttpsError(
         "permission-denied",
         "Admin access required"
@@ -1518,11 +1504,8 @@ export const seedLessons = functions.https.onCall(
       }
 
       // Verify admin
-      const adminDoc = await db
-        .collection("profiles")
-        .doc(context.auth.uid)
-        .get();
-      if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+      // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth, MODERATION_ROLES))) {
         throw new functions.https.HttpsError(
           "permission-denied",
           "Admin access required"
@@ -1717,11 +1700,8 @@ export const deleteLesson = functions.https.onCall(
     }
 
     // Verify admin
-    const adminDoc = await db
-      .collection("profiles")
-      .doc(context.auth.uid)
-      .get();
-    if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+    // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth, MODERATION_ROLES))) {
       throw new functions.https.HttpsError(
         "permission-denied",
         "Admin access required"
@@ -1749,11 +1729,8 @@ export const updateLesson = functions.https.onCall(
     }
 
     // Verify admin
-    const adminDoc = await db
-      .collection("profiles")
-      .doc(context.auth.uid)
-      .get();
-    if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+    // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth, MODERATION_ROLES))) {
       throw new functions.https.HttpsError(
         "permission-denied",
         "Admin access required"
@@ -1787,11 +1764,8 @@ export const getLessonStats = functions.https.onCall(
     }
 
     // Verify admin
-    const adminDoc = await db
-      .collection("profiles")
-      .doc(context.auth.uid)
-      .get();
-    if (!adminDoc.exists || !adminDoc.data()?.isAdmin) {
+    // P1-6: admin_users / adminRole claim (was profiles.isAdmin).
+    if (!(await isAdminCaller(context.auth))) {
       throw new functions.https.HttpsError(
         "permission-denied",
         "Admin access required"

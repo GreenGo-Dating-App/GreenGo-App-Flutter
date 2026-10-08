@@ -17,6 +17,7 @@
 import { onCall, HttpsError, CallableRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
+import { redactToken } from '../shared/redact';
 import { TierName, computeMembershipExtension } from '../shared/grants';
 import { Grant, effectiveGrants, summariseGrants } from './grants';
 import { monitored } from '../shared/monitoring';
@@ -254,7 +255,7 @@ export const redeemCoupon = onCall<RedeemCouponRequest>(
           response.newEndDate = firstMembershipExt.newEndDate.toISOString();
         }
 
-        logInfo(`redeemCoupon uid=${uid} couponId=${couponRef.id} code=${coupon.code} grant=${grantSummary}`);
+        logInfo(`redeemCoupon uid=${uid} couponId=${couponRef.id} code=${redactToken(coupon.code)} grant=${grantSummary}`);
         return response;
       });
 

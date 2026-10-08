@@ -25,6 +25,7 @@
 
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
+import { requireAdmin, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 import { db, FieldValue, logInfo, logError } from '../shared/utils';
 import { geohashEncode } from '../external_events/geohash';
 
@@ -80,16 +81,9 @@ export function discoverableGeohash(
   return null;
 }
 
-/** Admin = admin-panel user, rule-protected profile flag, or admin claim. */
+/** P1-6: admin = admin_users doc / adminRole claim (central requireAdmin). */
 async function assertAdmin(auth: { uid: string; token: Record<string, any> } | undefined) {
-  if (!auth?.uid) throw new HttpsError('unauthenticated', 'Sign in required');
-  if (auth.token?.admin === true) return;
-  const [adminDoc, profileDoc] = await Promise.all([
-    db.collection('admin_users').doc(auth.uid).get(),
-    db.collection('profiles').doc(auth.uid).get(),
-  ]);
-  if (adminDoc.exists || profileDoc.data()?.isAdmin === true) return;
-  throw new HttpsError('permission-denied', 'Admin only');
+  await requireAdmin(auth, SUPER_ADMIN_ONLY);
 }
 
 export interface BackfillResult {

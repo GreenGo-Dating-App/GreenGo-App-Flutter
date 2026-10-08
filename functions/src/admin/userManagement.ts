@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { requireAdmin, rolesForPermission } from '../shared/adminAuth';
 import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
 
 const firestore = admin.firestore();
@@ -18,28 +19,9 @@ async function verifyAdminPermission(
   context: functions.https.CallableContext,
   requiredPermission: string
 ): Promise<void> {
-  if (!context.auth) {
-    throw new functions.https.HttpsError(
-      'unauthenticated',
-      'User must be authenticated'
-    );
-  }
-
-  const adminDoc = await firestore.collection('admins').doc(context.auth.uid).get();
-  if (!adminDoc.exists) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      'Admin profile not found'
-    );
-  }
-
-  const permissions = adminDoc.data()!.permissions || [];
-  if (!permissions.includes(requiredPermission)) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      `Missing required permission: ${requiredPermission}`
-    );
-  }
+  // Security Phase 1 (P1-6): the legacy `admins` collection / boolean claims
+  // are no longer trusted. Permission -> role matrix via central requireAdmin.
+  await requireAdmin(context.auth as any, rolesForPermission(requiredPermission));
 }
 
 /**
@@ -52,7 +34,7 @@ async function logAdminAction(
   targetId: string,
   details: any
 ): Promise<void> {
-  const adminDoc = await firestore.collection('admins').doc(adminId).get();
+  const adminDoc = await firestore.collection('admin_users').doc(adminId).get();
   const adminData = adminDoc.data();
 
   await firestore.collection('admin_audit_log').add({
@@ -796,7 +778,7 @@ export const impersonateUser = functions.https.onCall(monitored("impersonateUser
  * Point 242: Bulk operations
  */
 export const executeMassAction = functions.https.onCall(monitored("executeMassAction", async (data, context) => {
-  await verifyAdminPermission(context, 'viewUserProfiles');
+  await verifyAdminPermission(context, 'massActions');
 
   const { operationType, targetUserIds, parameters } = data;
 

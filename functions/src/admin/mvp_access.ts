@@ -5,6 +5,7 @@
 
 import { onCall } from 'firebase-functions/v2/https';
 import { verifyAdminAuth, handleError, logInfo, logError, db, FieldValue } from '../shared/utils';
+import { MODERATION_ROLES, SUPER_ADMIN_ONLY, SUPPORT_ROLES } from '../shared/adminAuth';
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { SubscriptionTier, ApprovalStatus } from '../shared/types';
@@ -298,7 +299,7 @@ export const approveUser = onCall<ApproveUserRequest>(
   },
   monitored("approveUser", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, MODERATION_ROLES);
       const { userId, notify = true } = request.data;
 
       logInfo(`Approving user ${userId}`);
@@ -370,7 +371,7 @@ export const rejectUser = onCall<RejectUserRequest>(
   },
   monitored("rejectUser", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, MODERATION_ROLES);
       const { userId, reason, notify = true } = request.data;
 
       logInfo(`Rejecting user ${userId}`);
@@ -444,7 +445,7 @@ export const updateUserTier = onCall<UpdateUserTierRequest>(
   },
   monitored("updateUserTier", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, SUPER_ADMIN_ONLY);
       const { userId, tier } = request.data;
 
       logInfo(`Updating user ${userId} to tier ${tier}`);
@@ -533,7 +534,7 @@ export const bulkApproveUsers = onCall<{ userIds: string[]; notify?: boolean }>(
   },
   monitored("bulkApproveUsers", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, MODERATION_ROLES);
       const { userIds, notify = true } = request.data;
 
       logInfo(`Bulk approving ${userIds.length} users`);
@@ -611,7 +612,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
   },
   monitored("sendBroadcastNotification", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, SUPER_ADMIN_ONLY);
       const {
         messageType = 'custom',
         customTitle,
@@ -825,7 +826,7 @@ export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
   },
   monitored("sendNotificationToUser", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, SUPPORT_ROLES);
       const { userId, title, body, data } = request.data;
 
       logInfo(`Sending notification to user ${userId}`);

@@ -5,9 +5,9 @@
 
 // Set test environment variables
 process.env.GCLOUD_PROJECT = 'test-project';
-process.env.FIRESTORE_EMULATOR_HOST = 'localhost:8080';
-process.env.FIREBASE_AUTH_EMULATOR_HOST = 'localhost:9099';
-process.env.FIREBASE_STORAGE_EMULATOR_HOST = 'localhost:9199';
+process.env.FIRESTORE_EMULATOR_HOST = process.env.FIRESTORE_EMULATOR_HOST || 'localhost:8080';
+process.env.FIREBASE_AUTH_EMULATOR_HOST = process.env.FIREBASE_AUTH_EMULATOR_HOST || 'localhost:9099';
+process.env.FIREBASE_STORAGE_EMULATOR_HOST = process.env.FIREBASE_STORAGE_EMULATOR_HOST || 'localhost:9199';
 process.env.PUBSUB_EMULATOR_HOST = 'localhost:8085';
 
 // Agora test credentials

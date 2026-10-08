@@ -41,6 +41,7 @@ import * as admin from 'firebase-admin';
 import { db, logInfo } from '../shared/utils';
 import { effectiveGrants } from './grants';
 import { monitored } from '../shared/monitoring';
+import { redact } from '../shared/redact';
 
 /** The standard welcome pack for anyone not on the allowlist, during 2026. */
 export const DEFAULT_2026_OFFER = {
@@ -167,7 +168,7 @@ export const checkPreRegistrationOffer = onCall(
     }
 
     const offer = await resolveOffer(email);
-    logInfo(`checkPreRegistrationOffer: ${offer.kind} for ${email}`);
+    logInfo(`checkPreRegistrationOffer: ${offer.kind} for ${redact(email)}`);
     // Deliberately nothing else in the response - no coupon code, no name, no
     // hint about whether an account already exists.
     return offer;

@@ -555,6 +555,9 @@ export {
   getMvpAccessStats,
 } from './admin/mvp_access';
 
+// Admin custom claims (P1-6): admin_users/{uid}.role -> `adminRole` claim.
+export { onAdminUserWritten, resyncAllAdminClaims } from './admin/adminClaims';
+
 // Admin Panel Functions (2FA, password mgmt, user mgmt, AI support)
 export {
   send2FACode,

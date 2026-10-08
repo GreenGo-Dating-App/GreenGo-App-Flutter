@@ -36,6 +36,7 @@ import {
   tierDateFromValue,
 } from '../shared/effectiveTier';
 import { WriteQueue, planBaseExpiry, planTierExpiry } from '../shared/membershipExpiry';
+import { redact } from '../shared/redact';
 
 // Product ID → tier and duration mapping.
 // `price` is NOT charged anywhere — the stores charge what Play Console / App
@@ -110,7 +111,7 @@ export const verifyPurchase = onCall(
     const userEmail = request.auth.token.email || null;
 
     try {
-      logInfo(`Verifying membership purchase for user ${userId} (${userEmail}), product ${productId}, platform ${platform}`);
+      logInfo(`Verifying membership purchase for user ${userId} (${redact(userEmail)}), product ${productId}, platform ${platform}`);
 
       const catalogId = toCatalogId(productId);
       const config = PRODUCT_CONFIG[catalogId];

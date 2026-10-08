@@ -1,11 +1,13 @@
 /**
  * Admin-only callables for managing coupons from the admin panel.
- * All gated by users/{uid}.isAdmin === true (via verifyAdminAuth).
+ * All gated by verifyAdminAuth (admin_users / adminRole claim); upsert = superAdmin.
  */
 
 import { onCall, HttpsError, CallableRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { db, verifyAdminAuth, handleError, logInfo } from '../shared/utils';
+import { redactToken } from '../shared/redact';
+import { SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 import { TierName } from '../shared/grants';
 import { Grant, validateGrant } from './grants';
 import { monitored } from '../shared/monitoring';
@@ -47,7 +49,7 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
   { memory: '512MiB', timeoutSeconds: 30 },
   monitored("upsertCoupon", async (request: CallableRequest<UpsertCouponRequest>) => {
     try {
-      const adminUid = await verifyAdminAuth(request.auth);
+      const adminUid = await verifyAdminAuth(request.auth, SUPER_ADMIN_ONLY);
       const data = request.data;
       if (!data) throw new HttpsError('invalid-argument', 'Missing payload');
 
@@ -135,7 +137,7 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
 
       if (data.couponId) {
         await db.collection('coupons').doc(data.couponId).set(payload, { merge: true });
-        logInfo(`upsertCoupon (update) id=${data.couponId} code=${code} by=${adminUid}`);
+        logInfo(`upsertCoupon (update) id=${data.couponId} code=${redactToken(code)} by=${adminUid}`);
         return { ok: true, couponId: data.couponId };
       }
 
@@ -145,7 +147,7 @@ export const upsertCoupon = onCall<UpsertCouponRequest>(
         createdAt: now,
         createdBy: adminUid,
       });
-      logInfo(`upsertCoupon (create) id=${docRef.id} code=${code} by=${adminUid}`);
+      logInfo(`upsertCoupon (create) id=${docRef.id} code=${redactToken(code)} by=${adminUid}`);
       return { ok: true, couponId: docRef.id };
     } catch (err) {
       if (err instanceof HttpsError) throw err;

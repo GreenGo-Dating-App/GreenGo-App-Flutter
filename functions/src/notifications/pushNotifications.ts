@@ -7,6 +7,7 @@ import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { brandPush } from './brand';
 import { monitored } from '../shared/monitoring';
+import { requireAdmin } from '../shared/adminAuth';
 
 const firestore = admin.firestore();
 const messaging = admin.messaging();
@@ -31,10 +32,7 @@ export const sendPushNotification = functions.runWith({ memory: '512MB' }).https
   // produce a context without rawRequest.
   const isNetworkCall = Boolean((context as any).rawRequest);
   if (isNetworkCall) {
-    const adminDoc = await firestore.collection('admin_users').doc(context.auth.uid).get();
-    if (!adminDoc.exists) {
-      throw new functions.https.HttpsError('permission-denied', 'Admin only');
-    }
+    await requireAdmin(context.auth as any); // P1-6 central admin check
   }
 
   const { userId, type, title, body, imageUrl, actionButtons, deepLink } = data;
