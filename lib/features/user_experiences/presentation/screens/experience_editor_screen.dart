@@ -965,6 +965,8 @@ class _EditorFormState extends State<_EditorForm> {
                 steps: [
                   WizardStep(
                     title: l.wzExpBasics,
+                    description: l.wzExBasicsDesc,
+                    requirements: l.wzExBasicsReq,
                     icon: Icons.edit_note,
                     error: () => _stepError(l, const [
                       ExperienceFieldError.titleLength, ExperienceFieldError.descriptionLength,
@@ -1052,6 +1054,8 @@ class _EditorFormState extends State<_EditorForm> {
                   ),
                   WizardStep(
                     title: l.wzLocation,
+                    description: l.wzExLocationDesc,
+                    requirements: l.wzExLocationReq,
                     icon: Icons.place_outlined,
                     error: () => _stepError(l, const [ExperienceFieldError.locationRequired]),
                     summary: () => _location.text,
@@ -1086,6 +1090,9 @@ class _EditorFormState extends State<_EditorForm> {
                   ),
                   WizardStep(
                     title: l.wzFormatPrice,
+                    description: l.wzExFormatDesc,
+                    requirements: l.wzExFormatReq,
+                    note: _isFree ? l.wzPaymentAppearsNote : null,
                     icon: Icons.sell_outlined,
                     error: () => _stepError(l, const [
                       ExperienceFieldError.durationInvalid, ExperienceFieldError.maxGroupInvalid,
@@ -1176,6 +1183,8 @@ class _EditorFormState extends State<_EditorForm> {
                   ),
                   WizardStep(
                     title: l.wzAvailability,
+                    description: l.wzExAvailDesc,
+                    requirements: l.wzExAvailReq,
                     icon: Icons.calendar_month_outlined,
                     error: () => _useRecurring && _availRules.error != null ? l.mtErrRules : null,
                     summary: () => _useRecurring
@@ -1185,6 +1194,8 @@ class _EditorFormState extends State<_EditorForm> {
                   ),
                   WizardStep(
                     title: l.wzPayment,
+                    description: l.wzExPaymentDesc,
+                    requirements: l.wzExPaymentReq,
                     icon: Icons.payments_outlined,
                     skip: _isFree,
                     error: () => _stepError(l, const [ExperienceFieldError.paymentMethodsRequired]),
@@ -1193,6 +1204,7 @@ class _EditorFormState extends State<_EditorForm> {
                   ),
                   WizardStep(
                     title: l.wzReview,
+                    description: l.wzExReviewDesc,
                     icon: Icons.fact_check_outlined,
                     builder: (context) => _reviewStep(l, saving),
                   ),
@@ -1406,13 +1418,30 @@ class _EditorFormState extends State<_EditorForm> {
     ]);
   }
 
+  /// "Fix" on the review checklist: jump to the step that owns [e].
+  VoidCallback? _fixFor(ExperienceFieldError e) {
+    final step = switch (e) {
+      ExperienceFieldError.locationRequired => 1,
+      ExperienceFieldError.durationInvalid ||
+      ExperienceFieldError.maxGroupInvalid ||
+      ExperienceFieldError.minGroupInvalid ||
+      ExperienceFieldError.priceInvalid => 2,
+      ExperienceFieldError.paymentMethodsRequired ||
+      ExperienceFieldError.paymentLinkRequired ||
+      ExperienceFieldError.paymentLinkInvalid => _isFree ? 2 : 4,
+      _ => 0,
+    };
+    return () => _wizard.goTo(step);
+  }
+
   Widget _reviewStep(AppLocalizations l, bool saving) {
     final errors = ExperienceValidator.validate(_draft());
     final checks = <(String, bool, VoidCallback?)>[
-      for (final e in errors) (ExperienceL10n.fieldError(l, e), true, null),
+      for (final e in errors) (ExperienceL10n.fieldError(l, e), true, _fixFor(e)),
       if (!_useRecurring && widget.existing == null) (l.wzWarnNoAvailability, false, () => _wizard.goTo(3)),
       if (_useRecurring && _availRules.error != null) (l.mtErrRules, true, () => _wizard.goTo(3)),
     ];
+    final blocked = checks.any((c) => c.$2);
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
       Text(l.wzPreviewTitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
       const SizedBox(height: 6),
@@ -1439,6 +1468,13 @@ class _EditorFormState extends State<_EditorForm> {
       const SizedBox(height: 12),
       WizardChecklist(items: checks),
       const SizedBox(height: 16),
+      if (blocked)
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Text(l.wzPublishBlocked,
+              key: const ValueKey('experience-publish-blocked'),
+              style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5, fontWeight: FontWeight.w600)),
+        ),
       Row(children: [
                   if (widget.existing?.isPublished != true)
                     Expanded(
@@ -1463,7 +1499,7 @@ class _EditorFormState extends State<_EditorForm> {
                         foregroundColor: AppColors.deepBlack,
                         padding: const EdgeInsets.symmetric(vertical: 14),
                       ),
-                      onPressed: saving
+                      onPressed: saving || blocked
                           ? null
                           : () => _save(ExperienceStatus.published),
                       child: saving

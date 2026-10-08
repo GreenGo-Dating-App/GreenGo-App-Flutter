@@ -17684,4 +17684,117 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get tpPaymentMethodsSaveFailed =>
       'Zahlungsmethoden konnten nicht gespeichert werden. Bitte erneut versuchen.';
+
+  @override
+  String wzNextTo(String step) {
+    return 'Weiter: $step';
+  }
+
+  @override
+  String get wzSteps => 'Schritte';
+
+  @override
+  String get wzAllStepsTitle => 'Alle Schritte';
+
+  @override
+  String get wzStepsHint =>
+      'Tippe auf einen Schritt, um dorthin zu springen. Du kannst jederzeit zurückkehren.';
+
+  @override
+  String get wzStatusCurrent => 'Aktueller Schritt';
+
+  @override
+  String get wzStatusDone => 'Erledigt';
+
+  @override
+  String get wzStatusAttention => 'Braucht Aufmerksamkeit';
+
+  @override
+  String get wzStatusTodo => 'Noch nicht begonnen';
+
+  @override
+  String wzStepSemantics(int step, int total, String title, String status) {
+    return 'Schritt $step von $total: $title. $status';
+  }
+
+  @override
+  String get wzPaymentAppearsNote =>
+      'Der Schritt Zahlung erscheint, sobald der Preis über 0 liegt.';
+
+  @override
+  String get wzPublishBlocked =>
+      'Erledige die Pflichtangaben oben, um zu veröffentlichen.';
+
+  @override
+  String get wzEvBasicsDesc =>
+      'Gib deinem Event einen klaren Titel und beschreibe, was die Leute erwartet. Ein Titelbild macht es auffälliger.';
+
+  @override
+  String get wzEvBasicsReq => 'Pflicht: Titel und Beschreibung.';
+
+  @override
+  String get wzEvWhereDesc =>
+      'Gib an, wo es stattfindet (Adresse eingeben oder auf der Karte wählen) und wann es beginnt und endet.';
+
+  @override
+  String get wzEvWhereReq => 'Pflicht: der Ort und ein Ende nach dem Beginn.';
+
+  @override
+  String get wzEvTicketsDesc =>
+      'Wähle, ob das Event kostenlos oder kostenpflichtig ist, lege den Preis fest und wie viele teilnehmen können.';
+
+  @override
+  String get wzEvTicketsReq =>
+      'Pflicht: wie viele kommen können (oder unbegrenzt) und bei kostenpflichtigen Events ein Preis.';
+
+  @override
+  String get wzEvPaymentDesc =>
+      'Wähle, wie Teilnehmende dich für ihre Tickets bezahlen.';
+
+  @override
+  String get wzEvPaymentReq => 'Pflicht: eine Zahlungsmethode.';
+
+  @override
+  String get wzEvReviewDesc =>
+      'Prüfe, wie dein Event aussehen wird. Behebe alles, was rot markiert ist, und veröffentliche, speichere einen Entwurf oder plane es.';
+
+  @override
+  String get wzExBasicsDesc =>
+      'Benenne dein Erlebnis, beschreibe es und füge Fotos, deine Sprachen und die Leistungen hinzu.';
+
+  @override
+  String get wzExBasicsReq =>
+      'Pflicht: Titel, Beschreibung, ein Hauptfoto, mindestens eine Sprache und die Leistungen.';
+
+  @override
+  String get wzExLocationDesc => 'Sag deinen Gästen, wo ihr euch trefft.';
+
+  @override
+  String get wzExLocationReq => 'Pflicht: der Treffpunkt.';
+
+  @override
+  String get wzExFormatDesc =>
+      'Lege Dauer und Gruppengröße fest und ob es kostenlos oder kostenpflichtig ist (pro Person oder pro Gruppe).';
+
+  @override
+  String get wzExFormatReq =>
+      'Pflicht: Dauer, Gruppengröße und bei kostenpflichtigen Erlebnissen ein Preis.';
+
+  @override
+  String get wzExAvailDesc =>
+      'Wähle, wann Gäste buchen können: ein wöchentlicher Zeitplan oder einzelne Termine, die du später hinzufügst.';
+
+  @override
+  String get wzExAvailReq =>
+      'Optional: Termine kannst du auch nach dem Speichern hinzufügen.';
+
+  @override
+  String get wzExPaymentDesc => 'Wähle, wie Gäste dich bezahlen.';
+
+  @override
+  String get wzExPaymentReq => 'Pflicht: mindestens eine Zahlungsmethode.';
+
+  @override
+  String get wzExReviewDesc =>
+      'Prüfe, wie Gäste es sehen. Behebe alles, was rot markiert ist, und veröffentliche oder speichere einen Entwurf.';
 }

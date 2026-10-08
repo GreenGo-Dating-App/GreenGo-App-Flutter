@@ -30679,6 +30679,192 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t save your payment methods. Try again.'**
   String get tpPaymentMethodsSaveFailed;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Next: {step}'**
+  String wzNextTo(String step);
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Steps'**
+  String get wzSteps;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'All steps'**
+  String get wzAllStepsTitle;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Tap any step to go there. You can come back at any time.'**
+  String get wzStepsHint;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Current step'**
+  String get wzStatusCurrent;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get wzStatusDone;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Needs attention'**
+  String get wzStatusAttention;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Not started'**
+  String get wzStatusTodo;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Step {step} of {total}: {title}. {status}'**
+  String wzStepSemantics(int step, int total, String title, String status);
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'The Payment step appears when the price is above 0.'**
+  String get wzPaymentAppearsNote;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Complete the required items above to publish.'**
+  String get wzPublishBlocked;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Give your event a clear title and tell people what to expect. A cover photo helps it stand out.'**
+  String get wzEvBasicsDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: title and description.'**
+  String get wzEvBasicsReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Say where it happens (type the address or pick it on the map) and when it starts and ends.'**
+  String get wzEvWhereDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: the place, and an end time after the start.'**
+  String get wzEvWhereReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Choose if the event is free or paid, set the price and how many people can join.'**
+  String get wzEvTicketsDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: how many people can come (or unlimited) and, for paid events, a price.'**
+  String get wzEvTicketsReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Choose how attendees pay you for their tickets.'**
+  String get wzEvPaymentDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: a way to get paid.'**
+  String get wzEvPaymentReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Check how your event will look. Fix anything marked in red, then publish, save a draft or schedule it.'**
+  String get wzEvReviewDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Name your experience, describe it, and add photos, the languages you speak and what\'s included.'**
+  String get wzExBasicsDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: title, description, a main photo, at least one language and what\'s included.'**
+  String get wzExBasicsReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Tell guests where to meet you.'**
+  String get wzExLocationDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: the meeting place.'**
+  String get wzExLocationReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Set how long it lasts, the group size, and whether it\'s free or paid (per person or per group).'**
+  String get wzExFormatDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: duration, group size and, for paid experiences, a price.'**
+  String get wzExFormatReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Choose when guests can book: a weekly repeating schedule, or single dates you add later.'**
+  String get wzExAvailDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Optional: you can also add dates after saving.'**
+  String get wzExAvailReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Choose how guests pay you.'**
+  String get wzExPaymentDesc;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Required: at least one way to get paid.'**
+  String get wzExPaymentReq;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Check how guests will see it. Fix anything marked in red, then publish or save a draft.'**
+  String get wzExReviewDesc;
 }
 
 class _AppLocalizationsDelegate

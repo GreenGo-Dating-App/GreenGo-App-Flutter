@@ -17738,4 +17738,118 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get tpPaymentMethodsSaveFailed =>
       'Impossible d\'enregistrer tes moyens de paiement. Réessaie.';
+
+  @override
+  String wzNextTo(String step) {
+    return 'Suivant : $step';
+  }
+
+  @override
+  String get wzSteps => 'Étapes';
+
+  @override
+  String get wzAllStepsTitle => 'Toutes les étapes';
+
+  @override
+  String get wzStepsHint =>
+      'Touchez une étape pour y aller. Vous pouvez revenir à tout moment.';
+
+  @override
+  String get wzStatusCurrent => 'Étape en cours';
+
+  @override
+  String get wzStatusDone => 'Terminé';
+
+  @override
+  String get wzStatusAttention => 'À compléter';
+
+  @override
+  String get wzStatusTodo => 'Pas commencé';
+
+  @override
+  String wzStepSemantics(int step, int total, String title, String status) {
+    return 'Étape $step sur $total : $title. $status';
+  }
+
+  @override
+  String get wzPaymentAppearsNote =>
+      'L\'étape Paiement apparaît lorsque le prix est supérieur à 0.';
+
+  @override
+  String get wzPublishBlocked =>
+      'Complétez les éléments obligatoires ci-dessus pour publier.';
+
+  @override
+  String get wzEvBasicsDesc =>
+      'Donnez un titre clair à votre événement et expliquez à quoi s\'attendre. Une photo de couverture le met en valeur.';
+
+  @override
+  String get wzEvBasicsReq => 'Obligatoire : titre et description.';
+
+  @override
+  String get wzEvWhereDesc =>
+      'Indiquez où il a lieu (saisissez l\'adresse ou choisissez-la sur la carte) et quand il commence et se termine.';
+
+  @override
+  String get wzEvWhereReq =>
+      'Obligatoire : le lieu, et une fin après le début.';
+
+  @override
+  String get wzEvTicketsDesc =>
+      'Choisissez si l\'événement est gratuit ou payant, fixez le prix et le nombre de participants.';
+
+  @override
+  String get wzEvTicketsReq =>
+      'Obligatoire : le nombre de places (ou illimité) et, pour un événement payant, un prix.';
+
+  @override
+  String get wzEvPaymentDesc =>
+      'Choisissez comment les participants vous paient leurs billets.';
+
+  @override
+  String get wzEvPaymentReq => 'Obligatoire : un moyen d\'être payé.';
+
+  @override
+  String get wzEvReviewDesc =>
+      'Vérifiez l\'aperçu de votre événement. Corrigez ce qui est en rouge, puis publiez, enregistrez un brouillon ou programmez-le.';
+
+  @override
+  String get wzExBasicsDesc =>
+      'Nommez votre expérience, décrivez-la et ajoutez des photos, vos langues et ce qui est inclus.';
+
+  @override
+  String get wzExBasicsReq =>
+      'Obligatoire : titre, description, une photo principale, au moins une langue et ce qui est inclus.';
+
+  @override
+  String get wzExLocationDesc => 'Indiquez à vos invités où vous retrouver.';
+
+  @override
+  String get wzExLocationReq => 'Obligatoire : le point de rendez-vous.';
+
+  @override
+  String get wzExFormatDesc =>
+      'Définissez la durée, la taille du groupe et si c\'est gratuit ou payant (par personne ou par groupe).';
+
+  @override
+  String get wzExFormatReq =>
+      'Obligatoire : durée, taille du groupe et, si c\'est payant, un prix.';
+
+  @override
+  String get wzExAvailDesc =>
+      'Choisissez quand les invités peuvent réserver : un planning hebdomadaire ou des dates ajoutées plus tard.';
+
+  @override
+  String get wzExAvailReq =>
+      'Facultatif : vous pouvez aussi ajouter des dates après l\'enregistrement.';
+
+  @override
+  String get wzExPaymentDesc => 'Choisissez comment les invités vous paient.';
+
+  @override
+  String get wzExPaymentReq => 'Obligatoire : au moins un moyen d\'être payé.';
+
+  @override
+  String get wzExReviewDesc =>
+      'Vérifiez ce que verront les invités. Corrigez ce qui est en rouge, puis publiez ou enregistrez un brouillon.';
 }

@@ -4166,6 +4166,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
           steps: [
             WizardStep(
               title: AppLocalizations.of(context)!.wzEventBasics,
+              description: AppLocalizations.of(context)!.wzEvBasicsDesc,
+              requirements: AppLocalizations.of(context)!.wzEvBasicsReq,
               icon: Icons.edit_note,
               error: _basicsError,
               summary: () => _titleController.text,
@@ -4253,6 +4255,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             WizardStep(
               title: AppLocalizations.of(context)!.wzWhenWhere,
+              description: AppLocalizations.of(context)!.wzEvWhereDesc,
+              requirements: AppLocalizations.of(context)!.wzEvWhereReq,
               icon: Icons.place_outlined,
               error: _whereError,
               summary: () => '${DateFormat('EEE, MMM d \u2022 h:mm a').format(_startDate)} · ${_locationController.text}',
@@ -4390,6 +4394,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             WizardStep(
               title: AppLocalizations.of(context)!.wzTickets,
+              description: AppLocalizations.of(context)!.wzEvTicketsDesc,
+              requirements: AppLocalizations.of(context)!.wzEvTicketsReq,
+              note: _isFree ? AppLocalizations.of(context)!.wzPaymentAppearsNote : null,
               icon: Icons.confirmation_number_outlined,
               error: _ticketsError,
               summary: () => _isFree
@@ -4532,6 +4539,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             WizardStep(
               title: AppLocalizations.of(context)!.wzPayment,
+              description: AppLocalizations.of(context)!.wzEvPaymentDesc,
+              requirements: AppLocalizations.of(context)!.wzEvPaymentReq,
               icon: Icons.payments_outlined,
               skip: _isFree,
               error: _paymentError,
@@ -4551,6 +4560,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             ),
             WizardStep(
               title: AppLocalizations.of(context)!.wzReview,
+              description: AppLocalizations.of(context)!.wzEvReviewDesc,
               icon: Icons.fact_check_outlined,
               builder: (context) => _buildReview(),
             ),
@@ -4634,7 +4644,14 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       const SizedBox(height: 12),
       WizardChecklist(items: checks),
       const SizedBox(height: 16),
-      _buildSaveActions(),
+      if (checks.any((c) => c.$2))
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Text(l.wzPublishBlocked,
+              key: const ValueKey('event-publish-blocked'),
+              style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5, fontWeight: FontWeight.w600)),
+        ),
+      _buildSaveActions(blocked: checks.any((c) => c.$2)),
     ]);
   }
 
@@ -4822,11 +4839,13 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
   /// Save actions. Editing keeps a single Save button; creating offers
   /// Publish (primary), Save as draft, and Schedule.
-  Widget _buildSaveActions() {
+  /// [blocked]: required wizard items are missing, so Publish / Schedule /
+  /// Save changes stay disabled (the checklist above says what to fix).
+  Widget _buildSaveActions({bool blocked = false}) {
     final l10n = AppLocalizations.of(context)!;
     if (_isEditing) {
       return ElevatedButton(
-        onPressed: (_uploading || _saving)
+        onPressed: (_uploading || _saving || blocked)
             ? null
             : () => _submit(status: widget.existing!.status),
         style: ElevatedButton.styleFrom(
@@ -4844,7 +4863,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     return Column(
       children: [
         ElevatedButton(
-          onPressed: (_uploading || _saving)
+          onPressed: (_uploading || _saving || blocked)
               ? null
               : () => _submit(status: EventStatus.published),
           style: ElevatedButton.styleFrom(
@@ -4879,8 +4898,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
             const SizedBox(width: 10),
             Expanded(
               child: OutlinedButton.icon(
-                onPressed:
-                    (_uploading || _saving) ? null : _pickScheduleAndSubmit,
+                onPressed: (_uploading || _saving || blocked)
+                    ? null
+                    : _pickScheduleAndSubmit,
                 icon: const Icon(Icons.schedule, color: AppColors.richGold),
                 label: Text(l10n.eventsSchedule,
                     style: const TextStyle(color: AppColors.richGold)),
