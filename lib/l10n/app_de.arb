@@ -4676,7 +4676,7 @@
   "ageVerifyTitle": "Alter bestätigen",
   "ageVerifyWhyPublish": "Um in einer Community zu posten, müssen wir bestätigen, dass du über 18 bist.",
   "ageVerifyWhyPhone": "Du hast dich mit einer Telefonnummer registriert, daher brauchen wir ein Dokument zur Altersbestätigung.",
-  "ageVerifyPrivacyNote": "Wir lesen das Geburtsdatum automatisch aus. Das Foto wird zur Betrugsprävention in einem geschützten, nur serverseitigen Speicher aufbewahrt (nie in Ihrem Profil angezeigt) und spätestens 30 Tage nach der Löschung Ihres Kontos gelöscht.",
+  "ageVerifyPrivacyNote": "Wir lesen das Geburtsdatum automatisch aus. Das Foto wird gelöscht, sobald eine Entscheidung gefallen ist (spätestens nach 7 Tagen, wenn eine Person es prüfen muss), und wird nie in deinem Profil angezeigt.",
   "ageVerifyTakePhoto": "Ausweis fotografieren",
   "ageVerifyChooseImage": "Aus der Galerie wählen",
   "ageVerifyChecking": "Dokument wird geprüft…",

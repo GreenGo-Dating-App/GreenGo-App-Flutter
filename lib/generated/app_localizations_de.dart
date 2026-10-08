@@ -14038,7 +14038,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get ageVerifyPrivacyNote =>
-      'Wir lesen das Geburtsdatum automatisch aus. Das Foto wird zur Betrugsprävention in einem geschützten, nur serverseitigen Speicher aufbewahrt (nie in Ihrem Profil angezeigt) und spätestens 30 Tage nach der Löschung Ihres Kontos gelöscht.';
+      'Wir lesen das Geburtsdatum automatisch aus. Das Foto wird gelöscht, sobald eine Entscheidung gefallen ist (spätestens nach 7 Tagen, wenn eine Person es prüfen muss), und wird nie in deinem Profil angezeigt.';
 
   @override
   String get ageVerifyTakePhoto => 'Ausweis fotografieren';

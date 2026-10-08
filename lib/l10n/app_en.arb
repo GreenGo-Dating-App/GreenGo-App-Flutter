@@ -6588,7 +6588,7 @@
   "ageVerifyTitle": "Verify your age",
   "ageVerifyWhyPublish": "To post in a community, we need to confirm you are over 18.",
   "ageVerifyWhyPhone": "You signed up with a phone number, so we need a document to confirm your age.",
-  "ageVerifyPrivacyNote": "We read the date of birth automatically. The photo is kept in a restricted server-only store for fraud prevention (never shown on your profile) and erased up to 30 days after you delete your account.",
+  "ageVerifyPrivacyNote": "We read the date of birth automatically. The photo is deleted as soon as a decision is made (after at most 7 days if a person needs to review it) and is never shown on your profile.",
   "ageVerifyTakePhoto": "Take a photo of your ID",
   "ageVerifyChooseImage": "Choose from library",
   "ageVerifyChecking": "Checking your document…",

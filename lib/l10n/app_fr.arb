@@ -4095,7 +4095,7 @@
   "ageVerifyTitle": "Vérifiez votre âge",
   "ageVerifyWhyPublish": "Pour publier dans une communauté, nous devons confirmer que vous avez plus de 18 ans.",
   "ageVerifyWhyPhone": "Vous vous êtes inscrit avec un numéro de téléphone : il nous faut un document pour confirmer votre âge.",
-  "ageVerifyPrivacyNote": "Nous lisons la date de naissance automatiquement. La photo est conservée dans un stockage serveur restreint pour prévenir la fraude (jamais affichée sur votre profil) et effacée au plus tard 30 jours après la suppression de votre compte.",
+  "ageVerifyPrivacyNote": "Nous lisons la date de naissance automatiquement. La photo est supprimée dès qu'une décision est prise (au plus tard après 7 jours si une personne doit l'examiner) et n'est jamais affichée sur votre profil.",
   "ageVerifyTakePhoto": "Photographiez votre pièce d'identité",
   "ageVerifyChooseImage": "Choisir dans la galerie",
   "ageVerifyChecking": "Vérification de votre document…",

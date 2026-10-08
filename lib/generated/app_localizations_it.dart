@@ -14014,7 +14014,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get ageVerifyPrivacyNote =>
-      'Leggiamo automaticamente la data di nascita. La foto è conservata in un archivio riservato sul server per prevenire le frodi (mai mostrata sul tuo profilo) e cancellata entro 30 giorni dall\'eliminazione dell\'account.';
+      'Leggiamo la data di nascita in automatico. La foto viene eliminata appena viene presa una decisione (al massimo dopo 7 giorni se serve una revisione umana) e non viene mai mostrata sul tuo profilo.';
 
   @override
   String get ageVerifyTakePhoto => 'Fotografa il tuo documento';

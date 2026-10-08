@@ -4676,7 +4676,7 @@
   "ageVerifyTitle": "Verifica a tua idade",
   "ageVerifyWhyPublish": "Para publicares numa comunidade temos de confirmar que tens mais de 18 anos.",
   "ageVerifyWhyPhone": "Registaste-te com um número de telefone, por isso precisamos de um documento para confirmar a tua idade.",
-  "ageVerifyPrivacyNote": "Lemos a data de nascimento automaticamente. A foto é guardada num armazenamento restrito do servidor para prevenção de fraude (nunca é mostrada no seu perfil) e apagada até 30 dias após eliminar a sua conta.",
+  "ageVerifyPrivacyNote": "Lemos a data de nascimento automaticamente. A fotografia é eliminada assim que for tomada uma decisão (no máximo após 7 dias, se uma pessoa a tiver de rever) e nunca é mostrada no seu perfil.",
   "ageVerifyTakePhoto": "Fotografa o teu documento",
   "ageVerifyChooseImage": "Escolher da galeria",
   "ageVerifyChecking": "A verificar o documento…",

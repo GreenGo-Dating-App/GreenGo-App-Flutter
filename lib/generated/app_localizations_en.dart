@@ -13854,7 +13854,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ageVerifyPrivacyNote =>
-      'We read the date of birth automatically. The photo is kept in a restricted server-only store for fraud prevention (never shown on your profile) and erased up to 30 days after you delete your account.';
+      'We read the date of birth automatically. The photo is deleted as soon as a decision is made (after at most 7 days if a person needs to review it) and is never shown on your profile.';
 
   @override
   String get ageVerifyTakePhoto => 'Take a photo of your ID';

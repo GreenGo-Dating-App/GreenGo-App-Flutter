@@ -13992,7 +13992,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get ageVerifyPrivacyNote =>
-      'Lemos a data de nascimento automaticamente. A foto é guardada num armazenamento restrito do servidor para prevenção de fraude (nunca é mostrada no seu perfil) e apagada até 30 dias após eliminar a sua conta.';
+      'Lemos a data de nascimento automaticamente. A fotografia é eliminada assim que for tomada uma decisão (no máximo após 7 dias, se uma pessoa a tiver de rever) e nunca é mostrada no seu perfil.';
 
   @override
   String get ageVerifyTakePhoto => 'Fotografa o teu documento';
@@ -30607,7 +30607,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get ageVerifyPrivacyNote =>
-      'Lemos a data de nascimento automaticamente. A foto fica guardada em um armazenamento restrito do servidor para prevenção de fraudes (nunca aparece no seu perfil) e é apagada até 30 dias após você excluir sua conta.';
+      'Lemos a data de nascimento automaticamente. A foto é excluída assim que uma decisão é tomada (no máximo após 7 dias, se uma pessoa precisar revisá-la) e nunca aparece no seu perfil.';
 
   @override
   String get ageVerifyTakePhoto => 'Tire uma foto do seu documento';
