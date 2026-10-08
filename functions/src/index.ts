@@ -25,6 +25,9 @@ export {
   batchTranscribe,
 } from './media/voiceTranscription';
 
+// P1-3: membership-checked short-lived URLs for private chat media.
+export { getMediaUrl } from './media/mediaAccess';
+
 export {
   cleanupDisappearingMedia,
   markMediaAsDisappearing,
