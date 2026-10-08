@@ -59,19 +59,33 @@ export async function filterMarketingEmailOptIns(uids: string[]): Promise<Set<st
 // ---------------------------------------------------------------------------
 // Unsubscribe link
 
-const FALLBACK_UNSUBSCRIBE_SECRET = 'REMOVED-SECRET';
-
-function unsubscribeSecret(): string {
-  return process.env.UNSUBSCRIBE_SECRET || process.env.RETENTION_SALT || FALLBACK_UNSUBSCRIBE_SECRET;
+/**
+ * Secret for the unsubscribe-link HMAC. There is deliberately NO hard-coded
+ * production fallback (this repo is public: a known fallback would let anyone
+ * forge unsubscribe links for any user). Tests and the local emulator get a
+ * throwaway secret; a deployed function without UNSUBSCRIBE_SECRET or
+ * RETENTION_SALT refuses to create or accept links.
+ */
+function unsubscribeSecret(): string | null {
+  const configured = process.env.UNSUBSCRIBE_SECRET || process.env.RETENTION_SALT;
+  if (configured) return configured;
+  if (process.env.JEST_WORKER_ID || process.env.FUNCTIONS_EMULATOR === 'true') {
+    return 'local-test-only-unsubscribe-secret';
+  }
+  console.error('[marketingConsent] UNSUBSCRIBE_SECRET / RETENTION_SALT not set: unsubscribe links disabled');
+  return null;
 }
 
 /** Stateless token for the unsubscribe link: HMAC(secret, uid), 32 hex chars. */
 export function unsubscribeToken(uid: string): string {
-  return createHmac('sha256', unsubscribeSecret()).update(`unsubscribe:${uid}`).digest('hex').slice(0, 32);
+  const secret = unsubscribeSecret();
+  if (!secret) throw new Error('unsubscribe secret not configured');
+  return createHmac('sha256', secret).update(`unsubscribe:${uid}`).digest('hex').slice(0, 32);
 }
 
 export function verifyUnsubscribeToken(uid: string, token: string): boolean {
   if (typeof uid !== 'string' || !uid || typeof token !== 'string' || token.length !== 32) return false;
+  if (!unsubscribeSecret()) return false;
   const want = Buffer.from(unsubscribeToken(uid));
   const got = Buffer.from(token);
   return want.length === got.length && timingSafeEqual(want, got);

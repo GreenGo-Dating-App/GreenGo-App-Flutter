@@ -1,0 +1,20 @@
+# Cloud Functions that deploy ONLY from the web repo (greengo-app-flutter-web).
+# Both repos deploy to the same Firebase project and codebase "default", so if
+# the app repo (this one) ever exports one of these names again, the next app
+# deploy would overwrite the web repo's live version with this repo's stale copy
+# (see P1-9 in the remediation plan, and the header of the web repo's
+# functions/src/index.ts). check_function_ownership.py fails CI when that happens.
+#
+# Keep this list in sync with the UNCOMMENTED exports of the web repo's
+# functions/src/index.ts. One name per line; '#' starts a comment.
+createStripeCheckoutSession
+createStripePortalSession
+getMembershipPrice
+getDisplayPrices
+stripeWebhook
+stripeOrderConfirmationEmail
+requestWithdrawal
+stripeWithdrawal
+getStripeBillingSummary
+reconcileStripeMemberships
+runStripeReconcileNow
