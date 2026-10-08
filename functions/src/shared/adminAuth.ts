@@ -19,6 +19,14 @@
  *                      documents, grant entitlements or coins, broadcasts
  *   MODERATION       - superAdmin | moderator
  *   ANY_ADMIN        - any active admin_users member (read-only analytics)
+ *
+ * Server-enforced admin 2FA (audit H-07 / H-29):
+ *   verify2FACode sets the `admin2faUntil` custom claim (epoch seconds, now +
+ *   8h) bound to the signing-in session (`admin2faAuthTime` = the token's
+ *   auth_time). A sign-in that used Firebase Auth MFA (TOTP) within the last
+ *   8h counts as 2FA too. superAdmin-only actions require it when the flag
+ *   `app_config/security_flags.requireAdmin2fa` is true (default false, so
+ *   behaviour is unchanged until the coordinator switches it on).
  */
 
 import * as admin from 'firebase-admin';
@@ -67,6 +75,73 @@ export function rolesForPermission(permission: string): readonly AdminRole[] | u
 /** Name of the custom claim mirrored from admin_users/{uid}.role. */
 export const ADMIN_ROLE_CLAIM = 'adminRole';
 
+/** Custom claim: epoch SECONDS until which the admin's email 2FA is fresh. */
+export const ADMIN_2FA_CLAIM = 'admin2faUntil';
+/**
+ * Custom claim: the `auth_time` of the session that passed 2FA. A claim lives
+ * on the ACCOUNT, so without this binding a password-only sign-in made within
+ * the 8h window (e.g. with a stolen password) would inherit it.
+ */
+export const ADMIN_2FA_SESSION_CLAIM = 'admin2faAuthTime';
+export const ADMIN_2FA_TTL_SECONDS = 8 * 60 * 60;
+/** Firestore doc holding security feature flags. */
+export const SECURITY_FLAGS_DOC = 'app_config/security_flags';
+/** HttpsError details.reason when a fresh 2FA claim is missing. */
+export const ADMIN_2FA_REQUIRED = 'admin_2fa_required';
+
+const FLAGS_TTL_MS = 30_000;
+let flagsCache: { at: number; requireAdmin2fa: boolean } | null = null;
+
+/** Test hook: forget the cached security flags. */
+export function resetSecurityFlagsCache(): void {
+  flagsCache = null;
+}
+
+/**
+ * `app_config/security_flags.requireAdmin2fa === true` (cached 30s). A missing
+ * doc or field means false (today's behaviour).
+ */
+export async function isAdmin2faEnforced(): Promise<boolean> {
+  if (flagsCache && Date.now() - flagsCache.at < FLAGS_TTL_MS) return flagsCache.requireAdmin2fa;
+  const snap = await admin.firestore().doc(SECURITY_FLAGS_DOC).get();
+  const requireAdmin2fa = snap.data()?.requireAdmin2fa === true;
+  flagsCache = { at: Date.now(), requireAdmin2fa };
+  return requireAdmin2fa;
+}
+
+/**
+ * True when the ID token carries a fresh admin 2FA: the `admin2faUntil` claim
+ * (bound to this session's auth_time), or a Firebase MFA sign-in (TOTP etc.)
+ * less than 8h old.
+ */
+export function hasFreshAdmin2fa(
+  token: Record<string, any> | undefined | null,
+  nowSec: number = Math.floor(Date.now() / 1000)
+): boolean {
+  if (!token) return false;
+  const until = token[ADMIN_2FA_CLAIM];
+  if (typeof until === 'number' && until > nowSec) {
+    const bound = token[ADMIN_2FA_SESSION_CLAIM];
+    if (typeof bound !== 'number' || token.auth_time === bound) return true;
+  }
+  const secondFactor = token.firebase?.sign_in_second_factor;
+  const authTime = token.auth_time;
+  if (typeof secondFactor === 'string' && secondFactor && typeof authTime === 'number'
+      && nowSec - authTime < ADMIN_2FA_TTL_SECONDS) {
+    return true;
+  }
+  return false;
+}
+
+export interface RequireAdminOptions {
+  /**
+   * Require a fresh admin 2FA (see hasFreshAdmin2fa) when the
+   * `requireAdmin2fa` flag is on. Defaults to true for superAdmin-only checks
+   * (the dangerous actions) and false otherwise.
+   */
+  require2fa?: boolean;
+}
+
 export interface AdminIdentity {
   uid: string;
   role: string;
@@ -95,7 +170,8 @@ export async function adminRoleFromDoc(uid: string): Promise<string | null> {
  */
 export async function requireAdmin(
   auth: AuthLike,
-  allowedRoles?: readonly AdminRole[]
+  allowedRoles?: readonly AdminRole[],
+  opts: RequireAdminOptions = {}
 ): Promise<AdminIdentity> {
   const uid = auth?.uid;
   if (!uid) throw new HttpsError('unauthenticated', 'Must be authenticated');
@@ -117,13 +193,25 @@ export async function requireAdmin(
   if (allowedRoles && !allowedRoles.includes(role as AdminRole)) {
     throw new HttpsError('permission-denied', `Requires role: ${allowedRoles.join(' | ')}`);
   }
+  const require2fa = opts.require2fa ?? superOnly;
+  if (require2fa && !hasFreshAdmin2fa(auth?.token) && (await isAdmin2faEnforced())) {
+    throw new HttpsError(
+      'permission-denied',
+      'A fresh admin 2FA verification is required for this action. Sign in again.',
+      { reason: ADMIN_2FA_REQUIRED }
+    );
+  }
   return { uid, role, source };
 }
 
 /** Boolean form for code paths that branch instead of throwing. */
-export async function isAdminCaller(auth: AuthLike, allowedRoles?: readonly AdminRole[]): Promise<boolean> {
+export async function isAdminCaller(
+  auth: AuthLike,
+  allowedRoles?: readonly AdminRole[],
+  opts?: RequireAdminOptions
+): Promise<boolean> {
   try {
-    await requireAdmin(auth, allowedRoles);
+    await requireAdmin(auth, allowedRoles, opts);
     return true;
   } catch {
     return false;

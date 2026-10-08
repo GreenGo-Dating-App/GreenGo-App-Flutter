@@ -340,7 +340,8 @@ describe('P1-12 every report source creates exactly one queue item', () => {
 
 // ---------------------------------------------------------------------------
 describe('P1-12 reporter feedback on resolution', () => {
-  const modCtx = { auth: { uid: 'mod1', token: { moderator: true } } };
+  // P1-6: moderators are admin-panel roles (adminRole claim / admin_users), not the legacy `moderator` claim.
+  const modCtx = { auth: { uid: 'mod1', token: { adminRole: 'moderator' } } };
 
   test('takeModerationAction on a message-report item resolves it, updates message_reports, notifies the reporter once', async () => {
     const id = await appMessageReport('alice', 'bob', 'Harassment or bullying');
