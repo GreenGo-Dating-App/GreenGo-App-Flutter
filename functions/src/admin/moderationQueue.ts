@@ -51,6 +51,28 @@ async function logModerationAction(
 }
 
 /**
+ * Collection holding a queue item's related reports. Items created by the report
+ * pipeline (safety/reportPipeline.ts) carry `source.collection`
+ * (user_reports | message_reports | reports); legacy items are user_reports.
+ */
+function reportCollectionFor(queueData: any): string {
+  const c = queueData?.source?.collection;
+  return c === 'message_reports' || c === 'reports' || c === 'user_reports' ? c : 'user_reports';
+}
+
+/** Best-effort update of every related report (a missing doc must not abort the action). */
+async function updateRelatedReports(queueData: any, patch: Record<string, unknown>): Promise<void> {
+  const col = reportCollectionFor(queueData);
+  for (const reportId of queueData.relatedReportIds || []) {
+    try {
+      await firestore.collection(col).doc(reportId).update(patch);
+    } catch (err: any) {
+      console.error(`Could not update ${col}/${reportId}:`, err?.message || err);
+    }
+  }
+}
+
+/**
  * Get Moderation Queue
  * Point 246: Fetch pending reports for review
  */
@@ -125,7 +147,7 @@ export const getModerationQueue = functions.https.onCall(monitored("getModeratio
  * Get Moderation Review Item
  * Point 247: Detailed review interface with context
  */
-export const getModerationReviewItem = functions.https.onCall(monitored("getModerationReviewItem", async (data, context) => {
+export const getModerationReviewItem = functions.runWith({ memory: '512MB' }).https.onCall(monitored("getModerationReviewItem", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId } = data;
@@ -150,11 +172,21 @@ export const getModerationReviewItem = functions.https.onCall(monitored("getMode
     } else if (queueData.itemType === 'flaggedMessage') {
       const messageDoc = await firestore.collection('messages').doc(queueData.itemId).get();
       content = messageDoc.data();
+    } else if (queueData.source?.collection) {
+      // Report-pipeline item from message_reports / reports.
+      const reportDoc = await firestore
+        .collection(reportCollectionFor(queueData))
+        .doc(queueData.itemId)
+        .get();
+      content = reportDoc.data();
     }
 
     // Get user context
-    const userDoc = await firestore.collection('users').doc(queueData.userId).get();
-    const userData = userDoc.data()!;
+    // A report may not name a user (e.g. an event with no organizer id).
+    const userDoc = queueData.userId
+      ? await firestore.collection('users').doc(queueData.userId).get()
+      : null;
+    const userData: any = userDoc?.data() || {};
 
     // Get report count for this user
     const reportCountSnapshot = await firestore
@@ -186,15 +218,15 @@ export const getModerationReviewItem = functions.https.onCall(monitored("getMode
 
     // Get related reports
     const relatedReports = [];
-    for (const reportId of queueData.relatedReportIds) {
-      const reportDoc = await firestore.collection('user_reports').doc(reportId).get();
+    for (const reportId of queueData.relatedReportIds || []) {
+      const reportDoc = await firestore.collection(reportCollectionFor(queueData)).doc(reportId).get();
       if (reportDoc.exists) {
         const reportData = reportDoc.data()!;
         relatedReports.push({
           reportId,
           reporterId: reportData.reporterId,
-          category: reportData.category,
-          description: reportData.description,
+          category: reportData.category ?? queueData.category ?? null,
+          description: reportData.description ?? reportData.reason ?? null,
           createdAt: reportData.createdAt,
           screenshotUrls: reportData.screenshotUrls || [],
         });
@@ -358,7 +390,7 @@ export const assignModerationItem = functions.https.onCall(monitored("assignMode
  * Take Moderation Action
  * Point 248: Execute moderation decision
  */
-export const takeModerationAction = functions.https.onCall(monitored("takeModerationAction", async (data, context) => {
+export const takeModerationAction = functions.runWith({ memory: '512MB' }).https.onCall(monitored("takeModerationAction", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId, action, notes = null, parameters = {} } = data;
@@ -438,14 +470,12 @@ export const takeModerationAction = functions.https.onCall(monitored("takeModera
     });
 
     // Update all related reports
-    for (const reportId of queueData.relatedReportIds) {
-      await firestore.collection('user_reports').doc(reportId).update({
-        status: 'resolved',
-        action,
-        reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
-        moderatorNotes: notes,
-      });
-    }
+    await updateRelatedReports(queueData, {
+      status: 'resolved',
+      action,
+      reviewedAt: admin.firestore.FieldValue.serverTimestamp(),
+      moderatorNotes: notes,
+    });
 
     // Log moderation action
     await logModerationAction(moderatorId, queueId, action, notes);
@@ -491,11 +521,7 @@ async function approveContent(queueData: any): Promise<void> {
  * Helper: Dismiss Report
  */
 async function dismissReport(queueData: any): Promise<void> {
-  for (const reportId of queueData.relatedReportIds) {
-    await firestore.collection('user_reports').doc(reportId).update({
-      status: 'dismissed',
-    });
-  }
+  await updateRelatedReports(queueData, { status: 'dismissed' });
 }
 
 /**
@@ -592,7 +618,7 @@ async function requireVerification(userId: string): Promise<void> {
  * Bulk Moderation Action
  * Point 249: Process multiple items at once
  */
-export const executeBulkModeration = functions.https.onCall(monitored("executeBulkModeration", async (data, context) => {
+export const executeBulkModeration = functions.runWith({ memory: '512MB' }).https.onCall(monitored("executeBulkModeration", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueIds, action, notes = null } = data;

@@ -13,7 +13,7 @@ const firestore = admin.firestore();
  * Submit User Report
  * Points 211-213: Comprehensive reporting with anonymous option
  */
-export const submitReport = functions.https.onCall(monitored("submitReport", async (data, context) => {
+export const submitReport = functions.runWith({ memory: '512MB' }).https.onCall(monitored("submitReport", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -77,39 +77,10 @@ export const submitReport = functions.https.onCall(monitored("submitReport", asy
 
     await reportRef.set(report);
 
-    // Add to moderation queue (Point 214)
-    await firestore.collection('moderation_queue').add({
-      queueId: reportRef.id,
-      itemType: 'userReport',
-      itemId: reportRef.id,
-      userId: reportedUserId,
-      priority,
-      addedAt: admin.firestore.FieldValue.serverTimestamp(),
-      assignedTo: null,
-      relatedReportIds: [reportRef.id],
-      metadata: {
-        category,
-        reporterId: isAnonymous ? 'anonymous' : reporterId,
-      },
-    });
-
-    // Check if user has high report volume (Point 218)
-    const reportCount = await firestore
-      .collection('user_reports')
-      .where('reportedUserId', '==', reportedUserId)
-      .where('status', '==', 'pending')
-      .count()
-      .get();
-
-    if (reportCount.data().count >= 10) {
-      // Automatic blocking for high report volume
-      await automaticBlockUser(reportedUserId, 'High report volume (10+ reports)');
-    }
-
-    // For critical reports, issue immediate warning (Point 208)
-    if (priority === 'critical' && category === 'minorSafety') {
-      await issueWarning(reportedUserId, 'minorSafety', description, 'severe');
-    }
+    // Moderation-queue item + automatic actions (Points 214, 218, 208) are
+    // applied by the `onUserReportQueued` trigger (safety/reportPipeline.ts)
+    // for EVERY user_reports doc, including this one. Doing them here as well
+    // would enqueue the report twice and run the auto-actions twice.
 
     return {
       reportId: reportRef.id,
@@ -121,6 +92,47 @@ export const submitReport = functions.https.onCall(monitored("submitReport", asy
     throw new functions.https.HttpsError('internal', error.message);
   }
 }));
+
+/**
+ * Automatic actions on a newly filed user report (Points 218 + 208).
+ *
+ * Previously inlined in `submitReport`, which no client calls, so they never
+ * ran for real reports. Now shared with the report pipeline trigger
+ * (safety/reportPipeline.ts) - same queries, thresholds and writes:
+ *  - 10+ PENDING `user_reports` against the user -> automaticBlockUser
+ *  - a minor-safety report -> issueWarning(userId, 'minorSafety', description, 'severe')
+ */
+export async function applyReportAutoActions(params: {
+  reportedUserId: string;
+  minorSafety: boolean;
+  description: string;
+}): Promise<{ autoBlocked: boolean; minorSafetyWarned: boolean }> {
+  const { reportedUserId, minorSafety, description } = params;
+  let autoBlocked = false;
+  let minorSafetyWarned = false;
+  if (!reportedUserId) return { autoBlocked, minorSafetyWarned };
+
+  // Check if user has high report volume (Point 218)
+  const reportCount = await firestore
+    .collection('user_reports')
+    .where('reportedUserId', '==', reportedUserId)
+    .where('status', '==', 'pending')
+    .count()
+    .get();
+
+  if (reportCount.data().count >= 10) {
+    // Automatic blocking for high report volume
+    await automaticBlockUser(reportedUserId, 'High report volume (10+ reports)');
+    autoBlocked = true;
+  }
+
+  // For critical reports, issue immediate warning (Point 208)
+  if (minorSafety) {
+    await issueWarning(reportedUserId, 'minorSafety', description, 'severe');
+    minorSafetyWarned = true;
+  }
+  return { autoBlocked, minorSafetyWarned };
+}
 
 /**
  * Issue Warning to User

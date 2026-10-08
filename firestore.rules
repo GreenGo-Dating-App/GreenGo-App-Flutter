@@ -2404,6 +2404,12 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // P0 moderation alerts (safety/reportPipeline.ts). Server-written only.
+    match /admin_alerts/{alertId} {
+      allow read: if isAdminPanelUser() || isAdmin();
+      allow write: if false;
+    }
+
     // ============================================================================
     // DEFAULT DENY
     // ============================================================================
