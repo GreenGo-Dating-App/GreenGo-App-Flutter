@@ -735,3 +735,11 @@ export {
 // QR check-in for events: signed tickets verified by the server, and the
 // shared "met in person" record (checkin/).
 export { getEventTicketCode, checkInEventAttendee } from './checkin/eventCheckin';
+
+// P3-5 security-event alerts (email to SECURITY_ALERT_EMAILS)
+export {
+  alertOnAdminAudit,
+  alertOnAdminUsersChange,
+  alertOnFraudFlag,
+  alertOnModerationP0,
+} from './security/securityEventAlerts';
