@@ -443,6 +443,14 @@ export {
 // reverseGeocodeProfileLocation.
 export { declareAge } from './auth/ageGate';
 
+// Regional strong age assurance (P3-1, H-21): BR / GB / US-TX when
+// app_config/feature_flags.ageAssuranceEnforced is on.
+export {
+  getAgeAssuranceStatus,
+  recordStoreAgeSignal,
+  setAgeAssuranceOverride,
+} from './safety/ageAssuranceGate';
+
 // Release bonus. Moved off the client when the profile rules stopped
 // allowing users to write their own entitlement fields.
 export { claimReleaseBonus } from './subscription/claimReleaseBonus';
