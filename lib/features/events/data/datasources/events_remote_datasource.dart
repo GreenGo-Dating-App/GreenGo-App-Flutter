@@ -95,12 +95,8 @@ abstract class EventsRemoteDataSource {
     int limit,
   });
 
-  /// QR check-in: mark an attendee as present (organizer only, enforced by
-  /// rules). Sets `checkedIn=true` and `checkedInAt=serverTimestamp`.
-  Future<void> checkInAttendee({
-    required String eventId,
-    required String attendeeUserId,
-  });
+  // QR check-in is SERVER-ONLY since 4.4.0: QrCheckinService.checkInEvent
+  // (callable checkInEventAttendee). Clients cannot write the check-in fields.
 
   /// Set how many guests an attendee is bringing (attendee edits their own doc).
   Future<void> setAttendeeGuestCount({
@@ -904,27 +900,6 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
     } catch (e) {
       debugPrint('Error getting attendees: $e');
       throw ServerException('Failed to load attendees: $e');
-    }
-  }
-
-  @override
-  Future<void> checkInAttendee({
-    required String eventId,
-    required String attendeeUserId,
-  }) async {
-    try {
-      await _eventsCollection
-          .doc(eventId)
-          .collection('attendees')
-          .doc(attendeeUserId)
-          .update({
-        'checkedIn': true,
-        'checkedInAt': FieldValue.serverTimestamp(),
-      });
-      debugPrint('Checked in: $attendeeUserId -> $eventId');
-    } catch (e) {
-      debugPrint('Error checking in attendee: $e');
-      throw ServerException('Failed to check in attendee: $e');
     }
   }
 

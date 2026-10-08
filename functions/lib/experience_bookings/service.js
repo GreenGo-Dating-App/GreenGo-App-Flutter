@@ -47,7 +47,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.bookingDeps = void 0;
+exports.MAX_EXPERIENCE_SCANNERS = exports.bookingDeps = void 0;
 exports.msOf = msOf;
 exports.loadConfig = loadConfig;
 exports.isAdminUid = isAdminUid;
@@ -78,6 +78,7 @@ const https_1 = require("firebase-functions/v2/https");
 require("../shared/firebaseAdmin");
 const effectiveTier_1 = require("../shared/effectiveTier");
 const notifyHelpers_1 = require("../notifications/notifyHelpers");
+const meetings_1 = require("../checkin/meetings");
 const model_1 = require("./model");
 /** Overridable in unit tests; production uses the defaults. */
 exports.bookingDeps = {
@@ -604,22 +605,54 @@ async function getBookingCheckInCode(uid, data) {
     const code = (0, model_1.checkInCode)(await checkInSecret(), bookingId);
     return { bookingId, code, qrPayload: (0, model_1.checkInQrPayload)(bookingId, code) };
 }
+/** Most helpers a host may authorise to scan their experience's guests in. */
+exports.MAX_EXPERIENCE_SCANNERS = 10;
+/**
+ * Host, or a helper the host authorised on the experience
+ * (`user_experiences/{id}.allowedScannerIds`), may check guests in.
+ */
+async function canScanExperience(uid, experienceId, hostId) {
+    var _a;
+    if (uid === hostId)
+        return true;
+    const exp = await fdb().collection(model_1.EXPERIENCES).doc(experienceId).get();
+    const ids = (_a = exp.data()) === null || _a === void 0 ? void 0 : _a.allowedScannerIds;
+    return Array.isArray(ids) && ids.includes(uid);
+}
+/**
+ * Host or helper at the door. data: { bookingId, code, experienceId?, cashReceived? }.
+ * `experienceId` (the experience the door scanner has open) rejects a valid
+ * code that belongs to another experience. A new check-in also records that
+ * host and guest met in person (checkin/meetings.ts).
+ */
 async function checkInBooking(uid, data) {
+    var _a, _b, _c;
     const bookingId = requireBookingId(data);
     const cashReceived = (data === null || data === void 0 ? void 0 : data.cashReceived) === true;
     const cfg = await loadConfig();
     const secret = await checkInSecret();
+    const pre = await fdb().collection(model_1.BOOKINGS).doc(bookingId).get();
+    if (!pre.exists)
+        fail('not-found', 'booking_not_found');
+    const pb = pre.data();
+    const openExperienceId = typeof (data === null || data === void 0 ? void 0 : data.experienceId) === 'string' ? data.experienceId : null;
+    if (openExperienceId && openExperienceId !== pb.experienceId)
+        fail('failed-precondition', 'wrong_experience');
+    const allowed = await canScanExperience(uid, pb.experienceId, pb.hostId);
     const r = await transition(bookingId, (b, now) => {
         var _a, _b, _c;
-        if (uid !== b.hostId)
+        if (!allowed || b.hostId !== pb.hostId)
             fail('permission-denied', 'not_host');
-        const wantsCash = cashReceived && ((_a = b.payment) === null || _a === void 0 ? void 0 : _a.mode) === 'cash' && !((_b = b.payment) === null || _b === void 0 ? void 0 : _b.hostConfirmedPaidAt);
+        // Only the host can confirm cash; a helper just opens the door.
+        const cashByHost = cashReceived && uid === b.hostId;
+        const wantsCash = cashByHost && ((_a = b.payment) === null || _a === void 0 ? void 0 : _a.mode) === 'cash' && !((_b = b.payment) === null || _b === void 0 ? void 0 : _b.hostConfirmedPaidAt);
+        // The code first: a forged code learns nothing, not even "already in".
+        if (!(0, model_1.verifyCheckInCode)(secret, bookingId, data === null || data === void 0 ? void 0 : data.code))
+            fail('permission-denied', 'invalid_code');
         if (b.status === 'confirmed' && b.checkIn && !wantsCash)
             return { noop: true };
         if (b.status !== 'confirmed')
             fail('failed-precondition', 'not_confirmed', { status: b.status });
-        if (!(0, model_1.verifyCheckInCode)(secret, bookingId, data === null || data === void 0 ? void 0 : data.code))
-            fail('permission-denied', 'invalid_code');
         if (!(0, model_1.inCheckInWindow)(now, msOf(b.slotStart), msOf(b.slotEnd), cfg)) {
             fail('failed-precondition', 'outside_checkin_window');
         }
@@ -629,12 +662,27 @@ async function checkInBooking(uid, data) {
         };
     }, cfg);
     if (!r.noop && !r.before.checkIn) {
+        await (0, meetings_1.recordMeeting)(r.after.hostId, r.after.guestId, {
+            type: 'experience', contextId: bookingId, title: title(r.after), verified: true, byUid: uid,
+        }, fdb());
         await safeNotify({
             recipientId: r.after.guestId, type: 'booking_checked_in', title: 'You are checked in',
             body: title(r.after), data: notifData(bookingId, r.after),
         });
     }
-    return Object.assign(Object.assign({}, bookingView(bookingId, r.after)), { alreadyCheckedIn: !!r.before.checkIn });
+    let guestName = '';
+    let guestPhotoUrl = null;
+    try {
+        const gp = (_a = (await fdb().collection('profiles').doc(r.after.guestId).get()).data()) !== null && _a !== void 0 ? _a : {};
+        guestName = String((_c = (_b = gp.displayName) !== null && _b !== void 0 ? _b : gp.nickname) !== null && _c !== void 0 ? _c : '');
+        const photos = gp.photoUrls;
+        guestPhotoUrl = Array.isArray(photos) && typeof photos[0] === 'string' ? photos[0] : null;
+    }
+    catch (_d) {
+        // The name is a convenience for the door screen, never a reason to fail.
+    }
+    return Object.assign(Object.assign({}, bookingView(bookingId, r.after)), { alreadyCheckedIn: !!r.before.checkIn, guestName,
+        guestPhotoUrl });
 }
 // ─────────────────────────────────────────────────────────── no-show
 async function markNoShow(uid, data) {

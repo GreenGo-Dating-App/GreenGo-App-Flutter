@@ -101,6 +101,9 @@ class UserExperienceModel {
       cancellationNotes: notes,
       // Request to book is mandatory for every experience.
       requestToBook: true,
+      // Host-managed door helpers (written by the host directly; rules cap
+      // the list at 10). Never part of editablePayload.
+      allowedScannerIds: _strList(d['allowedScannerIds']),
       status: ExperienceStatus.fromWire(d['status']),
       createdAt: experienceDateFrom(d['createdAt']),
       updatedAt: experienceDateFrom(d['updatedAt']),

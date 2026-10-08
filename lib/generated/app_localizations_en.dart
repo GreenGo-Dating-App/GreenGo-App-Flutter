@@ -15804,4 +15804,154 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get exploreLoadingContent => 'Finding the best of what\'s around you…';
+
+  @override
+  String get checkinWrongPlace =>
+      'This code is for a different event or experience';
+
+  @override
+  String get checkinOutsideWindow => 'Check-in is not open right now';
+
+  @override
+  String get checkinNotConfirmed => 'This person is not confirmed for it';
+
+  @override
+  String get checkinUpdateApp =>
+      'Old ticket: ask them to update GreenGo and show the new code';
+
+  @override
+  String get checkinNetwork => 'No connection. Try again.';
+
+  @override
+  String get expDoorTitle => 'Check in guests';
+
+  @override
+  String get expDoorInstructions => 'Scan each guest\'s booking QR code';
+
+  @override
+  String expDoorCheckedInNow(int count) {
+    return '$count checked in';
+  }
+
+  @override
+  String expDoorAdmits(int count) {
+    return 'Admits $count people';
+  }
+
+  @override
+  String get expDoorHelpers => 'Door helpers';
+
+  @override
+  String get expDoorHelpersHint =>
+      'Members you add here can scan guests in for this experience.';
+
+  @override
+  String expDoorHelpersMax(int max) {
+    return 'Up to $max helpers';
+  }
+
+  @override
+  String get expAttendanceTitle => 'Attendance';
+
+  @override
+  String get expAttendanceEmpty =>
+      'No confirmed guests for upcoming dates yet.';
+
+  @override
+  String expAttendanceCount(int checked, int total) {
+    return '$checked/$total in';
+  }
+
+  @override
+  String get qrHubExperienceTicket => 'Experience';
+
+  @override
+  String metInPersonOn(String date) {
+    return 'Met in person · $date';
+  }
+
+  @override
+  String metInPersonTimes(int count, String date) {
+    return 'Met in person $count times · last $date';
+  }
+
+  @override
+  String get paymentLinksTitle => 'Payment methods';
+
+  @override
+  String get paymentLinksNone => 'No payment methods added';
+
+  @override
+  String paymentLinksCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count payment methods',
+      one: '1 payment method',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get paymentLinksInfoTitle => 'Get paid directly';
+
+  @override
+  String get paymentLinksInfoBody =>
+      'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.';
+
+  @override
+  String get paymentLinksHintHandle => 'Username or link';
+
+  @override
+  String get paymentLinksHintPix =>
+      'CPF, CNPJ, e-mail, +55 phone or random key';
+
+  @override
+  String get paymentLinksHintLink => 'Paste your payment link';
+
+  @override
+  String paymentLinkInvalid(String method) {
+    return 'Invalid $method value — check it and try again';
+  }
+
+  @override
+  String get paymentLinksUpdated => 'Payment methods updated';
+
+  @override
+  String get paymentLinksRules =>
+      'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.';
+
+  @override
+  String get paymentLinksSection => 'Pay directly';
+
+  @override
+  String paymentDisclaimerTitle(String name) {
+    return 'Pay $name directly';
+  }
+
+  @override
+  String paymentDisclaimerBody(String name, String method) {
+    return 'This payment goes from you to $name through $method. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.';
+  }
+
+  @override
+  String paymentContinueTo(String method) {
+    return 'Continue to $method';
+  }
+
+  @override
+  String get pixInstructions =>
+      'Scan the QR code or copy the Pix code into your bank app, then enter the amount there.';
+
+  @override
+  String get pixKeyLabel => 'Pix key';
+
+  @override
+  String get pixCopyCode => 'Copy Pix code';
+
+  @override
+  String get pixCopyKey => 'Copy key';
+
+  @override
+  String get pixCopied => 'Copied — paste it in your bank app\'s Pix area';
 }

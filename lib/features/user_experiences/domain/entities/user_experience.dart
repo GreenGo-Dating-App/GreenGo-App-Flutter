@@ -136,6 +136,7 @@ class UserExperience extends Equatable {
     this.cancellationPolicy = CancellationPolicy.moderate,
     this.cancellationNotes,
     this.requestToBook = true,
+    this.allowedScannerIds = const [],
     this.status = ExperienceStatus.draft,
     this.createdAt,
     this.updatedAt,
@@ -213,6 +214,10 @@ class UserExperience extends Equatable {
   /// Bookings: true = the host accepts / declines each request; false =
   /// instant booking (functions/src/experience_bookings snapshots it).
   final bool requestToBook;
+
+  /// Door helpers the host authorised to scan guests' check-in codes
+  /// (checkInBooking accepts the host or one of these; max 10).
+  final List<String> allowedScannerIds;
 
   final ExperienceStatus status;
   final DateTime? createdAt;
@@ -297,6 +302,7 @@ class UserExperience extends Equatable {
         cancellationPolicy: cancellationPolicy,
         cancellationNotes: cancellationNotes,
         requestToBook: requestToBook,
+        allowedScannerIds: allowedScannerIds,
         status: status,
         createdAt: createdAt,
         updatedAt: updatedAt,
@@ -317,6 +323,7 @@ class UserExperience extends Equatable {
   UserExperience copyWith({
     ExperienceStatus? status,
     bool? requestToBook,
+    List<String>? allowedScannerIds,
     int? ratingSum,
     int? ratingCount,
     double? ratingAvg,
@@ -355,6 +362,7 @@ class UserExperience extends Equatable {
         cancellationPolicy: cancellationPolicy,
         cancellationNotes: cancellationNotes,
         requestToBook: requestToBook ?? this.requestToBook,
+        allowedScannerIds: allowedScannerIds ?? this.allowedScannerIds,
         status: status ?? this.status,
         createdAt: createdAt,
         updatedAt: updatedAt,
@@ -405,6 +413,7 @@ class UserExperience extends Equatable {
         cancellationPolicy,
         cancellationNotes,
         requestToBook,
+        allowedScannerIds,
         status,
         createdAt,
         updatedAt,

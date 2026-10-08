@@ -8,6 +8,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/qr_checkin_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
@@ -15,6 +16,9 @@ import '../../../events/data/datasources/events_remote_datasource.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../../events/presentation/screens/event_ticket_screen.dart';
 import '../../../events/presentation/widgets/scan_result_overlay.dart';
+import '../../../experience_bookings/data/datasources/bookings_remote_datasource.dart';
+import '../../../experience_bookings/domain/entities/booking.dart';
+import '../../../experience_bookings/presentation/screens/booking_detail_screen.dart';
 
 /// QR hub — one place for everything QR:
 ///  - **My tickets**: a QR code for EVERY event the user has joined (going) or
@@ -87,6 +91,8 @@ class _MyTicketsTab extends StatefulWidget {
 class _MyTicketsTabState extends State<_MyTicketsTab> {
   // null == loading; empty == loaded, no joined/organized events.
   List<Event>? _events;
+  // Confirmed upcoming experience bookings (the guest's check-in codes).
+  List<Booking> _bookings = const <Booking>[];
   final HiddenTicketsStore _hiddenStore = HiddenTicketsStore();
 
   @override
@@ -95,7 +101,24 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
     _load();
   }
 
+  Future<void> _loadBookings() async {
+    try {
+      final page = await BookingsRemoteDataSource().bookings(
+        BookingsQuery(
+            role: BookingRole.guest,
+            uid: widget.currentUserId,
+            upcoming: true),
+        limit: 20,
+      );
+      final mine = page.items
+          .where((b) => b.status == BookingStatus.confirmed)
+          .toList();
+      if (mounted) setState(() => _bookings = mine);
+    } catch (_) {/* keep what is shown */}
+  }
+
   Future<void> _load() async {
+    unawaited(_loadBookings());
     List<Event> mine = const <Event>[];
     try {
       final ds = di.sl<EventsRemoteDataSource>();
@@ -181,7 +204,7 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
         child: CircularProgressIndicator(color: AppColors.richGold),
       );
     }
-    if (events.isEmpty) {
+    if (events.isEmpty && _bookings.isEmpty) {
       return Center(
         child: Padding(
           padding: const EdgeInsets.all(32),
@@ -207,7 +230,7 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
       onRefresh: _load,
       child: ListView.separated(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
-        itemCount: events.length + 1,
+        itemCount: events.length + _bookings.length + 1,
         separatorBuilder: (_, __) => const SizedBox(height: 12),
         itemBuilder: (context, index) {
           if (index == 0) {
@@ -220,56 +243,90 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
               ),
             );
           }
-          return _ticketCard(context, events[index - 1]);
+          // Experience bookings first (usually the next thing to attend).
+          if (index <= _bookings.length) {
+            return _bookingCard(context, _bookings[index - 1]);
+          }
+          return _ticketCard(context, events[index - 1 - _bookings.length]);
         },
       ),
     );
   }
 
+  /// An experience booking: tap -> booking detail -> "Show check-in code".
+  Widget _bookingCard(BuildContext context, Booking b) {
+    final l10n = AppLocalizations.of(context)!;
+    return _card(
+      onTap: () => Navigator.of(context).push(BookingDetailScreen.route(
+          bookingId: b.id, currentUserId: widget.currentUserId, initial: b)),
+      leading: Container(
+        width: 84,
+        height: 84,
+        decoration: BoxDecoration(
+          color: AppColors.richGold.withValues(alpha: 0.12),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: const Icon(Icons.explore, color: AppColors.richGold, size: 36),
+      ),
+      label: l10n.qrHubExperienceTicket,
+      title: b.experienceTitle ?? '',
+      when: b.slotStart,
+    );
+  }
+
   Widget _ticketCard(BuildContext context, Event event) {
-    final payload =
-        EventTicketPayload(eventId: event.id, userId: widget.currentUserId)
-            .encode();
+    return _card(
+      onTap: () => _openTicket(event),
+      // The signed ticket once this device has it (the full ticket screen
+      // fetches and caches it); a QR glyph until then.
+      leading: _TicketThumb(eventId: event.id, userId: widget.currentUserId),
+      title: event.title,
+      when: event.startDate,
+      trailing: IconButton(
+        tooltip: AppLocalizations.of(context)!.eventTicketDelete,
+        icon: const Icon(Icons.delete_outline,
+            color: AppColors.textTertiary, size: 22),
+        onPressed: () => _deleteTicket(event),
+      ),
+    );
+  }
+
+  Widget _card({
+    required VoidCallback onTap,
+    required Widget leading,
+    required String title,
+    required DateTime when,
+    String? label,
+    Widget? trailing,
+  }) {
     return Material(
       color: Colors.transparent,
       child: InkWell(
         borderRadius: BorderRadius.circular(AppGlass.radiusCard),
-        onTap: () => _openTicket(event),
+        onTap: onTap,
         child: GlassContainer(
           padding: const EdgeInsets.all(14),
           child: Row(
             children: [
-              // Compact scannable QR (same payload as the full ticket screen).
-              Container(
-                padding: const EdgeInsets.all(6),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: QrImageView(
-                  data: payload,
-                  version: QrVersions.auto,
-                  size: 72,
-                  gapless: false,
-                  backgroundColor: Colors.white,
-                  eyeStyle: const QrEyeStyle(
-                    eyeShape: QrEyeShape.square,
-                    color: AppColors.deepBlack,
-                  ),
-                  dataModuleStyle: const QrDataModuleStyle(
-                    dataModuleShape: QrDataModuleShape.square,
-                    color: AppColors.deepBlack,
-                  ),
-                ),
-              ),
+              leading,
               const SizedBox(width: 14),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
+                    if (label != null) ...[
+                      Text(
+                        label,
+                        style: const TextStyle(
+                            color: AppColors.richGold,
+                            fontSize: 11.5,
+                            fontWeight: FontWeight.w600),
+                      ),
+                      const SizedBox(height: 2),
+                    ],
                     Text(
-                      event.title,
+                      title,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
@@ -280,7 +337,7 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      DateFormat('EEE, MMM d • h:mm a').format(event.startDate),
+                      DateFormat('EEE, MMM d \u2022 h:mm a').format(when),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
@@ -292,12 +349,7 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
                 ),
               ),
               const Icon(Icons.qr_code_2, color: AppColors.richGold, size: 22),
-              IconButton(
-                tooltip: AppLocalizations.of(context)!.eventTicketDelete,
-                icon: const Icon(Icons.delete_outline,
-                    color: AppColors.textTertiary, size: 22),
-                onPressed: () => _deleteTicket(event),
-              ),
+              if (trailing != null) trailing,
             ],
           ),
         ),
@@ -323,17 +375,11 @@ class _ScanTabState extends State<_ScanTab> {
   final MobileScannerController _controller = MobileScannerController(
     detectionSpeed: DetectionSpeed.normal,
   );
-  late final EventsRemoteDataSource _dataSource;
+  final QrCheckinService _checkin = QrCheckinService();
 
   String? _lastValue;
   DateTime _lastHandled = DateTime.fromMillisecondsSinceEpoch(0);
   bool _processing = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _dataSource = di.sl<EventsRemoteDataSource>();
-  }
 
   @override
   void dispose() {
@@ -367,67 +413,24 @@ class _ScanTabState extends State<_ScanTab> {
 
   Future<void> _handle(String raw) async {
     final l10n = AppLocalizations.of(context)!;
-    final payload = EventTicketPayload.tryDecode(raw);
-    if (payload == null) {
+    // Event tickets AND experience booking codes are both redeemed here; the
+    // server decides (signature, door rights, RSVP / booking, time window) and
+    // records that the two people met in person. Never navigates.
+    final code = ScannedCheckInCode.parse(raw);
+    final CheckInOutcome r;
+    if (code is EventTicketCode) {
+      r = await _checkin.checkInEvent(code);
+    } else if (code is BookingTicketCode) {
+      r = await _checkin.checkInBooking(code);
+    } else {
       _denied(l10n, l10n.qrHubInvalidCode);
       return;
-    }
-
-    Event? event;
-    try {
-      event = await _dataSource.getEventById(payload.eventId);
-    } catch (_) {
-      event = null;
     }
     if (!mounted) return;
-    if (event == null) {
-      _denied(l10n, l10n.qrHubInvalidCode);
-      return;
-    }
-
-    final me = widget.currentUserId;
-
-    // Only the event OWNER or an invited scanner may redeem tickets. Everyone
-    // else is denied — scanning is a door check-in, not a way into the event.
-    final canScan =
-        event.isOwner(me) || event.allowedScannerIds.contains(me);
-    if (!canScan) {
-      _denied(l10n, l10n.qrScanNotAuthorized);
-      return;
-    }
-    if (payload.eventId != event.id) {
-      _denied(l10n, l10n.eventInvalidTicket);
-      return;
-    }
-
-    // Validate the ticket against the live attendee roster, then check in.
-    // Shows only a full-screen Approved / Denied confirmation — never navigates.
-    try {
-      final roster = await _dataSource.watchAttendees(event.id).first;
-      EventAttendee? attendee;
-      for (final a in roster) {
-        if (a.userId == payload.userId) {
-          attendee = a;
-          break;
-        }
-      }
-      if (!mounted) return;
-      if (attendee == null || attendee.status != RSVPStatus.going) {
-        _denied(l10n, l10n.eventInvalidTicket);
-        return;
-      }
-      if (attendee.checkedIn) {
-        _denied(l10n, l10n.eventAlreadyCheckedIn(attendee.userName),
-            name: attendee.userName);
-        return;
-      }
-      await _dataSource.checkInAttendee(
-        eventId: event.id,
-        attendeeUserId: payload.userId,
-      );
-      if (mounted) _approved(l10n, attendee.userName);
-    } catch (_) {
-      if (mounted) _denied(l10n, l10n.eventInvalidTicket);
+    if (r.approved) {
+      _approved(l10n, r.name);
+    } else {
+      _denied(l10n, r.reasonText(l10n), name: r.name.isEmpty ? null : r.name);
     }
   }
 
@@ -543,6 +546,62 @@ class _ScanTabState extends State<_ScanTab> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Compact QR of an event ticket: the SIGNED ticket cached on this device,
+/// or a QR glyph until the full ticket screen has fetched it.
+class _TicketThumb extends StatefulWidget {
+  const _TicketThumb({required this.eventId, required this.userId});
+
+  final String eventId;
+  final String userId;
+
+  @override
+  State<_TicketThumb> createState() => _TicketThumbState();
+}
+
+class _TicketThumbState extends State<_TicketThumb> {
+  late final Future<String?> _payload =
+      QrCheckinService().cachedEventTicket(widget.eventId, widget.userId);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(6),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: FutureBuilder<String?>(
+        future: _payload,
+        builder: (context, snap) {
+          final payload = snap.data;
+          if (payload == null) {
+            return const SizedBox(
+              width: 72,
+              height: 72,
+              child: Icon(Icons.qr_code_2, color: AppColors.deepBlack, size: 48),
+            );
+          }
+          return QrImageView(
+            data: payload,
+            version: QrVersions.auto,
+            size: 72,
+            gapless: false,
+            backgroundColor: Colors.white,
+            eyeStyle: const QrEyeStyle(
+              eyeShape: QrEyeShape.square,
+              color: AppColors.deepBlack,
+            ),
+            dataModuleStyle: const QrDataModuleStyle(
+              dataModuleShape: QrDataModuleShape.square,
+              color: AppColors.deepBlack,
+            ),
+          );
+        },
       ),
     );
   }

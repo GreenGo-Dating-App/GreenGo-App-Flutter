@@ -27953,6 +27953,234 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Finding the best of what\'s around you…'**
   String get exploreLoadingContent;
+
+  /// QR door: the scanned code belongs to another event/experience
+  ///
+  /// In en, this message translates to:
+  /// **'This code is for a different event or experience'**
+  String get checkinWrongPlace;
+
+  /// QR door: scanned outside the check-in time window
+  ///
+  /// In en, this message translates to:
+  /// **'Check-in is not open right now'**
+  String get checkinOutsideWindow;
+
+  /// QR door: the person has no confirmed RSVP/booking
+  ///
+  /// In en, this message translates to:
+  /// **'This person is not confirmed for it'**
+  String get checkinNotConfirmed;
+
+  /// QR door: legacy unsigned ticket refused
+  ///
+  /// In en, this message translates to:
+  /// **'Old ticket: ask them to update GreenGo and show the new code'**
+  String get checkinUpdateApp;
+
+  /// QR door: network error
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. Try again.'**
+  String get checkinNetwork;
+
+  /// Experience door scanner title / menu item
+  ///
+  /// In en, this message translates to:
+  /// **'Check in guests'**
+  String get expDoorTitle;
+
+  /// Experience door scanner hint
+  ///
+  /// In en, this message translates to:
+  /// **'Scan each guest\'s booking QR code'**
+  String get expDoorInstructions;
+
+  /// Count checked in this session
+  ///
+  /// In en, this message translates to:
+  /// **'{count} checked in'**
+  String expDoorCheckedInNow(int count);
+
+  /// Booking for several people
+  ///
+  /// In en, this message translates to:
+  /// **'Admits {count} people'**
+  String expDoorAdmits(int count);
+
+  /// Members allowed to scan guests in
+  ///
+  /// In en, this message translates to:
+  /// **'Door helpers'**
+  String get expDoorHelpers;
+
+  /// Door helpers sheet explanation
+  ///
+  /// In en, this message translates to:
+  /// **'Members you add here can scan guests in for this experience.'**
+  String get expDoorHelpersHint;
+
+  /// Helper limit reached
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {max} helpers'**
+  String expDoorHelpersMax(int max);
+
+  /// Host attendance list title
+  ///
+  /// In en, this message translates to:
+  /// **'Attendance'**
+  String get expAttendanceTitle;
+
+  /// Attendance list empty state
+  ///
+  /// In en, this message translates to:
+  /// **'No confirmed guests for upcoming dates yet.'**
+  String get expAttendanceEmpty;
+
+  /// People checked in of expected
+  ///
+  /// In en, this message translates to:
+  /// **'{checked}/{total} in'**
+  String expAttendanceCount(int checked, int total);
+
+  /// QR hub: label on an experience booking ticket
+  ///
+  /// In en, this message translates to:
+  /// **'Experience'**
+  String get qrHubExperienceTicket;
+
+  /// Profile badge: QR-verified meeting
+  ///
+  /// In en, this message translates to:
+  /// **'Met in person · {date}'**
+  String metInPersonOn(String date);
+
+  /// Profile badge: several QR-verified meetings
+  ///
+  /// In en, this message translates to:
+  /// **'Met in person {count} times · last {date}'**
+  String metInPersonTimes(int count, String date);
+
+  /// Edit profile tile + editor title: user's own external payment links
+  ///
+  /// In en, this message translates to:
+  /// **'Payment methods'**
+  String get paymentLinksTitle;
+
+  /// No description provided for @paymentLinksNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No payment methods added'**
+  String get paymentLinksNone;
+
+  /// No description provided for @paymentLinksCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 payment method} other{{count} payment methods}}'**
+  String paymentLinksCount(int count);
+
+  /// No description provided for @paymentLinksInfoTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Get paid directly'**
+  String get paymentLinksInfoTitle;
+
+  /// No description provided for @paymentLinksInfoBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.'**
+  String get paymentLinksInfoBody;
+
+  /// No description provided for @paymentLinksHintHandle.
+  ///
+  /// In en, this message translates to:
+  /// **'Username or link'**
+  String get paymentLinksHintHandle;
+
+  /// No description provided for @paymentLinksHintPix.
+  ///
+  /// In en, this message translates to:
+  /// **'CPF, CNPJ, e-mail, +55 phone or random key'**
+  String get paymentLinksHintPix;
+
+  /// No description provided for @paymentLinksHintLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste your payment link'**
+  String get paymentLinksHintLink;
+
+  /// No description provided for @paymentLinkInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid {method} value — check it and try again'**
+  String paymentLinkInvalid(String method);
+
+  /// No description provided for @paymentLinksUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment methods updated'**
+  String get paymentLinksUpdated;
+
+  /// No description provided for @paymentLinksRules.
+  ///
+  /// In en, this message translates to:
+  /// **'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.'**
+  String get paymentLinksRules;
+
+  /// Profile section title listing the user's external payment methods
+  ///
+  /// In en, this message translates to:
+  /// **'Pay directly'**
+  String get paymentLinksSection;
+
+  /// No description provided for @paymentDisclaimerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay {name} directly'**
+  String paymentDisclaimerTitle(String name);
+
+  /// No description provided for @paymentDisclaimerBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This payment goes from you to {name} through {method}. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.'**
+  String paymentDisclaimerBody(String name, String method);
+
+  /// No description provided for @paymentContinueTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue to {method}'**
+  String paymentContinueTo(String method);
+
+  /// No description provided for @pixInstructions.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan the QR code or copy the Pix code into your bank app, then enter the amount there.'**
+  String get pixInstructions;
+
+  /// No description provided for @pixKeyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Pix key'**
+  String get pixKeyLabel;
+
+  /// No description provided for @pixCopyCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy Pix code'**
+  String get pixCopyCode;
+
+  /// No description provided for @pixCopyKey.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy key'**
+  String get pixCopyKey;
+
+  /// No description provided for @pixCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied — paste it in your bank app\'s Pix area'**
+  String get pixCopied;
 }
 
 class _AppLocalizationsDelegate

@@ -1214,6 +1214,22 @@ service cloud.firestore {
       allow write: if isOwner(userId);
     }
 
+    // "Met in person" — written ONLY by the server on a successful QR check-in
+    // (functions/src/checkin/meetings.ts). Each member reads their own pairs.
+    // pairId = the two uids sorted and joined by '_' (uids never contain
+    // '_'), so a member may GET any pair they are part of - existing or not
+    // ("have we met?" answers no without an error) - and LIST their own pairs
+    // with where('users', 'array-contains', uid).
+    match /met_in_person/{pairId} {
+      allow get: if isSignedIn() && request.auth.uid in pairId.split('_');
+      allow list: if isSignedIn() && request.auth.uid in resource.data.users;
+      allow write: if false;
+      match /encounters/{encounterId} {
+        allow read: if isSignedIn() && request.auth.uid in pairId.split('_');
+        allow write: if false;
+      }
+    }
+
     // ============================================================================
     // EXTERNAL EVENTS (Tiqets/Viator experiences) — read-only, CF-written only
     // ============================================================================
@@ -1640,12 +1656,32 @@ service cloud.firestore {
           );
         }
         allow read: if canSeeRoster();
+        // QR check-in is SERVER-ONLY since 4.4.0 (checkInEventAttendee
+        // verifies a signed ticket, the door rights and the time window). No
+        // client - not the attendee, not the organizer - may touch these.
+        // Compared by VALUE with absent == not checked in, so an RSVP re-save
+        // that writes checkedIn: false / checkedInAt: null onto an older doc
+        // without those fields is still allowed.
+        function touchesCheckIn() {
+          return request.resource.data.get('checkedIn', false) != resource.data.get('checkedIn', false)
+            || request.resource.data.get('checkedInAt', null) != resource.data.get('checkedInAt', null)
+            || request.resource.data.get('checkedInBy', null) != resource.data.get('checkedInBy', null)
+            || request.resource.data.get('checkInMethod', null) != resource.data.get('checkInMethod', null);
+        }
         // A user manages only their OWN attendee doc — RSVP status, privacy
         // flags and guestCount (QR ticket "bring guests"). The organizer (and
-        // any co-owner) may manage ANY attendee doc, which is what powers QR
-        // check-in: flipping checkedIn / checkedInAt for the attendee they
-        // just scanned.
-        allow write: if isSignedIn()
+        // any co-owner) may manage ANY attendee doc (roster), but never the
+        // check-in fields. A new RSVP starts NOT checked in.
+        allow create: if isSignedIn()
+          && (request.auth.uid == uid || parentOrganizer())
+          && request.resource.data.get('checkedIn', false) == false
+          && request.resource.data.get('checkedInAt', null) == null
+          && !('checkedInBy' in request.resource.data)
+          && !('checkInMethod' in request.resource.data);
+        allow update: if isSignedIn()
+          && (request.auth.uid == uid || parentOrganizer())
+          && !touchesCheckIn();
+        allow delete: if isSignedIn()
           && (request.auth.uid == uid || parentOrganizer());
         // Waitlist auto-promotion: when a "going" attendee cancels, the
         // cancelling user promotes the oldest waitlisted attendee. Allow any
@@ -1653,15 +1689,10 @@ service cloud.firestore {
         // from 'waitlist' to 'going' (they can promote, never demote/delete).
         allow update: if isSignedIn()
           && resource.data.status == 'waitlist'
-          && request.resource.data.status == 'going';
-        // Delegated QR check-in: a scanner the organizer authorised
-        // (allowedScannerIds on the event doc) may flip ONLY checkedIn /
-        // checkedInAt on an attendee — nothing else.
-        allow update: if isSignedIn()
-          && request.auth.uid in
-             get(/databases/$(database)/documents/events/$(eventId)).data.get('allowedScannerIds', [])
-          && request.resource.data.diff(resource.data).affectedKeys()
-               .hasOnly(['checkedIn', 'checkedInAt']);
+          && request.resource.data.status == 'going'
+          && !touchesCheckIn();
+        // Delegated scanners (allowedScannerIds) no longer write here: they
+        // check people in through checkInEventAttendee like the organizer.
       }
 
       // Likes — one doc per user; likeCount kept current by onEventLikeWrite CF.
@@ -2041,6 +2072,12 @@ service cloud.firestore {
         && resource.data.hostId == request.auth.uid
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(serverOwnedExperienceFields())
+        // Door helpers the host authorises to scan guests in (checkInBooking
+        // reads this list): at most 10 ids, never the host.
+        && (!('allowedScannerIds' in request.resource.data)
+            || (request.resource.data.allowedScannerIds is list
+                && request.resource.data.allowedScannerIds.size() <= 10
+                && !(request.auth.uid in request.resource.data.allowedScannerIds)))
         && validExperienceText(request.resource.data)
         && publishWriteAllowed()
         && (request.resource.data.status == resource.data.status

@@ -536,6 +536,30 @@ describe('check-in, cash, no-show, disputes', () => {
     expect(again.alreadyCheckedIn).toBe(true);
   });
 
+  test('helpers at the door, wrong experience, forged codes, met in person', async () => {
+    const id = await confirmed();
+    const { code }: any = await svc.getBookingCheckInCode(GUEST, { bookingId: id });
+    now = T0 + 10 * D - 30 * 60 * 1000;
+    // not authorised yet
+    await expectCode(svc.checkInBooking(GUEST2, { bookingId: id, code }), 'not_host');
+    db.seed(`user_experiences/${EXP}`, { ...(db.get(`user_experiences/${EXP}`) as any), allowedScannerIds: [GUEST2] });
+    // a valid code for ANOTHER experience is refused at this door
+    await expectCode(svc.checkInBooking(GUEST2, { bookingId: id, code, experienceId: 'other' }), 'wrong_experience');
+    // a helper cannot confirm cash, but can open the door
+    const r: any = await svc.checkInBooking(GUEST2, { bookingId: id, code, experienceId: EXP, cashReceived: true });
+    expect(r.checkedInAt).not.toBeNull();
+    expect(r.payment?.hostConfirmedPaidAt ?? null).toBeNull();
+    expect(r.guestName).toBe('');
+    // host and guest met in person — recorded once
+    const pair = [HOST, GUEST].sort().join('_');
+    expect(db.get(`met_in_person/${pair}`)).toMatchObject({ users: [HOST, GUEST].sort() });
+    expect(db.get(`met_in_person/${pair}/encounters/experience_${id}`)).toMatchObject({ verified: true, byUid: GUEST2 });
+    // a forged code learns nothing, not even "already checked in"
+    await expectCode(svc.checkInBooking(HOST, { bookingId: id, code: 'AAAAAAAA' }), 'invalid_code');
+    const again: any = await svc.checkInBooking(HOST, { bookingId: id, code });
+    expect(again.alreadyCheckedIn).toBe(true);
+  });
+
   test('check-in outside the window is refused', async () => {
     const id = await confirmed();
     const { code }: any = await svc.getBookingCheckInCode(GUEST, { bookingId: id });

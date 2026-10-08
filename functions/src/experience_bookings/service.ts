@@ -19,6 +19,7 @@ import { HttpsError, FunctionsErrorCode } from 'firebase-functions/v2/https';
 import '../shared/firebaseAdmin';
 import { tierDateFromValue } from '../shared/effectiveTier';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
+import { recordMeeting } from '../checkin/meetings';
 import {
   ACTIVE_STATUSES,
   BOOKINGS,
@@ -660,17 +661,46 @@ export async function getBookingCheckInCode(uid: string, data: any): Promise<Rec
   return { bookingId, code, qrPayload: checkInQrPayload(bookingId, code) };
 }
 
+/** Most helpers a host may authorise to scan their experience's guests in. */
+export const MAX_EXPERIENCE_SCANNERS = 10;
+
+/**
+ * Host, or a helper the host authorised on the experience
+ * (`user_experiences/{id}.allowedScannerIds`), may check guests in.
+ */
+async function canScanExperience(uid: string, experienceId: string, hostId: string): Promise<boolean> {
+  if (uid === hostId) return true;
+  const exp = await fdb().collection(EXPERIENCES).doc(experienceId).get();
+  const ids: unknown = exp.data()?.allowedScannerIds;
+  return Array.isArray(ids) && ids.includes(uid);
+}
+
+/**
+ * Host or helper at the door. data: { bookingId, code, experienceId?, cashReceived? }.
+ * `experienceId` (the experience the door scanner has open) rejects a valid
+ * code that belongs to another experience. A new check-in also records that
+ * host and guest met in person (checkin/meetings.ts).
+ */
 export async function checkInBooking(uid: string, data: any): Promise<Record<string, unknown>> {
   const bookingId = requireBookingId(data);
   const cashReceived = data?.cashReceived === true;
   const cfg = await loadConfig();
   const secret = await checkInSecret();
+  const pre = await fdb().collection(BOOKINGS).doc(bookingId).get();
+  if (!pre.exists) fail('not-found', 'booking_not_found');
+  const pb = pre.data() as Record<string, any>;
+  const openExperienceId = typeof data?.experienceId === 'string' ? data.experienceId : null;
+  if (openExperienceId && openExperienceId !== pb.experienceId) fail('failed-precondition', 'wrong_experience');
+  const allowed = await canScanExperience(uid, pb.experienceId, pb.hostId);
   const r = await transition(bookingId, (b, now) => {
-    if (uid !== b.hostId) fail('permission-denied', 'not_host');
-    const wantsCash = cashReceived && b.payment?.mode === 'cash' && !b.payment?.hostConfirmedPaidAt;
+    if (!allowed || b.hostId !== pb.hostId) fail('permission-denied', 'not_host');
+    // Only the host can confirm cash; a helper just opens the door.
+    const cashByHost = cashReceived && uid === b.hostId;
+    const wantsCash = cashByHost && b.payment?.mode === 'cash' && !b.payment?.hostConfirmedPaidAt;
+    // The code first: a forged code learns nothing, not even "already in".
+    if (!verifyCheckInCode(secret, bookingId, data?.code)) fail('permission-denied', 'invalid_code');
     if (b.status === 'confirmed' && b.checkIn && !wantsCash) return { noop: true };
     if (b.status !== 'confirmed') fail('failed-precondition', 'not_confirmed', { status: b.status });
-    if (!verifyCheckInCode(secret, bookingId, data?.code)) fail('permission-denied', 'invalid_code');
     if (!inCheckInWindow(now, msOf(b.slotStart) as number, msOf(b.slotEnd) as number, cfg)) {
       fail('failed-precondition', 'outside_checkin_window');
     }
@@ -683,12 +713,30 @@ export async function checkInBooking(uid: string, data: any): Promise<Record<str
     };
   }, cfg);
   if (!r.noop && !r.before.checkIn) {
+    await recordMeeting(r.after.hostId, r.after.guestId, {
+      type: 'experience', contextId: bookingId, title: title(r.after), verified: true, byUid: uid,
+    }, fdb());
     await safeNotify({
       recipientId: r.after.guestId, type: 'booking_checked_in', title: 'You are checked in',
       body: title(r.after), data: notifData(bookingId, r.after),
     });
   }
-  return { ...bookingView(bookingId, r.after), alreadyCheckedIn: !!r.before.checkIn };
+  let guestName = '';
+  let guestPhotoUrl: string | null = null;
+  try {
+    const gp = (await fdb().collection('profiles').doc(r.after.guestId).get()).data() ?? {};
+    guestName = String(gp.displayName ?? gp.nickname ?? '');
+    const photos: unknown = gp.photoUrls;
+    guestPhotoUrl = Array.isArray(photos) && typeof photos[0] === 'string' ? photos[0] : null;
+  } catch {
+    // The name is a convenience for the door screen, never a reason to fail.
+  }
+  return {
+    ...bookingView(bookingId, r.after),
+    alreadyCheckedIn: !!r.before.checkIn,
+    guestName,
+    guestPhotoUrl,
+  };
 }
 
 // ─────────────────────────────────────────────────────────── no-show

@@ -1,3 +1,4 @@
+import '../../../../core/services/qr_checkin_service.dart';
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -237,15 +238,31 @@ class BookingsRemoteDataSource {
         if (reason != null && reason.trim().isNotEmpty) 'reason': reason.trim(),
       });
 
+  /// The guest's check-in code. Cached on the device after the first fetch,
+  /// so it still shows at a meeting point without signal.
   Future<BookingCheckInCode> checkInCode(String bookingId) async {
-    final m = bookingMap(
-            await _call('getBookingCheckInCode', {'bookingId': bookingId})) ??
-        const {};
-    return BookingCheckInCode(
-      bookingId: m['bookingId'] as String? ?? bookingId,
-      code: m['code'] as String? ?? '',
-      qrPayload: m['qrPayload'] as String? ?? '',
-    );
+    final cache = QrCheckinService();
+    try {
+      final m = bookingMap(await _call(
+              'getBookingCheckInCode', {'bookingId': bookingId})) ??
+          const {};
+      final code = BookingCheckInCode(
+        bookingId: m['bookingId'] as String? ?? bookingId,
+        code: m['code'] as String? ?? '',
+        qrPayload: m['qrPayload'] as String? ?? '',
+      );
+      await cache.cacheBookingPayload(bookingId, code.qrPayload);
+      return code;
+    } on BookingFailure catch (f) {
+      if (f.definitive) rethrow;
+      final cached = ScannedCheckInCode.parse(
+          await cache.cachedBookingPayload(bookingId));
+      if (cached is BookingTicketCode && cached.bookingId == bookingId) {
+        return BookingCheckInCode(
+            bookingId: bookingId, code: cached.code, qrPayload: cached.raw);
+      }
+      rethrow;
+    }
   }
 
   Future<Booking> checkIn(Booking b,

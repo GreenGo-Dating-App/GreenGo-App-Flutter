@@ -644,3 +644,7 @@ export {
   onPendingExperienceReviewCreated,
   onBookableExperienceDeleted,
 } from './experience_bookings';
+
+// QR check-in for events: signed tickets verified by the server, and the
+// shared "met in person" record (checkin/).
+export { getEventTicketCode, checkInEventAttendee } from './checkin/eventCheckin';

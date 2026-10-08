@@ -15974,4 +15974,156 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get exploreLoadingContent => 'Cerchiamo il meglio intorno a te…';
+
+  @override
+  String get checkinWrongPlace =>
+      'Questo codice è per un altro evento o esperienza';
+
+  @override
+  String get checkinOutsideWindow =>
+      'Il check-in non è aperto in questo momento';
+
+  @override
+  String get checkinNotConfirmed => 'Questa persona non è confermata';
+
+  @override
+  String get checkinUpdateApp =>
+      'Biglietto vecchio: chiedi di aggiornare GreenGo e mostrare il nuovo codice';
+
+  @override
+  String get checkinNetwork => 'Nessuna connessione. Riprova.';
+
+  @override
+  String get expDoorTitle => 'Check-in ospiti';
+
+  @override
+  String get expDoorInstructions =>
+      'Scansiona il QR della prenotazione di ogni ospite';
+
+  @override
+  String expDoorCheckedInNow(int count) {
+    return '$count registrati';
+  }
+
+  @override
+  String expDoorAdmits(int count) {
+    return 'Ingresso per $count persone';
+  }
+
+  @override
+  String get expDoorHelpers => 'Aiutanti all\'ingresso';
+
+  @override
+  String get expDoorHelpersHint =>
+      'I membri che aggiungi qui possono registrare gli ospiti di questa esperienza.';
+
+  @override
+  String expDoorHelpersMax(int max) {
+    return 'Massimo $max aiutanti';
+  }
+
+  @override
+  String get expAttendanceTitle => 'Presenze';
+
+  @override
+  String get expAttendanceEmpty =>
+      'Ancora nessun ospite confermato per le prossime date.';
+
+  @override
+  String expAttendanceCount(int checked, int total) {
+    return '$checked/$total presenti';
+  }
+
+  @override
+  String get qrHubExperienceTicket => 'Esperienza';
+
+  @override
+  String metInPersonOn(String date) {
+    return 'Vi siete incontrati · $date';
+  }
+
+  @override
+  String metInPersonTimes(int count, String date) {
+    return 'Incontrati $count volte · ultima $date';
+  }
+
+  @override
+  String get paymentLinksTitle => 'Payment methods';
+
+  @override
+  String get paymentLinksNone => 'No payment methods added';
+
+  @override
+  String paymentLinksCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count payment methods',
+      one: '1 payment method',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get paymentLinksInfoTitle => 'Get paid directly';
+
+  @override
+  String get paymentLinksInfoBody =>
+      'Let people pay you with your own accounts. Money goes straight to you — GreenGo never processes, holds or takes a fee from these payments.';
+
+  @override
+  String get paymentLinksHintHandle => 'Username or link';
+
+  @override
+  String get paymentLinksHintPix =>
+      'CPF, CNPJ, e-mail, +55 phone or random key';
+
+  @override
+  String get paymentLinksHintLink => 'Paste your payment link';
+
+  @override
+  String paymentLinkInvalid(String method) {
+    return 'Invalid $method value — check it and try again';
+  }
+
+  @override
+  String get paymentLinksUpdated => 'Payment methods updated';
+
+  @override
+  String get paymentLinksRules =>
+      'Use these only for payments between people (gifts, tips, in-person services and tours). GreenGo coins and memberships can only be bought in the app.';
+
+  @override
+  String get paymentLinksSection => 'Pay directly';
+
+  @override
+  String paymentDisclaimerTitle(String name) {
+    return 'Pay $name directly';
+  }
+
+  @override
+  String paymentDisclaimerBody(String name, String method) {
+    return 'This payment goes from you to $name through $method. GreenGo is not involved and cannot refund, protect or verify it. Only pay people you trust.';
+  }
+
+  @override
+  String paymentContinueTo(String method) {
+    return 'Continue to $method';
+  }
+
+  @override
+  String get pixInstructions =>
+      'Scan the QR code or copy the Pix code into your bank app, then enter the amount there.';
+
+  @override
+  String get pixKeyLabel => 'Pix key';
+
+  @override
+  String get pixCopyCode => 'Copy Pix code';
+
+  @override
+  String get pixCopyKey => 'Copy key';
+
+  @override
+  String get pixCopied => 'Copied — paste it in your bank app\'s Pix area';
 }

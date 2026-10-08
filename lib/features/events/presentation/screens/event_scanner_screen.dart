@@ -7,6 +7,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/qr_checkin_service.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
@@ -14,13 +15,14 @@ import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 import '../widgets/scan_result_overlay.dart';
-import 'event_ticket_screen.dart';
 
 /// Organizer-only QR scanner that checks attendees in at the door.
 ///
-/// Validates every scanned code against this event (namespace + eventId match,
-/// attendee exists & is going), then flips their `checkedIn` flag. A short
-/// debounce stops a single held-up ticket from firing repeatedly.
+/// Every scanned ticket is verified by the SERVER (checkInEventAttendee:
+/// signed code, this event, RSVP going, time window, door rights), which also
+/// records that organizer and attendee met in person. The live roster here
+/// only feeds the checked-in counter. A short debounce stops a single held-up
+/// ticket from firing repeatedly.
 class EventScannerScreen extends StatefulWidget {
   const EventScannerScreen({
     required this.event,
@@ -59,6 +61,7 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
   DateTime _lastHandled = DateTime.fromMillisecondsSinceEpoch(0);
   bool _processing = false;
   int _checkedInCount = 0;
+  final QrCheckinService _checkin = QrCheckinService();
 
   @override
   void initState() {
@@ -108,33 +111,27 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
 
   Future<void> _handlePayload(String raw) async {
     final l10n = AppLocalizations.of(context)!;
-    final payload = EventTicketPayload.tryDecode(raw);
-
-    // Invalid: not a GreenGo ticket, or for a different event.
-    if (payload == null || payload.eventId != widget.event.id) {
-      _denied(l10n, l10n.eventInvalidTicket);
+    // Only a GreenGo EVENT ticket can open this door; everything is verified
+    // by the server (signature, this event, RSVP, time window, door rights).
+    final code = ScannedCheckInCode.parse(raw);
+    if (code is! EventTicketCode || code.eventId != widget.event.id) {
+      _denied(l10n, code == null ? l10n.eventInvalidTicket : l10n.checkinWrongPlace);
       return;
     }
-
-    final attendee = _attendees[payload.userId];
-    if (attendee == null || attendee.status != RSVPStatus.going) {
-      _denied(l10n, l10n.eventInvalidTicket);
-      return;
-    }
-    if (attendee.checkedIn) {
-      _denied(l10n, l10n.eventAlreadyCheckedIn(attendee.userName),
-          name: attendee.userName);
-      return;
-    }
-
-    try {
-      await _dataSource.checkInAttendee(
-        eventId: widget.event.id,
-        attendeeUserId: payload.userId,
-      );
-      _approved(l10n, attendee.userName);
-    } catch (_) {
-      _denied(l10n, l10n.eventInvalidTicket);
+    final r = await _checkin.checkInEvent(code, eventId: widget.event.id);
+    if (!mounted) return;
+    final name = r.name.isNotEmpty
+        ? r.name
+        : (_attendees[code.userId]?.userName ?? '');
+    if (r.approved) {
+      _approved(l10n, name);
+    } else {
+      _denied(l10n, CheckInOutcome(
+        approved: false,
+        alreadyCheckedIn: r.alreadyCheckedIn,
+        name: name,
+        reason: r.reason,
+      ).reasonText(l10n), name: name.isEmpty ? null : name);
     }
   }
 

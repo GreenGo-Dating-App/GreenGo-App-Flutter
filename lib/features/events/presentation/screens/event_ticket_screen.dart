@@ -9,6 +9,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/qr_checkin_service.dart';
 import '../../../../core/theme/app_glass.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../core/utils/user_error.dart';
@@ -16,11 +17,12 @@ import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
 
-/// Compact, namespaced codec for the QR ticket payload.
-///
-/// A ticket encodes only the two ids needed to validate + check in:
+/// LEGACY (pre-4.4.0) unsigned ticket codec:
 ///   greengo:{"e":"<eventId>","u":"<userId>"}
-/// The `greengo:` prefix lets the scanner ignore unrelated QR codes cheaply.
+/// Since 4.4.0 the ticket shows the SIGNED code from the server
+/// (`greengo:ev:{eventId}:{userId}:{code}`, see QrCheckinService); this one
+/// is only the offline fallback, accepted by the server while
+/// app_config/event_checkin.allowLegacyTickets is not false.
 class EventTicketPayload {
   const EventTicketPayload({required this.eventId, required this.userId});
 
@@ -196,6 +198,8 @@ class EventTicketScreen extends StatefulWidget {
 }
 
 class _EventTicketScreenState extends State<EventTicketScreen> {
+  /// The signed ticket (cached on the device after the first fetch).
+  late final Future<String> _payloadFuture;
   late final EventsRemoteDataSource _dataSource;
   int _guestCount = 0;
   bool _savingGuests = false;
@@ -204,6 +208,14 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
   void initState() {
     super.initState();
     _dataSource = di.sl<EventsRemoteDataSource>();
+    _payloadFuture = QrCheckinService().eventTicketPayload(
+      widget.event.id,
+      widget.userId,
+      legacyPayload: EventTicketPayload(
+        eventId: widget.event.id,
+        userId: widget.userId,
+      ).encode(),
+    );
     // Seed guest count from the current RSVP, if present in the loaded event.
     final me = widget.event.attendees
         .where((a) => a.userId == widget.userId)
@@ -260,10 +272,6 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final event = widget.event;
-    final payload = EventTicketPayload(
-      eventId: event.id,
-      userId: widget.userId,
-    ).encode();
 
     // This ticket admits the holder plus any guests they're bringing.
     final admitCount = 1 + (_guestCount < 0 ? 0 : _guestCount);
@@ -347,20 +355,36 @@ class _EventTicketScreenState extends State<EventTicketScreen> {
                               borderRadius:
                                   BorderRadius.circular(AppGlass.radiusCard),
                             ),
-                            child: QrImageView(
-                              data: payload,
-                              version: QrVersions.auto,
-                              size: 220,
-                              gapless: false,
-                              backgroundColor: Colors.white,
-                              eyeStyle: const QrEyeStyle(
-                                eyeShape: QrEyeShape.square,
-                                color: AppColors.deepBlack,
-                              ),
-                              dataModuleStyle: const QrDataModuleStyle(
-                                dataModuleShape: QrDataModuleShape.square,
-                                color: AppColors.deepBlack,
-                              ),
+                            child: FutureBuilder<String>(
+                              future: _payloadFuture,
+                              builder: (context, snap) {
+                                final payload = snap.data;
+                                if (payload == null) {
+                                  return const SizedBox(
+                                    width: 220,
+                                    height: 220,
+                                    child: Center(
+                                      child: CircularProgressIndicator(
+                                          color: AppColors.deepBlack),
+                                    ),
+                                  );
+                                }
+                                return QrImageView(
+                                  data: payload,
+                                  version: QrVersions.auto,
+                                  size: 220,
+                                  gapless: false,
+                                  backgroundColor: Colors.white,
+                                  eyeStyle: const QrEyeStyle(
+                                    eyeShape: QrEyeShape.square,
+                                    color: AppColors.deepBlack,
+                                  ),
+                                  dataModuleStyle: const QrDataModuleStyle(
+                                    dataModuleShape: QrDataModuleShape.square,
+                                    color: AppColors.deepBlack,
+                                  ),
+                                );
+                              },
                             ),
                           ),
                           const SizedBox(height: 14),

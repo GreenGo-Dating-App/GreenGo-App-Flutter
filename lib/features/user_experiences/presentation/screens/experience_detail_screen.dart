@@ -17,6 +17,7 @@ import '../../../experience_bookings/domain/entities/booking.dart';
 import '../../../experience_bookings/domain/repositories/bookings_repository.dart';
 import '../../../experience_bookings/presentation/screens/book_experience_screen.dart';
 import '../../../experience_bookings/presentation/screens/bookings_list_screen.dart';
+import '../../../experience_bookings/presentation/screens/experience_door_screen.dart';
 import '../../../experience_bookings/presentation/screens/experience_slots_screen.dart';
 import '../../domain/entities/user_experience.dart';
 import '../../domain/repositories/user_experiences_repository.dart';
@@ -156,6 +157,10 @@ class _DetailViewState extends State<_DetailView> {
           .add(ExperienceDetailRequested(updated.id, initial: updated));
     }
   }
+
+  void _openDoor(UserExperience e) => Navigator.of(context).push(
+      ExperienceDoorScannerScreen.route(
+          experience: e, currentUserId: widget.currentUserId));
 
   void _openBookings(UserExperience e) => Navigator.of(context).push(
         BookingsListScreen.route(
@@ -433,6 +438,13 @@ class _DetailViewState extends State<_DetailView> {
           icon: const Icon(Icons.share_outlined),
           onPressed: () => _share(e),
         ),
+        // A door helper the host authorised: straight to the scanner.
+        if (!isHost && e.allowedScannerIds.contains(widget.currentUserId))
+          IconButton(
+            tooltip: l.expDoorTitle,
+            icon: const Icon(Icons.qr_code_scanner),
+            onPressed: () => _openDoor(e),
+          ),
         if (isHost)
           PopupMenuButton<String>(
             color: AppColors.backgroundCard,
@@ -445,6 +457,11 @@ class _DetailViewState extends State<_DetailView> {
                   _openDates(e);
                 case 'bookings':
                   _openBookings(e);
+                case 'door':
+                  _openDoor(e);
+                case 'attendance':
+                  Navigator.of(context).push(ExperienceAttendanceScreen.route(
+                      experience: e, currentUserId: widget.currentUserId));
                 case 'publish':
                   _publish(e);
                 case 'unpublish':
@@ -466,6 +483,14 @@ class _DetailViewState extends State<_DetailView> {
               PopupMenuItem(
                   value: 'bookings',
                   child: Text(l.bkBookings,
+                      style: const TextStyle(color: AppColors.textPrimary))),
+              PopupMenuItem(
+                  value: 'door',
+                  child: Text(l.expDoorTitle,
+                      style: const TextStyle(color: AppColors.textPrimary))),
+              PopupMenuItem(
+                  value: 'attendance',
+                  child: Text(l.expAttendanceTitle,
                       style: const TextStyle(color: AppColors.textPrimary))),
               if (e.status == ExperienceStatus.draft)
                 PopupMenuItem(
