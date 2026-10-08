@@ -18,6 +18,7 @@ import { monitored } from '../shared/monitoring';
 import '../shared/firebaseAdmin';
 import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetention';
 import { enqueueFollowGraphCleanup } from '../social/followCleanup';
+import { serverDeletionRunning } from '../auth/accountDeletion';
 
 const db = admin.firestore();
 
@@ -111,8 +112,14 @@ export const onProfileDeleted = onDocumentDeleted(
 
     // 5) Firebase Auth user — server-side, so a failed client re-auth can never
     //    leave an orphaned Auth account.
+    //     EXCEPT while a server-side deletion (deleteMyAccount / website link,
+    //     auth/accountDeletion.ts) is running: that path deletes the profile
+    //     near the end and the Auth user strictly LAST, and must be able to
+    //     leave the account intact if a later step fails.
     try {
-      await admin.auth().deleteUser(uid);
+      if (!(await serverDeletionRunning(uid))) {
+        await admin.auth().deleteUser(uid);
+      }
     } catch (e) {
       // Already deleted (client did it) or never existed — fine.
     }

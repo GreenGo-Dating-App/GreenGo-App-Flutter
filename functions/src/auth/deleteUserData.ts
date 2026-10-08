@@ -15,16 +15,16 @@
  * fires however the user is removed: from the app, from the admin panel, or by
  * hand in the Firebase console.
  *
- * WHAT IS DELETED
- *   Every document keyed by the user's own id, and every Storage prefix
- *   scoped to them.
+ * WHAT IS DELETED / RETAINED / ANONYMISED: see ACCOUNT_DATA_INVENTORY and
+ *   the policy notes in ./accountDeletion.ts (financial records are now
+ *   retained pseudonymised in retention_finance instead of being deleted).
  *
  * WHAT IS RETAINED (DRAFT — lawyer review, LGPD legitimate interest /
  * GDPR Art. 6(1)(f))
  *   Identity documents (`id_documents/{uid}/…`): moved to `retention/{uid}/…`
  *   and kept 30 days for fraud prevention, then erased by
  *   purgeRetainedIdDocuments (safety/idDocumentRetention.ts). The
- *   `id_documents/{uid}` prefix is deliberately NOT in USER_STORAGE_PREFIXES.
+ *   `id_documents/{uid}` prefix is deliberately NOT a storage inventory entry.
  *
  * WHAT IS ANONYMISED INSTEAD
  *   Messages already delivered to another person. Deleting those would edit
@@ -35,221 +35,30 @@
  */
 
 import * as functions from 'firebase-functions/v1';
-import * as admin from 'firebase-admin';
-import { db, logInfo, logError } from '../shared/utils';
-import { retainIdDocumentsOnAccountDeletion } from '../safety/idDocumentRetention';
-import { enqueueFollowGraphCleanup } from '../social/followCleanup';
-
-/** Top-level collections whose document id IS the user id. */
-const USER_KEYED_COLLECTIONS = [
-  'profiles',
-  'users',
-  'coinBalances',
-  'coin_balances',
-  'memberships',
-  'subscriptions',
-  'user_settings',
-  'user_favorite_communities',
-  'user_group_tags',
-  'blocked_users',
-  'age_verification_queue',
-  'identity_verifications',
-  'notification_settings',
-  'user_presence',
-];
-
-/** Storage prefixes scoped to one user. */
-const USER_STORAGE_PREFIXES = [
-  'profiles',
-  'video_profiles',
-  'voice_intros',
-  'verifications',
-  'age_verification',
-];
+import { logInfo } from '../shared/utils';
+import { sweepDeletedAccount } from './accountDeletion';
 
 /**
- * Collections holding documents that BELONG to a user but are keyed by their
- * own id, found via a `userId`-shaped field.
+ * Since P1-10 the cascade itself lives in ./accountDeletion.ts (one inventory,
+ * shared with deleteMyAccount and the website flow). This trigger keeps its
+ * job: whenever an Auth user disappears - old app versions that delete
+ * client-side, the admin panel, the console - sweep the data and write
+ * `deletion_receipts/{uid}` (same shape as before). After a server-initiated
+ * deletion it runs again as a cheap idempotent sweep and keeps the original
+ * receipt.
  */
-const OWNED_BY_QUERY: Array<{ collection: string; field: string }> = [
-  { collection: 'coinTransactions', field: 'userId' },
-  { collection: 'coin_transactions', field: 'userId' },
-  { collection: 'purchaseLedger', field: 'userId' },
-  { collection: 'user_reports', field: 'reporterId' },
-  { collection: 'event_attendees', field: 'userId' },
-  { collection: 'community_members', field: 'userId' },
-  { collection: 'saved_searches', field: 'userId' },
-  { collection: 'likes', field: 'fromUserId' },
-  { collection: 'likes', field: 'toUserId' },
-];
-
-/** Messages are anonymised, not deleted — see the file header. */
-const ANONYMISE: Array<{ collection: string; field: string }> = [
-  { collection: 'messages', field: 'senderId' },
-  { collection: 'community_messages', field: 'senderId' },
-  { collection: 'event_chat_messages', field: 'senderId' },
-];
-
-const TOMBSTONE = 'deleted_user';
-
-async function deleteByQuery(
-  collection: string,
-  field: string,
-  uid: string
-): Promise<number> {
-  let removed = 0;
-  // Paged so a heavy account cannot blow the function's memory.
-  for (;;) {
-    const snap = await db
-      .collection(collection)
-      .where(field, '==', uid)
-      .limit(300)
-      .get();
-    if (snap.empty) break;
-
-    const batch = db.batch();
-    snap.docs.forEach((d) => batch.delete(d.ref));
-    await batch.commit();
-    removed += snap.size;
-    if (snap.size < 300) break;
-  }
-  return removed;
-}
-
-async function anonymiseByQuery(
-  collection: string,
-  field: string,
-  uid: string
-): Promise<number> {
-  let touched = 0;
-  for (;;) {
-    const snap = await db
-      .collection(collection)
-      .where(field, '==', uid)
-      .limit(300)
-      .get();
-    if (snap.empty) break;
-
-    const batch = db.batch();
-    snap.docs.forEach((d) =>
-      batch.update(d.ref, {
-        [field]: TOMBSTONE,
-        senderName: TOMBSTONE,
-        senderPhotoUrl: null,
-        anonymisedAt: admin.firestore.Timestamp.now(),
-      })
-    );
-    await batch.commit();
-    touched += snap.size;
-    if (snap.size < 300) break;
-  }
-  return touched;
-}
-
 export const onUserDeletedCleanup = functions
   .runWith({ memory: '512MB', timeoutSeconds: 540 })
   .auth.user()
   .onDelete(async (user) => {
     const uid = user.uid;
     logInfo(`onUserDeletedCleanup: starting for ${uid}`);
-
-    const report = {
-      documents: 0,
-      anonymised: 0,
-      files: 0,
-      failures: [] as string[],
-    };
-
-    // 1. Documents keyed by the user id.
-    for (const collection of USER_KEYED_COLLECTIONS) {
-      try {
-        await db.collection(collection).doc(uid).delete();
-        report.documents += 1;
-      } catch (e) {
-        report.failures.push(`${collection}/${uid}`);
-        logError(`onUserDeletedCleanup: ${collection}/${uid} failed`, e);
-      }
-    }
-
-    // 1b. Follow graph, both directions. Also queued by onProfileDeleted, but
-    //     an account whose profile doc was already gone (or never written)
-    //     would never fire that trigger. One job per uid, so this is a no-op
-    //     when it is already queued.
-    try {
-      await enqueueFollowGraphCleanup(db, uid);
-    } catch (e) {
-      report.failures.push('follow_graph');
-      logError(`onUserDeletedCleanup: follow-graph cleanup enqueue for ${uid} failed`, e);
-    }
-
-    // 2. Documents owned via a field.
-    for (const { collection, field } of OWNED_BY_QUERY) {
-      try {
-        report.documents += await deleteByQuery(collection, field, uid);
-      } catch (e) {
-        report.failures.push(`${collection}.${field}`);
-        logError(`onUserDeletedCleanup: query delete ${collection}.${field} failed`, e);
-      }
-    }
-
-    // 3. Two-party content: anonymise rather than destroy.
-    for (const { collection, field } of ANONYMISE) {
-      try {
-        report.anonymised += await anonymiseByQuery(collection, field, uid);
-      } catch (e) {
-        report.failures.push(`anonymise ${collection}.${field}`);
-        logError(`onUserDeletedCleanup: anonymise ${collection} failed`, e);
-      }
-    }
-
-    // 4a. Identity documents: retained 30 days (fraud prevention), not deleted.
-    try {
-      report.files += await retainIdDocumentsOnAccountDeletion(uid);
-    } catch (e) {
-      report.failures.push(`id_documents/${uid}`);
-      logError(`onUserDeletedCleanup: ID document retention for ${uid} failed`, e);
-    }
-
-    // 4. Storage.
-    const bucket = admin.storage().bucket();
-    for (const prefix of USER_STORAGE_PREFIXES) {
-      try {
-        const [files] = await bucket.getFiles({ prefix: `${prefix}/${uid}/` });
-        await Promise.all(files.map((f) => f.delete()));
-        report.files += files.length;
-      } catch (e) {
-        report.failures.push(`storage:${prefix}/${uid}`);
-        logError(`onUserDeletedCleanup: storage ${prefix}/${uid} failed`, e);
-      }
-    }
-
-    // 5. A record that the deletion happened, with NO personal data in it.
-    //    Needed to answer "did you delete my account?" without keeping the
-    //    account. The uid is already gone from Auth and is not reversible to a
-    //    person on its own.
-    try {
-      await db.collection('deletion_receipts').doc(uid).set({
-        deletedAt: admin.firestore.Timestamp.now(),
-        documentsDeleted: report.documents,
-        messagesAnonymised: report.anonymised,
-        filesDeleted: report.files,
-        failures: report.failures,
-      });
-    } catch (e) {
-      logError('onUserDeletedCleanup: could not write receipt', e);
-    }
-
-    if (report.failures.length > 0) {
-      // Loud on purpose: a partial deletion is a compliance problem, not a
-      // cosmetic one, and somebody has to finish it by hand.
-      logError(
-        `onUserDeletedCleanup: INCOMPLETE for ${uid} — ${report.failures.length} failures`,
-        report.failures
-      );
-    } else {
+    const report = await sweepDeletedAccount(uid);
+    if (report.failures.length === 0) {
       logInfo(
-        `onUserDeletedCleanup: done for ${uid} — ${report.documents} docs, ` +
-          `${report.anonymised} messages anonymised, ${report.files} files`
+        `onUserDeletedCleanup: done for ${uid} - ${report.documents} docs, ` +
+          `${report.anonymised} messages anonymised, ${report.files} files, ` +
+          `${report.retained} finance records retained`
       );
     }
   });
