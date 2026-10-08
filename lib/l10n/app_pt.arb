@@ -5407,5 +5407,20 @@
   "cancelAnytimeBillingPortal": "Cancele a qualquer momento no portal de faturação",
   "billingPortalOpenFailed": "Não foi possível abrir o portal de faturação. Tente novamente.",
   "subscriptionAutoRenewInfoWeb": "As subscrições renovam-se automaticamente ao preço e com a periodicidade indicados até as cancelar. Cancele a qualquer momento no portal de faturação.",
-  "webBillingTitle": "Faturação e desistência"
+  "webBillingTitle": "Faturação e desistência",
+  "privacyDownloadDataTitle": "Transferir os meus dados",
+  "privacyDownloadDataSubtitle": "Uma cópia do seu perfil, definições, fotos e das mensagens que enviou (ficheiro ZIP)",
+  "privacyDownloadDataConfirmBody": "Vamos preparar um ficheiro ZIP com os dados que temos sobre si. Para proteger outras pessoas, as mensagens que lhe enviaram não são incluídas. Receberá um link de transferência aqui e por email. O link é válido durante 24 horas e pode pedir uma cópia por dia.",
+  "privacyDownloadDataConfirmButton": "Preparar os meus dados",
+  "privacyDownloadDataPreparing": "A preparar os seus dados. Isto pode demorar alguns minutos...",
+  "privacyDownloadDataReadyTitle": "Os seus dados estão prontos",
+  "privacyDownloadDataReadyBody": "Transfira agora o ficheiro ZIP. O link é válido durante 24 horas.",
+  "privacyDownloadDataReadyEmailed": "Também enviámos o link para o seu email.",
+  "privacyDownloadDataOpen": "Transferir",
+  "privacyDownloadDataRateLimited": "Pode transferir os seus dados uma vez a cada 24 horas. Use o link que lhe enviámos por email ou tente novamente amanhã.",
+  "privacyDownloadDataInProgress": "Os seus dados já estão a ser preparados. Aguarde alguns minutos.",
+  "privacyDownloadDataFailed": "Não foi possível preparar os seus dados. Tente novamente mais tarde.",
+  "reauthPasswordBody": "Por segurança, introduza novamente a sua palavra-passe para continuar.",
+  "reauthContinue": "Continuar",
+  "reauthSignInAgain": "Por segurança, termine a sessão e volte a iniciar sessão; depois tente novamente."
 }

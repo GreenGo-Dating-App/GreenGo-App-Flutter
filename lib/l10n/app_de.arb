@@ -5407,5 +5407,20 @@
   "cancelAnytimeBillingPortal": "Jederzeit im Abrechnungsportal kündigen",
   "billingPortalOpenFailed": "Das Abrechnungsportal konnte nicht geöffnet werden. Bitte versuche es erneut.",
   "subscriptionAutoRenewInfoWeb": "Abos verlängern sich automatisch zum angezeigten Preis und Intervall, bis du kündigst. Jederzeit im Abrechnungsportal kündbar.",
-  "webBillingTitle": "Abrechnung und Widerruf"
+  "webBillingTitle": "Abrechnung und Widerruf",
+  "privacyDownloadDataTitle": "Meine Daten herunterladen",
+  "privacyDownloadDataSubtitle": "Eine Kopie deines Profils, deiner Einstellungen, Fotos und der Nachrichten, die du gesendet hast (ZIP-Datei)",
+  "privacyDownloadDataConfirmBody": "Wir erstellen eine ZIP-Datei mit den Daten, die wir über dich speichern. Zum Schutz anderer Personen sind Nachrichten, die sie dir geschickt haben, nicht enthalten. Du erhältst hier und per E-Mail einen Download-Link. Der Link ist 24 Stunden gültig, und du kannst eine Kopie pro Tag anfordern.",
+  "privacyDownloadDataConfirmButton": "Meine Daten vorbereiten",
+  "privacyDownloadDataPreparing": "Deine Daten werden vorbereitet. Das kann einige Minuten dauern...",
+  "privacyDownloadDataReadyTitle": "Deine Daten sind bereit",
+  "privacyDownloadDataReadyBody": "Lade die ZIP-Datei jetzt herunter. Der Link ist 24 Stunden gültig.",
+  "privacyDownloadDataReadyEmailed": "Wir haben dir den Link auch per E-Mail geschickt.",
+  "privacyDownloadDataOpen": "Herunterladen",
+  "privacyDownloadDataRateLimited": "Du kannst deine Daten einmal alle 24 Stunden herunterladen. Nutze den Link aus unserer E-Mail oder versuche es morgen erneut.",
+  "privacyDownloadDataInProgress": "Deine Daten werden bereits vorbereitet. Bitte warte einige Minuten.",
+  "privacyDownloadDataFailed": "Wir konnten deine Daten nicht vorbereiten. Bitte versuche es später erneut.",
+  "reauthPasswordBody": "Gib zu deiner Sicherheit dein Passwort erneut ein, um fortzufahren.",
+  "reauthContinue": "Weiter",
+  "reauthSignInAgain": "Melde dich zu deiner Sicherheit ab und wieder an und versuche es dann erneut."
 }

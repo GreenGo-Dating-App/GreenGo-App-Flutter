@@ -8241,5 +8241,20 @@
   "cancelAnytimeBillingPortal": "Cancel anytime in the billing portal",
   "billingPortalOpenFailed": "Could not open the billing portal. Please try again.",
   "subscriptionAutoRenewInfoWeb": "Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.",
-  "webBillingTitle": "Billing and withdrawal"
+  "webBillingTitle": "Billing and withdrawal",
+  "privacyDownloadDataTitle": "Download my data",
+  "privacyDownloadDataSubtitle": "A copy of your profile, settings, photos and the messages you sent (ZIP file)",
+  "privacyDownloadDataConfirmBody": "We will prepare a ZIP file with the data we hold about you. To protect other people, messages they sent you are not included. You will get a download link here and by email. The link works for 24 hours and you can ask for one copy per day.",
+  "privacyDownloadDataConfirmButton": "Prepare my data",
+  "privacyDownloadDataPreparing": "Preparing your data. This can take a few minutes...",
+  "privacyDownloadDataReadyTitle": "Your data is ready",
+  "privacyDownloadDataReadyBody": "Download the ZIP file now. The link works for 24 hours.",
+  "privacyDownloadDataReadyEmailed": "We also sent the link to your email address.",
+  "privacyDownloadDataOpen": "Download",
+  "privacyDownloadDataRateLimited": "You can download your data once every 24 hours. Use the link we emailed you, or try again tomorrow.",
+  "privacyDownloadDataInProgress": "Your data is already being prepared. Please wait a few minutes.",
+  "privacyDownloadDataFailed": "We could not prepare your data. Please try again later.",
+  "reauthPasswordBody": "For your security, enter your password again to continue.",
+  "reauthContinue": "Continue",
+  "reauthSignInAgain": "For your security, please sign out and sign in again, then try once more."
 }

@@ -6587,10 +6587,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16575,21 +16572,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renova-se automaticamente a $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina a $date.';
   }
 
@@ -16613,6 +16602,61 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get webBillingTitle => 'Faturação e desistência';
+
+  @override
+  String get privacyDownloadDataTitle => 'Transferir os meus dados';
+
+  @override
+  String get privacyDownloadDataSubtitle =>
+      'Uma cópia do seu perfil, definições, fotos e das mensagens que enviou (ficheiro ZIP)';
+
+  @override
+  String get privacyDownloadDataConfirmBody =>
+      'Vamos preparar um ficheiro ZIP com os dados que temos sobre si. Para proteger outras pessoas, as mensagens que lhe enviaram não são incluídas. Receberá um link de transferência aqui e por email. O link é válido durante 24 horas e pode pedir uma cópia por dia.';
+
+  @override
+  String get privacyDownloadDataConfirmButton => 'Preparar os meus dados';
+
+  @override
+  String get privacyDownloadDataPreparing =>
+      'A preparar os seus dados. Isto pode demorar alguns minutos...';
+
+  @override
+  String get privacyDownloadDataReadyTitle => 'Os seus dados estão prontos';
+
+  @override
+  String get privacyDownloadDataReadyBody =>
+      'Transfira agora o ficheiro ZIP. O link é válido durante 24 horas.';
+
+  @override
+  String get privacyDownloadDataReadyEmailed =>
+      'Também enviámos o link para o seu email.';
+
+  @override
+  String get privacyDownloadDataOpen => 'Transferir';
+
+  @override
+  String get privacyDownloadDataRateLimited =>
+      'Pode transferir os seus dados uma vez a cada 24 horas. Use o link que lhe enviámos por email ou tente novamente amanhã.';
+
+  @override
+  String get privacyDownloadDataInProgress =>
+      'Os seus dados já estão a ser preparados. Aguarde alguns minutos.';
+
+  @override
+  String get privacyDownloadDataFailed =>
+      'Não foi possível preparar os seus dados. Tente novamente mais tarde.';
+
+  @override
+  String get reauthPasswordBody =>
+      'Por segurança, introduza novamente a sua palavra-passe para continuar.';
+
+  @override
+  String get reauthContinue => 'Continuar';
+
+  @override
+  String get reauthSignInAgain =>
+      'Por segurança, termine a sessão e volte a iniciar sessão; depois tente novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -23205,10 +23249,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -33189,21 +33230,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renovação automática em $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina em $date.';
   }
 
@@ -33227,4 +33260,59 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get webBillingTitle => 'Cobrança e desistência';
+
+  @override
+  String get privacyDownloadDataTitle => 'Baixar meus dados';
+
+  @override
+  String get privacyDownloadDataSubtitle =>
+      'Uma cópia do seu perfil, configurações, fotos e das mensagens que você enviou (arquivo ZIP)';
+
+  @override
+  String get privacyDownloadDataConfirmBody =>
+      'Vamos preparar um arquivo ZIP com os dados que mantemos sobre você. Para proteger outras pessoas, as mensagens que elas enviaram para você não são incluídas. Você receberá um link para download aqui e por email. O link vale por 24 horas e você pode pedir uma cópia por dia.';
+
+  @override
+  String get privacyDownloadDataConfirmButton => 'Preparar meus dados';
+
+  @override
+  String get privacyDownloadDataPreparing =>
+      'Preparando seus dados. Isso pode levar alguns minutos...';
+
+  @override
+  String get privacyDownloadDataReadyTitle => 'Seus dados estão prontos';
+
+  @override
+  String get privacyDownloadDataReadyBody =>
+      'Baixe o arquivo ZIP agora. O link vale por 24 horas.';
+
+  @override
+  String get privacyDownloadDataReadyEmailed =>
+      'Também enviamos o link para o seu email.';
+
+  @override
+  String get privacyDownloadDataOpen => 'Baixar';
+
+  @override
+  String get privacyDownloadDataRateLimited =>
+      'Você pode baixar seus dados uma vez a cada 24 horas. Use o link que enviamos por email ou tente novamente amanhã.';
+
+  @override
+  String get privacyDownloadDataInProgress =>
+      'Seus dados já estão sendo preparados. Aguarde alguns minutos.';
+
+  @override
+  String get privacyDownloadDataFailed =>
+      'Não foi possível preparar seus dados. Tente novamente mais tarde.';
+
+  @override
+  String get reauthPasswordBody =>
+      'Por segurança, digite sua senha novamente para continuar.';
+
+  @override
+  String get reauthContinue => 'Continuar';
+
+  @override
+  String get reauthSignInAgain =>
+      'Por segurança, saia da conta e entre novamente; depois tente de novo.';
 }

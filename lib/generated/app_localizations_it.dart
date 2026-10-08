@@ -6605,10 +6605,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Abbonamento $tierName attivo fino al $formattedDate$coinsText';
   }
 
@@ -16593,21 +16590,13 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price ogni $interval. Si rinnova automaticamente il $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price ogni $interval. Annullato; accesso fino al $date.';
   }
 
@@ -16631,4 +16620,59 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get webBillingTitle => 'Fatturazione e recesso';
+
+  @override
+  String get privacyDownloadDataTitle => 'Scarica i miei dati';
+
+  @override
+  String get privacyDownloadDataSubtitle =>
+      'Una copia del tuo profilo, delle impostazioni, delle foto e dei messaggi che hai inviato (file ZIP)';
+
+  @override
+  String get privacyDownloadDataConfirmBody =>
+      'Prepareremo un file ZIP con i dati che conserviamo su di te. Per proteggere le altre persone, i messaggi che ti hanno inviato non sono inclusi. Riceverai un link per il download qui e via email. Il link vale 24 ore e puoi richiedere una copia al giorno.';
+
+  @override
+  String get privacyDownloadDataConfirmButton => 'Prepara i miei dati';
+
+  @override
+  String get privacyDownloadDataPreparing =>
+      'Stiamo preparando i tuoi dati. Può richiedere qualche minuto...';
+
+  @override
+  String get privacyDownloadDataReadyTitle => 'I tuoi dati sono pronti';
+
+  @override
+  String get privacyDownloadDataReadyBody =>
+      'Scarica ora il file ZIP. Il link vale 24 ore.';
+
+  @override
+  String get privacyDownloadDataReadyEmailed =>
+      'Ti abbiamo inviato il link anche via email.';
+
+  @override
+  String get privacyDownloadDataOpen => 'Scarica';
+
+  @override
+  String get privacyDownloadDataRateLimited =>
+      'Puoi scaricare i tuoi dati una volta ogni 24 ore. Usa il link che ti abbiamo inviato via email o riprova domani.';
+
+  @override
+  String get privacyDownloadDataInProgress =>
+      'Stiamo già preparando i tuoi dati. Attendi qualche minuto.';
+
+  @override
+  String get privacyDownloadDataFailed =>
+      'Non è stato possibile preparare i tuoi dati. Riprova più tardi.';
+
+  @override
+  String get reauthPasswordBody =>
+      'Per la tua sicurezza, inserisci di nuovo la password per continuare.';
+
+  @override
+  String get reauthContinue => 'Continua';
+
+  @override
+  String get reauthSignInAgain =>
+      'Per la tua sicurezza, esci e accedi di nuovo, poi riprova.';
 }
