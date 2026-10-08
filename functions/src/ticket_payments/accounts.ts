@@ -95,7 +95,13 @@ export async function startStripeOnboarding(uid: string, data: any, email: strin
     return { url, accountId };
   } catch (e) {
     if (e instanceof HttpsError) throw e;
-    console.error('[tickets] stripe onboarding failed:', (e as Error)?.message);
+    const msg = (e as Error)?.message ?? '';
+    console.error('[tickets] stripe onboarding failed:', msg);
+    // The PLATFORM has not completed Stripe Connect sign-up (dashboard.stripe.com/connect):
+    // not a provider outage - tell the organizer it is not available yet.
+    if (/signed up for Connect|platform profile|Connect.*not.*enabled/i.test(msg)) {
+      fail('failed-precondition', 'payments_not_configured', { provider: 'stripe' });
+    }
     fail('unavailable', 'provider_unavailable', { provider: 'stripe' });
   }
 }
