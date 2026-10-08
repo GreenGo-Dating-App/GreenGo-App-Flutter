@@ -9663,5 +9663,2330 @@
   "wzExReviewDesc": "Check how guests will see it. Fix anything marked in red, then publish or save a draft.",
   "@wzExReviewDesc": {
     "description": "Create / edit wizard"
-  }
+  },
+  "verificationOrMethod": "or {method}",
+  "@verificationOrMethod": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "safetyAcademyTitle": "Safety Academy",
+  "safetyAcademyLearningModules": "Learning Modules",
+  "safetyAcademyModulesCompleted": "{completed} / {total} modules completed",
+  "@safetyAcademyModulesCompleted": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyChampionTitle": "Safety Champion",
+  "safetyAcademyChampionBody": "You completed all safety modules!",
+  "safetyAcademyLessonCompletedToast": "Lesson completed!",
+  "safetyAcademyNoLessons": "No lessons available yet.",
+  "safetyAcademyLessonsProgress": "{completed} / {total} lessons",
+  "@safetyAcademyLessonsProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyLessonXpWithQuiz": "+{xp} XP | Quiz",
+  "@safetyAcademyLessonXpWithQuiz": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyTakeQuiz": "Take Quiz",
+  "safetyAcademyCompleteLesson": "Complete Lesson",
+  "safetyAcademyCompleted": "Completed",
+  "safetyAcademyQuestionOf": "Question {current} of {total}",
+  "@safetyAcademyQuestionOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyCorrectCount": "{count} correct",
+  "@safetyAcademyCorrectCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyNextQuestion": "Next Question",
+  "safetyAcademySeeResults": "See Results",
+  "safetyAcademyGreatJob": "Great Job!",
+  "safetyAcademyKeepLearning": "Keep Learning!",
+  "safetyAcademyScoreSummary": "{correct} out of {total} correct",
+  "@safetyAcademyScoreSummary": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyPassingScore": "Passing score: {score}%",
+  "@safetyAcademyPassingScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyCompleteLessonXp": "Complete Lesson (+{xp} XP)",
+  "@safetyAcademyCompleteLessonXp": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
+  "safetyAcademyReviewLesson": "Review Lesson",
+  "safetyAcademyExitQuizTitle": "Exit Quiz?",
+  "safetyAcademyExitQuizBody": "Your progress will be lost.",
+  "countryNameAF": "Afghanistan",
+  "countryNameAL": "Albania",
+  "countryNameDZ": "Algeria",
+  "countryNameAD": "Andorra",
+  "countryNameAO": "Angola",
+  "countryNameAG": "Antigua and Barbuda",
+  "countryNameAR": "Argentina",
+  "countryNameAM": "Armenia",
+  "countryNameAU": "Australia",
+  "countryNameAT": "Austria",
+  "countryNameAZ": "Azerbaijan",
+  "countryNameBS": "Bahamas",
+  "countryNameBH": "Bahrain",
+  "countryNameBD": "Bangladesh",
+  "countryNameBB": "Barbados",
+  "countryNameBY": "Belarus",
+  "countryNameBE": "Belgium",
+  "countryNameBZ": "Belize",
+  "countryNameBJ": "Benin",
+  "countryNameBT": "Bhutan",
+  "countryNameBO": "Bolivia",
+  "countryNameBA": "Bosnia and Herzegovina",
+  "countryNameBW": "Botswana",
+  "countryNameBR": "Brazil",
+  "countryNameBN": "Brunei",
+  "countryNameBG": "Bulgaria",
+  "countryNameBF": "Burkina Faso",
+  "countryNameBI": "Burundi",
+  "countryNameCV": "Cabo Verde",
+  "countryNameKH": "Cambodia",
+  "countryNameCM": "Cameroon",
+  "countryNameCA": "Canada",
+  "countryNameCF": "Central African Republic",
+  "countryNameTD": "Chad",
+  "countryNameCL": "Chile",
+  "countryNameCN": "China",
+  "countryNameCO": "Colombia",
+  "countryNameKM": "Comoros",
+  "countryNameCG": "Congo",
+  "countryNameCD": "DR Congo",
+  "countryNameCR": "Costa Rica",
+  "countryNameHR": "Croatia",
+  "countryNameCU": "Cuba",
+  "countryNameCY": "Cyprus",
+  "countryNameCZ": "Czechia",
+  "countryNameDK": "Denmark",
+  "countryNameDJ": "Djibouti",
+  "countryNameDM": "Dominica",
+  "countryNameDO": "Dominican Republic",
+  "countryNameEC": "Ecuador",
+  "countryNameEG": "Egypt",
+  "countryNameSV": "El Salvador",
+  "countryNameGQ": "Equatorial Guinea",
+  "countryNameER": "Eritrea",
+  "countryNameEE": "Estonia",
+  "countryNameSZ": "Eswatini",
+  "countryNameET": "Ethiopia",
+  "countryNameFJ": "Fiji",
+  "countryNameFI": "Finland",
+  "countryNameFR": "France",
+  "countryNameGA": "Gabon",
+  "countryNameGM": "Gambia",
+  "countryNameGE": "Georgia",
+  "countryNameDE": "Germany",
+  "countryNameGH": "Ghana",
+  "countryNameGR": "Greece",
+  "countryNameGD": "Grenada",
+  "countryNameGT": "Guatemala",
+  "countryNameGN": "Guinea",
+  "countryNameGW": "Guinea-Bissau",
+  "countryNameGY": "Guyana",
+  "countryNameHT": "Haiti",
+  "countryNameHN": "Honduras",
+  "countryNameHU": "Hungary",
+  "countryNameIS": "Iceland",
+  "countryNameIN": "India",
+  "countryNameID": "Indonesia",
+  "countryNameIR": "Iran",
+  "countryNameIQ": "Iraq",
+  "countryNameIE": "Ireland",
+  "countryNameIL": "Israel",
+  "countryNameIT": "Italy",
+  "countryNameCI": "Ivory Coast",
+  "countryNameJM": "Jamaica",
+  "countryNameJP": "Japan",
+  "countryNameJO": "Jordan",
+  "countryNameKZ": "Kazakhstan",
+  "countryNameKE": "Kenya",
+  "countryNameKI": "Kiribati",
+  "countryNameXK": "Kosovo",
+  "countryNameKW": "Kuwait",
+  "countryNameKG": "Kyrgyzstan",
+  "countryNameLA": "Laos",
+  "countryNameLV": "Latvia",
+  "countryNameLB": "Lebanon",
+  "countryNameLS": "Lesotho",
+  "countryNameLR": "Liberia",
+  "countryNameLY": "Libya",
+  "countryNameLI": "Liechtenstein",
+  "countryNameLT": "Lithuania",
+  "countryNameLU": "Luxembourg",
+  "countryNameMG": "Madagascar",
+  "countryNameMW": "Malawi",
+  "countryNameMY": "Malaysia",
+  "countryNameMV": "Maldives",
+  "countryNameML": "Mali",
+  "countryNameMT": "Malta",
+  "countryNameMH": "Marshall Islands",
+  "countryNameMR": "Mauritania",
+  "countryNameMU": "Mauritius",
+  "countryNameMX": "Mexico",
+  "countryNameFM": "Micronesia",
+  "countryNameMD": "Moldova",
+  "countryNameMC": "Monaco",
+  "countryNameMN": "Mongolia",
+  "countryNameME": "Montenegro",
+  "countryNameMA": "Morocco",
+  "countryNameMZ": "Mozambique",
+  "countryNameMM": "Myanmar",
+  "countryNameNA": "Namibia",
+  "countryNameNR": "Nauru",
+  "countryNameNP": "Nepal",
+  "countryNameNL": "Netherlands",
+  "countryNameNZ": "New Zealand",
+  "countryNameNI": "Nicaragua",
+  "countryNameNE": "Niger",
+  "countryNameNG": "Nigeria",
+  "countryNameKP": "North Korea",
+  "countryNameMK": "North Macedonia",
+  "countryNameNO": "Norway",
+  "countryNameOM": "Oman",
+  "countryNamePK": "Pakistan",
+  "countryNamePW": "Palau",
+  "countryNamePS": "Palestine",
+  "countryNamePA": "Panama",
+  "countryNamePG": "Papua New Guinea",
+  "countryNamePY": "Paraguay",
+  "countryNamePE": "Peru",
+  "countryNamePH": "Philippines",
+  "countryNamePL": "Poland",
+  "countryNamePT": "Portugal",
+  "countryNameQA": "Qatar",
+  "countryNameRO": "Romania",
+  "countryNameRU": "Russia",
+  "countryNameRW": "Rwanda",
+  "countryNameKN": "Saint Kitts and Nevis",
+  "countryNameLC": "Saint Lucia",
+  "countryNameVC": "Saint Vincent and the Grenadines",
+  "countryNameWS": "Samoa",
+  "countryNameSM": "San Marino",
+  "countryNameST": "Sao Tome and Principe",
+  "countryNameSA": "Saudi Arabia",
+  "countryNameSN": "Senegal",
+  "countryNameRS": "Serbia",
+  "countryNameSC": "Seychelles",
+  "countryNameSL": "Sierra Leone",
+  "countryNameSG": "Singapore",
+  "countryNameSK": "Slovakia",
+  "countryNameSI": "Slovenia",
+  "countryNameSB": "Solomon Islands",
+  "countryNameSO": "Somalia",
+  "countryNameZA": "South Africa",
+  "countryNameKR": "South Korea",
+  "countryNameSS": "South Sudan",
+  "countryNameES": "Spain",
+  "countryNameLK": "Sri Lanka",
+  "countryNameSD": "Sudan",
+  "countryNameSR": "Suriname",
+  "countryNameSE": "Sweden",
+  "countryNameCH": "Switzerland",
+  "countryNameSY": "Syria",
+  "countryNameTW": "Taiwan",
+  "countryNameTJ": "Tajikistan",
+  "countryNameTZ": "Tanzania",
+  "countryNameTH": "Thailand",
+  "countryNameTL": "Timor-Leste",
+  "countryNameTG": "Togo",
+  "countryNameTO": "Tonga",
+  "countryNameTT": "Trinidad and Tobago",
+  "countryNameTN": "Tunisia",
+  "countryNameTR": "Turkey",
+  "countryNameTM": "Turkmenistan",
+  "countryNameTV": "Tuvalu",
+  "countryNameUG": "Uganda",
+  "countryNameUA": "Ukraine",
+  "countryNameAE": "United Arab Emirates",
+  "countryNameGB": "United Kingdom",
+  "countryNameUS": "United States",
+  "countryNameUY": "Uruguay",
+  "countryNameUZ": "Uzbekistan",
+  "countryNameVU": "Vanuatu",
+  "countryNameVA": "Vatican City",
+  "countryNameVE": "Venezuela",
+  "countryNameVN": "Vietnam",
+  "countryNameYE": "Yemen",
+  "countryNameZM": "Zambia",
+  "countryNameZW": "Zimbabwe",
+  "countryNameHK": "Hong Kong",
+  "countryNamePR": "Puerto Rico",
+  "spotsCatRestaurant": "Restaurant",
+  "spotsCatCafe": "Café",
+  "spotsCatCulturalSite": "Cultural site",
+  "spotsCatMarket": "Market",
+  "spotsCatViewpoint": "Viewpoint",
+  "spotsCreatedNamed": "Spot \"{name}\" created!",
+  "@spotsCreatedNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "spotsEmptyHint": "No cultural spots in this city yet. Be the first to add one!",
+  "spotsEmptyCategoryHint": "No spots in \"{category}\" in this city yet. Be the first to add one!",
+  "@spotsEmptyCategoryHint": {
+    "placeholders": {
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "spotsReviewCountParen": "{count, plural, =1{(1 review)} other{({count} reviews)}}",
+  "@spotsReviewCountParen": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "uexpLangHebrew": "Hebrew",
+  "uexpLangThai": "Thai",
+  "uexpLangVietnamese": "Vietnamese",
+  "safetyAcademyModCommunicationTitle": "Communication Skills",
+  "safetyAcademyModCommunicationDesc": "Build healthy communication habits including consent, boundaries, and active listening.",
+  "safetyAcademyLsnActiveListeningTitle": "Active Listening",
+  "safetyAcademyLsnActiveListeningS0": "Active listening is the foundation of meaningful connection. It goes beyond hearing words -- it is about fully engaging with your conversation partner and making them feel valued.",
+  "safetyAcademyLsnActiveListeningS1": "Ask follow-up questions based on what they said, not just what you want to talk about. This shows genuine interest.",
+  "safetyAcademyLsnActiveListeningS2": "Active Listening Techniques",
+  "safetyAcademyLsnActiveListeningS2I0": "Give your full attention (put your phone away)",
+  "safetyAcademyLsnActiveListeningS2I1": "Use verbal cues (\"I see\", \"That's interesting\")",
+  "safetyAcademyLsnActiveListeningS2I2": "Reflect back what you heard (\"So you're saying...\")",
+  "safetyAcademyLsnActiveListeningS2I3": "Ask open-ended follow-up questions",
+  "safetyAcademyLsnActiveListeningS2I4": "Avoid interrupting or planning your response while they talk",
+  "safetyAcademyLsnActiveListeningS3": "In text conversations, active listening means reading messages carefully, responding to what was actually said, and asking thoughtful questions rather than redirecting every topic to yourself.",
+  "safetyAcademyLsnActiveListeningQ0": "Your date shares a story about their recent trip. What is the best active listening response?",
+  "safetyAcademyLsnActiveListeningQ0O0": "\"Cool. So anyway, I went to...\"",
+  "safetyAcademyLsnActiveListeningQ0O1": "\"That sounds amazing! What was the highlight of the trip?\"",
+  "safetyAcademyLsnActiveListeningQ0O2": "\"I have been there too, let me tell you about it.\"",
+  "safetyAcademyLsnActiveListeningQ0O3": "\"Nice.\"",
+  "safetyAcademyLsnActiveListeningQ0Exp": "Asking a follow-up question about their experience shows genuine interest and keeps the conversation flowing.",
+  "safetyAcademyLsnActiveListeningQ1": "What should you avoid during active listening?",
+  "safetyAcademyLsnActiveListeningQ1O0": "Making eye contact",
+  "safetyAcademyLsnActiveListeningQ1O1": "Planning your response while the other person is still talking",
+  "safetyAcademyLsnActiveListeningQ1O2": "Nodding occasionally",
+  "safetyAcademyLsnActiveListeningQ1O3": "Asking follow-up questions",
+  "safetyAcademyLsnActiveListeningQ1Exp": "If you are planning your next response, you are not truly listening. Focus on understanding first, then respond.",
+  "safetyAcademyLsnBoundariesTitle": "Setting Boundaries",
+  "safetyAcademyLsnBoundariesS0": "Boundaries are the guidelines you set for how you want to be treated. They are essential for healthy relationships and protect your emotional, physical, and mental well-being.",
+  "safetyAcademyLsnBoundariesS1": "State boundaries clearly and early. For example: \"I prefer to get to know someone through chat before meeting in person\" or \"I am not comfortable sharing photos right now.\"",
+  "safetyAcademyLsnBoundariesS2": "If someone repeatedly pushes against a boundary you have set, this is a serious red flag regardless of their excuses.",
+  "safetyAcademyLsnBoundariesS3": "Healthy Boundary Examples",
+  "safetyAcademyLsnBoundariesS3I0": "Deciding when you are ready to share your phone number",
+  "safetyAcademyLsnBoundariesS3I1": "Setting limits on how late someone can message you",
+  "safetyAcademyLsnBoundariesS3I2": "Being clear about physical comfort levels on dates",
+  "safetyAcademyLsnBoundariesS3I3": "Saying no to plans that feel rushed or uncomfortable",
+  "safetyAcademyLsnBoundariesS3I4": "Taking breaks from conversation when you need space",
+  "safetyAcademyLsnBoundariesS4": "Remember: setting boundaries is not being difficult. It is self-respect. A partner who values you will appreciate and honor your boundaries.",
+  "safetyAcademyLsnBoundariesQ0": "You tell your match you are not comfortable sharing your number yet, and they keep asking. What does this indicate?",
+  "safetyAcademyLsnBoundariesQ0O0": "They are really interested in you",
+  "safetyAcademyLsnBoundariesQ0O1": "They are just eager to move the conversation",
+  "safetyAcademyLsnBoundariesQ0O2": "They are not respecting your stated boundary",
+  "safetyAcademyLsnBoundariesQ0O3": "It is normal dating behavior",
+  "safetyAcademyLsnBoundariesQ0Exp": "Repeatedly pushing against a clearly stated boundary is disrespectful and a red flag, regardless of the reason given.",
+  "safetyAcademyLsnBoundariesQ1": "When is the best time to communicate a boundary?",
+  "safetyAcademyLsnBoundariesQ1O0": "After it has been crossed multiple times",
+  "safetyAcademyLsnBoundariesQ1O1": "Clearly and early, before it becomes an issue",
+  "safetyAcademyLsnBoundariesQ1O2": "Only if the other person asks",
+  "safetyAcademyLsnBoundariesQ1O3": "Boundaries are not necessary in dating",
+  "safetyAcademyLsnBoundariesQ1Exp": "Stating boundaries early and clearly prevents misunderstandings and sets the tone for mutual respect.",
+  "safetyAcademyLsnConsentTitle": "Understanding Consent",
+  "safetyAcademyLsnConsentS0": "Consent is a clear, enthusiastic, and ongoing agreement. It applies to every aspect of dating -- from sharing personal information to physical intimacy.",
+  "safetyAcademyLsnConsentS1": "Consent is not just about physical contact. Sharing someone's photos, forwarding their messages, or sharing their personal details without permission also violates consent.",
+  "safetyAcademyLsnConsentS2": "Key Principles of Consent",
+  "safetyAcademyLsnConsentS2I0": "Freely given -- not pressured, coerced, or manipulated",
+  "safetyAcademyLsnConsentS2I1": "Reversible -- anyone can change their mind at any time",
+  "safetyAcademyLsnConsentS2I2": "Informed -- based on honest, complete information",
+  "safetyAcademyLsnConsentS2I3": "Enthusiastic -- look for active \"yes\", not just absence of \"no\"",
+  "safetyAcademyLsnConsentS2I4": "Specific -- consent to one thing does not mean consent to everything",
+  "safetyAcademyLsnConsentS3": "Silence or a lack of \"no\" does not equal consent. Always look for clear, positive agreement.",
+  "safetyAcademyLsnConsentS4": "Asking for consent is not awkward -- it shows maturity and respect. Simple check-ins like \"Are you comfortable with this?\" or \"Would you like to...?\" make a big difference.",
+  "safetyAcademyLsnConsentQ0": "Which statement best describes consent?",
+  "safetyAcademyLsnConsentQ0O0": "The absence of \"no\"",
+  "safetyAcademyLsnConsentQ0O1": "A clear, enthusiastic, and ongoing agreement",
+  "safetyAcademyLsnConsentQ0O2": "Something only needed for physical contact",
+  "safetyAcademyLsnConsentQ0O3": "Agreement given once that covers all future interactions",
+  "safetyAcademyLsnConsentQ0Exp": "Consent must be clear, enthusiastic, ongoing, and can be revoked at any time. It applies to all interactions.",
+  "safetyAcademyLsnConsentQ1": "Your date agreed to come to your place but seems uncomfortable after arriving. What should you do?",
+  "safetyAcademyLsnConsentQ1O0": "They agreed already, so continue as planned",
+  "safetyAcademyLsnConsentQ1O1": "Check in with them and offer to go somewhere else",
+  "safetyAcademyLsnConsentQ1O2": "Ignore the discomfort -- it is probably nerves",
+  "safetyAcademyLsnConsentQ1O3": "Tell them they should not have agreed if they did not want to come",
+  "safetyAcademyLsnConsentQ1Exp": "Consent is reversible. If someone seems uncomfortable, check in with them. Their well-being is more important than plans.",
+  "safetyAcademyModCulturalSensitivityTitle": "Cultural Sensitivity",
+  "safetyAcademyModCulturalSensitivityDesc": "Navigate cross-cultural dating with respect, curiosity, and awareness.",
+  "safetyAcademyLsnCulturalDosTitle": "Cross-Cultural Dating Do's",
+  "safetyAcademyLsnCulturalDosS0": "Dating someone from a different cultural background can be one of the most enriching experiences. Approach it with genuine curiosity, respect, and a willingness to learn.",
+  "safetyAcademyLsnCulturalDosS1": "Ask open-ended questions about their culture with genuine curiosity, not as a quiz. \"What traditions are important to your family?\" is much better than \"Do your people really do X?\"",
+  "safetyAcademyLsnCulturalDosS2": "Do's for Cross-Cultural Dating",
+  "safetyAcademyLsnCulturalDosS2I0": "Research basic cultural customs before a date",
+  "safetyAcademyLsnCulturalDosS2I1": "Show genuine interest in their background and traditions",
+  "safetyAcademyLsnCulturalDosS2I2": "Be open to trying new foods, activities, and experiences",
+  "safetyAcademyLsnCulturalDosS2I3": "Respect family dynamics that may differ from yours",
+  "safetyAcademyLsnCulturalDosS2I4": "Learn a few words or phrases in their language",
+  "safetyAcademyLsnCulturalDosS2I5": "Ask how they prefer to be addressed or introduced",
+  "safetyAcademyLsnCulturalDosS3": "Remember that every person is an individual first. Cultural awareness is a starting point, but get to know the person beyond stereotypes.",
+  "safetyAcademyLsnCulturalDosQ0": "What is the best way to learn about your date's culture?",
+  "safetyAcademyLsnCulturalDosQ0O0": "Make assumptions based on what you have seen in movies",
+  "safetyAcademyLsnCulturalDosQ0O1": "Ask thoughtful, open-ended questions with genuine curiosity",
+  "safetyAcademyLsnCulturalDosQ0O2": "Quiz them on cultural facts you read online",
+  "safetyAcademyLsnCulturalDosQ0O3": "Avoid the topic entirely to prevent offense",
+  "safetyAcademyLsnCulturalDosQ0Exp": "Genuine, respectful curiosity is the best approach. Let them share what is meaningful to them.",
+  "safetyAcademyLsnCulturalDosQ1": "Your date mentions a family tradition you do not understand. What should you do?",
+  "safetyAcademyLsnCulturalDosQ1O0": "Nod along and pretend you understand",
+  "safetyAcademyLsnCulturalDosQ1O1": "Ask them to explain more about it and why it matters",
+  "safetyAcademyLsnCulturalDosQ1O2": "Tell them your traditions are different",
+  "safetyAcademyLsnCulturalDosQ1O3": "Change the subject",
+  "safetyAcademyLsnCulturalDosQ1Exp": "Asking them to share more shows respect and genuine interest in their world.",
+  "safetyAcademyLsnCulturalDontsTitle": "Cross-Cultural Dating Don'ts",
+  "safetyAcademyLsnCulturalDontsS0": "Well-intentioned but uninformed comments can feel hurtful or dismissive. Understanding common pitfalls helps you navigate cross-cultural dating with grace.",
+  "safetyAcademyLsnCulturalDontsS1": "Never reduce someone to their ethnicity or nationality. Comments like \"I've always wanted to date a [nationality]\" or \"You're pretty for a [ethnicity]\" are hurtful, not complimentary.",
+  "safetyAcademyLsnCulturalDontsS2": "Don'ts for Cross-Cultural Dating",
+  "safetyAcademyLsnCulturalDontsS2I0": "Do not fetishize or exoticize their culture or appearance",
+  "safetyAcademyLsnCulturalDontsS2I1": "Do not assume they represent their entire culture",
+  "safetyAcademyLsnCulturalDontsS2I2": "Do not make jokes about their accent or language",
+  "safetyAcademyLsnCulturalDontsS2I3": "Do not pressure them to explain or defend cultural practices",
+  "safetyAcademyLsnCulturalDontsS2I4": "Do not compare them to stereotypes or media portrayals",
+  "safetyAcademyLsnCulturalDontsS2I5": "Do not dismiss cultural differences as unimportant",
+  "safetyAcademyLsnCulturalDontsS3": "If you make a cultural misstep, apologize sincerely, learn from it, and move on. Do not over-apologize to the point of making it about your feelings.",
+  "safetyAcademyLsnCulturalDontsQ0": "Which comment is culturally insensitive?",
+  "safetyAcademyLsnCulturalDontsQ0O0": "\"I would love to try the food from your country.\"",
+  "safetyAcademyLsnCulturalDontsQ0O1": "\"You are so exotic looking.\"",
+  "safetyAcademyLsnCulturalDontsQ0O2": "\"What language do you speak at home?\"",
+  "safetyAcademyLsnCulturalDontsQ0O3": "\"Tell me about a holiday your family celebrates.\"",
+  "safetyAcademyLsnCulturalDontsQ0Exp": "Calling someone \"exotic\" reduces them to their appearance and cultural background. It is objectifying, not complimentary.",
+  "safetyAcademyLsnCulturalDontsQ1": "You accidentally say something culturally insensitive. What is the best response?",
+  "safetyAcademyLsnCulturalDontsQ1O0": "Pretend it did not happen",
+  "safetyAcademyLsnCulturalDontsQ1O1": "Apologize sincerely, learn from it, and move on",
+  "safetyAcademyLsnCulturalDontsQ1O2": "Explain that you did not mean it that way",
+  "safetyAcademyLsnCulturalDontsQ1O3": "Over-apologize and keep bringing it up",
+  "safetyAcademyLsnCulturalDontsQ1Exp": "A sincere, brief apology followed by genuine effort to do better is the most mature response.",
+  "safetyAcademyLsnCulturalCommunicationTitle": "Communication Across Cultures",
+  "safetyAcademyLsnCulturalCommunicationS0": "Communication styles vary significantly across cultures. What feels direct and honest in one culture may come across as rude in another. Understanding these differences prevents misunderstandings.",
+  "safetyAcademyLsnCulturalCommunicationS1": "If something your date says or does confuses you, assume positive intent and ask for clarification rather than jumping to conclusions.",
+  "safetyAcademyLsnCulturalCommunicationS2": "Cultural Communication Differences to Be Aware Of",
+  "safetyAcademyLsnCulturalCommunicationS2I0": "Direct vs. indirect communication styles",
+  "safetyAcademyLsnCulturalCommunicationS2I1": "Personal space and physical touch norms",
+  "safetyAcademyLsnCulturalCommunicationS2I2": "Eye contact expectations (some cultures find direct eye contact disrespectful)",
+  "safetyAcademyLsnCulturalCommunicationS2I3": "Attitudes toward punctuality and time",
+  "safetyAcademyLsnCulturalCommunicationS2I4": "Gift-giving customs and expectations",
+  "safetyAcademyLsnCulturalCommunicationS2I5": "The role of humor and what topics are off-limits",
+  "safetyAcademyLsnCulturalCommunicationS3": "When in doubt, communicate openly. A simple \"I want to make sure I understand you correctly\" goes a long way in bridging cultural gaps.",
+  "safetyAcademyLsnCulturalCommunicationQ0": "Your date avoids direct eye contact. What should you think?",
+  "safetyAcademyLsnCulturalCommunicationQ0O0": "They are not interested in you",
+  "safetyAcademyLsnCulturalCommunicationQ0O1": "They are being dishonest",
+  "safetyAcademyLsnCulturalCommunicationQ0O2": "It may be a cultural norm -- do not assume negative intent",
+  "safetyAcademyLsnCulturalCommunicationQ0O3": "They are shy and need more encouragement",
+  "safetyAcademyLsnCulturalCommunicationQ0Exp": "In many cultures, avoiding direct eye contact is a sign of respect, not disinterest or dishonesty.",
+  "safetyAcademyLsnCulturalCommunicationQ1": "What is the best approach when cultural communication differences cause confusion?",
+  "safetyAcademyLsnCulturalCommunicationQ1O0": "Assume the worst",
+  "safetyAcademyLsnCulturalCommunicationQ1O1": "Ignore it and hope it resolves",
+  "safetyAcademyLsnCulturalCommunicationQ1O2": "Ask for clarification with an open mind",
+  "safetyAcademyLsnCulturalCommunicationQ1O3": "Tell them to communicate more like you do",
+  "safetyAcademyLsnCulturalCommunicationQ1Exp": "Open, non-judgmental communication is the best way to navigate cultural differences.",
+  "safetyAcademyModOnlineSafetyTitle": "Online Safety 101",
+  "safetyAcademyModOnlineSafetyDesc": "Learn to protect your identity and spot potential scams while dating online.",
+  "safetyAcademyLsnProfileProtectionTitle": "Profile Protection",
+  "safetyAcademyLsnProfileProtectionS0": "Your dating profile is your first impression, but it can also expose personal information if you are not careful. Learning to share the right amount keeps you safe while still showing your personality.",
+  "safetyAcademyLsnProfileProtectionS1": "Use a unique photo that is not on your other social media profiles. Reverse image searches can link accounts together.",
+  "safetyAcademyLsnProfileProtectionS2": "Never include your full name, workplace, home address, or phone number in your bio.",
+  "safetyAcademyLsnProfileProtectionS3": "Profile Safety Checklist",
+  "safetyAcademyLsnProfileProtectionS3I0": "Remove or crop out identifiable landmarks near your home",
+  "safetyAcademyLsnProfileProtectionS3I1": "Use a first name or nickname only",
+  "safetyAcademyLsnProfileProtectionS3I2": "Disable location metadata on uploaded photos",
+  "safetyAcademyLsnProfileProtectionS3I3": "Avoid photos in work uniforms or with visible ID badges",
+  "safetyAcademyLsnProfileProtectionS3I4": "Review your profile from a stranger's perspective",
+  "safetyAcademyLsnProfileProtectionS4": "A well-crafted profile balances openness with privacy. Share your interests and values, but save specifics like your daily routine or home neighborhood for later conversations.",
+  "safetyAcademyLsnProfileProtectionQ0": "Which of the following is safe to include in your dating profile?",
+  "safetyAcademyLsnProfileProtectionQ0O0": "Your home address",
+  "safetyAcademyLsnProfileProtectionQ0O1": "Your favorite hobbies",
+  "safetyAcademyLsnProfileProtectionQ0O2": "Your workplace name and department",
+  "safetyAcademyLsnProfileProtectionQ0O3": "Your phone number",
+  "safetyAcademyLsnProfileProtectionQ0Exp": "Sharing hobbies is great for conversation starters without revealing personal details that could be used to locate you.",
+  "safetyAcademyLsnProfileProtectionQ1": "Why should you use unique photos on your dating profile?",
+  "safetyAcademyLsnProfileProtectionQ1O0": "To look more attractive",
+  "safetyAcademyLsnProfileProtectionQ1O1": "Because dating apps compress images",
+  "safetyAcademyLsnProfileProtectionQ1O2": "To prevent reverse image searches linking to your other accounts",
+  "safetyAcademyLsnProfileProtectionQ1O3": "Unique photos get more likes",
+  "safetyAcademyLsnProfileProtectionQ1Exp": "Reverse image search tools can link your dating profile to social media, blogs, or professional pages, revealing your full identity.",
+  "safetyAcademyLsnProfileProtectionQ2": "What should you check before uploading a photo?",
+  "safetyAcademyLsnProfileProtectionQ2O0": "That it has a nice filter",
+  "safetyAcademyLsnProfileProtectionQ2O1": "That location metadata is removed and no identifiable landmarks are visible",
+  "safetyAcademyLsnProfileProtectionQ2O2": "That it was taken recently",
+  "safetyAcademyLsnProfileProtectionQ2O3": "That it is a selfie",
+  "safetyAcademyLsnProfileProtectionQ2Exp": "Photo metadata (EXIF data) can contain GPS coordinates. Landmarks like street signs or building names can also reveal your location.",
+  "safetyAcademyLsnScamRecognitionTitle": "Scam Recognition",
+  "safetyAcademyLsnScamRecognitionS0": "Romance scams cost victims billions worldwide each year. Scammers build emotional connections quickly and then exploit them for money or personal data. Knowing the signs can protect you.",
+  "safetyAcademyLsnScamRecognitionS1": "If someone asks for money, gift cards, cryptocurrency, or financial help early in a relationship -- no matter how compelling the story -- it is almost certainly a scam.",
+  "safetyAcademyLsnScamRecognitionS2": "Do a video call early on. Scammers avoid live video because it exposes fake identities. If someone repeatedly avoids video, be cautious.",
+  "safetyAcademyLsnScamRecognitionS3": "Common Scam Red Flags",
+  "safetyAcademyLsnScamRecognitionS3I0": "Profile seems too perfect (model-quality photos, dream career)",
+  "safetyAcademyLsnScamRecognitionS3I1": "Claims to be overseas military, oil rig worker, or international business person",
+  "safetyAcademyLsnScamRecognitionS3I2": "Falls in love unusually fast (\"love bombing\")",
+  "safetyAcademyLsnScamRecognitionS3I3": "Avoids video calls or meeting in person",
+  "safetyAcademyLsnScamRecognitionS3I4": "Requests money for emergencies, travel, or medical bills",
+  "safetyAcademyLsnScamRecognitionS3I5": "Asks you to move conversation to another platform quickly",
+  "safetyAcademyLsnScamRecognitionS4": "If you suspect a scam, stop communication immediately. Report the profile to the app and consider filing a report with your local authorities.",
+  "safetyAcademyLsnScamRecognitionQ0": "Someone you matched with a week ago says they love you and asks for money to visit you. What should you do?",
+  "safetyAcademyLsnScamRecognitionQ0O0": "Send the money -- they seem genuine",
+  "safetyAcademyLsnScamRecognitionQ0O1": "Ask for more details about why they need money",
+  "safetyAcademyLsnScamRecognitionQ0O2": "Recognize this as a classic romance scam pattern and report them",
+  "safetyAcademyLsnScamRecognitionQ0O3": "Offer to buy their plane ticket directly",
+  "safetyAcademyLsnScamRecognitionQ0Exp": "Declaring love very quickly and then requesting money is the hallmark pattern of romance scams. Report and block.",
+  "safetyAcademyLsnScamRecognitionQ1": "Which profession is commonly used as a cover story by scammers?",
+  "safetyAcademyLsnScamRecognitionQ1O0": "Local teacher",
+  "safetyAcademyLsnScamRecognitionQ1O1": "Overseas military deployment",
+  "safetyAcademyLsnScamRecognitionQ1O2": "Neighborhood barista",
+  "safetyAcademyLsnScamRecognitionQ1O3": "Nearby office worker",
+  "safetyAcademyLsnScamRecognitionQ1Exp": "Scammers often claim military deployment, offshore work, or international business to explain why they cannot meet in person or video call.",
+  "safetyAcademyLsnScamRecognitionQ2": "What is a good early step to verify someone is real?",
+  "safetyAcademyLsnScamRecognitionQ2O0": "Ask for their home address",
+  "safetyAcademyLsnScamRecognitionQ2O1": "Request a video call",
+  "safetyAcademyLsnScamRecognitionQ2O2": "Send them money to test their response",
+  "safetyAcademyLsnScamRecognitionQ2O3": "Search for them on all social media platforms",
+  "safetyAcademyLsnScamRecognitionQ2Exp": "A video call is one of the simplest ways to verify someone is who they claim to be. Scammers typically avoid live video at all costs.",
+  "safetyAcademyLsnRedFlagsTitle": "Behavioral Red Flags",
+  "safetyAcademyLsnRedFlagsS0": "Beyond scams, there are behavioral patterns that can indicate controlling, manipulative, or potentially dangerous individuals. Learning to spot these early can save you from harmful situations.",
+  "safetyAcademyLsnRedFlagsS1": "Someone who pressures you to share intimate photos, meet immediately, or isolate from friends is displaying controlling behavior.",
+  "safetyAcademyLsnRedFlagsS2": "Behavioral Red Flags",
+  "safetyAcademyLsnRedFlagsS2I0": "Excessive jealousy or possessiveness before even meeting",
+  "safetyAcademyLsnRedFlagsS2I1": "Pressuring for personal information or intimate content",
+  "safetyAcademyLsnRedFlagsS2I2": "Getting angry when you don't respond immediately",
+  "safetyAcademyLsnRedFlagsS2I3": "Disrespecting your stated boundaries",
+  "safetyAcademyLsnRedFlagsS2I4": "Making you feel guilty for spending time with others",
+  "safetyAcademyLsnRedFlagsS2I5": "Inconsistent stories about themselves",
+  "safetyAcademyLsnRedFlagsS3": "Trust your gut. If a conversation makes you uncomfortable, you do not owe anyone an explanation. It is always okay to stop responding, block, or report.",
+  "safetyAcademyLsnRedFlagsS4": "Healthy connections are built on mutual respect. Someone who truly cares about you will respect your pace, your boundaries, and your autonomy.",
+  "safetyAcademyLsnRedFlagsQ0": "Your match gets upset when you take an hour to reply. What does this indicate?",
+  "safetyAcademyLsnRedFlagsQ0O0": "They really like you",
+  "safetyAcademyLsnRedFlagsQ0O1": "They are enthusiastic about the conversation",
+  "safetyAcademyLsnRedFlagsQ0O2": "Potentially controlling behavior",
+  "safetyAcademyLsnRedFlagsQ0O3": "They are just anxious",
+  "safetyAcademyLsnRedFlagsQ0Exp": "Getting angry about response times before you have even met is a sign of controlling behavior. Everyone is entitled to their own schedule.",
+  "safetyAcademyLsnRedFlagsQ1": "What is the best response when someone pressures you for intimate photos?",
+  "safetyAcademyLsnRedFlagsQ1O0": "Send them to keep the peace",
+  "safetyAcademyLsnRedFlagsQ1O1": "Firmly decline, and if they persist, block and report them",
+  "safetyAcademyLsnRedFlagsQ1O2": "Ask them to send theirs first",
+  "safetyAcademyLsnRedFlagsQ1O3": "Promise to send them later",
+  "safetyAcademyLsnRedFlagsQ1Exp": "You should never feel pressured to share intimate content. A respectful person will accept your decision without pushing.",
+  "safetyAcademyLsnRedFlagsQ2": "Which is a healthy sign in early conversations?",
+  "safetyAcademyLsnRedFlagsQ2O0": "They want to know your exact daily schedule",
+  "safetyAcademyLsnRedFlagsQ2O1": "They respect your pace and boundaries",
+  "safetyAcademyLsnRedFlagsQ2O2": "They say \"I love you\" within the first few days",
+  "safetyAcademyLsnRedFlagsQ2O3": "They ask you to stop talking to other people on the app",
+  "safetyAcademyLsnRedFlagsQ2Exp": "Respect for pace and boundaries is the foundation of a healthy connection. Everything else in this list is a potential red flag.",
+  "safetyAcademyModEmotionalIntelligenceTitle": "Emotional Intelligence",
+  "safetyAcademyModEmotionalIntelligenceDesc": "Understand attachment styles, love languages, and build emotional awareness.",
+  "safetyAcademyLsnAttachmentStylesTitle": "Attachment Styles",
+  "safetyAcademyLsnAttachmentStylesS0": "Attachment theory explains how our early relationships shape the way we connect with romantic partners. Understanding your attachment style can help you build healthier relationships.",
+  "safetyAcademyLsnAttachmentStylesS1": "The four main attachment styles are: Secure, Anxious, Avoidant, and Disorganized. Most people are a mix, and styles can change with awareness and effort.",
+  "safetyAcademyLsnAttachmentStylesS2": "The Four Attachment Styles",
+  "safetyAcademyLsnAttachmentStylesS2I0": "Secure: Comfortable with closeness, trusting, communicative",
+  "safetyAcademyLsnAttachmentStylesS2I1": "Anxious: Craves closeness but fears rejection, may need extra reassurance",
+  "safetyAcademyLsnAttachmentStylesS2I2": "Avoidant: Values independence highly, may pull away when things get close",
+  "safetyAcademyLsnAttachmentStylesS2I3": "Disorganized: Mix of anxious and avoidant, often from difficult early experiences",
+  "safetyAcademyLsnAttachmentStylesS3": "Knowing your style helps you understand your reactions. If you tend toward anxious attachment, you might recognize that your urge to text repeatedly comes from fear, not genuine need. If avoidant, you might notice your tendency to shut down when emotions run high.",
+  "safetyAcademyLsnAttachmentStylesS4": "Understanding your partner's attachment style helps you respond with empathy rather than frustration. An avoidant partner pulling away is not rejection -- it is their coping mechanism.",
+  "safetyAcademyLsnAttachmentStylesQ0": "Your partner needs a lot of reassurance and gets anxious when you do not respond quickly. Which attachment style might this reflect?",
+  "safetyAcademyLsnAttachmentStylesQ0O0": "Secure",
+  "safetyAcademyLsnAttachmentStylesQ0O1": "Anxious",
+  "safetyAcademyLsnAttachmentStylesQ0O2": "Avoidant",
+  "safetyAcademyLsnAttachmentStylesQ0O3": "Disorganized",
+  "safetyAcademyLsnAttachmentStylesQ0Exp": "Anxious attachment is characterized by a strong desire for closeness and fear of rejection, often leading to a need for frequent reassurance.",
+  "safetyAcademyLsnAttachmentStylesQ1": "What is the healthiest response to recognizing your attachment patterns?",
+  "safetyAcademyLsnAttachmentStylesQ1O0": "Accept that they cannot change",
+  "safetyAcademyLsnAttachmentStylesQ1O1": "Blame your parents for your style",
+  "safetyAcademyLsnAttachmentStylesQ1O2": "Use awareness to communicate better and work toward secure attachment",
+  "safetyAcademyLsnAttachmentStylesQ1O3": "Only date people with the same style",
+  "safetyAcademyLsnAttachmentStylesQ1Exp": "Attachment styles can evolve with self-awareness, communication, and sometimes professional support.",
+  "safetyAcademyLsnAttachmentStylesQ2": "Someone with an avoidant attachment style might:",
+  "safetyAcademyLsnAttachmentStylesQ2O0": "Send multiple texts if you do not reply quickly",
+  "safetyAcademyLsnAttachmentStylesQ2O1": "Pull away or shut down when the relationship gets emotionally close",
+  "safetyAcademyLsnAttachmentStylesQ2O2": "Always want to spend every moment together",
+  "safetyAcademyLsnAttachmentStylesQ2O3": "Be very open about their feelings from the start",
+  "safetyAcademyLsnAttachmentStylesQ2Exp": "Avoidant attachment often manifests as pulling away when emotional intimacy increases, as a self-protection mechanism.",
+  "safetyAcademyLsnLoveLanguagesTitle": "Love Languages",
+  "safetyAcademyLsnLoveLanguagesS0": "The concept of love languages, popularized by Dr. Gary Chapman, suggests that people express and receive love in five primary ways. Understanding yours and your partner's can transform your relationship.",
+  "safetyAcademyLsnLoveLanguagesS1": "The Five Love Languages",
+  "safetyAcademyLsnLoveLanguagesS1I0": "Words of Affirmation: Verbal compliments, encouragement, and expressions of love",
+  "safetyAcademyLsnLoveLanguagesS1I1": "Quality Time: Undivided attention and presence",
+  "safetyAcademyLsnLoveLanguagesS1I2": "Receiving Gifts: Thoughtful tokens of affection (not about cost)",
+  "safetyAcademyLsnLoveLanguagesS1I3": "Acts of Service: Actions that make life easier or show care",
+  "safetyAcademyLsnLoveLanguagesS1I4": "Physical Touch: Hugs, holding hands, and other physical affection",
+  "safetyAcademyLsnLoveLanguagesS2": "Pay attention to how your date expresses affection -- that is likely their love language. If they always compliment you, they probably value words of affirmation.",
+  "safetyAcademyLsnLoveLanguagesS3": "Mismatched love languages are common and manageable. The key is communication: tell your partner what makes you feel loved, and ask them the same question.",
+  "safetyAcademyLsnLoveLanguagesQ0": "Your partner always makes time for you and puts their phone away during conversations. Their love language is likely:",
+  "safetyAcademyLsnLoveLanguagesQ0O0": "Words of Affirmation",
+  "safetyAcademyLsnLoveLanguagesQ0O1": "Quality Time",
+  "safetyAcademyLsnLoveLanguagesQ0O2": "Receiving Gifts",
+  "safetyAcademyLsnLoveLanguagesQ0O3": "Physical Touch",
+  "safetyAcademyLsnLoveLanguagesQ0Exp": "Giving undivided attention and prioritizing presence is the hallmark of Quality Time as a love language.",
+  "safetyAcademyLsnLoveLanguagesQ1": "You value words of affirmation but your partner shows love through acts of service. What should you do?",
+  "safetyAcademyLsnLoveLanguagesQ1O0": "Accept that you are incompatible",
+  "safetyAcademyLsnLoveLanguagesQ1O1": "Tell your partner what you need and learn to recognize their style of showing love",
+  "safetyAcademyLsnLoveLanguagesQ1O2": "Change your love language to match theirs",
+  "safetyAcademyLsnLoveLanguagesQ1O3": "Ignore the difference",
+  "safetyAcademyLsnLoveLanguagesQ1Exp": "Communication is key. Express what you need while also learning to appreciate how your partner shows love.",
+  "safetyAcademyLsnEmotionalAwarenessTitle": "Emotional Awareness",
+  "safetyAcademyLsnEmotionalAwarenessS0": "Emotional awareness is the ability to recognize, understand, and manage your own emotions while also being attuned to others'. In dating, this skill prevents reactive decisions and builds deeper connections.",
+  "safetyAcademyLsnEmotionalAwarenessS1": "Before responding to a frustrating message, pause and identify what you are actually feeling. Are you hurt? Anxious? Disappointed? Naming the emotion reduces its power.",
+  "safetyAcademyLsnEmotionalAwarenessS2": "Building Emotional Awareness",
+  "safetyAcademyLsnEmotionalAwarenessS2I0": "Practice naming your emotions throughout the day",
+  "safetyAcademyLsnEmotionalAwarenessS2I1": "Notice physical sensations tied to emotions (tight chest = anxiety)",
+  "safetyAcademyLsnEmotionalAwarenessS2I2": "Journal about dating experiences and your emotional reactions",
+  "safetyAcademyLsnEmotionalAwarenessS2I3": "Distinguish between reacting (impulsive) and responding (thoughtful)",
+  "safetyAcademyLsnEmotionalAwarenessS2I4": "Develop a pause habit: wait before sending emotional messages",
+  "safetyAcademyLsnEmotionalAwarenessS3": "Emotional awareness does not mean suppressing emotions. It means understanding them well enough to choose how you act on them.",
+  "safetyAcademyLsnEmotionalAwarenessS4": "When you can say \"I felt hurt when you canceled our plans\" instead of \"You obviously do not care about me,\" you transform conflict into connection. That is emotional intelligence in action.",
+  "safetyAcademyLsnEmotionalAwarenessQ0": "Your date cancels plans last minute and you feel angry. What is the emotionally aware response?",
+  "safetyAcademyLsnEmotionalAwarenessQ0O0": "Send an angry message immediately",
+  "safetyAcademyLsnEmotionalAwarenessQ0O1": "Ghost them as punishment",
+  "safetyAcademyLsnEmotionalAwarenessQ0O2": "Pause, identify your feelings, then communicate calmly how the cancellation made you feel",
+  "safetyAcademyLsnEmotionalAwarenessQ0O3": "Pretend you do not care",
+  "safetyAcademyLsnEmotionalAwarenessQ0Exp": "Pausing to identify your emotions and then communicating them calmly leads to better outcomes than reacting impulsively.",
+  "safetyAcademyLsnEmotionalAwarenessQ1": "What does emotional awareness mean?",
+  "safetyAcademyLsnEmotionalAwarenessQ1O0": "Never showing emotions",
+  "safetyAcademyLsnEmotionalAwarenessQ1O1": "Always being happy",
+  "safetyAcademyLsnEmotionalAwarenessQ1O2": "Recognizing and understanding emotions to choose how to act on them",
+  "safetyAcademyLsnEmotionalAwarenessQ1O3": "Expressing every emotion as soon as you feel it",
+  "safetyAcademyLsnEmotionalAwarenessQ1Exp": "Emotional awareness is about recognition and understanding, which enables thoughtful responses rather than impulsive reactions.",
+  "safetyAcademyLsnEmotionalAwarenessQ2": "Which is an example of \"responding\" versus \"reacting\"?",
+  "safetyAcademyLsnEmotionalAwarenessQ2O0": "Typing an angry reply the moment you feel upset",
+  "safetyAcademyLsnEmotionalAwarenessQ2O1": "Waiting, reflecting on your feelings, then crafting a thoughtful message",
+  "safetyAcademyLsnEmotionalAwarenessQ2O2": "Ignoring the message entirely",
+  "safetyAcademyLsnEmotionalAwarenessQ2O3": "Venting to friends before replying",
+  "safetyAcademyLsnEmotionalAwarenessQ2Exp": "Responding involves a deliberate pause for reflection, while reacting is driven by immediate emotion.",
+  "safetyAcademyModFirstMeetingTitle": "First Meeting Guide",
+  "safetyAcademyModFirstMeetingDesc": "Essential tips for safe, confident first dates with people you meet online.",
+  "safetyAcademyLsnPublicPlacesTitle": "Meeting in Public Places",
+  "safetyAcademyLsnPublicPlacesS0": "Meeting someone from a dating app for the first time is exciting, but safety should always come first. Choosing the right location sets the foundation for a comfortable experience.",
+  "safetyAcademyLsnPublicPlacesS1": "Choose a busy cafe, restaurant, or public park for your first meeting. Familiarity with the venue gives you an advantage -- you know the exits and the staff.",
+  "safetyAcademyLsnPublicPlacesS2": "Never agree to meet at someone's home, a secluded area, or a place you are unfamiliar with for a first date.",
+  "safetyAcademyLsnPublicPlacesS3": "First Meeting Location Checklist",
+  "safetyAcademyLsnPublicPlacesS3I0": "Choose a public, well-lit location",
+  "safetyAcademyLsnPublicPlacesS3I1": "Pick somewhere you are familiar with",
+  "safetyAcademyLsnPublicPlacesS3I2": "Ensure the venue has other people around",
+  "safetyAcademyLsnPublicPlacesS3I3": "Check that you have phone signal at the venue",
+  "safetyAcademyLsnPublicPlacesS3I4": "Have a backup plan if you need to leave quickly",
+  "safetyAcademyLsnPublicPlacesQ0": "Which is the safest first date location?",
+  "safetyAcademyLsnPublicPlacesQ0O0": "Their apartment",
+  "safetyAcademyLsnPublicPlacesQ0O1": "A busy downtown cafe",
+  "safetyAcademyLsnPublicPlacesQ0O2": "A remote hiking trail",
+  "safetyAcademyLsnPublicPlacesQ0O3": "Your home",
+  "safetyAcademyLsnPublicPlacesQ0Exp": "A busy cafe is public, has staff around, and you can leave easily if needed.",
+  "safetyAcademyLsnPublicPlacesQ1": "Why should you pick a venue you are familiar with?",
+  "safetyAcademyLsnPublicPlacesQ1O0": "So you can impress your date with recommendations",
+  "safetyAcademyLsnPublicPlacesQ1O1": "Because you know the exits, staff, and surroundings",
+  "safetyAcademyLsnPublicPlacesQ1O2": "It is cheaper if you know the menu",
+  "safetyAcademyLsnPublicPlacesQ1O3": "There is no real advantage",
+  "safetyAcademyLsnPublicPlacesQ1Exp": "Knowing the venue means you know how to leave quickly and who to ask for help if you feel uncomfortable.",
+  "safetyAcademyLsnSharingPlansTitle": "Sharing Your Plans",
+  "safetyAcademyLsnSharingPlansS0": "Letting someone you trust know about your date is one of the simplest and most effective safety measures. A safety buddy can check in on you and knows where to look if something goes wrong.",
+  "safetyAcademyLsnSharingPlansS1": "Share your date's profile, the venue, and your expected return time with a trusted friend. Set up a check-in call 30 minutes into the date.",
+  "safetyAcademyLsnSharingPlansS2": "Information to Share with Your Safety Buddy",
+  "safetyAcademyLsnSharingPlansS2I0": "Screenshot of your date's profile",
+  "safetyAcademyLsnSharingPlansS2I1": "Name (or username) of the person you are meeting",
+  "safetyAcademyLsnSharingPlansS2I2": "Date, time, and venue of the meeting",
+  "safetyAcademyLsnSharingPlansS2I3": "Your expected return time",
+  "safetyAcademyLsnSharingPlansS2I4": "Agreed check-in time (e.g., a call or text)",
+  "safetyAcademyLsnSharingPlansS3": "You can also use GreenGo's Share My Date feature to easily send date details to a trusted contact. There is no shame in being safe -- your date should understand.",
+  "safetyAcademyLsnSharingPlansQ0": "What should you share with a trusted friend before a first date?",
+  "safetyAcademyLsnSharingPlansQ0O0": "Only the venue name",
+  "safetyAcademyLsnSharingPlansQ0O1": "Your date's profile, venue, time, and expected return",
+  "safetyAcademyLsnSharingPlansQ0O2": "Nothing -- it is private",
+  "safetyAcademyLsnSharingPlansQ0O3": "Just a text saying \"going on a date\"",
+  "safetyAcademyLsnSharingPlansQ0Exp": "The more information your safety buddy has, the better they can help if something goes wrong.",
+  "safetyAcademyLsnSharingPlansQ1": "When is a good time to set up a check-in call?",
+  "safetyAcademyLsnSharingPlansQ1O0": "After the date is over",
+  "safetyAcademyLsnSharingPlansQ1O1": "About 30 minutes into the date",
+  "safetyAcademyLsnSharingPlansQ1O2": "A check-in is not necessary",
+  "safetyAcademyLsnSharingPlansQ1O3": "Before you leave for the date",
+  "safetyAcademyLsnSharingPlansQ1Exp": "A check-in 30 minutes in gives you enough time to assess the situation and an easy out if you feel uncomfortable.",
+  "safetyAcademyLsnTransportSafetyTitle": "Transport Safety",
+  "safetyAcademyLsnTransportSafetyS0": "How you get to and from a date matters just as much as where you meet. Maintaining control over your transportation ensures you can leave whenever you want.",
+  "safetyAcademyLsnTransportSafetyS1": "Never let your date pick you up from your home for the first meeting. This reveals your address and makes you dependent on them for a ride home.",
+  "safetyAcademyLsnTransportSafetyS2": "Drive yourself, use ride-sharing, or take public transport. Keep your phone charged and have enough money for an emergency ride home.",
+  "safetyAcademyLsnTransportSafetyS3": "Transport Safety Checklist",
+  "safetyAcademyLsnTransportSafetyS3I0": "Arrange your own transportation",
+  "safetyAcademyLsnTransportSafetyS3I1": "Keep your phone fully charged",
+  "safetyAcademyLsnTransportSafetyS3I2": "Have emergency ride money available",
+  "safetyAcademyLsnTransportSafetyS3I3": "Share your live location with a trusted contact",
+  "safetyAcademyLsnTransportSafetyS3I4": "Park in a well-lit area if driving",
+  "safetyAcademyLsnTransportSafetyS3I5": "Do not leave drinks unattended if you step away",
+  "safetyAcademyLsnTransportSafetyQ0": "Why should you arrange your own transportation for a first date?",
+  "safetyAcademyLsnTransportSafetyQ0O0": "To save money on gas",
+  "safetyAcademyLsnTransportSafetyQ0O1": "So you can leave whenever you want and your address stays private",
+  "safetyAcademyLsnTransportSafetyQ0O2": "To avoid traffic",
+  "safetyAcademyLsnTransportSafetyQ0O3": "Because parking is easier alone",
+  "safetyAcademyLsnTransportSafetyQ0Exp": "Having your own transport means you are not dependent on your date and your home address remains private.",
+  "safetyAcademyLsnTransportSafetyQ1": "Your date offers to pick you up from home. What should you do?",
+  "safetyAcademyLsnTransportSafetyQ1O0": "Accept -- it is a nice gesture",
+  "safetyAcademyLsnTransportSafetyQ1O1": "Politely decline and suggest meeting at the venue instead",
+  "safetyAcademyLsnTransportSafetyQ1O2": "Give them a nearby intersection instead of your exact address",
+  "safetyAcademyLsnTransportSafetyQ1O3": "Accept but have a friend watch from the window",
+  "safetyAcademyLsnTransportSafetyQ1Exp": "Meeting at the venue keeps your address private and ensures you have independent transportation.",
+  "gamificationAchFirstMatchName": "First Match",
+  "gamificationAchFirstMatchDesc": "Get your first mutual like",
+  "gamificationAchConversationStarterName": "Conversation Starter",
+  "gamificationAchConversationStarterDesc": "Initiate 10 conversations",
+  "gamificationAchVideoChampionName": "Video Champion",
+  "gamificationAchVideoChampionDesc": "Complete 5 video calls",
+  "gamificationAchProfileMasterName": "Profile Master",
+  "gamificationAchProfileMasterDesc": "Complete all profile sections 100%",
+  "gamificationAchGlobeTrotterName": "Globe Trotter",
+  "gamificationAchGlobeTrotterDesc": "Match with users from 10+ countries",
+  "gamificationAchGenerousHeartName": "Generous Heart",
+  "gamificationAchGenerousHeartDesc": "Gift coins to matches",
+  "gamificationAchDailyDedicationName": "Daily Dedication",
+  "gamificationAchDailyDedicationDesc": "7-day consecutive login streak",
+  "gamificationAchSuperStarName": "Super Star",
+  "gamificationAchSuperStarDesc": "Receive 50+ super likes",
+  "gamificationAchSocialButterflyName": "Social Butterfly",
+  "gamificationAchSocialButterflyDesc": "Maintain 20+ active conversations",
+  "gamificationAchPerfectWeekName": "Perfect Week",
+  "gamificationAchPerfectWeekDesc": "Complete all daily challenges for 7 days",
+  "gamificationAchEarlyBirdName": "Early Bird",
+  "gamificationAchEarlyBirdDesc": "Send messages before 9 AM on 10 days",
+  "gamificationAchNightOwlName": "Night Owl",
+  "gamificationAchNightOwlDesc": "Send messages after 10 PM on 10 days",
+  "gamificationAchCenturionName": "Centurion",
+  "gamificationAchCenturionDesc": "Reach 100 total matches",
+  "gamificationAchSpeedDaterName": "Speed Dater",
+  "gamificationAchSpeedDaterDesc": "Match with 10 people in one day",
+  "gamificationAchPhotoCollectorName": "Photo Collector",
+  "gamificationAchPhotoCollectorDesc": "Add 6 photos to your profile",
+  "gamificationAchTrendSetterName": "Trend Setter",
+  "gamificationAchTrendSetterDesc": "Be among the first 1000 users",
+  "gamificationAchVerifiedName": "Verified",
+  "gamificationAchVerifiedDesc": "Complete photo verification",
+  "gamificationAchPremiumMemberName": "Premium Member",
+  "gamificationAchPremiumMemberDesc": "Subscribe to Silver or Gold tier",
+  "gamificationAchCoinCollectorName": "Coin Collector",
+  "gamificationAchCoinCollectorDesc": "Accumulate 1000 coins",
+  "gamificationAchMonthlyStreakName": "Monthly Dedication",
+  "gamificationAchMonthlyStreakDesc": "30-day consecutive login streak",
+  "gamificationAchVocabularyBeginnerName": "Word Explorer",
+  "gamificationAchVocabularyBeginnerDesc": "Use 100 unique words in chat",
+  "gamificationAchVocabularyIntermediateName": "Wordsmith",
+  "gamificationAchVocabularyIntermediateDesc": "Use 500 unique words in chat",
+  "gamificationAchVocabularyAdvancedName": "Vocabulary Expert",
+  "gamificationAchVocabularyAdvancedDesc": "Use 1000 unique words in chat",
+  "gamificationAchVocabularyMasterName": "Vocabulary Master",
+  "gamificationAchVocabularyMasterDesc": "Use 5000 unique words in chat",
+  "gamificationAchRareWordHunterName": "Rare Word Hunter",
+  "gamificationAchRareWordHunterDesc": "Use 50 rare words (frequency score below 50)",
+  "gamificationRewardCoinsPlus": "{count, plural, =1{+1 coin} other{+{count} coins}}",
+  "@gamificationRewardCoinsPlus": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationRewardBadgePlus": "{count, plural, =1{+1 badge} other{+{count} badges}}",
+  "@gamificationRewardBadgePlus": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationRewardBoostPlus": "{count, plural, =1{+1 boost} other{+{count} boosts}}",
+  "@gamificationRewardBoostPlus": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationRewardWithValue": "Reward: {reward}",
+  "@gamificationRewardWithValue": {
+    "placeholders": {
+      "reward": {
+        "type": "String"
+      }
+    }
+  },
+  "gamificationRewardBadge": "Badge",
+  "gamificationVip": "VIP",
+  "gamificationRewardsTitle": "Rewards",
+  "gamificationXpToNextLevel": "{xp} XP to next level",
+  "@gamificationXpToNextLevel": {
+    "placeholders": {
+      "xp": {
+        "type": "String"
+      }
+    }
+  },
+  "gamificationStreakDayUnitOne": "day",
+  "gamificationStreakDayUnitOther": "days",
+  "gamificationOnFire": "🎉 On Fire!",
+  "gamificationUserFallback": "User {id}",
+  "@gamificationUserFallback": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "gamificationNoticeAchievementUnlocked": "{name} unlocked! {reward}",
+  "@gamificationNoticeAchievementUnlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "reward": {
+        "type": "String"
+      }
+    }
+  },
+  "gamificationNoticeAchievementReady": "Achievement complete! Ready to unlock: {name}",
+  "@gamificationNoticeAchievementReady": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "gamificationNoticeLevelUp": "Level up! You reached level {level}!",
+  "@gamificationNoticeLevelUp": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationNoticeVip": "Congratulations! You've achieved VIP status! 👑",
+  "gamificationNoticeLevelRewardsClaimed": "Level {level} rewards claimed! {rewards}",
+  "@gamificationNoticeLevelRewardsClaimed": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      },
+      "rewards": {
+        "type": "String"
+      }
+    }
+  },
+  "gamificationNoticeChallengeRewardsClaimed": "{name} rewards claimed! {rewards}",
+  "@gamificationNoticeChallengeRewardsClaimed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "rewards": {
+        "type": "String"
+      }
+    }
+  },
+  "gamificationNoticeFeatureLocked": "{count, plural, =1{{feature} unlocks at level {level}. 1 level to go!} other{{feature} unlocks at level {level}. {count} levels to go!}}",
+  "@gamificationNoticeFeatureLocked": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "feature": {
+        "type": "String"
+      },
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationFeatureCustomChatThemes": "Custom Chat Themes",
+  "gamificationFeatureProfileVideo": "Profile Video",
+  "gamificationFeatureAdvancedFilters": "Advanced Filters",
+  "gamificationFeatureUnlimitedRewinds": "Unlimited Rewinds",
+  "gamificationFeatureVipBadge": "VIP Badge",
+  "gamificationFeaturePriorityLikes": "Priority Likes",
+  "gamificationLevelRewardBronzeFrame": "Bronze Frame",
+  "gamificationLevelRewardSilverFrame": "Silver Frame",
+  "gamificationLevelRewardGoldFrame": "Gold Frame",
+  "gamificationLevelRewardPlatinumFrame": "Platinum Frame",
+  "gamificationLevelRewardDiamondFrame": "Diamond Frame",
+  "gamificationLevelRewardLegendaryFrame": "Legendary Frame",
+  "gamificationLevelRewardVipCrown": "VIP Crown",
+  "gamificationLevelRewardMaxLevelBadge": "Level {level} Badge",
+  "@gamificationLevelRewardMaxLevelBadge": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationLevelRewardBonusCoins": "{count} Bonus Coins",
+  "@gamificationLevelRewardBonusCoins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationMissionAttend3Events": "Attend 3 events",
+  "gamificationMissionConnect3Countries": "Connect with people from 3 countries",
+  "gamificationMissionJoinCommunity": "Join a community",
+  "gamificationMissionCompleteProfile": "Complete your profile",
+  "gamificationMissionAdd5People": "Add 5 people",
+  "updateRequiredTitle": "Update Required",
+  "updateRequiredMessage": "A new version of GreenGo is available. Please update to continue using the app.",
+  "updateAvailableTitle": "Update Available",
+  "updateAvailableMessage": "A new version of GreenGo is available with improvements and new features.",
+  "updateVersionCurrent": "Current",
+  "updateVersionRequired": "Required",
+  "updateVersionAvailable": "Available",
+  "updateVersionLatest": "Latest",
+  "updateWhatsNew": "What's New",
+  "updateNowButton": "Update Now",
+  "updateButton": "Update",
+  "maintenanceTitle": "Under Maintenance",
+  "maintenanceCheckBackSoon": "Please check back soon",
+  "maintenanceDefaultMessage": "We are currently performing maintenance. Please try again later.",
+  "countdownAlmostThere": "Almost There!",
+  "countdownVipEarlyAccess": "VIP Early Access",
+  "countdownLaunchDate": "Launch Date: {date}",
+  "@countdownLaunchDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "countdownTimeUntilLaunch": "Time Until Launch",
+  "countdownWantEarlierAccess": "Want Earlier Access?",
+  "countdownUpgradeForEarlierAccess": "Upgrade your tier to get earlier access before {date}!",
+  "@countdownUpgradeForEarlierAccess": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "countdownLaunchDay": "Launch Day!",
+  "countdownNowAvailable": "GreenGo Chat is now available",
+  "celebrationWelcomeToTier": "Welcome to {tier}!",
+  "@celebrationWelcomeToTier": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationMembershipActive": "Your premium membership is now active",
+  "celebrationUnlimitedLikes": "Unlimited likes",
+  "celebrationSeeWhoLikedYou": "See who liked you",
+  "celebrationPerDay": "{count}/day",
+  "@celebrationPerDay": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrationExclusiveEvents": "Exclusive Events",
+  "purchaseSuccessCoinsAdded": "{count} GreenGo Coins added!",
+  "@purchaseSuccessCoinsAdded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pushChannelMainName": "GreenGo Notifications",
+  "pushChannelMainDescription": "Messages, likes, events and activity",
+  "pushChannelAnnouncementsName": "Announcements",
+  "pushChannelAnnouncementsDescription": "Broadcasts and announcements from GreenGo",
+  "pushChannelSummaryName": "Activity summary",
+  "pushChannelSummaryDescription": "Bundled activity notifications",
+  "pushChannelGeneralName": "General",
+  "pushChannelGeneralDescription": "General notifications",
+  "usageLimitTypeConnects": "connects",
+  "usageLimitTypePasses": "passes",
+  "usageLimitTypePriorityConnects": "Priority Connects",
+  "usageLimitTypeDailyPriorityConnects": "daily Priority Connects",
+  "usageLimitTypeSwipes": "swipes",
+  "usageLimitTypeMessages": "messages",
+  "usageLimitTypeMediaSends": "media sends",
+  "usageLimitTypeDirectMatches": "direct matches",
+  "usageLimitTypeConnections": "connections",
+  "usageLimitUnlimited": "Unlimited {type}",
+  "@usageLimitUnlimited": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "usageLimitRemainingThisHour": "{remaining} {type} remaining this hour",
+  "@usageLimitRemainingThisHour": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "usageLimitRemainingToday": "{remaining} {type} remaining today",
+  "@usageLimitRemainingToday": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "usageLimitConnectsHourly": "You've used all {limit} connects this hour. Upgrade for more or wait until next hour.",
+  "@usageLimitConnectsHourly": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "usageLimitPassesHourly": "You've used all {limit} passes this hour. Upgrade for more or wait until next hour.",
+  "@usageLimitPassesHourly": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "usageLimitPriorityUnavailable": "Priority Connects are not available on the {tier} plan. Upgrade to unlock this feature!",
+  "@usageLimitPriorityUnavailable": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "usageLimitPriorityHourly": "You've used all {limit} Priority Connects this hour. Upgrade for more or wait until next hour.",
+  "@usageLimitPriorityHourly": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "usageLimitPriorityDaily": "{limit, plural, =1{You've used your 1 free priority connect for today. Use coins for more or wait until tomorrow.} other{You've used your {limit} free priority connects for today. Use coins for more or wait until tomorrow.}}",
+  "@usageLimitPriorityDaily": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "usageLimitSwipesDaily": "You've used all {limit} swipes for today. Upgrade to get more swipes or wait until tomorrow.",
+  "@usageLimitSwipesDaily": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "usageLimitMessagesDaily": "You've reached your daily limit of {limit} messages. Upgrade to send unlimited messages!",
+  "@usageLimitMessagesDaily": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "usageLimitMediaUnavailable": "Sending media is not available on the {tier} plan. Upgrade to send images and videos!",
+  "@usageLimitMediaUnavailable": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "usageLimitMediaDaily": "You've reached your daily limit of {limit} media sends. Upgrade for more or wait until tomorrow.",
+  "@usageLimitMediaDaily": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "usageLimitDirectMatchDaily": "{limit, plural, =1{You've used your 1 free direct match today. Use coins for more or wait until tomorrow.} other{You've used your {limit} free direct matches today. Use coins for more or wait until tomorrow.}}",
+  "@usageLimitDirectMatchDaily": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "contentFilterViolationEmail": "email address",
+  "contentFilterViolationPhoneWords": "phone number (written as words)",
+  "contentFilterViolationPhone": "phone number",
+  "contentFilterViolationSocial": "social media/link",
+  "adminImportSummary": "Imported: {success} | Duplicates: {duplicates} | Errors: {errors}",
+  "@adminImportSummary": {
+    "placeholders": {
+      "success": {
+        "type": "int"
+      },
+      "duplicates": {
+        "type": "int"
+      },
+      "errors": {
+        "type": "int"
+      }
+    }
+  },
+  "tierBoostCadenceNone": "None",
+  "tierBoostCadenceMonthly": "1 per month",
+  "tierBoostCadenceWeekly": "~1 per week",
+  "tierBoostCadenceDaily": "~1 per day",
+  "tierFilterLevelBasic": "Basic",
+  "tierFilterLevelStandard": "Standard",
+  "tierFilterLevelAdvanced": "Advanced",
+  "tierFilterLevelAll": "All filters",
+  "tierTtsCostValue": "{coins} coins per translation",
+  "@tierTtsCostValue": {
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "chatLearningLiteral": "Literal: {text}",
+  "@chatLearningLiteral": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "chatLearningMeaning": "Meaning: {text}",
+  "@chatLearningMeaning": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "validatorNameRequired": "Name is required",
+  "validatorNameLettersOnly": "Name can only contain letters and spaces",
+  "validatorPhoneRequired": "Phone number is required",
+  "validatorPhoneMinDigits": "Phone number must be at least 10 digits",
+  "validatorAgeRequired": "Age is required",
+  "validatorMinAge": "You must be at least {minAge} years old",
+  "@validatorMinAge": {
+    "placeholders": {
+      "minAge": {
+        "type": "int"
+      }
+    }
+  },
+  "validatorInvalidAge": "Invalid age",
+  "validatorBioMaxLength": "Bio must be less than {max} characters",
+  "@validatorBioMaxLength": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "profileOnboardingIncompleteStep": "Please complete all required fields",
+  "profileGenderPreferNotToSay": "Prefer not to say",
+  "profileOrientationStraight": "Straight",
+  "profileOrientationGay": "Gay",
+  "profileOrientationBisexual": "Bisexual",
+  "profileLanguageHebrew": "Hebrew",
+  "profileLanguageThai": "Thai",
+  "profileLanguageVietnamese": "Vietnamese",
+  "profileLatLon": "Lat: {lat}, Lon: {lon}",
+  "@profileLatLon": {
+    "placeholders": {
+      "lat": {
+        "type": "String"
+      },
+      "lon": {
+        "type": "String"
+      }
+    }
+  },
+  "profileNicknameInvalid": "Invalid nickname",
+  "profileNicknameErrorEmpty": "Nickname cannot be empty",
+  "profileNicknameErrorTooShort": "Nickname must be at least {min} characters",
+  "@profileNicknameErrorTooShort": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "profileNicknameErrorTooLong": "Nickname must be {max} characters or less",
+  "@profileNicknameErrorTooLong": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "profileNicknameErrorStartLetter": "Nickname must start with a letter",
+  "profileNicknameErrorChars": "Nickname can only contain letters, numbers, and underscores",
+  "profileNicknameErrorUnderscores": "Nickname cannot contain consecutive underscores",
+  "profileNicknameErrorReserved": "Nickname cannot contain reserved words",
+  "profileFreeUnlimited": "Free - Unlimited",
+  "profileFreeWithPlatinum": "Free with Platinum",
+  "profileCoinsPerDay": "{count} coins/day",
+  "@profileCoinsPerDay": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileTravelerActiveSubtitle": "{location} - {hours}h {minutes}m remaining",
+  "@profileTravelerActiveSubtitle": {
+    "placeholders": {
+      "location": {
+        "type": "String"
+      },
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "profileTravelerInactiveSubtitle": "{cost} - Appear in another city",
+  "@profileTravelerInactiveSubtitle": {
+    "placeholders": {
+      "cost": {
+        "type": "String"
+      }
+    }
+  },
+  "profileMinutesRemaining": "{minutes}m remaining",
+  "@profileMinutesRemaining": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "profileHoursMinutesRemaining": "{hours}h {minutes}m remaining",
+  "@profileHoursMinutesRemaining": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "profileGhostMode": "Ghost Mode",
+  "profileGhostModeActiveSubtitle": "Ghost Mode - Unlimited - Hidden from discovery & search",
+  "profileGhostModeInactiveSubtitle": "Free - Unlimited - Hidden from discovery & nickname search",
+  "profileIncognitoCostSubtitle": "{count} coins/24h - Hidden from discovery",
+  "@profileIncognitoCostSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "photoDeleteTitle": "Delete Photo",
+  "travelerCouldNotResolveAddress": "{coordinates} — could not resolve address",
+  "@travelerCouldNotResolveAddress": {
+    "placeholders": {
+      "coordinates": {
+        "type": "String"
+      }
+    }
+  },
+  "membershipTierNameBasicFree": "Basic (Free)",
+  "membershipTierNameSilverPremium": "Silver Premium",
+  "membershipTierNameGoldPremium": "Gold Premium",
+  "membershipTierNamePlatinumVip": "Platinum VIP",
+  "membershipTierNameSilverVip": "Silver VIP",
+  "membershipTierNameGoldVip": "Gold VIP",
+  "membershipTierNameTester": "Tester",
+  "membershipBuyProductPrice": "Buy {product} – {price}",
+  "@membershipBuyProductPrice": {
+    "placeholders": {
+      "product": {
+        "type": "String"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "coinSpendCategoryMatching": "Matching",
+  "coinSpendCategoryMessaging": "Messaging",
+  "coinSpendCategoryGifts": "Virtual Gifts",
+  "coinSpendSeeWhoLiked": "See Who Liked",
+  "coinSpendReadReceiptsDay": "Read Receipts (1 Day)",
+  "coinSpendRose": "Rose",
+  "coinSpendTeddyBear": "Teddy Bear",
+  "coinSpendDiamond": "Diamond",
+  "coinSpendSuperLikeDesc": "Send a super like to stand out",
+  "coinSpendBoostDesc": "Be seen by more people for 30 mins",
+  "coinSpendUndoDesc": "Undo your last swipe",
+  "coinSpendSeeWhoLikedDesc": "See who liked your profile",
+  "coinSpendReadReceiptsDesc": "See when messages are read",
+  "coinSpendRoseDesc": "Send a virtual rose",
+  "coinSpendTeddyBearDesc": "Send a cute teddy bear",
+  "coinSpendDiamondDesc": "Send a sparkling diamond",
+  "coinReasonFirstMatchReward": "First Match Reward",
+  "coinReasonCompleteProfileReward": "Complete Profile Reward",
+  "coinReasonDailyLoginStreak": "Daily Login Streak",
+  "coinReasonAchievementUnlocked": "Achievement Unlocked",
+  "coinReasonMonthlyAllowance": "Monthly Allowance",
+  "coinReasonGiftReceived": "Gift Received",
+  "coinReasonGiftSent": "Gift Sent",
+  "coinReasonPromotionalBonus": "Promotional Bonus",
+  "coinReasonReferralBonus": "Referral Bonus",
+  "coinReasonCoinPurchase": "Coin Purchase",
+  "coinReasonRefund": "Refund",
+  "coinReasonUndoLastSwipe": "Undo Last Swipe",
+  "coinReasonSeeWhoLikedYou": "See Who Liked You",
+  "coinReasonDirectMessage": "Direct Message",
+  "coinReasonFeaturePurchase": "Feature Purchase",
+  "coinReasonCoinsExpired": "Coins Expired",
+  "coinReasonAdminAdjustment": "Admin Adjustment",
+  "coinTxDescFirstMatch": "Congratulations on your first match! Earned {amount} coins.",
+  "@coinTxDescFirstMatch": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescCompleteProfile": "Profile completed! Earned {amount} coins.",
+  "@coinTxDescCompleteProfile": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescDailyStreak": "Day {streak} login streak! Earned {amount} coins.",
+  "@coinTxDescDailyStreak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescAchievement": "Achievement unlocked: {achievement}! Earned {amount} coins.",
+  "@coinTxDescAchievement": {
+    "placeholders": {
+      "achievement": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescAchievementGeneric": "Achievement unlocked! Earned {amount} coins.",
+  "@coinTxDescAchievementGeneric": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescMonthlyAllowance": "{tier} monthly allowance: {amount} coins.",
+  "@coinTxDescMonthlyAllowance": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescGiftReceived": "Received {amount} coins from {user}.",
+  "@coinTxDescGiftReceived": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      },
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "coinTxDescGiftSent": "Sent {amount} coins to {user}.",
+  "@coinTxDescGiftSent": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      },
+      "user": {
+        "type": "String"
+      }
+    }
+  },
+  "coinTxDescPromotional": "Promotional bonus from {campaign}: {amount} coins.",
+  "@coinTxDescPromotional": {
+    "placeholders": {
+      "campaign": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescPromotionalGeneric": "Promotional bonus: {amount} coins.",
+  "@coinTxDescPromotionalGeneric": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescReferral": "Referral bonus: earned {amount} coins.",
+  "@coinTxDescReferral": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescPurchase": "Purchased {amount} coins.",
+  "@coinTxDescPurchase": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescPurchasePackage": "Purchased {amount} coins ({package}).",
+  "@coinTxDescPurchasePackage": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      },
+      "package": {
+        "type": "String"
+      }
+    }
+  },
+  "coinTxDescRefund": "Refund: {amount} coins.",
+  "@coinTxDescRefund": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescUsedFor": "Used {amount} coins for {feature}.",
+  "@coinTxDescUsedFor": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      },
+      "feature": {
+        "type": "String"
+      }
+    }
+  },
+  "coinTxDescExpired": "{amount} coins expired.",
+  "@coinTxDescExpired": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescClawback": "{amount} coins removed: the purchase was refunded.",
+  "@coinTxDescClawback": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinTxDescAdmin": "Admin adjustment: {amount} coins ({reason}).",
+  "@coinTxDescAdmin": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      },
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "coinTxDescAdminGeneric": "Admin adjustment: {amount} coins.",
+  "@coinTxDescAdminGeneric": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "coinPromoPercentBonus": "+{percent}% bonus coins",
+  "@coinPromoPercentBonus": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "businessFollowerFallbackName": "GreenGo member",
+  "bizCatRestaurant": "Restaurant",
+  "bizCatBar": "Bar",
+  "bizCatCafe": "Cafe",
+  "bizCatNightclub": "Nightclub",
+  "bizCatLounge": "Lounge",
+  "bizCatHotel": "Hotel",
+  "bizCatHostel": "Hostel",
+  "bizCatGuesthouse": "Guesthouse",
+  "bizCatResort": "Resort",
+  "bizCatBedAndBreakfast": "Bed & Breakfast",
+  "bizCatGym": "Gym",
+  "bizCatYogaStudio": "Yoga Studio",
+  "bizCatFitnessStudio": "Fitness Studio",
+  "bizCatSpa": "Spa",
+  "bizCatWellnessCenter": "Wellness Center",
+  "bizCatBeautySalon": "Beauty Salon",
+  "bizCatBarbershop": "Barbershop",
+  "bizCatMuseum": "Museum",
+  "bizCatArtGallery": "Art Gallery",
+  "bizCatTheater": "Theater",
+  "bizCatCinema": "Cinema",
+  "bizCatLiveMusicVenue": "Live Music Venue",
+  "bizCatCulturalCenter": "Cultural Center",
+  "bizCatTourOperator": "Tour Operator",
+  "bizCatTravelAgency": "Travel Agency",
+  "bizCatLanguageSchool": "Language School",
+  "bizCatCookingSchool": "Cooking School",
+  "bizCatDanceStudio": "Dance Studio",
+  "bizCatCoworkingSpace": "Coworking Space",
+  "bizCatEventVenue": "Event Venue",
+  "bizCatConferenceCenter": "Conference Center",
+  "bizCatShopRetail": "Shop / Retail",
+  "bizCatBoutique": "Boutique",
+  "bizCatBookstore": "Bookstore",
+  "bizCatMarket": "Market",
+  "bizCatWinery": "Winery",
+  "bizCatBrewery": "Brewery",
+  "bizCatDistillery": "Distillery",
+  "bizCatFoodTruck": "Food Truck",
+  "bizCatBakery": "Bakery",
+  "bizCatCoffeeRoastery": "Coffee Roastery",
+  "bizCatSportsClub": "Sports Club",
+  "bizCatAdventureAndOutdoor": "Adventure & Outdoor",
+  "bizCatDivingCenter": "Diving Center",
+  "bizCatPhotographyStudio": "Photography Studio",
+  "bizCatCoachingAndConsulting": "Coaching & Consulting",
+  "bizCatNonprofitAndNGO": "Nonprofit & NGO",
+  "bizCatCommunityCenter": "Community Center",
+  "bizCatTransportationService": "Transportation Service",
+  "bizCatOther": "Other",
+  "bizCatGroupFoodAndDrink": "Food & Drink",
+  "bizCatGroupNightlife": "Nightlife",
+  "bizCatGroupStay": "Stay",
+  "bizCatGroupWellness": "Wellness",
+  "bizCatGroupCulture": "Culture",
+  "bizCatGroupTravelAndTours": "Travel & Tours",
+  "bizCatGroupLearnAndWork": "Learn & Work",
+  "bizCatGroupEvents": "Events",
+  "bizCatGroupRetail": "Retail",
+  "bizCatGroupCommunityAndServices": "Community & Services",
+  "gamificationJourneyTitle": "Your Journey",
+  "gamificationJourneyMilestonesCompleted": "{completed} of {total} milestones completed",
+  "@gamificationJourneyMilestonesCompleted": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationJourneyOverallProgress": "Overall Progress",
+  "gamificationJourneyNoMilestones": "No milestones yet",
+  "gamificationJourneyCompletePrevious": "Complete previous categories to unlock",
+  "gamificationJourneyTabStart": "Start",
+  "gamificationJourneyTabMaster": "Master",
+  "gamificationJourneyCatGettingStarted": "Getting Started",
+  "gamificationJourneyCatSocializing": "Socializing",
+  "gamificationJourneyCatMastery": "Mastery",
+  "gamificationJourneyCatGettingStartedDesc": "Complete your profile and get familiar with the app",
+  "gamificationJourneyCatSocializingDesc": "Connect with others and build relationships",
+  "gamificationJourneyCatPremiumDesc": "Unlock premium features and rewards",
+  "gamificationJourneyCatMasteryDesc": "Become a master of the dating game",
+  "gamificationJourneyCatSpecialDesc": "Exclusive milestones and achievements",
+  "gamificationJourneyCompleteProfileName": "Profile Pro",
+  "gamificationJourneyCompleteProfileDesc": "Complete your profile 100%",
+  "gamificationJourneyAddPhotosName": "Picture Perfect",
+  "gamificationJourneyAddPhotosDesc": "Add 5 photos to your profile",
+  "gamificationJourneyGetVerifiedName": "Verified User",
+  "gamificationJourneyGetVerifiedDesc": "Complete photo verification",
+  "gamificationJourneyFirstMatchName": "First Connection",
+  "gamificationJourneyFirstMatchDesc": "Get your first match",
+  "gamificationJourneyTenMatchesName": "Rising Star",
+  "gamificationJourneyTenMatchesDesc": "Get 10 matches",
+  "gamificationJourneyFiftyMatchesName": "Social Butterfly",
+  "gamificationJourneyFiftyMatchesDesc": "Get 50 matches",
+  "gamificationJourneyFirstMessageName": "Ice Breaker",
+  "gamificationJourneyFirstMessageDesc": "Send your first message",
+  "gamificationJourneyHundredMessagesName": "Conversation King",
+  "gamificationJourneyHundredMessagesDesc": "Send 100 messages",
+  "gamificationJourneyFirstVideoCallName": "Face to Face",
+  "gamificationJourneyFirstVideoCallDesc": "Complete your first video call",
+  "gamificationJourneyTenVideoCallsName": "Video Pro",
+  "gamificationJourneyTenVideoCallsDesc": "Complete 10 video calls",
+  "gamificationJourneyWeekStreakName": "Dedicated User",
+  "gamificationJourneyWeekStreakDesc": "Maintain a 7-day login streak",
+  "gamificationJourneyMonthStreakName": "Super Dedicated",
+  "gamificationJourneyMonthStreakDesc": "Maintain a 30-day login streak",
+  "gamificationJourneyUpgradeSilverName": "Silver Member",
+  "gamificationJourneyUpgradeSilverDesc": "Upgrade to Silver VIP",
+  "gamificationJourneyUpgradeGoldName": "Gold Member",
+  "gamificationJourneyUpgradeGoldDesc": "Upgrade to Gold VIP",
+  "gamificationJourneyUpgradePlatinumName": "Platinum Member",
+  "gamificationJourneyUpgradePlatinumDesc": "Upgrade to Platinum VIP",
+  "gamificationJourneyTenAchievementsName": "Achievement Hunter",
+  "gamificationJourneyTenAchievementsDesc": "Earn 10 achievements",
+  "gamificationJourneyFiftyAchievementsName": "Achievement Master",
+  "gamificationJourneyFiftyAchievementsDesc": "Earn 50 achievements",
+  "gamificationJourneyHundredMatchesName": "Centurion",
+  "gamificationJourneyHundredMatchesDesc": "Get 100 matches",
+  "gamificationStreakMilestone3Name": "Getting Started",
+  "gamificationStreakMilestone7Name": "Week Warrior",
+  "gamificationStreakMilestone14Name": "Two Week Champ",
+  "gamificationStreakMilestone30Name": "Monthly Master",
+  "gamificationStreakMilestone60Name": "Two Month Champion",
+  "gamificationStreakMilestone90Name": "Quarter Year Legend",
+  "gamificationStreakMilestone180Name": "Half Year Hero",
+  "gamificationStreakMilestone365Name": "Year of Love",
+  "gamificationStreakMilestoneDesc": "Log in for {days} consecutive days",
+  "@gamificationStreakMilestoneDesc": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "gamificationChallengeSend3MessagesName": "Quick Chat",
+  "gamificationChallengeSend3MessagesDesc": "Send 3 messages",
+  "gamificationChallengeSend5MessagesName": "Message Master",
+  "gamificationChallengeSend5MessagesDesc": "Send 5 messages to your matches",
+  "gamificationChallengeSend10MessagesName": "Conversation King",
+  "gamificationChallengeSend10MessagesDesc": "Send 10 messages today",
+  "gamificationChallengeSend15MessagesName": "Chat Marathon",
+  "gamificationChallengeSend15MessagesDesc": "Send 15 messages today",
+  "gamificationChallengeGet1MatchName": "First Spark",
+  "gamificationChallengeGet1MatchDesc": "Get 1 new match today",
+  "gamificationChallengeGet3MatchesName": "Match Maker",
+  "gamificationChallengeGet3MatchesDesc": "Get 3 new matches today",
+  "gamificationChallengeGet5MatchesName": "Love Magnet",
+  "gamificationChallengeGet5MatchesDesc": "Get 5 new matches today",
+  "gamificationChallengeSend1SuperlikeName": "Priority Pick",
+  "gamificationChallengeSend1SuperlikeDesc": "Send 1 super like",
+  "gamificationChallengeSend3SuperlikesName": "Super Liker",
+  "gamificationChallengeSend3SuperlikesDesc": "Send 3 super likes",
+  "gamificationChallengeSend5SuperlikesName": "Super Star",
+  "gamificationChallengeSend5SuperlikesDesc": "Send 5 super likes",
+  "gamificationChallengeVideoCall1Name": "Video Enthusiast",
+  "gamificationChallengeVideoCall1Desc": "Complete 1 video call",
+  "gamificationChallengeVideoCall2Name": "Video Pro",
+  "gamificationChallengeVideoCall2Desc": "Complete 2 video calls",
+  "gamificationChallengeAddPhotoName": "Photo Refresh",
+  "gamificationChallengeAddPhotoDesc": "Add or update a profile photo",
+  "gamificationChallengeAdd2PhotosName": "Photo Gallery",
+  "gamificationChallengeAdd2PhotosDesc": "Add 2 new profile photos",
+  "gamificationChallengeSend1GiftName": "Gift Giver",
+  "gamificationChallengeSend1GiftDesc": "Send 1 gift to a match",
+  "gamificationChallengeSend3GiftsName": "Generous Heart",
+  "gamificationChallengeSend3GiftsDesc": "Send 3 gifts today",
+  "gamificationChallengeSend5GiftsName": "Gift Master",
+  "gamificationChallengeSend5GiftsDesc": "Send 5 gifts today",
+  "gamificationChallengeChatStarterName": "Ice Breaker",
+  "gamificationChallengeChatStarterDesc": "Send 7 messages to different matches",
+  "gamificationChallengeSocialButterflyName": "Social Butterfly",
+  "gamificationChallengeSocialButterflyDesc": "Send 20 messages today",
+  "gamificationChallengeMatchRushName": "Match Rush",
+  "gamificationChallengeMatchRushDesc": "Get 7 matches today",
+  "gamificationChallengeVideoMarathonName": "Video Marathon",
+  "gamificationChallengeVideoMarathonDesc": "Complete 3 video calls",
+  "gamificationChallengeWeeklyMessages30Name": "Chat Enthusiast",
+  "gamificationChallengeWeeklyMessages30Desc": "Send 30 messages this week",
+  "gamificationChallengeWeeklyMessages50Name": "Chat Master",
+  "gamificationChallengeWeeklyMessages50Desc": "Send 50 messages this week",
+  "gamificationChallengeWeeklyMessages100Name": "Chat Legend",
+  "gamificationChallengeWeeklyMessages100Desc": "Send 100 messages this week",
+  "gamificationChallengeWeeklyMatches10Name": "Weekly Connector",
+  "gamificationChallengeWeeklyMatches10Desc": "Get 10 matches this week",
+  "gamificationChallengeWeeklyMatches20Name": "Weekly Match Champion",
+  "gamificationChallengeWeeklyMatches20Desc": "Get 20 matches this week",
+  "gamificationChallengeWeeklyMatches30Name": "Match Machine",
+  "gamificationChallengeWeeklyMatches30Desc": "Get 30 matches this week",
+  "gamificationChallengeWeeklySuperlikes5Name": "Weekly Super Liker",
+  "gamificationChallengeWeeklySuperlikes5Desc": "Send 5 super likes this week",
+  "gamificationChallengeWeeklySuperlikes10Name": "Super Fan",
+  "gamificationChallengeWeeklySuperlikes10Desc": "Send 10 super likes this week",
+  "gamificationChallengeWeeklySuperlikes15Name": "Priority King",
+  "gamificationChallengeWeeklySuperlikes15Desc": "Send 15 super likes this week",
+  "gamificationChallengeWeeklyVideo3Name": "Video Socialite",
+  "gamificationChallengeWeeklyVideo3Desc": "Complete 3 video calls this week",
+  "gamificationChallengeWeeklyVideo5Name": "Video Star",
+  "gamificationChallengeWeeklyVideo5Desc": "Complete 5 video calls this week",
+  "gamificationChallengeWeeklyGifts5Name": "Weekly Gift Giver",
+  "gamificationChallengeWeeklyGifts5Desc": "Send 5 gifts this week",
+  "gamificationChallengeWeeklyGifts10Name": "Generous Soul",
+  "gamificationChallengeWeeklyGifts10Desc": "Send 10 gifts this week",
+  "gamificationChallengeWeeklyPhotos3Name": "Photo Week",
+  "gamificationChallengeWeeklyPhotos3Desc": "Add 3 photos this week",
+  "gamificationChallengeWeeklyPerfectName": "Perfect Week",
+  "gamificationChallengeWeeklyPerfectDesc": "Complete all daily challenges 7 days in a row",
+  "gamificationChallengeValentineMatchesName": "Love Connections",
+  "gamificationChallengeValentineMatchesDesc": "Get 14 matches during Valentine’s Week (1 per day)",
+  "gamificationChallengeValentineVideoName": "Virtual Date Night",
+  "gamificationChallengeValentineVideoDesc": "Complete 3 video calls",
+  "gamificationChallengeSummerMatchesName": "Beach Vibes",
+  "gamificationChallengeSummerMatchesDesc": "Get 30 matches this summer",
+  "gamificationChallengeHolidayGiftsName": "Gift Giver",
+  "gamificationChallengeHolidayGiftsDesc": "Send 10 coin gifts to matches",
+  "gamificationChallengeHolidayMessagesName": "Holiday Cheer",
+  "gamificationChallengeHolidayMessagesDesc": "Send 100 messages",
+  "gamificationEventValentinesName": "Valentine’s Week",
+  "gamificationEventValentinesDesc": "Spread the love this Valentine’s Week!",
+  "gamificationEventSummerName": "Summer Love",
+  "gamificationEventSummerDesc": "Find your summer romance!",
+  "gamificationEventHolidayName": "Holiday Season",
+  "gamificationEventHolidayDesc": "Find love this holiday season!",
+  "travelExploreTitle": "Travel Explore",
+  "travelExploreInMyCity": "In my city",
+  "travelExploreWorldwide": "Worldwide",
+  "travelExploreTravelersIn": "Travelers in {city}",
+  "@travelExploreTravelersIn": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "travelExploreUnknownLocation": "Unknown location",
+  "travelExploreLocalGuides": "Local Guides",
+  "travelExploreCities": "Cities",
+  "travelExploreGuideIn": "Guide in {city}",
+  "@travelExploreGuideIn": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "travelExploreNoTravelersInCity": "No travelers in {city} right now",
+  "@travelExploreNoTravelersInCity": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      }
+    }
+  },
+  "travelExploreNoTravelers": "No travelers found",
+  "travelExploreTryWorldwide": "Try switching to Worldwide to see all travelers",
+  "travelExploreCheckBack": "Check back later for active travelers",
+  "travelExploreShowWorldwide": "Show Worldwide",
+  "discoveryDealBreakerSmoking": "Smoking",
+  "discoveryDealBreakerDrinking": "Drinking",
+  "discoveryDealBreakerNoBio": "No bio",
+  "discoveryDealBreakerNoPhotos": "No photos",
+  "discoveryDealBreakerDifferentReligion": "Different religion",
+  "discoveryDealBreakerDifferentPolitics": "Different politics",
+  "discoveryDealBreakerHasChildren": "Has children",
+  "discoveryDealBreakerWantsChildren": "Wants children",
+  "discoveryDealBreakerLongDistance": "Long distance",
+  "discoveryDealBreakerNonMonogamy": "Non-monogamy",
+  "discoveryPrefCountryUserCount": "{count, plural, =1{1 user} other{{count} users}}",
+  "@discoveryPrefCountryUserCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "discoveryGridAuto": "Auto",
+  "discoveryMatchFallbackName": "Match",
+  "discoveryThisUser": "this user",
+  "discoveryActionNope": "Nope",
+  "exploreTierTester": "Tester",
+  "chatCulturalContextTitle": "Cultural Context",
+  "chatCulturalContextLink": "Cultural context",
+  "chatWordBreakdownTierRequired": "Word breakdown is available for Silver, Gold, and Platinum members",
+  "chatPreviewSticker": "Sticker",
+  "chatPreviewVoiceMessage": "Voice message",
+  "chatPreviewAlbumShared": "Album shared",
+  "chatPreviewAlbumRevoked": "Album revoked",
+  "chatPreviewEvent": "Event",
+  "chatPreviewSayHi": "Say hi to your match!",
+  "chatTimeShortMinutes": "{count}m",
+  "@chatTimeShortMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chatTimeShortHours": "{count}h",
+  "@chatTimeShortHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chatTimeShortDays": "{count}d",
+  "@chatTimeShortDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chatNotificationsMutedForChat": "Notifications muted for this chat",
+  "chatNotificationsUnmuted": "Notifications unmuted",
+  "chatMuteNotifications": "Mute notifications",
+  "chatUnmuteNotifications": "Unmute notifications",
+  "chatAlbumSelectCount": "Select ({count})",
+  "@chatAlbumSelectCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chatAlbumPhotosSelected": "{count, plural, =1{1 photo selected} other{{count} photos selected}}",
+  "@chatAlbumPhotosSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chatSessionXp": "{xp} XP",
+  "@chatSessionXp": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
+  "chatPhraseHowAreYou": "How are you?",
+  "chatPhraseGoodMorning": "Good morning!",
+  "chatPhraseAllGood": "All good?",
+  "chatPhrasePleasedToMeetYou": "Pleased to meet you!",
+  "chatPhraseNiceToMeetYou": "Nice to meet you!",
+  "chatPhraseWhatsUp": "What's up?",
+  "chatSupportAiBadge": "AI",
+  "chatGroupFallbackName": "Group",
+  "communitiesTypeLanguageCircle": "Language Circle",
+  "communitiesTypeCulturalInterest": "Cultural Interest",
+  "communitiesTypeTravelGroup": "Travel Group",
+  "communitiesTypeLocalGuides": "Local Guides",
+  "communitiesTypeStudyGroup": "Study Group",
+  "communitiesTypeGeneral": "General",
+  "communitiesRoleOwner": "Owner",
+  "communitiesRoleAdmin": "Admin",
+  "communitiesRoleMember": "Member",
+  "communitiesNoActivityYet": "No activity yet",
+  "communitiesLanguageMandarin": "Mandarin",
+  "communitiesLanguageThai": "Thai",
+  "communitiesLanguageVietnamese": "Vietnamese",
+  "communitiesLanguageCatalan": "Catalan",
+  "communitiesLanguageHebrew": "Hebrew",
+  "videoPromptSelectorTitle": "Choose a Prompt",
+  "videoPromptSelectorSubtitle": "Pick a topic for your video introduction",
+  "videoPromptIntroduceTitle": "Introduce yourself",
+  "videoPromptIntroduceDesc": "Say hello and tell us who you are",
+  "videoPromptIntroduceTemplate": "Introduce yourself in your favorite language",
+  "videoPromptNativeTitle": "Native language",
+  "videoPromptNativeDesc": "Show off your mother tongue",
+  "videoPromptNativeTemplate": "Say something in your native language",
+  "videoPromptTeachTitle": "Teach a phrase",
+  "videoPromptTeachDesc": "Share something fun to say",
+  "videoPromptTeachTemplate": "Teach us a phrase in your language",
+  "videoPromptPlaceTitle": "Favorite place",
+  "videoPromptPlaceDesc": "Share a place that means something to you",
+  "videoPromptPlaceTemplate": "What's your favorite place to visit?",
+  "videoPromptCultureTitle": "Cultural exchange",
+  "videoPromptCultureDesc": "What does cultural exchange mean to you?",
+  "videoPromptCultureTemplate": "Describe your ideal cultural exchange",
+  "videoPromptTalentTitle": "Hidden talent",
+  "videoPromptTalentDesc": "Surprise us with something unexpected",
+  "videoPromptTalentTemplate": "Show us a hidden talent or fun fact about you",
+  "videoPromptTripTitle": "Dream trip",
+  "videoPromptTripDesc": "Where in the world would you go?",
+  "videoPromptTripTemplate": "Describe your dream travel destination",
+  "videoPromptFreeTitle": "Free style",
+  "videoPromptFreeDesc": "Say whatever you want!",
+  "videoPromptFreeTemplate": "Free style - no prompt",
+  "videoDiscoveryLiked": "Liked!",
+  "videoDiscoveryPassed": "Passed",
+  "videoDiscoveryTitle": "Video Intros",
+  "videoDiscoveryEmptyTitle": "No video introductions yet",
+  "videoDiscoveryEmptySubtitle": "Be the first to create one!",
+  "videoDiscoveryUserFallback": "User {id}",
+  "@videoDiscoveryUserFallback": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "videoDiscoveryViews": "{count, plural, =1{1 view} other{{count} views}}",
+  "@videoDiscoveryViews": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "videoDiscoveryLike": "Like",
+  "videoDiscoveryPass": "Pass",
+  "videoDiscoveryReport": "Report",
+  "videoDiscoveryMute": "Mute",
+  "videoDiscoveryUnmute": "Unmute",
+  "videoProfileUploadSuccess": "Video uploaded successfully!",
+  "videoProfileDeleteTitle": "Delete Video?",
+  "videoProfileDeleteConfirm": "Are you sure you want to delete your video introduction?",
+  "videoProfileDeleted": "Video deleted",
+  "videoProfileScreenTitle": "Video Introduction",
+  "videoProfileFirstImpression": "Make a great first impression!",
+  "videoProfileInfoBody": "Record a {seconds} second video to introduce yourself. Profiles with videos get 40% more matches!",
+  "@videoProfileInfoBody": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "videoProfileNoVideo": "No video yet",
+  "videoProfileMaxSeconds": "Max {seconds} seconds",
+  "@videoProfileMaxSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "videoProfileRecord": "Record Video",
+  "videoProfileUploadFromGallery": "Upload from Gallery",
+  "videoProfileSave": "Save Video",
+  "videoProfileRecordAgain": "Record Again",
+  "videoProfileTipsTitle": "Tips for a great video:",
+  "videoProfileTipLighting": "Good lighting - face a window or light source",
+  "videoProfileTipVertical": "Hold your phone vertically",
+  "videoProfileTipSmile": "Smile and be yourself!",
+  "videoProfileTipSpeak": "Speak clearly - introduce yourself",
+  "videoProfileTipHobbies": "Mention your hobbies or interests",
+  "adminVerificationBulkBetterPhotoTitle": "Request Better Photo ({count, plural, =1{1 user} other{{count} users}})",
+  "@adminVerificationBulkBetterPhotoTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminVerificationBulkApproved": "{count, plural, =1{1 verification approved} other{{count} verifications approved}}",
+  "@adminVerificationBulkApproved": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminVerificationBulkBetterPhotoRequested": "{count, plural, =1{Better photo requested for 1 user} other{Better photo requested for {count} users}}",
+  "@adminVerificationBulkBetterPhotoRequested": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminPreSaleTitle": "Pre-Sale Management",
+  "adminPreSaleProgramTitle": "Pre-Sale Tier Program",
+  "adminPreSaleProgramDescription": "Manage pre-sale users with tier-based countdown and subscription duration.",
+  "adminPreSaleCsvFormatHint": "CSV format: {columns}\nTier values: {tiers}",
+  "@adminPreSaleCsvFormatHint": {
+    "placeholders": {
+      "columns": {
+        "type": "String"
+      },
+      "tiers": {
+        "type": "String"
+      }
+    }
+  },
+  "adminPreSaleAddSingleEntry": "Add Single Entry",
+  "adminPreSaleEntries": "Pre-Sale Entries",
+  "adminPreSaleAllTiers": "All Tiers",
+  "adminPreSaleNoMatching": "No matching entries found",
+  "adminPreSaleEmpty": "No pre-sale entries yet.\nUpload a CSV to get started.",
+  "adminPreSaleDaysCount": "{count, plural, =1{1 day} other{{count} days}}",
+  "@adminPreSaleDaysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adminPreSaleEntryAdded": "{email} added as {tier} ({days, plural, =1{1 day} other{{days} days}})",
+  "@adminPreSaleEntryAdded": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      },
+      "tier": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "adminPreSaleRemoveEntryTitle": "Remove Entry",
+  "adminPreSaleRemoveEntryConfirm": "Remove {email} from the pre-sale list?",
+  "@adminPreSaleRemoveEntryConfirm": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "adminPreSaleEntryRemoved": "{email} removed from pre-sale list",
+  "@adminPreSaleEntryRemoved": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "adminPreSaleCsvEmpty": "CSV file is empty",
+  "adminPreSaleCsvMissingHeaders": "CSV must have headers: {expected}\nFound: {found}",
+  "@adminPreSaleCsvMissingHeaders": {
+    "placeholders": {
+      "expected": {
+        "type": "String"
+      },
+      "found": {
+        "type": "String"
+      }
+    }
+  },
+  "adminPreSaleCsvNoRows": "No valid data rows found in CSV",
+  "adminPreSaleInvalidDays": "Please enter a valid number of days",
+  "adminPreSaleInfoTitle": "Pre-Sale Info",
+  "adminPreSaleCsvFormatTitle": "CSV Format",
+  "adminPreSaleCountdownDates": "Tier Countdown Dates",
+  "adminPreSaleHowItWorks": "How it works",
+  "adminPreSaleHowItWorksSteps": "1. User registers with email\n2. App checks pre-sale list\n3. Countdown shows tier date\n4. After countdown: subscription activates\n5. Duration = NUMBER_OF_DAYS from list\n6. Base membership = same expiry",
+  "adminStatusProcessing": "Processing",
+  "adminStatusCompleted": "Completed",
+  "adminStatusFailed": "Failed",
+  "adminStatusCancelled": "Cancelled",
+  "adminStatusRefunded": "Refunded",
+  "adminStatusDraft": "Draft",
+  "adminStatusIssued": "Issued",
+  "adminStatusPaid": "Paid",
+  "adminStatusOverdue": "Overdue",
+  "adminOrderTypeCoins": "Coins Purchase",
+  "adminOrderTypeSubscription": "Subscription",
+  "adminOrderTypeGift": "Gift Purchase",
+  "adminRoleSuperAdmin": "Super Admin",
+  "adminRoleModerator": "Moderator",
+  "adminRoleAnalyst": "Analyst",
+  "cityPickerTitle": "Pick a city",
+  "cityPickerSearchHint": "Search a city…",
+  "cityPickerEmptyHint": "Search a city or tap the map",
+  "cityPickerUseCity": "Use this city",
+  "notifServerViewedYourProfile": "viewed your profile",
+  "notifServerStartedFollowingYou": "started following you",
+  "notifServerStartedFollowingBusiness": "started following your business",
+  "notifServerRatedYourBusiness": "rated your business",
+  "notifServerRatedYourBusinessStars": "rated your business {stars}★",
+  "@notifServerRatedYourBusinessStars": {
+    "placeholders": {
+      "stars": {
+        "type": "int"
+      }
+    }
+  },
+  "notifServerReviewedYourExperience": "reviewed your experience",
+  "notifServerTapToSeeWhoStoppedBy": "Tap to see who stopped by",
+  "notifServerTapToSeeTheirProfile": "Tap to see their profile",
+  "notifServerNewFollower": "You have a new follower",
+  "notifServerNewRating": "You have a new rating",
+  "notifServerYourCommunity": "Your community",
+  "notifServerYourEvent": "Your event",
+  "notifServerProfileBoostLive": "Your profile boost is now live",
+  "notifServerProfileBoostEnded": "Your profile boost has ended",
+  "notifServerProfilePromoted": "Your profile is being promoted to more people",
+  "notifServerEventPromoted": "Your event is being promoted in Explore",
+  "notifServerBoostAgainProfile": "Boost again to keep reaching more people",
+  "notifServerBoostAgainEvent": "Boost again to keep it featured",
+  "notifServerCheckedIn": "You're checked in — enjoy!",
+  "notifServerTicketReady": "Your ticket is ready",
+  "notifServerTicketSold": "Ticket sold",
+  "notifServerPaymentToConfirm": "Payment to confirm",
+  "notifServerPaymentNotConfirmed": "Payment not confirmed",
+  "notifServerPaymentsWaiting": "Payments waiting for your confirmation",
+  "notifServerTicketRefunded": "Ticket refunded",
+  "notifServerTicketDisputed": "Ticket payment disputed",
+  "notifServerRefundToPayBack": "Refund to pay back",
+  "notifServerTicketReservationExpired": "Ticket reservation expired",
+  "notifServerExperienceHidden": "Your experience was hidden after several reports",
+  "notifServerPendingReview": "Pending review by GreenGo",
+  "notifServerMonthlyCoinsAdded": "Monthly coins added",
+  "notifServerSupportReplied": "Support replied to your ticket",
+  "notifServerSupportNewReply": "You have a new reply from support.",
+  "notifServerIncognitoExpiring": "Incognito Mode Expiring Soon",
+  "notifServerIncognitoExpiringBody": "Your Incognito Mode expires in less than 1 hour!",
+  "notifServerTravelerExpiring": "Traveler Mode Expiring Soon",
+  "notifServerTravelerExpiringBody": "Your Traveler Mode expires in less than 1 hour!",
+  "notifServerProfileVerified": "Profile Verified!",
+  "notifServerProfileVerifiedBody": "Your profile has been verified! You now have a verified badge.",
+  "notifServerNewVerificationPhoto": "New Verification Photo Needed",
+  "notifServerVerificationUpdate": "Verification Update",
+  "notifServerJoinedYourCommunity": "joined your community {name}",
+  "@notifServerJoinedYourCommunity": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerJoinedYourEvent": "joined your event {name}",
+  "@notifServerJoinedYourEvent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerLikedYourEvent": "liked your event {name}",
+  "@notifServerLikedYourEvent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerJoinedYourGroup": "joined your group {name}",
+  "@notifServerJoinedYourGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerAddedYouAsCoOwner": "added you as a co-owner of {name}",
+  "@notifServerAddedYouAsCoOwner": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerAddedYouToGroup": "added you to {name}",
+  "@notifServerAddedYouToGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerEventBoostLive": "Your event {name} boost is now live",
+  "@notifServerEventBoostLive": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerEventBoostEnded": "Your event {name} boost has ended",
+  "@notifServerEventBoostEnded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerTicketScanned": "Your ticket for {name} was scanned",
+  "@notifServerTicketScanned": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerNewEventIn": "New event in {name}",
+  "@notifServerNewEventIn": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerEventCancelledIn": "Event cancelled in {name}",
+  "@notifServerEventCancelledIn": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerEventUpdatedIn": "Event updated in {name}",
+  "@notifServerEventUpdatedIn": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerNewEventFrom": "New event from {name}",
+  "@notifServerNewEventFrom": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifServerAnnouncement": "Announcement · {name}",
+  "@notifServerAnnouncement": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "culturalExchangeCategoryFood": "Food",
+  "culturalExchangeCategoryTransportation": "Transportation",
+  "culturalExchangeCategoryDating": "Dating",
+  "culturalExchangeCategoryCustoms": "Customs",
+  "culturalExchangeCategoryLanguage": "Language",
+  "culturalExchangeCategorySafety": "Safety",
+  "culturalExchangeSectionCuisine": "Cuisine",
+  "culturalExchangeSectionCustoms": "Customs",
+  "culturalExchangeSectionKeyPhrases": "Key Phrases",
+  "culturalExchangeSectionPhrases": "Phrases",
+  "culturalExchangeSpotlightBadge": "SPOTLIGHT",
+  "culturalExchangeContentComingSoon": "Content coming soon",
+  "culturalExchangeContentComingSoonBody": "We are preparing detailed content for this spotlight.",
+  "culturalExchangeLike": "Like",
+  "culturalExchangeWeeksAgo": "{count}w ago",
+  "@culturalExchangeWeeksAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "culturalExchangeMonthsAgo": "{count}mo ago",
+  "@culturalExchangeMonthsAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "culturalExchangeDailyInsightJapanBow": "In Japan, it is customary to bow when greeting someone. The deeper the bow, the more respect you show.",
+  "culturalExchangeSelectCountry": "Select a Country",
+  "culturalExchangeChooseCountry": "Choose a country...",
+  "culturalExchangeSelectCountryAbove": "Select a country above",
+  "culturalExchangeLearnEtiquette": "Learn dating etiquette from 20+ countries\naround the world",
+  "culturalExchangeDos": "Do's",
+  "culturalExchangeDonts": "Don'ts",
+  "notifNewConversationTitle": "New Conversation",
+  "notifNewMessageFrom": "New message from {name}",
+  "@notifNewMessageFrom": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifStartedConversation": "{name} started a conversation with you.",
+  "@notifStartedConversation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifNewPhotoLikeTitle": "New Photo Like",
+  "notifLikedYourPhoto": "{name} liked your photo",
+  "@notifLikedYourPhoto": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifCoinsReceivedTitle": "You received coins!"
 }

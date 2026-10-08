@@ -50,6 +50,7 @@ class GamificationState extends Equatable {
     this.isLoading = false,
     this.errorMessage,
     this.successMessage,
+    this.errorNotice,
   });
 
   factory GamificationState.initial() => const GamificationState();
@@ -87,7 +88,12 @@ class GamificationState extends Equatable {
   // General State
   final bool isLoading;
   final String? errorMessage;
-  final String? successMessage;
+  /// User-facing success notice; the UI localizes it
+  /// (see `localizedGamificationNotice`).
+  final GamificationNotice? successMessage;
+
+  /// User-facing info/error notice (e.g. a level-gated feature is locked).
+  final GamificationNotice? errorNotice;
 
   GamificationState copyWith({
     // Achievements
@@ -130,7 +136,8 @@ class GamificationState extends Equatable {
     // General
     bool? isLoading,
     String? errorMessage,
-    String? successMessage,
+    GamificationNotice? successMessage,
+    GamificationNotice? errorNotice,
     bool clearMessages = false,
   }) {
     return GamificationState(
@@ -181,6 +188,7 @@ class GamificationState extends Equatable {
       errorMessage: clearMessages ? null : (errorMessage ?? this.errorMessage),
       successMessage:
           clearMessages ? null : (successMessage ?? this.successMessage),
+      errorNotice: clearMessages ? null : (errorNotice ?? this.errorNotice),
     );
   }
 
@@ -221,5 +229,52 @@ class GamificationState extends Equatable {
         isLoading,
         errorMessage,
         successMessage,
+        errorNotice,
       ];
+}
+
+/// Kinds of user-facing notices the gamification bloc emits.
+enum GamificationNoticeType {
+  achievementUnlocked,
+  achievementReady,
+  levelUp,
+  vipAchieved,
+  levelRewardsClaimed,
+  featureLocked,
+  challengeCompleted,
+  challengeRewardsClaimed,
+}
+
+/// A user-facing notice as data (type + params). The bloc has no
+/// BuildContext, so the UI turns it into localized text.
+class GamificationNotice extends Equatable {
+  const GamificationNotice(
+    this.type, {
+    this.id,
+    this.fallbackName,
+    this.level = 0,
+    this.amount = 0,
+    this.rewardType,
+    this.xp = 0,
+    this.coins = 0,
+  });
+
+  final GamificationNoticeType type;
+
+  /// Achievement / challenge / feature id the notice is about.
+  final String? id;
+
+  /// English name used when [id] is unknown to the client catalogue.
+  final String? fallbackName;
+  final int level;
+
+  /// Reward amount (achievementUnlocked) or levels remaining (featureLocked).
+  final int amount;
+  final String? rewardType;
+  final int xp;
+  final int coins;
+
+  @override
+  List<Object?> get props =>
+      [type, id, fallbackName, level, amount, rewardType, xp, coins];
 }

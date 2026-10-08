@@ -218,6 +218,9 @@ class OnboardingError extends OnboardingState {
   const OnboardingError({required this.message});
   final String message;
 
+  /// [message] code: the current step still has required fields missing.
+  static const String incompleteStepCode = 'onboarding_incomplete_step';
+
   @override
   List<Object?> get props => [message];
 }

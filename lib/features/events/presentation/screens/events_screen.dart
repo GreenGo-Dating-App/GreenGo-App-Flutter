@@ -982,7 +982,7 @@ class _EventsScreenState extends State<EventsScreen>
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         children: [
-          _buildCategoryChip(null, 'All'),
+          _buildCategoryChip(null, AppLocalizations.of(context)!.eventsCategoryAll),
           ...cats.map((category) {
             return _buildCategoryChip(category, _getCategoryName(category));
           }),
@@ -1015,31 +1015,32 @@ class _EventsScreenState extends State<EventsScreen>
   }
 
   String _getCategoryName(EventCategory category) {
+    final l10n = AppLocalizations.of(context)!;
     switch (category) {
       case EventCategory.dating:
-        return 'Dating';
+        return l10n.passportEventDating;
       case EventCategory.social:
-        return 'Social';
+        return l10n.passportEventSocial;
       case EventCategory.sports:
-        return 'Sports';
+        return l10n.passportEventSports;
       case EventCategory.food:
-        return 'Food & Drink';
+        return l10n.catFoodDrink;
       case EventCategory.nightlife:
-        return 'Nightlife';
+        return l10n.passportEventNightlife;
       case EventCategory.outdoor:
-        return 'Outdoor';
+        return l10n.passportEventOutdoor;
       case EventCategory.arts:
-        return 'Arts';
+        return l10n.passportEventArts;
       case EventCategory.gaming:
-        return 'Gaming';
+        return l10n.passportEventGaming;
       case EventCategory.travel:
-        return 'Travel';
+        return l10n.passportEventTravel;
       case EventCategory.wellness:
-        return 'Wellness';
+        return l10n.passportEventWellness;
       case EventCategory.languageExchange:
-        return 'Language';
+        return l10n.passportEventLanguageExchange;
       case EventCategory.other:
-        return 'Other';
+        return l10n.passportEventOther;
     }
   }
 
@@ -2291,7 +2292,7 @@ class EventCard extends StatelessWidget {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Text(
-                            '${event.currency ?? '\$'}${event.price?.toStringAsFixed(0)}',
+                            '${event.currency ?? '\$'}${event.price?.toStringAsFixed(0)}', // i18n-ignore: currency + amount
                             style: const TextStyle(
                               color: AppColors.richGold,
                               fontWeight: FontWeight.bold,
@@ -2941,7 +2942,9 @@ class EventDetailsScreen extends StatelessWidget {
                               final attendee = visibleGoing[index];
                               final name = attendee.displayNameFor(
                                   currentUserId,
-                                  event.organizerViewIdFor(currentUserId));
+                                  event.organizerViewIdFor(currentUserId),
+                                  anonymousLabel: AppLocalizations.of(context)!
+                                      .chatSomeone);
                               final anon = attendee.isAnonymous &&
                                   currentUserId != attendee.userId &&
                                   !event.isOwner(currentUserId);
@@ -3006,7 +3009,7 @@ class EventDetailsScreen extends StatelessWidget {
             children: [
               if (!event.isFree)
                 Text(
-                  '${event.currency ?? '\$'}${event.price?.toStringAsFixed(0)}',
+                  '${event.currency ?? '\$'}${event.price?.toStringAsFixed(0)}', // i18n-ignore: currency + amount
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 20,

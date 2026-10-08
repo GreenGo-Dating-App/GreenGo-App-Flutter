@@ -18,6 +18,7 @@ import '../../../../features/coins/data/datasources/coin_remote_datasource.dart'
 import '../../../../features/coins/presentation/screens/coin_shop_screen.dart';
 import '../../../../features/membership/domain/entities/membership.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/chat_l10n.dart';
 import '../../domain/entities/message.dart';
 import 'location_message_map.dart';
 import 'deleted_message_bubble.dart';
@@ -247,15 +248,15 @@ class _MessageBubbleState extends State<MessageBubble> {
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.lightbulb, color: AppColors.richGold),
-            SizedBox(width: 8),
-            Text('Cultural Context', style: TextStyle(color: AppColors.textPrimary)),
+            const Icon(Icons.lightbulb, color: AppColors.richGold),
+            const SizedBox(width: 8),
+            Text(AppLocalizations.of(ctx)!.chatCulturalContextTitle, style: const TextStyle(color: AppColors.textPrimary)),
           ],
         ),
         content: Text(_culturalTooltip!, style: const TextStyle(color: AppColors.textSecondary)),
-        actions: [TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('OK'))],
+        actions: [TextButton(onPressed: () => Navigator.pop(ctx), child: Text(AppLocalizations.of(ctx)!.ok))],
       ),
     );
   }
@@ -265,7 +266,7 @@ class _MessageBubbleState extends State<MessageBubble> {
     if (tier == MembershipTier.free) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Word breakdown is available for Silver, Gold, and Platinum members')),
+          SnackBar(content: Text(AppLocalizations.of(context)!.chatWordBreakdownTierRequired)),
         );
       }
       return;
@@ -289,7 +290,7 @@ class _MessageBubbleState extends State<MessageBubble> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Word Breakdown', style: TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+            Text(AppLocalizations.of(ctx)!.chatSettingWordBreakdown, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 12),
             Wrap(
               spacing: 8,
@@ -595,7 +596,7 @@ class _MessageBubbleState extends State<MessageBubble> {
                     const SizedBox(width: 4),
                   ],
                   Text(
-                    message.timeText,
+                    chatClockTime(context, message.sentAt),
                     style: TextStyle(
                       color: isCurrentUser
                           ? AppColors.deepBlack.withOpacity(0.6)
@@ -751,7 +752,7 @@ class _MessageBubbleState extends State<MessageBubble> {
               ],
               const SizedBox(height: 4),
               Text(
-                message.timeText,
+                chatClockTime(context, message.sentAt),
                 style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 10,
@@ -963,14 +964,14 @@ class _MessageBubbleState extends State<MessageBubble> {
               const SizedBox(height: 4),
               GestureDetector(
                 onTap: _showCulturalTooltip,
-                child: const Row(
+                child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text('\u{1F4A1}', style: TextStyle(fontSize: 14)),
-                    SizedBox(width: 4),
+                    const Text('\u{1F4A1}', style: TextStyle(fontSize: 14)),
+                    const SizedBox(width: 4),
                     Text(
-                      'Cultural context',
-                      style: TextStyle(
+                      AppLocalizations.of(context)!.chatCulturalContextLink,
+                      style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 11,
                         fontWeight: FontWeight.w500,

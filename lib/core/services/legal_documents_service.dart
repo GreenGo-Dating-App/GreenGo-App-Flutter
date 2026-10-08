@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import '../../generated/app_localizations.dart';
 
 /// Supported language codes
 class SupportedLanguage {
@@ -18,13 +19,13 @@ class SupportedLanguage {
 
 /// List of supported languages
 const List<SupportedLanguage> supportedLanguages = [
-  SupportedLanguage(code: 'en', name: 'English', flag: ''),
-  SupportedLanguage(code: 'pt_BR', name: 'Português (Brasil)', flag: ''),
-  SupportedLanguage(code: 'pt', name: 'Português', flag: ''),
-  SupportedLanguage(code: 'es', name: 'Español', flag: ''),
-  SupportedLanguage(code: 'fr', name: 'Français', flag: ''),
-  SupportedLanguage(code: 'de', name: 'Deutsch', flag: ''),
-  SupportedLanguage(code: 'it', name: 'Italiano', flag: ''),
+  SupportedLanguage(code: 'en', name: 'English', flag: ''), // i18n-ignore: language autonym
+  SupportedLanguage(code: 'pt_BR', name: 'Português (Brasil)', flag: ''), // i18n-ignore: language autonym
+  SupportedLanguage(code: 'pt', name: 'Português', flag: ''), // i18n-ignore: language autonym
+  SupportedLanguage(code: 'es', name: 'Español', flag: ''), // i18n-ignore: language autonym
+  SupportedLanguage(code: 'fr', name: 'Français', flag: ''), // i18n-ignore: language autonym
+  SupportedLanguage(code: 'de', name: 'Deutsch', flag: ''), // i18n-ignore: language autonym
+  SupportedLanguage(code: 'it', name: 'Italiano', flag: ''), // i18n-ignore: language autonym
 ];
 
 /// Document types
@@ -53,12 +54,24 @@ extension LegalDocumentTypeExtension on LegalDocumentType {
     }
   }
 
+  /// English fallback title (used when a bundled document has no header).
+  /// UI should use [localizedName].
   String get displayName {
     switch (this) {
       case LegalDocumentType.termsAndConditions:
         return 'Terms & Conditions';
       case LegalDocumentType.privacyPolicy:
         return 'Privacy Policy';
+    }
+  }
+
+  /// Localized document title for the UI.
+  String localizedName(AppLocalizations l10n) {
+    switch (this) {
+      case LegalDocumentType.termsAndConditions:
+        return l10n.termsAndConditions;
+      case LegalDocumentType.privacyPolicy:
+        return l10n.privacyPolicy;
     }
   }
 }

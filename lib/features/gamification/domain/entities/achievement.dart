@@ -140,8 +140,8 @@ class Achievements {
   // Point 177: First Match
   static const Achievement firstMatch = Achievement(
     achievementId: 'first_match',
-    name: 'First Match',
-    description: 'Get your first mutual like',
+    name: 'First Match', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Get your first mutual like', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.milestones,
     rarity: AchievementRarity.common,
     iconUrl: 'assets/achievements/first_match.png',
@@ -153,8 +153,8 @@ class Achievements {
   // Point 178: Conversation Starter
   static const Achievement conversationStarter = Achievement(
     achievementId: 'conversation_starter',
-    name: 'Conversation Starter',
-    description: 'Initiate 10 conversations',
+    name: 'Conversation Starter', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Initiate 10 conversations', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.uncommon,
     iconUrl: 'assets/achievements/conversation_starter.png',
@@ -166,8 +166,8 @@ class Achievements {
   // Point 179: Video Champion
   static const Achievement videoChampion = Achievement(
     achievementId: 'video_champion',
-    name: 'Video Champion',
-    description: 'Complete 5 video calls',
+    name: 'Video Champion', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete 5 video calls', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.rare,
     iconUrl: 'assets/achievements/video_champion.png',
@@ -179,8 +179,8 @@ class Achievements {
   // Point 180: Profile Master
   static const Achievement profileMaster = Achievement(
     achievementId: 'profile_master',
-    name: 'Profile Master',
-    description: 'Complete all profile sections 100%',
+    name: 'Profile Master', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete all profile sections 100%', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.milestones,
     rarity: AchievementRarity.uncommon,
     iconUrl: 'assets/achievements/profile_master.png',
@@ -192,8 +192,8 @@ class Achievements {
   // Point 181: Globe Trotter
   static const Achievement globeTrotter = Achievement(
     achievementId: 'globe_trotter',
-    name: 'Globe Trotter',
-    description: 'Match with users from 10+ countries',
+    name: 'Globe Trotter', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Match with users from 10+ countries', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/globe_trotter.png',
@@ -205,8 +205,8 @@ class Achievements {
   // Point 182: Generous Heart
   static const Achievement generousHeart = Achievement(
     achievementId: 'generous_heart',
-    name: 'Generous Heart',
-    description: 'Gift coins to matches',
+    name: 'Generous Heart', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Gift coins to matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.premium,
     rarity: AchievementRarity.rare,
     iconUrl: 'assets/achievements/generous_heart.png',
@@ -218,8 +218,8 @@ class Achievements {
   // Point 183: Daily Dedication
   static const Achievement dailyDedication = Achievement(
     achievementId: 'daily_dedication',
-    name: 'Daily Dedication',
-    description: '7-day consecutive login streak',
+    name: 'Daily Dedication', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: '7-day consecutive login streak', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.uncommon,
     iconUrl: 'assets/achievements/daily_dedication.png',
@@ -231,8 +231,8 @@ class Achievements {
   // Point 184: Super Star
   static const Achievement superStar = Achievement(
     achievementId: 'super_star',
-    name: 'Super Star',
-    description: 'Receive 50+ super likes',
+    name: 'Super Star', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Receive 50+ super likes', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.legendary,
     iconUrl: 'assets/achievements/super_star.png',
@@ -244,8 +244,8 @@ class Achievements {
   // Point 185: Social Butterfly
   static const Achievement socialButterfly = Achievement(
     achievementId: 'social_butterfly',
-    name: 'Social Butterfly',
-    description: 'Maintain 20+ active conversations',
+    name: 'Social Butterfly', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Maintain 20+ active conversations', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/social_butterfly.png',
@@ -257,8 +257,8 @@ class Achievements {
   // Additional Achievements (to reach 50+)
   static const Achievement perfectWeek = Achievement(
     achievementId: 'perfect_week',
-    name: 'Perfect Week',
-    description: 'Complete all daily challenges for 7 days',
+    name: 'Perfect Week', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete all daily challenges for 7 days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/perfect_week.png',
@@ -269,8 +269,8 @@ class Achievements {
 
   static const Achievement earlyBird = Achievement(
     achievementId: 'early_bird',
-    name: 'Early Bird',
-    description: 'Send messages before 9 AM on 10 days',
+    name: 'Early Bird', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Send messages before 9 AM on 10 days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.uncommon,
     iconUrl: 'assets/achievements/early_bird.png',
@@ -281,8 +281,8 @@ class Achievements {
 
   static const Achievement nightOwl = Achievement(
     achievementId: 'night_owl',
-    name: 'Night Owl',
-    description: 'Send messages after 10 PM on 10 days',
+    name: 'Night Owl', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Send messages after 10 PM on 10 days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.uncommon,
     iconUrl: 'assets/achievements/night_owl.png',
@@ -293,8 +293,8 @@ class Achievements {
 
   static const Achievement centurion = Achievement(
     achievementId: 'centurion',
-    name: 'Centurion',
-    description: 'Reach 100 total matches',
+    name: 'Centurion', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Reach 100 total matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.milestones,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/centurion.png',
@@ -305,8 +305,8 @@ class Achievements {
 
   static const Achievement speedDater = Achievement(
     achievementId: 'speed_dater',
-    name: 'Speed Dater',
-    description: 'Match with 10 people in one day',
+    name: 'Speed Dater', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Match with 10 people in one day', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.social,
     rarity: AchievementRarity.rare,
     iconUrl: 'assets/achievements/speed_dater.png',
@@ -317,8 +317,8 @@ class Achievements {
 
   static const Achievement photoCollector = Achievement(
     achievementId: 'photo_collector',
-    name: 'Photo Collector',
-    description: 'Add 6 photos to your profile',
+    name: 'Photo Collector', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Add 6 photos to your profile', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.milestones,
     rarity: AchievementRarity.common,
     iconUrl: 'assets/achievements/photo_collector.png',
@@ -329,8 +329,8 @@ class Achievements {
 
   static const Achievement trendSetter = Achievement(
     achievementId: 'trend_setter',
-    name: 'Trend Setter',
-    description: 'Be among the first 1000 users',
+    name: 'Trend Setter', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Be among the first 1000 users', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.special,
     rarity: AchievementRarity.legendary,
     iconUrl: 'assets/achievements/trend_setter.png',
@@ -342,8 +342,8 @@ class Achievements {
 
   static const Achievement verified = Achievement(
     achievementId: 'verified',
-    name: 'Verified',
-    description: 'Complete photo verification',
+    name: 'Verified', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete photo verification', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.milestones,
     rarity: AchievementRarity.uncommon,
     iconUrl: 'assets/achievements/verified.png',
@@ -354,8 +354,8 @@ class Achievements {
 
   static const Achievement premiumMember = Achievement(
     achievementId: 'premium_member',
-    name: 'Premium Member',
-    description: 'Subscribe to Silver or Gold tier',
+    name: 'Premium Member', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Subscribe to Silver or Gold tier', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.premium,
     rarity: AchievementRarity.rare,
     iconUrl: 'assets/achievements/premium_member.png',
@@ -366,8 +366,8 @@ class Achievements {
 
   static const Achievement coinCollector = Achievement(
     achievementId: 'coin_collector',
-    name: 'Coin Collector',
-    description: 'Accumulate 1000 coins',
+    name: 'Coin Collector', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Accumulate 1000 coins', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.premium,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/coin_collector.png',
@@ -378,8 +378,8 @@ class Achievements {
 
   static const Achievement monthlyStreak = Achievement(
     achievementId: 'monthly_streak',
-    name: 'Monthly Dedication',
-    description: '30-day consecutive login streak',
+    name: 'Monthly Dedication', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: '30-day consecutive login streak', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.legendary,
     iconUrl: 'assets/achievements/monthly_streak.png',
@@ -391,8 +391,8 @@ class Achievements {
   // Vocabulary achievements
   static const Achievement vocabularyBeginner = Achievement(
     achievementId: 'vocabulary_beginner',
-    name: 'Word Explorer',
-    description: 'Use 100 unique words in chat',
+    name: 'Word Explorer', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Use 100 unique words in chat', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.common,
     iconUrl: 'assets/achievements/vocabulary_beginner.png',
@@ -403,8 +403,8 @@ class Achievements {
 
   static const Achievement vocabularyIntermediate = Achievement(
     achievementId: 'vocabulary_intermediate',
-    name: 'Wordsmith',
-    description: 'Use 500 unique words in chat',
+    name: 'Wordsmith', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Use 500 unique words in chat', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.uncommon,
     iconUrl: 'assets/achievements/vocabulary_intermediate.png',
@@ -415,8 +415,8 @@ class Achievements {
 
   static const Achievement vocabularyAdvanced = Achievement(
     achievementId: 'vocabulary_advanced',
-    name: 'Vocabulary Expert',
-    description: 'Use 1000 unique words in chat',
+    name: 'Vocabulary Expert', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Use 1000 unique words in chat', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.rare,
     iconUrl: 'assets/achievements/vocabulary_advanced.png',
@@ -427,8 +427,8 @@ class Achievements {
 
   static const Achievement vocabularyMaster = Achievement(
     achievementId: 'vocabulary_master',
-    name: 'Vocabulary Master',
-    description: 'Use 5000 unique words in chat',
+    name: 'Vocabulary Master', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Use 5000 unique words in chat', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.legendary,
     iconUrl: 'assets/achievements/vocabulary_master.png',
@@ -439,8 +439,8 @@ class Achievements {
 
   static const Achievement rareWordHunter = Achievement(
     achievementId: 'rare_word_hunter',
-    name: 'Rare Word Hunter',
-    description: 'Use 50 rare words (frequency score below 50)',
+    name: 'Rare Word Hunter', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Use 50 rare words (frequency score below 50)', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     category: AchievementCategory.engagement,
     rarity: AchievementRarity.epic,
     iconUrl: 'assets/achievements/rare_word_hunter.png',

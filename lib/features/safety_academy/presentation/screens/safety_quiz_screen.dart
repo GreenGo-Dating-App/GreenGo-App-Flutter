@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/safety_lesson.dart';
 import '../../domain/entities/safety_quiz.dart';
 
@@ -64,6 +65,7 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
   }
 
   Widget _buildQuestionScreen() {
+    final l10n = AppLocalizations.of(context)!;
     final progress = (_currentQuestionIndex + 1) / _questions.length;
 
     return Padding(
@@ -75,7 +77,10 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
           Row(
             children: [
               Text(
-                'Question ${_currentQuestionIndex + 1} of ${_questions.length}',
+                l10n.safetyAcademyQuestionOf(
+                  _currentQuestionIndex + 1,
+                  _questions.length,
+                ),
                 style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 13,
@@ -83,7 +88,7 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
               ),
               const Spacer(),
               Text(
-                '$_correctAnswers correct',
+                l10n.safetyAcademyCorrectCount(_correctAnswers),
                 style: const TextStyle(
                   color: AppColors.successGreen,
                   fontSize: 13,
@@ -150,8 +155,8 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
                 ),
                 child: Text(
                   _currentQuestionIndex < _questions.length - 1
-                      ? 'Next Question'
-                      : 'See Results',
+                      ? l10n.safetyAcademyNextQuestion
+                      : l10n.safetyAcademySeeResults,
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
@@ -250,6 +255,7 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
   }
 
   Widget _buildExplanation() {
+    final l10n = AppLocalizations.of(context)!;
     final isCorrect =
         _selectedOptionIndex == _currentQuestion.correctIndex;
 
@@ -269,7 +275,7 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            isCorrect ? 'Correct!' : 'Not quite.',
+            isCorrect ? l10n.correctAnswer : l10n.learningNotQuite,
             style: TextStyle(
               color:
                   isCorrect ? AppColors.successGreen : AppColors.warningAmber,
@@ -292,6 +298,7 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
   }
 
   Widget _buildResultScreen() {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(24),
@@ -308,7 +315,9 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
 
             // Result title
             Text(
-              _passed ? 'Great Job!' : 'Keep Learning!',
+              _passed
+                  ? l10n.safetyAcademyGreatJob
+                  : l10n.safetyAcademyKeepLearning,
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 24,
@@ -328,7 +337,10 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              '$_correctAnswers out of ${_questions.length} correct',
+              l10n.safetyAcademyScoreSummary(
+                _correctAnswers,
+                _questions.length,
+              ),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 16,
@@ -336,7 +348,7 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
             ),
             const SizedBox(height: 4),
             Text(
-              'Passing score: ${widget.quiz.passingScore}%',
+              l10n.safetyAcademyPassingScore(widget.quiz.passingScore),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 14,
@@ -362,7 +374,7 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
                     ),
                   ),
                   child: Text(
-                    'Complete Lesson (+${widget.lesson.xpReward} XP)',
+                    l10n.safetyAcademyCompleteLessonXp(widget.lesson.xpReward),
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
@@ -383,9 +395,9 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  child: const Text(
-                    'Try Again',
-                    style: TextStyle(
+                  child: Text(
+                    l10n.tryAgain,
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
@@ -405,9 +417,9 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  child: const Text(
-                    'Review Lesson',
-                    style: TextStyle(fontSize: 16),
+                  child: Text(
+                    l10n.safetyAcademyReviewLesson,
+                    style: const TextStyle(fontSize: 16),
                   ),
                 ),
               ),
@@ -453,24 +465,25 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
   }
 
   void _showExitConfirmation(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Exit Quiz?',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.safetyAcademyExitQuizTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Your progress will be lost.',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          l10n.safetyAcademyExitQuizBody,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
-            child: const Text(
-              'Cancel',
-              style: TextStyle(color: AppColors.textTertiary),
+            child: Text(
+              l10n.cancel,
+              style: const TextStyle(color: AppColors.textTertiary),
             ),
           ),
           TextButton(
@@ -478,9 +491,9 @@ class _SafetyQuizScreenState extends State<SafetyQuizScreen> {
               Navigator.of(ctx).pop();
               Navigator.of(context).pop();
             },
-            child: const Text(
-              'Exit',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              l10n.exit,
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],

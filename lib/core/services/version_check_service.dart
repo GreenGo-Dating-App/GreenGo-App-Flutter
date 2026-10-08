@@ -150,8 +150,9 @@ class VersionCheckService extends ChangeNotifier {
     if (data == null) return;
 
     _maintenanceMode = data['maintenanceMode'] as bool? ?? false;
-    _maintenanceMessage = data['maintenanceMessage'] as String? ??
-        'We are currently performing maintenance. Please try again later.';
+    // Empty = no server message; MaintenanceScreen then shows its localized
+    // default text.
+    _maintenanceMessage = data['maintenanceMessage'] as String? ?? '';
 
     final androidData = data['android'] as Map<String, dynamic>?;
     final iosData = data['ios'] as Map<String, dynamic>?;

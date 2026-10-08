@@ -1,5 +1,8 @@
 import 'dart:async';
 
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:intl/intl.dart' show Intl;
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -97,6 +100,10 @@ import 'generated/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Date/number symbols for every locale, so DateFormat works with the app's
+  // active locale (Intl.defaultLocale is kept in sync in GreenGoApp.build).
+  await initializeDateFormatting();
 
   // A build failure must never leave a blank page. Flutter's default release
   // ErrorWidget is a flat grey rectangle, which on web is indistinguishable
@@ -442,6 +449,10 @@ class GreenGoChatApp extends StatelessWidget {
       ],
       child: Consumer<LanguageProvider>(
         builder: (context, languageProvider, child) {
+          // DateFormat/NumberFormat without an explicit locale follow the
+          // app's chosen language (e.g. 'pt_BR'), not English.
+          Intl.defaultLocale = Intl.canonicalizedLocale(
+              languageProvider.currentLocale.toString());
           return MaterialApp(
             navigatorKey: PushNotificationService.navigatorKey,
             title: AppStrings.appName,
@@ -817,7 +828,8 @@ class _AuthWrapperState extends State<AuthWrapper> with WidgetsBindingObserver {
         Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(
             builder: (context) => MaintenanceScreen(
-              message: result.maintenanceMessage ?? 'We are currently performing maintenance.',
+              message: result.maintenanceMessage ??
+                  AppLocalizations.of(context)!.maintenanceDefaultMessage,
             ),
           ),
           (route) => false,
@@ -1856,9 +1868,9 @@ class _ComingSoonScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Coming Soon',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.comingSoonLabel,
+              style: const TextStyle(
                 color: Color(0xFFD4AF37),
                 fontSize: 16,
               ),

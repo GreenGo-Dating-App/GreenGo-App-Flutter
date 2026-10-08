@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/dating_etiquette.dart';
 import '../bloc/cultural_exchange_bloc.dart';
@@ -91,15 +92,16 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
   }
 
   Widget _buildCountrySelector(CulturalExchangeState state) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       color: AppColors.backgroundCard,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            'Select a Country',
-            style: TextStyle(
+          Text(
+            l10n.culturalExchangeSelectCountry,
+            style: const TextStyle(
               color: AppColors.textSecondary,
               fontSize: 12,
               fontWeight: FontWeight.w500,
@@ -120,9 +122,9 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
             child: DropdownButtonHideUnderline(
               child: DropdownButton<String>(
                 value: _selectedCountry,
-                hint: const Text(
-                  'Choose a country...',
-                  style: TextStyle(
+                hint: Text(
+                  l10n.culturalExchangeChooseCountry,
+                  style: const TextStyle(
                     color: AppColors.textTertiary,
                     fontSize: 14,
                   ),
@@ -137,7 +139,7 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
                   return DropdownMenuItem<String>(
                     value: country,
                     child: Text(
-                      country,
+                      localizedCountryName(l10n, country),
                       style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 14,
@@ -162,6 +164,7 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
   }
 
   Widget _buildSelectCountryPrompt() {
+    final l10n = AppLocalizations.of(context)!;
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -172,19 +175,19 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
             color: AppColors.richGold.withValues(alpha: 0.4),
           ),
           const SizedBox(height: 16),
-          const Text(
-            'Select a country above',
-            style: TextStyle(
+          Text(
+            l10n.culturalExchangeSelectCountryAbove,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 18,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 8),
-          const Text(
-            'Learn dating etiquette from 20+ countries\naround the world',
+          Text(
+            l10n.culturalExchangeLearnEtiquette,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 14,
               height: 1.4,
@@ -206,6 +209,7 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
   }
 
   Widget _buildEtiquetteSection(EtiquetteSection section) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
@@ -249,19 +253,19 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
           // Do's list
           if (section.doList.isNotEmpty) ...[
             const Divider(color: AppColors.divider, height: 1),
-            const Padding(
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 0),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
               child: Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.check_circle,
                     color: AppColors.successGreen,
                     size: 18,
                   ),
-                  SizedBox(width: 6),
+                  const SizedBox(width: 6),
                   Text(
-                    'Do\'s',
-                    style: TextStyle(
+                    l10n.culturalExchangeDos,
+                    style: const TextStyle(
                       color: AppColors.successGreen,
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -305,19 +309,19 @@ class _DatingEtiquetteScreenState extends State<DatingEtiquetteScreen> {
           // Don'ts list
           if (section.dontList.isNotEmpty) ...[
             const Divider(color: AppColors.divider, height: 1),
-            const Padding(
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 0),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
               child: Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.cancel,
                     color: AppColors.errorRed,
                     size: 18,
                   ),
-                  SizedBox(width: 6),
+                  const SizedBox(width: 6),
                   Text(
-                    'Don\'ts',
-                    style: TextStyle(
+                    l10n.culturalExchangeDonts,
+                    style: const TextStyle(
                       color: AppColors.errorRed,
                       fontSize: 14,
                       fontWeight: FontWeight.bold,

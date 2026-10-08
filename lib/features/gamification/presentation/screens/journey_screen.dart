@@ -2,7 +2,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_journey.dart';
+import '../utils/gamification_l10n.dart';
 
 /// Journey Screen
 /// Shows user's progression path with milestones and rewards
@@ -176,7 +178,8 @@ class _JourneyScreenState extends State<JourneyScreen>
                           style: const TextStyle(fontSize: 12),
                         ),
                         const SizedBox(width: 2),
-                        Text(_getShortCategoryName(category)),
+                        Text(localizedJourneyCategoryShort(
+                            AppLocalizations.of(context)!, category)),
                       ],
                     ),
                   ),
@@ -204,22 +207,8 @@ class _JourneyScreenState extends State<JourneyScreen>
     }
   }
 
-  String _getShortCategoryName(JourneyCategory category) {
-    switch (category) {
-      case JourneyCategory.gettingStarted:
-        return 'Start';
-      case JourneyCategory.socializing:
-        return 'Social';
-      case JourneyCategory.premium:
-        return 'VIP';
-      case JourneyCategory.mastery:
-        return 'Master';
-      case JourneyCategory.special:
-        return 'Special';
-    }
-  }
-
   Widget _buildGlassHeader(double progress, int completedCount) {
+    final l10n = AppLocalizations.of(context)!;
     final totalMilestones = JourneyMilestones.all.length;
 
     return SafeArea(
@@ -274,9 +263,9 @@ class _JourneyScreenState extends State<JourneyScreen>
             const SizedBox(height: 12),
 
             // Title
-            const Text(
-              'Your Journey',
-              style: TextStyle(
+            Text(
+              l10n.gamificationJourneyTitle,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -285,7 +274,8 @@ class _JourneyScreenState extends State<JourneyScreen>
             ),
             const SizedBox(height: 4),
             Text(
-              '$completedCount of $totalMilestones milestones completed',
+              l10n.gamificationJourneyMilestonesCompleted(
+                  completedCount, totalMilestones),
               style: TextStyle(
                 color: AppColors.textSecondary.withValues(alpha: 0.8),
                 fontSize: 13,
@@ -312,9 +302,9 @@ class _JourneyScreenState extends State<JourneyScreen>
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text(
-                            'Overall Progress',
-                            style: TextStyle(
+                          Text(
+                            l10n.gamificationJourneyOverallProgress,
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 13,
                             ),
@@ -421,16 +411,16 @@ class _MilestonesListView extends StatelessWidget {
               ),
             ),
             const SizedBox(height: AppDimensions.paddingM),
-            const Text(
-              'No milestones yet',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.gamificationJourneyNoMilestones,
+              style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 16,
               ),
             ),
             const SizedBox(height: 4),
             Text(
-              'Complete previous categories to unlock',
+              AppLocalizations.of(context)!.gamificationJourneyCompletePrevious,
               style: TextStyle(
                 color: AppColors.textTertiary.withValues(alpha: 0.7),
                 fontSize: 13,
@@ -446,7 +436,7 @@ class _MilestonesListView extends StatelessWidget {
       itemCount: milestones.length + 1,
       itemBuilder: (context, index) {
         if (index == 0) {
-          return _buildCategoryHeader();
+          return _buildCategoryHeader(AppLocalizations.of(context)!);
         }
 
         final milestone = milestones[index - 1];
@@ -465,7 +455,7 @@ class _MilestonesListView extends StatelessWidget {
     );
   }
 
-  Widget _buildCategoryHeader() {
+  Widget _buildCategoryHeader(AppLocalizations l10n) {
     return Padding(
       padding: const EdgeInsets.only(bottom: AppDimensions.paddingL),
       child: ClipRRect(
@@ -493,7 +483,7 @@ class _MilestonesListView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        category.displayName,
+                        localizedJourneyCategoryName(l10n, category),
                         style: const TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 18,
@@ -502,7 +492,7 @@ class _MilestonesListView extends StatelessWidget {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        category.description,
+                        localizedJourneyCategoryDescription(l10n, category),
                         style: TextStyle(
                           color: AppColors.textSecondary.withValues(alpha: 0.8),
                           fontSize: 13,
@@ -679,7 +669,8 @@ class _GlassMilestoneCardState extends State<_GlassMilestoneCard>
                   children: [
                     Expanded(
                       child: Text(
-                        widget.milestone.name,
+                        localizedJourneyMilestoneName(
+                            AppLocalizations.of(context)!, widget.milestone),
                         style: TextStyle(
                           color: widget.isLocked
                               ? AppColors.textTertiary
@@ -695,7 +686,8 @@ class _GlassMilestoneCardState extends State<_GlassMilestoneCard>
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  widget.milestone.description,
+                  localizedJourneyMilestoneDescription(
+                      AppLocalizations.of(context)!, widget.milestone),
                   style: TextStyle(
                     color: widget.isLocked
                         ? AppColors.textTertiary.withValues(alpha: 0.6)
@@ -806,18 +798,18 @@ class _GlassMilestoneCardState extends State<_GlassMilestoneCard>
           ),
         ],
       ),
-      child: const Row(
+      child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(
+          const Icon(
             Icons.check,
             color: Colors.white,
             size: 12,
           ),
-          SizedBox(width: 4),
+          const SizedBox(width: 4),
           Text(
-            'DONE',
-            style: TextStyle(
+            AppLocalizations.of(context)!.gamificationDone.toUpperCase(),
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 10,
               fontWeight: FontWeight.bold,
@@ -982,7 +974,7 @@ class _GlassRewardChip extends StatelessWidget {
           ),
           const SizedBox(width: 4),
           Text(
-            _getRewardText(),
+            _getRewardText(AppLocalizations.of(context)!),
             style: TextStyle(
               color: isLocked ? AppColors.textTertiary : _getRewardColor(),
               fontSize: 12,
@@ -1026,17 +1018,16 @@ class _GlassRewardChip extends StatelessWidget {
     }
   }
 
-  String _getRewardText() {
-    if (reward.description != null) {
-      return reward.description!;
-    }
+  String _getRewardText(AppLocalizations l10n) {
+    // The reward's English `description` is not shown; text is built from
+    // the reward type so it is localized.
     switch (reward.type) {
       case 'coins':
         return '+${reward.amount}';
       case 'xp':
-        return '+${reward.amount} XP';
+        return l10n.xpRewardLabel('${reward.amount}');
       case 'badge':
-        return 'Badge';
+        return l10n.gamificationRewardBadge;
       case 'boost':
         return '${reward.amount}x';
       default:
@@ -1058,6 +1049,7 @@ class _GlassMilestoneDetailsSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return ClipRRect(
       borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
       child: BackdropFilter(
@@ -1125,7 +1117,7 @@ class _GlassMilestoneDetailsSheet extends StatelessWidget {
 
                   // Title
                   Text(
-                    milestone.name,
+                    localizedJourneyMilestoneName(l10n, milestone),
                     style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 26,
@@ -1135,7 +1127,7 @@ class _GlassMilestoneDetailsSheet extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    milestone.description,
+                    localizedJourneyMilestoneDescription(l10n, milestone),
                     style: TextStyle(
                       color: AppColors.textSecondary.withValues(alpha: 0.8),
                       fontSize: 15,
@@ -1165,9 +1157,9 @@ class _GlassMilestoneDetailsSheet extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  const Text(
-                                    'Progress',
-                                    style: TextStyle(
+                                  Text(
+                                    l10n.gamificationProgress,
+                                    style: const TextStyle(
                                       color: AppColors.textSecondary,
                                       fontSize: 14,
                                     ),
@@ -1227,9 +1219,9 @@ class _GlassMilestoneDetailsSheet extends StatelessWidget {
                   ],
 
                   // Rewards section (only XP and Coins)
-                  const Text(
-                    '🎁 Rewards',
-                    style: TextStyle(
+                  Text(
+                    '🎁 ${l10n.gamificationRewardsTitle}',
+                    style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontWeight: FontWeight.bold,
                       fontSize: 18,

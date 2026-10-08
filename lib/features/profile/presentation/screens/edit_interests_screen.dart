@@ -6,6 +6,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../discovery/presentation/discovery_l10n.dart';
 import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
@@ -261,7 +262,8 @@ class _EditInterestsScreenState extends State<EditInterestsScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Text(
-                            interest,
+                            localizedInterestName(
+                                AppLocalizations.of(context)!, interest),
                             style: TextStyle(
                               color: isSelected
                                   ? AppColors.deepBlack

@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'access_control_service.dart';
+import '../../generated/app_localizations.dart';
 
 /// Pre-sale tier levels
 enum PreSaleTier {
@@ -106,6 +107,10 @@ class PreSaleImportResult {
 
   String get summary =>
       'Imported: $successCount | Duplicates: $duplicateCount | Errors: $errorCount';
+
+  /// Localized [summary] for the admin UI.
+  String localizedSummary(AppLocalizations l10n) =>
+      l10n.adminImportSummary(successCount, duplicateCount, errorCount);
 }
 
 /// Service for managing the pre-sale email/tier list.

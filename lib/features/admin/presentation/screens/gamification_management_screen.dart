@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
@@ -7,6 +8,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../gamification/domain/entities/achievement.dart';
 import '../../../gamification/domain/entities/daily_challenge.dart';
 import '../../../gamification/domain/entities/login_streak.dart';
+import '../../../gamification/presentation/utils/gamification_l10n.dart';
 
 /// Gamification Management Screen
 /// Admin interface for managing achievements, challenges, and streaks
@@ -127,7 +129,8 @@ class _AchievementsTab extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    category.displayName,
+                    localizedAchievementCategory(
+                        AppLocalizations.of(context)!, category),
                     style: const TextStyle(
                       color: AppColors.textPrimary,
                       fontSize: 16,
@@ -159,8 +162,11 @@ class _AchievementsTab extends StatelessWidget {
     BuildContext context,
     Achievement achievement,
   ) {
-    final nameController = TextEditingController(text: achievement.name);
-    final descController = TextEditingController(text: achievement.description);
+    final l10n = AppLocalizations.of(context)!;
+    final nameController = TextEditingController(
+        text: localizedAchievementName(l10n, achievement));
+    final descController = TextEditingController(
+        text: localizedAchievementDescription(l10n, achievement));
     final countController =
         TextEditingController(text: achievement.requiredCount.toString());
     final rewardController =
@@ -235,7 +241,7 @@ class _AchievementsTab extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -251,7 +257,7 @@ class _AchievementsTab extends StatelessWidget {
               backgroundColor: AppColors.richGold,
               foregroundColor: Colors.black,
             ),
-            child: const Text('Save'),
+            child: Text(AppLocalizations.of(context)!.save),
           ),
         ],
       ),
@@ -325,7 +331,7 @@ class _AchievementCard extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                achievement.name,
+                localizedAchievementName(AppLocalizations.of(context)!, achievement),
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontWeight: FontWeight.w600,
@@ -339,7 +345,8 @@ class _AchievementCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Text(
-                achievement.rarity.displayName,
+                localizedAchievementRarity(
+                    AppLocalizations.of(context)!, achievement.rarity),
                 style: TextStyle(
                   color: Color(achievement.rarity.colorValue),
                   fontSize: 10,
@@ -353,7 +360,8 @@ class _AchievementCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              achievement.description,
+              localizedAchievementDescription(
+                  AppLocalizations.of(context)!, achievement),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
@@ -373,7 +381,8 @@ class _AchievementCard extends StatelessWidget {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  '+${achievement.rewardAmount} ${achievement.rewardType}',
+                  localizedRewardAmount(AppLocalizations.of(context)!,
+                      achievement.rewardType, achievement.rewardAmount),
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 11,
@@ -481,7 +490,7 @@ class _ChallengesTab extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Close'),
+            child: Text(AppLocalizations.of(context)!.close),
           ),
         ],
       ),
@@ -520,7 +529,7 @@ class _ChallengeCard extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                challenge.name,
+                localizedChallengeName(AppLocalizations.of(context)!, challenge),
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontWeight: FontWeight.w600,
@@ -534,7 +543,8 @@ class _ChallengeCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Text(
-                challenge.difficulty.displayName,
+                localizedChallengeDifficulty(
+                    AppLocalizations.of(context)!, challenge.difficulty),
                 style: TextStyle(
                   color: Color(challenge.difficulty.colorValue),
                   fontSize: 10,
@@ -548,7 +558,8 @@ class _ChallengeCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              challenge.description,
+              localizedChallengeDescription(
+                  AppLocalizations.of(context)!, challenge),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
@@ -826,7 +837,7 @@ class _MilestoneCard extends StatelessWidget {
           ),
         ),
         title: Text(
-          milestone.name,
+          localizedStreakMilestoneName(AppLocalizations.of(context)!, milestone),
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.w600,
@@ -836,7 +847,8 @@ class _MilestoneCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              milestone.description,
+              localizedStreakMilestoneDescription(
+                  AppLocalizations.of(context)!, milestone),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
@@ -905,7 +917,7 @@ class _MilestoneCard extends StatelessWidget {
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          l10n.adminEditMilestone(milestone.name),
+          l10n.adminEditMilestone(localizedStreakMilestoneName(l10n, milestone)),
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
@@ -948,7 +960,7 @@ class _MilestoneCard extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -964,7 +976,7 @@ class _MilestoneCard extends StatelessWidget {
               backgroundColor: AppColors.richGold,
               foregroundColor: Colors.black,
             ),
-            child: const Text('Save'),
+            child: Text(AppLocalizations.of(context)!.save),
           ),
         ],
       ),
@@ -1056,7 +1068,7 @@ class _EventsTab extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Close'),
+            child: Text(AppLocalizations.of(context)!.close),
           ),
         ],
       ),
@@ -1116,7 +1128,8 @@ class _EventCard extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            event.name,
+                            localizedSeasonalEventName(
+                                AppLocalizations.of(context)!, event),
                             style: const TextStyle(
                               color: AppColors.textPrimary,
                               fontWeight: FontWeight.bold,
@@ -1147,7 +1160,8 @@ class _EventCard extends StatelessWidget {
                         ],
                       ),
                       Text(
-                        event.description,
+                        localizedSeasonalEventDescription(
+                            AppLocalizations.of(context)!, event),
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 12,
@@ -1172,7 +1186,7 @@ class _EventCard extends StatelessWidget {
                         color: AppColors.textTertiary, size: 16),
                     const SizedBox(width: 8),
                     Text(
-                      '${_formatDate(event.startDate)} - ${_formatDate(event.endDate)}',
+                      '${_formatDate(context, event.startDate)} - ${_formatDate(context, event.endDate)}',
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 12,
@@ -1203,11 +1217,6 @@ class _EventCard extends StatelessWidget {
     );
   }
 
-  String _formatDate(DateTime date) {
-    final months = [
-      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
-    ];
-    return '${months[date.month - 1]} ${date.day}';
-  }
+  String _formatDate(BuildContext context, DateTime date) =>
+      DateFormat.MMMd(Localizations.localeOf(context).toString()).format(date);
 }

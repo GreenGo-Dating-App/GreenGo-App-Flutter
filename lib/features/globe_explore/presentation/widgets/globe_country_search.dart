@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/country_flag_helper.dart';
+import '../../../../core/utils/country_names_l10n.dart';
+import '../../../../generated/app_localizations.dart';
 import '../bloc/globe_bloc.dart';
 import '../bloc/globe_event.dart';
 
@@ -22,6 +25,8 @@ class GlobeCountrySearch {
 class _CountrySearchDelegate extends SearchDelegate<String?> {
 
   _CountrySearchDelegate(this.countries);
+
+  /// Stored (English) country names; only the display is localized.
   final List<String> countries;
 
   @override
@@ -62,56 +67,36 @@ class _CountrySearchDelegate extends SearchDelegate<String?> {
   Widget buildSuggestions(BuildContext context) => _buildList(context);
 
   Widget _buildList(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    // Search matches both the localized and the stored English name; the
+    // list is shown (and sorted) by the localized name.
     final filtered = countries
-        .where((c) => c.toLowerCase().contains(query.toLowerCase()))
-        .toList();
+        .where((c) => countryMatchesQuery(l10n, c, query))
+        .map((c) => (stored: c, label: localizedCountryName(l10n, c)))
+        .toList()
+      ..sort((a, b) => a.label.toLowerCase().compareTo(b.label.toLowerCase()));
     return Container(
       color: AppColors.backgroundDark,
       child: ListView.builder(
         itemCount: filtered.length,
         itemBuilder: (_, i) => ListTile(
           leading: Text(
-            _countryToFlagEmoji(filtered[i]),
+            _countryToFlagEmoji(filtered[i].stored),
             style: const TextStyle(fontSize: 24),
           ),
           title: Text(
-            filtered[i],
+            filtered[i].label,
             style: const TextStyle(color: AppColors.textPrimary),
           ),
-          onTap: () => close(context, filtered[i]),
+          onTap: () => close(context, filtered[i].stored),
         ),
       ),
     );
   }
 
   String _countryToFlagEmoji(String country) {
-    // Map common country names to ISO 3166-1 alpha-2 codes
-    const countryToCode = {
-      'Afghanistan': 'AF', 'Albania': 'AL', 'Algeria': 'DZ',
-      'Argentina': 'AR', 'Australia': 'AU', 'Austria': 'AT',
-      'Bangladesh': 'BD', 'Belgium': 'BE', 'Brazil': 'BR',
-      'Canada': 'CA', 'Chile': 'CL', 'China': 'CN',
-      'Colombia': 'CO', 'Czech Republic': 'CZ', 'Czechia': 'CZ',
-      'Denmark': 'DK', 'Egypt': 'EG', 'Finland': 'FI',
-      'France': 'FR', 'Germany': 'DE', 'Greece': 'GR',
-      'Hungary': 'HU', 'India': 'IN', 'Indonesia': 'ID',
-      'Iran': 'IR', 'Iraq': 'IQ', 'Ireland': 'IE',
-      'Israel': 'IL', 'Italy': 'IT', 'Japan': 'JP',
-      'Kenya': 'KE', 'Malaysia': 'MY', 'Mexico': 'MX',
-      'Morocco': 'MA', 'Netherlands': 'NL', 'New Zealand': 'NZ',
-      'Nigeria': 'NG', 'Norway': 'NO', 'Pakistan': 'PK',
-      'Peru': 'PE', 'Philippines': 'PH', 'Poland': 'PL',
-      'Portugal': 'PT', 'Romania': 'RO', 'Russia': 'RU',
-      'Saudi Arabia': 'SA', 'Singapore': 'SG', 'South Africa': 'ZA',
-      'South Korea': 'KR', 'Spain': 'ES', 'Sweden': 'SE',
-      'Switzerland': 'CH', 'Thailand': 'TH', 'Turkey': 'TR',
-      'Ukraine': 'UA', 'United Arab Emirates': 'AE',
-      'United Kingdom': 'GB', 'United States': 'US', 'Vietnam': 'VN',
-    };
-    final code = countryToCode[country];
+    final code = countryCodeFor(country);
     if (code == null || code.length != 2) return '\u{1F30D}';
-    final flag = String.fromCharCode(code.codeUnitAt(0) + 0x1F1A5) +
-        String.fromCharCode(code.codeUnitAt(1) + 0x1F1A5);
-    return flag;
+    return CountryFlagHelper.getFlag(code);
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart' show DateFormat;
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
@@ -422,6 +423,7 @@ class _LuxuryCountdownWidgetState extends State<LuxuryCountdownWidget>
   }
 
   Widget _buildCompletedState() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
@@ -448,9 +450,9 @@ class _LuxuryCountdownWidgetState extends State<LuxuryCountdownWidget>
             color: AppColors.successGreen,
           ),
           const SizedBox(height: 16),
-          const Text(
-            'Launch Day!',
-            style: TextStyle(
+          Text(
+            l10n.countdownLaunchDay,
+            style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
               color: AppColors.successGreen,
@@ -458,7 +460,7 @@ class _LuxuryCountdownWidgetState extends State<LuxuryCountdownWidget>
           ),
           const SizedBox(height: 8),
           Text(
-            'GreenGo Chat is now available',
+            l10n.countdownNowAvailable,
             style: TextStyle(
               fontSize: 14,
               color: Colors.white.withValues(alpha: 0.8),
@@ -470,11 +472,8 @@ class _LuxuryCountdownWidgetState extends State<LuxuryCountdownWidget>
   }
 
   String _formatDate(DateTime date) {
-    const months = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-    return '${months[date.month - 1]} ${date.day}, ${date.year}';
+    final localeName = AppLocalizations.of(context)?.localeName;
+    return DateFormat.yMMMMd(localeName).format(date);
   }
 }
 

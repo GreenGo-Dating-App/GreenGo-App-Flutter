@@ -151,8 +151,17 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
 
         emit(state.copyWith(
           recentlyUnlocked: unlockResult.achievement,
-          successMessage:
-              '${unlockResult.achievement.name} unlocked! +${unlockResult.rewardsGranted.first.amount} ${unlockResult.rewardsGranted.first.type}',
+          successMessage: GamificationNotice(
+            GamificationNoticeType.achievementUnlocked,
+            id: unlockResult.achievement.achievementId,
+            fallbackName: unlockResult.achievement.name,
+            amount: unlockResult.rewardsGranted.isEmpty
+                ? 0
+                : unlockResult.rewardsGranted.first.amount,
+            rewardType: unlockResult.rewardsGranted.isEmpty
+                ? null
+                : unlockResult.rewardsGranted.first.type,
+          ),
         ));
 
         // Reload achievements
@@ -179,8 +188,11 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
         // If achievement was just completed, show notification
         if (progressResult.wasCompleted && progressResult.achievement != null) {
           emit(state.copyWith(
-            successMessage:
-                'Achievement complete! Ready to unlock: ${progressResult.achievement!.name}',
+            successMessage: GamificationNotice(
+              GamificationNoticeType.achievementReady,
+              id: progressResult.achievement!.achievementId,
+              fallbackName: progressResult.achievement!.name,
+            ),
           ));
         }
 
@@ -234,15 +246,18 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
             leveledUp: true,
             previousLevel: xpResult.oldLevel.level,
             pendingRewards: xpResult.rewards,
-            successMessage:
-                'Level Up! You reached level ${xpResult.newLevel.level}!',
+            successMessage: GamificationNotice(
+              GamificationNoticeType.levelUp,
+              level: xpResult.newLevel.level,
+            ),
           ));
 
           // Check if VIP status achieved (Point 193)
           if (xpResult.becameVIP) {
             emit(state.copyWith(
-              successMessage:
-                  'Congratulations! You\'ve achieved VIP status! 👑',
+              successMessage: const GamificationNotice(
+                GamificationNoticeType.vipAchieved,
+              ),
             ));
           }
         } else {
@@ -328,8 +343,11 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
 
         emit(state.copyWith(
           pendingRewards: [],
-          successMessage:
-              'Level ${claimResult.level} rewards claimed! ${claimResult.totalCoins > 0 ? '+${claimResult.totalCoins} coins' : ''}',
+          successMessage: GamificationNotice(
+            GamificationNoticeType.levelRewardsClaimed,
+            level: claimResult.level,
+            coins: claimResult.totalCoins,
+          ),
         ));
 
         // Reload user level
@@ -354,8 +372,13 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
       (unlockStatus) {
         if (!unlockStatus.isUnlocked && unlockStatus.requiredLevel != null) {
           emit(state.copyWith(
-            errorMessage:
-                '${unlockStatus.featureName} unlocks at level ${unlockStatus.requiredLevel}. ${unlockStatus.levelsRemaining} levels to go!',
+            errorNotice: GamificationNotice(
+              GamificationNoticeType.featureLocked,
+              id: unlockStatus.featureId,
+              fallbackName: unlockStatus.featureName,
+              level: unlockStatus.requiredLevel!,
+              amount: unlockStatus.levelsRemaining ?? 0,
+            ),
           ));
         }
       },
@@ -404,8 +427,11 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
         if (progressResult.wasCompleted && progressResult.challenge != null) {
           emit(state.copyWith(
             recentlyCompleted: progressResult.challenge,
-            successMessage:
-                'Challenge complete! ${progressResult.challenge!.name}',
+            successMessage: GamificationNotice(
+              GamificationNoticeType.challengeCompleted,
+              id: progressResult.challenge!.challengeId,
+              fallbackName: progressResult.challenge!.name,
+            ),
           ));
         }
 
@@ -451,8 +477,13 @@ class GamificationBloc extends Bloc<GamificationEvent, GamificationState> {
         }
 
         emit(state.copyWith(
-          successMessage:
-              '${claimResult.challengeName} rewards claimed! ${claimResult.totalXP > 0 ? '+${claimResult.totalXP} XP' : ''} ${claimResult.totalCoins > 0 ? '+${claimResult.totalCoins} coins' : ''}',
+          successMessage: GamificationNotice(
+            GamificationNoticeType.challengeRewardsClaimed,
+            id: event.challengeId,
+            fallbackName: claimResult.challengeName,
+            xp: claimResult.totalXP,
+            coins: claimResult.totalCoins,
+          ),
         ));
 
         // Reload challenges

@@ -76,7 +76,7 @@ class PurchaseSuccessDialog extends StatefulWidget {
   }) {
     final l10n = AppLocalizations.of(context)!;
     final formattedDate = '${endDate.day}/${endDate.month}/${endDate.year}';
-    final coinsText = coinsGranted > 0 ? '\n$coinsGranted GreenGo Coins added!' : '';
+    final coinsText = coinsGranted > 0 ? '\n${l10n.purchaseSuccessCoinsAdded(coinsGranted)}' : '';
 
     return showDialog(
       context: context,

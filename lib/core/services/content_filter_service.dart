@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
 
+import '../../generated/app_localizations.dart';
+
 /// Content Filter Service
 ///
 /// Detects and filters sensitive content like emails, phone numbers,
@@ -177,6 +179,7 @@ class ContentFilterService {
       hasEmail: hasEmail,
       hasPhone: hasPhone,
       hasSocialMedia: hasSocialMedia,
+      hasWrittenPhone: hasPhone && hasWrittenPhone,
       violations: violations,
     );
   }
@@ -286,12 +289,26 @@ class ContentFilterResult {
     required this.hasPhone,
     required this.hasSocialMedia,
     required this.violations,
+    this.hasWrittenPhone = false,
   });
   final bool hasContactInfo;
   final bool hasEmail;
   final bool hasPhone;
   final bool hasSocialMedia;
+  final bool hasWrittenPhone;
+
+  /// English developer labels (logs). Use [localizedViolations] for UI.
   final List<String> violations;
+
+  /// User-facing, localized names of the kinds of contact info found.
+  List<String> localizedViolations(AppLocalizations l10n) => [
+        if (hasEmail) l10n.contentFilterViolationEmail,
+        if (hasPhone)
+          hasWrittenPhone
+              ? l10n.contentFilterViolationPhoneWords
+              : l10n.contentFilterViolationPhone,
+        if (hasSocialMedia) l10n.contentFilterViolationSocial,
+      ];
 
   @override
   String toString() {

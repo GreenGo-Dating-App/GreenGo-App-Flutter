@@ -57,6 +57,7 @@ import 'profile_detail_screen.dart';
 import 'travel_explore_map_screen.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// Discovery Screen
@@ -1354,7 +1355,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                cols == 0 ? 'Auto' : '$cols',
+                cols == 0
+                    ? AppLocalizations.of(context)!.discoveryGridAuto
+                    : '$cols',
                 style: TextStyle(
                   color: isSelected ? Colors.white : AppColors.textTertiary,
                   fontSize: 12,
@@ -2056,7 +2059,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           ],
         ),
         content: Text(
-          '${state.featureName}: ${l10n.coinsRequired(state.required)}\n${l10n.coinsCost(state.available)}',
+          '${state.feature == DiscoveryCoinFeature.undo ? l10n.undoSwipe : l10n.superLike}: ${l10n.coinsRequired(state.required)}\n${l10n.coinsCost(state.available)}',
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
@@ -2203,7 +2206,9 @@ class _GridProfileCardState extends State<_GridProfileCard>
             AppLocalizations.of(context)!, widget.card.candidate.distance);
     final cityText = location.city.isNotEmpty && location.city != 'Unknown'
         ? location.city
-        : (location.country.isNotEmpty && location.country != 'Unknown' ? location.country : '');
+        : (location.country.isNotEmpty && location.country != 'Unknown'
+            ? localizedCountryName(AppLocalizations.of(context)!, location.country)
+            : '');
 
     // Check if profile is boosted (self-profile always gets boost animation)
     final isBoosted = widget.isSelfProfile ||
@@ -2798,7 +2803,9 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               Expanded(
                                 child: Text(
                                   widget.isRandomMode
-                                      ? (cityText.isNotEmpty ? cityText : location.country)
+                                      ? (cityText.isNotEmpty
+                                          ? cityText
+                                          : localizedCountryName(AppLocalizations.of(context)!, location.country))
                                       : (cityText.isNotEmpty ? '$distanceText · $cityText' : distanceText),
                                   style: TextStyle(
                                     color: Colors.white70,
@@ -2817,7 +2824,8 @@ class _GridProfileCardState extends State<_GridProfileCard>
                               Icon(Icons.connect_without_contact, color: AppColors.richGold, size: widget.gridColumns == 3 ? 12 : 15),
                               const SizedBox(width: 4),
                               Text(
-                                '${widget.card.matchPercentage} match',
+                                AppLocalizations.of(context)!
+                                    .matchPercentage(widget.card.matchPercentage),
                                 style: TextStyle(
                                   color: AppColors.richGold,
                                   fontSize: widget.gridColumns == 3 ? 11 : 14,

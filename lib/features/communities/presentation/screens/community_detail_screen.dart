@@ -15,6 +15,7 @@ import '../../../../core/services/blocked_users_service.dart';
 import '../../../safety/presentation/widgets/age_verification_gate.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/community_l10n.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -1724,7 +1725,7 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Text(
-                      widget.community.type.displayName,
+                      communityTypeLabel(AppLocalizations.of(context)!, widget.community.type),
                       style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 13,
@@ -1937,20 +1938,6 @@ class _CommunityDetailScreenState extends State<CommunityDetailScreen>
   }
 
   String _formatDate(DateTime date) {
-    final months = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ];
-    return '${months[date.month - 1]} ${date.day}, ${date.year}';
+    return MaterialLocalizations.of(context).formatMediumDate(date);
   }
 }

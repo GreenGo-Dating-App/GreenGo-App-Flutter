@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/country_names_l10n.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/cultural_tip.dart';
+import '../cultural_exchange_l10n.dart';
 
 /// Card widget for displaying a user-submitted cultural tip
 class CulturalTipCard extends StatelessWidget {
@@ -16,6 +19,7 @@ class CulturalTipCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       margin: const EdgeInsets.only(bottom: 12),
       decoration: BoxDecoration(
@@ -77,7 +81,7 @@ class CulturalTipCard extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                       ),
                       Text(
-                        _formatTimeAgo(tip.createdAt),
+                        localizedTimeAgo(l10n, tip.createdAt),
                         style: const TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 11,
@@ -102,7 +106,7 @@ class CulturalTipCard extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    tip.country,
+                    localizedCountryName(l10n, tip.country),
                     style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 11,
@@ -125,7 +129,7 @@ class CulturalTipCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(6),
               ),
               child: Text(
-                '${tip.category.emoji} ${tip.category.displayName}',
+                '${tip.category.emoji} ${localizedTipCategory(l10n, tip.category)}',
                 style: TextStyle(
                   color: _getCategoryColor(tip.category),
                   fontSize: 11,
@@ -177,7 +181,7 @@ class CulturalTipCard extends StatelessWidget {
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        tip.likes > 0 ? '${tip.likes}' : 'Like',
+                        tip.likes > 0 ? '${tip.likes}' : l10n.culturalExchangeLike,
                         style: TextStyle(
                           color: isLiked
                               ? AppColors.errorRed
@@ -214,15 +218,4 @@ class CulturalTipCard extends StatelessWidget {
     }
   }
 
-  String _formatTimeAgo(DateTime dateTime) {
-    final now = DateTime.now();
-    final diff = now.difference(dateTime);
-
-    if (diff.inMinutes < 1) return 'Just now';
-    if (diff.inMinutes < 60) return '${diff.inMinutes}m ago';
-    if (diff.inHours < 24) return '${diff.inHours}h ago';
-    if (diff.inDays < 7) return '${diff.inDays}d ago';
-    if (diff.inDays < 30) return '${(diff.inDays / 7).floor()}w ago';
-    return '${(diff.inDays / 30).floor()}mo ago';
-  }
 }

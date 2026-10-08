@@ -25,6 +25,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../subscription/domain/entities/subscription.dart';
+import '../../../subscription/presentation/tier_l10n.dart';
 import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/coin_promotion.dart';
@@ -600,7 +601,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       if (mounted) {
         PurchaseSuccessDialog.showSubscriptionActivated(
           context,
-          tierName: subscribedTier.displayName,
+          tierName: localizedSubscriptionTierName(
+              AppLocalizations.of(context)!, subscribedTier),
           tier: subscribedTier,
         );
       }
@@ -1149,7 +1151,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
               ),
               const SizedBox(height: 8),
               Text(
-                AppLocalizations.of(context)!.shopCurrentPlan(currentTier.displayName),
+                AppLocalizations.of(context)!.shopCurrentPlan(localizedSubscriptionTierName(AppLocalizations.of(context)!, currentTier)),
                 style: TextStyle(
                   fontSize: 14,
                   color: AppColors.richGold.withValues(alpha: 0.8),
@@ -1382,11 +1384,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         Text(
                           isUpgrade
                               ? AppLocalizations.of(context)!.shopUpgradeTo(
-                                  _selectedTier!.displayName,
+                                  localizedSubscriptionTierName(AppLocalizations.of(context)!, _selectedTier!),
                                   _isYearlySelected ? AppLocalizations.of(context)!.shopOneYear : AppLocalizations.of(context)!.shopOneMonth,
                                 )
                               : AppLocalizations.of(context)!.shopBuyTier(
-                                  _selectedTier!.displayName,
+                                  localizedSubscriptionTierName(AppLocalizations.of(context)!, _selectedTier!),
                                   _isYearlySelected ? AppLocalizations.of(context)!.shopOneYear : AppLocalizations.of(context)!.shopOneMonth,
                                 ),
                           style: const TextStyle(
@@ -1500,7 +1502,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       Text(
                         // Price with /year + taxes (localized) in place of the
                         // generic "Yearly subscription" label. Region/store price.
-                        '${_priceFor(ProductCatalog.baseMembership, '\$4.99')}${AppLocalizations.of(context)!.shopPerYear}  ${AppLocalizations.of(context)!.plusTaxes}',
+                        '${_priceFor(ProductCatalog.baseMembership, '\$4.99')}${AppLocalizations.of(context)!.shopPerYear}  ${AppLocalizations.of(context)!.plusTaxes}', // i18n-ignore: price + localized parts
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -1732,8 +1734,8 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                     ),
                     child: Text(
                       _membershipEndDate != null
-                          ? 'CURRENT • Expires ${_membershipEndDate!.day.toString().padLeft(2, '0')}/${_membershipEndDate!.month.toString().padLeft(2, '0')}/${_membershipEndDate!.year}'
-                          : 'CURRENT',
+                          ? AppLocalizations.of(context)!.shopCurrentExpires(_ddmmyyyy(_membershipEndDate!))
+                          : AppLocalizations.of(context)!.shopCurrent,
                       style: const TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.bold,
@@ -1760,7 +1762,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                       ),
                     ),
                     child: Text(
-                      'SAVE ${(upgradeDiscount / tier.monthlyPrice * 100).toStringAsFixed(0)}%',
+                      AppLocalizations.of(context)!.shopSavePercent((upgradeDiscount / tier.monthlyPrice * 100).toStringAsFixed(0)),
                       style: const TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.bold,
@@ -1801,7 +1803,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                tier.displayName,
+                                localizedSubscriptionTierName(AppLocalizations.of(context)!, tier),
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -2209,6 +2211,18 @@ class _CoinShopScreenState extends State<CoinShopScreen>
     );
   }
 
+  /// Localized bonus line for a promotion; falls back to the (server-provided)
+  /// description when the promotion has no numeric bonus.
+  static String _promotionText(AppLocalizations l10n, CoinPromotion promotion) {
+    if (promotion.bonusPercentage != null) {
+      return l10n.coinPromoPercentBonus(promotion.bonusPercentage!);
+    }
+    if (promotion.bonusCoins != null) {
+      return l10n.shopBonusCoins(promotion.bonusCoins!);
+    }
+    return promotion.description;
+  }
+
   Widget _buildPromotionBanner(CoinPromotion promotion) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -2236,7 +2250,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                   ),
                 ),
                 Text(
-                  promotion.displayText,
+                  _promotionText(AppLocalizations.of(context)!, promotion),
                   style: const TextStyle(
                     fontSize: 12,
                     color: Colors.white70,
@@ -2247,7 +2261,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           ),
           if (promotion.daysRemaining > 0)
             Text(
-              '${promotion.daysRemaining}d left',
+              AppLocalizations.of(context)!.shopDaysLeft(promotion.daysRemaining),
               style: const TextStyle(
                 fontSize: 12,
                 color: Colors.white,
@@ -2368,7 +2382,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                             ),
                             const SizedBox(width: 8),
                             Text(
-                              '${package.coinsPerDollar.toStringAsFixed(0)} coins/\$',
+                              AppLocalizations.of(context)!.shopCoinsPerDollar(package.coinsPerDollar.toStringAsFixed(0)),
                               style: const TextStyle(
                                 fontSize: 11,
                                 color: Colors.grey,
@@ -2385,7 +2399,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Text(
-                              '+${package.bonusCoins} bonus coins',
+                              AppLocalizations.of(context)!.shopBonusCoins(package.bonusCoins!),
                               style: const TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w600,
@@ -2726,7 +2740,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            '$recipientName${recipientFamilyName.isNotEmpty ? ' $recipientFamilyName' : ''}',
+                            '$recipientName${recipientFamilyName.isNotEmpty ? ' $recipientFamilyName' : ''}', // i18n-ignore: user's name
                             style: const TextStyle(
                               color: AppColors.textPrimary,
                               fontSize: 16,
@@ -2757,7 +2771,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
                   const Icon(Icons.monetization_on, color: AppColors.richGold, size: 20),
                   const SizedBox(width: 6),
                   Text(
-                    '$amount coins',
+                    AppLocalizations.of(context)!.shopAmountCoins(amount),
                     style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 18,

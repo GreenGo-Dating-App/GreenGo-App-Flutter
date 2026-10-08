@@ -190,7 +190,7 @@ class _PhotoManagementScreenState extends State<PhotoManagementScreen>
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          '${l10n?.delete ?? "Delete"} Photo',
+          l10n?.photoDeleteTitle ?? 'Delete Photo',
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(

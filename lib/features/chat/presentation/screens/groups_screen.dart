@@ -200,7 +200,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
                           onTap: () => Navigator.of(context).push(
                             GroupChatScreen.route(
                               groupId: g.conversationId,
-                              groupName: g.groupInfo?.name ?? 'Group',
+                              groupName: g.groupInfo?.name ?? AppLocalizations.of(context)!.chatGroupFallbackName,
                               currentUserId: userId,
                               groupPhotoUrl: g.groupInfo?.photoUrl,
                             ),

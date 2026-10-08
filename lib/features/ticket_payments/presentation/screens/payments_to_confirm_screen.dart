@@ -183,9 +183,9 @@ class _PaymentsToConfirmScreenState extends State<PaymentsToConfirmScreen> {
                   overflow: TextOverflow.ellipsis,
                   style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
               const SizedBox(height: 2),
-              Text('${o.code ?? ''} · ${formatTicketAmount(o.totalAmount, o.currency)} · ${l.tpTicketsCount(o.quantity)}',
+              Text('${o.code ?? ''} · ${formatTicketAmount(o.totalAmount, o.currency)} · ${l.tpTicketsCount(o.quantity)}', // i18n-ignore: code + amount + localized count
                   style: const TextStyle(color: AppColors.richGold, fontSize: 13)),
-              Text('${TicketL10n.method(l, o.paymentMethod ?? '')} · $when',
+              Text('${TicketL10n.method(l, o.paymentMethod ?? '')} · $when', // i18n-ignore: localized method + date
                   style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
             ]),
           ),

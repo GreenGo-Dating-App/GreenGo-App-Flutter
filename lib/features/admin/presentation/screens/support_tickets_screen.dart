@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -496,14 +497,15 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
     final now = DateTime.now();
     final diff = now.difference(date);
 
+    final l10n = AppLocalizations.of(context)!;
     if (diff.inMinutes < 60) {
-      return '${diff.inMinutes}m ago';
+      return l10n.chatSupportMinutesAgo(diff.inMinutes);
     } else if (diff.inHours < 24) {
-      return '${diff.inHours}h ago';
+      return l10n.chatSupportHoursAgo(diff.inHours);
     } else if (diff.inDays < 7) {
-      return '${diff.inDays}d ago';
+      return l10n.chatSupportDaysAgo(diff.inDays);
     } else {
-      return '${date.day}/${date.month}/${date.year}';
+      return DateFormat.yMd(Localizations.localeOf(context).toString()).format(date);
     }
   }
 
@@ -625,9 +627,9 @@ class _SupportTicketsScreenState extends State<SupportTicketsScreen>
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text(
-              'Cancel',
-              style: TextStyle(color: AppColors.textSecondary),
+            child: Text(
+              AppLocalizations.of(context)!.cancel,
+              style: const TextStyle(color: AppColors.textSecondary),
             ),
           ),
           ElevatedButton(

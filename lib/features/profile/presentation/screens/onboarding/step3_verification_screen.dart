@@ -306,7 +306,9 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
 
     return BlocConsumer<OnboardingBloc, OnboardingState>(
       listener: (context, state) {
-        if (state is OnboardingError) {
+        if (state is OnboardingError &&
+            // The incomplete-step code is localized by OnboardingScreen.
+            state.message != OnboardingError.incompleteStepCode) {
           showUserError(context, state.message);
         }
       },
@@ -426,7 +428,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
               onPressed: () => setState(() => _selectedMethod = 'phone'),
               icon: const Icon(Icons.phone_android, color: AppColors.textTertiary, size: 18),
               label: Text(
-                '${AppLocalizations.of(context)?.verificationOr ?? 'or'} ${AppLocalizations.of(context)?.verificationMethodPhone ?? 'Phone Number'}',
+                AppLocalizations.of(context)!.verificationOrMethod(AppLocalizations.of(context)!.verificationMethodPhone),
                 style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
               ),
             ),
@@ -703,7 +705,7 @@ class _Step3VerificationScreenState extends State<Step3VerificationScreen> {
               onPressed: () => setState(() => _selectedMethod = 'photo'),
               icon: const Icon(Icons.badge_outlined, color: AppColors.textTertiary, size: 18),
               label: Text(
-                '${l10n?.verificationOr ?? 'or'} ${l10n?.verificationMethodPhoto ?? 'ID Document'}',
+                AppLocalizations.of(context)!.verificationOrMethod(AppLocalizations.of(context)!.verificationMethodPhoto),
                 style: const TextStyle(color: AppColors.textTertiary, fontSize: 13),
               ),
             ),

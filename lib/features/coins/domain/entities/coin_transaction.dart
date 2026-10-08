@@ -34,7 +34,11 @@ class CoinTransaction extends Equatable {
     return '$sign$amount';
   }
 
-  /// Get description
+  /// Localized description for UI (see [CoinTransactionReasonExtension.localizedDescription]).
+  String localizedDescription(AppLocalizations l10n) =>
+      reason.localizedDescription(l10n, amount: amount, metadata: metadata);
+
+  /// Get description (English; logs / admin / Firestore)
   String get description {
     return reason.getDescription(
       amount: amount,
@@ -254,14 +258,145 @@ extension CoinTransactionReasonExtension on CoinTransactionReason {
     }
   }
 
-  /// Localized label for UI. Only reasons with a translation key use it;
-  /// the rest fall back to [displayName].
+  /// Localized label for UI ([displayName] stays English for logs/admin).
   String localizedDisplayName(AppLocalizations l10n) {
     switch (this) {
+      case CoinTransactionReason.firstMatchReward:
+        return l10n.coinReasonFirstMatchReward;
+      case CoinTransactionReason.completeProfileReward:
+        return l10n.coinReasonCompleteProfileReward;
+      case CoinTransactionReason.dailyLoginStreakReward:
+        return l10n.coinReasonDailyLoginStreak;
+      case CoinTransactionReason.achievementReward:
+        return l10n.coinReasonAchievementUnlocked;
+      case CoinTransactionReason.monthlyAllowance:
+        return l10n.coinReasonMonthlyAllowance;
+      case CoinTransactionReason.giftReceived:
+        return l10n.coinReasonGiftReceived;
+      case CoinTransactionReason.giftSent:
+        return l10n.coinReasonGiftSent;
+      case CoinTransactionReason.promotionalBonus:
+        return l10n.coinReasonPromotionalBonus;
+      case CoinTransactionReason.referralBonus:
+        return l10n.coinReasonReferralBonus;
+      case CoinTransactionReason.coinPurchase:
+        return l10n.coinReasonCoinPurchase;
+      case CoinTransactionReason.refund:
+        return l10n.coinReasonRefund;
+      case CoinTransactionReason.superLikePurchase:
+        return l10n.tourSwipeHintSuper;
+      case CoinTransactionReason.boostPurchase:
+        return l10n.boostFeatureName;
+      case CoinTransactionReason.undoPurchase:
+        return l10n.coinReasonUndoLastSwipe;
+      case CoinTransactionReason.seeWhoLikedYouPurchase:
+        return l10n.coinReasonSeeWhoLikedYou;
+      case CoinTransactionReason.directMessagePurchase:
+        return l10n.coinReasonDirectMessage;
+      case CoinTransactionReason.incognitoPurchase:
+        return l10n.incognitoMode;
+      case CoinTransactionReason.travelerPurchase:
+        return l10n.travelerModeTitle;
+      case CoinTransactionReason.readReceiptsPurchase:
+        return l10n.shopReadReceipts;
+      case CoinTransactionReason.featurePurchase:
+        return l10n.coinReasonFeaturePurchase;
+      case CoinTransactionReason.expired:
+        return l10n.coinReasonCoinsExpired;
       case CoinTransactionReason.refundClawback:
         return l10n.coinReasonRefundClawback;
+      case CoinTransactionReason.adminAdjustment:
+        return l10n.coinReasonAdminAdjustment;
+    }
+  }
+
+  /// Localized history line for UI. [getDescription] stays English (logs,
+  /// admin, Firestore). Free-text metadata values (usernames, campaign names,
+  /// admin reasons) are shown as stored.
+  String localizedDescription(
+    AppLocalizations l10n, {
+    required int amount,
+    Map<String, dynamic>? metadata,
+  }) {
+    String? meta(String key) {
+      final v = metadata?[key];
+      if (v == null) return null;
+      final s = v.toString().trim();
+      return s.isEmpty ? null : s;
+    }
+
+    switch (this) {
+      case CoinTransactionReason.firstMatchReward:
+        return l10n.coinTxDescFirstMatch(amount);
+      case CoinTransactionReason.completeProfileReward:
+        return l10n.coinTxDescCompleteProfile(amount);
+      case CoinTransactionReason.dailyLoginStreakReward:
+        return l10n.coinTxDescDailyStreak(meta('streak') ?? '1', amount);
+      case CoinTransactionReason.achievementReward:
+        final achievement = meta('achievement');
+        return achievement == null
+            ? l10n.coinTxDescAchievementGeneric(amount)
+            : l10n.coinTxDescAchievement(achievement, amount);
+      case CoinTransactionReason.monthlyAllowance:
+        final tier = meta('tier');
+        return l10n.coinTxDescMonthlyAllowance(
+            tier == null ? 'Premium' : _localizedTier(l10n, tier), amount);
+      case CoinTransactionReason.giftReceived:
+        return l10n.coinTxDescGiftReceived(
+            amount, meta('fromUsername') ?? l10n.chatSomeone);
+      case CoinTransactionReason.giftSent:
+        return l10n.coinTxDescGiftSent(
+            amount, meta('toUsername') ?? l10n.chatSomeone);
+      case CoinTransactionReason.promotionalBonus:
+        final campaign = meta('campaign');
+        return campaign == null
+            ? l10n.coinTxDescPromotionalGeneric(amount)
+            : l10n.coinTxDescPromotional(campaign, amount);
+      case CoinTransactionReason.referralBonus:
+        return l10n.coinTxDescReferral(amount);
+      case CoinTransactionReason.coinPurchase:
+        final pkg = meta('package');
+        return pkg == null
+            ? l10n.coinTxDescPurchase(amount)
+            : l10n.coinTxDescPurchasePackage(amount, pkg);
+      case CoinTransactionReason.refund:
+        return l10n.coinTxDescRefund(amount);
+      case CoinTransactionReason.superLikePurchase:
+      case CoinTransactionReason.boostPurchase:
+      case CoinTransactionReason.undoPurchase:
+      case CoinTransactionReason.seeWhoLikedYouPurchase:
+      case CoinTransactionReason.directMessagePurchase:
+      case CoinTransactionReason.readReceiptsPurchase:
+        return l10n.coinTxDescUsedFor(amount, localizedDisplayName(l10n));
+      case CoinTransactionReason.incognitoPurchase:
+      case CoinTransactionReason.travelerPurchase:
+        return l10n.coinTxDescUsedFor(
+            amount, '${localizedDisplayName(l10n)} (24h)');
+      case CoinTransactionReason.featurePurchase:
+        return l10n.coinTxDescUsedFor(
+            amount, meta('feature') ?? l10n.coinReasonFeaturePurchase);
+      case CoinTransactionReason.expired:
+        return l10n.coinTxDescExpired(amount);
+      case CoinTransactionReason.refundClawback:
+        return l10n.coinTxDescClawback(amount);
+      case CoinTransactionReason.adminAdjustment:
+        final reason = meta('reason');
+        return reason == null
+            ? l10n.coinTxDescAdminGeneric(amount)
+            : l10n.coinTxDescAdmin(amount, reason);
+    }
+  }
+
+  static String _localizedTier(AppLocalizations l10n, String stored) {
+    switch (stored.trim().toUpperCase()) {
+      case 'SILVER':
+        return l10n.silver;
+      case 'GOLD':
+        return l10n.gold;
+      case 'PLATINUM':
+        return l10n.platinum;
       default:
-        return displayName;
+        return stored;
     }
   }
 

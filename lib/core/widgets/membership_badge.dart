@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../features/membership/domain/entities/membership.dart';
+import '../../features/subscription/presentation/tier_l10n.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 
 /// Membership Badge Widget
@@ -20,7 +22,7 @@ class MembershipBadge extends StatelessWidget {
     if (compact) {
       return _buildCompactBadge();
     }
-    return _buildFullBadge();
+    return _buildFullBadge(context);
   }
 
   Widget _buildCompactBadge() {
@@ -64,7 +66,7 @@ class MembershipBadge extends StatelessWidget {
     );
   }
 
-  Widget _buildFullBadge() {
+  Widget _buildFullBadge(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -90,7 +92,7 @@ class MembershipBadge extends StatelessWidget {
             ),
             const SizedBox(width: 6),
             Text(
-              tier.displayName,
+              localizedMembershipTierName(AppLocalizations.of(context)!, tier),
               style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold,
@@ -129,7 +131,7 @@ class MembershipBadge extends StatelessWidget {
       case MembershipTier.platinum:
         return 'VIP';
       case MembershipTier.test:
-        return 'TEST';
+        return 'TEST'; // i18n-ignore: internal QA tier badge
     }
   }
 

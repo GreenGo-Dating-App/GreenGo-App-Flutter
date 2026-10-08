@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../spot_l10n.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/spot.dart';
@@ -185,7 +186,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      '(${spot.reviewCount} ${spot.reviewCount == 1 ? 'review' : 'reviews'})',
+                      AppLocalizations.of(context)!.spotsReviewCountParen(spot.reviewCount),
                       style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 14,
@@ -394,7 +395,7 @@ class _SpotDetailScreenState extends State<SpotDetailScreen> {
           ),
           const SizedBox(width: 6),
           Text(
-            category.displayName,
+            category.label(AppLocalizations.of(context)!),
             style: TextStyle(
               color: _getCategoryColor(category),
               fontSize: 13,

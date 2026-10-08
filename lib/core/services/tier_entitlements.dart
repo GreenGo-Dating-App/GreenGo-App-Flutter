@@ -1,4 +1,5 @@
 import '../../features/membership/domain/entities/membership.dart';
+import '../../generated/app_localizations.dart';
 
 /// Level of advanced search / discovery filters a tier can use.
 ///
@@ -209,19 +210,18 @@ class TierEntitlements {
     }
   }
 
-  /// Human-readable cadence describing the monthly boost grant
-  /// (l10n happens in Part 2/3; this is a stable English hint).
-  static String boostCadence(MembershipTier tier) {
+  /// Localized cadence describing the monthly boost grant.
+  static String boostCadence(AppLocalizations l10n, MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
-        return 'None';
+        return l10n.tierBoostCadenceNone;
       case MembershipTier.silver:
-        return '1 per month';
+        return l10n.tierBoostCadenceMonthly;
       case MembershipTier.gold:
-        return '~1 per week';
+        return l10n.tierBoostCadenceWeekly;
       case MembershipTier.platinum:
       case MembershipTier.test:
-        return '~1 per day';
+        return l10n.tierBoostCadenceDaily;
     }
   }
 
@@ -403,26 +403,27 @@ class TierEntitlements {
   static String _fmtCount(int? v) => v == null ? '∞' : '$v';
 
   /// Format a boolean perk for display.
-  static String _fmtBool(bool v) => v ? 'Yes' : 'No';
+  static String _fmtBool(AppLocalizations l10n, bool v) =>
+      v ? l10n.yes : l10n.no;
 
   /// Human-facing name for a search-filter level.
-  static String _fmtFilterLevel(SearchFilterLevel l) {
+  static String _fmtFilterLevel(AppLocalizations l10n, SearchFilterLevel l) {
     switch (l) {
       case SearchFilterLevel.none:
-        return 'Basic';
+        return l10n.tierFilterLevelBasic;
       case SearchFilterLevel.basic:
-        return 'Standard';
+        return l10n.tierFilterLevelStandard;
       case SearchFilterLevel.plus:
-        return 'Advanced';
+        return l10n.tierFilterLevelAdvanced;
       case SearchFilterLevel.all:
-        return 'All filters';
+        return l10n.tierFilterLevelAll;
     }
   }
 
   /// The full, ordered perk list for a tier — everything derived from the
   /// accessors above, so there is no duplication of the tunable numbers.
   /// The marketplace can render this directly (localizing [TierPerk.labelKey]).
-  static List<TierPerk> perksFor(MembershipTier tier) {
+  static List<TierPerk> perksFor(AppLocalizations l10n, MembershipTier tier) {
     return [
       TierPerk(
         labelKey: perkKeyEvents,
@@ -450,26 +451,26 @@ class TierEntitlements {
       ),
       TierPerk(
         labelKey: perkKeySearchFilters,
-        valueText: _fmtFilterLevel(searchFilterLevel(tier)),
+        valueText: _fmtFilterLevel(l10n, searchFilterLevel(tier)),
       ),
       TierPerk(
         labelKey: perkKeySeeWhoConnected,
-        valueText: _fmtBool(canSeeWhoConnected(tier)),
+        valueText: _fmtBool(l10n, canSeeWhoConnected(tier)),
         enabled: canSeeWhoConnected(tier),
       ),
       TierPerk(
         labelKey: perkKeyTravelMode,
-        valueText: _fmtBool(travelModeEnabled(tier)),
+        valueText: _fmtBool(l10n, travelModeEnabled(tier)),
         enabled: travelModeEnabled(tier),
       ),
       // Flat for every tier: 5 coins per translation (no discount, no quota).
-      const TierPerk(
+      TierPerk(
         labelKey: perkKeyTtsCost,
-        valueText: '$ttsCostCoins coins per translation',
+        valueText: l10n.tierTtsCostValue(ttsCostCoins),
       ),
       TierPerk(
         labelKey: perkKeyPrioritySupport,
-        valueText: _fmtBool(prioritySupport(tier)),
+        valueText: _fmtBool(l10n, prioritySupport(tier)),
         enabled: prioritySupport(tier),
       ),
     ];

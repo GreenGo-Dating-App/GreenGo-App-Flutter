@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as auth;
+import '../../generated/app_localizations.dart';
 
 /// Service for managing early access email list
 /// Users in this list get access on March 14, 2026 (same as Platinum tier)
@@ -209,6 +210,10 @@ class EarlyAccessImportResult {
 
   String get summary =>
       'Imported: $successCount | Duplicates: $duplicateCount | Errors: $errorCount';
+
+  /// Localized [summary] for the admin UI.
+  String localizedSummary(AppLocalizations l10n) =>
+      l10n.adminImportSummary(successCount, duplicateCount, errorCount);
 }
 
 /// Email entry in early access list

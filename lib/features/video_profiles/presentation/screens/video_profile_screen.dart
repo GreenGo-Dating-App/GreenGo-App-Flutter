@@ -155,8 +155,8 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Video uploaded successfully!'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.videoProfileUploadSuccess),
             backgroundColor: AppColors.successGreen,
           ),
         );
@@ -180,18 +180,18 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Delete Video?',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.videoProfileDeleteTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
-        content: const Text(
-          'Are you sure you want to delete your video introduction?',
-          style: TextStyle(color: AppColors.textSecondary),
+        content: Text(
+          AppLocalizations.of(context)!.videoProfileDeleteConfirm,
+          style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () {
@@ -210,9 +210,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
               _selectedPrompt = null;
               setState(() {});
             },
-            child: const Text(
-              'Delete',
-              style: TextStyle(color: AppColors.errorRed),
+            child: Text(
+              AppLocalizations.of(context)!.delete,
+              style: const TextStyle(color: AppColors.errorRed),
             ),
           ),
         ],
@@ -242,8 +242,8 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
               state.videoProfile!.thumbnailUrl,
             );
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Video uploaded successfully!'),
+              SnackBar(
+                content: Text(AppLocalizations.of(context)!.videoProfileUploadSuccess),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -255,8 +255,8 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
             showUserError(context, state.message);
           } else if (state is VideoProfileDeleted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Video deleted'),
+              SnackBar(
+                content: Text(AppLocalizations.of(context)!.videoProfileDeleted),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -272,6 +272,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
   }
 
   Widget _buildBody() {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
@@ -281,9 +282,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text(
-          'Video Introduction',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.videoProfileScreenTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         actions: [
           if (_videoFile != null || widget.existingProfile != null)
@@ -320,9 +321,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          'Make a great first impression!',
-                          style: TextStyle(
+                        Text(
+                          l10n.videoProfileFirstImpression,
+                          style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -330,7 +331,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          'Record a $_maxDurationSeconds second video to introduce yourself. Profiles with videos get 40% more matches!',
+                          l10n.videoProfileInfoBody(_maxDurationSeconds),
                           style: const TextStyle(
                             color: AppColors.textSecondary,
                             fontSize: 13,
@@ -366,7 +367,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
-                        _selectedPrompt!,
+                        localizedVideoPrompt(l10n, _selectedPrompt!),
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 13,
@@ -420,16 +421,16 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                             size: 64,
                           ),
                           const SizedBox(height: 16),
-                          const Text(
-                            'No video yet',
-                            style: TextStyle(
+                          Text(
+                            l10n.videoProfileNoVideo,
+                            style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 16,
                             ),
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            'Max $_maxDurationSeconds seconds',
+                            l10n.videoProfileMaxSeconds(_maxDurationSeconds),
                             style: const TextStyle(
                               color: AppColors.textTertiary,
                               fontSize: 14,
@@ -456,9 +457,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                   ),
                 ),
                 icon: const Icon(Icons.videocam),
-                label: const Text(
-                  'Record Video',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                label: Text(
+                  l10n.videoProfileRecord,
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
               const SizedBox(height: 12),
@@ -474,9 +475,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                   ),
                 ),
                 icon: const Icon(Icons.upload),
-                label: const Text(
-                  'Upload from Gallery',
-                  style: TextStyle(fontSize: 16),
+                label: Text(
+                  l10n.videoProfileUploadFromGallery,
+                  style: const TextStyle(fontSize: 16),
                 ),
               ),
             ] else if (_videoFile != null) ...[
@@ -502,7 +503,7 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                       )
                     : const Icon(Icons.cloud_upload),
                 label: Text(
-                  _isUploading ? 'Uploading...' : 'Save Video',
+                  _isUploading ? l10n.chatUploading : l10n.videoProfileSave,
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -519,9 +520,9 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
                   ),
                 ),
                 icon: const Icon(Icons.refresh),
-                label: const Text(
-                  'Record Again',
-                  style: TextStyle(fontSize: 16),
+                label: Text(
+                  l10n.videoProfileRecordAgain,
+                  style: const TextStyle(fontSize: 16),
                 ),
               ),
             ],
@@ -529,20 +530,20 @@ class _VideoProfileScreenState extends State<VideoProfileScreen> {
             const SizedBox(height: 32),
 
             // Tips
-            const Text(
-              'Tips for a great video:',
-              style: TextStyle(
+            Text(
+              l10n.videoProfileTipsTitle,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 12),
-            _buildTip(Icons.wb_sunny, 'Good lighting - face a window or light source'),
-            _buildTip(Icons.stay_current_portrait, 'Hold your phone vertically'),
-            _buildTip(Icons.sentiment_satisfied, 'Smile and be yourself!'),
-            _buildTip(Icons.volume_up, 'Speak clearly - introduce yourself'),
-            _buildTip(Icons.interests, 'Mention your hobbies or interests'),
+            _buildTip(Icons.wb_sunny, l10n.videoProfileTipLighting),
+            _buildTip(Icons.stay_current_portrait, l10n.videoProfileTipVertical),
+            _buildTip(Icons.sentiment_satisfied, l10n.videoProfileTipSmile),
+            _buildTip(Icons.volume_up, l10n.videoProfileTipSpeak),
+            _buildTip(Icons.interests, l10n.videoProfileTipHobbies),
           ],
         ),
       ),

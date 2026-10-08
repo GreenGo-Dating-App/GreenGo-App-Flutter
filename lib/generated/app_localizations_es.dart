@@ -17773,4 +17773,4841 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get wzExReviewDesc =>
       'Revisa cómo lo verán los invitados. Corrige lo marcado en rojo y luego publica o guarda un borrador.';
+
+  @override
+  String verificationOrMethod(String method) {
+    return 'o $method';
+  }
+
+  @override
+  String get safetyAcademyTitle => 'Academia de Seguridad';
+
+  @override
+  String get safetyAcademyLearningModules => 'Módulos de aprendizaje';
+
+  @override
+  String safetyAcademyModulesCompleted(int completed, int total) {
+    return '$completed / $total módulos completados';
+  }
+
+  @override
+  String get safetyAcademyChampionTitle => 'Campeón de seguridad';
+
+  @override
+  String get safetyAcademyChampionBody =>
+      '¡Has completado todos los módulos de seguridad!';
+
+  @override
+  String get safetyAcademyLessonCompletedToast => '¡Lección completada!';
+
+  @override
+  String get safetyAcademyNoLessons => 'Aún no hay lecciones disponibles.';
+
+  @override
+  String safetyAcademyLessonsProgress(int completed, int total) {
+    return '$completed / $total lecciones';
+  }
+
+  @override
+  String safetyAcademyLessonXpWithQuiz(int xp) {
+    return '+$xp XP | Cuestionario';
+  }
+
+  @override
+  String get safetyAcademyTakeQuiz => 'Hacer el cuestionario';
+
+  @override
+  String get safetyAcademyCompleteLesson => 'Completar lección';
+
+  @override
+  String get safetyAcademyCompleted => 'Completada';
+
+  @override
+  String safetyAcademyQuestionOf(int current, int total) {
+    return 'Pregunta $current de $total';
+  }
+
+  @override
+  String safetyAcademyCorrectCount(int count) {
+    return '$count correctas';
+  }
+
+  @override
+  String get safetyAcademyNextQuestion => 'Siguiente pregunta';
+
+  @override
+  String get safetyAcademySeeResults => 'Ver resultados';
+
+  @override
+  String get safetyAcademyGreatJob => '¡Buen trabajo!';
+
+  @override
+  String get safetyAcademyKeepLearning => '¡Sigue aprendiendo!';
+
+  @override
+  String safetyAcademyScoreSummary(int correct, int total) {
+    return '$correct de $total correctas';
+  }
+
+  @override
+  String safetyAcademyPassingScore(int score) {
+    return 'Puntuación mínima: $score%';
+  }
+
+  @override
+  String safetyAcademyCompleteLessonXp(int xp) {
+    return 'Completar lección (+$xp XP)';
+  }
+
+  @override
+  String get safetyAcademyReviewLesson => 'Repasar la lección';
+
+  @override
+  String get safetyAcademyExitQuizTitle => '¿Salir del cuestionario?';
+
+  @override
+  String get safetyAcademyExitQuizBody => 'Perderás tu progreso.';
+
+  @override
+  String get countryNameAF => 'Afganistán';
+
+  @override
+  String get countryNameAL => 'Albania';
+
+  @override
+  String get countryNameDZ => 'Argelia';
+
+  @override
+  String get countryNameAD => 'Andorra';
+
+  @override
+  String get countryNameAO => 'Angola';
+
+  @override
+  String get countryNameAG => 'Antigua y Barbuda';
+
+  @override
+  String get countryNameAR => 'Argentina';
+
+  @override
+  String get countryNameAM => 'Armenia';
+
+  @override
+  String get countryNameAU => 'Australia';
+
+  @override
+  String get countryNameAT => 'Austria';
+
+  @override
+  String get countryNameAZ => 'Azerbaiyán';
+
+  @override
+  String get countryNameBS => 'Bahamas';
+
+  @override
+  String get countryNameBH => 'Baréin';
+
+  @override
+  String get countryNameBD => 'Bangladés';
+
+  @override
+  String get countryNameBB => 'Barbados';
+
+  @override
+  String get countryNameBY => 'Bielorrusia';
+
+  @override
+  String get countryNameBE => 'Bélgica';
+
+  @override
+  String get countryNameBZ => 'Belice';
+
+  @override
+  String get countryNameBJ => 'Benín';
+
+  @override
+  String get countryNameBT => 'Bután';
+
+  @override
+  String get countryNameBO => 'Bolivia';
+
+  @override
+  String get countryNameBA => 'Bosnia y Herzegovina';
+
+  @override
+  String get countryNameBW => 'Botsuana';
+
+  @override
+  String get countryNameBR => 'Brasil';
+
+  @override
+  String get countryNameBN => 'Brunéi';
+
+  @override
+  String get countryNameBG => 'Bulgaria';
+
+  @override
+  String get countryNameBF => 'Burkina Faso';
+
+  @override
+  String get countryNameBI => 'Burundi';
+
+  @override
+  String get countryNameCV => 'Cabo Verde';
+
+  @override
+  String get countryNameKH => 'Camboya';
+
+  @override
+  String get countryNameCM => 'Camerún';
+
+  @override
+  String get countryNameCA => 'Canadá';
+
+  @override
+  String get countryNameCF => 'República Centroafricana';
+
+  @override
+  String get countryNameTD => 'Chad';
+
+  @override
+  String get countryNameCL => 'Chile';
+
+  @override
+  String get countryNameCN => 'China';
+
+  @override
+  String get countryNameCO => 'Colombia';
+
+  @override
+  String get countryNameKM => 'Comoras';
+
+  @override
+  String get countryNameCG => 'Congo';
+
+  @override
+  String get countryNameCD => 'República Democrática del Congo';
+
+  @override
+  String get countryNameCR => 'Costa Rica';
+
+  @override
+  String get countryNameHR => 'Croacia';
+
+  @override
+  String get countryNameCU => 'Cuba';
+
+  @override
+  String get countryNameCY => 'Chipre';
+
+  @override
+  String get countryNameCZ => 'Chequia';
+
+  @override
+  String get countryNameDK => 'Dinamarca';
+
+  @override
+  String get countryNameDJ => 'Yibuti';
+
+  @override
+  String get countryNameDM => 'Dominica';
+
+  @override
+  String get countryNameDO => 'República Dominicana';
+
+  @override
+  String get countryNameEC => 'Ecuador';
+
+  @override
+  String get countryNameEG => 'Egipto';
+
+  @override
+  String get countryNameSV => 'El Salvador';
+
+  @override
+  String get countryNameGQ => 'Guinea Ecuatorial';
+
+  @override
+  String get countryNameER => 'Eritrea';
+
+  @override
+  String get countryNameEE => 'Estonia';
+
+  @override
+  String get countryNameSZ => 'Esuatini';
+
+  @override
+  String get countryNameET => 'Etiopía';
+
+  @override
+  String get countryNameFJ => 'Fiyi';
+
+  @override
+  String get countryNameFI => 'Finlandia';
+
+  @override
+  String get countryNameFR => 'Francia';
+
+  @override
+  String get countryNameGA => 'Gabón';
+
+  @override
+  String get countryNameGM => 'Gambia';
+
+  @override
+  String get countryNameGE => 'Georgia';
+
+  @override
+  String get countryNameDE => 'Alemania';
+
+  @override
+  String get countryNameGH => 'Ghana';
+
+  @override
+  String get countryNameGR => 'Grecia';
+
+  @override
+  String get countryNameGD => 'Granada';
+
+  @override
+  String get countryNameGT => 'Guatemala';
+
+  @override
+  String get countryNameGN => 'Guinea';
+
+  @override
+  String get countryNameGW => 'Guinea-Bisáu';
+
+  @override
+  String get countryNameGY => 'Guyana';
+
+  @override
+  String get countryNameHT => 'Haití';
+
+  @override
+  String get countryNameHN => 'Honduras';
+
+  @override
+  String get countryNameHU => 'Hungría';
+
+  @override
+  String get countryNameIS => 'Islandia';
+
+  @override
+  String get countryNameIN => 'India';
+
+  @override
+  String get countryNameID => 'Indonesia';
+
+  @override
+  String get countryNameIR => 'Irán';
+
+  @override
+  String get countryNameIQ => 'Irak';
+
+  @override
+  String get countryNameIE => 'Irlanda';
+
+  @override
+  String get countryNameIL => 'Israel';
+
+  @override
+  String get countryNameIT => 'Italia';
+
+  @override
+  String get countryNameCI => 'Costa de Marfil';
+
+  @override
+  String get countryNameJM => 'Jamaica';
+
+  @override
+  String get countryNameJP => 'Japón';
+
+  @override
+  String get countryNameJO => 'Jordania';
+
+  @override
+  String get countryNameKZ => 'Kazajistán';
+
+  @override
+  String get countryNameKE => 'Kenia';
+
+  @override
+  String get countryNameKI => 'Kiribati';
+
+  @override
+  String get countryNameXK => 'Kosovo';
+
+  @override
+  String get countryNameKW => 'Kuwait';
+
+  @override
+  String get countryNameKG => 'Kirguistán';
+
+  @override
+  String get countryNameLA => 'Laos';
+
+  @override
+  String get countryNameLV => 'Letonia';
+
+  @override
+  String get countryNameLB => 'Líbano';
+
+  @override
+  String get countryNameLS => 'Lesoto';
+
+  @override
+  String get countryNameLR => 'Liberia';
+
+  @override
+  String get countryNameLY => 'Libia';
+
+  @override
+  String get countryNameLI => 'Liechtenstein';
+
+  @override
+  String get countryNameLT => 'Lituania';
+
+  @override
+  String get countryNameLU => 'Luxemburgo';
+
+  @override
+  String get countryNameMG => 'Madagascar';
+
+  @override
+  String get countryNameMW => 'Malaui';
+
+  @override
+  String get countryNameMY => 'Malasia';
+
+  @override
+  String get countryNameMV => 'Maldivas';
+
+  @override
+  String get countryNameML => 'Malí';
+
+  @override
+  String get countryNameMT => 'Malta';
+
+  @override
+  String get countryNameMH => 'Islas Marshall';
+
+  @override
+  String get countryNameMR => 'Mauritania';
+
+  @override
+  String get countryNameMU => 'Mauricio';
+
+  @override
+  String get countryNameMX => 'México';
+
+  @override
+  String get countryNameFM => 'Micronesia';
+
+  @override
+  String get countryNameMD => 'Moldavia';
+
+  @override
+  String get countryNameMC => 'Mónaco';
+
+  @override
+  String get countryNameMN => 'Mongolia';
+
+  @override
+  String get countryNameME => 'Montenegro';
+
+  @override
+  String get countryNameMA => 'Marruecos';
+
+  @override
+  String get countryNameMZ => 'Mozambique';
+
+  @override
+  String get countryNameMM => 'Myanmar';
+
+  @override
+  String get countryNameNA => 'Namibia';
+
+  @override
+  String get countryNameNR => 'Nauru';
+
+  @override
+  String get countryNameNP => 'Nepal';
+
+  @override
+  String get countryNameNL => 'Países Bajos';
+
+  @override
+  String get countryNameNZ => 'Nueva Zelanda';
+
+  @override
+  String get countryNameNI => 'Nicaragua';
+
+  @override
+  String get countryNameNE => 'Níger';
+
+  @override
+  String get countryNameNG => 'Nigeria';
+
+  @override
+  String get countryNameKP => 'Corea del Norte';
+
+  @override
+  String get countryNameMK => 'Macedonia del Norte';
+
+  @override
+  String get countryNameNO => 'Noruega';
+
+  @override
+  String get countryNameOM => 'Omán';
+
+  @override
+  String get countryNamePK => 'Pakistán';
+
+  @override
+  String get countryNamePW => 'Palaos';
+
+  @override
+  String get countryNamePS => 'Palestina';
+
+  @override
+  String get countryNamePA => 'Panamá';
+
+  @override
+  String get countryNamePG => 'Papúa Nueva Guinea';
+
+  @override
+  String get countryNamePY => 'Paraguay';
+
+  @override
+  String get countryNamePE => 'Perú';
+
+  @override
+  String get countryNamePH => 'Filipinas';
+
+  @override
+  String get countryNamePL => 'Polonia';
+
+  @override
+  String get countryNamePT => 'Portugal';
+
+  @override
+  String get countryNameQA => 'Catar';
+
+  @override
+  String get countryNameRO => 'Rumania';
+
+  @override
+  String get countryNameRU => 'Rusia';
+
+  @override
+  String get countryNameRW => 'Ruanda';
+
+  @override
+  String get countryNameKN => 'San Cristóbal y Nieves';
+
+  @override
+  String get countryNameLC => 'Santa Lucía';
+
+  @override
+  String get countryNameVC => 'San Vicente y las Granadinas';
+
+  @override
+  String get countryNameWS => 'Samoa';
+
+  @override
+  String get countryNameSM => 'San Marino';
+
+  @override
+  String get countryNameST => 'Santo Tomé y Príncipe';
+
+  @override
+  String get countryNameSA => 'Arabia Saudí';
+
+  @override
+  String get countryNameSN => 'Senegal';
+
+  @override
+  String get countryNameRS => 'Serbia';
+
+  @override
+  String get countryNameSC => 'Seychelles';
+
+  @override
+  String get countryNameSL => 'Sierra Leona';
+
+  @override
+  String get countryNameSG => 'Singapur';
+
+  @override
+  String get countryNameSK => 'Eslovaquia';
+
+  @override
+  String get countryNameSI => 'Eslovenia';
+
+  @override
+  String get countryNameSB => 'Islas Salomón';
+
+  @override
+  String get countryNameSO => 'Somalia';
+
+  @override
+  String get countryNameZA => 'Sudáfrica';
+
+  @override
+  String get countryNameKR => 'Corea del Sur';
+
+  @override
+  String get countryNameSS => 'Sudán del Sur';
+
+  @override
+  String get countryNameES => 'España';
+
+  @override
+  String get countryNameLK => 'Sri Lanka';
+
+  @override
+  String get countryNameSD => 'Sudán';
+
+  @override
+  String get countryNameSR => 'Surinam';
+
+  @override
+  String get countryNameSE => 'Suecia';
+
+  @override
+  String get countryNameCH => 'Suiza';
+
+  @override
+  String get countryNameSY => 'Siria';
+
+  @override
+  String get countryNameTW => 'Taiwán';
+
+  @override
+  String get countryNameTJ => 'Tayikistán';
+
+  @override
+  String get countryNameTZ => 'Tanzania';
+
+  @override
+  String get countryNameTH => 'Tailandia';
+
+  @override
+  String get countryNameTL => 'Timor Oriental';
+
+  @override
+  String get countryNameTG => 'Togo';
+
+  @override
+  String get countryNameTO => 'Tonga';
+
+  @override
+  String get countryNameTT => 'Trinidad y Tobago';
+
+  @override
+  String get countryNameTN => 'Túnez';
+
+  @override
+  String get countryNameTR => 'Turquía';
+
+  @override
+  String get countryNameTM => 'Turkmenistán';
+
+  @override
+  String get countryNameTV => 'Tuvalu';
+
+  @override
+  String get countryNameUG => 'Uganda';
+
+  @override
+  String get countryNameUA => 'Ucrania';
+
+  @override
+  String get countryNameAE => 'Emiratos Árabes Unidos';
+
+  @override
+  String get countryNameGB => 'Reino Unido';
+
+  @override
+  String get countryNameUS => 'Estados Unidos';
+
+  @override
+  String get countryNameUY => 'Uruguay';
+
+  @override
+  String get countryNameUZ => 'Uzbekistán';
+
+  @override
+  String get countryNameVU => 'Vanuatu';
+
+  @override
+  String get countryNameVA => 'Ciudad del Vaticano';
+
+  @override
+  String get countryNameVE => 'Venezuela';
+
+  @override
+  String get countryNameVN => 'Vietnam';
+
+  @override
+  String get countryNameYE => 'Yemen';
+
+  @override
+  String get countryNameZM => 'Zambia';
+
+  @override
+  String get countryNameZW => 'Zimbabue';
+
+  @override
+  String get countryNameHK => 'Hong Kong';
+
+  @override
+  String get countryNamePR => 'Puerto Rico';
+
+  @override
+  String get spotsCatRestaurant => 'Restaurante';
+
+  @override
+  String get spotsCatCafe => 'Cafetería';
+
+  @override
+  String get spotsCatCulturalSite => 'Sitio cultural';
+
+  @override
+  String get spotsCatMarket => 'Mercado';
+
+  @override
+  String get spotsCatViewpoint => 'Mirador';
+
+  @override
+  String spotsCreatedNamed(String name) {
+    return '¡Lugar «$name» creado!';
+  }
+
+  @override
+  String get spotsEmptyHint =>
+      'Aún no hay lugares culturales en esta ciudad. ¡Sé el primero en añadir uno!';
+
+  @override
+  String spotsEmptyCategoryHint(String category) {
+    return 'Aún no hay lugares en «$category» en esta ciudad. ¡Sé el primero en añadir uno!';
+  }
+
+  @override
+  String spotsReviewCountParen(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '($count reseñas)',
+      one: '(1 reseña)',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get uexpLangHebrew => 'Hebreo';
+
+  @override
+  String get uexpLangThai => 'Tailandés';
+
+  @override
+  String get uexpLangVietnamese => 'Vietnamita';
+
+  @override
+  String get safetyAcademyModCommunicationTitle =>
+      'Habilidades de comunicación';
+
+  @override
+  String get safetyAcademyModCommunicationDesc =>
+      'Desarrolla hábitos de comunicación saludables, como el consentimiento, los límites y la escucha activa.';
+
+  @override
+  String get safetyAcademyLsnActiveListeningTitle => 'Escucha activa';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS0 =>
+      'La escucha activa es la base de una conexión significativa. Va más allá de oír palabras: se trata de implicarte por completo con la otra persona y hacer que se sienta valorada.';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS1 =>
+      'Haz preguntas de seguimiento sobre lo que ha dicho la otra persona, no solo sobre lo que tú quieres hablar. Eso demuestra un interés genuino.';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS2 => 'Técnicas de escucha activa';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS2I0 =>
+      'Presta toda tu atención (guarda el móvil)';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS2I1 =>
+      'Usa señales verbales (“Ya veo”, “Qué interesante”)';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS2I2 =>
+      'Repite con tus palabras lo que has oído (“O sea, que dices que…”)';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS2I3 =>
+      'Haz preguntas abiertas de seguimiento';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS2I4 =>
+      'Evita interrumpir o preparar tu respuesta mientras la otra persona habla';
+
+  @override
+  String get safetyAcademyLsnActiveListeningS3 =>
+      'En las conversaciones por mensaje, escuchar activamente significa leer los mensajes con atención, responder a lo que realmente se ha dicho y hacer preguntas meditadas en lugar de llevar cada tema hacia ti.';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ0 =>
+      'Tu cita te cuenta una historia de su último viaje. ¿Cuál es la mejor respuesta de escucha activa?';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ0O0 => '“Guay. Bueno, yo fui a…”';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ0O1 =>
+      '“¡Suena increíble! ¿Qué fue lo mejor del viaje?”';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ0O2 =>
+      '“Yo también he estado allí, deja que te cuente.”';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ0O3 => '“Qué bien.”';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ0Exp =>
+      'Hacer una pregunta de seguimiento sobre su experiencia demuestra un interés genuino y mantiene viva la conversación.';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ1 =>
+      '¿Qué debes evitar durante la escucha activa?';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ1O0 =>
+      'Mantener el contacto visual';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ1O1 =>
+      'Preparar tu respuesta mientras la otra persona sigue hablando';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ1O2 => 'Asentir de vez en cuando';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ1O3 =>
+      'Hacer preguntas de seguimiento';
+
+  @override
+  String get safetyAcademyLsnActiveListeningQ1Exp =>
+      'Si estás preparando tu próxima respuesta, no estás escuchando de verdad. Céntrate primero en entender y luego responde.';
+
+  @override
+  String get safetyAcademyLsnBoundariesTitle => 'Poner límites';
+
+  @override
+  String get safetyAcademyLsnBoundariesS0 =>
+      'Los límites son las pautas que estableces sobre cómo quieres que te traten. Son esenciales para tener relaciones sanas y protegen tu bienestar emocional, físico y mental.';
+
+  @override
+  String get safetyAcademyLsnBoundariesS1 =>
+      'Expresa tus límites con claridad y desde el principio. Por ejemplo: “Prefiero conocer a alguien por chat antes de quedar en persona” o “Ahora mismo no me siento cómodo/a compartiendo fotos”.';
+
+  @override
+  String get safetyAcademyLsnBoundariesS2 =>
+      'Si alguien presiona una y otra vez contra un límite que has puesto, es una señal de alarma seria, sean cuales sean sus excusas.';
+
+  @override
+  String get safetyAcademyLsnBoundariesS3 => 'Ejemplos de límites sanos';
+
+  @override
+  String get safetyAcademyLsnBoundariesS3I0 =>
+      'Decidir cuándo estás listo/a para compartir tu número de teléfono';
+
+  @override
+  String get safetyAcademyLsnBoundariesS3I1 =>
+      'Poner un límite a qué hora pueden escribirte como muy tarde';
+
+  @override
+  String get safetyAcademyLsnBoundariesS3I2 =>
+      'Dejar claro qué contacto físico te resulta cómodo en las citas';
+
+  @override
+  String get safetyAcademyLsnBoundariesS3I3 =>
+      'Decir que no a planes que te parezcan precipitados o incómodos';
+
+  @override
+  String get safetyAcademyLsnBoundariesS3I4 =>
+      'Tomarte un descanso de la conversación cuando necesitas espacio';
+
+  @override
+  String get safetyAcademyLsnBoundariesS4 =>
+      'Recuerda: poner límites no es ser difícil. Es respeto por ti mismo/a. Una pareja que te valora apreciará y respetará tus límites.';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ0 =>
+      'Le dices a tu match que todavía no te sientes cómodo/a compartiendo tu número, y sigue insistiendo. ¿Qué indica esto?';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ0O0 => 'Está muy interesado/a en ti';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ0O1 =>
+      'Solo tiene ganas de avanzar en la conversación';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ0O2 =>
+      'No está respetando el límite que has expresado';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ0O3 =>
+      'Es un comportamiento normal al conocer a alguien';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ0Exp =>
+      'Presionar repetidamente contra un límite claramente expresado es una falta de respeto y una señal de alarma, sea cual sea el motivo.';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ1 =>
+      '¿Cuál es el mejor momento para comunicar un límite?';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ1O0 =>
+      'Después de que lo hayan sobrepasado varias veces';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ1O1 =>
+      'Con claridad y pronto, antes de que se convierta en un problema';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ1O2 =>
+      'Solo si la otra persona pregunta';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ1O3 =>
+      'Los límites no son necesarios en las citas';
+
+  @override
+  String get safetyAcademyLsnBoundariesQ1Exp =>
+      'Expresar los límites pronto y con claridad evita malentendidos y marca el tono de respeto mutuo.';
+
+  @override
+  String get safetyAcademyLsnConsentTitle => 'Entender el consentimiento';
+
+  @override
+  String get safetyAcademyLsnConsentS0 =>
+      'El consentimiento es un acuerdo claro, entusiasta y continuo. Se aplica a todos los aspectos de las citas: desde compartir información personal hasta la intimidad física.';
+
+  @override
+  String get safetyAcademyLsnConsentS1 =>
+      'El consentimiento no se limita al contacto físico. Compartir las fotos de alguien, reenviar sus mensajes o difundir sus datos personales sin permiso también vulnera el consentimiento.';
+
+  @override
+  String get safetyAcademyLsnConsentS2 => 'Principios clave del consentimiento';
+
+  @override
+  String get safetyAcademyLsnConsentS2I0 =>
+      'Libre: sin presiones, coacciones ni manipulación';
+
+  @override
+  String get safetyAcademyLsnConsentS2I1 =>
+      'Reversible: cualquiera puede cambiar de opinión en cualquier momento';
+
+  @override
+  String get safetyAcademyLsnConsentS2I2 =>
+      'Informado: basado en información honesta y completa';
+
+  @override
+  String get safetyAcademyLsnConsentS2I3 =>
+      'Entusiasta: busca un “sí” activo, no solo la ausencia de un “no”';
+
+  @override
+  String get safetyAcademyLsnConsentS2I4 =>
+      'Específico: consentir una cosa no significa consentirlo todo';
+
+  @override
+  String get safetyAcademyLsnConsentS3 =>
+      'El silencio o la falta de un “no” no equivalen a consentimiento. Busca siempre un acuerdo claro y positivo.';
+
+  @override
+  String get safetyAcademyLsnConsentS4 =>
+      'Pedir consentimiento no es incómodo: demuestra madurez y respeto. Preguntas sencillas como “¿Te sientes cómodo/a con esto?” o “¿Te gustaría…?” marcan una gran diferencia.';
+
+  @override
+  String get safetyAcademyLsnConsentQ0 =>
+      '¿Qué afirmación describe mejor el consentimiento?';
+
+  @override
+  String get safetyAcademyLsnConsentQ0O0 => 'La ausencia de un “no”';
+
+  @override
+  String get safetyAcademyLsnConsentQ0O1 =>
+      'Un acuerdo claro, entusiasta y continuo';
+
+  @override
+  String get safetyAcademyLsnConsentQ0O2 =>
+      'Algo que solo hace falta para el contacto físico';
+
+  @override
+  String get safetyAcademyLsnConsentQ0O3 =>
+      'Un acuerdo dado una sola vez que cubre todas las interacciones futuras';
+
+  @override
+  String get safetyAcademyLsnConsentQ0Exp =>
+      'El consentimiento debe ser claro, entusiasta y continuo, y puede retirarse en cualquier momento. Se aplica a todas las interacciones.';
+
+  @override
+  String get safetyAcademyLsnConsentQ1 =>
+      'Tu cita aceptó venir a tu casa, pero parece incómoda después de llegar. ¿Qué deberías hacer?';
+
+  @override
+  String get safetyAcademyLsnConsentQ1O0 =>
+      'Ya aceptó, así que sigue con lo planeado';
+
+  @override
+  String get safetyAcademyLsnConsentQ1O1 =>
+      'Preguntarle cómo está y ofrecer ir a otro sitio';
+
+  @override
+  String get safetyAcademyLsnConsentQ1O2 =>
+      'Ignorar la incomodidad: seguramente son nervios';
+
+  @override
+  String get safetyAcademyLsnConsentQ1O3 =>
+      'Decirle que no debería haber aceptado si no quería venir';
+
+  @override
+  String get safetyAcademyLsnConsentQ1Exp =>
+      'El consentimiento es reversible. Si alguien parece incómodo, pregúntale cómo está. Su bienestar es más importante que los planes.';
+
+  @override
+  String get safetyAcademyModCulturalSensitivityTitle =>
+      'Sensibilidad cultural';
+
+  @override
+  String get safetyAcademyModCulturalSensitivityDesc =>
+      'Vive las citas interculturales con respeto, curiosidad y conciencia.';
+
+  @override
+  String get safetyAcademyLsnCulturalDosTitle =>
+      'Citas interculturales: lo que sí debes hacer';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS0 =>
+      'Salir con alguien de otra cultura puede ser una de las experiencias más enriquecedoras. Hazlo con curiosidad sincera, respeto y ganas de aprender.';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS1 =>
+      'Haz preguntas abiertas sobre su cultura con curiosidad sincera, no como si fuera un examen. “¿Qué tradiciones son importantes para tu familia?” es mucho mejor que “¿De verdad los de tu país hacen X?”';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS2 =>
+      'Lo que sí debes hacer en citas interculturales';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS2I0 =>
+      'Infórmate sobre las costumbres culturales básicas antes de una cita';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS2I1 =>
+      'Muestra un interés sincero por su origen y sus tradiciones';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS2I2 =>
+      'Mantente abierto a probar comidas, actividades y experiencias nuevas';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS2I3 =>
+      'Respeta las dinámicas familiares que puedan ser distintas a las tuyas';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS2I4 =>
+      'Aprende algunas palabras o frases en su idioma';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS2I5 =>
+      'Pregunta cómo prefiere que se dirijan a esa persona o la presenten';
+
+  @override
+  String get safetyAcademyLsnCulturalDosS3 =>
+      'Recuerda que cada persona es, ante todo, un individuo. Conocer su cultura es un punto de partida, pero conoce a la persona más allá de los estereotipos.';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ0 =>
+      '¿Cuál es la mejor forma de conocer la cultura de tu cita?';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ0O0 =>
+      'Hacer suposiciones basadas en lo que has visto en películas';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ0O1 =>
+      'Hacer preguntas abiertas y consideradas con curiosidad sincera';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ0O2 =>
+      'Ponerle a prueba con datos culturales que leíste en internet';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ0O3 =>
+      'Evitar el tema por completo para no ofender';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ0Exp =>
+      'La curiosidad sincera y respetuosa es la mejor actitud. Deja que comparta lo que es importante para esa persona.';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ1 =>
+      'Tu cita menciona una tradición familiar que no entiendes. ¿Qué deberías hacer?';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ1O0 =>
+      'Asentir y fingir que lo entiendes';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ1O1 =>
+      'Pedirle que te cuente más y por qué es importante';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ1O2 =>
+      'Decirle que tus tradiciones son diferentes';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ1O3 => 'Cambiar de tema';
+
+  @override
+  String get safetyAcademyLsnCulturalDosQ1Exp =>
+      'Pedirle que te cuente más demuestra respeto e interés sincero por su mundo.';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsTitle =>
+      'Citas interculturales: lo que no debes hacer';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS0 =>
+      'Los comentarios bienintencionados pero desinformados pueden resultar hirientes o despectivos. Conocer los errores más comunes te ayuda a vivir las citas interculturales con tacto.';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS1 =>
+      'Nunca reduzcas a nadie a su etnia o nacionalidad. Comentarios como “Siempre he querido salir con alguien [nacionalidad]” o “Eres guapo/a para ser [etnia]” son hirientes, no halagos.';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS2 =>
+      'Lo que no debes hacer en citas interculturales';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS2I0 =>
+      'No fetichices ni exotices su cultura o su aspecto';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS2I1 =>
+      'No des por hecho que representa a toda su cultura';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS2I2 =>
+      'No hagas bromas sobre su acento o su idioma';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS2I3 =>
+      'No le presiones para que explique o defienda sus prácticas culturales';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS2I4 =>
+      'No le compares con estereotipos o con cómo lo muestran los medios';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS2I5 =>
+      'No restes importancia a las diferencias culturales';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsS3 =>
+      'Si cometes un error cultural, discúlpate con sinceridad, aprende de ello y sigue adelante. No te disculpes en exceso hasta el punto de centrarlo todo en tus sentimientos.';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ0 =>
+      '¿Qué comentario es culturalmente insensible?';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ0O0 =>
+      '“Me encantaría probar la comida de tu país.”';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ0O1 =>
+      '“Tienes un aspecto muy exótico.”';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ0O2 =>
+      '“¿Qué idioma hablas en casa?”';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ0O3 =>
+      '“Háblame de alguna fiesta que celebre tu familia.”';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ0Exp =>
+      'Llamar a alguien “exótico” lo reduce a su aspecto y a su origen cultural. Es cosificador, no un halago.';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ1 =>
+      'Sin querer, dices algo culturalmente insensible. ¿Cuál es la mejor reacción?';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ1O0 =>
+      'Fingir que no ha pasado nada';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ1O1 =>
+      'Disculparte con sinceridad, aprender de ello y seguir adelante';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ1O2 =>
+      'Explicar que no lo decías con esa intención';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ1O3 =>
+      'Disculparte en exceso y sacar el tema una y otra vez';
+
+  @override
+  String get safetyAcademyLsnCulturalDontsQ1Exp =>
+      'Una disculpa sincera y breve, seguida de un esfuerzo real por mejorar, es la reacción más madura.';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationTitle =>
+      'Comunicación entre culturas';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS0 =>
+      'Los estilos de comunicación varían mucho entre culturas. Lo que en una cultura parece directo y sincero, en otra puede resultar grosero. Entender estas diferencias evita malentendidos.';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS1 =>
+      'Si algo que dice o hace tu cita te desconcierta, presupón buena intención y pide que te lo aclare en lugar de sacar conclusiones precipitadas.';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS2 =>
+      'Diferencias culturales de comunicación que debes tener en cuenta';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS2I0 =>
+      'Estilos de comunicación directos frente a indirectos';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS2I1 =>
+      'Normas sobre el espacio personal y el contacto físico';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS2I2 =>
+      'Expectativas sobre el contacto visual (en algunas culturas mirar directamente a los ojos se considera una falta de respeto)';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS2I3 =>
+      'La actitud ante la puntualidad y el tiempo';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS2I4 =>
+      'Costumbres y expectativas sobre los regalos';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS2I5 =>
+      'El papel del humor y qué temas son tabú';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationS3 =>
+      'Ante la duda, comunícate abiertamente. Un simple “Quiero asegurarme de que te entiendo bien” ayuda mucho a salvar las diferencias culturales.';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ0 =>
+      'Tu cita evita mirarte directamente a los ojos. ¿Qué deberías pensar?';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ0O0 => 'No le interesas';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ0O1 =>
+      'No está siendo sincera';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ0O2 =>
+      'Puede ser una norma cultural: no des por hecho una mala intención';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ0O3 =>
+      'Es tímida y necesita más ánimo';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ0Exp =>
+      'En muchas culturas, evitar el contacto visual directo es una muestra de respeto, no de desinterés ni de falta de sinceridad.';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ1 =>
+      '¿Qué es lo mejor cuando las diferencias culturales de comunicación generan confusión?';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ1O0 => 'Pensar lo peor';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ1O1 =>
+      'Ignorarlo y esperar que se resuelva solo';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ1O2 =>
+      'Pedir aclaraciones con la mente abierta';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ1O3 =>
+      'Decirle que se comunique más como tú';
+
+  @override
+  String get safetyAcademyLsnCulturalCommunicationQ1Exp =>
+      'La comunicación abierta y sin juicios es la mejor manera de afrontar las diferencias culturales.';
+
+  @override
+  String get safetyAcademyModOnlineSafetyTitle => 'Seguridad online: lo básico';
+
+  @override
+  String get safetyAcademyModOnlineSafetyDesc =>
+      'Aprende a proteger tu identidad y a detectar posibles estafas cuando conoces gente online.';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionTitle => 'Protección del perfil';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS0 =>
+      'Tu perfil es tu primera impresión, pero también puede revelar información personal si no tienes cuidado. Aprender a compartir lo justo te mantiene a salvo sin dejar de mostrar tu personalidad.';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS1 =>
+      'Usa una foto única que no aparezca en tus otros perfiles de redes sociales. Las búsquedas inversas de imágenes pueden vincular tus cuentas entre sí.';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS2 =>
+      'Nunca incluyas en tu biografía tu nombre completo, tu lugar de trabajo, tu dirección ni tu número de teléfono.';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS3 =>
+      'Lista de seguridad del perfil';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS3I0 =>
+      'Elimina o recorta los lugares reconocibles cerca de tu casa';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS3I1 =>
+      'Usa solo tu nombre de pila o un apodo';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS3I2 =>
+      'Desactiva los metadatos de ubicación de las fotos que subas';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS3I3 =>
+      'Evita fotos con uniforme de trabajo o con acreditaciones visibles';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS3I4 =>
+      'Revisa tu perfil desde la perspectiva de un desconocido';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionS4 =>
+      'Un buen perfil equilibra la apertura con la privacidad. Comparte tus intereses y valores, pero guarda los detalles como tu rutina diaria o tu barrio para conversaciones posteriores.';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ0 =>
+      '¿Cuál de estas opciones es seguro incluir en tu perfil?';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ0O0 => 'Tu dirección';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ0O1 => 'Tus aficiones favoritas';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ0O2 =>
+      'El nombre de tu empresa y tu departamento';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ0O3 => 'Tu número de teléfono';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ0Exp =>
+      'Compartir tus aficiones es ideal para iniciar conversaciones sin revelar datos personales que podrían usarse para localizarte.';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ1 =>
+      '¿Por qué deberías usar fotos únicas en tu perfil?';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ1O0 =>
+      'Para parecer más atractivo';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ1O1 =>
+      'Porque las apps comprimen las imágenes';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ1O2 =>
+      'Para evitar que una búsqueda inversa de imágenes te vincule con tus otras cuentas';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ1O3 =>
+      'Las fotos únicas reciben más likes';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ1Exp =>
+      'Las herramientas de búsqueda inversa de imágenes pueden vincular tu perfil con redes sociales, blogs o páginas profesionales y revelar tu identidad completa.';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ2 =>
+      '¿Qué deberías comprobar antes de subir una foto?';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ2O0 =>
+      'Que tenga un filtro bonito';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ2O1 =>
+      'Que se hayan eliminado los metadatos de ubicación y no se vean lugares reconocibles';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ2O2 => 'Que sea reciente';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ2O3 => 'Que sea un selfie';
+
+  @override
+  String get safetyAcademyLsnProfileProtectionQ2Exp =>
+      'Los metadatos de las fotos (datos EXIF) pueden contener coordenadas GPS. Elementos como letreros de calles o nombres de edificios también pueden revelar tu ubicación.';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionTitle => 'Cómo reconocer estafas';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS0 =>
+      'Las estafas románticas cuestan miles de millones a sus víctimas en todo el mundo cada año. Los estafadores crean vínculos emocionales rápidamente y luego los aprovechan para obtener dinero o datos personales. Conocer las señales puede protegerte.';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS1 =>
+      'Si alguien te pide dinero, tarjetas regalo, criptomonedas o ayuda económica al principio de una relación —por muy convincente que sea la historia—, es casi seguro que se trata de una estafa.';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS2 =>
+      'Haz una videollamada pronto. Los estafadores evitan el vídeo en directo porque deja al descubierto las identidades falsas. Si alguien evita repetidamente las videollamadas, ten cuidado.';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS3 =>
+      'Señales de alerta habituales de estafa';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS3I0 =>
+      'El perfil parece demasiado perfecto (fotos de modelo, carrera de ensueño)';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS3I1 =>
+      'Dice ser militar destinado en el extranjero, trabajador de una plataforma petrolífera o empresario internacional';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS3I2 =>
+      'Se enamora con una rapidez inusual («love bombing»)';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS3I3 =>
+      'Evita las videollamadas o quedar en persona';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS3I4 =>
+      'Pide dinero para emergencias, viajes o gastos médicos';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS3I5 =>
+      'Te pide pasar rápidamente la conversación a otra plataforma';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionS4 =>
+      'Si sospechas de una estafa, corta la comunicación de inmediato. Denuncia el perfil en la app y plantéate presentar una denuncia ante las autoridades locales.';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ0 =>
+      'Alguien con quien hiciste match hace una semana dice que te quiere y te pide dinero para venir a verte. ¿Qué deberías hacer?';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ0O0 =>
+      'Enviar el dinero: parece sincero';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ0O1 =>
+      'Pedir más detalles sobre por qué necesita el dinero';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ0O2 =>
+      'Reconocer el patrón típico de una estafa romántica y denunciar el perfil';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ0O3 =>
+      'Ofrecerte a comprarle tú directamente el billete de avión';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ0Exp =>
+      'Declarar amor muy rápido y luego pedir dinero es el patrón característico de las estafas románticas. Denuncia y bloquea.';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ1 =>
+      '¿Qué profesión usan a menudo los estafadores como tapadera?';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ1O0 => 'Profesor de la zona';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ1O1 =>
+      'Militar destinado en el extranjero';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ1O2 => 'Barista del barrio';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ1O3 => 'Oficinista de la zona';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ1Exp =>
+      'Los estafadores suelen alegar una misión militar, trabajo en alta mar o negocios internacionales para justificar por qué no pueden quedar en persona ni hacer videollamadas.';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ2 =>
+      '¿Cuál es un buen primer paso para comprobar que alguien es real?';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ2O0 => 'Pedirle su dirección';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ2O1 => 'Proponer una videollamada';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ2O2 =>
+      'Enviarle dinero para ver cómo reacciona';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ2O3 =>
+      'Buscarle en todas las redes sociales';
+
+  @override
+  String get safetyAcademyLsnScamRecognitionQ2Exp =>
+      'Una videollamada es una de las formas más sencillas de comprobar que alguien es quien dice ser. Los estafadores suelen evitar el vídeo en directo a toda costa.';
+
+  @override
+  String get safetyAcademyLsnRedFlagsTitle =>
+      'Señales de alerta en el comportamiento';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS0 =>
+      'Más allá de las estafas, hay patrones de comportamiento que pueden indicar personas controladoras, manipuladoras o potencialmente peligrosas. Aprender a detectarlos a tiempo puede evitarte situaciones dañinas.';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS1 =>
+      'Quien te presiona para compartir fotos íntimas, quedar de inmediato o alejarte de tus amistades está mostrando un comportamiento controlador.';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS2 =>
+      'Señales de alerta en el comportamiento';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS2I0 =>
+      'Celos excesivos o actitud posesiva incluso antes de conoceros en persona';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS2I1 =>
+      'Presionar para obtener información personal o contenido íntimo';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS2I2 =>
+      'Enfadarse si no respondes de inmediato';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS2I3 =>
+      'No respetar los límites que has marcado';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS2I4 =>
+      'Hacerte sentir culpable por pasar tiempo con otras personas';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS2I5 =>
+      'Historias contradictorias sobre sí mismo';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS3 =>
+      'Confía en tu instinto. Si una conversación te incomoda, no le debes explicaciones a nadie. Siempre está bien dejar de responder, bloquear o denunciar.';
+
+  @override
+  String get safetyAcademyLsnRedFlagsS4 =>
+      'Las relaciones sanas se basan en el respeto mutuo. Quien de verdad se preocupa por ti respetará tu ritmo, tus límites y tu autonomía.';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ0 =>
+      'Tu match se enfada porque tardas una hora en responder. ¿Qué indica esto?';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ0O0 => 'Le gustas de verdad';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ0O1 =>
+      'Está entusiasmado con la conversación';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ0O2 =>
+      'Un comportamiento potencialmente controlador';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ0O3 => 'Simplemente está ansioso';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ0Exp =>
+      'Enfadarse por el tiempo de respuesta antes incluso de conoceros es señal de un comportamiento controlador. Cada persona tiene derecho a organizar su propio tiempo.';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ1 =>
+      '¿Cuál es la mejor respuesta cuando alguien te presiona para que le envíes fotos íntimas?';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ1O0 => 'Enviarlas para evitar conflictos';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ1O1 =>
+      'Negarte con firmeza y, si insiste, bloquearle y denunciarle';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ1O2 =>
+      'Pedirle que envíe las suyas primero';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ1O3 =>
+      'Prometer que las enviarás más tarde';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ1Exp =>
+      'Nunca deberías sentirte presionado para compartir contenido íntimo. Una persona respetuosa aceptará tu decisión sin insistir.';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ2 =>
+      '¿Cuál es una señal sana en las primeras conversaciones?';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ2O0 =>
+      'Quiere saber tu horario diario exacto';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ2O1 => 'Respeta tu ritmo y tus límites';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ2O2 =>
+      'Te dice «te quiero» en los primeros días';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ2O3 =>
+      'Te pide que dejes de hablar con otras personas en la app';
+
+  @override
+  String get safetyAcademyLsnRedFlagsQ2Exp =>
+      'El respeto por el ritmo y los límites es la base de una relación sana. Todo lo demás de esta lista es una posible señal de alerta.';
+
+  @override
+  String get safetyAcademyModEmotionalIntelligenceTitle =>
+      'Inteligencia emocional';
+
+  @override
+  String get safetyAcademyModEmotionalIntelligenceDesc =>
+      'Comprende los estilos de apego y los lenguajes del amor, y desarrolla tu conciencia emocional.';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesTitle => 'Estilos de apego';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS0 =>
+      'La teoría del apego explica cómo nuestras primeras relaciones moldean la forma en que nos vinculamos con nuestras parejas. Comprender tu estilo de apego puede ayudarte a construir relaciones más sanas.';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS1 =>
+      'Los cuatro estilos de apego principales son: seguro, ansioso, evitativo y desorganizado. La mayoría de las personas son una mezcla, y los estilos pueden cambiar con conciencia y esfuerzo.';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS2 =>
+      'Los cuatro estilos de apego';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS2I0 =>
+      'Seguro: se siente cómodo con la cercanía, confía y se comunica';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS2I1 =>
+      'Ansioso: anhela la cercanía pero teme el rechazo, puede necesitar más reafirmación';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS2I2 =>
+      'Evitativo: valora mucho la independencia, puede alejarse cuando la relación se vuelve cercana';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS2I3 =>
+      'Desorganizado: mezcla de ansioso y evitativo, a menudo por experiencias tempranas difíciles';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS3 =>
+      'Conocer tu estilo te ayuda a entender tus reacciones. Si tiendes al apego ansioso, quizá reconozcas que tu impulso de escribir una y otra vez nace del miedo, no de una necesidad real. Si eres evitativo, quizá notes tu tendencia a cerrarte cuando las emociones se intensifican.';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesS4 =>
+      'Comprender el estilo de apego de tu pareja te ayuda a responder con empatía en lugar de frustración. Que una pareja evitativa se aleje no es un rechazo: es su mecanismo de afrontamiento.';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ0 =>
+      'Tu pareja necesita mucha reafirmación y se pone ansiosa cuando no respondes rápido. ¿Qué estilo de apego podría reflejar esto?';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ0O0 => 'Seguro';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ0O1 => 'Ansioso';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ0O2 => 'Evitativo';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ0O3 => 'Desorganizado';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ0Exp =>
+      'El apego ansioso se caracteriza por un fuerte deseo de cercanía y miedo al rechazo, lo que a menudo lleva a necesitar reafirmación frecuente.';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ1 =>
+      '¿Cuál es la reacción más sana al reconocer tus patrones de apego?';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ1O0 =>
+      'Aceptar que no pueden cambiar';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ1O1 =>
+      'Culpar a tus padres de tu estilo';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ1O2 =>
+      'Usar esa conciencia para comunicarte mejor y avanzar hacia un apego seguro';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ1O3 =>
+      'Salir solo con personas de tu mismo estilo';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ1Exp =>
+      'Los estilos de apego pueden evolucionar con autoconocimiento, comunicación y, a veces, apoyo profesional.';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ2 =>
+      'Alguien con un estilo de apego evitativo podría:';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ2O0 =>
+      'Enviar varios mensajes si no respondes rápido';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ2O1 =>
+      'Alejarse o cerrarse cuando la relación se vuelve emocionalmente cercana';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ2O2 =>
+      'Querer pasar juntos cada momento';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ2O3 =>
+      'Ser muy abierto con sus sentimientos desde el principio';
+
+  @override
+  String get safetyAcademyLsnAttachmentStylesQ2Exp =>
+      'El apego evitativo suele manifestarse como un alejamiento cuando aumenta la intimidad emocional, a modo de mecanismo de autoprotección.';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesTitle => 'Los lenguajes del amor';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS0 =>
+      'El concepto de los lenguajes del amor, popularizado por el Dr. Gary Chapman, plantea que las personas expresan y reciben amor de cinco formas principales. Comprender el tuyo y el de tu pareja puede transformar vuestra relación.';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS1 => 'Los cinco lenguajes del amor';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS1I0 =>
+      'Palabras de afirmación: cumplidos, palabras de ánimo y expresiones de amor';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS1I1 =>
+      'Tiempo de calidad: atención plena y presencia';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS1I2 =>
+      'Recibir regalos: detalles pensados como muestra de cariño (no importa el precio)';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS1I3 =>
+      'Actos de servicio: acciones que facilitan la vida o demuestran cuidado';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS1I4 =>
+      'Contacto físico: abrazos, ir de la mano y otras muestras físicas de afecto';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS2 =>
+      'Fíjate en cómo expresa el cariño la persona con la que sales: probablemente ese sea su lenguaje del amor. Si siempre te hace cumplidos, seguramente valora las palabras de afirmación.';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesS3 =>
+      'Que los lenguajes del amor no coincidan es habitual y tiene solución. La clave es la comunicación: dile a tu pareja qué te hace sentir querido y hazle la misma pregunta.';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ0 =>
+      'Tu pareja siempre saca tiempo para ti y deja el móvil a un lado cuando habláis. Su lenguaje del amor probablemente sea:';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ0O0 => 'Palabras de afirmación';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ0O1 => 'Tiempo de calidad';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ0O2 => 'Recibir regalos';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ0O3 => 'Contacto físico';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ0Exp =>
+      'Dar atención plena y priorizar la presencia es el sello del tiempo de calidad como lenguaje del amor.';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ1 =>
+      'Tú valoras las palabras de afirmación, pero tu pareja demuestra su amor con actos de servicio. ¿Qué deberías hacer?';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ1O0 =>
+      'Aceptar que sois incompatibles';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ1O1 =>
+      'Decirle a tu pareja lo que necesitas y aprender a reconocer su forma de demostrar amor';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ1O2 =>
+      'Cambiar tu lenguaje del amor para que coincida con el suyo';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ1O3 => 'Ignorar la diferencia';
+
+  @override
+  String get safetyAcademyLsnLoveLanguagesQ1Exp =>
+      'La comunicación es clave. Expresa lo que necesitas y aprende también a valorar cómo demuestra amor tu pareja.';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessTitle => 'Conciencia emocional';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS0 =>
+      'La conciencia emocional es la capacidad de reconocer, comprender y gestionar tus propias emociones, sin dejar de percibir las de los demás. En las citas, esta habilidad evita decisiones impulsivas y crea conexiones más profundas.';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS1 =>
+      'Antes de responder a un mensaje frustrante, haz una pausa e identifica lo que sientes de verdad. ¿Te sientes herido? ¿Ansioso? ¿Decepcionado? Ponerle nombre a la emoción reduce su fuerza.';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS2 =>
+      'Cómo desarrollar la conciencia emocional';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS2I0 =>
+      'Practica ponerles nombre a tus emociones a lo largo del día';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS2I1 =>
+      'Fíjate en las sensaciones físicas ligadas a las emociones (opresión en el pecho = ansiedad)';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS2I2 =>
+      'Escribe un diario sobre tus experiencias en citas y tus reacciones emocionales';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS2I3 =>
+      'Distingue entre reaccionar (impulsivo) y responder (reflexivo)';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS2I4 =>
+      'Crea el hábito de hacer una pausa: espera antes de enviar mensajes cargados de emoción';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS3 =>
+      'La conciencia emocional no significa reprimir las emociones. Significa comprenderlas lo bastante bien como para elegir cómo actuar ante ellas.';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessS4 =>
+      'Cuando eres capaz de decir «Me sentí herido cuando cancelaste nuestros planes» en lugar de «Está claro que no te importo», conviertes el conflicto en conexión. Eso es inteligencia emocional en acción.';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ0 =>
+      'La persona con la que sales cancela los planes en el último momento y te enfadas. ¿Cuál es la respuesta emocionalmente consciente?';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ0O0 =>
+      'Enviar un mensaje enfadado de inmediato';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ0O1 =>
+      'Hacerle ghosting como castigo';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ0O2 =>
+      'Hacer una pausa, identificar tus sentimientos y luego explicar con calma cómo te hizo sentir la cancelación';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ0O3 =>
+      'Fingir que no te importa';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ0Exp =>
+      'Hacer una pausa para identificar tus emociones y luego comunicarlas con calma da mejores resultados que reaccionar de forma impulsiva.';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ1 =>
+      '¿Qué significa la conciencia emocional?';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ1O0 =>
+      'No mostrar nunca las emociones';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ1O1 => 'Estar siempre feliz';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ1O2 =>
+      'Reconocer y comprender las emociones para elegir cómo actuar ante ellas';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ1O3 =>
+      'Expresar cada emoción en cuanto la sientes';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ1Exp =>
+      'La conciencia emocional consiste en reconocer y comprender, lo que permite respuestas reflexivas en lugar de reacciones impulsivas.';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ2 =>
+      '¿Cuál es un ejemplo de «responder» en lugar de «reaccionar»?';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ2O0 =>
+      'Escribir una respuesta enfadada en cuanto te molestas';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ2O1 =>
+      'Esperar, reflexionar sobre lo que sientes y luego redactar un mensaje meditado';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ2O2 =>
+      'Ignorar el mensaje por completo';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ2O3 =>
+      'Desahogarte con amigos antes de responder';
+
+  @override
+  String get safetyAcademyLsnEmotionalAwarenessQ2Exp =>
+      'Responder implica una pausa deliberada para reflexionar, mientras que reaccionar está guiado por la emoción del momento.';
+
+  @override
+  String get safetyAcademyModFirstMeetingTitle =>
+      'Guía para el primer encuentro';
+
+  @override
+  String get safetyAcademyModFirstMeetingDesc =>
+      'Consejos esenciales para primeras citas seguras y con confianza con personas que conoces en línea.';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesTitle => 'Quedar en lugares públicos';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS0 =>
+      'Conocer en persona por primera vez a alguien de una app de citas es emocionante, pero la seguridad siempre debe ser lo primero. Elegir el lugar adecuado sienta las bases para una experiencia cómoda.';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS1 =>
+      'Elige una cafetería concurrida, un restaurante o un parque público para tu primer encuentro. Conocer el lugar te da ventaja — sabes dónde están las salidas y conoces al personal.';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS2 =>
+      'Nunca aceptes quedar en casa de alguien, en una zona apartada o en un lugar que no conozcas para una primera cita.';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS3 =>
+      'Lista de comprobación del lugar del primer encuentro';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS3I0 =>
+      'Elige un lugar público y bien iluminado';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS3I1 => 'Elige un sitio que conozcas';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS3I2 =>
+      'Asegúrate de que haya más gente en el lugar';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS3I3 =>
+      'Comprueba que tienes cobertura en el lugar';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesS3I4 =>
+      'Ten un plan alternativo por si necesitas irte rápido';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ0 =>
+      '¿Cuál es el lugar más seguro para una primera cita?';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ0O0 => 'Su apartamento';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ0O1 =>
+      'Una cafetería concurrida del centro';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ0O2 => 'Un sendero apartado';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ0O3 => 'Tu casa';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ0Exp =>
+      'Una cafetería concurrida es pública, hay personal cerca y puedes irte fácilmente si lo necesitas.';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ1 =>
+      '¿Por qué deberías elegir un lugar que conoces?';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ1O0 =>
+      'Para impresionar a tu cita con recomendaciones';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ1O1 =>
+      'Porque conoces las salidas, al personal y los alrededores';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ1O2 =>
+      'Sale más barato si conoces la carta';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ1O3 => 'No hay ninguna ventaja real';
+
+  @override
+  String get safetyAcademyLsnPublicPlacesQ1Exp =>
+      'Conocer el lugar significa que sabes cómo salir rápido y a quién pedir ayuda si no te sientes a gusto.';
+
+  @override
+  String get safetyAcademyLsnSharingPlansTitle => 'Comparte tus planes';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS0 =>
+      'Avisar a alguien de confianza de tu cita es una de las medidas de seguridad más sencillas y eficaces. Tu contacto de seguridad puede comprobar cómo estás y sabe dónde buscar si algo sale mal.';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS1 =>
+      'Comparte con un amigo de confianza el perfil de tu cita, el lugar y la hora a la que prevés volver. Programa una llamada de control a los 30 minutos de empezar la cita.';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS2 =>
+      'Información para compartir con tu contacto de seguridad';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS2I0 =>
+      'Captura de pantalla del perfil de tu cita';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS2I1 =>
+      'Nombre (o nombre de usuario) de la persona con la que quedas';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS2I2 =>
+      'Fecha, hora y lugar del encuentro';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS2I3 => 'Tu hora prevista de regreso';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS2I4 =>
+      'Hora acordada para dar señales (p. ej., una llamada o un mensaje)';
+
+  @override
+  String get safetyAcademyLsnSharingPlansS3 =>
+      'También puedes usar la función Share My Date de GreenGo para enviar fácilmente los detalles de tu cita a un contacto de confianza. Protegerte no tiene nada de vergonzoso — tu cita debería entenderlo.';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ0 =>
+      '¿Qué deberías compartir con un amigo de confianza antes de una primera cita?';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ0O0 => 'Solo el nombre del lugar';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ0O1 =>
+      'El perfil de tu cita, el lugar, la hora y la vuelta prevista';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ0O2 => 'Nada — es privado';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ0O3 =>
+      'Solo un mensaje que diga “tengo una cita”';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ0Exp =>
+      'Cuanta más información tenga tu contacto de seguridad, mejor podrá ayudarte si algo sale mal.';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ1 =>
+      '¿Cuál es un buen momento para la llamada de control?';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ1O0 => 'Cuando termine la cita';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ1O1 =>
+      'Unos 30 minutos después de empezar la cita';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ1O2 =>
+      'La llamada de control no es necesaria';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ1O3 => 'Antes de salir hacia la cita';
+
+  @override
+  String get safetyAcademyLsnSharingPlansQ1Exp =>
+      'Una llamada a los 30 minutos te da tiempo suficiente para valorar la situación y una salida fácil si no te sientes a gusto.';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyTitle =>
+      'Seguridad en el transporte';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS0 =>
+      'Cómo llegas a una cita y cómo vuelves importa tanto como el lugar del encuentro. Mantener el control de tu transporte te garantiza poder irte cuando quieras.';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS1 =>
+      'Nunca dejes que tu cita te recoja en casa para el primer encuentro. Eso revela tu dirección y te hace depender de esa persona para volver a casa.';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS2 =>
+      'Conduce tú, usa una app de transporte o ve en transporte público. Lleva el móvil cargado y suficiente dinero para volver a casa en caso de emergencia.';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS3 =>
+      'Lista de comprobación de seguridad en el transporte';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS3I0 =>
+      'Organiza tu propio transporte';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS3I1 =>
+      'Lleva el móvil con la batería llena';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS3I2 =>
+      'Ten dinero disponible para un trayecto de emergencia';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS3I3 =>
+      'Comparte tu ubicación en tiempo real con un contacto de confianza';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS3I4 =>
+      'Si vas en coche, aparca en una zona bien iluminada';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyS3I5 =>
+      'No dejes tu bebida sin vigilar si te ausentas';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ0 =>
+      '¿Por qué deberías organizar tu propio transporte para una primera cita?';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ0O0 => 'Para ahorrar gasolina';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ0O1 =>
+      'Para poder irte cuando quieras y que tu dirección siga siendo privada';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ0O2 => 'Para evitar el tráfico';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ0O3 =>
+      'Porque es más fácil aparcar solo';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ0Exp =>
+      'Tener tu propio transporte significa que no dependes de tu cita y que tu dirección sigue siendo privada.';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ1 =>
+      'Tu cita se ofrece a recogerte en casa. ¿Qué deberías hacer?';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ1O0 =>
+      'Aceptar — es un detalle bonito';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ1O1 =>
+      'Rechazarlo con educación y proponer quedar directamente en el lugar';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ1O2 =>
+      'Darle un cruce cercano en lugar de tu dirección exacta';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ1O3 =>
+      'Aceptar, pero pedirle a un amigo que mire desde la ventana';
+
+  @override
+  String get safetyAcademyLsnTransportSafetyQ1Exp =>
+      'Quedar en el lugar mantiene tu dirección en privado y te asegura un transporte independiente.';
+
+  @override
+  String get gamificationAchFirstMatchName => 'Primer match';
+
+  @override
+  String get gamificationAchFirstMatchDesc => 'Consigue tu primer like mutuo';
+
+  @override
+  String get gamificationAchConversationStarterName =>
+      'Iniciador de conversaciones';
+
+  @override
+  String get gamificationAchConversationStarterDesc =>
+      'Inicia 10 conversaciones';
+
+  @override
+  String get gamificationAchVideoChampionName => 'Campeón del vídeo';
+
+  @override
+  String get gamificationAchVideoChampionDesc => 'Completa 5 videollamadas';
+
+  @override
+  String get gamificationAchProfileMasterName => 'Maestro del perfil';
+
+  @override
+  String get gamificationAchProfileMasterDesc =>
+      'Completa al 100 % todas las secciones del perfil';
+
+  @override
+  String get gamificationAchGlobeTrotterName => 'Trotamundos';
+
+  @override
+  String get gamificationAchGlobeTrotterDesc =>
+      'Haz match con usuarios de más de 10 países';
+
+  @override
+  String get gamificationAchGenerousHeartName => 'Corazón generoso';
+
+  @override
+  String get gamificationAchGenerousHeartDesc => 'Regala monedas a tus matches';
+
+  @override
+  String get gamificationAchDailyDedicationName => 'Dedicación diaria';
+
+  @override
+  String get gamificationAchDailyDedicationDesc =>
+      'Racha de 7 días seguidos iniciando sesión';
+
+  @override
+  String get gamificationAchSuperStarName => 'Superestrella';
+
+  @override
+  String get gamificationAchSuperStarDesc => 'Recibe más de 50 súper likes';
+
+  @override
+  String get gamificationAchSocialButterflyName => 'Mariposa social';
+
+  @override
+  String get gamificationAchSocialButterflyDesc =>
+      'Mantén más de 20 conversaciones activas';
+
+  @override
+  String get gamificationAchPerfectWeekName => 'Semana perfecta';
+
+  @override
+  String get gamificationAchPerfectWeekDesc =>
+      'Completa todos los desafíos diarios durante 7 días';
+
+  @override
+  String get gamificationAchEarlyBirdName => 'Madrugador';
+
+  @override
+  String get gamificationAchEarlyBirdDesc =>
+      'Envía mensajes antes de las 9:00 durante 10 días';
+
+  @override
+  String get gamificationAchNightOwlName => 'Ave nocturna';
+
+  @override
+  String get gamificationAchNightOwlDesc =>
+      'Envía mensajes después de las 22:00 durante 10 días';
+
+  @override
+  String get gamificationAchCenturionName => 'Centurión';
+
+  @override
+  String get gamificationAchCenturionDesc => 'Alcanza 100 matches en total';
+
+  @override
+  String get gamificationAchSpeedDaterName => 'Relámpago';
+
+  @override
+  String get gamificationAchSpeedDaterDesc =>
+      'Haz match con 10 personas en un día';
+
+  @override
+  String get gamificationAchPhotoCollectorName => 'Coleccionista de fotos';
+
+  @override
+  String get gamificationAchPhotoCollectorDesc => 'Añade 6 fotos a tu perfil';
+
+  @override
+  String get gamificationAchTrendSetterName => 'Pionero';
+
+  @override
+  String get gamificationAchTrendSetterDesc =>
+      'Sé uno de los primeros 1000 usuarios';
+
+  @override
+  String get gamificationAchVerifiedName => 'Verificado';
+
+  @override
+  String get gamificationAchVerifiedDesc => 'Completa la verificación con foto';
+
+  @override
+  String get gamificationAchPremiumMemberName => 'Miembro Premium';
+
+  @override
+  String get gamificationAchPremiumMemberDesc =>
+      'Suscríbete al nivel Silver o Gold';
+
+  @override
+  String get gamificationAchCoinCollectorName => 'Coleccionista de monedas';
+
+  @override
+  String get gamificationAchCoinCollectorDesc => 'Acumula 1000 monedas';
+
+  @override
+  String get gamificationAchMonthlyStreakName => 'Dedicación mensual';
+
+  @override
+  String get gamificationAchMonthlyStreakDesc =>
+      'Racha de 30 días seguidos iniciando sesión';
+
+  @override
+  String get gamificationAchVocabularyBeginnerName => 'Explorador de palabras';
+
+  @override
+  String get gamificationAchVocabularyBeginnerDesc =>
+      'Usa 100 palabras distintas en el chat';
+
+  @override
+  String get gamificationAchVocabularyIntermediateName =>
+      'Artesano de palabras';
+
+  @override
+  String get gamificationAchVocabularyIntermediateDesc =>
+      'Usa 500 palabras distintas en el chat';
+
+  @override
+  String get gamificationAchVocabularyAdvancedName => 'Experto en vocabulario';
+
+  @override
+  String get gamificationAchVocabularyAdvancedDesc =>
+      'Usa 1000 palabras distintas en el chat';
+
+  @override
+  String get gamificationAchVocabularyMasterName => 'Maestro del vocabulario';
+
+  @override
+  String get gamificationAchVocabularyMasterDesc =>
+      'Usa 5000 palabras distintas en el chat';
+
+  @override
+  String get gamificationAchRareWordHunterName => 'Cazador de palabras raras';
+
+  @override
+  String get gamificationAchRareWordHunterDesc =>
+      'Usa 50 palabras raras (frecuencia inferior a 50)';
+
+  @override
+  String gamificationRewardCoinsPlus(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count monedas',
+      one: '+1 moneda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String gamificationRewardBadgePlus(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count insignias',
+      one: '+1 insignia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String gamificationRewardBoostPlus(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count impulsos',
+      one: '+1 impulso',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String gamificationRewardWithValue(String reward) {
+    return 'Recompensa: $reward';
+  }
+
+  @override
+  String get gamificationRewardBadge => 'Insignia';
+
+  @override
+  String get gamificationVip => 'VIP';
+
+  @override
+  String get gamificationRewardsTitle => 'Recompensas';
+
+  @override
+  String gamificationXpToNextLevel(String xp) {
+    return '$xp XP para el siguiente nivel';
+  }
+
+  @override
+  String get gamificationStreakDayUnitOne => 'día';
+
+  @override
+  String get gamificationStreakDayUnitOther => 'días';
+
+  @override
+  String get gamificationOnFire => '🎉 ¡Imparable!';
+
+  @override
+  String gamificationUserFallback(String id) {
+    return 'Usuario $id';
+  }
+
+  @override
+  String gamificationNoticeAchievementUnlocked(String name, String reward) {
+    return '¡$name desbloqueado! $reward';
+  }
+
+  @override
+  String gamificationNoticeAchievementReady(String name) {
+    return '¡Logro completado! Listo para desbloquear: $name';
+  }
+
+  @override
+  String gamificationNoticeLevelUp(int level) {
+    return '¡Subes de nivel! Has alcanzado el nivel $level.';
+  }
+
+  @override
+  String get gamificationNoticeVip =>
+      '¡Enhorabuena! ¡Has conseguido el estado VIP! 👑';
+
+  @override
+  String gamificationNoticeLevelRewardsClaimed(int level, String rewards) {
+    return '¡Recompensas del nivel $level reclamadas! $rewards';
+  }
+
+  @override
+  String gamificationNoticeChallengeRewardsClaimed(
+      String name, String rewards) {
+    return '¡Recompensas de $name reclamadas! $rewards';
+  }
+
+  @override
+  String gamificationNoticeFeatureLocked(int count, String feature, int level) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          '$feature se desbloquea en el nivel $level. ¡Te faltan $count niveles!',
+      one: '$feature se desbloquea en el nivel $level. ¡Te falta 1 nivel!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get gamificationFeatureCustomChatThemes =>
+      'Temas de chat personalizados';
+
+  @override
+  String get gamificationFeatureProfileVideo => 'Vídeo de perfil';
+
+  @override
+  String get gamificationFeatureAdvancedFilters => 'Filtros avanzados';
+
+  @override
+  String get gamificationFeatureUnlimitedRewinds => 'Retrocesos ilimitados';
+
+  @override
+  String get gamificationFeatureVipBadge => 'Insignia VIP';
+
+  @override
+  String get gamificationFeaturePriorityLikes => 'Likes prioritarios';
+
+  @override
+  String get gamificationLevelRewardBronzeFrame => 'Marco de bronce';
+
+  @override
+  String get gamificationLevelRewardSilverFrame => 'Marco de plata';
+
+  @override
+  String get gamificationLevelRewardGoldFrame => 'Marco de oro';
+
+  @override
+  String get gamificationLevelRewardPlatinumFrame => 'Marco de platino';
+
+  @override
+  String get gamificationLevelRewardDiamondFrame => 'Marco de diamante';
+
+  @override
+  String get gamificationLevelRewardLegendaryFrame => 'Marco legendario';
+
+  @override
+  String get gamificationLevelRewardVipCrown => 'Corona VIP';
+
+  @override
+  String gamificationLevelRewardMaxLevelBadge(int level) {
+    return 'Insignia de nivel $level';
+  }
+
+  @override
+  String gamificationLevelRewardBonusCoins(int count) {
+    return '$count monedas extra';
+  }
+
+  @override
+  String get gamificationMissionAttend3Events => 'Asiste a 3 eventos';
+
+  @override
+  String get gamificationMissionConnect3Countries =>
+      'Conecta con personas de 3 países';
+
+  @override
+  String get gamificationMissionJoinCommunity => 'Únete a una comunidad';
+
+  @override
+  String get gamificationMissionCompleteProfile => 'Completa tu perfil';
+
+  @override
+  String get gamificationMissionAdd5People => 'Añade a 5 personas';
+
+  @override
+  String get updateRequiredTitle => 'Actualización necesaria';
+
+  @override
+  String get updateRequiredMessage =>
+      'Hay una nueva versión de GreenGo disponible. Actualiza para seguir usando la app.';
+
+  @override
+  String get updateAvailableTitle => 'Actualización disponible';
+
+  @override
+  String get updateAvailableMessage =>
+      'Hay una nueva versión de GreenGo con mejoras y nuevas funciones.';
+
+  @override
+  String get updateVersionCurrent => 'Actual';
+
+  @override
+  String get updateVersionRequired => 'Necesaria';
+
+  @override
+  String get updateVersionAvailable => 'Disponible';
+
+  @override
+  String get updateVersionLatest => 'Última';
+
+  @override
+  String get updateWhatsNew => 'Novedades';
+
+  @override
+  String get updateNowButton => 'Actualizar ahora';
+
+  @override
+  String get updateButton => 'Actualizar';
+
+  @override
+  String get maintenanceTitle => 'En mantenimiento';
+
+  @override
+  String get maintenanceCheckBackSoon => 'Vuelve a intentarlo pronto';
+
+  @override
+  String get maintenanceDefaultMessage =>
+      'Estamos realizando tareas de mantenimiento. Inténtalo de nuevo más tarde.';
+
+  @override
+  String get countdownAlmostThere => '¡Ya casi!';
+
+  @override
+  String get countdownVipEarlyAccess => 'Acceso anticipado VIP';
+
+  @override
+  String countdownLaunchDate(String date) {
+    return 'Fecha de lanzamiento: $date';
+  }
+
+  @override
+  String get countdownTimeUntilLaunch => 'Tiempo hasta el lanzamiento';
+
+  @override
+  String get countdownWantEarlierAccess => '¿Quieres acceso anticipado?';
+
+  @override
+  String countdownUpgradeForEarlierAccess(String date) {
+    return '¡Mejora tu plan para acceder antes del $date!';
+  }
+
+  @override
+  String get countdownLaunchDay => '¡Día de lanzamiento!';
+
+  @override
+  String get countdownNowAvailable => 'GreenGo Chat ya está disponible';
+
+  @override
+  String celebrationWelcomeToTier(String tier) {
+    return '¡Bienvenido a $tier!';
+  }
+
+  @override
+  String get celebrationMembershipActive =>
+      'Tu membresía premium ya está activa';
+
+  @override
+  String get celebrationUnlimitedLikes => 'Likes ilimitados';
+
+  @override
+  String get celebrationSeeWhoLikedYou => 'Mira a quién le gustas';
+
+  @override
+  String celebrationPerDay(int count) {
+    return '$count/día';
+  }
+
+  @override
+  String get celebrationExclusiveEvents => 'Eventos exclusivos';
+
+  @override
+  String purchaseSuccessCoinsAdded(int count) {
+    return '¡$count monedas GreenGo añadidas!';
+  }
+
+  @override
+  String get pushChannelMainName => 'Notificaciones de GreenGo';
+
+  @override
+  String get pushChannelMainDescription =>
+      'Mensajes, likes, eventos y actividad';
+
+  @override
+  String get pushChannelAnnouncementsName => 'Anuncios';
+
+  @override
+  String get pushChannelAnnouncementsDescription =>
+      'Comunicados y anuncios de GreenGo';
+
+  @override
+  String get pushChannelSummaryName => 'Resumen de actividad';
+
+  @override
+  String get pushChannelSummaryDescription =>
+      'Notificaciones de actividad agrupadas';
+
+  @override
+  String get pushChannelGeneralName => 'General';
+
+  @override
+  String get pushChannelGeneralDescription => 'Notificaciones generales';
+
+  @override
+  String get usageLimitTypeConnects => 'conexiones';
+
+  @override
+  String get usageLimitTypePasses => 'pases';
+
+  @override
+  String get usageLimitTypePriorityConnects => 'Conexiones Prioritarias';
+
+  @override
+  String get usageLimitTypeDailyPriorityConnects =>
+      'Conexiones Prioritarias diarias';
+
+  @override
+  String get usageLimitTypeSwipes => 'deslizamientos';
+
+  @override
+  String get usageLimitTypeMessages => 'mensajes';
+
+  @override
+  String get usageLimitTypeMediaSends => 'envíos de multimedia';
+
+  @override
+  String get usageLimitTypeDirectMatches => 'matches directos';
+
+  @override
+  String get usageLimitTypeConnections => 'conexiones';
+
+  @override
+  String usageLimitUnlimited(String type) {
+    return '$type ilimitados';
+  }
+
+  @override
+  String usageLimitRemainingThisHour(int remaining, String type) {
+    return 'Te quedan $remaining $type esta hora';
+  }
+
+  @override
+  String usageLimitRemainingToday(int remaining, String type) {
+    return 'Te quedan $remaining $type hoy';
+  }
+
+  @override
+  String usageLimitConnectsHourly(int limit) {
+    return 'Has usado tus $limit conexiones de esta hora. Mejora tu plan para tener más o espera a la próxima hora.';
+  }
+
+  @override
+  String usageLimitPassesHourly(int limit) {
+    return 'Has usado tus $limit pases de esta hora. Mejora tu plan para tener más o espera a la próxima hora.';
+  }
+
+  @override
+  String usageLimitPriorityUnavailable(String tier) {
+    return 'Las Conexiones Prioritarias no están disponibles en el plan $tier. ¡Mejora tu plan para desbloquear esta función!';
+  }
+
+  @override
+  String usageLimitPriorityHourly(int limit) {
+    return 'Has usado tus $limit Conexiones Prioritarias de esta hora. Mejora tu plan para tener más o espera a la próxima hora.';
+  }
+
+  @override
+  String usageLimitPriorityDaily(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other:
+          'Has usado tus $limit conexiones prioritarias gratuitas de hoy. Usa monedas para tener más o espera hasta mañana.',
+      one:
+          'Has usado tu conexión prioritaria gratuita de hoy. Usa monedas para tener más o espera hasta mañana.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String usageLimitSwipesDaily(int limit) {
+    return 'Has usado tus $limit deslizamientos de hoy. Mejora tu plan para tener más o espera hasta mañana.';
+  }
+
+  @override
+  String usageLimitMessagesDaily(int limit) {
+    return 'Has alcanzado tu límite diario de $limit mensajes. ¡Mejora tu plan para enviar mensajes ilimitados!';
+  }
+
+  @override
+  String usageLimitMediaUnavailable(String tier) {
+    return 'El envío de multimedia no está disponible en el plan $tier. ¡Mejora tu plan para enviar imágenes y vídeos!';
+  }
+
+  @override
+  String usageLimitMediaDaily(int limit) {
+    return 'Has alcanzado tu límite diario de $limit envíos de multimedia. Mejora tu plan para tener más o espera hasta mañana.';
+  }
+
+  @override
+  String usageLimitDirectMatchDaily(int limit) {
+    String _temp0 = intl.Intl.pluralLogic(
+      limit,
+      locale: localeName,
+      other:
+          'Has usado tus $limit matches directos gratuitos de hoy. Usa monedas para tener más o espera hasta mañana.',
+      one:
+          'Has usado tu match directo gratuito de hoy. Usa monedas para tener más o espera hasta mañana.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get contentFilterViolationEmail => 'dirección de correo electrónico';
+
+  @override
+  String get contentFilterViolationPhoneWords =>
+      'número de teléfono (escrito con letras)';
+
+  @override
+  String get contentFilterViolationPhone => 'número de teléfono';
+
+  @override
+  String get contentFilterViolationSocial => 'red social/enlace';
+
+  @override
+  String adminImportSummary(int success, int duplicates, int errors) {
+    return 'Importados: $success | Duplicados: $duplicates | Errores: $errors';
+  }
+
+  @override
+  String get tierBoostCadenceNone => 'Ninguno';
+
+  @override
+  String get tierBoostCadenceMonthly => '1 al mes';
+
+  @override
+  String get tierBoostCadenceWeekly => '~1 a la semana';
+
+  @override
+  String get tierBoostCadenceDaily => '~1 al día';
+
+  @override
+  String get tierFilterLevelBasic => 'Básicos';
+
+  @override
+  String get tierFilterLevelStandard => 'Estándar';
+
+  @override
+  String get tierFilterLevelAdvanced => 'Avanzados';
+
+  @override
+  String get tierFilterLevelAll => 'Todos los filtros';
+
+  @override
+  String tierTtsCostValue(int coins) {
+    return '$coins monedas por traducción';
+  }
+
+  @override
+  String chatLearningLiteral(String text) {
+    return 'Literal: $text';
+  }
+
+  @override
+  String chatLearningMeaning(String text) {
+    return 'Significado: $text';
+  }
+
+  @override
+  String get validatorNameRequired => 'El nombre es obligatorio';
+
+  @override
+  String get validatorNameLettersOnly =>
+      'El nombre solo puede contener letras y espacios';
+
+  @override
+  String get validatorPhoneRequired => 'El número de teléfono es obligatorio';
+
+  @override
+  String get validatorPhoneMinDigits =>
+      'El número de teléfono debe tener al menos 10 dígitos';
+
+  @override
+  String get validatorAgeRequired => 'La edad es obligatoria';
+
+  @override
+  String validatorMinAge(int minAge) {
+    return 'Debes tener al menos $minAge años';
+  }
+
+  @override
+  String get validatorInvalidAge => 'Edad no válida';
+
+  @override
+  String validatorBioMaxLength(int max) {
+    return 'La biografía debe tener menos de $max caracteres';
+  }
+
+  @override
+  String get profileOnboardingIncompleteStep =>
+      'Completa todos los campos obligatorios';
+
+  @override
+  String get profileGenderPreferNotToSay => 'Prefiero no decirlo';
+
+  @override
+  String get profileOrientationStraight => 'Heterosexual';
+
+  @override
+  String get profileOrientationGay => 'Gay';
+
+  @override
+  String get profileOrientationBisexual => 'Bisexual';
+
+  @override
+  String get profileLanguageHebrew => 'Hebreo';
+
+  @override
+  String get profileLanguageThai => 'Tailandés';
+
+  @override
+  String get profileLanguageVietnamese => 'Vietnamita';
+
+  @override
+  String profileLatLon(String lat, String lon) {
+    return 'Lat: $lat, Lon: $lon';
+  }
+
+  @override
+  String get profileNicknameInvalid => 'Apodo no válido';
+
+  @override
+  String get profileNicknameErrorEmpty => 'El apodo no puede estar vacío';
+
+  @override
+  String profileNicknameErrorTooShort(int min) {
+    return 'El apodo debe tener al menos $min caracteres';
+  }
+
+  @override
+  String profileNicknameErrorTooLong(int max) {
+    return 'El apodo debe tener $max caracteres como máximo';
+  }
+
+  @override
+  String get profileNicknameErrorStartLetter =>
+      'El apodo debe empezar por una letra';
+
+  @override
+  String get profileNicknameErrorChars =>
+      'El apodo solo puede contener letras, números y guiones bajos';
+
+  @override
+  String get profileNicknameErrorUnderscores =>
+      'El apodo no puede contener guiones bajos consecutivos';
+
+  @override
+  String get profileNicknameErrorReserved =>
+      'El apodo no puede contener palabras reservadas';
+
+  @override
+  String get profileFreeUnlimited => 'Gratis - Ilimitado';
+
+  @override
+  String get profileFreeWithPlatinum => 'Gratis con Platinum';
+
+  @override
+  String profileCoinsPerDay(int count) {
+    return '$count monedas/día';
+  }
+
+  @override
+  String profileTravelerActiveSubtitle(
+      String location, int hours, int minutes) {
+    return '$location - quedan $hours h $minutes min';
+  }
+
+  @override
+  String profileTravelerInactiveSubtitle(String cost) {
+    return '$cost - Aparece en otra ciudad';
+  }
+
+  @override
+  String profileMinutesRemaining(int minutes) {
+    return 'quedan $minutes min';
+  }
+
+  @override
+  String profileHoursMinutesRemaining(int hours, int minutes) {
+    return 'quedan $hours h $minutes min';
+  }
+
+  @override
+  String get profileGhostMode => 'Modo fantasma';
+
+  @override
+  String get profileGhostModeActiveSubtitle =>
+      'Modo fantasma - Ilimitado - Oculto en Descubrir y búsqueda';
+
+  @override
+  String get profileGhostModeInactiveSubtitle =>
+      'Gratis - Ilimitado - Oculto en Descubrir y búsqueda por apodo';
+
+  @override
+  String profileIncognitoCostSubtitle(int count) {
+    return '$count monedas/24 h - Oculto en Descubrir';
+  }
+
+  @override
+  String get photoDeleteTitle => 'Eliminar foto';
+
+  @override
+  String travelerCouldNotResolveAddress(String coordinates) {
+    return '$coordinates — no se pudo obtener la dirección';
+  }
+
+  @override
+  String get membershipTierNameBasicFree => 'Básico (Gratis)';
+
+  @override
+  String get membershipTierNameSilverPremium => 'Plata Premium';
+
+  @override
+  String get membershipTierNameGoldPremium => 'Oro Premium';
+
+  @override
+  String get membershipTierNamePlatinumVip => 'Platino VIP';
+
+  @override
+  String get membershipTierNameSilverVip => 'Plata VIP';
+
+  @override
+  String get membershipTierNameGoldVip => 'Oro VIP';
+
+  @override
+  String get membershipTierNameTester => 'Probador';
+
+  @override
+  String membershipBuyProductPrice(String product, String price) {
+    return 'Comprar $product – $price';
+  }
+
+  @override
+  String get coinSpendCategoryMatching => 'Coincidencias';
+
+  @override
+  String get coinSpendCategoryMessaging => 'Mensajes';
+
+  @override
+  String get coinSpendCategoryGifts => 'Regalos virtuales';
+
+  @override
+  String get coinSpendSeeWhoLiked => 'Quién te dio like';
+
+  @override
+  String get coinSpendReadReceiptsDay => 'Confirmaciones de lectura (1 día)';
+
+  @override
+  String get coinSpendRose => 'Rosa';
+
+  @override
+  String get coinSpendTeddyBear => 'Osito de peluche';
+
+  @override
+  String get coinSpendDiamond => 'Diamante';
+
+  @override
+  String get coinSpendSuperLikeDesc => 'Envía un súper like para destacar';
+
+  @override
+  String get coinSpendBoostDesc => 'Que más personas te vean durante 30 min';
+
+  @override
+  String get coinSpendUndoDesc => 'Deshaz tu último swipe';
+
+  @override
+  String get coinSpendSeeWhoLikedDesc => 'Mira a quién le gustó tu perfil';
+
+  @override
+  String get coinSpendReadReceiptsDesc => 'Mira cuándo se leen los mensajes';
+
+  @override
+  String get coinSpendRoseDesc => 'Envía una rosa virtual';
+
+  @override
+  String get coinSpendTeddyBearDesc => 'Envía un osito de peluche adorable';
+
+  @override
+  String get coinSpendDiamondDesc => 'Envía un diamante brillante';
+
+  @override
+  String get coinReasonFirstMatchReward => 'Recompensa por el primer match';
+
+  @override
+  String get coinReasonCompleteProfileReward =>
+      'Recompensa por perfil completo';
+
+  @override
+  String get coinReasonDailyLoginStreak => 'Racha de inicio de sesión diario';
+
+  @override
+  String get coinReasonAchievementUnlocked => 'Logro desbloqueado';
+
+  @override
+  String get coinReasonMonthlyAllowance => 'Asignación mensual';
+
+  @override
+  String get coinReasonGiftReceived => 'Regalo recibido';
+
+  @override
+  String get coinReasonGiftSent => 'Regalo enviado';
+
+  @override
+  String get coinReasonPromotionalBonus => 'Bono promocional';
+
+  @override
+  String get coinReasonReferralBonus => 'Bono por referido';
+
+  @override
+  String get coinReasonCoinPurchase => 'Compra de monedas';
+
+  @override
+  String get coinReasonRefund => 'Reembolso';
+
+  @override
+  String get coinReasonUndoLastSwipe => 'Deshacer último swipe';
+
+  @override
+  String get coinReasonSeeWhoLikedYou => 'Mira quién te dio like';
+
+  @override
+  String get coinReasonDirectMessage => 'Mensaje directo';
+
+  @override
+  String get coinReasonFeaturePurchase => 'Compra de función';
+
+  @override
+  String get coinReasonCoinsExpired => 'Monedas caducadas';
+
+  @override
+  String get coinReasonAdminAdjustment => 'Ajuste del administrador';
+
+  @override
+  String coinTxDescFirstMatch(int amount) {
+    return '¡Enhorabuena por tu primer match! Has ganado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescCompleteProfile(int amount) {
+    return '¡Perfil completado! Has ganado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescDailyStreak(String streak, int amount) {
+    return '¡Racha de $streak días! Has ganado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescAchievement(String achievement, int amount) {
+    return 'Logro desbloqueado: $achievement. Has ganado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescAchievementGeneric(int amount) {
+    return '¡Logro desbloqueado! Has ganado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescMonthlyAllowance(String tier, int amount) {
+    return 'Asignación mensual $tier: $amount monedas.';
+  }
+
+  @override
+  String coinTxDescGiftReceived(int amount, String user) {
+    return 'Has recibido $amount monedas de $user.';
+  }
+
+  @override
+  String coinTxDescGiftSent(int amount, String user) {
+    return 'Has enviado $amount monedas a $user.';
+  }
+
+  @override
+  String coinTxDescPromotional(String campaign, int amount) {
+    return 'Bono promocional de $campaign: $amount monedas.';
+  }
+
+  @override
+  String coinTxDescPromotionalGeneric(int amount) {
+    return 'Bono promocional: $amount monedas.';
+  }
+
+  @override
+  String coinTxDescReferral(int amount) {
+    return 'Bono por referido: has ganado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescPurchase(int amount) {
+    return 'Has comprado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescPurchasePackage(int amount, String package) {
+    return 'Has comprado $amount monedas ($package).';
+  }
+
+  @override
+  String coinTxDescRefund(int amount) {
+    return 'Reembolso: $amount monedas.';
+  }
+
+  @override
+  String coinTxDescUsedFor(int amount, String feature) {
+    return 'Has usado $amount monedas en $feature.';
+  }
+
+  @override
+  String coinTxDescExpired(int amount) {
+    return 'Han caducado $amount monedas.';
+  }
+
+  @override
+  String coinTxDescClawback(int amount) {
+    return 'Se retiraron $amount monedas: la compra fue reembolsada.';
+  }
+
+  @override
+  String coinTxDescAdmin(int amount, String reason) {
+    return 'Ajuste del administrador: $amount monedas ($reason).';
+  }
+
+  @override
+  String coinTxDescAdminGeneric(int amount) {
+    return 'Ajuste del administrador: $amount monedas.';
+  }
+
+  @override
+  String coinPromoPercentBonus(int percent) {
+    return '+$percent% monedas extra';
+  }
+
+  @override
+  String get businessFollowerFallbackName => 'Miembro de GreenGo';
+
+  @override
+  String get bizCatRestaurant => 'Restaurante';
+
+  @override
+  String get bizCatBar => 'Bar';
+
+  @override
+  String get bizCatCafe => 'Cafetería';
+
+  @override
+  String get bizCatNightclub => 'Discoteca';
+
+  @override
+  String get bizCatLounge => 'Lounge';
+
+  @override
+  String get bizCatHotel => 'Hotel';
+
+  @override
+  String get bizCatHostel => 'Albergue';
+
+  @override
+  String get bizCatGuesthouse => 'Casa de huéspedes';
+
+  @override
+  String get bizCatResort => 'Resort';
+
+  @override
+  String get bizCatBedAndBreakfast => 'Bed & Breakfast';
+
+  @override
+  String get bizCatGym => 'Gimnasio';
+
+  @override
+  String get bizCatYogaStudio => 'Estudio de yoga';
+
+  @override
+  String get bizCatFitnessStudio => 'Estudio de fitness';
+
+  @override
+  String get bizCatSpa => 'Spa';
+
+  @override
+  String get bizCatWellnessCenter => 'Centro de bienestar';
+
+  @override
+  String get bizCatBeautySalon => 'Salón de belleza';
+
+  @override
+  String get bizCatBarbershop => 'Barbería';
+
+  @override
+  String get bizCatMuseum => 'Museo';
+
+  @override
+  String get bizCatArtGallery => 'Galería de arte';
+
+  @override
+  String get bizCatTheater => 'Teatro';
+
+  @override
+  String get bizCatCinema => 'Cine';
+
+  @override
+  String get bizCatLiveMusicVenue => 'Local de música en vivo';
+
+  @override
+  String get bizCatCulturalCenter => 'Centro cultural';
+
+  @override
+  String get bizCatTourOperator => 'Operador turístico';
+
+  @override
+  String get bizCatTravelAgency => 'Agencia de viajes';
+
+  @override
+  String get bizCatLanguageSchool => 'Escuela de idiomas';
+
+  @override
+  String get bizCatCookingSchool => 'Escuela de cocina';
+
+  @override
+  String get bizCatDanceStudio => 'Escuela de baile';
+
+  @override
+  String get bizCatCoworkingSpace => 'Espacio de coworking';
+
+  @override
+  String get bizCatEventVenue => 'Espacio para eventos';
+
+  @override
+  String get bizCatConferenceCenter => 'Centro de conferencias';
+
+  @override
+  String get bizCatShopRetail => 'Tienda / Comercio';
+
+  @override
+  String get bizCatBoutique => 'Boutique';
+
+  @override
+  String get bizCatBookstore => 'Librería';
+
+  @override
+  String get bizCatMarket => 'Mercado';
+
+  @override
+  String get bizCatWinery => 'Bodega';
+
+  @override
+  String get bizCatBrewery => 'Cervecería';
+
+  @override
+  String get bizCatDistillery => 'Destilería';
+
+  @override
+  String get bizCatFoodTruck => 'Food truck';
+
+  @override
+  String get bizCatBakery => 'Panadería';
+
+  @override
+  String get bizCatCoffeeRoastery => 'Tostadero de café';
+
+  @override
+  String get bizCatSportsClub => 'Club deportivo';
+
+  @override
+  String get bizCatAdventureAndOutdoor => 'Aventura y aire libre';
+
+  @override
+  String get bizCatDivingCenter => 'Centro de buceo';
+
+  @override
+  String get bizCatPhotographyStudio => 'Estudio de fotografía';
+
+  @override
+  String get bizCatCoachingAndConsulting => 'Coaching y consultoría';
+
+  @override
+  String get bizCatNonprofitAndNGO => 'Organización sin ánimo de lucro y ONG';
+
+  @override
+  String get bizCatCommunityCenter => 'Centro comunitario';
+
+  @override
+  String get bizCatTransportationService => 'Servicio de transporte';
+
+  @override
+  String get bizCatOther => 'Otro';
+
+  @override
+  String get bizCatGroupFoodAndDrink => 'Comida y bebida';
+
+  @override
+  String get bizCatGroupNightlife => 'Vida nocturna';
+
+  @override
+  String get bizCatGroupStay => 'Alojamiento';
+
+  @override
+  String get bizCatGroupWellness => 'Bienestar';
+
+  @override
+  String get bizCatGroupCulture => 'Cultura';
+
+  @override
+  String get bizCatGroupTravelAndTours => 'Viajes y tours';
+
+  @override
+  String get bizCatGroupLearnAndWork => 'Aprender y trabajar';
+
+  @override
+  String get bizCatGroupEvents => 'Eventos';
+
+  @override
+  String get bizCatGroupRetail => 'Comercio';
+
+  @override
+  String get bizCatGroupCommunityAndServices => 'Comunidad y servicios';
+
+  @override
+  String get gamificationJourneyTitle => 'Tu viaje';
+
+  @override
+  String gamificationJourneyMilestonesCompleted(int completed, int total) {
+    return '$completed de $total hitos completados';
+  }
+
+  @override
+  String get gamificationJourneyOverallProgress => 'Progreso general';
+
+  @override
+  String get gamificationJourneyNoMilestones => 'Aún no hay hitos';
+
+  @override
+  String get gamificationJourneyCompletePrevious =>
+      'Completa las categorías anteriores para desbloquear';
+
+  @override
+  String get gamificationJourneyTabStart => 'Inicio';
+
+  @override
+  String get gamificationJourneyTabMaster => 'Maestro';
+
+  @override
+  String get gamificationJourneyCatGettingStarted => 'Primeros pasos';
+
+  @override
+  String get gamificationJourneyCatSocializing => 'Socializar';
+
+  @override
+  String get gamificationJourneyCatMastery => 'Maestría';
+
+  @override
+  String get gamificationJourneyCatGettingStartedDesc =>
+      'Completa tu perfil y familiarízate con la app';
+
+  @override
+  String get gamificationJourneyCatSocializingDesc =>
+      'Conecta con otras personas y crea relaciones';
+
+  @override
+  String get gamificationJourneyCatPremiumDesc =>
+      'Desbloquea funciones y recompensas premium';
+
+  @override
+  String get gamificationJourneyCatMasteryDesc =>
+      'Conviértete en un maestro de las citas';
+
+  @override
+  String get gamificationJourneyCatSpecialDesc => 'Hitos y logros exclusivos';
+
+  @override
+  String get gamificationJourneyCompleteProfileName => 'Perfil pro';
+
+  @override
+  String get gamificationJourneyCompleteProfileDesc =>
+      'Completa tu perfil al 100 %';
+
+  @override
+  String get gamificationJourneyAddPhotosName => 'Foto perfecta';
+
+  @override
+  String get gamificationJourneyAddPhotosDesc => 'Añade 5 fotos a tu perfil';
+
+  @override
+  String get gamificationJourneyGetVerifiedName => 'Usuario verificado';
+
+  @override
+  String get gamificationJourneyGetVerifiedDesc =>
+      'Completa la verificación con foto';
+
+  @override
+  String get gamificationJourneyFirstMatchName => 'Primera conexión';
+
+  @override
+  String get gamificationJourneyFirstMatchDesc => 'Consigue tu primer match';
+
+  @override
+  String get gamificationJourneyTenMatchesName => 'Estrella en ascenso';
+
+  @override
+  String get gamificationJourneyTenMatchesDesc => 'Consigue 10 matches';
+
+  @override
+  String get gamificationJourneyFiftyMatchesName => 'Mariposa social';
+
+  @override
+  String get gamificationJourneyFiftyMatchesDesc => 'Consigue 50 matches';
+
+  @override
+  String get gamificationJourneyFirstMessageName => 'Rompehielos';
+
+  @override
+  String get gamificationJourneyFirstMessageDesc => 'Envía tu primer mensaje';
+
+  @override
+  String get gamificationJourneyHundredMessagesName => 'Rey de la conversación';
+
+  @override
+  String get gamificationJourneyHundredMessagesDesc => 'Envía 100 mensajes';
+
+  @override
+  String get gamificationJourneyFirstVideoCallName => 'Cara a cara';
+
+  @override
+  String get gamificationJourneyFirstVideoCallDesc =>
+      'Completa tu primera videollamada';
+
+  @override
+  String get gamificationJourneyTenVideoCallsName => 'Pro del vídeo';
+
+  @override
+  String get gamificationJourneyTenVideoCallsDesc =>
+      'Completa 10 videollamadas';
+
+  @override
+  String get gamificationJourneyWeekStreakName => 'Usuario constante';
+
+  @override
+  String get gamificationJourneyWeekStreakDesc => 'Mantén una racha de 7 días';
+
+  @override
+  String get gamificationJourneyMonthStreakName => 'Súper constante';
+
+  @override
+  String get gamificationJourneyMonthStreakDesc =>
+      'Mantén una racha de 30 días';
+
+  @override
+  String get gamificationJourneyUpgradeSilverName => 'Miembro Silver';
+
+  @override
+  String get gamificationJourneyUpgradeSilverDesc => 'Mejora a VIP Silver';
+
+  @override
+  String get gamificationJourneyUpgradeGoldName => 'Miembro Gold';
+
+  @override
+  String get gamificationJourneyUpgradeGoldDesc => 'Mejora a VIP Gold';
+
+  @override
+  String get gamificationJourneyUpgradePlatinumName => 'Miembro Platinum';
+
+  @override
+  String get gamificationJourneyUpgradePlatinumDesc => 'Mejora a VIP Platinum';
+
+  @override
+  String get gamificationJourneyTenAchievementsName => 'Cazador de logros';
+
+  @override
+  String get gamificationJourneyTenAchievementsDesc => 'Consigue 10 logros';
+
+  @override
+  String get gamificationJourneyFiftyAchievementsName => 'Maestro de logros';
+
+  @override
+  String get gamificationJourneyFiftyAchievementsDesc => 'Consigue 50 logros';
+
+  @override
+  String get gamificationJourneyHundredMatchesName => 'Centurión';
+
+  @override
+  String get gamificationJourneyHundredMatchesDesc => 'Consigue 100 matches';
+
+  @override
+  String get gamificationStreakMilestone3Name => 'Buen comienzo';
+
+  @override
+  String get gamificationStreakMilestone7Name => 'Guerrero semanal';
+
+  @override
+  String get gamificationStreakMilestone14Name => 'Campeón de dos semanas';
+
+  @override
+  String get gamificationStreakMilestone30Name => 'Maestro del mes';
+
+  @override
+  String get gamificationStreakMilestone60Name => 'Campeón de dos meses';
+
+  @override
+  String get gamificationStreakMilestone90Name => 'Leyenda trimestral';
+
+  @override
+  String get gamificationStreakMilestone180Name => 'Héroe semestral';
+
+  @override
+  String get gamificationStreakMilestone365Name => 'Año de amor';
+
+  @override
+  String gamificationStreakMilestoneDesc(int days) {
+    return 'Inicia sesión $days días seguidos';
+  }
+
+  @override
+  String get gamificationChallengeSend3MessagesName => 'Charla rápida';
+
+  @override
+  String get gamificationChallengeSend3MessagesDesc => 'Envía 3 mensajes';
+
+  @override
+  String get gamificationChallengeSend5MessagesName =>
+      'Maestro de los mensajes';
+
+  @override
+  String get gamificationChallengeSend5MessagesDesc =>
+      'Envía 5 mensajes a tus matches';
+
+  @override
+  String get gamificationChallengeSend10MessagesName =>
+      'Rey de la conversación';
+
+  @override
+  String get gamificationChallengeSend10MessagesDesc => 'Envía 10 mensajes hoy';
+
+  @override
+  String get gamificationChallengeSend15MessagesName => 'Maratón de chat';
+
+  @override
+  String get gamificationChallengeSend15MessagesDesc => 'Envía 15 mensajes hoy';
+
+  @override
+  String get gamificationChallengeGet1MatchName => 'Primera chispa';
+
+  @override
+  String get gamificationChallengeGet1MatchDesc => 'Consigue 1 match nuevo hoy';
+
+  @override
+  String get gamificationChallengeGet3MatchesName => 'Celestino';
+
+  @override
+  String get gamificationChallengeGet3MatchesDesc =>
+      'Consigue 3 matches nuevos hoy';
+
+  @override
+  String get gamificationChallengeGet5MatchesName => 'Imán del amor';
+
+  @override
+  String get gamificationChallengeGet5MatchesDesc =>
+      'Consigue 5 matches nuevos hoy';
+
+  @override
+  String get gamificationChallengeSend1SuperlikeName => 'Elección prioritaria';
+
+  @override
+  String get gamificationChallengeSend1SuperlikeDesc => 'Envía 1 súper like';
+
+  @override
+  String get gamificationChallengeSend3SuperlikesName => 'Súper liker';
+
+  @override
+  String get gamificationChallengeSend3SuperlikesDesc => 'Envía 3 súper likes';
+
+  @override
+  String get gamificationChallengeSend5SuperlikesName => 'Superestrella';
+
+  @override
+  String get gamificationChallengeSend5SuperlikesDesc => 'Envía 5 súper likes';
+
+  @override
+  String get gamificationChallengeVideoCall1Name => 'Entusiasta del vídeo';
+
+  @override
+  String get gamificationChallengeVideoCall1Desc => 'Completa 1 videollamada';
+
+  @override
+  String get gamificationChallengeVideoCall2Name => 'Pro del vídeo';
+
+  @override
+  String get gamificationChallengeVideoCall2Desc => 'Completa 2 videollamadas';
+
+  @override
+  String get gamificationChallengeAddPhotoName => 'Foto renovada';
+
+  @override
+  String get gamificationChallengeAddPhotoDesc =>
+      'Añade o actualiza una foto de perfil';
+
+  @override
+  String get gamificationChallengeAdd2PhotosName => 'Galería de fotos';
+
+  @override
+  String get gamificationChallengeAdd2PhotosDesc =>
+      'Añade 2 fotos de perfil nuevas';
+
+  @override
+  String get gamificationChallengeSend1GiftName => 'Regalador';
+
+  @override
+  String get gamificationChallengeSend1GiftDesc => 'Envía 1 regalo a un match';
+
+  @override
+  String get gamificationChallengeSend3GiftsName => 'Corazón generoso';
+
+  @override
+  String get gamificationChallengeSend3GiftsDesc => 'Envía 3 regalos hoy';
+
+  @override
+  String get gamificationChallengeSend5GiftsName => 'Maestro de los regalos';
+
+  @override
+  String get gamificationChallengeSend5GiftsDesc => 'Envía 5 regalos hoy';
+
+  @override
+  String get gamificationChallengeChatStarterName => 'Rompehielos';
+
+  @override
+  String get gamificationChallengeChatStarterDesc =>
+      'Envía 7 mensajes a matches distintos';
+
+  @override
+  String get gamificationChallengeSocialButterflyName => 'Mariposa social';
+
+  @override
+  String get gamificationChallengeSocialButterflyDesc =>
+      'Envía 20 mensajes hoy';
+
+  @override
+  String get gamificationChallengeMatchRushName => 'Fiebre de matches';
+
+  @override
+  String get gamificationChallengeMatchRushDesc => 'Consigue 7 matches hoy';
+
+  @override
+  String get gamificationChallengeVideoMarathonName => 'Maratón de vídeo';
+
+  @override
+  String get gamificationChallengeVideoMarathonDesc =>
+      'Completa 3 videollamadas';
+
+  @override
+  String get gamificationChallengeWeeklyMessages30Name => 'Entusiasta del chat';
+
+  @override
+  String get gamificationChallengeWeeklyMessages30Desc =>
+      'Envía 30 mensajes esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyMessages50Name => 'Maestro del chat';
+
+  @override
+  String get gamificationChallengeWeeklyMessages50Desc =>
+      'Envía 50 mensajes esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyMessages100Name => 'Leyenda del chat';
+
+  @override
+  String get gamificationChallengeWeeklyMessages100Desc =>
+      'Envía 100 mensajes esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyMatches10Name => 'Conector semanal';
+
+  @override
+  String get gamificationChallengeWeeklyMatches10Desc =>
+      'Consigue 10 matches esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyMatches20Name =>
+      'Campeón semanal de matches';
+
+  @override
+  String get gamificationChallengeWeeklyMatches20Desc =>
+      'Consigue 20 matches esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyMatches30Name => 'Máquina de matches';
+
+  @override
+  String get gamificationChallengeWeeklyMatches30Desc =>
+      'Consigue 30 matches esta semana';
+
+  @override
+  String get gamificationChallengeWeeklySuperlikes5Name =>
+      'Súper liker semanal';
+
+  @override
+  String get gamificationChallengeWeeklySuperlikes5Desc =>
+      'Envía 5 súper likes esta semana';
+
+  @override
+  String get gamificationChallengeWeeklySuperlikes10Name => 'Súper fan';
+
+  @override
+  String get gamificationChallengeWeeklySuperlikes10Desc =>
+      'Envía 10 súper likes esta semana';
+
+  @override
+  String get gamificationChallengeWeeklySuperlikes15Name =>
+      'Rey de la prioridad';
+
+  @override
+  String get gamificationChallengeWeeklySuperlikes15Desc =>
+      'Envía 15 súper likes esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyVideo3Name => 'Sociable del vídeo';
+
+  @override
+  String get gamificationChallengeWeeklyVideo3Desc =>
+      'Completa 3 videollamadas esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyVideo5Name => 'Estrella del vídeo';
+
+  @override
+  String get gamificationChallengeWeeklyVideo5Desc =>
+      'Completa 5 videollamadas esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyGifts5Name => 'Regalador semanal';
+
+  @override
+  String get gamificationChallengeWeeklyGifts5Desc =>
+      'Envía 5 regalos esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyGifts10Name => 'Alma generosa';
+
+  @override
+  String get gamificationChallengeWeeklyGifts10Desc =>
+      'Envía 10 regalos esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyPhotos3Name => 'Semana de fotos';
+
+  @override
+  String get gamificationChallengeWeeklyPhotos3Desc =>
+      'Añade 3 fotos esta semana';
+
+  @override
+  String get gamificationChallengeWeeklyPerfectName => 'Semana perfecta';
+
+  @override
+  String get gamificationChallengeWeeklyPerfectDesc =>
+      'Completa todos los desafíos diarios 7 días seguidos';
+
+  @override
+  String get gamificationChallengeValentineMatchesName =>
+      'Conexiones del corazón';
+
+  @override
+  String get gamificationChallengeValentineMatchesDesc =>
+      'Consigue 14 matches durante la semana de San Valentín (1 al día)';
+
+  @override
+  String get gamificationChallengeValentineVideoName => 'Cita virtual';
+
+  @override
+  String get gamificationChallengeValentineVideoDesc =>
+      'Completa 3 videollamadas';
+
+  @override
+  String get gamificationChallengeSummerMatchesName => 'Vibras de playa';
+
+  @override
+  String get gamificationChallengeSummerMatchesDesc =>
+      'Consigue 30 matches este verano';
+
+  @override
+  String get gamificationChallengeHolidayGiftsName => 'Regalador';
+
+  @override
+  String get gamificationChallengeHolidayGiftsDesc =>
+      'Envía 10 regalos de monedas a tus matches';
+
+  @override
+  String get gamificationChallengeHolidayMessagesName => 'Alegría festiva';
+
+  @override
+  String get gamificationChallengeHolidayMessagesDesc => 'Envía 100 mensajes';
+
+  @override
+  String get gamificationEventValentinesName => 'Semana de San Valentín';
+
+  @override
+  String get gamificationEventValentinesDesc =>
+      '¡Comparte el amor esta semana de San Valentín!';
+
+  @override
+  String get gamificationEventSummerName => 'Amor de verano';
+
+  @override
+  String get gamificationEventSummerDesc => '¡Encuentra tu romance de verano!';
+
+  @override
+  String get gamificationEventHolidayName => 'Temporada festiva';
+
+  @override
+  String get gamificationEventHolidayDesc =>
+      '¡Encuentra el amor estas fiestas!';
+
+  @override
+  String get travelExploreTitle => 'Explorar viajes';
+
+  @override
+  String get travelExploreInMyCity => 'En mi ciudad';
+
+  @override
+  String get travelExploreWorldwide => 'En todo el mundo';
+
+  @override
+  String travelExploreTravelersIn(String city) {
+    return 'Viajeros en $city';
+  }
+
+  @override
+  String get travelExploreUnknownLocation => 'Ubicación desconocida';
+
+  @override
+  String get travelExploreLocalGuides => 'Guías locales';
+
+  @override
+  String get travelExploreCities => 'Ciudades';
+
+  @override
+  String travelExploreGuideIn(String city) {
+    return 'Guía en $city';
+  }
+
+  @override
+  String travelExploreNoTravelersInCity(String city) {
+    return 'Ahora mismo no hay viajeros en $city';
+  }
+
+  @override
+  String get travelExploreNoTravelers => 'No se encontraron viajeros';
+
+  @override
+  String get travelExploreTryWorldwide =>
+      'Cambia a «En todo el mundo» para ver a todos los viajeros';
+
+  @override
+  String get travelExploreCheckBack =>
+      'Vuelve más tarde para ver viajeros activos';
+
+  @override
+  String get travelExploreShowWorldwide => 'Ver en todo el mundo';
+
+  @override
+  String get discoveryDealBreakerSmoking => 'Fumar';
+
+  @override
+  String get discoveryDealBreakerDrinking => 'Beber alcohol';
+
+  @override
+  String get discoveryDealBreakerNoBio => 'Sin biografía';
+
+  @override
+  String get discoveryDealBreakerNoPhotos => 'Sin fotos';
+
+  @override
+  String get discoveryDealBreakerDifferentReligion => 'Religión diferente';
+
+  @override
+  String get discoveryDealBreakerDifferentPolitics =>
+      'Ideas políticas diferentes';
+
+  @override
+  String get discoveryDealBreakerHasChildren => 'Tiene hijos';
+
+  @override
+  String get discoveryDealBreakerWantsChildren => 'Quiere hijos';
+
+  @override
+  String get discoveryDealBreakerLongDistance => 'Larga distancia';
+
+  @override
+  String get discoveryDealBreakerNonMonogamy => 'No monogamia';
+
+  @override
+  String discoveryPrefCountryUserCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count usuarios',
+      one: '1 usuario',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get discoveryGridAuto => 'Auto';
+
+  @override
+  String get discoveryMatchFallbackName => 'Match';
+
+  @override
+  String get discoveryThisUser => 'este usuario';
+
+  @override
+  String get discoveryActionNope => 'No';
+
+  @override
+  String get exploreTierTester => 'Tester';
+
+  @override
+  String get chatCulturalContextTitle => 'Contexto cultural';
+
+  @override
+  String get chatCulturalContextLink => 'Contexto cultural';
+
+  @override
+  String get chatWordBreakdownTierRequired =>
+      'El desglose de palabras está disponible para miembros Silver, Gold y Platinum';
+
+  @override
+  String get chatPreviewSticker => 'Sticker';
+
+  @override
+  String get chatPreviewVoiceMessage => 'Mensaje de voz';
+
+  @override
+  String get chatPreviewAlbumShared => 'Álbum compartido';
+
+  @override
+  String get chatPreviewAlbumRevoked => 'Acceso al álbum revocado';
+
+  @override
+  String get chatPreviewEvent => 'Evento';
+
+  @override
+  String get chatPreviewSayHi => '¡Saluda a tu match!';
+
+  @override
+  String chatTimeShortMinutes(int count) {
+    return '$count min';
+  }
+
+  @override
+  String chatTimeShortHours(int count) {
+    return '$count h';
+  }
+
+  @override
+  String chatTimeShortDays(int count) {
+    return '$count d';
+  }
+
+  @override
+  String get chatNotificationsMutedForChat =>
+      'Notificaciones silenciadas para este chat';
+
+  @override
+  String get chatNotificationsUnmuted => 'Notificaciones activadas';
+
+  @override
+  String get chatMuteNotifications => 'Silenciar notificaciones';
+
+  @override
+  String get chatUnmuteNotifications => 'Activar notificaciones';
+
+  @override
+  String chatAlbumSelectCount(int count) {
+    return 'Seleccionar ($count)';
+  }
+
+  @override
+  String chatAlbumPhotosSelected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count fotos seleccionadas',
+      one: '1 foto seleccionada',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String chatSessionXp(int xp) {
+    return '$xp XP';
+  }
+
+  @override
+  String get chatPhraseHowAreYou => '¿Cómo estás?';
+
+  @override
+  String get chatPhraseGoodMorning => '¡Buenos días!';
+
+  @override
+  String get chatPhraseAllGood => '¿Todo bien?';
+
+  @override
+  String get chatPhrasePleasedToMeetYou => '¡Encantado de conocerte!';
+
+  @override
+  String get chatPhraseNiceToMeetYou => '¡Mucho gusto!';
+
+  @override
+  String get chatPhraseWhatsUp => '¿Qué tal?';
+
+  @override
+  String get chatSupportAiBadge => 'IA';
+
+  @override
+  String get chatGroupFallbackName => 'Grupo';
+
+  @override
+  String get communitiesTypeLanguageCircle => 'Círculo de idiomas';
+
+  @override
+  String get communitiesTypeCulturalInterest => 'Interés cultural';
+
+  @override
+  String get communitiesTypeTravelGroup => 'Grupo de viaje';
+
+  @override
+  String get communitiesTypeLocalGuides => 'Guías locales';
+
+  @override
+  String get communitiesTypeStudyGroup => 'Grupo de estudio';
+
+  @override
+  String get communitiesTypeGeneral => 'General';
+
+  @override
+  String get communitiesRoleOwner => 'Propietario';
+
+  @override
+  String get communitiesRoleAdmin => 'Admin';
+
+  @override
+  String get communitiesRoleMember => 'Miembro';
+
+  @override
+  String get communitiesNoActivityYet => 'Sin actividad aún';
+
+  @override
+  String get communitiesLanguageMandarin => 'Mandarín';
+
+  @override
+  String get communitiesLanguageThai => 'Tailandés';
+
+  @override
+  String get communitiesLanguageVietnamese => 'Vietnamita';
+
+  @override
+  String get communitiesLanguageCatalan => 'Catalán';
+
+  @override
+  String get communitiesLanguageHebrew => 'Hebreo';
+
+  @override
+  String get videoPromptSelectorTitle => 'Elige un tema';
+
+  @override
+  String get videoPromptSelectorSubtitle =>
+      'Elige un tema para tu video de presentación';
+
+  @override
+  String get videoPromptIntroduceTitle => 'Preséntate';
+
+  @override
+  String get videoPromptIntroduceDesc => 'Saluda y cuéntanos quién eres';
+
+  @override
+  String get videoPromptIntroduceTemplate => 'Preséntate en tu idioma favorito';
+
+  @override
+  String get videoPromptNativeTitle => 'Lengua materna';
+
+  @override
+  String get videoPromptNativeDesc => 'Presume de tu lengua materna';
+
+  @override
+  String get videoPromptNativeTemplate => 'Di algo en tu lengua materna';
+
+  @override
+  String get videoPromptTeachTitle => 'Enseña una frase';
+
+  @override
+  String get videoPromptTeachDesc => 'Comparte algo divertido para decir';
+
+  @override
+  String get videoPromptTeachTemplate => 'Enséñanos una frase en tu idioma';
+
+  @override
+  String get videoPromptPlaceTitle => 'Lugar favorito';
+
+  @override
+  String get videoPromptPlaceDesc =>
+      'Comparte un lugar que signifique algo para ti';
+
+  @override
+  String get videoPromptPlaceTemplate =>
+      '¿Cuál es tu lugar favorito para visitar?';
+
+  @override
+  String get videoPromptCultureTitle => 'Intercambio cultural';
+
+  @override
+  String get videoPromptCultureDesc =>
+      '¿Qué significa para ti el intercambio cultural?';
+
+  @override
+  String get videoPromptCultureTemplate =>
+      'Describe tu intercambio cultural ideal';
+
+  @override
+  String get videoPromptTalentTitle => 'Talento oculto';
+
+  @override
+  String get videoPromptTalentDesc => 'Sorpréndenos con algo inesperado';
+
+  @override
+  String get videoPromptTalentTemplate =>
+      'Muéstranos un talento oculto o un dato curioso sobre ti';
+
+  @override
+  String get videoPromptTripTitle => 'Viaje soñado';
+
+  @override
+  String get videoPromptTripDesc => '¿A qué lugar del mundo irías?';
+
+  @override
+  String get videoPromptTripTemplate => 'Describe tu destino de viaje soñado';
+
+  @override
+  String get videoPromptFreeTitle => 'Estilo libre';
+
+  @override
+  String get videoPromptFreeDesc => '¡Di lo que quieras!';
+
+  @override
+  String get videoPromptFreeTemplate => 'Estilo libre, sin tema';
+
+  @override
+  String get videoDiscoveryLiked => '¡Te gusta!';
+
+  @override
+  String get videoDiscoveryPassed => 'Pasado';
+
+  @override
+  String get videoDiscoveryTitle => 'Videos de presentación';
+
+  @override
+  String get videoDiscoveryEmptyTitle => 'Aún no hay videos de presentación';
+
+  @override
+  String get videoDiscoveryEmptySubtitle => '¡Sé el primero en crear uno!';
+
+  @override
+  String videoDiscoveryUserFallback(String id) {
+    return 'Usuario $id';
+  }
+
+  @override
+  String videoDiscoveryViews(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count visualizaciones',
+      one: '1 visualización',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get videoDiscoveryLike => 'Me gusta';
+
+  @override
+  String get videoDiscoveryPass => 'Pasar';
+
+  @override
+  String get videoDiscoveryReport => 'Reportar';
+
+  @override
+  String get videoDiscoveryMute => 'Silenciar';
+
+  @override
+  String get videoDiscoveryUnmute => 'Activar sonido';
+
+  @override
+  String get videoProfileUploadSuccess => '¡Video subido correctamente!';
+
+  @override
+  String get videoProfileDeleteTitle => '¿Eliminar video?';
+
+  @override
+  String get videoProfileDeleteConfirm =>
+      '¿Seguro que quieres eliminar tu video de presentación?';
+
+  @override
+  String get videoProfileDeleted => 'Video eliminado';
+
+  @override
+  String get videoProfileScreenTitle => 'Video de presentación';
+
+  @override
+  String get videoProfileFirstImpression =>
+      '¡Causa una gran primera impresión!';
+
+  @override
+  String videoProfileInfoBody(int seconds) {
+    return 'Graba un video de $seconds segundos para presentarte. ¡Los perfiles con video consiguen un 40 % más de matches!';
+  }
+
+  @override
+  String get videoProfileNoVideo => 'Aún no hay video';
+
+  @override
+  String videoProfileMaxSeconds(int seconds) {
+    return 'Máx. $seconds segundos';
+  }
+
+  @override
+  String get videoProfileRecord => 'Grabar video';
+
+  @override
+  String get videoProfileUploadFromGallery => 'Subir desde la galería';
+
+  @override
+  String get videoProfileSave => 'Guardar video';
+
+  @override
+  String get videoProfileRecordAgain => 'Grabar de nuevo';
+
+  @override
+  String get videoProfileTipsTitle => 'Consejos para un gran video:';
+
+  @override
+  String get videoProfileTipLighting =>
+      'Buena iluminación: mira hacia una ventana o fuente de luz';
+
+  @override
+  String get videoProfileTipVertical => 'Sostén el teléfono en vertical';
+
+  @override
+  String get videoProfileTipSmile => '¡Sonríe y sé tú mismo!';
+
+  @override
+  String get videoProfileTipSpeak => 'Habla con claridad y preséntate';
+
+  @override
+  String get videoProfileTipHobbies => 'Menciona tus aficiones o intereses';
+
+  @override
+  String adminVerificationBulkBetterPhotoTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count usuarios',
+      one: '1 usuario',
+    );
+    return 'Solicitar mejor foto ($_temp0)';
+  }
+
+  @override
+  String adminVerificationBulkApproved(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verificaciones aprobadas',
+      one: '1 verificación aprobada',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String adminVerificationBulkBetterPhotoRequested(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mejor foto solicitada a $count usuarios',
+      one: 'Mejor foto solicitada a 1 usuario',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get adminPreSaleTitle => 'Gestión de preventa';
+
+  @override
+  String get adminPreSaleProgramTitle => 'Programa de niveles de preventa';
+
+  @override
+  String get adminPreSaleProgramDescription =>
+      'Gestiona usuarios de preventa con cuenta atrás por nivel y duración de suscripción.';
+
+  @override
+  String adminPreSaleCsvFormatHint(String columns, String tiers) {
+    return 'Formato CSV: $columns\nValores de nivel: $tiers';
+  }
+
+  @override
+  String get adminPreSaleAddSingleEntry => 'Añadir entrada individual';
+
+  @override
+  String get adminPreSaleEntries => 'Entradas de preventa';
+
+  @override
+  String get adminPreSaleAllTiers => 'Todos los niveles';
+
+  @override
+  String get adminPreSaleNoMatching => 'No se encontraron entradas';
+
+  @override
+  String get adminPreSaleEmpty =>
+      'Aún no hay entradas de preventa.\nSube un CSV para empezar.';
+
+  @override
+  String adminPreSaleDaysCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días',
+      one: '1 día',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String adminPreSaleEntryAdded(String email, String tier, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days días',
+      one: '1 día',
+    );
+    return '$email añadido como $tier ($_temp0)';
+  }
+
+  @override
+  String get adminPreSaleRemoveEntryTitle => 'Eliminar entrada';
+
+  @override
+  String adminPreSaleRemoveEntryConfirm(String email) {
+    return '¿Eliminar $email de la lista de preventa?';
+  }
+
+  @override
+  String adminPreSaleEntryRemoved(String email) {
+    return '$email eliminado de la lista de preventa';
+  }
+
+  @override
+  String get adminPreSaleCsvEmpty => 'El archivo CSV está vacío';
+
+  @override
+  String adminPreSaleCsvMissingHeaders(String expected, String found) {
+    return 'El CSV debe tener las cabeceras: $expected\nEncontradas: $found';
+  }
+
+  @override
+  String get adminPreSaleCsvNoRows =>
+      'No se encontraron filas válidas en el CSV';
+
+  @override
+  String get adminPreSaleInvalidDays => 'Introduce un número de días válido';
+
+  @override
+  String get adminPreSaleInfoTitle => 'Info de preventa';
+
+  @override
+  String get adminPreSaleCsvFormatTitle => 'Formato CSV';
+
+  @override
+  String get adminPreSaleCountdownDates => 'Fechas de cuenta atrás por nivel';
+
+  @override
+  String get adminPreSaleHowItWorks => 'Cómo funciona';
+
+  @override
+  String get adminPreSaleHowItWorksSteps =>
+      '1. El usuario se registra con su email\n2. La app revisa la lista de preventa\n3. La cuenta atrás muestra la fecha del nivel\n4. Tras la cuenta atrás: se activa la suscripción\n5. Duración = NUMBER_OF_DAYS de la lista\n6. Membresía base = misma caducidad';
+
+  @override
+  String get adminStatusProcessing => 'Procesando';
+
+  @override
+  String get adminStatusCompleted => 'Completado';
+
+  @override
+  String get adminStatusFailed => 'Fallido';
+
+  @override
+  String get adminStatusCancelled => 'Cancelado';
+
+  @override
+  String get adminStatusRefunded => 'Reembolsado';
+
+  @override
+  String get adminStatusDraft => 'Borrador';
+
+  @override
+  String get adminStatusIssued => 'Emitida';
+
+  @override
+  String get adminStatusPaid => 'Pagada';
+
+  @override
+  String get adminStatusOverdue => 'Vencida';
+
+  @override
+  String get adminOrderTypeCoins => 'Compra de monedas';
+
+  @override
+  String get adminOrderTypeSubscription => 'Suscripción';
+
+  @override
+  String get adminOrderTypeGift => 'Compra de regalo';
+
+  @override
+  String get adminRoleSuperAdmin => 'Superadministrador';
+
+  @override
+  String get adminRoleModerator => 'Moderador';
+
+  @override
+  String get adminRoleAnalyst => 'Analista';
+
+  @override
+  String get cityPickerTitle => 'Elige una ciudad';
+
+  @override
+  String get cityPickerSearchHint => 'Busca una ciudad…';
+
+  @override
+  String get cityPickerEmptyHint => 'Busca una ciudad o toca el mapa';
+
+  @override
+  String get cityPickerUseCity => 'Usar esta ciudad';
+
+  @override
+  String get notifServerViewedYourProfile => 'vio tu perfil';
+
+  @override
+  String get notifServerStartedFollowingYou => 'empezó a seguirte';
+
+  @override
+  String get notifServerStartedFollowingBusiness =>
+      'empezó a seguir tu negocio';
+
+  @override
+  String get notifServerRatedYourBusiness => 'valoró tu negocio';
+
+  @override
+  String notifServerRatedYourBusinessStars(int stars) {
+    return 'valoró tu negocio con $stars★';
+  }
+
+  @override
+  String get notifServerReviewedYourExperience => 'reseñó tu experiencia';
+
+  @override
+  String get notifServerTapToSeeWhoStoppedBy =>
+      'Toca para ver quién pasó por aquí';
+
+  @override
+  String get notifServerTapToSeeTheirProfile => 'Toca para ver su perfil';
+
+  @override
+  String get notifServerNewFollower => 'Tienes un nuevo seguidor';
+
+  @override
+  String get notifServerNewRating => 'Tienes una nueva valoración';
+
+  @override
+  String get notifServerYourCommunity => 'Tu comunidad';
+
+  @override
+  String get notifServerYourEvent => 'Tu evento';
+
+  @override
+  String get notifServerProfileBoostLive =>
+      'Tu impulso de perfil ya está activo';
+
+  @override
+  String get notifServerProfileBoostEnded =>
+      'Tu impulso de perfil ha terminado';
+
+  @override
+  String get notifServerProfilePromoted =>
+      'Tu perfil se está mostrando a más personas';
+
+  @override
+  String get notifServerEventPromoted =>
+      'Tu evento se está promocionando en Explore';
+
+  @override
+  String get notifServerBoostAgainProfile =>
+      'Impulsa de nuevo para seguir llegando a más personas';
+
+  @override
+  String get notifServerBoostAgainEvent =>
+      'Impulsa de nuevo para mantenerlo destacado';
+
+  @override
+  String get notifServerCheckedIn => 'Ya has hecho check-in, ¡disfruta!';
+
+  @override
+  String get notifServerTicketReady => 'Tu entrada está lista';
+
+  @override
+  String get notifServerTicketSold => 'Entrada vendida';
+
+  @override
+  String get notifServerPaymentToConfirm => 'Pago por confirmar';
+
+  @override
+  String get notifServerPaymentNotConfirmed => 'Pago no confirmado';
+
+  @override
+  String get notifServerPaymentsWaiting => 'Pagos esperando tu confirmación';
+
+  @override
+  String get notifServerTicketRefunded => 'Entrada reembolsada';
+
+  @override
+  String get notifServerTicketDisputed => 'Pago de entrada en disputa';
+
+  @override
+  String get notifServerRefundToPayBack => 'Reembolso por devolver';
+
+  @override
+  String get notifServerTicketReservationExpired =>
+      'La reserva de la entrada ha caducado';
+
+  @override
+  String get notifServerExperienceHidden =>
+      'Tu experiencia se ocultó tras varias denuncias';
+
+  @override
+  String get notifServerPendingReview => 'Pendiente de revisión por GreenGo';
+
+  @override
+  String get notifServerMonthlyCoinsAdded => 'Monedas mensuales añadidas';
+
+  @override
+  String get notifServerSupportReplied => 'Soporte respondió a tu ticket';
+
+  @override
+  String get notifServerSupportNewReply =>
+      'Tienes una nueva respuesta de soporte.';
+
+  @override
+  String get notifServerIncognitoExpiring => 'El modo incógnito caduca pronto';
+
+  @override
+  String get notifServerIncognitoExpiringBody =>
+      '¡Tu modo incógnito caduca en menos de 1 hora!';
+
+  @override
+  String get notifServerTravelerExpiring => 'El modo viajero caduca pronto';
+
+  @override
+  String get notifServerTravelerExpiringBody =>
+      '¡Tu modo viajero caduca en menos de 1 hora!';
+
+  @override
+  String get notifServerProfileVerified => '¡Perfil verificado!';
+
+  @override
+  String get notifServerProfileVerifiedBody =>
+      '¡Tu perfil ha sido verificado! Ahora tienes una insignia de verificado.';
+
+  @override
+  String get notifServerNewVerificationPhoto =>
+      'Se necesita una nueva foto de verificación';
+
+  @override
+  String get notifServerVerificationUpdate => 'Actualización de verificación';
+
+  @override
+  String notifServerJoinedYourCommunity(String name) {
+    return 'se unió a tu comunidad $name';
+  }
+
+  @override
+  String notifServerJoinedYourEvent(String name) {
+    return 'se unió a tu evento $name';
+  }
+
+  @override
+  String notifServerLikedYourEvent(String name) {
+    return 'le gustó tu evento $name';
+  }
+
+  @override
+  String notifServerJoinedYourGroup(String name) {
+    return 'se unió a tu grupo $name';
+  }
+
+  @override
+  String notifServerAddedYouAsCoOwner(String name) {
+    return 'te añadió como coorganizador de $name';
+  }
+
+  @override
+  String notifServerAddedYouToGroup(String name) {
+    return 'te añadió a $name';
+  }
+
+  @override
+  String notifServerEventBoostLive(String name) {
+    return 'El impulso de tu evento $name ya está activo';
+  }
+
+  @override
+  String notifServerEventBoostEnded(String name) {
+    return 'El impulso de tu evento $name ha terminado';
+  }
+
+  @override
+  String notifServerTicketScanned(String name) {
+    return 'Tu entrada para $name fue escaneada';
+  }
+
+  @override
+  String notifServerNewEventIn(String name) {
+    return 'Nuevo evento en $name';
+  }
+
+  @override
+  String notifServerEventCancelledIn(String name) {
+    return 'Evento cancelado en $name';
+  }
+
+  @override
+  String notifServerEventUpdatedIn(String name) {
+    return 'Evento actualizado en $name';
+  }
+
+  @override
+  String notifServerNewEventFrom(String name) {
+    return 'Nuevo evento de $name';
+  }
+
+  @override
+  String notifServerAnnouncement(String name) {
+    return 'Anuncio · $name';
+  }
+
+  @override
+  String get culturalExchangeCategoryFood => 'Comida';
+
+  @override
+  String get culturalExchangeCategoryTransportation => 'Transporte';
+
+  @override
+  String get culturalExchangeCategoryDating => 'Citas';
+
+  @override
+  String get culturalExchangeCategoryCustoms => 'Costumbres';
+
+  @override
+  String get culturalExchangeCategoryLanguage => 'Idioma';
+
+  @override
+  String get culturalExchangeCategorySafety => 'Seguridad';
+
+  @override
+  String get culturalExchangeSectionCuisine => 'Gastronomía';
+
+  @override
+  String get culturalExchangeSectionCustoms => 'Costumbres';
+
+  @override
+  String get culturalExchangeSectionKeyPhrases => 'Frases clave';
+
+  @override
+  String get culturalExchangeSectionPhrases => 'Frases';
+
+  @override
+  String get culturalExchangeSpotlightBadge => 'DESTACADO';
+
+  @override
+  String get culturalExchangeContentComingSoon => 'Contenido próximamente';
+
+  @override
+  String get culturalExchangeContentComingSoonBody =>
+      'Estamos preparando contenido detallado para este destacado.';
+
+  @override
+  String get culturalExchangeLike => 'Me gusta';
+
+  @override
+  String culturalExchangeWeeksAgo(int count) {
+    return 'hace $count sem';
+  }
+
+  @override
+  String culturalExchangeMonthsAgo(int count) {
+    return 'hace $count m';
+  }
+
+  @override
+  String get culturalExchangeDailyInsightJapanBow =>
+      'En Japón es costumbre hacer una reverencia al saludar. Cuanto más profunda, más respeto muestras.';
+
+  @override
+  String get culturalExchangeSelectCountry => 'Selecciona un país';
+
+  @override
+  String get culturalExchangeChooseCountry => 'Elige un país...';
+
+  @override
+  String get culturalExchangeSelectCountryAbove => 'Selecciona un país arriba';
+
+  @override
+  String get culturalExchangeLearnEtiquette =>
+      'Aprende la etiqueta de citas de más de 20 países\nde todo el mundo';
+
+  @override
+  String get culturalExchangeDos => 'Qué hacer';
+
+  @override
+  String get culturalExchangeDonts => 'Qué evitar';
+
+  @override
+  String get notifNewConversationTitle => 'Nueva conversación';
+
+  @override
+  String notifNewMessageFrom(String name) {
+    return 'Nuevo mensaje de $name';
+  }
+
+  @override
+  String notifStartedConversation(String name) {
+    return '$name inició una conversación contigo.';
+  }
+
+  @override
+  String get notifNewPhotoLikeTitle => 'Nuevo me gusta en tu foto';
+
+  @override
+  String notifLikedYourPhoto(String name) {
+    return 'A $name le gustó tu foto';
+  }
+
+  @override
+  String get notifCoinsReceivedTitle => '¡Has recibido monedas!';
 }

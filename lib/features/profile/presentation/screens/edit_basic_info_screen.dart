@@ -278,7 +278,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
                       ),
                       const SizedBox(width: 12),
                       Text(
-                        gender,
+                        _genderLabel(gender),
                         style: TextStyle(
                           color: _selectedGender == gender
                               ? AppColors.richGold
@@ -350,7 +350,7 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
                       ),
                       const SizedBox(width: 12),
                       Text(
-                        orientation,
+                        _orientationLabel(orientation),
                         style: TextStyle(
                           color: _selectedOrientation == orientation
                               ? AppColors.richGold
@@ -408,6 +408,42 @@ class _EditBasicInfoScreenState extends State<EditBasicInfoScreen> {
       ),
       ),
     );
+  }
+
+  /// Gender values are stored in English; this is only the display label.
+  String _genderLabel(String gender) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (gender) {
+      case 'Male':
+        return l10n.onboardingGenderMale;
+      case 'Female':
+        return l10n.onboardingGenderFemale;
+      case 'Non-binary':
+        return l10n.onboardingGenderNonBinary;
+      case 'Prefer not to say':
+        return l10n.profileGenderPreferNotToSay;
+      case 'Other':
+        return l10n.onboardingGenderOther;
+      default:
+        return gender;
+    }
+  }
+
+  /// Orientation values are stored in English; this is only the display label.
+  String _orientationLabel(String orientation) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (orientation) {
+      case 'Straight':
+        return l10n.profileOrientationStraight;
+      case 'Gay':
+        return l10n.profileOrientationGay;
+      case 'Bisexual':
+        return l10n.profileOrientationBisexual;
+      case 'Other':
+        return l10n.onboardingGenderOther;
+      default:
+        return orientation;
+    }
   }
 
   IconData _getGenderIcon(String gender) {

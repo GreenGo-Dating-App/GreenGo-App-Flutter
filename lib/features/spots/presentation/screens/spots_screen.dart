@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/cache/last_result_cache.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../spot_l10n.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../data/models/spot_model.dart';
@@ -112,7 +113,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
                 if (state is SpotCreated) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('Spot "${state.spot.name}" created!'),
+                      content: Text(AppLocalizations.of(context)!.spotsCreatedNamed(state.spot.name)),
                       backgroundColor: AppColors.successGreen,
                     ),
                   );
@@ -253,7 +254,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
             ...SpotCategory.values.map((cat) {
               return Padding(
                 padding: const EdgeInsets.only(right: 8),
-                child: _buildFilterChip(cat, cat.displayName),
+                child: _buildFilterChip(cat, cat.label(AppLocalizations.of(context)!)),
               );
             }),
           ],
@@ -312,8 +313,9 @@ class _SpotsScreenState extends State<SpotsScreen> {
             const SizedBox(height: 8),
             Text(
               _selectedCategory != null
-                  ? 'No ${_selectedCategory!.displayName.toLowerCase()} spots in this city yet. Be the first to add one!'
-                  : 'No cultural spots in this city yet. Be the first to add one!',
+                  ? AppLocalizations.of(context)!.spotsEmptyCategoryHint(
+                      _selectedCategory!.label(AppLocalizations.of(context)!))
+                  : AppLocalizations.of(context)!.spotsEmptyHint,
               textAlign: TextAlign.center,
               style: const TextStyle(
                 color: AppColors.textTertiary,
@@ -437,7 +439,7 @@ class _SpotsScreenState extends State<SpotsScreen> {
                         final isActive = selectedCategory == cat;
                         return ChoiceChip(
                           label: Text(
-                            cat.displayName,
+                            cat.label(AppLocalizations.of(context)!),
                             style: TextStyle(
                               color: isActive
                                   ? AppColors.deepBlack

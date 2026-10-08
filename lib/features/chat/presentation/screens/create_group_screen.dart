@@ -339,7 +339,7 @@ class _CreateGroupScreenState extends State<CreateGroupScreen> {
         Navigator.of(context).pushReplacement(
           GroupChatScreen.route(
             groupId: group.conversationId,
-            groupName: group.groupInfo?.name ?? 'Group',
+            groupName: group.groupInfo?.name ?? AppLocalizations.of(context)!.chatGroupFallbackName,
             currentUserId: widget.currentUserId,
           ),
         );

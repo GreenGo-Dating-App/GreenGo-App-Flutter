@@ -1,7 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/country_names_l10n.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/country_spotlight.dart';
+import '../cultural_exchange_l10n.dart';
 
 /// Detail screen for viewing a country spotlight
 class CountrySpotlightScreen extends StatelessWidget {
@@ -13,6 +16,7 @@ class CountrySpotlightScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: CustomScrollView(
@@ -86,7 +90,7 @@ class CountrySpotlightScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Text(
-                            spotlight.country.toUpperCase(),
+                            localizedCountryName(l10n, spotlight.country).toUpperCase(),
                             style: const TextStyle(
                               color: AppColors.deepBlack,
                               fontSize: 11,
@@ -119,12 +123,12 @@ class CountrySpotlightScreen extends StatelessWidget {
               delegate: SliverChildListDelegate([
                 // Render each section
                 ...spotlight.sections.map(
-                  _buildSection,
+                  (s) => _buildSection(l10n, s),
                 ),
 
                 // If no sections, show placeholder
                 if (spotlight.sections.isEmpty)
-                  _buildEmptyContent(),
+                  _buildEmptyContent(l10n),
 
                 const SizedBox(height: 40),
               ]),
@@ -157,7 +161,7 @@ class CountrySpotlightScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildSection(SpotlightSection section) {
+  Widget _buildSection(AppLocalizations l10n, SpotlightSection section) {
     return Container(
       margin: const EdgeInsets.only(bottom: 20),
       padding: const EdgeInsets.all(16),
@@ -205,7 +209,7 @@ class CountrySpotlightScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(4),
             ),
             child: Text(
-              _getSectionTypeName(section.type),
+              localizedSpotlightSection(l10n, section.type).toUpperCase(),
               style: const TextStyle(
                 color: AppColors.richGold,
                 fontSize: 10,
@@ -247,7 +251,7 @@ class CountrySpotlightScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildEmptyContent() {
+  Widget _buildEmptyContent(AppLocalizations l10n) {
     return Container(
       padding: const EdgeInsets.all(32),
       decoration: BoxDecoration(
@@ -262,18 +266,18 @@ class CountrySpotlightScreen extends StatelessWidget {
             size: 48,
           ),
           const SizedBox(height: 12),
-          const Text(
-            'Content coming soon',
-            style: TextStyle(
+          Text(
+            l10n.culturalExchangeContentComingSoon,
+            style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 6),
-          const Text(
-            'We are preparing detailed content for this spotlight.',
-            style: TextStyle(
+          Text(
+            l10n.culturalExchangeContentComingSoonBody,
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
             ),
@@ -297,16 +301,4 @@ class CountrySpotlightScreen extends StatelessWidget {
     }
   }
 
-  String _getSectionTypeName(SpotlightSectionType type) {
-    switch (type) {
-      case SpotlightSectionType.cuisine:
-        return 'CUISINE';
-      case SpotlightSectionType.customs:
-        return 'CUSTOMS';
-      case SpotlightSectionType.datingEtiquette:
-        return 'DATING ETIQUETTE';
-      case SpotlightSectionType.keyPhrases:
-        return 'KEY PHRASES';
-    }
-  }
 }

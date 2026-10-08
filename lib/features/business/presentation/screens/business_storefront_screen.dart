@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/constants/business_categories.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -243,7 +244,8 @@ class _BusinessStorefrontScreenState extends State<BusinessStorefrontScreen> {
                             if (widget.business.businessCategory != null) ...[
                               const SizedBox(height: 4),
                               Text(
-                                widget.business.businessCategory!,
+                                localizedBusinessCategory(
+                                    l10n, widget.business.businessCategory!),
                                 style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 14,

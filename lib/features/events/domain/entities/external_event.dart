@@ -107,7 +107,7 @@ class ExternalEvent {
     ExternalEvent(
       id: 'tiqets_sample_colosseum',
       source: 'tiqets',
-      title: 'Skip-the-Line: Colosseum, Roman Forum & Palatine Hill',
+      title: 'Skip-the-Line: Colosseum, Roman Forum & Palatine Hill', // i18n-ignore: sample third-party product title
       category: 'museum',
       city: 'Rome',
       country: 'IT',
@@ -122,7 +122,7 @@ class ExternalEvent {
     ExternalEvent(
       id: 'tiqets_sample_louvre',
       source: 'tiqets',
-      title: 'Louvre Museum — Timed-Entrance Ticket',
+      title: 'Louvre Museum — Timed-Entrance Ticket', // i18n-ignore: sample third-party product title
       category: 'museum',
       city: 'Paris',
       country: 'FR',
@@ -137,7 +137,7 @@ class ExternalEvent {
     ExternalEvent(
       id: 'viator_sample_opera',
       source: 'viator',
-      title: 'Sydney Opera House Official Guided Walking Tour',
+      title: 'Sydney Opera House Official Guided Walking Tour', // i18n-ignore: sample third-party product title
       category: 'tour',
       city: 'Sydney',
       country: 'AU',
@@ -153,7 +153,7 @@ class ExternalEvent {
     ExternalEvent(
       id: 'viator_sample_tokyo',
       source: 'viator',
-      title: 'Tokyo by Night: Food & Culture Walking Tour',
+      title: 'Tokyo by Night: Food & Culture Walking Tour', // i18n-ignore: sample third-party product title
       category: 'experience',
       city: 'Tokyo',
       country: 'JP',
@@ -169,7 +169,7 @@ class ExternalEvent {
     ExternalEvent(
       id: 'tiqets_sample_sagrada',
       source: 'tiqets',
-      title: 'Sagrada Família — Fast-Track Entry',
+      title: 'Sagrada Família — Fast-Track Entry', // i18n-ignore: sample third-party product title
       category: 'attraction',
       city: 'Barcelona',
       country: 'ES',
@@ -184,7 +184,7 @@ class ExternalEvent {
     ExternalEvent(
       id: 'viator_sample_nyc',
       source: 'viator',
-      title: 'New York City: Skip-the-Line Empire State Building',
+      title: 'New York City: Skip-the-Line Empire State Building', // i18n-ignore: sample third-party product title
       category: 'attraction',
       city: 'New York',
       country: 'US',

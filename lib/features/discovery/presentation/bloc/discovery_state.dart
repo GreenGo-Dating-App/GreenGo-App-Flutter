@@ -132,6 +132,9 @@ class DiscoveryRewindUnavailable extends DiscoveryState {
   final int currentIndex;
 }
 
+/// Coin-priced discovery feature (display name is localized in the UI).
+enum DiscoveryCoinFeature { superLike, undo }
+
 /// Insufficient coins for a feature
 class DiscoveryInsufficientCoins extends DiscoveryState {
 
@@ -140,13 +143,13 @@ class DiscoveryInsufficientCoins extends DiscoveryState {
     required this.currentIndex,
     required this.required,
     required this.available,
-    this.featureName = 'Super Like',
+    this.feature = DiscoveryCoinFeature.superLike,
   });
   final List<DiscoveryCard> cards;
   final int currentIndex;
   final int required;
   final int available;
-  final String featureName;
+  final DiscoveryCoinFeature feature;
 }
 
 /// Base membership required to perform action

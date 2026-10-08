@@ -6,7 +6,6 @@ import '../../../../core/config/app_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/e2e_keys.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/constants/app_strings.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
 import '../../../../core/widgets/animated_luxury_logo.dart';
 import '../../../../core/widgets/connection_error_dialog.dart';
@@ -296,7 +295,7 @@ class _LoginScreenState extends State<LoginScreen>
                                       obscureText: _obscurePassword,
                                       validator: (value) {
                                         if (value == null || value.isEmpty) {
-                                          return AppStrings.passwordRequired;
+                                          return l10n.passwordRequired;
                                         }
                                         return null;
                                       },

@@ -504,9 +504,9 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'GreenGo Base Membership',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.shopBaseMembership,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -583,7 +583,7 @@ class _UsageStatsScreenState extends State<UsageStatsScreen> {
               ),
               const SizedBox(height: 4),
               Text(
-                '$_coinBalance coins',
+                AppLocalizations.of(context)!.coinsCost(_coinBalance),
                 style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 24,

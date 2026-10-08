@@ -289,7 +289,7 @@ class _GroupChatViewState extends State<_GroupChatView> {
                     return RadioListTile<String>(
                       value: code,
                       groupValue: _targetLang,
-                      title: Text('${lang['flag']}  ${lang['name']}'),
+                      title: Text('${lang['flag']}  ${lang['name']}'), // i18n-ignore: language autonyms
                       onChanged: (v) {
                         if (v == null) return;
                         setModal(() {});

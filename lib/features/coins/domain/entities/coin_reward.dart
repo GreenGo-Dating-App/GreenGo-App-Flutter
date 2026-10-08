@@ -55,8 +55,8 @@ class CoinRewards {
   /// First match reward: 50 coins
   static const CoinReward firstMatch = CoinReward(
     rewardId: 'first_match',
-    name: 'First Match',
-    description: 'Get your first match',
+    name: 'First Match', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Get your first match', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 50,
     type: RewardType.firstMatch,
     isRecurring: false,
@@ -66,8 +66,8 @@ class CoinRewards {
   /// Complete profile reward: 100 coins
   static const CoinReward completeProfile = CoinReward(
     rewardId: 'complete_profile',
-    name: 'Complete Profile',
-    description: 'Complete your dating profile',
+    name: 'Complete Profile', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Complete your dating profile', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 100,
     type: RewardType.profileCompletion,
     isRecurring: false,
@@ -77,8 +77,8 @@ class CoinRewards {
   /// Daily login streak: 100 coins per day
   static const CoinReward dailyLogin = CoinReward(
     rewardId: 'daily_login',
-    name: 'Daily Login',
-    description: 'Login daily to earn coins',
+    name: 'Daily Login', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Login daily to earn coins', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 100,
     type: RewardType.dailyLogin,
     isRecurring: true,
@@ -88,8 +88,8 @@ class CoinRewards {
   /// 7-day streak bonus: 50 coins
   static const CoinReward weekStreak = CoinReward(
     rewardId: 'week_streak',
-    name: '7-Day Streak',
-    description: 'Login 7 days in a row',
+    name: '7-Day Streak', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Login 7 days in a row', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 50,
     type: RewardType.streak,
     isRecurring: true,
@@ -98,8 +98,8 @@ class CoinRewards {
   /// 30-day streak bonus: 200 coins
   static const CoinReward monthStreak = CoinReward(
     rewardId: 'month_streak',
-    name: '30-Day Streak',
-    description: 'Login 30 days in a row',
+    name: '30-Day Streak', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Login 30 days in a row', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 200,
     type: RewardType.streak,
     isRecurring: true,
@@ -108,8 +108,8 @@ class CoinRewards {
   /// First message sent: 25 coins
   static const CoinReward firstMessage = CoinReward(
     rewardId: 'first_message',
-    name: 'First Message',
-    description: 'Send your first message',
+    name: 'First Message', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Send your first message', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 25,
     type: RewardType.achievement,
     isRecurring: false,
@@ -119,8 +119,8 @@ class CoinRewards {
   /// Photo verification: 75 coins
   static const CoinReward photoVerification = CoinReward(
     rewardId: 'photo_verification',
-    name: 'Photo Verified',
-    description: 'Verify your profile with a photo',
+    name: 'Photo Verified', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Verify your profile with a photo', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 75,
     type: RewardType.achievement,
     isRecurring: false,
@@ -130,8 +130,8 @@ class CoinRewards {
   /// Refer a friend: 100 coins
   static const CoinReward referFriend = CoinReward(
     rewardId: 'refer_friend',
-    name: 'Refer a Friend',
-    description: 'Invite a friend to join GreenGo',
+    name: 'Refer a Friend', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Invite a friend to join GreenGo', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 100,
     type: RewardType.referral,
     isRecurring: true,

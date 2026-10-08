@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/access_control_service.dart';
@@ -399,11 +400,8 @@ class _WaitingScreenState extends State<WaitingScreen>
   }
 
   String _formatDate(DateTime date) {
-    const months = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-    return '${months[date.month - 1]} ${date.day}, ${date.year}';
+    return DateFormat.yMMMMd(Localizations.localeOf(context).toString())
+        .format(date);
   }
 
   Widget _buildNotificationReminder(

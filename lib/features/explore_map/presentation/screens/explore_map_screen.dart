@@ -238,7 +238,7 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                     padding: const EdgeInsets.only(right: 8),
                     child: ChoiceChip(
                       label: Text(
-                        '${radius.toInt()} km',
+                        l10n.preferenceDistanceKm(radius.toInt()),
                         style: TextStyle(
                           color: isSelected
                               ? AppColors.deepBlack

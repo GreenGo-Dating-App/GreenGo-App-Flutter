@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../chat/presentation/widgets/language_badge.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -159,7 +160,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
     for (final t in _filteredTravelers) {
       final city = t.effectiveLocation.city.isNotEmpty
           ? t.effectiveLocation.city
-          : 'Unknown';
+          : '';
       map.putIfAbsent(city, () => []).add(t);
     }
     return map;
@@ -176,13 +177,13 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.explore, color: AppColors.richGold, size: 22),
-            SizedBox(width: 8),
+            const Icon(Icons.explore, color: AppColors.richGold, size: 22),
+            const SizedBox(width: 8),
             Text(
-              'Travel Explore',
-              style: TextStyle(
+              AppLocalizations.of(context)!.travelExploreTitle,
+              style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -221,6 +222,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
   }
 
   Widget _buildFilterToggle() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       padding: const EdgeInsets.all(3),
@@ -232,12 +234,12 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
       child: Row(
         children: [
           _buildFilterButton(
-            'In my city',
+            l10n.travelExploreInMyCity,
             Icons.location_city,
             _TravelFilter.inMyCity,
           ),
           _buildFilterButton(
-            'Worldwide',
+            l10n.travelExploreWorldwide,
             Icons.public,
             _TravelFilter.worldwide,
           ),
@@ -307,7 +309,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
           TextButton(
             onPressed: _loadTravelers,
             child: Text(
-              AppLocalizations.of(context)?.tryAgain ?? 'Try again',
+              AppLocalizations.of(context)!.tryAgain,
               style: const TextStyle(color: AppColors.richGold),
             ),
           ),
@@ -317,6 +319,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
   }
 
   Widget _buildContent() {
+    final l10n = AppLocalizations.of(context)!;
     final travelers = _filteredTravelers;
     final guides = _filteredLocalGuides;
     final travelersByCity = _travelersByCity;
@@ -340,7 +343,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
       }).toList();
       if (inMyCity.isNotEmpty) {
         sections.add(_buildSectionHeader(
-          'Travelers in $_userCity',
+          l10n.travelExploreTravelersIn(_userCity),
           Icons.location_city,
           inMyCity.length,
         ));
@@ -362,7 +365,8 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
         continue;
       }
       sections.add(_buildSectionHeader(
-        'Travelers in $city',
+        l10n.travelExploreTravelersIn(
+            city.isEmpty ? l10n.travelExploreUnknownLocation : city),
         Icons.flight_land,
         cityTravelers.length,
       ));
@@ -376,7 +380,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
     // Local guides section
     if (guides.isNotEmpty) {
       sections.add(_buildSectionHeader(
-        'Local Guides',
+        l10n.travelExploreLocalGuides,
         Icons.shield,
         guides.length,
       ));
@@ -401,6 +405,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
   }
 
   Widget _buildStatsBar(int travelerCount, int guideCount) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
@@ -411,11 +416,11 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _buildStatItem(Icons.flight, 'Travelers', travelerCount, const Color(0xFF1E88E5)),
+          _buildStatItem(Icons.flight, l10n.discoveryFilterTravelers, travelerCount, const Color(0xFF1E88E5)),
           Container(width: 1, height: 30, color: AppColors.divider),
-          _buildStatItem(Icons.shield, 'Guides', guideCount, const Color(0xFF43A047)),
+          _buildStatItem(Icons.shield, l10n.discoveryFilterGuides, guideCount, const Color(0xFF43A047)),
           Container(width: 1, height: 30, color: AppColors.divider),
-          _buildStatItem(Icons.public, 'Cities',
+          _buildStatItem(Icons.public, l10n.travelExploreCities,
               _travelersByCity.length, AppColors.richGold),
         ],
       ),
@@ -480,12 +485,13 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
   }
 
   Widget _buildTravelerCard(Profile profile) {
+    final l10n = AppLocalizations.of(context)!;
     final originCity = profile.location.city.isNotEmpty
         ? profile.location.city
-        : profile.location.country;
+        : localizedCountryName(l10n, profile.location.country);
     final travelCity = profile.effectiveLocation.city.isNotEmpty
         ? profile.effectiveLocation.city
-        : profile.effectiveLocation.country;
+        : localizedCountryName(l10n, profile.effectiveLocation.country);
     final photoUrl =
         profile.photoUrls.isNotEmpty ? profile.photoUrls.first : null;
 
@@ -695,7 +701,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
                           color: Color(0xFF43A047)),
                       const SizedBox(width: 3),
                       Text(
-                        'Guide in $city',
+                        AppLocalizations.of(context)!.travelExploreGuideIn(city),
                         style: const TextStyle(
                           color: Color(0xFF43A047),
                           fontSize: 12,
@@ -726,6 +732,7 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
   }
 
   Widget _buildEmptyState() {
+    final l10n = AppLocalizations.of(context)!;
     final isFiltered = _filter == _TravelFilter.inMyCity;
     return Center(
       child: Column(
@@ -739,8 +746,8 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
           const SizedBox(height: 16),
           Text(
             isFiltered
-                ? 'No travelers in $_userCity right now'
-                : 'No travelers found',
+                ? l10n.travelExploreNoTravelersInCity(_userCity)
+                : l10n.travelExploreNoTravelers,
             style: const TextStyle(
               color: AppColors.textPrimary,
               fontSize: 16,
@@ -750,8 +757,8 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
           const SizedBox(height: 8),
           Text(
             isFiltered
-                ? 'Try switching to Worldwide to see all travelers'
-                : 'Check back later for active travelers',
+                ? l10n.travelExploreTryWorldwide
+                : l10n.travelExploreCheckBack,
             style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
@@ -764,9 +771,9 @@ class _TravelExploreMapScreenState extends State<TravelExploreMapScreen> {
               onPressed: () {
                 setState(() => _filter = _TravelFilter.worldwide);
               },
-              child: const Text(
-                'Show Worldwide',
-                style: TextStyle(
+              child: Text(
+                l10n.travelExploreShowWorldwide,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontWeight: FontWeight.bold,
                 ),

@@ -3,6 +3,8 @@
 library;
 
 import 'package:flutter/material.dart';
+
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_level.dart';
 
 class LevelDisplayWidget extends StatelessWidget {
@@ -121,7 +123,8 @@ class LevelDisplayWidget extends StatelessWidget {
         if (showProgress) ...[
           const SizedBox(height: 8),
           Text(
-            '${userLevel.currentXP} / ${userLevel.xpForNextLevel} XP',
+            AppLocalizations.of(context)!.xpProgressLabel(
+                '${userLevel.currentXP}', '${userLevel.xpForNextLevel}'),
             style: TextStyle(
               fontSize: 12,
               color: Colors.grey.shade600,
@@ -219,7 +222,7 @@ class XPProgressBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Level ${userLevel.level}',
+                AppLocalizations.of(context)!.gamificationLevel(userLevel.level),
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
@@ -229,7 +232,8 @@ class XPProgressBar extends StatelessWidget {
                 ),
               ),
               Text(
-                '${userLevel.currentXP}/${userLevel.xpForNextLevel} XP',
+                AppLocalizations.of(context)!.xpProgressLabel(
+                    '${userLevel.currentXP}', '${userLevel.xpForNextLevel}'),
                 style: TextStyle(
                   fontSize: 12,
                   color: Colors.grey.shade600,

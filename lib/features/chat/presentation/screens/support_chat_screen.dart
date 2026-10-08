@@ -314,7 +314,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
       final currentMessageCount = conversationDoc.data()?['messageCount'] ?? 0;
 
       final lastMessagePreview = finalImageUrl != null
-          ? '📷 ${text.isNotEmpty ? text : 'Image'}'
+          ? '📷 ${text.isNotEmpty ? text : 'Image'}' // i18n-ignore: stored preview read by admin panel
           : (text.length > 100 ? text.substring(0, 100) : text);
 
       await conversationRef.update({
@@ -915,9 +915,9 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
                           color: AppColors.richGold.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        child: const Text(
-                          'AI',
-                          style: TextStyle(
+                        child: Text(
+                          AppLocalizations.of(context)!.chatSupportAiBadge,
+                          style: const TextStyle(
                             color: AppColors.richGold,
                             fontSize: 9,
                             fontWeight: FontWeight.bold,

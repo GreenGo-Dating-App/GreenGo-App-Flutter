@@ -417,7 +417,7 @@ class _ManageTimesScreenState extends State<ManageTimesScreen> {
     final past = date.compareTo(dateKey(DateTime.now())) < 0;
     return Semantics(
       button: true,
-      label: '$date: ${closed ? l.mtClosed : times.join(', ')}',
+      label: '$date: ${closed ? l.mtClosed : times.join(', ')}', // i18n-ignore: date + localized status / times
       child: InkWell(
         key: ValueKey('mt-day-$date'),
         onTap: past ? null : () => _editDay(l, date),

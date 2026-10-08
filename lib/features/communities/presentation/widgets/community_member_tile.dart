@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/community_l10n.dart';
 import '../../domain/entities/community_member.dart';
 
 /// Community Member Tile Widget
@@ -92,7 +93,7 @@ class CommunityMemberTile extends StatelessWidget {
           ),
           if (showRoleBadge && member.role != CommunityRole.member) ...[
             const SizedBox(width: 8),
-            _buildRoleBadge(),
+            _buildRoleBadge(context),
           ],
         ],
       ),
@@ -138,7 +139,7 @@ class CommunityMemberTile extends StatelessWidget {
     );
   }
 
-  Widget _buildRoleBadge() {
+  Widget _buildRoleBadge(BuildContext context) {
     Color badgeColor;
     switch (member.role) {
       case CommunityRole.owner:
@@ -156,7 +157,7 @@ class CommunityMemberTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(4),
       ),
       child: Text(
-        member.role.displayName,
+        communityRoleLabel(AppLocalizations.of(context)!, member.role),
         style: TextStyle(
           color: badgeColor,
           fontSize: 10,

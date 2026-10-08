@@ -61,7 +61,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
 
       if (!currentState.canProceedToNext) {
         emit(const OnboardingError(
-            message: 'Please complete all required fields'));
+            message: OnboardingError.incompleteStepCode));
         emit(currentState); // Restore previous state
         return;
       }

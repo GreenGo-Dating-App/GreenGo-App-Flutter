@@ -10,6 +10,7 @@ import 'package:latlong2/latlong.dart' as ll;
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/widgets/map_basemap_layer.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Full-screen map city picker for event-alert subscriptions.
 ///
@@ -217,14 +218,15 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
   @override
   Widget build(BuildContext context) {
     final canUse = _hasPin && _city.trim().isNotEmpty;
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
-        title: const Text('Pick a city',
-            style: TextStyle(color: AppColors.textPrimary)),
+        title: Text(l10n.cityPickerTitle,
+            style: const TextStyle(color: AppColors.textPrimary)),
       ),
       // Column + Expanded gives the map a definite height (the working pattern);
       // a Stack/Positioned.fill left the native map view with bad constraints
@@ -243,7 +245,7 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
                 textInputAction: TextInputAction.search,
                 onSubmitted: (_) => _runSearch(),
                 decoration: InputDecoration(
-                  hintText: 'Search a city…',
+                  hintText: l10n.cityPickerSearchHint,
                   hintStyle: const TextStyle(color: AppColors.textTertiary),
                   prefixIcon:
                       const Icon(Icons.search, color: AppColors.textSecondary),
@@ -286,7 +288,7 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
                   _busy
                       ? '…'
                       : (_label.isEmpty
-                          ? 'Search a city or tap the map'
+                          ? l10n.cityPickerEmptyHint
                           : _label),
                   style: const TextStyle(
                       color: AppColors.textPrimary,
@@ -307,8 +309,8 @@ class _CityPickerScreenState extends State<CityPickerScreen> {
                       disabledBackgroundColor: AppColors.backgroundDark,
                       padding: const EdgeInsets.symmetric(vertical: 14),
                     ),
-                    child: const Text('Use this city',
-                        style: TextStyle(fontWeight: FontWeight.bold)),
+                    child: Text(l10n.cityPickerUseCity,
+                        style: const TextStyle(fontWeight: FontWeight.bold)),
                   ),
                 ),
               ],

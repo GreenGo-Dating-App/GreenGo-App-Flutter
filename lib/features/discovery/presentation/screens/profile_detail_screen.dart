@@ -20,6 +20,7 @@ import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../generated/app_localizations.dart';
+import '../discovery_l10n.dart';
 import '../../../safety/presentation/widgets/safety_actions_menu.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
@@ -598,7 +599,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
                                     const Icon(Icons.flight, color: Colors.white, size: 12),
                                     const SizedBox(width: 4),
                                     Text(
-                                      AppLocalizations.of(context)?.travelerBadge ?? 'Traveler',
+                                      AppLocalizations.of(context)!.travelerBadge,
                                       style: const TextStyle(
                                         color: Colors.white,
                                         fontSize: 11,
@@ -1242,7 +1243,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
         border: Border.all(color: AppColors.divider),
       ),
       child: Text(
-        interest,
+        localizedInterestName(AppLocalizations.of(context)!, interest),
         style: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 14,

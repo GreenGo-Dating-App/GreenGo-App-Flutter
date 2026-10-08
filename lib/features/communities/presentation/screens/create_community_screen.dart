@@ -10,6 +10,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/platform/web_media.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/community_l10n.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
@@ -267,7 +268,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                         ),
                         const SizedBox(width: 6),
                         Text(
-                          type.displayName,
+                          communityTypeLabel(AppLocalizations.of(context)!, type),
                           style: TextStyle(
                             color: isSelected
                                 ? AppColors.richGold
@@ -324,7 +325,7 @@ class _CreateCommunityScreenState extends State<CreateCommunityScreen> {
                       ),
                     ),
                     child: Text(
-                      lang['name']!,
+                      communityLanguageName(AppLocalizations.of(context)!, lang['code']!),
                       style: TextStyle(
                         color: isSelected
                             ? AppColors.infoBlue

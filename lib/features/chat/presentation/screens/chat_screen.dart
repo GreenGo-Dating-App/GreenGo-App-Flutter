@@ -195,6 +195,7 @@ class _ChatScreenState extends State<ChatScreen> {
   // Phrase of the Day
   String? _phraseOfTheDay;
   String? _phraseTranslation;
+  String? _phraseId;
   bool _showPhraseOfDay = true;
 
   // Pagination — open on a BOUNDED latest window (Firestore offline persistence
@@ -287,8 +288,8 @@ class _ChatScreenState extends State<ChatScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(newValue
-              ? 'Notifications muted for this chat'
-              : 'Notifications unmuted'),
+              ? AppLocalizations.of(context)!.chatNotificationsMutedForChat
+              : AppLocalizations.of(context)!.chatNotificationsUnmuted),
           duration: const Duration(seconds: 2),
           backgroundColor: AppColors.backgroundCard,
         ),
@@ -647,7 +648,9 @@ class _ChatScreenState extends State<ChatScreen> {
     // Check for contact information
     final filterResult = _contentFilter.analyzeContent(content);
     if (filterResult.hasContactInfo) {
-      showUserErrorMessage(context, AppLocalizations.of(context)!.chatMessageBlockedContains(filterResult.violations.join(', ')),);
+      if (!mounted) return;
+      final l10n = AppLocalizations.of(context)!;
+      showUserErrorMessage(context, l10n.chatMessageBlockedContains(filterResult.localizedViolations(l10n).join(', ')));
       return;
     }
 
@@ -1440,7 +1443,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             ),
                           ),
                           child: Text(
-                            'Select (${selectedIndices.length})',
+                            AppLocalizations.of(context)!.chatAlbumSelectCount(selectedIndices.length),
                             style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -1656,7 +1659,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         final name = _currentUserName ?? 'Someone';
         _addSend(ChatMessageSent(
-          content: '$name shared their private album',
+          content: '$name shared their private album', // i18n-ignore: stored fallback; bubble localizes by type
           type: MessageType.albumShare,
           metadata: {
             'albumOwnerId': widget.currentUserId,
@@ -1687,7 +1690,7 @@ class _ChatScreenState extends State<ChatScreen> {
       if (mounted) {
         final name = _currentUserName ?? 'Someone';
         _addSend(ChatMessageSent(
-          content: '$name revoked album access',
+          content: '$name revoked album access', // i18n-ignore: stored fallback; bubble localizes by type
           type: MessageType.albumRevoke,
           metadata: {
             'albumOwnerId': widget.currentUserId,
@@ -1795,7 +1798,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           ),
                           const SizedBox(height: 16),
                           Text(
-                            state.message,
+                            userErrorMessage(context, state.message),
                             style: const TextStyle(
                               color: AppColors.textSecondary,
                               fontSize: 16,
@@ -2471,8 +2474,8 @@ class _ChatScreenState extends State<ChatScreen> {
                   ? Icons.notifications_off_outlined
                   : Icons.notifications_active_outlined,
               label: _isConversationMuted
-                  ? 'Unmute notifications'
-                  : 'Mute notifications',
+                  ? AppLocalizations.of(context)!.chatUnmuteNotifications
+                  : AppLocalizations.of(context)!.chatMuteNotifications,
               color: _isConversationMuted ? AppColors.richGold : AppColors.textPrimary,
               onTap: () {
                 Navigator.pop(bottomSheetContext);
@@ -2865,7 +2868,7 @@ class _ChatScreenState extends State<ChatScreen> {
           const Icon(Icons.star, size: 14, color: AppColors.richGold),
           const SizedBox(width: 4),
           Text(
-            '$_sessionXp XP',
+            AppLocalizations.of(context)!.chatSessionXp(_sessionXp),
             style: const TextStyle(color: AppColors.richGold, fontSize: 11, fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 12),
@@ -2910,6 +2913,7 @@ class _ChatScreenState extends State<ChatScreen> {
         if (mounted) {
           setState(() {
             _phraseOfTheDay = data['phrase'] as String?;
+            _phraseId = data['id'] as String?;
             _phraseTranslation = '${data['translation']} (${data['lang']})';
           });
         }
@@ -2919,18 +2923,20 @@ class _ChatScreenState extends State<ChatScreen> {
       debugPrint('Phrase of day: Firestore read failed: $e');
     }
 
-    // Fallback to local phrases and cache to Firestore
+    // Fallback to local phrases and cache to Firestore. The English
+    // translation/lang are kept as the stored fallback (shared daily_phrases
+    // doc); the banner localizes by the stable 'id' (_localizedPhraseTranslation).
     final phrases = [
-      {'phrase': 'Cómo estás?', 'translation': 'How are you?', 'lang': 'Spanish'},
-      {'phrase': 'Buongiorno!', 'translation': 'Good morning!', 'lang': 'Italian'},
-      {'phrase': 'Comment allez-vous?', 'translation': 'How are you?', 'lang': 'French'},
-      {'phrase': 'Wie geht es Ihnen?', 'translation': 'How are you?', 'lang': 'German'},
-      {'phrase': 'Tudo bem?', 'translation': 'All good?', 'lang': 'Portuguese'},
-      {'phrase': 'Piacere di conoscerti!', 'translation': 'Nice to meet you!', 'lang': 'Italian'},
-      {'phrase': 'Enchanté!', 'translation': 'Pleased to meet you!', 'lang': 'French'},
-      {'phrase': 'Mucho gusto!', 'translation': 'Nice to meet you!', 'lang': 'Spanish'},
-      {'phrase': 'Freut mich!', 'translation': 'Nice to meet you!', 'lang': 'German'},
-      {'phrase': 'Que tal?', 'translation': "What's up?", 'lang': 'Spanish'},
+      {'id': 'es_how_are_you', 'phrase': 'Cómo estás?', 'translation': 'How are you?', 'lang': 'Spanish'},
+      {'id': 'it_good_morning', 'phrase': 'Buongiorno!', 'translation': 'Good morning!', 'lang': 'Italian'},
+      {'id': 'fr_how_are_you', 'phrase': 'Comment allez-vous?', 'translation': 'How are you?', 'lang': 'French'},
+      {'id': 'de_how_are_you', 'phrase': 'Wie geht es Ihnen?', 'translation': 'How are you?', 'lang': 'German'},
+      {'id': 'pt_all_good', 'phrase': 'Tudo bem?', 'translation': 'All good?', 'lang': 'Portuguese'},
+      {'id': 'it_nice_to_meet', 'phrase': 'Piacere di conoscerti!', 'translation': 'Nice to meet you!', 'lang': 'Italian'},
+      {'id': 'fr_pleased_to_meet', 'phrase': 'Enchanté!', 'translation': 'Pleased to meet you!', 'lang': 'French'},
+      {'id': 'es_nice_to_meet', 'phrase': 'Mucho gusto!', 'translation': 'Nice to meet you!', 'lang': 'Spanish'},
+      {'id': 'de_nice_to_meet', 'phrase': 'Freut mich!', 'translation': 'Nice to meet you!', 'lang': 'German'},
+      {'id': 'es_whats_up', 'phrase': 'Que tal?', 'translation': "What's up?", 'lang': 'Spanish'},
     ];
 
     // Pick based on day of year for consistency
@@ -2940,6 +2946,7 @@ class _ChatScreenState extends State<ChatScreen> {
     if (mounted) {
       setState(() {
         _phraseOfTheDay = '${phrase['phrase']}';
+        _phraseId = phrase['id'];
         _phraseTranslation = '${phrase['translation']} (${phrase['lang']})';
       });
     }
@@ -2952,6 +2959,50 @@ class _ChatScreenState extends State<ChatScreen> {
         .catchError((_) {});
   }
 
+  /// Localized "translation (language)" for the phrase banner; falls back to
+  /// the stored English text for phrases without a known id.
+  String? _localizedPhraseTranslation(AppLocalizations l10n) {
+    final id = _phraseId;
+    if (id == null || id.length < 3) return _phraseTranslation;
+    final String translation;
+    if (id.endsWith('how_are_you')) {
+      translation = l10n.chatPhraseHowAreYou;
+    } else if (id == 'it_good_morning') {
+      translation = l10n.chatPhraseGoodMorning;
+    } else if (id == 'pt_all_good') {
+      translation = l10n.chatPhraseAllGood;
+    } else if (id == 'fr_pleased_to_meet') {
+      translation = l10n.chatPhrasePleasedToMeetYou;
+    } else if (id.endsWith('nice_to_meet')) {
+      translation = l10n.chatPhraseNiceToMeetYou;
+    } else if (id == 'es_whats_up') {
+      translation = l10n.chatPhraseWhatsUp;
+    } else {
+      return _phraseTranslation;
+    }
+    final String language;
+    switch (id.substring(0, 2)) {
+      case 'es':
+        language = l10n.languageNameSpanish;
+        break;
+      case 'it':
+        language = l10n.languageNameItalian;
+        break;
+      case 'fr':
+        language = l10n.languageNameFrench;
+        break;
+      case 'de':
+        language = l10n.languageNameGerman;
+        break;
+      case 'pt':
+        language = l10n.languageNamePortuguese;
+        break;
+      default:
+        return _phraseTranslation;
+    }
+    return '$translation ($language)';
+  }
+
   Widget _buildPhraseOfDay() {
     if (_phraseOfTheDay == null || !_showPhraseOfDay) return const SizedBox.shrink();
 
@@ -2962,9 +3013,9 @@ class _ChatScreenState extends State<ChatScreen> {
         children: [
           const Icon(Icons.today, size: 16, color: AppColors.richGold),
           const SizedBox(width: 8),
-          const Text(
-            'Phrase of the Day: ',
-            style: TextStyle(color: AppColors.textTertiary, fontSize: 11),
+          Text(
+            '${AppLocalizations.of(context)!.chatSettingPhraseOfDay}: ',
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
           ),
           Expanded(
             child: GestureDetector(
@@ -2973,7 +3024,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 _messageController.text = _phraseOfTheDay!;
               },
               child: Text(
-                '$_phraseOfTheDay — $_phraseTranslation',
+                '$_phraseOfTheDay — ${_localizedPhraseTranslation(AppLocalizations.of(context)!)}',
                 style: const TextStyle(color: AppColors.richGold, fontSize: 12, fontWeight: FontWeight.w500),
                 overflow: TextOverflow.ellipsis,
               ),
@@ -3357,7 +3408,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 const Icon(Icons.photo_library, color: AppColors.richGold, size: 16),
                 const SizedBox(width: 6),
                 Text(
-                  '${_selectedAlbumPhotos.length} photo${_selectedAlbumPhotos.length > 1 ? 's' : ''} selected',
+                  AppLocalizations.of(context)!.chatAlbumPhotosSelected(_selectedAlbumPhotos.length),
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 12,

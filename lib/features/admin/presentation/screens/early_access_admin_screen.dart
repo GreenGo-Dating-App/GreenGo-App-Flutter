@@ -1,6 +1,7 @@
 import 'dart:io' show File;
 
 import 'package:file_picker/file_picker.dart';
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
@@ -134,7 +135,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(importResult.summary),
+            content: Text(importResult.localizedSummary(AppLocalizations.of(context)!)),
             backgroundColor: importResult.hasErrors
                 ? AppColors.warningAmber
                 : AppColors.successGreen,
@@ -202,7 +203,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
@@ -537,7 +538,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
           ),
           const SizedBox(height: AppDimensions.paddingS),
           Text(
-            result.summary,
+            result.localizedSummary(AppLocalizations.of(context)!),
             style: const TextStyle(color: AppColors.textSecondary),
           ),
           if (result.errors.isNotEmpty) ...[
@@ -839,7 +840,7 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Close'),
+            child: Text(l10n.close),
           ),
         ],
       ),
@@ -871,15 +872,16 @@ class _EarlyAccessAdminScreenState extends State<EarlyAccessAdminScreen> {
     final now = DateTime.now();
     final diff = now.difference(date);
 
+    final l10n = AppLocalizations.of(context)!;
     if (diff.inDays == 0) {
       if (diff.inHours == 0) {
-        return '${diff.inMinutes}m ago';
+        return l10n.chatSupportMinutesAgo(diff.inMinutes);
       }
-      return '${diff.inHours}h ago';
+      return l10n.chatSupportHoursAgo(diff.inHours);
     } else if (diff.inDays < 7) {
-      return '${diff.inDays}d ago';
+      return l10n.chatSupportDaysAgo(diff.inDays);
     } else {
-      return '${date.day}/${date.month}/${date.year}';
+      return DateFormat.yMd(Localizations.localeOf(context).toString()).format(date);
     }
   }
 }

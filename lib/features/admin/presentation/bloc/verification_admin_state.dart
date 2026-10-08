@@ -70,12 +70,27 @@ class VerificationAdminActionSuccess extends VerificationAdminLoaded {
   const VerificationAdminActionSuccess({
     required super.pendingVerifications,
     required super.verificationHistory,
-    required this.message,
+    required this.action,
+    this.count = 1,
   });
-  final String message;
+
+  /// Which action succeeded; the UI maps it to a localized message.
+  final VerificationAdminAction action;
+
+  /// Number of users affected (bulk actions).
+  final int count;
 
   @override
-  List<Object?> get props => [pendingVerifications, verificationHistory, message];
+  List<Object?> get props => [pendingVerifications, verificationHistory, action, count];
+}
+
+/// Successful admin verification actions (localized in the UI).
+enum VerificationAdminAction {
+  approved,
+  rejected,
+  betterPhotoRequested,
+  bulkApproved,
+  bulkBetterPhotoRequested,
 }
 
 class VerificationAdminError extends VerificationAdminLoaded {

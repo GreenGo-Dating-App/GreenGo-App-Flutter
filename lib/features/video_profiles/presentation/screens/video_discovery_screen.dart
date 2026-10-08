@@ -15,6 +15,7 @@ import '../../domain/entities/video_profile.dart';
 import '../bloc/video_profile_bloc.dart';
 import '../bloc/video_profile_event.dart';
 import '../bloc/video_profile_state.dart';
+import '../widgets/video_prompt_selector.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// TikTok-style full-screen video discovery screen.
@@ -185,12 +186,12 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
       ScaffoldMessenger.of(context).clearSnackBars();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Row(
+          content: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.favorite, color: Colors.white, size: 20),
-              SizedBox(width: 8),
-              Text('Liked!'),
+              const Icon(Icons.favorite, color: Colors.white, size: 20),
+              const SizedBox(width: 8),
+              Text(AppLocalizations.of(context)!.videoDiscoveryLiked),
             ],
           ),
           backgroundColor: AppColors.successGreen.withValues(alpha: 0.9),
@@ -212,12 +213,12 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
       ScaffoldMessenger.of(context).clearSnackBars();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Row(
+          content: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.close, color: Colors.white, size: 20),
-              SizedBox(width: 8),
-              Text('Passed'),
+              const Icon(Icons.close, color: Colors.white, size: 20),
+              const SizedBox(width: 8),
+              Text(AppLocalizations.of(context)!.videoDiscoveryPassed),
             ],
           ),
           backgroundColor: AppColors.errorRed.withValues(alpha: 0.9),
@@ -270,9 +271,9 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
           icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text(
-          'Video Intros',
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.videoDiscoveryTitle,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.bold,
           ),
@@ -330,27 +331,27 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
             final videos = state.discoveryVideos;
 
             if (videos.isEmpty) {
-              return const Center(
+              return Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.videocam_off_outlined,
                       color: AppColors.textTertiary,
                       size: 64,
                     ),
-                    SizedBox(height: 16),
+                    const SizedBox(height: 16),
                     Text(
-                      'No video introductions yet',
-                      style: TextStyle(
+                      AppLocalizations.of(context)!.videoDiscoveryEmptyTitle,
+                      style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 18,
                       ),
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Text(
-                      'Be the first to create one!',
-                      style: TextStyle(
+                      AppLocalizations.of(context)!.videoDiscoveryEmptySubtitle,
+                      style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 14,
                       ),
@@ -493,7 +494,7 @@ class _VideoPage extends StatelessWidget {
               children: [
                 // User ID (in real app, this would be name/age)
                 Text(
-                  'User ${videoProfile.userId.substring(0, videoProfile.userId.length.clamp(0, 8))}',
+                  AppLocalizations.of(context)!.videoDiscoveryUserFallback(videoProfile.userId.substring(0, videoProfile.userId.length.clamp(0, 8))),
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 20,
@@ -523,7 +524,7 @@ class _VideoPage extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      videoProfile.prompt!,
+                      localizedVideoPrompt(AppLocalizations.of(context)!, videoProfile.prompt!),
                       style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 12,
@@ -540,7 +541,7 @@ class _VideoPage extends StatelessWidget {
                         color: AppColors.textTertiary, size: 14),
                     const SizedBox(width: 4),
                     Text(
-                      '${videoProfile.viewCount} views',
+                      AppLocalizations.of(context)!.videoDiscoveryViews(videoProfile.viewCount),
                       style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 12,
@@ -573,7 +574,7 @@ class _VideoPage extends StatelessWidget {
                 // Like button
                 _ActionButton(
                   icon: Icons.favorite,
-                  label: 'Like',
+                  label: AppLocalizations.of(context)!.videoDiscoveryLike,
                   color: AppColors.errorRed,
                   onTap: onLike,
                 ),
@@ -581,7 +582,7 @@ class _VideoPage extends StatelessWidget {
                 // Pass button
                 _ActionButton(
                   icon: Icons.close,
-                  label: 'Pass',
+                  label: AppLocalizations.of(context)!.videoDiscoveryPass,
                   color: AppColors.textTertiary,
                   onTap: onPass,
                 ),
@@ -592,7 +593,7 @@ class _VideoPage extends StatelessWidget {
                 // Pass and Mute only.
                 _ActionButton(
                   icon: Icons.flag_outlined,
-                  label: 'Report',
+                  label: AppLocalizations.of(context)!.videoDiscoveryReport,
                   color: AppColors.textTertiary,
                   onTap: () => onReport(context),
                 ),
@@ -726,7 +727,7 @@ class _MuteButtonState extends State<_MuteButton> {
           ),
           const SizedBox(height: 4),
           Text(
-            _isMuted ? 'Unmute' : 'Mute',
+            _isMuted ? AppLocalizations.of(context)!.videoDiscoveryUnmute : AppLocalizations.of(context)!.videoDiscoveryMute,
             style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 11,

@@ -78,12 +78,12 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
                   .where((p) => p.userId != event.userId)
                   .toList(),
               verificationHistory: currentState.verificationHistory,
-              message: 'Verification approved successfully',
+              action: VerificationAdminAction.approved,
             )),
             (verifications) => emit(VerificationAdminActionSuccess(
               pendingVerifications: verifications,
               verificationHistory: currentState.verificationHistory,
-              message: 'Verification approved successfully',
+              action: VerificationAdminAction.approved,
             )),
           );
         },
@@ -123,7 +123,7 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
                 .where((p) => p.userId != event.userId)
                 .toList(),
             verificationHistory: currentState.verificationHistory,
-            message: 'Verification rejected',
+            action: VerificationAdminAction.rejected,
           ));
         },
       );
@@ -163,12 +163,12 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
                   .where((p) => p.userId != event.userId)
                   .toList(),
               verificationHistory: currentState.verificationHistory,
-              message: 'Better photo requested',
+              action: VerificationAdminAction.betterPhotoRequested,
             )),
             (verifications) => emit(VerificationAdminActionSuccess(
               pendingVerifications: verifications,
               verificationHistory: currentState.verificationHistory,
-              message: 'Better photo requested',
+              action: VerificationAdminAction.betterPhotoRequested,
             )),
           );
         },
@@ -219,12 +219,14 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
                   .where((p) => !event.userIds.contains(p.userId))
                   .toList(),
               verificationHistory: currentState.verificationHistory,
-              message: '${event.userIds.length} verifications approved',
+              action: VerificationAdminAction.bulkApproved,
+              count: event.userIds.length,
             )),
             (verifications) => emit(VerificationAdminActionSuccess(
               pendingVerifications: verifications,
               verificationHistory: currentState.verificationHistory,
-              message: '${event.userIds.length} verifications approved',
+              action: VerificationAdminAction.bulkApproved,
+              count: event.userIds.length,
             )),
           );
         },
@@ -264,12 +266,14 @@ class VerificationAdminBloc extends Bloc<VerificationAdminEvent, VerificationAdm
                   .where((p) => !event.userIds.contains(p.userId))
                   .toList(),
               verificationHistory: currentState.verificationHistory,
-              message: 'Better photo requested for ${event.userIds.length} users',
+              action: VerificationAdminAction.bulkBetterPhotoRequested,
+              count: event.userIds.length,
             )),
             (verifications) => emit(VerificationAdminActionSuccess(
               pendingVerifications: verifications,
               verificationHistory: currentState.verificationHistory,
-              message: 'Better photo requested for ${event.userIds.length} users',
+              action: VerificationAdminAction.bulkBetterPhotoRequested,
+              count: event.userIds.length,
             )),
           );
         },

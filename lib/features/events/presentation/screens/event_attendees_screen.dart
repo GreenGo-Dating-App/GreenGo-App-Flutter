@@ -155,7 +155,8 @@ class _EventAttendeesScreenState extends State<EventAttendeesScreen> {
   String _label(EventAttendee a) {
     final name =
         a.displayNameFor(widget.currentUserId,
-            widget.event.organizerViewIdFor(widget.currentUserId));
+            widget.event.organizerViewIdFor(widget.currentUserId),
+            anonymousLabel: AppLocalizations.of(context)!.chatSomeone);
     final resolved = _isAnon(a) ? name : (_dir[a.userId]?.name ?? name);
     return a.guestCount > 0 ? '$resolved +${a.guestCount}' : resolved;
   }

@@ -267,7 +267,8 @@ class _Step2PhotoUploadScreenState extends State<Step2PhotoUploadScreen> {
           if (isPhotoError) {
             // Show dialog for photo validation errors
             _showPhotoRejectedDialog(context, message);
-          } else {
+          } else if (state.message != OnboardingError.incompleteStepCode) {
+            // The incomplete-step code is localized by OnboardingScreen.
             showUserError(context, state.message);
           }
         }

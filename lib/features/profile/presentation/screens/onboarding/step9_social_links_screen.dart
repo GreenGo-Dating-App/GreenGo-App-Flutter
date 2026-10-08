@@ -147,7 +147,7 @@ class _Step9SocialLinksScreenState extends State<Step9SocialLinksScreen> {
                 ),
                 _buildSocialInput(
                   controller: _xController,
-                  label: 'X (Twitter)',
+                  label: l10n.xTwitter,
                   hint: l10n.socialHintUsernameNoAt,
                   icon: Icons.alternate_email,
                   color: Colors.white,

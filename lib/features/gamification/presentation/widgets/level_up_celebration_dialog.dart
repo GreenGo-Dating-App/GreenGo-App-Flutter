@@ -4,6 +4,7 @@ import 'package:lottie/lottie.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/user_level.dart';
+import '../utils/gamification_l10n.dart';
 
 /// Level-up celebration dialog with Lottie confetti animation
 /// Shows when user reaches a new level with multilingual support
@@ -326,7 +327,7 @@ class _LevelUpCelebrationDialogState extends State<LevelUpCelebrationDialog>
                                 ),
                                 const SizedBox(width: 6),
                                 Text(
-                                  reward.name,
+                                  localizedLevelRewardName(l10n, reward),
                                   style: const TextStyle(
                                     fontSize: 13,
                                     color: Colors.white,

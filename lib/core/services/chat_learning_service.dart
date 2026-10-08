@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/foundation.dart';
 
+import '../utils/app_l10n_lookup.dart';
 import 'ai_consent_service.dart';
 
 /// Signature of the server call (overridable in tests).
@@ -137,9 +138,10 @@ class ChatLearningService {
     final result = await _assist('cultural', text, language: language);
     if (result == null) return null; // not cached: may work later
     if (result['hasContext'] == true) {
+      final l10n = await currentAppL10nAsync();
       final tooltip = '${result['expression']}\n'
-          'Literal: ${result['literal']}\n'
-          'Meaning: ${result['meaning']}\n'
+          '${l10n.chatLearningLiteral('${result['literal']}')}\n'
+          '${l10n.chatLearningMeaning('${result['meaning']}')}\n'
           '${result['cultural_note'] ?? ''}';
       _culturalTooltipCache[cacheKey] = tooltip;
       return tooltip;

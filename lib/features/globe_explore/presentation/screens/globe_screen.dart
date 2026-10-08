@@ -10,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/error/failures.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../../core/utils/user_error.dart';
@@ -449,7 +450,9 @@ class _GlobeScreenState extends State<GlobeScreen> {
             children: [
               const SizedBox(height: 10),
               Center(
-                child: Text(country,
+                child: Text(
+                    localizedCountryName(
+                        AppLocalizations.of(context)!, country),
                     style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 18,
@@ -711,6 +714,15 @@ class _GlobeScreenState extends State<GlobeScreen> {
     );
   }
 
+  /// 'Unknown' is the data-layer placeholder for a missing name/city/country.
+  String _orUnknown(BuildContext context, String value) => value == 'Unknown'
+      ? AppLocalizations.of(context)!.chatUnknown
+      : value;
+
+  /// Localized display name for a stored (English) country value.
+  String _countryLabel(BuildContext context, String country) => _orUnknown(
+      context, localizedCountryName(AppLocalizations.of(context)!, country));
+
   void _showCountrySearch(BuildContext context) {
     final state = context.read<GlobeBloc>().state;
     var countries = <String>[];
@@ -871,7 +883,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
                         children: [
                           Flexible(
                             child: Text(
-                              user.displayName,
+                              _orUnknown(context, user.displayName),
                               style: const TextStyle(
                                 color: AppColors.textPrimary,
                                 fontSize: 18,
@@ -900,7 +912,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        '${user.city}, ${user.country}',
+                        '${_orUnknown(context, user.city)}, ${_countryLabel(context, user.country)}',
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 13,
@@ -1002,7 +1014,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
             ),
             const SizedBox(height: 4),
             Text(
-              user.country,
+              _countryLabel(context, user.country),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 14,
@@ -1016,7 +1028,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
                   const Icon(Icons.flight, color: Colors.blue, size: 16),
                   const SizedBox(width: 6),
                   Text(
-                    AppLocalizations.of(context)!.globeTravelingTo(user.travelerCountry ?? user.country),
+                    AppLocalizations.of(context)!.globeTravelingTo(_countryLabel(context, user.travelerCountry ?? user.country)),
                     style: const TextStyle(
                       color: Colors.blue,
                       fontSize: 13,
@@ -1238,7 +1250,8 @@ class _GlobeScreenState extends State<GlobeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          countryName,
+                          localizedCountryName(
+                              AppLocalizations.of(context)!, countryName),
                           style: const TextStyle(
                             color: AppColors.textPrimary,
                             fontSize: 18,
@@ -1247,7 +1260,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
                         ),
                         Text(
                           matches.isEmpty
-                              ? AppLocalizations.of(context)!.globeNoConnectionsInCountry(countryName)
+                              ? AppLocalizations.of(context)!.globeNoConnectionsInCountry(localizedCountryName(AppLocalizations.of(context)!, countryName))
                               : AppLocalizations.of(context)!.globeConnectionsHere(matches.length),
                           style: const TextStyle(
                             color: AppColors.textSecondary,
@@ -1294,7 +1307,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
                 color: AppColors.textTertiary, size: 48),
             const SizedBox(height: 12),
             Text(
-              AppLocalizations.of(context)!.globeNoConnectionsInCountry(countryName),
+              AppLocalizations.of(context)!.globeNoConnectionsInCountry(localizedCountryName(AppLocalizations.of(context)!, countryName)),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 15,
@@ -1337,7 +1350,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
       title: Row(
         children: [
           Text(
-            match.displayName,
+            _orUnknown(context, match.displayName),
             style: const TextStyle(
               color: AppColors.textPrimary,
               fontWeight: FontWeight.w600,
@@ -1360,7 +1373,7 @@ class _GlobeScreenState extends State<GlobeScreen> {
         ],
       ),
       subtitle: Text(
-        match.city,
+        _orUnknown(context, match.city),
         style: const TextStyle(
           color: AppColors.textTertiary,
           fontSize: 12,

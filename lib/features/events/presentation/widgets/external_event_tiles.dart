@@ -394,7 +394,7 @@ class ExternalEventGridTile extends StatelessWidget {
                         ],
                         if (e.fromPrice != null)
                           Text(
-                              '${e.currency ?? ''}${e.fromPrice!.toStringAsFixed(0)}',
+                              '${e.currency ?? ''}${e.fromPrice!.toStringAsFixed(0)}', // i18n-ignore: currency + amount
                               style: const TextStyle(
                                   color: AppColors.richGold,
                                   fontSize: 10,

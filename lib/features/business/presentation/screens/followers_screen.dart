@@ -206,7 +206,7 @@ class _FollowersScreenState extends State<FollowersScreen> {
         final brief = UserDirectoryService.instance.cached(uid);
         final name = (brief?.name.trim().isNotEmpty ?? false)
             ? brief!.name.trim()
-            : 'GreenGo member';
+            : AppLocalizations.of(context)!.businessFollowerFallbackName;
         final photo = brief?.photoUrl;
         return _tile(name, (photo != null && photo.isNotEmpty) ? photo : null);
       },

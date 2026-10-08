@@ -384,7 +384,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
             if (!mounted) return;
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(l10n.nicknameSearchLimitReached('Priority Connect')),
+                content: Text(l10n.nicknameSearchLimitReached(l10n.superLike)),
                 backgroundColor: AppColors.richGold,
               ),
             );
@@ -406,7 +406,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
             if (!mounted) return;
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(l10n.nicknameSearchLimitReached('Priority Connect')),
+                content: Text(l10n.nicknameSearchLimitReached(l10n.superLike)),
                 backgroundColor: AppColors.richGold,
               ),
             );
@@ -469,8 +469,8 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
           if (!hourlyLimit.isAllowed) {
             if (!mounted) return;
             final actionName = actionType == SwipeActionType.like
-                ? "Let's Connect"
-                : 'Nope';
+                ? l10n.connectAction
+                : l10n.discoveryActionNope;
             final color = actionType == SwipeActionType.like
                 ? AppColors.successGreen
                 : AppColors.errorRed;
@@ -911,7 +911,7 @@ class _NicknameSearchDialogState extends State<NicknameSearchDialog> {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              AppLocalizations.of(context)?.nicknameSearchChat ?? 'Chat',
+                              AppLocalizations.of(context)!.nicknameSearchChat,
                               style: const TextStyle(
                                 color: AppColors.richGold,
                                 fontSize: 12,

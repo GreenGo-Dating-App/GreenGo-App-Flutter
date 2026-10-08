@@ -30865,6 +30865,8088 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Check how guests will see it. Fix anything marked in red, then publish or save a draft.'**
   String get wzExReviewDesc;
+
+  /// No description provided for @verificationOrMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'or {method}'**
+  String verificationOrMethod(String method);
+
+  /// No description provided for @safetyAcademyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety Academy'**
+  String get safetyAcademyTitle;
+
+  /// No description provided for @safetyAcademyLearningModules.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning Modules'**
+  String get safetyAcademyLearningModules;
+
+  /// No description provided for @safetyAcademyModulesCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'{completed} / {total} modules completed'**
+  String safetyAcademyModulesCompleted(int completed, int total);
+
+  /// No description provided for @safetyAcademyChampionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety Champion'**
+  String get safetyAcademyChampionTitle;
+
+  /// No description provided for @safetyAcademyChampionBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You completed all safety modules!'**
+  String get safetyAcademyChampionBody;
+
+  /// No description provided for @safetyAcademyLessonCompletedToast.
+  ///
+  /// In en, this message translates to:
+  /// **'Lesson completed!'**
+  String get safetyAcademyLessonCompletedToast;
+
+  /// No description provided for @safetyAcademyNoLessons.
+  ///
+  /// In en, this message translates to:
+  /// **'No lessons available yet.'**
+  String get safetyAcademyNoLessons;
+
+  /// No description provided for @safetyAcademyLessonsProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'{completed} / {total} lessons'**
+  String safetyAcademyLessonsProgress(int completed, int total);
+
+  /// No description provided for @safetyAcademyLessonXpWithQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'+{xp} XP | Quiz'**
+  String safetyAcademyLessonXpWithQuiz(int xp);
+
+  /// No description provided for @safetyAcademyTakeQuiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Take Quiz'**
+  String get safetyAcademyTakeQuiz;
+
+  /// No description provided for @safetyAcademyCompleteLesson.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Lesson'**
+  String get safetyAcademyCompleteLesson;
+
+  /// No description provided for @safetyAcademyCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get safetyAcademyCompleted;
+
+  /// No description provided for @safetyAcademyQuestionOf.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {current} of {total}'**
+  String safetyAcademyQuestionOf(int current, int total);
+
+  /// No description provided for @safetyAcademyCorrectCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} correct'**
+  String safetyAcademyCorrectCount(int count);
+
+  /// No description provided for @safetyAcademyNextQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Next Question'**
+  String get safetyAcademyNextQuestion;
+
+  /// No description provided for @safetyAcademySeeResults.
+  ///
+  /// In en, this message translates to:
+  /// **'See Results'**
+  String get safetyAcademySeeResults;
+
+  /// No description provided for @safetyAcademyGreatJob.
+  ///
+  /// In en, this message translates to:
+  /// **'Great Job!'**
+  String get safetyAcademyGreatJob;
+
+  /// No description provided for @safetyAcademyKeepLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep Learning!'**
+  String get safetyAcademyKeepLearning;
+
+  /// No description provided for @safetyAcademyScoreSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'{correct} out of {total} correct'**
+  String safetyAcademyScoreSummary(int correct, int total);
+
+  /// No description provided for @safetyAcademyPassingScore.
+  ///
+  /// In en, this message translates to:
+  /// **'Passing score: {score}%'**
+  String safetyAcademyPassingScore(int score);
+
+  /// No description provided for @safetyAcademyCompleteLessonXp.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Lesson (+{xp} XP)'**
+  String safetyAcademyCompleteLessonXp(int xp);
+
+  /// No description provided for @safetyAcademyReviewLesson.
+  ///
+  /// In en, this message translates to:
+  /// **'Review Lesson'**
+  String get safetyAcademyReviewLesson;
+
+  /// No description provided for @safetyAcademyExitQuizTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit Quiz?'**
+  String get safetyAcademyExitQuizTitle;
+
+  /// No description provided for @safetyAcademyExitQuizBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your progress will be lost.'**
+  String get safetyAcademyExitQuizBody;
+
+  /// No description provided for @countryNameAF.
+  ///
+  /// In en, this message translates to:
+  /// **'Afghanistan'**
+  String get countryNameAF;
+
+  /// No description provided for @countryNameAL.
+  ///
+  /// In en, this message translates to:
+  /// **'Albania'**
+  String get countryNameAL;
+
+  /// No description provided for @countryNameDZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Algeria'**
+  String get countryNameDZ;
+
+  /// No description provided for @countryNameAD.
+  ///
+  /// In en, this message translates to:
+  /// **'Andorra'**
+  String get countryNameAD;
+
+  /// No description provided for @countryNameAO.
+  ///
+  /// In en, this message translates to:
+  /// **'Angola'**
+  String get countryNameAO;
+
+  /// No description provided for @countryNameAG.
+  ///
+  /// In en, this message translates to:
+  /// **'Antigua and Barbuda'**
+  String get countryNameAG;
+
+  /// No description provided for @countryNameAR.
+  ///
+  /// In en, this message translates to:
+  /// **'Argentina'**
+  String get countryNameAR;
+
+  /// No description provided for @countryNameAM.
+  ///
+  /// In en, this message translates to:
+  /// **'Armenia'**
+  String get countryNameAM;
+
+  /// No description provided for @countryNameAU.
+  ///
+  /// In en, this message translates to:
+  /// **'Australia'**
+  String get countryNameAU;
+
+  /// No description provided for @countryNameAT.
+  ///
+  /// In en, this message translates to:
+  /// **'Austria'**
+  String get countryNameAT;
+
+  /// No description provided for @countryNameAZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Azerbaijan'**
+  String get countryNameAZ;
+
+  /// No description provided for @countryNameBS.
+  ///
+  /// In en, this message translates to:
+  /// **'Bahamas'**
+  String get countryNameBS;
+
+  /// No description provided for @countryNameBH.
+  ///
+  /// In en, this message translates to:
+  /// **'Bahrain'**
+  String get countryNameBH;
+
+  /// No description provided for @countryNameBD.
+  ///
+  /// In en, this message translates to:
+  /// **'Bangladesh'**
+  String get countryNameBD;
+
+  /// No description provided for @countryNameBB.
+  ///
+  /// In en, this message translates to:
+  /// **'Barbados'**
+  String get countryNameBB;
+
+  /// No description provided for @countryNameBY.
+  ///
+  /// In en, this message translates to:
+  /// **'Belarus'**
+  String get countryNameBY;
+
+  /// No description provided for @countryNameBE.
+  ///
+  /// In en, this message translates to:
+  /// **'Belgium'**
+  String get countryNameBE;
+
+  /// No description provided for @countryNameBZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Belize'**
+  String get countryNameBZ;
+
+  /// No description provided for @countryNameBJ.
+  ///
+  /// In en, this message translates to:
+  /// **'Benin'**
+  String get countryNameBJ;
+
+  /// No description provided for @countryNameBT.
+  ///
+  /// In en, this message translates to:
+  /// **'Bhutan'**
+  String get countryNameBT;
+
+  /// No description provided for @countryNameBO.
+  ///
+  /// In en, this message translates to:
+  /// **'Bolivia'**
+  String get countryNameBO;
+
+  /// No description provided for @countryNameBA.
+  ///
+  /// In en, this message translates to:
+  /// **'Bosnia and Herzegovina'**
+  String get countryNameBA;
+
+  /// No description provided for @countryNameBW.
+  ///
+  /// In en, this message translates to:
+  /// **'Botswana'**
+  String get countryNameBW;
+
+  /// No description provided for @countryNameBR.
+  ///
+  /// In en, this message translates to:
+  /// **'Brazil'**
+  String get countryNameBR;
+
+  /// No description provided for @countryNameBN.
+  ///
+  /// In en, this message translates to:
+  /// **'Brunei'**
+  String get countryNameBN;
+
+  /// No description provided for @countryNameBG.
+  ///
+  /// In en, this message translates to:
+  /// **'Bulgaria'**
+  String get countryNameBG;
+
+  /// No description provided for @countryNameBF.
+  ///
+  /// In en, this message translates to:
+  /// **'Burkina Faso'**
+  String get countryNameBF;
+
+  /// No description provided for @countryNameBI.
+  ///
+  /// In en, this message translates to:
+  /// **'Burundi'**
+  String get countryNameBI;
+
+  /// No description provided for @countryNameCV.
+  ///
+  /// In en, this message translates to:
+  /// **'Cabo Verde'**
+  String get countryNameCV;
+
+  /// No description provided for @countryNameKH.
+  ///
+  /// In en, this message translates to:
+  /// **'Cambodia'**
+  String get countryNameKH;
+
+  /// No description provided for @countryNameCM.
+  ///
+  /// In en, this message translates to:
+  /// **'Cameroon'**
+  String get countryNameCM;
+
+  /// No description provided for @countryNameCA.
+  ///
+  /// In en, this message translates to:
+  /// **'Canada'**
+  String get countryNameCA;
+
+  /// No description provided for @countryNameCF.
+  ///
+  /// In en, this message translates to:
+  /// **'Central African Republic'**
+  String get countryNameCF;
+
+  /// No description provided for @countryNameTD.
+  ///
+  /// In en, this message translates to:
+  /// **'Chad'**
+  String get countryNameTD;
+
+  /// No description provided for @countryNameCL.
+  ///
+  /// In en, this message translates to:
+  /// **'Chile'**
+  String get countryNameCL;
+
+  /// No description provided for @countryNameCN.
+  ///
+  /// In en, this message translates to:
+  /// **'China'**
+  String get countryNameCN;
+
+  /// No description provided for @countryNameCO.
+  ///
+  /// In en, this message translates to:
+  /// **'Colombia'**
+  String get countryNameCO;
+
+  /// No description provided for @countryNameKM.
+  ///
+  /// In en, this message translates to:
+  /// **'Comoros'**
+  String get countryNameKM;
+
+  /// No description provided for @countryNameCG.
+  ///
+  /// In en, this message translates to:
+  /// **'Congo'**
+  String get countryNameCG;
+
+  /// No description provided for @countryNameCD.
+  ///
+  /// In en, this message translates to:
+  /// **'DR Congo'**
+  String get countryNameCD;
+
+  /// No description provided for @countryNameCR.
+  ///
+  /// In en, this message translates to:
+  /// **'Costa Rica'**
+  String get countryNameCR;
+
+  /// No description provided for @countryNameHR.
+  ///
+  /// In en, this message translates to:
+  /// **'Croatia'**
+  String get countryNameHR;
+
+  /// No description provided for @countryNameCU.
+  ///
+  /// In en, this message translates to:
+  /// **'Cuba'**
+  String get countryNameCU;
+
+  /// No description provided for @countryNameCY.
+  ///
+  /// In en, this message translates to:
+  /// **'Cyprus'**
+  String get countryNameCY;
+
+  /// No description provided for @countryNameCZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Czechia'**
+  String get countryNameCZ;
+
+  /// No description provided for @countryNameDK.
+  ///
+  /// In en, this message translates to:
+  /// **'Denmark'**
+  String get countryNameDK;
+
+  /// No description provided for @countryNameDJ.
+  ///
+  /// In en, this message translates to:
+  /// **'Djibouti'**
+  String get countryNameDJ;
+
+  /// No description provided for @countryNameDM.
+  ///
+  /// In en, this message translates to:
+  /// **'Dominica'**
+  String get countryNameDM;
+
+  /// No description provided for @countryNameDO.
+  ///
+  /// In en, this message translates to:
+  /// **'Dominican Republic'**
+  String get countryNameDO;
+
+  /// No description provided for @countryNameEC.
+  ///
+  /// In en, this message translates to:
+  /// **'Ecuador'**
+  String get countryNameEC;
+
+  /// No description provided for @countryNameEG.
+  ///
+  /// In en, this message translates to:
+  /// **'Egypt'**
+  String get countryNameEG;
+
+  /// No description provided for @countryNameSV.
+  ///
+  /// In en, this message translates to:
+  /// **'El Salvador'**
+  String get countryNameSV;
+
+  /// No description provided for @countryNameGQ.
+  ///
+  /// In en, this message translates to:
+  /// **'Equatorial Guinea'**
+  String get countryNameGQ;
+
+  /// No description provided for @countryNameER.
+  ///
+  /// In en, this message translates to:
+  /// **'Eritrea'**
+  String get countryNameER;
+
+  /// No description provided for @countryNameEE.
+  ///
+  /// In en, this message translates to:
+  /// **'Estonia'**
+  String get countryNameEE;
+
+  /// No description provided for @countryNameSZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Eswatini'**
+  String get countryNameSZ;
+
+  /// No description provided for @countryNameET.
+  ///
+  /// In en, this message translates to:
+  /// **'Ethiopia'**
+  String get countryNameET;
+
+  /// No description provided for @countryNameFJ.
+  ///
+  /// In en, this message translates to:
+  /// **'Fiji'**
+  String get countryNameFJ;
+
+  /// No description provided for @countryNameFI.
+  ///
+  /// In en, this message translates to:
+  /// **'Finland'**
+  String get countryNameFI;
+
+  /// No description provided for @countryNameFR.
+  ///
+  /// In en, this message translates to:
+  /// **'France'**
+  String get countryNameFR;
+
+  /// No description provided for @countryNameGA.
+  ///
+  /// In en, this message translates to:
+  /// **'Gabon'**
+  String get countryNameGA;
+
+  /// No description provided for @countryNameGM.
+  ///
+  /// In en, this message translates to:
+  /// **'Gambia'**
+  String get countryNameGM;
+
+  /// No description provided for @countryNameGE.
+  ///
+  /// In en, this message translates to:
+  /// **'Georgia'**
+  String get countryNameGE;
+
+  /// No description provided for @countryNameDE.
+  ///
+  /// In en, this message translates to:
+  /// **'Germany'**
+  String get countryNameDE;
+
+  /// No description provided for @countryNameGH.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghana'**
+  String get countryNameGH;
+
+  /// No description provided for @countryNameGR.
+  ///
+  /// In en, this message translates to:
+  /// **'Greece'**
+  String get countryNameGR;
+
+  /// No description provided for @countryNameGD.
+  ///
+  /// In en, this message translates to:
+  /// **'Grenada'**
+  String get countryNameGD;
+
+  /// No description provided for @countryNameGT.
+  ///
+  /// In en, this message translates to:
+  /// **'Guatemala'**
+  String get countryNameGT;
+
+  /// No description provided for @countryNameGN.
+  ///
+  /// In en, this message translates to:
+  /// **'Guinea'**
+  String get countryNameGN;
+
+  /// No description provided for @countryNameGW.
+  ///
+  /// In en, this message translates to:
+  /// **'Guinea-Bissau'**
+  String get countryNameGW;
+
+  /// No description provided for @countryNameGY.
+  ///
+  /// In en, this message translates to:
+  /// **'Guyana'**
+  String get countryNameGY;
+
+  /// No description provided for @countryNameHT.
+  ///
+  /// In en, this message translates to:
+  /// **'Haiti'**
+  String get countryNameHT;
+
+  /// No description provided for @countryNameHN.
+  ///
+  /// In en, this message translates to:
+  /// **'Honduras'**
+  String get countryNameHN;
+
+  /// No description provided for @countryNameHU.
+  ///
+  /// In en, this message translates to:
+  /// **'Hungary'**
+  String get countryNameHU;
+
+  /// No description provided for @countryNameIS.
+  ///
+  /// In en, this message translates to:
+  /// **'Iceland'**
+  String get countryNameIS;
+
+  /// No description provided for @countryNameIN.
+  ///
+  /// In en, this message translates to:
+  /// **'India'**
+  String get countryNameIN;
+
+  /// No description provided for @countryNameID.
+  ///
+  /// In en, this message translates to:
+  /// **'Indonesia'**
+  String get countryNameID;
+
+  /// No description provided for @countryNameIR.
+  ///
+  /// In en, this message translates to:
+  /// **'Iran'**
+  String get countryNameIR;
+
+  /// No description provided for @countryNameIQ.
+  ///
+  /// In en, this message translates to:
+  /// **'Iraq'**
+  String get countryNameIQ;
+
+  /// No description provided for @countryNameIE.
+  ///
+  /// In en, this message translates to:
+  /// **'Ireland'**
+  String get countryNameIE;
+
+  /// No description provided for @countryNameIL.
+  ///
+  /// In en, this message translates to:
+  /// **'Israel'**
+  String get countryNameIL;
+
+  /// No description provided for @countryNameIT.
+  ///
+  /// In en, this message translates to:
+  /// **'Italy'**
+  String get countryNameIT;
+
+  /// No description provided for @countryNameCI.
+  ///
+  /// In en, this message translates to:
+  /// **'Ivory Coast'**
+  String get countryNameCI;
+
+  /// No description provided for @countryNameJM.
+  ///
+  /// In en, this message translates to:
+  /// **'Jamaica'**
+  String get countryNameJM;
+
+  /// No description provided for @countryNameJP.
+  ///
+  /// In en, this message translates to:
+  /// **'Japan'**
+  String get countryNameJP;
+
+  /// No description provided for @countryNameJO.
+  ///
+  /// In en, this message translates to:
+  /// **'Jordan'**
+  String get countryNameJO;
+
+  /// No description provided for @countryNameKZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Kazakhstan'**
+  String get countryNameKZ;
+
+  /// No description provided for @countryNameKE.
+  ///
+  /// In en, this message translates to:
+  /// **'Kenya'**
+  String get countryNameKE;
+
+  /// No description provided for @countryNameKI.
+  ///
+  /// In en, this message translates to:
+  /// **'Kiribati'**
+  String get countryNameKI;
+
+  /// No description provided for @countryNameXK.
+  ///
+  /// In en, this message translates to:
+  /// **'Kosovo'**
+  String get countryNameXK;
+
+  /// No description provided for @countryNameKW.
+  ///
+  /// In en, this message translates to:
+  /// **'Kuwait'**
+  String get countryNameKW;
+
+  /// No description provided for @countryNameKG.
+  ///
+  /// In en, this message translates to:
+  /// **'Kyrgyzstan'**
+  String get countryNameKG;
+
+  /// No description provided for @countryNameLA.
+  ///
+  /// In en, this message translates to:
+  /// **'Laos'**
+  String get countryNameLA;
+
+  /// No description provided for @countryNameLV.
+  ///
+  /// In en, this message translates to:
+  /// **'Latvia'**
+  String get countryNameLV;
+
+  /// No description provided for @countryNameLB.
+  ///
+  /// In en, this message translates to:
+  /// **'Lebanon'**
+  String get countryNameLB;
+
+  /// No description provided for @countryNameLS.
+  ///
+  /// In en, this message translates to:
+  /// **'Lesotho'**
+  String get countryNameLS;
+
+  /// No description provided for @countryNameLR.
+  ///
+  /// In en, this message translates to:
+  /// **'Liberia'**
+  String get countryNameLR;
+
+  /// No description provided for @countryNameLY.
+  ///
+  /// In en, this message translates to:
+  /// **'Libya'**
+  String get countryNameLY;
+
+  /// No description provided for @countryNameLI.
+  ///
+  /// In en, this message translates to:
+  /// **'Liechtenstein'**
+  String get countryNameLI;
+
+  /// No description provided for @countryNameLT.
+  ///
+  /// In en, this message translates to:
+  /// **'Lithuania'**
+  String get countryNameLT;
+
+  /// No description provided for @countryNameLU.
+  ///
+  /// In en, this message translates to:
+  /// **'Luxembourg'**
+  String get countryNameLU;
+
+  /// No description provided for @countryNameMG.
+  ///
+  /// In en, this message translates to:
+  /// **'Madagascar'**
+  String get countryNameMG;
+
+  /// No description provided for @countryNameMW.
+  ///
+  /// In en, this message translates to:
+  /// **'Malawi'**
+  String get countryNameMW;
+
+  /// No description provided for @countryNameMY.
+  ///
+  /// In en, this message translates to:
+  /// **'Malaysia'**
+  String get countryNameMY;
+
+  /// No description provided for @countryNameMV.
+  ///
+  /// In en, this message translates to:
+  /// **'Maldives'**
+  String get countryNameMV;
+
+  /// No description provided for @countryNameML.
+  ///
+  /// In en, this message translates to:
+  /// **'Mali'**
+  String get countryNameML;
+
+  /// No description provided for @countryNameMT.
+  ///
+  /// In en, this message translates to:
+  /// **'Malta'**
+  String get countryNameMT;
+
+  /// No description provided for @countryNameMH.
+  ///
+  /// In en, this message translates to:
+  /// **'Marshall Islands'**
+  String get countryNameMH;
+
+  /// No description provided for @countryNameMR.
+  ///
+  /// In en, this message translates to:
+  /// **'Mauritania'**
+  String get countryNameMR;
+
+  /// No description provided for @countryNameMU.
+  ///
+  /// In en, this message translates to:
+  /// **'Mauritius'**
+  String get countryNameMU;
+
+  /// No description provided for @countryNameMX.
+  ///
+  /// In en, this message translates to:
+  /// **'Mexico'**
+  String get countryNameMX;
+
+  /// No description provided for @countryNameFM.
+  ///
+  /// In en, this message translates to:
+  /// **'Micronesia'**
+  String get countryNameFM;
+
+  /// No description provided for @countryNameMD.
+  ///
+  /// In en, this message translates to:
+  /// **'Moldova'**
+  String get countryNameMD;
+
+  /// No description provided for @countryNameMC.
+  ///
+  /// In en, this message translates to:
+  /// **'Monaco'**
+  String get countryNameMC;
+
+  /// No description provided for @countryNameMN.
+  ///
+  /// In en, this message translates to:
+  /// **'Mongolia'**
+  String get countryNameMN;
+
+  /// No description provided for @countryNameME.
+  ///
+  /// In en, this message translates to:
+  /// **'Montenegro'**
+  String get countryNameME;
+
+  /// No description provided for @countryNameMA.
+  ///
+  /// In en, this message translates to:
+  /// **'Morocco'**
+  String get countryNameMA;
+
+  /// No description provided for @countryNameMZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Mozambique'**
+  String get countryNameMZ;
+
+  /// No description provided for @countryNameMM.
+  ///
+  /// In en, this message translates to:
+  /// **'Myanmar'**
+  String get countryNameMM;
+
+  /// No description provided for @countryNameNA.
+  ///
+  /// In en, this message translates to:
+  /// **'Namibia'**
+  String get countryNameNA;
+
+  /// No description provided for @countryNameNR.
+  ///
+  /// In en, this message translates to:
+  /// **'Nauru'**
+  String get countryNameNR;
+
+  /// No description provided for @countryNameNP.
+  ///
+  /// In en, this message translates to:
+  /// **'Nepal'**
+  String get countryNameNP;
+
+  /// No description provided for @countryNameNL.
+  ///
+  /// In en, this message translates to:
+  /// **'Netherlands'**
+  String get countryNameNL;
+
+  /// No description provided for @countryNameNZ.
+  ///
+  /// In en, this message translates to:
+  /// **'New Zealand'**
+  String get countryNameNZ;
+
+  /// No description provided for @countryNameNI.
+  ///
+  /// In en, this message translates to:
+  /// **'Nicaragua'**
+  String get countryNameNI;
+
+  /// No description provided for @countryNameNE.
+  ///
+  /// In en, this message translates to:
+  /// **'Niger'**
+  String get countryNameNE;
+
+  /// No description provided for @countryNameNG.
+  ///
+  /// In en, this message translates to:
+  /// **'Nigeria'**
+  String get countryNameNG;
+
+  /// No description provided for @countryNameKP.
+  ///
+  /// In en, this message translates to:
+  /// **'North Korea'**
+  String get countryNameKP;
+
+  /// No description provided for @countryNameMK.
+  ///
+  /// In en, this message translates to:
+  /// **'North Macedonia'**
+  String get countryNameMK;
+
+  /// No description provided for @countryNameNO.
+  ///
+  /// In en, this message translates to:
+  /// **'Norway'**
+  String get countryNameNO;
+
+  /// No description provided for @countryNameOM.
+  ///
+  /// In en, this message translates to:
+  /// **'Oman'**
+  String get countryNameOM;
+
+  /// No description provided for @countryNamePK.
+  ///
+  /// In en, this message translates to:
+  /// **'Pakistan'**
+  String get countryNamePK;
+
+  /// No description provided for @countryNamePW.
+  ///
+  /// In en, this message translates to:
+  /// **'Palau'**
+  String get countryNamePW;
+
+  /// No description provided for @countryNamePS.
+  ///
+  /// In en, this message translates to:
+  /// **'Palestine'**
+  String get countryNamePS;
+
+  /// No description provided for @countryNamePA.
+  ///
+  /// In en, this message translates to:
+  /// **'Panama'**
+  String get countryNamePA;
+
+  /// No description provided for @countryNamePG.
+  ///
+  /// In en, this message translates to:
+  /// **'Papua New Guinea'**
+  String get countryNamePG;
+
+  /// No description provided for @countryNamePY.
+  ///
+  /// In en, this message translates to:
+  /// **'Paraguay'**
+  String get countryNamePY;
+
+  /// No description provided for @countryNamePE.
+  ///
+  /// In en, this message translates to:
+  /// **'Peru'**
+  String get countryNamePE;
+
+  /// No description provided for @countryNamePH.
+  ///
+  /// In en, this message translates to:
+  /// **'Philippines'**
+  String get countryNamePH;
+
+  /// No description provided for @countryNamePL.
+  ///
+  /// In en, this message translates to:
+  /// **'Poland'**
+  String get countryNamePL;
+
+  /// No description provided for @countryNamePT.
+  ///
+  /// In en, this message translates to:
+  /// **'Portugal'**
+  String get countryNamePT;
+
+  /// No description provided for @countryNameQA.
+  ///
+  /// In en, this message translates to:
+  /// **'Qatar'**
+  String get countryNameQA;
+
+  /// No description provided for @countryNameRO.
+  ///
+  /// In en, this message translates to:
+  /// **'Romania'**
+  String get countryNameRO;
+
+  /// No description provided for @countryNameRU.
+  ///
+  /// In en, this message translates to:
+  /// **'Russia'**
+  String get countryNameRU;
+
+  /// No description provided for @countryNameRW.
+  ///
+  /// In en, this message translates to:
+  /// **'Rwanda'**
+  String get countryNameRW;
+
+  /// No description provided for @countryNameKN.
+  ///
+  /// In en, this message translates to:
+  /// **'Saint Kitts and Nevis'**
+  String get countryNameKN;
+
+  /// No description provided for @countryNameLC.
+  ///
+  /// In en, this message translates to:
+  /// **'Saint Lucia'**
+  String get countryNameLC;
+
+  /// No description provided for @countryNameVC.
+  ///
+  /// In en, this message translates to:
+  /// **'Saint Vincent and the Grenadines'**
+  String get countryNameVC;
+
+  /// No description provided for @countryNameWS.
+  ///
+  /// In en, this message translates to:
+  /// **'Samoa'**
+  String get countryNameWS;
+
+  /// No description provided for @countryNameSM.
+  ///
+  /// In en, this message translates to:
+  /// **'San Marino'**
+  String get countryNameSM;
+
+  /// No description provided for @countryNameST.
+  ///
+  /// In en, this message translates to:
+  /// **'Sao Tome and Principe'**
+  String get countryNameST;
+
+  /// No description provided for @countryNameSA.
+  ///
+  /// In en, this message translates to:
+  /// **'Saudi Arabia'**
+  String get countryNameSA;
+
+  /// No description provided for @countryNameSN.
+  ///
+  /// In en, this message translates to:
+  /// **'Senegal'**
+  String get countryNameSN;
+
+  /// No description provided for @countryNameRS.
+  ///
+  /// In en, this message translates to:
+  /// **'Serbia'**
+  String get countryNameRS;
+
+  /// No description provided for @countryNameSC.
+  ///
+  /// In en, this message translates to:
+  /// **'Seychelles'**
+  String get countryNameSC;
+
+  /// No description provided for @countryNameSL.
+  ///
+  /// In en, this message translates to:
+  /// **'Sierra Leone'**
+  String get countryNameSL;
+
+  /// No description provided for @countryNameSG.
+  ///
+  /// In en, this message translates to:
+  /// **'Singapore'**
+  String get countryNameSG;
+
+  /// No description provided for @countryNameSK.
+  ///
+  /// In en, this message translates to:
+  /// **'Slovakia'**
+  String get countryNameSK;
+
+  /// No description provided for @countryNameSI.
+  ///
+  /// In en, this message translates to:
+  /// **'Slovenia'**
+  String get countryNameSI;
+
+  /// No description provided for @countryNameSB.
+  ///
+  /// In en, this message translates to:
+  /// **'Solomon Islands'**
+  String get countryNameSB;
+
+  /// No description provided for @countryNameSO.
+  ///
+  /// In en, this message translates to:
+  /// **'Somalia'**
+  String get countryNameSO;
+
+  /// No description provided for @countryNameZA.
+  ///
+  /// In en, this message translates to:
+  /// **'South Africa'**
+  String get countryNameZA;
+
+  /// No description provided for @countryNameKR.
+  ///
+  /// In en, this message translates to:
+  /// **'South Korea'**
+  String get countryNameKR;
+
+  /// No description provided for @countryNameSS.
+  ///
+  /// In en, this message translates to:
+  /// **'South Sudan'**
+  String get countryNameSS;
+
+  /// No description provided for @countryNameES.
+  ///
+  /// In en, this message translates to:
+  /// **'Spain'**
+  String get countryNameES;
+
+  /// No description provided for @countryNameLK.
+  ///
+  /// In en, this message translates to:
+  /// **'Sri Lanka'**
+  String get countryNameLK;
+
+  /// No description provided for @countryNameSD.
+  ///
+  /// In en, this message translates to:
+  /// **'Sudan'**
+  String get countryNameSD;
+
+  /// No description provided for @countryNameSR.
+  ///
+  /// In en, this message translates to:
+  /// **'Suriname'**
+  String get countryNameSR;
+
+  /// No description provided for @countryNameSE.
+  ///
+  /// In en, this message translates to:
+  /// **'Sweden'**
+  String get countryNameSE;
+
+  /// No description provided for @countryNameCH.
+  ///
+  /// In en, this message translates to:
+  /// **'Switzerland'**
+  String get countryNameCH;
+
+  /// No description provided for @countryNameSY.
+  ///
+  /// In en, this message translates to:
+  /// **'Syria'**
+  String get countryNameSY;
+
+  /// No description provided for @countryNameTW.
+  ///
+  /// In en, this message translates to:
+  /// **'Taiwan'**
+  String get countryNameTW;
+
+  /// No description provided for @countryNameTJ.
+  ///
+  /// In en, this message translates to:
+  /// **'Tajikistan'**
+  String get countryNameTJ;
+
+  /// No description provided for @countryNameTZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Tanzania'**
+  String get countryNameTZ;
+
+  /// No description provided for @countryNameTH.
+  ///
+  /// In en, this message translates to:
+  /// **'Thailand'**
+  String get countryNameTH;
+
+  /// No description provided for @countryNameTL.
+  ///
+  /// In en, this message translates to:
+  /// **'Timor-Leste'**
+  String get countryNameTL;
+
+  /// No description provided for @countryNameTG.
+  ///
+  /// In en, this message translates to:
+  /// **'Togo'**
+  String get countryNameTG;
+
+  /// No description provided for @countryNameTO.
+  ///
+  /// In en, this message translates to:
+  /// **'Tonga'**
+  String get countryNameTO;
+
+  /// No description provided for @countryNameTT.
+  ///
+  /// In en, this message translates to:
+  /// **'Trinidad and Tobago'**
+  String get countryNameTT;
+
+  /// No description provided for @countryNameTN.
+  ///
+  /// In en, this message translates to:
+  /// **'Tunisia'**
+  String get countryNameTN;
+
+  /// No description provided for @countryNameTR.
+  ///
+  /// In en, this message translates to:
+  /// **'Turkey'**
+  String get countryNameTR;
+
+  /// No description provided for @countryNameTM.
+  ///
+  /// In en, this message translates to:
+  /// **'Turkmenistan'**
+  String get countryNameTM;
+
+  /// No description provided for @countryNameTV.
+  ///
+  /// In en, this message translates to:
+  /// **'Tuvalu'**
+  String get countryNameTV;
+
+  /// No description provided for @countryNameUG.
+  ///
+  /// In en, this message translates to:
+  /// **'Uganda'**
+  String get countryNameUG;
+
+  /// No description provided for @countryNameUA.
+  ///
+  /// In en, this message translates to:
+  /// **'Ukraine'**
+  String get countryNameUA;
+
+  /// No description provided for @countryNameAE.
+  ///
+  /// In en, this message translates to:
+  /// **'United Arab Emirates'**
+  String get countryNameAE;
+
+  /// No description provided for @countryNameGB.
+  ///
+  /// In en, this message translates to:
+  /// **'United Kingdom'**
+  String get countryNameGB;
+
+  /// No description provided for @countryNameUS.
+  ///
+  /// In en, this message translates to:
+  /// **'United States'**
+  String get countryNameUS;
+
+  /// No description provided for @countryNameUY.
+  ///
+  /// In en, this message translates to:
+  /// **'Uruguay'**
+  String get countryNameUY;
+
+  /// No description provided for @countryNameUZ.
+  ///
+  /// In en, this message translates to:
+  /// **'Uzbekistan'**
+  String get countryNameUZ;
+
+  /// No description provided for @countryNameVU.
+  ///
+  /// In en, this message translates to:
+  /// **'Vanuatu'**
+  String get countryNameVU;
+
+  /// No description provided for @countryNameVA.
+  ///
+  /// In en, this message translates to:
+  /// **'Vatican City'**
+  String get countryNameVA;
+
+  /// No description provided for @countryNameVE.
+  ///
+  /// In en, this message translates to:
+  /// **'Venezuela'**
+  String get countryNameVE;
+
+  /// No description provided for @countryNameVN.
+  ///
+  /// In en, this message translates to:
+  /// **'Vietnam'**
+  String get countryNameVN;
+
+  /// No description provided for @countryNameYE.
+  ///
+  /// In en, this message translates to:
+  /// **'Yemen'**
+  String get countryNameYE;
+
+  /// No description provided for @countryNameZM.
+  ///
+  /// In en, this message translates to:
+  /// **'Zambia'**
+  String get countryNameZM;
+
+  /// No description provided for @countryNameZW.
+  ///
+  /// In en, this message translates to:
+  /// **'Zimbabwe'**
+  String get countryNameZW;
+
+  /// No description provided for @countryNameHK.
+  ///
+  /// In en, this message translates to:
+  /// **'Hong Kong'**
+  String get countryNameHK;
+
+  /// No description provided for @countryNamePR.
+  ///
+  /// In en, this message translates to:
+  /// **'Puerto Rico'**
+  String get countryNamePR;
+
+  /// No description provided for @spotsCatRestaurant.
+  ///
+  /// In en, this message translates to:
+  /// **'Restaurant'**
+  String get spotsCatRestaurant;
+
+  /// No description provided for @spotsCatCafe.
+  ///
+  /// In en, this message translates to:
+  /// **'Café'**
+  String get spotsCatCafe;
+
+  /// No description provided for @spotsCatCulturalSite.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural site'**
+  String get spotsCatCulturalSite;
+
+  /// No description provided for @spotsCatMarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Market'**
+  String get spotsCatMarket;
+
+  /// No description provided for @spotsCatViewpoint.
+  ///
+  /// In en, this message translates to:
+  /// **'Viewpoint'**
+  String get spotsCatViewpoint;
+
+  /// No description provided for @spotsCreatedNamed.
+  ///
+  /// In en, this message translates to:
+  /// **'Spot \"{name}\" created!'**
+  String spotsCreatedNamed(String name);
+
+  /// No description provided for @spotsEmptyHint.
+  ///
+  /// In en, this message translates to:
+  /// **'No cultural spots in this city yet. Be the first to add one!'**
+  String get spotsEmptyHint;
+
+  /// No description provided for @spotsEmptyCategoryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'No spots in \"{category}\" in this city yet. Be the first to add one!'**
+  String spotsEmptyCategoryHint(String category);
+
+  /// No description provided for @spotsReviewCountParen.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{(1 review)} other{({count} reviews)}}'**
+  String spotsReviewCountParen(int count);
+
+  /// No description provided for @uexpLangHebrew.
+  ///
+  /// In en, this message translates to:
+  /// **'Hebrew'**
+  String get uexpLangHebrew;
+
+  /// No description provided for @uexpLangThai.
+  ///
+  /// In en, this message translates to:
+  /// **'Thai'**
+  String get uexpLangThai;
+
+  /// No description provided for @uexpLangVietnamese.
+  ///
+  /// In en, this message translates to:
+  /// **'Vietnamese'**
+  String get uexpLangVietnamese;
+
+  /// No description provided for @safetyAcademyModCommunicationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Communication Skills'**
+  String get safetyAcademyModCommunicationTitle;
+
+  /// No description provided for @safetyAcademyModCommunicationDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Build healthy communication habits including consent, boundaries, and active listening.'**
+  String get safetyAcademyModCommunicationDesc;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Active Listening'**
+  String get safetyAcademyLsnActiveListeningTitle;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Active listening is the foundation of meaningful connection. It goes beyond hearing words -- it is about fully engaging with your conversation partner and making them feel valued.'**
+  String get safetyAcademyLsnActiveListeningS0;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask follow-up questions based on what they said, not just what you want to talk about. This shows genuine interest.'**
+  String get safetyAcademyLsnActiveListeningS1;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Active Listening Techniques'**
+  String get safetyAcademyLsnActiveListeningS2;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Give your full attention (put your phone away)'**
+  String get safetyAcademyLsnActiveListeningS2I0;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Use verbal cues (\"I see\", \"That\'s interesting\")'**
+  String get safetyAcademyLsnActiveListeningS2I1;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Reflect back what you heard (\"So you\'re saying...\")'**
+  String get safetyAcademyLsnActiveListeningS2I2;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask open-ended follow-up questions'**
+  String get safetyAcademyLsnActiveListeningS2I3;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoid interrupting or planning your response while they talk'**
+  String get safetyAcademyLsnActiveListeningS2I4;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningS3.
+  ///
+  /// In en, this message translates to:
+  /// **'In text conversations, active listening means reading messages carefully, responding to what was actually said, and asking thoughtful questions rather than redirecting every topic to yourself.'**
+  String get safetyAcademyLsnActiveListeningS3;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your date shares a story about their recent trip. What is the best active listening response?'**
+  String get safetyAcademyLsnActiveListeningQ0;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'\"Cool. So anyway, I went to...\"'**
+  String get safetyAcademyLsnActiveListeningQ0O0;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'\"That sounds amazing! What was the highlight of the trip?\"'**
+  String get safetyAcademyLsnActiveListeningQ0O1;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'\"I have been there too, let me tell you about it.\"'**
+  String get safetyAcademyLsnActiveListeningQ0O2;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'\"Nice.\"'**
+  String get safetyAcademyLsnActiveListeningQ0O3;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Asking a follow-up question about their experience shows genuine interest and keeps the conversation flowing.'**
+  String get safetyAcademyLsnActiveListeningQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'What should you avoid during active listening?'**
+  String get safetyAcademyLsnActiveListeningQ1;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Making eye contact'**
+  String get safetyAcademyLsnActiveListeningQ1O0;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Planning your response while the other person is still talking'**
+  String get safetyAcademyLsnActiveListeningQ1O1;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Nodding occasionally'**
+  String get safetyAcademyLsnActiveListeningQ1O2;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Asking follow-up questions'**
+  String get safetyAcademyLsnActiveListeningQ1O3;
+
+  /// No description provided for @safetyAcademyLsnActiveListeningQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'If you are planning your next response, you are not truly listening. Focus on understanding first, then respond.'**
+  String get safetyAcademyLsnActiveListeningQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnBoundariesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Setting Boundaries'**
+  String get safetyAcademyLsnBoundariesTitle;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Boundaries are the guidelines you set for how you want to be treated. They are essential for healthy relationships and protect your emotional, physical, and mental well-being.'**
+  String get safetyAcademyLsnBoundariesS0;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS1.
+  ///
+  /// In en, this message translates to:
+  /// **'State boundaries clearly and early. For example: \"I prefer to get to know someone through chat before meeting in person\" or \"I am not comfortable sharing photos right now.\"'**
+  String get safetyAcademyLsnBoundariesS1;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS2.
+  ///
+  /// In en, this message translates to:
+  /// **'If someone repeatedly pushes against a boundary you have set, this is a serious red flag regardless of their excuses.'**
+  String get safetyAcademyLsnBoundariesS2;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Healthy Boundary Examples'**
+  String get safetyAcademyLsnBoundariesS3;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS3I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Deciding when you are ready to share your phone number'**
+  String get safetyAcademyLsnBoundariesS3I0;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS3I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Setting limits on how late someone can message you'**
+  String get safetyAcademyLsnBoundariesS3I1;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS3I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Being clear about physical comfort levels on dates'**
+  String get safetyAcademyLsnBoundariesS3I2;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS3I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Saying no to plans that feel rushed or uncomfortable'**
+  String get safetyAcademyLsnBoundariesS3I3;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS3I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Taking breaks from conversation when you need space'**
+  String get safetyAcademyLsnBoundariesS3I4;
+
+  /// No description provided for @safetyAcademyLsnBoundariesS4.
+  ///
+  /// In en, this message translates to:
+  /// **'Remember: setting boundaries is not being difficult. It is self-respect. A partner who values you will appreciate and honor your boundaries.'**
+  String get safetyAcademyLsnBoundariesS4;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'You tell your match you are not comfortable sharing your number yet, and they keep asking. What does this indicate?'**
+  String get safetyAcademyLsnBoundariesQ0;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'They are really interested in you'**
+  String get safetyAcademyLsnBoundariesQ0O0;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'They are just eager to move the conversation'**
+  String get safetyAcademyLsnBoundariesQ0O1;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'They are not respecting your stated boundary'**
+  String get safetyAcademyLsnBoundariesQ0O2;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'It is normal dating behavior'**
+  String get safetyAcademyLsnBoundariesQ0O3;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeatedly pushing against a clearly stated boundary is disrespectful and a red flag, regardless of the reason given.'**
+  String get safetyAcademyLsnBoundariesQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'When is the best time to communicate a boundary?'**
+  String get safetyAcademyLsnBoundariesQ1;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'After it has been crossed multiple times'**
+  String get safetyAcademyLsnBoundariesQ1O0;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Clearly and early, before it becomes an issue'**
+  String get safetyAcademyLsnBoundariesQ1O1;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Only if the other person asks'**
+  String get safetyAcademyLsnBoundariesQ1O2;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Boundaries are not necessary in dating'**
+  String get safetyAcademyLsnBoundariesQ1O3;
+
+  /// No description provided for @safetyAcademyLsnBoundariesQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Stating boundaries early and clearly prevents misunderstandings and sets the tone for mutual respect.'**
+  String get safetyAcademyLsnBoundariesQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnConsentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Understanding Consent'**
+  String get safetyAcademyLsnConsentTitle;
+
+  /// No description provided for @safetyAcademyLsnConsentS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Consent is a clear, enthusiastic, and ongoing agreement. It applies to every aspect of dating -- from sharing personal information to physical intimacy.'**
+  String get safetyAcademyLsnConsentS0;
+
+  /// No description provided for @safetyAcademyLsnConsentS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Consent is not just about physical contact. Sharing someone\'s photos, forwarding their messages, or sharing their personal details without permission also violates consent.'**
+  String get safetyAcademyLsnConsentS1;
+
+  /// No description provided for @safetyAcademyLsnConsentS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Key Principles of Consent'**
+  String get safetyAcademyLsnConsentS2;
+
+  /// No description provided for @safetyAcademyLsnConsentS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Freely given -- not pressured, coerced, or manipulated'**
+  String get safetyAcademyLsnConsentS2I0;
+
+  /// No description provided for @safetyAcademyLsnConsentS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Reversible -- anyone can change their mind at any time'**
+  String get safetyAcademyLsnConsentS2I1;
+
+  /// No description provided for @safetyAcademyLsnConsentS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Informed -- based on honest, complete information'**
+  String get safetyAcademyLsnConsentS2I2;
+
+  /// No description provided for @safetyAcademyLsnConsentS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Enthusiastic -- look for active \"yes\", not just absence of \"no\"'**
+  String get safetyAcademyLsnConsentS2I3;
+
+  /// No description provided for @safetyAcademyLsnConsentS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Specific -- consent to one thing does not mean consent to everything'**
+  String get safetyAcademyLsnConsentS2I4;
+
+  /// No description provided for @safetyAcademyLsnConsentS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Silence or a lack of \"no\" does not equal consent. Always look for clear, positive agreement.'**
+  String get safetyAcademyLsnConsentS3;
+
+  /// No description provided for @safetyAcademyLsnConsentS4.
+  ///
+  /// In en, this message translates to:
+  /// **'Asking for consent is not awkward -- it shows maturity and respect. Simple check-ins like \"Are you comfortable with this?\" or \"Would you like to...?\" make a big difference.'**
+  String get safetyAcademyLsnConsentS4;
+
+  /// No description provided for @safetyAcademyLsnConsentQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Which statement best describes consent?'**
+  String get safetyAcademyLsnConsentQ0;
+
+  /// No description provided for @safetyAcademyLsnConsentQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'The absence of \"no\"'**
+  String get safetyAcademyLsnConsentQ0O0;
+
+  /// No description provided for @safetyAcademyLsnConsentQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'A clear, enthusiastic, and ongoing agreement'**
+  String get safetyAcademyLsnConsentQ0O1;
+
+  /// No description provided for @safetyAcademyLsnConsentQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Something only needed for physical contact'**
+  String get safetyAcademyLsnConsentQ0O2;
+
+  /// No description provided for @safetyAcademyLsnConsentQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Agreement given once that covers all future interactions'**
+  String get safetyAcademyLsnConsentQ0O3;
+
+  /// No description provided for @safetyAcademyLsnConsentQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Consent must be clear, enthusiastic, ongoing, and can be revoked at any time. It applies to all interactions.'**
+  String get safetyAcademyLsnConsentQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnConsentQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'Your date agreed to come to your place but seems uncomfortable after arriving. What should you do?'**
+  String get safetyAcademyLsnConsentQ1;
+
+  /// No description provided for @safetyAcademyLsnConsentQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'They agreed already, so continue as planned'**
+  String get safetyAcademyLsnConsentQ1O0;
+
+  /// No description provided for @safetyAcademyLsnConsentQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Check in with them and offer to go somewhere else'**
+  String get safetyAcademyLsnConsentQ1O1;
+
+  /// No description provided for @safetyAcademyLsnConsentQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ignore the discomfort -- it is probably nerves'**
+  String get safetyAcademyLsnConsentQ1O2;
+
+  /// No description provided for @safetyAcademyLsnConsentQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell them they should not have agreed if they did not want to come'**
+  String get safetyAcademyLsnConsentQ1O3;
+
+  /// No description provided for @safetyAcademyLsnConsentQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Consent is reversible. If someone seems uncomfortable, check in with them. Their well-being is more important than plans.'**
+  String get safetyAcademyLsnConsentQ1Exp;
+
+  /// No description provided for @safetyAcademyModCulturalSensitivityTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural Sensitivity'**
+  String get safetyAcademyModCulturalSensitivityTitle;
+
+  /// No description provided for @safetyAcademyModCulturalSensitivityDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Navigate cross-cultural dating with respect, curiosity, and awareness.'**
+  String get safetyAcademyModCulturalSensitivityDesc;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cross-Cultural Dating Do\'s'**
+  String get safetyAcademyLsnCulturalDosTitle;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Dating someone from a different cultural background can be one of the most enriching experiences. Approach it with genuine curiosity, respect, and a willingness to learn.'**
+  String get safetyAcademyLsnCulturalDosS0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask open-ended questions about their culture with genuine curiosity, not as a quiz. \"What traditions are important to your family?\" is much better than \"Do your people really do X?\"'**
+  String get safetyAcademyLsnCulturalDosS1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Do\'s for Cross-Cultural Dating'**
+  String get safetyAcademyLsnCulturalDosS2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Research basic cultural customs before a date'**
+  String get safetyAcademyLsnCulturalDosS2I0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Show genuine interest in their background and traditions'**
+  String get safetyAcademyLsnCulturalDosS2I1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Be open to trying new foods, activities, and experiences'**
+  String get safetyAcademyLsnCulturalDosS2I2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Respect family dynamics that may differ from yours'**
+  String get safetyAcademyLsnCulturalDosS2I3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn a few words or phrases in their language'**
+  String get safetyAcademyLsnCulturalDosS2I4;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS2I5.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask how they prefer to be addressed or introduced'**
+  String get safetyAcademyLsnCulturalDosS2I5;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Remember that every person is an individual first. Cultural awareness is a starting point, but get to know the person beyond stereotypes.'**
+  String get safetyAcademyLsnCulturalDosS3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the best way to learn about your date\'s culture?'**
+  String get safetyAcademyLsnCulturalDosQ0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Make assumptions based on what you have seen in movies'**
+  String get safetyAcademyLsnCulturalDosQ0O0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask thoughtful, open-ended questions with genuine curiosity'**
+  String get safetyAcademyLsnCulturalDosQ0O1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz them on cultural facts you read online'**
+  String get safetyAcademyLsnCulturalDosQ0O2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoid the topic entirely to prevent offense'**
+  String get safetyAcademyLsnCulturalDosQ0O3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Genuine, respectful curiosity is the best approach. Let them share what is meaningful to them.'**
+  String get safetyAcademyLsnCulturalDosQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'Your date mentions a family tradition you do not understand. What should you do?'**
+  String get safetyAcademyLsnCulturalDosQ1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Nod along and pretend you understand'**
+  String get safetyAcademyLsnCulturalDosQ1O0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask them to explain more about it and why it matters'**
+  String get safetyAcademyLsnCulturalDosQ1O1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell them your traditions are different'**
+  String get safetyAcademyLsnCulturalDosQ1O2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Change the subject'**
+  String get safetyAcademyLsnCulturalDosQ1O3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDosQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Asking them to share more shows respect and genuine interest in their world.'**
+  String get safetyAcademyLsnCulturalDosQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cross-Cultural Dating Don\'ts'**
+  String get safetyAcademyLsnCulturalDontsTitle;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Well-intentioned but uninformed comments can feel hurtful or dismissive. Understanding common pitfalls helps you navigate cross-cultural dating with grace.'**
+  String get safetyAcademyLsnCulturalDontsS0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Never reduce someone to their ethnicity or nationality. Comments like \"I\'ve always wanted to date a [nationality]\" or \"You\'re pretty for a [ethnicity]\" are hurtful, not complimentary.'**
+  String get safetyAcademyLsnCulturalDontsS1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'ts for Cross-Cultural Dating'**
+  String get safetyAcademyLsnCulturalDontsS2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not fetishize or exoticize their culture or appearance'**
+  String get safetyAcademyLsnCulturalDontsS2I0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not assume they represent their entire culture'**
+  String get safetyAcademyLsnCulturalDontsS2I1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not make jokes about their accent or language'**
+  String get safetyAcademyLsnCulturalDontsS2I2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not pressure them to explain or defend cultural practices'**
+  String get safetyAcademyLsnCulturalDontsS2I3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not compare them to stereotypes or media portrayals'**
+  String get safetyAcademyLsnCulturalDontsS2I4;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS2I5.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not dismiss cultural differences as unimportant'**
+  String get safetyAcademyLsnCulturalDontsS2I5;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsS3.
+  ///
+  /// In en, this message translates to:
+  /// **'If you make a cultural misstep, apologize sincerely, learn from it, and move on. Do not over-apologize to the point of making it about your feelings.'**
+  String get safetyAcademyLsnCulturalDontsS3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Which comment is culturally insensitive?'**
+  String get safetyAcademyLsnCulturalDontsQ0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'\"I would love to try the food from your country.\"'**
+  String get safetyAcademyLsnCulturalDontsQ0O0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'\"You are so exotic looking.\"'**
+  String get safetyAcademyLsnCulturalDontsQ0O1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'\"What language do you speak at home?\"'**
+  String get safetyAcademyLsnCulturalDontsQ0O2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'\"Tell me about a holiday your family celebrates.\"'**
+  String get safetyAcademyLsnCulturalDontsQ0O3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Calling someone \"exotic\" reduces them to their appearance and cultural background. It is objectifying, not complimentary.'**
+  String get safetyAcademyLsnCulturalDontsQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'You accidentally say something culturally insensitive. What is the best response?'**
+  String get safetyAcademyLsnCulturalDontsQ1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Pretend it did not happen'**
+  String get safetyAcademyLsnCulturalDontsQ1O0;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Apologize sincerely, learn from it, and move on'**
+  String get safetyAcademyLsnCulturalDontsQ1O1;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Explain that you did not mean it that way'**
+  String get safetyAcademyLsnCulturalDontsQ1O2;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Over-apologize and keep bringing it up'**
+  String get safetyAcademyLsnCulturalDontsQ1O3;
+
+  /// No description provided for @safetyAcademyLsnCulturalDontsQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'A sincere, brief apology followed by genuine effort to do better is the most mature response.'**
+  String get safetyAcademyLsnCulturalDontsQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Communication Across Cultures'**
+  String get safetyAcademyLsnCulturalCommunicationTitle;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Communication styles vary significantly across cultures. What feels direct and honest in one culture may come across as rude in another. Understanding these differences prevents misunderstandings.'**
+  String get safetyAcademyLsnCulturalCommunicationS0;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS1.
+  ///
+  /// In en, this message translates to:
+  /// **'If something your date says or does confuses you, assume positive intent and ask for clarification rather than jumping to conclusions.'**
+  String get safetyAcademyLsnCulturalCommunicationS1;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural Communication Differences to Be Aware Of'**
+  String get safetyAcademyLsnCulturalCommunicationS2;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Direct vs. indirect communication styles'**
+  String get safetyAcademyLsnCulturalCommunicationS2I0;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal space and physical touch norms'**
+  String get safetyAcademyLsnCulturalCommunicationS2I1;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Eye contact expectations (some cultures find direct eye contact disrespectful)'**
+  String get safetyAcademyLsnCulturalCommunicationS2I2;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Attitudes toward punctuality and time'**
+  String get safetyAcademyLsnCulturalCommunicationS2I3;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift-giving customs and expectations'**
+  String get safetyAcademyLsnCulturalCommunicationS2I4;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS2I5.
+  ///
+  /// In en, this message translates to:
+  /// **'The role of humor and what topics are off-limits'**
+  String get safetyAcademyLsnCulturalCommunicationS2I5;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationS3.
+  ///
+  /// In en, this message translates to:
+  /// **'When in doubt, communicate openly. A simple \"I want to make sure I understand you correctly\" goes a long way in bridging cultural gaps.'**
+  String get safetyAcademyLsnCulturalCommunicationS3;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your date avoids direct eye contact. What should you think?'**
+  String get safetyAcademyLsnCulturalCommunicationQ0;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'They are not interested in you'**
+  String get safetyAcademyLsnCulturalCommunicationQ0O0;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'They are being dishonest'**
+  String get safetyAcademyLsnCulturalCommunicationQ0O1;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'It may be a cultural norm -- do not assume negative intent'**
+  String get safetyAcademyLsnCulturalCommunicationQ0O2;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'They are shy and need more encouragement'**
+  String get safetyAcademyLsnCulturalCommunicationQ0O3;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'In many cultures, avoiding direct eye contact is a sign of respect, not disinterest or dishonesty.'**
+  String get safetyAcademyLsnCulturalCommunicationQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the best approach when cultural communication differences cause confusion?'**
+  String get safetyAcademyLsnCulturalCommunicationQ1;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Assume the worst'**
+  String get safetyAcademyLsnCulturalCommunicationQ1O0;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ignore it and hope it resolves'**
+  String get safetyAcademyLsnCulturalCommunicationQ1O1;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for clarification with an open mind'**
+  String get safetyAcademyLsnCulturalCommunicationQ1O2;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell them to communicate more like you do'**
+  String get safetyAcademyLsnCulturalCommunicationQ1O3;
+
+  /// No description provided for @safetyAcademyLsnCulturalCommunicationQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Open, non-judgmental communication is the best way to navigate cultural differences.'**
+  String get safetyAcademyLsnCulturalCommunicationQ1Exp;
+
+  /// No description provided for @safetyAcademyModOnlineSafetyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Online Safety 101'**
+  String get safetyAcademyModOnlineSafetyTitle;
+
+  /// No description provided for @safetyAcademyModOnlineSafetyDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn to protect your identity and spot potential scams while dating online.'**
+  String get safetyAcademyModOnlineSafetyDesc;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Protection'**
+  String get safetyAcademyLsnProfileProtectionTitle;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your dating profile is your first impression, but it can also expose personal information if you are not careful. Learning to share the right amount keeps you safe while still showing your personality.'**
+  String get safetyAcademyLsnProfileProtectionS0;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Use a unique photo that is not on your other social media profiles. Reverse image searches can link accounts together.'**
+  String get safetyAcademyLsnProfileProtectionS1;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Never include your full name, workplace, home address, or phone number in your bio.'**
+  String get safetyAcademyLsnProfileProtectionS2;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Safety Checklist'**
+  String get safetyAcademyLsnProfileProtectionS3;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS3I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove or crop out identifiable landmarks near your home'**
+  String get safetyAcademyLsnProfileProtectionS3I0;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS3I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Use a first name or nickname only'**
+  String get safetyAcademyLsnProfileProtectionS3I1;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS3I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Disable location metadata on uploaded photos'**
+  String get safetyAcademyLsnProfileProtectionS3I2;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS3I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoid photos in work uniforms or with visible ID badges'**
+  String get safetyAcademyLsnProfileProtectionS3I3;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS3I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your profile from a stranger\'s perspective'**
+  String get safetyAcademyLsnProfileProtectionS3I4;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionS4.
+  ///
+  /// In en, this message translates to:
+  /// **'A well-crafted profile balances openness with privacy. Share your interests and values, but save specifics like your daily routine or home neighborhood for later conversations.'**
+  String get safetyAcademyLsnProfileProtectionS4;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Which of the following is safe to include in your dating profile?'**
+  String get safetyAcademyLsnProfileProtectionQ0;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your home address'**
+  String get safetyAcademyLsnProfileProtectionQ0O0;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Your favorite hobbies'**
+  String get safetyAcademyLsnProfileProtectionQ0O1;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Your workplace name and department'**
+  String get safetyAcademyLsnProfileProtectionQ0O2;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Your phone number'**
+  String get safetyAcademyLsnProfileProtectionQ0O3;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharing hobbies is great for conversation starters without revealing personal details that could be used to locate you.'**
+  String get safetyAcademyLsnProfileProtectionQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'Why should you use unique photos on your dating profile?'**
+  String get safetyAcademyLsnProfileProtectionQ1;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'To look more attractive'**
+  String get safetyAcademyLsnProfileProtectionQ1O0;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Because dating apps compress images'**
+  String get safetyAcademyLsnProfileProtectionQ1O1;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'To prevent reverse image searches linking to your other accounts'**
+  String get safetyAcademyLsnProfileProtectionQ1O2;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Unique photos get more likes'**
+  String get safetyAcademyLsnProfileProtectionQ1O3;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Reverse image search tools can link your dating profile to social media, blogs, or professional pages, revealing your full identity.'**
+  String get safetyAcademyLsnProfileProtectionQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ2.
+  ///
+  /// In en, this message translates to:
+  /// **'What should you check before uploading a photo?'**
+  String get safetyAcademyLsnProfileProtectionQ2;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ2O0.
+  ///
+  /// In en, this message translates to:
+  /// **'That it has a nice filter'**
+  String get safetyAcademyLsnProfileProtectionQ2O0;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ2O1.
+  ///
+  /// In en, this message translates to:
+  /// **'That location metadata is removed and no identifiable landmarks are visible'**
+  String get safetyAcademyLsnProfileProtectionQ2O1;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ2O2.
+  ///
+  /// In en, this message translates to:
+  /// **'That it was taken recently'**
+  String get safetyAcademyLsnProfileProtectionQ2O2;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ2O3.
+  ///
+  /// In en, this message translates to:
+  /// **'That it is a selfie'**
+  String get safetyAcademyLsnProfileProtectionQ2O3;
+
+  /// No description provided for @safetyAcademyLsnProfileProtectionQ2Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo metadata (EXIF data) can contain GPS coordinates. Landmarks like street signs or building names can also reveal your location.'**
+  String get safetyAcademyLsnProfileProtectionQ2Exp;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Scam Recognition'**
+  String get safetyAcademyLsnScamRecognitionTitle;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Romance scams cost victims billions worldwide each year. Scammers build emotional connections quickly and then exploit them for money or personal data. Knowing the signs can protect you.'**
+  String get safetyAcademyLsnScamRecognitionS0;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS1.
+  ///
+  /// In en, this message translates to:
+  /// **'If someone asks for money, gift cards, cryptocurrency, or financial help early in a relationship -- no matter how compelling the story -- it is almost certainly a scam.'**
+  String get safetyAcademyLsnScamRecognitionS1;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Do a video call early on. Scammers avoid live video because it exposes fake identities. If someone repeatedly avoids video, be cautious.'**
+  String get safetyAcademyLsnScamRecognitionS2;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Common Scam Red Flags'**
+  String get safetyAcademyLsnScamRecognitionS3;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS3I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile seems too perfect (model-quality photos, dream career)'**
+  String get safetyAcademyLsnScamRecognitionS3I0;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS3I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Claims to be overseas military, oil rig worker, or international business person'**
+  String get safetyAcademyLsnScamRecognitionS3I1;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS3I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Falls in love unusually fast (\"love bombing\")'**
+  String get safetyAcademyLsnScamRecognitionS3I2;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS3I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoids video calls or meeting in person'**
+  String get safetyAcademyLsnScamRecognitionS3I3;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS3I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Requests money for emergencies, travel, or medical bills'**
+  String get safetyAcademyLsnScamRecognitionS3I4;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS3I5.
+  ///
+  /// In en, this message translates to:
+  /// **'Asks you to move conversation to another platform quickly'**
+  String get safetyAcademyLsnScamRecognitionS3I5;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionS4.
+  ///
+  /// In en, this message translates to:
+  /// **'If you suspect a scam, stop communication immediately. Report the profile to the app and consider filing a report with your local authorities.'**
+  String get safetyAcademyLsnScamRecognitionS4;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone you matched with a week ago says they love you and asks for money to visit you. What should you do?'**
+  String get safetyAcademyLsnScamRecognitionQ0;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Send the money -- they seem genuine'**
+  String get safetyAcademyLsnScamRecognitionQ0O0;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for more details about why they need money'**
+  String get safetyAcademyLsnScamRecognitionQ0O1;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Recognize this as a classic romance scam pattern and report them'**
+  String get safetyAcademyLsnScamRecognitionQ0O2;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Offer to buy their plane ticket directly'**
+  String get safetyAcademyLsnScamRecognitionQ0O3;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Declaring love very quickly and then requesting money is the hallmark pattern of romance scams. Report and block.'**
+  String get safetyAcademyLsnScamRecognitionQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'Which profession is commonly used as a cover story by scammers?'**
+  String get safetyAcademyLsnScamRecognitionQ1;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Local teacher'**
+  String get safetyAcademyLsnScamRecognitionQ1O0;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Overseas military deployment'**
+  String get safetyAcademyLsnScamRecognitionQ1O1;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Neighborhood barista'**
+  String get safetyAcademyLsnScamRecognitionQ1O2;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Nearby office worker'**
+  String get safetyAcademyLsnScamRecognitionQ1O3;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Scammers often claim military deployment, offshore work, or international business to explain why they cannot meet in person or video call.'**
+  String get safetyAcademyLsnScamRecognitionQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ2.
+  ///
+  /// In en, this message translates to:
+  /// **'What is a good early step to verify someone is real?'**
+  String get safetyAcademyLsnScamRecognitionQ2;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ2O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for their home address'**
+  String get safetyAcademyLsnScamRecognitionQ2O0;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ2O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Request a video call'**
+  String get safetyAcademyLsnScamRecognitionQ2O1;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ2O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Send them money to test their response'**
+  String get safetyAcademyLsnScamRecognitionQ2O2;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ2O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for them on all social media platforms'**
+  String get safetyAcademyLsnScamRecognitionQ2O3;
+
+  /// No description provided for @safetyAcademyLsnScamRecognitionQ2Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'A video call is one of the simplest ways to verify someone is who they claim to be. Scammers typically avoid live video at all costs.'**
+  String get safetyAcademyLsnScamRecognitionQ2Exp;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Behavioral Red Flags'**
+  String get safetyAcademyLsnRedFlagsTitle;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Beyond scams, there are behavioral patterns that can indicate controlling, manipulative, or potentially dangerous individuals. Learning to spot these early can save you from harmful situations.'**
+  String get safetyAcademyLsnRedFlagsS0;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone who pressures you to share intimate photos, meet immediately, or isolate from friends is displaying controlling behavior.'**
+  String get safetyAcademyLsnRedFlagsS1;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Behavioral Red Flags'**
+  String get safetyAcademyLsnRedFlagsS2;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Excessive jealousy or possessiveness before even meeting'**
+  String get safetyAcademyLsnRedFlagsS2I0;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Pressuring for personal information or intimate content'**
+  String get safetyAcademyLsnRedFlagsS2I1;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting angry when you don\'t respond immediately'**
+  String get safetyAcademyLsnRedFlagsS2I2;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Disrespecting your stated boundaries'**
+  String get safetyAcademyLsnRedFlagsS2I3;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Making you feel guilty for spending time with others'**
+  String get safetyAcademyLsnRedFlagsS2I4;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS2I5.
+  ///
+  /// In en, this message translates to:
+  /// **'Inconsistent stories about themselves'**
+  String get safetyAcademyLsnRedFlagsS2I5;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Trust your gut. If a conversation makes you uncomfortable, you do not owe anyone an explanation. It is always okay to stop responding, block, or report.'**
+  String get safetyAcademyLsnRedFlagsS3;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsS4.
+  ///
+  /// In en, this message translates to:
+  /// **'Healthy connections are built on mutual respect. Someone who truly cares about you will respect your pace, your boundaries, and your autonomy.'**
+  String get safetyAcademyLsnRedFlagsS4;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your match gets upset when you take an hour to reply. What does this indicate?'**
+  String get safetyAcademyLsnRedFlagsQ0;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'They really like you'**
+  String get safetyAcademyLsnRedFlagsQ0O0;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'They are enthusiastic about the conversation'**
+  String get safetyAcademyLsnRedFlagsQ0O1;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Potentially controlling behavior'**
+  String get safetyAcademyLsnRedFlagsQ0O2;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'They are just anxious'**
+  String get safetyAcademyLsnRedFlagsQ0O3;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting angry about response times before you have even met is a sign of controlling behavior. Everyone is entitled to their own schedule.'**
+  String get safetyAcademyLsnRedFlagsQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the best response when someone pressures you for intimate photos?'**
+  String get safetyAcademyLsnRedFlagsQ1;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Send them to keep the peace'**
+  String get safetyAcademyLsnRedFlagsQ1O0;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Firmly decline, and if they persist, block and report them'**
+  String get safetyAcademyLsnRedFlagsQ1O1;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask them to send theirs first'**
+  String get safetyAcademyLsnRedFlagsQ1O2;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Promise to send them later'**
+  String get safetyAcademyLsnRedFlagsQ1O3;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'You should never feel pressured to share intimate content. A respectful person will accept your decision without pushing.'**
+  String get safetyAcademyLsnRedFlagsQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ2.
+  ///
+  /// In en, this message translates to:
+  /// **'Which is a healthy sign in early conversations?'**
+  String get safetyAcademyLsnRedFlagsQ2;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ2O0.
+  ///
+  /// In en, this message translates to:
+  /// **'They want to know your exact daily schedule'**
+  String get safetyAcademyLsnRedFlagsQ2O0;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ2O1.
+  ///
+  /// In en, this message translates to:
+  /// **'They respect your pace and boundaries'**
+  String get safetyAcademyLsnRedFlagsQ2O1;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ2O2.
+  ///
+  /// In en, this message translates to:
+  /// **'They say \"I love you\" within the first few days'**
+  String get safetyAcademyLsnRedFlagsQ2O2;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ2O3.
+  ///
+  /// In en, this message translates to:
+  /// **'They ask you to stop talking to other people on the app'**
+  String get safetyAcademyLsnRedFlagsQ2O3;
+
+  /// No description provided for @safetyAcademyLsnRedFlagsQ2Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Respect for pace and boundaries is the foundation of a healthy connection. Everything else in this list is a potential red flag.'**
+  String get safetyAcademyLsnRedFlagsQ2Exp;
+
+  /// No description provided for @safetyAcademyModEmotionalIntelligenceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Emotional Intelligence'**
+  String get safetyAcademyModEmotionalIntelligenceTitle;
+
+  /// No description provided for @safetyAcademyModEmotionalIntelligenceDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Understand attachment styles, love languages, and build emotional awareness.'**
+  String get safetyAcademyModEmotionalIntelligenceDesc;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Attachment Styles'**
+  String get safetyAcademyLsnAttachmentStylesTitle;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Attachment theory explains how our early relationships shape the way we connect with romantic partners. Understanding your attachment style can help you build healthier relationships.'**
+  String get safetyAcademyLsnAttachmentStylesS0;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS1.
+  ///
+  /// In en, this message translates to:
+  /// **'The four main attachment styles are: Secure, Anxious, Avoidant, and Disorganized. Most people are a mix, and styles can change with awareness and effort.'**
+  String get safetyAcademyLsnAttachmentStylesS1;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS2.
+  ///
+  /// In en, this message translates to:
+  /// **'The Four Attachment Styles'**
+  String get safetyAcademyLsnAttachmentStylesS2;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Secure: Comfortable with closeness, trusting, communicative'**
+  String get safetyAcademyLsnAttachmentStylesS2I0;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Anxious: Craves closeness but fears rejection, may need extra reassurance'**
+  String get safetyAcademyLsnAttachmentStylesS2I1;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoidant: Values independence highly, may pull away when things get close'**
+  String get safetyAcademyLsnAttachmentStylesS2I2;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Disorganized: Mix of anxious and avoidant, often from difficult early experiences'**
+  String get safetyAcademyLsnAttachmentStylesS2I3;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Knowing your style helps you understand your reactions. If you tend toward anxious attachment, you might recognize that your urge to text repeatedly comes from fear, not genuine need. If avoidant, you might notice your tendency to shut down when emotions run high.'**
+  String get safetyAcademyLsnAttachmentStylesS3;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesS4.
+  ///
+  /// In en, this message translates to:
+  /// **'Understanding your partner\'s attachment style helps you respond with empathy rather than frustration. An avoidant partner pulling away is not rejection -- it is their coping mechanism.'**
+  String get safetyAcademyLsnAttachmentStylesS4;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your partner needs a lot of reassurance and gets anxious when you do not respond quickly. Which attachment style might this reflect?'**
+  String get safetyAcademyLsnAttachmentStylesQ0;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Secure'**
+  String get safetyAcademyLsnAttachmentStylesQ0O0;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Anxious'**
+  String get safetyAcademyLsnAttachmentStylesQ0O1;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoidant'**
+  String get safetyAcademyLsnAttachmentStylesQ0O2;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Disorganized'**
+  String get safetyAcademyLsnAttachmentStylesQ0O3;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Anxious attachment is characterized by a strong desire for closeness and fear of rejection, often leading to a need for frequent reassurance.'**
+  String get safetyAcademyLsnAttachmentStylesQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the healthiest response to recognizing your attachment patterns?'**
+  String get safetyAcademyLsnAttachmentStylesQ1;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept that they cannot change'**
+  String get safetyAcademyLsnAttachmentStylesQ1O0;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Blame your parents for your style'**
+  String get safetyAcademyLsnAttachmentStylesQ1O1;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Use awareness to communicate better and work toward secure attachment'**
+  String get safetyAcademyLsnAttachmentStylesQ1O2;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Only date people with the same style'**
+  String get safetyAcademyLsnAttachmentStylesQ1O3;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Attachment styles can evolve with self-awareness, communication, and sometimes professional support.'**
+  String get safetyAcademyLsnAttachmentStylesQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ2.
+  ///
+  /// In en, this message translates to:
+  /// **'Someone with an avoidant attachment style might:'**
+  String get safetyAcademyLsnAttachmentStylesQ2;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ2O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Send multiple texts if you do not reply quickly'**
+  String get safetyAcademyLsnAttachmentStylesQ2O0;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ2O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Pull away or shut down when the relationship gets emotionally close'**
+  String get safetyAcademyLsnAttachmentStylesQ2O1;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ2O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Always want to spend every moment together'**
+  String get safetyAcademyLsnAttachmentStylesQ2O2;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ2O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Be very open about their feelings from the start'**
+  String get safetyAcademyLsnAttachmentStylesQ2O3;
+
+  /// No description provided for @safetyAcademyLsnAttachmentStylesQ2Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoidant attachment often manifests as pulling away when emotional intimacy increases, as a self-protection mechanism.'**
+  String get safetyAcademyLsnAttachmentStylesQ2Exp;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Love Languages'**
+  String get safetyAcademyLsnLoveLanguagesTitle;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS0.
+  ///
+  /// In en, this message translates to:
+  /// **'The concept of love languages, popularized by Dr. Gary Chapman, suggests that people express and receive love in five primary ways. Understanding yours and your partner\'s can transform your relationship.'**
+  String get safetyAcademyLsnLoveLanguagesS0;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS1.
+  ///
+  /// In en, this message translates to:
+  /// **'The Five Love Languages'**
+  String get safetyAcademyLsnLoveLanguagesS1;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS1I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Words of Affirmation: Verbal compliments, encouragement, and expressions of love'**
+  String get safetyAcademyLsnLoveLanguagesS1I0;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS1I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Quality Time: Undivided attention and presence'**
+  String get safetyAcademyLsnLoveLanguagesS1I1;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS1I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Receiving Gifts: Thoughtful tokens of affection (not about cost)'**
+  String get safetyAcademyLsnLoveLanguagesS1I2;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS1I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Acts of Service: Actions that make life easier or show care'**
+  String get safetyAcademyLsnLoveLanguagesS1I3;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS1I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Physical Touch: Hugs, holding hands, and other physical affection'**
+  String get safetyAcademyLsnLoveLanguagesS1I4;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay attention to how your date expresses affection -- that is likely their love language. If they always compliment you, they probably value words of affirmation.'**
+  String get safetyAcademyLsnLoveLanguagesS2;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Mismatched love languages are common and manageable. The key is communication: tell your partner what makes you feel loved, and ask them the same question.'**
+  String get safetyAcademyLsnLoveLanguagesS3;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your partner always makes time for you and puts their phone away during conversations. Their love language is likely:'**
+  String get safetyAcademyLsnLoveLanguagesQ0;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Words of Affirmation'**
+  String get safetyAcademyLsnLoveLanguagesQ0O0;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Quality Time'**
+  String get safetyAcademyLsnLoveLanguagesQ0O1;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Receiving Gifts'**
+  String get safetyAcademyLsnLoveLanguagesQ0O2;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Physical Touch'**
+  String get safetyAcademyLsnLoveLanguagesQ0O3;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Giving undivided attention and prioritizing presence is the hallmark of Quality Time as a love language.'**
+  String get safetyAcademyLsnLoveLanguagesQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'You value words of affirmation but your partner shows love through acts of service. What should you do?'**
+  String get safetyAcademyLsnLoveLanguagesQ1;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept that you are incompatible'**
+  String get safetyAcademyLsnLoveLanguagesQ1O0;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Tell your partner what you need and learn to recognize their style of showing love'**
+  String get safetyAcademyLsnLoveLanguagesQ1O1;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Change your love language to match theirs'**
+  String get safetyAcademyLsnLoveLanguagesQ1O2;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Ignore the difference'**
+  String get safetyAcademyLsnLoveLanguagesQ1O3;
+
+  /// No description provided for @safetyAcademyLsnLoveLanguagesQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Communication is key. Express what you need while also learning to appreciate how your partner shows love.'**
+  String get safetyAcademyLsnLoveLanguagesQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Emotional Awareness'**
+  String get safetyAcademyLsnEmotionalAwarenessTitle;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Emotional awareness is the ability to recognize, understand, and manage your own emotions while also being attuned to others\'. In dating, this skill prevents reactive decisions and builds deeper connections.'**
+  String get safetyAcademyLsnEmotionalAwarenessS0;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Before responding to a frustrating message, pause and identify what you are actually feeling. Are you hurt? Anxious? Disappointed? Naming the emotion reduces its power.'**
+  String get safetyAcademyLsnEmotionalAwarenessS1;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Building Emotional Awareness'**
+  String get safetyAcademyLsnEmotionalAwarenessS2;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice naming your emotions throughout the day'**
+  String get safetyAcademyLsnEmotionalAwarenessS2I0;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Notice physical sensations tied to emotions (tight chest = anxiety)'**
+  String get safetyAcademyLsnEmotionalAwarenessS2I1;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Journal about dating experiences and your emotional reactions'**
+  String get safetyAcademyLsnEmotionalAwarenessS2I2;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Distinguish between reacting (impulsive) and responding (thoughtful)'**
+  String get safetyAcademyLsnEmotionalAwarenessS2I3;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Develop a pause habit: wait before sending emotional messages'**
+  String get safetyAcademyLsnEmotionalAwarenessS2I4;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Emotional awareness does not mean suppressing emotions. It means understanding them well enough to choose how you act on them.'**
+  String get safetyAcademyLsnEmotionalAwarenessS3;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessS4.
+  ///
+  /// In en, this message translates to:
+  /// **'When you can say \"I felt hurt when you canceled our plans\" instead of \"You obviously do not care about me,\" you transform conflict into connection. That is emotional intelligence in action.'**
+  String get safetyAcademyLsnEmotionalAwarenessS4;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Your date cancels plans last minute and you feel angry. What is the emotionally aware response?'**
+  String get safetyAcademyLsnEmotionalAwarenessQ0;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Send an angry message immediately'**
+  String get safetyAcademyLsnEmotionalAwarenessQ0O0;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghost them as punishment'**
+  String get safetyAcademyLsnEmotionalAwarenessQ0O1;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause, identify your feelings, then communicate calmly how the cancellation made you feel'**
+  String get safetyAcademyLsnEmotionalAwarenessQ0O2;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Pretend you do not care'**
+  String get safetyAcademyLsnEmotionalAwarenessQ0O3;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Pausing to identify your emotions and then communicating them calmly leads to better outcomes than reacting impulsively.'**
+  String get safetyAcademyLsnEmotionalAwarenessQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'What does emotional awareness mean?'**
+  String get safetyAcademyLsnEmotionalAwarenessQ1;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Never showing emotions'**
+  String get safetyAcademyLsnEmotionalAwarenessQ1O0;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Always being happy'**
+  String get safetyAcademyLsnEmotionalAwarenessQ1O1;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Recognizing and understanding emotions to choose how to act on them'**
+  String get safetyAcademyLsnEmotionalAwarenessQ1O2;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Expressing every emotion as soon as you feel it'**
+  String get safetyAcademyLsnEmotionalAwarenessQ1O3;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Emotional awareness is about recognition and understanding, which enables thoughtful responses rather than impulsive reactions.'**
+  String get safetyAcademyLsnEmotionalAwarenessQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ2.
+  ///
+  /// In en, this message translates to:
+  /// **'Which is an example of \"responding\" versus \"reacting\"?'**
+  String get safetyAcademyLsnEmotionalAwarenessQ2;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ2O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Typing an angry reply the moment you feel upset'**
+  String get safetyAcademyLsnEmotionalAwarenessQ2O0;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ2O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting, reflecting on your feelings, then crafting a thoughtful message'**
+  String get safetyAcademyLsnEmotionalAwarenessQ2O1;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ2O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ignoring the message entirely'**
+  String get safetyAcademyLsnEmotionalAwarenessQ2O2;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ2O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Venting to friends before replying'**
+  String get safetyAcademyLsnEmotionalAwarenessQ2O3;
+
+  /// No description provided for @safetyAcademyLsnEmotionalAwarenessQ2Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Responding involves a deliberate pause for reflection, while reacting is driven by immediate emotion.'**
+  String get safetyAcademyLsnEmotionalAwarenessQ2Exp;
+
+  /// No description provided for @safetyAcademyModFirstMeetingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'First Meeting Guide'**
+  String get safetyAcademyModFirstMeetingTitle;
+
+  /// No description provided for @safetyAcademyModFirstMeetingDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Essential tips for safe, confident first dates with people you meet online.'**
+  String get safetyAcademyModFirstMeetingDesc;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Meeting in Public Places'**
+  String get safetyAcademyLsnPublicPlacesTitle;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Meeting someone from a dating app for the first time is exciting, but safety should always come first. Choosing the right location sets the foundation for a comfortable experience.'**
+  String get safetyAcademyLsnPublicPlacesS0;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a busy cafe, restaurant, or public park for your first meeting. Familiarity with the venue gives you an advantage -- you know the exits and the staff.'**
+  String get safetyAcademyLsnPublicPlacesS1;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Never agree to meet at someone\'s home, a secluded area, or a place you are unfamiliar with for a first date.'**
+  String get safetyAcademyLsnPublicPlacesS2;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS3.
+  ///
+  /// In en, this message translates to:
+  /// **'First Meeting Location Checklist'**
+  String get safetyAcademyLsnPublicPlacesS3;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS3I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a public, well-lit location'**
+  String get safetyAcademyLsnPublicPlacesS3I0;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS3I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick somewhere you are familiar with'**
+  String get safetyAcademyLsnPublicPlacesS3I1;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS3I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Ensure the venue has other people around'**
+  String get safetyAcademyLsnPublicPlacesS3I2;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS3I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Check that you have phone signal at the venue'**
+  String get safetyAcademyLsnPublicPlacesS3I3;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesS3I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Have a backup plan if you need to leave quickly'**
+  String get safetyAcademyLsnPublicPlacesS3I4;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Which is the safest first date location?'**
+  String get safetyAcademyLsnPublicPlacesQ0;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Their apartment'**
+  String get safetyAcademyLsnPublicPlacesQ0O0;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'A busy downtown cafe'**
+  String get safetyAcademyLsnPublicPlacesQ0O1;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'A remote hiking trail'**
+  String get safetyAcademyLsnPublicPlacesQ0O2;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Your home'**
+  String get safetyAcademyLsnPublicPlacesQ0O3;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'A busy cafe is public, has staff around, and you can leave easily if needed.'**
+  String get safetyAcademyLsnPublicPlacesQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'Why should you pick a venue you are familiar with?'**
+  String get safetyAcademyLsnPublicPlacesQ1;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'So you can impress your date with recommendations'**
+  String get safetyAcademyLsnPublicPlacesQ1O0;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Because you know the exits, staff, and surroundings'**
+  String get safetyAcademyLsnPublicPlacesQ1O1;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'It is cheaper if you know the menu'**
+  String get safetyAcademyLsnPublicPlacesQ1O2;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no real advantage'**
+  String get safetyAcademyLsnPublicPlacesQ1O3;
+
+  /// No description provided for @safetyAcademyLsnPublicPlacesQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Knowing the venue means you know how to leave quickly and who to ask for help if you feel uncomfortable.'**
+  String get safetyAcademyLsnPublicPlacesQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sharing Your Plans'**
+  String get safetyAcademyLsnSharingPlansTitle;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS0.
+  ///
+  /// In en, this message translates to:
+  /// **'Letting someone you trust know about your date is one of the simplest and most effective safety measures. A safety buddy can check in on you and knows where to look if something goes wrong.'**
+  String get safetyAcademyLsnSharingPlansS0;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your date\'s profile, the venue, and your expected return time with a trusted friend. Set up a check-in call 30 minutes into the date.'**
+  String get safetyAcademyLsnSharingPlansS1;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Information to Share with Your Safety Buddy'**
+  String get safetyAcademyLsnSharingPlansS2;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS2I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Screenshot of your date\'s profile'**
+  String get safetyAcademyLsnSharingPlansS2I0;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS2I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Name (or username) of the person you are meeting'**
+  String get safetyAcademyLsnSharingPlansS2I1;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS2I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Date, time, and venue of the meeting'**
+  String get safetyAcademyLsnSharingPlansS2I2;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS2I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Your expected return time'**
+  String get safetyAcademyLsnSharingPlansS2I3;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS2I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Agreed check-in time (e.g., a call or text)'**
+  String get safetyAcademyLsnSharingPlansS2I4;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansS3.
+  ///
+  /// In en, this message translates to:
+  /// **'You can also use GreenGo\'s Share My Date feature to easily send date details to a trusted contact. There is no shame in being safe -- your date should understand.'**
+  String get safetyAcademyLsnSharingPlansS3;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'What should you share with a trusted friend before a first date?'**
+  String get safetyAcademyLsnSharingPlansQ0;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Only the venue name'**
+  String get safetyAcademyLsnSharingPlansQ0O0;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Your date\'s profile, venue, time, and expected return'**
+  String get safetyAcademyLsnSharingPlansQ0O1;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing -- it is private'**
+  String get safetyAcademyLsnSharingPlansQ0O2;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Just a text saying \"going on a date\"'**
+  String get safetyAcademyLsnSharingPlansQ0O3;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'The more information your safety buddy has, the better they can help if something goes wrong.'**
+  String get safetyAcademyLsnSharingPlansQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'When is a good time to set up a check-in call?'**
+  String get safetyAcademyLsnSharingPlansQ1;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'After the date is over'**
+  String get safetyAcademyLsnSharingPlansQ1O0;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'About 30 minutes into the date'**
+  String get safetyAcademyLsnSharingPlansQ1O1;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'A check-in is not necessary'**
+  String get safetyAcademyLsnSharingPlansQ1O2;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Before you leave for the date'**
+  String get safetyAcademyLsnSharingPlansQ1O3;
+
+  /// No description provided for @safetyAcademyLsnSharingPlansQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'A check-in 30 minutes in gives you enough time to assess the situation and an easy out if you feel uncomfortable.'**
+  String get safetyAcademyLsnSharingPlansQ1Exp;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Transport Safety'**
+  String get safetyAcademyLsnTransportSafetyTitle;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS0.
+  ///
+  /// In en, this message translates to:
+  /// **'How you get to and from a date matters just as much as where you meet. Maintaining control over your transportation ensures you can leave whenever you want.'**
+  String get safetyAcademyLsnTransportSafetyS0;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS1.
+  ///
+  /// In en, this message translates to:
+  /// **'Never let your date pick you up from your home for the first meeting. This reveals your address and makes you dependent on them for a ride home.'**
+  String get safetyAcademyLsnTransportSafetyS1;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS2.
+  ///
+  /// In en, this message translates to:
+  /// **'Drive yourself, use ride-sharing, or take public transport. Keep your phone charged and have enough money for an emergency ride home.'**
+  String get safetyAcademyLsnTransportSafetyS2;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS3.
+  ///
+  /// In en, this message translates to:
+  /// **'Transport Safety Checklist'**
+  String get safetyAcademyLsnTransportSafetyS3;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS3I0.
+  ///
+  /// In en, this message translates to:
+  /// **'Arrange your own transportation'**
+  String get safetyAcademyLsnTransportSafetyS3I0;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS3I1.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep your phone fully charged'**
+  String get safetyAcademyLsnTransportSafetyS3I1;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS3I2.
+  ///
+  /// In en, this message translates to:
+  /// **'Have emergency ride money available'**
+  String get safetyAcademyLsnTransportSafetyS3I2;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS3I3.
+  ///
+  /// In en, this message translates to:
+  /// **'Share your live location with a trusted contact'**
+  String get safetyAcademyLsnTransportSafetyS3I3;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS3I4.
+  ///
+  /// In en, this message translates to:
+  /// **'Park in a well-lit area if driving'**
+  String get safetyAcademyLsnTransportSafetyS3I4;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyS3I5.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not leave drinks unattended if you step away'**
+  String get safetyAcademyLsnTransportSafetyS3I5;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ0.
+  ///
+  /// In en, this message translates to:
+  /// **'Why should you arrange your own transportation for a first date?'**
+  String get safetyAcademyLsnTransportSafetyQ0;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ0O0.
+  ///
+  /// In en, this message translates to:
+  /// **'To save money on gas'**
+  String get safetyAcademyLsnTransportSafetyQ0O0;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ0O1.
+  ///
+  /// In en, this message translates to:
+  /// **'So you can leave whenever you want and your address stays private'**
+  String get safetyAcademyLsnTransportSafetyQ0O1;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ0O2.
+  ///
+  /// In en, this message translates to:
+  /// **'To avoid traffic'**
+  String get safetyAcademyLsnTransportSafetyQ0O2;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ0O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Because parking is easier alone'**
+  String get safetyAcademyLsnTransportSafetyQ0O3;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ0Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Having your own transport means you are not dependent on your date and your home address remains private.'**
+  String get safetyAcademyLsnTransportSafetyQ0Exp;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ1.
+  ///
+  /// In en, this message translates to:
+  /// **'Your date offers to pick you up from home. What should you do?'**
+  String get safetyAcademyLsnTransportSafetyQ1;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ1O0.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept -- it is a nice gesture'**
+  String get safetyAcademyLsnTransportSafetyQ1O0;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ1O1.
+  ///
+  /// In en, this message translates to:
+  /// **'Politely decline and suggest meeting at the venue instead'**
+  String get safetyAcademyLsnTransportSafetyQ1O1;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ1O2.
+  ///
+  /// In en, this message translates to:
+  /// **'Give them a nearby intersection instead of your exact address'**
+  String get safetyAcademyLsnTransportSafetyQ1O2;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ1O3.
+  ///
+  /// In en, this message translates to:
+  /// **'Accept but have a friend watch from the window'**
+  String get safetyAcademyLsnTransportSafetyQ1O3;
+
+  /// No description provided for @safetyAcademyLsnTransportSafetyQ1Exp.
+  ///
+  /// In en, this message translates to:
+  /// **'Meeting at the venue keeps your address private and ensures you have independent transportation.'**
+  String get safetyAcademyLsnTransportSafetyQ1Exp;
+
+  /// No description provided for @gamificationAchFirstMatchName.
+  ///
+  /// In en, this message translates to:
+  /// **'First Match'**
+  String get gamificationAchFirstMatchName;
+
+  /// No description provided for @gamificationAchFirstMatchDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get your first mutual like'**
+  String get gamificationAchFirstMatchDesc;
+
+  /// No description provided for @gamificationAchConversationStarterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversation Starter'**
+  String get gamificationAchConversationStarterName;
+
+  /// No description provided for @gamificationAchConversationStarterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Initiate 10 conversations'**
+  String get gamificationAchConversationStarterDesc;
+
+  /// No description provided for @gamificationAchVideoChampionName.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Champion'**
+  String get gamificationAchVideoChampionName;
+
+  /// No description provided for @gamificationAchVideoChampionDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 5 video calls'**
+  String get gamificationAchVideoChampionDesc;
+
+  /// No description provided for @gamificationAchProfileMasterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Master'**
+  String get gamificationAchProfileMasterName;
+
+  /// No description provided for @gamificationAchProfileMasterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete all profile sections 100%'**
+  String get gamificationAchProfileMasterDesc;
+
+  /// No description provided for @gamificationAchGlobeTrotterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Globe Trotter'**
+  String get gamificationAchGlobeTrotterName;
+
+  /// No description provided for @gamificationAchGlobeTrotterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Match with users from 10+ countries'**
+  String get gamificationAchGlobeTrotterDesc;
+
+  /// No description provided for @gamificationAchGenerousHeartName.
+  ///
+  /// In en, this message translates to:
+  /// **'Generous Heart'**
+  String get gamificationAchGenerousHeartName;
+
+  /// No description provided for @gamificationAchGenerousHeartDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift coins to matches'**
+  String get gamificationAchGenerousHeartDesc;
+
+  /// No description provided for @gamificationAchDailyDedicationName.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Dedication'**
+  String get gamificationAchDailyDedicationName;
+
+  /// No description provided for @gamificationAchDailyDedicationDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'7-day consecutive login streak'**
+  String get gamificationAchDailyDedicationDesc;
+
+  /// No description provided for @gamificationAchSuperStarName.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Star'**
+  String get gamificationAchSuperStarName;
+
+  /// No description provided for @gamificationAchSuperStarDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Receive 50+ super likes'**
+  String get gamificationAchSuperStarDesc;
+
+  /// No description provided for @gamificationAchSocialButterflyName.
+  ///
+  /// In en, this message translates to:
+  /// **'Social Butterfly'**
+  String get gamificationAchSocialButterflyName;
+
+  /// No description provided for @gamificationAchSocialButterflyDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Maintain 20+ active conversations'**
+  String get gamificationAchSocialButterflyDesc;
+
+  /// No description provided for @gamificationAchPerfectWeekName.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfect Week'**
+  String get gamificationAchPerfectWeekName;
+
+  /// No description provided for @gamificationAchPerfectWeekDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete all daily challenges for 7 days'**
+  String get gamificationAchPerfectWeekDesc;
+
+  /// No description provided for @gamificationAchEarlyBirdName.
+  ///
+  /// In en, this message translates to:
+  /// **'Early Bird'**
+  String get gamificationAchEarlyBirdName;
+
+  /// No description provided for @gamificationAchEarlyBirdDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send messages before 9 AM on 10 days'**
+  String get gamificationAchEarlyBirdDesc;
+
+  /// No description provided for @gamificationAchNightOwlName.
+  ///
+  /// In en, this message translates to:
+  /// **'Night Owl'**
+  String get gamificationAchNightOwlName;
+
+  /// No description provided for @gamificationAchNightOwlDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send messages after 10 PM on 10 days'**
+  String get gamificationAchNightOwlDesc;
+
+  /// No description provided for @gamificationAchCenturionName.
+  ///
+  /// In en, this message translates to:
+  /// **'Centurion'**
+  String get gamificationAchCenturionName;
+
+  /// No description provided for @gamificationAchCenturionDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Reach 100 total matches'**
+  String get gamificationAchCenturionDesc;
+
+  /// No description provided for @gamificationAchSpeedDaterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Speed Dater'**
+  String get gamificationAchSpeedDaterName;
+
+  /// No description provided for @gamificationAchSpeedDaterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Match with 10 people in one day'**
+  String get gamificationAchSpeedDaterDesc;
+
+  /// No description provided for @gamificationAchPhotoCollectorName.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo Collector'**
+  String get gamificationAchPhotoCollectorName;
+
+  /// No description provided for @gamificationAchPhotoCollectorDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Add 6 photos to your profile'**
+  String get gamificationAchPhotoCollectorDesc;
+
+  /// No description provided for @gamificationAchTrendSetterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Trend Setter'**
+  String get gamificationAchTrendSetterName;
+
+  /// No description provided for @gamificationAchTrendSetterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Be among the first 1000 users'**
+  String get gamificationAchTrendSetterDesc;
+
+  /// No description provided for @gamificationAchVerifiedName.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified'**
+  String get gamificationAchVerifiedName;
+
+  /// No description provided for @gamificationAchVerifiedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete photo verification'**
+  String get gamificationAchVerifiedDesc;
+
+  /// No description provided for @gamificationAchPremiumMemberName.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium Member'**
+  String get gamificationAchPremiumMemberName;
+
+  /// No description provided for @gamificationAchPremiumMemberDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribe to Silver or Gold tier'**
+  String get gamificationAchPremiumMemberDesc;
+
+  /// No description provided for @gamificationAchCoinCollectorName.
+  ///
+  /// In en, this message translates to:
+  /// **'Coin Collector'**
+  String get gamificationAchCoinCollectorName;
+
+  /// No description provided for @gamificationAchCoinCollectorDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Accumulate 1000 coins'**
+  String get gamificationAchCoinCollectorDesc;
+
+  /// No description provided for @gamificationAchMonthlyStreakName.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly Dedication'**
+  String get gamificationAchMonthlyStreakName;
+
+  /// No description provided for @gamificationAchMonthlyStreakDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'30-day consecutive login streak'**
+  String get gamificationAchMonthlyStreakDesc;
+
+  /// No description provided for @gamificationAchVocabularyBeginnerName.
+  ///
+  /// In en, this message translates to:
+  /// **'Word Explorer'**
+  String get gamificationAchVocabularyBeginnerName;
+
+  /// No description provided for @gamificationAchVocabularyBeginnerDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Use 100 unique words in chat'**
+  String get gamificationAchVocabularyBeginnerDesc;
+
+  /// No description provided for @gamificationAchVocabularyIntermediateName.
+  ///
+  /// In en, this message translates to:
+  /// **'Wordsmith'**
+  String get gamificationAchVocabularyIntermediateName;
+
+  /// No description provided for @gamificationAchVocabularyIntermediateDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Use 500 unique words in chat'**
+  String get gamificationAchVocabularyIntermediateDesc;
+
+  /// No description provided for @gamificationAchVocabularyAdvancedName.
+  ///
+  /// In en, this message translates to:
+  /// **'Vocabulary Expert'**
+  String get gamificationAchVocabularyAdvancedName;
+
+  /// No description provided for @gamificationAchVocabularyAdvancedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Use 1000 unique words in chat'**
+  String get gamificationAchVocabularyAdvancedDesc;
+
+  /// No description provided for @gamificationAchVocabularyMasterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Vocabulary Master'**
+  String get gamificationAchVocabularyMasterName;
+
+  /// No description provided for @gamificationAchVocabularyMasterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Use 5000 unique words in chat'**
+  String get gamificationAchVocabularyMasterDesc;
+
+  /// No description provided for @gamificationAchRareWordHunterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Rare Word Hunter'**
+  String get gamificationAchRareWordHunterName;
+
+  /// No description provided for @gamificationAchRareWordHunterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Use 50 rare words (frequency score below 50)'**
+  String get gamificationAchRareWordHunterDesc;
+
+  /// No description provided for @gamificationRewardCoinsPlus.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{+1 coin} other{+{count} coins}}'**
+  String gamificationRewardCoinsPlus(int count);
+
+  /// No description provided for @gamificationRewardBadgePlus.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{+1 badge} other{+{count} badges}}'**
+  String gamificationRewardBadgePlus(int count);
+
+  /// No description provided for @gamificationRewardBoostPlus.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{+1 boost} other{+{count} boosts}}'**
+  String gamificationRewardBoostPlus(int count);
+
+  /// No description provided for @gamificationRewardWithValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Reward: {reward}'**
+  String gamificationRewardWithValue(String reward);
+
+  /// No description provided for @gamificationRewardBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Badge'**
+  String get gamificationRewardBadge;
+
+  /// No description provided for @gamificationVip.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP'**
+  String get gamificationVip;
+
+  /// No description provided for @gamificationRewardsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rewards'**
+  String get gamificationRewardsTitle;
+
+  /// No description provided for @gamificationXpToNextLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'{xp} XP to next level'**
+  String gamificationXpToNextLevel(String xp);
+
+  /// No description provided for @gamificationStreakDayUnitOne.
+  ///
+  /// In en, this message translates to:
+  /// **'day'**
+  String get gamificationStreakDayUnitOne;
+
+  /// No description provided for @gamificationStreakDayUnitOther.
+  ///
+  /// In en, this message translates to:
+  /// **'days'**
+  String get gamificationStreakDayUnitOther;
+
+  /// No description provided for @gamificationOnFire.
+  ///
+  /// In en, this message translates to:
+  /// **'🎉 On Fire!'**
+  String get gamificationOnFire;
+
+  /// No description provided for @gamificationUserFallback.
+  ///
+  /// In en, this message translates to:
+  /// **'User {id}'**
+  String gamificationUserFallback(String id);
+
+  /// No description provided for @gamificationNoticeAchievementUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} unlocked! {reward}'**
+  String gamificationNoticeAchievementUnlocked(String name, String reward);
+
+  /// No description provided for @gamificationNoticeAchievementReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement complete! Ready to unlock: {name}'**
+  String gamificationNoticeAchievementReady(String name);
+
+  /// No description provided for @gamificationNoticeLevelUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Level up! You reached level {level}!'**
+  String gamificationNoticeLevelUp(int level);
+
+  /// No description provided for @gamificationNoticeVip.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations! You\'ve achieved VIP status! 👑'**
+  String get gamificationNoticeVip;
+
+  /// No description provided for @gamificationNoticeLevelRewardsClaimed.
+  ///
+  /// In en, this message translates to:
+  /// **'Level {level} rewards claimed! {rewards}'**
+  String gamificationNoticeLevelRewardsClaimed(int level, String rewards);
+
+  /// No description provided for @gamificationNoticeChallengeRewardsClaimed.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} rewards claimed! {rewards}'**
+  String gamificationNoticeChallengeRewardsClaimed(String name, String rewards);
+
+  /// No description provided for @gamificationNoticeFeatureLocked.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{feature} unlocks at level {level}. 1 level to go!} other{{feature} unlocks at level {level}. {count} levels to go!}}'**
+  String gamificationNoticeFeatureLocked(int count, String feature, int level);
+
+  /// No description provided for @gamificationFeatureCustomChatThemes.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom Chat Themes'**
+  String get gamificationFeatureCustomChatThemes;
+
+  /// No description provided for @gamificationFeatureProfileVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Video'**
+  String get gamificationFeatureProfileVideo;
+
+  /// No description provided for @gamificationFeatureAdvancedFilters.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced Filters'**
+  String get gamificationFeatureAdvancedFilters;
+
+  /// No description provided for @gamificationFeatureUnlimitedRewinds.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited Rewinds'**
+  String get gamificationFeatureUnlimitedRewinds;
+
+  /// No description provided for @gamificationFeatureVipBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP Badge'**
+  String get gamificationFeatureVipBadge;
+
+  /// No description provided for @gamificationFeaturePriorityLikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority Likes'**
+  String get gamificationFeaturePriorityLikes;
+
+  /// No description provided for @gamificationLevelRewardBronzeFrame.
+  ///
+  /// In en, this message translates to:
+  /// **'Bronze Frame'**
+  String get gamificationLevelRewardBronzeFrame;
+
+  /// No description provided for @gamificationLevelRewardSilverFrame.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver Frame'**
+  String get gamificationLevelRewardSilverFrame;
+
+  /// No description provided for @gamificationLevelRewardGoldFrame.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold Frame'**
+  String get gamificationLevelRewardGoldFrame;
+
+  /// No description provided for @gamificationLevelRewardPlatinumFrame.
+  ///
+  /// In en, this message translates to:
+  /// **'Platinum Frame'**
+  String get gamificationLevelRewardPlatinumFrame;
+
+  /// No description provided for @gamificationLevelRewardDiamondFrame.
+  ///
+  /// In en, this message translates to:
+  /// **'Diamond Frame'**
+  String get gamificationLevelRewardDiamondFrame;
+
+  /// No description provided for @gamificationLevelRewardLegendaryFrame.
+  ///
+  /// In en, this message translates to:
+  /// **'Legendary Frame'**
+  String get gamificationLevelRewardLegendaryFrame;
+
+  /// No description provided for @gamificationLevelRewardVipCrown.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP Crown'**
+  String get gamificationLevelRewardVipCrown;
+
+  /// No description provided for @gamificationLevelRewardMaxLevelBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Level {level} Badge'**
+  String gamificationLevelRewardMaxLevelBadge(int level);
+
+  /// No description provided for @gamificationLevelRewardBonusCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} Bonus Coins'**
+  String gamificationLevelRewardBonusCoins(int count);
+
+  /// No description provided for @gamificationMissionAttend3Events.
+  ///
+  /// In en, this message translates to:
+  /// **'Attend 3 events'**
+  String get gamificationMissionAttend3Events;
+
+  /// No description provided for @gamificationMissionConnect3Countries.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect with people from 3 countries'**
+  String get gamificationMissionConnect3Countries;
+
+  /// No description provided for @gamificationMissionJoinCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a community'**
+  String get gamificationMissionJoinCommunity;
+
+  /// No description provided for @gamificationMissionCompleteProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your profile'**
+  String get gamificationMissionCompleteProfile;
+
+  /// No description provided for @gamificationMissionAdd5People.
+  ///
+  /// In en, this message translates to:
+  /// **'Add 5 people'**
+  String get gamificationMissionAdd5People;
+
+  /// No description provided for @updateRequiredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Required'**
+  String get updateRequiredTitle;
+
+  /// No description provided for @updateRequiredMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'A new version of GreenGo is available. Please update to continue using the app.'**
+  String get updateRequiredMessage;
+
+  /// No description provided for @updateAvailableTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Available'**
+  String get updateAvailableTitle;
+
+  /// No description provided for @updateAvailableMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'A new version of GreenGo is available with improvements and new features.'**
+  String get updateAvailableMessage;
+
+  /// No description provided for @updateVersionCurrent.
+  ///
+  /// In en, this message translates to:
+  /// **'Current'**
+  String get updateVersionCurrent;
+
+  /// No description provided for @updateVersionRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required'**
+  String get updateVersionRequired;
+
+  /// No description provided for @updateVersionAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Available'**
+  String get updateVersionAvailable;
+
+  /// No description provided for @updateVersionLatest.
+  ///
+  /// In en, this message translates to:
+  /// **'Latest'**
+  String get updateVersionLatest;
+
+  /// No description provided for @updateWhatsNew.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s New'**
+  String get updateWhatsNew;
+
+  /// No description provided for @updateNowButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Now'**
+  String get updateNowButton;
+
+  /// No description provided for @updateButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get updateButton;
+
+  /// No description provided for @maintenanceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Under Maintenance'**
+  String get maintenanceTitle;
+
+  /// No description provided for @maintenanceCheckBackSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Please check back soon'**
+  String get maintenanceCheckBackSoon;
+
+  /// No description provided for @maintenanceDefaultMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'We are currently performing maintenance. Please try again later.'**
+  String get maintenanceDefaultMessage;
+
+  /// No description provided for @countdownAlmostThere.
+  ///
+  /// In en, this message translates to:
+  /// **'Almost There!'**
+  String get countdownAlmostThere;
+
+  /// No description provided for @countdownVipEarlyAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'VIP Early Access'**
+  String get countdownVipEarlyAccess;
+
+  /// No description provided for @countdownLaunchDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Launch Date: {date}'**
+  String countdownLaunchDate(String date);
+
+  /// No description provided for @countdownTimeUntilLaunch.
+  ///
+  /// In en, this message translates to:
+  /// **'Time Until Launch'**
+  String get countdownTimeUntilLaunch;
+
+  /// No description provided for @countdownWantEarlierAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Want Earlier Access?'**
+  String get countdownWantEarlierAccess;
+
+  /// No description provided for @countdownUpgradeForEarlierAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade your tier to get earlier access before {date}!'**
+  String countdownUpgradeForEarlierAccess(String date);
+
+  /// No description provided for @countdownLaunchDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Launch Day!'**
+  String get countdownLaunchDay;
+
+  /// No description provided for @countdownNowAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Chat is now available'**
+  String get countdownNowAvailable;
+
+  /// No description provided for @celebrationWelcomeToTier.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to {tier}!'**
+  String celebrationWelcomeToTier(String tier);
+
+  /// No description provided for @celebrationMembershipActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Your premium membership is now active'**
+  String get celebrationMembershipActive;
+
+  /// No description provided for @celebrationUnlimitedLikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited likes'**
+  String get celebrationUnlimitedLikes;
+
+  /// No description provided for @celebrationSeeWhoLikedYou.
+  ///
+  /// In en, this message translates to:
+  /// **'See who liked you'**
+  String get celebrationSeeWhoLikedYou;
+
+  /// No description provided for @celebrationPerDay.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}/day'**
+  String celebrationPerDay(int count);
+
+  /// No description provided for @celebrationExclusiveEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Exclusive Events'**
+  String get celebrationExclusiveEvents;
+
+  /// No description provided for @purchaseSuccessCoinsAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} GreenGo Coins added!'**
+  String purchaseSuccessCoinsAdded(int count);
+
+  /// No description provided for @pushChannelMainName.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo Notifications'**
+  String get pushChannelMainName;
+
+  /// No description provided for @pushChannelMainDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Messages, likes, events and activity'**
+  String get pushChannelMainDescription;
+
+  /// No description provided for @pushChannelAnnouncementsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcements'**
+  String get pushChannelAnnouncementsName;
+
+  /// No description provided for @pushChannelAnnouncementsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Broadcasts and announcements from GreenGo'**
+  String get pushChannelAnnouncementsDescription;
+
+  /// No description provided for @pushChannelSummaryName.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity summary'**
+  String get pushChannelSummaryName;
+
+  /// No description provided for @pushChannelSummaryDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Bundled activity notifications'**
+  String get pushChannelSummaryDescription;
+
+  /// No description provided for @pushChannelGeneralName.
+  ///
+  /// In en, this message translates to:
+  /// **'General'**
+  String get pushChannelGeneralName;
+
+  /// No description provided for @pushChannelGeneralDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'General notifications'**
+  String get pushChannelGeneralDescription;
+
+  /// No description provided for @usageLimitTypeConnects.
+  ///
+  /// In en, this message translates to:
+  /// **'connects'**
+  String get usageLimitTypeConnects;
+
+  /// No description provided for @usageLimitTypePasses.
+  ///
+  /// In en, this message translates to:
+  /// **'passes'**
+  String get usageLimitTypePasses;
+
+  /// No description provided for @usageLimitTypePriorityConnects.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority Connects'**
+  String get usageLimitTypePriorityConnects;
+
+  /// No description provided for @usageLimitTypeDailyPriorityConnects.
+  ///
+  /// In en, this message translates to:
+  /// **'daily Priority Connects'**
+  String get usageLimitTypeDailyPriorityConnects;
+
+  /// No description provided for @usageLimitTypeSwipes.
+  ///
+  /// In en, this message translates to:
+  /// **'swipes'**
+  String get usageLimitTypeSwipes;
+
+  /// No description provided for @usageLimitTypeMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'messages'**
+  String get usageLimitTypeMessages;
+
+  /// No description provided for @usageLimitTypeMediaSends.
+  ///
+  /// In en, this message translates to:
+  /// **'media sends'**
+  String get usageLimitTypeMediaSends;
+
+  /// No description provided for @usageLimitTypeDirectMatches.
+  ///
+  /// In en, this message translates to:
+  /// **'direct matches'**
+  String get usageLimitTypeDirectMatches;
+
+  /// No description provided for @usageLimitTypeConnections.
+  ///
+  /// In en, this message translates to:
+  /// **'connections'**
+  String get usageLimitTypeConnections;
+
+  /// No description provided for @usageLimitUnlimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlimited {type}'**
+  String usageLimitUnlimited(String type);
+
+  /// No description provided for @usageLimitRemainingThisHour.
+  ///
+  /// In en, this message translates to:
+  /// **'{remaining} {type} remaining this hour'**
+  String usageLimitRemainingThisHour(int remaining, String type);
+
+  /// No description provided for @usageLimitRemainingToday.
+  ///
+  /// In en, this message translates to:
+  /// **'{remaining} {type} remaining today'**
+  String usageLimitRemainingToday(int remaining, String type);
+
+  /// No description provided for @usageLimitConnectsHourly.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve used all {limit} connects this hour. Upgrade for more or wait until next hour.'**
+  String usageLimitConnectsHourly(int limit);
+
+  /// No description provided for @usageLimitPassesHourly.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve used all {limit} passes this hour. Upgrade for more or wait until next hour.'**
+  String usageLimitPassesHourly(int limit);
+
+  /// No description provided for @usageLimitPriorityUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority Connects are not available on the {tier} plan. Upgrade to unlock this feature!'**
+  String usageLimitPriorityUnavailable(String tier);
+
+  /// No description provided for @usageLimitPriorityHourly.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve used all {limit} Priority Connects this hour. Upgrade for more or wait until next hour.'**
+  String usageLimitPriorityHourly(int limit);
+
+  /// No description provided for @usageLimitPriorityDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'{limit, plural, =1{You\'ve used your 1 free priority connect for today. Use coins for more or wait until tomorrow.} other{You\'ve used your {limit} free priority connects for today. Use coins for more or wait until tomorrow.}}'**
+  String usageLimitPriorityDaily(int limit);
+
+  /// No description provided for @usageLimitSwipesDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve used all {limit} swipes for today. Upgrade to get more swipes or wait until tomorrow.'**
+  String usageLimitSwipesDaily(int limit);
+
+  /// No description provided for @usageLimitMessagesDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached your daily limit of {limit} messages. Upgrade to send unlimited messages!'**
+  String usageLimitMessagesDaily(int limit);
+
+  /// No description provided for @usageLimitMediaUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Sending media is not available on the {tier} plan. Upgrade to send images and videos!'**
+  String usageLimitMediaUnavailable(String tier);
+
+  /// No description provided for @usageLimitMediaDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached your daily limit of {limit} media sends. Upgrade for more or wait until tomorrow.'**
+  String usageLimitMediaDaily(int limit);
+
+  /// No description provided for @usageLimitDirectMatchDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'{limit, plural, =1{You\'ve used your 1 free direct match today. Use coins for more or wait until tomorrow.} other{You\'ve used your {limit} free direct matches today. Use coins for more or wait until tomorrow.}}'**
+  String usageLimitDirectMatchDaily(int limit);
+
+  /// No description provided for @contentFilterViolationEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'email address'**
+  String get contentFilterViolationEmail;
+
+  /// No description provided for @contentFilterViolationPhoneWords.
+  ///
+  /// In en, this message translates to:
+  /// **'phone number (written as words)'**
+  String get contentFilterViolationPhoneWords;
+
+  /// No description provided for @contentFilterViolationPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'phone number'**
+  String get contentFilterViolationPhone;
+
+  /// No description provided for @contentFilterViolationSocial.
+  ///
+  /// In en, this message translates to:
+  /// **'social media/link'**
+  String get contentFilterViolationSocial;
+
+  /// No description provided for @adminImportSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Imported: {success} | Duplicates: {duplicates} | Errors: {errors}'**
+  String adminImportSummary(int success, int duplicates, int errors);
+
+  /// No description provided for @tierBoostCadenceNone.
+  ///
+  /// In en, this message translates to:
+  /// **'None'**
+  String get tierBoostCadenceNone;
+
+  /// No description provided for @tierBoostCadenceMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'1 per month'**
+  String get tierBoostCadenceMonthly;
+
+  /// No description provided for @tierBoostCadenceWeekly.
+  ///
+  /// In en, this message translates to:
+  /// **'~1 per week'**
+  String get tierBoostCadenceWeekly;
+
+  /// No description provided for @tierBoostCadenceDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'~1 per day'**
+  String get tierBoostCadenceDaily;
+
+  /// No description provided for @tierFilterLevelBasic.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic'**
+  String get tierFilterLevelBasic;
+
+  /// No description provided for @tierFilterLevelStandard.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard'**
+  String get tierFilterLevelStandard;
+
+  /// No description provided for @tierFilterLevelAdvanced.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get tierFilterLevelAdvanced;
+
+  /// No description provided for @tierFilterLevelAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All filters'**
+  String get tierFilterLevelAll;
+
+  /// No description provided for @tierTtsCostValue.
+  ///
+  /// In en, this message translates to:
+  /// **'{coins} coins per translation'**
+  String tierTtsCostValue(int coins);
+
+  /// No description provided for @chatLearningLiteral.
+  ///
+  /// In en, this message translates to:
+  /// **'Literal: {text}'**
+  String chatLearningLiteral(String text);
+
+  /// No description provided for @chatLearningMeaning.
+  ///
+  /// In en, this message translates to:
+  /// **'Meaning: {text}'**
+  String chatLearningMeaning(String text);
+
+  /// No description provided for @validatorNameRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Name is required'**
+  String get validatorNameRequired;
+
+  /// No description provided for @validatorNameLettersOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Name can only contain letters and spaces'**
+  String get validatorNameLettersOnly;
+
+  /// No description provided for @validatorPhoneRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number is required'**
+  String get validatorPhoneRequired;
+
+  /// No description provided for @validatorPhoneMinDigits.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone number must be at least 10 digits'**
+  String get validatorPhoneMinDigits;
+
+  /// No description provided for @validatorAgeRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Age is required'**
+  String get validatorAgeRequired;
+
+  /// No description provided for @validatorMinAge.
+  ///
+  /// In en, this message translates to:
+  /// **'You must be at least {minAge} years old'**
+  String validatorMinAge(int minAge);
+
+  /// No description provided for @validatorInvalidAge.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid age'**
+  String get validatorInvalidAge;
+
+  /// No description provided for @validatorBioMaxLength.
+  ///
+  /// In en, this message translates to:
+  /// **'Bio must be less than {max} characters'**
+  String validatorBioMaxLength(int max);
+
+  /// No description provided for @profileOnboardingIncompleteStep.
+  ///
+  /// In en, this message translates to:
+  /// **'Please complete all required fields'**
+  String get profileOnboardingIncompleteStep;
+
+  /// No description provided for @profileGenderPreferNotToSay.
+  ///
+  /// In en, this message translates to:
+  /// **'Prefer not to say'**
+  String get profileGenderPreferNotToSay;
+
+  /// No description provided for @profileOrientationStraight.
+  ///
+  /// In en, this message translates to:
+  /// **'Straight'**
+  String get profileOrientationStraight;
+
+  /// No description provided for @profileOrientationGay.
+  ///
+  /// In en, this message translates to:
+  /// **'Gay'**
+  String get profileOrientationGay;
+
+  /// No description provided for @profileOrientationBisexual.
+  ///
+  /// In en, this message translates to:
+  /// **'Bisexual'**
+  String get profileOrientationBisexual;
+
+  /// No description provided for @profileLanguageHebrew.
+  ///
+  /// In en, this message translates to:
+  /// **'Hebrew'**
+  String get profileLanguageHebrew;
+
+  /// No description provided for @profileLanguageThai.
+  ///
+  /// In en, this message translates to:
+  /// **'Thai'**
+  String get profileLanguageThai;
+
+  /// No description provided for @profileLanguageVietnamese.
+  ///
+  /// In en, this message translates to:
+  /// **'Vietnamese'**
+  String get profileLanguageVietnamese;
+
+  /// No description provided for @profileLatLon.
+  ///
+  /// In en, this message translates to:
+  /// **'Lat: {lat}, Lon: {lon}'**
+  String profileLatLon(String lat, String lon);
+
+  /// No description provided for @profileNicknameInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid nickname'**
+  String get profileNicknameInvalid;
+
+  /// No description provided for @profileNicknameErrorEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname cannot be empty'**
+  String get profileNicknameErrorEmpty;
+
+  /// No description provided for @profileNicknameErrorTooShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname must be at least {min} characters'**
+  String profileNicknameErrorTooShort(int min);
+
+  /// No description provided for @profileNicknameErrorTooLong.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname must be {max} characters or less'**
+  String profileNicknameErrorTooLong(int max);
+
+  /// No description provided for @profileNicknameErrorStartLetter.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname must start with a letter'**
+  String get profileNicknameErrorStartLetter;
+
+  /// No description provided for @profileNicknameErrorChars.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname can only contain letters, numbers, and underscores'**
+  String get profileNicknameErrorChars;
+
+  /// No description provided for @profileNicknameErrorUnderscores.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname cannot contain consecutive underscores'**
+  String get profileNicknameErrorUnderscores;
+
+  /// No description provided for @profileNicknameErrorReserved.
+  ///
+  /// In en, this message translates to:
+  /// **'Nickname cannot contain reserved words'**
+  String get profileNicknameErrorReserved;
+
+  /// No description provided for @profileFreeUnlimited.
+  ///
+  /// In en, this message translates to:
+  /// **'Free - Unlimited'**
+  String get profileFreeUnlimited;
+
+  /// No description provided for @profileFreeWithPlatinum.
+  ///
+  /// In en, this message translates to:
+  /// **'Free with Platinum'**
+  String get profileFreeWithPlatinum;
+
+  /// No description provided for @profileCoinsPerDay.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} coins/day'**
+  String profileCoinsPerDay(int count);
+
+  /// No description provided for @profileTravelerActiveSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{location} - {hours}h {minutes}m remaining'**
+  String profileTravelerActiveSubtitle(String location, int hours, int minutes);
+
+  /// No description provided for @profileTravelerInactiveSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{cost} - Appear in another city'**
+  String profileTravelerInactiveSubtitle(String cost);
+
+  /// No description provided for @profileMinutesRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes}m remaining'**
+  String profileMinutesRemaining(int minutes);
+
+  /// No description provided for @profileHoursMinutesRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours}h {minutes}m remaining'**
+  String profileHoursMinutesRemaining(int hours, int minutes);
+
+  /// No description provided for @profileGhostMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghost Mode'**
+  String get profileGhostMode;
+
+  /// No description provided for @profileGhostModeActiveSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghost Mode - Unlimited - Hidden from discovery & search'**
+  String get profileGhostModeActiveSubtitle;
+
+  /// No description provided for @profileGhostModeInactiveSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Free - Unlimited - Hidden from discovery & nickname search'**
+  String get profileGhostModeInactiveSubtitle;
+
+  /// No description provided for @profileIncognitoCostSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} coins/24h - Hidden from discovery'**
+  String profileIncognitoCostSubtitle(int count);
+
+  /// No description provided for @photoDeleteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Photo'**
+  String get photoDeleteTitle;
+
+  /// No description provided for @travelerCouldNotResolveAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'{coordinates} — could not resolve address'**
+  String travelerCouldNotResolveAddress(String coordinates);
+
+  /// No description provided for @membershipTierNameBasicFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic (Free)'**
+  String get membershipTierNameBasicFree;
+
+  /// No description provided for @membershipTierNameSilverPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver Premium'**
+  String get membershipTierNameSilverPremium;
+
+  /// No description provided for @membershipTierNameGoldPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold Premium'**
+  String get membershipTierNameGoldPremium;
+
+  /// No description provided for @membershipTierNamePlatinumVip.
+  ///
+  /// In en, this message translates to:
+  /// **'Platinum VIP'**
+  String get membershipTierNamePlatinumVip;
+
+  /// No description provided for @membershipTierNameSilverVip.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver VIP'**
+  String get membershipTierNameSilverVip;
+
+  /// No description provided for @membershipTierNameGoldVip.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold VIP'**
+  String get membershipTierNameGoldVip;
+
+  /// No description provided for @membershipTierNameTester.
+  ///
+  /// In en, this message translates to:
+  /// **'Tester'**
+  String get membershipTierNameTester;
+
+  /// No description provided for @membershipBuyProductPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Buy {product} – {price}'**
+  String membershipBuyProductPrice(String product, String price);
+
+  /// No description provided for @coinSpendCategoryMatching.
+  ///
+  /// In en, this message translates to:
+  /// **'Matching'**
+  String get coinSpendCategoryMatching;
+
+  /// No description provided for @coinSpendCategoryMessaging.
+  ///
+  /// In en, this message translates to:
+  /// **'Messaging'**
+  String get coinSpendCategoryMessaging;
+
+  /// No description provided for @coinSpendCategoryGifts.
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual Gifts'**
+  String get coinSpendCategoryGifts;
+
+  /// No description provided for @coinSpendSeeWhoLiked.
+  ///
+  /// In en, this message translates to:
+  /// **'See Who Liked'**
+  String get coinSpendSeeWhoLiked;
+
+  /// No description provided for @coinSpendReadReceiptsDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Receipts (1 Day)'**
+  String get coinSpendReadReceiptsDay;
+
+  /// No description provided for @coinSpendRose.
+  ///
+  /// In en, this message translates to:
+  /// **'Rose'**
+  String get coinSpendRose;
+
+  /// No description provided for @coinSpendTeddyBear.
+  ///
+  /// In en, this message translates to:
+  /// **'Teddy Bear'**
+  String get coinSpendTeddyBear;
+
+  /// No description provided for @coinSpendDiamond.
+  ///
+  /// In en, this message translates to:
+  /// **'Diamond'**
+  String get coinSpendDiamond;
+
+  /// No description provided for @coinSpendSuperLikeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a super like to stand out'**
+  String get coinSpendSuperLikeDesc;
+
+  /// No description provided for @coinSpendBoostDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Be seen by more people for 30 mins'**
+  String get coinSpendBoostDesc;
+
+  /// No description provided for @coinSpendUndoDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo your last swipe'**
+  String get coinSpendUndoDesc;
+
+  /// No description provided for @coinSpendSeeWhoLikedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'See who liked your profile'**
+  String get coinSpendSeeWhoLikedDesc;
+
+  /// No description provided for @coinSpendReadReceiptsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'See when messages are read'**
+  String get coinSpendReadReceiptsDesc;
+
+  /// No description provided for @coinSpendRoseDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a virtual rose'**
+  String get coinSpendRoseDesc;
+
+  /// No description provided for @coinSpendTeddyBearDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a cute teddy bear'**
+  String get coinSpendTeddyBearDesc;
+
+  /// No description provided for @coinSpendDiamondDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a sparkling diamond'**
+  String get coinSpendDiamondDesc;
+
+  /// No description provided for @coinReasonFirstMatchReward.
+  ///
+  /// In en, this message translates to:
+  /// **'First Match Reward'**
+  String get coinReasonFirstMatchReward;
+
+  /// No description provided for @coinReasonCompleteProfileReward.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Profile Reward'**
+  String get coinReasonCompleteProfileReward;
+
+  /// No description provided for @coinReasonDailyLoginStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Login Streak'**
+  String get coinReasonDailyLoginStreak;
+
+  /// No description provided for @coinReasonAchievementUnlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement Unlocked'**
+  String get coinReasonAchievementUnlocked;
+
+  /// No description provided for @coinReasonMonthlyAllowance.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly Allowance'**
+  String get coinReasonMonthlyAllowance;
+
+  /// No description provided for @coinReasonGiftReceived.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift Received'**
+  String get coinReasonGiftReceived;
+
+  /// No description provided for @coinReasonGiftSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift Sent'**
+  String get coinReasonGiftSent;
+
+  /// No description provided for @coinReasonPromotionalBonus.
+  ///
+  /// In en, this message translates to:
+  /// **'Promotional Bonus'**
+  String get coinReasonPromotionalBonus;
+
+  /// No description provided for @coinReasonReferralBonus.
+  ///
+  /// In en, this message translates to:
+  /// **'Referral Bonus'**
+  String get coinReasonReferralBonus;
+
+  /// No description provided for @coinReasonCoinPurchase.
+  ///
+  /// In en, this message translates to:
+  /// **'Coin Purchase'**
+  String get coinReasonCoinPurchase;
+
+  /// No description provided for @coinReasonRefund.
+  ///
+  /// In en, this message translates to:
+  /// **'Refund'**
+  String get coinReasonRefund;
+
+  /// No description provided for @coinReasonUndoLastSwipe.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo Last Swipe'**
+  String get coinReasonUndoLastSwipe;
+
+  /// No description provided for @coinReasonSeeWhoLikedYou.
+  ///
+  /// In en, this message translates to:
+  /// **'See Who Liked You'**
+  String get coinReasonSeeWhoLikedYou;
+
+  /// No description provided for @coinReasonDirectMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Direct Message'**
+  String get coinReasonDirectMessage;
+
+  /// No description provided for @coinReasonFeaturePurchase.
+  ///
+  /// In en, this message translates to:
+  /// **'Feature Purchase'**
+  String get coinReasonFeaturePurchase;
+
+  /// No description provided for @coinReasonCoinsExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins Expired'**
+  String get coinReasonCoinsExpired;
+
+  /// No description provided for @coinReasonAdminAdjustment.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin Adjustment'**
+  String get coinReasonAdminAdjustment;
+
+  /// No description provided for @coinTxDescFirstMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations on your first match! Earned {amount} coins.'**
+  String coinTxDescFirstMatch(int amount);
+
+  /// No description provided for @coinTxDescCompleteProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile completed! Earned {amount} coins.'**
+  String coinTxDescCompleteProfile(int amount);
+
+  /// No description provided for @coinTxDescDailyStreak.
+  ///
+  /// In en, this message translates to:
+  /// **'Day {streak} login streak! Earned {amount} coins.'**
+  String coinTxDescDailyStreak(String streak, int amount);
+
+  /// No description provided for @coinTxDescAchievement.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement unlocked: {achievement}! Earned {amount} coins.'**
+  String coinTxDescAchievement(String achievement, int amount);
+
+  /// No description provided for @coinTxDescAchievementGeneric.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement unlocked! Earned {amount} coins.'**
+  String coinTxDescAchievementGeneric(int amount);
+
+  /// No description provided for @coinTxDescMonthlyAllowance.
+  ///
+  /// In en, this message translates to:
+  /// **'{tier} monthly allowance: {amount} coins.'**
+  String coinTxDescMonthlyAllowance(String tier, int amount);
+
+  /// No description provided for @coinTxDescGiftReceived.
+  ///
+  /// In en, this message translates to:
+  /// **'Received {amount} coins from {user}.'**
+  String coinTxDescGiftReceived(int amount, String user);
+
+  /// No description provided for @coinTxDescGiftSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Sent {amount} coins to {user}.'**
+  String coinTxDescGiftSent(int amount, String user);
+
+  /// No description provided for @coinTxDescPromotional.
+  ///
+  /// In en, this message translates to:
+  /// **'Promotional bonus from {campaign}: {amount} coins.'**
+  String coinTxDescPromotional(String campaign, int amount);
+
+  /// No description provided for @coinTxDescPromotionalGeneric.
+  ///
+  /// In en, this message translates to:
+  /// **'Promotional bonus: {amount} coins.'**
+  String coinTxDescPromotionalGeneric(int amount);
+
+  /// No description provided for @coinTxDescReferral.
+  ///
+  /// In en, this message translates to:
+  /// **'Referral bonus: earned {amount} coins.'**
+  String coinTxDescReferral(int amount);
+
+  /// No description provided for @coinTxDescPurchase.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchased {amount} coins.'**
+  String coinTxDescPurchase(int amount);
+
+  /// No description provided for @coinTxDescPurchasePackage.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchased {amount} coins ({package}).'**
+  String coinTxDescPurchasePackage(int amount, String package);
+
+  /// No description provided for @coinTxDescRefund.
+  ///
+  /// In en, this message translates to:
+  /// **'Refund: {amount} coins.'**
+  String coinTxDescRefund(int amount);
+
+  /// No description provided for @coinTxDescUsedFor.
+  ///
+  /// In en, this message translates to:
+  /// **'Used {amount} coins for {feature}.'**
+  String coinTxDescUsedFor(int amount, String feature);
+
+  /// No description provided for @coinTxDescExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} coins expired.'**
+  String coinTxDescExpired(int amount);
+
+  /// No description provided for @coinTxDescClawback.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} coins removed: the purchase was refunded.'**
+  String coinTxDescClawback(int amount);
+
+  /// No description provided for @coinTxDescAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin adjustment: {amount} coins ({reason}).'**
+  String coinTxDescAdmin(int amount, String reason);
+
+  /// No description provided for @coinTxDescAdminGeneric.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin adjustment: {amount} coins.'**
+  String coinTxDescAdminGeneric(int amount);
+
+  /// No description provided for @coinPromoPercentBonus.
+  ///
+  /// In en, this message translates to:
+  /// **'+{percent}% bonus coins'**
+  String coinPromoPercentBonus(int percent);
+
+  /// No description provided for @businessFollowerFallbackName.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo member'**
+  String get businessFollowerFallbackName;
+
+  /// No description provided for @bizCatRestaurant.
+  ///
+  /// In en, this message translates to:
+  /// **'Restaurant'**
+  String get bizCatRestaurant;
+
+  /// No description provided for @bizCatBar.
+  ///
+  /// In en, this message translates to:
+  /// **'Bar'**
+  String get bizCatBar;
+
+  /// No description provided for @bizCatCafe.
+  ///
+  /// In en, this message translates to:
+  /// **'Cafe'**
+  String get bizCatCafe;
+
+  /// No description provided for @bizCatNightclub.
+  ///
+  /// In en, this message translates to:
+  /// **'Nightclub'**
+  String get bizCatNightclub;
+
+  /// No description provided for @bizCatLounge.
+  ///
+  /// In en, this message translates to:
+  /// **'Lounge'**
+  String get bizCatLounge;
+
+  /// No description provided for @bizCatHotel.
+  ///
+  /// In en, this message translates to:
+  /// **'Hotel'**
+  String get bizCatHotel;
+
+  /// No description provided for @bizCatHostel.
+  ///
+  /// In en, this message translates to:
+  /// **'Hostel'**
+  String get bizCatHostel;
+
+  /// No description provided for @bizCatGuesthouse.
+  ///
+  /// In en, this message translates to:
+  /// **'Guesthouse'**
+  String get bizCatGuesthouse;
+
+  /// No description provided for @bizCatResort.
+  ///
+  /// In en, this message translates to:
+  /// **'Resort'**
+  String get bizCatResort;
+
+  /// No description provided for @bizCatBedAndBreakfast.
+  ///
+  /// In en, this message translates to:
+  /// **'Bed & Breakfast'**
+  String get bizCatBedAndBreakfast;
+
+  /// No description provided for @bizCatGym.
+  ///
+  /// In en, this message translates to:
+  /// **'Gym'**
+  String get bizCatGym;
+
+  /// No description provided for @bizCatYogaStudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Yoga Studio'**
+  String get bizCatYogaStudio;
+
+  /// No description provided for @bizCatFitnessStudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Fitness Studio'**
+  String get bizCatFitnessStudio;
+
+  /// No description provided for @bizCatSpa.
+  ///
+  /// In en, this message translates to:
+  /// **'Spa'**
+  String get bizCatSpa;
+
+  /// No description provided for @bizCatWellnessCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Wellness Center'**
+  String get bizCatWellnessCenter;
+
+  /// No description provided for @bizCatBeautySalon.
+  ///
+  /// In en, this message translates to:
+  /// **'Beauty Salon'**
+  String get bizCatBeautySalon;
+
+  /// No description provided for @bizCatBarbershop.
+  ///
+  /// In en, this message translates to:
+  /// **'Barbershop'**
+  String get bizCatBarbershop;
+
+  /// No description provided for @bizCatMuseum.
+  ///
+  /// In en, this message translates to:
+  /// **'Museum'**
+  String get bizCatMuseum;
+
+  /// No description provided for @bizCatArtGallery.
+  ///
+  /// In en, this message translates to:
+  /// **'Art Gallery'**
+  String get bizCatArtGallery;
+
+  /// No description provided for @bizCatTheater.
+  ///
+  /// In en, this message translates to:
+  /// **'Theater'**
+  String get bizCatTheater;
+
+  /// No description provided for @bizCatCinema.
+  ///
+  /// In en, this message translates to:
+  /// **'Cinema'**
+  String get bizCatCinema;
+
+  /// No description provided for @bizCatLiveMusicVenue.
+  ///
+  /// In en, this message translates to:
+  /// **'Live Music Venue'**
+  String get bizCatLiveMusicVenue;
+
+  /// No description provided for @bizCatCulturalCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural Center'**
+  String get bizCatCulturalCenter;
+
+  /// No description provided for @bizCatTourOperator.
+  ///
+  /// In en, this message translates to:
+  /// **'Tour Operator'**
+  String get bizCatTourOperator;
+
+  /// No description provided for @bizCatTravelAgency.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel Agency'**
+  String get bizCatTravelAgency;
+
+  /// No description provided for @bizCatLanguageSchool.
+  ///
+  /// In en, this message translates to:
+  /// **'Language School'**
+  String get bizCatLanguageSchool;
+
+  /// No description provided for @bizCatCookingSchool.
+  ///
+  /// In en, this message translates to:
+  /// **'Cooking School'**
+  String get bizCatCookingSchool;
+
+  /// No description provided for @bizCatDanceStudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Dance Studio'**
+  String get bizCatDanceStudio;
+
+  /// No description provided for @bizCatCoworkingSpace.
+  ///
+  /// In en, this message translates to:
+  /// **'Coworking Space'**
+  String get bizCatCoworkingSpace;
+
+  /// No description provided for @bizCatEventVenue.
+  ///
+  /// In en, this message translates to:
+  /// **'Event Venue'**
+  String get bizCatEventVenue;
+
+  /// No description provided for @bizCatConferenceCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Conference Center'**
+  String get bizCatConferenceCenter;
+
+  /// No description provided for @bizCatShopRetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Shop / Retail'**
+  String get bizCatShopRetail;
+
+  /// No description provided for @bizCatBoutique.
+  ///
+  /// In en, this message translates to:
+  /// **'Boutique'**
+  String get bizCatBoutique;
+
+  /// No description provided for @bizCatBookstore.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookstore'**
+  String get bizCatBookstore;
+
+  /// No description provided for @bizCatMarket.
+  ///
+  /// In en, this message translates to:
+  /// **'Market'**
+  String get bizCatMarket;
+
+  /// No description provided for @bizCatWinery.
+  ///
+  /// In en, this message translates to:
+  /// **'Winery'**
+  String get bizCatWinery;
+
+  /// No description provided for @bizCatBrewery.
+  ///
+  /// In en, this message translates to:
+  /// **'Brewery'**
+  String get bizCatBrewery;
+
+  /// No description provided for @bizCatDistillery.
+  ///
+  /// In en, this message translates to:
+  /// **'Distillery'**
+  String get bizCatDistillery;
+
+  /// No description provided for @bizCatFoodTruck.
+  ///
+  /// In en, this message translates to:
+  /// **'Food Truck'**
+  String get bizCatFoodTruck;
+
+  /// No description provided for @bizCatBakery.
+  ///
+  /// In en, this message translates to:
+  /// **'Bakery'**
+  String get bizCatBakery;
+
+  /// No description provided for @bizCatCoffeeRoastery.
+  ///
+  /// In en, this message translates to:
+  /// **'Coffee Roastery'**
+  String get bizCatCoffeeRoastery;
+
+  /// No description provided for @bizCatSportsClub.
+  ///
+  /// In en, this message translates to:
+  /// **'Sports Club'**
+  String get bizCatSportsClub;
+
+  /// No description provided for @bizCatAdventureAndOutdoor.
+  ///
+  /// In en, this message translates to:
+  /// **'Adventure & Outdoor'**
+  String get bizCatAdventureAndOutdoor;
+
+  /// No description provided for @bizCatDivingCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Diving Center'**
+  String get bizCatDivingCenter;
+
+  /// No description provided for @bizCatPhotographyStudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Photography Studio'**
+  String get bizCatPhotographyStudio;
+
+  /// No description provided for @bizCatCoachingAndConsulting.
+  ///
+  /// In en, this message translates to:
+  /// **'Coaching & Consulting'**
+  String get bizCatCoachingAndConsulting;
+
+  /// No description provided for @bizCatNonprofitAndNGO.
+  ///
+  /// In en, this message translates to:
+  /// **'Nonprofit & NGO'**
+  String get bizCatNonprofitAndNGO;
+
+  /// No description provided for @bizCatCommunityCenter.
+  ///
+  /// In en, this message translates to:
+  /// **'Community Center'**
+  String get bizCatCommunityCenter;
+
+  /// No description provided for @bizCatTransportationService.
+  ///
+  /// In en, this message translates to:
+  /// **'Transportation Service'**
+  String get bizCatTransportationService;
+
+  /// No description provided for @bizCatOther.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get bizCatOther;
+
+  /// No description provided for @bizCatGroupFoodAndDrink.
+  ///
+  /// In en, this message translates to:
+  /// **'Food & Drink'**
+  String get bizCatGroupFoodAndDrink;
+
+  /// No description provided for @bizCatGroupNightlife.
+  ///
+  /// In en, this message translates to:
+  /// **'Nightlife'**
+  String get bizCatGroupNightlife;
+
+  /// No description provided for @bizCatGroupStay.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay'**
+  String get bizCatGroupStay;
+
+  /// No description provided for @bizCatGroupWellness.
+  ///
+  /// In en, this message translates to:
+  /// **'Wellness'**
+  String get bizCatGroupWellness;
+
+  /// No description provided for @bizCatGroupCulture.
+  ///
+  /// In en, this message translates to:
+  /// **'Culture'**
+  String get bizCatGroupCulture;
+
+  /// No description provided for @bizCatGroupTravelAndTours.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel & Tours'**
+  String get bizCatGroupTravelAndTours;
+
+  /// No description provided for @bizCatGroupLearnAndWork.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn & Work'**
+  String get bizCatGroupLearnAndWork;
+
+  /// No description provided for @bizCatGroupEvents.
+  ///
+  /// In en, this message translates to:
+  /// **'Events'**
+  String get bizCatGroupEvents;
+
+  /// No description provided for @bizCatGroupRetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Retail'**
+  String get bizCatGroupRetail;
+
+  /// No description provided for @bizCatGroupCommunityAndServices.
+  ///
+  /// In en, this message translates to:
+  /// **'Community & Services'**
+  String get bizCatGroupCommunityAndServices;
+
+  /// No description provided for @gamificationJourneyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Journey'**
+  String get gamificationJourneyTitle;
+
+  /// No description provided for @gamificationJourneyMilestonesCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'{completed} of {total} milestones completed'**
+  String gamificationJourneyMilestonesCompleted(int completed, int total);
+
+  /// No description provided for @gamificationJourneyOverallProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Overall Progress'**
+  String get gamificationJourneyOverallProgress;
+
+  /// No description provided for @gamificationJourneyNoMilestones.
+  ///
+  /// In en, this message translates to:
+  /// **'No milestones yet'**
+  String get gamificationJourneyNoMilestones;
+
+  /// No description provided for @gamificationJourneyCompletePrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete previous categories to unlock'**
+  String get gamificationJourneyCompletePrevious;
+
+  /// No description provided for @gamificationJourneyTabStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get gamificationJourneyTabStart;
+
+  /// No description provided for @gamificationJourneyTabMaster.
+  ///
+  /// In en, this message translates to:
+  /// **'Master'**
+  String get gamificationJourneyTabMaster;
+
+  /// No description provided for @gamificationJourneyCatGettingStarted.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting Started'**
+  String get gamificationJourneyCatGettingStarted;
+
+  /// No description provided for @gamificationJourneyCatSocializing.
+  ///
+  /// In en, this message translates to:
+  /// **'Socializing'**
+  String get gamificationJourneyCatSocializing;
+
+  /// No description provided for @gamificationJourneyCatMastery.
+  ///
+  /// In en, this message translates to:
+  /// **'Mastery'**
+  String get gamificationJourneyCatMastery;
+
+  /// No description provided for @gamificationJourneyCatGettingStartedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your profile and get familiar with the app'**
+  String get gamificationJourneyCatGettingStartedDesc;
+
+  /// No description provided for @gamificationJourneyCatSocializingDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect with others and build relationships'**
+  String get gamificationJourneyCatSocializingDesc;
+
+  /// No description provided for @gamificationJourneyCatPremiumDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock premium features and rewards'**
+  String get gamificationJourneyCatPremiumDesc;
+
+  /// No description provided for @gamificationJourneyCatMasteryDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Become a master of the dating game'**
+  String get gamificationJourneyCatMasteryDesc;
+
+  /// No description provided for @gamificationJourneyCatSpecialDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Exclusive milestones and achievements'**
+  String get gamificationJourneyCatSpecialDesc;
+
+  /// No description provided for @gamificationJourneyCompleteProfileName.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Pro'**
+  String get gamificationJourneyCompleteProfileName;
+
+  /// No description provided for @gamificationJourneyCompleteProfileDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your profile 100%'**
+  String get gamificationJourneyCompleteProfileDesc;
+
+  /// No description provided for @gamificationJourneyAddPhotosName.
+  ///
+  /// In en, this message translates to:
+  /// **'Picture Perfect'**
+  String get gamificationJourneyAddPhotosName;
+
+  /// No description provided for @gamificationJourneyAddPhotosDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Add 5 photos to your profile'**
+  String get gamificationJourneyAddPhotosDesc;
+
+  /// No description provided for @gamificationJourneyGetVerifiedName.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified User'**
+  String get gamificationJourneyGetVerifiedName;
+
+  /// No description provided for @gamificationJourneyGetVerifiedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete photo verification'**
+  String get gamificationJourneyGetVerifiedDesc;
+
+  /// No description provided for @gamificationJourneyFirstMatchName.
+  ///
+  /// In en, this message translates to:
+  /// **'First Connection'**
+  String get gamificationJourneyFirstMatchName;
+
+  /// No description provided for @gamificationJourneyFirstMatchDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get your first match'**
+  String get gamificationJourneyFirstMatchDesc;
+
+  /// No description provided for @gamificationJourneyTenMatchesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Rising Star'**
+  String get gamificationJourneyTenMatchesName;
+
+  /// No description provided for @gamificationJourneyTenMatchesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 10 matches'**
+  String get gamificationJourneyTenMatchesDesc;
+
+  /// No description provided for @gamificationJourneyFiftyMatchesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Social Butterfly'**
+  String get gamificationJourneyFiftyMatchesName;
+
+  /// No description provided for @gamificationJourneyFiftyMatchesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 50 matches'**
+  String get gamificationJourneyFiftyMatchesDesc;
+
+  /// No description provided for @gamificationJourneyFirstMessageName.
+  ///
+  /// In en, this message translates to:
+  /// **'Ice Breaker'**
+  String get gamificationJourneyFirstMessageName;
+
+  /// No description provided for @gamificationJourneyFirstMessageDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send your first message'**
+  String get gamificationJourneyFirstMessageDesc;
+
+  /// No description provided for @gamificationJourneyHundredMessagesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversation King'**
+  String get gamificationJourneyHundredMessagesName;
+
+  /// No description provided for @gamificationJourneyHundredMessagesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 100 messages'**
+  String get gamificationJourneyHundredMessagesDesc;
+
+  /// No description provided for @gamificationJourneyFirstVideoCallName.
+  ///
+  /// In en, this message translates to:
+  /// **'Face to Face'**
+  String get gamificationJourneyFirstVideoCallName;
+
+  /// No description provided for @gamificationJourneyFirstVideoCallDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your first video call'**
+  String get gamificationJourneyFirstVideoCallDesc;
+
+  /// No description provided for @gamificationJourneyTenVideoCallsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Pro'**
+  String get gamificationJourneyTenVideoCallsName;
+
+  /// No description provided for @gamificationJourneyTenVideoCallsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 10 video calls'**
+  String get gamificationJourneyTenVideoCallsDesc;
+
+  /// No description provided for @gamificationJourneyWeekStreakName.
+  ///
+  /// In en, this message translates to:
+  /// **'Dedicated User'**
+  String get gamificationJourneyWeekStreakName;
+
+  /// No description provided for @gamificationJourneyWeekStreakDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Maintain a 7-day login streak'**
+  String get gamificationJourneyWeekStreakDesc;
+
+  /// No description provided for @gamificationJourneyMonthStreakName.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Dedicated'**
+  String get gamificationJourneyMonthStreakName;
+
+  /// No description provided for @gamificationJourneyMonthStreakDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Maintain a 30-day login streak'**
+  String get gamificationJourneyMonthStreakDesc;
+
+  /// No description provided for @gamificationJourneyUpgradeSilverName.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver Member'**
+  String get gamificationJourneyUpgradeSilverName;
+
+  /// No description provided for @gamificationJourneyUpgradeSilverDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Silver VIP'**
+  String get gamificationJourneyUpgradeSilverDesc;
+
+  /// No description provided for @gamificationJourneyUpgradeGoldName.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold Member'**
+  String get gamificationJourneyUpgradeGoldName;
+
+  /// No description provided for @gamificationJourneyUpgradeGoldDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Gold VIP'**
+  String get gamificationJourneyUpgradeGoldDesc;
+
+  /// No description provided for @gamificationJourneyUpgradePlatinumName.
+  ///
+  /// In en, this message translates to:
+  /// **'Platinum Member'**
+  String get gamificationJourneyUpgradePlatinumName;
+
+  /// No description provided for @gamificationJourneyUpgradePlatinumDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Upgrade to Platinum VIP'**
+  String get gamificationJourneyUpgradePlatinumDesc;
+
+  /// No description provided for @gamificationJourneyTenAchievementsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement Hunter'**
+  String get gamificationJourneyTenAchievementsName;
+
+  /// No description provided for @gamificationJourneyTenAchievementsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Earn 10 achievements'**
+  String get gamificationJourneyTenAchievementsDesc;
+
+  /// No description provided for @gamificationJourneyFiftyAchievementsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Achievement Master'**
+  String get gamificationJourneyFiftyAchievementsName;
+
+  /// No description provided for @gamificationJourneyFiftyAchievementsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Earn 50 achievements'**
+  String get gamificationJourneyFiftyAchievementsDesc;
+
+  /// No description provided for @gamificationJourneyHundredMatchesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Centurion'**
+  String get gamificationJourneyHundredMatchesName;
+
+  /// No description provided for @gamificationJourneyHundredMatchesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 100 matches'**
+  String get gamificationJourneyHundredMatchesDesc;
+
+  /// No description provided for @gamificationStreakMilestone3Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting Started'**
+  String get gamificationStreakMilestone3Name;
+
+  /// No description provided for @gamificationStreakMilestone7Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Week Warrior'**
+  String get gamificationStreakMilestone7Name;
+
+  /// No description provided for @gamificationStreakMilestone14Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Two Week Champ'**
+  String get gamificationStreakMilestone14Name;
+
+  /// No description provided for @gamificationStreakMilestone30Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly Master'**
+  String get gamificationStreakMilestone30Name;
+
+  /// No description provided for @gamificationStreakMilestone60Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Two Month Champion'**
+  String get gamificationStreakMilestone60Name;
+
+  /// No description provided for @gamificationStreakMilestone90Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Quarter Year Legend'**
+  String get gamificationStreakMilestone90Name;
+
+  /// No description provided for @gamificationStreakMilestone180Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Half Year Hero'**
+  String get gamificationStreakMilestone180Name;
+
+  /// No description provided for @gamificationStreakMilestone365Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Year of Love'**
+  String get gamificationStreakMilestone365Name;
+
+  /// No description provided for @gamificationStreakMilestoneDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Log in for {days} consecutive days'**
+  String gamificationStreakMilestoneDesc(int days);
+
+  /// No description provided for @gamificationChallengeSend3MessagesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick Chat'**
+  String get gamificationChallengeSend3MessagesName;
+
+  /// No description provided for @gamificationChallengeSend3MessagesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 3 messages'**
+  String get gamificationChallengeSend3MessagesDesc;
+
+  /// No description provided for @gamificationChallengeSend5MessagesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Message Master'**
+  String get gamificationChallengeSend5MessagesName;
+
+  /// No description provided for @gamificationChallengeSend5MessagesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 5 messages to your matches'**
+  String get gamificationChallengeSend5MessagesDesc;
+
+  /// No description provided for @gamificationChallengeSend10MessagesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversation King'**
+  String get gamificationChallengeSend10MessagesName;
+
+  /// No description provided for @gamificationChallengeSend10MessagesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 10 messages today'**
+  String get gamificationChallengeSend10MessagesDesc;
+
+  /// No description provided for @gamificationChallengeSend15MessagesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat Marathon'**
+  String get gamificationChallengeSend15MessagesName;
+
+  /// No description provided for @gamificationChallengeSend15MessagesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 15 messages today'**
+  String get gamificationChallengeSend15MessagesDesc;
+
+  /// No description provided for @gamificationChallengeGet1MatchName.
+  ///
+  /// In en, this message translates to:
+  /// **'First Spark'**
+  String get gamificationChallengeGet1MatchName;
+
+  /// No description provided for @gamificationChallengeGet1MatchDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 1 new match today'**
+  String get gamificationChallengeGet1MatchDesc;
+
+  /// No description provided for @gamificationChallengeGet3MatchesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Match Maker'**
+  String get gamificationChallengeGet3MatchesName;
+
+  /// No description provided for @gamificationChallengeGet3MatchesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 3 new matches today'**
+  String get gamificationChallengeGet3MatchesDesc;
+
+  /// No description provided for @gamificationChallengeGet5MatchesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Love Magnet'**
+  String get gamificationChallengeGet5MatchesName;
+
+  /// No description provided for @gamificationChallengeGet5MatchesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 5 new matches today'**
+  String get gamificationChallengeGet5MatchesDesc;
+
+  /// No description provided for @gamificationChallengeSend1SuperlikeName.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority Pick'**
+  String get gamificationChallengeSend1SuperlikeName;
+
+  /// No description provided for @gamificationChallengeSend1SuperlikeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 1 super like'**
+  String get gamificationChallengeSend1SuperlikeDesc;
+
+  /// No description provided for @gamificationChallengeSend3SuperlikesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Liker'**
+  String get gamificationChallengeSend3SuperlikesName;
+
+  /// No description provided for @gamificationChallengeSend3SuperlikesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 3 super likes'**
+  String get gamificationChallengeSend3SuperlikesDesc;
+
+  /// No description provided for @gamificationChallengeSend5SuperlikesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Star'**
+  String get gamificationChallengeSend5SuperlikesName;
+
+  /// No description provided for @gamificationChallengeSend5SuperlikesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 5 super likes'**
+  String get gamificationChallengeSend5SuperlikesDesc;
+
+  /// No description provided for @gamificationChallengeVideoCall1Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Enthusiast'**
+  String get gamificationChallengeVideoCall1Name;
+
+  /// No description provided for @gamificationChallengeVideoCall1Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 1 video call'**
+  String get gamificationChallengeVideoCall1Desc;
+
+  /// No description provided for @gamificationChallengeVideoCall2Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Pro'**
+  String get gamificationChallengeVideoCall2Name;
+
+  /// No description provided for @gamificationChallengeVideoCall2Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 2 video calls'**
+  String get gamificationChallengeVideoCall2Desc;
+
+  /// No description provided for @gamificationChallengeAddPhotoName.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo Refresh'**
+  String get gamificationChallengeAddPhotoName;
+
+  /// No description provided for @gamificationChallengeAddPhotoDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Add or update a profile photo'**
+  String get gamificationChallengeAddPhotoDesc;
+
+  /// No description provided for @gamificationChallengeAdd2PhotosName.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo Gallery'**
+  String get gamificationChallengeAdd2PhotosName;
+
+  /// No description provided for @gamificationChallengeAdd2PhotosDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Add 2 new profile photos'**
+  String get gamificationChallengeAdd2PhotosDesc;
+
+  /// No description provided for @gamificationChallengeSend1GiftName.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift Giver'**
+  String get gamificationChallengeSend1GiftName;
+
+  /// No description provided for @gamificationChallengeSend1GiftDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 1 gift to a match'**
+  String get gamificationChallengeSend1GiftDesc;
+
+  /// No description provided for @gamificationChallengeSend3GiftsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Generous Heart'**
+  String get gamificationChallengeSend3GiftsName;
+
+  /// No description provided for @gamificationChallengeSend3GiftsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 3 gifts today'**
+  String get gamificationChallengeSend3GiftsDesc;
+
+  /// No description provided for @gamificationChallengeSend5GiftsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift Master'**
+  String get gamificationChallengeSend5GiftsName;
+
+  /// No description provided for @gamificationChallengeSend5GiftsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 5 gifts today'**
+  String get gamificationChallengeSend5GiftsDesc;
+
+  /// No description provided for @gamificationChallengeChatStarterName.
+  ///
+  /// In en, this message translates to:
+  /// **'Ice Breaker'**
+  String get gamificationChallengeChatStarterName;
+
+  /// No description provided for @gamificationChallengeChatStarterDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 7 messages to different matches'**
+  String get gamificationChallengeChatStarterDesc;
+
+  /// No description provided for @gamificationChallengeSocialButterflyName.
+  ///
+  /// In en, this message translates to:
+  /// **'Social Butterfly'**
+  String get gamificationChallengeSocialButterflyName;
+
+  /// No description provided for @gamificationChallengeSocialButterflyDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 20 messages today'**
+  String get gamificationChallengeSocialButterflyDesc;
+
+  /// No description provided for @gamificationChallengeMatchRushName.
+  ///
+  /// In en, this message translates to:
+  /// **'Match Rush'**
+  String get gamificationChallengeMatchRushName;
+
+  /// No description provided for @gamificationChallengeMatchRushDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 7 matches today'**
+  String get gamificationChallengeMatchRushDesc;
+
+  /// No description provided for @gamificationChallengeVideoMarathonName.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Marathon'**
+  String get gamificationChallengeVideoMarathonName;
+
+  /// No description provided for @gamificationChallengeVideoMarathonDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 3 video calls'**
+  String get gamificationChallengeVideoMarathonDesc;
+
+  /// No description provided for @gamificationChallengeWeeklyMessages30Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat Enthusiast'**
+  String get gamificationChallengeWeeklyMessages30Name;
+
+  /// No description provided for @gamificationChallengeWeeklyMessages30Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 30 messages this week'**
+  String get gamificationChallengeWeeklyMessages30Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyMessages50Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat Master'**
+  String get gamificationChallengeWeeklyMessages50Name;
+
+  /// No description provided for @gamificationChallengeWeeklyMessages50Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 50 messages this week'**
+  String get gamificationChallengeWeeklyMessages50Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyMessages100Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat Legend'**
+  String get gamificationChallengeWeeklyMessages100Name;
+
+  /// No description provided for @gamificationChallengeWeeklyMessages100Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 100 messages this week'**
+  String get gamificationChallengeWeeklyMessages100Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyMatches10Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly Connector'**
+  String get gamificationChallengeWeeklyMatches10Name;
+
+  /// No description provided for @gamificationChallengeWeeklyMatches10Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 10 matches this week'**
+  String get gamificationChallengeWeeklyMatches10Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyMatches20Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly Match Champion'**
+  String get gamificationChallengeWeeklyMatches20Name;
+
+  /// No description provided for @gamificationChallengeWeeklyMatches20Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 20 matches this week'**
+  String get gamificationChallengeWeeklyMatches20Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyMatches30Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Match Machine'**
+  String get gamificationChallengeWeeklyMatches30Name;
+
+  /// No description provided for @gamificationChallengeWeeklyMatches30Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 30 matches this week'**
+  String get gamificationChallengeWeeklyMatches30Desc;
+
+  /// No description provided for @gamificationChallengeWeeklySuperlikes5Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly Super Liker'**
+  String get gamificationChallengeWeeklySuperlikes5Name;
+
+  /// No description provided for @gamificationChallengeWeeklySuperlikes5Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 5 super likes this week'**
+  String get gamificationChallengeWeeklySuperlikes5Desc;
+
+  /// No description provided for @gamificationChallengeWeeklySuperlikes10Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Fan'**
+  String get gamificationChallengeWeeklySuperlikes10Name;
+
+  /// No description provided for @gamificationChallengeWeeklySuperlikes10Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 10 super likes this week'**
+  String get gamificationChallengeWeeklySuperlikes10Desc;
+
+  /// No description provided for @gamificationChallengeWeeklySuperlikes15Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Priority King'**
+  String get gamificationChallengeWeeklySuperlikes15Name;
+
+  /// No description provided for @gamificationChallengeWeeklySuperlikes15Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 15 super likes this week'**
+  String get gamificationChallengeWeeklySuperlikes15Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyVideo3Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Socialite'**
+  String get gamificationChallengeWeeklyVideo3Name;
+
+  /// No description provided for @gamificationChallengeWeeklyVideo3Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 3 video calls this week'**
+  String get gamificationChallengeWeeklyVideo3Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyVideo5Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Star'**
+  String get gamificationChallengeWeeklyVideo5Name;
+
+  /// No description provided for @gamificationChallengeWeeklyVideo5Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 5 video calls this week'**
+  String get gamificationChallengeWeeklyVideo5Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyGifts5Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Weekly Gift Giver'**
+  String get gamificationChallengeWeeklyGifts5Name;
+
+  /// No description provided for @gamificationChallengeWeeklyGifts5Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 5 gifts this week'**
+  String get gamificationChallengeWeeklyGifts5Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyGifts10Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Generous Soul'**
+  String get gamificationChallengeWeeklyGifts10Name;
+
+  /// No description provided for @gamificationChallengeWeeklyGifts10Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 10 gifts this week'**
+  String get gamificationChallengeWeeklyGifts10Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyPhotos3Name.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo Week'**
+  String get gamificationChallengeWeeklyPhotos3Name;
+
+  /// No description provided for @gamificationChallengeWeeklyPhotos3Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Add 3 photos this week'**
+  String get gamificationChallengeWeeklyPhotos3Desc;
+
+  /// No description provided for @gamificationChallengeWeeklyPerfectName.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfect Week'**
+  String get gamificationChallengeWeeklyPerfectName;
+
+  /// No description provided for @gamificationChallengeWeeklyPerfectDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete all daily challenges 7 days in a row'**
+  String get gamificationChallengeWeeklyPerfectDesc;
+
+  /// No description provided for @gamificationChallengeValentineMatchesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Love Connections'**
+  String get gamificationChallengeValentineMatchesName;
+
+  /// No description provided for @gamificationChallengeValentineMatchesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 14 matches during Valentine’s Week (1 per day)'**
+  String get gamificationChallengeValentineMatchesDesc;
+
+  /// No description provided for @gamificationChallengeValentineVideoName.
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual Date Night'**
+  String get gamificationChallengeValentineVideoName;
+
+  /// No description provided for @gamificationChallengeValentineVideoDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete 3 video calls'**
+  String get gamificationChallengeValentineVideoDesc;
+
+  /// No description provided for @gamificationChallengeSummerMatchesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Beach Vibes'**
+  String get gamificationChallengeSummerMatchesName;
+
+  /// No description provided for @gamificationChallengeSummerMatchesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Get 30 matches this summer'**
+  String get gamificationChallengeSummerMatchesDesc;
+
+  /// No description provided for @gamificationChallengeHolidayGiftsName.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift Giver'**
+  String get gamificationChallengeHolidayGiftsName;
+
+  /// No description provided for @gamificationChallengeHolidayGiftsDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 10 coin gifts to matches'**
+  String get gamificationChallengeHolidayGiftsDesc;
+
+  /// No description provided for @gamificationChallengeHolidayMessagesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Holiday Cheer'**
+  String get gamificationChallengeHolidayMessagesName;
+
+  /// No description provided for @gamificationChallengeHolidayMessagesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Send 100 messages'**
+  String get gamificationChallengeHolidayMessagesDesc;
+
+  /// No description provided for @gamificationEventValentinesName.
+  ///
+  /// In en, this message translates to:
+  /// **'Valentine’s Week'**
+  String get gamificationEventValentinesName;
+
+  /// No description provided for @gamificationEventValentinesDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Spread the love this Valentine’s Week!'**
+  String get gamificationEventValentinesDesc;
+
+  /// No description provided for @gamificationEventSummerName.
+  ///
+  /// In en, this message translates to:
+  /// **'Summer Love'**
+  String get gamificationEventSummerName;
+
+  /// No description provided for @gamificationEventSummerDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Find your summer romance!'**
+  String get gamificationEventSummerDesc;
+
+  /// No description provided for @gamificationEventHolidayName.
+  ///
+  /// In en, this message translates to:
+  /// **'Holiday Season'**
+  String get gamificationEventHolidayName;
+
+  /// No description provided for @gamificationEventHolidayDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Find love this holiday season!'**
+  String get gamificationEventHolidayDesc;
+
+  /// No description provided for @travelExploreTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel Explore'**
+  String get travelExploreTitle;
+
+  /// No description provided for @travelExploreInMyCity.
+  ///
+  /// In en, this message translates to:
+  /// **'In my city'**
+  String get travelExploreInMyCity;
+
+  /// No description provided for @travelExploreWorldwide.
+  ///
+  /// In en, this message translates to:
+  /// **'Worldwide'**
+  String get travelExploreWorldwide;
+
+  /// No description provided for @travelExploreTravelersIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Travelers in {city}'**
+  String travelExploreTravelersIn(String city);
+
+  /// No description provided for @travelExploreUnknownLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown location'**
+  String get travelExploreUnknownLocation;
+
+  /// No description provided for @travelExploreLocalGuides.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Guides'**
+  String get travelExploreLocalGuides;
+
+  /// No description provided for @travelExploreCities.
+  ///
+  /// In en, this message translates to:
+  /// **'Cities'**
+  String get travelExploreCities;
+
+  /// No description provided for @travelExploreGuideIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Guide in {city}'**
+  String travelExploreGuideIn(String city);
+
+  /// No description provided for @travelExploreNoTravelersInCity.
+  ///
+  /// In en, this message translates to:
+  /// **'No travelers in {city} right now'**
+  String travelExploreNoTravelersInCity(String city);
+
+  /// No description provided for @travelExploreNoTravelers.
+  ///
+  /// In en, this message translates to:
+  /// **'No travelers found'**
+  String get travelExploreNoTravelers;
+
+  /// No description provided for @travelExploreTryWorldwide.
+  ///
+  /// In en, this message translates to:
+  /// **'Try switching to Worldwide to see all travelers'**
+  String get travelExploreTryWorldwide;
+
+  /// No description provided for @travelExploreCheckBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Check back later for active travelers'**
+  String get travelExploreCheckBack;
+
+  /// No description provided for @travelExploreShowWorldwide.
+  ///
+  /// In en, this message translates to:
+  /// **'Show Worldwide'**
+  String get travelExploreShowWorldwide;
+
+  /// No description provided for @discoveryDealBreakerSmoking.
+  ///
+  /// In en, this message translates to:
+  /// **'Smoking'**
+  String get discoveryDealBreakerSmoking;
+
+  /// No description provided for @discoveryDealBreakerDrinking.
+  ///
+  /// In en, this message translates to:
+  /// **'Drinking'**
+  String get discoveryDealBreakerDrinking;
+
+  /// No description provided for @discoveryDealBreakerNoBio.
+  ///
+  /// In en, this message translates to:
+  /// **'No bio'**
+  String get discoveryDealBreakerNoBio;
+
+  /// No description provided for @discoveryDealBreakerNoPhotos.
+  ///
+  /// In en, this message translates to:
+  /// **'No photos'**
+  String get discoveryDealBreakerNoPhotos;
+
+  /// No description provided for @discoveryDealBreakerDifferentReligion.
+  ///
+  /// In en, this message translates to:
+  /// **'Different religion'**
+  String get discoveryDealBreakerDifferentReligion;
+
+  /// No description provided for @discoveryDealBreakerDifferentPolitics.
+  ///
+  /// In en, this message translates to:
+  /// **'Different politics'**
+  String get discoveryDealBreakerDifferentPolitics;
+
+  /// No description provided for @discoveryDealBreakerHasChildren.
+  ///
+  /// In en, this message translates to:
+  /// **'Has children'**
+  String get discoveryDealBreakerHasChildren;
+
+  /// No description provided for @discoveryDealBreakerWantsChildren.
+  ///
+  /// In en, this message translates to:
+  /// **'Wants children'**
+  String get discoveryDealBreakerWantsChildren;
+
+  /// No description provided for @discoveryDealBreakerLongDistance.
+  ///
+  /// In en, this message translates to:
+  /// **'Long distance'**
+  String get discoveryDealBreakerLongDistance;
+
+  /// No description provided for @discoveryDealBreakerNonMonogamy.
+  ///
+  /// In en, this message translates to:
+  /// **'Non-monogamy'**
+  String get discoveryDealBreakerNonMonogamy;
+
+  /// No description provided for @discoveryPrefCountryUserCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 user} other{{count} users}}'**
+  String discoveryPrefCountryUserCount(int count);
+
+  /// No description provided for @discoveryGridAuto.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto'**
+  String get discoveryGridAuto;
+
+  /// No description provided for @discoveryMatchFallbackName.
+  ///
+  /// In en, this message translates to:
+  /// **'Match'**
+  String get discoveryMatchFallbackName;
+
+  /// No description provided for @discoveryThisUser.
+  ///
+  /// In en, this message translates to:
+  /// **'this user'**
+  String get discoveryThisUser;
+
+  /// No description provided for @discoveryActionNope.
+  ///
+  /// In en, this message translates to:
+  /// **'Nope'**
+  String get discoveryActionNope;
+
+  /// No description provided for @exploreTierTester.
+  ///
+  /// In en, this message translates to:
+  /// **'Tester'**
+  String get exploreTierTester;
+
+  /// No description provided for @chatCulturalContextTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural Context'**
+  String get chatCulturalContextTitle;
+
+  /// No description provided for @chatCulturalContextLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural context'**
+  String get chatCulturalContextLink;
+
+  /// No description provided for @chatWordBreakdownTierRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Word breakdown is available for Silver, Gold, and Platinum members'**
+  String get chatWordBreakdownTierRequired;
+
+  /// No description provided for @chatPreviewSticker.
+  ///
+  /// In en, this message translates to:
+  /// **'Sticker'**
+  String get chatPreviewSticker;
+
+  /// No description provided for @chatPreviewVoiceMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice message'**
+  String get chatPreviewVoiceMessage;
+
+  /// No description provided for @chatPreviewAlbumShared.
+  ///
+  /// In en, this message translates to:
+  /// **'Album shared'**
+  String get chatPreviewAlbumShared;
+
+  /// No description provided for @chatPreviewAlbumRevoked.
+  ///
+  /// In en, this message translates to:
+  /// **'Album revoked'**
+  String get chatPreviewAlbumRevoked;
+
+  /// No description provided for @chatPreviewEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Event'**
+  String get chatPreviewEvent;
+
+  /// No description provided for @chatPreviewSayHi.
+  ///
+  /// In en, this message translates to:
+  /// **'Say hi to your match!'**
+  String get chatPreviewSayHi;
+
+  /// No description provided for @chatTimeShortMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}m'**
+  String chatTimeShortMinutes(int count);
+
+  /// No description provided for @chatTimeShortHours.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}h'**
+  String chatTimeShortHours(int count);
+
+  /// No description provided for @chatTimeShortDays.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}d'**
+  String chatTimeShortDays(int count);
+
+  /// No description provided for @chatNotificationsMutedForChat.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications muted for this chat'**
+  String get chatNotificationsMutedForChat;
+
+  /// No description provided for @chatNotificationsUnmuted.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications unmuted'**
+  String get chatNotificationsUnmuted;
+
+  /// No description provided for @chatMuteNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute notifications'**
+  String get chatMuteNotifications;
+
+  /// No description provided for @chatUnmuteNotifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Unmute notifications'**
+  String get chatUnmuteNotifications;
+
+  /// No description provided for @chatAlbumSelectCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Select ({count})'**
+  String chatAlbumSelectCount(int count);
+
+  /// No description provided for @chatAlbumPhotosSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 photo selected} other{{count} photos selected}}'**
+  String chatAlbumPhotosSelected(int count);
+
+  /// No description provided for @chatSessionXp.
+  ///
+  /// In en, this message translates to:
+  /// **'{xp} XP'**
+  String chatSessionXp(int xp);
+
+  /// No description provided for @chatPhraseHowAreYou.
+  ///
+  /// In en, this message translates to:
+  /// **'How are you?'**
+  String get chatPhraseHowAreYou;
+
+  /// No description provided for @chatPhraseGoodMorning.
+  ///
+  /// In en, this message translates to:
+  /// **'Good morning!'**
+  String get chatPhraseGoodMorning;
+
+  /// No description provided for @chatPhraseAllGood.
+  ///
+  /// In en, this message translates to:
+  /// **'All good?'**
+  String get chatPhraseAllGood;
+
+  /// No description provided for @chatPhrasePleasedToMeetYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Pleased to meet you!'**
+  String get chatPhrasePleasedToMeetYou;
+
+  /// No description provided for @chatPhraseNiceToMeetYou.
+  ///
+  /// In en, this message translates to:
+  /// **'Nice to meet you!'**
+  String get chatPhraseNiceToMeetYou;
+
+  /// No description provided for @chatPhraseWhatsUp.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s up?'**
+  String get chatPhraseWhatsUp;
+
+  /// No description provided for @chatSupportAiBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'AI'**
+  String get chatSupportAiBadge;
+
+  /// No description provided for @chatGroupFallbackName.
+  ///
+  /// In en, this message translates to:
+  /// **'Group'**
+  String get chatGroupFallbackName;
+
+  /// No description provided for @communitiesTypeLanguageCircle.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Circle'**
+  String get communitiesTypeLanguageCircle;
+
+  /// No description provided for @communitiesTypeCulturalInterest.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural Interest'**
+  String get communitiesTypeCulturalInterest;
+
+  /// No description provided for @communitiesTypeTravelGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel Group'**
+  String get communitiesTypeTravelGroup;
+
+  /// No description provided for @communitiesTypeLocalGuides.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Guides'**
+  String get communitiesTypeLocalGuides;
+
+  /// No description provided for @communitiesTypeStudyGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'Study Group'**
+  String get communitiesTypeStudyGroup;
+
+  /// No description provided for @communitiesTypeGeneral.
+  ///
+  /// In en, this message translates to:
+  /// **'General'**
+  String get communitiesTypeGeneral;
+
+  /// No description provided for @communitiesRoleOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'Owner'**
+  String get communitiesRoleOwner;
+
+  /// No description provided for @communitiesRoleAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin'**
+  String get communitiesRoleAdmin;
+
+  /// No description provided for @communitiesRoleMember.
+  ///
+  /// In en, this message translates to:
+  /// **'Member'**
+  String get communitiesRoleMember;
+
+  /// No description provided for @communitiesNoActivityYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No activity yet'**
+  String get communitiesNoActivityYet;
+
+  /// No description provided for @communitiesLanguageMandarin.
+  ///
+  /// In en, this message translates to:
+  /// **'Mandarin'**
+  String get communitiesLanguageMandarin;
+
+  /// No description provided for @communitiesLanguageThai.
+  ///
+  /// In en, this message translates to:
+  /// **'Thai'**
+  String get communitiesLanguageThai;
+
+  /// No description provided for @communitiesLanguageVietnamese.
+  ///
+  /// In en, this message translates to:
+  /// **'Vietnamese'**
+  String get communitiesLanguageVietnamese;
+
+  /// No description provided for @communitiesLanguageCatalan.
+  ///
+  /// In en, this message translates to:
+  /// **'Catalan'**
+  String get communitiesLanguageCatalan;
+
+  /// No description provided for @communitiesLanguageHebrew.
+  ///
+  /// In en, this message translates to:
+  /// **'Hebrew'**
+  String get communitiesLanguageHebrew;
+
+  /// No description provided for @videoPromptSelectorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a Prompt'**
+  String get videoPromptSelectorTitle;
+
+  /// No description provided for @videoPromptSelectorSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a topic for your video introduction'**
+  String get videoPromptSelectorSubtitle;
+
+  /// No description provided for @videoPromptIntroduceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Introduce yourself'**
+  String get videoPromptIntroduceTitle;
+
+  /// No description provided for @videoPromptIntroduceDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Say hello and tell us who you are'**
+  String get videoPromptIntroduceDesc;
+
+  /// No description provided for @videoPromptIntroduceTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'Introduce yourself in your favorite language'**
+  String get videoPromptIntroduceTemplate;
+
+  /// No description provided for @videoPromptNativeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Native language'**
+  String get videoPromptNativeTitle;
+
+  /// No description provided for @videoPromptNativeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Show off your mother tongue'**
+  String get videoPromptNativeDesc;
+
+  /// No description provided for @videoPromptNativeTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'Say something in your native language'**
+  String get videoPromptNativeTemplate;
+
+  /// No description provided for @videoPromptTeachTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Teach a phrase'**
+  String get videoPromptTeachTitle;
+
+  /// No description provided for @videoPromptTeachDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Share something fun to say'**
+  String get videoPromptTeachDesc;
+
+  /// No description provided for @videoPromptTeachTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'Teach us a phrase in your language'**
+  String get videoPromptTeachTemplate;
+
+  /// No description provided for @videoPromptPlaceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Favorite place'**
+  String get videoPromptPlaceTitle;
+
+  /// No description provided for @videoPromptPlaceDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Share a place that means something to you'**
+  String get videoPromptPlaceDesc;
+
+  /// No description provided for @videoPromptPlaceTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'What\'s your favorite place to visit?'**
+  String get videoPromptPlaceTemplate;
+
+  /// No description provided for @videoPromptCultureTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cultural exchange'**
+  String get videoPromptCultureTitle;
+
+  /// No description provided for @videoPromptCultureDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'What does cultural exchange mean to you?'**
+  String get videoPromptCultureDesc;
+
+  /// No description provided for @videoPromptCultureTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe your ideal cultural exchange'**
+  String get videoPromptCultureTemplate;
+
+  /// No description provided for @videoPromptTalentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden talent'**
+  String get videoPromptTalentTitle;
+
+  /// No description provided for @videoPromptTalentDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Surprise us with something unexpected'**
+  String get videoPromptTalentDesc;
+
+  /// No description provided for @videoPromptTalentTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'Show us a hidden talent or fun fact about you'**
+  String get videoPromptTalentTemplate;
+
+  /// No description provided for @videoPromptTripTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dream trip'**
+  String get videoPromptTripTitle;
+
+  /// No description provided for @videoPromptTripDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Where in the world would you go?'**
+  String get videoPromptTripDesc;
+
+  /// No description provided for @videoPromptTripTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe your dream travel destination'**
+  String get videoPromptTripTemplate;
+
+  /// No description provided for @videoPromptFreeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Free style'**
+  String get videoPromptFreeTitle;
+
+  /// No description provided for @videoPromptFreeDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Say whatever you want!'**
+  String get videoPromptFreeDesc;
+
+  /// No description provided for @videoPromptFreeTemplate.
+  ///
+  /// In en, this message translates to:
+  /// **'Free style - no prompt'**
+  String get videoPromptFreeTemplate;
+
+  /// No description provided for @videoDiscoveryLiked.
+  ///
+  /// In en, this message translates to:
+  /// **'Liked!'**
+  String get videoDiscoveryLiked;
+
+  /// No description provided for @videoDiscoveryPassed.
+  ///
+  /// In en, this message translates to:
+  /// **'Passed'**
+  String get videoDiscoveryPassed;
+
+  /// No description provided for @videoDiscoveryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Intros'**
+  String get videoDiscoveryTitle;
+
+  /// No description provided for @videoDiscoveryEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No video introductions yet'**
+  String get videoDiscoveryEmptyTitle;
+
+  /// No description provided for @videoDiscoveryEmptySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Be the first to create one!'**
+  String get videoDiscoveryEmptySubtitle;
+
+  /// No description provided for @videoDiscoveryUserFallback.
+  ///
+  /// In en, this message translates to:
+  /// **'User {id}'**
+  String videoDiscoveryUserFallback(String id);
+
+  /// No description provided for @videoDiscoveryViews.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 view} other{{count} views}}'**
+  String videoDiscoveryViews(int count);
+
+  /// No description provided for @videoDiscoveryLike.
+  ///
+  /// In en, this message translates to:
+  /// **'Like'**
+  String get videoDiscoveryLike;
+
+  /// No description provided for @videoDiscoveryPass.
+  ///
+  /// In en, this message translates to:
+  /// **'Pass'**
+  String get videoDiscoveryPass;
+
+  /// No description provided for @videoDiscoveryReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get videoDiscoveryReport;
+
+  /// No description provided for @videoDiscoveryMute.
+  ///
+  /// In en, this message translates to:
+  /// **'Mute'**
+  String get videoDiscoveryMute;
+
+  /// No description provided for @videoDiscoveryUnmute.
+  ///
+  /// In en, this message translates to:
+  /// **'Unmute'**
+  String get videoDiscoveryUnmute;
+
+  /// No description provided for @videoProfileUploadSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Video uploaded successfully!'**
+  String get videoProfileUploadSuccess;
+
+  /// No description provided for @videoProfileDeleteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Video?'**
+  String get videoProfileDeleteTitle;
+
+  /// No description provided for @videoProfileDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete your video introduction?'**
+  String get videoProfileDeleteConfirm;
+
+  /// No description provided for @videoProfileDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Video deleted'**
+  String get videoProfileDeleted;
+
+  /// No description provided for @videoProfileScreenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Video Introduction'**
+  String get videoProfileScreenTitle;
+
+  /// No description provided for @videoProfileFirstImpression.
+  ///
+  /// In en, this message translates to:
+  /// **'Make a great first impression!'**
+  String get videoProfileFirstImpression;
+
+  /// No description provided for @videoProfileInfoBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Record a {seconds} second video to introduce yourself. Profiles with videos get 40% more matches!'**
+  String videoProfileInfoBody(int seconds);
+
+  /// No description provided for @videoProfileNoVideo.
+  ///
+  /// In en, this message translates to:
+  /// **'No video yet'**
+  String get videoProfileNoVideo;
+
+  /// No description provided for @videoProfileMaxSeconds.
+  ///
+  /// In en, this message translates to:
+  /// **'Max {seconds} seconds'**
+  String videoProfileMaxSeconds(int seconds);
+
+  /// No description provided for @videoProfileRecord.
+  ///
+  /// In en, this message translates to:
+  /// **'Record Video'**
+  String get videoProfileRecord;
+
+  /// No description provided for @videoProfileUploadFromGallery.
+  ///
+  /// In en, this message translates to:
+  /// **'Upload from Gallery'**
+  String get videoProfileUploadFromGallery;
+
+  /// No description provided for @videoProfileSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Video'**
+  String get videoProfileSave;
+
+  /// No description provided for @videoProfileRecordAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Record Again'**
+  String get videoProfileRecordAgain;
+
+  /// No description provided for @videoProfileTipsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tips for a great video:'**
+  String get videoProfileTipsTitle;
+
+  /// No description provided for @videoProfileTipLighting.
+  ///
+  /// In en, this message translates to:
+  /// **'Good lighting - face a window or light source'**
+  String get videoProfileTipLighting;
+
+  /// No description provided for @videoProfileTipVertical.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold your phone vertically'**
+  String get videoProfileTipVertical;
+
+  /// No description provided for @videoProfileTipSmile.
+  ///
+  /// In en, this message translates to:
+  /// **'Smile and be yourself!'**
+  String get videoProfileTipSmile;
+
+  /// No description provided for @videoProfileTipSpeak.
+  ///
+  /// In en, this message translates to:
+  /// **'Speak clearly - introduce yourself'**
+  String get videoProfileTipSpeak;
+
+  /// No description provided for @videoProfileTipHobbies.
+  ///
+  /// In en, this message translates to:
+  /// **'Mention your hobbies or interests'**
+  String get videoProfileTipHobbies;
+
+  /// No description provided for @adminVerificationBulkBetterPhotoTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Request Better Photo ({count, plural, =1{1 user} other{{count} users}})'**
+  String adminVerificationBulkBetterPhotoTitle(int count);
+
+  /// No description provided for @adminVerificationBulkApproved.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 verification approved} other{{count} verifications approved}}'**
+  String adminVerificationBulkApproved(int count);
+
+  /// No description provided for @adminVerificationBulkBetterPhotoRequested.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Better photo requested for 1 user} other{Better photo requested for {count} users}}'**
+  String adminVerificationBulkBetterPhotoRequested(int count);
+
+  /// No description provided for @adminPreSaleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-Sale Management'**
+  String get adminPreSaleTitle;
+
+  /// No description provided for @adminPreSaleProgramTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-Sale Tier Program'**
+  String get adminPreSaleProgramTitle;
+
+  /// No description provided for @adminPreSaleProgramDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage pre-sale users with tier-based countdown and subscription duration.'**
+  String get adminPreSaleProgramDescription;
+
+  /// No description provided for @adminPreSaleCsvFormatHint.
+  ///
+  /// In en, this message translates to:
+  /// **'CSV format: {columns}\nTier values: {tiers}'**
+  String adminPreSaleCsvFormatHint(String columns, String tiers);
+
+  /// No description provided for @adminPreSaleAddSingleEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Single Entry'**
+  String get adminPreSaleAddSingleEntry;
+
+  /// No description provided for @adminPreSaleEntries.
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-Sale Entries'**
+  String get adminPreSaleEntries;
+
+  /// No description provided for @adminPreSaleAllTiers.
+  ///
+  /// In en, this message translates to:
+  /// **'All Tiers'**
+  String get adminPreSaleAllTiers;
+
+  /// No description provided for @adminPreSaleNoMatching.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching entries found'**
+  String get adminPreSaleNoMatching;
+
+  /// No description provided for @adminPreSaleEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No pre-sale entries yet.\nUpload a CSV to get started.'**
+  String get adminPreSaleEmpty;
+
+  /// No description provided for @adminPreSaleDaysCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 day} other{{count} days}}'**
+  String adminPreSaleDaysCount(int count);
+
+  /// No description provided for @adminPreSaleEntryAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'{email} added as {tier} ({days, plural, =1{1 day} other{{days} days}})'**
+  String adminPreSaleEntryAdded(String email, String tier, int days);
+
+  /// No description provided for @adminPreSaleRemoveEntryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Entry'**
+  String get adminPreSaleRemoveEntryTitle;
+
+  /// No description provided for @adminPreSaleRemoveEntryConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove {email} from the pre-sale list?'**
+  String adminPreSaleRemoveEntryConfirm(String email);
+
+  /// No description provided for @adminPreSaleEntryRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'{email} removed from pre-sale list'**
+  String adminPreSaleEntryRemoved(String email);
+
+  /// No description provided for @adminPreSaleCsvEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'CSV file is empty'**
+  String get adminPreSaleCsvEmpty;
+
+  /// No description provided for @adminPreSaleCsvMissingHeaders.
+  ///
+  /// In en, this message translates to:
+  /// **'CSV must have headers: {expected}\nFound: {found}'**
+  String adminPreSaleCsvMissingHeaders(String expected, String found);
+
+  /// No description provided for @adminPreSaleCsvNoRows.
+  ///
+  /// In en, this message translates to:
+  /// **'No valid data rows found in CSV'**
+  String get adminPreSaleCsvNoRows;
+
+  /// No description provided for @adminPreSaleInvalidDays.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid number of days'**
+  String get adminPreSaleInvalidDays;
+
+  /// No description provided for @adminPreSaleInfoTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pre-Sale Info'**
+  String get adminPreSaleInfoTitle;
+
+  /// No description provided for @adminPreSaleCsvFormatTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'CSV Format'**
+  String get adminPreSaleCsvFormatTitle;
+
+  /// No description provided for @adminPreSaleCountdownDates.
+  ///
+  /// In en, this message translates to:
+  /// **'Tier Countdown Dates'**
+  String get adminPreSaleCountdownDates;
+
+  /// No description provided for @adminPreSaleHowItWorks.
+  ///
+  /// In en, this message translates to:
+  /// **'How it works'**
+  String get adminPreSaleHowItWorks;
+
+  /// No description provided for @adminPreSaleHowItWorksSteps.
+  ///
+  /// In en, this message translates to:
+  /// **'1. User registers with email\n2. App checks pre-sale list\n3. Countdown shows tier date\n4. After countdown: subscription activates\n5. Duration = NUMBER_OF_DAYS from list\n6. Base membership = same expiry'**
+  String get adminPreSaleHowItWorksSteps;
+
+  /// No description provided for @adminStatusProcessing.
+  ///
+  /// In en, this message translates to:
+  /// **'Processing'**
+  String get adminStatusProcessing;
+
+  /// No description provided for @adminStatusCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Completed'**
+  String get adminStatusCompleted;
+
+  /// No description provided for @adminStatusFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed'**
+  String get adminStatusFailed;
+
+  /// No description provided for @adminStatusCancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get adminStatusCancelled;
+
+  /// No description provided for @adminStatusRefunded.
+  ///
+  /// In en, this message translates to:
+  /// **'Refunded'**
+  String get adminStatusRefunded;
+
+  /// No description provided for @adminStatusDraft.
+  ///
+  /// In en, this message translates to:
+  /// **'Draft'**
+  String get adminStatusDraft;
+
+  /// No description provided for @adminStatusIssued.
+  ///
+  /// In en, this message translates to:
+  /// **'Issued'**
+  String get adminStatusIssued;
+
+  /// No description provided for @adminStatusPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid'**
+  String get adminStatusPaid;
+
+  /// No description provided for @adminStatusOverdue.
+  ///
+  /// In en, this message translates to:
+  /// **'Overdue'**
+  String get adminStatusOverdue;
+
+  /// No description provided for @adminOrderTypeCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'Coins Purchase'**
+  String get adminOrderTypeCoins;
+
+  /// No description provided for @adminOrderTypeSubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription'**
+  String get adminOrderTypeSubscription;
+
+  /// No description provided for @adminOrderTypeGift.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift Purchase'**
+  String get adminOrderTypeGift;
+
+  /// No description provided for @adminRoleSuperAdmin.
+  ///
+  /// In en, this message translates to:
+  /// **'Super Admin'**
+  String get adminRoleSuperAdmin;
+
+  /// No description provided for @adminRoleModerator.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderator'**
+  String get adminRoleModerator;
+
+  /// No description provided for @adminRoleAnalyst.
+  ///
+  /// In en, this message translates to:
+  /// **'Analyst'**
+  String get adminRoleAnalyst;
+
+  /// No description provided for @cityPickerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a city'**
+  String get cityPickerTitle;
+
+  /// No description provided for @cityPickerSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search a city…'**
+  String get cityPickerSearchHint;
+
+  /// No description provided for @cityPickerEmptyHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search a city or tap the map'**
+  String get cityPickerEmptyHint;
+
+  /// No description provided for @cityPickerUseCity.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this city'**
+  String get cityPickerUseCity;
+
+  /// No description provided for @notifServerViewedYourProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'viewed your profile'**
+  String get notifServerViewedYourProfile;
+
+  /// No description provided for @notifServerStartedFollowingYou.
+  ///
+  /// In en, this message translates to:
+  /// **'started following you'**
+  String get notifServerStartedFollowingYou;
+
+  /// No description provided for @notifServerStartedFollowingBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'started following your business'**
+  String get notifServerStartedFollowingBusiness;
+
+  /// No description provided for @notifServerRatedYourBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'rated your business'**
+  String get notifServerRatedYourBusiness;
+
+  /// No description provided for @notifServerRatedYourBusinessStars.
+  ///
+  /// In en, this message translates to:
+  /// **'rated your business {stars}★'**
+  String notifServerRatedYourBusinessStars(int stars);
+
+  /// No description provided for @notifServerReviewedYourExperience.
+  ///
+  /// In en, this message translates to:
+  /// **'reviewed your experience'**
+  String get notifServerReviewedYourExperience;
+
+  /// No description provided for @notifServerTapToSeeWhoStoppedBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to see who stopped by'**
+  String get notifServerTapToSeeWhoStoppedBy;
+
+  /// No description provided for @notifServerTapToSeeTheirProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to see their profile'**
+  String get notifServerTapToSeeTheirProfile;
+
+  /// No description provided for @notifServerNewFollower.
+  ///
+  /// In en, this message translates to:
+  /// **'You have a new follower'**
+  String get notifServerNewFollower;
+
+  /// No description provided for @notifServerNewRating.
+  ///
+  /// In en, this message translates to:
+  /// **'You have a new rating'**
+  String get notifServerNewRating;
+
+  /// No description provided for @notifServerYourCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'Your community'**
+  String get notifServerYourCommunity;
+
+  /// No description provided for @notifServerYourEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Your event'**
+  String get notifServerYourEvent;
+
+  /// No description provided for @notifServerProfileBoostLive.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile boost is now live'**
+  String get notifServerProfileBoostLive;
+
+  /// No description provided for @notifServerProfileBoostEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile boost has ended'**
+  String get notifServerProfileBoostEnded;
+
+  /// No description provided for @notifServerProfilePromoted.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile is being promoted to more people'**
+  String get notifServerProfilePromoted;
+
+  /// No description provided for @notifServerEventPromoted.
+  ///
+  /// In en, this message translates to:
+  /// **'Your event is being promoted in Explore'**
+  String get notifServerEventPromoted;
+
+  /// No description provided for @notifServerBoostAgainProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost again to keep reaching more people'**
+  String get notifServerBoostAgainProfile;
+
+  /// No description provided for @notifServerBoostAgainEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'Boost again to keep it featured'**
+  String get notifServerBoostAgainEvent;
+
+  /// No description provided for @notifServerCheckedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re checked in — enjoy!'**
+  String get notifServerCheckedIn;
+
+  /// No description provided for @notifServerTicketReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Your ticket is ready'**
+  String get notifServerTicketReady;
+
+  /// No description provided for @notifServerTicketSold.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket sold'**
+  String get notifServerTicketSold;
+
+  /// No description provided for @notifServerPaymentToConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment to confirm'**
+  String get notifServerPaymentToConfirm;
+
+  /// No description provided for @notifServerPaymentNotConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment not confirmed'**
+  String get notifServerPaymentNotConfirmed;
+
+  /// No description provided for @notifServerPaymentsWaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Payments waiting for your confirmation'**
+  String get notifServerPaymentsWaiting;
+
+  /// No description provided for @notifServerTicketRefunded.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket refunded'**
+  String get notifServerTicketRefunded;
+
+  /// No description provided for @notifServerTicketDisputed.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket payment disputed'**
+  String get notifServerTicketDisputed;
+
+  /// No description provided for @notifServerRefundToPayBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Refund to pay back'**
+  String get notifServerRefundToPayBack;
+
+  /// No description provided for @notifServerTicketReservationExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket reservation expired'**
+  String get notifServerTicketReservationExpired;
+
+  /// No description provided for @notifServerExperienceHidden.
+  ///
+  /// In en, this message translates to:
+  /// **'Your experience was hidden after several reports'**
+  String get notifServerExperienceHidden;
+
+  /// No description provided for @notifServerPendingReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending review by GreenGo'**
+  String get notifServerPendingReview;
+
+  /// No description provided for @notifServerMonthlyCoinsAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly coins added'**
+  String get notifServerMonthlyCoinsAdded;
+
+  /// No description provided for @notifServerSupportReplied.
+  ///
+  /// In en, this message translates to:
+  /// **'Support replied to your ticket'**
+  String get notifServerSupportReplied;
+
+  /// No description provided for @notifServerSupportNewReply.
+  ///
+  /// In en, this message translates to:
+  /// **'You have a new reply from support.'**
+  String get notifServerSupportNewReply;
+
+  /// No description provided for @notifServerIncognitoExpiring.
+  ///
+  /// In en, this message translates to:
+  /// **'Incognito Mode Expiring Soon'**
+  String get notifServerIncognitoExpiring;
+
+  /// No description provided for @notifServerIncognitoExpiringBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Incognito Mode expires in less than 1 hour!'**
+  String get notifServerIncognitoExpiringBody;
+
+  /// No description provided for @notifServerTravelerExpiring.
+  ///
+  /// In en, this message translates to:
+  /// **'Traveler Mode Expiring Soon'**
+  String get notifServerTravelerExpiring;
+
+  /// No description provided for @notifServerTravelerExpiringBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Traveler Mode expires in less than 1 hour!'**
+  String get notifServerTravelerExpiringBody;
+
+  /// No description provided for @notifServerProfileVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile Verified!'**
+  String get notifServerProfileVerified;
+
+  /// No description provided for @notifServerProfileVerifiedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your profile has been verified! You now have a verified badge.'**
+  String get notifServerProfileVerifiedBody;
+
+  /// No description provided for @notifServerNewVerificationPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'New Verification Photo Needed'**
+  String get notifServerNewVerificationPhoto;
+
+  /// No description provided for @notifServerVerificationUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification Update'**
+  String get notifServerVerificationUpdate;
+
+  /// No description provided for @notifServerJoinedYourCommunity.
+  ///
+  /// In en, this message translates to:
+  /// **'joined your community {name}'**
+  String notifServerJoinedYourCommunity(String name);
+
+  /// No description provided for @notifServerJoinedYourEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'joined your event {name}'**
+  String notifServerJoinedYourEvent(String name);
+
+  /// No description provided for @notifServerLikedYourEvent.
+  ///
+  /// In en, this message translates to:
+  /// **'liked your event {name}'**
+  String notifServerLikedYourEvent(String name);
+
+  /// No description provided for @notifServerJoinedYourGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'joined your group {name}'**
+  String notifServerJoinedYourGroup(String name);
+
+  /// No description provided for @notifServerAddedYouAsCoOwner.
+  ///
+  /// In en, this message translates to:
+  /// **'added you as a co-owner of {name}'**
+  String notifServerAddedYouAsCoOwner(String name);
+
+  /// No description provided for @notifServerAddedYouToGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'added you to {name}'**
+  String notifServerAddedYouToGroup(String name);
+
+  /// No description provided for @notifServerEventBoostLive.
+  ///
+  /// In en, this message translates to:
+  /// **'Your event {name} boost is now live'**
+  String notifServerEventBoostLive(String name);
+
+  /// No description provided for @notifServerEventBoostEnded.
+  ///
+  /// In en, this message translates to:
+  /// **'Your event {name} boost has ended'**
+  String notifServerEventBoostEnded(String name);
+
+  /// No description provided for @notifServerTicketScanned.
+  ///
+  /// In en, this message translates to:
+  /// **'Your ticket for {name} was scanned'**
+  String notifServerTicketScanned(String name);
+
+  /// No description provided for @notifServerNewEventIn.
+  ///
+  /// In en, this message translates to:
+  /// **'New event in {name}'**
+  String notifServerNewEventIn(String name);
+
+  /// No description provided for @notifServerEventCancelledIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Event cancelled in {name}'**
+  String notifServerEventCancelledIn(String name);
+
+  /// No description provided for @notifServerEventUpdatedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Event updated in {name}'**
+  String notifServerEventUpdatedIn(String name);
+
+  /// No description provided for @notifServerNewEventFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'New event from {name}'**
+  String notifServerNewEventFrom(String name);
+
+  /// No description provided for @notifServerAnnouncement.
+  ///
+  /// In en, this message translates to:
+  /// **'Announcement · {name}'**
+  String notifServerAnnouncement(String name);
+
+  /// No description provided for @culturalExchangeCategoryFood.
+  ///
+  /// In en, this message translates to:
+  /// **'Food'**
+  String get culturalExchangeCategoryFood;
+
+  /// No description provided for @culturalExchangeCategoryTransportation.
+  ///
+  /// In en, this message translates to:
+  /// **'Transportation'**
+  String get culturalExchangeCategoryTransportation;
+
+  /// No description provided for @culturalExchangeCategoryDating.
+  ///
+  /// In en, this message translates to:
+  /// **'Dating'**
+  String get culturalExchangeCategoryDating;
+
+  /// No description provided for @culturalExchangeCategoryCustoms.
+  ///
+  /// In en, this message translates to:
+  /// **'Customs'**
+  String get culturalExchangeCategoryCustoms;
+
+  /// No description provided for @culturalExchangeCategoryLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get culturalExchangeCategoryLanguage;
+
+  /// No description provided for @culturalExchangeCategorySafety.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety'**
+  String get culturalExchangeCategorySafety;
+
+  /// No description provided for @culturalExchangeSectionCuisine.
+  ///
+  /// In en, this message translates to:
+  /// **'Cuisine'**
+  String get culturalExchangeSectionCuisine;
+
+  /// No description provided for @culturalExchangeSectionCustoms.
+  ///
+  /// In en, this message translates to:
+  /// **'Customs'**
+  String get culturalExchangeSectionCustoms;
+
+  /// No description provided for @culturalExchangeSectionKeyPhrases.
+  ///
+  /// In en, this message translates to:
+  /// **'Key Phrases'**
+  String get culturalExchangeSectionKeyPhrases;
+
+  /// No description provided for @culturalExchangeSectionPhrases.
+  ///
+  /// In en, this message translates to:
+  /// **'Phrases'**
+  String get culturalExchangeSectionPhrases;
+
+  /// No description provided for @culturalExchangeSpotlightBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'SPOTLIGHT'**
+  String get culturalExchangeSpotlightBadge;
+
+  /// No description provided for @culturalExchangeContentComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Content coming soon'**
+  String get culturalExchangeContentComingSoon;
+
+  /// No description provided for @culturalExchangeContentComingSoonBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We are preparing detailed content for this spotlight.'**
+  String get culturalExchangeContentComingSoonBody;
+
+  /// No description provided for @culturalExchangeLike.
+  ///
+  /// In en, this message translates to:
+  /// **'Like'**
+  String get culturalExchangeLike;
+
+  /// No description provided for @culturalExchangeWeeksAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}w ago'**
+  String culturalExchangeWeeksAgo(int count);
+
+  /// No description provided for @culturalExchangeMonthsAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{count}mo ago'**
+  String culturalExchangeMonthsAgo(int count);
+
+  /// No description provided for @culturalExchangeDailyInsightJapanBow.
+  ///
+  /// In en, this message translates to:
+  /// **'In Japan, it is customary to bow when greeting someone. The deeper the bow, the more respect you show.'**
+  String get culturalExchangeDailyInsightJapanBow;
+
+  /// No description provided for @culturalExchangeSelectCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a Country'**
+  String get culturalExchangeSelectCountry;
+
+  /// No description provided for @culturalExchangeChooseCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a country...'**
+  String get culturalExchangeChooseCountry;
+
+  /// No description provided for @culturalExchangeSelectCountryAbove.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a country above'**
+  String get culturalExchangeSelectCountryAbove;
+
+  /// No description provided for @culturalExchangeLearnEtiquette.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn dating etiquette from 20+ countries\naround the world'**
+  String get culturalExchangeLearnEtiquette;
+
+  /// No description provided for @culturalExchangeDos.
+  ///
+  /// In en, this message translates to:
+  /// **'Do\'s'**
+  String get culturalExchangeDos;
+
+  /// No description provided for @culturalExchangeDonts.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'ts'**
+  String get culturalExchangeDonts;
+
+  /// No description provided for @notifNewConversationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New Conversation'**
+  String get notifNewConversationTitle;
+
+  /// No description provided for @notifNewMessageFrom.
+  ///
+  /// In en, this message translates to:
+  /// **'New message from {name}'**
+  String notifNewMessageFrom(String name);
+
+  /// No description provided for @notifStartedConversation.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} started a conversation with you.'**
+  String notifStartedConversation(String name);
+
+  /// No description provided for @notifNewPhotoLikeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New Photo Like'**
+  String get notifNewPhotoLikeTitle;
+
+  /// No description provided for @notifLikedYourPhoto.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} liked your photo'**
+  String notifLikedYourPhoto(String name);
+
+  /// No description provided for @notifCoinsReceivedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You received coins!'**
+  String get notifCoinsReceivedTitle;
 }
 
 class _AppLocalizationsDelegate

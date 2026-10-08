@@ -411,6 +411,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
   }
 
   static String _languageName(String code) {
+    // i18n-ignore: language autonyms are shown in their own language.
     const names = {
       'en': 'English',
       'de': 'Deutsch',
@@ -470,7 +471,7 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             _buildStatItem(l10n.personalStatsLevel, '$_currentLevel', Icons.shield),
-                            _buildStatItem('XP', '$_totalXp', Icons.star),
+                            _buildStatItem(l10n.xp, '$_totalXp', Icons.star),
                             _buildStatItem(l10n.personalStatsNextLevel, '$_xpForNextLevel', Icons.arrow_upward),
                           ],
                         ),
@@ -487,7 +488,8 @@ class _PersonalStatsScreenState extends State<PersonalStatsScreen> {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          '$_xpInCurrentLevel/$_xpRangeForCurrentLevel XP',
+                          l10n.xpProgressLabel(
+                              '$_xpInCurrentLevel', '$_xpRangeForCurrentLevel'),
                           style: const TextStyle(color: AppColors.textTertiary, fontSize: 11),
                         ),
                       ],

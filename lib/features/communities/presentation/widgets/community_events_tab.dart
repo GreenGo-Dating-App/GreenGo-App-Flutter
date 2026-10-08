@@ -158,7 +158,9 @@ class _CommunityEventsTabState extends State<CommunityEventsTab> {
   }
 
   Widget _eventTile(BuildContext context, Event event) {
-    final df = DateFormat('EEE, MMM d • h:mm a');
+    final locale = Localizations.localeOf(context).toString();
+    final dfDay = DateFormat.MMMEd(locale);
+    final dfTime = DateFormat.jm(locale);
     return InkWell(
       onTap: () => _openEvent(event),
       borderRadius: BorderRadius.circular(AppDimensions.radiusM),
@@ -196,7 +198,7 @@ class _CommunityEventsTabState extends State<CommunityEventsTab> {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    df.format(event.startDate),
+                    '${dfDay.format(event.startDate)} • ${dfTime.format(event.startDate)}',
                     style: const TextStyle(
                         color: AppColors.textTertiary, fontSize: 12),
                   ),

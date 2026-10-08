@@ -237,8 +237,8 @@ extension CoinSpendCategoryExtension on CoinSpendCategory {
 class CoinSpendItems {
   static const CoinSpendItem superLike = CoinSpendItem(
     itemId: 'super_like',
-    name: 'Super Like',
-    description: 'Send a super like to stand out',
+    name: 'Super Like', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'Send a super like to stand out', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 5,
     iconAsset: 'assets/icons/super_like.png',
     category: CoinSpendCategory.matching,
@@ -247,8 +247,8 @@ class CoinSpendItems {
 
   static const CoinSpendItem boost = CoinSpendItem(
     itemId: 'profile_boost',
-    name: 'Profile Boost',
-    description: 'Be seen by more people for 30 mins',
+    name: 'Profile Boost', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'Be seen by more people for 30 mins', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 50,
     iconAsset: 'assets/icons/boost.png',
     category: CoinSpendCategory.profile,
@@ -257,8 +257,8 @@ class CoinSpendItems {
 
   static const CoinSpendItem undo = CoinSpendItem(
     itemId: 'undo_swipe',
-    name: 'Undo Swipe',
-    description: 'Undo your last swipe',
+    name: 'Undo Swipe', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'Undo your last swipe', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 3,
     iconAsset: 'assets/icons/undo.png',
     category: CoinSpendCategory.matching,
@@ -267,8 +267,8 @@ class CoinSpendItems {
 
   static const CoinSpendItem seeWhoLiked = CoinSpendItem(
     itemId: 'see_who_liked',
-    name: 'See Who Liked',
-    description: 'See who liked your profile',
+    name: 'See Who Liked', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'See who liked your profile', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 20,
     iconAsset: 'assets/icons/see_likes.png',
     category: CoinSpendCategory.matching,
@@ -277,8 +277,8 @@ class CoinSpendItems {
 
   static const CoinSpendItem readReceipts = CoinSpendItem(
     itemId: 'read_receipts_day',
-    name: 'Read Receipts (1 Day)',
-    description: 'See when messages are read',
+    name: 'Read Receipts (1 Day)', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'See when messages are read', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 10,
     iconAsset: 'assets/icons/read_receipts.png',
     category: CoinSpendCategory.messaging,
@@ -287,8 +287,8 @@ class CoinSpendItems {
 
   static const CoinSpendItem virtualGiftRose = CoinSpendItem(
     itemId: 'gift_rose',
-    name: 'Rose',
-    description: 'Send a virtual rose',
+    name: 'Rose', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'Send a virtual rose', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 15,
     iconAsset: 'assets/icons/rose.png',
     category: CoinSpendCategory.gifts,
@@ -297,8 +297,8 @@ class CoinSpendItems {
 
   static const CoinSpendItem virtualGiftTeddy = CoinSpendItem(
     itemId: 'gift_teddy',
-    name: 'Teddy Bear',
-    description: 'Send a cute teddy bear',
+    name: 'Teddy Bear', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'Send a cute teddy bear', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 50,
     iconAsset: 'assets/icons/teddy.png',
     category: CoinSpendCategory.gifts,
@@ -307,8 +307,8 @@ class CoinSpendItems {
 
   static const CoinSpendItem virtualGiftDiamond = CoinSpendItem(
     itemId: 'gift_diamond',
-    name: 'Diamond',
-    description: 'Send a sparkling diamond',
+    name: 'Diamond', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
+    description: 'Send a sparkling diamond', // i18n-ignore: id-keyed default; UI uses coin_l10n.dart
     coinCost: 100,
     iconAsset: 'assets/icons/diamond.png',
     category: CoinSpendCategory.gifts,

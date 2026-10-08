@@ -7,6 +7,7 @@ import '../../../../generated/app_localizations.dart';
 import 'deleted_message_bubble.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/conversation.dart';
+import '../utils/chat_l10n.dart';
 
 /// Conversation Card Widget
 ///
@@ -313,7 +314,7 @@ class _ConversationCardState extends State<ConversationCard>
             Text(
               isDeletedAuthorMessage(widget.conversation.lastMessage?.senderId)
                   ? AppLocalizations.of(context)!.chatMessageDeleted
-                  : widget.conversation.lastMessagePreview,
+                  : chatLastMessagePreview(AppLocalizations.of(context)!, widget.conversation),
               style: TextStyle(
                 color: hasUnread ? AppColors.textPrimary : AppColors.textSecondary,
                 fontSize: 14,
@@ -340,7 +341,7 @@ class _ConversationCardState extends State<ConversationCard>
           const SizedBox(height: 2),
         ],
         Text(
-          widget.conversation.timeSinceLastMessage,
+          chatShortTimeSince(context, l10n, widget.conversation.lastMessageAt),
           style: TextStyle(
             color: hasUnread ? AppColors.richGold : AppColors.textTertiary,
             fontSize: 12,

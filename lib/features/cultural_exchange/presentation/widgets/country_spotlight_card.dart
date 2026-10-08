@@ -1,6 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/country_names_l10n.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/country_spotlight.dart';
 
 /// Featured card for displaying the active country spotlight
@@ -15,6 +17,7 @@ class CountrySpotlightCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -114,9 +117,9 @@ class CountrySpotlightCard extends StatelessWidget {
                       color: AppColors.richGold,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: const Text(
-                      'SPOTLIGHT',
-                      style: TextStyle(
+                    child: Text(
+                      l10n.culturalExchangeSpotlightBadge,
+                      style: const TextStyle(
                         color: AppColors.deepBlack,
                         fontSize: 10,
                         fontWeight: FontWeight.bold,
@@ -128,7 +131,7 @@ class CountrySpotlightCard extends StatelessWidget {
 
                   // Country name
                   Text(
-                    spotlight.country,
+                    localizedCountryName(l10n, spotlight.country),
                     style: const TextStyle(
                       color: AppColors.richGold,
                       fontSize: 14,
@@ -154,13 +157,13 @@ class CountrySpotlightCard extends StatelessWidget {
                   Row(
                     children: [
                       if (spotlight.cuisine != null)
-                        _buildSectionChip('Cuisine'),
+                        _buildSectionChip(l10n.culturalExchangeSectionCuisine),
                       if (spotlight.customs != null)
-                        _buildSectionChip('Customs'),
+                        _buildSectionChip(l10n.culturalExchangeSectionCustoms),
                       if (spotlight.datingEtiquette != null)
-                        _buildSectionChip('Dating'),
+                        _buildSectionChip(l10n.culturalExchangeCategoryDating),
                       if (spotlight.keyPhrases != null)
-                        _buildSectionChip('Phrases'),
+                        _buildSectionChip(l10n.culturalExchangeSectionPhrases),
                     ],
                   ),
                 ],

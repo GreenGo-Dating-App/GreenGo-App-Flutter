@@ -618,9 +618,11 @@ class EventAttendee extends Equatable {
   }
 
   /// Display name honoring anonymity (use for non-self, non-organizer viewers).
-  String displayNameFor(String viewerId, String organizerId) {
+  /// UI callers pass the localized [anonymousLabel] (e.g. `l10n.chatSomeone`).
+  String displayNameFor(String viewerId, String organizerId,
+      {String anonymousLabel = 'Someone'}) { // i18n-ignore: fallback; UI passes l10n
     if (viewerId == userId || viewerId == organizerId) return userName;
-    return isAnonymous ? 'Someone' : userName;
+    return isAnonymous ? anonymousLabel : userName;
   }
 
   EventAttendee copyWith({

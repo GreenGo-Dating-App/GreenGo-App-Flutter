@@ -7,10 +7,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../domain/entities/achievement.dart';
 import '../../domain/entities/user_level.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
+import '../utils/gamification_l10n.dart';
 import 'achievements_screen.dart';
 import 'journey_screen.dart';
 import 'leaderboard_screen.dart';
@@ -348,14 +350,14 @@ class _ProgressScreenState extends State<ProgressScreen>
                                   ),
                                   borderRadius: BorderRadius.circular(12),
                                 ),
-                                child: const Row(
+                                child: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Icon(Icons.star, color: Colors.black, size: 12),
-                                    SizedBox(width: 4),
+                                    const Icon(Icons.star, color: Colors.black, size: 12),
+                                    const SizedBox(width: 4),
                                     Text(
-                                      'VIP',
-                                      style: TextStyle(
+                                      l10n.gamificationVip,
+                                      style: const TextStyle(
                                         color: Colors.black,
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,
@@ -369,7 +371,8 @@ class _ProgressScreenState extends State<ProgressScreen>
                         ),
                         const SizedBox(height: 8),
                         Text(
-                          '${_formatNumber(userLevel.currentXP)} / ${_formatNumber(userLevel.xpForNextLevel)} XP',
+                          l10n.xpProgressLabel(_formatNumber(userLevel.currentXP),
+                              _formatNumber(userLevel.xpForNextLevel)),
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.white.withOpacity(0.7),
@@ -380,7 +383,8 @@ class _ProgressScreenState extends State<ProgressScreen>
                         _buildEnhancedProgressBar(userLevel.progressToNextLevel),
                         const SizedBox(height: 8),
                         Text(
-                          '${_formatNumber(userLevel.xpForNextLevel - userLevel.currentXP)} XP to next level',
+                          l10n.gamificationXpToNextLevel(_formatNumber(
+                              userLevel.xpForNextLevel - userLevel.currentXP)),
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.white.withOpacity(0.5),
@@ -659,7 +663,9 @@ class _ProgressScreenState extends State<ProgressScreen>
                         ),
                         const SizedBox(width: 8),
                         Text(
-                          streak == 1 ? 'day' : 'days',
+                          streak == 1
+                              ? AppLocalizations.of(context)!.gamificationStreakDayUnitOne
+                              : AppLocalizations.of(context)!.gamificationStreakDayUnitOther,
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.white.withOpacity(0.7),
@@ -676,9 +682,11 @@ class _ProgressScreenState extends State<ProgressScreen>
                   color: Colors.white.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: const Text(
-                  streak >= 7 ? '🎉 On Fire!' : 'Keep going!',
-                  style: TextStyle(
+                child: Text(
+                  streak >= 7
+                      ? AppLocalizations.of(context)!.gamificationOnFire
+                      : AppLocalizations.of(context)!.streakKeepGoing,
+                  style: const TextStyle(
                     fontSize: 12,
                     color: Colors.white,
                     fontWeight: FontWeight.w500,
@@ -753,7 +761,7 @@ class _ProgressScreenState extends State<ProgressScreen>
     );
   }
 
-  Widget _buildAchievementBadge(dynamic achievement, int index) {
+  Widget _buildAchievementBadge(Achievement achievement, int index) {
     final colors = [
       const Color(0xFFFFD700),
       const Color(0xFF10B981),
@@ -813,7 +821,8 @@ class _ProgressScreenState extends State<ProgressScreen>
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  achievement.name,
+                  localizedAchievementName(
+                      AppLocalizations.of(context)!, achievement),
                   style: const TextStyle(
                     fontSize: 11,
                     fontWeight: FontWeight.w600,

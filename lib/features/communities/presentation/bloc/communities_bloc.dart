@@ -483,7 +483,7 @@ class CommunitiesBloc extends Bloc<CommunitiesEvent, CommunitiesState> {
           await _repository.getCommunityById(event.communityId);
       community = communityResult.fold((_) => null, (c) => c);
       if (community == null) {
-        emit(const CommunitiesError(message: 'Unable to load community'));
+        emit(const CommunitiesError(message: 'Unable to load community')); // i18n-ignore: dev text; UI shows via showUserError
         return;
       }
     }

@@ -10,6 +10,7 @@ import '../../../../core/services/web_location_fallback.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import 'onboarding/onboarding_value_labels.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
 import '../../domain/entities/profile.dart';
@@ -337,8 +338,10 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                               ),
                               const SizedBox(height: 4),
                               Text(
-                                'Lat: ${_selectedLocation!.latitude.toStringAsFixed(6)}, '
-                                'Lon: ${_selectedLocation!.longitude.toStringAsFixed(6)}',
+                                AppLocalizations.of(context)!.profileLatLon(
+                                  _selectedLocation!.latitude.toStringAsFixed(6),
+                                  _selectedLocation!.longitude.toStringAsFixed(6),
+                                ),
                                 style: const TextStyle(
                                   color: AppColors.textTertiary,
                                   fontSize: 12,
@@ -430,7 +433,7 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          language,
+                          _languageLabel(language),
                           style: TextStyle(
                             color: isSelected
                                 ? AppColors.deepBlack
@@ -459,5 +462,20 @@ class _EditLocationScreenState extends State<EditLocationScreen> {
       ),
       ),
     );
+  }
+
+  /// Languages are stored as English names; this is only the display label.
+  String _languageLabel(String language) {
+    final l10n = AppLocalizations.of(context)!;
+    switch (language) {
+      case 'Hebrew':
+        return l10n.profileLanguageHebrew;
+      case 'Thai':
+        return l10n.profileLanguageThai;
+      case 'Vietnamese':
+        return l10n.profileLanguageVietnamese;
+      default:
+        return localizedOnboardingLanguage(l10n, language);
+    }
   }
 }

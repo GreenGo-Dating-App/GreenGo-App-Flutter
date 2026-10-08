@@ -243,7 +243,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       if (profile.isBoosted &&
           profile.boostExpiry != null &&
           profile.boostExpiry!.isAfter(DateTime.now())) {
-        emit(const ProfileError(message: 'Profile is already boosted!'));
+        emit(ProfileBoostAlreadyActive(expiry: profile.boostExpiry!));
         emit(ProfileLoaded(profile: profile));
         return;
       }
@@ -313,7 +313,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
       emit(ProfileLoaded(profile: updatedProfile));
     } catch (e) {
       debugPrint('[ProfileBoost] Error: $e');
-      emit(ProfileError(message: 'Failed to activate boost: $e'));
+      emit(ProfileError(message: 'Failed to activate boost: $e')); // i18n-ignore: raw error, UI localizes via showUserError
     }
   }
 

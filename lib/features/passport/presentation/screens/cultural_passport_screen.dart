@@ -5,8 +5,10 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/utils/country_flag_helper.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../core/widgets/country_flag_badge.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/presentation/screens/onboarding/onboarding_value_labels.dart';
 import '../../data/services/passport_service.dart';
 import '../../domain/entities/cultural_passport.dart';
 
@@ -46,6 +48,8 @@ class _CulturalPassportScreenState extends State<CulturalPassportScreen> {
   ];
 
   /// Popular languages; earned languages are unioned in.
+  /// English names are stable ids (stored stamps); localized at display.
+  // i18n-ignore: language ids, localized via localizedOnboardingLanguage
   static const List<String> _languageCatalog = <String>[
     'English', 'Spanish', 'French', 'German', 'Italian', 'Portuguese',
     'Russian', 'Chinese', 'Japanese', 'Korean', 'Arabic', 'Hindi',
@@ -524,11 +528,8 @@ class _CountryStampTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final flag = CountryFlagHelper.getFlag(stamp.value);
-    final name = CountryFlagHelper.allCountries
-            .where((c) => c.isoCode == stamp.value)
-            .map((c) => c.name)
-            .fold<String?>(null, (prev, e) => prev ?? e) ??
-        stamp.value;
+    final name =
+        localizedCountryName(AppLocalizations.of(context)!, stamp.value);
     return _StampCard(
       earned: stamp.earned,
       emblem: Text(
@@ -561,7 +562,8 @@ class _LanguageStampTile extends StatelessWidget {
               : const Text('🗣️', style: TextStyle(fontSize: 28)),
         ),
       ),
-      label: stamp.value,
+      label: localizedOnboardingLanguage(
+          AppLocalizations.of(context)!, stamp.value),
     );
   }
 }

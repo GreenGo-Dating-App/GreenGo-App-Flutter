@@ -1,6 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../features/membership/domain/entities/membership.dart';
+import '../../generated/app_localizations.dart';
+import '../../features/subscription/presentation/tier_l10n.dart';
+import '../utils/app_l10n_lookup.dart';
 
 /// Types of usage limits that can be tracked
 enum UsageLimitType {
@@ -94,6 +97,9 @@ class UsageLimitService {
     required MembershipTier currentTier,
   }) async {
     final limit = _getLimit(limitType, rules);
+    // [UsageLimitResult.message] is shown to the user (dialog / snackbar), so
+    // it is built in the app's current language.
+    final l10n = await currentAppL10nAsync();
 
     // If unlimited, always allow
     if (limit == -1) {
@@ -102,7 +108,7 @@ class UsageLimitService {
         currentUsage: 0,
         limit: -1,
         remaining: -1,
-        message: 'Unlimited ${_getLimitTypeName(limitType)}',
+        message: l10n.usageLimitUnlimited(_getLimitTypeName(l10n, limitType)),
         currentTier: currentTier,
       );
     }
@@ -111,16 +117,18 @@ class UsageLimitService {
     final remaining = limit - currentUsage;
     final isAllowed = remaining > 0;
 
-    final periodLabel = _isHourlyType(limitType) ? 'this hour' : 'today';
-
     return UsageLimitResult(
       isAllowed: isAllowed,
       currentUsage: currentUsage,
       limit: limit,
       remaining: remaining > 0 ? remaining : 0,
       message: isAllowed
-          ? '$remaining ${_getLimitTypeName(limitType)} remaining $periodLabel'
-          : _getLimitReachedMessage(limitType, limit, currentTier),
+          ? (_isHourlyType(limitType)
+              ? l10n.usageLimitRemainingThisHour(
+                  remaining, _getLimitTypeName(l10n, limitType))
+              : l10n.usageLimitRemainingToday(
+                  remaining, _getLimitTypeName(l10n, limitType)))
+          : _getLimitReachedMessage(l10n, limitType, limit, currentTier),
       currentTier: currentTier,
       suggestedTier: isAllowed ? null : _getSuggestedTier(limitType, currentTier),
     );
@@ -249,63 +257,64 @@ class UsageLimitService {
     }
   }
 
-  /// Get human-readable name for limit type
-  String _getLimitTypeName(UsageLimitType limitType) {
+  /// Get human-readable (localized) name for limit type
+  String _getLimitTypeName(AppLocalizations l10n, UsageLimitType limitType) {
     switch (limitType) {
       case UsageLimitType.likes:
-        return 'connects';
+        return l10n.usageLimitTypeConnects;
       case UsageLimitType.nopes:
-        return 'passes';
+        return l10n.usageLimitTypePasses;
       case UsageLimitType.superLikes:
-        return 'Priority Connects';
+        return l10n.usageLimitTypePriorityConnects;
       case UsageLimitType.dailySuperLikes:
-        return 'daily Priority Connects';
+        return l10n.usageLimitTypeDailyPriorityConnects;
       case UsageLimitType.swipes:
-        return 'swipes';
+        return l10n.usageLimitTypeSwipes;
       case UsageLimitType.messages:
-        return 'messages';
+        return l10n.usageLimitTypeMessages;
       case UsageLimitType.mediaSends:
-        return 'media sends';
+        return l10n.usageLimitTypeMediaSends;
       case UsageLimitType.directMatch:
-        return 'direct matches';
+        return l10n.usageLimitTypeDirectMatches;
       case UsageLimitType.connects:
-        return 'connections';
+        return l10n.usageLimitTypeConnections;
     }
   }
 
   // ─── Limit-reached messages ──────────────────────────────────
 
-  /// Get message when limit is reached
+  /// Get (localized) message when limit is reached
   String _getLimitReachedMessage(
+    AppLocalizations l10n,
     UsageLimitType limitType,
     int limit,
     MembershipTier currentTier,
   ) {
     switch (limitType) {
       case UsageLimitType.likes:
-        return "You've used all $limit connects this hour. Upgrade for more or wait until next hour.";
+        return l10n.usageLimitConnectsHourly(limit);
       case UsageLimitType.nopes:
-        return "You've used all $limit passes this hour. Upgrade for more or wait until next hour.";
+        return l10n.usageLimitPassesHourly(limit);
       case UsageLimitType.superLikes:
         if (limit == 0) {
-          return 'Priority Connects are not available on the ${currentTier.displayName} plan. Upgrade to unlock this feature!';
+          return l10n.usageLimitPriorityUnavailable(localizedMembershipTierName(l10n, currentTier));
         }
-        return "You've used all $limit Priority Connects this hour. Upgrade for more or wait until next hour.";
+        return l10n.usageLimitPriorityHourly(limit);
       case UsageLimitType.dailySuperLikes:
-        return "You've used your $limit free priority connect${limit == 1 ? '' : 's'} for today. Use coins for more or wait until tomorrow.";
+        return l10n.usageLimitPriorityDaily(limit);
       case UsageLimitType.swipes:
-        return "You've used all $limit swipes for today. Upgrade to get more swipes or wait until tomorrow.";
+        return l10n.usageLimitSwipesDaily(limit);
       case UsageLimitType.messages:
-        return "You've reached your daily limit of $limit messages. Upgrade to send unlimited messages!";
+        return l10n.usageLimitMessagesDaily(limit);
       case UsageLimitType.mediaSends:
         if (limit == 0) {
-          return 'Sending media is not available on the ${currentTier.displayName} plan. Upgrade to send images and videos!';
+          return l10n.usageLimitMediaUnavailable(localizedMembershipTierName(l10n, currentTier));
         }
-        return "You've reached your daily limit of $limit media sends. Upgrade for more or wait until tomorrow.";
+        return l10n.usageLimitMediaDaily(limit);
       case UsageLimitType.directMatch:
-        return "You've used your $limit free direct match${limit == 1 ? '' : 'es'} today. Use coins for more or wait until tomorrow.";
+        return l10n.usageLimitDirectMatchDaily(limit);
       case UsageLimitType.connects:
-        return "You've reached your daily limit of $limit new connections. Upgrade to connect with more people!";
+        return l10n.connectDailyLimitReached(limit);
     }
   }
 

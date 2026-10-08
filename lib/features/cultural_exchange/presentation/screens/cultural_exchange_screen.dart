@@ -5,6 +5,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/cultural_exchange_bloc.dart';
+import '../cultural_exchange_l10n.dart';
 import '../widgets/widgets.dart';
 import 'country_spotlight_screen.dart';
 import 'dating_etiquette_screen.dart';
@@ -99,7 +100,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                           color: AppColors.richGold,
                         ),
                         onPressed: () => _navigateToDatingEtiquette(context),
-                        tooltip: 'Dating Etiquette',
+                        tooltip: l10n.culturalExchangeDatingEtiquette,
                       ),
                     ],
                   ),
@@ -248,10 +249,9 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                   ),
                 ),
                 const SizedBox(height: 4),
-                const Text(
-                  'In Japan, it is customary to bow when greeting someone. '
-                  'The deeper the bow, the more respect you show.',
-                  style: TextStyle(
+                Text(
+                  l10n.culturalExchangeDailyInsightJapanBow,
+                  style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 13,
                     height: 1.3,
@@ -543,7 +543,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                               ),
                             ),
                             child: Text(
-                              '${cat.emoji} ${cat.displayName}',
+                              '${cat.emoji} ${localizedTipCategory(l10n, cat)}',
                               style: TextStyle(
                                 color: isSelected
                                     ? AppColors.richGold
@@ -588,7 +588,7 @@ class _CulturalExchangeScreenState extends State<CulturalExchangeScreen> {
                             final tip = CulturalTip(
                               id: '',
                               userId: '', // TODO: Get from auth
-                              userDisplayName: 'You', // TODO: Get from profile
+                              userDisplayName: 'You', // i18n-ignore: stored author name placeholder (TODO: get from profile)
                               country: countryController.text.trim(),
                               title: titleController.text.trim(),
                               content: contentController.text.trim(),

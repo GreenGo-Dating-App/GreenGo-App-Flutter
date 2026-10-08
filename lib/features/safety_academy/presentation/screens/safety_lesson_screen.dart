@@ -8,6 +8,7 @@ import '../../domain/entities/safety_module.dart';
 import '../bloc/safety_academy_bloc.dart';
 import '../bloc/safety_academy_event.dart';
 import '../bloc/safety_academy_state.dart';
+import '../l10n/safety_academy_content_l10n.dart';
 import 'safety_quiz_screen.dart';
 
 /// Screen for displaying lessons within a safety module.
@@ -32,13 +33,14 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
         title: Text(
-          widget.module.title,
+          localizedSafetyModule(l10n, widget.module).title,
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.bold,
@@ -54,8 +56,8 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
         listener: (context, state) {
           if (state.lessonCompleted) {
             ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Lesson completed!'),
+              SnackBar(
+                content: Text(l10n.safetyAcademyLessonCompletedToast),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -68,11 +70,12 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
             );
           }
 
-          final lessons = state.currentLessons;
+          final lessons = state.currentLessons
+              .map((l) => localizedSafetyLesson(l10n, l))
+              .toList();
           if (lessons.isEmpty && state.errorMessage != null) {
             // A failed load used to fall through to "No lessons available
             // yet", hiding the real problem and offering no way to retry.
-            final l10n = AppLocalizations.of(context)!;
             return Center(
               child: Padding(
                 padding: const EdgeInsets.all(24),
@@ -106,10 +109,10 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
             );
           }
           if (lessons.isEmpty) {
-            return const Center(
+            return Center(
               child: Text(
-                'No lessons available yet.',
-                style: TextStyle(color: AppColors.textSecondary),
+                l10n.safetyAcademyNoLessons,
+                style: const TextStyle(color: AppColors.textSecondary),
               ),
             );
           }
@@ -136,7 +139,10 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          '$completedCount / ${lessons.length} lessons',
+                          l10n.safetyAcademyLessonsProgress(
+                            completedCount,
+                            lessons.length,
+                          ),
                           style: const TextStyle(
                             color: AppColors.textSecondary,
                             fontSize: 13,
@@ -206,6 +212,7 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
     required bool isSelected,
     required SafetyAcademyState state,
   }) {
+    final l10n = AppLocalizations.of(context)!;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       margin: const EdgeInsets.only(bottom: 8),
@@ -259,7 +266,9 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
               ),
             ),
             subtitle: Text(
-              '+${lesson.xpReward} XP${lesson.quiz != null ? ' | Quiz' : ''}',
+              lesson.quiz != null
+                  ? l10n.safetyAcademyLessonXpWithQuiz(lesson.xpReward)
+                  : l10n.xpRewardLabel('${lesson.xpReward}'),
               style: const TextStyle(
                 color: AppColors.textTertiary,
                 fontSize: 12,
@@ -290,6 +299,7 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
     SafetyLesson lesson,
     SafetyAcademyState state,
   ) {
+    final l10n = AppLocalizations.of(context)!;
     final isCompleted =
         state.progress?.isLessonCompleted(lesson.id) ?? false;
 
@@ -316,7 +326,7 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
                 child: OutlinedButton.icon(
                   onPressed: () => _navigateToQuiz(context, lesson),
                   icon: const Icon(Icons.quiz, size: 18),
-                  label: const Text('Take Quiz'),
+                  label: Text(l10n.safetyAcademyTakeQuiz),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: AppColors.richGold,
                     side: const BorderSide(color: AppColors.richGold),
@@ -353,9 +363,9 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                child: const Text(
-                  'Complete Lesson',
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                child: Text(
+                  l10n.safetyAcademyCompleteLesson,
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -368,15 +378,15 @@ class _SafetyLessonScreenState extends State<SafetyLessonScreen> {
                 color: AppColors.successGreen.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.check_circle,
+                  const Icon(Icons.check_circle,
                       color: AppColors.successGreen, size: 18),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   Text(
-                    'Completed',
-                    style: TextStyle(
+                    l10n.safetyAcademyCompleted,
+                    style: const TextStyle(
                       color: AppColors.successGreen,
                       fontWeight: FontWeight.w600,
                     ),

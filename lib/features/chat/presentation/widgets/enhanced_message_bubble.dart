@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/chat_l10n.dart';
 import '../../domain/entities/message.dart';
 
 /// Enhanced Message Bubble Widget
@@ -149,7 +150,7 @@ class EnhancedMessageBubble extends StatelessWidget {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Text(
-                              message.timeText,
+                              chatClockTime(context, message.sentAt),
                               style: TextStyle(
                                 color: isCurrentUser
                                     ? AppColors.deepBlack.withOpacity(0.6)
@@ -246,7 +247,7 @@ class EnhancedMessageBubble extends StatelessWidget {
               ],
               const SizedBox(height: 4),
               Text(
-                message.timeText,
+                chatClockTime(context, message.sentAt),
                 style: const TextStyle(
                   color: AppColors.textTertiary,
                   fontSize: 10,

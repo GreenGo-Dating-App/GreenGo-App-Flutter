@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/access_control_service.dart';
 import '../widgets/animated_luxury_logo.dart';
@@ -71,6 +72,9 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
   @override
   Widget build(BuildContext context) {
     final hasEarlyAccess = widget.accessData.hasEarlyAccess;
+    final l10n = AppLocalizations.of(context)!;
+    final launchDate = DateFormat.MMMMd(l10n.localeName)
+        .format(AccessControlService.generalAccessDate);
 
     return Stack(
       children: [
@@ -109,9 +113,9 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                   const SizedBox(height: 32),
 
                   // Title
-                  const Text(
-                    'Almost There!',
-                    style: TextStyle(
+                  Text(
+                    l10n.countdownAlmostThere,
+                    style: const TextStyle(
                       fontFamily: _fontFamily,
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
@@ -147,8 +151,8 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                         const SizedBox(width: 8),
                         Text(
                           hasEarlyAccess
-                              ? 'VIP Early Access'
-                              : 'Launch Date: ${DateFormat('MMMM d').format(AccessControlService.generalAccessDate)}',
+                              ? l10n.countdownVipEarlyAccess
+                              : l10n.countdownLaunchDate(launchDate),
                           style: TextStyle(
                             fontFamily: _fontFamily,
                             fontSize: 14,
@@ -163,7 +167,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                   const SizedBox(height: 40),
 
                   // Countdown timer
-                  _buildCountdownTimer(),
+                  _buildCountdownTimer(l10n),
 
                   const SizedBox(height: 40),
 
@@ -182,7 +186,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                         size: 20,
                       ),
                       label: Text(
-                        'Log Out',
+                        l10n.logOut,
                         style: TextStyle(
                           fontFamily: _fontFamily,
                           color: Colors.white.withOpacity(0.6),
@@ -199,7 +203,11 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
     );
   }
 
-  Widget _buildCountdownTimer() {
+  /// Short upper-case unit label ("DAY", "STU"…) from a localized word.
+  static String _unit(String word) =>
+      word.substring(0, word.length < 3 ? word.length : 3).toUpperCase();
+
+  Widget _buildCountdownTimer(AppLocalizations l10n) {
     final days = _timeRemaining.inDays;
     final hours = _timeRemaining.inHours % 24;
     final minutes = _timeRemaining.inMinutes % 60;
@@ -224,9 +232,9 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
       ),
       child: Column(
         children: [
-          const Text(
-            'Time Until Launch',
-            style: TextStyle(
+          Text(
+            l10n.countdownTimeUntilLaunch,
+            style: const TextStyle(
               fontFamily: _fontFamily,
               fontSize: 16,
               fontWeight: FontWeight.w600,
@@ -237,13 +245,13 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              _buildTimeUnit(days.toString(), 'DAYS'),
+              _buildTimeUnit(days.toString(), _unit(l10n.days)),
               _buildSeparator(),
-              _buildTimeUnit(hours.toString().padLeft(2, '0'), 'HRS'),
+              _buildTimeUnit(hours.toString().padLeft(2, '0'), _unit(l10n.hours)),
               _buildSeparator(),
-              _buildTimeUnit(minutes.toString().padLeft(2, '0'), 'MIN'),
+              _buildTimeUnit(minutes.toString().padLeft(2, '0'), _unit(l10n.minutes)),
               _buildSeparator(),
-              _buildTimeUnit(seconds.toString().padLeft(2, '0'), 'SEC'),
+              _buildTimeUnit(seconds.toString().padLeft(2, '0'), _unit(l10n.seconds)),
             ],
           ),
         ],
@@ -303,6 +311,9 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
   }
 
   Widget _buildUpgradeBanner() {
+    final l10n = AppLocalizations.of(context)!;
+    final launchDate = DateFormat.MMMMd(l10n.localeName)
+        .format(AccessControlService.generalAccessDate);
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(16),
@@ -329,9 +340,9 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Want Earlier Access?',
-                  style: TextStyle(
+                Text(
+                  l10n.countdownWantEarlierAccess,
+                  style: const TextStyle(
                     fontFamily: _fontFamily,
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -340,7 +351,7 @@ class _CountdownBlurOverlayState extends State<CountdownBlurOverlay>
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Upgrade your tier to get earlier access before ${DateFormat('MMMM d').format(AccessControlService.generalAccessDate)}!',
+                  l10n.countdownUpgradeForEarlierAccess(launchDate),
                   style: TextStyle(
                     fontFamily: _fontFamily,
                     fontSize: 12,

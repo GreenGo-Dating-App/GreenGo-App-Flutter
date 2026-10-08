@@ -356,7 +356,7 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      DateFormat('EEE, MMM d \u2022 h:mm a').format(when),
+                      '${DateFormat.MMMEd(AppLocalizations.of(context)!.localeName).format(when)} \u2022 ${DateFormat.jm(AppLocalizations.of(context)!.localeName).format(when)}',
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(

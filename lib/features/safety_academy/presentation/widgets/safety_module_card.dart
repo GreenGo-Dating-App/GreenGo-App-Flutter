@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/safety_module.dart';
 import '../../domain/entities/safety_progress.dart';
 
@@ -168,7 +169,8 @@ class SafetyModuleCard extends StatelessWidget {
                       ),
                       const SizedBox(width: 2),
                       Text(
-                        '${module.xpReward} XP',
+                        AppLocalizations.of(context)!
+                            .xpAmountLabel('${module.xpReward}'),
                         style: const TextStyle(
                           color: AppColors.richGold,
                           fontSize: 12,

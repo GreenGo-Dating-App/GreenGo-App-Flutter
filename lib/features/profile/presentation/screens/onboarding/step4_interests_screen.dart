@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_dimensions.dart';
 import '../../../../../generated/app_localizations.dart';
+import 'onboarding_value_labels.dart';
 import '../../bloc/onboarding_bloc.dart';
 import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
@@ -116,52 +117,8 @@ class _Step4InterestsScreenState extends State<Step4InterestsScreen> {
   }
 
   /// Map internal interest key to localized display name
-  String _localizedInterest(BuildContext context, String interest) {
-    final l10n = AppLocalizations.of(context)!;
-    switch (interest) {
-      case 'Travel': return l10n.interestTravel;
-      case 'Photography': return l10n.interestPhotography;
-      case 'Music': return l10n.interestMusic;
-      case 'Movies': return l10n.interestMovies;
-      case 'Sports': return l10n.interestSports;
-      case 'Fitness': return l10n.interestFitness;
-      case 'Cooking': return l10n.interestCooking;
-      case 'Reading': return l10n.interestReading;
-      case 'Art': return l10n.interestArt;
-      case 'Gaming': return l10n.interestGaming;
-      case 'Technology': return l10n.interestTechnology;
-      case 'Fashion': return l10n.interestFashion;
-      case 'Dancing': return l10n.interestDancing;
-      case 'Yoga': return l10n.interestYoga;
-      case 'Hiking': return l10n.interestHiking;
-      case 'Swimming': return l10n.interestSwimming;
-      case 'Running': return l10n.interestRunning;
-      case 'Cycling': return l10n.interestCycling;
-      case 'Meditation': return l10n.interestMeditation;
-      case 'Writing': return l10n.interestWriting;
-      case 'Poetry': return l10n.interestPoetry;
-      case 'Coffee': return l10n.interestCoffee;
-      case 'Wine': return l10n.interestWine;
-      case 'Beer': return l10n.interestBeer;
-      case 'Food': return l10n.interestFood;
-      case 'Vegetarian': return l10n.interestVegetarian;
-      case 'Vegan': return l10n.interestVegan;
-      case 'Pets': return l10n.interestPets;
-      case 'Dogs': return l10n.interestDogs;
-      case 'Cats': return l10n.interestCats;
-      case 'Nature': return l10n.interestNature;
-      case 'Environment': return l10n.interestEnvironment;
-      case 'Volunteering': return l10n.interestVolunteering;
-      case 'Languages': return l10n.interestLanguages;
-      case 'History': return l10n.interestHistory;
-      case 'Science': return l10n.interestScience;
-      case 'Politics': return l10n.interestPolitics;
-      case 'Business': return l10n.interestBusiness;
-      case 'Entrepreneurship': return l10n.interestEntrepreneurship;
-      case 'Investing': return l10n.interestInvesting;
-      default: return interest;
-    }
-  }
+  String _localizedInterest(BuildContext context, String interest) =>
+      localizedOnboardingInterest(AppLocalizations.of(context)!, interest);
 
   @override
   Widget build(BuildContext context) {

@@ -28,6 +28,7 @@ import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../profile/presentation/bloc/profile_state.dart';
 import '../../domain/entities/notification.dart';
+import '../utils/notification_text_l10n.dart';
 import '../../domain/entities/notification_preferences.dart';
 import '../../domain/usecases/get_notification_preferences.dart';
 import '../bloc/notifications_bloc.dart';
@@ -727,7 +728,7 @@ class _NotificationTile extends StatelessWidget {
                     _buildTitle(context, unread),
                     const SizedBox(height: 4),
                     Text(
-                      _resolveL10n(context, notification.message),
+                      _resolveBody(context),
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 13,
@@ -737,7 +738,10 @@ class _NotificationTile extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      notification.timeSinceText,
+                      notificationTimeAgo(
+                        AppLocalizations.of(context)!,
+                        Localizations.localeOf(context).toString(),
+                        notification.createdAt),
                       style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 11,
@@ -767,7 +771,7 @@ class _NotificationTile extends StatelessWidget {
   /// profile). Falls back to a plain title when there's no actor (legacy docs
   /// or system notifications with the name baked into the title).
   Widget _buildTitle(BuildContext context, bool unread) {
-    final title = _resolveL10n(context, notification.title);
+    final title = _resolveTitle(context);
     final actor = notification.actorName?.trim();
     final baseStyle = TextStyle(
       color: AppColors.textPrimary,
@@ -885,12 +889,32 @@ class _NotificationTile extends StatelessWidget {
     }
   }
 
+  String _resolveTitle(BuildContext context) {
+    final text = notification.title;
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null || text.startsWith('l10n:')) {
+      return _resolveL10n(context, text);
+    }
+    return localizedNotificationTitle(l10n, notification);
+  }
+
+  String _resolveBody(BuildContext context) {
+    final text = notification.message;
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null || text.startsWith('l10n:')) {
+      return _resolveL10n(context, text);
+    }
+    return localizedNotificationBody(l10n, notification);
+  }
+
   /// Resolve `l10n:key` prefixed strings to localized text.
   String _resolveL10n(BuildContext context, String text) {
-    if (!text.startsWith('l10n:')) return text;
-    final key = text.substring(5);
     final l10n = AppLocalizations.of(context);
     if (l10n == null) return text;
+    if (!text.startsWith('l10n:')) {
+      return localizeStoredNotificationText(l10n, text);
+    }
+    final key = text.substring(5);
     switch (key) {
       case 'priorityConnectNotificationTitle':
         return l10n.priorityConnectNotificationTitle;

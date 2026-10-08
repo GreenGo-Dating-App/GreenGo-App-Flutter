@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/safety_academy_remote_datasource.dart';
 import '../../data/repositories/safety_academy_repository_impl.dart';
 import '../../domain/entities/safety_module.dart';
@@ -10,6 +11,7 @@ import '../../domain/entities/safety_progress.dart';
 import '../bloc/safety_academy_bloc.dart';
 import '../bloc/safety_academy_event.dart';
 import '../bloc/safety_academy_state.dart';
+import '../l10n/safety_academy_content_l10n.dart';
 import '../widgets/safety_module_card.dart';
 import 'safety_lesson_screen.dart';
 
@@ -45,14 +47,15 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Safety Academy',
-          style: TextStyle(
+        title: Text(
+          l10n.safetyAcademyTitle,
+          style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.bold,
             fontSize: 20,
@@ -97,7 +100,7 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.richGold,
                     ),
-                    child: const Text('Retry'),
+                    child: Text(l10n.retry),
                   ),
                 ],
               ),
@@ -110,13 +113,13 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // XP header
-                _buildXpHeader(state.progress),
+                _buildXpHeader(l10n, state.progress, state.modules.length),
                 const SizedBox(height: 24),
 
                 // Section title
-                const Text(
-                  'Learning Modules',
-                  style: TextStyle(
+                Text(
+                  l10n.safetyAcademyLearningModules,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -128,16 +131,19 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
                 ...state.modules.map((module) => Padding(
                       padding: const EdgeInsets.only(bottom: 12),
                       child: SafetyModuleCard(
-                        module: module,
+                        module: localizedSafetyModule(l10n, module),
                         progress: state.progress,
-                        onTap: () => _navigateToModule(context, module),
+                        onTap: () => _navigateToModule(
+                          context,
+                          localizedSafetyModule(l10n, module),
+                        ),
                       ),
                     )),
 
                 // Safety champion badge
                 if (state.progress?.badges.contains('safety_champion') ??
                     false)
-                  _buildSafetyChampionBanner(),
+                  _buildSafetyChampionBanner(l10n),
               ],
             ),
           );
@@ -146,7 +152,11 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
     );
   }
 
-  Widget _buildXpHeader(SafetyProgress? progress) {
+  Widget _buildXpHeader(
+    AppLocalizations l10n,
+    SafetyProgress? progress,
+    int totalModules,
+  ) {
     final totalXp = progress?.totalXpEarned ?? 0;
     final completedModules = progress?.completedModules.length ?? 0;
 
@@ -166,7 +176,7 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            '$totalXp XP',
+            l10n.xpAmountLabel('$totalXp'),
             style: const TextStyle(
               color: AppColors.deepBlack,
               fontSize: 28,
@@ -175,7 +185,10 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            '$completedModules / 5 modules completed',
+            l10n.safetyAcademyModulesCompleted(
+              completedModules,
+              totalModules == 0 ? 5 : totalModules,
+            ),
             style: TextStyle(
               color: AppColors.deepBlack.withValues(alpha: 0.7),
               fontSize: 14,
@@ -186,7 +199,7 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
     );
   }
 
-  Widget _buildSafetyChampionBanner() {
+  Widget _buildSafetyChampionBanner(AppLocalizations l10n) {
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.only(top: 12),
@@ -210,9 +223,9 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Safety Champion',
-                  style: TextStyle(
+                Text(
+                  l10n.safetyAcademyChampionTitle,
+                  style: const TextStyle(
                     color: AppColors.richGold,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -220,7 +233,7 @@ class _SafetyAcademyScreenContent extends StatelessWidget {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  'You completed all safety modules!',
+                  l10n.safetyAcademyChampionBody,
                   style: TextStyle(
                     color: AppColors.textSecondary.withValues(alpha: 0.8),
                     fontSize: 13,

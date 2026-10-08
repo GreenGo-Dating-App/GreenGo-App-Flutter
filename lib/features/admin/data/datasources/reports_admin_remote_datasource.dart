@@ -222,7 +222,7 @@ class ReportsAdminRemoteDataSourceImpl implements ReportsAdminRemoteDataSource {
         final data = doc.data();
         return {
           'userId': doc.id,
-          'displayName': data['displayName'] ?? 'Unknown',
+          'displayName': data['displayName'], // null -> UI shows localized 'Unknown'
           'email': data['email'] ?? '',
           'lockedAt': (data['lockedAt'] as Timestamp?)?.toDate(),
           'lockReason': data['lockReason'] ?? '',

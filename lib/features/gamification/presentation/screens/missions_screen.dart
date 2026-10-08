@@ -8,6 +8,7 @@ import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/missions_service.dart';
 import '../../data/services/streak_service.dart';
+import '../utils/gamification_l10n.dart';
 
 /// Streaks & Missions hub (glass).
 ///
@@ -244,7 +245,7 @@ class _MissionsScreenState extends State<MissionsScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      def.title,
+                      localizedMissionTitle(l10n, def),
                       style: const TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w600,

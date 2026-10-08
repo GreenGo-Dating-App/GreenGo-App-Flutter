@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import '../../../../core/constants/business_categories.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -613,7 +614,8 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
     final city = profile.location.city.trim();
     final subtitle = <String>[
       if ((profile.businessCategory ?? '').trim().isNotEmpty)
-        profile.businessCategory!.trim(),
+        localizedBusinessCategory(
+            AppLocalizations.of(context)!, profile.businessCategory!.trim()),
       if (city.isNotEmpty) city,
     ].join(' · ');
     return _glassRow(
@@ -638,7 +640,9 @@ class _UniversalSearchScreenState extends State<UniversalSearchScreen> {
 
   Widget _eventRow(Event event) {
     final photo = event.imageUrl;
-    final date = DateFormat('EEE, MMM d • h:mm a').format(event.startDate);
+    final loc = AppLocalizations.of(context)!.localeName;
+    final date =
+        '${DateFormat.MMMEd(loc).format(event.startDate)} • ${DateFormat.jm(loc).format(event.startDate)}';
     final where = (event.city ?? event.locationName).trim();
     final subtitle = where.isEmpty ? date : '$date · $where';
     return _glassRow(

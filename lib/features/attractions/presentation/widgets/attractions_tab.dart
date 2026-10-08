@@ -21,6 +21,7 @@ import '../../domain/category_labels.dart';
 import '../../domain/entities/attraction.dart';
 import '../screens/attraction_detail_screen.dart';
 import 'attraction_grid_tile.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import 'attraction_rating_line.dart';
 import 'attraction_score_badge.dart';
 import 'attractions_filter_sheet.dart';
@@ -606,7 +607,22 @@ class _AttractionsTabState extends State<AttractionsTab>
 
   bool get _searching => widget.query.trim().isNotEmpty;
 
+  /// Display name of a catalogue country, localized for the current locale
+  /// (the catalogue stores English names).
   String? _countryNameOf(String iso) {
+    for (final c in _countries) {
+      if (c.iso2 == iso) {
+        final l10n = AppLocalizations.of(context);
+        if (l10n == null) return c.name;
+        final local = localizedCountryName(l10n, iso);
+        return local == iso ? localizedCountryName(l10n, c.name) : local;
+      }
+    }
+    return null;
+  }
+
+  /// English catalogue name, kept searchable next to the localized one.
+  String? _englishCountryNameOf(String iso) {
     for (final c in _countries) {
       if (c.iso2 == iso) return c.name;
     }
@@ -622,6 +638,7 @@ class _AttractionsTabState extends State<AttractionsTab>
     final name = a.name.toLowerCase();
     final city = a.cityName.toLowerCase();
     final country = (_countryNameOf(a.countryIso2) ?? '').toLowerCase();
+    final countryEn = (_englishCountryNameOf(a.countryIso2) ?? '').toLowerCase();
     final iso = a.countryIso2.toLowerCase();
     final cat = (a.category ?? '').toLowerCase();
     final catLocal =
@@ -629,13 +646,13 @@ class _AttractionsTabState extends State<AttractionsTab>
 
     if (name == q) return 1000;
     if (city == q) return 900;
-    if (country == q || iso == q) return 850;
+    if (country == q || countryEn == q || iso == q) return 850;
     if (name.startsWith(q)) return 800;
     if (city.startsWith(q)) return 700;
-    if (country.startsWith(q)) return 650;
+    if (country.startsWith(q) || countryEn.startsWith(q)) return 650;
     if (name.contains(q)) return 600;
     if (city.contains(q)) return 500;
-    if (country.contains(q)) return 450;
+    if (country.contains(q) || countryEn.contains(q)) return 450;
     if (cat == q || catLocal == q) return 400;
     if (cat.contains(q) || catLocal.contains(q)) return 300;
     if (a.slug.contains(q)) return 200;
@@ -766,7 +783,9 @@ class _AttractionsTabState extends State<AttractionsTab>
 
     if (_hereIso != null) add(_hereIso!, l10n.attrChipHere);
     if (_homeIso != null) add(_homeIso!, l10n.attrChipHome);
-    final rest = [..._countries]..sort((a, b) => a.name.compareTo(b.name));
+    final rest = [..._countries]
+      ..sort((a, b) => (_countryNameOf(a.iso2) ?? a.name)
+          .compareTo(_countryNameOf(b.iso2) ?? b.name));
     for (final c in rest) {
       add(c.iso2);
     }
@@ -1204,7 +1223,7 @@ class _AttractionsTabState extends State<AttractionsTab>
                               fontSize: 12,
                               fontWeight: FontWeight.bold))
                     else if (a.ticketPrice != null && a.ticketPrice! > 0)
-                      Text('${a.currency ?? ''} ${a.ticketPrice!.toStringAsFixed(0)}',
+                      Text('${a.currency ?? ''} ${a.ticketPrice!.toStringAsFixed(0)}', // i18n-ignore: currency + amount
                           style: const TextStyle(
                               color: AppColors.textPrimary, fontSize: 12)),
                     const Spacer(),

@@ -141,7 +141,8 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
           Padding(
             padding: const EdgeInsets.only(top: 10, bottom: 6),
             child: Text(
-              entry.key,
+              localizedBusinessCategoryGroup(
+                  AppLocalizations.of(context)!, entry.key),
               style: const TextStyle(
                 color: AppColors.textSecondary,
                 fontSize: 13,
@@ -174,7 +175,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
           ),
         ),
         child: Text(
-          c,
+          localizedBusinessCategory(AppLocalizations.of(context)!, c),
           style: TextStyle(
             color: selected ? AppColors.deepBlack : AppColors.textSecondary,
             fontWeight: selected ? FontWeight.w600 : FontWeight.normal,

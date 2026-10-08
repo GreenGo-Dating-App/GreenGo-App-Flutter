@@ -11,6 +11,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../domain/entities/location.dart' as profile_entity;
 import '../../../../core/utils/user_error.dart';
@@ -459,7 +460,8 @@ class _MapPickerScreen extends StatefulWidget {
 class _MapPickerScreenState extends State<_MapPickerScreen> {
   final MapController _mapController = MapController();
   LatLng _selectedLatLng = const LatLng(40.7128, -74.0060); // Default: NYC
-  String _addressText = 'Tap on the map to select a location';
+  /// Null until a location is chosen; the UI then shows a localized hint.
+  String? _addressText;
   bool _isLoadingAddress = false;
   String _city = '';
   String _country = '';
@@ -537,7 +539,8 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
           setState(() {
             _city = '';
             _country = '';
-            _addressText = '${latLng.latitude.toStringAsFixed(4)}, ${latLng.longitude.toStringAsFixed(4)} — could not resolve address';
+            _addressText = AppLocalizations.of(context)!.travelerCouldNotResolveAddress(
+                '${latLng.latitude.toStringAsFixed(4)}, ${latLng.longitude.toStringAsFixed(4)}');
             _isLoadingAddress = false;
           });
           return;
@@ -556,8 +559,8 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
         setState(() {
           _city = '';
           _country = '';
-          _addressText =
-              '${latLng.latitude.toStringAsFixed(4)}, ${latLng.longitude.toStringAsFixed(4)} — could not resolve address';
+          _addressText = AppLocalizations.of(context)!.travelerCouldNotResolveAddress(
+              '${latLng.latitude.toStringAsFixed(4)}, ${latLng.longitude.toStringAsFixed(4)}');
           _isLoadingAddress = false;
         });
       }
@@ -572,7 +575,7 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
       longitude: _selectedLatLng.longitude,
       city: _city,
       country: _country,
-      displayAddress: _addressText,
+      displayAddress: _addressText ?? '',
     ));
   }
 
@@ -657,7 +660,8 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
                                 ),
                                 const SizedBox(width: 8),
                                 Text(
-                                  _addressText,
+                                  _addressText ??
+                                      AppLocalizations.of(context)!.travelerTapOnMap,
                                   style: const TextStyle(
                                     color: AppColors.textSecondary,
                                     fontSize: 14,
@@ -666,7 +670,8 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
                               ],
                             )
                           : Text(
-                              _addressText,
+                              _addressText ??
+                                  AppLocalizations.of(context)!.travelerTapOnMap,
                               style: const TextStyle(
                                 color: AppColors.textPrimary,
                                 fontSize: 15,
@@ -888,7 +893,7 @@ class _SelectedLocationCard extends StatelessWidget {
                 const SizedBox(height: 8),
                 Text(
                   location.city != location.country
-                      ? '${location.city}, ${location.country}'
+                      ? '${location.city}, ${localizedCountryName(AppLocalizations.of(context)!, location.country)}'
                       : location.city,
                   style: const TextStyle(
                     color: AppColors.textSecondary,

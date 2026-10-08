@@ -353,16 +353,16 @@ class SeasonalEvents {
   static SeasonalEvent valentinesDay(int year) {
     return SeasonalEvent(
       eventId: 'valentines_$year',
-      name: 'Valentine\'s Week',
-      description: 'Spread the love this Valentine\'s Week!',
+      name: 'Valentine\'s Week', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      description: 'Spread the love this Valentine\'s Week!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       theme: 'valentine',
       startDate: DateTime(year, 2, 7), // Week before Valentine's
       endDate: DateTime(year, 2, 15),  // Day after Valentine's
       challenges: [
         DailyChallenge(
           challengeId: 'valentine_matches_$year',
-          name: 'Love Connections',
-          description: 'Get 14 matches during Valentine\'s Week (1 per day)',
+          name: 'Love Connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Get 14 matches during Valentine\'s Week (1 per day)', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.hard,
           requiredCount: 14,
@@ -377,8 +377,8 @@ class SeasonalEvents {
         ),
         DailyChallenge(
           challengeId: 'valentine_video_$year',
-          name: 'Virtual Date Night',
-          description: 'Complete 3 video calls',
+          name: 'Virtual Date Night', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Complete 3 video calls', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.medium,
           requiredCount: 3,
@@ -404,16 +404,16 @@ class SeasonalEvents {
   static SeasonalEvent summerLove(int year) {
     return SeasonalEvent(
       eventId: 'summer_$year',
-      name: 'Summer Love',
-      description: 'Find your summer romance!',
+      name: 'Summer Love', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      description: 'Find your summer romance!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       theme: 'summer',
       startDate: DateTime(year, 6, 1),
       endDate: DateTime(year, 8, 31),
       challenges: [
         DailyChallenge(
           challengeId: 'summer_matches_$year',
-          name: 'Beach Vibes',
-          description: 'Get 30 matches this summer',
+          name: 'Beach Vibes', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Get 30 matches this summer', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.epic,
           requiredCount: 30,
@@ -440,16 +440,16 @@ class SeasonalEvents {
   static SeasonalEvent holidaySeason(int year) {
     return SeasonalEvent(
       eventId: 'holiday_$year',
-      name: 'Holiday Season',
-      description: 'Find love this holiday season!',
+      name: 'Holiday Season', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+      description: 'Find love this holiday season!', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       theme: 'holiday',
       startDate: DateTime(year, 12, 1),
       endDate: DateTime(year, 12, 31),
       challenges: [
         DailyChallenge(
           challengeId: 'holiday_gifts_$year',
-          name: 'Gift Giver',
-          description: 'Send 10 coin gifts to matches',
+          name: 'Gift Giver', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Send 10 coin gifts to matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.hard,
           requiredCount: 10,
@@ -464,8 +464,8 @@ class SeasonalEvents {
         ),
         DailyChallenge(
           challengeId: 'holiday_messages_$year',
-          name: 'Holiday Cheer',
-          description: 'Send 100 messages',
+          name: 'Holiday Cheer', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+          description: 'Send 100 messages', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
           type: ChallengeType.seasonal,
           difficulty: ChallengeDifficulty.epic,
           requiredCount: 100,

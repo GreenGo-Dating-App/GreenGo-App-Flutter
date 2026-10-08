@@ -70,37 +70,37 @@ class CheckFeatureUnlock implements UseCase<FeatureUnlockStatus, CheckFeatureUnl
         featureId: 'custom_chat_themes',
         featureName: 'Custom Chat Themes',
         requiredLevel: 10,
-        description: 'Customize your chat background with exclusive themes',
+        description: 'Customize your chat background with exclusive themes', // i18n-ignore: not shown in UI
       ),
       'profile_video': FeatureRequirement(
         featureId: 'profile_video',
         featureName: 'Profile Video',
         requiredLevel: 25,
-        description: 'Add a video introduction to your profile',
+        description: 'Add a video introduction to your profile', // i18n-ignore: not shown in UI
       ),
       'advanced_filters': FeatureRequirement(
         featureId: 'advanced_filters',
         featureName: 'Advanced Filters',
         requiredLevel: 15,
-        description: 'Use advanced search filters to find better matches',
+        description: 'Use advanced search filters to find better matches', // i18n-ignore: not shown in UI
       ),
       'unlimited_rewinds': FeatureRequirement(
         featureId: 'unlimited_rewinds',
         featureName: 'Unlimited Rewinds',
         requiredLevel: 30,
-        description: 'Undo as many swipes as you want',
+        description: 'Undo as many swipes as you want', // i18n-ignore: not shown in UI
       ),
       'vip_badge': FeatureRequirement(
         featureId: 'vip_badge',
         featureName: 'VIP Badge',
         requiredLevel: 50,
-        description: 'Display your VIP status with a gold crown',
+        description: 'Display your VIP status with a gold crown', // i18n-ignore: not shown in UI
       ),
       'priority_likes': FeatureRequirement(
         featureId: 'priority_likes',
         featureName: 'Priority Likes',
         requiredLevel: 40,
-        description: 'Your likes appear first in their queue',
+        description: 'Your likes appear first in their queue', // i18n-ignore: not shown in UI
       ),
     };
 

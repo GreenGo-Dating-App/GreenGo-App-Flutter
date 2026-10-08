@@ -9,6 +9,7 @@ import '../../../../core/constants/product_catalog.dart';
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/subscription.dart';
+import '../tier_l10n.dart';
 import '../../domain/membership_product_mapping.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../bloc/subscription_bloc.dart';
@@ -148,6 +149,17 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
       showUserErrorMessage(context, l10n.userErrorNotAllowed);
       return;
     }
+    // Known SubscriptionBloc codes (developer English) -> localized text.
+    final known = switch (message) {
+      'Store not available' => l10n.shopStoreNotAvailable,
+      'No products available' => l10n.shopTemporarilyUnavailable,
+      'Purchase failed to initiate' => l10n.shopFailedToInitiate,
+      _ => null,
+    };
+    if (known != null) {
+      showUserErrorMessage(context, known);
+      return;
+    }
     showUserError(context, message);
   }
 
@@ -168,7 +180,8 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
             final endDate = state.endDate ?? DateTime.now().add(const Duration(days: 30));
             PurchaseSuccessDialog.showMembershipActivated(
               context,
-              tierName: state.tier.displayName,
+              tierName: localizedSubscriptionTierName(
+                  AppLocalizations.of(context)!, state.tier),
               endDate: endDate,
               coinsGranted: state.coinsGranted,
               onDismiss: () {
@@ -247,7 +260,7 @@ class _MembershipScreenState extends State<_MembershipScreenView> {
                             ),
                           ),
                           child: Text(
-                            'Buy ${_selectedProduct!.title} - ${_displayPrice(_selectedProduct!)}  ${AppLocalizations.of(context)!.plusTaxes}',
+                            '${AppLocalizations.of(context)!.membershipBuyProductPrice(_selectedProduct!.title, _displayPrice(_selectedProduct!))}  ${AppLocalizations.of(context)!.plusTaxes}', // i18n-ignore: composed of localized parts
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,

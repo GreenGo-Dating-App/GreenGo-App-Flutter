@@ -18,8 +18,7 @@ class MissionDef {
 
   final String id;
 
-  /// English fallback title.
-  // TODO(i18n): move mission titles into app_en.arb once keys are available.
+  /// English fallback title; the UI shows `localizedMissionTitle` (by [id]).
   final String title;
 
   /// Units of progress needed to complete.
@@ -96,35 +95,35 @@ class MissionsService {
   static const List<MissionDef> catalog = <MissionDef>[
     MissionDef(
       id: mAttendEvents,
-      title: 'Attend 3 events',
+      title: 'Attend 3 events', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       target: 3,
       coinReward: 100,
       icon: Icons.event_available_rounded,
     ),
     MissionDef(
       id: mConnectCountries,
-      title: 'Connect with people from 3 countries',
+      title: 'Connect with people from 3 countries', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       target: 3,
       coinReward: 150,
       icon: Icons.public_rounded,
     ),
     MissionDef(
       id: mJoinCommunity,
-      title: 'Join a community',
+      title: 'Join a community', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       target: 1,
       coinReward: 50,
       icon: Icons.groups_rounded,
     ),
     MissionDef(
       id: mCompleteProfile,
-      title: 'Complete your profile',
+      title: 'Complete your profile', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       target: 5,
       coinReward: 75,
       icon: Icons.badge_rounded,
     ),
     MissionDef(
       id: mAddPeople,
-      title: 'Add 5 people',
+      title: 'Add 5 people', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
       target: 5,
       coinReward: 100,
       icon: Icons.person_add_alt_1_rounded,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
 import '../services/version_check_service.dart';
 
@@ -15,6 +16,7 @@ class ForceUpdateDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return PopScope(
       canPop: false, // Prevent back button dismissal
       child: Dialog(
@@ -44,9 +46,9 @@ class ForceUpdateDialog extends StatelessWidget {
               const SizedBox(height: 24),
 
               // Title
-              const Text(
-                'Update Required',
-                style: TextStyle(
+              Text(
+                l10n.updateRequiredTitle,
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: AppColors.textPrimary,
@@ -55,10 +57,10 @@ class ForceUpdateDialog extends StatelessWidget {
               const SizedBox(height: 12),
 
               // Message
-              const Text(
-                'A new version of GreenGo is available. Please update to continue using the app.',
+              Text(
+                l10n.updateRequiredMessage,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   color: AppColors.textSecondary,
                 ),
@@ -77,9 +79,9 @@ class ForceUpdateDialog extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        const Text(
-                          'Current',
-                          style: TextStyle(
+                        Text(
+                          l10n.updateVersionCurrent,
+                          style: const TextStyle(
                             fontSize: 12,
                             color: AppColors.textTertiary,
                           ),
@@ -100,15 +102,15 @@ class ForceUpdateDialog extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Text(
-                          'Required',
-                          style: TextStyle(
+                        Text(
+                          l10n.updateVersionRequired,
+                          style: const TextStyle(
                             fontSize: 12,
                             color: AppColors.textTertiary,
                           ),
                         ),
                         Text(
-                          result.requiredVersion ?? 'Latest',
+                          result.requiredVersion ?? l10n.updateVersionLatest,
                           style: const TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -134,9 +136,9 @@ class ForceUpdateDialog extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
-                        "What's New",
-                        style: TextStyle(
+                      Text(
+                        l10n.updateWhatsNew,
+                        style: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: AppColors.richGold,
@@ -170,9 +172,9 @@ class ForceUpdateDialog extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
-                    'Update Now',
-                    style: TextStyle(
+                  child: Text(
+                    l10n.updateNowButton,
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
@@ -201,6 +203,7 @@ class SoftUpdateDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Dialog(
       backgroundColor: AppColors.backgroundCard,
       shape: RoundedRectangleBorder(
@@ -228,9 +231,9 @@ class SoftUpdateDialog extends StatelessWidget {
             const SizedBox(height: 24),
 
             // Title
-            const Text(
-              'Update Available',
-              style: TextStyle(
+            Text(
+              l10n.updateAvailableTitle,
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: AppColors.textPrimary,
@@ -239,10 +242,10 @@ class SoftUpdateDialog extends StatelessWidget {
             const SizedBox(height: 12),
 
             // Message
-            const Text(
-              'A new version of GreenGo is available with improvements and new features.',
+            Text(
+              l10n.updateAvailableMessage,
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
                 color: AppColors.textSecondary,
               ),
@@ -261,9 +264,9 @@ class SoftUpdateDialog extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      const Text(
-                        'Current',
-                        style: TextStyle(
+                      Text(
+                        l10n.updateVersionCurrent,
+                        style: const TextStyle(
                           fontSize: 12,
                           color: AppColors.textTertiary,
                         ),
@@ -284,15 +287,15 @@ class SoftUpdateDialog extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      const Text(
-                        'Available',
-                        style: TextStyle(
+                      Text(
+                        l10n.updateVersionAvailable,
+                        style: const TextStyle(
                           fontSize: 12,
                           color: AppColors.textTertiary,
                         ),
                       ),
                       Text(
-                        result.requiredVersion ?? 'Latest',
+                        result.requiredVersion ?? l10n.updateVersionLatest,
                         style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -318,9 +321,9 @@ class SoftUpdateDialog extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      "What's New",
-                      style: TextStyle(
+                    Text(
+                      l10n.updateWhatsNew,
+                      style: const TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
                         color: AppColors.richGold,
@@ -355,9 +358,9 @@ class SoftUpdateDialog extends StatelessWidget {
                       ),
                       side: const BorderSide(color: AppColors.divider),
                     ),
-                    child: const Text(
-                      'Later',
-                      style: TextStyle(
+                    child: Text(
+                      l10n.webUpdateLater,
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -376,9 +379,9 @@ class SoftUpdateDialog extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    child: const Text(
-                      'Update',
-                      style: TextStyle(
+                    child: Text(
+                      l10n.updateButton,
+                      style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -404,8 +407,18 @@ class MaintenanceScreen extends StatelessWidget {
   });
   final String message;
 
+  /// English default main.dart passes when the server sent no message.
+  static const String _legacyDefault = 'We are currently performing maintenance.'; // i18n-ignore: matches caller's legacy fallback
+
+  String _displayMessage(AppLocalizations l10n) {
+    final m = message.trim();
+    if (m.isEmpty || m == _legacyDefault) return l10n.maintenanceDefaultMessage;
+    return message;
+  }
+
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       body: SafeArea(
@@ -430,9 +443,9 @@ class MaintenanceScreen extends StatelessWidget {
               const SizedBox(height: 32),
 
               // Title
-              const Text(
-                'Under Maintenance',
-                style: TextStyle(
+              Text(
+                l10n.maintenanceTitle,
+                style: const TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                   color: AppColors.textPrimary,
@@ -442,7 +455,7 @@ class MaintenanceScreen extends StatelessWidget {
 
               // Message
               Text(
-                message,
+                _displayMessage(l10n),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 16,
@@ -463,9 +476,9 @@ class MaintenanceScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
 
-              const Text(
-                'Please check back soon',
-                style: TextStyle(
+              Text(
+                l10n.maintenanceCheckBackSoon,
+                style: const TextStyle(
                   fontSize: 14,
                   color: AppColors.textTertiary,
                 ),

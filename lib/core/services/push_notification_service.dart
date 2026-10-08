@@ -28,6 +28,8 @@ import '../../../features/profile/presentation/bloc/profile_bloc.dart';
 import '../../../features/profile/presentation/bloc/profile_event.dart';
 import '../di/injection_container.dart' as di;
 import 'app_sound_service.dart';
+import '../../generated/app_localizations.dart';
+import '../utils/app_l10n_lookup.dart';
 import '../../features/safety/presentation/screens/moderation_decision_screen.dart';
 
 /// Top-level background message handler (must be a top-level function)
@@ -62,34 +64,34 @@ class PushNotificationService {
   /// Android notification channels. MUST cover every `channelId` the Cloud
   /// Functions send on — Android 8+ silently drops a notification whose channel
   /// was never created on the device. Keep in sync with functions/src/**.
-  static const List<AndroidNotificationChannel> _channels = [
+  static List<AndroidNotificationChannel> _channels(AppLocalizations l10n) => [
     AndroidNotificationChannel(
       'greengo_notifications',
-      'GreenGo Notifications',
-      description: 'Messages, likes, events and activity',
+      l10n.pushChannelMainName,
+      description: l10n.pushChannelMainDescription,
       importance: Importance.high,
       playSound: true,
       enableVibration: true,
     ),
     AndroidNotificationChannel(
       'greengo_broadcasts',
-      'Announcements',
-      description: 'Broadcasts and announcements from GreenGo',
+      l10n.pushChannelAnnouncementsName,
+      description: l10n.pushChannelAnnouncementsDescription,
       importance: Importance.high,
       playSound: true,
       enableVibration: true,
     ),
     AndroidNotificationChannel(
       'bundled_notifications',
-      'Activity summary',
-      description: 'Bundled activity notifications',
+      l10n.pushChannelSummaryName,
+      description: l10n.pushChannelSummaryDescription,
       importance: Importance.defaultImportance,
       playSound: true,
     ),
     AndroidNotificationChannel(
       'default',
-      'General',
-      description: 'General notifications',
+      l10n.pushChannelGeneralName,
+      description: l10n.pushChannelGeneralDescription,
       importance: Importance.high,
       playSound: true,
     ),
@@ -123,7 +125,11 @@ class PushNotificationService {
     // Create every Android notification channel the server sends on
     final androidPlugin = _localNotifications.resolvePlatformSpecificImplementation<
         AndroidFlutterLocalNotificationsPlugin>();
-    for (final channel in _channels) {
+    // Channel names/descriptions show in the OS notification settings, so
+    // they follow the user's app language (re-created on every start, which
+    // updates the name of an existing channel).
+    final channelL10n = await currentAppL10nAsync();
+    for (final channel in _channels(channelL10n)) {
       await androidPlugin?.createNotificationChannel(channel);
     }
 

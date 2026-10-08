@@ -143,8 +143,8 @@ class StreakMilestone extends Equatable {
 class StreakMilestones {
   static const StreakMilestone threeDays = StreakMilestone(
     id: 'streak_3',
-    name: 'Getting Started',
-    description: 'Log in for 3 consecutive days',
+    name: 'Getting Started', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 3 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 3,
     coinReward: 25,
     xpReward: 30,
@@ -153,8 +153,8 @@ class StreakMilestones {
 
   static const StreakMilestone sevenDays = StreakMilestone(
     id: 'streak_7',
-    name: 'Week Warrior',
-    description: 'Log in for 7 consecutive days',
+    name: 'Week Warrior', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 7 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 7,
     coinReward: 50,
     xpReward: 75,
@@ -164,8 +164,8 @@ class StreakMilestones {
 
   static const StreakMilestone fourteenDays = StreakMilestone(
     id: 'streak_14',
-    name: 'Two Week Champ',
-    description: 'Log in for 14 consecutive days',
+    name: 'Two Week Champ', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 14 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 14,
     coinReward: 100,
     xpReward: 150,
@@ -174,8 +174,8 @@ class StreakMilestones {
 
   static const StreakMilestone thirtyDays = StreakMilestone(
     id: 'streak_30',
-    name: 'Monthly Master',
-    description: 'Log in for 30 consecutive days',
+    name: 'Monthly Master', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 30 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 30,
     coinReward: 200,
     xpReward: 300,
@@ -185,8 +185,8 @@ class StreakMilestones {
 
   static const StreakMilestone sixtyDays = StreakMilestone(
     id: 'streak_60',
-    name: 'Two Month Champion',
-    description: 'Log in for 60 consecutive days',
+    name: 'Two Month Champion', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 60 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 60,
     coinReward: 400,
     xpReward: 500,
@@ -195,8 +195,8 @@ class StreakMilestones {
 
   static const StreakMilestone ninetyDays = StreakMilestone(
     id: 'streak_90',
-    name: 'Quarter Year Legend',
-    description: 'Log in for 90 consecutive days',
+    name: 'Quarter Year Legend', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 90 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 90,
     coinReward: 600,
     xpReward: 750,
@@ -206,8 +206,8 @@ class StreakMilestones {
 
   static const StreakMilestone oneEightyDays = StreakMilestone(
     id: 'streak_180',
-    name: 'Half Year Hero',
-    description: 'Log in for 180 consecutive days',
+    name: 'Half Year Hero', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 180 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 180,
     coinReward: 1000,
     xpReward: 1200,
@@ -217,8 +217,8 @@ class StreakMilestones {
 
   static const StreakMilestone yearStreak = StreakMilestone(
     id: 'streak_365',
-    name: 'Year of Love',
-    description: 'Log in for 365 consecutive days',
+    name: 'Year of Love', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Log in for 365 consecutive days', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     daysRequired: 365,
     coinReward: 2500,
     xpReward: 3000,

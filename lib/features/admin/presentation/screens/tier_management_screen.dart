@@ -6,6 +6,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/tier_config.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../subscription/presentation/tier_l10n.dart';
 
 /// Tier Management Screen
 /// Admin interface for configuring tier limits and features
@@ -200,7 +201,7 @@ class _TierManagementScreenState extends State<TierManagementScreen>
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           ElevatedButton(
             onPressed: () {
@@ -342,7 +343,7 @@ class _TierConfigEditor extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                tier.displayName,
+                localizedMembershipTierName(AppLocalizations.of(context)!, tier),
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 24,

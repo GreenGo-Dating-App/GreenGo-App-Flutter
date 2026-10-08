@@ -9,6 +9,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/providers/language_provider.dart';
 import '../../../../core/services/user_directory_service.dart';
 import '../../../../core/utils/base_membership_gate.dart';
+import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../profile/data/models/profile_model.dart';
 import '../../../profile/domain/entities/profile.dart';
@@ -545,7 +546,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                                 ),
                                 const SizedBox(height: 16),
                                 Text(
-                                  state.message,
+                                  userErrorMessage(context, state.message),
                                   style: const TextStyle(
                                     color: AppColors.textSecondary,
                                     fontSize: 16,

@@ -12,8 +12,14 @@ class LanguageProvider extends ChangeNotifier {
           ? Locale(parts[0], parts[1])
           : Locale(parts[0]);
     }
+    activeLocale = _currentLocale;
   }
   Locale _currentLocale = const Locale('en');
+
+  /// The locale the app UI currently renders in, for code without a
+  /// BuildContext (services, validators, notification channels). Null until a
+  /// [LanguageProvider] has been created. See `lib/core/utils/app_l10n_lookup.dart`.
+  static Locale? activeLocale;
   static const String _languageKey = 'selected_language';
 
   Locale get currentLocale => _currentLocale;
@@ -76,6 +82,7 @@ class LanguageProvider extends ChangeNotifier {
 
           if (_currentLocale != newLocale) {
             _currentLocale = newLocale;
+            activeLocale = newLocale;
             notifyListeners();
 
             // Also update local SharedPreferences cache
@@ -93,6 +100,7 @@ class LanguageProvider extends ChangeNotifier {
     if (_currentLocale == locale) return;
 
     _currentLocale = locale;
+    activeLocale = locale;
     notifyListeners();
 
     final languageCode = locale.countryCode != null

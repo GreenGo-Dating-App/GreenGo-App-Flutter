@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
+import '../../../../core/constants/business_categories.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -33,6 +34,7 @@ import '../../../../core/utils/country_flag_helper.dart';
 import '../../../../core/utils/display_image.dart';
 import '../../../../core/utils/first_screen_gate.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../business/presentation/screens/business_storefront_screen.dart';
 import '../../../chat/presentation/screens/conversations_screen.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
@@ -175,7 +177,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// True while traveler mode is active - the header then follows the
   /// travelled-to location rather than the real one.
   bool _travelerActive = false;
-  String? _tierStat; // derived from the profile's membershipTier
+  MembershipTier? _tierStat; // derived from the profile's membershipTier
   String? _countriesStat; // Count of countries visited (real location)
   String? _realCountry; // Last seen profiles.location.country (not Traveler)
   String? _peopleStat; // distinct chat partners (all time)
@@ -661,7 +663,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   void _seedStats() {
     final store = OwnProfileStore.instance;
     final data = store.uid == widget.userId ? store.raw : null;
-    if (data != null) _tierStat = _tierShortLabel(effectiveTierFromDoc(data));
+    if (data != null) _tierStat = effectiveTierFromDoc(data);
     try {
       final state = context.read<CoinBloc>().state;
       final balance = state is CoinBalanceLoaded
@@ -938,7 +940,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 .toList() ??
             const <String>[];
         final tier = effectiveTierFromDoc(data);
-        _tierStat = _tierShortLabel(tier);
+        _tierStat = tier;
         // Parse the full profile once for the recommendation heuristic. Best
         // effort — a parse failure just disables the "Recommended for you" row.
         try {
@@ -954,7 +956,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     if (source == Source.cache && !found) return false;
     // If the profile read failed entirely, still resolve the tier tile so it
     // doesn't shimmer forever (defaults to the Base tier label).
-    _tierStat ??= _tierShortLabel(MembershipTier.free);
+    _tierStat ??= MembershipTier.free;
     if (mounted) setState(() {});
     return found;
   }
@@ -1154,18 +1156,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   /// Compact, brand-facing tier label for the stats tile.
-  String _tierShortLabel(MembershipTier tier) {
+  String _tierShortLabel(AppLocalizations l10n, MembershipTier tier) {
     switch (tier) {
       case MembershipTier.free:
-        return 'Base';
+        return l10n.membershipBase;
       case MembershipTier.silver:
-        return 'Silver';
+        return l10n.membershipSilver;
       case MembershipTier.gold:
-        return 'Gold';
+        return l10n.membershipGold;
       case MembershipTier.platinum:
-        return 'Platinum';
+        return l10n.membershipPlatinum;
       case MembershipTier.test:
-        return 'Tester';
+        return l10n.exploreTierTester;
     }
   }
 
@@ -2087,7 +2089,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// headline then reads just "Explore" — never a made-up city).
   String? get _displayCity {
     if (_city != null && _city!.isNotEmpty) return _city!;
-    if (_countryName != null && _countryName!.isNotEmpty) return _countryName!;
+    if (_countryName != null && _countryName!.isNotEmpty) {
+      return localizedCountryName(AppLocalizations.of(context)!, _countryName!);
+    }
     return null;
   }
 
@@ -2539,7 +2543,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
               borderRadius: BorderRadius.circular(AppGlass.radiusCard),
               child: _StatTile(
                 icon: Icons.workspace_premium_outlined,
-                value: _tierStat,
+                value: _tierStat == null
+                    ? null
+                    : _tierShortLabel(l10n, _tierStat!),
                 label: l10n.statTier,
                 animate: animate,
               ),
@@ -3952,7 +3958,7 @@ class _HappeningCard extends StatelessWidget {
     final goingCount = happening.goingCount;
 
     // Secondary line: prefer the date; else fall back to city / source.
-    String? dateText = date != null ? DateFormat.MMMEd().format(date) : null;
+    String? dateText = date != null ? DateFormat.MMMEd(l10n.localeName).format(date) : null;
     final subtitleParts = <String>[];
     final city = happening.city;
     if (city != null && city.isNotEmpty) subtitleParts.add(city);
@@ -4351,7 +4357,8 @@ class _BusinessCard extends StatelessWidget {
                               const SizedBox(width: 5),
                               Flexible(
                                 child: Text(
-                                  category,
+                                  localizedBusinessCategory(
+                                      AppLocalizations.of(context)!, category),
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
@@ -4465,7 +4472,7 @@ class _SpotlightCard extends StatelessWidget {
                           ],
                           Expanded(
                             child: Text(
-                              country,
+                              localizedCountryName(AppLocalizations.of(context)!, country),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: const TextStyle(

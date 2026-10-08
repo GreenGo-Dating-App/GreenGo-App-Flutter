@@ -4,6 +4,7 @@ import '../../features/coins/presentation/screens/coin_shop_screen.dart';
 import '../../features/membership/domain/entities/membership.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../../features/subscription/presentation/tier_l10n.dart';
 import '../services/usage_limit_service.dart';
 
 /// Dialog action types
@@ -170,7 +171,7 @@ class LimitReachedDialog extends StatelessWidget {
 
   String _getLimitTypeTitle(AppLocalizations l10n) {
     if (limitResult.limit == 0) {
-      return l10n.featureNotAvailableOnTier(limitResult.currentTier.displayName);
+      return l10n.featureNotAvailableOnTier(localizedMembershipTierName(l10n, limitResult.currentTier));
     }
     return l10n.dailyLimitReached(limitResult.limit);
   }
@@ -257,7 +258,7 @@ class LimitReachedDialog extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                l10n.upgradeToTier(suggestedTier.displayName),
+                l10n.upgradeToTier(localizedMembershipTierName(l10n, suggestedTier)),
                 style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 16,
@@ -285,8 +286,8 @@ class LimitReachedDialog extends StatelessWidget {
           if (suggestedRules.canSendMedia && !currentRules.canSendMedia)
             _buildComparisonRow(
               l10n.sendMedia,
-              'No',
-              'Yes',
+              l10n.no,
+              l10n.yes,
             ),
         ],
       ),
@@ -379,7 +380,7 @@ class LimitReachedDialog extends StatelessWidget {
                   const Icon(Icons.star, size: 20),
                   const SizedBox(width: 8),
                   Text(
-                    l10n.upgradeToTier(limitResult.suggestedTier!.displayName),
+                    l10n.upgradeToTier(localizedMembershipTierName(l10n, limitResult.suggestedTier!)),
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
@@ -610,7 +611,7 @@ class FeatureNotAvailableDialog extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      AppLocalizations.of(context)!.requiresTier(requiredTier.displayName),
+                      AppLocalizations.of(context)!.requiresTier(localizedMembershipTierName(AppLocalizations.of(context)!, requiredTier)),
                       style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 14,
@@ -643,7 +644,7 @@ class FeatureNotAvailableDialog extends StatelessWidget {
                     );
                   },
                   child: Text(
-                    AppLocalizations.of(context)!.upgradeToTier(requiredTier.displayName),
+                    AppLocalizations.of(context)!.upgradeToTier(localizedMembershipTierName(AppLocalizations.of(context)!, requiredTier)),
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

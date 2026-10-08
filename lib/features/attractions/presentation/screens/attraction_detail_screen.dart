@@ -10,6 +10,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../core/utils/attraction_icons.dart';
 import '../../../../core/utils/compact_count.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/attractions_datasource.dart';
 import '../../data/services/attraction_ratings_store.dart';
@@ -618,7 +619,11 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                     const SizedBox(width: 4),
                     Expanded(
                       child: Text(
-                          [a.cityName, a.countryName]
+                          [
+                            a.cityName,
+                            if (a.countryName != null)
+                              localizedCountryName(l10n, a.countryName!),
+                          ]
                               .whereType<String>()
                               .where((s) => s.isNotEmpty)
                               .join(', '),

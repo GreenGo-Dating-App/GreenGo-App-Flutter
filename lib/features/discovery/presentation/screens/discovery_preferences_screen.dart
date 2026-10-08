@@ -8,6 +8,8 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/match_preferences.dart';
+import '../../../../core/utils/country_names_l10n.dart';
+import '../discovery_l10n.dart';
 
 /// Discovery Preferences Screen
 ///
@@ -83,18 +85,7 @@ class _DiscoveryPreferencesScreenState
   }
 
   void _showDealBreakerDialog() {
-    final availableOptions = [
-      'Smoking',
-      'Drinking',
-      'No bio',
-      'No photos',
-      'Different religion',
-      'Different politics',
-      'Has children',
-      'Wants children',
-      'Long distance',
-      'Non-monogamy',
-    ];
+    const availableOptions = kDealBreakerOptions;
 
     // Filter out already selected deal breakers
     final availableToAdd = availableOptions
@@ -128,7 +119,7 @@ class _DiscoveryPreferencesScreenState
               final option = availableToAdd[index];
               return ListTile(
                 title: Text(
-                  option,
+                  localizedDealBreaker(AppLocalizations.of(context)!, option),
                   style: const TextStyle(color: AppColors.textPrimary),
                 ),
                 onTap: () {
@@ -289,11 +280,16 @@ class _DiscoveryPreferencesScreenState
               });
             }
 
+            final l10n = AppLocalizations.of(context)!;
             final query = searchController.text.toLowerCase();
             final isSearching = query.isNotEmpty;
             final filtered = isSearching
                 ? availableCountries
-                    .where((c) => c.toLowerCase().contains(query))
+                    .where((c) =>
+                        c.toLowerCase().contains(query) ||
+                        localizedCountryName(l10n, c)
+                            .toLowerCase()
+                            .contains(query))
                     .toList()
                 : availableCountries.toList();
 
@@ -422,14 +418,14 @@ class _DiscoveryPreferencesScreenState
                                 size: 20,
                               ),
                               title: Text(
-                                entry.key,
+                                localizedCountryName(l10n, entry.key),
                                 style: const TextStyle(
                                   color: AppColors.textPrimary,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
                               trailing: Text(
-                                '${entry.value} users',
+                                l10n.discoveryPrefCountryUserCount(entry.value),
                                 style: const TextStyle(
                                   color: AppColors.textTertiary,
                                   fontSize: 12,
@@ -496,7 +492,7 @@ class _DiscoveryPreferencesScreenState
                                   size: 20,
                                 ),
                                 title: Text(
-                                  country,
+                                  localizedCountryName(l10n, country),
                                   style: TextStyle(
                                     color: AppColors.textPrimary,
                                     fontWeight: isTop ? FontWeight.w600 : FontWeight.normal,
@@ -533,9 +529,9 @@ class _DiscoveryPreferencesScreenState
               actions: [
                 TextButton(
                   onPressed: () => Navigator.of(context).pop(),
-                  child: const Text(
-                    'Cancel',
-                    style: TextStyle(color: AppColors.textSecondary),
+                  child: Text(
+                    l10n.cancelLabel,
+                    style: const TextStyle(color: AppColors.textSecondary),
                   ),
                 ),
               ],
@@ -570,9 +566,16 @@ class _DiscoveryPreferencesScreenState
       builder: (context) {
         return StatefulBuilder(
           builder: (context, setDialogState) {
+            final l10n = AppLocalizations.of(context)!;
             final query = searchController.text.toLowerCase();
             final filtered = query.isNotEmpty
-                ? available.where((i) => i.toLowerCase().contains(query)).toList()
+                ? available
+                    .where((i) =>
+                        i.toLowerCase().contains(query) ||
+                        localizedInterestName(l10n, i)
+                            .toLowerCase()
+                            .contains(query))
+                    .toList()
                 : available;
 
             return AlertDialog(
@@ -624,7 +627,7 @@ class _DiscoveryPreferencesScreenState
                                     size: 20,
                                   ),
                                   title: Text(
-                                    interest,
+                                    localizedInterestName(l10n, interest),
                                     style: const TextStyle(color: AppColors.textPrimary),
                                   ),
                                   onTap: () {
@@ -1088,7 +1091,7 @@ class _DiscoveryPreferencesScreenState
   Widget _buildDealBreakerChip(String dealBreaker) {
     return Chip(
       label: Text(
-        dealBreaker,
+        localizedDealBreaker(AppLocalizations.of(context)!, dealBreaker),
         style: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 14,

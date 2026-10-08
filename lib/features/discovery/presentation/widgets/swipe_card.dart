@@ -11,6 +11,8 @@ import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
+import '../../../../core/utils/country_names_l10n.dart';
+import '../discovery_l10n.dart';
 
 /// Swipeable Card Widget
 ///
@@ -354,7 +356,7 @@ class _SwipeCardState extends State<SwipeCard>
                       const Icon(Icons.flight, color: Colors.white, size: 12),
                       const SizedBox(width: 4),
                       Text(
-                        AppLocalizations.of(context)?.travelerBadge ?? 'Traveler',
+                        AppLocalizations.of(context)!.travelerBadge,
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 11,
@@ -429,7 +431,8 @@ class _SwipeCardState extends State<SwipeCard>
                   (widget.isRandomMode || _distanceText(context).isEmpty)
                       ? (profile.effectiveLocation.city.isNotEmpty
                           ? profile.effectiveLocation.city
-                          : profile.effectiveLocation.country)
+                          : localizedCountryName(AppLocalizations.of(context)!,
+                              profile.effectiveLocation.country))
                       : _distanceText(context),
                   style: const TextStyle(
                     color: Colors.white70,
@@ -451,7 +454,8 @@ class _SwipeCardState extends State<SwipeCard>
                 Text(
                   profile.location.city.isNotEmpty
                       ? profile.location.city
-                      : profile.location.country,
+                      : localizedCountryName(
+                          AppLocalizations.of(context)!, profile.location.country),
                   style: const TextStyle(color: Colors.white54, fontSize: 12),
                 ),
                 const Padding(
@@ -464,7 +468,8 @@ class _SwipeCardState extends State<SwipeCard>
                   child: Text(
                     profile.travelerLocation!.city.isNotEmpty
                         ? profile.travelerLocation!.city
-                        : profile.travelerLocation!.country,
+                        : localizedCountryName(AppLocalizations.of(context)!,
+                            profile.travelerLocation!.country),
                     style: const TextStyle(
                       color: Color(0xFF64B5F6),
                       fontSize: 12,
@@ -539,7 +544,8 @@ class _SwipeCardState extends State<SwipeCard>
                     border: Border.all(color: Colors.white24),
                   ),
                   child: Text(
-                    interest,
+                    localizedInterestName(
+                        AppLocalizations.of(context)!, interest),
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 12,

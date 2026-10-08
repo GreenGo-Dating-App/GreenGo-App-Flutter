@@ -5,10 +5,26 @@ import '../../../generated/app_localizations.dart';
 import '../domain/cancellation_rules.dart';
 import '../domain/entities/user_experience.dart';
 import '../domain/experience_validation.dart';
+import '../../profile/presentation/screens/onboarding/onboarding_value_labels.dart';
 
 /// Localized labels / formatting for the user-experiences feature.
 class ExperienceL10n {
   const ExperienceL10n._();
+
+  /// Localized name for a stored (English) language value from
+  /// [kExperienceLanguages]; unknown values are shown as stored.
+  static String language(AppLocalizations l, String value) {
+    switch (value) {
+      case 'Hebrew':
+        return l.uexpLangHebrew;
+      case 'Thai':
+        return l.uexpLangThai;
+      case 'Vietnamese':
+        return l.uexpLangVietnamese;
+      default:
+        return localizedOnboardingLanguage(l, value);
+    }
+  }
 
   static String category(AppLocalizations l, ExperienceCategory c) {
     switch (c) {

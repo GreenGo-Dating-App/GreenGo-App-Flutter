@@ -317,7 +317,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
             currentIndex: currentState.currentIndex,
             required: CoinFeaturePrices.superLike,
             available: available,
-            featureName: 'Priority Connect',
+            feature: DiscoveryCoinFeature.superLike,
           ));
           emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
           return;
@@ -335,7 +335,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
             currentIndex: currentState.currentIndex,
             required: CoinFeaturePrices.superLike,
             available: balanceResult.fold((_) => 0, (b) => b.availableCoins),
-            featureName: 'Priority Connect',
+            feature: DiscoveryCoinFeature.superLike,
           ));
           emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
           return;
@@ -347,7 +347,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
           currentIndex: currentState.currentIndex,
           required: CoinFeaturePrices.superLike,
           available: 0,
-          featureName: 'Priority Connect',
+          feature: DiscoveryCoinFeature.superLike,
         ));
         emit(DiscoveryLoaded(cards: currentState.cards, currentIndex: currentState.currentIndex));
         return;
@@ -561,7 +561,7 @@ class DiscoveryBloc extends Bloc<DiscoveryEvent, DiscoveryState> {
           currentIndex: currentIndex,
           required: CoinFeaturePrices.undo,
           available: available,
-          featureName: 'Undo Swipe',
+          feature: DiscoveryCoinFeature.undo,
         ));
         emit(DiscoveryLoaded(cards: cards, currentIndex: currentIndex));
         return;

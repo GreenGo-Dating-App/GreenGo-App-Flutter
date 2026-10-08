@@ -17,6 +17,7 @@ import '../../domain/usecases/get_daily_challenges.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
+import '../utils/gamification_l10n.dart';
 
 class DailyChallengesScreen extends StatefulWidget {
 
@@ -134,7 +135,8 @@ class _DailyChallengesScreenState extends State<DailyChallengesScreen>
           if (state.successMessage != null) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(state.successMessage!),
+                content: Text(localizedGamificationNotice(
+                    AppLocalizations.of(context)!, state.successMessage!)),
                 backgroundColor: AppColors.richGold,
                 behavior: SnackBarBehavior.floating,
                 shape: RoundedRectangleBorder(

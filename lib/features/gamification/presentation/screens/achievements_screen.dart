@@ -14,6 +14,7 @@ import '../../domain/usecases/get_user_achievements.dart';
 import '../bloc/gamification_bloc.dart';
 import '../bloc/gamification_event.dart';
 import '../bloc/gamification_state.dart';
+import '../utils/gamification_l10n.dart';
 import '../widgets/achievement_unlock_dialog.dart';
 
 class AchievementsScreen extends StatefulWidget {
@@ -32,16 +33,14 @@ class _AchievementsScreenState extends State<AchievementsScreen>
   late TabController _tabController;
   int _selectedCategoryIndex = 0;
 
-  final List<String> _categories = [
-    'All',
-    ...AchievementCategory.values.map(_getCategoryName),
-  ];
+  // "All" + one tab per category.
+  static final int _categoryCount = AchievementCategory.values.length + 1;
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(
-      length: _categories.length,
+      length: _categoryCount,
       vsync: this,
     );
 
@@ -59,37 +58,11 @@ class _AchievementsScreenState extends State<AchievementsScreen>
     super.dispose();
   }
 
-  static String _getCategoryName(AchievementCategory category) {
-    switch (category) {
-      case AchievementCategory.social:
-        return 'Social';
-      case AchievementCategory.engagement:
-        return 'Engagement';
-      case AchievementCategory.premium:
-        return 'Premium';
-      case AchievementCategory.milestones:
-        return 'Milestones';
-      case AchievementCategory.special:
-        return 'Special';
-    }
-  }
-
   String _getLocalizedCategoryLabel(int index) {
     final l10n = AppLocalizations.of(context)!;
     if (index == 0) return l10n.gamificationAll;
-    final category = AchievementCategory.values[index - 1];
-    switch (category) {
-      case AchievementCategory.social:
-        return l10n.gamificationSocial;
-      case AchievementCategory.engagement:
-        return l10n.gamificationEngagement;
-      case AchievementCategory.premium:
-        return l10n.gamificationPremium;
-      case AchievementCategory.milestones:
-        return l10n.gamificationMilestones;
-      case AchievementCategory.special:
-        return l10n.gamificationSpecial;
-    }
+    return localizedAchievementCategory(
+        l10n, AchievementCategory.values[index - 1]);
   }
 
   @override
@@ -130,7 +103,8 @@ class _AchievementsScreenState extends State<AchievementsScreen>
           if (state.successMessage != null) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(state.successMessage!),
+                content: Text(localizedGamificationNotice(
+                    AppLocalizations.of(context)!, state.successMessage!)),
                 backgroundColor: AppColors.richGold,
                 behavior: SnackBarBehavior.floating,
                 shape: RoundedRectangleBorder(
@@ -393,7 +367,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
       margin: const EdgeInsets.symmetric(horizontal: 16),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: _categories.length,
+        itemCount: _categoryCount,
         itemBuilder: (context, index) {
           final isSelected = _selectedCategoryIndex == index;
           return GestureDetector(
@@ -484,6 +458,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
   }
 
   Widget _buildAchievementCard(AchievementWithProgress achievementWithProgress, int index) {
+    final l10n = AppLocalizations.of(context)!;
     final achievement = achievementWithProgress.achievement;
     final isUnlocked = achievementWithProgress.isUnlocked;
     final progress = achievementWithProgress.progressPercentage / 100;
@@ -555,7 +530,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
 
                 // Name
                 Text(
-                  achievement.name,
+                  localizedAchievementName(l10n, achievement),
                   style: TextStyle(
                     fontSize: 10,
                     fontWeight: FontWeight.w600,
@@ -701,7 +676,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
 
                 // Name
                 Text(
-                  achievement.name,
+                  localizedAchievementName(l10n, achievement),
                   style: const TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -713,7 +688,7 @@ class _AchievementsScreenState extends State<AchievementsScreen>
 
                 // Description
                 Text(
-                  achievement.description,
+                  localizedAchievementDescription(l10n, achievement),
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.white.withOpacity(0.7),
@@ -796,7 +771,8 @@ class _AchievementsScreenState extends State<AchievementsScreen>
                       const Icon(Icons.star, color: AppColors.richGold, size: 24),
                       const SizedBox(width: 8),
                       Text(
-                        l10n.gamificationReward(achievement.rewardAmount, achievement.rewardType),
+                        l10n.gamificationRewardWithValue(localizedRewardAmount(
+                            l10n, achievement.rewardType, achievement.rewardAmount)),
                         style: const TextStyle(
                           color: AppColors.richGold,
                           fontSize: 16,

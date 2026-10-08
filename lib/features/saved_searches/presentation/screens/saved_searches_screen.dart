@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../discovery/presentation/discovery_l10n.dart';
 import '../../../explore/presentation/screens/network_discovery_screen.dart';
 import '../../data/saved_searches_service.dart';
 import '../../domain/entities/saved_search.dart';
@@ -107,9 +109,9 @@ class _SavedSearchCard extends StatelessWidget {
   final SavedSearchesService service;
 
   /// A short, human-readable summary of what this search filters by. Built from
-  /// the saved data itself (interests, distance, languages, tags, query) so it
-  /// needs no extra translated strings.
-  String _summary() {
+  /// the saved data itself (interests, distance, languages, tags, query);
+  /// stored canonical values are localized for display.
+  String _summary(AppLocalizations l10n) {
     final p = search.preferences;
     final parts = <String>[];
     if (search.query.trim().isNotEmpty) {
@@ -119,22 +121,26 @@ class _SavedSearchCard extends StatelessWidget {
       parts.add('#${search.tags.join(' #')}');
     }
     if (p.preferredInterests.isNotEmpty) {
-      parts.add(p.preferredInterests.join(', '));
+      parts.add(p.preferredInterests
+          .map((i) => localizedInterestName(l10n, i))
+          .join(', '));
     }
     if (p.preferredCountries.isNotEmpty) {
-      parts.add(p.preferredCountries.join(', '));
+      parts.add(p.preferredCountries
+          .map((c) => localizedCountryName(l10n, c))
+          .join(', '));
     }
     if (p.languageFilter != null && p.languageFilter!.isNotEmpty) {
       parts.add(p.languageFilter!);
     }
     if (p.maxDistanceKm != null) {
-      parts.add('≤ ${p.maxDistanceKm} km');
+      parts.add('≤ ${l10n.preferenceDistanceKm(p.maxDistanceKm!)}');
     }
-    if (p.onlyOnlineNow) parts.add('online');
-    if (p.onlyVerified) parts.add('verified');
-    if (p.travelersOnly) parts.add('travelers');
-    if (p.localGuidesOnly) parts.add('local guides');
-    if (p.showMyNetwork) parts.add('my network');
+    if (p.onlyOnlineNow) parts.add(l10n.preferenceOnlineNow);
+    if (p.onlyVerified) parts.add(l10n.verifiedBadgeLabel);
+    if (p.travelersOnly) parts.add(l10n.discoveryFilterTravelers);
+    if (p.localGuidesOnly) parts.add(l10n.discoveryFilterGuides);
+    if (p.showMyNetwork) parts.add(l10n.discoveryFilterNetwork);
     return parts.isEmpty ? '—' : parts.join(' · ');
   }
 
@@ -213,7 +219,7 @@ class _SavedSearchCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      _summary(),
+                      _summary(l10n),
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 12.5,

@@ -85,110 +85,110 @@ class XPActions {
   static const XPAction profileView = XPAction(
     actionType: 'profile_view',
     xpAmount: 1,
-    description: 'Someone viewed your profile',
+    description: 'Someone viewed your profile', // i18n-ignore: not shown in UI
   );
 
   // Matching
   static const XPAction match = XPAction(
     actionType: 'match',
     xpAmount: 10,
-    description: 'Got a new match',
+    description: 'Got a new match', // i18n-ignore: not shown in UI
   );
 
   static const XPAction superLike = XPAction(
     actionType: 'super_like',
     xpAmount: 5,
-    description: 'Sent a super like',
+    description: 'Sent a super like', // i18n-ignore: not shown in UI
   );
 
   // Messaging
   static const XPAction messageSent = XPAction(
     actionType: 'message_sent',
     xpAmount: 2,
-    description: 'Sent a message',
+    description: 'Sent a message', // i18n-ignore: not shown in UI
   );
 
   static const XPAction firstMessage = XPAction(
     actionType: 'first_message',
     xpAmount: 15,
-    description: 'Started a conversation',
+    description: 'Started a conversation', // i18n-ignore: not shown in UI
   );
 
   // Video calls
   static const XPAction videoCall = XPAction(
     actionType: 'video_call',
     xpAmount: 25,
-    description: 'Completed a video call',
+    description: 'Completed a video call', // i18n-ignore: not shown in UI
   );
 
   // Profile completion
   static const XPAction photoAdded = XPAction(
     actionType: 'photo_added',
     xpAmount: 5,
-    description: 'Added a photo',
+    description: 'Added a photo', // i18n-ignore: not shown in UI
   );
 
   static const XPAction bioUpdated = XPAction(
     actionType: 'bio_updated',
     xpAmount: 10,
-    description: 'Updated bio',
+    description: 'Updated bio', // i18n-ignore: not shown in UI
   );
 
   static const XPAction profileVerified = XPAction(
     actionType: 'profile_verified',
     xpAmount: 50,
-    description: 'Verified profile',
+    description: 'Verified profile', // i18n-ignore: not shown in UI
   );
 
   // Daily actions
   static const XPAction dailyLogin = XPAction(
     actionType: 'daily_login',
     xpAmount: 5,
-    description: 'Daily login',
+    description: 'Daily login', // i18n-ignore: not shown in UI
   );
 
   static const XPAction dailyChallengeCompleted = XPAction(
     actionType: 'daily_challenge',
     xpAmount: 20,
-    description: 'Completed daily challenge',
+    description: 'Completed daily challenge', // i18n-ignore: not shown in UI
   );
 
   // Premium actions
   static const XPAction subscriptionPurchased = XPAction(
     actionType: 'subscription',
     xpAmount: 100,
-    description: 'Purchased subscription',
+    description: 'Purchased subscription', // i18n-ignore: not shown in UI
   );
 
   static const XPAction coinsPurchased = XPAction(
     actionType: 'coins_purchase',
     xpAmount: 30,
-    description: 'Purchased coins',
+    description: 'Purchased coins', // i18n-ignore: not shown in UI
   );
 
   // Vocabulary
   static const XPAction vocabularyCommonWord = XPAction(
     actionType: 'vocabulary_common',
     xpAmount: 1,
-    description: 'Used a common word in chat',
+    description: 'Used a common word in chat', // i18n-ignore: not shown in UI
   );
 
   static const XPAction vocabularyMediumWord = XPAction(
     actionType: 'vocabulary_medium',
     xpAmount: 3,
-    description: 'Used a medium-frequency word in chat',
+    description: 'Used a medium-frequency word in chat', // i18n-ignore: not shown in UI
   );
 
   static const XPAction vocabularyRareWord = XPAction(
     actionType: 'vocabulary_rare',
     xpAmount: 5,
-    description: 'Used a rare word in chat',
+    description: 'Used a rare word in chat', // i18n-ignore: not shown in UI
   );
 
   static const XPAction vocabularyUnknownWord = XPAction(
     actionType: 'vocabulary_unknown',
     xpAmount: 2,
-    description: 'Used a word not in corpus',
+    description: 'Used a word not in corpus', // i18n-ignore: not shown in UI
   );
 
   // Get all actions
@@ -309,14 +309,14 @@ class StandardLevelRewards {
       LevelReward(
         type: 'frame',
         itemId: 'bronze_frame',
-        name: 'Bronze Frame',
-        description: 'Bronze profile frame',
+        name: 'Bronze Frame', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Bronze profile frame', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'coins',
         itemId: 'bonus_coins',
-        name: '50 Bonus Coins',
-        description: 'Free coins reward',
+        name: '50 Bonus Coins', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Free coins reward', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -328,14 +328,14 @@ class StandardLevelRewards {
       LevelReward(
         type: 'frame',
         itemId: 'silver_frame',
-        name: 'Silver Frame',
-        description: 'Silver profile frame',
+        name: 'Silver Frame', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Silver profile frame', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'feature',
         itemId: 'custom_chat_themes',
-        name: 'Custom Chat Themes',
-        description: 'Unlock custom chat themes',
+        name: 'Custom Chat Themes', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Unlock custom chat themes', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -347,14 +347,14 @@ class StandardLevelRewards {
       LevelReward(
         type: 'frame',
         itemId: 'gold_frame',
-        name: 'Gold Frame',
-        description: 'Gold profile frame',
+        name: 'Gold Frame', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Gold profile frame', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'feature',
         itemId: 'profile_video',
-        name: 'Profile Video',
-        description: 'Add video to your profile',
+        name: 'Profile Video', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Add video to your profile', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -366,20 +366,20 @@ class StandardLevelRewards {
       LevelReward(
         type: 'frame',
         itemId: 'platinum_frame',
-        name: 'Platinum Frame',
-        description: 'Platinum profile frame',
+        name: 'Platinum Frame', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Platinum profile frame', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'badge',
         itemId: 'vip_crown',
-        name: 'VIP Crown',
-        description: 'Gold crown indicator',
+        name: 'VIP Crown', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Gold crown indicator', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'coins',
         itemId: 'vip_bonus',
-        name: '500 Bonus Coins',
-        description: 'VIP welcome bonus',
+        name: '500 Bonus Coins', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'VIP welcome bonus', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -391,14 +391,14 @@ class StandardLevelRewards {
       LevelReward(
         type: 'frame',
         itemId: 'diamond_frame',
-        name: 'Diamond Frame',
-        description: 'Diamond profile frame',
+        name: 'Diamond Frame', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Diamond profile frame', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'coins',
         itemId: 'bonus_coins',
-        name: '750 Bonus Coins',
-        description: 'Achievement reward',
+        name: '750 Bonus Coins', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Achievement reward', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -410,20 +410,20 @@ class StandardLevelRewards {
       LevelReward(
         type: 'frame',
         itemId: 'legendary_frame',
-        name: 'Legendary Frame',
-        description: 'Rainbow animated frame',
+        name: 'Legendary Frame', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Rainbow animated frame', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'badge',
         itemId: 'max_level_badge',
-        name: 'Level 100 Badge',
-        description: 'Maximum level achieved',
+        name: 'Level 100 Badge', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Maximum level achieved', // i18n-ignore: not shown in UI
       ),
       LevelReward(
         type: 'coins',
         itemId: 'legendary_bonus',
-        name: '1000 Bonus Coins',
-        description: 'Legendary achievement',
+        name: '1000 Bonus Coins', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+        description: 'Legendary achievement', // i18n-ignore: not shown in UI
       ),
     ],
   );

@@ -37,6 +37,7 @@ import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../../ticket_payments/presentation/widgets/ticket_payment_selector.dart';
 
 /// Languages a host can offer (same names profiles store).
+// i18n-ignore: stored values; displayed via ExperienceL10n.language
 const List<String> kExperienceLanguages = [
   'English',
   'Spanish',
@@ -720,7 +721,7 @@ class _EditorFormState extends State<_EditorForm> {
             ),
             isEmpty: _languages.isEmpty,
             child: Text(
-              _languages.join(', '),
+              _languages.map((x) => ExperienceL10n.language(l, x)).join(', '),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: _text,
@@ -732,7 +733,7 @@ class _EditorFormState extends State<_EditorForm> {
           Wrap(spacing: 6, runSpacing: 6, children: [
             for (final lang in _languages)
               InputChip(
-                label: Text(lang),
+                label: Text(ExperienceL10n.language(l, lang)),
                 labelStyle: const TextStyle(
                     color: AppColors.textPrimary, fontSize: 12),
                 backgroundColor: AppColors.richGold.withValues(alpha: 0.18),
@@ -754,7 +755,10 @@ class _EditorFormState extends State<_EditorForm> {
         builder: (ctx, setD) {
           final q = query.toLowerCase();
           final options = kExperienceLanguages
-              .where((x) => q.isEmpty || x.toLowerCase().contains(q))
+              .where((x) =>
+                  q.isEmpty ||
+                  x.toLowerCase().contains(q) ||
+                  ExperienceL10n.language(l, x).toLowerCase().contains(q))
               .toList();
           final full = draft.length >= ExperienceLimits.languagesMax;
           return AlertDialog(
@@ -784,7 +788,8 @@ class _EditorFormState extends State<_EditorForm> {
                         value: draft.contains(lang),
                         activeColor: AppColors.richGold,
                         checkColor: Colors.black,
-                        title: Text(lang, style: _text),
+                        title: Text(ExperienceL10n.language(l, lang),
+                            style: _text),
                         onChanged: !draft.contains(lang) && full
                             ? null
                             : (v) => setD(() {
@@ -1390,7 +1395,7 @@ class _EditorFormState extends State<_EditorForm> {
                     firstDate: DateTime.now(), lastDate: DateTime.now().add(const Duration(days: 730)));
                 if (d != null) setState(() => _availRules = _availRules.copyWith(dateFrom: dateKey(d)));
               },
-              child: Text('${l.mtDateFrom}: ${r.dateFrom ?? '—'}'),
+              child: Text('${l.mtDateFrom}: ${r.dateFrom ?? '—'}'), // i18n-ignore: localized label + date
             ),
           ),
           const SizedBox(width: 8),

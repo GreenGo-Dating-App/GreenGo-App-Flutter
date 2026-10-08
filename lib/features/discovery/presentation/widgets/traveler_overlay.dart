@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../profile/domain/entities/profile.dart';
 
 /// Traveler Overlay Widget
@@ -25,7 +26,8 @@ class TravelerOverlay extends StatelessWidget {
 
     final originCity = profile.location.city.isNotEmpty
         ? profile.location.city
-        : profile.location.country;
+        : localizedCountryName(
+            AppLocalizations.of(context)!, profile.location.country);
     final travelCity = profile.travelerLocation?.city ?? '';
 
     if (compact) return _buildCompact(context, originCity, travelCity);

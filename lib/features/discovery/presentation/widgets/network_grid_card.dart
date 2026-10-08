@@ -11,6 +11,7 @@ import '../../../../generated/app_localizations.dart';
 import '../../../matching/domain/entities/match_candidate.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/distance_bucket.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 
 /// Reusable, Apple-safe replica of the 2.2.4 Network grid card.
 ///
@@ -143,7 +144,8 @@ class _NetworkGridCardState extends State<NetworkGridCard> {
     final cityText = location.city.isNotEmpty && location.city != 'Unknown'
         ? location.city
         : (location.country.isNotEmpty && location.country != 'Unknown'
-            ? location.country
+            ? localizedCountryName(
+                AppLocalizations.of(context)!, location.country)
             : '');
 
     final currentPhotoUrl =

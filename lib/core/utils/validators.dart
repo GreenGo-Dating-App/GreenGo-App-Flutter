@@ -1,10 +1,15 @@
+import 'app_l10n_lookup.dart';
+
+/// Form validators. Messages follow the app's current language
+/// ([currentAppL10n]); they are used as `validator:` tear-offs, so they have
+/// no BuildContext.
 class Validators {
   Validators._();
 
   /// Email validation
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Email is required';
+      return currentAppL10n().emailRequired;
     }
 
     final emailRegex = RegExp(
@@ -12,7 +17,7 @@ class Validators {
     );
 
     if (!emailRegex.hasMatch(value)) {
-      return 'Please enter a valid email';
+      return currentAppL10n().emailInvalid;
     }
 
     return null;
@@ -27,27 +32,27 @@ class Validators {
   /// - At least one special character
   static String? validatePassword(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Password is required';
+      return currentAppL10n().passwordRequired;
     }
 
     if (value.length < 8) {
-      return 'Password must be at least 8 characters';
+      return currentAppL10n().passwordTooShort;
     }
 
     if (!RegExp(r'[A-Z]').hasMatch(value)) {
-      return 'Password must contain at least one uppercase letter';
+      return currentAppL10n().passwordMustContainUppercase;
     }
 
     if (!RegExp(r'[a-z]').hasMatch(value)) {
-      return 'Password must contain at least one lowercase letter';
+      return currentAppL10n().passwordMustContainLowercase;
     }
 
     if (!RegExp(r'[0-9]').hasMatch(value)) {
-      return 'Password must contain at least one number';
+      return currentAppL10n().passwordMustContainNumber;
     }
 
     if (!RegExp(r'[!@#$%^&*(),.?":{}|<>]').hasMatch(value)) {
-      return 'Password must contain at least one special character';
+      return currentAppL10n().passwordMustContainSpecialChar;
     }
 
     return null;
@@ -56,11 +61,11 @@ class Validators {
   /// Confirm password validation
   static String? validateConfirmPassword(String? value, String password) {
     if (value == null || value.isEmpty) {
-      return 'Please confirm your password';
+      return currentAppL10n().confirmPasswordRequired;
     }
 
     if (value != password) {
-      return 'Passwords do not match';
+      return currentAppL10n().passwordsDoNotMatch;
     }
 
     return null;
@@ -69,15 +74,15 @@ class Validators {
   /// Name validation
   static String? validateName(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Name is required';
+      return currentAppL10n().validatorNameRequired;
     }
 
     if (value.length < 2) {
-      return 'Name must be at least 2 characters';
+      return currentAppL10n().onboardingNameMinLength;
     }
 
     if (!RegExp(r'^[a-zA-Z\s]+$').hasMatch(value)) {
-      return 'Name can only contain letters and spaces';
+      return currentAppL10n().validatorNameLettersOnly;
     }
 
     return null;
@@ -86,14 +91,14 @@ class Validators {
   /// Phone validation
   static String? validatePhone(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Phone number is required';
+      return currentAppL10n().validatorPhoneRequired;
     }
 
     // Remove all non-digit characters
     final digitsOnly = value.replaceAll(RegExp(r'\D'), '');
 
     if (digitsOnly.length < 10) {
-      return 'Phone number must be at least 10 digits';
+      return currentAppL10n().validatorPhoneMinDigits;
     }
 
     return null;
@@ -102,15 +107,15 @@ class Validators {
   /// Age validation
   static String? validateAge(int? value, {int minAge = 18, int maxAge = 100}) {
     if (value == null) {
-      return 'Age is required';
+      return currentAppL10n().validatorAgeRequired;
     }
 
     if (value < minAge) {
-      return 'You must be at least $minAge years old';
+      return currentAppL10n().validatorMinAge(minAge);
     }
 
     if (value > maxAge) {
-      return 'Invalid age';
+      return currentAppL10n().validatorInvalidAge;
     }
 
     return null;
@@ -123,7 +128,7 @@ class Validators {
     }
 
     if (value.length > maxLength) {
-      return 'Bio must be less than $maxLength characters';
+      return currentAppL10n().validatorBioMaxLength(maxLength);
     }
 
     return null;
@@ -166,17 +171,17 @@ class Validators {
   static String getPasswordStrengthLabel(int strength) {
     switch (strength) {
       case 0:
-        return 'Very Weak';
+        return currentAppL10n().passwordStrengthVeryWeak;
       case 1:
-        return 'Weak';
+        return currentAppL10n().passwordStrengthWeak;
       case 2:
-        return 'Fair';
+        return currentAppL10n().passwordStrengthFair;
       case 3:
-        return 'Strong';
+        return currentAppL10n().passwordStrengthStrong;
       case 4:
-        return 'Very Strong';
+        return currentAppL10n().passwordStrengthVeryStrong;
       default:
-        return 'Unknown';
+        return '';
     }
   }
 }

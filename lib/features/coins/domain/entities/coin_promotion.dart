@@ -137,8 +137,8 @@ class CoinPromotions {
   }) {
     return CoinPromotion(
       promotionId: 'black_friday_$year',
-      name: 'Black Friday Sale',
-      description: 'Get 50% extra coins on all packages!',
+      name: 'Black Friday Sale', // i18n-ignore: unused admin seed template; live promos are Firestore content
+      description: 'Get 50% extra coins on all packages!', // i18n-ignore: unused admin seed template; live promos are Firestore content
       type: PromotionType.seasonal,
       bonusPercentage: 50,
       startDate: DateTime(year, 11, 24), // Black Friday
@@ -152,8 +152,8 @@ class CoinPromotions {
   }) {
     return CoinPromotion(
       promotionId: 'new_year_$year',
-      name: 'New Year Bonus',
-      description: 'Start the year with 40% extra coins!',
+      name: 'New Year Bonus', // i18n-ignore: unused admin seed template; live promos are Firestore content
+      description: 'Start the year with 40% extra coins!', // i18n-ignore: unused admin seed template; live promos are Firestore content
       type: PromotionType.seasonal,
       bonusPercentage: 40,
       startDate: DateTime(year, 1, 1),
@@ -167,8 +167,8 @@ class CoinPromotions {
   }) {
     return CoinPromotion(
       promotionId: 'valentines_$year',
-      name: "Valentine's Day Special",
-      description: 'Find love with 30% extra coins!',
+      name: "Valentine's Day Special", // i18n-ignore: unused admin seed template; live promos are Firestore content
+      description: 'Find love with 30% extra coins!', // i18n-ignore: unused admin seed template; live promos are Firestore content
       type: PromotionType.seasonal,
       bonusPercentage: 30,
       startDate: DateTime(year, 2, 10),
@@ -179,8 +179,8 @@ class CoinPromotions {
   /// First purchase bonus: 100 coins
   static const CoinPromotion firstPurchase = CoinPromotion(
     promotionId: 'first_purchase_bonus',
-    name: 'First Purchase Bonus',
-    description: 'Get 100 bonus coins on your first purchase!',
+    name: 'First Purchase Bonus', // i18n-ignore: unused admin seed template; live promos are Firestore content
+    description: 'Get 100 bonus coins on your first purchase!', // i18n-ignore: unused admin seed template; live promos are Firestore content
     type: PromotionType.firstPurchase,
     bonusCoins: 100,
     startDate: null, // Always active
@@ -194,8 +194,8 @@ class CoinPromotions {
   }) {
     return CoinPromotion(
       promotionId: 'weekend_flash_${weekendStart.millisecondsSinceEpoch}',
-      name: 'Weekend Flash Sale',
-      description: '48 hours only - 25% extra coins!',
+      name: 'Weekend Flash Sale', // i18n-ignore: unused admin seed template; live promos are Firestore content
+      description: '48 hours only - 25% extra coins!', // i18n-ignore: unused admin seed template; live promos are Firestore content
       type: PromotionType.flashSale,
       bonusPercentage: 25,
       startDate: weekendStart,

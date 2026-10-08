@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/achievement.dart';
+import '../utils/gamification_l10n.dart';
 
 class AchievementUnlockDialog extends StatefulWidget {
 
@@ -119,7 +120,7 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      AppLocalizations.of(context)?.achievementUnlockedTitle ?? 'ACHIEVEMENT UNLOCKED!',
+                      AppLocalizations.of(context)!.achievementUnlockedTitle,
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -164,7 +165,8 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
 
                     // Achievement name
                     Text(
-                      widget.achievement.name,
+                      localizedAchievementName(
+                          AppLocalizations.of(context)!, widget.achievement),
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -176,7 +178,8 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
 
                     // Achievement description
                     Text(
-                      widget.achievement.description,
+                      localizedAchievementDescription(
+                          AppLocalizations.of(context)!, widget.achievement),
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.grey.shade600,
@@ -215,7 +218,8 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
                           ),
                           const SizedBox(width: 8),
                           Text(
-                            AppLocalizations.of(context)?.achievementRewardLabel(widget.achievement.rewardAmount, widget.achievement.rewardType) ?? '+${widget.achievement.rewardAmount} ${widget.achievement.rewardType}',
+                            localizedRewardAmount(AppLocalizations.of(context)!,
+                                widget.achievement.rewardType, widget.achievement.rewardAmount),
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -241,7 +245,7 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
                           ),
                         ),
                         child: Text(
-                          AppLocalizations.of(context)?.achievementUnlockedAwesome ?? 'Awesome!',
+                          AppLocalizations.of(context)!.achievementUnlockedAwesome,
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -303,19 +307,7 @@ class _AchievementUnlockDialogState extends State<AchievementUnlockDialog>
   }
 
   String _getRarityName(AchievementRarity rarity) {
-    final l10n = AppLocalizations.of(context);
-    switch (rarity) {
-      case AchievementRarity.common:
-        return l10n?.achievementRarityCommon ?? 'COMMON';
-      case AchievementRarity.uncommon:
-        return l10n?.achievementRarityUncommon ?? 'UNCOMMON';
-      case AchievementRarity.rare:
-        return l10n?.achievementRarityRare ?? 'RARE';
-      case AchievementRarity.epic:
-        return l10n?.achievementRarityEpic ?? 'EPIC';
-      case AchievementRarity.legendary:
-        return l10n?.achievementRarityLegendary ?? 'LEGENDARY';
-    }
+    return localizedAchievementRarity(AppLocalizations.of(context)!, rarity);
   }
 }
 

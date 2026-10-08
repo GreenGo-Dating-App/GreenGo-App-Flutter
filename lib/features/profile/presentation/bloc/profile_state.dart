@@ -136,6 +136,16 @@ class ProfileBoostActivated extends ProfileState {
   List<Object?> get props => [profile, expiry];
 }
 
+/// The profile already has an active boost; the UI shows the time left.
+class ProfileBoostAlreadyActive extends ProfileState {
+
+  const ProfileBoostAlreadyActive({required this.expiry});
+  final DateTime expiry;
+
+  @override
+  List<Object?> get props => [expiry];
+}
+
 class ProfileBoostInsufficientCoins extends ProfileState {
 
   const ProfileBoostInsufficientCoins({required this.required, required this.available});

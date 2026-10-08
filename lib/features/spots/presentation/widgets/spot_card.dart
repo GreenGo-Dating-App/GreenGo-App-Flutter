@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../domain/entities/spot.dart';
+import '../spot_l10n.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// A card widget displaying a cultural spot in a list.
 ///
@@ -63,7 +65,7 @@ class SpotCard extends StatelessWidget {
                     Positioned(
                       top: 12,
                       left: 12,
-                      child: _buildCategoryBadge(),
+                      child: _buildCategoryBadge(context),
                     ),
                   ],
                 ),
@@ -85,7 +87,7 @@ class SpotCard extends StatelessWidget {
                     Positioned(
                       top: 12,
                       left: 12,
-                      child: _buildCategoryBadge(),
+                      child: _buildCategoryBadge(context),
                     ),
                   ],
                 ),
@@ -140,7 +142,7 @@ class SpotCard extends StatelessWidget {
                         ),
                         const SizedBox(width: 2),
                         Text(
-                          '${distanceKm!.toStringAsFixed(1)} km',
+                          '${distanceKm!.toStringAsFixed(1)} km', // i18n-ignore: number + unit symbol
                           style: const TextStyle(
                             color: AppColors.textTertiary,
                             fontSize: 12,
@@ -158,7 +160,7 @@ class SpotCard extends StatelessWidget {
     );
   }
 
-  Widget _buildCategoryBadge() {
+  Widget _buildCategoryBadge(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
@@ -175,7 +177,7 @@ class SpotCard extends StatelessWidget {
           ),
           const SizedBox(width: 4),
           Text(
-            spot.category.displayName,
+            spot.category.label(AppLocalizations.of(context)!),
             style: const TextStyle(
               color: Colors.white,
               fontSize: 11,

@@ -786,7 +786,7 @@ class _DetailViewState extends State<_DetailView> {
             plain(ExperienceL10n.duration(l, e.durationMinutes))),
         row(Icons.groups_outlined, l.uexpGroupSize,
             plain(ExperienceL10n.groupSize(l, e.minGroupSize, e.maxGroupSize))),
-        row(Icons.translate, l.uexpLanguages, plain(e.languages.join(', '))),
+        row(Icons.translate, l.uexpLanguages, plain(e.languages.map((x) => ExperienceL10n.language(l, x)).join(', '))),
       ]),
     );
   }

@@ -11,6 +11,7 @@ import '../../bloc/onboarding_event.dart';
 import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
+import 'onboarding_value_labels.dart';
 
 class Step8ProfilePreviewScreen extends StatelessWidget {
   const Step8ProfilePreviewScreen({super.key});
@@ -146,7 +147,12 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                                     state.displayName ?? l10n.notSet),
                                 _InfoItem(l10n.profileFieldAge,
                                     l10n.profileAgeYearsOld(age)),
-                                _InfoItem(l10n.gender, state.gender ?? l10n.notSet),
+                                _InfoItem(
+                                    l10n.gender,
+                                    state.gender == null
+                                        ? l10n.notSet
+                                        : localizedOnboardingGender(
+                                            l10n, state.gender!)),
                               ],
                             ),
 
@@ -169,7 +175,10 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                             _buildChipSection(
                               context,
                               l10n.interests,
-                              state.interests,
+                              state.interests
+                                  .map((i) =>
+                                      localizedOnboardingInterest(l10n, i))
+                                  .toList(),
                             ),
 
                             const Divider(color: AppColors.divider),
@@ -186,9 +195,13 @@ class Step8ProfilePreviewScreen extends StatelessWidget {
                                 ),
                                 _InfoItem(
                                   l10n.onboardingLanguages,
-                                  state.languages.join(', ').isEmpty
+                                  state.languages.isEmpty
                                       ? l10n.notSet
-                                      : state.languages.join(', '),
+                                      : state.languages
+                                          .map((lang) =>
+                                              localizedOnboardingLanguage(
+                                                  l10n, lang))
+                                          .join(', '),
                                 ),
                               ],
                             ),

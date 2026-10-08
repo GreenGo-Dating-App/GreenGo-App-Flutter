@@ -22,6 +22,7 @@ import 'onboarding/step7_personality_quiz_screen.dart';
 import 'onboarding/step8_profile_preview_screen.dart';
 import 'onboarding/step9_social_links_screen.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../generated/app_localizations.dart';
 
 class OnboardingScreen extends StatelessWidget {
 
@@ -44,7 +45,12 @@ class OnboardingScreen extends StatelessWidget {
               Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
             }
           } else if (state is OnboardingError) {
-            showUserError(context, state.message);
+            if (state.message == OnboardingError.incompleteStepCode) {
+              showUserErrorMessage(context,
+                  AppLocalizations.of(context)!.profileOnboardingIncompleteStep);
+            } else {
+              showUserError(context, state.message);
+            }
           }
         },
         builder: (context, state) {

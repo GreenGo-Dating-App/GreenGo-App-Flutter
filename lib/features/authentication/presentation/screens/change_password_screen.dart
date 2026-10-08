@@ -72,7 +72,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
         if (mounted) {
           showUserErrorMessage(
             context,
-            AppLocalizations.of(context)?.changePasswordEmailMismatch ?? 'Email does not match your account',
+            AppLocalizations.of(context)!.changePasswordEmailMismatch,
           );
         }
         setState(() => _isLoading = false);
@@ -92,7 +92,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(AppLocalizations.of(context)?.changePasswordSuccess ?? 'Password changed successfully'),
+            content: Text(AppLocalizations.of(context)!.changePasswordSuccess),
             backgroundColor: AppColors.successGreen,
           ),
         );
@@ -103,13 +103,13 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
         String message;
         switch (e.code) {
           case 'wrong-password':
-            message = AppLocalizations.of(context)?.changePasswordWrongCurrent ?? 'Current password is incorrect';
+            message = AppLocalizations.of(context)!.changePasswordWrongCurrent;
             break;
           case 'weak-password':
-            message = AppLocalizations.of(context)?.passwordWeak ?? 'Password is too weak';
+            message = AppLocalizations.of(context)!.passwordWeak;
             break;
           case 'requires-recent-login':
-            message = AppLocalizations.of(context)?.changePasswordReauthRequired ?? 'Please log out and log in again before changing your password';
+            message = AppLocalizations.of(context)!.changePasswordReauthRequired;
             break;
           default:
             message = userErrorMessage(context, e);
@@ -127,7 +127,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -139,7 +139,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
           onPressed: () => SafeNavigation.pop(context),
         ),
         title: Text(
-          l10n?.changePassword ?? 'Change Password',
+          l10n.changePassword,
           style: const TextStyle(color: AppColors.textPrimary),
         ),
       ),
@@ -176,7 +176,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     const SizedBox(width: 12),
                     Expanded(
                       child: Text(
-                        l10n?.changePasswordDescription ?? 'For security, please verify your identity before changing your password.',
+                        l10n.changePasswordDescription,
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 14,
@@ -195,7 +195,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 obscureText: _obscureCurrentPassword,
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: InputDecoration(
-                  labelText: l10n?.changePasswordCurrent ?? 'Current Password',
+                  labelText: l10n.changePasswordCurrent,
                   labelStyle: const TextStyle(color: AppColors.textSecondary),
                   filled: true,
                   fillColor: AppColors.backgroundCard,
@@ -222,7 +222,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return l10n?.passwordRequired ?? 'Password is required';
+                    return l10n.passwordRequired;
                   }
                   return null;
                 },
@@ -241,7 +241,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                   });
                 },
                 decoration: InputDecoration(
-                  labelText: l10n?.changePasswordNew ?? 'New Password',
+                  labelText: l10n.changePasswordNew,
                   labelStyle: const TextStyle(color: AppColors.textSecondary),
                   filled: true,
                   fillColor: AppColors.backgroundCard,
@@ -280,7 +280,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 obscureText: _obscureConfirmPassword,
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: InputDecoration(
-                  labelText: l10n?.changePasswordConfirm ?? 'Confirm New Password',
+                  labelText: l10n.changePasswordConfirm,
                   labelStyle: const TextStyle(color: AppColors.textSecondary),
                   filled: true,
                   fillColor: AppColors.backgroundCard,
@@ -324,7 +324,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Text(
-                        '${l10n?.changePasswordEmailHint ?? 'Your email'}: $_maskedEmail',
+                        '${l10n.changePasswordEmailHint}: $_maskedEmail',
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 13,
@@ -342,7 +342,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 keyboardType: TextInputType.emailAddress,
                 style: const TextStyle(color: AppColors.textPrimary),
                 decoration: InputDecoration(
-                  labelText: l10n?.changePasswordEmailConfirm ?? 'Confirm your email address',
+                  labelText: l10n.changePasswordEmailConfirm,
                   labelStyle: const TextStyle(color: AppColors.textSecondary),
                   filled: true,
                   fillColor: AppColors.backgroundCard,
@@ -362,7 +362,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return l10n?.emailRequired ?? 'Email is required';
+                    return l10n.emailRequired;
                   }
                   return Validators.validateEmail(value);
                 },
@@ -394,7 +394,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                           ),
                         )
                       : Text(
-                          l10n?.changePassword ?? 'Change Password',
+                          l10n.changePassword,
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,

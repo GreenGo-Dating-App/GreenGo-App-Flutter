@@ -568,7 +568,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         await _createNotification(
           userId: receiverId,
           type: 'new_chat',
+          // i18n-ignore: stored notification doc read by other users/server; display can localize by type + data
           title: 'New Conversation',
+          // i18n-ignore: stored notification doc (see above)
           message: '$displayName started a conversation with you.',
           data: {
             'senderId': senderId,
@@ -590,9 +592,12 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         await _createNotification(
           userId: receiverId,
           type: 'new_message',
+          // i18n-ignore: stored notification doc read by other users/server; display can localize by type + data
           title: 'New message from $displayName',
           message: _notificationPreview(type, content),
           data: {
+            // Lets the notification UI localize media previews by type.
+            'messageType': type.name,
             'senderId': senderId,
             'senderNickname': senderNickname,
             'senderName': senderName,

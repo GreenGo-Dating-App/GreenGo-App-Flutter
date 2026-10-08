@@ -48,12 +48,37 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
   void _validateNickname(String nickname) {
     final result = NicknameGenerator.validate(nickname);
     setState(() {
-      _validationError = result.error;
+      _validationError = _localizedValidationError(result.error);
       _isAvailable = false;
     });
 
     if (result.isValid && nickname != widget.profile.nickname) {
       _checkAvailability(nickname);
+    }
+  }
+
+  /// NicknameGenerator.validate returns English developer text; map each
+  /// known rule to its localized message.
+  String? _localizedValidationError(String? error) {
+    if (error == null) return null;
+    final l10n = AppLocalizations.of(context)!;
+    switch (error) {
+      case 'Nickname cannot be empty':
+        return l10n.profileNicknameErrorEmpty;
+      case 'Nickname must be at least 3 characters':
+        return l10n.profileNicknameErrorTooShort(3);
+      case 'Nickname must be 20 characters or less':
+        return l10n.profileNicknameErrorTooLong(20);
+      case 'Nickname must start with a letter':
+        return l10n.profileNicknameErrorStartLetter;
+      case 'Nickname can only contain letters, numbers, and underscores':
+        return l10n.profileNicknameErrorChars;
+      case 'Nickname cannot contain consecutive underscores':
+        return l10n.profileNicknameErrorUnderscores;
+      case 'Nickname cannot contain reserved words':
+        return l10n.profileNicknameErrorReserved;
+      default:
+        return l10n.profileNicknameInvalid;
     }
   }
 
@@ -111,7 +136,8 @@ class _EditNicknameScreenState extends State<EditNicknameScreen> {
     if (!validation.isValid) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(validation.error ?? 'Invalid nickname'),
+          content: Text(_localizedValidationError(validation.error) ??
+              AppLocalizations.of(context)!.profileNicknameInvalid),
           backgroundColor: AppColors.errorRed,
         ),
       );

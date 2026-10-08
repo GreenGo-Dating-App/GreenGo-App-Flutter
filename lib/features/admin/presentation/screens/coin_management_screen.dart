@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -9,6 +10,8 @@ import '../../../coins/domain/entities/coin_package.dart';
 import '../../../coins/domain/entities/invoice.dart';
 import '../../../coins/domain/entities/order.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../coins/presentation/coin_l10n.dart';
+import '../admin_coin_l10n.dart';
 
 /// Coin Management Screen
 /// Admin interface for managing coin packages and user balances
@@ -611,7 +614,7 @@ class _UserBalanceTabState extends State<_UserBalanceTab> {
                               ),
                             ),
                             const Text(
-                              'user@example.com',
+                              'user@example.com', // i18n-ignore: placeholder sample email (not prose)
                               style: TextStyle(
                                 color: AppColors.textSecondary,
                                 fontSize: 12,
@@ -846,7 +849,7 @@ class _SpendItemsTab extends StatelessWidget {
                 vertical: AppDimensions.paddingS,
               ),
               child: Text(
-                category.displayName,
+                localizedCoinSpendCategory(AppLocalizations.of(context)!, category),
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 16,
@@ -895,7 +898,7 @@ class _SpendItemCard extends StatelessWidget {
         title: Row(
           children: [
             Text(
-              item.name,
+              localizedCoinSpendItemName(AppLocalizations.of(context)!, item),
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontWeight: FontWeight.w600,
@@ -921,7 +924,7 @@ class _SpendItemCard extends StatelessWidget {
           ],
         ),
         subtitle: Text(
-          item.description,
+          localizedCoinSpendItemDescription(AppLocalizations.of(context)!, item),
           style: const TextStyle(
             color: AppColors.textTertiary,
             fontSize: 12,
@@ -990,7 +993,7 @@ class _SpendItemCard extends StatelessWidget {
         return AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          l10n.adminEditItem(item.name),
+          l10n.adminEditItem(localizedCoinSpendItemName(l10n, item)),
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Column(
@@ -1153,7 +1156,7 @@ class _OrdersTabState extends State<_OrdersTab> {
                       ...OrderStatus.values.map((status) => DropdownMenuItem(
                         value: status,
                         child: Text(
-                          status.displayName,
+                          adminOrderStatusLabel(AppLocalizations.of(context)!, status),
                           style: const TextStyle(color: AppColors.textPrimary),
                         ),
                       )),
@@ -1252,7 +1255,7 @@ class _OrderCard extends StatelessWidget {
           ),
         ),
         title: Text(
-          '${type.displayName} - \$${total.toStringAsFixed(2)}',
+          '${adminOrderTypeLabel(AppLocalizations.of(context)!, type)} - \$${total.toStringAsFixed(2)}',
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.w600,
@@ -1267,7 +1270,7 @@ class _OrderCard extends StatelessWidget {
             ),
             if (createdAt != null)
               Text(
-                '${createdAt.day}/${createdAt.month}/${createdAt.year} ${createdAt.hour}:${createdAt.minute.toString().padLeft(2, '0')}',
+                DateFormat.yMd(Localizations.localeOf(context).toString()).add_Hm().format(createdAt),
                 style: const TextStyle(color: AppColors.textTertiary, fontSize: 10),
               ),
           ],
@@ -1279,7 +1282,7 @@ class _OrderCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(4),
           ),
           child: Text(
-            status.displayName,
+            adminOrderStatusLabel(AppLocalizations.of(context)!, status),
             style: TextStyle(
               color: _getStatusColor(status),
               fontSize: 12,
@@ -1452,7 +1455,7 @@ class _InvoicesTabState extends State<_InvoicesTab> {
                       ...InvoiceStatus.values.map((status) => DropdownMenuItem(
                         value: status,
                         child: Text(
-                          status.displayName,
+                          adminInvoiceStatusLabel(AppLocalizations.of(context)!, status),
                           style: const TextStyle(color: AppColors.textPrimary),
                         ),
                       )),
@@ -1578,7 +1581,7 @@ class _InvoiceCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(4),
           ),
           child: Text(
-            status.displayName,
+            adminInvoiceStatusLabel(AppLocalizations.of(context)!, status),
             style: TextStyle(
               color: _getStatusColor(status),
               fontSize: 12,

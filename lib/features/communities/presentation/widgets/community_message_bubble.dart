@@ -4,6 +4,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../chat/presentation/utils/chat_l10n.dart';
 import '../../domain/entities/community_message.dart';
 import '../../../chat/presentation/widgets/deleted_message_bubble.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
@@ -207,7 +208,7 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        message.timeText,
+                        chatClockTime(context, message.sentAt),
                         style: TextStyle(
                           color: isCurrentUser
                               ? AppColors.deepBlack.withValues(alpha: 0.6)
@@ -298,7 +299,7 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
                         _translateAction(color: config.iconColor),
                         const Spacer(),
                         Text(
-                          message.timeText,
+                          chatClockTime(context, message.sentAt),
                           style: const TextStyle(
                             color: AppColors.textTertiary,
                             fontSize: 10,

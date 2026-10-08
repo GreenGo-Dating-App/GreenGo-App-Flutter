@@ -222,8 +222,8 @@ class JourneyMilestones {
   // Getting Started
   static const JourneyMilestone completeProfile = JourneyMilestone(
     milestoneId: 'complete_profile',
-    name: 'Profile Pro',
-    description: 'Complete your profile 100%',
+    name: 'Profile Pro', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete your profile 100%', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/profile.png',
     category: JourneyCategory.gettingStarted,
     type: JourneyMilestoneType.profileCompletion,
@@ -237,8 +237,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone addPhotos = JourneyMilestone(
     milestoneId: 'add_photos',
-    name: 'Picture Perfect',
-    description: 'Add 5 photos to your profile',
+    name: 'Picture Perfect', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Add 5 photos to your profile', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/photos.png',
     category: JourneyCategory.gettingStarted,
     type: JourneyMilestoneType.profileCompletion,
@@ -252,8 +252,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone getVerified = JourneyMilestone(
     milestoneId: 'get_verified',
-    name: 'Verified User',
-    description: 'Complete photo verification',
+    name: 'Verified User', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete photo verification', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/verified.png',
     category: JourneyCategory.gettingStarted,
     type: JourneyMilestoneType.verification,
@@ -266,7 +266,7 @@ class JourneyMilestones {
         type: 'badge',
         amount: 1,
         itemId: 'verified_badge',
-        description: 'Verified Badge',
+        description: 'Verified Badge', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -274,8 +274,8 @@ class JourneyMilestones {
   // Socializing
   static const JourneyMilestone firstMatch = JourneyMilestone(
     milestoneId: 'first_match',
-    name: 'First Connection',
-    description: 'Get your first match',
+    name: 'First Connection', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Get your first match', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/match.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.matches,
@@ -289,8 +289,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone tenMatches = JourneyMilestone(
     milestoneId: 'ten_matches',
-    name: 'Rising Star',
-    description: 'Get 10 matches',
+    name: 'Rising Star', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Get 10 matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/star.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.matches,
@@ -305,8 +305,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone fiftyMatches = JourneyMilestone(
     milestoneId: 'fifty_matches',
-    name: 'Social Butterfly',
-    description: 'Get 50 matches',
+    name: 'Social Butterfly', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Get 50 matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/butterfly.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.matches,
@@ -316,14 +316,14 @@ class JourneyMilestones {
     rewards: [
       JourneyReward(type: 'xp', amount: 250),
       JourneyReward(type: 'coins', amount: 150),
-      JourneyReward(type: 'boost', amount: 1, description: 'Free Profile Boost'),
+      JourneyReward(type: 'boost', amount: 1, description: 'Free Profile Boost'), // i18n-ignore: not shown in UI
     ],
   );
 
   static const JourneyMilestone firstMessage = JourneyMilestone(
     milestoneId: 'first_message',
-    name: 'Ice Breaker',
-    description: 'Send your first message',
+    name: 'Ice Breaker', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Send your first message', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/message.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.messages,
@@ -336,8 +336,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone hundredMessages = JourneyMilestone(
     milestoneId: 'hundred_messages',
-    name: 'Conversation King',
-    description: 'Send 100 messages',
+    name: 'Conversation King', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Send 100 messages', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/king.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.messages,
@@ -352,8 +352,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone firstVideoCall = JourneyMilestone(
     milestoneId: 'first_video_call',
-    name: 'Face to Face',
-    description: 'Complete your first video call',
+    name: 'Face to Face', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete your first video call', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/video.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.videoCalls,
@@ -367,8 +367,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone tenVideoCalls = JourneyMilestone(
     milestoneId: 'ten_video_calls',
-    name: 'Video Pro',
-    description: 'Complete 10 video calls',
+    name: 'Video Pro', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Complete 10 video calls', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/video_pro.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.videoCalls,
@@ -382,7 +382,7 @@ class JourneyMilestones {
         type: 'badge',
         amount: 1,
         itemId: 'video_champion_badge',
-        description: 'Video Champion Badge',
+        description: 'Video Champion Badge', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -390,8 +390,8 @@ class JourneyMilestones {
   // Streaks
   static const JourneyMilestone weekStreak = JourneyMilestone(
     milestoneId: 'week_streak',
-    name: 'Dedicated User',
-    description: 'Maintain a 7-day login streak',
+    name: 'Dedicated User', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Maintain a 7-day login streak', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/streak.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.streaks,
@@ -405,8 +405,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone monthStreak = JourneyMilestone(
     milestoneId: 'month_streak',
-    name: 'Super Dedicated',
-    description: 'Maintain a 30-day login streak',
+    name: 'Super Dedicated', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Maintain a 30-day login streak', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/fire.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.streaks,
@@ -420,7 +420,7 @@ class JourneyMilestones {
         type: 'badge',
         amount: 1,
         itemId: 'dedication_badge',
-        description: 'Dedication Badge',
+        description: 'Dedication Badge', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -428,8 +428,8 @@ class JourneyMilestones {
   // Premium
   static const JourneyMilestone upgradeSilver = JourneyMilestone(
     milestoneId: 'upgrade_silver',
-    name: 'Silver Member',
-    description: 'Upgrade to Silver VIP',
+    name: 'Silver Member', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Upgrade to Silver VIP', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/silver.png',
     category: JourneyCategory.premium,
     type: JourneyMilestoneType.tierUpgrade,
@@ -443,8 +443,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone upgradeGold = JourneyMilestone(
     milestoneId: 'upgrade_gold',
-    name: 'Gold Member',
-    description: 'Upgrade to Gold VIP',
+    name: 'Gold Member', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Upgrade to Gold VIP', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/gold.png',
     category: JourneyCategory.premium,
     type: JourneyMilestoneType.tierUpgrade,
@@ -459,8 +459,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone upgradePlatinum = JourneyMilestone(
     milestoneId: 'upgrade_platinum',
-    name: 'Platinum Member',
-    description: 'Upgrade to Platinum VIP',
+    name: 'Platinum Member', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Upgrade to Platinum VIP', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/platinum.png',
     category: JourneyCategory.premium,
     type: JourneyMilestoneType.tierUpgrade,
@@ -474,7 +474,7 @@ class JourneyMilestones {
         type: 'badge',
         amount: 1,
         itemId: 'platinum_elite_badge',
-        description: 'Platinum Elite Badge',
+        description: 'Platinum Elite Badge', // i18n-ignore: not shown in UI
       ),
     ],
   );
@@ -482,8 +482,8 @@ class JourneyMilestones {
   // Mastery
   static const JourneyMilestone tenAchievements = JourneyMilestone(
     milestoneId: 'ten_achievements',
-    name: 'Achievement Hunter',
-    description: 'Earn 10 achievements',
+    name: 'Achievement Hunter', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Earn 10 achievements', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/achievement.png',
     category: JourneyCategory.mastery,
     type: JourneyMilestoneType.achievements,
@@ -497,8 +497,8 @@ class JourneyMilestones {
 
   static const JourneyMilestone fiftyAchievements = JourneyMilestone(
     milestoneId: 'fifty_achievements',
-    name: 'Achievement Master',
-    description: 'Earn 50 achievements',
+    name: 'Achievement Master', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Earn 50 achievements', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/master.png',
     category: JourneyCategory.mastery,
     type: JourneyMilestoneType.achievements,
@@ -512,15 +512,15 @@ class JourneyMilestones {
         type: 'badge',
         amount: 1,
         itemId: 'master_badge',
-        description: 'Mastery Badge',
+        description: 'Mastery Badge', // i18n-ignore: not shown in UI
       ),
     ],
   );
 
   static const JourneyMilestone hundredMatches = JourneyMilestone(
     milestoneId: 'hundred_matches',
-    name: 'Centurion',
-    description: 'Get 100 matches',
+    name: 'Centurion', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Get 100 matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/centurion.png',
     category: JourneyCategory.mastery,
     type: JourneyMilestoneType.matches,
@@ -530,12 +530,12 @@ class JourneyMilestones {
     rewards: [
       JourneyReward(type: 'xp', amount: 750),
       JourneyReward(type: 'coins', amount: 400),
-      JourneyReward(type: 'boost', amount: 3, description: '3 Free Profile Boosts'),
+      JourneyReward(type: 'boost', amount: 3, description: '3 Free Profile Boosts'), // i18n-ignore: not shown in UI
       JourneyReward(
         type: 'badge',
         amount: 1,
         itemId: 'centurion_badge',
-        description: 'Centurion Badge',
+        description: 'Centurion Badge', // i18n-ignore: not shown in UI
       ),
     ],
   );

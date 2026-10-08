@@ -43,7 +43,7 @@ class AdminDashboardScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppDimensions.radiusS),
                 ),
                 child: Text(
-                  adminUser.role.displayName,
+                  _roleLabel(AppLocalizations.of(context)!, adminUser.role),
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 12,
@@ -467,6 +467,19 @@ class AdminDashboardScreen extends StatelessWidget {
 
   bool _hasPermission(Permission permission) {
     return adminUser.hasPermission(permission);
+  }
+
+  String _roleLabel(AppLocalizations l10n, AdminRole role) {
+    switch (role) {
+      case AdminRole.superAdmin:
+        return l10n.adminRoleSuperAdmin;
+      case AdminRole.moderator:
+        return l10n.adminRoleModerator;
+      case AdminRole.support:
+        return l10n.adminSupport;
+      case AdminRole.analyst:
+        return l10n.adminRoleAnalyst;
+    }
   }
 
   Color _getRoleBadgeColor(AdminRole role) {

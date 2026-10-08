@@ -9,6 +9,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/interaction_log_service.dart';
 import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/community_l10n.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
@@ -826,7 +827,7 @@ class _CommunitiesScreenState extends State<CommunitiesScreen>
                   // "All" (null) is entry 0, then one entry per community type.
                   final filters = <(CommunityType?, String)>[
                     (null, l10n.filterAll),
-                    for (final t in CommunityType.values) (t, t.displayName),
+                    for (final t in CommunityType.values) (t, communityTypeLabel(l10n, t)),
                   ];
                   return ListView.separated(
                     scrollDirection: Axis.horizontal,

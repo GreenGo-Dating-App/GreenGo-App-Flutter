@@ -218,7 +218,7 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
             itemBuilder: (context, index) {
               final ticket = tickets[index].data();
               final ticketId = tickets[index].id;
-              final subject = ticket['subject'] ?? 'Support Request';
+              final subject = ticket['subject'] ?? AppLocalizations.of(context)!.adminSupportRequest;
               final status = ticket['status'] ?? 'open';
               final lastMessageAt = ticket['lastMessageAt'] as Timestamp?;
               final unreadCount = ticket['unreadCount'] ?? 0;

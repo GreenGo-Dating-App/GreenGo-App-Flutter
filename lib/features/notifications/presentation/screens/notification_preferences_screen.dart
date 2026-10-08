@@ -345,7 +345,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
                     color: AppColors.textSecondary, fontSize: 12)),
             const SizedBox(height: 4),
             Text(
-              _formatTime(time),
+              _parseTime(time).format(context),
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 18,
@@ -363,13 +363,6 @@ class NotificationPreferencesScreen extends StatelessWidget {
     return TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1]));
   }
 
-  String _formatTime(String time) {
-    final t = _parseTime(time);
-    final hour = t.hourOfPeriod == 0 ? 12 : t.hourOfPeriod;
-    final minute = t.minute.toString().padLeft(2, '0');
-    final period = t.period == DayPeriod.am ? 'AM' : 'PM';
-    return '$hour:$minute $period';
-  }
 }
 
 /// City chips + an "Add city" text-input dialog. Cities are stored normalized.

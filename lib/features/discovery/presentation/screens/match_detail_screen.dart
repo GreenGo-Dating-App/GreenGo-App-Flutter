@@ -188,7 +188,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
 
                               // Match date
                               Text(
-                                AppLocalizations.of(context)!.matchedOnDate(DateFormat('MMMM d, yyyy').format(widget.match.matchedAt)),
+                                AppLocalizations.of(context)!.matchedOnDate(DateFormat.yMMMMd(AppLocalizations.of(context)!.localeName).format(widget.match.matchedAt)),
                                 style: const TextStyle(
                                   color: AppColors.textSecondary,
                                   fontSize: 14,
@@ -309,13 +309,14 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
   }
 
   Widget _buildUserInfoCards() {
+    final l10n = AppLocalizations.of(context)!;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // Current user card
         Expanded(
           child: _buildUserCard(
-            name: _currentUserProfile?.displayName ?? 'You',
+            name: _currentUserProfile?.displayName ?? l10n.chatYou,
             age: _currentUserProfile != null
                 ? _calculateAge(_currentUserProfile!.dateOfBirth)
                 : null,
@@ -330,7 +331,7 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
         // Other user card
         Expanded(
           child: _buildUserCard(
-            name: _otherUserProfile?.displayName ?? 'Match',
+            name: _otherUserProfile?.displayName ?? l10n.discoveryMatchFallbackName,
             age: _otherUserProfile != null
                 ? _calculateAge(_otherUserProfile!.dateOfBirth)
                 : null,
@@ -461,9 +462,9 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           ),
           child: Column(
             children: [
-              const Text(
-                'Progress Comparison',
-                style: TextStyle(
+              Text(
+                AppLocalizations.of(context)!.progressComparison,
+                style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -475,7 +476,8 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
                   // Current user stats
                   Expanded(
                     child: _buildGamificationStats(
-                      _currentUserProfile?.displayName ?? 'You',
+                      _currentUserProfile?.displayName ??
+                          AppLocalizations.of(context)!.chatYou,
                       _currentUserGamification,
                     ),
                   ),
@@ -487,7 +489,8 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
                   // Other user stats
                   Expanded(
                     child: _buildGamificationStats(
-                      _otherUserProfile?.displayName ?? 'Match',
+                      _otherUserProfile?.displayName ??
+                          AppLocalizations.of(context)!.discoveryMatchFallbackName,
                       _otherUserGamification,
                     ),
                   ),
@@ -517,8 +520,8 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           overflow: TextOverflow.ellipsis,
         ),
         const SizedBox(height: 8),
-        _buildStatRow('Level', '$level'),
-        _buildStatRow('XP', '$totalXP'),
+        _buildStatRow(AppLocalizations.of(context)!.levelLabel, '$level'),
+        _buildStatRow(AppLocalizations.of(context)!.xpLabel, '$totalXP'),
       ],
     );
   }
@@ -673,7 +676,8 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          AppLocalizations.of(context)!.unmatchConfirm(_otherUserProfile?.displayName ?? 'this user'),
+          AppLocalizations.of(context)!.unmatchConfirm(_otherUserProfile?.displayName ??
+              AppLocalizations.of(context)!.discoveryThisUser),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
@@ -709,7 +713,8 @@ class _MatchDetailScreenState extends State<MatchDetailScreen> {
               Navigator.of(context).pop();
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text(AppLocalizations.of(context)!.unmatchedWith(_otherUserProfile?.displayName ?? 'user')),
+                  content: Text(AppLocalizations.of(context)!.unmatchedWith(_otherUserProfile?.displayName ??
+                      AppLocalizations.of(context)!.discoveryThisUser)),
                   backgroundColor: AppColors.backgroundCard,
                 ),
               );

@@ -20,6 +20,7 @@ import '../../../../core/widgets/membership_badge.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/widgets/settings_accordion.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../app_tour/presentation/tour_controller.dart';
 import '../../../app_tour/presentation/tour_keys.dart';
 import '../../../app_tour/presentation/widgets/gesture_glyphs.dart';
@@ -191,6 +192,15 @@ class EditProfileScreen extends StatelessWidget {
                 title: AppLocalizations.of(context)!.boostProfileCelebrationTitle,
                 subtitle: AppLocalizations.of(context)!
                     .profileBoostedForMinutes(remaining.inMinutes),
+              );
+            }
+            if (state is ProfileBoostAlreadyActive) {
+              final remaining = state.expiry.difference(DateTime.now());
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(AppLocalizations.of(context)!
+                      .profileAlreadyBoosted(remaining.inMinutes)),
+                ),
               );
             }
             if (state is ProfileBoostInsufficientCoins) {
@@ -1808,7 +1818,8 @@ class EditProfileScreen extends StatelessWidget {
               ],
             ),
             content: Text(
-              AppLocalizations.of(context)!.profileIncognitoDescription('Free - Unlimited'),
+              AppLocalizations.of(context)!.profileIncognitoDescription(
+                AppLocalizations.of(context)!.profileFreeUnlimited),
               style: const TextStyle(color: AppColors.textSecondary),
             ),
             actions: [
@@ -1850,7 +1861,8 @@ class EditProfileScreen extends StatelessWidget {
         }
       } else {
         // Non-eligible tiers: pay coins for 24h
-        const costText = '${CoinFeaturePrices.incognito} coins';
+        final costText =
+            AppLocalizations.of(context)!.coinsCost(CoinFeaturePrices.incognito);
         final confirmed = await showDialog<bool>(
           context: context,
           builder: (ctx) => AlertDialog(
@@ -1987,7 +1999,9 @@ class EditProfileScreen extends StatelessWidget {
         profile.effectiveTier == MembershipTier.test;
 
     // Show confirmation dialog
-    final costText = isPlatinum ? 'Free with Platinum' : '${CoinFeaturePrices.traveler} coins';
+    final costText = isPlatinum
+        ? AppLocalizations.of(context)!.profileFreeWithPlatinum
+        : AppLocalizations.of(context)!.coinsCost(CoinFeaturePrices.traveler);
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -2195,9 +2209,11 @@ class _TravelerToggleCard extends StatelessWidget {
         ? profile.travelerExpiry!.difference(DateTime.now())
         : Duration.zero;
 
-    final costText = isPlatinum ? 'Free with Platinum' : '${CoinFeaturePrices.traveler} coins/day';
+    final costText = isPlatinum
+        ? AppLocalizations.of(context)!.profileFreeWithPlatinum
+        : AppLocalizations.of(context)!.profileCoinsPerDay(CoinFeaturePrices.traveler);
     final locationText = isActive && profile.travelerLocation != null
-        ? '${profile.travelerLocation!.city}, ${profile.travelerLocation!.country}'
+        ? '${profile.travelerLocation!.city}, ${localizedCountryName(AppLocalizations.of(context)!, profile.travelerLocation!.country)}'
         : '';
 
     return Container(
@@ -2222,8 +2238,9 @@ class _TravelerToggleCard extends StatelessWidget {
         ),
         subtitle: Text(
           isActive
-              ? '$locationText - ${remaining.inHours}h ${remaining.inMinutes % 60}m remaining'
-              : '$costText - Appear in another city',
+              ? AppLocalizations.of(context)!.profileTravelerActiveSubtitle(
+                  locationText, remaining.inHours, remaining.inMinutes % 60)
+              : AppLocalizations.of(context)!.profileTravelerInactiveSubtitle(costText),
           style: TextStyle(
             color: isActive ? const Color(0xFF1E88E5) : AppColors.textTertiary,
             fontSize: 12,
@@ -2339,7 +2356,7 @@ class _BoostProfileCard extends StatelessWidget {
                       const SizedBox(height: 2),
                       Text(
                         isActive
-                            ? '${remaining.inMinutes}m remaining'
+                            ? AppLocalizations.of(context)!.profileMinutesRemaining(remaining.inMinutes)
                             : AppLocalizations.of(context)!.profileBoostSubtitle,
                         style: TextStyle(
                           color: isActive
@@ -2488,14 +2505,15 @@ class _IncognitoToggleCard extends StatelessWidget {
     String subtitle;
     if (isActive) {
       if (isGhostEligible) {
-        subtitle = 'Ghost Mode - Unlimited - Hidden from discovery & search';
+        subtitle = AppLocalizations.of(context)!.profileGhostModeActiveSubtitle;
       } else {
-        subtitle = '${remaining.inHours}h ${remaining.inMinutes % 60}m remaining';
+        subtitle = AppLocalizations.of(context)!.profileHoursMinutesRemaining(
+            remaining.inHours, remaining.inMinutes % 60);
       }
     } else if (isGhostEligible) {
-      subtitle = 'Free - Unlimited - Hidden from discovery & nickname search';
+      subtitle = AppLocalizations.of(context)!.profileGhostModeInactiveSubtitle;
     } else {
-      subtitle = '${CoinFeaturePrices.incognito} coins/24h - Hidden from discovery';
+      subtitle = AppLocalizations.of(context)!.profileIncognitoCostSubtitle(CoinFeaturePrices.incognito);
     }
 
     return Container(
@@ -2512,7 +2530,7 @@ class _IncognitoToggleCard extends StatelessWidget {
           color: isActive ? AppColors.richGold : AppColors.textTertiary,
         ),
         title: Text(
-          isGhostEligible ? 'Ghost Mode' : AppLocalizations.of(context)!.profileIncognitoMode,
+          isGhostEligible ? AppLocalizations.of(context)!.profileGhostMode : AppLocalizations.of(context)!.profileIncognitoMode,
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontWeight: FontWeight.w600,

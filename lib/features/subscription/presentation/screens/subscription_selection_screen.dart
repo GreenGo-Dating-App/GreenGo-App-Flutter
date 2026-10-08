@@ -11,6 +11,7 @@ import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../membership/domain/entities/membership.dart';
 import '../../domain/entities/subscription.dart';
+import '../tier_l10n.dart';
 import '../../domain/membership_product_mapping.dart';
 import '../bloc/subscription_bloc.dart';
 
@@ -140,6 +141,17 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
       showUserErrorMessage(context, l10n.userErrorNotAllowed);
       return;
     }
+    // Known SubscriptionBloc codes (developer English) -> localized text.
+    final known = switch (message) {
+      'Store not available' => l10n.shopStoreNotAvailable,
+      'No products available' => l10n.shopTemporarilyUnavailable,
+      'Purchase failed to initiate' => l10n.shopFailedToInitiate,
+      _ => null,
+    };
+    if (known != null) {
+      showUserErrorMessage(context, known);
+      return;
+    }
     showUserError(context, message);
   }
 
@@ -166,7 +178,8 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
             });
             PurchaseSuccessDialog.showMembershipActivated(
               context,
-              tierName: state.tier.displayName,
+              tierName: localizedSubscriptionTierName(
+                  AppLocalizations.of(context)!, state.tier),
               endDate: endDate,
               coinsGranted: state.coinsGranted,
               onDismiss: () {
@@ -331,7 +344,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                             ),
                           ),
                           child: Text(
-                            'Buy ${_selectedProduct!.title} - ${_displayPrice(_selectedProduct!)}  ${AppLocalizations.of(context)!.plusTaxes}',
+                            '${AppLocalizations.of(context)!.membershipBuyProductPrice(_selectedProduct!.title, _displayPrice(_selectedProduct!))}  ${AppLocalizations.of(context)!.plusTaxes}', // i18n-ignore: composed of localized parts
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -429,7 +442,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
           ),
           const SizedBox(height: 8),
           Text(
-            _currentTierName ?? 'BASIC',
+            localizedStoredTierName(AppLocalizations.of(context)!, _currentTierName),
             style: const TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -520,7 +533,8 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                                   ? AppLocalizations.of(context)!.membershipActive
                                   : (_tierRankFromProductId(product.id) == _currentTierRank()
                                       ? AppLocalizations.of(context)!.membershipActive
-                                      : 'You have ${_currentTierName!}'),
+                                      : AppLocalizations.of(context)!.membershipYouHaveTier(
+                                          localizedStoredTierName(AppLocalizations.of(context)!, _currentTierName))),
                               style: const TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
@@ -539,7 +553,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Text(
-                              'SAVE ${_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)}%',
+                              AppLocalizations.of(context)!.membershipSavePercent(_getTierFromProductId(product.id).yearlySavingsPercent.toStringAsFixed(0)),
                               style: const TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
@@ -557,9 +571,9 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: const Text(
-                              '+500 COINS',
-                              style: TextStyle(
+                            child: Text(
+                              AppLocalizations.of(context)!.membershipPlus500Coins,
+                              style: const TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -580,7 +594,7 @@ class _MembershipSelectionScreenState extends State<MembershipSelectionScreen> {
                     if (!isLocked && isYearly) ...[
                       const SizedBox(height: 4),
                       Text(
-                        '${_getTierFromProductId(product.id).yearlyMonthlyEquivalent.toStringAsFixed(2)}/month',
+                        '${_getTierFromProductId(product.id).yearlyMonthlyEquivalent.toStringAsFixed(2)}${AppLocalizations.of(context)!.perMonth}', // i18n-ignore: price + localized suffix
                         style: const TextStyle(
                           fontSize: 13,
                           color: Colors.white70,

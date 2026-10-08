@@ -293,12 +293,12 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
           // Browsers can't drive the torch.
           if (!kIsWeb)
             IconButton(
-              tooltip: 'Flash',
+              tooltip: l10n.bkTorch,
               onPressed: () => _controller.toggleTorch(),
               icon: const Icon(Icons.flash_on, color: AppColors.richGold),
             ),
           IconButton(
-            tooltip: 'Flip camera',
+            tooltip: l10n.bkSwitchCamera,
             onPressed: () => _controller.switchCamera(),
             icon: const Icon(Icons.cameraswitch, color: AppColors.richGold),
           ),

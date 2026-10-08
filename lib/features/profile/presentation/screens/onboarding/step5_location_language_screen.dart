@@ -9,6 +9,7 @@ import 'package:geolocator/geolocator.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/widgets/connection_error_dialog.dart';
 import '../../../../../generated/app_localizations.dart';
+import 'onboarding_value_labels.dart';
 import '../../../data/models/profile_model.dart' show normalizeCountryName;
 import '../../../domain/entities/location.dart' as location_entity;
 import '../../bloc/onboarding_bloc.dart';
@@ -55,53 +56,7 @@ class _Step5LocationLanguageScreenState
   /// only the chip label follows the user's selected app language.
   String _localizedLanguage(BuildContext context, String language) {
     final l10n = AppLocalizations.of(context);
-    if (l10n == null) return language;
-    switch (language) {
-      case 'English':
-        return l10n.languageNameEnglish;
-      case 'Spanish':
-        return l10n.languageNameSpanish;
-      case 'French':
-        return l10n.languageNameFrench;
-      case 'German':
-        return l10n.languageNameGerman;
-      case 'Italian':
-        return l10n.languageNameItalian;
-      case 'Portuguese':
-        return l10n.languageNamePortuguese;
-      case 'Portuguese (Brazil)':
-        return l10n.languageNamePortugueseBrazil;
-      case 'Russian':
-        return l10n.languageNameRussian;
-      case 'Chinese':
-        return l10n.languageNameChinese;
-      case 'Japanese':
-        return l10n.languageNameJapanese;
-      case 'Korean':
-        return l10n.languageNameKorean;
-      case 'Arabic':
-        return l10n.languageNameArabic;
-      case 'Hindi':
-        return l10n.languageNameHindi;
-      case 'Dutch':
-        return l10n.languageNameDutch;
-      case 'Swedish':
-        return l10n.languageNameSwedish;
-      case 'Norwegian':
-        return l10n.languageNameNorwegian;
-      case 'Danish':
-        return l10n.languageNameDanish;
-      case 'Finnish':
-        return l10n.languageNameFinnish;
-      case 'Polish':
-        return l10n.languageNamePolish;
-      case 'Turkish':
-        return l10n.languageNameTurkish;
-      case 'Greek':
-        return l10n.languageNameGreek;
-      default:
-        return language;
-    }
+    return l10n == null ? language : localizedOnboardingLanguage(l10n, language);
   }
 
   List<String> _selectedLanguages = [];

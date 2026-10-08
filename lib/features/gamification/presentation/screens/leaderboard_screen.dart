@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/repositories/gamification_repository.dart';
@@ -506,9 +507,9 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                               ),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: const Text(
-                              'VIP',
-                              style: TextStyle(
+                            child: Text(
+                              l10n.gamificationVip,
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontSize: 10,
                                 fontWeight: FontWeight.bold,
@@ -520,7 +521,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      '${data.userEntry!.totalXP} XP',
+                      l10n.xpAmountLabel('${data.userEntry!.totalXP}'),
                       style: const TextStyle(
                         color: Colors.white,
                         fontSize: 24,
@@ -568,6 +569,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
   }
 
   Widget _buildPodiumPlace(entry, int rank) {
+    final l10n = AppLocalizations.of(context)!;
     final colors = {
       1: [const Color(0xFFFFD700), const Color(0xFFFFA500)],
       2: [const Color(0xFFC0C0C0), const Color(0xFF808080)],
@@ -622,17 +624,12 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             if (entry.region != null && entry.region!.isNotEmpty) ...[
-              Text(
-                _countryCodeToFlag(entry.region!),
-                style: const TextStyle(fontSize: 12),
-              ),
+              _flag(l10n, entry.region! as String, 12),
               const SizedBox(width: 4),
             ],
             Flexible(
               child: Text(
-                entry.username.isNotEmpty
-                    ? entry.username
-                    : 'User ${entry.userId.substring(0, 6)}',
+                _displayName(l10n, entry, 6),
                 style: TextStyle(
                   fontSize: rank == 1 ? 14 : 12,
                   fontWeight: FontWeight.w600,
@@ -646,7 +643,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
         ),
         const SizedBox(height: 2),
         Text(
-          '${entry.totalXP} XP',
+          l10n.xpAmountLabel('${entry.totalXP}'),
           style: TextStyle(
             fontSize: 11,
             color: colors[rank]![0],
@@ -838,17 +835,12 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
                   children: [
                     if (entry.region != null &&
                         entry.region!.isNotEmpty) ...[
-                      Text(
-                        _countryCodeToFlag(entry.region!),
-                        style: const TextStyle(fontSize: 14),
-                      ),
+                      _flag(AppLocalizations.of(context)!, entry.region!, 14),
                       const SizedBox(width: 6),
                     ],
                     Flexible(
                       child: Text(
-                        entry.username.isNotEmpty
-                            ? entry.username
-                            : 'User ${entry.userId.substring(0, 8)}',
+                        _displayName(AppLocalizations.of(context)!, entry, 8),
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w600,
@@ -888,7 +880,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Text(
-              '${entry.totalXP} XP',
+              AppLocalizations.of(context)!.xpAmountLabel('${entry.totalXP}'),
               style: TextStyle(
                 fontSize: 13,
                 fontWeight: FontWeight.w600,
@@ -910,86 +902,24 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
     return String.fromCharCodes([first, second]);
   }
 
-  /// Convert a 2-letter country code to a display name
-  String _countryCodeToName(String countryCode) {
-    const countryNames = {
-      'US': 'United States',
-      'GB': 'United Kingdom',
-      'DE': 'Germany',
-      'FR': 'France',
-      'ES': 'Spain',
-      'IT': 'Italy',
-      'PT': 'Portugal',
-      'BR': 'Brazil',
-      'MX': 'Mexico',
-      'AR': 'Argentina',
-      'CO': 'Colombia',
-      'CL': 'Chile',
-      'PE': 'Peru',
-      'VE': 'Venezuela',
-      'EC': 'Ecuador',
-      'CA': 'Canada',
-      'AU': 'Australia',
-      'NZ': 'New Zealand',
-      'JP': 'Japan',
-      'KR': 'South Korea',
-      'CN': 'China',
-      'IN': 'India',
-      'RU': 'Russia',
-      'ZA': 'South Africa',
-      'NG': 'Nigeria',
-      'EG': 'Egypt',
-      'KE': 'Kenya',
-      'GH': 'Ghana',
-      'AT': 'Austria',
-      'CH': 'Switzerland',
-      'BE': 'Belgium',
-      'NL': 'Netherlands',
-      'SE': 'Sweden',
-      'NO': 'Norway',
-      'DK': 'Denmark',
-      'FI': 'Finland',
-      'PL': 'Poland',
-      'CZ': 'Czech Republic',
-      'IE': 'Ireland',
-      'GR': 'Greece',
-      'TR': 'Turkey',
-      'IL': 'Israel',
-      'AE': 'UAE',
-      'SA': 'Saudi Arabia',
-      'TH': 'Thailand',
-      'PH': 'Philippines',
-      'ID': 'Indonesia',
-      'MY': 'Malaysia',
-      'SG': 'Singapore',
-      'VN': 'Vietnam',
-      'TW': 'Taiwan',
-      'HK': 'Hong Kong',
-      'UY': 'Uruguay',
-      'PY': 'Paraguay',
-      'BO': 'Bolivia',
-      'CR': 'Costa Rica',
-      'PA': 'Panama',
-      'DO': 'Dominican Republic',
-      'GT': 'Guatemala',
-      'HN': 'Honduras',
-      'SV': 'El Salvador',
-      'NI': 'Nicaragua',
-      'CU': 'Cuba',
-      'PR': 'Puerto Rico',
-      'RO': 'Romania',
-      'HU': 'Hungary',
-      'BG': 'Bulgaria',
-      'HR': 'Croatia',
-      'RS': 'Serbia',
-      'SK': 'Slovakia',
-      'SI': 'Slovenia',
-      'UA': 'Ukraine',
-      'LT': 'Lithuania',
-      'LV': 'Latvia',
-      'EE': 'Estonia',
-    };
-    final code = countryCode.toUpperCase().trim();
-    return countryNames[code] ?? code;
+  /// Leaderboard display name; stored placeholders ('' / legacy 'Unknown')
+  /// fall back to a localized "User abc123".
+  String _displayName(AppLocalizations l10n, dynamic entry, int idChars) {
+    final String name = entry.username as String;
+    if (name.isNotEmpty && name != 'Unknown') return name;
+    final String id = entry.userId as String;
+    return l10n.gamificationUserFallback(
+        id.length > idChars ? id.substring(0, idChars) : id);
+  }
+
+  /// Flag emoji with the localized country name as tooltip.
+  Widget _flag(AppLocalizations l10n, String code, double size) {
+    return Tooltip(
+      message: localizedCountryName(l10n, code),
+      child: Text(
+        _countryCodeToFlag(code),
+        style: TextStyle(fontSize: size),
+      ),
+    );
   }
 }

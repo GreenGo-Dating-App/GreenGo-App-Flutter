@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/notification.dart';
+import '../utils/notification_text_l10n.dart';
 
 /// Notification Card Widget
 ///
@@ -73,7 +74,7 @@ class NotificationCard extends StatelessWidget {
                   children: [
                     // Title
                     Text(
-                      _resolveL10n(context, notification.title),
+                      _resolveTitle(context),
                       style: TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
@@ -87,7 +88,7 @@ class NotificationCard extends StatelessWidget {
 
                     // Message
                     Text(
-                      _resolveL10n(context, notification.message),
+                      _resolveBody(context),
                       style: const TextStyle(
                         color: AppColors.textSecondary,
                         fontSize: 14,
@@ -100,7 +101,10 @@ class NotificationCard extends StatelessWidget {
 
                     // Time
                     Text(
-                      notification.timeSinceText,
+                      notificationTimeAgo(
+                        AppLocalizations.of(context)!,
+                        Localizations.localeOf(context).toString(),
+                        notification.createdAt),
                       style: const TextStyle(
                         color: AppColors.textTertiary,
                         fontSize: 12,
@@ -192,12 +196,32 @@ class NotificationCard extends StatelessWidget {
     return _getIconColor().withOpacity(0.1);
   }
 
+  String _resolveTitle(BuildContext context) {
+    final text = notification.title;
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null || text.startsWith('l10n:')) {
+      return _resolveL10n(context, text);
+    }
+    return localizedNotificationTitle(l10n, notification);
+  }
+
+  String _resolveBody(BuildContext context) {
+    final text = notification.message;
+    final l10n = AppLocalizations.of(context);
+    if (l10n == null || text.startsWith('l10n:')) {
+      return _resolveL10n(context, text);
+    }
+    return localizedNotificationBody(l10n, notification);
+  }
+
   /// Resolve `l10n:key` prefixed strings to localized text
   String _resolveL10n(BuildContext context, String text) {
-    if (!text.startsWith('l10n:')) return text;
-    final key = text.substring(5);
     final l10n = AppLocalizations.of(context);
     if (l10n == null) return text;
+    if (!text.startsWith('l10n:')) {
+      return localizeStoredNotificationText(l10n, text);
+    }
+    final key = text.substring(5);
     switch (key) {
       case 'priorityConnectNotificationTitle':
         return l10n.priorityConnectNotificationTitle;

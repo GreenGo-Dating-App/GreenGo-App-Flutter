@@ -89,7 +89,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
@@ -101,7 +101,9 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
           onPressed: () => SafeNavigation.pop(context),
         ),
         title: Text(
-          _document?.title ?? widget.documentType.displayName,
+          _document?.title ??
+              widget.documentType
+                  .localizedName(AppLocalizations.of(context)!),
           style: const TextStyle(
             color: AppColors.textPrimary,
             fontSize: 18,
@@ -137,7 +139,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
     );
   }
 
-  Widget _buildBody(BuildContext context, AppLocalizations? l10n) {
+  Widget _buildBody(BuildContext context, AppLocalizations l10n) {
     if (_isLoading) {
       return const Center(
         child: CircularProgressIndicator(
@@ -160,7 +162,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
               ),
               const SizedBox(height: 16),
               Text(
-                l10n?.errorLoadingDocument ?? 'Error loading document',
+                l10n.errorLoadingDocument,
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 18,
@@ -190,7 +192,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                child: Text(l10n?.retry ?? 'Retry'),
+                child: Text(l10n.retry),
               ),
             ],
           ),
@@ -212,7 +214,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
               ),
               const SizedBox(height: 16),
               Text(
-                l10n?.documentNotAvailable ?? 'Document not available',
+                l10n.documentNotAvailable,
                 style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 18,
@@ -221,8 +223,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
               ),
               const SizedBox(height: 8),
               Text(
-                l10n?.documentNotAvailableDescription ??
-                    'This document is not available in your language yet.',
+                l10n.documentNotAvailableDescription,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   color: AppColors.textSecondary,
@@ -252,7 +253,7 @@ class _LegalDocumentScreenState extends State<LegalDocumentScreen> {
               const SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  '${l10n?.lastUpdated ?? 'Last updated'}: ${_formatDate(_document!.lastUpdated)}',
+                  '${l10n.lastUpdated}: ${_formatDate(_document!.lastUpdated)}', // i18n-ignore: localized label + date,
                   style: const TextStyle(
                     color: AppColors.textSecondary,
                     fontSize: 12,

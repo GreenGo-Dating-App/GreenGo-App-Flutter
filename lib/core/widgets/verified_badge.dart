@@ -172,7 +172,7 @@ class PremiumBadge extends StatelessWidget {
           ),
           const SizedBox(width: 2),
           Text(
-            'PRO',
+            'PRO', // i18n-ignore: tier badge label, same in all languages
             style: TextStyle(
               color: AppColors.deepBlack,
               fontSize: size * 0.6,

@@ -9,6 +9,7 @@ import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 import 'onboarding_exit.dart';
+import 'onboarding_value_labels.dart';
 import '../../../domain/age_gate.dart';
 
 class Step1BasicInfoScreen extends StatefulWidget {
@@ -35,13 +36,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
 
   String _localizedGender(BuildContext context, String label) {
     final l10n = AppLocalizations.of(context);
-    switch (label) {
-      case 'Male': return l10n?.onboardingGenderMale ?? label;
-      case 'Female': return l10n?.onboardingGenderFemale ?? label;
-      case 'Non-binary': return l10n?.onboardingGenderNonBinary ?? label;
-      case 'Other': return l10n?.onboardingGenderOther ?? label;
-      default: return label;
-    }
+    return l10n == null ? label : localizedOnboardingGender(l10n, label);
   }
 
   @override

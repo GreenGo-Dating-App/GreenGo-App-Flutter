@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../features/subscription/domain/entities/subscription.dart';
+import '../../generated/app_localizations.dart';
+import '../../features/subscription/presentation/tier_l10n.dart';
 import '../constants/app_colors.dart';
 
 /// Full-screen luxury celebration animation for subscription purchase
@@ -187,15 +189,16 @@ class _SubscriptionCelebrationScreenState
 
   /// Build tier-specific benefit rows from the tier's features map
   List<Widget> _buildTierBenefits() {
+    final l10n = AppLocalizations.of(context)!;
     final tier = widget.tier;
     if (tier == null) {
       // Fallback to generic features if no tier provided
       return [
-        _buildFeatureRow(Icons.favorite, 'Unlimited likes'),
+        _buildFeatureRow(Icons.favorite, l10n.celebrationUnlimitedLikes),
         const SizedBox(height: 12),
-        _buildFeatureRow(Icons.visibility, 'See who liked you'),
+        _buildFeatureRow(Icons.visibility, l10n.celebrationSeeWhoLikedYou),
         const SizedBox(height: 12),
-        _buildFeatureRow(Icons.flash_on, 'Priority matching'),
+        _buildFeatureRow(Icons.flash_on, l10n.shopPriorityMatching),
       ];
     }
 
@@ -210,70 +213,70 @@ class _SubscriptionCelebrationScreenState
     // Daily Connects
     final dailyConnects = features['dailyConnects'] as int? ?? 0;
     if (dailyConnects == -1) {
-      addRow(Icons.handshake, 'Daily Connects', 'Unlimited');
+      addRow(Icons.handshake, l10n.membershipDailyLikes, l10n.unlimited);
     } else if (dailyConnects > 0) {
-      addRow(Icons.handshake, 'Daily Connects', '$dailyConnects');
+      addRow(Icons.handshake, l10n.membershipDailyLikes, '$dailyConnects');
     }
 
     // Priority Connects
     final priorityConnects = features['priorityConnects'] as int? ?? 0;
     if (priorityConnects == -1) {
-      addRow(Icons.star, 'Priority Connects', 'Unlimited');
+      addRow(Icons.star, l10n.superLikes, l10n.unlimited);
     } else if (priorityConnects > 0) {
-      addRow(Icons.star, 'Priority Connects', '$priorityConnects/day');
+      addRow(Icons.star, l10n.superLikes, l10n.celebrationPerDay(priorityConnects));
     }
 
     // Rewinds
     final rewinds = features['rewinds'] as int? ?? 0;
     if (rewinds == -1) {
-      addRow(Icons.replay, 'Rewinds', 'Unlimited');
+      addRow(Icons.replay, l10n.membershipRewinds, l10n.unlimited);
     } else if (rewinds > 0) {
-      addRow(Icons.replay, 'Rewinds', '$rewinds/day');
+      addRow(Icons.replay, l10n.membershipRewinds, l10n.celebrationPerDay(rewinds));
     }
 
     // Badge
     if (features['badge'] == true) {
-      addRow(Icons.workspace_premium, 'Badge', '✓');
+      addRow(Icons.workspace_premium, l10n.shopBadge, '✓');
     }
 
     // Read Receipts
     if (features['readReceipts'] == true) {
-      addRow(Icons.done_all, 'Read Receipts', '✓');
+      addRow(Icons.done_all, l10n.membershipReadReceipts, '✓');
     }
 
     // Advanced Filters
     if (features['advancedFilters'] == true) {
-      addRow(Icons.tune, 'Advanced Filters', '✓');
+      addRow(Icons.tune, l10n.membershipAdvancedFilters, '✓');
     }
 
     // Incognito Mode
     if (features['incognitoMode'] == true) {
-      addRow(Icons.visibility_off, 'Incognito Mode', '✓');
+      addRow(Icons.visibility_off, l10n.membershipIncognitoMode, '✓');
     }
 
     // Priority Support
     if (features['prioritySupport'] == true) {
-      addRow(Icons.support_agent, 'Priority Support', '✓');
+      addRow(Icons.support_agent, l10n.membershipPrioritySupport, '✓');
     }
 
     // Travelling (Platinum)
     if (features['travelling'] == true) {
-      addRow(Icons.flight, 'Travelling', 'Unlimited');
+      addRow(Icons.flight, l10n.shopTravelling, l10n.unlimited);
     }
 
     // VIP Badge (Platinum)
     if (features['vipBadge'] == true) {
-      addRow(Icons.verified, 'VIP Badge', '✓');
+      addRow(Icons.verified, l10n.shopVipBadge, '✓');
     }
 
     // Priority Matching (Platinum)
     if (features['priorityMatching'] == true) {
-      addRow(Icons.flash_on, 'Priority Matching', '✓');
+      addRow(Icons.flash_on, l10n.shopPriorityMatching, '✓');
     }
 
     // Exclusive Events (Platinum)
     if (features['exclusiveEvents'] == true) {
-      addRow(Icons.event_available, 'Exclusive Events', '✓');
+      addRow(Icons.event_available, l10n.celebrationExclusiveEvents, '✓');
     }
 
     return rows;
@@ -286,6 +289,7 @@ class _SubscriptionCelebrationScreenState
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Stack(
@@ -389,7 +393,9 @@ class _SubscriptionCelebrationScreenState
                                 ).createShader(bounds);
                               },
                               child: Text(
-                                'Welcome to ${widget.tierName}!',
+                                l10n.celebrationWelcomeToTier(widget.tier != null
+                                    ? localizedSubscriptionTierName(l10n, widget.tier!)
+                                    : widget.tierName),
                                 style: const TextStyle(
                                   fontSize: 28,
                                   fontWeight: FontWeight.bold,
@@ -400,9 +406,9 @@ class _SubscriptionCelebrationScreenState
                               ),
                             ),
                             const SizedBox(height: 16),
-                            const Text(
-                              'Your premium membership is now active',
-                              style: TextStyle(
+                            Text(
+                              l10n.celebrationMembershipActive,
+                              style: const TextStyle(
                                 fontSize: 16,
                                 color: AppColors.textSecondary,
                                 letterSpacing: 0.5,
@@ -448,9 +454,9 @@ class _SubscriptionCelebrationScreenState
                               elevation: 8,
                               shadowColor: _tierColor.withOpacity(0.5),
                             ),
-                            child: const Text(
-                              'Continue',
-                              style: TextStyle(
+                            child: Text(
+                              l10n.onboardingContinue,
+                              style: const TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                                 letterSpacing: 1,

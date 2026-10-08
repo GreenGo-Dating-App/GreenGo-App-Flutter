@@ -1060,9 +1060,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
       final sampleCommunities = [
         CommunityModel(
           id: '',
-          name: 'Spanish Learners Worldwide',
+          name: 'Spanish Learners Worldwide', // i18n-ignore: seed content written to Firestore
           description:
-              'A global community for Spanish language learners. Practice conversation, share resources, and connect with native speakers.',
+              'A global community for Spanish language learners. Practice conversation, share resources, and connect with native speakers.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.languageCircle,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1076,9 +1076,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Japanese Culture Explorers',
+          name: 'Japanese Culture Explorers', // i18n-ignore: seed content written to Firestore
           description:
-              'Discover the richness of Japanese culture, traditions, food, and language. From anime to tea ceremonies.',
+              'Discover the richness of Japanese culture, traditions, food, and language. From anime to tea ceremonies.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.culturalInterest,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1092,9 +1092,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Travel to France',
+          name: 'Travel to France', // i18n-ignore: seed content written to Firestore
           description:
-              'Planning a trip to France? Share tips, itineraries, hidden gems, and connect with fellow travelers and locals.',
+              'Planning a trip to France? Share tips, itineraries, hidden gems, and connect with fellow travelers and locals.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.travelGroup,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1109,9 +1109,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Local Guides - Tokyo',
+          name: 'Local Guides - Tokyo', // i18n-ignore: seed content written to Firestore
           description:
-              'Local guides sharing the best of Tokyo. Restaurant recommendations, hidden spots, events, and cultural tips from people who live here.',
+              'Local guides sharing the best of Tokyo. Restaurant recommendations, hidden spots, events, and cultural tips from people who live here.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.localGuides,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1127,9 +1127,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Local Guides - Paris',
+          name: 'Local Guides - Paris', // i18n-ignore: seed content written to Firestore
           description:
-              'Your insider guide to Paris. Local recommendations for restaurants, activities, nightlife, and dating spots.',
+              'Your insider guide to Paris. Local recommendations for restaurants, activities, nightlife, and dating spots.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.localGuides,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1145,9 +1145,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Korean Study Group',
+          name: 'Korean Study Group', // i18n-ignore: seed content written to Firestore
           description:
-              'Studying Korean together! Share study materials, practice writing, and discuss K-dramas in Korean.',
+              'Studying Korean together! Share study materials, practice writing, and discuss K-dramas in Korean.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.studyGroup,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1161,9 +1161,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Arabic & Culture',
+          name: 'Arabic & Culture', // i18n-ignore: seed content written to Firestore
           description:
-              'Learn Arabic and explore the rich cultural heritage of the Arab world. All dialects welcome!',
+              'Learn Arabic and explore the rich cultural heritage of the Arab world. All dialects welcome!', // i18n-ignore: seed content written to Firestore
           type: CommunityType.languageCircle,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1177,9 +1177,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Backpackers United',
+          name: 'Backpackers United', // i18n-ignore: seed content written to Firestore
           description:
-              'For the adventurous souls! Share travel stories, budget tips, hostel recommendations, and find travel buddies.',
+              'For the adventurous souls! Share travel stories, budget tips, hostel recommendations, and find travel buddies.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.travelGroup,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1193,9 +1193,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Local Guides - Barcelona',
+          name: 'Local Guides - Barcelona', // i18n-ignore: seed content written to Firestore
           description:
-              'Explore Barcelona like a local! Tapas bars, hidden beaches, cultural events, and the best dating spots in the city.',
+              'Explore Barcelona like a local! Tapas bars, hidden beaches, cultural events, and the best dating spots in the city.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.localGuides,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1211,9 +1211,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Mandarin Practice',
+          name: 'Mandarin Practice', // i18n-ignore: seed content written to Firestore
           description:
-              'Daily Mandarin practice group. Share characters, pronunciation tips, and have conversations in Chinese.',
+              'Daily Mandarin practice group. Share characters, pronunciation tips, and have conversations in Chinese.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.languageCircle,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1227,9 +1227,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'International Foodies',
+          name: 'International Foodies', // i18n-ignore: seed content written to Firestore
           description:
-              'Share recipes, restaurant finds, and food culture from around the world. Taste the diversity!',
+              'Share recipes, restaurant finds, and food culture from around the world. Taste the diversity!', // i18n-ignore: seed content written to Firestore
           type: CommunityType.culturalInterest,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
@@ -1243,9 +1243,9 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
         ),
         CommunityModel(
           id: '',
-          name: 'Portuguese & Brazilian Vibes',
+          name: 'Portuguese & Brazilian Vibes', // i18n-ignore: seed content written to Firestore
           description:
-              'Connect over Portuguese language and Brazilian/Portuguese culture. Music, food, language exchange!',
+              'Connect over Portuguese language and Brazilian/Portuguese culture. Music, food, language exchange!', // i18n-ignore: seed content written to Firestore
           type: CommunityType.languageCircle,
           createdByUserId: 'system',
           createdByName: 'GreenGo',

@@ -2,11 +2,13 @@ import 'dart:io' show File;
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/pre_sale_service.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../generated/app_localizations.dart';
 
 /// Admin screen for managing the pre-sale tier list.
 /// - Upload CSV files with headers: EMAIL, NUMBER_OF_DAYS, TIER
@@ -65,6 +67,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Future<void> _uploadCsvFile() async {
+    final l10n = AppLocalizations.of(context)!;
     try {
       setState(() {
         _isUploading = true;
@@ -98,7 +101,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       final lines = content.split(RegExp(r'[\r\n]+'));
       if (lines.isEmpty) {
         setState(() {
-          _errorMessage = 'CSV file is empty';
+          _errorMessage = l10n.adminPreSaleCsvEmpty;
           _isUploading = false;
         });
         return;
@@ -114,7 +117,8 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
 
       if (emailIdx == -1 || daysIdx == -1 || tierIdx == -1) {
         setState(() {
-          _errorMessage = 'CSV must have headers: EMAIL, NUMBER_OF_DAYS, TIER\nFound: ${headers.join(', ')}';
+          _errorMessage = l10n
+              .adminPreSaleCsvMissingHeaders('EMAIL, NUMBER_OF_DAYS, TIER', headers.join(', ')); // i18n-ignore: CSV column names
           _isUploading = false;
         });
         return;
@@ -137,7 +141,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
 
       if (rows.isEmpty) {
         setState(() {
-          _errorMessage = 'No valid data rows found in CSV';
+          _errorMessage = l10n.adminPreSaleCsvNoRows;
           _isUploading = false;
         });
         return;
@@ -156,7 +160,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(importResult.summary),
+            content: Text(importResult.localizedSummary(l10n)),
             backgroundColor: importResult.hasErrors
                 ? AppColors.warningAmber
                 : AppColors.successGreen,
@@ -171,17 +175,18 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Future<void> _addSingleEntry() async {
+    final l10n = AppLocalizations.of(context)!;
     final email = _emailController.text.trim();
     if (email.isEmpty) return;
 
     final days = int.tryParse(_daysController.text.trim());
     if (days == null || days <= 0) {
-      setState(() => _errorMessage = 'Please enter a valid number of days');
+      setState(() => _errorMessage = l10n.adminPreSaleInvalidDays);
       return;
     }
 
     if (!RegExp(r'^[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}$').hasMatch(email)) {
-      setState(() => _errorMessage = 'Please enter a valid email address');
+      setState(() => _errorMessage = l10n.adminPleaseEnterValidEmail);
       return;
     }
 
@@ -205,7 +210,8 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('$email added as ${_selectedTier.displayName} ($days days)'),
+            content: Text(l10n.adminPreSaleEntryAdded(
+                email, _tierLabel(l10n, _selectedTier), days)),
             backgroundColor: AppColors.successGreen,
           ),
         );
@@ -218,27 +224,28 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Future<void> _removeEntry(String email) async {
+    final l10n = AppLocalizations.of(context)!;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Text(
-          'Remove Entry',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          AppLocalizations.of(context)!.adminPreSaleRemoveEntryTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: Text(
-          'Remove $email from the pre-sale list?',
+          AppLocalizations.of(context)!.adminPreSaleRemoveEntryConfirm(email),
           style: const TextStyle(color: AppColors.textSecondary),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Cancel'),
+            child: Text(AppLocalizations.of(context)!.cancel),
           ),
           TextButton(
             onPressed: () => Navigator.pop(context, true),
             style: TextButton.styleFrom(foregroundColor: AppColors.errorRed),
-            child: const Text('Remove'),
+            child: Text(AppLocalizations.of(context)!.adminRemove),
           ),
         ],
       ),
@@ -251,7 +258,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('$email removed from pre-sale list'),
+            content: Text(l10n.adminPreSaleEntryRemoved(email)),
             backgroundColor: AppColors.successGreen,
           ),
         );
@@ -260,6 +267,17 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       if (mounted) {
         showUserError(context, e);
       }
+    }
+  }
+
+  String _tierLabel(AppLocalizations l10n, PreSaleTier tier) {
+    switch (tier) {
+      case PreSaleTier.platinum:
+        return l10n.platinum;
+      case PreSaleTier.gold:
+        return l10n.gold;
+      case PreSaleTier.silver:
+        return l10n.silver;
     }
   }
 
@@ -276,14 +294,15 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
         elevation: 0,
-        title: const Text(
-          'Pre-Sale Management',
-          style: TextStyle(color: AppColors.textPrimary),
+        title: Text(
+          l10n.adminPreSaleTitle,
+          style: const TextStyle(color: AppColors.textPrimary),
         ),
         iconTheme: const IconThemeData(color: AppColors.textPrimary),
         actions: [
@@ -321,6 +340,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Widget _buildInfoCard() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       decoration: BoxDecoration(
@@ -355,9 +375,9 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Pre-Sale Tier Program',
-                  style: TextStyle(
+                Text(
+                  l10n.adminPreSaleProgramTitle,
+                  style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
@@ -365,7 +385,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Manage pre-sale users with tier-based countdown and subscription duration.',
+                  l10n.adminPreSaleProgramDescription,
                   style: TextStyle(
                     color: AppColors.textSecondary.withValues(alpha: 0.8),
                     fontSize: 13,
@@ -381,6 +401,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Widget _buildUploadSection() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       decoration: BoxDecoration(
@@ -391,13 +412,13 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Row(
+          Row(
             children: [
-              Icon(Icons.upload_file, color: AppColors.richGold, size: 24),
-              SizedBox(width: AppDimensions.paddingS),
+              const Icon(Icons.upload_file, color: AppColors.richGold, size: 24),
+              const SizedBox(width: AppDimensions.paddingS),
               Text(
-                'Upload CSV File',
-                style: TextStyle(
+                l10n.adminUploadCsvFile,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -406,9 +427,9 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
             ],
           ),
           const SizedBox(height: AppDimensions.paddingS),
-          const Text(
-            'CSV format: EMAIL, NUMBER_OF_DAYS, TIER\nTier values: platinum, gold, silver',
-            style: TextStyle(
+          Text(
+            l10n.adminPreSaleCsvFormatHint('EMAIL, NUMBER_OF_DAYS, TIER', 'platinum, gold, silver'), // i18n-ignore: CSV column names/values
+            style: const TextStyle(
               color: AppColors.textTertiary,
               fontSize: 13,
             ),
@@ -425,7 +446,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                       child: CircularProgressIndicator(strokeWidth: 2),
                     )
                   : const Icon(Icons.cloud_upload),
-              label: Text(_isUploading ? 'Uploading...' : 'Select CSV File'),
+              label: Text(_isUploading ? l10n.adminUploading : l10n.adminSelectCsvFile),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.richGold,
                 foregroundColor: Colors.black,
@@ -442,6 +463,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Widget _buildAddEntrySection() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
       decoration: BoxDecoration(
@@ -452,13 +474,13 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Row(
+          Row(
             children: [
-              Icon(Icons.person_add, color: AppColors.successGreen, size: 24),
-              SizedBox(width: AppDimensions.paddingS),
+              const Icon(Icons.person_add, color: AppColors.successGreen, size: 24),
+              const SizedBox(width: AppDimensions.paddingS),
               Text(
-                'Add Single Entry',
-                style: TextStyle(
+                l10n.adminPreSaleAddSingleEntry,
+                style: const TextStyle(
                   color: AppColors.textPrimary,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -472,7 +494,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
             controller: _emailController,
             style: const TextStyle(color: AppColors.textPrimary),
             decoration: InputDecoration(
-              hintText: 'Email address',
+              hintText: l10n.adminEnterEmailAddress,
               hintStyle: const TextStyle(color: AppColors.textTertiary),
               filled: true,
               fillColor: AppColors.backgroundInput,
@@ -495,7 +517,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                   controller: _daysController,
                   style: const TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(
-                    hintText: 'Days',
+                    hintText: l10n.days,
                     hintStyle: const TextStyle(color: AppColors.textTertiary),
                     filled: true,
                     fillColor: AppColors.backgroundInput,
@@ -530,7 +552,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                             children: [
                               Icon(Icons.circle, color: _tierColor(tier), size: 12),
                               const SizedBox(width: 8),
-                              Text(tier.displayName),
+                              Text(_tierLabel(l10n, tier)),
                             ],
                           ),
                         );
@@ -560,7 +582,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                         height: 20,
                         child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
                       )
-                    : const Text('Add'),
+                    : Text(l10n.adminAdd),
               ),
             ],
           ),
@@ -570,6 +592,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Widget _buildImportResultCard() {
+    final l10n = AppLocalizations.of(context)!;
     final result = _lastImportResult!;
     return Container(
       padding: const EdgeInsets.all(AppDimensions.paddingM),
@@ -595,7 +618,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
               ),
               const SizedBox(width: AppDimensions.paddingS),
               Text(
-                'Import Result',
+                l10n.adminImportResult,
                 style: TextStyle(
                   color: result.hasErrors ? AppColors.warningAmber : AppColors.successGreen,
                   fontWeight: FontWeight.bold,
@@ -604,7 +627,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
             ],
           ),
           const SizedBox(height: AppDimensions.paddingS),
-          Text(result.summary, style: const TextStyle(color: AppColors.textSecondary)),
+          Text(result.localizedSummary(l10n), style: const TextStyle(color: AppColors.textSecondary)),
           if (result.errors.isNotEmpty) ...[
             const SizedBox(height: AppDimensions.paddingS),
             ...result.errors.take(5).map((error) => Text(
@@ -613,7 +636,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                 )),
             if (result.errors.length > 5)
               Text(
-                '  ...and ${result.errors.length - 5} more errors',
+                '  ${l10n.adminMoreErrors(result.errors.length - 5)}',
                 style: const TextStyle(color: AppColors.textTertiary, fontSize: 12, fontStyle: FontStyle.italic),
               ),
           ],
@@ -647,6 +670,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   Widget _buildEntryList() {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       decoration: BoxDecoration(
         color: AppColors.backgroundCard,
@@ -665,9 +689,9 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                   children: [
                     const Icon(Icons.list, color: AppColors.infoBlue, size: 24),
                     const SizedBox(width: AppDimensions.paddingS),
-                    const Text(
-                      'Pre-Sale Entries',
-                      style: TextStyle(
+                    Text(
+                      l10n.adminPreSaleEntries,
+                      style: const TextStyle(
                         color: AppColors.textPrimary,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -686,11 +710,11 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                           value: _filterTier,
                           dropdownColor: AppColors.backgroundCard,
                           style: const TextStyle(color: AppColors.textPrimary, fontSize: 12),
-                          items: const [
-                            DropdownMenuItem(value: 'all', child: Text('All Tiers')),
-                            DropdownMenuItem(value: 'platinum', child: Text('Platinum')),
-                            DropdownMenuItem(value: 'gold', child: Text('Gold')),
-                            DropdownMenuItem(value: 'silver', child: Text('Silver')),
+                          items: [
+                            DropdownMenuItem(value: 'all', child: Text(l10n.adminPreSaleAllTiers)),
+                            DropdownMenuItem(value: 'platinum', child: Text(l10n.platinum)),
+                            DropdownMenuItem(value: 'gold', child: Text(l10n.gold)),
+                            DropdownMenuItem(value: 'silver', child: Text(l10n.silver)),
                           ],
                           onChanged: (v) {
                             setState(() => _filterTier = v ?? 'all');
@@ -706,7 +730,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                   controller: _searchController,
                   style: const TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(
-                    hintText: 'Search emails...',
+                    hintText: l10n.adminSearchEmails,
                     hintStyle: const TextStyle(color: AppColors.textTertiary),
                     prefixIcon: const Icon(Icons.search, color: AppColors.textTertiary),
                     filled: true,
@@ -751,8 +775,8 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                         const SizedBox(height: AppDimensions.paddingM),
                         Text(
                           _searchController.text.isNotEmpty || _filterTier != 'all'
-                              ? 'No matching entries found'
-                              : 'No pre-sale entries yet.\nUpload a CSV to get started.',
+                              ? l10n.adminPreSaleNoMatching
+                              : l10n.adminPreSaleEmpty,
                           style: const TextStyle(color: AppColors.textTertiary, fontSize: 14),
                           textAlign: TextAlign.center,
                         ),
@@ -791,7 +815,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Text(
-                            entry.tier.displayName,
+                            _tierLabel(l10n, entry.tier),
                             style: TextStyle(
                               color: _tierColor(entry.tier),
                               fontSize: 11,
@@ -801,7 +825,7 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                         ),
                         const SizedBox(width: 8),
                         Text(
-                          '${entry.numberOfDays} days',
+                          l10n.adminPreSaleDaysCount(entry.numberOfDays),
                           style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),
                         ),
                       ],
@@ -821,24 +845,27 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
   }
 
   void _showInfoDialog() {
+    final l10n = AppLocalizations.of(context)!;
+    final locale = Localizations.localeOf(context).toString();
+    String fmt(DateTime d) => DateFormat.yMMMMd(locale).format(d);
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.info_outline, color: AppColors.richGold),
-            SizedBox(width: 8),
-            Text('Pre-Sale Info', style: TextStyle(color: AppColors.textPrimary)),
+            const Icon(Icons.info_outline, color: AppColors.richGold),
+            const SizedBox(width: 8),
+            Text(l10n.adminPreSaleInfoTitle, style: const TextStyle(color: AppColors.textPrimary)),
           ],
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'CSV Format',
-              style: TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
+            Text(
+              l10n.adminPreSaleCsvFormatTitle,
+              style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             Container(
@@ -848,42 +875,37 @@ class _PreSaleAdminScreenState extends State<PreSaleAdminScreen> {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: const Text(
-                'EMAIL,NUMBER_OF_DAYS,TIER\njohn@email.com,365,platinum\njane@email.com,180,gold\nbob@email.com,30,silver',
+                'EMAIL,NUMBER_OF_DAYS,TIER\njohn@email.com,365,platinum\njane@email.com,180,gold\nbob@email.com,30,silver', // i18n-ignore: CSV format example
                 style: TextStyle(color: AppColors.textSecondary, fontSize: 12, fontFamily: 'monospace'),
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              'Tier Countdown Dates',
-              style: TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
+            Text(
+              l10n.adminPreSaleCountdownDates,
+              style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            _buildInfoRow(Icons.workspace_premium, AppColors.richGold, 'Platinum', 'March 14, 2026'),
+            _buildInfoRow(Icons.workspace_premium, AppColors.richGold, l10n.platinum, fmt(DateTime(2026, 3, 14))),
             const SizedBox(height: 4),
-            _buildInfoRow(Icons.workspace_premium, Colors.amber, 'Gold', 'March 28, 2026'),
+            _buildInfoRow(Icons.workspace_premium, Colors.amber, l10n.gold, fmt(DateTime(2026, 3, 28))),
             const SizedBox(height: 4),
-            _buildInfoRow(Icons.workspace_premium, Colors.grey, 'Silver', 'April 7, 2026'),
+            _buildInfoRow(Icons.workspace_premium, Colors.grey, l10n.silver, fmt(DateTime(2026, 4, 7))),
             const SizedBox(height: 16),
-            const Text(
-              'How it works',
-              style: TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
+            Text(
+              l10n.adminPreSaleHowItWorks,
+              style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-            const Text(
-              '1. User registers with email\n'
-              '2. App checks pre-sale list\n'
-              '3. Countdown shows tier date\n'
-              '4. After countdown: subscription activates\n'
-              '5. Duration = NUMBER_OF_DAYS from list\n'
-              '6. Base membership = same expiry',
-              style: TextStyle(color: AppColors.textSecondary, fontSize: 13, height: 1.5),
+            Text(
+              l10n.adminPreSaleHowItWorksSteps,
+              style: const TextStyle(color: AppColors.textSecondary, fontSize: 13, height: 1.5),
             ),
           ],
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Close'),
+            child: Text(l10n.close),
           ),
         ],
       ),

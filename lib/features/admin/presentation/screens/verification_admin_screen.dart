@@ -77,7 +77,7 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
           if (state is VerificationAdminActionSuccess) {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
-                content: Text(state.message),
+                content: Text(_actionMessage(l10n, state)),
                 backgroundColor: AppColors.successGreen,
               ),
             );
@@ -121,6 +121,22 @@ class _VerificationAdminScreenState extends State<VerificationAdminScreen>
         },
       ),
     );
+  }
+
+  String _actionMessage(
+      AppLocalizations l10n, VerificationAdminActionSuccess state) {
+    switch (state.action) {
+      case VerificationAdminAction.approved:
+        return l10n.verificationApprovedSuccess;
+      case VerificationAdminAction.rejected:
+        return l10n.verificationRejectedSuccess;
+      case VerificationAdminAction.betterPhotoRequested:
+        return l10n.betterPhotoRequested;
+      case VerificationAdminAction.bulkApproved:
+        return l10n.adminVerificationBulkApproved(state.count);
+      case VerificationAdminAction.bulkBetterPhotoRequested:
+        return l10n.adminVerificationBulkBetterPhotoRequested(state.count);
+    }
   }
 }
 
@@ -234,7 +250,7 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
                       TextButton.icon(
                         onPressed: _clearSelection,
                         icon: const Icon(Icons.clear, size: 16),
-                        label: const Text('Clear'),
+                        label: Text(l10n.adminClear),
                         style: TextButton.styleFrom(
                           foregroundColor: AppColors.textSecondary,
                         ),
@@ -371,7 +387,7 @@ class _PendingVerificationsTabState extends State<_PendingVerificationsTab> {
       builder: (dialogContext) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
         title: Text(
-          '${l10n.requestBetterPhoto} (${_selectedUserIds.length} users)',
+          l10n.adminVerificationBulkBetterPhotoTitle(_selectedUserIds.length),
           style: const TextStyle(color: AppColors.textPrimary),
         ),
         content: TextField(
@@ -424,7 +440,7 @@ class _VerificationHistoryTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final dateFormatter = DateFormat('MMM dd, yyyy HH:mm');
+    final dateFormatter = DateFormat.yMMMd(Localizations.localeOf(context).toString()).add_Hm();
 
     if (profiles.isEmpty) {
       return Center(
@@ -570,7 +586,7 @@ class _VerificationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final dateFormatter = DateFormat('MMM dd, yyyy HH:mm');
+    final dateFormatter = DateFormat.yMMMd(Localizations.localeOf(context).toString()).add_Hm();
 
     return Card(
       color: AppColors.backgroundCard,
@@ -621,7 +637,7 @@ class _VerificationCard extends StatelessWidget {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '${profile.age} years old • ${profile.gender}',
+                        l10n.adminAgeAndGender(profile.age, profile.gender),
                         style: const TextStyle(
                           color: AppColors.textSecondary,
                           fontSize: 12,

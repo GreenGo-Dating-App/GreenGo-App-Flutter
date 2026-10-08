@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/community_l10n.dart';
 import '../../domain/entities/community.dart';
 import 'sponsored_badge.dart';
 
@@ -53,10 +54,10 @@ class CommunityCard extends StatelessWidget {
             const SizedBox(width: 12),
 
             // Community info (title + subtitle)
-            _buildInfo(),
+            _buildInfo(context),
 
             // Trailing (last activity time + unread indicator)
-            _buildTrailing(),
+            _buildTrailing(context),
 
             // Favorite (star) toggle — Joined tab only.
             if (showFavorite) _buildFavoriteStar(context),
@@ -66,7 +67,7 @@ class CommunityCard extends StatelessWidget {
     );
   }
 
-  Widget _buildInfo() {
+  Widget _buildInfo(BuildContext context) {
     return Expanded(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,7 +88,7 @@ class CommunityCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 6),
-              _buildTypeBadge(),
+              _buildTypeBadge(context),
               if (community.isSponsored) ...[
                 const SizedBox(width: 6),
                 const SponsoredBadge(compact: true),
@@ -137,7 +138,7 @@ class CommunityCard extends StatelessWidget {
     );
   }
 
-  Widget _buildTrailing() {
+  Widget _buildTrailing(BuildContext context) {
     final hasActivity = community.lastMessagePreview != null;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
@@ -145,7 +146,7 @@ class CommunityCard extends StatelessWidget {
       children: [
         if (hasActivity)
           Text(
-            community.lastActivityText,
+            communityLastActivityLabel(AppLocalizations.of(context)!, community),
             style: TextStyle(
               color: showUnreadIndicator
                   ? AppColors.richGold
@@ -220,7 +221,7 @@ class CommunityCard extends StatelessWidget {
     );
   }
 
-  Widget _buildTypeBadge() {
+  Widget _buildTypeBadge(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
       decoration: BoxDecoration(
@@ -228,7 +229,7 @@ class CommunityCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(4),
       ),
       child: Text(
-        community.type.displayName,
+        communityTypeLabel(AppLocalizations.of(context)!, community.type),
         style: TextStyle(
           color: _getTypeColor(),
           fontSize: 10,
