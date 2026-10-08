@@ -177,6 +177,7 @@ describe('P1-12 every report source creates exactly one queue item', () => {
     await db.doc('app_config/resend_settings').set({ apiKey: 're_test', senderEmail: 'safety@greengo.test' });
     await db.doc('admin_users/adm1').set({ role: 'admin', email: 'admin@greengo.test' });
     await db.doc('admin_users/support1').set({ role: 'support', email: 'support@greengo.test' });
+    await db.doc('app_config/moderation_settings').set({ reportAutoActionsEnabled: true });
     const id = await appProfileReport('alice', 'bob', 'Underage user', 'community:c1; content:post7');
     await fireCreated(onUserReportQueued, 'user_reports', id);
 
@@ -269,6 +270,7 @@ describe('P1-12 every report source creates exactly one queue item', () => {
   test('re-delivery does not duplicate the item, the alert email or the auto-actions', async () => {
     await db.doc('app_config/resend_settings').set({ apiKey: 're_test' });
     await db.doc('admin_users/adm1').set({ role: 'admin', email: 'admin@greengo.test' });
+    await db.doc('app_config/moderation_settings').set({ reportAutoActionsEnabled: true });
     const id = await appProfileReport('alice', 'bob', 'Usuário menor de idade');
     await fireCreated(onUserReportQueued, 'user_reports', id);
     await fireCreated(onUserReportQueued, 'user_reports', id);
@@ -287,8 +289,18 @@ describe('P1-12 every report source creates exactly one queue item', () => {
     expect(await queueItems()).toHaveLength(1);
   });
 
+  test('auto-actions are OFF by default (no settings doc): 10 reports do not restrict', async () => {
+    await db.doc('users/carol').set({ accountStatus: 'active' });
+    for (let i = 0; i < 9; i++) await appProfileReport(`q${i}`, 'carol', 'Spam or scam');
+    const tenth = await appProfileReport('q9', 'carol', 'Spam or scam');
+    await fireCreated(onUserReportQueued, 'user_reports', tenth);
+    expect((await db.doc('users/carol').get()).data()?.accountStatus).toBe('active');
+    expect((await db.doc(`moderation_queue/user_reports__${tenth}`).get()).exists).toBe(true);
+  });
+
   test('10 pending reports auto-restrict the user (shared Point 218 logic); kill switch disables it', async () => {
     await db.doc('users/bob').set({ accountStatus: 'active' });
+    await db.doc('app_config/moderation_settings').set({ reportAutoActionsEnabled: true });
     for (let i = 0; i < 9; i++) await appProfileReport(`r${i}`, 'bob', 'Spam or scam');
     const tenth = await appProfileReport('r9', 'bob', 'Spam or scam');
     await fireCreated(onUserReportQueued, 'user_reports', tenth);

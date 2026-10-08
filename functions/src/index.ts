@@ -250,8 +250,8 @@ export { pollPlayVoidedPurchases } from './subscription/voidedPurchasesPoll';
 // Stripe Web Payments — coin packages + memberships via Stripe Checkout
 // (web has no in-app-purchase plugin). Inert until STRIPE_SECRET_KEY is set.
 export {
-  createStripeCheckoutSession,
-  stripeWebhook,
+  // createStripeCheckoutSession — deploys ONLY from greengo-app-flutter-web (this copy is stale)
+  // stripeWebhook — deploys ONLY from greengo-app-flutter-web (this copy is stale)
 } from './payments/stripeCheckout';
 
 // Stripe reconciliation (every 12h) + token-guarded HTTP twin (dry run by
@@ -259,8 +259,8 @@ export {
 // payments/stripeReconcile.ts + payments/stripeCore.ts are byte-identical in
 // both repos, so deploying these from either repo is equivalent.
 export {
-  reconcileStripeMemberships,
-  runStripeReconcileNow,
+  // reconcileStripeMemberships — deploys ONLY from greengo-app-flutter-web (this copy is stale)
+  // runStripeReconcileNow — deploys ONLY from greengo-app-flutter-web (this copy is stale)
 } from './payments/stripeReconcile';
 
 // Coin Functions

@@ -425,7 +425,11 @@ export async function enqueueReport(
   if (source === 'user_reports' && item.reportedUserId) {
     try {
       const settings = (await db.doc('app_config/moderation_settings').get()).data() || {};
-      if (settings.reportAutoActionsEnabled !== false) {
+      // OFF unless explicitly enabled (app_config/moderation_settings
+      // .reportAutoActionsEnabled = true): with a small user base a few
+      // coordinated fake accounts could otherwise auto-restrict an innocent
+      // user. Turn on once moderation is staffed.
+      if (settings.reportAutoActionsEnabled === true) {
         const code = item.reasonCode as ReasonCode;
         await applyReportAutoActions({
           reportedUserId: item.reportedUserId as string,
