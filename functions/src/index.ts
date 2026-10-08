@@ -350,6 +350,15 @@ export {
   onUserReportCreated,
 } from './safety/reportCountTrigger';
 
+// Safety — P1-12: every report (user_reports / message_reports / reports) becomes
+// one moderation_queue item; P0 admin alert; reporter feedback on resolution.
+export {
+  onUserReportQueued,
+  onMessageReportQueued,
+  onContentReportQueued,
+  onModerationQueueResolved,
+} from './safety/reportPipeline';
+
 export {
   startPhotoVerification,
   verifyPhotoSelfie,
