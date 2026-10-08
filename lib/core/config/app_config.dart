@@ -125,6 +125,19 @@ class AppConfig {
   /// Enabled for full feature experience
   static const bool enableGamification = true;
 
+  /// Owner decision (Oct 2026): gamification is totally hidden in Exchanges
+  /// (1:1 chat, group/community chats). XP is still earned and persisted on
+  /// send, so Profile > "Progress & Growth" keeps correct data; only the
+  /// in-chat streak/XP bar and its settings toggle are hidden.
+  /// Flip to true to restore the in-chat gamification UI.
+  static const bool showGamificationInExchanges = false;
+
+  /// Owner decision (Oct 2026): no level-up / achievement-unlocked popups
+  /// (they appeared while sending messages). XP/level/achievement accounting
+  /// is untouched; progress is only shown in Profile > "Progress & Growth".
+  /// Flip to true to restore the global celebration dialogs.
+  static const bool showGamificationCelebrationPopups = false;
+
   /// Enable/Disable analytics tracking
   static const bool enableAnalytics = true;
 

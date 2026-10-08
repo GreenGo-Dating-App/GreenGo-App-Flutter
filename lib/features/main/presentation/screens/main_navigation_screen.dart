@@ -546,8 +546,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
     if (gamification != null) {
       gamification.add(LoadUserLevel(widget.userId));
       // Real-time listeners for level-up and achievement unlock celebrations.
-      _startLevelUpListener();
-      _startAchievementListener();
+      // Hidden by owner decision (they popped up while sending messages);
+      // XP/level accounting is untouched and shown in Profile > Progress.
+      if (AppConfig.showGamificationCelebrationPopups) {
+        _startLevelUpListener();
+        _startAchievementListener();
+      }
     }
 
     // Record daily engagement streak (fire-and-forget; grants milestone coins
@@ -1578,6 +1582,12 @@ class MainNavigationScreenState extends State<MainNavigationScreen>
                   listener: (context, state) async {
                     // Show level-up celebration dialog when user levels up
                     if (state.leveledUp && state.userLevel != null) {
+                      // Celebration popups are hidden (owner decision):
+                      // just consume the flag so it never fires later.
+                      if (!AppConfig.showGamificationCelebrationPopups) {
+                        _gamificationBloc!.add(const ClearLevelUpFlag());
+                        return;
+                      }
                       final newLevel = state.userLevel!.level;
                       // Check if this level was already celebrated
                       final doc = await FirebaseFirestore.instance
