@@ -5285,5 +5285,21 @@
   "bkWindowHint": "Es el periodo en que estás disponible. Cada invitado reserva su propia hora de {duration} dentro de él y tus reservas nunca se solapan, en todas tus experiencias.",
   "bkWindowPeopleBooked": "{count, plural, =0{Aún sin reservas} =1{1 persona reservada} other{{count} personas reservadas}}",
   "bkErrTimeTaken": "Esa hora se acaba de reservar. Elige otra.",
-  "bkErrInvalidStart": "Esa hora no está disponible en esta fecha."
+  "bkErrInvalidStart": "Esa hora no está disponible en esta fecha.",
+  "chatMessageDeleted": "Mensaje eliminado",
+  "aiConsentTitle": "Las funciones de IA usan servicios de Google",
+  "aiConsentIntro": "Las respuestas inteligentes, el coach de idiomas con IA, la traducción de los mensajes que recibes y la lectura en voz alta solo funcionan si GreenGo envía el texto correspondiente a Google.",
+  "aiConsentProviders": "Quién: Google Gemini (sugerencias y coaching), Google Cloud Text-to-Speech (audio) y Google Translate (traducciones).",
+  "aiConsentWhatSent": "Qué se envía: solo el texto del mensaje en el que usas la función (incluidos los mensajes que otras personas te enviaron) y los idiomas. Nunca tu nombre, tus fotos ni tu perfil.",
+  "aiConsentWhy": "Por qué: solo para generar la sugerencia, la traducción o el audio que pediste.",
+  "aiConsentDeclineInfo": "Si lo rechazas, estas funciones seguirán desactivadas y no se enviará nada. Toca cualquiera de ellas más tarde para revisar tu elección.",
+  "aiConsentAccept": "Permitir",
+  "aiConsentDecline": "Rechazar",
+  "aiConsentDisabledNotice": "Esta función está desactivada porque elegiste no enviar texto a los servicios de IA de Google.",
+  "aiConsentReview": "Revisar",
+  "profileDeleteReauthRequired": "Por tu seguridad, confirma de nuevo tu contraseña para eliminar tu cuenta.",
+  "profileDeleteNetworkError": "Sin conexión. Tu cuenta no se eliminó. Inténtalo de nuevo.",
+  "profileDeleteFailed": "No pudimos eliminar tu cuenta y no se eliminó nada. Inténtalo de nuevo o contacta con soporte.",
+  "onboardingAgeBlockedTitle": "GreenGo es para adultos",
+  "onboardingAgeBlockedBody": "Debes tener al menos 18 años para usar GreenGo, así que no podemos crear tu cuenta."
 }

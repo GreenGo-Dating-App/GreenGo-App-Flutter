@@ -28295,6 +28295,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'That time is not available on this date.'**
   String get bkErrInvalidStart;
+
+  /// Placeholder bubble for a message whose author deleted their account
+  ///
+  /// In en, this message translates to:
+  /// **'Message deleted'**
+  String get chatMessageDeleted;
+
+  /// AI consent sheet title
+  ///
+  /// In en, this message translates to:
+  /// **'AI features use Google services'**
+  String get aiConsentTitle;
+
+  /// AI consent sheet intro
+  ///
+  /// In en, this message translates to:
+  /// **'Smart replies, the AI language coach, translating messages you receive and read-aloud audio only work if GreenGo sends the text involved to Google.'**
+  String get aiConsentIntro;
+
+  /// AI consent sheet: named providers
+  ///
+  /// In en, this message translates to:
+  /// **'Who: Google Gemini (suggestions and coaching), Google Cloud Text-to-Speech (audio) and Google Translate (translations).'**
+  String get aiConsentProviders;
+
+  /// AI consent sheet: data sent
+  ///
+  /// In en, this message translates to:
+  /// **'What is sent: only the text of the message you use the feature on (including messages other people sent you) and the languages. Never your name, photos or profile.'**
+  String get aiConsentWhatSent;
+
+  /// AI consent sheet: purpose
+  ///
+  /// In en, this message translates to:
+  /// **'Why: only to produce the suggestion, translation or audio you asked for.'**
+  String get aiConsentWhy;
+
+  /// AI consent sheet: effect of declining
+  ///
+  /// In en, this message translates to:
+  /// **'If you decline, these features stay off and nothing is sent. Tap any of them later to review your choice.'**
+  String get aiConsentDeclineInfo;
+
+  /// AI consent sheet accept button
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get aiConsentAccept;
+
+  /// AI consent sheet decline button
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get aiConsentDecline;
+
+  /// Snackbar when an AI feature is used after declining
+  ///
+  /// In en, this message translates to:
+  /// **'This feature is off because you chose not to send text to Google AI services.'**
+  String get aiConsentDisabledNotice;
+
+  /// Snackbar action that reopens the AI consent sheet
+  ///
+  /// In en, this message translates to:
+  /// **'Review'**
+  String get aiConsentReview;
+
+  /// deleteMyAccount REQUIRES_RECENT_LOGIN
+  ///
+  /// In en, this message translates to:
+  /// **'For your security, please confirm your password again to delete your account.'**
+  String get profileDeleteReauthRequired;
+
+  /// deleteMyAccount network error
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. Your account was not deleted. Please try again.'**
+  String get profileDeleteNetworkError;
+
+  /// deleteMyAccount failed
+  ///
+  /// In en, this message translates to:
+  /// **'We could not delete your account, and nothing was deleted. Please try again or contact support.'**
+  String get profileDeleteFailed;
+
+  /// Age gate block dialog title
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo is for adults'**
+  String get onboardingAgeBlockedTitle;
+
+  /// Age gate block dialog body
+  ///
+  /// In en, this message translates to:
+  /// **'You must be at least 18 years old to use GreenGo, so we cannot create your account.'**
+  String get onboardingAgeBlockedBody;
 }
 
 class _AppLocalizationsDelegate

@@ -21,6 +21,8 @@ import '../../../../features/membership/domain/entities/membership.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
 import 'location_message_map.dart';
+import 'deleted_message_bubble.dart';
+import '../../../../core/widgets/ai_consent_sheet.dart';
 
 /// Message Bubble Widget
 ///
@@ -362,6 +364,11 @@ class _MessageBubbleState extends State<MessageBubble> {
     }
     if (text.isEmpty) return;
 
+    // Read-aloud sends the text to Google Cloud TTS: needs AI consent
+    // (asked before any coins are taken).
+    if (!await AiConsentGate.ensure(context)) return;
+    if (!mounted) return;
+
     // Deduct 5 coins before playing
     final userId = widget.currentUserId;
     if (userId == null) return;
@@ -437,6 +444,10 @@ class _MessageBubbleState extends State<MessageBubble> {
   @override
   Widget build(BuildContext context) {
     final message = widget.message;
+    // Author deleted their account: placeholder, never the old text.
+    if (isDeletedAuthorMessage(message.senderId)) {
+      return const DeletedMessageBubble();
+    }
     final isCurrentUser = widget.isCurrentUser;
     final hasTranslation = message.translatedContent != null &&
         message.translatedContent!.isNotEmpty &&

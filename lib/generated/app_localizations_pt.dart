@@ -16221,6 +16221,65 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Esse horário não está disponível nesta data.';
+
+  @override
+  String get chatMessageDeleted => 'Mensagem eliminada';
+
+  @override
+  String get aiConsentTitle =>
+      'As funcionalidades de IA usam serviços da Google';
+
+  @override
+  String get aiConsentIntro =>
+      'As respostas inteligentes, o treinador de línguas com IA, a tradução das mensagens que recebe e a leitura em voz alta só funcionam se a GreenGo enviar o texto em causa à Google.';
+
+  @override
+  String get aiConsentProviders =>
+      'Quem: Google Gemini (sugestões e treino), Google Cloud Text-to-Speech (áudio) e Google Tradutor (traduções).';
+
+  @override
+  String get aiConsentWhatSent =>
+      'O que é enviado: apenas o texto da mensagem em que usa a funcionalidade (incluindo mensagens que outras pessoas lhe enviaram) e os idiomas. Nunca o seu nome, fotos ou perfil.';
+
+  @override
+  String get aiConsentWhy =>
+      'Porquê: apenas para produzir a sugestão, a tradução ou o áudio que pediu.';
+
+  @override
+  String get aiConsentDeclineInfo =>
+      'Se recusar, estas funcionalidades ficam desligadas e nada é enviado. Toque numa delas mais tarde para rever a sua escolha.';
+
+  @override
+  String get aiConsentAccept => 'Permitir';
+
+  @override
+  String get aiConsentDecline => 'Recusar';
+
+  @override
+  String get aiConsentDisabledNotice =>
+      'Esta funcionalidade está desligada porque escolheu não enviar texto para os serviços de IA da Google.';
+
+  @override
+  String get aiConsentReview => 'Rever';
+
+  @override
+  String get profileDeleteReauthRequired =>
+      'Por segurança, confirme novamente a sua palavra-passe para eliminar a sua conta.';
+
+  @override
+  String get profileDeleteNetworkError =>
+      'Sem ligação. A sua conta não foi eliminada. Tente novamente.';
+
+  @override
+  String get profileDeleteFailed =>
+      'Não foi possível eliminar a sua conta e nada foi eliminado. Tente novamente ou contacte o suporte.';
+
+  @override
+  String get onboardingAgeBlockedTitle => 'A GreenGo é para adultos';
+
+  @override
+  String get onboardingAgeBlockedBody =>
+      'Tem de ter pelo menos 18 anos para usar a GreenGo, por isso não podemos criar a sua conta.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -32442,4 +32501,62 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get bkErrInvalidStart =>
       'Esse horário não está disponível nesta data.';
+
+  @override
+  String get chatMessageDeleted => 'Mensagem excluída';
+
+  @override
+  String get aiConsentTitle => 'Os recursos de IA usam serviços do Google';
+
+  @override
+  String get aiConsentIntro =>
+      'As respostas inteligentes, o coach de idiomas com IA, a tradução das mensagens que você recebe e a leitura em voz alta só funcionam se o GreenGo enviar o texto em questão ao Google.';
+
+  @override
+  String get aiConsentProviders =>
+      'Quem: Google Gemini (sugestões e coaching), Google Cloud Text-to-Speech (áudio) e Google Tradutor (traduções).';
+
+  @override
+  String get aiConsentWhatSent =>
+      'O que é enviado: apenas o texto da mensagem em que você usa o recurso (incluindo mensagens que outras pessoas te enviaram) e os idiomas. Nunca seu nome, suas fotos ou seu perfil.';
+
+  @override
+  String get aiConsentWhy =>
+      'Por quê: apenas para gerar a sugestão, a tradução ou o áudio que você pediu.';
+
+  @override
+  String get aiConsentDeclineInfo =>
+      'Se você recusar, esses recursos ficam desativados e nada é enviado. Toque em qualquer um deles depois para rever sua escolha.';
+
+  @override
+  String get aiConsentAccept => 'Permitir';
+
+  @override
+  String get aiConsentDecline => 'Recusar';
+
+  @override
+  String get aiConsentDisabledNotice =>
+      'Este recurso está desativado porque você escolheu não enviar texto aos serviços de IA do Google.';
+
+  @override
+  String get aiConsentReview => 'Revisar';
+
+  @override
+  String get profileDeleteReauthRequired =>
+      'Por segurança, confirme sua senha novamente para excluir sua conta.';
+
+  @override
+  String get profileDeleteNetworkError =>
+      'Sem conexão. Sua conta não foi excluída. Tente novamente.';
+
+  @override
+  String get profileDeleteFailed =>
+      'Não foi possível excluir sua conta e nada foi excluído. Tente novamente ou fale com o suporte.';
+
+  @override
+  String get onboardingAgeBlockedTitle => 'O GreenGo é para adultos';
+
+  @override
+  String get onboardingAgeBlockedBody =>
+      'Você precisa ter pelo menos 18 anos para usar o GreenGo, por isso não podemos criar sua conta.';
 }

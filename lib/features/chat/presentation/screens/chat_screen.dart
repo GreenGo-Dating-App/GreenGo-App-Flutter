@@ -58,6 +58,8 @@ import '../widgets/forward_message_sheet.dart';
 import '../widgets/message_bubble.dart';
 import '../../../../core/widgets/voice_record_send_button.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/services/ai_consent_service.dart';
+import '../../../../core/widgets/ai_consent_sheet.dart';
 
 /// Chat Screen
 ///
@@ -213,6 +215,21 @@ class _ChatScreenState extends State<ChatScreen> {
     _loadChatSettings();
     _loadMuteState();
     _fetchMatchData();
+    // AI consent (Apple 5.1.2(i)): this chat auto-translates the other
+    // person's messages and offers AI features, so ask once before the first
+    // use. Bubbles re-translate as soon as the user allows it.
+    AiConsentService.instance.statusListenable.addListener(_onAiConsentChanged);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) AiConsentGate.maybePromptOnce(context);
+    });
+  }
+
+  void _onAiConsentChanged() {
+    if (!mounted || !AiConsentService.instance.isGranted) return;
+    setState(() {
+      _translationFutures.clear();
+      _translatedMessages.clear();
+    });
   }
 
   /// Load whether this conversation is muted for the current user
@@ -409,6 +426,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   @override
   void dispose() {
+    AiConsentService.instance.statusListenable.removeListener(_onAiConsentChanged);
     _scrollController.removeListener(_onScroll);
     // Clear active conversation so notifications resume
     if (PushNotificationService.activeConversationId == widget.matchId) {
@@ -482,6 +500,10 @@ class _ChatScreenState extends State<ChatScreen> {
       targetLanguage: translateTo,
     );
     final detectedLang = result.detectedLanguage;
+
+    // No AI consent yet / declined: show the original, no error (not cached;
+    // _onAiConsentChanged re-runs it once the user allows translation).
+    if (result.consentRequired) return message;
 
     if (result.failed) {
       // Not cached: the Retry action (or reopening the chat) tries again.
@@ -2988,6 +3010,7 @@ class _ChatScreenState extends State<ChatScreen> {
               padding: const EdgeInsets.only(bottom: 8),
               child: GestureDetector(
                 onTap: () async {
+                  if (!await AiConsentGate.ensure(ctx)) return;
                   final lang = msg.detectedLanguage ?? msg.metadata?['language'] ?? 'en';
                   final source = await PronunciationService()
                       .getPronunciationSource(msg.content, lang);

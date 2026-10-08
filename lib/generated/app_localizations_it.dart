@@ -16237,4 +16237,62 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Quell\'orario non è disponibile in questa data.';
+
+  @override
+  String get chatMessageDeleted => 'Messaggio eliminato';
+
+  @override
+  String get aiConsentTitle => 'Le funzioni IA usano servizi Google';
+
+  @override
+  String get aiConsentIntro =>
+      'Le risposte intelligenti, il coach linguistico IA, la traduzione dei messaggi che ricevi e la lettura ad alta voce funzionano solo se GreenGo invia a Google il testo interessato.';
+
+  @override
+  String get aiConsentProviders =>
+      'Chi: Google Gemini (suggerimenti e coaching), Google Cloud Text-to-Speech (audio) e Google Traduttore (traduzioni).';
+
+  @override
+  String get aiConsentWhatSent =>
+      'Cosa viene inviato: solo il testo del messaggio su cui usi la funzione (compresi i messaggi che altre persone ti hanno inviato) e le lingue. Mai il tuo nome, le tue foto o il tuo profilo.';
+
+  @override
+  String get aiConsentWhy =>
+      'Perché: solo per produrre il suggerimento, la traduzione o l\'audio che hai richiesto.';
+
+  @override
+  String get aiConsentDeclineInfo =>
+      'Se rifiuti, queste funzioni restano disattivate e non viene inviato nulla. Tocca una di esse in seguito per rivedere la tua scelta.';
+
+  @override
+  String get aiConsentAccept => 'Consenti';
+
+  @override
+  String get aiConsentDecline => 'Rifiuta';
+
+  @override
+  String get aiConsentDisabledNotice =>
+      'Questa funzione è disattivata perché hai scelto di non inviare testo ai servizi IA di Google.';
+
+  @override
+  String get aiConsentReview => 'Rivedi';
+
+  @override
+  String get profileDeleteReauthRequired =>
+      'Per la tua sicurezza, conferma di nuovo la password per eliminare il tuo account.';
+
+  @override
+  String get profileDeleteNetworkError =>
+      'Nessuna connessione. Il tuo account non è stato eliminato. Riprova.';
+
+  @override
+  String get profileDeleteFailed =>
+      'Non siamo riusciti a eliminare il tuo account e non è stato eliminato nulla. Riprova o contatta l\'assistenza.';
+
+  @override
+  String get onboardingAgeBlockedTitle => 'GreenGo è per adulti';
+
+  @override
+  String get onboardingAgeBlockedBody =>
+      'Devi avere almeno 18 anni per usare GreenGo, quindi non possiamo creare il tuo account.';
 }

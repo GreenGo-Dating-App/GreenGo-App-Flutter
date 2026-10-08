@@ -91,6 +91,8 @@ class _TranslatableTextState extends State<TranslatableText> {
               text: widget.text,
               sourceLanguage: 'auto',
               targetLanguage: target,
+              // Public listings / reviews only (never chat).
+              requiresConsent: false,
             );
       if (!mounted) return;
       setState(() {

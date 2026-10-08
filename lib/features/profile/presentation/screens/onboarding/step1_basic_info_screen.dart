@@ -9,6 +9,7 @@ import '../../bloc/onboarding_state.dart';
 import '../../widgets/luxury_onboarding_layout.dart';
 import '../../widgets/onboarding_progress_bar.dart';
 import 'onboarding_exit.dart';
+import '../../../domain/age_gate.dart';
 
 class Step1BasicInfoScreen extends StatefulWidget {
   const Step1BasicInfoScreen({super.key});
@@ -22,6 +23,8 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
   final _nameController = TextEditingController();
   DateTime? _selectedDate;
   String? _selectedGender;
+  bool _checkingAge = false;
+  final AgeGateService _ageGate = AgeGateService();
 
   final List<Map<String, dynamic>> _genders = [
     {'label': 'Male', 'icon': Icons.male},
@@ -48,11 +51,17 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
   }
 
   Future<void> _selectDate(BuildContext context) async {
+    // Neutral age gate (H-21): any date up to today, starting on the year
+    // grid at the current year, so the picker does not steer anyone towards
+    // an "adult" date. Age is checked on Continue.
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
     final picked = await showDatePicker(
       context: context,
-      initialDate: DateTime(2000),
-      firstDate: DateTime(1940),
-      lastDate: DateTime.now().subtract(const Duration(days: 365 * 18)),
+      initialDate: _selectedDate ?? today,
+      firstDate: DateTime(1900),
+      lastDate: today,
+      initialDatePickerMode: DatePickerMode.year,
       builder: (context, child) {
         return Theme(
           data: Theme.of(context).copyWith(
@@ -75,10 +84,19 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
     }
   }
 
-  void _handleContinue() {
+  Future<void> _handleContinue() async {
+    if (_checkingAge) return;
     if (_formKey.currentState!.validate() &&
         _selectedDate != null &&
         _selectedGender != null) {
+      setState(() => _checkingAge = true);
+      final allowed = await _ageGate.mayContinue(_selectedDate!);
+      if (!mounted) return;
+      setState(() => _checkingAge = false);
+      if (!allowed) {
+        await _showAgeBlocked();
+        return;
+      }
       context.read<OnboardingBloc>().add(
             OnboardingBasicInfoUpdated(
               displayName: _nameController.text.trim(),
@@ -97,6 +115,26 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
         ),
       );
     }
+  }
+
+  Future<void> _showAgeBlocked() {
+    final l10n = AppLocalizations.of(context)!;
+    return showDialog<void>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.onboardingAgeBlockedTitle,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.onboardingAgeBlockedBody,
+            style: const TextStyle(color: AppColors.textSecondary)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: Text(l10n.ok),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
@@ -120,7 +158,7 @@ class _Step1BasicInfoScreenState extends State<Step1BasicInfoScreen> {
           ),
           bottomChild: LuxuryButton(
             text: AppLocalizations.of(context)?.onboardingContinue ?? 'Continue',
-            onPressed: _handleContinue,
+            onPressed: _checkingAge ? null : _handleContinue,
           ),
           child: Form(
             key: _formKey,

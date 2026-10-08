@@ -1,20 +1,44 @@
 import 'dart:convert';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart';
-import 'package:http/http.dart' as http;
 
-/// Centralized service for AI-powered chat language learning features.
-/// Uses Gemini API for: smart replies, grammar correction, cultural tooltips,
-/// word breakdown, difficulty assessment, and romanization.
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter/foundation.dart';
+
+import 'ai_consent_service.dart';
+
+/// Signature of the server call (overridable in tests).
+typedef AiAssistCall = Future<Map<String, dynamic>?> Function(
+    Map<String, dynamic> payload);
+
+/// Centralized service for AI-powered chat language learning features:
+/// smart replies, grammar correction, cultural tooltips, word breakdown,
+/// difficulty assessment and romanization.
+///
+/// Everything goes through the `aiAssist` callable: the Gemini key and the
+/// prompt templates live on the server (audit C-08 / H-17). Nothing is sent
+/// unless the user accepted the AI-processing notice ([AiConsentService]);
+/// without it every method returns "no result" and the UI shows nothing.
+/// Results are cached in memory only (message text is never written to a
+/// shared store).
 class ChatLearningService {
   factory ChatLearningService() => _instance;
-  ChatLearningService._();
+  ChatLearningService._({AiAssistCall? call, AiConsentService? consent})
+      : _call = call,
+        _consentOverride = consent;
   static final ChatLearningService _instance = ChatLearningService._();
 
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  String? _geminiApiKey;
+  @visibleForTesting
+  factory ChatLearningService.test(
+          {required AiAssistCall call, required AiConsentService consent}) =>
+      ChatLearningService._(call: call, consent: consent);
 
-  // Caches to avoid repeated API calls
+  final AiAssistCall? _call;
+  final AiConsentService? _consentOverride;
+  AiConsentService get _consent => _consentOverride ?? AiConsentService.instance;
+
+  /// Server input cap (functions/src/ai/aiGateway.ts CAPS.assistChars).
+  static const int maxChars = 1000;
+
+  // Caches to avoid repeated calls
   final Map<String, List<String>> _smartReplyCache = {};
   final Map<String, String> _correctionCache = {};
   final Map<String, String> _culturalTooltipCache = {};
@@ -22,49 +46,43 @@ class ChatLearningService {
   final Map<String, String> _romanizationCache = {};
   final Map<String, String> _difficultyCache = {};
 
-  Future<String?> _getApiKey() async {
-    if (_geminiApiKey != null) return _geminiApiKey;
-    try {
-      final doc = await _firestore.collection('app_config').doc('api_keys').get();
-      if (doc.exists) {
-        _geminiApiKey = doc.data()?['gemini_api_key'] as String?;
-      }
-    } catch (e) {
-      debugPrint('ChatLearningService: Failed to load API key: $e');
-    }
-    return _geminiApiKey;
+  static Future<Map<String, dynamic>?> _callServer(Map<String, dynamic> payload) async {
+    final res = await FirebaseFunctions.instance
+        .httpsCallable('aiAssist',
+            options: HttpsCallableOptions(timeout: const Duration(seconds: 30)))
+        .call<Map<String, dynamic>>(payload);
+    final result = res.data['result'];
+    return result is Map ? Map<String, dynamic>.from(result) : null;
   }
 
-  Future<Map<String, dynamic>?> _callGemini(String prompt) async {
-    final apiKey = await _getApiKey();
-    if (apiKey == null) return null;
-
-    try {
-      final url = Uri.parse(
-          'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apiKey');
-      final response = await http.post(
-        url,
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'contents': [{'parts': [{'text': prompt}]}],
-          'generationConfig': {'temperature': 0.3, 'maxOutputTokens': 1024},
-        }),
-      ).timeout(const Duration(seconds: 15));
-
-      if (response.statusCode == 200) {
-        final json = jsonDecode(response.body);
-        final text = json['candidates']?[0]?['content']?['parts']?[0]?['text'] as String?;
-        if (text != null) {
-          // Try to parse as JSON, otherwise return as raw text
-          try {
-            return jsonDecode(text) as Map<String, dynamic>;
-          } catch (_) {
-            return {'text': text};
-          }
+  /// Runs [task] on the server. Null when consent is missing, the text is
+  /// too long, or the call failed.
+  Future<Map<String, dynamic>?> _assist(String task, String text,
+      {required String language, String? targetLanguage, String? userLanguage}) async {
+    if (text.trim().isEmpty || text.length > maxChars) return null;
+    await _consent.ensureLoaded();
+    if (!_consent.isGranted) return null;
+    final payload = <String, dynamic>{
+      'task': task,
+      'text': text,
+      'language': language,
+      if (targetLanguage != null) 'targetLanguage': targetLanguage,
+      if (userLanguage != null) 'userLanguage': userLanguage,
+    };
+    final call = _call ?? _callServer;
+    for (var attempt = 0; attempt < 2; attempt++) {
+      try {
+        return await call(payload);
+      } catch (e) {
+        // Device says "granted" but the server has no record (first send
+        // failed): send the consent again, then retry once.
+        if (attempt == 0 && isAiConsentRequiredError(e) &&
+            await _consent.resyncAfterServerRejection()) {
+          continue;
         }
+        debugPrint('ChatLearningService: aiAssist($task) failed: $e');
+        return null;
       }
-    } catch (e) {
-      debugPrint('ChatLearningService: Gemini call failed: $e');
     }
     return null;
   }
@@ -74,14 +92,10 @@ class ChatLearningService {
     final cacheKey = '${receivedMessage.hashCode}_$targetLanguage';
     if (_smartReplyCache.containsKey(cacheKey)) return _smartReplyCache[cacheKey]!;
 
-    final langName = _langName(targetLanguage);
-    final userLangName = _langName(userLanguage);
-    final result = await _callGemini(
-      'Given this chat message: "$receivedMessage"\n'
-      'Suggest exactly 3 short, natural reply options in $langName. '
-      'Each reply should be casual and conversational (1-8 words). '
-      'Return ONLY a JSON object: {"replies": ["reply1", "reply2", "reply3"], "translations": ["translation1 in $userLangName", "translation2 in $userLangName", "translation3 in $userLangName"]}'
-    );
+    final result = await _assist('smartReplies', receivedMessage,
+        language: targetLanguage,
+        targetLanguage: targetLanguage,
+        userLanguage: userLanguage);
 
     if (result != null && result['replies'] != null) {
       final replies = List<String>.from(result['replies']);
@@ -101,176 +115,66 @@ class ChatLearningService {
     return _smartReplyCache[cacheKey] ?? [];
   }
 
-  /// Check grammar and suggest corrections (Firestore cached)
+  /// Check grammar and suggest corrections.
   Future<Map<String, dynamic>?> checkGrammar(String text, String language) async {
     final cacheKey = '${text.hashCode}_$language';
     if (_correctionCache.containsKey(cacheKey)) {
       return jsonDecode(_correctionCache[cacheKey]!) as Map<String, dynamic>;
     }
-
-    // Check Firestore cache
-    try {
-      final doc = await _firestore.collection('ai_cache').doc('gram_$cacheKey').get();
-      if (doc.exists) {
-        final data = doc.data()!;
-        final result = <String, dynamic>{
-          'hasErrors': data['hasErrors'],
-          'corrected': data['corrected'],
-          'explanation': data['explanation'],
-        };
-        _correctionCache[cacheKey] = jsonEncode(result);
-        return result;
-      }
-    } catch (_) {}
-
-    final langName = _langName(language);
-    final result = await _callGemini(
-      'Check this $langName text for grammar and spelling errors: "$text"\n'
-      'Return ONLY a JSON object: {"hasErrors": true/false, "corrected": "corrected text", "explanation": "brief explanation of errors in English"}\n'
-      'If no errors, set hasErrors to false and corrected to the original text.'
-    );
-
+    final result = await _assist('grammar', text, language: language);
     if (result != null && result.containsKey('hasErrors')) {
       _correctionCache[cacheKey] = jsonEncode(result);
-
-      // Cache to Firestore (non-blocking)
-      _firestore.collection('ai_cache').doc('gram_$cacheKey').set({
-        ...result, 'text': text, 'language': language,
-        'createdAt': FieldValue.serverTimestamp(),
-      }).catchError((_) {});
-
       return result;
     }
     return null;
   }
 
-  /// Get cultural context for idioms/slang in a message (Firestore cached)
+  /// Get cultural context for idioms/slang in a message.
   Future<String?> getCulturalTooltip(String text, String language) async {
     final cacheKey = '${text.hashCode}_$language';
     if (_culturalTooltipCache.containsKey(cacheKey)) return _culturalTooltipCache[cacheKey];
 
-    // Check Firestore cache
-    try {
-      final doc = await _firestore.collection('ai_cache').doc('cult_$cacheKey').get();
-      if (doc.exists) {
-        final tooltip = doc.data()?['tooltip'] as String?;
-        if (tooltip != null) {
-          _culturalTooltipCache[cacheKey] = tooltip;
-          return tooltip;
-        }
-        return null; // Cached as no context
-      }
-    } catch (_) {}
-
-    final langName = _langName(language);
-    final result = await _callGemini(
-      'Analyze this $langName text for idioms, slang, or cultural expressions: "$text"\n'
-      'If it contains any, return a JSON object: {"hasContext": true, "expression": "the idiom/expression found", "literal": "literal word-by-word translation", "meaning": "actual meaning", "cultural_note": "brief cultural context"}\n'
-      'If it is plain/literal language with no idioms or cultural nuance, return: {"hasContext": false}'
-    );
-
-    if (result != null && result['hasContext'] == true) {
+    final result = await _assist('cultural', text, language: language);
+    if (result == null) return null; // not cached: may work later
+    if (result['hasContext'] == true) {
       final tooltip = '${result['expression']}\n'
           'Literal: ${result['literal']}\n'
           'Meaning: ${result['meaning']}\n'
           '${result['cultural_note'] ?? ''}';
       _culturalTooltipCache[cacheKey] = tooltip;
-
-      // Cache to Firestore (non-blocking)
-      _firestore.collection('ai_cache').doc('cult_$cacheKey').set({
-        'tooltip': tooltip, 'text': text, 'language': language,
-        'createdAt': FieldValue.serverTimestamp(),
-      }).catchError((_) {});
-
       return tooltip;
     }
-
-    // Cache negative result too
-    _firestore.collection('ai_cache').doc('cult_$cacheKey').set({
-      'tooltip': null, 'text': text, 'language': language,
-      'createdAt': FieldValue.serverTimestamp(),
-    }).catchError((_) {});
-
     return null;
   }
 
-  /// Break down a message word by word with translations (Firestore cached)
+  /// Break down a message word by word with translations.
   Future<List<Map<String, String>>> getWordBreakdown(String text, String sourceLanguage, String targetLanguage) async {
     final cacheKey = '${text.hashCode}_${sourceLanguage}_$targetLanguage';
     if (_wordBreakdownCache.containsKey(cacheKey)) return _wordBreakdownCache[cacheKey]!;
 
-    // Check Firestore cache
-    try {
-      final doc = await _firestore.collection('ai_cache').doc('wb_$cacheKey').get();
-      if (doc.exists && doc.data()?['words'] != null) {
-        final words = (doc.data()!['words'] as List).map((w) => Map<String, String>.from({
-          'word': w['word']?.toString() ?? '',
-          'translation': w['translation']?.toString() ?? '',
-          'pos': w['pos']?.toString() ?? '',
-        })).toList();
-        _wordBreakdownCache[cacheKey] = words;
-        return words;
-      }
-    } catch (_) {}
-
-    final srcName = _langName(sourceLanguage);
-    final tgtName = _langName(targetLanguage);
-    final result = await _callGemini(
-      'Break down this $srcName sentence word by word: "$text"\n'
-      'For each word, provide translation to $tgtName and part of speech.\n'
-      'Return ONLY a JSON object: {"words": [{"word": "original", "translation": "translated", "pos": "noun/verb/adj/etc"}]}'
-    );
-
-    if (result != null && result['words'] != null) {
+    final result = await _assist('wordBreakdown', text,
+        language: sourceLanguage, targetLanguage: targetLanguage);
+    if (result != null && result['words'] is List) {
       final words = (result['words'] as List).map((w) => Map<String, String>.from({
         'word': w['word']?.toString() ?? '',
         'translation': w['translation']?.toString() ?? '',
         'pos': w['pos']?.toString() ?? '',
       })).toList();
       _wordBreakdownCache[cacheKey] = words;
-
-      // Cache to Firestore (non-blocking)
-      _firestore.collection('ai_cache').doc('wb_$cacheKey').set({
-        'words': words, 'text': text,
-        'sourceLanguage': sourceLanguage, 'targetLanguage': targetLanguage,
-        'createdAt': FieldValue.serverTimestamp(),
-      }).catchError((_) {});
-
       return words;
     }
     return [];
   }
 
-  /// Get CEFR difficulty level for a message (Firestore cached)
+  /// Get CEFR difficulty level for a message ('A1' when unknown).
   Future<String> getMessageDifficulty(String text, String language) async {
     final cacheKey = '${text.hashCode}_$language';
     if (_difficultyCache.containsKey(cacheKey)) return _difficultyCache[cacheKey]!;
 
-    // Check Firestore cache
-    try {
-      final doc = await _firestore.collection('ai_cache').doc('diff_$cacheKey').get();
-      if (doc.exists) {
-        final level = doc.data()?['level'] as String? ?? 'A1';
-        _difficultyCache[cacheKey] = level;
-        return level;
-      }
-    } catch (_) {}
-
-    final langName = _langName(language);
-    final result = await _callGemini(
-      'Assess the CEFR difficulty level of this $langName text: "$text"\n'
-      'Return ONLY a JSON object: {"level": "A1/A2/B1/B2/C1/C2"}'
-    );
-
-    final level = result?['level'] as String? ?? 'A1';
+    final result = await _assist('difficulty', text, language: language);
+    final level = result?['level'] as String?;
+    if (level == null) return 'A1'; // not cached: may work later
     _difficultyCache[cacheKey] = level;
-
-    // Cache to Firestore (non-blocking)
-    _firestore.collection('ai_cache').doc('diff_$cacheKey').set({
-      'level': level, 'text': text, 'language': language,
-      'createdAt': FieldValue.serverTimestamp(),
-    }).catchError((_) {});
-
     return level;
   }
 
@@ -282,12 +186,7 @@ class ChatLearningService {
     final cacheKey = '${text.hashCode}_$language';
     if (_romanizationCache.containsKey(cacheKey)) return _romanizationCache[cacheKey];
 
-    final langName = _langName(language);
-    final result = await _callGemini(
-      'Romanize this $langName text (convert to Latin alphabet pronunciation): "$text"\n'
-      'Return ONLY a JSON object: {"romanized": "romanized text"}'
-    );
-
+    final result = await _assist('romanize', text, language: language);
     final romanized = result?['romanized'] as String?;
     if (romanized != null) {
       _romanizationCache[cacheKey] = romanized;
@@ -298,19 +197,6 @@ class ChatLearningService {
   bool _needsRomanization(String language) {
     const nonLatinLanguages = {'ja', 'ko', 'zh', 'ar', 'hi', 'ru', 'th', 'japanese', 'korean', 'chinese', 'arabic', 'hindi', 'russian', 'thai'};
     return nonLatinLanguages.contains(language.toLowerCase());
-  }
-
-  String _langName(String language) {
-    if (language.length > 3) return language;
-    final upper = language.toUpperCase().replaceAll('-', '_');
-    const names = {
-      'EN': 'English', 'IT': 'Italian', 'ES': 'Spanish',
-      'FR': 'French', 'DE': 'German', 'PT': 'Portuguese',
-      'PT_BR': 'Brazilian Portuguese',
-      'JA': 'Japanese', 'KO': 'Korean', 'ZH': 'Chinese',
-      'AR': 'Arabic', 'HI': 'Hindi', 'TR': 'Turkish', 'RU': 'Russian',
-    };
-    return names[upper] ?? language;
   }
 
   void clearCaches() {

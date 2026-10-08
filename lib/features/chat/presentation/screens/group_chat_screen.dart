@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:cached_network_image/cached_network_image.dart';
 
@@ -37,6 +38,9 @@ import '../bloc/group_chat_event.dart';
 import '../bloc/group_chat_state.dart';
 import '../widgets/resolved_users_builder.dart';
 import 'group_info_screen.dart';
+import '../widgets/deleted_message_bubble.dart';
+import '../../../../core/services/ai_consent_service.dart';
+import '../../../../core/widgets/ai_consent_sheet.dart';
 
 /// Group Chat Screen ("Culture Circle").
 ///
@@ -779,6 +783,9 @@ class _GroupChatViewState extends State<_GroupChatView> {
                         itemCount: messages.length,
                         itemBuilder: (context, index) {
                           final m = messages[index];
+                          if (isDeletedAuthorMessage(m.senderId)) {
+                            return const DeletedMessageBubble(compact: true);
+                          }
                           return _GroupMessageBubble(
                             message: m,
                             isMine: m.senderId == widget.currentUserId,
@@ -1030,13 +1037,22 @@ class _TranslatableTextState extends State<_TranslatableText> {
   @override
   void initState() {
     super.initState();
+    AiConsentService.instance.statusListenable.addListener(_onAiConsentChanged);
     _maybeTranslate();
   }
 
   @override
   void dispose() {
+    AiConsentService.instance.statusListenable.removeListener(_onAiConsentChanged);
     _player.dispose();
     super.dispose();
+  }
+
+  /// The user just allowed AI processing: translate what was waiting.
+  void _onAiConsentChanged() {
+    if (mounted && AiConsentService.instance.isGranted && _translated == null) {
+      _maybeTranslate();
+    }
   }
 
   /// Double-tap TTS: reads the translation (your language) or the original,
@@ -1054,6 +1070,11 @@ class _TranslatableTextState extends State<_TranslatableText> {
         ? widget.targetLang.replaceAll('_', '-')
         : (widget.sourceLang ?? widget.targetLang).replaceAll('_', '-');
     if (text.trim().isEmpty || widget.currentUserId.isEmpty) return;
+
+    // Read-aloud sends the text to Google Cloud TTS: needs AI consent
+    // (asked before any coins are taken).
+    if (!await AiConsentGate.ensure(context)) return;
+    if (!mounted) return;
 
     final messenger = ScaffoldMessenger.of(context);
     final notEnoughMsg = AppLocalizations.of(context)!.ttsNotEnoughCoins;
@@ -1116,6 +1137,12 @@ class _TranslatableTextState extends State<_TranslatableText> {
       targetLanguage: widget.targetLang.replaceAll('_', '-'),
     );
     if (!mounted) return;
+    if (result.consentRequired) {
+      // Translating other members' messages needs AI consent: ask once.
+      setState(() => _loading = false);
+      unawaited(AiConsentGate.maybePromptOnce(context));
+      return;
+    }
     setState(() {
       _loading = false;
       _failed = result.failed;

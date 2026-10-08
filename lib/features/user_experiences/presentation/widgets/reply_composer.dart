@@ -63,6 +63,8 @@ class _MentionTextState extends State<MentionText> {
         text: widget.text,
         sourceLanguage: 'auto',
         targetLanguage: target.replaceAll('_', '-'),
+        // Public experience reviews / replies (never chat).
+        requiresConsent: false,
       );
       if (!mounted) return;
       if (r.trim().isNotEmpty && r.trim() != widget.text.trim()) {

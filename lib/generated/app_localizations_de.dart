@@ -16270,4 +16270,62 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Diese Zeit ist an diesem Termin nicht verfügbar.';
+
+  @override
+  String get chatMessageDeleted => 'Nachricht gelöscht';
+
+  @override
+  String get aiConsentTitle => 'KI-Funktionen nutzen Google-Dienste';
+
+  @override
+  String get aiConsentIntro =>
+      'Antwortvorschläge, der KI-Sprachcoach, das Übersetzen empfangener Nachrichten und das Vorlesen funktionieren nur, wenn GreenGo den betreffenden Text an Google sendet.';
+
+  @override
+  String get aiConsentProviders =>
+      'Wer: Google Gemini (Vorschläge und Coaching), Google Cloud Text-to-Speech (Audio) und Google Übersetzer (Übersetzungen).';
+
+  @override
+  String get aiConsentWhatSent =>
+      'Was gesendet wird: nur der Text der Nachricht, auf die du die Funktion anwendest (auch Nachrichten, die andere dir geschickt haben), und die Sprachen. Nie dein Name, deine Fotos oder dein Profil.';
+
+  @override
+  String get aiConsentWhy =>
+      'Warum: nur um den Vorschlag, die Übersetzung oder das Audio zu erstellen, das du angefordert hast.';
+
+  @override
+  String get aiConsentDeclineInfo =>
+      'Wenn du ablehnst, bleiben diese Funktionen aus und es wird nichts gesendet. Tippe später auf eine davon, um deine Wahl zu ändern.';
+
+  @override
+  String get aiConsentAccept => 'Erlauben';
+
+  @override
+  String get aiConsentDecline => 'Ablehnen';
+
+  @override
+  String get aiConsentDisabledNotice =>
+      'Diese Funktion ist aus, weil du keinen Text an Google-KI-Dienste senden möchtest.';
+
+  @override
+  String get aiConsentReview => 'Ändern';
+
+  @override
+  String get profileDeleteReauthRequired =>
+      'Bitte bestätige zu deiner Sicherheit erneut dein Passwort, um dein Konto zu löschen.';
+
+  @override
+  String get profileDeleteNetworkError =>
+      'Keine Verbindung. Dein Konto wurde nicht gelöscht. Bitte versuche es erneut.';
+
+  @override
+  String get profileDeleteFailed =>
+      'Wir konnten dein Konto nicht löschen, es wurde nichts gelöscht. Bitte versuche es erneut oder kontaktiere den Support.';
+
+  @override
+  String get onboardingAgeBlockedTitle => 'GreenGo ist für Erwachsene';
+
+  @override
+  String get onboardingAgeBlockedBody =>
+      'Du musst mindestens 18 Jahre alt sein, um GreenGo zu nutzen. Daher können wir dein Konto nicht erstellen.';
 }

@@ -5,6 +5,8 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/community_message.dart';
+import '../../../chat/presentation/widgets/deleted_message_bubble.dart';
+import '../../../../core/widgets/ai_consent_sheet.dart';
 
 /// Community Message Bubble Widget
 ///
@@ -55,6 +57,9 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
       setState(() => _showingTranslation = !_showingTranslation);
       return;
     }
+    // Translating someone else's message sends it to Google: AI consent.
+    if (!await AiConsentGate.ensure(context)) return;
+    if (!mounted) return;
     setState(() {
       _translating = true;
       _failed = false;
@@ -101,6 +106,9 @@ class _CommunityMessageBubbleState extends State<CommunityMessageBubble> {
 
   @override
   Widget build(BuildContext context) {
+    if (isDeletedAuthorMessage(message.senderId)) {
+      return const DeletedMessageBubble(compact: true);
+    }
     if (message.type == CommunityMessageType.system) {
       return _buildSystemMessage();
     }

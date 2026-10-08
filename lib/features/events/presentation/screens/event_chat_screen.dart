@@ -16,6 +16,8 @@ import '../../../../generated/app_localizations.dart';
 import '../../../chat/data/chat_constants.dart';
 import '../../data/datasources/events_remote_datasource.dart';
 import '../../domain/entities/event.dart';
+import '../../../chat/presentation/widgets/deleted_message_bubble.dart';
+import '../../../../core/widgets/ai_consent_sheet.dart';
 
 /// Event Group Chat Screen
 ///
@@ -275,6 +277,9 @@ class _EventChatScreenState extends State<EventChatScreen> {
   }
 
   Widget _buildMessageBubble(EventChatMessage message, bool isMe) {
+    if (isDeletedAuthorMessage(message.senderId)) {
+      return const DeletedMessageBubble(compact: true);
+    }
     // Admin announcements render as a full-width highlighted banner.
     if (message.isBroadcast) {
       return Padding(
@@ -590,6 +595,9 @@ class _TranslatableEventTextState extends State<_TranslatableEventText> {
       setState(() => _showingTranslation = !_showingTranslation);
       return;
     }
+    // Translating someone else's message sends it to Google: AI consent.
+    if (!await AiConsentGate.ensure(context)) return;
+    if (!mounted) return;
     setState(() {
       _translating = true;
       _failed = false;

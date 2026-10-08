@@ -9,6 +9,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
+import '../../../../core/widgets/ai_consent_sheet.dart';
 
 /// Message Language Actions Widget
 ///
@@ -78,6 +79,10 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
     final targetLanguage = (widget.userNativeLanguage?.trim().isNotEmpty ?? false)
         ? widget.userNativeLanguage!
         : Localizations.localeOf(context).languageCode;
+
+    // Translating someone else's message sends it to Google: AI consent.
+    if (!await AiConsentGate.ensure(context)) return;
+    if (!mounted) return;
 
     setState(() => _isTranslating = true);
 
