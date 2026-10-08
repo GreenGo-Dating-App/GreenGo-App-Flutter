@@ -261,7 +261,11 @@ describe('app: deleteMyAccount callable', () => {
     await put('chat_images/match1/img.jpg');
     await db.doc('conversations/c1').set({ userId1: 'app2', userId2: 'peer', matchId: 'match1', unreadCounts: { app2: 1, peer: 0 }, lastMessage: { senderId: 'app2', content: 'hi' } });
     await db.doc('conversations/c1/messages/m1').set({ senderId: 'app2', receiverId: 'peer', type: 'image', content: dlUrl('chat_images/match1/img.jpg'), senderName: 'Name app2' });
-    await db.doc('conversations/c1/messages/m2').set({ senderId: 'app2', receiverId: 'peer', type: 'text', content: 'hello' });
+    const sentAt = admin.firestore.Timestamp.fromMillis(1760000000000);
+    await db.doc('conversations/c1/messages/m2').set({
+      senderId: 'app2', receiverId: 'peer', type: 'text', content: 'hello', sentAt,
+      translatedContent: 'ola', translations: { pt: 'ola', it: 'ciao' }, detectedLanguage: 'en',
+    });
     await db.doc('conversations/c1/messages/m3').set({ senderId: 'peer', receiverId: 'app2', type: 'text', content: 'hey' });
     await db.doc('purchaseLedger/tokhash').set({ userId: 'app2', productId: 'greengo_coins_100', amount: 4.99, currency: 'USD', email: 'app2@example.com', displayName: 'Name app2', createdAt: admin.firestore.Timestamp.now() });
     await db.doc('coinTransactions/t1').set({ userId: 'app2', type: 'credit', amount: 100, reason: 'purchase', note: 'free text' });
@@ -296,7 +300,16 @@ describe('app: deleteMyAccount callable', () => {
     const m1 = (await db.doc('conversations/c1/messages/m1').get()).data()!;
     expect(m1).toMatchObject({ senderId: 'deleted_user', type: 'text', content: '', mediaRemoved: true });
     expect(m1.senderName).toBeUndefined();
-    expect((await db.doc('conversations/c1/messages/m2').get()).data()).toMatchObject({ senderId: 'deleted_user', content: 'hello' });
+    expect(m1.deletedAuthor).toBe(true);
+    // Owner decision: the deleted user's words are gone (body + translations),
+    // the placeholder keeps its timestamp so the conversation order holds.
+    const m2 = (await db.doc('conversations/c1/messages/m2').get()).data()!;
+    expect(m2).toMatchObject({ senderId: 'deleted_user', type: 'text', content: '', deletedAuthor: true });
+    expect(m2.sentAt.toMillis()).toBe(sentAt.toMillis());
+    expect(m2.translatedContent).toBeUndefined();
+    expect(m2.translations).toBeUndefined();
+    expect(JSON.stringify(m2)).not.toMatch(/hello|ola|ciao/);
+    expect(conv.lastMessage).toMatchObject({ senderId: 'deleted_user', content: '', deletedAuthor: true });
     expect((await db.doc('conversations/c1/messages/m3').get()).data()).toMatchObject({ senderId: 'peer', content: 'hey' });
     expect(await authExists('peer')).toBe(true);
     expect(await docExists('profiles/peer')).toBe(true);
