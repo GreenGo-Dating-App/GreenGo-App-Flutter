@@ -1,3 +1,5 @@
+import '../../../ticket_payments/presentation/screens/ticket_order_screen.dart';
+import '../../../ticket_payments/presentation/ticket_purchase.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -836,6 +838,30 @@ class _DetailViewState extends State<_DetailView> {
           style: muted));
     }
     final buttons = <Widget>[];
+    if (p.mode == BookingPaymentMode.online) {
+      lines.removeLast();
+      lines.add(p.isOnlinePaid
+          ? _state(Icons.verified, AppColors.successGreen, l.tpPaymentConfirmed)
+          : Text(p.status == 'refunded' || p.status == 'disputed' ? l.tpOrderRefunded : l.tpPayInAppInfo,
+              style: muted));
+      if (!asHost && BookingRules.canPayOnline(b, now)) {
+        buttons.add(BookingPrimaryButton(
+          key: const ValueKey('booking-pay-online'),
+          label: l.tpPayNow,
+          icon: Icons.lock_outline,
+          busy: false,
+          onPressed: () => startTicketPurchase(context,
+              kind: 'experience', id: b.experienceId, bookingId: b.id),
+        ));
+      }
+      if (!asHost && p.orderId != null) {
+        buttons.add(BookingOutlineButton(
+          label: p.isOnlinePaid ? l.tpViewTickets : l.tpViewPayment,
+          icon: Icons.confirmation_number_outlined,
+          onPressed: () => Navigator.of(context).push(TicketOrderScreen.route(p.orderId!)),
+        ));
+      }
+    }
     if (!asHost &&
         p.mode == BookingPaymentMode.link &&
         p.link != null &&

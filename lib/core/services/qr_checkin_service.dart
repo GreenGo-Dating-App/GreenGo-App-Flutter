@@ -11,6 +11,10 @@ sealed class ScannedCheckInCode {
 
   static const String eventSignedPrefix = 'greengo:ev:';
   static const String bookingPrefix = 'greengo:checkin:';
+
+  /// Paid ticket (events + experiences): `greengo:tk:{ticketId}:{sig}`,
+  /// verified + re-checked (refunds) by the server; single use per ticket.
+  static const String paidTicketPrefix = 'greengo:tk:';
   static final RegExp _id = RegExp(r'^[A-Za-z0-9_-]{1,128}$');
   static final RegExp _code = RegExp(r'^[ABCDEFGHJKMNPQRSTVWXYZ0-9]{8}$');
 
@@ -20,6 +24,14 @@ sealed class ScannedCheckInCode {
   static ScannedCheckInCode? parse(String? input) {
     final raw = input?.trim();
     if (raw == null || raw.isEmpty) return null;
+    if (raw.startsWith(paidTicketPrefix)) {
+      final rest = raw.substring(paidTicketPrefix.length);
+      final i = rest.lastIndexOf(':');
+      if (i <= 0) return null;
+      final id = rest.substring(0, i);
+      if (!_id.hasMatch(id) || rest.length - i - 1 < 10) return null;
+      return PaidTicketCode(raw, ticketId: id);
+    }
     if (raw.startsWith(eventSignedPrefix)) {
       final p = raw.substring(eventSignedPrefix.length).split(':');
       if (p.length != 3) return null;
@@ -55,6 +67,11 @@ class EventTicketCode extends ScannedCheckInCode {
   final bool signed;
 }
 
+class PaidTicketCode extends ScannedCheckInCode {
+  const PaidTicketCode(super.raw, {required this.ticketId});
+  final String ticketId;
+}
+
 class BookingTicketCode extends ScannedCheckInCode {
   const BookingTicketCode(super.raw,
       {required this.bookingId, required this.code});
@@ -71,7 +88,15 @@ class CheckInOutcome {
     this.photoUrl,
     this.guestCount = 0,
     this.reason,
+    this.ticketTypeName,
+    this.partySize = 1,
   });
+
+  /// Paid tickets: the ticket type (VIP, General…) shown big at the door.
+  final String? ticketTypeName;
+
+  /// Group tickets (per-group experiences): people admitted by this QR.
+  final int partySize;
 
   /// Checked in now (true) or refused (false). Already-in counts as refused
   /// at the door, with [alreadyCheckedIn] set.
@@ -102,6 +127,11 @@ class CheckInOutcome {
         return l10n.checkinNotConfirmed;
       case 'legacy_ticket_rejected':
         return l10n.checkinUpdateApp;
+      case 'ticket_not_valid':
+        return l10n.tpScanTicketNotValid;
+      case 'ticket_required':
+      case 'not_paid':
+        return l10n.tpScanNotPaid;
       case 'network':
         return l10n.checkinNetwork;
       default:
@@ -165,13 +195,13 @@ class QrCheckinService {
       {required String legacyPayload}) async {
     final prefs = await _prefs();
     final cached = prefs?.getString(_eventKey(eventId, uid));
-    if (cached != null && cached.startsWith(ScannedCheckInCode.eventSignedPrefix)) {
+    if (cached != null && _isServerTicket(cached)) {
       return cached;
     }
     try {
       final m = await _call('getEventTicketCode', {'eventId': eventId});
       final p = m['qrPayload'] as String?;
-      if (p != null && p.startsWith(ScannedCheckInCode.eventSignedPrefix)) {
+      if (p != null && _isServerTicket(p)) {
         await prefs?.setString(_eventKey(eventId, uid), p);
         return p;
       }
@@ -181,12 +211,14 @@ class QrCheckinService {
     return legacyPayload;
   }
 
+  static bool _isServerTicket(String v) =>
+      v.startsWith(ScannedCheckInCode.eventSignedPrefix) ||
+      v.startsWith(ScannedCheckInCode.paidTicketPrefix);
+
   /// The signed event ticket already cached on this device, or null.
   Future<String?> cachedEventTicket(String eventId, String uid) async {
     final v = (await _prefs())?.getString(_eventKey(eventId, uid));
-    return v != null && v.startsWith(ScannedCheckInCode.eventSignedPrefix)
-        ? v
-        : null;
+    return v != null && _isServerTicket(v) ? v : null;
   }
 
   /// Last booking check-in QR shown on this device (offline fallback).
@@ -194,7 +226,10 @@ class QrCheckinService {
       (await _prefs())?.getString(_bookingKey(bookingId));
 
   Future<void> cacheBookingPayload(String bookingId, String payload) async {
-    if (!payload.startsWith(ScannedCheckInCode.bookingPrefix)) return;
+    if (!payload.startsWith(ScannedCheckInCode.bookingPrefix) &&
+        !payload.startsWith(ScannedCheckInCode.paidTicketPrefix)) {
+      return;
+    }
     await (await _prefs())?.setString(_bookingKey(bookingId), payload);
   }
 
@@ -213,6 +248,30 @@ class QrCheckinService {
         name: (m['userName'] as String?) ?? '',
         photoUrl: m['userPhotoUrl'] as String?,
         guestCount: (m['guestCount'] as num?)?.toInt() ?? 0,
+      );
+    } catch (e) {
+      return CheckInOutcome(approved: false, reason: _reasonOf(e));
+    }
+  }
+
+  /// Door check-in of a PAID ticket (event or experience); each QR works once.
+  Future<CheckInOutcome> checkInPaidTicket(PaidTicketCode code,
+      {String? eventId, String? experienceId}) async {
+    try {
+      final m = await _call('checkInTicket', {
+        'payload': code.raw,
+        if (eventId != null) 'eventId': eventId,
+        if (experienceId != null) 'experienceId': experienceId,
+      });
+      final already = m['alreadyCheckedIn'] == true;
+      return CheckInOutcome(
+        approved: !already,
+        alreadyCheckedIn: already,
+        name: (m['userName'] as String?) ?? (m['guestName'] as String?) ?? '',
+        photoUrl: (m['userPhotoUrl'] as String?) ?? (m['guestPhotoUrl'] as String?),
+        guestCount: ((m['partySize'] as num?)?.toInt() ?? 1) - 1,
+        ticketTypeName: m['ticketTypeName'] as String?,
+        partySize: (m['partySize'] as num?)?.toInt() ?? 1,
       );
     } catch (e) {
       return CheckInOutcome(approved: false, reason: _reasonOf(e));

@@ -33,6 +33,7 @@ class BookingConsentDialog extends StatefulWidget {
 
   /// Methods the guest can choose from, link first (pure, unit-tested).
   static List<PaymentMethod> methodsOf(UserExperience e) => [
+        if (e.acceptsOnline) PaymentMethod.online,
         if (e.acceptsLink) PaymentMethod.link,
         if (e.acceptsCash) PaymentMethod.cash,
       ];
@@ -41,6 +42,9 @@ class BookingConsentDialog extends StatefulWidget {
   static List<String> guidance(
       AppLocalizations l, UserExperience e, PaymentMethod method) {
     if (method == PaymentMethod.cash) return [l.uexpGuideCash];
+    if (method == PaymentMethod.online) {
+      return [e.paymentProvider == 'link' ? l.tpConsentGuideManual : l.tpConsentGuideInstant];
+    }
     final type = e.paymentLink?.type ?? PaymentLinkType.other;
     return switch (type) {
       PaymentLinkType.pix => [l.uexpGuidePix],

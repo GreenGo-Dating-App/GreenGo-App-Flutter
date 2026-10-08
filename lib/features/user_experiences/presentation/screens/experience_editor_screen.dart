@@ -27,6 +27,8 @@ import '../experience_creation_gate.dart';
 import '../experience_l10n.dart';
 import '../experience_safety_flow.dart';
 import '../widgets/experience_policy_widgets.dart';
+import '../../../ticket_payments/domain/ticket_payments.dart';
+import '../../../ticket_payments/presentation/widgets/ticket_payment_selector.dart';
 
 /// Languages a host can offer (same names profiles store).
 const List<String> kExperienceLanguages = [
@@ -143,7 +145,14 @@ class _EditorFormState extends State<_EditorForm> {
   String _currency = kExperienceCurrencies.first;
   PaymentLinkType _paymentType = PaymentLinkType.pix;
   // Paid listings: cash at the meeting and/or the online link.
-  final Set<PaymentMethod> _methods = {PaymentMethod.link};
+  // Paid listings are sold as in-app tickets only (ticket_payments): the
+  // legacy cash / pasted-link methods are no longer offered.
+  final Set<PaymentMethod> _methods = {PaymentMethod.online};
+  TicketPaymentChoice _ticket = const TicketPaymentChoice();
+  bool _legacyPayment = false;
+  String _pricingMode = 'per_person';
+  final _groupPrice = TextEditingController();
+  final _maxPerUser = TextEditingController(text: '4');
   CancellationPolicy _policy = CancellationPolicy.fallback;
   // Bookings: host approves each request (false = instant booking).
 
@@ -216,10 +225,23 @@ class _EditorFormState extends State<_EditorForm> {
       _availability.text = e.availability ?? '';
       _policy = e.cancellationPolicy;
       _cancellation.text = e.cancellationNotes ?? '';
-      if (!e.isFree && e.paymentMethods.isNotEmpty) {
-        _methods
-          ..clear()
-          ..addAll(e.paymentMethods);
+      _pricingMode = e.pricingMode;
+      if (e.groupPrice != null) {
+        final cur = isoCurrencyFor(e.currency) ?? 'usd';
+        _groupPrice.text = currencyExponent(cur) == 0
+            ? '${e.groupPrice}'
+            : (e.groupPrice! / 100).toStringAsFixed(2);
+      }
+      _maxPerUser.text = e.maxTicketsPerUser?.toString() ?? '';
+      if (e.acceptsOnline) {
+        _ticket = TicketPaymentChoice(
+          provider: TicketProvider.fromWire(e.paymentProvider),
+          linkMethod: e.paymentLinkMethod,
+          instructions: e.paymentInstructions,
+        );
+      } else if (!e.isFree) {
+        // Legacy cash / pasted link: the host must choose a ticket payment.
+        _legacyPayment = true;
       }
     }
   }
@@ -236,6 +258,8 @@ class _EditorFormState extends State<_EditorForm> {
       _minGroup,
       _price,
       _paymentValue,
+      _groupPrice,
+      _maxPerUser,
       _availability,
       _cancellation,
       ..._included,
@@ -282,7 +306,12 @@ class _EditorFormState extends State<_EditorForm> {
         cancellationNotes: _cancellation.text,
         isFree: _isFree,
         paymentMethods: _methods,
-        price: _isFree ? 0 : double.tryParse(_price.text.trim().replaceAll(',', '.')),
+        ticketProviderComplete: _ticket.isComplete && !needsReconnect(_ticket),
+        price: _isFree
+            ? 0
+            : (_pricingMode == 'per_group'
+                ? (double.tryParse(_groupPrice.text.trim().replaceAll(',', '.')) ?? -1)
+                : double.tryParse(_price.text.trim().replaceAll(',', '.'))),
         paymentType: _paymentType,
         paymentValue: _paymentValue.text,
       );
@@ -461,11 +490,15 @@ class _EditorFormState extends State<_EditorForm> {
       if (!mounted) return;
 
       final e = widget.existing;
+      // per_group: `price` mirrors the group price (major units) for lists
+      // and older clients; the server charges groupPrice (minor units).
       final price = _isFree
           ? 0.0
-          : double.tryParse(_price.text.trim().replaceAll(',', '.')) ?? 0;
-      final payValue = ExperienceValidator.normalizePaymentValue(
-          _paymentType, _paymentValue.text);
+          : double.tryParse((_pricingMode == 'per_group' ? _groupPrice : _price)
+                  .text
+                  .trim()
+                  .replaceAll(',', '.')) ??
+              0;
       final minG = int.tryParse(_minGroup.text.trim());
       _requestedStatus = status;
       final experience = UserExperience(
@@ -498,11 +531,19 @@ class _EditorFormState extends State<_EditorForm> {
         price: price,
         currency: _isFree ? null : _currency,
         isFree: _isFree,
-        paymentLink:
-            payValue.isEmpty || _isFree || !_methods.contains(PaymentMethod.link)
-                ? null
-                : PaymentLink(type: _paymentType, value: payValue),
-        paymentMethods: _isFree ? const {} : {..._methods},
+        paymentLink: null,
+        paymentMethods: _isFree ? const {} : {PaymentMethod.online},
+        paymentProvider: _isFree ? null : _ticket.provider?.wire,
+        paymentLinkMethod: _isFree || _ticket.provider != TicketProvider.link ? null : _ticket.linkMethod,
+        paymentInstructions: _isFree || _ticket.provider != TicketProvider.link
+            ? null
+            : ((_ticket.instructions ?? '').trim().isEmpty ? null : _ticket.instructions!.trim()),
+        pricingMode: _pricingMode,
+        groupPrice: _isFree || _pricingMode != 'per_group'
+            ? null
+            : toMinorUnits(double.tryParse(_groupPrice.text.trim().replaceAll(',', '.')) ?? 0,
+                isoCurrencyFor(_currency) ?? 'usd'),
+        maxTicketsPerUser: int.tryParse(_maxPerUser.text.trim()),
         // Availability is defined by the dates (slots), not free text.
         availability: null,
         cancellationPolicy: _policy,
@@ -1315,7 +1356,6 @@ class _EditorFormState extends State<_EditorForm> {
   }
 
   Widget _pricingSection(AppLocalizations l) {
-    final isPix = _paymentType == PaymentLinkType.pix;
     return _section(l.uexpPrice, [
       SwitchListTile(
         contentPadding: EdgeInsets.zero,
@@ -1358,61 +1398,70 @@ class _EditorFormState extends State<_EditorForm> {
         ]),
       if (!_isFree) ...[
         const SizedBox(height: 12),
-        Text(l.uexpPaymentLink,
-            style: const TextStyle(color: AppColors.textSecondary)),
+        // Pricing mode: per person (default) or one price per group.
+        SegmentedButton<String>(
+          key: const ValueKey('experience-pricing-mode'),
+          segments: [
+            ButtonSegment(value: 'per_person', label: Text(l.tpPerPerson)),
+            ButtonSegment(value: 'per_group', label: Text(l.tpPerGroup)),
+          ],
+          selected: {_pricingMode},
+          onSelectionChanged: (v) => setState(() => _pricingMode = v.first),
+        ),
         const SizedBox(height: 6),
-        Wrap(spacing: 8, runSpacing: 6, children: [
-          for (final m in PaymentMethod.values)
-            FilterChip(
-              key: ValueKey('payment-method-${m.name}'),
-              selected: _methods.contains(m),
-              avatar: Icon(ExperienceL10n.paymentMethodIcon(m), size: 16),
-              label: Text(ExperienceL10n.paymentMethod(l, m)),
-              onSelected: (v) => setState(() {
-                if (v) {
-                  _methods.add(m);
-                } else {
-                  _methods.remove(m);
-                }
-              }),
+        Text(_pricingMode == 'per_group' ? l.tpPerGroupInfo : l.tpPerPersonInfo,
+            style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+        if (_pricingMode == 'per_group') ...[
+          const SizedBox(height: 8),
+          TextField(
+            key: const ValueKey('experience-group-price'),
+            controller: _groupPrice,
+            keyboardType: const TextInputType.numberWithOptions(decimal: true),
+            inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9.,]'))],
+            style: _text,
+            onChanged: (_) => setState(() {}),
+            decoration: _dec('${l.tpGroupPrice} ($_currency)',
+                error: _err([ExperienceFieldError.priceInvalid])),
+          ),
+          if (_groupPrice.text.trim().isNotEmpty && int.tryParse(_maxGroup.text.trim()) != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: Text(
+                l.tpGroupPreview('$_currency${_groupPrice.text.trim()}', int.parse(_maxGroup.text.trim())),
+                style: const TextStyle(color: AppColors.richGold, fontSize: 12.5),
+              ),
             ),
-        ]),
+        ],
+        const SizedBox(height: 10),
+        TextField(
+          key: const ValueKey('experience-max-per-user'),
+          controller: _maxPerUser,
+          keyboardType: TextInputType.number,
+          inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+          style: _text,
+          decoration: _dec(
+              _pricingMode == 'per_group' ? l.tpMaxGroupBookingsPerUser : l.tpMaxTicketsPerUser,
+              hint: l.tpNoLimitHint),
+        ),
+        const SizedBox(height: 12),
+        if (_legacyPayment && !_ticket.isComplete)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Text(l.tpLegacyPaymentPrompt,
+                style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5)),
+          ),
+        TicketPaymentSelector(
+          uid: widget.currentUserId,
+          value: _ticket,
+          onChanged: (c) => setState(() => _ticket = c),
+          capacity: int.tryParse(_maxGroup.text.trim()),
+          price: _pricingMode == 'per_group'
+              ? double.tryParse(_groupPrice.text.trim().replaceAll(',', '.'))
+              : double.tryParse(_price.text.trim().replaceAll(',', '.')),
+          currency: _currency,
+        ),
         if (_err([ExperienceFieldError.paymentMethodsRequired]) != null)
           _errorLine(_err([ExperienceFieldError.paymentMethodsRequired])!),
-      ],
-      if (!_isFree && _methods.contains(PaymentMethod.link)) ...[
-      const SizedBox(height: 12),
-      Text(l.uexpPaymentLinkDetails,
-          style: const TextStyle(color: AppColors.textSecondary)),
-      const SizedBox(height: 6),
-      DropdownButtonFormField<PaymentLinkType>(
-        value: _paymentType,
-        dropdownColor: AppColors.backgroundCard,
-        style: _text,
-        decoration: _dec(l.uexpPaymentType),
-        items: [
-          for (final t in PaymentLinkType.values)
-            DropdownMenuItem(
-                value: t, child: Text(ExperienceL10n.paymentType(l, t))),
-        ],
-        onChanged: (v) =>
-            setState(() => _paymentType = v ?? PaymentLinkType.other),
-      ),
-      const SizedBox(height: 8),
-      TextField(
-        controller: _paymentValue,
-        keyboardType: isPix ? TextInputType.text : TextInputType.url,
-        maxLength: ExperienceLimits.paymentValueMax,
-        style: _text,
-        decoration: _dec(
-          isPix ? l.uexpPaymentValuePix : l.uexpPaymentValueUrl,
-          hint: isPix ? l.uexpPaymentValueHintPix : 'https://',
-          error: _err([
-            ExperienceFieldError.paymentLinkRequired,
-            ExperienceFieldError.paymentLinkInvalid,
-          ]),
-        ),
-      ),
       ],
       Container(
         padding: const EdgeInsets.all(10),

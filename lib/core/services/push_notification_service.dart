@@ -1,3 +1,5 @@
+import '../../features/ticket_payments/presentation/screens/payments_to_confirm_screen.dart';
+import '../../features/ticket_payments/presentation/screens/ticket_order_screen.dart';
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -266,6 +268,17 @@ class PushNotificationService {
         if (v is String && v.isNotEmpty) return v;
       }
       return null;
+    }
+
+    // PAID TICKETS: "Your ticket is ready" / refunds -> the order; organizer
+    // "Payments to confirm" reminders -> the confirmation list.
+    if (action == 'ticket' && pick(['orderId']) != null) {
+      navigator.push(TicketOrderScreen.route(pick(['orderId'])!));
+      return;
+    }
+    if (action == 'ticket_confirm') {
+      navigator.push(PaymentsToConfirmScreen.route(userId));
+      return;
     }
 
     // EXPERIENCE BOOKING (booking_request / booking_confirmed / booking_cancelled

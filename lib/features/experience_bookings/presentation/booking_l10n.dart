@@ -41,6 +41,7 @@ class BookingL10n {
         BookingPaymentMode.free => l.uexpFree,
         BookingPaymentMode.cash => l.uexpMethodCash,
         BookingPaymentMode.link => l.uexpMethodLink,
+        BookingPaymentMode.online => l.tpPayInApp,
       };
 
   /// Decimal places of [currency] (mirrors currencyExponent on the server).

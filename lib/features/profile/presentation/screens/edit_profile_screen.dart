@@ -1,3 +1,4 @@
+import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -458,6 +459,17 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: _getPaymentLinksSubtitle(context, activeProfile),
                         icon: Icons.payments,
                         onTap: () => _navigateToEditPaymentLinks(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      // Selling tickets: connect Stripe / Mercado Pago (instant)
+                      // and confirm manual payments. GreenGo takes no fee.
+                      EditSectionCard(
+                        key: const ValueKey('edit-profile-get-paid'),
+                        title: AppLocalizations.of(context)!.tpGetPaidTitle,
+                        subtitle: AppLocalizations.of(context)!.tpGetPaidSubtitle,
+                        icon: Icons.account_balance_wallet_outlined,
+                        onTap: () => Navigator.of(context)
+                            .push(GetPaidScreen.route(activeProfile.userId)),
                       ),
                       // NOTE: Business / Venue entries were intentionally moved
                       // OUT of "Edit profile". They now live behind the single

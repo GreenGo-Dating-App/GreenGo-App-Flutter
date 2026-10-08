@@ -48,6 +48,11 @@ class EventModel extends Event {
     super.publishAt,
     super.ticketTiers = const [],
     super.communityId,
+    super.ticketProvider,
+    super.ticketLinkMethod,
+    super.ticketPaymentInstructions,
+    super.currencyCode,
+    super.maxTicketsPerUser,
   });
 
   /// Create from Event entity
@@ -101,6 +106,11 @@ class EventModel extends Event {
       recurrence: event.recurrence,
       publishAt: event.publishAt,
       ticketTiers: event.ticketTiers,
+      ticketProvider: event.ticketProvider,
+      ticketLinkMethod: event.ticketLinkMethod,
+      ticketPaymentInstructions: event.ticketPaymentInstructions,
+      currencyCode: event.currencyCode,
+      maxTicketsPerUser: event.maxTicketsPerUser,
     );
   }
 
@@ -170,6 +180,16 @@ class EventModel extends Event {
           (json['guestsAllowedPerAttendee'] as num?)?.toInt() ?? 0,
       seriesId: json['seriesId'] as String?,
       communityId: json['communityId'] as String?,
+      ticketProvider: json['ticketProvider'] as String?,
+      ticketLinkMethod: json['ticketLinkMethod'] as String?,
+      ticketPaymentInstructions: json['ticketPaymentInstructions'] as String?,
+      currencyCode: json['currencyCode'] as String?,
+      // Missing = default 4; null / 0 = no per-person limit.
+      maxTicketsPerUser: !json.containsKey('maxTicketsPerUser')
+          ? 4
+          : ((json['maxTicketsPerUser'] as num?)?.toInt() == 0
+              ? null
+              : (json['maxTicketsPerUser'] as num?)?.toInt()),
       recurrence: json['recurrence'] is Map
           ? EventRecurrence.fromMap(
               Map<String, dynamic>.from(json['recurrence'] as Map))
@@ -241,6 +261,11 @@ class EventModel extends Event {
       'seriesId': seriesId,
       // Community-owned events carry the owning community's id (null otherwise).
       'communityId': communityId,
+      'ticketProvider': ticketProvider,
+      'ticketLinkMethod': ticketLinkMethod,
+      'ticketPaymentInstructions': ticketPaymentInstructions,
+      'currencyCode': currencyCode,
+      'maxTicketsPerUser': maxTicketsPerUser,
       'recurrence': recurrence?.toMap(),
       // Draft & scheduled auto-publish (feeds gate on isLive using publishAt).
       'publishAt': publishAt != null ? Timestamp.fromDate(publishAt!) : null,

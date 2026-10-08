@@ -244,6 +244,7 @@ class PaymentMethodsList extends StatelessWidget {
     final l = AppLocalizations.of(context)!;
     final e = experience;
     final methods = [
+      if (e.acceptsOnline) PaymentMethod.online,
       if (e.acceptsCash) PaymentMethod.cash,
       if (e.acceptsLink) PaymentMethod.link,
     ];

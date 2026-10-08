@@ -156,11 +156,13 @@ class ExperienceL10n {
       switch (m) {
         PaymentMethod.cash => l.uexpMethodCash,
         PaymentMethod.link => l.uexpMethodLink,
+        PaymentMethod.online => l.tpPayInApp,
       };
 
   static IconData paymentMethodIcon(PaymentMethod m) => switch (m) {
         PaymentMethod.cash => Icons.payments_outlined,
         PaymentMethod.link => Icons.link_rounded,
+        PaymentMethod.online => Icons.lock_outline,
       };
 
   /// Localized percentage ("100%", "50 %" …).

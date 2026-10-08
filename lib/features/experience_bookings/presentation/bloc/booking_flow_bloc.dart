@@ -153,6 +153,7 @@ class BookingFlowState extends Equatable {
     final e = experience;
     if (e == null || e.isFree) return const [];
     return [
+      if (e.acceptsOnline) PaymentMethod.online,
       if (e.acceptsLink) PaymentMethod.link,
       if (e.acceptsCash) PaymentMethod.cash,
     ];

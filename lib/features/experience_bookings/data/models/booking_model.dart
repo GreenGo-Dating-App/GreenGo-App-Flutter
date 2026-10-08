@@ -48,6 +48,9 @@ class BookingModel {
           : null,
       guestMarkedPaidAt: experienceDateFrom(p['guestMarkedPaidAt']),
       hostConfirmedPaidAt: experienceDateFrom(p['hostConfirmedPaidAt']),
+      provider: _str(p['provider']),
+      status: _str(p['status']),
+      orderId: _str(p['orderId']),
     );
   }
 

@@ -72,7 +72,12 @@ enum CancellationPolicy {
 /// Paid experiences accept at least one; free ones none.
 enum PaymentMethod {
   cash,
-  link;
+  link,
+
+  /// Paid ticket bought INSIDE the app ([UserExperience.paymentProvider]:
+  /// Stripe / Mercado Pago instant, or the host's own method with host
+  /// confirmation). New paid listings use only this.
+  online;
 
   static PaymentMethod? tryWire(Object? v) {
     for (final m in PaymentMethod.values) {
@@ -132,6 +137,12 @@ class UserExperience extends Equatable {
     this.isFree = false,
     this.paymentLink,
     this.paymentMethods = const {},
+    this.paymentProvider,
+    this.paymentLinkMethod,
+    this.paymentInstructions,
+    this.pricingMode = 'per_person',
+    this.groupPrice,
+    this.maxTicketsPerUser = 4,
     this.availability,
     this.cancellationPolicy = CancellationPolicy.moderate,
     this.cancellationNotes,
@@ -191,6 +202,28 @@ class UserExperience extends Equatable {
   /// Accepted payment methods (empty for free experiences). Legacy docs
   /// without the field read as {link} when they carry a payment link.
   final Set<PaymentMethod> paymentMethods;
+
+  /// In-app ticket payment: 'stripe' | 'mercadopago' | 'link'.
+  final String? paymentProvider;
+
+  /// Link mode: Profile > Payment methods key, 'cash' or 'bankTransfer'.
+  final String? paymentLinkMethod;
+  final String? paymentInstructions;
+
+  /// 'per_person' (default) | 'per_group' (one [groupPrice] for a party of
+  /// up to [maxGroupSize]).
+  final String pricingMode;
+
+  /// per_group price in MINOR units (same currency).
+  final int? groupPrice;
+
+  /// Max tickets (per_group: group bookings) per person; null = no limit.
+  final int? maxTicketsPerUser;
+
+  bool get isPerGroup => pricingMode == 'per_group';
+
+  bool get acceptsOnline =>
+      !isFree && paymentMethods.contains(PaymentMethod.online) && paymentProvider != null;
 
   bool get acceptsCash => !isFree && paymentMethods.contains(PaymentMethod.cash);
   bool get acceptsLink =>
@@ -298,6 +331,8 @@ class UserExperience extends Equatable {
         isFree: true,
         paymentLink: null,
         paymentMethods: const {},
+        pricingMode: pricingMode,
+        maxTicketsPerUser: maxTicketsPerUser,
         availability: availability,
         cancellationPolicy: cancellationPolicy,
         cancellationNotes: cancellationNotes,
@@ -358,6 +393,12 @@ class UserExperience extends Equatable {
         isFree: isFree,
         paymentLink: paymentLink,
         paymentMethods: paymentMethods,
+        paymentProvider: paymentProvider,
+        paymentLinkMethod: paymentLinkMethod,
+        paymentInstructions: paymentInstructions,
+        pricingMode: pricingMode,
+        groupPrice: groupPrice,
+        maxTicketsPerUser: maxTicketsPerUser,
         availability: availability,
         cancellationPolicy: cancellationPolicy,
         cancellationNotes: cancellationNotes,
@@ -409,6 +450,12 @@ class UserExperience extends Equatable {
         isFree,
         paymentLink,
         paymentMethods,
+        paymentProvider,
+        paymentLinkMethod,
+        paymentInstructions,
+        pricingMode,
+        groupPrice,
+        maxTicketsPerUser,
         availability,
         cancellationPolicy,
         cancellationNotes,

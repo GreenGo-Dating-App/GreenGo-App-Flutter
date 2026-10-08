@@ -114,6 +114,20 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
     // Only a GreenGo EVENT ticket can open this door; everything is verified
     // by the server (signature, this event, RSVP, time window, door rights).
     final code = ScannedCheckInCode.parse(raw);
+    if (code is PaidTicketCode) {
+      final r = await _checkin.checkInPaidTicket(code, eventId: widget.event.id);
+      if (!mounted) return;
+      final label = [
+        if (r.ticketTypeName != null) r.ticketTypeName!.toUpperCase(),
+        r.name,
+      ].where((s) => s.isNotEmpty).join(' · ');
+      if (r.approved) {
+        _approved(l10n, label);
+      } else {
+        _denied(l10n, r.reasonText(l10n), name: label.isEmpty ? null : label);
+      }
+      return;
+    }
     if (code is! EventTicketCode || code.eventId != widget.event.id) {
       _denied(l10n, code == null ? l10n.eventInvalidTicket : l10n.checkinWrongPlace);
       return;

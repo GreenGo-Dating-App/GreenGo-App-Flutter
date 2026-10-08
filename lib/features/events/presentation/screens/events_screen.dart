@@ -1,3 +1,8 @@
+import '../../../ticket_payments/domain/ticket_payments.dart';
+import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
+import '../../../ticket_payments/presentation/screens/ticket_types_screen.dart';
+import '../../../ticket_payments/presentation/widgets/buy_ticket_sheet.dart';
+import '../../../ticket_payments/presentation/widgets/ticket_payment_selector.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
@@ -3037,6 +3042,37 @@ class EventDetailsScreen extends StatelessWidget {
                 // A finished event cannot be joined, however the button
                 // would otherwise read.
                 final enabled = !isGoing && !isWaitlisted && !event.hasEnded;
+                // Paid events are sold as tickets (Stripe / MP / organizer link);
+                // a paid event without a sale mode is not on sale yet.
+                if (!event.isFree) {
+                  final organizer = event.isOwner(currentUserId);
+                  final onSale = event.sellsTickets && !event.hasEnded;
+                  return Expanded(
+                    child: ElevatedButton(
+                      key: const ValueKey('event-buy-ticket'),
+                      onPressed: organizer
+                          ? () => Navigator.of(context).push(GetPaidScreen.route(currentUserId))
+                          : (onSale
+                              ? () => BuyTicketSheet.show(context, event: event, uid: currentUserId)
+                              : null),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.richGold,
+                        foregroundColor: AppColors.deepBlack,
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                      ),
+                      child: Text(
+                        organizer
+                            ? l10n.tpGetPaidTitle
+                            : (event.hasEnded
+                                ? l10n.eventsEnded
+                                : (onSale
+                                    ? (isGoing ? l10n.tpBuyMoreTickets : l10n.tpBuyTickets)
+                                    : l10n.tpNotOnSaleYet)),
+                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  );
+                }
                 return Expanded(
                   child: ElevatedButton(
                     onPressed:
@@ -3510,6 +3546,9 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   DateTime _endDate = DateTime.now().add(const Duration(days: 1, hours: 2));
   bool _isFree = true;
   final _priceController = TextEditingController(text: '10');
+  // Paid tickets: how buyers pay (instant Stripe / MP or manual link).
+  TicketPaymentChoice _ticket = const TicketPaymentChoice();
+  final _maxPerUserController = TextEditingController(text: '4');
   String _currency = '\$';
   static const List<String> _currencies = ['\$', '€', '£', 'R\$', '¥'];
   EventVisibility _visibility = EventVisibility.public;
@@ -3806,6 +3845,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       _priceController.text = e.price!.round().toString();
     }
     _currency = e.currency ?? '\$';
+    _ticket = TicketPaymentChoice(
+      provider: TicketProvider.fromWire(e.ticketProvider),
+      linkMethod: e.ticketLinkMethod,
+      instructions: e.ticketPaymentInstructions,
+    );
+    _maxPerUserController.text = e.maxTicketsPerUser?.toString() ?? '';
     _visibility = e.visibility;
     _attendeeListVisibility = e.attendeeListVisibility;
     _isUnlimited = e.isUnlimited;
@@ -3838,6 +3883,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _descriptionController.dispose();
     _locationController.dispose();
     _maxAttendeesController.dispose();
+    _maxPerUserController.dispose();
     _languagePairsController.dispose();
     _linkUrlController.dispose();
     _linkLabelController.dispose();
@@ -4389,10 +4435,39 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                         }
                         return null;
                       },
+                      onChanged: (_) => setState(() {}),
                     ),
                   ),
                 ],
               ),
+              const SizedBox(height: 12),
+              TextFormField(
+                key: const ValueKey('event-max-per-user'),
+                controller: _maxPerUserController,
+                style: const TextStyle(color: AppColors.textPrimary),
+                keyboardType: TextInputType.number,
+                decoration: _inputDecoration(
+                    AppLocalizations.of(context)!.tpMaxTicketsPerUser),
+              ),
+              const SizedBox(height: 12),
+              TicketPaymentSelector(
+                uid: widget.currentUserId,
+                value: _ticket,
+                onChanged: (c) => setState(() => _ticket = c),
+                capacity: _isUnlimited ? null : int.tryParse(_maxAttendeesController.text),
+                price: double.tryParse(_priceController.text),
+                currency: _currency,
+              ),
+              if (_isEditing)
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: TextButton.icon(
+                    onPressed: () => Navigator.of(context).push(TicketTypesScreen.route(
+                        widget.existing!.id, isoCurrencyFor(_currency) ?? 'usd')),
+                    icon: const Icon(Icons.style_outlined, color: AppColors.richGold),
+                    label: Text(AppLocalizations.of(context)!.tpTicketTypes),
+                  ),
+                ),
             ],
             const SizedBox(height: 16),
             // External links (tickets, website, map…)
@@ -4969,6 +5044,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
     final maxAttendees =
         _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20);
+    if (!_isFree && (!_ticket.isComplete || needsReconnect(_ticket))) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!.tpChooseHowToGetPaid)));
+      return;
+    }
+    final maxPerUser = int.tryParse(_maxPerUserController.text.trim());
     final price = _isFree
         ? null
         : (double.tryParse(_priceController.text)?.clamp(1, 1000))?.toDouble();
@@ -5002,6 +5083,14 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         maxAttendees: maxAttendees,
         price: price,
         currency: _isFree ? null : _currency,
+        ticketProvider: _isFree ? null : _ticket.provider?.wire,
+        ticketLinkMethod: _ticket.provider == TicketProvider.link ? _ticket.linkMethod : null,
+        ticketPaymentInstructions:
+            _ticket.provider == TicketProvider.link ? _ticket.instructions : null,
+        currencyCode: _isFree ? null : isoCurrencyFor(_currency),
+        clearTicketing: _isFree,
+        maxTicketsPerUser: maxPerUser == 0 ? null : maxPerUser,
+        clearMaxTicketsPerUser: maxPerUser == null || maxPerUser == 0,
         visibility: _visibility,
         attendeeListVisibility: _attendeeListVisibility,
         externalLinks: _externalLinks,
@@ -5044,6 +5133,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       maxAttendees: maxAttendees,
       price: price,
       currency: _isFree ? null : _currency,
+      ticketProvider: _isFree ? null : _ticket.provider?.wire,
+      ticketLinkMethod: _ticket.provider == TicketProvider.link ? _ticket.linkMethod : null,
+      ticketPaymentInstructions:
+          _ticket.provider == TicketProvider.link ? _ticket.instructions : null,
+      currencyCode: _isFree ? null : isoCurrencyFor(_currency),
+      maxTicketsPerUser: maxPerUser == 0 ? null : maxPerUser,
       visibility: _visibility,
       attendeeListVisibility: _attendeeListVisibility,
       externalLinks: _externalLinks,

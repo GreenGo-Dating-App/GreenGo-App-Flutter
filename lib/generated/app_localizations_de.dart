@@ -16799,4 +16799,536 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get aiServicesSyncPending =>
       'Auf diesem Gerät gespeichert. Sobald du online bist, wird es auf unseren Servern erfasst.';
+
+  @override
+  String get tpAddTicketType => 'Ticketart hinzufügen';
+
+  @override
+  String get tpAdviceLarge =>
+      'Viele Teilnehmende erwartet: Sofortbestätigung empfohlen. Tickets werden automatisch bestätigt, du musst nicht jede Zahlung prüfen.';
+
+  @override
+  String get tpAdviceSmall =>
+      'Kleine Gruppe: Am einfachsten ist ein Zahlungslink – ohne Einrichtung, du bestätigst jede Zahlung mit einem Tipp.';
+
+  @override
+  String get tpAmountLabel => 'Betrag';
+
+  @override
+  String get tpAttachReceipt => 'Beleg anhängen (optional)';
+
+  @override
+  String get tpAwaitingOrganizerInfo =>
+      'Du hast dem Veranstalter die Zahlung gemeldet. Dein Ticket erscheint hier, sobald er bestätigt.';
+
+  @override
+  String get tpBadgeBrazil => 'Empfohlen in Brasilien';
+
+  @override
+  String get tpBadgeNoSetup => 'Ohne Einrichtung';
+
+  @override
+  String get tpBadgeRecommended => 'Empfohlen';
+
+  @override
+  String get tpBankInstructionsLabel => 'Bankdaten und Hinweise';
+
+  @override
+  String tpBlockMinimum(String provider, String amount) {
+    return '$provider verlangt mindestens $amount pro Ticket.';
+  }
+
+  @override
+  String tpBlockMpCurrency(String currency) {
+    return 'Mercado Pago rechnet nur in $currency ab: Preis auf $currency ändern oder Stripe nutzen.';
+  }
+
+  @override
+  String get tpBlockMpCurrencyUnknown =>
+      'Mercado Pago rechnet nur in der Landeswährung deines Kontos ab. Nutze diese Währung oder Stripe.';
+
+  @override
+  String get tpBlockNotConfigured => 'Noch nicht verfügbar.';
+
+  @override
+  String tpBlockNotConnected(String provider) {
+    return 'Verbinde $provider, um es zu nutzen.';
+  }
+
+  @override
+  String get tpBuyMoreTickets => 'Weitere Tickets kaufen';
+
+  @override
+  String get tpBuyTickets => 'Tickets kaufen';
+
+  @override
+  String tpCanBuyMore(int count) {
+    return 'Du kannst noch $count Tickets kaufen';
+  }
+
+  @override
+  String get tpCanBuyUnlimited => 'Kein Limit pro Person';
+
+  @override
+  String get tpCancelOrder => 'Abbrechen';
+
+  @override
+  String get tpCashInstructionsLabel => 'Wo und wann bar zahlen (optional)';
+
+  @override
+  String get tpChooseHowToGetPaid =>
+      'Wähle, wie Käufer für dieses kostenpflichtige Angebot bezahlen.';
+
+  @override
+  String get tpClose => 'Schließen';
+
+  @override
+  String get tpCodeHint =>
+      'Gib diesen Code im Verwendungszweck an, damit der Veranstalter deine Zahlung findet.';
+
+  @override
+  String get tpCodeLabel => 'Zahlungscode';
+
+  @override
+  String get tpConfirm => 'Bestätigen';
+
+  @override
+  String tpConfirmSelected(int count) {
+    return 'Auswahl bestätigen ($count)';
+  }
+
+  @override
+  String tpConfirmedCount(int count) {
+    return '$count Zahlungen bestätigt';
+  }
+
+  @override
+  String tpConnectProvider(String provider) {
+    return '$provider verbinden';
+  }
+
+  @override
+  String get tpConsentGuideInstant =>
+      'Du zahlst in der App über einen sicheren Checkout. Ticket und QR erscheinen, sobald die Zahlung bestätigt ist. Erstattungen erfolgen durch den Veranstalter.';
+
+  @override
+  String get tpConsentGuideManual =>
+      'Du zahlst direkt an den Gastgeber mit dessen Zahlungsmethode und einem Code. GreenGo prüft die Zahlung nicht: Der Gastgeber bestätigt sie, dann erscheint dein QR.';
+
+  @override
+  String get tpContinueSetup => 'Einrichtung fortsetzen';
+
+  @override
+  String tpContinueToPay(String amount) {
+    return 'Weiter · $amount';
+  }
+
+  @override
+  String get tpCopied => 'Kopiert';
+
+  @override
+  String get tpCopy => 'Kopieren';
+
+  @override
+  String get tpEditTicketType => 'Ticketart bearbeiten';
+
+  @override
+  String get tpErrAlreadyHasTicket => 'Du hast dafür bereits ein Ticket.';
+
+  @override
+  String get tpErrEnded => 'Der Verkauf ist beendet.';
+
+  @override
+  String get tpErrGeneric =>
+      'Etwas ist schiefgelaufen. Bitte versuche es erneut.';
+
+  @override
+  String get tpErrLimit => 'Du hast das Ticketlimit pro Person erreicht.';
+
+  @override
+  String get tpErrMinimum =>
+      'Der Preis liegt unter dem Minimum des Zahlungsanbieters.';
+
+  @override
+  String get tpErrNotAllowed => 'Das ist dir nicht erlaubt.';
+
+  @override
+  String get tpErrNotOnSale =>
+      'Tickets sind noch nicht im Verkauf: Der Veranstalter hat die Zahlung noch nicht eingerichtet.';
+
+  @override
+  String get tpErrOwnListing =>
+      'Du kannst keine Tickets für dein eigenes Angebot kaufen.';
+
+  @override
+  String get tpErrProvider =>
+      'Der Zahlungsanbieter antwortet nicht. Versuche es gleich noch einmal.';
+
+  @override
+  String get tpErrSoldOut => 'Ausverkauft – nicht genug Plätze frei.';
+
+  @override
+  String get tpFree => 'Kostenlos';
+
+  @override
+  String get tpGetPaidIntro =>
+      'Das Geld geht direkt auf dein eigenes Konto. GreenGo nimmt keine Gebühr auf Ticketverkäufe.';
+
+  @override
+  String get tpGetPaidManualInfo =>
+      'Ohne Einrichtung: Wähle im Event oder Erlebnis eine deiner Zahlungsmethoden (Profil) oder bar / Überweisung und bestätige jede Zahlung selbst.';
+
+  @override
+  String get tpGetPaidSubtitle =>
+      'Tickets verkaufen: Stripe oder Mercado Pago verbinden, Zahlungen bestätigen';
+
+  @override
+  String get tpGetPaidTitle => 'Bezahlt werden';
+
+  @override
+  String tpGroupOf(int count) {
+    return 'Gruppe mit $count Personen';
+  }
+
+  @override
+  String tpGroupPreview(String price, int size) {
+    return '$price für eine Gruppe von bis zu $size';
+  }
+
+  @override
+  String get tpGroupPrice => 'Preis pro Gruppe';
+
+  @override
+  String tpHoldCountdown(String time) {
+    return 'Dein Platz ist noch $time reserviert';
+  }
+
+  @override
+  String get tpInstantOptional => 'Sofortbestätigung (optional)';
+
+  @override
+  String get tpInstantSubtitle =>
+      'Käufer zahlen in der App; Tickets werden automatisch bestätigt.';
+
+  @override
+  String get tpInstantTitle => 'Sofortbestätigung';
+
+  @override
+  String get tpIvePaid => 'Ich habe bezahlt';
+
+  @override
+  String get tpLegacyPaymentPrompt =>
+      'Dieses Angebot nutzte eine alte Zahlungsmethode. Wähle, wie Gäste zahlen, um weiter zu verkaufen.';
+
+  @override
+  String get tpManualAddMethodsHint =>
+      'Füge Pix, PayPal… unter Profil > Zahlungsmethoden hinzu, um sie hier zu sehen.';
+
+  @override
+  String get tpManualDisclaimer =>
+      'GreenGo prüft diese Zahlungen nicht: Der Veranstalter ist für die Bestätigung verantwortlich.';
+
+  @override
+  String tpManualLargeWarning(String count) {
+    return 'Bei $count Personen musst du jede Zahlung von Hand bestätigen.';
+  }
+
+  @override
+  String get tpManualMethodLabel => 'Zahlungsmethode';
+
+  @override
+  String get tpManualSubtitle =>
+      'Deine eigene Zahlungsmethode; du bestätigst jede Zahlung mit einem Tipp.';
+
+  @override
+  String get tpManualTitle => 'Zahlungslink – du bestätigst';
+
+  @override
+  String get tpMaxGroupBookingsPerUser => 'Max. Gruppenbuchungen pro Person';
+
+  @override
+  String get tpMaxTicketsPerUser => 'Max. Tickets pro Person';
+
+  @override
+  String get tpMethodBankTransfer => 'Banküberweisung';
+
+  @override
+  String get tpMethodCash => 'Bar (vor dem Event)';
+
+  @override
+  String tpMpCurrencyInfo(String currency) {
+    return 'Abrechnung in $currency';
+  }
+
+  @override
+  String get tpMpDescription =>
+      'Pix, Karten und Mercado-Pago-Guthaben. Käufer brauchen kein Mercado-Pago-Konto.';
+
+  @override
+  String get tpMyPurchases => 'Meine Käufe';
+
+  @override
+  String get tpNoFeeNote =>
+      'GreenGo nimmt keine Gebühr: Das Geld geht direkt an dich.';
+
+  @override
+  String get tpNoLimitHint => 'Leer = kein Limit';
+
+  @override
+  String get tpNoPurchases => 'Noch keine Käufe.';
+
+  @override
+  String get tpNotOnSaleYet => 'Noch nicht im Verkauf';
+
+  @override
+  String get tpOpenPaymentLink => 'Zahlungslink öffnen';
+
+  @override
+  String get tpOpenProviderSettings => 'Kontodaten aktualisieren';
+
+  @override
+  String get tpOrderAwaitingConfirmation =>
+      'Warten auf die Bestätigung des Veranstalters…';
+
+  @override
+  String get tpOrderCancelled => 'Bestellung storniert';
+
+  @override
+  String get tpOrderClosedInfo =>
+      'Diese Bestellung ist abgeschlossen. Du kannst über das Event oder Erlebnis neu kaufen.';
+
+  @override
+  String get tpOrderDisputed => 'Zahlung angefochten – Ticket ungültig';
+
+  @override
+  String get tpOrderExpired => 'Reservierung abgelaufen';
+
+  @override
+  String get tpOrderFailed => 'Zahlung fehlgeschlagen';
+
+  @override
+  String get tpOrderPaid => 'Bezahlt';
+
+  @override
+  String get tpOrderPendingPayment => 'Warten auf deine Zahlung';
+
+  @override
+  String get tpOrderRefunded => 'Erstattet – Ticket nicht mehr gültig';
+
+  @override
+  String get tpOrderRejected =>
+      'Der Veranstalter hat deine Zahlung nicht bestätigt';
+
+  @override
+  String get tpOrderTitle => 'Deine Tickets';
+
+  @override
+  String get tpOrderWaitingProvider => 'Warten auf die Zahlungsbestätigung…';
+
+  @override
+  String get tpPayAgain => 'Erneut bezahlen';
+
+  @override
+  String get tpPayInApp => 'In der App bezahlen';
+
+  @override
+  String get tpPayInAppInfo =>
+      'Bezahle in der App, sobald der Gastgeber annimmt; dein QR erscheint nach der Bestätigung.';
+
+  @override
+  String get tpPayNow => 'Jetzt bezahlen';
+
+  @override
+  String tpPayWith(String method) {
+    return 'Mit $method bezahlen';
+  }
+
+  @override
+  String get tpPaymentConfirmed =>
+      'Zahlung bestätigt – deine Tickets sind bereit';
+
+  @override
+  String get tpPerGroup => 'Pro Gruppe';
+
+  @override
+  String get tpPerGroupInfo =>
+      'Ein Festpreis pro Gruppe (z. B. Privattour), egal wie groß bis zum Maximum.';
+
+  @override
+  String get tpPerPerson => 'Pro Person';
+
+  @override
+  String get tpPerPersonInfo =>
+      'Jede Person zahlt den Preis; ein Ticket pro Person.';
+
+  @override
+  String get tpPixHint =>
+      'Mit Pix bezahlt? Die Bestätigung dauert meist nur Sekunden.';
+
+  @override
+  String get tpReceiptAttached => 'Beleg angehängt';
+
+  @override
+  String get tpReconnectBanner =>
+      'Verbinde Mercado Pago / Stripe, um Tickets mit automatischer Bestätigung zu verkaufen. Eingefügte Stripe- oder Mercado-Pago-Links gehen nicht für Tickets.';
+
+  @override
+  String get tpRefresh => 'Aktualisieren';
+
+  @override
+  String get tpReject => 'Nicht erhalten';
+
+  @override
+  String get tpRejectReason => 'Grund (wird dem Käufer angezeigt)';
+
+  @override
+  String get tpRejectTitle => 'Zahlung nicht erhalten?';
+
+  @override
+  String get tpSalesEnd => 'Verkaufsende';
+
+  @override
+  String get tpSalesStart => 'Verkaufsstart';
+
+  @override
+  String get tpSave => 'Speichern';
+
+  @override
+  String get tpScanNotPaid => 'Nicht bezahlt – kein gültiges Ticket';
+
+  @override
+  String get tpScanTicketNotValid =>
+      'Ticket erstattet oder storniert – ungültig';
+
+  @override
+  String get tpSelectorTitle => 'Wie zahlen die Gäste?';
+
+  @override
+  String get tpShareTicket => 'Dieses Ticket teilen';
+
+  @override
+  String tpShareTicketText(String title, int index, int total) {
+    return 'Ticket $index/$total für $title auf GreenGo. Zeige diesen QR am Eingang (einmal gültig).';
+  }
+
+  @override
+  String get tpStatusNotConnected => 'Nicht verbunden';
+
+  @override
+  String get tpStatusPending => 'Prüfung ausstehend';
+
+  @override
+  String get tpStatusReady => 'Bereit';
+
+  @override
+  String get tpStatusReconnect => 'Neu verbinden';
+
+  @override
+  String get tpStopSelling => 'Verkauf stoppen';
+
+  @override
+  String get tpStripeDescription =>
+      'Karten, Apple Pay und Google Pay weltweit. Käufer brauchen kein Konto.';
+
+  @override
+  String tpTicketIndex(int index, int total) {
+    return 'Ticket $index von $total';
+  }
+
+  @override
+  String get tpTicketInvalid => 'Dieses Ticket ist nicht mehr gültig.';
+
+  @override
+  String get tpTicketTypes => 'Ticketarten';
+
+  @override
+  String get tpTicketTypesEmpty =>
+      'Keine Ticketarten: Der Eventpreis ist das einzige Ticket. Füge Arten wie VIP oder Frühbucher hinzu.';
+
+  @override
+  String get tpTicketUsed => 'Bereits am Eingang verwendet';
+
+  @override
+  String tpTicketsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Tickets',
+      one: '1 Ticket',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tpTiredOfConfirming =>
+      'Keine Lust mehr zu bestätigen? Verbinde Mercado Pago oder Stripe für automatische Bestätigung.';
+
+  @override
+  String get tpToConfirmEmpty => 'Keine Zahlungen warten auf dich.';
+
+  @override
+  String get tpToConfirmInfo =>
+      'Prüfe Betrag und GG-Code auf deinem Konto, bevor du bestätigst. Die Bestätigung stellt die Tickets aus.';
+
+  @override
+  String get tpToConfirmTitle => 'Zu bestätigende Zahlungen';
+
+  @override
+  String get tpTotal => 'Gesamt';
+
+  @override
+  String get tpTypeEnded => 'Verkauf beendet';
+
+  @override
+  String get tpTypeHasSalesWarning =>
+      'Von dieser Art wurden schon Tickets verkauft: Sie behalten Preis und Art.';
+
+  @override
+  String get tpTypeHidden => 'Versteckt';
+
+  @override
+  String get tpTypeMaxPerUser => 'Max. pro Person';
+
+  @override
+  String get tpTypeName => 'Name (z. B. VIP)';
+
+  @override
+  String get tpTypeNotStarted => 'Verkauf noch nicht gestartet';
+
+  @override
+  String tpTypeOnlyLeft(int count) {
+    return 'Nur noch $count';
+  }
+
+  @override
+  String get tpTypePerks => 'Beschreibung / Vorteile';
+
+  @override
+  String get tpTypePrice => 'Preis';
+
+  @override
+  String get tpTypeQuantity => 'Anzahl (leer = Eventkapazität)';
+
+  @override
+  String get tpTypeSelling => 'Im Verkauf';
+
+  @override
+  String tpTypeSold(int sold, String total) {
+    return '$sold/$total verkauft';
+  }
+
+  @override
+  String get tpTypeSoldOut => 'Ausverkauft';
+
+  @override
+  String get tpTypeUnavailable => 'Nicht im Verkauf';
+
+  @override
+  String get tpViewPayment => 'Zahlung ansehen';
+
+  @override
+  String get tpViewReceipt => 'Beleg';
+
+  @override
+  String get tpViewTickets => 'Tickets ansehen';
 }

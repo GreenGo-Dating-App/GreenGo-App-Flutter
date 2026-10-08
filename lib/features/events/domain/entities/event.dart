@@ -158,6 +158,11 @@ class Event extends Equatable {
     this.publishAt,
     this.ticketTiers = const [],
     this.communityId,
+    this.ticketProvider,
+    this.ticketLinkMethod,
+    this.ticketPaymentInstructions,
+    this.currencyCode,
+    this.maxTicketsPerUser = 4,
   });
   final String id;
   final String organizerId;
@@ -244,6 +249,29 @@ class Event extends Equatable {
   /// Optional admission tiers. Empty = single implicit tier using [price] /
   /// [maxAttendees]; adding tiers drives per-tier pricing + capacity + waitlist.
   final List<TicketTier> ticketTiers;
+
+  // ---- Paid tickets (functions/src/ticket_payments) ----
+  /// How a paid event is sold: 'link' (organizer's own payment method,
+  /// organizer confirms), 'stripe' / 'mercadopago' (instant, connected
+  /// account). Null on free events and on legacy coin-priced events.
+  final String? ticketProvider;
+
+  /// Link mode: Profile > Payment methods key ('pix', 'paypal', ...) or
+  /// 'cash' / 'bankTransfer'.
+  final String? ticketLinkMethod;
+
+  /// Link mode: extra payment instructions (required for bank transfer).
+  final String? ticketPaymentInstructions;
+
+  /// ISO 4217 code of [price] (lower case), e.g. 'brl'. [currency] keeps the
+  /// display symbol for older clients.
+  final String? currencyCode;
+
+  /// Max paid tickets one person may buy (null = no limit; default 4).
+  final int? maxTicketsPerUser;
+
+  /// Paid event that can actually be bought (a ticket provider is set).
+  bool get sellsTickets => !isFree && ticketProvider != null;
 
   /// Whether attendees are permitted to bring at least one guest.
   bool get guestsAllowed => guestsAllowedPerAttendee > 0;
@@ -391,6 +419,11 @@ class Event extends Equatable {
         publishAt,
         ticketTiers,
         communityId,
+        ticketProvider,
+        ticketLinkMethod,
+        ticketPaymentInstructions,
+        currencyCode,
+        maxTicketsPerUser,
       ];
 
   Event copyWith({
@@ -442,6 +475,13 @@ class Event extends Equatable {
     DateTime? publishAt,
     List<TicketTier>? ticketTiers,
     String? communityId,
+    String? ticketProvider,
+    String? ticketLinkMethod,
+    String? ticketPaymentInstructions,
+    String? currencyCode,
+    int? maxTicketsPerUser,
+    bool clearMaxTicketsPerUser = false,
+    bool clearTicketing = false,
     bool clearCommunityId = false,
     // Drops latitude/longitude/city/country (a manually typed location that
     // could not be geocoded). Explicit values passed alongside are ignored.
@@ -499,6 +539,17 @@ class Event extends Equatable {
       ticketTiers: ticketTiers ?? this.ticketTiers,
       communityId:
           clearCommunityId ? null : (communityId ?? this.communityId),
+      ticketProvider:
+          clearTicketing ? null : (ticketProvider ?? this.ticketProvider),
+      ticketLinkMethod:
+          clearTicketing ? null : (ticketLinkMethod ?? this.ticketLinkMethod),
+      ticketPaymentInstructions: clearTicketing
+          ? null
+          : (ticketPaymentInstructions ?? this.ticketPaymentInstructions),
+      currencyCode: currencyCode ?? this.currencyCode,
+      maxTicketsPerUser: clearMaxTicketsPerUser
+          ? null
+          : (maxTicketsPerUser ?? this.maxTicketsPerUser),
     );
   }
 }

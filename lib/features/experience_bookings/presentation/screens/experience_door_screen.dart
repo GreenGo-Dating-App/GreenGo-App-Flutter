@@ -93,6 +93,20 @@ class _ExperienceDoorScannerScreenState
   Future<void> _handle(String raw) async {
     final l = AppLocalizations.of(context)!;
     final code = ScannedCheckInCode.parse(raw);
+    if (code is PaidTicketCode) {
+      final r = await _checkin.checkInPaidTicket(code, experienceId: widget.experience.id);
+      if (!mounted) return;
+      if (r.approved) {
+        setState(() => _checkedInNow++);
+        _result(true, l.scanResultApproved,
+            name: r.name,
+            detail: r.partySize > 1 ? l.tpGroupOf(r.partySize) : null);
+      } else {
+        _result(false, l.scanResultDenied,
+            name: r.name.isEmpty ? null : r.name, detail: r.reasonText(l));
+      }
+      return;
+    }
     if (code is! BookingTicketCode) {
       _result(false, l.scanResultDenied,
           detail: code == null ? l.bkErrInvalidCode : l.checkinWrongPlace);

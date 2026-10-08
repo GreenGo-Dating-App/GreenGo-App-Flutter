@@ -343,6 +343,9 @@ class BookingsRemoteDataSource {
         return BookingCheckInCode(
             bookingId: bookingId, code: cached.code, qrPayload: cached.raw);
       }
+      if (cached is PaidTicketCode) {
+        return BookingCheckInCode(bookingId: bookingId, code: '', qrPayload: cached.raw);
+      }
       rethrow;
     }
   }

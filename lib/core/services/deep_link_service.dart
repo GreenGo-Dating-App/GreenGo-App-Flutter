@@ -1,3 +1,5 @@
+import '../../features/ticket_payments/presentation/screens/get_paid_screen.dart';
+import '../../features/ticket_payments/presentation/screens/ticket_order_screen.dart';
 import 'dart:async';
 
 import 'package:app_links/app_links.dart';
@@ -206,6 +208,9 @@ class DeepLinkService {
       if (kind == 'u') return DeepLinkTarget(DeepLinkKind.profile, id);
       if (kind == 'e') return DeepLinkTarget(DeepLinkKind.event, id);
       if (kind == 'c') return DeepLinkTarget(DeepLinkKind.community, id);
+      // Ticket order (checkout return page) and "Get paid" (onboarding return).
+      if (kind == 't') return DeepLinkTarget(DeepLinkKind.ticketOrder, id);
+      if (kind == 'pay') return DeepLinkTarget(DeepLinkKind.getPaid, id);
     }
     return null;
   }
@@ -248,6 +253,10 @@ class DeepLinkService {
       );
     } else if (target.kind == DeepLinkKind.community) {
       _openCommunity(context, target.id, currentUserId);
+    } else if (target.kind == DeepLinkKind.ticketOrder) {
+      Navigator.of(context).push(TicketOrderScreen.route(target.id));
+    } else if (target.kind == DeepLinkKind.getPaid) {
+      Navigator.of(context).push(GetPaidScreen.route(currentUserId));
     } else {
       Navigator.of(context).push(
         EventDetailLoaderScreen.route(
@@ -290,7 +299,7 @@ class DeepLinkService {
   }
 }
 
-enum DeepLinkKind { profile, event, community }
+enum DeepLinkKind { profile, event, community, ticketOrder, getPaid }
 
 @immutable
 class DeepLinkTarget {

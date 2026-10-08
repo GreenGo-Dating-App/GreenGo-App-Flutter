@@ -81,7 +81,12 @@ class ExperienceDraft {
     this.paymentType = PaymentLinkType.pix,
     this.paymentValue = '',
     this.paymentMethods = const {PaymentMethod.link},
+    this.ticketProviderComplete = true,
   });
+
+  /// In-app tickets ([PaymentMethod.online]): a provider (and, for manual
+  /// confirmation, a method) is chosen.
+  final bool ticketProviderComplete;
 
   final String title;
   final String description;
@@ -218,7 +223,9 @@ class ExperienceValidator {
       if (d.paymentMethods.isEmpty) {
         add(ExperienceFieldError.paymentMethodsRequired);
       }
-      if (d.paymentMethods.contains(PaymentMethod.link)) {
+      if (d.paymentMethods.contains(PaymentMethod.online)) {
+        if (!d.ticketProviderComplete) add(ExperienceFieldError.paymentMethodsRequired);
+      } else if (d.paymentMethods.contains(PaymentMethod.link)) {
         add(paymentLink(false, d.paymentType, d.paymentValue));
       }
     }

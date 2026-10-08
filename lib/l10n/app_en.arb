@@ -8323,5 +8323,718 @@
   "aiServicesSyncPending": "Saved on this device. It will be recorded on our servers as soon as you are online.",
   "@aiServicesSyncPending": {
     "description": "Snackbar when the choice could not reach the server yet"
+  },
+  "tpAddTicketType": "Add ticket type",
+  "@tpAddTicketType": {
+    "description": "Ticket payments"
+  },
+  "tpAdviceLarge": "Many people expected: instant confirmation is recommended. Tickets are confirmed automatically, so you don't have to check every payment.",
+  "@tpAdviceLarge": {
+    "description": "Ticket payments"
+  },
+  "tpAdviceSmall": "Small group: the simplest is a payment link — no setup, you confirm each payment with one tap.",
+  "@tpAdviceSmall": {
+    "description": "Ticket payments"
+  },
+  "tpAmountLabel": "Amount",
+  "@tpAmountLabel": {
+    "description": "Ticket payments"
+  },
+  "tpAttachReceipt": "Attach receipt (optional)",
+  "@tpAttachReceipt": {
+    "description": "Ticket payments"
+  },
+  "tpAwaitingOrganizerInfo": "You told the organizer you paid. Your ticket appears here as soon as they confirm.",
+  "@tpAwaitingOrganizerInfo": {
+    "description": "Ticket payments"
+  },
+  "tpBadgeBrazil": "Recommended in Brazil",
+  "@tpBadgeBrazil": {
+    "description": "Ticket payments"
+  },
+  "tpBadgeNoSetup": "No setup",
+  "@tpBadgeNoSetup": {
+    "description": "Ticket payments"
+  },
+  "tpBadgeRecommended": "Recommended",
+  "@tpBadgeRecommended": {
+    "description": "Ticket payments"
+  },
+  "tpBankInstructionsLabel": "Bank details and instructions",
+  "@tpBankInstructionsLabel": {
+    "description": "Ticket payments"
+  },
+  "tpBlockMinimum": "{provider} needs at least {amount} per ticket.",
+  "@tpBlockMinimum": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "tpBlockMpCurrency": "Mercado Pago only charges in {currency}: change the price to {currency} or use Stripe.",
+  "@tpBlockMpCurrency": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "tpBlockMpCurrencyUnknown": "Mercado Pago only charges in your account's local currency. Use that currency or Stripe.",
+  "@tpBlockMpCurrencyUnknown": {
+    "description": "Ticket payments"
+  },
+  "tpBlockNotConfigured": "Not available yet.",
+  "@tpBlockNotConfigured": {
+    "description": "Ticket payments"
+  },
+  "tpBlockNotConnected": "Connect {provider} to use it.",
+  "@tpBlockNotConnected": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  },
+  "tpBuyMoreTickets": "Buy more tickets",
+  "@tpBuyMoreTickets": {
+    "description": "Ticket payments"
+  },
+  "tpBuyTickets": "Buy tickets",
+  "@tpBuyTickets": {
+    "description": "Ticket payments"
+  },
+  "tpCanBuyMore": "You can buy {count} more tickets",
+  "@tpCanBuyMore": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpCanBuyUnlimited": "No limit per person",
+  "@tpCanBuyUnlimited": {
+    "description": "Ticket payments"
+  },
+  "tpCancelOrder": "Cancel",
+  "@tpCancelOrder": {
+    "description": "Ticket payments"
+  },
+  "tpCashInstructionsLabel": "Where and when to pay in cash (optional)",
+  "@tpCashInstructionsLabel": {
+    "description": "Ticket payments"
+  },
+  "tpChooseHowToGetPaid": "Choose how buyers pay for this paid listing.",
+  "@tpChooseHowToGetPaid": {
+    "description": "Ticket payments"
+  },
+  "tpClose": "Close",
+  "@tpClose": {
+    "description": "Ticket payments"
+  },
+  "tpCodeHint": "Put this code in the payment description so the organizer can find your payment.",
+  "@tpCodeHint": {
+    "description": "Ticket payments"
+  },
+  "tpCodeLabel": "Payment code",
+  "@tpCodeLabel": {
+    "description": "Ticket payments"
+  },
+  "tpConfirm": "Confirm",
+  "@tpConfirm": {
+    "description": "Ticket payments"
+  },
+  "tpConfirmSelected": "Confirm selected ({count})",
+  "@tpConfirmSelected": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpConfirmedCount": "{count} payments confirmed",
+  "@tpConfirmedCount": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpConnectProvider": "Connect {provider}",
+  "@tpConnectProvider": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  },
+  "tpConsentGuideInstant": "You pay inside the app with a secure checkout. Your ticket and QR appear as soon as the payment is confirmed. Refunds are made by the organizer.",
+  "@tpConsentGuideInstant": {
+    "description": "Ticket payments"
+  },
+  "tpConsentGuideManual": "You pay the host directly with their payment method and a code. GreenGo does not verify this payment: the host confirms it, then your QR appears.",
+  "@tpConsentGuideManual": {
+    "description": "Ticket payments"
+  },
+  "tpContinueSetup": "Continue setup",
+  "@tpContinueSetup": {
+    "description": "Ticket payments"
+  },
+  "tpContinueToPay": "Continue · {amount}",
+  "@tpContinueToPay": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "tpCopied": "Copied",
+  "@tpCopied": {
+    "description": "Ticket payments"
+  },
+  "tpCopy": "Copy",
+  "@tpCopy": {
+    "description": "Ticket payments"
+  },
+  "tpEditTicketType": "Edit ticket type",
+  "@tpEditTicketType": {
+    "description": "Ticket payments"
+  },
+  "tpErrAlreadyHasTicket": "You already have a ticket for this.",
+  "@tpErrAlreadyHasTicket": {
+    "description": "Ticket payments"
+  },
+  "tpErrEnded": "Sales have ended.",
+  "@tpErrEnded": {
+    "description": "Ticket payments"
+  },
+  "tpErrGeneric": "Something went wrong. Please try again.",
+  "@tpErrGeneric": {
+    "description": "Ticket payments"
+  },
+  "tpErrLimit": "You reached the ticket limit per person.",
+  "@tpErrLimit": {
+    "description": "Ticket payments"
+  },
+  "tpErrMinimum": "The price is below the payment provider's minimum.",
+  "@tpErrMinimum": {
+    "description": "Ticket payments"
+  },
+  "tpErrNotAllowed": "You can't do this.",
+  "@tpErrNotAllowed": {
+    "description": "Ticket payments"
+  },
+  "tpErrNotOnSale": "Tickets are not on sale yet: the organizer hasn't finished the payment setup.",
+  "@tpErrNotOnSale": {
+    "description": "Ticket payments"
+  },
+  "tpErrOwnListing": "You can't buy tickets for your own listing.",
+  "@tpErrOwnListing": {
+    "description": "Ticket payments"
+  },
+  "tpErrProvider": "The payment provider is not responding. Try again in a moment.",
+  "@tpErrProvider": {
+    "description": "Ticket payments"
+  },
+  "tpErrSoldOut": "Sold out — not enough places left.",
+  "@tpErrSoldOut": {
+    "description": "Ticket payments"
+  },
+  "tpFree": "Free",
+  "@tpFree": {
+    "description": "Ticket payments"
+  },
+  "tpGetPaidIntro": "Money goes directly to your own account. GreenGo takes no fee on ticket sales.",
+  "@tpGetPaidIntro": {
+    "description": "Ticket payments"
+  },
+  "tpGetPaidManualInfo": "No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.",
+  "@tpGetPaidManualInfo": {
+    "description": "Ticket payments"
+  },
+  "tpGetPaidSubtitle": "Sell tickets: connect Stripe or Mercado Pago, confirm payments",
+  "@tpGetPaidSubtitle": {
+    "description": "Ticket payments"
+  },
+  "tpGetPaidTitle": "Get paid",
+  "@tpGetPaidTitle": {
+    "description": "Ticket payments"
+  },
+  "tpGroupOf": "Group of {count}",
+  "@tpGroupOf": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpGroupPreview": "{price} for a group of up to {size}",
+  "@tpGroupPreview": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      },
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "tpGroupPrice": "Price per group",
+  "@tpGroupPrice": {
+    "description": "Ticket payments"
+  },
+  "tpHoldCountdown": "Your place is held for {time}",
+  "@tpHoldCountdown": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "tpInstantOptional": "Instant confirmation (optional)",
+  "@tpInstantOptional": {
+    "description": "Ticket payments"
+  },
+  "tpInstantSubtitle": "Buyers pay in the app; tickets are confirmed automatically.",
+  "@tpInstantSubtitle": {
+    "description": "Ticket payments"
+  },
+  "tpInstantTitle": "Instant confirmation",
+  "@tpInstantTitle": {
+    "description": "Ticket payments"
+  },
+  "tpIvePaid": "I've paid",
+  "@tpIvePaid": {
+    "description": "Ticket payments"
+  },
+  "tpLegacyPaymentPrompt": "This listing used an old payment method. Choose how guests pay so you can keep selling.",
+  "@tpLegacyPaymentPrompt": {
+    "description": "Ticket payments"
+  },
+  "tpManualAddMethodsHint": "Add your Pix, PayPal… in Profile > Payment methods to see them here.",
+  "@tpManualAddMethodsHint": {
+    "description": "Ticket payments"
+  },
+  "tpManualDisclaimer": "GreenGo does not verify these payments: the organizer is responsible for confirming them.",
+  "@tpManualDisclaimer": {
+    "description": "Ticket payments"
+  },
+  "tpManualLargeWarning": "With {count} people you'll have to confirm each payment by hand.",
+  "@tpManualLargeWarning": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "tpManualMethodLabel": "Payment method",
+  "@tpManualMethodLabel": {
+    "description": "Ticket payments"
+  },
+  "tpManualSubtitle": "Your own payment method; you confirm each payment with one tap.",
+  "@tpManualSubtitle": {
+    "description": "Ticket payments"
+  },
+  "tpManualTitle": "Payment link — you confirm",
+  "@tpManualTitle": {
+    "description": "Ticket payments"
+  },
+  "tpMaxGroupBookingsPerUser": "Max group bookings per person",
+  "@tpMaxGroupBookingsPerUser": {
+    "description": "Ticket payments"
+  },
+  "tpMaxTicketsPerUser": "Max tickets per person",
+  "@tpMaxTicketsPerUser": {
+    "description": "Ticket payments"
+  },
+  "tpMethodBankTransfer": "Bank transfer",
+  "@tpMethodBankTransfer": {
+    "description": "Ticket payments"
+  },
+  "tpMethodCash": "Cash (before the event)",
+  "@tpMethodCash": {
+    "description": "Ticket payments"
+  },
+  "tpMpCurrencyInfo": "Charges in {currency}",
+  "@tpMpCurrencyInfo": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "currency": {
+        "type": "String"
+      }
+    }
+  },
+  "tpMpDescription": "Pix, cards and Mercado Pago balance. Buyers don't need a Mercado Pago account.",
+  "@tpMpDescription": {
+    "description": "Ticket payments"
+  },
+  "tpMyPurchases": "My purchases",
+  "@tpMyPurchases": {
+    "description": "Ticket payments"
+  },
+  "tpNoFeeNote": "GreenGo takes no fee: the money goes straight to you.",
+  "@tpNoFeeNote": {
+    "description": "Ticket payments"
+  },
+  "tpNoLimitHint": "Empty = no limit",
+  "@tpNoLimitHint": {
+    "description": "Ticket payments"
+  },
+  "tpNoPurchases": "No purchases yet.",
+  "@tpNoPurchases": {
+    "description": "Ticket payments"
+  },
+  "tpNotOnSaleYet": "Not on sale yet",
+  "@tpNotOnSaleYet": {
+    "description": "Ticket payments"
+  },
+  "tpOpenPaymentLink": "Open payment link",
+  "@tpOpenPaymentLink": {
+    "description": "Ticket payments"
+  },
+  "tpOpenProviderSettings": "Update account details",
+  "@tpOpenProviderSettings": {
+    "description": "Ticket payments"
+  },
+  "tpOrderAwaitingConfirmation": "Waiting for the organizer to confirm your payment…",
+  "@tpOrderAwaitingConfirmation": {
+    "description": "Ticket payments"
+  },
+  "tpOrderCancelled": "Order cancelled",
+  "@tpOrderCancelled": {
+    "description": "Ticket payments"
+  },
+  "tpOrderClosedInfo": "This order is closed. You can start a new purchase from the event or experience.",
+  "@tpOrderClosedInfo": {
+    "description": "Ticket payments"
+  },
+  "tpOrderDisputed": "Payment disputed — ticket not valid",
+  "@tpOrderDisputed": {
+    "description": "Ticket payments"
+  },
+  "tpOrderExpired": "Reservation expired",
+  "@tpOrderExpired": {
+    "description": "Ticket payments"
+  },
+  "tpOrderFailed": "Payment failed",
+  "@tpOrderFailed": {
+    "description": "Ticket payments"
+  },
+  "tpOrderPaid": "Paid",
+  "@tpOrderPaid": {
+    "description": "Ticket payments"
+  },
+  "tpOrderPendingPayment": "Waiting for your payment",
+  "@tpOrderPendingPayment": {
+    "description": "Ticket payments"
+  },
+  "tpOrderRefunded": "Refunded — ticket no longer valid",
+  "@tpOrderRefunded": {
+    "description": "Ticket payments"
+  },
+  "tpOrderRejected": "The organizer did not confirm your payment",
+  "@tpOrderRejected": {
+    "description": "Ticket payments"
+  },
+  "tpOrderTitle": "Your tickets",
+  "@tpOrderTitle": {
+    "description": "Ticket payments"
+  },
+  "tpOrderWaitingProvider": "Waiting for payment confirmation…",
+  "@tpOrderWaitingProvider": {
+    "description": "Ticket payments"
+  },
+  "tpPayAgain": "Pay again",
+  "@tpPayAgain": {
+    "description": "Ticket payments"
+  },
+  "tpPayInApp": "Pay in the app",
+  "@tpPayInApp": {
+    "description": "Ticket payments"
+  },
+  "tpPayInAppInfo": "Pay in the app once the host accepts; your QR appears after the payment is confirmed.",
+  "@tpPayInAppInfo": {
+    "description": "Ticket payments"
+  },
+  "tpPayNow": "Pay now",
+  "@tpPayNow": {
+    "description": "Ticket payments"
+  },
+  "tpPayWith": "Pay with {method}",
+  "@tpPayWith": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "tpPaymentConfirmed": "Payment confirmed — your tickets are ready",
+  "@tpPaymentConfirmed": {
+    "description": "Ticket payments"
+  },
+  "tpPerGroup": "Per group",
+  "@tpPerGroup": {
+    "description": "Ticket payments"
+  },
+  "tpPerGroupInfo": "One fixed price for a group (e.g. a private tour), whatever the group size up to the maximum.",
+  "@tpPerGroupInfo": {
+    "description": "Ticket payments"
+  },
+  "tpPerPerson": "Per person",
+  "@tpPerPerson": {
+    "description": "Ticket payments"
+  },
+  "tpPerPersonInfo": "Each person pays the price; one ticket per person.",
+  "@tpPerPersonInfo": {
+    "description": "Ticket payments"
+  },
+  "tpPixHint": "Paid with Pix? Confirmation usually takes a few seconds.",
+  "@tpPixHint": {
+    "description": "Ticket payments"
+  },
+  "tpReceiptAttached": "Receipt attached",
+  "@tpReceiptAttached": {
+    "description": "Ticket payments"
+  },
+  "tpReconnectBanner": "Connect Mercado Pago / Stripe to sell tickets with automatic confirmation. Pasted Stripe or Mercado Pago links can't be used for tickets.",
+  "@tpReconnectBanner": {
+    "description": "Ticket payments"
+  },
+  "tpRefresh": "Refresh",
+  "@tpRefresh": {
+    "description": "Ticket payments"
+  },
+  "tpReject": "Not received",
+  "@tpReject": {
+    "description": "Ticket payments"
+  },
+  "tpRejectReason": "Reason (shown to the buyer)",
+  "@tpRejectReason": {
+    "description": "Ticket payments"
+  },
+  "tpRejectTitle": "Payment not received?",
+  "@tpRejectTitle": {
+    "description": "Ticket payments"
+  },
+  "tpSalesEnd": "Sales end",
+  "@tpSalesEnd": {
+    "description": "Ticket payments"
+  },
+  "tpSalesStart": "Sales start",
+  "@tpSalesStart": {
+    "description": "Ticket payments"
+  },
+  "tpSave": "Save",
+  "@tpSave": {
+    "description": "Ticket payments"
+  },
+  "tpScanNotPaid": "Not paid — no valid ticket",
+  "@tpScanNotPaid": {
+    "description": "Ticket payments"
+  },
+  "tpScanTicketNotValid": "Ticket refunded or cancelled — not valid",
+  "@tpScanTicketNotValid": {
+    "description": "Ticket payments"
+  },
+  "tpSelectorTitle": "How do guests pay?",
+  "@tpSelectorTitle": {
+    "description": "Ticket payments"
+  },
+  "tpShareTicket": "Share this ticket",
+  "@tpShareTicket": {
+    "description": "Ticket payments"
+  },
+  "tpShareTicketText": "Ticket {index}/{total} for {title} on GreenGo. Show this QR at the entrance (valid once).",
+  "@tpShareTicketText": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tpStatusNotConnected": "Not connected",
+  "@tpStatusNotConnected": {
+    "description": "Ticket payments"
+  },
+  "tpStatusPending": "Pending verification",
+  "@tpStatusPending": {
+    "description": "Ticket payments"
+  },
+  "tpStatusReady": "Ready",
+  "@tpStatusReady": {
+    "description": "Ticket payments"
+  },
+  "tpStatusReconnect": "Reconnect needed",
+  "@tpStatusReconnect": {
+    "description": "Ticket payments"
+  },
+  "tpStopSelling": "Stop selling",
+  "@tpStopSelling": {
+    "description": "Ticket payments"
+  },
+  "tpStripeDescription": "Cards, Apple Pay and Google Pay worldwide. Buyers don't need an account.",
+  "@tpStripeDescription": {
+    "description": "Ticket payments"
+  },
+  "tpTicketIndex": "Ticket {index} of {total}",
+  "@tpTicketIndex": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tpTicketInvalid": "This ticket is no longer valid.",
+  "@tpTicketInvalid": {
+    "description": "Ticket payments"
+  },
+  "tpTicketTypes": "Ticket types",
+  "@tpTicketTypes": {
+    "description": "Ticket payments"
+  },
+  "tpTicketTypesEmpty": "No ticket types: the event price is the only ticket. Add types for VIP, early bird and more.",
+  "@tpTicketTypesEmpty": {
+    "description": "Ticket payments"
+  },
+  "tpTicketUsed": "Already used at the entrance",
+  "@tpTicketUsed": {
+    "description": "Ticket payments"
+  },
+  "tpTicketsCount": "{count, plural, =1{1 ticket} other{{count} tickets}}",
+  "@tpTicketsCount": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpTiredOfConfirming": "Tired of confirming? Connect Mercado Pago or Stripe for automatic confirmation.",
+  "@tpTiredOfConfirming": {
+    "description": "Ticket payments"
+  },
+  "tpToConfirmEmpty": "No payments waiting for you.",
+  "@tpToConfirmEmpty": {
+    "description": "Ticket payments"
+  },
+  "tpToConfirmInfo": "Check your own account for the amount and the GG- code before confirming. Confirming issues the tickets.",
+  "@tpToConfirmInfo": {
+    "description": "Ticket payments"
+  },
+  "tpToConfirmTitle": "Payments to confirm",
+  "@tpToConfirmTitle": {
+    "description": "Ticket payments"
+  },
+  "tpTotal": "Total",
+  "@tpTotal": {
+    "description": "Ticket payments"
+  },
+  "tpTypeEnded": "Sales ended",
+  "@tpTypeEnded": {
+    "description": "Ticket payments"
+  },
+  "tpTypeHasSalesWarning": "Tickets of this type were already sold: they keep their price and type.",
+  "@tpTypeHasSalesWarning": {
+    "description": "Ticket payments"
+  },
+  "tpTypeHidden": "Hidden",
+  "@tpTypeHidden": {
+    "description": "Ticket payments"
+  },
+  "tpTypeMaxPerUser": "Max per person",
+  "@tpTypeMaxPerUser": {
+    "description": "Ticket payments"
+  },
+  "tpTypeName": "Name (e.g. VIP)",
+  "@tpTypeName": {
+    "description": "Ticket payments"
+  },
+  "tpTypeNotStarted": "Sales haven't started yet",
+  "@tpTypeNotStarted": {
+    "description": "Ticket payments"
+  },
+  "tpTypeOnlyLeft": "Only {count} left",
+  "@tpTypeOnlyLeft": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tpTypePerks": "Description / perks",
+  "@tpTypePerks": {
+    "description": "Ticket payments"
+  },
+  "tpTypePrice": "Price",
+  "@tpTypePrice": {
+    "description": "Ticket payments"
+  },
+  "tpTypeQuantity": "Quantity (empty = event capacity)",
+  "@tpTypeQuantity": {
+    "description": "Ticket payments"
+  },
+  "tpTypeSelling": "On sale",
+  "@tpTypeSelling": {
+    "description": "Ticket payments"
+  },
+  "tpTypeSold": "{sold}/{total} sold",
+  "@tpTypeSold": {
+    "description": "Ticket payments",
+    "placeholders": {
+      "sold": {
+        "type": "int"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "tpTypeSoldOut": "Sold out",
+  "@tpTypeSoldOut": {
+    "description": "Ticket payments"
+  },
+  "tpTypeUnavailable": "Not on sale",
+  "@tpTypeUnavailable": {
+    "description": "Ticket payments"
+  },
+  "tpViewPayment": "View payment",
+  "@tpViewPayment": {
+    "description": "Ticket payments"
+  },
+  "tpViewReceipt": "Receipt",
+  "@tpViewReceipt": {
+    "description": "Ticket payments"
+  },
+  "tpViewTickets": "View tickets",
+  "@tpViewTickets": {
+    "description": "Ticket payments"
   }
 }

@@ -50,7 +50,11 @@ enum BookingStatus {
 enum BookingPaymentMode {
   free,
   cash,
-  link;
+  link,
+
+  /// Paid ticket (ticket_payments): Stripe / Mercado Pago (instant) or the
+  /// host's own method with host confirmation; QR only once `status == paid`.
+  online;
 
   static BookingPaymentMode fromWire(Object? v) => BookingPaymentMode.values
       .firstWhere((m) => m.name == v, orElse: () => BookingPaymentMode.free);
@@ -85,7 +89,21 @@ class BookingPayment extends Equatable {
     this.link,
     this.guestMarkedPaidAt,
     this.hostConfirmedPaidAt,
+    this.provider,
+    this.status,
+    this.orderId,
   });
+
+  /// mode online: 'stripe' | 'mercadopago' | 'link'.
+  final String? provider;
+
+  /// mode online: 'unpaid' | 'paid' | 'refunded' | 'disputed'.
+  final String? status;
+
+  /// mode online: the ticket order once a payment started.
+  final String? orderId;
+
+  bool get isOnlinePaid => mode == BookingPaymentMode.online && status == 'paid';
 
   final BookingPaymentMode mode;
 
@@ -107,11 +125,14 @@ class BookingPayment extends Equatable {
         link: link,
         guestMarkedPaidAt: guestMarkedPaidAt ?? this.guestMarkedPaidAt,
         hostConfirmedPaidAt: hostConfirmedPaidAt ?? this.hostConfirmedPaidAt,
+        provider: provider,
+        status: status,
+        orderId: orderId,
       );
 
   @override
   List<Object?> get props =>
-      [mode, link, guestMarkedPaidAt, hostConfirmedPaidAt];
+      [mode, link, guestMarkedPaidAt, hostConfirmedPaidAt, provider, status, orderId];
 }
 
 /// A refund OBLIGATION (GreenGo never moves money): what the host owes back.

@@ -603,7 +603,7 @@ describe('check-in, cash, no-show, disputes', () => {
   });
 
   test('helpers at the door, wrong experience, forged codes, met in person', async () => {
-    const id = await confirmed();
+    const id = await confirmed({ paymentMethod: 'cash' });
     const { code }: any = await svc.getBookingCheckInCode(GUEST, { bookingId: id });
     now = T0 + 10 * D - 30 * 60 * 1000;
     // not authorised yet
@@ -627,10 +627,20 @@ describe('check-in, cash, no-show, disputes', () => {
   });
 
   test('check-in outside the window is refused', async () => {
-    const id = await confirmed();
+    const id = await confirmed({ paymentMethod: 'cash' });
     const { code }: any = await svc.getBookingCheckInCode(GUEST, { bookingId: id });
     now = T0 + 5 * D;
     await expectCode(svc.checkInBooking(HOST, { bookingId: id, code }), 'outside_checkin_window');
+  });
+
+  test('link payment: no check-in QR until the host confirmed the payment', async () => {
+    const id = await confirmed();
+    await expectCode(svc.getBookingCheckInCode(GUEST, { bookingId: id }), 'not_paid');
+    await svc.markBookingPaid(GUEST, { bookingId: id });
+    await expectCode(svc.getBookingCheckInCode(GUEST, { bookingId: id }), 'not_paid');
+    await svc.markBookingPaid(HOST, { bookingId: id });
+    const { qrPayload }: any = await svc.getBookingCheckInCode(GUEST, { bookingId: id });
+    expect(qrPayload).toMatch(/^greengo:checkin:/);
   });
 
   test('link payment marks: guest says paid, host confirms', async () => {
@@ -656,6 +666,7 @@ describe('check-in, cash, no-show, disputes', () => {
 
   test('dispute: window, removes review eligibility, admin-only resolution + host action', async () => {
     const id = await confirmed();
+    await svc.markBookingPaid(HOST, { bookingId: id }); // link payment received -> QR
     const { code }: any = await svc.getBookingCheckInCode(GUEST, { bookingId: id });
     now = T0 + 10 * D;
     await expectCode(svc.openBookingDispute(GUEST, { bookingId: id, reason: 'short' }), 'reason_required');

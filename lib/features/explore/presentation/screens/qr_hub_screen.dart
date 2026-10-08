@@ -1,3 +1,4 @@
+import '../../../ticket_payments/presentation/screens/my_ticket_orders_screen.dart';
 import 'dart:async';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -211,6 +212,12 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              TextButton.icon(
+                onPressed: () => Navigator.of(context)
+                    .push(MyTicketOrdersScreen.route(widget.currentUserId)),
+                icon: const Icon(Icons.receipt_long, color: AppColors.richGold),
+                label: Text(l10n.tpMyPurchases, style: const TextStyle(color: AppColors.richGold)),
+              ),
               const Icon(Icons.confirmation_number_outlined,
                   color: AppColors.textTertiary, size: 48),
               const SizedBox(height: 16),
@@ -236,11 +243,23 @@ class _MyTicketsTabState extends State<_MyTicketsTab> {
           if (index == 0) {
             return Padding(
               padding: const EdgeInsets.only(bottom: 4),
-              child: Text(
-                l10n.qrHubTicketHint,
-                style: const TextStyle(
-                    color: AppColors.textTertiary, fontSize: 12.5),
-              ),
+              child: Row(children: [
+                Expanded(
+                  child: Text(
+                    l10n.qrHubTicketHint,
+                    style: const TextStyle(
+                        color: AppColors.textTertiary, fontSize: 12.5),
+                  ),
+                ),
+                TextButton.icon(
+                  key: const ValueKey('qr-hub-my-purchases'),
+                  onPressed: () => Navigator.of(context)
+                      .push(MyTicketOrdersScreen.route(widget.currentUserId)),
+                  icon: const Icon(Icons.receipt_long, size: 18, color: AppColors.richGold),
+                  label: Text(l10n.tpMyPurchases,
+                      style: const TextStyle(color: AppColors.richGold)),
+                ),
+              ]),
             );
           }
           // Experience bookings first (usually the next thing to attend).
@@ -418,7 +437,9 @@ class _ScanTabState extends State<_ScanTab> {
     // records that the two people met in person. Never navigates.
     final code = ScannedCheckInCode.parse(raw);
     final CheckInOutcome r;
-    if (code is EventTicketCode) {
+    if (code is PaidTicketCode) {
+      r = await _checkin.checkInPaidTicket(code);
+    } else if (code is EventTicketCode) {
       r = await _checkin.checkInEvent(code);
     } else if (code is BookingTicketCode) {
       r = await _checkin.checkInBooking(code);
@@ -428,7 +449,11 @@ class _ScanTabState extends State<_ScanTab> {
     }
     if (!mounted) return;
     if (r.approved) {
-      _approved(l10n, r.name);
+      _approved(l10n, [
+        if (r.ticketTypeName != null) r.ticketTypeName!.toUpperCase(),
+        if (r.partySize > 1) l10n.tpGroupOf(r.partySize),
+        r.name,
+      ].where((s) => s.isNotEmpty).join(' · '));
     } else {
       _denied(l10n, r.reasonText(l10n), name: r.name.isEmpty ? null : r.name);
     }

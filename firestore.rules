@@ -2488,6 +2488,12 @@ service cloud.firestore {
       allow read: if isSignedIn() && resource.data.buyerId == request.auth.uid;
       allow write: if false;
     }
+    // Per buyer + listing ticket counter (limit "you can buy N more"): the
+    // buyer reads their own; only the server writes.
+    match /ticket_holdings/{holdingId} {
+      allow read: if isSignedIn() && resource.data.uid == request.auth.uid;
+      allow write: if false;
+    }
     // ticket_inventory, ticket_codes, payment_events, server_secrets: no
     // match = default deny (server only).
 

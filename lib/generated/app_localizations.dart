@@ -29173,6 +29173,906 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Saved on this device. It will be recorded on our servers as soon as you are online.'**
   String get aiServicesSyncPending;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Add ticket type'**
+  String get tpAddTicketType;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Many people expected: instant confirmation is recommended. Tickets are confirmed automatically, so you don\'t have to check every payment.'**
+  String get tpAdviceLarge;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Small group: the simplest is a payment link — no setup, you confirm each payment with one tap.'**
+  String get tpAdviceSmall;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get tpAmountLabel;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Attach receipt (optional)'**
+  String get tpAttachReceipt;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You told the organizer you paid. Your ticket appears here as soon as they confirm.'**
+  String get tpAwaitingOrganizerInfo;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended in Brazil'**
+  String get tpBadgeBrazil;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'No setup'**
+  String get tpBadgeNoSetup;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended'**
+  String get tpBadgeRecommended;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Bank details and instructions'**
+  String get tpBankInstructionsLabel;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'{provider} needs at least {amount} per ticket.'**
+  String tpBlockMinimum(String provider, String amount);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Mercado Pago only charges in {currency}: change the price to {currency} or use Stripe.'**
+  String tpBlockMpCurrency(String currency);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Mercado Pago only charges in your account\'s local currency. Use that currency or Stripe.'**
+  String get tpBlockMpCurrencyUnknown;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Not available yet.'**
+  String get tpBlockNotConfigured;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Connect {provider} to use it.'**
+  String tpBlockNotConnected(String provider);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Buy more tickets'**
+  String get tpBuyMoreTickets;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Buy tickets'**
+  String get tpBuyTickets;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You can buy {count} more tickets'**
+  String tpCanBuyMore(int count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'No limit per person'**
+  String get tpCanBuyUnlimited;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get tpCancelOrder;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Where and when to pay in cash (optional)'**
+  String get tpCashInstructionsLabel;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Choose how buyers pay for this paid listing.'**
+  String get tpChooseHowToGetPaid;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get tpClose;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Put this code in the payment description so the organizer can find your payment.'**
+  String get tpCodeHint;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payment code'**
+  String get tpCodeLabel;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get tpConfirm;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm selected ({count})'**
+  String tpConfirmSelected(int count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'{count} payments confirmed'**
+  String tpConfirmedCount(int count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Connect {provider}'**
+  String tpConnectProvider(String provider);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You pay inside the app with a secure checkout. Your ticket and QR appear as soon as the payment is confirmed. Refunds are made by the organizer.'**
+  String get tpConsentGuideInstant;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You pay the host directly with their payment method and a code. GreenGo does not verify this payment: the host confirms it, then your QR appears.'**
+  String get tpConsentGuideManual;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Continue setup'**
+  String get tpContinueSetup;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Continue · {amount}'**
+  String tpContinueToPay(String amount);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Copied'**
+  String get tpCopied;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get tpCopy;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Edit ticket type'**
+  String get tpEditTicketType;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You already have a ticket for this.'**
+  String get tpErrAlreadyHasTicket;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sales have ended.'**
+  String get tpErrEnded;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong. Please try again.'**
+  String get tpErrGeneric;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You reached the ticket limit per person.'**
+  String get tpErrLimit;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'The price is below the payment provider\'s minimum.'**
+  String get tpErrMinimum;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You can\'t do this.'**
+  String get tpErrNotAllowed;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets are not on sale yet: the organizer hasn\'t finished the payment setup.'**
+  String get tpErrNotOnSale;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'You can\'t buy tickets for your own listing.'**
+  String get tpErrOwnListing;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'The payment provider is not responding. Try again in a moment.'**
+  String get tpErrProvider;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sold out — not enough places left.'**
+  String get tpErrSoldOut;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get tpFree;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Money goes directly to your own account. GreenGo takes no fee on ticket sales.'**
+  String get tpGetPaidIntro;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.'**
+  String get tpGetPaidManualInfo;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sell tickets: connect Stripe or Mercado Pago, confirm payments'**
+  String get tpGetPaidSubtitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Get paid'**
+  String get tpGetPaidTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Group of {count}'**
+  String tpGroupOf(int count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'{price} for a group of up to {size}'**
+  String tpGroupPreview(String price, int size);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Price per group'**
+  String get tpGroupPrice;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Your place is held for {time}'**
+  String tpHoldCountdown(String time);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Instant confirmation (optional)'**
+  String get tpInstantOptional;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Buyers pay in the app; tickets are confirmed automatically.'**
+  String get tpInstantSubtitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Instant confirmation'**
+  String get tpInstantTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'I\'ve paid'**
+  String get tpIvePaid;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'This listing used an old payment method. Choose how guests pay so you can keep selling.'**
+  String get tpLegacyPaymentPrompt;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Add your Pix, PayPal… in Profile > Payment methods to see them here.'**
+  String get tpManualAddMethodsHint;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo does not verify these payments: the organizer is responsible for confirming them.'**
+  String get tpManualDisclaimer;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'With {count} people you\'ll have to confirm each payment by hand.'**
+  String tpManualLargeWarning(String count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payment method'**
+  String get tpManualMethodLabel;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Your own payment method; you confirm each payment with one tap.'**
+  String get tpManualSubtitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payment link — you confirm'**
+  String get tpManualTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Max group bookings per person'**
+  String get tpMaxGroupBookingsPerUser;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Max tickets per person'**
+  String get tpMaxTicketsPerUser;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Bank transfer'**
+  String get tpMethodBankTransfer;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Cash (before the event)'**
+  String get tpMethodCash;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Charges in {currency}'**
+  String tpMpCurrencyInfo(String currency);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Pix, cards and Mercado Pago balance. Buyers don\'t need a Mercado Pago account.'**
+  String get tpMpDescription;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'My purchases'**
+  String get tpMyPurchases;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo takes no fee: the money goes straight to you.'**
+  String get tpNoFeeNote;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Empty = no limit'**
+  String get tpNoLimitHint;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'No purchases yet.'**
+  String get tpNoPurchases;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Not on sale yet'**
+  String get tpNotOnSaleYet;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Open payment link'**
+  String get tpOpenPaymentLink;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Update account details'**
+  String get tpOpenProviderSettings;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for the organizer to confirm your payment…'**
+  String get tpOrderAwaitingConfirmation;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Order cancelled'**
+  String get tpOrderCancelled;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'This order is closed. You can start a new purchase from the event or experience.'**
+  String get tpOrderClosedInfo;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payment disputed — ticket not valid'**
+  String get tpOrderDisputed;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Reservation expired'**
+  String get tpOrderExpired;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payment failed'**
+  String get tpOrderFailed;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Paid'**
+  String get tpOrderPaid;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for your payment'**
+  String get tpOrderPendingPayment;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Refunded — ticket no longer valid'**
+  String get tpOrderRefunded;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'The organizer did not confirm your payment'**
+  String get tpOrderRejected;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Your tickets'**
+  String get tpOrderTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for payment confirmation…'**
+  String get tpOrderWaitingProvider;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Pay again'**
+  String get tpPayAgain;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Pay in the app'**
+  String get tpPayInApp;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Pay in the app once the host accepts; your QR appears after the payment is confirmed.'**
+  String get tpPayInAppInfo;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Pay now'**
+  String get tpPayNow;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Pay with {method}'**
+  String tpPayWith(String method);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payment confirmed — your tickets are ready'**
+  String get tpPaymentConfirmed;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Per group'**
+  String get tpPerGroup;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'One fixed price for a group (e.g. a private tour), whatever the group size up to the maximum.'**
+  String get tpPerGroupInfo;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Per person'**
+  String get tpPerPerson;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Each person pays the price; one ticket per person.'**
+  String get tpPerPersonInfo;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Paid with Pix? Confirmation usually takes a few seconds.'**
+  String get tpPixHint;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Receipt attached'**
+  String get tpReceiptAttached;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Connect Mercado Pago / Stripe to sell tickets with automatic confirmation. Pasted Stripe or Mercado Pago links can\'t be used for tickets.'**
+  String get tpReconnectBanner;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh'**
+  String get tpRefresh;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Not received'**
+  String get tpReject;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Reason (shown to the buyer)'**
+  String get tpRejectReason;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payment not received?'**
+  String get tpRejectTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sales end'**
+  String get tpSalesEnd;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sales start'**
+  String get tpSalesStart;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get tpSave;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Not paid — no valid ticket'**
+  String get tpScanNotPaid;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket refunded or cancelled — not valid'**
+  String get tpScanTicketNotValid;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'How do guests pay?'**
+  String get tpSelectorTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Share this ticket'**
+  String get tpShareTicket;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket {index}/{total} for {title} on GreenGo. Show this QR at the entrance (valid once).'**
+  String tpShareTicketText(String title, int index, int total);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Not connected'**
+  String get tpStatusNotConnected;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Pending verification'**
+  String get tpStatusPending;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ready'**
+  String get tpStatusReady;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Reconnect needed'**
+  String get tpStatusReconnect;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Stop selling'**
+  String get tpStopSelling;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Cards, Apple Pay and Google Pay worldwide. Buyers don\'t need an account.'**
+  String get tpStripeDescription;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket {index} of {total}'**
+  String tpTicketIndex(int index, int total);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'This ticket is no longer valid.'**
+  String get tpTicketInvalid;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket types'**
+  String get tpTicketTypes;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'No ticket types: the event price is the only ticket. Add types for VIP, early bird and more.'**
+  String get tpTicketTypesEmpty;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Already used at the entrance'**
+  String get tpTicketUsed;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 ticket} other{{count} tickets}}'**
+  String tpTicketsCount(int count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Tired of confirming? Connect Mercado Pago or Stripe for automatic confirmation.'**
+  String get tpTiredOfConfirming;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'No payments waiting for you.'**
+  String get tpToConfirmEmpty;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Check your own account for the amount and the GG- code before confirming. Confirming issues the tickets.'**
+  String get tpToConfirmInfo;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Payments to confirm'**
+  String get tpToConfirmTitle;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get tpTotal;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sales ended'**
+  String get tpTypeEnded;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets of this type were already sold: they keep their price and type.'**
+  String get tpTypeHasSalesWarning;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden'**
+  String get tpTypeHidden;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Max per person'**
+  String get tpTypeMaxPerUser;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Name (e.g. VIP)'**
+  String get tpTypeName;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sales haven\'t started yet'**
+  String get tpTypeNotStarted;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Only {count} left'**
+  String tpTypeOnlyLeft(int count);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Description / perks'**
+  String get tpTypePerks;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Price'**
+  String get tpTypePrice;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Quantity (empty = event capacity)'**
+  String get tpTypeQuantity;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'On sale'**
+  String get tpTypeSelling;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'{sold}/{total} sold'**
+  String tpTypeSold(int sold, String total);
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Sold out'**
+  String get tpTypeSoldOut;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Not on sale'**
+  String get tpTypeUnavailable;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'View payment'**
+  String get tpViewPayment;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'Receipt'**
+  String get tpViewReceipt;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'View tickets'**
+  String get tpViewTickets;
 }
 
 class _AppLocalizationsDelegate

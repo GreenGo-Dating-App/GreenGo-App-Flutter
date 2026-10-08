@@ -79,6 +79,18 @@ class BookingRules {
     String reason,
   ) {
     final mode = payment.mode;
+    if (mode == BookingPaymentMode.online && price != null && price.totalAmount > 0) {
+      // Mirror of the server: owed only once the in-app payment was confirmed.
+      final pp = percent.clamp(0, 100);
+      final pct = payment.isOnlinePaid ? pp : 0;
+      return RefundDue(
+        percent: pct,
+        policyPercent: pp,
+        amount: (price.totalAmount * pct / 100).round(),
+        currency: price.currency,
+        reason: payment.isOnlinePaid ? reason : '${reason}_online_unpaid',
+      );
+    }
     if (price == null ||
         price.totalAmount <= 0 ||
         (mode != BookingPaymentMode.link && mode != BookingPaymentMode.cash)) {
@@ -144,11 +156,23 @@ class BookingRules {
       !b.isCheckedIn &&
       inCheckInWindow(b, now);
 
-  /// Guest: the QR code is only issued for confirmed bookings.
+  /// Guest: the QR code is only issued for confirmed bookings, and never
+  /// before the money arrived: in-app payments need the provider / host
+  /// confirmation (payment.status 'paid'), a link payment the host's
+  /// "received" (mirror of getBookingCheckInCode).
   static bool canShowCheckInCode(Booking b, DateTime now) =>
       b.status == BookingStatus.confirmed &&
       !b.isCheckedIn &&
-      now.isBefore(b.slotEnd.add(BookingConfig.checkInLate));
+      now.isBefore(b.slotEnd.add(BookingConfig.checkInLate)) &&
+      (b.payment.mode != BookingPaymentMode.online || b.payment.isOnlinePaid) &&
+      (b.payment.mode != BookingPaymentMode.link || b.payment.hostConfirmedPaidAt != null);
+
+  /// Guest: "Pay now" (in-app ticket payment) once the host accepted.
+  static bool canPayOnline(Booking b, DateTime now) =>
+      b.payment.mode == BookingPaymentMode.online &&
+      !b.payment.isOnlinePaid &&
+      b.status == BookingStatus.confirmed &&
+      now.isBefore(b.slotStart);
 
   static bool canMarkNoShow(Booking b, DateTime now) =>
       b.status == BookingStatus.confirmed &&
@@ -190,6 +214,7 @@ class BookingRules {
       case BookingPaymentMode.cash:
         return b.isCheckedIn || !now.isBefore(b.slotStart);
       case BookingPaymentMode.free:
+      case BookingPaymentMode.online:
         return false;
     }
   }

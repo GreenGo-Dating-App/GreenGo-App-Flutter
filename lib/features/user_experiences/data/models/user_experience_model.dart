@@ -96,6 +96,16 @@ class UserExperienceModel {
       isFree: isFree,
       paymentLink: link,
       paymentMethods: isFree ? const {} : methods,
+      paymentProvider: _optStr(d['paymentProvider']),
+      paymentLinkMethod: _optStr(d['paymentLinkMethod']),
+      paymentInstructions: _optStr(d['paymentInstructions']),
+      pricingMode: d['pricingMode'] == 'per_group' ? 'per_group' : 'per_person',
+      groupPrice: (d['groupPrice'] as num?)?.toInt(),
+      maxTicketsPerUser: !d.containsKey('maxTicketsPerUser')
+          ? 4
+          : ((d['maxTicketsPerUser'] as num?)?.toInt() == 0
+              ? null
+              : (d['maxTicketsPerUser'] as num?)?.toInt()),
       availability: _optStr(d['availability']),
       cancellationPolicy: policy ?? CancellationPolicy.fallback,
       cancellationNotes: notes,
@@ -162,6 +172,15 @@ class UserExperienceModel {
               for (final m in PaymentMethod.values)
                 if (e.paymentMethods.contains(m)) m.name,
             ],
+      // In-app tickets (ticket_payments): provider + link-mode method.
+      'paymentProvider': e.isFree || !e.paymentMethods.contains(PaymentMethod.online)
+          ? null
+          : e.paymentProvider,
+      'paymentLinkMethod': e.isFree || e.paymentProvider != 'link' ? null : e.paymentLinkMethod,
+      'paymentInstructions': e.isFree || e.paymentProvider != 'link' ? null : e.paymentInstructions,
+      'pricingMode': e.pricingMode,
+      'groupPrice': e.isFree || !e.isPerGroup ? null : e.groupPrice,
+      'maxTicketsPerUser': e.maxTicketsPerUser,
       'paymentLink': e.isFree ||
               e.paymentLink == null ||
               !e.paymentMethods.contains(PaymentMethod.link)
