@@ -249,6 +249,8 @@ export interface AgeAssuranceStatus {
   methods: AgeAssuranceMethod[];
   region: ResolvedRegion & { codes: string[] };
   idVerificationStatus: string | null;
+  /** `age_assurance/{uid}.blocked` as last stored (rules mirror, see syncBlockedFlag). */
+  storedBlocked: boolean | null;
 }
 
 export async function computeAgeAssurance(uid: string, hints: RegionHints = {}): Promise<AgeAssuranceStatus> {
@@ -284,7 +286,24 @@ export async function computeAgeAssurance(uid: string, hints: RegionHints = {}):
     methods: ['id_verification', 'store_signal'],
     region: { ...region, codes },
     idVerificationStatus: (profile?.ageVerification?.status as string | undefined) ?? null,
+    storedBlocked: typeof record.blocked === 'boolean' ? record.blocked : null,
   };
+}
+
+/**
+ * Keeps `age_assurance/{uid}.blocked` (required && !satisfied) current, for the
+ * Firestore rules of the lockdown wave (they cannot compute regions; see
+ * docs/security/age-assurance-rules.md). Writes only when the value changes,
+ * and never creates a record for a user the gate does not concern.
+ */
+export async function syncBlockedFlag(uid: string, s: AgeAssuranceStatus): Promise<void> {
+  const blocked = s.required && !s.satisfied;
+  if (s.storedBlocked === blocked) return;
+  if (s.storedBlocked === null && !blocked) return;
+  await db().collection(AGE_ASSURANCE).doc(uid).set(
+    { blocked, blockedComputedAt: admin.firestore.Timestamp.now() },
+    { merge: true },
+  );
 }
 
 /** True when [uid] may use [feature]. One cached config read when the flag is off. */
@@ -320,6 +339,7 @@ export async function handleGetAgeAssuranceStatus(request: any) {
     subdivision: typeof d.subdivision === 'string' ? d.subdivision.slice(0, 8) : undefined,
   };
   const s = await computeAgeAssurance(uid, hints);
+  await syncBlockedFlag(uid, s);
   // Remember the hints the decision used (server-only) so enforcement on other
   // callables sees the same region even without hints.
   if (s.enforced && (hints.localeCountry || hints.storeCountry || hints.subdivision)) {
@@ -419,6 +439,7 @@ export async function handleRecordStoreAgeSignal(request: any) {
   }
 
   const s = await computeAgeAssurance(uid);
+  await syncBlockedFlag(uid, s);
   return {
     accepted,
     reason: accepted ? null : !shared ? 'NOT_SHARED' : !adult ? 'NOT_ADULT' : 'SOURCE_NOT_ACCEPTED',
@@ -458,6 +479,7 @@ export async function handleSetAgeAssuranceOverride(request: any) {
     timestamp: admin.firestore.FieldValue.serverTimestamp(),
   });
   const s = await computeAgeAssurance(target);
+  await syncBlockedFlag(target, s);
   return { userId: target, granted: d.granted, required: s.required, satisfied: s.satisfied, satisfiedBy: s.satisfiedBy };
 }
 

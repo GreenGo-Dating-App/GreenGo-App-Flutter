@@ -101,6 +101,9 @@ android {
 
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+    // P3-1 regional age assurance: Google Play Age Signals (beta). Read in
+    // AgeSignalsBridge.kt; the server decides whether a signal is strong enough.
+    implementation("com.google.android.play:age-signals:0.0.4")
 }
 
 flutter {

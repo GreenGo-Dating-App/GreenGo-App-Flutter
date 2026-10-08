@@ -188,6 +188,17 @@ describe('P3-1 satisfying methods', () => {
     expect((await db.doc('profiles/kid').get()).data()?.accountStatus).toBe('age_blocked');
   });
 
+  test('rules mirror: age_assurance/{uid}.blocked follows required && !satisfied, only for concerned users', async () => {
+    await seedUser('mirror', 'brazil');
+    await status('mirror');
+    expect((await db.doc('age_assurance/mirror').get()).data()?.blocked).toBe(true);
+    await v2(gate().recordStoreAgeSignal, { platform: 'android', ageLower: 18, ageRangeSource: 4 }, 'mirror');
+    expect((await db.doc('age_assurance/mirror').get()).data()?.blocked).toBe(false);
+    await seedUser('itMirror', 'italy');
+    await status('itMirror');
+    expect((await db.doc('age_assurance/itMirror').get()).exists).toBe(false);
+  });
+
   test('invalid platform is refused', async () => {
     await seedUser('x', 'brazil');
     expect((await errOf(v2(gate().recordStoreAgeSignal, { platform: 'web' }, 'x')))?.code).toBe('invalid-argument');
