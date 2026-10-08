@@ -141,6 +141,8 @@ class ExperienceEditorBloc
         pricingMode: x.pricingMode,
         groupPrice: x.groupPrice,
         maxTicketsPerUser: x.maxTicketsPerUser,
+        weekendPrice: x.weekendPrice,
+        weekendDays: x.weekendDays,
         availability: x.availability,
         cancellationPolicy: x.cancellationPolicy,
         cancellationNotes: x.cancellationNotes,

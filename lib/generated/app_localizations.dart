@@ -30073,6 +30073,408 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'View tickets'**
   String get tpViewTickets;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Add time'**
+  String get mtAddTime;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get mtAdvanced;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Apply to all selected days'**
+  String get mtApplyAll;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Available from'**
+  String get mtAvailableFrom;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Until'**
+  String get mtAvailableUntil;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Break between sessions'**
+  String get mtBreak;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Close a date range (vacation)'**
+  String get mtBulkCloseRange;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Changes are saved when you tap Save.'**
+  String get mtBulkHint;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Remove a time from every chosen weekday'**
+  String get mtBulkRemoveTime;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Quick changes'**
+  String get mtBulkTitle;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar'**
+  String get mtCalendarTitle;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Places per time'**
+  String get mtCapacity;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Closed this day'**
+  String get mtCloseDay;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Closed'**
+  String get mtClosed;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'{count} booked times would be removed. Those bookings will be cancelled, the guests notified and refunded.'**
+  String mtConfirmBody(int count);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel those bookings'**
+  String get mtConfirmCancelBookings;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Some times are booked'**
+  String get mtConfirmTitle;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Copy to the whole month'**
+  String get mtCopyToMonth;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Copy to every {weekday} this month'**
+  String mtCopyToWeekdays(String weekday);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'From date'**
+  String get mtDateFrom;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Until date'**
+  String get mtDateTo;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Days of the week'**
+  String get mtDaysOfWeek;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get mtDone;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Duration'**
+  String get mtDuration;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Times would overlap: \"start every\" must be at least the duration.'**
+  String get mtErrOverlap;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Check the schedule settings.'**
+  String get mtErrRules;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'That time is already on the list.'**
+  String get mtErrTimeExists;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'The session would end after midnight.'**
+  String get mtErrTimeFit;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'It overlaps another time of that day.'**
+  String get mtErrTimeOverlaps;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Choose at least one day of the week.'**
+  String get mtErrWeekdays;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'\"Until\" must be after \"Available from\".'**
+  String get mtErrWindow;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'{h} h'**
+  String mtHours(int h);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'{h} h {m} min'**
+  String mtHoursMinutes(int h, int m);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'changed day'**
+  String get mtLegendChanged;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'special price'**
+  String get mtLegendSpecialPrice;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'weekend price'**
+  String get mtLegendWeekendPrice;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'{m} min'**
+  String mtMinutes(int m);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Next month'**
+  String get mtNextMonth;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'No break'**
+  String get mtNoBreak;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'No end date'**
+  String get mtNoEnd;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Previous month'**
+  String get mtPrevMonth;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Times each selected day'**
+  String get mtPreview;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Remove time'**
+  String get mtRemoveTime;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Reset to default'**
+  String get mtResetDay;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Schedule saved'**
+  String get mtSaved;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Schedule saved — {count} bookings cancelled and refunded'**
+  String mtSavedCancelled(int count);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Your times'**
+  String get mtSetupTitle;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Special price for this day'**
+  String get mtSpecialPrice;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Empty = normal price'**
+  String get mtSpecialPriceHint;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Start every'**
+  String get mtStartEvery;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic (duration + break)'**
+  String get mtStartEveryAuto;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get mtTime;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Time zone'**
+  String get mtTimezone;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Manage times'**
+  String get mtTitle;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Weekend price'**
+  String get mtWeekendPrice;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Applies on the days you pick; a special price for a single day is set in Manage times.'**
+  String get mtWeekendPriceInfo;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Different price on weekends'**
+  String get mtWeekendPriceToggle;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 group slot left} other{{count} group slots left}}'**
+  String rtGroupsLeft(int count);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 seat left} other{{count} seats left}}'**
+  String rtSeatsLeft(int count);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'special price'**
+  String get rtSpecialPrice;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Times in the host\'s time zone ({zone})'**
+  String rtTimesIn(String zone);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'weekend price'**
+  String get rtWeekendPrice;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Your time: {time}'**
+  String rtYourTime(String time);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Drag to reorder'**
+  String get tpReorder;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'{sold} sold · {held} reserved · {left} left'**
+  String tpSalesRow(int sold, int held, String left);
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Sales by ticket type'**
+  String get tpSalesSummary;
+
+  /// Ticket payments / schedules
+  ///
+  /// In en, this message translates to:
+  /// **'Total: {sold} sold, {held} reserved'**
+  String tpSalesTotal(int sold, int held);
 }
 
 class _AppLocalizationsDelegate

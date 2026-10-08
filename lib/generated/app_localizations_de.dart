@@ -17331,4 +17331,245 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpViewTickets => 'Tickets ansehen';
+
+  @override
+  String get mtAddTime => 'Uhrzeit hinzufügen';
+
+  @override
+  String get mtAdvanced => 'Erweitert';
+
+  @override
+  String get mtApplyAll => 'Auf alle gewählten Tage anwenden';
+
+  @override
+  String get mtAvailableFrom => 'Verfügbar ab';
+
+  @override
+  String get mtAvailableUntil => 'Bis';
+
+  @override
+  String get mtBreak => 'Pause zwischen Terminen';
+
+  @override
+  String get mtBulkCloseRange => 'Zeitraum schließen (Urlaub)';
+
+  @override
+  String get mtBulkHint => 'Änderungen werden mit „Speichern\" übernommen.';
+
+  @override
+  String get mtBulkRemoveTime =>
+      'Uhrzeit an jedem gewählten Wochentag entfernen';
+
+  @override
+  String get mtBulkTitle => 'Schnelle Änderungen';
+
+  @override
+  String get mtCalendarTitle => 'Kalender';
+
+  @override
+  String get mtCapacity => 'Plätze pro Termin';
+
+  @override
+  String get mtCloseDay => 'An diesem Tag geschlossen';
+
+  @override
+  String get mtClosed => 'Geschlossen';
+
+  @override
+  String mtConfirmBody(int count) {
+    return '$count gebuchte Termine würden entfernt. Diese Buchungen werden storniert, die Gäste benachrichtigt und erstattet.';
+  }
+
+  @override
+  String get mtConfirmCancelBookings => 'Diese Buchungen stornieren';
+
+  @override
+  String get mtConfirmTitle => 'Einige Termine sind gebucht';
+
+  @override
+  String get mtCopyToMonth => 'Auf den ganzen Monat kopieren';
+
+  @override
+  String mtCopyToWeekdays(String weekday) {
+    return 'Auf jeden $weekday in diesem Monat kopieren';
+  }
+
+  @override
+  String get mtDateFrom => 'Ab Datum';
+
+  @override
+  String get mtDateTo => 'Bis Datum';
+
+  @override
+  String get mtDaysOfWeek => 'Wochentage';
+
+  @override
+  String get mtDone => 'Fertig';
+
+  @override
+  String get mtDuration => 'Dauer';
+
+  @override
+  String get mtErrOverlap =>
+      'Termine würden sich überschneiden: „Start alle\" muss mindestens die Dauer sein.';
+
+  @override
+  String get mtErrRules => 'Bitte prüfe die Zeitplan-Einstellungen.';
+
+  @override
+  String get mtErrTimeExists => 'Diese Uhrzeit ist schon vorhanden.';
+
+  @override
+  String get mtErrTimeFit => 'Der Termin würde nach Mitternacht enden.';
+
+  @override
+  String get mtErrTimeOverlaps =>
+      'Überschneidet sich mit einem anderen Termin an diesem Tag.';
+
+  @override
+  String get mtErrWeekdays => 'Wähle mindestens einen Wochentag.';
+
+  @override
+  String get mtErrWindow => '„Bis\" muss nach „Verfügbar ab\" liegen.';
+
+  @override
+  String mtHours(int h) {
+    return '$h Std.';
+  }
+
+  @override
+  String mtHoursMinutes(int h, int m) {
+    return '$h Std. $m Min.';
+  }
+
+  @override
+  String get mtLegendChanged => 'geänderter Tag';
+
+  @override
+  String get mtLegendSpecialPrice => 'Sonderpreis';
+
+  @override
+  String get mtLegendWeekendPrice => 'Wochenendpreis';
+
+  @override
+  String mtMinutes(int m) {
+    return '$m Min.';
+  }
+
+  @override
+  String get mtNextMonth => 'Nächster Monat';
+
+  @override
+  String get mtNoBreak => 'Keine Pause';
+
+  @override
+  String get mtNoEnd => 'Kein Enddatum';
+
+  @override
+  String get mtPrevMonth => 'Vorheriger Monat';
+
+  @override
+  String get mtPreview => 'Termine an jedem gewählten Tag';
+
+  @override
+  String get mtRemoveTime => 'Uhrzeit entfernen';
+
+  @override
+  String get mtResetDay => 'Auf Standard zurücksetzen';
+
+  @override
+  String get mtSaved => 'Zeitplan gespeichert';
+
+  @override
+  String mtSavedCancelled(int count) {
+    return 'Zeitplan gespeichert – $count Buchungen storniert und erstattet';
+  }
+
+  @override
+  String get mtSetupTitle => 'Deine Zeiten';
+
+  @override
+  String get mtSpecialPrice => 'Sonderpreis für diesen Tag';
+
+  @override
+  String get mtSpecialPriceHint => 'Leer = normaler Preis';
+
+  @override
+  String get mtStartEvery => 'Start alle';
+
+  @override
+  String get mtStartEveryAuto => 'Automatisch (Dauer + Pause)';
+
+  @override
+  String get mtTime => 'Uhrzeit';
+
+  @override
+  String get mtTimezone => 'Zeitzone';
+
+  @override
+  String get mtTitle => 'Zeiten verwalten';
+
+  @override
+  String get mtWeekendPrice => 'Wochenendpreis';
+
+  @override
+  String get mtWeekendPriceInfo =>
+      'Gilt an den gewählten Tagen; Sonderpreise für einzelne Tage setzt du unter „Zeiten verwalten\".';
+
+  @override
+  String get mtWeekendPriceToggle => 'Anderer Preis am Wochenende';
+
+  @override
+  String rtGroupsLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'noch $count Gruppentermine',
+      one: 'noch 1 Gruppentermin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String rtSeatsLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'noch $count Plätze',
+      one: 'noch 1 Platz',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get rtSpecialPrice => 'Sonderpreis';
+
+  @override
+  String rtTimesIn(String zone) {
+    return 'Zeiten in der Zeitzone des Gastgebers ($zone)';
+  }
+
+  @override
+  String get rtWeekendPrice => 'Wochenendpreis';
+
+  @override
+  String rtYourTime(String time) {
+    return 'Deine Zeit: $time';
+  }
+
+  @override
+  String get tpReorder => 'Zum Sortieren ziehen';
+
+  @override
+  String tpSalesRow(int sold, int held, String left) {
+    return '$sold verkauft · $held reserviert · $left frei';
+  }
+
+  @override
+  String get tpSalesSummary => 'Verkäufe nach Ticketart';
+
+  @override
+  String tpSalesTotal(int sold, int held) {
+    return 'Gesamt: $sold verkauft, $held reserviert';
+  }
 }

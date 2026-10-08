@@ -451,26 +451,6 @@ class EditProfileScreen extends StatelessWidget {
                         icon: Icons.share,
                         onTap: () => _navigateToEditSocialLinks(context, activeProfile),
                       ),
-                      const SizedBox(height: 16),
-                      // Payment methods — the user's own external accounts so
-                      // others can pay them directly (never via GreenGo).
-                      EditSectionCard(
-                        title: AppLocalizations.of(context)!.paymentLinksTitle,
-                        subtitle: _getPaymentLinksSubtitle(context, activeProfile),
-                        icon: Icons.payments,
-                        onTap: () => _navigateToEditPaymentLinks(context, activeProfile),
-                      ),
-                      const SizedBox(height: 16),
-                      // Selling tickets: connect Stripe / Mercado Pago (instant)
-                      // and confirm manual payments. GreenGo takes no fee.
-                      EditSectionCard(
-                        key: const ValueKey('edit-profile-get-paid'),
-                        title: AppLocalizations.of(context)!.tpGetPaidTitle,
-                        subtitle: AppLocalizations.of(context)!.tpGetPaidSubtitle,
-                        icon: Icons.account_balance_wallet_outlined,
-                        onTap: () => Navigator.of(context)
-                            .push(GetPaidScreen.route(activeProfile.userId)),
-                      ),
                       // NOTE: Business / Venue entries were intentionally moved
                       // OUT of "Edit profile". They now live behind the single
                       // top-level "Business" tile near "View my profile" above,
@@ -527,6 +507,27 @@ class EditProfileScreen extends StatelessWidget {
                       // (recorded server-side; the AI callables enforce it).
                       const SizedBox(height: 16),
                       const AiServicesSettingsCard(),
+                      // Money: the user's own payment methods (person-to-person,
+                      // also usable for manually confirmed tickets) and "Get
+                      // paid" (connect Stripe / Mercado Pago for instant tickets,
+                      // confirm manual payments). GreenGo takes no fee.
+                      const SizedBox(height: 16),
+                      EditSectionCard(
+                        key: const ValueKey('account-settings-payment-methods'),
+                        title: AppLocalizations.of(context)!.paymentLinksTitle,
+                        subtitle: _getPaymentLinksSubtitle(context, activeProfile),
+                        icon: Icons.payments,
+                        onTap: () => _navigateToEditPaymentLinks(context, activeProfile),
+                      ),
+                      const SizedBox(height: 16),
+                      EditSectionCard(
+                        key: const ValueKey('account-settings-get-paid'),
+                        title: AppLocalizations.of(context)!.tpGetPaidTitle,
+                        subtitle: AppLocalizations.of(context)!.tpGetPaidSubtitle,
+                        icon: Icons.account_balance_wallet_outlined,
+                        onTap: () => Navigator.of(context)
+                            .push(GetPaidScreen.route(activeProfile.userId)),
+                      ),
                     ],
                   ),
 

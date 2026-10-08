@@ -1,3 +1,4 @@
+import 'manage_times_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -245,6 +246,12 @@ class _SlotsViewState extends State<_SlotsView> {
                 ],
               ),
               actions: [
+                IconButton(
+                  key: const ValueKey('slots-manage-times'),
+                  tooltip: l.mtTitle,
+                  icon: const Icon(Icons.edit_calendar_outlined),
+                  onPressed: () => Navigator.of(context).push(ManageTimesScreen.route(e.id)),
+                ),
                 IconButton(
                   tooltip: l.bkBookings,
                   icon: const Icon(Icons.receipt_long_outlined),

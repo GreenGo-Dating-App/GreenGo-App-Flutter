@@ -5,6 +5,7 @@ import 'package:greengo_chat/features/experience_bookings/domain/booking_failure
 import 'package:greengo_chat/features/experience_bookings/domain/entities/booking.dart';
 import 'package:greengo_chat/features/experience_bookings/domain/repositories/bookings_repository.dart';
 import 'package:greengo_chat/features/experience_bookings/presentation/bloc/booking_flow_bloc.dart';
+import 'package:greengo_chat/features/experience_bookings/data/datasources/experience_availability_service.dart';
 import 'package:greengo_chat/features/user_experiences/domain/entities/user_experience.dart';
 
 UserExperience experience({
@@ -317,6 +318,35 @@ void main() {
     expect(bloc.state.slots.map((s) => s.id), ['s2']);
     expect(bloc.state.selectedSlotId, isNull);
     expect(bloc.state.selectedStart, isNull);
+    await bloc.close();
+  });
+
+  test('recurring availability: no dated slots; a picked time + guests within the seats left submits slotId recurring', () async {
+    final e = UserExperience(
+      id: 'e1', hostId: 'host', title: 'Walk', description: 'd' * 40, category: ExperienceCategory.foodDrink,
+      mainPhotoUrl: '', included: const ['a'], locationName: 'SP', durationMinutes: 120, languages: const ['English'],
+      maxGroupSize: 6, isFree: true, price: 0, status: ExperienceStatus.published, hasRecurringAvailability: true,
+    );
+    final repo = _Repo([], [Right(bookingFor('r_1', 2, 'requested'))]);
+    final bloc = await started(repo, e);
+    expect(bloc.state.isRecurring, isTrue);
+    expect(bloc.state.slotsLoading, isFalse);
+    expect(bloc.state.canSubmit, isFalse);
+    final t = AvailableTime(
+      key: 'k', start: at(0).toUtc(), end: at(2).toUtc(), date: '2030-01-01', time: '10:00',
+      remaining: 2, unitAmount: 0,
+    );
+    bloc.add(BookingRecurringTimePicked(t));
+    await pump();
+    bloc.add(const BookingGuestsChanged(5));
+    await pump();
+    expect(bloc.state.guests, 2); // clamped to the seats left
+    expect(bloc.state.canSubmit, isTrue);
+    bloc.add(const BookingSubmitted(consentVersion: 1));
+    await pump();
+    expect(repo.calls.single.slotId, 'recurring');
+    expect(repo.calls.single.startAt, t.start);
+    expect(bloc.state.result, isNotNull);
     await bloc.close();
   });
 }

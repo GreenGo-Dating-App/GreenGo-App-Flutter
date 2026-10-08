@@ -181,6 +181,16 @@ class TicketPaymentsService {
     return ref.set(t.toMap(), SetOptions(merge: true));
   }
 
+  /// Drag-to-reorder: rewrites sortOrder in one batch (<= 50 types).
+  Future<void> reorderTicketTypes(String eventId, List<String> orderedIds) {
+    final col = _db.collection('events').doc(eventId).collection('ticket_types');
+    final batch = _db.batch();
+    for (var i = 0; i < orderedIds.length; i++) {
+      batch.update(col.doc(orderedIds[i]), {'sortOrder': i});
+    }
+    return batch.commit();
+  }
+
   Future<void> deleteTicketType(String eventId, String typeId) =>
       _db.collection('events').doc(eventId).collection('ticket_types').doc(typeId).delete();
 

@@ -1,3 +1,5 @@
+import '../../../ticket_payments/domain/ticket_payments.dart' show formatTicketAmount;
+import '../widgets/recurring_time_picker.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -251,9 +253,23 @@ class _BookViewState extends State<_BookView> {
                         color: AppColors.textTertiary, fontSize: 13),
                   ),
                   const SizedBox(height: 16),
-                  _slotsSection(l, s),
-                  if (s.selectedSlot != null) _timesSection(l, s),
-                  if (s.selectedTime != null) _guestsSection(l, s),
+                  if (s.isRecurring)
+                    BookingSection(
+                      title: l.bkChooseDate,
+                      icon: Icons.calendar_month_outlined,
+                      children: [
+                        RecurringTimePicker(
+                          experience: e,
+                          selected: s.recurringTime,
+                          onPicked: (t) => context.read<BookingFlowBloc>().add(BookingRecurringTimePicked(t)),
+                        ),
+                      ],
+                    )
+                  else ...[
+                    _slotsSection(l, s),
+                    if (s.selectedSlot != null) _timesSection(l, s),
+                  ],
+                  if (s.selectedTime != null || s.recurringTime != null) _guestsSection(l, s),
                   if (s.needsMethodChoice) _methodSection(l, s),
                   _summary(l, s, e),
                 ],
@@ -511,7 +527,10 @@ class _BookViewState extends State<_BookView> {
       children: [
         Row(children: [
           Expanded(child: Text(l.bkGuestsCount(s.guests), style: muted)),
-          Text(_total(l, e, s.guests),
+          Text(s.recurringTime != null && !e.isFree && s.recurringTime!.currency != null
+                  ? formatTicketAmount(
+                      s.recurringTime!.unitAmount * (e.isPerGroup ? 1 : s.guests), s.recurringTime!.currency!)
+                  : _total(l, e, s.guests),
               style: const TextStyle(
                   color: AppColors.richGold,
                   fontSize: 18,

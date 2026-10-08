@@ -6,6 +6,7 @@ import '../../domain/booking_failure.dart';
 import '../../domain/booking_rules.dart';
 import '../../domain/entities/booking.dart';
 import '../../domain/repositories/bookings_repository.dart';
+import '../../data/datasources/experience_availability_service.dart';
 
 // ───────────────────────────────────────────────────────────── events
 
@@ -59,6 +60,14 @@ class BookingTimesRefreshed extends BookingFlowEvent {
   const BookingTimesRefreshed();
 }
 
+/// Recurring availability: the guest picked a generated time.
+class BookingRecurringTimePicked extends BookingFlowEvent {
+  const BookingRecurringTimePicked(this.time);
+  final AvailableTime time;
+  @override
+  List<Object?> get props => [time];
+}
+
 class BookingGuestsChanged extends BookingFlowEvent {
   const BookingGuestsChanged(this.guests);
   final int guests;
@@ -100,9 +109,15 @@ class BookingFlowState extends Equatable {
     this.result,
     this.failure,
     this.failureSeq = 0,
+    this.recurringTime,
   });
 
   final UserExperience? experience;
+
+  /// Recurring availability: the picked time (with remaining seats + price).
+  final AvailableTime? recurringTime;
+
+  bool get isRecurring => experience?.hasRecurringAvailability == true;
 
   /// Bookable slots (open, future), soonest first.
   final List<ExperienceSlot> slots;
@@ -165,11 +180,25 @@ class BookingFlowState extends Equatable {
   PaymentMethod? get effectiveMethod =>
       method ?? (methods.length == 1 ? methods.first : null);
 
-  int get maxGuests => experience == null
-      ? 0
-      : BookingRules.maxGuests(experience!, selectedSlot);
+  int get maxGuests {
+    if (experience == null) return 0;
+    final base = BookingRules.maxGuests(experience!, selectedSlot);
+    final t = recurringTime;
+    // per_person times have a seat count; per_group books the whole slot.
+    if (isRecurring && t != null && !experience!.isPerGroup && t.remaining < base) return t.remaining;
+    return base;
+  }
 
   bool get canSubmit {
+    if (isRecurring) {
+      final e = experience;
+      final t = recurringTime;
+      if (e == null || t == null || submitting || result != null) return false;
+      if (!t.start.isAfter(DateTime.now())) return false;
+      if (guests < 1 || guests > maxGuests) return false;
+      if (!e.isFree && effectiveMethod == null) return false;
+      return true;
+    }
     final slot = selectedSlot;
     final e = experience;
     if (e == null || slot == null || submitting || result != null) {
@@ -201,8 +230,11 @@ class BookingFlowState extends Equatable {
     bool? submitting,
     Booking? result,
     BookingFailure? failure,
+    AvailableTime? recurringTime,
+    bool clearRecurring = false,
   }) =>
       BookingFlowState(
+        recurringTime: clearRecurring ? null : (recurringTime ?? this.recurringTime),
         experience: experience ?? this.experience,
         slots: slots ?? this.slots,
         slotsLoading: slotsLoading ?? this.slotsLoading,
@@ -242,6 +274,7 @@ class BookingFlowState extends Equatable {
         result,
         failure,
         failureSeq,
+        recurringTime,
       ];
 }
 
@@ -269,6 +302,11 @@ class BookingFlowBloc extends Bloc<BookingFlowEvent, BookingFlowState> {
     on<BookingMethodChanged>(
         (e, emit) => emit(state.copyWith(method: e.method)));
     on<BookingSubmitted>(_onSubmit);
+    on<BookingRecurringTimePicked>((e, emit) {
+      if (state.submitting) return;
+      emit(state.copyWith(recurringTime: e.time));
+      _clampGuests(emit);
+    });
   }
 
   final BookingsRepository _repo;
@@ -287,6 +325,11 @@ class BookingFlowBloc extends Bloc<BookingFlowEvent, BookingFlowState> {
       BookingFlowStarted e, Emitter<BookingFlowState> emit) async {
     _initialSlotId = e.initialSlotId;
     emit(BookingFlowState(experience: e.experience));
+    if (e.experience.hasRecurringAvailability) {
+      // Times come from getExperienceAvailability (RecurringTimePicker).
+      emit(state.copyWith(slotsLoading: false));
+      return;
+    }
     final initial = e.initialSlots;
     final at = e.initialSlotsAt;
     if (initial != null &&
@@ -395,6 +438,32 @@ class BookingFlowBloc extends Bloc<BookingFlowEvent, BookingFlowState> {
   Future<void> _onSubmit(
       BookingSubmitted e, Emitter<BookingFlowState> emit) async {
     if (!state.canSubmit) return;
+    if (state.isRecurring) {
+      final exp = state.experience!;
+      _requestId ??= _newRequestId();
+      emit(state.copyWith(submitting: true));
+      final r = await _repo.createBooking(
+        experience: exp,
+        slotId: 'recurring',
+        guests: state.guests,
+        requestId: _requestId!,
+        method: exp.isFree ? null : state.effectiveMethod,
+        consentVersion: e.consentVersion,
+        startAt: state.recurringTime!.start,
+      );
+      r.fold(
+        (f) {
+          final bf = f is BookingFailure ? f : const BookingFailure(BookingFailure.network, definitive: false);
+          if (bf.definitive) _requestId = null;
+          emit(state.copyWith(submitting: false, failure: bf, clearRecurring: bf.definitive));
+        },
+        (booking) {
+          _requestId = null;
+          emit(state.copyWith(submitting: false, result: booking));
+        },
+      );
+      return;
+    }
     final exp = state.experience!;
     final slot = state.selectedSlot!;
     _requestId ??= _newRequestId();

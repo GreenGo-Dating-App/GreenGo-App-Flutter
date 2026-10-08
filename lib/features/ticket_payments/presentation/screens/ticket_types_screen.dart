@@ -49,42 +49,54 @@ class TicketTypesScreen extends StatelessWidget {
               ),
             );
           }
-          return ListView.separated(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 96),
-            itemCount: types.length,
-            separatorBuilder: (_, __) => const SizedBox(height: 10),
-            itemBuilder: (_, i) {
-              final t = types[i];
-              return ListTile(
-                tileColor: AppColors.backgroundCard,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                title: Text(t.name, style: const TextStyle(color: AppColors.textPrimary)),
-                subtitle: Text(
-                  [
-                    t.price == 0 ? l.tpFree : formatTicketAmount(t.price, currency),
-                    l.tpTypeSold(t.sold, t.quantity?.toString() ?? '∞'),
-                    if (!t.active || t.hidden) l.tpTypeUnavailable,
-                  ].join(' · '),
-                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5),
-                ),
-                trailing: Row(mainAxisSize: MainAxisSize.min, children: [
-                  if (i > 0)
-                    IconButton(
-                      icon: const Icon(Icons.arrow_upward, size: 18, color: AppColors.textTertiary),
-                      onPressed: () async {
-                        final above = types[i - 1];
-                        await svc.saveTicketType(eventId, _with(t, sortOrder: above.sortOrder));
-                        await svc.saveTicketType(eventId, _with(above, sortOrder: t.sortOrder == above.sortOrder ? t.sortOrder + 1 : t.sortOrder));
-                      },
+          return Column(children: [
+            TicketTypesSummary(types: types, currency: currency),
+            Expanded(
+              child: ReorderableListView.builder(
+                key: const ValueKey('ticket-types-reorder'),
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 96),
+                itemCount: types.length,
+                onReorder: (from, to) {
+                  final ids = types.map((t) => t.id).toList();
+                  final moved = ids.removeAt(from);
+                  ids.insert(to > from ? to - 1 : to, moved);
+                  svc.reorderTicketTypes(eventId, ids);
+                },
+                itemBuilder: (_, i) {
+                  final t = types[i];
+                  return Padding(
+                    key: ValueKey('ticket-type-${t.id}'),
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: ListTile(
+                      tileColor: AppColors.backgroundCard,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      leading: ReorderableDragStartListener(
+                        index: i,
+                        child: Semantics(
+                          label: l.tpReorder,
+                          child: const Icon(Icons.drag_indicator, color: AppColors.textTertiary),
+                        ),
+                      ),
+                      title: Text(t.name, style: const TextStyle(color: AppColors.textPrimary)),
+                      subtitle: Text(
+                        [
+                          t.price == 0 ? l.tpFree : formatTicketAmount(t.price, currency),
+                          l.tpTypeSold(t.sold, t.quantity?.toString() ?? '∞'),
+                          if (!t.active || t.hidden) l.tpTypeUnavailable,
+                        ].join(' · '),
+                        style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5),
+                      ),
+                      trailing: IconButton(
+                        tooltip: l.tpEditTicketType,
+                        icon: const Icon(Icons.edit, size: 18, color: AppColors.richGold),
+                        onPressed: () => _edit(context, svc, t, t.sortOrder),
+                      ),
                     ),
-                  IconButton(
-                    icon: const Icon(Icons.edit, size: 18, color: AppColors.richGold),
-                    onPressed: () => _edit(context, svc, t, t.sortOrder),
-                  ),
-                ]),
-              );
-            },
-          );
+                  );
+                },
+              ),
+            ),
+          ]);
         },
       ),
     );
@@ -234,5 +246,56 @@ class TicketTypesScreen extends StatelessWidget {
         c.dispose();
       }
     }
+  }
+}
+
+/// Organizer view: sales per ticket type (sold, held in open orders, left,
+/// revenue) and totals.
+class TicketTypesSummary extends StatelessWidget {
+  const TicketTypesSummary({super.key, required this.types, required this.currency});
+
+  final List<TicketType> types;
+  final String currency;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context)!;
+    final sold = types.fold<int>(0, (s, t) => s + t.sold);
+    final held = types.fold<int>(0, (s, t) => s + t.held);
+    final revenue = types.fold<int>(0, (s, t) => s + t.sold * t.price);
+    return Container(
+      key: const ValueKey('ticket-types-summary'),
+      margin: const EdgeInsets.fromLTRB(16, 16, 16, 4),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: AppColors.backgroundCard,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        Text(l.tpSalesSummary,
+            style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w700)),
+        const SizedBox(height: 6),
+        for (final t in types)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 2),
+            child: Row(children: [
+              Expanded(child: Text(t.name, style: const TextStyle(color: AppColors.textSecondary))),
+              Text(l.tpSalesRow(t.sold, t.held, t.left?.toString() ?? '∞'),
+                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+              const SizedBox(width: 10),
+              Text(formatTicketAmount(t.sold * t.price, currency),
+                  style: const TextStyle(color: AppColors.richGold, fontSize: 12.5)),
+            ]),
+          ),
+        const Divider(color: AppColors.divider),
+        Row(children: [
+          Expanded(child: Text(l.tpSalesTotal(sold, held), style: const TextStyle(color: AppColors.textPrimary))),
+          Text(formatTicketAmount(revenue, currency),
+              key: const ValueKey('ticket-types-revenue'),
+              style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.w700)),
+        ]),
+      ]),
+    );
   }
 }

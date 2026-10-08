@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
@@ -153,6 +154,11 @@ class _EditorFormState extends State<_EditorForm> {
   String _pricingMode = 'per_person';
   final _groupPrice = TextEditingController();
   final _maxPerUser = TextEditingController(text: '4');
+  // Date-based price: a different price on weekend days (day overrides are
+  // set in Manage times).
+  bool _weekendOn = false;
+  final _weekendPrice = TextEditingController();
+  Set<int> _weekendDays = {6, 7};
   CancellationPolicy _policy = CancellationPolicy.fallback;
   // Bookings: host approves each request (false = instant booking).
 
@@ -233,6 +239,15 @@ class _EditorFormState extends State<_EditorForm> {
             : (e.groupPrice! / 100).toStringAsFixed(2);
       }
       _maxPerUser.text = e.maxTicketsPerUser?.toString() ?? '';
+      _weekendDays = e.weekendDays.toSet();
+      if (e.weekendPrice != null) {
+        _weekendOn = true;
+        final cur = isoCurrencyFor(e.currency) ?? 'usd';
+        final v = e.isPerGroup
+            ? e.weekendPrice! / (currencyExponent(cur) == 0 ? 1 : 100)
+            : e.weekendPrice!;
+        _weekendPrice.text = v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(2);
+      }
       if (e.acceptsOnline) {
         _ticket = TicketPaymentChoice(
           provider: TicketProvider.fromWire(e.paymentProvider),
@@ -260,6 +275,7 @@ class _EditorFormState extends State<_EditorForm> {
       _paymentValue,
       _groupPrice,
       _maxPerUser,
+      _weekendPrice,
       _availability,
       _cancellation,
       ..._included,
@@ -544,6 +560,16 @@ class _EditorFormState extends State<_EditorForm> {
             : toMinorUnits(double.tryParse(_groupPrice.text.trim().replaceAll(',', '.')) ?? 0,
                 isoCurrencyFor(_currency) ?? 'usd'),
         maxTicketsPerUser: int.tryParse(_maxPerUser.text.trim()),
+        weekendPrice: _isFree || !_weekendOn
+            ? null
+            : (() {
+                final v = double.tryParse(_weekendPrice.text.trim().replaceAll(',', '.'));
+                if (v == null || v <= 0) return null;
+                return _pricingMode == 'per_group'
+                    ? toMinorUnits(v, isoCurrencyFor(_currency) ?? 'usd').toDouble()
+                    : v;
+              })(),
+        weekendDays: (_weekendDays.toList()..sort()),
         // Availability is defined by the dates (slots), not free text.
         availability: null,
         cancellationPolicy: _policy,
@@ -1431,6 +1457,37 @@ class _EditorFormState extends State<_EditorForm> {
                 style: const TextStyle(color: AppColors.richGold, fontSize: 12.5),
               ),
             ),
+        ],
+        const SizedBox(height: 8),
+        SwitchListTile(
+          key: const ValueKey('experience-weekend-toggle'),
+          contentPadding: EdgeInsets.zero,
+          activeColor: AppColors.richGold,
+          title: Text(l.mtWeekendPriceToggle, style: _text),
+          subtitle: Text(l.mtWeekendPriceInfo,
+              style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+          value: _weekendOn,
+          onChanged: (v) => setState(() => _weekendOn = v),
+        ),
+        if (_weekendOn) ...[
+          TextField(
+            key: const ValueKey('experience-weekend-price'),
+            controller: _weekendPrice,
+            keyboardType: const TextInputType.numberWithOptions(decimal: true),
+            inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9.,]'))],
+            style: _text,
+            decoration: _dec('${l.mtWeekendPrice} ($_currency)'),
+          ),
+          const SizedBox(height: 6),
+          Wrap(spacing: 6, children: [
+            for (var wd = 1; wd <= 7; wd++)
+              FilterChip(
+                key: ValueKey('experience-weekend-day-$wd'),
+                label: Text(DateFormat.E(Localizations.localeOf(context).toString()).format(DateTime(2024, 1, wd))),
+                selected: _weekendDays.contains(wd),
+                onSelected: (v) => setState(() => v ? _weekendDays.add(wd) : _weekendDays.remove(wd)),
+              ),
+          ]),
         ],
         const SizedBox(height: 10),
         TextField(

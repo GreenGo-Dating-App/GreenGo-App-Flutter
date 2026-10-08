@@ -101,6 +101,9 @@ class UserExperienceModel {
       paymentInstructions: _optStr(d['paymentInstructions']),
       pricingMode: d['pricingMode'] == 'per_group' ? 'per_group' : 'per_person',
       groupPrice: (d['groupPrice'] as num?)?.toInt(),
+      hasRecurringAvailability: d['availabilityRules'] is Map,
+      weekendPrice: (d['weekendPrice'] as num?)?.toDouble(),
+      weekendDays: (d['weekendDays'] as List?)?.whereType<num>().map((e) => e.toInt()).toList() ?? const [6, 7],
       maxTicketsPerUser: !d.containsKey('maxTicketsPerUser')
           ? 4
           : ((d['maxTicketsPerUser'] as num?)?.toInt() == 0
@@ -180,6 +183,8 @@ class UserExperienceModel {
       'paymentInstructions': e.isFree || e.paymentProvider != 'link' ? null : e.paymentInstructions,
       'pricingMode': e.pricingMode,
       'groupPrice': e.isFree || !e.isPerGroup ? null : e.groupPrice,
+      'weekendPrice': e.isFree ? null : e.weekendPrice,
+      'weekendDays': e.weekendDays,
       'maxTicketsPerUser': e.maxTicketsPerUser,
       'paymentLink': e.isFree ||
               e.paymentLink == null ||

@@ -9036,5 +9036,345 @@
   "tpViewTickets": "View tickets",
   "@tpViewTickets": {
     "description": "Ticket payments"
+  },
+  "mtAddTime": "Add time",
+  "@mtAddTime": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtAdvanced": "Advanced",
+  "@mtAdvanced": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtApplyAll": "Apply to all selected days",
+  "@mtApplyAll": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtAvailableFrom": "Available from",
+  "@mtAvailableFrom": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtAvailableUntil": "Until",
+  "@mtAvailableUntil": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtBreak": "Break between sessions",
+  "@mtBreak": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtBulkCloseRange": "Close a date range (vacation)",
+  "@mtBulkCloseRange": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtBulkHint": "Changes are saved when you tap Save.",
+  "@mtBulkHint": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtBulkRemoveTime": "Remove a time from every chosen weekday",
+  "@mtBulkRemoveTime": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtBulkTitle": "Quick changes",
+  "@mtBulkTitle": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtCalendarTitle": "Calendar",
+  "@mtCalendarTitle": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtCapacity": "Places per time",
+  "@mtCapacity": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtCloseDay": "Closed this day",
+  "@mtCloseDay": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtClosed": "Closed",
+  "@mtClosed": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtConfirmBody": "{count} booked times would be removed. Those bookings will be cancelled, the guests notified and refunded.",
+  "@mtConfirmBody": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mtConfirmCancelBookings": "Cancel those bookings",
+  "@mtConfirmCancelBookings": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtConfirmTitle": "Some times are booked",
+  "@mtConfirmTitle": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtCopyToMonth": "Copy to the whole month",
+  "@mtCopyToMonth": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtCopyToWeekdays": "Copy to every {weekday} this month",
+  "@mtCopyToWeekdays": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "mtDateFrom": "From date",
+  "@mtDateFrom": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtDateTo": "Until date",
+  "@mtDateTo": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtDaysOfWeek": "Days of the week",
+  "@mtDaysOfWeek": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtDone": "Done",
+  "@mtDone": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtDuration": "Duration",
+  "@mtDuration": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtErrOverlap": "Times would overlap: \"start every\" must be at least the duration.",
+  "@mtErrOverlap": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtErrRules": "Check the schedule settings.",
+  "@mtErrRules": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtErrTimeExists": "That time is already on the list.",
+  "@mtErrTimeExists": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtErrTimeFit": "The session would end after midnight.",
+  "@mtErrTimeFit": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtErrTimeOverlaps": "It overlaps another time of that day.",
+  "@mtErrTimeOverlaps": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtErrWeekdays": "Choose at least one day of the week.",
+  "@mtErrWeekdays": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtErrWindow": "\"Until\" must be after \"Available from\".",
+  "@mtErrWindow": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtHours": "{h} h",
+  "@mtHours": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "h": {
+        "type": "int"
+      }
+    }
+  },
+  "mtHoursMinutes": "{h} h {m} min",
+  "@mtHoursMinutes": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "h": {
+        "type": "int"
+      },
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "mtLegendChanged": "changed day",
+  "@mtLegendChanged": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtLegendSpecialPrice": "special price",
+  "@mtLegendSpecialPrice": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtLegendWeekendPrice": "weekend price",
+  "@mtLegendWeekendPrice": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtMinutes": "{m} min",
+  "@mtMinutes": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "mtNextMonth": "Next month",
+  "@mtNextMonth": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtNoBreak": "No break",
+  "@mtNoBreak": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtNoEnd": "No end date",
+  "@mtNoEnd": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtPrevMonth": "Previous month",
+  "@mtPrevMonth": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtPreview": "Times each selected day",
+  "@mtPreview": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtRemoveTime": "Remove time",
+  "@mtRemoveTime": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtResetDay": "Reset to default",
+  "@mtResetDay": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtSaved": "Schedule saved",
+  "@mtSaved": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtSavedCancelled": "Schedule saved — {count} bookings cancelled and refunded",
+  "@mtSavedCancelled": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "mtSetupTitle": "Your times",
+  "@mtSetupTitle": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtSpecialPrice": "Special price for this day",
+  "@mtSpecialPrice": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtSpecialPriceHint": "Empty = normal price",
+  "@mtSpecialPriceHint": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtStartEvery": "Start every",
+  "@mtStartEvery": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtStartEveryAuto": "Automatic (duration + break)",
+  "@mtStartEveryAuto": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtTime": "Time",
+  "@mtTime": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtTimezone": "Time zone",
+  "@mtTimezone": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtTitle": "Manage times",
+  "@mtTitle": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtWeekendPrice": "Weekend price",
+  "@mtWeekendPrice": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtWeekendPriceInfo": "Applies on the days you pick; a special price for a single day is set in Manage times.",
+  "@mtWeekendPriceInfo": {
+    "description": "Ticket payments / schedules"
+  },
+  "mtWeekendPriceToggle": "Different price on weekends",
+  "@mtWeekendPriceToggle": {
+    "description": "Ticket payments / schedules"
+  },
+  "rtGroupsLeft": "{count, plural, =1{1 group slot left} other{{count} group slots left}}",
+  "@rtGroupsLeft": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rtSeatsLeft": "{count, plural, =1{1 seat left} other{{count} seats left}}",
+  "@rtSeatsLeft": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rtSpecialPrice": "special price",
+  "@rtSpecialPrice": {
+    "description": "Ticket payments / schedules"
+  },
+  "rtTimesIn": "Times in the host's time zone ({zone})",
+  "@rtTimesIn": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "zone": {
+        "type": "String"
+      }
+    }
+  },
+  "rtWeekendPrice": "weekend price",
+  "@rtWeekendPrice": {
+    "description": "Ticket payments / schedules"
+  },
+  "rtYourTime": "Your time: {time}",
+  "@rtYourTime": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "tpReorder": "Drag to reorder",
+  "@tpReorder": {
+    "description": "Ticket payments / schedules"
+  },
+  "tpSalesRow": "{sold} sold · {held} reserved · {left} left",
+  "@tpSalesRow": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "sold": {
+        "type": "int"
+      },
+      "held": {
+        "type": "int"
+      },
+      "left": {
+        "type": "String"
+      }
+    }
+  },
+  "tpSalesSummary": "Sales by ticket type",
+  "@tpSalesSummary": {
+    "description": "Ticket payments / schedules"
+  },
+  "tpSalesTotal": "Total: {sold} sold, {held} reserved",
+  "@tpSalesTotal": {
+    "description": "Ticket payments / schedules",
+    "placeholders": {
+      "sold": {
+        "type": "int"
+      },
+      "held": {
+        "type": "int"
+      }
+    }
   }
 }

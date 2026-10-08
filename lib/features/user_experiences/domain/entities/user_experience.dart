@@ -143,6 +143,9 @@ class UserExperience extends Equatable {
     this.pricingMode = 'per_person',
     this.groupPrice,
     this.maxTicketsPerUser = 4,
+    this.hasRecurringAvailability = false,
+    this.weekendPrice,
+    this.weekendDays = const [6, 7],
     this.availability,
     this.cancellationPolicy = CancellationPolicy.moderate,
     this.cancellationNotes,
@@ -221,6 +224,16 @@ class UserExperience extends Equatable {
   final int? maxTicketsPerUser;
 
   bool get isPerGroup => pricingMode == 'per_group';
+
+  /// Host schedule set in "Manage times" (availabilityRules): buyers pick a
+  /// generated time instead of a dated window.
+  final bool hasRecurringAvailability;
+
+  /// Price on [weekendDays] (same unit as the base price of the mode).
+  final double? weekendPrice;
+
+  /// 1 = Monday .. 7 = Sunday (default Saturday + Sunday).
+  final List<int> weekendDays;
 
   bool get acceptsOnline =>
       !isFree && paymentMethods.contains(PaymentMethod.online) && paymentProvider != null;
@@ -399,6 +412,9 @@ class UserExperience extends Equatable {
         pricingMode: pricingMode,
         groupPrice: groupPrice,
         maxTicketsPerUser: maxTicketsPerUser,
+        hasRecurringAvailability: hasRecurringAvailability,
+        weekendPrice: weekendPrice,
+        weekendDays: weekendDays,
         availability: availability,
         cancellationPolicy: cancellationPolicy,
         cancellationNotes: cancellationNotes,
@@ -456,6 +472,9 @@ class UserExperience extends Equatable {
         pricingMode,
         groupPrice,
         maxTicketsPerUser,
+        hasRecurringAvailability,
+        weekendPrice,
+        weekendDays,
         availability,
         cancellationPolicy,
         cancellationNotes,
