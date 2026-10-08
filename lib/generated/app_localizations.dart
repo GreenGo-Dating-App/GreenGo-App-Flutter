@@ -28933,6 +28933,72 @@ abstract class AppLocalizations {
   /// **'Could not open the billing portal. Please try again.'**
   String get billingPortalOpenFailed;
 
+
+  /// No description provided for @ageAssuranceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your age to use this feature'**
+  String get ageAssuranceTitle;
+
+  /// No description provided for @ageAssuranceBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Where you live, the law requires us to confirm that you are an adult before you can discover people or start new private conversations. The rest of GreenGo works as usual.'**
+  String get ageAssuranceBody;
+
+  /// No description provided for @ageAssuranceExistingChats.
+  ///
+  /// In en, this message translates to:
+  /// **'Conversations you have already taken part in stay available.'**
+  String get ageAssuranceExistingChats;
+
+  /// No description provided for @ageAssuranceStoreCheckAndroid.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm with Google Play'**
+  String get ageAssuranceStoreCheckAndroid;
+
+  /// No description provided for @ageAssuranceStoreCheckIos.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm with the App Store'**
+  String get ageAssuranceStoreCheckIos;
+
+  /// No description provided for @ageAssuranceStoreHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Uses the age your store account has already confirmed. We only receive an age range, never your date of birth.'**
+  String get ageAssuranceStoreHint;
+
+  /// No description provided for @ageAssuranceIdOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify with an ID document'**
+  String get ageAssuranceIdOption;
+
+  /// No description provided for @ageAssuranceStoreUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Your store account could not confirm your age. Please verify with an ID document instead.'**
+  String get ageAssuranceStoreUnavailable;
+
+  /// No description provided for @ageAssuranceVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you, your age is confirmed.'**
+  String get ageAssuranceVerified;
+
+  /// No description provided for @ageAssuranceWebNote.
+  ///
+  /// In en, this message translates to:
+  /// **'On the web, your age is confirmed with an ID document.'**
+  String get ageAssuranceWebNote;
+
+  /// No description provided for @ageVerifyWhyRegional.
+  ///
+  /// In en, this message translates to:
+  /// **'To discover people and start new private chats where you live, we need to confirm you are over 18.'**
+  String get ageVerifyWhyRegional;
   /// No description provided for @subscriptionAutoRenewInfoWeb.
   ///
   /// In en, this message translates to:

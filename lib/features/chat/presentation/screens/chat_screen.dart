@@ -61,6 +61,7 @@ import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../profile/data/private_album.dart';
+import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// Chat Screen
 ///
@@ -95,6 +96,31 @@ class _ChatScreenState extends State<ChatScreen> {
   late final ChatBloc _chatBloc;
   late final ChatRemoteDataSourceImpl _chatDataSource;
   late final AlbumAccessDatasource _albumAccessDatasource;
+
+  /// P3-1 age assurance: every send passes this guard. Where strong age
+  /// assurance is required and missing, only conversations the user already
+  /// wrote in stay open for sending; otherwise the gate screen is shown.
+  Future<void> _addSend(ChatEvent event) async {
+    final st = _chatBloc.state;
+    String? conversationId;
+    var wrote = false;
+    if (st is ChatLoaded) {
+      conversationId = st.conversation.conversationId;
+      wrote = st.messages.any((m) => m.senderId == widget.currentUserId);
+    } else if (st is ChatSending) {
+      conversationId = st.conversation.conversationId;
+      wrote = st.messages.any((m) => m.senderId == widget.currentUserId);
+    }
+    conversationId ??= widget.initialConversation?.conversationId;
+    final ok = await AgeAssuranceGuard.ensureCanSend(
+      context,
+      conversationId: conversationId,
+      userId: widget.currentUserId,
+      alreadyWrote: wrote,
+    );
+    if (!ok || !mounted) return;
+    _chatBloc.add(event);
+  }
 
   // Cache for translated messages (all messages translated to selected language)
   final Map<String, String> _translatedMessages = {};
@@ -647,13 +673,13 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // Send as reply if replying to a message
     if (_replyingToMessage != null) {
-      _chatBloc.add(ChatMessageReplied(
+      _addSend(ChatMessageReplied(
         content: content,
         replyToMessageId: _replyingToMessage!.messageId,
       ));
       _clearReplyMessage();
     } else {
-      _chatBloc.add(ChatMessageSent(content: content));
+      _addSend(ChatMessageSent(content: content));
     }
 
     // Play the "message sent" sound effect.
@@ -766,7 +792,7 @@ class _ChatScreenState extends State<ChatScreen> {
       ));
       return;
     }
-    _chatBloc.add(ChatMessageSent(
+    _addSend(ChatMessageSent(
       content: '${position.latitude},${position.longitude}',
       type: MessageType.location,
       metadata: LocationShareService.metadataFor(
@@ -1053,7 +1079,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (mounted) {
         // Send message with image URL
-        _chatBloc.add(ChatMessageSent(
+        _addSend(ChatMessageSent(
           content: downloadUrl,
           type: MessageType.image,
         ));
@@ -1094,7 +1120,7 @@ class _ChatScreenState extends State<ChatScreen> {
         if (file.existsSync()) file.deleteSync();
       } catch (_) {}
       if (mounted) {
-        _chatBloc.add(ChatMessageSent(
+        _addSend(ChatMessageSent(
           content: downloadUrl,
           type: MessageType.voiceNote,
           metadata: {'durationMs': duration.inMilliseconds},
@@ -1162,7 +1188,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
       if (mounted) {
         // Send message with video URL
-        _chatBloc.add(ChatMessageSent(
+        _addSend(ChatMessageSent(
           content: downloadUrl,
           type: MessageType.video,
         ));
@@ -1437,7 +1463,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _sendAlbumPhotosSequentially(List<String> photoUrls) async {
     for (final photoUrl in photoUrls) {
       if (!mounted) return;
-      _chatBloc.add(ChatMessageSent(
+      _addSend(ChatMessageSent(
         content: photoUrl,
         type: MessageType.image,
       ));
@@ -1626,7 +1652,7 @@ class _ChatScreenState extends State<ChatScreen> {
       );
       if (mounted) {
         final name = _currentUserName ?? 'Someone';
-        _chatBloc.add(ChatMessageSent(
+        _addSend(ChatMessageSent(
           content: '$name shared their private album',
           type: MessageType.albumShare,
           metadata: {
@@ -1657,7 +1683,7 @@ class _ChatScreenState extends State<ChatScreen> {
       );
       if (mounted) {
         final name = _currentUserName ?? 'Someone';
-        _chatBloc.add(ChatMessageSent(
+        _addSend(ChatMessageSent(
           content: '$name revoked album access',
           type: MessageType.albumRevoke,
           metadata: {
@@ -1741,6 +1767,13 @@ class _ChatScreenState extends State<ChatScreen> {
                         color: AppColors.richGold,
                       ),
                     );
+                  }
+
+                  if (state is ChatError &&
+                      state.message.contains('age-assurance-required')) {
+                    // P3-1: opening a NEW conversation while age assurance
+                    // is required: show the gate, not an error.
+                    return const AgeAssuranceRequiredPanel();
                   }
 
                   if (state is ChatError) {

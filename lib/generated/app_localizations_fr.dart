@@ -16707,6 +16707,46 @@ class AppLocalizationsFr extends AppLocalizations {
       'Résiliez à tout moment dans le portail de facturation';
 
   @override
+  String get ageAssuranceTitle =>
+      'Vérifiez votre âge pour utiliser cette fonctionnalité';
+
+  @override
+  String get ageAssuranceBody =>
+      'Là où vous vivez, la loi nous oblige à confirmer que vous êtes majeur avant que vous puissiez découvrir des personnes ou commencer de nouvelles conversations privées. Le reste de GreenGo fonctionne normalement.';
+
+  @override
+  String get ageAssuranceExistingChats =>
+      'Les conversations auxquelles vous avez déjà participé restent disponibles.';
+
+  @override
+  String get ageAssuranceStoreCheckAndroid => 'Confirmer avec Google Play';
+
+  @override
+  String get ageAssuranceStoreCheckIos => 'Confirmer avec l\'App Store';
+
+  @override
+  String get ageAssuranceStoreHint =>
+      'Utilise l\'âge déjà confirmé par votre compte de la boutique. Nous recevons seulement une tranche d\'âge, jamais votre date de naissance.';
+
+  @override
+  String get ageAssuranceIdOption => 'Vérifier avec une pièce d\'identité';
+
+  @override
+  String get ageAssuranceStoreUnavailable =>
+      'Votre compte de la boutique n\'a pas pu confirmer votre âge. Veuillez le vérifier avec une pièce d\'identité.';
+
+  @override
+  String get ageAssuranceVerified => 'Merci, votre âge est confirmé.';
+
+  @override
+  String get ageAssuranceWebNote =>
+      'Sur le web, votre âge est confirmé avec une pièce d\'identité.';
+
+  @override
+  String get ageVerifyWhyRegional =>
+      'Pour découvrir des personnes et commencer de nouvelles discussions privées là où vous vivez, nous devons confirmer que vous avez plus de 18 ans.';
+
+  @override
   String get billingPortalOpenFailed =>
       'Impossible d\'ouvrir le portail de facturation. Veuillez réessayer.';
 

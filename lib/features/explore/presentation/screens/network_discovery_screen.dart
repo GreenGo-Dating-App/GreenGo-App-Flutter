@@ -39,6 +39,7 @@ import '../../../profile/presentation/widgets/people_tags_editor.dart';
 import '../../../saved_searches/data/saved_searches_service.dart';
 import '../../../saved_searches/presentation/screens/saved_searches_screen.dart';
 import '../../../../core/services/effective_tier.dart';
+import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// A full-screen, Apple-safe people directory reached from the Explore
 /// "Network Discovery → See all" action.
@@ -855,7 +856,11 @@ class _NetworkDiscoveryScreenState extends State<NetworkDiscoveryScreen> {
   // ── UI ───────────────────────────────────────────────────────────────────
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) =>
+      // P3-1: people discovery needs age assurance where it is required.
+      AgeAssuranceGateView(child: Builder(builder: _buildGated));
+
+  Widget _buildGated(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
 

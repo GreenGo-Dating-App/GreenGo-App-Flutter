@@ -16442,6 +16442,45 @@ class AppLocalizationsEn extends AppLocalizations {
       'Cancel anytime in the billing portal';
 
   @override
+  String get ageAssuranceTitle => 'Verify your age to use this feature';
+
+  @override
+  String get ageAssuranceBody =>
+      'Where you live, the law requires us to confirm that you are an adult before you can discover people or start new private conversations. The rest of GreenGo works as usual.';
+
+  @override
+  String get ageAssuranceExistingChats =>
+      'Conversations you have already taken part in stay available.';
+
+  @override
+  String get ageAssuranceStoreCheckAndroid => 'Confirm with Google Play';
+
+  @override
+  String get ageAssuranceStoreCheckIos => 'Confirm with the App Store';
+
+  @override
+  String get ageAssuranceStoreHint =>
+      'Uses the age your store account has already confirmed. We only receive an age range, never your date of birth.';
+
+  @override
+  String get ageAssuranceIdOption => 'Verify with an ID document';
+
+  @override
+  String get ageAssuranceStoreUnavailable =>
+      'Your store account could not confirm your age. Please verify with an ID document instead.';
+
+  @override
+  String get ageAssuranceVerified => 'Thank you, your age is confirmed.';
+
+  @override
+  String get ageAssuranceWebNote =>
+      'On the web, your age is confirmed with an ID document.';
+
+  @override
+  String get ageVerifyWhyRegional =>
+      'To discover people and start new private chats where you live, we need to confirm you are over 18.';
+
+  @override
   String get billingPortalOpenFailed =>
       'Could not open the billing portal. Please try again.';
 

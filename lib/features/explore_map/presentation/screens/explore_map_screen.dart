@@ -11,6 +11,7 @@ import '../bloc/explore_map_bloc.dart';
 import '../bloc/explore_map_event.dart';
 import '../bloc/explore_map_state.dart';
 import '../../../../core/utils/distance_bucket.dart';
+import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// Explore Map Screen — List-based nearby users view.
 ///
@@ -65,7 +66,11 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) =>
+      // P3-1: people discovery needs age assurance where it is required.
+      AgeAssuranceGateView(child: Builder(builder: _buildGated));
+
+  Widget _buildGated(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,

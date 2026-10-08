@@ -42,7 +42,14 @@ class AgeVerificationScreen extends StatefulWidget {
   State<AgeVerificationScreen> createState() => _AgeVerificationScreenState();
 }
 
-enum AgeVerificationReason { publishing, phoneAccount }
+enum AgeVerificationReason {
+  publishing,
+  phoneAccount,
+
+  /// P3-1: discovery / new private chats in a region that requires strong
+  /// age assurance.
+  regionalAssurance,
+}
 
 class _AgeVerificationScreenState extends State<AgeVerificationScreen> {
   final _service = AgeVerificationService();
@@ -174,9 +181,12 @@ class _AgeVerificationScreenState extends State<AgeVerificationScreen> {
                 size: 56, color: AppColors.richGold),
             const SizedBox(height: 20),
             Text(
-              widget.reason == AgeVerificationReason.phoneAccount
-                  ? l10n.ageVerifyWhyPhone
-                  : l10n.ageVerifyWhyPublish,
+              switch (widget.reason) {
+                AgeVerificationReason.phoneAccount => l10n.ageVerifyWhyPhone,
+                AgeVerificationReason.regionalAssurance =>
+                  l10n.ageVerifyWhyRegional,
+                AgeVerificationReason.publishing => l10n.ageVerifyWhyPublish,
+              },
               textAlign: TextAlign.center,
               style: const TextStyle(
                 color: AppColors.textPrimary,

@@ -8,6 +8,7 @@ import '../../domain/entities/message.dart';
 import '../chat_constants.dart';
 import '../models/conversation_model.dart';
 import '../models/message_model.dart';
+import '../../../safety/data/services/age_assurance_service.dart';
 
 /// Chat Remote Data Source
 ///
@@ -352,6 +353,12 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       final userId1 = matchData['userId1'] as String;
       final userId2 = matchData['userId2'] as String;
 
+      // P3-1: no NEW private conversation without age assurance where it is
+      // required (UX guard; the rules of the lockdown wave enforce it).
+      if (await AgeAssuranceService.instance.isBlocked()) {
+        throw const AgeAssuranceRequiredException();
+      }
+
       // Create new conversation
       final conversationRef = firestore.collection('conversations').doc();
 
@@ -456,6 +463,14 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       // Get or create conversation
       final conversation = await getConversation(matchId);
+
+      // P3-1: where strong age assurance is required and missing, only
+      // conversations the user already wrote in stay open for sending.
+      final ageGate = AgeAssuranceService.instance;
+      if (await ageGate.isBlocked() &&
+          !await ageGate.hasWrittenIn(conversation.conversationId, senderId)) {
+        throw const AgeAssuranceRequiredException();
+      }
 
       // Create message
       final messageRef = firestore
@@ -2114,6 +2129,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
               .set({'businessInquiry': true}, SetOptions(merge: true));
         }
         return existing;
+      }
+
+      // P3-1: no NEW private conversation without age assurance.
+      if (await AgeAssuranceService.instance.isBlocked()) {
+        throw const AgeAssuranceRequiredException();
       }
 
       // Create new search conversation

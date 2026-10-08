@@ -16632,6 +16632,45 @@ class AppLocalizationsEs extends AppLocalizations {
       'Cancela cuando quieras en el portal de facturación';
 
   @override
+  String get ageAssuranceTitle => 'Verifica tu edad para usar esta función';
+
+  @override
+  String get ageAssuranceBody =>
+      'Donde vives, la ley nos exige confirmar que eres mayor de edad antes de que puedas descubrir personas o iniciar nuevas conversaciones privadas. El resto de GreenGo funciona con normalidad.';
+
+  @override
+  String get ageAssuranceExistingChats =>
+      'Las conversaciones en las que ya has participado siguen disponibles.';
+
+  @override
+  String get ageAssuranceStoreCheckAndroid => 'Confirmar con Google Play';
+
+  @override
+  String get ageAssuranceStoreCheckIos => 'Confirmar con el App Store';
+
+  @override
+  String get ageAssuranceStoreHint =>
+      'Usa la edad que tu cuenta de la tienda ya ha confirmado. Solo recibimos un rango de edad, nunca tu fecha de nacimiento.';
+
+  @override
+  String get ageAssuranceIdOption => 'Verificar con un documento de identidad';
+
+  @override
+  String get ageAssuranceStoreUnavailable =>
+      'Tu cuenta de la tienda no pudo confirmar tu edad. Verifícala con un documento de identidad.';
+
+  @override
+  String get ageAssuranceVerified => 'Gracias, tu edad está confirmada.';
+
+  @override
+  String get ageAssuranceWebNote =>
+      'En la web, tu edad se confirma con un documento de identidad.';
+
+  @override
+  String get ageVerifyWhyRegional =>
+      'Para descubrir personas e iniciar nuevos chats privados donde vives, necesitamos confirmar que tienes más de 18 años.';
+
+  @override
   String get billingPortalOpenFailed =>
       'No se pudo abrir el portal de facturación. Inténtalo de nuevo.';
 

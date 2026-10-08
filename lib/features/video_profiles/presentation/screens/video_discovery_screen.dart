@@ -15,6 +15,7 @@ import '../../domain/entities/video_profile.dart';
 import '../bloc/video_profile_bloc.dart';
 import '../bloc/video_profile_event.dart';
 import '../bloc/video_profile_state.dart';
+import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// TikTok-style full-screen video discovery screen.
 ///
@@ -254,7 +255,11 @@ class _VideoDiscoveryScreenState extends State<VideoDiscoveryScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) =>
+      // P3-1: people discovery needs age assurance where it is required.
+      AgeAssuranceGateView(child: Builder(builder: _buildGated));
+
+  Widget _buildGated(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.pureBlack,
       extendBodyBehindAppBar: true,
