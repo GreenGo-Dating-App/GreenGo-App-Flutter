@@ -654,6 +654,8 @@ Future<void> init() async {
     () => SubscriptionRemoteDataSource(
       firestore: sl(),
       inAppPurchase: sl(),
+      // M-13: restored purchases are verified server-side before acknowledge.
+      verifyAndFinish: (p) => sl<PurchaseRecoveryService>().recoverPurchase(p),
     ),
   );
 

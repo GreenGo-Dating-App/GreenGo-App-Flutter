@@ -64,11 +64,18 @@ abstract class CoinRepository {
   Future<Either<Failure, List<ClaimedReward>>> getClaimedRewards(String userId);
 
   // Feature Purchase Operations (Point 161)
+  /// Spend coins on a feature through the server (`spendCoins`). [cost] is
+  /// the price the UI showed; the server charges its own price table.
+  /// [option] picks a priced option (hours for `event_boost`, days for
+  /// `event_featured` / `business_promotion`). [requestId] is the idempotency
+  /// key for one user action (a fresh one is generated when omitted).
   Future<Either<Failure, CoinTransaction>> purchaseFeature({
     required String userId,
     required String featureName,
     required int cost,
     String? relatedId,
+    int? option,
+    String? requestId,
   });
   Future<Either<Failure, bool>> canAffordFeature({
     required String userId,

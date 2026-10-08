@@ -4704,5 +4704,8 @@
   "bkWindowHint": "C'est la période où vous êtes disponible. Chaque invité y réserve son propre créneau de {duration}, et vos réservations ne se chevauchent jamais, sur toutes vos expériences.",
   "bkWindowPeopleBooked": "{count, plural, =0{Pas encore de réservation} =1{1 personne réservée} other{{count} personnes réservées}}",
   "bkErrTimeTaken": "Ce créneau vient d'être pris. Choisissez-en un autre.",
-  "bkErrInvalidStart": "Ce créneau n'est pas disponible à cette date."
+  "bkErrInvalidStart": "Ce créneau n'est pas disponible à cette date.",
+  "coinsGiftPurchaseHold": "Les pièces achetées au cours des 72 dernières heures ne peuvent pas encore être offertes. Tu peux toujours les utiliser pour des fonctionnalités.",
+  "coinsGiftDailyLimit": "Tu as atteint la limite de cadeaux du jour (10 cadeaux ou 5 000 pièces). Réessaie demain.",
+  "coinReasonRefundClawback": "Achat remboursé annulé"
 }

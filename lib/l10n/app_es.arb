@@ -5285,5 +5285,8 @@
   "bkWindowHint": "Es el periodo en que estás disponible. Cada invitado reserva su propia hora de {duration} dentro de él y tus reservas nunca se solapan, en todas tus experiencias.",
   "bkWindowPeopleBooked": "{count, plural, =0{Aún sin reservas} =1{1 persona reservada} other{{count} personas reservadas}}",
   "bkErrTimeTaken": "Esa hora se acaba de reservar. Elige otra.",
-  "bkErrInvalidStart": "Esa hora no está disponible en esta fecha."
+  "bkErrInvalidStart": "Esa hora no está disponible en esta fecha.",
+  "coinsGiftPurchaseHold": "Las monedas que compraste en las últimas 72 horas aún no se pueden regalar. Puedes usarlas en funciones.",
+  "coinsGiftDailyLimit": "Has alcanzado el límite de regalos de hoy (10 regalos o 5.000 monedas). Inténtalo de nuevo mañana.",
+  "coinReasonRefundClawback": "Compra reembolsada revertida"
 }

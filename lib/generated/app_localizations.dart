@@ -28295,6 +28295,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'That time is not available on this date.'**
   String get bkErrInvalidStart;
+
+  /// Gift refused: purchased coins are held 72h before they can be gifted
+  ///
+  /// In en, this message translates to:
+  /// **'Coins you bought in the last 72 hours can\'t be gifted yet. You can still spend them on features.'**
+  String get coinsGiftPurchaseHold;
+
+  /// Gift refused: per-sender daily gift velocity limit
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached today\'s gifting limit (10 gifts or 5,000 coins). Please try again tomorrow.'**
+  String get coinsGiftDailyLimit;
+
+  /// Coin history: debit that takes back coins from a refunded purchase
+  ///
+  /// In en, this message translates to:
+  /// **'Refunded purchase reversed'**
+  String get coinReasonRefundClawback;
 }
 
 class _AppLocalizationsDelegate

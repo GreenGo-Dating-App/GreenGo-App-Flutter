@@ -15,7 +15,6 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/chat_learning_service.dart';
 import '../../../../core/services/pronunciation_service.dart';
 import '../../../../features/coins/data/datasources/coin_remote_datasource.dart';
-import '../../../../features/coins/domain/entities/coin_transaction.dart';
 import '../../../../features/coins/presentation/screens/coin_shop_screen.dart';
 import '../../../../features/membership/domain/entities/membership.dart';
 import '../../../../generated/app_localizations.dart';
@@ -388,14 +387,26 @@ class _MessageBubbleState extends State<MessageBubble> {
         }
         return;
       }
-      await coinDs.updateBalance(
-        userId: userId,
-        amount: 5,
-        type: CoinTransactionType.debit,
-        reason: CoinTransactionReason.featurePurchase,
-        metadata: {'feature': 'tts_listen', 'messageId': message.messageId},
+      // Server-priced debit (spendCoins 'tts_listen', 5 coins).
+      await coinDs.spendCoins(
+        featureId: 'tts_listen',
+        relatedId: message.messageId,
       );
       debugPrint('TTS: Deducted 5 coins from $userId');
+    } on CoinRefusalException catch (e) {
+      // The server says the balance is too low: same message as the pre-check.
+      if (e.isInsufficientCoins) {
+        if (mounted) {
+          final l10n = AppLocalizations.of(context)!;
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('${l10n.coinsInsufficientCoins} — ${l10n.coinsRequired(5)}'),
+            ),
+          );
+        }
+        return;
+      }
+      debugPrint('TTS: Coin deduction refused: $e');
     } catch (e) {
       debugPrint('TTS: Coin deduction failed: $e');
       // Allow playback even if coin deduction fails (e.g. emulator issues)

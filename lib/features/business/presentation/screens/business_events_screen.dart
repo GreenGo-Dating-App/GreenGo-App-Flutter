@@ -593,6 +593,7 @@ class _EventRow extends StatelessWidget {
       featureName: 'event_featured',
       cost: cost,
       relatedId: event.id,
+      option: 7, // days; the server sets isFeatured / featuredUntil
     );
     if (!context.mounted) return;
     if (!charge.fold((_) => false, (_) => true)) {
@@ -601,11 +602,17 @@ class _EventRow extends StatelessWidget {
       );
       return;
     }
+    final serverUntil = charge.fold((_) => null, (txn) {
+      final effect = txn.metadata?['effect'];
+      final ms = effect is Map ? effect['featuredUntil'] : null;
+      return ms is num ? DateTime.fromMillisecondsSinceEpoch(ms.toInt()) : null;
+    });
     bloc.add(
       UpdateEvent(
         event: event.copyWith(
           isFeatured: true,
-          featuredUntil: DateTime.now().add(const Duration(days: 7)),
+          featuredUntil:
+              serverUntil ?? DateTime.now().add(const Duration(days: 7)),
         ),
       ),
     );

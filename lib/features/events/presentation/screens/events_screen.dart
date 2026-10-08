@@ -3280,21 +3280,29 @@ class EventDetailsScreen extends StatelessWidget {
     final confirmed = await _confirmCoinSpend(
         context, l10n.eventsBoost, l10n.eventsBoostConfirm(cost));
     if (confirmed != true || !context.mounted) return;
+    // The server prices the option (duration in hours) and sets
+    // isFeatured / featuredUntil in the same transaction as the debit.
     final charge = await sl<PurchaseFeature>()(
       userId: currentUserId,
       featureName: 'event_boost',
       cost: cost,
       relatedId: event.id,
+      option: duration.inHours,
     );
     if (!context.mounted) return;
     if (!charge.fold((_) => false, (_) => true)) {
       unawaited(showUserErrorMessage(context, l10n.eventsInsufficientCoins));
       return;
     }
+    final serverUntil = charge.fold((_) => null, (txn) {
+      final effect = txn.metadata?['effect'];
+      final ms = effect is Map ? effect['featuredUntil'] : null;
+      return ms is num ? DateTime.fromMillisecondsSinceEpoch(ms.toInt()) : null;
+    });
     bloc.add(UpdateEvent(
       event: event.copyWith(
         isFeatured: true,
-        featuredUntil: DateTime.now().add(duration),
+        featuredUntil: serverUntil ?? DateTime.now().add(duration),
       ),
     ));
     if (!context.mounted) return;

@@ -42,6 +42,26 @@ enum UserErrorKind {
   notAllowed,
   upload,
   auth,
+
+  /// Coin refusals from the server (spendCoins / gift callables). Matched on
+  /// the reason code the server puts in `details.reason` and the message.
+  insufficientCoins,
+  giftPurchaseHold,
+  giftVelocityLimit,
+}
+
+/// Server coin refusal reason code -> kind.
+const Map<String, UserErrorKind> _coinReasonKinds = {
+  'insufficient-coins': UserErrorKind.insufficientCoins,
+  'gift-purchase-hold': UserErrorKind.giftPurchaseHold,
+  'gift-velocity-limit': UserErrorKind.giftVelocityLimit,
+};
+
+UserErrorKind? _coinKindForText(String text) {
+  for (final e in _coinReasonKinds.entries) {
+    if (text.contains(e.key)) return e.value;
+  }
+  return null;
 }
 
 /// Classifies [error] without needing a [BuildContext] (pure; unit-tested).
@@ -58,7 +78,14 @@ UserErrorKind classifyUserError(Object? error) {
     return UserErrorKind.auth;
   }
   if (error is FirebaseFunctionsException) {
-    return _kindForCode(error.code) ?? UserErrorKind.generic;
+    final details = error.details;
+    final reason = details is Map ? details['reason'] : null;
+    if (reason is String && _coinReasonKinds.containsKey(reason)) {
+      return _coinReasonKinds[reason]!;
+    }
+    return _coinKindForText(error.message ?? '') ??
+        _kindForCode(error.code) ??
+        UserErrorKind.generic;
   }
   if (error is FirebaseException) {
     if (error.plugin == 'firebase_storage') {
@@ -152,6 +179,8 @@ UserErrorKind? _kindForCode(String code) {
 }
 
 UserErrorKind _kindForText(String raw) {
+  final coinKind = _coinKindForText(raw);
+  if (coinKind != null) return coinKind;
   final s = raw.toLowerCase();
   bool has(String p) => s.contains(p);
   if (has('permission-denied') || has('permission_denied') ||
@@ -231,6 +260,12 @@ String userErrorMessageForKind(AppLocalizations l10n, UserErrorKind kind) {
       return l10n.userErrorUploadFailed;
     case UserErrorKind.auth:
       return l10n.authErrorGeneric;
+    case UserErrorKind.insufficientCoins:
+      return l10n.coinsInsufficientCoins;
+    case UserErrorKind.giftPurchaseHold:
+      return l10n.coinsGiftPurchaseHold;
+    case UserErrorKind.giftVelocityLimit:
+      return l10n.coinsGiftDailyLimit;
     case UserErrorKind.generic:
       return l10n.userErrorGeneric;
   }

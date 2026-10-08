@@ -16062,4 +16062,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get bkErrInvalidStart => 'That time is not available on this date.';
+
+  @override
+  String get coinsGiftPurchaseHold =>
+      'Coins you bought in the last 72 hours can\'t be gifted yet. You can still spend them on features.';
+
+  @override
+  String get coinsGiftDailyLimit =>
+      'You\'ve reached today\'s gifting limit (10 gifts or 5,000 coins). Please try again tomorrow.';
+
+  @override
+  String get coinReasonRefundClawback => 'Refunded purchase reversed';
 }

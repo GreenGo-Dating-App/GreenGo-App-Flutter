@@ -10,6 +10,7 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
 import 'package:in_app_purchase_android/billing_client_wrappers.dart';
+import 'package:uuid/uuid.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
@@ -26,7 +27,6 @@ import '../../../subscription/domain/entities/subscription.dart';
 import '../../data/datasources/coin_remote_datasource.dart';
 import '../../domain/entities/coin_package.dart';
 import '../../domain/entities/coin_promotion.dart';
-import '../../domain/entities/coin_transaction.dart';
 import '../bloc/coin_bloc.dart';
 import '../bloc/coin_event.dart';
 import '../bloc/coin_state.dart';
@@ -2775,57 +2775,21 @@ class _CoinShopScreenState extends State<CoinShopScreen>
 
       setState(() => _isSendingCoins = true);
 
-      // Use proper datasource to debit sender (FIFO batch deduction) and credit recipient
+      // Server-side transfer (audit H-11): the giftCoins callable debits the
+      // sender AND credits the recipient in one transaction, writes both
+      // ledger entries, the gift history doc and the recipient notification.
+      // The old client flow debited the sender and then failed to credit the
+      // recipient (cross-user write denied by rules), losing the coins.
       final coinDataSource = di.sl<CoinRemoteDataSource>();
-
-      // Debit sender — updates totalCoins, spentCoins, and coinBatches (FIFO)
       try {
-        await coinDataSource.updateBalance(
-          userId: widget.userId,
+        await coinDataSource.giftCoins(
+          receiverId: recipientId,
           amount: amount,
-          type: CoinTransactionType.debit,
-          reason: CoinTransactionReason.giftSent,
-          relatedUserId: recipientId,
-          metadata: {
-            'recipientNickname': nickname,
-            'recipientName': recipientName,
-          },
+          requestId: const Uuid().v4(), // one key per tap
         );
       } catch (e, stackTrace) {
-        debugPrint('SendCoins: failed to debit sender ${widget.userId}: $e\n$stackTrace');
+        debugPrint('SendCoins: giftCoins failed for ${widget.userId} -> $recipientId: $e\n$stackTrace');
         rethrow;
-      }
-
-      // Credit recipient — adds a new coin batch
-      try {
-        await coinDataSource.updateBalance(
-          userId: recipientId,
-          amount: amount,
-          type: CoinTransactionType.credit,
-          reason: CoinTransactionReason.giftReceived,
-          relatedUserId: widget.userId,
-        );
-      } catch (e, stackTrace) {
-        debugPrint('SendCoins: debited sender but FAILED to credit recipient $recipientId: $e\n$stackTrace');
-        // Coins were already debited from sender but failed to credit recipient.
-        // The outer catch will show an error to the user. This needs manual resolution.
-        rethrow;
-      }
-
-      // Create gift record
-      try {
-        final giftId = DateTime.now().millisecondsSinceEpoch.toString();
-        await FirebaseFirestore.instance.collection('coinGifts').doc(giftId).set({
-          'giftId': giftId,
-          'senderId': widget.userId,
-          'receiverId': recipientId,
-          'amount': amount,
-          'status': 'accepted',
-          'sentAt': FieldValue.serverTimestamp(),
-          'receivedAt': FieldValue.serverTimestamp(),
-        });
-      } catch (_) {
-        // Non-critical — gift record is for history only
       }
 
       if (mounted) {
@@ -2856,7 +2820,14 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       );
     } catch (e, stackTrace) {
       debugPrint('SendCoins error: $e\n$stackTrace');
-      _showError(AppLocalizations.of(context)!.shopFailedToSendCoins);
+      final l10n = AppLocalizations.of(context)!;
+      final reason = CoinRefusalException.reasonIn(e);
+      _showError(switch (reason) {
+        CoinRefusalException.insufficientCoins => l10n.shopInsufficientCoins,
+        CoinRefusalException.giftPurchaseHold => l10n.coinsGiftPurchaseHold,
+        CoinRefusalException.giftVelocityLimit => l10n.coinsGiftDailyLimit,
+        _ => l10n.shopFailedToSendCoins,
+      });
       setState(() => _isSendingCoins = false);
     }
   }
@@ -2952,17 +2923,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         'unreadCount': FieldValue.increment(1),
       }, SetOptions(merge: true));
 
-      // Create notification for receiver
-      await db.collection('notifications').add({
-        'userId': recipientId,
-        'type': 'coin_gift',
-        'title': 'You received coins!',
-        'body': '$senderName sent you $amount coins!',
-        'senderId': widget.userId,
-        'conversationId': conversationId,
-        'isRead': false,
-        'createdAt': FieldValue.serverTimestamp(),
-      });
+      // The recipient notification is written by the giftCoins callable.
     } catch (e) {
       debugPrint('[CoinGift] Chat notification failed: $e');
     }

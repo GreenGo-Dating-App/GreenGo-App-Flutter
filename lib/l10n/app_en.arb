@@ -7432,5 +7432,11 @@
   "bkErrTimeTaken": "That time was just taken. Please pick another one.",
   "@bkErrTimeTaken": {"description": "createBooking time_taken"},
   "bkErrInvalidStart": "That time is not available on this date.",
-  "@bkErrInvalidStart": {"description": "createBooking invalid_start"}
+  "@bkErrInvalidStart": {"description": "createBooking invalid_start"},
+  "coinsGiftPurchaseHold": "Coins you bought in the last 72 hours can't be gifted yet. You can still spend them on features.",
+  "@coinsGiftPurchaseHold": {"description": "Gift refused: purchased coins are held 72h before they can be gifted"},
+  "coinsGiftDailyLimit": "You've reached today's gifting limit (10 gifts or 5,000 coins). Please try again tomorrow.",
+  "@coinsGiftDailyLimit": {"description": "Gift refused: per-sender daily gift velocity limit"},
+  "coinReasonRefundClawback": "Refunded purchase reversed",
+  "@coinReasonRefundClawback": {"description": "Coin history: debit that takes back coins from a refunded purchase"}
 }

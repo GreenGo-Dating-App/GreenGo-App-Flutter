@@ -212,47 +212,35 @@ class CoinRepositoryImpl implements CoinRepository {
     required String featureName,
     required int cost,
     String? relatedId,
+    int? option,
+    String? requestId,
   }) async {
     try {
-      // Testers use all features for free — skip coin deduction
-      final profileDoc = await FirebaseFirestore.instance
-          .collection('profiles')
-          .doc(userId)
-          .get();
-      final memberTier = profileDoc.data()?['membershipTier'] as String? ?? '';
-      if (memberTier == 'test' || memberTier == 'TEST') {
-        // Return a dummy transaction for testers (no actual deduction)
-        return Right(CoinTransaction(
-          transactionId: 'tester_free_${DateTime.now().millisecondsSinceEpoch}',
-          userId: userId,
-          amount: 0,
-          balanceAfter: 0,
-          type: CoinTransactionType.debit,
-          reason: _getReasonFromFeature(featureName),
-          createdAt: DateTime.now(),
-          metadata: {'feature': featureName, 'tester': true},
-        ));
-      }
-
-      // Get reason from feature name
-      final reason = _getReasonFromFeature(featureName);
-
-      await remoteDataSource.updateBalance(
-        userId: userId,
-        amount: cost,
-        type: CoinTransactionType.debit,
-        reason: reason,
+      // Server-authoritative (audit C-03 / H-12): the server prices the
+      // feature, debits, applies server-owned effects, and treats testers
+      // (server-owned TEST tier) as free. [cost] is display-only here.
+      final receipt = await remoteDataSource.spendCoins(
+        featureId: featureName,
+        requestId: requestId,
         relatedId: relatedId,
-        metadata: {'feature': featureName},
+        option: option,
       );
-
-      // Get the transaction
-      final transactions = await remoteDataSource.getTransactionHistory(
+      return Right(CoinTransaction(
+        transactionId: receipt.transactionId ??
+            'spend_${DateTime.now().millisecondsSinceEpoch}',
         userId: userId,
-        limit: 1,
-      );
-
-      return Right(transactions.first);
+        amount: receipt.charged,
+        balanceAfter: receipt.newBalance,
+        type: CoinTransactionType.debit,
+        reason: _getReasonFromFeature(featureName),
+        relatedId: relatedId,
+        createdAt: DateTime.now(),
+        metadata: {
+          'feature': featureName,
+          if (receipt.charged == 0) 'tester': true,
+          'effect': receipt.effect,
+        },
+      ));
     } catch (e) {
       return Left(ServerFailure(e.toString()));
     }
