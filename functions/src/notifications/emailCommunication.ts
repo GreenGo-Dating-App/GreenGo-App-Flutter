@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { filterMarketingEmailOptIns } from '../shared/marketingConsent';
 
 const firestore = admin.firestore();
 
@@ -227,11 +228,16 @@ export const sendWeeklyDigestEmails = functions.pubsub
         .collection('users')
         .where('accountStatus', '==', 'active')
         .where('lastActiveAt', '>=', admin.firestore.Timestamp.fromDate(oneWeekAgo))
+        .limit(1000)
         .get();
+
+      // P2-5b: marketing mail only with an explicit, recorded opt-in.
+      const optedIn = await filterMarketingEmailOptIns(usersSnapshot.docs.map((d) => d.id));
 
       for (const userDoc of usersSnapshot.docs) {
         const userId = userDoc.id;
         const userData = userDoc.data();
+        if (!optedIn.has(userId)) continue;
 
         // Check if user has email preferences enabled
         const prefsDoc = await firestore
@@ -311,11 +317,16 @@ export const sendReEngagementCampaign = functions.pubsub
         .where('accountStatus', '==', 'active')
         .where('lastActiveAt', '<', admin.firestore.Timestamp.fromDate(fourteenDaysAgo))
         .where('lastActiveAt', '>=', admin.firestore.Timestamp.fromDate(thirtyDaysAgo))
+        .limit(1000)
         .get();
+
+      // P2-5b: marketing mail only with an explicit, recorded opt-in.
+      const optedIn = await filterMarketingEmailOptIns(dormantUsersSnapshot.docs.map((d) => d.id));
 
       for (const userDoc of dormantUsersSnapshot.docs) {
         const userId = userDoc.id;
         const userData = userDoc.data();
+        if (!optedIn.has(userId)) continue;
 
         // Check if already sent re-engagement email recently
         const recentEmailSnapshot = await firestore

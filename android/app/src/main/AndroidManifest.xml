@@ -132,6 +132,22 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="${GOOGLE_MAPS_API_KEY}"/>
 
+        <!-- Analytics / crash-reporting consent (P2-5a, ePrivacy art. 5(3)):
+             Analytics, Crashlytics and Performance start with collection OFF.
+             AnalyticsConsentService (lib/core/services) switches each one ON
+             at startup for users outside the EEA/UK/CH and for users who
+             accepted. Only these per-product flags are used: FCM, auto-init
+             and firebase_data_collection_default_enabled are untouched. -->
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_performance_collection_enabled"
+            android:value="false" />
+
         <!-- NOTE: Firebase auto-init (FirebaseInitProvider) and data collection
              are intentionally LEFT ENABLED here for production. Disabling them
              broke FCM's automatic background/terminated notification DISPLAY

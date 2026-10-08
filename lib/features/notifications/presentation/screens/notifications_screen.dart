@@ -34,6 +34,7 @@ import '../bloc/notifications_bloc.dart';
 import '../bloc/notifications_event.dart';
 import '../bloc/notifications_state.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../safety/presentation/screens/moderation_decision_screen.dart';
 
 /// Notifications Screen — the app's notifications hub.
 ///
@@ -335,6 +336,15 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
         if (value is String && value.isNotEmpty) return value;
       }
       return null;
+    }
+
+    // Moderation decision (DSA art. 17/20): statement of reasons + appeal.
+    if (action == kModerationDecisionAction) {
+      final decision = ModerationDecision.fromData(data);
+      if (decision != null) {
+        Navigator.of(context).push(ModerationDecisionScreen.route(decision));
+      }
+      return;
     }
 
     // Support chat — existing behavior, preserved.

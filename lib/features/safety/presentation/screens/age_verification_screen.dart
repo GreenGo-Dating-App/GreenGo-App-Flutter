@@ -4,6 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/services/age_verification_service.dart';
+import '../widgets/id_consent_sheet.dart';
 
 /// Age verification flow.
 ///
@@ -14,7 +15,9 @@ import '../../data/services/age_verification_service.dart';
 ///
 /// The design goal is that it never feels like surveillance: the user is told
 /// plainly why it is being asked, what is read, and that the photo is deleted
-/// straight away — which is literally what `submitAgeDocument` does.
+/// once a decision is made (at most 7 days when a person must review it).
+/// An explicit consent sheet ([showIdConsentSheet]) is recorded server-side
+/// before anything is uploaded.
 class AgeVerificationScreen extends StatefulWidget {
   const AgeVerificationScreen({
     super.key,
@@ -74,6 +77,10 @@ class _AgeVerificationScreenState extends State<AgeVerificationScreen> {
   }
 
   Future<void> _pickAndSubmit(ImageSource source) async {
+    // P2-6: explicit, recorded consent BEFORE anything is picked or uploaded.
+    final consented = await showIdConsentSheet(context);
+    if (!consented || !mounted) return;
+
     final picked = await _picker.pickImage(
       source: source,
       // A document photo needs to be legible, not large. Capping here keeps the
@@ -254,6 +261,13 @@ class _AgeVerificationScreenState extends State<AgeVerificationScreen> {
         return l10n.ageVerifyRejectedUnderage;
       case 'documentAlreadyUsed':
         return l10n.ageVerifyRejectedReused;
+      // Human review did not happen within 7 days: the image was deleted
+      // and the user must upload again (server reason names tolerated).
+      case 'reviewExpired':
+      case 'expired':
+      case 'reuploadRequired':
+      case 'needsReupload':
+        return l10n.ageVerifyRejectedExpired;
       default:
         return l10n.ageVerifyRejected;
     }

@@ -133,7 +133,7 @@ const REASON_LOOKUP: Map<string, ReasonCode> = (() => {
 
 // Keyword fallbacks, matched on accent-stripped lowercase text. Ordered by
 // severity: the first hit wins.
-const CSAE_PATTERN =
+export const CSAE_PATTERN =
   /\b(csam|csae|child ?(porn\w*|sexual\w*|abuse\w*|exploit\w*)|p(a)?edophil\w*|pedofil\w*|padophil\w*|(child|minor) grooming|pornografia infantil|pornografia minorile|pedopornogra\w*|abuso (sexual )?infantil|abuso (sessuale )?su minori|kinderporn\w*|kindesmissbrauch|pornographie infantile|explotacion sexual infantil|exploracao sexual infantil)\b/;
 const KEYWORD_RULES: [ReasonCode, RegExp][] = [
   ['csae', CSAE_PATTERN],
@@ -439,6 +439,92 @@ export async function enqueueReport(
       }
     } catch (e) {
       console.error(`[reportPipeline] auto-actions failed for ${item.queueId}:`, e);
+    }
+  }
+  return true;
+}
+
+// ---------------------------------------------------------------------------
+// Automatic text flags (P2-8b): flag-for-review ONLY, never an automatic action
+
+export interface AutoTextFlag {
+  /** Firestore path of the message, e.g. communities/c1/messages/m1. */
+  path: string;
+  chatType: 'community' | 'group' | 'event';
+  chatId: string;
+  messageId: string;
+  senderId: string;
+  text: string;
+  reasonCode: ReasonCode;
+  matched: string[];
+}
+
+/** Deterministic queue id: one item per flagged message, ever. */
+export function autoTextQueueId(path: string): string {
+  return `auto_text__${path.replace(/\//g, '~')}`.slice(0, 1400);
+}
+
+/**
+ * Creates ONE moderation_queue item (source 'auto_text') for a message the
+ * keyword screen flagged. Same shape as a report item so the admin panel and
+ * takeModerationAction handle it; reporterId 'system' (no reporter feedback).
+ * P0 (child safety) alerts the admins like a P0 report. Returns false when the
+ * item already existed.
+ */
+export async function enqueueAutoTextFlag(f: AutoTextFlag, nowMs: number = Date.now()): Promise<boolean> {
+  const level = priorityFor(f.reasonCode);
+  const queueId = autoTextQueueId(f.path);
+  const category = PANEL_CATEGORY[f.reasonCode];
+  const item: Record<string, unknown> = {
+    queueId,
+    itemType: 'autoTextFlag',
+    itemId: f.messageId,
+    userId: f.senderId,
+    priority: LEGACY_PRIORITY[level],
+    category,
+    addedAt: admin.firestore.FieldValue.serverTimestamp(),
+    assignedTo: null,
+    relatedReportIds: [],
+    metadata: {
+      category,
+      reasonCode: f.reasonCode,
+      reporterId: 'system',
+      sourceCollection: 'auto_text',
+      reportType: `${f.chatType}_message`,
+    },
+    status: 'pending',
+    content: {
+      text: f.text.slice(0, 2000),
+      chatType: f.chatType,
+      chatId: f.chatId,
+      messageId: f.messageId,
+      reason: `auto_text:${f.reasonCode}`,
+      sourcePath: f.path,
+    },
+    source: { collection: 'auto_text', docId: f.messageId, path: f.path },
+    reportType: `${f.chatType}_message`,
+    reporterId: 'system',
+    reportedUserId: f.senderId,
+    contentRef: { type: 'message', id: f.messageId, path: f.path },
+    reason: `auto_text:${f.reasonCode}`,
+    reasonCode: f.reasonCode,
+    priorityLevel: level,
+    slaHours: SLA_HOURS[level],
+    slaDueAt: admin.firestore.Timestamp.fromMillis(nowMs + SLA_HOURS[level] * 3600_000),
+    autoFlag: { engine: 'keyword-v1', matched: f.matched.slice(0, 10), automatedActions: 'none' },
+    createdAt: admin.firestore.FieldValue.serverTimestamp(),
+  };
+  try {
+    await db.collection('moderation_queue').doc(queueId).create(item);
+  } catch (e) {
+    if (isAlreadyExists(e)) return false;
+    throw e;
+  }
+  if (level === 'P0') {
+    try {
+      await alertAdminsP0(item);
+    } catch (e) {
+      console.error(`[reportPipeline] P0 alert failed for ${queueId}:`, e);
     }
   }
   return true;

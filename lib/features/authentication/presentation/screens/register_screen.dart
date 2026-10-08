@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
+import '../../../../core/services/consent_recorder.dart';
 import '../../../../core/utils/auth_error_localizer.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../core/utils/validators.dart';
@@ -19,6 +20,11 @@ import '../widgets/consent_checkboxes.dart';
 import '../widgets/password_strength_indicator.dart';
 import '../../../../core/constants/e2e_keys.dart';
 import '../widgets/pre_registration_offer.dart';
+
+/// Version label of the Terms / Privacy Policy accepted at signup, stored with
+/// the consent record: the "Last Updated" date of assets/legal/*.txt. Update
+/// it together with the bundled legal documents.
+const String kSignupLegalDocVersion = '2026-09-15';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -48,9 +54,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
   // Required consents (privacy + terms) must be actively accepted → start false.
   bool _privacyPolicyAccepted = false;
   bool _termsAccepted = false;
-  // Optional consents are pre-checked by default (user can opt out).
-  bool _profilingAccepted = true;
-  bool _thirdPartyDataAccepted = true;
+  // Optional consents start UNticked (P2-5(d)): consent must be an
+  // affirmative act. The choices are recorded server-side after signup.
+  bool _profilingAccepted = ConsentCheckboxes.defaultProfilingAccepted;
+  bool _thirdPartyDataAccepted = ConsentCheckboxes.defaultThirdPartyDataAccepted;
+  bool _marketingEmailAccepted = ConsentCheckboxes.defaultMarketingEmailAccepted;
+
+  /// Set when Register is pressed, so the consent record is written once the
+  /// account exists (and only for an account created on this screen).
+  bool _registrationSubmitted = false;
+  bool _consentsRecorded = false;
 
   @override
   void initState() {
@@ -126,12 +139,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
 
     if (!mounted) return;
+    _registrationSubmitted = true;
     context.read<AuthBloc>().add(
           AuthRegisterWithEmailRequested(
             email: _emailController.text.trim(),
             password: _passwordController.text,
           ),
         );
+  }
+
+  /// Records terms / privacy acceptance and the optional choices (P2-5(d)).
+  /// Fire-and-forget: a failure is logged and never blocks signup.
+  void _recordSignupConsents() {
+    if (!_registrationSubmitted || _consentsRecorded) return;
+    _consentsRecorded = true;
+    unawaited(ConsentRecorder.instance.recordSignupConsents(
+      profiling: _profilingAccepted,
+      thirdPartyData: _thirdPartyDataAccepted,
+      marketingEmail: _marketingEmailAccepted,
+      docVersion: kSignupLegalDocVersion,
+    ));
   }
 
   @override
@@ -162,6 +189,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               );
               showUserErrorMessage(context, localizedMessage);
             } else if (state is AuthAuthenticated) {
+              _recordSignupConsents();
               // Show email verification message
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
@@ -313,6 +341,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       onThirdPartyDataChanged: (value) {
                         setState(() {
                           _thirdPartyDataAccepted = value;
+                        });
+                      },
+                      marketingEmailAccepted: _marketingEmailAccepted,
+                      onMarketingEmailChanged: (value) {
+                        setState(() {
+                          _marketingEmailAccepted = value;
                         });
                       },
                       enabled: !isLoading,

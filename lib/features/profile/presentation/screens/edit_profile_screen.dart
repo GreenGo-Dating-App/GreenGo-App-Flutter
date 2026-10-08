@@ -79,6 +79,7 @@ import 'traveler_location_picker_screen.dart';
 import 'usage_stats_screen.dart';
 import '../../../../core/widgets/boost_celebration.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../settings/presentation/screens/privacy_data_settings_screen.dart';
 
 class EditProfileScreen extends StatelessWidget {
 
@@ -498,6 +499,16 @@ class EditProfileScreen extends StatelessWidget {
                         subtitle: AppLocalizations.of(context)!.notificationEventCitiesSubtitle,
                         icon: Icons.notifications_outlined,
                         onTap: () => _navigateToNotificationSettings(context),
+                      ),
+                      // Privacy & data (P2-5): analytics / crash reports and
+                      // marketing-email choices, for every user.
+                      const SizedBox(height: 16),
+                      EditSectionCard(
+                        title: AppLocalizations.of(context)!.privacySettingsTitle,
+                        subtitle: AppLocalizations.of(context)!.privacySettingsSubtitle,
+                        icon: Icons.privacy_tip_outlined,
+                        onTap: () => Navigator.of(context)
+                            .push(PrivacyDataSettingsScreen.route()),
                       ),
                     ],
                   ),

@@ -19,6 +19,12 @@ import * as admin from 'firebase-admin';
 import { verifyAuth, verifyAdminAuth, handleError, logInfo, logError, db, AppError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
 import { redact } from '../shared/redact';
+import {
+  filterMarketingEmailOptIns,
+  hasMarketingEmailOptIn,
+  unsubscribeUrl,
+  PRIVACY_POLICY_URL,
+} from '../shared/marketingConsent';
 
 /**
  * Security audit C-09: these callables only checked "signed in", so any user
@@ -311,6 +317,22 @@ function getEmailCategory(trigger: EmailTrigger): EmailCategory {
   return EMAIL_CATEGORY_MAP[trigger] || 'engagement';
 }
 
+/**
+ * P2-5b: marketing / engagement e-mail. Sent ONLY with an explicit opt-in
+ * (consents/{uid}.marketing_email.accepted === true); carries an unsubscribe
+ * link + List-Unsubscribe headers. Everything in the 'engagement' category
+ * plus the gamification nudges that exist only to bring a user back.
+ */
+const MARKETING_EXTRA_TRIGGERS = new Set<string>([
+  'streak_at_risk', 'streak_lost', 'weekly_challenge_started', 'seasonal_event_started',
+]);
+export function isMarketingEmailTrigger(trigger: EmailTrigger): boolean {
+  return getEmailCategory(trigger) === 'engagement' || MARKETING_EXTRA_TRIGGERS.has(trigger);
+}
+
+/** Thrown (and logged by the callers) when a marketing mail has no opt-in. */
+export const MARKETING_OPT_IN_REQUIRED = 'MARKETING_OPT_IN_REQUIRED';
+
 function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any>): { subject: string; htmlContent: string } {
   const userName = variables.userName || 'there';
 
@@ -366,8 +388,8 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
                 <td style="padding: 20px 40px; border-top: 1px solid ${branding.borderColor};">
                   <p style="margin: 0; color: ${branding.mutedColor}; font-size: 12px; text-align: center;">
                     &copy; ${new Date().getFullYear()} GreenGo. All rights reserved.<br>
-                    <a href="https://greengo.app/unsubscribe" style="color: ${branding.primaryColor}; text-decoration: none;">Unsubscribe</a> |
-                    <a href="https://greengo.app/privacy" style="color: ${branding.primaryColor}; text-decoration: none;">Privacy Policy</a>
+                    ${variables.unsubscribeUrl ? `<a href="${variables.unsubscribeUrl}" style="color: ${branding.primaryColor}; text-decoration: none;">Unsubscribe</a> |` : ''}
+                    <a href="${PRIVACY_POLICY_URL}" style="color: ${branding.primaryColor}; text-decoration: none;">Privacy Policy</a>
                   </p>
                 </td>
               </tr>
@@ -1572,6 +1594,15 @@ async function sendBrevoEmail(params: SendEmailParams): Promise<{ messageId: str
     throw new Error(`Email category ${category} disabled by user`);
   }
 
+  // P2-5b: marketing mail needs an explicit, recorded opt-in. Checked here
+  // (not only in the schedulers) so no caller can bypass it.
+  const marketing = isMarketingEmailTrigger(trigger);
+  if (marketing && !(await hasMarketingEmailOptIn(userId))) {
+    logInfo(`Email ${trigger} skipped for user ${userId} - no marketing opt-in`);
+    throw new Error(MARKETING_OPT_IN_REQUIRED);
+  }
+  const unsubUrl = unsubscribeUrl(userId);
+
   // Get custom template from Firestore or use default
   let emailContent: { subject: string; htmlContent: string };
   const templateDoc = await db.collection('email_templates').doc(trigger).get();
@@ -1580,11 +1611,20 @@ async function sendBrevoEmail(params: SendEmailParams): Promise<{ messageId: str
     const template = templateDoc.data()!;
     emailContent = {
       subject: renderTemplateString(template.subject, { ...variables, userName: recipientName }),
-      htmlContent: renderTemplateString(template.htmlContent, { ...variables, userName: recipientName }),
+      htmlContent: renderTemplateString(template.htmlContent, { ...variables, userName: recipientName, unsubscribeUrl: unsubUrl }),
     };
   } else {
-    emailContent = getDefaultTemplate(trigger, { ...variables, userName: recipientName });
+    emailContent = getDefaultTemplate(trigger, {
+      ...variables,
+      userName: recipientName,
+      // Only marketing mail carries the unsubscribe link (service mail cannot be unsubscribed).
+      ...(marketing ? { unsubscribeUrl: unsubUrl } : {}),
+    });
   }
+  // Stored templates written before P2-5 link to a domain GreenGo does not own.
+  emailContent.htmlContent = emailContent.htmlContent
+    .split('https://greengo.app/unsubscribe').join(unsubUrl)
+    .split('https://greengo.app/privacy').join(PRIVACY_POLICY_URL);
 
   // Create email log entry
   const emailLogRef = db.collection('email_logs').doc();
@@ -1619,6 +1659,12 @@ async function sendBrevoEmail(params: SendEmailParams): Promise<{ messageId: str
       subject: emailContent.subject,
       htmlContent: emailContent.htmlContent,
       tags: [category, trigger],
+      ...(marketing ? {
+        headers: {
+          'List-Unsubscribe': `<${unsubUrl}>`,
+          'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
+        },
+      } : {}),
     };
 
     const response = await brevoApiRequest<{ messageId: string }>('/smtp/email', 'POST', payload);
@@ -2196,10 +2242,16 @@ export const sendBrevoWeeklyDigest = onSchedule(
 
       let sent = 0;
       let skipped = 0;
+      // P2-5b: explicit marketing opt-in only (batched consent reads).
+      const optedIn = await filterMarketingEmailOptIns(usersSnapshot.docs.map((d) => d.id));
 
       for (const userDoc of usersSnapshot.docs) {
         const userId = userDoc.id;
         const userData = userDoc.data();
+        if (!optedIn.has(userId)) {
+          skipped++;
+          continue;
+        }
 
         // Check email preferences
         if (userData.emailPreferences?.engagement === false) {
@@ -2280,7 +2332,9 @@ export const sendBrevoReEngagement = onSchedule(
         .limit(200)
         .get();
 
+      const optedIn7 = await filterMarketingEmailOptIns(inactive7Days.docs.map((d) => d.id));
       for (const userDoc of inactive7Days.docs) {
+        if (!optedIn7.has(userDoc.id)) continue; // P2-5b: opt-in only
         try {
           // Check if we already sent this email recently
           const recentEmail = await db.collection('email_logs')
@@ -2309,7 +2363,9 @@ export const sendBrevoReEngagement = onSchedule(
         .limit(200)
         .get();
 
+      const optedIn14 = await filterMarketingEmailOptIns(inactive14Days.docs.map((d) => d.id));
       for (const userDoc of inactive14Days.docs) {
+        if (!optedIn14.has(userDoc.id)) continue; // P2-5b: opt-in only
         try {
           const recentEmail = await db.collection('email_logs')
             .where('userId', '==', userDoc.id)
@@ -2343,7 +2399,9 @@ export const sendBrevoReEngagement = onSchedule(
         .limit(100)
         .get();
 
+      const optedIn30 = await filterMarketingEmailOptIns(inactive30Days.docs.map((d) => d.id));
       for (const userDoc of inactive30Days.docs) {
+        if (!optedIn30.has(userDoc.id)) continue; // P2-5b: opt-in only
         try {
           const recentEmail = await db.collection('email_logs')
             .where('userId', '==', userDoc.id)
@@ -2393,8 +2451,12 @@ export const sendBrevoStreakReminder = onSchedule(
         .limit(500)
         .get();
 
+      const optedIn = await filterMarketingEmailOptIns(
+        usersWithStreaks.docs.map((d) => d.data().userId as string),
+      );
       for (const doc of usersWithStreaks.docs) {
         const streakData = doc.data();
+        if (!optedIn.has(streakData.userId)) continue; // P2-5b: opt-in only
 
         try {
           await sendBrevoEmail({

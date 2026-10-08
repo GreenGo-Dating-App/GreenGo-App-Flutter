@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/consent_recorder.dart';
 import '../../../../core/utils/city_normalizer.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/notification_preferences.dart';
@@ -110,6 +113,23 @@ class NotificationPreferencesScreen extends StatelessWidget {
                       value: prefs.tips,
                       enabled: on,
                       onChanged: (v) => update(prefs.copyWith(tips: v)),
+                    ),
+                    // Marketing & promotions (admin broadcasts): explicit
+                    // opt-in, OFF by default. The server's shouldNotify reads
+                    // categories.marketing; the decision is also recorded as
+                    // a consent event for the audit trail.
+                    _switch(
+                      title: l10n.notificationCatMarketing,
+                      subtitle: l10n.notificationCatMarketingSubtitle,
+                      value: prefs.marketing,
+                      enabled: on,
+                      onChanged: (v) {
+                        update(prefs.copyWith(marketing: v));
+                        unawaited(ConsentRecorder.instance.record(
+                          type: ConsentTypes.marketingPush,
+                          accepted: v,
+                        ));
+                      },
                     ),
                   ]),
                   const Divider(height: 32),

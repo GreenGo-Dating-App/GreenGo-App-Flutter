@@ -353,6 +353,14 @@ export {
 // Server-side NSFW moderation of every user upload (Storage trigger).
 export { moderateUploadedImage } from './safety/moderateUploadedImage';
 
+// P2-8b: keyword screen of community / group / event chat messages ->
+// moderation_queue (flag-for-review only, no automatic action).
+export {
+  screenCommunityMessage,
+  screenGroupMessage,
+  screenEventMessage,
+} from './safety/autoTextModeration';
+
 export {
   submitReport,
   reviewReport,
@@ -376,10 +384,12 @@ export {
   onModerationQueueResolved,
 } from './safety/reportPipeline';
 
+// P2-6 / BIPA: startPhotoVerification, verifyPhotoSelfie (selfie face
+// comparison via Cloud Vision) and verifyIDDocument (ID OCR without the
+// retention controls of submitAgeDocument) were never called by any app,
+// web or admin-panel version. Their exports are REMOVED; delete them from
+// production with `firebase functions:delete` (coordinator).
 export {
-  startPhotoVerification,
-  verifyPhotoSelfie,
-  verifyIDDocument,
   calculateTrustScore,
 } from './safety/identityVerification';
 
@@ -543,6 +553,9 @@ export {
   sendBrevoReEngagement,
   sendBrevoStreakReminder,
 } from './notifications/brevoEmailService';
+
+// P2-5b: one-click unsubscribe from marketing e-mail (link + List-Unsubscribe).
+export { unsubscribeMarketing } from './notifications/marketingUnsubscribe';
 
 
 

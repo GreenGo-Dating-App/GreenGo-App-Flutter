@@ -80,7 +80,9 @@ class AgeVerificationState {
 /// Client for the age-assurance Cloud Functions.
 ///
 /// The document image is uploaded to a write-only Storage prefix and read by
-/// `submitAgeDocument`, which deletes it as soon as OCR has run. Nothing here
+/// `submitAgeDocument`. The server deletes it once a decision is made (at most
+/// 7 days when a person must review it). The caller must have recorded the
+/// `id_verification` consent first (see id_consent_sheet.dart). Nothing here
 /// keeps a local copy, and the upload path is scoped to the signed-in user so
 /// Storage rules can enforce ownership.
 class AgeVerificationService {
@@ -144,8 +146,8 @@ class AgeVerificationService {
 
   /// Uploads [documentFile] and asks the server to decide.
   ///
-  /// Returns the resulting status. The image is deleted server-side during the
-  /// same call, so it exists in Storage for seconds at most.
+  /// Returns the resulting status. The image is deleted server-side as soon as
+  /// a decision is made (automatic, or within 7 days after human review).
   /// [documentFile] is an [XFile] from `image_picker`, not a `dart:io` File:
   /// the same flow ships on Flutter web, where `dart:io` does not exist.
   Future<AgeVerificationStatus> submitDocument({
