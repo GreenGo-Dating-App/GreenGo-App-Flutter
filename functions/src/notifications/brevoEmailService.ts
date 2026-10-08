@@ -16,8 +16,23 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
-import { verifyAuth, handleError, logInfo, logError, db } from '../shared/utils';
+import { verifyAuth, handleError, logInfo, logError, db, AppError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
+
+/**
+ * Security audit C-09: these callables only checked "signed in", so any user
+ * could rewrite system email templates, send branded mail to any address and
+ * read every email log. They are admin-panel tools: require an admin_users doc.
+ */
+async function requireAdminPanelUser(auth: Parameters<typeof verifyAuth>[0]): Promise<string> {
+  const uid = await verifyAuth(auth);
+  const adminDoc = await db.collection('admin_users').doc(uid).get();
+  if (!adminDoc.exists) {
+    // AppError so the callables' handleError() maps it to permission-denied.
+    throw new AppError('PERMISSION_DENIED', 'Admin only', 403);
+  }
+  return uid;
+}
 
 // Brevo API configuration
 const BREVO_API_URL = 'https://api.brevo.com/v3';
@@ -1690,7 +1705,7 @@ export const sendBrevoEmailFunction = onCall<SendBrevoEmailRequest>(
   },
   monitored("sendBrevoEmailFunction", async (request) => {
     try {
-      await verifyAuth(request.auth);
+      await requireAdminPanelUser(request.auth);
       const { userId, trigger, variables, overrideEmail } = request.data;
 
       if (!userId || !trigger) {
@@ -1731,7 +1746,7 @@ export const getBrevoEmailTemplates = onCall(
   },
   monitored("getBrevoEmailTemplates", async (request) => {
     try {
-      await verifyAuth(request.auth);
+      await requireAdminPanelUser(request.auth);
 
       const snapshot = await db.collection('email_templates').get();
       const templates: EmailTemplate[] = [];
@@ -1781,7 +1796,7 @@ export const updateBrevoEmailTemplate = onCall<UpdateTemplateRequest>(
   },
   monitored("updateBrevoEmailTemplate", async (request) => {
     try {
-      await verifyAuth(request.auth);
+      await requireAdminPanelUser(request.auth);
       const { trigger, name, subject, htmlContent, textContent, isActive, variables } = request.data;
 
       if (!trigger || !name || !subject || !htmlContent) {
@@ -1841,7 +1856,7 @@ export const getBrevoEmailLogs = onCall<GetEmailLogsRequest>(
   },
   monitored("getBrevoEmailLogs", async (request) => {
     try {
-      await verifyAuth(request.auth);
+      await requireAdminPanelUser(request.auth);
       const { userId, category, trigger, status, limit = 50, offset = 0 } = request.data;
 
       let query: admin.firestore.Query = db.collection('email_logs');
@@ -1884,7 +1899,7 @@ export const getBrevoEmailAnalytics = onCall<GetEmailAnalyticsRequest>(
   },
   monitored("getBrevoEmailAnalytics", async (request) => {
     try {
-      await verifyAuth(request.auth);
+      await requireAdminPanelUser(request.auth);
       const { startDate, endDate } = request.data;
 
       const start = startDate || new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];

@@ -249,8 +249,19 @@ export const verifyGooglePlayCoinPurchase = onCall<VerifyPurchaseRequest>(
 
       logInfo(`Verifying Google Play coin purchase for user ${uid}: ${productId}`);
 
+      // Security audit C-02: the token we VERIFY must be the token we DEDUPE
+      // on. Previously Google verified `verificationData` while the ledger
+      // hashed the client-chosen `purchaseToken`, so one real receipt could be
+      // replayed with a fresh random `purchaseToken` for unlimited coins. The
+      // app always sends the same Play token in both fields, so rejecting a
+      // mismatch never affects a genuine purchase.
+      if (verificationData && verificationData !== purchaseToken) {
+        logError(`Rejected Play coin claim for ${uid}: purchaseToken != verificationData`);
+        throw new HttpsError('invalid-argument', 'Purchase token mismatch');
+      }
+      const gpToken = purchaseToken;
+
       // Verify with the Google Play Developer API BEFORE granting anything.
-      const gpToken = verificationData || purchaseToken;
       const verificationResult = await verifyGooglePlayPurchase(productId, gpToken);
       if (!verificationResult.verified) {
         logError(`Google Play coin purchase verification failed: ${verificationResult.error}`);
@@ -260,7 +271,7 @@ export const verifyGooglePlayCoinPurchase = onCall<VerifyPurchaseRequest>(
       return await grantVerifiedCoinPurchase({
         uid,
         productId,
-        purchaseToken,
+        purchaseToken: gpToken,
         platform: 'android',
         transactionId: verificationResult.transactionId,
       });
@@ -575,6 +586,11 @@ interface DeclineGiftRequest {
   giftId: string;
 }
 
+/** Mirrors CoinGiftConstraints.maxAmount in the app. */
+const GIFT_REFUND_MAX_AMOUNT = 1000;
+/** Automatic decline refunds per sender per 30 days; more go to review. */
+const GIFT_REFUND_MONTHLY_CAP = 5;
+
 /**
  * Decline a pending P2P coin gift and refund the ORIGINAL SENDER.
  *
@@ -602,9 +618,58 @@ export const declineGift = onCall<DeclineGiftRequest>(
 
       const giftRef = db.collection('coinGifts').doc(giftId);
 
+      // Escrow proof (security audit C-01). The gift doc is client-written, so
+      // its existence proves nothing: a forged `{senderId: me, status:
+      // 'pending'}` used to mint coins on decline. A genuine gift is created by
+      // `sendGift` in ONE client transaction that also writes the sender's
+      // `giftSent` debit ledger entry, so both docs share the same commit
+      // timestamp. Refund only when such a debit exists and has not already
+      // backed another refund, and within a per-sender monthly cap.
+      const preGift = await giftRef.get();
+      const preData = preGift.data() as any;
+      let escrowTxnId: string | null = null;
+      let withholdReason: string | null = null;
+      if (preGift.exists && preData) {
+        const amt = preData.amount;
+        if (preData.senderId === preData.receiverId) {
+          withholdReason = 'self_gift';
+        } else if (!Number.isInteger(amt) || amt <= 0 || amt > GIFT_REFUND_MAX_AMOUNT) {
+          withholdReason = 'amount_out_of_range';
+        } else {
+          const debits = await db.collection('coinTransactions')
+            .where('userId', '==', preData.senderId)
+            .where('relatedUserId', '==', preData.receiverId)
+            .where('amount', '==', amt)
+            .limit(50)
+            .get();
+          const giftCommit = preGift.createTime?.toMillis();
+          const match = debits.docs.find((d) =>
+            d.data().reason === 'giftSent' &&
+            d.data().type === 'debit' &&
+            giftCommit !== undefined &&
+            d.createTime.toMillis() === giftCommit);
+          if (!match) {
+            withholdReason = 'no_escrow_debit';
+          } else {
+            escrowTxnId = match.id;
+            // Single-field equality query (no composite index needed); the
+            // per-sender volume is tiny, so the date filter runs in memory.
+            const since = Date.now() - 30 * 24 * 3600 * 1000;
+            const recent = await db.collection('gift_refunds')
+              .where('senderId', '==', preData.senderId)
+              .get();
+            const recentCount = recent.docs.filter((d) => d.createTime.toMillis() >= since).length;
+            if (recentCount >= GIFT_REFUND_MONTHLY_CAP) {
+              withholdReason = 'monthly_cap';
+            }
+          }
+        }
+      }
+
       let senderId = '';
       let amount = 0;
       let senderNewTotal = 0;
+      let refunded = false;
 
       await db.runTransaction(async (transaction) => {
         const giftDoc = await transaction.get(giftRef);
@@ -632,13 +697,46 @@ export const declineGift = onCall<DeclineGiftRequest>(
         if (!senderId || !Number.isInteger(amount) || amount <= 0) {
           throw new HttpsError('failed-precondition', 'Gift is missing a valid sender/amount');
         }
+        // The gift must not have changed since the escrow check above.
+        if (gift.senderId !== preData?.senderId || gift.amount !== preData?.amount) {
+          withholdReason = withholdReason ?? 'changed_during_check';
+        }
+
+        // One debit can back at most one refund.
+        const refundRef = escrowTxnId ? db.collection('gift_refunds').doc(escrowTxnId) : null;
+        if (refundRef && !withholdReason) {
+          const used = await transaction.get(refundRef);
+          if (used.exists) withholdReason = 'escrow_already_refunded';
+        }
+
+        const now = admin.firestore.FieldValue.serverTimestamp();
+
+        if (withholdReason) {
+          // Decline still succeeds for the receiver (same UX), but no coins
+          // move. The case is queued for human review instead.
+          transaction.update(giftRef, {
+            status: 'declined',
+            declinedAt: now,
+            refundWithheld: true,
+          });
+          transaction.set(db.collection('fraud_flags').doc(), {
+            type: 'gift_refund_withheld',
+            reason: withholdReason,
+            giftId,
+            senderId,
+            receiverId,
+            amount,
+            createdAt: now,
+            reviewed: false,
+          });
+          return;
+        }
 
         const senderRef = db.collection('coinBalances').doc(senderId);
         const senderDoc = await transaction.get(senderRef);
         const senderTotal = (senderDoc.data() as any)?.totalCoins || 0;
         senderNewTotal = senderTotal + amount;
 
-        const now = admin.firestore.FieldValue.serverTimestamp();
         const inc = admin.firestore.FieldValue.increment;
 
         // Refund the sender (cross-user write — server-only). `refundedCoins`
@@ -670,9 +768,15 @@ export const declineGift = onCall<DeclineGiftRequest>(
           metadata: { fromUserId: receiverId, giftId, source: 'gift_refund' },
           createdAt: now,
         });
+        transaction.create(refundRef!, { senderId, receiverId, giftId, amount, createdAt: now });
+        refunded = true;
       });
 
-      logInfo(`declineGift ${giftId}: refunded ${amount} to sender ${senderId} (declined by ${receiverId})`);
+      if (refunded) {
+        logInfo(`declineGift ${giftId}: refunded ${amount} to sender ${senderId} (declined by ${receiverId})`);
+      } else {
+        logInfo(`declineGift ${giftId}: declined, refund withheld (${withholdReason}) — queued in fraud_flags`);
+      }
 
       return {
         success: true,

@@ -26,6 +26,13 @@ import { DEFAULT_2026_OFFER, isWithin2026 } from './preRegistrationOffer';
 import { monitored } from '../shared/monitoring';
 
 
+/**
+ * Signup grants only apply to accounts created within this window. Generous so
+ * a user who registers, leaves and finishes onboarding days later still gets
+ * the welcome pack.
+ */
+const SIGNUP_GRANT_WINDOW_DAYS = 30;
+
 interface AppliedGrant {
   couponId: string;
   couponCode: string;
@@ -41,18 +48,42 @@ export const applySignupGrants = onDocumentCreated(
   },
   monitored("applySignupGrants", async (event) => {
     const uid = event.params.userId;
-    const userData = event.data?.data();
-    if (!userData?.email) {
-      logInfo(`applySignupGrants: no email on users/${uid}, skipping`);
+
+    // Security audit C-04. The `users` doc and the profile marker are both
+    // client-writable, so a user could clear the marker, delete and re-create
+    // `users/{uid}` and collect the welcome pack again; and the client-written
+    // `users.email` let anyone claim another person's allowlist coupon.
+    //  - email comes from Firebase Auth, never from the client doc;
+    //  - the idempotency marker also lives in server-only `signup_grants/{uid}`;
+    //  - accounts older than SIGNUP_GRANT_WINDOW_DAYS never get signup grants
+    //    (covers users processed before the server marker existed).
+    let authUser: admin.auth.UserRecord;
+    try {
+      authUser = await admin.auth().getUser(uid);
+    } catch {
+      logInfo(`applySignupGrants: no auth user for ${uid}, skipping`);
+      return;
+    }
+    if (!authUser.email) {
+      logInfo(`applySignupGrants: no auth email for ${uid}, skipping`);
+      return;
+    }
+    const createdMs = Date.parse(authUser.metadata.creationTime);
+    if (Number.isFinite(createdMs) &&
+        Date.now() - createdMs > SIGNUP_GRANT_WINDOW_DAYS * 24 * 3600 * 1000) {
+      logInfo(`applySignupGrants: account ${uid} older than ${SIGNUP_GRANT_WINDOW_DAYS}d, skipping`);
       return;
     }
 
-    const email = String(userData.email).toLowerCase().trim();
+    const email = authUser.email.toLowerCase().trim();
     const profileRef = db.collection('profiles').doc(uid);
 
     // ── Idempotency: short-circuit if we've already applied grants ──
-    const profileSnap = await profileRef.get();
-    if (profileSnap.exists && profileSnap.data()?.signupGrantsAppliedAt) {
+    const [profileSnap, markerSnap] = await Promise.all([
+      profileRef.get(),
+      db.collection('signup_grants').doc(uid).get(),
+    ]);
+    if (markerSnap.exists || (profileSnap.exists && profileSnap.data()?.signupGrantsAppliedAt)) {
       logInfo(`applySignupGrants: already applied for ${uid}, skipping`);
       return;
     }
@@ -144,9 +175,11 @@ async function applyDefaultWelcome(uid: string): Promise<AppliedGrant[]> {
 
   const summary = `BASE +${days}d \u00b7 +${coins} coins`;
 
+  const markerRef = db.collection('signup_grants').doc(uid);
   await db.runTransaction(async (tx) => {
     const profSnap = await tx.get(profileRef);
-    if (profSnap.exists && profSnap.data()?.signupGrantsAppliedAt) return;
+    const markerSnap = await tx.get(markerRef);
+    if (markerSnap.exists || (profSnap.exists && profSnap.data()?.signupGrantsAppliedAt)) return;
     const balSnap = await tx.get(balanceRef);
 
     const now = admin.firestore.Timestamp.now();
@@ -211,12 +244,16 @@ async function markProcessedIfFresh(
   profileRef: FirebaseFirestore.DocumentReference,
   applied: AppliedGrant[],
 ): Promise<boolean> {
+  const markerRef = db.collection('signup_grants').doc(profileRef.id);
   return db.runTransaction(async (tx) => {
     const snap = await tx.get(profileRef);
-    if (snap.exists && snap.data()?.signupGrantsAppliedAt) {
+    const marker = await tx.get(markerRef);
+    if (marker.exists || (snap.exists && snap.data()?.signupGrantsAppliedAt)) {
       return false;
     }
     const now = admin.firestore.Timestamp.now();
+    // Server-only marker (no client rule matches `signup_grants`).
+    tx.set(markerRef, { appliedAt: now, grants: applied.map((g) => g.couponId) });
     tx.set(
       profileRef,
       {

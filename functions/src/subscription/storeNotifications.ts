@@ -17,6 +17,7 @@
  */
 
 import { onRequest } from 'firebase-functions/v2/https';
+import { OAuth2Client } from 'google-auth-library';
 import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
 import {
@@ -247,10 +248,40 @@ const PLAY = {
   EXPIRED: 13,
 } as const;
 
+
+// Security audit H-09: this endpoint accepted ANY POST, so a forged
+// REVOKED/EXPIRED message with a known purchase token downgraded a paying user.
+// Pub/Sub push must be configured with an OIDC token (see RTDN_PUSH_SA); the
+// token is verified here before anything is read.
+const RTDN_PUSH_SA =
+  process.env.RTDN_PUSH_SA || '666632803027-compute@developer.gserviceaccount.com';
+const RTDN_AUDIENCES = [
+  'https://us-central1-greengo-chat.cloudfunctions.net/playStoreNotifications',
+  'https://playstorenotifications-zrx7rexaxa-uc.a.run.app',
+];
+const oidcClient = new OAuth2Client();
+
+async function isAuthenticPubSubPush(authHeader: string | undefined): Promise<boolean> {
+  const m = /^Bearer (.+)$/.exec(authHeader || '');
+  if (!m) return false;
+  try {
+    const ticket = await oidcClient.verifyIdToken({ idToken: m[1], audience: RTDN_AUDIENCES });
+    const p = ticket.getPayload();
+    return !!p && p.email === RTDN_PUSH_SA && p.email_verified === true;
+  } catch {
+    return false;
+  }
+}
+
 export const playStoreNotifications = onRequest(
   { memory: '512MiB', timeoutSeconds: 30 },
   monitored("playStoreNotifications", async (req, res) => {
     try {
+      if (!(await isAuthenticPubSubPush(req.get('authorization')))) {
+        logError('playStoreNotifications: rejected unauthenticated push');
+        res.status(401).send('Unauthorized');
+        return;
+      }
       // Pub/Sub push delivers the RTDN base64-encoded in message.data.
       const encoded = req.body?.message?.data;
       if (!encoded) {
@@ -295,10 +326,19 @@ export const playStoreNotifications = onRequest(
           await markSubscription(match.ref, { autoRenewing: false }); // keep until expiry
           break;
         case PLAY.EXPIRED:
-        case PLAY.REVOKED:
+        case PLAY.REVOKED: {
+          // Never revoke on the message alone: ask Google. If the store still
+          // reports a future expiry (or can't be reached), leave access alone;
+          // the hourly expiry job downgrades at membershipEndDate anyway.
+          const check = await getGooglePlaySubscriptionExpiry(purchaseToken);
+          if (!check.expiresDateMs || check.expiresDateMs > Date.now()) {
+            logInfo(`Play RTDN type ${notificationType}: not confirmed by Play API — no revoke`);
+            break;
+          }
           await revokeEntitlement(match.userId, match.data.productId as string);
           await markSubscription(match.ref, { status: SubscriptionStatus.EXPIRED, autoRenewing: false });
           break;
+        }
         case PLAY.IN_GRACE_PERIOD:
           // Payment issue; access continues until membershipEndDate, then the
           // hourly expiry job downgrades unless RECOVERED extends it.

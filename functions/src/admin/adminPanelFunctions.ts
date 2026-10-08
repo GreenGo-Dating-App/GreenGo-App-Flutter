@@ -11,6 +11,7 @@
  */
 
 import * as functions from 'firebase-functions/v1';
+import * as crypto from 'crypto';
 import { welcomeEmailCopy } from '../emails/welcomeEmailCopy';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
@@ -33,6 +34,24 @@ async function verifyAdmin(context: functions.https.CallableContext): Promise<bo
   }
 
   return true;
+}
+
+/**
+ * Security audit H-07: any `admin_users` member (support, analyst…) could call
+ * the most dangerous actions. These now require the superAdmin role.
+ */
+async function verifySuperAdmin(context: functions.https.CallableContext): Promise<void> {
+  await verifyAdmin(context);
+  const adminDoc = await db.collection('admin_users').doc(context.auth!.uid).get();
+  if (adminDoc.data()?.role !== 'superAdmin') {
+    throw new functions.https.HttpsError('permission-denied', 'Requires superAdmin');
+  }
+}
+
+/** True when the target uid is a superAdmin (never a target for other admins' actions). */
+async function isSuperAdminUid(uid: string): Promise<boolean> {
+  const doc = await db.collection('admin_users').doc(uid).get();
+  return doc.exists && doc.data()?.role === 'superAdmin';
 }
 
 // =============================================================================
@@ -67,7 +86,8 @@ export const send2FACode = functions.https.onCall(
     }
 
     try {
-      const code = String(Math.floor(100000 + Math.random() * 900000));
+      // Cryptographically secure (Math.random is predictable).
+      const code = String(crypto.randomInt(100000, 1000000));
       const expiresAt = new Date(Date.now() + 5 * 60 * 1000);
 
       console.log(`send2FACode: writing code to admin_2fa_codes/${uid}`);
@@ -85,8 +105,8 @@ export const send2FACode = functions.https.onCall(
       const resendApiKey = resendConfig?.apiKey;
 
       if (!resendApiKey) {
+        // Never log the code itself: anyone with log access could bypass 2FA.
         console.warn('Resend API key not configured. 2FA code stored but email not sent.');
-        console.log(`2FA CODE for ${email}: ${code}`);
         return { success: true, emailSent: false, message: 'Code generated (email not configured)' };
       }
 
@@ -244,12 +264,17 @@ export const verify2FACode = functions.https.onCall(
  */
 export const adminChangeUserPassword = functions.https.onCall(
   monitored("adminChangeUserPassword", async (data: any, context: functions.https.CallableContext) => {
-    await verifyAdmin(context);
+    await verifySuperAdmin(context);
 
     const { userId, newPassword } = data;
 
     if (!userId || !newPassword) {
       throw new functions.https.HttpsError('invalid-argument', 'userId and newPassword are required');
+    }
+
+    // A superAdmin account is never reset through the panel (account takeover path).
+    if (userId !== context.auth!.uid && await isSuperAdminUid(userId)) {
+      throw new functions.https.HttpsError('permission-denied', 'Cannot change another superAdmin password');
     }
 
     if (newPassword.length < 8) {
@@ -302,14 +327,25 @@ export const sendPasswordResetEmail = functions.https.onCall(
       };
       const link = await auth.generatePasswordResetLink(email, actionCodeSettings);
 
+      // Security audit H-07: the link used to be RETURNED to the caller (an
+      // admin could take over the account) and no email was ever sent. Now the
+      // link goes only to the account owner's inbox.
+      const delivery = await deliverResetEmail(email, link);
+
       await db.collection('admin_actions').add({
         action: 'send_password_reset',
         userEmail: email,
+        emailSent: delivery.emailSent,
         performedBy: context.auth!.uid,
         timestamp: admin.firestore.FieldValue.serverTimestamp(),
       });
 
-      return { success: true, message: `Password reset email sent to ${email}`, link };
+      return {
+        success: true,
+        message: delivery.emailSent
+          ? `Password reset email sent to ${email}`
+          : `Password reset email could not be sent to ${email}`,
+      };
     } catch (error: any) {
       console.error('Error sending password reset:', error);
       throw new functions.https.HttpsError('internal', error.message || 'Failed to send password reset email');
@@ -827,11 +863,20 @@ export const onSupportMessageCreated = functions.firestore
  * No auth required — called right after registration.
  */
 export const sendWelcomeEmail = functions.https.onCall(
-  monitored("sendWelcomeEmail", async (data: any, _context: functions.https.CallableContext) => {
+  monitored("sendWelcomeEmail", async (data: any, context: functions.https.CallableContext) => {
     const { email, locale } = data;
 
     if (!email || typeof email !== 'string') {
       throw new functions.https.HttpsError('invalid-argument', 'email is required');
+    }
+
+    // Security audit M-09: this was callable without login for ANY address
+    // (mail-bomb / sender-reputation abuse). The app calls it right after
+    // account creation, when the new user is already signed in, so it now only
+    // sends to the caller's own email. The app ignores the result.
+    const tokenEmail = (context.auth?.token?.email || '').toLowerCase().trim();
+    if (!context.auth || tokenEmail !== email.toLowerCase().trim()) {
+      return { success: true, emailSent: false };
     }
 
     // The app's active language at registration. Unknown/missing => English.
@@ -958,6 +1003,91 @@ function resetRateLimited(key: string): boolean {
 }
 
 /**
+ * Send the branded password-reset email (Resend) carrying [resetLink].
+ * Shared by the forgot-password flow and the admin panel reset action.
+ */
+async function deliverResetEmail(email: string, resetLink: string): Promise<{ success: boolean; emailSent: boolean; message?: string }> {
+  // Read Resend config
+  const configDoc = await db.doc('app_config/resend_settings').get();
+  const resendConfig = configDoc.data();
+  const resendApiKey = resendConfig?.apiKey;
+
+  if (!resendApiKey) {
+    console.warn('Resend API key not configured. Password reset email not sent via Resend.');
+    return { success: true, emailSent: false, message: 'Password reset email not sent (email not configured)' };
+  }
+
+  const senderEmail = resendConfig?.senderEmail || 'onboarding@resend.dev';
+  const senderName = resendConfig?.senderName || 'GreenGo';
+
+  const emailResponse = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${resendApiKey}`,
+    },
+    body: JSON.stringify({
+      from: `${senderName} <${senderEmail}>`,
+      to: [email],
+      subject: 'Reset Your GreenGo Password',
+      html: `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+            body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0A0A0A; color: #FFFFFF; padding: 40px; margin: 0; }
+            .container { max-width: 500px; margin: 0 auto; background: #1A1A1A; border-radius: 16px; padding: 40px; border: 1px solid #2A2A2A; }
+            .header { text-align: center; margin-bottom: 30px; }
+            .logo { font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #D4AF37, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+            .content { color: rgba(255,255,255,0.8); line-height: 1.8; text-align: center; }
+            .highlight { color: #FFD700; font-weight: bold; }
+            .divider { border: none; border-top: 1px solid #2A2A2A; margin: 25px 0; }
+            .reset-btn { display: inline-block; background: linear-gradient(135deg, #D4AF37, #FFD700); color: #0A0A0A; font-weight: bold; font-size: 16px; padding: 14px 40px; border-radius: 12px; text-decoration: none; margin: 20px 0; }
+            .link-fallback { color: rgba(255,255,255,0.5); font-size: 12px; word-break: break-all; }
+            .warning { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: 20px; }
+            .footer { text-align: center; margin-top: 30px; color: rgba(255,255,255,0.4); font-size: 12px; }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <div class="logo">GreenGo</div>
+              <p style="color: #D4AF37; margin-top: 5px; font-size: 16px;">Password Reset</p>
+            </div>
+            <div class="content">
+              <p>We received a request to reset your <span class="highlight">GreenGo</span> password.</p>
+              <p>Click the button below to set a new password:</p>
+              <hr class="divider">
+              <a href="${resetLink}" class="reset-btn">Reset Password</a>
+              <hr class="divider">
+              <p class="warning">This link will expire in 1 hour for security reasons.</p>
+              <p class="warning">If you didn't request a password reset, you can safely ignore this email.</p>
+              <p class="link-fallback">If the button doesn't work, copy and paste this link into your browser:<br>${resetLink}</p>
+            </div>
+            <div class="footer">
+              <p>&copy; ${new Date().getFullYear()} GreenGo. All rights reserved.</p>
+            </div>
+          </div>
+        </body>
+        </html>
+      `,
+    }),
+  });
+
+  const emailResponseText = await emailResponse.text();
+  console.log(`Resend password reset email response [${emailResponse.status}]:`, emailResponseText);
+
+  if (!emailResponse.ok) {
+    console.error('Resend password reset email error:', emailResponseText);
+    return { success: true, emailSent: false, message: 'Password reset email failed to send' };
+  }
+
+  return { success: true, emailSent: true };
+}
+
+/**
  * Send a branded password reset email via Resend.
  * No admin auth required — called from the forgot password screen.
  */
@@ -989,84 +1119,7 @@ export const sendPasswordResetViaResend = functions.https.onCall(
       };
       const resetLink = await auth.generatePasswordResetLink(email, actionCodeSettings);
 
-      // Read Resend config
-      const configDoc = await db.doc('app_config/resend_settings').get();
-      const resendConfig = configDoc.data();
-      const resendApiKey = resendConfig?.apiKey;
-
-      if (!resendApiKey) {
-        console.warn('Resend API key not configured. Password reset email not sent via Resend.');
-        return { success: true, emailSent: false, message: 'Password reset email not sent (email not configured)' };
-      }
-
-      const senderEmail = resendConfig?.senderEmail || 'onboarding@resend.dev';
-      const senderName = resendConfig?.senderName || 'GreenGo';
-
-      const emailResponse = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${resendApiKey}`,
-        },
-        body: JSON.stringify({
-          from: `${senderName} <${senderEmail}>`,
-          to: [email],
-          subject: 'Reset Your GreenGo Password',
-          html: `
-            <!DOCTYPE html>
-            <html>
-            <head>
-              <meta charset="utf-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <style>
-                body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0A0A0A; color: #FFFFFF; padding: 40px; margin: 0; }
-                .container { max-width: 500px; margin: 0 auto; background: #1A1A1A; border-radius: 16px; padding: 40px; border: 1px solid #2A2A2A; }
-                .header { text-align: center; margin-bottom: 30px; }
-                .logo { font-size: 32px; font-weight: bold; background: linear-gradient(135deg, #D4AF37, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-                .content { color: rgba(255,255,255,0.8); line-height: 1.8; text-align: center; }
-                .highlight { color: #FFD700; font-weight: bold; }
-                .divider { border: none; border-top: 1px solid #2A2A2A; margin: 25px 0; }
-                .reset-btn { display: inline-block; background: linear-gradient(135deg, #D4AF37, #FFD700); color: #0A0A0A; font-weight: bold; font-size: 16px; padding: 14px 40px; border-radius: 12px; text-decoration: none; margin: 20px 0; }
-                .link-fallback { color: rgba(255,255,255,0.5); font-size: 12px; word-break: break-all; }
-                .warning { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: 20px; }
-                .footer { text-align: center; margin-top: 30px; color: rgba(255,255,255,0.4); font-size: 12px; }
-              </style>
-            </head>
-            <body>
-              <div class="container">
-                <div class="header">
-                  <div class="logo">GreenGo</div>
-                  <p style="color: #D4AF37; margin-top: 5px; font-size: 16px;">Password Reset</p>
-                </div>
-                <div class="content">
-                  <p>We received a request to reset your <span class="highlight">GreenGo</span> password.</p>
-                  <p>Click the button below to set a new password:</p>
-                  <hr class="divider">
-                  <a href="${resetLink}" class="reset-btn">Reset Password</a>
-                  <hr class="divider">
-                  <p class="warning">This link will expire in 1 hour for security reasons.</p>
-                  <p class="warning">If you didn't request a password reset, you can safely ignore this email.</p>
-                  <p class="link-fallback">If the button doesn't work, copy and paste this link into your browser:<br>${resetLink}</p>
-                </div>
-                <div class="footer">
-                  <p>&copy; ${new Date().getFullYear()} GreenGo. All rights reserved.</p>
-                </div>
-              </div>
-            </body>
-            </html>
-          `,
-        }),
-      });
-
-      const emailResponseText = await emailResponse.text();
-      console.log(`Resend password reset email response [${emailResponse.status}]:`, emailResponseText);
-
-      if (!emailResponse.ok) {
-        console.error('Resend password reset email error:', emailResponseText);
-        return { success: true, emailSent: false, message: 'Password reset email failed to send' };
-      }
-
-      return { success: true, emailSent: true };
+      return await deliverResetEmail(email, resetLink);
     } catch (error: any) {
       // Our own deliberate answers (e.g. email-not-found) pass straight
       // through; only real failures are interpreted below.
@@ -1124,6 +1177,9 @@ export const sendPasswordResetViaResend = functions.https.onCall(
 // ORPHANED AUTH USER CLEANUP
 // =============================================================================
 
+/** An auth account active more recently than this is never treated as an orphan. */
+const ORPHAN_MIN_AGE_MS = 15 * 60 * 1000;
+
 export const cleanupOrphanedAuthUser = functions.https.onCall(
   monitored("cleanupOrphanedAuthUser", async (data: any, _context: functions.https.CallableContext) => {
     const { email } = data;
@@ -1132,6 +1188,14 @@ export const cleanupOrphanedAuthUser = functions.https.onCall(
       throw new functions.https.HttpsError('invalid-argument', 'email is required');
     }
 
+    // Security audit H-28. Callable without login (the caller's own signup
+    // just failed with email-already-in-use), so it must not be usable to
+    // delete someone else's account mid-onboarding or to probe which emails
+    // are registered:
+    //  - every "not cleaned" outcome returns the same answer;
+    //  - an account created or signed into within ORPHAN_MIN_AGE_MS is never
+    //    deleted (it may be a real user finishing onboarding right now).
+    const notCleaned = { success: true, cleaned: false };
     try {
       // Look up the Auth user by email
       let userRecord;
@@ -1139,12 +1203,21 @@ export const cleanupOrphanedAuthUser = functions.https.onCall(
         userRecord = await auth.getUserByEmail(email);
       } catch (err: any) {
         if (err.code === 'auth/user-not-found') {
-          return { success: true, cleaned: false, reason: 'no-auth-user' };
+          return notCleaned;
         }
         throw err;
       }
 
       const userId = userRecord.uid;
+
+      const lastActivity = Math.max(
+        Date.parse(userRecord.metadata.creationTime) || 0,
+        Date.parse(userRecord.metadata.lastSignInTime || '') || 0,
+        Date.parse(userRecord.metadata.lastRefreshTime || '') || 0,
+      );
+      if (Date.now() - lastActivity < ORPHAN_MIN_AGE_MS) {
+        return notCleaned;
+      }
 
       // Check if user exists in any Firestore collection (profiles, admin_users, users)
       const [profileDoc, adminDoc, userDoc] = await Promise.all([
@@ -1154,11 +1227,8 @@ export const cleanupOrphanedAuthUser = functions.https.onCall(
       ]);
 
       if (profileDoc.exists || adminDoc.exists || userDoc.exists) {
-        // User exists in Firestore — this is NOT an orphan, do not delete
-        throw new functions.https.HttpsError(
-          'failed-precondition',
-          'This email belongs to an active account'
-        );
+        // User exists in Firestore — this is NOT an orphan, do not delete.
+        return notCleaned;
       }
 
       // No Firestore data exists — this is an orphaned Auth user, safe to delete

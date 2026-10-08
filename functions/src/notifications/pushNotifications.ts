@@ -23,6 +23,20 @@ export const sendPushNotification = functions.https.onCall(monitored("sendPushNo
     );
   }
 
+  // Security audit H-08: any signed-in user could push arbitrary title/body/
+  // deep link to any user (phishing as GreenGo). Only the admin panel calls
+  // this over the network. `sendBundledNotifications` below also invokes it
+  // in-process via `.run(...)` with a synthetic context and no rawRequest —
+  // that server-internal path must keep working, and a network caller can't
+  // produce a context without rawRequest.
+  const isNetworkCall = Boolean((context as any).rawRequest);
+  if (isNetworkCall) {
+    const adminDoc = await firestore.collection('admin_users').doc(context.auth.uid).get();
+    if (!adminDoc.exists) {
+      throw new functions.https.HttpsError('permission-denied', 'Admin only');
+    }
+  }
+
   const { userId, type, title, body, imageUrl, actionButtons, deepLink } = data;
 
   try {

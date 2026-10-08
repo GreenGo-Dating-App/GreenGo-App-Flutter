@@ -31,6 +31,8 @@ interface RedeemReferralResponse {
 const REFERRER_COIN_REWARD = 100;
 const REFERRER_MONTHLY_CAP = 1000;
 const PLATINUM_DURATION_MS = 30 * 24 * 60 * 60 * 1000; // 1 month
+/** Matches the onboarding flow: a referral is redeemed right after signup. */
+const REDEEM_WINDOW_DAYS = 30;
 
 export const redeemReferral = onCall<RedeemReferralRequest>(
   { memory: '256MiB', timeoutSeconds: 30 },
@@ -46,11 +48,35 @@ export const redeemReferral = onCall<RedeemReferralRequest>(
     }
     const code = raw.trim().toUpperCase();
 
+    // Security audit C-05: referrals/{uid} is client-writable, so its
+    // `redeemedCode` alone was a guard the user could delete and redeem again
+    // (one extra month of Platinum each time). The authoritative claim now
+    // lives in server-only `referral_redemptions/{uid}`, and only accounts
+    // created within REDEEM_WINDOW_DAYS may redeem (covers users who redeemed
+    // before this marker existed).
+    try {
+      const authUser = await admin.auth().getUser(newUid);
+      const createdMs = Date.parse(authUser.metadata.creationTime);
+      if (Number.isFinite(createdMs) &&
+          Date.now() - createdMs > REDEEM_WINDOW_DAYS * 24 * 3600 * 1000) {
+        throw new HttpsError('failed-precondition', 'Referral codes can only be used by new accounts');
+      }
+    } catch (e) {
+      if (e instanceof HttpsError) throw e;
+      logError('redeemReferral: auth lookup failed', e as any);
+      throw new HttpsError('internal', 'Could not redeem referral');
+    }
+
     // 1) Resolve the referrer + atomically claim the single redemption for this
     //    new user (also rejects self-referral and re-use of a second code).
     let ownerId: string;
     try {
       ownerId = await db.runTransaction(async (tx) => {
+        const claimRef = db.collection('referral_redemptions').doc(newUid);
+        const claimSnap = await tx.get(claimRef);
+        if (claimSnap.exists) {
+          throw new HttpsError('already-exists', 'You have already used a referral code');
+        }
         const codeSnap = await tx.get(db.collection('referral_codes').doc(code));
         if (!codeSnap.exists) {
           throw new HttpsError('not-found', 'Referral code not found');
@@ -70,6 +96,11 @@ export const redeemReferral = onCall<RedeemReferralRequest>(
           redeemedFrom: owner,
           redeemedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
+        tx.create(claimRef, {
+          code,
+          ownerId: owner,
+          redeemedAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
         return owner;
       });
     } catch (e) {
