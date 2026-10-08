@@ -5407,5 +5407,7 @@
   "cancelAnytimeBillingPortal": "Cancele a qualquer momento no portal de faturação",
   "billingPortalOpenFailed": "Não foi possível abrir o portal de faturação. Tente novamente.",
   "subscriptionAutoRenewInfoWeb": "As subscrições renovam-se automaticamente ao preço e com a periodicidade indicados até as cancelar. Cancele a qualquer momento no portal de faturação.",
-  "webBillingTitle": "Faturação e desistência"
+  "webBillingTitle": "Faturação e desistência",
+  "profilePhotoPrevious": "Foto anterior",
+  "profilePhotoNext": "Foto seguinte"
 }

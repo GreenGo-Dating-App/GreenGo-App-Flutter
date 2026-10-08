@@ -6634,10 +6634,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Abonnement $tierName actif jusqu\'au $formattedDate$coinsText';
   }
 
@@ -16678,21 +16675,13 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan : $price par $interval. Renouvellement automatique le $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan : $price par $interval. Résilié ; accès jusqu\'au $date.';
   }
 
@@ -16716,4 +16705,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get webBillingTitle => 'Facturation et rétractation';
+
+  @override
+  String get profilePhotoPrevious => 'Photo précédente';
+
+  @override
+  String get profilePhotoNext => 'Photo suivante';
 }

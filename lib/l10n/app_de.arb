@@ -5407,5 +5407,7 @@
   "cancelAnytimeBillingPortal": "Jederzeit im Abrechnungsportal kündigen",
   "billingPortalOpenFailed": "Das Abrechnungsportal konnte nicht geöffnet werden. Bitte versuche es erneut.",
   "subscriptionAutoRenewInfoWeb": "Abos verlängern sich automatisch zum angezeigten Preis und Intervall, bis du kündigst. Jederzeit im Abrechnungsportal kündbar.",
-  "webBillingTitle": "Abrechnung und Widerruf"
+  "webBillingTitle": "Abrechnung und Widerruf",
+  "profilePhotoPrevious": "Vorheriges Foto",
+  "profilePhotoNext": "Nächstes Foto"
 }

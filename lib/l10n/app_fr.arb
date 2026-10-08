@@ -4826,5 +4826,7 @@
   "cancelAnytimeBillingPortal": "Résiliez à tout moment dans le portail de facturation",
   "billingPortalOpenFailed": "Impossible d'ouvrir le portail de facturation. Veuillez réessayer.",
   "subscriptionAutoRenewInfoWeb": "Les abonnements se renouvellent automatiquement au prix et à la périodicité indiqués jusqu'à résiliation. Résiliez à tout moment dans le portail de facturation.",
-  "webBillingTitle": "Facturation et rétractation"
+  "webBillingTitle": "Facturation et rétractation",
+  "profilePhotoPrevious": "Photo précédente",
+  "profilePhotoNext": "Photo suivante"
 }

@@ -6587,10 +6587,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16575,21 +16572,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renova-se automaticamente a $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina a $date.';
   }
 
@@ -16613,6 +16602,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get webBillingTitle => 'Faturação e desistência';
+
+  @override
+  String get profilePhotoPrevious => 'Foto anterior';
+
+  @override
+  String get profilePhotoNext => 'Foto seguinte';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -23205,10 +23200,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -33189,21 +33181,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renovação automática em $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina em $date.';
   }
 
@@ -33227,4 +33211,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get webBillingTitle => 'Cobrança e desistência';
+
+  @override
+  String get profilePhotoPrevious => 'Foto anterior';
+
+  @override
+  String get profilePhotoNext => 'Próxima foto';
 }

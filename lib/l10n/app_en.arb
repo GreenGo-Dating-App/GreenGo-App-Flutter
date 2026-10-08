@@ -8241,5 +8241,13 @@
   "cancelAnytimeBillingPortal": "Cancel anytime in the billing portal",
   "billingPortalOpenFailed": "Could not open the billing portal. Please try again.",
   "subscriptionAutoRenewInfoWeb": "Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.",
-  "webBillingTitle": "Billing and withdrawal"
+  "webBillingTitle": "Billing and withdrawal",
+  "profilePhotoPrevious": "Previous photo",
+  "profilePhotoNext": "Next photo",
+  "@profilePhotoPrevious": {
+    "description": "Accessibility label/tooltip of the left arrow in the profile photo gallery"
+  },
+  "@profilePhotoNext": {
+    "description": "Accessibility label/tooltip of the right arrow in the profile photo gallery"
+  }
 }
