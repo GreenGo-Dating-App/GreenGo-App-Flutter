@@ -9376,5 +9376,141 @@
         "type": "int"
       }
     }
+  },
+  "wzAllGood": "Everything is ready.",
+  "@wzAllGood": {
+    "description": "Create / edit wizard"
+  },
+  "wzAvailability": "Availability",
+  "@wzAvailability": {
+    "description": "Create / edit wizard"
+  },
+  "wzBack": "Back",
+  "@wzBack": {
+    "description": "Create / edit wizard"
+  },
+  "wzEdit": "Edit",
+  "@wzEdit": {
+    "description": "Create / edit wizard"
+  },
+  "wzErrCapacity": "Enter how many people can come.",
+  "@wzErrCapacity": {
+    "description": "Create / edit wizard"
+  },
+  "wzErrDates": "The end must be after the start.",
+  "@wzErrDates": {
+    "description": "Create / edit wizard"
+  },
+  "wzErrDescription": "Add a description.",
+  "@wzErrDescription": {
+    "description": "Create / edit wizard"
+  },
+  "wzErrLocation": "Add the place.",
+  "@wzErrLocation": {
+    "description": "Create / edit wizard"
+  },
+  "wzErrTitle": "Add a title.",
+  "@wzErrTitle": {
+    "description": "Create / edit wizard"
+  },
+  "wzEventBasics": "Basics",
+  "@wzEventBasics": {
+    "description": "Create / edit wizard"
+  },
+  "wzExpBasics": "Basics",
+  "@wzExpBasics": {
+    "description": "Create / edit wizard"
+  },
+  "wzFineTuneLater": "You can fine-tune single days later in Manage times.",
+  "@wzFineTuneLater": {
+    "description": "Create / edit wizard"
+  },
+  "wzFix": "Fix",
+  "@wzFix": {
+    "description": "Create / edit wizard"
+  },
+  "wzFormatPrice": "Format & price",
+  "@wzFormatPrice": {
+    "description": "Create / edit wizard"
+  },
+  "wzLocation": "Location",
+  "@wzLocation": {
+    "description": "Create / edit wizard"
+  },
+  "wzNext": "Next",
+  "@wzNext": {
+    "description": "Create / edit wizard"
+  },
+  "wzOverviewTitle": "What do you want to change?",
+  "@wzOverviewTitle": {
+    "description": "Create / edit wizard"
+  },
+  "wzPayment": "Payment",
+  "@wzPayment": {
+    "description": "Create / edit wizard"
+  },
+  "wzPreviewTitle": "How buyers will see it",
+  "@wzPreviewTitle": {
+    "description": "Create / edit wizard"
+  },
+  "wzRecurringInfo": "Guests pick one of the generated times. Turn off to keep using individual dates.",
+  "@wzRecurringInfo": {
+    "description": "Create / edit wizard"
+  },
+  "wzRecurringToggle": "Repeat every week",
+  "@wzRecurringToggle": {
+    "description": "Create / edit wizard"
+  },
+  "wzResume": "Resume",
+  "@wzResume": {
+    "description": "Create / edit wizard"
+  },
+  "wzResumeBody": "You have an unfinished draft on this device. Continue where you left off?",
+  "@wzResumeBody": {
+    "description": "Create / edit wizard"
+  },
+  "wzResumeTitle": "Continue your draft?",
+  "@wzResumeTitle": {
+    "description": "Create / edit wizard"
+  },
+  "wzReview": "Review & publish",
+  "@wzReview": {
+    "description": "Create / edit wizard"
+  },
+  "wzStartOver": "Start over",
+  "@wzStartOver": {
+    "description": "Create / edit wizard"
+  },
+  "wzStepOf": "Step {step} of {total}",
+  "@wzStepOf": {
+    "description": "Create / edit wizard",
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "wzTickets": "Tickets",
+  "@wzTickets": {
+    "description": "Create / edit wizard"
+  },
+  "wzWarnManualLarge": "Many people with manual payments: you will confirm each one. Consider instant confirmation.",
+  "@wzWarnManualLarge": {
+    "description": "Create / edit wizard"
+  },
+  "wzWarnNoAvailability": "No availability yet: add dates after saving, or turn on \"Repeat every week\".",
+  "@wzWarnNoAvailability": {
+    "description": "Create / edit wizard"
+  },
+  "wzWarnNoPhoto": "No cover photo yet: listings with a photo get more bookings.",
+  "@wzWarnNoPhoto": {
+    "description": "Create / edit wizard"
+  },
+  "wzWhenWhere": "When & where",
+  "@wzWhenWhere": {
+    "description": "Create / edit wizard"
   }
 }

@@ -17521,6 +17521,110 @@ class AppLocalizationsPt extends AppLocalizations {
   String tpSalesTotal(int sold, int held) {
     return 'Total: $sold vendidos, $held reservados';
   }
+
+  @override
+  String get wzAllGood => 'Está tudo pronto.';
+
+  @override
+  String get wzAvailability => 'Disponibilidade';
+
+  @override
+  String get wzBack => 'Voltar';
+
+  @override
+  String get wzEdit => 'Editar';
+
+  @override
+  String get wzErrCapacity => 'Indique quantas pessoas podem vir.';
+
+  @override
+  String get wzErrDates => 'O fim tem de ser depois do início.';
+
+  @override
+  String get wzErrDescription => 'Adicione uma descrição.';
+
+  @override
+  String get wzErrLocation => 'Adicione o local.';
+
+  @override
+  String get wzErrTitle => 'Adicione um título.';
+
+  @override
+  String get wzEventBasics => 'Informações básicas';
+
+  @override
+  String get wzExpBasics => 'Informações básicas';
+
+  @override
+  String get wzFineTuneLater =>
+      'Pode ajustar dias específicos mais tarde em Gerir horários.';
+
+  @override
+  String get wzFix => 'Corrigir';
+
+  @override
+  String get wzFormatPrice => 'Formato e preço';
+
+  @override
+  String get wzLocation => 'Local';
+
+  @override
+  String get wzNext => 'Seguinte';
+
+  @override
+  String get wzOverviewTitle => 'O que quer alterar?';
+
+  @override
+  String get wzPayment => 'Pagamento';
+
+  @override
+  String get wzPreviewTitle => 'Como os compradores o verão';
+
+  @override
+  String get wzRecurringInfo =>
+      'Os convidados escolhem um dos horários gerados. Desative para continuar com datas avulsas.';
+
+  @override
+  String get wzRecurringToggle => 'Repetir todas as semanas';
+
+  @override
+  String get wzResume => 'Retomar';
+
+  @override
+  String get wzResumeBody =>
+      'Tem um rascunho por terminar neste dispositivo. Continuar onde parou?';
+
+  @override
+  String get wzResumeTitle => 'Continuar o rascunho?';
+
+  @override
+  String get wzReview => 'Rever e publicar';
+
+  @override
+  String get wzStartOver => 'Recomeçar';
+
+  @override
+  String wzStepOf(int step, int total) {
+    return 'Passo $step de $total';
+  }
+
+  @override
+  String get wzTickets => 'Bilhetes';
+
+  @override
+  String get wzWarnManualLarge =>
+      'Muitas pessoas com pagamentos manuais: vai confirmar cada um. Considere a confirmação instantânea.';
+
+  @override
+  String get wzWarnNoAvailability =>
+      'Ainda sem disponibilidade: adicione datas depois de guardar ou ative \"Repetir todas as semanas\".';
+
+  @override
+  String get wzWarnNoPhoto =>
+      'Ainda sem foto de capa: anúncios com foto recebem mais reservas.';
+
+  @override
+  String get wzWhenWhere => 'Quando e onde';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -35041,4 +35145,108 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String tpSalesTotal(int sold, int held) {
     return 'Total: $sold vendidos, $held reservados';
   }
+
+  @override
+  String get wzAllGood => 'Está tudo pronto.';
+
+  @override
+  String get wzAvailability => 'Disponibilidade';
+
+  @override
+  String get wzBack => 'Voltar';
+
+  @override
+  String get wzEdit => 'Editar';
+
+  @override
+  String get wzErrCapacity => 'Informe quantas pessoas podem vir.';
+
+  @override
+  String get wzErrDates => 'O fim precisa ser depois do início.';
+
+  @override
+  String get wzErrDescription => 'Adicione uma descrição.';
+
+  @override
+  String get wzErrLocation => 'Adicione o local.';
+
+  @override
+  String get wzErrTitle => 'Adicione um título.';
+
+  @override
+  String get wzEventBasics => 'Informações básicas';
+
+  @override
+  String get wzExpBasics => 'Informações básicas';
+
+  @override
+  String get wzFineTuneLater =>
+      'Você pode ajustar dias específicos depois em Gerenciar horários.';
+
+  @override
+  String get wzFix => 'Corrigir';
+
+  @override
+  String get wzFormatPrice => 'Formato e preço';
+
+  @override
+  String get wzLocation => 'Local';
+
+  @override
+  String get wzNext => 'Próximo';
+
+  @override
+  String get wzOverviewTitle => 'O que você quer alterar?';
+
+  @override
+  String get wzPayment => 'Pagamento';
+
+  @override
+  String get wzPreviewTitle => 'Como os compradores vão ver';
+
+  @override
+  String get wzRecurringInfo =>
+      'Os convidados escolhem um dos horários gerados. Desative para continuar com datas avulsas.';
+
+  @override
+  String get wzRecurringToggle => 'Repetir toda semana';
+
+  @override
+  String get wzResume => 'Retomar';
+
+  @override
+  String get wzResumeBody =>
+      'Você tem um rascunho não finalizado neste dispositivo. Continuar de onde parou?';
+
+  @override
+  String get wzResumeTitle => 'Continuar o rascunho?';
+
+  @override
+  String get wzReview => 'Revisar e publicar';
+
+  @override
+  String get wzStartOver => 'Recomeçar';
+
+  @override
+  String wzStepOf(int step, int total) {
+    return 'Passo $step de $total';
+  }
+
+  @override
+  String get wzTickets => 'Ingressos';
+
+  @override
+  String get wzWarnManualLarge =>
+      'Muitas pessoas com pagamentos manuais: você vai confirmar cada um. Considere a confirmação instantânea.';
+
+  @override
+  String get wzWarnNoAvailability =>
+      'Ainda sem disponibilidade: adicione datas depois de salvar ou ative \"Repetir toda semana\".';
+
+  @override
+  String get wzWarnNoPhoto =>
+      'Ainda sem foto de capa: anúncios com foto recebem mais reservas.';
+
+  @override
+  String get wzWhenWhere => 'Quando e onde';
 }

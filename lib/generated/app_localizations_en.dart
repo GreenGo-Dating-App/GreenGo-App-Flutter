@@ -17351,4 +17351,108 @@ class AppLocalizationsEn extends AppLocalizations {
   String tpSalesTotal(int sold, int held) {
     return 'Total: $sold sold, $held reserved';
   }
+
+  @override
+  String get wzAllGood => 'Everything is ready.';
+
+  @override
+  String get wzAvailability => 'Availability';
+
+  @override
+  String get wzBack => 'Back';
+
+  @override
+  String get wzEdit => 'Edit';
+
+  @override
+  String get wzErrCapacity => 'Enter how many people can come.';
+
+  @override
+  String get wzErrDates => 'The end must be after the start.';
+
+  @override
+  String get wzErrDescription => 'Add a description.';
+
+  @override
+  String get wzErrLocation => 'Add the place.';
+
+  @override
+  String get wzErrTitle => 'Add a title.';
+
+  @override
+  String get wzEventBasics => 'Basics';
+
+  @override
+  String get wzExpBasics => 'Basics';
+
+  @override
+  String get wzFineTuneLater =>
+      'You can fine-tune single days later in Manage times.';
+
+  @override
+  String get wzFix => 'Fix';
+
+  @override
+  String get wzFormatPrice => 'Format & price';
+
+  @override
+  String get wzLocation => 'Location';
+
+  @override
+  String get wzNext => 'Next';
+
+  @override
+  String get wzOverviewTitle => 'What do you want to change?';
+
+  @override
+  String get wzPayment => 'Payment';
+
+  @override
+  String get wzPreviewTitle => 'How buyers will see it';
+
+  @override
+  String get wzRecurringInfo =>
+      'Guests pick one of the generated times. Turn off to keep using individual dates.';
+
+  @override
+  String get wzRecurringToggle => 'Repeat every week';
+
+  @override
+  String get wzResume => 'Resume';
+
+  @override
+  String get wzResumeBody =>
+      'You have an unfinished draft on this device. Continue where you left off?';
+
+  @override
+  String get wzResumeTitle => 'Continue your draft?';
+
+  @override
+  String get wzReview => 'Review & publish';
+
+  @override
+  String get wzStartOver => 'Start over';
+
+  @override
+  String wzStepOf(int step, int total) {
+    return 'Step $step of $total';
+  }
+
+  @override
+  String get wzTickets => 'Tickets';
+
+  @override
+  String get wzWarnManualLarge =>
+      'Many people with manual payments: you will confirm each one. Consider instant confirmation.';
+
+  @override
+  String get wzWarnNoAvailability =>
+      'No availability yet: add dates after saving, or turn on \"Repeat every week\".';
+
+  @override
+  String get wzWarnNoPhoto =>
+      'No cover photo yet: listings with a photo get more bookings.';
+
+  @override
+  String get wzWhenWhere => 'When & where';
 }

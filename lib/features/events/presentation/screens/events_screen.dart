@@ -1,3 +1,5 @@
+import '../../../../core/widgets/listing_wizard.dart';
+import '../../../ticket_payments/presentation/ticket_l10n.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
 import '../../../ticket_payments/presentation/screens/ticket_types_screen.dart';
@@ -3826,6 +3828,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _offerDraft());
     _selectedCommunityId =
         widget.communityId ?? widget.existing?.communityId;
     _organizerName = widget.existing?.organizerName ?? '';
@@ -4156,10 +4159,17 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       ),
       body: Form(
         key: _formKey,
-        child: ListView(
-          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-          padding: const EdgeInsets.all(16),
-          children: [
+        child: ListingWizard(
+          editMode: _isEditing,
+          controller: _wizard,
+          onStepChanged: (_) => _autosaveDraft(),
+          steps: [
+            WizardStep(
+              title: AppLocalizations.of(context)!.wzEventBasics,
+              icon: Icons.edit_note,
+              error: _basicsError,
+              summary: () => _titleController.text,
+              builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
             _buildPhotoSection(),
             const SizedBox(height: 16),
             TextFormField(
@@ -4202,6 +4212,51 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ),
             ],
             const SizedBox(height: 16),
+            // External links (tickets, website, map…)
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                AppLocalizations.of(context)!.eventsExternalLinks,
+                style: const TextStyle(
+                  color: AppColors.textSecondary,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            ..._externalLinks.map((lnk) => ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.link, color: AppColors.richGold),
+                  title: Text(
+                    lnk.label ?? lnk.url,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.close,
+                        color: AppColors.textSecondary),
+                    onPressed: () =>
+                        setState(() => _externalLinks.remove(lnk)),
+                  ),
+                )),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton.icon(
+                icon: const Icon(Icons.add_circle, color: AppColors.richGold),
+                label: Text(
+                  AppLocalizations.of(context)!.eventsAddLink,
+                  style: const TextStyle(color: AppColors.richGold),
+                ),
+                onPressed: _showAddLinkDialog,
+              ),
+            ),
+              ]),
+            ),
+            WizardStep(
+              title: AppLocalizations.of(context)!.wzWhenWhere,
+              icon: Icons.place_outlined,
+              error: _whereError,
+              summary: () => '${DateFormat('EEE, MMM d \u2022 h:mm a').format(_startDate)} · ${_locationController.text}',
+              builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
             // Typed by hand (venue / address) OR picked on the map.
             TextFormField(
               controller: _locationController,
@@ -4256,59 +4311,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               onTap: () => _selectDateTime(false),
             ),
             const SizedBox(height: 16),
-            SwitchListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(
-                AppLocalizations.of(context)!.eventsUnlimitedAttendees,
-                style: const TextStyle(color: AppColors.textPrimary),
-              ),
-              value: _isUnlimited,
-              activeThumbColor: AppColors.richGold,
-              onChanged: (v) => setState(() => _isUnlimited = v),
-            ),
-            if (!_isUnlimited)
-              TextFormField(
-                controller: _maxAttendeesController,
-                style: const TextStyle(color: AppColors.textPrimary),
-                decoration: _inputDecoration(
-                    AppLocalizations.of(context)!.eventsCapacityAllowed),
-                keyboardType: TextInputType.number,
-              ),
-            const SizedBox(height: 16),
-            // Guests allowed per attendee (0..N) — enables the QR ticket guest
-            // picker + counts toward the organizer's headcount.
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    AppLocalizations.of(context)!.eventGuestsAllowedLabel,
-                    style: const TextStyle(color: AppColors.textPrimary),
-                  ),
-                ),
-                IconButton(
-                  onPressed: _guestsAllowedPerAttendee <= 0
-                      ? null
-                      : () => setState(() => _guestsAllowedPerAttendee--),
-                  icon: const Icon(Icons.remove_circle_outline),
-                  color: AppColors.richGold,
-                ),
-                Text(
-                  '$_guestsAllowedPerAttendee',
-                  style: const TextStyle(
-                    color: AppColors.textPrimary,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                IconButton(
-                  onPressed: _guestsAllowedPerAttendee >= _maxGuestsAllowed
-                      ? null
-                      : () => setState(() => _guestsAllowedPerAttendee++),
-                  icon: const Icon(Icons.add_circle_outline),
-                  color: AppColors.richGold,
-                ),
-              ],
-            ),
+            _buildRecurrenceSection(),
             const SizedBox(height: 16),
             // Link to a community (owner/admin communities only). Hidden when the
             // community is fixed by the caller (opened from a community's Events
@@ -4383,6 +4386,69 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 height: 1.3,
               ),
             ),
+              ]),
+            ),
+            WizardStep(
+              title: AppLocalizations.of(context)!.wzTickets,
+              icon: Icons.confirmation_number_outlined,
+              error: _ticketsError,
+              summary: () => _isFree
+                  ? AppLocalizations.of(context)!.eventsFreeEvent
+                  : '$_currency${_priceController.text} · ${_isUnlimited ? '\u221e' : _maxAttendeesController.text}',
+              builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: Text(
+                AppLocalizations.of(context)!.eventsUnlimitedAttendees,
+                style: const TextStyle(color: AppColors.textPrimary),
+              ),
+              value: _isUnlimited,
+              activeThumbColor: AppColors.richGold,
+              onChanged: (v) => setState(() => _isUnlimited = v),
+            ),
+            if (!_isUnlimited)
+              TextFormField(
+                controller: _maxAttendeesController,
+                style: const TextStyle(color: AppColors.textPrimary),
+                decoration: _inputDecoration(
+                    AppLocalizations.of(context)!.eventsCapacityAllowed),
+                keyboardType: TextInputType.number,
+              ),
+            const SizedBox(height: 16),
+            // Guests allowed per attendee (0..N) — enables the QR ticket guest
+            // picker + counts toward the organizer's headcount.
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    AppLocalizations.of(context)!.eventGuestsAllowedLabel,
+                    style: const TextStyle(color: AppColors.textPrimary),
+                  ),
+                ),
+                IconButton(
+                  onPressed: _guestsAllowedPerAttendee <= 0
+                      ? null
+                      : () => setState(() => _guestsAllowedPerAttendee--),
+                  icon: const Icon(Icons.remove_circle_outline),
+                  color: AppColors.richGold,
+                ),
+                Text(
+                  '$_guestsAllowedPerAttendee',
+                  style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                IconButton(
+                  onPressed: _guestsAllowedPerAttendee >= _maxGuestsAllowed
+                      ? null
+                      : () => setState(() => _guestsAllowedPerAttendee++),
+                  icon: const Icon(Icons.add_circle_outline),
+                  color: AppColors.richGold,
+                ),
+              ],
+            ),
             const SizedBox(height: 16),
             SwitchListTile(
               contentPadding: EdgeInsets.zero,
@@ -4449,15 +4515,8 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                 decoration: _inputDecoration(
                     AppLocalizations.of(context)!.tpMaxTicketsPerUser),
               ),
-              const SizedBox(height: 12),
-              TicketPaymentSelector(
-                uid: widget.currentUserId,
-                value: _ticket,
-                onChanged: (c) => setState(() => _ticket = c),
-                capacity: _isUnlimited ? null : int.tryParse(_maxAttendeesController.text),
-                price: double.tryParse(_priceController.text),
-                currency: _currency,
-              ),
+            ],
+            if (!_isFree && _isEditing) ...[
               if (_isEditing)
                 Align(
                   alignment: Alignment.centerLeft,
@@ -4469,52 +4528,174 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                   ),
                 ),
             ],
-            const SizedBox(height: 16),
-            // External links (tickets, website, map…)
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                AppLocalizations.of(context)!.eventsExternalLinks,
-                style: const TextStyle(
-                  color: AppColors.textSecondary,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+              ]),
             ),
-            ..._externalLinks.map((lnk) => ListTile(
-                  contentPadding: EdgeInsets.zero,
-                  leading: const Icon(Icons.link, color: AppColors.richGold),
-                  title: Text(
-                    lnk.label ?? lnk.url,
-                    style: const TextStyle(color: AppColors.textPrimary),
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  trailing: IconButton(
-                    icon: const Icon(Icons.close,
-                        color: AppColors.textSecondary),
-                    onPressed: () =>
-                        setState(() => _externalLinks.remove(lnk)),
-                  ),
-                )),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: TextButton.icon(
-                icon: const Icon(Icons.add_circle, color: AppColors.richGold),
-                label: Text(
-                  AppLocalizations.of(context)!.eventsAddLink,
-                  style: const TextStyle(color: AppColors.richGold),
-                ),
-                onPressed: _showAddLinkDialog,
+            WizardStep(
+              title: AppLocalizations.of(context)!.wzPayment,
+              icon: Icons.payments_outlined,
+              skip: _isFree,
+              error: _paymentError,
+              summary: () => _ticket.provider == null
+                  ? '—'
+                  : TicketL10n.provider(AppLocalizations.of(context)!, _ticket.provider!),
+              builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+              TicketPaymentSelector(
+                uid: widget.currentUserId,
+                value: _ticket,
+                onChanged: (c) => setState(() => _ticket = c),
+                capacity: _isUnlimited ? null : int.tryParse(_maxAttendeesController.text),
+                price: double.tryParse(_priceController.text),
+                currency: _currency,
               ),
+              ]),
             ),
-            const SizedBox(height: 24),
-            _buildRecurrenceSection(),
-            const SizedBox(height: 32),
-            _buildSaveActions(),
+            WizardStep(
+              title: AppLocalizations.of(context)!.wzReview,
+              icon: Icons.fact_check_outlined,
+              builder: (context) => _buildReview(),
+            ),
           ],
         ),
       ),
     );
+  }
+
+  // ---- Wizard: per-step validation, review, local draft ----
+  final ListingWizardController _wizard = ListingWizardController();
+
+  String? _basicsError() {
+    final l = AppLocalizations.of(context)!;
+    if (_titleController.text.trim().isEmpty) return l.wzErrTitle;
+    if (_descriptionController.text.trim().isEmpty) return l.wzErrDescription;
+    return null;
+  }
+
+  String? _whereError() {
+    final l = AppLocalizations.of(context)!;
+    if (_locationController.text.trim().isEmpty) return l.wzErrLocation;
+    if (!_endDate.isAfter(_startDate)) return l.wzErrDates;
+    return null;
+  }
+
+  String? _ticketsError() {
+    final l = AppLocalizations.of(context)!;
+    if (!_isUnlimited) {
+      final c = int.tryParse(_maxAttendeesController.text.trim());
+      if (c == null || c < 1) return l.wzErrCapacity;
+    }
+    if (!_isFree) {
+      final n = int.tryParse(_priceController.text.trim());
+      if (n == null || n < 1 || n > 1000) return l.eventsPriceRange;
+    }
+    return null;
+  }
+
+  String? _paymentError() {
+    if (_isFree) return null;
+    if (!_ticket.isComplete || needsReconnect(_ticket)) {
+      return AppLocalizations.of(context)!.tpChooseHowToGetPaid;
+    }
+    return null;
+  }
+
+  Widget _buildReview() {
+    final l = AppLocalizations.of(context)!;
+    final checks = <(String, bool, VoidCallback?)>[
+      if (_basicsError() != null) (_basicsError()!, true, () => _wizard.goTo(0)),
+      if (_whereError() != null) (_whereError()!, true, () => _wizard.goTo(1)),
+      if (_ticketsError() != null) (_ticketsError()!, true, () => _wizard.goTo(2)),
+      if (_paymentError() != null) (_paymentError()!, true, () => _wizard.goTo(3)),
+      if (_mainPhoto == null && (_existingMainUrl ?? '').isEmpty)
+        (l.wzWarnNoPhoto, false, () => _wizard.goTo(0)),
+      if (!_isFree && _ticket.provider == TicketProvider.link && (_isUnlimited || (int.tryParse(_maxAttendeesController.text) ?? 0) >= kLargeAudienceThreshold))
+        (l.wzWarnManualLarge, false, _isFree ? null : () => _wizard.goTo(3)),
+    ];
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      Text(l.wzPreviewTitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+      const SizedBox(height: 6),
+      Card(
+        key: const ValueKey('event-review-preview'),
+        color: AppColors.backgroundCard,
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(_titleController.text.isEmpty ? '—' : _titleController.text,
+                style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.w700)),
+            const SizedBox(height: 4),
+            Text(DateFormat('EEE, MMM d yyyy \u2022 h:mm a').format(_startDate),
+                style: const TextStyle(color: AppColors.textSecondary)),
+            Text(_locationController.text, style: const TextStyle(color: AppColors.textSecondary)),
+            const SizedBox(height: 6),
+            Text(_isFree ? l.eventsFreeLabel : '$_currency${_priceController.text}',
+                style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.w700)),
+          ]),
+        ),
+      ),
+      const SizedBox(height: 12),
+      WizardChecklist(items: checks),
+      const SizedBox(height: 16),
+      _buildSaveActions(),
+    ]);
+  }
+
+  WizardDraftStore get _draftStore => WizardDraftStore('wizard_event_${widget.currentUserId}');
+
+  Map<String, dynamic> _draftMap() => {
+        'title': _titleController.text,
+        'description': _descriptionController.text,
+        'category': _category.name,
+        'location': _locationController.text,
+        'start': _startDate.millisecondsSinceEpoch,
+        'end': _endDate.millisecondsSinceEpoch,
+        'isFree': _isFree,
+        'price': _priceController.text,
+        'currency': _currency,
+        'unlimited': _isUnlimited,
+        'capacity': _maxAttendeesController.text,
+        'maxPerUser': _maxPerUserController.text,
+        'guests': _guestsAllowedPerAttendee,
+        'provider': _ticket.provider?.wire,
+        'linkMethod': _ticket.linkMethod,
+      };
+
+  void _restoreDraft(Map<String, dynamic> d) {
+    setState(() {
+      _titleController.text = d['title'] as String? ?? '';
+      _descriptionController.text = d['description'] as String? ?? '';
+      _category = EventCategory.values.firstWhere((c) => c.name == d['category'], orElse: () => _category);
+      _locationController.text = d['location'] as String? ?? '';
+      final st = d['start'] as int?;
+      final en = d['end'] as int?;
+      if (st != null && DateTime.fromMillisecondsSinceEpoch(st).isAfter(DateTime.now())) {
+        _startDate = DateTime.fromMillisecondsSinceEpoch(st);
+        if (en != null) _endDate = DateTime.fromMillisecondsSinceEpoch(en);
+      }
+      _isFree = d['isFree'] as bool? ?? true;
+      _priceController.text = d['price'] as String? ?? _priceController.text;
+      _currency = _currencies.contains(d['currency']) ? d['currency'] as String : _currency;
+      _isUnlimited = d['unlimited'] as bool? ?? false;
+      _maxAttendeesController.text = d['capacity'] as String? ?? _maxAttendeesController.text;
+      _maxPerUserController.text = d['maxPerUser'] as String? ?? _maxPerUserController.text;
+      _guestsAllowedPerAttendee = (d['guests'] as int?) ?? 0;
+      _ticket = TicketPaymentChoice(
+          provider: TicketProvider.fromWire(d['provider']), linkMethod: d['linkMethod'] as String?);
+    });
+  }
+
+  Future<void> _autosaveDraft() async {
+    if (_isEditing) return;
+    await _draftStore.write(_draftMap());
+  }
+
+  Future<void> _offerDraft() async {
+    if (_isEditing) return;
+    final d = await _draftStore.read();
+    if (d == null || !mounted) return;
+    if (await WizardDraftStore.askResume(context)) {
+      _restoreDraft(d);
+    } else {
+      await _draftStore.clear();
+    }
   }
 
   /// Recurrence editor (create only). Editing an existing occurrence instead
@@ -5169,10 +5350,12 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
       }
       if (!mounted) return;
       setState(() => _saving = false);
+      unawaited(_draftStore.clear());
       widget.onEventCreated(occurrences.first);
       return;
     }
 
+    unawaited(_draftStore.clear());
     widget.onEventCreated(base);
   }
 }

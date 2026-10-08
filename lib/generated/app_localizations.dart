@@ -30475,6 +30475,198 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Total: {sold} sold, {held} reserved'**
   String tpSalesTotal(int sold, int held);
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Everything is ready.'**
+  String get wzAllGood;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Availability'**
+  String get wzAvailability;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get wzBack;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get wzEdit;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Enter how many people can come.'**
+  String get wzErrCapacity;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'The end must be after the start.'**
+  String get wzErrDates;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Add a description.'**
+  String get wzErrDescription;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Add the place.'**
+  String get wzErrLocation;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Add a title.'**
+  String get wzErrTitle;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Basics'**
+  String get wzEventBasics;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Basics'**
+  String get wzExpBasics;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'You can fine-tune single days later in Manage times.'**
+  String get wzFineTuneLater;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Fix'**
+  String get wzFix;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Format & price'**
+  String get wzFormatPrice;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Location'**
+  String get wzLocation;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get wzNext;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'What do you want to change?'**
+  String get wzOverviewTitle;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Payment'**
+  String get wzPayment;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'How buyers will see it'**
+  String get wzPreviewTitle;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Guests pick one of the generated times. Turn off to keep using individual dates.'**
+  String get wzRecurringInfo;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat every week'**
+  String get wzRecurringToggle;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Resume'**
+  String get wzResume;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'You have an unfinished draft on this device. Continue where you left off?'**
+  String get wzResumeBody;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Continue your draft?'**
+  String get wzResumeTitle;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Review & publish'**
+  String get wzReview;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Start over'**
+  String get wzStartOver;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Step {step} of {total}'**
+  String wzStepOf(int step, int total);
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Tickets'**
+  String get wzTickets;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'Many people with manual payments: you will confirm each one. Consider instant confirmation.'**
+  String get wzWarnManualLarge;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'No availability yet: add dates after saving, or turn on \"Repeat every week\".'**
+  String get wzWarnNoAvailability;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'No cover photo yet: listings with a photo get more bookings.'**
+  String get wzWarnNoPhoto;
+
+  /// Create / edit wizard
+  ///
+  /// In en, this message translates to:
+  /// **'When & where'**
+  String get wzWhenWhere;
 }
 
 class _AppLocalizationsDelegate

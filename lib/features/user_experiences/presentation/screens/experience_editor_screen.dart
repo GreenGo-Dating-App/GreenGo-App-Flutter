@@ -1,3 +1,8 @@
+import 'dart:async';
+import '../../../../core/widgets/listing_wizard.dart';
+import '../../../experience_bookings/data/datasources/experience_availability_service.dart';
+import '../../../experience_bookings/domain/availability_rules.dart';
+import '../../../ticket_payments/presentation/ticket_l10n.dart';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -193,6 +198,10 @@ class _EditorFormState extends State<_EditorForm> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _offerDraft();
+      _loadAvailability();
+    });
     final e = widget.existing;
     if (e != null) {
       _title.text = e.title;
@@ -625,8 +634,13 @@ class _EditorFormState extends State<_EditorForm> {
   /// server requires an upcoming date). No date added: it stays a draft.
   Future<void> _publishWithDates(UserExperience draft) async {
     final l = AppLocalizations.of(context)!;
-    await Navigator.of(context).push(ExperienceSlotsScreen.route(
-        experience: draft, currentUserId: widget.currentUserId));
+    if (_useRecurring) {
+      // Recurring schedule from the wizard: no separate dates screen.
+      await _saveAvailability(draft.id);
+    } else {
+      await Navigator.of(context).push(ExperienceSlotsScreen.route(
+          experience: draft, currentUserId: widget.currentUserId));
+    }
     if (!mounted) return;
     setState(() => _busy = true);
     final repo = di.sl<UserExperiencesRepository>();
@@ -898,6 +912,9 @@ class _EditorFormState extends State<_EditorForm> {
           await _publishWithDates(s.saved!);
         } else if (s.status == ExperienceEditorStatus.saved &&
             s.saved != null) {
+          if (_useRecurring) await _saveAvailability(s.saved!.id);
+          unawaited(_draftStore.clear());
+          if (!context.mounted) return;
           _snack(
               _requestedStatus == ExperienceStatus.published
                   ? l.uexpPublished
@@ -941,12 +958,23 @@ class _EditorFormState extends State<_EditorForm> {
             ),
             body: AbsorbPointer(
               absorbing: saving,
-              child: ListView(
-                controller: _scroll,
-                keyboardDismissBehavior:
-                    ScrollViewKeyboardDismissBehavior.onDrag,
-                padding: const EdgeInsets.fromLTRB(16, 12, 16, 120),
-                children: [
+              child: ListingWizard(
+                editMode: !_isNew,
+                controller: _wizard,
+                onStepChanged: (_) => _autosaveDraft(),
+                steps: [
+                  WizardStep(
+                    title: l.wzExpBasics,
+                    icon: Icons.edit_note,
+                    error: () => _stepError(l, const [
+                      ExperienceFieldError.titleLength, ExperienceFieldError.descriptionLength,
+                      ExperienceFieldError.mainPhotoRequired, ExperienceFieldError.tooManyPhotos,
+                      ExperienceFieldError.includedRequired, ExperienceFieldError.tooManyIncluded,
+                      ExperienceFieldError.includedItemTooLong, ExperienceFieldError.tooManyNotIncluded,
+                      ExperienceFieldError.notIncludedItemTooLong, ExperienceFieldError.languagesRequired,
+                    ]),
+                    summary: () => _title.text,
+                    builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                   if ((_communityId ?? '').isNotEmpty)
                     _postedInChip(l),
                   _photosSection(l),
@@ -1014,6 +1042,20 @@ class _EditorFormState extends State<_EditorForm> {
                     icon: Icons.cancel_outlined,
                     iconColor: AppColors.errorRed,
                   ),
+                  _section(l.uexpLanguages, [
+                    _languagesField(l),
+                    if (_err([ExperienceFieldError.languagesRequired]) != null)
+                      _errorLine(
+                          _err([ExperienceFieldError.languagesRequired])!),
+                  ]),
+                    ]),
+                  ),
+                  WizardStep(
+                    title: l.wzLocation,
+                    icon: Icons.place_outlined,
+                    error: () => _stepError(l, const [ExperienceFieldError.locationRequired]),
+                    summary: () => _location.text,
+                    builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                   _section(l.uexpFieldLocation, [
                     TextField(
                       controller: _location,
@@ -1040,6 +1082,17 @@ class _EditorFormState extends State<_EditorForm> {
                       decoration: _dec(l.uexpMeetingPoint),
                     ),
                   ]),
+                    ]),
+                  ),
+                  WizardStep(
+                    title: l.wzFormatPrice,
+                    icon: Icons.sell_outlined,
+                    error: () => _stepError(l, const [
+                      ExperienceFieldError.durationInvalid, ExperienceFieldError.maxGroupInvalid,
+                      ExperienceFieldError.minGroupInvalid, ExperienceFieldError.priceInvalid,
+                    ]),
+                    summary: () => _isFree ? l.uexpFree : '$_currency ${_pricingMode == 'per_group' ? _groupPrice.text : _price.text}',
+                    builder: (context) => Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                   _section(l.uexpSectionPractical, [
                     Row(children: [
                       Expanded(
@@ -1101,10 +1154,6 @@ class _EditorFormState extends State<_EditorForm> {
                       ),
                     ]),
                     const SizedBox(height: 12),
-                    _languagesField(l),
-                    if (_err([ExperienceFieldError.languagesRequired]) != null)
-                      _errorLine(
-                          _err([ExperienceFieldError.languagesRequired])!),
                     Text(l.uexpCancellationLabel,
                         style:
                             const TextStyle(color: AppColors.textSecondary)),
@@ -1121,16 +1170,276 @@ class _EditorFormState extends State<_EditorForm> {
                       style: _text,
                       decoration: _dec(l.uexpPolicyNotes),
                     ),
-                    _bookingSettings(l),
                   ]),
                   _pricingSection(l),
+                    ]),
+                  ),
+                  WizardStep(
+                    title: l.wzAvailability,
+                    icon: Icons.calendar_month_outlined,
+                    error: () => _useRecurring && _availRules.error != null ? l.mtErrRules : null,
+                    summary: () => _useRecurring
+                        ? '${_availRules.windowStart}–${_availRules.windowEnd} · ${l.mtHoursMinutes(_availRules.durationMinutes ~/ 60, _availRules.durationMinutes % 60)}'
+                        : l.bkDatesTitle,
+                    builder: (context) => _availabilityStep(l),
+                  ),
+                  WizardStep(
+                    title: l.wzPayment,
+                    icon: Icons.payments_outlined,
+                    skip: _isFree,
+                    error: () => _stepError(l, const [ExperienceFieldError.paymentMethodsRequired]),
+                    summary: () => _ticket.provider == null ? '—' : TicketL10n.provider(l, _ticket.provider!),
+                    builder: (context) => _paymentSection(l),
+                  ),
+                  WizardStep(
+                    title: l.wzReview,
+                    icon: Icons.fact_check_outlined,
+                    builder: (context) => _reviewStep(l, saving),
+                  ),
                 ],
               ),
             ),
-            bottomNavigationBar: SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-                child: Row(children: [
+          );
+        },
+      ),
+    );
+  }
+
+  // ---- Wizard helpers ----
+  final ListingWizardController _wizard = ListingWizardController();
+
+  /// The first error of [kinds] in the current form (step gating), or null.
+  String? _stepError(AppLocalizations l, List<ExperienceFieldError> kinds) {
+    final errors = ExperienceValidator.validate(_draft());
+    for (final k in kinds) {
+      if (errors.contains(k)) return ExperienceL10n.fieldError(l, k);
+    }
+    return null;
+  }
+
+  // Availability step: the recurring schedule (saved after the listing).
+  bool _useRecurring = true;
+  AvailabilityRules _availRules = AvailabilityRules(
+    timezone: defaultTimeZone(DateTime.now().timeZoneOffset),
+    dateFrom: dateKey(DateTime.now()),
+  );
+  bool _availLoaded = false;
+  AvailabilityOverrides _availOverrides = const AvailabilityOverrides();
+
+  /// Saves the wizard's schedule (asks before removing booked times).
+  Future<void> _saveAvailability(String experienceId) async {
+    if (experienceId.isEmpty || _availRules.error != null) return;
+    final l = AppLocalizations.of(context)!;
+    final svc = ExperienceAvailabilityService();
+    try {
+      final r = await svc.save(experienceId, _availRules, _availOverrides);
+      if (r.needsConfirm && mounted) {
+        final ok = await showDialog<bool>(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            backgroundColor: AppColors.backgroundCard,
+            title: Text(l.mtConfirmTitle),
+            content: Text(l.mtConfirmBody(r.affected)),
+            actions: [
+              TextButton(onPressed: () => Navigator.pop(ctx, false), child: Text(l.cancel)),
+              TextButton(onPressed: () => Navigator.pop(ctx, true), child: Text(l.mtConfirmCancelBookings)),
+            ],
+          ),
+        );
+        if (ok == true) await svc.save(experienceId, _availRules, _availOverrides, confirm: true);
+      }
+    } catch (_) {
+      if (mounted) _snack(l.mtErrRules);
+    }
+  }
+
+  Future<void> _loadAvailability() async {
+    final e = widget.existing;
+    if (e == null || _availLoaded) return;
+    _availLoaded = true;
+    try {
+      final s = await ExperienceAvailabilityService().load(e.id);
+      if (!mounted) return;
+      setState(() {
+        _availOverrides = s.overrides;
+        if (s.rules != null) {
+          _availRules = s.rules!;
+        } else {
+          _useRecurring = false; // legacy listing: keeps its dated slots
+        }
+      });
+    } catch (_) {}
+  }
+
+  Widget _availabilityStep(AppLocalizations l) {
+    final r = _availRules;
+    final preview = dayTimes(r.copyWith(weekdays: const [1, 2, 3, 4, 5, 6, 7]), '2024-01-01');
+    final locale = Localizations.localeOf(context).toString();
+    Future<String?> pickTime(String initial) async {
+      final m = minutesOf(initial) ?? 540;
+      final t = await showTimePicker(context: context, initialTime: TimeOfDay(hour: m ~/ 60, minute: m % 60));
+      return t == null ? null : hmOf(t.hour * 60 + t.minute);
+    }
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      SwitchListTile(
+        key: const ValueKey('wizard-recurring-toggle'),
+        contentPadding: EdgeInsets.zero,
+        activeColor: AppColors.richGold,
+        title: Text(l.wzRecurringToggle, style: _text),
+        subtitle: Text(l.wzRecurringInfo, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+        value: _useRecurring,
+        onChanged: (v) => setState(() => _useRecurring = v),
+      ),
+      if (_useRecurring) ...[
+        Row(children: [
+          Expanded(
+            child: OutlinedButton(
+              key: const ValueKey('wizard-avail-from'),
+              onPressed: () async {
+                final t = await pickTime(r.windowStart);
+                if (t != null) setState(() => _availRules = _availRules.copyWith(windowStart: t));
+              },
+              child: Text('${l.mtAvailableFrom} ${r.windowStart}'),
+            ),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: OutlinedButton(
+              key: const ValueKey('wizard-avail-until'),
+              onPressed: () async {
+                final t = await pickTime(r.windowEnd);
+                if (t != null) setState(() => _availRules = _availRules.copyWith(windowEnd: t));
+              },
+              child: Text('${l.mtAvailableUntil} ${r.windowEnd}'),
+            ),
+          ),
+        ]),
+        const SizedBox(height: 8),
+        Row(children: [
+          Expanded(
+            child: DropdownButtonFormField<int>(
+              value: const [30, 45, 60, 90, 120, 150, 180, 240, 300, 360, 480].contains(r.durationMinutes) ? r.durationMinutes : null,
+              dropdownColor: AppColors.backgroundCard,
+              decoration: _dec(l.mtDuration),
+              items: [
+                for (final d in const [30, 45, 60, 90, 120, 150, 180, 240, 300, 360, 480])
+                  DropdownMenuItem(value: d, child: Text(l.mtHoursMinutes(d ~/ 60, d % 60))),
+              ],
+              onChanged: (v) => setState(() => _availRules = _availRules.copyWith(durationMinutes: v)),
+            ),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: DropdownButtonFormField<int>(
+              value: const [0, 10, 15, 30, 45, 60, 90, 120].contains(r.bufferMinutes) ? r.bufferMinutes : 0,
+              dropdownColor: AppColors.backgroundCard,
+              decoration: _dec(l.mtBreak),
+              items: [
+                for (final d in const [0, 10, 15, 30, 45, 60, 90, 120])
+                  DropdownMenuItem(value: d, child: Text(d == 0 ? l.mtNoBreak : l.mtMinutes(d))),
+              ],
+              onChanged: (v) => setState(() => _availRules = _availRules.copyWith(bufferMinutes: v)),
+            ),
+          ),
+        ]),
+        const SizedBox(height: 8),
+        DropdownButtonFormField<int?>(
+          value: r.startEveryMinutes,
+          dropdownColor: AppColors.backgroundCard,
+          decoration: _dec(l.mtStartEvery),
+          items: [
+            DropdownMenuItem<int?>(value: null, child: Text(l.mtStartEveryAuto)),
+            for (final d in const [15, 30, 45, 60, 90, 120, 180, 240].where((d) => d >= r.durationMinutes))
+              DropdownMenuItem<int?>(value: d, child: Text(l.mtMinutes(d))),
+          ],
+          onChanged: (v) => setState(() => _availRules =
+              v == null ? _availRules.copyWith(clearStartEvery: true) : _availRules.copyWith(startEveryMinutes: v)),
+        ),
+        const SizedBox(height: 8),
+        Wrap(spacing: 6, children: [
+          for (var wd = 1; wd <= 7; wd++)
+            FilterChip(
+              key: ValueKey('wizard-avail-wd-$wd'),
+              label: Text(DateFormat.E(locale).format(DateTime(2024, 1, wd))),
+              selected: r.weekdays.contains(wd),
+              onSelected: (v) => setState(() {
+                final w = {...r.weekdays};
+                v ? w.add(wd) : w.remove(wd);
+                _availRules = _availRules.copyWith(weekdays: w.toList()..sort());
+              }),
+            ),
+        ]),
+        const SizedBox(height: 8),
+        Row(children: [
+          Expanded(
+            child: OutlinedButton(
+              onPressed: () async {
+                final d = await showDatePicker(context: context, initialDate: DateTime.now(),
+                    firstDate: DateTime.now(), lastDate: DateTime.now().add(const Duration(days: 730)));
+                if (d != null) setState(() => _availRules = _availRules.copyWith(dateFrom: dateKey(d)));
+              },
+              child: Text('${l.mtDateFrom}: ${r.dateFrom ?? '—'}'),
+            ),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: OutlinedButton(
+              onPressed: () async {
+                final d = await showDatePicker(context: context, initialDate: DateTime.now().add(const Duration(days: 30)),
+                    firstDate: DateTime.now(), lastDate: DateTime.now().add(const Duration(days: 730)));
+                setState(() => _availRules = d == null ? _availRules.copyWith(clearDateTo: true) : _availRules.copyWith(dateTo: dateKey(d)));
+              },
+              child: Text('${l.mtDateTo}: ${r.dateTo ?? l.mtNoEnd}'),
+            ),
+          ),
+        ]),
+        const SizedBox(height: 8),
+        Text(l.mtPreview, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+        const SizedBox(height: 4),
+        Wrap(key: const ValueKey('wizard-avail-preview'), spacing: 6, runSpacing: 6, children: [
+          for (final t in preview) Chip(label: Text(t), visualDensity: VisualDensity.compact),
+        ]),
+        const SizedBox(height: 6),
+        Text(l.wzFineTuneLater, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+      ] else
+        _bookingSettings(l),
+    ]);
+  }
+
+  Widget _reviewStep(AppLocalizations l, bool saving) {
+    final errors = ExperienceValidator.validate(_draft());
+    final checks = <(String, bool, VoidCallback?)>[
+      for (final e in errors) (ExperienceL10n.fieldError(l, e), true, null),
+      if (!_useRecurring && widget.existing == null) (l.wzWarnNoAvailability, false, () => _wizard.goTo(3)),
+      if (_useRecurring && _availRules.error != null) (l.mtErrRules, true, () => _wizard.goTo(3)),
+    ];
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      Text(l.wzPreviewTitle, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+      const SizedBox(height: 6),
+      Card(
+        key: const ValueKey('experience-review-preview'),
+        color: AppColors.backgroundCard,
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text(_title.text.isEmpty ? '—' : _title.text,
+                style: const TextStyle(color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.w700)),
+            const SizedBox(height: 4),
+            Text(_location.text, style: const TextStyle(color: AppColors.textSecondary)),
+            const SizedBox(height: 6),
+            Text(_isFree
+                    ? l.uexpFree
+                    : (_pricingMode == 'per_group'
+                        ? l.tpGroupPreview('$_currency${_groupPrice.text}', int.tryParse(_maxGroup.text) ?? 0)
+                        : '$_currency${_price.text}'),
+                style: const TextStyle(color: AppColors.richGold, fontWeight: FontWeight.w700)),
+          ]),
+        ),
+      ),
+      const SizedBox(height: 12),
+      WizardChecklist(items: checks),
+      const SizedBox(height: 16),
+      Row(children: [
                   if (widget.existing?.isPublished != true)
                     Expanded(
                       child: OutlinedButton(
@@ -1170,12 +1479,69 @@ class _EditorFormState extends State<_EditorForm> {
                     ),
                   ),
                 ]),
-              ),
-            ),
-          );
-        },
-      ),
-    );
+    ]);
+  }
+
+  WizardDraftStore get _draftStore => WizardDraftStore('wizard_experience_${widget.currentUserId}');
+
+  Map<String, dynamic> _draftMap() => {
+        'title': _title.text,
+        'description': _description.text,
+        'category': _category.name,
+        'location': _location.text,
+        'meetingPoint': _meetingPoint.text,
+        'hours': _hours.text,
+        'minutes': _minutes,
+        'maxGroup': _maxGroup.text,
+        'minGroup': _minGroup.text,
+        'isFree': _isFree,
+        'price': _price.text,
+        'currency': _currency,
+        'pricingMode': _pricingMode,
+        'groupPrice': _groupPrice.text,
+        'languages': _languages.toList(),
+        'rules': _availRules.toMap(),
+        'recurring': _useRecurring,
+      };
+
+  void _restoreDraft(Map<String, dynamic> d) {
+    setState(() {
+      _title.text = d['title'] as String? ?? '';
+      _description.text = d['description'] as String? ?? '';
+      _category = ExperienceCategory.fromWire(d['category']);
+      _location.text = d['location'] as String? ?? '';
+      _meetingPoint.text = d['meetingPoint'] as String? ?? '';
+      _hours.text = d['hours'] as String? ?? _hours.text;
+      _minutes = (d['minutes'] as int?) ?? _minutes;
+      _maxGroup.text = d['maxGroup'] as String? ?? _maxGroup.text;
+      _minGroup.text = d['minGroup'] as String? ?? '';
+      _isFree = d['isFree'] as bool? ?? _isFree;
+      _price.text = d['price'] as String? ?? _price.text;
+      if (kExperienceCurrencies.contains(d['currency'])) _currency = d['currency'] as String;
+      _pricingMode = d['pricingMode'] == 'per_group' ? 'per_group' : 'per_person';
+      _groupPrice.text = d['groupPrice'] as String? ?? '';
+      _languages
+        ..clear()
+        ..addAll(((d['languages'] as List?) ?? const []).whereType<String>());
+      if (d['rules'] is Map) _availRules = AvailabilityRules.fromMap(Map<String, dynamic>.from(d['rules'] as Map));
+      _useRecurring = d['recurring'] as bool? ?? true;
+    });
+  }
+
+  Future<void> _autosaveDraft() async {
+    if (!_isNew) return;
+    await _draftStore.write(_draftMap());
+  }
+
+  Future<void> _offerDraft() async {
+    if (!_isNew) return;
+    final d = await _draftStore.read();
+    if (d == null || !mounted) return;
+    if (await WizardDraftStore.askResume(context)) {
+      _restoreDraft(d);
+    } else {
+      await _draftStore.clear();
+    }
   }
 
   /// "Dates & availability": every booking is a request on one of these
@@ -1381,6 +1747,31 @@ class _EditorFormState extends State<_EditorForm> {
     ]);
   }
 
+  /// Wizard step "Payment" (paid listings only).
+  Widget _paymentSection(AppLocalizations l) => Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+        if (_legacyPayment && !_ticket.isComplete)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Text(l.tpLegacyPaymentPrompt,
+                  style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5)),
+            ),
+          TicketPaymentSelector(
+            uid: widget.currentUserId,
+            value: _ticket,
+            onChanged: (c) => setState(() => _ticket = c),
+            capacity: int.tryParse(_maxGroup.text.trim()),
+            price: _pricingMode == 'per_group'
+                ? double.tryParse(_groupPrice.text.trim().replaceAll(',', '.'))
+                : double.tryParse(_price.text.trim().replaceAll(',', '.')),
+            currency: _currency,
+          ),
+          if (_err([ExperienceFieldError.paymentMethodsRequired]) != null)
+            _errorLine(_err([ExperienceFieldError.paymentMethodsRequired])!),
+        ],
+      );
+
   Widget _pricingSection(AppLocalizations l) {
     return _section(l.uexpPrice, [
       SwitchListTile(
@@ -1501,24 +1892,6 @@ class _EditorFormState extends State<_EditorForm> {
               hint: l.tpNoLimitHint),
         ),
         const SizedBox(height: 12),
-        if (_legacyPayment && !_ticket.isComplete)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Text(l.tpLegacyPaymentPrompt,
-                style: const TextStyle(color: AppColors.warningAmber, fontSize: 12.5)),
-          ),
-        TicketPaymentSelector(
-          uid: widget.currentUserId,
-          value: _ticket,
-          onChanged: (c) => setState(() => _ticket = c),
-          capacity: int.tryParse(_maxGroup.text.trim()),
-          price: _pricingMode == 'per_group'
-              ? double.tryParse(_groupPrice.text.trim().replaceAll(',', '.'))
-              : double.tryParse(_price.text.trim().replaceAll(',', '.')),
-          currency: _currency,
-        ),
-        if (_err([ExperienceFieldError.paymentMethodsRequired]) != null)
-          _errorLine(_err([ExperienceFieldError.paymentMethodsRequired])!),
       ],
       Container(
         padding: const EdgeInsets.all(10),

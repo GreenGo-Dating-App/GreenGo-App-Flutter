@@ -17572,4 +17572,108 @@ class AppLocalizationsDe extends AppLocalizations {
   String tpSalesTotal(int sold, int held) {
     return 'Gesamt: $sold verkauft, $held reserviert';
   }
+
+  @override
+  String get wzAllGood => 'Alles ist bereit.';
+
+  @override
+  String get wzAvailability => 'Verfügbarkeit';
+
+  @override
+  String get wzBack => 'Zurück';
+
+  @override
+  String get wzEdit => 'Bearbeiten';
+
+  @override
+  String get wzErrCapacity => 'Gib an, wie viele Personen kommen können.';
+
+  @override
+  String get wzErrDates => 'Das Ende muss nach dem Beginn liegen.';
+
+  @override
+  String get wzErrDescription => 'Füge eine Beschreibung hinzu.';
+
+  @override
+  String get wzErrLocation => 'Gib den Ort an.';
+
+  @override
+  String get wzErrTitle => 'Füge einen Titel hinzu.';
+
+  @override
+  String get wzEventBasics => 'Grundlagen';
+
+  @override
+  String get wzExpBasics => 'Grundlagen';
+
+  @override
+  String get wzFineTuneLater =>
+      'Einzelne Tage kannst du später unter „Zeiten verwalten\" anpassen.';
+
+  @override
+  String get wzFix => 'Beheben';
+
+  @override
+  String get wzFormatPrice => 'Format & Preis';
+
+  @override
+  String get wzLocation => 'Ort';
+
+  @override
+  String get wzNext => 'Weiter';
+
+  @override
+  String get wzOverviewTitle => 'Was möchtest du ändern?';
+
+  @override
+  String get wzPayment => 'Zahlung';
+
+  @override
+  String get wzPreviewTitle => 'So sehen es Käufer';
+
+  @override
+  String get wzRecurringInfo =>
+      'Gäste wählen eine der erzeugten Zeiten. Ausschalten, um einzelne Termine zu nutzen.';
+
+  @override
+  String get wzRecurringToggle => 'Jede Woche wiederholen';
+
+  @override
+  String get wzResume => 'Fortsetzen';
+
+  @override
+  String get wzResumeBody =>
+      'Auf diesem Gerät gibt es einen unfertigen Entwurf. Dort weitermachen?';
+
+  @override
+  String get wzResumeTitle => 'Entwurf fortsetzen?';
+
+  @override
+  String get wzReview => 'Prüfen & veröffentlichen';
+
+  @override
+  String get wzStartOver => 'Neu beginnen';
+
+  @override
+  String wzStepOf(int step, int total) {
+    return 'Schritt $step von $total';
+  }
+
+  @override
+  String get wzTickets => 'Tickets';
+
+  @override
+  String get wzWarnManualLarge =>
+      'Viele Personen mit manuellen Zahlungen: Du bestätigst jede einzeln. Erwäge die Sofortbestätigung.';
+
+  @override
+  String get wzWarnNoAvailability =>
+      'Noch keine Verfügbarkeit: Füge nach dem Speichern Termine hinzu oder aktiviere „Jede Woche wiederholen\".';
+
+  @override
+  String get wzWarnNoPhoto =>
+      'Noch kein Titelbild: Angebote mit Foto werden öfter gebucht.';
+
+  @override
+  String get wzWhenWhere => 'Wann & wo';
 }

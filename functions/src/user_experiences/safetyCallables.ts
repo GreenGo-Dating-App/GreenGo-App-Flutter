@@ -19,6 +19,7 @@
  *    hidden (status 'hidden', moderation.reason 'reports') pending admin
  *    review, and the host is notified. Host self-reports never count.
  */
+import { AvailabilityRules, generateSlots, rulesError } from '../experience_bookings/availability';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
@@ -67,7 +68,8 @@ export const publishUserExperience = onCall<{ experienceId?: string; asFree?: bo
       const why = publishBlockReason({ profile, experience: next, otherPublishedPaid });
       if (why) throw safetyError(why);
       // Availability must be defined: at least one upcoming open date.
-      if (!(await hasUpcomingDate(tx, expRef))) throw safetyError('dates_required');
+      // Recurring schedule (Manage times) counts when it generates a future time.
+      if (!hasRecurringTimes(next) && !(await hasUpcomingDate(tx, expRef))) throw safetyError('dates_required');
 
       tx.update(expRef, {
         ...(asFree ? AS_FREE_PATCH : {}),
@@ -78,6 +80,15 @@ export const publishUserExperience = onCall<{ experienceId?: string; asFree?: bo
     });
   },
 );
+
+/** A valid recurring schedule that offers at least one time in its horizon. */
+function hasRecurringTimes(e: Record<string, any>): boolean {
+  const rules = e.availabilityRules as AvailabilityRules | undefined;
+  if (!rules || rulesError(rules)) return false;
+  const now = Date.now();
+  const horizon = now + ((rules.maxAdvanceDays ?? 60) + 1) * 86400000;
+  return generateSlots(rules, e.availabilityOverrides, now, horizon, now).length > 0;
+}
 
 /** Whether the listing has at least one OPEN date starting in the future. */
 async function hasUpcomingDate(
