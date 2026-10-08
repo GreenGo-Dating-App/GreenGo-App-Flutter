@@ -10,25 +10,60 @@ import { weeklyXpFields } from './weekKey';
 
 const firestore = admin.firestore();
 
+// ---------------------------------------------------------------------------
+// L-04 (security Phase 1): every callable below used to trust `data.userId`
+// and build doc ids like `${userId}_${id}` from raw input, so any user could
+// write another user's XP / progress / claims (and inject '/' into paths).
+// The subject is now ALWAYS the caller. `userId` is still accepted for
+// backward compatibility (the apps send their own uid) but must equal it.
+// ---------------------------------------------------------------------------
+const SAFE_ID = /^[A-Za-z0-9_-]{1,64}$/;
+
+function callerUid(data: any, context: functions.https.CallableContext): string {
+  const uid = context.auth?.uid;
+  if (!uid) {
+    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+  }
+  const claimed = data?.userId;
+  if (claimed !== undefined && claimed !== null && claimed !== '' && claimed !== uid) {
+    throw new functions.https.HttpsError('permission-denied', 'userId must be the caller');
+  }
+  return uid;
+}
+
+function safeId(value: unknown, field: string): string {
+  if (typeof value !== 'string' || !SAFE_ID.test(value)) {
+    throw new functions.https.HttpsError('invalid-argument', `Invalid ${field}`);
+  }
+  return value;
+}
+
+function boundedInt(value: unknown, field: string, min: number, max: number, fallback?: number): number {
+  const v = value === undefined && fallback !== undefined ? fallback : value;
+  if (typeof v !== 'number' || !Number.isInteger(v) || v < min || v > max) {
+    throw new functions.https.HttpsError('invalid-argument', `Invalid ${field}`);
+  }
+  return v;
+}
+
 /**
  * Grant XP to User
  * Point 187: XP rewards for actions
  */
-export const grantXP = functions.https.onCall(monitored("grantXP", async (data, context) => {
-  if (!context.auth) {
-    throw new functions.https.HttpsError(
-      'unauthenticated',
-      'User must be authenticated'
-    );
-  }
-
-  const { userId, xpAmount, reason } = data;
-
-  if (!userId || !xpAmount || !reason) {
+export const grantXP = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("grantXP", async (data, context) => {
+  const userId = callerUid(data, context);
+  const { reason } = data;
+  if (!data?.xpAmount || !reason) {
     throw new functions.https.HttpsError(
       'invalid-argument',
       'Missing required fields'
     );
+  }
+  const xpAmount = boundedInt(data.xpAmount, 'xpAmount', 1, 10000);
+  if (typeof reason !== 'string' || reason.length > 100) {
+    throw new functions.https.HttpsError('invalid-argument', 'Invalid reason');
   }
 
   try {
@@ -109,16 +144,13 @@ export const grantXP = functions.https.onCall(monitored("grantXP", async (data, 
  * Track Achievement Progress
  * Points 176-185: Update achievement progress
  */
-export const trackAchievementProgress = functions.https.onCall(
+export const trackAchievementProgress = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("trackAchievementProgress", async (data, context) => {
-    if (!context.auth) {
-      throw new functions.https.HttpsError(
-        'unauthenticated',
-        'User must be authenticated'
-      );
-    }
-
-    const { userId, achievementId, incrementBy = 1 } = data;
+    const userId = callerUid(data, context);
+    const achievementId = safeId(data?.achievementId, 'achievementId');
+    const incrementBy = boundedInt(data?.incrementBy, 'incrementBy', 1, 1000, 1);
 
     try {
       const progressRef = firestore
@@ -176,16 +208,12 @@ export const trackAchievementProgress = functions.https.onCall(
  * Unlock Achievement and Grant Rewards
  * Points 176-185: Unlock achievement
  */
-export const unlockAchievementReward = functions.https.onCall(
+export const unlockAchievementReward = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("unlockAchievementReward", async (data, context) => {
-    if (!context.auth) {
-      throw new functions.https.HttpsError(
-        'unauthenticated',
-        'User must be authenticated'
-      );
-    }
-
-    const { userId, achievementId } = data;
+    const userId = callerUid(data, context);
+    const achievementId = safeId(data?.achievementId, 'achievementId');
 
     try {
       const progressRef = firestore
@@ -225,16 +253,12 @@ export const unlockAchievementReward = functions.https.onCall(
  * Claim Level Rewards
  * Point 190: Level-based rewards
  */
-export const claimLevelRewards = functions.https.onCall(
+export const claimLevelRewards = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("claimLevelRewards", async (data, context) => {
-    if (!context.auth) {
-      throw new functions.https.HttpsError(
-        'unauthenticated',
-        'User must be authenticated'
-      );
-    }
-
-    const { userId, level } = data;
+    const userId = callerUid(data, context);
+    const level = boundedInt(data?.level, 'level', 1, 1000);
 
     try {
       const claimedRef = firestore
@@ -282,16 +306,13 @@ export const claimLevelRewards = functions.https.onCall(
  * Track Challenge Progress
  * Point 197: Challenge tracking
  */
-export const trackChallengeProgress = functions.https.onCall(
+export const trackChallengeProgress = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("trackChallengeProgress", async (data, context) => {
-    if (!context.auth) {
-      throw new functions.https.HttpsError(
-        'unauthenticated',
-        'User must be authenticated'
-      );
-    }
-
-    const { userId, challengeId, incrementBy = 1 } = data;
+    const userId = callerUid(data, context);
+    const challengeId = safeId(data?.challengeId, 'challengeId');
+    const incrementBy = boundedInt(data?.incrementBy, 'incrementBy', 1, 1000, 1);
 
     try {
       const progressRef = firestore
@@ -350,16 +371,12 @@ export const trackChallengeProgress = functions.https.onCall(
  * Claim Challenge Reward
  * Point 198: Challenge rewards
  */
-export const claimChallengeReward = functions.https.onCall(
+export const claimChallengeReward = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("claimChallengeReward", async (data, context) => {
-    if (!context.auth) {
-      throw new functions.https.HttpsError(
-        'unauthenticated',
-        'User must be authenticated'
-      );
-    }
-
-    const { userId, challengeId } = data;
+    const userId = callerUid(data, context);
+    const challengeId = safeId(data?.challengeId, 'challengeId');
 
     try {
       const progressRef = firestore
@@ -407,7 +424,9 @@ export const claimChallengeReward = functions.https.onCall(
  * Reset Daily Challenges
  * Point 196: Rotating daily challenges - runs at midnight UTC
  */
-export const resetDailyChallenges = functions.pubsub
+export const resetDailyChallenges = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('0 0 * * *')
   .timeZone('UTC')
   .onRun(monitored("resetDailyChallenges", async (context) => {

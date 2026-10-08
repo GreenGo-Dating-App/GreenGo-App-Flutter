@@ -23,7 +23,7 @@
  * Idempotent: a second real run finds nothing left to change.
  */
 
-import * as crypto from 'crypto';
+import { adminTokenOk } from '../shared/adminToken';
 import { onRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { db, logInfo, logError } from '../shared/utils';
@@ -56,14 +56,6 @@ function add(b: Bucket, uid: string): void {
   if (b.sample.length < SAMPLE_MAX) b.sample.push(uid);
 }
 
-function tokenOk(given: unknown): boolean {
-  const expected = process.env.MEMBERSHIP_MIGRATION_TOKEN || '';
-  if (!expected || typeof given !== 'string' || given.length === 0) return false;
-  const a = Buffer.from(given);
-  const b = Buffer.from(expected);
-  return a.length === b.length && crypto.timingSafeEqual(a, b);
-}
-
 /**
  * Store evidence that this user bought the Base membership (legacy
  * verifyPurchase wrote `subscriptions` + `purchases` rows with the Base
@@ -86,7 +78,7 @@ export const runMembershipTierMigrationNow = onRequest(
       res.status(503).json({ error: 'MEMBERSHIP_MIGRATION_TOKEN not configured' });
       return;
     }
-    if (!tokenOk(req.query.token)) {
+    if (!adminTokenOk(req, [process.env.MEMBERSHIP_MIGRATION_TOKEN], 'runMembershipTierMigrationNow')) { // L-05
       res.status(403).send('forbidden');
       return;
     }

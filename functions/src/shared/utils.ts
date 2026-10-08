@@ -5,6 +5,7 @@
 import * as admin from 'firebase-admin';
 import { https } from 'firebase-functions/v2';
 import { ApiResponse, ApiError } from './types';
+import { requireAdmin, AdminRole } from './adminAuth';
 
 // Initialize Firebase Admin (should only be done once)
 if (!admin.apps.length) {
@@ -89,16 +90,24 @@ export async function verifyAuth(context: https.CallableRequest['auth']): Promis
   return context.uid;
 }
 
-export async function verifyAdminAuth(context: https.CallableRequest['auth']): Promise<string> {
+/**
+ * Admin gate for v2 callables that report errors through handleError().
+ * Delegates to the central requireAdmin() (admin_users doc / adminRole claim);
+ * users.isAdmin is NO LONGER accepted (security Phase 1, P1-6).
+ */
+export async function verifyAdminAuth(
+  context: https.CallableRequest['auth'],
+  allowedRoles?: readonly AdminRole[]
+): Promise<string> {
   const uid = await verifyAuth(context);
-
-  const userDoc = await db.collection('users').doc(uid).get();
-  const userData = userDoc.data();
-
-  if (!userData?.isAdmin) {
+  try {
+    await requireAdmin(context as any, allowedRoles);
+  } catch (e: any) {
+    if (e?.code === 'unauthenticated') {
+      throw new AppError('UNAUTHENTICATED', 'User must be authenticated', 401);
+    }
     throw new AppError('PERMISSION_DENIED', 'User must be an admin', 403);
   }
-
   return uid;
 }
 

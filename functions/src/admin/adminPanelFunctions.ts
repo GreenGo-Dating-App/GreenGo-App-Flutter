@@ -15,6 +15,8 @@ import * as crypto from 'crypto';
 import { welcomeEmailCopy } from '../emails/welcomeEmailCopy';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { requireAdmin, AdminRole, SUPER_ADMIN_ONLY, SUPPORT_ROLES } from '../shared/adminAuth';
+import { scrubPII, redact } from '../shared/redact';
 
 const db = admin.firestore();
 const auth = admin.auth();
@@ -23,16 +25,15 @@ const auth = admin.auth();
 // AUTHENTICATION & AUTHORIZATION HELPERS
 // =============================================================================
 
-async function verifyAdmin(context: functions.https.CallableContext): Promise<boolean> {
-  if (!context.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
-  }
-
-  const adminDoc = await db.collection('admin_users').doc(context.auth.uid).get();
-  if (!adminDoc.exists) {
-    throw new functions.https.HttpsError('permission-denied', 'Must be an admin');
-  }
-
+/**
+ * Thin wrappers over the central requireAdmin() (shared/adminAuth.ts):
+ * admin = admin_users doc / adminRole claim; optional role restriction.
+ */
+async function verifyAdmin(
+  context: functions.https.CallableContext,
+  allowedRoles?: readonly AdminRole[]
+): Promise<boolean> {
+  await requireAdmin(context.auth as any, allowedRoles);
   return true;
 }
 
@@ -41,11 +42,7 @@ async function verifyAdmin(context: functions.https.CallableContext): Promise<bo
  * the most dangerous actions. These now require the superAdmin role.
  */
 async function verifySuperAdmin(context: functions.https.CallableContext): Promise<void> {
-  await verifyAdmin(context);
-  const adminDoc = await db.collection('admin_users').doc(context.auth!.uid).get();
-  if (adminDoc.data()?.role !== 'superAdmin') {
-    throw new functions.https.HttpsError('permission-denied', 'Requires superAdmin');
-  }
+  await requireAdmin(context.auth as any, SUPER_ADMIN_ONLY);
 }
 
 /** True when the target uid is a superAdmin (never a target for other admins' actions). */
@@ -79,7 +76,7 @@ export const send2FACode = functions.runWith({ memory: '512MB' }).https.onCall(
 
     const adminData = adminDoc.data();
     const email = adminData?.email || context.auth.token?.email;
-    console.log(`send2FACode: admin found, email=${email}`);
+    console.log(`send2FACode: admin found, email=${redact(email)}`);
 
     if (!email) {
       throw new functions.https.HttpsError('failed-precondition', 'No email associated with this account');
@@ -192,7 +189,9 @@ export const send2FACode = functions.runWith({ memory: '512MB' }).https.onCall(
 /**
  * Verify a 2FA code entered by the admin user
  */
-export const verify2FACode = functions.https.onCall(
+export const verify2FACode = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("verify2FACode", async (data: any, context: functions.https.CallableContext) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -312,7 +311,7 @@ export const adminChangeUserPassword = functions.runWith({ memory: '512MB' }).ht
  */
 export const sendPasswordResetEmail = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("sendPasswordResetEmail", async (data: any, context: functions.https.CallableContext) => {
-    await verifyAdmin(context);
+    await verifyAdmin(context, SUPPORT_ROLES);
 
     const { email } = data;
 
@@ -356,9 +355,11 @@ export const sendPasswordResetEmail = functions.runWith({ memory: '512MB' }).htt
 /**
  * Force user to change password on next login
  */
-export const forcePasswordChange = functions.https.onCall(
+export const forcePasswordChange = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("forcePasswordChange", async (data: any, context: functions.https.CallableContext) => {
-    await verifyAdmin(context);
+    await verifySuperAdmin(context);
 
     const { userId } = data;
 
@@ -387,9 +388,11 @@ export const forcePasswordChange = functions.https.onCall(
 /**
  * Delete a user completely (auth + firestore)
  */
-export const adminDeleteUser = functions.https.onCall(
+export const adminDeleteUser = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("adminDeleteUser", async (data: any, context: functions.https.CallableContext) => {
-    await verifyAdmin(context);
+    await verifySuperAdmin(context);
 
     const { userId, reason } = data;
 
@@ -410,7 +413,7 @@ export const adminDeleteUser = functions.https.onCall(
       try {
         await auth.deleteUser(userId);
         authDeleted = true;
-        console.log(`Firebase Auth user ${userId} (${userEmail}) deleted`);
+        console.log(`Firebase Auth user ${userId} (${redact(userEmail)}) deleted`);
       } catch (authError: any) {
         if (authError.code === 'auth/user-not-found') {
           console.log(`User ${userId} not found in Auth (already deleted)`);
@@ -454,9 +457,11 @@ export const adminDeleteUser = functions.https.onCall(
 /**
  * Disable/Enable a user account
  */
-export const adminSetUserDisabled = functions.https.onCall(
+export const adminSetUserDisabled = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("adminSetUserDisabled", async (data: any, context: functions.https.CallableContext) => {
-    await verifyAdmin(context);
+    await verifySuperAdmin(context);
 
     const { userId, disabled, reason } = data;
 
@@ -489,7 +494,9 @@ export const adminSetUserDisabled = functions.https.onCall(
 /**
  * Send test email to verify configuration
  */
-export const sendTestEmail = functions.https.onCall(
+export const sendTestEmail = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("sendTestEmail", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
@@ -507,7 +514,7 @@ export const sendTestEmail = functions.https.onCall(
         throw new functions.https.HttpsError('failed-precondition', 'Email is not configured');
       }
 
-      console.log(`Would send test email to ${email} using ${config.provider}`);
+      console.log(`Would send test email to ${redact(email)} using ${config.provider}`);
 
       await db.doc('app_config/email_settings').update({
         testEmailSent: admin.firestore.FieldValue.serverTimestamp(),
@@ -531,7 +538,31 @@ export const sendTestEmail = functions.https.onCall(
 /**
  * Process support message with AI (triggered by new message)
  */
-export const processAISupportMessage = functions.firestore
+export const AI_SUPPORT_DAILY_LIMIT = 20;
+export const AI_SUPPORT_MIN_INTERVAL_MS = 10_000;
+
+/**
+ * H-04: per-user AI reply budget (ai_support_rate/{uid}). Returns false when
+ * the user is over 20 replies/day or replied to less than 10s ago; the
+ * message is then left for a human agent (no Anthropic call).
+ */
+async function reserveAISupportReply(uid: string): Promise<boolean> {
+  const ref = db.collection('ai_support_rate').doc(uid);
+  const now = Date.now();
+  const day = new Date(now).toISOString().slice(0, 10);
+  return db.runTransaction(async (tx) => {
+    const d = (await tx.get(ref)).data() || {};
+    const count = d.day === day ? Number(d.count) || 0 : 0;
+    const lastAt = Number(d.lastAtMs) || 0;
+    if (count >= AI_SUPPORT_DAILY_LIMIT || now - lastAt < AI_SUPPORT_MIN_INTERVAL_MS) return false;
+    tx.set(ref, { day, count: count + 1, lastAtMs: now }, { merge: true });
+    return true;
+  });
+}
+
+export const processAISupportMessage = functions
+  .runWith({ memory: '512MB' })
+  .firestore
   .document('support_messages/{messageId}')
   .onCreate(monitored("processAISupportMessage", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const message = snap.data();
@@ -566,6 +597,24 @@ export const processAISupportMessage = functions.firestore
         return null;
       }
 
+      // H-04: only the chat owner's own messages may trigger an AI reply
+      // (support_messages is writable by any signed-in user), and each owner
+      // has a small AI budget. Over budget -> leave it for a human agent.
+      const ownerUid: string | undefined = conversation?.userId;
+      if (!ownerUid || (message.senderId && message.senderId !== ownerUid)) {
+        console.log('Support message not from the chat owner; no AI reply');
+        return null;
+      }
+      if (!(await reserveAISupportReply(ownerUid))) {
+        console.log('AI support rate limit reached; leaving for human agents');
+        await db.collection('ai_support_logs').add({
+          conversationId,
+          status: 'rate_limited',
+          timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        });
+        return null;
+      }
+
       const messagesSnap = await db.collection('support_messages')
         .where('conversationId', '==', conversationId)
         .orderBy('createdAt', 'asc')
@@ -576,7 +625,8 @@ export const processAISupportMessage = functions.firestore
         const d = docSnap.data();
         return {
           role: d.senderType === 'admin' ? 'assistant' : 'user',
-          content: d.content,
+          // H-04: no email / phone / exact location / DOB to the model.
+          content: scrubPII(d.content),
         };
       });
 
@@ -634,7 +684,9 @@ export const processAISupportMessage = functions.firestore
         const profileDoc = await db.collection('profiles').doc(userId).get();
         if (profileDoc.exists) {
           const profile = profileDoc.data();
-          systemPrompt += `\n\n## Current User\n- Name: ${profile?.displayName}\n- Tier: ${profile?.membershipTier || 'free'}`;
+          // H-04: first name + tier only; nothing that identifies or locates.
+          const firstName = scrubPII(String(profile?.displayName ?? '').trim().split(/\s+/)[0] ?? '');
+          systemPrompt += `\n\n## Current User\n- Name: ${firstName}\n- Tier: ${profile?.membershipTier || 'free'}`;
         }
       }
 
@@ -709,7 +761,9 @@ export const processAISupportMessage = functions.firestore
 /**
  * When a new support chat is created, set default values
  */
-export const onSupportChatCreated = functions.firestore
+export const onSupportChatCreated = functions
+  .runWith({ memory: '512MB' })
+  .firestore
   .document('support_chats/{chatId}')
   .onCreate(monitored("onSupportChatCreated", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const chat = snap.data();
@@ -734,7 +788,9 @@ export const onSupportChatCreated = functions.firestore
  * When a support message is created, update the conversation
  * and send push notification to the user if the message is from admin
  */
-export const onSupportMessageCreated = functions.firestore
+export const onSupportMessageCreated = functions
+  .runWith({ memory: '512MB' })
+  .firestore
   .document('support_messages/{messageId}')
   .onCreate(monitored("onSupportMessageCreated", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const message = snap.data();
@@ -882,7 +938,7 @@ export const sendWelcomeEmail = functions.runWith({ memory: '512MB' }).https.onC
     // The app's active language at registration. Unknown/missing => English.
     const copy = welcomeEmailCopy(locale);
 
-    console.log(`sendWelcomeEmail called for: ${email} (locale: ${locale ?? 'none'})`);
+    console.log(`sendWelcomeEmail called for: ${redact(email)} (locale: ${locale ?? 'none'})`);
 
     try {
       // Read Resend config
@@ -1107,7 +1163,7 @@ export const sendPasswordResetViaResend = functions.runWith({ memory: '512MB' })
       );
     }
 
-    console.log(`sendPasswordResetViaResend called for: ${email}`);
+    console.log(`sendPasswordResetViaResend called for: ${redact(email)}`);
 
     try {
       // Generate the Firebase password reset link. An explicit, authorized
@@ -1146,7 +1202,7 @@ export const sendPasswordResetViaResend = functions.runWith({ memory: '512MB' })
         code === 'auth/invalid-email' ||
         message.includes('Unable to create the email action link')
       ) {
-        console.log(`sendPasswordResetViaResend: no account for ${email}`);
+        console.log(`sendPasswordResetViaResend: no account for ${redact(email)}`);
         throw new functions.https.HttpsError('not-found', 'email-not-found');
       }
 
@@ -1233,7 +1289,7 @@ export const cleanupOrphanedAuthUser = functions.runWith({ memory: '512MB' }).ht
 
       // No Firestore data exists — this is an orphaned Auth user, safe to delete
       await auth.deleteUser(userId);
-      console.log(`Cleaned up orphaned Auth user: ${userId} (${email})`);
+      console.log(`Cleaned up orphaned Auth user: ${userId} (${redact(email)})`);
 
       // Log the cleanup action
       await db.collection('admin_actions').add({

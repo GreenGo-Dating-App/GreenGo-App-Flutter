@@ -31,7 +31,7 @@
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
-import * as crypto from 'crypto';
+import { adminTokenOk } from '../shared/adminToken';
 import '../shared/firebaseAdmin';
 import { grantCoins } from '../shared/grants';
 import { effectiveTier, EffectiveTier, isBaseMembershipActive } from '../shared/effectiveTier';
@@ -240,14 +240,6 @@ export const grantMonthlyCoinAllowances = onSchedule(
   },
 );
 
-function tokenOk(given: unknown): boolean {
-  const expected = process.env.COIN_ALLOWANCE_TOKEN || '';
-  if (!expected || typeof given !== 'string' || given.length === 0) return false;
-  const a = Buffer.from(given);
-  const b = Buffer.from(expected);
-  return a.length === b.length && crypto.timingSafeEqual(a, b);
-}
-
 export const runMonthlyCoinAllowancesNow = onRequest(
   { memory: '512MiB', timeoutSeconds: 540 },
   async (req, res) => {
@@ -255,7 +247,7 @@ export const runMonthlyCoinAllowancesNow = onRequest(
       res.status(503).json({ error: 'not configured' });
       return;
     }
-    if (!tokenOk(req.query.token)) {
+    if (!adminTokenOk(req, [process.env.COIN_ALLOWANCE_TOKEN], 'runMonthlyCoinAllowancesNow')) { // L-05
       res.status(403).json({ error: 'forbidden' });
       return;
     }

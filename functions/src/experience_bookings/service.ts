@@ -13,6 +13,7 @@
  * parties (paid experiences are paid through the host's external link).
  */
 
+import { MODERATION_ROLES } from '../shared/adminAuth';
 import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import { HttpsError, FunctionsErrorCode } from 'firebase-functions/v2/https';
@@ -129,13 +130,18 @@ export async function loadConfig(): Promise<BookingConfig> {
   }
 }
 
-/** Admin = admin-panel user (admin_users/{uid}) or legacy users.role == 'admin'. */
+/**
+ * Admin for booking disputes = superAdmin | moderator in admin_users (central
+ * shared/adminAuth). P1-6: legacy users.role == 'admin' is no longer accepted.
+ */
 export async function isAdminUid(uid: string): Promise<boolean> {
-  const [a, u] = await Promise.all([
-    fdb().collection('admin_users').doc(uid).get(),
-    fdb().collection('users').doc(uid).get(),
-  ]);
-  return a.exists || u.data()?.role === 'admin';
+  // Same source of truth as shared/adminAuth (active admin_users doc), read via
+  // the injectable bookingDeps db. Legacy role spellings that notifyAdmins
+  // below also uses ('admin', 'super_admin') are kept.
+  const a = await fdb().collection('admin_users').doc(uid).get();
+  const d = a.data();
+  if (!a.exists || d?.isActive === false) return false;
+  return [...MODERATION_ROLES, 'admin', 'super_admin'].includes(String(d?.role ?? ''));
 }
 
 /** Either user blocked the other (root blockedUsers + the profile block list). */

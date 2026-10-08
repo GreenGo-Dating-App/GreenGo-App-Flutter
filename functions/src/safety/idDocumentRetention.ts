@@ -19,6 +19,7 @@
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
+import { requireAdmin, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 import { db, logInfo, logError, logWarning } from '../shared/utils';
 import {
   RetentionEntry,
@@ -240,11 +241,9 @@ export const purgeRetainedIdDocuments = onSchedule(
 
 // ─────────────────────────────────────────────────────── admin callables
 
-async function requireAdmin(uid: string | undefined): Promise<string> {
-  if (!uid) throw new HttpsError('unauthenticated', 'Sign in required.');
-  const me = await db.collection('users').doc(uid).get();
-  if (!me.data()?.isAdmin) throw new HttpsError('permission-denied', 'Admin only.');
-  return uid;
+// P1-6: ID-document retention controls are superAdmin-only (was users.isAdmin).
+async function requireIdDocAdmin(auth: { uid?: string; token?: any } | undefined): Promise<string> {
+  return (await requireAdmin(auth, SUPER_ADMIN_ONLY)).uid;
 }
 
 /**
@@ -255,7 +254,7 @@ async function requireAdmin(uid: string | undefined): Promise<string> {
 export const setIdDocumentLegalHold = onCall<{ retentionId?: string; uid?: string; hold?: boolean; note?: string }>(
   { memory: '512MiB', timeoutSeconds: 60 },
   async (request) => {
-    const adminUid = await requireAdmin(request.auth?.uid);
+    const adminUid = await requireIdDocAdmin(request.auth);
     const hold = request.data?.hold === true;
     const patch = {
       legalHold: hold,
@@ -291,7 +290,7 @@ export const setIdDocumentLegalHold = onCall<{ retentionId?: string; uid?: strin
 export const backfillIdVerifiedFlags = onCall<{ cursor?: string; pageSize?: number }>(
   { memory: '512MiB', timeoutSeconds: 540 },
   async (request) => {
-    await requireAdmin(request.auth?.uid);
+    await requireIdDocAdmin(request.auth);
     const pageSize = Math.min(Math.max(Number(request.data?.pageSize) || 300, 1), 500);
     let q = db.collection('profiles')
       .orderBy(admin.firestore.FieldPath.documentId())

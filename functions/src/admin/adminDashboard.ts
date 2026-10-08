@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { requireAdmin, rolesForPermission } from '../shared/adminAuth';
 
 const firestore = admin.firestore();
 
@@ -17,39 +18,9 @@ async function verifyAdminPermission(
   context: functions.https.CallableContext,
   requiredPermission: string
 ): Promise<void> {
-  if (!context.auth) {
-    throw new functions.https.HttpsError(
-      'unauthenticated',
-      'User must be authenticated'
-    );
-  }
-
-  const customClaims = context.auth.token;
-
-  // Check if user has admin role
-  if (!customClaims.admin && !customClaims.moderator && !customClaims.support && !customClaims.analyst) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      'User does not have admin access'
-    );
-  }
-
-  // Check specific permission
-  const adminDoc = await firestore.collection('admins').doc(context.auth.uid).get();
-  if (!adminDoc.exists) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      'Admin profile not found'
-    );
-  }
-
-  const permissions = adminDoc.data()!.permissions || [];
-  if (!permissions.includes(requiredPermission)) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      `Missing required permission: ${requiredPermission}`
-    );
-  }
+  // Security Phase 1 (P1-6): the legacy `admins` collection / boolean claims
+  // are no longer trusted. Permission -> role matrix via central requireAdmin.
+  await requireAdmin(context.auth as any, rolesForPermission(requiredPermission));
 }
 
 /**
@@ -64,7 +35,7 @@ async function logAdminAction(
   details: any,
   ipAddress?: string
 ): Promise<void> {
-  const adminDoc = await firestore.collection('admins').doc(adminId).get();
+  const adminDoc = await firestore.collection('admin_users').doc(adminId).get();
   const adminData = adminDoc.data();
 
   await firestore.collection('admin_audit_log').add({
@@ -777,7 +748,9 @@ export const resolveSystemAlert = functions.https.onCall(monitored("resolveSyste
  * Get Admin Audit Log
  * Point 235: View audit log
  */
-export const getAdminAuditLog = functions.https.onCall(monitored("getAdminAuditLog", async (data, context) => {
+export const getAdminAuditLog = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getAdminAuditLog", async (data, context) => {
   await verifyAdminPermission(context, 'viewAuditLog');
 
   const { limit = 100, offset = 0, adminId = null, action = null } = data;

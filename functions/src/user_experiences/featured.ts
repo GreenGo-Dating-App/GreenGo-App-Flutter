@@ -16,6 +16,7 @@
  */
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
+import { requireAdmin, MODERATION_ROLES } from '../shared/adminAuth';
 import '../shared/firebaseAdmin';
 import { EXPERIENCES } from './createUserExperience';
 import { FEATURE_MAX_DAYS, featuredPatch } from './featuredPatch';
@@ -29,8 +30,7 @@ export const setExperienceFeatured = onCall<{ experienceId?: unknown; days?: unk
   async (request) => {
     const uid = request.auth?.uid;
     if (!uid) throw new HttpsError('unauthenticated', 'Sign in required.');
-    const me = await db.collection('users').doc(uid).get();
-    if (!me.data()?.isAdmin) throw new HttpsError('permission-denied', 'Admin only.');
+    await requireAdmin(request.auth, MODERATION_ROLES); // P1-6 (was users.isAdmin)
 
     const experienceId = request.data?.experienceId;
     if (typeof experienceId !== 'string' || !experienceId || experienceId.includes('/')) {

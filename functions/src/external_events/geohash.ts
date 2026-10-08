@@ -6,6 +6,7 @@
  */
 
 import { onRequest } from 'firebase-functions/v2/https';
+import { adminTokenOk } from '../shared/adminToken';
 import { defineSecret } from 'firebase-functions/params';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
@@ -67,12 +68,10 @@ export const runBackfillEventGeohashNow = onRequest(
     secrets: [VIATOR_API_KEY, TICKETMASTER_API_KEY, GEOAPIFY_API_KEY],
   },
   async (req, res) => {
-    const token = req.query.token;
-    const valid =
-      token === VIATOR_API_KEY.value() ||
-      token === TICKETMASTER_API_KEY.value() ||
-      token === GEOAPIFY_API_KEY.value();
-    if (!token || !valid) {
+    // L-05: header (X-Admin-Token / Bearer) or deprecated ?token=, constant time.
+    const valid = adminTokenOk(req,
+      [VIATOR_API_KEY.value(), TICKETMASTER_API_KEY.value(), GEOAPIFY_API_KEY.value()], 'geohashBackfill');
+    if (!valid) {
       res.status(403).send('Forbidden');
       return;
     }
@@ -125,12 +124,10 @@ export const runBackfillGeohashNow = onRequest(
     secrets: [VIATOR_API_KEY, TICKETMASTER_API_KEY, GEOAPIFY_API_KEY],
   },
   async (req, res) => {
-    const token = req.query.token;
-    const valid =
-      token === VIATOR_API_KEY.value() ||
-      token === TICKETMASTER_API_KEY.value() ||
-      token === GEOAPIFY_API_KEY.value();
-    if (!token || !valid) {
+    // L-05: header (X-Admin-Token / Bearer) or deprecated ?token=, constant time.
+    const valid = adminTokenOk(req,
+      [VIATOR_API_KEY.value(), TICKETMASTER_API_KEY.value(), GEOAPIFY_API_KEY.value()], 'geohashBackfill');
+    if (!valid) {
       res.status(403).send('Forbidden');
       return;
     }

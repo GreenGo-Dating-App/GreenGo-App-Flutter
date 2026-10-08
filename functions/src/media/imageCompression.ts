@@ -25,7 +25,9 @@ const THUMB_HEIGHT = 200;
  * Triggered when an image is uploaded to Firebase Storage
  * Compresses the image and generates a thumbnail
  */
-export const compressUploadedImage = functions.storage
+export const compressUploadedImage = functions
+  .runWith({ memory: '512MB' })
+  .storage
   .object()
   .onFinalize(async (object) => {
     const filePath = object.name;

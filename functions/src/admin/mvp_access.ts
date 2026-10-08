@@ -5,6 +5,7 @@
 
 import { onCall } from 'firebase-functions/v2/https';
 import { verifyAdminAuth, handleError, logInfo, logError, db, FieldValue } from '../shared/utils';
+import { MODERATION_ROLES, SUPER_ADMIN_ONLY, SUPPORT_ROLES } from '../shared/adminAuth';
 import * as admin from 'firebase-admin';
 import { brandPush } from '../notifications/brand';
 import { SubscriptionTier, ApprovalStatus } from '../shared/types';
@@ -293,12 +294,12 @@ function getAccessDateForTier(tier: SubscriptionTier): Date {
 // 1. Approve User
 export const approveUser = onCall<ApproveUserRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("approveUser", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, MODERATION_ROLES);
       const { userId, notify = true } = request.data;
 
       logInfo(`Approving user ${userId}`);
@@ -365,12 +366,12 @@ export const approveUser = onCall<ApproveUserRequest>(
 // 2. Reject User
 export const rejectUser = onCall<RejectUserRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("rejectUser", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, MODERATION_ROLES);
       const { userId, reason, notify = true } = request.data;
 
       logInfo(`Rejecting user ${userId}`);
@@ -439,12 +440,12 @@ export const rejectUser = onCall<RejectUserRequest>(
 // 3. Update User Tier
 export const updateUserTier = onCall<UpdateUserTierRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("updateUserTier", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, SUPER_ADMIN_ONLY);
       const { userId, tier } = request.data;
 
       logInfo(`Updating user ${userId} to tier ${tier}`);
@@ -479,7 +480,7 @@ export const updateUserTier = onCall<UpdateUserTierRequest>(
 // 4. Get Pending Users
 export const getPendingUsers = onCall<GetPendingUsersRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("getPendingUsers", async (request) => {
@@ -533,7 +534,7 @@ export const bulkApproveUsers = onCall<{ userIds: string[]; notify?: boolean }>(
   },
   monitored("bulkApproveUsers", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, MODERATION_ROLES);
       const { userIds, notify = true } = request.data;
 
       logInfo(`Bulk approving ${userIds.length} users`);
@@ -611,7 +612,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
   },
   monitored("sendBroadcastNotification", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, SUPER_ADMIN_ONLY);
       const {
         messageType = 'custom',
         customTitle,
@@ -820,12 +821,12 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
 // 7. Send Notification to Single User
 export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("sendNotificationToUser", async (request) => {
     try {
-      await verifyAdminAuth(request.auth);
+      await verifyAdminAuth(request.auth, SUPPORT_ROLES);
       const { userId, title, body, data } = request.data;
 
       logInfo(`Sending notification to user ${userId}`);
@@ -881,7 +882,7 @@ export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
 // 8. Get MVP Access Stats
 export const getMvpAccessStats = onCall(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("getMvpAccessStats", async (request) => {

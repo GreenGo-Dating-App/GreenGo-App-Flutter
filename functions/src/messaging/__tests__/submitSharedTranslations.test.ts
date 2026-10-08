@@ -1,8 +1,12 @@
 /**
  * submitSharedTranslations: client-contributed translations of public content
- * become shared (translations/{id}) only after TWO DIFFERENT users submitted
- * the SAME normalised translation.
+ * become shared (translations/{id}) only after THREE DIFFERENT QUALIFIED users
+ * (Auth account >= 7 days old, email verified) submitted the SAME normalised
+ * translation, or an admin submitted it (security Phase 1, M-06).
  */
+
+const authUsers = new Map<string, any>(); // uid -> Auth user record
+const OLD = new Date(Date.now() - 30 * 864e5).toUTCString();
 
 const docs = new Map<string, any>(); // `${collection}/${id}` -> data
 
@@ -33,7 +37,12 @@ jest.mock('firebase-admin', () => {
     initializeApp: jest.fn(),
     firestore: firestoreFn,
     storage: () => ({}),
-    auth: () => ({}),
+    auth: () => ({
+      getUser: async (uid: string) => {
+        if (!authUsers.has(uid)) throw Object.assign(new Error('nf'), { code: 'auth/user-not-found' });
+        return authUsers.get(uid);
+      },
+    }),
     messaging: () => ({}),
   };
 });
@@ -63,7 +72,14 @@ const submit = (uid: string, translation: string, text = TEXT) => call(uid, [{ t
 
 beforeEach(() => {
   docs.clear();
-  for (const u of ['u1', 'u2', 'u3']) docs.set(`users/${u}`, { accountStatus: 'active' });
+  authUsers.clear();
+  for (const u of ['u1', 'u2', 'u3', 'u4', 'new', 'unverified', 'boss']) {
+    docs.set(`users/${u}`, { accountStatus: 'active' });
+    authUsers.set(u, { uid: u, emailVerified: true, metadata: { creationTime: OLD } });
+  }
+  authUsers.set('new', { uid: 'new', emailVerified: true, metadata: { creationTime: new Date().toUTCString() } });
+  authUsers.set('unverified', { uid: 'unverified', emailVerified: false, metadata: { creationTime: OLD } });
+  docs.set('admin_users/boss', { role: 'superAdmin' });
 });
 
 describe('consensus', () => {
@@ -79,9 +95,44 @@ describe('consensus', () => {
     expect(JSON.stringify(c)).not.toContain(TEXT);
   });
 
-  it('two different users with the same translation share it (translateTexts shape)', async () => {
+  it('two qualified users are NOT enough any more (M-06)', async () => {
     await submit('u1', IT);
     const out = await submit('u2', IT);
+    expect(out).toMatchObject({ accepted: 1, shared: 0 });
+    expect(shared()).toBeUndefined();
+  });
+
+  it('new or unverified accounts are not recorded and never count', async () => {
+    const a = await submit('new', IT);
+    const b = await submit('unverified', IT);
+    expect(a).toMatchObject({ accepted: 0, shared: 0, notEligible: true });
+    expect(b).toMatchObject({ accepted: 0, shared: 0, notEligible: true });
+    expect(candidate()).toBeUndefined();
+    await submit('u1', IT);
+    await submit('u2', IT);
+    expect(shared()).toBeUndefined();
+  });
+
+  it('an admin submission is shared directly', async () => {
+    const out = await submit('boss', IT);
+    expect(out).toMatchObject({ accepted: 1, shared: 1 });
+    expect(shared()).toMatchObject({ translated: IT, origin: 'admin', voters: ['boss'] });
+  });
+
+  it('a candidate from before the new rules is discarded', async () => {
+    docs.set(`translation_candidates/${id}`, {
+      target: 'it', textHash: 'h',
+      votes: { [voteKey(IT)]: { translation: IT, uids: ['x1', 'x2'], at: 1 } },
+    });
+    const out = await submit('u1', IT);
+    expect(out.shared).toBe(0);
+    expect(candidate().votes[voteKey(IT)].uids).toEqual(['u1']);
+  });
+
+  it('three different qualified users with the same translation share it (translateTexts shape)', async () => {
+    await submit('u1', IT);
+    await submit('u2', IT);
+    const out = await submit('u3', IT);
     expect(out).toMatchObject({ accepted: 1, shared: 1 });
     expect(shared()).toEqual({
       target: 'it',
@@ -89,7 +140,7 @@ describe('consensus', () => {
       source: null,
       createdAt: 'TS',
       origin: 'consensus',
-      voters: ['u1', 'u2'],
+      voters: ['u1', 'u2', 'u3'],
     });
     expect(candidate()).toBeUndefined();
   });
@@ -102,21 +153,23 @@ describe('consensus', () => {
     expect(candidate().votes[voteKey(IT)].uids).toEqual(['u1']);
   });
 
-  it('two different translations are not shared until one gets a second user', async () => {
+  it('two different translations are not shared until one gets a third user', async () => {
     const other = 'Il porto antico ospita un mercato ittico ogni domenica mattina.';
     await submit('u1', IT);
     await submit('u2', other);
+    await submit('u3', other);
     expect(shared()).toBeUndefined();
     expect(Object.keys(candidate().votes)).toHaveLength(2);
-    await submit('u3', other);
+    await submit('u4', other);
     expect(shared().translated).toBe(other);
-    expect(shared().voters).toEqual(['u2', 'u3']);
+    expect(shared().voters).toEqual(['u2', 'u3', 'u4']);
   });
 
   it('treats whitespace-only differences (and NFC/NFD) as the same translation', async () => {
     const nfd = 'Caffè  al   porto\t ogni  domenica'.normalize('NFD');
     await call('u1', [{ text: 'Coffee at the harbour every Sunday', translation: nfd }]);
     await call('u2', [{ text: 'Coffee at the harbour every Sunday', translation: '  Caffè al porto ogni domenica ' }]);
+    await call('u3', [{ text: 'Coffee at the harbour every Sunday', translation: 'Caffè al porto ogni  domenica' }]);
     const doc = docs.get(`translations/${sharedTranslationId('it', 'Coffee at the harbour every Sunday')}`);
     expect(doc.translated).toBe('Caffè al porto ogni domenica');
   });

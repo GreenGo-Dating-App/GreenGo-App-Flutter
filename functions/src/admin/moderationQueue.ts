@@ -76,7 +76,9 @@ async function updateRelatedReports(queueData: any, patch: Record<string, unknow
  * Get Moderation Queue
  * Point 246: Fetch pending reports for review
  */
-export const getModerationQueue = functions.https.onCall(monitored("getModerationQueue", async (data, context) => {
+export const getModerationQueue = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getModerationQueue", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const {
@@ -366,7 +368,9 @@ function generateSuggestedActions(
  * Assign Moderation Item
  * Assign queue item to moderator
  */
-export const assignModerationItem = functions.https.onCall(monitored("assignModerationItem", async (data, context) => {
+export const assignModerationItem = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("assignModerationItem", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId } = data;
@@ -685,7 +689,9 @@ export const executeBulkModeration = functions.runWith({ memory: '512MB' }).http
  * Get Moderation Statistics
  * Point 250: Dashboard metrics for moderation
  */
-export const getModerationStatistics = functions.https.onCall(monitored("getModerationStatistics", async (data, context) => {
+export const getModerationStatistics = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getModerationStatistics", async (data, context) => {
   await verifyModeratorPermission(context);
 
   try {

@@ -24,6 +24,7 @@ import { sendCouponRedeemedEmail } from '../notifications/couponEmails';
 import { effectiveGrants, hasBaseGrant, summariseGrants } from './grants';
 import { DEFAULT_2026_OFFER, isWithin2026 } from './preRegistrationOffer';
 import { monitored } from '../shared/monitoring';
+import { redact } from '../shared/redact';
 
 
 /**
@@ -111,7 +112,7 @@ export const applySignupGrants = onDocumentCreated(
         );
         return;
       }
-      logInfo(`applySignupGrants: no allowlist coupons for ${email}`);
+      logInfo(`applySignupGrants: no allowlist coupons for ${redact(email)}`);
       // Still mark as processed so we don't keep querying on every doc update.
       // Transactional to avoid racing with a concurrent invocation that
       // also processed an (empty) grant list.
@@ -156,7 +157,7 @@ export const applySignupGrants = onDocumentCreated(
       });
     }
 
-    logInfo(`applySignupGrants: applied ${applied.length} grant(s) for ${uid} (${email})`);
+    logInfo(`applySignupGrants: applied ${applied.length} grant(s) for ${uid} (${redact(email)})`);
   }),
 );
 

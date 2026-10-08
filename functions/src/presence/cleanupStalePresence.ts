@@ -17,7 +17,7 @@ const BATCH_SIZE = 500;
 export const cleanupStalePresence = onSchedule(
   {
     schedule: 'every 5 minutes',
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("cleanupStalePresence", async () => {

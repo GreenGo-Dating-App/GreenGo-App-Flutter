@@ -21,6 +21,7 @@
 
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
+import { requireAdmin, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 import { db, logInfo, logError } from '../shared/utils';
 import {
   Grant,
@@ -110,10 +111,8 @@ export const grantEntitlement = onCall<GrantRequest>(
     const adminUid = request.auth?.uid;
     if (!adminUid) throw new HttpsError('unauthenticated', 'Sign in required.');
 
-    const adminDoc = await db.collection('users').doc(adminUid).get();
-    if (!adminDoc.data()?.isAdmin) {
-      throw new HttpsError('permission-denied', 'Admin only.');
-    }
+    // P1-6: granting entitlements is superAdmin-only (was users.isAdmin).
+    await requireAdmin(request.auth, SUPER_ADMIN_ONLY);
 
     const data = request.data;
     const grants = data?.grants ?? [];
@@ -195,10 +194,7 @@ export const listEntitlementGrants = onCall(
   async (request) => {
     const adminUid = request.auth?.uid;
     if (!adminUid) throw new HttpsError('unauthenticated', 'Sign in required.');
-    const adminDoc = await db.collection('users').doc(adminUid).get();
-    if (!adminDoc.data()?.isAdmin) {
-      throw new HttpsError('permission-denied', 'Admin only.');
-    }
+    await requireAdmin(request.auth); // any admin role (read-only)
 
     const snap = await db
       .collection('entitlement_grants')

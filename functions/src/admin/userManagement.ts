@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { requireAdmin, rolesForPermission } from '../shared/adminAuth';
 import { syncHostExperiencesForBan } from '../user_experiences/hostBan';
 
 const firestore = admin.firestore();
@@ -18,28 +19,9 @@ async function verifyAdminPermission(
   context: functions.https.CallableContext,
   requiredPermission: string
 ): Promise<void> {
-  if (!context.auth) {
-    throw new functions.https.HttpsError(
-      'unauthenticated',
-      'User must be authenticated'
-    );
-  }
-
-  const adminDoc = await firestore.collection('admins').doc(context.auth.uid).get();
-  if (!adminDoc.exists) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      'Admin profile not found'
-    );
-  }
-
-  const permissions = adminDoc.data()!.permissions || [];
-  if (!permissions.includes(requiredPermission)) {
-    throw new functions.https.HttpsError(
-      'permission-denied',
-      `Missing required permission: ${requiredPermission}`
-    );
-  }
+  // Security Phase 1 (P1-6): the legacy `admins` collection / boolean claims
+  // are no longer trusted. Permission -> role matrix via central requireAdmin.
+  await requireAdmin(context.auth as any, rolesForPermission(requiredPermission));
 }
 
 /**
@@ -52,7 +34,7 @@ async function logAdminAction(
   targetId: string,
   details: any
 ): Promise<void> {
-  const adminDoc = await firestore.collection('admins').doc(adminId).get();
+  const adminDoc = await firestore.collection('admin_users').doc(adminId).get();
   const adminData = adminDoc.data();
 
   await firestore.collection('admin_audit_log').add({
@@ -71,7 +53,9 @@ async function logAdminAction(
  * Search Users
  * Point 236: Advanced user search
  */
-export const searchUsers = functions.https.onCall(monitored("searchUsers", async (data, context) => {
+export const searchUsers = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("searchUsers", async (data, context) => {
   await verifyAdminPermission(context, 'viewUserProfiles');
 
   const { query, filters = {}, limit = 50, offset = 0 } = data;
@@ -154,7 +138,9 @@ export const searchUsers = functions.https.onCall(monitored("searchUsers", async
  * Get Detailed User Profile
  * Point 237: View complete user profile
  */
-export const getDetailedUserProfile = functions.https.onCall(monitored("getDetailedUserProfile", async (data, context) => {
+export const getDetailedUserProfile = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getDetailedUserProfile", async (data, context) => {
   await verifyAdminPermission(context, 'viewUserProfiles');
 
   const { userId } = data;
@@ -332,7 +318,9 @@ export const getDetailedUserProfile = functions.https.onCall(monitored("getDetai
  * Edit User Profile
  * Point 238: Admin can edit user data
  */
-export const editUserProfile = functions.https.onCall(monitored("editUserProfile", async (data, context) => {
+export const editUserProfile = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("editUserProfile", async (data, context) => {
   await verifyAdminPermission(context, 'editUserProfiles');
 
   const { userId, updates } = data;
@@ -378,7 +366,9 @@ export const editUserProfile = functions.https.onCall(monitored("editUserProfile
  * Suspend User Account
  * Point 239: Temporary account suspension
  */
-export const suspendUserAccount = functions.https.onCall(monitored("suspendUserAccount", async (data, context) => {
+export const suspendUserAccount = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("suspendUserAccount", async (data, context) => {
   await verifyAdminPermission(context, 'suspendUsers');
 
   const { userId, reason, durationDays = 7 } = data;
@@ -416,7 +406,9 @@ export const suspendUserAccount = functions.https.onCall(monitored("suspendUserA
  * Unsuspend User Account
  * Point 239: Lift suspension
  */
-export const unsuspendUserAccount = functions.https.onCall(monitored("unsuspendUserAccount", async (data, context) => {
+export const unsuspendUserAccount = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("unsuspendUserAccount", async (data, context) => {
   await verifyAdminPermission(context, 'suspendUsers');
 
   const { userId } = data;
@@ -451,7 +443,9 @@ export const unsuspendUserAccount = functions.https.onCall(monitored("unsuspendU
  * Ban User Account
  * Point 239: Permanent account ban
  */
-export const banUserAccount = functions.https.onCall(monitored("banUserAccount", async (data, context) => {
+export const banUserAccount = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("banUserAccount", async (data, context) => {
   await verifyAdminPermission(context, 'banUsers');
 
   const { userId, reason } = data;
@@ -490,7 +484,9 @@ export const banUserAccount = functions.https.onCall(monitored("banUserAccount",
  * Unban User Account
  * Point 239: Lift permanent ban
  */
-export const unbanUserAccount = functions.https.onCall(monitored("unbanUserAccount", async (data, context) => {
+export const unbanUserAccount = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("unbanUserAccount", async (data, context) => {
   await verifyAdminPermission(context, 'banUsers');
 
   const { userId } = data;
@@ -529,7 +525,9 @@ export const unbanUserAccount = functions.https.onCall(monitored("unbanUserAccou
  * Delete User Account
  * Point 239: Permanent account deletion
  */
-export const deleteUserAccount = functions.https.onCall(monitored("deleteUserAccount", async (data, context) => {
+export const deleteUserAccount = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("deleteUserAccount", async (data, context) => {
   await verifyAdminPermission(context, 'deleteUsers');
 
   const { userId, reason } = data;
@@ -566,7 +564,9 @@ export const deleteUserAccount = functions.https.onCall(monitored("deleteUserAcc
  * Override User Subscription
  * Point 240: Grant or modify subscription
  */
-export const overrideUserSubscription = functions.https.onCall(monitored("overrideUserSubscription", async (data, context) => {
+export const overrideUserSubscription = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("overrideUserSubscription", async (data, context) => {
   await verifyAdminPermission(context, 'overrideSubscriptions');
 
   const { userId, tier, durationDays } = data;
@@ -622,7 +622,9 @@ export const overrideUserSubscription = functions.https.onCall(monitored("overri
  * Adjust User Coins
  * Point 241: Add or remove coins
  */
-export const adjustUserCoins = functions.https.onCall(monitored("adjustUserCoins", async (data, context) => {
+export const adjustUserCoins = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("adjustUserCoins", async (data, context) => {
   await verifyAdminPermission(context, 'adjustCoins');
 
   const { userId, amount, reason } = data;
@@ -701,7 +703,9 @@ export const adjustUserCoins = functions.https.onCall(monitored("adjustUserCoins
  * Send User Notification
  * Point 243: Direct user communication
  */
-export const sendUserNotification = functions.https.onCall(monitored("sendUserNotification", async (data, context) => {
+export const sendUserNotification = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("sendUserNotification", async (data, context) => {
   await verifyAdminPermission(context, 'sendNotifications');
 
   const { userId, subject, body, type = 'inAppNotification' } = data;
@@ -759,7 +763,9 @@ export const sendUserNotification = functions.https.onCall(monitored("sendUserNo
  * Impersonate User
  * Point 245: View app as user (for debugging)
  */
-export const impersonateUser = functions.https.onCall(monitored("impersonateUser", async (data, context) => {
+export const impersonateUser = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("impersonateUser", async (data, context) => {
   await verifyAdminPermission(context, 'impersonateUsers');
 
   const { userId } = data;
@@ -795,8 +801,10 @@ export const impersonateUser = functions.https.onCall(monitored("impersonateUser
  * Mass Action - Execute on multiple users
  * Point 242: Bulk operations
  */
-export const executeMassAction = functions.https.onCall(monitored("executeMassAction", async (data, context) => {
-  await verifyAdminPermission(context, 'viewUserProfiles');
+export const executeMassAction = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("executeMassAction", async (data, context) => {
+  await verifyAdminPermission(context, 'massActions');
 
   const { operationType, targetUserIds, parameters } = data;
 

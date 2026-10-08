@@ -16,8 +16,9 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
-import { verifyAuth, handleError, logInfo, logError, db, AppError } from '../shared/utils';
+import { verifyAuth, verifyAdminAuth, handleError, logInfo, logError, db, AppError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
+import { redact } from '../shared/redact';
 
 /**
  * Security audit C-09: these callables only checked "signed in", so any user
@@ -25,13 +26,9 @@ import { monitored } from '../shared/monitoring';
  * read every email log. They are admin-panel tools: require an admin_users doc.
  */
 async function requireAdminPanelUser(auth: Parameters<typeof verifyAuth>[0]): Promise<string> {
-  const uid = await verifyAuth(auth);
-  const adminDoc = await db.collection('admin_users').doc(uid).get();
-  if (!adminDoc.exists) {
-    // AppError so the callables' handleError() maps it to permission-denied.
-    throw new AppError('PERMISSION_DENIED', 'Admin only', 403);
-  }
-  return uid;
+  // P1-6: central admin check (admin_users / adminRole claim). verifyAdminAuth
+  // throws AppError so the callables' handleError() maps it correctly.
+  return verifyAdminAuth(auth);
 }
 
 // Brevo API configuration
@@ -1633,7 +1630,7 @@ async function sendBrevoEmail(params: SendEmailParams): Promise<{ messageId: str
       sentAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 
-    logInfo(`Email ${trigger} sent to ${recipientEmail} (user: ${userId})`);
+    logInfo(`Email ${trigger} sent to ${redact(recipientEmail)} (user: ${userId})`);
 
     // Update email analytics
     await updateEmailAnalytics(category, trigger, 'sent');
@@ -1646,7 +1643,7 @@ async function sendBrevoEmail(params: SendEmailParams): Promise<{ messageId: str
       error: error.message || 'Unknown error',
     });
 
-    logError(`Failed to send email ${trigger} to ${recipientEmail}:`, error);
+    logError(`Failed to send email ${trigger} to ${redact(recipientEmail)}:`, error);
     throw error;
   }
 }

@@ -47,6 +47,7 @@
 
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
+import { requireAdmin, MODERATION_ROLES, SUPER_ADMIN_ONLY } from '../shared/adminAuth';
 import { createHash } from 'crypto';
 import vision from '@google-cloud/vision';
 import { db, logInfo, logError, logWarning } from '../shared/utils';
@@ -478,10 +479,8 @@ export const reviewAgeVerification = onCall({ memory: '512MiB' }, async (request
   const adminUid = request.auth?.uid;
   if (!adminUid) throw new HttpsError('unauthenticated', 'Sign in required.');
 
-  const adminDoc = await db.collection('users').doc(adminUid).get();
-  if (!adminDoc.data()?.isAdmin) {
-    throw new HttpsError('permission-denied', 'Admin only.');
-  }
+  // P1-6: moderation decision -> superAdmin | moderator (was users.isAdmin).
+  await requireAdmin(request.auth, MODERATION_ROLES);
 
   const targetUid = String(request.data?.userId ?? '');
   const approve = request.data?.approve === true;
@@ -536,10 +535,8 @@ const isoOf = (v: unknown): string | null =>
 export const getAgeVerificationDetails = onCall({ memory: '512MiB' }, async (request) => {
   const adminUid = request.auth?.uid;
   if (!adminUid) throw new HttpsError('unauthenticated', 'Sign in required.');
-  const adminDoc = await db.collection('users').doc(adminUid).get();
-  if (!adminDoc.data()?.isAdmin) {
-    throw new HttpsError('permission-denied', 'Admin only.');
-  }
+  // P1-6: returns the identity-document image -> superAdmin ONLY.
+  await requireAdmin(request.auth, SUPER_ADMIN_ONLY);
   const targetUid = String(request.data?.userId ?? '');
   if (!targetUid) throw new HttpsError('invalid-argument', 'userId is required.');
 
@@ -571,7 +568,7 @@ export const getAgeVerificationDetails = onCall({ memory: '512MiB' }, async (req
         };
         await db.collection('admin_audit_log').add({
           adminId: adminUid,
-          adminEmail: adminDoc.data()?.email ?? request.auth?.token?.email ?? 'unknown',
+          adminEmail: request.auth?.token?.email ?? 'unknown',
           action: 'view_id_document',
           targetType: 'user',
           targetId: targetUid,
@@ -617,10 +614,7 @@ export const getAgeVerificationDetails = onCall({ memory: '512MiB' }, async (req
 export const backfillDeclaredAge = onCall({ memory: '1GiB' }, async (request) => {
   const adminUid = request.auth?.uid;
   if (!adminUid) throw new HttpsError('unauthenticated', 'Sign in required.');
-  const adminDoc = await db.collection('users').doc(adminUid).get();
-  if (!adminDoc.data()?.isAdmin) {
-    throw new HttpsError('permission-denied', 'Admin only.');
-  }
+  await requireAdmin(request.auth, SUPER_ADMIN_ONLY); // P1-6
 
   const snap = await db.collection('profiles').limit(5000).get();
   let updated = 0;

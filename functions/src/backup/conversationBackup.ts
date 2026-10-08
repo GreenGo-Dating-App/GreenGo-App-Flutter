@@ -76,7 +76,9 @@ function decryptData(
  * Backup a conversation to Cloud Storage
  * HTTP Callable Function
  */
-export const backupConversation = functions.https.onCall(monitored("backupConversation", async (data, context) => {
+export const backupConversation = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("backupConversation", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -223,7 +225,9 @@ export const backupConversation = functions.https.onCall(monitored("backupConver
  * Restore a conversation from Cloud Storage backup
  * HTTP Callable Function
  */
-export const restoreConversation = functions.https.onCall(monitored("restoreConversation", async (data, context) => {
+export const restoreConversation = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("restoreConversation", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -317,7 +321,9 @@ export const restoreConversation = functions.https.onCall(monitored("restoreConv
  * List all backups for a user
  * HTTP Callable Function
  */
-export const listBackups = functions.https.onCall(monitored("listBackups", async (data, context) => {
+export const listBackups = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("listBackups", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -362,7 +368,9 @@ export const listBackups = functions.https.onCall(monitored("listBackups", async
  * Delete a backup from Cloud Storage
  * HTTP Callable Function
  */
-export const deleteBackup = functions.https.onCall(monitored("deleteBackup", async (data, context) => {
+export const deleteBackup = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("deleteBackup", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -423,7 +431,9 @@ export const deleteBackup = functions.https.onCall(monitored("deleteBackup", asy
  * Scheduled function to auto-backup active conversations
  * Runs weekly
  */
-export const autoBackupConversations = functions.pubsub
+export const autoBackupConversations = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('every sunday 02:00')
   .timeZone('UTC')
   .onRun(monitored("autoBackupConversations", async (context) => {

@@ -5,6 +5,8 @@
 
 // IMPORTANT: Import firebaseAdmin first to ensure initialization
 import './shared/firebaseAdmin';
+// v2 default memory 512MiB (M-27) - must stay before every function module.
+import './shared/globalOptions';
 
 // Media Processing Functions
 export {
@@ -568,6 +570,9 @@ export {
   getMvpAccessStats,
 } from './admin/mvp_access';
 
+// Admin custom claims (P1-6): admin_users/{uid}.role -> `adminRole` claim.
+export { onAdminUserWritten, resyncAllAdminClaims } from './admin/adminClaims';
+
 // Admin Panel Functions (2FA, password mgmt, user mgmt, AI support)
 export {
   send2FACode,
@@ -616,7 +621,7 @@ export { onAttractionRatingWritten } from './attractions/attractionRatings';
 
 // Shared, persistent translations of public content (events/attractions/experiences).
 export { translateTexts } from './messaging/sharedTranslations';
-// Client-contributed translations of public content, shared after 2 users agree.
+// Client-contributed translations of public content, shared after 3 qualified users agree (or an admin).
 export { submitSharedTranslations } from './messaging/submitSharedTranslations';
 
 // User-created experiences (member-hosted) with reviews, replies + '@' mentions.
