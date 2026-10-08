@@ -14,7 +14,9 @@ const firestore = admin.firestore();
  * Create Admin User
  * Point 227: Create new admin with role assignment
  */
-export const createAdminUser = functions.https.onCall(monitored("createAdminUser", async (data, context) => {
+export const createAdminUser = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("createAdminUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -163,7 +165,9 @@ function getDefaultPermissions(role: string): string[] {
  * Update Admin Role
  * Point 227: Change admin role and permissions
  */
-export const updateAdminRole = functions.https.onCall(monitored("updateAdminRole", async (data, context) => {
+export const updateAdminRole = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("updateAdminRole", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -236,7 +240,9 @@ export const updateAdminRole = functions.https.onCall(monitored("updateAdminRole
  * Update Admin Permissions
  * Point 227: Grant or revoke specific permissions
  */
-export const updateAdminPermissions = functions.https.onCall(monitored("updateAdminPermissions", async (data, context) => {
+export const updateAdminPermissions = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("updateAdminPermissions", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -282,7 +288,9 @@ export const updateAdminPermissions = functions.https.onCall(monitored("updateAd
  * Deactivate Admin User
  * Point 227: Disable admin access
  */
-export const deactivateAdminUser = functions.https.onCall(monitored("deactivateAdminUser", async (data, context) => {
+export const deactivateAdminUser = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("deactivateAdminUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -340,7 +348,9 @@ export const deactivateAdminUser = functions.https.onCall(monitored("deactivateA
  * Get Admin Users List
  * Point 227: View all admin users
  */
-export const getAdminUsers = functions.https.onCall(monitored("getAdminUsers", async (data, context) => {
+export const getAdminUsers = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getAdminUsers", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -388,7 +398,9 @@ export const getAdminUsers = functions.https.onCall(monitored("getAdminUsers", a
  * Record Admin Login
  * Trigger function to track admin logins
  */
-export const recordAdminLogin = functions.auth.user().onCreate(monitored("recordAdminLogin", async (user) => {
+export const recordAdminLogin = functions
+  .runWith({ memory: '512MB' })
+  .auth.user().onCreate(monitored("recordAdminLogin", async (user) => {
   // Check if user has admin custom claims
   const userRecord = await auth.getUser(user.uid);
   const customClaims = userRecord.customClaims || {};

@@ -13,7 +13,9 @@ const firestore = admin.firestore();
  * Submit User Report
  * Points 211-213: Comprehensive reporting with anonymous option
  */
-export const submitReport = functions.https.onCall(monitored("submitReport", async (data, context) => {
+export const submitReport = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("submitReport", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -176,7 +178,9 @@ export const issueWarning = async (
  * Review Report (Moderator Action)
  * Point 209: Escalation to human moderators
  */
-export const reviewReport = functions.https.onCall(monitored("reviewReport", async (data, context) => {
+export const reviewReport = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("reviewReport", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -269,7 +273,9 @@ export const reviewReport = functions.https.onCall(monitored("reviewReport", asy
  * Submit Appeal
  * Point 210: Content appeal process
  */
-export const submitAppeal = functions.https.onCall(monitored("submitAppeal", async (data, context) => {
+export const submitAppeal = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("submitAppeal", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -344,7 +350,9 @@ export const submitAppeal = functions.https.onCall(monitored("submitAppeal", asy
  * Block User
  * Points 215-217: User blocking functionality
  */
-export const blockUser = functions.https.onCall(monitored("blockUser", async (data, context) => {
+export const blockUser = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("blockUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -429,7 +437,9 @@ export const blockUser = functions.https.onCall(monitored("blockUser", async (da
  * Unblock User
  * Point 216: Block list management
  */
-export const unblockUser = functions.https.onCall(monitored("unblockUser", async (data, context) => {
+export const unblockUser = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("unblockUser", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -468,7 +478,9 @@ export const unblockUser = functions.https.onCall(monitored("unblockUser", async
  * Get Block List
  * Point 216: View blocked users
  */
-export const getBlockList = functions.https.onCall(monitored("getBlockList", async (data, context) => {
+export const getBlockList = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getBlockList", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',

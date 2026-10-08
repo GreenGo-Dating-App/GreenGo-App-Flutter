@@ -341,7 +341,7 @@ interface ClaimRewardRequest {
 
 export const claimReward = onCall<ClaimRewardRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   async (request) => {
@@ -441,7 +441,7 @@ interface GiftCoinsRequest {
  * gifting failed. The Admin SDK bypasses those rules.
  */
 export const giftCoins = onCall<GiftCoinsRequest>(
-  { memory: '256MiB', timeoutSeconds: 60 },
+  { memory: '512MiB', timeoutSeconds: 60 },
   async (request) => {
     try {
       const senderId = await verifyAuth(request.auth);

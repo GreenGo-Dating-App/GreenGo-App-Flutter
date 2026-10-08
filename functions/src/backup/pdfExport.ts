@@ -442,7 +442,9 @@ export const listPDFExports = functions.https.onCall(monitored("listPDFExports",
  * Delete expired PDF exports
  * Scheduled to run daily
  */
-export const cleanupExpiredExports = functions.pubsub
+export const cleanupExpiredExports = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('every day 03:00')
   .timeZone('UTC')
   .onRun(monitored("cleanupExpiredExports", async (context) => {

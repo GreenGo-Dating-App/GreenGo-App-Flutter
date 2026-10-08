@@ -16,7 +16,9 @@ const DISAPPEARING_MEDIA_TTL = 24 * 60 * 60 * 1000;
 /**
  * Scheduled function that runs every hour to clean up expired disappearing media
  */
-export const cleanupDisappearingMedia = functions.pubsub
+export const cleanupDisappearingMedia = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('every 1 hours')
   .onRun(monitored("cleanupDisappearingMedia", async (context) => {
     console.log('Starting disappearing media cleanup...');
@@ -104,7 +106,9 @@ export const cleanupDisappearingMedia = functions.pubsub
 /**
  * Mark message media as disappearing when it's created
  */
-export const markMediaAsDisappearing = functions.firestore
+export const markMediaAsDisappearing = functions
+  .runWith({ memory: '512MB' })
+  .firestore
   .document('conversations/{conversationId}/messages/{messageId}')
   .onCreate(monitored("markMediaAsDisappearing", async (snapshot, context) => {
     const message = snapshot.data();

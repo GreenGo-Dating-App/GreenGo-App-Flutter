@@ -161,7 +161,9 @@ export const sendPushNotification = functions.runWith({ memory: '512MB' }).https
  * Send Bundled Notifications
  * Point 275: Notification bundling
  */
-export const sendBundledNotifications = functions.pubsub
+export const sendBundledNotifications = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('*/15 * * * *') // Every 15 minutes
   .onRun(monitored("sendBundledNotifications", async (context) => {
     try {

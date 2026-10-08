@@ -120,7 +120,9 @@ export const runSecurityAudit = functions
  * Schedule Weekly Security Audit
  * Run audit every Monday at 2 AM
  */
-export const scheduledSecurityAudit = functions.pubsub
+export const scheduledSecurityAudit = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('0 2 * * 1') // Every Monday at 2 AM
   .timeZone('America/New_York')
   .onRun(monitored("scheduledSecurityAudit", async (context) => {
@@ -155,7 +157,9 @@ export const scheduledSecurityAudit = functions.pubsub
 /**
  * Get Security Audit Report
  */
-export const getSecurityAuditReport = functions.https.onCall(monitored("getSecurityAuditReport", async (data, context) => {
+export const getSecurityAuditReport = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getSecurityAuditReport", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -197,7 +201,9 @@ export const getSecurityAuditReport = functions.https.onCall(monitored("getSecur
 /**
  * List Security Audit Reports
  */
-export const listSecurityAuditReports = functions.https.onCall(monitored("listSecurityAuditReports", async (data, context) => {
+export const listSecurityAuditReports = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("listSecurityAuditReports", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError(
       'unauthenticated',
@@ -396,7 +402,9 @@ async function notifyAdminsOfAuditResults(report: any, reportId: string): Promis
  * Delete Old Audit Reports
  * Keep only last 12 reports (3 months of weekly audits)
  */
-export const cleanupOldAuditReports = functions.pubsub
+export const cleanupOldAuditReports = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('0 3 * * 1') // Every Monday at 3 AM (after audit)
   .onRun(monitored("cleanupOldAuditReports", async (context) => {
     try {

@@ -5,6 +5,8 @@
 
 // IMPORTANT: Import firebaseAdmin first to ensure initialization
 import './shared/firebaseAdmin';
+// v2 default memory 512MiB (M-27) - must stay before every function module.
+import './shared/globalOptions';
 
 // Media Processing Functions
 export {

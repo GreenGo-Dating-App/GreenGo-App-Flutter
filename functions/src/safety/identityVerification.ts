@@ -15,7 +15,9 @@ const visionClient = new vision.ImageAnnotatorClient();
  * Start Photo Verification
  * Point 221: Real-time selfie matching profile photos
  */
-export const startPhotoVerification = functions.https.onCall(
+export const startPhotoVerification = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("startPhotoVerification", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -59,7 +61,9 @@ export const startPhotoVerification = functions.https.onCall(
  * Verify Photo Selfie
  * Point 221 & 223: Selfie matching with liveness detection
  */
-export const verifyPhotoSelfie = functions.https.onCall(
+export const verifyPhotoSelfie = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("verifyPhotoSelfie", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -171,7 +175,9 @@ export const verifyPhotoSelfie = functions.https.onCall(
  * Verify ID Document
  * Point 222: Document scanning and OCR
  */
-export const verifyIDDocument = functions.https.onCall(
+export const verifyIDDocument = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("verifyIDDocument", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -526,7 +532,9 @@ async function grantVerificationBadge(
  * Calculate Trust Score
  * Point 225: Trust score combining verification, reports, account age
  */
-export const calculateTrustScore = functions.https.onCall(
+export const calculateTrustScore = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("calculateTrustScore", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(

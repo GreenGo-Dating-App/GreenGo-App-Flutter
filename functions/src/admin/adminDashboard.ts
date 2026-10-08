@@ -748,7 +748,9 @@ export const resolveSystemAlert = functions.https.onCall(monitored("resolveSyste
  * Get Admin Audit Log
  * Point 235: View audit log
  */
-export const getAdminAuditLog = functions.https.onCall(monitored("getAdminAuditLog", async (data, context) => {
+export const getAdminAuditLog = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getAdminAuditLog", async (data, context) => {
   await verifyAdminPermission(context, 'viewAuditLog');
 
   const { limit = 100, offset = 0, adminId = null, action = null } = data;

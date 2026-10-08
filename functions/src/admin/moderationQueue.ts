@@ -54,7 +54,9 @@ async function logModerationAction(
  * Get Moderation Queue
  * Point 246: Fetch pending reports for review
  */
-export const getModerationQueue = functions.https.onCall(monitored("getModerationQueue", async (data, context) => {
+export const getModerationQueue = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getModerationQueue", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const {
@@ -125,7 +127,9 @@ export const getModerationQueue = functions.https.onCall(monitored("getModeratio
  * Get Moderation Review Item
  * Point 247: Detailed review interface with context
  */
-export const getModerationReviewItem = functions.https.onCall(monitored("getModerationReviewItem", async (data, context) => {
+export const getModerationReviewItem = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getModerationReviewItem", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId } = data;
@@ -334,7 +338,9 @@ function generateSuggestedActions(
  * Assign Moderation Item
  * Assign queue item to moderator
  */
-export const assignModerationItem = functions.https.onCall(monitored("assignModerationItem", async (data, context) => {
+export const assignModerationItem = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("assignModerationItem", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId } = data;
@@ -358,7 +364,9 @@ export const assignModerationItem = functions.https.onCall(monitored("assignMode
  * Take Moderation Action
  * Point 248: Execute moderation decision
  */
-export const takeModerationAction = functions.https.onCall(monitored("takeModerationAction", async (data, context) => {
+export const takeModerationAction = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("takeModerationAction", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueId, action, notes = null, parameters = {} } = data;
@@ -592,7 +600,9 @@ async function requireVerification(userId: string): Promise<void> {
  * Bulk Moderation Action
  * Point 249: Process multiple items at once
  */
-export const executeBulkModeration = functions.https.onCall(monitored("executeBulkModeration", async (data, context) => {
+export const executeBulkModeration = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("executeBulkModeration", async (data, context) => {
   await verifyModeratorPermission(context);
 
   const { queueIds, action, notes = null } = data;
@@ -659,7 +669,9 @@ export const executeBulkModeration = functions.https.onCall(monitored("executeBu
  * Get Moderation Statistics
  * Point 250: Dashboard metrics for moderation
  */
-export const getModerationStatistics = functions.https.onCall(monitored("getModerationStatistics", async (data, context) => {
+export const getModerationStatistics = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("getModerationStatistics", async (data, context) => {
   await verifyModeratorPermission(context);
 
   try {

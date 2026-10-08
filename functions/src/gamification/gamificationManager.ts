@@ -50,7 +50,9 @@ function boundedInt(value: unknown, field: string, min: number, max: number, fal
  * Grant XP to User
  * Point 187: XP rewards for actions
  */
-export const grantXP = functions.https.onCall(monitored("grantXP", async (data, context) => {
+export const grantXP = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(monitored("grantXP", async (data, context) => {
   const userId = callerUid(data, context);
   const { reason } = data;
   if (!data?.xpAmount || !reason) {
@@ -142,7 +144,9 @@ export const grantXP = functions.https.onCall(monitored("grantXP", async (data, 
  * Track Achievement Progress
  * Points 176-185: Update achievement progress
  */
-export const trackAchievementProgress = functions.https.onCall(
+export const trackAchievementProgress = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("trackAchievementProgress", async (data, context) => {
     const userId = callerUid(data, context);
     const achievementId = safeId(data?.achievementId, 'achievementId');
@@ -204,7 +208,9 @@ export const trackAchievementProgress = functions.https.onCall(
  * Unlock Achievement and Grant Rewards
  * Points 176-185: Unlock achievement
  */
-export const unlockAchievementReward = functions.https.onCall(
+export const unlockAchievementReward = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("unlockAchievementReward", async (data, context) => {
     const userId = callerUid(data, context);
     const achievementId = safeId(data?.achievementId, 'achievementId');
@@ -247,7 +253,9 @@ export const unlockAchievementReward = functions.https.onCall(
  * Claim Level Rewards
  * Point 190: Level-based rewards
  */
-export const claimLevelRewards = functions.https.onCall(
+export const claimLevelRewards = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("claimLevelRewards", async (data, context) => {
     const userId = callerUid(data, context);
     const level = boundedInt(data?.level, 'level', 1, 1000);
@@ -298,7 +306,9 @@ export const claimLevelRewards = functions.https.onCall(
  * Track Challenge Progress
  * Point 197: Challenge tracking
  */
-export const trackChallengeProgress = functions.https.onCall(
+export const trackChallengeProgress = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("trackChallengeProgress", async (data, context) => {
     const userId = callerUid(data, context);
     const challengeId = safeId(data?.challengeId, 'challengeId');
@@ -361,7 +371,9 @@ export const trackChallengeProgress = functions.https.onCall(
  * Claim Challenge Reward
  * Point 198: Challenge rewards
  */
-export const claimChallengeReward = functions.https.onCall(
+export const claimChallengeReward = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("claimChallengeReward", async (data, context) => {
     const userId = callerUid(data, context);
     const challengeId = safeId(data?.challengeId, 'challengeId');
@@ -412,7 +424,9 @@ export const claimChallengeReward = functions.https.onCall(
  * Reset Daily Challenges
  * Point 196: Rotating daily challenges - runs at midnight UTC
  */
-export const resetDailyChallenges = functions.pubsub
+export const resetDailyChallenges = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('0 0 * * *')
   .timeZone('UTC')
   .onRun(monitored("resetDailyChallenges", async (context) => {

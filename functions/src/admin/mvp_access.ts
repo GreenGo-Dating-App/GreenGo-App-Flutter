@@ -294,7 +294,7 @@ function getAccessDateForTier(tier: SubscriptionTier): Date {
 // 1. Approve User
 export const approveUser = onCall<ApproveUserRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("approveUser", async (request) => {
@@ -366,7 +366,7 @@ export const approveUser = onCall<ApproveUserRequest>(
 // 2. Reject User
 export const rejectUser = onCall<RejectUserRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("rejectUser", async (request) => {
@@ -440,7 +440,7 @@ export const rejectUser = onCall<RejectUserRequest>(
 // 3. Update User Tier
 export const updateUserTier = onCall<UpdateUserTierRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("updateUserTier", async (request) => {
@@ -480,7 +480,7 @@ export const updateUserTier = onCall<UpdateUserTierRequest>(
 // 4. Get Pending Users
 export const getPendingUsers = onCall<GetPendingUsersRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("getPendingUsers", async (request) => {
@@ -821,7 +821,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
 // 7. Send Notification to Single User
 export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("sendNotificationToUser", async (request) => {
@@ -882,7 +882,7 @@ export const sendNotificationToUser = onCall<SendNotificationToUserRequest>(
 // 8. Get MVP Access Stats
 export const getMvpAccessStats = onCall(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 60,
   },
   monitored("getMvpAccessStats", async (request) => {

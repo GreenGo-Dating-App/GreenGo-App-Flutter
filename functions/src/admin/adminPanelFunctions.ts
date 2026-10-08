@@ -189,7 +189,9 @@ export const send2FACode = functions.runWith({ memory: '512MB' }).https.onCall(
 /**
  * Verify a 2FA code entered by the admin user
  */
-export const verify2FACode = functions.https.onCall(
+export const verify2FACode = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("verify2FACode", async (data: any, context: functions.https.CallableContext) => {
     if (!context.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'Must be authenticated');
@@ -353,7 +355,9 @@ export const sendPasswordResetEmail = functions.runWith({ memory: '512MB' }).htt
 /**
  * Force user to change password on next login
  */
-export const forcePasswordChange = functions.https.onCall(
+export const forcePasswordChange = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("forcePasswordChange", async (data: any, context: functions.https.CallableContext) => {
     await verifySuperAdmin(context);
 
@@ -384,7 +388,9 @@ export const forcePasswordChange = functions.https.onCall(
 /**
  * Delete a user completely (auth + firestore)
  */
-export const adminDeleteUser = functions.https.onCall(
+export const adminDeleteUser = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("adminDeleteUser", async (data: any, context: functions.https.CallableContext) => {
     await verifySuperAdmin(context);
 
@@ -451,7 +457,9 @@ export const adminDeleteUser = functions.https.onCall(
 /**
  * Disable/Enable a user account
  */
-export const adminSetUserDisabled = functions.https.onCall(
+export const adminSetUserDisabled = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("adminSetUserDisabled", async (data: any, context: functions.https.CallableContext) => {
     await verifySuperAdmin(context);
 
@@ -486,7 +494,9 @@ export const adminSetUserDisabled = functions.https.onCall(
 /**
  * Send test email to verify configuration
  */
-export const sendTestEmail = functions.https.onCall(
+export const sendTestEmail = functions
+  .runWith({ memory: '512MB' })
+  .https.onCall(
   monitored("sendTestEmail", async (data: any, context: functions.https.CallableContext) => {
     await verifyAdmin(context);
 
@@ -751,7 +761,9 @@ export const processAISupportMessage = functions
 /**
  * When a new support chat is created, set default values
  */
-export const onSupportChatCreated = functions.firestore
+export const onSupportChatCreated = functions
+  .runWith({ memory: '512MB' })
+  .firestore
   .document('support_chats/{chatId}')
   .onCreate(monitored("onSupportChatCreated", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const chat = snap.data();
@@ -776,7 +788,9 @@ export const onSupportChatCreated = functions.firestore
  * When a support message is created, update the conversation
  * and send push notification to the user if the message is from admin
  */
-export const onSupportMessageCreated = functions.firestore
+export const onSupportMessageCreated = functions
+  .runWith({ memory: '512MB' })
+  .firestore
   .document('support_messages/{messageId}')
   .onCreate(monitored("onSupportMessageCreated", async (snap: functions.firestore.QueryDocumentSnapshot) => {
     const message = snap.data();
