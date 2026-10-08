@@ -160,6 +160,8 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
     'language_progress', 'learning_progress', 'daily_hints_progress', 'userAchievements',
     'userBadges', 'userChallenges', 'userVibeTags', 'user_achievements', 'user_challenges',
     'game_stats', 'blocked_users',
+    // Data-subject export log (P3-2, auth/dataExport.ts; runs subcollection).
+    'data_exports',
   ),
   { kind: 'path', path: 'leaderboards/xp/rankings/{uid}' },
 
@@ -253,6 +255,8 @@ export const ACCOUNT_DATA_INVENTORY: InventoryEntry[] = [
   // --- Storage: prefixes keyed by uid --------------------------------------
   ...['profiles', 'users', 'video_profiles', 'voice_intros', 'verifications', 'verification',
     'voice', 'age_verification', 'business_verification', 'communities',
+    // Data-subject export ZIPs (P3-2): exports/{uid}/{ts}.zip, default bucket.
+    'exports',
   ].map((p): InventoryEntry => ({ kind: 'storage', prefix: p })),
   // Conversation backups / PDF exports live in the backup bucket(s):
   // backups/{uid}/, exports/{uid}/, {uid}/ and auto/{uid}/.

@@ -428,6 +428,11 @@ export {
   deleteMyAccount,
 } from './auth/accountDeletionEndpoints';
 
+// Data-subject access / portability (P3-2; GDPR Art. 15/20, LGPD Art. 18):
+// ZIP of the caller's data in private exports/{uid}/, 24 h signed link,
+// 1 per 24 h; exports deleted after 7 days.
+export { exportMyData, cleanupDataExports } from './auth/dataExport';
+
 // Server-side AI gateway (C-08 follow-up, H-17, P2-10): Gemini, Cloud TTS,
 // Cloud Translation and image lookups with server-held keys, consent check,
 // input caps and per-user daily quotas; AI-processing consent record.
