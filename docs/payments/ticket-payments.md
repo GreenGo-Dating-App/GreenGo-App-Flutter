@@ -81,9 +81,25 @@ checkout; existing orders/tickets keep their stored price.
 * Date-based price: `dayOverrides[date].priceOverride` > `weekendPrice` on
   `weekendDays` (default Sat+Sun) > base, resolved in the host's time zone at
   booking time and stored on the booking/order/ticket (`priceRule`).
-* Recurring availability engine (server only so far, see "Not done"):
-  `availabilityRules` + `availabilityOverrides`, computed on the fly,
-  `getExperienceAvailability` / `updateExperienceAvailability`.
+* Recurring availability ("Manage times"): `availabilityRules` (window,
+  duration, break, start-every, weekdays, date range, places per time, time
+  zone) + `availabilityOverrides` (per-day closed / hours / explicit times /
+  special price, removed and added single times), computed on the fly —
+  nothing is pre-materialised. Buyers book with `createBooking({slotId:
+  'recurring', startAt})`; seats live in `experience_slot_counters`
+  (created lazily, per_group counts groups). `getExperienceAvailability`
+  returns <= 62 days with seats left and the price of each date.
+  Legacy dated slots keep working for listings without a schedule.
+* Host removes / closes booked times: the save first answers
+  `needsConfirm` with the count; after confirmation every booking at those
+  times is cancelled by the host (100 % refund owed, no host penalty), the
+  guest gets a push, and the money goes back: instant mode through the
+  provider API ON THE ORGANIZER'S ACCOUNT (Stripe `refunds.create` with
+  `stripeAccount`, MP `POST /v1/payments/{id}/refunds` with the organizer
+  token; idempotency key `gg_refund_{orderId}`), recorded as
+  `ticket_orders.refund {status: requested | refund_required | refund_owed}`;
+  manual mode -> `refund_owed` + an organizer reminder. The provider refund
+  webhook then invalidates the tickets as for any refund.
 
 ### Events
 
@@ -120,8 +136,11 @@ checkout; existing orders/tickets keep their stored price.
   `paymentLinkMethod` / `paymentInstructions` / `pricingMode` / `groupPrice` /
   `maxTicketsPerUser`; `availabilityRules/Overrides` server-owned;
   `booking_consents.method` may be `online`. Free events unchanged.
+* `firestore.rules` (cont.): `ticket_holdings` readable by its buyer;
+  `weekendPrice` / `weekendDays` on experiences.
 * `storage.rules`: `ticket_receipts/{orderId}/{file}`.
-* `firestore.indexes.json`: `ticket_orders` (buyerId, listingId, status),
+* `firestore.indexes.json`: `bookings` (experienceId, slotStart),
+  `ticket_orders` (buyerId, listingId, status),
   (status, expiresAt), (status, remindAt), (organizerId, status, sentAt),
   (buyerId, createdAt desc); `tickets` (buyerId, issuedAt desc);
   `experience_slot_counters` (experienceId, startMs).
@@ -141,7 +160,7 @@ functions:getExperienceAvailability,functions:updateExperienceAvailability,\
 functions:createBooking,functions:respondToBookingRequest,functions:cancelBooking,functions:cancelExperienceSlot,\
 functions:getBookingCheckInCode,functions:checkInBooking,functions:markBookingNoShow,functions:markBookingPaid,\
 functions:confirmCashReceived,functions:openBookingDispute,functions:resolveBookingDispute,functions:getSlotAvailability,\
-functions:createUserExperience,functions:spendCoins,functions:moderateUploadedImage
+functions:createUserExperience,functions:publishUserExperience,functions:spendCoins,functions:moderateUploadedImage
 firebase deploy --only firestore:rules,storage      # after the new app is out (rules close the bypasses)
 ```
 
@@ -217,28 +236,45 @@ digital services need IAP): keep paid listings in-person only; there is no
 "online" flag yet. Stripe for tickets is a separate code path from the
 web-only coin/membership Stripe code. Coin-priced event joins are retired.
 
-## Tests
+## App
 
-* `functions/__tests__/security/ticket-payments.emulator.test.ts` (34):
-  server price, Stripe/MP payloads, capacity + holds + expiry, webhook
-  signature rejection, idempotent paid, QR only after paid, refund/dispute
-  invalidation, MP re-fetch mismatch, MP currency + minimums, link mode
-  (code, buyer cannot self-confirm, organizer-only confirm/reject, reject and
-  expiry release, reminders), receipt storage access, paid-event rules
-  bypasses, free events unchanged, per-person limit incl. concurrency,
-  single-use QR per ticket, ticket types (totals, stock, window, limits,
-  concurrency, legacy), per-group experiences.
-* Unit: `ticketPaymentsCurrency`, `ticketPaymentsPricing`,
-  `experienceAvailability`, `experienceBookings` (QR gate).
-* Flutter: `test/features/ticket_payments/ticket_payments_test.dart`.
+* Profile > Edit profile > **Account settings**: "Payment methods" (unchanged
+  person-to-person links) and **"Get paid"** (connect Stripe / Mercado Pago,
+  Payments to confirm). The old entries in the profile section were removed.
+* Create / edit **wizards** for events (Basics / When & where / Tickets /
+  Payment / Review) and experiences (Basics / Location / Format & price /
+  Availability / Payment / Review): validation-gated Next, payment step
+  skipped for free listings, local draft + resume, edit overview with "Edit"
+  per section, review checklist; phone = one step per screen, web/wide =
+  side stepper.
+* Experiences: **Manage times** (from "Dates & availability"), buyer calendar
+  with only bookable days, weekend price + weekend days in the editor,
+  special price per day in the day editor.
+* Ticket types: drag-to-reorder, sales summary (sold / reserved / left /
+  revenue per type).
+
+## Tests (last run 2026-10-08)
+
+| Suite | Result |
+|---|---|
+| Security emulator (`jest.security.config.js`) | 323 / 323 pass (baseline 285; 38 in `ticket-payments.emulator.test.ts`) |
+| Functions unit | 530 pass, 100 fail = the same pre-existing failures as `main` (11 legacy suites) |
+| Flutter `flutter test` | 1615 pass (baseline 1586) |
+| `flutter analyze` | 163 issues, 0 errors (baseline 163) |
+
+New coverage: server price / payload from the listing, Stripe + MP
+payloads, capacity + holds + expiry, webhook signatures, idempotent paid,
+QR only after paid, refunds / disputes, MP re-fetch + currency + minimums,
+link mode end to end, receipt storage access, paid-event rules, free events
+unchanged, per-person limits incl. concurrency, single-use QR per ticket,
+ticket types, per-group pricing, recurring availability (generation, DST,
+overrides precedence, bookings against generated times, last-seat race,
+host removal -> cancel + Stripe / MP refund / refund_owed), date-based
+prices, the Manage times / recurring picker / wizard widgets.
 
 ## Not done yet
 
-* Host "Manage times" calendar UI and buyer calendar for the recurring
-  availability engine (server + tests exist; bookings still use the existing
-  dated windows). Cancel + automatic provider refund when a host removes
-  booked slots (only flagged `removedByHostAt` + confirm count today).
-* Weekend / day-override price editor UI (server resolves the prices).
-* Organizer per-type sales dashboard beyond the counts in the ticket-type list;
-  drag-to-reorder (arrows only).
-* Provider-side refunds from inside GreenGo (owner chose dashboard refunds).
+* Provider-side refunds started by the organizer from inside GreenGo for
+  other reasons than removed times (the owner chose dashboard refunds).
+* A grace window before start for the experience door is the existing
+  check-in window (3 h early); it is not separately configurable per listing.
