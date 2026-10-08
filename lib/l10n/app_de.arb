@@ -5227,5 +5227,6 @@
   "userErrorInvalidInput": "Einige Angaben sind ungültig. Bitte überprüfe sie und versuche es erneut.",
   "userErrorNotAllowed": "Diese Aktion ist gerade nicht verfügbar.",
   "userErrorUploadFailed": "Der Upload ist fehlgeschlagen. Bitte versuche es erneut.",
-  "videoMaxDurationError": "Das Video darf höchstens {seconds} Sekunden lang sein"
+  "videoMaxDurationError": "Das Video darf höchstens {seconds} Sekunden lang sein",
+  "exploreLoadingContent": "Wir suchen das Beste in deiner Nähe…"
 }

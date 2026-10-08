@@ -5227,5 +5227,6 @@
   "userErrorInvalidInput": "Parte de la información no es válida. Revísala e inténtalo de nuevo.",
   "userErrorNotAllowed": "Esta acción no está disponible en este momento.",
   "userErrorUploadFailed": "La subida no se completó. Inténtalo de nuevo.",
-  "videoMaxDurationError": "El vídeo debe durar {seconds} segundos o menos"
+  "videoMaxDurationError": "El vídeo debe durar {seconds} segundos o menos",
+  "exploreLoadingContent": "Buscando lo mejor a tu alrededor…"
 }

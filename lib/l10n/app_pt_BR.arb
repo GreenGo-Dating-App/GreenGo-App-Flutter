@@ -5227,5 +5227,6 @@
   "userErrorInvalidInput": "Algumas informações não são válidas. Verifique e tente novamente.",
   "userErrorNotAllowed": "Esta ação não está disponível no momento.",
   "userErrorUploadFailed": "O envio não foi concluído. Tente novamente.",
-  "videoMaxDurationError": "O vídeo deve ter no máximo {seconds} segundos"
+  "videoMaxDurationError": "O vídeo deve ter no máximo {seconds} segundos",
+  "exploreLoadingContent": "Buscando o melhor ao seu redor…"
 }

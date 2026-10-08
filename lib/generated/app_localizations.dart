@@ -27947,6 +27947,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Video must be {seconds} seconds or less'**
   String videoMaxDurationError(int seconds);
+
+  /// Explore: shown while the featured events, attractions, experiences and communities load together
+  ///
+  /// In en, this message translates to:
+  /// **'Finding the best of what\'s around you…'**
+  String get exploreLoadingContent;
 }
 
 class _AppLocalizationsDelegate

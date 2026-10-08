@@ -16054,4 +16054,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String videoMaxDurationError(int seconds) {
     return 'La vidéo doit durer $seconds secondes maximum';
   }
+
+  @override
+  String get exploreLoadingContent =>
+      'Nous cherchons le meilleur autour de vous…';
 }

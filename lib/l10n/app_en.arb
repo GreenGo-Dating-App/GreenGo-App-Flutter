@@ -7335,5 +7335,7 @@
   "userErrorUploadFailed": "The upload didn't go through. Please try again.",
   "@userErrorUploadFailed": {"description": "Error popup: storage upload failed"},
   "videoMaxDurationError": "Video must be {seconds} seconds or less",
-  "@videoMaxDurationError": {"description": "Error popup: recorded video too long", "placeholders": {"seconds": {"type": "int"}}}
+  "@videoMaxDurationError": {"description": "Error popup: recorded video too long", "placeholders": {"seconds": {"type": "int"}}},
+  "exploreLoadingContent": "Finding the best of what's around you…",
+  "@exploreLoadingContent": {"description": "Explore: shown while the featured events, attractions, experiences and communities load together"}
 }

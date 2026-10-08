@@ -4646,5 +4646,6 @@
   "userErrorInvalidInput": "Certaines informations ne sont pas valides. Vérifiez-les et réessayez.",
   "userErrorNotAllowed": "Cette action n'est pas disponible pour le moment.",
   "userErrorUploadFailed": "Le téléversement a échoué. Veuillez réessayer.",
-  "videoMaxDurationError": "La vidéo doit durer {seconds} secondes maximum"
+  "videoMaxDurationError": "La vidéo doit durer {seconds} secondes maximum",
+  "exploreLoadingContent": "Nous cherchons le meilleur autour de vous…"
 }

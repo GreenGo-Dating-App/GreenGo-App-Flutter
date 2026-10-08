@@ -5227,5 +5227,6 @@
   "userErrorInvalidInput": "Alcune informazioni non sono valide. Controllale e riprova.",
   "userErrorNotAllowed": "Questa azione non è disponibile al momento.",
   "userErrorUploadFailed": "Il caricamento non è riuscito. Riprova.",
-  "videoMaxDurationError": "Il video deve durare al massimo {seconds} secondi"
+  "videoMaxDurationError": "Il video deve durare al massimo {seconds} secondi",
+  "exploreLoadingContent": "Cerchiamo il meglio intorno a te…"
 }

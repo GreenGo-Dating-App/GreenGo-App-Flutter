@@ -15956,6 +15956,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String videoMaxDurationError(int seconds) {
     return 'O vídeo deve ter no máximo $seconds segundos';
   }
+
+  @override
+  String get exploreLoadingContent => 'A procurar o melhor à tua volta…';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -31913,4 +31916,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String videoMaxDurationError(int seconds) {
     return 'O vídeo deve ter no máximo $seconds segundos';
   }
+
+  @override
+  String get exploreLoadingContent => 'Buscando o melhor ao seu redor…';
 }

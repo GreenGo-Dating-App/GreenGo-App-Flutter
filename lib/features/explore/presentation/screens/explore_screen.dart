@@ -252,8 +252,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // {language}) and the below-the-fold Country Spotlight only START loading
   // once the content is shown, so they never compete with it for bandwidth.
 
-  /// Longest wait for the content's first screen (data + images).
-  static const Duration _kContentCap = Duration(seconds: 5);
+  /// Longest wait for the content's first screen (data + images). A safety
+  /// net only: the four "always" sections normally land well before it, and
+  /// past it whatever is still loading appears on its own.
+  static const Duration _kContentCap = Duration(seconds: 10);
 
   /// Of which, the longest wait for the first viewport's images.
   static const Duration _kContentImageCap = kFirstScreenImageCap;
@@ -486,7 +488,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       (
         ready: done('communities') || _communities != null,
-        always: false,
+        always: true,
         items: _communities,
         height: _kSectionHeader + _CommunityCard.cardHeight,
         cardWidth: _CommunityCard.cardWidth,
@@ -528,10 +530,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final out = <ImageProvider>[];
     var y = _kHeaderEstimate;
     for (final s in _gatedSections(context)) {
-      // Featured community events, featured attractions and top experiences
-      // always appear together; other sections only hold the gate when they
-      // start inside the first viewport.
-      if (!s.always && y >= size.height) break;
+      // Featured community events, featured attractions, top experiences and
+      // communities to join ALWAYS appear together (product owner), wherever
+      // they fall; the other sections only hold the gate when they start
+      // inside the first viewport.
+      if (!s.always && y >= size.height) continue;
       if (!s.ready) return null;
       final items = s.items;
       if (items == null || items.isEmpty) continue; // hidden, no space
@@ -2205,18 +2208,29 @@ class _ExploreScreenState extends State<ExploreScreen> {
               // all has data - a single small page-level indicator stands in.
               if (!_contentGateOpen ||
                   (_contentLoading && !_hasAnySectionData))
-                const SliverToBoxAdapter(
+                SliverToBoxAdapter(
                   child: Padding(
-                    padding: EdgeInsets.only(top: 48),
-                    child: Center(
-                      child: SizedBox(
-                        width: 26,
-                        height: 26,
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2.5,
-                          color: AppColors.richGold,
+                    padding: const EdgeInsets.fromLTRB(32, 48, 32, 0),
+                    child: Column(
+                      children: [
+                        const SizedBox(
+                          width: 26,
+                          height: 26,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2.5,
+                            color: AppColors.richGold,
+                          ),
                         ),
-                      ),
+                        const SizedBox(height: 14),
+                        Text(
+                          l10n.exploreLoadingContent,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            color: AppColors.textTertiary,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
