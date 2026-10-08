@@ -169,6 +169,11 @@ service cloud.firestore {
               // themselves age-verified and unlock community publishing.
               && request.resource.data.get('isAgeVerified', false)
                  == resource.data.get('isAgeVerified', false)
+              // Security audit C-04: the signup-grant idempotency marker is
+              // written only by applySignupGrants. (signupGrantsApplied stays
+              // writable: the app updates it to dismiss the welcome banner.)
+              && request.resource.data.get('signupGrantsAppliedAt', null)
+                 == resource.data.get('signupGrantsAppliedAt', null)
               && request.resource.data.get('ageVerification', {})
                  == resource.data.get('ageVerification', {})
               // ENTITLEMENTS. TierGate.resolveTier() reads
@@ -667,10 +672,26 @@ service cloud.firestore {
     // ============================================================================
     // COIN GIFTS COLLECTION
     // ============================================================================
+    // Security audit C-01: gifts can only be created AS yourself, TO someone
+    // else, with a sane amount; only the receiver may accept a pending gift.
+    // Declines go through the declineGift callable (server). Matches the app's
+    // sendGift (pending), the shop's direct send (accepted) and acceptGift.
     match /coinGifts/{giftId} {
       allow read: if isSignedIn();
-      allow create: if isSignedIn();
-      allow update: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.senderId == request.auth.uid
+        && request.resource.data.receiverId is string
+        && request.resource.data.receiverId != request.auth.uid
+        && request.resource.data.amount is int
+        && request.resource.data.amount > 0
+        && request.resource.data.amount <= 100000
+        && request.resource.data.status in ['pending', 'accepted'];
+      allow update: if isSignedIn()
+        && resource.data.receiverId == request.auth.uid
+        && resource.data.status == 'pending'
+        && request.resource.data.status == 'accepted'
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['status', 'receivedAt']);
       allow delete: if false;
     }
 
@@ -692,11 +713,25 @@ service cloud.firestore {
     // Owner may read/write their own referral doc. A non-owner (the referrer)
     // may ONLY increment counters when a friend redeems their code — never
     // decrement — mirroring the coinBalances integrity guard.
+    // Security audit C-05: the owner may only create/attach their own code
+    // (referral_service.getOrCreateCode); `redeemedCode`/`redeemedFrom` are
+    // server-written by redeemReferral and can no longer be cleared to redeem
+    // again. Counters are server-only.
     match /referrals/{userId} {
       allow read: if isSignedIn();
-      allow create, update: if isOwner(userId)
-        || (isSignedIn()
-            && request.resource.data.invitedCount > resource.data.invitedCount);
+      allow create: if isOwner(userId)
+        && request.resource.data.keys().hasOnly(['code', 'invitedCount', 'coinsEarned'])
+        && request.resource.data.get('invitedCount', 0) == 0
+        && request.resource.data.get('coinsEarned', 0) == 0;
+      allow update: if (isOwner(userId)
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['code', 'invitedCount', 'coinsEarned'])
+          && (!('invitedCount' in request.resource.data.diff(resource.data).affectedKeys())
+               || request.resource.data.invitedCount == 0)
+          && (!('coinsEarned' in request.resource.data.diff(resource.data).affectedKeys())
+               || request.resource.data.coinsEarned == 0)
+          && resource.data.get('code', null) == null);
+      // (Referrer counters are incremented only by redeemReferral, server-side.)
       allow delete: if false;
     }
 
@@ -832,9 +867,19 @@ service cloud.firestore {
     // ============================================================================
     // NICKNAMES COLLECTION (public read for nickname login before auth)
     // ============================================================================
+    // Security audit C-06: single-doc lookup stays public (nickname login runs
+    // before sign-in) but LISTING is denied, so the collection can no longer be
+    // paged to harvest every user's email. A mapping can only be created for,
+    // or changed by, the uid it points to.
     match /nicknames/{nickname} {
-      allow read: if true;
-      allow write: if isSignedIn();
+      allow get: if true;
+      allow list: if false;
+      allow create: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.uid == request.auth.uid
+        && request.resource.data.uid == request.auth.uid;
+      allow delete: if isSignedIn() && resource.data.uid == request.auth.uid;
     }
 
     // ============================================================================
@@ -850,8 +895,16 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // Security audit C-08: config stays public for app startup, but the two
+    // documents holding credentials are not. `api_keys` is still readable by
+    // signed-in users until the app reads AI/TTS through Cloud Functions
+    // (P1-1); `resend_settings` is server/admin-panel only. No client lists
+    // this collection, so list is admin-panel only.
     match /app_config/{docId} {
-      allow read: if true;
+      allow get: if !(docId in ['api_keys', 'resend_settings'])
+        || (docId == 'api_keys' && isSignedIn())
+        || isAdminPanelUser();
+      allow list: if isAdminPanelUser();
       allow write: if isAdminPanelUser();
     }
 
