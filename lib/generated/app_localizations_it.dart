@@ -16611,6 +16611,17 @@ class AppLocalizationsIt extends AppLocalizations {
       'Annulla in qualsiasi momento nel portale di fatturazione';
 
   @override
+  String get billingPortalOpenFailed =>
+      'Impossibile aprire il portale di fatturazione. Riprova.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Gli abbonamenti si rinnovano automaticamente al prezzo e con la cadenza indicati finché non li annulli. Annulla in qualsiasi momento nel portale di fatturazione.';
+
+  @override
+  String get webBillingTitle => 'Fatturazione e recesso';
+
+  @override
   String get ageAssuranceTitle =>
       'Verifica la tua età per usare questa funzione';
 
@@ -16649,17 +16660,6 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get ageVerifyWhyRegional =>
       'Per scoprire persone e iniziare nuove chat private dove vivi, dobbiamo confermare che hai più di 18 anni.';
-
-  @override
-  String get billingPortalOpenFailed =>
-      'Impossibile aprire il portale di fatturazione. Riprova.';
-
-  @override
-  String get subscriptionAutoRenewInfoWeb =>
-      'Gli abbonamenti si rinnovano automaticamente al prezzo e con la cadenza indicati finché non li annulli. Annulla in qualsiasi momento nel portale di fatturazione.';
-
-  @override
-  String get webBillingTitle => 'Fatturazione e recesso';
 
   @override
   String get privacyDownloadDataTitle => 'Scarica i miei dati';
@@ -16715,4 +16715,10 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get reauthSignInAgain =>
       'Per la tua sicurezza, esci e accedi di nuovo, poi riprova.';
+
+  @override
+  String get profilePhotoPrevious => 'Foto precedente';
+
+  @override
+  String get profilePhotoNext => 'Foto successiva';
 }

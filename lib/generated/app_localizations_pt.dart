@@ -16593,6 +16593,17 @@ class AppLocalizationsPt extends AppLocalizations {
       'Cancele a qualquer momento no portal de faturação';
 
   @override
+  String get billingPortalOpenFailed =>
+      'Não foi possível abrir o portal de faturação. Tente novamente.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'As subscrições renovam-se automaticamente ao preço e com a periodicidade indicados até as cancelar. Cancele a qualquer momento no portal de faturação.';
+
+  @override
+  String get webBillingTitle => 'Faturação e desistência';
+
+  @override
   String get ageAssuranceTitle =>
       'Verifique a sua idade para usar esta funcionalidade';
 
@@ -16632,17 +16643,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get ageVerifyWhyRegional =>
       'Para descobrir pessoas e iniciar novas conversas privadas onde vive, precisamos de confirmar que tem mais de 18 anos.';
-
-  @override
-  String get billingPortalOpenFailed =>
-      'Não foi possível abrir o portal de faturação. Tente novamente.';
-
-  @override
-  String get subscriptionAutoRenewInfoWeb =>
-      'As subscrições renovam-se automaticamente ao preço e com a periodicidade indicados até as cancelar. Cancele a qualquer momento no portal de faturação.';
-
-  @override
-  String get webBillingTitle => 'Faturação e desistência';
 
   @override
   String get privacyDownloadDataTitle => 'Transferir os meus dados';
@@ -16698,6 +16698,12 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get reauthSignInAgain =>
       'Por segurança, termine a sessão e volte a iniciar sessão; depois tente novamente.';
+
+  @override
+  String get profilePhotoPrevious => 'Foto anterior';
+
+  @override
+  String get profilePhotoNext => 'Foto seguinte';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -33282,6 +33288,27 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
+  String get billingIntervalMonth => 'mês';
+
+  @override
+  String get billingIntervalYear => 'ano';
+
+  @override
+  String get cancelAnytimeBillingPortal =>
+      'Cancele a qualquer momento no portal de cobrança';
+
+  @override
+  String get billingPortalOpenFailed =>
+      'Não foi possível abrir o portal de cobrança. Tente novamente.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'As assinaturas são renovadas automaticamente pelo preço e na periodicidade exibidos até você cancelar. Cancele a qualquer momento no portal de cobrança.';
+
+  @override
+  String get webBillingTitle => 'Cobrança e desistência';
+
+  @override
   String get ageAssuranceTitle => 'Verifique sua idade para usar este recurso';
 
   @override
@@ -33319,27 +33346,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get ageVerifyWhyRegional =>
       'Para descobrir pessoas e iniciar novas conversas privadas onde você mora, precisamos confirmar que você tem mais de 18 anos.';
-
-  @override
-  String get billingIntervalMonth => 'mês';
-
-  @override
-  String get billingIntervalYear => 'ano';
-
-  @override
-  String get cancelAnytimeBillingPortal =>
-      'Cancele a qualquer momento no portal de cobrança';
-
-  @override
-  String get billingPortalOpenFailed =>
-      'Não foi possível abrir o portal de cobrança. Tente novamente.';
-
-  @override
-  String get subscriptionAutoRenewInfoWeb =>
-      'As assinaturas são renovadas automaticamente pelo preço e na periodicidade exibidos até você cancelar. Cancele a qualquer momento no portal de cobrança.';
-
-  @override
-  String get webBillingTitle => 'Cobrança e desistência';
 
   @override
   String get privacyDownloadDataTitle => 'Baixar meus dados';
@@ -33395,4 +33401,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get reauthSignInAgain =>
       'Por segurança, saia da conta e entre novamente; depois tente de novo.';
+
+  @override
+  String get profilePhotoPrevious => 'Foto anterior';
+
+  @override
+  String get profilePhotoNext => 'Próxima foto';
 }

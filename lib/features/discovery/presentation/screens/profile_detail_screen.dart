@@ -486,7 +486,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             ),
         ],
       ),
-      body: Stack(
+      body: _wideCentered(context, Stack(
         children: [
           // Scrollable content
           CustomScrollView(
@@ -494,7 +494,10 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
               // Photo carousel
               SliverToBoxAdapter(
                 child: SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.6,
+                  // Wide web: the page is a centred 60% column, so the photo
+                  // can be taller without being stretched - keeps faces in view.
+                  height: MediaQuery.of(context).size.height *
+                      (_isWideLayout(context) ? 0.85 : 0.6),
                   child: hasPhotos
                       ? _buildPhotoCarousel()
                       : _buildPhotoPlaceholder(),
@@ -944,7 +947,7 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
               ),
             ),
         ],
-      ),
+      )),
       ),
       ),
     );
@@ -1027,6 +1030,11 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
               return CachedNetworkImage(
                 imageUrl: widget.profile.photoUrls[index],
                 fit: BoxFit.cover,
+                // Wide screens crop top/bottom; bias towards the upper part
+                // where faces usually are.
+                alignment: _isWideLayout(context)
+                    ? const Alignment(0, -0.4)
+                    : Alignment.center,
                 memCacheWidth: 1080,
                 errorWidget: (context, url, error) => _buildPhotoPlaceholder(),
               );
@@ -1089,6 +1097,35 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
             ),
           ),
 
+        // Left / right arrows to browse photos (in addition to swiping)
+        if (widget.profile.photoUrls.length > 1 && _currentPhotoIndex > 0)
+          Positioned(
+            left: 8,
+            top: 0,
+            bottom: 0,
+            child: Center(
+              child: _PhotoArrowButton(
+                icon: Icons.chevron_left_rounded,
+                tooltip: AppLocalizations.of(context)!.profilePhotoPrevious,
+                onPressed: () => _goToPhoto(_currentPhotoIndex - 1),
+              ),
+            ),
+          ),
+        if (widget.profile.photoUrls.length > 1 &&
+            _currentPhotoIndex < widget.profile.photoUrls.length - 1)
+          Positioned(
+            right: 8,
+            top: 0,
+            bottom: 0,
+            child: Center(
+              child: _PhotoArrowButton(
+                icon: Icons.chevron_right_rounded,
+                tooltip: AppLocalizations.of(context)!.profilePhotoNext,
+                onPressed: () => _goToPhoto(_currentPhotoIndex + 1),
+              ),
+            ),
+          ),
+
         // Like button and count (Instagram style)
         Positioned(
           bottom: 16,
@@ -1096,6 +1133,35 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
           child: _buildPhotoLikeButton(),
         ),
       ],
+    );
+  }
+
+  /// Big screens (web/desktop/tablet landscape): the profile is shown as a
+  /// centred column 60% of the window wide instead of edge to edge, because
+  /// full-width photos get cropped so much that faces are cut off.
+  static const double _wideBreakpoint = 900;
+
+  bool _isWideLayout(BuildContext context) =>
+      MediaQuery.sizeOf(context).width >= _wideBreakpoint;
+
+  Widget _wideCentered(BuildContext context, Widget child) {
+    if (!_isWideLayout(context)) return child;
+    final width = MediaQuery.sizeOf(context).width;
+    return Align(
+      alignment: Alignment.topCenter,
+      child: SizedBox(
+        width: (width * 0.6).clamp(600.0, width),
+        child: child,
+      ),
+    );
+  }
+
+  void _goToPhoto(int index) {
+    if (index < 0 || index >= widget.profile.photoUrls.length) return;
+    _pageController.animateToPage(
+      index,
+      duration: const Duration(milliseconds: 250),
+      curve: Curves.easeOut,
     );
   }
 
@@ -1556,6 +1622,40 @@ class _LikeAnimationWidgetState extends State<_LikeAnimationWidget>
           ),
         );
       },
+    );
+  }
+}
+
+/// Round, semi-transparent arrow button over the profile photo gallery.
+class _PhotoArrowButton extends StatelessWidget {
+  const _PhotoArrowButton({
+    required this.icon,
+    required this.tooltip,
+    required this.onPressed,
+  });
+
+  final IconData icon;
+  final String tooltip;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: tooltip,
+      child: Material(
+        color: Colors.black.withOpacity(0.35),
+        shape: const CircleBorder(),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: onPressed,
+          child: SizedBox(
+            width: 48,
+            height: 48,
+            child: Icon(icon, color: Colors.white, size: 32,
+                semanticLabel: tooltip),
+          ),
+        ),
+      ),
     );
   }
 }

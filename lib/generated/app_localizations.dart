@@ -28922,6 +28922,17 @@ abstract class AppLocalizations {
   /// **'Could not open the billing portal. Please try again.'**
   String get billingPortalOpenFailed;
 
+  /// No description provided for @subscriptionAutoRenewInfoWeb.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.'**
+  String get subscriptionAutoRenewInfoWeb;
+
+  /// No description provided for @webBillingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Billing and withdrawal'**
+  String get webBillingTitle;
 
   /// No description provided for @ageAssuranceTitle.
   ///
@@ -28988,17 +28999,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'To discover people and start new private chats where you live, we need to confirm you are over 18.'**
   String get ageVerifyWhyRegional;
-  /// No description provided for @subscriptionAutoRenewInfoWeb.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscriptions renew automatically at the price and interval shown until you cancel. Cancel anytime in the billing portal.'**
-  String get subscriptionAutoRenewInfoWeb;
-
-  /// No description provided for @webBillingTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Billing and withdrawal'**
-  String get webBillingTitle;
 
   /// No description provided for @privacyDownloadDataTitle.
   ///
@@ -29089,6 +29089,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'For your security, please sign out and sign in again, then try once more.'**
   String get reauthSignInAgain;
+
+  /// Accessibility label/tooltip of the left arrow in the profile photo gallery
+  ///
+  /// In en, this message translates to:
+  /// **'Previous photo'**
+  String get profilePhotoPrevious;
+
+  /// Accessibility label/tooltip of the right arrow in the profile photo gallery
+  ///
+  /// In en, this message translates to:
+  /// **'Next photo'**
+  String get profilePhotoNext;
 }
 
 class _AppLocalizationsDelegate

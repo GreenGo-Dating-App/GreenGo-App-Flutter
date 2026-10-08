@@ -16644,6 +16644,17 @@ class AppLocalizationsDe extends AppLocalizations {
       'Jederzeit im Abrechnungsportal kündigen';
 
   @override
+  String get billingPortalOpenFailed =>
+      'Das Abrechnungsportal konnte nicht geöffnet werden. Bitte versuche es erneut.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Abos verlängern sich automatisch zum angezeigten Preis und Intervall, bis du kündigst. Jederzeit im Abrechnungsportal kündbar.';
+
+  @override
+  String get webBillingTitle => 'Abrechnung und Widerruf';
+
+  @override
   String get ageAssuranceTitle =>
       'Bestätige dein Alter, um diese Funktion zu nutzen';
 
@@ -16682,17 +16693,6 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get ageVerifyWhyRegional =>
       'Um an deinem Wohnort Menschen zu entdecken und neue private Chats zu beginnen, müssen wir bestätigen, dass du über 18 bist.';
-
-  @override
-  String get billingPortalOpenFailed =>
-      'Das Abrechnungsportal konnte nicht geöffnet werden. Bitte versuche es erneut.';
-
-  @override
-  String get subscriptionAutoRenewInfoWeb =>
-      'Abos verlängern sich automatisch zum angezeigten Preis und Intervall, bis du kündigst. Jederzeit im Abrechnungsportal kündbar.';
-
-  @override
-  String get webBillingTitle => 'Abrechnung und Widerruf';
 
   @override
   String get privacyDownloadDataTitle => 'Meine Daten herunterladen';
@@ -16748,4 +16748,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get reauthSignInAgain =>
       'Melde dich zu deiner Sicherheit ab und wieder an und versuche es dann erneut.';
+
+  @override
+  String get profilePhotoPrevious => 'Vorheriges Foto';
+
+  @override
+  String get profilePhotoNext => 'Nächstes Foto';
 }

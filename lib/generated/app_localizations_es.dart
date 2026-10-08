@@ -16621,6 +16621,17 @@ class AppLocalizationsEs extends AppLocalizations {
       'Cancela cuando quieras en el portal de facturación';
 
   @override
+  String get billingPortalOpenFailed =>
+      'No se pudo abrir el portal de facturación. Inténtalo de nuevo.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Las suscripciones se renuevan automáticamente al precio y con la periodicidad indicados hasta que las canceles. Cancela cuando quieras en el portal de facturación.';
+
+  @override
+  String get webBillingTitle => 'Facturación y desistimiento';
+
+  @override
   String get ageAssuranceTitle => 'Verifica tu edad para usar esta función';
 
   @override
@@ -16658,17 +16669,6 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get ageVerifyWhyRegional =>
       'Para descubrir personas e iniciar nuevos chats privados donde vives, necesitamos confirmar que tienes más de 18 años.';
-
-  @override
-  String get billingPortalOpenFailed =>
-      'No se pudo abrir el portal de facturación. Inténtalo de nuevo.';
-
-  @override
-  String get subscriptionAutoRenewInfoWeb =>
-      'Las suscripciones se renuevan automáticamente al precio y con la periodicidad indicados hasta que las canceles. Cancela cuando quieras en el portal de facturación.';
-
-  @override
-  String get webBillingTitle => 'Facturación y desistimiento';
 
   @override
   String get privacyDownloadDataTitle => 'Descargar mis datos';
@@ -16724,4 +16724,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get reauthSignInAgain =>
       'Por tu seguridad, cierra sesión, vuelve a iniciarla e inténtalo de nuevo.';
+
+  @override
+  String get profilePhotoPrevious => 'Foto anterior';
+
+  @override
+  String get profilePhotoNext => 'Foto siguiente';
 }

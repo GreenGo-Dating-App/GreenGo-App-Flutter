@@ -8267,5 +8267,13 @@
   "privacyDownloadDataFailed": "We could not prepare your data. Please try again later.",
   "reauthPasswordBody": "For your security, enter your password again to continue.",
   "reauthContinue": "Continue",
-  "reauthSignInAgain": "For your security, please sign out and sign in again, then try once more."
+  "reauthSignInAgain": "For your security, please sign out and sign in again, then try once more.",
+  "profilePhotoPrevious": "Previous photo",
+  "profilePhotoNext": "Next photo",
+  "@profilePhotoPrevious": {
+    "description": "Accessibility label/tooltip of the left arrow in the profile photo gallery"
+  },
+  "@profilePhotoNext": {
+    "description": "Accessibility label/tooltip of the right arrow in the profile photo gallery"
+  }
 }

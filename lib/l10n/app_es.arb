@@ -5433,5 +5433,7 @@
   "privacyDownloadDataFailed": "No pudimos preparar tus datos. Inténtalo de nuevo más tarde.",
   "reauthPasswordBody": "Por tu seguridad, vuelve a introducir tu contraseña para continuar.",
   "reauthContinue": "Continuar",
-  "reauthSignInAgain": "Por tu seguridad, cierra sesión, vuelve a iniciarla e inténtalo de nuevo."
+  "reauthSignInAgain": "Por tu seguridad, cierra sesión, vuelve a iniciarla e inténtalo de nuevo.",
+  "profilePhotoPrevious": "Foto anterior",
+  "profilePhotoNext": "Foto siguiente"
 }

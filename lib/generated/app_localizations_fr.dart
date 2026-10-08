@@ -16696,6 +16696,17 @@ class AppLocalizationsFr extends AppLocalizations {
       'Résiliez à tout moment dans le portail de facturation';
 
   @override
+  String get billingPortalOpenFailed =>
+      'Impossible d\'ouvrir le portail de facturation. Veuillez réessayer.';
+
+  @override
+  String get subscriptionAutoRenewInfoWeb =>
+      'Les abonnements se renouvellent automatiquement au prix et à la périodicité indiqués jusqu\'à résiliation. Résiliez à tout moment dans le portail de facturation.';
+
+  @override
+  String get webBillingTitle => 'Facturation et rétractation';
+
+  @override
   String get ageAssuranceTitle =>
       'Vérifiez votre âge pour utiliser cette fonctionnalité';
 
@@ -16734,17 +16745,6 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get ageVerifyWhyRegional =>
       'Pour découvrir des personnes et commencer de nouvelles discussions privées là où vous vivez, nous devons confirmer que vous avez plus de 18 ans.';
-
-  @override
-  String get billingPortalOpenFailed =>
-      'Impossible d\'ouvrir le portail de facturation. Veuillez réessayer.';
-
-  @override
-  String get subscriptionAutoRenewInfoWeb =>
-      'Les abonnements se renouvellent automatiquement au prix et à la périodicité indiqués jusqu\'à résiliation. Résiliez à tout moment dans le portail de facturation.';
-
-  @override
-  String get webBillingTitle => 'Facturation et rétractation';
 
   @override
   String get privacyDownloadDataTitle => 'Télécharger mes données';
@@ -16800,4 +16800,10 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get reauthSignInAgain =>
       'Pour votre sécurité, déconnectez-vous puis reconnectez-vous, et réessayez.';
+
+  @override
+  String get profilePhotoPrevious => 'Photo précédente';
+
+  @override
+  String get profilePhotoNext => 'Photo suivante';
 }
