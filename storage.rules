@@ -76,6 +76,14 @@ service firebase.storage {
       allow read, write: if false;
     }
 
+    // Data-subject exports (exportMyData, P3-2): exports/{uid}/{ts}.zip.
+    // Server-only. The owner downloads through the 24 h signed URL the
+    // function returns (signed URLs bypass rules); no client SDK access, so a
+    // stolen ID token alone cannot list or fetch an export.
+    match /exports/{allPaths=**} {
+      allow read, write: if false;
+    }
+
     // Age-assurance documents. WRITE-ONLY by design.
     //
     // The owner uploads an identity document here and the `submitAgeDocument`

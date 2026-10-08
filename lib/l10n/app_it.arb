@@ -5418,5 +5418,20 @@
   "ageAssuranceStoreUnavailable": "Il tuo account dello store non ha potuto confermare la tua età. Verificala con un documento d'identità.",
   "ageAssuranceVerified": "Grazie, la tua età è confermata.",
   "ageAssuranceWebNote": "Sul web, la tua età viene confermata con un documento d'identità.",
-  "ageVerifyWhyRegional": "Per scoprire persone e iniziare nuove chat private dove vivi, dobbiamo confermare che hai più di 18 anni."
+  "ageVerifyWhyRegional": "Per scoprire persone e iniziare nuove chat private dove vivi, dobbiamo confermare che hai più di 18 anni.",
+  "privacyDownloadDataTitle": "Scarica i miei dati",
+  "privacyDownloadDataSubtitle": "Una copia del tuo profilo, delle impostazioni, delle foto e dei messaggi che hai inviato (file ZIP)",
+  "privacyDownloadDataConfirmBody": "Prepareremo un file ZIP con i dati che conserviamo su di te. Per proteggere le altre persone, i messaggi che ti hanno inviato non sono inclusi. Riceverai un link per il download qui e via email. Il link vale 24 ore e puoi richiedere una copia al giorno.",
+  "privacyDownloadDataConfirmButton": "Prepara i miei dati",
+  "privacyDownloadDataPreparing": "Stiamo preparando i tuoi dati. Può richiedere qualche minuto...",
+  "privacyDownloadDataReadyTitle": "I tuoi dati sono pronti",
+  "privacyDownloadDataReadyBody": "Scarica ora il file ZIP. Il link vale 24 ore.",
+  "privacyDownloadDataReadyEmailed": "Ti abbiamo inviato il link anche via email.",
+  "privacyDownloadDataOpen": "Scarica",
+  "privacyDownloadDataRateLimited": "Puoi scaricare i tuoi dati una volta ogni 24 ore. Usa il link che ti abbiamo inviato via email o riprova domani.",
+  "privacyDownloadDataInProgress": "Stiamo già preparando i tuoi dati. Attendi qualche minuto.",
+  "privacyDownloadDataFailed": "Non è stato possibile preparare i tuoi dati. Riprova più tardi.",
+  "reauthPasswordBody": "Per la tua sicurezza, inserisci di nuovo la password per continuare.",
+  "reauthContinue": "Continua",
+  "reauthSignInAgain": "Per la tua sicurezza, esci e accedi di nuovo, poi riprova."
 }

@@ -5418,5 +5418,20 @@
   "ageAssuranceStoreUnavailable": "Sua conta da loja não conseguiu confirmar sua idade. Verifique com um documento de identidade.",
   "ageAssuranceVerified": "Obrigado, sua idade está confirmada.",
   "ageAssuranceWebNote": "Na web, sua idade é confirmada com um documento de identidade.",
-  "ageVerifyWhyRegional": "Para descobrir pessoas e iniciar novas conversas privadas onde você mora, precisamos confirmar que você tem mais de 18 anos."
+  "ageVerifyWhyRegional": "Para descobrir pessoas e iniciar novas conversas privadas onde você mora, precisamos confirmar que você tem mais de 18 anos.",
+  "privacyDownloadDataTitle": "Baixar meus dados",
+  "privacyDownloadDataSubtitle": "Uma cópia do seu perfil, configurações, fotos e das mensagens que você enviou (arquivo ZIP)",
+  "privacyDownloadDataConfirmBody": "Vamos preparar um arquivo ZIP com os dados que mantemos sobre você. Para proteger outras pessoas, as mensagens que elas enviaram para você não são incluídas. Você receberá um link para download aqui e por email. O link vale por 24 horas e você pode pedir uma cópia por dia.",
+  "privacyDownloadDataConfirmButton": "Preparar meus dados",
+  "privacyDownloadDataPreparing": "Preparando seus dados. Isso pode levar alguns minutos...",
+  "privacyDownloadDataReadyTitle": "Seus dados estão prontos",
+  "privacyDownloadDataReadyBody": "Baixe o arquivo ZIP agora. O link vale por 24 horas.",
+  "privacyDownloadDataReadyEmailed": "Também enviamos o link para o seu email.",
+  "privacyDownloadDataOpen": "Baixar",
+  "privacyDownloadDataRateLimited": "Você pode baixar seus dados uma vez a cada 24 horas. Use o link que enviamos por email ou tente novamente amanhã.",
+  "privacyDownloadDataInProgress": "Seus dados já estão sendo preparados. Aguarde alguns minutos.",
+  "privacyDownloadDataFailed": "Não foi possível preparar seus dados. Tente novamente mais tarde.",
+  "reauthPasswordBody": "Por segurança, digite sua senha novamente para continuar.",
+  "reauthContinue": "Continuar",
+  "reauthSignInAgain": "Por segurança, saia da conta e entre novamente; depois tente de novo."
 }

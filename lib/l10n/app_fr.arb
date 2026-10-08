@@ -4837,5 +4837,20 @@
   "ageAssuranceStoreUnavailable": "Votre compte de la boutique n'a pas pu confirmer votre âge. Veuillez le vérifier avec une pièce d'identité.",
   "ageAssuranceVerified": "Merci, votre âge est confirmé.",
   "ageAssuranceWebNote": "Sur le web, votre âge est confirmé avec une pièce d'identité.",
-  "ageVerifyWhyRegional": "Pour découvrir des personnes et commencer de nouvelles discussions privées là où vous vivez, nous devons confirmer que vous avez plus de 18 ans."
+  "ageVerifyWhyRegional": "Pour découvrir des personnes et commencer de nouvelles discussions privées là où vous vivez, nous devons confirmer que vous avez plus de 18 ans.",
+  "privacyDownloadDataTitle": "Télécharger mes données",
+  "privacyDownloadDataSubtitle": "Une copie de votre profil, de vos réglages, de vos photos et des messages que vous avez envoyés (fichier ZIP)",
+  "privacyDownloadDataConfirmBody": "Nous allons préparer un fichier ZIP avec les données que nous détenons sur vous. Pour protéger les autres personnes, les messages qu'elles vous ont envoyés ne sont pas inclus. Vous recevrez un lien de téléchargement ici et par e-mail. Le lien est valable 24 heures et vous pouvez demander une copie par jour.",
+  "privacyDownloadDataConfirmButton": "Préparer mes données",
+  "privacyDownloadDataPreparing": "Préparation de vos données. Cela peut prendre quelques minutes...",
+  "privacyDownloadDataReadyTitle": "Vos données sont prêtes",
+  "privacyDownloadDataReadyBody": "Téléchargez le fichier ZIP maintenant. Le lien est valable 24 heures.",
+  "privacyDownloadDataReadyEmailed": "Nous vous avons aussi envoyé le lien par e-mail.",
+  "privacyDownloadDataOpen": "Télécharger",
+  "privacyDownloadDataRateLimited": "Vous pouvez télécharger vos données une fois toutes les 24 heures. Utilisez le lien envoyé par e-mail ou réessayez demain.",
+  "privacyDownloadDataInProgress": "Vos données sont déjà en cours de préparation. Veuillez patienter quelques minutes.",
+  "privacyDownloadDataFailed": "Impossible de préparer vos données. Veuillez réessayer plus tard.",
+  "reauthPasswordBody": "Pour votre sécurité, saisissez à nouveau votre mot de passe pour continuer.",
+  "reauthContinue": "Continuer",
+  "reauthSignInAgain": "Pour votre sécurité, déconnectez-vous puis reconnectez-vous, et réessayez."
 }

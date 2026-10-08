@@ -5418,5 +5418,20 @@
   "ageAssuranceStoreUnavailable": "Tu cuenta de la tienda no pudo confirmar tu edad. Verifícala con un documento de identidad.",
   "ageAssuranceVerified": "Gracias, tu edad está confirmada.",
   "ageAssuranceWebNote": "En la web, tu edad se confirma con un documento de identidad.",
-  "ageVerifyWhyRegional": "Para descubrir personas e iniciar nuevos chats privados donde vives, necesitamos confirmar que tienes más de 18 años."
+  "ageVerifyWhyRegional": "Para descubrir personas e iniciar nuevos chats privados donde vives, necesitamos confirmar que tienes más de 18 años.",
+  "privacyDownloadDataTitle": "Descargar mis datos",
+  "privacyDownloadDataSubtitle": "Una copia de tu perfil, ajustes, fotos y los mensajes que enviaste (archivo ZIP)",
+  "privacyDownloadDataConfirmBody": "Prepararemos un archivo ZIP con los datos que tenemos sobre ti. Para proteger a otras personas, no se incluyen los mensajes que te enviaron. Recibirás un enlace de descarga aquí y por correo electrónico. El enlace es válido durante 24 horas y puedes pedir una copia al día.",
+  "privacyDownloadDataConfirmButton": "Preparar mis datos",
+  "privacyDownloadDataPreparing": "Preparando tus datos. Puede tardar unos minutos...",
+  "privacyDownloadDataReadyTitle": "Tus datos están listos",
+  "privacyDownloadDataReadyBody": "Descarga ahora el archivo ZIP. El enlace es válido durante 24 horas.",
+  "privacyDownloadDataReadyEmailed": "También te enviamos el enlace por correo electrónico.",
+  "privacyDownloadDataOpen": "Descargar",
+  "privacyDownloadDataRateLimited": "Puedes descargar tus datos una vez cada 24 horas. Usa el enlace que te enviamos por correo o inténtalo de nuevo mañana.",
+  "privacyDownloadDataInProgress": "Ya estamos preparando tus datos. Espera unos minutos.",
+  "privacyDownloadDataFailed": "No pudimos preparar tus datos. Inténtalo de nuevo más tarde.",
+  "reauthPasswordBody": "Por tu seguridad, vuelve a introducir tu contraseña para continuar.",
+  "reauthContinue": "Continuar",
+  "reauthSignInAgain": "Por tu seguridad, cierra sesión, vuelve a iniciarla e inténtalo de nuevo."
 }

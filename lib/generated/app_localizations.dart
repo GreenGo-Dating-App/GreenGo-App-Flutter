@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11776,10 +11776,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28892,22 +28889,14 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -29010,6 +28999,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Billing and withdrawal'**
   String get webBillingTitle;
+
+  /// No description provided for @privacyDownloadDataTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Download my data'**
+  String get privacyDownloadDataTitle;
+
+  /// No description provided for @privacyDownloadDataSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A copy of your profile, settings, photos and the messages you sent (ZIP file)'**
+  String get privacyDownloadDataSubtitle;
+
+  /// No description provided for @privacyDownloadDataConfirmBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We will prepare a ZIP file with the data we hold about you. To protect other people, messages they sent you are not included. You will get a download link here and by email. The link works for 24 hours and you can ask for one copy per day.'**
+  String get privacyDownloadDataConfirmBody;
+
+  /// No description provided for @privacyDownloadDataConfirmButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Prepare my data'**
+  String get privacyDownloadDataConfirmButton;
+
+  /// No description provided for @privacyDownloadDataPreparing.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing your data. This can take a few minutes...'**
+  String get privacyDownloadDataPreparing;
+
+  /// No description provided for @privacyDownloadDataReadyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your data is ready'**
+  String get privacyDownloadDataReadyTitle;
+
+  /// No description provided for @privacyDownloadDataReadyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Download the ZIP file now. The link works for 24 hours.'**
+  String get privacyDownloadDataReadyBody;
+
+  /// No description provided for @privacyDownloadDataReadyEmailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We also sent the link to your email address.'**
+  String get privacyDownloadDataReadyEmailed;
+
+  /// No description provided for @privacyDownloadDataOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Download'**
+  String get privacyDownloadDataOpen;
+
+  /// No description provided for @privacyDownloadDataRateLimited.
+  ///
+  /// In en, this message translates to:
+  /// **'You can download your data once every 24 hours. Use the link we emailed you, or try again tomorrow.'**
+  String get privacyDownloadDataRateLimited;
+
+  /// No description provided for @privacyDownloadDataInProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Your data is already being prepared. Please wait a few minutes.'**
+  String get privacyDownloadDataInProgress;
+
+  /// No description provided for @privacyDownloadDataFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'We could not prepare your data. Please try again later.'**
+  String get privacyDownloadDataFailed;
+
+  /// No description provided for @reauthPasswordBody.
+  ///
+  /// In en, this message translates to:
+  /// **'For your security, enter your password again to continue.'**
+  String get reauthPasswordBody;
+
+  /// No description provided for @reauthContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get reauthContinue;
+
+  /// No description provided for @reauthSignInAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'For your security, please sign out and sign in again, then try once more.'**
+  String get reauthSignInAgain;
 }
 
 class _AppLocalizationsDelegate
@@ -29023,13 +29102,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'de',
-    'en',
-    'es',
-    'fr',
-    'it',
-    'pt',
-  ].contains(locale.languageCode);
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -29065,9 +29144,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

@@ -5418,5 +5418,20 @@
   "ageAssuranceStoreUnavailable": "Dein Store-Konto konnte dein Alter nicht bestätigen. Bitte bestätige es stattdessen mit einem Ausweisdokument.",
   "ageAssuranceVerified": "Danke, dein Alter ist bestätigt.",
   "ageAssuranceWebNote": "Im Web wird dein Alter mit einem Ausweisdokument bestätigt.",
-  "ageVerifyWhyRegional": "Um an deinem Wohnort Menschen zu entdecken und neue private Chats zu beginnen, müssen wir bestätigen, dass du über 18 bist."
+  "ageVerifyWhyRegional": "Um an deinem Wohnort Menschen zu entdecken und neue private Chats zu beginnen, müssen wir bestätigen, dass du über 18 bist.",
+  "privacyDownloadDataTitle": "Meine Daten herunterladen",
+  "privacyDownloadDataSubtitle": "Eine Kopie deines Profils, deiner Einstellungen, Fotos und der Nachrichten, die du gesendet hast (ZIP-Datei)",
+  "privacyDownloadDataConfirmBody": "Wir erstellen eine ZIP-Datei mit den Daten, die wir über dich speichern. Zum Schutz anderer Personen sind Nachrichten, die sie dir geschickt haben, nicht enthalten. Du erhältst hier und per E-Mail einen Download-Link. Der Link ist 24 Stunden gültig, und du kannst eine Kopie pro Tag anfordern.",
+  "privacyDownloadDataConfirmButton": "Meine Daten vorbereiten",
+  "privacyDownloadDataPreparing": "Deine Daten werden vorbereitet. Das kann einige Minuten dauern...",
+  "privacyDownloadDataReadyTitle": "Deine Daten sind bereit",
+  "privacyDownloadDataReadyBody": "Lade die ZIP-Datei jetzt herunter. Der Link ist 24 Stunden gültig.",
+  "privacyDownloadDataReadyEmailed": "Wir haben dir den Link auch per E-Mail geschickt.",
+  "privacyDownloadDataOpen": "Herunterladen",
+  "privacyDownloadDataRateLimited": "Du kannst deine Daten einmal alle 24 Stunden herunterladen. Nutze den Link aus unserer E-Mail oder versuche es morgen erneut.",
+  "privacyDownloadDataInProgress": "Deine Daten werden bereits vorbereitet. Bitte warte einige Minuten.",
+  "privacyDownloadDataFailed": "Wir konnten deine Daten nicht vorbereiten. Bitte versuche es später erneut.",
+  "reauthPasswordBody": "Gib zu deiner Sicherheit dein Passwort erneut ein, um fortzufahren.",
+  "reauthContinue": "Weiter",
+  "reauthSignInAgain": "Melde dich zu deiner Sicherheit ab und wieder an und versuche es dann erneut."
 }
