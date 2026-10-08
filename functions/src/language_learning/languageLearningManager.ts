@@ -496,7 +496,7 @@ const weeklyThemes = [
 /**
  * Submit teacher application
  */
-export const submitTeacherApplication = functions.https.onCall(
+export const submitTeacherApplication = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("submitTeacherApplication", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -580,7 +580,7 @@ export const submitTeacherApplication = functions.https.onCall(
 /**
  * Admin: Review teacher application
  */
-export const reviewTeacherApplication = functions.https.onCall(
+export const reviewTeacherApplication = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("reviewTeacherApplication", async (data, context) => {
     // Verify admin
     if (!context.auth) {
@@ -679,7 +679,7 @@ export const reviewTeacherApplication = functions.https.onCall(
 /**
  * Teacher: Create a new lesson
  */
-export const createLesson = functions.https.onCall(monitored("createLesson", async (data, context) => {
+export const createLesson = functions.runWith({ memory: '512MB' }).https.onCall(monitored("createLesson", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
   }
@@ -761,7 +761,7 @@ export const createLesson = functions.https.onCall(monitored("createLesson", asy
 /**
  * Teacher: Publish a lesson
  */
-export const publishLesson = functions.https.onCall(monitored("publishLesson", async (data, context) => {
+export const publishLesson = functions.runWith({ memory: '512MB' }).https.onCall(monitored("publishLesson", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
   }
@@ -820,7 +820,7 @@ export const publishLesson = functions.https.onCall(monitored("publishLesson", a
 /**
  * Purchase a lesson with coins
  */
-export const purchaseLesson = functions.https.onCall(monitored("purchaseLesson", async (data, context) => {
+export const purchaseLesson = functions.runWith({ memory: '512MB' }).https.onCall(monitored("purchaseLesson", async (data, context) => {
   if (!context.auth) {
     throw new functions.https.HttpsError("unauthenticated", "Must be logged in");
   }
@@ -966,7 +966,7 @@ export const purchaseLesson = functions.https.onCall(monitored("purchaseLesson",
 /**
  * Update lesson progress
  */
-export const updateLessonProgress = functions.https.onCall(
+export const updateLessonProgress = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("updateLessonProgress", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -1109,7 +1109,7 @@ export const updateLessonProgress = functions.https.onCall(
 /**
  * Admin: Get learning analytics
  */
-export const getLearningAnalytics = functions.https.onCall(
+export const getLearningAnalytics = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("getLearningAnalytics", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -1230,7 +1230,7 @@ export const getLearningAnalytics = functions.https.onCall(
 /**
  * Admin: Get user progress report
  */
-export const getUserProgressReport = functions.https.onCall(
+export const getUserProgressReport = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("getUserProgressReport", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -1309,7 +1309,7 @@ export const getUserProgressReport = functions.https.onCall(
 /**
  * Admin: Get teacher analytics
  */
-export const getTeacherAnalytics = functions.https.onCall(
+export const getTeacherAnalytics = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("getTeacherAnalytics", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -1412,7 +1412,7 @@ export const getTeacherAnalytics = functions.https.onCall(
 /**
  * Admin: Get all lessons with filtering
  */
-export const getAdminLessons = functions.https.onCall(
+export const getAdminLessons = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("getAdminLessons", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -1490,7 +1490,7 @@ export const getAdminLessons = functions.https.onCall(
  * Admin: Seed lessons for supported languages (es, en, pt, pt-BR, it)
  * Creates 52 weeks (1 year) of lessons for each language
  */
-export const seedLessons = functions.https.onCall(
+export const seedLessons = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("seedLessons", async (data, context) => {
     // Check if running in emulator mode - allow bypass for local development
     const isEmulator = process.env.FUNCTIONS_EMULATOR === "true";
@@ -1690,7 +1690,7 @@ export const seedLessons = functions.https.onCall(
 /**
  * Admin: Delete lesson
  */
-export const deleteLesson = functions.https.onCall(
+export const deleteLesson = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("deleteLesson", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -1719,7 +1719,7 @@ export const deleteLesson = functions.https.onCall(
 /**
  * Admin: Update lesson
  */
-export const updateLesson = functions.https.onCall(
+export const updateLesson = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("updateLesson", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(
@@ -1754,7 +1754,7 @@ export const updateLesson = functions.https.onCall(
 /**
  * Admin: Get lesson stats by language
  */
-export const getLessonStats = functions.https.onCall(
+export const getLessonStats = functions.runWith({ memory: '512MB' }).https.onCall(
   monitored("getLessonStats", async (data, context) => {
     if (!context.auth) {
       throw new functions.https.HttpsError(

@@ -298,7 +298,7 @@ export const triggerPoolRecompute = onCall(
  */
 export const getCandidatePoolStats = onCall(
   {
-    memory: '256MiB',
+    memory: '512MiB',
     timeoutSeconds: 30,
   },
   monitored("getCandidatePoolStats", async (request) => {

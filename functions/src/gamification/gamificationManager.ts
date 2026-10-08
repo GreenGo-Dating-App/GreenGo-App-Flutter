@@ -459,7 +459,9 @@ export const resetDailyChallenges = functions
  * Update Leaderboard Rankings
  * Point 191, 192: Leaderboard with seasonal resets
  */
-export const updateLeaderboardRankings = functions.pubsub
+export const updateLeaderboardRankings = functions
+  .runWith({ memory: '512MB' })
+  .pubsub
   .schedule('0 * * * *') // Every hour
   .onRun(monitored("updateLeaderboardRankings", async (context) => {
     try {

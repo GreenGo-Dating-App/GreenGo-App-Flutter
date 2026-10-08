@@ -149,6 +149,10 @@ export { onCommunityCreatedSearchKeywords } from './communities/searchKeywords';
 // relies on the onMessageCreatedVocabulary trigger). NOTE: `getDisplayPrices` is
 // prod-only (no source) — keep deploying by name until it is rebuilt in source.
 export { refreshMyStats, onMessageCreatedVocabulary } from './gamification';
+// P1-9: computeDailyUserStats was exported ONLY by the web repo (live source is
+// byte-identical to this gamification/index.ts). The app repo is now its single
+// source of truth; the web repo no longer exports it.
+export { computeDailyUserStats } from './gamification';
 
 // Account deletion cascade — on profiles/{uid} delete, fix stale counts, purge
 // orphaned memberships/attendees/followers, delete the Auth user + Storage.

@@ -8,7 +8,6 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { verifyAuth, handleError, logInfo, logError, db, AppError } from '../shared/utils';
 import * as admin from 'firebase-admin';
-import { CoinSource } from '../shared/types';
 import {
   verifyGooglePlayPurchase,
   verifyAppStorePurchase,
@@ -226,16 +225,6 @@ async function grantVerifiedCoinPurchase(params: {
   };
 }
 
-// Rewards
-const REWARDS = {
-  first_match: 50,
-  complete_profile: 100,
-  daily_login: 10,
-  week_streak: 50,
-  month_streak: 200,
-  photo_verification: 75,
-  refer_friend: 100,
-};
 
 // ========== 1. VERIFY GOOGLE PLAY COIN PURCHASE (HTTP Callable) ==========
 
@@ -392,99 +381,10 @@ export const verifyAppStoreCoinPurchase = onCall<VerifyPurchaseRequest>(
 // Moved to ./monthlyAllowance.ts (grantMonthlyCoinAllowances).
 
 // ========== 6. CLAIM REWARD (HTTP Callable) ==========
-
-interface ClaimRewardRequest {
-  rewardType: keyof typeof REWARDS;
-  metadata?: any;
-}
-
-export const claimReward = onCall<ClaimRewardRequest>(
-  {
-    memory: '512MiB',
-    timeoutSeconds: 60,
-  },
-  async (request) => {
-    try {
-      const uid = await verifyAuth(request.auth);
-      const { rewardType, metadata } = request.data;
-
-      if (!rewardType || !REWARDS[rewardType]) {
-        throw new HttpsError('invalid-argument', 'Invalid reward type');
-      }
-
-      logInfo(`User ${uid} claiming reward: ${rewardType}`);
-
-      const rewardCoins = REWARDS[rewardType];
-
-      // Check if reward already claimed (for one-time rewards)
-      const oneTimeRewards = ['first_match', 'complete_profile', 'photo_verification'];
-      if (oneTimeRewards.includes(rewardType)) {
-        const existingClaim = await db
-          .collection('coin_transactions')
-          .where('userId', '==', uid)
-          .where('source', '==', CoinSource.EARNED)
-          .where('description', '==', `Reward: ${rewardType}`)
-          .limit(1)
-          .get();
-
-        if (!existingClaim.empty) {
-          throw new HttpsError('already-exists', 'Reward already claimed');
-        }
-      }
-
-      const balanceRef = db.collection('coin_balances').doc(uid);
-      const balanceDoc = await balanceRef.get();
-      const currentBalance = balanceDoc.data()?.totalCoins || 0;
-
-      const batchId = `reward_${rewardType}_${Date.now()}`;
-
-      await db.runTransaction(async (transaction) => {
-        const balanceSnapshot = await transaction.get(balanceRef);
-        const batches = balanceSnapshot.data()?.batches || [];
-
-        batches.push({
-          id: batchId,
-          amount: rewardCoins,
-          source: CoinSource.EARNED,
-          remainingAmount: rewardCoins,
-          createdAt: admin.firestore.FieldValue.serverTimestamp(),
-        });
-
-        transaction.set(
-          balanceRef,
-          {
-            totalCoins: admin.firestore.FieldValue.increment(rewardCoins),
-            batches,
-            lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
-          },
-          { merge: true }
-        );
-
-        const transactionRef = db.collection('coin_transactions').doc();
-        transaction.set(transactionRef, {
-          userId: uid,
-          amount: rewardCoins,
-          type: 'credit',
-          source: CoinSource.EARNED,
-          description: `Reward: ${rewardType}`,
-          batchId,
-          metadata,
-          timestamp: admin.firestore.FieldValue.serverTimestamp(),
-          balanceAfter: currentBalance + rewardCoins,
-        });
-      });
-
-      return {
-        success: true,
-        coinsEarned: rewardCoins,
-        newBalance: currentBalance + rewardCoins,
-        rewardType,
-      };
-    } catch (error) {
-      throw handleError(error);
-    }
-  }
-);
+// Moved to ./claimReward.ts (P1-9): 1st-gen so it replaces the live gen1
+// function in place, writes camelCase coinBalances/coinTransactions, verifies
+// eligibility server-side and dedups transactionally in reward_claims.
+export { claimReward } from './claimReward';
 
 interface GiftCoinsRequest {
   receiverId: string;
