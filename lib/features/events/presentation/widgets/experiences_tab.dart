@@ -79,6 +79,18 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     for (final e in page) {
       if (_shownIds.add(e.id)) _items.add(e);
     }
+    _fillViewportSoon();
+  }
+
+  /// More pages load on scroll — but a list too short to scroll (distance
+  /// mode returns one geohash ring per page, and the nearest ring can hold a
+  /// single item) never fires a scroll event, so it would stop at that page.
+  /// After each layout, run the same near-the-end check as a scroll would;
+  /// it keeps loading until the list is scrollable or the feed is exhausted.
+  void _fillViewportSoon() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _onScroll();
+    });
   }
 
   /// Swap the visible list for [page] in one frame (no blank in between).
@@ -134,7 +146,7 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     final c = _gridScroll.hasClients
         ? _gridScroll
         : (_listScroll.hasClients ? _listScroll : null);
-    if (c == null || _loadingMore) return;
+    if (c == null || _loadingMore || !c.position.hasContentDimensions) return;
     if (c.position.maxScrollExtent - c.position.pixels < 400) {
       _loadMore();
     }
@@ -225,15 +237,19 @@ class _ExperiencesTabState extends State<ExperiencesTab>
     }
   }
 
-  /// Pages a call may come back with nothing (its read budget went on items
-  /// the picture / date filters dropped) while more exist; read on, bounded,
-  /// so the list never sits empty or stops growing at such a page.
-  static const int _maxEmptyPages = 3;
+  /// A pager call may come back with nothing (its read budget went on items
+  /// the picture / date filters dropped) or with very little (distance mode:
+  /// one geohash ring per call, possibly a single item) while more exist;
+  /// read on, bounded, until a page holds at least [_minPage] items.
+  static const int _maxExtraReads = 3;
+  static const int _minPage = 12;
 
   Future<List<ExternalEvent>> _nextFilled(ExternalEventsPager pager) async {
-    var page = await pager.next();
-    for (var i = 0; page.isEmpty && pager.hasMore && i < _maxEmptyPages; i++) {
-      page = await pager.next();
+    final page = [...await pager.next()];
+    for (var i = 0;
+        page.length < _minPage && pager.hasMore && i < _maxExtraReads;
+        i++) {
+      page.addAll(await pager.next());
     }
     return page;
   }
