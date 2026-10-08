@@ -9,6 +9,7 @@ import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/services/translation_service.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/message.dart';
+import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 
 /// Message Language Actions Widget
@@ -213,32 +214,43 @@ class _MessageLanguageActionsState extends State<MessageLanguageActions> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Action buttons row
-          Wrap(
-            spacing: 6,
-            runSpacing: 4,
-            children: [
-              _buildActionPill(
-                icon: _isTranslating ? null : Icons.translate,
-                label: _isTranslating
-                    ? AppLocalizations.of(context)!.chatTranslating
-                    : (_translatedText != null ? AppLocalizations.of(context)!.chatTranslated : AppLocalizations.of(context)!.chatTranslate),
-                onTap: _translatedText != null ? null : _translateMessage,
-                isLoading: _isTranslating,
-                isCompleted: _translatedText != null,
-              ),
-              _buildActionPill(
-                icon: _isSavingFlashcard ? null : Icons.school_outlined,
-                label: _isSavingFlashcard ? AppLocalizations.of(context)!.chatSaving : AppLocalizations.of(context)!.chatLearnThis,
-                onTap: _saveAsFlashcard,
-                isLoading: _isSavingFlashcard,
-              ),
-              _buildActionPill(
-                icon: Icons.volume_up_outlined,
-                label: AppLocalizations.of(context)!.chatListen,
-                onTap: _listenToPronunciation,
-              ),
-            ],
+          // Action buttons row. Translate and Listen send the text to Google
+          // AI services: hidden while the user has them turned off
+          // (Profile > Account settings > AI services).
+          ValueListenableBuilder<AiConsentStatus>(
+            valueListenable: AiConsentService.instance.statusListenable,
+            builder: (context, _, __) {
+              final aiOff =
+                  AiConsentService.instance.status == AiConsentStatus.declined;
+              return Wrap(
+                spacing: 6,
+                runSpacing: 4,
+                children: [
+                  if (!aiOff)
+                    _buildActionPill(
+                      icon: _isTranslating ? null : Icons.translate,
+                      label: _isTranslating
+                          ? AppLocalizations.of(context)!.chatTranslating
+                          : (_translatedText != null ? AppLocalizations.of(context)!.chatTranslated : AppLocalizations.of(context)!.chatTranslate),
+                      onTap: _translatedText != null ? null : _translateMessage,
+                      isLoading: _isTranslating,
+                      isCompleted: _translatedText != null,
+                    ),
+                  _buildActionPill(
+                    icon: _isSavingFlashcard ? null : Icons.school_outlined,
+                    label: _isSavingFlashcard ? AppLocalizations.of(context)!.chatSaving : AppLocalizations.of(context)!.chatLearnThis,
+                    onTap: _saveAsFlashcard,
+                    isLoading: _isSavingFlashcard,
+                  ),
+                  if (!aiOff)
+                    _buildActionPill(
+                      icon: Icons.volume_up_outlined,
+                      label: AppLocalizations.of(context)!.chatListen,
+                      onTap: _listenToPronunciation,
+                    ),
+                ],
+              );
+            },
           ),
 
           // Show translation result inline

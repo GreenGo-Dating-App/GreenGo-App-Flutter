@@ -226,7 +226,9 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   void _onAiConsentChanged() {
-    if (!mounted || !AiConsentService.instance.isGranted) return;
+    // Granted: bubbles re-translate. Turned off (Account settings > AI
+    // services): drop the translations so the originals show again.
+    if (!mounted) return;
     setState(() {
       _translationFutures.clear();
       _translatedMessages.clear();

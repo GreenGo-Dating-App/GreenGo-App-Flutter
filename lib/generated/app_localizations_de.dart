@@ -6611,10 +6611,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return '$tierName-Mitgliedschaft aktiv bis $formattedDate$coinsText';
   }
 
@@ -16626,21 +16623,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price pro $interval. Verlängert sich automatisch am $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price pro $interval. Gekündigt; Zugang endet am $date.';
   }
 
@@ -16664,4 +16653,49 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get webBillingTitle => 'Abrechnung und Widerruf';
+
+  @override
+  String get aiServicesTitle => 'KI-Dienste';
+
+  @override
+  String get aiServicesSubtitleOn =>
+      'An: KI-Funktionen dürfen den Text, für den du sie nutzt, an Google senden.';
+
+  @override
+  String get aiServicesSubtitleOff =>
+      'Aus: Es wird kein Text an KI-Dienste gesendet.';
+
+  @override
+  String get aiServicesWhatsIncluded => 'Was dieser Schalter umfasst';
+
+  @override
+  String get aiServicesFeatureCoach =>
+      'Antwortvorschläge und der KI-Sprachcoach (Grammatik, Wortanalyse, kulturelle Hinweise)';
+
+  @override
+  String get aiServicesFeatureTranslate =>
+      'Übersetzen von Chatnachrichten, die du erhältst';
+
+  @override
+  String get aiServicesFeatureReadAloud => 'Vorlese-Audio und Aussprache';
+
+  @override
+  String get aiServicesFeatureSupport =>
+      'Automatische Antworten des Support-Assistenten (wenn aus, antwortet dir ein Mensch)';
+
+  @override
+  String get aiServicesSafetyNote =>
+      'Die Sicherheitsprüfung von Fotos und Nachrichten bleibt immer aktiv: Sie schützt alle und kann nicht deaktiviert werden.';
+
+  @override
+  String get aiServicesTurnedOff =>
+      'KI-Dienste deaktiviert. Deine Entscheidung wurde gespeichert.';
+
+  @override
+  String get aiServicesTurnedOn =>
+      'KI-Dienste aktiviert. Deine Entscheidung wurde gespeichert.';
+
+  @override
+  String get aiServicesSyncPending =>
+      'Auf diesem Gerät gespeichert. Sobald du online bist, wird es auf unseren Servern erfasst.';
 }

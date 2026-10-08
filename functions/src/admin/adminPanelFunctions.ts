@@ -19,6 +19,7 @@ import { requireAdmin, adminRoleFromDoc, AdminRole, SUPER_ADMIN_ONLY, SUPPORT_RO
 import { setAdmin2faClaim } from './adminClaims';
 import { scrubPII, redact } from '../shared/redact';
 import { applyProfileAgeGate } from '../auth/ageGate';
+import { hasWithdrawnAiConsent } from '../shared/aiConsent';
 
 const db = admin.firestore();
 const auth = admin.auth();
@@ -619,6 +620,17 @@ export const processAISupportMessage = functions
       const ownerUid: string | undefined = conversation?.userId;
       if (!ownerUid || (message.senderId && message.senderId !== ownerUid)) {
         console.log('Support message not from the chat owner; no AI reply');
+        return null;
+      }
+      // The owner turned "AI services" OFF (consents/{uid}.ai_processing
+      // withdrawn): no AI reply, the chat stays with human agents.
+      if (await hasWithdrawnAiConsent(ownerUid)) {
+        console.log('Owner turned AI services off; leaving for human agents');
+        await db.collection('ai_support_logs').add({
+          conversationId,
+          status: 'ai_consent_withdrawn',
+          timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        });
         return null;
       }
       if (!(await reserveAISupportReply(ownerUid))) {

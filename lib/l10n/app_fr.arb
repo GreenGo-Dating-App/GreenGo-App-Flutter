@@ -4826,5 +4826,17 @@
   "cancelAnytimeBillingPortal": "Résiliez à tout moment dans le portail de facturation",
   "billingPortalOpenFailed": "Impossible d'ouvrir le portail de facturation. Veuillez réessayer.",
   "subscriptionAutoRenewInfoWeb": "Les abonnements se renouvellent automatiquement au prix et à la périodicité indiqués jusqu'à résiliation. Résiliez à tout moment dans le portail de facturation.",
-  "webBillingTitle": "Facturation et rétractation"
+  "webBillingTitle": "Facturation et rétractation",
+  "aiServicesTitle": "Services d'IA",
+  "aiServicesSubtitleOn": "Activé : les fonctions d'IA peuvent envoyer à Google le texte sur lequel vous les utilisez.",
+  "aiServicesSubtitleOff": "Désactivé : aucun texte n'est envoyé à des services d'IA.",
+  "aiServicesWhatsIncluded": "Ce que couvre cet interrupteur",
+  "aiServicesFeatureCoach": "Réponses suggérées et le coach linguistique IA (grammaire, décomposition des mots, conseils culturels)",
+  "aiServicesFeatureTranslate": "Traduction des messages de chat que vous recevez",
+  "aiServicesFeatureReadAloud": "Lecture audio à voix haute et prononciation",
+  "aiServicesFeatureSupport": "Réponses automatiques de l'assistant d'assistance (si désactivé, une personne vous répond)",
+  "aiServicesSafetyNote": "Le contrôle de sécurité des photos et des messages reste toujours actif : il protège tout le monde et ne peut pas être désactivé.",
+  "aiServicesTurnedOff": "Services d'IA désactivés. Votre choix a été enregistré.",
+  "aiServicesTurnedOn": "Services d'IA activés. Votre choix a été enregistré.",
+  "aiServicesSyncPending": "Enregistré sur cet appareil. Ce sera enregistré sur nos serveurs dès que vous serez en ligne."
 }

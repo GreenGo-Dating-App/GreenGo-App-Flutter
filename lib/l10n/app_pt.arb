@@ -5407,5 +5407,17 @@
   "cancelAnytimeBillingPortal": "Cancele a qualquer momento no portal de faturação",
   "billingPortalOpenFailed": "Não foi possível abrir o portal de faturação. Tente novamente.",
   "subscriptionAutoRenewInfoWeb": "As subscrições renovam-se automaticamente ao preço e com a periodicidade indicados até as cancelar. Cancele a qualquer momento no portal de faturação.",
-  "webBillingTitle": "Faturação e desistência"
+  "webBillingTitle": "Faturação e desistência",
+  "aiServicesTitle": "Serviços de IA",
+  "aiServicesSubtitleOn": "Ativado: as funcionalidades de IA podem enviar à Google o texto em que as usa.",
+  "aiServicesSubtitleOff": "Desativado: nenhum texto é enviado para serviços de IA.",
+  "aiServicesWhatsIncluded": "O que este interruptor abrange",
+  "aiServicesFeatureCoach": "Respostas sugeridas e o treinador de línguas com IA (gramática, análise de palavras, dicas culturais)",
+  "aiServicesFeatureTranslate": "Traduzir as mensagens de chat que recebe",
+  "aiServicesFeatureReadAloud": "Leitura em voz alta e pronúncia",
+  "aiServicesFeatureSupport": "Respostas automáticas do assistente de apoio (se desativado, responde-lhe uma pessoa)",
+  "aiServicesSafetyNote": "A verificação de segurança de fotos e mensagens está sempre ativa: protege todos e não pode ser desativada.",
+  "aiServicesTurnedOff": "Serviços de IA desativados. A sua escolha foi registada.",
+  "aiServicesTurnedOn": "Serviços de IA ativados. A sua escolha foi registada.",
+  "aiServicesSyncPending": "Guardado neste dispositivo. Será registado nos nossos servidores assim que estiver online."
 }

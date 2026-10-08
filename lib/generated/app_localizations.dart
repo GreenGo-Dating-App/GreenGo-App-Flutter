@@ -67,7 +67,7 @@ import 'app_localizations_pt.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -90,11 +90,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -104,7 +104,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('it'),
     Locale('pt'),
-    Locale('pt', 'BR'),
+    Locale('pt', 'BR')
   ];
 
   /// No description provided for @culturalPassportTitle.
@@ -11776,10 +11776,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{tierName} membership active until {formattedDate}{coinsText}'**
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  );
+      String tierName, String formattedDate, String coinsText);
 
   /// No description provided for @membershipActivatedTitle.
   ///
@@ -28892,22 +28889,14 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Renews automatically on {date}.'**
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// Web (Stripe) subscription cancelled at period end
   ///
   /// In en, this message translates to:
   /// **'{plan}: {price} per {interval}. Cancelled; access ends on {date}.'**
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  );
+      String plan, String price, String interval, String date);
 
   /// No description provided for @billingIntervalMonth.
   ///
@@ -28944,6 +28933,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Billing and withdrawal'**
   String get webBillingTitle;
+
+  /// Account settings: title of the master switch for AI features
+  ///
+  /// In en, this message translates to:
+  /// **'AI services'**
+  String get aiServicesTitle;
+
+  /// AI services switch subtitle when ON
+  ///
+  /// In en, this message translates to:
+  /// **'On: AI features may send the text you use them on to Google.'**
+  String get aiServicesSubtitleOn;
+
+  /// AI services switch subtitle when OFF
+  ///
+  /// In en, this message translates to:
+  /// **'Off: no text is sent to AI services.'**
+  String get aiServicesSubtitleOff;
+
+  /// Expandable list header: features controlled by the AI services switch
+  ///
+  /// In en, this message translates to:
+  /// **'What this switch covers'**
+  String get aiServicesWhatsIncluded;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Smart replies and the AI language coach (grammar, word breakdown, cultural tips)'**
+  String get aiServicesFeatureCoach;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Translating chat messages you receive'**
+  String get aiServicesFeatureTranslate;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Read-aloud audio and pronunciation'**
+  String get aiServicesFeatureReadAloud;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic replies from the support assistant (when off, a person answers you)'**
+  String get aiServicesFeatureSupport;
+
+  /// AI services switch: moderation is not optional
+  ///
+  /// In en, this message translates to:
+  /// **'Safety screening of photos and messages always stays on: it protects everyone and cannot be turned off.'**
+  String get aiServicesSafetyNote;
+
+  /// Snackbar after turning AI services off
+  ///
+  /// In en, this message translates to:
+  /// **'AI services turned off. Your choice has been recorded.'**
+  String get aiServicesTurnedOff;
+
+  /// Snackbar after turning AI services on
+  ///
+  /// In en, this message translates to:
+  /// **'AI services turned on. Your choice has been recorded.'**
+  String get aiServicesTurnedOn;
+
+  /// Snackbar when the choice could not reach the server yet
+  ///
+  /// In en, this message translates to:
+  /// **'Saved on this device. It will be recorded on our servers as soon as you are online.'**
+  String get aiServicesSyncPending;
 }
 
 class _AppLocalizationsDelegate
@@ -28957,13 +29018,13 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'de',
-    'en',
-    'es',
-    'fr',
-    'it',
-    'pt',
-  ].contains(locale.languageCode);
+        'de',
+        'en',
+        'es',
+        'fr',
+        'it',
+        'pt'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -28999,9 +29060,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

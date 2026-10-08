@@ -6605,10 +6605,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Abbonamento $tierName attivo fino al $formattedDate$coinsText';
   }
 
@@ -16593,21 +16590,13 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price ogni $interval. Si rinnova automaticamente il $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price ogni $interval. Annullato; accesso fino al $date.';
   }
 
@@ -16631,4 +16620,49 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get webBillingTitle => 'Fatturazione e recesso';
+
+  @override
+  String get aiServicesTitle => 'Servizi IA';
+
+  @override
+  String get aiServicesSubtitleOn =>
+      'Attivo: le funzioni IA possono inviare a Google il testo su cui le usi.';
+
+  @override
+  String get aiServicesSubtitleOff =>
+      'Disattivo: nessun testo viene inviato ai servizi IA.';
+
+  @override
+  String get aiServicesWhatsIncluded => 'Cosa include questo interruttore';
+
+  @override
+  String get aiServicesFeatureCoach =>
+      'Risposte suggerite e il coach linguistico IA (grammatica, analisi delle parole, note culturali)';
+
+  @override
+  String get aiServicesFeatureTranslate =>
+      'Traduzione dei messaggi di chat che ricevi';
+
+  @override
+  String get aiServicesFeatureReadAloud => 'Lettura ad alta voce e pronuncia';
+
+  @override
+  String get aiServicesFeatureSupport =>
+      'Risposte automatiche dell\'assistente di supporto (se disattivo, ti risponde una persona)';
+
+  @override
+  String get aiServicesSafetyNote =>
+      'Il controllo di sicurezza di foto e messaggi resta sempre attivo: protegge tutti e non può essere disattivato.';
+
+  @override
+  String get aiServicesTurnedOff =>
+      'Servizi IA disattivati. La tua scelta è stata registrata.';
+
+  @override
+  String get aiServicesTurnedOn =>
+      'Servizi IA attivati. La tua scelta è stata registrata.';
+
+  @override
+  String get aiServicesSyncPending =>
+      'Salvato su questo dispositivo. Verrà registrato sui nostri server appena sarai online.';
 }

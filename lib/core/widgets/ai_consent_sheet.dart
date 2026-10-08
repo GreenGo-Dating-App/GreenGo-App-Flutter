@@ -8,8 +8,11 @@ import '../services/ai_consent_service.dart';
 /// text to Google AI services (smart replies, AI coach, translating messages
 /// from other people, read-aloud). Returns true (allow), false (decline) or
 /// null (dismissed without choosing: asked again later). The decision is
-/// stored through [AiConsentService].
-Future<bool?> showAiConsentSheet(BuildContext context, {AiConsentService? service}) async {
+/// stored through [AiConsentService]. With [recordDecline] false a "Decline"
+/// is returned but not recorded (the settings switch uses this: turning AI
+/// services ON and then backing out changes nothing).
+Future<bool?> showAiConsentSheet(BuildContext context,
+    {AiConsentService? service, bool recordDecline = true}) async {
   final svc = service ?? AiConsentService.instance;
   final decision = await showModalBottomSheet<bool>(
     context: context,
@@ -20,7 +23,9 @@ Future<bool?> showAiConsentSheet(BuildContext context, {AiConsentService? servic
     ),
     builder: (ctx) => const _AiConsentSheetBody(),
   );
-  if (decision != null) await svc.setDecision(accepted: decision);
+  if (decision == true || (decision == false && recordDecline)) {
+    await svc.setDecision(accepted: decision!);
+  }
   return decision;
 }
 

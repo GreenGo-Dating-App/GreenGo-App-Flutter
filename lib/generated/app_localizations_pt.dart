@@ -6587,10 +6587,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16575,21 +16572,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renova-se automaticamente a $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina a $date.';
   }
 
@@ -16613,6 +16602,51 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get webBillingTitle => 'Faturação e desistência';
+
+  @override
+  String get aiServicesTitle => 'Serviços de IA';
+
+  @override
+  String get aiServicesSubtitleOn =>
+      'Ativado: as funcionalidades de IA podem enviar à Google o texto em que as usa.';
+
+  @override
+  String get aiServicesSubtitleOff =>
+      'Desativado: nenhum texto é enviado para serviços de IA.';
+
+  @override
+  String get aiServicesWhatsIncluded => 'O que este interruptor abrange';
+
+  @override
+  String get aiServicesFeatureCoach =>
+      'Respostas sugeridas e o treinador de línguas com IA (gramática, análise de palavras, dicas culturais)';
+
+  @override
+  String get aiServicesFeatureTranslate =>
+      'Traduzir as mensagens de chat que recebe';
+
+  @override
+  String get aiServicesFeatureReadAloud => 'Leitura em voz alta e pronúncia';
+
+  @override
+  String get aiServicesFeatureSupport =>
+      'Respostas automáticas do assistente de apoio (se desativado, responde-lhe uma pessoa)';
+
+  @override
+  String get aiServicesSafetyNote =>
+      'A verificação de segurança de fotos e mensagens está sempre ativa: protege todos e não pode ser desativada.';
+
+  @override
+  String get aiServicesTurnedOff =>
+      'Serviços de IA desativados. A sua escolha foi registada.';
+
+  @override
+  String get aiServicesTurnedOn =>
+      'Serviços de IA ativados. A sua escolha foi registada.';
+
+  @override
+  String get aiServicesSyncPending =>
+      'Guardado neste dispositivo. Será registado nos nossos servidores assim que estiver online.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -23205,10 +23239,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -33189,21 +33220,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String webSubscriptionRenewsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Renovação automática em $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-    String plan,
-    String price,
-    String interval,
-    String date,
-  ) {
+      String plan, String price, String interval, String date) {
     return '$plan: $price por $interval. Cancelada; o acesso termina em $date.';
   }
 
@@ -33227,4 +33250,49 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get webBillingTitle => 'Cobrança e desistência';
+
+  @override
+  String get aiServicesTitle => 'Serviços de IA';
+
+  @override
+  String get aiServicesSubtitleOn =>
+      'Ativado: os recursos de IA podem enviar ao Google o texto em que você os usa.';
+
+  @override
+  String get aiServicesSubtitleOff =>
+      'Desativado: nenhum texto é enviado para serviços de IA.';
+
+  @override
+  String get aiServicesWhatsIncluded => 'O que esta chave abrange';
+
+  @override
+  String get aiServicesFeatureCoach =>
+      'Respostas sugeridas e o treinador de idiomas com IA (gramática, análise de palavras, dicas culturais)';
+
+  @override
+  String get aiServicesFeatureTranslate =>
+      'Traduzir as mensagens de chat que você recebe';
+
+  @override
+  String get aiServicesFeatureReadAloud => 'Leitura em voz alta e pronúncia';
+
+  @override
+  String get aiServicesFeatureSupport =>
+      'Respostas automáticas do assistente de suporte (se desativado, uma pessoa responde você)';
+
+  @override
+  String get aiServicesSafetyNote =>
+      'A verificação de segurança de fotos e mensagens fica sempre ativa: ela protege todos e não pode ser desativada.';
+
+  @override
+  String get aiServicesTurnedOff =>
+      'Serviços de IA desativados. Sua escolha foi registrada.';
+
+  @override
+  String get aiServicesTurnedOn =>
+      'Serviços de IA ativados. Sua escolha foi registrada.';
+
+  @override
+  String get aiServicesSyncPending =>
+      'Salvo neste dispositivo. Será registrado em nossos servidores assim que você estiver online.';
 }

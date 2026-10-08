@@ -18,6 +18,10 @@
  * reader in their own language. Delete the deployed copy with
  * `firebase functions:delete autoTranslateMessage`.
  *
+ * Both callables send private chat text to Google, so they require the
+ * caller's AI-processing consent (the "AI services" switch), like
+ * translatePrivateText.
+ *
  * 512MB: the shared index.js needs ~200MB just to load, so 256MB instances are
  * OOM-killed on cold start.
  */
@@ -25,6 +29,8 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { requireAiConsent } from '../shared/aiConsent';
+import { AppError, handleError } from '../shared/utils';
 import {
   freeTranslate,
   freeTranslateMany,
@@ -49,6 +55,7 @@ async function assertParticipant(conversationId: string, uid: string) {
 
 function toHttpsError(error: unknown): functions.https.HttpsError {
   if (error instanceof functions.https.HttpsError) return error;
+  if (error instanceof AppError) return handleError(error); // AI_CONSENT_REQUIRED
   if (error instanceof FreeTranslateError) {
     return new functions.https.HttpsError(
       error.transient ? 'unavailable' : 'internal',
@@ -81,6 +88,8 @@ export const translateMessage = functions
 
   try {
     await assertParticipant(conversationId, context.auth.uid);
+    // Private chat text goes to Google: only with AI services ON (consent).
+    await requireAiConsent(context.auth.uid);
 
     const messageDoc = await firestore
       .collection('conversations')
@@ -148,6 +157,8 @@ export const batchTranslateMessages = functions
 
   try {
     await assertParticipant(conversationId, context.auth.uid);
+    // Private chat text goes to Google: only with AI services ON (consent).
+    await requireAiConsent(context.auth.uid);
 
     const messagesSnapshot = await firestore
       .collection('conversations')

@@ -2438,6 +2438,17 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // Consent records (functions/src/ai/aiGateway.ts recordConsent). The owner
+    // may READ their own summary doc so the app shows the true state of the
+    // "AI services" switch across devices (and GDPR art. 15 access). Writes
+    // stay server-only (recordConsent keeps the timestamped history); the
+    // `events` history subcollection stays server-only (default deny below:
+    // rules do not cascade to subcollections).
+    match /consents/{uid} {
+      allow get: if isSignedIn() && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+
     // Rejected-image review queue. Admin-only: it indexes quarantined content.
     match /moderation_queue/{itemId} {
       allow read: if isAdminPanelUser() || isAdmin();
