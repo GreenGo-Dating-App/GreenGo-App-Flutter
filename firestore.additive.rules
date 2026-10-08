@@ -1,0 +1,2616 @@
+rules_version = '2';
+// ADDITIVE ruleset for the 4.6.0+190 rollout: everything the new web/app
+// client needs (ticket collections, ticket types, experience 'online'
+// payments, server-owned schedule fields) WITHOUT the paid-event tightening
+// that old apps would hit. Deploy firestore.rules (full) once 4.6.0+190 is
+// the minimum version.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ============================================================================
+    // HELPER FUNCTIONS
+    // ============================================================================
+
+    // Check if user is authenticated
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Check if user owns the resource
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Check if user is admin (legacy — checks users collection)
+    function isAdmin() {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Check if user is admin panel user (checks admin_users collection)
+    function isAdminPanelUser() {
+      return isSignedIn() &&
+             exists(/databases/$(database)/documents/admin_users/$(request.auth.uid));
+    }
+
+    // Only a superAdmin may change who is an admin. Membership of admin_users
+    // alone is not enough: a moderator could otherwise rewrite their own
+    // document to superAdmin and award themselves manageAdmins,
+    // impersonateUsers, deleteUsers and systemSettings.
+    function isSuperAdmin() {
+      return isAdminPanelUser() &&
+             get(/databases/$(database)/documents/admin_users/$(request.auth.uid))
+               .data.get('role', '') == 'superAdmin';
+    }
+
+    // Check if the acting user is a profile-level admin (profiles/{uid}.isAdmin).
+    // Used by the in-app admin tools (e.g. business-verification review) which
+    // gate on the Profile.isAdmin flag rather than the admin panel collections.
+    function isProfileAdmin() {
+      return isSignedIn() &&
+             get(/databases/$(database)/documents/profiles/$(request.auth.uid)).data.isAdmin == true;
+    }
+
+    // Conversation membership (C4): the two 1:1 participants, any group
+    // participant, or the assigned support agent. `c` is the conversation data.
+    function convMember(c) {
+      return isSignedIn() && (
+        request.auth.uid == c.get('userId1', '')
+        || request.auth.uid == c.get('userId2', '')
+        || (c.get('participants', []) is list
+            && request.auth.uid in c.get('participants', []))
+        || request.auth.uid == c.get('supportAgentId', '')
+      );
+    }
+    // Admins / support staff may read any conversation (moderation, support).
+    function convAdmin() {
+      return isAdmin() || isAdminPanelUser() || isProfileAdmin();
+    }
+
+    // ============================================================================
+    // USERS COLLECTION
+    // ============================================================================
+    match /users/{userId} {
+      // PII (email, fcmToken, tier): only the owner + admins may read a user doc.
+      // Discovery/display uses the separate `profiles` collection.
+      allow read: if isOwner(userId) || isAdmin() || isAdminPanelUser();
+      // Owner may create their own doc but NEVER seed a privilege field.
+      allow create: if isOwner(userId)
+        && request.resource.data.get('role', '') != 'admin'
+        && request.resource.data.get('isAdmin', false) == false;
+      // Owner may update their own doc but NEVER change role / isAdmin — those
+      // are admin / Cloud-Function only (closes the self-promote-to-admin hole).
+      allow update: if (isOwner(userId)
+              && request.resource.data.get('role', resource.data.get('role', ''))
+                 == resource.data.get('role', '')
+              && request.resource.data.get('isAdmin', false)
+                 == resource.data.get('isAdmin', false))
+        || isAdminPanelUser();
+      allow delete: if isOwner(userId);
+
+      // Owner has full access to their OWN private subcollections
+      // (starred_messages, flashcard_decks, feature_trials, features,
+      //  safety_progress, …). Firestore rules do NOT cascade into
+      //  subcollections, so without this every such write falls through to the
+      //  catch-all (admin-only) and is denied for normal users.
+      match /{userSub=**} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // ============================================================================
+    // USER INTERACTIONS COLLECTION (search + click tracking → recommendations)
+    // ============================================================================
+    // Write-only from clients: a user may only append their own interaction
+    // events. Reads are blocked entirely — only backend/admin (Cloud Functions
+    // with the Admin SDK, which bypasses rules) consumes this data.
+    match /user_interactions/{userId}/{document=**} {
+      allow create: if isOwner(userId);
+      allow read: if false;
+    }
+
+    // ============================================================================
+    // PROFILES COLLECTION
+    // ============================================================================
+    match /profiles/{profileId} {
+      // Anyone signed in can read profiles (for discovery/matching)
+      allow read: if isSignedIn();
+      // Users can create/update/delete their own profile; admins can update (verification, moderation)
+      // A profile may be CREATED only without privileged flags. Without this,
+      // `delete` + `create` was a trivial way to self-grant them: the update
+      // rule below guards each flag against its previous value, but a
+      // recreated document has no previous value to guard against.
+      allow create: if isOwner(profileId)
+        && request.resource.data.get('isAdmin', false) == false
+        && request.resource.data.get('isBanned', false) == false
+        && request.resource.data.get('isBusinessVerified', false) == false
+        && request.resource.data.get('businessVerified', false) == false
+        && request.resource.data.get('isAgeVerified', false) == false
+        // Entitlements are server-owned (purchase verification, grants). A
+        // recreated profile must not be able to carry a paid tier or a Base
+        // membership. Older app versions still send the neutral defaults
+        // (FREE / BASIC, false, null), so those stay allowed.
+        && request.resource.data.get('membershipTier', 'FREE')
+             in ['FREE', 'free', 'BASIC', 'basic']
+        && request.resource.data.get('membershipEndDate', null) == null
+        && request.resource.data.get('hasBaseMembership', false) == false
+        && request.resource.data.get('baseMembershipEndDate', null) == null
+        // Follow counters are server-owned (functions social/follows.ts).
+        && request.resource.data.get('followersCount', 0) == 0
+        && request.resource.data.get('followingCount', 0) == 0
+        // Host overall rating is server-owned (user_experiences triggers).
+        && request.resource.data.get('hostRatingSum', 0) == 0
+        && request.resource.data.get('hostRatingCount', 0) == 0
+        && request.resource.data.get('hostRatingAvg', 0) == 0
+        // Guest rating (host -> guest reviews) is server-owned
+        // (experience_bookings onGuestReviewWritten).
+        && request.resource.data.get('guestRatingSum', 0) == 0
+        && request.resource.data.get('guestRatingCount', 0) == 0
+        && request.resource.data.get('guestRatingAvg', 0) == 0
+        // Host agreement acceptance is recorded only by acceptHostAgreement.
+        && request.resource.data.get('hostAgreementVersion', 0) == 0
+        && request.resource.data.get('hostAgreementAcceptedAt', null) == null;
+      // Owner, admin-panel and profile-admins (business-verification approval →
+      // sets businessVerified) may update. Additionally ANY signed-in user may
+      // change ONLY the denormalized `followerCount` (business follow/unfollow
+      // runs as the follower, not the business owner).
+      // Owner may update their own profile EXCEPT the moderation flag
+      // `isBanned` (only admins/Cloud Functions may set/clear it — a banned
+      // user must never be able to self-unban). Any signed-in user may also
+      // change ONLY the denormalized counters (followerCount / rating aggregate).
+      allow update: if (isOwner(profileId)
+              && request.resource.data.get('isBanned', false)
+                 == resource.data.get('isBanned', false)
+              // NEVER let the owner set their own admin / verification flags.
+              && request.resource.data.get('isAdmin', false)
+                 == resource.data.get('isAdmin', false)
+              && request.resource.data.get('isBusinessVerified', false)
+                 == resource.data.get('isBusinessVerified', false)
+              && request.resource.data.get('businessVerified', false)
+                 == resource.data.get('businessVerified', false)
+              // Age assurance is decided by `submitAgeDocument` /
+              // `reviewAgeVerification` running with admin credentials, which
+              // bypass these rules. A user must never be able to mark
+              // themselves age-verified and unlock community publishing.
+              && request.resource.data.get('isAgeVerified', false)
+                 == resource.data.get('isAgeVerified', false)
+              // Security audit C-04: the signup-grant idempotency marker is
+              // written only by applySignupGrants. (signupGrantsApplied stays
+              // writable: the app updates it to dismiss the welcome banner.)
+              && request.resource.data.get('signupGrantsAppliedAt', null)
+                 == resource.data.get('signupGrantsAppliedAt', null)
+              && request.resource.data.get('ageVerification', {})
+                 == resource.data.get('ageVerification', {})
+              // ENTITLEMENTS. TierGate.resolveTier() reads
+              // profiles/{uid}.membershipTier to decide every paid feature, so
+              // a writable tier is a free subscription for anyone who opens a
+              // Firestore console. These are set by the purchase-verification
+              // callables and grantEntitlement, which run on the Admin SDK and
+              // bypass rules.
+              //
+              // The one client write allowed is a DOWNGRADE to FREE: the
+              // expiry self-heal in subscription_expiry_service performs it,
+              // and nobody can profit from taking entitlements away from
+              // themselves.
+              && (request.resource.data.get('membershipTier', 'FREE')
+                    == resource.data.get('membershipTier', 'FREE')
+                  || request.resource.data.get('membershipTier', 'FREE') == 'FREE'
+                  || request.resource.data.get('membershipTier', 'FREE') == 'free')
+              && (request.resource.data.get('membershipEndDate', null)
+                    == resource.data.get('membershipEndDate', null)
+                  || request.resource.data.get('membershipTier', 'FREE') == 'FREE'
+                  || request.resource.data.get('membershipTier', 'FREE') == 'free')
+              // Base membership is the same kind of entitlement and nothing on
+              // the client writes it, so it is simply immutable here.
+              && request.resource.data.get('hasBaseMembership', false)
+                 == resource.data.get('hasBaseMembership', false)
+              && request.resource.data.get('baseMembershipEndDate', null)
+                 == resource.data.get('baseMembershipEndDate', null)
+              // Follow counters are maintained ONLY by the follow triggers
+              // (social/follows.ts, Admin SDK).
+              && request.resource.data.get('followersCount', 0)
+                 == resource.data.get('followersCount', 0)
+              && request.resource.data.get('followingCount', 0)
+                 == resource.data.get('followingCount', 0)
+              // Host overall rating across all experiences: maintained ONLY
+              // by onExperienceReviewWritten / onUserExperienceWritten /
+              // backfillHostRatings (Admin SDK).
+              && request.resource.data.get('hostRatingSum', 0)
+                 == resource.data.get('hostRatingSum', 0)
+              && request.resource.data.get('hostRatingCount', 0)
+                 == resource.data.get('hostRatingCount', 0)
+              && request.resource.data.get('hostRatingAvg', 0)
+                 == resource.data.get('hostRatingAvg', 0)
+              // Guest rating from host reviews: experience_bookings
+              // onGuestReviewWritten only (Admin SDK).
+              && request.resource.data.get('guestRatingSum', 0)
+                 == resource.data.get('guestRatingSum', 0)
+              && request.resource.data.get('guestRatingCount', 0)
+                 == resource.data.get('guestRatingCount', 0)
+              && request.resource.data.get('guestRatingAvg', 0)
+                 == resource.data.get('guestRatingAvg', 0)
+              // Host agreement (acceptHostAgreement callable only).
+              && request.resource.data.get('hostAgreementVersion', 0)
+                 == resource.data.get('hostAgreementVersion', 0)
+              && request.resource.data.get('hostAgreementAcceptedAt', null)
+                 == resource.data.get('hostAgreementAcceptedAt', null))
+        || isAdminPanelUser() || isProfileAdmin()
+        || (isSignedIn()
+            && request.resource.data.diff(resource.data).affectedKeys()
+                 .hasOnly(['followerCount', 'ratingSum', 'ratingCount'])
+            // LEGACY `followerCount` (old app versions' business follow) stays
+            // writable for compatibility, but only by +-1 per write. The app
+            // now reads the server-owned `followersCount` instead.
+            && (!request.resource.data.diff(resource.data).affectedKeys()
+                   .hasAny(['followerCount'])
+                || (request.resource.data.followerCount is int
+                    && request.resource.data.followerCount
+                         - resource.data.get('followerCount', 0) >= -1
+                    && request.resource.data.followerCount
+                         - resource.data.get('followerCount', 0) <= 1)));
+      allow delete: if isOwner(profileId);
+    }
+
+    // ============================================================================
+    // PRIVATE PROFILES (security audit C-07 / C-10, plan P1-4)
+    // ============================================================================
+    // The owner/admin-only half of a profile: exact location + 9-char geohash,
+    // date of birth, orientation, email, phone, the ID-selfie storage path,
+    // private album URLs, ID-derived age-verification data. The public
+    // profiles/{uid} gets only coarse values computed by the
+    // mirrorPrivateProfileFields / syncCoarseFromPrivateProfile functions
+    // (geohash5, approxLocation, age).
+    //  - read: owner, or an admin-panel user (admin_users doc exists).
+    //  - write: owner, ONLY the user-editable keys below. ageVerification,
+    //    birthMonthDay, verificationPhotoUrl and _mirroredAt are server-owned
+    //    (Admin SDK bypasses rules).
+    //  - delete: never from a client (account deletion runs server-side).
+    function privateProfileOwnerKeys() {
+      return ['location', 'travelerLocation', 'geohash', 'dateOfBirth',
+              'sexualOrientation', 'email', 'verificationPhone',
+              'verificationPhotoPath', 'privatePhotoUrls', 'updatedAt'];
+    }
+    function privateProfileShapeOk(d) {
+      return (!('location' in d) || d.location is map)
+        && (!('travelerLocation' in d) || d.travelerLocation == null || d.travelerLocation is map)
+        && (!('dateOfBirth' in d) || d.dateOfBirth == null || d.dateOfBirth is timestamp)
+        && (!('privatePhotoUrls' in d) || d.privatePhotoUrls is list)
+        && (!('verificationPhotoPath' in d) || d.verificationPhotoPath == null
+            || (d.verificationPhotoPath is string
+                && d.verificationPhotoPath.matches('verifications/' + request.auth.uid + '/.+')));
+    }
+    match /profiles_private/{uid} {
+      allow read: if isOwner(uid) || isAdminPanelUser();
+      allow create: if isOwner(uid)
+        && request.resource.data.keys().hasOnly(privateProfileOwnerKeys())
+        && privateProfileShapeOk(request.resource.data);
+      allow update: if isOwner(uid)
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(privateProfileOwnerKeys())
+        && privateProfileShapeOk(request.resource.data);
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // MATCHES COLLECTION
+    // ============================================================================
+    match /matches/{matchId} {
+      // Authenticated users can read/write matches
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // LIKES COLLECTION
+    // ============================================================================
+    match /likes/{likeId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // CONVERSATIONS COLLECTION
+    // ============================================================================
+    match /conversations/{conversationId} {
+      // C4: only the participants (or support agent / admin) may access a
+      // conversation — was readable/writable by ANY signed-in user.
+      allow read: if convMember(resource.data) || convAdmin();
+      allow create: if isSignedIn()
+        && (request.auth.uid == request.resource.data.get('userId1', '')
+            || request.auth.uid == request.resource.data.get('userId2', ''));
+      allow update: if convMember(resource.data) || convAdmin();
+      allow delete: if convMember(resource.data) || convAdmin();
+
+      // MESSAGES SUBCOLLECTION — gated on parent-conversation membership.
+      match /messages/{messageId} {
+        function conv() {
+          return get(/databases/$(database)/documents/conversations/$(conversationId)).data;
+        }
+        allow read: if convMember(conv()) || convAdmin();
+        // A member may post as themselves (sender can't impersonate another
+        // uid). Support control messages authored with senderId 'system' — the
+        // welcome / agent-assigned / status-change notices written by the member
+        // who opens a support chat — are also allowed.
+        allow create: if convMember(conv())
+          && (request.auth.uid == request.resource.data.get('senderId', request.auth.uid)
+              || request.resource.data.get('senderId', '') == 'system');
+        allow update, delete: if convMember(conv()) || convAdmin();
+      }
+    }
+
+    // ============================================================================
+    // SUBSCRIPTIONS COLLECTION
+    // ============================================================================
+    match /subscriptions/{subscriptionId} {
+      allow read: if isSignedIn();
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // TRANSACTIONS COLLECTION (GreenGoCoins)
+    // ============================================================================
+    match /transactions/{transactionId} {
+      allow read: if isSignedIn();
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // REPORTS COLLECTION
+    // ============================================================================
+    match /reports/{reportId} {
+      allow read: if isAdmin();
+      // A report is filed in the reporter's OWN name (the experience report
+      // trigger counts distinct reporterIds to auto-hide scams).
+      allow create: if isSignedIn()
+        && (!('reporterId' in request.resource.data)
+            || request.resource.data.reporterId == request.auth.uid);
+      allow update: if isAdmin();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // BLOCKED USERS COLLECTION
+    // ============================================================================
+    match /blockedUsers/{blockId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
+    }
+
+    match /blocked_users/{blockId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
+    }
+
+    // ── Subcollections that had no rule of their own ────────────────────────
+    // Rules do not cascade: the /blocked_users rule above governs the ROOT
+    // collection only. These four paths matched nothing and were therefore
+    // denied, which is how the world map broke - it reads the caller's block
+    // list before placing a single pin, so the whole screen failed.
+
+    // The block list as stored under the profile. Private to its owner: who a
+    // user has blocked is nobody else's business.
+    match /profiles/{profileId}/blocked_users/{blockedId} {
+      allow read, write: if isOwner(profileId);
+    }
+
+    // Interaction log feeding recommendations. Append-only by its owner;
+    // history is never rewritten, so an edit or delete would only ever be an
+    // attempt to launder it.
+    match /user_interactions/{userId}/events/{eventId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId);
+      allow update, delete: if false;
+    }
+
+    // Reviews on a spot: public to signed-in users, written as yourself.
+    // Immutable once posted - editing a review after it has been read is how
+    // a rating becomes untrustworthy; removal is a moderation action.
+    match /spots/{spotId}/reviews/{reviewId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.get('userId', request.auth.uid) == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // Business leads. A visitor records THEMSELVES as a lead (the document id
+    // is their uid), and only the business owner may read the list - it is a
+    // commercial asset and a list of people's interest.
+    match /business_leads/{businessId}/leads/{leadId} {
+      allow read: if isSignedIn()
+        && exists(/databases/$(database)/documents/businesses/$(businessId))
+        && get(/databases/$(database)/documents/businesses/$(businessId))
+             .data.get('ownerId', '') == request.auth.uid;
+      allow create, update: if isSignedIn() && leadId == request.auth.uid;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // NOTIFICATIONS COLLECTION
+    // ============================================================================
+    match /notifications/{notificationId} {
+      // A user may only read/modify/delete THEIR OWN notifications (they carry
+      // actor photos + message previews). Create stays open because the client
+      // legitimately writes notifications FOR other users (like/match) — those
+      // are cross-user by design; server writes use the Admin SDK anyway.
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn();
+      allow update, delete: if isSignedIn() && resource.data.userId == request.auth.uid;
+    }
+
+    // ============================================================================
+    // COIN BALANCES COLLECTION
+    // ============================================================================
+    match /coin_balances/{userId} {
+      // Legacy/unused collection — the app uses `coinBalances` (camelCase).
+      // Backend functions use the Admin SDK (bypasses rules); deny all client
+      // access to reduce attack surface.
+      allow read, write: if false;
+    }
+
+    // ============================================================================
+    // COIN TRANSACTIONS COLLECTION
+    // ============================================================================
+    match /coin_transactions/{transactionId} {
+      // Legacy/unused collection — the app uses `coinTransactions` (camelCase).
+      allow read, write: if false;
+    }
+
+    // ============================================================================
+    // USER LEVELS COLLECTION (Gamification/Leaderboard)
+    // ============================================================================
+    match /user_levels/{userId} {
+      allow read: if isSignedIn();
+      // Only the owner (XP is granted to yourself; the Admin SDK bypasses
+      // rules). Any signed-in user used to be able to rewrite anyone's XP.
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // GAMIFICATION COLLECTIONS
+    // ============================================================================
+    match /achievement_progress/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    match /challenge_progress/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    match /xp_transactions/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // STREAKS & MISSIONS (daily engagement streak + coin-rewarding missions)
+    // ============================================================================
+    // streaks/{userId} = { current, longest, lastActiveDay, awardedMilestones,
+    //                      updatedAt } — owner-only single doc per user.
+    match /streaks/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // mission_progress/{userId} = { claimed: [missionId...], updatedAt }
+    // Only the claimed-rewards set is stored; live progress is derived client-side.
+    match /mission_progress/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    match /seasonal_events/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // ALBUM ACCESS COLLECTION
+    // ============================================================================
+    match /album_access/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // MATCHING / ML COLLECTIONS (used by discovery algorithm)
+    // ============================================================================
+    match /user_vectors/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    match /match_preferences/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    match /user_interactions/{docId} {
+      allow read: if isSignedIn();
+      // A user may only record their OWN interaction events (userId must match).
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    match /interaction_matrix/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // SWIPES / DISCOVERY COLLECTION
+    // ============================================================================
+    match /swipes/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn() && resource.data.userId == request.auth.uid;
+    }
+
+    match /discovery_queue/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // CONVERSATION EXPIRY COLLECTION
+    // ============================================================================
+    match /conversation_expiry/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // PHOTO LIKES COLLECTION
+    // ============================================================================
+    match /photo_likes/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // ANALYTICS COLLECTION (Admin only)
+    // ============================================================================
+    match /analytics/{document=**} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // USAGE LIMITS COLLECTION (hourly likes/nopes/superLikes + daily/monthly)
+    // UsageLimitService writes to usageLimits/{userId}/hours/{YYYY-MM-DD-HH}
+    //                                  and usageLimits/{userId}/days/{YYYY-MM-DD}
+    // ============================================================================
+    match /usageLimits/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+
+      match /hours/{hourId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+        allow delete: if false;
+      }
+
+      match /days/{dayId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+        allow delete: if false;
+      }
+
+      // MONTHS - the boost allotment (TierGate._boostsThisMonth / recordBoost
+      // write usageLimits/{uid}/months/{YYYY-MM}). This subcollection had no
+      // rule, so once the catch-all was removed every boost check was denied
+      // and the feature failed for everyone. Rules do NOT cascade into
+      // subcollections, so hours/ and days/ above did not cover it.
+      match /months/{monthId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+        allow delete: if false;
+      }
+    }
+
+    // ============================================================================
+    // DAILY USAGE COLLECTION (legacy — kept for backwards compatibility)
+    // ============================================================================
+    match /dailyUsage/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+
+      match /days/{dayId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+        allow delete: if false;
+      }
+    }
+
+    // ============================================================================
+    // COIN BALANCES COLLECTION (alternate path)
+    // ============================================================================
+    match /coinBalances/{userId} {
+      allow read: if isSignedIn();
+      // Create is the welcome grant in onboarding_bloc._grantWelcomeCoins, and
+      // nothing else. Bound to the owner (it was any signed-in user, so one
+      // account could pre-create another's balance) and capped, so a fresh
+      // account cannot be born rich.
+      allow create: if isOwner(userId)
+        && request.resource.data.get('totalCoins', 0) <= 100;
+      // Owner may update ONLY their OWN balance. Crediting ANOTHER user (gift
+      // send, gift-decline refund) is done server-side by the giftCoins /
+      // declineGift callables (Admin SDK), so the client never needs to write
+      // another user's balance — closing the coin-forgery hole where any user
+      // could inflate anyone's totalCoins.
+      // Spending is still a client write, so updates stay open to the owner -
+      // but ONLY downwards. A balance that never increases from the client
+      // makes forgery impossible while leaving debits alone. Every legitimate
+      // credit (verified purchase, gift, admin grant, reward) already runs on
+      // the Admin SDK, which bypasses these rules.
+      allow update: if isOwner(userId)
+        && (
+          // The general rule: a balance never RISES from the client. Spending
+          // lowers it; every legitimate credit runs on the Admin SDK.
+          request.resource.data.get('totalCoins', 0)
+            <= resource.data.get('totalCoins', 0)
+          // One exception, found by an end-to-end login test: the app creates
+          // an EMPTY balance first and then grants the 100 welcome coins as an
+          // update. Blocking that left new users on zero coins. The exception
+          // is narrow - it only applies to a balance that has never held or
+          // earned anything, so it cannot be replayed: after the grant
+          // earnedCoins is 100 and this branch is closed for good.
+          || (resource.data.get('totalCoins', 0) == 0
+              && resource.data.get('earnedCoins', 0) == 0
+              && request.resource.data.get('totalCoins', 0) <= 100)
+        );
+      allow delete: if false;
+
+      // ⚠️ PENDING LOCKDOWN — enable ONLY after a build with server-verified
+      // coin purchases is live in BOTH stores (>= 3.0.0+131).
+      //
+      // PURCHASED coins are store money and may only be credited by the
+      // verifyGooglePlayCoinPurchase / verifyAppStoreCoinPurchase callables
+      // after a receipt is validated with the store. Those run on the Admin SDK
+      // and bypass rules, so the client can never raise `purchasedCoins`.
+      // Spending, rewards, streaks and missions leave it untouched, so this
+      // restricts no legitimate write FROM A CURRENT CLIENT — but the shipped
+      // build still credits coins client-side, and enabling this early means
+      // those users are charged by the store and receive nothing.
+      //
+      // Replace the create/update lines above with:
+      //   allow create: if isSignedIn()
+      //     && request.resource.data.get('purchasedCoins', 0) == 0;
+      //   allow update: if isOwner(userId)
+      //     && request.resource.data.get('purchasedCoins', 0)
+      //          <= resource.data.get('purchasedCoins', 0);
+    }
+
+    // ============================================================================
+    // COIN GIFTS COLLECTION
+    // ============================================================================
+    // Security audit C-01: gifts can only be created AS yourself, TO someone
+    // else, with a sane amount; only the receiver may accept a pending gift.
+    // Declines go through the declineGift callable (server). Matches the app's
+    // sendGift (pending), the shop's direct send (accepted) and acceptGift.
+    match /coinGifts/{giftId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.senderId == request.auth.uid
+        && request.resource.data.receiverId is string
+        && request.resource.data.receiverId != request.auth.uid
+        && request.resource.data.amount is int
+        && request.resource.data.amount > 0
+        && request.resource.data.amount <= 100000
+        && request.resource.data.status in ['pending', 'accepted'];
+      allow update: if isSignedIn()
+        && resource.data.receiverId == request.auth.uid
+        && resource.data.status == 'pending'
+        && request.resource.data.status == 'accepted'
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['status', 'receivedAt']);
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // REFERRAL LOOP (invite a friend — both earn coins)
+    // ============================================================================
+    // referral_codes/{CODE} = { ownerId, createdAt }
+    // Any signed-in user may read (to resolve a code when redeeming). The owner
+    // may create their own code (ownerId must equal their uid). Codes are
+    // immutable once created.
+    match /referral_codes/{code} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.ownerId == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // referrals/{userId} = { code, invitedCount, coinsEarned, redeemedCode? }
+    // Owner may read/write their own referral doc. A non-owner (the referrer)
+    // may ONLY increment counters when a friend redeems their code — never
+    // decrement — mirroring the coinBalances integrity guard.
+    // Security audit C-05: the owner may only create/attach their own code
+    // (referral_service.getOrCreateCode); `redeemedCode`/`redeemedFrom` are
+    // server-written by redeemReferral and can no longer be cleared to redeem
+    // again. Counters are server-only.
+    match /referrals/{userId} {
+      allow read: if isSignedIn();
+      allow create: if isOwner(userId)
+        && request.resource.data.keys().hasOnly(['code', 'invitedCount', 'coinsEarned'])
+        && request.resource.data.get('invitedCount', 0) == 0
+        && request.resource.data.get('coinsEarned', 0) == 0;
+      allow update: if (isOwner(userId)
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['code', 'invitedCount', 'coinsEarned'])
+          && (!('invitedCount' in request.resource.data.diff(resource.data).affectedKeys())
+               || request.resource.data.invitedCount == 0)
+          && (!('coinsEarned' in request.resource.data.diff(resource.data).affectedKeys())
+               || request.resource.data.coinsEarned == 0)
+          && resource.data.get('code', null) == null);
+      // (Referrer counters are incremented only by redeemReferral, server-side.)
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN TRANSACTIONS COLLECTION (alternate path)
+    // ============================================================================
+    match /coinTransactions/{transactionId} {
+      allow read: if isSignedIn();
+      // A user may only create ledger entries they're a party to — their own
+      // (userId) or as the counterparty of a gift/refund (relatedUserId).
+      // Blocks forging arbitrary third-party ledger entries.
+      //
+      // ⚠️ PENDING LOCKDOWN — enable ONLY together with the coinBalances guard
+      // above, once a build with server-verified coin purchases is live in BOTH
+      // stores (>= 3.0.0+131). `coinPurchase` entries are then written
+      // exclusively by the receipt verification callables (Admin SDK), so a
+      // client-authored one is always a forgery attempt. Add this line:
+      //   && request.resource.data.get('reason', '') != 'coinPurchase'
+      allow create: if isSignedIn()
+        && (request.resource.data.userId == request.auth.uid
+            || request.resource.data.get('relatedUserId', '') == request.auth.uid);
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // VIDEO COINS (RETIRED) + INVOICES
+    // ============================================================================
+    // The video-minute product line (greengo_video_10/30/60/120) was removed
+    // from the app. These two collections are kept READ + DELETE only so that
+    // legacy documents belonging to existing users can still be read and, most
+    // importantly, ERASED by the in-app account-deletion flow (which runs
+    // client-side). Dropping the rules entirely would orphan that data and
+    // break the right-to-erasure guarantee. No new writes are permitted.
+    match /videoCoinBalances/{userId} {
+      allow read, delete: if isOwner(userId);
+      allow create, update: if false;
+    }
+    match /videoCoinTransactions/{transactionId} {
+      allow read, delete: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
+      allow create, update: if false;
+    }
+    match /invoices/{invoiceId} {
+      allow read: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.userId == request.auth.uid;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN PROMOTIONS COLLECTION
+    // ============================================================================
+    match /coinPromotions/{promotionId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // CLAIMED REWARDS COLLECTION
+    // ============================================================================
+    match /claimedRewards/{rewardId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // COIN ORDERS COLLECTION
+    // ============================================================================
+    match /coinOrders/{orderId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // MEMBERSHIPS COLLECTION
+    // ============================================================================
+    match /memberships/{membershipId} {
+      allow read: if isSignedIn();
+      // The wildcard is a membership id, not a user id, so `isSignedIn()` let
+      // ANY user create or rewrite ANYONE's membership document. Writes are now
+      // bound to the owner named inside the document, and the owner cannot be
+      // changed by an update.
+      allow create: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.get('userId', '') == request.auth.uid
+        && request.resource.data.get('userId', '') == resource.data.get('userId', '');
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // LEGAL DOCUMENTS COLLECTION
+    // ============================================================================
+    match /legalDocuments/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // TIER CONFIGS COLLECTION
+    // ============================================================================
+    match /tierConfigs/{configId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // MESSAGE REPORTS COLLECTION
+    // ============================================================================
+    match /message_reports/{reportId} {
+      allow read: if isAdmin();
+      allow create: if isSignedIn();
+      allow update, delete: if isAdmin();
+    }
+
+    // ============================================================================
+    // USER REPORTS COLLECTION
+    // ============================================================================
+    match /user_reports/{reportId} {
+      allow read: if isAdmin();
+      allow create: if isSignedIn();
+      allow update, delete: if isAdmin();
+    }
+
+    // ============================================================================
+    // NICKNAMES COLLECTION (public read for nickname login before auth)
+    // ============================================================================
+    // Security audit C-06: single-doc lookup stays public (nickname login runs
+    // before sign-in) but LISTING is denied, so the collection can no longer be
+    // paged to harvest every user's email. A mapping can only be created for,
+    // or changed by, the uid it points to.
+    match /nicknames/{nickname} {
+      allow get: if true;
+      allow list: if false;
+      allow create: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid;
+      allow update: if isSignedIn()
+        && resource.data.uid == request.auth.uid
+        && request.resource.data.uid == request.auth.uid;
+      allow delete: if isSignedIn() && resource.data.uid == request.auth.uid;
+    }
+
+    // ============================================================================
+    // FEATURE FLAGS & APP CONFIG (read without auth for startup)
+    // ============================================================================
+    match /featureFlags/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /appConfig/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Security audit C-08: config stays public for app startup, but the two
+    // documents holding credentials are not. `api_keys` is still readable by
+    // signed-in users until the app reads AI/TTS through Cloud Functions
+    // (P1-1); `resend_settings` is server/admin-panel only. No client lists
+    // this collection, so list is admin-panel only.
+    match /app_config/{docId} {
+      allow get: if !(docId in ['api_keys', 'resend_settings'])
+        || (docId == 'api_keys' && isSignedIn())
+        || isAdminPanelUser();
+      allow list: if isAdminPanelUser();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // FUNCTION MONITORS (Cloud Function invocation stats)
+    // ============================================================================
+    // Written by Cloud Functions via the Admin SDK (bypasses rules). The admin
+    // panel reads stats and may reset/clear a function's counters.
+    match /function_monitors/{functionName} {
+      allow read: if isAdminPanelUser();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // ADMIN USERS COLLECTION (admin panel authentication)
+    // ============================================================================
+    match /admin_users/{userId} {
+      // Was readable by every signed-in user, which handed any account the
+      // full staff roster: emails, roles and permission arrays - a ready-made
+      // target list. Admins can still read it; nobody else needs to.
+      allow read: if isAdminPanelUser();
+      // Was writable by any admin of any role, so a moderator could rewrite
+      // their own document to superAdmin. Only a superAdmin changes who is an
+      // admin.
+      allow write: if isSuperAdmin();
+    }
+
+    // ============================================================================
+    // ADMIN ACTIONS & AUDIT COLLECTIONS (admin panel logging)
+    // ============================================================================
+    match /admin_actions/{actionId} {
+      allow read: if isAdminPanelUser() || isProfileAdmin();
+      allow create: if isAdminPanelUser() || isProfileAdmin();
+      allow update, delete: if false;
+    }
+
+    match /admin_audit_index/{docId} {
+      allow read: if isAdminPanelUser();
+      allow create: if isAdminPanelUser();
+      allow update, delete: if false;
+    }
+
+    // Monthly audit log collections (admin_audit_logs_YYYY_MM)
+    // Firestore rules don't support regex on collection names, so we use
+    // the catch-all below. These collections are written by admin panel only.
+
+    // ============================================================================
+    // NOTIFICATION PREFERENCES COLLECTION
+    // ============================================================================
+    match /notification_preferences/{userId} {
+      // A user's notification preferences are private to them.
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // VIRTUAL GIFTS COLLECTION
+    // ============================================================================
+    match /virtualGifts/{giftId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // BLIND MATCHES COLLECTION
+    // ============================================================================
+    match /blindMatches/{matchId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // SECOND CHANCE POOL COLLECTION
+    // ============================================================================
+    match /secondChancePool/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    // ============================================================================
+    // MEMBERSHIP PURCHASES — tracks which app user owns each IAP purchase
+    // ============================================================================
+    match /membership_purchases/{purchaseId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow update: if false; // Immutable once created
+    }
+
+    // ============================================================================
+    // SUPPORT CHATS COLLECTION
+    // ============================================================================
+    match /support_chats/{chatId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // SUPPORT MESSAGES COLLECTION
+    // ============================================================================
+    match /support_messages/{messageId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // LANGUAGE GAMES COLLECTIONS
+    // ============================================================================
+    match /game_rooms/{roomId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+
+      // Rounds subcollection (game rounds data)
+      match /rounds/{roundId} {
+        allow read: if isSignedIn();
+        allow create, update: if isSignedIn();
+        allow delete: if false;
+      }
+
+      // Chat subcollection (in-game chat messages)
+      match /chat/{messageId} {
+        allow read: if isSignedIn();
+        allow create: if isSignedIn();
+        allow update, delete: if false;
+      }
+    }
+
+    // GAME INVITES COLLECTION
+    match /game_invites/{inviteId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    match /game_matchmaking/{docId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isSignedIn();
+    }
+
+    match /game_stats/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn();
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // CONSTELLATION COLLECTION (Language Learning — galaxy map nodes)
+    // ============================================================================
+    match /constellation/{nodeId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // LESSONS COLLECTION (Language Learning — lesson questions)
+    // ============================================================================
+    match /lessons/{lessonId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // GAME WORDS COLLECTION (language game vocabulary — read-only for players)
+    // ============================================================================
+    match /game_words/{wordId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // GAME GRAMMAR QUESTIONS (grammar duel questions — read-only for players)
+    // ============================================================================
+    match /game_grammar_questions/{questionId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // GAME TRANSLATION RACE (pre-built translation questions — read-only)
+    // ============================================================================
+    match /game_translation_race/{questionId} {
+      allow read: if isSignedIn();
+      allow write: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // GAME REPORTED WORDS (players can report inappropriate words)
+    // ============================================================================
+    match /game_reported_words/{reportId} {
+      allow read: if isAdminPanelUser();
+      allow create: if isSignedIn();
+      allow update, delete: if isAdminPanelUser();
+    }
+
+    // ============================================================================
+    // PRONUNCIATION CACHE (TTS audio URL cache — shared across all users)
+    // ============================================================================
+    match /pronunciation_cache/{cacheId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow update: if isSignedIn();
+      allow delete: if isAdminPanelUser();
+    }
+
+    // Note: 'lessons' and 'constellation' collections already have rules above
+
+    // ============================================================================
+    // USER VOCABULARY (tracked words per user, written client-side on message send)
+    // ============================================================================
+    match /user_vocabulary/{userId} {
+      allow read: if isOwner(userId);
+      allow create, update: if isOwner(userId);
+
+      match /words/{wordId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId);
+      }
+    }
+
+    // ============================================================================
+    // VOCABULARY WORDS (word frequency corpus — read-only for clients)
+    // ============================================================================
+    match /vocabulary_words/{langId} {
+      allow read: if isSignedIn();
+
+      match /words/{wordId} {
+        allow read: if isSignedIn();
+      }
+    }
+
+    // ============================================================================
+    // COUPONS — Cloud Functions only.
+    // Clients (including admins) must use redeemCoupon / upsertCoupon callables.
+    // Direct reads are denied so coupon codes cannot be leaked or enumerated.
+    // ============================================================================
+    match /coupons/{couponId} {
+      allow read, write: if false;
+      match /redemptions/{userId} {
+        allow read, write: if false;
+      }
+    }
+
+    // ============================================================================
+    // GROUP CHAT ("Culture Circles") — isolated `groups` collection
+    // Cross-user writes are performed by Cloud Functions (Admin SDK, which
+    // bypasses these rules). Clients only write the group doc + their own data.
+    // ============================================================================
+    match /groups/{groupId} {
+      function isGroupMember() {
+        return isSignedIn() && request.auth.uid in resource.data.participants;
+      }
+      function isGroupAdminRole() {
+        return isSignedIn() && resource.data.roles[request.auth.uid] == 'admin';
+      }
+
+      allow read: if isGroupMember();
+      // Creator must be in participants and be their own admin.
+      allow create: if isSignedIn()
+                    && request.auth.uid in request.resource.data.participants
+                    && request.resource.data.roles[request.auth.uid] == 'admin';
+      // Members may update the group doc (info, membership, denorm). A member
+      // may NOT elevate roles (self-promotion to admin) — role changes require
+      // an existing admin. EXCEPTION: a member leaving removes their OWN role
+      // entry; that's allowed because the caller ends up NOT in the roles map
+      // (self-promotion would instead leave the caller present as 'admin').
+      allow update: if isGroupMember()
+        && (request.resource.data.roles == resource.data.roles
+            || isGroupAdminRole()
+            || !(request.auth.uid in request.resource.data.get('roles', {})));
+      allow delete: if isGroupAdminRole();
+
+      match /messages/{messageId} {
+        function members() {
+          return get(/databases/$(database)/documents/groups/$(groupId)).data.participants;
+        }
+        allow read: if isSignedIn() && request.auth.uid in members();
+        allow create: if isSignedIn()
+                      && request.auth.uid in members()
+                      && request.resource.data.senderId == request.auth.uid;
+        // Reactions / read-state by any member (message CONTENT unchanged).
+        // Changing content (e.g. soft-delete-for-everyone) is limited to the
+        // sender or a group admin — a member can't blank someone else's message.
+        allow update: if isSignedIn() && request.auth.uid in members()
+          && (request.resource.data.content == resource.data.content
+              || resource.data.senderId == request.auth.uid
+              || get(/databases/$(database)/documents/groups/$(groupId)).data.roles[request.auth.uid] == 'admin');
+        allow delete: if isSignedIn()
+                      && resource.data.senderId == request.auth.uid;
+      }
+
+      match /members/{memberId} {
+        function members() {
+          return get(/databases/$(database)/documents/groups/$(groupId)).data.participants;
+        }
+        allow read: if isSignedIn() && request.auth.uid in members();
+        // A user may write only their OWN member doc (e.g. lastReadAt). All
+        // other member docs are written by Cloud Functions (Admin SDK).
+        allow write: if isOwner(memberId);
+      }
+    }
+
+    // Per-user group inbox index — strictly private to its owner. Summaries are
+    // written by Cloud Functions; the owner may reset their own unread counter.
+    match /user_group_inbox/{userId} {
+      allow read, write: if isOwner(userId);
+      match /threads/{groupId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    // Per-user PRIVATE group tags — each user's own labels for their groups.
+    // Strictly private to the owner; never read/written by anyone else or by CFs.
+    // Shape: user_group_tags/{userId} = { groupTags: { groupId: [tag, ...] } }
+    match /user_group_tags/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Per-user PRIVATE people tags — each user's own labels for other users.
+    // Strictly private to the owner; never read/written by anyone else or by CFs.
+    // Shape: user_people_tags/{userId} = { peopleTags: { targetUserId: [tag, ...] } }
+    match /user_people_tags/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Per-user PRIVATE favorite communities — each user's own starred list.
+    // Strictly private to the owner; never read/written by anyone else or by CFs.
+    // Shape: user_favorite_communities/{userId} = { communityIds: [id, ...] }
+    match /user_favorite_communities/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Per-user PRIVATE saved discovery searches — each user's named snapshots of
+    // the Network Discovery filter state (preferences + tags + query + alerts).
+    // Strictly private to the owner. A saved-search-alerts Cloud Function (if
+    // added later) uses the Admin SDK, which bypasses these client rules.
+    // Shape: saved_searches/{userId}/searches/{id} = { name, preferences,
+    //   tags, query, alertsEnabled, createdAt }
+    match /saved_searches/{userId}/searches/{searchId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Cultural Passport — per-user collection of country/language/event stamps.
+    // Shape: user_passports/{userId} = { countryStamps: [ISO...],
+    //   languageStamps: [lang...], eventStamps: [category...], updatedAt }
+    match /user_passports/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId);
+    }
+
+    // "Met in person" — written ONLY by the server on a successful QR check-in
+    // (functions/src/checkin/meetings.ts). Each member reads their own pairs.
+    // pairId = the two uids sorted and joined by '_' (uids never contain
+    // '_'), so a member may GET any pair they are part of - existing or not
+    // ("have we met?" answers no without an error) - and LIST their own pairs
+    // with where('users', 'array-contains', uid).
+    match /met_in_person/{pairId} {
+      allow get: if isSignedIn() && request.auth.uid in pairId.split('_');
+      allow list: if isSignedIn() && request.auth.uid in resource.data.users;
+      allow write: if false;
+      match /encounters/{encounterId} {
+        allow read: if isSignedIn() && request.auth.uid in pairId.split('_');
+        allow write: if false;
+      }
+    }
+
+    // ============================================================================
+    // EXTERNAL EVENTS (Tiqets/Viator experiences) — read-only, CF-written only
+    // ============================================================================
+    match /external_events/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // populated only by the ingestExternalEvents CF
+    }
+    match /external_country_stats/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // CF-written aggregate
+    }
+    match /city_coordinates/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // CF-written city → coordinates lookup table
+    }
+    match /external_events_index/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // CF-written compact shard index for fast loads
+    }
+
+    // ============================================================================
+    // CURATED ATTRACTIONS — read-only; written only by the tools/attractions
+    // pipeline (Admin SDK, which bypasses rules). Country-scoped, image-gated.
+    // ============================================================================
+    match /attractions/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+
+      // SEO / AI-prompt / marketing block. Rules do NOT cascade, so this needs
+      // its own match — it must stay out of the client read path.
+      match /meta/{metaDoc} {
+        allow read: if isAdmin();
+        allow write: if false;
+      }
+    }
+    match /attractions_index/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // compact per-country shard the list reads
+    }
+    match /attractions_lite/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // packed list rows (scripts/build_attractions_lite.js)
+    }
+    match /attraction_countries/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // coverage + publish flag (the control plane)
+    }
+    match /attraction_cities/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+    match /attraction_taxonomy/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false; // category -> icon/group/label
+    }
+    match /attraction_config/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // COMMUNITIES — user-created culture communities (Exchange-style lists)
+    // ============================================================================
+    // Any signed-in user may create a community and read/join. Content and
+    // membership writes are ROLE-GATED: owner/admin manage the community doc,
+    // roles, moderation, join-request approval and announcements; ordinary
+    // members post chat/tips (unless muted/banned); a user manages only their
+    // own membership + join request. (Cloud Functions use the Admin SDK and
+    // bypass these rules for their idempotency-flag writes.)
+    match /communities/{communityId} {
+      function communityData() {
+        return get(/databases/$(database)/documents/communities/$(communityId)).data;
+      }
+      function isCommunityCreator() {
+        return isSignedIn() && communityData().createdByUserId == request.auth.uid;
+      }
+      function myMemberDoc() {
+        return get(/databases/$(database)/documents/communities/$(communityId)/members/$(request.auth.uid));
+      }
+      function isMemberOf() {
+        return isSignedIn() &&
+          exists(/databases/$(database)/documents/communities/$(communityId)/members/$(request.auth.uid));
+      }
+      function myRole() {
+        return isMemberOf() ? myMemberDoc().data.role : 'none';
+      }
+      function isCommunityMod() {
+        return isCommunityCreator() || myRole() == 'owner' || myRole() == 'admin' || isAdmin();
+      }
+      // Age assurance (Guidelines 1.2.1 / 4.7.5): publishing content other
+      // people will see requires a VERIFIED age, not a self-declared one.
+      // Reading and joining a community stay open to every signed-in user —
+      // the gate is on broadcasting, which is what the guideline is about.
+      //
+      // Reads the denormalised boolean rather than the nested map so this
+      // costs one document read per write, not a map traversal.
+      function isAgeVerified() {
+        return isSignedIn() &&
+          get(/databases/$(database)/documents/profiles/$(request.auth.uid))
+            .data.get('isAgeVerified', false) == true;
+      }
+      function canPostChat() {
+        return isMemberOf() &&
+          isAgeVerified() &&
+          myMemberDoc().data.get('isBanned', false) == false &&
+          myMemberDoc().data.get('isMuted', false) == false;
+      }
+      // Tips (language/cultural/city) and Announcements may be posted by mods or
+      // admin-designated writers only (canWriteTips / canWriteAnnouncements).
+      function canWriteTips() {
+        return isCommunityMod() ||
+          (isMemberOf() && myMemberDoc().data.get('canWriteTips', false) == true);
+      }
+      function canWriteAnnouncements() {
+        return isCommunityMod() ||
+          (isMemberOf() && myMemberDoc().data.get('canWriteAnnouncements', false) == true);
+      }
+      function onlyDenormChanged() {
+        // Fields any member's action legitimately touches on the community doc:
+        // the join/leave counter and the last-message denormalization written by
+        // sendMessage. (Rules/resources/sponsor/promo edits still need a mod.)
+        return request.resource.data.diff(resource.data).affectedKeys()
+          .hasOnly(['memberCount', 'lastMessagePreview', 'lastActivityAt']);
+      }
+
+      // A profile flagged isBusiness is a commerce-only "storefront" identity —
+      // it may be searched/browsed but NEVER become a community member (the
+      // person joins with their personal identity instead). The one exception
+      // is the community's OWN creator, so a business can still own a community
+      // it created.
+      function memberProfileIsBusiness(uid) {
+        return exists(/databases/$(database)/documents/profiles/$(uid)) &&
+          get(/databases/$(database)/documents/profiles/$(uid)).data.get('isBusiness', false) == true;
+      }
+      // A user may always add THEMSELVES (they join with their personal
+      // identity — the client shows a confirmation that the storefront is not
+      // used). The business exclusion only stops a MOD from adding someone
+      // else's storefront identity as a member (except the community creator).
+      function memberAddAllowed(memberId) {
+        return memberId == request.auth.uid ||
+          !memberProfileIsBusiness(memberId) ||
+          get(/databases/$(database)/documents/communities/$(communityId)).data.createdByUserId == memberId;
+      }
+
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      // Community edits (rules/resources/sponsor/promo) → owner/admin only,
+      // EXCEPT denormalized member-driven fields (memberCount / last message).
+      allow update: if isCommunityMod() || (isSignedIn() && onlyDenormChanged());
+      allow delete: if isCommunityCreator() || isAdmin();
+
+      // Members: a user manages their OWN membership (join public / leave);
+      // owner/admin manage anyone (role, mute/ban, approve, remove). Business
+      // (storefront) identities are excluded from membership (except a creator).
+      match /members/{memberId} {
+        allow read: if isSignedIn();
+        allow create: if isSignedIn()
+          && (memberId == request.auth.uid || isCommunityMod())
+          && memberAddAllowed(memberId);
+        allow update: if isCommunityMod();
+        allow delete: if isSignedIn() && (memberId == request.auth.uid || isCommunityMod());
+      }
+
+      // Join requests (private communities): a user creates/cancels their own;
+      // owner/admin read & resolve.
+      match /join_requests/{userId} {
+        allow read: if isCommunityMod();
+        allow create: if isSignedIn() && userId == request.auth.uid;
+        allow delete: if isCommunityMod() || (isSignedIn() && userId == request.auth.uid);
+      }
+
+      // Messages: announcements = mod OR designated announcement-writer; tips
+      // (language/cultural/city) = mod OR designated tip-writer (and not muted);
+      // plain chat (text/image/…) = any member who isn't muted/banned.
+      match /messages/{messageId} {
+        allow read: if isSignedIn();
+        allow create: if isSignedIn()
+          // A member posts as THEMSELVES — no senderId spoofing (system control
+          // messages excepted).
+          && (request.resource.data.get('senderId', request.auth.uid) == request.auth.uid
+              || request.resource.data.get('senderId', '') == 'system')
+          && (
+          (request.resource.data.type == 'announcement' && canWriteAnnouncements()) ||
+          (request.resource.data.type in ['language_tip', 'cultural_fact', 'city_tip']
+              && canWriteTips() && canPostChat()) ||
+          (!(request.resource.data.type in ['announcement', 'language_tip', 'cultural_fact', 'city_tip'])
+              && canPostChat())
+        );
+        allow update, delete: if isCommunityMod();
+      }
+
+      // Any other future subcollection: owner/admin only. (Was `read: if
+      // isSignedIn()`, which — because Firestore ORs matching rules — overrode
+      // the mod-only read on join_requests, letting anyone enumerate who
+      // requested to join a private community. members/messages keep their own
+      // explicit signed-in read rules above.)
+      match /{document=**} {
+        allow read, write: if isCommunityMod();
+      }
+    }
+
+    // ============================================================================
+    // BUSINESS (B2B) COLLECTIONS — followers, leads, verification requests
+    // ============================================================================
+    // Followers of a business. A user manages ONLY their own follower doc under
+    // a business; anyone signed in may read (follower lists / counts). The
+    // follower fan-out for new events is done server-side by a Cloud Function.
+    //
+    // Since user follows shipped this is THE follow graph for every account
+    // (business or not): followers of {businessId} = any followee. Counters
+    // (profiles.followersCount / followingCount) are kept by the
+    // onUserFollowCreated / onUserFollowDeleted triggers, which mark counted
+    // edges with `counted` — so a client may write ONLY `createdAt` (= server
+    // time), may never update an edge, and may not follow itself.
+    match /business_followers/{businessId}/followers/{uid} {
+      allow read: if isSignedIn();
+      allow create: if isOwner(uid)
+        && uid != businessId
+        && request.resource.data.keys().hasOnly(['createdAt'])
+        && request.resource.data.createdAt == request.time;
+      allow delete: if isOwner(uid);
+    }
+
+    // Mirror index of the accounts a user follows. Readable by signed-in users
+    // (a profile's "Following" list); written only by its owner.
+    match /user_business_following/{userId}/businesses/{businessId} {
+      allow read: if isSignedIn();
+      allow create: if isOwner(userId) && userId != businessId;
+      allow delete: if isOwner(userId);
+    }
+
+    // ============================================================================
+    // ATTRACTION STATS — unique viewers per day (functions attractions/attractionStats.ts)
+    // ============================================================================
+    // `viewCount` is written only by onAttractionViewRecorded. A viewer creates
+    // ONE doc per attraction per UTC day, id `{YYYYMMDD}_{uid}` (today or
+    // yesterday, to absorb clock skew at midnight); never updated, deleted or
+    // read by clients.
+    // Shared translations of PUBLIC content, written only by the
+    // translateTexts function. Readable by id (the id is a hash of language +
+    // text, so you must already know the text); never listable.
+    match /translations/{id} {
+      allow get: if isSignedIn();
+      allow list, write: if false;
+    }
+    match /translation_quota/{id} {
+      allow read, write: if false;
+    }
+    // Consensus votes for client-contributed translations; written only by
+    // submitSharedTranslations. Server only.
+    match /translation_candidates/{id} {
+      allow read, write: if false;
+    }
+
+    match /attraction_stats/{attractionId} {
+      function utcDay(t) {
+        return string(t.year() * 10000 + t.month() * 100 + t.day());
+      }
+
+      allow read: if isSignedIn();
+      allow write: if false;
+
+      match /daily_viewers/{viewId} {
+        allow create: if isSignedIn()
+          && attractionId.matches('[0-9]{1,12}')
+          && (viewId == utcDay(request.time) + '_' + request.auth.uid
+              || viewId == utcDay(request.time - duration.value(1, 'd'))
+                   + '_' + request.auth.uid)
+          && request.resource.data.keys().hasOnly(['at', 'expireAt'])
+          && request.resource.data.at == request.time
+          && (!('expireAt' in request.resource.data)
+              || request.resource.data.expireAt is timestamp);
+        allow read, update, delete: if false;
+      }
+    }
+
+    // GreenGo users' ratings of attractions: one doc per user, 1..5 stars.
+    // Aggregates (ratingSum/Count/Avg/Dist on attraction_stats) are written
+    // only by onAttractionRatingWritten (Admin SDK).
+    match /attraction_ratings/{attractionId}/ratings/{uid} {
+      function notBanned() {
+        return get(/databases/$(database)/documents/profiles/$(request.auth.uid))
+                 .data.get('isBanned', false) != true;
+      }
+      function validStars(d) {
+        return d.stars is int && d.stars >= 1 && d.stars <= 5;
+      }
+      allow get: if isOwner(uid);
+      allow list: if false;
+      allow create: if isOwner(uid)
+        && attractionId.matches('[0-9]{1,12}')
+        && notBanned()
+        && request.resource.data.keys().hasOnly(['stars', 'createdAt', 'updatedAt'])
+        && request.resource.data.keys().hasAll(['stars', 'createdAt', 'updatedAt'])
+        && validStars(request.resource.data)
+        && request.resource.data.createdAt == request.time
+        && request.resource.data.updatedAt == request.time;
+      allow update: if isOwner(uid)
+        && notBanned()
+        && request.resource.data.keys().hasOnly(['stars', 'createdAt', 'updatedAt'])
+        && validStars(request.resource.data)
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if isOwner(uid);
+    }
+    match /attraction_rating_events/{id} {
+      allow read, write: if false;
+    }
+
+    // Leads a business receives ("Contact" / "Save to my events"). Only the
+    // acting user may write their own lead doc; only the business owner reads
+    // its own leads list.
+    match /business_leads/{businessId}/leads/{uid} {
+      allow read: if isOwner(businessId);
+      allow create, update: if isOwner(uid);
+    }
+
+    // Business verification requests. The owner creates/updates ONLY their own
+    // pending request; profile-admins read all and set the approved/rejected
+    // status (the badge itself is written on the profile doc).
+    match /business_verification_requests/{userId} {
+      allow read: if isOwner(userId) || isProfileAdmin();
+      allow create: if isOwner(userId)
+        && request.resource.data.status == 'pending';
+      allow update: if (isOwner(userId) && request.resource.data.status == 'pending')
+        || isProfileAdmin();
+      allow delete: if false;
+    }
+
+    // Business ratings — one 1..5 star doc per rater per business. Anyone
+    // signed in may read (avg/count derivation); a user writes ONLY their own
+    // rating doc and may NOT rate their own business. The avg/count aggregate
+    // is denormalized onto profiles/{businessId}.ratingSum / .ratingCount.
+    match /business_ratings/{businessId}/ratings/{raterId} {
+      allow read: if isSignedIn();
+      allow create, update, delete: if isOwner(raterId) && raterId != businessId;
+    }
+
+    // ============================================================================
+    // EVENTS ("GreenGo Events") — public/private events with RSVP + chat
+    // ============================================================================
+    match /events/{eventId} {
+      function isOrganizer() {
+        return isSignedIn() && resource.data.organizerId == request.auth.uid;
+      }
+      // Co-owner added by the creator (coOrganizerIds, max 5). Organizer-level
+      // rights EXCEPT delete, changing ownership / the co-owner list, and the
+      // paid boost fields (see the co-owner update rule below).
+      function isCoOrganizer() {
+        return isSignedIn()
+          && request.auth.uid in resource.data.get('coOrganizerIds', []);
+      }
+      // The co-owner list must stay a list of at most 5 ids, never containing
+      // the creator. Absent (every event created before co-owners) is fine.
+      function validCoOrganizers(data) {
+        return !('coOrganizerIds' in data)
+          || (data.coOrganizerIds is list
+              && data.coOrganizerIds.size() <= 5
+              && !(data.organizerId in data.coOrganizerIds));
+      }
+      function isEventAttendee() {
+        return isSignedIn() &&
+          exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid));
+      }
+      // Paid event (ticket_payments/): price > 0 or a ticket provider set.
+      // Mirrors isPaidEvent() in functions/src/ticket_payments/orders.ts.
+      function isPaidEventData(d) {
+        return (d.get('price', null) is number && d.get('price', 0) > 0)
+          || d.get('ticketProvider', null) != null;
+      }
+
+      // Events are readable by any signed-in user. The client's list queries
+      // (feed / nearby / community / search / Going tab / cancel-series) filter
+      // visibility CLIENT-SIDE; Firestore rejects an entire list query when the
+      // read rule isn't statically guaranteed by the query constraints, so a
+      // visibility-gated read here broke event browsing wholesale. Private-event
+      // read-isolation, if required, must instead be done by adding
+      // `where('visibility','==','public')` to every list query + matching
+      // composite indexes (tracked follow-up) — NOT by re-tightening this rule.
+      allow read: if isSignedIn();
+      // Paid tickets: per-user limit (null / 0 = none, else 1..100) and the
+      // sale mode ('link' = organizer confirms, 'stripe' / 'mercadopago' = instant).
+      function validTicketing(d) {
+        return (d.get('maxTicketsPerUser', null) == null
+                || (d.maxTicketsPerUser is int && d.maxTicketsPerUser >= 0 && d.maxTicketsPerUser <= 100))
+          && (d.get('ticketProvider', null) == null
+              || d.ticketProvider in ['link', 'stripe', 'mercadopago']);
+      }
+      // Creator must set themselves as organizer.
+      allow create: if isSignedIn()
+        && request.resource.data.organizerId == request.auth.uid
+        && validCoOrganizers(request.resource.data)
+        && validTicketing(request.resource.data);
+      // Delete stays CREATOR-only (co-owners cannot delete).
+      allow delete: if isOrganizer();
+      // Organizer has full update rights. Additionally ANY signed-in user may
+      // update ONLY the denormalized RSVP counters (`attendeeCount` and the
+      // per-tier `tierGoingCounts` map) — this powers the join / waitlist /
+      // auto-promotion transactions that run as the joining/cancelling user.
+      // ADDITIVE PHASE (old apps still in the field): counters stay writable
+      // as before on every event. TIGHTEN LATER: paid events -> viewCount only.
+      allow update: if (isOrganizer() && validCoOrganizers(request.resource.data)
+                        && validTicketing(request.resource.data))
+        || (isSignedIn()
+            && request.resource.data.diff(resource.data).affectedKeys()
+                 .hasOnly(['attendeeCount', 'tierGoingCounts', 'viewCount']));
+      // Co-owners may edit and boost the event like the organiser, but NEVER
+      // the creator-only fields: ownership (organizerId + the host name/photo
+      // snapshot) or the co-owner list itself. Mirrors kEventCreatorOnlyFields
+      // in the Event entity.
+      allow update: if isCoOrganizer()
+        && !request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
+                       'coOrganizerIds']);
+
+      match /attendees/{uid} {
+        function parentEvent() {
+          return get(/databases/$(database)/documents/events/$(eventId)).data;
+        }
+        // Creator OR co-owner: runs the door (check-in) and sees the roster.
+        function parentOrganizer() {
+          return parentEvent().organizerId == request.auth.uid
+            || request.auth.uid in parentEvent().get('coOrganizerIds', []);
+        }
+        // Who may see the roster, decided by the organiser on the event.
+        // Enforced HERE and not only in the UI: hiding a guest list that the
+        // API still hands out is not hiding it.
+        //
+        // Absent or unknown values fall back to 'participants', matching the
+        // client default - every event created before this setting existed
+        // reads as participants-only rather than suddenly public.
+        function rosterVisibility() {
+          return parentEvent().get('attendeeListVisibility', 'participants');
+        }
+        function canSeeRoster() {
+          return isSignedIn() && (
+            // Your own RSVP is always yours to read.
+            uid == request.auth.uid
+            || parentOrganizer()
+            || rosterVisibility() == 'public'
+            || (rosterVisibility() == 'participants' && isEventAttendee())
+          );
+        }
+        allow read: if canSeeRoster();
+        function paidEvent() {
+          return isPaidEventData(parentEvent());
+        }
+        // Ticket fields are written ONLY by the server when a payment is
+        // confirmed (ticket_payments/orders.ts markOrderPaid).
+        function touchesTicket() {
+          return request.resource.data.get('ticketId', null) != resource.data.get('ticketId', null)
+            || request.resource.data.get('ticketStatus', null) != resource.data.get('ticketStatus', null)
+            || request.resource.data.get('paidAt', null) != resource.data.get('paidAt', null);
+        }
+        // On a paid event nobody admits THEMSELVES: 'going' (or a waitlist
+        // place) comes only with a confirmed ticket. The organizer may still
+        // add people to the roster (comps) - they get no paid ticket / QR.
+        function selfAdmitsOnPaid() {
+          return request.auth.uid == uid && !parentOrganizer() && paidEvent()
+            && request.resource.data.get('status', '') in ['going', 'waitlist'];
+        }
+        // QR check-in is SERVER-ONLY since 4.4.0 (checkInEventAttendee
+        // verifies a signed ticket, the door rights and the time window). No
+        // client - not the attendee, not the organizer - may touch these.
+        // Compared by VALUE with absent == not checked in, so an RSVP re-save
+        // that writes checkedIn: false / checkedInAt: null onto an older doc
+        // without those fields is still allowed.
+        function touchesCheckIn() {
+          return request.resource.data.get('checkedIn', false) != resource.data.get('checkedIn', false)
+            || request.resource.data.get('checkedInAt', null) != resource.data.get('checkedInAt', null)
+            || request.resource.data.get('checkedInBy', null) != resource.data.get('checkedInBy', null)
+            || request.resource.data.get('checkInMethod', null) != resource.data.get('checkInMethod', null);
+        }
+        // A user manages only their OWN attendee doc — RSVP status, privacy
+        // flags and guestCount (QR ticket "bring guests"). The organizer (and
+        // any co-owner) may manage ANY attendee doc (roster), but never the
+        // check-in fields. A new RSVP starts NOT checked in.
+        allow create: if isSignedIn()
+          && (request.auth.uid == uid || parentOrganizer())
+          && request.resource.data.get('checkedIn', false) == false
+          && request.resource.data.get('checkedInAt', null) == null
+          && !('checkedInBy' in request.resource.data)
+          && !('checkInMethod' in request.resource.data)
+          && !('ticketId' in request.resource.data)
+          && !('ticketStatus' in request.resource.data)
+          && !('paidAt' in request.resource.data);
+          // TIGHTEN LATER: && !selfAdmitsOnPaid()
+        allow update: if isSignedIn()
+          && (request.auth.uid == uid || parentOrganizer())
+          && !touchesCheckIn()
+          && !touchesTicket();
+          // TIGHTEN LATER: no self going / waitlist and frozen guestCount on paid events.
+        allow delete: if isSignedIn()
+          && (request.auth.uid == uid || parentOrganizer());
+        // Waitlist auto-promotion: when a "going" attendee cancels, the
+        // cancelling user promotes the oldest waitlisted attendee. Allow any
+        // signed-in user to update ANOTHER attendee doc ONLY to flip status
+        // from 'waitlist' to 'going' (they can promote, never demote/delete).
+        // Never on a paid event: a waitlist place there is not a paid seat.
+        allow update: if isSignedIn()
+          && resource.data.status == 'waitlist'
+          && request.resource.data.status == 'going'
+          // TIGHTEN LATER: && !paidEvent()
+          && !touchesCheckIn()
+          && !touchesTicket();
+        // Delegated scanners (allowedScannerIds) no longer write here: they
+        // check people in through checkInEventAttendee like the organizer.
+      }
+
+      // Ticket types (paid tickets): the organizer / co-owners manage them;
+      // the sale counters (sold / held) are written ONLY by the server
+      // (createTicketCheckout + payment confirmation, in transactions).
+      match /ticket_types/{typeId} {
+        function typeOwner() {
+          return isSignedIn() && (
+            get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid
+            || request.auth.uid in get(/databases/$(database)/documents/events/$(eventId)).data.get('coOrganizerIds', []));
+        }
+        function validType(d) {
+          return d.name is string && d.name.size() >= 1 && d.name.size() <= 80
+            && (d.get('description', null) == null || (d.description is string && d.description.size() <= 300))
+            && d.price is int && d.price >= 0
+            && (d.get('quantity', null) == null || (d.quantity is int && d.quantity >= 0 && d.quantity <= 100000))
+            && (d.get('maxPerUser', null) == null || (d.maxPerUser is int && d.maxPerUser >= 0 && d.maxPerUser <= 100))
+            && (d.get('hidden', false) is bool) && (d.get('active', true) is bool)
+            && (d.get('sortOrder', 0) is int);
+        }
+        allow read: if isSignedIn();
+        allow create: if typeOwner() && validType(request.resource.data)
+          && request.resource.data.get('sold', 0) == 0
+          && request.resource.data.get('held', 0) == 0;
+        allow update: if typeOwner() && validType(request.resource.data)
+          && request.resource.data.get('sold', 0) == resource.data.get('sold', 0)
+          && request.resource.data.get('held', 0) == resource.data.get('held', 0);
+        // A type with sold tickets is never deleted (stop selling instead);
+        // already issued tickets keep their own type name and price.
+        allow delete: if typeOwner() && resource.data.get('sold', 0) == 0 && resource.data.get('held', 0) == 0;
+      }
+
+      // Likes — one doc per user; likeCount kept current by onEventLikeWrite CF.
+      match /likes/{uid} {
+        allow read: if isSignedIn();
+        allow write: if isSignedIn() && request.auth.uid == uid;
+      }
+
+      match /messages/{messageId} {
+        // Creator OR co-owner.
+        function parentOrganizer() {
+          return get(/databases/$(database)/documents/events/$(eventId)).data.organizerId == request.auth.uid
+            || request.auth.uid in get(/databases/$(database)/documents/events/$(eventId)).data.get('coOrganizerIds', []);
+        }
+        function members() {
+          return isSignedIn() && (
+            exists(/databases/$(database)/documents/events/$(eventId)/attendees/$(request.auth.uid)) ||
+            parentOrganizer()
+          );
+        }
+        allow read: if members();
+        // Normal messages by any member (sender == self); broadcasts by the
+        // organizer / co-owners only.
+        allow create: if members()
+          && request.resource.data.senderId == request.auth.uid
+          && (request.resource.data.isBroadcast != true || parentOrganizer());
+        // Sender edits/deletes their own; the organizer (or a co-owner) may
+        // delete any message (needed to cascade-delete an event that has
+        // attendee chat, and for chat moderation).
+        allow update, delete: if isSignedIn()
+          && (resource.data.senderId == request.auth.uid || parentOrganizer());
+      }
+    }
+
+    // ============================================================================
+    // COLLECTIONS THAT PREVIOUSLY RELIED ON THE CATCH-ALL
+    // ============================================================================
+    // Until v4.0.0 this file ended with:
+    //
+    //   match /{document=**} { allow read: if isSignedIn(); }
+    //
+    // Firestore evaluates every matching rule and grants if ANY allows - there
+    // is no deny-overrides-allow - so that one block made every document in the
+    // database readable by any signed-in user, and silently defeated every
+    // narrower read rule above it, including the one on admin_users. It was
+    // found by an emulator test, not by reading the file.
+    //
+    // It could not simply be deleted: these collections had no rules of their
+    // own and would have been denied outright. They are grouped below by what
+    // they actually need.
+
+    // ── Public reference content ────────────────────────────────────────────
+    // Authored by us, served to everyone, never written by a client.
+    match /cultural_tips/{docId}       { allow read: if isSignedIn(); allow write: if false; }
+    match /daily_phrases/{docId}       { allow read: if isSignedIn(); allow write: if false; }
+    match /dating_etiquette/{docId}    { allow read: if isSignedIn(); allow write: if false; }
+    match /country_spotlights/{docId}  { allow read: if isSignedIn(); allow write: if false; }
+    match /safety_lessons/{docId}      { allow read: if isSignedIn(); allow write: if false; }
+    match /safety_modules/{docId}      { allow read: if isSignedIn(); allow write: if false; }
+    match /icebreakers/{docId}         { allow read: if isSignedIn(); allow write: if false; }
+    match /vocabulary_images/{docId}   { allow read: if isSignedIn(); allow write: if false; }
+    match /vocabulary_sentences/{docId}{ allow read: if isSignedIn(); allow write: if false; }
+    match /months/{docId}              { allow read: if isSignedIn(); allow write: if false; }
+    match /features/{docId}            { allow read: if isSignedIn(); allow write: if false; }
+    match /membership_config/{docId}   { allow read: if isSignedIn(); allow write: if false; }
+    match /event_country_stats/{docId} { allow read: if isSignedIn(); allow write: if false; }
+
+    // ── Per-user data, keyed by uid ─────────────────────────────────────────
+    match /userSettings/{userId}           { allow read, write: if isOwner(userId); }
+    match /user_stats/{userId}             { allow read, write: if isOwner(userId); }
+    match /userLevels/{userId}             { allow read, write: if isOwner(userId); }
+    match /user_badge_preferences/{userId} { allow read, write: if isOwner(userId); }
+    match /safety_progress/{userId}        { allow read, write: if isOwner(userId); }
+
+    // ── Per-user data, owned through a userId field ─────────────────────────
+    // The client queries these with where('userId', '==', uid), which is what
+    // lets a list request satisfy a rule written against resource.data.
+    match /userBadges/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;  // awarded server-side
+    }
+    match /userChallenges/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /userAchievements/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /user_achievements/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /user_challenges/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /language_progress/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+
+    // ── Money and orders ────────────────────────────────────────────────────
+    // The sharpest edge of the catch-all: every signed-in user could read every
+    // order and purchase in the system - amounts, products, who bought what.
+    // Written only by the purchase-verification callables and Stripe webhooks,
+    // which run on the Admin SDK.
+    match /orders/{orderId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /purchases/{purchaseId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    match /stripe_orders/{orderId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+    // Stripe server-side state (payments/stripeCore.ts, stripeReconcile.ts).
+    // Admin SDK only; admin-panel users may read for review. Never client-written.
+    //   stripe_events            webhook event dedupe markers
+    //   stripe_invoices          one membership grant per paid invoice
+    //   stripe_revocations       refund / dispute actions
+    //   stripe_customers         trusted uid -> Stripe customer mapping
+    //   stripe_payment_flags     payments flagged for owner review
+    //   stripe_reconciliation_runs / stripe_reconcile_state  12-hourly job
+    match /stripe_events/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_invoices/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_revocations/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_customers/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_payment_flags/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_reconciliation_runs/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /stripe_reconcile_state/{docId} {
+      allow read: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /account_actions/{docId} {
+      allow read: if isSignedIn() && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+
+    // ── Social and business ─────────────────────────────────────────────────
+    match /businesses/{businessId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('ownerId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+    match /ratings/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+    match /reviews/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn()
+        && request.resource.data.get('userId', '') == request.auth.uid;
+      allow delete: if false;
+    }
+    match /spots/{docId} {
+      allow read: if isSignedIn();
+      // The app stores the author as `createdByUserId` (older docs may use
+      // `createdBy`); the rule used to check only `createdBy`, which denied
+      // every spot create/update.
+      allow create: if isSignedIn()
+        && (request.resource.data.get('createdByUserId', '') == request.auth.uid
+            || request.resource.data.get('createdBy', '') == request.auth.uid);
+      allow update: if isSignedIn()
+        && ((resource.data.get('createdByUserId', '') == request.auth.uid
+              || resource.data.get('createdBy', '') == request.auth.uid)
+            // The author can never be reassigned.
+            && request.resource.data.get('createdByUserId', '')
+               == resource.data.get('createdByUserId', '')
+            // Any reviewer refreshes ONLY the aggregate after adding a review.
+            || (request.resource.data.diff(resource.data).affectedKeys()
+                  .hasOnly(['rating', 'reviewCount'])
+                && request.resource.data.rating is number
+                && request.resource.data.rating >= 0
+                && request.resource.data.rating <= 5
+                && request.resource.data.reviewCount is int
+                && request.resource.data.reviewCount >= 0));
+      allow delete: if false;
+    }
+    match /cards/{docId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // ── Internal ────────────────────────────────────────────────────────────
+    // No client business reading any of these. The Admin SDK bypasses rules, so
+    // denying everything here costs the server nothing.
+    //
+    // `leads` in particular was a commercial exposure as much as a privacy one:
+    // a lead list readable by every signed-in user.
+    match /admins/{docId}         { allow read, write: if false; }
+    match /ai_cache/{docId}       { allow read, write: if false; }
+    match /feature_trials/{docId} { allow read, write: if false; }
+    match /leads/{docId}          { allow read, write: if false; }
+    match /flashcard_decks/{docId}{ allow read, write: if false; }
+
+    // ── Features that live only in the web client ───────────────────────────
+    // conversation expiry, the date scheduler, virtual gifts and vibe tags are
+    // not in the mobile app at all. The first pass at these rules scanned one
+    // repository, missed them, and took the web app down with a grey screen
+    // after login. tool/firestore_access_inventory.py now scans both.
+
+    // Keyed by conversationId. Membership lives on the conversation document,
+    // which rules cannot join to cheaply, so this follows the same approach as
+    // the chat media paths: signed-in read, and the write is bound to someone
+    // who can already see the conversation.
+    match /conversationExpiry/{conversationId} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn();
+    }
+
+    // Queried with where('participants', arrayContains: uid), so a rule on
+    // resource.data.participants is what makes that query legal.
+    match /scheduledDates/{dateId} {
+      allow read: if isSignedIn()
+        && request.auth.uid in resource.data.get('participants', []);
+      allow create: if isSignedIn()
+        && request.auth.uid in request.resource.data.get('participants', []);
+      allow update: if isSignedIn()
+        && request.auth.uid in resource.data.get('participants', []);
+      allow delete: if false;
+    }
+
+    // Queried by receiverId, and also by sender. Either party may read; the
+    // sender creates. Nobody edits a gift after the fact.
+    match /sentVirtualGifts/{giftId} {
+      allow read: if isSignedIn()
+        && (resource.data.get('receiverId', '') == request.auth.uid
+            || resource.data.get('senderId', '') == request.auth.uid);
+      allow create: if isSignedIn()
+        && request.resource.data.get('senderId', '') == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // vibeTags is the catalogue; userVibeTags is one document per user.
+    match /vibeTags/{tagId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+    match /userVibeTags/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId);
+    }
+
+    // Gamification claim ledger. Written server-side when a reward is granted.
+    match /level_rewards_claimed/{docId} {
+      allow read: if isSignedIn()
+        && resource.data.get('userId', '') == request.auth.uid;
+      allow write: if false;
+    }
+
+    // ── Collection group queries ────────────────────────────────────────────
+    // These are the ones that made the outage worse, because nothing in the
+    // rules file hinted they were needed. A collectionGroup query is evaluated
+    // against `match /{path=**}/<name>/{id}` and NOTHING else - a root-level
+    // match on the same name does not satisfy it, which is why the previous
+    // version passed review and still failed.
+    //
+    // The client runs exactly two:
+    //   collectionGroup('attendees')  - events the user is going to
+    //   collectionGroup('members')    - communities and groups the user is in
+    //
+    // Both are scoped to the caller, so a user can only enumerate their own
+    // membership rows rather than reading every attendee list in the system.
+    match /{path=**}/attendees/{attendeeId} {
+      allow read: if isSignedIn()
+        && (attendeeId == request.auth.uid
+            || resource.data.get('userId', '') == request.auth.uid);
+    }
+    match /{path=**}/members/{memberId} {
+      allow read: if isSignedIn()
+        && (memberId == request.auth.uid
+            || resource.data.get('userId', '') == request.auth.uid);
+    }
+
+    // ============================================================================
+    // USER EXPERIENCES (member-hosted) + REVIEWS + REPLIES
+    // ============================================================================
+    // Creation goes ONLY through the createUserExperience callable: it enforces
+    // the per-tier limit (FREE 0 / SILVER 1 / GOLD 5 / PLATINUM, TEST, admin
+    // unlimited, on the EFFECTIVE tier) in one transaction with the
+    // user_experience_counts counter, validates + moderates the payload and sets
+    // every server-owned field. Hosts then edit / publish / unpublish / delete
+    // directly. status 'hidden' is moderation-only (trigger / admin): the host
+    // can neither set it nor move a listing out of it. Ratings are maintained by
+    // the onExperienceReviewWritten trigger; moderation of reviews / replies by
+    // the triggers too (status visible | rejected, never client-set).
+    match /user_experiences/{experienceId} {
+      function serverOwnedExperienceFields() {
+        return ['hostId', 'createdAt', 'ratingSum', 'ratingCount', 'ratingAvg',
+                'ratingDist', 'reviewCount', 'viewCount', 'moderation',
+                'hostRatingCounted', 'reportCount',
+                // Community link: set only by createUserExperience; immutable.
+                'communityId', 'communityName',
+                // Explore "Top experiences" promotion: admin callable
+                // setExperienceFeatured only.
+                'isFeatured', 'featuredUntil',
+                // Recurring schedule: validated by updateExperienceAvailability.
+                'availabilityRules', 'availabilityOverrides'];
+      }
+      // ── Phase 1 safety (mirrors functions/src/user_experiences/safety.ts) ──
+      function hostProfileData() {
+        return get(/databases/$(database)/documents/profiles/$(request.auth.uid)).data;
+      }
+      // ID document APPROVED (age-assurance flow; isAgeVerified is server-owned).
+      function hostIdApproved(p) {
+        return p.get('isAgeVerified', false) == true
+          || p.get('ageVerification', {}).get('status', '') == 'verified';
+      }
+      // The listing takes money: paid, or carries a payment link.
+      function takesPayment(d) {
+        return d.get('isFree', false) != true || d.get('paymentLink', null) != null;
+      }
+      // A client may only WRITE status 'published' on a listing that already
+      // is published: every publish goes through publishUserExperience (ID
+      // document, host agreement, approved document for paid, new-host paid
+      // limit — a count rules cannot do). While published, edits keep a free
+      // listing free; a listing already taking payment may be edited only by
+      // a host whose document is approved (e.g. changing the payment link).
+      function publishWriteAllowed() {
+        return request.resource.data.status != 'published'
+          || (resource.data.status == 'published'
+              && (!takesPayment(request.resource.data)
+                  || (takesPayment(resource.data)
+                      && hostIdApproved(hostProfileData()))));
+      }
+      function validExperienceText(d) {
+        return d.title is string && d.title.size() >= 5 && d.title.size() <= 80
+          && d.description is string && d.description.size() >= 30
+          && d.description.size() <= 2000
+          && d.photoUrls is list && d.photoUrls.size() <= 8
+          && d.included is list && d.included.size() >= 1
+          && d.included.size() <= 20
+          && d.notIncluded is list && d.notIncluded.size() <= 20
+          // Fixed cancellation policy + optional host notes (≤ 300).
+          && (d.get('cancellationNotes', null) == null
+              || (d.cancellationNotes is string
+                  && d.cancellationNotes.size() <= 300))
+          // Payment methods: cash at the meeting and/or the online link.
+          && (d.get('paymentMethods', null) == null
+              || (d.paymentMethods is list
+                  && d.paymentMethods.size() <= 2
+                  && d.paymentMethods.toSet().hasOnly(['cash', 'link'])
+                  || (d.paymentMethods is list
+                      && d.paymentMethods.size() == 1
+                      && d.paymentMethods[0] == 'online'
+                      && d.get('paymentProvider', null) in ['stripe', 'mercadopago', 'link'])))
+          // Paid tickets (ticket_payments/): provider + link-mode method.
+          && (d.get('paymentProvider', null) == null
+              || d.paymentProvider in ['stripe', 'mercadopago', 'link'])
+          && (d.get('paymentLinkMethod', null) == null
+              || d.paymentLinkMethod in ['pix', 'picPay', 'paypal', 'venmo',
+                   'cashApp', 'revolut', 'wise', 'monzo', 'kofi', 'cash', 'bankTransfer'])
+          && (d.get('paymentInstructions', null) == null
+              || (d.paymentInstructions is string && d.paymentInstructions.size() <= 500))
+          && (d.get('pricingMode', 'per_person') in ['per_person', 'per_group'])
+          && (d.get('pricingMode', 'per_person') == 'per_person'
+              || d.get('isFree', false) == true
+              || (d.get('groupPrice', null) is int && d.groupPrice > 0
+                  && d.maxGroupSize is int && d.maxGroupSize >= 2 && d.maxGroupSize <= 100))
+          && (d.get('maxTicketsPerUser', null) == null
+              || (d.maxTicketsPerUser is int && d.maxTicketsPerUser >= 0 && d.maxTicketsPerUser <= 100))
+          && (d.get('weekendPrice', null) == null
+              || (d.weekendPrice is number && d.weekendPrice > 0))
+          && (d.get('weekendDays', null) == null
+              || (d.weekendDays is list && d.weekendDays.size() <= 7))
+          // Bookings: the host approves each request (snapshotted per booking).
+          && (d.get('requestToBook', false) is bool);
+      }
+
+      allow get, list: if isSignedIn()
+        && (resource.data.status == 'published'
+            || resource.data.hostId == request.auth.uid);
+      allow create: if false;
+      allow update: if isSignedIn()
+        && resource.data.hostId == request.auth.uid
+        && !request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(serverOwnedExperienceFields())
+        // Door helpers the host authorises to scan guests in (checkInBooking
+        // reads this list): at most 10 ids, never the host.
+        && (!('allowedScannerIds' in request.resource.data)
+            || (request.resource.data.allowedScannerIds is list
+                && request.resource.data.allowedScannerIds.size() <= 10
+                && !(request.auth.uid in request.resource.data.allowedScannerIds)))
+        && validExperienceText(request.resource.data)
+        && publishWriteAllowed()
+        && (request.resource.data.status == resource.data.status
+            || (resource.data.status != 'hidden'
+                && request.resource.data.status in ['draft', 'published']));
+      allow delete: if isSignedIn()
+        && (resource.data.hostId == request.auth.uid || isAdmin());
+
+      // Guest consent before paying the host (one per guest; immutable
+      // evidence: no update / delete). The host may read a guest's consent.
+      match /booking_consents/{uid} {
+        allow get: if isSignedIn()
+          && (uid == request.auth.uid
+              || get(/databases/$(database)/documents/user_experiences/$(experienceId)).data.hostId
+                   == request.auth.uid);
+        allow list: if false;
+        allow create: if isSignedIn()
+          && uid == request.auth.uid
+          && request.resource.data.keys()
+               .hasOnly(['acceptedAt', 'policy', 'version', 'experienceId', 'method'])
+          && request.resource.data.get('method', 'link') in ['cash', 'link', 'online']
+          && request.resource.data.acceptedAt == request.time
+          && request.resource.data.policy in ['flexible', 'moderate', 'strict']
+          && request.resource.data.version is int
+          && request.resource.data.version >= 1
+          && request.resource.data.version <= 100
+          && request.resource.data.experienceId == experienceId;
+        allow update, delete: if false;
+      }
+
+      // -- Bookings (functions/src/experience_bookings) ------------------
+      // Bookable slots. Host-managed; bookedCount is server-owned (booking
+      // transactions). While seats are booked, start / end / status are
+      // frozen (cancel through the cancelExperienceSlot callable) and the
+      // capacity cannot drop below bookedCount. Cancelled slots are final.
+      match /slots/{slotId} {
+        function slotExperience() {
+          return get(/databases/$(database)/documents/user_experiences/$(experienceId)).data;
+        }
+        function validSlot(d) {
+          return d.keys().hasOnly(['start', 'end', 'capacity', 'bookedCount',
+                                   'status', 'createdAt', 'updatedAt'])
+            && d.start is timestamp && d.end is timestamp && d.end > d.start
+            && d.capacity is int && d.capacity >= 1 && d.capacity <= 500
+            && d.bookedCount is int
+            && d.status in ['open', 'cancelled'];
+        }
+        allow get, list: if isSignedIn()
+          && (slotExperience().status == 'published'
+              || slotExperience().hostId == request.auth.uid);
+        allow create: if isSignedIn()
+          && slotExperience().hostId == request.auth.uid
+          && validSlot(request.resource.data)
+          && request.resource.data.bookedCount == 0
+          && request.resource.data.status == 'open'
+          && request.resource.data.start > request.time;
+        allow update: if isSignedIn()
+          && slotExperience().hostId == request.auth.uid
+          && resource.data.status == 'open'
+          && validSlot(request.resource.data)
+          && request.resource.data.bookedCount == resource.data.bookedCount
+          && request.resource.data.capacity >= resource.data.bookedCount
+          && (resource.data.bookedCount == 0
+              || (request.resource.data.start == resource.data.start
+                  && request.resource.data.end == resource.data.end
+                  && request.resource.data.status == resource.data.status));
+        allow delete: if isSignedIn()
+          && slotExperience().hostId == request.auth.uid
+          && resource.data.bookedCount == 0;
+      }
+
+      // Server-written when a booking becomes reviewable (check-in or
+      // completion); deleted on a dispute. The guest reads their own.
+      match /review_eligibility/{guestId} {
+        allow get: if isOwner(guestId);
+        allow list, write: if false;
+      }
+
+      // The guest's BLIND review of this experience (double-blind with the
+      // host's guest_reviews/{bookingId}). Only its author can read it; status
+      // and revealAt are server fields. Needs the eligibility marker of the
+      // same booking.
+      match /pending_reviews/{reviewerId} {
+        function eligibility() {
+          return get(/databases/$(database)/documents/user_experiences/$(experienceId)/review_eligibility/$(reviewerId)).data;
+        }
+        function validPendingReview(d) {
+          return d.rating is int && d.rating >= 1 && d.rating <= 5
+            && d.comment is string && d.comment.size() <= 1000;
+        }
+        allow get: if isOwner(reviewerId);
+        allow list: if false;
+        allow create: if isOwner(reviewerId)
+          && request.resource.data.keys()
+               .hasOnly(['authorId', 'bookingId', 'rating', 'comment', 'createdAt', 'updatedAt'])
+          && request.resource.data.authorId == request.auth.uid
+          && request.resource.data.createdAt == request.time
+          && request.resource.data.updatedAt == request.time
+          && validPendingReview(request.resource.data)
+          && exists(/databases/$(database)/documents/user_experiences/$(experienceId)/review_eligibility/$(reviewerId))
+          && request.resource.data.bookingId == eligibility().bookingId
+          && request.time < eligibility().reviewUntil;
+        allow update: if isOwner(reviewerId)
+          && resource.data.get('status', 'pending') == 'pending'
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['rating', 'comment', 'updatedAt'])
+          && request.resource.data.updatedAt == request.time
+          && validPendingReview(request.resource.data);
+        allow delete: if isOwner(reviewerId)
+          && resource.data.get('status', 'pending') == 'pending';
+      }
+
+      // ONE review per user per experience: the doc id is the reviewer's uid.
+      match /reviews/{reviewerId} {
+        function reviewedExperience() {
+          return get(/databases/$(database)/documents/user_experiences/$(experienceId)).data;
+        }
+        function validReview(d) {
+          return d.rating is int && d.rating >= 1 && d.rating <= 5
+            && d.comment is string && d.comment.size() <= 1000;
+        }
+
+        allow get, list: if isSignedIn()
+          && (reviewerId == request.auth.uid
+              || resource.data.get('status', '') == 'visible');
+        // New reviews need a real booking: the guest writes
+        // pending_reviews/{uid} (above) and experience_bookings reveals it into
+        // this doc (Admin SDK) once the host reviewed too or 14 days passed.
+        // Existing reviews stay editable / deletable by their author.
+        allow create: if false;
+        allow update: if isSignedIn()
+          && reviewerId == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['rating', 'comment', 'updatedAt'])
+          && request.resource.data.updatedAt == request.time
+          && validReview(request.resource.data);
+        allow delete: if isSignedIn()
+          && (reviewerId == request.auth.uid || isAdmin());
+
+        match /replies/{replyId} {
+          allow get, list: if isSignedIn()
+            && (resource.data.get('status', '') == 'visible'
+                || resource.data.authorId == request.auth.uid);
+          allow create: if isSignedIn()
+            && request.resource.data.keys()
+                 .hasOnly(['authorId', 'text', 'mentions', 'createdAt'])
+            && request.resource.data.authorId == request.auth.uid
+            && request.resource.data.createdAt == request.time
+            && request.resource.data.text is string
+            && request.resource.data.text.size() >= 1
+            && request.resource.data.text.size() <= 500
+            && request.resource.data.mentions is list
+            && request.resource.data.mentions.size() <= 10
+            && exists(/databases/$(database)/documents/user_experiences/$(experienceId)/reviews/$(reviewerId))
+            && get(/databases/$(database)/documents/user_experiences/$(experienceId)).data.status == 'published';
+          allow update: if false;
+          allow delete: if isSignedIn()
+            && (resource.data.authorId == request.auth.uid || isAdmin());
+        }
+      }
+    }
+
+    // Per-host experience counter (written only by createUserExperience and
+    // the delete trigger); the host may read their own.
+    match /user_experience_counts/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // IDENTITY DOCUMENTS (server-only) — age-assurance document index and the
+    // 30-day retention entries (replaced documents / deleted accounts). Written
+    // and read ONLY by Cloud Functions (Admin SDK). No client access at all.
+    // DRAFT — lawyer review (fraud prevention, LGPD / GDPR Art. 6(1)(f)).
+    // ============================================================================
+    match /id_documents/{uid} {
+      allow read, write: if false;
+    }
+    match /id_document_retention/{entryId} {
+      allow read, write: if false;
+    }
+
+    // ============================================================================
+    // EXPERIENCE BOOKINGS (functions/src/experience_bookings)
+    // ============================================================================
+    // No money moves through GreenGo (cash / the host's link). Every write
+    // goes through the booking callables / jobs (Admin SDK); the guest and the
+    // host read their own bookings, admins read all.
+    // ============================================================================
+    // PAID TICKETS (functions/src/ticket_payments/) - ALL WRITES SERVER-ONLY
+    // ============================================================================
+    // Organizer payout accounts: public status only (no secrets). The owner reads.
+    match /payment_accounts/{uid} {
+      allow read: if isOwner(uid);
+      allow write: if false;
+    }
+    // MP OAuth tokens (sealed): no client access at all.
+    match /payment_accounts_private/{uid} {
+      allow read, write: if false;
+    }
+    // Orders: the buyer and the listing organizer read them (per-user indexed
+    // queries: buyerId / organizerId + status). Status changes only through
+    // callables + provider webhooks.
+    match /ticket_orders/{orderId} {
+      allow read: if isSignedIn()
+        && (resource.data.buyerId == request.auth.uid
+            || resource.data.organizerId == request.auth.uid);
+      allow write: if false;
+    }
+    // Issued tickets carry the signed QR: ONLY the buyer reads them.
+    match /tickets/{ticketId} {
+      allow read: if isSignedIn() && resource.data.buyerId == request.auth.uid;
+      allow write: if false;
+    }
+    // Per buyer + listing ticket counter (limit "you can buy N more"): the
+    // buyer reads their own; only the server writes.
+    match /ticket_holdings/{holdingId} {
+      allow read: if isSignedIn() && resource.data.uid == request.auth.uid;
+      allow write: if false;
+    }
+    // ticket_inventory, ticket_codes, payment_events, server_secrets: no
+    // match = default deny (server only).
+
+    match /bookings/{bookingId} {
+      allow get, list: if isSignedIn()
+        && (resource.data.guestId == request.auth.uid
+            || resource.data.hostId == request.auth.uid
+            || isAdminPanelUser() || isAdmin());
+      allow write: if false;
+    }
+
+    // Host -> guest review, one per booking (doc id = bookingId), written by
+    // the booking's host after check-in / completion / a no-show, within 30
+    // days of the end. status (held -> visible | rejected) and revealAt are
+    // server fields; it stays hidden until the guest's review is in or 14 days
+    // passed (double-blind). Aggregates into profiles.guestRating*.
+    match /guest_reviews/{bookingId} {
+      function reviewedBooking() {
+        return get(/databases/$(database)/documents/bookings/$(bookingId)).data;
+      }
+      allow get, list: if isSignedIn()
+        && (resource.data.get('status', '') == 'visible'
+            || resource.data.hostId == request.auth.uid
+            || isAdminPanelUser() || isAdmin());
+      allow create: if isSignedIn()
+        && request.resource.data.keys()
+             .hasOnly(['hostId', 'guestId', 'experienceId', 'rating', 'comment', 'createdAt'])
+        && request.resource.data.hostId == request.auth.uid
+        && reviewedBooking().hostId == request.auth.uid
+        && request.resource.data.guestId == reviewedBooking().guestId
+        && request.resource.data.experienceId == reviewedBooking().experienceId
+        && request.resource.data.rating is int
+        && request.resource.data.rating >= 1 && request.resource.data.rating <= 5
+        && request.resource.data.comment is string
+        && request.resource.data.comment.size() <= 500
+        && request.resource.data.createdAt == request.time
+        && (reviewedBooking().status in ['completed', 'no_show']
+            || (reviewedBooking().status == 'confirmed'
+                && reviewedBooking().get('checkIn', null) != null))
+        && request.time < reviewedBooking().slotEnd + duration.value(30, 'd');
+      allow update: if false;
+      allow delete: if isAdminPanelUser() || isAdmin();
+    }
+
+    // Host cancellation counter (3 in 90 days -> host_flags). Host reads own.
+    match /host_cancellation_stats/{uid} {
+      allow get: if isOwner(uid) || isAdminPanelUser();
+      allow list: if isAdminPanelUser();
+      allow write: if false;
+    }
+    match /host_flags/{uid} {
+      allow read: if isAdminPanelUser() || isAdmin();
+      allow write: if false;
+    }
+    // Set by resolveBookingDispute (hostAction suspend_hosting): no new bookings.
+    match /host_suspensions/{uid} {
+      allow get: if isOwner(uid) || isAdminPanelUser();
+      allow list: if isAdminPanelUser();
+      allow write: if false;
+    }
+    // server_secrets (check-in HMAC key) and booking_agg_events (aggregate
+    // dedupe) have no rule on purpose: DEFAULT DENY below.
+
+    // ============================================================================
+    // IMAGE MODERATION VERDICTS
+    // ============================================================================
+    // The moderateUploadedImage Storage trigger writes one document per upload,
+    // keyed by the object path with '/' replaced by '~'. The uploading client
+    // BLOCKS on this document before using the image anywhere, so it has to be
+    // able to read its own verdict.
+    //
+    // `resource == null` is allowed on read because the client starts listening
+    // before the trigger has written anything - without it, the listen fails
+    // instead of waiting, and the upload would break rather than hold.
+    // Written only by the trigger (Admin SDK), never by a client.
+    match /image_moderation/{docId} {
+      allow read: if isSignedIn()
+        && (resource == null
+            || resource.data.get('userId', '') == request.auth.uid);
+      allow write: if false;
+    }
+
+    // Consent records (functions/src/ai/aiGateway.ts recordConsent). The owner
+    // may READ their own summary doc so the app shows the true state of the
+    // "AI services" switch across devices (and GDPR art. 15 access). Writes
+    // stay server-only (recordConsent keeps the timestamped history); the
+    // `events` history subcollection stays server-only (default deny below:
+    // rules do not cascade to subcollections).
+    match /consents/{uid} {
+      allow get: if isSignedIn() && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+
+    // Rejected-image review queue. Admin-only: it indexes quarantined content.
+    match /moderation_queue/{itemId} {
+      allow read: if isAdminPanelUser() || isAdmin();
+      allow write: if false;
+    }
+
+    // P0 moderation alerts (safety/reportPipeline.ts). Server-written only.
+    match /admin_alerts/{alertId} {
+      allow read: if isAdminPanelUser() || isAdmin();
+      allow write: if false;
+    }
+
+    // ============================================================================
+    // DEFAULT DENY
+    // ============================================================================
+    // Written out rather than omitted, so the intent is explicit and nobody
+    // re-adds a permissive catch-all "because there wasn't one".
+    //
+    // A collection reaching this rule is denied. If something legitimate breaks
+    // after a deploy it will surface as permission-denied on a named path - add
+    // an explicit rule above, and add a case to tool/rules_security_test.cjs.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
