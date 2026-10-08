@@ -12,7 +12,8 @@
     <uses-permission android:name="android.permission.CAMERA"/>
 
     <!-- Storage Permissions (for photos/media) -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+                     android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
                      android:maxSdkVersion="32" />
 
@@ -21,8 +22,16 @@
          app sounds/recordings/URLs, but never reads the user's music library.
          If a plugin merges it in, strip it so Play's data-safety surface stays
          minimal. -->
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <!-- Play Photo & Video Permissions policy: the app only lets users pick
+         their own photos/videos through the system photo picker
+         (image_picker / file_picker), which needs no permission. Strip any
+         plugin-merged broad media permissions. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" tools:node="remove"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" tools:node="remove"/>
+    <!-- No ads / no advertising ID: strip what firebase_analytics merges in. -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove"/>
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"
         tools:node="remove"/>
 
@@ -38,7 +47,9 @@
     <application
         android:label="GreenGo"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:fullBackupContent="false">
         <activity
             android:name=".MainActivity"
             android:exported="true"

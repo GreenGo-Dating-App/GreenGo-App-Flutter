@@ -59,18 +59,16 @@
 	<true/>
 	<!-- Location -->
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>GreenGo needs your location to show people near you and calculate distances.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>GreenGo needs your location to show people near you and calculate distances.</string>
+	<string>GreenGo uses your location while you use the app to show nearby events, places and people, and approximate distances. Others never see your exact location.</string>
 	<!-- Camera -->
 	<key>NSCameraUsageDescription</key>
-	<string>GreenGo needs camera access to take photos for your profile.</string>
+	<string>GreenGo uses the camera when you choose to take profile, chat or event photos, scan a QR code, or photograph your ID for age verification.</string>
 	<!-- Microphone -->
 	<key>NSMicrophoneUsageDescription</key>
 	<string>GreenGo needs microphone access to record voice messages.</string>
 	<!-- Photo Library -->
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>GreenGo needs access to your photos to upload profile pictures.</string>
+	<string>GreenGo accesses the photos and videos you choose to share on your profile, in chats, communities and events.</string>
 	<!-- Push Notifications -->
 	<key>UIBackgroundModes</key>
 	<array>
