@@ -88,6 +88,9 @@ export function calculateLevelRewards(fromLevel: number, toLevel: number): Array
   return rewards;
 }
 
+/** Set to true to send the "Level Up!" in-app/push notification again. */
+const SEND_LEVEL_UP_NOTIFICATIONS = false;
+
 /**
  * Grant XP to a user - Business Logic Handler
  */
@@ -164,8 +167,10 @@ export async function handleGrantXP(params: GrantXPParams): Promise<GrantXPResul
     timestamp: FieldValue.serverTimestamp(),
   });
 
-  // Send level-up notification
-  if (leveledUp) {
+  // Level-up notification: switched off (owner decision 2026-10-08 - no
+  // level-up popups/pushes while messaging; progress is shown only in
+  // Profile > Progress & Growth). XP, levels and rewards are still recorded.
+  if (leveledUp && SEND_LEVEL_UP_NOTIFICATIONS) {
     const totalCoins = rewardsEarned.reduce((sum, r) => sum + r.coins, 0);
     await db.collection('notifications').add({
       userId: uid,
