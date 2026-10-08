@@ -4,8 +4,11 @@ rules_version = '2';
 //
 // Replaces the previous fully-open dev rules (allow read,write: if true).
 // Policy: uploads are authenticated + owner-scoped where the owner id is in the
-// path; media is readable by signed-in users (discovery/chat); ID-verification
-// images are readable ONLY by admins. Everything unmatched is denied.
+// path; profile media is readable by signed-in users (discovery); PRIVATE chat,
+// group and support media is readable/writable only by that chat's members
+// (cross-service Firestore lookups, see "PRIVATE CHAT MEDIA" below);
+// ID-verification images are readable ONLY by admins. Everything unmatched is
+// denied.
 // Admin = Firebase Auth custom claim `admin` (set via the admin migration).
 
 service firebase.storage {
@@ -55,23 +58,6 @@ service firebase.storage {
       allow write: if isOwner(ownerId) && validUpload();
     }
 
-    // Group chat media / voice — signed-in read+write (group membership is
-    // enforced in Firestore; Storage rules can't read the group doc).
-    match /group_media/{groupId}/{allPaths=**} {
-      allow read: if signedIn();
-      allow write: if signedIn() && validUpload();
-    }
-    match /group_voice/{groupId}/{allPaths=**} {
-      allow read: if signedIn();
-      allow write: if signedIn() && validUpload();
-    }
-
-    // Support-chat attachments — signed-in read+write (conversation-scoped).
-    match /support_attachments/{conversationId}/{allPaths=**} {
-      allow read: if signedIn();
-      allow write: if signedIn() && validUpload();
-    }
-
     // ID / verification images — keyed by the uploader's uid. The owner writes
     // AND may read them back (the reverification flow calls getDownloadURL right
     // after upload); admins read for review. Not readable by other users.
@@ -107,20 +93,175 @@ service firebase.storage {
         && request.resource.contentType.matches('image/.*');
     }
 
-    // 1:1 chat media (image / voice / video). Path is keyed by matchId; Storage
-    // rules can't read the match/conversation doc, so membership is enforced in
-    // Firestore. Signed-in read+write, same policy as group_media.
-    match /chat_images/{matchId}/{allPaths=**} {
-      allow read: if signedIn();
-      allow write: if signedIn() && validUpload();
+    // =====================================================================
+    // PRIVATE CHAT MEDIA (audit H-06 / L-01, plan P1-3)
+    //
+    // Was: any signed-in user could read AND overwrite every chat / group /
+    // support file, keyed only by a guessable id. Now each folder is readable
+    // and writable ONLY by the members of the chat its first path segment
+    // names, using cross-service Firestore lookups (firestore.get/exists).
+    // The app's upload paths are unchanged, so every released app version
+    // keeps working for legitimate members; only strangers are refused.
+    //
+    // DEPLOY PREREQUISITE: the Storage service agent
+    //   service-<PROJECT_NUMBER>@gcp-sa-firebasestorage.iam.gserviceaccount.com
+    // needs the role "Firebase Rules Firestore Service Agent"
+    // (roles/firebaserules.firestoreServiceAgent). Without it every
+    // firestore.get() below fails and chat-media uploads are denied.
+    //
+    // Limits: max 2 Firestore document reads per rules evaluation (Firebase
+    // hard limit); each is billed as a Firestore read. Viewing media through
+    // a tokenized download URL does NOT evaluate rules at all; only the
+    // uploader's getDownloadURL() right after upload, uploads and deletes do.
+    //
+    // Ops: `get` (download / getDownloadURL) and `create` for members;
+    // `list` is denied (the app never lists these folders); `update`
+    // (overwriting an existing object or its metadata) is denied (the app
+    // always writes a fresh uuid name); `delete` for members, restricted to
+    // the uploader once the object carries customMetadata.uploaderId.
+    // =====================================================================
+
+    // Admin-panel staff (adminRole claim, mirrored from admin_users) or the
+    // legacy `admin` claim. Free: no Firestore read.
+    function isStaff() {
+      return request.auth != null
+        && (request.auth.token.get('admin', false) == true
+            || request.auth.token.get('adminRole', '') in ['superAdmin', 'moderator', 'support']);
     }
-    match /chat_voice/{matchId}/{allPaths=**} {
-      allow read: if signedIn();
-      allow write: if signedIn() && validUpload();
+
+    // Same membership test as firestore.rules convMember(): the two 1:1
+    // participants, a group participant, or the assigned support agent.
+    function inConversation(c) {
+      return request.auth.uid == c.get('userId1', '')
+        || request.auth.uid == c.get('userId2', '')
+        || (c.get('participants', []) is list
+            && request.auth.uid in c.get('participants', []))
+        || request.auth.uid == c.get('supportAgentId', '');
     }
-    match /chat_videos/{matchId}/{allPaths=**} {
-      allow read: if signedIn();
-      allow write: if signedIn() && validUpload();
+
+    // Synthetic 1:1 chat keys carry both uids, so membership needs NO read:
+    //   search_{a}_{b} (sorted) | bizsearch_{owner}_{customer}
+    //   superlike_{sender}_{target} | gift_{a}_{b} (sorted)
+    // Firebase Auth uids are [A-Za-z0-9]{28}, so '_' splits unambiguously.
+    function isSyntheticChatKey(key) {
+      return key.matches('^(search|bizsearch|superlike|gift)_.*');
+    }
+    function inSyntheticChat(key) {
+      let p = key.split('_');
+      return p.size() == 3 && (p[1] == request.auth.uid || p[2] == request.auth.uid);
+    }
+
+    // 1:1 media folders are keyed by ChatScreen.matchId = the conversation's
+    // `matchId` FIELD. Besides the synthetic keys above it is either a
+    // matches/{id} doc id (userId1/userId2) or, for legacy pushes whose
+    // conversation had no matchId field, the conversations/{id} doc id.
+    // At most 2 Firestore reads; a missing doc errors, which only denies.
+    function isChatMember(key) {
+      return request.auth != null && (
+        isSyntheticChatKey(key)
+          ? inSyntheticChat(key)
+          : (inConversation(firestore.get(/databases/(default)/documents/matches/$(key)).data)
+             || inConversation(firestore.get(/databases/(default)/documents/conversations/$(key)).data))
+      );
+    }
+
+    // groups/{groupId}.participants (same source as firestore.rules).
+    function isGroupMember(groupId) {
+      return request.auth != null
+        && request.auth.uid in firestore.get(/databases/(default)/documents/groups/$(groupId)).data.participants;
+    }
+
+    // Support ticket = conversations/{conversationId} (userId1 = the user,
+    // supportAgentId = the assigned agent), plus any support staff.
+    function isSupportMember(conversationId) {
+      return request.auth != null && (
+        isStaff()
+        || inConversation(firestore.get(/databases/(default)/documents/conversations/$(conversationId)).data)
+        || firestore.exists(/databases/(default)/documents/admin_users/$(request.auth.uid))
+      );
+    }
+
+    // Uploads may only create NEW objects: an upload onto an existing name is
+    // refused even when the rules engine classifies it as `create` (the
+    // Storage emulator does), so nobody can replace someone else's media.
+    function isNewObject() {
+      return resource == null;
+    }
+
+    // Optional uploader stamp. Today's app does not set it (accepted); a
+    // client that DOES set customMetadata.uploaderId must set its own uid.
+    function uploaderStampOk() {
+      return request.resource.metadata == null
+        || request.resource.metadata.get('uploaderId', request.auth.uid) == request.auth.uid;
+    }
+    // Delete: when the object carries an uploaderId only that user (or
+    // staff) may delete it; legacy objects (no stamp) any member may delete
+    // (the app deletes its own just-uploaded image when moderation rejects it).
+    function deleterOk() {
+      return isStaff()
+        || resource.metadata == null
+        || resource.metadata.get('uploaderId', request.auth.uid) == request.auth.uid;
+    }
+
+    // Content-type allow-lists (lowercased) + per-folder size caps sized to
+    // the app's real usage. No application/*, text/*, or image/svg+xml
+    // (SVG/HTML can run script when a download URL is opened).
+    function mb(n) { return n * 1024 * 1024; }
+    function isChatImage(maxMb) {
+      return request.resource.size <= mb(maxMb)
+        && request.resource.contentType.lower().matches('image/(jpeg|jpg|pjpeg|png|gif|webp|heic|heif)');
+    }
+    function isChatAudio(maxMb) {
+      return request.resource.size <= mb(maxMb)
+        && request.resource.contentType.lower().matches('audio/(mp4|m4a|x-m4a|aac|mpeg|mp3|ogg|opus|webm|wav|x-wav|wave|3gpp|amr)');
+    }
+    // 1:1 video sends `video/<file extension>` (mp4, mov, 3gp, ...), so the
+    // subtype is not a fixed list; any video/* is accepted, never other types.
+    function isChatVideo(maxMb) {
+      return request.resource.size <= mb(maxMb)
+        && request.resource.contentType.lower().matches('video/.+');
+    }
+
+    // 1:1 chat images: app downsizes to <=1200px and compresses (~300 KB
+    // target), falling back to the 1200px original. 10 MB cap.
+    match /chat_images/{chatKey}/{allPaths=**} {
+      allow get: if isChatMember(chatKey) || isStaff();
+      allow create: if isChatMember(chatKey) && isChatImage(10) && uploaderStampOk() && isNewObject();
+      allow delete: if isChatMember(chatKey) && deleterOk();
+    }
+    // 1:1 voice notes: AAC-LC 128 kbps m4a (~1 MB/min), `audio/mp4`. 20 MB.
+    match /chat_voice/{chatKey}/{allPaths=**} {
+      allow get: if isChatMember(chatKey) || isStaff();
+      allow create: if isChatMember(chatKey) && isChatAudio(20) && uploaderStampOk() && isNewObject();
+      allow delete: if isChatMember(chatKey) && deleterOk();
+    }
+    // 1:1 video: the app refuses files > 50 MB and records <= 60 s.
+    match /chat_videos/{chatKey}/{allPaths=**} {
+      allow get: if isChatMember(chatKey) || isStaff();
+      allow create: if isChatMember(chatKey) && isChatVideo(50) && uploaderStampOk() && isNewObject();
+      allow delete: if isChatMember(chatKey) && deleterOk();
+    }
+
+    // Group media: image/jpeg (full-resolution re-encode at q80, so several
+    // MB on high-MP cameras: 20 MB cap) or video/mp4 (no client cap; 50 MB,
+    // the same ceiling the old rule had).
+    match /group_media/{groupId}/{allPaths=**} {
+      allow get: if isGroupMember(groupId) || isStaff();
+      allow create: if isGroupMember(groupId)
+        && (isChatImage(20) || isChatVideo(50)) && uploaderStampOk() && isNewObject();
+      allow delete: if isGroupMember(groupId) && deleterOk();
+    }
+    match /group_voice/{groupId}/{allPaths=**} {
+      allow get: if isGroupMember(groupId) || isStaff();
+      allow create: if isGroupMember(groupId) && isChatAudio(20) && uploaderStampOk() && isNewObject();
+      allow delete: if isGroupMember(groupId) && deleterOk();
+    }
+
+    // Support-chat attachments: images only (1920px q85 => well under 10 MB).
+    match /support_attachments/{conversationId}/{allPaths=**} {
+      allow get: if isSupportMember(conversationId);
+      allow create: if isSupportMember(conversationId) && isChatImage(10) && uploaderStampOk() && isNewObject();
+      allow delete: if isSupportMember(conversationId) && deleterOk();
     }
 
     // Business verification document — owner (userId in path) writes; the owner
