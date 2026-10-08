@@ -6587,10 +6587,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Subscrição $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -16309,6 +16306,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get distanceBucketOver25Km => 'a mais de 25 km';
+
+  @override
+  String distanceUnderKm(String km) {
+    return '< $km km';
+  }
+
+  @override
+  String distanceOverKm(String km) {
+    return '$km+ km';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -22901,10 +22908,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Assinatura $tierName ativa até $formattedDate$coinsText';
   }
 
@@ -32617,4 +32621,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get distanceBucketOver25Km => 'a mais de 25 km';
+
+  @override
+  String distanceUnderKm(String km) {
+    return '< $km km';
+  }
+
+  @override
+  String distanceOverKm(String km) {
+    return '$km+ km';
+  }
 }

@@ -8090,5 +8090,23 @@
   "distanceBucketOver25Km": "25+ km",
   "@distanceBucketOver25Km": {
     "description": "Approximate distance bucket: more than 25 km"
+  },
+  "distanceUnderKm": "< {km} km",
+  "@distanceUnderKm": {
+    "description": "Distance to another user as an upper limit, e.g. \"< 5 km\". km is pre-formatted.",
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "distanceOverKm": "{km}+ km",
+  "@distanceOverKm": {
+    "description": "Distance beyond the largest step, e.g. \"5,000+ km\". km is pre-formatted.",
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
   }
 }

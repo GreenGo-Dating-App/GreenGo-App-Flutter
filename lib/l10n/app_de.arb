@@ -5309,5 +5309,23 @@
   "distanceBucket2To5Km": "2-5 km",
   "distanceBucket5To10Km": "5-10 km",
   "distanceBucket10To25Km": "10-25 km",
-  "distanceBucketOver25Km": "über 25 km"
+  "distanceBucketOver25Km": "über 25 km",
+  "distanceUnderKm": "< {km} km",
+  "@distanceUnderKm": {
+    "description": "Distance to another user as an upper limit, e.g. \"< 5 km\". km is pre-formatted.",
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "distanceOverKm": "{km}+ km",
+  "@distanceOverKm": {
+    "description": "Distance beyond the largest step, e.g. \"5,000+ km\". km is pre-formatted.",
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  }
 }

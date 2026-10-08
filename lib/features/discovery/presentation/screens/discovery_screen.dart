@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:async';
 import 'dart:math';
 
@@ -172,6 +173,9 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
 
   /// Auto-detect grid columns based on available width
   int _autoColumns(double width) {
+    // Web: the discovery grid is always 6 columns (dense, desktop-style),
+    // except on very narrow browser windows where 6 tiles would be unusable.
+    if (kIsWeb) return width < 360 ? 4 : 6;
     if (width < 300) return 2;
     if (width < 450) return 3;
     if (width < 800) return 4;
@@ -186,7 +190,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   /// Get grid profile limit — starts at 50, extends up to max 500
   static const int _gridMaxProfiles = 500;
   int get _gridProfileLimit {
-    final cols = _gridColumns == 0 ? 3 : _gridColumns; // fallback for auto mode
+    final cols = _gridColumns == 0 ? (kIsWeb ? 6 : 3) : _gridColumns; // fallback for auto mode
     final limit = 50 + (_gridExtraPurchased * cols * 3);
     return limit.clamp(0, _gridMaxProfiles);
   }
@@ -1324,7 +1328,7 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
         mainAxisSize: MainAxisSize.min,
         // Wide screens (web) can pick denser grids (6 / 8 columns).
         children:
-            (MediaQuery.of(context).size.width >= 800
+            (kIsWeb || MediaQuery.of(context).size.width >= 800
                     ? const [0, 2, 4, 6, 8]
                     : const [0, 2, 3, 4])
                 .map((cols) {

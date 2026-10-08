@@ -1,70 +1,68 @@
-import 'dart:ui' show Locale;
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/core/utils/distance_bucket.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
+import 'package:flutter/material.dart';
 
 void main() {
-  group('distanceBucketFor', () {
-    test('bucket edges are lower-inclusive, upper-exclusive', () {
-      expect(distanceBucketFor(0), DistanceBucket.under2Km);
-      expect(distanceBucketFor(0.3), DistanceBucket.under2Km);
-      expect(distanceBucketFor(1.999), DistanceBucket.under2Km);
-      expect(distanceBucketFor(2), DistanceBucket.from2To5Km);
-      expect(distanceBucketFor(4.99), DistanceBucket.from2To5Km);
-      expect(distanceBucketFor(5), DistanceBucket.from5To10Km);
-      expect(distanceBucketFor(9.99), DistanceBucket.from5To10Km);
-      expect(distanceBucketFor(10), DistanceBucket.from10To25Km);
-      expect(distanceBucketFor(24.99), DistanceBucket.from10To25Km);
-      expect(distanceBucketFor(25), DistanceBucket.over25Km);
-      expect(distanceBucketFor(12000), DistanceBucket.over25Km);
+  group('distanceUpperLimitFor (owner scale: 2,5,10,30,50,100,200,500,1000,2000,5000,5000+)', () {
+    test('maps each distance to the first step above it', () {
+      expect(distanceUpperLimitFor(0), 2);
+      expect(distanceUpperLimitFor(1.99), 2);
+      expect(distanceUpperLimitFor(2), 5);
+      expect(distanceUpperLimitFor(9.99), 10);
+      expect(distanceUpperLimitFor(10), 30);
+      expect(distanceUpperLimitFor(29.9), 30);
+      expect(distanceUpperLimitFor(30), 50);
+      expect(distanceUpperLimitFor(99), 100);
+      expect(distanceUpperLimitFor(199), 200);
+      expect(distanceUpperLimitFor(499), 500);
+      expect(distanceUpperLimitFor(999), 1000);
+      expect(distanceUpperLimitFor(1999), 2000);
+      expect(distanceUpperLimitFor(4999), 5000);
     });
-
-    test('unknown distances have no bucket', () {
-      expect(distanceBucketFor(null), isNull);
-      expect(distanceBucketFor(double.nan), isNull);
-      expect(distanceBucketFor(double.infinity), isNull);
-      expect(distanceBucketFor(-1), isNull);
+    test('beyond 5000 km is the open-ended bucket (0)', () {
+      expect(distanceUpperLimitFor(5000), 0);
+      expect(distanceUpperLimitFor(19000), 0);
+    });
+    test('unknown distances', () {
+      expect(distanceUpperLimitFor(null), isNull);
+      expect(distanceUpperLimitFor(double.nan), isNull);
+      expect(distanceUpperLimitFor(-1), isNull);
+      expect(distanceUpperLimitFor(double.infinity), isNull);
     });
   });
 
-  group('distanceLabel', () {
-    final en = lookupAppLocalizations(const Locale('en'));
-
-    test('English labels', () {
-      expect(distanceLabel(en, 0.4), '< 2 km');
-      expect(distanceLabel(en, 3), '2-5 km');
-      expect(distanceLabel(en, 7.5), '5-10 km');
-      expect(distanceLabel(en, 18), '10-25 km');
-      expect(distanceLabel(en, 300), '25+ km');
-    });
-
-    test('never shows the exact figure', () {
-      for (final km in [0.37, 1.3, 3.14159, 8.2, 13.7, 42.0]) {
-        final label = distanceLabel(en, km);
-        expect(label, isNot(contains(km.toString())));
-        expect(label, isNot(contains(km.toStringAsFixed(1))));
+  group('distance filter steps', () {
+    test('index <-> km round trip; last index = no limit', () {
+      for (var i = 0; i < kDistanceStepsKm.length; i++) {
+        expect(distanceFilterIndexFor(distanceFilterKmForIndex(i)), i);
       }
+      expect(distanceFilterKmForIndex(kDistanceStepsKm.length), isNull);
+      expect(distanceFilterIndexFor(null), kDistanceStepsKm.length);
     });
+    test('old free-slider values snap UP (never narrower)', () {
+      expect(distanceFilterKmForIndex(distanceFilterIndexFor(1)), 2);
+      expect(distanceFilterKmForIndex(distanceFilterIndexFor(37)), 50);
+      expect(distanceFilterKmForIndex(distanceFilterIndexFor(150)), 200);
+      expect(distanceFilterKmForIndex(distanceFilterIndexFor(9000)), isNull);
+    });
+  });
 
-    test('0 is "unknown" by default (candidate models), a bucket on request',
-        () {
-      expect(distanceLabel(en, 0), '');
-      expect(distanceLabel(en, 0, zeroIsUnknown: false), '< 2 km');
-      expect(distanceLabel(en, null), '');
-    });
-
-    test('every supported locale has all five labels', () {
-      for (final locale in AppLocalizations.supportedLocales) {
-        final l10n = lookupAppLocalizations(locale);
-        final labels = DistanceBucket.values
-            .map((b) => distanceBucketText(l10n, b))
-            .toList();
-        expect(labels.every((l) => l.trim().isNotEmpty), isTrue,
-            reason: '$locale');
-        expect(labels.toSet().length, DistanceBucket.values.length,
-            reason: '$locale labels must be distinct');
-      }
-    });
+  testWidgets('labels are localized "< N km" / "5,000+ km"', (tester) async {
+    late AppLocalizations l10n;
+    await tester.pumpWidget(MaterialApp(
+      locale: const Locale('en'),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: Builder(builder: (c) { l10n = AppLocalizations.of(c)!; return const SizedBox(); }),
+    ));
+    expect(distanceLabel(l10n, 0.5), '< 2 km');
+    expect(distanceLabel(l10n, 0), '');
+    expect(distanceLabel(l10n, 0, zeroIsUnknown: false), '< 2 km');
+    expect(distanceLabel(l10n, 40), '< 50 km');
+    expect(distanceLabel(l10n, 1500), '< 2,000 km');
+    expect(distanceLabel(l10n, 8000), '5,000+ km');
+    expect(distanceFilterLabel(l10n, null), '5,000+ km');
+    expect(distanceFilterLabel(l10n, 37), '< 50 km');
   });
 }

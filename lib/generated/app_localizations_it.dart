@@ -6605,10 +6605,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-    String tierName,
-    String formattedDate,
-    String coinsText,
-  ) {
+      String tierName, String formattedDate, String coinsText) {
     return 'Abbonamento $tierName attivo fino al $formattedDate$coinsText';
   }
 
@@ -16324,4 +16321,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get distanceBucketOver25Km => 'a oltre 25 km';
+
+  @override
+  String distanceUnderKm(String km) {
+    return '< $km km';
+  }
+
+  @override
+  String distanceOverKm(String km) {
+    return '$km+ km';
+  }
 }

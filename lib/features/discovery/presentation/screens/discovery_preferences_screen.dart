@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../../core/utils/distance_bucket.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/config/flavor_config.dart';
@@ -775,9 +776,7 @@ class _DiscoveryPreferencesScreenState
                       ),
                     ),
                     Text(
-                      _preferences.maxDistanceKm != null
-                          ? l10n.preferenceDistanceKm(_preferences.maxDistanceKm!)
-                          : l10n.preferenceUnlimited,
+                      distanceFilterLabel(l10n, _preferences.maxDistanceKm),
                       style: const TextStyle(
                         color: AppColors.richGold,
                         fontSize: 16,
@@ -786,18 +785,22 @@ class _DiscoveryPreferencesScreenState
                     ),
                   ],
                 ),
+                // Stepped scale shared with the distance labels: < 2 km … < 5,000 km,
+                // last position = 5,000+ km (no limit).
                 Slider(
-                  value: (_preferences.maxDistanceKm?.toDouble() ?? 200).clamp(1, 200),
-                  min: 1,
-                  max: 200,
-                  divisions: 199,
+                  value: distanceFilterIndexFor(_preferences.maxDistanceKm).toDouble(),
+                  min: 0,
+                  max: kDistanceStepsKm.length.toDouble(),
+                  divisions: kDistanceStepsKm.length,
+                  label: distanceFilterLabel(l10n, _preferences.maxDistanceKm),
                   activeColor: AppColors.richGold,
                   inactiveColor: AppColors.divider,
                   onChanged: (double value) {
+                    final km = distanceFilterKmForIndex(value.round());
                     _updatePreferences(
-                      _preferences.copyWith(
-                        maxDistanceKm: value.toInt(),
-                      ),
+                      km == null
+                          ? _preferences.copyWith(clearMaxDistance: true)
+                          : _preferences.copyWith(maxDistanceKm: km),
                     );
                   },
                 ),
