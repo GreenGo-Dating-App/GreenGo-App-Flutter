@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -45,9 +46,33 @@ Future<void> _recordOnServer({required bool accepted, required int version}) asy
   });
 }
 
+/// Reads the server record (`consents/{uid}.ai_processing`, readable only by
+/// its owner): true = accepted, false = withdrawn ("AI services" OFF), null =
+/// no usable record. Throws when the record cannot be read (offline, or the
+/// rules that allow the owner to read it are not deployed yet).
+typedef AiConsentServerReader = Future<bool?> Function(String uid);
+
+Future<bool?> _readFromServer(String uid) async {
+  final snap = await FirebaseFirestore.instance
+      .collection('consents')
+      .doc(uid)
+      .get()
+      .timeout(const Duration(seconds: 8));
+  final c = snap.data()?['ai_processing'];
+  if (c is! Map) return null;
+  if (c['accepted'] == false) return false;
+  final v = c['version'];
+  if (c['accepted'] == true && v is num && v >= AiConsentService.currentVersion) {
+    return true;
+  }
+  return null;
+}
+
 /// One-time AI-processing consent, kept locally (per signed-in user) and
 /// recorded server-side in `consents/{uid}` (the AI callables refuse to run
-/// without the server record).
+/// without the server record). The user can turn AI services on or off at any
+/// time in Profile > Account settings (`AiServicesSettingsCard`); every change
+/// is a new `recordConsent` event (timestamped history on the server).
 ///
 /// [status] is synchronous so hot paths (every chat bubble) can check it
 /// without awaiting; call [load] once after sign-in (it is also called lazily
@@ -57,8 +82,10 @@ class AiConsentService {
     AiConsentStore? store,
     AiConsentRecorder? recorder,
     String? Function()? currentUid,
+    AiConsentServerReader? serverReader,
   })  : _store = store ?? SharedPrefsAiConsentStore(),
         _recorder = recorder ?? _recordOnServer,
+        _serverReader = serverReader ?? _readFromServer,
         _currentUid = currentUid ?? (() => FirebaseAuth.instance.currentUser?.uid);
 
   static AiConsentService instance = AiConsentService();
@@ -68,6 +95,7 @@ class AiConsentService {
 
   final AiConsentStore _store;
   final AiConsentRecorder _recorder;
+  final AiConsentServerReader _serverReader;
   final String? Function() _currentUid;
 
   /// Listen to react when the user decides (e.g. translate pending bubbles).
@@ -76,6 +104,9 @@ class AiConsentService {
 
   String? _loadedFor;
   bool _pendingSync = false;
+  // Bumped by every local decision, so a slower server read started before
+  // it cannot overwrite it.
+  int _decisionGen = 0;
   Future<void>? _loading;
 
   /// Whether the consent sheet was already shown (and dismissed without a
@@ -122,7 +153,44 @@ class AiConsentService {
     statusListenable.value = next;
     if (_pendingSync && next != AiConsentStatus.unknown) {
       unawaited(_sync(uid, next == AiConsentStatus.granted));
+    } else {
+      // The choice may have changed on another device (the "AI services"
+      // switch): the server record wins over this device's synced copy.
+      unawaited(refreshFromServer());
     }
+  }
+
+  /// Aligns this device with the server record (the source of truth the AI
+  /// callables check). A local decision that was not sent yet is newer and is
+  /// kept. Returns the status after the refresh. Never throws.
+  Future<AiConsentStatus> refreshFromServer() async {
+    final uid = _currentUid();
+    if (uid == null) return AiConsentStatus.unknown;
+    if (_pendingSync && uid == _loadedFor) return status;
+    final gen = _decisionGen;
+    final bool? server;
+    try {
+      server = await _serverReader(uid);
+    } catch (e) {
+      debugPrint('AiConsentService: server read failed: $e');
+      return status;
+    }
+    if (uid != _currentUid() || gen != _decisionGen || (_pendingSync && uid == _loadedFor)) {
+      return status;
+    }
+    final next = server == null
+        ? AiConsentStatus.unknown
+        : (server ? AiConsentStatus.granted : AiConsentStatus.declined);
+    _loadedFor = uid;
+    if (statusListenable.value != next) {
+      statusListenable.value = next;
+      if (next == AiConsentStatus.unknown) {
+        await _clearLocal(uid);
+      } else {
+        await _writeLocal(uid, next == AiConsentStatus.granted, synced: true);
+      }
+    }
+    return next;
   }
 
   /// [load] once per signed-in user.
@@ -137,6 +205,7 @@ class AiConsentService {
   Future<bool> setDecision({required bool accepted}) async {
     final uid = _currentUid();
     if (uid == null) return false;
+    _decisionGen++;
     _loadedFor = uid;
     statusListenable.value =
         accepted ? AiConsentStatus.granted : AiConsentStatus.declined;
@@ -146,10 +215,25 @@ class AiConsentService {
 
   /// The server answered AI_CONSENT_REQUIRED although this device says
   /// "granted" (e.g. the first send failed): send it again. True when the
-  /// caller may retry its AI request.
+  /// caller may retry its AI request. If the server record says the user
+  /// turned AI services OFF (e.g. on another device), that choice is adopted
+  /// here and nothing is re-sent: a withdrawal is never overridden silently.
   Future<bool> resyncAfterServerRejection() async {
     final uid = _currentUid();
     if (uid == null || !isGranted) return false;
+    if (!_pendingSync) {
+      bool? server;
+      try {
+        server = await _serverReader(uid);
+      } catch (_) {
+        server = null; // unreadable: behave as before (re-send)
+      }
+      if (server == false) {
+        statusListenable.value = AiConsentStatus.declined;
+        await _writeLocal(uid, false, synced: true);
+        return false;
+      }
+    }
     return _sync(uid, true);
   }
 
@@ -174,6 +258,18 @@ class AiConsentService {
       debugPrint('AiConsentService: local write failed: $e');
     }
   }
+
+  Future<void> _clearLocal(String uid) async {
+    try {
+      await _store.write(_key(uid), '{}');
+    } catch (e) {
+      debugPrint('AiConsentService: local clear failed: $e');
+    }
+  }
+
+  /// True while the latest decision made on this device has not reached
+  /// the server yet (it is retried on the next [load]).
+  bool get hasUnsyncedDecision => _pendingSync;
 
   @visibleForTesting
   bool get pendingSync => _pendingSync;

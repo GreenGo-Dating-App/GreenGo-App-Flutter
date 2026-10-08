@@ -41,15 +41,17 @@ import * as crypto from 'crypto';
 import '../shared/firebaseAdmin';
 import { AppError, handleError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
+import {
+  CONSENTS, AI_CONSENT_TYPE, AI_CONSENT_MIN_VERSION, requireAiConsent,
+} from '../shared/aiConsent';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
 
-export const CONSENTS = 'consents';
 export const AI_USAGE = 'ai_usage';
-export const AI_CONSENT_TYPE = 'ai_processing';
-/** Oldest consent-text version the server accepts for AI calls. */
-export const AI_CONSENT_MIN_VERSION = 1;
+// Consent record + check live in ../shared/aiConsent (shared with the message
+// translation callables and the support assistant); re-exported here.
+export { CONSENTS, AI_CONSENT_TYPE, AI_CONSENT_MIN_VERSION, requireAiConsent };
 /**
  * Consent records accepted by recordConsent (P2-5 / P2-6): AI processing, ID
  * verification (P2-6), analytics/crash reporting (ePrivacy art. 5(3)),
@@ -100,20 +102,6 @@ export function requireUid(request: any): string {
   const uid = request?.auth?.uid;
   if (!uid) throw new AppError('UNAUTHENTICATED', 'User must be authenticated', 401);
   return uid as string;
-}
-
-/** The caller must have ACCEPTED the AI-processing notice (server record). */
-export async function requireAiConsent(uid: string): Promise<void> {
-  const snap = await db().collection(CONSENTS).doc(uid).get();
-  const c = snap.data()?.[AI_CONSENT_TYPE];
-  if (!c || c.accepted !== true || !(Number(c.version) >= AI_CONSENT_MIN_VERSION)) {
-    throw new AppError(
-      'AI_CONSENT_REQUIRED',
-      'Please review and accept the AI processing notice first.',
-      403,
-      { reason: 'AI_CONSENT_REQUIRED' },
-    );
-  }
 }
 
 const dayKey = () => new Date().toISOString().slice(0, 10).replace(/-/g, '');

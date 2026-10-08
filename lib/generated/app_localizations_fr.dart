@@ -16806,4 +16806,50 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get profilePhotoNext => 'Photo suivante';
+
+  @override
+  String get aiServicesTitle => 'Services d\'IA';
+
+  @override
+  String get aiServicesSubtitleOn =>
+      'Activé : les fonctions d\'IA peuvent envoyer à Google le texte sur lequel vous les utilisez.';
+
+  @override
+  String get aiServicesSubtitleOff =>
+      'Désactivé : aucun texte n\'est envoyé à des services d\'IA.';
+
+  @override
+  String get aiServicesWhatsIncluded => 'Ce que couvre cet interrupteur';
+
+  @override
+  String get aiServicesFeatureCoach =>
+      'Réponses suggérées et le coach linguistique IA (grammaire, décomposition des mots, conseils culturels)';
+
+  @override
+  String get aiServicesFeatureTranslate =>
+      'Traduction des messages de chat que vous recevez';
+
+  @override
+  String get aiServicesFeatureReadAloud =>
+      'Lecture audio à voix haute et prononciation';
+
+  @override
+  String get aiServicesFeatureSupport =>
+      'Réponses automatiques de l\'assistant d\'assistance (si désactivé, une personne vous répond)';
+
+  @override
+  String get aiServicesSafetyNote =>
+      'Le contrôle de sécurité des photos et des messages reste toujours actif : il protège tout le monde et ne peut pas être désactivé.';
+
+  @override
+  String get aiServicesTurnedOff =>
+      'Services d\'IA désactivés. Votre choix a été enregistré.';
+
+  @override
+  String get aiServicesTurnedOn =>
+      'Services d\'IA activés. Votre choix a été enregistré.';
+
+  @override
+  String get aiServicesSyncPending =>
+      'Enregistré sur cet appareil. Ce sera enregistré sur nos serveurs dès que vous serez en ligne.';
 }

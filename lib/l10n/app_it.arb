@@ -5435,5 +5435,17 @@
   "reauthContinue": "Continua",
   "reauthSignInAgain": "Per la tua sicurezza, esci e accedi di nuovo, poi riprova.",
   "profilePhotoPrevious": "Foto precedente",
-  "profilePhotoNext": "Foto successiva"
+  "profilePhotoNext": "Foto successiva",
+  "aiServicesTitle": "Servizi IA",
+  "aiServicesSubtitleOn": "Attivo: le funzioni IA possono inviare a Google il testo su cui le usi.",
+  "aiServicesSubtitleOff": "Disattivo: nessun testo viene inviato ai servizi IA.",
+  "aiServicesWhatsIncluded": "Cosa include questo interruttore",
+  "aiServicesFeatureCoach": "Risposte suggerite e il coach linguistico IA (grammatica, analisi delle parole, note culturali)",
+  "aiServicesFeatureTranslate": "Traduzione dei messaggi di chat che ricevi",
+  "aiServicesFeatureReadAloud": "Lettura ad alta voce e pronuncia",
+  "aiServicesFeatureSupport": "Risposte automatiche dell'assistente di supporto (se disattivo, ti risponde una persona)",
+  "aiServicesSafetyNote": "Il controllo di sicurezza di foto e messaggi resta sempre attivo: protegge tutti e non può essere disattivato.",
+  "aiServicesTurnedOff": "Servizi IA disattivati. La tua scelta è stata registrata.",
+  "aiServicesTurnedOn": "Servizi IA attivati. La tua scelta è stata registrata.",
+  "aiServicesSyncPending": "Salvato su questo dispositivo. Verrà registrato sui nostri server appena sarai online."
 }

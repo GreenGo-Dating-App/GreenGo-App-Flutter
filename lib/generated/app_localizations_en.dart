@@ -16540,4 +16540,48 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profilePhotoNext => 'Next photo';
+
+  @override
+  String get aiServicesTitle => 'AI services';
+
+  @override
+  String get aiServicesSubtitleOn =>
+      'On: AI features may send the text you use them on to Google.';
+
+  @override
+  String get aiServicesSubtitleOff => 'Off: no text is sent to AI services.';
+
+  @override
+  String get aiServicesWhatsIncluded => 'What this switch covers';
+
+  @override
+  String get aiServicesFeatureCoach =>
+      'Smart replies and the AI language coach (grammar, word breakdown, cultural tips)';
+
+  @override
+  String get aiServicesFeatureTranslate =>
+      'Translating chat messages you receive';
+
+  @override
+  String get aiServicesFeatureReadAloud => 'Read-aloud audio and pronunciation';
+
+  @override
+  String get aiServicesFeatureSupport =>
+      'Automatic replies from the support assistant (when off, a person answers you)';
+
+  @override
+  String get aiServicesSafetyNote =>
+      'Safety screening of photos and messages always stays on: it protects everyone and cannot be turned off.';
+
+  @override
+  String get aiServicesTurnedOff =>
+      'AI services turned off. Your choice has been recorded.';
+
+  @override
+  String get aiServicesTurnedOn =>
+      'AI services turned on. Your choice has been recorded.';
+
+  @override
+  String get aiServicesSyncPending =>
+      'Saved on this device. It will be recorded on our servers as soon as you are online.';
 }

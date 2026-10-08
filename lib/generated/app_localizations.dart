@@ -29101,6 +29101,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Next photo'**
   String get profilePhotoNext;
+
+  /// Account settings: title of the master switch for AI features
+  ///
+  /// In en, this message translates to:
+  /// **'AI services'**
+  String get aiServicesTitle;
+
+  /// AI services switch subtitle when ON
+  ///
+  /// In en, this message translates to:
+  /// **'On: AI features may send the text you use them on to Google.'**
+  String get aiServicesSubtitleOn;
+
+  /// AI services switch subtitle when OFF
+  ///
+  /// In en, this message translates to:
+  /// **'Off: no text is sent to AI services.'**
+  String get aiServicesSubtitleOff;
+
+  /// Expandable list header: features controlled by the AI services switch
+  ///
+  /// In en, this message translates to:
+  /// **'What this switch covers'**
+  String get aiServicesWhatsIncluded;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Smart replies and the AI language coach (grammar, word breakdown, cultural tips)'**
+  String get aiServicesFeatureCoach;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Translating chat messages you receive'**
+  String get aiServicesFeatureTranslate;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Read-aloud audio and pronunciation'**
+  String get aiServicesFeatureReadAloud;
+
+  /// AI services switch: feature list item
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic replies from the support assistant (when off, a person answers you)'**
+  String get aiServicesFeatureSupport;
+
+  /// AI services switch: moderation is not optional
+  ///
+  /// In en, this message translates to:
+  /// **'Safety screening of photos and messages always stays on: it protects everyone and cannot be turned off.'**
+  String get aiServicesSafetyNote;
+
+  /// Snackbar after turning AI services off
+  ///
+  /// In en, this message translates to:
+  /// **'AI services turned off. Your choice has been recorded.'**
+  String get aiServicesTurnedOff;
+
+  /// Snackbar after turning AI services on
+  ///
+  /// In en, this message translates to:
+  /// **'AI services turned on. Your choice has been recorded.'**
+  String get aiServicesTurnedOn;
+
+  /// Snackbar when the choice could not reach the server yet
+  ///
+  /// In en, this message translates to:
+  /// **'Saved on this device. It will be recorded on our servers as soon as you are online.'**
+  String get aiServicesSyncPending;
 }
 
 class _AppLocalizationsDelegate

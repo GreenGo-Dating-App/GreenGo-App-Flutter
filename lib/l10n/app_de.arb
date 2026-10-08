@@ -5435,5 +5435,17 @@
   "reauthContinue": "Weiter",
   "reauthSignInAgain": "Melde dich zu deiner Sicherheit ab und wieder an und versuche es dann erneut.",
   "profilePhotoPrevious": "Vorheriges Foto",
-  "profilePhotoNext": "Nächstes Foto"
+  "profilePhotoNext": "Nächstes Foto",
+  "aiServicesTitle": "KI-Dienste",
+  "aiServicesSubtitleOn": "An: KI-Funktionen dürfen den Text, für den du sie nutzt, an Google senden.",
+  "aiServicesSubtitleOff": "Aus: Es wird kein Text an KI-Dienste gesendet.",
+  "aiServicesWhatsIncluded": "Was dieser Schalter umfasst",
+  "aiServicesFeatureCoach": "Antwortvorschläge und der KI-Sprachcoach (Grammatik, Wortanalyse, kulturelle Hinweise)",
+  "aiServicesFeatureTranslate": "Übersetzen von Chatnachrichten, die du erhältst",
+  "aiServicesFeatureReadAloud": "Vorlese-Audio und Aussprache",
+  "aiServicesFeatureSupport": "Automatische Antworten des Support-Assistenten (wenn aus, antwortet dir ein Mensch)",
+  "aiServicesSafetyNote": "Die Sicherheitsprüfung von Fotos und Nachrichten bleibt immer aktiv: Sie schützt alle und kann nicht deaktiviert werden.",
+  "aiServicesTurnedOff": "KI-Dienste deaktiviert. Deine Entscheidung wurde gespeichert.",
+  "aiServicesTurnedOn": "KI-Dienste aktiviert. Deine Entscheidung wurde gespeichert.",
+  "aiServicesSyncPending": "Auf diesem Gerät gespeichert. Sobald du online bist, wird es auf unseren Servern erfasst."
 }

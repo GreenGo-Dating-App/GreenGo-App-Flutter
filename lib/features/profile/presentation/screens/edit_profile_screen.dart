@@ -65,6 +65,7 @@ import '../../domain/entities/profile.dart';
 import '../bloc/profile_bloc.dart';
 import '../bloc/profile_event.dart';
 import '../bloc/profile_state.dart';
+import '../widgets/ai_services_settings_card.dart';
 import '../widgets/edit_section_card.dart';
 import 'edit_basic_info_screen.dart';
 import 'edit_bio_screen.dart';
@@ -510,6 +511,10 @@ class EditProfileScreen extends StatelessWidget {
                         onTap: () => Navigator.of(context)
                             .push(PrivacyDataSettingsScreen.route()),
                       ),
+                      // AI services master switch = AI-processing consent
+                      // (recorded server-side; the AI callables enforce it).
+                      const SizedBox(height: 16),
+                      const AiServicesSettingsCard(),
                     ],
                   ),
 

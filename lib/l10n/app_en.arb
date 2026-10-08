@@ -8275,5 +8275,53 @@
   },
   "@profilePhotoNext": {
     "description": "Accessibility label/tooltip of the right arrow in the profile photo gallery"
+  },
+  "aiServicesTitle": "AI services",
+  "@aiServicesTitle": {
+    "description": "Account settings: title of the master switch for AI features"
+  },
+  "aiServicesSubtitleOn": "On: AI features may send the text you use them on to Google.",
+  "@aiServicesSubtitleOn": {
+    "description": "AI services switch subtitle when ON"
+  },
+  "aiServicesSubtitleOff": "Off: no text is sent to AI services.",
+  "@aiServicesSubtitleOff": {
+    "description": "AI services switch subtitle when OFF"
+  },
+  "aiServicesWhatsIncluded": "What this switch covers",
+  "@aiServicesWhatsIncluded": {
+    "description": "Expandable list header: features controlled by the AI services switch"
+  },
+  "aiServicesFeatureCoach": "Smart replies and the AI language coach (grammar, word breakdown, cultural tips)",
+  "@aiServicesFeatureCoach": {
+    "description": "AI services switch: feature list item"
+  },
+  "aiServicesFeatureTranslate": "Translating chat messages you receive",
+  "@aiServicesFeatureTranslate": {
+    "description": "AI services switch: feature list item"
+  },
+  "aiServicesFeatureReadAloud": "Read-aloud audio and pronunciation",
+  "@aiServicesFeatureReadAloud": {
+    "description": "AI services switch: feature list item"
+  },
+  "aiServicesFeatureSupport": "Automatic replies from the support assistant (when off, a person answers you)",
+  "@aiServicesFeatureSupport": {
+    "description": "AI services switch: feature list item"
+  },
+  "aiServicesSafetyNote": "Safety screening of photos and messages always stays on: it protects everyone and cannot be turned off.",
+  "@aiServicesSafetyNote": {
+    "description": "AI services switch: moderation is not optional"
+  },
+  "aiServicesTurnedOff": "AI services turned off. Your choice has been recorded.",
+  "@aiServicesTurnedOff": {
+    "description": "Snackbar after turning AI services off"
+  },
+  "aiServicesTurnedOn": "AI services turned on. Your choice has been recorded.",
+  "@aiServicesTurnedOn": {
+    "description": "Snackbar after turning AI services on"
+  },
+  "aiServicesSyncPending": "Saved on this device. It will be recorded on our servers as soon as you are online.",
+  "@aiServicesSyncPending": {
+    "description": "Snackbar when the choice could not reach the server yet"
   }
 }
