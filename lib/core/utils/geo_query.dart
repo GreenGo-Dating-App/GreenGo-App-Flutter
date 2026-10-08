@@ -140,9 +140,17 @@ class GeoQuery {
   /// Up to 9 [start, end] geohash ranges covering a circle of [radiusMeters]
   /// around the center. Query Firestore with
   /// `orderBy('geohash').startAt([start]).endAt([end])` for each.
+  ///
+  /// [maxPrecision] caps the geohash length of the ranges, for fields stored
+  /// at a coarse precision (profiles' `geohash5`): the ranges are then whole
+  /// cells of that precision, and must be read with `endBefore` (a stored
+  /// value can equal the exclusive end of a full-length range).
   static List<List<String>> queryBounds(
-      double lat, double lng, double radiusMeters) {
-    final queryBits = math.max(1, _boundingBoxBits(lat, lng, radiusMeters));
+      double lat, double lng, double radiusMeters,
+      {int maxPrecision = 22}) {
+    final queryBits = math.min(
+        math.max(1, _boundingBoxBits(lat, lng, radiusMeters)),
+        maxPrecision * _bitsPerChar);
     final precision = (queryBits / _bitsPerChar).ceil();
     final coords = _boundingBoxCoordinates(lat, lng, radiusMeters);
     final queries = coords

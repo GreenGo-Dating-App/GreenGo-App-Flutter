@@ -58,6 +58,7 @@ import '../../../referral/presentation/screens/referral_screen.dart';
 import '../../../business/presentation/screens/business_account_screen.dart';
 import '../../../business/presentation/screens/business_hub_screen.dart';
 import '../../../membership/domain/entities/membership.dart';
+import '../../data/private_profile.dart';
 import '../../data/profile_geohash.dart';
 import '../../domain/entities/location.dart' as profile_entity;
 import '../../domain/entities/profile.dart';
@@ -2215,21 +2216,36 @@ class EditProfileScreen extends StatelessWidget {
     final location = selectedLocation as profile_entity.Location;
     final expiry = DateTime.now().add(const Duration(hours: 24));
 
-    await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
-      'isTraveler': true,
-      'travelerExpiry': Timestamp.fromDate(expiry),
-      'travelerLocation': {
-        'latitude': location.latitude,
-        'longitude': location.longitude,
-        'city': location.city,
-        'country': location.country,
-        'displayAddress': location.displayAddress,
-      },
-      // Discoverable location moves with the traveller (nearest-first scans).
-      kProfileGeohashField:
-          geohashFor(location.latitude, location.longitude) ??
-              FieldValue.delete(),
-    });
+    // Public: the travel place (city / country) only. The exact point and
+    // its 9-char geohash go to the owner-only profiles_private; the server
+    // moves the public geohash5 / approxLocation with them (security P1-4).
+    final firestore = FirebaseFirestore.instance;
+    final batch = firestore.batch()
+      ..update(firestore.collection('profiles').doc(profile.userId), {
+        'isTraveler': true,
+        'travelerExpiry': Timestamp.fromDate(expiry),
+        'travelerLocation': {
+          'city': location.city,
+          'country': location.country,
+          'displayAddress': location.displayAddress,
+        },
+      });
+    await writePrivateProfile(
+        firestore,
+        profile.userId,
+        {
+          'travelerLocation': {
+            'latitude': location.latitude,
+            'longitude': location.longitude,
+          },
+          // Discoverable location moves with the traveller.
+          kProfileGeohashField:
+              geohashFor(location.latitude, location.longitude) ??
+                  FieldValue.delete(),
+          'updatedAt': FieldValue.serverTimestamp(),
+        },
+        batch: batch);
+    await batch.commit();
 
     if (context.mounted) {
       context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));
@@ -2243,14 +2259,27 @@ class EditProfileScreen extends StatelessWidget {
   }
 
   Future<void> _deactivateTraveler(BuildContext context, Profile profile) async {
-    await FirebaseFirestore.instance.collection('profiles').doc(profile.userId).update({
-      'isTraveler': false,
-      'travelerLocation': null,
-      // Back to the home location for nearest-first discovery scans.
-      kProfileGeohashField: geohashFor(
-              profile.location.latitude, profile.location.longitude) ??
-          FieldValue.delete(),
-    });
+    // Back to the (exact, private) home location for discovery scans.
+    final home = homeCoordsOf(
+            PrivateProfileCache.instance.dataFor(profile.userId)) ??
+        (profile.location.latitude, profile.location.longitude);
+    final firestore = FirebaseFirestore.instance;
+    final batch = firestore.batch()
+      ..update(firestore.collection('profiles').doc(profile.userId), {
+        'isTraveler': false,
+        'travelerLocation': null,
+      });
+    await writePrivateProfile(
+        firestore,
+        profile.userId,
+        {
+          'travelerLocation': FieldValue.delete(),
+          kProfileGeohashField:
+              geohashFor(home.$1, home.$2) ?? FieldValue.delete(),
+          'updatedAt': FieldValue.serverTimestamp(),
+        },
+        batch: batch);
+    await batch.commit();
 
     if (context.mounted) {
       context.read<ProfileBloc>().add(ProfileLoadRequested(userId: profile.userId));

@@ -10,6 +10,7 @@ import '../../domain/entities/map_user.dart';
 import '../bloc/explore_map_bloc.dart';
 import '../bloc/explore_map_event.dart';
 import '../bloc/explore_map_state.dart';
+import '../../../../core/utils/distance_bucket.dart';
 
 /// Explore Map Screen — List-based nearby users view.
 ///
@@ -373,7 +374,8 @@ class _ExploreMapScreenState extends State<ExploreMapScreen> {
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        l10n.exploreMapDistanceAway(user.distanceKm?.toStringAsFixed(1) ?? '?'),
+                        // Approximate bucket ("2-5 km"), never an exact figure.
+                        distanceLabel(l10n, user.distanceKm, zeroIsUnknown: false),
                         style: const TextStyle(
                           color: AppColors.textTertiary,
                           fontSize: 13,

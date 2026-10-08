@@ -255,6 +255,26 @@ async function writeStatus(
     },
     { merge: true }
   );
+  // P1-4: ID-derived values also live in the owner/admin-only private
+  // profile, so they survive the later strip of the public copies.
+  const privateAv: Record<string, unknown> = {};
+  if (extra.documentHash !== undefined) privateAv.documentHash = extra.documentHash;
+  if (extra.documentDateOfBirth !== undefined) privateAv.documentDateOfBirth = extra.documentDateOfBirth;
+  if (Object.keys(privateAv).length) {
+    await db.collection('profiles_private').doc(uid).set({ ageVerification: privateAv }, { merge: true });
+  }
+}
+
+/** Declared date of birth: private profile first, legacy public field second. */
+async function declaredDateOfBirth(uid: string, publicData: Record<string, any> | undefined): Promise<Date | null> {
+  let ts: any = null;
+  try {
+    ts = (await db.collection('profiles_private').doc(uid).get()).data()?.dateOfBirth ?? null;
+  } catch (e) {
+    logWarning(`declaredDateOfBirth: private read failed for ${uid}`, e);
+  }
+  ts = ts ?? publicData?.dateOfBirth;
+  return ts instanceof admin.firestore.Timestamp ? ts.toDate() : null;
 }
 
 /** Deletes the uploaded document. Called on every path, success or failure. */
@@ -287,7 +307,7 @@ export const getAgeVerificationState = onCall(
     const data = snap.data() ?? {};
     const status: AgeVerificationStatus =
       (data.ageVerification?.status as AgeVerificationStatus) ??
-      (data.dateOfBirth ? 'declared' : 'none');
+      ((await declaredDateOfBirth(uid, data)) ? 'declared' : 'none');
 
     return {
       status,
@@ -325,9 +345,7 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
     throw new HttpsError('failed-precondition', 'Complete your profile first.');
   }
 
-  const declaredTs = profileSnap.data()?.dateOfBirth;
-  const declaredDob: Date | null =
-    declaredTs instanceof admin.firestore.Timestamp ? declaredTs.toDate() : null;
+  const declaredDob = await declaredDateOfBirth(uid, profileSnap.data());
 
   await writeStatus(uid, 'pending', { submittedAt: admin.firestore.Timestamp.now() });
 
@@ -402,12 +420,14 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
     : null;
 
   if (documentHash) {
-    const reused = await db
-      .collection('profiles')
-      .where('ageVerification.documentHash', '==', documentHash)
-      .limit(2)
-      .get();
-    const otherAccount = reused.docs.find((d) => d.id !== uid);
+    // Public copy (legacy) AND private copy (P1-4): the public one is
+    // stripped once every app version writes only the private profile.
+    const [reusedPublic, reusedPrivate] = await Promise.all(
+      ['profiles', 'profiles_private'].map((c) =>
+        db.collection(c).where('ageVerification.documentHash', '==', documentHash).limit(2).get()
+      )
+    );
+    const otherAccount = [...reusedPublic.docs, ...reusedPrivate.docs].find((d) => d.id !== uid);
     if (otherAccount) {
       await writeStatus(uid, 'rejected', {
         rejectionReason: 'documentAlreadyUsed',

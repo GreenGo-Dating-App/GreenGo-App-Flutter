@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../../domain/entities/globe_user.dart';
 import '../models/globe_user_model.dart';
+import '../../../profile/data/private_profile.dart';
 
 abstract class GlobeRemoteDataSource {
   /// Just the signed-in user's own pin (one doc read, shared with an
@@ -60,7 +61,8 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
     if (!userDoc.exists) {
       throw Exception('Current user profile not found');
     }
-    final userData = userDoc.data()!;
+    // Own pin: exact private location (security P1-4).
+    final userData = (await ownRawViewLoaded(userId, userDoc.data()))!;
     userData['userId'] = userId;
     return GlobeUserModel.fromFirestore(
       data: userData,
@@ -202,6 +204,8 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
     String matchId,
     Random rng,
   ) {
+    // Other users: approximate public location only (security P1-4).
+    profileData = publicProfileView(profileData);
     try {
       // Skip inactive accounts
       if (profileData['accountStatus'] != 'active') return null;
@@ -262,7 +266,8 @@ class GlobeRemoteDataSourceImpl implements GlobeRemoteDataSource {
       if (blockedIds.contains(doc.id)) continue;
       if (matchedUserIds.contains(doc.id)) continue;
 
-      final data = doc.data();
+      // Other users: approximate public location only (security P1-4).
+      final data = publicProfileView(doc.data());
 
       // Skip incognito users
       final isIncognito = data['isIncognito'] as bool? ?? false;

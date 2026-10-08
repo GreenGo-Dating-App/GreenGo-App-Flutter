@@ -2883,6 +2883,20 @@
       "queryScope": "COLLECTION",
       "fields": [
         {
+          "fieldPath": "showOnMap",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "geohash5",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "profiles",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
           "fieldPath": "isTraveler",
           "order": "ASCENDING"
         },

@@ -7,6 +7,7 @@ import '../../../../core/services/location_share_service.dart';
 import '../../../../core/utils/geo_query.dart';
 import '../../../profile/data/models/profile_model.dart'
     show normalizeCountryName;
+import '../../../profile/data/private_profile.dart';
 
 /// Where the Events tab (and its prefetch) centres its nearest-first queries.
 ///
@@ -83,7 +84,9 @@ class EventsLocation {
     } catch (_) {
       return null;
     }
-    final loc = snap.data()?['location'];
+    // Own exact location lives in profiles_private (security P1-4).
+    final own = await ownRawViewLoaded(userId, snap.data());
+    final loc = own?['location'];
     if (loc is! Map) return null;
     final la = (loc['latitude'] as num?)?.toDouble();
     final ln = (loc['longitude'] as num?)?.toDouble();

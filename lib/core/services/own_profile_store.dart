@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 import '../../features/profile/data/models/profile_model.dart';
+import '../../features/profile/data/private_profile.dart';
 import '../../features/profile/domain/entities/profile.dart';
 
 /// The signed-in user's own `profiles/{uid}` document, shared app-wide.
@@ -27,10 +28,17 @@ import '../../features/profile/domain/entities/profile.dart';
 ///    `ValueListenableBuilder<Profile?>(valueListenable: OwnProfileStore.instance.profile, ...)`.
 ///  * Raw fields not on [Profile] (e.g. `signupGrantsApplied` maps): [raw].
 ///
+/// Private data (security P1-4): the exact location, date of birth and other
+/// sensitive fields live in the owner-only `profiles_private/{uid}`. The
+/// store keeps a live listener on it (PrivateProfileCache) and lays it over
+/// the public document, so [profile] and [raw] are the user's real values.
+///
 /// Values are per user: [peek]/[current] never return another account's
 /// profile, and [reset] runs on sign-out.
 class OwnProfileStore {
-  OwnProfileStore._();
+  OwnProfileStore._() {
+    PrivateProfileCache.instance.version.addListener(_onPrivateChanged);
+  }
 
   static final OwnProfileStore instance = OwnProfileStore._();
 
@@ -39,6 +47,7 @@ class OwnProfileStore {
 
   String? _uid;
   Map<String, dynamic>? _raw;
+  Map<String, dynamic>? _publicRaw;
   bool _live = false;
   bool _fromServer = false;
   Future<Profile?>? _inflight;
@@ -87,9 +96,28 @@ class OwnProfileStore {
     if (parsed == null) return;
     if (_uid != userId) _live = false;
     _uid = userId;
-    _raw = Map<String, dynamic>.from(data);
+    _publicRaw = Map<String, dynamic>.from(data);
+    _raw = _merged(userId, data);
     _fromServer = fromServer;
     profile.value = parsed;
+  }
+
+  /// The private document arrived or changed: re-derive the own profile.
+  void _onPrivateChanged() {
+    final uid = _uid;
+    final pub = _publicRaw;
+    if (uid == null || pub == null) return;
+    final parsed = _parse(uid, pub);
+    if (parsed == null) return;
+    _raw = _merged(uid, pub);
+    profile.value = parsed;
+  }
+
+  static Map<String, dynamic> _merged(String uid, Map<String, dynamic> data) {
+    final cache = PrivateProfileCache.instance..attach(uid);
+    return ownProfileView(
+        {...data, 'userId': uid}, cache.dataFor(uid))
+      ..remove(kOwnViewMarker);
   }
 
   /// The live listener for [userId] stopped (shell disposed). The value is
@@ -100,8 +128,10 @@ class OwnProfileStore {
 
   /// Forget everything (sign-out).
   void reset() {
+    PrivateProfileCache.instance.reset();
     _uid = null;
     _raw = null;
+    _publicRaw = null;
     _live = false;
     _fromServer = false;
     _inflight = null;
@@ -148,7 +178,9 @@ class OwnProfileStore {
 
   static Profile? _parse(String userId, Map<String, dynamic> data) {
     try {
-      return ProfileModel.fromJson({...data, 'userId': userId});
+      PrivateProfileCache.instance.attach(userId);
+      return ProfileModel.fromJson(ownProfileView({...data, 'userId': userId},
+          PrivateProfileCache.instance.dataFor(userId)));
     } catch (e) {
       debugPrint('[OwnProfileStore] could not parse profile $userId: $e');
       return null;

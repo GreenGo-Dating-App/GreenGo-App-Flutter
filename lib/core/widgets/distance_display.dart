@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../generated/app_localizations.dart';
 import '../constants/app_colors.dart';
+import '../utils/distance_bucket.dart';
 
 /// Enhancement #16: Distance Display
 /// Shows distance between users
@@ -15,15 +16,9 @@ class DistanceDisplay extends StatelessWidget {
   final bool isCompact;
   final bool showIcon;
 
-  String _formatDistance(AppLocalizations l10n) {
-    if (distanceKm < 1) {
-      return l10n.lessThanOneKm;
-    } else if (distanceKm < 10) {
-      return l10n.distanceKm(distanceKm.toStringAsFixed(1));
-    } else {
-      return l10n.distanceKm(distanceKm.toInt().toString());
-    }
-  }
+  // Distances to other people are approximate (security P1-4): buckets only.
+  String _formatDistance(AppLocalizations l10n) =>
+      distanceLabel(l10n, distanceKm, zeroIsUnknown: false);
 
   Color _getDistanceColor() {
     if (distanceKm < 5) return AppColors.successGreen;
@@ -129,11 +124,7 @@ class DistanceBadge extends StatelessWidget {
           ),
           const SizedBox(width: 4),
           Text(
-            distanceKm < 1
-                ? l10n.nearby
-                : distanceKm < 10
-                    ? l10n.distanceKm(distanceKm.toStringAsFixed(1))
-                    : l10n.distanceKm(distanceKm.toInt().toString()),
+            distanceLabel(l10n, distanceKm, zeroIsUnknown: false),
             style: TextStyle(
               color: isNearby ? Colors.white : AppColors.textSecondary,
               fontSize: 11,

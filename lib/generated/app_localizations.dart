@@ -28295,6 +28295,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'That time is not available on this date.'**
   String get bkErrInvalidStart;
+
+  /// Approximate distance bucket: under 2 km
+  ///
+  /// In en, this message translates to:
+  /// **'< 2 km'**
+  String get distanceBucketUnder2Km;
+
+  /// Approximate distance bucket: 2 to 5 km
+  ///
+  /// In en, this message translates to:
+  /// **'2-5 km'**
+  String get distanceBucket2To5Km;
+
+  /// Approximate distance bucket: 5 to 10 km
+  ///
+  /// In en, this message translates to:
+  /// **'5-10 km'**
+  String get distanceBucket5To10Km;
+
+  /// Approximate distance bucket: 10 to 25 km
+  ///
+  /// In en, this message translates to:
+  /// **'10-25 km'**
+  String get distanceBucket10To25Km;
+
+  /// Approximate distance bucket: more than 25 km
+  ///
+  /// In en, this message translates to:
+  /// **'25+ km'**
+  String get distanceBucketOver25Km;
 }
 
 class _AppLocalizationsDelegate

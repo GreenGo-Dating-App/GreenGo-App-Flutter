@@ -20,6 +20,7 @@ import '../../domain/entities/swipe_action.dart';
 import '../models/match_model.dart';
 import '../models/swipe_action_model.dart';
 import '../../../../core/services/effective_tier.dart';
+import '../../../profile/data/private_profile.dart';
 
 /// Discovery Remote Data Source Interface
 abstract class DiscoveryRemoteDataSource {
@@ -288,7 +289,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       return _cachedUserProfile;
     }
     final doc = await firestore.collection('profiles').doc(userId).get();
-    _cachedUserProfile = doc.data();
+    // The viewer's own exact location is private (profiles_private).
+    _cachedUserProfile = await ownRawViewLoaded(userId, doc.data());
     _cachedUserProfileId = userId;
     return _cachedUserProfile;
   }

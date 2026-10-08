@@ -16237,4 +16237,19 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Quell\'orario non è disponibile in questa data.';
+
+  @override
+  String get distanceBucketUnder2Km => 'a meno di 2 km';
+
+  @override
+  String get distanceBucket2To5Km => 'a 2-5 km';
+
+  @override
+  String get distanceBucket5To10Km => 'a 5-10 km';
+
+  @override
+  String get distanceBucket10To25Km => 'a 10-25 km';
+
+  @override
+  String get distanceBucketOver25Km => 'a oltre 25 km';
 }

@@ -5285,5 +5285,10 @@
   "bkWindowHint": "É o período em que estás disponível. Cada convidado reserva o seu próprio horário de {duration} dentro dele, e as tuas reservas nunca se sobrepõem, em todas as tuas experiências.",
   "bkWindowPeopleBooked": "{count, plural, =0{Ainda sem reservas} =1{1 pessoa reservada} other{{count} pessoas reservadas}}",
   "bkErrTimeTaken": "Esse horário acabou de ser reservado. Escolhe outro.",
-  "bkErrInvalidStart": "Esse horário não está disponível nesta data."
+  "bkErrInvalidStart": "Esse horário não está disponível nesta data.",
+  "distanceBucketUnder2Km": "a menos de 2 km",
+  "distanceBucket2To5Km": "a 2-5 km",
+  "distanceBucket5To10Km": "a 5-10 km",
+  "distanceBucket10To25Km": "a 10-25 km",
+  "distanceBucketOver25Km": "a mais de 25 km"
 }

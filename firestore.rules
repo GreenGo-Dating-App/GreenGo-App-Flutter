@@ -247,6 +247,46 @@ service cloud.firestore {
     }
 
     // ============================================================================
+    // PRIVATE PROFILES (security audit C-07 / C-10, plan P1-4)
+    // ============================================================================
+    // The owner/admin-only half of a profile: exact location + 9-char geohash,
+    // date of birth, orientation, email, phone, the ID-selfie storage path,
+    // private album URLs, ID-derived age-verification data. The public
+    // profiles/{uid} gets only coarse values computed by the
+    // mirrorPrivateProfileFields / syncCoarseFromPrivateProfile functions
+    // (geohash5, approxLocation, age).
+    //  - read: owner, or an admin-panel user (admin_users doc exists).
+    //  - write: owner, ONLY the user-editable keys below. ageVerification,
+    //    birthMonthDay, verificationPhotoUrl and _mirroredAt are server-owned
+    //    (Admin SDK bypasses rules).
+    //  - delete: never from a client (account deletion runs server-side).
+    function privateProfileOwnerKeys() {
+      return ['location', 'travelerLocation', 'geohash', 'dateOfBirth',
+              'sexualOrientation', 'email', 'verificationPhone',
+              'verificationPhotoPath', 'privatePhotoUrls', 'updatedAt'];
+    }
+    function privateProfileShapeOk(d) {
+      return (!('location' in d) || d.location is map)
+        && (!('travelerLocation' in d) || d.travelerLocation == null || d.travelerLocation is map)
+        && (!('dateOfBirth' in d) || d.dateOfBirth == null || d.dateOfBirth is timestamp)
+        && (!('privatePhotoUrls' in d) || d.privatePhotoUrls is list)
+        && (!('verificationPhotoPath' in d) || d.verificationPhotoPath == null
+            || (d.verificationPhotoPath is string
+                && d.verificationPhotoPath.matches('verifications/' + request.auth.uid + '/.+')));
+    }
+    match /profiles_private/{uid} {
+      allow read: if isOwner(uid) || isAdminPanelUser();
+      allow create: if isOwner(uid)
+        && request.resource.data.keys().hasOnly(privateProfileOwnerKeys())
+        && privateProfileShapeOk(request.resource.data);
+      allow update: if isOwner(uid)
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(privateProfileOwnerKeys())
+        && privateProfileShapeOk(request.resource.data);
+      allow delete: if false;
+    }
+
+    // ============================================================================
     // MATCHES COLLECTION
     // ============================================================================
     match /matches/{matchId} {

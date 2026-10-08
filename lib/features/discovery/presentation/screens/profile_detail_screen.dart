@@ -8,6 +8,8 @@ import 'package:flutter/services.dart';
 import 'package:showcaseview/showcaseview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/widgets/met_in_person_badge.dart';
 import '../../../profile/presentation/widgets/payment_methods_section.dart';
 import '../../../../core/config/flavor_config.dart';
@@ -80,9 +82,30 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
   // move together. Null on your own profile (no follow control there).
   FollowToggleController? _followController;
 
+  /// True when either user blocked the other: a blocker's profile is never
+  /// shown to the person they blocked (nor the other way round), whichever
+  /// screen pushed this one. Server-side enforcement (a rules `get` denial)
+  /// comes later: docs/security/profiles-rules-lockdown.md.
+  bool _blocked = false;
+
+  void _guardBlocked() {
+    if (_isSelfView || widget.currentUserId.isEmpty) return;
+    if (!di.sl.isRegistered<BlockedUsersService>()) return;
+    final service = di.sl<BlockedUsersService>();
+    final target = widget.profile.userId;
+    if (service.lastKnownBlockedIds(widget.currentUserId).contains(target)) {
+      _blocked = true;
+    }
+    unawaited(service.getBlockedUserIds(widget.currentUserId).then((ids) {
+      if (!mounted || !ids.contains(target)) return;
+      setState(() => _blocked = true);
+    }).catchError((Object _) {}));
+  }
+
   @override
   void initState() {
     super.initState();
+    _guardBlocked();
     if (!_isSelfView && widget.currentUserId.isNotEmpty) {
       _followController = UserFollowButton.createController(
         targetUserId: widget.profile.userId,
@@ -323,6 +346,14 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (_blocked) {
+      // Nothing about the other user is rendered; the empty page only offers
+      // the way back.
+      return Scaffold(
+        backgroundColor: AppColors.backgroundDark,
+        appBar: AppBar(backgroundColor: Colors.transparent, elevation: 0),
+      );
+    }
     final hasPhotos = widget.profile.photoUrls.isNotEmpty;
     final isMatched = widget.match != null;
     final l10n = AppLocalizations.of(context)!;

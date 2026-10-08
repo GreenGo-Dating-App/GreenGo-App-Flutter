@@ -3,8 +3,10 @@ import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import '../../../../core/cache/last_result_cache.dart';
-import '../../../../core/utils/geo_query.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/blocked_users_service.dart';
 import '../models/map_user_model.dart';
+import '../../../profile/data/profile_geo_scan.dart';
 
 /// Remote data source for the Explore Map feature.
 ///
@@ -80,8 +82,8 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
   }
 
   /// LOCATION-FIRST candidate docs:
-  ///  1. `geohash` ranges around the viewer (GeoQuery.queryBounds), with
-  ///     `showOnMap == true` server-side (index profiles(showOnMap, geohash));
+  ///  1. public `geohash5` ranges around the viewer (ProfileGeoScan), with
+  ///     `showOnMap == true` server-side (index profiles(showOnMap, geohash5));
   ///     if that is rejected, the same ranges without it (single-field
   ///     index) and showOnMap checked here;
   ///  2. when that is thin (profiles not geohashed yet / sparse area):
@@ -109,29 +111,19 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
         longitude.isFinite &&
         !(latitude == 0 && longitude == 0);
     if (validCenter && radiusKm > 0 && radiusKm <= _geoMaxRadiusKm) {
-      final bounds = GeoQuery.queryBounds(latitude, longitude, radiusKm * 1000);
-      Future<List<QuerySnapshot<Map<String, dynamic>>>> run(
-              bool withFlag) =>
-          Future.wait(bounds.map((b) {
-            Query<Map<String, dynamic>> q = profiles;
-            if (withFlag) q = q.where('showOnMap', isEqualTo: true);
-            return q
-                .orderBy('geohash')
-                .startAt([b[0]])
-                .endAt([b[1]])
-                .limit(_geoPerRange)
-                .get();
-          }));
+      // Public `geohash5` ranges (ProfileGeoScan), with showOnMap filtered
+      // server-side (index profiles(showOnMap, geohash5)); if that is
+      // rejected, the same ranges without it and showOnMap checked here.
       try {
-        List<QuerySnapshot<Map<String, dynamic>>> snaps;
+        List<QueryDocumentSnapshot<Map<String, dynamic>>> docs;
+        final scan = ProfileGeoScan(firestore, perRange: _geoPerRange);
         try {
-          snaps = await run(true);
+          docs = await scan.near(latitude, longitude, radiusKm,
+              onlyShowOnMap: true);
         } catch (_) {
-          snaps = await run(false); // composite index not deployed yet
+          docs = await scan.near(latitude, longitude, radiusKm);
         }
-        for (final s in snaps) {
-          addAll(s.docs);
-        }
+        addAll(docs);
       } catch (e) {
         debugPrint('[ExploreMap] Geo query unavailable: $e');
       }
@@ -237,6 +229,21 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
     );
   }
 
+  Future<void> _blockedIds(String userId) async {
+    if (!di.sl.isRegistered<BlockedUsersService>()) return;
+    try {
+      await di
+          .sl<BlockedUsersService>()
+          .getBlockedUserIds(userId)
+          .timeout(const Duration(seconds: 6));
+    } catch (_) {}
+  }
+
+  Set<String> _knownBlockedIds(String userId) =>
+      di.sl.isRegistered<BlockedUsersService>()
+          ? di.sl<BlockedUsersService>().lastKnownBlockedIds(userId)
+          : const <String>{};
+
   List<MapUserModel> _build(
     Iterable<DocumentSnapshot<Map<String, dynamic>>> docs, {
     required double latitude,
@@ -246,7 +253,9 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
     required List<String> currentUserLanguages,
   }) {
     final users = <MapUserModel>[];
+    final blocked = _knownBlockedIds(currentUserId);
     for (final doc in docs) {
+      if (blocked.contains(doc.id)) continue;
       try {
         final u = _toMapUser(doc,
             latitude: latitude,
@@ -274,12 +283,16 @@ class ExploreMapRemoteDataSourceImpl implements ExploreMapRemoteDataSource {
     List<String> currentUserLanguages = const [],
   }) async {
     try {
+      // Blocks in either direction are loaded alongside (cached service), so
+      // _build can leave out anyone who blocked the viewer and vice versa.
+      final blockedFuture = _blockedIds(currentUserId);
       final docs = await _candidateDocs(
         latitude: latitude,
         longitude: longitude,
         radiusKm: radiusKm,
         currentUserId: currentUserId,
       );
+      await blockedFuture;
       final nearbyUsers = _build(docs,
           latitude: latitude,
           longitude: longitude,

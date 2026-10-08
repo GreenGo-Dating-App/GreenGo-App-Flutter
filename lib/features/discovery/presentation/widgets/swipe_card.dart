@@ -10,6 +10,7 @@ import '../../../chat/presentation/widgets/language_badge.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../domain/entities/discovery_card.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/utils/distance_bucket.dart';
 
 /// Swipeable Card Widget
 ///
@@ -42,6 +43,10 @@ class SwipeCard extends StatefulWidget {
 
 class _SwipeCardState extends State<SwipeCard>
     with TickerProviderStateMixin {
+  /// Approximate distance bucket ("2-5 km"), never an exact figure.
+  String _distanceText(BuildContext context) => distanceLabel(
+      AppLocalizations.of(context)!, widget.card.candidate.distance);
+
   bool _isDragging = false;
   bool _hasTriggeredHaptic = false;
   Offset _cumulativeOffset = Offset.zero;
@@ -421,11 +426,11 @@ class _SwipeCardState extends State<SwipeCard>
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  (widget.isRandomMode || widget.card.distanceText.isEmpty)
+                  (widget.isRandomMode || _distanceText(context).isEmpty)
                       ? (profile.effectiveLocation.city.isNotEmpty
                           ? profile.effectiveLocation.city
                           : profile.effectiveLocation.country)
-                      : widget.card.distanceText,
+                      : _distanceText(context),
                   style: const TextStyle(
                     color: Colors.white70,
                     fontSize: 14,

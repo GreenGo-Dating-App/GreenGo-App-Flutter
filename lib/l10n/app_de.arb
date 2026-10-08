@@ -5285,5 +5285,10 @@
   "bkWindowHint": "Das ist deine verfügbare Zeit. Jeder Gast bucht darin seine eigene Zeit von {duration}, und deine Buchungen überschneiden sich nie, über alle deine Erlebnisse hinweg.",
   "bkWindowPeopleBooked": "{count, plural, =0{Noch keine Buchungen} =1{1 Person gebucht} other{{count} Personen gebucht}}",
   "bkErrTimeTaken": "Diese Zeit wurde gerade gebucht. Bitte wähle eine andere.",
-  "bkErrInvalidStart": "Diese Zeit ist an diesem Termin nicht verfügbar."
+  "bkErrInvalidStart": "Diese Zeit ist an diesem Termin nicht verfügbar.",
+  "distanceBucketUnder2Km": "unter 2 km",
+  "distanceBucket2To5Km": "2-5 km",
+  "distanceBucket5To10Km": "5-10 km",
+  "distanceBucket10To25Km": "10-25 km",
+  "distanceBucketOver25Km": "über 25 km"
 }

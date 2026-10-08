@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../../profile/data/private_profile.dart';
 import '../../domain/entities/map_user.dart';
 
 /// Firestore-backed model for [MapUser].
@@ -20,8 +21,13 @@ class MapUserModel extends MapUser {
   ///
   /// Expects the document to come from the `profiles` collection.
   /// Coordinates are snapped to 3 decimal places (~110m) for privacy.
+  ///
+  /// Security P1-4: the coordinates come from the server-computed public
+  /// `approxLocation` (geohash-5 cell centre + a stable per-user offset)
+  /// whenever it exists; exact coordinates still present on profiles written
+  /// by old app versions are not used for them.
   factory MapUserModel.fromFirestore(DocumentSnapshot doc) {
-    final data = doc.data() as Map<String, dynamic>;
+    final data = publicProfileView(doc.data() as Map<String, dynamic>);
     final location = data['location'] as Map<String, dynamic>?;
 
     // Use effectiveLocation (traveler location) if available, else regular location

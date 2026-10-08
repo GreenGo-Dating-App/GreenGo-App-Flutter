@@ -16270,4 +16270,19 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get bkErrInvalidStart =>
       'Diese Zeit ist an diesem Termin nicht verfügbar.';
+
+  @override
+  String get distanceBucketUnder2Km => 'unter 2 km';
+
+  @override
+  String get distanceBucket2To5Km => '2-5 km';
+
+  @override
+  String get distanceBucket5To10Km => '5-10 km';
+
+  @override
+  String get distanceBucket10To25Km => '10-25 km';
+
+  @override
+  String get distanceBucketOver25Km => 'über 25 km';
 }

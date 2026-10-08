@@ -55,6 +55,7 @@ import 'match_detail_screen.dart';
 import 'profile_detail_screen.dart';
 import 'travel_explore_map_screen.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/utils/distance_bucket.dart';
 
 /// Discovery Screen
 ///
@@ -2181,7 +2182,11 @@ class _GridProfileCardState extends State<_GridProfileCard>
     final hasMultiplePhotos = photoUrls.length > 1;
     final showText = widget.gridColumns <= 4;
     final location = profile.effectiveLocation;
-    final distanceText = widget.isRandomMode ? '' : widget.card.candidate.distanceText;
+    // Approximate distance bucket ("2-5 km"), never an exact figure.
+    final distanceText = widget.isRandomMode
+        ? ''
+        : distanceLabel(
+            AppLocalizations.of(context)!, widget.card.candidate.distance);
     final cityText = location.city.isNotEmpty && location.city != 'Unknown'
         ? location.city
         : (location.country.isNotEmpty && location.country != 'Unknown' ? location.country : '');
