@@ -47,19 +47,6 @@ regexes = [
   # 'cultural_countries_v1', 'recommendations_v1'
   '''^[a-z]+(?:_[a-z]+)*_v\d+$''',
 ]
-
-# 4) KNOWN FINDING, not a false positive: functions/src/shared/marketingConsent.ts
-#    has a hard-coded fallback HMAC secret for unsubscribe links, used only if
-#    neither UNSUBSCRIBE_SECRET nor RETENTION_SALT is set. It is allowlisted so
-#    the gate can go live; remove this entry when the fallback is removed (the
-#    function should refuse to sign instead). Exact value only.
-[[allowlists]]
-description = "KNOWN: unsubscribe HMAC fallback secret - remove when fixed"
-targetRules = ["generic-api-key"]
-paths = ['''^functions/src/shared/marketingConsent\.ts$''']
-regexes = ['''^REMOVED-SECRET$''']
-condition = "AND"
-
 # 5) Never scan build output, dependencies or generated platform files.
 [[allowlists]]
 description = "Build output and dependencies"
