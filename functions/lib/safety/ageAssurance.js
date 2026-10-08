@@ -82,7 +82,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.backfillDeclaredAge = exports.reviewAgeVerification = exports.submitAgeDocument = exports.getAgeVerificationState = exports.MINIMUM_AGE = void 0;
+exports.backfillDeclaredAge = exports.getAgeVerificationDetails = exports.reviewAgeVerification = exports.submitAgeDocument = exports.getAgeVerificationState = exports.MINIMUM_AGE = void 0;
 exports.parseDateOfBirth = parseDateOfBirth;
 exports.ageFrom = ageFrom;
 exports.requiresIdDocument = requiresIdDocument;
@@ -472,6 +472,94 @@ exports.reviewAgeVerification = (0, https_1.onCall)({ memory: '512MiB' }, async 
     await (0, idDocumentRetention_1.setIdDocumentStatus)(targetUid, approve ? 'verified' : 'rejected');
     (0, utils_1.logInfo)(`reviewAgeVerification: ${adminUid} ${approve ? 'approved' : 'rejected'} ${targetUid}`);
     return { status: approve ? 'verified' : 'rejected' };
+});
+/** Largest document image returned inline (callable responses cap at 10 MB). */
+const MAX_DOCUMENT_BYTES = 7 * 1024 * 1024;
+const isoOf = (v) => v instanceof admin.firestore.Timestamp ? v.toDate().toISOString() : null;
+/**
+ * Admin view of ONE user's age verification, for the admin panel's Users page:
+ * the status on the profile, the review-queue entry (birth date read off the
+ * document vs. the declared one, confidence) and the retained document image
+ * itself, returned inline as base64 — no signed URL, so nothing shareable
+ * outlives the dialog. Every call that returns an image is written to
+ * `admin_audit_log` (who looked at whose identity document, when).
+ * Decisions still go through [reviewAgeVerification].
+ */
+exports.getAgeVerificationDetails = (0, https_1.onCall)({ memory: '512MiB' }, async (request) => {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z;
+    const adminUid = (_a = request.auth) === null || _a === void 0 ? void 0 : _a.uid;
+    if (!adminUid)
+        throw new https_1.HttpsError('unauthenticated', 'Sign in required.');
+    const adminDoc = await utils_1.db.collection('users').doc(adminUid).get();
+    if (!((_b = adminDoc.data()) === null || _b === void 0 ? void 0 : _b.isAdmin)) {
+        throw new https_1.HttpsError('permission-denied', 'Admin only.');
+    }
+    const targetUid = String((_d = (_c = request.data) === null || _c === void 0 ? void 0 : _c.userId) !== null && _d !== void 0 ? _d : '');
+    if (!targetUid)
+        throw new https_1.HttpsError('invalid-argument', 'userId is required.');
+    const [profileSnap, queueSnap, indexSnap] = await Promise.all([
+        utils_1.db.collection('profiles').doc(targetUid).get(),
+        utils_1.db.collection('age_verification_queue').doc(targetUid).get(),
+        utils_1.db.collection('id_documents').doc(targetUid).get(),
+    ]);
+    const profile = (_e = profileSnap.data()) !== null && _e !== void 0 ? _e : {};
+    const av = ((_f = profile.ageVerification) !== null && _f !== void 0 ? _f : {});
+    const queue = (_g = queueSnap.data()) !== null && _g !== void 0 ? _g : null;
+    const index = (_h = indexSnap.data()) !== null && _h !== void 0 ? _h : null;
+    let document = null;
+    let documentError = null;
+    const path = typeof (index === null || index === void 0 ? void 0 : index.currentPath) === 'string' ? index.currentPath : null;
+    if (path) {
+        try {
+            const file = admin.storage().bucket().file(path);
+            const [meta] = await file.getMetadata();
+            if (Number((_j = meta.size) !== null && _j !== void 0 ? _j : 0) > MAX_DOCUMENT_BYTES) {
+                documentError = 'Document is too large to display.';
+            }
+            else {
+                const [buf] = await file.download();
+                document = {
+                    contentType: String(meta.contentType || 'image/jpeg'),
+                    dataBase64: buf.toString('base64'),
+                    uploadedAt: isoOf(index === null || index === void 0 ? void 0 : index.uploadedAt),
+                };
+                await utils_1.db.collection('admin_audit_log').add({
+                    adminId: adminUid,
+                    adminEmail: (_p = (_l = (_k = adminDoc.data()) === null || _k === void 0 ? void 0 : _k.email) !== null && _l !== void 0 ? _l : (_o = (_m = request.auth) === null || _m === void 0 ? void 0 : _m.token) === null || _o === void 0 ? void 0 : _o.email) !== null && _p !== void 0 ? _p : 'unknown',
+                    action: 'view_id_document',
+                    targetType: 'user',
+                    targetId: targetUid,
+                    details: { path },
+                    timestamp: admin.firestore.FieldValue.serverTimestamp(),
+                });
+            }
+        }
+        catch (e) {
+            (0, utils_1.logError)(`getAgeVerificationDetails: reading ${path} failed`, e);
+            documentError = 'The document file could not be read.';
+        }
+    }
+    const status = (_q = av.status) !== null && _q !== void 0 ? _q : (profile.dateOfBirth ? 'declared' : 'none');
+    return {
+        userId: targetUid,
+        status,
+        isAgeVerified: profile.isAgeVerified === true,
+        documentRequired: await requiresIdDocument(targetUid),
+        method: (_r = av.method) !== null && _r !== void 0 ? _r : null,
+        confidence: typeof av.confidence === 'number' ? av.confidence : ((_s = queue === null || queue === void 0 ? void 0 : queue.confidence) !== null && _s !== void 0 ? _s : null),
+        rejectionReason: (_t = av.rejectionReason) !== null && _t !== void 0 ? _t : null,
+        reviewedBy: (_u = av.reviewedBy) !== null && _u !== void 0 ? _u : null,
+        reviewedAt: isoOf(av.reviewedAt),
+        verifiedAt: isoOf(av.verifiedAt),
+        declaredDateOfBirth: isoOf(profile.dateOfBirth),
+        documentDateOfBirth: (_v = isoOf(av.documentDateOfBirth)) !== null && _v !== void 0 ? _v : isoOf(queue === null || queue === void 0 ? void 0 : queue.documentDateOfBirth),
+        documentType: (_x = (_w = queue === null || queue === void 0 ? void 0 : queue.documentType) !== null && _w !== void 0 ? _w : index === null || index === void 0 ? void 0 : index.documentType) !== null && _x !== void 0 ? _x : null,
+        matchesDeclaration: typeof (queue === null || queue === void 0 ? void 0 : queue.matchesDeclaration) === 'boolean' ? queue.matchesDeclaration : null,
+        queueStatus: (_y = queue === null || queue === void 0 ? void 0 : queue.status) !== null && _y !== void 0 ? _y : null,
+        submittedAt: (_z = isoOf(queue === null || queue === void 0 ? void 0 : queue.submittedAt)) !== null && _z !== void 0 ? _z : isoOf(av.submittedAt),
+        document,
+        documentError,
+    };
 });
 /**
  * Backfills `ageVerification.status = 'declared'` for existing users who have a

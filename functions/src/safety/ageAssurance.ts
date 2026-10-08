@@ -518,6 +518,97 @@ export const reviewAgeVerification = onCall({ memory: '512MiB' }, async (request
   return { status: approve ? 'verified' : 'rejected' };
 });
 
+/** Largest document image returned inline (callable responses cap at 10 MB). */
+const MAX_DOCUMENT_BYTES = 7 * 1024 * 1024;
+
+const isoOf = (v: unknown): string | null =>
+  v instanceof admin.firestore.Timestamp ? v.toDate().toISOString() : null;
+
+/**
+ * Admin view of ONE user's age verification, for the admin panel's Users page:
+ * the status on the profile, the review-queue entry (birth date read off the
+ * document vs. the declared one, confidence) and the retained document image
+ * itself, returned inline as base64 — no signed URL, so nothing shareable
+ * outlives the dialog. Every call that returns an image is written to
+ * `admin_audit_log` (who looked at whose identity document, when).
+ * Decisions still go through [reviewAgeVerification].
+ */
+export const getAgeVerificationDetails = onCall({ memory: '512MiB' }, async (request) => {
+  const adminUid = request.auth?.uid;
+  if (!adminUid) throw new HttpsError('unauthenticated', 'Sign in required.');
+  const adminDoc = await db.collection('users').doc(adminUid).get();
+  if (!adminDoc.data()?.isAdmin) {
+    throw new HttpsError('permission-denied', 'Admin only.');
+  }
+  const targetUid = String(request.data?.userId ?? '');
+  if (!targetUid) throw new HttpsError('invalid-argument', 'userId is required.');
+
+  const [profileSnap, queueSnap, indexSnap] = await Promise.all([
+    db.collection('profiles').doc(targetUid).get(),
+    db.collection('age_verification_queue').doc(targetUid).get(),
+    db.collection('id_documents').doc(targetUid).get(),
+  ]);
+  const profile = profileSnap.data() ?? {};
+  const av = (profile.ageVerification ?? {}) as Record<string, any>;
+  const queue = queueSnap.data() ?? null;
+  const index = indexSnap.data() ?? null;
+
+  let document: { contentType: string; dataBase64: string; uploadedAt: string | null } | null = null;
+  let documentError: string | null = null;
+  const path = typeof index?.currentPath === 'string' ? index.currentPath : null;
+  if (path) {
+    try {
+      const file = admin.storage().bucket().file(path);
+      const [meta] = await file.getMetadata();
+      if (Number(meta.size ?? 0) > MAX_DOCUMENT_BYTES) {
+        documentError = 'Document is too large to display.';
+      } else {
+        const [buf] = await file.download();
+        document = {
+          contentType: String(meta.contentType || 'image/jpeg'),
+          dataBase64: buf.toString('base64'),
+          uploadedAt: isoOf(index?.uploadedAt),
+        };
+        await db.collection('admin_audit_log').add({
+          adminId: adminUid,
+          adminEmail: adminDoc.data()?.email ?? request.auth?.token?.email ?? 'unknown',
+          action: 'view_id_document',
+          targetType: 'user',
+          targetId: targetUid,
+          details: { path },
+          timestamp: admin.firestore.FieldValue.serverTimestamp(),
+        });
+      }
+    } catch (e) {
+      logError(`getAgeVerificationDetails: reading ${path} failed`, e);
+      documentError = 'The document file could not be read.';
+    }
+  }
+
+  const status: AgeVerificationStatus =
+    (av.status as AgeVerificationStatus) ?? (profile.dateOfBirth ? 'declared' : 'none');
+  return {
+    userId: targetUid,
+    status,
+    isAgeVerified: profile.isAgeVerified === true,
+    documentRequired: await requiresIdDocument(targetUid),
+    method: av.method ?? null,
+    confidence: typeof av.confidence === 'number' ? av.confidence : (queue?.confidence ?? null),
+    rejectionReason: av.rejectionReason ?? null,
+    reviewedBy: av.reviewedBy ?? null,
+    reviewedAt: isoOf(av.reviewedAt),
+    verifiedAt: isoOf(av.verifiedAt),
+    declaredDateOfBirth: isoOf(profile.dateOfBirth),
+    documentDateOfBirth: isoOf(av.documentDateOfBirth) ?? isoOf(queue?.documentDateOfBirth),
+    documentType: queue?.documentType ?? index?.documentType ?? null,
+    matchesDeclaration: typeof queue?.matchesDeclaration === 'boolean' ? queue.matchesDeclaration : null,
+    queueStatus: queue?.status ?? null,
+    submittedAt: isoOf(queue?.submittedAt) ?? isoOf(av.submittedAt),
+    document,
+    documentError,
+  };
+});
+
 /**
  * Backfills `ageVerification.status = 'declared'` for existing users who have a
  * birth date but no status yet, so the app does not show every existing user a

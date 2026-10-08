@@ -364,6 +364,7 @@ export {
   getAgeVerificationState,
   submitAgeDocument,
   reviewAgeVerification,
+  getAgeVerificationDetails,
   backfillDeclaredAge,
 } from './safety/ageAssurance';
 
