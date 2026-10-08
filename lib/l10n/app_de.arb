@@ -5497,7 +5497,7 @@
   "tpFree": "Kostenlos",
   "tpGetPaidIntro": "Das Geld geht direkt auf dein eigenes Konto. GreenGo nimmt keine Gebühr auf Ticketverkäufe.",
   "tpGetPaidManualInfo": "Ohne Einrichtung: Wähle im Event oder Erlebnis eine deiner Zahlungsmethoden (Profil) oder bar / Überweisung und bestätige jede Zahlung selbst.",
-  "tpGetPaidSubtitle": "Tickets verkaufen: Stripe oder Mercado Pago verbinden, Zahlungen bestätigen",
+  "tpGetPaidSubtitle": "Zahlungsmethoden, Stripe und Mercado Pago, zu bestätigende Zahlungen",
   "tpGetPaidTitle": "Bezahlt werden",
   "tpGroupOf": "Gruppe mit {count} Personen",
   "tpGroupPreview": "{price} für eine Gruppe von bis zu {size}",
@@ -5696,5 +5696,7 @@
   "wzWarnManualLarge": "Viele Personen mit manuellen Zahlungen: Du bestätigst jede einzeln. Erwäge die Sofortbestätigung.",
   "wzWarnNoAvailability": "Noch keine Verfügbarkeit: Füge nach dem Speichern Termine hinzu oder aktiviere „Jede Woche wiederholen\".",
   "wzWarnNoPhoto": "Noch kein Titelbild: Angebote mit Foto werden öfter gebucht.",
-  "wzWhenWhere": "Wann & wo"
+  "wzWhenWhere": "Wann & wo",
+  "tpPaymentMethodsSectionHint": "Deine eigenen Methoden (Pix, PayPal, …): Andere können dich direkt bezahlen, und du kannst sie für Tickets nutzen, die du selbst bestätigst.",
+  "tpPaymentMethodsSaveFailed": "Zahlungsmethoden konnten nicht gespeichert werden. Bitte erneut versuchen."
 }

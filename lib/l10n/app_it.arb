@@ -5497,7 +5497,7 @@
   "tpFree": "Gratis",
   "tpGetPaidIntro": "Il denaro va direttamente sul tuo conto. GreenGo non trattiene commissioni sulla vendita dei biglietti.",
   "tpGetPaidManualInfo": "Nessuna configurazione: scegli uno dei tuoi metodi di pagamento del profilo (o contanti / bonifico) nell'evento o esperienza e conferma tu ogni pagamento.",
-  "tpGetPaidSubtitle": "Vendi biglietti: collega Stripe o Mercado Pago, conferma i pagamenti",
+  "tpGetPaidSubtitle": "Metodi di pagamento, Stripe e Mercado Pago, pagamenti da confermare",
   "tpGetPaidTitle": "Ricevi pagamenti",
   "tpGroupOf": "Gruppo di {count}",
   "tpGroupPreview": "{price} per un gruppo fino a {size}",
@@ -5696,5 +5696,7 @@
   "wzWarnManualLarge": "Molte persone con pagamenti manuali: dovrai confermarli uno per uno. Valuta la conferma istantanea.",
   "wzWarnNoAvailability": "Nessuna disponibilità: aggiungi date dopo il salvataggio o attiva \"Ripeti ogni settimana\".",
   "wzWarnNoPhoto": "Nessuna foto di copertina: gli annunci con foto ricevono più prenotazioni.",
-  "wzWhenWhere": "Quando e dove"
+  "wzWhenWhere": "Quando e dove",
+  "tpPaymentMethodsSectionHint": "I tuoi metodi (Pix, PayPal, …): le persone possono pagarti direttamente e puoi usarli per i biglietti che confermi a mano.",
+  "tpPaymentMethodsSaveFailed": "Impossibile salvare i metodi di pagamento. Riprova."
 }

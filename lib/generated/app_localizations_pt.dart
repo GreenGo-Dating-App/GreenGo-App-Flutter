@@ -16930,7 +16930,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tpGetPaidSubtitle =>
-      'Vender bilhetes: ligar Stripe ou Mercado Pago, confirmar pagamentos';
+      'Métodos de pagamento, Stripe e Mercado Pago, pagamentos a confirmar';
 
   @override
   String get tpGetPaidTitle => 'Receber pagamentos';
@@ -17625,6 +17625,14 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get wzWhenWhere => 'Quando e onde';
+
+  @override
+  String get tpPaymentMethodsSectionHint =>
+      'Os seus próprios métodos (Pix, PayPal, …): as pessoas podem pagar-lhe diretamente e pode usá-los para bilhetes que confirma manualmente.';
+
+  @override
+  String get tpPaymentMethodsSaveFailed =>
+      'Não foi possível guardar os métodos de pagamento. Tente novamente.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -34554,7 +34562,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get tpGetPaidSubtitle =>
-      'Venda ingressos: conecte Stripe ou Mercado Pago, confirme pagamentos';
+      'Métodos de pagamento, Stripe e Mercado Pago, pagamentos a confirmar';
 
   @override
   String get tpGetPaidTitle => 'Receber pagamentos';
@@ -35249,4 +35257,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get wzWhenWhere => 'Quando e onde';
+
+  @override
+  String get tpPaymentMethodsSectionHint =>
+      'Seus próprios métodos (Pix, PayPal, …): as pessoas podem te pagar diretamente e você pode usá-los para ingressos que confirma manualmente.';
+
+  @override
+  String get tpPaymentMethodsSaveFailed =>
+      'Não foi possível salvar seus métodos de pagamento. Tente novamente.';
 }

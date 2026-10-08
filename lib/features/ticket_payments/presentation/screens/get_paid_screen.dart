@@ -4,24 +4,46 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../profile/domain/entities/payment_links.dart';
+import '../../../profile/domain/entities/profile.dart';
+import '../../../profile/domain/repositories/profile_repository.dart';
+import '../../../profile/presentation/bloc/profile_bloc.dart';
+import '../../../profile/presentation/bloc/profile_event.dart';
+import '../../../profile/presentation/widgets/payment_methods_editor.dart';
 import '../../data/ticket_payments_service.dart';
 import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
 import 'payments_to_confirm_screen.dart';
 
-/// Organizer "Get paid": connect Mercado Pago / Stripe for instant, automatic
-/// ticket confirmation (one tap; the provider does the verification), see the
-/// status, and reach the manual "Payments to confirm" list. Money goes
-/// straight to the organizer's own account; GreenGo takes no fee.
+/// Settings > "Get paid" - ONE page for every way to get paid: connect
+/// Mercado Pago / Stripe for instant, automatic ticket confirmation (one tap;
+/// the provider does the verification), edit the user's own payment methods
+/// (Pix, PayPal, ... - person-to-person and manually confirmed tickets), and
+/// reach the manual "Payments to confirm" list. Money goes straight to the
+/// user's own account; GreenGo takes no fee.
 class GetPaidScreen extends StatefulWidget {
-  const GetPaidScreen({super.key, required this.uid, this.service});
+  const GetPaidScreen({
+    super.key,
+    required this.uid,
+    this.service,
+    this.profileBloc,
+    this.profileRepository,
+  });
 
   final String uid;
   final TicketPaymentsService? service;
 
-  static Route<void> route(String uid) =>
-      MaterialPageRoute(builder: (_) => GetPaidScreen(uid: uid));
+  /// The caller's ProfileBloc (Edit profile), reloaded after the payment
+  /// methods are saved so that screen never re-saves stale links.
+  final ProfileBloc? profileBloc;
+  final ProfileRepository? profileRepository;
+
+  static Route<void> route(String uid, {ProfileBloc? profileBloc}) =>
+      MaterialPageRoute(
+          builder: (_) => GetPaidScreen(uid: uid, profileBloc: profileBloc));
 
   @override
   State<GetPaidScreen> createState() => _GetPaidScreenState();
@@ -32,6 +54,10 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
   TicketPaymentsConfig _config = const TicketPaymentsConfig();
   TicketProvider? _busy;
   int? _toConfirm;
+  late final ProfileRepository _profiles =
+      widget.profileRepository ?? di.sl<ProfileRepository>();
+  Profile? _profile;
+  bool _profileFailed = false;
 
   @override
   void initState() {
@@ -42,6 +68,78 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
     });
     unawaited(_refresh());
     _loadPendingCount();
+    unawaited(_loadProfile());
+  }
+
+  Future<void> _loadProfile() async {
+    final result = await _profiles.getProfile(widget.uid);
+    if (!mounted) return;
+    result.fold(
+      (_) => setState(() => _profileFailed = true),
+      (p) => setState(() => _profile = p),
+    );
+  }
+
+  Future<bool> _savePaymentLinks(PaymentLinks links) async {
+    final current = _profile;
+    if (current == null) return false;
+    final result = await _profiles.updateProfile(
+      current.copyWith(paymentLinks: links, updatedAt: DateTime.now()),
+    );
+    if (!mounted) return false;
+    return result.fold(
+      (failure) {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!.tpPaymentMethodsSaveFailed),
+          backgroundColor: AppColors.errorRed,
+        ));
+        return false;
+      },
+      (saved) {
+        setState(() => _profile = saved);
+        widget.profileBloc?.add(ProfileLoadRequested(userId: widget.uid));
+        unawaited(ActionSuccessDialog.showPaymentLinksUpdated(context));
+        return true;
+      },
+    );
+  }
+
+  Widget _paymentMethodsSection(AppLocalizations l) {
+    final Widget body;
+    if (_profile != null) {
+      body = PaymentMethodsEditor(
+        key: const ValueKey('get-paid-payment-methods'),
+        initial: _profile!.paymentLinks,
+        onSave: _savePaymentLinks,
+      );
+    } else if (_profileFailed) {
+      body = TextButton.icon(
+        onPressed: () {
+          setState(() => _profileFailed = false);
+          unawaited(_loadProfile());
+        },
+        icon: const Icon(Icons.refresh),
+        label: Text(l.tpRefresh),
+      );
+    } else {
+      body = const Padding(
+        padding: EdgeInsets.all(16),
+        child: Center(child: CircularProgressIndicator(color: AppColors.richGold)),
+      );
+    }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(l.paymentLinksTitle,
+            style: const TextStyle(
+                color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700)),
+        const SizedBox(height: 4),
+        Text(l.tpPaymentMethodsSectionHint,
+            style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+        const SizedBox(height: 12),
+        body,
+      ],
+    );
   }
 
   @override
@@ -142,7 +240,9 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
                       style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
                 ),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 12),
+              _paymentMethodsSection(l),
+              const SizedBox(height: 20),
               Card(
                 color: AppColors.backgroundCard,
                 child: ListTile(

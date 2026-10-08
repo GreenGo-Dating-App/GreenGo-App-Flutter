@@ -73,7 +73,6 @@ import 'edit_bio_screen.dart';
 import 'edit_interests_screen.dart';
 import 'edit_location_screen.dart';
 import 'edit_nickname_screen.dart';
-import 'edit_payment_links_screen.dart';
 import 'edit_social_links_screen.dart';
 import 'edit_voice_screen.dart';
 import 'photo_management_screen.dart';
@@ -507,26 +506,19 @@ class EditProfileScreen extends StatelessWidget {
                       // (recorded server-side; the AI callables enforce it).
                       const SizedBox(height: 16),
                       const AiServicesSettingsCard(),
-                      // Money: the user's own payment methods (person-to-person,
-                      // also usable for manually confirmed tickets) and "Get
-                      // paid" (connect Stripe / Mercado Pago for instant tickets,
-                      // confirm manual payments). GreenGo takes no fee.
-                      const SizedBox(height: 16),
-                      EditSectionCard(
-                        key: const ValueKey('account-settings-payment-methods'),
-                        title: AppLocalizations.of(context)!.paymentLinksTitle,
-                        subtitle: _getPaymentLinksSubtitle(context, activeProfile),
-                        icon: Icons.payments,
-                        onTap: () => _navigateToEditPaymentLinks(context, activeProfile),
-                      ),
+                      // Money: ONE "Get paid" page - the user's own payment
+                      // methods (person-to-person, also usable for manually
+                      // confirmed tickets), Stripe / Mercado Pago for instant
+                      // tickets, and manual confirmations. GreenGo takes no fee.
                       const SizedBox(height: 16),
                       EditSectionCard(
                         key: const ValueKey('account-settings-get-paid'),
                         title: AppLocalizations.of(context)!.tpGetPaidTitle,
                         subtitle: AppLocalizations.of(context)!.tpGetPaidSubtitle,
                         icon: Icons.account_balance_wallet_outlined,
-                        onTap: () => Navigator.of(context)
-                            .push(GetPaidScreen.route(activeProfile.userId)),
+                        onTap: () => Navigator.of(context).push(
+                            GetPaidScreen.route(activeProfile.userId,
+                                profileBloc: context.read<ProfileBloc>())),
                       ),
                     ],
                   ),
@@ -1157,26 +1149,6 @@ class EditProfileScreen extends StatelessWidget {
       ),
     );
     // Profile updates are propagated through shared BLoC - no reload needed
-  }
-
-  String _getPaymentLinksSubtitle(BuildContext context, Profile profile) {
-    final methods = profile.paymentLinks?.methods ?? const [];
-    if (methods.isEmpty) {
-      return AppLocalizations.of(context)!.paymentLinksNone;
-    }
-    return AppLocalizations.of(context)!.paymentLinksCount(methods.length);
-  }
-
-  Future<void> _navigateToEditPaymentLinks(BuildContext context, Profile currentProfile) async {
-    final profileBloc = context.read<ProfileBloc>();
-    await Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => BlocProvider.value(
-          value: profileBloc,
-          child: EditPaymentLinksScreen(profile: currentProfile),
-        ),
-      ),
-    );
   }
 
   String _getAboutMeSubtitle(BuildContext context, Profile profile) {

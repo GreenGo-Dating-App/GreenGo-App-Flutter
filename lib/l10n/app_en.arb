@@ -8563,7 +8563,7 @@
   "@tpGetPaidManualInfo": {
     "description": "Ticket payments"
   },
-  "tpGetPaidSubtitle": "Sell tickets: connect Stripe or Mercado Pago, confirm payments",
+  "tpGetPaidSubtitle": "Payment methods, Stripe and Mercado Pago, payments to confirm",
   "@tpGetPaidSubtitle": {
     "description": "Ticket payments"
   },
@@ -9512,5 +9512,13 @@
   "wzWhenWhere": "When & where",
   "@wzWhenWhere": {
     "description": "Create / edit wizard"
+  },
+  "tpPaymentMethodsSectionHint": "Your own methods (Pix, PayPal, …): people can pay you directly, and you can use them for tickets you confirm by hand.",
+  "tpPaymentMethodsSaveFailed": "Couldn't save your payment methods. Try again.",
+  "@tpPaymentMethodsSectionHint": {
+    "description": "Get paid page: hint under the Payment methods section"
+  },
+  "@tpPaymentMethodsSaveFailed": {
+    "description": "Get paid page: error when saving payment methods fails"
   }
 }

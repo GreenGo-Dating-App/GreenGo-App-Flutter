@@ -1,37 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
-import '../../../../core/utils/safe_navigation.dart';
-import '../../../../core/utils/user_error.dart';
-import '../../../../core/widgets/action_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/payment_links.dart';
-import '../../domain/entities/profile.dart';
-import '../bloc/profile_bloc.dart';
-import '../bloc/profile_event.dart';
-import '../bloc/profile_state.dart';
-import '../widgets/payment_methods_section.dart';
+import 'payment_methods_section.dart';
 
-/// Lets a user list their OWN external payment methods (Pix, PayPal, …) so
-/// others can pay them directly. GreenGo stores only the handle/key/link.
-class EditPaymentLinksScreen extends StatefulWidget {
-  const EditPaymentLinksScreen({
-    required this.profile,
+/// Inline editor for the user's OWN external payment methods (Pix, PayPal, …)
+/// so others can pay them directly; also the methods offered for manually
+/// confirmed tickets. GreenGo stores only the handle/key/link.
+///
+/// Embedded in Settings > Get paid (one page for every way to get paid).
+/// [onSave] persists the normalized links and returns whether it succeeded.
+class PaymentMethodsEditor extends StatefulWidget {
+  const PaymentMethodsEditor({
+    required this.initial,
+    required this.onSave,
     super.key,
   });
-  final Profile profile;
+
+  final PaymentLinks? initial;
+  final Future<bool> Function(PaymentLinks links) onSave;
 
   @override
-  State<EditPaymentLinksScreen> createState() => _EditPaymentLinksScreenState();
+  State<PaymentMethodsEditor> createState() => _PaymentMethodsEditorState();
 }
 
-class _EditPaymentLinksScreenState extends State<EditPaymentLinksScreen> {
+class _PaymentMethodsEditorState extends State<PaymentMethodsEditor> {
+  late PaymentLinks? _saved = widget.initial;
   late final Map<PaymentMethod, TextEditingController> _controllers = {
     for (final m in PaymentMethod.values)
-      m: TextEditingController(
-          text: widget.profile.paymentLinks?.valueOf(m) ?? ''),
+      m: TextEditingController(text: widget.initial?.valueOf(m) ?? ''),
   };
 
   bool _hasChanges = false;
@@ -56,9 +55,8 @@ class _EditPaymentLinksScreenState extends State<EditPaymentLinksScreen> {
   }
 
   void _onFieldChanged() {
-    final original = widget.profile.paymentLinks;
     final hasChanges = PaymentMethod.values.any(
-      (m) => _controllers[m]!.text.trim() != (original?.valueOf(m) ?? ''),
+      (m) => _controllers[m]!.text.trim() != (_saved?.valueOf(m) ?? ''),
     );
     if (hasChanges != _hasChanges) {
       setState(() => _hasChanges = hasChanges);
@@ -77,7 +75,7 @@ class _EditPaymentLinksScreenState extends State<EditPaymentLinksScreen> {
     }
   }
 
-  void _save() {
+  Future<void> _save() async {
     if (_isSaving) return;
     final l10n = AppLocalizations.of(context)!;
 
@@ -99,104 +97,69 @@ class _EditPaymentLinksScreenState extends State<EditPaymentLinksScreen> {
     }
 
     setState(() => _isSaving = true);
-    context.read<ProfileBloc>().add(
-          ProfileUpdateRequested(
-            profile: widget.profile.copyWith(
-              paymentLinks: PaymentLinks(values),
-              updatedAt: DateTime.now(),
-            ),
-          ),
-        );
+    final links = PaymentLinks(values);
+    final ok = await widget.onSave(links);
+    if (!mounted) return;
+    setState(() {
+      _isSaving = false;
+      if (ok) {
+        _saved = links;
+        _hasChanges = false;
+        for (final m in PaymentMethod.values) {
+          final v = links.valueOf(m) ?? '';
+          if (_controllers[m]!.text != v) _controllers[m]!.text = v;
+        }
+      }
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    return BlocConsumer<ProfileBloc, ProfileState>(
-      listener: (context, state) async {
-        if (!_isSaving) return;
-        if (state is ProfileUpdated) {
-          await ActionSuccessDialog.showPaymentLinksUpdated(context);
-          if (context.mounted) Navigator.of(context).pop(state.profile);
-        } else if (state is ProfileError) {
-          setState(() => _isSaving = false);
-          showUserError(context, state.message);
-        }
-      },
-      builder: (context, state) {
-        return Scaffold(
-          backgroundColor: AppColors.backgroundDark,
-          appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
-              onPressed: () => SafeNavigation.pop(context),
-            ),
-            title: Text(
-              l10n.paymentLinksTitle,
-              style: const TextStyle(color: AppColors.textPrimary),
-            ),
-            actions: [
-              if (_isSaving)
-                const Padding(
-                  padding: EdgeInsets.only(right: 16),
-                  child: SizedBox(
-                    width: 20,
-                    height: 20,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      valueColor:
-                          AlwaysStoppedAnimation<Color>(AppColors.richGold),
-                    ),
-                  ),
-                )
-              else
-                TextButton(
-                  onPressed: _hasChanges ? _save : null,
-                  child: Text(
-                    l10n.save,
-                    style: TextStyle(
-                      color: _hasChanges
-                          ? AppColors.richGold
-                          : AppColors.textTertiary,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ),
-            ],
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _InfoCard(
+          icon: Icons.payments,
+          color: AppColors.richGold,
+          title: l10n.paymentLinksInfoTitle,
+          body: l10n.paymentLinksInfoBody,
+        ),
+        const SizedBox(height: 16),
+        for (final m in PaymentMethod.values)
+          _buildInput(
+            controller: _controllers[m]!,
+            method: m,
+            hint: _hint(l10n, m),
           ),
-          body: SingleChildScrollView(
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.all(AppDimensions.paddingL),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                _InfoCard(
-                  icon: Icons.payments,
-                  color: AppColors.richGold,
-                  title: l10n.paymentLinksInfoTitle,
-                  body: l10n.paymentLinksInfoBody,
-                ),
-                const SizedBox(height: 24),
-                for (final m in PaymentMethod.values)
-                  _buildInput(
-                    controller: _controllers[m]!,
-                    method: m,
-                    hint: _hint(l10n, m),
-                  ),
-                const SizedBox(height: 8),
-                _InfoCard(
-                  icon: Icons.info_outline,
-                  color: AppColors.textSecondary,
-                  body: l10n.paymentLinksRules,
-                ),
-              ],
+        _InfoCard(
+          icon: Icons.info_outline,
+          color: AppColors.textSecondary,
+          body: l10n.paymentLinksRules,
+        ),
+        const SizedBox(height: 12),
+        SizedBox(
+          width: double.infinity,
+          child: ElevatedButton.icon(
+            key: const ValueKey('payment-methods-save'),
+            onPressed: _hasChanges && !_isSaving ? _save : null,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+              foregroundColor: AppColors.backgroundDark,
+              disabledBackgroundColor: AppColors.backgroundCard,
+              padding: const EdgeInsets.symmetric(vertical: 14),
             ),
+            icon: _isSaving
+                ? const SizedBox(
+                    width: 18,
+                    height: 18,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  )
+                : const Icon(Icons.save_outlined),
+            label: Text(l10n.save),
           ),
-        );
-      },
+        ),
+      ],
     );
   }
 
@@ -211,9 +174,8 @@ class _EditPaymentLinksScreenState extends State<EditPaymentLinksScreen> {
         controller: controller,
         autocorrect: false,
         enableSuggestions: false,
-        keyboardType: method.opensLink
-            ? TextInputType.url
-            : TextInputType.emailAddress,
+        keyboardType:
+            method.opensLink ? TextInputType.url : TextInputType.emailAddress,
         style: const TextStyle(color: AppColors.textPrimary, fontSize: 15),
         decoration: InputDecoration(
           labelText: method.label,

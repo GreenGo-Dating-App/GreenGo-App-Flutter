@@ -16957,7 +16957,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tpGetPaidSubtitle =>
-      'Vende entradas: conecta Stripe o Mercado Pago, confirma pagos';
+      'Métodos de pago, Stripe y Mercado Pago, pagos por confirmar';
 
   @override
   String get tpGetPaidTitle => 'Cobrar';
@@ -17651,4 +17651,12 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get wzWhenWhere => 'Cuándo y dónde';
+
+  @override
+  String get tpPaymentMethodsSectionHint =>
+      'Tus propios métodos (Pix, PayPal, …): otras personas pueden pagarte directamente y puedes usarlos para entradas que confirmas tú.';
+
+  @override
+  String get tpPaymentMethodsSaveFailed =>
+      'No se pudieron guardar tus métodos de pago. Inténtalo de nuevo.';
 }

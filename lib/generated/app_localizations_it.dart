@@ -16947,7 +16947,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpGetPaidSubtitle =>
-      'Vendi biglietti: collega Stripe o Mercado Pago, conferma i pagamenti';
+      'Metodi di pagamento, Stripe e Mercado Pago, pagamenti da confermare';
 
   @override
   String get tpGetPaidTitle => 'Ricevi pagamenti';
@@ -17646,4 +17646,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get wzWhenWhere => 'Quando e dove';
+
+  @override
+  String get tpPaymentMethodsSectionHint =>
+      'I tuoi metodi (Pix, PayPal, …): le persone possono pagarti direttamente e puoi usarli per i biglietti che confermi a mano.';
+
+  @override
+  String get tpPaymentMethodsSaveFailed =>
+      'Impossibile salvare i metodi di pagamento. Riprova.';
 }

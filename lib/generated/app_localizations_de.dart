@@ -16980,7 +16980,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpGetPaidSubtitle =>
-      'Tickets verkaufen: Stripe oder Mercado Pago verbinden, Zahlungen bestätigen';
+      'Zahlungsmethoden, Stripe und Mercado Pago, zu bestätigende Zahlungen';
 
   @override
   String get tpGetPaidTitle => 'Bezahlt werden';
@@ -17676,4 +17676,12 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get wzWhenWhere => 'Wann & wo';
+
+  @override
+  String get tpPaymentMethodsSectionHint =>
+      'Deine eigenen Methoden (Pix, PayPal, …): Andere können dich direkt bezahlen, und du kannst sie für Tickets nutzen, die du selbst bestätigst.';
+
+  @override
+  String get tpPaymentMethodsSaveFailed =>
+      'Zahlungsmethoden konnten nicht gespeichert werden. Bitte erneut versuchen.';
 }

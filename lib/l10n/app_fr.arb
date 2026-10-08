@@ -4916,7 +4916,7 @@
   "tpFree": "Gratuit",
   "tpGetPaidIntro": "L'argent va directement sur votre propre compte. GreenGo ne prend aucune commission sur les billets.",
   "tpGetPaidManualInfo": "Sans configuration : choisissez un de vos moyens de paiement du profil (ou espèces / virement) dans l'événement ou l'expérience et confirmez chaque paiement vous-même.",
-  "tpGetPaidSubtitle": "Vendre des billets : connecter Stripe ou Mercado Pago, confirmer les paiements",
+  "tpGetPaidSubtitle": "Moyens de paiement, Stripe et Mercado Pago, paiements à confirmer",
   "tpGetPaidTitle": "Être payé",
   "tpGroupOf": "Groupe de {count}",
   "tpGroupPreview": "{price} pour un groupe jusqu'à {size}",
@@ -5115,5 +5115,7 @@
   "wzWarnManualLarge": "Beaucoup de monde avec des paiements manuels : vous confirmerez chacun. Envisagez la confirmation instantanée.",
   "wzWarnNoAvailability": "Pas encore de disponibilités : ajoutez des dates après l'enregistrement ou activez « Répéter chaque semaine ».",
   "wzWarnNoPhoto": "Pas encore de photo de couverture : les annonces avec photo sont plus réservées.",
-  "wzWhenWhere": "Quand et où"
+  "wzWhenWhere": "Quand et où",
+  "tpPaymentMethodsSectionHint": "Tes propres moyens (Pix, PayPal, …) : on peut te payer directement, et tu peux les utiliser pour les billets que tu confirmes toi-même.",
+  "tpPaymentMethodsSaveFailed": "Impossible d'enregistrer tes moyens de paiement. Réessaie."
 }

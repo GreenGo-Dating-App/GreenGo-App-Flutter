@@ -29471,7 +29471,7 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Sell tickets: connect Stripe or Mercado Pago, confirm payments'**
+  /// **'Payment methods, Stripe and Mercado Pago, payments to confirm'**
   String get tpGetPaidSubtitle;
 
   /// Ticket payments
@@ -30667,6 +30667,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'When & where'**
   String get wzWhenWhere;
+
+  /// Get paid page: hint under the Payment methods section
+  ///
+  /// In en, this message translates to:
+  /// **'Your own methods (Pix, PayPal, …): people can pay you directly, and you can use them for tickets you confirm by hand.'**
+  String get tpPaymentMethodsSectionHint;
+
+  /// Get paid page: error when saving payment methods fails
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save your payment methods. Try again.'**
+  String get tpPaymentMethodsSaveFailed;
 }
 
 class _AppLocalizationsDelegate
