@@ -352,6 +352,10 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   /// who SENT the request is not approving anything — for them it is an
   /// ordinary outgoing conversation and belongs in "All", which is what they
   /// expect after sending a message.
+  /// The Exchanges "Business" tab is shown only when the account is in
+  /// business mode.
+  bool get _showBusinessTab => _currentUserProfile?.isBusiness ?? false;
+
   bool _isAwaitingMyApproval(Conversation conversation) {
     return conversation.isSuperLikeConversation &&
         conversation.visibleTo != null &&
@@ -359,10 +363,11 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
   }
 
   bool _passesFilter(Conversation conversation) {
-    // Business-inquiry conversations live in the dedicated "Business" tab (now
-    // shown to EVERY user), so keep them out of the personal Messages filters
-    // for everyone — no double-counting between Messages and Business.
-    if (conversation.businessInquiry) {
+    // Business-inquiry conversations live in the dedicated "Business" tab,
+    // which only BUSINESS accounts have; for them keep these chats out of the
+    // personal Messages filters (no double counting). Personal accounts see
+    // their chats with storefronts in Messages like any other conversation.
+    if (conversation.businessInquiry && _showBusinessTab) {
       return false;
     }
     // A conversation is only a real "chat" once at least one message has been
@@ -457,11 +462,11 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
           create: (_) =>
               di.sl<GroupsBloc>()..add(GroupsLoadRequested(widget.userId)),
           child: DefaultTabController(
-          // ALWAYS three tabs for EVERY user regardless of profile type:
-          // Messages (1:1), Groups, and Business (conversations flagged
-          // businessInquiry — a customer's chats with storefronts, or a business
-          // account's incoming inquiries).
-          length: 3,
+          // Messages (1:1) and Groups for everyone; a third "Business" tab
+          // (conversations flagged businessInquiry = incoming storefront
+          // inquiries) ONLY when the account is in business mode.
+          key: ValueKey('exchanges-tabs-$_showBusinessTab'),
+          length: _showBusinessTab ? 3 : 2,
           child: Column(
             children: [
               Material(
@@ -496,7 +501,8 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                             : 0,
                       ),
                     ),
-                    // Business tab — storefront inquiries. Shown to EVERY user.
+                    // Business tab — storefront inquiries. Business accounts only.
+                    if (_showBusinessTab)
                     BlocBuilder<ConversationsBloc, ConversationsState>(
                       builder: (context, state) => _tabWithBadge(
                         l10n.messagesTabBusiness,
@@ -823,7 +829,7 @@ class _ConversationsScreenState extends State<ConversationsScreen> {
                       userId: widget.userId,
                       showAppBar: false,
                     ),
-                    _buildBusinessTab(l10n),
+                    if (_showBusinessTab) _buildBusinessTab(l10n),
                   ],
                 ),
               ),
