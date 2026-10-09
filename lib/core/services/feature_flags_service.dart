@@ -63,6 +63,10 @@ class FeatureFlagsService extends ChangeNotifier {
     'performanceMonitoring': true,
     'pushNotifications': true,
     'emailNotifications': true,
+
+    // Security: screenshot / screen-recording protection (FLAG_SECURE, iOS
+    // secure layer, capture cover, web deterrents). Kill-switch only.
+    'screenProtection': true,
   };
 
   Future<void>? _initializing;

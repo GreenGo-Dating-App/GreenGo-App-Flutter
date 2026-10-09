@@ -327,6 +327,134 @@
   </script>
 
   <!--
+    Screenshot / screen-capture DETERRENTS (web).
+
+    A browser page CANNOT block screenshots: OS shortcuts (Win+Shift+S,
+    Cmd+Shift+4), phone cameras and screen recorders never reach the page.
+    What this shim does is best effort, and documented as such
+    (lib/core/security/screen_security_service.dart):
+
+      * blur the app the instant the window loses focus or the tab is hidden
+        (most snipping tools take focus first, so they capture a blurred
+        page); Dart adds an opaque cover on top of it;
+      * PrintScreen: clear the clipboard where the browser permits it;
+      * Ctrl/Cmd+P (print), Ctrl/Cmd+S (save page), Ctrl+Shift+S (Firefox
+        screenshot) are swallowed; printing renders a blank page;
+      * no context menu ("Save image as"), drag-out or iOS long-press callout
+        on images / video / the Flutter canvas.
+
+    Focus moving into an <iframe> inside the page (embedded video, captcha)
+    also fires window "blur"; that is not "leaving the app", so it is ignored.
+    Dart attaches with __ggScreenGuard.attach(fn) and receives: blur, focus,
+    hidden, visible, printscreen, print, save. setEnabled(false) is the
+    remote kill-switch.
+  -->
+  <style>
+    img, video, canvas, flt-glass-pane, flutter-view {
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+    }
+    img, video { user-select: none; -webkit-user-select: none; }
+    html.gg-obscured flutter-view,
+    html.gg-obscured flt-glass-pane {
+      filter: blur(28px);
+    }
+    @media print {
+      html, body { display: none !important; visibility: hidden !important; }
+    }
+  </style>
+  <script>
+    (function () {
+      var enabled = true;
+      var handler = null;
+      var root = document.documentElement;
+
+      function emit(type) {
+        if (!handler) return;
+        try { handler(type); } catch (e) {}
+      }
+      function obscure(on) {
+        if (on && !enabled) return;
+        if (on) root.classList.add('gg-obscured');
+        else root.classList.remove('gg-obscured');
+      }
+      function focusInFrame() {
+        var a = document.activeElement;
+        return !!a && a.tagName === 'IFRAME';
+      }
+      function toast(type) { if (enabled) emit(type); }
+
+      window.addEventListener('blur', function () {
+        // Let the activeElement settle first: it becomes the iframe only
+        // after the blur event.
+        setTimeout(function () {
+          if (focusInFrame() || document.hasFocus()) return;
+          obscure(true);
+          emit('blur');
+        }, 0);
+      });
+      window.addEventListener('focus', function () {
+        if (document.visibilityState !== 'hidden') obscure(false);
+        emit('focus');
+      });
+      document.addEventListener('visibilitychange', function () {
+        var hidden = document.visibilityState === 'hidden';
+        obscure(hidden);
+        emit(hidden ? 'hidden' : 'visible');
+      });
+
+      window.addEventListener('keyup', function (e) {
+        if (!enabled) return;
+        if (e.key === 'PrintScreen' || e.keyCode === 44) {
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText('').catch(function () {});
+            }
+          } catch (err) {}
+          toast('printscreen');
+        }
+      }, true);
+      window.addEventListener('keydown', function (e) {
+        if (!enabled) return;
+        var mod = e.ctrlKey || e.metaKey;
+        var k = (e.key || '').toLowerCase();
+        if (e.key === 'PrintScreen') {
+          // Some browsers deliver keydown only; hide immediately.
+          obscure(true);
+          setTimeout(function () { if (document.hasFocus()) obscure(false); }, 1500);
+          return;
+        }
+        if (mod && k === 'p') { e.preventDefault(); e.stopPropagation(); toast('print'); }
+        else if (mod && k === 's' && e.shiftKey) { e.preventDefault(); e.stopPropagation(); toast('printscreen'); }
+        else if (mod && k === 's') { e.preventDefault(); e.stopPropagation(); toast('save'); }
+      }, true);
+      window.addEventListener('beforeprint', function () { obscure(true); toast('print'); });
+      window.addEventListener('afterprint', function () { if (document.hasFocus()) obscure(false); });
+
+      function isEditable(t) {
+        if (!t || !t.tagName) return false;
+        var tag = t.tagName;
+        return tag === 'INPUT' || tag === 'TEXTAREA' || t.isContentEditable;
+      }
+      document.addEventListener('contextmenu', function (e) {
+        if (enabled && !isEditable(e.target)) e.preventDefault();
+      }, true);
+      document.addEventListener('dragstart', function (e) {
+        if (enabled && !isEditable(e.target)) e.preventDefault();
+      }, true);
+
+      window.__ggScreenGuard = {
+        attach: function (fn) { handler = typeof fn === 'function' ? fn : null; },
+        setEnabled: function (on) {
+          enabled = on !== false;
+          if (!enabled) root.classList.remove('gg-obscured');
+        },
+        isEnabled: function () { return enabled; }
+      };
+    })();
+  </script>
+
+  <!--
     Boot screen. Flutter web paints nothing until the engine has downloaded and
     rendered its first frame, and the default document background is white, so
     the app opened on a white flash. This paints the brand black immediately

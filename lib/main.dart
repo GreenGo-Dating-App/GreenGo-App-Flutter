@@ -47,6 +47,8 @@ import 'core/services/own_profile_store.dart';
 import 'core/services/push_notification_service.dart';
 import 'core/services/session_cache_gate.dart';
 import 'core/services/version_check_service.dart';
+import 'core/security/screen_protection_overlay.dart';
+import 'core/security/screen_security_service.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/admin_data_utils.dart';
 import 'core/utils/seed_data.dart';
@@ -284,6 +286,22 @@ void main() async {
   unawaited(featureFlags.initialize());
   unawaited(versionCheck.initialize());
 
+  // Screenshot / recording protection. FLAG_SECURE (Android) and the iOS
+  // secure layer are already on natively before the first frame; this wires
+  // capture detection + the web deterrents, and follows the remote
+  // kill-switch `app_config/feature_flags.screenProtection` (default on).
+  unawaited(ScreenSecurityService.instance.init());
+  // Applied once the real flags have loaded (also clears a previously
+  // persisted iOS "off"), then on every change.
+  bool? screenProtectionOn;
+  featureFlags.addListener(() {
+    if (!featureFlags.isLoaded) return;
+    final on = featureFlags.isEnabled('screenProtection');
+    if (on == screenProtectionOn) return;
+    screenProtectionOn = on;
+    unawaited(ScreenSecurityService.instance.setProtectionEnabled(on));
+  });
+
   // The FCM background handler must be registered before runApp (it is what
   // lets a terminated app handle a message). The rest of the push setup
   // (channels, local notifications, listeners, the launch notification) runs
@@ -473,7 +491,9 @@ class GreenGoChatApp extends StatelessWidget {
                 ),
                 child: Theme(
                   data: scaledTheme,
-                  child: child!,
+                  // Above every route/dialog: capture cover + "screenshots
+                  // are not allowed" toast.
+                  child: ScreenProtectionOverlay(child: child!),
                 ),
               );
             },

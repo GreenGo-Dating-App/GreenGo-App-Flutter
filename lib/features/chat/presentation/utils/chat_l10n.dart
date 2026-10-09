@@ -111,6 +111,8 @@ String? chatSystemText(
         _formatStoredDate(params['reportedAt'], l10n.localeName),
       );
       return '${l10n.supportReportFollowUpTitle}\n\n$details';
+    case ChatSystemKey.screenshotTaken:
+      return l10n.chatSystemScreenshotTaken(name());
   }
   // Keys written by the SERVER (members joined/left, message removed by a
   // moderator, AI support hand-off, ...) - null when unknown to this version.

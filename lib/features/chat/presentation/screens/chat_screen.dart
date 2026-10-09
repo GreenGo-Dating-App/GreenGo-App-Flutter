@@ -62,6 +62,11 @@ import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../profile/data/private_album.dart';
+import '../../../../core/security/app_only_content.dart';
+import '../../../../core/security/media_url.dart';
+import '../../../../core/security/screen_security_service.dart';
+import '../../../../core/security/viewer_watermark.dart';
+import '../../data/services/chat_screenshot_notice.dart';
 import '../../../safety/presentation/screens/age_assurance_required_screen.dart';
 
 /// Chat Screen
@@ -97,6 +102,25 @@ class _ChatScreenState extends State<ChatScreen> {
   late final ChatBloc _chatBloc;
   late final ChatRemoteDataSourceImpl _chatDataSource;
   late final AlbumAccessDatasource _albumAccessDatasource;
+
+  /// Posts "X took a screenshot" into this conversation (throttled).
+  void _postScreenshotNotice() {
+    final st = _chatBloc.state;
+    String? conversationId;
+    if (st is ChatLoaded) {
+      conversationId = st.conversation.conversationId;
+    } else if (st is ChatSending) {
+      conversationId = st.conversation.conversationId;
+    }
+    conversationId ??= widget.initialConversation?.conversationId;
+    if (conversationId == null || conversationId.isEmpty) return;
+    unawaited(_screenshotNotice.postToConversation(
+      conversationId: conversationId,
+      senderId: widget.currentUserId,
+      receiverId: widget.otherUserId,
+      senderName: _currentUserName ?? '',
+    ));
+  }
 
   /// P3-1 age assurance: every send passes this guard. Where strong age
   /// assurance is required and missing, only conversations the user already
@@ -207,6 +231,8 @@ class _ChatScreenState extends State<ChatScreen> {
   // In-flight upload progress subscription — cancelled in dispose() so an upload
   // finishing after the screen closes can't setState into a disposed widget.
   StreamSubscription<TaskSnapshot>? _uploadSub;
+  StreamSubscription<void>? _screenshotSub;
+  final ChatScreenshotNotice _screenshotNotice = ChatScreenshotNotice();
   bool _isLoadingMore = false;
 
   LanguageProvider? _languageProvider;
@@ -240,6 +266,9 @@ class _ChatScreenState extends State<ChatScreen> {
     );
     _albumAccessDatasource = AlbumAccessDatasource(firestore: FirebaseFirestore.instance);
     _fetchCurrentUserName();
+    // "X took a screenshot" notice (iOS; Android 14+ when FLAG_SECURE is off).
+    _screenshotSub = ScreenSecurityService.instance.screenshots
+        .listen((_) => _postScreenshotNotice());
     _loadPhraseOfTheDay();
     _loadChatSettings();
     _loadMuteState();
@@ -465,6 +494,7 @@ class _ChatScreenState extends State<ChatScreen> {
     }
     _languageProvider?.removeListener(_onLanguageChanged);
     _uploadSub?.cancel();
+    _screenshotSub?.cancel();
     _messageController.dispose();
     _scrollController.dispose();
     _chatBloc.close();
@@ -1480,6 +1510,12 @@ class _ChatScreenState extends State<ChatScreen> {
 
   /// View other user's private album (if access granted)
   Future<void> _viewOtherUserAlbum(BuildContext context) async {
+    // Other people's private photos are app-only: a browser cannot block
+    // screenshots (see ScreenSecurityService).
+    if (isAppOnlyContentBlocked()) {
+      await showAppOnlyContentSheet(context);
+      return;
+    }
     try {
       // Check if current user has access to other user's album
       final hasAccess = await _albumAccessDatasource.hasAccess(
@@ -1563,8 +1599,12 @@ class _ChatScreenState extends State<ChatScreen> {
                       onTap: () => _openPhotoFullscreen(context, photoUrl, privatePhotos.cast<String>(), index),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
-                        child: CachedNetworkImage(
+                        child: ViewerWatermark.media(
+                          isPrivate: true,
+                          child: CachedNetworkImage(
                           imageUrl: photoUrl,
+                          // Signed URLs change on every fetch: cache by object.
+                          cacheKey: stableMediaCacheKey(photoUrl),
                           fit: BoxFit.cover,
                           // Grid thumbnail (~120dp, 3 columns) — decode small.
                           memCacheWidth: 300,
@@ -1579,6 +1619,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               ),
                             );
                           },
+                        ),
                         ),
                       ),
                     );
@@ -1628,8 +1669,11 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: InteractiveViewer(
                   minScale: 0.5,
                   maxScale: 3.0,
-                  child: CachedNetworkImage(
+                  child: ViewerWatermark.media(
+                    isPrivate: true,
+                    child: CachedNetworkImage(
                     imageUrl: photoUrl,
+                    cacheKey: stableMediaCacheKey(photoUrl),
                     fit: BoxFit.contain,
                     // Full-screen viewer: full resolution, disk-cached.
                     placeholder: (context, _) {
@@ -1639,6 +1683,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         ),
                       );
                     },
+                  ),
                   ),
                 ),
               ),

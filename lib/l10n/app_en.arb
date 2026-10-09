@@ -12390,5 +12390,185 @@
   "participantsEmailNoEmail": "Your account has no email address to send the list to.",
   "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry.",
   "openSourceLicensesTitle": "Open-source licenses",
-  "openSourceLicensesSubtitle": "Fonts and software components used in this app"
+  "openSourceLicensesSubtitle": "Fonts and software components used in this app",
+  "blindDateActivate": "Activate Blind Date Mode",
+  "blindDateDeactivate": "Deactivate",
+  "blindDateDeactivateMessage": "You'll return to normal discovery mode.",
+  "blindDateDeactivateTitle": "Deactivate Blind Date Mode?",
+  "blindDateDeactivateTooltip": "Deactivate Blind Date Mode",
+  "blindDateFeatureInstantReveal": "Instant reveal for {cost} coins",
+  "@blindDateFeatureInstantReveal": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateFeatureNoPhotos": "No profile photos visible initially",
+  "blindDateFeaturePersonality": "Focus on personality & interests",
+  "blindDateFeatureUnlock": "Photos unlock after chatting",
+  "blindDateGetCoins": "Get Coins",
+  "blindDateInstantReveal": "Instant Reveal",
+  "blindDateInstantRevealMessage": "Reveal all photos of this match for {cost} coins?",
+  "@blindDateInstantRevealMessage": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateInstantRevealTooltip": "Instant reveal ({cost} coins)",
+  "@blindDateInstantRevealTooltip": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateInsufficientCoins": "Insufficient Coins",
+  "blindDateInsufficientCoinsMessage": "You need {cost} coins to instantly reveal photos.",
+  "@blindDateInsufficientCoinsMessage": {
+    "placeholders": {
+      "cost": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateInterests": "Interests",
+  "blindDateKmAway": "{distance} km away",
+  "@blindDateKmAway": {
+    "placeholders": {
+      "distance": {
+        "type": "String"
+      }
+    }
+  },
+  "blindDateLetsExchange": "Start Connecting!",
+  "blindDateMatchMessage": "You both liked each other! Start chatting to reveal your photos.",
+  "blindDateMessageProgress": "{current} / {total} messages",
+  "@blindDateMessageProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateMessagesToGo": "{count} to go",
+  "@blindDateMessagesToGo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateMessagesUntilReveal": "{count} messages until reveal",
+  "@blindDateMessagesUntilReveal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateModeActivated": "Blind Date mode activated!",
+  "blindDateModeDescription": "Match based on personality, not looks.\nPhotos reveal after {threshold} messages.",
+  "@blindDateModeDescription": {
+    "placeholders": {
+      "threshold": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateModeTitle": "Blind Date Mode",
+  "blindDateMysteryPerson": "Mystery Person",
+  "blindDateNoCandidates": "No candidates available",
+  "blindDateNoMatches": "No matches yet",
+  "blindDatePendingReveal": "Pending Reveal ({count})",
+  "@blindDatePendingReveal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDatePhotoRevealProgress": "Photo Reveal Progress",
+  "blindDatePhotosRevealHint": "Photos reveal after {threshold} messages",
+  "@blindDatePhotosRevealHint": {
+    "placeholders": {
+      "threshold": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDatePhotosRevealed": "Photos revealed! {coinsSpent} coins spent.",
+  "@blindDatePhotosRevealed": {
+    "placeholders": {
+      "coinsSpent": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDatePhotosRevealedLabel": "Photos revealed!",
+  "blindDateReveal": "Reveal",
+  "blindDateRevealed": "Revealed ({count})",
+  "@blindDateRevealed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "blindDateRevealedMatch": "Revealed Match",
+  "blindDateStartSwiping": "Start swiping to find your blind date!",
+  "blindDateTabDiscover": "Discover",
+  "blindDateTabMatches": "Matches",
+  "blindDateTitle": "Blind Date",
+  "blindDateViewMatch": "View Match",
+  "casualCategory": "Casual",
+  "datePlanningCategory": "Date Planning",
+  "dateSchedulerAccept": "Accept",
+  "dateSchedulerCancelConfirm": "Are you sure you want to cancel this date?",
+  "dateSchedulerCancelTitle": "Cancel Date",
+  "dateSchedulerConfirmed": "Date confirmed!",
+  "dateSchedulerDecline": "Decline",
+  "dateSchedulerEnterTitle": "Please enter a title",
+  "dateSchedulerKeepDate": "Keep Date",
+  "dateSchedulerNotesLabel": "Notes (optional)",
+  "dateSchedulerPlanningHint": "e.g., Coffee, Dinner, Movie...",
+  "dateSchedulerReasonLabel": "Reason (optional)",
+  "dateSchedulerReschedule": "Reschedule",
+  "dateSchedulerRescheduleTitle": "Reschedule Date",
+  "dateSchedulerSchedule": "Schedule",
+  "dateSchedulerScheduled": "Date scheduled!",
+  "dateSchedulerTabPast": "Past",
+  "dateSchedulerTabPending": "Pending",
+  "dateSchedulerTabUpcoming": "Upcoming",
+  "dateSchedulerTitle": "My Dates",
+  "dateSchedulerWhatPlanning": "What are you planning?",
+  "flirtyCategory": "Flirty",
+  "icebreakersCategoryDateIdeas": "Date Ideas",
+  "romanticCategory": "Romantic",
+  "safetyCheckInDescription": "Set up a check-in for your date. We'll remind you to check in, and alert your contacts if you don't respond.",
+  "safetyCheckInScheduled": "Date check-in scheduled!",
+  "safetyDateCheckIn": "Date Check-In",
+  "screenProtectionRecordingTitle": "Screen recording is not allowed",
+  "screenProtectionRecordingBody": "Stop recording or mirroring your screen to keep using GreenGo.",
+  "screenProtectionHiddenTitle": "Content hidden",
+  "screenProtectionHiddenBody": "GreenGo hides content while the window is not in focus. Click here to continue.",
+  "screenProtectionScreenshotsNotAllowed": "Screenshots are not allowed",
+  "screenProtectionAppOnlyTitle": "Open in the GreenGo app to view",
+  "screenProtectionAppOnlyBody": "To protect people's privacy, private photos and ID verification are only available in the GreenGo mobile app.",
+  "screenProtectionOpenApp": "Open the app",
+  "chatSystemScreenshotTaken": "{name} took a screenshot",
+  "@chatSystemScreenshotTaken": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "guidelinesPrivacyCaptureTitle": "Respect privacy",
+  "guidelinesPrivacyCaptureDesc": "Screenshots and recordings of other people's content are blocked or reported; sharing others' photos without consent is forbidden."
 }

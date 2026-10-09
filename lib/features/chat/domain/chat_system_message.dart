@@ -36,6 +36,10 @@ abstract final class ChatSystemKey {
   /// Params: `reason`, `reportedMessage`, `reportedUser`, `reportedAt`
   /// (Timestamp / DateTime).
   static const reportFollowUp = 'reportFollowUp';
+
+  /// A participant took a screenshot of the chat (detected on iOS, and on
+  /// Android 14+ when FLAG_SECURE is off). Params: `name`.
+  static const screenshotTaken = 'screenshotTaken';
 }
 
 /// `metadata` map carrying [key] and its [params] for a stored chat message.
