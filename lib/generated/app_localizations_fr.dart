@@ -3203,10 +3203,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Quitter la Communaute';
 
   @override
-  String get communitiesBusinessCannotJoin =>
-      'Les comptes professionnels ne peuvent pas rejoindre de communautes. Desactivez le mode business pour rejoindre.';
-
-  @override
   String get communitiesDeleteCommunity => 'Supprimer la communaute';
 
   @override
@@ -12110,15 +12106,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get becomeBusinessAction => 'En devenir un';
 
   @override
-  String get becomeBusinessPermanentHint =>
-      'Amélioration unique. Cette action est irréversible.';
-
-  @override
   String get becomeBusinessConfirmTitle => 'Devenir un compte professionnel ?';
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'C\'est permanent — ton compte devient un compte professionnel public et ne peut pas être rétabli.';
+      'C\'est définitif : ton compte devient un compte professionnel public et ne peut pas redevenir un compte personnel. Les outils professionnels fonctionnent tant que ton abonnement Platinum est actif ; s\'il expire, ils sont mis en pause jusqu\'au renouvellement.';
 
   @override
   String get becomeBusinessConfirmAction => 'Rendre permanent';
@@ -12893,16 +12885,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get exploreBusinessesNearYou => 'Entreprises pres de vous';
-
-  @override
-  String get storefrontEnabled => 'Vitrine activee';
-
-  @override
-  String get storefrontDisabled => 'Vitrine desactivee';
-
-  @override
-  String get storefrontToggleHint =>
-      'Activez ou desactivez votre vitrine a tout moment';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
@@ -17029,10 +17011,6 @@ class AppLocalizationsFr extends AppLocalizations {
       'L\'argent va directement sur votre propre compte. GreenGo ne prend aucune commission sur les billets.';
 
   @override
-  String get tpGetPaidManualInfo =>
-      'Sans configuration : choisissez un de vos moyens de paiement du profil (ou espèces / virement) dans l\'événement ou l\'expérience et confirmez chaque paiement vous-même.';
-
-  @override
   String get tpGetPaidSubtitle =>
       'Moyens de paiement, Stripe et Mercado Pago, paiements à confirmer';
 
@@ -17076,7 +17054,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tpManualAddMethodsHint =>
-      'Ajoutez Pix, PayPal… dans Profil > Moyens de paiement pour les voir ici.';
+      'Ajoute ton Pix, PayPal… dans Profil > Professionnel > Être payé pour les voir ici.';
 
   @override
   String get tpManualDisclaimer =>
@@ -23402,4 +23380,50 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get srvSupportAiHandoff =>
       'Je comprends que vous souhaitez parler à un conseiller. Je vous mets en relation. Un membre de l’équipe d’assistance vous répondra rapidement.';
+
+  @override
+  String get becomeBusinessOneWayHint =>
+      'Nécessite Platinum. Passage unique : il ne peut pas être annulé.';
+
+  @override
+  String get businessPermanentInfo =>
+      'Ton compte est définitivement un compte professionnel et ne peut pas redevenir personnel. Les outils professionnels fonctionnent tant que Platinum est actif ; s\'il expire, ils sont en pause jusqu\'au renouvellement.';
+
+  @override
+  String get paidBusinessOnlyNote =>
+      'Les billets payants sont disponibles pour les comptes professionnels.';
+
+  @override
+  String get paidBusinessOnlyBody =>
+      'Les événements et expériences gratuits sont ouverts à tous. Pour faire payer des billets ou des réservations, il te faut un compte professionnel actif (Platinum).';
+
+  @override
+  String get paidBusinessPausedNote =>
+      'Ton entreprise est en pause : renouvelle Platinum pour vendre à nouveau des billets payants.';
+
+  @override
+  String get uexpBusinessRequiredTitle =>
+      'Les annonces payantes sont réservées aux comptes professionnels';
+
+  @override
+  String get tpErrSellerNotBusiness =>
+      'Les ventes sont en pause : les billets et réservations payants ne sont proposés que par des comptes professionnels actifs.';
+
+  @override
+  String get tpAutoSectionTitle => 'Paiement et validation automatiques';
+
+  @override
+  String get tpAutoSectionHint =>
+      'Connecte Stripe ou Mercado Pago : les acheteurs paient dans l’app et leurs billets sont confirmés instantanément, sans vérification manuelle.';
+
+  @override
+  String get tpManualSectionTitle => 'Paiement et validation manuels';
+
+  @override
+  String get tpManualSectionHint =>
+      'Sans configuration : les acheteurs te paient directement avec l’un des moyens de paiement ci-dessous (ou espèces / virement). Tu confirmes chaque paiement toi-même avec le bouton Paiements à confirmer en haut ; le billet est émis dès ta confirmation.';
+
+  @override
+  String get paymentMethodsSettingsSubtitle =>
+      'Comment on peut te payer directement (Pix, PayPal…)';
 }

@@ -140,6 +140,8 @@ class BookingL10n {
         return l.bkErrIdRequired;
       case 'host_not_verified':
         return l.bkErrHostNotVerified;
+      case 'seller_not_business':
+        return l.tpErrSellerNotBusiness;
       case 'payment_method_required':
         return l.bkErrPaymentMethodRequired;
       case 'payment_method_not_accepted':

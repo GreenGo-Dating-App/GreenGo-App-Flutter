@@ -1463,7 +1463,6 @@
   "communitiesLanguages": "Languages",
   "communitiesLanguagesLabel": "Languages",
   "communitiesLeaveCommunity": "Leave Community",
-  "communitiesBusinessCannotJoin": "Business accounts cannot join communities. Switch off business mode to join.",
   "communitiesDeleteCommunity": "Delete Community",
   "communitiesDeleteConfirm": "Permanently delete \"{name}\"? All messages, members and content are removed. This cannot be undone.",
   "@communitiesDeleteConfirm": {
@@ -5723,9 +5722,8 @@
   "businessHubAnalytics": "Analytics",
   "businessHubFeatured": "Featured placements",
   "becomeBusinessAction": "Become one",
-  "becomeBusinessPermanentHint": "One-time upgrade. This can't be undone.",
   "becomeBusinessConfirmTitle": "Become a business account?",
-  "becomeBusinessConfirmMessage": "This is permanent — your account becomes a public business account and can't be switched back.",
+  "becomeBusinessConfirmMessage": "This is permanent: your account becomes a public business account and can't be switched back to a personal account. Business tools work while your Platinum membership is active; if it lapses they are paused until you renew.",
   "becomeBusinessConfirmAction": "Make it permanent",
   "becomeBusinessSuccess": "Your account is now a business account.",
   "becomeBusinessError": "Couldn't switch your account. Please try again.",
@@ -6087,9 +6085,6 @@
   "eventsBuyCoinsPrompt": "You don't have enough coins. Would you like to buy more?",
   "messageTooLong": "Messages can be up to 4096 characters.",
   "exploreBusinessesNearYou": "Businesses close to you",
-  "storefrontEnabled": "Storefront is on",
-  "storefrontDisabled": "Storefront is off",
-  "storefrontToggleHint": "Turn your storefront on or off anytime",
   "splashBusinessLabel": "BUSINESS",
   "rateThisBusiness": "Rate this business",
   "businessRatingError": "Couldn't save your rating. Please try again.",
@@ -8559,10 +8554,6 @@
   "@tpGetPaidIntro": {
     "description": "Ticket payments"
   },
-  "tpGetPaidManualInfo": "No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.",
-  "@tpGetPaidManualInfo": {
-    "description": "Ticket payments"
-  },
   "tpGetPaidSubtitle": "Payment methods, Stripe and Mercado Pago, payments to confirm",
   "@tpGetPaidSubtitle": {
     "description": "Ticket payments"
@@ -8625,7 +8616,7 @@
   "@tpLegacyPaymentPrompt": {
     "description": "Ticket payments"
   },
-  "tpManualAddMethodsHint": "Add your Pix, PayPal… in Profile > Payment methods to see them here.",
+  "tpManualAddMethodsHint": "Add your Pix, PayPal… in Profile > Business > Get paid to see them here.",
   "@tpManualAddMethodsHint": {
     "description": "Ticket payments"
   },
@@ -12475,5 +12466,17 @@
   },
   "srvNewEventFromFollowedBusiness": "New event from a business you follow",
   "srvMessageRemovedByModerator": "This message was removed by a moderator",
-  "srvSupportAiHandoff": "I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly."
+  "srvSupportAiHandoff": "I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly.",
+  "becomeBusinessOneWayHint": "Requires Platinum. One-time upgrade: it can't be undone.",
+  "businessPermanentInfo": "Your account is permanently a business account and can't go back to a personal account. Business tools work while Platinum is active; if it lapses they pause until you renew.",
+  "paidBusinessOnlyNote": "Paid tickets are available for business accounts.",
+  "paidBusinessOnlyBody": "Free events and experiences are open to everyone. To charge for tickets or bookings you need an active business account (Platinum).",
+  "paidBusinessPausedNote": "Your business is paused: renew Platinum to sell paid tickets again.",
+  "uexpBusinessRequiredTitle": "Paid listings are for business accounts",
+  "tpErrSellerNotBusiness": "Sales are paused: paid tickets and bookings are only available from active business accounts.",
+  "tpAutoSectionTitle": "Automatic Payment and Approval",
+  "tpAutoSectionHint": "Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.",
+  "tpManualSectionTitle": "Manual Payment and Approval",
+  "tpManualSectionHint": "No setup: buyers pay you directly with one of the payment methods below (or cash / bank transfer). You confirm each payment yourself with the Payments to confirm button at the top; the ticket is issued once you confirm.",
+  "paymentMethodsSettingsSubtitle": "How people can pay you directly (Pix, PayPal…)"
 }

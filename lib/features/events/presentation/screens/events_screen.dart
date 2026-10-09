@@ -87,6 +87,8 @@ import 'event_scanner_screen.dart';
 import 'event_ticket_screen.dart';
 import '../../../../core/widgets/boost_celebration.dart';
 import '../../../../core/widgets/verified_badge.dart';
+import '../../../../core/services/paid_listing_access.dart';
+import '../../../business/presentation/widgets/paid_business_note.dart';
 
 /// Coin cost for an organizer to feature ("Feature this event") their event in
 /// the Explore featured carousel for 7 days. Pure revenue, zero run-cost.
@@ -3560,6 +3562,14 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   AttendeeListVisibility _attendeeListVisibility =
       AttendeeListVisibility.participants;
   bool _isUnlimited = false;
+  // Only an ACTIVE business account may sell paid tickets (server-enforced
+  // too). Null while loading. Access is the CREATOR's (a co-owner edits the
+  // creator's event).
+  PaidListingAccess? _paidAccess;
+  // Editing an event that is already paid (e.g. created before the business
+  // rule): its paid fields stay editable; only NEW paid events need business.
+  bool get _wasPaid => widget.existing != null && !widget.existing!.isFree;
+  bool get _canCharge => (_paidAccess?.canSell ?? false) || _wasPaid;
   // Guests each attendee may bring (0 = guests not allowed). Feeds QR check-in.
   int _guestsAllowedPerAttendee = 0;
   static const int _maxGuestsAllowed = 10;
@@ -3837,6 +3847,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     _organizerName = widget.existing?.organizerName ?? '';
     _loadOrganizerName();
     _loadManageableCommunities();
+    unawaited(_loadPaidAccess());
     final e = widget.existing;
     if (e == null) return;
     // Prefill from the existing event (edit mode).
@@ -3910,6 +3921,18 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
     final x =
         await _picker.pickImage(source: ImageSource.gallery, imageQuality: 80);
     if (x != null) setState(() => _extraPhotos.add(x));
+  }
+
+  /// Who may sell tickets on this event (the creator's business status).
+  Future<void> _loadPaidAccess() async {
+    final a = await PaidListingAccess.load(
+        widget.existing?.organizerId ?? widget.currentUserId);
+    if (!mounted) return;
+    setState(() {
+      _paidAccess = a;
+      // A restored draft must not turn a non-business event into a paid one.
+      if (!_canCharge) _isFree = true;
+    });
   }
 
   /// Main photo + up to 4 extra photos. In edit mode, already-uploaded images
@@ -4460,16 +4483,25 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               ],
             ),
             const SizedBox(height: 16),
-            SwitchListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(
-                AppLocalizations.of(context)!.eventsFreeEvent,
-                style: const TextStyle(color: AppColors.textPrimary),
+            if (!_canCharge) ...[
+              if (_paidAccess != null)
+                PaidBusinessNote(
+                  uid: widget.currentUserId,
+                  access: _paidAccess!,
+                  onReturn: _loadPaidAccess,
+                ),
+            ] else
+              SwitchListTile(
+                key: const ValueKey('event-free-switch'),
+                contentPadding: EdgeInsets.zero,
+                title: Text(
+                  AppLocalizations.of(context)!.eventsFreeEvent,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+                value: _isFree,
+                activeThumbColor: AppColors.richGold,
+                onChanged: (v) => setState(() => _isFree = v),
               ),
-              value: _isFree,
-              activeThumbColor: AppColors.richGold,
-              onChanged: (v) => setState(() => _isFree = v),
-            ),
             if (!_isFree) ...[
               const SizedBox(height: 8),
               Row(
@@ -4690,7 +4722,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
         _startDate = DateTime.fromMillisecondsSinceEpoch(st);
         if (en != null) _endDate = DateTime.fromMillisecondsSinceEpoch(en);
       }
-      _isFree = d['isFree'] as bool? ?? true;
+      _isFree = (d['isFree'] as bool? ?? true) || !_canCharge;
       _priceController.text = d['price'] as String? ?? _priceController.text;
       _currency = _currencies.contains(d['currency']) ? d['currency'] as String : _currency;
       _isUnlimited = d['unlimited'] as bool? ?? false;
@@ -5248,6 +5280,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
     final maxAttendees =
         _isUnlimited ? 0 : (int.tryParse(_maxAttendeesController.text) ?? 20);
+    if (!_isFree && !_canCharge) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text(AppLocalizations.of(context)!.paidBusinessOnlyNote)));
+      return;
+    }
     if (!_isFree && (!_ticket.isComplete || needsReconnect(_ticket))) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text(AppLocalizations.of(context)!.tpChooseHowToGetPaid)));

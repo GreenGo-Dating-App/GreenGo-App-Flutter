@@ -247,6 +247,8 @@ let sent: Array<{ recipientId: string; type: string; body: string }>;
 const saved = { ...svc.bookingDeps };
 
 const HOST = 'host1';
+// Paid bookings need an ACTIVE business host (isBusiness + Platinum).
+const HOST_BIZ = { isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: new Date('2100-01-01T00:00:00Z') };
 const GUEST = 'guest1';
 const GUEST2 = 'guest2';
 const ADMIN = 'admin1';
@@ -256,7 +258,7 @@ let reqN = 0;
 const rid = () => `req_${String(++reqN).padStart(6, '0')}`;
 
 function seedWorld(opts: { exp?: Record<string, any>; slot?: Record<string, any> } = {}) {
-  db.seed(`profiles/${HOST}`, { isAgeVerified: true, displayName: 'Host' });
+  db.seed(`profiles/${HOST}`, { ...HOST_BIZ, isAgeVerified: true, displayName: 'Host' });
   db.seed(`profiles/${GUEST}`, { ageVerification: { status: 'pending' } });
   db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
   db.seed(`admin_users/${ADMIN}`, { role: 'admin' });
@@ -344,7 +346,7 @@ describe('createBooking', () => {
 
   test('free experience: mode free, no host ID approval needed', async () => {
     seedWorld({ exp: { isFree: true, price: 0, currency: null, paymentMethods: null, paymentLink: null } });
-    db.seed(`profiles/${HOST}`, { ageVerification: { status: 'pending' } });
+    db.seed(`profiles/${HOST}`, { ...HOST_BIZ, ageVerification: { status: 'pending' } });
     const r: any = await book(GUEST, { paymentMethod: 'cash' });
     expect(r.status).toBe('confirmed');
     expect(r.payment.mode).toBe('free');
@@ -364,9 +366,16 @@ describe('createBooking', () => {
     await expectCode(book(GUEST2), 'id_document_required');
 
     db.seed(`profiles/${GUEST2}`, { isAgeVerified: true });
-    db.seed(`profiles/${HOST}`, { ageVerification: { status: 'pending' } });
+    db.seed(`profiles/${HOST}`, { ...HOST_BIZ, ageVerification: { status: 'pending' } });
     await expectCode(book(GUEST2), 'host_not_verified');
+    db.seed(`profiles/${HOST}`, { ...HOST_BIZ, isAgeVerified: true });
+
+    // Paid listing of a host that is not an ACTIVE business: no new sales.
     db.seed(`profiles/${HOST}`, { isAgeVerified: true });
+    await expectCode(book(GUEST2), 'seller_not_business');
+    db.seed(`profiles/${HOST}`, { ...HOST_BIZ, isAgeVerified: true, membershipEndDate: new Date('2001-01-01T00:00:00Z') });
+    await expectCode(book(GUEST2), 'seller_not_business');
+    db.seed(`profiles/${HOST}`, { ...HOST_BIZ, isAgeVerified: true });
 
     db.seed('blockedUsers/x', { blockerId: HOST, blockedUserId: GUEST2 });
     await expectCode(book(GUEST2), 'not_available');

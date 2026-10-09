@@ -3194,10 +3194,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Community verlassen';
 
   @override
-  String get communitiesBusinessCannotJoin =>
-      'Business-Konten koennen keinen Communities beitreten. Schalte den Business-Modus aus, um beizutreten.';
-
-  @override
   String get communitiesDeleteCommunity => 'Community loeschen';
 
   @override
@@ -12066,15 +12062,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get becomeBusinessAction => 'Eines werden';
 
   @override
-  String get becomeBusinessPermanentHint =>
-      'Einmaliges Upgrade. Dies kann nicht rückgängig gemacht werden.';
-
-  @override
   String get becomeBusinessConfirmTitle => 'Unternehmenskonto werden?';
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'Dies ist dauerhaft — dein Konto wird zu einem öffentlichen Unternehmenskonto und kann nicht zurückgewandelt werden.';
+      'Das ist dauerhaft: Dein Konto wird zu einem öffentlichen Unternehmenskonto und kann nicht wieder in ein persönliches Konto umgewandelt werden. Die Business-Tools funktionieren, solange deine Platinum-Mitgliedschaft aktiv ist; läuft sie ab, werden sie pausiert, bis du verlängerst.';
 
   @override
   String get becomeBusinessConfirmAction => 'Dauerhaft machen';
@@ -12847,16 +12839,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get exploreBusinessesNearYou => 'Unternehmen in deiner Naehe';
-
-  @override
-  String get storefrontEnabled => 'Schaufenster ist an';
-
-  @override
-  String get storefrontDisabled => 'Schaufenster ist aus';
-
-  @override
-  String get storefrontToggleHint =>
-      'Schalte dein Schaufenster jederzeit an oder aus';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
@@ -16975,10 +16957,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Das Geld geht direkt auf dein eigenes Konto. GreenGo nimmt keine Gebühr auf Ticketverkäufe.';
 
   @override
-  String get tpGetPaidManualInfo =>
-      'Ohne Einrichtung: Wähle im Event oder Erlebnis eine deiner Zahlungsmethoden (Profil) oder bar / Überweisung und bestätige jede Zahlung selbst.';
-
-  @override
   String get tpGetPaidSubtitle =>
       'Zahlungsmethoden, Stripe und Mercado Pago, zu bestätigende Zahlungen';
 
@@ -17022,7 +17000,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tpManualAddMethodsHint =>
-      'Füge Pix, PayPal… unter Profil > Zahlungsmethoden hinzu, um sie hier zu sehen.';
+      'Füge Pix, PayPal… unter Profil > Unternehmen > Bezahlt werden hinzu, um sie hier zu sehen.';
 
   @override
   String get tpManualDisclaimer =>
@@ -23310,4 +23288,50 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get srvSupportAiHandoff =>
       'Ich verstehe, dass du mit einem Menschen sprechen möchtest. Ich verbinde dich jetzt. Ein Mitglied des Support-Teams antwortet in Kürze.';
+
+  @override
+  String get becomeBusinessOneWayHint =>
+      'Erfordert Platinum. Einmaliges Upgrade: Es kann nicht rückgängig gemacht werden.';
+
+  @override
+  String get businessPermanentInfo =>
+      'Dein Konto ist dauerhaft ein Unternehmenskonto und kann nicht wieder ein persönliches Konto werden. Die Business-Tools funktionieren, solange Platinum aktiv ist; läuft es ab, werden sie pausiert, bis du verlängerst.';
+
+  @override
+  String get paidBusinessOnlyNote =>
+      'Kostenpflichtige Tickets sind für Unternehmenskonten verfügbar.';
+
+  @override
+  String get paidBusinessOnlyBody =>
+      'Kostenlose Events und Erlebnisse stehen allen offen. Um Geld für Tickets oder Buchungen zu verlangen, brauchst du ein aktives Unternehmenskonto (Platinum).';
+
+  @override
+  String get paidBusinessPausedNote =>
+      'Dein Business ist pausiert: Verlängere Platinum, um wieder kostenpflichtige Tickets zu verkaufen.';
+
+  @override
+  String get uexpBusinessRequiredTitle =>
+      'Kostenpflichtige Angebote sind für Unternehmenskonten';
+
+  @override
+  String get tpErrSellerNotBusiness =>
+      'Der Verkauf ist pausiert: Kostenpflichtige Tickets und Buchungen gibt es nur bei aktiven Unternehmenskonten.';
+
+  @override
+  String get tpAutoSectionTitle => 'Automatische Zahlung und Bestätigung';
+
+  @override
+  String get tpAutoSectionHint =>
+      'Verbinde Stripe oder Mercado Pago: Käufer zahlen in der App und ihre Tickets werden sofort bestätigt, ohne manuelle Prüfung.';
+
+  @override
+  String get tpManualSectionTitle => 'Manuelle Zahlung und Bestätigung';
+
+  @override
+  String get tpManualSectionHint =>
+      'Ohne Einrichtung: Käufer zahlen dich direkt mit einer der Zahlungsmethoden unten (oder bar / per Überweisung). Du bestätigst jede Zahlung selbst über die Schaltfläche „Zu bestätigende Zahlungen“ oben; das Ticket wird nach deiner Bestätigung ausgestellt.';
+
+  @override
+  String get paymentMethodsSettingsSubtitle =>
+      'Wie andere dich direkt bezahlen können (Pix, PayPal…)';
 }

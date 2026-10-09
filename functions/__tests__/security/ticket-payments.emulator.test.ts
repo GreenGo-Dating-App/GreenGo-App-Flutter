@@ -113,7 +113,11 @@ const OTHER = 'buyer02';
 const STRANGER = 'stranger01';
 
 async function seedProfiles() {
-  await db.doc(`profiles/${ORG}`).set({ displayName: 'Org', paymentLinks: { pix: 'org@pix.example', paypal: 'https://paypal.me/org' } });
+  // Only an ACTIVE business account (isBusiness + Platinum) may sell.
+  await db.doc(`profiles/${ORG}`).set({
+    displayName: 'Org', paymentLinks: { pix: 'org@pix.example', paypal: 'https://paypal.me/org' },
+    isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: TS.fromMillis(Date.now() + 365 * 24 * HOUR),
+  });
   await db.doc(`profiles/${BUYER}`).set({ displayName: 'Buyer', photoUrls: ['https://x/b.jpg'] });
   await db.doc(`profiles/${OTHER}`).set({ displayName: 'Other' });
 }

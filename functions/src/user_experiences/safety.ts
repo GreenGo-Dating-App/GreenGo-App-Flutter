@@ -11,11 +11,15 @@
  *  - New hosts (< 3 visible reviews across all their experiences, i.e.
  *    profiles.hostRatingCount) may have at most ONE published paid listing.
  *  - Fixed cancellation policies (flexible | moderate | strict) + notes.
+ *  - Paid listings (or ones carrying a payment link) only for an ACTIVE
+ *    business account (isBusiness + effective Platinum): `business_required`.
  *
  * Mirrored by firestore.rules (user_experiences update) for direct client
  * writes; transitions the rules cannot check (the new-host count) go through
  * the publishUserExperience callable.
  */
+
+import { isBusinessActive } from '../shared/effectiveTier';
 
 export const HOST_AGREEMENT_VERSION = 1;
 export const NEW_HOST_MIN_REVIEWS = 3;
@@ -85,7 +89,9 @@ export type SafetyCode =
   | 'host_agreement_required'
   | 'new_host_paid_limit'
   | 'dates_required'
-  | 'host_banned';
+  | 'host_banned'
+  // Paid listings (or a payment link) need an ACTIVE business account.
+  | 'business_required';
 
 /** Why [profile] may not CREATE an experience at all (any status), or null. */
 export function createBlockReason(profile: Record<string, any> | null | undefined): SafetyCode | null {
@@ -110,6 +116,8 @@ export function publishBlockReason(params: {
   if (base) return base;
   if (!hostAgreementAccepted(profile)) return 'host_agreement_required';
   if (!takesPayment(experience)) return null;
+  // Only active business accounts may charge for a listing.
+  if (!isBusinessActive(profile)) return 'business_required';
   if (idDocumentState(profile) !== 'approved') return 'id_document_not_approved';
   if (experience.isFree !== true && profile?.isAdmin !== true && isNewHost(profile) &&
       otherPublishedPaid >= NEW_HOST_MAX_PUBLISHED_PAID) {

@@ -514,20 +514,25 @@ class EditProfileScreen extends StatelessWidget {
                       // (recorded server-side; the AI callables enforce it).
                       const SizedBox(height: 16),
                       const AiServicesSettingsCard(),
-                      // Money: ONE "Get paid" page - the user's own payment
-                      // methods (person-to-person, also usable for manually
-                      // confirmed tickets), Stripe / Mercado Pago for instant
-                      // tickets, and manual confirmations. GreenGo takes no fee.
-                      const SizedBox(height: 16),
-                      EditSectionCard(
-                        key: const ValueKey('account-settings-get-paid'),
-                        title: AppLocalizations.of(context)!.tpGetPaidTitle,
-                        subtitle: AppLocalizations.of(context)!.tpGetPaidSubtitle,
-                        icon: Icons.account_balance_wallet_outlined,
-                        onTap: () => Navigator.of(context).push(
-                            GetPaidScreen.route(activeProfile.userId,
-                                profileBloc: context.read<ProfileBloc>())),
-                      ),
+                      // Money. Active business accounts get the full "Get
+                      // paid" page (Stripe / Mercado Pago, payment methods,
+                      // payments to confirm) in the Business hub, NOT here.
+                      // Everyone else keeps their own payment methods
+                      // (person-to-person) reachable here.
+                      if (!isBusinessActive) ...[
+                        const SizedBox(height: 16),
+                        EditSectionCard(
+                          key: const ValueKey('account-settings-payment-methods'),
+                          title: AppLocalizations.of(context)!.paymentLinksTitle,
+                          subtitle: AppLocalizations.of(context)!
+                              .paymentMethodsSettingsSubtitle,
+                          icon: Icons.account_balance_wallet_outlined,
+                          onTap: () => Navigator.of(context).push(
+                              GetPaidScreen.route(activeProfile.userId,
+                                  profileBloc: context.read<ProfileBloc>(),
+                                  paymentMethodsOnly: true)),
+                        ),
+                      ],
                     ],
                   ),
 
@@ -667,7 +672,10 @@ class EditProfileScreen extends StatelessWidget {
                   // "become a business" promo so the upgrade path is never lost.
                   Container(
                     margin: const EdgeInsets.only(top: 24, bottom: 24),
-                    child: isBusinessActive
+                    // A business whose Platinum lapsed is STILL a business
+                    // (permanent): it gets the hub (paused state + renew),
+                    // never the "Become a business" promo again.
+                    child: activeProfile.isBusiness
                         ? EditSectionCard(
                             title:
                                 AppLocalizations.of(context)!.businessSectionTitle,
@@ -1017,7 +1025,7 @@ class EditProfileScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    l10n.becomeBusinessPermanentHint,
+                    l10n.becomeBusinessOneWayHint,
                     style: const TextStyle(
                       color: AppColors.textSecondary,
                       fontSize: 13,

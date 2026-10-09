@@ -206,9 +206,15 @@ class ProfileRemoteDataSourceImpl implements ProfileRemoteDataSource {
           ? store.raw
           : (await firestore.collection('profiles').doc(profile.userId).get())
               .data();
+      final publicUpdate = publicSafeProfileJson(json, forUpdate: true);
+      // Becoming a business is permanent and is written only by the Become a
+      // business flow; a full-profile save must never send isBusiness: false
+      // (a stale copy would be refused by the rules, which forbid turning it
+      // off). Only a `true` rides along (a no-op once set).
+      if (publicUpdate['isBusiness'] != true) publicUpdate.remove('isBusiness');
       final batch = firestore.batch()
         ..update(firestore.collection('profiles').doc(profile.userId),
-            publicSafeProfileJson(json, forUpdate: true));
+            publicUpdate);
       await writePrivateProfile(
         firestore,
         profile.userId,

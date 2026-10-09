@@ -35,6 +35,8 @@ import '../experience_safety_flow.dart';
 import '../widgets/experience_policy_widgets.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../../ticket_payments/presentation/widgets/ticket_payment_selector.dart';
+import '../../../../core/services/paid_listing_access.dart';
+import '../../../business/presentation/widgets/paid_business_note.dart';
 
 /// Languages a host can offer (same names profiles store).
 // i18n-ignore: stored values; displayed via ExperienceL10n.language
@@ -149,6 +151,14 @@ class _EditorFormState extends State<_EditorForm> {
   int _minutes = 0;
   final Set<String> _languages = {};
   bool _isFree = false;
+  // Only an ACTIVE business account may charge for an experience (enforced
+  // by createUserExperience / publishUserExperience / the rules too). Null
+  // while loading.
+  PaidListingAccess? _paidAccess;
+  // An already-paid listing (created before the business rule) stays
+  // editable as paid; only NEW paid listings need business.
+  bool get _wasPaid => widget.existing != null && !widget.existing!.isFree;
+  bool get _canCharge => (_paidAccess?.canSell ?? false) || _wasPaid;
   String _currency = kExperienceCurrencies.first;
   PaymentLinkType _paymentType = PaymentLinkType.pix;
   // Paid listings: cash at the meeting and/or the online link.
@@ -202,6 +212,7 @@ class _EditorFormState extends State<_EditorForm> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _offerDraft();
       _loadAvailability();
+      _loadPaidAccess();
     });
     final e = widget.existing;
     if (e != null) {
@@ -269,6 +280,15 @@ class _EditorFormState extends State<_EditorForm> {
         _legacyPayment = true;
       }
     }
+  }
+
+  Future<void> _loadPaidAccess() async {
+    final a = await PaidListingAccess.load(widget.currentUserId);
+    if (!mounted) return;
+    setState(() {
+      _paidAccess = a;
+      if (!_canCharge) _isFree = true;
+    });
   }
 
   @override
@@ -431,6 +451,12 @@ class _EditorFormState extends State<_EditorForm> {
     if (_busy) return;
     final l = AppLocalizations.of(context)!;
     FocusScope.of(context).unfocus();
+    if (!_isFree && !_canCharge) {
+      // Paid listings are for active business accounts only.
+      setState(() => _isFree = true);
+      _snack(l.paidBusinessOnlyNote);
+      return;
+    }
     final errors = ExperienceValidator.validate(_draft());
     setState(() => _errors = errors);
     if (errors.isNotEmpty) {
@@ -1556,7 +1582,7 @@ class _EditorFormState extends State<_EditorForm> {
       _minutes = (d['minutes'] as int?) ?? _minutes;
       _maxGroup.text = d['maxGroup'] as String? ?? _maxGroup.text;
       _minGroup.text = d['minGroup'] as String? ?? '';
-      _isFree = d['isFree'] as bool? ?? _isFree;
+      _isFree = (d['isFree'] as bool? ?? _isFree) || !_canCharge;
       _price.text = d['price'] as String? ?? _price.text;
       if (kExperienceCurrencies.contains(d['currency'])) _currency = d['currency'] as String;
       _pricingMode = d['pricingMode'] == 'per_group' ? 'per_group' : 'per_person';
@@ -1814,8 +1840,26 @@ class _EditorFormState extends State<_EditorForm> {
       );
 
   Widget _pricingSection(AppLocalizations l) {
+    if (!_canCharge) {
+      // Personal account: free listings only.
+      return _section(l.uexpPrice, [
+        if (_paidAccess == null)
+          const Padding(
+            padding: EdgeInsets.all(12),
+            child: Center(
+                child: CircularProgressIndicator(color: AppColors.richGold)),
+          )
+        else
+          PaidBusinessNote(
+            uid: widget.currentUserId,
+            access: _paidAccess!,
+            onReturn: _loadPaidAccess,
+          ),
+      ]);
+    }
     return _section(l.uexpPrice, [
       SwitchListTile(
+        key: const ValueKey('experience-free-switch'),
         contentPadding: EdgeInsets.zero,
         activeColor: AppColors.richGold,
         title: Text(l.uexpIsFree, style: _text),

@@ -7,8 +7,8 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/constants/business_categories.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/own_profile_store.dart';
 import '../../../../core/services/tier_entitlements.dart';
-import '../../../../core/services/tier_gate.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../core/widgets/limit_reached_dialog.dart';
 import '../../../../generated/app_localizations.dart';
@@ -33,6 +33,22 @@ class BusinessAccountScreen extends StatefulWidget {
   const BusinessAccountScreen({required this.profile, super.key});
 
   final Profile profile;
+
+  /// Opens this screen for [uid] from anywhere (e.g. the event / experience
+  /// wizards' "Paid tickets are available for business accounts" note), with
+  /// its own [ProfileBloc]. No-op when the profile can't be read.
+  static Future<void> open(BuildContext context, String uid) async {
+    final profile = await OwnProfileStore.instance.current(uid);
+    if (profile == null || !context.mounted) return;
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => BlocProvider<ProfileBloc>(
+          create: (_) => di.sl<ProfileBloc>(),
+          child: BusinessAccountScreen(profile: profile),
+        ),
+      ),
+    );
+  }
 
   @override
   State<BusinessAccountScreen> createState() => _BusinessAccountScreenState();
@@ -187,7 +203,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
   }
 
   bool get _isValid {
-    if (!_isBusiness) return true; // turning it off is always valid
+    if (!_isBusiness) return true; // nothing business-specific to validate
     return _nameController.text.trim().isNotEmpty && _category != null;
   }
 
@@ -226,16 +242,19 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
     );
   }
 
-  /// Free ON/OFF storefront toggle, gated on
-  /// [TierEntitlements.canBecomeBusiness] (Platinum only). Non-Platinum users
-  /// tapping the switch get the upgrade dialog (mirroring [TierGate]'s upsell
-  /// path via the Shop Membership tab) and no change is made. Platinum users
-  /// flip `profiles/{uid}.isBusiness`; the first time it is enabled a
-  /// `businessSince` timestamp is stamped. Turning it OFF sets `isBusiness`
-  /// false, which naturally hides the storefront from discovery (all discovery
-  /// queries filter `where('isBusiness', isEqualTo: true)`).
+  /// One-time, IRREVERSIBLE switch to a business account (Platinum only).
+  ///
+  /// Non-Platinum users get the upgrade dialog and no change is made. Platinum
+  /// users confirm a "this is permanent" dialog, then `profiles/{uid}.isBusiness`
+  /// is set to true (and `businessSince` stamped the first time). There is NO
+  /// way back: firestore.rules reject any client write that clears
+  /// `isBusiness`, so the switch only ever turns ON. If Platinum later lapses
+  /// the account stays a business account with its tools paused
+  /// ([TierEntitlements.isBusinessActive]) until Platinum is renewed.
   Future<void> _handleToggleStorefront(bool value) async {
-    if (_isSaving || value == _isBusiness) return;
+    // Already a business (or a request to turn it off): nothing to do - the
+    // conversion is permanent.
+    if (_isSaving || !value || _isBusiness) return;
     final uid = widget.profile.userId;
     final tier = widget.profile.effectiveTier;
     final l10n = AppLocalizations.of(context)!;
@@ -257,29 +276,55 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
       return;
     }
 
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: AppColors.backgroundCard,
+        title: Text(l10n.becomeBusinessConfirmTitle,
+            style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(l10n.becomeBusinessConfirmMessage,
+            style: const TextStyle(color: AppColors.textSecondary, height: 1.4)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: Text(l10n.cancel),
+          ),
+          ElevatedButton(
+            key: const ValueKey('become-business-confirm'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.richGold,
+              foregroundColor: AppColors.deepBlack,
+            ),
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: Text(l10n.becomeBusinessConfirmAction),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !mounted) return;
+
     setState(() => _isSaving = true);
     try {
       final ref = FirebaseFirestore.instance.collection('profiles').doc(uid);
-      final data = <String, dynamic>{'isBusiness': value};
-      if (value) {
-        // Stamp businessSince the first time the storefront is enabled.
-        final snap = await ref.get();
-        if (snap.data()?['businessSince'] == null) {
-          data['businessSince'] = FieldValue.serverTimestamp();
-        }
+      final data = <String, dynamic>{'isBusiness': true};
+      // Stamp businessSince the first time the account becomes a business.
+      final snap = await ref.get();
+      if (snap.data()?['businessSince'] == null) {
+        data['businessSince'] = FieldValue.serverTimestamp();
       }
       await ref.set(data, SetOptions(merge: true));
       if (!mounted) return;
       setState(() {
-        _isBusiness = value;
+        _isBusiness = true;
         _isSaving = false;
       });
+      // Refresh the shared profile so no screen re-saves a stale
+      // isBusiness: false copy.
+      context
+          .read<ProfileBloc>()
+          .add(ProfileLoadRequested(userId: widget.profile.userId));
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            value ? l10n.storefrontEnabled : l10n.storefrontDisabled,
-          ),
-        ),
+        SnackBar(content: Text(l10n.becomeBusinessSuccess)),
       );
     } catch (_) {
       if (!mounted) return;
@@ -414,7 +459,7 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                           Text(
                             _isBusiness
                                 ? l10n.businessAccountActive
-                                : l10n.storefrontToggleHint,
+                                : l10n.becomeBusinessOneWayHint,
                             style: const TextStyle(
                               color: AppColors.textTertiary,
                               fontSize: 12,
@@ -434,9 +479,15 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
                               AlwaysStoppedAnimation<Color>(AppColors.richGold),
                         ),
                       )
+                    else if (_isBusiness)
+                      // Permanent: no switch back to a personal account.
+                      const Icon(Icons.lock_outline,
+                          key: ValueKey('business-account-locked'),
+                          color: AppColors.richGold)
                     else
                       Switch(
-                        value: _isBusiness,
+                        key: const ValueKey('become-business-switch'),
+                        value: false,
                         activeColor: AppColors.deepBlack,
                         activeTrackColor: AppColors.richGold,
                         onChanged: _handleToggleStorefront,
@@ -449,6 +500,16 @@ class _BusinessAccountScreenState extends State<BusinessAccountScreen> {
               // tiles). This screen now owns only the one-time become-a-business
               // conversion + status and the verification request below.
               if (_isBusiness) ...[
+                const SizedBox(height: 12),
+                Text(
+                  l10n.businessPermanentInfo,
+                  key: const ValueKey('business-permanent-info'),
+                  style: const TextStyle(
+                    color: AppColors.textSecondary,
+                    fontSize: 12.5,
+                    height: 1.35,
+                  ),
+                ),
                 const SizedBox(height: 24),
                 // Business PROFILE name — the storefront display name.
                 _fieldLabel(l10n.businessProfileNameLabel),

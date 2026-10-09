@@ -3191,10 +3191,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Lascia la Comunita';
 
   @override
-  String get communitiesBusinessCannotJoin =>
-      'Gli account business non possono unirsi alle community. Disattiva la modalita business per unirti.';
-
-  @override
   String get communitiesDeleteCommunity => 'Elimina community';
 
   @override
@@ -12052,15 +12048,11 @@ class AppLocalizationsIt extends AppLocalizations {
   String get becomeBusinessAction => 'Diventa un\'azienda';
 
   @override
-  String get becomeBusinessPermanentHint =>
-      'Aggiornamento una tantum. Non può essere annullato.';
-
-  @override
   String get becomeBusinessConfirmTitle => 'Diventare un account aziendale?';
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'Questo è permanente — il tuo account diventa un account aziendale pubblico e non può essere ripristinato.';
+      'È permanente: il tuo account diventa un account aziendale pubblico e non può tornare a essere un account personale. Gli strumenti aziendali funzionano finché la tua iscrizione Platinum è attiva; se scade, vengono sospesi fino al rinnovo.';
 
   @override
   String get becomeBusinessConfirmAction => 'Rendi permanente';
@@ -12830,16 +12822,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get exploreBusinessesNearYou => 'Attivita vicino a te';
-
-  @override
-  String get storefrontEnabled => 'Vetrina attiva';
-
-  @override
-  String get storefrontDisabled => 'Vetrina disattivata';
-
-  @override
-  String get storefrontToggleHint =>
-      'Attiva o disattiva la tua vetrina quando vuoi';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
@@ -16942,10 +16924,6 @@ class AppLocalizationsIt extends AppLocalizations {
       'Il denaro va direttamente sul tuo conto. GreenGo non trattiene commissioni sulla vendita dei biglietti.';
 
   @override
-  String get tpGetPaidManualInfo =>
-      'Nessuna configurazione: scegli uno dei tuoi metodi di pagamento del profilo (o contanti / bonifico) nell\'evento o esperienza e conferma tu ogni pagamento.';
-
-  @override
   String get tpGetPaidSubtitle =>
       'Metodi di pagamento, Stripe e Mercado Pago, pagamenti da confermare';
 
@@ -16989,7 +16967,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tpManualAddMethodsHint =>
-      'Aggiungi Pix, PayPal… in Profilo > Metodi di pagamento per vederli qui.';
+      'Aggiungi Pix, PayPal… in Profilo > Azienda > Ricevi pagamenti per vederli qui.';
 
   @override
   String get tpManualDisclaimer =>
@@ -23287,4 +23265,50 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get srvSupportAiHandoff =>
       'Capisco che vuoi parlare con una persona. Ti sto mettendo in contatto. Un membro del team di supporto ti risponderà a breve.';
+
+  @override
+  String get becomeBusinessOneWayHint =>
+      'Richiede Platinum. Upgrade una tantum: non può essere annullato.';
+
+  @override
+  String get businessPermanentInfo =>
+      'Il tuo account è definitivamente un account aziendale e non può tornare personale. Gli strumenti aziendali funzionano finché Platinum è attivo; se scade, vengono sospesi fino al rinnovo.';
+
+  @override
+  String get paidBusinessOnlyNote =>
+      'I biglietti a pagamento sono disponibili per gli account aziendali.';
+
+  @override
+  String get paidBusinessOnlyBody =>
+      'Eventi ed esperienze gratuiti sono aperti a tutti. Per far pagare biglietti o prenotazioni ti serve un account aziendale attivo (Platinum).';
+
+  @override
+  String get paidBusinessPausedNote =>
+      'La tua attività è sospesa: rinnova Platinum per vendere di nuovo biglietti a pagamento.';
+
+  @override
+  String get uexpBusinessRequiredTitle =>
+      'Gli annunci a pagamento sono per gli account aziendali';
+
+  @override
+  String get tpErrSellerNotBusiness =>
+      'Le vendite sono sospese: biglietti e prenotazioni a pagamento sono disponibili solo da account aziendali attivi.';
+
+  @override
+  String get tpAutoSectionTitle => 'Pagamento e approvazione automatici';
+
+  @override
+  String get tpAutoSectionHint =>
+      'Collega Stripe o Mercado Pago: gli acquirenti pagano nell’app e i biglietti vengono confermati subito, senza controlli manuali.';
+
+  @override
+  String get tpManualSectionTitle => 'Pagamento e approvazione manuali';
+
+  @override
+  String get tpManualSectionHint =>
+      'Nessuna configurazione: gli acquirenti ti pagano direttamente con uno dei metodi di pagamento qui sotto (o contanti / bonifico). Confermi tu ogni pagamento con il pulsante Pagamenti da confermare in alto; il biglietto viene emesso quando confermi.';
+
+  @override
+  String get paymentMethodsSettingsSubtitle =>
+      'Come possono pagarti direttamente (Pix, PayPal…)';
 }

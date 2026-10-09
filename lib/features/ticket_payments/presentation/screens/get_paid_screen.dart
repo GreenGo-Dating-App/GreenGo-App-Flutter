@@ -18,12 +18,20 @@ import '../../domain/ticket_payments.dart';
 import '../ticket_l10n.dart';
 import 'payments_to_confirm_screen.dart';
 
-/// Settings > "Get paid" - ONE page for every way to get paid: connect
-/// Mercado Pago / Stripe for instant, automatic ticket confirmation (one tap;
-/// the provider does the verification), edit the user's own payment methods
-/// (Pix, PayPal, ... - person-to-person and manually confirmed tickets), and
-/// reach the manual "Payments to confirm" list. Money goes straight to the
-/// user's own account; GreenGo takes no fee.
+/// Profile > Business > "Get paid" - ONE page for every way to get paid, in
+/// two sections:
+///  * "Automatic Payment and Approval": connect Mercado Pago / Stripe for
+///    instant ticket confirmation (the provider does the verification);
+///  * "Manual Payment and Approval": the user's own payment methods (Pix,
+///    PayPal, ... - person-to-person and manually confirmed tickets); the
+///    organizer confirms each payment.
+/// "Payments to confirm" is an app-bar icon (badge = pending count) next to
+/// refresh. Money goes straight to the user's own account; GreenGo takes no
+/// fee.
+///
+/// [paymentMethodsOnly] (Account settings > Payment methods, for accounts
+/// that are not an active business): only the payment-methods editor; the
+/// payments-to-confirm icon still appears while orders are waiting.
 class GetPaidScreen extends StatefulWidget {
   const GetPaidScreen({
     super.key,
@@ -31,6 +39,7 @@ class GetPaidScreen extends StatefulWidget {
     this.service,
     this.profileBloc,
     this.profileRepository,
+    this.paymentMethodsOnly = false,
   });
 
   final String uid;
@@ -40,10 +49,15 @@ class GetPaidScreen extends StatefulWidget {
   /// methods are saved so that screen never re-saves stale links.
   final ProfileBloc? profileBloc;
   final ProfileRepository? profileRepository;
+  final bool paymentMethodsOnly;
 
-  static Route<void> route(String uid, {ProfileBloc? profileBloc}) =>
+  static Route<void> route(String uid,
+          {ProfileBloc? profileBloc, bool paymentMethodsOnly = false}) =>
       MaterialPageRoute(
-          builder: (_) => GetPaidScreen(uid: uid, profileBloc: profileBloc));
+          builder: (_) => GetPaidScreen(
+              uid: uid,
+              profileBloc: profileBloc,
+              paymentMethodsOnly: paymentMethodsOnly));
 
   @override
   State<GetPaidScreen> createState() => _GetPaidScreenState();
@@ -63,10 +77,12 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    _svc.config().then((c) {
-      if (mounted) setState(() => _config = c);
-    });
-    unawaited(_refresh());
+    if (!widget.paymentMethodsOnly) {
+      _svc.config().then((c) {
+        if (mounted) setState(() => _config = c);
+      });
+      unawaited(_refresh());
+    }
     _loadPendingCount();
     unawaited(_loadProfile());
   }
@@ -132,7 +148,7 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
       children: [
         Text(l.paymentLinksTitle,
             style: const TextStyle(
-                color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700)),
+                color: AppColors.textPrimary, fontSize: 15, fontWeight: FontWeight.w700)),
         const SizedBox(height: 4),
         Text(l.tpPaymentMethodsSectionHint,
             style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
@@ -151,7 +167,9 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
   /// Back from the provider's onboarding page: re-read the account status.
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) unawaited(_refresh());
+    if (state == AppLifecycleState.resumed && !widget.paymentMethodsOnly) {
+      unawaited(_refresh());
+    }
   }
 
   Future<void> _refresh() async {
@@ -186,87 +204,125 @@ class _GetPaidScreenState extends State<GetPaidScreen> with WidgetsBindingObserv
     }
   }
 
+  void _openToConfirm() {
+    Navigator.of(context)
+        .push(PaymentsToConfirmScreen.route(widget.uid))
+        .then((_) => _loadPendingCount());
+  }
+
+  /// App-bar "Payments to confirm" action with the pending-count badge.
+  Widget _toConfirmAction(AppLocalizations l) {
+    final n = _toConfirm ?? 0;
+    return IconButton(
+      key: const ValueKey('get-paid-to-confirm'),
+      tooltip: n > 0 ? '${l.tpToConfirmTitle} ($n)' : l.tpToConfirmTitle,
+      onPressed: _openToConfirm,
+      icon: Badge(
+        isLabelVisible: n > 0,
+        label: Text(n > 99 ? '99+' : '$n'),
+        backgroundColor: AppColors.richGold,
+        textColor: AppColors.deepBlack,
+        child: const Icon(Icons.fact_check_outlined),
+      ),
+    );
+  }
+
+  Widget _sectionHeader(String title, String hint, IconData icon, {Key? key}) {
+    return Column(
+      key: key,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(children: [
+          Icon(icon, color: AppColors.richGold, size: 22),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(title,
+                style: const TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 17,
+                    fontWeight: FontWeight.w700)),
+          ),
+        ]),
+        const SizedBox(height: 4),
+        Text(hint,
+            style: const TextStyle(
+                color: AppColors.textSecondary, fontSize: 12.5, height: 1.35)),
+        const SizedBox(height: 12),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
+    final methodsOnly = widget.paymentMethodsOnly;
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
       appBar: AppBar(
         backgroundColor: AppColors.backgroundDark,
-        title: Text(l.tpGetPaidTitle),
+        title: Text(methodsOnly ? l.paymentLinksTitle : l.tpGetPaidTitle),
         actions: [
-          IconButton(
-            tooltip: l.tpRefresh,
-            icon: const Icon(Icons.refresh),
-            onPressed: _refresh,
-          ),
+          // Manual confirmations: always on the full page; on the
+          // payment-methods-only page only while some are waiting.
+          if (!methodsOnly || (_toConfirm ?? 0) > 0) _toConfirmAction(l),
+          if (!methodsOnly)
+            IconButton(
+              tooltip: l.tpRefresh,
+              icon: const Icon(Icons.refresh),
+              onPressed: _refresh,
+            ),
         ],
       ),
-      body: StreamBuilder<PaymentAccounts>(
-        stream: _svc.watchAccounts(widget.uid),
-        builder: (context, snap) {
-          final a = snap.data ?? const PaymentAccounts();
-          return ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              Container(
-                padding: const EdgeInsets.all(14),
-                decoration: BoxDecoration(
-                  color: AppColors.richGold.withValues(alpha: 0.08),
-                  borderRadius: BorderRadius.circular(14),
-                  border: Border.all(color: AppColors.richGold.withValues(alpha: 0.35)),
-                ),
-                child: Row(children: [
-                  const Icon(Icons.savings_outlined, color: AppColors.richGold),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(l.tpGetPaidIntro,
-                        style: const TextStyle(color: AppColors.textSecondary, height: 1.35)),
-                  ),
-                ]),
-              ),
-              const SizedBox(height: 16),
-              _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
-                  recommendedBr: true, currency: a.mercadoPagoCurrency),
-              const SizedBox(height: 12),
-              _providerCard(l, TicketProvider.stripe, a.stripe),
-              const SizedBox(height: 20),
-              Card(
-                color: AppColors.backgroundCard,
-                child: ListTile(
-                  leading: const Icon(Icons.link, color: AppColors.richGold),
-                  title: Text(l.tpManualTitle, style: const TextStyle(color: AppColors.textPrimary)),
-                  subtitle: Text(l.tpGetPaidManualInfo,
-                      style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
-                ),
-              ),
-              const SizedBox(height: 12),
-              _paymentMethodsSection(l),
-              const SizedBox(height: 20),
-              Card(
-                color: AppColors.backgroundCard,
-                child: ListTile(
-                  key: const ValueKey('get-paid-to-confirm'),
-                  leading: const Icon(Icons.fact_check_outlined, color: AppColors.richGold),
-                  title: Text(l.tpToConfirmTitle,
-                      style: const TextStyle(color: AppColors.textPrimary)),
-                  trailing: _toConfirm == null || _toConfirm == 0
-                      ? const Icon(Icons.chevron_right, color: AppColors.textTertiary)
-                      : CircleAvatar(
-                          radius: 13,
-                          backgroundColor: AppColors.richGold,
-                          child: Text('${_toConfirm!}',
-                              style: const TextStyle(color: AppColors.deepBlack, fontSize: 12)),
+      body: methodsOnly
+          ? ListView(
+              padding: const EdgeInsets.all(16),
+              children: [_paymentMethodsSection(l)],
+            )
+          : StreamBuilder<PaymentAccounts>(
+              stream: _svc.watchAccounts(widget.uid),
+              builder: (context, snap) {
+                final a = snap.data ?? const PaymentAccounts();
+                return ListView(
+                  padding: const EdgeInsets.all(16),
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: AppColors.richGold.withValues(alpha: 0.08),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(
+                            color: AppColors.richGold.withValues(alpha: 0.35)),
+                      ),
+                      child: Row(children: [
+                        const Icon(Icons.savings_outlined,
+                            color: AppColors.richGold),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(l.tpGetPaidIntro,
+                              style: const TextStyle(
+                                  color: AppColors.textSecondary, height: 1.35)),
                         ),
-                  onTap: () => Navigator.of(context)
-                      .push(PaymentsToConfirmScreen.route(widget.uid))
-                      .then((_) => _loadPendingCount()),
-                ),
-              ),
-            ],
-          );
-        },
-      ),
+                      ]),
+                    ),
+                    const SizedBox(height: 20),
+                    // -- Automatic Payment and Approval --
+                    _sectionHeader(l.tpAutoSectionTitle, l.tpAutoSectionHint,
+                        Icons.bolt_outlined,
+                        key: const ValueKey('get-paid-section-auto')),
+                    _providerCard(l, TicketProvider.mercadoPago, a.mercadoPago,
+                        recommendedBr: true, currency: a.mercadoPagoCurrency),
+                    const SizedBox(height: 12),
+                    _providerCard(l, TicketProvider.stripe, a.stripe),
+                    const SizedBox(height: 28),
+                    // -- Manual Payment and Approval --
+                    _sectionHeader(l.tpManualSectionTitle,
+                        l.tpManualSectionHint, Icons.fact_check_outlined,
+                        key: const ValueKey('get-paid-section-manual')),
+                    _paymentMethodsSection(l),
+                  ],
+                );
+              },
+            ),
     );
   }
 

@@ -117,6 +117,21 @@ export function effectiveTier(
   return end.getTime() > now.getTime() ? stored : 'FREE';
 }
 
+/**
+ * Business capabilities are ACTIVE: `isBusiness === true` (permanent, never
+ * cleared) AND an effective PLATINUM (or TEST) tier. Mirrors the client's
+ * `TierEntitlements.isBusinessActive`. A business whose Platinum lapsed keeps
+ * the flag but is paused - it may not sell paid tickets / experiences.
+ */
+export function isBusinessActive(
+  profile: Record<string, any> | null | undefined,
+  now: Date = new Date(),
+): boolean {
+  if (!profile || profile.isBusiness !== true) return false;
+  const t = effectiveTier(profile, now);
+  return t === 'PLATINUM' || t === 'TEST';
+}
+
 /** True when `profile` currently holds an ACTIVE SILVER/GOLD/PLATINUM with a future end date. */
 export function hasActivePaidTier(
   profile: Record<string, any> | null | undefined,

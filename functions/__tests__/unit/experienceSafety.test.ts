@@ -89,14 +89,18 @@ describe('cancellation policy', () => {
 });
 
 describe('ID document + publish rules', () => {
+  // Paid listings need an ACTIVE business account (isBusiness + Platinum).
+  const business = { isBusiness: true, membershipTier: 'PLATINUM', membershipEndDate: new Date('2100-01-01T00:00:00Z') };
   const approved = {
     isAgeVerified: true,
     ageVerification: { status: 'verified' },
     hostAgreementVersion: HOST_AGREEMENT_VERSION,
+    ...business,
   };
   const pending = {
     ageVerification: { status: 'pending' },
     hostAgreementVersion: HOST_AGREEMENT_VERSION,
+    ...business,
   };
   const paid = { isFree: false, price: 50, paymentLink: { type: 'pix', value: 'k' } };
   const free = { isFree: true, price: 0, paymentLink: null };
@@ -143,6 +147,28 @@ describe('ID document + publish rules', () => {
     })).toBeNull();
     // free listings are never limited
     expect(publishBlockReason({ profile: approved, experience: free, otherPublishedPaid: 9 }))
+      .toBeNull();
+  });
+
+  it('paid listings only for an ACTIVE business account', () => {
+    const personal = { ...approved, isBusiness: false };
+    expect(publishBlockReason({ profile: personal, experience: paid, otherPublishedPaid: 0 }))
+      .toBe('business_required');
+    // a payment link alone also takes money
+    expect(publishBlockReason({
+      profile: personal, experience: { ...free, paymentLink: { type: 'pix', value: 'k' } },
+      otherPublishedPaid: 0,
+    })).toBe('business_required');
+    // business whose Platinum lapsed: paused
+    const lapsed = { ...approved, membershipEndDate: new Date('2001-01-01T00:00:00Z') };
+    expect(publishBlockReason({ profile: lapsed, experience: paid, otherPublishedPaid: 0 }))
+      .toBe('business_required');
+    // Platinum without the business flag is not enough
+    expect(publishBlockReason({
+      profile: { ...approved, isBusiness: undefined }, experience: paid, otherPublishedPaid: 0,
+    })).toBe('business_required');
+    // free listings: everyone
+    expect(publishBlockReason({ profile: personal, experience: free, otherPublishedPaid: 0 }))
       .toBeNull();
   });
 });

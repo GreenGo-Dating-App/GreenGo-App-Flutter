@@ -5675,12 +5675,6 @@ abstract class AppLocalizations {
   /// **'Leave Community'**
   String get communitiesLeaveCommunity;
 
-  /// No description provided for @communitiesBusinessCannotJoin.
-  ///
-  /// In en, this message translates to:
-  /// **'Business accounts cannot join communities. Switch off business mode to join.'**
-  String get communitiesBusinessCannotJoin;
-
   /// No description provided for @communitiesDeleteCommunity.
   ///
   /// In en, this message translates to:
@@ -21234,12 +21228,6 @@ abstract class AppLocalizations {
   /// **'Become one'**
   String get becomeBusinessAction;
 
-  /// No description provided for @becomeBusinessPermanentHint.
-  ///
-  /// In en, this message translates to:
-  /// **'One-time upgrade. This can\'t be undone.'**
-  String get becomeBusinessPermanentHint;
-
   /// No description provided for @becomeBusinessConfirmTitle.
   ///
   /// In en, this message translates to:
@@ -21249,7 +21237,7 @@ abstract class AppLocalizations {
   /// No description provided for @becomeBusinessConfirmMessage.
   ///
   /// In en, this message translates to:
-  /// **'This is permanent — your account becomes a public business account and can\'t be switched back.'**
+  /// **'This is permanent: your account becomes a public business account and can\'t be switched back to a personal account. Business tools work while your Platinum membership is active; if it lapses they are paused until you renew.'**
   String get becomeBusinessConfirmMessage;
 
   /// No description provided for @becomeBusinessConfirmAction.
@@ -22541,24 +22529,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Businesses close to you'**
   String get exploreBusinessesNearYou;
-
-  /// No description provided for @storefrontEnabled.
-  ///
-  /// In en, this message translates to:
-  /// **'Storefront is on'**
-  String get storefrontEnabled;
-
-  /// No description provided for @storefrontDisabled.
-  ///
-  /// In en, this message translates to:
-  /// **'Storefront is off'**
-  String get storefrontDisabled;
-
-  /// No description provided for @storefrontToggleHint.
-  ///
-  /// In en, this message translates to:
-  /// **'Turn your storefront on or off anytime'**
-  String get storefrontToggleHint;
 
   /// No description provided for @splashBusinessLabel.
   ///
@@ -29465,12 +29435,6 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.'**
-  String get tpGetPaidManualInfo;
-
-  /// Ticket payments
-  ///
-  /// In en, this message translates to:
   /// **'Payment methods, Stripe and Mercado Pago, payments to confirm'**
   String get tpGetPaidSubtitle;
 
@@ -29537,7 +29501,7 @@ abstract class AppLocalizations {
   /// Ticket payments
   ///
   /// In en, this message translates to:
-  /// **'Add your Pix, PayPal… in Profile > Payment methods to see them here.'**
+  /// **'Add your Pix, PayPal… in Profile > Business > Get paid to see them here.'**
   String get tpManualAddMethodsHint;
 
   /// Ticket payments
@@ -39764,6 +39728,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly.'**
   String get srvSupportAiHandoff;
+
+  /// No description provided for @becomeBusinessOneWayHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Requires Platinum. One-time upgrade: it can\'t be undone.'**
+  String get becomeBusinessOneWayHint;
+
+  /// No description provided for @businessPermanentInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is permanently a business account and can\'t go back to a personal account. Business tools work while Platinum is active; if it lapses they pause until you renew.'**
+  String get businessPermanentInfo;
+
+  /// No description provided for @paidBusinessOnlyNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid tickets are available for business accounts.'**
+  String get paidBusinessOnlyNote;
+
+  /// No description provided for @paidBusinessOnlyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Free events and experiences are open to everyone. To charge for tickets or bookings you need an active business account (Platinum).'**
+  String get paidBusinessOnlyBody;
+
+  /// No description provided for @paidBusinessPausedNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Your business is paused: renew Platinum to sell paid tickets again.'**
+  String get paidBusinessPausedNote;
+
+  /// No description provided for @uexpBusinessRequiredTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid listings are for business accounts'**
+  String get uexpBusinessRequiredTitle;
+
+  /// No description provided for @tpErrSellerNotBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'Sales are paused: paid tickets and bookings are only available from active business accounts.'**
+  String get tpErrSellerNotBusiness;
+
+  /// No description provided for @tpAutoSectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic Payment and Approval'**
+  String get tpAutoSectionTitle;
+
+  /// No description provided for @tpAutoSectionHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.'**
+  String get tpAutoSectionHint;
+
+  /// No description provided for @tpManualSectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Manual Payment and Approval'**
+  String get tpManualSectionTitle;
+
+  /// No description provided for @tpManualSectionHint.
+  ///
+  /// In en, this message translates to:
+  /// **'No setup: buyers pay you directly with one of the payment methods below (or cash / bank transfer). You confirm each payment yourself with the Payments to confirm button at the top; the ticket is issued once you confirm.'**
+  String get tpManualSectionHint;
+
+  /// No description provided for @paymentMethodsSettingsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How people can pay you directly (Pix, PayPal…)'**
+  String get paymentMethodsSettingsSubtitle;
 }
 
 class _AppLocalizationsDelegate

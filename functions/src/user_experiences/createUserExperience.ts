@@ -22,7 +22,7 @@
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
-import { effectiveTier, isProfileAdmin } from '../shared/effectiveTier';
+import { effectiveTier, isBusinessActive, isProfileAdmin } from '../shared/effectiveTier';
 import { moderateExperienceText } from './moderation';
 import { maxExperiencesFor, validateExperiencePayload } from './validation';
 import {
@@ -33,6 +33,7 @@ import {
 import {
   SafetyCode,
   createBlockReason,
+  takesPayment,
 } from './safety';
 
 const db = admin.firestore();
@@ -109,6 +110,11 @@ export const createUserExperience = onCall(
       // document (+ new-host paid limit) to publish a listing taking money.
       const blocked = createBlockReason(profile);
       if (blocked) throw safetyError(blocked);
+      // Only an ACTIVE business account may create a PAID listing (or one
+      // carrying a payment link). Free listings: everyone.
+      if (takesPayment(v.data as Record<string, unknown>) && !isBusinessActive(profile)) {
+        throw safetyError('business_required');
+      }
       // A new listing has no dates yet, and availability must be defined by
       // dates: it is always stored as a draft, published via
       // publishUserExperience once it has an upcoming date.

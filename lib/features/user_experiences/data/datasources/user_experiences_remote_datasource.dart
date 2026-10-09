@@ -29,6 +29,8 @@ class ExperienceCreateException implements Exception {
     'host_banned',
     'hidden',
     'agreement_outdated',
+    // Paid listings need an active business account.
+    'business_required',
   };
   final int? limit;
   final int? count;

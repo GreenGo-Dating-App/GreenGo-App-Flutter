@@ -57,6 +57,7 @@ import { checkCharge, stripePaymentMethodTypes } from './currency';
 import { CheckoutInput, publicImage, whenText } from './checkoutPayload';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { lt, rawText } from '../shared/i18n';
+import { isBusinessActive } from '../shared/effectiveTier';
 
 const db = () => admin.firestore();
 const ts = (ms: number) => admin.firestore.Timestamp.fromMillis(ms);
@@ -350,6 +351,14 @@ export async function createTicketCheckout(uid: string, data: any, email: string
     const isFreeOrder = !!lines && totalAmount === 0;
     if (!isFreeOrder && (!Number.isSafeInteger(listing.unitAmount) || listing.unitAmount <= 0)) fail('failed-precondition', 'invalid_price');
     if (isFreeOrder) listing.provider = 'free' as any;
+
+    // Only an ACTIVE business account (isBusiness + effective Platinum) may
+    // sell. Existing paid listings of other accounts stay readable, but new
+    // sales are refused with a clear reason (free ticket types still issue).
+    if (!isFreeOrder) {
+      const seller = (await tx.get(db().collection('profiles').doc(listing.organizerId))).data();
+      if (!isBusinessActive(seller)) fail('failed-precondition', 'seller_not_business');
+    }
 
     // Readiness of the organizer's payment setup.
     let payment: ReturnType<typeof linkPaymentSnapshot> = null;

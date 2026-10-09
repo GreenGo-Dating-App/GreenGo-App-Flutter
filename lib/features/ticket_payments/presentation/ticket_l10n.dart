@@ -64,6 +64,7 @@ class TicketL10n {
     return switch (reason) {
       'payments_not_configured' => l.tpBlockNotConfigured,
       'organizer_payments_not_ready' => l.tpErrNotOnSale,
+      'seller_not_business' => l.tpErrSellerNotBusiness,
       'sold_out' || 'ticket_type_sold_out' => l.tpErrSoldOut,
       'ticket_limit_reached' || 'ticket_type_limit_reached' => l.tpErrLimit,
       'ticket_type_sales_not_started' => l.tpTypeNotStarted,

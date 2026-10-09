@@ -46,6 +46,30 @@ service cloud.firestore {
              get(/databases/$(database)/documents/profiles/$(request.auth.uid)).data.isAdmin == true;
     }
 
+    // ACTIVE Platinum (or TEST) on a profile document `p`. Mirrors
+    // effectiveTier() in functions/src/shared/effectiveTier.ts for the stored
+    // shapes rules can read: a Timestamp or epoch-millis end date (an ISO
+    // string end date fails closed here; the server callables accept it).
+    // Admins keep their stored tier regardless of the end date.
+    function activePlatinum(p) {
+      return p.get('membershipTier', '') in ['TEST', 'test']
+        || (p.get('membershipTier', '') in ['PLATINUM', 'platinum']
+            && (p.get('isAdmin', false) == true
+                || (p.get('membershipEndDate', null) is timestamp
+                    && p.membershipEndDate > request.time)
+                || (p.get('membershipEndDate', null) is int
+                    && p.membershipEndDate > request.time.toMillis())));
+    }
+    // Business capabilities ACTIVE (TierEntitlements.isBusinessActive /
+    // isBusinessActive() server-side): the permanent isBusiness flag AND an
+    // active Platinum. Only such accounts may create PAID events / ticket
+    // types / experiences.
+    function sellerBusinessActive(uid) {
+      return isSignedIn() && uid is string
+        && get(/databases/$(database)/documents/profiles/$(uid)).data.get('isBusiness', false) == true
+        && activePlatinum(get(/databases/$(database)/documents/profiles/$(uid)).data);
+    }
+
     // Conversation membership (C4): the two 1:1 participants, any group
     // participant, or the assigned support agent. `c` is the conversation data.
     function convMember(c) {
@@ -118,6 +142,8 @@ service cloud.firestore {
       allow create: if isOwner(profileId)
         && request.resource.data.get('isAdmin', false) == false
         && request.resource.data.get('isBanned', false) == false
+        // Becoming a business is a Platinum upgrade made by UPDATE (below).
+        && request.resource.data.get('isBusiness', false) == false
         && request.resource.data.get('isBusinessVerified', false) == false
         && request.resource.data.get('businessVerified', false) == false
         && request.resource.data.get('isAgeVerified', false) == false
@@ -163,6 +189,19 @@ service cloud.firestore {
                  == resource.data.get('isBusinessVerified', false)
               && request.resource.data.get('businessVerified', false)
                  == resource.data.get('businessVerified', false)
+              // Business account: a ONE-WAY, permanent upgrade. The owner may
+              // only turn isBusiness ON, and only while holding an active
+              // Platinum; it can never be turned off again by the client
+              // (lapsed Platinum pauses the tools, it does not revert the
+              // account). businessSince is stamped once and then immutable.
+              && (request.resource.data.get('isBusiness', false)
+                    == resource.data.get('isBusiness', false)
+                  || (resource.data.get('isBusiness', false) == false
+                      && request.resource.data.get('isBusiness', false) == true
+                      && activePlatinum(resource.data)))
+              && (request.resource.data.get('businessSince', null)
+                    == resource.data.get('businessSince', null)
+                  || resource.data.get('businessSince', null) == null)
               // Age assurance is decided by `submitAgeDocument` /
               // `reviewAgeVerification` running with admin credentials, which
               // bypass these rules. A user must never be able to mark
@@ -1711,11 +1750,21 @@ service cloud.firestore {
           && (d.get('ticketProvider', null) == null
               || d.ticketProvider in ['link', 'stripe', 'mercadopago']);
       }
+      // Paid events only by an ACTIVE business account (the creator). An
+      // event that is ALREADY paid (e.g. created before this rule) stays
+      // editable; only the transition into "paid" needs business.
+      function paidAllowed(organizerId) {
+        return !isPaidEventData(request.resource.data)
+          || (resource != null && isPaidEventData(resource.data))
+          || sellerBusinessActive(organizerId);
+      }
       // Creator must set themselves as organizer.
       allow create: if isSignedIn()
         && request.resource.data.organizerId == request.auth.uid
         && validCoOrganizers(request.resource.data)
-        && validTicketing(request.resource.data);
+        && validTicketing(request.resource.data)
+        && (!isPaidEventData(request.resource.data)
+            || sellerBusinessActive(request.auth.uid));
       // Delete stays CREATOR-only (co-owners cannot delete).
       allow delete: if isOrganizer();
       // Organizer has full update rights. Additionally ANY signed-in user may
@@ -1726,7 +1775,8 @@ service cloud.firestore {
       // createTicketCheckout / the payment confirmation): others may only bump
       // viewCount there.
       allow update: if (isOrganizer() && validCoOrganizers(request.resource.data)
-                        && validTicketing(request.resource.data))
+                        && validTicketing(request.resource.data)
+                        && paidAllowed(resource.data.organizerId))
         || (isSignedIn()
             && request.resource.data.diff(resource.data).affectedKeys()
                  .hasOnly(['viewCount']))
@@ -1741,7 +1791,8 @@ service cloud.firestore {
       allow update: if isCoOrganizer()
         && !request.resource.data.diff(resource.data).affectedKeys()
               .hasAny(['organizerId', 'organizerName', 'organizerPhotoUrl',
-                       'coOrganizerIds']);
+                       'coOrganizerIds'])
+        && paidAllowed(resource.data.organizerId);
 
       match /attendees/{uid} {
         function parentEvent() {
@@ -1861,12 +1912,22 @@ service cloud.firestore {
             && (d.get('sortOrder', 0) is int);
         }
         allow read: if isSignedIn();
+        // A PRICED type (price > 0) only for an active business organizer;
+        // an existing price may be kept or lowered to free by anyone allowed.
+        function pricedTypeAllowed() {
+          return request.resource.data.price == 0
+            || (resource != null && request.resource.data.price == resource.data.get('price', 0))
+            || sellerBusinessActive(
+                 get(/databases/$(database)/documents/events/$(eventId)).data.organizerId);
+        }
         allow create: if typeOwner() && validType(request.resource.data)
           && request.resource.data.get('sold', 0) == 0
-          && request.resource.data.get('held', 0) == 0;
+          && request.resource.data.get('held', 0) == 0
+          && pricedTypeAllowed();
         allow update: if typeOwner() && validType(request.resource.data)
           && request.resource.data.get('sold', 0) == resource.data.get('sold', 0)
-          && request.resource.data.get('held', 0) == resource.data.get('held', 0);
+          && request.resource.data.get('held', 0) == resource.data.get('held', 0)
+          && pricedTypeAllowed();
         // A type with sold tickets is never deleted (stop selling instead);
         // already issued tickets keep their own type name and price.
         allow delete: if typeOwner() && resource.data.get('sold', 0) == 0 && resource.data.get('held', 0) == 0;
@@ -2282,6 +2343,13 @@ service cloud.firestore {
                 && !(request.auth.uid in request.resource.data.allowedScannerIds)))
         && validExperienceText(request.resource.data)
         && publishWriteAllowed()
+        // Turning a listing into one that takes money (paid / payment link)
+        // needs an ACTIVE business account; already-paid listings stay
+        // editable (createUserExperience / publishUserExperience enforce the
+        // same rule server-side).
+        && (!takesPayment(request.resource.data)
+            || takesPayment(resource.data)
+            || sellerBusinessActive(request.auth.uid))
         && (request.resource.data.status == resource.data.status
             || (resource.data.status != 'hidden'
                 && request.resource.data.status in ['draft', 'published']));

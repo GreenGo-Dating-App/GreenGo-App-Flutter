@@ -151,6 +151,20 @@ class ExperienceSafetyFlow {
           ],
         );
         return r ?? SafetyResolution.cancel;
+      case 'business_required':
+        final b = await _ask(
+          context,
+          title: l.uexpBusinessRequiredTitle,
+          body: l.paidBusinessOnlyBody,
+          icon: Icons.storefront_outlined,
+          actions: [
+            _Choice(l.cancel, SafetyResolution.cancel),
+            _Choice(l.uexpSaveDraft, SafetyResolution.saveDraft),
+            _Choice(l.uexpPublishAsFree, SafetyResolution.publishFree,
+                primary: true),
+          ],
+        );
+        return b ?? SafetyResolution.cancel;
       case 'host_banned':
         _snack(context, l.uexpHostBanned);
         return SafetyResolution.cancel;

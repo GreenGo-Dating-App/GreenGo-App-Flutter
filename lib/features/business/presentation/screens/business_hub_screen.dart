@@ -12,6 +12,7 @@ import '../../../explore/presentation/screens/qr_hub_screen.dart';
 import '../../../profile/domain/entities/profile.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/widgets/edit_section_card.dart';
+import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
 import 'business_account_screen.dart';
 import 'business_events_screen.dart';
 import 'business_verification_request_screen.dart';
@@ -109,6 +110,14 @@ class BusinessHubScreen extends StatelessWidget {
         builder: (_) => BusinessEventsScreen(profile: profile),
       ),
     );
+  }
+
+  /// Opens "Get paid" (Stripe / Mercado Pago, payment methods, payments to
+  /// confirm). It lives here - not in Account settings - for active business
+  /// accounts, the only ones that can sell paid tickets.
+  Future<void> _openGetPaid(BuildContext context) async {
+    await Navigator.of(context).push(GetPaidScreen.route(profile.userId,
+        profileBloc: context.read<ProfileBloc>()));
   }
 
   /// Opens the bounded list of people who follow this business (own uid).
@@ -315,6 +324,14 @@ class BusinessHubScreen extends StatelessWidget {
               subtitle: l10n.businessSectionSubtitle,
               icon: Icons.event_note,
               onTap: () => _openManageEvents(context),
+            ),
+            const SizedBox(height: 16),
+            EditSectionCard(
+              key: const ValueKey('business-hub-get-paid'),
+              title: l10n.tpGetPaidTitle,
+              subtitle: l10n.tpGetPaidSubtitle,
+              icon: Icons.account_balance_wallet_outlined,
+              onTap: () => _openGetPaid(context),
             ),
             const SizedBox(height: 16),
             EditSectionCard(

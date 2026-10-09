@@ -3148,10 +3148,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Leave Community';
 
   @override
-  String get communitiesBusinessCannotJoin =>
-      'Business accounts cannot join communities. Switch off business mode to join.';
-
-  @override
   String get communitiesDeleteCommunity => 'Delete Community';
 
   @override
@@ -11912,15 +11908,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get becomeBusinessAction => 'Become one';
 
   @override
-  String get becomeBusinessPermanentHint =>
-      'One-time upgrade. This can\'t be undone.';
-
-  @override
   String get becomeBusinessConfirmTitle => 'Become a business account?';
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'This is permanent — your account becomes a public business account and can\'t be switched back.';
+      'This is permanent: your account becomes a public business account and can\'t be switched back to a personal account. Business tools work while your Platinum membership is active; if it lapses they are paused until you renew.';
 
   @override
   String get becomeBusinessConfirmAction => 'Make it permanent';
@@ -12679,15 +12671,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get exploreBusinessesNearYou => 'Businesses close to you';
-
-  @override
-  String get storefrontEnabled => 'Storefront is on';
-
-  @override
-  String get storefrontDisabled => 'Storefront is off';
-
-  @override
-  String get storefrontToggleHint => 'Turn your storefront on or off anytime';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
@@ -16759,10 +16742,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Money goes directly to your own account. GreenGo takes no fee on ticket sales.';
 
   @override
-  String get tpGetPaidManualInfo =>
-      'No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.';
-
-  @override
   String get tpGetPaidSubtitle =>
       'Payment methods, Stripe and Mercado Pago, payments to confirm';
 
@@ -16806,7 +16785,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tpManualAddMethodsHint =>
-      'Add your Pix, PayPal… in Profile > Payment methods to see them here.';
+      'Add your Pix, PayPal… in Profile > Business > Get paid to see them here.';
 
   @override
   String get tpManualDisclaimer =>
@@ -23030,4 +23009,50 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get srvSupportAiHandoff =>
       'I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly.';
+
+  @override
+  String get becomeBusinessOneWayHint =>
+      'Requires Platinum. One-time upgrade: it can\'t be undone.';
+
+  @override
+  String get businessPermanentInfo =>
+      'Your account is permanently a business account and can\'t go back to a personal account. Business tools work while Platinum is active; if it lapses they pause until you renew.';
+
+  @override
+  String get paidBusinessOnlyNote =>
+      'Paid tickets are available for business accounts.';
+
+  @override
+  String get paidBusinessOnlyBody =>
+      'Free events and experiences are open to everyone. To charge for tickets or bookings you need an active business account (Platinum).';
+
+  @override
+  String get paidBusinessPausedNote =>
+      'Your business is paused: renew Platinum to sell paid tickets again.';
+
+  @override
+  String get uexpBusinessRequiredTitle =>
+      'Paid listings are for business accounts';
+
+  @override
+  String get tpErrSellerNotBusiness =>
+      'Sales are paused: paid tickets and bookings are only available from active business accounts.';
+
+  @override
+  String get tpAutoSectionTitle => 'Automatic Payment and Approval';
+
+  @override
+  String get tpAutoSectionHint =>
+      'Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.';
+
+  @override
+  String get tpManualSectionTitle => 'Manual Payment and Approval';
+
+  @override
+  String get tpManualSectionHint =>
+      'No setup: buyers pay you directly with one of the payment methods below (or cash / bank transfer). You confirm each payment yourself with the Payments to confirm button at the top; the ticket is issued once you confirm.';
+
+  @override
+  String get paymentMethodsSettingsSubtitle =>
+      'How people can pay you directly (Pix, PayPal…)';
 }

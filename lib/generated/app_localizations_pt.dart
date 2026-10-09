@@ -3180,10 +3180,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get communitiesLeaveCommunity => 'Sair da Comunidade';
 
   @override
-  String get communitiesBusinessCannotJoin =>
-      'As contas de negocio nao podem juntar-se a comunidades. Desative o modo negocio para participar.';
-
-  @override
   String get communitiesDeleteCommunity => 'Eliminar comunidade';
 
   @override
@@ -12032,15 +12028,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get becomeBusinessAction => 'Tornar-te uma';
 
   @override
-  String get becomeBusinessPermanentHint =>
-      'Upgrade único. Não pode ser revertido.';
-
-  @override
   String get becomeBusinessConfirmTitle => 'Tornar-te numa conta empresarial?';
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'Isto é permanente — a tua conta torna-se uma conta empresarial pública e não pode ser revertida.';
+      'Isto é permanente: a tua conta torna-se uma conta empresarial pública e não pode voltar a ser uma conta pessoal. As ferramentas empresariais funcionam enquanto a tua assinatura Platinum estiver ativa; se expirar, ficam em pausa até renovares.';
 
   @override
   String get becomeBusinessConfirmAction => 'Tornar permanente';
@@ -12809,16 +12801,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get exploreBusinessesNearYou => 'Negocios perto de ti';
-
-  @override
-  String get storefrontEnabled => 'Vitrine ativada';
-
-  @override
-  String get storefrontDisabled => 'Vitrine desativada';
-
-  @override
-  String get storefrontToggleHint =>
-      'Ativa ou desativa a tua vitrine quando quiseres';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
@@ -16925,10 +16907,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'O dinheiro vai diretamente para a sua conta. O GreenGo não cobra taxa na venda de bilhetes.';
 
   @override
-  String get tpGetPaidManualInfo =>
-      'Sem configuração: escolha um dos seus métodos de pagamento do perfil (ou dinheiro / transferência) no evento ou experiência e confirme cada pagamento.';
-
-  @override
   String get tpGetPaidSubtitle =>
       'Métodos de pagamento, Stripe e Mercado Pago, pagamentos a confirmar';
 
@@ -16972,7 +16950,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tpManualAddMethodsHint =>
-      'Adicione Pix, PayPal… em Perfil > Métodos de pagamento para os ver aqui.';
+      'Adiciona o teu Pix, PayPal… em Perfil > Empresa > Receber pagamentos para os veres aqui.';
 
   @override
   String get tpManualDisclaimer =>
@@ -23259,6 +23237,52 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get srvSupportAiHandoff =>
       'Percebo que queres falar com uma pessoa. Estou a ligar-te agora. Um membro da equipa de suporte vai responder em breve.';
+
+  @override
+  String get becomeBusinessOneWayHint =>
+      'Requer Platinum. Upgrade único: não pode ser desfeito.';
+
+  @override
+  String get businessPermanentInfo =>
+      'A tua conta é permanentemente uma conta empresarial e não pode voltar a ser pessoal. As ferramentas empresariais funcionam enquanto o Platinum estiver ativo; se expirar, ficam em pausa até renovares.';
+
+  @override
+  String get paidBusinessOnlyNote =>
+      'Os bilhetes pagos estão disponíveis para contas empresariais.';
+
+  @override
+  String get paidBusinessOnlyBody =>
+      'Os eventos e experiências gratuitos estão abertos a todos. Para cobrar bilhetes ou reservas precisas de uma conta empresarial ativa (Platinum).';
+
+  @override
+  String get paidBusinessPausedNote =>
+      'A tua empresa está em pausa: renova o Platinum para voltar a vender bilhetes pagos.';
+
+  @override
+  String get uexpBusinessRequiredTitle =>
+      'Os anúncios pagos são para contas empresariais';
+
+  @override
+  String get tpErrSellerNotBusiness =>
+      'As vendas estão em pausa: bilhetes e reservas pagos só estão disponíveis em contas empresariais ativas.';
+
+  @override
+  String get tpAutoSectionTitle => 'Pagamento e aprovação automáticos';
+
+  @override
+  String get tpAutoSectionHint =>
+      'Liga o Stripe ou o Mercado Pago: os compradores pagam na app e os bilhetes são confirmados na hora, sem verificações manuais.';
+
+  @override
+  String get tpManualSectionTitle => 'Pagamento e aprovação manuais';
+
+  @override
+  String get tpManualSectionHint =>
+      'Sem configuração: os compradores pagam-te diretamente com um dos métodos de pagamento abaixo (ou dinheiro / transferência). Confirmas cada pagamento com o botão Pagamentos a confirmar no topo; o bilhete é emitido quando confirmas.';
+
+  @override
+  String get paymentMethodsSettingsSubtitle =>
+      'Como te podem pagar diretamente (Pix, PayPal…)';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -26440,10 +26464,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get communitiesLeaveCommunity => 'Sair da Comunidade';
-
-  @override
-  String get communitiesBusinessCannotJoin =>
-      'Contas de negocio nao podem entrar em comunidades. Desative o modo negocio para participar.';
 
   @override
   String get communitiesDeleteCommunity => 'Excluir comunidade';
@@ -35293,15 +35313,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get becomeBusinessAction => 'Tornar-se uma';
 
   @override
-  String get becomeBusinessPermanentHint =>
-      'Upgrade único. Não pode ser desfeito.';
-
-  @override
   String get becomeBusinessConfirmTitle => 'Tornar-se uma conta empresarial?';
 
   @override
   String get becomeBusinessConfirmMessage =>
-      'Isto é permanente — sua conta se torna uma conta empresarial pública e não pode ser revertida.';
+      'Isto é permanente: sua conta se torna uma conta empresarial pública e não pode voltar a ser uma conta pessoal. As ferramentas empresariais funcionam enquanto sua assinatura Platinum estiver ativa; se ela expirar, ficam pausadas até você renovar.';
 
   @override
   String get becomeBusinessConfirmAction => 'Tornar permanente';
@@ -36071,16 +36087,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get exploreBusinessesNearYou => 'Negocios perto de voce';
-
-  @override
-  String get storefrontEnabled => 'Vitrine ativada';
-
-  @override
-  String get storefrontDisabled => 'Vitrine desativada';
-
-  @override
-  String get storefrontToggleHint =>
-      'Ative ou desative sua vitrine quando quiser';
 
   @override
   String get splashBusinessLabel => 'BUSINESS';
@@ -40183,10 +40189,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       'O dinheiro vai direto para a sua conta. O GreenGo não cobra taxa sobre a venda de ingressos.';
 
   @override
-  String get tpGetPaidManualInfo =>
-      'Sem configuração: escolha um dos seus métodos de pagamento do perfil (ou dinheiro / transferência) no evento ou experiência e confirme cada pagamento.';
-
-  @override
   String get tpGetPaidSubtitle =>
       'Métodos de pagamento, Stripe e Mercado Pago, pagamentos a confirmar';
 
@@ -40230,7 +40232,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get tpManualAddMethodsHint =>
-      'Adicione seu Pix, PayPal… em Perfil > Formas de pagamento para vê-los aqui.';
+      'Adicione seu Pix, PayPal… em Perfil > Empresa > Receber pagamentos para vê-los aqui.';
 
   @override
   String get tpManualDisclaimer =>
@@ -46518,4 +46520,50 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get srvSupportAiHandoff =>
       'Entendo que você quer falar com uma pessoa. Estou conectando você agora. Alguém da equipe de suporte vai responder em breve.';
+
+  @override
+  String get becomeBusinessOneWayHint =>
+      'Requer Platinum. Upgrade único: não pode ser desfeito.';
+
+  @override
+  String get businessPermanentInfo =>
+      'Sua conta é permanentemente uma conta empresarial e não pode voltar a ser pessoal. As ferramentas empresariais funcionam enquanto o Platinum estiver ativo; se expirar, ficam pausadas até você renovar.';
+
+  @override
+  String get paidBusinessOnlyNote =>
+      'Os ingressos pagos estão disponíveis para contas empresariais.';
+
+  @override
+  String get paidBusinessOnlyBody =>
+      'Eventos e experiências gratuitos são abertos a todos. Para cobrar ingressos ou reservas você precisa de uma conta empresarial ativa (Platinum).';
+
+  @override
+  String get paidBusinessPausedNote =>
+      'Sua empresa está pausada: renove o Platinum para voltar a vender ingressos pagos.';
+
+  @override
+  String get uexpBusinessRequiredTitle =>
+      'Os anúncios pagos são para contas empresariais';
+
+  @override
+  String get tpErrSellerNotBusiness =>
+      'As vendas estão pausadas: ingressos e reservas pagos só estão disponíveis em contas empresariais ativas.';
+
+  @override
+  String get tpAutoSectionTitle => 'Pagamento e aprovação automáticos';
+
+  @override
+  String get tpAutoSectionHint =>
+      'Conecte o Stripe ou o Mercado Pago: os compradores pagam no app e os ingressos são confirmados na hora, sem verificações manuais.';
+
+  @override
+  String get tpManualSectionTitle => 'Pagamento e aprovação manuais';
+
+  @override
+  String get tpManualSectionHint =>
+      'Sem configuração: os compradores pagam você diretamente com um dos métodos de pagamento abaixo (ou dinheiro / transferência). Você confirma cada pagamento com o botão Pagamentos a confirmar no topo; o ingresso é emitido quando você confirma.';
+
+  @override
+  String get paymentMethodsSettingsSubtitle =>
+      'Como as pessoas podem pagar você diretamente (Pix, PayPal…)';
 }

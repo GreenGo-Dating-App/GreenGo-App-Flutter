@@ -18,7 +18,7 @@ import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import { HttpsError, FunctionsErrorCode } from 'firebase-functions/v2/https';
 import '../shared/firebaseAdmin';
-import { tierDateFromValue } from '../shared/effectiveTier';
+import { isBusinessActive, tierDateFromValue } from '../shared/effectiveTier';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
 import { LText, lt, rawText } from '../shared/i18n';
 import { recordMeeting } from '../checkin/meetings';
@@ -582,6 +582,9 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     let link: { type: string; value: string } | null = null;
     let provider: string | null = null;
     if (!priced.free) {
+      // Paid bookings only from an ACTIVE business account (existing paid
+      // listings of other hosts stay readable; new sales are refused).
+      if (!isBusinessActive(host)) fail('failed-precondition', 'seller_not_business');
       if (idDocumentStateOf(host) !== 'approved') fail('failed-precondition', 'host_not_verified');
       const choice = choosePaymentMethod(e, data?.paymentMethod);
       if (choice.ok === false) {
