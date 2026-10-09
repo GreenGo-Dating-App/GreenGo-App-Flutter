@@ -23399,6 +23399,47 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'O teu nome e e-mail serão partilhados com o organizador para a entrada.';
+
+  @override
+  String get screenProtectionRecordingTitle =>
+      'A gravação do ecrã não é permitida';
+
+  @override
+  String get screenProtectionRecordingBody =>
+      'Para de gravar ou espelhar o ecrã para continuares a usar o GreenGo.';
+
+  @override
+  String get screenProtectionHiddenTitle => 'Conteúdo oculto';
+
+  @override
+  String get screenProtectionHiddenBody =>
+      'O GreenGo oculta o conteúdo enquanto a janela não está ativa. Clica aqui para continuar.';
+
+  @override
+  String get screenProtectionScreenshotsNotAllowed =>
+      'Não são permitidas capturas de ecrã';
+
+  @override
+  String get screenProtectionAppOnlyTitle => 'Abre na app GreenGo para ver';
+
+  @override
+  String get screenProtectionAppOnlyBody =>
+      'Para proteger a privacidade das pessoas, as fotos privadas e a verificação de identidade só estão disponíveis na app móvel GreenGo.';
+
+  @override
+  String get screenProtectionOpenApp => 'Abrir a app';
+
+  @override
+  String chatSystemScreenshotTaken(String name) {
+    return '$name fez uma captura de ecrã';
+  }
+
+  @override
+  String get guidelinesPrivacyCaptureTitle => 'Respeita a privacidade';
+
+  @override
+  String get guidelinesPrivacyCaptureDesc =>
+      'Capturas e gravações do conteúdo de outras pessoas são bloqueadas ou denunciadas; partilhar fotos de outros sem consentimento é proibido.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -46799,4 +46840,45 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get checkoutOrganizerShareNotice =>
       'Seu nome e e-mail serão compartilhados com o organizador para a entrada.';
+
+  @override
+  String get screenProtectionRecordingTitle =>
+      'A gravação de tela não é permitida';
+
+  @override
+  String get screenProtectionRecordingBody =>
+      'Pare de gravar ou espelhar a tela para continuar usando o GreenGo.';
+
+  @override
+  String get screenProtectionHiddenTitle => 'Conteúdo oculto';
+
+  @override
+  String get screenProtectionHiddenBody =>
+      'O GreenGo oculta o conteúdo enquanto a janela não está ativa. Clique aqui para continuar.';
+
+  @override
+  String get screenProtectionScreenshotsNotAllowed =>
+      'Capturas de tela não são permitidas';
+
+  @override
+  String get screenProtectionAppOnlyTitle => 'Abra no app GreenGo para ver';
+
+  @override
+  String get screenProtectionAppOnlyBody =>
+      'Para proteger a privacidade das pessoas, fotos privadas e a verificação de identidade só estão disponíveis no app GreenGo para celular.';
+
+  @override
+  String get screenProtectionOpenApp => 'Abrir o app';
+
+  @override
+  String chatSystemScreenshotTaken(String name) {
+    return '$name fez uma captura de tela';
+  }
+
+  @override
+  String get guidelinesPrivacyCaptureTitle => 'Respeite a privacidade';
+
+  @override
+  String get guidelinesPrivacyCaptureDesc =>
+      'Capturas e gravações do conteúdo de outras pessoas são bloqueadas ou denunciadas; compartilhar fotos de outros sem consentimento é proibido.';
 }

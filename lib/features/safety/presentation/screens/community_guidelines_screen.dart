@@ -132,6 +132,11 @@ class _CommunityGuidelinesScreenState extends State<CommunityGuidelinesScreen>
           description: l10n.guidelinesNoSpamDesc,
         ),
         _Principle(
+          icon: Icons.no_photography_rounded,
+          title: l10n.guidelinesPrivacyCaptureTitle,
+          description: l10n.guidelinesPrivacyCaptureDesc,
+        ),
+        _Principle(
           icon: Icons.flag_rounded,
           title: l10n.guidelinesReportTitle,
           description: l10n.guidelinesReportDesc,

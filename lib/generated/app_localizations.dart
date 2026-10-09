@@ -39992,6 +39992,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your name and email will be shared with the organizer for entry.'**
   String get checkoutOrganizerShareNotice;
+
+  /// No description provided for @screenProtectionRecordingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Screen recording is not allowed'**
+  String get screenProtectionRecordingTitle;
+
+  /// No description provided for @screenProtectionRecordingBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop recording or mirroring your screen to keep using GreenGo.'**
+  String get screenProtectionRecordingBody;
+
+  /// No description provided for @screenProtectionHiddenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Content hidden'**
+  String get screenProtectionHiddenTitle;
+
+  /// No description provided for @screenProtectionHiddenBody.
+  ///
+  /// In en, this message translates to:
+  /// **'GreenGo hides content while the window is not in focus. Click here to continue.'**
+  String get screenProtectionHiddenBody;
+
+  /// No description provided for @screenProtectionScreenshotsNotAllowed.
+  ///
+  /// In en, this message translates to:
+  /// **'Screenshots are not allowed'**
+  String get screenProtectionScreenshotsNotAllowed;
+
+  /// No description provided for @screenProtectionAppOnlyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open in the GreenGo app to view'**
+  String get screenProtectionAppOnlyTitle;
+
+  /// No description provided for @screenProtectionAppOnlyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'To protect people\'s privacy, private photos and ID verification are only available in the GreenGo mobile app.'**
+  String get screenProtectionAppOnlyBody;
+
+  /// No description provided for @screenProtectionOpenApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the app'**
+  String get screenProtectionOpenApp;
+
+  /// No description provided for @chatSystemScreenshotTaken.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} took a screenshot'**
+  String chatSystemScreenshotTaken(String name);
+
+  /// No description provided for @guidelinesPrivacyCaptureTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Respect privacy'**
+  String get guidelinesPrivacyCaptureTitle;
+
+  /// No description provided for @guidelinesPrivacyCaptureDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Screenshots and recordings of other people\'s content are blocked or reported; sharing others\' photos without consent is forbidden.'**
+  String get guidelinesPrivacyCaptureDesc;
 }
 
 class _AppLocalizationsDelegate

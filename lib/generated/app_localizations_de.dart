@@ -23450,4 +23450,46 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.';
+
+  @override
+  String get screenProtectionRecordingTitle =>
+      'Bildschirmaufnahme ist nicht erlaubt';
+
+  @override
+  String get screenProtectionRecordingBody =>
+      'Beende die Aufnahme oder Bildschirmspiegelung, um GreenGo weiter zu nutzen.';
+
+  @override
+  String get screenProtectionHiddenTitle => 'Inhalt ausgeblendet';
+
+  @override
+  String get screenProtectionHiddenBody =>
+      'GreenGo blendet Inhalte aus, solange das Fenster nicht im Fokus ist. Klicke hier, um fortzufahren.';
+
+  @override
+  String get screenProtectionScreenshotsNotAllowed =>
+      'Screenshots sind nicht erlaubt';
+
+  @override
+  String get screenProtectionAppOnlyTitle =>
+      'In der GreenGo-App öffnen, um es anzusehen';
+
+  @override
+  String get screenProtectionAppOnlyBody =>
+      'Zum Schutz der Privatsphäre sind private Fotos und die Ausweisprüfung nur in der GreenGo-App verfügbar.';
+
+  @override
+  String get screenProtectionOpenApp => 'App öffnen';
+
+  @override
+  String chatSystemScreenshotTaken(String name) {
+    return '$name hat einen Screenshot gemacht';
+  }
+
+  @override
+  String get guidelinesPrivacyCaptureTitle => 'Privatsphäre respektieren';
+
+  @override
+  String get guidelinesPrivacyCaptureDesc =>
+      'Screenshots und Aufnahmen von Inhalten anderer werden blockiert oder gemeldet; Fotos anderer ohne Einwilligung zu teilen ist verboten.';
 }

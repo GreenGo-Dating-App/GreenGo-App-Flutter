@@ -245,10 +245,87 @@ export async function runPrivateProfileBackfill(opts: {
  * (two equality filters: served by single-field indexes, the same query the
  * app already runs). Private copy first, legacy public field second.
  */
+/**
+ * Storage object path of a private-album photo download URL, but ONLY when
+ * the object is in the OWNER's own folder (`profiles/{ownerId}/...`) and, if
+ * [bucket] is given, in that bucket. Anything else (external URL, another
+ * user's folder, ID selfies under `verifications/`) is null and never signed:
+ * an owner must not be able to turn their album into a signer for someone
+ * else's files.
+ */
+export function albumObjectPath(url: unknown, ownerId: string, bucket?: string | null): string | null {
+  if (typeof url !== 'string' || !url || url.length > 2048) return null;
+  let path: string;
+  try {
+    const u = new URL(url);
+    if (u.hostname !== 'firebasestorage.googleapis.com') return null;
+    const m = u.pathname.match(/^\/v0\/b\/([^/]+)\/o\/(.+)$/);
+    if (!m) return null;
+    if (bucket && decodeURIComponent(m[1]) !== bucket) return null;
+    path = decodeURIComponent(m[2]);
+  } catch {
+    return null;
+  }
+  if (!path || path.includes('..') || path.includes('\\') || !path.startsWith(`profiles/${ownerId}/`)) return null;
+  return path;
+}
+
+/** Lifetime of the signed URLs getSharedAlbum hands to a grantee. */
+export const ALBUM_URL_TTL_MS = 10 * 60 * 1000;
+
+function defaultBucketName(): string | null {
+  try {
+    return admin.storage().bucket().name || null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Replaces each Storage download URL (permanent bearer token) by a V4 signed
+ * URL valid [ALBUM_URL_TTL_MS]: a grantee who copies a URL out of the app can
+ * use it for minutes, not forever, and a revoked grant stops working once the
+ * last URL expires. Signing failures (missing iam.serviceAccounts.signBlob on
+ * the runtime service account) fall back to the stored URL, i.e. exactly the
+ * previous behaviour. The app caches by object path (stableMediaCacheKey), so
+ * changing signatures do not defeat its image cache.
+ */
+export async function signAlbumUrls(
+  urls: string[],
+  ownerId: string,
+  opts: { sign?: (path: string, expires: number) => Promise<string>; bucket?: string | null; now?: number } = {},
+): Promise<string[]> {
+  const bucket = opts.bucket === undefined ? defaultBucketName() : opts.bucket;
+  if (!opts.sign && !bucket) return urls; // no bucket configured (tests/emulator)
+  const expires = (opts.now ?? Date.now()) + ALBUM_URL_TTL_MS;
+  const sign = opts.sign ?? (async (p: string, exp: number) => {
+    const [signed] = await admin.storage().bucket().file(p).getSignedUrl({ version: 'v4', action: 'read', expires: exp });
+    return signed;
+  });
+  let warned = false;
+  return Promise.all(urls.map(async (url) => {
+    const path = albumObjectPath(url, ownerId, bucket);
+    if (!path) return url;
+    try {
+      return await sign(path, expires);
+    } catch (e: any) {
+      if (!warned) {
+        warned = true;
+        console.warn('getSharedAlbum: URL signing failed, serving stored URLs', e?.message || e);
+      }
+      return url;
+    }
+  }));
+}
+
 export async function resolveSharedAlbum(
   callerUid: string,
   ownerId: string,
-  opts: { firestore?: admin.firestore.Firestore } = {},
+  opts: {
+    firestore?: admin.firestore.Firestore;
+    sign?: (path: string, expires: number) => Promise<string>;
+    bucket?: string | null;
+  } = {},
 ): Promise<{ photoUrls: string[] }> {
   const fs = opts.firestore ?? admin.firestore();
   if (callerUid !== ownerId) {
@@ -264,7 +341,11 @@ export async function resolveSharedAlbum(
     fs.collection('profiles').doc(ownerId),
   );
   const list = (v: any) => (Array.isArray(v) ? v.filter((x) => typeof x === 'string') : null);
-  const photoUrls = list(privSnap.data()?.privatePhotoUrls) ?? list(pubSnap.data()?.privatePhotoUrls) ?? [];
+  const stored = list(privSnap.data()?.privatePhotoUrls) ?? list(pubSnap.data()?.privatePhotoUrls) ?? [];
+  // The owner reads their own album straight from profiles_private; a
+  // grantee only ever receives short-lived URLs.
+  if (callerUid === ownerId) return { photoUrls: stored };
+  const photoUrls = await signAlbumUrls(stored, ownerId, { sign: opts.sign, bucket: opts.bucket });
   return { photoUrls };
 }
 

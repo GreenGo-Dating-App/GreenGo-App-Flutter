@@ -7250,5 +7250,16 @@
   "participantsEmailRateLimited": "Du hast sie gerade angefordert. Versuch es in ein paar Minuten erneut.",
   "participantsEmailFailed": "Die Teilnehmerliste konnte nicht gesendet werden. Bitte versuch es später erneut.",
   "participantsEmailNoEmail": "Dein Konto hat keine E-Mail-Adresse für den Versand.",
-  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben."
+  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.",
+  "screenProtectionRecordingTitle": "Bildschirmaufnahme ist nicht erlaubt",
+  "screenProtectionRecordingBody": "Beende die Aufnahme oder Bildschirmspiegelung, um GreenGo weiter zu nutzen.",
+  "screenProtectionHiddenTitle": "Inhalt ausgeblendet",
+  "screenProtectionHiddenBody": "GreenGo blendet Inhalte aus, solange das Fenster nicht im Fokus ist. Klicke hier, um fortzufahren.",
+  "screenProtectionScreenshotsNotAllowed": "Screenshots sind nicht erlaubt",
+  "screenProtectionAppOnlyTitle": "In der GreenGo-App öffnen, um es anzusehen",
+  "screenProtectionAppOnlyBody": "Zum Schutz der Privatsphäre sind private Fotos und die Ausweisprüfung nur in der GreenGo-App verfügbar.",
+  "screenProtectionOpenApp": "App öffnen",
+  "chatSystemScreenshotTaken": "{name} hat einen Screenshot gemacht",
+  "guidelinesPrivacyCaptureTitle": "Privatsphäre respektieren",
+  "guidelinesPrivacyCaptureDesc": "Screenshots und Aufnahmen von Inhalten anderer werden blockiert oder gemeldet; Fotos anderer ohne Einwilligung zu teilen ist verboten."
 }

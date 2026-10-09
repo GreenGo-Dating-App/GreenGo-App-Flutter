@@ -23,6 +23,7 @@ import '../../domain/entities/message.dart';
 import 'location_message_map.dart';
 import 'deleted_message_bubble.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
+import '../../../../core/security/viewer_watermark.dart';
 
 /// Message Bubble Widget
 ///
@@ -1419,14 +1420,19 @@ class _MessageBubbleState extends State<MessageBubble> {
               minScale: 0.5,
               maxScale: 4.0,
               // Full-screen viewer: full resolution, but disk-cached.
-              child: CachedNetworkImage(
-                imageUrl: imageUrl,
-                fit: BoxFit.contain,
-                placeholder: (context, _) => const Center(
-                  child: CircularProgressIndicator(color: AppColors.richGold),
-                ),
-                errorWidget: (context, _, __) => const Center(
-                  child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
+              // Chat media is private: stamped with the VIEWER's id so a
+              // leaked capture is traceable.
+              child: ViewerWatermark.media(
+                isPrivate: true,
+                child: CachedNetworkImage(
+                  imageUrl: imageUrl,
+                  fit: BoxFit.contain,
+                  placeholder: (context, _) => const Center(
+                    child: CircularProgressIndicator(color: AppColors.richGold),
+                  ),
+                  errorWidget: (context, _, __) => const Center(
+                    child: Icon(Icons.broken_image, color: Colors.white54, size: 64),
+                  ),
                 ),
               ),
             ),

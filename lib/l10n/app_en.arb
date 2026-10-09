@@ -12550,5 +12550,23 @@
   "participantsEmailRateLimited": "You just requested it. Try again in a few minutes.",
   "participantsEmailFailed": "Couldn’t send the participants list. Please try again later.",
   "participantsEmailNoEmail": "Your account has no email address to send the list to.",
-  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry."
+  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry.",
+  "screenProtectionRecordingTitle": "Screen recording is not allowed",
+  "screenProtectionRecordingBody": "Stop recording or mirroring your screen to keep using GreenGo.",
+  "screenProtectionHiddenTitle": "Content hidden",
+  "screenProtectionHiddenBody": "GreenGo hides content while the window is not in focus. Click here to continue.",
+  "screenProtectionScreenshotsNotAllowed": "Screenshots are not allowed",
+  "screenProtectionAppOnlyTitle": "Open in the GreenGo app to view",
+  "screenProtectionAppOnlyBody": "To protect people's privacy, private photos and ID verification are only available in the GreenGo mobile app.",
+  "screenProtectionOpenApp": "Open the app",
+  "chatSystemScreenshotTaken": "{name} took a screenshot",
+  "@chatSystemScreenshotTaken": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "guidelinesPrivacyCaptureTitle": "Respect privacy",
+  "guidelinesPrivacyCaptureDesc": "Screenshots and recordings of other people's content are blocked or reported; sharing others' photos without consent is forbidden."
 }

@@ -7250,5 +7250,16 @@
   "participantsEmailRateLimited": "Acabaste de a pedir. Tenta novamente daqui a alguns minutos.",
   "participantsEmailFailed": "Não foi possível enviar a lista de participantes. Tenta mais tarde.",
   "participantsEmailNoEmail": "A tua conta não tem um e-mail para onde enviar a lista.",
-  "checkoutOrganizerShareNotice": "O teu nome e e-mail serão partilhados com o organizador para a entrada."
+  "checkoutOrganizerShareNotice": "O teu nome e e-mail serão partilhados com o organizador para a entrada.",
+  "screenProtectionRecordingTitle": "A gravação do ecrã não é permitida",
+  "screenProtectionRecordingBody": "Para de gravar ou espelhar o ecrã para continuares a usar o GreenGo.",
+  "screenProtectionHiddenTitle": "Conteúdo oculto",
+  "screenProtectionHiddenBody": "O GreenGo oculta o conteúdo enquanto a janela não está ativa. Clica aqui para continuar.",
+  "screenProtectionScreenshotsNotAllowed": "Não são permitidas capturas de ecrã",
+  "screenProtectionAppOnlyTitle": "Abre na app GreenGo para ver",
+  "screenProtectionAppOnlyBody": "Para proteger a privacidade das pessoas, as fotos privadas e a verificação de identidade só estão disponíveis na app móvel GreenGo.",
+  "screenProtectionOpenApp": "Abrir a app",
+  "chatSystemScreenshotTaken": "{name} fez uma captura de ecrã",
+  "guidelinesPrivacyCaptureTitle": "Respeita a privacidade",
+  "guidelinesPrivacyCaptureDesc": "Capturas e gravações do conteúdo de outras pessoas são bloqueadas ou denunciadas; partilhar fotos de outros sem consentimento é proibido."
 }
