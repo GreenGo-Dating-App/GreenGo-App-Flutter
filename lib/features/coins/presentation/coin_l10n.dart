@@ -1,5 +1,6 @@
 import '../../../generated/app_localizations.dart';
 import '../domain/entities/coin_package.dart';
+import '../domain/entities/invoice.dart';
 
 /// Localized display text for coin catalogue entities. The domain keeps
 /// stable ids and English defaults; UI code uses these helpers.
@@ -78,4 +79,21 @@ String? localizedCoinPackageSavings(AppLocalizations l10n, CoinPackage pkg) {
     return l10n.shopSavePercent(pkg.discountPercentage!.toInt().toString());
   }
   return null;
+}
+
+/// Localized label of an invoice line, rendered from its stable `kind` (+
+/// `coinCount`). Invoices written before `kind` existed show the stored
+/// English `description`.
+String localizedInvoiceLineItem(AppLocalizations l10n, InvoiceLineItem item) {
+  switch (item.kind) {
+    case InvoiceLineKind.coins:
+      final count = item.coinCount;
+      return count != null ? l10n.invoiceLineCoins(count) : item.description;
+    case InvoiceLineKind.subscription:
+      return l10n.invoiceLineSubscription;
+    case InvoiceLineKind.gift:
+      return l10n.invoiceLineGiftPackage;
+    default:
+      return item.description;
+  }
 }

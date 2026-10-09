@@ -33,6 +33,8 @@ class InvoiceModel extends Invoice {
           quantity: (item['quantity'] as num).toInt(),
           unitPrice: (item['unitPrice'] as num).toDouble(),
           totalPrice: (item['totalPrice'] as num).toDouble(),
+          kind: item['kind'] as String?,
+          coinCount: (item['coinCount'] as num?)?.toInt(),
         );
       }).toList();
     }
@@ -103,6 +105,8 @@ class InvoiceModel extends Invoice {
                 'quantity': item.quantity,
                 'unitPrice': item.unitPrice,
                 'totalPrice': item.totalPrice,
+                if (item.kind != null) 'kind': item.kind,
+                if (item.coinCount != null) 'coinCount': item.coinCount,
               })
           .toList(),
       'subtotal': subtotal,

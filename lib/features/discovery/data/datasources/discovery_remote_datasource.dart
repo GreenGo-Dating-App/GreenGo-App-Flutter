@@ -22,6 +22,7 @@ import '../models/swipe_action_model.dart';
 import '../../../../core/services/effective_tier.dart';
 import '../../../profile/data/private_profile.dart';
 import '../../../safety/data/services/age_assurance_service.dart';
+import '../../../chat/domain/chat_system_message.dart';
 
 /// Discovery Remote Data Source Interface
 abstract class DiscoveryRemoteDataSource {
@@ -1101,8 +1102,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
     if (action.isPositive) {
       // Get sender's profile for nickname in notification
       final senderProfile = await firestore.collection('profiles').doc(userId).get();
-      final senderNickname = senderProfile.data()?['nickname'] as String? ?? 'Someone';
-      final senderName = senderProfile.data()?['displayName'] as String? ?? 'Someone';
+      // Empty when unknown: readers render a localized "Unknown user".
+      final senderNickname = senderProfile.data()?['nickname'] as String? ?? '';
+      final senderName = senderProfile.data()?['displayName'] as String? ?? '';
 
       // If super like, create a one-way conversation visible only to the target
       if (actionType == SwipeActionType.superLike) {
@@ -1186,14 +1188,22 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       'lastMessageAt': now,
     });
 
-    // Create system message
+    // Create system message. `content` is the English fallback for old app
+    // versions / push; readers render `metadata.systemKey` in their language.
+    final fallbackName = senderNickname.isNotEmpty ? senderNickname : 'Someone';
+    final content = '$fallbackName sent you a Super Like!';
+    final metadata = chatSystemMetadata(
+      ChatSystemKey.superLikeReceived,
+      {'name': senderNickname},
+    );
     final msgRef = conversationRef.collection('messages').doc();
     await msgRef.set({
       'messageId': msgRef.id,
       'senderId': 'system',
       'receiverId': targetUserId,
-      'content': '$senderNickname sent you a Super Like!',
+      'content': content,
       'type': 'system',
+      'metadata': metadata,
       'sentAt': now,
       'status': 'sent',
     });
@@ -1204,8 +1214,9 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         'messageId': msgRef.id,
         'senderId': 'system',
         'receiverId': targetUserId,
-        'content': '$senderNickname sent you a Super Like!',
+        'content': content,
         'type': 'system',
+        'metadata': metadata,
         'sentAt': now,
       },
     });
@@ -1300,6 +1311,8 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
       });
 
       // Create "Start Connecting!" system message visible to both users
+      // (`content` = English fallback; readers localize `metadata.systemKey`.)
+      final metadata = chatSystemMetadata(ChatSystemKey.startConnecting);
       final msgRef = conversationRef.collection('messages').doc();
       await msgRef.set({
         'messageId': msgRef.id,
@@ -1307,6 +1320,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
         'receiverId': 'all',
         'content': 'Start Connecting!',
         'type': 'system',
+        'metadata': metadata,
         'sentAt': now,
         'status': 'sent',
       });
@@ -1319,6 +1333,7 @@ class DiscoveryRemoteDataSourceImpl implements DiscoveryRemoteDataSource {
           'receiverId': 'all',
           'content': 'Start Connecting!',
           'type': 'system',
+          'metadata': metadata,
           'sentAt': now,
         },
       });

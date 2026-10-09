@@ -22623,4 +22623,80 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get notifCoinsReceivedTitle => 'Hai ricevuto delle monete!';
+
+  @override
+  String chatSystemCoinsReceived(String name, int amount) {
+    return '$name ti ha inviato $amount monete!';
+  }
+
+  @override
+  String chatSystemCoinsSent(int amount) {
+    return 'Ti ho appena inviato $amount monete!';
+  }
+
+  @override
+  String chatSystemSupportWelcome(String subject) {
+    return 'Benvenuto nel supporto GreenGo! Un operatore ti risponderà a breve. Il tuo ticket: $subject';
+  }
+
+  @override
+  String chatSystemSupportAgentJoined(String name) {
+    return '$name si è unito alla conversazione e ti aiuterà.';
+  }
+
+  @override
+  String get chatSystemSupportAgentFallback => 'Operatore di supporto';
+
+  @override
+  String get chatSystemSupportInProgress =>
+      'Un operatore di supporto sta lavorando alla tua richiesta.';
+
+  @override
+  String get chatSystemSupportWaitingOnUser =>
+      'Siamo in attesa della tua risposta.';
+
+  @override
+  String get chatSystemSupportResolved =>
+      'La tua richiesta è stata risolta. Grazie per aver contattato il supporto GreenGo!';
+
+  @override
+  String get chatSystemSupportClosed =>
+      'Questo ticket di supporto è stato chiuso.';
+
+  @override
+  String get chatSystemSupportStatusUpdated => 'Stato del ticket aggiornato.';
+
+  @override
+  String get commonUnknownUser => 'Utente sconosciuto';
+
+  @override
+  String get chatSupportDescription => 'Descrizione';
+
+  @override
+  String get supportReportFollowUpTitle => 'Follow-up della segnalazione';
+
+  @override
+  String supportReportFollowUpSubject(String reason) {
+    return 'Follow-up della segnalazione: $reason';
+  }
+
+  @override
+  String supportReportFollowUpDetails(
+      String reason, String message, String user, String date) {
+    return 'Motivo: $reason\nMessaggio segnalato: «$message»\nUtente segnalato: $user\nSegnalato il: $date';
+  }
+
+  @override
+  String get supportChatWithGreenGoSubject => 'Chat con il supporto GreenGo';
+
+  @override
+  String invoiceLineCoins(int count) {
+    return '$count monete GreenGo';
+  }
+
+  @override
+  String get invoiceLineSubscription => 'Piano di abbonamento';
+
+  @override
+  String get invoiceLineGiftPackage => 'Pacchetto di monete regalo';
 }

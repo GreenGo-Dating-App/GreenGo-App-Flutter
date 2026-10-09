@@ -3,6 +3,7 @@ import '../../../../core/utils/conversation_queries.dart';
 import 'package:flutter/foundation.dart';
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/content_filter_service.dart';
+import '../../domain/chat_system_message.dart';
 import '../../domain/entities/conversation.dart';
 import '../../domain/entities/message.dart';
 import '../chat_constants.dart';
@@ -538,7 +539,12 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       if (!matchId.startsWith('search_') && !matchId.startsWith('superlike_')) {
         await firestore.collection('matches').doc(matchId).update({
           'lastMessageAt': FieldValue.serverTimestamp(),
-          'lastMessage': content,
+          // Media/album messages store a neutral label, never the media URL
+          // or album details; readers localize by `lastMessageType`.
+          'lastMessage': type == MessageType.text
+              ? content
+              : _notificationPreview(type, content),
+          'lastMessageType': type.value,
         });
       }
 
@@ -554,7 +560,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
       // Get sender profile for notification
       final senderProfile = await firestore.collection('profiles').doc(senderId).get();
       final senderNickname = senderProfile.data()?['nickname'] as String? ?? '';
-      final senderName = senderProfile.data()?['displayName'] as String? ?? 'Someone';
+      // Empty when unknown: the notification row renders a localized
+      // "Unknown user"; 'Someone' only appears in the English fallback text.
+      final senderName = senderProfile.data()?['displayName'] as String? ?? '';
       // Fills the circle on the notification row with the sender's face
       // instead of the generic chat glyph.
       final senderPhotos = senderProfile.data()?['photoUrls'] as List<dynamic>?;
@@ -564,7 +572,9 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       if (messagesCount.count == 1) {
         // First message - create new_chat notification
-        final displayName = senderNickname.isNotEmpty ? '@$senderNickname' : senderName;
+        final displayName = senderNickname.isNotEmpty
+            ? '@$senderNickname'
+            : (senderName.isNotEmpty ? senderName : 'Someone');
         await _createNotification(
           userId: receiverId,
           type: 'new_chat',
@@ -581,14 +591,16 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           },
           imageUrl: senderPhoto,
           actorId: senderId,
-          actorName: senderName,
+          actorName: senderName.isNotEmpty ? senderName : null,
         );
       } else {
         // Regular message - create new_message notification.
         // Clean, non-redundant copy: the title carries the sender ("New message
         // from @user"); the body carries the actual message preview instead of
         // repeating "New message from ..." a second time.
-        final displayName = senderNickname.isNotEmpty ? '@$senderNickname' : senderName;
+        final displayName = senderNickname.isNotEmpty
+            ? '@$senderNickname'
+            : (senderName.isNotEmpty ? senderName : 'Someone');
         await _createNotification(
           userId: receiverId,
           type: 'new_message',
@@ -606,7 +618,7 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           },
           imageUrl: senderPhoto,
           actorId: senderId,
-          actorName: senderName,
+          actorName: senderName.isNotEmpty ? senderName : null,
         );
       }
       } catch (sideEffectError) {
@@ -619,15 +631,19 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
     }
   }
 
-  /// Short, human-friendly preview of a message for notification bodies.
-  /// Media types render a labelled placeholder; text is trimmed to 100 chars.
+  /// Short ENGLISH fallback preview of a message for stored notification
+  /// bodies / match previews (old app versions and server push read it; the
+  /// app localizes by `data.messageType` / `lastMessageType`). Media and album
+  /// messages always get a label so no media URL or album detail leaks; text
+  /// is trimmed to 100 chars.
   String _notificationPreview(MessageType type, String content) {
     switch (type) {
       case MessageType.image:
         return '📷 Photo';
       case MessageType.video:
-      case MessageType.gif:
         return '🎥 Video';
+      case MessageType.gif:
+        return 'GIF';
       case MessageType.voiceNote:
         return '🎤 Voice message';
       case MessageType.sticker:
@@ -636,10 +652,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         return '📍 Location';
       case MessageType.albumShare:
         return '🖼️ Shared an album';
+      case MessageType.albumRevoke:
+        return '🔒 Album revoked';
       case MessageType.event:
         return '📅 Event';
       case MessageType.text:
-      case MessageType.albumRevoke:
       case MessageType.system:
         final trimmed = content.trim();
         if (trimmed.isEmpty) return 'Sent you a message';
@@ -1823,9 +1840,28 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
           .update({
         'isDeletedForEveryone': true,
         'deletedAt': Timestamp.fromDate(DateTime.now()),
+        // English fallback; readers render `metadata.systemKey` localized.
         'content': 'This message was deleted',
+        'metadata': {
+          ...?(messageData['metadata'] as Map<String, dynamic>?),
+          ...chatSystemMetadata(ChatSystemKey.messageDeleted),
+        },
         'originalContent': messageData['content'],
       });
+
+      // If it was the conversation's last message, the inbox preview must not
+      // keep showing the deleted content.
+      final convRef = firestore.collection('conversations').doc(conversationId);
+      final conv = await convRef.get();
+      final last = conv.data()?['lastMessage'];
+      if (last is Map && last['messageId'] == messageId) {
+        await convRef.update({
+          'lastMessage.content': 'This message was deleted',
+          'lastMessage.type': MessageType.text.value,
+          'lastMessage.metadata':
+              chatSystemMetadata(ChatSystemKey.messageDeleted),
+        });
+      }
     } catch (e) {
       throw Exception('Failed to delete message for both: $e');
     }
@@ -1879,6 +1915,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'receiverId': userId,
         'content': 'Welcome to GreenGo Support! A support agent will be with you shortly. Your ticket: $subject',
         'type': 'system',
+        'metadata': chatSystemMetadata(
+            ChatSystemKey.supportWelcome, {'subject': subject}),
         'sentAt': FieldValue.serverTimestamp(),
         'status': 'sent',
       });
@@ -1958,9 +1996,11 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
 
       // Get agent name
       final agentDoc = await firestore.collection('profiles').doc(agentId).get();
-      final agentName = agentDoc.exists
-          ? (agentDoc.data()?['displayName'] as String? ?? 'Support Agent')
-          : 'Support Agent';
+      final storedAgentName = agentDoc.exists
+          ? (agentDoc.data()?['displayName'] as String? ?? '')
+          : '';
+      final agentName =
+          storedAgentName.isNotEmpty ? storedAgentName : 'Support Agent';
 
       await messageRef.set({
         'messageId': messageRef.id,
@@ -1970,6 +2010,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'receiverId': '',
         'content': '$agentName has joined the conversation and will assist you.',
         'type': 'system',
+        'metadata': chatSystemMetadata(
+            ChatSystemKey.supportAgentJoined, {'name': storedAgentName}),
         'sentAt': FieldValue.serverTimestamp(),
         'status': 'sent',
       });
@@ -2032,6 +2074,8 @@ class ChatRemoteDataSourceImpl implements ChatRemoteDataSource {
         'receiverId': '',
         'content': statusMessage,
         'type': 'system',
+        'metadata': chatSystemMetadata(
+            ChatSystemKey.supportStatus, {'status': status.name}),
         'sentAt': FieldValue.serverTimestamp(),
         'status': 'sent',
       });

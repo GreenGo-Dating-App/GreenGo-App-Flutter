@@ -903,7 +903,9 @@ class _MessageBubbleState extends State<MessageBubble> {
               ),
             ] else ...[
               Text(
-                hasTranslation ? message.translatedContent! : message.content,
+                hasTranslation
+                    ? message.translatedContent!
+                    : chatMessageDisplayText(l10n, message),
                 style: TextStyle(
                   color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
                   fontSize: 15,
@@ -1108,7 +1110,7 @@ class _MessageBubbleState extends State<MessageBubble> {
 
       case MessageType.system:
         return Text(
-          message.content,
+          chatMessageDisplayText(l10n, message),
           style: const TextStyle(
             color: AppColors.textTertiary,
             fontSize: 13,

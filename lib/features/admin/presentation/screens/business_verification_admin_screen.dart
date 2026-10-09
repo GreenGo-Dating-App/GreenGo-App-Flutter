@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/utils/app_l10n_lookup.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../../core/utils/user_error.dart';
 
@@ -195,14 +196,20 @@ class _BusinessVerificationAdminScreenState
       );
 
       // Best-effort notification to the business owner.
+      // The OWNER reads this, so it must not be stored in the admin's
+      // language: neutral English fallback (old app versions / push) and the
+      // owner's app renders `data.kind` in their own language.
       final notificationRef = _firestore.collection('notifications').doc();
-      final l10n = AppLocalizations.of(context)!;
+      final en = appL10nFor(const Locale('en'));
       batch.set(notificationRef, <String, dynamic>{
         'userId': request.userId,
         'type': 'system',
-        'title': l10n.adminBusinessVerifiedNotificationTitle,
-        'message': l10n.adminBusinessVerifiedNotificationBody,
-        'data': <String, dynamic>{'businessVerified': true},
+        'title': en.adminBusinessVerifiedNotificationTitle,
+        'message': en.adminBusinessVerifiedNotificationBody,
+        'data': <String, dynamic>{
+          'businessVerified': true,
+          'kind': 'business_verified',
+        },
         'createdAt': FieldValue.serverTimestamp(),
         'isRead': false,
         'actionUrl': null,

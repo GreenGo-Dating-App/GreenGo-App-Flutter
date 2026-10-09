@@ -5,6 +5,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../chat/domain/chat_system_message.dart';
 import '../../../chat/domain/entities/message.dart';
 import '../../../chat/presentation/screens/support_chat_screen.dart';
 import '../../data/datasources/reports_admin_remote_datasource.dart';
@@ -402,12 +403,17 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
           'userId': report.reporterId,
           'supportAgentId': widget.adminId,
           'assignedTo': widget.adminId,
+          // English fallback (admin panel); the reporter's app renders
+          // `subjectKey` + `subjectParams` in their own language.
           'subject': 'Report Follow-up: ${report.reason}',
+          'subjectKey': 'report_followup',
+          'subjectParams': {'reason': report.reason},
           'category': 'report_followup',
           'status': 'open',
           'createdAt': now,
           'updatedAt': now,
           'lastMessage': 'Report follow-up conversation started',
+          'lastMessageKind': 'report_followup_started',
           'lastMessageAt': now,
           'lastMessageBy': 'system',
           'messageCount': 1,
@@ -426,6 +432,14 @@ class _ReportsAdminScreenState extends State<ReportsAdminScreen>
               'Reported message: "${report.messageContent}"\n'
               'Reported user: ${report.reportedUserId.substring(0, 8)}...\n'
               'Reported at: ${_formatDate(report.reportedAt)}',
+          // The reporter reads this in their own language (chatSystemText);
+          // `content` stays as the English fallback for the admin panel.
+          ...chatSystemMetadata(ChatSystemKey.reportFollowUp, {
+            'reason': report.reason,
+            'reportedMessage': report.messageContent,
+            'reportedUser': '${report.reportedUserId.substring(0, 8)}...',
+            'reportedAt': Timestamp.fromDate(report.reportedAt),
+          }),
           'messageType': 'system',
           'isTicketStart': true,
           'readByAdmin': true,

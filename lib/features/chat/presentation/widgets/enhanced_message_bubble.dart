@@ -265,7 +265,7 @@ class EnhancedMessageBubble extends StatelessWidget {
     switch (message.type) {
       case MessageType.text:
         return Text(
-          message.content,
+          chatMessageDisplayText(l10n, message),
           style: TextStyle(
             color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
             fontSize: 15,
@@ -457,7 +457,7 @@ class EnhancedMessageBubble extends StatelessWidget {
 
       case MessageType.system:
         return Text(
-          message.content,
+          chatMessageDisplayText(l10n, message),
           style: const TextStyle(
             color: AppColors.textTertiary,
             fontSize: 13,

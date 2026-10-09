@@ -83,9 +83,22 @@ class InvoiceLineItem extends Equatable {
     required this.quantity,
     required this.unitPrice,
     required this.totalPrice,
+    this.kind,
+    this.coinCount,
   });
   final String itemId;
+
+  /// English fallback text. Display via [kind] (+ [coinCount]) so the line
+  /// renders in the reader's language; [description] is only shown for
+  /// invoices written before [kind] existed.
   final String description;
+
+  /// Stable line kind: [InvoiceLineKind.coins], [InvoiceLineKind.subscription]
+  /// or [InvoiceLineKind.gift]. Null on legacy invoices.
+  final String? kind;
+
+  /// Number of coins for a [InvoiceLineKind.coins] line.
+  final int? coinCount;
   final int quantity;
   final double unitPrice;
   final double totalPrice;
@@ -105,7 +118,16 @@ class InvoiceLineItem extends Equatable {
         quantity,
         unitPrice,
         totalPrice,
+        kind,
+        coinCount,
       ];
+}
+
+/// Stable values for [InvoiceLineItem.kind].
+abstract final class InvoiceLineKind {
+  static const coins = 'coins';
+  static const subscription = 'subscription';
+  static const gift = 'gift';
 }
 
 /// Invoice Status

@@ -11,6 +11,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/utils/app_l10n_lookup.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/blocked_users_service.dart';
 import '../../../../core/services/access_control_service.dart';
@@ -1488,7 +1489,10 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
           'userId': userId,
           'userName': userName,
           'userAvatar': userAvatar,
+          // English fallback (admin panel); the app shows `subjectKey`
+          // localized in the user's ticket list.
           'subject': 'Chat with GreenGo Support',
+          'subjectKey': 'support_chat',
           'category': 'general',
           'status': 'open',
           'priority': 'normal',
@@ -2085,17 +2089,23 @@ class _DiscoveryScreenContentState extends State<_DiscoveryScreenContent> {
   Future<void> _sendSuperLikeNotification(String targetUserId, String targetDisplayName) async {
     try {
       final notificationRepo = di.sl<NotificationRepository>();
-      final senderName = _currentUserProfile?.displayName ?? 'Someone';
+      // Empty when unknown: the receiver renders a localized "Unknown user".
+      final senderName = _currentUserProfile?.displayName ?? '';
       final senderPhoto = _currentUserProfile?.photoUrls.isNotEmpty == true
           ? _currentUserProfile!.photoUrls.first
           : null;
 
-      final l10n = AppLocalizations.of(context)!;
+      // The RECEIVER reads this, so the stored text must not be in the
+      // sender's language: store a neutral English fallback (old app
+      // versions / push) and let the receiver's app localize it from
+      // `type` + `data.senderDisplayName`.
+      final en = appL10nFor(const Locale('en'));
       await notificationRepo.createNotification(
         userId: targetUserId,
         type: NotificationType.superLike,
-        title: l10n.youGotSuperLike,
-        message: l10n.superLikedYou(senderName),
+        title: en.youGotSuperLike,
+        message: en.superLikedYou(
+            senderName.isNotEmpty ? senderName : en.commonUnknownUser),
         data: {
           'senderUserId': userId,
           'senderDisplayName': senderName,

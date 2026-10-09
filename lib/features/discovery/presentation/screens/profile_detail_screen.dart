@@ -290,10 +290,16 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
 
       // Get current user's profile for name
       final userDoc = await firestore.collection('profiles').doc(widget.currentUserId).get();
-      final userName = userDoc.data()?['displayName'] ?? 'Someone';
+      // Empty when unknown: readers render a localized "Unknown user".
+      final userName = userDoc.data()?['displayName'] as String? ?? '';
       final userNickname = userDoc.data()?['nickname'] as String?;
 
-      final displayName = userNickname != null ? '@$userNickname' : userName;
+      // English fallback text (old app versions / push). The app renders the
+      // notification from `data.kind` + the liker fields in the reader's
+      // language.
+      final displayName = (userNickname != null && userNickname.isNotEmpty)
+          ? '@$userNickname'
+          : (userName.isNotEmpty ? userName : 'Someone');
       final likerPhotos = userDoc.data()?['photoUrls'] as List<dynamic>?;
       final likerPhoto = (likerPhotos != null && likerPhotos.isNotEmpty)
           ? likerPhotos.first as String?
@@ -305,10 +311,11 @@ class _ProfileDetailScreenState extends State<ProfileDetailScreen> {
         'imageUrl': likerPhoto,
         // Lets the avatar in the notification row open the liker's profile.
         'actorId': widget.currentUserId,
-        'actorName': userName,
+        'actorName': userName.isNotEmpty ? userName : null,
         'title': 'New Photo Like',
         'message': '$displayName liked your photo',
         'data': {
+          'kind': 'photo_like',
           'likerId': widget.currentUserId,
           'likerName': userName,
           'likerNickname': userNickname,

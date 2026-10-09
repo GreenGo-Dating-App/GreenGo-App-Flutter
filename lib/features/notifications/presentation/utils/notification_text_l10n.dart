@@ -1,5 +1,6 @@
 import 'package:intl/intl.dart';
 
+import '../../../../core/utils/user_display_name.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../chat/domain/entities/message.dart';
 import '../../../chat/presentation/utils/chat_l10n.dart';
@@ -21,6 +22,12 @@ String localizeStoredNotificationText(AppLocalizations l10n, String text) {
   final exact = _exact(l10n)[t];
   if (exact != null) return exact;
 
+  final coins = _coinsReceived.firstMatch(t);
+  if (coins != null) {
+    return l10n.chatSystemCoinsReceived(displayUserName(l10n, coins.group(1)),
+        int.tryParse(coins.group(2)!) ?? 0);
+  }
+
   for (final p in _patterns(l10n)) {
     final m = p.re.firstMatch(t);
     if (m != null) return p.build(m.group(1)!.trim());
@@ -28,18 +35,56 @@ String localizeStoredNotificationText(AppLocalizations l10n, String text) {
   return text;
 }
 
-/// Sender label stored by the client-written chat notifications.
-String _sender(NotificationEntity n) {
+/// Sender label stored by the client-written chat notifications; a missing
+/// name (or a legacy 'Someone') renders as the localized "Unknown user".
+String _sender(AppLocalizations l10n, NotificationEntity n) {
   final d = n.data ?? const <String, dynamic>{};
   final nick = (d['senderNickname'] as String?)?.trim() ?? '';
   final name = (d['senderName'] as String?)?.trim() ?? '';
-  return nick.isNotEmpty ? '@$nick' : name;
+  return nick.isNotEmpty ? '@$nick' : displayUserName(l10n, name);
 }
 
-/// Localized title of [n]: known client-written types (chat) are rebuilt from
-/// `type` + `data`; everything else goes through the server-phrase table.
+/// Stable kind of a client-written notification whose `type` string is not
+/// one of [NotificationType] (it parses to `system`), e.g. `photo_like`,
+/// `coin_gift`, `business_verified`. Stored in `data.kind`.
+String? _kind(NotificationEntity n) {
+  final d = n.data;
+  if (d == null) return null;
+  final kind = d['kind'];
+  if (kind is String) return kind;
+  // Written before `data.kind` existed (admin business approval).
+  if (d['businessVerified'] == true) return 'business_verified';
+  return null;
+}
+
+/// Liker label of a photo-like notification.
+String _liker(AppLocalizations l10n, NotificationEntity n) {
+  final d = n.data ?? const <String, dynamic>{};
+  final nick = (d['likerNickname'] as String?)?.trim() ?? '';
+  return nick.isNotEmpty
+      ? '@$nick'
+      : displayUserName(l10n, d['likerName'] as String?);
+}
+
+/// True for the client-written Priority Connect (super like) notification,
+/// which carries the sender in `data.senderDisplayName`.
+bool _isClientSuperLike(NotificationEntity n) =>
+    n.type == NotificationType.superLike &&
+    (n.data?.containsKey('senderDisplayName') ?? false);
+
+/// Localized title of [n]: known client-written types (chat, photo like,
+/// coin gift, Priority Connect, business verified) are rebuilt from `type` /
+/// `data.kind` + `data`; everything else goes through the server-phrase table.
 String localizedNotificationTitle(AppLocalizations l10n, NotificationEntity n) {
-  final who = _sender(n);
+  switch (_kind(n)) {
+    case 'photo_like':
+      return l10n.notifNewPhotoLikeTitle;
+    case 'coin_gift':
+      return l10n.notifCoinsReceivedTitle;
+    case 'business_verified':
+      return l10n.adminBusinessVerifiedNotificationTitle;
+  }
+  if (_isClientSuperLike(n)) return l10n.youGotSuperLike;
   switch (n.type) {
     case NotificationType.newChat:
       if (n.title.trim() == 'New Conversation') {
@@ -47,8 +92,10 @@ String localizedNotificationTitle(AppLocalizations l10n, NotificationEntity n) {
       }
       break;
     case NotificationType.newMessage:
-      if (who.isNotEmpty && n.title.startsWith('New message from ')) {
-        return l10n.notifNewMessageFrom(who);
+      final d = n.data ?? const <String, dynamic>{};
+      if (n.title.startsWith('New message from ') &&
+          (d.containsKey('senderName') || d.containsKey('senderNickname'))) {
+        return l10n.notifNewMessageFrom(_sender(l10n, n));
       }
       break;
     default:
@@ -59,10 +106,29 @@ String localizedNotificationTitle(AppLocalizations l10n, NotificationEntity n) {
 
 /// Localized body of [n] (see [localizedNotificationTitle]).
 String localizedNotificationBody(AppLocalizations l10n, NotificationEntity n) {
-  final who = _sender(n);
+  final d = n.data ?? const <String, dynamic>{};
+  switch (_kind(n)) {
+    case 'photo_like':
+      return l10n.notifLikedYourPhoto(_liker(l10n, n));
+    case 'coin_gift':
+      if (d['amount'] is num) {
+        return l10n.chatSystemCoinsReceived(
+            displayUserName(l10n, d['senderName'] as String?),
+            (d['amount'] as num).toInt());
+      }
+      break;
+    case 'business_verified':
+      return l10n.adminBusinessVerifiedNotificationBody;
+  }
+  if (_isClientSuperLike(n)) {
+    return l10n.superLikedYou(
+        displayUserName(l10n, d['senderDisplayName'] as String?));
+  }
   switch (n.type) {
     case NotificationType.newChat:
-      if (who.isNotEmpty) return l10n.notifStartedConversation(who);
+      if (d.containsKey('senderName') || d.containsKey('senderNickname')) {
+        return l10n.notifStartedConversation(_sender(l10n, n));
+      }
       break;
     case NotificationType.newMessage:
       final raw = n.data?['messageType'] as String?;
@@ -179,3 +245,6 @@ List<_Pattern> _patterns(AppLocalizations l10n) => [
       _Pattern(RegExp(r'^Announcement · (.+)$'),
           l10n.notifServerAnnouncement),
     ];
+
+// Legacy client-written coin-gift body (two arguments, so not a [_Pattern]).
+final _coinsReceived = RegExp(r'^(.+) sent you (\d+) coins!$');

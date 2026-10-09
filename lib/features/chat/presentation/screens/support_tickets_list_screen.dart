@@ -8,6 +8,7 @@ import '../../../../core/utils/user_error.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/support_l10n.dart';
 import 'support_chat_screen.dart';
 
 /// Support Tickets List Screen
@@ -218,7 +219,8 @@ class _SupportTicketsListScreenState extends State<SupportTicketsListScreen> {
             itemBuilder: (context, index) {
               final ticket = tickets[index].data();
               final ticketId = tickets[index].id;
-              final subject = ticket['subject'] ?? AppLocalizations.of(context)!.adminSupportRequest;
+              final subject = supportTicketSubject(
+                  AppLocalizations.of(context)!, ticket);
               final status = ticket['status'] ?? 'open';
               final lastMessageAt = ticket['lastMessageAt'] as Timestamp?;
               final unreadCount = ticket['unreadCount'] ?? 0;
@@ -538,6 +540,12 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
         'content': ticketContent,
         'messageType': 'ticket_creation',
         'isTicketStart': true,
+        // Structured copy: support staff and the user each see the ticket
+        // card in their own language (the formatted `content` above keeps
+        // the writer's labels and is only a fallback).
+        'ticketCategory': _selectedCategory,
+        'ticketSubject': _subjectController.text.trim(),
+        'ticketDescription': _descriptionController.text.trim(),
         'readByAdmin': false,
         'readByUser': true,
         'createdAt': Timestamp.fromDate(now),
@@ -546,6 +554,7 @@ ${_descriptionController.text.trim().isNotEmpty ? '\n**Description:**\n${_descri
       // Update last message in conversation
       await docRef.update({
         'lastMessage': 'New ticket: ${_subjectController.text.trim()}',
+        'lastMessageKind': 'ticket_created',
       });
 
       widget.onCreated(docRef.id);

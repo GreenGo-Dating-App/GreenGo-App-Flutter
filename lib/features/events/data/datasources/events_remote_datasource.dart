@@ -579,9 +579,10 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
         id: userId,
         eventId: eventId,
         userId: userId,
+        // Empty when unknown: readers render a localized "Unknown user".
         userName: userData['displayName'] as String? ??
             userData['nickname'] as String? ??
-            'Unknown',
+            '',
         userPhotoUrl: userData['photoUrl'] as String? ??
             (userData['photoUrls'] is List &&
                     (userData['photoUrls'] as List).isNotEmpty
@@ -651,9 +652,10 @@ class EventsRemoteDataSourceImpl implements EventsRemoteDataSource {
       // Resolve profile for the attendee card (outside the transaction;
       // local cache first).
       final userData = await _profileData(userId);
+      // Empty when unknown: readers render a localized "Unknown user".
       final userName = userData['displayName'] as String? ??
           userData['nickname'] as String? ??
-          'Unknown';
+          '';
       final userPhotoUrl = userData['photoUrl'] as String? ??
           (userData['photoUrls'] is List &&
                   (userData['photoUrls'] as List).isNotEmpty
