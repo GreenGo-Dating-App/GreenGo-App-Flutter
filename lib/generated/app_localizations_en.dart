@@ -22961,4 +22961,45 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get openSourceLicensesSubtitle =>
       'Fonts and software components used in this app';
+
+  @override
+  String get screenProtectionRecordingTitle =>
+      'Screen recording is not allowed';
+
+  @override
+  String get screenProtectionRecordingBody =>
+      'Stop recording or mirroring your screen to keep using GreenGo.';
+
+  @override
+  String get screenProtectionHiddenTitle => 'Content hidden';
+
+  @override
+  String get screenProtectionHiddenBody =>
+      'GreenGo hides content while the window is not in focus. Click here to continue.';
+
+  @override
+  String get screenProtectionScreenshotsNotAllowed =>
+      'Screenshots are not allowed';
+
+  @override
+  String get screenProtectionAppOnlyTitle => 'Open in the GreenGo app to view';
+
+  @override
+  String get screenProtectionAppOnlyBody =>
+      'To protect people\'s privacy, private photos and ID verification are only available in the GreenGo mobile app.';
+
+  @override
+  String get screenProtectionOpenApp => 'Open the app';
+
+  @override
+  String chatSystemScreenshotTaken(String name) {
+    return '$name took a screenshot';
+  }
+
+  @override
+  String get guidelinesPrivacyCaptureTitle => 'Respect privacy';
+
+  @override
+  String get guidelinesPrivacyCaptureDesc =>
+      'Screenshots and recordings of other people\'s content are blocked or reported; sharing others\' photos without consent is forbidden.';
 }
