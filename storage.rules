@@ -33,9 +33,17 @@ service firebase.storage {
 
     // Profile photos, voice intros, media — owner writes; signed-in users read
     // (needed for discovery/profile viewing).
+    // INC-2026-001 / audit C-10 (lockdown doc §5): app versions before the
+    // P1-4 split uploaded the onboarding ID selfie to
+    // profiles/{uid}/verifications/. That sub-folder is owner/admin-only
+    // (admins open it through getVerificationPhotoUrl). Storage ORs matching
+    // rules, so the broad match must exclude it explicitly.
     match /profiles/{uid}/{allPaths=**} {
-      allow read: if signedIn();
+      allow read: if signedIn() && !allPaths.matches('verifications/.*');
       allow write: if isOwner(uid) && validUpload();
+    }
+    match /profiles/{uid}/verifications/{file=**} {
+      allow read: if isOwner(uid) || isAdmin();
     }
 
     // Video profiles (video_profiles/{uid}/intro.mp4|thumbnail.jpg).

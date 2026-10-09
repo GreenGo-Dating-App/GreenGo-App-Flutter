@@ -131,9 +131,100 @@ service cloud.firestore {
     // ============================================================================
     // PROFILES COLLECTION
     // ============================================================================
+    // ----------------------------------------------------------------------------
+    // PUBLIC PROFILE LOCKDOWN (INC-2026-001, docs/security/profiles-rules-lockdown.md §2)
+    // ----------------------------------------------------------------------------
+    // profiles/{uid} is readable by every signed-in user. Exact location, birth
+    // date, orientation, contact data, the ID selfie, the private album and the
+    // push token live ONLY in owner/admin-only documents (profiles_private,
+    // users). No client - owner, in-app admin or admin panel - may write them
+    // to the public profile. A key may stay as it is (a legacy value the server
+    // strips) or be cleared (null / deleted), never set to a new value.
+    // Admin-SDK writers (triggers, callables, scripts) bypass rules.
+    function profilePrivateOnlyKeys() {
+      return ['dateOfBirth', 'sexualOrientation', 'email', 'verificationPhone',
+              'verificationPhotoUrl', 'verificationPhotoPath', 'privatePhotoUrls',
+              'geohash', 'fcmToken', 'birthMonthDay'];
+    }
+    // Coarse values computed by mirrorPrivateProfileFields /
+    // syncCoarseFromPrivateProfile; a client never writes them.
+    function profileServerCoarseKeys() {
+      return ['geohash5', 'approxLocation', 'age'];
+    }
+    // `k` of the written profile is unchanged or cleared.
+    function profileKeyKeptOrCleared(changed, k) {
+      return !(k in changed) || request.resource.data.get(k, null) == null;
+    }
+    // `sub` inside the map field `field` is unchanged or cleared.
+    function profileNestedKeptOrCleared(field, sub) {
+      return !(request.resource.data.get(field, null) is map)
+        || request.resource.data.get(field, {}).get(sub, null) == null
+        || (resource.data.get(field, null) is map
+            && request.resource.data.get(field, {}).get(sub, null)
+               == resource.data.get(field, {}).get(sub, null));
+    }
+    function profileNestedAbsent(field, sub) {
+      return !(request.resource.data.get(field, null) is map)
+        || request.resource.data.get(field, {}).get(sub, null) == null;
+    }
+    function publicProfileCreateOk() {
+      let d = request.resource.data;
+      return !d.keys().hasAny(profileServerCoarseKeys())
+        && d.get('dateOfBirth', null) == null
+        && d.get('sexualOrientation', null) == null
+        && d.get('email', null) == null
+        && d.get('verificationPhone', null) == null
+        && d.get('verificationPhotoUrl', null) == null
+        && d.get('verificationPhotoPath', null) == null
+        && d.get('privatePhotoUrls', null) == null
+        && d.get('geohash', null) == null
+        && d.get('fcmToken', null) == null
+        && d.get('birthMonthDay', null) == null
+        && profileNestedAbsent('location', 'latitude')
+        && profileNestedAbsent('location', 'longitude')
+        && profileNestedAbsent('travelerLocation', 'latitude')
+        && profileNestedAbsent('travelerLocation', 'longitude')
+        && profileNestedAbsent('ageVerification', 'documentHash')
+        && profileNestedAbsent('ageVerification', 'documentDateOfBirth');
+    }
+    function publicProfileUpdateOk() {
+      let changed = request.resource.data.diff(resource.data).affectedKeys();
+      return !changed.hasAny(profileServerCoarseKeys())
+        && (!changed.hasAny(profilePrivateOnlyKeys())
+            || (profileKeyKeptOrCleared(changed, 'dateOfBirth')
+                && profileKeyKeptOrCleared(changed, 'sexualOrientation')
+                && profileKeyKeptOrCleared(changed, 'email')
+                && profileKeyKeptOrCleared(changed, 'verificationPhone')
+                && profileKeyKeptOrCleared(changed, 'verificationPhotoUrl')
+                && profileKeyKeptOrCleared(changed, 'verificationPhotoPath')
+                && profileKeyKeptOrCleared(changed, 'privatePhotoUrls')
+                && profileKeyKeptOrCleared(changed, 'geohash')
+                && profileKeyKeptOrCleared(changed, 'fcmToken')
+                && profileKeyKeptOrCleared(changed, 'birthMonthDay')))
+        && profileNestedKeptOrCleared('location', 'latitude')
+        && profileNestedKeptOrCleared('location', 'longitude')
+        && profileNestedKeptOrCleared('travelerLocation', 'latitude')
+        && profileNestedKeptOrCleared('travelerLocation', 'longitude')
+        && profileNestedKeptOrCleared('ageVerification', 'documentHash')
+        && profileNestedKeptOrCleared('ageVerification', 'documentDateOfBirth');
+    }
+
     match /profiles/{profileId} {
-      // Anyone signed in can read profiles (for discovery/matching)
-      allow read: if isSignedIn();
+      // Single profile (get / listen). INC-2026-001 (lockdown doc §3): a user
+      // the owner has BLOCKED can't open the profile. block_index is written
+      // only by the syncBlockIndex trigger (blockedUsers/{id}); exists()
+      // inside rules needs no read permission.
+      allow get: if isSignedIn()
+        && (isOwner(profileId)
+            || !exists(/databases/$(database)/documents/block_index/$(profileId + '_' + request.auth.uid))
+            || isAdminPanelUser());
+      // Discovery / search queries. The sensitive fields are gone from the
+      // public documents, so a query returns only public data. The page-size
+      // cap of the lockdown doc (request.query.limit <= 50) is NOT applied yet:
+      // app 4.6.0+194 still runs larger and unbounded profile queries
+      // (discovery pools limit 75/200/500, globe 1000, travel map 100,
+      // whereIn-by-id batches without limit) that the cap would break.
+      allow list: if isSignedIn();
       // Users can create/update/delete their own profile; admins can update (verification, moderation)
       // A profile may be CREATED only without privileged flags. Without this,
       // `delete` + `create` was a trivial way to self-grant them: the update
@@ -170,7 +261,9 @@ service cloud.firestore {
         && request.resource.data.get('guestRatingAvg', 0) == 0
         // Host agreement acceptance is recorded only by acceptHostAgreement.
         && request.resource.data.get('hostAgreementVersion', 0) == 0
-        && request.resource.data.get('hostAgreementAcceptedAt', null) == null;
+        && request.resource.data.get('hostAgreementAcceptedAt', null) == null
+        // INC-2026-001: no sensitive / server-coarse field on a public profile.
+        && publicProfileCreateOk();
       // Owner, admin-panel and profile-admins (business-verification approval →
       // sets businessVerified) may update. Additionally ANY signed-in user may
       // change ONLY the denormalized `followerCount` (business follow/unfollow
@@ -179,7 +272,9 @@ service cloud.firestore {
       // `isBanned` (only admins/Cloud Functions may set/clear it — a banned
       // user must never be able to self-unban). Any signed-in user may also
       // change ONLY the denormalized counters (followerCount / rating aggregate).
-      allow update: if (isOwner(profileId)
+      // INC-2026-001: publicProfileUpdateOk() binds EVERY client branch below
+      // (owner, admin panel, profile admin, counters).
+      allow update: if publicProfileUpdateOk() && ((isOwner(profileId)
               && request.resource.data.get('isBanned', false)
                  == resource.data.get('isBanned', false)
               // NEVER let the owner set their own admin / verification flags.
@@ -281,7 +376,7 @@ service cloud.firestore {
                     && request.resource.data.followerCount
                          - resource.data.get('followerCount', 0) >= -1
                     && request.resource.data.followerCount
-                         - resource.data.get('followerCount', 0) <= 1)));
+                         - resource.data.get('followerCount', 0) <= 1))));
       allow delete: if isOwner(profileId);
     }
 
@@ -413,18 +508,43 @@ service cloud.firestore {
     // ============================================================================
     // BLOCKED USERS COLLECTION
     // ============================================================================
+    // INC-2026-001 (lockdown doc §3): a block is visible only to the two users
+    // it concerns, created only by the blocker for themselves, and removed
+    // only by the blocker (was: any signed-in user could read, forge and
+    // delete anyone's blocks). Queries must filter on the caller's own id
+    // (blockerId == me or blockedUserId == me), as BlockedUsersService does.
+    function blockParty(d) {
+      return isSignedIn()
+        && (d.get('blockerId', '') == request.auth.uid
+            || d.get('blockedUserId', '') == request.auth.uid);
+    }
+    function blockCreateOk() {
+      return isSignedIn()
+        && request.resource.data.get('blockerId', '') == request.auth.uid
+        && request.resource.data.get('blockedUserId', '') is string
+        && request.resource.data.get('blockedUserId', '') != ''
+        && request.resource.data.get('blockedUserId', '') != request.auth.uid;
+    }
     match /blockedUsers/{blockId} {
-      allow read: if isSignedIn();
-      allow create: if isSignedIn();
+      allow read: if blockParty(resource.data) || isAdminPanelUser();
+      allow create: if blockCreateOk();
       allow update: if false;
-      allow delete: if isSignedIn();
+      allow delete: if (isSignedIn() && resource.data.get('blockerId', '') == request.auth.uid)
+        || isAdminPanelUser();
     }
 
     match /blocked_users/{blockId} {
-      allow read: if isSignedIn();
-      allow create: if isSignedIn();
+      allow read: if blockParty(resource.data) || isAdminPanelUser();
+      allow create: if blockCreateOk();
       allow update: if false;
-      allow delete: if isSignedIn();
+      allow delete: if (isSignedIn() && resource.data.get('blockerId', '') == request.auth.uid)
+        || isAdminPanelUser();
+    }
+
+    // Deterministic block index {blockerId}_{blockedUserId}, maintained ONLY by
+    // the syncBlockIndex trigger (Admin SDK). Used by the profiles `get` rule.
+    match /block_index/{pairId} {
+      allow read, write: if false;
     }
 
     // ── Subcollections that had no rule of their own ────────────────────────
@@ -562,9 +682,19 @@ service cloud.firestore {
     // ALBUM ACCESS COLLECTION
     // ============================================================================
     match /album_access/{docId} {
-      allow read: if isSignedIn();
-      allow create, update: if isSignedIn();
-      allow delete: if isSignedIn();
+      // INC-2026-001 (lockdown doc §4): getSharedAlbum releases a private
+      // album to the holder of a grant, so only the OWNER may grant access to
+      // their own album (was: anyone could self-grant access to anyone's).
+      allow read: if isSignedIn()
+        && (resource.data.get('ownerId', '') == request.auth.uid
+            || resource.data.get('grantedToId', '') == request.auth.uid);
+      allow create: if isSignedIn()
+        && request.resource.data.get('ownerId', '') == request.auth.uid
+        && request.resource.data.get('grantedToId', '') is string
+        && request.resource.data.get('grantedToId', '') != ''
+        && request.resource.data.keys().hasOnly(['ownerId', 'grantedToId', 'grantedAt']);
+      allow update: if false;
+      allow delete: if isSignedIn() && resource.data.get('ownerId', '') == request.auth.uid;
     }
 
     // ============================================================================
@@ -1081,9 +1211,16 @@ service cloud.firestore {
     // SUPPORT CHATS COLLECTION
     // ============================================================================
     match /support_chats/{chatId} {
-      allow read: if isSignedIn();
-      allow create: if isSignedIn();
-      allow update: if isSignedIn();
+      // INC-2026-001 / E5: only the ticket owner and staff may read a support
+      // chat (was: any signed-in user).
+      function supportStaff() { return isAdminPanelUser() || isAdmin(); }
+      allow read: if supportStaff()
+        || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create: if supportStaff()
+        || (isSignedIn() && request.resource.data.userId == request.auth.uid);
+      allow update: if supportStaff()
+        || (isSignedIn() && resource.data.userId == request.auth.uid
+            && request.resource.data.userId == resource.data.userId);
       allow delete: if false;
     }
 
@@ -1091,9 +1228,18 @@ service cloud.firestore {
     // SUPPORT MESSAGES COLLECTION
     // ============================================================================
     match /support_messages/{messageId} {
-      allow read: if isSignedIn();
-      allow create: if isSignedIn();
-      allow update: if isSignedIn();
+      // INC-2026-001 / E5: messages are readable only by the owner of the
+      // parent support chat (conversationId) and staff.
+      function supportStaffM() { return isAdminPanelUser() || isAdmin(); }
+      function ownsChat(chatId) {
+        return isSignedIn()
+          && get(/databases/$(database)/documents/support_chats/$(chatId)).data.userId == request.auth.uid;
+      }
+      allow read: if supportStaffM() || ownsChat(resource.data.conversationId);
+      allow create: if supportStaffM()
+        || (ownsChat(request.resource.data.conversationId)
+            && request.resource.data.senderId == request.auth.uid);
+      allow update: if supportStaffM() || ownsChat(resource.data.conversationId);
       allow delete: if false;
     }
 
