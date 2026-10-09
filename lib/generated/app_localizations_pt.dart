@@ -22603,6 +22603,587 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get notifCoinsReceivedTitle => 'Recebeste moedas!';
+
+  @override
+  String get srvSomeone => 'Alguém';
+
+  @override
+  String get srvJoinedYourCommunity => 'juntou-se à tua comunidade';
+
+  @override
+  String get srvJoinedYourEvent => 'juntou-se ao teu evento';
+
+  @override
+  String get srvLikedYourEvent => 'gostou do teu evento';
+
+  @override
+  String get srvJoinedYourGroup => 'juntou-se ao teu grupo';
+
+  @override
+  String get srvAddedYouToAGroup => 'adicionou-te a um grupo';
+
+  @override
+  String get srvGroup => 'Grupo';
+
+  @override
+  String srvGroupMembersLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count membros saíram do grupo',
+      one: 'Um membro saiu do grupo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvTicketScanned => 'O teu bilhete foi lido';
+
+  @override
+  String get srvEventBoostLive => 'O impulso do teu evento está ativo';
+
+  @override
+  String get srvEventBoostEnded => 'O impulso do teu evento terminou';
+
+  @override
+  String get srvAddedYouAsCoOwnerOfEvent =>
+      'adicionou-te como coorganizador de um evento';
+
+  @override
+  String get srvAnEvent => 'Um evento';
+
+  @override
+  String srvPaymentsWaitingCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pagamentos',
+      one: '1 pagamento',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvNewReview => 'Nova avaliação';
+
+  @override
+  String get srvMentionedYouInReviewReply =>
+      'mencionou-te numa resposta a uma avaliação';
+
+  @override
+  String get srvRepliedToYourReview => 'respondeu à tua avaliação';
+
+  @override
+  String get srvExperience => 'Experiência';
+
+  @override
+  String get srvBookingRequested => 'pediu para reservar a tua experiência';
+
+  @override
+  String get srvBookingBooked => 'reservou a tua experiência';
+
+  @override
+  String get srvBookingConfirmed => 'Reserva confirmada';
+
+  @override
+  String get srvBookingAccepted => 'aceitou o teu pedido de reserva';
+
+  @override
+  String get srvBookingDeclined => 'recusou o teu pedido de reserva';
+
+  @override
+  String get srvBookingCancelledTheirs => 'cancelou a reserva';
+
+  @override
+  String get srvBookingCancelledYours => 'cancelou a tua reserva';
+
+  @override
+  String srvBookingRefundOwed(String title, int percent) {
+    return '$title — reembolso devido: $percent%.';
+  }
+
+  @override
+  String get srvBookingCheckedIn => 'Check-in feito';
+
+  @override
+  String get srvBookingCancelledByHost =>
+      'A tua reserva foi cancelada pelo anfitrião';
+
+  @override
+  String srvBookingCancelledByHostBody(String title) {
+    return '$title — o horário já não está disponível. Qualquer pagamento é reembolsado.';
+  }
+
+  @override
+  String get srvBookingNoShow => 'marcou-te como não comparecido';
+
+  @override
+  String srvBookingNoShowBody(String title, int hours) {
+    return '$title — podes contestar até $hours h após o fim.';
+  }
+
+  @override
+  String get srvBookingGuestSaysPaid => 'diz que pagou a reserva';
+
+  @override
+  String get srvBookingPaymentConfirmed => 'confirmou o teu pagamento';
+
+  @override
+  String get srvBookingProblemReported => 'comunicou um problema com a reserva';
+
+  @override
+  String get srvBookingReportReviewed => 'A tua denúncia foi analisada';
+
+  @override
+  String get srvBookingHostWarning => 'Aviso sobre uma das tuas reservas';
+
+  @override
+  String get srvBookingReportReviewedHost =>
+      'Uma denúncia de reserva foi analisada';
+
+  @override
+  String srvBookingReviewedBody(String title) {
+    return '$title.';
+  }
+
+  @override
+  String srvBookingReviewedRefundBody(String title, int percent) {
+    return '$title. Reembolso devido: $percent%.';
+  }
+
+  @override
+  String get srvBookingCancelled => 'A tua reserva foi cancelada';
+
+  @override
+  String srvBookingNoLongerAvailable(String title) {
+    return '$title já não está disponível.';
+  }
+
+  @override
+  String get srvBookingComingUp => 'A tua experiência está a chegar';
+
+  @override
+  String get srvBookingHostingSoon => 'Em breve vais receber participantes';
+
+  @override
+  String get srvBookingRequestExpired => 'O teu pedido de reserva expirou';
+
+  @override
+  String srvBookingRequestExpiredBody(String title) {
+    return '$title — o anfitrião não respondeu a tempo.';
+  }
+
+  @override
+  String get srvBookingHowWasIt => 'Como correu a tua experiência?';
+
+  @override
+  String srvBookingReviewIt(String title) {
+    return 'Avalia $title';
+  }
+
+  @override
+  String get srvBookingReviewGuest => 'Avalia o teu convidado';
+
+  @override
+  String srvBookingPayLink(String title) {
+    return '$title — paga ao anfitrião com o link de pagamento dele.';
+  }
+
+  @override
+  String srvBookingPayOnline(String title) {
+    return '$title — paga na app para receberes o bilhete.';
+  }
+
+  @override
+  String srvBookingPayCash(String title) {
+    return '$title — paga ao anfitrião em dinheiro quando se encontrarem.';
+  }
+
+  @override
+  String get srvHostReviewedYou => 'O teu anfitrião avaliou-te';
+
+  @override
+  String get srvHostReviewedYouBody =>
+      'Avalia a tua experiência para veres o que escreveu.';
+
+  @override
+  String get srvNewReviewFromHost => 'Tens uma nova avaliação de um anfitrião';
+
+  @override
+  String get srvGuestLeftReview => 'O teu convidado deixou uma avaliação';
+
+  @override
+  String get srvGuestLeftReviewBody =>
+      'Avalia o teu convidado para veres as duas avaliações.';
+
+  @override
+  String get srvSupportNewMessageOnTicket =>
+      'Nova mensagem num pedido de suporte';
+
+  @override
+  String get srvSupportUserSentMessage =>
+      'Um utilizador enviou uma nova mensagem.';
+
+  @override
+  String get srvVerificationResubmit => 'Envia uma nova foto de verificação.';
+
+  @override
+  String srvVerificationResubmitReason(String reason) {
+    return 'Envia uma nova foto de verificação. Motivo: $reason';
+  }
+
+  @override
+  String get srvVerificationRejected =>
+      'A tua verificação não foi aprovada. Tenta novamente.';
+
+  @override
+  String srvVerificationRejectedReason(String reason) {
+    return 'A tua verificação não foi aprovada. Motivo: $reason';
+  }
+
+  @override
+  String srvBundleNewMessages(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count novas mensagens',
+      one: '1 nova mensagem',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleLikes(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pessoas gostaram do teu perfil',
+      one: '1 pessoa gostou do teu perfil',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleProfileViews(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count visitas ao perfil',
+      one: '1 visita ao perfil',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleNewConnections(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count novas ligações',
+      one: '1 nova ligação',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleNotifications(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count notificações',
+      one: '1 notificação',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleNamesAndOthers(String names, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mais $count',
+      one: 'mais 1',
+    );
+    return '$names e $_temp0';
+  }
+
+  @override
+  String srvLevelUpTitle(int level) {
+    return 'Subiste de nível! Agora estás no nível $level!';
+  }
+
+  @override
+  String srvLevelUpBody(int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: 'Parabéns! Ganhaste $coins moedas.',
+      one: 'Parabéns! Ganhaste 1 moeda.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvAchievementUnlockedTitle(String achievement) {
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Primeira correspondência',
+        'social_butterfly': 'Borboleta social',
+        'popular': 'Popular',
+        'video_enthusiast': 'Entusiasta de vídeo',
+        'daily_streak_7': 'Sequência de 7 dias',
+        'daily_streak_30': 'Sequência de 30 dias',
+        'other': 'Nova conquista',
+      },
+    );
+    return 'Conquista desbloqueada: $_temp0!';
+  }
+
+  @override
+  String srvAchievementDescription(String achievement) {
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Faz a tua primeira ligação',
+        'social_butterfly': 'Envia 100 mensagens',
+        'popular': 'Faz 50 ligações',
+        'video_enthusiast': 'Conclui 10 videochamadas',
+        'daily_streak_7': 'Entra 7 dias seguidos',
+        'daily_streak_30': 'Entra 30 dias seguidos',
+        'other': 'Continua assim!',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvChallengeCompletedTitle(String challenge) {
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Iniciador de conversas',
+        'get_3_matches': 'Casamenteiro',
+        'complete_profile': 'Perfil perfeito',
+        'video_call_1': 'Cara a cara',
+        'other': 'Desafio diário',
+      },
+    );
+    return 'Desafio concluído: $_temp0!';
+  }
+
+  @override
+  String srvChallengeRewardsBody(int xp, int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: '$coins moedas',
+      one: '1 moeda',
+    );
+    return 'Recebe as tuas recompensas: $xp XP e $_temp0';
+  }
+
+  @override
+  String srvSentYouCoins(int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'enviou-te $amount moedas',
+      one: 'enviou-te 1 moeda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvMonthlyCoinsBodyFree(int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'Este mês recebeste $amount moedas com a tua subscrição gratuita.',
+      one: 'Este mês recebeste 1 moeda com a tua subscrição gratuita.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvMonthlyCoinsBodyTier(int amount, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'Este mês recebeste $amount moedas com a tua subscrição $tier.',
+      one: 'Este mês recebeste 1 moeda com a tua subscrição $tier.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvMembershipExpiringTitle => 'A subscrição expira em breve';
+
+  @override
+  String srvMembershipExpiringBody(String tier, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other:
+          'A tua subscrição $tier expira dentro de $days dias. Prolonga-a agora para manteres as funcionalidades premium!',
+      one:
+          'A tua subscrição $tier expira dentro de 1 dia. Prolonga-a agora para manteres as funcionalidades premium!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvMembershipExpiredTitle => 'Subscrição expirada';
+
+  @override
+  String get srvMembershipExpiredBody =>
+      'A tua subscrição expirou. Compra uma nova para recuperares as funcionalidades premium.';
+
+  @override
+  String get srvSubscriptionCancelledTitle => 'Subscrição cancelada';
+
+  @override
+  String get srvSubscriptionEndedBody =>
+      'A tua subscrição terminou. Podes voltar a subscrever quando quiseres na Loja.';
+
+  @override
+  String get srvPaymentFailedTitle => 'Falha no pagamento';
+
+  @override
+  String get srvSubscriptionPaymentFailedBody =>
+      'O pagamento da tua subscrição falhou. Atualiza o método de pagamento para manteres a subscrição ativa.';
+
+  @override
+  String get srvGiftFromGreenGo => 'Um presente da GreenGo';
+
+  @override
+  String get srvAccountNotApprovedTitle => 'Conta não aprovada';
+
+  @override
+  String srvAccountNotApprovedReason(String reason) {
+    return 'Não foi possível aprovar a tua conta. Motivo: $reason';
+  }
+
+  @override
+  String get srvAccountNotApprovedContactSupport =>
+      'Não foi possível aprovar a tua conta. Contacta o suporte.';
+
+  @override
+  String get srvEvent => 'Evento';
+
+  @override
+  String get srvNewEvent => 'Novo evento';
+
+  @override
+  String get srvEventStartingNow => 'está a começar — diverte-te!';
+
+  @override
+  String get srvEventStartsIn6h => 'começa dentro de cerca de 6 horas';
+
+  @override
+  String get srvEventIsTomorrow => 'é amanhã — até lá!';
+
+  @override
+  String get srvNewEventInYourCommunity => 'Novo evento na tua comunidade';
+
+  @override
+  String get srvEventCancelledInYourCommunity =>
+      'Evento cancelado na tua comunidade';
+
+  @override
+  String get srvEventUpdatedInYourCommunity =>
+      'Evento atualizado na tua comunidade';
+
+  @override
+  String srvEventHasBeenCancelled(String event) {
+    return '«$event» foi cancelado';
+  }
+
+  @override
+  String srvEventNewTime(String event) {
+    return 'Novo horário para «$event»';
+  }
+
+  @override
+  String srvEventNewLocation(String event) {
+    return 'Novo local para «$event»';
+  }
+
+  @override
+  String srvAnnouncementTitle(String name) {
+    return '📣 $name';
+  }
+
+  @override
+  String get srvAnnouncementACommunity => '📣 Uma comunidade';
+
+  @override
+  String get srvAnnouncementAnEvent => '📣 Anúncio do evento';
+
+  @override
+  String get srvReportReviewedTitle => 'A sua denúncia foi analisada';
+
+  @override
+  String get srvReportReviewedActionTaken =>
+      'Obrigado pela sua denúncia. A nossa equipa analisou-a e tomou medidas de acordo com as Diretrizes da Comunidade.';
+
+  @override
+  String get srvReportReviewedNoViolation =>
+      'Obrigado pela sua denúncia. A nossa equipa analisou-a e não encontrou violação das Diretrizes da Comunidade.';
+
+  @override
+  String get srvModerationDecisionTitle =>
+      'Uma decisão de moderação sobre a sua conta';
+
+  @override
+  String get srvModerationDecisionBody =>
+      'Tomámos medidas de acordo com as Diretrizes da Comunidade. Toque para ler os motivos e como recorrer.';
+
+  @override
+  String get srvNewMessage => 'Nova mensagem';
+
+  @override
+  String get srvGroupCreated => 'Grupo criado';
+
+  @override
+  String get srvYouWereAddedToGroup => 'Foste adicionado ao grupo';
+
+  @override
+  String srvGroupMembersJoined(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Entraram $count novos membros',
+      one: 'Entrou um novo membro',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvUnknownUser => 'Utilizador desconhecido';
+
+  @override
+  String srvCoinsReceivedBody(String name, int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: '$amount moedas',
+      one: '1 moeda',
+    );
+    return '$name enviou-te $_temp0!';
+  }
+
+  @override
+  String get srvNewEventFromFollowedBusiness =>
+      'Novo evento de um negócio que segues';
+
+  @override
+  String get srvMessageRemovedByModerator =>
+      'Esta mensagem foi removida por um moderador';
+
+  @override
+  String get srvSupportAiHandoff =>
+      'Percebo que queres falar com uma pessoa. Estou a ligar-te agora. Um membro da equipa de suporte vai responder em breve.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -45204,4 +45785,587 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get notifCoinsReceivedTitle => 'Você recebeu moedas!';
+
+  @override
+  String get srvSomeone => 'Alguém';
+
+  @override
+  String get srvJoinedYourCommunity => 'entrou na sua comunidade';
+
+  @override
+  String get srvJoinedYourEvent => 'vai ao seu evento';
+
+  @override
+  String get srvLikedYourEvent => 'curtiu seu evento';
+
+  @override
+  String get srvJoinedYourGroup => 'entrou no seu grupo';
+
+  @override
+  String get srvAddedYouToAGroup => 'adicionou você a um grupo';
+
+  @override
+  String get srvGroup => 'Grupo';
+
+  @override
+  String srvGroupMembersLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count membros saíram do grupo',
+      one: 'Um membro saiu do grupo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvTicketScanned => 'Seu ingresso foi escaneado';
+
+  @override
+  String get srvEventBoostLive => 'O impulso do seu evento está ativo';
+
+  @override
+  String get srvEventBoostEnded => 'O impulso do seu evento terminou';
+
+  @override
+  String get srvAddedYouAsCoOwnerOfEvent =>
+      'adicionou você como coorganizador de um evento';
+
+  @override
+  String get srvAnEvent => 'Um evento';
+
+  @override
+  String srvPaymentsWaitingCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pagamentos',
+      one: '1 pagamento',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvNewReview => 'Nova avaliação';
+
+  @override
+  String get srvMentionedYouInReviewReply =>
+      'mencionou você em uma resposta a uma avaliação';
+
+  @override
+  String get srvRepliedToYourReview => 'respondeu à sua avaliação';
+
+  @override
+  String get srvExperience => 'Experiência';
+
+  @override
+  String get srvBookingRequested => 'pediu para reservar sua experiência';
+
+  @override
+  String get srvBookingBooked => 'reservou sua experiência';
+
+  @override
+  String get srvBookingConfirmed => 'Reserva confirmada';
+
+  @override
+  String get srvBookingAccepted => 'aceitou seu pedido de reserva';
+
+  @override
+  String get srvBookingDeclined => 'recusou seu pedido de reserva';
+
+  @override
+  String get srvBookingCancelledTheirs => 'cancelou a reserva';
+
+  @override
+  String get srvBookingCancelledYours => 'cancelou sua reserva';
+
+  @override
+  String srvBookingRefundOwed(String title, int percent) {
+    return '$title — reembolso devido: $percent%.';
+  }
+
+  @override
+  String get srvBookingCheckedIn => 'Check-in feito';
+
+  @override
+  String get srvBookingCancelledByHost =>
+      'Sua reserva foi cancelada pelo anfitrião';
+
+  @override
+  String srvBookingCancelledByHostBody(String title) {
+    return '$title — o horário não está mais disponível. Qualquer pagamento será reembolsado.';
+  }
+
+  @override
+  String get srvBookingNoShow => 'marcou você como ausente';
+
+  @override
+  String srvBookingNoShowBody(String title, int hours) {
+    return '$title — você pode contestar em até $hours h após o fim.';
+  }
+
+  @override
+  String get srvBookingGuestSaysPaid => 'diz que pagou a reserva';
+
+  @override
+  String get srvBookingPaymentConfirmed => 'confirmou seu pagamento';
+
+  @override
+  String get srvBookingProblemReported => 'relatou um problema com a reserva';
+
+  @override
+  String get srvBookingReportReviewed => 'Sua denúncia foi analisada';
+
+  @override
+  String get srvBookingHostWarning => 'Aviso sobre uma das suas reservas';
+
+  @override
+  String get srvBookingReportReviewedHost =>
+      'Uma denúncia de reserva foi analisada';
+
+  @override
+  String srvBookingReviewedBody(String title) {
+    return '$title.';
+  }
+
+  @override
+  String srvBookingReviewedRefundBody(String title, int percent) {
+    return '$title. Reembolso devido: $percent%.';
+  }
+
+  @override
+  String get srvBookingCancelled => 'Sua reserva foi cancelada';
+
+  @override
+  String srvBookingNoLongerAvailable(String title) {
+    return '$title não está mais disponível.';
+  }
+
+  @override
+  String get srvBookingComingUp => 'Sua experiência está chegando';
+
+  @override
+  String get srvBookingHostingSoon => 'Em breve você vai receber participantes';
+
+  @override
+  String get srvBookingRequestExpired => 'Seu pedido de reserva expirou';
+
+  @override
+  String srvBookingRequestExpiredBody(String title) {
+    return '$title — o anfitrião não respondeu a tempo.';
+  }
+
+  @override
+  String get srvBookingHowWasIt => 'Como foi sua experiência?';
+
+  @override
+  String srvBookingReviewIt(String title) {
+    return 'Avalie $title';
+  }
+
+  @override
+  String get srvBookingReviewGuest => 'Avalie seu convidado';
+
+  @override
+  String srvBookingPayLink(String title) {
+    return '$title — pague o anfitrião pelo link de pagamento dele.';
+  }
+
+  @override
+  String srvBookingPayOnline(String title) {
+    return '$title — pague no app para receber seu ingresso.';
+  }
+
+  @override
+  String srvBookingPayCash(String title) {
+    return '$title — pague o anfitrião em dinheiro quando se encontrarem.';
+  }
+
+  @override
+  String get srvHostReviewedYou => 'Seu anfitrião avaliou você';
+
+  @override
+  String get srvHostReviewedYouBody =>
+      'Avalie sua experiência para ver o que ele escreveu.';
+
+  @override
+  String get srvNewReviewFromHost =>
+      'Você tem uma nova avaliação de um anfitrião';
+
+  @override
+  String get srvGuestLeftReview => 'Seu convidado deixou uma avaliação';
+
+  @override
+  String get srvGuestLeftReviewBody =>
+      'Avalie seu convidado para ver as duas avaliações.';
+
+  @override
+  String get srvSupportNewMessageOnTicket =>
+      'Nova mensagem em um chamado de suporte';
+
+  @override
+  String get srvSupportUserSentMessage =>
+      'Um usuário enviou uma nova mensagem.';
+
+  @override
+  String get srvVerificationResubmit => 'Envie uma nova foto de verificação.';
+
+  @override
+  String srvVerificationResubmitReason(String reason) {
+    return 'Envie uma nova foto de verificação. Motivo: $reason';
+  }
+
+  @override
+  String get srvVerificationRejected =>
+      'Sua verificação não foi aprovada. Tente novamente.';
+
+  @override
+  String srvVerificationRejectedReason(String reason) {
+    return 'Sua verificação não foi aprovada. Motivo: $reason';
+  }
+
+  @override
+  String srvBundleNewMessages(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count novas mensagens',
+      one: '1 nova mensagem',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleLikes(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pessoas curtiram seu perfil',
+      one: '1 pessoa curtiu seu perfil',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleProfileViews(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count visitas ao perfil',
+      one: '1 visita ao perfil',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleNewConnections(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count novas conexões',
+      one: '1 nova conexão',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleNotifications(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count notificações',
+      one: '1 notificação',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvBundleNamesAndOthers(String names, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'mais $count',
+      one: 'mais 1',
+    );
+    return '$names e $_temp0';
+  }
+
+  @override
+  String srvLevelUpTitle(int level) {
+    return 'Você subiu de nível! Agora está no nível $level!';
+  }
+
+  @override
+  String srvLevelUpBody(int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: 'Parabéns! Você ganhou $coins moedas.',
+      one: 'Parabéns! Você ganhou 1 moeda.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvAchievementUnlockedTitle(String achievement) {
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Primeiro match',
+        'social_butterfly': 'Borboleta social',
+        'popular': 'Popular',
+        'video_enthusiast': 'Entusiasta de vídeo',
+        'daily_streak_7': 'Sequência de 7 dias',
+        'daily_streak_30': 'Sequência de 30 dias',
+        'other': 'Nova conquista',
+      },
+    );
+    return 'Conquista desbloqueada: $_temp0!';
+  }
+
+  @override
+  String srvAchievementDescription(String achievement) {
+    String _temp0 = intl.Intl.selectLogic(
+      achievement,
+      {
+        'first_match': 'Faça sua primeira conexão',
+        'social_butterfly': 'Envie 100 mensagens',
+        'popular': 'Faça 50 conexões',
+        'video_enthusiast': 'Conclua 10 videochamadas',
+        'daily_streak_7': 'Entre 7 dias seguidos',
+        'daily_streak_30': 'Entre 30 dias seguidos',
+        'other': 'Continue assim!',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvChallengeCompletedTitle(String challenge) {
+    String _temp0 = intl.Intl.selectLogic(
+      challenge,
+      {
+        'send_5_messages': 'Iniciador de conversas',
+        'get_3_matches': 'Cupido',
+        'complete_profile': 'Perfil perfeito',
+        'video_call_1': 'Cara a cara',
+        'other': 'Desafio diário',
+      },
+    );
+    return 'Desafio concluído: $_temp0!';
+  }
+
+  @override
+  String srvChallengeRewardsBody(int xp, int coins) {
+    String _temp0 = intl.Intl.pluralLogic(
+      coins,
+      locale: localeName,
+      other: '$coins moedas',
+      one: '1 moeda',
+    );
+    return 'Resgate suas recompensas: $xp XP e $_temp0';
+  }
+
+  @override
+  String srvSentYouCoins(int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'enviou $amount moedas para você',
+      one: 'enviou 1 moeda para você',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvMonthlyCoinsBodyFree(int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other:
+          'Este mês você recebeu $amount moedas com sua assinatura gratuita.',
+      one: 'Este mês você recebeu 1 moeda com sua assinatura gratuita.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String srvMonthlyCoinsBodyTier(int amount, String tier) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: 'Este mês você recebeu $amount moedas com sua assinatura $tier.',
+      one: 'Este mês você recebeu 1 moeda com sua assinatura $tier.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvMembershipExpiringTitle => 'Sua assinatura expira em breve';
+
+  @override
+  String srvMembershipExpiringBody(String tier, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other:
+          'Sua assinatura $tier expira em $days dias. Renove agora para manter seus recursos premium!',
+      one:
+          'Sua assinatura $tier expira em 1 dia. Renove agora para manter seus recursos premium!',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvMembershipExpiredTitle => 'Assinatura expirada';
+
+  @override
+  String get srvMembershipExpiredBody =>
+      'Sua assinatura expirou. Compre uma nova para recuperar os recursos premium.';
+
+  @override
+  String get srvSubscriptionCancelledTitle => 'Assinatura cancelada';
+
+  @override
+  String get srvSubscriptionEndedBody =>
+      'Sua assinatura terminou. Você pode assinar de novo quando quiser na Loja.';
+
+  @override
+  String get srvPaymentFailedTitle => 'Falha no pagamento';
+
+  @override
+  String get srvSubscriptionPaymentFailedBody =>
+      'O pagamento da sua assinatura falhou. Atualize a forma de pagamento para manter sua assinatura ativa.';
+
+  @override
+  String get srvGiftFromGreenGo => 'Um presente da GreenGo';
+
+  @override
+  String get srvAccountNotApprovedTitle => 'Conta não aprovada';
+
+  @override
+  String srvAccountNotApprovedReason(String reason) {
+    return 'Não foi possível aprovar sua conta. Motivo: $reason';
+  }
+
+  @override
+  String get srvAccountNotApprovedContactSupport =>
+      'Não foi possível aprovar sua conta. Entre em contato com o suporte.';
+
+  @override
+  String get srvEvent => 'Evento';
+
+  @override
+  String get srvNewEvent => 'Novo evento';
+
+  @override
+  String get srvEventStartingNow => 'está começando — aproveite!';
+
+  @override
+  String get srvEventStartsIn6h => 'começa em cerca de 6 horas';
+
+  @override
+  String get srvEventIsTomorrow => 'é amanhã — até lá!';
+
+  @override
+  String get srvNewEventInYourCommunity => 'Novo evento na sua comunidade';
+
+  @override
+  String get srvEventCancelledInYourCommunity =>
+      'Evento cancelado na sua comunidade';
+
+  @override
+  String get srvEventUpdatedInYourCommunity =>
+      'Evento atualizado na sua comunidade';
+
+  @override
+  String srvEventHasBeenCancelled(String event) {
+    return '\"$event\" foi cancelado';
+  }
+
+  @override
+  String srvEventNewTime(String event) {
+    return 'Novo horário para \"$event\"';
+  }
+
+  @override
+  String srvEventNewLocation(String event) {
+    return 'Novo local para \"$event\"';
+  }
+
+  @override
+  String srvAnnouncementTitle(String name) {
+    return '📣 $name';
+  }
+
+  @override
+  String get srvAnnouncementACommunity => '📣 Uma comunidade';
+
+  @override
+  String get srvAnnouncementAnEvent => '📣 Anúncio do evento';
+
+  @override
+  String get srvReportReviewedTitle => 'Sua denúncia foi analisada';
+
+  @override
+  String get srvReportReviewedActionTaken =>
+      'Obrigado pela sua denúncia. Nossa equipe a analisou e tomou medidas de acordo com as Diretrizes da Comunidade.';
+
+  @override
+  String get srvReportReviewedNoViolation =>
+      'Obrigado pela sua denúncia. Nossa equipe a analisou e não encontrou violação das Diretrizes da Comunidade.';
+
+  @override
+  String get srvModerationDecisionTitle =>
+      'Uma decisão de moderação sobre sua conta';
+
+  @override
+  String get srvModerationDecisionBody =>
+      'Tomamos medidas de acordo com as Diretrizes da Comunidade. Toque para ler os motivos e como recorrer.';
+
+  @override
+  String get srvNewMessage => 'Nova mensagem';
+
+  @override
+  String get srvGroupCreated => 'Grupo criado';
+
+  @override
+  String get srvYouWereAddedToGroup => 'Você foi adicionado ao grupo';
+
+  @override
+  String srvGroupMembersJoined(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count novos membros entraram',
+      one: 'Um novo membro entrou',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get srvUnknownUser => 'Usuário desconhecido';
+
+  @override
+  String srvCoinsReceivedBody(String name, int amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      amount,
+      locale: localeName,
+      other: '$amount moedas',
+      one: '1 moeda',
+    );
+    return '$name te enviou $_temp0!';
+  }
+
+  @override
+  String get srvNewEventFromFollowedBusiness =>
+      'Novo evento de um negócio que você segue';
+
+  @override
+  String get srvMessageRemovedByModerator =>
+      'Esta mensagem foi removida por um moderador';
+
+  @override
+  String get srvSupportAiHandoff =>
+      'Entendo que você quer falar com uma pessoa. Estou conectando você agora. Alguém da equipe de suporte vai responder em breve.';
 }

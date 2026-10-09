@@ -15,6 +15,8 @@ import { brandPush } from '../notifications/brand';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { LText, lt, notifTextFields, rawText, render, t } from '../shared/i18n';
+import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
 
 const db = admin.firestore();
 const FCM_CHUNK = 500;
@@ -23,8 +25,8 @@ const HOUR = 60 * 60 * 1000;
 async function fanOutReminder(
   eventId: string,
   eventRef: admin.firestore.DocumentReference,
-  title: string,
-  body: string,
+  title: LText,
+  body: LText,
   flag: string,
   imageUrl?: string,
 ): Promise<void> {
@@ -46,27 +48,18 @@ async function fanOutReminder(
   const tokenDocs = await Promise.all(
     recipientIds.map((u) => db.collection('users').doc(u).get()),
   );
-  const tokens: string[] = [];
-  for (const td of tokenDocs) {
-    const t = td.data()?.fcmToken as string | undefined;
-    if (t) tokens.push(t);
-  }
-  for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-    const chunk = tokens.slice(i, i + FCM_CHUNK);
-    try {
-      await admin.messaging().sendEachForMulticast({
-        tokens: chunk,
-        notification: brandPush(`⏰ ${title}`, body, imageUrl),
-        data: dataPayload,
-        android: {
-          priority: 'high',
-          ...(imageUrl ? { notification: { imageUrl } } : {}),
-        },
-      });
-    } catch (err) {
-      console.error('Event reminder FCM failed', eventId, err);
-    }
-  }
+  await sendLocalizedMulticast(
+    pushRecipientsFromUserDocs(tokenDocs),
+    (locale) => ({
+      notification: brandPush(`⏰ ${render(locale, title)}`, render(locale, body), imageUrl),
+      data: dataPayload,
+      android: {
+        priority: 'high',
+        ...(imageUrl ? { notification: { imageUrl } } : {}),
+      },
+    }),
+    `Event reminder FCM ${eventId}`,
+  );
 
   // In-app docs (batched).
   let batch = db.batch();
@@ -76,9 +69,7 @@ async function fanOutReminder(
     batch.set(db.collection('notifications').doc(), {
       userId: uid,
       type: 'event_reminder',
-      title,
-      message: body,
-      body,
+      ...notifTextFields(title, body),
       data: dataPayload,
       isRead: false,
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -117,7 +108,8 @@ export const sendEventReminders = onSchedule(
       if (e.status !== 'published') continue;
       const startMs = (e.startDate as admin.firestore.Timestamp)?.toMillis?.();
       if (!startMs) continue;
-      const title = (e.title as string) || 'Event';
+      const rawTitle = ((e.title as string) || '').trim();
+      const title: LText = rawTitle ? rawText(rawTitle) : lt('srvEvent');
       // Show the event's own picture on the notification.
       const eventImage = (e.imageUrl as string) || undefined;
       const dt = startMs - nowMs; // ms until start (negative = already started)
@@ -125,13 +117,13 @@ export const sendEventReminders = onSchedule(
       try {
         if (dt <= 0 && dt > -HOUR && e.remindedStart !== true) {
           await fanOutReminder(doc.id, doc.ref, title,
-            'is starting now — enjoy!', 'remindedStart', eventImage);
+            lt('srvEventStartingNow'), 'remindedStart', eventImage);
         } else if (dt > 0 && dt <= 6 * HOUR && e.reminded6h !== true) {
           await fanOutReminder(doc.id, doc.ref, title,
-            'starts in about 6 hours', 'reminded6h', eventImage);
+            lt('srvEventStartsIn6h'), 'reminded6h', eventImage);
         } else if (dt > 6 * HOUR && dt <= 24 * HOUR && e.reminded24h !== true) {
           await fanOutReminder(doc.id, doc.ref, title,
-            'is tomorrow — see you there!', 'reminded24h', eventImage);
+            lt('srvEventIsTomorrow'), 'reminded24h', eventImage);
         }
       } catch (err) {
         console.error('sendEventReminders event failed', doc.id, err);

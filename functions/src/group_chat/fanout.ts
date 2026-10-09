@@ -26,6 +26,9 @@ import { filterUidsByPref } from '../notifications/prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { t } from '../shared/i18n';
+import { mediaLabel, truncatePreview } from '../shared/i18n/chatPreview';
+import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from '../notifications/localizedPush';
 
 const db = admin.firestore();
 
@@ -34,36 +37,20 @@ const THREADS_SUB = 'threads';
 const BATCH_LIMIT = 450;
 const FCM_CHUNK = 500;
 
-function previewFor(type: string, content: string): string {
-  switch (type) {
-    case 'image':
-      return '📷 Photo';
-    case 'video':
-      return '🎥 Video';
-    case 'gif':
-      return 'GIF';
-    case 'sticker':
-      return '✨ Sticker';
-    case 'voice_note':
-      return '🎤 Voice message';
-    case 'event':
-      return '📅 Event';
-    case 'location':
-      return '📍 Location';
-    case 'system':
-      return content;
-    default:
-      return content.length > 120 ? `${content.substring(0, 117)}...` : content;
-  }
+/** Preview line in [locale]: media label, or the (truncated) text itself. */
+function previewFor(locale: unknown, type: string, content: string): string {
+  if (type === 'system') return content;
+  return mediaLabel(locale, type) ?? truncatePreview(content);
 }
 
+/** Sender's display name, or '' when the profile has none (see srvSomeone). */
 async function senderDisplayName(senderId: string): Promise<string> {
   try {
     const doc = await db.collection('profiles').doc(senderId).get();
     const d = doc.data();
-    return (d?.nickname as string) || (d?.name as string) || 'Someone';
+    return (d?.nickname as string) || (d?.name as string) || '';
   } catch {
-    return 'Someone';
+    return '';
   }
 }
 
@@ -96,7 +83,20 @@ export const onGroupMessageCreated = onDocumentCreated(
 
     const groupName = group.groupInfo?.name || 'Group';
     const groupPhoto = group.groupInfo?.photoUrl ?? null;
-    const preview = previewFor(type, content);
+    // Stored previews are English (app versions without key support); the
+    // app re-renders media types from `lastMessageType` and server-written
+    // system lines from `lastMessageKey` / `lastMessageParams`.
+    const preview = previewFor('en', type, content);
+    const meta = (msg.metadata || {}) as Record<string, unknown>;
+    const systemKey =
+      isSystem && typeof meta.systemKey === 'string' ? (meta.systemKey as string) : '';
+    const systemParams = (meta.systemParams ?? {}) as Record<string, unknown>;
+    const keyFields: Record<string, unknown> = systemKey
+      ? { lastMessageKey: systemKey, lastMessageParams: systemParams }
+      : {
+          lastMessageKey: admin.firestore.FieldValue.delete(),
+          lastMessageParams: admin.firestore.FieldValue.delete(),
+        };
 
     // 1) Denormalize last message onto the group doc.
     await groupRef.set(
@@ -107,6 +107,7 @@ export const onGroupMessageCreated = onDocumentCreated(
           content: preview,
           type,
           sentAt,
+          ...(systemKey ? { metadata: { systemKey, systemParams } } : {}),
         },
         lastMessageAt: sentAt,
       },
@@ -130,6 +131,8 @@ export const onGroupMessageCreated = onDocumentCreated(
         photoUrl: groupPhoto,
         isGroup: true,
         lastMessagePreview: preview,
+        lastMessageType: type,
+        ...keyFields,
         lastSenderId: senderId,
         lastMessageAt: sentAt,
         updatedAt: sentAt,
@@ -179,22 +182,21 @@ export const onGroupMessageCreated = onDocumentCreated(
     const tokenDocs = await Promise.all(
       prefRecipients.map((u) => db.collection('users').doc(u).get())
     );
-    const tokens: string[] = [];
-    for (const td of tokenDocs) {
-      const t = td.data()?.fcmToken as string | undefined;
-      if (t) tokens.push(t);
-    }
-    if (tokens.length === 0) return;
+    const recipients = pushRecipientsFromUserDocs(tokenDocs);
+    if (recipients.length === 0) return;
 
-    for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-      const chunk = tokens.slice(i, i + FCM_CHUNK);
-      try {
-        await admin.messaging().sendEachForMulticast({
-          tokens: chunk,
+    // One multicast per recipient language (media labels / "Someone").
+    await sendLocalizedMulticast(
+      recipients,
+      (locale) => ({
           // Title = the sender's name, body = the message (same as 1:1;
           // product decision 2026-10-03). Android tag / iOS collapse id keep
           // one entry per group in the tray.
-          notification: messagePush(senderName, preview, groupPhoto ?? undefined),
+          notification: messagePush(
+            senderName || t(locale, 'srvSomeone'),
+            previewFor(locale, type, content),
+            groupPhoto ?? undefined,
+          ),
           data: {
             type: 'group_message',
             groupId,
@@ -223,11 +225,8 @@ export const onGroupMessageCreated = onDocumentCreated(
               },
             },
           },
-        });
-      } catch (e) {
-        // Best-effort: never fail the trigger on notification errors.
-        console.error('Group FCM multicast failed', e);
-      }
-    }
+      }),
+      'Group FCM',
+    );
   })
 );

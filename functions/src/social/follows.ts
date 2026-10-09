@@ -38,6 +38,7 @@ import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import { resolveActor, emitNotification } from '../notifications/notifyHelpers';
 import '../shared/firebaseAdmin';
+import { lt } from '../shared/i18n';
 import {
   FollowCounterDeps,
   countEdge as coreCountEdge,
@@ -139,8 +140,8 @@ export const onUserFollowCreated = onDocumentCreated(
     await emitNotification({
       recipientId: followeeId,
       type: 'new_follower',
-      title: 'started following you',
-      body: 'Tap to see their profile',
+      title: lt('notifServerStartedFollowingYou'),
+      body: lt('notifServerTapToSeeTheirProfile'),
       data: {
         type: 'new_follower',
         action: 'open_profile',

@@ -20,6 +20,7 @@ import { setAdmin2faClaim } from './adminClaims';
 import { scrubPII, redact } from '../shared/redact';
 import { applyProfileAgeGate } from '../auth/ageGate';
 import { hasWithdrawnAiConsent } from '../shared/aiConsent';
+import { t } from '../shared/i18n';
 
 const db = admin.firestore();
 const auth = admin.auth();
@@ -677,7 +678,9 @@ export const processAISupportMessage = functions
           senderId: 'ai-agent',
           senderType: 'admin',
           senderName: aiSettings.agentName || 'Support Assistant',
-          content: "I understand you'd like to speak with a human agent. I'm connecting you now. A support team member will respond shortly.",
+          // English fallback + key (the app renders it in the user's language).
+          content: t('en', 'srvSupportAiHandoff'),
+          metadata: { systemKey: 'srvSupportAiHandoff' },
           messageType: 'text',
           readByAdmin: true,
           readByUser: false,

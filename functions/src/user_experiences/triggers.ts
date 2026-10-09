@@ -34,6 +34,7 @@ import {
 import * as admin from 'firebase-admin';
 import '../shared/firebaseAdmin';
 import { emitNotification, resolveActor } from '../notifications/notifyHelpers';
+import { lt, rawText } from '../shared/i18n';
 import {
   experienceModerationPatch,
   moderateCommentText,
@@ -248,8 +249,8 @@ export const onExperienceReviewWritten = onDocumentWritten(
           await emitNotification({
             recipientId: hostId,
             type: 'experience_review',
-            title: 'reviewed your experience',
-            body: snippet(exp.data()?.title) || 'New review',
+            title: lt('notifServerReviewedYourExperience'),
+            body: snippet(exp.data()?.title) ? rawText(snippet(exp.data()?.title)) : lt('srvNewReview'),
             data: {
               action: 'experience',
               experienceId,
@@ -312,13 +313,13 @@ export const onExperienceReplyCreated = onDocumentCreated(
         db.collection(EXPERIENCES).doc(experienceId).get(),
       ]);
       const title = snippet(exp.data()?.title, 60);
-      const body = snippet(reply.text) || title;
+      const body = rawText(snippet(reply.text) || title);
       await Promise.all(recipients.map((r) => emitNotification({
         recipientId: r.uid,
         type: r.type,
         title: r.type === 'experience_mention'
-          ? 'mentioned you in a review reply'
-          : 'replied to your review',
+          ? lt('srvMentionedYouInReviewReply')
+          : lt('srvRepliedToYourReview'),
         body,
         data: {
           action: 'experience',

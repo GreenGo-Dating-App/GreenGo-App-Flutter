@@ -27,6 +27,9 @@ import { shouldNotify, categoryForType } from './prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { renderStoredText } from '../shared/i18n';
+import { resolveLocale } from '../shared/i18n/recipientLocale';
+import { clientWrittenText } from '../shared/i18n/clientWritten';
 
 const db = admin.firestore();
 
@@ -74,11 +77,6 @@ export const onNotificationCreatedPush = onDocumentCreated(
       '';
     if (!userId) return;
 
-    const title = (doc.title as string) || '';
-    const body =
-      (doc.message as string) ||
-      (doc.body as string) ||
-      '';
     const type = (doc.type as string) || 'notification';
 
     // Chat messages are pushed by their own triggers (onNewMessagePush,
@@ -97,16 +95,7 @@ export const onNotificationCreatedPush = onDocumentCreated(
 
     const data = stringifyData(doc.data, type);
     const imageUrl = (doc.imageUrl as string) || undefined;
-
-    // Actor attribution — the in-app tile prepends the actor's name bold, but a
-    // raw FCM push has no such rendering. So bake the actor name into the PUSH
-    // title here (mirrors emitNotification/social, which push `${name} ${title}`)
-    // so every actor-attributed notification's push ALSO names who acted.
     const actorName = (doc.actorName as string)?.trim() || '';
-    const pushTitle =
-      actorName && !title.startsWith(actorName)
-        ? `${actorName} ${title}`.trim()
-        : title;
 
     // Respect the user's per-category notification preference. If they disabled
     // this category (or push), keep the in-app feed doc but skip the push and
@@ -122,9 +111,24 @@ export const onNotificationCreatedPush = onDocumentCreated(
 
     // Best-effort push — never throw out of the trigger.
     try {
-      const userSnap = await db.collection('users').doc(userId).get();
-      const token = userSnap.data()?.fcmToken as string | undefined;
+      const userData = (await db.collection('users').doc(userId).get()).data() || null;
+      const token = userData?.fcmToken as string | undefined;
       if (token) {
+        // Docs written with `titleKey` / `bodyKey` + `params` are rendered in
+        // the RECIPIENT's language; older docs push their stored text.
+        const locale = await resolveLocale(userId, { userData });
+        // App-written cross-user docs (photo like, coin gift, Priority
+        // Connect, business verified) name the person in the body already.
+        const relayed = clientWrittenText(locale, doc);
+        const { title, body } = relayed ?? renderStoredText(locale, doc);
+        // Actor attribution — the in-app tile prepends the actor's name bold,
+        // but a raw FCM push has no such rendering. So bake the actor name into
+        // the PUSH title (mirrors emitNotification, which pushes
+        // `${name} ${title}`) so every actor-attributed push names who acted.
+        const pushTitle =
+          actorName && !relayed && !title.startsWith(actorName)
+            ? `${actorName} ${title}`.trim()
+            : title;
         await admin.messaging().send({
           token,
           notification: brandPush(pushTitle, body, imageUrl),

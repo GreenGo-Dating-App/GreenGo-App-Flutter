@@ -11,6 +11,8 @@ import { brandPush } from '../notifications/brand';
 import { SubscriptionTier, ApprovalStatus } from '../shared/types';
 import { monitored } from '../shared/monitoring';
 import { filterUidsByPref } from '../notifications/prefs';
+import { lt, notifTextFields, t } from '../shared/i18n';
+import { localeFromUserData, resolveLocale } from '../shared/i18n/recipientLocale';
 
 // MVP Release Dates
 const PREMIUM_ACCESS_DATE = new Date('2026-03-01T00:00:00Z'); // March 1st, 2026
@@ -332,7 +334,7 @@ export const approveUser = onCall<ApproveUserRequest>(
 
       // Send notification if requested
       if (notify) {
-        const userLang = userData.preferredLanguage || 'en';
+        const userLang = localeFromUserData(userData);
         const messages = BROADCAST_MESSAGES.accountApproved;
         const message = messages[userLang] || messages.en;
 
@@ -404,8 +406,10 @@ export const rejectUser = onCall<RejectUserRequest>(
         await db.collection('notifications').add({
           userId,
           type: 'account_rejected',
-          title: 'Account Not Approved',
-          body: `Your account could not be approved. Reason: ${reason}`,
+          ...notifTextFields(
+            lt('srvAccountNotApprovedTitle'),
+            lt('srvAccountNotApprovedReason', { reason: String(reason ?? '') }),
+          ),
           read: false,
           sent: false,
           // This handler sends its own push below — skip the parity trigger.
@@ -414,11 +418,12 @@ export const rejectUser = onCall<RejectUserRequest>(
         });
 
         if (userData.fcmToken) {
+          const locale = await resolveLocale(userId, { userData });
           await admin.messaging().send({
             token: userData.fcmToken,
             notification: {
-              title: 'Account Not Approved',
-              body: `Your account could not be approved. Please contact support.`,
+              title: t(locale, 'srvAccountNotApprovedTitle'),
+              body: t(locale, 'srvAccountNotApprovedContactSupport'),
             },
             data: {
               type: 'account_rejected',
@@ -576,7 +581,7 @@ export const bulkApproveUsers = onCall<{ userIds: string[]; notify?: boolean }>(
 
           // Queue notification
           if (notify && userData.fcmToken) {
-            const userLang = userData.preferredLanguage || 'en';
+            const userLang = localeFromUserData(userData);
             const messages = BROADCAST_MESSAGES.accountApproved;
             const message = messages[userLang] || messages.en;
 
@@ -700,7 +705,7 @@ export const sendBroadcastNotification = onCall<BroadcastNotificationRequest>(
             continue;
           }
 
-          const userLang = userData.preferredLanguage || 'en';
+          const userLang = localeFromUserData(userData);
           let title: string;
           let body: string;
 

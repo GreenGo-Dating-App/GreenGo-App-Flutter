@@ -24,6 +24,20 @@ class LanguageProvider extends ChangeNotifier {
 
   Locale get currentLocale => _currentLocale;
 
+  /// [activeLocale] as a stored language code (`en`, `pt_BR`), English when
+  /// no provider exists yet.
+  static String get activeLanguageCode => codeOf(activeLocale ?? const Locale('en'));
+
+  /// `pt_BR` / `de` form of [locale].
+  static String codeOf(Locale locale) =>
+      (locale.countryCode != null && locale.countryCode!.isNotEmpty)
+          ? '${locale.languageCode}_${locale.countryCode}'
+          : locale.languageCode;
+
+  /// Field on users/{uid} the Cloud Functions read to localize pushes and
+  /// email subjects for this user (private doc, owner-writable).
+  static const String serverLanguageField = 'appLanguage';
+
   /// The language the user has picked, read straight from the local cache.
   ///
   /// For code with no BuildContext (data sources, background work) that still
@@ -119,6 +133,11 @@ class LanguageProvider extends ChangeNotifier {
             .collection('userSettings')
             .doc(user.uid)
             .set({'language': languageCode}, SetOptions(merge: true));
+        // Server-rendered texts (pushes, email subjects) follow the app language.
+        await FirebaseFirestore.instance
+            .collection('users')
+            .doc(user.uid)
+            .set({serverLanguageField: languageCode}, SetOptions(merge: true));
       }
     } catch (e) {
       debugPrint('Failed to save language to database: $e');

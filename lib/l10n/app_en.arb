@@ -11988,5 +11988,412 @@
       }
     }
   },
-  "notifCoinsReceivedTitle": "You received coins!"
+  "notifCoinsReceivedTitle": "You received coins!",
+  "srvSomeone": "Someone",
+  "srvJoinedYourCommunity": "joined your community",
+  "srvJoinedYourEvent": "joined your event",
+  "srvLikedYourEvent": "liked your event",
+  "srvJoinedYourGroup": "joined your group",
+  "srvAddedYouToAGroup": "added you to a group",
+  "srvGroup": "Group",
+  "srvGroupMembersLeft": "{count, plural, =1{A member left the group} other{{count} members left the group}}",
+  "@srvGroupMembersLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvTicketScanned": "Your ticket was scanned",
+  "srvEventBoostLive": "Your event boost is now live",
+  "srvEventBoostEnded": "Your event boost has ended",
+  "srvAddedYouAsCoOwnerOfEvent": "added you as a co-owner of an event",
+  "srvAnEvent": "An event",
+  "srvPaymentsWaitingCount": "{count, plural, =1{1 payment} other{{count} payments}}",
+  "@srvPaymentsWaitingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvNewReview": "New review",
+  "srvMentionedYouInReviewReply": "mentioned you in a review reply",
+  "srvRepliedToYourReview": "replied to your review",
+  "srvExperience": "Experience",
+  "srvBookingRequested": "requested to book your experience",
+  "srvBookingBooked": "booked your experience",
+  "srvBookingConfirmed": "Booking confirmed",
+  "srvBookingAccepted": "accepted your booking request",
+  "srvBookingDeclined": "declined your booking request",
+  "srvBookingCancelledTheirs": "cancelled their booking",
+  "srvBookingCancelledYours": "cancelled your booking",
+  "srvBookingRefundOwed": "{title} — refund owed: {percent}%.",
+  "@srvBookingRefundOwed": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBookingCheckedIn": "You are checked in",
+  "srvBookingCancelledByHost": "Your booking was cancelled by the host",
+  "srvBookingCancelledByHostBody": "{title} — the time is no longer available. Any payment is refunded.",
+  "@srvBookingCancelledByHostBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBookingNoShow": "marked you as a no-show",
+  "srvBookingNoShowBody": "{title} — you can contest this within {hours} h of the end.",
+  "@srvBookingNoShowBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBookingGuestSaysPaid": "says they paid for their booking",
+  "srvBookingPaymentConfirmed": "confirmed your payment",
+  "srvBookingProblemReported": "reported a problem with their booking",
+  "srvBookingReportReviewed": "Your report was reviewed",
+  "srvBookingHostWarning": "Warning about one of your bookings",
+  "srvBookingReportReviewedHost": "A booking report was reviewed",
+  "srvBookingReviewedBody": "{title}.",
+  "@srvBookingReviewedBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBookingReviewedRefundBody": "{title}. Refund owed: {percent}%.",
+  "@srvBookingReviewedRefundBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBookingCancelled": "Your booking was cancelled",
+  "srvBookingNoLongerAvailable": "{title} is no longer available.",
+  "@srvBookingNoLongerAvailable": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBookingComingUp": "Your experience is coming up",
+  "srvBookingHostingSoon": "You are hosting soon",
+  "srvBookingRequestExpired": "Your booking request expired",
+  "srvBookingRequestExpiredBody": "{title} — the host did not answer in time.",
+  "@srvBookingRequestExpiredBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBookingHowWasIt": "How was your experience?",
+  "srvBookingReviewIt": "Review {title}",
+  "@srvBookingReviewIt": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBookingReviewGuest": "Review your guest",
+  "srvBookingPayLink": "{title} — pay the host with their payment link.",
+  "@srvBookingPayLink": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBookingPayOnline": "{title} — pay in the app to get your ticket.",
+  "@srvBookingPayOnline": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBookingPayCash": "{title} — pay the host in cash when you meet.",
+  "@srvBookingPayCash": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "srvHostReviewedYou": "Your host reviewed you",
+  "srvHostReviewedYouBody": "Review your experience to see what they said.",
+  "srvNewReviewFromHost": "You have a new review from a host",
+  "srvGuestLeftReview": "Your guest left a review",
+  "srvGuestLeftReviewBody": "Review your guest to reveal both reviews.",
+  "srvSupportNewMessageOnTicket": "New message on support ticket",
+  "srvSupportUserSentMessage": "A user sent a new message.",
+  "srvVerificationResubmit": "Please submit a new verification photo.",
+  "srvVerificationResubmitReason": "Please submit a new verification photo. Reason: {reason}",
+  "@srvVerificationResubmitReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "srvVerificationRejected": "Your verification was not approved. Please try again.",
+  "srvVerificationRejectedReason": "Your verification was not approved. Reason: {reason}",
+  "@srvVerificationRejectedReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "srvBundleNewMessages": "{count, plural, =1{1 new message} other{{count} new messages}}",
+  "@srvBundleNewMessages": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBundleLikes": "{count, plural, =1{1 person liked your profile} other{{count} people liked your profile}}",
+  "@srvBundleLikes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBundleProfileViews": "{count, plural, =1{1 profile view} other{{count} profile views}}",
+  "@srvBundleProfileViews": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBundleNewConnections": "{count, plural, =1{1 new connection} other{{count} new connections}}",
+  "@srvBundleNewConnections": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBundleNotifications": "{count, plural, =1{1 notification} other{{count} notifications}}",
+  "@srvBundleNotifications": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvBundleNamesAndOthers": "{names} and {count, plural, =1{1 other} other{{count} others}}",
+  "@srvBundleNamesAndOthers": {
+    "placeholders": {
+      "names": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvLevelUpTitle": "Level Up! You're now level {level}!",
+  "@srvLevelUpTitle": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "srvLevelUpBody": "{coins, plural, =1{Congratulations! You've earned 1 coin.} other{Congratulations! You've earned {coins} coins.}}",
+  "@srvLevelUpBody": {
+    "placeholders": {
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "srvAchievementUnlockedTitle": "Achievement Unlocked: {achievement, select, first_match{First Match} social_butterfly{Social Butterfly} popular{Popular} video_enthusiast{Video Enthusiast} daily_streak_7{7-Day Streak} daily_streak_30{30-Day Streak} other{New achievement}}!",
+  "@srvAchievementUnlockedTitle": {
+    "placeholders": {
+      "achievement": {
+        "type": "String"
+      }
+    }
+  },
+  "srvAchievementDescription": "{achievement, select, first_match{Make your first connection} social_butterfly{Send 100 messages} popular{Make 50 connections} video_enthusiast{Complete 10 video calls} daily_streak_7{Log in 7 days in a row} daily_streak_30{Log in 30 days in a row} other{Keep it up!}}",
+  "@srvAchievementDescription": {
+    "placeholders": {
+      "achievement": {
+        "type": "String"
+      }
+    }
+  },
+  "srvChallengeCompletedTitle": "Challenge Completed: {challenge, select, send_5_messages{Conversation Starter} get_3_matches{Match Maker} complete_profile{Profile Perfectionist} video_call_1{Face to Face} other{Daily challenge}}!",
+  "@srvChallengeCompletedTitle": {
+    "placeholders": {
+      "challenge": {
+        "type": "String"
+      }
+    }
+  },
+  "srvChallengeRewardsBody": "Claim your rewards: {xp} XP and {coins, plural, =1{1 coin} other{{coins} coins}}",
+  "@srvChallengeRewardsBody": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      },
+      "coins": {
+        "type": "int"
+      }
+    }
+  },
+  "srvSentYouCoins": "{amount, plural, =1{sent you 1 coin} other{sent you {amount} coins}}",
+  "@srvSentYouCoins": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "srvMonthlyCoinsBodyFree": "{amount, plural, =1{You received 1 coin with your free membership this month.} other{You received {amount} coins with your free membership this month.}}",
+  "@srvMonthlyCoinsBodyFree": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "srvMonthlyCoinsBodyTier": "{amount, plural, =1{You received 1 coin with your {tier} membership this month.} other{You received {amount} coins with your {tier} membership this month.}}",
+  "@srvMonthlyCoinsBodyTier": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "srvMembershipExpiringTitle": "Membership expiring soon",
+  "srvMembershipExpiringBody": "{days, plural, =1{Your {tier} membership expires in 1 day. Extend now to keep your premium features!} other{Your {tier} membership expires in {days} days. Extend now to keep your premium features!}}",
+  "@srvMembershipExpiringBody": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "srvMembershipExpiredTitle": "Membership expired",
+  "srvMembershipExpiredBody": "Your membership has expired. Purchase a new membership to restore premium features.",
+  "srvSubscriptionCancelledTitle": "Subscription cancelled",
+  "srvSubscriptionEndedBody": "Your membership has ended. You can resubscribe anytime from the Shop.",
+  "srvPaymentFailedTitle": "Payment failed",
+  "srvSubscriptionPaymentFailedBody": "Your subscription payment failed. Please update your payment method to keep your membership active.",
+  "srvGiftFromGreenGo": "A gift from GreenGo",
+  "srvAccountNotApprovedTitle": "Account not approved",
+  "srvAccountNotApprovedReason": "Your account could not be approved. Reason: {reason}",
+  "@srvAccountNotApprovedReason": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "srvAccountNotApprovedContactSupport": "Your account could not be approved. Please contact support.",
+  "srvEvent": "Event",
+  "srvNewEvent": "New event",
+  "srvEventStartingNow": "is starting now — enjoy!",
+  "srvEventStartsIn6h": "starts in about 6 hours",
+  "srvEventIsTomorrow": "is tomorrow — see you there!",
+  "srvNewEventInYourCommunity": "New event in your community",
+  "srvEventCancelledInYourCommunity": "Event cancelled in your community",
+  "srvEventUpdatedInYourCommunity": "Event updated in your community",
+  "srvEventHasBeenCancelled": "\"{event}\" has been cancelled",
+  "@srvEventHasBeenCancelled": {
+    "placeholders": {
+      "event": {
+        "type": "String"
+      }
+    }
+  },
+  "srvEventNewTime": "New time for \"{event}\"",
+  "@srvEventNewTime": {
+    "placeholders": {
+      "event": {
+        "type": "String"
+      }
+    }
+  },
+  "srvEventNewLocation": "New location for \"{event}\"",
+  "@srvEventNewLocation": {
+    "placeholders": {
+      "event": {
+        "type": "String"
+      }
+    }
+  },
+  "srvAnnouncementTitle": "📣 {name}",
+  "@srvAnnouncementTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "srvAnnouncementACommunity": "📣 A community",
+  "srvAnnouncementAnEvent": "📣 Event announcement",
+  "srvReportReviewedTitle": "Your report was reviewed",
+  "srvReportReviewedActionTaken": "Thank you for your report. Our team reviewed it and took action under our Community Guidelines.",
+  "srvReportReviewedNoViolation": "Thank you for your report. Our team reviewed it and found no violation of our Community Guidelines.",
+  "srvModerationDecisionTitle": "A moderation decision about your account",
+  "srvModerationDecisionBody": "We took action under our Community Guidelines. Tap to read the reasons and how to appeal.",
+  "srvNewMessage": "New message",
+  "srvGroupCreated": "Group created",
+  "srvYouWereAddedToGroup": "You were added to the group",
+  "srvGroupMembersJoined": "{count, plural, =1{A new member joined} other{{count} new members joined}}",
+  "@srvGroupMembersJoined": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "srvUnknownUser": "Unknown user",
+  "srvCoinsReceivedBody": "{name} sent you {amount, plural, =1{1 coin} other{{amount} coins}}!",
+  "@srvCoinsReceivedBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "srvNewEventFromFollowedBusiness": "New event from a business you follow",
+  "srvMessageRemovedByModerator": "This message was removed by a moderator",
+  "srvSupportAiHandoff": "I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly."
 }

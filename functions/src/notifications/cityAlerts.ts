@@ -18,6 +18,8 @@ import { brandPush } from './brand';
 import { filterUidsByPref } from './prefs';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { lt, notifTextFields, rawText, render } from '../shared/i18n';
+import { pushRecipientsFromUserDocs, sendLocalizedMulticast } from './localizedPush';
 
 const db = admin.firestore();
 
@@ -109,8 +111,9 @@ async function notifyCity(
     .doc(cityKey)
     .collection('subscribers');
 
-  const title = `New event in ${opts.cityDisplay}`;
-  const body = opts.eventTitle;
+  const title = lt('notifServerNewEventIn', { name: opts.cityDisplay });
+  const body = opts.eventTitle ? rawText(opts.eventTitle) : lt('srvNewEvent');
+  const textFields = notifTextFields(title, body);
   const data = { action: 'event', eventId: opts.eventId, city: cityKey };
 
   let last: admin.firestore.QueryDocumentSnapshot | undefined;
@@ -138,9 +141,7 @@ async function notifyCity(
       batch.set(db.collection('notifications').doc(), {
         userId: uid,
         type: 'city_event',
-        title,
-        message: body,
-        body,
+        ...textFields,
         data,
         isRead: false,
         pushSent: true, // we push below; keep the parity trigger off this doc
@@ -153,17 +154,10 @@ async function notifyCity(
     const userDocs = await Promise.all(
       recipients.map((u) => db.collection('users').doc(u).get()),
     );
-    const tokens: string[] = [];
-    for (const ud of userDocs) {
-      const t = ud.data()?.fcmToken as string | undefined;
-      if (t) tokens.push(t);
-    }
-    for (let i = 0; i < tokens.length; i += FCM_CHUNK) {
-      const chunk = tokens.slice(i, i + FCM_CHUNK);
-      try {
-        await admin.messaging().sendEachForMulticast({
-          tokens: chunk,
-          notification: brandPush(title, body, opts.imageUrl),
+    await sendLocalizedMulticast(
+      pushRecipientsFromUserDocs(userDocs),
+      (locale) => ({
+          notification: brandPush(render(locale, title), render(locale, body), opts.imageUrl),
           data,
           android: {
             priority: 'high',
@@ -175,11 +169,9 @@ async function notifyCity(
             },
           },
           apns: { payload: { aps: { sound: 'default', badge: 1 } } },
-        });
-      } catch (e) {
-        console.error('notifyCity push failed', cityKey, e);
-      }
-    }
+      }),
+      `notifyCity push ${cityKey}`,
+    );
   }
 }
 
@@ -250,7 +242,7 @@ export const onEventCityAlert = onDocumentWritten(
 
     await notifyCity(cityKey, {
       eventId: event.params.eventId as string,
-      eventTitle: (after.title as string) || 'New event',
+      eventTitle: ((after.title as string) || '').trim(),
       cityDisplay: displayCity(cityKey),
       imageUrl: (after.imageUrl as string) || (after.coverImage as string),
       exclude,

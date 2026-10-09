@@ -21,6 +21,7 @@ import {
   velocityRef,
 } from './ledger';
 import { escrowRefundUpdate } from './gifts';
+import { lt, notifTextFields, rawText, t } from '../shared/i18n';
 
 export { spendCoins } from './spendCoins';
 export { sendGift, acceptGift } from './gifts';
@@ -585,19 +586,18 @@ export const giftCoins = onCall<GiftCoinsRequest>(
           (senderProfile.displayName as string) ||
           (senderProfile.nickname as string) ||
           (senderProfile.name as string) ||
-          'Someone';
+          t('en', 'srvSomeone');
         const senderPhoto =
           (senderProfile.profilePhotoUrl as string) ||
           (Array.isArray(senderProfile.photos) ? (senderProfile.photos[0] as string) : undefined) ||
           (Array.isArray(senderProfile.photoUrls) ? (senderProfile.photoUrls[0] as string) : undefined);
-        const title = `sent you ${amount} coins`;
-        const body = message && message.trim().length > 0 ? `"${message.trim()}"` : title;
+        const title = lt('srvSentYouCoins', { amount: Number(amount) || 0 });
+        const body = message && message.trim().length > 0 ? rawText(`"${message.trim()}"`) : title;
         await db.collection('notifications').add({
           userId: receiverId,
           type: 'coins_gift',
-          title, // action phrase WITHOUT the name (tile prepends actorName)
-          message: body,
-          body,
+          // action phrase WITHOUT the name (tile prepends actorName)
+          ...notifTextFields(title, body),
           isRead: false,
           createdAt: admin.firestore.FieldValue.serverTimestamp(),
           actorId: senderId,

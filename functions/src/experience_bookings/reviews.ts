@@ -34,6 +34,7 @@ import {
   guestRatingDelta,
 } from './model';
 import { bookingDeps, loadConfig, msOf } from './service';
+import { lt, rawText } from '../shared/i18n';
 
 const fdb = () => bookingDeps.db();
 const nowMs = () => bookingDeps.now().getTime();
@@ -129,7 +130,7 @@ export async function handleGuestReviewWrite(
       if (fresh?.status === 'held') {
         await notifySafe({
           recipientId: after.guestId, type: 'guest_review_waiting',
-          title: 'Your host reviewed you', body: 'Review your experience to see what they said.',
+          title: lt('srvHostReviewedYou'), body: lt('srvHostReviewedYouBody'),
           data: { action: 'booking', bookingId, experienceId: String(after.experienceId || '') },
         });
       }
@@ -153,7 +154,8 @@ export async function handleGuestReviewWrite(
   if (after?.status === 'visible' && before?.status !== 'visible') {
     await notifySafe({
       recipientId: after.guestId, type: 'guest_review_published',
-      title: 'You have a new review from a host', body: typeof after.comment === 'string' ? after.comment.slice(0, 120) : '',
+      title: lt('srvNewReviewFromHost'),
+      body: rawText(typeof after.comment === 'string' ? after.comment.slice(0, 120) : ''),
       data: { action: 'guest_review', bookingId },
     });
   }
@@ -185,7 +187,7 @@ export async function handlePendingReviewCreated(
     if (b?.hostId) {
       await notifySafe({
         recipientId: b.hostId, type: 'booking_review_waiting',
-        title: 'Your guest left a review', body: 'Review your guest to reveal both reviews.',
+        title: lt('srvGuestLeftReview'), body: lt('srvGuestLeftReviewBody'),
         data: { action: 'booking', bookingId, experienceId },
       });
     }

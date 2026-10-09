@@ -20,6 +20,7 @@ import { HttpsError, FunctionsErrorCode } from 'firebase-functions/v2/https';
 import '../shared/firebaseAdmin';
 import { tierDateFromValue } from '../shared/effectiveTier';
 import { emitNotification, resolveActor, Actor } from '../notifications/notifyHelpers';
+import { LText, lt, rawText } from '../shared/i18n';
 import { recordMeeting } from '../checkin/meetings';
 import { requestOrderRefund } from '../ticket_payments/orders';
 import { SLOT_COUNTERS, counterId as slotCounterId, generateSlots, rulesError, AvailabilityRules } from './availability';
@@ -84,8 +85,8 @@ import {
 export interface NotifyParams {
   recipientId: string;
   type: string;
-  title: string;
-  body: string;
+  title: LText;
+  body: LText;
   data: Record<string, string>;
   actor?: Actor;
 }
@@ -167,7 +168,10 @@ export async function notifyAdmins(type: string, title: string, body: string, da
   try {
     const admins = await fdb().collection('admin_users')
       .where('role', 'in', ['super_admin', 'superAdmin', 'admin', 'moderator']).limit(50).get();
-    await Promise.all(admins.docs.map((d) => safeNotify({ recipientId: d.id, type, title, body, data })));
+    // Operational alerts for the moderation team: English on purpose.
+    await Promise.all(admins.docs.map((d) => safeNotify({
+      recipientId: d.id, type, title: rawText(title), body: rawText(body), data,
+    })));
   } catch (e) {
     console.error('[bookings] admin notification failed:', e);
   }
@@ -251,12 +255,18 @@ function notifData(bookingId: string, b: Record<string, any>): Record<string, st
 }
 
 /** Confirmation text that tells the guest how to pay. */
-function payHint(b: Record<string, any>): string {
+function payHint(b: Record<string, any>): LText {
   const mode = b.payment?.mode;
-  if (mode === 'link') return `${title(b)} — pay the host with their payment link.`;
-  if (mode === 'online') return `${title(b)} — pay in the app to get your ticket.`;
-  if (mode === 'cash') return `${title(b)} — pay the host in cash when you meet.`;
-  return title(b);
+  if (mode === 'link') return lt('srvBookingPayLink', { title: title(b) });
+  if (mode === 'online') return lt('srvBookingPayOnline', { title: title(b) });
+  if (mode === 'cash') return lt('srvBookingPayCash', { title: title(b) });
+  return titleText(b);
+}
+
+/** The experience title as notification text (user content) or "Experience". */
+function titleText(b: Record<string, any>): LText {
+  const t = typeof b.experienceTitle === 'string' ? b.experienceTitle.trim() : '';
+  return t ? rawText(title(b)) : lt('srvExperience');
 }
 
 function title(b: Record<string, any>): string {
@@ -706,11 +716,11 @@ export async function createBooking(uid: string, data: any): Promise<Record<stri
     const actor = await safeActor(uid);
     const d = notifData(bookingId, b);
     if (b.status === 'requested') {
-      await safeNotify({ recipientId: hostId, type: 'booking_request', title: 'requested to book your experience', body: title(b), data: d, actor });
+      await safeNotify({ recipientId: hostId, type: 'booking_request', title: lt('srvBookingRequested'), body: titleText(b), data: d, actor });
     } else {
-      await safeNotify({ recipientId: hostId, type: 'booking_new', title: 'booked your experience', body: title(b), data: d, actor });
+      await safeNotify({ recipientId: hostId, type: 'booking_new', title: lt('srvBookingBooked'), body: titleText(b), data: d, actor });
       await safeNotify({
-        recipientId: uid, type: 'booking_confirmed', title: 'Booking confirmed',
+        recipientId: uid, type: 'booking_confirmed', title: lt('srvBookingConfirmed'),
         body: payHint(b),
         data: d,
       });
@@ -766,8 +776,8 @@ export async function respondToBookingRequest(uid: string, data: any): Promise<R
     await safeNotify({
       recipientId: r.after.guestId,
       type: accept ? 'booking_accepted' : 'booking_declined',
-      title: accept ? 'accepted your booking request' : 'declined your booking request',
-      body: accept ? payHint(r.after) : title(r.after),
+      title: accept ? lt('srvBookingAccepted') : lt('srvBookingDeclined'),
+      body: accept ? payHint(r.after) : titleText(r.after),
       data: notifData(bookingId, r.after),
       actor,
     });
@@ -818,10 +828,10 @@ export async function cancelBooking(uid: string, data: any): Promise<Record<stri
     await safeNotify({
       recipientId: other,
       type: 'booking_cancelled',
-      title: by === 'guest' ? 'cancelled their booking' : 'cancelled your booking',
+      title: by === 'guest' ? lt('srvBookingCancelledTheirs') : lt('srvBookingCancelledYours'),
       body: r.after.refundDue && r.after.refundDue.amount > 0
-        ? `${title(r.after)} — refund owed: ${r.after.refundDue.percent}%.`
-        : title(r.after),
+        ? lt('srvBookingRefundOwed', { title: title(r.after), percent: Number(r.after.refundDue.percent) || 0 })
+        : titleText(r.after),
       data: notifData(bookingId, r.after),
       actor,
     });
@@ -920,8 +930,8 @@ export async function checkInBooking(uid: string, data: any): Promise<Record<str
       type: 'experience', contextId: bookingId, title: title(r.after), verified: true, byUid: uid,
     }, fdb());
     await safeNotify({
-      recipientId: r.after.guestId, type: 'booking_checked_in', title: 'You are checked in',
-      body: title(r.after), data: notifData(bookingId, r.after),
+      recipientId: r.after.guestId, type: 'booking_checked_in', title: lt('srvBookingCheckedIn'),
+      body: titleText(r.after), data: notifData(bookingId, r.after),
     });
   }
   let guestName = '';
@@ -979,8 +989,8 @@ export async function cancelBookingsAtRemovedTimes(hostId: string, experienceId:
       const orderId = r.after.payment?.orderId;
       if (orderId) await requestOrderRefund(String(orderId), 'host_removed_time').catch(() => undefined);
       await safeNotify({
-        recipientId: r.after.guestId, type: 'booking_cancelled', title: 'Your booking was cancelled by the host',
-        body: `${title(r.after)} — the time is no longer available. Any payment is refunded.`,
+        recipientId: r.after.guestId, type: 'booking_cancelled', title: lt('srvBookingCancelledByHost'),
+        body: lt('srvBookingCancelledByHostBody', { title: title(r.after) }),
         data: notifData(d.id, r.after),
       });
     }
@@ -1030,8 +1040,8 @@ export async function markNoShow(uid: string, data: any): Promise<Record<string,
   if (!r.noop) {
     const actor = await safeActor(uid);
     await safeNotify({
-      recipientId: r.after.guestId, type: 'booking_no_show', title: 'marked you as a no-show',
-      body: `${title(r.after)} — you can contest this within ${cfg.disputeWindowHours} h of the end.`,
+      recipientId: r.after.guestId, type: 'booking_no_show', title: lt('srvBookingNoShow'),
+      body: lt('srvBookingNoShowBody', { title: title(r.after), hours: Number(cfg.disputeWindowHours) || 0 }),
       data: notifData(bookingId, r.after), actor,
     });
   }
@@ -1077,8 +1087,8 @@ export async function markBookingPaid(uid: string, data: any, onlyMode?: 'cash')
     await safeNotify({
       recipientId: guestSide ? r.before.hostId : r.before.guestId,
       type: guestSide ? 'booking_payment_marked' : 'booking_payment_confirmed',
-      title: guestSide ? 'says they paid for their booking' : 'confirmed your payment',
-      body: title(r.after), data: notifData(bookingId, r.after), actor,
+      title: guestSide ? lt('srvBookingGuestSaysPaid') : lt('srvBookingPaymentConfirmed'),
+      body: titleText(r.after), data: notifData(bookingId, r.after), actor,
     });
   }
   return bookingView(bookingId, r.after);
@@ -1132,8 +1142,8 @@ export async function openBookingDispute(uid: string, data: any): Promise<Record
     await removeReviewEligibility(r.after, bookingId);
     const actor = await safeActor(uid);
     await safeNotify({
-      recipientId: r.after.hostId, type: 'booking_dispute', title: 'reported a problem with their booking',
-      body: title(r.after), data: notifData(bookingId, r.after), actor,
+      recipientId: r.after.hostId, type: 'booking_dispute', title: lt('srvBookingProblemReported'),
+      body: titleText(r.after), data: notifData(bookingId, r.after), actor,
     });
     await notifyAdmins('admin_booking_dispute', 'Booking dispute opened', `${title(r.after)} — booking ${bookingId}`, {
       action: 'admin_booking_dispute', bookingId,
@@ -1196,13 +1206,15 @@ export async function resolveBookingDispute(uid: string, data: any): Promise<Rec
       console.error(`[bookings] host action ${hostAction} for ${bookingId} failed:`, e);
     }
     const d = notifData(bookingId, b);
-    const due = b.refundDue && b.refundDue.amount > 0 ? ` Refund owed: ${b.refundDue.percent}%.` : '';
-    await safeNotify({ recipientId: b.guestId, type: 'booking_dispute_resolved', title: 'Your report was reviewed', body: `${title(b)}.${due}`, data: d });
+    const reviewedBody = b.refundDue && b.refundDue.amount > 0
+      ? lt('srvBookingReviewedRefundBody', { title: title(b), percent: Number(b.refundDue.percent) || 0 })
+      : lt('srvBookingReviewedBody', { title: title(b) });
+    await safeNotify({ recipientId: b.guestId, type: 'booking_dispute_resolved', title: lt('srvBookingReportReviewed'), body: reviewedBody, data: d });
     await safeNotify({
       recipientId: b.hostId,
       type: hostAction === 'warn' ? 'booking_host_warning' : 'booking_dispute_resolved',
-      title: hostAction === 'warn' ? 'Warning about one of your bookings' : 'A booking report was reviewed',
-      body: `${title(b)}.${due}`, data: d,
+      title: hostAction === 'warn' ? lt('srvBookingHostWarning') : lt('srvBookingReportReviewedHost'),
+      body: reviewedBody, data: d,
     });
   }
   return bookingView(bookingId, r.after);
@@ -1274,8 +1286,8 @@ export async function cancelSlot(uid: string, data: any): Promise<Record<string,
 
   const actor = await safeActor(uid);
   await Promise.all(res.cancelled.map(({ id, b }) => safeNotify({
-    recipientId: b.guestId, type: 'booking_cancelled', title: 'cancelled your booking',
-    body: title(b),
+    recipientId: b.guestId, type: 'booking_cancelled', title: lt('srvBookingCancelledYours'),
+    body: titleText(b),
     data: notifData(id, b), actor,
   })));
   await flaggedHostFollowUp(res, uid);
@@ -1330,8 +1342,8 @@ export async function onExperienceDeleted(experienceId: string, hostId: string |
     await flaggedHostFollowUp(r, hostId);
   }
   await Promise.all(toNotify.map(({ id, b }) => safeNotify({
-    recipientId: b.guestId, type: 'booking_cancelled', title: 'Your booking was cancelled',
-    body: `${title(b)} is no longer available.`, data: notifData(id, b),
+    recipientId: b.guestId, type: 'booking_cancelled', title: lt('srvBookingCancelled'),
+    body: lt('srvBookingNoLongerAvailable', { title: title(b) }), data: notifData(id, b),
   })));
   const expRef = db.collection(EXPERIENCES).doc(experienceId);
   for (const sub of [SLOTS, REVIEW_ELIGIBILITY, PENDING_REVIEWS]) {
@@ -1401,8 +1413,8 @@ export async function sendDueReminders(): Promise<number> {
       });
       if (!out) return;
       const data = notifData(d.id, out);
-      await safeNotify({ recipientId: out.guestId, type: 'booking_reminder', title: 'Your experience is coming up', body: title(out), data });
-      await safeNotify({ recipientId: out.hostId, type: 'booking_reminder_host', title: 'You are hosting soon', body: title(out), data });
+      await safeNotify({ recipientId: out.guestId, type: 'booking_reminder', title: lt('srvBookingComingUp'), body: titleText(out), data });
+      await safeNotify({ recipientId: out.hostId, type: 'booking_reminder_host', title: lt('srvBookingHostingSoon'), body: titleText(out), data });
     },
     'reminders',
   );
@@ -1425,8 +1437,8 @@ export async function expireDueRequests(): Promise<number> {
       }, cfg);
       if (r.noop) return;
       await safeNotify({
-        recipientId: r.after.guestId, type: 'booking_expired', title: 'Your booking request expired',
-        body: `${title(r.after)} — the host did not answer in time.`, data: notifData(d.id, r.after),
+        recipientId: r.after.guestId, type: 'booking_expired', title: lt('srvBookingRequestExpired'),
+        body: lt('srvBookingRequestExpiredBody', { title: title(r.after) }), data: notifData(d.id, r.after),
       });
     },
     'expire-requests',
@@ -1454,8 +1466,8 @@ export async function completeDueBookings(): Promise<number> {
       }, cfg);
       if (r.noop) return;
       const data = notifData(d.id, r.after);
-      await safeNotify({ recipientId: r.after.guestId, type: 'booking_review_prompt', title: 'How was your experience?', body: `Review ${title(r.after)}`, data });
-      await safeNotify({ recipientId: r.after.hostId, type: 'booking_review_guest_prompt', title: 'Review your guest', body: title(r.after), data });
+      await safeNotify({ recipientId: r.after.guestId, type: 'booking_review_prompt', title: lt('srvBookingHowWasIt'), body: lt('srvBookingReviewIt', { title: title(r.after) }), data });
+      await safeNotify({ recipientId: r.after.hostId, type: 'booking_review_guest_prompt', title: lt('srvBookingReviewGuest'), body: titleText(r.after), data });
     },
     'complete',
   );

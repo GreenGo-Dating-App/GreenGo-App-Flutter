@@ -21,33 +21,26 @@ import { shouldNotify, categoryForType } from './prefs';
 import { monitored } from '../shared/monitoring';
 import { PUSH_MEMORY } from '../shared/pushRuntime';
 import '../shared/firebaseAdmin';
+import { LText, lt, rawText, notifTextFields, render } from '../shared/i18n';
+import { resolveLocale } from '../shared/i18n/recipientLocale';
+import { Actor, actorNameFor, resolveActor } from './notifyHelpers';
 
 const db = admin.firestore();
 
-interface Actor {
-  id: string;
-  name: string;
-  photo?: string;
+/** "<phrase> {name}" when [raw] is a non-empty name, else the no-name phrase. */
+function named(
+  raw: unknown,
+  withName: 'notifServerJoinedYourCommunity' | 'notifServerJoinedYourEvent' | 'notifServerLikedYourEvent',
+  withoutName: 'srvJoinedYourCommunity' | 'srvJoinedYourEvent' | 'srvLikedYourEvent',
+): LText {
+  const name = typeof raw === 'string' ? raw.trim() : '';
+  return name ? lt(withName, { name }) : lt(withoutName);
 }
 
-/** Resolve an actor's display name + avatar from their profile. */
-async function resolveActor(actorId: string): Promise<Actor> {
-  try {
-    const snap = await db.collection('profiles').doc(actorId).get();
-    const p = snap.data() || {};
-    const name =
-      (p.displayName as string) ||
-      (p.nickname as string) ||
-      (p.name as string) ||
-      'Someone';
-    const photo =
-      (p.profilePhotoUrl as string) ||
-      (Array.isArray(p.photos) ? (p.photos[0] as string) : undefined) ||
-      (Array.isArray(p.photoUrls) ? (p.photoUrls[0] as string) : undefined);
-    return { id: actorId, name, photo };
-  } catch {
-    return { id: actorId, name: 'Someone' };
-  }
+/** The thing's own name (user content) or a generic localized label. */
+function nameOr(raw: unknown, fallback: 'notifServerYourCommunity' | 'notifServerYourEvent'): LText {
+  const name = typeof raw === 'string' ? raw.trim() : '';
+  return name ? rawText(name) : lt(fallback);
 }
 
 /**
@@ -72,8 +65,8 @@ async function claimOnce(dedupKey: string): Promise<boolean> {
 async function emit(
   recipientId: string,
   type: string,
-  title: string,
-  body: string,
+  title: LText,
+  body: LText,
   rawData: Record<string, string>,
   actor: Actor,
   dedupKey: string,
@@ -91,9 +84,7 @@ async function emit(
   await db.collection('notifications').add({
     userId: recipientId,
     type,
-    title,
-    message: body,
-    body,
+    ...notifTextFields(title, body),
     data,
     isRead: false,
     createdAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -108,12 +99,17 @@ async function emit(
 
   // Best-effort push.
   try {
-    const userSnap = await db.collection('users').doc(recipientId).get();
-    const token = userSnap.data()?.fcmToken as string | undefined;
+    const userData = (await db.collection('users').doc(recipientId).get()).data() || null;
+    const token = userData?.fcmToken as string | undefined;
     if (token) {
+      const locale = await resolveLocale(recipientId, { userData });
       await admin.messaging().send({
         token,
-        notification: brandPush(`${actor.name} ${title}`, body, actor.photo),
+        notification: brandPush(
+          `${actorNameFor(locale, actor)} ${render(locale, title)}`,
+          render(locale, body),
+          actor.photo,
+        ),
         data,
         android: {
           priority: 'high',
@@ -147,8 +143,8 @@ export const onCommunityMemberJoined = onDocumentCreated(
     await emit(
       ownerId,
       'community_join',
-      `joined your community ${(c.name as string) || ''}`.trim(),
-      (c.name as string) || 'Your community',
+      named(c.name, 'notifServerJoinedYourCommunity', 'srvJoinedYourCommunity'),
+      nameOr(c.name, 'notifServerYourCommunity'),
       { type: 'community_join', communityId, action: 'open_community', actorId: userId },
       actor,
       `community_join_${communityId}_${userId}`,
@@ -178,8 +174,8 @@ export const onEventAttendeeJoined = onDocumentCreated(
     await emit(
       organizerId,
       'event_join',
-      `joined your event ${(e.title as string) || ''}`.trim(),
-      (e.title as string) || 'Your event',
+      named(e.title, 'notifServerJoinedYourEvent', 'srvJoinedYourEvent'),
+      nameOr(e.title, 'notifServerYourEvent'),
       { type: 'event_join', eventId, action: 'open_event', actorId: userId },
       actor,
       `event_join_${eventId}_${userId}`,
@@ -207,8 +203,8 @@ export const onBusinessFollowed = onDocumentCreated(
     await emit(
       businessId,
       'business_follow',
-      'started following your business',
-      'You have a new follower',
+      lt('notifServerStartedFollowingBusiness'),
+      lt('notifServerNewFollower'),
       { type: 'business_follow', businessId, action: 'open_profile', profileId: userId, actorId: userId },
       actor,
       `business_follow_${businessId}_${userId}`,
@@ -233,8 +229,10 @@ export const onBusinessRated = onDocumentCreated(
     await emit(
       businessId,
       'business_rating',
-      stars > 0 ? `rated your business ${stars}★` : 'rated your business',
-      'You have a new rating',
+      stars > 0
+        ? lt('notifServerRatedYourBusinessStars', { stars })
+        : lt('notifServerRatedYourBusiness'),
+      lt('notifServerNewRating'),
       { type: 'business_rating', businessId, action: 'open_profile', profileId: businessId, actorId: userId },
       actor,
       `business_rating_${businessId}_${userId}`,
@@ -262,8 +260,8 @@ export const onEventLiked = onDocumentCreated(
     await emit(
       organizerId,
       'event_like',
-      `liked your event ${(e.title as string) || ''}`.trim(),
-      (e.title as string) || 'Your event',
+      named(e.title, 'notifServerLikedYourEvent', 'srvLikedYourEvent'),
+      nameOr(e.title, 'notifServerYourEvent'),
       { type: 'event_like', eventId, action: 'open_event', actorId: userId },
       actor,
       `event_like_${eventId}_${userId}`,

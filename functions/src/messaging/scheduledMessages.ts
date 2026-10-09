@@ -6,6 +6,7 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
+import { lt, notifTextFields, rawText } from '../shared/i18n';
 import { isAgeAssured, AGE_ASSURANCE_REQUIRED } from '../safety/ageAssuranceGate';
 
 const firestore = admin.firestore();
@@ -70,8 +71,7 @@ export const sendScheduledMessages = functions
         batch.set(notificationRef, {
           userId: message.receiverId,
           type: 'new_message',
-          title: 'New Message',
-          message: message.content.substring(0, 100),
+          ...notifTextFields(lt('srvNewMessage'), rawText(message.content.substring(0, 100))),
           data: {
             conversationId: conversationId,
             messageId: doc.id,

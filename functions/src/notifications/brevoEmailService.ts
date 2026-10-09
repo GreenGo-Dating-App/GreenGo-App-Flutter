@@ -19,6 +19,8 @@ import * as admin from 'firebase-admin';
 import { verifyAuth, verifyAdminAuth, handleError, logInfo, logError, db, AppError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
 import { redact } from '../shared/redact';
+import { emailSubject } from '../shared/i18n/email';
+import { resolveLocale } from '../shared/i18n/recipientLocale';
 import {
   filterMarketingEmailOptIns,
   hasMarketingEmailOptIn,
@@ -1620,6 +1622,12 @@ async function sendBrevoEmail(params: SendEmailParams): Promise<{ messageId: str
       // Only marketing mail carries the unsubscribe link (service mail cannot be unsubscribed).
       ...(marketing ? { unsubscribeUrl: unsubUrl } : {}),
     });
+    // Subject in the recipient's app language (the HTML body of the built-in
+    // templates is still English).
+    const locale = await resolveLocale(userId, { userData });
+    emailContent.subject =
+      emailSubject(locale, trigger, { ...variables, userName: recipientName }) ??
+      emailContent.subject;
   }
   // Stored templates written before P2-5 link to a domain GreenGo does not own.
   emailContent.htmlContent = emailContent.htmlContent

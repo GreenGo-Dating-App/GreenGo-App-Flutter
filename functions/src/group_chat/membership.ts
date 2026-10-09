@@ -25,6 +25,7 @@ import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import { resolveActor, emitNotification } from '../notifications/notifyHelpers';
 import '../shared/firebaseAdmin';
+import { LText, isKeyed, lt, rawText, render } from '../shared/i18n';
 
 const db = admin.firestore();
 const INBOX_COL = 'user_group_inbox';
@@ -62,6 +63,38 @@ async function commitInChunks(
   await Promise.all(commits);
 }
 
+/**
+ * Inbox preview of a server-written line: English `lastMessagePreview` (app
+ * versions without key support) + `lastMessageKey` / `lastMessageParams` so
+ * the app renders it in the viewer's language.
+ */
+function inboxPreviewFields(preview: LText): Record<string, unknown> {
+  const out: Record<string, unknown> = {
+    lastMessagePreview: render('en', preview),
+    lastMessageType: 'system',
+  };
+  if (isKeyed(preview)) {
+    out.lastMessageKey = preview.key;
+    out.lastMessageParams = preview.params ?? {};
+  }
+  return out;
+}
+
+/**
+ * System message doc text: English `content` (old app versions) +
+ * `metadata.systemKey` / `metadata.systemParams` - the same convention the
+ * app uses for the system lines it writes itself; systemKey is an ARB key the
+ * app resolves with serverText().
+ */
+function systemText(text: LText): Record<string, unknown> {
+  return {
+    content: render('en', text),
+    ...(isKeyed(text)
+      ? { metadata: { systemKey: text.key, systemParams: text.params ?? {} } }
+      : {}),
+  };
+}
+
 function seedWrites(
   groupId: string,
   uid: string,
@@ -69,7 +102,7 @@ function seedWrites(
   name: string,
   photoUrl: string | null,
   memberCount: number,
-  preview: string,
+  preview: LText,
   unread: number
 ): ((b: admin.firestore.WriteBatch) => void)[] {
   const now = admin.firestore.FieldValue.serverTimestamp();
@@ -95,7 +128,7 @@ function seedWrites(
           name,
           photoUrl,
           isGroup: true,
-          lastMessagePreview: preview,
+          ...inboxPreviewFields(preview),
           lastMessageAt: now,
           unreadCount: unread,
           pinned: false,
@@ -131,7 +164,7 @@ export const onGroupCreated = onDocumentCreated(
           name,
           photoUrl,
           participants.length,
-          'Group created',
+          lt('srvGroupCreated'),
           0
         )
       );
@@ -163,7 +196,8 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
     const prev: string[] = before.participants || [];
     const next: string[] = after.participants || [];
     const roles: Record<string, string> = after.roles || {};
-    const name = after.groupInfo?.name || 'Group';
+    const groupName = ((after.groupInfo?.name as string) || '').trim();
+    const name = groupName || 'Group';
     const photoUrl = after.groupInfo?.photoUrl ?? null;
 
     let added = next.filter((u) => !prev.includes(u));
@@ -206,7 +240,7 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
           name,
           photoUrl,
           next.length,
-          'You were added to the group',
+          lt('srvYouWereAddedToGroup'),
           1
         )
       );
@@ -225,10 +259,7 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
           senderId: '',
           receiverId: '',
           matchId: groupId,
-          content:
-            added.length === 1
-              ? 'A new member joined'
-              : `${added.length} new members joined`,
+          ...systemText(lt('srvGroupMembersJoined', { count: added.length })),
           type: 'system',
           status: 'sent',
           sentAt: now,
@@ -241,10 +272,7 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
           senderId: '',
           receiverId: '',
           matchId: groupId,
-          content:
-            removed.length === 1
-              ? 'A member left the group'
-              : `${removed.length} members left the group`,
+          ...systemText(lt('srvGroupMembersLeft', { count: removed.length })),
           type: 'system',
           status: 'sent',
           sentAt: now,
@@ -268,8 +296,10 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
         await emitNotification({
           recipientId: uid,
           type: 'group_add',
-          title: `added you to ${name}`,
-          body: name,
+          title: groupName
+            ? lt('notifServerAddedYouToGroup', { name: groupName })
+            : lt('srvAddedYouToAGroup'),
+          body: groupName ? rawText(groupName) : lt('srvGroup'),
           data: { type: 'group_add', groupId, action: 'open_group', actorId: ownerId },
           actor: ownerActor,
         });
@@ -279,8 +309,10 @@ export const onGroupParticipantsChanged = onDocumentUpdated(
           await emitNotification({
             recipientId: ownerId,
             type: 'group_join',
-            title: `joined your group ${name}`,
-            body: name,
+            title: groupName
+              ? lt('notifServerJoinedYourGroup', { name: groupName })
+              : lt('srvJoinedYourGroup'),
+            body: groupName ? rawText(groupName) : lt('srvGroup'),
             data: { type: 'group_join', groupId, action: 'open_group', actorId: uid },
             actor: joiner,
           });

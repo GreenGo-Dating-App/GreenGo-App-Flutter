@@ -7,6 +7,7 @@ import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
 import { monitored } from '../shared/monitoring';
 import { resolveActor, emitNotification } from './notifyHelpers';
+import { lt } from '../shared/i18n';
 import '../shared/firebaseAdmin';
 
 const db = admin.firestore();
@@ -37,8 +38,8 @@ export const onProfileViewed = onDocumentCreated(
     await emitNotification({
       recipientId: targetId,
       type: 'profile_view',
-      title: 'viewed your profile',
-      body: 'Tap to see who stopped by',
+      title: lt('notifServerViewedYourProfile'),
+      body: lt('notifServerTapToSeeWhoStoppedBy'),
       data: { type: 'profile_view', action: 'open_profile', profileId: viewerId, actorId: viewerId },
       actor,
     });
@@ -59,19 +60,29 @@ export const onTicketScanned = onDocumentUpdated(
     const attendeeId = event.params.userId as string;
 
     const eSnap = await db.collection('events').doc(eventId).get();
-    const title = (eSnap.data()?.title as string) || 'your event';
+    const name = ((eSnap.data()?.title as string) || '').trim();
 
     await emitNotification({
       recipientId: attendeeId,
       type: 'qr_scanned',
-      title: `Your ticket for ${title} was scanned`,
-      body: "You're checked in — enjoy!",
+      title: name ? lt('notifServerTicketScanned', { name }) : lt('srvTicketScanned'),
+      body: lt('notifServerCheckedIn'),
       data: { type: 'qr_scanned', eventId, action: 'open_event' },
     });
   }),
 );
 
 // ── o) / q) Boost STARTED — profile / event ──────────────────────────────────
+/** "<phrase with {name}>" when the event has a title, else the no-name phrase. */
+function eventTitleText(
+  raw: unknown,
+  withName: 'notifServerEventBoostLive' | 'notifServerEventBoostEnded',
+  withoutName: 'srvEventBoostLive' | 'srvEventBoostEnded',
+) {
+  const name = typeof raw === 'string' ? raw.trim() : '';
+  return name ? lt(withName, { name }) : lt(withoutName);
+}
+
 function isFutureTs(v: unknown): boolean {
   return v instanceof admin.firestore.Timestamp && v.toDate().getTime() > Date.now();
 }
@@ -93,8 +104,8 @@ export const onProfileBoostStarted = onDocumentUpdated(
     await emitNotification({
       recipientId: event.params.uid as string,
       type: 'boost_started',
-      title: 'Your profile boost is now live',
-      body: 'Your profile is being promoted to more people',
+      title: lt('notifServerProfileBoostLive'),
+      body: lt('notifServerProfilePromoted'),
       data: { type: 'boost_started', subject: 'profile', action: 'open_profile' },
     });
   }),
@@ -115,8 +126,8 @@ export const onEventBoostStarted = onDocumentUpdated(
     await emitNotification({
       recipientId: organizerId,
       type: 'boost_started',
-      title: `Your event ${(after.title as string) || ''} boost is now live`.trim(),
-      body: 'Your event is being promoted in Explore',
+      title: eventTitleText(after.title, 'notifServerEventBoostLive', 'srvEventBoostLive'),
+      body: lt('notifServerEventPromoted'),
       data: { type: 'boost_started', subject: 'event', eventId: event.params.eventId as string, action: 'open_event' },
     });
   }),
@@ -140,8 +151,8 @@ export const checkBoostExpiries = onSchedule('every 60 minutes', async () => {
     await emitNotification({
       recipientId: doc.id,
       type: 'boost_ended',
-      title: 'Your profile boost has ended',
-      body: 'Boost again to keep reaching more people',
+      title: lt('notifServerProfileBoostEnded'),
+      body: lt('notifServerBoostAgainProfile'),
       data: { type: 'boost_ended', subject: 'profile', action: 'open_profile' },
     });
   }
@@ -162,8 +173,8 @@ export const checkBoostExpiries = onSchedule('every 60 minutes', async () => {
     await emitNotification({
       recipientId: organizerId,
       type: 'boost_ended',
-      title: `Your event ${(e.title as string) || ''} boost has ended`.trim(),
-      body: 'Boost again to keep it featured',
+      title: eventTitleText(e.title, 'notifServerEventBoostEnded', 'srvEventBoostEnded'),
+      body: lt('notifServerBoostAgainEvent'),
       data: { type: 'boost_ended', subject: 'event', eventId: doc.id, action: 'open_event' },
     });
   }

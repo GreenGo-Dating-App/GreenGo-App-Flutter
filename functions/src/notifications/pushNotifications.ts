@@ -6,6 +6,8 @@
 import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { brandPush } from './brand';
+import { AppLocale, t } from '../shared/i18n';
+import { LocaleCache, resolveLocale } from '../shared/i18n/recipientLocale';
 import { monitored } from '../shared/monitoring';
 import { requireAdmin } from '../shared/adminAuth';
 
@@ -191,14 +193,16 @@ export const sendBundledNotifications = functions
       });
 
       // Send bundled notifications
+      const localeCache = new LocaleCache();
       for (const userId of Object.keys(groupedByUser)) {
         for (const type of Object.keys(groupedByUser[userId])) {
           const notifications = groupedByUser[userId][type];
 
           if (notifications.length > 1) {
-            // Bundle notifications
-            const bundledTitle = getBundledTitle(type, notifications.length);
-            const bundledBody = getBundledBody(type, notifications);
+            // Bundle notifications (in the recipient's language)
+            const locale = await resolveLocale(userId, { cache: localeCache });
+            const bundledTitle = getBundledTitle(locale, type, notifications.length);
+            const bundledBody = getBundledBody(locale, type, notifications);
 
             await sendPushNotification.run(
               {
@@ -341,32 +345,32 @@ function isWithinSilentHours(time: Date, silentHours: any): boolean {
 /**
  * Get bundled title
  */
-function getBundledTitle(type: string, count: number): string {
+function getBundledTitle(locale: AppLocale, type: string, count: number): string {
   switch (type) {
     case 'newMessage':
-      return `${count} new messages`;
+      return t(locale, 'srvBundleNewMessages', { count });
     case 'newLike':
-      return `${count} people liked you`;
+      return t(locale, 'srvBundleLikes', { count });
     case 'profileView':
-      return `${count} profile views`;
+      return t(locale, 'srvBundleProfileViews', { count });
     case 'newMatch':
-      return `${count} new matches`;
+      return t(locale, 'srvBundleNewConnections', { count });
     default:
-      return `${count} notifications`;
+      return t(locale, 'srvBundleNotifications', { count });
   }
 }
 
 /**
  * Get bundled body
  */
-function getBundledBody(type: string, notifications: any[]): string {
+function getBundledBody(locale: AppLocale, type: string, notifications: any[]): string {
   const names = notifications
     .slice(0, 3)
-    .map(n => n.data?.fromUserName || 'Someone')
+    .map(n => n.data?.fromUserName || t(locale, 'srvSomeone'))
     .join(', ');
 
   if (notifications.length > 3) {
-    return `${names} and ${notifications.length - 3} others`;
+    return t(locale, 'srvBundleNamesAndOthers', { names, count: notifications.length - 3 });
   }
 
   return names;
