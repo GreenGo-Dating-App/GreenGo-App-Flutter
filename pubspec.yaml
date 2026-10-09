@@ -76,7 +76,6 @@ dependencies:
   # -> GoogleDataTransport < 10.0, which clashed with both Firebase 11 and the
   # face/image plugins.) Android still uses MLKit barcode, unaffected.
   mobile_scanner: ^7.0.0
-  webview_flutter: ^4.10.0
   shimmer: ^3.0.0
   flutter_staggered_animations: ^1.1.1
 
