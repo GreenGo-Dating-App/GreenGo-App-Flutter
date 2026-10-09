@@ -56,9 +56,11 @@ class _CulturalPassportScreenState extends State<CulturalPassportScreen> {
     'Dutch', 'Swedish', 'Turkish', 'Greek',
   ];
 
-  /// Event categories (mirrors EventCategory, excluding the catch-all "other").
+  /// Event categories (mirrors EventCategory, excluding the catch-all "other"
+  /// and the legacy `dating` category, which is no longer offered for new
+  /// events; an already-earned `dating` stamp still shows, labelled "Meetups").
   static const List<String> _eventCatalog = <String>[
-    'dating', 'social', 'sports', 'food', 'nightlife', 'outdoor',
+    'social', 'sports', 'food', 'nightlife', 'outdoor',
     'arts', 'gaming', 'travel', 'wellness', 'languageExchange',
   ];
 
@@ -575,7 +577,7 @@ class _EventStampTile extends StatelessWidget {
   static IconData _iconFor(String category) {
     switch (category) {
       case 'dating':
-        return Icons.favorite;
+        return Icons.handshake;
       case 'social':
         return Icons.groups;
       case 'sports':

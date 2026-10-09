@@ -32,7 +32,7 @@ class SafetyAcademySeedData {
       id: 'module_online_safety',
       title: 'Online Safety 101', // i18n-ignore: localized by id
       description:
-          'Learn to protect your identity and spot potential scams while dating online.', // i18n-ignore: localized by id
+          'Learn to protect your identity and spot potential scams while meeting people online.', // i18n-ignore: localized by id
       iconName: 'shield',
       lessons: [
         'lesson_profile_protection',
@@ -46,7 +46,7 @@ class SafetyAcademySeedData {
       id: 'module_first_meeting',
       title: 'First Meeting Guide', // i18n-ignore: localized by id
       description:
-          'Essential tips for safe, confident first dates with people you meet online.', // i18n-ignore: localized by id
+          'Essential tips for safe, confident first meetings with people you meet online.', // i18n-ignore: localized by id
       iconName: 'location_on',
       lessons: [
         'lesson_public_places',
@@ -74,7 +74,7 @@ class SafetyAcademySeedData {
       id: 'module_cultural_sensitivity',
       title: 'Cultural Sensitivity', // i18n-ignore: localized by id
       description:
-          'Navigate cross-cultural dating with respect, curiosity, and awareness.', // i18n-ignore: localized by id
+          'Navigate cross-cultural friendships with respect, curiosity, and awareness.', // i18n-ignore: localized by id
       iconName: 'public',
       lessons: [
         'lesson_cultural_dos',
@@ -88,7 +88,7 @@ class SafetyAcademySeedData {
       id: 'module_emotional_intelligence',
       title: 'Emotional Intelligence', // i18n-ignore: localized by id
       description:
-          'Understand attachment styles, love languages, and build emotional awareness.', // i18n-ignore: localized by id
+          'Understand attachment styles, appreciation languages, and build emotional awareness.', // i18n-ignore: localized by id
       iconName: 'psychology',
       lessons: [
         'lesson_attachment_styles',
@@ -115,7 +115,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Your dating profile is your first impression, but it can also expose personal information if you are not careful. Learning to share the right amount keeps you safe while still showing your personality.', // i18n-ignore: localized by id
+              'Your profile is your first impression, but it can also expose personal information if you are not careful. Learning to share the right amount keeps you safe while still showing your personality.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -151,7 +151,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Which of the following is safe to include in your dating profile?', // i18n-ignore: localized by id
+                'Which of the following is safe to include in your profile?', // i18n-ignore: localized by id
             options: [
               'Your home address',
               'Your favorite hobbies',
@@ -163,16 +163,16 @@ class SafetyAcademySeedData {
                 'Sharing hobbies is great for conversation starters without revealing personal details that could be used to locate you.', // i18n-ignore: localized by id
           ),
           QuizQuestion(
-            question: 'Why should you use unique photos on your dating profile?', // i18n-ignore: localized by id
+            question: 'Why should you use unique photos on your profile?', // i18n-ignore: localized by id
             options: [
-              'To look more attractive',
-              'Because dating apps compress images',
+              'To get more profile views',
+              'Because social apps compress images',
               'To prevent reverse image searches linking to your other accounts',
               'Unique photos get more likes',
             ],
             correctIndex: 2,
             explanation:
-                'Reverse image search tools can link your dating profile to social media, blogs, or professional pages, revealing your full identity.', // i18n-ignore: localized by id
+                'Reverse image search tools can link your profile to social media, blogs, or professional pages, revealing your full identity.', // i18n-ignore: localized by id
           ),
           QuizQuestion(
             question: 'What should you check before uploading a photo?', // i18n-ignore: localized by id
@@ -199,12 +199,12 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Romance scams cost victims billions worldwide each year. Scammers build emotional connections quickly and then exploit them for money or personal data. Knowing the signs can protect you.', // i18n-ignore: localized by id
+              'Impersonation and money scams cost victims billions worldwide each year. Scammers build emotional connections quickly and then exploit them for money or personal data. Knowing the signs can protect you.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.warning,
           content:
-              'If someone asks for money, gift cards, cryptocurrency, or financial help early in a relationship -- no matter how compelling the story -- it is almost certainly a scam.', // i18n-ignore: localized by id
+              'If someone asks for money, gift cards, cryptocurrency, or financial help soon after you meet online -- no matter how compelling the story -- it is almost certainly a scam.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -217,7 +217,7 @@ class SafetyAcademySeedData {
           items: [
             'Profile seems too perfect (model-quality photos, dream career)',
             'Claims to be overseas military, oil rig worker, or international business person',
-            'Falls in love unusually fast ("love bombing")',
+            'Shows intense attachment or flattery unusually fast',
             'Avoids video calls or meeting in person',
             'Requests money for emergencies, travel, or medical bills',
             'Asks you to move conversation to another platform quickly',
@@ -236,16 +236,16 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Someone you matched with a week ago says they love you and asks for money to visit you. What should you do?', // i18n-ignore: localized by id
+                'Someone you connected with a week ago says you mean everything to them and asks for money to visit you. What should you do?', // i18n-ignore: localized by id
             options: [
               'Send the money -- they seem genuine',
               'Ask for more details about why they need money',
-              'Recognize this as a classic romance scam pattern and report them',
+              'Recognize this as a classic money-scam pattern and report them',
               'Offer to buy their plane ticket directly',
             ],
             correctIndex: 2,
             explanation:
-                'Declaring love very quickly and then requesting money is the hallmark pattern of romance scams. Report and block.', // i18n-ignore: localized by id
+                'Building intense emotional attachment very quickly and then requesting money is the hallmark pattern of money scams. Report and block.', // i18n-ignore: localized by id
           ),
           QuizQuestion(
             question:
@@ -322,7 +322,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Your match gets upset when you take an hour to reply. What does this indicate?', // i18n-ignore: localized by id
+                'A new connection gets upset when you take an hour to reply. What does this indicate?', // i18n-ignore: localized by id
             options: [
               'They really like you',
               'They are enthusiastic about the conversation',
@@ -351,7 +351,7 @@ class SafetyAcademySeedData {
             options: [
               'They want to know your exact daily schedule',
               'They respect your pace and boundaries',
-              'They say "I love you" within the first few days',
+              'They declare intense feelings for you within the first few days',
               'They ask you to stop talking to other people on the app',
             ],
             correctIndex: 1,
@@ -378,7 +378,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Meeting someone from a dating app for the first time is exciting, but safety should always come first. Choosing the right location sets the foundation for a comfortable experience.', // i18n-ignore: localized by id
+              'Meeting someone from an app for the first time is exciting, but safety should always come first. Choosing the right location sets the foundation for a comfortable experience.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -388,7 +388,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.warning,
           content:
-              'Never agree to meet at someone\'s home, a secluded area, or a place you are unfamiliar with for a first date.', // i18n-ignore: localized by id
+              'Never agree to meet at someone\'s home, a secluded area, or a place you are unfamiliar with for a first meeting.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.checklist,
@@ -409,7 +409,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Which is the safest first date location?', // i18n-ignore: localized by id
+                'Which is the safest first meeting location?', // i18n-ignore: localized by id
             options: [
               'Their apartment',
               'A busy downtown cafe',
@@ -423,7 +423,7 @@ class SafetyAcademySeedData {
           QuizQuestion(
             question: 'Why should you pick a venue you are familiar with?', // i18n-ignore: localized by id
             options: [
-              'So you can impress your date with recommendations',
+              'So you can impress the other person with recommendations',
               'Because you know the exits, staff, and surroundings',
               'It is cheaper if you know the menu',
               'There is no real advantage',
@@ -445,20 +445,20 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Letting someone you trust know about your date is one of the simplest and most effective safety measures. A safety buddy can check in on you and knows where to look if something goes wrong.', // i18n-ignore: localized by id
+              'Letting someone you trust know about your plans to meet someone new is one of the simplest and most effective safety measures. A safety buddy can check in on you and knows where to look if something goes wrong.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
           content:
-              'Share your date\'s profile, the venue, and your expected return time with a trusted friend. Set up a check-in call 30 minutes into the date.', // i18n-ignore: localized by id
+              'Share the other person\'s profile, the venue, and your expected return time with a trusted friend. Set up a check-in call 30 minutes into the meeting.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.checklist,
           content: 'Information to Share with Your Safety Buddy', // i18n-ignore: localized by id
           items: [
-            'Screenshot of your date\'s profile',
+            'Screenshot of the other person\'s profile',
             'Name (or username) of the person you are meeting',
-            'Date, time, and venue of the meeting',
+            'Day, time, and venue of the meeting',
             'Your expected return time',
             'Agreed check-in time (e.g., a call or text)',
           ],
@@ -466,7 +466,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'You can also use GreenGo\'s Share My Date feature to easily send date details to a trusted contact. There is no shame in being safe -- your date should understand.', // i18n-ignore: localized by id
+              'You can also send the meeting details to a trusted contact before you go. There is no shame in being safe -- the person you are meeting should understand.', // i18n-ignore: localized by id
         ),
       ],
       quiz: SafetyQuiz(
@@ -476,12 +476,12 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'What should you share with a trusted friend before a first date?', // i18n-ignore: localized by id
+                'What should you share with a trusted friend before a first meeting?', // i18n-ignore: localized by id
             options: [
               'Only the venue name',
-              'Your date\'s profile, venue, time, and expected return',
+              'The other person\'s profile, venue, time, and expected return',
               'Nothing -- it is private',
-              'Just a text saying "going on a date"',
+              'Just a text saying "going out"',
             ],
             correctIndex: 1,
             explanation:
@@ -490,10 +490,10 @@ class SafetyAcademySeedData {
           QuizQuestion(
             question: 'When is a good time to set up a check-in call?', // i18n-ignore: localized by id
             options: [
-              'After the date is over',
-              'About 30 minutes into the date',
+              'After the meeting is over',
+              'About 30 minutes into the meeting',
               'A check-in is not necessary',
-              'Before you leave for the date',
+              'Before you leave for the meeting',
             ],
             correctIndex: 1,
             explanation:
@@ -512,12 +512,12 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'How you get to and from a date matters just as much as where you meet. Maintaining control over your transportation ensures you can leave whenever you want.', // i18n-ignore: localized by id
+              'How you get to and from a meetup matters just as much as where you meet. Maintaining control over your transportation ensures you can leave whenever you want.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.warning,
           content:
-              'Never let your date pick you up from your home for the first meeting. This reveals your address and makes you dependent on them for a ride home.', // i18n-ignore: localized by id
+              'Never let someone you just met online pick you up from your home for the first meeting. This reveals your address and makes you dependent on them for a ride home.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -544,7 +544,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Why should you arrange your own transportation for a first date?', // i18n-ignore: localized by id
+                'Why should you arrange your own transportation for a first meeting?', // i18n-ignore: localized by id
             options: [
               'To save money on gas',
               'So you can leave whenever you want and your address stays private',
@@ -553,11 +553,11 @@ class SafetyAcademySeedData {
             ],
             correctIndex: 1,
             explanation:
-                'Having your own transport means you are not dependent on your date and your home address remains private.', // i18n-ignore: localized by id
+                'Having your own transport means you are not dependent on the other person and your home address remains private.', // i18n-ignore: localized by id
           ),
           QuizQuestion(
             question:
-                'Your date offers to pick you up from home. What should you do?', // i18n-ignore: localized by id
+                'Someone you are about to meet for the first time offers to pick you up from home. What should you do?', // i18n-ignore: localized by id
             options: [
               'Accept -- it is a nice gesture',
               'Politely decline and suggest meeting at the venue instead',
@@ -619,7 +619,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Your date shares a story about their recent trip. What is the best active listening response?', // i18n-ignore: localized by id
+                'The person you are meeting shares a story about their recent trip. What is the best active listening response?', // i18n-ignore: localized by id
             options: [
               '"Cool. So anyway, I went to..."',
               '"That sounds amazing! What was the highlight of the trip?"',
@@ -673,7 +673,7 @@ class SafetyAcademySeedData {
           items: [
             'Deciding when you are ready to share your phone number',
             'Setting limits on how late someone can message you',
-            'Being clear about physical comfort levels on dates',
+            'Being clear about your personal space and comfort levels when meeting up',
             'Saying no to plans that feel rushed or uncomfortable',
             'Taking breaks from conversation when you need space',
           ],
@@ -681,7 +681,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Remember: setting boundaries is not being difficult. It is self-respect. A partner who values you will appreciate and honor your boundaries.', // i18n-ignore: localized by id
+              'Remember: setting boundaries is not being difficult. It is self-respect. A person who values you will appreciate and honor your boundaries.', // i18n-ignore: localized by id
         ),
       ],
       quiz: SafetyQuiz(
@@ -691,12 +691,12 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'You tell your match you are not comfortable sharing your number yet, and they keep asking. What does this indicate?', // i18n-ignore: localized by id
+                'You tell a new connection you are not comfortable sharing your number yet, and they keep asking. What does this indicate?', // i18n-ignore: localized by id
             options: [
               'They are really interested in you',
               'They are just eager to move the conversation',
               'They are not respecting your stated boundary',
-              'It is normal dating behavior',
+              'It is normal behavior when getting to know someone',
             ],
             correctIndex: 2,
             explanation:
@@ -708,7 +708,7 @@ class SafetyAcademySeedData {
               'After it has been crossed multiple times',
               'Clearly and early, before it becomes an issue',
               'Only if the other person asks',
-              'Boundaries are not necessary in dating',
+              'Boundaries are not necessary when meeting new people',
             ],
             correctIndex: 1,
             explanation:
@@ -727,7 +727,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Consent is a clear, enthusiastic, and ongoing agreement. It applies to every aspect of dating -- from sharing personal information to physical intimacy.', // i18n-ignore: localized by id
+              'Consent is a clear, enthusiastic, and ongoing agreement. It applies to every interaction -- from sharing personal information to physical contact.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -775,7 +775,7 @@ class SafetyAcademySeedData {
           ),
           QuizQuestion(
             question:
-                'Your date agreed to come to your place but seems uncomfortable after arriving. What should you do?', // i18n-ignore: localized by id
+                'Someone you met on the app agreed to join you at an event but seems uncomfortable after arriving. What should you do?', // i18n-ignore: localized by id
             options: [
               'They agreed already, so continue as planned',
               'Check in with them and offer to go somewhere else',
@@ -799,14 +799,14 @@ class SafetyAcademySeedData {
     SafetyLesson(
       id: 'lesson_cultural_dos',
       moduleId: 'module_cultural_sensitivity',
-      title: 'Cross-Cultural Dating Do\'s', // i18n-ignore: localized by id
+      title: 'Cross-Cultural Do\'s', // i18n-ignore: localized by id
       order: 1,
       xpReward: 25,
       contentSections: [
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Dating someone from a different cultural background can be one of the most enriching experiences. Approach it with genuine curiosity, respect, and a willingness to learn.', // i18n-ignore: localized by id
+              'Getting to know someone from a different cultural background can be one of the most enriching experiences. Approach it with genuine curiosity, respect, and a willingness to learn.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -815,9 +815,9 @@ class SafetyAcademySeedData {
         ),
         LessonContent(
           type: LessonContentType.checklist,
-          content: 'Do\'s for Cross-Cultural Dating', // i18n-ignore: localized by id
+          content: 'Do\'s for Cross-Cultural Connections', // i18n-ignore: localized by id
           items: [
-            'Research basic cultural customs before a date',
+            'Research basic cultural customs before meeting up',
             'Show genuine interest in their background and traditions',
             'Be open to trying new foods, activities, and experiences',
             'Respect family dynamics that may differ from yours',
@@ -838,7 +838,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'What is the best way to learn about your date\'s culture?', // i18n-ignore: localized by id
+                'What is the best way to learn about a new friend\'s culture?', // i18n-ignore: localized by id
             options: [
               'Make assumptions based on what you have seen in movies',
               'Ask thoughtful, open-ended questions with genuine curiosity',
@@ -851,7 +851,7 @@ class SafetyAcademySeedData {
           ),
           QuizQuestion(
             question:
-                'Your date mentions a family tradition you do not understand. What should you do?', // i18n-ignore: localized by id
+                'A new friend mentions a family tradition you do not understand. What should you do?', // i18n-ignore: localized by id
             options: [
               'Nod along and pretend you understand',
               'Ask them to explain more about it and why it matters',
@@ -868,23 +868,23 @@ class SafetyAcademySeedData {
     SafetyLesson(
       id: 'lesson_cultural_donts',
       moduleId: 'module_cultural_sensitivity',
-      title: 'Cross-Cultural Dating Don\'ts', // i18n-ignore: localized by id
+      title: 'Cross-Cultural Don\'ts', // i18n-ignore: localized by id
       order: 2,
       xpReward: 25,
       contentSections: [
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Well-intentioned but uninformed comments can feel hurtful or dismissive. Understanding common pitfalls helps you navigate cross-cultural dating with grace.', // i18n-ignore: localized by id
+              'Well-intentioned but uninformed comments can feel hurtful or dismissive. Understanding common pitfalls helps you navigate cross-cultural friendships with grace.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.warning,
           content:
-              'Never reduce someone to their ethnicity or nationality. Comments like "I\'ve always wanted to date a [nationality]" or "You\'re pretty for a [ethnicity]" are hurtful, not complimentary.', // i18n-ignore: localized by id
+              'Never reduce someone to their ethnicity or nationality. Comments like "I\'ve always wanted a friend from [country]" or "You speak well for a [nationality]" are hurtful, not complimentary.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.checklist,
-          content: 'Don\'ts for Cross-Cultural Dating', // i18n-ignore: localized by id
+          content: 'Don\'ts for Cross-Cultural Connections', // i18n-ignore: localized by id
           items: [
             'Do not fetishize or exoticize their culture or appearance',
             'Do not assume they represent their entire culture',
@@ -909,7 +909,7 @@ class SafetyAcademySeedData {
             question:
                 'Which comment is culturally insensitive?', // i18n-ignore: localized by id
             options: [
-              '"I would love to try the food from your country."',
+              '"I\'d really like to try the food from your country."',
               '"You are so exotic looking."',
               '"What language do you speak at home?"',
               '"Tell me about a holiday your family celebrates."',
@@ -949,7 +949,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.tip,
           content:
-              'If something your date says or does confuses you, assume positive intent and ask for clarification rather than jumping to conclusions.', // i18n-ignore: localized by id
+              'If something the other person says or does confuses you, assume positive intent and ask for clarification rather than jumping to conclusions.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.checklist,
@@ -976,7 +976,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Your date avoids direct eye contact. What should you think?', // i18n-ignore: localized by id
+                'The person you are talking to avoids direct eye contact. What should you think?', // i18n-ignore: localized by id
             options: [
               'They are not interested in you',
               'They are being dishonest',
@@ -1020,7 +1020,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Attachment theory explains how our early relationships shape the way we connect with romantic partners. Understanding your attachment style can help you build healthier relationships.', // i18n-ignore: localized by id
+              'Attachment theory explains how our early relationships shape the way we connect with other people as adults. Understanding your attachment style can help you build healthier friendships.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -1045,7 +1045,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.tip,
           content:
-              'Understanding your partner\'s attachment style helps you respond with empathy rather than frustration. An avoidant partner pulling away is not rejection -- it is their coping mechanism.', // i18n-ignore: localized by id
+              'Understanding a friend\'s attachment style helps you respond with empathy rather than frustration. An avoidant friend pulling away is not rejection -- it is their coping mechanism.', // i18n-ignore: localized by id
         ),
       ],
       quiz: SafetyQuiz(
@@ -1055,7 +1055,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Your partner needs a lot of reassurance and gets anxious when you do not respond quickly. Which attachment style might this reflect?', // i18n-ignore: localized by id
+                'A friend needs a lot of reassurance and gets anxious when you do not respond quickly. Which attachment style might this reflect?', // i18n-ignore: localized by id
             options: [
               'Secure',
               'Anxious',
@@ -1072,7 +1072,7 @@ class SafetyAcademySeedData {
               'Accept that they cannot change',
               'Blame your parents for your style',
               'Use awareness to communicate better and work toward secure attachment',
-              'Only date people with the same style',
+              'Only spend time with people who have the same style',
             ],
             correctIndex: 2,
             explanation:
@@ -1082,13 +1082,13 @@ class SafetyAcademySeedData {
             question: 'Someone with an avoidant attachment style might:', // i18n-ignore: localized by id
             options: [
               'Send multiple texts if you do not reply quickly',
-              'Pull away or shut down when the relationship gets emotionally close',
+              'Pull away or shut down when a friendship gets emotionally close',
               'Always want to spend every moment together',
               'Be very open about their feelings from the start',
             ],
             correctIndex: 1,
             explanation:
-                'Avoidant attachment often manifests as pulling away when emotional intimacy increases, as a self-protection mechanism.', // i18n-ignore: localized by id
+                'Avoidant attachment often manifests as pulling away when emotional closeness increases, as a self-protection mechanism.', // i18n-ignore: localized by id
           ),
         ],
       ),
@@ -1096,35 +1096,35 @@ class SafetyAcademySeedData {
     SafetyLesson(
       id: 'lesson_love_languages',
       moduleId: 'module_emotional_intelligence',
-      title: 'Love Languages', // i18n-ignore: localized by id
+      title: 'Appreciation Languages', // i18n-ignore: localized by id
       order: 2,
       xpReward: 25,
       contentSections: [
         LessonContent(
           type: LessonContentType.text,
           content:
-              'The concept of love languages, popularized by Dr. Gary Chapman, suggests that people express and receive love in five primary ways. Understanding yours and your partner\'s can transform your relationship.', // i18n-ignore: localized by id
+              'The concept of appreciation languages, adapted from Dr. Gary Chapman\'s work, suggests that people express and receive appreciation in five primary ways. Understanding yours and your friends\' can strengthen your connections.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.checklist,
-          content: 'The Five Love Languages', // i18n-ignore: localized by id
+          content: 'The Five Appreciation Languages', // i18n-ignore: localized by id
           items: [
-            'Words of Affirmation: Verbal compliments, encouragement, and expressions of love',
+            'Words of Affirmation: Verbal compliments, encouragement, and expressions of appreciation',
             'Quality Time: Undivided attention and presence',
-            'Receiving Gifts: Thoughtful tokens of affection (not about cost)',
+            'Receiving Gifts: Thoughtful tokens of appreciation (not about cost)',
             'Acts of Service: Actions that make life easier or show care',
-            'Physical Touch: Hugs, holding hands, and other physical affection',
+            'Friendly Gestures: A handshake, high five, or hug when it is welcome',
           ],
         ),
         LessonContent(
           type: LessonContentType.tip,
           content:
-              'Pay attention to how your date expresses affection -- that is likely their love language. If they always compliment you, they probably value words of affirmation.', // i18n-ignore: localized by id
+              'Pay attention to how someone shows appreciation -- that is likely their appreciation language. If they always compliment you, they probably value words of affirmation.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Mismatched love languages are common and manageable. The key is communication: tell your partner what makes you feel loved, and ask them the same question.', // i18n-ignore: localized by id
+              'Different appreciation languages are common and manageable. The key is communication: tell your friends what makes you feel appreciated, and ask them the same question.', // i18n-ignore: localized by id
         ),
       ],
       quiz: SafetyQuiz(
@@ -1134,29 +1134,29 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Your partner always makes time for you and puts their phone away during conversations. Their love language is likely:', // i18n-ignore: localized by id
+                'A friend always makes time for you and puts their phone away during conversations. Their appreciation language is likely:', // i18n-ignore: localized by id
             options: [
               'Words of Affirmation',
               'Quality Time',
               'Receiving Gifts',
-              'Physical Touch',
+              'Friendly Gestures',
             ],
             correctIndex: 1,
             explanation:
-                'Giving undivided attention and prioritizing presence is the hallmark of Quality Time as a love language.', // i18n-ignore: localized by id
+                'Giving undivided attention and prioritizing presence is the hallmark of Quality Time as an appreciation language.', // i18n-ignore: localized by id
           ),
           QuizQuestion(
             question:
-                'You value words of affirmation but your partner shows love through acts of service. What should you do?', // i18n-ignore: localized by id
+                'You value words of affirmation but a friend shows appreciation through acts of service. What should you do?', // i18n-ignore: localized by id
             options: [
               'Accept that you are incompatible',
-              'Tell your partner what you need and learn to recognize their style of showing love',
-              'Change your love language to match theirs',
+              'Tell them what you need and learn to recognize how they show appreciation',
+              'Change your appreciation language to match theirs',
               'Ignore the difference',
             ],
             correctIndex: 1,
             explanation:
-                'Communication is key. Express what you need while also learning to appreciate how your partner shows love.', // i18n-ignore: localized by id
+                'Communication is key. Express what you need while also learning to appreciate how your friend shows they care.', // i18n-ignore: localized by id
           ),
         ],
       ),
@@ -1171,7 +1171,7 @@ class SafetyAcademySeedData {
         LessonContent(
           type: LessonContentType.text,
           content:
-              'Emotional awareness is the ability to recognize, understand, and manage your own emotions while also being attuned to others\'. In dating, this skill prevents reactive decisions and builds deeper connections.', // i18n-ignore: localized by id
+              'Emotional awareness is the ability to recognize, understand, and manage your own emotions while also being attuned to others\'. When meeting new people, this skill prevents reactive decisions and builds deeper connections.', // i18n-ignore: localized by id
         ),
         LessonContent(
           type: LessonContentType.tip,
@@ -1184,7 +1184,7 @@ class SafetyAcademySeedData {
           items: [
             'Practice naming your emotions throughout the day',
             'Notice physical sensations tied to emotions (tight chest = anxiety)',
-            'Journal about dating experiences and your emotional reactions',
+            'Journal about your social experiences and emotional reactions',
             'Distinguish between reacting (impulsive) and responding (thoughtful)',
             'Develop a pause habit: wait before sending emotional messages',
           ],
@@ -1207,7 +1207,7 @@ class SafetyAcademySeedData {
         questions: [
           QuizQuestion(
             question:
-                'Your date cancels plans last minute and you feel angry. What is the emotionally aware response?', // i18n-ignore: localized by id
+                'A new friend cancels plans last minute and you feel angry. What is the emotionally aware response?', // i18n-ignore: localized by id
             options: [
               'Send an angry message immediately',
               'Ghost them as punishment',

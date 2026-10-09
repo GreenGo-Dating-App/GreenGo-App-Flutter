@@ -294,7 +294,7 @@ class Conversation extends Equatable { // userId → Timestamp of deletion
   /// Get last message preview text
   String get lastMessagePreview {
     if (lastMessage == null) {
-      return 'Say hi to your match!';
+      return 'Say hi to your new connection!';
     }
 
     switch (lastMessage!.type) {

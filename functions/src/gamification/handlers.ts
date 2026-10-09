@@ -205,8 +205,8 @@ export async function handleGrantXP(params: GrantXPParams): Promise<GrantXPResul
 
 export const ACHIEVEMENTS = {
   first_match: {
-    name: 'First Match',
-    description: 'Get your first match',
+    name: 'First Connection',
+    description: 'Make your first connection',
     xpReward: 50,
     coinReward: 10,
     icon: 'heart',
@@ -221,7 +221,7 @@ export const ACHIEVEMENTS = {
   },
   popular: {
     name: 'Popular',
-    description: 'Get 50 matches',
+    description: 'Make 50 connections',
     xpReward: 200,
     coinReward: 50,
     icon: 'star',
@@ -472,8 +472,8 @@ export const DAILY_CHALLENGES = [
   },
   {
     id: 'get_3_matches',
-    name: 'Match Maker',
-    description: 'Get 3 matches today',
+    name: 'Connector',
+    description: 'Make 3 new connections today',
     target: 3,
     xpReward: 30,
     coinReward: 10,

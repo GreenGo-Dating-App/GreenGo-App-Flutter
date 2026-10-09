@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import '../../../../core/config/flavor_config.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/country_names_l10n.dart';
 import '../../../../generated/app_localizations.dart';
@@ -160,7 +161,8 @@ class CountrySpotlightCard extends StatelessWidget {
                         _buildSectionChip(l10n.culturalExchangeSectionCuisine),
                       if (spotlight.customs != null)
                         _buildSectionChip(l10n.culturalExchangeSectionCustoms),
-                      if (spotlight.datingEtiquette != null)
+                      if (FlavorConfig.enableEtiquetteGuide &&
+                          spotlight.datingEtiquette != null)
                         _buildSectionChip(l10n.culturalExchangeCategoryDating),
                       if (spotlight.keyPhrases != null)
                         _buildSectionChip(l10n.culturalExchangeSectionPhrases),

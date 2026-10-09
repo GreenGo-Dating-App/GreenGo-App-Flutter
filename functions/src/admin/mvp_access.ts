@@ -166,15 +166,15 @@ const BROADCAST_MESSAGES: Record<string, Record<string, { title: string; body: s
     pt_BR: { title: 'Assinatura Melhorada!', body: 'Parabéns! Sua assinatura foi melhorada. Aproveite seus novos benefícios!' },
   },
 
-  // New match notification
+  // New connection notification (key \'new_match\' kept for existing callers)
   new_match: {
-    en: { title: 'New Match!', body: 'You have a new match! Open the app to start chatting.' },
-    es: { title: '¡Nuevo Match!', body: '¡Tienes un nuevo match! Abre la app para empezar a chatear.' },
-    fr: { title: 'Nouveau Match!', body: 'Vous avez un nouveau match! Ouvrez l\'app pour commencer à discuter.' },
-    de: { title: 'Neues Match!', body: 'Sie haben ein neues Match! Öffnen Sie die App, um zu chatten.' },
-    it: { title: 'Nuovo Match!', body: 'Hai un nuovo match! Apri l\'app per iniziare a chattare.' },
-    pt: { title: 'Novo Match!', body: 'Tens um novo match! Abre a app para começar a conversar.' },
-    pt_BR: { title: 'Novo Match!', body: 'Você tem um novo match! Abra o app para começar a conversar.' },
+    en: { title: 'New Connection!', body: 'You have a new connection! Open the app to start chatting.' },
+    es: { title: '¡Nueva conexión!', body: '¡Tienes una nueva conexión! Abre la app para empezar a chatear.' },
+    fr: { title: 'Nouvelle connexion !', body: 'Vous avez une nouvelle connexion ! Ouvrez l\'app pour commencer à discuter.' },
+    de: { title: 'Neue Verbindung!', body: 'Sie haben eine neue Verbindung! Öffnen Sie die App, um zu chatten.' },
+    it: { title: 'Nuova connessione!', body: 'Hai una nuova connessione! Apri l\'app per iniziare a chattare.' },
+    pt: { title: 'Nova ligação!', body: 'Tens uma nova ligação! Abre a app para começar a conversar.' },
+    pt_BR: { title: 'Nova conexão!', body: 'Você tem uma nova conexão! Abra o app para começar a conversar.' },
   },
 
   // New message notification
@@ -199,15 +199,15 @@ const BROADCAST_MESSAGES: Record<string, Record<string, { title: string; body: s
     pt_BR: { title: 'Alguém Viu Seu Perfil', body: 'Seu perfil está recebendo atenção! Veja quem visualizou você.' },
   },
 
-  // Super like notification
+  // Priority Connect notification (key \'super_like\' kept for existing callers)
   super_like: {
-    en: { title: 'You Got a Super Like!', body: 'Someone really likes you! Open the app to see who.' },
-    es: { title: '¡Recibiste un Super Like!', body: '¡Alguien realmente te gusta! Abre la app para ver quién.' },
-    fr: { title: 'Vous Avez Reçu un Super Like!', body: 'Quelqu\'un vous aime vraiment! Ouvrez l\'app pour voir qui.' },
-    de: { title: 'Du Hast ein Super Like!', body: 'Jemand mag dich wirklich! Öffne die App um zu sehen wer.' },
-    it: { title: 'Hai Ricevuto un Super Like!', body: 'Qualcuno ti piace davvero! Apri l\'app per vedere chi.' },
-    pt: { title: 'Recebeste um Super Like!', body: 'Alguém gosta muito de ti! Abre a app para ver quem.' },
-    pt_BR: { title: 'Você Recebeu um Super Like!', body: 'Alguém realmente gosta de você! Abra o app para ver quem.' },
+    en: { title: 'You Got a Priority Connect!', body: 'Someone really wants to connect with you! Open the app to see who.' },
+    es: { title: '¡Recibiste un Priority Connect!', body: '¡Alguien quiere conectar contigo! Abre la app para ver quién.' },
+    fr: { title: 'Vous avez reçu un Priority Connect !', body: 'Quelqu\'un veut vraiment se connecter avec vous ! Ouvrez l\'app pour voir qui.' },
+    de: { title: 'Du hast ein Priority Connect!', body: 'Jemand möchte sich unbedingt mit dir verbinden! Öffne die App, um zu sehen, wer.' },
+    it: { title: 'Hai ricevuto un Priority Connect!', body: 'Qualcuno vuole davvero connettersi con te! Apri l\'app per vedere chi.' },
+    pt: { title: 'Recebeste um Priority Connect!', body: 'Alguém quer mesmo ligar-se a ti! Abre a app para ver quem.' },
+    pt_BR: { title: 'Você recebeu um Priority Connect!', body: 'Alguém quer muito se conectar com você! Abra o app para ver quem.' },
   },
 
   // Maintenance notification

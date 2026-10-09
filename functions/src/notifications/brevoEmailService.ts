@@ -8,7 +8,7 @@
  * - Moderation events (approvals, denials, warnings)
  * - Purchase events (shop items, gifts, coins)
  * - Gamification events (achievements, badges, levels)
- * - Social events (matches, messages, likes)
+ * - Social events (connections, messages, likes)
  * - Engagement events (weekly digests, re-engagement)
  */
 
@@ -365,7 +365,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
               <tr>
                 <td style="padding: 40px 40px 20px 40px; text-align: center;">
                   <h1 style="margin: 0; font-size: 32px; font-weight: bold; background: ${branding.goldGradient}; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">GreenGo</h1>
-                  <p style="margin: 10px 0 0 0; color: ${branding.primaryColor}; font-size: 14px;">Your Premium Dating Experience</p>
+                  <p style="margin: 10px 0 0 0; color: ${branding.primaryColor}; font-size: 14px;">Discover cultures. Meet people. Explore together.</p>
                 </td>
               </tr>
               <!-- Content -->
@@ -409,13 +409,13 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: `Welcome to GreenGo, ${userName}!`,
       htmlContent: baseTemplate(
         'Welcome to GreenGo!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We're excited to have you join our premium dating community! GreenGo is designed for meaningful connections.</p>
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We're excited to have you join our community! GreenGo is where you discover cultures, exchange languages and meet people from around the world.</p>
         <div style="background: ${branding.backgroundColor}; border-radius: 12px; padding: 20px; margin: 20px 0; border-left: 4px solid ${branding.primaryColor};">
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Get started:</strong></p>
           <ul style="color: ${branding.mutedColor}; margin: 10px 0 0 0; padding-left: 20px;">
             <li>Complete your profile</li>
             <li>Upload your best photos</li>
-            <li>Start discovering matches</li>
+            <li>Start discovering people and local events</li>
           </ul>
         </div>`,
         'https://greengo.app/profile',
@@ -578,7 +578,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Amount:</strong> ${variables.amount || '$0.00'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Next billing:</strong> ${variables.nextBillingDate || 'N/A'}</p>
         </div>
-        <p style="color: ${branding.mutedColor}; line-height: 1.6;">Enjoy unlimited swipes, see who likes you, and much more!</p>`,
+        <p style="color: ${branding.mutedColor}; line-height: 1.6;">Enjoy unlimited discovery, see who wants to connect with you, and much more!</p>`,
         'https://greengo.app',
         'Start Exploring'
       ),
@@ -627,7 +627,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Subscription Cancelled',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your ${variables.planName || 'Premium'} subscription has been cancelled.</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">You'll continue to have access until ${variables.endDate || 'the end of your billing period'}.</p>
-        <p style="color: ${branding.mutedColor}; line-height: 1.6;">We'd love to have you back! You can resubscribe anytime.</p>`,
+        <p style="color: ${branding.mutedColor}; line-height: 1.6;">We'd be glad to have you back! You can resubscribe anytime.</p>`,
         'https://greengo.app/subscription',
         'Resubscribe'
       ),
@@ -637,7 +637,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Subscription Expired',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your ${variables.planName || 'Premium'} subscription has expired.</p>
-        <p style="color: ${branding.mutedColor}; line-height: 1.6;">Renew now to continue enjoying premium features like unlimited swipes and seeing who likes you!</p>`,
+        <p style="color: ${branding.mutedColor}; line-height: 1.6;">Renew now to continue enjoying premium features like unlimited discovery and seeing who wants to connect with you!</p>`,
         'https://greengo.app/subscription',
         'Renew Subscription'
       ),
@@ -948,7 +948,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: 'Gift sent successfully!',
       htmlContent: baseTemplate(
         'Gift Sent!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your gift of ${variables.coinsAmount || '0'} coins has been sent to ${variables.recipientName || 'your match'}!</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your gift of ${variables.coinsAmount || '0'} coins has been sent to ${variables.recipientName || 'your connection'}!</p>`,
         'https://greengo.app/messages',
         'Send a Message'
       ),
@@ -980,7 +980,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: 'Your gift is on its way!',
       htmlContent: baseTemplate(
         'Gift Sent!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your gift of ${variables.giftName || 'a special item'} has been sent to ${variables.recipientName || 'your match'}!</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your gift of ${variables.giftName || 'a special item'} has been sent to ${variables.recipientName || 'your connection'}!</p>`,
         'https://greengo.app/messages',
         'Send a Message'
       ),
@@ -989,7 +989,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: 'You received a gift!',
       htmlContent: baseTemplate(
         'New Gift!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.senderName || 'Someone special'} sent you ${variables.giftName || 'a gift'}!</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.senderName || 'Someone'} sent you ${variables.giftName || 'a gift'}!</p>`,
         'https://greengo.app/messages',
         'Thank Them'
       ),
@@ -1010,7 +1010,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Boost Active!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your profile boost is now active! You'll get up to 10x more visibility for the next ${variables.duration || '30 minutes'}.</p>`,
         'https://greengo.app',
-        'Start Swiping'
+        'Start Exploring'
       ),
     },
     boost_expired: {
@@ -1027,19 +1027,19 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       ),
     },
     super_like_purchased: {
-      subject: 'Super Likes added!',
+      subject: 'Priority Connects added!',
       htmlContent: baseTemplate(
-        'Super Likes Ready!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.amount || '5'} Super Likes have been added to your account!</p>`,
+        'Priority Connects Ready!',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.amount || '5'} Priority Connects have been added to your account!</p>`,
         'https://greengo.app',
-        'Use Super Like'
+        'Send a Priority Connect'
       ),
     },
     spotlight_purchased: {
       subject: 'Spotlight ready to use!',
       htmlContent: baseTemplate(
         'Spotlight Ready!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your Spotlight is ready! Get featured on the Discover page and get more matches.</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your Spotlight is ready! Get featured on the Discover page and make more connections.</p>`,
         'https://greengo.app/spotlight',
         'Activate Spotlight'
       ),
@@ -1048,7 +1048,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: 'You\'re in the Spotlight!',
       htmlContent: baseTemplate(
         'Spotlight Active!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You're now featured on the Discover page! Expect more profile views and matches.</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You're now featured on the Discover page! Expect more profile views and connections.</p>`,
         'https://greengo.app',
         'Check Your Profile'
       ),
@@ -1060,7 +1060,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your Spotlight has ended. Here are your results:</p>
         <div style="background: ${branding.backgroundColor}; border-radius: 12px; padding: 20px; margin: 20px 0;">
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Profile views:</strong> ${variables.views || '0'}</p>
-          <p style="color: ${branding.textColor}; margin: 0;"><strong>New matches:</strong> ${variables.matches || '0'}</p>
+          <p style="color: ${branding.textColor}; margin: 0;"><strong>New connections:</strong> ${variables.matches || '0'}</p>
         </div>`,
         'https://greengo.app/spotlight',
         'Get Another Spotlight'
@@ -1275,29 +1275,29 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
     },
     // Social
     new_match: {
-      subject: 'You have a new match!',
+      subject: 'You have a new connection!',
       htmlContent: baseTemplate(
-        'It\'s a Match!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You and ${variables.matchName || 'someone special'} have matched!</p>
+        'New Connection!',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You and ${variables.matchName || 'someone new'} are now connected!</p>
         <p style="color: ${branding.mutedColor}; line-height: 1.6;">Don't keep them waiting - say hello!</p>`,
         'https://greengo.app/matches',
         'Send a Message'
       ),
     },
     super_like_received: {
-      subject: 'Someone Super Liked you!',
+      subject: 'Someone sent you a Priority Connect!',
       htmlContent: baseTemplate(
-        'Super Like!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.fromName || 'Someone'} Super Liked you! This means they really want to connect with you.</p>`,
+        'Priority Connect!',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">${variables.fromName || 'Someone'} sent you a Priority Connect! This means they really want to connect with you.</p>`,
         'https://greengo.app/likes',
         'See Who'
       ),
     },
     message_received: {
-      subject: `New message from ${variables.fromName || 'your match'}`,
+      subject: `New message from ${variables.fromName || 'your connection'}`,
       htmlContent: baseTemplate(
         'New Message',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You have a new message from ${variables.fromName || 'your match'}!</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You have a new message from ${variables.fromName || 'your connection'}!</p>`,
         'https://greengo.app/messages',
         'Read Message'
       ),
@@ -1315,25 +1315,25 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: 'Mutual interest detected!',
       htmlContent: baseTemplate(
         'Mutual Interest!',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You and ${variables.userName || 'someone'} have mutual interest! Match potential is high.</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You and ${variables.userName || 'someone'} have mutual interests! You could be great exchange partners.</p>`,
         'https://greengo.app/discover',
         'View Profile'
       ),
     },
     match_about_to_expire: {
-      subject: 'Your match is about to expire!',
+      subject: 'Your connection is about to expire!',
       htmlContent: baseTemplate(
-        'Match Expiring',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your match with ${variables.matchName || 'someone special'} expires in ${variables.hoursLeft || '24'} hours. Send a message before it's too late!</p>`,
+        'Connection Expiring',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your connection with ${variables.matchName || 'someone new'} expires in ${variables.hoursLeft || '24'} hours. Send a message before it's too late!</p>`,
         'https://greengo.app/matches',
         'Send Message Now'
       ),
     },
     match_expired: {
-      subject: 'Match expired',
+      subject: 'Connection expired',
       htmlContent: baseTemplate(
-        'Match Expired',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your match with ${variables.matchName || 'someone'} has expired. Keep swiping to find more connections!</p>`,
+        'Connection Expired',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your connection with ${variables.matchName || 'someone'} has expired. Keep exploring to make more connections!</p>`,
         'https://greengo.app/discover',
         'Keep Discovering'
       ),
@@ -1351,22 +1351,22 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: 'Missed video call',
       htmlContent: baseTemplate(
         'Missed Call',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You missed a video call from ${variables.callerName || 'your match'}.</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">You missed a video call from ${variables.callerName || 'your connection'}.</p>`,
         'https://greengo.app/messages',
         'Call Back'
       ),
     },
     video_call_scheduled: {
-      subject: 'Video date scheduled!',
+      subject: 'Video call scheduled!',
       htmlContent: baseTemplate(
-        'Date Scheduled',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your video date with ${variables.matchName || 'your match'} is scheduled for ${variables.dateTime || 'soon'}!</p>`,
+        'Video Call Scheduled',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your video call with ${variables.matchName || 'your connection'} is scheduled for ${variables.dateTime || 'soon'}!</p>`,
         'https://greengo.app/dates',
         'View Details'
       ),
     },
     compatibility_score_high: {
-      subject: 'High compatibility match found!',
+      subject: 'Great compatibility found!',
       htmlContent: baseTemplate(
         'High Compatibility!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We found someone with ${variables.score || '90'}% compatibility with you!</p>`,
@@ -1375,20 +1375,20 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       ),
     },
     date_suggestion: {
-      subject: 'Date idea for you!',
+      subject: 'An idea to meet up!',
       htmlContent: baseTemplate(
-        'Date Suggestion',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Based on your interests, we suggest: ${variables.suggestion || 'a coffee date'}!</p>`,
+        'Meetup Idea',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Based on your interests, we suggest: ${variables.suggestion || 'a coffee meetup'}!</p>`,
         'https://greengo.app/dates',
         'View Suggestions'
       ),
     },
     // Engagement
     welcome_series_day_1: {
-      subject: 'Tips to get more matches',
+      subject: 'Tips to make more connections',
       htmlContent: baseTemplate(
-        'Day 1: Get More Matches',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Here are some tips to improve your profile and get more matches:</p>
+        'Day 1: Make More Connections',
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Here are some tips to improve your profile and make more connections:</p>
         <ul style="color: ${branding.mutedColor}; line-height: 1.8;">
           <li>Add at least 4 photos</li>
           <li>Write a bio that shows your personality</li>
@@ -1409,7 +1409,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
           <li>Be genuine and authentic</li>
         </ul>`,
         'https://greengo.app/matches',
-        'View Matches'
+        'View Connections'
       ),
     },
     welcome_series_day_7: {
@@ -1420,7 +1420,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         <div style="background: ${branding.backgroundColor}; border-radius: 12px; padding: 20px; margin: 20px 0;">
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Profile views:</strong> ${variables.views || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Likes received:</strong> ${variables.likes || '0'}</p>
-          <p style="color: ${branding.textColor}; margin: 0;"><strong>Matches:</strong> ${variables.matches || '0'}</p>
+          <p style="color: ${branding.textColor}; margin: 0;"><strong>Connections:</strong> ${variables.matches || '0'}</p>
         </div>`,
         'https://greengo.app',
         'Keep Going'
@@ -1432,7 +1432,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Weekly Digest',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Here's your weekly recap:</p>
         <div style="background: ${branding.backgroundColor}; border-radius: 12px; padding: 20px; margin: 20px 0;">
-          <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>New matches:</strong> ${variables.newMatches || '0'}</p>
+          <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>New connections:</strong> ${variables.newMatches || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Messages:</strong> ${variables.messages || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Profile views:</strong> ${variables.views || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Likes received:</strong> ${variables.likes || '0'}</p>
@@ -1447,7 +1447,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
         'Monthly Recap',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Here's your monthly summary:</p>
         <div style="background: ${branding.backgroundColor}; border-radius: 12px; padding: 20px; margin: 20px 0;">
-          <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Total matches:</strong> ${variables.totalMatches || '0'}</p>
+          <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Total connections:</strong> ${variables.totalMatches || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0 0 10px 0;"><strong>Conversations:</strong> ${variables.conversations || '0'}</p>
           <p style="color: ${branding.textColor}; margin: 0;"><strong>Time on app:</strong> ${variables.timeOnApp || '0 hours'}</p>
         </div>`,
@@ -1456,7 +1456,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       ),
     },
     profile_incomplete_reminder: {
-      subject: 'Complete your profile to get more matches',
+      subject: 'Complete your profile to make more connections',
       htmlContent: baseTemplate(
         'Complete Your Profile',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">Your profile is ${variables.completeness || '50'}% complete. Add more details to increase your chances of matching!</p>`,
@@ -1514,7 +1514,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       subject: 'How are we doing?',
       htmlContent: baseTemplate(
         'We Value Your Feedback',
-        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We'd love to hear about your GreenGo experience. Your feedback helps us improve!</p>`,
+        `<p style="color: ${branding.mutedColor}; line-height: 1.6;">We'd like to hear about your GreenGo experience. Your feedback helps us improve!</p>`,
         'https://greengo.app/feedback',
         'Share Feedback'
       ),
@@ -1524,7 +1524,7 @@ function getDefaultTemplate(trigger: EmailTrigger, variables: Record<string, any
       htmlContent: baseTemplate(
         'Happy Birthday!',
         `<p style="color: ${branding.mutedColor}; line-height: 1.6;">The GreenGo team wishes you a wonderful birthday!</p>
-        <p style="color: ${branding.mutedColor}; line-height: 1.6;">Here's a special gift: ${variables.gift || '5 free Super Likes'}!</p>`,
+        <p style="color: ${branding.mutedColor}; line-height: 1.6;">Here's a special gift: ${variables.gift || '5 free Priority Connects'}!</p>`,
         'https://greengo.app',
         'Claim Gift'
       ),

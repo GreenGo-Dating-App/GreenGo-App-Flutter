@@ -4220,10 +4220,19 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
               dropdownColor: AppColors.backgroundCard,
               style: const TextStyle(color: AppColors.textPrimary),
               decoration: _inputDecoration(AppLocalizations.of(context)!.eventsCategory),
-              items: EventCategory.values.map((c) {
+              // `dating` stays in the enum so existing events keep working,
+              // but it is never offered for new events (only shown when an
+              // existing event being edited already uses it).
+              items: EventCategory.values
+                  .where((c) => c != EventCategory.dating || c == _category)
+                  .map((c) {
                 return DropdownMenuItem(
                   value: c,
-                  child: Text(c.name.toUpperCase()),
+                  child: Text(c == EventCategory.dating
+                      ? AppLocalizations.of(context)!
+                          .passportEventDating
+                          .toUpperCase()
+                      : c.name.toUpperCase()),
                 );
               }).toList(),
               onChanged: (v) => setState(() => _category = v!),

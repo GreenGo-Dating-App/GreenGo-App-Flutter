@@ -56,7 +56,7 @@ class CoinRewards {
   static const CoinReward firstMatch = CoinReward(
     rewardId: 'first_match',
     name: 'First Match', // i18n-ignore: internal reward catalogue, never displayed
-    description: 'Get your first match', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Make your first connection', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 50,
     type: RewardType.firstMatch,
     isRecurring: false,
@@ -67,7 +67,7 @@ class CoinRewards {
   static const CoinReward completeProfile = CoinReward(
     rewardId: 'complete_profile',
     name: 'Complete Profile', // i18n-ignore: internal reward catalogue, never displayed
-    description: 'Complete your dating profile', // i18n-ignore: internal reward catalogue, never displayed
+    description: 'Complete your profile', // i18n-ignore: internal reward catalogue, never displayed
     coinAmount: 100,
     type: RewardType.profileCompletion,
     isRecurring: false,

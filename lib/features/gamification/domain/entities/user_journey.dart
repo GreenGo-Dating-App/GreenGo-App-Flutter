@@ -137,7 +137,7 @@ extension JourneyCategoryExtension on JourneyCategory {
       case JourneyCategory.premium:
         return 'Unlock premium features and rewards';
       case JourneyCategory.mastery:
-        return 'Become a master of the dating game';
+        return 'Become a master connector';
       case JourneyCategory.special:
         return 'Exclusive milestones and achievements';
     }
@@ -275,7 +275,7 @@ class JourneyMilestones {
   static const JourneyMilestone firstMatch = JourneyMilestone(
     milestoneId: 'first_match',
     name: 'First Connection', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Get your first match', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Make your first connection', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/match.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.matches,
@@ -290,7 +290,7 @@ class JourneyMilestones {
   static const JourneyMilestone tenMatches = JourneyMilestone(
     milestoneId: 'ten_matches',
     name: 'Rising Star', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Get 10 matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Make 10 connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/star.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.matches,
@@ -306,7 +306,7 @@ class JourneyMilestones {
   static const JourneyMilestone fiftyMatches = JourneyMilestone(
     milestoneId: 'fifty_matches',
     name: 'Social Butterfly', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Get 50 matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Make 50 connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/butterfly.png',
     category: JourneyCategory.socializing,
     type: JourneyMilestoneType.matches,
@@ -520,7 +520,7 @@ class JourneyMilestones {
   static const JourneyMilestone hundredMatches = JourneyMilestone(
     milestoneId: 'hundred_matches',
     name: 'Centurion', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
-    description: 'Get 100 matches', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
+    description: 'Make 100 connections', // i18n-ignore: fallback; UI localizes by id (gamification_l10n.dart)
     iconAsset: 'assets/journey/centurion.png',
     category: JourneyCategory.mastery,
     type: JourneyMilestoneType.matches,

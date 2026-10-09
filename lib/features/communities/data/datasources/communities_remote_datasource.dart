@@ -1129,14 +1129,14 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           id: '',
           name: 'Local Guides - Paris', // i18n-ignore: seed content written to Firestore
           description:
-              'Your insider guide to Paris. Local recommendations for restaurants, activities, nightlife, and dating spots.', // i18n-ignore: seed content written to Firestore
+              'Your insider guide to Paris. Local recommendations for restaurants, activities, nightlife, and great places to meet people.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.localGuides,
           createdByUserId: 'system',
           createdByName: 'GreenGo',
           createdAt: now.subtract(const Duration(days: 110)),
           memberCount: 203,
           languages: const ['fr', 'en'],
-          tags: const ['paris', 'local-guide', 'dating-spots', 'restaurants'],
+          tags: const ['paris', 'local-guide', 'meetup-spots', 'restaurants'],
           isPublic: true,
           city: 'Paris',
           country: 'France',
@@ -1195,7 +1195,7 @@ class CommunitiesRemoteDataSourceImpl implements CommunitiesRemoteDataSource {
           id: '',
           name: 'Local Guides - Barcelona', // i18n-ignore: seed content written to Firestore
           description:
-              'Explore Barcelona like a local! Tapas bars, hidden beaches, cultural events, and the best dating spots in the city.', // i18n-ignore: seed content written to Firestore
+              'Explore Barcelona like a local! Tapas bars, hidden beaches, cultural events, and the best places to meet people in the city.', // i18n-ignore: seed content written to Firestore
           type: CommunityType.localGuides,
           createdByUserId: 'system',
           createdByName: 'GreenGo',

@@ -104,7 +104,7 @@ export const startWelcomeEmailSeries = functions.firestore
           {
             stepNumber: 2,
             delayDays: 1,
-            subject: 'Complete your profile to get more matches',
+            subject: 'Complete your profile to make more connections',
             template: 'welcome_day_2',
             isSent: false,
           },
@@ -402,40 +402,40 @@ function getEmailTemplate(emailType: string): any {
           </div>
           <h1 style="color: ${branding.primaryColor};">Welcome to GreenGo!</h1>
           <p>Hi {{userName}},</p>
-          <p>We're excited to have you join our community! GreenGo is the premium dating app for meaningful connections.</p>
-          <p>Your profile is {{profileCompleteness}}% complete. Complete it to get more matches!</p>
+          <p>We're excited to have you join our community! GreenGo is where you discover cultures, exchange languages and meet people from around the world.</p>
+          <p>Your profile is {{profileCompleteness}}% complete. Complete it to make more connections!</p>
           <a href="https://greengo.app/profile" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">Complete Profile</a>
-          <p style="margin-top: 30px;">Happy matching!</p>
+          <p style="margin-top: 30px;">Happy exploring!</p>
           <p>The GreenGo Team</p>
         </div>
       `,
     },
     weeklyDigest: {
-      subject: 'Your Week on GreenGo - {{newMatches}} New Matches!',
+      subject: 'Your Week on GreenGo - {{newMatches}} New Connections!',
       htmlContent: `
         <div style="background-color: ${branding.backgroundColor}; color: ${branding.textColor}; padding: 40px;">
           <h1 style="color: ${branding.primaryColor};">Your Weekly Recap</h1>
           <p>Hi {{userName}},</p>
           <p>Here's what happened this week:</p>
           <ul style="font-size: 18px; line-height: 1.8;">
-            <li><strong style="color: ${branding.primaryColor};">{{newMatches}}</strong> new matches</li>
+            <li><strong style="color: ${branding.primaryColor};">{{newMatches}}</strong> new connections</li>
             <li><strong style="color: ${branding.primaryColor};">{{newMessages}}</strong> messages exchanged</li>
-            <li><strong style="color: ${branding.primaryColor};">{{newLikes}}</strong> people liked you</li>
+            <li><strong style="color: ${branding.primaryColor};">{{newLikes}}</strong> people wanted to connect</li>
           </ul>
-          <a href="https://greengo.app/matches" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">View Your Matches</a>
+          <a href="https://greengo.app/matches" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">View Your Connections</a>
         </div>
       `,
     },
     reEngagement: {
-      subject: 'We miss you, {{userName}}! {{newLikesSinceLastVisit}} people liked you',
+      subject: 'We miss you, {{userName}}! {{newLikesSinceLastVisit}} people want to connect',
       htmlContent: `
         <div style="background-color: ${branding.backgroundColor}; color: ${branding.textColor}; padding: 40px;">
           <h1 style="color: ${branding.primaryColor};">We Miss You!</h1>
           <p>Hi {{userName}},</p>
           <p>It's been {{daysSinceLastActive}} days since your last visit. You've been missed!</p>
-          <p><strong style="color: ${branding.primaryColor};">{{newLikesSinceLastVisit}} people</strong> liked you while you were away.</p>
-          <p>You have <strong>{{totalMatches}} matches</strong> waiting for you!</p>
-          <a href="https://greengo.app/likes" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">See Who Likes You</a>
+          <p><strong style="color: ${branding.primaryColor};">{{newLikesSinceLastVisit}} people</strong> wanted to connect with you while you were away.</p>
+          <p>You have <strong>{{totalMatches}} connections</strong> waiting for you!</p>
+          <a href="https://greengo.app/likes" style="background-color: ${branding.primaryColor}; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px;">See Who Wants to Connect</a>
         </div>
       `,
     },

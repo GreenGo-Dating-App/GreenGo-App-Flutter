@@ -48,7 +48,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get passportEventDating => 'Citas';
+  String get passportEventDating => 'Encuentros';
 
   @override
   String get passportEventSocial => 'Social';
@@ -98,7 +98,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourCardTapDesc =>
-      'Toca el centro de una tarjeta para abrir el menú de acciones: dar like, súper like o ver el perfil completo.';
+      'Toca el centro de una tarjeta para abrir el menú de acciones: conectar, Priority Connect o ver su perfil completo.';
 
   @override
   String get tourCardEdgeTitle => 'Explora las fotos';
@@ -126,7 +126,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourModeToggleDesc =>
-      'Toca aquí para cambiar entre cuadrícula y modo deslizar. En modo deslizar: desliza a la derecha para like, a la izquierda para pasar y hacia arriba para súper like.';
+      'Toca aquí para cambiar entre cuadrícula y modo deslizar. En modo deslizar: desliza a la derecha para conectar, a la izquierda para pasar y hacia arriba para enviar un Priority Connect.';
 
   @override
   String get tourGlobeTitle => 'Explora el globo';
@@ -208,7 +208,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tourSwipeHintPass => 'Pasar';
 
   @override
-  String get tourSwipeHintSuper => 'Súper like';
+  String get tourSwipeHintSuper => 'Priority Connect';
 
   @override
   String get tourChatHoldTitle => 'Mantén un mensaje';
@@ -721,7 +721,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get adminEngagementReportsSubtitle =>
-      'Ver estadísticas de coincidencias y mensajes';
+      'Ver estadísticas de conexiones y mensajes';
 
   @override
   String get adminEnterEmailAddress => 'Introduce una dirección de correo';
@@ -885,10 +885,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Administra la configuración de tu aplicación GreenGo';
 
   @override
-  String get adminMatchPriority => 'Prioridad de coincidencia';
+  String get adminMatchPriority => 'Prioridad de conexión';
 
   @override
-  String get adminMatchingAndVisibility => 'Coincidencias y visibilidad';
+  String get adminMatchingAndVisibility => 'Conexiones y visibilidad';
 
   @override
   String get adminMessageContext => 'Contexto del mensaje (50 antes/después)';
@@ -1475,7 +1475,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appName => 'GreenGoChat';
 
   @override
-  String get appTagline => 'Descubre Tu Pareja Perfecta';
+  String get appTagline => 'Descubre culturas y gente de todo el mundo';
 
   @override
   String get approveVerification => 'Aprobar';
@@ -1655,160 +1655,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get bioUpdatedTitle => '¡Bio Actualizada!';
 
   @override
-  String get blindDateActivate => 'Activar Modo Cita a Ciegas';
-
-  @override
-  String get blindDateDeactivate => 'Desactivar';
-
-  @override
-  String get blindDateDeactivateMessage =>
-      'Volverás al modo de descubrimiento normal.';
-
-  @override
-  String get blindDateDeactivateTitle => '¿Desactivar Modo Cita a Ciegas?';
-
-  @override
-  String get blindDateDeactivateTooltip => 'Desactivar Modo Cita a Ciegas';
-
-  @override
-  String blindDateFeatureInstantReveal(int cost) {
-    return 'Revelación instantánea por $cost monedas';
-  }
-
-  @override
-  String get blindDateFeatureNoPhotos =>
-      'Las fotos de perfil no son visibles al inicio';
-
-  @override
-  String get blindDateFeaturePersonality =>
-      'Enfoque en personalidad e intereses';
-
-  @override
-  String get blindDateFeatureUnlock => 'Las fotos se desbloquean al chatear';
-
-  @override
-  String get blindDateGetCoins => 'Obtener Monedas';
-
-  @override
-  String get blindDateInstantReveal => 'Revelación Instantánea';
-
-  @override
-  String blindDateInstantRevealMessage(int cost) {
-    return '¿Revelar todas las fotos de esta coincidencia por $cost monedas?';
-  }
-
-  @override
-  String blindDateInstantRevealTooltip(int cost) {
-    return 'Revelación instantánea ($cost monedas)';
-  }
-
-  @override
-  String get blindDateInsufficientCoins => 'Monedas Insuficientes';
-
-  @override
-  String blindDateInsufficientCoinsMessage(int cost) {
-    return 'Necesitas $cost monedas para revelar las fotos al instante.';
-  }
-
-  @override
-  String get blindDateInterests => 'Intereses';
-
-  @override
-  String blindDateKmAway(String distance) {
-    return 'a $distance km';
-  }
-
-  @override
-  String get blindDateLetsExchange => '¡Empieza a conectar!';
-
-  @override
-  String get blindDateMatchMessage =>
-      '¡Os gustáis mutuamente! Empezad a chatear para revelar vuestras fotos.';
-
-  @override
-  String blindDateMessageProgress(int current, int total) {
-    return '$current / $total mensajes';
-  }
-
-  @override
-  String blindDateMessagesToGo(int count) {
-    return 'faltan $count';
-  }
-
-  @override
-  String blindDateMessagesUntilReveal(int count) {
-    return '$count mensajes hasta la revelación';
-  }
-
-  @override
-  String get blindDateModeActivated => '¡Modo Cita a Ciegas activado!';
-
-  @override
-  String blindDateModeDescription(int threshold) {
-    return 'Conecta por personalidad, no por apariencia.\nLas fotos se revelan después de $threshold mensajes.';
-  }
-
-  @override
-  String get blindDateModeTitle => 'Modo Cita a Ciegas';
-
-  @override
-  String get blindDateMysteryPerson => 'Persona Misteriosa';
-
-  @override
-  String get blindDateNoCandidates => 'No hay candidatos disponibles';
-
-  @override
-  String get blindDateNoMatches => 'Aún no hay coincidencias';
-
-  @override
-  String blindDatePendingReveal(int count) {
-    return 'Revelación Pendiente ($count)';
-  }
-
-  @override
-  String get blindDatePhotoRevealProgress => 'Progreso de Revelación de Fotos';
-
-  @override
-  String blindDatePhotosRevealHint(int threshold) {
-    return 'Las fotos se revelan después de $threshold mensajes';
-  }
-
-  @override
-  String blindDatePhotosRevealed(int coinsSpent) {
-    return '¡Fotos reveladas! $coinsSpent monedas gastadas.';
-  }
-
-  @override
-  String get blindDatePhotosRevealedLabel => '¡Fotos reveladas!';
-
-  @override
-  String get blindDateReveal => 'Revelar';
-
-  @override
-  String blindDateRevealed(int count) {
-    return 'Revelados ($count)';
-  }
-
-  @override
-  String get blindDateRevealedMatch => 'Match Revelado';
-
-  @override
-  String get blindDateStartSwiping =>
-      '¡Empieza a deslizar para encontrar tu cita a ciegas!';
-
-  @override
-  String get blindDateTabDiscover => 'Descubrir';
-
-  @override
-  String get blindDateTabMatches => 'Coincidencias';
-
-  @override
-  String get blindDateTitle => 'Cita a Ciegas';
-
-  @override
-  String get blindDateViewMatch => 'Ver Coincidencia';
-
-  @override
   String bonusCoinsText(int bonus, Object bonusCoins) {
     return ' (+$bonus de bonificación!)';
   }
@@ -1859,13 +1705,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Esta función está disponible después de que tu cuenta sea verificada.';
 
   @override
-  String get cantUndoMatched => 'No se puede deshacer — ¡ya hiciste match!';
+  String get cantUndoMatched => 'No se puede deshacer: ¡ya están conectados!';
 
   @override
-  String get casualCategory => 'Casual';
-
-  @override
-  String get casualDating => 'Citas casuales';
+  String get casualDating => 'Encuentros informales';
 
   @override
   String get categoryFlashcard => 'Tarjeta';
@@ -2598,7 +2441,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get chatStartSwipingToChat =>
-      '¡Desliza y haz match para chatear con personas!';
+      '¡Empieza a explorar y conectar para chatear con gente!';
 
   @override
   String get chatStatusAssigned => 'Asignado';
@@ -3044,7 +2887,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get coinsUnlockPremium => 'Desbloquea funciones premium';
 
   @override
-  String get coinsVideoCallMatches => 'Videollamada con tus matches';
+  String get coinsVideoCallMatches => 'Videollamada con tus conexiones';
 
   @override
   String get coinsVideoMinutes => 'Minutos de Video';
@@ -3445,11 +3288,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get culturalExchangeDailyInsight => 'Información cultural diaria';
 
   @override
-  String get culturalExchangeDatingEtiquette => 'Etiqueta para citas';
+  String get culturalExchangeDatingEtiquette => 'Etiqueta social';
 
   @override
-  String get culturalExchangeDatingEtiquetteGuide =>
-      'Guía de etiqueta para citas';
+  String get culturalExchangeDatingEtiquetteGuide => 'Guía de etiqueta social';
 
   @override
   String get culturalExchangeLoadingCountries => 'Cargando países...';
@@ -3520,67 +3362,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dateOfBirth => 'Fecha de Nacimiento';
 
   @override
-  String get datePlanningCategory => 'Planificar Cita';
-
-  @override
-  String get dateSchedulerAccept => 'Aceptar';
-
-  @override
-  String get dateSchedulerCancelConfirm =>
-      '¿Estás seguro de que quieres cancelar esta cita?';
-
-  @override
-  String get dateSchedulerCancelTitle => 'Cancelar Cita';
-
-  @override
-  String get dateSchedulerConfirmed => '¡Cita confirmada!';
-
-  @override
-  String get dateSchedulerDecline => 'Rechazar';
-
-  @override
-  String get dateSchedulerEnterTitle => 'Por favor ingresa un título';
-
-  @override
-  String get dateSchedulerKeepDate => 'Mantener Cita';
-
-  @override
-  String get dateSchedulerNotesLabel => 'Notas (opcional)';
-
-  @override
-  String get dateSchedulerPlanningHint => 'ej., Café, Cena, Película...';
-
-  @override
-  String get dateSchedulerReasonLabel => 'Motivo (opcional)';
-
-  @override
-  String get dateSchedulerReschedule => 'Reprogramar';
-
-  @override
-  String get dateSchedulerRescheduleTitle => 'Reprogramar Cita';
-
-  @override
-  String get dateSchedulerSchedule => 'Programar';
-
-  @override
-  String get dateSchedulerScheduled => '¡Cita programada!';
-
-  @override
-  String get dateSchedulerTabPast => 'Pasadas';
-
-  @override
-  String get dateSchedulerTabPending => 'Pendientes';
-
-  @override
-  String get dateSchedulerTabUpcoming => 'Próximas';
-
-  @override
-  String get dateSchedulerTitle => 'Mis Citas';
-
-  @override
-  String get dateSchedulerWhatPlanning => '¿Qué estás planeando?';
-
-  @override
   String dayNumber(int day) {
     return 'Día $day';
   }
@@ -3642,7 +3423,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get discoveryFilterLiked => 'Conectados';
 
   @override
-  String get discoveryFilterMatches => 'Matches';
+  String get discoveryFilterMatches => 'Conexiones';
 
   @override
   String get discoveryFilterPassed => 'Rechazados';
@@ -3773,14 +3554,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get emptyStateNoMatchesMessage =>
-      '¡Empieza a deslizar para encontrar tu pareja perfecta!';
+      '¡Empieza a explorar para hacer tu primera conexión!';
 
   @override
-  String get emptyStateNoMatchesTitle => 'Aún no hay coincidencias';
+  String get emptyStateNoMatchesTitle => 'Aún no hay conexiones';
 
   @override
   String get emptyStateNoMessagesMessage =>
-      'Cuando hagas match con alguien, podrás chatear aquí.';
+      'Cuando conectes con alguien, podrás empezar a chatear aquí.';
 
   @override
   String get emptyStateNoMessagesTitle => 'Sin mensajes';
@@ -4327,7 +4108,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get filterAll => 'Todos';
 
   @override
-  String get filterFromMatch => 'Match';
+  String get filterFromMatch => 'Conexión';
 
   @override
   String get filterFromSearch => 'Directo';
@@ -4363,9 +4144,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get flashcardReviewLabel => 'Tarjetas';
-
-  @override
-  String get flirtyCategory => 'Coqueto';
 
   @override
   String get foodDiningCategory => 'Comida y Restaurantes';
@@ -5324,7 +5102,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get greatInterestsHelp =>
-      '¡Genial! Tus intereses nos ayudan a encontrar mejores coincidencias';
+      '¡Genial! Tus intereses nos ayudan a sugerirte mejores conexiones';
 
   @override
   String get greengoLearn => 'GreenGo Learn';
@@ -5356,9 +5134,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get icebreakersCategoryCompliments => 'Cumplidos';
-
-  @override
-  String get icebreakersCategoryDateIdeas => 'Ideas para citas';
 
   @override
   String get icebreakersCategoryDeep => 'Profundo';
@@ -5624,7 +5399,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get joinMessage =>
-      'Únete a GreenGoChat y encuentra tu pareja perfecta';
+      'Únete a GreenGoChat y conecta con gente de todo el mundo';
 
   @override
   String get keepSwiping => 'Seguir Deslizando';
@@ -5766,7 +5541,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get learningCustomPackTitleHint =>
-      'ej., \"Saludos en español para citas\"';
+      'p. ej., \"Saludos en español para viajeros\"';
 
   @override
   String get learningDescribeImage => 'Describe esta imagen';
@@ -5916,7 +5691,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get learningLessonTitleHint =>
-      'p. ej., \"Saludos en español para citas\"';
+      'p. ej., \"Saludos en español para viajeros\"';
 
   @override
   String get learningLessonTitleLabel => 'Título de la Lección';
@@ -6498,7 +6273,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get logout => 'Cerrar Sesión';
 
   @override
-  String get longTermRelationship => 'Relación a largo plazo';
+  String get longTermRelationship => 'Amistades duraderas';
 
   @override
   String get lookingFor => 'Busca';
@@ -6531,28 +6306,28 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String matchPercentage(String percentage) {
-    return '$percentage compatibilidad';
+    return '$percentage en común';
   }
 
   @override
   String matchedOnDate(String date) {
-    return 'Match el $date';
+    return 'Conectados el $date';
   }
 
   @override
   String matchedWithDate(String name, String date) {
-    return 'Hiciste match con $name el $date';
+    return 'Conectaste con $name el $date';
   }
 
   @override
-  String get matches => 'Coincidencias';
+  String get matches => 'Conexiones';
 
   @override
   String get matchesClearFilters => 'Limpiar Filtros';
 
   @override
   String matchesCount(int count) {
-    return '$count coincidencias';
+    return '$count conexiones';
   }
 
   @override
@@ -6565,24 +6340,24 @@ class AppLocalizationsEs extends AppLocalizations {
   String get matchesFilterNew => 'Nuevos';
 
   @override
-  String get matchesNoMatchesFound => 'No se encontraron matches';
+  String get matchesNoMatchesFound => 'No se encontraron conexiones';
 
   @override
-  String get matchesNoMatchesYet => 'Sin matches aun';
+  String get matchesNoMatchesYet => 'Aún no hay conexiones';
 
   @override
   String matchesOfCount(int filtered, int total) {
-    return '$filtered de $total matches';
+    return '$filtered de $total conexiones';
   }
 
   @override
   String matchesOfTotal(int filtered, int total) {
-    return '$filtered de $total coincidencias';
+    return '$filtered de $total conexiones';
   }
 
   @override
   String get matchesStartSwiping =>
-      'Empieza a deslizar para encontrar tus matches!';
+      '¡Empieza a explorar para hacer conexiones!';
 
   @override
   String get matchesTryDifferent => 'Intenta una busqueda o filtro diferente';
@@ -7039,7 +6814,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String nicknameSearchActionMatch(String nickname) {
-    return '¡Es un match con @$nickname!';
+    return '¡Ahora estás conectado con @$nickname!';
   }
 
   @override
@@ -7078,10 +6853,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noLeaderboardData => 'Aún no hay datos de clasificación';
 
   @override
-  String get noMatchesFound => 'No se encontraron coincidencias';
+  String get noMatchesFound => 'No se encontraron conexiones';
 
   @override
-  String get noMatchesYet => 'Sin coincidencias aún';
+  String get noMatchesYet => 'Aún no hay conexiones';
 
   @override
   String get noMessages => 'No hay mensajes aún';
@@ -7151,7 +6926,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get notificationDialogMessage =>
-      'Activa las notificaciones para saber cuándo recibes matches, mensajes y conexiones prioritarias.';
+      'Activa las notificaciones para saber cuándo recibes nuevas conexiones, mensajes y Priority Connects.';
 
   @override
   String get notificationDialogNotNow => 'Ahora no';
@@ -7176,11 +6951,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notificationMasterControls => 'Controles principales';
 
   @override
-  String get notificationMatchExpiring => 'Match por expirar';
+  String get notificationMatchExpiring => 'Conexión a punto de caducar';
 
   @override
   String get notificationMatchExpiringSubtitle =>
-      'Cuando un match está por expirar';
+      'Cuando una conexión está a punto de caducar';
 
   @override
   String notificationNewChat(String nickname) {
@@ -7196,18 +6971,20 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notificationNewLikes => 'Nuevos likes';
 
   @override
-  String get notificationNewLikesSubtitle => 'Cuando alguien te da like';
+  String get notificationNewLikesSubtitle =>
+      'Cuando alguien quiere conectar contigo';
 
   @override
   String notificationNewMatch(String nickname) {
-    return '¡Es un Match! Hiciste match con @$nickname. Comienza a chatear ahora.';
+    return '¡Nueva conexión! Tú y @$nickname ya están conectados. Empieza a chatear ahora.';
   }
 
   @override
-  String get notificationNewMatches => 'Nuevos matches';
+  String get notificationNewMatches => 'Nuevas conexiones';
 
   @override
-  String get notificationNewMatchesSubtitle => 'Cuando obtienes un nuevo match';
+  String get notificationNewMatchesSubtitle =>
+      'Cuando tienes una nueva conexión';
 
   @override
   String notificationNewMessage(String nickname) {
@@ -7436,7 +7213,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get onboardingBioHint =>
-      'Cuéntanos sobre tus intereses, pasatiempos, qué buscas...';
+      'Cuéntanos tus intereses, los idiomas que hablas y las culturas que quieres explorar...';
 
   @override
   String get onboardingBioMinLength =>
@@ -7502,7 +7279,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get onboardingInterestsHelpMatches =>
-      'Tus intereses nos ayudan a encontrar mejores coincidencias para ti';
+      'Tus intereses nos ayudan a conectarte con personas que comparten tu cultura e idiomas';
 
   @override
   String get onboardingInterestsSubtitle =>
@@ -8190,7 +7967,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileDeleteAccountWarning =>
-      'Esta acción es permanente y no se puede deshacer. Todos tus datos, matches y mensajes serán eliminados. Por favor, introduce tu contraseña para confirmar.';
+      'Esta acción es permanente y no se puede deshacer. Se eliminarán todos tus datos, conexiones y mensajes. Introduce tu contraseña para confirmar.';
 
   @override
   String get profileDiscoveryRestarted =>
@@ -8201,7 +7978,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileDobInfo =>
-      'Tu fecha de nacimiento no puede cambiarse por la verificacion de edad. Tu edad exacta es visible para los matches.';
+      'Tu fecha de nacimiento no se puede cambiar por motivos de verificación de edad. Tu edad exacta es visible para tus conexiones.';
 
   @override
   String get profileEditBasicInfo => 'Editar Info Basica';
@@ -8317,7 +8094,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileLookingFor => 'Busco';
 
   @override
-  String get profileLookingForHint => 'ej. Relacion a largo plazo';
+  String get profileLookingForHint =>
+      'p. ej., compañero de intercambio de idiomas';
 
   @override
   String get profileMaxLanguagesAllowed => 'Maximo 3 idiomas permitidos';
@@ -8427,7 +8205,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileRestartDiscoveryDialogContent =>
-      'Esto borrará todos tus swipes (conexiones, rechazos, conexiones prioritarias) para que puedas redescubrir a todos desde cero.\n\nTus matches y chats NO se verán afectados.';
+      'Esto borrará todos tus swipes (conexiones, rechazos, conexiones prioritarias) para que puedas redescubrir a todos desde cero.\n\nTus conexiones y chats NO se verán afectados.';
 
   @override
   String get profileRestartDiscoveryDialogTitle => 'Reiniciar descubrimiento';
@@ -8549,7 +8327,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profilingDescription =>
-      'Permitir analizar tus preferencias para proporcionar mejores sugerencias de coincidencia';
+      'Permítenos analizar tus preferencias para ofrecerte mejores sugerencias de conexión';
 
   @override
   String get progress => 'Progreso';
@@ -8571,7 +8349,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get progressJourneyDescription =>
-      'Ve tu viaje completo de citas y logros';
+      'Mira tu recorrido completo en GreenGo y tus hitos';
 
   @override
   String get progressLabel => 'Progreso';
@@ -8784,9 +8562,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get rewardsAndProgress => 'Recompensas y Progreso';
 
   @override
-  String get romanticCategory => 'Romántico';
-
-  @override
   String get roundTimer => 'Temporizador de Ronda';
 
   @override
@@ -8814,17 +8589,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get safetyAdditionalDetailsHint => 'Detalles adicionales...';
 
   @override
-  String get safetyCheckInDescription =>
-      'Configura un check-in para tu cita. Te recordaremos que hagas check-in y alertaremos a tus contactos si no respondes.';
-
-  @override
   String get safetyCheckInEvery => 'Check-in cada';
-
-  @override
-  String get safetyCheckInScheduled => '¡Check-in de cita programado!';
-
-  @override
-  String get safetyDateCheckIn => 'Check-in de cita';
 
   @override
   String get safetyDateTime => 'Fecha y hora';
@@ -8929,7 +8694,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get secondChanceDescription =>
-      '¡Mira los perfiles que pasaste y que les gustaste!';
+      '¡Mira los perfiles que pasaste y que querían conectar contigo!';
 
   @override
   String secondChanceDistanceAway(Object distance) {
@@ -8961,7 +8726,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String secondChanceLikedYouAgo(Object ago) {
-    return 'Le gustaste hace $ago';
+    return 'Quiso conectar $ago';
   }
 
   @override
@@ -9218,7 +8983,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Compra anterior encontrada. Inténtalo de nuevo.';
 
   @override
-  String get shopPriorityMatching => 'Coincidencia prioritaria';
+  String get shopPriorityMatching => 'Conexiones prioritarias';
 
   @override
   String shopPurchaseCoinsFor(String coins, String price) {
@@ -9292,7 +9057,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get shopUnlockPremium =>
-      'Desbloquea funciones premium y mejora tu experiencia de citas';
+      'Desbloquea funciones premium y aprovecha GreenGo al máximo';
 
   @override
   String get shopUpgradeAndSave =>
@@ -9336,7 +9101,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get shortTermRelationship => 'Relación a corto plazo';
+  String get shortTermRelationship => 'Nuevos conocidos';
 
   @override
   String showingProfiles(int count) {
@@ -9388,7 +9153,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get socialProfilesTip =>
-      'Tus perfiles sociales serán visibles en tu perfil de citas y ayudarán a otros a verificar tu identidad.';
+      'Tus perfiles sociales serán visibles en tu perfil de GreenGo y ayudarán a otros a verificar tu identidad.';
 
   @override
   String get somethingWentWrong => 'Algo salió mal';
@@ -9504,7 +9269,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get startSwipingToFindMatches =>
-      '¡Comienza a deslizar para encontrar tus coincidencias!';
+      '¡Empieza a explorar para hacer conexiones!';
 
   @override
   String get step => 'Paso';
@@ -9693,10 +9458,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourDiscoveryDescription =>
-      'Desliza perfiles para encontrar tu match perfecto. Desliza a la derecha si te interesa, a la izquierda para pasar.';
+      'Explora perfiles para encontrar gente con quien conectar. Desliza a la derecha para conectar y a la izquierda para pasar.';
 
   @override
-  String get tourDiscoveryTitle => 'Descubre Matches';
+  String get tourDiscoveryTitle => 'Descubre gente';
 
   @override
   String get tourDone => 'Listo';
@@ -9710,14 +9475,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourMatchesDescription =>
-      '¡Ve a todos los que también les gustaste! Inicia conversaciones con tus matches mutuos.';
+      '¡Mira a todos los que también conectaron contigo! Inicia conversaciones con tus conexiones mutuas.';
 
   @override
-  String get tourMatchesTitle => 'Tus Matches';
+  String get tourMatchesTitle => 'Tus conexiones';
 
   @override
   String get tourMessagesDescription =>
-      'Chatea con tus matches aquí. Envía mensajes, fotos y notas de voz para conectar.';
+      'Chatea aquí con tus conexiones. Envía mensajes, fotos y notas de voz.';
 
   @override
   String get tourMessagesTitle => 'Mensajes';
@@ -9748,7 +9513,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourShopDescription =>
-      'Obtén monedas y funciones premium para mejorar tu experiencia.';
+      'Consigue monedas y funciones premium para aprovechar GreenGo al máximo.';
 
   @override
   String get tourShopTitle => 'Tienda y Monedas';
@@ -9946,15 +9711,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String unmatchConfirm(String name) {
-    return 'Estas seguro de que quieres deshacer el match con $name? Esto no se puede deshacer.';
+    return '¿Seguro que quieres eliminar tu conexión con $name? Esto no se puede deshacer.';
   }
 
   @override
-  String get unmatchLabel => 'Deshacer Match';
+  String get unmatchLabel => 'Eliminar conexión';
 
   @override
   String unmatchedWith(String name) {
-    return 'Dejaste de ser match con $name';
+    return 'Ya no estás conectado con $name';
   }
 
   @override
@@ -10597,7 +10362,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String youMatchedWithOnDate(String name, String date) {
-    return 'Hiciste match con $name el $date';
+    return 'Conectaste con $name el $date';
   }
 
   @override
@@ -10664,11 +10429,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideConnectionsItem1 =>
-      '¡Cuando dos personas hacen Connect mutuamente, es un match!';
+      '¡Cuando dos personas hacen Connect mutuamente, se crea una conexión!';
 
   @override
   String get guideConnectionsItem2 =>
-      'Después de hacer match, puedes empezar a chatear de inmediato.';
+      'Una vez conectados, pueden empezar a chatear de inmediato.';
 
   @override
   String get guideConnectionsItem3 =>
@@ -10676,7 +10441,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideConnectionsItem4 =>
-      'Consulta la pestaña de Intercambios para ver todos tus matches y conversaciones.';
+      'Consulta la pestaña de Intercambios para ver todas tus conexiones y conversaciones.';
 
   @override
   String get guideChatTitle => 'Chat y mensajería';
@@ -10724,14 +10489,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideTravelItem3 =>
-      'Los compañeros de intercambio de idiomas se emparejan según lo que hablas y lo que quieres aprender.';
+      'Los compañeros de intercambio de idiomas se sugieren según lo que hablas y lo que quieres aprender.';
 
   @override
   String get guideMembershipTitle => 'Membresía básica';
 
   @override
   String get guideMembershipItem1 =>
-      'Tu membresía básica te da acceso a todas las funciones principales: deslizar, chatear y hacer match.';
+      'Tu membresía básica te da acceso a todas las funciones principales: deslizar, chatear y conectar.';
 
   @override
   String get guideMembershipItem2 =>
@@ -10769,7 +10534,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideCoinsItem2 =>
-      '• Priority Connect: 10 monedas  • Boost: 50 monedas  • Mensaje directo: 2/día gratis, luego 50 monedas';
+      '• Priority Connect: 10 monedas  • Boost: 50 monedas  • Direct Connect: 2/día gratis, luego 50 monedas';
 
   @override
   String get guideCoinsItem3 =>
@@ -10834,7 +10599,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get guideExchangesItem3 =>
-      'Usa los filtros para organizar tus chats: Todos, Nuevos, Sin responder, Favoritos, Por aprobar, Match y Búsqueda.';
+      'Usa los filtros para organizar tus chats: Todos, Nuevos, Sin responder, Favoritos, Por aprobar, Conexión y Búsqueda.';
 
   @override
   String get guideExchangesItem4 =>
@@ -10967,13 +10732,13 @@ class AppLocalizationsEs extends AppLocalizations {
       'Buscando perfiles increíbles alrededor del mundo...';
 
   @override
-  String get loadingMsg2 => 'Conectando corazones a través de continentes...';
+  String get loadingMsg2 => 'Conectando personas de todos los continentes...';
 
   @override
   String get loadingMsg3 => 'Descubriendo personas increíbles cerca de ti...';
 
   @override
-  String get loadingMsg4 => 'Preparando tus coincidencias personalizadas...';
+  String get loadingMsg4 => 'Preparando tus sugerencias personalizadas...';
 
   @override
   String get loadingMsg5 => 'Explorando perfiles de cada rincón del mundo...';
@@ -10989,7 +10754,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get loadingMsg8 => 'Cargando perfiles hermosos solo para ti...';
 
   @override
-  String get loadingMsg9 => 'Buscando tu pareja perfecta...';
+  String get loadingMsg9 => 'Buscando gente que comparte tus intereses...';
 
   @override
   String get loadingMsg10 => 'Acercando el mundo a ti...';
@@ -11004,8 +10769,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get loadingMsg13 => 'Conectándote a un mundo de posibilidades...';
 
   @override
-  String get loadingMsg14 =>
-      'Encontrando las mejores coincidencias en tu zona...';
+  String get loadingMsg14 => 'Buscando gente genial en tu zona...';
 
   @override
   String get loadingMsg15 =>
@@ -11026,7 +10790,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get loadingMsg20 =>
-      'El amor no conoce fronteras, y nosotros tampoco...';
+      'La curiosidad no conoce fronteras, y nosotros tampoco...';
 
   @override
   String get loadingMsg21 => 'Calentando tu feed de descubrimiento...';
@@ -11945,7 +11709,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Descubre culturas, practica idiomas, encuentra eventos locales y conoce personas cerca de ti, sin barreras de idioma.';
 
   @override
-  String get onboardingPickInterests => '¿Qué te encanta?';
+  String get onboardingPickInterests => '¿Qué te interesa?';
 
   @override
   String get onboardingPickLanguages => 'Idiomas que hablas';
@@ -13323,7 +13087,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourNotifHubDesc =>
-      'Cada me gusta, match, mensaje y novedad de eventos llega aqui.';
+      'Cada conexión, mensaje y novedad de eventos llega aquí.';
 
   @override
   String get tourNotifOpenTitle => 'Abre y gestiona';
@@ -18540,7 +18304,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnActiveListeningQ0 =>
-      'Tu cita te cuenta una historia de su último viaje. ¿Cuál es la mejor respuesta de escucha activa?';
+      'La persona con la que quedaste te cuenta su último viaje. ¿Cuál es la mejor respuesta de escucha activa?';
 
   @override
   String get safetyAcademyLsnActiveListeningQ0O0 => '“Guay. Bueno, yo fui a…”';
@@ -18611,7 +18375,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnBoundariesS3I2 =>
-      'Dejar claro qué contacto físico te resulta cómodo en las citas';
+      'Ser claro sobre tu espacio personal y tu nivel de comodidad al quedar';
 
   @override
   String get safetyAcademyLsnBoundariesS3I3 =>
@@ -18623,11 +18387,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnBoundariesS4 =>
-      'Recuerda: poner límites no es ser difícil. Es respeto por ti mismo/a. Una pareja que te valora apreciará y respetará tus límites.';
+      'Recuerda: poner límites no es ser difícil. Es respeto por ti mismo. Una persona que te valora apreciará y respetará tus límites.';
 
   @override
   String get safetyAcademyLsnBoundariesQ0 =>
-      'Le dices a tu match que todavía no te sientes cómodo/a compartiendo tu número, y sigue insistiendo. ¿Qué indica esto?';
+      'Le dices a una nueva conexión que aún no te sientes cómodo compartiendo tu número, y sigue insistiendo. ¿Qué indica esto?';
 
   @override
   String get safetyAcademyLsnBoundariesQ0O0 => 'Está muy interesado/a en ti';
@@ -18666,7 +18430,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnBoundariesQ1O3 =>
-      'Los límites no son necesarios en las citas';
+      'Los límites no son necesarios al conocer gente nueva';
 
   @override
   String get safetyAcademyLsnBoundariesQ1Exp =>
@@ -18677,7 +18441,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnConsentS0 =>
-      'El consentimiento es un acuerdo claro, entusiasta y continuo. Se aplica a todos los aspectos de las citas: desde compartir información personal hasta la intimidad física.';
+      'El consentimiento es un acuerdo claro, entusiasta y continuo. Se aplica a cada interacción: desde compartir información personal hasta el contacto físico.';
 
   @override
   String get safetyAcademyLsnConsentS1 =>
@@ -18739,7 +18503,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnConsentQ1 =>
-      'Tu cita aceptó venir a tu casa, pero parece incómoda después de llegar. ¿Qué deberías hacer?';
+      'Alguien que conociste en la app aceptó acompañarte a un evento, pero parece incómodo al llegar. ¿Qué deberías hacer?';
 
   @override
   String get safetyAcademyLsnConsentQ1O0 =>
@@ -18767,15 +18531,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyModCulturalSensitivityDesc =>
-      'Vive las citas interculturales con respeto, curiosidad y conciencia.';
+      'Vive amistades interculturales con respeto, curiosidad y conciencia.';
 
   @override
   String get safetyAcademyLsnCulturalDosTitle =>
-      'Citas interculturales: lo que sí debes hacer';
+      'Lo que sí hacer entre culturas';
 
   @override
   String get safetyAcademyLsnCulturalDosS0 =>
-      'Salir con alguien de otra cultura puede ser una de las experiencias más enriquecedoras. Hazlo con curiosidad sincera, respeto y ganas de aprender.';
+      'Conocer a alguien de otra cultura puede ser una de las experiencias más enriquecedoras. Hazlo con curiosidad genuina, respeto y ganas de aprender.';
 
   @override
   String get safetyAcademyLsnCulturalDosS1 =>
@@ -18783,11 +18547,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnCulturalDosS2 =>
-      'Lo que sí debes hacer en citas interculturales';
+      'Lo que sí hacer en conexiones interculturales';
 
   @override
   String get safetyAcademyLsnCulturalDosS2I0 =>
-      'Infórmate sobre las costumbres culturales básicas antes de una cita';
+      'Infórmate sobre las costumbres culturales básicas antes de quedar';
 
   @override
   String get safetyAcademyLsnCulturalDosS2I1 =>
@@ -18815,7 +18579,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnCulturalDosQ0 =>
-      '¿Cuál es la mejor forma de conocer la cultura de tu cita?';
+      '¿Cuál es la mejor manera de conocer la cultura de un nuevo amigo?';
 
   @override
   String get safetyAcademyLsnCulturalDosQ0O0 =>
@@ -18839,7 +18603,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnCulturalDosQ1 =>
-      'Tu cita menciona una tradición familiar que no entiendes. ¿Qué deberías hacer?';
+      'Un nuevo amigo menciona una tradición familiar que no entiendes. ¿Qué deberías hacer?';
 
   @override
   String get safetyAcademyLsnCulturalDosQ1O0 =>
@@ -18862,19 +18626,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnCulturalDontsTitle =>
-      'Citas interculturales: lo que no debes hacer';
+      'Lo que no hacer entre culturas';
 
   @override
   String get safetyAcademyLsnCulturalDontsS0 =>
-      'Los comentarios bienintencionados pero desinformados pueden resultar hirientes o despectivos. Conocer los errores más comunes te ayuda a vivir las citas interculturales con tacto.';
+      'Los comentarios bienintencionados pero desinformados pueden resultar hirientes o despectivos. Conocer los errores comunes te ayuda a vivir amistades interculturales con tacto.';
 
   @override
   String get safetyAcademyLsnCulturalDontsS1 =>
-      'Nunca reduzcas a nadie a su etnia o nacionalidad. Comentarios como “Siempre he querido salir con alguien [nacionalidad]” o “Eres guapo/a para ser [etnia]” son hirientes, no halagos.';
+      'Nunca reduzcas a alguien a su etnia o nacionalidad. Comentarios como \"Siempre quise tener un amigo de [país]\" o \"Hablas bien para ser [nacionalidad]\" hieren, no halagan.';
 
   @override
   String get safetyAcademyLsnCulturalDontsS2 =>
-      'Lo que no debes hacer en citas interculturales';
+      'Lo que no hacer en conexiones interculturales';
 
   @override
   String get safetyAcademyLsnCulturalDontsS2I0 =>
@@ -18910,7 +18674,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnCulturalDontsQ0O0 =>
-      '“Me encantaría probar la comida de tu país.”';
+      '\"Me gustaría mucho probar la comida de tu país.\"';
 
   @override
   String get safetyAcademyLsnCulturalDontsQ0O1 =>
@@ -18962,7 +18726,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnCulturalCommunicationS1 =>
-      'Si algo que dice o hace tu cita te desconcierta, presupón buena intención y pide que te lo aclare en lugar de sacar conclusiones precipitadas.';
+      'Si algo que dice o hace la otra persona te confunde, asume buena intención y pide una aclaración en lugar de sacar conclusiones precipitadas.';
 
   @override
   String get safetyAcademyLsnCulturalCommunicationS2 =>
@@ -18998,7 +18762,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnCulturalCommunicationQ0 =>
-      'Tu cita evita mirarte directamente a los ojos. ¿Qué deberías pensar?';
+      'La persona con la que hablas evita el contacto visual directo. ¿Qué deberías pensar?';
 
   @override
   String get safetyAcademyLsnCulturalCommunicationQ0O0 => 'No le interesas';
@@ -19047,14 +18811,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyModOnlineSafetyDesc =>
-      'Aprende a proteger tu identidad y a detectar posibles estafas cuando conoces gente online.';
+      'Aprende a proteger tu identidad y a detectar posibles estafas al conocer gente en línea.';
 
   @override
   String get safetyAcademyLsnProfileProtectionTitle => 'Protección del perfil';
 
   @override
   String get safetyAcademyLsnProfileProtectionS0 =>
-      'Tu perfil es tu primera impresión, pero también puede revelar información personal si no tienes cuidado. Aprender a compartir lo justo te mantiene a salvo sin dejar de mostrar tu personalidad.';
+      'Tu perfil es tu primera impresión, pero también puede exponer información personal si no tienes cuidado. Compartir la cantidad justa te mantiene a salvo sin dejar de mostrar tu personalidad.';
 
   @override
   String get safetyAcademyLsnProfileProtectionS1 =>
@@ -19119,11 +18883,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnProfileProtectionQ1O0 =>
-      'Para parecer más atractivo';
+      'Para conseguir más visitas al perfil';
 
   @override
   String get safetyAcademyLsnProfileProtectionQ1O1 =>
-      'Porque las apps comprimen las imágenes';
+      'Porque las apps sociales comprimen las imágenes';
 
   @override
   String get safetyAcademyLsnProfileProtectionQ1O2 =>
@@ -19164,11 +18928,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnScamRecognitionS0 =>
-      'Las estafas románticas cuestan miles de millones a sus víctimas en todo el mundo cada año. Los estafadores crean vínculos emocionales rápidamente y luego los aprovechan para obtener dinero o datos personales. Conocer las señales puede protegerte.';
+      'Las estafas de suplantación y de dinero cuestan miles de millones a sus víctimas cada año en todo el mundo. Los estafadores crean vínculos emocionales rápidamente y luego los explotan para conseguir dinero o datos personales. Conocer las señales puede protegerte.';
 
   @override
   String get safetyAcademyLsnScamRecognitionS1 =>
-      'Si alguien te pide dinero, tarjetas regalo, criptomonedas o ayuda económica al principio de una relación —por muy convincente que sea la historia—, es casi seguro que se trata de una estafa.';
+      'Si alguien te pide dinero, tarjetas regalo, criptomonedas o ayuda económica poco después de conocerse en línea -- por muy convincente que sea la historia --, es casi seguro una estafa.';
 
   @override
   String get safetyAcademyLsnScamRecognitionS2 =>
@@ -19188,7 +18952,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnScamRecognitionS3I2 =>
-      'Se enamora con una rapidez inusual («love bombing»)';
+      'Muestra un apego intenso o halagos con una rapidez inusual';
 
   @override
   String get safetyAcademyLsnScamRecognitionS3I3 =>
@@ -19208,7 +18972,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnScamRecognitionQ0 =>
-      'Alguien con quien hiciste match hace una semana dice que te quiere y te pide dinero para venir a verte. ¿Qué deberías hacer?';
+      'Alguien con quien conectaste hace una semana dice que lo eres todo para él y te pide dinero para visitarte. ¿Qué deberías hacer?';
 
   @override
   String get safetyAcademyLsnScamRecognitionQ0O0 =>
@@ -19220,7 +18984,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnScamRecognitionQ0O2 =>
-      'Reconocer el patrón típico de una estafa romántica y denunciar el perfil';
+      'Reconocerlo como un patrón clásico de estafa de dinero y denunciarlo';
 
   @override
   String get safetyAcademyLsnScamRecognitionQ0O3 =>
@@ -19228,7 +18992,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnScamRecognitionQ0Exp =>
-      'Declarar amor muy rápido y luego pedir dinero es el patrón característico de las estafas románticas. Denuncia y bloquea.';
+      'Crear un apego emocional intenso muy rápido y luego pedir dinero es el patrón característico de las estafas de dinero. Denuncia y bloquea.';
 
   @override
   String get safetyAcademyLsnScamRecognitionQ1 =>
@@ -19323,7 +19087,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnRedFlagsQ0 =>
-      'Tu match se enfada porque tardas una hora en responder. ¿Qué indica esto?';
+      'Una nueva conexión se molesta cuando tardas una hora en responder. ¿Qué indica esto?';
 
   @override
   String get safetyAcademyLsnRedFlagsQ0O0 => 'Le gustas de verdad';
@@ -19379,7 +19143,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnRedFlagsQ2O2 =>
-      'Te dice «te quiero» en los primeros días';
+      'Te declaran sentimientos intensos en los primeros días';
 
   @override
   String get safetyAcademyLsnRedFlagsQ2O3 =>
@@ -19395,14 +19159,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyModEmotionalIntelligenceDesc =>
-      'Comprende los estilos de apego y los lenguajes del amor, y desarrolla tu conciencia emocional.';
+      'Comprende los estilos de apego y los lenguajes del aprecio, y desarrolla tu conciencia emocional.';
 
   @override
   String get safetyAcademyLsnAttachmentStylesTitle => 'Estilos de apego';
 
   @override
   String get safetyAcademyLsnAttachmentStylesS0 =>
-      'La teoría del apego explica cómo nuestras primeras relaciones moldean la forma en que nos vinculamos con nuestras parejas. Comprender tu estilo de apego puede ayudarte a construir relaciones más sanas.';
+      'La teoría del apego explica cómo nuestras primeras relaciones influyen en la forma en que conectamos con otras personas de adultos. Comprender tu estilo de apego puede ayudarte a construir amistades más sanas.';
 
   @override
   String get safetyAcademyLsnAttachmentStylesS1 =>
@@ -19434,11 +19198,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnAttachmentStylesS4 =>
-      'Comprender el estilo de apego de tu pareja te ayuda a responder con empatía en lugar de frustración. Que una pareja evitativa se aleje no es un rechazo: es su mecanismo de afrontamiento.';
+      'Comprender el estilo de apego de un amigo te ayuda a responder con empatía en lugar de frustración. Que un amigo evitativo se distancie no es rechazo: es su mecanismo de afrontamiento.';
 
   @override
   String get safetyAcademyLsnAttachmentStylesQ0 =>
-      'Tu pareja necesita mucha reafirmación y se pone ansiosa cuando no respondes rápido. ¿Qué estilo de apego podría reflejar esto?';
+      'Un amigo necesita mucha reafirmación y se pone ansioso cuando no respondes rápido. ¿Qué estilo de apego podría reflejar esto?';
 
   @override
   String get safetyAcademyLsnAttachmentStylesQ0O0 => 'Seguro';
@@ -19474,7 +19238,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnAttachmentStylesQ1O3 =>
-      'Salir solo con personas de tu mismo estilo';
+      'Pasar tiempo solo con personas que tengan el mismo estilo';
 
   @override
   String get safetyAcademyLsnAttachmentStylesQ1Exp =>
@@ -19490,7 +19254,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnAttachmentStylesQ2O1 =>
-      'Alejarse o cerrarse cuando la relación se vuelve emocionalmente cercana';
+      'Alejarse o cerrarse cuando una amistad se vuelve emocionalmente cercana';
 
   @override
   String get safetyAcademyLsnAttachmentStylesQ2O2 =>
@@ -19502,21 +19266,22 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnAttachmentStylesQ2Exp =>
-      'El apego evitativo suele manifestarse como un alejamiento cuando aumenta la intimidad emocional, a modo de mecanismo de autoprotección.';
+      'El apego evitativo suele manifestarse alejándose cuando aumenta la cercanía emocional, como mecanismo de autoprotección.';
 
   @override
-  String get safetyAcademyLsnLoveLanguagesTitle => 'Los lenguajes del amor';
+  String get safetyAcademyLsnLoveLanguagesTitle => 'Lenguajes del aprecio';
 
   @override
   String get safetyAcademyLsnLoveLanguagesS0 =>
-      'El concepto de los lenguajes del amor, popularizado por el Dr. Gary Chapman, plantea que las personas expresan y reciben amor de cinco formas principales. Comprender el tuyo y el de tu pareja puede transformar vuestra relación.';
+      'El concepto de los lenguajes del aprecio, adaptado del trabajo del Dr. Gary Chapman, sugiere que las personas expresan y reciben aprecio de cinco formas principales. Conocer el tuyo y el de tus amigos puede fortalecer vuestras conexiones.';
 
   @override
-  String get safetyAcademyLsnLoveLanguagesS1 => 'Los cinco lenguajes del amor';
+  String get safetyAcademyLsnLoveLanguagesS1 =>
+      'Los cinco lenguajes del aprecio';
 
   @override
   String get safetyAcademyLsnLoveLanguagesS1I0 =>
-      'Palabras de afirmación: cumplidos, palabras de ánimo y expresiones de amor';
+      'Palabras de afirmación: halagos, ánimo y expresiones de aprecio';
 
   @override
   String get safetyAcademyLsnLoveLanguagesS1I1 =>
@@ -19524,7 +19289,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnLoveLanguagesS1I2 =>
-      'Recibir regalos: detalles pensados como muestra de cariño (no importa el precio)';
+      'Recibir regalos: detalles de aprecio pensados (no se trata del precio)';
 
   @override
   String get safetyAcademyLsnLoveLanguagesS1I3 =>
@@ -19532,19 +19297,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnLoveLanguagesS1I4 =>
-      'Contacto físico: abrazos, ir de la mano y otras muestras físicas de afecto';
+      'Gestos amistosos: un apretón de manos, chocar los cinco o un abrazo cuando es bienvenido';
 
   @override
   String get safetyAcademyLsnLoveLanguagesS2 =>
-      'Fíjate en cómo expresa el cariño la persona con la que sales: probablemente ese sea su lenguaje del amor. Si siempre te hace cumplidos, seguramente valora las palabras de afirmación.';
+      'Fíjate en cómo alguien muestra aprecio: probablemente ese sea su lenguaje del aprecio. Si siempre te hace cumplidos, seguramente valora las palabras de afirmación.';
 
   @override
   String get safetyAcademyLsnLoveLanguagesS3 =>
-      'Que los lenguajes del amor no coincidan es habitual y tiene solución. La clave es la comunicación: dile a tu pareja qué te hace sentir querido y hazle la misma pregunta.';
+      'Tener lenguajes del aprecio distintos es común y manejable. La clave es la comunicación: di a tus amigos qué te hace sentir valorado y hazles la misma pregunta.';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ0 =>
-      'Tu pareja siempre saca tiempo para ti y deja el móvil a un lado cuando habláis. Su lenguaje del amor probablemente sea:';
+      'Un amigo siempre saca tiempo para ti y deja el móvil durante las conversaciones. Su lenguaje del aprecio probablemente es:';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ0O0 => 'Palabras de afirmación';
@@ -19556,15 +19321,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get safetyAcademyLsnLoveLanguagesQ0O2 => 'Recibir regalos';
 
   @override
-  String get safetyAcademyLsnLoveLanguagesQ0O3 => 'Contacto físico';
+  String get safetyAcademyLsnLoveLanguagesQ0O3 => 'Gestos amistosos';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ0Exp =>
-      'Dar atención plena y priorizar la presencia es el sello del tiempo de calidad como lenguaje del amor.';
+      'Prestar atención plena y priorizar la presencia es lo que caracteriza al tiempo de calidad como lenguaje del aprecio.';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ1 =>
-      'Tú valoras las palabras de afirmación, pero tu pareja demuestra su amor con actos de servicio. ¿Qué deberías hacer?';
+      'Tú valoras las palabras de afirmación, pero un amigo muestra aprecio con actos de servicio. ¿Qué deberías hacer?';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ1O0 =>
@@ -19572,25 +19337,25 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ1O1 =>
-      'Decirle a tu pareja lo que necesitas y aprender a reconocer su forma de demostrar amor';
+      'Decirle lo que necesitas y aprender a reconocer cómo muestra su aprecio';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ1O2 =>
-      'Cambiar tu lenguaje del amor para que coincida con el suyo';
+      'Cambiar tu lenguaje del aprecio para que coincida con el suyo';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ1O3 => 'Ignorar la diferencia';
 
   @override
   String get safetyAcademyLsnLoveLanguagesQ1Exp =>
-      'La comunicación es clave. Expresa lo que necesitas y aprende también a valorar cómo demuestra amor tu pareja.';
+      'La comunicación es clave. Expresa lo que necesitas y aprende también a valorar cómo tu amigo demuestra que le importas.';
 
   @override
   String get safetyAcademyLsnEmotionalAwarenessTitle => 'Conciencia emocional';
 
   @override
   String get safetyAcademyLsnEmotionalAwarenessS0 =>
-      'La conciencia emocional es la capacidad de reconocer, comprender y gestionar tus propias emociones, sin dejar de percibir las de los demás. En las citas, esta habilidad evita decisiones impulsivas y crea conexiones más profundas.';
+      'La conciencia emocional es la capacidad de reconocer, comprender y gestionar tus propias emociones mientras sintonizas con las de los demás. Al conocer gente nueva, esta habilidad evita decisiones impulsivas y crea conexiones más profundas.';
 
   @override
   String get safetyAcademyLsnEmotionalAwarenessS1 =>
@@ -19610,7 +19375,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnEmotionalAwarenessS2I2 =>
-      'Escribe un diario sobre tus experiencias en citas y tus reacciones emocionales';
+      'Escribe un diario sobre tus experiencias sociales y tus reacciones emocionales';
 
   @override
   String get safetyAcademyLsnEmotionalAwarenessS2I3 =>
@@ -19630,7 +19395,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnEmotionalAwarenessQ0 =>
-      'La persona con la que sales cancela los planes en el último momento y te enfadas. ¿Cuál es la respuesta emocionalmente consciente?';
+      'Un nuevo amigo cancela planes a última hora y te enfadas. ¿Cuál es la respuesta emocionalmente consciente?';
 
   @override
   String get safetyAcademyLsnEmotionalAwarenessQ0O0 =>
@@ -19705,14 +19470,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyModFirstMeetingDesc =>
-      'Consejos esenciales para primeras citas seguras y con confianza con personas que conoces en línea.';
+      'Consejos esenciales para primeros encuentros seguros y con confianza con personas que conoces en línea.';
 
   @override
   String get safetyAcademyLsnPublicPlacesTitle => 'Quedar en lugares públicos';
 
   @override
   String get safetyAcademyLsnPublicPlacesS0 =>
-      'Conocer en persona por primera vez a alguien de una app de citas es emocionante, pero la seguridad siempre debe ser lo primero. Elegir el lugar adecuado sienta las bases para una experiencia cómoda.';
+      'Conocer en persona por primera vez a alguien de una app es emocionante, pero la seguridad siempre va primero. Elegir el lugar adecuado es la base de una experiencia cómoda.';
 
   @override
   String get safetyAcademyLsnPublicPlacesS1 =>
@@ -19720,7 +19485,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnPublicPlacesS2 =>
-      'Nunca aceptes quedar en casa de alguien, en una zona apartada o en un lugar que no conozcas para una primera cita.';
+      'Nunca aceptes quedar en casa de alguien, en un lugar apartado o en un sitio que no conoces para un primer encuentro.';
 
   @override
   String get safetyAcademyLsnPublicPlacesS3 =>
@@ -19747,7 +19512,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnPublicPlacesQ0 =>
-      '¿Cuál es el lugar más seguro para una primera cita?';
+      '¿Cuál es el lugar más seguro para un primer encuentro?';
 
   @override
   String get safetyAcademyLsnPublicPlacesQ0O0 => 'Su apartamento';
@@ -19772,7 +19537,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnPublicPlacesQ1O0 =>
-      'Para impresionar a tu cita con recomendaciones';
+      'Para impresionar a la otra persona con recomendaciones';
 
   @override
   String get safetyAcademyLsnPublicPlacesQ1O1 =>
@@ -19794,11 +19559,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnSharingPlansS0 =>
-      'Avisar a alguien de confianza de tu cita es una de las medidas de seguridad más sencillas y eficaces. Tu contacto de seguridad puede comprobar cómo estás y sabe dónde buscar si algo sale mal.';
+      'Contarle a alguien de confianza que vas a quedar con alguien nuevo es una de las medidas de seguridad más sencillas y eficaces. Un compañero de seguridad puede comprobar cómo estás y sabe dónde buscar si algo sale mal.';
 
   @override
   String get safetyAcademyLsnSharingPlansS1 =>
-      'Comparte con un amigo de confianza el perfil de tu cita, el lugar y la hora a la que prevés volver. Programa una llamada de control a los 30 minutos de empezar la cita.';
+      'Comparte con un amigo de confianza el perfil de la otra persona, el lugar y la hora a la que esperas volver. Acordad una llamada de control a los 30 minutos del encuentro.';
 
   @override
   String get safetyAcademyLsnSharingPlansS2 =>
@@ -19806,7 +19571,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnSharingPlansS2I0 =>
-      'Captura de pantalla del perfil de tu cita';
+      'Captura de pantalla del perfil de la otra persona';
 
   @override
   String get safetyAcademyLsnSharingPlansS2I1 =>
@@ -19814,7 +19579,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnSharingPlansS2I2 =>
-      'Fecha, hora y lugar del encuentro';
+      'Día, hora y lugar del encuentro';
 
   @override
   String get safetyAcademyLsnSharingPlansS2I3 => 'Tu hora prevista de regreso';
@@ -19825,25 +19590,25 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnSharingPlansS3 =>
-      'También puedes usar la función Share My Date de GreenGo para enviar fácilmente los detalles de tu cita a un contacto de confianza. Protegerte no tiene nada de vergonzoso — tu cita debería entenderlo.';
+      'También puedes enviar los detalles del encuentro a un contacto de confianza antes de salir. Ser precavido no es motivo de vergüenza: la persona con la que quedas debería entenderlo.';
 
   @override
   String get safetyAcademyLsnSharingPlansQ0 =>
-      '¿Qué deberías compartir con un amigo de confianza antes de una primera cita?';
+      '¿Qué deberías compartir con un amigo de confianza antes de un primer encuentro?';
 
   @override
   String get safetyAcademyLsnSharingPlansQ0O0 => 'Solo el nombre del lugar';
 
   @override
   String get safetyAcademyLsnSharingPlansQ0O1 =>
-      'El perfil de tu cita, el lugar, la hora y la vuelta prevista';
+      'El perfil de la otra persona, el lugar, la hora y la vuelta prevista';
 
   @override
   String get safetyAcademyLsnSharingPlansQ0O2 => 'Nada — es privado';
 
   @override
   String get safetyAcademyLsnSharingPlansQ0O3 =>
-      'Solo un mensaje que diga “tengo una cita”';
+      'Solo un mensaje que diga \"voy a salir\"';
 
   @override
   String get safetyAcademyLsnSharingPlansQ0Exp =>
@@ -19854,18 +19619,19 @@ class AppLocalizationsEs extends AppLocalizations {
       '¿Cuál es un buen momento para la llamada de control?';
 
   @override
-  String get safetyAcademyLsnSharingPlansQ1O0 => 'Cuando termine la cita';
+  String get safetyAcademyLsnSharingPlansQ1O0 => 'Después del encuentro';
 
   @override
   String get safetyAcademyLsnSharingPlansQ1O1 =>
-      'Unos 30 minutos después de empezar la cita';
+      'Unos 30 minutos después de empezar el encuentro';
 
   @override
   String get safetyAcademyLsnSharingPlansQ1O2 =>
       'La llamada de control no es necesaria';
 
   @override
-  String get safetyAcademyLsnSharingPlansQ1O3 => 'Antes de salir hacia la cita';
+  String get safetyAcademyLsnSharingPlansQ1O3 =>
+      'Antes de salir hacia el encuentro';
 
   @override
   String get safetyAcademyLsnSharingPlansQ1Exp =>
@@ -19877,11 +19643,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnTransportSafetyS0 =>
-      'Cómo llegas a una cita y cómo vuelves importa tanto como el lugar del encuentro. Mantener el control de tu transporte te garantiza poder irte cuando quieras.';
+      'Cómo llegas a un encuentro y cómo vuelves importa tanto como el lugar donde quedas. Controlar tu transporte te garantiza que puedes irte cuando quieras.';
 
   @override
   String get safetyAcademyLsnTransportSafetyS1 =>
-      'Nunca dejes que tu cita te recoja en casa para el primer encuentro. Eso revela tu dirección y te hace depender de esa persona para volver a casa.';
+      'Nunca dejes que alguien a quien acabas de conocer en línea te recoja en casa para el primer encuentro. Revela tu dirección y te hace depender de esa persona para volver.';
 
   @override
   String get safetyAcademyLsnTransportSafetyS2 =>
@@ -19917,7 +19683,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnTransportSafetyQ0 =>
-      '¿Por qué deberías organizar tu propio transporte para una primera cita?';
+      '¿Por qué deberías organizar tu propio transporte para un primer encuentro?';
 
   @override
   String get safetyAcademyLsnTransportSafetyQ0O0 => 'Para ahorrar gasolina';
@@ -19935,11 +19701,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get safetyAcademyLsnTransportSafetyQ0Exp =>
-      'Tener tu propio transporte significa que no dependes de tu cita y que tu dirección sigue siendo privada.';
+      'Tener tu propio transporte significa que no dependes de la otra persona y que tu dirección sigue siendo privada.';
 
   @override
   String get safetyAcademyLsnTransportSafetyQ1 =>
-      'Tu cita se ofrece a recogerte en casa. ¿Qué deberías hacer?';
+      'Alguien a quien vas a conocer en persona por primera vez se ofrece a recogerte en casa. ¿Qué deberías hacer?';
 
   @override
   String get safetyAcademyLsnTransportSafetyQ1O0 =>
@@ -19962,7 +19728,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Quedar en el lugar mantiene tu dirección en privado y te asegura un transporte independiente.';
 
   @override
-  String get gamificationAchFirstMatchName => 'Primer match';
+  String get gamificationAchFirstMatchName => 'Primera conexión';
 
   @override
   String get gamificationAchFirstMatchDesc => 'Consigue tu primer like mutuo';
@@ -19993,13 +19759,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationAchGlobeTrotterDesc =>
-      'Haz match con usuarios de más de 10 países';
+      'Conecta con gente de más de 10 países';
 
   @override
-  String get gamificationAchGenerousHeartName => 'Corazón generoso';
+  String get gamificationAchGenerousHeartName => 'Espíritu generoso';
 
   @override
-  String get gamificationAchGenerousHeartDesc => 'Regala monedas a tus matches';
+  String get gamificationAchGenerousHeartDesc =>
+      'Regala monedas a tus conexiones';
 
   @override
   String get gamificationAchDailyDedicationName => 'Dedicación diaria';
@@ -20012,7 +19779,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationAchSuperStarName => 'Superestrella';
 
   @override
-  String get gamificationAchSuperStarDesc => 'Recibe más de 50 súper likes';
+  String get gamificationAchSuperStarDesc =>
+      'Recibe más de 50 Priority Connects';
 
   @override
   String get gamificationAchSocialButterflyName => 'Mariposa social';
@@ -20046,14 +19814,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationAchCenturionName => 'Centurión';
 
   @override
-  String get gamificationAchCenturionDesc => 'Alcanza 100 matches en total';
+  String get gamificationAchCenturionDesc => 'Alcanza 100 conexiones en total';
 
   @override
-  String get gamificationAchSpeedDaterName => 'Relámpago';
+  String get gamificationAchSpeedDaterName => 'Velocista social';
 
   @override
   String get gamificationAchSpeedDaterDesc =>
-      'Haz match con 10 personas en un día';
+      'Conecta con 10 personas en un día';
 
   @override
   String get gamificationAchPhotoCollectorName => 'Coleccionista de fotos';
@@ -20390,7 +20158,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get celebrationUnlimitedLikes => 'Likes ilimitados';
 
   @override
-  String get celebrationSeeWhoLikedYou => 'Mira a quién le gustas';
+  String get celebrationSeeWhoLikedYou => 'Mira quién quiere conectar';
 
   @override
   String celebrationPerDay(int count) {
@@ -20455,7 +20223,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get usageLimitTypeMediaSends => 'envíos de multimedia';
 
   @override
-  String get usageLimitTypeDirectMatches => 'matches directos';
+  String get usageLimitTypeDirectMatches => 'Direct Connects';
 
   @override
   String get usageLimitTypeConnections => 'conexiones';
@@ -20534,9 +20302,9 @@ class AppLocalizationsEs extends AppLocalizations {
       limit,
       locale: localeName,
       other:
-          'Has usado tus $limit matches directos gratuitos de hoy. Usa monedas para tener más o espera hasta mañana.',
+          'Has usado tus $limit Direct Connects gratuitos de hoy. Usa monedas para tener más o espera hasta mañana.',
       one:
-          'Has usado tu match directo gratuito de hoy. Usa monedas para tener más o espera hasta mañana.',
+          'Has usado tu Direct Connect gratuito de hoy. Usa monedas para tener más o espera hasta mañana.',
     );
     return '$_temp0';
   }
@@ -20773,7 +20541,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get coinSpendCategoryMatching => 'Coincidencias';
+  String get coinSpendCategoryMatching => 'Conectar';
 
   @override
   String get coinSpendCategoryMessaging => 'Mensajes';
@@ -20797,7 +20565,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get coinSpendDiamond => 'Diamante';
 
   @override
-  String get coinSpendSuperLikeDesc => 'Envía un súper like para destacar';
+  String get coinSpendSuperLikeDesc =>
+      'Envía un Priority Connect para destacar';
 
   @override
   String get coinSpendBoostDesc => 'Que más personas te vean durante 30 min';
@@ -20821,7 +20590,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get coinSpendDiamondDesc => 'Envía un diamante brillante';
 
   @override
-  String get coinReasonFirstMatchReward => 'Recompensa por el primer match';
+  String get coinReasonFirstMatchReward => 'Recompensa por la primera conexión';
 
   @override
   String get coinReasonCompleteProfileReward =>
@@ -20858,7 +20627,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get coinReasonUndoLastSwipe => 'Deshacer último swipe';
 
   @override
-  String get coinReasonSeeWhoLikedYou => 'Mira quién te dio like';
+  String get coinReasonSeeWhoLikedYou => 'Ver quién quiere conectar';
 
   @override
   String get coinReasonDirectMessage => 'Mensaje directo';
@@ -20874,7 +20643,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String coinTxDescFirstMatch(int amount) {
-    return '¡Enhorabuena por tu primer match! Has ganado $amount monedas.';
+    return '¡Enhorabuena por tu primera conexión! Has ganado $amount monedas.';
   }
 
   @override
@@ -21202,7 +20971,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationJourneyCatMasteryDesc =>
-      'Conviértete en un maestro de las citas';
+      'Conviértete en un maestro de las conexiones';
 
   @override
   String get gamificationJourneyCatSpecialDesc => 'Hitos y logros exclusivos';
@@ -21231,19 +21000,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationJourneyFirstMatchName => 'Primera conexión';
 
   @override
-  String get gamificationJourneyFirstMatchDesc => 'Consigue tu primer match';
+  String get gamificationJourneyFirstMatchDesc => 'Haz tu primera conexión';
 
   @override
   String get gamificationJourneyTenMatchesName => 'Estrella en ascenso';
 
   @override
-  String get gamificationJourneyTenMatchesDesc => 'Consigue 10 matches';
+  String get gamificationJourneyTenMatchesDesc => 'Haz 10 conexiones';
 
   @override
   String get gamificationJourneyFiftyMatchesName => 'Mariposa social';
 
   @override
-  String get gamificationJourneyFiftyMatchesDesc => 'Consigue 50 matches';
+  String get gamificationJourneyFiftyMatchesDesc => 'Haz 50 conexiones';
 
   @override
   String get gamificationJourneyFirstMessageName => 'Rompehielos';
@@ -21318,7 +21087,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationJourneyHundredMatchesName => 'Centurión';
 
   @override
-  String get gamificationJourneyHundredMatchesDesc => 'Consigue 100 matches';
+  String get gamificationJourneyHundredMatchesDesc => 'Haz 100 conexiones';
 
   @override
   String get gamificationStreakMilestone3Name => 'Buen comienzo';
@@ -21342,7 +21111,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationStreakMilestone180Name => 'Héroe semestral';
 
   @override
-  String get gamificationStreakMilestone365Name => 'Año de amor';
+  String get gamificationStreakMilestone365Name => 'Año de descubrimientos';
 
   @override
   String gamificationStreakMilestoneDesc(int days) {
@@ -21361,7 +21130,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationChallengeSend5MessagesDesc =>
-      'Envía 5 mensajes a tus matches';
+      'Envía 5 mensajes a tus conexiones';
 
   @override
   String get gamificationChallengeSend10MessagesName =>
@@ -21377,42 +21146,45 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationChallengeSend15MessagesDesc => 'Envía 15 mensajes hoy';
 
   @override
-  String get gamificationChallengeGet1MatchName => 'Primera chispa';
+  String get gamificationChallengeGet1MatchName => 'Nueva conexión';
 
   @override
-  String get gamificationChallengeGet1MatchDesc => 'Consigue 1 match nuevo hoy';
+  String get gamificationChallengeGet1MatchDesc => 'Haz 1 nueva conexión hoy';
 
   @override
-  String get gamificationChallengeGet3MatchesName => 'Celestino';
+  String get gamificationChallengeGet3MatchesName => 'Conector';
 
   @override
   String get gamificationChallengeGet3MatchesDesc =>
-      'Consigue 3 matches nuevos hoy';
+      'Haz 3 nuevas conexiones hoy';
 
   @override
-  String get gamificationChallengeGet5MatchesName => 'Imán del amor';
+  String get gamificationChallengeGet5MatchesName => 'Imán social';
 
   @override
   String get gamificationChallengeGet5MatchesDesc =>
-      'Consigue 5 matches nuevos hoy';
+      'Haz 5 nuevas conexiones hoy';
 
   @override
   String get gamificationChallengeSend1SuperlikeName => 'Elección prioritaria';
 
   @override
-  String get gamificationChallengeSend1SuperlikeDesc => 'Envía 1 súper like';
+  String get gamificationChallengeSend1SuperlikeDesc =>
+      'Envía 1 Priority Connect';
 
   @override
-  String get gamificationChallengeSend3SuperlikesName => 'Súper liker';
+  String get gamificationChallengeSend3SuperlikesName => 'Conector prioritario';
 
   @override
-  String get gamificationChallengeSend3SuperlikesDesc => 'Envía 3 súper likes';
+  String get gamificationChallengeSend3SuperlikesDesc =>
+      'Envía 3 Priority Connects';
 
   @override
   String get gamificationChallengeSend5SuperlikesName => 'Superestrella';
 
   @override
-  String get gamificationChallengeSend5SuperlikesDesc => 'Envía 5 súper likes';
+  String get gamificationChallengeSend5SuperlikesDesc =>
+      'Envía 5 Priority Connects';
 
   @override
   String get gamificationChallengeVideoCall1Name => 'Entusiasta del vídeo';
@@ -21444,10 +21216,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationChallengeSend1GiftName => 'Regalador';
 
   @override
-  String get gamificationChallengeSend1GiftDesc => 'Envía 1 regalo a un match';
+  String get gamificationChallengeSend1GiftDesc =>
+      'Envía 1 regalo a una conexión';
 
   @override
-  String get gamificationChallengeSend3GiftsName => 'Corazón generoso';
+  String get gamificationChallengeSend3GiftsName => 'Espíritu generoso';
 
   @override
   String get gamificationChallengeSend3GiftsDesc => 'Envía 3 regalos hoy';
@@ -21463,7 +21236,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationChallengeChatStarterDesc =>
-      'Envía 7 mensajes a matches distintos';
+      'Envía 7 mensajes a conexiones diferentes';
 
   @override
   String get gamificationChallengeSocialButterflyName => 'Mariposa social';
@@ -21473,10 +21246,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'Envía 20 mensajes hoy';
 
   @override
-  String get gamificationChallengeMatchRushName => 'Fiebre de matches';
+  String get gamificationChallengeMatchRushName => 'Racha de conexiones';
 
   @override
-  String get gamificationChallengeMatchRushDesc => 'Consigue 7 matches hoy';
+  String get gamificationChallengeMatchRushDesc => 'Haz 7 conexiones hoy';
 
   @override
   String get gamificationChallengeVideoMarathonName => 'Maratón de vídeo';
@@ -21511,37 +21284,38 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationChallengeWeeklyMatches10Desc =>
-      'Consigue 10 matches esta semana';
+      'Haz 10 conexiones esta semana';
 
   @override
   String get gamificationChallengeWeeklyMatches20Name =>
-      'Campeón semanal de matches';
+      'Campeón semanal de conexiones';
 
   @override
   String get gamificationChallengeWeeklyMatches20Desc =>
-      'Consigue 20 matches esta semana';
+      'Haz 20 conexiones esta semana';
 
   @override
-  String get gamificationChallengeWeeklyMatches30Name => 'Máquina de matches';
+  String get gamificationChallengeWeeklyMatches30Name =>
+      'Máquina de conexiones';
 
   @override
   String get gamificationChallengeWeeklyMatches30Desc =>
-      'Consigue 30 matches esta semana';
+      'Haz 30 conexiones esta semana';
 
   @override
   String get gamificationChallengeWeeklySuperlikes5Name =>
-      'Súper liker semanal';
+      'Conector prioritario semanal';
 
   @override
   String get gamificationChallengeWeeklySuperlikes5Desc =>
-      'Envía 5 súper likes esta semana';
+      'Envía 5 Priority Connects esta semana';
 
   @override
   String get gamificationChallengeWeeklySuperlikes10Name => 'Súper fan';
 
   @override
   String get gamificationChallengeWeeklySuperlikes10Desc =>
-      'Envía 10 súper likes esta semana';
+      'Envía 10 Priority Connects esta semana';
 
   @override
   String get gamificationChallengeWeeklySuperlikes15Name =>
@@ -21549,7 +21323,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationChallengeWeeklySuperlikes15Desc =>
-      'Envía 15 súper likes esta semana';
+      'Envía 15 Priority Connects esta semana';
 
   @override
   String get gamificationChallengeWeeklyVideo3Name => 'Sociable del vídeo';
@@ -21595,14 +21369,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationChallengeValentineMatchesName =>
-      'Conexiones del corazón';
+      'Conexiones de amistad';
 
   @override
   String get gamificationChallengeValentineMatchesDesc =>
-      'Consigue 14 matches durante la semana de San Valentín (1 al día)';
+      'Haz 14 conexiones durante la Semana de la Amistad (1 al día)';
 
   @override
-  String get gamificationChallengeValentineVideoName => 'Cita virtual';
+  String get gamificationChallengeValentineVideoName =>
+      'Noche cultural virtual';
 
   @override
   String get gamificationChallengeValentineVideoDesc =>
@@ -21613,14 +21388,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get gamificationChallengeSummerMatchesDesc =>
-      'Consigue 30 matches este verano';
+      'Haz 30 conexiones este verano';
 
   @override
   String get gamificationChallengeHolidayGiftsName => 'Regalador';
 
   @override
   String get gamificationChallengeHolidayGiftsDesc =>
-      'Envía 10 regalos de monedas a tus matches';
+      'Envía 10 regalos de monedas a tus conexiones';
 
   @override
   String get gamificationChallengeHolidayMessagesName => 'Alegría festiva';
@@ -21629,24 +21404,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gamificationChallengeHolidayMessagesDesc => 'Envía 100 mensajes';
 
   @override
-  String get gamificationEventValentinesName => 'Semana de San Valentín';
+  String get gamificationEventValentinesName => 'Semana de la Amistad';
 
   @override
   String get gamificationEventValentinesDesc =>
-      '¡Comparte el amor esta semana de San Valentín!';
+      '¡Celebra la amistad entre culturas esta semana!';
 
   @override
-  String get gamificationEventSummerName => 'Amor de verano';
+  String get gamificationEventSummerName => 'Verano de descubrimientos';
 
   @override
-  String get gamificationEventSummerDesc => '¡Encuentra tu romance de verano!';
+  String get gamificationEventSummerDesc =>
+      '¡Haz nuevos amigos de todo el mundo este verano!';
 
   @override
   String get gamificationEventHolidayName => 'Temporada festiva';
 
   @override
   String get gamificationEventHolidayDesc =>
-      '¡Encuentra el amor estas fiestas!';
+      '¡Conecta con gente de todo el mundo en estas fiestas!';
 
   @override
   String get travelExploreTitle => 'Explorar viajes';
@@ -21741,7 +21517,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get discoveryGridAuto => 'Auto';
 
   @override
-  String get discoveryMatchFallbackName => 'Match';
+  String get discoveryMatchFallbackName => 'Conexión';
 
   @override
   String get discoveryThisUser => 'este usuario';
@@ -21778,7 +21554,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get chatPreviewEvent => 'Evento';
 
   @override
-  String get chatPreviewSayHi => '¡Saluda a tu match!';
+  String get chatPreviewSayHi => '¡Saluda a tu nueva conexión!';
 
   @override
   String chatTimeShortMinutes(int count) {
@@ -22050,7 +21826,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String videoProfileInfoBody(int seconds) {
-    return 'Graba un video de $seconds segundos para presentarte. ¡Los perfiles con video consiguen un 40 % más de matches!';
+    return 'Graba un vídeo de $seconds segundos para presentarte. ¡Los perfiles con vídeo consiguen un 40 % más de conexiones!';
   }
 
   @override
@@ -22496,7 +22272,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get culturalExchangeCategoryTransportation => 'Transporte';
 
   @override
-  String get culturalExchangeCategoryDating => 'Citas';
+  String get culturalExchangeCategoryDating => 'Conocer gente';
 
   @override
   String get culturalExchangeCategoryCustoms => 'Costumbres';
@@ -22557,7 +22333,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get culturalExchangeLearnEtiquette =>
-      'Aprende la etiqueta de citas de más de 20 países\nde todo el mundo';
+      'Aprende la etiqueta social de más de 20 países\nde todo el mundo';
 
   @override
   String get culturalExchangeDos => 'Qué hacer';
@@ -22987,7 +22763,7 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.selectLogic(
       achievement,
       {
-        'first_match': 'Primer match',
+        'first_match': 'Primera conexión',
         'social_butterfly': 'Mariposa social',
         'popular': 'Popular',
         'video_enthusiast': 'Entusiasta del vídeo',
@@ -23022,7 +22798,7 @@ class AppLocalizationsEs extends AppLocalizations {
       challenge,
       {
         'send_5_messages': 'Iniciador de conversaciones',
-        'get_3_matches': 'Celestino',
+        'get_3_matches': 'Conector',
         'complete_profile': 'Perfil perfecto',
         'video_call_1': 'Cara a cara',
         'other': 'Reto diario',
