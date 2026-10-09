@@ -7182,5 +7182,7 @@
   "participantsEmailRateLimited": "Acabas de solicitarla. Vuelve a intentarlo en unos minutos.",
   "participantsEmailFailed": "No se pudo enviar la lista de participantes. Inténtalo más tarde.",
   "participantsEmailNoEmail": "Tu cuenta no tiene un correo electrónico al que enviar la lista.",
-  "checkoutOrganizerShareNotice": "Tu nombre y tu correo electrónico se compartirán con el organizador para el acceso."
+  "checkoutOrganizerShareNotice": "Tu nombre y tu correo electrónico se compartirán con el organizador para el acceso.",
+  "openSourceLicensesTitle": "Licencias de código abierto",
+  "openSourceLicensesSubtitle": "Fuentes y componentes de software que usa esta app"
 }

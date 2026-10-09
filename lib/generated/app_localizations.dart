@@ -39584,6 +39584,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your name and email will be shared with the organizer for entry.'**
   String get checkoutOrganizerShareNotice;
+
+  /// No description provided for @openSourceLicensesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open-source licenses'**
+  String get openSourceLicensesTitle;
+
+  /// No description provided for @openSourceLicensesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Fonts and software components used in this app'**
+  String get openSourceLicensesSubtitle;
 }
 
 class _AppLocalizationsDelegate

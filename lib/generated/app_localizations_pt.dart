@@ -23154,6 +23154,13 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'O teu nome e e-mail serão partilhados com o organizador para a entrada.';
+
+  @override
+  String get openSourceLicensesTitle => 'Licenças de código aberto';
+
+  @override
+  String get openSourceLicensesSubtitle =>
+      'Tipos de letra e componentes de software usados nesta aplicação';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -46318,4 +46325,11 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get checkoutOrganizerShareNotice =>
       'Seu nome e e-mail serão compartilhados com o organizador para a entrada.';
+
+  @override
+  String get openSourceLicensesTitle => 'Licenças de código aberto';
+
+  @override
+  String get openSourceLicensesSubtitle =>
+      'Fontes e componentes de software usados neste app';
 }

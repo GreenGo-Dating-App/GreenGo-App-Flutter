@@ -246,6 +246,22 @@ class _PrivacyDataSettingsScreenState extends State<PrivacyDataSettingsScreen> {
                     : null,
                 onTap: _exporting ? null : _downloadMyData,
               ),
+              const Divider(height: 1),
+              // Flutter's licenses page: package licenses plus the font OFL
+              // notices from registerBundledFontLicenses().
+              ListTile(
+                key: const Key('openSourceLicensesTile'),
+                leading: const Icon(Icons.description_outlined,
+                    color: AppColors.richGold),
+                title: Text(l10n.openSourceLicensesTitle,
+                    style: const TextStyle(color: AppColors.textPrimary)),
+                subtitle: Text(l10n.openSourceLicensesSubtitle,
+                    style: const TextStyle(color: AppColors.textSecondary)),
+                onTap: () => showLicensePage(
+                  context: context,
+                  applicationName: 'GreenGo',
+                ),
+              ),
             ],
           ),
         ),

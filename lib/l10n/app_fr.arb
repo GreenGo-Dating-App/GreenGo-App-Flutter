@@ -6601,5 +6601,7 @@
   "participantsEmailRateLimited": "Vous venez de la demander. Réessayez dans quelques minutes.",
   "participantsEmailFailed": "Impossible d’envoyer la liste des participants. Réessayez plus tard.",
   "participantsEmailNoEmail": "Votre compte n’a pas d’adresse e-mail pour recevoir la liste.",
-  "checkoutOrganizerShareNotice": "Votre nom et votre e-mail seront communiqués à l’organisateur pour l’entrée."
+  "checkoutOrganizerShareNotice": "Votre nom et votre e-mail seront communiqués à l’organisateur pour l’entrée.",
+  "openSourceLicensesTitle": "Licences open source",
+  "openSourceLicensesSubtitle": "Polices et composants logiciels utilisés dans cette application"
 }

@@ -12388,5 +12388,7 @@
   "participantsEmailRateLimited": "You just requested it. Try again in a few minutes.",
   "participantsEmailFailed": "Couldn’t send the participants list. Please try again later.",
   "participantsEmailNoEmail": "Your account has no email address to send the list to.",
-  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry."
+  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry.",
+  "openSourceLicensesTitle": "Open-source licenses",
+  "openSourceLicensesSubtitle": "Fonts and software components used in this app"
 }
