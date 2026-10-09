@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:uuid/uuid.dart';
 
+import '../../../chat/domain/chat_system_message.dart';
 import '../../domain/entities/coin_balance.dart';
 import '../../domain/entities/coin_gift.dart';
 import '../../domain/entities/coin_package.dart';
@@ -654,11 +655,12 @@ class CoinRemoteDataSource {
   }) async {
     // Get sender's display name
     final senderProfile = await firestore.collection('profiles').doc(senderId).get();
+    // Empty when unknown: readers render a localized "Unknown user".
     final senderName = senderProfile.exists
         ? (senderProfile.data()?['nickname'] as String? ??
            senderProfile.data()?['displayName'] as String? ??
-           'Someone')
-        : 'Someone';
+           '')
+        : '';
 
     // Check for existing conversation between these two users
     String? conversationId;
@@ -721,7 +723,14 @@ class CoinRemoteDataSource {
         .collection('messages')
         .doc(messageId);
 
-    final systemMessage = '$senderName sent you $amount coins!';
+    // English fallback (old app versions, server push). Readers render
+    // `metadata.systemKey` / the notification `data.kind` in their language.
+    final systemMessage =
+        '${senderName.isNotEmpty ? senderName : 'Someone'} sent you $amount coins!';
+    final systemMetadata = chatSystemMetadata(
+      ChatSystemKey.coinsReceived,
+      {'name': senderName, 'amount': amount},
+    );
 
     await messageRef.set({
       'messageId': messageId,
@@ -731,6 +740,7 @@ class CoinRemoteDataSource {
       'receiverId': receiverId,
       'content': systemMessage,
       'type': 'system',
+      'metadata': systemMetadata,
       'sentAt': FieldValue.serverTimestamp(),
       'deliveredAt': FieldValue.serverTimestamp(),
       'status': 'delivered',
@@ -751,6 +761,7 @@ class CoinRemoteDataSource {
         'receiverId': receiverId,
         'content': systemMessage,
         'type': 'system',
+        'metadata': systemMetadata,
         'sentAt': Timestamp.fromDate(DateTime.now()),
       },
       'lastMessageAt': FieldValue.serverTimestamp(),
@@ -767,7 +778,15 @@ class CoinRemoteDataSource {
       'message': systemMessage,
       'body': systemMessage,
       'actorId': senderId,
-      'data': {'action': 'profile', 'profileId': senderId, 'senderId': senderId},
+      'data': {
+        'action': 'profile',
+        'profileId': senderId,
+        'senderId': senderId,
+        // Lets the notification list render title + body localized.
+        'kind': 'coin_gift',
+        'senderName': senderName,
+        'amount': amount,
+      },
       'senderId': senderId,
       'conversationId': conversationId,
       'isRead': false,
@@ -1068,17 +1087,22 @@ class CoinRemoteDataSource {
     final invoiceId = uuid.v4();
     final invoiceNumber = InvoiceModel.generateInvoiceNumber();
 
-    // Create line item based on order type
+    // Create line item based on order type. `kind` (+ `coinCount`) is what
+    // the app renders, localized; `description` is the English fallback.
     String description;
+    String kind;
     switch (order.type) {
       case OrderType.coins:
         description = '${order.itemQuantity} GreenGo Coins';
+        kind = InvoiceLineKind.coins;
         break;
       case OrderType.subscription:
         description = 'Subscription Plan';
+        kind = InvoiceLineKind.subscription;
         break;
       case OrderType.gift:
         description = 'Coin Gift Package';
+        kind = InvoiceLineKind.gift;
         break;
     }
 
@@ -1089,6 +1113,8 @@ class CoinRemoteDataSource {
         quantity: 1,
         unitPrice: order.subtotal,
         totalPrice: order.subtotal,
+        kind: kind,
+        coinCount: order.type == OrderType.coins ? order.itemQuantity : null,
       ),
     ];
 

@@ -22738,4 +22738,79 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get notifCoinsReceivedTitle => 'Vous avez reçu des pièces !';
+
+  @override
+  String chatSystemCoinsReceived(String name, int amount) {
+    return '$name vous a envoyé $amount pièces !';
+  }
+
+  @override
+  String chatSystemCoinsSent(int amount) {
+    return 'Je viens de vous envoyer $amount pièces !';
+  }
+
+  @override
+  String chatSystemSupportWelcome(String subject) {
+    return 'Bienvenue au support GreenGo ! Un agent du support va vous répondre sous peu. Votre ticket : $subject';
+  }
+
+  @override
+  String chatSystemSupportAgentJoined(String name) {
+    return '$name a rejoint la conversation et va vous aider.';
+  }
+
+  @override
+  String get chatSystemSupportAgentFallback => 'Agent du support';
+
+  @override
+  String get chatSystemSupportInProgress =>
+      'Un agent du support traite votre demande.';
+
+  @override
+  String get chatSystemSupportWaitingOnUser => 'Nous attendons votre réponse.';
+
+  @override
+  String get chatSystemSupportResolved =>
+      'Votre demande a été résolue. Merci d\'avoir contacté le support GreenGo !';
+
+  @override
+  String get chatSystemSupportClosed => 'Ce ticket de support a été fermé.';
+
+  @override
+  String get chatSystemSupportStatusUpdated => 'Statut du ticket mis à jour.';
+
+  @override
+  String get commonUnknownUser => 'Utilisateur inconnu';
+
+  @override
+  String get chatSupportDescription => 'Description';
+
+  @override
+  String get supportReportFollowUpTitle => 'Suivi du signalement';
+
+  @override
+  String supportReportFollowUpSubject(String reason) {
+    return 'Suivi du signalement : $reason';
+  }
+
+  @override
+  String supportReportFollowUpDetails(
+      String reason, String message, String user, String date) {
+    return 'Motif : $reason\nMessage signalé : « $message »\nUtilisateur signalé : $user\nSignalé le : $date';
+  }
+
+  @override
+  String get supportChatWithGreenGoSubject =>
+      'Discussion avec le support GreenGo';
+
+  @override
+  String invoiceLineCoins(int count) {
+    return '$count pièces GreenGo';
+  }
+
+  @override
+  String get invoiceLineSubscription => 'Abonnement';
+
+  @override
+  String get invoiceLineGiftPackage => 'Pack de pièces cadeau';
 }

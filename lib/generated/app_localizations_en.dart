@@ -22375,4 +22375,79 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get notifCoinsReceivedTitle => 'You received coins!';
+
+  @override
+  String chatSystemCoinsReceived(String name, int amount) {
+    return '$name sent you $amount coins!';
+  }
+
+  @override
+  String chatSystemCoinsSent(int amount) {
+    return 'I just sent you $amount coins!';
+  }
+
+  @override
+  String chatSystemSupportWelcome(String subject) {
+    return 'Welcome to GreenGo Support! A support agent will be with you shortly. Your ticket: $subject';
+  }
+
+  @override
+  String chatSystemSupportAgentJoined(String name) {
+    return '$name has joined the conversation and will assist you.';
+  }
+
+  @override
+  String get chatSystemSupportAgentFallback => 'Support agent';
+
+  @override
+  String get chatSystemSupportInProgress =>
+      'A support agent is working on your issue.';
+
+  @override
+  String get chatSystemSupportWaitingOnUser =>
+      'We\'re waiting for your response.';
+
+  @override
+  String get chatSystemSupportResolved =>
+      'Your issue has been resolved. Thank you for contacting GreenGo Support!';
+
+  @override
+  String get chatSystemSupportClosed => 'This support ticket has been closed.';
+
+  @override
+  String get chatSystemSupportStatusUpdated => 'Ticket status updated.';
+
+  @override
+  String get commonUnknownUser => 'Unknown user';
+
+  @override
+  String get chatSupportDescription => 'Description';
+
+  @override
+  String get supportReportFollowUpTitle => 'Report follow-up';
+
+  @override
+  String supportReportFollowUpSubject(String reason) {
+    return 'Report follow-up: $reason';
+  }
+
+  @override
+  String supportReportFollowUpDetails(
+      String reason, String message, String user, String date) {
+    return 'Reason: $reason\nReported message: \"$message\"\nReported user: $user\nReported at: $date';
+  }
+
+  @override
+  String get supportChatWithGreenGoSubject => 'Chat with GreenGo Support';
+
+  @override
+  String invoiceLineCoins(int count) {
+    return '$count GreenGo Coins';
+  }
+
+  @override
+  String get invoiceLineSubscription => 'Subscription plan';
+
+  @override
+  String get invoiceLineGiftPackage => 'Coin gift package';
 }

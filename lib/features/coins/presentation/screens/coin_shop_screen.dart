@@ -22,6 +22,7 @@ import '../../../../core/widgets/subscription_legal_footer.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/widgets/purchase_success_dialog.dart';
 import '../../../../generated/app_localizations.dart';
+import '../../../chat/domain/chat_system_message.dart';
 import '../../../profile/presentation/bloc/profile_bloc.dart';
 import '../../../profile/presentation/bloc/profile_event.dart';
 import '../../../subscription/domain/entities/subscription.dart';
@@ -2912,7 +2913,11 @@ class _CoinShopScreenState extends State<CoinShopScreen>
       // Message from sender to receiver
       final msgRef = db.collection('conversations')
           .doc(conversationId).collection('messages').doc();
+      // English fallback for old app versions / push; both sides render
+      // `metadata.systemKey` in their own language.
       final senderMsg = 'I just sent you $amount coins!';
+      final senderMeta =
+          chatSystemMetadata(ChatSystemKey.coinsSent, {'amount': amount});
 
       await msgRef.set({
         'messageId': msgRef.id,
@@ -2922,6 +2927,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
         'receiverId': recipientId,
         'content': senderMsg,
         'type': 'text',
+        'metadata': senderMeta,
         'sentAt': FieldValue.serverTimestamp(),
         'deliveredAt': FieldValue.serverTimestamp(),
         'status': 'delivered',
@@ -2941,6 +2947,7 @@ class _CoinShopScreenState extends State<CoinShopScreen>
           'receiverId': recipientId,
           'content': senderMsg,
           'type': 'text',
+          'metadata': senderMeta,
           'sentAt': Timestamp.fromDate(DateTime.now()),
         },
         'lastMessageAt': FieldValue.serverTimestamp(),

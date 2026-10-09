@@ -38947,6 +38947,121 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You received coins!'**
   String get notifCoinsReceivedTitle;
+
+  /// No description provided for @chatSystemCoinsReceived.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} sent you {amount} coins!'**
+  String chatSystemCoinsReceived(String name, int amount);
+
+  /// No description provided for @chatSystemCoinsSent.
+  ///
+  /// In en, this message translates to:
+  /// **'I just sent you {amount} coins!'**
+  String chatSystemCoinsSent(int amount);
+
+  /// No description provided for @chatSystemSupportWelcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to GreenGo Support! A support agent will be with you shortly. Your ticket: {subject}'**
+  String chatSystemSupportWelcome(String subject);
+
+  /// No description provided for @chatSystemSupportAgentJoined.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} has joined the conversation and will assist you.'**
+  String chatSystemSupportAgentJoined(String name);
+
+  /// No description provided for @chatSystemSupportAgentFallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Support agent'**
+  String get chatSystemSupportAgentFallback;
+
+  /// No description provided for @chatSystemSupportInProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'A support agent is working on your issue.'**
+  String get chatSystemSupportInProgress;
+
+  /// No description provided for @chatSystemSupportWaitingOnUser.
+  ///
+  /// In en, this message translates to:
+  /// **'We\'re waiting for your response.'**
+  String get chatSystemSupportWaitingOnUser;
+
+  /// No description provided for @chatSystemSupportResolved.
+  ///
+  /// In en, this message translates to:
+  /// **'Your issue has been resolved. Thank you for contacting GreenGo Support!'**
+  String get chatSystemSupportResolved;
+
+  /// No description provided for @chatSystemSupportClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'This support ticket has been closed.'**
+  String get chatSystemSupportClosed;
+
+  /// No description provided for @chatSystemSupportStatusUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket status updated.'**
+  String get chatSystemSupportStatusUpdated;
+
+  /// No description provided for @commonUnknownUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown user'**
+  String get commonUnknownUser;
+
+  /// No description provided for @chatSupportDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get chatSupportDescription;
+
+  /// No description provided for @supportReportFollowUpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Report follow-up'**
+  String get supportReportFollowUpTitle;
+
+  /// No description provided for @supportReportFollowUpSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Report follow-up: {reason}'**
+  String supportReportFollowUpSubject(String reason);
+
+  /// No description provided for @supportReportFollowUpDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}'**
+  String supportReportFollowUpDetails(
+      String reason, String message, String user, String date);
+
+  /// No description provided for @supportChatWithGreenGoSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat with GreenGo Support'**
+  String get supportChatWithGreenGoSubject;
+
+  /// No description provided for @invoiceLineCoins.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} GreenGo Coins'**
+  String invoiceLineCoins(int count);
+
+  /// No description provided for @invoiceLineSubscription.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription plan'**
+  String get invoiceLineSubscription;
+
+  /// No description provided for @invoiceLineGiftPackage.
+  ///
+  /// In en, this message translates to:
+  /// **'Coin gift package'**
+  String get invoiceLineGiftPackage;
 }
 
 class _AppLocalizationsDelegate

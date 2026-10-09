@@ -10,6 +10,7 @@ import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/qr_checkin_service.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../core/utils/user_error.dart';
+import '../../../../core/utils/user_display_name.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../discovery/data/datasources/discovery_remote_datasource.dart';
 import '../../data/datasources/events_remote_datasource.dart';
@@ -136,7 +137,7 @@ class _EventScannerScreenState extends State<EventScannerScreen> {
     if (!mounted) return;
     final name = r.name.isNotEmpty
         ? r.name
-        : (_attendees[code.userId]?.userName ?? '');
+        : displayUserName(l10n, _attendees[code.userId]?.userName);
     if (r.approved) {
       _approved(l10n, name);
     } else {

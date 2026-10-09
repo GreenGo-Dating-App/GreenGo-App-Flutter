@@ -11988,5 +11988,85 @@
       }
     }
   },
-  "notifCoinsReceivedTitle": "You received coins!"
+  "notifCoinsReceivedTitle": "You received coins!",
+  "chatSystemCoinsReceived": "{name} sent you {amount} coins!",
+  "@chatSystemCoinsReceived": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "chatSystemCoinsSent": "I just sent you {amount} coins!",
+  "@chatSystemCoinsSent": {
+    "placeholders": {
+      "amount": {
+        "type": "int"
+      }
+    }
+  },
+  "chatSystemSupportWelcome": "Welcome to GreenGo Support! A support agent will be with you shortly. Your ticket: {subject}",
+  "@chatSystemSupportWelcome": {
+    "placeholders": {
+      "subject": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSystemSupportAgentJoined": "{name} has joined the conversation and will assist you.",
+  "@chatSystemSupportAgentJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "chatSystemSupportAgentFallback": "Support agent",
+  "chatSystemSupportInProgress": "A support agent is working on your issue.",
+  "chatSystemSupportWaitingOnUser": "We're waiting for your response.",
+  "chatSystemSupportResolved": "Your issue has been resolved. Thank you for contacting GreenGo Support!",
+  "chatSystemSupportClosed": "This support ticket has been closed.",
+  "chatSystemSupportStatusUpdated": "Ticket status updated.",
+  "commonUnknownUser": "Unknown user",
+  "chatSupportDescription": "Description",
+  "supportReportFollowUpTitle": "Report follow-up",
+  "supportReportFollowUpSubject": "Report follow-up: {reason}",
+  "@supportReportFollowUpSubject": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "supportReportFollowUpDetails": "Reason: {reason}\nReported message: \"{message}\"\nReported user: {user}\nReported at: {date}",
+  "@supportReportFollowUpDetails": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      },
+      "message": {
+        "type": "String"
+      },
+      "user": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "supportChatWithGreenGoSubject": "Chat with GreenGo Support",
+  "invoiceLineCoins": "{count} GreenGo Coins",
+  "@invoiceLineCoins": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "invoiceLineSubscription": "Subscription plan",
+  "invoiceLineGiftPackage": "Coin gift package"
 }

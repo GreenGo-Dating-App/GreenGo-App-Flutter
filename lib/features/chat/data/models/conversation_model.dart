@@ -107,6 +107,11 @@ class ConversationModel extends Conversation {
         sentAt: messageData['sentAt'] != null
             ? (messageData['sentAt'] as Timestamp).toDate()
             : DateTime.now(),
+        // Carries `systemKey` / `systemParams` for app-written lines so the
+        // inbox preview renders in the viewer's language.
+        metadata: messageData['metadata'] is Map
+            ? Map<String, dynamic>.from(messageData['metadata'] as Map)
+            : null,
       );
     }
 

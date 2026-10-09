@@ -12,6 +12,7 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/services/push_notification_service.dart';
 import '../../../../core/utils/safe_navigation.dart';
 import '../../../../generated/app_localizations.dart';
+import '../utils/support_l10n.dart';
 
 /// Support Chat Screen
 ///
@@ -43,6 +44,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
   String? _supportAgentName;
   String? _ticketStatus;
   String? _ticketSubject;
+  Map<String, dynamic>? _ticketDoc;
   String? _ticketCategory;
 
   // Pagination for infinite scroll
@@ -237,6 +239,7 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
           _supportAgentName = agentName;
           _ticketStatus = data['status'] as String? ?? 'open';
           _ticketSubject = data['subject'] as String?;
+          _ticketDoc = data;
           _ticketCategory = data['category'] as String?;
         });
       }
@@ -319,6 +322,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
 
       await conversationRef.update({
         'lastMessage': lastMessagePreview,
+        // Stable type so a reader can label image previews in their language.
+        'lastMessageType': messageType,
         'lastMessageAt': now,
         'lastMessageBy': widget.isAdmin ? 'admin' : 'user',
         'messageCount': currentMessageCount + 1,
@@ -798,7 +803,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                content,
+                supportMessageDisplayText(
+                    AppLocalizations.of(context)!, messageData),
                 style: const TextStyle(
                   color: AppColors.textSecondary,
                   fontSize: 13,
@@ -870,7 +876,8 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
             const Divider(color: AppColors.divider, height: 1),
             const SizedBox(height: 12),
             Text(
-              content.replaceAll('📋 **New Support Ticket**\n\n', '').replaceAll('**', ''),
+              supportTicketStartText(
+                  AppLocalizations.of(context)!, messageData),
               style: const TextStyle(
                 color: AppColors.textPrimary,
                 fontSize: 14,
@@ -1301,8 +1308,18 @@ class _SupportChatScreenState extends State<SupportChatScreen> {
               ],
             ),
             const SizedBox(height: 20),
-            _buildInfoRow(AppLocalizations.of(context)!.chatSupportSubject, _ticketSubject ?? AppLocalizations.of(context)!.chatSupportGeneralSupport),
-            _buildInfoRow(AppLocalizations.of(context)!.chatSupportCategory, _ticketCategory ?? AppLocalizations.of(context)!.chatSupportGeneral),
+            _buildInfoRow(
+                AppLocalizations.of(context)!.chatSupportSubject,
+                _ticketSubject == null || _ticketDoc == null
+                    ? AppLocalizations.of(context)!.chatSupportGeneralSupport
+                    : supportTicketSubject(
+                        AppLocalizations.of(context)!, _ticketDoc!)),
+            _buildInfoRow(
+                AppLocalizations.of(context)!.chatSupportCategory,
+                _ticketCategory == null
+                    ? AppLocalizations.of(context)!.chatSupportGeneral
+                    : supportCategoryLabel(
+                        AppLocalizations.of(context)!, _ticketCategory)),
             _buildInfoRow(AppLocalizations.of(context)!.chatSupportStatus, _getStatusDisplayText()),
             _buildInfoRow(AppLocalizations.of(context)!.chatSupportAgentLabel, _supportAgentName ?? AppLocalizations.of(context)!.chatSupportWaitingAssignment),
             _buildInfoRow(AppLocalizations.of(context)!.chatSupportTicketId, widget.conversationId.substring(0, 8).toUpperCase()),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/utils/user_display_name.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../data/datasources/events_remote_datasource.dart';
@@ -170,7 +171,9 @@ class _EventAttendanceScreenState extends State<EventAttendanceScreen> {
                 : null,
             child: (photo == null || photo.isEmpty)
                 ? Text(
-                    a.userName.isNotEmpty ? a.userName[0].toUpperCase() : '?',
+                    isMissingUserName(a.userName)
+                        ? '?'
+                        : a.userName.trim()[0].toUpperCase(),
                     style: const TextStyle(color: AppColors.textPrimary),
                   )
                 : null,
@@ -181,7 +184,7 @@ class _EventAttendanceScreenState extends State<EventAttendanceScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  a.userName.isNotEmpty ? a.userName : '—',
+                  displayUserName(l10n, a.userName),
                   style: const TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 15,

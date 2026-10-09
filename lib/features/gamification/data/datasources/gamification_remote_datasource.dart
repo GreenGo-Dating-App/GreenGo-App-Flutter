@@ -390,7 +390,8 @@ class GamificationRemoteDataSourceImpl
       );
 
       final levelMap = initialLevel.toMap();
-      levelMap['displayName'] = displayName ?? 'Unknown';
+      // Empty when unknown: the leaderboard renders a localized fallback.
+      levelMap['displayName'] = displayName ?? '';
       levelMap['photoUrl'] = photoUrl;
       levelMap['region'] = region ?? '';
 
