@@ -7301,5 +7301,10 @@
   "copyrightWebCheckEmail": "Fast geschafft: Wir haben dir einen Bestätigungslink per E-Mail gesendet. Deine Meldung wird nach der Bestätigung bearbeitet.",
   "copyrightWebConfirmed": "Danke. Deine Meldung ist bestätigt und wird geprüft.",
   "copyrightWebInvalidLink": "Dieser Bestätigungslink ist ungültig oder abgelaufen.",
-  "copyrightWebInvalid": "Einige Pflichtangaben fehlen oder sind ungültig. Geh zurück und prüfe das Formular."
+  "copyrightWebInvalid": "Einige Pflichtangaben fehlen oder sind ungültig. Geh zurück und prüfe das Formular.",
+  "wzAvailHoursTitle": "Öffnungszeiten",
+  "wzAvailSessionsTitle": "Termine",
+  "wzAvailDaysTitle": "Tage",
+  "wzAvailPeriodTitle": "Zeitraum",
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 Termin pro Tag} other{{count} Termine pro Tag}}"
 }

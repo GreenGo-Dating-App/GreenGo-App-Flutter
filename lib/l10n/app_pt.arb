@@ -7301,5 +7301,10 @@
   "copyrightWebCheckEmail": "Quase concluído: enviámos uma ligação de confirmação para o seu e-mail. A sua notificação será tratada depois de a confirmar.",
   "copyrightWebConfirmed": "Obrigado. A sua notificação está confirmada e será analisada.",
   "copyrightWebInvalidLink": "Esta ligação de confirmação é inválida ou expirou.",
-  "copyrightWebInvalid": "Faltam informações obrigatórias ou são inválidas. Volte atrás e verifique o formulário."
+  "copyrightWebInvalid": "Faltam informações obrigatórias ou são inválidas. Volte atrás e verifique o formulário.",
+  "wzAvailHoursTitle": "Horário",
+  "wzAvailSessionsTitle": "Sessões",
+  "wzAvailDaysTitle": "Dias",
+  "wzAvailPeriodTitle": "Período",
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 sessão por dia} other{{count} sessões por dia}}"
 }

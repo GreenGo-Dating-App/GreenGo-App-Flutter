@@ -12614,5 +12614,30 @@
   "copyrightWebCheckEmail": "Almost done: we sent a confirmation link to your email. Your notice is processed after you confirm it.",
   "copyrightWebConfirmed": "Thank you. Your notice is confirmed and will be reviewed.",
   "copyrightWebInvalidLink": "This confirmation link is invalid or has expired.",
-  "copyrightWebInvalid": "Some required information is missing or invalid. Go back and check the form."
+  "copyrightWebInvalid": "Some required information is missing or invalid. Go back and check the form.",
+  "wzAvailHoursTitle": "Opening hours",
+  "wzAvailSessionsTitle": "Sessions",
+  "wzAvailDaysTitle": "Days",
+  "wzAvailPeriodTitle": "Period",
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 session per day} other{{count} sessions per day}}",
+  "@wzAvailHoursTitle": {
+    "description": "Experience wizard availability step: section title"
+  },
+  "@wzAvailSessionsTitle": {
+    "description": "Experience wizard availability step: section title"
+  },
+  "@wzAvailDaysTitle": {
+    "description": "Experience wizard availability step: section title"
+  },
+  "@wzAvailPeriodTitle": {
+    "description": "Experience wizard availability step: section title"
+  },
+  "@wzAvailSessionsPerDay": {
+    "description": "Experience wizard availability preview count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -1334,115 +1334,162 @@ class _EditorFormState extends State<_EditorForm> {
         onChanged: (v) => setState(() => _useRecurring = v),
       ),
       if (_useRecurring) ...[
-        Row(children: [
-          Expanded(
-            child: OutlinedButton(
-              key: const ValueKey('wizard-avail-from'),
-              onPressed: () async {
-                final t = await pickTime(r.windowStart);
-                if (t != null) setState(() => _availRules = _availRules.copyWith(windowStart: t));
-              },
-              child: Text('${l.mtAvailableFrom} ${r.windowStart}'),
-            ),
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: OutlinedButton(
-              key: const ValueKey('wizard-avail-until'),
-              onPressed: () async {
-                final t = await pickTime(r.windowEnd);
-                if (t != null) setState(() => _availRules = _availRules.copyWith(windowEnd: t));
-              },
-              child: Text('${l.mtAvailableUntil} ${r.windowEnd}'),
-            ),
-          ),
-        ]),
         const SizedBox(height: 8),
-        Row(children: [
-          Expanded(
-            child: DropdownButtonFormField<int>(
-              value: const [30, 45, 60, 90, 120, 150, 180, 240, 300, 360, 480].contains(r.durationMinutes) ? r.durationMinutes : null,
-              dropdownColor: AppColors.backgroundCard,
-              decoration: _dec(l.mtDuration),
-              items: [
-                for (final d in const [30, 45, 60, 90, 120, 150, 180, 240, 300, 360, 480])
-                  DropdownMenuItem(value: d, child: Text(l.mtHoursMinutes(d ~/ 60, d % 60))),
-              ],
-              onChanged: (v) => setState(() => _availRules = _availRules.copyWith(durationMinutes: v)),
+        // ── Opening hours ──
+        _AvailSection(
+          icon: Icons.schedule,
+          title: l.wzAvailHoursTitle,
+          child: Row(children: [
+            Expanded(
+              child: _AvailTile(
+                key: const ValueKey('wizard-avail-from'),
+                icon: Icons.wb_sunny_outlined,
+                label: l.mtAvailableFrom,
+                value: r.windowStart,
+                onTap: () async {
+                  final t = await pickTime(r.windowStart);
+                  if (t != null) setState(() => _availRules = _availRules.copyWith(windowStart: t));
+                },
+              ),
             ),
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: DropdownButtonFormField<int>(
-              value: const [0, 10, 15, 30, 45, 60, 90, 120].contains(r.bufferMinutes) ? r.bufferMinutes : 0,
-              dropdownColor: AppColors.backgroundCard,
-              decoration: _dec(l.mtBreak),
-              items: [
-                for (final d in const [0, 10, 15, 30, 45, 60, 90, 120])
-                  DropdownMenuItem(value: d, child: Text(d == 0 ? l.mtNoBreak : l.mtMinutes(d))),
-              ],
-              onChanged: (v) => setState(() => _availRules = _availRules.copyWith(bufferMinutes: v)),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8),
+              child: Icon(Icons.arrow_forward, color: AppColors.textTertiary, size: 18),
             ),
-          ),
-        ]),
-        const SizedBox(height: 8),
-        DropdownButtonFormField<int?>(
-          value: r.startEveryMinutes,
-          dropdownColor: AppColors.backgroundCard,
-          decoration: _dec(l.mtStartEvery),
-          items: [
-            DropdownMenuItem<int?>(value: null, child: Text(l.mtStartEveryAuto)),
-            for (final d in const [15, 30, 45, 60, 90, 120, 180, 240].where((d) => d >= r.durationMinutes))
-              DropdownMenuItem<int?>(value: d, child: Text(l.mtMinutes(d))),
-          ],
-          onChanged: (v) => setState(() => _availRules =
-              v == null ? _availRules.copyWith(clearStartEvery: true) : _availRules.copyWith(startEveryMinutes: v)),
+            Expanded(
+              child: _AvailTile(
+                key: const ValueKey('wizard-avail-until'),
+                icon: Icons.nights_stay_outlined,
+                label: l.mtAvailableUntil,
+                value: r.windowEnd,
+                onTap: () async {
+                  final t = await pickTime(r.windowEnd);
+                  if (t != null) setState(() => _availRules = _availRules.copyWith(windowEnd: t));
+                },
+              ),
+            ),
+          ]),
         ),
-        const SizedBox(height: 8),
-        Wrap(spacing: 6, children: [
-          for (var wd = 1; wd <= 7; wd++)
-            FilterChip(
-              key: ValueKey('wizard-avail-wd-$wd'),
-              label: Text(DateFormat.E(locale).format(DateTime(2024, 1, wd))),
-              selected: r.weekdays.contains(wd),
-              onSelected: (v) => setState(() {
-                final w = {...r.weekdays};
-                v ? w.add(wd) : w.remove(wd);
-                _availRules = _availRules.copyWith(weekdays: w.toList()..sort());
-              }),
+        // ── Sessions ──
+        _AvailSection(
+          icon: Icons.timelapse,
+          title: l.wzAvailSessionsTitle,
+          child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            Row(children: [
+              Expanded(
+                child: DropdownButtonFormField<int>(
+                  value: const [30, 45, 60, 90, 120, 150, 180, 240, 300, 360, 480].contains(r.durationMinutes) ? r.durationMinutes : null,
+                  dropdownColor: AppColors.backgroundCard,
+                  decoration: _dec(l.mtDuration).copyWith(prefixIcon: const Icon(Icons.hourglass_bottom, size: 18, color: AppColors.richGold)),
+                  items: [
+                    for (final d in const [30, 45, 60, 90, 120, 150, 180, 240, 300, 360, 480])
+                      DropdownMenuItem(value: d, child: Text(l.mtHoursMinutes(d ~/ 60, d % 60))),
+                  ],
+                  onChanged: (v) => setState(() => _availRules = _availRules.copyWith(durationMinutes: v)),
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: DropdownButtonFormField<int>(
+                  value: const [0, 10, 15, 30, 45, 60, 90, 120].contains(r.bufferMinutes) ? r.bufferMinutes : 0,
+                  dropdownColor: AppColors.backgroundCard,
+                  decoration: _dec(l.mtBreak).copyWith(prefixIcon: const Icon(Icons.coffee_outlined, size: 18, color: AppColors.richGold)),
+                  items: [
+                    for (final d in const [0, 10, 15, 30, 45, 60, 90, 120])
+                      DropdownMenuItem(value: d, child: Text(d == 0 ? l.mtNoBreak : l.mtMinutes(d))),
+                  ],
+                  onChanged: (v) => setState(() => _availRules = _availRules.copyWith(bufferMinutes: v)),
+                ),
+              ),
+            ]),
+            const SizedBox(height: 10),
+            DropdownButtonFormField<int?>(
+              value: r.startEveryMinutes,
+              dropdownColor: AppColors.backgroundCard,
+              decoration: _dec(l.mtStartEvery).copyWith(prefixIcon: const Icon(Icons.repeat, size: 18, color: AppColors.richGold)),
+              items: [
+                DropdownMenuItem<int?>(value: null, child: Text(l.mtStartEveryAuto)),
+                for (final d in const [15, 30, 45, 60, 90, 120, 180, 240].where((d) => d >= r.durationMinutes))
+                  DropdownMenuItem<int?>(value: d, child: Text(l.mtMinutes(d))),
+              ],
+              onChanged: (v) => setState(() => _availRules =
+                  v == null ? _availRules.copyWith(clearStartEvery: true) : _availRules.copyWith(startEveryMinutes: v)),
             ),
-        ]),
-        const SizedBox(height: 8),
-        Row(children: [
-          Expanded(
-            child: OutlinedButton(
-              onPressed: () async {
-                final d = await showDatePicker(context: context, initialDate: DateTime.now(),
-                    firstDate: DateTime.now(), lastDate: DateTime.now().add(const Duration(days: 730)));
-                if (d != null) setState(() => _availRules = _availRules.copyWith(dateFrom: dateKey(d)));
-              },
-              child: Text('${l.mtDateFrom}: ${r.dateFrom ?? '—'}'), // i18n-ignore: localized label + date
+          ]),
+        ),
+        // ── Days ──
+        _AvailSection(
+          icon: Icons.calendar_view_week,
+          title: l.wzAvailDaysTitle,
+          child: Wrap(spacing: 8, runSpacing: 8, children: [
+            for (var wd = 1; wd <= 7; wd++)
+              _DayToggle(
+                key: ValueKey('wizard-avail-wd-$wd'),
+                label: DateFormat.E(locale).format(DateTime(2024, 1, wd)),
+                selected: r.weekdays.contains(wd),
+                onTap: () => setState(() {
+                  final w = {...r.weekdays};
+                  w.contains(wd) ? w.remove(wd) : w.add(wd);
+                  _availRules = _availRules.copyWith(weekdays: w.toList()..sort());
+                }),
+              ),
+          ]),
+        ),
+        // ── Period ──
+        _AvailSection(
+          icon: Icons.date_range,
+          title: l.wzAvailPeriodTitle,
+          child: Row(children: [
+            Expanded(
+              child: _AvailTile(
+                icon: Icons.event_available,
+                label: l.mtDateFrom,
+                value: _fmtDay(r.dateFrom, locale) ?? '—', // i18n-ignore: placeholder dash
+                onTap: () async {
+                  final d = await showDatePicker(context: context, initialDate: DateTime.now(),
+                      firstDate: DateTime.now(), lastDate: DateTime.now().add(const Duration(days: 730)));
+                  if (d != null) setState(() => _availRules = _availRules.copyWith(dateFrom: dateKey(d)));
+                },
+              ),
             ),
-          ),
-          const SizedBox(width: 8),
-          Expanded(
-            child: OutlinedButton(
-              onPressed: () async {
-                final d = await showDatePicker(context: context, initialDate: DateTime.now().add(const Duration(days: 30)),
-                    firstDate: DateTime.now(), lastDate: DateTime.now().add(const Duration(days: 730)));
-                setState(() => _availRules = d == null ? _availRules.copyWith(clearDateTo: true) : _availRules.copyWith(dateTo: dateKey(d)));
-              },
-              child: Text('${l.mtDateTo}: ${r.dateTo ?? l.mtNoEnd}'),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8),
+              child: Icon(Icons.arrow_forward, color: AppColors.textTertiary, size: 18),
             ),
-          ),
-        ]),
-        const SizedBox(height: 8),
-        Text(l.mtPreview, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+            Expanded(
+              child: _AvailTile(
+                icon: Icons.event_busy,
+                label: l.mtDateTo,
+                value: _fmtDay(r.dateTo, locale) ?? l.mtNoEnd,
+                onTap: () async {
+                  final d = await showDatePicker(context: context, initialDate: DateTime.now().add(const Duration(days: 30)),
+                      firstDate: DateTime.now(), lastDate: DateTime.now().add(const Duration(days: 730)));
+                  setState(() => _availRules = d == null ? _availRules.copyWith(clearDateTo: true) : _availRules.copyWith(dateTo: dateKey(d)));
+                },
+              ),
+            ),
+          ]),
+        ),
+        // ── Preview ──
+        _AvailSection(
+          icon: Icons.visibility_outlined,
+          title: l.mtPreview,
+          trailing: Text(l.wzAvailSessionsPerDay(preview.length),
+              style: const TextStyle(color: AppColors.richGold, fontSize: 12, fontWeight: FontWeight.w600)),
+          child: Wrap(key: const ValueKey('wizard-avail-preview'), spacing: 6, runSpacing: 6, children: [
+            for (final t in preview)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  color: AppColors.richGold.withValues(alpha: 0.10),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: AppColors.richGold.withValues(alpha: 0.45)),
+                ),
+                child: Text(t, style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
+              ),
+          ]),
+        ),
         const SizedBox(height: 4),
-        Wrap(key: const ValueKey('wizard-avail-preview'), spacing: 6, runSpacing: 6, children: [
-          for (final t in preview) Chip(label: Text(t), visualDensity: VisualDensity.compact),
-        ]),
-        const SizedBox(height: 6),
         Text(l.wzFineTuneLater, style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
       ] else
         _bookingSettings(l),
@@ -1999,4 +2046,130 @@ class _EditorFormState extends State<_EditorForm> {
       ),
     ]);
   }
+}
+
+
+/// "yyyy-MM-dd" -> localized medium date (null when unset/invalid).
+String? _fmtDay(String? key, String locale) {
+  if (key == null || key.isEmpty) return null;
+  final d = DateTime.tryParse(key);
+  return d == null ? key : DateFormat.yMMMd(locale).format(d);
+}
+
+/// Card section of the availability step: icon + title header, content.
+class _AvailSection extends StatelessWidget {
+  const _AvailSection({required this.icon, required this.title, required this.child, this.trailing});
+  final IconData icon;
+  final String title;
+  final Widget child;
+  final Widget? trailing;
+
+  @override
+  Widget build(BuildContext context) => Container(
+        margin: const EdgeInsets.only(bottom: 12),
+        padding: const EdgeInsets.fromLTRB(14, 12, 14, 14),
+        decoration: BoxDecoration(
+          color: AppColors.backgroundCard,
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: AppColors.divider),
+        ),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+          Row(children: [
+            Container(
+              padding: const EdgeInsets.all(6),
+              decoration: BoxDecoration(
+                color: AppColors.richGold.withValues(alpha: 0.12),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Icon(icon, size: 18, color: AppColors.richGold),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(title,
+                  style: const TextStyle(color: AppColors.textPrimary, fontSize: 15, fontWeight: FontWeight.w700)),
+            ),
+            if (trailing != null) trailing!,
+          ]),
+          const SizedBox(height: 12),
+          child,
+        ]),
+      );
+}
+
+/// Tappable value tile: small label on top, big value below.
+class _AvailTile extends StatelessWidget {
+  const _AvailTile({super.key, required this.icon, required this.label, required this.value, required this.onTap});
+  final IconData icon;
+  final String label;
+  final String value;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+        color: AppColors.backgroundInput,
+        borderRadius: BorderRadius.circular(12),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12),
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+            child: Row(children: [
+              Icon(icon, size: 20, color: AppColors.richGold),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                  Text(label,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(color: AppColors.textTertiary, fontSize: 11.5)),
+                  const SizedBox(height: 2),
+                  Text(value,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(color: AppColors.textPrimary, fontSize: 17, fontWeight: FontWeight.w700)),
+                ]),
+              ),
+              const Icon(Icons.edit_outlined, size: 16, color: AppColors.textTertiary),
+            ]),
+          ),
+        ),
+      );
+}
+
+/// Round weekday toggle (gold when selected).
+class _DayToggle extends StatelessWidget {
+  const _DayToggle({super.key, required this.label, required this.selected, required this.onTap});
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+        button: true,
+        selected: selected,
+        label: label,
+        child: InkWell(
+          customBorder: const CircleBorder(),
+          onTap: onTap,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 150),
+            width: 44,
+            height: 44,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: selected ? AppColors.richGold : AppColors.backgroundInput,
+              border: Border.all(color: selected ? AppColors.richGold : AppColors.divider),
+            ),
+            child: Text(
+              label.length > 3 ? label.substring(0, 3) : label,
+              style: TextStyle(
+                color: selected ? AppColors.deepBlack : AppColors.textSecondary,
+                fontWeight: FontWeight.w700,
+                fontSize: 12.5,
+              ),
+            ),
+          ),
+        ),
+      );
 }

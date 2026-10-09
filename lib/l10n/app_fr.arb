@@ -6720,5 +6720,10 @@
   "copyrightWebCheckEmail": "Presque terminé : nous vous avons envoyé un lien de confirmation par e-mail. Votre notification sera traitée après confirmation.",
   "copyrightWebConfirmed": "Merci. Votre notification est confirmée et sera examinée.",
   "copyrightWebInvalidLink": "Ce lien de confirmation est invalide ou a expiré.",
-  "copyrightWebInvalid": "Certaines informations obligatoires sont manquantes ou invalides. Revenez en arrière et vérifiez le formulaire."
+  "copyrightWebInvalid": "Certaines informations obligatoires sont manquantes ou invalides. Revenez en arrière et vérifiez le formulaire.",
+  "wzAvailHoursTitle": "Horaires",
+  "wzAvailSessionsTitle": "Séances",
+  "wzAvailDaysTitle": "Jours",
+  "wzAvailPeriodTitle": "Période",
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 séance par jour} other{{count} séances par jour}}"
 }

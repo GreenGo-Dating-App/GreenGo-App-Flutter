@@ -23615,4 +23615,27 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get copyrightWebInvalid =>
       'Falta información obligatoria o no es válida. Vuelve atrás y revisa el formulario.';
+
+  @override
+  String get wzAvailHoursTitle => 'Horario';
+
+  @override
+  String get wzAvailSessionsTitle => 'Sesiones';
+
+  @override
+  String get wzAvailDaysTitle => 'Días';
+
+  @override
+  String get wzAvailPeriodTitle => 'Periodo';
+
+  @override
+  String wzAvailSessionsPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sesiones al día',
+      one: '1 sesión al día',
+    );
+    return '$_temp0';
+  }
 }

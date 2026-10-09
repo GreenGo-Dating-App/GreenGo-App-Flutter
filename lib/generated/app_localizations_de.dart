@@ -23661,4 +23661,27 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get copyrightWebInvalid =>
       'Einige Pflichtangaben fehlen oder sind ungültig. Geh zurück und prüfe das Formular.';
+
+  @override
+  String get wzAvailHoursTitle => 'Öffnungszeiten';
+
+  @override
+  String get wzAvailSessionsTitle => 'Termine';
+
+  @override
+  String get wzAvailDaysTitle => 'Tage';
+
+  @override
+  String get wzAvailPeriodTitle => 'Zeitraum';
+
+  @override
+  String wzAvailSessionsPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Termine pro Tag',
+      one: '1 Termin pro Tag',
+    );
+    return '$_temp0';
+  }
 }

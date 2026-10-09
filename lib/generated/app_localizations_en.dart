@@ -23386,4 +23386,27 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get copyrightWebInvalid =>
       'Some required information is missing or invalid. Go back and check the form.';
+
+  @override
+  String get wzAvailHoursTitle => 'Opening hours';
+
+  @override
+  String get wzAvailSessionsTitle => 'Sessions';
+
+  @override
+  String get wzAvailDaysTitle => 'Days';
+
+  @override
+  String get wzAvailPeriodTitle => 'Period';
+
+  @override
+  String wzAvailSessionsPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sessions per day',
+      one: '1 session per day',
+    );
+    return '$_temp0';
+  }
 }

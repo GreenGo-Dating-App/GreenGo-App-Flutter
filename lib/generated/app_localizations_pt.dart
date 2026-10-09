@@ -23587,6 +23587,29 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get copyrightWebInvalid =>
       'Faltam informações obrigatórias ou são inválidas. Volte atrás e verifique o formulário.';
+
+  @override
+  String get wzAvailHoursTitle => 'Horário';
+
+  @override
+  String get wzAvailSessionsTitle => 'Sessões';
+
+  @override
+  String get wzAvailDaysTitle => 'Dias';
+
+  @override
+  String get wzAvailPeriodTitle => 'Período';
+
+  @override
+  String wzAvailSessionsPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sessões por dia',
+      one: '1 sessão por dia',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -47183,4 +47206,27 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get copyrightWebInvalid =>
       'Algumas informações obrigatórias estão faltando ou são inválidas. Volte e verifique o formulário.';
+
+  @override
+  String get wzAvailHoursTitle => 'Horário';
+
+  @override
+  String get wzAvailSessionsTitle => 'Sessões';
+
+  @override
+  String get wzAvailDaysTitle => 'Dias';
+
+  @override
+  String get wzAvailPeriodTitle => 'Período';
+
+  @override
+  String wzAvailSessionsPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sessões por dia',
+      one: '1 sessão por dia',
+    );
+    return '$_temp0';
+  }
 }

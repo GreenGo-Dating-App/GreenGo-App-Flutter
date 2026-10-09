@@ -7301,5 +7301,10 @@
   "copyrightWebCheckEmail": "Casi listo: te enviamos un enlace de confirmación por correo. Tu notificación se tramitará cuando la confirmes.",
   "copyrightWebConfirmed": "Gracias. Tu notificación está confirmada y será revisada.",
   "copyrightWebInvalidLink": "Este enlace de confirmación no es válido o ha caducado.",
-  "copyrightWebInvalid": "Falta información obligatoria o no es válida. Vuelve atrás y revisa el formulario."
+  "copyrightWebInvalid": "Falta información obligatoria o no es válida. Vuelve atrás y revisa el formulario.",
+  "wzAvailHoursTitle": "Horario",
+  "wzAvailSessionsTitle": "Sesiones",
+  "wzAvailDaysTitle": "Días",
+  "wzAvailPeriodTitle": "Periodo",
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 sesión al día} other{{count} sesiones al día}}"
 }

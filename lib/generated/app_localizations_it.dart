@@ -23636,4 +23636,27 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get copyrightWebInvalid =>
       'Alcune informazioni obbligatorie mancano o non sono valide. Torna indietro e controlla il modulo.';
+
+  @override
+  String get wzAvailHoursTitle => 'Orari';
+
+  @override
+  String get wzAvailSessionsTitle => 'Sessioni';
+
+  @override
+  String get wzAvailDaysTitle => 'Giorni';
+
+  @override
+  String get wzAvailPeriodTitle => 'Periodo';
+
+  @override
+  String wzAvailSessionsPerDay(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sessioni al giorno',
+      one: '1 sessione al giorno',
+    );
+    return '$_temp0';
+  }
 }

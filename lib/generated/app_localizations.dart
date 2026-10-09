@@ -40298,6 +40298,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Some required information is missing or invalid. Go back and check the form.'**
   String get copyrightWebInvalid;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Opening hours'**
+  String get wzAvailHoursTitle;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Sessions'**
+  String get wzAvailSessionsTitle;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Days'**
+  String get wzAvailDaysTitle;
+
+  /// Experience wizard availability step: section title
+  ///
+  /// In en, this message translates to:
+  /// **'Period'**
+  String get wzAvailPeriodTitle;
+
+  /// Experience wizard availability preview count
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 session per day} other{{count} sessions per day}}'**
+  String wzAvailSessionsPerDay(int count);
 }
 
 class _AppLocalizationsDelegate
