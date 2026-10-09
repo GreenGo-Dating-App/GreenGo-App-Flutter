@@ -23259,6 +23259,100 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get srvSupportAiHandoff =>
       'Percebo que queres falar com uma pessoa. Estou a ligar-te agora. Um membro da equipa de suporte vai responder em breve.';
+
+  @override
+  String emailTicketSubject(String title) {
+    return 'O teu bilhete para $title';
+  }
+
+  @override
+  String get emailTicketIntro =>
+      'A tua reserva está confirmada. Mostra o código QR à entrada: cada código é válido para uma entrada.';
+
+  @override
+  String get emailTicketWhen => 'Quando';
+
+  @override
+  String get emailTicketWhere => 'Onde';
+
+  @override
+  String get emailTicketTypeLabel => 'Tipo de bilhete';
+
+  @override
+  String get emailTicketPartySizeLabel => 'Número de pessoas';
+
+  @override
+  String get emailTicketCodeLabel => 'Código da reserva';
+
+  @override
+  String emailTicketQrCaption(int index, int count) {
+    return 'Bilhete $index de $count';
+  }
+
+  @override
+  String get emailTicketFooter =>
+      'Também encontras os teus bilhetes na app GreenGo. Não partilhes estes códigos QR.';
+
+  @override
+  String emailParticipantsSubject(String title) {
+    return 'Lista de participantes: $title';
+  }
+
+  @override
+  String emailParticipantsIntro(String title, String when, int count) {
+    return 'Em anexo está a lista de participantes de $title ($when). Participantes: $count.';
+  }
+
+  @override
+  String get emailParticipantsPrivacy =>
+      'Este ficheiro contém dados pessoais partilhados apenas para a entrada. Não o partilhes e apaga-o depois do evento.';
+
+  @override
+  String get csvColName => 'Nome';
+
+  @override
+  String get csvColEmail => 'E-mail';
+
+  @override
+  String get csvColBookingCode => 'Código da reserva';
+
+  @override
+  String get csvColTicket => 'Tipo de bilhete / pessoas';
+
+  @override
+  String get csvColStatus => 'Estado';
+
+  @override
+  String get csvStatusPaid => 'pago';
+
+  @override
+  String get csvStatusConfirmed => 'confirmado';
+
+  @override
+  String get csvStatusCheckedIn => 'check-in feito';
+
+  @override
+  String get participantsEmailButton => 'Enviar-me a lista de participantes';
+
+  @override
+  String get participantsEmailSent =>
+      'Lista de participantes enviada para o e-mail da tua conta';
+
+  @override
+  String get participantsEmailRateLimited =>
+      'Acabaste de a pedir. Tenta novamente daqui a alguns minutos.';
+
+  @override
+  String get participantsEmailFailed =>
+      'Não foi possível enviar a lista de participantes. Tenta mais tarde.';
+
+  @override
+  String get participantsEmailNoEmail =>
+      'A tua conta não tem um e-mail para onde enviar a lista.';
+
+  @override
+  String get checkoutOrganizerShareNotice =>
+      'O teu nome e e-mail serão partilhados com o organizador para a entrada.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -46518,4 +46612,99 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get srvSupportAiHandoff =>
       'Entendo que você quer falar com uma pessoa. Estou conectando você agora. Alguém da equipe de suporte vai responder em breve.';
+
+  @override
+  String emailTicketSubject(String title) {
+    return 'Seu ingresso para $title';
+  }
+
+  @override
+  String get emailTicketIntro =>
+      'Sua reserva está confirmada. Mostre o QR code na entrada: cada código vale para uma entrada.';
+
+  @override
+  String get emailTicketWhen => 'Quando';
+
+  @override
+  String get emailTicketWhere => 'Onde';
+
+  @override
+  String get emailTicketTypeLabel => 'Tipo de ingresso';
+
+  @override
+  String get emailTicketPartySizeLabel => 'Número de pessoas';
+
+  @override
+  String get emailTicketCodeLabel => 'Código da reserva';
+
+  @override
+  String emailTicketQrCaption(int index, int count) {
+    return 'Ingresso $index de $count';
+  }
+
+  @override
+  String get emailTicketFooter =>
+      'Você também encontra seus ingressos no app GreenGo. Não compartilhe estes QR codes.';
+
+  @override
+  String emailParticipantsSubject(String title) {
+    return 'Lista de participantes: $title';
+  }
+
+  @override
+  String emailParticipantsIntro(String title, String when, int count) {
+    return 'Em anexo está a lista de participantes de $title ($when). Participantes: $count.';
+  }
+
+  @override
+  String get emailParticipantsPrivacy =>
+      'Este arquivo contém dados pessoais compartilhados apenas para a entrada. Não compartilhe e apague-o depois do evento.';
+
+  @override
+  String get csvColName => 'Nome';
+
+  @override
+  String get csvColEmail => 'E-mail';
+
+  @override
+  String get csvColBookingCode => 'Código da reserva';
+
+  @override
+  String get csvColTicket => 'Tipo de ingresso / pessoas';
+
+  @override
+  String get csvColStatus => 'Status';
+
+  @override
+  String get csvStatusPaid => 'pago';
+
+  @override
+  String get csvStatusConfirmed => 'confirmado';
+
+  @override
+  String get csvStatusCheckedIn => 'check-in feito';
+
+  @override
+  String get participantsEmailButton =>
+      'Enviar a lista de participantes por e-mail';
+
+  @override
+  String get participantsEmailSent =>
+      'Lista de participantes enviada para o e-mail da sua conta';
+
+  @override
+  String get participantsEmailRateLimited =>
+      'Você acabou de pedir. Tente novamente em alguns minutos.';
+
+  @override
+  String get participantsEmailFailed =>
+      'Não foi possível enviar a lista de participantes. Tente mais tarde.';
+
+  @override
+  String get participantsEmailNoEmail =>
+      'Sua conta não tem um e-mail para receber a lista.';
+
+  @override
+  String get checkoutOrganizerShareNotice =>
+      'Seu nome e e-mail serão compartilhados com o organizador para a entrada.';
 }

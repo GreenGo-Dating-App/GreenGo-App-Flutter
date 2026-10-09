@@ -108,10 +108,22 @@ const submit = (uid = U) =>
   v2(age().submitAgeDocument, { documentPath: `age_verification/${uid}/doc.jpg`, documentType: 'passport' }, uid);
 
 describe('P2-6 ID document images are deleted once decided', () => {
-  test('automatic APPROVE: image deleted, only {ageVerified, method, decidedAt, birthYear} kept, HMAC fingerprint', async () => {
+  test('default policy: even a clean MRZ document stays PENDING until an admin decides', async () => {
+    delete process.env.ID_AUTO_VERIFY;
     await seedIdUser();
     setOcr(MRZ_TEXT);
     const r = await submit();
+    expect(r.status).toBe('pending');
+    expect((await db.doc(`age_verification_queue/${U}`).get()).data()).toMatchObject({ status: 'pending' });
+    expect(await filesUnder(`id_documents/${U}/`)).toHaveLength(1);
+    expect((await db.doc(`profiles/${U}`).get()).data()!.isAgeVerified).not.toBe(true);
+  });
+
+  test('automatic APPROVE (ID_AUTO_VERIFY=true): image deleted, only {ageVerified, method, decidedAt, birthYear} kept, HMAC fingerprint', async () => {
+    process.env.ID_AUTO_VERIFY = 'true';
+    await seedIdUser();
+    setOcr(MRZ_TEXT);
+    const r = await submit().finally(() => { delete process.env.ID_AUTO_VERIFY; });
     expect(r.status).toBe('verified');
 
     expect(await filesUnder(`id_documents/${U}/`)).toEqual([]);

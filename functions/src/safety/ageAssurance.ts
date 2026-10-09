@@ -136,6 +136,16 @@ const DOB_TOLERANCE_DAYS = 1;
 /** Confidence at or above which the document is accepted without a human. */
 const AUTO_VERIFY_CONFIDENCE = 0.85;
 
+/**
+ * Owner policy (Oct 2026): an identity document stays "under review" until an
+ * admin decides in the admin panel. Automatic acceptance of high-confidence
+ * documents is therefore OFF unless ID_AUTO_VERIFY=true. Automatic REJECTIONS
+ * (underage, unreadable, no birth date, document reused) are unchanged.
+ */
+export function idAutoVerifyEnabled(env: string | undefined = process.env.ID_AUTO_VERIFY): boolean {
+  return (env || '').trim().toLowerCase() === 'true';
+}
+
 // ============================================================================
 // Date-of-birth extraction
 // ============================================================================
@@ -526,7 +536,7 @@ export const submitAgeDocument = onCall({ memory: '1GiB' }, async (request) => {
     hasDocumentNumber: documentNumber !== null,
   });
 
-  if (matchesDeclaration && confidence >= AUTO_VERIFY_CONFIDENCE) {
+  if (idAutoVerifyEnabled() && matchesDeclaration && confidence >= AUTO_VERIFY_CONFIDENCE) {
     await writeStatus(uid, 'verified', {
       method: 'document',
       reviewedBy: 'system',

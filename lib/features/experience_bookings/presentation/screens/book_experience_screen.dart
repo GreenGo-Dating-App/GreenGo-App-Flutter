@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/widgets/organizer_share_notice.dart';
 import '../../../../core/utils/user_error.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../user_experiences/domain/entities/user_experience.dart';
@@ -279,18 +280,22 @@ class _BookViewState extends State<_BookView> {
           bottomNavigationBar: SafeArea(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-              child: SizedBox(
-                width: double.infinity,
-                child: BookingPrimaryButton(
-                  key: const ValueKey('booking-submit'),
-                  label: e.requestToBook ? l.bkSendRequest : l.bkConfirmBooking,
-                  icon: e.requestToBook
-                      ? Icons.send_rounded
-                      : Icons.event_available,
-                  busy: busy,
-                  onPressed: s.canSubmit ? _continue : null,
+              child: Column(mainAxisSize: MainAxisSize.min, children: [
+                const OrganizerShareNotice(),
+                const SizedBox(height: 8),
+                SizedBox(
+                  width: double.infinity,
+                  child: BookingPrimaryButton(
+                    key: const ValueKey('booking-submit'),
+                    label: e.requestToBook ? l.bkSendRequest : l.bkConfirmBooking,
+                    icon: e.requestToBook
+                        ? Icons.send_rounded
+                        : Icons.event_available,
+                    busy: busy,
+                    onPressed: s.canSubmit ? _continue : null,
+                  ),
                 ),
-              ),
+              ]),
             ),
           ),
         );

@@ -781,3 +781,10 @@ export {
   alertOnFraudFlag,
   alertOnModerationP0,
 } from './security/securityEventAlerts';
+
+// Transactional emails (emails/): ID-verification submitted -> reviewers
+// (ADMIN_VERIFICATION_EMAILS), ticket / booking QR -> buyer, participants
+// list CSV -> organizer (1 h before start + on demand).
+export { emailOnIdVerificationSubmitted } from './emails/verificationSubmittedEmail';
+export { emailTicketsOnOrderPaid, emailBookingQrOnConfirm } from './emails/ticketEmails';
+export { sendParticipantListsDue, sendParticipantsList } from './emails/participantsList';

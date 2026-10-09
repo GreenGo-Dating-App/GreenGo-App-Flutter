@@ -12475,5 +12475,68 @@
   },
   "srvNewEventFromFollowedBusiness": "New event from a business you follow",
   "srvMessageRemovedByModerator": "This message was removed by a moderator",
-  "srvSupportAiHandoff": "I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly."
+  "srvSupportAiHandoff": "I understand you’d like to speak with a human agent. I’m connecting you now. A support team member will respond shortly.",
+  "emailTicketSubject": "Your ticket for {title}",
+  "@emailTicketSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailTicketIntro": "Your booking is confirmed. Show the QR code at the entrance: each code admits once.",
+  "emailTicketWhen": "When",
+  "emailTicketWhere": "Where",
+  "emailTicketTypeLabel": "Ticket type",
+  "emailTicketPartySizeLabel": "Party size",
+  "emailTicketCodeLabel": "Booking code",
+  "emailTicketQrCaption": "Ticket {index} of {count}",
+  "@emailTicketQrCaption": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "emailTicketFooter": "You can also find your tickets in the GreenGo app. Do not share these QR codes.",
+  "emailParticipantsSubject": "Participants list: {title}",
+  "@emailParticipantsSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailParticipantsIntro": "Attached is the participants list for {title} ({when}). Participants: {count}.",
+  "@emailParticipantsIntro": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "emailParticipantsPrivacy": "This file contains personal data shared only for entry. Do not share it and delete it after the event.",
+  "csvColName": "Name",
+  "csvColEmail": "Email",
+  "csvColBookingCode": "Booking code",
+  "csvColTicket": "Ticket type / party size",
+  "csvColStatus": "Status",
+  "csvStatusPaid": "paid",
+  "csvStatusConfirmed": "confirmed",
+  "csvStatusCheckedIn": "checked-in",
+  "participantsEmailButton": "Email me the participants list",
+  "participantsEmailSent": "Participants list sent to your account email",
+  "participantsEmailRateLimited": "You just requested it. Try again in a few minutes.",
+  "participantsEmailFailed": "Couldn’t send the participants list. Please try again later.",
+  "participantsEmailNoEmail": "Your account has no email address to send the list to.",
+  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry."
 }

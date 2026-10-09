@@ -9,6 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
 import '../../../../core/services/deep_link_service.dart';
+import '../../../../core/services/participants_list_service.dart';
 import '../../../../core/widgets/translatable_text.dart';
 import '../../../../core/widgets/verified_badge.dart';
 import '../../../../core/utils/user_error.dart';
@@ -462,6 +463,9 @@ class _DetailViewState extends State<_DetailView> {
                 case 'attendance':
                   Navigator.of(context).push(ExperienceAttendanceScreen.route(
                       experience: e, currentUserId: widget.currentUserId));
+                case 'participants':
+                  // CSV of the next date's guests to the host's email.
+                  emailParticipantsList(context, kind: 'experience', id: e.id);
                 case 'publish':
                   _publish(e);
                 case 'unpublish':
@@ -491,6 +495,11 @@ class _DetailViewState extends State<_DetailView> {
               PopupMenuItem(
                   value: 'attendance',
                   child: Text(l.expAttendanceTitle,
+                      style: const TextStyle(color: AppColors.textPrimary))),
+              PopupMenuItem(
+                  key: const ValueKey('exp-menu-participants'),
+                  value: 'participants',
+                  child: Text(l.participantsEmailButton,
                       style: const TextStyle(color: AppColors.textPrimary))),
               if (e.status == ExperienceStatus.draft)
                 PopupMenuItem(
