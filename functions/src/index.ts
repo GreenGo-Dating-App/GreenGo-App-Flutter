@@ -618,6 +618,8 @@ export {
   getVerificationPhotoUrl,
   getSharedAlbum,
 } from './profiles/privateProfileTriggers';
+// Block index for the profiles `get` rule (INC-2026-001).
+export { syncBlockIndex } from './safety/blockIndex';
 
 // Presence / Location Enrichment Functions
 export {

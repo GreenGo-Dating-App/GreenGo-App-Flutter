@@ -196,3 +196,29 @@ These must not depend on public copies after the strip:
   ranges without the filter.
 - `profiles_private where birthMonthDay ==` ordered by document id: automatic single-field index.
 - `profiles_private where ageVerification.documentHash ==`: automatic single-field index.
+
+## 9. Status (INC-2026-001, branch fix/close-support-exposure)
+
+Implemented in `firestore.rules` AND `firestore.additive.rules`, `storage.rules`:
+
+- §2 field allow-list: `publicProfileCreateOk()` / `publicProfileUpdateOk()` bind EVERY client
+  branch (owner, admin panel, profile admin, counters). Private-only keys (`dateOfBirth`,
+  `sexualOrientation`, `email`, `verificationPhone`, `verificationPhotoUrl`, `verificationPhotoPath`,
+  `privatePhotoUrls`, `geohash`, `fcmToken`, `birthMonthDay`, coordinates inside `location` /
+  `travelerLocation`, `ageVerification.documentHash` / `.documentDateOfBirth`) may stay as they are or be
+  cleared (null / delete), never get a new value. Server-coarse keys (`geohash5`, `approxLocation`, `age`)
+  are never changed by a client.
+- §3 `get` denies a user the profile owner blocked (`block_index/{owner}_{caller}`, maintained by the
+  `syncBlockIndex` trigger; backfill `functions/scripts/backfill-block-index.ts`). `blockedUsers` /
+  `blocked_users` are party-only. The `list` page cap (`limit <= 50`) is **deferred**: app 4.6.0+194/195
+  still runs profile queries with limit 75/100/200/500/1000 and unbounded `whereIn` batches.
+- §4 `album_access`: owner-only grants.
+- §5 Storage legacy selfie folder: owner/admin only (match on the first path segment, since a `**`
+  wildcard is a path, not a string).
+- Push tokens: every sender reads `users/{uid}.fcmToken`; the app no longer writes the token to the
+  public profile; `strip-public-sensitive-fields.ts --fcm-token` removes legacy public tokens.
+- Server: `writeStatus` (ageAssurance) no longer puts `documentHash` / `documentDateOfBirth` on the
+  public profile (they go to `profiles_private` only).
+
+Deploy order: functions `syncBlockIndex` (+ the changed functions) -> `backfill-block-index --apply`
+-> Firestore rules -> Storage rules -> optional `strip-public-sensitive-fields --fcm-token --apply`.

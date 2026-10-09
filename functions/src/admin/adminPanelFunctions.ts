@@ -852,17 +852,13 @@ export const onSupportMessageCreated = functions
       try {
         const userId = currentData.userId;
 
-        // Get user's FCM token (check both 'users' and 'profiles' collections)
+        // Get user's FCM token from the owner/admin-only users doc. Push
+        // tokens are no longer kept on the world-readable public profile
+        // (INC-2026-001); every app version also writes them to users/{uid}.
         let fcmToken: string | null = null;
         const userDoc = await db.collection('users').doc(userId).get();
         if (userDoc.exists) {
           fcmToken = userDoc.data()?.fcmToken || null;
-        }
-        if (!fcmToken) {
-          const profileDoc = await db.collection('profiles').doc(userId).get();
-          if (profileDoc.exists) {
-            fcmToken = profileDoc.data()?.fcmToken || null;
-          }
         }
 
         if (fcmToken) {

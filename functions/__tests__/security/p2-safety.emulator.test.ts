@@ -142,9 +142,11 @@ describe('P2-6 ID document images are deleted once decided', () => {
     expect(priv.documentBirthYear).toBe(1974);
     // Salted HMAC, not the guessable plain SHA-256 of the number.
     const num = 'PASSPORT';
-    expect(pub.ageVerification.documentHash).toBe(
+    expect(priv.documentHash).toBe(
       createHmac('sha256', 'test-retention-salt').update(`passport:${num}`).digest('hex'));
-    expect(pub.ageVerification.documentHash).not.toBe(createHash('sha256').update(`passport:${num}`).digest('hex'));
+    expect(priv.documentHash).not.toBe(createHash('sha256').update(`passport:${num}`).digest('hex'));
+    // INC-2026-001: the fingerprint is private only, never on the public profile.
+    expect(pub.ageVerification.documentHash).toBeUndefined();
   });
 
   test('automatic REJECT (no birth date): image deleted', async () => {

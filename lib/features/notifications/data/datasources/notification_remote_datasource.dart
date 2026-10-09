@@ -366,13 +366,9 @@ class NotificationRemoteDataSourceImpl
         'fcmToken': token,
         'fcmTokenUpdatedAt': Timestamp.now(),
       };
-      // Save to both 'profiles' (used by Cloud Functions for push)
-      // and 'users' (legacy) to ensure notifications work
+      // users/{uid} only: every push sender reads the token there, and the
+      // public profile never holds it (INC-2026-001).
       await Future.wait([
-        firestore.collection('profiles').doc(userId).set(
-          tokenData,
-          SetOptions(merge: true),
-        ),
         // + the app language, so the server renders pushes in it.
         firestore.collection('users').doc(userId).set(
           {
