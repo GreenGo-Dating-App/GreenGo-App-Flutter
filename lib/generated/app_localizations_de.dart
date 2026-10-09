@@ -23450,4 +23450,367 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.';
+
+  @override
+  String get copyrightHelpEntry => 'Urheberrecht (DMCA)';
+
+  @override
+  String get copyrightHelpEntrySubtitle =>
+      'Verstöße melden, Gegendarstellungen und unsere Richtlinie';
+
+  @override
+  String get copyrightReportEntry => 'Urheberrechtsverletzung melden';
+
+  @override
+  String get copyrightPolicyTitle => 'Urheberrechtsrichtlinie';
+
+  @override
+  String get copyrightPolicyIntro =>
+      'GreenGo respektiert geistiges Eigentum. Wir bearbeiten Meldungen mutmaßlicher Urheberrechtsverletzungen nach dem US Digital Millennium Copyright Act (17 U.S.C. §512), dem EU-Gesetz über digitale Dienste und dem brasilianischen Gesetz 9.610/1998 – unabhängig davon, wo sich Rechteinhaber oder Nutzer befinden.';
+
+  @override
+  String get copyrightPolicyNoticeTitle => 'Verstöße melden';
+
+  @override
+  String get copyrightPolicyNoticeBody =>
+      'Sende eine Meldung über unser Formular oder per E-Mail an unseren benannten Vertreter. Sie muss enthalten:\n• deine physische oder elektronische Unterschrift;\n• die Bezeichnung des urheberrechtlich geschützten Werks;\n• die Bezeichnung des rechtsverletzenden Materials und wo es sich auf GreenGo befindet (Link oder ID);\n• deine Adresse, Telefonnummer und E-Mail-Adresse;\n• eine Erklärung, dass du in gutem Glauben davon ausgehst, dass die Nutzung weder vom Rechteinhaber noch von seinem Vertreter noch vom Gesetz erlaubt ist;\n• eine Erklärung, dass die Angaben zutreffen und dass du – unter Strafandrohung bei Meineid – Rechteinhaber oder zur Vertretung des Rechteinhabers berechtigt bist.\nUnvollständige Meldungen können eventuell nicht bearbeitet werden.';
+
+  @override
+  String get copyrightPolicyCounterTitle => 'Gegendarstellungen';
+
+  @override
+  String get copyrightPolicyCounterBody =>
+      'Wenn deine Inhalte entfernt wurden und du glaubst, dass dies ein Fehler oder eine Verwechslung war, kannst du in der App eine Gegendarstellung senden. Sie muss deine Unterschrift, die Bezeichnung des entfernten Materials und wo es erschien, eine Erklärung unter Strafandrohung bei Meineid, dass es aufgrund eines Fehlers oder einer Verwechslung entfernt wurde, deinen Namen, deine Adresse und Telefonnummer sowie deine Zustimmung zur im Formular beschriebenen gerichtlichen Zuständigkeit enthalten. Wir leiten die Gegendarstellung an den Beschwerdeführer weiter und stellen das Material nach 10 bis 14 Werktagen wieder her, sofern uns der Beschwerdeführer nicht mitteilt, dass er Klage erhoben hat.';
+
+  @override
+  String get copyrightPolicyRepeatTitle => 'Wiederholte Verstöße';
+
+  @override
+  String get copyrightPolicyRepeatBody =>
+      'Jede gültige Meldung führt zu einer Verwarnung für das Konto, das das Material gepostet hat. Verwarnungen verfallen nach 12 Monaten. Eine Verwarnung wird entfernt, wenn das Material nach einer Gegendarstellung wiederhergestellt wird. Konten mit 3 aktiven Verwarnungen werden gekündigt; du kannst in der App Widerspruch gegen die Kündigung einlegen.';
+
+  @override
+  String get copyrightPolicyMisrepTitle => 'Falsche Meldungen';
+
+  @override
+  String get copyrightPolicyMisrepBody =>
+      'Nach 17 U.S.C. §512(f) kann jeder, der wissentlich und wesentlich falsch angibt, dass Material rechtsverletzend ist oder versehentlich entfernt wurde, auf Schadensersatz einschließlich Kosten und Anwaltsgebühren haften. Meldungen sind kein Mittel, um Inhalte zu entfernen, die dir einfach nicht gefallen.';
+
+  @override
+  String get copyrightPolicyJurisdictionTitle =>
+      'Brasilien, die EU und andere Länder';
+
+  @override
+  String get copyrightPolicyJurisdictionBody =>
+      'Wir behandeln Meldungen aus allen Ländern gleich. Nutzer in der Europäischen Union erhalten für jede Entfernung eine Begründung und können nach dem Gesetz über digitale Dienste dagegen Beschwerde einlegen. Rechteinhaber in Brasilien behalten alle ihre Rechte nach dem Gesetz 9.610/1998.';
+
+  @override
+  String get copyrightPolicyAgentTitle => 'Benannter Vertreter';
+
+  @override
+  String copyrightPolicyAgentBody(String address) {
+    return 'Urheberrechtsvertreter: Universo Kardasha Ltda.\nE-Mail: copyright@greengochat.com\nPostanschrift: $address';
+  }
+
+  @override
+  String get copyrightPolicySubmitButton => 'Urheberrechtsmeldung senden';
+
+  @override
+  String get copyrightMyNoticesButton => 'Meldungen zu meinen Inhalten';
+
+  @override
+  String get copyrightFormTitle => 'Urheberrechtsverletzung melden';
+
+  @override
+  String get copyrightFormIntro =>
+      'Nutze dieses Formular nur, wenn du Rechteinhaber bist oder zur Vertretung des Rechteinhabers berechtigt bist. Mit * markierte Felder sind gesetzlich vorgeschrieben.';
+
+  @override
+  String get copyrightFormSectionYou => 'Deine Angaben';
+
+  @override
+  String get copyrightFormName => 'Vollständiger Name';
+
+  @override
+  String get copyrightFormOrganization => 'Firma oder Organisation';
+
+  @override
+  String get copyrightFormEmail => 'E-Mail';
+
+  @override
+  String get copyrightFormPhone => 'Telefonnummer';
+
+  @override
+  String get copyrightFormAddress => 'Postanschrift';
+
+  @override
+  String get copyrightFormOptional => 'optional';
+
+  @override
+  String get copyrightFormRelationship => 'Ich bin';
+
+  @override
+  String get copyrightFormRelOwner => 'Rechteinhaber';
+
+  @override
+  String get copyrightFormRelAgent =>
+      'Zur Vertretung des Rechteinhabers berechtigt';
+
+  @override
+  String get copyrightFormSectionWork => 'Das geschützte Werk';
+
+  @override
+  String get copyrightFormWorkDescription =>
+      'Beschreibung des geschützten Werks';
+
+  @override
+  String get copyrightFormWorkUrl => 'Link zum Originalwerk';
+
+  @override
+  String get copyrightFormSectionContent => 'Das rechtsverletzende Material';
+
+  @override
+  String get copyrightFormContentLocation =>
+      'Link oder ID des Materials auf GreenGo';
+
+  @override
+  String get copyrightFormContentDetails =>
+      'Wo es erscheint (z. B. welches Foto oder welche Nachricht)';
+
+  @override
+  String copyrightFormContentPrefilled(String label) {
+    return 'Gemeldetes Element: $label';
+  }
+
+  @override
+  String get copyrightContentMessage => 'Chatnachricht oder Medien';
+
+  @override
+  String get copyrightContentEvent => 'Event';
+
+  @override
+  String get copyrightContentExperience => 'Erlebnis';
+
+  @override
+  String get copyrightContentProfilePhoto => 'Profilfoto';
+
+  @override
+  String get copyrightFormSectionStatements => 'Eidesstattliche Erklärungen';
+
+  @override
+  String get copyrightFormGoodFaith =>
+      'Ich gehe in gutem Glauben davon aus, dass die beanstandete Nutzung des Materials weder vom Rechteinhaber noch von seinem Vertreter noch vom Gesetz erlaubt ist.';
+
+  @override
+  String get copyrightFormAccuracy =>
+      'Die Angaben in dieser Meldung sind zutreffend.';
+
+  @override
+  String get copyrightFormAuthority =>
+      'Unter Strafandrohung bei Meineid erkläre ich, Inhaber eines mutmaßlich verletzten ausschließlichen Rechts oder zur Vertretung des Inhabers berechtigt zu sein.';
+
+  @override
+  String get copyrightFormMisrepWarning =>
+      'Achtung: Nach 17 U.S.C. §512(f) kann jeder, der wissentlich und wesentlich falsch angibt, dass Material rechtsverletzend ist, auf Schadensersatz haften. Wir leiten eine Kopie deiner Meldung einschließlich deines Namens und deiner E-Mail-Adresse an den Nutzer weiter, der das Material gepostet hat.';
+
+  @override
+  String get copyrightFormSignature =>
+      'Elektronische Unterschrift: gib deinen vollständigen Namen ein';
+
+  @override
+  String get copyrightFormSubmit => 'Meldung senden';
+
+  @override
+  String get copyrightFormRequired => 'Pflichtfeld';
+
+  @override
+  String get copyrightFormInvalidEmail => 'Gib eine gültige E-Mail-Adresse ein';
+
+  @override
+  String get copyrightFormStatementsRequired =>
+      'Bestätige alle Erklärungen, um fortzufahren';
+
+  @override
+  String get copyrightFormSignatureMismatch =>
+      'Die Unterschrift muss deinem vollständigen Namen entsprechen';
+
+  @override
+  String get copyrightFormSubmitted =>
+      'Meldung erhalten. Wir prüfen sie und antworten an die angegebene E-Mail-Adresse.';
+
+  @override
+  String get copyrightFormError =>
+      'Senden fehlgeschlagen. Bitte versuch es später erneut.';
+
+  @override
+  String get copyrightFormRateLimited =>
+      'Zu viele Einsendungen. Bitte versuch es später erneut.';
+
+  @override
+  String get copyrightMyNoticesTitle => 'Urheberrechtsmeldungen';
+
+  @override
+  String get copyrightMyNoticesEmpty =>
+      'Es gibt keine Urheberrechtsmeldungen zu deinen Inhalten.';
+
+  @override
+  String copyrightActiveStrikes(int count) {
+    return 'Aktive Urheberrechtsverwarnungen: $count von 3';
+  }
+
+  @override
+  String get copyrightStatusAccepted => 'Inhalt entfernt';
+
+  @override
+  String get copyrightStatusCounterNoticed => 'Gegendarstellung gesendet';
+
+  @override
+  String get copyrightStatusRestored => 'Inhalt wiederhergestellt';
+
+  @override
+  String get copyrightStatusLawsuit => 'Klage erhoben: Inhalt bleibt entfernt';
+
+  @override
+  String copyrightNoticeFrom(String name, String email) {
+    return 'Beschwerdeführer: $name ($email)';
+  }
+
+  @override
+  String copyrightRestoreOn(String date) {
+    return 'Dein Inhalt wird ab dem $date wiederhergestellt, sofern der Beschwerdeführer keine Klage erhebt.';
+  }
+
+  @override
+  String get copyrightCounterButton => 'Gegendarstellung senden';
+
+  @override
+  String get copyrightAppealButton => 'Widerspruch einlegen';
+
+  @override
+  String get copyrightCounterTitle => 'Gegendarstellung';
+
+  @override
+  String get copyrightCounterIntro =>
+      'Wenn du glaubst, dass das Material aufgrund eines Fehlers oder einer Verwechslung entfernt wurde, kannst du eine Gegendarstellung senden. Wir leiten sie einschließlich deines Namens, deiner Adresse, Telefonnummer und E-Mail-Adresse an den Beschwerdeführer weiter.';
+
+  @override
+  String get copyrightCounterExplanation =>
+      'Warum die Entfernung ein Fehler oder eine Verwechslung war';
+
+  @override
+  String get copyrightCounterPerjury =>
+      'Unter Strafandrohung bei Meineid gehe ich in gutem Glauben davon aus, dass das Material aufgrund eines Fehlers oder einer Verwechslung entfernt oder gesperrt wurde.';
+
+  @override
+  String get copyrightCounterJurisdiction =>
+      'Ich stimme der Zuständigkeit des US-Bundesbezirksgerichts für den Gerichtsbezirk meiner Adresse zu (oder, wenn meine Adresse außerhalb der USA liegt, jedes Gerichtsbezirks, in dem GreenGo ansässig ist), und ich akzeptiere die Zustellung von Klageschriften durch die meldende Person oder ihren Vertreter.';
+
+  @override
+  String get copyrightCounterSubmit => 'Gegendarstellung senden';
+
+  @override
+  String get copyrightCounterSent =>
+      'Gegendarstellung gesendet. Sofern der Beschwerdeführer uns keine Klage mitteilt, wird dein Inhalt in 10 bis 14 Werktagen wiederhergestellt.';
+
+  @override
+  String get srvCopyrightRemovedTitle =>
+      'Inhalt nach einer Urheberrechtsmeldung entfernt';
+
+  @override
+  String get srvCopyrightRemovedBody =>
+      'Tippe, um die Meldung und deine Optionen zu sehen.';
+
+  @override
+  String get srvCopyrightRestoredTitle => 'Dein Inhalt wurde wiederhergestellt';
+
+  @override
+  String get srvCopyrightRestoredBody =>
+      'Der nach einer Urheberrechtsmeldung entfernte Inhalt ist wieder sichtbar.';
+
+  @override
+  String get emailCopyrightRemovedSubject =>
+      'Urheberrechtsmeldung: Inhalt entfernt';
+
+  @override
+  String get emailCopyrightRemovedIntro =>
+      'Wir haben eine Urheberrechtsmeldung zu einem von dir auf GreenGo geposteten Inhalt erhalten und den Zugriff darauf gesperrt. Eine Kopie der Meldung findest du unten.';
+
+  @override
+  String emailCopyrightStrikeInfo(int count) {
+    return 'Dies zählt als Urheberrechtsverwarnung. Aktive Verwarnungen: $count von 3. Verwarnungen verfallen nach 12 Monaten; Konten mit 3 aktiven Verwarnungen werden gekündigt.';
+  }
+
+  @override
+  String get emailCopyrightCounterInfo =>
+      'Wenn du glaubst, dass es sich um einen Fehler oder eine Verwechslung handelt, kannst du in der App eine Gegendarstellung senden: Profil > Hilfe & Support > Urheberrecht (DMCA). Dort kannst du auch Widerspruch gegen die Entscheidung einlegen.';
+
+  @override
+  String get emailCopyrightNoticeCopy => 'Kopie der Meldung';
+
+  @override
+  String get emailCopyrightRefLabel => 'Referenz';
+
+  @override
+  String get emailCopyrightDateLabel => 'Datum';
+
+  @override
+  String get emailCopyrightConfirmSubject =>
+      'Bestätige deine Urheberrechtsmeldung';
+
+  @override
+  String get emailCopyrightConfirmIntro =>
+      'Bitte bestätige deine Urheberrechtsmeldung, indem du diesen Link innerhalb von 48 Stunden öffnest. Unbestätigte Meldungen werden nicht bearbeitet.';
+
+  @override
+  String get emailCopyrightConfirmButton => 'Meldung bestätigen';
+
+  @override
+  String get emailCopyrightAcceptedSubject =>
+      'Deine Urheberrechtsmeldung wurde angenommen';
+
+  @override
+  String emailCopyrightAcceptedBody(String ref) {
+    return 'Wir haben den Zugriff auf das in deiner Meldung $ref bezeichnete Material gesperrt.';
+  }
+
+  @override
+  String get emailCopyrightRejectedSubject =>
+      'Deine Urheberrechtsmeldung konnte nicht bearbeitet werden';
+
+  @override
+  String emailCopyrightRejectedBody(String ref, String reason) {
+    return 'Wir konnten deine Meldung $ref nicht umsetzen. Grund: $reason';
+  }
+
+  @override
+  String get emailCopyrightCounterSubject => 'Gegendarstellung erhalten';
+
+  @override
+  String emailCopyrightCounterBody(String ref, String date, String agentEmail) {
+    return 'Der Nutzer, der das Material gepostet hat, hat zu deiner Meldung $ref die folgende Gegendarstellung gesendet. Wir stellen das Material ab dem $date wieder her, sofern du uns nicht vorher unter $agentEmail mitteilst, dass du Klage zur Unterbindung der Verletzung erhoben hast.';
+  }
+
+  @override
+  String get emailCopyrightRestoredSubject => 'Material wiederhergestellt';
+
+  @override
+  String emailCopyrightRestoredBody(String ref) {
+    return 'Das Material aus der Urheberrechtsmeldung $ref wurde nach einer Gegendarstellung wiederhergestellt.';
+  }
+
+  @override
+  String get copyrightWebCheckEmail =>
+      'Fast geschafft: Wir haben dir einen Bestätigungslink per E-Mail gesendet. Deine Meldung wird nach der Bestätigung bearbeitet.';
+
+  @override
+  String get copyrightWebConfirmed =>
+      'Danke. Deine Meldung ist bestätigt und wird geprüft.';
+
+  @override
+  String get copyrightWebInvalidLink =>
+      'Dieser Bestätigungslink ist ungültig oder abgelaufen.';
+
+  @override
+  String get copyrightWebInvalid =>
+      'Einige Pflichtangaben fehlen oder sind ungültig. Geh zurück und prüfe das Formular.';
 }

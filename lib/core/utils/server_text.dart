@@ -32,6 +32,82 @@ String? serverText(
       return l10n.chatPreviewVoiceMessage;
     case 'chatVideo':
       return l10n.chatVideo;
+    case 'copyrightCounterExplanation':
+      return l10n.copyrightCounterExplanation;
+    case 'copyrightCounterJurisdiction':
+      return l10n.copyrightCounterJurisdiction;
+    case 'copyrightCounterPerjury':
+      return l10n.copyrightCounterPerjury;
+    case 'copyrightCounterTitle':
+      return l10n.copyrightCounterTitle;
+    case 'copyrightFormAccuracy':
+      return l10n.copyrightFormAccuracy;
+    case 'copyrightFormAddress':
+      return l10n.copyrightFormAddress;
+    case 'copyrightFormAuthority':
+      return l10n.copyrightFormAuthority;
+    case 'copyrightFormContentDetails':
+      return l10n.copyrightFormContentDetails;
+    case 'copyrightFormContentLocation':
+      return l10n.copyrightFormContentLocation;
+    case 'copyrightFormEmail':
+      return l10n.copyrightFormEmail;
+    case 'copyrightFormError':
+      return l10n.copyrightFormError;
+    case 'copyrightFormGoodFaith':
+      return l10n.copyrightFormGoodFaith;
+    case 'copyrightFormIntro':
+      return l10n.copyrightFormIntro;
+    case 'copyrightFormMisrepWarning':
+      return l10n.copyrightFormMisrepWarning;
+    case 'copyrightFormName':
+      return l10n.copyrightFormName;
+    case 'copyrightFormOptional':
+      return l10n.copyrightFormOptional;
+    case 'copyrightFormOrganization':
+      return l10n.copyrightFormOrganization;
+    case 'copyrightFormPhone':
+      return l10n.copyrightFormPhone;
+    case 'copyrightFormRateLimited':
+      return l10n.copyrightFormRateLimited;
+    case 'copyrightFormRelAgent':
+      return l10n.copyrightFormRelAgent;
+    case 'copyrightFormRelOwner':
+      return l10n.copyrightFormRelOwner;
+    case 'copyrightFormRelationship':
+      return l10n.copyrightFormRelationship;
+    case 'copyrightFormSectionContent':
+      return l10n.copyrightFormSectionContent;
+    case 'copyrightFormSectionStatements':
+      return l10n.copyrightFormSectionStatements;
+    case 'copyrightFormSectionWork':
+      return l10n.copyrightFormSectionWork;
+    case 'copyrightFormSectionYou':
+      return l10n.copyrightFormSectionYou;
+    case 'copyrightFormSignature':
+      return l10n.copyrightFormSignature;
+    case 'copyrightFormSubmit':
+      return l10n.copyrightFormSubmit;
+    case 'copyrightFormTitle':
+      return l10n.copyrightFormTitle;
+    case 'copyrightFormWorkDescription':
+      return l10n.copyrightFormWorkDescription;
+    case 'copyrightFormWorkUrl':
+      return l10n.copyrightFormWorkUrl;
+    case 'copyrightPolicyAgentBody':
+      return l10n.copyrightPolicyAgentBody(_str(p['address']));
+    case 'copyrightPolicyIntro':
+      return l10n.copyrightPolicyIntro;
+    case 'copyrightPolicyTitle':
+      return l10n.copyrightPolicyTitle;
+    case 'copyrightWebCheckEmail':
+      return l10n.copyrightWebCheckEmail;
+    case 'copyrightWebConfirmed':
+      return l10n.copyrightWebConfirmed;
+    case 'copyrightWebInvalid':
+      return l10n.copyrightWebInvalid;
+    case 'copyrightWebInvalidLink':
+      return l10n.copyrightWebInvalidLink;
     case 'csvColBookingCode':
       return l10n.csvColBookingCode;
     case 'csvColEmail':
@@ -48,6 +124,42 @@ String? serverText(
       return l10n.csvStatusConfirmed;
     case 'csvStatusPaid':
       return l10n.csvStatusPaid;
+    case 'emailCopyrightAcceptedBody':
+      return l10n.emailCopyrightAcceptedBody(_str(p['ref']));
+    case 'emailCopyrightAcceptedSubject':
+      return l10n.emailCopyrightAcceptedSubject;
+    case 'emailCopyrightConfirmButton':
+      return l10n.emailCopyrightConfirmButton;
+    case 'emailCopyrightConfirmIntro':
+      return l10n.emailCopyrightConfirmIntro;
+    case 'emailCopyrightConfirmSubject':
+      return l10n.emailCopyrightConfirmSubject;
+    case 'emailCopyrightCounterBody':
+      return l10n.emailCopyrightCounterBody(_str(p['ref']), _str(p['date']), _str(p['agentEmail']));
+    case 'emailCopyrightCounterInfo':
+      return l10n.emailCopyrightCounterInfo;
+    case 'emailCopyrightCounterSubject':
+      return l10n.emailCopyrightCounterSubject;
+    case 'emailCopyrightDateLabel':
+      return l10n.emailCopyrightDateLabel;
+    case 'emailCopyrightNoticeCopy':
+      return l10n.emailCopyrightNoticeCopy;
+    case 'emailCopyrightRefLabel':
+      return l10n.emailCopyrightRefLabel;
+    case 'emailCopyrightRejectedBody':
+      return l10n.emailCopyrightRejectedBody(_str(p['ref']), _str(p['reason']));
+    case 'emailCopyrightRejectedSubject':
+      return l10n.emailCopyrightRejectedSubject;
+    case 'emailCopyrightRemovedIntro':
+      return l10n.emailCopyrightRemovedIntro;
+    case 'emailCopyrightRemovedSubject':
+      return l10n.emailCopyrightRemovedSubject;
+    case 'emailCopyrightRestoredBody':
+      return l10n.emailCopyrightRestoredBody(_str(p['ref']));
+    case 'emailCopyrightRestoredSubject':
+      return l10n.emailCopyrightRestoredSubject;
+    case 'emailCopyrightStrikeInfo':
+      return l10n.emailCopyrightStrikeInfo(_int(p['count']));
     case 'emailParticipantsIntro':
       return l10n.emailParticipantsIntro(_str(p['title']), _str(p['when']), _int(p['count']));
     case 'emailParticipantsPrivacy':
@@ -294,6 +406,14 @@ String? serverText(
       return l10n.srvChallengeRewardsBody(_int(p['xp']), _int(p['coins']));
     case 'srvCoinsReceivedBody':
       return l10n.srvCoinsReceivedBody(_str(p['name']), _int(p['amount']));
+    case 'srvCopyrightRemovedBody':
+      return l10n.srvCopyrightRemovedBody;
+    case 'srvCopyrightRemovedTitle':
+      return l10n.srvCopyrightRemovedTitle;
+    case 'srvCopyrightRestoredBody':
+      return l10n.srvCopyrightRestoredBody;
+    case 'srvCopyrightRestoredTitle':
+      return l10n.srvCopyrightRestoredTitle;
     case 'srvEvent':
       return l10n.srvEvent;
     case 'srvEventBoostEnded':

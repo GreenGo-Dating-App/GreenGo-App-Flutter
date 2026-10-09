@@ -37,6 +37,7 @@ import '../../../authentication/presentation/bloc/auth_event.dart';
 import '../../../authentication/presentation/screens/change_password_screen.dart';
 import '../../../notifications/presentation/screens/notification_preferences_screen.dart';
 import '../../../chat/presentation/screens/support_tickets_list_screen.dart';
+import '../../../copyright/presentation/screens/copyright_policy_screen.dart';
 import '../../../coins/domain/entities/coin_transaction.dart';
 import '../../../coins/domain/repositories/coin_repository.dart';
 import '../../../coins/presentation/bloc/coin_bloc.dart';
@@ -592,6 +593,16 @@ class EditProfileScreen extends StatelessWidget {
                             AppLocalizations.of(context)!.contactSupportSubtitle,
                         icon: Icons.mail_outline,
                         onTap: _contactSupport,
+                      ),
+                      const SizedBox(height: 16),
+                      // Copyright (DMCA / DSA): policy, notice form, counter-notices.
+                      EditSectionCard(
+                        key: const ValueKey('help-copyright'),
+                        title: AppLocalizations.of(context)!.copyrightHelpEntry,
+                        subtitle:
+                            AppLocalizations.of(context)!.copyrightHelpEntrySubtitle,
+                        icon: Icons.copyright,
+                        onTap: () => Navigator.of(context).push(CopyrightPolicyScreen.route()),
                       ),
                       const SizedBox(height: 16),
                       // Coin Shop

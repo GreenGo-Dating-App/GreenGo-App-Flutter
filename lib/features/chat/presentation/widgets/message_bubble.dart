@@ -23,6 +23,8 @@ import '../../domain/entities/message.dart';
 import 'location_message_map.dart';
 import 'deleted_message_bubble.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
+import '../../../copyright/data/copyright_service.dart';
+import '../../../copyright/presentation/screens/copyright_notice_form_screen.dart';
 
 /// Message Bubble Widget
 ///
@@ -1324,6 +1326,22 @@ class _MessageBubbleState extends State<MessageBubble> {
                 onTap: () {
                   Navigator.pop(bottomSheetContext);
                   _showReportDialog(context);
+                },
+              ),
+              ListTile(
+                key: const ValueKey('message-report-copyright'),
+                leading: const Icon(Icons.copyright, color: AppColors.textSecondary),
+                title: Text(
+                  AppLocalizations.of(context)!.copyrightReportEntry,
+                  style: const TextStyle(color: AppColors.textPrimary),
+                ),
+                onTap: () {
+                  Navigator.pop(bottomSheetContext);
+                  final m = widget.message;
+                  openCopyrightNoticeForm(context,
+                      content: m.conversationId.isNotEmpty
+                          ? CopyrightContentRef.message('conversations', m.conversationId, m.messageId)
+                          : null);
                 },
               ),
             ],

@@ -23427,4 +23427,365 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'Il tuo nome e la tua email saranno condivisi con l’organizzatore per l’ingresso.';
+
+  @override
+  String get copyrightHelpEntry => 'Copyright (DMCA)';
+
+  @override
+  String get copyrightHelpEntrySubtitle =>
+      'Segnala violazioni, contronotifiche e la nostra policy';
+
+  @override
+  String get copyrightReportEntry => 'Segnala violazione del copyright';
+
+  @override
+  String get copyrightPolicyTitle => 'Policy sul copyright';
+
+  @override
+  String get copyrightPolicyIntro =>
+      'GreenGo rispetta la proprietà intellettuale. Gestiamo le segnalazioni di presunte violazioni del copyright ai sensi del Digital Millennium Copyright Act statunitense (17 U.S.C. §512), del Digital Services Act dell’UE e della legge brasiliana 9.610/1998, ovunque si trovino il titolare dei diritti o l’utente.';
+
+  @override
+  String get copyrightPolicyNoticeTitle => 'Come segnalare una violazione';
+
+  @override
+  String get copyrightPolicyNoticeBody =>
+      'Invia una segnalazione con il nostro modulo o via email al nostro agente designato. Deve contenere:\n• la tua firma fisica o elettronica;\n• l’identificazione dell’opera protetta;\n• l’identificazione del materiale in violazione e dove si trova su GreenGo (link o ID);\n• il tuo indirizzo, numero di telefono ed email;\n• una dichiarazione in cui affermi di ritenere in buona fede che l’uso non sia autorizzato dal titolare, dal suo agente o dalla legge;\n• una dichiarazione che le informazioni sono accurate e, sotto pena di falsa testimonianza, che sei il titolare o sei autorizzato ad agire per suo conto.\nLe segnalazioni incomplete potrebbero non essere elaborate.';
+
+  @override
+  String get copyrightPolicyCounterTitle => 'Contronotifiche';
+
+  @override
+  String get copyrightPolicyCounterBody =>
+      'Se i tuoi contenuti sono stati rimossi e ritieni che si tratti di un errore o di un’identificazione errata, puoi inviare una contronotifica dall’app. Deve contenere la tua firma, l’identificazione del materiale rimosso e dove si trovava, una dichiarazione sotto pena di falsa testimonianza che è stato rimosso per errore o identificazione errata, il tuo nome, indirizzo e numero di telefono e il tuo consenso alla giurisdizione dei tribunali indicata nel modulo. Inoltriamo la contronotifica al segnalante e ripristiniamo il materiale entro 10-14 giorni lavorativi, a meno che il segnalante non ci comunichi di aver avviato un’azione giudiziaria.';
+
+  @override
+  String get copyrightPolicyRepeatTitle => 'Violatori recidivi';
+
+  @override
+  String get copyrightPolicyRepeatBody =>
+      'Ogni segnalazione valida aggiunge un avvertimento all’account che ha pubblicato il materiale. Gli avvertimenti scadono dopo 12 mesi. Un avvertimento viene rimosso se il materiale viene ripristinato dopo una contronotifica. Gli account con 3 avvertimenti attivi vengono chiusi; puoi presentare ricorso contro la chiusura dall’app.';
+
+  @override
+  String get copyrightPolicyMisrepTitle => 'Segnalazioni false';
+
+  @override
+  String get copyrightPolicyMisrepBody =>
+      'Ai sensi di 17 U.S.C. §512(f), chi dichiara consapevolmente e in modo sostanzialmente falso che un materiale è in violazione, o che è stato rimosso per errore, può essere tenuto al risarcimento dei danni, comprese spese e onorari legali. Le segnalazioni non sono uno strumento per rimuovere contenuti che semplicemente non ti piacciono.';
+
+  @override
+  String get copyrightPolicyJurisdictionTitle => 'Brasile, UE e altri paesi';
+
+  @override
+  String get copyrightPolicyJurisdictionBody =>
+      'Trattiamo allo stesso modo le segnalazioni di tutti i paesi. Gli utenti dell’Unione europea ricevono una motivazione per ogni rimozione e possono presentare ricorso ai sensi del Digital Services Act. I titolari dei diritti in Brasile conservano tutti i loro diritti ai sensi della legge 9.610/1998.';
+
+  @override
+  String get copyrightPolicyAgentTitle => 'Agente designato';
+
+  @override
+  String copyrightPolicyAgentBody(String address) {
+    return 'Agente per il copyright: Universo Kardasha Ltda.\nEmail: copyright@greengochat.com\nIndirizzo postale: $address';
+  }
+
+  @override
+  String get copyrightPolicySubmitButton => 'Invia una segnalazione';
+
+  @override
+  String get copyrightMyNoticesButton => 'Segnalazioni sui miei contenuti';
+
+  @override
+  String get copyrightFormTitle => 'Segnala violazione del copyright';
+
+  @override
+  String get copyrightFormIntro =>
+      'Usa questo modulo solo se sei il titolare del copyright o sei autorizzato ad agire per suo conto. I campi contrassegnati da * sono obbligatori per legge.';
+
+  @override
+  String get copyrightFormSectionYou => 'I tuoi dati';
+
+  @override
+  String get copyrightFormName => 'Nome e cognome legali';
+
+  @override
+  String get copyrightFormOrganization => 'Azienda o organizzazione';
+
+  @override
+  String get copyrightFormEmail => 'Email';
+
+  @override
+  String get copyrightFormPhone => 'Numero di telefono';
+
+  @override
+  String get copyrightFormAddress => 'Indirizzo postale';
+
+  @override
+  String get copyrightFormOptional => 'facoltativo';
+
+  @override
+  String get copyrightFormRelationship => 'Sono';
+
+  @override
+  String get copyrightFormRelOwner => 'Il titolare del copyright';
+
+  @override
+  String get copyrightFormRelAgent =>
+      'Autorizzato ad agire per conto del titolare';
+
+  @override
+  String get copyrightFormSectionWork => 'L’opera protetta';
+
+  @override
+  String get copyrightFormWorkDescription => 'Descrizione dell’opera protetta';
+
+  @override
+  String get copyrightFormWorkUrl => 'Link all’opera originale';
+
+  @override
+  String get copyrightFormSectionContent => 'Il materiale in violazione';
+
+  @override
+  String get copyrightFormContentLocation =>
+      'Link o ID del materiale su GreenGo';
+
+  @override
+  String get copyrightFormContentDetails =>
+      'Dove compare (es. quale foto o messaggio)';
+
+  @override
+  String copyrightFormContentPrefilled(String label) {
+    return 'Elemento segnalato: $label';
+  }
+
+  @override
+  String get copyrightContentMessage => 'Messaggio o media della chat';
+
+  @override
+  String get copyrightContentEvent => 'Evento';
+
+  @override
+  String get copyrightContentExperience => 'Esperienza';
+
+  @override
+  String get copyrightContentProfilePhoto => 'Foto del profilo';
+
+  @override
+  String get copyrightFormSectionStatements => 'Dichiarazioni giurate';
+
+  @override
+  String get copyrightFormGoodFaith =>
+      'Ritengo in buona fede che l’uso contestato del materiale non sia autorizzato dal titolare del copyright, dal suo agente o dalla legge.';
+
+  @override
+  String get copyrightFormAccuracy =>
+      'Le informazioni contenute in questa segnalazione sono accurate.';
+
+  @override
+  String get copyrightFormAuthority =>
+      'Sotto pena di falsa testimonianza, sono il titolare, o sono autorizzato ad agire per conto del titolare, di un diritto esclusivo presumibilmente violato.';
+
+  @override
+  String get copyrightFormMisrepWarning =>
+      'Attenzione: ai sensi di 17 U.S.C. §512(f), chi dichiara consapevolmente e in modo sostanzialmente falso che un materiale è in violazione può essere tenuto al risarcimento dei danni. Inoltriamo una copia della tua segnalazione, compresi nome ed email, all’utente che ha pubblicato il materiale.';
+
+  @override
+  String get copyrightFormSignature =>
+      'Firma elettronica: digita nome e cognome legali';
+
+  @override
+  String get copyrightFormSubmit => 'Invia segnalazione';
+
+  @override
+  String get copyrightFormRequired => 'Obbligatorio';
+
+  @override
+  String get copyrightFormInvalidEmail => 'Inserisci un indirizzo email valido';
+
+  @override
+  String get copyrightFormStatementsRequired =>
+      'Conferma tutte le dichiarazioni per continuare';
+
+  @override
+  String get copyrightFormSignatureMismatch =>
+      'La firma deve corrispondere al tuo nome e cognome legali';
+
+  @override
+  String get copyrightFormSubmitted =>
+      'Segnalazione ricevuta. La esamineremo e risponderemo all’email indicata.';
+
+  @override
+  String get copyrightFormError => 'Invio non riuscito. Riprova più tardi.';
+
+  @override
+  String get copyrightFormRateLimited => 'Troppi invii. Riprova più tardi.';
+
+  @override
+  String get copyrightMyNoticesTitle => 'Segnalazioni di copyright';
+
+  @override
+  String get copyrightMyNoticesEmpty =>
+      'Non ci sono segnalazioni di copyright sui tuoi contenuti.';
+
+  @override
+  String copyrightActiveStrikes(int count) {
+    return 'Avvertimenti per copyright attivi: $count su 3';
+  }
+
+  @override
+  String get copyrightStatusAccepted => 'Contenuto rimosso';
+
+  @override
+  String get copyrightStatusCounterNoticed => 'Contronotifica inviata';
+
+  @override
+  String get copyrightStatusRestored => 'Contenuto ripristinato';
+
+  @override
+  String get copyrightStatusLawsuit =>
+      'Azione giudiziaria avviata: il contenuto resta rimosso';
+
+  @override
+  String copyrightNoticeFrom(String name, String email) {
+    return 'Segnalante: $name ($email)';
+  }
+
+  @override
+  String copyrightRestoreOn(String date) {
+    return 'Il tuo contenuto sarà ripristinato a partire dal $date, a meno che il segnalante non avvii un’azione giudiziaria.';
+  }
+
+  @override
+  String get copyrightCounterButton => 'Invia contronotifica';
+
+  @override
+  String get copyrightAppealButton => 'Presenta ricorso';
+
+  @override
+  String get copyrightCounterTitle => 'Contronotifica';
+
+  @override
+  String get copyrightCounterIntro =>
+      'Se ritieni che il materiale sia stato rimosso per errore o identificazione errata, puoi inviare una contronotifica. La inoltriamo al segnalante, compresi nome, indirizzo, numero di telefono ed email.';
+
+  @override
+  String get copyrightCounterExplanation =>
+      'Perché la rimozione è un errore o un’identificazione errata';
+
+  @override
+  String get copyrightCounterPerjury =>
+      'Sotto pena di falsa testimonianza, ritengo in buona fede che il materiale sia stato rimosso o disattivato per errore o per un’identificazione errata del materiale da rimuovere o disattivare.';
+
+  @override
+  String get copyrightCounterJurisdiction =>
+      'Accetto la giurisdizione del Tribunale Distrettuale Federale degli Stati Uniti per il distretto del mio indirizzo (o, se il mio indirizzo è fuori dagli Stati Uniti, di qualsiasi distretto in cui GreenGo si trovi) e accetterò la notifica di atti giudiziari dalla persona che ha inviato la segnalazione o dal suo agente.';
+
+  @override
+  String get copyrightCounterSubmit => 'Invia contronotifica';
+
+  @override
+  String get copyrightCounterSent =>
+      'Contronotifica inviata. Salvo che il segnalante ci comunichi un’azione giudiziaria, il tuo contenuto sarà ripristinato entro 10-14 giorni lavorativi.';
+
+  @override
+  String get srvCopyrightRemovedTitle =>
+      'Contenuto rimosso dopo una segnalazione di copyright';
+
+  @override
+  String get srvCopyrightRemovedBody =>
+      'Tocca per vedere la segnalazione e le tue opzioni.';
+
+  @override
+  String get srvCopyrightRestoredTitle =>
+      'Il tuo contenuto è stato ripristinato';
+
+  @override
+  String get srvCopyrightRestoredBody =>
+      'Il contenuto rimosso dopo una segnalazione di copyright è di nuovo visibile.';
+
+  @override
+  String get emailCopyrightRemovedSubject =>
+      'Segnalazione di copyright: contenuto rimosso';
+
+  @override
+  String get emailCopyrightRemovedIntro =>
+      'Abbiamo ricevuto una segnalazione di copyright su un contenuto che hai pubblicato su GreenGo e ne abbiamo disattivato l’accesso. Di seguito trovi una copia della segnalazione.';
+
+  @override
+  String emailCopyrightStrikeInfo(int count) {
+    return 'Questo conta come un avvertimento per copyright. Avvertimenti attivi: $count su 3. Scadono dopo 12 mesi; gli account con 3 avvertimenti attivi vengono chiusi.';
+  }
+
+  @override
+  String get emailCopyrightCounterInfo =>
+      'Se ritieni che si tratti di un errore o di un’identificazione errata, puoi inviare una contronotifica nell’app: Profilo > Aiuto e supporto > Copyright (DMCA). Da lì puoi anche presentare ricorso contro la decisione.';
+
+  @override
+  String get emailCopyrightNoticeCopy => 'Copia della segnalazione';
+
+  @override
+  String get emailCopyrightRefLabel => 'Riferimento';
+
+  @override
+  String get emailCopyrightDateLabel => 'Data';
+
+  @override
+  String get emailCopyrightConfirmSubject =>
+      'Conferma la tua segnalazione di copyright';
+
+  @override
+  String get emailCopyrightConfirmIntro =>
+      'Conferma la tua segnalazione aprendo questo link entro 48 ore. Le segnalazioni non confermate non vengono elaborate.';
+
+  @override
+  String get emailCopyrightConfirmButton => 'Conferma segnalazione';
+
+  @override
+  String get emailCopyrightAcceptedSubject =>
+      'La tua segnalazione di copyright è stata accolta';
+
+  @override
+  String emailCopyrightAcceptedBody(String ref) {
+    return 'Abbiamo disattivato l’accesso al materiale indicato nella tua segnalazione $ref.';
+  }
+
+  @override
+  String get emailCopyrightRejectedSubject =>
+      'Non è stato possibile elaborare la tua segnalazione di copyright';
+
+  @override
+  String emailCopyrightRejectedBody(String ref, String reason) {
+    return 'Non abbiamo potuto dare seguito alla tua segnalazione $ref. Motivo: $reason';
+  }
+
+  @override
+  String get emailCopyrightCounterSubject => 'Contronotifica ricevuta';
+
+  @override
+  String emailCopyrightCounterBody(String ref, String date, String agentEmail) {
+    return 'L’utente che ha pubblicato il materiale ha inviato la seguente contronotifica sulla tua segnalazione $ref. Ripristineremo il materiale a partire dal $date, a meno che prima di allora tu non ci comunichi a $agentEmail di aver avviato un’azione giudiziaria per far cessare la violazione.';
+  }
+
+  @override
+  String get emailCopyrightRestoredSubject => 'Materiale ripristinato';
+
+  @override
+  String emailCopyrightRestoredBody(String ref) {
+    return 'Il materiale della segnalazione $ref è stato ripristinato dopo una contronotifica.';
+  }
+
+  @override
+  String get copyrightWebCheckEmail =>
+      'Quasi fatto: ti abbiamo inviato via email un link di conferma. La segnalazione verrà elaborata dopo la conferma.';
+
+  @override
+  String get copyrightWebConfirmed =>
+      'Grazie. La tua segnalazione è confermata e verrà esaminata.';
+
+  @override
+  String get copyrightWebInvalidLink =>
+      'Questo link di conferma non è valido o è scaduto.';
+
+  @override
+  String get copyrightWebInvalid =>
+      'Alcune informazioni obbligatorie mancano o non sono valide. Torna indietro e controlla il modulo.';
 }

@@ -2668,6 +2668,30 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // Copyright notice-and-takedown (functions/src/copyright). Every write is
+    // server-only (callables / HTTPS form / scheduler). A user reads:
+    //  - notices about their own content once an admin acted on them
+    //    (uploaderVisible + targetUid), and notices they submitted in the app;
+    //  - their own counter-notices and strikes.
+    // The complainant's phone / address (private/contact), the audit trail
+    // (audit/) and copyright_rate_limits stay server-only via DEFAULT DENY
+    // (rules do not cascade to subcollections). The admin panel reads through
+    // callables (adminListCopyrightNotices / adminGetCopyrightNotice).
+    match /copyright_notices/{noticeId} {
+      allow get, list: if isSignedIn() && (
+        (resource.data.uploaderVisible == true && resource.data.targetUid == request.auth.uid)
+        || resource.data.submitterUid == request.auth.uid);
+      allow write: if false;
+    }
+    match /copyright_counter_notices/{noticeId} {
+      allow get, list: if isSignedIn() && resource.data.uploaderUid == request.auth.uid;
+      allow write: if false;
+    }
+    match /copyright_strikes/{strikeId} {
+      allow get, list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow write: if false;
+    }
+
     // ============================================================================
     // DEFAULT DENY
     // ============================================================================
