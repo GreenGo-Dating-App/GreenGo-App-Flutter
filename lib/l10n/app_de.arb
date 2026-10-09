@@ -7250,5 +7250,7 @@
   "participantsEmailRateLimited": "Du hast sie gerade angefordert. Versuch es in ein paar Minuten erneut.",
   "participantsEmailFailed": "Die Teilnehmerliste konnte nicht gesendet werden. Bitte versuch es später erneut.",
   "participantsEmailNoEmail": "Dein Konto hat keine E-Mail-Adresse für den Versand.",
-  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben."
+  "checkoutOrganizerShareNotice": "Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.",
+  "openSourceLicensesTitle": "Open-Source-Lizenzen",
+  "openSourceLicensesSubtitle": "In dieser App verwendete Schriftarten und Softwarekomponenten"
 }

@@ -23542,4 +23542,11 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'Votre nom et votre e-mail seront communiqués à l’organisateur pour l’entrée.';
+
+  @override
+  String get openSourceLicensesTitle => 'Licences open source';
+
+  @override
+  String get openSourceLicensesSubtitle =>
+      'Polices et composants logiciels utilisés dans cette application';
 }

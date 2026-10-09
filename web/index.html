@@ -472,10 +472,28 @@
         }
       };
 
+      // -- engine resources: same-origin only -----------------------------
+      // By default the engine downloads CanvasKit and Roboto + the Noto
+      // fallback fonts (emoji, CJK, Arabic, ...) from Google's CDNs, which
+      // hands every visitor's IP address to Google without consent (GDPR;
+      // LG Muenchen I, 3 O 17493/20). Instead:
+      //  - CanvasKit is served from this origin (build with
+      //    --no-web-resources-cdn; the explicit base URL below keeps it local
+      //    even if someone builds without the flag),
+      //  - fallback fonts come from /gfonts/s/..., which Firebase Hosting
+      //    rewrites to the fontFallbackProxy function (server-side fetch,
+      //    CDN-cached).
+      // tools/web/build_web.sh fails the build if either regresses.
+      var engineConfig = {
+        canvasKitBaseUrl: 'canvaskit/',
+        fontFallbackBaseUrl: '/gfonts/s/'
+      };
+
       _flutter.loader.load({
+        config: engineConfig,
         onEntrypointLoaded: function (engineInitializer) {
           finishProgress();
-          return engineInitializer.initializeEngine().then(function (appRunner) {
+          return engineInitializer.initializeEngine(engineConfig).then(function (appRunner) {
             return appRunner.runApp();
           }).then(function () {
             // If Dart never signals -- an exception before the first screen

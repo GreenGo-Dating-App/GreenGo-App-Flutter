@@ -29,6 +29,7 @@ import 'core/config/flavor_config.dart';
 import 'features/analytics/data/services/performance_monitoring_service.dart';
 import 'core/constants/app_colors.dart';
 import 'core/constants/app_strings.dart';
+import 'core/legal/bundled_font_licenses.dart';
 import 'core/di/injection_container.dart' as di;
 import 'core/cache/last_result_cache.dart';
 import 'core/providers/language_provider.dart';
@@ -100,6 +101,9 @@ import 'generated/app_localizations.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // OFL notices for the fonts we ship (licenses page). Lazy, costs nothing.
+  registerBundledFontLicenses();
 
   // Date/number symbols for every locale, so DateFormat works with the app's
   // active locale (Intl.defaultLocale is kept in sync in GreenGoApp.build).

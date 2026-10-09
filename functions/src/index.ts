@@ -677,6 +677,10 @@ export {
 // /e/**, /c/** and /og/** via Firebase Hosting rewrites.
 export { sharePreview } from './share/sharePreview';
 
+// Flutter web fallback fonts (Roboto/Noto) served same-origin on /gfonts/**
+// so visitors' browsers never contact fonts.gstatic.com (GDPR).
+export { fontFallbackProxy } from './web/fontFallbackProxy';
+
 // Events — notify people when they are added as a co-owner of an event.
 export { onEventCoOwnersChanged } from './events/coOwnerNotify';
 

@@ -23405,4 +23405,11 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get checkoutOrganizerShareNotice =>
       'Tu nombre y tu correo electrónico se compartirán con el organizador para el acceso.';
+
+  @override
+  String get openSourceLicensesTitle => 'Licencias de código abierto';
+
+  @override
+  String get openSourceLicensesSubtitle =>
+      'Fuentes y componentes de software que usa esta app';
 }
