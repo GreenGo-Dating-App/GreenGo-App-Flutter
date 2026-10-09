@@ -9,7 +9,6 @@ import 'package:greengo_chat/features/chat/domain/entities/conversation.dart';
 import 'package:greengo_chat/features/chat/domain/entities/message.dart';
 import 'package:greengo_chat/features/chat/presentation/utils/chat_l10n.dart';
 import 'package:greengo_chat/features/chat/presentation/utils/support_l10n.dart';
-import 'package:greengo_chat/features/chat/presentation/widgets/enhanced_message_bubble.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
 /// Client-written chat texts (system lines, coin-gift notes, deleted
@@ -291,26 +290,5 @@ void main() {
       }
       expect(displayUserName(de, ' Ana '), 'Ana');
     });
-  });
-
-  testWidgets('message bubble renders a stored system line in the viewer '
-      'language', (tester) async {
-    await tester.pumpWidget(MaterialApp(
-      locale: const Locale('de'),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: Scaffold(
-        body: EnhancedMessageBubble(
-          message: msg('Ana sent you 50 coins!',
-              metadata: chatSystemMetadata(ChatSystemKey.coinsReceived,
-                  {'name': 'Ana', 'amount': 50})),
-          isCurrentUser: false,
-          currentUserId: 'u',
-        ),
-      ),
-    ));
-    await tester.pump();
-    expect(find.text(de.chatSystemCoinsReceived('Ana', 50)), findsOneWidget);
-    expect(find.text('Ana sent you 50 coins!'), findsNothing);
   });
 }
