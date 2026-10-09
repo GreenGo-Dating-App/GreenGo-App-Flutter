@@ -498,11 +498,21 @@ class AccessControlService {
     String? email,
     SubscriptionTier tier = SubscriptionTier.basic,
   }) async {
-    // 1. Check pre-sale collection first (highest priority)
+    // Both lookups are independent single-doc reads (each swallows its own
+    // errors), so they run in parallel: one round-trip instead of two on the
+    // Register path. Priority is unchanged: pre-sale wins over early access.
     PreSaleEntry? preSaleEntry;
+    var hasEarlyAccess = false;
     if (email != null) {
-      preSaleEntry = await _preSaleService.getPreSaleEntry(email);
+      final lookups = await Future.wait<Object?>([
+        _preSaleService.getPreSaleEntry(email),
+        _earlyAccessService.isEmailInEarlyAccessList(email),
+      ]);
+      preSaleEntry = lookups[0] as PreSaleEntry?;
+      hasEarlyAccess = lookups[1] as bool;
     }
+
+    // 1. Pre-sale collection first (highest priority)
 
     if (preSaleEntry != null) {
       // Pre-sale user: assign tier, countdown date, and subscription expiry
@@ -544,11 +554,7 @@ class AccessControlService {
       return;
     }
 
-    // 2. Check early access list
-    var hasEarlyAccess = false;
-    if (email != null) {
-      hasEarlyAccess = await _earlyAccessService.isEmailInEarlyAccessList(email);
-    }
+    // 2. Early access list (looked up above)
 
     // 3. Determine access date: early access list takes priority, then tier-based
     final DateTime accessDate;

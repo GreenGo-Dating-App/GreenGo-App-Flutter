@@ -7195,5 +7195,9 @@
   "screenProtectionOpenApp": "Abrir a app",
   "chatSystemScreenshotTaken": "{name} fez uma captura de ecrã",
   "guidelinesPrivacyCaptureTitle": "Respeita a privacidade",
-  "guidelinesPrivacyCaptureDesc": "Capturas e gravações do conteúdo de outras pessoas são bloqueadas ou denunciadas; partilhar fotos de outros sem consentimento é proibido."
+  "guidelinesPrivacyCaptureDesc": "Capturas e gravações do conteúdo de outras pessoas são bloqueadas ou denunciadas; partilhar fotos de outros sem consentimento é proibido.",
+  "signupCreatingAccount": "Estamos a criar a tua conta…",
+  "signupCreatingAccountSlow": "Isto pode demorar alguns segundos. Mantém a app aberta.",
+  "onboardingAgeUnderMinimumHint": "Tens de ter pelo menos 18 anos para usar o GreenGo. Verifica a data que selecionaste.",
+  "onboardingAgePreviouslyBlockedBody": "Esta conta já foi registada com uma data de nascimento inferior a 18 anos, por isso continua restrita. Se foi um engano, contacta o suporte para verificar a tua idade."
 }

@@ -6373,7 +6373,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String membershipActivatedMessage(
-      String tierName, String formattedDate, String coinsText) {
+    String tierName,
+    String formattedDate,
+    String coinsText,
+  ) {
     return 'Abbonamento $tierName attivo fino al $formattedDate$coinsText';
   }
 
@@ -16334,13 +16337,21 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String webSubscriptionRenewsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price ogni $interval. Si rinnova automaticamente il $date.';
   }
 
   @override
   String webSubscriptionEndsOn(
-      String plan, String price, String interval, String date) {
+    String plan,
+    String price,
+    String interval,
+    String date,
+  ) {
     return '$plan: $price ogni $interval. Annullato; accesso fino al $date.';
   }
 
@@ -19986,7 +19997,9 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String gamificationNoticeChallengeRewardsClaimed(
-      String name, String rewards) {
+    String name,
+    String rewards,
+  ) {
     return 'Ricompense di $name riscattate! $rewards';
   }
 
@@ -20464,7 +20477,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String profileTravelerActiveSubtitle(
-      String location, int hours, int minutes) {
+    String location,
+    int hours,
+    int minutes,
+  ) {
     return '$location - ${hours}h ${minutes}m rimanenti';
   }
 
@@ -22436,7 +22452,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String supportReportFollowUpDetails(
-      String reason, String message, String user, String date) {
+    String reason,
+    String message,
+    String user,
+    String date,
+  ) {
     return 'Motivo: $reason\nMessaggio segnalato: «$message»\nUtente segnalato: $user\nSegnalato il: $date';
   }
 
@@ -22780,50 +22800,41 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String srvAchievementUnlockedTitle(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Prima connessione',
-        'social_butterfly': 'Farfalla sociale',
-        'popular': 'Popolare',
-        'video_enthusiast': 'Appassionato di video',
-        'daily_streak_7': 'Serie di 7 giorni',
-        'daily_streak_30': 'Serie di 30 giorni',
-        'other': 'Nuovo traguardo',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Prima connessione',
+      'social_butterfly': 'Farfalla sociale',
+      'popular': 'Popolare',
+      'video_enthusiast': 'Appassionato di video',
+      'daily_streak_7': 'Serie di 7 giorni',
+      'daily_streak_30': 'Serie di 30 giorni',
+      'other': 'Nuovo traguardo',
+    });
     return 'Traguardo sbloccato: $_temp0!';
   }
 
   @override
   String srvAchievementDescription(String achievement) {
-    String _temp0 = intl.Intl.selectLogic(
-      achievement,
-      {
-        'first_match': 'Crea il tuo primo contatto',
-        'social_butterfly': 'Invia 100 messaggi',
-        'popular': 'Crea 50 contatti',
-        'video_enthusiast': 'Completa 10 videochiamate',
-        'daily_streak_7': 'Accedi per 7 giorni di fila',
-        'daily_streak_30': 'Accedi per 30 giorni di fila',
-        'other': 'Continua così!',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(achievement, {
+      'first_match': 'Crea il tuo primo contatto',
+      'social_butterfly': 'Invia 100 messaggi',
+      'popular': 'Crea 50 contatti',
+      'video_enthusiast': 'Completa 10 videochiamate',
+      'daily_streak_7': 'Accedi per 7 giorni di fila',
+      'daily_streak_30': 'Accedi per 30 giorni di fila',
+      'other': 'Continua così!',
+    });
     return '$_temp0';
   }
 
   @override
   String srvChallengeCompletedTitle(String challenge) {
-    String _temp0 = intl.Intl.selectLogic(
-      challenge,
-      {
-        'send_5_messages': 'Attacca bottone',
-        'get_3_matches': 'Connettore',
-        'complete_profile': 'Profilo perfetto',
-        'video_call_1': 'Faccia a faccia',
-        'other': 'Sfida del giorno',
-      },
-    );
+    String _temp0 = intl.Intl.selectLogic(challenge, {
+      'send_5_messages': 'Attacca bottone',
+      'get_3_matches': 'Connettore',
+      'complete_profile': 'Profilo perfetto',
+      'video_call_1': 'Faccia a faccia',
+      'other': 'Sfida del giorno',
+    });
     return 'Sfida completata: $_temp0!';
   }
 
@@ -23252,4 +23263,19 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get guidelinesPrivacyCaptureDesc =>
       'Screenshot e registrazioni dei contenuti altrui vengono bloccati o segnalati; condividere foto di altri senza consenso è vietato.';
+
+  @override
+  String get signupCreatingAccount => 'Stiamo creando il tuo account…';
+
+  @override
+  String get signupCreatingAccountSlow =>
+      'Potrebbe volerci qualche secondo. Tieni l’app aperta.';
+
+  @override
+  String get onboardingAgeUnderMinimumHint =>
+      'Devi avere almeno 18 anni per usare GreenGo. Controlla la data che hai selezionato.';
+
+  @override
+  String get onboardingAgePreviouslyBlockedBody =>
+      'Questo account è già stato registrato con una data di nascita inferiore ai 18 anni, quindi resta limitato. Se si tratta di un errore, contatta l’assistenza per verificare la tua età.';
 }
