@@ -32,6 +32,46 @@ String? serverText(
       return l10n.chatPreviewVoiceMessage;
     case 'chatVideo':
       return l10n.chatVideo;
+    case 'csvColBookingCode':
+      return l10n.csvColBookingCode;
+    case 'csvColEmail':
+      return l10n.csvColEmail;
+    case 'csvColName':
+      return l10n.csvColName;
+    case 'csvColStatus':
+      return l10n.csvColStatus;
+    case 'csvColTicket':
+      return l10n.csvColTicket;
+    case 'csvStatusCheckedIn':
+      return l10n.csvStatusCheckedIn;
+    case 'csvStatusConfirmed':
+      return l10n.csvStatusConfirmed;
+    case 'csvStatusPaid':
+      return l10n.csvStatusPaid;
+    case 'emailParticipantsIntro':
+      return l10n.emailParticipantsIntro(_str(p['title']), _str(p['when']), _int(p['count']));
+    case 'emailParticipantsPrivacy':
+      return l10n.emailParticipantsPrivacy;
+    case 'emailParticipantsSubject':
+      return l10n.emailParticipantsSubject(_str(p['title']));
+    case 'emailTicketCodeLabel':
+      return l10n.emailTicketCodeLabel;
+    case 'emailTicketFooter':
+      return l10n.emailTicketFooter;
+    case 'emailTicketIntro':
+      return l10n.emailTicketIntro;
+    case 'emailTicketPartySizeLabel':
+      return l10n.emailTicketPartySizeLabel;
+    case 'emailTicketQrCaption':
+      return l10n.emailTicketQrCaption(_int(p['index']), _int(p['count']));
+    case 'emailTicketSubject':
+      return l10n.emailTicketSubject(_str(p['title']));
+    case 'emailTicketTypeLabel':
+      return l10n.emailTicketTypeLabel;
+    case 'emailTicketWhen':
+      return l10n.emailTicketWhen;
+    case 'emailTicketWhere':
+      return l10n.emailTicketWhere;
     case 'notifCoinsReceivedTitle':
       return l10n.notifCoinsReceivedTitle;
     case 'notifLikedYourPhoto':

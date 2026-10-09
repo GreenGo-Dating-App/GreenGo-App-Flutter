@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/di/injection_container.dart' as di;
+import '../../../../core/services/participants_list_service.dart';
 import '../../../../core/utils/user_display_name.dart';
 import '../../../../core/widgets/glass_container.dart';
 import '../../../../generated/app_localizations.dart';
@@ -76,6 +77,16 @@ class _EventAttendanceScreenState extends State<EventAttendanceScreen> {
                   total: going.length,
                   checkedIn: checkedIn,
                   headcount: headcount,
+                ),
+                // Organizer / co-organizer: CSV of the participants by email
+                // (also sent automatically one hour before the start).
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 4, 16, 0),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: EmailParticipantsButton(
+                        kind: 'event', id: widget.event.id),
+                  ),
                 ),
                 Expanded(
                   child: going.isEmpty

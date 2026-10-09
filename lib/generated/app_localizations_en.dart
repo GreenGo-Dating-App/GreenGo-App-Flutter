@@ -23055,4 +23055,119 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paymentMethodsSettingsSubtitle =>
       'How people can pay you directly (Pix, PayPal…)';
+
+  @override
+  String get communitiesBusinessCannotJoin =>
+      'Business accounts cannot join communities. Switch off business mode to join.';
+
+  @override
+  String get becomeBusinessPermanentHint =>
+      'One-time upgrade. This can\'t be undone.';
+
+  @override
+  String get storefrontEnabled => 'Storefront is on';
+
+  @override
+  String get storefrontDisabled => 'Storefront is off';
+
+  @override
+  String get storefrontToggleHint => 'Turn your storefront on or off anytime';
+
+  @override
+  String get tpGetPaidManualInfo =>
+      'No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.';
+
+  @override
+  String emailTicketSubject(String title) {
+    return 'Your ticket for $title';
+  }
+
+  @override
+  String get emailTicketIntro =>
+      'Your booking is confirmed. Show the QR code at the entrance: each code admits once.';
+
+  @override
+  String get emailTicketWhen => 'When';
+
+  @override
+  String get emailTicketWhere => 'Where';
+
+  @override
+  String get emailTicketTypeLabel => 'Ticket type';
+
+  @override
+  String get emailTicketPartySizeLabel => 'Party size';
+
+  @override
+  String get emailTicketCodeLabel => 'Booking code';
+
+  @override
+  String emailTicketQrCaption(int index, int count) {
+    return 'Ticket $index of $count';
+  }
+
+  @override
+  String get emailTicketFooter =>
+      'You can also find your tickets in the GreenGo app. Do not share these QR codes.';
+
+  @override
+  String emailParticipantsSubject(String title) {
+    return 'Participants list: $title';
+  }
+
+  @override
+  String emailParticipantsIntro(String title, String when, int count) {
+    return 'Attached is the participants list for $title ($when). Participants: $count.';
+  }
+
+  @override
+  String get emailParticipantsPrivacy =>
+      'This file contains personal data shared only for entry. Do not share it and delete it after the event.';
+
+  @override
+  String get csvColName => 'Name';
+
+  @override
+  String get csvColEmail => 'Email';
+
+  @override
+  String get csvColBookingCode => 'Booking code';
+
+  @override
+  String get csvColTicket => 'Ticket type / party size';
+
+  @override
+  String get csvColStatus => 'Status';
+
+  @override
+  String get csvStatusPaid => 'paid';
+
+  @override
+  String get csvStatusConfirmed => 'confirmed';
+
+  @override
+  String get csvStatusCheckedIn => 'checked-in';
+
+  @override
+  String get participantsEmailButton => 'Email me the participants list';
+
+  @override
+  String get participantsEmailSent =>
+      'Participants list sent to your account email';
+
+  @override
+  String get participantsEmailRateLimited =>
+      'You just requested it. Try again in a few minutes.';
+
+  @override
+  String get participantsEmailFailed =>
+      'Couldn’t send the participants list. Please try again later.';
+
+  @override
+  String get participantsEmailNoEmail =>
+      'Your account has no email address to send the list to.';
+
+  @override
+  String get checkoutOrganizerShareNotice =>
+      'Your name and email will be shared with the organizer for entry.';
 }

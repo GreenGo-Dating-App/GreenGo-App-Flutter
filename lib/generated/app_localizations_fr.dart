@@ -23426,4 +23426,120 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get paymentMethodsSettingsSubtitle =>
       'Comment on peut te payer directement (Pix, PayPal…)';
+
+  @override
+  String get communitiesBusinessCannotJoin =>
+      'Les comptes professionnels ne peuvent pas rejoindre de communautes. Desactivez le mode business pour rejoindre.';
+
+  @override
+  String get becomeBusinessPermanentHint =>
+      'Amélioration unique. Cette action est irréversible.';
+
+  @override
+  String get storefrontEnabled => 'Vitrine activee';
+
+  @override
+  String get storefrontDisabled => 'Vitrine desactivee';
+
+  @override
+  String get storefrontToggleHint =>
+      'Activez ou desactivez votre vitrine a tout moment';
+
+  @override
+  String get tpGetPaidManualInfo =>
+      'Sans configuration : choisissez un de vos moyens de paiement du profil (ou espèces / virement) dans l\'événement ou l\'expérience et confirmez chaque paiement vous-même.';
+
+  @override
+  String emailTicketSubject(String title) {
+    return 'Votre billet pour $title';
+  }
+
+  @override
+  String get emailTicketIntro =>
+      'Votre réservation est confirmée. Présentez le code QR à l’entrée : chaque code n’est valable qu’une fois.';
+
+  @override
+  String get emailTicketWhen => 'Quand';
+
+  @override
+  String get emailTicketWhere => 'Où';
+
+  @override
+  String get emailTicketTypeLabel => 'Type de billet';
+
+  @override
+  String get emailTicketPartySizeLabel => 'Nombre de personnes';
+
+  @override
+  String get emailTicketCodeLabel => 'Code de réservation';
+
+  @override
+  String emailTicketQrCaption(int index, int count) {
+    return 'Billet $index sur $count';
+  }
+
+  @override
+  String get emailTicketFooter =>
+      'Vous retrouverez aussi vos billets dans l’app GreenGo. Ne partagez pas ces codes QR.';
+
+  @override
+  String emailParticipantsSubject(String title) {
+    return 'Liste des participants : $title';
+  }
+
+  @override
+  String emailParticipantsIntro(String title, String when, int count) {
+    return 'Vous trouverez en pièce jointe la liste des participants de $title ($when). Participants : $count.';
+  }
+
+  @override
+  String get emailParticipantsPrivacy =>
+      'Ce fichier contient des données personnelles partagées uniquement pour l’entrée. Ne le partagez pas et supprimez-le après l’événement.';
+
+  @override
+  String get csvColName => 'Nom';
+
+  @override
+  String get csvColEmail => 'E-mail';
+
+  @override
+  String get csvColBookingCode => 'Code de réservation';
+
+  @override
+  String get csvColTicket => 'Type de billet / personnes';
+
+  @override
+  String get csvColStatus => 'Statut';
+
+  @override
+  String get csvStatusPaid => 'payé';
+
+  @override
+  String get csvStatusConfirmed => 'confirmé';
+
+  @override
+  String get csvStatusCheckedIn => 'enregistré';
+
+  @override
+  String get participantsEmailButton => 'M’envoyer la liste des participants';
+
+  @override
+  String get participantsEmailSent =>
+      'Liste des participants envoyée à l’e-mail de votre compte';
+
+  @override
+  String get participantsEmailRateLimited =>
+      'Vous venez de la demander. Réessayez dans quelques minutes.';
+
+  @override
+  String get participantsEmailFailed =>
+      'Impossible d’envoyer la liste des participants. Réessayez plus tard.';
+
+  @override
+  String get participantsEmailNoEmail =>
+      'Votre compte n’a pas d’adresse e-mail pour recevoir la liste.';
+
+  @override
+  String get checkoutOrganizerShareNotice =>
+      'Votre nom et votre e-mail seront communiqués à l’organisateur pour l’entrée.';
 }

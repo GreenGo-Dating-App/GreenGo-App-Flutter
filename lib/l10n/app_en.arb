@@ -12478,5 +12478,77 @@
   "tpAutoSectionHint": "Connect Stripe or Mercado Pago: buyers pay in the app and their tickets are confirmed instantly, with no manual checks.",
   "tpManualSectionTitle": "Manual Payment and Approval",
   "tpManualSectionHint": "No setup: buyers pay you directly with one of the payment methods below (or cash / bank transfer). You confirm each payment yourself with the Payments to confirm button at the top; the ticket is issued once you confirm.",
-  "paymentMethodsSettingsSubtitle": "How people can pay you directly (Pix, PayPal…)"
+  "paymentMethodsSettingsSubtitle": "How people can pay you directly (Pix, PayPal…)",
+  "communitiesBusinessCannotJoin": "Business accounts cannot join communities. Switch off business mode to join.",
+  "becomeBusinessPermanentHint": "One-time upgrade. This can't be undone.",
+  "storefrontEnabled": "Storefront is on",
+  "storefrontDisabled": "Storefront is off",
+  "storefrontToggleHint": "Turn your storefront on or off anytime",
+  "tpGetPaidManualInfo": "No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.",
+  "@tpGetPaidManualInfo": {
+    "description": "Ticket payments"
+  },
+  "emailTicketSubject": "Your ticket for {title}",
+  "@emailTicketSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailTicketIntro": "Your booking is confirmed. Show the QR code at the entrance: each code admits once.",
+  "emailTicketWhen": "When",
+  "emailTicketWhere": "Where",
+  "emailTicketTypeLabel": "Ticket type",
+  "emailTicketPartySizeLabel": "Party size",
+  "emailTicketCodeLabel": "Booking code",
+  "emailTicketQrCaption": "Ticket {index} of {count}",
+  "@emailTicketQrCaption": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "emailTicketFooter": "You can also find your tickets in the GreenGo app. Do not share these QR codes.",
+  "emailParticipantsSubject": "Participants list: {title}",
+  "@emailParticipantsSubject": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "emailParticipantsIntro": "Attached is the participants list for {title} ({when}). Participants: {count}.",
+  "@emailParticipantsIntro": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "emailParticipantsPrivacy": "This file contains personal data shared only for entry. Do not share it and delete it after the event.",
+  "csvColName": "Name",
+  "csvColEmail": "Email",
+  "csvColBookingCode": "Booking code",
+  "csvColTicket": "Ticket type / party size",
+  "csvColStatus": "Status",
+  "csvStatusPaid": "paid",
+  "csvStatusConfirmed": "confirmed",
+  "csvStatusCheckedIn": "checked-in",
+  "participantsEmailButton": "Email me the participants list",
+  "participantsEmailSent": "Participants list sent to your account email",
+  "participantsEmailRateLimited": "You just requested it. Try again in a few minutes.",
+  "participantsEmailFailed": "Couldn’t send the participants list. Please try again later.",
+  "participantsEmailNoEmail": "Your account has no email address to send the list to.",
+  "checkoutOrganizerShareNotice": "Your name and email will be shared with the organizer for entry."
 }

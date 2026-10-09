@@ -39800,6 +39800,198 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'How people can pay you directly (Pix, PayPal…)'**
   String get paymentMethodsSettingsSubtitle;
+
+  /// No description provided for @communitiesBusinessCannotJoin.
+  ///
+  /// In en, this message translates to:
+  /// **'Business accounts cannot join communities. Switch off business mode to join.'**
+  String get communitiesBusinessCannotJoin;
+
+  /// No description provided for @becomeBusinessPermanentHint.
+  ///
+  /// In en, this message translates to:
+  /// **'One-time upgrade. This can\'t be undone.'**
+  String get becomeBusinessPermanentHint;
+
+  /// No description provided for @storefrontEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront is on'**
+  String get storefrontEnabled;
+
+  /// No description provided for @storefrontDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Storefront is off'**
+  String get storefrontDisabled;
+
+  /// No description provided for @storefrontToggleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn your storefront on or off anytime'**
+  String get storefrontToggleHint;
+
+  /// Ticket payments
+  ///
+  /// In en, this message translates to:
+  /// **'No setup: pick one of your Profile > Payment methods (or cash / bank transfer) in the event or experience, and confirm each payment yourself.'**
+  String get tpGetPaidManualInfo;
+
+  /// No description provided for @emailTicketSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Your ticket for {title}'**
+  String emailTicketSubject(String title);
+
+  /// No description provided for @emailTicketIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Your booking is confirmed. Show the QR code at the entrance: each code admits once.'**
+  String get emailTicketIntro;
+
+  /// No description provided for @emailTicketWhen.
+  ///
+  /// In en, this message translates to:
+  /// **'When'**
+  String get emailTicketWhen;
+
+  /// No description provided for @emailTicketWhere.
+  ///
+  /// In en, this message translates to:
+  /// **'Where'**
+  String get emailTicketWhere;
+
+  /// No description provided for @emailTicketTypeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket type'**
+  String get emailTicketTypeLabel;
+
+  /// No description provided for @emailTicketPartySizeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Party size'**
+  String get emailTicketPartySizeLabel;
+
+  /// No description provided for @emailTicketCodeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking code'**
+  String get emailTicketCodeLabel;
+
+  /// No description provided for @emailTicketQrCaption.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket {index} of {count}'**
+  String emailTicketQrCaption(int index, int count);
+
+  /// No description provided for @emailTicketFooter.
+  ///
+  /// In en, this message translates to:
+  /// **'You can also find your tickets in the GreenGo app. Do not share these QR codes.'**
+  String get emailTicketFooter;
+
+  /// No description provided for @emailParticipantsSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Participants list: {title}'**
+  String emailParticipantsSubject(String title);
+
+  /// No description provided for @emailParticipantsIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Attached is the participants list for {title} ({when}). Participants: {count}.'**
+  String emailParticipantsIntro(String title, String when, int count);
+
+  /// No description provided for @emailParticipantsPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'This file contains personal data shared only for entry. Do not share it and delete it after the event.'**
+  String get emailParticipantsPrivacy;
+
+  /// No description provided for @csvColName.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get csvColName;
+
+  /// No description provided for @csvColEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get csvColEmail;
+
+  /// No description provided for @csvColBookingCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Booking code'**
+  String get csvColBookingCode;
+
+  /// No description provided for @csvColTicket.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket type / party size'**
+  String get csvColTicket;
+
+  /// No description provided for @csvColStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get csvColStatus;
+
+  /// No description provided for @csvStatusPaid.
+  ///
+  /// In en, this message translates to:
+  /// **'paid'**
+  String get csvStatusPaid;
+
+  /// No description provided for @csvStatusConfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'confirmed'**
+  String get csvStatusConfirmed;
+
+  /// No description provided for @csvStatusCheckedIn.
+  ///
+  /// In en, this message translates to:
+  /// **'checked-in'**
+  String get csvStatusCheckedIn;
+
+  /// No description provided for @participantsEmailButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Email me the participants list'**
+  String get participantsEmailButton;
+
+  /// No description provided for @participantsEmailSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Participants list sent to your account email'**
+  String get participantsEmailSent;
+
+  /// No description provided for @participantsEmailRateLimited.
+  ///
+  /// In en, this message translates to:
+  /// **'You just requested it. Try again in a few minutes.'**
+  String get participantsEmailRateLimited;
+
+  /// No description provided for @participantsEmailFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t send the participants list. Please try again later.'**
+  String get participantsEmailFailed;
+
+  /// No description provided for @participantsEmailNoEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has no email address to send the list to.'**
+  String get participantsEmailNoEmail;
+
+  /// No description provided for @checkoutOrganizerShareNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Your name and email will be shared with the organizer for entry.'**
+  String get checkoutOrganizerShareNotice;
 }
 
 class _AppLocalizationsDelegate

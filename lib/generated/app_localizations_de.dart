@@ -23334,4 +23334,120 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get paymentMethodsSettingsSubtitle =>
       'Wie andere dich direkt bezahlen können (Pix, PayPal…)';
+
+  @override
+  String get communitiesBusinessCannotJoin =>
+      'Business-Konten koennen keinen Communities beitreten. Schalte den Business-Modus aus, um beizutreten.';
+
+  @override
+  String get becomeBusinessPermanentHint =>
+      'Einmaliges Upgrade. Dies kann nicht rückgängig gemacht werden.';
+
+  @override
+  String get storefrontEnabled => 'Schaufenster ist an';
+
+  @override
+  String get storefrontDisabled => 'Schaufenster ist aus';
+
+  @override
+  String get storefrontToggleHint =>
+      'Schalte dein Schaufenster jederzeit an oder aus';
+
+  @override
+  String get tpGetPaidManualInfo =>
+      'Ohne Einrichtung: Wähle im Event oder Erlebnis eine deiner Zahlungsmethoden (Profil) oder bar / Überweisung und bestätige jede Zahlung selbst.';
+
+  @override
+  String emailTicketSubject(String title) {
+    return 'Dein Ticket für $title';
+  }
+
+  @override
+  String get emailTicketIntro =>
+      'Deine Buchung ist bestätigt. Zeig den QR-Code am Eingang: Jeder Code gilt für einen Einlass.';
+
+  @override
+  String get emailTicketWhen => 'Wann';
+
+  @override
+  String get emailTicketWhere => 'Wo';
+
+  @override
+  String get emailTicketTypeLabel => 'Ticketart';
+
+  @override
+  String get emailTicketPartySizeLabel => 'Personenzahl';
+
+  @override
+  String get emailTicketCodeLabel => 'Buchungscode';
+
+  @override
+  String emailTicketQrCaption(int index, int count) {
+    return 'Ticket $index von $count';
+  }
+
+  @override
+  String get emailTicketFooter =>
+      'Deine Tickets findest du auch in der GreenGo-App. Teile diese QR-Codes nicht.';
+
+  @override
+  String emailParticipantsSubject(String title) {
+    return 'Teilnehmerliste: $title';
+  }
+
+  @override
+  String emailParticipantsIntro(String title, String when, int count) {
+    return 'Im Anhang findest du die Teilnehmerliste für $title ($when). Teilnehmende: $count.';
+  }
+
+  @override
+  String get emailParticipantsPrivacy =>
+      'Diese Datei enthält personenbezogene Daten, die nur für den Einlass geteilt werden. Gib sie nicht weiter und lösche sie nach der Veranstaltung.';
+
+  @override
+  String get csvColName => 'Name';
+
+  @override
+  String get csvColEmail => 'E-Mail';
+
+  @override
+  String get csvColBookingCode => 'Buchungscode';
+
+  @override
+  String get csvColTicket => 'Ticketart / Personenzahl';
+
+  @override
+  String get csvColStatus => 'Status';
+
+  @override
+  String get csvStatusPaid => 'bezahlt';
+
+  @override
+  String get csvStatusConfirmed => 'bestätigt';
+
+  @override
+  String get csvStatusCheckedIn => 'eingecheckt';
+
+  @override
+  String get participantsEmailButton => 'Teilnehmerliste per E-Mail senden';
+
+  @override
+  String get participantsEmailSent =>
+      'Teilnehmerliste an deine Konto-E-Mail gesendet';
+
+  @override
+  String get participantsEmailRateLimited =>
+      'Du hast sie gerade angefordert. Versuch es in ein paar Minuten erneut.';
+
+  @override
+  String get participantsEmailFailed =>
+      'Die Teilnehmerliste konnte nicht gesendet werden. Bitte versuch es später erneut.';
+
+  @override
+  String get participantsEmailNoEmail =>
+      'Dein Konto hat keine E-Mail-Adresse für den Versand.';
+
+  @override
+  String get checkoutOrganizerShareNotice =>
+      'Dein Name und deine E-Mail-Adresse werden für den Einlass an den Veranstalter weitergegeben.';
 }

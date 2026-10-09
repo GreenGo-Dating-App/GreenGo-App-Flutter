@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_colors.dart';
+import '../../../../core/widgets/organizer_share_notice.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../../events/domain/entities/event.dart';
 import '../../data/ticket_payments_service.dart';
@@ -158,6 +159,8 @@ class _BuyTicketSheetState extends State<BuyTicketSheet> {
                       style: const TextStyle(color: AppColors.richGold, fontSize: 18, fontWeight: FontWeight.w700)),
                 ]),
                 const SizedBox(height: 12),
+                const OrganizerShareNotice(),
+                const SizedBox(height: 8),
                 ElevatedButton(
                   key: const ValueKey('buy-continue'),
                   style: ElevatedButton.styleFrom(
