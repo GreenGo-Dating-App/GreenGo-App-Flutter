@@ -80,18 +80,33 @@ class ViewerWatermark extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (!enabled) return child;
-    final text = label ?? currentViewerWatermarkLabel();
-    if (text.isEmpty) return child;
+    // Owner decision (2026-10-09): a GreenGo brand mark in the bottom-right
+    // corner instead of the viewer's nickname/id tiled across the image.
+    final text = (label == null || label!.trim().isEmpty) ? kWatermarkBrand : label!;
     return Stack(
       fit: StackFit.passthrough,
       children: [
         child,
-        Positioned.fill(
+        Positioned(
+          right: 8,
+          bottom: 8,
           child: IgnorePointer(
-            child: ClipRect(
-              child: CustomPaint(
-                key: const ValueKey('viewerWatermark'),
-                painter: WatermarkPainter(text: text, opacity: opacity),
+            child: Container(
+              key: const ValueKey('viewerWatermark'),
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+              decoration: BoxDecoration(
+                color: Colors.black.withValues(alpha: 0.25),
+                borderRadius: BorderRadius.circular(6),
+              ),
+              child: Text(
+                text,
+                style: TextStyle(
+                  color: Colors.white.withValues(alpha: 0.85),
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0.3,
+                  shadows: const [Shadow(color: Colors.black54, blurRadius: 2)],
+                ),
               ),
             ),
           ),
@@ -100,6 +115,9 @@ class ViewerWatermark extends StatelessWidget {
     );
   }
 }
+
+/// Brand shown as the media watermark (a brand name, not translated).
+const String kWatermarkBrand = 'GreenGo'; // i18n-ignore: brand name
 
 /// Tiles [text] at -30 degrees across the whole area.
 @visibleForTesting

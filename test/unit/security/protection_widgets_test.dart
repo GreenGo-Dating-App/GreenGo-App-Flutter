@@ -105,13 +105,13 @@ void main() {
       expect(viewerWatermarkLabel(), '');
     });
 
-    testWidgets('paints over the child and never takes input', (tester) async {
+    testWidgets('shows the GreenGo mark bottom-right and never takes input',
+        (tester) async {
       var taps = 0;
       await tester.pumpWidget(_app(SizedBox(
         width: 300,
         height: 300,
         child: ViewerWatermark(
-          label: '@viewer · uid123',
           child: GestureDetector(
             onTap: () => taps++,
             child: Container(color: Colors.blue),
@@ -120,13 +120,16 @@ void main() {
       )));
       final finder = find.byKey(const ValueKey('viewerWatermark'));
       expect(finder, findsOneWidget);
-      final paint = tester.widget<CustomPaint>(finder);
-      expect((paint.painter! as WatermarkPainter).text, '@viewer · uid123');
+      expect(find.text(kWatermarkBrand), findsOneWidget);
+      expect(find.textContaining('@'), findsNothing); // no viewer nickname/id
+      final box = tester.getRect(finder);
+      expect(box.right, closeTo(300 - 8, 1));
+      expect(box.bottom, closeTo(300 - 8, 1));
       await tester.tap(find.byType(GestureDetector));
       expect(taps, 1);
     });
 
-    testWidgets('disabled or no viewer -> child only', (tester) async {
+    testWidgets('disabled -> child only; empty label -> brand', (tester) async {
       await tester.pumpWidget(_app(const ViewerWatermark(
         label: 'x',
         enabled: false,
@@ -135,9 +138,9 @@ void main() {
       expect(find.byKey(const ValueKey('viewerWatermark')), findsNothing);
       await tester.pumpWidget(_app(const ViewerWatermark(
         label: '',
-        child: SizedBox(width: 10, height: 10),
+        child: SizedBox(width: 100, height: 100),
       )));
-      expect(find.byKey(const ValueKey('viewerWatermark')), findsNothing);
+      expect(find.text(kWatermarkBrand), findsOneWidget);
     });
   });
 
