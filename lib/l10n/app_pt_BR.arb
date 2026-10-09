@@ -7306,5 +7306,13 @@
   "wzAvailSessionsTitle": "Sessões",
   "wzAvailDaysTitle": "Dias",
   "wzAvailPeriodTitle": "Período",
-  "wzAvailSessionsPerDay": "{count, plural, =1{1 sessão por dia} other{{count} sessões por dia}}"
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 sessão por dia} other{{count} sessões por dia}}",
+  "locMapDirections": "Como chegar",
+  "locMapOpenInMaps": "Abrir no Mapas",
+  "locMapZoomIn": "Aproximar",
+  "locMapZoomOut": "Afastar",
+  "locMapRecenter": "Centralizar",
+  "locMapExpand": "Expandir mapa",
+  "locMapApproximateArea": "Área aproximada",
+  "locMapCouldNotOpen": "Não foi possível abrir um app de mapas"
 }

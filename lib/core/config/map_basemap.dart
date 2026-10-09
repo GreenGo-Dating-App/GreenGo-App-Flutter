@@ -15,7 +15,7 @@ import 'package:flutter/foundation.dart';
 ///   useVector    false pins the app to the raster fallback below
 ///   tileUrl      raster template used when useVector is false, or when the
 ///                vector style fails to load, e.g.
-///                https://tile.openstreetmap.org/{z}/{x}/{y}.png
+///                https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png
 ///   attribution  credit line shown on the map
 ///   maxZoom      furthest zoom the provider serves
 ///   initialZoom  how far in the world map opens (11-13 is city level)
@@ -25,7 +25,8 @@ import 'package:flutter/foundation.dart';
 ///   Esri Topo     .../World_Topo_Map/MapServer/tile/{z}/{y}/{x}
 ///   Esri Gray     .../Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}
 ///   CARTO Voyager https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png
-///   OSM standard  https://tile.openstreetmap.org/{z}/{x}/{y}.png
+///   (Do NOT use tile.openstreetmap.org: OSM's tile usage policy forbids
+///   heavy app traffic.)
 ///
 /// Note Esri addresses tiles as {z}/{y}/{x}; most others use {z}/{x}/{y}.
 class MapBasemap {
@@ -45,6 +46,19 @@ class MapBasemap {
   /// Credit for the default basemap: CARTO renders OpenStreetMap data.
   static const String defaultAttribution = 'CARTO, OpenStreetMap contributors';
   static const double defaultMaxZoom = 19;
+
+  /// The LIGHT basemap: CARTO "Positron". Used by every place-detail map
+  /// (event venue, experience meeting point, chat shared location) where the
+  /// owner wants light colours. Free with no key; CARTO's free tier asks for
+  /// attribution and fair use (non-commercial heavy use needs a plan). Not
+  /// remote-configurable on purpose: the attribution below must always match
+  /// the tiles actually drawn.
+  static const String lightTileUrl =
+      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+
+  /// Required credit for [lightTileUrl] (CARTO renders OpenStreetMap data).
+  static const String lightAttribution = '© OpenStreetMap contributors © CARTO';
+  static const double lightMaxZoom = 19;
 
   /// City level. 3-5 is continent/country, 11-13 shows a city and its
   /// surroundings, 15+ is street level.

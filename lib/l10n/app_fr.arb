@@ -6725,5 +6725,13 @@
   "wzAvailSessionsTitle": "Séances",
   "wzAvailDaysTitle": "Jours",
   "wzAvailPeriodTitle": "Période",
-  "wzAvailSessionsPerDay": "{count, plural, =1{1 séance par jour} other{{count} séances par jour}}"
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 séance par jour} other{{count} séances par jour}}",
+  "locMapDirections": "Itinéraire",
+  "locMapOpenInMaps": "Ouvrir dans Plans",
+  "locMapZoomIn": "Zoom avant",
+  "locMapZoomOut": "Zoom arrière",
+  "locMapRecenter": "Recentrer",
+  "locMapExpand": "Agrandir la carte",
+  "locMapApproximateArea": "Zone approximative",
+  "locMapCouldNotOpen": "Impossible d'ouvrir une app de cartes"
 }

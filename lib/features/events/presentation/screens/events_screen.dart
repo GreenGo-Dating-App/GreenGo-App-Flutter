@@ -1,4 +1,5 @@
 import '../../../../core/widgets/listing_wizard.dart';
+import '../widgets/event_location_map.dart';
 import '../../../ticket_payments/presentation/ticket_l10n.dart';
 import '../../../ticket_payments/domain/ticket_payments.dart';
 import '../../../ticket_payments/presentation/screens/get_paid_screen.dart';
@@ -2639,6 +2640,8 @@ class EventDetailsScreen extends StatelessWidget {
                       event.address,
                     ),
                   ),
+                  // Venue map (physical events with coordinates only).
+                  EventLocationMap(event: event),
                   const SizedBox(height: 12),
                   _buildInfoRow(
                     Icons.people,

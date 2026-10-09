@@ -6,7 +6,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
-import '../../../../core/config/map_basemap.dart';
+import '../../../../core/widgets/interactive_location_map.dart' show MapAttribution;
+import '../../../../core/widgets/map_basemap_layer.dart';
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/safe_navigation.dart';
@@ -614,10 +615,15 @@ class _MapPickerScreenState extends State<_MapPickerScreen> {
                 onTap: (_, point) => _onMapTapped(point),
               ),
               children: [
-                TileLayer(
-                  urlTemplate: MapBasemap.tileUrl,
-                  maxZoom: MapBasemap.maxZoom,
-                  userAgentPackageName: 'com.greengochat.greengochatapp',
+                // Light CARTO Positron (free, keyless) instead of the raw
+                // configurable template, with its required credit.
+                const MapBasemapLayer.light(),
+                const Align(
+                  alignment: Alignment.bottomRight,
+                  child: Padding(
+                    padding: EdgeInsets.all(2),
+                    child: MapAttribution(),
+                  ),
                 ),
                 MarkerLayer(
                   markers: [
@@ -829,10 +835,15 @@ class _SelectedLocationCard extends StatelessWidget {
                     const InteractionOptions(flags: InteractiveFlag.none),
               ),
               children: [
-                TileLayer(
-                  urlTemplate: MapBasemap.tileUrl,
-                  maxZoom: MapBasemap.maxZoom,
-                  userAgentPackageName: 'com.greengochat.greengochatapp',
+                // Light CARTO Positron (free, keyless) instead of the raw
+                // configurable template, with its required credit.
+                const MapBasemapLayer.light(),
+                const Align(
+                  alignment: Alignment.bottomRight,
+                  child: Padding(
+                    padding: EdgeInsets.all(2),
+                    child: MapAttribution(),
+                  ),
                 ),
                 MarkerLayer(
                   markers: [

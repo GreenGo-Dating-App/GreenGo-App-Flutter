@@ -31,6 +31,7 @@ import '../experience_safety_flow.dart';
 import '../widgets/booking_consent_dialog.dart';
 import '../widgets/experience_policy_widgets.dart';
 import '../widgets/experience_reviews_section.dart';
+import '../widgets/experience_location_map.dart';
 import '../widgets/experience_widgets.dart';
 import '../widgets/report_experience_sheet.dart';
 import 'experience_editor_screen.dart';
@@ -396,6 +397,7 @@ class _DetailViewState extends State<_DetailView> {
                       ),
                       const SizedBox(height: 20),
                       _infoCard(e, l),
+                      ExperienceLocationMap(experience: e),
                       if (!e.isFree) ...[
                         const SizedBox(height: 20),
                         CancellationPolicyCard(

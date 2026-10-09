@@ -12639,5 +12639,37 @@
         "type": "int"
       }
     }
+  },
+  "locMapDirections": "Directions",
+  "@locMapDirections": {
+    "description": "Interactive location map control"
+  },
+  "locMapOpenInMaps": "Open in Maps",
+  "@locMapOpenInMaps": {
+    "description": "Interactive location map control"
+  },
+  "locMapZoomIn": "Zoom in",
+  "@locMapZoomIn": {
+    "description": "Interactive location map control"
+  },
+  "locMapZoomOut": "Zoom out",
+  "@locMapZoomOut": {
+    "description": "Interactive location map control"
+  },
+  "locMapRecenter": "Recenter",
+  "@locMapRecenter": {
+    "description": "Interactive location map control"
+  },
+  "locMapExpand": "Expand map",
+  "@locMapExpand": {
+    "description": "Interactive location map control"
+  },
+  "locMapApproximateArea": "Approximate area",
+  "@locMapApproximateArea": {
+    "description": "Interactive location map control"
+  },
+  "locMapCouldNotOpen": "Couldn't open a maps app",
+  "@locMapCouldNotOpen": {
+    "description": "Interactive location map control"
   }
 }

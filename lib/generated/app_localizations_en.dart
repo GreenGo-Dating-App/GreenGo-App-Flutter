@@ -23409,4 +23409,28 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get locMapDirections => 'Directions';
+
+  @override
+  String get locMapOpenInMaps => 'Open in Maps';
+
+  @override
+  String get locMapZoomIn => 'Zoom in';
+
+  @override
+  String get locMapZoomOut => 'Zoom out';
+
+  @override
+  String get locMapRecenter => 'Recenter';
+
+  @override
+  String get locMapExpand => 'Expand map';
+
+  @override
+  String get locMapApproximateArea => 'Approximate area';
+
+  @override
+  String get locMapCouldNotOpen => 'Couldn\'t open a maps app';
 }

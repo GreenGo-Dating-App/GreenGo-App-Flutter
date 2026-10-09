@@ -10,7 +10,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:uuid/uuid.dart';
 import 'package:video_player/video_player.dart';
 
@@ -38,6 +37,8 @@ import '../bloc/group_chat_state.dart';
 import '../widgets/resolved_users_builder.dart';
 import 'group_info_screen.dart';
 import '../widgets/deleted_message_bubble.dart';
+import '../widgets/location_message_map.dart';
+import '../../../../core/widgets/interactive_location_map.dart';
 import '../../../../core/services/ai_consent_service.dart';
 import '../../../../core/widgets/ai_consent_sheet.dart';
 import '../../../profile/data/private_album.dart';
@@ -1292,23 +1293,32 @@ class _LocationContent extends StatelessWidget {
     final color =
         isMine ? theme.colorScheme.onPrimary : theme.colorScheme.onSurface;
     final loc = LocationShareService.parse(message.content);
-    return InkWell(
-      onTap: loc == null
-          ? null
-          : () => launchUrl(
-                Uri.parse(LocationShareService.mapsUrl(loc.lat, loc.lng)),
-                mode: LaunchMode.externalApplication,
-              ),
-      child: Row(
+    if (loc == null) {
+      return Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.location_on, size: 18, color: color),
           const SizedBox(width: 6),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          Text(l10n.chatLocation,
+              style: TextStyle(color: color, fontWeight: FontWeight.w600)),
+        ],
+      );
+    }
+    // Static light mini-map (no gestures inside the list); tap opens the
+    // full-screen interactive map with zoom, recenter and directions.
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        LocationMessageMap(lat: loc.lat, lng: loc.lng),
+        const SizedBox(height: 4),
+        InkWell(
+          onTap: () => openInMapsApp(context, loc.lat, loc.lng),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Text(l10n.chatLocation,
-                  style: TextStyle(color: color, fontWeight: FontWeight.w600)),
+              Icon(Icons.location_on, size: 14, color: color),
+              const SizedBox(width: 4),
               Text(
                 l10n.chatOpenInMaps,
                 style: theme.textTheme.bodySmall?.copyWith(
@@ -1318,8 +1328,8 @@ class _LocationContent extends StatelessWidget {
               ),
             ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

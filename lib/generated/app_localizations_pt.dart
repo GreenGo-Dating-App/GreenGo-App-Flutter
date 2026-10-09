@@ -23610,6 +23610,30 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get locMapDirections => 'Direções';
+
+  @override
+  String get locMapOpenInMaps => 'Abrir no Mapas';
+
+  @override
+  String get locMapZoomIn => 'Aproximar';
+
+  @override
+  String get locMapZoomOut => 'Afastar';
+
+  @override
+  String get locMapRecenter => 'Centrar';
+
+  @override
+  String get locMapExpand => 'Expandir mapa';
+
+  @override
+  String get locMapApproximateArea => 'Área aproximada';
+
+  @override
+  String get locMapCouldNotOpen => 'Não foi possível abrir uma app de mapas';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -47229,4 +47253,28 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
     );
     return '$_temp0';
   }
+
+  @override
+  String get locMapDirections => 'Como chegar';
+
+  @override
+  String get locMapOpenInMaps => 'Abrir no Mapas';
+
+  @override
+  String get locMapZoomIn => 'Aproximar';
+
+  @override
+  String get locMapZoomOut => 'Afastar';
+
+  @override
+  String get locMapRecenter => 'Centralizar';
+
+  @override
+  String get locMapExpand => 'Expandir mapa';
+
+  @override
+  String get locMapApproximateArea => 'Área aproximada';
+
+  @override
+  String get locMapCouldNotOpen => 'Não foi possível abrir um app de mapas';
 }

@@ -7306,5 +7306,13 @@
   "wzAvailSessionsTitle": "Termine",
   "wzAvailDaysTitle": "Tage",
   "wzAvailPeriodTitle": "Zeitraum",
-  "wzAvailSessionsPerDay": "{count, plural, =1{1 Termin pro Tag} other{{count} Termine pro Tag}}"
+  "wzAvailSessionsPerDay": "{count, plural, =1{1 Termin pro Tag} other{{count} Termine pro Tag}}",
+  "locMapDirections": "Route",
+  "locMapOpenInMaps": "In Karten öffnen",
+  "locMapZoomIn": "Vergrößern",
+  "locMapZoomOut": "Verkleinern",
+  "locMapRecenter": "Zentrieren",
+  "locMapExpand": "Karte vergrößern",
+  "locMapApproximateArea": "Ungefähres Gebiet",
+  "locMapCouldNotOpen": "Karten-App konnte nicht geöffnet werden"
 }

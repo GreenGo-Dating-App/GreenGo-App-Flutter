@@ -40328,6 +40328,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 session per day} other{{count} sessions per day}}'**
   String wzAvailSessionsPerDay(int count);
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Directions'**
+  String get locMapDirections;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Open in Maps'**
+  String get locMapOpenInMaps;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Zoom in'**
+  String get locMapZoomIn;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Zoom out'**
+  String get locMapZoomOut;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Recenter'**
+  String get locMapRecenter;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Expand map'**
+  String get locMapExpand;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Approximate area'**
+  String get locMapApproximateArea;
+
+  /// Interactive location map control
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t open a maps app'**
+  String get locMapCouldNotOpen;
 }
 
 class _AppLocalizationsDelegate

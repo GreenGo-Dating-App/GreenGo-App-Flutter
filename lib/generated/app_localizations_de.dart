@@ -23684,4 +23684,28 @@ class AppLocalizationsDe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get locMapDirections => 'Route';
+
+  @override
+  String get locMapOpenInMaps => 'In Karten öffnen';
+
+  @override
+  String get locMapZoomIn => 'Vergrößern';
+
+  @override
+  String get locMapZoomOut => 'Verkleinern';
+
+  @override
+  String get locMapRecenter => 'Zentrieren';
+
+  @override
+  String get locMapExpand => 'Karte vergrößern';
+
+  @override
+  String get locMapApproximateArea => 'Ungefähres Gebiet';
+
+  @override
+  String get locMapCouldNotOpen => 'Karten-App konnte nicht geöffnet werden';
 }
