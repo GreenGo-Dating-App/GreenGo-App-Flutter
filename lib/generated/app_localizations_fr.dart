@@ -23390,4 +23390,12 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get onboardingAgePreviouslyBlockedBody =>
       'Ce compte a déjà été enregistré avec une date de naissance de moins de 18 ans, il reste donc restreint. S’il s’agit d’une erreur, contactez le support pour vérifier votre âge.';
+
+  @override
+  String get authErrorNicknameMfaRequired =>
+      'Ce compte utilise la validation en deux étapes. Connecte-toi avec ton adresse e-mail plutôt qu\'avec ton pseudo.';
+
+  @override
+  String get authErrorNicknameSignInFailed =>
+      'Impossible de te connecter avec ton pseudo pour le moment. Connecte-toi avec ton adresse e-mail.';
 }

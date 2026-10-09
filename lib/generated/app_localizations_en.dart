@@ -23028,4 +23028,12 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboardingAgePreviouslyBlockedBody =>
       'This account was already registered with a date of birth under 18, so it stays restricted. If that was a mistake, contact support to verify your age.';
+
+  @override
+  String get authErrorNicknameMfaRequired =>
+      'This account uses two-step verification. Please sign in with your email address instead of your nickname.';
+
+  @override
+  String get authErrorNicknameSignInFailed =>
+      'We couldn\'t sign you in with your nickname right now. Please sign in with your email address.';
 }

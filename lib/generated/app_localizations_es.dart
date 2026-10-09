@@ -23256,4 +23256,12 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get onboardingAgePreviouslyBlockedBody =>
       'Esta cuenta ya se registró con una fecha de nacimiento de menor de 18 años, por lo que sigue restringida. Si fue un error, contacta con soporte para verificar tu edad.';
+
+  @override
+  String get authErrorNicknameMfaRequired =>
+      'Esta cuenta usa la verificación en dos pasos. Inicia sesión con tu correo electrónico en lugar de tu apodo.';
+
+  @override
+  String get authErrorNicknameSignInFailed =>
+      'No hemos podido iniciar tu sesión con tu apodo en este momento. Inicia sesión con tu correo electrónico.';
 }

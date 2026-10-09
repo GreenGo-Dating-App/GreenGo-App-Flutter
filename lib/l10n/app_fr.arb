@@ -6618,5 +6618,7 @@
   "signupCreatingAccount": "Nous créons votre compte…",
   "signupCreatingAccountSlow": "Cela peut prendre quelques secondes. Gardez l’application ouverte.",
   "onboardingAgeUnderMinimumHint": "Vous devez avoir au moins 18 ans pour utiliser GreenGo. Vérifiez la date sélectionnée.",
-  "onboardingAgePreviouslyBlockedBody": "Ce compte a déjà été enregistré avec une date de naissance de moins de 18 ans, il reste donc restreint. S’il s’agit d’une erreur, contactez le support pour vérifier votre âge."
+  "onboardingAgePreviouslyBlockedBody": "Ce compte a déjà été enregistré avec une date de naissance de moins de 18 ans, il reste donc restreint. S’il s’agit d’une erreur, contactez le support pour vérifier votre âge.",
+  "authErrorNicknameMfaRequired": "Ce compte utilise la validation en deux étapes. Connecte-toi avec ton adresse e-mail plutôt qu'avec ton pseudo.",
+  "authErrorNicknameSignInFailed": "Impossible de te connecter avec ton pseudo pour le moment. Connecte-toi avec ton adresse e-mail."
 }

@@ -23301,4 +23301,12 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get onboardingAgePreviouslyBlockedBody =>
       'Dieses Konto wurde bereits mit einem Geburtsdatum unter 18 Jahren registriert und bleibt daher eingeschränkt. Falls das ein Fehler war, wende dich an den Support, um dein Alter zu bestätigen.';
+
+  @override
+  String get authErrorNicknameMfaRequired =>
+      'Dieses Konto verwendet die Bestätigung in zwei Schritten. Bitte melde dich mit deiner E-Mail-Adresse statt mit deinem Spitznamen an.';
+
+  @override
+  String get authErrorNicknameSignInFailed =>
+      'Die Anmeldung mit deinem Spitznamen ist gerade nicht möglich. Bitte melde dich mit deiner E-Mail-Adresse an.';
 }

@@ -23278,4 +23278,12 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get onboardingAgePreviouslyBlockedBody =>
       'Questo account è già stato registrato con una data di nascita inferiore ai 18 anni, quindi resta limitato. Se si tratta di un errore, contatta l’assistenza per verificare la tua età.';
+
+  @override
+  String get authErrorNicknameMfaRequired =>
+      'Questo account usa la verifica in due passaggi. Accedi con il tuo indirizzo email invece del nickname.';
+
+  @override
+  String get authErrorNicknameSignInFailed =>
+      'Al momento non è possibile accedere con il nickname. Accedi con il tuo indirizzo email.';
 }

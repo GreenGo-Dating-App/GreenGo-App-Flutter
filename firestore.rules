@@ -1074,21 +1074,34 @@ service cloud.firestore {
     }
 
     // ============================================================================
-    // NICKNAMES COLLECTION (public read for nickname login before auth)
+    // NICKNAMES COLLECTION (public get: nickname -> uid, no email)
     // ============================================================================
     // Security audit C-06: single-doc lookup stays public (nickname login runs
     // before sign-in) but LISTING is denied, so the collection can no longer be
     // paged to harvest every user's email. A mapping can only be created for,
     // or changed by, the uid it points to.
+    // INC-2026-001: the doc holds ONLY {uid, nickname, createdAt}. It used to
+    // carry the account email next to the uid, readable by anyone who knew
+    // the nickname; nickname sign-in now runs on the server
+    // (signInWithNickname). Client writes are allow-listed so the email (or
+    // anything else) can never be written back; an update may still REMOVE
+    // a legacy email (the resulting doc is checked, not the diff).
     match /nicknames/{nickname} {
       allow get: if true;
       allow list: if false;
       allow create: if isSignedIn()
-        && request.resource.data.uid == request.auth.uid;
+        && request.resource.data.uid == request.auth.uid
+        && nicknameDocOk(nickname);
       allow update: if isSignedIn()
         && resource.data.uid == request.auth.uid
-        && request.resource.data.uid == request.auth.uid;
+        && request.resource.data.uid == request.auth.uid
+        && nicknameDocOk(nickname);
       allow delete: if isSignedIn() && resource.data.uid == request.auth.uid;
+
+      function nicknameDocOk(nick) {
+        return request.resource.data.keys().hasOnly(['uid', 'nickname', 'createdAt'])
+          && (!('nickname' in request.resource.data) || request.resource.data.nickname == nick);
+      }
     }
 
     // ============================================================================

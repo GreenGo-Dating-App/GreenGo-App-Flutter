@@ -23228,6 +23228,14 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get onboardingAgePreviouslyBlockedBody =>
       'Esta conta já foi registada com uma data de nascimento inferior a 18 anos, por isso continua restrita. Se foi um engano, contacta o suporte para verificar a tua idade.';
+
+  @override
+  String get authErrorNicknameMfaRequired =>
+      'Esta conta utiliza a verificação em dois passos. Inicie sessão com o seu endereço de email em vez da alcunha.';
+
+  @override
+  String get authErrorNicknameSignInFailed =>
+      'Não foi possível iniciar sessão com a sua alcunha neste momento. Inicie sessão com o seu endereço de email.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -46466,4 +46474,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get onboardingAgePreviouslyBlockedBody =>
       'Esta conta já foi registrada com uma data de nascimento de menor de 18 anos, por isso continua restrita. Se foi um engano, fale com o suporte para verificar sua idade.';
+
+  @override
+  String get authErrorNicknameMfaRequired =>
+      'Esta conta usa a verificação em duas etapas. Entre com seu endereço de e-mail em vez do apelido.';
+
+  @override
+  String get authErrorNicknameSignInFailed =>
+      'Não foi possível entrar com seu apelido agora. Entre com seu endereço de e-mail.';
 }
